@@ -20,6 +20,16 @@ function fatiarAcervo(): Plugin {
     apply: 'build',
     configResolved(config) { saida = config.build.outDir },
     closeBundle() {
+      // Índice leve da Biblioteca (11/11/2026): o mesmo índice sem a lista de seções, metade do arquivo
+      // (230 KB compactados viram uns 110). As caixas de sugestão da inicial, do cronograma e dos flashcards
+      // usam este (biblioteca/conteudo.ts, carregarIndiceBibliotecaLeve); a Biblioteca e a busca, o completo.
+      const indiceBiblioteca = join(saida, 'biblioteca', 'indice.json')
+      if (existsSync(indiceBiblioteca)) {
+        const completo = JSON.parse(readFileSync(indiceBiblioteca, 'utf8')) as { capitulos: Array<Record<string, unknown>> }
+        const leve = { ...completo, capitulos: completo.capitulos.map(({ secoes: _secoes, ...resto }) => resto) }
+        writeFileSync(join(saida, 'biblioteca', 'indice-leve.json'), JSON.stringify(leve))
+        writeFileSync(indiceBiblioteca, JSON.stringify(completo))
+      }
       const acervo = join(saida, 'acervo')
       if (!existsSync(join(acervo, 'temas'))) return
       // Os arquivos-fonte são JSON indentado (legível no repositório e nos

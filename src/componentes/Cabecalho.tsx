@@ -5,7 +5,7 @@ import { MarcaHorizontal } from '../marca/Simbolo'
 import { usarTema } from '../estado/tema'
 import { href } from '../util/rotas'
 import { Icone, type NomeIcone } from './Icone'
-import { AvisoBloqueioDiario } from './LimiteRespostas'
+import { AvisoBloqueioDiario } from './AvisoBloqueioDiario'
 import { usarAssinante } from '../conta/plano'
 import { MenuGeral } from './MenuGeral'
 

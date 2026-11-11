@@ -1,5 +1,5 @@
 import { recurso } from '../config'
-import type { Bloco, Capitulo, IndiceBiblioteca } from './tipos'
+import type { Bloco, Capitulo, IndiceBiblioteca, IndiceBibliotecaLeve } from './tipos'
 import { ehTexto } from './tipos'
 
 /**
@@ -19,6 +19,19 @@ export function carregarIndiceBiblioteca(): Promise<IndiceBiblioteca> {
     return r.json() as Promise<IndiceBiblioteca>
   }).then((i) => (indiceEmMemoria = i)).catch((e) => { indice = null; throw e })
   return indice
+}
+
+let indiceLeve: Promise<IndiceBibliotecaLeve> | null = null
+/**
+ * O índice sem as seções, para as caixas de sugestão. Se o índice completo já está na memória, serve ele; se o
+ * leve não existir (no `vite dev` ele não é gerado), cai no completo.
+ */
+export function carregarIndiceBibliotecaLeve(): Promise<IndiceBibliotecaLeve> {
+  if (indiceEmMemoria) return Promise.resolve(indiceEmMemoria)
+  indiceLeve ??= fetch(recurso('biblioteca/indice-leve.json'), { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() as Promise<IndiceBibliotecaLeve> : carregarIndiceBiblioteca()))
+    .catch((e) => { indiceLeve = null; throw e })
+  return indiceLeve
 }
 
 export function carregarCapitulo(id: string): Promise<Capitulo | null> {

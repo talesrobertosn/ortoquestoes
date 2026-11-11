@@ -31,7 +31,8 @@ RANKING_RPG = (RAIZ / "supabase/migrations/202609280100_ranking_movimento_rpg.sq
 AVALIACOES_ADMIN = (RAIZ / "supabase/migrations/202609280200_avaliacoes_comentario_admin.sql").read_text()
 PAGINA_RANKING = (RAIZ / "src/paginas/Ranking.tsx").read_text()
 LIMITE_CLIENTE = (RAIZ / "src/estado/limiteDiario.ts").read_text()
-AVISO_LIMITE = (RAIZ / "src/componentes/LimiteRespostas.tsx").read_text()
+# O aviso do cabeçalho mora em AvisoBloqueioDiario.tsx desde 11/11/2026 (fora do código principal o painel de planos).
+AVISO_LIMITE = (RAIZ / "src/componentes/LimiteRespostas.tsx").read_text() + (RAIZ / "src/componentes/AvisoBloqueioDiario.tsx").read_text()
 CABECALHO = (RAIZ / "src/componentes/Cabecalho.tsx").read_text()
 CONTEXTO_CONTA = (RAIZ / "src/conta/ContextoConta.tsx").read_text()
 VERSOES_TERMOS = (RAIZ / "src/conta/termos.ts").read_text()

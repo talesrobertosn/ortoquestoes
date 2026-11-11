@@ -1,7 +1,7 @@
 import type { Indice } from './tipos'
 import { diaCivil, chaveCivil, inicioDoDia } from '../util/dia'
 import { entraNoPlano, incluiSimulados, indiceDoPlano, type PlanoSalvo, type RegistroMinimo } from './planoEstudo'
-import type { IndiceBiblioteca, ResumoCapitulo } from '../biblioteca/tipos'
+import type { IndiceBibliotecaLeve, ResumoCapituloLeve } from '../biblioteca/tipos'
 
 /**
  * O roteiro do dia no cronograma (10/11/2026): as peças que não mexem na conta do plano.
@@ -13,7 +13,7 @@ import type { IndiceBiblioteca, ResumoCapitulo } from '../biblioteca/tipos'
 // ─── Resumos do dia ──────────────────────────────────────────────────────────
 
 export interface ResumoDoDia {
-  resumo: ResumoCapitulo
+  resumo: ResumoCapituloLeve
   /** Questões do dia que o resumo cita no texto (prova real ou OrtoQuestões Simulados). */
   questoes: number
   /** Assuntos do dia que o resumo ensina (subtemas em comum), dos mais presentes para os menos. */
@@ -31,7 +31,7 @@ export const RESUMOS_POR_DIA = 3
  * (`questoes` e `treino`) e os subtemas que ele ensina (`subtemas`). Resumo novo aparece sozinho quando
  * entra no índice; tema sem resumo devolve lista vazia e a tela mostra o caminho alternativo.
  */
-export function resumosDoDia(biblioteca: IndiceBiblioteca | null | undefined, indice: Indice | null | undefined, ids: Iterable<string>, maximo = RESUMOS_POR_DIA): ResumoDoDia[] {
+export function resumosDoDia(biblioteca: IndiceBibliotecaLeve | null | undefined, indice: Indice | null | undefined, ids: Iterable<string>, maximo = RESUMOS_POR_DIA): ResumoDoDia[] {
   if (!biblioteca || !indice) return []
   const doDia = new Set(ids)
   if (!doDia.size) return []

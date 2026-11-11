@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEve
 import { usarIndiceBiblioteca } from '../../biblioteca/recomendar'
 import { usarBiblioteca } from '../../biblioteca/usarBiblioteca'
 import { apelidoLivro, livrosDaEstante } from '../../biblioteca/estante'
-import type { ResumoCapitulo } from '../../biblioteca/tipos'
+import type { ResumoCapituloLeve } from '../../biblioteca/tipos'
 import { corDaArea } from '../../dados/coresAreas'
 import { ler, gravar } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
@@ -35,16 +35,16 @@ function altura(id: string): number {
   return 64 + ((h >>> 0) % 26)
 }
 /** Capítulo mais longo, lombada mais grossa. */
-const largura = (c: ResumoCapitulo) => 10 + Math.round(Math.min(c.minutos, 70) / 70 * 8)
+const largura = (c: ResumoCapituloLeve) => 10 + Math.round(Math.min(c.minutos, 70) / 70 * 8)
 
 /** Divide a estante em duas prateleiras de largura parecida; um livro (obra) pode continuar na de baixo. */
-function prateleiras(capitulos: ResumoCapitulo[]): ResumoCapitulo[][][] {
+function prateleiras(capitulos: ResumoCapituloLeve[]): ResumoCapituloLeve[][][] {
   const grupos = livrosDaEstante(capitulos).map((l) => l.capitulos)
   const total = capitulos.reduce((t, c) => t + largura(c) + 2, 0)
-  const linhas: ResumoCapitulo[][][] = [[], []]
+  const linhas: ResumoCapituloLeve[][][] = [[], []]
   let usado = 0
   for (const g of grupos) {
-    let atual: ResumoCapitulo[] = []
+    let atual: ResumoCapituloLeve[] = []
     let linha = usado < total / 2 ? 0 : 1
     for (const c of g) {
       const agora = usado < total / 2 ? 0 : 1
@@ -66,7 +66,7 @@ function prateleiras(capitulos: ResumoCapitulo[]): ResumoCapitulo[][][] {
 export function EstanteResumos() {
   const biblioteca = usarIndiceBiblioteca()
   const { leituras } = usarBiblioteca()
-  const [foco, definirFoco] = useState<ResumoCapitulo | null>(null)
+  const [foco, definirFoco] = useState<ResumoCapituloLeve | null>(null)
   const [saindo, definirSaindo] = useState<string | null>(null)
   const [longe, definirLonge] = useState(false)
   const raiz = useRef<HTMLElement>(null)

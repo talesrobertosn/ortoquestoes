@@ -1,4 +1,4 @@
-import type { Leitura, ResumoCapitulo } from './tipos'
+import type { Leitura, ResumoCapitulo, ResumoCapituloLeve } from './tipos'
 import { pontuar } from './busca'
 
 /**
@@ -70,14 +70,14 @@ export function estadoLeitura(l?: Pick<Leitura, 'em' | 'concluidoEm'>): EstadoLe
 }
 
 /** Livros na ordem da estante: pelo nome; a edição mais nova primeiro. */
-export function livrosDaEstante(capitulos: ResumoCapitulo[]): Array<{ chave: string; rotulo: string; capitulos: ResumoCapitulo[] }> {
-  const mapa = new Map<string, ResumoCapitulo[]>()
+export function livrosDaEstante<C extends ResumoCapituloLeve>(capitulos: C[]): Array<{ chave: string; rotulo: string; capitulos: C[] }> {
+  const mapa = new Map<string, C[]>()
   for (const c of capitulos) { const k = chaveLivro(c); mapa.set(k, [...(mapa.get(k) ?? []), c]) }
   const edicao = (k: string) => Number(k.split('|')[1].match(/\d+/)?.[0] ?? 0)
   return [...mapa].sort(([a], [b]) => nomeCurtoLivro(a.split('|')[0]).localeCompare(nomeCurtoLivro(b.split('|')[0]), 'pt-BR') || edicao(b) - edicao(a))
     .map(([chave, lista]) => ({ chave, rotulo: rotuloLivro(lista[0]), capitulos: [...lista].sort(compararNoLivro) }))
 }
-const compararNoLivro = (a: ResumoCapitulo, b: ResumoCapitulo) => numeroCapitulo(a) - numeroCapitulo(b) || a.titulo.localeCompare(b.titulo, 'pt-BR')
+const compararNoLivro = (a: ResumoCapituloLeve, b: ResumoCapituloLeve) => numeroCapitulo(a) - numeroCapitulo(b) || a.titulo.localeCompare(b.titulo, 'pt-BR')
 
 export function filtrarEstante(capitulos: ResumoCapitulo[], f: FiltrosEstante, leituras: Record<string, Leitura | undefined>): ResumoCapitulo[] {
   // A busca (busca.ts) é sem acento, palavra por palavra, com siglas e uma letra de folga; a mesma da estante e da lista.

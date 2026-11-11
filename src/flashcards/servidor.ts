@@ -8,24 +8,13 @@
  * VITE_FLASHCARDS_LIMITE, nada é chamado (o recurso segue só pelo link).
  */
 import { gravar, ler } from '../estado/armazenamento'
-import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
 import { chamarRpc, chamarRpcPublica, ErroRpc } from '../servicos/supabase'
 import { estavel, gravarJogoLocal, idDoAparelho, lerJogoLocal, mesclarJogos, validarJogo, type JogoNuvem } from './continuidade'
 import type { Modo } from './motor/bestiario'
 import { CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, type Recordes, type RegistroFlashcard } from './progresso'
 
-/**
- * Beta público (13/10/2026, parte 18 do SQL aplicada): os flashcards consultam o servidor sempre que
- * VITE_FLASHCARDS_LIMITE=true. Quem decide se há limite é o próprio servidor, pela mesma chave das
- * questões (configuracao_comercial.paywall_ativo): com o paywall desligado, todos seguem sem limite;
- * ligado, o grátis tem 10 por 24 h e assinante, cortesia e administrador não têm limite.
- * O progresso e as corridas do ranking passam a ir para a conta.
- */
-export const FLASHCARDS_NO_SERVIDOR = import.meta.env?.VITE_FLASHCARDS_LIMITE === 'true'
-/** O cliente mostra o aviso do limite só quando o limite das questões também está ligado no build. */
-export const AVISO_LIMITE_FLASHCARDS = LIMITES_HABILITADOS && FLASHCARDS_NO_SERVIDOR
-/** Ranking no servidor (migration 202610130200_flashcards_ranking.sql): só com a outra trava e VITE_FLASHCARDS_RANKING=1. */
-export const RANKING_NO_SERVIDOR = FLASHCARDS_NO_SERVIDOR && import.meta.env?.VITE_FLASHCARDS_RANKING === '1'
+export { AVISO_LIMITE_FLASHCARDS, FLASHCARDS_NO_SERVIDOR, RANKING_NO_SERVIDOR } from './travasServidor'
+import { FLASHCARDS_NO_SERVIDOR, RANKING_NO_SERVIDOR } from './travasServidor'
 
 export interface LimiteFlashcard { permitido: boolean; ilimitado: boolean; restantes: number | null; liberaEm: string; motivo?: string; falha?: boolean }
 

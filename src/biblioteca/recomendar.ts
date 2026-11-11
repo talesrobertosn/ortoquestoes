@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import { BIBLIOTECA_PUBLICA } from '../config'
 import type { Indice } from '../dados/tipos'
 import { ler } from '../estado/armazenamento'
-import { carregarIndiceBiblioteca } from './conteudo'
-import type { IndiceBiblioteca, ResumoCapitulo } from './tipos'
+import { carregarIndiceBibliotecaLeve } from './conteudo'
+import type { IndiceBibliotecaLeve, ResumoCapituloLeve } from './tipos'
 
 /**
  * Sugestões de leitura da Biblioteca fora dela (cronograma, página inicial, questão).
@@ -12,19 +12,19 @@ import type { IndiceBiblioteca, ResumoCapitulo } from './tipos'
  */
 export const bibliotecaVisivel = () => BIBLIOTECA_PUBLICA || ler<boolean>('resumos:visto', false)
 
-export function usarIndiceBiblioteca(): IndiceBiblioteca | null {
-  const [indice, definir] = useState<IndiceBiblioteca | null>(null)
+export function usarIndiceBiblioteca(): IndiceBibliotecaLeve | null {
+  const [indice, definir] = useState<IndiceBibliotecaLeve | null>(null)
   useEffect(() => {
     if (!bibliotecaVisivel()) return
     let vivo = true
-    carregarIndiceBiblioteca().then((i) => { if (vivo) definir(i) }).catch(() => {})
+    carregarIndiceBibliotecaLeve().then((i) => { if (vivo) definir(i) }).catch(() => {})
     return () => { vivo = false }
   }, [])
   return indice
 }
 
 /** Resumos que ensinam algum destes subtemas, do que mais casa para o que menos. */
-export function resumosDosSubtemas(biblioteca: IndiceBiblioteca | null, subtemas: Iterable<string>): ResumoCapitulo[] {
+export function resumosDosSubtemas(biblioteca: IndiceBibliotecaLeve | null, subtemas: Iterable<string>): ResumoCapituloLeve[] {
   if (!biblioteca) return []
   const alvo = new Set(subtemas)
   return biblioteca.capitulos
