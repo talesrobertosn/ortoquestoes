@@ -285,6 +285,10 @@ def numero_capitulo(capitulo: dict) -> str:
 
 def titulo_pagina(capitulo: dict) -> str:
     n = numero_capitulo(capitulo)
+    if capitulo["id"].startswith("netter-anatomia"):
+        # Anatomia (11/11/2026): as buscas são "ombro netter", "úmero netter", "processo coracoide";
+        # o título leva a região, o Netter e o que a página tem, em vez do número do capítulo.
+        return f"{capitulo['titulo']} (Netter): resumo com ossos, músculos, nervos e vias | Orto Questões"
     return f"{capitulo['titulo']}: resumo do {livro_curto(capitulo)}{f', cap. {n}' if n else ''} | Orto Questões"
 
 

@@ -16,7 +16,7 @@ import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { ChamadaSimuladoNacional } from '../componentes/ChamadaSimuladoNacional'
 import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
-import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
+import { ConviteLimiteSobDemanda } from '../componentes/ConviteLimiteSobDemanda'
 import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
@@ -323,7 +323,7 @@ export function Inicio() {
         {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
         {vazio}
         <div className="hd-avisos jn-avisos">
-          <ConviteLimiteDoDia />
+          <ConviteLimiteSobDemanda />
           <ChamadaSimuladoNacional />
         </div>
 
@@ -460,7 +460,7 @@ export function Inicio() {
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
       <div className="hd-avisos jn-avisos">
-        <ConviteLimiteDoDia />
+        <ConviteLimiteSobDemanda />
         <FaixaPlanos />
         <ChamadaSimuladoNacional />
       </div>

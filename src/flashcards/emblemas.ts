@@ -5,7 +5,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { chamarRpc } from '../servicos/supabase'
 import { metricasFlashcards, type MetricasFlashcards, type RecordesServidor } from './conquistas'
 import { BESTIARIO_VAZIO, CHAVE_BESTIARIO, CHAVE_RECORDES, CHAVE_REGISTROS, type Bestiario, type Recordes, type RegistroFlashcard } from './progresso'
-import { RANKING_NO_SERVIDOR } from './servidor'
+import { RANKING_NO_SERVIDOR } from './travasServidor'
 
 /**
  * Liga os Flashcards aos emblemas do site: lê o que o jogo e a Biblioteca

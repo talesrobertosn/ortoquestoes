@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { carregarIndiceBiblioteca } from '../../biblioteca/conteudo'
-import type { ResumoCapitulo } from '../../biblioteca/tipos'
+import { carregarIndiceBibliotecaLeve } from '../../biblioteca/conteudo'
+import type { ResumoCapituloLeve } from '../../biblioteca/tipos'
 import { corDaArea } from '../../dados/coresAreas'
 import { href } from '../../util/rotas'
 import { Icone } from '../Icone'
@@ -18,8 +18,8 @@ const NA_ESTANTE = 8
 
 /** Seção "Biblioteca de resumos" da página de vendas (pedido do Tales, 16/10/2026), explicada por inteiro. Desde 09/11/2026, prévia aberta e leitura completa na assinatura. */
 export function SecaoBiblioteca() {
-  const [capitulos, definir] = useState<ResumoCapitulo[]>([])
-  useEffect(() => { carregarIndiceBiblioteca().then((i) => definir(i.capitulos)).catch(() => undefined) }, [])
+  const [capitulos, definir] = useState<ResumoCapituloLeve[]>([])
+  useEffect(() => { carregarIndiceBibliotecaLeve().then((i) => definir(i.capitulos)).catch(() => undefined) }, [])
   return (
     <section className="vd-secao vd-bib" aria-labelledby="vd-titulo-bib">
       <header className="vd-cabeca" data-revelar>

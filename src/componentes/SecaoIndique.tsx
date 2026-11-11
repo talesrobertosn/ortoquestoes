@@ -3,7 +3,7 @@ import { recurso } from '../config'
 import { usarConta } from '../conta/ContextoConta'
 import { DIAS_POR_AMIGO, LIMITE_AMIGOS, QUESTOES_PARA_CONFIRMAR, linkIndicacao, textoIndicacao, usarMinhaIndicacao } from '../conta/indicacao'
 import { href } from '../util/rotas'
-import { IconeWhatsapp } from './ConviteCompartilhar'
+import { IconeWhatsapp } from './IconeWhatsapp'
 import { Icone } from './Icone'
 import { BordaDeFogo } from './BordaDeFogo'
 

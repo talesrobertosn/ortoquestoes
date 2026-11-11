@@ -105,6 +105,7 @@ background:var(--sup);border:1px solid var(--traco);text-decoration:none;color:v
 .questoes b{font-size:.86rem;color:var(--texto2);font-weight:700}
 .questoes span{font-size:.97rem}
 .questoes .anulada{color:var(--ouro-escuro);font-weight:700}
+.questoes .letra{font-style:normal;font-size:.86rem;font-weight:800;color:var(--marca,#14655e);justify-self:start;padding:.1rem .55rem;border-radius:999px;background:var(--veu,#e6efee);margin-top:.25rem}
 .vizinhas{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem}
 .anos a[aria-current]{background:var(--veu);border-color:var(--marca);color:var(--marca);font-weight:800}
 .familia{display:grid;gap:.6rem;margin-top:.4rem}
@@ -155,13 +156,13 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
     comentado = "comentada" if fem else "comentado"
     anatomia = sum(1 for q in qs if "anatomia" in ((q.get("origem") or {}).get("arquivo") or "").lower())
     if prova == "TEOT":
-        titulo = f"TEOT {ano}: prova anterior comentada, com gabarito | Orto Questões"
+        titulo = f"Gabarito TEOT {ano} e prova comentada | Orto Questões"
         tipo = "a prova teórica do título de especialista da SBOT" + (" e a prova de anatomia" if anatomia else "")
     elif prova == "TARO":
-        titulo = f"TARO {ano}: prova anterior comentada, com gabarito | Orto Questões"
+        titulo = f"Gabarito TARO {ano} e prova comentada | Orto Questões"
         tipo = "a avaliação anual dos residentes da SBOT"
     else:
-        titulo = f"{nome}: prova de cirurgia da mão comentada | Orto Questões"
+        titulo = f"{nome}: prova de cirurgia da mão com gabarito | Orto Questões"
         tipo = "a prova de seleção para a residência em cirurgia da mão"
     principais = ", ".join(t for t, _ in temas.most_common(3))
     if comentadas == len(qs):
@@ -170,8 +171,9 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
         extra = " e comentário"
     else:
         extra = ""
-    descricao = (f"Questões {artigo} {nome}, por assunto, com o gabarito da banca{extra}. "
-                 f"O que mais caiu: {principais}. Faça a prova no site, no tempo.")
+    # "gabarito taro 2026" é a busca que mais traz gente depois do nome do site (Search Console, 11/11/2026).
+    descricao = (f"Gabarito {artigo} {nome} e todas as questões da prova, por assunto, com a letra da banca{extra}. "
+                 f"O que mais caiu: {principais}.")
     faq = [
         (f"Onde ver o gabarito {artigo} {nome}?",
          ("Nesta página, cada questão leva à sua página própria, com as alternativas, o gabarito da banca e o conceito-chave, sem conta."
@@ -198,7 +200,7 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
         garantias.append("Comentário de cada alternativa" if comentadas == len(qs) else f"{d.num(comentadas)} comentadas")
     corpo.append(heroi(
         "Prova anterior" + (" · cirurgia da mão" if mao else ""),
-        f"{d.esc(nome)} <em>{comentado}, questão por questão</em>",
+        f"{d.esc(nome)}: <em>gabarito e prova {comentado}</em>",
         f"Todas as questões {artigo} {d.esc(nome)}, {d.esc(tipo)}, com o gabarito da banca e organizadas por assunto. "
         "Abra cada uma para ver as alternativas e o conceito, ou faça a prova inteira no site, no tempo, e revise os erros depois.",
         nome,
@@ -237,12 +239,13 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
             assunto = (q.get("subtemas") or [tema])[0] if not mao else ", ".join((q.get("subtemas") or [])[1:]) or tema
             texto = d.esc(d.resumir(q.get("enunciado") or "", 150))
             rotulo = f"{d.esc(assunto)}{marcas}" if assunto != tema else marcas.lstrip(" ·")
-            conteudo = (f"<b>{rotulo}</b>" if rotulo else "") + f"<span>{texto}</span>"
+            letra = "" if q.get("anulada") or not q.get("gabarito") else f'<i class="letra">Gabarito: {d.esc(q["gabarito"])}</i>'
+            conteudo = (f"<b>{rotulo}</b>" if rotulo else "") + f"<span>{texto}</span>" + letra
             destino = pagina_questao(q)
             itens.append(f'<li><a href="{destino}">{conteudo}</a></li>' if destino else f"<li><div>{conteudo}</div></li>")
         blocos.append(f'<h3>{d.esc(tema)} <small>({d.num(len(lista))})</small></h3><ul class="questoes">{"".join(itens)}</ul>')
-    corpo.append(f"""<section><h2>As questões {artigo} {d.esc(nome)}</h2>
-<p class="sub">{"Separadas por assunto. Toque numa questão para ver as alternativas, o gabarito e o conceito-chave, sem conta." if ligadas else "Separadas por assunto. Para responder e ver o gabarito, faça a prova no site."}</p>
+    corpo.append(f"""<section id="gabarito"><h2>Gabarito e questões {artigo} {d.esc(nome)}</h2>
+<p class="sub">{"Separadas por assunto, com a letra do gabarito da banca. Toque numa questão para ver as alternativas e o comentário, sem conta." if ligadas else "Separadas por assunto, com a letra do gabarito da banca. Para responder, faça a prova no site."}</p>
 <div class="familia">{"".join(blocos)}</div></section>""")
 
     pos = anos.index(ano)
@@ -281,9 +284,9 @@ def pagina_indice(dados: dict, grupos: dict) -> tuple[str, dict]:
     anos_teot, anos_taro = sorted(por["TEOT"]), sorted(por["TARO"])
     provas_mao = [p for p in d.PROVAS_MAO if por.get(p)]
     n_mao = sum(len(por[p]) for p in provas_mao)
-    titulo = "Provas anteriores do TEOT, do TARO e de cirurgia da mão, ano a ano | Orto Questões"
-    descricao = (f"Provas dos anos anteriores comentadas: TEOT ({d.faixa(anos_teot)}), TARO ({d.faixa(anos_taro)}) e {n_mao} provas de "
-                 "residência em cirurgia da mão. Cada edição com as questões, o gabarito da banca e o que mais caiu.")
+    titulo = "Provas anteriores do TEOT e do TARO com gabarito, ano a ano | Orto Questões"
+    descricao = (f"Provas anteriores do TEOT ({d.faixa(anos_teot)}) e do TARO ({d.faixa(anos_taro)}) com gabarito e comentário, e {n_mao} provas de "
+                 "residência em cirurgia da mão. Cada edição com as questões, a letra da banca e o que mais caiu.")
     faq = [
         ("Onde encontrar as provas anteriores do TEOT?",
          f"Aqui estão as provas do TEOT de {d.faixa(anos_teot)}, uma página por ano, com as questões separadas por assunto, "

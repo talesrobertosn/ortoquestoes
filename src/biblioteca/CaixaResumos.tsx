@@ -6,14 +6,14 @@ import { hojeBR } from '../util/dia'
 import { href } from '../util/rotas'
 import { ChamaPixel } from '../componentes/ChamaPixel'
 import { ordemDoDia, resumosDosSubtemas, usarIndiceBiblioteca } from './recomendar'
-import type { Leitura, ResumoCapitulo } from './tipos'
+import type { Leitura, ResumoCapituloLeve } from './tipos'
 import { usarBiblioteca } from './usarBiblioteca'
 import '../estilos/componentes/Biblioteca.css'
 
-const estiloArea = (c: ResumoCapitulo) => ({ ['--bib-area' as string]: corDaArea(c.especialidade) })
+const estiloArea = (c: ResumoCapituloLeve) => ({ ['--bib-area' as string]: corDaArea(c.especialidade) })
 
 /** Uma linha para o estado da leitura: quanto falta, se já leu ou quanto tempo leva. */
-function estadoLeitura(c: ResumoCapitulo, l: Leitura | undefined): string {
+function estadoLeitura(c: ResumoCapituloLeve, l: Leitura | undefined): string {
   if (l?.concluidoEm || (l?.progresso ?? 0) >= 95) return 'Lido · bom para revisar'
   if (l && l.progresso > 0) return `${l.progresso}% lido · faltam ~${Math.max(1, Math.round(c.minutos * (1 - l.progresso / 100)))} min`
   return `~${c.minutos} min de leitura`
@@ -30,7 +30,7 @@ export function CaixaResumos({ subtemasHoje, especialidade, rotuloDia }: { subte
   const { premium } = usarPremium()
   const dia = hojeBR()
   const { combina, outros } = useMemo(() => {
-    const daArea = (c: ResumoCapitulo) => !especialidade || c.especialidade === especialidade
+    const daArea = (c: ResumoCapituloLeve) => !especialidade || c.especialidade === especialidade
     const combina = resumosDosSubtemas(biblioteca, subtemasHoje).filter(daArea)[0] ?? null
     const resto = (biblioteca?.capitulos ?? []).filter((c) => c.id !== combina?.id && daArea(c))
     const lendo = resto.filter((c) => leituras[c.id]?.progresso && !leituras[c.id]?.concluidoEm).sort((a, b) => (leituras[b.id]?.em ?? 0) - (leituras[a.id]?.em ?? 0))
@@ -38,7 +38,7 @@ export function CaixaResumos({ subtemasHoje, especialidade, rotuloDia }: { subte
     return { combina, outros }
   }, [biblioteca, subtemasHoje, leituras, dia, especialidade])
   if (!combina && !outros.length) return null
-  const fechado = (c: ResumoCapitulo) => c.acesso !== 'gratis' && !premium
+  const fechado = (c: ResumoCapituloLeve) => c.acesso !== 'gratis' && !premium
 
   return (
     <section className="cp-bloco" aria-labelledby="bib-caixa-titulo">

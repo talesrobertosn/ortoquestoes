@@ -3,7 +3,7 @@ import { SITE } from '../config'
 import { Icone } from './Icone'
 import { createPortal } from 'react-dom'
 import { recurso } from '../config'
-import { IconeWhatsapp } from './ConviteCompartilhar'
+import { IconeWhatsapp } from './IconeWhatsapp'
 
 /**
  * Convite para compartilhar o site, no máximo uma vez por dia: aparece depois

@@ -14,6 +14,10 @@
  * - Artes do site (imagens/, emblemas/, ranking/, pixel/, mascote/, marca/):
  *   stale-while-revalidate. Mudam raramente; a cópia guardada responde na hora
  *   e a rede a renova em segundo plano.
+ * - Baralhos dos flashcards com versão no endereço (flashcards/<área>.json?v=…,
+ *   11/11/2026): cache primeiro. A versão muda quando o baralho muda, então a
+ *   cópia guardada nunca fica velha; antes, cada visita baixava de novo uns
+ *   500 KB. Ao guardar uma versão nova, as anteriores do mesmo arquivo saem.
  * - Outros domínios (Supabase, Mercado Pago): não passam por aqui.
  */
 const VERSAO = 'oq-v1'
@@ -68,6 +72,25 @@ async function cachePrimeiro(pedido) {
   return resposta
 }
 
+/** Baralho com versão: a cópia guardada vale até a versão mudar; a nova substitui as antigas do mesmo arquivo. */
+async function baralhoVersionado(evento) {
+  const pedido = evento.request
+  const cache = await caches.open(VERSAO)
+  const salva = await cache.match(pedido)
+  if (salva) return salva
+  const resposta = await fetch(pedido)
+  if (resposta.ok) {
+    evento.waitUntil((async () => {
+      await cache.put(pedido, resposta.clone())
+      const caminho = new URL(pedido.url).pathname
+      for (const antigo of await cache.keys(pedido, { ignoreSearch: true })) {
+        if (new URL(antigo.url).pathname === caminho && antigo.url !== pedido.url) await cache.delete(antigo)
+      }
+    })().catch(() => undefined))
+  }
+  return resposta
+}
+
 /** Guarda a cópia sem segurar a resposta (a página não espera a gravação). */
 function guardar(evento, cache, pedido, resposta) {
   if (resposta.ok) evento.waitUntil(cache.put(pedido, resposta.clone()).catch(() => undefined))
@@ -112,5 +135,6 @@ self.addEventListener('fetch', (evento) => {
   if (caminho.startsWith('assets/')) evento.respondWith(cachePrimeiro(pedido))
   else if (pedido.mode === 'navigate') evento.respondWith(redePrimeiro(pedido))
   else if (caminho.startsWith('acervo/')) evento.respondWith(redeComPrazo(evento, PRAZO_ACERVO))
+  else if (caminho.startsWith('flashcards/') && url.searchParams.has('v')) evento.respondWith(baralhoVersionado(evento))
   else if (ARTES.some((pasta) => caminho.startsWith(pasta)) && pedido.cache !== 'no-store' && pedido.cache !== 'reload') evento.respondWith(copiaEnquantoRenova(evento))
 })

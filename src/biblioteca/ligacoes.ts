@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { recurso } from '../config'
 import { GRUPOS_ASSUNTOS } from '../dados/gruposAssuntos'
 import type { IndiceAcervo } from '../flashcards/tipos'
-import type { IndiceBiblioteca, ResumoCapitulo } from './tipos'
+import type { IndiceBibliotecaLeve, ResumoCapituloLeve } from './tipos'
 
 /**
  * Resumos e flashcards ligados entre si (27/10/2026): "Estudar flashcards deste tema" no resumo e na questão,
@@ -46,7 +46,7 @@ export function assuntosDoRecorte(f: { area: string | null; grupo: string | null
 }
 
 /** Resumos de um recorte de flashcards: os que ensinam mais assuntos dele primeiro; empate, os da mesma área. */
-export function resumosDoRecorte(biblioteca: IndiceBiblioteca | null, area: string, assuntos: string[], limite = 2): ResumoCapitulo[] {
+export function resumosDoRecorte(biblioteca: IndiceBibliotecaLeve | null, area: string, assuntos: string[], limite = 2): ResumoCapituloLeve[] {
   if (!biblioteca || !assuntos.length) return []
   const alvo = new Set(assuntos)
   return biblioteca.capitulos
