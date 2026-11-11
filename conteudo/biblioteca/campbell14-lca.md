@@ -407,7 +407,7 @@ alerta: `joelho-0307` não tem gabarito oficial; o gabarito pela bibliografia é
 
 Pense numa mola curta e dura e numa mola longa e macia. Para segurar o mesmo peso sem folga, a mola longa precisa ser esticada muito mais. O tendão patelar é a mola curta e rígida; os isquiotibiais quádruplos, a longa e mais complacente.
 
-!questoes central=joelho-0056
+!questoes central=joelho-0056 relacionadas=trauma-1073
 conceito: O patelar precisa de menos tensão na fixação que os isquiotibiais, porque a sua parte tendínea é mais curta e mais rígida.
 como: O TEOT 2022 perguntou se o patelar precisa de mais ou menos tensão, e por quê.
 armadilha: Achar que o enxerto mais rígido precisa de mais tensão: é o contrário.
