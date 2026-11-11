@@ -337,7 +337,27 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     else { definirAberto(null); definirPreset(null); m.isolar([selecao.id]); definirIsolado(true); m.focar([selecao.id], selecao.faixa) }
   }
   const ocultarSelecao = () => { if (selecao) motorRef.current?.ocultar(selecao.id) }
-  const restaurar = () => { const m = motorRef.current; if (!m) return; soltarIsolamento(); m.mostrarTodas(); m.definirCorte(null); definirCorteUI(null) }
+  /**
+   * Voltar ao início (Tales, 11/11/2026): o atlas como abriu, no modo atual. Sai do Teste-se, solta o isolamento e a
+   * visualização pronta, mostra o que foi escondido, tira o corte, a seleção e o recorte de região e enquadra de frente.
+   * As camadas ligadas ficam como estão (são escolha da pessoa, e ligar de novo custa download).
+   */
+  const voltarAoInicio = () => {
+    const m = motorRef.current
+    if (!m) return
+    definirEstudo(false)
+    soltarIsolamento()
+    m.mostrarTodas()
+    m.definirCorte(null); definirCorteUI(null)
+    m.selecionar(null)
+    definirAtivas(new Set()); definirPontosOsso(false)
+    definirRegiaoId(null); definirLado('ambos'); m.definirRegiao(null)
+    definirPersonalizar(false)
+    if (!larga) definirExplorar(false)
+    m.enquadrarTudo('anterior')
+    navegar(`/atlas${modo === 'corpo' ? '?m=corpo' : ''}`, true)
+  }
+  const foraDoInicio = !!(selecao || isolado || preset || aberto || corte || regiaoId || estudo || motor?.quantasOcultas)
   const alternarFavorito = () => { if (!selecao) return; definirPref((p) => ({ ...p, favoritos: p.favoritos.includes(selecao.id) ? p.favoritos.filter((f) => f !== selecao.id) : [selecao.id, ...p.favoritos] })) }
 
   const irPara = (e: Estrutura) => {
@@ -439,6 +459,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       else if (ev.key === 'h' || ev.key === 'H') ocultarSelecao()
       else if (ev.key === 't' || ev.key === 'T') iniciarEstudo()
       else if (ev.key === '/') { ev.preventDefault(); definirExplorar(true); setTimeout(() => document.querySelector<HTMLInputElement>('.at-busca input')?.focus(), 30) }
+      else if (ev.key === '0') voltarAoInicio()
       else if (['1', '2', '3', '4', '5', '6'].includes(ev.key)) m.vista((['anterior', 'posterior', 'direita', 'esquerda', 'superior', 'inferior'] as Vista[])[Number(ev.key) - 1])
     }
     window.addEventListener('keydown', tecla)
@@ -684,8 +705,8 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
             <button type="button" className="at-link" onClick={() => mudarCorte({ ...corte, inverter: !corte.inverter })}><Icone nome="reiniciar" tamanho={15} /> Ver o outro lado do corte</button>
             <p className="at-nota">O corte é geométrico e educativo: não substitui tomografia nem ressonância.</p>
           </>}
-          <button type="button" className="botao" onClick={restaurar}><Icone nome="reiniciar" tamanho={16} /> Restaurar a visualização{motor.quantasOcultas ? ` (${motor.quantasOcultas} ocultas)` : ''}</button>
-          <p className="at-nota">Atalhos: / busca · T Teste-se · F foca · I isola · H esconde · 1 a 6 trocam a vista · Esc volta. Clicar de novo no mesmo ponto pega a estrutura de baixo.</p>
+          <button type="button" className="botao" onClick={voltarAoInicio}><Icone nome="casa" tamanho={16} /> Voltar ao início{motor.quantasOcultas ? ` (mostra ${motor.quantasOcultas} ocultas)` : ''}</button>
+          <p className="at-nota">Atalhos: 0 volta ao início · / busca · T Teste-se · F foca · I isola · H esconde · 1 a 6 trocam a vista · Esc volta. Clicar de novo no mesmo ponto pega a estrutura de baixo.</p>
           <a className="at-nota at-nota--link" href={`${import.meta.env.BASE_URL}atlas3d/v1/LICENCAS.md`} target="_blank" rel="noreferrer">Modelos: BodyParts3D (DBCLS, CC BY-SA 2.1 JP), Z-Anatomy (CC BY-SA 4.0) e Human Reference Atlas (HuBMAP, CC BY 4.0)</a>
         </aside>
       )}
@@ -697,7 +718,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         <button type="button" onClick={() => motor?.vista('direita')} title="Lateral direita (3)">D</button>
         <button type="button" onClick={() => motor?.vista('esquerda')} title="Lateral esquerda (4)">E</button>
         <button type="button" onClick={() => motor?.vista('superior')} title="Superior (5)">Sup</button>
-        <button type="button" onClick={() => motor?.enquadrarTudo()} aria-label="Enquadrar" title="Enquadrar"><Icone nome="alvo" tamanho={17} /></button>
+        <button type="button" className={`at-inicio${foraDoInicio ? ' at-inicio--ativo' : ''}`} onClick={voltarAoInicio} title="Voltar ao início: tira seleção, isolamento, corte e região (tecla 0)">
+          <Icone nome="casa" tamanho={16} /><span>Início</span>
+        </button>
       </nav>
 
       {/* camadas do modo */}

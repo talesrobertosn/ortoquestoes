@@ -719,3 +719,12 @@ body:has(.atlas) { overflow: hidden; }
 .at-sexo button[aria-checked="true"] { background: var(--superficie); color: var(--texto); box-shadow: 0 1px 2px rgba(16, 28, 26, 0.12), inset 0 0 0 1px var(--at-borda); }
 .at-sexo button[aria-checked="false"] { background: none; color: var(--texto-2); box-shadow: none; }
 .at-sexo button[aria-checked="true"] { background: #8a4b5a !important; color: #fff !important; box-shadow: 0 3px 10px -4px rgba(138, 75, 90, 0.8) !important; }
+
+/* Voltar ao início (11/11/2026): botão com nome, no fim da barra de vistas; acende quando algo foi mexido */
+.atlas__vistas .at-inicio { gap: 0.35rem; margin-left: 0.2rem; padding: 0 0.75rem; color: var(--texto); border-left: 1px solid var(--at-borda); border-radius: 0 var(--raio-pill) var(--raio-pill) 0; }
+.atlas__vistas .at-inicio--ativo { background: var(--verdete); color: #fff; border-radius: var(--raio-pill); border-left-color: transparent; box-shadow: 0 0 0 3px color-mix(in srgb, var(--verdete) 22%, transparent); animation: at-inicio-entra 0.35s ease-out; }
+.atlas__vistas .at-inicio--ativo:hover { background: color-mix(in srgb, var(--verdete) 86%, #000); color: #fff; }
+.atlas--corpo .atlas__vistas .at-inicio--ativo { background: #8a4b5a; box-shadow: 0 0 0 3px color-mix(in srgb, #8a4b5a 22%, transparent); }
+.atlas--corpo .atlas__vistas .at-inicio--ativo:hover { background: #74404c; }
+@keyframes at-inicio-entra { from { transform: scale(0.88); opacity: 0.4; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .atlas__vistas .at-inicio--ativo { animation: none; } }
