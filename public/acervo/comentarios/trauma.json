@@ -5413,127 +5413,75 @@
   }
  },
  "trauma-0181": {
-  "conceito": "As radiografias mostram uma fratura do colo cirúrgico **sem impacção**, associada a fragmento do **tubérculo maior**. Na **AO/OTA clássica**, essa combinação é **11B2**, alternativa B.\n\nO prefixo **11** identifica úmero proximal. A letra separa um padrão extra-articular unifocal (A), extra-articular bifocal (B) e articular (C). Dentro de B, o ponto que decide entre **B1 e B2** é a impacção do colo: B1 é impactado; B2, não impactado, com um tubérculo desviado (Rockwood, 10ª ed., cap. 36, “AO/OTA: o número 11 e as três letras”).\n\n“Articular” aqui não significa apenas fratura perto da articulação. Os grupos C apresentados no resumo envolvem cabeça ou colo anatômico. Não se deve trocar B2 por C apenas porque a fratura é proximal e está desviada.\n\n| Grupo clássico | Padrão do resumo |\n|---|---|\n| 11B1 | Colo cirúrgico impactado e um tubérculo desviado |\n| 11B2 | Colo cirúrgico não impactado e um tubérculo desviado |\n| 11C1 | Colo anatômico pouco desviado |\n| 11C2 | Colo anatômico muito desviado |\n\nA versão de 2018 foi simplificada; esta questão usa os subgrupos clássicos. A classificação organiza o padrão, mas o tratamento ainda exige avaliar osso, paciente e reconstrução.",
-  "correta": "**B: 11B2.** O colo cirúrgico não impactado com um tubérculo desviado é a descrição do grupo. As imagens devem ser lidas pelo nível do traço e pela ausência de impacção, sem medir um desvio não fornecido.",
+  "conceito": "As quatro alternativas ficam em duas letras, B e C, e em dois grupos de cada. Para chegar à resposta, a radiografia precisa responder a duas perguntas, em ordem: o traço entra na cabeça (articular) ou fica fora dela? E, se fica fora, o colo cirúrgico está impactado ou não?\n\n**A imagem.** Na incidência da esquerda, o traço principal atravessa o **colo cirúrgico**, abaixo da cabeça: a diáfise está desviada e **sem encaixe** no fragmento proximal, sem a cabeça enterrada na metáfise. Há um fragmento separado na face lateral, o **tubérculo maior**, afastado da cabeça. A cabeça, em si, está inteira, sem traço pelo colo anatômico. A segunda incidência mostra o mesmo fragmento lateral destacado do contorno da cabeça.\n\n**Como a AO/OTA monta o código.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36, seção de classificação), explica o prefixo: úmero é o osso **1** e o segmento proximal é **1**, daí **11**. Depois vem a letra, que diz quantos focos e se a fratura é articular:\n\n| Tipo | Ideia | Grupos na versão clássica |\n|---|---|---|\n| **A** | extra-articular **unifocal** | A1 tubérculo maior; A2 colo cirúrgico impactado; A3 colo cirúrgico não impactado |\n| **B** | extra-articular **bifocal** | B1 colo cirúrgico **impactado** + um tubérculo; **B2 colo cirúrgico não impactado + um tubérculo**; B3 com luxação |\n| **C** | **articular** (cabeça ou colo anatômico) | C1 colo anatômico pouco desviado; C2 muito desviado; C3 com luxação |\n\nColo cirúrgico mais tubérculo maior são dois focos fora da cabeça: tipo **B**. Sem impacção: **B2**.\n\n**A mesma distinção no desenho do Campbell.** Na figura de NEER do Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, Fig. 62.17, p. 2774), abaixo, a linha do colo cirúrgico em duas partes mostra as três formas: **impactada (A)**, **não impactada (B)** e cominuta (C). A fratura da questão é a forma B dessa linha somada a um tubérculo, a combinação que NEER, com os dois segmentos desviados, chamaria de três partes.\n\n**Por que as letras importam além da prova.** O Campbell (cap. 62, p. 2775.e1) liga as letras à irrigação: o tipo A tem a irrigação da cabeça **intacta**, o B tem **possível** lesão vascular e o C, **alta probabilidade de osteonecrose**. É por isso que a fronteira entre B e C, o colo anatômico, pesa tanto.\n\n**O que o Rockwood diz da classificação.** Com os subgrupos são **52 tipos**, completa e pouco prática: kappa de 0,53 para os três tipos e 0,42 para os nove grupos. A versão de **2018** simplificou para 13 grupos, aproximando-se de NEER (A duas partes, B três partes, C articulares ou quatro partes). A questão usa os grupos da versão clássica.\n\n> **Na prova:** colo cirúrgico + um tubérculo = **11B**; impactado = **B1**; não impactado = **B2**; luxado = B3. Traço no colo anatômico = **C**.\n\nA tabela está na seção \"AO/OTA: o número 11 e as três letras\" do resumo.",
+  "correta": "**B) 11B2.** Na AO/OTA clássica descrita pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36), o tipo B é a fratura extra-articular bifocal, e o grupo B2 é o colo cirúrgico não impactado com um tubérculo desviado. É o que a radiografia mostra: traço no colo cirúrgico, diáfise sem encaixe na cabeça e o tubérculo maior separado, sem traço no colo anatômico.",
   "incorretas": {
-   "A": "**B1 exige impacção.** O tubérculo associado mantém a fratura no grupo bifocal, mas o colo não impactado leva a B2. A diferença não é simplesmente ter mais ou menos fragmentos.",
-   "C": "**C1 muda a localização para o colo anatômico.** No esquema clássico, corresponde a padrão articular pouco desviado. O padrão mostrado é do colo cirúrgico com tubérculo, não essa separação articular.",
-   "D": "**C2 também é articular, com colo anatômico muito desviado.** O grau de desvio não converte por si uma fratura extra-articular do colo cirúrgico em C2. Primeiro é preciso acertar onde passa o traço."
+   "A": "**11B1** tem os mesmos dois focos, colo cirúrgico e um tubérculo, mas com o colo **impactado**: a metáfise enterrada no fragmento da cabeça, como na forma A da linha do colo cirúrgico da Fig. 62.17 do Campbell (cap. 62, p. 2774). A impacção dá estabilidade e muda o grupo (Rockwood, cap. 36). Na imagem da questão, a diáfise está desviada e solta, sem esse encaixe.",
+   "C": "**11C1** exige traço **articular**, pelo colo anatômico, com pouco desvio. O tipo C é o da cabeça separada dos tubérculos pelo colo anatômico, o de maior risco de osteonecrose segundo o Campbell (cap. 62, p. 2775.e1). Na radiografia, a cabeça está inteira e o traço passa abaixo dela, no colo cirúrgico; não há como chamar a fratura de articular.",
+   "D": "**11C2** é a fratura do colo anatômico **muito desviada** (Rockwood, cap. 36), um tipo C, com a alta probabilidade de osteonecrose que o Campbell (cap. 62, p. 2775.e1) atribui aos articulares. O desvio importante da imagem pode atrair para ela, mas o desvio está no colo cirúrgico e no tubérculo, fora da cabeça. Desvio grande sem traço articular continua sendo tipo B."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 36 (Proximal Humeral Fractures), seção Classification (AO/OTA)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), p. 2774 (Fig. 62.17) e p. 2775.e1",
+   "Resumo OrtoQuestões: Fratura do úmero proximal"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-36-umero-proximal",
-     "titulo": "Fratura do úmero proximal",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
-     "secoes": [
-      "Neer, AO e os padrões de fratura"
-     ],
-     "blocos": [
-      "neer-ao-e-os-padroes-de-fratura-10b3d28f",
-      "neer-ao-e-os-padroes-de-fratura-f472f79e",
-      "neer-ao-e-os-padroes-de-fratura-54eebd91"
-     ],
-     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
-     "trechosSha256": "39455daeccc2e776f549e419d45badf2166c6bcd3caffd915f8eeca69dba40b2"
-    }
-   ],
-   "questaoSha256": "35966a18c1fff1247fd4aea2a1fff66f3b01373174df486e03626d3347d37598",
-   "comentarioSha256": "4326af9d699408c1183a44451d469a5025971ccb6da4a39654f66dadbec83531"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-62-17-t04.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 62, Fig. 62.17, p. 2774. Classificação de NEER em duas, três e quatro partes, fratura-luxação e superfície articular; na linha do colo cirúrgico em duas partes, as três formas: impactada (A), não impactada (B) e cominuta (C).",
+    "largura": 913,
+    "altura": 1161
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0183": {
-  "conceito": "Na radiografia, um parafuso inferior é dirigido à região **inferomedial da cabeça**, onde se busca suporte do **calcar**. Quando a cortical medial está cominuída, esse apoio é o fator técnico destacado pela questão: **parafuso no calcar**, alternativa D.\n\nA cabeça precisa manter altura e orientação depois de reduzida. Se perde o apoio medial, tende a ceder; a placa lateral e seus parafusos bloqueados não impedem automaticamente esse colapso. O resumo relaciona ausência de suporte medial a perda de redução, perfuração e perda de altura, explicando a importância dos parafusos inferomediais (Rockwood, 10ª ed., cap. 36, “O que faz a placa perder a redução”).\n\n**Mais parafusos não substituem um parafuso bem dirigido.** A montagem precisa combinar redução, placa alinhada, apoio inferior e ancoragem articular. Parafuso comprido demais pode penetrar a articulação; o resumo orienta comprimentos menores que a medida subcondral e radioscopia em vários planos.\n\nQualidade óssea também pesa, sobretudo no idoso. Entretanto, a pergunta procura o elemento da fixação que recompõe o apoio perdido com a cominuição medial. A figura ilustra a montagem, sem permitir deduzir densidade óssea ou medir a distância subcondral do paciente.",
-  "correta": "**D: colocação de parafuso no calcar.** Ele sustenta a região inferomedial da cabeça quando o apoio cortical medial foi perdido. É um recurso dirigido ao mecanismo de colapso, integrado à redução e ao restante da montagem.",
+  "conceito": "A placa bloqueada no úmero proximal dá estabilidade angular: cada parafuso fica travado na placa. Isso é uma vantagem e uma armadilha, e a questão quer saber o que impede a cabeça de afundar quando a parede medial, que deveria apoiá-la, está cominuída.\n\n**A imagem.** A radiografia mostra uma placa lateral bloqueada com vários parafusos na cabeça. O parafuso mais inferior da cabeça sai da placa e sobe em diagonal até a porção **inferomedial** da cabeça, logo acima do calcar. É o parafuso do calcar.\n\n**O mecanismo.** O calcar é a cortical medial do colo, onde a cabeça se apoia na diáfise. Quando ela está cominuída, a cabeça perde o seu pilar e tende a **cair em varo**. Os parafusos bloqueados não recuam com ela: o resultado é perda da redução, perda de altura e parafuso furando a cartilagem. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36, seção sobre a perda da redução), lista os fatores de falha: idade avançada, osteoporose, cigarro, varo antes da cirurgia, extensão metafisária posteromedial menor que 8 mm, desvio cabeça-diáfise maior que 4 mm, tubérculo maior multifragmentado, redução em varo, **falta de apoio medial** e não incluir o manguito nas suturas.\n\n**O que o cirurgião pode fazer.** O apoio medial é o ponto central. GARDNER mostrou que a falta de suporte medial leva a perda da redução, mais perfuração e perda de altura, e chamou a atenção para os **parafusos do calcar**. YANG confirmou: com o apoio medial preservado, o Constant em 1 ano foi **81 contra 65**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, p. 2779 aprox.), diz o mesmo com outras palavras: o parafuso inferior funciona como um **substituto do calcar medial**. A Fig. 62.33 do Campbell (p. 2784), abaixo, mostra o caso: fratura em duas partes do colo cirúrgico (A) e, depois da placa (B e C), o parafuso na parte inferior da cabeça colocado **por causa da cominução medial**.\n\n**Onde a técnica encaixa o parafuso.** Na técnica dos autores do Rockwood, a placa fica pelo menos 5 mm abaixo do topo do tubérculo maior, mas alta o bastante para que os parafusos inferiores **sustentem o calcar**. Os parafusos da cabeça são curtos: mede-se até o osso subcondral e descontam-se 4 mm (6 mm se for cimentar).\n\n**Dois fatores de verdade, um que se controla.** O Campbell (p. 2775.e1) aponta a perfusão ruim da cabeça e a **má qualidade óssea** como bons preditores de falha, e diz que uma espessura cortical somada menor que 4 mm contraindica a fixação interna. A qualidade do osso pesa, portanto, mas é dada pelo paciente. Diante de cominução medial, o fator da **fixação** que mais dá estabilidade é o apoio inferomedial.\n\n> **Na prova:** cominução medial + placa bloqueada = **parafuso no calcar**, o substituto do pilar medial.\n\nO assunto está na seção \"O que faz a placa perder a redução\" do resumo.",
+  "correta": "**D) a colocação de parafuso no calcar.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36), põe a falta de apoio medial entre as causas de perda da redução e cita GARDNER: sem suporte medial, há mais perda de altura e perfuração, e os parafusos do calcar devolvem esse apoio. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, Fig. 62.33, p. 2784), mostra o parafuso na parte inferior da cabeça colocado justamente por causa da cominução medial.",
   "incorretas": {
-   "A": "**Osso ruim aumenta o risco, mas não é o recurso técnico que recompõe o apoio.** O capítulo lista osteoporose entre os fatores de falha. Reconhecê-la orienta reforço e escolha da construção, sem substituir o suporte inferomedial solicitado.",
-   "B": "**Contagem total não informa distribuição do suporte.** Vários parafusos superiores podem deixar a região inferomedial sem apoio. A técnica usa múltiplos parafusos, mas a questão destaca a posição no calcar na presença de cominuição medial.",
-   "C": "**Aumentar comprimento não é uma solução isolada.** Um parafuso longo pode furar a cabeça ou tornar-se intra-articular após colapso. A posição inferomedial e o comprimento seguro precisam coexistir; “mais longo” não equivale a melhor suporte."
+   "A": "**A qualidade do osso** é um fator real de falha: o Rockwood (cap. 36) inclui a osteoporose entre as causas de perda da redução, e o Campbell (cap. 62, p. 2775.e1) chama a má qualidade óssea de bom preditor de falha, contraindicando a fixação quando a cortical somada mede menos de 4 mm. Mas é uma condição do paciente, que não muda na sala; a pergunta é sobre a estabilidade da osteossíntese com cominução medial, e ali o fator decisivo é o apoio do calcar.",
+   "B": "**O número total de parafusos** não resolve a falta do pilar medial. Os autores do Rockwood (cap. 36) querem, sim, o máximo de parafusos no segmento articular, mas como um dos cinco princípios da técnica, ao lado da redução anatômica e da placa bem posicionada. Muitos parafusos paralelos, todos acima do calcar, deixam a cabeça sem apoio inferomedial e ela cai em varo do mesmo jeito.",
+   "C": "**O comprimento dos parafusos** tem papel oposto ao que a alternativa sugere: o Rockwood (cap. 36) recomenda parafusos **curtos**, medidos até o osso subcondral e descontados 4 mm, porque o parafuso longo é a causa da penetração articular primária (cerca de 14% numa série). Parafuso comprido não dá mais estabilidade à cabeça cominuída; só aumenta o risco de furar a cartilagem quando ela assentar."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Placa bloqueada: o parafuso, o calcar e a técnica."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 36 (Proximal Humeral Fractures), seções Loss of Reduction e técnica dos autores",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), p. 2775.e1, p. 2779 aprox. e p. 2784 (Fig. 62.33)",
+   "Resumo OrtoQuestões: Fratura do úmero proximal"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-36-umero-proximal",
-     "titulo": "Fratura do úmero proximal",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
-     "secoes": [
-      "Placa bloqueada: o parafuso, o calcar e a técnica"
-     ],
-     "blocos": [
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-38a4d747",
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-5d9e8232",
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-f402d68e"
-     ],
-     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
-     "trechosSha256": "854b03d90e1d918e5543d118835b91e15df4b3c582ef0e13e491b423cb824fdc"
-    }
-   ],
-   "questaoSha256": "40c8aeb06011458d4e21688a1c04f406e017eea8e2e36439c08008604c3fb4bf",
-   "comentarioSha256": "8512c7912157ab9da271674252db7fc3ccde96ce8c63d7167d407843d4e8e2d6"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-62-33-t04.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 62, Fig. 62.33, p. 2784. Fratura desviada em duas partes do colo cirúrgico com traço entre os tubérculos (A), fixada com placa bloqueada (B e C); o livro chama a atenção para o parafuso na porção inferior da cabeça, colocado por causa da cominução medial.",
+    "largura": 1397,
+    "altura": 662
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0184": {
-  "conceito": "Nas duas incidências, a cabeça perdeu sua relação de apoio e **colapsou em varo**, enquanto pontas de parafusos ultrapassam o contorno articular. A combinação é **colapso em varo com perfuração condral dos parafusos**, alternativa B.\n\nA placa bloqueada fixa o ângulo entre parafuso e implante. Isso ajuda a montagem, mas cria uma armadilha: se a cabeça afunda ou perde altura, o parafuso **não recua junto com ela**. Sua ponta pode atravessar osso subcondral e cartilagem. O resumo chama essa perfuração de **secundária**; a primária ocorre quando o parafuso já foi colocado comprido demais (Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nA imagem mostra a complicação, mas não é uma sequência temporal da operação. Portanto, não se pode afirmar só por ela que todo parafuso estava adequado inicialmente. O mecanismo de colapso explica como pode surgir penetração tardia; a verificação em vários planos e o suporte medial ajudam a prevenir os diferentes modos de falha.\n\n**Osteonecrose é uma possível causa de colapso, não um sinônimo radiográfico obrigatório.** Chamar esta imagem de necrose sem outros dados troca uma hipótese etiológica pelo achado que está demonstrado: varo e parafusos penetrando a articulação. A penetração merece atenção porque pode lesar a glenoide.",
-  "correta": "**B: colapso em varo e perfuração condral dos parafusos.** São os achados representados. A montagem bloqueada explica por que a perda de altura da cabeça pode deixar pontas intra-articulares.",
+  "conceito": "A placa bloqueada mudou o tratamento do úmero proximal, e trouxe com ela uma complicação típica, que a imagem mostra em dupla: a cabeça que cai e o parafuso que não recua.\n\n**A imagem.** Na incidência de frente, a cabeça perdeu a altura e inclinou para baixo e para dentro sobre a diáfise: o ângulo entre a cabeça e a diáfise fechou, o que é o **colapso em varo**. As pontas dos parafusos chegam ao contorno da cabeça. No perfil, à direita, as pontas de vários parafusos passam do contorno articular: é a **perfuração condral**.\n\n**Por que as duas vêm juntas.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36, seção sobre a falha da placa bloqueada), diz que a complicação **mais frequente** da placa bloqueada é a **penetração intra-articular do parafuso**, de dois jeitos:\n- **primária:** o parafuso já entra longo demais na cirurgia (cerca de **14%** numa série);\n- **secundária:** a cabeça **colapsa**, e o parafuso, travado na placa, **não recua** e acaba furando a cartilagem (**6% a 11%**, até **43%** acima de 60 anos).\n\nO colapso em varo e a perfuração secundária são, portanto, causa e consequência. O capítulo lista o varo antes da cirurgia, a redução em varo e a **falta de apoio medial** entre as causas de perda da redução. As séries mostram complicações em até 50%, e a da Mayo Clinic (173 pacientes acima de 60 anos) teve 44% de complicações, 34% de falha e 11% de reoperação.\n\n**Como o livro tenta evitar.** A Fig. 36-37 do Rockwood, abaixo, mostra o oposto da imagem da questão: parafusos cefálicos **relativamente curtos**, que param antes do osso subcondral, e um parafuso inferior apoiando a parte inferomedial da cabeça. A técnica dos autores é medir até o osso subcondral e descontar 4 mm (6 mm se for cimentar), e o reforço com cimento por parafusos canulados baixou a falha do implante de 9% para 1,3%.\n\n**E a necrose?** Ela existe e também pode afundar a cabeça e expor os parafusos: na Fig. 36-51 do mesmo capítulo, o colapso por necrose leva à penetração secundária. Mas é mais tardia e menos frequente que a penetração por colapso mecânico, e o que a radiografia mostra é a cabeça inclinada em varo, não a esclerose e o achatamento da necrose. O capítulo manda não atrasar a revisão quando a necrose aparece depois da placa, porque os parafusos que furam a cabeça destroem a glenoide.\n\n> **Na prova:** placa bloqueada + cabeça caída em **varo** + pontas para dentro da articulação = **perfuração secundária**. É a complicação mais frequente.\n\nO assunto está na seção \"Por que a placa bloqueada falha\" do resumo.",
+  "correta": "**B) colapso em varo e a perfuração condral dos parafusos.** A imagem mostra a cabeça inclinada em varo sobre a diáfise e as pontas dos parafusos além do contorno articular. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36), explica a ligação: na perfuração secundária, a cabeça colapsa e o parafuso travado na placa não recua, furando a cartilagem (6% a 11%, até 43% acima de 60 anos). A penetração do parafuso é a complicação mais frequente da placa bloqueada.",
   "incorretas": {
-   "A": "**Acerta o varo, mas substitui o achado dos parafusos por uma causa não comprovada.** Osteonecrose pode produzir colapso; a figura, porém, demonstra penetração e não estabelece sozinha a viabilidade prévia da cabeça.",
-   "C": "**Erra a direção e presume osteonecrose.** A perda de redução está em varo, não em valgo. Além disso, a complicação articular visível envolve as pontas dos parafusos, sem diagnóstico etiológico obrigatório de necrose.",
-   "D": "**Reconhece a perfuração e troca o alinhamento.** As pontas penetrantes estão presentes, mas o colapso mostrado é em varo. Na leitura da falha, direção da deformidade e relação parafuso-articulação devem ser avaliadas separadamente."
+   "A": "**Colapso em varo e a osteonecrose da cabeça** acerta a primeira metade. A necrose pode, sim, fazer a cabeça afundar e expor os parafusos (Rockwood, cap. 36, Fig. 36-51), mas surge tarde, depois de uma evolução boa, e aparece na radiografia como esclerose e colapso da superfície articular. O que a imagem mostra é a perfuração pelos parafusos, e o capítulo coloca a necrose atrás da penetração do parafuso em frequência.",
+   "C": "**Colapso em valgo e a osteonecrose da cabeça** erra as duas metades. O valgo é a cabeça olhando para cima e para fora, o padrão em que o capítulo mostra necrose mais frequente depois da placa (12% contra 2% dos padrões colo cirúrgico e varo posteromedial; Rockwood, cap. 36). Seria a combinação a lembrar numa fratura impactada em valgo, mas na imagem a cabeça caiu para baixo e para dentro, em varo, e o achado visível é o parafuso, não a necrose.",
+   "D": "**Colapso em valgo e a perfuração condral dos parafusos** acerta a perfuração e erra a direção. Na radiografia, o ângulo entre cabeça e diáfise fechou, com a cabeça inclinada para baixo: é varo. O Rockwood (cap. 36) lista o varo antes da cirurgia, a redução em varo e a falta de apoio medial entre as causas de perda da redução, todas levando a cabeça para essa direção."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Placa bloqueada: o parafuso, o calcar e a técnica; Irrigação da cabeça, Hertel e osteonecrose."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 36 (Proximal Humeral Fractures), seções Locking Plate Complications, Loss of Reduction e Osteonecrosis (Figs. 36-37 e 36-51)",
+   "Resumo OrtoQuestões: Fratura do úmero proximal"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-36-umero-proximal",
-     "titulo": "Fratura do úmero proximal",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
-     "secoes": [
-      "Placa bloqueada: o parafuso, o calcar e a técnica",
-      "Irrigação da cabeça, Hertel e osteonecrose"
-     ],
-     "blocos": [
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
-      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
-      "irrigacao-da-cabeca-hertel-e-osteonecrose-89a2167f"
-     ],
-     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
-     "trechosSha256": "8d0d032b86f0bf17e908a4405d81f52bae05793b2b9af48a9e21fe400a5ab61e"
-    }
-   ],
-   "questaoSha256": "142b46ecb91cfd682a1b085fe3f9a9da97fd227852f813e1deb0d6ce2bf4cefa",
-   "comentarioSha256": "e76d33a4fa71f23e2f3903336c63930899c46a8a72ef836429bd74a3e3b2257f"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-36-37-t04.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 36, Fig. 36-37 (arquivo sem página impressa). Radioscopia intraoperatória de placa bloqueada no úmero proximal, de frente (à esquerda) e de perfil (B): parafusos cefálicos relativamente curtos, que param antes do osso subcondral, e um parafuso inferior dirigido à porção inferomedial da cabeça, sustentando o calcar.",
+    "largura": 1377,
+    "altura": 664
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0185": {
   "conceito": "A incidência **AP com rotação interna de 15°** do tornozelo, conhecida como **incidência da mortalha** (\"mortise view\"), compensa a torção externa natural do tornozelo, alinhando o eixo transmaleolar perpendicularmente ao feixe de raios X. Isso permite visualizar simetricamente o espaço articular entre a tíbia, a fíbula e o tálus, sem a sobreposição que ocorre na incidência AP padrão, sendo essencial para avaliar a congruência da mortalha em fraturas maleolares como a **fratura bimaleolar** mostrada.",
@@ -6566,42 +6514,19 @@
   }
  },
  "trauma-0222": {
-  "conceito": "No **KD II**, encontram-se lesionados os **dois ligamentos cruzados**, com colaterais íntegros. B é a alternativa correta. “II” não quer dizer duas estruturas escolhidas livremente entre todos os ligamentos do joelho.\n\nO cruzado anterior e o posterior formam o componente central do controle anteroposterior. Quando ambos se rompem, o padrão de luxação pode existir apesar de os colaterais não estarem rompidos. A classificação de Schenck identifica essa combinação anatômica, em vez de exigir que a direção original da luxação seja conhecida (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\nIsso é útil porque muitos joelhos chegam já reduzidos. O alinhamento atual da radiografia não reconstrói, sozinho, tudo o que se rompeu; exame e RM ajudam a determinar o padrão. A classificação não deve transformar uma imagem reduzida em prova de que não houve luxação.\n\nPara comparar: KD I tem o cruzado posterior funcionando no esquema apresentado; KD III associa os dois cruzados a um colateral, e KD IV, aos dois colaterais. KD V inclui fratura periarticular. As letras M e L distinguem o lado no III; C e N registram, respectivamente, comprometimento circulatório e neurológico.\n\nOs distratores escolhem pares que parecem satisfazer a ideia de “duas lesões”, mas a regra não é aritmética. O critério é a associação específica dos cruzados com a preservação dos colaterais.",
-  "correta": "**B.** Os dois cruzados são a combinação lesada no KD II; os colaterais permanecem íntegros. A resposta deve ser completada mentalmente com essa preservação, que o separa do KD III e do IV.",
+  "conceito": "A classificação de SCHENCK (o enunciado escreve \"Schenk\") nasceu de um problema prático: a maioria dos joelhos luxados chega ao pronto-socorro **já reduzida**, e a classificação antiga, pela direção da tíbia, pedia uma informação que ninguém tinha. A solução foi classificar pelo que se rompeu, e é isso que a questão cobra.\n\n**De KENNEDY a SCHENCK.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61, seção de classificação), conta a história. KENNEDY, em 1963, classificava pela **direção**: anterior, posterior, medial, lateral e rotatória. SCHENCK passou a classificar pelas **estruturas anatômicas rompidas**; WASCHER acrescentou as fraturas associadas, e a ressonância deixou a classificação mais precisa. O capítulo reconhece as críticas (pouco valor prognóstico e pouca validação de reprodutibilidade), mas é a classificação preferida dos autores.\n\n**A lógica do número romano.** O número conta **ligamentos**, e a referência são os dois cruzados:\n\n| Tipo | Cruzados | Colaterais |\n|---|---|---|\n| KD I | cruzado posterior **funcionando** | variáveis (em geral o lateral) |\n| **KD II** | **os dois rotos** | **os dois íntegros** |\n| KD III | os dois rotos | **um** roto (M ou L) |\n| KD IV | os dois rotos | os dois rotos |\n| KD V | luxação com fratura periarticular | |\n\nOs sufixos acrescentam o que veio junto: **C** para lesão arterial e **N** para lesão neurológica. O exemplo do próprio capítulo é o KD III-MC: os dois cruzados, o colateral medial e a artéria poplítea.\n\n**Por que o KD II é o tipo menos intuitivo.** O capítulo o chama de **incomum**: romper os dois cruzados sem levar nenhum colateral exige um deslocamento quase puro, anteroposterior. É também o tipo mais fácil de definir por exclusão: do KD II em diante os dois cruzados estão sempre rotos, e o que muda de um tipo para o outro é só a contagem de colaterais. Zero colateral é o II.\n\n**O que a banca fez.** As alternativas brincam com combinações de quatro estruturas: os dois colaterais, os dois cruzados, um de cada e um cruzado com o canto posterolateral. Só uma delas segue a regra de que, do II em diante, os dois cruzados estão rotos.\n\n> **Na prova:** **KD II = os dois cruzados, colaterais íntegros.** Um colateral a mais é III; os dois, IV; o cruzado posterior funcionando é I.\n\nA classificação está na seção \"Classificação de Schenck\" do resumo.",
+  "correta": "**B) os dois ligamentos cruzados.** Na classificação de SCHENCK descrita pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), o KD II é a ruptura dos cruzados anterior e posterior com os dois colaterais íntegros, padrão que o capítulo chama de incomum. Do KD II ao KD IV os dois cruzados estão sempre rotos; o que muda é o número de colaterais (nenhum, um ou dois).",
   "incorretas": {
-   "A": "**A.** A ruptura dos dois colaterais não define KD II. No padrão KD IV, eles estão lesados junto com ambos os cruzados; não basta selecionar dois ligamentos para obter o tipo II.",
-   "C": "**C.** Um colateral com um cruzado não é a definição de KD II. A classificação exige perda dos dois cruzados nesse tipo, e não qualquer par formado por uma estrutura central e outra periférica.",
-   "D": "**D.** A associação de um cruzado ao canto posterolateral não reproduz a lesão bicruzada com colaterais íntegros. O canto é um complexo periférico; sua presença não substitui o segundo cruzado na definição pedida."
+   "A": "**Os dois ligamentos colaterais** sem os cruzados não é tipo nenhum da classificação, que conta a partir dos cruzados. No Rockwood (cap. 61), os dois colaterais rotos aparecem só no KD IV, e ali sempre junto com os dois cruzados. A classificação parte sempre do estado dos cruzados, e esta opção nem os menciona.",
+   "C": "**Um ligamento colateral e um cruzado** lembra o KD I: a luxação em que o cruzado posterior continua funcionando, com o cruzado anterior e um colateral (em geral o lateral) rotos (Rockwood, cap. 61). O KD II é o oposto: os dois cruzados rotos e nenhum colateral. Um colateral junto com os dois cruzados seria KD III.",
+   "D": "**Um ligamento cruzado e o canto posterolateral** é outra descrição que cabe no KD I, já que o canto posterolateral faz parte do lado lateral e o cruzado posterior pode estar funcionando. O canto posterolateral é, no capítulo, o colateral lateral com o poplíteo e o ligamento popliteofibular; quando ele se rompe junto com os dois cruzados, o tipo é KD III-L. Não é o KD II."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 61 (Knee Dislocations), seção Classification",
+   "Resumo OrtoQuestões: Luxação do joelho e lesão multiligamentar"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Classificação de Schenck"
-     ],
-     "blocos": [
-      "classificacao-de-schenck-05833290",
-      "classificacao-de-schenck-6a3443c0"
-     ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
-     "trechosSha256": "0ced25476b21cebb0fab2dcb43b21105ddaf96b97a5e226d6d02609285a50445"
-    }
-   ],
-   "questaoSha256": "e985b0f2c838eb96ad27266c7f0aa3a009099cfd7230c08e4e39267851c87bca",
-   "comentarioSha256": "096fe62d89e55b9c45c1e5c9568fe02d0b886dd2cb9c322e539cc6884c297467"
-  }
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0223": {
   "conceito": "Na fratura complexa do planalto lateral, o pedaço mais difícil de ver é o de trás. O côndilo femoral lateral fica em cima dele, o colateral lateral e o poplíteo o cercam, e a artrotomia anterolateral comum mostra bem a frente e o meio, mas pouco da parte posterolateral. A questão pergunta o que a via anterolateral se torna quando é estendida para resolver isso.\n\n**O problema.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 62), insiste em descrever sempre o **envolvimento posterior**, porque a maior parte das falhas vem de placas que não seguram o fragmento de trás. No conceito das três colunas de LUO, que a figura mostra na tomografia axial, a coluna lateral vai até a borda lateral logo à frente da cabeça da fíbula, e a parte de trás do planalto lateral pertence à coluna posterior. A via anterolateral padrão do capítulo usa a **artrotomia submeniscal** e um **distrator femoral**, e ainda assim a visão posterolateral é limitada.\n\n**A extensão.** A via anterolateral estendida é de KFURI e colaboradores (J Knee Surg, 2017): a incisão vai do **epicôndilo lateral do fêmur ao tubérculo de GERDY**, identificam-se as inserções do **colateral lateral** e do **tendão do poplíteo** no epicôndilo, e faz-se a **osteotomia do epicôndilo lateral** levando essas duas estruturas presas ao bloco ósseo. Soltas em cima, elas deixam de amarrar o lado lateral, o joelho abre em **varo** e o côndilo sai da frente: o planalto lateral aparece inteiro, inclusive atrás. No fim, o bloco é fixado de volta, e a consolidação é osso com osso. Os autores destacam que a via não mexe na tibiofibular proximal nem põe em risco o nervo fibular. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 29), registra a mesma ideia como opção de YOON e colaboradores para alcançar o canto posterolateral: **derrubar o colateral lateral com um pedaço do epicôndilo lateral**, grande o bastante para ser reparado com parafuso e arruela.\n\n**Os vizinhos que a banca colocou como distratores.** Cada opção errada é uma via real com outro nome:\n\n| Gesto | Via em que aparece |\n|---|---|\n| osteotomia do tubérculo de GERDY | TSCHERNE e JOHNSON (Campbell, cap. 1, p. 28 a 29) |\n| osteotomia da cabeça da fíbula | posterolaterais transfibulares (Rockwood, cap. 62; Campbell, Fig. 1.38) |\n| osteotomia do epicôndilo com colateral e poplíteo | **anterolateral estendida** (KFURI; YOON no Campbell) |\n\n> **Na prova:** anterolateral **estendida** = **epicôndilo lateral** com **colateral lateral e poplíteo**; abre o joelho em varo para ver o posterolateral.\n\nA via está na seção \"A via anterolateral estendida: fora do capítulo\" do resumo.",
@@ -15112,46 +15037,27 @@
   }
  },
  "trauma-0745": {
-  "conceito": "A sigla **KD IIC** precisa ser lida em duas partes: **KD II**, lesão dos cruzados anterior e posterior com colaterais íntegros; **C**, lesão circulatória arterial. A combinação da alternativa B inclui os dois cruzados e a artéria poplítea.\n\nA classificação de Schenck modificada descreve as estruturas comprometidas. Isso evita depender da direção da luxação original, muitas vezes desconhecida porque o joelho chega reduzido. O número romano informa o padrão ligamentar, e os sufixos acrescentam informações que não são intercambiáveis: C é circulatório, N é neurológico (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\n**Lesão arterial não transforma II em III.** Para chegar ao KD III, precisa existir lesão de um dos colaterais além dos dois cruzados. O comprometimento da poplítea é registrado por uma letra, sem inventar ruptura colateral.\n\nA poplítea está fixada proximalmente no hiato dos adutores e distalmente no arco do sóleo. Por isso tem pouca capacidade de acompanhar a separação traumática dos ossos. A lesão pode ir da íntima à secção, e a gravidade vascular participa da urgência, independentemente do número do tipo ligamentar.\n\nO sistema de classificação organiza a descrição; não substitui a avaliação de perfusão. O capítulo recomenda pulsos e ITB em todo joelho luxado e ação imediata diante de sinais duros de isquemia. Na questão, basta conservar a diferença entre padrão anatômico e sufixo vascular para não cair no KD III-C oferecido como distrator.",
-  "correta": "**B.** Os dois cruzados correspondem a II, e a artéria poplítea corresponde a C. A alternativa não acrescenta lesão colateral, mantendo a definição de KD IIC.",
+  "conceito": "A sigla tem duas partes, e cada alternativa errada erra uma delas. O número romano diz quais ligamentos se romperam; a letra diz o que veio junto. Ler **KD IIC** é ler \"KD II\" e depois \"C\".\n\n**A classificação no livro.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), traz a classificação de SCHENCK modificada: SCHENCK classificou a luxação pelas estruturas rompidas, em vez da direção da tíbia (a de KENNEDY), porque a maioria chega reduzida; WASCHER acrescentou as fraturas associadas.\n\n| Tipo | Estruturas lesadas |\n|---|---|\n| KD I | luxação com o cruzado posterior funcionando |\n| **KD II** | **os dois cruzados**, colaterais íntegros |\n| KD III | os dois cruzados e **um** colateral (M ou L) |\n| KD IV | os dois cruzados e os dois colaterais |\n| KD V | luxação com fratura periarticular |\n\nOs sufixos: **C** = lesão **circulatória** (arterial); **N** = lesão **neurológica**. Assim, KD IIC = cruzado anterior + cruzado posterior + **artéria poplítea**, com os colaterais íntegros. O exemplo do capítulo para mostrar o sistema é o KD III-MC: dois cruzados, colateral medial e artéria.\n\n**Por que a artéria ganha uma letra própria.** A Fig. 61-19, abaixo, mostra o motivo anatômico. A **artéria poplítea** é presa em cima, no **hiato dos adutores** (A), e embaixo, no **arco do sóleo**; entre os dois pontos, corre colada à face posterior da tíbia (B). Quando a tíbia sai do lugar, a artéria não tem como fugir e é estirada ou rasgada. A lesão muda a urgência do caso inteiro: na seção sobre a artéria, o capítulo ensina os sinais duros, o índice tornozelo-braquial e a angiotomografia, e o reparo vem antes de qualquer reconstrução ligamentar. Por isso a classificação não esconde a lesão vascular dentro do número, e marca com o sufixo.\n\n**Lesão arterial não muda o número.** É o erro que a banca testa. O C não transforma o II em III; para chegar ao III é preciso um colateral roto. Duas alternativas misturam KD III (com um colateral) com e sem a artéria, e uma tira os dois cruzados.\n\n> **Na prova:** número romano = ligamentos; **C = artéria**, **N = nervo**, M ou L = lado do colateral. KD IIC = dois cruzados + artéria poplítea.\n\nA classificação está na seção \"Classificação de Schenck\" do resumo, e a artéria em \"A artéria poplítea\".",
+  "correta": "**B) Dos ligamentos cruzados anterior e posterior e da artéria poplítea.** Pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), KD II é a ruptura dos dois cruzados com os colaterais íntegros, e o sufixo C marca a lesão arterial. A artéria poplítea, presa no hiato dos adutores e no arco do sóleo, é a que se rompe na luxação. Somando as duas partes, IIC são os dois cruzados com a poplítea.",
   "incorretas": {
-   "A": "**A.** Não inclui o cruzado posterior nem a lesão arterial. Cruzado anterior com colateral lateral não é o padrão bicruzado de II e tampouco explica o sufixo C.",
-   "C": "**C.** Os dois cruzados com um colateral formam KD III. Além de trocar a categoria, a alternativa omite a lesão circulatória que a letra C exige.",
-   "D": "**D.** Inclui corretamente a artéria, mas acrescenta um colateral roto. Esse conjunto seria KD III-C, com especificação do lado quando conhecida, e não KD II-C."
+   "A": "**Dos ligamentos cruzado anterior e colateral lateral** descreve uma lesão em que o cruzado posterior pode estar funcionando, ou seja, o KD I da classificação de SCHENCK (Rockwood, cap. 61), em que o colateral lesado costuma ser o lateral. Falta o cruzado posterior, obrigatório do KD II em diante, e falta a artéria que a letra C exige.",
+   "C": "**Dos ligamentos cruzados anterior e posterior e um dos ligamentos colaterais** é o KD III sem sufixo: os dois cruzados com um colateral, que se nomeia M ou L conforme o lado (Rockwood, cap. 61). Erra o número, porque um colateral roto já sobe o tipo de II para III, e esquece a letra C, a lesão arterial.",
+   "D": "**Dos ligamentos cruzados anterior e posterior, de um dos ligamentos colaterais e da artéria poplítea** é o KD IIIC, ou KD III-MC e III-LC conforme o lado, como no exemplo do próprio capítulo (Rockwood, cap. 61). A letra está certa, mas o colateral roto muda o número. É a opção que testa se o leitor acha que a lesão arterial sobe o tipo; não sobe."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck; A artéria poplítea."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 61 (Knee Dislocations), seções Classification e Vascular Injury (Fig. 61-19)",
+   "Resumo OrtoQuestões: Luxação do joelho e lesão multiligamentar"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Classificação de Schenck",
-      "A artéria poplítea"
-     ],
-     "blocos": [
-      "classificacao-de-schenck-6a3443c0",
-      "classificacao-de-schenck-6ad056db",
-      "a-arteria-poplitea-9f539f11",
-      "a-arteria-poplitea-b9951f36",
-      "a-arteria-poplitea-0851428b"
-     ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
-     "trechosSha256": "050af0cf1a2caa02bbe7f985f788a2d617b294d53a30cbf6d1df1656202fad07"
-    }
-   ],
-   "questaoSha256": "05be1e972b386d7010ae3cb5a223e58937ffa97a3a64b1b0aca797061c719fa9",
-   "comentarioSha256": "2143c77eb0525f72795b594b75e90c663e6fc280758e186aa21ea4b11159bbef"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-61-19-z07.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 61, Fig. 61-19 (arquivo sem página impressa). À esquerda (A), o trajeto da artéria poplítea atrás do joelho, presa em cima no hiato dos adutores (AM, adutor magno) e embaixo no arco do sóleo; à direita (B), em perfil, a artéria colada à face posterior da tíbia, ao alcance do fio do túnel tibial na cirurgia do cruzado posterior.",
+    "largura": 735,
+    "altura": 616
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0746": {
   "conceito": "Entre os pares oferecidos, **fratura diafisária proximal e sexo masculino** compõem o perfil de risco da alternativa D. A localização proximal aqui se refere ao traço da tíbia; não é necessário substituir a pergunta por uma fratura articular do planalto.\n\nO resumo lista como fatores independentes sexo masculino, idade mais jovem, localização proximal, traços longos e competição esportiva de baixa energia. A síndrome pode ocorrer também na fratura exposta: abrir a pele não garante descompressão dos quatro compartimentos fasciais (Rockwood, 10ª ed., cap. 63, “Síndrome compartimental na fratura da tíbia”).\n\nO reconhecimento é clínico e evolutivo. Dor desproporcional, dor ao estiramento passivo e compartimentos tensos são sinais importantes. No paciente que não pode colaborar, a medida da pressão pode auxiliar; o resumo usa a pressão diferencial, diastólica menos compartimental, abaixo de 30 mmHg.\n\n**Risco não é diagnóstico nem dispensa vigilância nos demais grupos.** Uma mulher ou uma fratura distal pode desenvolver a síndrome. O par apenas ajuda a manter suspeita particularmente alta, sem aguardar ausência de pulso, que é um achado raro e tardio nesse contexto.",
@@ -15288,45 +15194,29 @@
   "conferido": false
  },
  "trauma-0750": {
-  "conceito": "O **nervo axilar** é o mais frequentemente acometido nas fraturas do úmero proximal. Ele está próximo ao colo e pode sofrer tração, contusão ou lesão pela diáfise deslocada medialmente. Na avaliação eletromiográfica citada no capítulo, o axilar apareceu em 58% e o supraescapular em 48%, com lesões combinadas frequentes.\n\nEsses percentuais não precisam somar 100%, porque um mesmo paciente pode ter mais de um nervo afetado. Também não significam que todos terão um déficit clínico evidente. No exame, procura-se alteração da sensibilidade na face lateral do braço e testa-se a contração isométrica do deltoide por palpação (resumo do Rockwood, 10ª ed., cap. 36, “Nervos”).\n\nA dor da fratura pode dificultar a avaliação motora, tornando útil examinar o deltoide sem exigir grande arco doloroso. O resumo da Biblioteca liga o exame clínico ao trajeto anatômico do axilar.",
-  "correta": "**A: Axilar.** É o primeiro na frequência descrita e está diretamente exposto às forças do trauma proximal. O exame combina sensibilidade lateral do braço e contração do deltoide, sem depender apenas da capacidade de elevar ativamente o ombro doloroso.",
+  "conceito": "Fratura do úmero proximal e nervo lesado: a resposta sai do trajeto do nervo, que passa justamente por baixo da região que fratura. O detalhe que a banca explora é o segundo colocado, um nervo que quase ninguém lembra e que, na eletromiografia, perde por pouco.\n\n**Os números do livro.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36, seção sobre lesões nervosas), diz que a eletromiografia mostra lesão nervosa em até **dois terços** das fraturas. Os mais acometidos são o **nervo axilar (58%)** e o **supraescapular (48%)**, e lesões combinadas são frequentes. São mais comuns nas fraturas desviadas de alta energia, mas até um terço vem de queda da própria altura.\n\n**Por que o axilar.** O axilar é ramo terminal do **fascículo posterior**, inerva o **deltoide** e o **redondo menor** e dá a sensibilidade da face lateral do braço. Ele passa **abaixo do colo anatômico, de anterior para posterior**, pelo **espaço quadrangular**, junto da artéria circunflexa umeral posterior, e volta para a frente por baixo do deltoide, **2 a 7 cm abaixo do acrômio** (Rockwood, cap. 36, seção de anatomia aplicada). A Fig. 51.33 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2176), abaixo, mostra o espaço quadrangular visto por trás: o redondo menor em cima, o redondo maior embaixo, a cabeça longa do tríceps medialmente e o úmero lateralmente, com o **nervo axilar** e a **circunflexa posterior** saindo por ele. O nervo contorna o colo cirúrgico colado ao osso. O Rockwood descreve três jeitos de lesá-lo: **tração**, **contusão** ou **laceração pela diáfise desviada para medial**.\n\n**Como examinar.** A **hipoestesia na face lateral do braço** sugere lesão do axilar. O motor se testa palpando o deltoide em **contração isométrica** (estender, abduzir e fletir), sem pedir ao paciente com fratura que levante o braço.\n\n**Os outros nervos da lista.**\n\n| Nervo | Onde aparece no ombro e no braço |\n|---|---|\n| **Axilar** | o mais lesado na fratura do úmero proximal (58%) |\n| Supraescapular | segundo mais lesado (48%) |\n| Musculocutâneo | risco cirúrgico, no afastamento medial do tendão conjunto |\n| Radial | nervo da fratura da diáfise (Campbell: lesão primária de 4% a 22%) |\n\n> **Na prova:** úmero proximal = **axilar** (depois o supraescapular). Diáfise = radial.\n\nO assunto está na seção \"Nervos\" do resumo, e o trajeto em \"O nervo axilar\".",
+  "correta": "**A) Axilar.** Na eletromiografia citada pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36), o axilar é o nervo mais lesado na fratura do úmero proximal (58%), à frente do supraescapular (48%). Ele passa abaixo do colo, pelo espaço quadrangular, e sofre tração, contusão ou laceração pela diáfise desviada para medial. A pista clínica é a hipoestesia na face lateral do braço.",
   "incorretas": {
-   "B": "**Não se deve transferir automaticamente o risco de outro segmento do úmero.** A pergunta é sobre o terço proximal, em que a série destaca o axilar. O radial não é apontado como o nervo mais frequentemente associado nesse contexto.",
-   "C": "**O supraescapular é frequente, mas vem depois do axilar.** A eletromiografia citada mostra 48% contra 58%. Além disso, pode haver associação entre lesões, portanto reconhecer o supraescapular não afasta o acometimento do axilar.",
-   "D": "**O musculocutâneo tem um risco cirúrgico diferente.** O capítulo destaca sua relação com o coracobraquial e o afastamento medial excessivo do tendão conjunto. Isso não o torna o nervo mais lesado no trauma proximal; o primeiro lugar é do axilar."
+   "B": "**Radial** é o nervo da fratura da **diáfise** do úmero. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, p. 2786), dá lesão primária do radial de 4% a 22% nas fraturas da diáfise e a paralisia radial como a complicação mais relatada da placa diafisária. No úmero proximal ele não está entre os dois nervos que o Rockwood (cap. 36) aponta como os mais lesados.",
+   "C": "**Supraescapular** é o distrator mais forte, porque é de fato o segundo mais lesado na eletromiografia do Rockwood (cap. 36): 48%, contra 58% do axilar, e os dois muitas vezes juntos. Seria a resposta numa pergunta sobre o segundo nervo mais acometido ou sobre o par mais frequente. Como a pergunta pede o mais frequente, fica atrás do axilar.",
+   "D": "**Musculocutâneo** corre risco na **cirurgia**, não na fratura: o Rockwood (cap. 36) diz que ele é ameaçado pelo afastamento medial exagerado do tendão conjunto e ao tirar uma cabeça luxada para a frente por baixo desse tendão. O primeiro ramo motor sai 3 a 7 cm abaixo da ponta do coracoide. Não aparece entre os nervos mais lesados pela própria fratura."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Lesões associadas: nervos, artéria, manguito e outras fraturas; Anatomia aplicada e vias de acesso. Sem atribuição de páginas impressas não consultadas."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 36 (Proximal Humeral Fractures), seções Associated Injuries (Nerve) e Surgical Anatomy (axillary nerve)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries), p. 2176 (Fig. 51.33)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), p. 2786",
+   "Resumo OrtoQuestões: Fratura do úmero proximal"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-36-umero-proximal",
-     "titulo": "Fratura do úmero proximal",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
-     "secoes": [
-      "Lesões associadas: nervos, artéria, manguito e outras fraturas",
-      "Anatomia aplicada e vias de acesso"
-     ],
-     "blocos": [
-      "lesoes-associadas-nervos-arteria-manguito-e-outr-01451d2b",
-      "lesoes-associadas-nervos-arteria-manguito-e-outr-02a89ef5",
-      "anatomia-aplicada-e-vias-de-acesso-f121538c",
-      "anatomia-aplicada-e-vias-de-acesso-e632af2f"
-     ],
-     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
-     "trechosSha256": "b80d289bbe62a8cfd2af0b9662638ec92b82daa922e5200981764a5cef08e996"
-    }
-   ],
-   "questaoSha256": "07caf7859b22b58142501a3a00876e2ebfefcff571c699dd0cd1c1796f75bbe8",
-   "comentarioSha256": "7ae4d6919b8f12fb7ebe565d5d53258074ec68c335d677cb9c2f6ea6cc7ee20b"
-  }
+  "imagens": [
+   {
+    "arquivo": "ombro-cotovelo/campbell15-51-33.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 51, Fig. 51.33, p. 2176. Espaço quadrangular visto por trás, com o deltoide cortado: entre o redondo menor em cima, o redondo maior embaixo, a cabeça longa do tríceps medialmente e o úmero lateralmente saem o nervo axilar e a artéria circunflexa posterior do úmero; abaixo do redondo maior, entre as cabeças do tríceps, descem o nervo radial e a artéria braquial.",
+    "largura": 640,
+    "altura": 622
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0751": {
   "conceito": "**A imagem.** Radiografias do punho em frente e em perfil. Uma placa longa e reta corre pela face dorsal, presa por parafusos no rádio, bem acima do punho, e num metacarpo central, sem nenhum parafuso no carpo nem no fragmento distal. A placa passa por cima da articulação como uma ponte: é a placa dorsal em ponte (spanning plate), usada aqui numa fratura articular.\n\n**O que é e como funciona.** O Rockwood a chama de **fixador interno**: em vez de pegar os fragmentos, ela segura o comprimento do punho e deixa a **ligamentotaxia** trabalhar, isto é, a tensão dos ligamentos radiocárpicos puxa os fragmentos para o lugar, como num fixador externo, só que com o metal por baixo da pele (p. 1649). Nasceu para o politraumatizado e para as fraturas de alta energia e hoje se usa nas **cominuições articulares extensas**, inclusive em osso osteoporótico. Pode ir ao segundo metacarpo, mais simples e melhor para a inclinação radial, ou ao terceiro, mais forte e com espaço para redução direta. Pede pelo menos três parafusos de cada lado, aceita carga de cerca de 2,3 kg e sai por volta dos **3 meses** (Rockwood, p. 1649 a 1651).\n\n**Onde mora o risco.** Toda montagem que distrai o punho carrega o mesmo perigo: a **hiperdistração**. Puxar demais tensiona as partes moles da mão, e os dedos endurecem. O Rockwood ensina a checagem no centro cirúrgico: depois de fixar a placa, os dedos devem **fletir passivamente com facilidade** (Fig. 43-16); se resistirem, a distração está excessiva (p. 1650). No fixador externo, a hiperdistração é citada como causa de **rigidez dos dedos** e talvez de SDCR (p. 1649), e o SIZÍNIO lembra que distração excessiva e uso prolongado dão rigidez de punho e dedos. A placa fica no dorso, debaixo dos extensores, e a outra queixa esperada é a irritação deles.\n\n**Os números.** As complicações mais comuns da placa em ponte são a **irritação dos extensores** e a **rigidez dos dedos**, ambas raras: numa série de RICHARD com 33 pacientes, houve uma tenólise e uma rigidez (Rockwood, p. 1651). Repare que o enunciado chama a complicação de \"óssea\", mas nenhuma opção é óssea; a resposta é a que o livro aponta. O assunto está na seção \"Placa dorsal, fragmento-específica, fixador externo e placa em ponte\" do resumo.",
@@ -23432,41 +23322,34 @@
   "conferido": false
  },
  "trauma-1072": {
-  "conceito": "O sulco ou **covinha na pele medial** sugere encarceramento da **cápsula articular**, alternativa B, na luxação irredutível típica. A impressão de que o joelho “voltou” não basta se persistem esse sinal e incongruência.\n\nNa luxação posterolateral com valgo extremo, o côndilo femoral medial atravessa a cápsula em direção anteromedial, como um botão que passa pela casa e fica preso. As partes moles mediais são puxadas para a articulação. O capítulo identifica a cápsula medial como a interposição mais comum e admite aprisionamento do colateral medial (Rockwood, 10ª ed., cap. 61, “Exame e luxação irredutível”).\n\n**A covinha é um sinal mecânico.** Não é apenas uma marca na pele: indica um tecido preso que impede redução concêntrica por manobra fechada. O tratamento descrito é redução aberta de emergência, com confirmação de congruência e estabilidade por radioscopia depois da liberação.\n\nO enunciado fala em sulco “após a redução”, mas também informa irredutibilidade. A leitura coerente é persistência do bloqueio após tentativa ou redução incompleta, e não uma luxação já comprovadamente reduzida e estável. Essa precisão evita ignorar o sinal por tomar a palavra redução como garantia de alinhamento definitivo.\n\nMenisco ou fragmento osteocondral podem lembrar outras causas de bloqueio, mas não explicam o mecanismo típico da covinha descrito. O detalhe decisivo é a relação entre o côndilo medial que atravessa a cápsula e o tecido que se interpõe.",
-  "correta": "**B: cápsula articular.** A cápsula medial é a estrutura mais comumente encarcerada no padrão da covinha. O sinal deve levar a reconhecer redução incompleta/irredutível e necessidade de liberação aberta, não a insistir em manobras fechadas.",
+  "conceito": "A palavra que decide a questão é **sulco medial**: a covinha na pele do lado de dentro do joelho. Ela não é um detalhe estético, e sim o sinal de que alguma coisa ficou presa dentro da articulação e vai impedir a redução fechada.\n\n**O que acontece.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61, seção sobre o exame e a luxação irredutível), descreve o mecanismo. Na luxação **posterolateral**, com valgo extremo, o **côndilo femoral medial atravessa a cápsula medial** em direção anteromedial, como um botão que passa pela casa. As partes moles mediais são puxadas para dentro da articulação e ficam presas entre o fêmur e a tíbia. A pele, presa à cápsula por baixo, é repuxada para dentro e forma a covinha. Por isso o livro diz que a covinha indica luxação **irredutível**, que exige **redução aberta**.\n\n**As duas figuras do livro.** Na Fig. 61-3, abaixo, A mostra a covinha na pele medial, com equimose; B mostra o que se vê logo ao incisar a pele: a superfície do côndilo medial saindo pelo rasgo do retináculo medial. Na Fig. 61-13, a ressonância coronal (A) mostra a cápsula e o colateral medial dobrados para dentro da articulação, e a foto da cirurgia (B) mostra o côndilo exposto pela fenda da cápsula. A legenda do capítulo é direta: o encarceramento do colateral medial e da cápsula medial impede a redução.\n\n**O que se interpõe.** A estrutura interposta **mais comum é a cápsula medial**; o **colateral medial** também pode encarcerar. A cirurgia é **de emergência**, por artrotomia na linha média com retalhos amplos ou por incisão medial reta sobre o retináculo perfurado, e depois da redução confirma-se na radioscopia que a articulação ficou congruente e estável.\n\n**O resto do exame.** O mesmo capítulo lembra que a redução da luxação comum é simples (tração no eixo e depois extensão), e que o joelho é mais estável em extensão. A cápsula rota explica outro achado enganoso: o **derrame pode faltar**, porque o líquido escapa para a perna. Um joelho sem derrame não afasta uma lesão grave.\n\n> **Na prova:** covinha medial = luxação **posterolateral irredutível**; côndilo medial em casa de botão; **cápsula medial** (às vezes o colateral medial) interposta; redução aberta de emergência.\n\nA covinha está na seção \"A covinha medial\" do resumo.",
+  "correta": "**B) da cápsula articular.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), descreve a luxação posterolateral irredutível: o côndilo femoral medial atravessa a cápsula medial, como um botão na casa, e a cápsula, a estrutura interposta mais comum, fica presa na articulação, às vezes com o colateral medial. A covinha na pele é o sinal desse encarceramento, e a redução tem de ser aberta.",
   "incorretas": {
-   "A": "**A.** Um menisco pode participar de bloqueios articulares em outros contextos, mas não é a estrutura que o capítulo identifica como típica da covinha medial da luxação irredutível. O mecanismo descrito é capsular.",
-   "C": "**C.** Um fragmento osteocondral é uma possível peça solta, mas não produz por si a passagem do côndilo medial através da cápsula e o encarceramento característico. A pergunta seleciona esse padrão específico.",
-   "D": "**D.** O semimembranáceo se relaciona ao complexo posteromedial, mas não é a interposição mais comum descrita na luxação com covinha. Proximidade anatômica não substitui a cápsula no mecanismo informado."
+   "A": "**Do menisco medial** é uma estrutura que pode, em tese, bloquear uma redução, mas o Rockwood (cap. 61) não a cita como causa da covinha: as estruturas interpostas que ele descreve na luxação irredutível são a cápsula medial e o colateral medial. A covinha nasce do côndilo que perfura a cápsula, e o que fica preso é o que o côndilo atravessou.",
+   "C": "**De fragmento osteocondral** pode tornar uma redução incompleta, e o capítulo lembra que fraturas da borda tibial e fraturas periarticulares acompanham a luxação, mas um fragmento solto dentro da articulação não repuxa a pele para formar um sulco. A covinha medial é a marca de partes moles presas, a cápsula e o colateral, não de osso (Rockwood, cap. 61).",
+   "D": "**Do tendão do semimembranáceo** é uma estrutura posteromedial que o capítulo descreve em outro contexto: ele solta o ligamento poplíteo oblíquo e forma, com a cabeça medial do gastrocnêmio, o intervalo da via de BURKS e SCHAFFER. O Rockwood (cap. 61) não o lista entre as estruturas interpostas na luxação irredutível; o côndilo perfura a cápsula anteromedial, à frente do trajeto do semimembranáceo."
   },
+  "alerta": "O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), cita como estruturas interpostas na luxação irredutível a cápsula medial (a mais comum) e o colateral medial. Ele não discute o menisco medial, o fragmento osteocondral nem o semimembranáceo como causa da covinha; essas alternativas foram explicadas pelo que o capítulo diz do mecanismo, sem dado próprio do livro sobre elas.",
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Exame e luxação irredutível."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 61 (Knee Dislocations), seções Signs and Symptoms of Knee Dislocations e Medial Injury Patterns (Figs. 61-3 e 61-13)",
+   "Resumo OrtoQuestões: Luxação do joelho e lesão multiligamentar"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Exame e luxação irredutível"
-     ],
-     "blocos": [
-      "exame-e-luxacao-irredutivel-a17fc1b9"
-     ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
-     "trechosSha256": "a11cda963f42b6b13c0efe4fdbd02345ea1412fb7a1276f7fe3d0c9c0189a230"
-    }
-   ],
-   "questaoSha256": "00c6732dc2ca9efeca70ebee13ce7db8fe549fd4acb4988e2f73f315a420b42c",
-   "comentarioSha256": "b8059d55cead89723b6794c9347a9bf0d9b960012afb9273d3615db0f8548259"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-61-3-t04.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 61, Fig. 61-3 (arquivo sem página impressa). Luxação irredutível do joelho: em A, a covinha na pele medial, com equimose; em B, logo depois de incisar a pele, a superfície do côndilo femoral medial aparece atravessando o retináculo medial, como um botão na casa.",
+    "largura": 1407,
+    "altura": 739
+   },
+   {
+    "arquivo": "trauma/rwa10-61-13-t04.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 61, Fig. 61-13 (arquivo sem página impressa). Côndilo femoral medial passado através da cápsula medial: em A, a ressonância coronal mostra a cápsula e o colateral medial dobrados para dentro da articulação; em B, na cirurgia, o côndilo exposto pela fenda da cápsula, com as partes moles encarceradas impedindo a redução.",
+    "largura": 1410,
+    "altura": 603
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-1073": {
   "incorretas": {
@@ -24359,49 +24242,36 @@
   "conferido": false
  },
  "trauma-1101": {
-  "conceito": "Os critérios de Hertel avaliam a **extensão metafisária presa à cabeça** e a **dobradiça medial**. A alternativa D reúne esses dois parâmetros no sentido **mais favorável**: contato medial mantido e extensão maior que 8 mm. Ela é a resposta oficial, mas não descreve a combinação de maior risco.\n\nOs preditores independentes de isquemia estudados foram **extensão metafisária de 8 mm ou menos**, **dobradiça medial rompida** e **traço no colo anatômico**. A explicação está nos ramos vasculares posteromediais: uma cabeça que mantém calcar e continuidade medial tem mais chance de preservar essas conexões (Rockwood, 10ª ed., cap. 36, “Os critérios de Hertel”).\n\n**O enunciado pergunta quais parâmetros os critérios consideram.** Não diz que a resposta deve trazer todos no sentido desfavorável. Essa leitura permite reconhecer D sem ensinar que contato preservado e calcar longo aumentam a isquemia. A radiografia mostra a fratura, mas não fornece aqui uma medida calibrada da extensão metafisária.\n\nCabeça partida faz parte da classificação LEGO, mas não foi um dos três preditores independentes destacados. Além disso, **isquemia intraoperatória não equivale a necrose tardia inevitável**: o acompanhamento teve correlação ruim entre os eventos, possivelmente por revascularização.\n\n> **Na prova:** os parâmetros são calcar e dobradiça; curto e rompida são desfavoráveis. A opção oficial D os apresenta no sentido protetor.",
-  "correta": "**D: manutenção do contato da dobradiça e extensão metafisária maior que 8 mm.** Identifica os dois parâmetros considerados. O sentido é de preservação vascular, não de risco aumentado; os achados desfavoráveis são ruptura e extensão curta.",
+  "conceito": "Os critérios de HERTEL são a tentativa mais conhecida de prever, numa radiografia, se a cabeça do úmero ficou sem sangue. A questão pede quais parâmetros eles consideram, e o gabarito traz esses parâmetros pelo lado bom. Para entender a resposta, é preciso saber de onde vem o sangue e o que HERTEL mediu.\n\n**De onde vem o sangue.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36, seção sobre irrigação), descreve as duas circunflexas, ramos da terceira porção da axilar (Fig. 36-24, abaixo). A **anterior** dá o ramo ascendente, que sobe atrás da cabeça longa do bíceps e entra no osso como **artéria arqueada**. A **posterior**, maior, acompanha o nervo axilar pelo espaço quadrangular e manda ramos para a face **posteromedial** da metáfise, junto ao calcar. Nas fraturas complexas, a arteriografia mostrou a posterior preservada em 85% e a anterior em só 20%.\n\n**O que HERTEL mediu.** Em 100 fraturas intracapsulares operadas, ele viu se a cabeça sangrava na cirurgia. Três achados foram **preditores independentes de isquemia**:\n- **extensão metafisária** presa à cabeça de **8 mm ou menos**;\n- **ruptura da dobradiça medial** entre cabeça e diáfise;\n- fratura pelo **colo anatômico**.\n\nA lógica é a da irrigação: se a cabeça leva um bom pedaço de calcar e a dobradiça medial está inteira, os ramos posteromediais tendem a continuar vivos.\n\n**O desenho do Campbell.** A eFig. 62.1 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, p. 2775.e1), abaixo, mostra os dois parâmetros nos dois sentidos. A: extensão metafisária **maior que 9 mm**; B: extensão **mínima, menor que 8 mm**; C: dobradiça medial **sem desvio**; D: dobradiça **desviada mais de 2 mm**. O texto do Campbell dá o número que o Rockwood não dá: são preditivos de isquemia a extensão menor que 8 mm e a ruptura da dobradiça **maior que 2 mm**, sem correlação direta com o risco de necrose.\n\n**Onde o gabarito se encaixa.** O enunciado não pergunta o que prediz necrose; pergunta o que os critérios **consideram**. A alternativa oficial nomeia os dois parâmetros, a dobradiça medial e a extensão metafisária de 8 mm, no sentido em que a perfusão se mantém (A e C da figura). As outras três trazem a cabeça partida, que não foi preditor independente, ou misturam os dois sentidos.\n\n**Três livros, três leituras.**\n\n| | Rockwood 10ª ed. | Campbell 15ª ed. | HEBERT 5ª ed. (cap. 45) |\n|---|---|---|---|\n| Medida do calcar | extensão de 8 mm ou menos | extensão menor que 8 mm | calcar comprometido em mais de 8 mm |\n| Dobradiça medial | rompida | desvio maior que 2 mm | não cita |\n| Outros | colo anatômico | | número de fragmentos; cabeça partida |\n\n**As ressalvas do Rockwood.** O acompanhamento dos mesmos autores mostrou correlação ruim entre isquemia na cirurgia e necrose tardia, provavelmente porque a cabeça **revasculariza**; e CROSBY, com tetraciclina, achou fluorescência em todas as cabeças retiradas de fraturas de três e quatro partes.\n\n> **Na prova:** HERTEL olha o **calcar**: extensão metafisária (8 mm) e dobradiça medial. Curta e rompida = isquemia; longa e íntegra = perfusão mantida.\n\nOs critérios estão na seção \"Os critérios de Hertel\" do resumo.",
+  "correta": "**D) a manutenção de contato da dobradiça medial e a extensão metafisária da cabeça maior que 8 mm.** Os critérios de HERTEL, no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36), e no Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, eFig. 62.1), avaliam a dobradiça medial e a extensão metafisária presa à cabeça, com o corte de 8 mm. A alternativa traz os dois parâmetros no sentido favorável, o da cabeça que conserva os ramos posteromediais; a ruptura da dobradiça e a extensão de 8 mm ou menos são o lado que prediz isquemia.",
   "incorretas": {
-   "A": "**Mistura um critério de risco verdadeiro com um item da classificação.** Extensão menor que 8 mm é desfavorável, mas head-split não integrou os preditores independentes de isquemia destacados. Falta a dobradiça medial no par.",
-   "B": "**Usa head-split e inverte o sentido da extensão.** Cabeça partida é importante para classificar e planejar tratamento, mas não substitui a dobradiça nos preditores citados; extensão maior que 8 mm é o lado mais favorável.",
-   "C": "**Também nomeia os dois parâmetros, com sentidos mistos.** Contato mantido é favorável e extensão menor que 8 mm é desfavorável. Por isso, se a pergunta for lida apenas como “quais parâmetros”, C também os contém. A preferência por D deve ser entendida como a combinação favorável completa escolhida pela banca, não como se C tratasse de critérios inexistentes."
+   "A": "**O split da cabeça e a extensão metafisária da cabeça menor que 8 mm** junta um preditor verdadeiro de isquemia (a extensão curta) com um que o Rockwood (cap. 36) diz não ter sido preditor independente: a cabeça partida entra no sistema LEGO de HERTEL como padrão de fratura, mas não entre os critérios de isquemia. O HEBERT (cap. 45) inclui a cabeça partida entre os seus fatores, o que explica a confusão, mas não a dobradiça medial que o gabarito exige.",
+   "B": "**O split da cabeça e a extensão metafisária da cabeça maior que 8 mm** mistura um fator que não é preditor independente pelo Rockwood (cap. 36) com o lado protetor da extensão. Lembra a leitura do HEBERT (cap. 45), que cita a cabeça partida e o calcar comprometido em mais de 8 mm, mas lá o 8 mm mede o dano ao calcar, não o osso que fica preso à cabeça. Falta a dobradiça medial.",
+   "C": "**A manutenção de contato da dobradiça medial e a extensão metafisária da cabeça menor que 8 mm** acerta os dois parâmetros e mistura os sentidos: dobradiça íntegra é o lado favorável, extensão curta é o desfavorável (Campbell, cap. 62, eFig. 62.1, B e C). Não descreve nem a cabeça de risco nem a cabeça protegida, e o corte de 8 mm fica do lado oposto ao da dobradiça."
   },
+  "alerta": "Os preditores de isquemia de HERTEL, no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36), são a extensão metafisária de 8 mm ou menos, a ruptura da dobradiça medial e o traço no colo anatômico. O gabarito oficial (D) traz os mesmos parâmetros no sentido protetor (dobradiça mantida e extensão maior que 8 mm), coerente com o enunciado, que pergunta o que os critérios consideram. O HEBERT (cap. 45) lê HERTEL de outro modo, com cabeça partida, número de fragmentos e calcar comprometido em mais de 8 mm, o que dá algum apoio às alternativas com cabeça partida. O gabarito oficial foi mantido.",
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Neer, AO e os padrões de fratura."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 36 (Proximal Humeral Fractures), seções Vascular Anatomy e Hertel criteria (Fig. 36-24)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), p. 2775.e1 (eFig. 62.1)",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 45",
+   "Resumo OrtoQuestões: Fratura do úmero proximal"
   ],
-  "conferido": false,
-  "alerta": "D oficial preservada. Ela apresenta os parâmetros no sentido protetor; os preditores de isquemia são extensão de 8 mm ou menos e dobradiça rompida, além do colo anatômico. Como C também nomeia dobradiça e extensão, a redação “consideram” permite ambiguidade. Não ensinar que a manutenção do contato ou extensão maior que 8 mm aumente o risco.",
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-36-umero-proximal",
-     "titulo": "Fratura do úmero proximal",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
-     "secoes": [
-      "Irrigação da cabeça, Hertel e osteonecrose",
-      "Neer, AO e os padrões de fratura"
-     ],
-     "blocos": [
-      "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
-      "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
-      "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
-      "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
-      "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
-      "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
-      "neer-ao-e-os-padroes-de-fratura-a63a2d68"
-     ],
-     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
-     "trechosSha256": "baf51aa3bab20ca5bd7bae5770c242be9a56f68ff6fbaa84a3b0336eef8de3f2"
-    }
-   ],
-   "questaoSha256": "787794f19a99682e2396ebd6672d5d598cb3b4eafcbb1745177287e32aa38541",
-   "comentarioSha256": "d7a311d8524ece2337f906e5c8ba39bf0a1d647a93e41a70eeadfee70643512c"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-62-e1-t04.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 62, eFig. 62.1, p. 2775.e1. Critérios radiográficos de HERTEL para a perfusão da cabeça umeral: A, extensão metafisária presa à cabeça maior que 9 mm; B, extensão metafisária mínima, menor que 8 mm; C, dobradiça medial sem desvio; D, dobradiça medial desviada mais de 2 mm.",
+    "largura": 984,
+    "altura": 577
+   },
+   {
+    "arquivo": "trauma/rwa10-36-24.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 36, Fig. 36-24 (arquivo sem página impressa). Irrigação da cabeça do úmero: a axilar dá as circunflexas anterior e posterior; o ramo ascendente da anterior sobe pelo lado lateral e termina como artéria arqueada; a posterior contorna o colo e manda ramos para a região posteromedial, junto ao calcar.",
+    "largura": 754,
+    "altura": 930
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-1102": {
   "conceito": "A metacarpofalângica do polegar é uma articulação com pouca estabilidade óssea, que depende de ligamentos e músculos. Quando ela luxa, a energia que tirou a falange do lugar quase sempre deixa outra marca. A questão pergunta qual é a mais comum.\n\n**Como a MCF do polegar luxa.** No Rockwood and Green (10ª ed., cap. 45), a luxação vem da **hiperextensão** (e o colateral radial rompe por força ulnar). Ao ser forçada para trás, a falange proximal se apoia e bate contra a cabeça do metacarpo enquanto a placa volar e a cápsula cedem.\n\n**O que vem junto.** O capítulo lista as lesões associadas: a mais comum é a **fratura articular**, sobretudo **avulsões e cisalhamentos da base da falange proximal**. Também aparecem ruptura da cápsula, fratura de sesamoide e ruptura de tendões vizinhos, mas com menor frequência. Faz sentido mecânico: os ligamentos e a placa volar se prendem à base da falange, e, quando a força é grande, o osso dessa base cede antes do ligamento, saindo um fragmento preso a ele, ou a base é cisalhada pela cabeça do metacarpo ao luxar.\n\n**Por que isso importa.** Um fragmento articular muda a conduta: se ele leva o ligamento ou deixa a articulação incongruente, a redução fechada pode não bastar. Como nos dedos, a redução é fechada sempre que possível e aberta se houver interposição.\n\n> **Na prova:** na luxação da MCF do polegar, a lesão associada mais comum é a fratura articular da base da falange proximal (avulsão ou cisalhamento).\n\nNo resumo de fraturas da mão, a seção da luxação metacarpofalângica traz o polegar no fim.",
