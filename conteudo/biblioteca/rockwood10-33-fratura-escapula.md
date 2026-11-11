@@ -1,6 +1,6 @@
 ---
 id: rockwood10-33-fratura-escapula
-versao: 3
+versao: 4
 titulo: Fratura da escápula
 especialidade: trauma
 acesso: gratis
@@ -237,19 +237,21 @@ conceito: O conservador usa tipoia por 2 semanas e mobilização progressiva; fr
 | **Ib** | Borda **posterior** |
 | **II** | Traço transverso ou oblíquo que separa a **glenoide inferior** e sai pela **borda lateral** do corpo |
 | **III** | Traço que sai pela **borda superior** da escápula; o fragmento leva a **metade superior da glenoide e o coracoide** |
-| **IV** | Traço horizontal que atravessa o corpo até a **borda medial** |
+| **IV** | No desenho, traço **horizontal** que atravessa o corpo até a **borda medial**; na legenda, parecido com o III, com fragmento glenoidal **menor** que envolve a **borda superior** do corpo |
 | **Va** | II + IV |
 | **Vb** | III + IV |
 | **Vc** | II + III + IV |
 | **VI** | **Cominuta** |
 !fim
 
+O tipo IV aparece de dois jeitos no próprio Rockwood. O **desenho** da Figura 33-9 (p. 1022) mostra um traço **horizontal** que sai da glenoide e cruza todo o corpo até a **borda medial**. A **legenda** da mesma figura diz que o tipo IV é **parecido com o III**, só que o fragmento glenoidal separado é **menor** e envolve a **borda superior** do corpo da escápula. As outras fontes locais ficam com o desenho: o HEBERT (cap. 43, Fig. 43.5) define o tipo 4 apenas como **horizontal** e o desenha com o traço atravessando o corpo até a borda medial; o Skeletal Trauma (cap. 50, Fig. 50A-10, p. 1526), na versão reorganizada de MAYO, também desenha o tipo IV com o traço chegando à borda medial. O Campbell (15ª ed.) não apresenta essa classificação. A legenda do Rockwood tem ainda outro descompasso: diz que o Vc combina os tipos II, III e V, enquanto o desenho do Vc mostra os traços do II, do III e do IV.
+
 !figura 33-9
-Classificação de Goss das fraturas da glenoide: Ia borda anterior, Ib borda posterior, II glenoide inferior, III glenoide superior com o coracoide, IV traço horizontal até a borda medial, Va a Vc combinações e VI cominuta.
+Classificação de Goss das fraturas da glenoide: Ia borda anterior, Ib borda posterior, II glenoide inferior, III glenoide superior com o coracoide, IV traço horizontal até a borda medial (a legenda do livro, p. 1022, descreve o IV como um III de fragmento menor na borda superior), Va a Vc combinações e VI cominuta.
 !fim
 
 !questoes central=trauma-1082,trauma-0963,trauma-0777 treino=trauma-1312
-conceito: Na Ideberg-Goss, o tipo I é a fratura da borda (Ia anterior, Ib posterior); o tipo III separa a metade superior da glenoide com o coracoide (legenda da Figura 33-9, p. 1022) e sai pela borda superior; o II sai pela borda lateral; o IV cruza o corpo até a borda medial; o VI é cominuto.
+conceito: Na Ideberg-Goss, o tipo I é a fratura da borda (Ia anterior, Ib posterior); o tipo III separa a metade superior da glenoide com o coracoide (legenda da Figura 33-9, p. 1022) e sai pela borda superior; o II sai pela borda lateral; o IV, no desenho da Figura 33-9 e no HEBERT (Fig. 43.5), é o traço horizontal que cruza o corpo até a borda medial (a legenda da Figura 33-9 o descreve como um III de fragmento menor, na borda superior); o VI é cominuto.
 como: O TARO 2015 pediu o tipo da fratura do terço superior com o coracoide (III). Uma prova sem ano mostrou a imagem de uma fratura da borda anterior para classificar (Ia). O TECOC perguntou o tipo que resulta da cabeça batendo no centro da concavidade (gabarito IV).
 armadilha: Tipo II: também separa parte da glenoide, mas o fragmento é o inferior e o traço sai pela borda lateral.
 armadilha: Tipo IA ou IB no impacto central: as fraturas da borda vêm da luxação, quando a cabeça sai e arranca a borda.

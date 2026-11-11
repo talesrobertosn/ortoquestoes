@@ -320,7 +320,7 @@ armadilha: Material de síntese saliente: é causa mecânica possível, menos co
 
 Na fase aguda, fixa-se ou troca-se a cabeça e prende-se temporariamente a radioulnar distal com fios, com ou sem reconstrução da membrana ou reparo da fibrocartilagem triangular. Depois de uma ressecção, 2 a 3 mm de migração proximal são esperados; muito mais que isso indica as estruturas distais rotas. Na **lesão crônica**, as opções são antebraço de um osso só, **prótese da cabeça com encurtamento da ulna** (imediato ou em segundo tempo) ou reconstrução da membrana com prótese. O capítulo 41 do mesmo Rockwood chama de **tratamento ideal** da Essex-Lopresti crônica a **troca da cabeça do rádio com encurtamento da ulna**, imediato ou em segundo tempo, ou com reconstrução da membrana interóssea.
 
-!questoes central=trauma-0271,trauma-0819,trauma-0028,trauma-0431,trauma-0106 relacionadas=ombro-cotovelo-0474 treino=trauma-1419
+!questoes central=trauma-0271,trauma-0819,trauma-0028,trauma-0431,trauma-0106 relacionadas=ombro-cotovelo-0474 treino=trauma-1419,ombro-cotovelo-0680
 conceito: Essex-Lopresti é a fratura da cabeça do rádio com lesão da membrana interóssea e da radioulnar distal; a pista clínica é a dor no punho, e a crônica se trata com prótese da cabeça e encurtamento da ulna.
 como: O TARO pergunta a definição quase todo ano com distratores parecidos (Monteggia, Galeazzi, radioulnar proximal); em 2023 pediu o sinal clínico e em 2017, a conduta na crônica.
 armadilha: Fratura da ulna com luxação da cabeça do rádio: é Monteggia.

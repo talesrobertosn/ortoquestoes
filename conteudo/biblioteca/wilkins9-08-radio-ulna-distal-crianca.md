@@ -146,7 +146,7 @@ O **tipo III** é raro e decorre de **compressão, cisalhamento ou avulsão da o
 
 O tratamento do descolamento desviado tipos I e II é a redução fechada **atraumática** (sedação consciente, analgesia ou, raramente, anestesia), por **tração suave e flexão** da epífise, do carpo e da mão sobre a metáfise, usando o **periósteo dorsal íntegro** como banda de tensão (figura 8-32). Ao contrário do adulto, a tração com dedeiras e pesos costuma atrapalhar; as dedeiras servem para apoiar o membro com pouco peso. O gesso faz três pontos sobre o rádio distal e segue o contorno do antebraço; o molde dorsal distal não pode ser fundo e distal a ponto de bloquear as veias dorsais da mão.
 
-!questoes central=pediatria-0921,pediatria-0628 relacionadas=pediatria-0689,pediatria-0909
+!questoes central=pediatria-0921,pediatria-0628 relacionadas=pediatria-0689,pediatria-0909,pediatria-1079
 conceito: A fratura fisária do rádio distal é quase sempre SALTER-HARRIS II, com o fragmento metafisário de THURSTON-HOLLAND dorsal; o tipo III, raro, vem de compressão, cisalhamento ou avulsão da origem radial dos ligamentos radiocárpicos volares.
 como: O ENARE 2023 pediu o tipo de SALTER-HARRIS do fragmento de THURSTON-HOLLAND; o TARO 2018 cruzou rotação ou compressão com avulsão volar ou dorsal no tipo III. O TARO 2014 perguntou onde o descolamento epifisário é mais comum, e o CET-PR testou definições gerais de SALTER-HARRIS.
 armadilha: Avulsão radiocárpica dorsal no tipo III (TARO 2018): os ligamentos arrancados são os volares, que o capítulo chama de estabilizadores principais.
