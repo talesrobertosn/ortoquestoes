@@ -322,7 +322,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 1003 | Onda 2: 45 miniaulas refeitas com figuras (24 de alinhamento, torções, BLOUNT e coxa vara; 11 de nervos periféricos; 10 de escoliose idiopática) |
 | 1004 | Onda 2: 41 miniaulas refeitas com figuras (21 de nervos periféricos, fim deste resumo; 20 de escoliose idiopática, fim deste resumo) |
 | 1005 | Onda 2: 45 miniaulas refeitas com figuras (27 dos princípios de osteossíntese, AO, Rockwood e Campbell, fim deste resumo; 18 da anatomia do joelho, Campbell, Rockwood e Skeletal Trauma) |
-| (este PR) | Onda 2: 54 miniaulas refeitas com figuras (27 da coluna cervical e lesão medular, fim deste resumo; 18 da espondilolistese; 9 da anatomia do joelho, fim deste resumo) |
+| 1006 | Onda 2: 54 miniaulas refeitas com figuras (27 da coluna cervical e lesão medular, fim deste resumo; 18 da espondilolistese; 9 da anatomia do joelho, fim deste resumo) |
+| (este PR) | Onda 2: 32 miniaulas refeitas com figuras (25 de outras doenças congênitas, fim deste resumo; 7 da espondilolistese, fim deste resumo); 7 pendências de gabarito e imagem resolvidas (SCHROTH, QUÉNU e KÜSS, SCAGLIETTI e outras); trauma-0720 com figura pendente; imagem de outra questão retirada da pe-tornozelo-0295 |
 
 ## Próximo
 
