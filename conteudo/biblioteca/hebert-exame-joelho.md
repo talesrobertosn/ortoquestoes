@@ -343,7 +343,7 @@ O teste do quadríceps ativo (Campbell, p. 2018, Fig. 50.46) usa a sinergia que 
 | perfil em extensão | radiografia | cortical posterior da tíbia atrás da do fêmur (HEBERT) |
 !fim
 
-!questoes central=joelho-0045
+!questoes central=joelho-0045 relacionadas=joelho-0044,joelho-0046
 conceito: A gaveta posterior empurra a tíbia para trás com o joelho a 90°; o degrau anterior perdido e o sag confirmam o LCP, e a redução de uma tíbia caída não deve ser lida como gaveta anterior.
 como: O TEOT 2022, num motociclista de 25 anos, mostrou a foto da manobra e pediu o nome entre jerk test, gaveta posterior, pivot shift reverso e LACHMAN posterior.
 armadilha: Confundir a gaveta posterior a 90° com o LACHMAN posterior, feito a 20 a 30°, ou com o pivot reverso, que exige valgo, rotação externa e movimento de flexão e extensão.

@@ -4268,7 +4268,7 @@
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "3f42ebb4bf49f4f463a1dd34b6914c9223ea20a56c592bf2a994f19fda8f6725"
     }
    ],
@@ -4417,7 +4417,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
     }
    ],
@@ -4459,7 +4459,7 @@
       "fratura-em-explosao-a3-e-a4-0ee57d4b",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "164ceb454cc03cbe5c800b7fd6c61de948fb8f2cc71e22a3f37fa2b0bcb73382"
     }
    ],
@@ -5420,7 +5420,7 @@
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "217885a50251a6a480299c9596940c11a3f2a2c0252581622d7bf7160743f5bd"
     }
    ],
@@ -5452,17 +5452,29 @@
   "conferido": false
  },
  "coluna-0352": {
-  "conceito": "Uma fratura tipo II do odontoide pode continuar sem união óssea mesmo depois de imobilizada. A afirmação é compatível com o resumo: **pseudartrose é uma preocupação importante no tratamento não cirúrgico do tipo II**.\n\nNa classificação de Anderson e D’Alonzo, o tipo II atravessa a cintura, na junção entre o dente e o corpo de C2. O tipo III entra no osso esponjoso do corpo, e os resultados de consolidação com imobilização são melhores. Essa diferença impede tratar todos os traços do odontoide como se tivessem o mesmo comportamento (Rockwood, 10ª ed., cap. 48, “Por que o tipo II não consolida, e o tratamento sem cirurgia”).\n\nAs séries citadas variam: uma encontrou 66% de consolidação do tipo II no halo, outra menos de 50%, e uma série de fraturas de C2 registrou pseudartrose do tipo II perto de 30%. Não são porcentagens intercambiáveis nem uma taxa universal aplicável a qualquer paciente.\n\n**Risco de pseudartrose não torna cirurgia obrigatória em todo tipo II.** O resumo admite tratamento externo em casos selecionados e observa que alguns idosos alcançam estabilidade fibrosa mesmo sem união óssea. Desvio, alinhamento, condição clínica e demanda mudam a decisão.\n\n> **Na prova:** o tipo II tem risco relevante de pseudartrose no tratamento conservador; isso não elimina a seleção individual da conduta.",
-  "correta": "**A: Certo.** A alta ocorrência de falta de união do tipo II está sustentada pelas séries do resumo. A resposta é bibliográfica, pois não há gabarito oficial registrado.",
+  "conceito": "O item afirma uma das ideias mais estáveis da coluna cervical alta: a fratura do odontoide que atravessa a base do dente é a que menos consolida quando tratada sem cirurgia. Para julgar a frase não basta lembrar o número; é preciso saber onde fica o traço e por que esse lugar atrapalha a consolidação.\n\n**Os três tipos, na figura.** A classificação de ANDERSON e D'ALONZO, desenhada no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, Fig. 48-39), vê C1 e C2 de frente. No **tipo I**, a linha azul corta só a ponta do dente: é a avulsão do ápice, raríssima isolada. No **tipo II**, a linha passa pela **cintura**, logo abaixo do arco anterior do atlas, na junção do dente com o corpo. No **tipo III**, a linha desce e corre de um lado ao outro **dentro do corpo de C2**, no osso esponjoso. O próprio capítulo lembra que a classificação é só descritiva: não define tratamento nem prevê resultado por si.\n\n**Por que a cintura consolida mal.** São três motivos que se somam. A superfície de contato entre os fragmentos na cintura é pequena e de osso mais cortical, ao passo que o tipo III tem uma face esponjosa larga (seção do odontoide no resumo). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1895), atribui a má capacidade de consolidação à **vascularização pobre da base do dente**. O HEBERT (cap. 39) junta as duas coisas: instabilidade da fratura e pior irrigação da região.\n\n**Os números de cada livro.**\n\n| Fonte | Tipo II sem cirurgia | Tipo III sem cirurgia |\n|---|---|---|\n| Rockwood, cap. 48 | 66% de consolidação no halo numa série, menos de 50% em outra; pseudartrose perto de 30% em 340 fraturas de C2 | 87% no halo, perto de 100% em outra série |\n| Campbell, cap. 48, p. 1896 | colar com redução mantida: consolidação esperada de 50% a 60% | colar é o tratamento preferido do III bem reduzido |\n| HEBERT, cap. 39 | pseudartrose de 26% a 80% | |\n\nQualquer que seja o livro, o tipo II perde. Daí a frase do Campbell (p. 1896): a pseudartrose é o resultado mais comum do tratamento não cirúrgico no idoso, e é frequente também no jovem.\n\n**O que a frase não diz.** Risco alto de pseudartrose não obriga a operar todo tipo II. O colar segue aceito, sobretudo acima dos 80 anos e no paciente frágil (Campbell, p. 1896), e no idoso a pseudartrose fibrosa costuma ser estável: numa série do Rockwood, 50% de consolidação óssea com 90% de estabilidade radiográfica.\n\nO tratamento sem cirurgia e as taxas de cada tipo estão na seção \"Por que o tipo II não consolida, e o tratamento sem cirurgia\" do resumo.",
+  "correta": "**A) Certo.** O tipo II, que passa pela cintura do dente, tem a pior taxa de consolidação com tratamento não cirúrgico em todos os livros locais: 66% ou menos no halo e pseudartrose perto de 30% numa grande série no Rockwood (cap. 48), consolidação esperada de 50% a 60% com colar no Campbell (cap. 48, p. 1896) e pseudartrose de 26% a 80% no HEBERT (cap. 39). Pouca área de contato e base do dente mal irrigada explicam o problema.",
   "incorretas": {
-   "B": "**Negaria um problema bem documentado do tipo II.** O fato de alguns pacientes consolidarem, ou de uma pseudartrose fibrosa ser estável, não apaga o risco. Também não se pode transferir para a cintura do dente as taxas mais favoráveis do tipo III no corpo esponjoso."
+   "B": "**Errado** só seria a resposta se o tipo II consolidasse tão bem quanto o III, e acontece o contrário. A confusão vem de misturar os dois traços: o tipo III, no osso esponjoso do corpo de C2, chega a 87% ou mais no halo (Rockwood, cap. 48). Também não serve o argumento de que o idoso muitas vezes fica com uma pseudartrose fibrosa estável: isso mostra que nem toda pseudartrose precisa de cirurgia, não que ela seja rara."
   },
-  "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
-  ],
-  "conferido": false,
   "provavel": "A",
-  "geradoEm": "2026-10-24"
+  "alerta": "O acervo não tem gabarito oficial desta questão do TARO 2006; a resposta segue o gabarito pela bibliografia (Certo). Nenhum livro local dá uma taxa única: o Rockwood (cap. 48) traz 66% ou menos de consolidação no halo e pseudartrose perto de 30% numa série, o Campbell (cap. 48, p. 1896) 50% a 60% de consolidação com colar e o HEBERT (cap. 39) pseudartrose de 26% a 80%. Todos sustentam a afirmação.",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), Fig. 48-39 e seção do tratamento não cirúrgico do odontoide",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1895 e 1896",
+   "HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed., cap. 39",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
+  ],
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-48-39.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Fig. 48-39. Classificação de ANDERSON e D'ALONZO das fraturas do odontoide, em vista anterior de C1 e C2: tipo I, pequena avulsão da ponta do dente; tipo II, traço na cintura, a junção do dente com o corpo; tipo III, traço no osso esponjoso do corpo de C2.",
+    "largura": 922,
+    "altura": 678
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0353": {
   "conceito": "A frase da banca mistura duas verdades e uma conclusão errada. É verdade que o traumatizado de coluna deve ser examinado cedo; é verdade que o exame neurológico define o prognóstico. O erro está em juntar as duas: o exame das primeiras 24 horas, feito em pleno choque medular, é justamente o que não serve para prever a recuperação.\n\n**O que é o choque medular.** Não é choque hemodinâmico. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 47, p. 1887), descreve a perda de função **motora, sensitiva, reflexa e autonômica** abaixo da lesão, explicada pela perda do impulso aferente que mantém o arco reflexo funcionando; o capítulo 14 (p. 472) insiste que não é choque verdadeiro. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1875), fala em disfunção temporária com **paralisia flácida** e **ausência do reflexo anal e do bulbocavernoso**. Durante esse período, a medula abaixo da lesão fica silenciosa por inteiro, e uma lesão incompleta pode parecer completa. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 22, na parte sobre o prognóstico da lesão medular), diz isso com todas as letras: o choque medular pode durar 24 horas e **mascarar uma lesão incompleta**.\n\n**Quanto dura.** Os livros divergem, e a divergência reforça a resposta. O Campbell (p. 1873 e 1875) diz que termina em geral em **24 a 48 horas**; o Rockwood and Green (cap. 47, p. 1888) põe o fim **entre 48 horas e 2 semanas** e considera os padrões ASIA **pouco confiáveis nas primeiras 72 horas**. Pelos dois relógios, as primeiras 24 horas caem dentro do choque.\n\n**Como saber que acabou.** Pela volta do **bulbocavernoso**. Na figura, a compressão da glande dispara um arco que entra e sai pelos segmentos sacrais da medula e termina na contração do esfíncter anal. Como esse arco fica no ponto mais caudal da medula, no cone, e avalia **S2 a S4** (Rockwood and Green, cap. 47, p. 1888), ele é o relógio do choque. Pelo estudo de KO, os reflexos voltam numa ordem: plantar profundo, bulbocavernoso, cremastérico, aquileu, BABINSKI e patelar. O capítulo 49 (p. 2013 e 2014) acrescenta que bulbocavernoso de volta **hiperativo**, sem nenhuma outra função, sugere lesão **completa**.\n\n**Examinar cedo, sim; prever cedo, não.** O Campbell (cap. 48, p. 1873) pede o exame ASIA seriado **a cada 4 a 6 horas nas primeiras 24 horas**, para flagrar piora e orientar a conduta. E o mesmo livro (p. 1878) diz que nesse período o paciente costuma ainda estar em choque e que a classificação **AIS só pode ser definida depois que ele passa**. A previsão vem das generalizações do Campbell (p. 1878): quanto **maior a preservação** abaixo da lesão, melhor; quanto **mais cedo** a recuperação começa e mais rápido progride, melhor; **menos de 50 anos** vai melhor; e a melhora pode seguir por **12 a 15 meses**. Todas pressupõem um exame feito fora do choque e repetido no tempo.\n\nO tema está na seção \"Choque medular e o reflexo bulbocavernoso\" do resumo.",
@@ -7529,7 +7541,7 @@
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "a2803211da029d5a24d497a4a5ae4a70f7eeb17ff8f1c9627e38192f649bd3f5"
     }
    ],
@@ -7648,16 +7660,27 @@
   }
  },
  "coluna-0464": {
-  "conceito": "A frase reúne duas ideias: dizer que o tipo II é mais estável que o III e admitir tratamento conservador ou cirúrgico. A segunda possibilidade existe, mas **não torna correta a comparação genérica de estabilidade**. Por isso o item completo é errado.\n\nO tipo II atravessa a cintura do odontoide; o III entra no corpo esponjoso de C2. O resumo descreve consolidação menos previsível e risco importante de pseudartrose no II, enquanto o III costuma consolidar bem imobilizado. Não se deve apresentar o II como inerentemente mais favorável à contenção apenas pelo número da classificação (Rockwood, 10ª ed., cap. 48, “Por que o tipo II não consolida, e o tratamento sem cirurgia”).\n\n**Estabilidade e união óssea também não são sinônimos perfeitos.** O capítulo relata pacientes idosos com união fibrosa estável apesar de ausência de consolidação completa. A avaliação precisa considerar desvio, alinhamento e ligamentos, sem decretar que todo tipo II é instável ou todo III é estável.\n\nPara o tipo II, há situações selecionadas de imobilização e outras de cirurgia. Assim, a leitura correta não é rejeitar a possibilidade de ambos os tratamentos, mas localizar a generalização indevida na primeira parte da afirmação.\n\n> **Na prova:** o item é falso pela comparação de estabilidade; a existência de opções conservadoras e cirúrgicas é verdadeira.",
-  "correta": "**B: Errado.** O resumo não sustenta afirmar que o tipo II seja genericamente mais estável que o III. A escolha entre tratamento externo e cirurgia, contudo, é possível e depende do contexto.",
+  "conceito": "O item junta duas afirmações numa frase só, e a banca conta com o candidato que lê a segunda (verdadeira) e esquece de conferir a primeira. Para ser certo, tudo tem de estar certo; basta uma metade falsa para o item cair.\n\n**Onde fica cada traço, de frente e de perfil.** A Fig. 48.21 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1896), mostra C2 nos dois planos. No desenho B, o tipo II é uma linha fina e curta, bem na **junção do dente com o corpo**. No desenho C, o tipo III desce em arco pelo corpo e, de frente, chega até as **facetas articulares superiores**; no perfil, atravessa o corpo de alto a baixo. É essa diferença de lugar que explica tudo o mais.\n\n**Por que o tipo II é o menos estável e o que menos consolida.** O traço na cintura separa os fragmentos numa área pequena, de osso mais cortical, enquanto o tipo III tem uma face esponjosa larga para consolidar. O Campbell (p. 1895) acrescenta a **irrigação pobre da base do dente**, e o HEBERT (cap. 39), que a SES-DF copiou em outros itens da mesma prova, atribui a pseudartrose do tipo II, de **26% a 80%** com tratamento conservador, à **instabilidade da fratura** e à pior vascularização. Os números do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), apontam para o mesmo lado: tipo III com 87% de consolidação no halo e perto de 100% em outra série; tipo II com 66% numa série, menos de 50% em outra e pseudartrose perto de 30% numa série de 340 fraturas de C2. Dizer que o II é mais estável que o III inverte o capítulo.\n\n**A segunda metade é verdadeira.** O tipo II pode, sim, ser tratado com ou sem cirurgia. O Campbell (p. 1896) mantém o colar rígido como tratamento aceito, sobretudo acima dos 80 anos, no paciente frágil e na fratura com pouco desvio, e reserva a cirurgia, abaixo dos 80, para desvio maior que 2 a 3 mm ou angulação acima de 15 graus. O algoritmo dos autores do Rockwood põe o tipo II desviado do idoso na cirurgia entre 65 e 80 anos, se a fisiologia permitir, e na imobilização externa acima dos 80, salvo déficit neurológico.\n\n**O paciente do caso.** Aos 72 anos, numa queda, o odontoide é a fratura cervical mais comum acima dos 70 anos (HEBERT, cap. 39). Nessa idade a pseudartrose fibrosa costuma ser estável (50% de consolidação, 90% de estabilidade radiográfica numa série do Rockwood), o que torna a decisão individual; mas não transforma o tipo II em fratura estável.\n\n> **Na prova:** item com duas partes; a do tratamento está certa, a da estabilidade está invertida. Tipo II na cintura, pior; tipo III no corpo, melhor.\n\nA comparação entre os dois tipos está na seção \"Por que o tipo II não consolida, e o tratamento sem cirurgia\" do resumo.",
+  "correta": "**B) Errado.** A primeira parte inverte os livros: o tipo II, na cintura do dente, é o menos estável e o que mais evolui para pseudartrose (26% a 80% com tratamento conservador no HEBERT, cap. 39, atribuída à instabilidade e à má irrigação; perto de 30% numa grande série do Rockwood, cap. 48), enquanto o tipo III, no corpo esponjoso, consolida bem imobilizado. A segunda parte, que admite tratamento conservador ou cirúrgico, é verdadeira (Campbell, cap. 48, p. 1896), mas não salva o item.",
   "incorretas": {
-   "A": "**Consideraria verdadeira uma frase parcialmente incorreta.** O tipo II pode receber tratamento conservador ou cirúrgico, mas isso não valida chamá-lo de mais estável que o III. A fonte descreve maior dificuldade de consolidação no II e exige avaliação individual de alinhamento e contenção."
+   "A": "**Certo** exigiria que o tipo II fosse mais estável que o III, e os três livros dizem o oposto. O que torna a opção tentadora é a parte final: de fato o tipo II pode ser tratado com colar ou com cirurgia, conforme idade, desvio, angulação e condição clínica (Campbell, cap. 48, p. 1896). Num item de certo ou errado, uma afirmação composta com uma metade falsa é falsa inteira."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1895 e 1896 (Fig. 48.21)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções do tratamento não cirúrgico do odontoide e do algoritmo dos autores",
+   "HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed., cap. 39",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25"
+  "imagens": [
+   {
+    "arquivo": "coluna/campbell15-48-21-w34.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Fig. 48.21, p. 1896. Os três tipos de fratura do odontoide de frente e de perfil: o tipo II na junção do dente com o corpo de C2 e o tipo III descendo pelo corpo, até as facetas articulares superiores.",
+    "largura": 728,
+    "altura": 897
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0465": {
   "conceito": "Este item junta um número e uma explicação, e os dois vêm do mesmo parágrafo do HEBERT (cap. 39, Fraturas do odontoide): com tratamento conservador, a pseudoartrose do tipo II varia de 26% a 80% na literatura, e esse risco elevado é atribuído à instabilidade da fratura. Para julgar o item é preciso entender por que justamente o tipo II, entre os três de ANDERSON e D'ALONZO, é o que não consolida.\n\n**Onde fica o traço.** Na figura do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, Fig. 48-39), a linha azul do tipo I corta só a ponta do dente; a do tipo II passa na **cintura**, a junção estreita entre o dente e o corpo de C2; a do tipo III desce para o **osso esponjoso do corpo**, larga, de um lado a outro. O tipo II é o pior lugar possível para consolidar: a superfície de contato é pequena, e o HEBERT situa o tipo II entre o ligamento transverso e o corpo do áxis, numa fratura que ele chama de relativamente instável.\n\n**As duas explicações dos livros, lado a lado.**\n\n| Livro | Por que o tipo II não consolida |\n|---|---|\n| HEBERT (cap. 39) | O risco elevado de pseudoartrose é atribuído à **instabilidade** da fratura; o tipo II é \"relativamente instável\" e fica numa **região de menor vascularização** |\n| Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1895) | A má capacidade de consolidação se deve à **pobre vascularização da base do dente** |\n| Rockwood (cap. 48, Odontoid Fractures) | Não discute a causa; mostra o resultado: o tipo III consolida bem imobilizado, o tipo II não |\n\nAs explicações se somam, e o HEBERT cita as duas. O item reproduz a do HEBERT, que é a fonte da questão.\n\n**Os números do Rockwood.** No halo, CLARK e WHITE viram **87%** de consolidação no tipo III e **66%** no tipo II; GREENE chegou perto de 100% no tipo III; na série de KOIVIKKO, o tipo II consolidou em **menos de 50%**. Numa série de 340 fraturas de C2, a pseudoartrose do tipo II se aproximou de **30%**. No idoso, KOECH viu consolidação óssea em 50%, mas estabilidade radiográfica em 90%: a pseudoartrose fibrosa estável muitas vezes basta. O Campbell (p. 1896) diz que, com redução anatômica mantida, a consolidação com preservação do movimento pode ser esperada em 50% a 60%, e que a pseudoartrose é o resultado mais comum do tratamento sem cirurgia no idoso, mas frequente também no jovem.\n\n**A faixa larga.** Nenhum dos três livros traz o intervalo de 26% a 80% fora do HEBERT, mas os números que eles citam cabem nele: 34% de falha no halo de CLARK e WHITE, mais de 50% na série de KOIVIKKO. A amplitude reflete séries com idades, desvios e imobilizações diferentes.\n\nA diferença entre o tipo II e o tipo III está na seção \"Por que o tipo II não consolida, e o tratamento sem cirurgia\" do resumo.",
@@ -8417,7 +8440,7 @@
       "exame-neurologico-choque-neurogenico-choque-medu-63c9c09c",
       "exame-neurologico-choque-neurogenico-choque-medu-717b321e"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "d6b801adec1583097d168393182c51b833ba58660584fd49e613a072e3d20371"
     }
    ],
@@ -8457,7 +8480,7 @@
       "exame-neurologico-choque-neurogenico-choque-medu-acb3781c",
       "exame-neurologico-choque-neurogenico-choque-medu-cc51fb25"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "9c74e979ea800d430c624e5fa412ef04a6852d17f68dd786218804d73d34ec18"
     }
    ],
@@ -8498,7 +8521,7 @@
       "exame-neurologico-choque-neurogenico-choque-medu-2a5de0df",
       "exame-neurologico-choque-neurogenico-choque-medu-e152ac2d"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "807cc6a0cc4e0bdc48b6b0dc367e63ecdb82a5c607b173c36c8c41e34c091cec"
     }
    ],
@@ -8550,7 +8573,7 @@
       "corticoide-e-o-momento-da-cirurgia-8146bd9a",
       "corticoide-e-o-momento-da-cirurgia-56b99beb"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "7e76d1df76f21851a3023b18b69cc8c49c2bdddc0ef1d3517dcfc8f334978454"
     }
    ],
@@ -8588,7 +8611,7 @@
       "corticoide-e-o-momento-da-cirurgia-ae16a777",
       "corticoide-e-o-momento-da-cirurgia-66097675"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "6090220c491e182deaf09c4a93aec9bafe17ea07f4844848b6664a4000544bec"
     }
    ],
@@ -9012,18 +9035,28 @@
   }
  },
  "coluna-0525": {
-  "conceito": "O traço do odontoide vai de anteroinferior para posterossuperior. Mesmo sendo redutível, ele oferece uma geometria desfavorável ao parafuso anterior: **a compressão ao longo do implante pode fazer o fragmento escorregar e aumentar o desvio**.\n\nUm parafuso de compressão aproxima melhor as superfícies quando seu eixo cruza o plano da fratura de modo adequado. No traço transverso ou no oblíquo de anterossuperior para posteroinferior, essa relação é favorável. No sentido inverso do caso, o eixo acompanha o traço e favorece deslizamento, razão da contraindicação (Rockwood, 10ª ed., cap. 48, “O parafuso anterior: a geometria decide”).\n\nNa subclassificação de Grauer, esse desenho é **IIc**, enquanto o IIb tem o sentido favorável. Isso não depende de o paciente ser jovem nem é corrigido apenas por conseguir reduzir a fratura: redução inicial e capacidade de manter compressão estável são questões diferentes.\n\n**Contraindicar um método não significa contraindicar toda cirurgia.** O resumo descreve a artrodese posterior C1–C2 como opção nos casos cirúrgicos, com seleção conforme lesão e condições clínicas.\n\n> **Na prova:** no traço IIc do caso, apertar o parafuso pode produzir deslizamento em vez de estabilizar.\n\n**Por que esta questão foi criada.** Treina a biomecânica da compressão e distingue fratura redutível de fratura adequada a um método específico.",
-  "correta": "**D: a compressão faria o fragmento deslizar ao longo do traço.** O sentido anteroinferior para posterossuperior é desfavorável à compressão anterior, mesmo após redução inicial.",
+  "conceito": "A fratura do caso é redutível e é do tipo II, a candidata natural ao parafuso anterior. Mesmo assim o método é desaconselhado, e a razão está só na inclinação do traço. A questão quer que se entenda o que o parafuso faz para perceber quando ele atrapalha.\n\n**O que o parafuso anterior faz.** Ele entra pela borda anteroinferior do corpo de C2 e sobe até a ponta do dente, como mostram as radioscopias em perfil da Fig. 48.22 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1898): em E, o fio-guia faz esse trajeto inclinado de baixo e da frente para cima e para trás; em F, o parafuso ocupa o mesmo caminho. Funciona como **parafuso de compressão**: só consegue empurrar um fragmento contra o outro **ao longo do próprio eixo** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48, seção do tratamento cirúrgico do odontoide).\n\n**A geometria de GRAUER.** GRAUER subdividiu o tipo II pela orientação do traço:\n- **IIa:** transverso, com desvio mínimo;\n- **IIb:** de **anterossuperior para posteroinferior**, o padrão ideal para o parafuso;\n- **IIc:** de **anteroinferior para posterossuperior**, ou cominutivo.\n\nImagine a linha da fratura sobre a figura. No IIb ela cai para trás, quase perpendicular ao fio-guia: apertar o parafuso aproxima as duas faces, e é por isso que o Campbell (p. 1896 e 1897) diz que a compressão fica perpendicular ao traço. No IIc ela sobe para trás, quase paralela ao trajeto do parafuso: apertar faz o fragmento de cima **escorregar** ao longo do traço. O Rockwood é direto: o parafuso é **contraindicado** no IIc, porque a compressão **aumenta o desvio**. O Campbell dá a mesma regra, chamando o padrão de obliquidade reversa.\n\n**As outras condições do método.** Redução quase anatômica (menos de 1 mm de translação, no Campbell), trajetória possível (o tórax em barril e a cifose cervical acentuada podem impedi-la), osso de boa qualidade (idade acima de 65 anos é contraindicação relativa, pela osteopenia e soltura) e ausência de cominuição importante. Quando o parafuso não serve, a artrodese posterior C1-C2 pode ser feita em qualquer caso cirúrgico do odontoide.\n\n**Por que esta questão foi criada.** Para separar dois conceitos que o candidato costuma fundir: fratura redutível e fratura adequada ao parafuso anterior. O caso tem tudo a favor (jovem, tipo II, redutível) e um único detalhe contra, a inclinação do traço, que basta para contraindicar o método.\n\nA regra está na seção \"O parafuso anterior: a geometria decide\" do resumo.",
+  "correta": "**D) a compressão do parafuso faria o fragmento deslizar ao longo do traço, aumentando o desvio.** O traço de anteroinferior para posterossuperior é o IIc de GRAUER e corre quase paralelo ao trajeto do parafuso. Como o parafuso só comprime ao longo do seu eixo, apertá-lo empurra o fragmento ladeira acima, e o Rockwood (cap. 48) contraindica o método justamente porque a compressão aumenta o desvio; o Campbell (cap. 48, p. 1897) também não o recomenda na obliquidade reversa.",
   "incorretas": {
-   "A": "**Afirma uma extensão que o caso não descreve.** Pela proposta de Grauer, atingir a faceta superior de C2 muda a classificação para III. Entretanto, a contraindicação do enunciado decorre da inclinação do traço IIc; orientação oblíqua não prova extensão à faceta.",
-   "B": "**Inverte a limitação etária descrita.** A preocupação com osteopenia e soltura torna idade acima de 65 anos uma contraindicação relativa na fonte. Ter 35 anos não é a razão geométrica que impede este método.",
-   "C": "**Transforma uma possibilidade de seleção em garantia de consolidação.** O tipo II tem risco relevante de pseudartrose no tratamento externo. Mesmo quando o colar é escolhido em um caso específico, isso não explica por que o parafuso anterior desliza nesse traço."
+   "A": "**Traço que atinge a faceta articular superior de C2** é, para GRAUER, a fronteira verdadeira entre os tipos II e III: se chega à faceta, é III. A regra existe, mas não se aplica aqui, porque o enunciado afirma que a fratura é do tipo II e descreve só a inclinação do traço, não a extensão até a faceta. Um traço oblíquo pode ficar inteiro na cintura do dente; o que o torna ruim para o parafuso é a direção, não a mudança de tipo.",
+   "B": "**Idade abaixo de 65 anos** inverte o critério do livro. Pelo Rockwood (cap. 48), é a idade **acima** de 65 anos que funciona como contraindicação relativa do parafuso anterior, por causa da osteopenia e do risco de o parafuso soltar e cortar o osso. Um homem de 35 anos tem o osso que o método pede; a idade dele é argumento a favor, não contra.",
+   "C": "**Boa consolidação do tipo II com colar rígido no jovem** contraria os números: o tipo II é o que menos consolida sem cirurgia, com 66% no halo numa série e menos de 50% em outra (Rockwood, cap. 48), e o Campbell (cap. 48, p. 1896) espera 50% a 60% com colar mesmo com redução mantida. Além disso, a opção não responde à pergunta, que é por que o parafuso, especificamente, fica desaconselhado nesse traço."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção do tratamento cirúrgico do odontoide (parafuso anterior e GRAUER)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1896 a 1898 (Fig. 48.22)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25"
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-48-22-t02.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Fig. 48.22 (E e F), p. 1898. Radioscopia em perfil do parafuso anterior do odontoide: em E, o fio-guia entra pela borda anteroinferior de C2 e sobe até a ponta do dente; em F, o parafuso no mesmo trajeto.",
+    "largura": 1165,
+    "altura": 529
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0526": {
   "conceito": "A paciente tem 84 anos, várias comorbidades e baixa demanda funcional, mas não tem déficit neurológico. A decisão não pode ser tomada apenas porque a fratura do odontoide é tipo II e está desviada. **No algoritmo dos autores, acima de 80 anos prefere-se imobilização externa, salvo déficit neurológico**, aceitando em casos selecionados uma pseudartrose estável.\n\nO objetivo não é buscar união óssea a qualquer custo. O resumo descreve idosos que não consolidaram completamente, mas alcançaram estabilidade radiográfica, e ressalta os riscos do halo e da cirurgia nessa população. Uma união fibrosa estável pode ser um resultado útil num paciente de baixa demanda, desde que não seja confundida com instabilidade progressiva ou comprometimento neurológico (Rockwood, 10ª ed., cap. 48, “O idoso e o algoritmo dos autores”).\n\n**Imobilização externa também não significa escolher automaticamente halo.** O capítulo associa o halo no idoso a complicações respiratórias e de deglutição e descreve resultados aceitáveis com colar. Os estudos são heterogêneos, e não fornecem uma taxa universal para toda pessoa de 84 anos.\n\nA alternativa B traduz a preferência dos autores para o perfil do caso. Essa preferência não deve ser estendida a um paciente com déficit, perda de alinhamento ou outra condição que mude o balanço entre proteção e risco terapêutico.\n\n> **Na prova:** idoso muito avançado, baixa demanda e sem déficit: o algoritmo favorece tratamento externo, sem exigir consolidação a qualquer custo.\n\n**Por que esta questão foi criada.** Treina a distinção entre união óssea e estabilidade útil, incluindo como fragilidade e demanda mudam a conduta.",
@@ -9327,7 +9360,7 @@
       "exame-neurologico-choque-neurogenico-choque-medu-8ef645cd",
       "exame-neurologico-choque-neurogenico-choque-medu-e82f8763"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "193386c115032948d7cabea6f59b1371391145f1936d659336d3f36b78af7750"
     },
     {
@@ -9382,7 +9415,7 @@
       "fratura-em-explosao-a3-e-a4-c49f544e",
       "fratura-em-explosao-a3-e-a4-b87f9844"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "1676a22753aded736973a81df067a470f86091a8354e3f3bb87d49caf1ff5f47"
     }
    ],
@@ -9424,7 +9457,7 @@
       "fratura-em-explosao-a3-e-a4-0ee57d4b",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "180a13a263b93a6bc1fe831c48dab5b9efec1f9f5d9daa09ef22fb5613fc3da5"
     }
    ],
@@ -9465,7 +9498,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-6c104b05",
       "fratura-em-explosao-a3-e-a4-0ee57d4b"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "6930f588b46c7253d1562cc1aa97deb163312f64486c36a7d46f7e7df8618f7e"
     }
    ],
@@ -9504,7 +9537,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
     }
    ],
@@ -9545,7 +9578,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e",
       "imagem-radiografia-tomografia-e-ressonancia-00da61c5"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "8387f9dec68ba4696aee5f59894a0d38b36218d64062568647a1ad8091d380f3"
     }
    ],
@@ -9584,7 +9617,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
     }
    ],
@@ -9622,7 +9655,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "7ad571ac8b71f84b6a5dd0ee74556e3b48dc5991c1385bd16cb40eef81ded072"
     }
    ],
@@ -9663,7 +9696,7 @@
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "d7f8fbea10b5401920c4da26c023d20e67897f28d83db4baa82c90ceb089faea"
     }
    ],
@@ -9701,7 +9734,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "7ad571ac8b71f84b6a5dd0ee74556e3b48dc5991c1385bd16cb40eef81ded072"
     }
    ],
@@ -9742,7 +9775,7 @@
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2",
       "exame-neurologico-choque-neurogenico-choque-medu-544e5be0"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "3f9ddbae7a45c656a81e553612ced37ef143c78f1b46f8488e2d2e7bde827441"
     }
    ],
@@ -9782,7 +9815,7 @@
       "fratura-em-explosao-a3-e-a4-9340101a",
       "fratura-em-explosao-a3-e-a4-ff3a6d02"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "c979e964f2a319b0e6e599a93d9523e96caa700441dfa3aee68bebeec6613711"
     }
    ],
@@ -9821,7 +9854,7 @@
       "fratura-em-explosao-a3-e-a4-cdbe316d",
       "fratura-em-explosao-a3-e-a4-2ee7fe69"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "472784355d2ead7d006d9a326942aac3fff0babe1077968a28016cc0bf4496e0"
     }
    ],
@@ -9858,7 +9891,7 @@
      "blocos": [
       "fratura-em-explosao-a3-e-a4-7ed529c3"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "245f6a3b3edd4edb77ea7cb88bff6ee14f41c28f11df9b0f604587fe4f389c78"
     }
    ],
@@ -9898,7 +9931,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-9bbe9701",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-e679772b"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "19eb5efcd4905b171c04292bf3a3144db9b22b343e2c2a3b2942bc715397fea6"
     }
    ],
@@ -9938,7 +9971,7 @@
       "vias-de-acesso-e-a-arteria-de-adamkiewicz-ee713415",
       "vias-de-acesso-e-a-arteria-de-adamkiewicz-6062370a"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "12292a553af8d2600c60b11bc64d23aa3ace0105de6a9c7c10d6ec0cf7e96927"
     }
    ],
@@ -9978,7 +10011,7 @@
       "fratura-em-explosao-a3-e-a4-2ee7fe69",
       "fratura-em-explosao-a3-e-a4-0266d7dc"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "0f6f1bf19275cf28b8d372319e3c617442c55338d427d07657140887ef12dfbc"
     }
    ],
@@ -10016,7 +10049,7 @@
       "fratura-em-explosao-a3-e-a4-83eadb46",
       "fratura-em-explosao-a3-e-a4-94baf03f"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "ea15694aee2e8a7820d4320b2b8db1e2bb1bc119584257896d844c441d8e156f"
     }
    ],
@@ -10055,7 +10088,7 @@
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-a4dcbec6",
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "3742aeb7b1da840b08dc87b11e028825df578099b8e8565d858f6ba495dc7bad"
     }
    ],
@@ -10096,7 +10129,7 @@
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-75675a14",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-8a7ae7fd"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "467cb26146cab2ee8de00a1476adc3c2982f09022605c8c541942d38de6c75ab"
     }
    ],
@@ -10134,7 +10167,7 @@
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-55b5ca1f"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "0d21661c066907981d016ca72f69311ca1560da48380f2c611bf074d1c098b9b"
     }
    ],
@@ -10176,7 +10209,7 @@
       "fratura-vertebral-osteoporotica-e-cimentacao-6bf668dc",
       "fratura-vertebral-osteoporotica-e-cimentacao-80a53563"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "cc87f4ff77a2eacacb1eea0e9643eb9ccfddcccd5e3769b3bac2409304416897"
     }
    ],
@@ -10218,7 +10251,7 @@
       "fratura-vertebral-osteoporotica-e-cimentacao-98a46ecf",
       "fratura-vertebral-osteoporotica-e-cimentacao-2ddf7fb9"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "5651d909a4568e4ca74ea15d2005d2a0d9fc30ded9c1afd01c0a5f8934adf867"
     }
    ],
@@ -10256,7 +10289,7 @@
       "ferimento-da-coluna-por-arma-de-fogo-0b91ee1f",
       "ferimento-da-coluna-por-arma-de-fogo-0722ff3c"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "0f57e620408ef490a91c3edbfd78ddba96a8aba4e07d0210aceeec1ba1bfa786"
     }
    ],
@@ -10293,7 +10326,7 @@
      "blocos": [
       "complicacoes-e-deformidade-tardia-101042d6"
      ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
+     "sha256": "d413c6b53e977fbb34897b92b54598234c4c903eb2e4fd6e673d18257b26898a",
      "trechosSha256": "e2dfa1034d5a9b0541163c12c19aa12e589c5fed7dd7035448396938ac744e92"
     }
    ],

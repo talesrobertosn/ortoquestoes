@@ -316,7 +316,7 @@ O algoritmo dos autores resume:
 
 A **via anterior** dá acesso direto ao fragmento e à coluna que carrega peso. Suas indicações são retropulsão com déficit, compressão grave do canal, **cifose acima de 30 graus**, cominuição grave do corpo e hérnia discal traumática no nível da medula ou do cone. Na lombar, uma corpectomia por trás é muito difícil (as raízes de L2 a L5 não podem ser sacrificadas), e a via anterior é quase sempre a preferida. A combinação das duas vias é para os casos em que cada uma sozinha falharia: a **posterior isolada** falha na A3 e A4 muito cominutivas; a **anterior isolada** falha quando o **complexo posterior está roto** (B2, C).
 
-!questoes treino=coluna-0546
+!questoes relacionadas=trauma-0176 treino=coluna-0546
 conceito: A ligamentotaxia descomprime o canal em até 50%, mas não funciona quando o fragmento retropulsado girou 180 graus e perdeu as inserções do ânulo e do ligamento longitudinal posterior.
 !fim
 
