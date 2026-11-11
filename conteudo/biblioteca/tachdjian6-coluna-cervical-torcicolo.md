@@ -200,7 +200,7 @@ A de doença: o Tachdjian (p. 92) e o Lovell and Winter (p. 853) descrevem a **c
 
 A de cirurgia: a liberação no mastoide deve ser feita **rente ao osso**, na inserção, justamente para ficar acima do ponto em que o nervo entra no músculo (Tachdjian, p. 95). O Lovell and Winter (p. 854 e 856) lista as estruturas em risco na cirurgia do torcicolo: o **nervo acessório espinal**, as **veias jugulares anterior e externa**, os **vasos carotídeos e sua bainha** e o **nervo facial**. A regra de dissecção no polo proximal tem dois limites: **não descer demais** (acessório) e **não ir para a frente demais** (facial, onde ele sai da região da parótida). O Campbell (cap. 33, p. 1180) faz a mesma advertência, com uma incisão transversa curta logo distal à ponta do mastoide, e avisa que o acessório **pode ter trajeto anômalo**.
 
-!questoes central=pediatria-0288 relacionadas=pediatria-0757
+!questoes central=pediatria-0288 relacionadas=pediatria-0757,pediatria-0333
 conceito: A estrutura amarela junto ao processo mastoide, cruzando a face profunda do esternocleidomastóideo, é o nervo acessório; ele inerva o esternocleidomastóideo e o trapézio, cruza o trígono posterior e é o nervo em risco na liberação mastóidea do torcicolo. O nervo facial também corre risco no polo proximal quando a dissecção vai para a frente demais, onde ele sai da região da parótida (Lovell and Winter, cap. 21, p. 854, e Fig. 21-39, p. 856).
 como: O TARO 2024 reproduziu a Fig. 8.9 do Tachdjian (alongamento bipolar do esternocleidomastóideo), com os rótulos traduzidos e uma seta no nervo, e pediu o nome.
 armadilha: Marcar o hipoglosso por ser outro nervo craniano do pescoço; troclear e trigêmeo não têm trajeto cervical junto ao esternocleidomastóideo.

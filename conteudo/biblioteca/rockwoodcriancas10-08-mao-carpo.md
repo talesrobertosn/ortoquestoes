@@ -173,7 +173,7 @@ O capítulo classifica as fraturas das falanges proximal e média pela localiza�
 
 **Tratamento em geral.** O não cirúrgico domina nas fisárias e nas diafisárias sem desvio; a cirurgia é mais usada nas diafisárias desviadas e nas do **colo** e **condilares**, pelo alto risco de desvio e instabilidade. Fisária irredutível (periósteo ou tendão interpostos): aberta.
 
-!questoes treino=pediatria-1350,pediatria-1351
+!questoes relacionadas=pediatria-0703 treino=pediatria-1350,pediatria-1351
 conceito: A SALTER-HARRIS II da base da proximal é a fisária mais comum; a extra-oitava reduz com a metacarpofalângica fletida; o colo da falange bloqueia a flexão, remodela pouco e se trata com redução fechada e fios.
 como: Questões de projeção; as provas de mão protegidas também cobraram a fisária irredutível e o ápice volar da diáfise.
 armadilha: Liberar o colo da falange com um AP normal, sem perfil verdadeiro.
