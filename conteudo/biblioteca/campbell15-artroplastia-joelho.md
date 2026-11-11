@@ -1,6 +1,6 @@
 ---
 id: campbell15-artroplastia-joelho
-versao: 1
+versao: 2
 titulo: Artroplastia total do joelho
 especialidade: joelho
 acesso: gratis
@@ -167,6 +167,8 @@ As contraindicações são bem definidas e caem muito:
 | LCA deficiente | subluxação tibial lateral acima de 1 cm; perda óssea medial acima de 2 a 3 mm; doença vascular | obesidade; patela baixa |
 !fim
 
+Os limites angulares da UKA não são iguais nos livros. O Campbell contraindica acima de **10° de varo ou 5° de valgo** (p. 419); o HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 16) indica a UKA com LCA íntegro, arco mínimo de 5 a 90°, **varo menor que 7° e valgo menor que 15°**. Na prova, use o número do livro da banca; se a questão vier do Campbell, vale o 10° de varo.
+
 Com isso, um paciente de 50 anos com artrose medial e **25° de varo** não serve para UKA (passa dos 10°) nem para osteotomia (a correção passaria dos 20° que o capítulo 10 aceita); sobra a ATJ. A seleção clássica da UKA é a de KOZINN e SCOTT (1989): **LCA íntegro, artrose de um compartimento, deformidade passivamente corrigível e peso razoável** (p. 446). Se o joelho exige liberação extensa de partes moles para corrigir, a deformidade é grande demais para a UKA (p. 446).
 
 !questoes central=joelho-0020
@@ -213,7 +215,7 @@ Para o **valgo fixo**, o capítulo 1 descreve o **KEBLISH modificado**, lateral,
 !questoes relacionadas=joelho-0248
 conceito: O subvasto preserva a vascularização da patela poupando o ramo articular intramuscular da artéria genicular descendente.
 como: O TEOT 2022 e a SBOT-SP perguntaram, com o mesmo enunciado, que artéria o subvasto poupa entre retinacular superior, genicular descendente, ramo safeno e genicular superior medial.
-armadilha: Marcar a genicular superior medial, que é a lesada pela artrotomia e não a preservada pelo subvasto.
+armadilha: Marcar a genicular superior medial ou o ramo safeno; a artéria que o capítulo 1 dá como poupada pelo subvasto é a genicular descendente, por seu ramo articular intramuscular.
 !fim
 
 !questoes central=trauma-1081
@@ -266,7 +268,7 @@ armadilha: Achar que o corte distal é perpendicular ao eixo anatômico ou que o
 
 ## Por que 3° para fora
 
-Esta é a seção que mais rende questões. A tíbia normal tem **3° de varo**; como a ATJ a corta **perpendicular**, o fêmur não pode ficar na posição anatômica: para que o **espaço de flexão** fique **retangular**, com tensão igual nos colaterais, o componente femoral é rodado **externamente em média 3° em relação ao eixo condilar posterior**, ou perpendicular ao eixo AP. No fêmur masculino médio, isso deixa os côndilos cortados **paralelos ao eixo epicondilar** (p. 411, Fig. 8.17).
+Esta é a seção que mais rende questões. A tíbia normal tem **3° de varo**; como a ATJ a corta **perpendicular**, o fêmur não pode ficar na posição anatômica: para que o **espaço de flexão** fique **retangular**, com tensão igual nos colaterais, o componente femoral é rodado **externamente em média 3° em relação ao eixo condilar posterior**, ou perpendicular ao eixo AP. No fêmur masculino médio, isso deixa os côndilos cortados **paralelos ao eixo epicondilar** (p. 411; Fig. 8.17, p. 412).
 
 A rotação femoral, portanto, mexe em **duas coisas**: o **equilíbrio do espaço de flexão** e o **trilhamento patelar** (p. 411). Na técnica (p. 432): rotação externa **excessiva** abre o espaço de flexão medial e pode dar **instabilidade em flexão**; rotação **interna** causa **inclinação lateral da patela** ou instabilidade patelofemoral.
 
@@ -372,18 +374,21 @@ O sinal de **LCP tenso** é o **lift-off anterior** da bandeja tibial provisóri
 
 Os defeitos vêm de deformidade angular, hipoplasia condilar, osteonecrose, trauma e cirurgias prévias. O primeiro passo é saber se o defeito é **contido** (cavitário, com borda cortical íntegra) ou **não contido** (segmentar, periférico, sem borda) (p. 441).
 
-!tabela Classificações de defeito ósseo (Campbell 15, cap. 8, p. 441)
+!tabela Classificações de defeito ósseo (Campbell 15, cap. 8, p. 441; HEBERT, 5ª ed., cap. 17)
 | Classificação | Tipo | Definição |
 | --- | --- | --- |
 | RAND | I | defeito metafisário focal, borda cortical íntegra |
 | RAND | II | defeito metafisário extenso, borda cortical íntegra |
 | RAND | III | defeito metafisário e cortical combinados |
 | AORI (ENGH) | F1, F2, F3 e T1, T2, T3 | perda óssea femoral e tibial em graus |
+| AORI (ENGH) | tipo 1 | osso metafisário intacto, componentes sem instabilidade (HEBERT) |
+| AORI (ENGH) | tipo 2 | perda do osso esponjoso que pede cimento, calço metálico ou enxerto para restaurar a interlinha (HEBERT) |
 | AORI (ENGH) | tipo 2A | perda em um côndilo ou platô |
 | AORI (ENGH) | tipo 2B | perda nos dois côndilos ou platôs |
+| AORI (ENGH) | tipo 3 | deficiência do osso metafisário com maior comprometimento dos côndilos; exige implante mais restrito, sobretudo com suspeita de lesão de colaterais ou do tendão patelar (HEBERT) |
 !fim
 
-O tratamento segue o tamanho e a contenção (p. 441 a 443): **menos de 5 mm, cimento**; contido, **enxerto esponjoso impactado**; não contido maior, **enxerto estrutural, cunhas metálicas modulares ou parafusos dentro do cimento**. O enxerto periférico da tíbia (WINDSOR, INSALL e SCULCO) aplaina o defeito, fixa um bloco do osso ressecado com pinos ou parafusos e recorta a superfície (p. 441 e 442). **Hastes** protegem enxertos periféricos. **Cones porosos e luvas** metafisárias criam um apoio onde o implante é cimentado, e são usados sobretudo em revisão, inclusive nos defeitos AORI IIB e III (p. 443 e 469).
+O tratamento segue o tamanho e a contenção (p. 441 a 443): **menos de 5 mm, cimento**; contido, **enxerto esponjoso impactado**; não contido maior, **enxerto estrutural, cunhas metálicas modulares ou parafusos dentro do cimento**. O enxerto periférico da tíbia (WINDSOR, INSALL e SCULCO) aplaina o defeito, fixa um bloco do osso ressecado com pinos ou parafusos e recorta a superfície (p. 441 e 442). **Hastes** protegem enxertos periféricos. **Cones porosos e luvas** metafisárias criam um apoio onde o implante é cimentado, e são usados sobretudo em revisão, inclusive nos defeitos AORI IIB e III (p. 443 e 469). O HEBERT (cap. 17) prefere enxerto impactado nos defeitos contidos ou menores (AORI I e II) e, no AORI III, metal trabeculado metafisário ou enxerto estrutural homólogo.
 
 !questoes central=joelho-0251
 conceito: Na classificação de RAND, o tipo II é o defeito metafisário extenso com borda cortical íntegra; o I é focal e o III atinge a cortical.
@@ -538,24 +543,26 @@ As causas são desequilíbrio do extensor (retináculo lateral tenso ou medial f
 
 ## Fratura de patela
 
-A fratura de patela ocorre em **menos de 1%**; fatores: ressecção excessiva, liberação lateral, mau trilhamento, elevação da linha, flexão acima de 115°, necrose térmica e revisão (p. 457). A classificação usada (a de ORTIGUERA e BERRY, nome que o livro não cita) separa os casos pelo **extensor** e pela **estabilidade do implante** (p. 457):
+A fratura de patela ocorre em **menos de 1%**; fatores: ressecção excessiva, liberação lateral, mau trilhamento, elevação da linha, flexão acima de 115°, necrose térmica e revisão (p. 457). A classificação usada separa os casos pelo **extensor** e pela **estabilidade do implante** (p. 457). O Campbell não dá o nome; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 59, p. 2625), a identifica como a de **ORTIGUERA e BERRY**, a mais usada na literatura, que considera também o **estoque ósseo**:
 
 !tabela Fratura periprotética da patela (Campbell 15, cap. 8, p. 457)
 | Tipo | Situação | Conduta |
 | --- | --- | --- |
 | I | extensor íntegro, implante estável | imobilizador ou gesso cilíndrico em extensão por 6 semanas |
 | II | extensor descontínuo (fratura desviada) | cirurgia: banda de tensão e reparo do retináculo no terço médio transverso; polo: patelectomia parcial |
-| III | componente patelar solto | retirar o componente e não recolocar, fixar a fratura |
+| III | extensor íntegro, componente patelar solto (Rockwood: IIIA com estoque ósseo razoável, IIIB com osso ruim) | retirar o componente e não recolocar, fixar a fratura |
 | cominuta ou osso ruim | sem fixação estável | patelectomia e reparo do extensor |
 !fim
 
 A cirurgia nos tipos II e III tem até **50% de complicações** (p. 457).
 
+O Rockwood (cap. 59, p. 2625 e 2626) reforça o conservadorismo e acrescenta números. Cerca de metade das fraturas é do tipo III, e o restante se divide quase igualmente entre I e II. A maioria pode ser tratada sem cirurgia, às vezes até com o extensor roto, porque a osteossíntese com **banda de tensão ou cerclagem** teve **pseudartrose média de 92%**: os fragmentos são pequenos e mal vascularizados. A cirurgia fica para extensor roto, componente solto e mau trilhamento. Aqui os livros **divergem**: o Rockwood considera razoável **revisar (trocar) o componente patelar quando sobra mais de 10 mm de osso**, enquanto o Campbell manda **retirar o componente solto e não recolocar**, para não atrapalhar a consolidação (p. 457). Com perda óssea grave, os dois concordam na patelectomia parcial ou total.
+
 !questoes central=joelho-0322 relacionadas=joelho-0239
 conceito: Fratura de patela com extensor íntegro e implante estável (tipo I) é tratada sem cirurgia, com o joelho imobilizado em extensão por 6 semanas; com componente solto (tipo III), retira-se o componente sem recolocar e fixa-se a patela.
 como: O ENARE R4 2025 pediu a conduta no tipo I de ORTIGUERA e BERRY 18 meses após a ATJ; uma prova de Ortopedia, a melhor conduta no tipo III desviado aos 53 anos.
 armadilha: Operar o tipo I ou trocar o componente patelar no tipo III, o que prejudica a consolidação.
-alerta: O Campbell 15 não nomeia a classificação, mas descreve os mesmos três tipos. `joelho-0239` está sem gabarito oficial no banco; o livro (p. 457) sustenta a alternativa D (remoção do componente patelar e osteossíntese).
+alerta: O Campbell 15 não nomeia a classificação, mas descreve os mesmos três tipos; o nome ORTIGUERA e BERRY está no Rockwood (cap. 59, p. 2625). `joelho-0239` está sem gabarito oficial no banco; o Campbell (p. 457) sustenta a alternativa D (remoção do componente patelar e osteossíntese), mantida como provável; o Rockwood (cap. 59, p. 2625) apoiaria a C (troca do componente) se houver mais de 10 mm de osso.
 !fim
 
 ## Componente metálico, soltura e clunk
@@ -564,7 +571,7 @@ O **clunk patelar** é típico da **PS**: nódulo fibroso no tendão quadricipit
 
 # Complicações neurovasculares {radar=confirmado}
 
-A **lesão arterial** é rara (0,03% a 0,2%), mas 25% terminam em amputação (p. 459). A **paralisia fibular** (menos de 1% a quase 2%) ocorre sobretudo na **correção de deformidades fixas combinadas de valgo e flexão**, comuns na artrite reumatoide: o nervo, lateral e posterior, é estirado nas duas direções. Outros fatores: epidural, laminectomia prévia, garrote acima de 90 minutos, IMC alto (p. 459). Conduta: **afrouxar o curativo e fletir o joelho**; na prevenção, imobilizar em alguma flexão (p. 439 e 459).
+A **lesão arterial** é rara (0,03% a 0,2%), mas 25% terminam em amputação (p. 459). A **paralisia fibular** (menos de 1% a quase 2%) ocorre sobretudo na **correção de deformidades fixas combinadas de valgo e flexão**, comuns na artrite reumatoide: o nervo, lateral e posterior, é estirado nas duas direções. Outros fatores: epidural, laminectomia prévia, garrote acima de 90 minutos, IMC alto e a **deformidade em valgo** por si só (p. 459). Numa revisão de mais de 383 mil ATJ primárias do estado de Nova York, a incidência foi de 0,12%, e o **valgo** e a **cirurgia prévia da coluna** foram os fatores mais comuns (p. 459). Conduta: **afrouxar o curativo e fletir o joelho**; na prevenção, imobilizar em alguma flexão (p. 439 e 459).
 
 !questoes central=joelho-0183 relacionadas=joelho-0292
 conceito: A paralisia do nervo fibular após ATJ se relaciona à correção da deformidade fixa combinada de valgo e flexão; tratar soltando o curativo e fletindo o joelho.
