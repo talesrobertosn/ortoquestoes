@@ -1,6 +1,6 @@
 ---
 id: rockwood10-42-diafise-radio-ulna
-versao: 2
+versao: 3
 titulo: Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna
 autores: Philipp N. Streubel e Leonid S. Grossman
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (radio_ulnar.pdf, 37 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (radio_ulnar.pdf, 37 páginas); consulta ao Rockwood 10ª ed., cap. 20 (Fig. 20-16), e ao HEBERT 5ª ed., caps. 48 e 50
 subtemas: Fraturas diafisárias do antebraço
 resumo: Monteggia e Galeazzi, vias de Henry e Thompson, forças que giram o rádio, quem trata sem cirurgia, placa e haste, síndrome compartimental, sinostose e refratura: o antebraço do adulto explicado pelo que a prova cobra.
 ---
@@ -44,6 +44,8 @@ Bado classificou pela **direção do ápice da fratura da ulna** e pela **direç
 
 O tipo **II** é o do adulto e é o mais complexo, porque vem muitas vezes com **fratura da cabeça do rádio ou do coronoide** e mexe com a estabilidade do cotovelo. Os "equivalentes" de Monteggia (variantes na ulna proximal ou no rádio junto ao cotovelo) ficam fora do capítulo.
 
+O HEBERT (5ª ed.) dá outra ordem de frequência. No cap. 48 (cotovelo do adulto), o tipo I é o "mais frequente", o III o "mais comum em crianças" e o IV o "mais raro". No cap. 50 (diáfise do antebraço do adulto), as frequências são **tipo I 60% a 80%, tipo II 15%, tipo III 20% e tipo IV 5%**. São dois livros, duas respostas: pelo Rockwood, o tipo II é o do adulto; pelo HEBERT, o tipo I é o mais comum de todos.
+
 !figura 42-12
 Classificação de Bado: tipo I com luxação anterior da cabeça e ulna angulada para a frente; tipo II com luxação posterior e ulna angulada para trás; tipo III com luxação lateral ou anterolateral e fratura da metáfise da ulna; tipo IV com luxação anterior e fratura do rádio e da ulna.
 !fim
@@ -53,7 +55,7 @@ conceito: Bado classifica a Monteggia pela direção da cabeça do rádio, que a
 como: O TARO pergunta o tipo do adulto (2013) e o tipo da luxação posterior (2014, 2015); o CET-PR juntou criança e adulto (I e II); FMRP-USP e UFG pediram a direção de cada tipo (I anterior, III lateral).
 armadilha: Tipo IV como "lateral": no IV a cabeça vai para a frente, e o que muda é a fratura do rádio junto.
 armadilha: Tipo III como "posterior": o III é a luxação lateral com fratura metafisária, típica da criança.
-alerta: No TARO 2018 (trauma-0044), o gabarito oficial foi o tipo I como o mais comum no adulto. O Rockwood diz o contrário: o tipo I é o mais frequente na criança e o tipo II responde por até 80% das Monteggia do adulto (e o próprio TARO deu o tipo II em 2013). Guarde o gabarito daquela prova e o conceito do livro.
+alerta: No TARO 2018 (trauma-0044), o gabarito oficial foi o tipo I como o mais comum no adulto. O Rockwood diz o contrário: o tipo I é o mais frequente na criança e o tipo II responde por até 80% das Monteggia do adulto (e o próprio TARO deu o tipo II em 2013). O HEBERT sustenta o gabarito: o cap. 48 chama o tipo I de "mais frequente", e o cap. 50 dá ao tipo I 60% a 80% das MONTEGGIA (tipo II 15%, III 20%, IV 5%). Guarde o gabarito daquela prova, apoiado no HEBERT, e o conceito do Rockwood.
 alerta: No TARO 2025 (trauma-0804), o gabarito oficial para "quase exclusivamente em adultos, rara em crianças" foi o tipo II. O capítulo reserva a palavra "exclusivamente" para o tipo **IV** ("ocorrem exclusivamente em adultos") e descreve o II como o mais comum no adulto. A banca leu a frase como "a Monteggia típica do adulto".
 !fim
 
@@ -111,6 +113,15 @@ conceito: Na Monteggia do adulto, os piores resultados ficam com o tipo II de Ba
 como: O TARO 2017 pediu o tipo com piores resultados; o TECOC pediu a principal causa de reoperação.
 armadilha: Tipo IV: aparece junto com o II nos maus resultados de Reynders, mas é raro; o tipo II domina as séries e as reoperações.
 alerta: No TECOC (trauma-0688), o gabarito oficial foi a pseudartrose da ulna como principal causa de reoperação. Na série de Ring citada pelo Rockwood, a primeira causa listada é o **afrouxamento da fixação da ulna**, ao lado da ressecção da cabeça do rádio e do material doloroso; a palavra pseudartrose não aparece. As duas leituras falam da mesma falha: a ulna que não ficou presa.
+!fim
+
+**O nervo da MONTEGGIA.** O capítulo 42 não discute o nervo lesado pela própria fratura-luxação; o assunto está no capítulo 20 do Rockwood (lesões nervosas, no texto da Fig. 20-16). O **interósseo posterior** é às vezes lesado junto da luxação da cabeça do rádio com fratura da diáfise da ulna (MONTEGGIA) ou do olécrano. O mecanismo é incerto: estiramento ou compressão no **colo do rádio** ou **sob o supinador**, ou lesão direta mais distal pela própria fratura da ulna. A **recuperação espontânea é provável**, e a exploração com descompressão é recomendada se não houver sinal de recuperação depois de **8 semanas**. O HEBERT (cap. 48) dá o mesmo nervo: a paralisia do interósseo posterior pode ocorrer, **em especial no tipo III**, com recuperação espontânea em geral em **4 a 6 semanas**.
+
+!questoes relacionadas=trauma-0144,trauma-0891
+conceito: O nervo mais lesado na MONTEGGIA é o interósseo posterior, estirado ou comprimido no colo do rádio e sob o supinador; costuma recuperar sozinho (HEBERT: 4 a 6 semanas, sobretudo no tipo III; Rockwood: explorar se nada recuperar em 8 semanas).
+como: O TARO 2010 e o TARO 2015 pediram o nervo mais comprometido na lesão de MONTEGGIA, com ulnar, mediano, interósseo anterior, ramo dorsal do ulnar e ramo superficial do radial como distratores.
+armadilha: Ramo superficial do radial: é sensitivo e corre com o braquiorradial, longe do colo do rádio e do supinador.
+armadilha: Interósseo anterior: é ramo do mediano, na face volar; não contorna a cabeça do rádio.
 !fim
 
 # Galeazzi: o rádio quebrado e a radioulnar distal {radar=confirmado}
@@ -435,7 +446,7 @@ Nos projéteis de **baixa velocidade**, as fraturas costumam ser de um osso só 
 !questoes central=trauma-0873 relacionadas=trauma-0880 treino=trauma-1456
 conceito: Na fratura exposta da diáfise do antebraço, o Rockwood trata a maioria com desbridamento e placa imediata, reservando o fixador externo para a destruição maciça de partes moles com contaminação.
 como: O TARO 2011 perguntou a fixação preferencial na emergência, com placa, haste e dois tipos de fixador.
-alerta: No TARO 2011 (trauma-0873), o gabarito oficial foi o fixador externo monolateral. O Rockwood recomenda o contrário para a maioria: desbridamento e **placa imediata** nos tipos I, II e IIIA (e possível no IIIB), com o fixador externo só em casos selecionados com perda maciça de partes moles. Guarde o gabarito da banca para essa prova e o conceito do livro.
+alerta: No TARO 2011 (trauma-0873), o gabarito oficial foi o fixador externo monolateral. O Rockwood recomenda o contrário para a maioria: desbridamento e **placa imediata** nos tipos I, II e IIIA (e possível no IIIB), com o fixador externo só em casos selecionados com perda maciça de partes moles. O HEBERT (cap. 50) fica do lado do Rockwood: na fratura exposta do antebraço, depois da limpeza ampla, a estabilização precoce deve ser **preferencialmente interna**, porque as fraturas do antebraço se tratam como articulares; o fixador externo fica restrito à **grande perda de partes moles** (de preferência um fixador para cada osso) e ao **controle de danos**, geral (paciente com instabilidade fisiológica) ou do membro (lesões múltiplas, como o cotovelo flutuante). Guarde o gabarito da banca para essa prova e o conceito dos livros.
 !fim
 
 # Síndrome compartimental do antebraço {radar=confirmado}

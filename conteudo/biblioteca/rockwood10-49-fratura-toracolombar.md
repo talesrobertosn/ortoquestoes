@@ -1,6 +1,6 @@
 ---
 id: rockwood10-49-fratura-toracolombar
-versao: 2
+versao: 3
 titulo: Fraturas e luxações da coluna toracolombar
 especialidade: coluna
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations
 autores: Alex Kitto, Owen Edwards e Chadi Tannoury
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (fratura_toracolombar, 3 arquivos, 100 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (fratura_toracolombar, 3 arquivos, 100 páginas); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (p. 1875, 1913 e 1918) e cap. 50 (p. 2138)
 subtemas: Fraturas da coluna toracolombar
 resumo: Choque medular e neurogênico, ASIA, Denis, AO Spine, TLICS, load sharing, explosão, Chance, coluna anquilosada, fratura osteoporótica e cimentação: a coluna toracolombar explicada pelo que a prova cobra.
 ---
@@ -210,6 +210,8 @@ Entender a lógica ajuda a não decorar. A **distração** é a morfologia mais 
 
 O capítulo é crítico: o TLICS é ótimo para ensinar o peso relativo de cada achado, mas depende de um exame neurológico que **não se obtém** em boa parte dos politraumatizados, não comunica a "personalidade" da fratura, **não diz que cirurgia fazer** e reflete a escola norte-americana, menos aplicável onde a explosão sem lesão ligamentar nem déficit é rotineiramente operada.
 
+O Campbell 15 (cap. 48, p. 1913) conta a origem: em 2005 o Spine Trauma Study Group criou o **TLISS**, que o próprio autor modificou para o TLICS para melhorar a reprodutibilidade, e o TLICS foi **a primeira classificação com escore para guiar o tratamento**. Tem boa validade e reprodutibilidade, e a maior fraqueza é definir o **complexo ligamentar posterior**, muitas vezes indeterminado mesmo na ressonância. Na zona de dúvida, cerca de **60% dos pacientes com 4 pontos são operados**, mais na transição toracolombar e na explosão, e os de 4 pontos operados tiveram melhores resultados.
+
 > Na prova: no TLICS, **distração 4**, translação 3, explosão 2, compressão 1; CLP indeterminado 2 e roto 3; incompleta e cauda equina 3, completa e raiz 2. **Até 3 não opera, 4 depende, 5 ou mais opera.**
 
 !questoes central=trauma-0193,trauma-0797,coluna-0305,trauma-0900 relacionadas=trauma-0174 treino=coluna-0537,coluna-0538,coluna-0539
@@ -289,6 +291,8 @@ armadilha: "Duas colunas de Denis e TLICS 3": TLICS 3 é tratamento não cirúrg
 ## A lâmina vertical e a dura-máter
 
 Na explosão, procure uma **fratura vertical (longitudinal) da lâmina**, sobretudo se desviada: a lâmina se abre no impacto e volta, e pode prender a **dura-máter e as raízes** no traço. Essas fraturas se associam a **lesão traumática da dura em até 19%** dos casos. A laceração é longitudinal, na face dorsal, e pode ser longa; ao abrir o canal, muitas vezes se veem primeiro as raízes, porque as bordas da dura se retraíram para a frente. O reparo fica mais simples com duas suturas contínuas, uma de cada extremidade da laceração, aproximando as bordas até se encontrarem.
+
+O Campbell 15 (cap. 48, p. 1918) acrescenta o motivo do cuidado: a descompressão posterior na **fratura vertical da lâmina** deve ser bem pensada pela maior frequência de **lesão da dura com raízes expostas** e pela possibilidade de **aracnoidite pós-traumática grave**.
 
 No conjunto das fraturas toracolombares, cerca de **12%** têm durotomia traumática, mais comum nas fraturas-luxações (tipo C), pelo cisalhamento, e nas explosões com lâmina longitudinal. O reparo ideal é sutura estanque (ou selantes e "patches" nas lesões complexas) com fechamento firme da fáscia; a taxa de complicação pós-operatória é de só **2,1%**.
 
@@ -561,6 +565,8 @@ Cerca de **metade** dos ferimentos por projétil na coluna atinge a torácica e 
 - **Descompressão:** indicada sobretudo no **déficit incompleto e progressivo** com lesão compressiva identificável; na lesão completa é de valor duvidoso, e operar ferimentos estáveis não melhorou a neurologia e teve mais complicações (21% contra 7%). Retirar o projétil do canal entre **T12 e L4** melhorou a força; de T11 para cima, não houve efeito demonstrável.
 - **Fístula liquórica:** pede, em geral, reparo aberto da dura.
 - **Chumbo:** projéteis com **cobre** dentro do canal são mais neurotóxicos localmente. A intoxicação sistêmica por chumbo a partir da coluna é raríssima (quatro relatos, todos com fragmento no **disco**); o chumbo é absorvido sobretudo do **líquido sinovial**, e por isso a retirada de projéteis **intra-articulares** é rotina. O "efeito discograma" (chumbo se espalhando no disco na radiografia) é um aviso para dosar o chumbo.
+
+Por que o fragmento nas partes moles quase não intoxica: o capítulo explica que ele provavelmente fica **encapsulado por tecido fibroso** e raramente libera chumbo para o sangue, e que o **liquor** é menos corrosivo que o **líquido sinovial**, por isso o fragmento intradural também raramente causa plumbismo. O Campbell 15 (cap. 50, p. 2138) diz o mesmo para o membro: o chumbo nas partes moles fica encapsulado e praticamente inerte, enquanto o fragmento intra-articular em contato com o líquido sinovial causa reação de corpo estranho, sinovite proliferativa, artrite destrutiva e intoxicação, descrita de 2 dias a 52 anos depois do ferimento.
 
 O prognóstico neurológico é reservado: **dois terços** não melhoram o nível em um ano, embora o escore motor melhore, mais nas incompletas; depois podem surgir siringomielia (60%), cisto aracnoide (25%) e infecção (10%).
 
