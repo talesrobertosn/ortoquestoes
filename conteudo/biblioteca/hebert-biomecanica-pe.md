@@ -1,6 +1,6 @@
 ---
 id: hebert-biomecanica-pe
-versao: 1
+versao: 2
 titulo: Biomecânica e marcha do pé e tornozelo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -434,6 +434,26 @@ O mesmo capítulo divide o arco longitudinal em duas colunas funcionais. A **col
 !fim
 
 A lógica é a da marcha: a coluna lateral é móvel porque amortece logo após o calcanhar; a intermediária é rígida porque é o eixo da alavanca da impulsão. A **pedobarografia** mede essa distribuição de pressões (Tachdjian, cap. 5, p. 66).
+
+Quanto cada região do pé carrega foi medido assim. O HEBERT (cap. 21.5, Metatarsalgias, seção Distribuição de cargas na planta dos pés, pág. PDF 1620) diz que as forças na planta são **diferentes no apoio estático e no dinâmico**. No **apoio estático**, o peso vai predominantemente para o **calcanhar (60%)**; o **antepé** recebe **32%** (28% sob as cabeças dos metatarsais e 4% nos dedos) e o **mediopé**, sob o arco, apenas **8%**. São os números de CAVANAGH e colaboradores, medidos por **baropodometria computadorizada**. A Fig. 21.5.9 do mesmo capítulo compara os conceitos anteriores, que dividiam o pé em duas metades:
+
+!tabela Distribuição da carga no apoio estático (HEBERT, cap. 21.5, Fig. 21.5.9, pág. PDF 1620)
+| Conceito | Retropé | Mediopé | Antepé |
+|---|---|---|---|
+| Anatomistas antigos (chamado de errôneo pelo livro) | 50% | não separado | 50% |
+| PADOVANI e VALENTI | 56% | não separado | 44% |
+| VILADOT, por cálculo de vetores | 70% | não separado | 30% |
+| CAVANAGH (conceito atual, baropodometria) | 60% | 8% | 32% (28% metatarsais, 4% dedos) |
+!fim
+
+No antepé parado, a carga se concentra nos **metatarsais centrais, segundo e terceiro**, e não sob a cabeça do primeiro, como se acreditava; na **marcha**, no momento em que o calcanhar sobe, a carga do antepé **supera o peso corporal em cerca de 25%** (HEBERT, cap. 21.5, Fig. 21.5.10, pág. PDF 1621).
+
+!questoes relacionadas=pe-tornozelo-0346
+conceito: No apoio estático, CAVANAGH mediu por baropodometria 60% da carga no calcanhar, 8% no mediopé e 32% no antepé (28% nas cabeças metatarsais e 4% nos dedos) (HEBERT, cap. 21.5, Fig. 21.5.9).
+como: O TARO 2009 perguntou a distribuição de cargas sobre calcanhar, mediopé e antepé no apoio estático, com quatro trios de porcentagens.
+armadilha: Marcar uma divisão meio a meio entre calcanhar e antepé, o conceito antigo que o livro chama de errôneo, ou dar ao mediopé uma fatia grande, quando sob o arco ele recebe só 8%.
+alerta: Sem gabarito oficial; a resposta provável (A, 60%, 8% e 32%) é a da bibliografia, conferida no HEBERT 5ª ed. (cap. 21.5, pág. PDF 1620).
+!fim
 
 ## Osso, ligamento ou músculo: quem segura o arco?
 

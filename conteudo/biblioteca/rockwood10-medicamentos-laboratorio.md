@@ -1,6 +1,6 @@
 ---
 id: rockwood10-medicamentos-laboratorio
-versao: 1
+versao: 2
 titulo: Medicamentos e exames laboratoriais
 especialidade: conceitos-basicos
 acesso: gratis
@@ -229,6 +229,15 @@ O Rockwood (cap. 26, p. aprox. 806 e 807) lembra que a TVP é **dois terços** d
 
 O **D-dímero** é o fragmento que a plasmina solta da fibrina ligada. É **muito sensível (acima de 95%) e pouco específico (cerca de 40%)**; a especificidade despenca com trauma, cirurgia recente, hemorragia, hepatopatia, gestação, câncer e idade. Por isso **só vale negativo**: escore de WELLS baixo com D-dímero negativo exclui TVP. No trauma, WELLS de risco moderado ou alto teve sensibilidade de 67%, especificidade de 90% e **valor preditivo negativo de 99%**. É o mesmo D-dímero que o ICM 2018 aproveita como critério menor de infecção periprotética, com outro ponto de corte.
 
+O tromboembolismo é uma doença que se descobre tarde, e muitas vezes na autópsia. O Skeletal Trauma, 5ª ed. (cap. 23, p. 584), registra que a TVP foi **clinicamente silenciosa em dois terços** dos casos achados na autópsia ou na flebografia, e que o diagnóstico clínico de TVP e de TEP é **frequentemente difícil**: além da morte súbita, muitos pacientes pioram aos poucos, com quadro parecido com **pneumonia, insuficiência cardíaca ou hipotensão**, às vezes em episódios transitórios por pequenos êmbolos em sequência. Na mesma página, SEVITT e GALLAGHER acharam TEP em **20%** de 486 mortos por trauma, e em 46% dos mortos após fratura do quadril. O The Adult Hip (CALLAGHAN), 3ª ed. (cap. 29, p. 418 e 419), acrescenta que, na população geral, a embolia **fatal comprovada na autópsia é 2,5 vezes mais frequente** que a embolia sintomática não fatal. Uma série brasileira de 24 anos com 5.261 autópsias (YOO e colaboradores, Jornal Brasileiro de Pneumologia, 2004, acesso aberto) encontrou tromboembolismo em 544 mortos; em **84,6%** deles não havia suspeita antes da morte, e 40% desses êmbolos não suspeitados foram fatais. A conclusão é a mesma nas três fontes: o TEP é diagnosticado antes do óbito em **menos da metade** dos casos, e por isso o diagnóstico depende de suspeitar e pedir exame.
+
+!questoes relacionadas=conceitos-basicos-0302
+conceito: O TEP é subdiagnosticado: a TVP é silenciosa em dois terços dos casos achados na autópsia e o TEP imita pneumonia, insuficiência cardíaca ou hipotensão (Skeletal Trauma, cap. 23, p. 584); em séries de autópsia, a maioria dos êmbolos não foi suspeitada em vida.
+como: O TARO 2006 afirmou, em certo ou errado, que o TEP é diagnosticado adequadamente antes do óbito em menos da metade dos casos.
+armadilha: Marcar errado por confiar no D-dímero e na angiotomografia; o problema é clínico, porque sem suspeita o exame não é pedido.
+alerta: Sem gabarito oficial; a resposta provável (A, certo) é a da bibliografia. A referência da banca (Rockwood, 4ª ed., p. 454) não está no acervo e a 10ª ed. não traz a proporção; o dado foi conferido no Skeletal Trauma (cap. 23, p. 584), no The Adult Hip (cap. 29, p. 418 e 419) e na série de YOO (J Bras Pneumol, 2004).
+!fim
+
 # Analgesia: paracetamol, dipirona, AINE e opioide {radar=confirmado}
 
 ## O que o Rockwood ensina sobre mecanismos
@@ -238,6 +247,8 @@ O capítulo 28 do Rockwood (p. aprox. 827 e 828) resume as classes. O **paraceta
 No uso, o cetorolaco intravenoso controla bem a dor musculoesquelética e, segundo a literatura recente citada, **não aumentou a pseudartrose**; os AINEs **não aumentaram de forma significativa o sangramento pós-operatório**, e o sangramento digestivo do cetorolaco é só um pouco maior que o da morfina.
 
 O Sizínio Hebert (cap. 16, Joelho do adulto, tratamento medicamentoso da artrose) é o único dos livros que fala da **dipirona**: na dor leve a moderada, começa-se com **dipirona ou paracetamol**, de efeito analgésico semelhante ao dos AINEs; o AINE vai na **menor dose pelo menor tempo**, com cautela no risco cardiovascular, seja **COX-2 seletivo** ou não.
+
+Os livros ortopédicos locais não comparam a toxicidade de cada AINE; para o **diclofenaco**, a bula oficial (DailyMed, National Library of Medicine, seção 5) traz os dados. No **fígado**, elevação limítrofe ou maior das transaminases em cerca de **15%** dos tratados e acima de 3 vezes o normal em cerca de **2%** de 5.700 pacientes; num estudo aberto de 3.700, 4% passaram de 3 vezes e 1% de 8 vezes o normal, com elevações **mais frequentes com o diclofenaco do que com outros AINEs**, e há relatos de necrose hepática e insuficiência hepática fatal ou com transplante. No **tubo digestivo**, como todo AINE, sangramento, úlcera e perfuração graves, com ou sem sintoma de alerta; no **rim**, necrose papilar e outras lesões com o uso prolongado. O diclofenaco é, portanto, o AINE que a própria bula destaca pela **hepatotoxicidade**.
 
 !tabela Analgésicos: mecanismo segundo os livros (Rockwood cap. 28; Hebert cap. 16)
 | Classe | Mecanismo | Observação |

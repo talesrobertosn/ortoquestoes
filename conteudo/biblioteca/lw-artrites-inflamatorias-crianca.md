@@ -1,6 +1,6 @@
 ---
 id: lw-artrites-inflamatorias-crianca
-versao: 1
+versao: 2
 titulo: Artrite idiopática juvenil e outras artrites da criança
 especialidade: pediatria
 acesso: gratis
@@ -356,6 +356,12 @@ A **febre reumática** é reação a uma faringite por **estreptococo beta-hemol
 !fim
 
 O diagnóstico exige **dois critérios maiores, ou um maior e dois menores**, com evidência de estreptococo prévio (títulos de anticorpos subindo, cultura de orofaringe ou teste rápido positivos).
+
+!questoes relacionadas=osteometabolicas-0085
+conceito: Nos critérios de JONES, as manifestações maiores são cardite, poliartrite, nódulos subcutâneos, eritema marginado e coreia; artralgia é critério menor (Lovell and Winter's, cap. 11, Tabela 11-5, p. 355).
+como: O TARO 2009 pediu três manifestações maiores e misturou a artralgia em três das quatro alternativas.
+armadilha: Contar artralgia como critério maior; o maior é a poliartrite; a artralgia só entra como menor.
+!fim
 
 ## Outras artrites que imitam a AIJ
 
