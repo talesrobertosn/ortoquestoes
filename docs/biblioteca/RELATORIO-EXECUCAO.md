@@ -332,7 +332,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 1019 | Onda 2: 44 miniaulas refeitas com figuras (18 do osteossarcoma, Campbell, Dahlin e Tachdjian, fim deste resumo; 18 da marcha, fim deste resumo; 8 da doença de Perthes) |
 | 1020 | Onda 2: 39 miniaulas refeitas com figuras (16 da artrogripose e doenças neuromusculares, fim deste resumo; 15 do condrossarcoma, fim deste resumo; 8 da doença de Perthes, fim deste resumo) |
 | 1021 | Onda 2: 28 miniaulas refeitas com figuras (14 do carpo, fim deste resumo; 14 da pseudartrose e dos enxertos, fim deste resumo); 2 pendências resolvidas com fonte aberta (SEINSHEIMER na trauma-0813, MÖBIUS na pediatria-0202) |
-| (este PR) | Onda 2: 46 miniaulas refeitas com figuras (12 do exame físico da mão e do punho; 12 dos tendões flexores; 11 do úmero distal; 11 das deficiências de membros), todos fim de resumo |
+| 1024 | Onda 2: 46 miniaulas refeitas com figuras (12 do exame físico da mão e do punho; 12 dos tendões flexores; 11 do úmero distal; 11 das deficiências de membros), todos fim de resumo |
+| (este PR) | Onda 2: 43 miniaulas refeitas com figuras (8 da coluna toracolombar, 7 de outras infecções, 7 das malformações congênitas da mão, 7 da transtrocantérica, 7 da cabeça do rádio, 7 das fraturas da mão) |
 
 ## Próximo
 
