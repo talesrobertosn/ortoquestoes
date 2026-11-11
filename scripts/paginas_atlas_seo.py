@@ -128,7 +128,8 @@ def _galeria(chaves: list[str], titulo: str, texto: str = "") -> str:
     if not figuras:
         return ""
     intro = f"<p>{texto}</p>" if texto else ""
-    return f'<section class="atl-galeria-sec"><h2>{esc(titulo)}</h2>{intro}<div class="atl-galeria">{"".join(figuras)}</div></section>'
+    return (f'<section class="atl-galeria-sec"><h2>{esc(titulo)}</h2>{intro}<div class="atl-galeria">{"".join(figuras)}</div></section>'
+            + SCRIPT_GALERIA)
 
 
 def ld_imagens(chaves: list[str]) -> list[dict]:
@@ -159,7 +160,47 @@ def _com_previa(html: str, chave: str) -> str:
     return html.replace('<meta property="og:image:alt" content="Orto Questões: questões de ortopedia comentadas para TEOT, TARO e R4">', f'<meta property="og:image:alt" content="{esc(alt)}">')
 
 
+# Galeria em tela cheia (Tales, 11/11/2026): clicar numa imagem abre a galeria da página inteira, com setas, teclado,
+# deslizar no celular e contador; o href para o .jpg fica para o Google e para quem abre sem JavaScript.
+SCRIPT_GALERIA = """<script>(function(){if(window.__atlGaleria)return;window.__atlGaleria=1;
+function ini(){var ls=[].slice.call(document.querySelectorAll('.atl-galeria a'));if(!ls.length)return;
+var itens=ls.map(function(a){var i=a.querySelector('img'),c=a.parentNode.querySelector('figcaption');return{src:a.getAttribute('href'),alt:i?i.alt:'',leg:c?c.textContent:''}});
+var d=document.createElement('div');d.className='atl-lb';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.setAttribute('aria-label','Galeria de imagens do atlas');d.hidden=true;
+d.innerHTML='<button type="button" class="atl-lb__fechar" aria-label="Fechar a galeria">\u00d7</button><button type="button" class="atl-lb__seta atl-lb__seta--ant" aria-label="Imagem anterior">\u2039</button><figure class="atl-lb__fig"><img alt=""><figcaption><span class="atl-lb__cont"></span><span class="atl-lb__leg"></span></figcaption></figure><button type="button" class="atl-lb__seta atl-lb__seta--prox" aria-label="Pr\u00f3xima imagem">\u203a</button>';
+document.body.appendChild(d);var img=d.querySelector('img'),cont=d.querySelector('.atl-lb__cont'),leg=d.querySelector('.atl-lb__leg'),pos=0,volta=null;
+function pre(k){var x=new Image();x.src=itens[(k+itens.length)%itens.length].src}
+function mostra(k){pos=(k+itens.length)%itens.length;var it=itens[pos];img.src=it.src;img.alt=it.alt;cont.textContent=(pos+1)+' de '+itens.length;leg.textContent=it.leg;pre(pos+1);pre(pos-1)}
+function abre(k){volta=document.activeElement;mostra(k);d.hidden=false;document.documentElement.classList.add('atl-lb-aberta');d.querySelector('.atl-lb__fechar').focus()}
+function fecha(){d.hidden=true;document.documentElement.classList.remove('atl-lb-aberta');if(volta&&volta.focus)volta.focus()}
+ls.forEach(function(a,k){a.addEventListener('click',function(e){if(e.ctrlKey||e.metaKey||e.shiftKey||e.button)return;e.preventDefault();abre(k)})});
+d.querySelector('.atl-lb__fechar').onclick=fecha;d.querySelector('.atl-lb__seta--ant').onclick=function(){mostra(pos-1)};d.querySelector('.atl-lb__seta--prox').onclick=function(){mostra(pos+1)};
+d.addEventListener('click',function(e){if(e.target===d||e.target.classList.contains('atl-lb__fig'))fecha()});
+document.addEventListener('keydown',function(e){if(d.hidden)return;if(e.key==='Escape')fecha();else if(e.key==='ArrowLeft')mostra(pos-1);else if(e.key==='ArrowRight')mostra(pos+1);else if(e.key==='Tab'){var b=[].slice.call(d.querySelectorAll('button')),i=b.indexOf(document.activeElement);e.preventDefault();b[(i+(e.shiftKey?-1:1)+b.length)%b.length].focus()}});
+var x0=null,y0=0;d.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+d.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy))mostra(pos+(dx<0?1:-1));else if(dy>90)fecha()});}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ini);else ini()})();</script>"""
+
 ESTILO_GALERIA = """
+.atl-galeria a{position:relative;display:block;cursor:zoom-in;overflow:hidden}
+.atl-galeria a::after{content:"";position:absolute;right:.7rem;bottom:.7rem;width:2.2rem;height:2.2rem;border-radius:50%;background:rgba(8,20,18,.62) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7'/%3E%3C/svg%3E") center/1.05rem no-repeat;opacity:.85;transition:transform .2s,opacity .2s}
+.atl-galeria a:hover::after,.atl-galeria a:focus-visible::after{opacity:1;transform:scale(1.08)}
+.atl-galeria a img{transition:transform .35s ease}
+.atl-galeria a:hover img{transform:scale(1.025)}
+.atl-lb-aberta{overflow:hidden}
+.atl-lb{position:fixed;inset:0;z-index:1000;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.5rem;padding:3.5rem .75rem 1rem;background:rgba(6,14,12,.97);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;animation:atl-lb-entra .2s ease-out}
+.atl-lb[hidden]{display:none}
+.atl-lb__fig{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;min-width:0;height:100%}
+.atl-lb__fig img{max-width:100%;max-height:calc(100vh - 10rem);height:auto;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5);background:#e9ece9}
+.atl-lb__fig figcaption{max-width:52rem;text-align:center;font-size:.95rem;line-height:1.5;color:rgba(255,255,255,.88)}
+.atl-lb__cont{display:block;margin-bottom:.2rem;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#e9bf3c}
+.atl-lb button{border:0;cursor:pointer;color:#fff;background:rgba(255,255,255,.1);border-radius:999px;font:inherit;line-height:1;transition:background .15s}
+.atl-lb button:hover{background:rgba(255,255,255,.22)}
+.atl-lb button:focus-visible{outline:2px solid #e9bf3c;outline-offset:2px}
+.atl-lb__seta{width:3rem;height:3rem;font-size:2.1rem;padding-bottom:.2rem}
+.atl-lb__fechar{position:absolute;top:.75rem;right:.75rem;width:2.6rem;height:2.6rem;font-size:1.7rem}
+@keyframes atl-lb-entra{from{opacity:0}to{opacity:1}}
+@media (max-width:40rem){.atl-lb{grid-template-columns:1fr;padding:3.5rem .5rem 1rem}.atl-lb__seta{position:absolute;bottom:1rem;width:2.8rem;height:2.8rem}.atl-lb__seta--ant{left:1rem}.atl-lb__seta--prox{right:1rem}.atl-lb__fig figcaption{padding:0 3.4rem}}
+@media (prefers-reduced-motion:reduce){.atl-lb,.atl-galeria a img,.atl-galeria a::after{animation:none;transition:none}}
 .atl-galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:1rem}
 .atl-galeria figure{margin:0;background:var(--sup);border:1px solid var(--traco);border-radius:16px;overflow:hidden}
 .atl-galeria img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}

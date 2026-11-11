@@ -31,7 +31,7 @@ export const SISTEMAS: Sistema[] = [
   { id: 'nervoso-central', nome: 'Encéfalo e medula', resumo: 'Lobos, tronco, cerebelo e tratos da medula', nos: ['Sistema nervoso central'], cor: '#d5a2a8' },
   { id: 'nervos', nome: 'Nervos', resumo: 'Cranianos, plexos e nervos periféricos', nos: ['Sistema nervoso periférico'], cor: '#e9bf3c' },
   { id: 'sentidos', nome: 'Órgãos dos sentidos', resumo: 'Olho, orelha, nariz e língua', nos: ['Órgãos dos sentidos'], cor: '#4fb3a8' },
-  { id: 'linfatico', nome: 'Linfático', resumo: 'Linfonodos, baço, timo e tonsilas', nos: ['Órgãos linfoides'], cor: '#5cb88a' },
+  { id: 'linfatico', nome: 'Linfático', resumo: 'Linfonodos, baço, timo e tonsilas', nos: ['Órgãos linfoides', 'Órgãos linfóides'], cor: '#5cb88a' },
   { id: 'dentes', nome: 'Dentes', resumo: 'Incisivos, caninos, pré-molares e molares', nos: ['Dentes'], cor: '#bfb59a' },
   { id: 'regioes', nome: 'Regiões do corpo', resumo: 'A superfície dividida como no exame físico', nos: ['Regiões do corpo humano'], cor: '#d9a98c' },
 ]

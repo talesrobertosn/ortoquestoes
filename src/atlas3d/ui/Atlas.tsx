@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Motor, type Corte, type EixoCorte, type Passagem, type Vista } from '../motor/Motor'
 import { carregarAreas, carregarArvore, carregarCatalogo, carregarNomesTa2, carregarPontos } from '../motor/carregador'
 import { GRUPOS, ORDEM_GRUPOS, grupoDe } from '../config'
@@ -29,10 +29,13 @@ import { CORES_PRESET, PRESETS, type Preset } from '../dados/presets'
 import { GRUPOS_DO_MODO, SISTEMAS, SO_CORPO, caminhoDoNo, indexarArvore, nosDoSistema, type Modo, type Sistema } from '../dados/modos'
 import { PainelExplorar } from './PainelExplorar'
 import { Navegador } from './Navegador'
-import { ModoEstudo } from './ModoEstudo'
+import type { TemaEstudo } from '../dados/temasEstudo'
 import { Rotulos } from './Rotulos'
 import { hex } from './cor'
 import '../../estilos/paginas/Atlas3D.css'
+
+// o Teste-se (e a lista de grupos) só baixa quando a pessoa abre: o atlas abre mais leve
+const ModoEstudo = lazy(() => import('./ModoEstudo').then((m) => ({ default: m.ModoEstudo })))
 
 /** Na conta grátis: ossos e músculos. O resto, para assinantes (aparece por alguns segundos e convida). */
 const GRATIS = new Set<Grupo>(['osso', 'musculo'])
@@ -92,6 +95,8 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const [preset, definirPreset] = useState<Preset | null>(null)
   const [aberto, definirAberto] = useState<Aberto | null>(null)
   const [estudo, definirEstudo] = useState(false)
+  // atalho do Explorar: o Teste-se já abre num grupo (manguito, plexo braquial...)
+  const [temaEstudo, definirTemaEstudo] = useState<string | null>(null)
   // do Z-Anatomy: áreas de origem e inserção, hierarquia (sistema › parte) e nomes da TA2
   const [idxAreas, definirIdxAreas] = useState<IndiceAreas | null>(null)
   const [arvore, definirArvore] = useState<Arvore | null>(null)
@@ -215,12 +220,18 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       const ficha = raiz?.querySelector<HTMLElement>('.atlas__ficha')
       const cartao = raiz?.querySelector<HTMLElement>('.at-rapido, .at-estudo, .at-nav')
       const direita = larga && ficha ? ficha.offsetWidth * 0.55 : 0
-      const inferior = !larga && cartao ? Math.min(cartao.offsetHeight, (raiz?.clientHeight ?? 0) * 0.46) * 0.85 : 0
+      // o Teste-se fica embaixo, no meio, também no computador: o alvo aparece acima dele
+      const conta = cartao && (!larga || cartao.classList.contains('at-estudo'))
+      const inferior = conta ? Math.min(cartao.offsetHeight, (raiz?.clientHeight ?? 0) * 0.46) * 0.85 : 0
       m.definirMargens(direita, inferior)
     }
     medir()
     const t = setTimeout(medir, 260) // depois da transição de entrada do cartão e do painel
-    return () => clearTimeout(t)
+    // o painel do Teste-se muda de altura (escolha do grupo, pergunta, resposta)
+    const painel = raiz?.querySelector<HTMLElement>('.at-estudo')
+    const obs = painel && typeof ResizeObserver !== 'undefined' ? new ResizeObserver(medir) : null
+    if (painel) obs?.observe(painel)
+    return () => { clearTimeout(t); obs?.disconnect() }
   }, [estrutura?.id, larga, detalhes, questoes, estudo, aberto])
 
   // ---------- camadas e plano ----------
@@ -337,7 +348,27 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     else { definirAberto(null); definirPreset(null); m.isolar([selecao.id]); definirIsolado(true); m.focar([selecao.id], selecao.faixa) }
   }
   const ocultarSelecao = () => { if (selecao) motorRef.current?.ocultar(selecao.id) }
-  const restaurar = () => { const m = motorRef.current; if (!m) return; soltarIsolamento(); m.mostrarTodas(); m.definirCorte(null); definirCorteUI(null) }
+  /**
+   * Voltar ao início (Tales, 11/11/2026): o atlas como abriu, no modo atual. Sai do Teste-se, solta o isolamento e a
+   * visualização pronta, mostra o que foi escondido, tira o corte, a seleção e o recorte de região e enquadra de frente.
+   * As camadas ligadas ficam como estão (são escolha da pessoa, e ligar de novo custa download).
+   */
+  const voltarAoInicio = () => {
+    const m = motorRef.current
+    if (!m) return
+    definirEstudo(false)
+    soltarIsolamento()
+    m.mostrarTodas()
+    m.definirCorte(null); definirCorteUI(null)
+    m.selecionar(null)
+    definirAtivas(new Set()); definirPontosOsso(false)
+    definirRegiaoId(null); definirLado('ambos'); m.definirRegiao(null)
+    definirPersonalizar(false)
+    if (!larga) definirExplorar(false)
+    m.enquadrarTudo('anterior')
+    navegar(`/atlas${modo === 'corpo' ? '?m=corpo' : ''}`, true)
+  }
+  const foraDoInicio = !!(selecao || isolado || preset || aberto || corte || regiaoId || estudo || motor?.quantasOcultas)
   const alternarFavorito = () => { if (!selecao) return; definirPref((p) => ({ ...p, favoritos: p.favoritos.includes(selecao.id) ? p.favoritos.filter((f) => f !== selecao.id) : [selecao.id, ...p.favoritos] })) }
 
   const irPara = (e: Estrutura) => {
@@ -439,6 +470,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       else if (ev.key === 'h' || ev.key === 'H') ocultarSelecao()
       else if (ev.key === 't' || ev.key === 'T') iniciarEstudo()
       else if (ev.key === '/') { ev.preventDefault(); definirExplorar(true); setTimeout(() => document.querySelector<HTMLInputElement>('.at-busca input')?.focus(), 30) }
+      else if (ev.key === '0') voltarAoInicio()
       else if (['1', '2', '3', '4', '5', '6'].includes(ev.key)) m.vista((['anterior', 'posterior', 'direita', 'esquerda', 'superior', 'inferior'] as Vista[])[Number(ev.key) - 1])
     }
     window.addEventListener('keydown', tecla)
@@ -552,14 +584,33 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   }
 
   // ---------- Teste-se ----------
-  const iniciarEstudo = () => {
+  const iniciarEstudo = (tema: string | null = null) => {
     const m = motorRef.current
     if (!m || !catalogo) return
     m.selecionar(null)
     soltarIsolamento()
     definirPersonalizar(false)
     definirExplorar(false)
-    definirEstudo(true)
+    definirTemaEstudo(tema)
+    // de um grupo para outro: o Teste-se remonta já no grupo novo
+    if (estudo) { definirEstudo(false); setTimeout(() => definirEstudo(true), 0) } else definirEstudo(true)
+  }
+  const gruposDoTema = (t: TemaEstudo, lista: Estrutura[]) => (t.grupos.length ? t.grupos : [...new Set(lista.map(grupoDe))])
+  /** cadeado no tema: camada que esta pessoa não pode ligar (os sistemas do Corpo inteiro são da assinatura) */
+  const temaFechado = (t: TemaEstudo) => (t.grupos.length ? t.grupos.some((g) => !ligados.has(g) && !podeLigar(g)) : nivel !== 'assinante')
+  /** liga as camadas do grupo e tira o recorte de região; false quando o grupo pede conta ou assinatura */
+  const prepararTema = async (t: TemaEstudo, lista: Estrutura[]) => {
+    const m = motorRef.current
+    if (!m) return false
+    const gs = gruposDoTema(t, lista)
+    const travado = gs.find((g) => !ligados.has(g) && !podeLigar(g))
+    if (travado) { definirConvite(nivel === 'visitante' ? { tipo: 'conta' } : { tipo: 'assinante', grupo: travado }); return false }
+    // um recorte de região esconderia o grupo: o teste usa o corpo todo
+    if (regiaoId) { definirRegiaoId(null); m.definirRegiao(null) }
+    await Promise.all(gs.filter((g) => !ligados.has(g)).map((g) => mudarGrupo(g, true)))
+    // nervo, vaso, ligamento ou osso: o músculo translúcido tamparia o alvo; o osso fica como referência
+    if (t.grupos.length && !t.grupos.includes('musculo') && ligados.has('musculo')) void mudarGrupo('musculo', false)
+    return true
   }
   const gruposEstudo = useMemo(() => new Set([...ligados].filter((g) => modo === 'corpo' || !SO_CORPO.has(g))), [ligados, modo])
 
@@ -640,7 +691,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
           <i className="at-modo__marca" aria-hidden="true" />
         </div>
         <div className="atlas__acoes-topo">
-          <button type="button" className={`at-chip at-chip--estudo${estudo ? ' at-chip--ativo' : ''}`} onClick={() => (estudo ? definirEstudo(false) : iniciarEstudo())} aria-pressed={estudo} title="Teste-se (T)"><Icone nome="alvo" tamanho={17} /><span>Teste-se</span></button>
+          <button type="button" className={`at-chip at-chip--estudo${estudo ? ' at-chip--ativo' : ''}`} onClick={() => (estudo ? definirEstudo(false) : iniciarEstudo())} aria-pressed={estudo} title="Teste-se: treine os nomes por grupo (T)"><Icone nome="alvo" tamanho={17} /><span>Teste-se</span></button>
           {larga && <button type="button" className={`at-botao-icone at-ajuda${guia || !pref.dicasVistas ? ' at-botao-icone--ativo' : ''}`} onClick={() => definirGuia((v) => !v)} aria-expanded={guia || !pref.dicasVistas} aria-label="Como usar" title="Como usar"><Icone nome="interrogacao" tamanho={18} /></button>}
           <button type="button" className={`at-botao-icone${personalizar ? ' at-botao-icone--ativo' : ''}`} onClick={() => { definirPersonalizar((v) => !v); if (guia || !pref.dicasVistas) { definirGuia(false); definirPref((p) => ({ ...p, dicasVistas: true })) } }} aria-label="Ferramentas e ajustes" title="Ferramentas e ajustes"><Icone nome="ajustes" tamanho={19} /></button>
           <button type="button" className="at-botao-icone" onClick={aoFechar} aria-label="Fechar o atlas" title="Fechar (volta à página anterior)"><Icone nome="fechar" tamanho={19} /></button>
@@ -651,7 +702,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         <PainelExplorar modo={modo} aoTrocarModo={trocarModo} busca={busca} aoBuscar={definirBusca} resultados={resultados} noOutroModo={noOutroModo}
           regioesAchadas={regioesAchadas} presetsAchados={presetsAchados} regiao={regiao} lado={lado} aoRegiao={escolherRegiao}
           preset={preset} temBanco={!!indice} aoPreset={aplicarPreset} sistemaAtivo={aberto?.sistema} aoSistema={abrirSistema}
-          fechado={fechado} assinante={nivel === 'assinante'} favoritos={pref.favoritos} recentes={pref.recentes} catalogo={catalogo} aoIr={irPara} />
+          fechado={fechado} assinante={nivel === 'assinante'} aoEstudar={iniciarEstudo} temaFechado={temaFechado} favoritos={pref.favoritos} recentes={pref.recentes} catalogo={catalogo} aoIr={irPara} />
       )}
 
       {/* ferramentas e ajustes */}
@@ -659,7 +710,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         <aside className="atlas__personalizar" aria-label="Ferramentas e ajustes">
           <h2 className="at-titulo-secao"><Icone nome="ajustes" tamanho={14} /> Ferramentas</h2>
           <div className="at-ferramentas">
-            <button type="button" onClick={iniciarEstudo}><Icone nome="alvo" tamanho={18} /><span>Teste-se<small>Que estrutura é esta?</small></span></button>
+            <button type="button" onClick={() => iniciarEstudo()}><Icone nome="alvo" tamanho={18} /><span>Teste-se<small>Treine os nomes por grupo</small></span></button>
             <button type="button" onClick={salvarImagem}><Icone nome="imagem" tamanho={18} /><span>Salvar imagem<small>PNG da vista atual</small></span></button>
             <button type="button" onClick={copiarLink}><Icone nome="link" tamanho={18} /><span>Copiar link<small>Abre nesta mesma vista</small></span></button>
             <button type="button" onClick={() => { definirPersonalizar(false); definirGuia(true) }}><Icone nome="interrogacao" tamanho={18} /><span>Como usar<small>Mouse, dedos e atalhos</small></span></button>
@@ -684,8 +735,8 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
             <button type="button" className="at-link" onClick={() => mudarCorte({ ...corte, inverter: !corte.inverter })}><Icone nome="reiniciar" tamanho={15} /> Ver o outro lado do corte</button>
             <p className="at-nota">O corte é geométrico e educativo: não substitui tomografia nem ressonância.</p>
           </>}
-          <button type="button" className="botao" onClick={restaurar}><Icone nome="reiniciar" tamanho={16} /> Restaurar a visualização{motor.quantasOcultas ? ` (${motor.quantasOcultas} ocultas)` : ''}</button>
-          <p className="at-nota">Atalhos: / busca · T Teste-se · F foca · I isola · H esconde · 1 a 6 trocam a vista · Esc volta. Clicar de novo no mesmo ponto pega a estrutura de baixo.</p>
+          <button type="button" className="botao" onClick={voltarAoInicio}><Icone nome="casa" tamanho={16} /> Voltar ao início{motor.quantasOcultas ? ` (mostra ${motor.quantasOcultas} ocultas)` : ''}</button>
+          <p className="at-nota">Atalhos: 0 volta ao início · / busca · T Teste-se · F foca · I isola · H esconde · 1 a 6 trocam a vista · Esc volta. Clicar de novo no mesmo ponto pega a estrutura de baixo.</p>
           <a className="at-nota at-nota--link" href={`${import.meta.env.BASE_URL}atlas3d/v1/LICENCAS.md`} target="_blank" rel="noreferrer">Modelos: BodyParts3D (DBCLS, CC BY-SA 2.1 JP), Z-Anatomy (CC BY-SA 4.0) e Human Reference Atlas (HuBMAP, CC BY 4.0)</a>
         </aside>
       )}
@@ -697,7 +748,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         <button type="button" onClick={() => motor?.vista('direita')} title="Lateral direita (3)">D</button>
         <button type="button" onClick={() => motor?.vista('esquerda')} title="Lateral esquerda (4)">E</button>
         <button type="button" onClick={() => motor?.vista('superior')} title="Superior (5)">Sup</button>
-        <button type="button" onClick={() => motor?.enquadrarTudo()} aria-label="Enquadrar" title="Enquadrar"><Icone nome="alvo" tamanho={17} /></button>
+        <button type="button" className={`at-inicio${foraDoInicio ? ' at-inicio--ativo' : ''}`} onClick={voltarAoInicio} title="Voltar ao início: tira seleção, isolamento, corte e região (tecla 0)">
+          <Icone nome="casa" tamanho={16} /><span>Início</span>
+        </button>
       </nav>
 
       {/* camadas do modo */}
@@ -755,8 +808,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
 
       {/* Teste-se */}
       {estudo && motor && catalogo && (
-        <ModoEstudo motor={motor} estruturas={catalogo.estruturas} grupos={gruposEstudo} aoFechar={() => definirEstudo(false)}
-          aoVerFicha={(e) => { definirEstudo(false); setTimeout(() => { motor.selecionar({ id: e.id }); if (larga) definirDetalhes(true) }, 0) }} />
+        <Suspense fallback={null}><ModoEstudo motor={motor} estruturas={catalogo.estruturas} grupos={gruposEstudo} modo={modo} arvore={idxArvore} temaInicial={temaEstudo}
+          prepararTema={prepararTema} fechado={temaFechado} aoFechar={() => definirEstudo(false)}
+          aoVerFicha={(e) => { definirEstudo(false); setTimeout(() => { motor.selecionar({ id: e.id }); if (larga) definirDetalhes(true) }, 0) }} /></Suspense>
       )}
 
       {/* seleção: cartão compacto; detalhes no painel lateral (computador) ou num modal (celular) */}
