@@ -263,7 +263,7 @@ Na radioulnar distal, os **ligamentos radioulnares dorsal e palmar** são os **e
 Como medir o arco radial: uma linha da tuberosidade bicipital ao ponto mais ulnar da superfície articular distal do rádio (Y), a distância da tuberosidade até o ponto de curvatura máxima (X) e a altura do arco nesse ponto (a).
 !fim
 
-!questoes treino=trauma-1453
+!questoes relacionadas=mao-0071 treino=trauma-1453
 conceito: O arco radial máximo fica a 60% do comprimento entre a tuberosidade bicipital e o rádio distal, com 15,3 mm de altura; restaurá-lo devolve a rotação.
 !fim
 

@@ -186,7 +186,7 @@ BONE mostrou em 1989 menos complicações pulmonares com a fixação **nas prime
 
 **Trauma de crânio.** A fixação precoce pode dar hipotensão (oito vezes mais com cirurgia nas primeiras 2 horas numa série; 70% de queda transitória da pressão cerebral durante a fresagem em outra), mas nenhum estudo mostrou piora neurológica clínica, e o atraso aumenta as complicações pulmonares (45 vezes numa série). A decisão é em equipe.
 
-!questoes central=conceitos-basicos-0137 treino=trauma-1665
+!questoes central=conceitos-basicos-0137 relacionadas=trauma-1187 treino=trauma-1665
 conceito: Fixador provisório com pinos laterais, dois de cada lado e longe da zona de lesão; conversão para haste em menos de 2 semanas; trajeto infectado pede 10 dias sem pinos; o pino anterior aumenta a ossificação heterotópica e a rigidez.
 como: Uma prova da SBOT-SP perguntou em que posição o pino de SCHANZ do fixador do fêmur aumenta a ossificação heterotópica (anterior, contra anteromedial, anterolateral e lateral).
 armadilha: Pino lateral como o de maior ossificação: ele atravessa a banda iliotibial e também prende, mas o capítulo liga a ossificação ao pino anterior, pelo quadríceps.
