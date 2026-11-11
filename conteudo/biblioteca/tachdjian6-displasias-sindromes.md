@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-displasias-sindromes
-versao: 1
+versao: 2
 titulo: Displasias esqueléticas e síndromes
 especialidade: pediatria
 acesso: gratis
@@ -52,7 +52,7 @@ A classificação dinâmica de RUBIN (Box 36.1) é útil porque explica o fenót
 
 ## O padrão de herança que a banca cobra
 
-A pergunta do ENARE 2024 pediu, numa lista, a única doença **autossômica recessiva**. O raciocínio é por exclusão com o texto: a **acondroplasia** é autossômica **dominante** com penetrância completa (p. 1751); a **neurofibromatose tipo 1** é autossômica **dominante** (p. 1871); a **SED congênita** é transmitida de forma **dominante**, embora a maioria dos casos seja esporádica (p. 1772); e a síndrome de **MORQUIO** é **autossômica recessiva**, como quase todas as deficiências enzimáticas lisossomais (p. 1831). A osteogênese imperfeita aparece na Tabela 36.1 pelos defeitos de colágeno tipo I, com alelos nulos e efeito dominante negativo.
+A pergunta do ENARE 2024 pediu, numa lista, a única doença **autossômica recessiva**. O raciocínio é por exclusão com o texto: a **acondroplasia** é autossômica **dominante** com penetrância completa (p. 1751); a **neurofibromatose tipo 1** é autossômica **dominante** (p. 1871); a **SED congênita** é transmitida de forma **dominante**, embora a maioria dos casos seja esporádica (p. 1772); e a síndrome de **MORQUIO** é **autossômica recessiva**, como quase todas as deficiências enzimáticas lisossomais (p. 1831). A osteogênese imperfeita aparece na Tabela 36.1 pelos defeitos de colágeno tipo I, com alelos nulos e efeito dominante negativo. A classificação original de SILLENCE dava os tipos I e IV como autossômicos dominantes e os tipos II e III como recessivos, mas o estudo molecular do colágeno tipo I mostrou que a **transmissão autossômica recessiva verdadeira é rara** na osteogênese imperfeita (Tachdjian, cap. 38, p. 1947); por isso ela não serve de resposta para a recessiva da lista.
 
 !tabela Padrão de herança das doenças do tema (Tachdjian, cap. 35 a 37)
 | Doença | Herança | Detalhe que cai |
@@ -62,9 +62,12 @@ A pergunta do ENARE 2024 pediu, numa lista, a única doença **autossômica rece
 | SED congênita | AD, maioria esporádica | COL2A1, cromossomo 12 |
 | SED tarda | AR ou ligada ao X | SEDL (sedlina), só meninos na forma ligada ao X |
 | MED | AD (forma AR rara) | COMP, colágeno IX, matrilina-3 |
+| Osteogênese imperfeita | AD na maioria; AR verdadeira rara | colágeno tipo I; SILLENCE original: I e IV AD, II e III AR (cap. 38, p. 1947) |
 | Diastrófica | AR | DTDST, cromossomo 5; Finlândia |
 | Metafisária de SCHMID | AD | colágeno X, cromossomo 6 |
 | Metafisária de McKUSICK | AR | RMRP, cromossomo 9; Finlândia e amish |
+| Metafisária de KOZLOWSKI | AD | rara; platispondilia leve (Lovell and Winter p. 204) |
+| LÉRI-WEILL (discondrosteose) | AD, penetrância de cerca de 50% | SHOX, cromossomo X (Lovell and Winter p. 205 e 206) |
 | HURLER, SANFILIPPO, MORQUIO, MAROTEAUX-LAMY | AR | deficiências enzimáticas |
 | HUNTER | ligada ao X recessiva | quase só meninos |
 | MARFAN | AD | FBN1, cromossomo 15 |
@@ -190,6 +193,8 @@ A displasia epifisária múltipla (MED) é definida por **atraso no aparecimento
 | Joelho | patela em duas camadas (característica); côndilos planos |
 !fim
 
+A patela em duas camadas tem uma divergência de detalhe. O Tachdjian (p. 1778) a chama de achado peculiar e, quando presente, característico da MED, sem restringir a forma genética. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 7, p. 201), descreve a patela de dupla camada, uma dupla densidade completa ou parcial no perfil, nos pacientes com MED por mutação do **DTDST** (a forma recessiva), e diz que ela é rara em outras condições; pode doer pelo movimento de uma camada sobre a outra e ser tratada com excisão ou fusão (p. 202). Para a prova, patela dupla continua apontando para MED.
+
 O diagnóstico diferencial que cai é **PERTHES bilateral**. Na MED o acometimento é **simétrico e sincrônico**; no PERTHES um quadril adoece antes do outro, cada um em uma fase, e há **cistos metafisários**, ausentes na MED. Na dúvida, radiografar ombros e joelhos. Como a MED pode ter necrose avascular verdadeira, cintilografia e RM não separam as duas (p. 1778). A SED se distingue pela coluna: na MED não há alteração vertebral grave. O hipotireoidismo também imita a MED e se resolve com dosagem de tireoide (p. 1779 aprox.).
 
 O tratamento na infância é manter a mobilidade e controlar o peso. **Não há indicação de órtese ou cirurgia de contenção**, apesar da semelhança com PERTHES. Com **hinge abduction** na artrografia, a **osteotomia valgizante** pode ajudar; a **varizante é contraindicada** pela coxa vara prévia (p. 1779 e 1780). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 34), resume que MED e SED acometem a epífise e causam artrose incapacitante precoce, e lembra a coxa vara comum na SED (p. 1226.e1).
@@ -243,17 +248,24 @@ alerta: O Tachdjian usa o termo "hitchhiker's thumb" para a displasia diastrófi
 
 Nas condrodisplasias metafisárias falha a **mineralização da zona de calcificação provisória**: as fises ficam largas e as metáfises nodosas, com condrócitos em ninhos em vez de colunas. Como a **epífise é poupada**, a **artrose é rara**, ao contrário da MED e da SED (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1792). O quadro radiográfico lembra o raquitismo, e a química sérica normal separa os dois.
 
-!tabela Tipos de condrodisplasia metafisária (Tachdjian, cap. 36, p. 1792 a 1799)
+!tabela Tipos de condrodisplasia metafisária (Tachdjian, cap. 36, p. 1792 a 1799; Lovell and Winter, 7ª ed., cap. 7, p. 203 e 204)
 | Tipo | Herança e gene | Clínica | Detalhe |
 |---|---|---|---|
 | JANSEN | receptor PTH/PTHrP, cromossomo 3 | a mais grave e mais rara; evidente ao nascer, exoftalmia | hipercalcemia com PTH normal ou baixo |
 | SCHMID | AD, colágeno X (COL10A1), cromossomo 6 | a mais comum; surge aos 3 a 5 anos com a carga; geno varo, coxa vara, marcha anserina; face normal | confundida com acondroplasia e raquitismo; química normal |
+| KOZLOWSKI (espondilometafisária) | AD, rara | baixa estatura com cifose progressiva nos primeiros anos; limitação de movimento, TRENDELENBURG, artrose precoce | platispondilia leve, ao contrário das outras três; metáfise mais visível no fêmur proximal; idade óssea do carpo e do tarso atrasada (Lovell and Winter p. 204) |
 | McKUSICK (cartilagem-cabelo) | AR, gene RMRP, cromossomo 9 | mais baixa que SCHMID (105 a 157 cm); dedos curtos e hiperextensíveis; cotovelo sem extensão completa; geno varo leve | cabelo fino, esparso, curto e quebradiço; anemia; imunodeficiência; linfoma |
 !fim
 
 ## A paciente finlandesa de cabelo fino
 
 A hipoplasia cartilagem-cabelo (tipo McKUSICK) é **autossômica recessiva** e particularmente prevalente na **Finlândia** e entre os **amish** (p. 1797 aprox.). O traço que a distingue de todas as outras é o **cabelo fino, esparso, curto e quebradiço**, que atinge também sobrancelhas e cílios. Diferente das demais condrodisplasias metafisárias, há **anemia** frequente e **imunodeficiência** por imunoglobulinas baixas; a mortalidade aumentada se deve ao defeito imune, e há risco maior de **linfoma não Hodgkin**. Os dedos são curtos e **hiperextensíveis**, a **extensão do cotovelo pode ser limitada**, o **geno varo costuma ser leve** e raramente precisa de tratamento, e a fíbula longa causa varo do retropé com antepé valgo. Escoliose ocorre em até um quarto; alguns têm hipoplasia do odontoide (p. 1798 e 1799 aprox.). O tratamento ortopédico mira tornozelo e pé: osteotomia de deslizamento do calcâneo e supramaleolar.
+
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 7, p. 203), explica a varicela do caso: o defeito é da **imunidade de linfócitos T**, com mais infecções, **sobretudo por varicela-zóster**; a anemia é frequente na criança pequena e diminui na adolescência, há risco alto de linfoma, sarcoma e câncer de pele, e a expectativa de vida é menor. O livro situa a doença sobretudo entre os amish de Lancaster, na Pensilvânia. Aqui os livros divergem no mecanismo: o Tachdjian atribui a imunodeficiência à **diminuição das imunoglobulinas** (p. 1798), e o Lovell and Winter, a uma alteração da **imunidade T** (p. 203). Na prova, basta ligar cabelo fino, Finlândia ou amish e infecção (varicela) à McKUSICK. O mesmo livro (p. 204) descreve a quarta forma metafisária, a de **KOZLOWSKI**, autossômica dominante e rara, que se separa das outras pela coluna: cifose progressiva e **platispondilia leve**, com o fêmur proximal como melhor lugar para ver a displasia metafisária.
+
+## LÉRI-WEILL: o mesomélico do punho de MADELUNG
+
+A **discondrosteose** de LÉRI e WEILL (1929) é o protótipo da baixa estatura **mesomélica** leve: o segmento médio dos membros é o mais curto. É **autossômica dominante** com penetrância de cerca de 50%, mais grave nas mulheres, e decorre de mutação ou deleção do **SHOX** no cromossomo X, o mesmo gene da baixa estatura da TURNER (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 7, p. 205 e 206). O sinal que cai é a **deformidade de MADELUNG**, em geral bilateral: falta de crescimento da porção volar e ulnar do rádio distal, com dor no punho na adolescência e limitação da pronação e da supinação. Nas pernas o encurtamento é tibiofibular, com geno varo leve ou tornozelo valgo, e a altura adulta vai de 135 a 170 cm. O diferencial do MADELUNG inclui TURNER, trauma, OLLIER e exostoses múltiplas; as osteotomias do antebraço corrigem a deformidade quando necessário (p. 212).
 
 Com esses dados, a moça de 22 anos, filha de finlandeses, baixa, de **cabelos finos e claros**, geno varo discreto, frouxidão, discreta contratura dos cotovelos e história de **varicela** (marcador da imunodeficiência) tem o retrato do tipo McKUSICK.
 
@@ -307,7 +319,7 @@ alerta: O Tachdjian diz que as mais comuns são MORQUIO e HURLER (p. 1819); o Ca
 
 ## Enzima, urina e herança
 
-A síndrome de MORQUIO (MPS IV) é **autossômica recessiva**. No tipo **A**, falta a **N-acetilgalactosamina-6-sulfato sulfatase**, enzima que degrada **queratan sulfato** e condroitina-6-sulfato; o gene está no cromossomo 16 e a incidência é de 1 em 76.000 nascidos vivos (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1831). O tipo **B** é causado por deficiência de **beta-galactosidase**, manifesta-se mais tarde, também excreta queratan sulfato e também tem inteligência normal (p. 1831).
+A síndrome de MORQUIO (MPS IV) é **autossômica recessiva**. No tipo **A**, falta a **N-acetilgalactosamina-6-sulfato sulfatase**, enzima que degrada **queratan sulfato** e condroitina-6-sulfato; o gene está no cromossomo 16 e a incidência do tipo A é de 1 em 76.000 nascidos vivos (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1831); o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 7, p. 255), dá para a MORQUIO uma incidência de 3 por 1.000.000 da população, número bem menor e medido em outra base. O tipo **B** é causado por deficiência de **beta-galactosidase**, manifesta-se mais tarde, também excreta queratan sulfato e também tem inteligência normal (p. 1831).
 
 O diagnóstico é feito com **teste positivo de queratan sulfato urinário**, que tem pico entre 1 e 5 anos e cai com a idade; formas leves podem não excretar, o que dificulta a separação da SED (p. 1831). Na Tabela 36.5, a MORQUIO é a única MPS com queratan sulfato.
 
@@ -350,7 +362,7 @@ alerta: `pediatria-0765` e `pediatria-0808` estão sem gabarito oficial; o Tachd
 
 A trissomia do 21 é a trissomia mais frequente (1 em 600 a 800 nascidos vivos); 95% têm trissomia livre, 4% translocação e 1% mosaico. Hipotonia, **hiperfrouxidão**, prega simiana e clinodactilia do quinto dedo são os traços ortopédicos; a **disfunção da tireoide é comum** e a cardiopatia é a principal causa de morte precoce (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1861 a 1863).
 
-**Coluna cervical.** A hipermobilidade **atlantoaxial** é a principal preocupação ortopédica. Numa série de 404 pacientes, estava presente em **14,6%** (13,1% assintomáticos, 1,5% com sintomas); outros relatos variam de **9% a 31%**. Considera-se hipermobilidade um **intervalo atlanto-dental de 5 mm ou mais**, e a causa é a **frouxidão do ligamento transverso**, às vezes com odontoide displásico (cerca de 7%) (p. 1863 e 1864). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 39), dá **10% a 20%**, sintomas neurológicos em 1% a 2,6% e progressão em só 1,6%, e lembra que a Academia Americana de Pediatria não recomenda mais a triagem radiográfica de rotina (p. 1515 aprox.). A única indicação absoluta de artrodese C1-C2 é o **déficit neurológico**, e as complicações da artrodese chegam a 73% a 100% (p. 1867).
+**Coluna cervical.** A hipermobilidade **atlantoaxial** é a principal preocupação ortopédica. Numa série de 404 pacientes, estava presente em **14,6%** (13,1% assintomáticos, 1,5% com sintomas); outros relatos variam de **9% a 31%**. Considera-se hipermobilidade um **intervalo atlanto-dental de 5 mm ou mais**, e a causa é a **frouxidão do ligamento transverso**, às vezes com odontoide displásico (cerca de 7%) (p. 1863 e 1864). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 39), dá **10% a 20%**, sintomas neurológicos em 1% a 2,6% e progressão em só 1,6%, e lembra que a Academia Americana de Pediatria não recomenda mais a triagem radiográfica de rotina (p. 1515 aprox.). A hipermobilidade **occipitoatlantal** é mais difícil de definir: a incidência relatada na DOWN vai de **8,5% a 71%**, conforme a técnica de medida, como a razão de POWERS (p. 1865). A única indicação absoluta de artrodese C1-C2 é o **déficit neurológico**, e as complicações da artrodese chegam a 73% a 100% (p. 1867).
 
 !tabela Conduta pelo intervalo atlanto-dental na DOWN (Tachdjian, cap. 37, Box 37.2, p. 1867)
 | Achado | Conduta |
@@ -393,11 +405,11 @@ As manchas café com leite estão em mais de 90% e têm **bordas lisas**, difere
 
 O **arqueamento anterolateral da tíbia** que evolui para fratura e **pseudartrose congênita da tíbia** está ligado à NF1 em **até 55%** no Tachdjian, e a deformidade pode aparecer antes de qualquer mancha (p. 1874). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31), dá incidência de 1 em 250.000 e associação de **50% a 90%** com estigmas de NF (p. 1073 aprox.). Por isso, diante de um recém-nascido com tíbias arqueadas para a frente e para fora, a associação esperada é **NF1 com pseudartrose congênita da tíbia**, não NF2.
 
-!questoes central=pediatria-0062 relacionadas=pediatria-0289,pediatria-0330
+!questoes central=pediatria-0062 relacionadas=pediatria-0484,pediatria-0289,pediatria-0330
 conceito: A NF1 é a forma periférica (cromossomo 17) e concentra as manifestações ortopédicas: escoliose, arqueamento anterolateral e pseudartrose congênita da tíbia.
 como: O TARO 2016 perguntou duas vezes se a NF1 é central ou periférica e se tem manifestações ortopédicas frequentes; o CET-PR e o TEOT 2025 mostraram tíbias arqueadas e pediram a associação.
 armadilha: Chamar a NF1 de central ou ligar a pseudartrose da tíbia à NF2.
-alerta: O Tachdjian diz que as manifestações ortopédicas são quase sempre da NF1, mas que menos de 10% dos pacientes com NF1 precisam de tratamento ortopédico (p. 1871); "frequentemente" no gabarito de `pediatria-0062` e `pediatria-0062` deve ser lido em comparação com a NF2.
+alerta: O Tachdjian diz que as manifestações ortopédicas são quase sempre da NF1, mas que menos de 10% dos pacientes com NF1 precisam de tratamento ortopédico (p. 1871); "frequentemente" no gabarito de `pediatria-0062` e `pediatria-0484` deve ser lido em comparação com a NF2.
 !fim
 
 # Manchas, crescimento excessivo e malformações vasculares {radar=confirmado}
@@ -452,7 +464,7 @@ armadilha: Marcar LARSEN pela cifose cervical; LARSEN se reconhece pelas luxaç�
 
 ## DUCHENNE
 
-A **DUCHENNE** é a distrofia mais comum, 1 em 3.500 meninos, **ligada ao X recessiva** (meninas só com TURNER ou translocação), com gene em **Xp21** que codifica a **distrofina**; um terço é mutação nova (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1706 e 1709). Começa entre **3 e 6 anos**, com marcha na ponta dos pés, quedas e dificuldade nas escadas. A fraqueza é **proximal**, e os **extensores do quadril são os primeiros**; os glúteos fracos dão o TRENDELENBURG e a marcha anserina. O **equino** costuma ser o primeiro sinal, com panturrilha **pseudo-hipertrófica** de consistência de borracha e incapacidade de dorsifletir totalmente o tornozelo; o menino hiperestende o joelho para travar a cápsula posterior e compensar o quadríceps fraco (p. 1709 a 1711). Sem corticoide, a marcha se perde entre 7 e 16 anos; a prednisona adia essa perda em 2 a 5 anos (p. 1712 aprox.). A CK sobe 20 a 200 vezes e cai no fim da doença (p. 1708).
+A **DUCHENNE** é a distrofia mais comum, 1 em 3.500 meninos, **ligada ao X recessiva** (meninas só com TURNER ou translocação), com gene em **Xp21** que codifica a **distrofina**; um terço é mutação nova (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1706 e 1709). Começa entre **3 e 6 anos**, com marcha na ponta dos pés, quedas e dificuldade nas escadas. A fraqueza é **proximal**, e os **extensores do quadril são os primeiros**; os glúteos fracos dão o TRENDELENBURG e a marcha anserina. O **equino** costuma ser o primeiro sinal, com panturrilha **pseudo-hipertrófica** de consistência de borracha e incapacidade de dorsifletir totalmente o tornozelo; o menino hiperestende o joelho para travar a cápsula posterior e compensar o quadríceps fraco (p. 1709 a 1711). Sem corticoide, a marcha se perde entre 7 e 16 anos; a prednisona adia essa perda em 2 a 5 anos (p. 1712 aprox.). O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 16, p. 590 e 591), diz o porquê: o primeiro grupo acometido são os **extensores do quadril**, sobretudo o glúteo máximo, e a causa principal da perda da marcha, em geral por volta dos 10 anos sem tratamento, é a perda de força dos **extensores do quadril e dos dorsiflexores do tornozelo**; esses dois grupos servem para prever quando a marcha vai acabar. A CK sobe 20 a 200 vezes e cai no fim da doença (p. 1708).
 
 !tabela Sinais com epônimo nas distrofias (Tachdjian, cap. 35, p. 1706 a 1711; Campbell, cap. 37, p. 1329 aprox.)
 | Sinal | Como se faz | O que mostra |
@@ -467,7 +479,7 @@ A **DUCHENNE** é a distrofia mais comum, 1 em 3.500 meninos, **ligada ao X rece
 conceito: Na DUCHENNE a fraqueza começa nos extensores do quadril, e o equino tira a dorsiflexão do tornozelo; GOWERS mostra a fraqueza proximal do membro inferior e MERYON a da cintura escapular.
 como: O TARO 2019 perguntou a perda de força que leva a criança a parar de andar; o TARO 2017, o sinal da fraqueza de quadríceps e glúteo máximo; uma prova de Ortopedia mostrou a imagem do sinal.
 armadilha: Escolher flexão do quadril ou flexão plantar; o tríceps sural é pseudo-hipertrófico e encurta, quem falta é a extensão do quadril e a dorsiflexão.
-alerta: O Tachdjian atribui a perda da dorsiflexão ao equino (contratura do tríceps sural), não descreve fraqueza primária dos dorsiflexores (p. 1709 e 1711). Em `pediatria-0445`, o gabarito oficial (C, MERYON) corresponde à manobra de erguer a criança pelo tórax; se a imagem mostrar a criança se levantando do chão, o sinal descrito no livro é o de GOWERS.
+alerta: Em `pediatria-0445`, o gabarito oficial (C, MERYON) corresponde à manobra de erguer a criança pelo tórax; se a imagem mostrar a criança se levantando do chão, o sinal descrito no livro é o de GOWERS.
 !fim
 
 ## Facioescapuloumeral
