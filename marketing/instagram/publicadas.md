@@ -43,3 +43,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | pediatria-0525 | Fratura fisária do úmero distal no lactente, que imita luxação (TARO 2025) | posts/2026-11-01-grupo-cotovelo-lactente (feed) |
 | ombro-cotovelo-0454 | Lesão traumática do subescapular: não leva a mão às costas, reparo cirúrgico (TARO 2024) | posts/2026-11-01-grupo-cotovelo-lactente (stories) |
 | quadril-0649 | Piriforme, o mais alto dos rotadores laterais curtos, com a figura do Netter (Simulados, anatomia do quadril) | posts/2026-11-04-museu-piriforme (stories) |
+| trauma-0695 | Sanders IIIBC: dois traços, central e medial, na faceta posterior do calcâneo (banca omitida) | posts/2026-11-12-tela-trincada-sanders (feed e stories) |
