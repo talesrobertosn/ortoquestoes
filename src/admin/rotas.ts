@@ -49,7 +49,7 @@ export const AREAS: DefArea[] = [
   ] },
   { id: 'receita', rotulo: 'Financeiro', curto: 'Finanças', icone: 'receita', partes: [
     { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou, quanto entra por mês com quem assina hoje e quando cada plano renova.', antes: 'Ganhos receita previsão cenários' },
-    { id: 'metas', rotulo: 'Metas', pergunta: 'O cenário moderado como referência: progresso do mês, projeção, ritmo semanal e meta × real mês a mês.', antes: 'Metas objetivos planejamento cenário moderado projeção' },
+    { id: 'metas', rotulo: 'Metas', pergunta: 'O plano de 12 meses feito com os números reais: objetivos do mês, semana a semana, projeção e simulador.', antes: 'Metas objetivos planejamento cenário moderado projeção plano simulador' },
     { id: 'cobrancas', rotulo: 'Extrato', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, dia a dia.', antes: 'Pagamentos cobranças' },
     { id: 'pagamentos', rotulo: 'Avisos do Mercado Pago', pergunta: 'As mensagens automáticas que o Mercado Pago manda ao site. Só as que falharam pedem você.', antes: 'Avisos de pagamento processador' },
   ] },
@@ -69,6 +69,17 @@ export const AREAS: DefArea[] = [
     { id: 'exportar', rotulo: 'Exportar dados', pergunta: 'Levar os dados do painel para uma análise, com a privacidade escolhida.' },
     { id: 'supabase', rotulo: 'Uso do Supabase', pergunta: 'Quanto do plano o site já usa: banco, arquivos e usuários, perto ou longe do limite.', antes: 'Banco limite armazenamento' },
   ] },
+]
+
+/**
+ * A barra lateral em grupos (Tales, 11/11/2026: "organiza a barra lateral"): o que acontece agora, o negócio,
+ * o conteúdo e o contato com as pessoas, e os ajustes do sistema. As áreas e as partes continuam as mesmas.
+ */
+export const GRUPOS_NAV: Array<{ titulo: string; areas: Area[] }> = [
+  { titulo: 'Hoje', areas: ['comando', 'pessoas'] },
+  { titulo: 'Negócio', areas: ['crescimento', 'assinantes', 'receita'] },
+  { titulo: 'Conteúdo e contato', areas: ['estudo', 'comunicacao'] },
+  { titulo: 'Sistema', areas: ['configuracoes'] },
 ]
 
 /** Abas dentro de uma tela: a primeira é a padrão. O nome e a pergunta de cada aba ficam aqui. */

@@ -95,3 +95,10 @@ Pedido do Tales: "minuto a minuto só quando eu abrir a página; atualização s
 - Minuto a minuto só na ficha de uma pessoa, enquanto ela está aberta (`atividade_usuario_admin`, uma pessoa só).
 - No site dos alunos, o sinal de vida passou de 40 s para 1 minuto e continua só com a aba visível; trocar de página manda o sinal na hora.
 - A taxa do Pix escolhida no Financeiro vale para o Resumo, as Metas e a faixa de metas (`src/admin/modulos/taxaPix.ts`).
+
+## Barra lateral, Crescimento, Assinantes e a lista do Início no mesmo tema (11/11/2026)
+
+- **Barra lateral:** quatro grupos (Hoje, Negócio, Conteúdo e contato, Sistema), mostrador "ao vivo" com quantos estão online, item ativo em verdete com sombra em degrau (`GRUPOS_NAV` em `src/admin/rotas.ts`).
+- **Crescimento:** topo novo (`crescimentoHub.tsx`): placar de cadastros e assinantes novos em hoje, semana e mês contra o mesmo trecho anterior, quanto dos cadastros já assinou, totais desde o começo e torres por dia, semana ou mês com a meta do plano e as anotações na dica. A comparação hora a hora e o calendário de antes ficam numa seção que se abre. Os demais quadros ganharam o tema.
+- **Assinantes:** topo com quem tem acesso pago (por plano e meio), Pix × cartão × renovação desligada e quem vence nos próximos 30 dias, semana a semana, com o nome de cada pessoa.
+- **Início:** quadrado "Assinantes com acesso" por plano (e cortesias) dentro dos números de hoje; a lista de pessoas no mesmo tema do topo.

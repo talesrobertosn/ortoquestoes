@@ -28,15 +28,23 @@ export default async function roteiro(page, foto, nome) {
   await page.locator('#mt-futuro input[type=range]').nth(2).fill('1.5')
   assert.ok(await largura() <= 1, `Metas sem rolagem lateral (${nome})`)
 
-  await ir('crescimento', /Seu crescimento, com contexto/)
+  await ir('crescimento', /Quem chega, quem assina/)
+  assert.ok(await page.getByRole('table', { name: 'Cadastros e assinantes novos por período' }).isVisible(), 'placar do Crescimento')
+  await page.getByRole('group', { name: 'Período dos gráficos de crescimento' }).getByRole('button', { name: 'Mês', exact: true }).click()
   await page.locator('#cr-quando').scrollIntoViewIfNeeded()
   await page.waitForTimeout(600)
   await foto('crescimento', { fullPage: true })
   assert.ok(await page.getByRole('table', { name: 'Média por dia da semana' }).first().isVisible(), 'semana típica')
   assert.ok(await largura() <= 1, `Crescimento sem rolagem lateral (${nome})`)
 
+  await ir('assinaturas', /Quem paga, como paga/)
+  await foto('assinantes', { fullPage: true })
+  assert.ok(await page.getByText('Quem vence nos próximos 30 dias').isVisible(), 'vencimentos dos assinantes')
+  assert.ok(await largura() <= 1, `Assinantes sem rolagem lateral (${nome})`)
+
   await page.evaluate(() => { location.hash = '#/admin' }); await page.locator('.cc-placar').waitFor({ timeout: 20000 }); await page.waitForTimeout(600)
   await foto('inicio', { fullPage: true })
   assert.ok(await page.locator('.cc-placar').isVisible(), 'placar do Início')
+  assert.ok(await page.locator('.ag-acesso').isVisible(), 'assinantes com acesso no Início')
   assert.deepEqual(erros, [], 'sem erros na página')
 }

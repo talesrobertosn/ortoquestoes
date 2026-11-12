@@ -143,6 +143,7 @@ export default function Inicio() {
     }
     return {
       hoje, tipoDe, listas, totalAssinantes: assinantes.length, cortesias: assinantes.filter(u => u.plano_vigente === PLANO_CORTESIA).length,
+      planos: (['mensal', 'semestral', 'anual'] as const).map(pl => ({ pl, n: assinantes.filter(u => u.plano_vigente === pl).length })),
       conta: { assinante: online.filter(u => tipoDe(u) === 'assinante').length, lead: online.filter(u => tipoDe(u) === 'lead').length, gratis: online.filter(u => tipoDe(u) === 'gratis').length },
     }
   }, [p.usuarios, p.sinais, limite, quadro.estudaram])
@@ -203,6 +204,11 @@ export default function Inicio() {
             <Numero cor="claro" rotulo="Estudaram" valor={n('estudaram')} nota={`${inteiro(g.listas.estudaram.reduce((t, u) => t + (u.respondidas_hoje ?? 0), 0))} questões`} ativo={ativo('estudaram')} aoClicar={() => abrir('estudaram')} />
             <Numero cor="claro" rotulo="Cadastros" valor={n('cadastros')} nota={nm.cadastros7d !== null ? `${inteiro(nm.cadastros7d)} em 7 dias` : 'hoje'} ativo={ativo('cadastros')} aoClicar={() => abrir('cadastros')} />
             <Numero cor="dinheiro" rotulo="Recebido" valor={nm.valorPago.hoje} formato={reais} nota={nm.valorPago.hoje === null ? 'hoje' : `${inteiro(nm.pagaram.hoje ?? 0)} ${nm.pagaram.hoje === 1 ? 'pagamento' : 'pagamentos'}`} aoClicar={() => nav.ir('cobrancas')} />
+            <button type="button" className="ag-acesso" onClick={() => nav.ir('assinaturas')} aria-label={`${g.totalAssinantes} assinantes com acesso: ${g.planos.map(x => `${x.n} ${x.pl}`).join(', ')}${g.cortesias ? `, ${g.cortesias} cortesias` : ''}. Abrir Assinantes`}>
+              <span className="ag-acesso__topo"><i aria-hidden="true" />Assinantes com acesso<b>{inteiro(g.totalAssinantes)}</b></span>
+              <span className="ag-acesso__barra" aria-hidden="true">{g.planos.map(x => x.n > 0 && <i key={x.pl} className={`ag-plano-${x.pl}`} style={{ flexGrow: x.n }} />)}{g.cortesias > 0 && <i className="ag-plano-cortesia" style={{ flexGrow: g.cortesias }} />}</span>
+              <span className="ag-acesso__lista">{g.planos.map(x => <span key={x.pl}><i className={`ag-plano-${x.pl}`} aria-hidden="true" />{x.pl === 'mensal' ? 'Mensal' : x.pl === 'semestral' ? 'Semestral' : 'Anual'} <b>{x.n}</b></span>)}{g.cortesias > 0 && <span><i className="ag-plano-cortesia" aria-hidden="true" />Cortesia <b>{g.cortesias}</b></span>}<span className="ag-acesso__ir">ver assinantes ›</span></span>
+            </button>
           </div>
         </div>
       </div>}

@@ -1,17 +1,20 @@
 import { useMemo, useState } from 'react'
 import { contaDeTeste } from '../../componentes/admin/contasTeste'
 import { baixarCsv } from '../../componentes/admin/formatos'
-import { meioDe, precoDe, vigente } from '../../componentes/admin/receita'
+import { meioDe, precoDe, renovaSozinha, vigente, vigentesPorPessoa } from '../../componentes/admin/receita'
 import { motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura, type Tom } from '../../componentes/admin/rotulos'
 import { usarPainel, type LinhaAssinatura } from '../dados/painel'
 import { usarNav } from '../nav'
-import { defParte, type GrupoAssinatura } from '../rotas'
+import type { GrupoAssinatura } from '../rotas'
 import { chaveFalha } from '../dados/metricas'
 import { Icone } from '../ui/Icone'
 import { combina, data, haQuanto, iniciais, inteiro, normalizar, reais } from '../ui/formato'
-import { Busca, Cabeca, Carregando, Estado, FiltrosAtivos, Selo } from '../ui/kit'
+import { Busca, Carregando, Estado, FiltrosAtivos, Selo } from '../ui/kit'
 import { Tabela, type Coluna } from '../ui/tabela'
 import { RiscoAbandono } from './riscoAbandono'
+import { carteiraHoje } from '../dados/hub'
+import { Composicao } from '../ui/torres'
+import './hub.css'
 
 type Grupo = GrupoAssinatura
 type Recorte = 'tudo' | '7' | '30' | '90' | '365'
@@ -52,7 +55,6 @@ export default function Assinaturas() {
   const [recorte, definirRecorte] = useState<Recorte>('tudo')
   const [busca, definirBusca] = useState('')
   const linhas = p.assinaturas
-  const parte = defParte('assinaturas')
 
   const noRecorte = useMemo(() => (a: LinhaAssinatura) => (recorte === 'tudo' || Date.now() - new Date(inicioDe(a)).getTime() <= Number(recorte) * 86_400_000)
     && (plano === 'todos' || a.plano === plano) && (meio === 'todos' || meioDe(a) === meio), [recorte, plano, meio])
@@ -103,9 +105,14 @@ export default function Assinaturas() {
   ]
   const dica = GRUPOS.find(g => g[0] === grupo)![2]
 
-  return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Cartão renova sozinho; Pix é pago uma vez e termina no fim do período.`}
-      acoes={<button type="button" className="a3-botao a3-botao--contorno" onClick={exportar} disabled={!visiveis.length}><Icone nome="baixar" tamanho={15} />CSV deste recorte</button>} />
+  return <div className="a3-pilha a3-pilha--larga hb hb-assin">
+    <header className="hb-cabeca">
+      <div className="hb-cabeca__sobre"><b>Assinantes</b><span>uma pessoa por conta, sem teste</span></div>
+      <h1>Quem paga, como paga<br />e quando precisa pagar de novo.</h1>
+      <p>Cartão renova sozinho no fim do período. Pix é pago uma vez: a pessoa precisa pagar de novo quando o acesso acaba.</p>
+      <div className="hb-controles" style={{ marginTop: 14 }}><button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={exportar} disabled={!visiveis.length}><Icone nome="baixar" tamanho={15} />CSV deste recorte</button></div>
+    </header>
+    <PlacarAssinantes />
 
     <div className="a3-abas-grandes" role="tablist" aria-label="Situação das assinaturas">
       {GRUPOS.map(([g, rotulo]) => <button key={g} type="button" role="tab" aria-selected={grupo === g} className="a3-aba-grande" onClick={() => definirGrupo(g)}>
@@ -132,4 +139,49 @@ export default function Assinaturas() {
         vazio={<div style={{ padding: 20 }}><Estado icone="receita" titulo="Nenhuma assinatura neste recorte" texto={filtrosAtivos.length ? 'Tire um filtro para ver mais.' : undefined} /></div>} />
     </section>
   </div>
+}
+
+/**
+ * O topo de Assinantes (11/11/2026, Tales: "melhora a página de assinantes"): quantos têm acesso, por plano e por
+ * como pagam, e quem vence nos próximos 30 dias (o Pix precisa pagar de novo; o cartão renova sozinho), semana a
+ * semana, com o nome de cada pessoa para abrir a ficha.
+ */
+function PlacarAssinantes() {
+  const p = usarPainel()
+  const nav = usarNav()
+  const d = useMemo(() => {
+    if (!p.reais) return null
+    const agora = Date.now()
+    const carteira = carteiraHoje(p.reais, agora)
+    const vig = vigentesPorPessoa(p.reais, agora).filter(a => precoDe(a.plano) && a.fim_periodo)
+    const semanas = [0, 1, 2, 3].map(i => ({ de: agora + i * 7 * 86_400_000, ate: agora + (i + 1) * 7 * 86_400_000 }))
+    const vencem = semanas.map(s => vig.filter(a => { const f = new Date(a.fim_periodo!).getTime(); return f >= s.de && f < s.ate }).sort((a, b) => a.fim_periodo!.localeCompare(b.fim_periodo!)))
+    const pix = vig.filter(a => meioDe(a) === 'pix').length, renova = vig.filter(renovaSozinha).length
+    return { carteira, vencem, semanas, pix, renova, desligou: vig.length - pix - renova }
+  }, [p.reais])
+  if (!d) return null
+  const cor = { mensal: 'verde', semestral: 'azul', anual: 'ouro' } as const
+  const nomeSemana = (i: number) => i === 0 ? 'Próximos 7 dias' : `Daqui a ${i * 7 + 1}–${(i + 1) * 7} dias`
+  return <section className="hb-secao" aria-label="Resumo dos assinantes">
+    <div className="hb-placar hb-placar--assin">
+      <article className="hb-heroi">
+        <span className="hb-kicker">Com acesso pago agora</span>
+        <h2 className="hb-heroi__valor">{inteiro(d.carteira.total)}</h2>
+        <Composicao rotulo="Assinantes por plano" partes={d.carteira.linhas.map(l => ({ nome: l.nome, valor: l.total, cor: cor[l.plano], detalhe: `${l.pix} Pix · ${l.cartaoRenova} cartão${l.cartaoDesligou ? ` · ${l.cartaoDesligou} desligou` : ''}` }))} />
+      </article>
+      <dl className="hb-lado">
+        <div><dt>Pagam com Pix</dt><dd>{inteiro(d.pix)}</dd><small>precisam pagar de novo a cada vencimento</small></div>
+        <div><dt>Cartão que renova sozinho</dt><dd>{inteiro(d.renova)}</dd><small>a cobrança cai no fim do período</small></div>
+        <div><dt>Desligaram a renovação</dt><dd>{inteiro(d.desligou)}</dd><small>têm acesso até o fim e depois saem</small></div>
+      </dl>
+    </div>
+    <div className="hb-painel">
+      <div className="hb-titulo"><div><h3>Quem vence nos próximos 30 dias</h3><p>Dourado: Pix (precisa pagar de novo). Verde: cartão (renova sozinho). Cinza: desligou a renovação. Toque num nome para abrir a ficha.</p></div></div>
+      <div className="hb-vence">{d.vencem.map((l, i) => <div key={i} className="hb-vence__col">
+        <h4>{nomeSemana(i)} <b>{l.length}</b></h4>
+        {l.length ? <ul>{l.map(a => { const m = meioDe(a), tipo = m === 'pix' ? 'pix' : renovaSozinha(a) ? 'cartao' : 'sai'; return <li key={`${a.id_usuario}${a.fim_periodo}`}><button type="button" className={`hb-vence__pessoa hb-vence__pessoa--${tipo}`} onClick={() => nav.abrirPessoa(a.id_usuario, 'assinatura')}>
+          <span>{a.nome || a.usuario}</span><small>{rotuloPlano(a.plano)} · {data(a.fim_periodo)}</small></button></li> })}</ul> : <p className="hb-nota">Ninguém vence.</p>}
+      </div>)}</div>
+    </div>
+  </section>
 }
