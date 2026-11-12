@@ -1,6 +1,6 @@
 ---
 id: rockwood10-62-planalto-tibial
-versao: 3
+versao: 4
 titulo: Fratura do planalto tibial
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 62 · Tibial Plateau Fractures
 autores: Hemil Maniar e Daniel S. Horwitz
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (plato_tibial.pdf, 34 páginas, todas do capítulo 62); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (p. 28 e 29, Fig. 1.40). As páginas citadas são as impressas.
+fonte: Capítulo enviado pelo Tales em 17/10/2026 (plato_tibial.pdf, 34 páginas, todas do capítulo 62); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (p. 28 a 30, Fig. 1.40 e 1.41), cap. 3 (p. 162), cap. 50 (p. 2065 e 2117) e cap. 59 (p. 2612), e ao AO Principles of Fracture Management, 3ª ed., cap. 1.4 (p. 49). O Rockwood 10 não tem página impressa e é citado por capítulo e seção; as páginas citadas dos outros livros são as impressas.
 subtemas: Fratura do planalto tibial
 resumo: Menisco lateral e LCA, SCHATZKER (IV como luxação), LUO, HOHL e MOORE, cisalhamento posteromedial com placa antideslizante, vias anterolateral, posteromedial e posterolateral, preenchimento da falha, duas placas e fixador em etapas.
 ---
@@ -75,10 +75,10 @@ armadilha: Reparar o LCM na fixação da fratura lateral: não há frouxidão cr
 
 ## A ressonância do LCA e o edema ósseo
 
-O TEOT 2024 cobrou, dentro do subtema do planalto, o padrão de edema ósseo da lesão aguda do LCA: côndilo femoral lateral e planalto tibial lateral, a pegada do pivô. **O capítulo 62 não traz esse dado**; ele pertence aos capítulos de ligamento do joelho. Fica aqui porque a palavra "planalto" leva a questão para o tema.
+O TEOT 2024 cobrou, dentro do subtema do planalto, o padrão de edema ósseo da lesão aguda do LCA: côndilo femoral lateral e planalto tibial lateral, a pegada do pivô. O capítulo 62 não traz esse dado, mas o Campbell 15 traz. No capítulo de imagem (cap. 3, p. 162), as contusões ósseas da ruptura aguda do LCA são um sinal secundário: edema da medula subcondral, **tipicamente no compartimento lateral**, que costuma desaparecer em **6 a 12 semanas**; a cartilagem por cima deve ser examinada com cuidado. No capítulo de lesões do joelho (cap. 50, p. 2065), a fratura por impacção do côndilo femoral lateral no sulco terminal (sinal do entalhe femoral lateral), onde a ressonância mostra a contusão do côndilo lateral, sugere ruptura do LCA, ao lado da fratura de SEGOND, patognomônica; e na p. 2117 as contusões ósseas subcondrais ocultas aparecem em **até 80%** das rupturas completas do LCA. Fica aqui porque a palavra "planalto" leva a questão para o tema.
 
 !questoes relacionadas=trauma-1056
-conceito: Na lesão aguda do LCA, o edema ósseo típico acomete o côndilo femoral lateral e o planalto tibial lateral (dado fora do capítulo 62).
+conceito: Na lesão aguda do LCA, o edema ósseo típico acomete o côndilo femoral lateral e o planalto tibial lateral, o compartimento lateral (Campbell 15, cap. 3, p. 162; fora do capítulo 62).
 como: O TEOT 2024 cruzou côndilo medial ou lateral com planalto medial ou lateral.
 armadilha: Côndilo lateral com planalto medial: os dois ossos que batem no pivô são do mesmo compartimento, o lateral.
 !fim
@@ -194,10 +194,10 @@ armadilha: Uma coluna para a depressão lateral pura: LUO conta a cortical rompi
 
 ## KFURI e SCHATZKER: fora do capítulo
 
-O TARO 2020 e o TARO 2024 perguntaram, com quase o mesmo texto, os dois marcos que KFURI e SCHATZKER usaram para dividir o planalto em zona anterior e posterior no plano coronal; o gabarito oficial das duas provas foi o **limite anterior da cabeça da fíbula** e o **limite posterior da inserção do LCM**. **O capítulo 62 não traz essa atualização**, e nenhum dos livros do acervo (Rockwood, Campbell 15, Skeletal Trauma, HEBERT) a descreve; o dado vem só das provas. O que ele traz é a mesma preocupação: a visão axial da tomografia e o lado posterior do planalto, pelo conceito de LUO.
+O TARO 2020 e o TARO 2024 perguntaram, com quase o mesmo texto, os dois marcos que KFURI e SCHATZKER usaram para dividir o planalto em zona anterior e posterior no plano coronal; o gabarito oficial das duas provas foi o **limite anterior da cabeça da fíbula** e o **limite posterior da inserção do LCM**. **O capítulo 62 não traz essa atualização**, mas dois livros do acervo tocam nela. O AO Principles of Fracture Management (3ª ed., cap. 1.4, p. 48 e 49) registra que a classificação AO/OTA de 2018 acrescentou às fraturas do tipo B e C da tíbia proximal a modificação sugerida por KFURI e SCHATZKER, que divide a superfície articular em **quadrantes** para localizar melhor a cominuição e o desvio; o livro não diz quais são os marcos. O Campbell 15 (cap. 1, p. 30, Fig. 1.41), na osteotomia do planalto lateral para expor o canto posterolateral afundado, desenha os quadrantes anterolateral, anteromedial, posterolateral e posteromedial a partir do centro do joelho, da crista posteromedial, da **borda anterior da fíbula** e do sulco posterior: a borda anterior da cabeça da fíbula é o marco que separa o quadrante posterolateral, o mesmo do gabarito. O limite posterior da inserção do LCM como marco medial vem só das provas. O capítulo 62 traz a mesma preocupação por outro caminho: a visão axial da tomografia e o lado posterior do planalto, pelo conceito de LUO.
 
 !questoes central=trauma-1036,trauma-0018
-conceito: KFURI e SCHATZKER dividem o planalto em zonas anterior e posterior pelo limite anterior da cabeça da fíbula e pelo limite posterior da inserção do LCM, segundo o gabarito oficial do TARO 2020 e do TARO 2024 (dado fora do capítulo 62 e dos livros do acervo).
+conceito: KFURI e SCHATZKER dividem o planalto em zonas anterior e posterior pelo limite anterior da cabeça da fíbula e pelo limite posterior da inserção do LCM, segundo o gabarito oficial do TARO 2020 e do TARO 2024; os quadrantes estão no AO Principles (3ª ed., p. 49) e a borda anterior da fíbula como marco do quadrante posterolateral, no Campbell 15 (cap. 1, Fig. 1.41).
 como: Par cruzado nas duas provas: limite anterior ou posterior da cabeça da fíbula com limite anterior ou posterior da inserção do LCM; a resposta foi a mesma (anterior da fíbula e posterior do LCM) em 2020 e 2024.
 armadilha: Posterior da fíbula com posterior do LCM: troca o marco lateral; o gabarito usa a borda anterior da cabeça da fíbula.
 armadilha: Posterior da fíbula com anterior do LCM: inverte os dois limites.

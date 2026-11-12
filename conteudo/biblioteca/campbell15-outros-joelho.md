@@ -1,6 +1,6 @@
 ---
 id: campbell15-outros-joelho
-versao: 1
+versao: 2
 titulo: Outros temas do joelho: cisto de Baker, plicas, osteocondrite dissecante e rigidez
 especialidade: joelho
 acesso: gratis
@@ -283,7 +283,7 @@ armadilha: Escolher 30 ou 45 graus por parecerem mais graves; o corte do algorit
 
 ## O problema e o diagnóstico
 
-A infecção ocorre em **2 a 3%** das artroplastias totais do joelho nas grandes séries; nos dados do Medicare, 1,5% nos dois primeiros anos (Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 451). O SIZÍNIO HEBERT, 5ª ed. (cap. 17, PDF 1238), dá 0,5 a 3%. Os germes mais comuns são **Staphylococcus aureus, Staphylococcus epidermidis e Streptococcus**, razão pela qual a profilaxia usual é uma cefalosporina de primeira geração.
+A infecção ocorre em **2 a 3%** das artroplastias totais do joelho nas grandes séries; nos dados do Medicare, 1,5% nos dois primeiros anos (Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 451). O SIZÍNIO HEBERT, 5ª ed. (cap. 17, seção 'Revisão por soltura séptica', Quadro 17.1), dá 0,5 a 3%. Os germes mais comuns são **Staphylococcus aureus, Staphylococcus epidermidis e Streptococcus**, razão pela qual a profilaxia usual é uma cefalosporina de primeira geração.
 
 Deve-se pensar em infecção em toda prótese **persistentemente dolorosa** e em toda prótese boa que **passa a doer de repente**. Leucograma e VHS podem estar normais; a **proteína C reativa** é o marcador de triagem mais confiável. A **aspiração** continua sendo o padrão: mais de 3.000 células por mm3 com 70% ou mais de polimorfonucleares sugerem infecção. Os critérios da MSIS têm dois critérios maiores (duas culturas positivas para o mesmo germe; fístula que comunica com a articulação), cada um suficiente sozinho, e critérios menores pontuados, com **6 pontos ou mais** definindo infecção.
 
@@ -293,7 +293,7 @@ Estabelecida a infecção, as opções são supressão com antibiótico, **desbr
 
 O desbridamento com retenção só serve para um **subgrupo pequeno**, e o motivo é o biofilme: enquanto a bactéria ainda não se organizou sobre o metal e o cimento, lavar, desbridar e trocar o polietileno pode curar; depois, não. Por isso o Campbell restringe a indicação a duas situações, as duas com **prótese bem fixa**.
 
-!tabela Infecção da artroplastia do joelho: tempo e conduta (Campbell 15, cap. 8, p. 452 a 454; SIZÍNIO 5ª ed., cap. 17, PDF 1238)
+!tabela Infecção da artroplastia do joelho: tempo e conduta (Campbell 15, cap. 8, p. 452 a 454; SIZÍNIO 5ª ed., cap. 17, seção 'Revisão por soltura séptica', Quadro 17.1)
 | Tipo | Definição | Conduta |
 | --- | --- | --- |
 | pós-operatória precoce | menos de 4 semanas da cirurgia | desbridamento com retenção e troca do polietileno |
@@ -322,7 +322,7 @@ armadilha: Marcar contraindicação absoluta; o Campbell usa a palavra relativa,
 
 ## O que acontece e o que se lesa
 
-A patela luxa **quase sempre para lateral**, e a redução se faz estendendo o joelho fletido enquanto se empurra a borda lateral da patela (Campbell's Operative Orthopaedics, 15ª ed., cap. 65, p. 2939). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 60, p. 2665, aproximada), dá a incidência de 5,8 por 100.000 ao ano, subindo para 29 por 100.000 entre 10 e 17 anos, e chama a luxação medial traumática de excepcionalmente rara.
+A patela luxa **quase sempre para lateral**, e a redução se faz estendendo o joelho fletido enquanto se empurra a borda lateral da patela (Campbell's Operative Orthopaedics, 15ª ed., cap. 65, p. 2939). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 60, seção Acute Patellar Dislocations), dá a incidência de 5,8 por 100.000 ao ano, subindo para 29 por 100.000 entre 10 e 17 anos, e chama a luxação medial traumática de excepcionalmente rara.
 
 O dano não é só da cápsula. O Campbell cita lesão da cartilagem em **94%**, com fratura condral ou osteocondral em 72%, e ruptura total ou parcial do **ligamento patelofemoral medial em 98%**, mais vezes na **origem femoral (50%)**. Por isso a radiografia deve ser olhada com cuidado à procura de fragmento osteocondral e, havendo **hemartrose, pede-se RM**. O Rockwood lembra que uma fratura osteocondral na borda inferomedial da patela, depois de um trauma do joelho, é muito sugestiva desse mecanismo.
 

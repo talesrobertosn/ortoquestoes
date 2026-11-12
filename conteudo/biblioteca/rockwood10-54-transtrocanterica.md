@@ -1,6 +1,6 @@
 ---
 id: rockwood10-54-transtrocanterica
-versao: 3
+versao: 4
 titulo: Fratura transtrocantérica
 especialidade: trauma
 acesso: gratis
@@ -41,12 +41,12 @@ Uma fratura do quadril anuncia a próxima: numa grande coorte, **até um em cada
 
 ## Lesões associadas
 
-Cerca de **4%** têm outra fratura, quase sempre no **membro superior do mesmo lado**: **rádio distal ipsilateral** (2%), a mais comum, e **úmero proximal ipsilateral** (1%). O paciente cai de lado e apoia a mão do mesmo lado. Fraturas da pelve são raras junto. **Trauma de crânio** deve ser lembrado em todos: 21% dos pacientes com fratura de baixa energia tiveram gravidade suficiente para justificar tomografia de crânio numa série.
+Cerca de **4%** têm outra fratura, quase sempre no **membro superior do mesmo lado**: **rádio distal ipsilateral** (2%), a mais comum, e **úmero proximal ipsilateral** (1%). (cap. 54, seção das lesões associadas à fratura trocantérica). Fraturas da pelve são raras junto. **Trauma de crânio** deve ser lembrado em todos: 21% dos pacientes com fratura de baixa energia tiveram gravidade suficiente para justificar tomografia de crânio numa série.
 
 !questoes central=trauma-0011,trauma-0228 treino=trauma-1574
 conceito: A fratura associada mais comum é a do rádio distal do mesmo lado.
-como: Já caiu mais de uma vez no TARO com as alternativas trocando lado (ipsi ou contralateral) e osso (rádio ou úmero). O raciocínio do mecanismo resolve: queda de lado, mão do mesmo lado no chão.
-armadilha: Rádio contralateral: a mão que apoia a queda é a do lado que bate.
+como: Já caiu mais de uma vez no TARO com as alternativas trocando lado (ipsi ou contralateral) e osso (rádio ou úmero). Guarde a ordem do capítulo: rádio distal ipsilateral (2%) antes do úmero proximal ipsilateral (1%).
+armadilha: Rádio contralateral: o capítulo descreve a associação com o rádio distal do mesmo lado.
 armadilha: Úmero proximal: é a segunda, não a primeira.
 !fim
 
@@ -151,7 +151,7 @@ O **parafuso deslizante do quadril** (DHS, parafuso de compressão) foi por déc
 
 Variações: a **placa de estabilização trocantérica** se encaixa no DHS e faz o papel da parede lateral, resistindo à medialização (ainda usada, mas a haste é hoje o padrão nas instáveis); a **placa de Medoff** desliza também no eixo do fêmur, útil nas A3; a **placa de compressão percutânea** (Gottfried) tem resultados semelhantes em séries limitadas.
 
-**Placa-lâmina e parafuso condilar de 95°** dão fixação rígida, sem colapso controlado: **alta taxa de falha** nas A3, foram substituídos pela haste. Aqui os livros divergem: o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54, figura 54-18, pág. PDF 2709), diz que a placa condilar de 95° no traço reverso **não pode ser recomendada**; o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 58), considera a haste bloqueada melhor no traço invertido, mas aceita as **placas de 95° do sistema DCS** como outra opção. A **placa bloqueada do fêmur proximal** também é estática e falha muito como tratamento primário; talvez sirva no jovem com fratura complexa e bom osso ou em fraturas periprotéticas.
+**Placa-lâmina e parafuso condilar de 95°** dão fixação rígida, sem colapso controlado: **alta taxa de falha** nas A3, foram substituídos pela haste. Aqui os livros divergem: o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54, seção Other Extramedullary Implants, Blade Plate or 95-Degree Condylar Screw Plate, e Fig. 54-18), diz que a placa condilar de 95° no traço reverso **não pode ser recomendada**; o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 58), considera a haste bloqueada melhor no traço invertido, mas aceita as **placas de 95° do sistema DCS** como outra opção. A **placa bloqueada do fêmur proximal** também é estática e falha muito como tratamento primário; talvez sirva no jovem com fratura complexa e bom osso ou em fraturas periprotéticas.
 
 ## Haste cefalomedular
 
@@ -309,7 +309,7 @@ A basocervical (31B2.1) corre ao longo da linha intertrocantérica e se confunde
 
 O resumo já mostrou por que a parede lateral é o batente da fixação. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60), traz os números que dão peso a essa ideia, e eles explicam por que o DHS virou implante de fratura estável.
 
-!tabela Parede lateral: o que os estudos mediram (Campbell's Operative Orthopaedics, 15ª ed., cap. 60, pág. 2670 aprox. e 2673 aprox.; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, pág. PDF 2702)
+!tabela Parede lateral: o que os estudos mediram (Campbell's Operative Orthopaedics, 15ª ed., cap. 60, pág. 2670 aprox. e 2673 aprox.; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, seção Trochanteric Fractures With Loss of Lateral Support)
 | Achado | Número |
 | --- | --- |
 | Segunda cirurgia em 6 meses quando a parede lateral estava fraturada (A3 ou fratura iatrogênica em A1 e A2) com DHS | 22% |
@@ -428,7 +428,7 @@ Entre as hastes com ensaios de tamanho suficiente para mostrar equivalência ao 
 
 # Complicações: o que faltava {radar=fundamento}
 
-!tabela Complicações em detalhe (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, pág. PDF 2728 a 2732)
+!tabela Complicações em detalhe (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, seção Management of Expected Adverse Outcomes and Unexpected Complications Related to Trochanteric Hip Fractures)
 | Complicação | Dado novo | Conduta |
 | --- | --- | --- |
 | Infecção profunda | Menos de 1%; PET-FDG pode separar superficial de profunda após 3 semanas | Protocolo local; ultrassom e punção para cultura |

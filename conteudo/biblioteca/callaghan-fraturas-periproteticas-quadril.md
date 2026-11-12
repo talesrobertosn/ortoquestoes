@@ -1,6 +1,6 @@
 ---
 id: callaghan-fraturas-periproteticas-quadril
-versao: 1
+versao: 2
 titulo: Fraturas periprotéticas do quadril
 especialidade: quadril
 acesso: gratis
@@ -306,7 +306,7 @@ A haste **bloqueada distalmente por parafusos** afunda se a ancoragem depender s
 
 ## A técnica do grupo de Vancouver
 
-A preferência descrita no The Adult Hip (p. 1118 e 1119) serve de roteiro: via **posterolateral**, retirada da haste pelos fragmentos da fratura, OTE se preciso, **cabo profilático** distal antes de fresar, haste **modular cônica estriada de titânio** com pelo menos **4 cm de fixação por atrito no istmo** e fragmentos proximais fixados com **múltiplos cabos**. A cúpula mal posicionada é revisada junto, e cabeças de **36 ou 40 mm** reduzem a luxação. Pós-operatório: **sem carga por 6 semanas** e carga total em **3 meses**. A haste deve ultrapassar a zona de fraqueza em pelo menos **dois diâmetros femorais** (p. 1111).
+A preferência descrita no The Adult Hip (p. 1118 e 1119) serve de roteiro: via **posterolateral**, retirada da haste pelos fragmentos da fratura, OTE se preciso, **cabo profilático** distal antes de fresar, haste **modular cônica estriada de titânio** com pelo menos **4 cm de fixação por atrito no istmo** e fragmentos proximais fixados com **múltiplos cabos**. A cúpula mal posicionada é revisada junto, e cabeças de **36 ou 40 mm** reduzem a luxação. Pós-operatório: **sem carga por 6 semanas** e carga total em **3 meses**. A haste deve ultrapassar a zona de fraqueza em pelo menos **dois diâmetros femorais** (p. 1110).
 
 O caso que abre o capítulo (p. 1106 e 1123) fecha a lição: mulher de 84 anos, queda de baixa energia, haste solta com osso razoável, portanto **B2**, revisada com haste cônica estriada de titânio de fixação distal.
 
