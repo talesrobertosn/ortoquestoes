@@ -1,6 +1,6 @@
 ---
 id: rockwood10-33-fratura-escapula
-versao: 4
+versao: 5
 titulo: Fratura da escápula
 especialidade: trauma
 acesso: gratis
@@ -245,6 +245,8 @@ conceito: O conservador usa tipoia por 2 semanas e mobilização progressiva; fr
 !fim
 
 O tipo IV aparece de dois jeitos no próprio Rockwood. O **desenho** da Figura 33-9 (p. 1022) mostra um traço **horizontal** que sai da glenoide e cruza todo o corpo até a **borda medial**. A **legenda** da mesma figura diz que o tipo IV é **parecido com o III**, só que o fragmento glenoidal separado é **menor** e envolve a **borda superior** do corpo da escápula. As outras fontes locais ficam com o desenho: o HEBERT (cap. 43, Fig. 43.5) define o tipo 4 apenas como **horizontal** e o desenha com o traço atravessando o corpo até a borda medial; o Skeletal Trauma (cap. 50, Fig. 50A-10, p. 1526), na versão reorganizada de MAYO, também desenha o tipo IV com o traço chegando à borda medial. O Campbell (15ª ed.) não apresenta essa classificação. A legenda do Rockwood tem ainda outro descompasso: diz que o Vc combina os tipos II, III e V, enquanto o desenho do Vc mostra os traços do II, do III e do IV.
+
+O tipo I tem ainda uma segunda leitura, e ela muda a resposta. O Skeletal Trauma, 5ª ed. (cap. 48, p. 1459), ao tratar da fratura da borda da glenoide na luxação glenoumeral, descreve a classificação **original de IDEBERG** com outro critério para dividir o tipo I: **IA quando o fragmento da borda tem 5 mm ou menos** e **IB quando é maior que 5 mm**. Pelo mesmo texto, esses são os tipos mais frequentes (85% das fraturas intra-articulares da glenoide na casuística de IDEBERG), e os fragmentos pequenos, menores que 5 mm, são os mais comuns. Na modificação de **GOSS** desenhada pelo Rockwood (Figura 33-9), a mesma letra indica o lado: **Ia anterior, Ib posterior**. Quando a alternativa fala em tamanho do fragmento, a banca está na IDEBERG original; quando fala em borda anterior ou posterior, está na GOSS.
 
 !figura 33-9
 Classificação de Goss das fraturas da glenoide: Ia borda anterior, Ib borda posterior, II glenoide inferior, III glenoide superior com o coracoide, IV traço horizontal até a borda medial (a legenda do livro, p. 1022, descreve o IV como um III de fragmento menor na borda superior), Va a Vc combinações e VI cominuta.

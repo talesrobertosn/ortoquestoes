@@ -1,6 +1,6 @@
 ---
 id: green-artrose-punho-artroscopia
-versao: 1
+versao: 2
 titulo: Artrose do punho e artroscopia
 especialidade: mao
 acesso: gratis
@@ -463,7 +463,7 @@ alerta: Em `mao-1774`, a expressão "pela bainha do FCR" não está literalmente
 
 ## O que se vê de cada portal
 
-Pela eTable 17.1 do Green (p. 653.e1), a **FCT completa**, com o **orifício pisopiramidal**, aparece do **3-4, do 4-5 e do 6-R**; do **6-U**, só em vistas **oblíquas**; o lunopiramidal é bem visto do 4-5 ou 6-R (p. 660). O Campbell (p. 3280 e 3281) diz que o **4-5 permite melhor inspeção da FCT** e que do **6R** se veem a FCT, os ulnocárpicos e o lunopiramidal.
+Pela eTable 17.1 do Green (p. 653.e1), a **FCT completa**, com o **orifício pisopiramidal**, aparece do **3-4, do 4-5 e do 6-R**; do **6-U**, só em vistas **oblíquas**; o lunopiramidal é bem visto do 4-5 ou 6-R (p. 659). O Campbell (p. 3280 e 3281) diz que o **4-5 permite melhor inspeção da FCT** e que do **6R** se veem a FCT, os ulnocárpicos e o lunopiramidal.
 
 !tabela Campo de visão por portal (Green's Operative Hand Surgery, 7ª ed., cap. 17, eTable 17.1, p. 653.e1)
 | Portal | Central | Volar | Ulnar |

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-40-cotovelo-cabeca-radio
-versao: 3
+versao: 4
 titulo: Luxação do cotovelo, cabeça do rádio e tríade terrível
 especialidade: trauma
 acesso: gratis
@@ -194,7 +194,7 @@ A maioria vem de queda com a mão espalmada, de baixa energia; esporte e acident
 
 !questoes central=trauma-0268 relacionadas=trauma-0690,trauma-0805
 conceito: A carga em valgo comprime a cabeça do rádio contra o capítulo e pode romper o colateral medial; o cisalhamento posterolateral fratura a parte anterior da cabeça.
-como: Questões do TECOC e do TARO 2025 pediram o quadrante das fraturas parciais (anterolateral). O livro não dá o quadrante com esse nome, mas explica o cisalhamento da porção anterior na subluxação posterolateral, que é o mesmo raciocínio.
+como: Questões do TECOC e do TARO 2025 pediram o quadrante das fraturas parciais (anterolateral). O capítulo dá o quadrante com esse nome na seção do coronoide (classificação de O'DRISCOLL): na tríade terrível, o mecanismo de instabilidade rotatória posterolateral cisalha a parte anterolateral da cabeça do rádio e a ponta do coronoide durante a luxação. Na seção da cabeça do rádio, o mesmo raciocínio aparece como cisalhamento da porção anterior na subluxação posterolateral.
 armadilha: "O exame da pronossupinação não importa": é o contrário, o bloqueio da rotação é a principal indicação cirúrgica.
 !fim
 
@@ -318,7 +318,7 @@ armadilha: Material de síntese saliente: é causa mecânica possível, menos co
 
 É a **instabilidade longitudinal do antebraço**: fratura da cabeça do rádio com ruptura da **membrana interóssea** e da **articulação radioulnar distal**. O Campbell (15ª ed., cap. 62, p. 2816) fala em fratura da **cabeça ou do colo** do rádio. Com o anel rompido em dois pontos, o rádio sobe. O diagnóstico precoce depende de **examinar o punho** em toda fratura da cabeça do rádio (dor na radioulnar distal) e de testar a instabilidade longitudinal na cirurgia, porque a reconstrução tardia é difícil e muitas vezes insatisfatória.
 
-Na fase aguda, fixa-se ou troca-se a cabeça e prende-se temporariamente a radioulnar distal com fios, com ou sem reconstrução da membrana ou reparo da fibrocartilagem triangular. Depois de uma ressecção, 2 a 3 mm de migração proximal são esperados; muito mais que isso indica as estruturas distais rotas. Na **lesão crônica**, as opções são antebraço de um osso só, **prótese da cabeça com encurtamento da ulna** (imediato ou em segundo tempo) ou reconstrução da membrana com prótese. O capítulo 41 do mesmo Rockwood chama de **tratamento ideal** da Essex-Lopresti crônica a **troca da cabeça do rádio com encurtamento da ulna**, imediato ou em segundo tempo, ou com reconstrução da membrana interóssea.
+Na fase aguda, fixa-se ou troca-se a cabeça e prende-se temporariamente a radioulnar distal com fios, com ou sem reconstrução da membrana ou reparo da fibrocartilagem triangular. Depois de uma ressecção, 2 a 3 mm de migração proximal são esperados; muito mais que isso indica as estruturas distais rotas. O capítulo lamenta que **a maioria dos pacientes chega tarde**, depois de a cabeça do rádio já ter sido ressecada. Na **lesão crônica**, as opções são antebraço de um osso só, **prótese da cabeça com encurtamento da ulna** (imediato ou em segundo tempo) ou reconstrução da membrana com prótese. O capítulo 41 do mesmo Rockwood chama de **tratamento ideal** da Essex-Lopresti crônica a **troca da cabeça do rádio com encurtamento da ulna**, imediato ou em segundo tempo, ou com reconstrução da membrana interóssea.
 
 !questoes central=trauma-0271,trauma-0819,trauma-0028,trauma-0431,trauma-0106 relacionadas=ombro-cotovelo-0474 treino=trauma-1419,ombro-cotovelo-0680
 conceito: Essex-Lopresti é a fratura da cabeça do rádio com lesão da membrana interóssea e da radioulnar distal; a pista clínica é a dor no punho, e a crônica se trata com prótese da cabeça e encurtamento da ulna.
@@ -366,7 +366,7 @@ Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40, Fig. 
 
 A ulna sofre um **deslocamento rotatório posterolateral**: queda sobre o **braço estendido**, com **supinação, valgo e carga axial**. A tróclea cisalha a ponta do coronoide, e o colateral lateral rompe ou a cabeça do rádio fratura. Lesões do mesmo membro aparecem em 10% a 20% das fraturas-luxações do cotovelo, sobretudo no punho. Lesões neurovasculares são incomuns.
 
-!questoes central=trauma-0059,trauma-0966
+!questoes central=trauma-0059,trauma-0966 relacionadas=trauma-0345
 conceito: A tríade terrível vem de queda com o cotovelo em extensão, valgo e antebraço supinado, num padrão de instabilidade posterolateral.
 armadilha: Flexão, varo e pronação: é o mecanismo da fratura da faceta anteromedial (posteromedial).
 !fim

@@ -1,6 +1,6 @@
 ---
 id: campbell14-manguito-rotador
-versao: 3
+versao: 4
 titulo: Manguito rotador: exame, roturas e tratamento
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021), ampliado com a 15ª edição (2026)
 capitulo: Capítulo 46 · Shoulder and Elbow Injuries, com os capítulos 52 · Arthroscopy of the Upper Extremity e 12 · Shoulder and Elbow Arthroplasty
 autores: Robert H. Miller III, Frederick M. Azar e Thomas W. Throckmorton (cap. 46)
-fonte: Livro conferido localmente em 30/10/2026, caps. 46, 52 e 12. O cabeçalho do PDF mostra a paginação impressa só em parte das páginas; as referências citam capítulo, seção, quadro e figura. Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (pp. 2144 a 2176), cap. 57 (reparo artroscópico) e caps. 13 e 14 (artropatia e transferências). Ampliado em 04/11/2026 com o impacto subacromial e a acromioplastia: Campbell 15, cap. 51 (pp. 2147, 2148 e 2157.e1 a 2162), cap. 57 (pp. 2456 a 2459 e 2480 a 2483) e cap. 14 (p. 629 aprox.); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32 (anatomia, biomecânica e imagem da acromioclavicular, sem página impressa); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 4 e 5 (sem página impressa); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29 (p. 1182); Skeletal Trauma, 5ª ed., cap. 48 (p. 1408). As páginas citadas são as impressas.
+fonte: Livro conferido localmente em 30/10/2026, caps. 46, 52 e 12. O cabeçalho do PDF mostra a paginação impressa só em parte das páginas; as referências citam capítulo, seção, quadro e figura. Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (pp. 2144 a 2176), cap. 57 (reparo artroscópico) e caps. 13 e 14 (artropatia e transferências). Ampliado em 04/11/2026 com o impacto subacromial e a acromioplastia: Campbell 15, cap. 51 (pp. 2147, 2148 e 2157.e1 a 2162), cap. 57 (pp. 2456 a 2459 e 2480 a 2483) e cap. 14 (p. 629); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32 (anatomia, biomecânica e imagem da acromioclavicular, sem página impressa); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 4 e 5 (sem página impressa); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29 (p. 1182); Skeletal Trauma, 5ª ed., cap. 48 (p. 1408). As páginas citadas são as impressas.
 subtemas: Lesões do manguito rotador; Tendinite calcária; Lesão do subescapular; Impacto subacromial e acromioplastia
 resumo: Campbell 15: pegada de cada tendão, cinco camadas, cabo; acurácia dos testes (PARK), lags, subescapular; HAMADA, acrômio, ângulo crítico de 35 graus, GOUTALLIER e sinal da tangente; estágios de NEER; KEENER, 3 semanas e 4 meses, Box 51.5, DERWIN; fileiras, TRANTALIS, convergência, reabilitação; LAFOSSE; trapézio inferior e reconstrução capsular superior; SARKAR e UHTHOFF. Anatomia (pares de forças, bainha do bíceps, cabo e crescente, arco coracoacromial); exame (NEER, HAWKINS, JOBE, PATTE, sinais de atraso, lift-off, belly-press, bear hug); impactos externo, subcoracoide e interno; COFIELD, GOUTALLIER e ELLMAN; história natural e tratamento inicial; parciais acima e abaixo de 50%; transferências (grande dorsal de GERBER, peitoral maior) e reparo parcial; nervo supraescapular a 1,8 cm; tecido da vírgula e subescapular; tendinite calcária; prótese reversa; os acromiale, acromioplastia aberta e artroscópica e a acromioclavicular.
 ---
@@ -272,7 +272,7 @@ como: O TECOC pediu quais ligamentos AC a ressecção artroscópica preserva (po
 armadilha: Marcar anterior e inferior: são as faces abordadas pelos portais subacromiais.
 !fim
 
-**Na artrodese glenoumeral.** O Campbell 15 (cap. 14, p. 629 aprox.) lista a **artrose AC secundária** e a dor escapulotorácica como complicações comuns e manda, se houver sinal de artrose AC antes da cirurgia, fazer **ressecção concomitante da clavícula distal**, não a fusão da AC.
+**Na artrodese glenoumeral.** O Campbell 15 (cap. 14, p. 629) lista a **artrose AC secundária** e a dor escapulotorácica como complicações comuns e manda, se houver sinal de artrose AC antes da cirurgia, fazer **ressecção concomitante da clavícula distal**, não a fusão da AC.
 
 !questoes central=ombro-cotovelo-0505
 conceito: Na artrodese do ombro, a artrose AC prévia indica ressecção da clavícula distal, não fusão da AC.
@@ -426,7 +426,7 @@ armadilha: Achar que retração de 1,5 cm já piora o resultado (o limite é 2,5
 
 **A forma da rotura** decide a sutura: **crescente** vai direto ao osso; **em U** e **em L** pedem **convergência das margens**, com pontos lado a lado do ápice medial para lateral, que reduzem a tensão antes de fixar ao osso. Roturas crônicas maciças e retraídas pedem liberações e **interval slide** de TAURO (abrir o intervalo entre a borda anterior do supraespinal e a cápsula, soltando o coracoumeral); o duplo interval slide soma o deslizamento entre o supraespinal e o infraespinal.
 
-**Os cinco fatores de CORDASCO e BIGLIANI** para as roturas grandes e maciças: descompressão adequada, preservar a origem do deltoide, mobilizar com interval slide quando preciso, reparar tendão ao osso e reabilitar de forma supervisionada e em etapas. O mecanismo mais comum de falha é a **tensão excessiva**, com o fio cortando o tendão. Na mobilização, o nervo supraescapular está a **1,8 cm** da borda posterossuperior da glenoide (e a 2,5 cm medial à glenoide superior, na base da fossa supraespinal).
+**Os cinco fatores de CORDASCO e BIGLIANI** para as roturas grandes e maciças: descompressão adequada, preservar a origem do deltoide, mobilizar com interval slide quando preciso, reparar tendão ao osso e reabilitar de forma supervisionada e em etapas. O mecanismo mais comum de falha é a **tensão excessiva**, com o fio cortando o tendão. Na mobilização, o nervo supraescapular está a **1,8 cm** da borda posterossuperior da glenoide (Campbell 15, cap. 51, p. 2172). A outra medida que circula, 2,5 cm, não está no Campbell 15: vem do Campbell 13 (cap. 52, p. 2571), no capítulo de artroscopia, e é medida do **tubérculo glenoidal superior** (supraglenoidal), não da borda medial da glenoide.
 
 **As parciais.** Abaixo de 50%, desbridamento (80% a 90% de bons resultados); acima, reparo. Reparar in situ (**PASTA**, transtendíneo) ou completar a rotura e reparar dá o mesmo resultado; os autores completam quando o tendão restante é ruim e a lesão passa de 80% da espessura. A ponta do shaver (4,5 ou 5,5 mm) serve de régua: mais de 6 mm da cartilagem ao tendão inserido indicam lesão de 50%. Nos arremessadores, a parcial posterior pode ser adaptativa.
 
@@ -442,7 +442,7 @@ alerta: O tipo de colágeno depositado com a mobilização precoce (`ombro-cotov
 # Roturas irreparáveis e transferências {radar=confirmado}
 
 - **Reparo parcial** (convergência das margens com reparo tendão-osso): mostrou-se superior ao desbridamento, às transferências e às augmentações nas roturas maciças irreparáveis.
-- **Posterossuperior** (supraespinal e infraespinal): **grande dorsal** (GERBER).
+- **Posterossuperior** (supraespinal e infraespinal): **grande dorsal** (GERBER), a resposta clássica; o Campbell 15 hoje prefere o **trapézio inferior** nessa rotura (cap. 14, p. 629; veja a seção seguinte).
   - O tendão é liberado da diáfise protegendo os **nervos axilar e radial**, passado entre o infraespinal e redondo menor e o deltoide, e fixado no **úmero superolateral**.
   - Resultado melhor com boa flexão e rotação externa ativas antes da cirurgia.
 - **Anterossuperior** (subescapular e supraespinal): **peitoral maior**, com o **arco coracoacromial intacto**.
@@ -460,11 +460,13 @@ alerta: Na `ombro-cotovelo-0565`, o gabarito oficial (peitoral maior) segue a t�
 
 **Primeiro, a escolha** (Campbell 15, cap. 51). As irreparáveis em geral não devem ir para o reparo artroscópico: a **prótese reversa** é mais previsível, e as **transferências** ficam para os mais jovens. Com **fuga anterossuperior**, os procedimentos de partes moles tendem a falhar.
 
-**As regras de uma transferência** (cap. 14): excursão e tensão parecidas, músculo dispensável, mesma linha de tração, uma só função, e esperar um grau a menos de força. O candidato ideal é **jovem**, com **função acima da cabeça preservada**, pouca artrose, **sem pseudoparalisia** e com a **musculatura oposta íntegra**: o **subescapular** íntegro para as transferências posterossuperiores; o redondo menor e parte do infraespinal para as do subescapular.
+**A preferência do Campbell 15** (cap. 14, p. 629). Nas roturas irreparáveis em que se quer preservar a articulação, os autores favorecem duas transferências: o **grande dorsal para o subescapular irreparável** e o **trapézio inferior para a rotura posterossuperior irreparável**.
+
+**As regras de uma transferência** (cap. 14, p. 630): excursão e tensão parecidas, músculo dispensável, mesma linha de tração, uma só função, e esperar um grau a menos de força. O candidato ideal é **jovem**, com **função acima da cabeça preservada**, pouca artrose, **sem pseudoparalisia** e com a **musculatura oposta íntegra**: o **subescapular** íntegro para as transferências posterossuperiores; o redondo menor e parte do infraespinal para as do subescapular.
 
 **As opções posterossuperiores.**
-- **Grande dorsal (GERBER)**: ganhos pequenos, mas significativos; melhor com boa flexão e rotação externa antes, pior com cirurgia prévia, insuficiência do subescapular, atrofia do redondo menor, pseudoparalisia e índice acromioumeral abaixo de 6 mm. Órtese em 45 graus de abdução e 30 a 45 de rotação externa por 6 semanas. Riscos: nervo **axilar** junto à ponta proximal do tendão e **radial** logo abaixo.
-- **Trapézio inferior**: linha de tração mais parecida com a do infraespinal; resultados excelentes, sobretudo com **atraso em rotação externa** (sinal da bandeira). Nasce de T2 a T10 e se insere na espinha medial da escápula; é inervado pelo acessório e **exige aloenxerto de tendão de AQUILES** para alcançar o úmero.
+- **Grande dorsal (GERBER)**: ganhos pequenos, mas significativos; melhor com boa flexão e rotação externa antes, pior com cirurgia prévia, insuficiência do subescapular, atrofia avançada do redondo menor, pseudoparalisia e índice acromioumeral abaixo de 6 mm, os fatores de mau resultado do Campbell 15 (cap. 14, p. 632); o candidato ideal tem redondo menor e subescapular íntegros, elevação ativa acima de 90 graus e nenhuma cirurgia prévia (p. 632). Órtese em 45 graus de abdução e 30 a 45 de rotação externa por 6 semanas. Riscos: nervo **axilar** junto à ponta proximal do tendão e **radial** logo abaixo.
+- **Trapézio inferior**: linha de tração mais parecida com a do infraespinal, e estudos biomecânicos mostram superioridade sobre o grande dorsal na rotura posterossuperior (cap. 14, p. 632); resultados excelentes, sobretudo com **atraso em rotação externa** (sinal da bandeira). Nasce de T2 a T10 e se insere na espinha medial da escápula; é inervado pelo acessório e **exige aloenxerto de tendão de AQUILES** para alcançar o úmero.
 - **Reconstrução capsular superior**: enxerto (fascia lata no início, hoje matriz dérmica) da glenoide superior à tuberosidade, para restaurar a estabilidade superior. Indicação dos autores: rotura superior irreparável com **subescapular íntegro ou reparável**, função acima da cabeça preservada e dor como queixa principal. Três âncoras na glenoide a 5 mm da cartilagem; o enxerto soma 20 mm à medida medial-lateral e 10 mm à anteroposterior; fixação lateral em ponte, braço a 30 graus de abdução; suturas entre o enxerto e o infraespinal posterior aumentam a estabilidade. Só há resultados de curto prazo.
 
 **Outras saídas.** O **reparo parcial** com convergência das margens foi superior a desbridamento, transferências e reforços; o reparo **não anatômico de McLAUGHLIN** leva o tendão até 2 cm mais proximal, no colo anatômico, à custa de braço de alavanca; a **transposição do subescapular de COFIELD** desfaz o par de forças e pode dar instabilidade anterior; a **cabeça longa do bíceps** pode ser redirecionada a uma âncora na tuberosidade maior, como depressor da cabeça; o **desbridamento** com descompressão limitada, preservando o coracoacromial e o bíceps, é boa opção para o idoso cujo objetivo é a dor.
@@ -546,13 +548,13 @@ armadilha: Responder localização insercional.
 
 # Tendinite calcária por dentro {radar=confirmado}
 
-**As fases de SARKAR e UHTHOFF** (Campbell 15, cap. 51):
+**As fases de SARKAR e UHTHOFF** (Campbell 15, cap. 51, p. 2175):
 
 !tabela Fases da tendinite calcária (Campbell 15, cap. 51)
 | Fase | O que acontece | Dor |
 | --- | --- | --- |
 | I, pré-calcificação | metaplasia fibrocartilaginosa do tendão | assintomática |
-| II, calcificação: formativa | depósito seco, como giz | pouca |
+| II, calcificação: formativa | o cálcio se deposita em **vesículas da matriz**, que as células excretam e que se juntam em depósitos maiores; depósito seco, como giz | pouca |
 | II, calcificação: repouso | depósito bem delimitado | pouca |
 | II, calcificação: reabsorção | canais vasculares, cristais de apatita migram para a bursa com leucócitos | muito intensa; depósito em pasta de dente |
 | III, pós-calcificação | o tecido de granulação vira colágeno alinhado | cede |

@@ -1,6 +1,6 @@
 ---
 id: campbell14-biceps-distal
-versao: 2
+versao: 3
 titulo: Lesões do bíceps, do peitoral maior e do tríceps
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021), com o Green's Operative Hand Surgery, 7ª edição (2017)
 capitulo: Capítulo 48 · Distúrbios traumáticos (bíceps, peitoral maior e tríceps), com os capítulos 46 e 52 e o capítulo 25 do Green
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty; capítulo 48 de Frederick M. AZAR); Green (Wolfe, Pederson, Hotchkiss, Kozin, Cohen)
-fonte: Livros conferidos localmente em 30/10/2026, no original em inglês. Campbell, cap. 48 (p. 2520 a 2532), cap. 46 (p. 2375 a 2381), cap. 52 (p. 2673 a 2682 e 2719 a 2721) e cap. 61 (p. 3265); Green 7ª ed., cap. 25 (p. 871 a 880); Netter, Atlas de Anatomia Ortopédica, 2ª ed., caps. 3 e 4. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 30/10/2026, no original em inglês. Campbell, cap. 48 (p. 2520 a 2532), cap. 46 (p. 2375 a 2381), cap. 52 (p. 2673 a 2682 e 2719 a 2721) e cap. 61 (p. 3265); Green 7ª ed., cap. 25 (p. 871 a 880); Netter, Atlas de Anatomia Ortopédica, 2ª ed., caps. 3 e 4; Campbell 15ª ed., cap. 53 (FABS, p. 2286), conferido em 12/11/2026; fonte aberta para os tipos de BENNETT: StatPearls, NCBI Bookshelf NBK534102 (VARACALLO e MAIR, 2023). As páginas citadas são as impressas.
 subtemas: Lesões do bíceps
 resumo: Bíceps distal: homem de meia-idade, cotovelo a 90 graus; teste do gancho (flexão e supinação ativas, borda lateral, cuidado com o lacerto) e de compressão (60 a 80 graus); RM em FABS; reinserção na tuberosidade, via única (mais lesão nervosa, cutâneo lateral do antebraço) ou dupla de BOYD e ANDERSON (mais ossificação e sinostose). Cabeça longa: polia, subescapular e luxação medial; tenodese subpeitoral e o musculocutâneo; SLAP de SNYDER. Peitoral maior: homem de 20 a 40 anos, supino, abdução e rotação externa, ruptura na inserção umeral. Tríceps: avulsão do olécrano.
 ---
@@ -28,7 +28,7 @@ Este resumo é uma aula sobre o bíceps braquial de uma ponta à outra, e sobre 
 
 **Como a banca pensa.** Quase nenhuma questão deste tema pede raciocínio clínico longo. A banca pergunta detalhes de execução e números: de que lado se engancha o tendão, com o cotovelo em quantos graus, se a supinação é ativa ou passiva, qual nervo sofre na via única, em que idade rompe o peitoral. Por isso este resumo explica o porquê de cada detalhe: quem entende por que o gancho vem da borda lateral não erra a direção, mesmo que a banca troque a ordem das palavras.
 
-> **Na prova:** bíceps distal = **homem de meia-idade**, cotovelo a **90 graus**; **gancho** com flexão e supinação **ativas**, de **lateral para medial** (o lacerto engana pela medial), 100% de sensibilidade e especificidade; **compressão** com o cotovelo a **60 a 80 graus**; RM em **FABS**; **via única** = mais lesão **nervosa** (cutâneo lateral do antebraço); **via dupla** = mais **ossificação heterotópica** e **sinostose**. Peitoral maior = homem de **20 a 40 anos**, supino, **abdução, rotação externa e extensão** contra resistência, ruptura na **inserção umeral**.
+> **Na prova:** bíceps distal = **homem de meia-idade**, cotovelo a **90 graus**; **gancho** com flexão e supinação **ativas**, de **lateral para medial** (o lacerto engana pela medial), 100% de sensibilidade e especificidade; **compressão** com o cotovelo a **60 a 80 graus**; RM em **FABS** (mantida no Campbell 15, cap. 53, p. 2286); **via única** = mais lesão **nervosa** (cutâneo lateral do antebraço); **via dupla** = mais **ossificação heterotópica** e **sinostose**. Peitoral maior = homem de **20 a 40 anos**, supino, **abdução, rotação externa e extensão** contra resistência, ruptura na **inserção umeral**.
 
 # A anatomia que resolve metade das questões {radar=confirmado}
 
@@ -209,11 +209,27 @@ Na técnica aberta (técnica 48.40), quando o manguito está normal, a via é de
 
 Quando o subescapular rompe e se retrai, a artroscopia mostra um "tecido da vírgula" (comma tissue) preso à sua borda superolateral. O Campbell explica que ele representa a **alça medial da bainha do bíceps, formada pelo ligamento coracoumeral e pelo glenoumeral superior**; nas rupturas retraídas, ele serve para tracionar o tendão com um ponto de tração por um portal anterolateral acessório (cap. 52, p. 2719). O Campbell procura preservá-lo na maioria dos casos, embora um estudo recente tenha mostrado que o desbridamento não compromete o resultado estrutural nem clínico (cap. 52, p. 2721). De novo, a anatomia da polia: o pedaço da parede medial da polia fica grudado no subescapular que rompeu.
 
+## A classificação de BENNETT
+
+O Campbell cita BENNETT só pelo nome; os tipos estão na revisão aberta do StatPearls (VARACALLO e MAIR, Biceps Tendon Dislocation and Instability, NCBI Bookshelf NBK534102, atualizada em 22/11/2023, seção Pathophysiology), que remete ao trabalho original (BENNETT, Arthroscopy, 2003; PubMed 12522399). A classificação divide as lesões de partes moles da polia em cinco tipos:
+
+!tabela Classificação de BENNETT das lesões da polia do bíceps (StatPearls NBK534102)
+| Tipo | O que está lesado |
+|---|---|
+| I | subescapular, lesão intra-articular |
+| II | banda medial do ligamento coracoumeral incompetente |
+| III | subescapular e banda medial do coracoumeral; o tendão luxa para dentro da articulação e para medial |
+| IV | banda lateral do coracoumeral, com lesão da borda de ataque do manguito; o tendão pode luxar anterior ao subescapular |
+| V | todos os componentes de partes moles da polia rompidos |
+!fim
+
+A lógica é a mesma da polia: os tipos baixos atingem a parede medial (subescapular e banda medial do coracoumeral), e o tipo IV é o que envolve a banda **lateral** do coracoumeral.
+
 !questoes central=ombro-cotovelo-0311 relacionadas=ombro-cotovelo-0352,ombro-cotovelo-0464 treino=ombro-cotovelo-0694
 conceito: Sem a parede medial da polia (subescapular e alça medial do coracoumeral), a cabeça longa escapa para medial; a luxação do bíceps é marcador de lesão do subescapular.
 como: O TARO 2025 mostrou a ressonância de uma jovem após queda de moto e pediu os dois diagnósticos; o TARO 2010 e o TARO 2013 cobraram tipos da classificação de BENNETT.
 armadilha: Escolher luxação anterior ou lesão do supraespinal: o supraespinal é o teto da bainha, e o tendão escapa para medial.
-alerta: O Campbell cita BENNETT apenas pelo nome e reproduz a classificação de LAFOSSE; os tipos de BENNETT (`ombro-cotovelo-0352`, `ombro-cotovelo-0464`) não são descritos no capítulo, e os gabaritos oficiais foram preservados.
+alerta: O Campbell cita BENNETT apenas pelo nome e reproduz a classificação de LAFOSSE; os tipos de BENNETT vêm do StatPearls (NBK534102), que confirma os gabaritos oficiais: tipo IV com a banda lateral do coracoumeral (`ombro-cotovelo-0352`, D) e tipo III com subescapular e banda medial (`ombro-cotovelo-0464`, B). O artigo original (Arthroscopy, 2003) não estava aberto para leitura.
 !fim
 
 # O exame do bíceps no ombro {radar=fundamento}

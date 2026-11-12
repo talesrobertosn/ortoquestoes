@@ -1,6 +1,6 @@
 ---
 id: green-fcct-punho-ulnar
-versao: 1
+versao: 2
 titulo: Fibrocartilagem triangular e punho ulnar
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 74, e o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 42 e 43
 capitulo: Capítulo 14 · Distal Radioulnar Joint
 autores: Brian D. Adams e Fraser J. Leversedge
-fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 14 (Distal Radioulnar Joint, p. 479 a 511, com a Tabela 14.1 e o caso 14.1), cap. 17 (Wrist Arthroscopy, p. 653 a 659, eTable 17.1, e p. 676 a 688), cap. 15 (Distal Radius Fractures, p. 527 e 558 a 563 aprox.), cap. 38 (Malformations and Deformities of the Wrist and Forearm, p. 1339 a 1344), cap. 56 (Tendinopathy, p. 1906) e cap. 12 (Figura 12.1, p. 375 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (Wrist Disorders, p. 3315 a 3337, com os Boxes 74.2 e 74.3); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (Diaphyseal Fractures of the Radius and Ulna) e cap. 43 (Fractures of the Distal Radius and Ulna), sem página impressa no PDF (pág. PDF 1765, 1774, 1824, 1829 e 1850). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 14 (Distal Radioulnar Joint, p. 479 a 511, com a Tabela 14.1 e o caso 14.1), cap. 17 (Wrist Arthroscopy, p. 653 a 659, eTable 17.1, e p. 676 a 688), cap. 15 (Distal Radius Fractures, p. 527 e 558 a 563 aprox.), cap. 38 (Malformations and Deformities of the Wrist and Forearm, p. 1339 a 1344), cap. 56 (Tendinopathy, p. 1906) e cap. 12 (Figura 12.1, p. 375 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (Wrist Disorders, p. 3315 a 3337, com os Boxes 74.2 e 74.3); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (Diaphyseal Fractures of the Radius and Ulna) e cap. 43 (Fractures of the Distal Radius and Ulna), e cap. 44 (Carpal Fractures and Dislocations), sem página impressa no PDF, citados por capítulo e seção. As páginas citadas são as impressas.
 subtemas: Fibrocartilagem triangular e punho ulnar
 resumo: Incisura sigmoide rasa com raio maior que o da cabeça ulnar, plana em 42% (a mais instável), tipo C 30%; FCT de PALMER e WERNER com cinco componentes e quatro funções; radioulnares profundos na fóvea (ligamentum subcruentum); só os 15% periféricos do disco vascularizados; PALMER 1A central, 1B ulnar, 1C distal, 1D radial, 2A a 2E com perfuração a partir da 2C; trampolim positivo com gancho negativo = lesão distal; 1B aguda imobilizada, reparo se persistir ou instabilizar, NAKAMURA na foveal; luxação dorsal em pronação e extensão, estável em supinação, palmar estável em pronação; radioulnares toleram 5 a 7 mm de encurtamento; impacto ulnocarpal e preensão pronada; wafer de 2 a 4 mm; SAUVÉ-KAPANDJI, BOWERS e DARRACH, com coto ulnar instável como risco comum.
 ---
@@ -162,13 +162,13 @@ alerta: O gabarito oficial de `mao-1155` é 15%; o Green (p. 481) e o Campbell (
 | Shuck test | Forçar anteroposterior no lado ulnar | Instabilidade |
 !fim
 
-O sinal da fóvea diverge entre os livros. O Green liga a dor volar ao estiloide à **1B**, por coincidir com a fóvea (p. 489 e 494); o Campbell diz que indica **lesão de ligamento ulnocárpico** (p. 3316), e uma tabela de testes do carpo do Rockwood (cap. 43, pág. PDF 1873) o atribui ao **ulnopiramidal**. Na instabilidade, a translação é normalmente **maior em neutro**, por isso testa-se nas três posições, comparando lados; na subluxação palmar há o **dimple sign** dorsal (Green, p. 494).
+O sinal da fóvea diverge entre os livros. O Green liga a dor volar ao estiloide à **1B**, por coincidir com a fóvea (p. 489 e 494); o Campbell diz que indica **lesão de ligamento ulnocárpico** (p. 3316), e a lista de testes especiais do carpo do Rockwood (cap. 44, seção Signs and Symptoms of Carpal Fractures and Dislocations) o atribui ao **ulnopiramidal**. Na instabilidade, a translação é normalmente **maior em neutro**, por isso testa-se nas três posições, comparando lados; na subluxação palmar há o **dimple sign** dorsal (Green, p. 494).
 
 O capítulo 17 (p. 676 e 677) completa: lesão por **extensão e pronação com carga axial**, comum em **raquete, golfe** e na **furadeira que trava**; periférica = dor difusa, clique, dor ao girar maçaneta, **dor no recesso pré-estiloide**; central = dor sobre a ulna distal; foveal = **subluxação dorsal da cabeça**.
 
 ## Imagem
 
-O **PA neutro** padroniza a variância (ombro e cotovelo a 90 graus; sulco do ECU radial ao eixo do estiloide); **pronação, preensão ou as duas** promovem variância positiva; mede-se pelo **método das perpendiculares** (Green, cap. 14, p. 485). O perfil engana: **10 graus** de rotação mascaram a subluxação (MINO). Sugerem instabilidade o estiloide deslocado **mais de 2 mm** e, nas avulsões foveais, translação radial, encurtamento e deslocamento do estiloide **de 4 mm ou mais**. O **osteófito na margem proximal da cabeça** é sinal precoce de artrite. A **TC dos dois punhos em neutro, supinação e pronação** é o exame mais preciso para instabilidade (p. 486 e 494). Na RM, a lesão aparece como **hipersinal em T2** (Figura 14.12, lesão periférica ulnar); a **cintilografia** serve ao impacto (p. 486 e 487).
+O **PA neutro** padroniza a variância (ombro e cotovelo a 90 graus; sulco do ECU radial ao eixo do estiloide); **pronação, preensão ou as duas** promovem variância positiva; mede-se pelo **método das perpendiculares** (Green, cap. 14, p. 485). O perfil engana: **10 graus** de rotação mascaram a subluxação (MINO). Sugerem instabilidade o estiloide deslocado **mais de 2 mm** e, nas avulsões foveais, translação radial, encurtamento e deslocamento do estiloide **de 4 mm ou mais**. O **osteófito na margem proximal da cabeça** é sinal precoce de artrite. A **TC dos dois punhos em neutro, supinação e pronação** é o exame mais preciso para instabilidade (p. 486 e 494). Na RM, a lesão aparece como **hipersinal em T2** (Figura 14.12, p. 487, lesão periférica ulnar); a **cintilografia** serve ao impacto (p. 486 e 487).
 
 O Campbell (p. 3316 e 3317) avisa: a RM tem sensibilidade e especificidade perto de 100%, mas **muitos assintomáticos são positivos**, sobretudo acima dos 40 anos, e numa série detectou só **35% das lesões foveais**; a **artroscopia é o padrão-ouro**.
 
@@ -176,7 +176,7 @@ O Campbell (p. 3316 e 3317) avisa: a RM tem sensibilidade e especificidade perto
 conceito: Na RM, a lesão da FCT aparece como hipersinal em T2; o corte coronal localiza a lesão (central, radial ou periférica ulnar).
 como: O TARO 2025 mostrou uma RM e pediu a porção lesada e a sequência.
 armadilha: Achar que o T1 evidencia a lesão, ou confundir a inserção radial com a perfuração central.
-alerta: A imagem de `mao-0441` não foi conferida; o Green (Figura 14.12, p. 486) sustenta a sequência T2, mas a localização radial depende da imagem da prova.
+alerta: A imagem de `mao-0441` não foi conferida; o Green (Figura 14.12, p. 487) sustenta a sequência T2, mas a localização radial depende da imagem da prova.
 !fim
 
 ## Calcificação da FCT na pseudogota
@@ -247,7 +247,7 @@ PALMER divide as lesões em **traumáticas (classe 1)**, pela localização, e *
 
 Mnemônico anatômico: **A** no centro, **B** na ulna, **C** embaixo, no carpo, **D** no rádio. A **1D** deve ser reservada às **desinserções radiais verdadeiras**, que alguns confundiram com reparos de 1A (p. 489). A classificação **não guia tratamento nem prognóstico** e supõe lesões isoladas, quando várias partes rompem juntas (p. 487).
 
-Pelo Green (p. 487), a maioria das traumáticas vem de **rotação aguda do antebraço**, **carga axial com distração ulnar** ou **queda com o punho pronado**; **a maioria das agudas isoladas não exige tratamento precoce**; a associação com fratura do rádio é de **13 a 60%**, mas os **problemas persistentes são bem menos frequentes**. O Rockwood (cap. 43, pág. PDF 1824) dá **39 a 82%**, a maioria avulsões periféricas com fratura do estiloide, e mostra que os operados evoluem como a história natural.
+Pelo Green (p. 487), a maioria das traumáticas vem de **rotação aguda do antebraço**, **carga axial com distração ulnar** ou **queda com o punho pronado**; **a maioria das agudas isoladas não exige tratamento precoce**; a associação com fratura do rádio é de **13 a 60%**, mas os **problemas persistentes são bem menos frequentes**. O Rockwood (cap. 43, seção Injuries Associated with Fractures of the Distal Radius and Ulna, Triangular Fibrocartilage Complex Injury) dá **39 a 82%**, a maioria avulsões periféricas com fratura do estiloide, e mostra que os operados evoluem como a história natural.
 
 !questoes central=mao-1193
 conceito: As traumáticas vêm de rotação aguda, carga axial com distração ulnar ou queda pronada; a maioria das agudas isoladas não precisa de tratamento; a associação com fratura do rádio é frequente (13 a 60% no Green), mas os problemas persistentes são bem menos frequentes.
@@ -378,7 +378,7 @@ armadilha: Inverter as posições de estabilidade ou dizer que a palmar é mais 
 
 A **fratura do rádio distal é a causa mais frequente de instabilidade**, embora ela seja **incomum após redução precisa**. Os fatores de risco são **grande deslocamento inicial** e **encurtamento radial grave**: os radioulnares toleram **no máximo 5 a 7 mm**; sem fratura da incisura, a FCT rompe na ulna (Green, cap. 14, p. 491). O Campbell (p. 3324): **mais de 5 mm** implica lesão significativa. O capítulo 15 (p. 559 aprox.): **as queixas residuais mais frequentes após fratura consolidada do rádio vêm da coluna ulnar**, e toda fratura desviada tem algum envolvimento da ARUD.
 
-Instabilidade após fixar o rádio: imobilizar na posição estável ou **fixar a ulna ao rádio** com fios de pelo menos 0,062 pol, proximais à ARUD, **nas quatro corticais**; se grave ou bidirecional, fixar o estiloide ou reparar a FCT (Green, p. 492). Na **GALEAZZI**, a 1B é **quase inevitável** e o risco cresce com fratura a **até 7,5 cm** da articulação; o Rockwood (cap. 42, pág. PDF 1765) usa o mesmo corte e chama de **complexas** as luxações irredutíveis por interposição do ECU ou do extensor do mínimo.
+Instabilidade após fixar o rádio: imobilizar na posição estável ou **fixar a ulna ao rádio** com fios de pelo menos 0,062 pol, proximais à ARUD, **nas quatro corticais**; se grave ou bidirecional, fixar o estiloide ou reparar a FCT (Green, p. 492). Na **GALEAZZI**, a 1B é **quase inevitável** e o risco cresce com fratura a **até 7,5 cm** da articulação; o Rockwood (cap. 42, seção Classification of Diaphyseal Fractures of the Radius and Ulna, Galeazzi Fractures) usa o mesmo corte e chama de **complexas** as luxações irredutíveis por interposição do ECU ou do extensor do mínimo.
 
 !questoes treino=mao-2405,mao-1956
 conceito: Os radioulnares toleram no máximo 5 a 7 mm de encurtamento radial; as queixas residuais mais frequentes após fratura consolidada do rádio distal vêm da coluna ulnar.
@@ -388,11 +388,11 @@ armadilha: Escolher 2 a 3 mm (lembra o wafer) ou a coluna intermédia.
 
 ## O estiloide e o shift coronal
 
-FRYKMAN: fratura do estiloide em cerca de **61%** das fraturas do rádio; a **ponta** não se trata; a **base**, sobretudo desviada, tem mais risco, e sua fixação restaura a estabilidade se a ARUD seguir instável após fixar o rádio (Green, cap. 14, p. 493). O Rockwood (cap. 43, pág. PDF 1850) relativiza: **dois ensaios randomizados** com placa volar mostraram que o estiloide **não reparado, em qualquer nível ou desvio, não afeta a função nem a estabilidade**; testa-se a ARUD e fixa-se só se ela seguir instável. O capítulo 15 do Green (p. 562) também nota essa falta de correlação e aponta outro culpado, o **shift coronal**: só a **translação radial** foi preditor independente de avulsão foveal (NAKAMURA), e **2 mm** de shift produzem instabilidade com DOB íntegro (DY).
+FRYKMAN: fratura do estiloide em cerca de **61%** das fraturas do rádio; a **ponta** não se trata; a **base**, sobretudo desviada, tem mais risco, e sua fixação restaura a estabilidade se a ARUD seguir instável após fixar o rádio (Green, cap. 14, p. 493). O Rockwood (cap. 43, seção Fractures of the Distal Ulna, Fixation of the Distal Ulna) relativiza: **dois ensaios randomizados** com placa volar mostraram que o estiloide **não reparado, em qualquer nível ou desvio, não afeta a função nem a estabilidade**; testa-se a ARUD e fixa-se só se ela seguir instável. O capítulo 15 do Green (p. 562) também nota essa falta de correlação e aponta outro culpado, o **shift coronal**: só a **translação radial** foi preditor independente de avulsão foveal (NAKAMURA), e **2 mm** de shift produzem instabilidade com DOB íntegro (DY).
 
 ## FERNANDEZ: as lesões da ARUD
 
-O Green (cap. 15, p. 527) baseia a estabilidade após realinhar o rádio em duas condições: **integridade da incisura** e **continuidade dos radioulnares** na fóvea. O Rockwood (cap. 43, pág. PDF 1829) confirma que FERNANDEZ inclui as lesões ulnares, com foco na estabilidade da ARUD.
+O Green (cap. 15, p. 527) baseia a estabilidade após realinhar o rádio em duas condições: **integridade da incisura** e **continuidade dos radioulnares** na fóvea. O Rockwood (cap. 43, seção Classification of Associated Ulnar Injury) confirma que FERNANDEZ inclui as lesões ulnares, com foco na estabilidade da ARUD.
 
 !tabela Lesões da ARUD na fratura do rádio, segundo FERNANDEZ (Green's Operative Hand Surgery, 7ª ed., cap. 15, p. 527 e 563 aprox.)
 | Tipo | Definição | Exemplos | Tratamento |

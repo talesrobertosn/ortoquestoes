@@ -1,6 +1,6 @@
 ---
 id: rockwood10-luxacao-acromioclavicular
-versao: 2
+versao: 3
 titulo: Luxação acromioclavicular e esternoclavicular
 especialidade: trauma
 acesso: gratis
@@ -154,7 +154,7 @@ Pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, seção Signs 
 - **Teste do encolher (shrug test):** se a AC reduz com pressão sob o cotovelo ou com o encolher ativo, é tipo III (redutível); **IV e V não reduzem** quando a fáscia deltotrapezial está interposta.
 - **Visto de cima:** no tipo IV a clavícula está posterior, "abotoada" no trapézio, às vezes com a pele em tenda.
 - **Adução cruzada (cross-body):** braço a **90 graus** aduzido através do tórax; positivo quando dói **na AC**, que é comprimida.
-- **Compressão ativa de O'BRIEN:** em 88% (55 de 62) dos pacientes com dor na AC no teste havia alteração confirmada. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2149 aprox.), explica: positivo quando a primeira manobra dói e a segunda alivia; dor **na AC ou em cima do ombro** indica a AC, dor ou estalido **dentro** da glenoumeral indica o **lábio**.
+- **Compressão ativa de O'BRIEN:** em 88% (55 de 62) dos pacientes com dor na AC no teste havia alteração confirmada. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2149), explica: positivo quando a primeira manobra dói e a segunda alivia; dor **na AC ou em cima do ombro** indica a AC, dor ou estalido **dentro** da glenoumeral indica o **lábio**.
 - **Infiltração guiada por ultrassom:** separa dor intra-articular de dor da AC.
 
 !questoes central=ombro-cotovelo-0571
@@ -172,7 +172,7 @@ Pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, seção Imagin
 
 ## ZANCA: a AC de frente e sem sobreposição
 
-No AP comum, a clavícula distal e o acrômio se sobrepõem à **espinha da escápula**. ZANCA, revendo **1.000 radiografias**, propôs inclinar o raio **10 a 15 graus no sentido cefálico**: a junta aparece e a **distância coracoclavicular fica padronizada**. É a rotina, de preferência **bilateral num só chassi**. O Sizínio e o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 20), dão os mesmos 10 a 15 graus.
+No AP comum, a clavícula distal e o acrômio se sobrepõem à **espinha da escápula**. ZANCA, revendo **1.000 radiografias**, propôs inclinar o raio **10 a 15 graus no sentido cefálico**: a junta aparece e a **distância coracoclavicular fica padronizada**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, seção Imaging), explica por que padronizar: no AP mais puro, a distância entre a clavícula e o coracoide **aumenta** pela **paralaxe** radiográfica e pelo contorno ósseo, e a inclinação cefálica corrige isso. É a rotina, de preferência **bilateral num só chassi**. O Sizínio e o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 20), dão os mesmos 10 a 15 graus.
 
 ## Axilar: o plano que mostra o tipo IV
 
@@ -343,7 +343,7 @@ como: O TECOC pediu quais ligamentos AC a ressecção artroscópica preserva (po
 armadilha: Anterior e inferior são justamente as faces abordadas na ressecção pelos portais subacromiais; a parte que segura a clavícula para trás é a posterossuperior.
 !fim
 
-A artrose AC também aparece na **artrodese glenoumeral**. O Campbell (cap. 14, p. 629 aprox.) lista a artrose secundária da AC e a dor escapulotorácica como complicações comuns da artrodese do ombro e manda, se houver sinal de artrose AC no pré-operatório, fazer **ressecção da clavícula distal** concomitante, e não fundir a AC.
+A artrose AC também aparece na **artrodese glenoumeral**. O Campbell (cap. 14, p. 629) lista a artrose secundária da AC e a dor escapulotorácica como complicações comuns da artrodese do ombro e manda, se houver sinal de artrose AC no pré-operatório, fazer **ressecção da clavícula distal** concomitante, e não fundir a AC.
 
 !questoes central=ombro-cotovelo-0505
 conceito: Na artrodese glenoumeral, a artrose AC prévia indica ressecção concomitante da clavícula distal, não artrodese da AC.
