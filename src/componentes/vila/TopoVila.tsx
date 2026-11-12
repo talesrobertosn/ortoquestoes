@@ -42,7 +42,7 @@ const PONTOS = [[0.12, 0.3, 7, 0], [0.3, 0.55, 9, -3], [0.46, 0.18, 8, -5], [0.6
 const ROTINA_CORUJA: EstadoCoruja[] = ['parada', 'olhando', 'parada', 'lendo', 'lendo', 'parada']
 const CORUJA = { w: 44, h: 32 }
 
-function Bichos({ cena, dicas, periodo }: { cena: CenaVila; dicas: readonly string[]; periodo: Periodo }) {
+function Bichos({ cena, dicas, periodo, estatica }: { cena: CenaVila; dicas: readonly string[]; periodo: Periodo; estatica: boolean }) {
   const [fala, definirFala] = useState<{ quem: 'coruja' | 'gato'; texto: string } | null>(null)
   const [passo, definirPasso] = useState(0)
   const [acenou, definirAcenou] = useState(0)
@@ -55,10 +55,10 @@ function Bichos({ cena, dicas, periodo }: { cena: CenaVila; dicas: readonly stri
     return () => window.clearTimeout(t)
   }, [fala])
   useEffect(() => {
-    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    if (estatica || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
     const t = window.setInterval(() => { if (!document.hidden) definirPasso((p) => (p + 1) % ROTINA_CORUJA.length) }, 5200)
     return () => window.clearInterval(t)
-  }, [])
+  }, [estatica])
   const tocarCoruja = () => {
     toquesCoruja.current++
     definirAcenou((n) => n + 1)
@@ -71,7 +71,7 @@ function Bichos({ cena, dicas, periodo }: { cena: CenaVila; dicas: readonly stri
   // sol) e volta ao que fazia. Só com a aba à vista; no celular, bem mais espaçado; com "menos movimento", parado.
   const [poseGato, definirPoseGato] = useState<IdLinhaGato | null>(null)
   useEffect(() => {
-    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    if (estatica || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
     const celular = window.matchMedia?.('(max-width: 60rem)').matches
     const opcoes: IdLinhaGato[] = periodo === 'noite' ? ['lambendo', 'cacando', 'ronronando'] : ['lambendo', 'derretido', 'cacando', 'espreguicando']
     let t = 0, volta = 0
@@ -86,7 +86,7 @@ function Bichos({ cena, dicas, periodo }: { cena: CenaVila; dicas: readonly stri
     }
     proxima()
     return () => { window.clearTimeout(t); window.clearTimeout(volta) }
-  }, [periodo])
+  }, [periodo, estatica])
   const { coruja, gato } = cena
   // A luz da cena nos bichos (componentes/mascote/luz.ts): as chamas acesas nesta hora e o sol ou a lua da janela.
   const ceu = cena.ceu ?? { x: 470, y: 0 }
@@ -115,7 +115,7 @@ function Bichos({ cena, dicas, periodo }: { cena: CenaVila; dicas: readonly stri
   </>
 }
 
-function Palco({ cena, dicas }: { cena: CenaVila; dicas: readonly string[] }) {
+function Palco({ cena, dicas, estatica }: { cena: CenaVila; dicas: readonly string[]; estatica: boolean }) {
   const periodo = usarPeriodo()
   const palco = useRef<HTMLDivElement>(null)
   const [visivel, definirVisivel] = useState(true)
@@ -143,7 +143,7 @@ function Palco({ cena, dicas }: { cena: CenaVila; dicas: readonly string[] }) {
       {p && <span aria-hidden="true" className="vl-palco__peca vl-palco__poeira" style={lugar(p[0], p[1], p[2], p[3])}>
         {PONTOS.map(([x, y, t, d], i) => <i key={i} style={{ left: `${x * 100}%`, top: `${y * 100}%`, '--t': `${t}s`, '--d': `${d}s` } as CSSProperties} />)}
       </span>}
-      <Bichos cena={cena} dicas={dicas} periodo={periodo} />
+      <Bichos cena={cena} dicas={dicas} periodo={periodo} estatica={estatica} />
     </div>
   )
 }
@@ -152,15 +152,15 @@ function Palco({ cena, dicas }: { cena: CenaVila; dicas: readonly string[] }) {
  * O topo: `cabeca` (selo e título) e `texto` (mensagem e ações principais) ficam sobre a arte no computador; a
  * `bancada` (números e atalhos) fica logo abaixo. No celular a arte vira uma janela inteira em cima e o resto desce.
  */
-export function TopoVila({ cena, cabeca, texto, bancada, dicas = [], className = '', rotulo }: {
-  cena: CenaVila; cabeca: ReactNode; texto: ReactNode; bancada?: ReactNode; dicas?: readonly string[]; className?: string; rotulo: string
+export function TopoVila({ cena, cabeca, texto, bancada, dicas = [], className = '', rotulo, estatica = false }: {
+  cena: CenaVila; cabeca: ReactNode; texto: ReactNode; bancada?: ReactNode; dicas?: readonly string[]; className?: string; rotulo: string; estatica?: boolean
 }) {
   const periodo = usarPeriodo()
   return (
     // A classe da página vem antes: base.css dá padding de celular a toda seção cuja classe termina em "-heroi".
-    <section className={`${className} vl vl--${cena.arquivo} vl--${periodo}`.trim()} aria-labelledby={rotulo}>
+    <section className={`${className} vl vl--${cena.arquivo} vl--${periodo}${estatica ? ' vl--estatica' : ''}`.trim()} aria-labelledby={rotulo}>
       <div className="vl__cena">
-        <Palco cena={cena} dicas={dicas} />
+        <Palco cena={cena} dicas={dicas} estatica={estatica} />
         <div className="vl__cabeca">{cabeca}</div>
         <div className="vl__texto">{texto}</div>
       </div>

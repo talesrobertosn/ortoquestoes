@@ -179,7 +179,7 @@ export function Revisao() {
         </button>)}
       </div>
     </nav>}
-    <TopoVila cena={CENA_ESTUFA} rotulo="rvx-titulo" dicas={DICAS_REVISAO} className={'rvx-heroi' + (zerado ? ' rvx-heroi--zerado' : '')}
+    <TopoVila cena={CENA_ESTUFA} rotulo="rvx-titulo" dicas={DICAS_REVISAO} estatica className={'rvx-heroi' + (zerado ? ' rvx-heroi--zerado' : '')}
       cabeca={<>
         <p className="vl__selo"><Icone nome="calendario" tamanho={13} /> {capitalizar(FORMATO_HOJE.format(hoje))}</p>
         {hojeTotal
