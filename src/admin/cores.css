@@ -985,3 +985,97 @@ li.a3-indicacao .a3-pessoa-linha .a3-avatar { background: var(--cor-indicacao-ve
   .ag-rosto { width: 32px; height: 32px; }
 }
 @media (prefers-reduced-motion: reduce) { .ag-numero, .ag-rosto { transition: none; } }
+
+/* ==========================================================================
+   Barra lateral no tema do painel (11/11/2026, Tales: "a barra lateral na temática e organizada"):
+   grupos com título, mostrador "ao vivo", item ativo em verdete com sombra em degrau, ladrilhos e
+   bordas firmes como no Financeiro, nas Metas e no Início.
+   ========================================================================== */
+.a3-lateral { --lt-degrau: color-mix(in srgb, var(--a3-tinta) 85%, transparent); --lt-borda: color-mix(in srgb, var(--a3-tinta) 14%, transparent); gap: 10px; padding: 16px 14px; background: var(--a3-alt); border-right: 2px solid var(--lt-borda); }
+:root[data-tema="escuro"] .a3-lateral { --lt-degrau: #000; --lt-borda: color-mix(in srgb, var(--a3-tinta) 18%, transparent); }
+.a3-casca { background: linear-gradient(to right, var(--a3-alt) calc(var(--a3-lateral) - 2px), transparent var(--a3-lateral)); }
+.a3-lateral .a3-marca { padding: 8px 10px; margin-bottom: 2px; border: 2px solid var(--lt-degrau); border-radius: 10px; background: var(--a3-papel); box-shadow: 3px 3px 0 var(--lt-degrau); }
+.a3-lateral .a3-marca img { border-radius: 6px; }
+.a3-lateral .a3-marca small { text-transform: uppercase; letter-spacing: .08em; font-size: 10px; font-weight: 700; color: var(--a3-acento); }
+.a3-aovivo { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 10px; border: 2px solid color-mix(in srgb, #16a34a 45%, var(--lt-borda)); background: color-mix(in srgb, #16a34a 7%, var(--a3-papel)); color: var(--a3-tinta); text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.a3-aovivo b { font: 800 20px/1 var(--a3-titulo); letter-spacing: -.02em; text-transform: none; }
+.a3-aovivo small { font-size: 11px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--a3-cinza); }
+.a3-aovivo:hover { box-shadow: 2px 2px 0 color-mix(in srgb, #16a34a 70%, #000); transform: translate(-1px, -1px); }
+.a3-aovivo__ponto { position: relative; width: 9px; height: 9px; border-radius: 1px; background: #16a34a; }
+.a3-aovivo__ponto::after { content: ""; position: absolute; inset: -4px; border: 2px solid #16a34a; border-radius: 1px; animation: a3-piscar 1.6s steps(2, jump-none) infinite; }
+:root[data-tema="escuro"] .a3-aovivo__ponto, :root[data-tema="escuro"] .a3-aovivo__ponto::after { background: #4ade80; border-color: #4ade80; }
+:root[data-tema="escuro"] .a3-aovivo__ponto::after { background: transparent; }
+.a3-lateral .a3-busca-gatilho { border-radius: 8px; border-width: 2px; }
+.a3-nav-grupo { gap: 14px; }
+.a3-nav-bloco { display: grid; gap: 2px; }
+.a3-nav-bloco__titulo { display: flex; align-items: center; gap: 7px; padding: 0 10px 4px; font-size: 10.5px; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; color: var(--a3-cinza); }
+.a3-nav-bloco__titulo::before { content: ""; width: 6px; height: 6px; background: var(--ouro, #c08a1e); box-shadow: 2px 2px 0 var(--verdete, #14655e); }
+.a3-lateral .a3-nav-area { min-height: 42px; border-radius: 8px; border: 2px solid transparent; font-size: 14.5px; transition: transform .12s, box-shadow .12s, background .12s; }
+.a3-lateral .a3-nav-area:hover { background: var(--a3-papel); border-color: var(--lt-borda); transform: translate(-1px, -1px); box-shadow: 2px 2px 0 var(--lt-degrau); }
+.a3-lateral .a3-nav-grupo .a3-nav-area[aria-current] { background: var(--verdete); color: var(--cor-sobre, #fff); border-color: var(--lt-degrau); box-shadow: 3px 3px 0 var(--lt-degrau); }
+.a3-lateral .a3-nav-partes { margin: 4px 0 6px 20px; border-left: 2px dotted var(--lt-borda); }
+.a3-lateral .a3-nav-parte { border-radius: 6px; }
+.a3-lateral .a3-nav-grupo .a3-nav-parte[aria-current="page"] { background: var(--a3-papel); color: var(--verdete); box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 60%, transparent), inset 0 0 0 1.5px color-mix(in srgb, var(--verdete) 45%, transparent); }
+.a3-lateral .a3-nav-parte[aria-current="page"]::before { left: -14px; width: 3px; border-radius: 0; background: var(--ouro, #c08a1e); }
+.a3-lateral .a3-cont { border-radius: 5px; }
+.a3-lateral__pe { border-top: 2px dotted var(--lt-borda); }
+@media (prefers-reduced-motion: reduce) { .a3-aovivo__ponto::after { animation: none; } .a3-lateral .a3-nav-area, .a3-aovivo { transition: none; transform: none !important; } }
+@keyframes a3-piscar { 0% { opacity: .7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.6); } }
+/* Início: assinantes com acesso, por plano, dentro dos quadrados de hoje (11/11/2026). */
+.ag-acesso { grid-column: 1 / -1; display: grid; gap: 8px; padding: 12px 14px; border-radius: 8px; border: 2px solid color-mix(in srgb, var(--ag-assinante) 40%, transparent); background: color-mix(in srgb, var(--ag-assinante) 6%, var(--a3-papel)); font: inherit; text-align: left; color: var(--a3-tinta); cursor: pointer; }
+.ag-acesso:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 color-mix(in srgb, var(--ag-assinante) 70%, #000); }
+.ag-acesso:focus-visible { outline: 2px solid var(--a3-acento); outline-offset: 2px; }
+.ag-acesso__topo { display: flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 700; color: var(--a3-tinta-2); }
+.ag-acesso__topo i { width: 8px; height: 8px; border-radius: 50%; background: var(--ag-assinante); }
+.ag-acesso__topo b { margin-left: auto; font: 800 28px/1 var(--a3-titulo); letter-spacing: -.03em; color: var(--a3-tinta); }
+.ag-acesso__barra { display: flex; gap: 2px; height: 10px; border-radius: 2px; overflow: hidden; background: var(--a3-recuo); }
+.ag-acesso__barra i { min-width: 4px; }
+.ag-acesso__lista { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12.5px; color: var(--a3-cinza); align-items: center; }
+.ag-acesso__lista > span { display: inline-flex; align-items: center; gap: 6px; }
+.ag-acesso__lista i { width: 10px; height: 10px; border-radius: 2px; }
+.ag-acesso__lista b { color: var(--a3-tinta); font-size: 14px; }
+.ag-acesso__ir { margin-left: auto; color: var(--a3-acento); font-weight: 650; }
+.ag-plano-mensal { background: var(--ag-assinante); }
+.ag-plano-semestral { background: #5872b5; }
+.ag-plano-anual { background: var(--ag-lead); }
+.ag-plano-cortesia { background: var(--ag-gratis); }
+:root[data-tema="escuro"] .ag-plano-semestral { background: #7891d4; }
+@media (prefers-reduced-motion: reduce) { .ag-acesso:hover { transform: none; } }
+
+/* ==========================================================================
+   Início › lista de pessoas no mesmo tema do topo (11/11/2026, Tales: "essa parte não ficou bonita igual o
+   resto, destoa do geral"): painel de borda firme com sombra em degrau, abas e filtros em ladrilho, cada
+   pessoa num cartão com a faixa de cor do tipo, iniciais em ladrilho e os números na fonte dos títulos.
+   ========================================================================== */
+#a3-pessoas { --pp-borda: color-mix(in srgb, var(--a3-tinta) 82%, transparent); --pp-leve: color-mix(in srgb, var(--a3-tinta) 14%, transparent); border: 2px solid var(--pp-borda); border-radius: 10px; box-shadow: 4px 4px 0 var(--pp-borda); overflow: hidden; }
+:root[data-tema="escuro"] #a3-pessoas { --pp-borda: color-mix(in srgb, var(--a3-tinta) 30%, transparent); box-shadow: 4px 4px 0 #000; }
+#a3-pessoas .a3-abas-locais { padding: 12px 14px 0; gap: 6px; border-bottom: 2px solid var(--pp-leve); }
+#a3-pessoas .a3-abas-locais [role="tab"] { border-radius: 6px 6px 0 0; border: 2px solid transparent; border-bottom: 0; font-weight: 650; }
+#a3-pessoas .a3-abas-locais [role="tab"][aria-selected="true"] { border-color: var(--pp-leve); background: var(--a3-papel); color: var(--verdete); box-shadow: inset 0 3px 0 var(--verdete); }
+#a3-pessoas .a3-secao-cabeca h2 { font: 800 22px/1.2 'Plus Jakarta Sans', var(--a3-titulo); letter-spacing: -.025em; }
+#a3-pessoas .a3-bolha { border-radius: 6px; box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 55%, #000); }
+#a3-pessoas .a3-chip { border-radius: 6px; border-width: 2px; border-color: var(--pp-leve); padding-left: 12px; }
+#a3-pessoas .a3-chip span { border-radius: 4px; }
+#a3-pessoas .a3-chip:hover { transform: translate(-1px, -1px); box-shadow: 2px 2px 0 var(--pp-borda); }
+#a3-pessoas .a3-chip[aria-pressed="true"] { box-shadow: 2px 2px 0 var(--verdete); }
+#a3-pessoas .a3-chip[aria-pressed="true"] span { border-radius: 4px; }
+#a3-pessoas .a3-busca, #a3-pessoas input[type="search"] { border-radius: 6px; }
+#a3-pessoas .a3-pessoas-lista { display: grid; gap: 10px; padding: 12px 14px 16px; background: var(--a3-alt); }
+#a3-pessoas .a3-pessoas-lista > li { border: 2px solid var(--pp-leve); border-left: 6px solid var(--c); border-radius: 8px; background: var(--a3-papel); padding: 12px 16px 12px 14px; transition: transform .12s, box-shadow .12s; }
+#a3-pessoas .a3-pessoas-lista > li:last-child { border-bottom: 2px solid var(--pp-leve); }
+#a3-pessoas .a3-pessoas-lista > li:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--pp-borda); }
+#a3-pessoas .a3-pessoas-lista > li.lead { background: color-mix(in srgb, var(--ouro-veu) 45%, var(--a3-papel)); }
+#a3-pessoas .a3-pessoa-linha .a3-avatar { border-radius: 8px; box-shadow: 2px 2px 0 color-mix(in srgb, var(--a3-tinta) 60%, transparent); font-weight: 800; }
+#a3-pessoas li.assinante .a3-pessoa-linha .a3-avatar { box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 60%, #000); }
+#a3-pessoas .a3-pessoa-linha__nome { font-size: 15px; font-weight: 700; }
+#a3-pessoas .a3-numeros-pessoa { gap: 4px 6px; }
+#a3-pessoas .a3-numeros-pessoa > span { min-width: 64px; padding: 6px 8px; border-radius: 6px; background: var(--a3-alt); border: 1.5px solid var(--pp-leve); }
+#a3-pessoas .a3-numeros-pessoa b { font: 800 17px/1.15 'Plus Jakarta Sans', var(--a3-titulo); letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+#a3-pessoas .a3-numeros-pessoa .destaque b { font-size: 21px; }
+#a3-pessoas .a3-numeros-pessoa small { font-size: 10.5px; color: var(--a3-cinza); }
+#a3-pessoas .a3-pessoa-linha__acoes .a3-botao, #a3-pessoas .a3-pessoa-linha__acoes a, #a3-pessoas .a3-pessoa-linha__acoes button { border-radius: 6px; }
+#a3-pessoas .a3-paginacao { padding: 12px 16px; border-top: 2px solid var(--pp-leve); }
+@media (max-width: 640px) { #a3-pessoas .a3-pessoas-lista { padding: 10px; } #a3-pessoas .a3-numeros-pessoa > span { min-width: 0; padding: 5px 4px; } }
+@media (prefers-reduced-motion: reduce) { #a3-pessoas .a3-pessoas-lista > li, #a3-pessoas .a3-chip { transition: none; transform: none !important; } }
+#a3-pessoas .a3-abas-locais [role="tab"][aria-selected="true"], #a3-pessoas .a3-abas-locais [role="tab"].vivo[aria-selected="true"] { background: var(--verdete) !important; color: var(--cor-sobre, #fff) !important; border-color: color-mix(in srgb, var(--verdete) 70%, #000) !important; box-shadow: none; }
+#a3-pessoas .a3-abas-locais [role="tab"][aria-selected="true"] .a3-cont { background: var(--cor-sobre, #fff); color: var(--verdete); }

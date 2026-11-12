@@ -15,6 +15,7 @@ import { Tabela } from '../ui/tabela'
 import { contarPorPeriodo, type Agrupamento } from './ritmo'
 import { FaixaMetas } from './metasResumo'
 import { SemanaTipica } from './semanaTipica'
+import { PlacarCrescimento } from './crescimentoHub'
 import { PulsoCrescimento, JornadaDeCompra, usarJornada } from './PulsoCrescimento'
 import { Canais, Duplicadas, ForaDoPublico, RetencaoPorTipo } from './qualidade'
 
@@ -66,15 +67,15 @@ export default function Crescimento() {
 
   const coortes = Array.isArray(retQ.dados) ? retQ.dados.map(c => ({ semana: String(c.semana).slice(0, 10), cadastros: Number(c.cadastros), e1: Number(c.estudaram_1a_semana), v2: Number(c.voltaram_2a_semana) })) : null
 
-  return <div className="a3-pilha a3-pilha--larga cr ng">
-    <header className="ng-cabeca">
-      <span className="a3-rotulo">Crescimento</span>
-      <h1 className="a3-titulo-1">Seu crescimento, com contexto</h1>
-      <p>Acompanhe quem chega, quem compra e quem continua estudando.</p>
-      <nav className="ng-ancoras" aria-label="Partes da página">{SECOES.map(([id, nome]) => <a key={id} href={`#${id}`} onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>{nome}</a>)}</nav>
+  return <div className="a3-pilha a3-pilha--larga cr ng hb">
+    <header className="hb-cabeca">
+      <div className="hb-cabeca__sobre"><b>Crescimento</b><span>contas do público, sem teste e sem administrador</span></div>
+      <h1>Quem chega, quem assina<br />e quem continua estudando.</h1>
+      <nav className="hb-ancoras" aria-label="Partes da página">{SECOES.map(([id, nome]) => <a key={id} href={`#${id}`} onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>{nome}</a>)}</nav>
     </header>
 
-    <PulsoCrescimento />
+    <PlacarCrescimento />
+    <details className="ng-detalhes" id="cr-detalhe"><summary>Movimento hora a hora, médias de 7 dias, calendário de 91 dias e anotações <small>a comparação detalhada de antes</small></summary><PulsoCrescimento /></details>
     <FaixaMetas titulo="Objetivos do mês" chaves={['cadastros', 'novosPagantes']} />
 
     {!base ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="As contas não carregaram" texto={p.erroDados} /> : <Carregando linhas={8} texto="Contando cadastros e assinaturas…" />}</div> : <>

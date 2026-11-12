@@ -5,7 +5,8 @@ let chamadas=[]
 export async function antes(page){chamadas=await instalarDados(page,{vazio:process.env.OQ_VAZIO==='1',falha:process.env.OQ_FALHA==='1'})}
 export default async function roteiro(page,foto,nome){
   const erros=[];page.on('pageerror',e=>erros.push(e.message))
-  await page.getByRole('heading',{name:'Seu crescimento, com contexto'}).waitFor()
+  await page.getByRole('heading',{name:/Quem chega, quem assina/}).waitFor()
+  await page.locator('#cr-detalhe > summary').click()
   await foto('crescimento-topo')
   await page.getByText('Explorar o histórico: linhas, médias e calendário',{exact:true}).click()
   await page.getByRole('group',{name:'Escala do crescimento'}).getByRole('button',{name:'Mês',exact:true}).click()

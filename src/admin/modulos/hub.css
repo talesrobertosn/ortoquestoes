@@ -488,3 +488,53 @@
 }
 .ag-numero--dinheiro b { white-space: nowrap; font-size: clamp(20px, 1.9vw, 24px) !important; }
 @media (max-width: 700px) { .hb-ancoras { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -2px; padding: 2px 2px 6px; } .hb-ancoras a { flex: none; } .hb-ancoras::-webkit-scrollbar { display: none; } }
+
+/* ───────── Crescimento: placar e torres (11/11/2026) ───────── */
+.hb-cresc { gap: 16px; }
+.hb-cresc__grade { display: grid; }
+.hb-cresc__linha { display: grid; grid-template-columns: minmax(150px, 1.1fr) repeat(3, minmax(0, 1fr)); gap: 14px; align-items: start; padding: 14px 0; border-bottom: 1px solid var(--a3-linha); }
+.hb-cresc__cab { padding-top: 0; font-size: 12px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; color: var(--a3-cinza); }
+.hb-cresc__nome { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; padding-top: 8px; }
+.hb-cresc__cel { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 4px 10px; min-width: 0; }
+.hb-cresc__num { font: 800 34px/1 var(--px-num, var(--a3-titulo)); letter-spacing: -.035em; background: none; border: 0; padding: 0; color: var(--a3-tinta); cursor: pointer; text-align: left; border-radius: 6px; }
+button.hb-cresc__num:hover { color: var(--a3-acento); text-decoration: underline; text-decoration-thickness: 2px; }
+.hb-cresc__num--fixo { cursor: default; font-size: 28px; }
+.hb-cresc__cel .hb-var { justify-self: start; }
+.hb-cresc__barras { grid-column: 1 / -1; display: grid; gap: 2px; }
+.hb-cresc__barras i { display: block; height: 6px; border-radius: 2px; min-width: 2px; }
+.hb-cresc__cel small { grid-column: 1 / -1; font-size: 11.5px; color: var(--a3-cinza); }
+.hb-cresc__torres { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.hb-cresc__h { margin: 0; font-size: 15px; font-weight: 700; }
+@media (max-width: 900px) { .hb-cresc__torres { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 700px) {
+  .hb-cresc__linha { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .hb-cresc__linha > :first-child { grid-column: 1 / -1; padding-top: 0; }
+  .hb-cresc__cab > :first-child { display: none; }
+  .hb-cresc__num { font-size: 26px; }
+  .hb-cresc__cel { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Os quadros antigos do Crescimento no mesmo tema. */
+.hb.cr .ng-painel, .hb.cr .cr-cartao, .hb.cr .ng-detalhes { border: 2px solid var(--px-borda); border-radius: 10px; box-shadow: var(--px-degrau); background: var(--a3-papel); }
+.hb.cr .cr-secao__cabeca h2, .hb.cr .ng-titulo h2 { font-family: 'Plus Jakarta Sans', var(--a3-titulo); font-weight: 750; letter-spacing: -.025em; }
+.hb.cr .ng-kicker { display: inline-flex; align-items: center; gap: 7px; }
+.hb.cr .ng-kicker::before { content: ""; width: 7px; height: 7px; background: var(--hb-s-ouro); box-shadow: 2px 2px 0 var(--hb-s-verde); }
+.hb.cr .cr-secao__numero { border-radius: 6px; box-shadow: 2px 2px 0 var(--px-borda); }
+.hb.cr .ng-detalhes > summary { padding: 0 4px; }
+
+/* ───────── Assinantes (11/11/2026) ───────── */
+.hb-placar--assin .hb-heroi { gap: 14px; }
+.hb-vence { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.hb-vence__col { display: grid; gap: 8px; align-content: start; min-width: 0; padding: 12px; border-radius: 8px; background: var(--a3-alt); border: 2px solid color-mix(in srgb, var(--a3-tinta) 10%, transparent); }
+.hb-vence__col h4 { margin: 0; display: flex; justify-content: space-between; align-items: baseline; font-size: 12.5px; color: var(--a3-tinta-2); }
+.hb-vence__col h4 b { font: 800 22px/1 var(--a3-titulo); color: var(--a3-tinta); }
+.hb-vence__col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; max-height: 320px; overflow: auto; }
+.hb-vence__pessoa { width: 100%; display: grid; text-align: left; padding: 7px 10px; border-radius: 6px; border: 0; border-left: 4px solid var(--hb-s-cinza); background: var(--a3-papel); font: inherit; font-size: 13px; font-weight: 600; color: var(--a3-tinta); cursor: pointer; min-height: 44px; }
+.hb-vence__pessoa small { font-size: 11.5px; font-weight: 400; color: var(--a3-cinza); }
+.hb-vence__pessoa--pix { border-left-color: var(--hb-s-ouro); }
+.hb-vence__pessoa--cartao { border-left-color: var(--hb-s-verde); }
+.hb-vence__pessoa:hover { box-shadow: 2px 2px 0 var(--px-borda); transform: translate(-1px, -1px); }
+.hb-assin .a3-painel, .hb-assin .a3-aba-grande { border: 2px solid var(--px-borda); border-radius: 10px; box-shadow: var(--px-degrau); }
+.hb-assin .a3-aba-grande[aria-selected="true"] { box-shadow: 3px 3px 0 var(--a3-acento); border-color: var(--a3-acento); }
+@media (max-width: 900px) { .hb-vence { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .hb-vence { grid-template-columns: minmax(0, 1fr); } }

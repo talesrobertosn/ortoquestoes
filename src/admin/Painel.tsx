@@ -6,7 +6,7 @@ import { href, navegar } from '../util/rotas'
 import { ProvedorPainel, usarPainel } from './dados/painel'
 import { nomeDe } from './dados/pessoas'
 import { ContextoNav, type AbaFicha, type Nav } from './nav'
-import { AREAS, abasDe, areaDe, defArea, defParte, lerUrl, partePadrao, periodoPadrao, urlAntiga, urlDe, type Area, type EstadoUrl, type Parte } from './rotas'
+import { AREAS, GRUPOS_NAV, abasDe, areaDe, defArea, defParte, lerUrl, partePadrao, periodoPadrao, urlAntiga, urlDe, type Area, type EstadoUrl, type Parte } from './rotas'
 import { Icone } from './ui/Icone'
 import { haQuanto, horario } from './ui/formato'
 import { Carregando, Estado } from './ui/kit'
@@ -148,7 +148,9 @@ function Casca({ estado }: { estado: EstadoUrl }) {
   }, [nav, p.usuarios])
 
   const navegacaoAreas = <nav aria-label="Áreas do painel" className="a3-nav-grupo">
-    {AREAS.map(a => {
+    {GRUPOS_NAV.map(g => <div key={g.titulo} className="a3-nav-bloco" role="group" aria-label={g.titulo}>
+    <span className="a3-nav-bloco__titulo" aria-hidden="true">{g.titulo}</span>
+    {AREAS.filter(a => g.areas.includes(a.id)).map(a => {
       const aberta = abertas.has(a.id)
       const atual = a.id === area
       // Área de uma parte só (Agora): link direto, sem submenu repetindo o nome.
@@ -174,6 +176,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
         })}</ul>}
       </div>
     })}
+    </div>)}
   </nav>
 
   const conteudo: ReactNode = p.erroAcesso && !p.assinaturas
@@ -188,6 +191,9 @@ function Casca({ estado }: { estado: EstadoUrl }) {
           <a className="a3-marca" href={nav.link('comando')} onClick={clique('comando')}>
             <img src={recurso('marca/simbolo.svg')} alt="" width={28} height={28} />
             <span><b>Orto Questões</b><small>Mesa de comando</small></span>
+          </a>
+          <a className="a3-aovivo" href={nav.link('comando')} onClick={clique('comando')} aria-label={`${p.online ?? 0} pessoas online agora. Abrir Agora`}>
+            <i className="a3-aovivo__ponto" aria-hidden="true" /><span>Ao vivo</span><b>{p.online ?? 0}</b><small>online</small>
           </a>
           <button type="button" className="a3-busca-gatilho" onClick={() => definirPaleta(true)}>
             <Icone nome="busca" tamanho={15} /><span>Buscar</span><span className="a3-kbd">Ctrl K</span>
