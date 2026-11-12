@@ -1,6 +1,6 @@
 ---
 id: green-nervos-perifericos
-versao: 2
+versao: 3
 titulo: Lesões de nervos periféricos
 especialidade: mao
 acesso: gratis
@@ -171,7 +171,7 @@ O Green (cap. 30, pp. 985 e 987) insiste: **nervo que parou de funcionar com uma
 
 ## Zonas sensitivas
 
-Depois de uma secção, a área de perda completa é pequena: é a **zona autônoma**, inervada só por aquele nervo (Campbell, p. 2981). Em volta fica a **zona intermediária**, de anestesia tátil e térmica, mais parecida com a distribuição anatômica. A **zona máxima** é a área que um nervo íntegro consegue cobrir quando os vizinhos estão bloqueados. A zona autônoma encolhe nos primeiros dias ou semanas, antes de qualquer regeneração possível, porque ramos anastomóticos de nervos vizinhos assumem parte da função; quem confunde esse encolhimento com regeneração atrasa à toa a exploração. A menor zona autônoma do mediano cobre as **falanges distais do indicador e do médio**, dorsal e volar (p. 3010).
+Depois de uma secção, a área de perda completa é pequena: é a **zona autônoma**, inervada só por aquele nervo (Campbell, cap. 67, p. 2980). Em volta fica a **zona intermediária**, de anestesia tátil e térmica, mais parecida com a distribuição anatômica. A **zona máxima** é a área que um nervo íntegro consegue cobrir quando os vizinhos estão bloqueados. A zona autônoma encolhe nos primeiros dias ou semanas, antes de qualquer regeneração possível, porque ramos anastomóticos de nervos vizinhos assumem parte da função; quem confunde esse encolhimento com regeneração atrasa à toa a exploração. A menor zona autônoma do mediano cobre as **falanges distais do indicador e do médio**, dorsal e volar (p. 3010).
 
 ## O simpático: anidrose, calor e trofismo
 
@@ -369,7 +369,7 @@ O Green (cap. 30, p. 979) põe cada técnica no seu lugar: se o coto proximal es
 
 - **Radial (MACKINNON)**: por incisão volar-radial única, o ramo do mediano para o **FDS vai ao nervo do ERCC** e o ramo do **FRC (ou palmar longo) vai ao interósseo posterior** (cap. 31, p. 1076).
 - **Mediano**: ramo do ERCC para o ramo do pronador redondo e ramo do supinador para o interósseo anterior; pronador aos 4 meses, FLP e FDP do indicador aos 8, grau 4 aos 18.
-- **Ulnar alto**: **interósseo anterior terminal**, antes de entrar no pronador quadrado, para o **ramo motor profundo do ulnar** (cap. 30, p. 1008; Campbell, p. 3009). NOVAK e MACKINNON: pinça lateral de 2,2 para 13,8 lb. Condições: lesão alta do ulnar, mediano normal e alvos saudáveis; o interósseo anterior tem cerca de 1000 fibras motoras contra mais de 4000 no ramo do ulnar.
+- **Ulnar alto**: **interósseo anterior terminal**, antes de entrar no pronador quadrado, para o **ramo motor profundo do ulnar** (cap. 30, p. 1008; Campbell, técnica 67.13, p. 3009, e Fig. 67.19, p. 3010). NOVAK e MACKINNON: pinça lateral de 2,2 para 13,8 lb. Condições: lesão alta do ulnar, mediano normal e alvos saudáveis; o interósseo anterior tem cerca de 1000 fibras motoras contra mais de 4000 no ramo do ulnar.
 
 Na transferência tendínea, o capítulo 31 (p. 1025) lista os princípios: músculo com amplitude e força suficientes (reinervado só se totalmente recuperado), **linha reta de tração**, no máximo uma polia, **evitar angulação aguda**, função original dispensável e sinergismo. BURKHALTER criou a **transferência precoce como tala interna**: no radial, **pronador redondo para o ERCC** término-lateral, no mesmo tempo do reparo, para devolver logo a extensão do punho e a força de preensão; se o nervo recupera, o ERCC volta a trabalhar por conta própria (pp. 1061 e 1065).
 
@@ -440,7 +440,7 @@ alerta: O Green (p. 1003) chama a violência da lesão de fator mais importante;
 - **Mediano alto** paralisa também pronador, FRC e FDS; a flexão do punho persiste pelo FUC. **Baixo**: APB, oponente e FPB superficial, mas **abdução e oposição frequentemente se mantêm** pelo ulnar (Green, cap. 31, pp. 1025 a 1027).
 - **Interósseo posterior**: **extensão do punho com desvio radial**, porque o ERLC é inervado antes da divisão (p. 1064).
 - **Ulnar baixo**: garra mais intensa que no alto e **dorso ulnar sensível**; o ramo dorsal sai **6 a 8 cm proximal ao punho** pelo Green (cap. 31, p. 1046) e **5 a 8 cm proximal ao pisiforme** pelo Campbell (cap. 67, p. 3008). FROMENT e WARTENBERG são motores (p. 1046).
-- **MARTIN-GRUBER**: conexão mediano-ulnar no antebraço em 17% (p. 1046).
+- **MARTIN-GRUBER**: conexão motora entre o mediano (ou o interósseo anterior) e o ulnar no antebraço proximal. A frequência difere dentro do próprio Green: **17%** no cap. 31 (p. 1046) e **15%** no cap. 28 (p. 936), que acrescenta que em metade dos casos o ramo comunicante sai do **interósseo anterior**. O cap. 31 (p. 1046) descreve quatro tipos: **tipo I (60%)**, fibras do mediano que seguem com o ulnar para músculos intrínsecos "do mediano"; **tipo II (35%)**, fibras do mediano para intrínsecos "do ulnar", mais comumente o primeiro interósseo dorsal; **tipo III (3%)**, fibras do ulnar que seguem com o mediano para intrínsecos "do mediano"; **tipo IV (1%)**, fibras do ulnar que seguem com o mediano para intrínsecos "do ulnar".
 - **Digitais**: priorizar o ulnar do polegar, o radial do indicador e do médio e o ulnar do mínimo (Campbell, cap. 73, p. 3258).
 
 !questoes central=mao-0528 relacionadas=mao-1047,mao-1621,mao-1443,mao-0683,mao-0278,mao-0874,mao-0999,mao-1481,mao-1886,mao-0539,mao-0523,mao-0916

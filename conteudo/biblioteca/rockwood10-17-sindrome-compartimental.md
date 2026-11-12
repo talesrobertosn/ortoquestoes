@@ -1,6 +1,6 @@
 ---
 id: rockwood10-17-sindrome-compartimental
-versao: 3
+versao: 4
 titulo: Síndrome compartimental aguda
 especialidade: trauma
 acesso: gratis
@@ -265,7 +265,7 @@ armadilha: Elevar o membro e observar: a elevação reduz o gradiente arterioven
 
 ## Perna: dupla incisão, quatro compartimentos
 
-Na perna, **os quatro compartimentos devem ser liberados**. Alguns defendem liberação limitada porque o anterior e o lateral funcionam como um só (e um estudo em cadáver sugeriu o mesmo para os dois posteriores), mas sem comprovação clínica; o mais seguro é abrir os quatro. A técnica mais usada:
+Na perna, **os quatro compartimentos devem ser liberados**. Alguns defendem liberação limitada porque o anterior e o lateral funcionam como um só (e um estudo em cadáver sugeriu o mesmo para os dois posteriores), mas sem comprovação clínica; o mais seguro é abrir os quatro (cap. 17, fasciotomia da perna, no parágrafo sobre o debate da liberação dos quatro compartimentos). A técnica mais usada:
 
 - garrote colocado, mas **não insuflado**;
 - **incisão lateral** cerca de **2 cm anterior à fíbula**, sobre o septo entre anterior e lateral; abrir as duas fáscias;

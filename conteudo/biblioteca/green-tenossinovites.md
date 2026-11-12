@@ -1,6 +1,6 @@
 ---
 id: green-tenossinovites
-versao: 1
+versao: 2
 titulo: Dedo em gatilho e outras tenossinovites
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 81)
 capitulo: Capítulo 56 · Tendinopathy
 autores: Scott W. Wolfe
-fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 56 (Tendinopathy), p. 1904 a 1923 (proliferativas, cristais, gatilho do adulto e da criança, DE QUERVAIN, intersecção, EPL, ECU, FCR, tabelas 56.1 e 56.2), cap. 2 (Acute Infections of the Hand), p. 28 a 33 (tenossinovite piogênica, bursas e espaço de PARONA), e cap. 37 (Deformities of the Thumb), p. 1320 a 1322 (polegar em gatilho da criança); Campbell's Operative Orthopaedics, 15ª ed., cap. 81 (Stenosing Tenosynovitis of the Wrist and Hand), p. 3535 a 3540, lido por inteiro, e cap. 84, p. 3613 aprox. (tenossinovite infecciosa); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 378 e 379; Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., caps. 6, 7 e 8 (pág. PDF 518, 556, 557 e 607 a 609, sem página impressa no texto extraído). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 56 (Tendinopathy), p. 1904 a 1923 (proliferativas, cristais, gatilho do adulto e da criança, DE QUERVAIN, intersecção, EPL, ECU, FCR, tabelas 56.1 e 56.2), cap. 2 (Acute Infections of the Hand), p. 28 a 33 (tenossinovite piogênica, bursas e espaço de PARONA), e cap. 37 (Deformities of the Thumb), p. 1320 a 1322 (polegar em gatilho da criança); Campbell's Operative Orthopaedics, 15ª ed., cap. 81 (Stenosing Tenosynovitis of the Wrist and Hand), p. 3535 a 3540, lido por inteiro, e cap. 84, p. 3613 (tenossinovite infecciosa); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 378 e 379; Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., caps. 6, 7 e 8 (pág. PDF 518, 556, 557 e 607 a 609, sem página impressa no texto extraído). As páginas citadas são as impressas.
 subtemas: Dedo em gatilho e outras tenossinovites
 resumo: Gatilho é aprisionamento mecânico na A1 (metaplasia fibrocartilaginosa, pouca inflamação), mais em mulher de 55 a 60 anos, polegar e anular nos múltiplos, pior em diabetes e AR; QUINNELL modificado por GREEN (I dor sem gatilho, II estende ativo, IIIA extensão passiva, IIIB não flete ativo, IV contratura fixa da IFP); infiltração melhor em um dedo, nodular e de curta duração; A2 e A4 são as polias essenciais e a oblíqua do polegar não se corta (corda de arco); percutânea não no polegar nem no indicador, nervo digital radial do polegar é o mais exposto; polegar em gatilho da criança é adquirido, isolado, nódulo de NOTTA no FPL, bilateral em 25% a 33%, cirurgia depois de 1 ano; gatilho de vários dedos na criança lembra HURLER; DE QUERVAIN no APL e EPB, EPB em subcompartimento separado, FINKELSTEIN e EICHHOFF, ramo sensitivo do radial; intersecção 4 cm acima do punho, APL e EPB sobre o 2º compartimento; ECU dói em supinação e desvio ulnar; tendinite calcária no FCU; pseudogota calcifica a FCCT; KANAVEL: dor sobre a bainha é o sinal mais confiável; PANG: polimicrobiana, isquemia e pus subcutâneo pioram; PARONA entre pronador quadrado e FDP.
 ---
@@ -441,9 +441,9 @@ O **amiloide** (beta-2-microglobulina, que a diálise não filtra) causa **gatil
 
 A tenossinovite piogênica é uma **infecção de espaço fechado** da bainha flexora: o pus destrói o deslizamento, forma aderências e pode **necrosar o tendão** (Green, cap. 2, p. 28). Os germes mais comuns são **S. aureus e estreptococo beta-hemolítico**, quase sempre por **perfuração volar**.
 
-KANAVEL descreveu três sinais e depois acrescentou o quarto (p. 28 e 29): **semiflexão do dedo**, **edema fusiforme de todo o dedo**, **dor limitada ao trajeto da bainha** e **dor excruciante à extensão passiva**. Não precisam estar todos no início. Sobre qual vale mais, o Green registra a divergência: **KANAVEL considerava a dor à palpação da bainha o sinal mais confiável e reprodutível**; NEVIASER preferia a dor à extensão passiva; PANG achou edema fusiforme em **97%** e dor à extensão passiva em só **72%** (p. 29). O Campbell (cap. 84) chama a **dor sobre a bainha** de sinal mais significativo (p. 3613 aprox.). Hiperemia difusa da mão não é sinal de KANAVEL, e o dedo fica **fletido**, não estendido.
+KANAVEL descreveu três sinais e depois acrescentou o quarto (p. 28 e 29): **semiflexão do dedo**, **edema fusiforme de todo o dedo**, **dor limitada ao trajeto da bainha** e **dor excruciante à extensão passiva**. Não precisam estar todos no início. Sobre qual vale mais, o Green registra a divergência: **KANAVEL considerava a dor à palpação da bainha o sinal mais confiável e reprodutível**; NEVIASER preferia a dor à extensão passiva; PANG achou edema fusiforme em **97%** e dor à extensão passiva em só **72%** (p. 29). O Campbell (cap. 84) chama a **dor sobre a bainha** de sinal mais significativo (p. 3613). Hiperemia difusa da mão não é sinal de KANAVEL, e o dedo fica **fletido**, não estendido.
 
-!tabela Sinais de KANAVEL (Green 7, cap. 2, p. 28 e 29; Campbell 15, cap. 84, p. 3613 aprox.)
+!tabela Sinais de KANAVEL (Green 7, cap. 2, p. 28 e 29; Campbell 15, cap. 84, p. 3613)
 | Sinal | Observação |
 | --- | --- |
 | dedo em semiflexão | quarto sinal, acrescentado depois por KANAVEL |
@@ -461,11 +461,13 @@ alerta: `mao-1204` está sem gabarito oficial; o Green (p. 29) sustenta a altern
 
 ## Tratamento e prognóstico
 
-O conservador cabe só nas **primeiras 24 horas** com sinais parciais (antibiótico IV, tala, internação); sem melhora em 12 horas ou com pus na aspiração, cirurgia (Green, p. 29). A pressão na bainha passa de **30 mm Hg** e corta a irrigação pelos vínculos. Os autores drenam por incisão **médio-lateral dorsal ao CLELAND**, abrem a bainha **distal à A4** e **proximal à A1** e irrigam até clarear (p. 30 e 31); o cateter contínuo **não se mostrou necessário** (Green) nem **melhora o resultado** (Campbell), e infecção crônica ou **tendão necrótico** pede **drenagem aberta** (Campbell, p. 3613 aprox.).
+O conservador cabe só nas **primeiras 24 horas** com sinais parciais (antibiótico IV, tala, internação); sem melhora em 12 horas ou com pus na aspiração, cirurgia (Green, p. 29). A pressão na bainha passa de **30 mm Hg** e corta a irrigação pelos vínculos. Os autores drenam por incisão **médio-lateral dorsal ao CLELAND**, abrem a bainha **distal à A4** e **proximal à A1** e irrigam até clarear (p. 30 e 31); o cateter contínuo **não se mostrou necessário** (Green) nem **melhora o resultado** (Campbell), e infecção crônica ou **tendão necrótico** pede **drenagem aberta** (Campbell, p. 3613).
+
+O que se acha ao abrir a bainha tem nome: a classificação de **MICHON**, feita no intraoperatório, tem **três estágios**: **I, líquido turvo**; **II, pus na bainha**; **III, necrose da bainha e do tendão** (MUSCAT et al., Cureus 2021;13(11):e19715, PMC8650629, que lembram que o estágio 0 não existe no sistema original). A **irrigação fechada** serve aos tendões **viáveis, estágios I e II** (KREUTZ-RODRIGUES et al., Plast Reconstr Surg Glob Open 2025;13(1):e6451, PMC11732655), o mesmo limite do Campbell, que a indica quando a bainha tem exsudato seroso ou pus e reserva a **drenagem aberta** ao tendão grosseiramente necrótico (p. 3613); diante do tendão necrótico, o Green manda excisá-lo e considerar a amputação (p. 32).
 
 MALOON apontou **diabetes, apresentação tardia e mordida humana**; **PANG**, cinco fatores de mau prognóstico: **idade acima de 43 anos**; **diabetes, doença vascular periférica ou insuficiência renal**; **pus subcutâneo**; **isquemia digital**; **infecção polimicrobiana** (Green, p. 32). Tendão necrosado é **excisado da A1 à inserção**, e no indicador e no mínimo **a amputação pode ser considerada**.
 
-!tabela Fatores de PANG e risco de amputação (Green 7, cap. 2, p. 32; Campbell 15, cap. 84, p. 3613 aprox.)
+!tabela Fatores de PANG e risco de amputação (Green 7, cap. 2, p. 32; Campbell 15, cap. 84, p. 3613)
 | Situação | Amputação | Movimento final |
 | --- | --- | --- |
 | sem pus subcutâneo e sem isquemia | nenhuma | 80% do arco total |
@@ -478,7 +480,7 @@ MALOON apontou **diabetes, apresentação tardia e mordida humana**; **PANG**, c
 conceito: PANG lista cinco fatores de mau prognóstico na tenossinovite flexora piogênica (idade acima de 43, diabetes ou doença vascular ou renal, pus subcutâneo, isquemia digital, infecção polimicrobiana); tendão necrosado exige desbridamento extenso e pode levar à amputação.
 como: Uma prova sem banca identificada pediu o fator de mau prognóstico segundo PANG; o TARO 2023 pediu o estágio de MICHON e a conduta na necrose da bainha achada na cirurgia.
 armadilha: Marcar sexo feminino, idade abaixo de 20 ou mais de um dedo; na necrose, irrigação por cateter não basta.
-alerta: A classificação de MICHON cobrada em `mao-0179` não está nos livros conferidos; o Green (p. 32) e o Campbell (p. 3613 aprox.) sustentam a conduta do gabarito: tendão necrótico pede drenagem aberta, excisão do tendão e, às vezes, amputação.
+alerta: A classificação de MICHON cobrada em `mao-0179` não está nos livros locais; os três estágios (a necrose da bainha e do tendão é o III) vêm de MUSCAT et al., Cureus 2021 (PMC8650629), e a irrigação fechada restrita aos estágios I e II, de KREUTZ-RODRIGUES et al., 2025 (PMC11732655). O Green (p. 32) e o Campbell (p. 3613) sustentam a conduta do gabarito: tendão necrótico pede drenagem aberta, excisão do tendão e, às vezes, amputação.
 !fim
 
 ## Bursas e espaço de PARONA

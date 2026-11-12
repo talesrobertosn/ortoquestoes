@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-mao-punho-antebraco
-versao: 4
+versao: 5
 titulo: Anatomia da mão, do punho e do antebraço
 especialidade: mao
 acesso: gratis
@@ -327,7 +327,7 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 5, Fig. 5.5, p. 155.
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 6, Fig. 6.4, p. 186. A bainha digital do colo do metacarpo à falange distal, com as cinco polias anulares (A1 a A5) e as três cruciformes (C1 a C3): A2, larga, sobre a falange proximal, A4 sobre a falange média, A1, A3 e A5 sobre as articulações; ao lado, as artérias digitais transversas e o ramo do vínculo longo.
 !fim
 
-**As articulações.** Na **MF**, o **efeito came** (cabeça assimétrica, origem dorsal do colateral) deixa o colateral **tenso em flexão** e frouxo em extensão. Na **IFP**, dobradiça sem came, o colateral tem tensão constante, a parte acessória fica tensa em extensão, e a lâmina palmar com os ligamentos de contenção encurta depois da lesão: a IFP **enrijece fácil** e **não se imobiliza em flexão**. Na CMC, a 2ª e a 3ª quase não se movem (aceitam pouca angulação nas fraturas), a 4ª e a 5ª são móveis. Na CMC do polegar, o ligamento oblíquo anterior, o "beak", segura o fragmento da fratura de BENNETT, e o radial dorsal é o mais forte.
+**As articulações.** Na **MF**, o **efeito came** (cabeça assimétrica, origem dorsal do colateral) deixa o colateral **tenso em flexão** e frouxo em extensão; o Green (cap. 8, Fig. 8.30, p. 298) acrescenta que além de 70 graus de flexão o contato entre a cabeça do metacarpo e a base da falange fica mais largo e estável. Daí a imobilização da MF **em flexão**, e o grau muda conforme o livro: **pelo menos 50 graus** na legenda da Fig. 8.30 do Green (p. 298), para manter o comprimento do colateral; **pelo menos 70 graus** no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 45, Hand Fractures and Dislocations, seção Nonoperative Treatment of Proximal Phalanx Fractures), na posição intrínseca plus, com o punho em 30 graus de extensão e as interfalângicas em extensão. Na **IFP**, dobradiça sem came, o colateral tem tensão constante, a parte acessória fica tensa em extensão, e a lâmina palmar com os ligamentos de contenção encurta depois da lesão: a IFP **enrijece fácil** e **não se imobiliza em flexão**. Na CMC, a 2ª e a 3ª quase não se movem (aceitam pouca angulação nas fraturas), a 4ª e a 5ª são móveis. Na CMC do polegar, o ligamento oblíquo anterior, o "beak", segura o fragmento da fratura de BENNETT, e o radial dorsal é o mais forte.
 
 !tabela Zonas dos tendões (cap. 6, p. 190)
 | Zona | Flexores | Extensores |

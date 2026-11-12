@@ -1,6 +1,6 @@
 ---
 id: rockwood10-radio-distal
-versao: 1
+versao: 2
 titulo: Fratura do rádio distal no adulto
 especialidade: trauma
 acesso: gratis
@@ -136,15 +136,14 @@ O alinhamento do carpo é avaliado no perfil pelos eixos do **capitato** e do **
 
 ## Incidências intraoperatórias
 
-O Rockwood descreve duas incidências tiradas no centro cirúrgico, usadas sobretudo para avaliar a **penetração dos parafusos**: a **tangencial dorsal** e a incidência da **inclinação radial**. A tangencial dorsal é obtida **fletindo o punho** e posicionando o antebraço tangente ao feixe do arco em C; é confiável para detectar **parafuso que atravessou a cortical dorsal** na placa volar (p. 1631). A incidência da inclinação radial é um perfil com o arco ajustado à inclinação radial e mostra bem a superfície articular (p. 1631). O Green recomenda, ao fim de toda placa volar, combinar perfil, supinação, pronação e a tangencial dorsal, também chamada de "horizon" (p. 551), e lembra que o perfil da faceta (inclinado 10 a 15 graus) evita a penetração articular (p. 554).
+O Rockwood descreve duas incidências tiradas no centro cirúrgico, usadas sobretudo para avaliar a **penetração dos parafusos**: a **tangencial dorsal** e a incidência da **inclinação radial**. A tangencial dorsal é obtida **fletindo o punho** e posicionando o antebraço tangente ao feixe do arco em C; é confiável para detectar **parafuso que atravessou a cortical dorsal** na placa volar (p. 1631). A incidência da inclinação radial é um perfil com o arco ajustado à inclinação radial e mostra bem a superfície articular (p. 1631). A legenda da Fig. 43-1 do Rockwood dá a técnica: punho em **flexão máxima** e a cortical dorsal do rádio inclinada **15 graus** em relação ao feixe do arco em C, o que mostra a ponta dos parafusos em relação à cortical dorsal (cap. 43, seção Imaging and Other Diagnostic Studies, legenda da Fig. 43-1). O Green recomenda, ao fim de toda placa volar, combinar perfil, supinação, pronação e a tangencial dorsal, também chamada de "horizon" (p. 551), e lembra que o perfil da faceta (inclinado 10 a 15 graus) evita a penetração articular (p. 554).
 
 Durante a placa volar, o Rockwood usa ainda a **incidência da incisura sigmoide**: é o PA verdadeiro, confirmado quando os lábios volar e dorsal da incisura se sobrepõem numa única "faixa sigmoide" (p. 1644 aprox.).
 
 !questoes central=trauma-1106 relacionadas=trauma-0068
-conceito: A tangencial dorsal (skyline ou horizon) é feita com o punho fletido e o antebraço tangente ao feixe e serve para detectar parafuso da placa volar penetrando a cortical dorsal.
+conceito: A tangencial dorsal (skyline ou horizon) é feita com o punho em flexão máxima e a cortical dorsal inclinada 15 graus em relação ao feixe e serve para detectar parafuso da placa volar penetrando a cortical dorsal.
 como: O TEOT 2023 perguntou para que serve a incidência; o TARO 2021, com figura, a posição do punho e o ângulo do feixe.
 armadilha: Achar que a tangencial dorsal avalia a saliência da placa volar ou parafusos de placa dorsal; ou pedir o punho em extensão.
-alerta: Para `trauma-0068`, o Rockwood e o Green confirmam a flexão do punho, mas não dão o ângulo do feixe na tangencial dorsal; o único ângulo de 10 a 15 graus citado no Green é o do perfil da faceta.
 !fim
 
 ## Tomografia e ressonância
@@ -158,7 +157,7 @@ O Rockwood é direto: as lesões associadas mais comuns são as dos **ligamentos
 !tabela Lesões associadas à fratura do rádio distal (Rockwood, p. 1630 e 1631; Green, p. 575 aprox.)
 | Lesão | Frequência nos livros | Comentário |
 |---|---|---|
-| CFCT | 39% a 82% (Rockwood) | Mais comum que a lesão interóssea; a maioria são avulsões periféricas junto com fratura do estiloide ulnar |
+| CFCT | 39% a 82% (Rockwood); 13% a 60% por imagem ou inspeção cirúrgica (Green, cap. 14, p. 487) | Mais comum que a lesão interóssea; a maioria são avulsões periféricas junto com fratura do estiloide ulnar |
 | Ligamento escafossemilunar | 4,7% a 46% em artroscopias de jovens (Rockwood); cerca de 30% (Green) | Taxa real provavelmente menor; graduação artroscópica de GEISSLER 1 a 4 |
 | Ligamento semilunopiramidal | 12% a 34% (Rockwood); cerca de 15% (Green) | Difícil de diagnosticar na fase aguda |
 | Lesão condral | Até 32% | Provável fonte de artrose, significado incerto |
@@ -168,7 +167,7 @@ O Rockwood é direto: as lesões associadas mais comuns são as dos **ligamentos
 
 ## CFCT
 
-O CFCT lesado é mais frequente que a lesão interóssea, mas a maior parte são **avulsões periféricas** ligadas à fratura do estiloide ulnar, que podem não ter importância clínica. Tratadas sem cirurgia, tiveram em 13 a 15 anos DASH médio de **14** e força de preensão de **83%** do lado oposto; os reparos cirúrgicos dão resultados paralelos à história natural, de modo que a indicação cirúrgica ainda não é clara (Rockwood, p. 1631).
+O CFCT lesado é mais frequente que a lesão interóssea, mas a maior parte são **avulsões periféricas** ligadas à fratura do estiloide ulnar, que podem não ter importância clínica. Tratadas sem cirurgia, tiveram em 13 a 15 anos DASH médio de **14** e força de preensão de **83%** do lado oposto; os reparos cirúrgicos dão resultados paralelos à história natural, de modo que a indicação cirúrgica ainda não é clara (Rockwood, p. 1631). O número varia com o método: o Rockwood dá **39% a 82%** de lesão do CFCT associada (cap. 43, seção Triangular Fibrocartilage Complex Injury), e o Green, **13% a 60%** por imagem ou inspeção cirúrgica, lembrando que os problemas persistentes são bem menos frequentes (cap. 14, p. 487).
 
 ## Ligamentos do carpo e o CHAUFFEUR
 
@@ -200,11 +199,11 @@ Os epônimos dão uma ideia geral do padrão, mas pouco ajudam a decidir tratame
 | SMITH (GOYRAND-SMITH) | O oposto: angulação volar com ápice dorsal | AO A (tipo I de THOMAS); o SMITH tipo II de THOMAS é o BARTON volar |
 | BARTON (dorsal) | Articular, traço pela cortical dorsal, subluxação ou luxação dorsal radiocarpal | AO B2 no Green; FERNANDEZ II |
 | BARTON volar (reverso) | Articular, traço pela face volar, subluxação volar | AO B3 no Green; FERNANDEZ II |
-| CHAUFFEUR (HUTCHINSON) | Fratura articular isolada do estiloide radial | AO B1; FERNANDEZ II |
+| CHAUFFEUR | Fratura articular isolada do estiloide radial | AO B1; FERNANDEZ II |
 | Die-punch | Depressão da fossa do semilunar, com migração proximal do semilunar | FERNANDEZ III; AO C1 a C2 no Green |
 !fim
 
-O nome CHAUFFEUR vem do coice da manivela dos primeiros automóveis, que atingia o motorista ao dar a partida (Rockwood, p. 1635). O Green mostra a classificação de THOMAS para o SMITH: tipo I extra-articular com angulação palmar; tipo II intra-articular com desvio volar e proximal do fragmento junto com o carpo, que é essencialmente um **BARTON volar**; tipo III extra-articular com traço mais oblíquo (p. 525 aprox.).
+O nome CHAUFFEUR vem do coice da manivela dos primeiros automóveis, que atingia o motorista ao dar a partida (Rockwood, p. 1635). O Rockwood não usa o nome HUTCHINSON; quem o traz é o SIZÍNIO, na lista de epônimos, para a fratura da apófise do processo estiloide do rádio (cap. 51). O Green mostra a classificação de THOMAS para o SMITH: tipo I extra-articular com angulação palmar; tipo II intra-articular com desvio volar e proximal do fragmento junto com o carpo, que é essencialmente um **BARTON volar**; tipo III extra-articular com traço mais oblíquo (p. 525 aprox.).
 
 ## AO/OTA 23
 
