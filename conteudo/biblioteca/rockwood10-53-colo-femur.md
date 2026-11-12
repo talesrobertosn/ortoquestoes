@@ -1,6 +1,6 @@
 ---
 id: rockwood10-53-colo-femur
-versao: 2
+versao: 3
 titulo: Fratura do colo do fêmur
 especialidade: trauma
 acesso: gratis
@@ -28,9 +28,9 @@ Os fatores de risco se dividem em dois grupos que se somam: os que **enfraquecem
 
 !questoes central=trauma-0101 treino=trauma-1551
 conceito: Perfil de risco da fratura do colo: mulher, branca, baixo peso.
-como: A banca combina dois fatores de risco na mesma alternativa (etnia e IMC) para ver se você conhece os dois ao mesmo tempo. A mulher branca com IMC abaixo de 18,5 reúne osso mais frágil, menos proteção de partes moles e eixo do quadril mais longo.
+como: A banca combina dois fatores de risco na mesma alternativa (etnia e IMC) para ver se você conhece os dois ao mesmo tempo. O Rockwood (cap. 53, Tabela 53-1) põe a etnia entre os fatores não modificáveis e o peso entre os modificáveis, com o corte de IMC abaixo de 18,5.
 armadilha: Inverter o IMC: o risco aumenta com o baixo peso, não com o sobrepeso.
-armadilha: Trocar a etnia: o eixo do quadril é mais longo nas mulheres brancas do que nas asiáticas e negras.
+armadilha: Trocar a etnia: o risco menor descrito é o dos japoneses, e o Skeletal Trauma, 5ª ed. (cap. 54, p. 1630), diz que a geometria do fêmur proximal pode explicar essa diferença; nos homens negros, a densidade óssea maior não depende do comprimento do eixo do quadril.
 !fim
 
 ## A segunda fratura
@@ -57,13 +57,13 @@ armadilha: Impacção em valgo descreve o Garden I, não o mecanismo de rotaçã
 
 ## Lesões associadas
 
-A maioria das fraturas é isolada. Fratura ou luxação associada aparece em pouco mais de **4%** dos casos, quase sempre no **membro superior**: rádio distal e úmero proximal. Quem quebra o rádio junto costuma ser mais saudável; quem quebra o **úmero proximal** junto tem **mortalidade maior**, porque perde ao mesmo tempo a perna e o braço que usaria para se levantar e andar com apoio.
+A maioria das fraturas é isolada. Fratura ou luxação associada aparece em pouco mais de **4%** dos casos, quase sempre no **membro superior**: rádio distal e úmero proximal. Quem quebra o rádio junto costuma ser mais saudável; quem quebra o **úmero proximal** junto tem **mortalidade maior** (cap. 53, seção das lesões associadas).
 
 Mais importante do que as fraturas associadas são as **doenças associadas**: 60% a 70% dos pacientes chegam com ASA 3 ou 4. Às vezes um evento agudo (AVC, infarto, arritmia) causou a queda. No jovem com fratura de baixa energia, procure alcoolismo, corticoide, insuficiência renal, artrite reumatoide e doenças endócrinas.
 
 !questoes central=trauma-0422 treino=trauma-1552
 conceito: Fraturas associadas mais comuns e qual delas pesa mais na mortalidade.
-como: As alternativas trocam membro superior por inferior e rádio por úmero. Lembre o raciocínio funcional: a associação com o úmero impede o uso do andador e por isso piora o prognóstico.
+como: As alternativas trocam membro superior por inferior e rádio por úmero. O capítulo dá os dois dados juntos: o rádio distal aparece em pacientes mais saudáveis, e o úmero proximal associado acompanha mortalidade maior.
 armadilha: Achar que a associação com o rádio, mais frequente, é a mais grave.
 !fim
 
@@ -168,7 +168,7 @@ A concordância entre observadores para os quatro tipos é ruim (22% num estudo)
 
 !questoes central=trauma-0334,trauma-0727 relacionadas=quadril-0508 treino=trauma-1542
 conceito: Garden III é completa, parcialmente desviada, com a cabeça em varo e trabéculas desalinhadas com o acetábulo.
-como: A banca cobra o detalhe que separa o III do IV: no III a cabeça ainda presa vai para varo (e, no perfil, para flexão/retroversão) e o trabeculado não acompanha o acetábulo; no IV a cabeça solta realinha o trabeculado.
+como: A banca cobra o detalhe que separa o III do IV: no III a cabeça ainda presa vai para varo e o trabeculado não acompanha o acetábulo; no IV a cabeça solta realinha o trabeculado. A alternativa correta fala em varo e extensão; os livros sustentam o varo, e o Campbell 15 (cap. 60, p. 2651) lembra que GARDEN não considera a angulação nem o desvio no plano sagital, de modo que o que decide a questão é o varo no AP.
 armadilha: Achar que o Garden I é impactado em varo: é em valgo.
 armadilha: Confundir o IV ("trabeculado alinhado com o acetábulo") com o II ("trabeculado alinhado com o colo e o acetábulo, sem desvio").
 !fim

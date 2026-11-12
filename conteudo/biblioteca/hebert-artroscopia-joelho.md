@@ -1,6 +1,6 @@
 ---
 id: hebert-artroscopia-joelho
-versao: 1
+versao: 2
 titulo: Artroscopia do joelho
 especialidade: joelho
 acesso: gratis
@@ -193,7 +193,7 @@ O HEBERT condensa: o portal **precisa ser feito com o joelho fletido a 90 graus 
 
 ## Por que a distensão e a flexão protegem
 
-A cápsula posterior distendida pelo líquido se afasta do feixe neurovascular e vira um alvo grande, tenso e palpável, que a agulha encontra sem mergulhar; o abaulamento visto pela ótica no intercôndilo confirma o ponto. A **flexão a 90 graus** relaxa e afasta as estruturas posteriores: o Campbell (cap. 54, p. 2308) lembra que **a distância entre a artéria poplítea e a cápsula aumenta com a flexão**. Em extensão, a cápsula fica tensa e colada aos vasos, e o compartimento colapsa; por isso a extensão máxima nunca é a posição do portal posterior. A **rotação interna** não faz parte do portal posteromedial; ela pertence à posição em quatro para o **menisco lateral** (cap. 56, p. 2339). E nada nos livros manda deixar o **garrote** vazio ou cheio para abrir esse portal.
+A distensão máxima faz o compartimento posteromedial **abaular como uma bolha** com o joelho a 90 graus (Campbell, cap. 56, p. 2335): é esse abaulamento que dá ao portal um alvo definido, e por isso os marcos ósseos são desenhados antes de encher a articulação. A **flexão a 90 graus** é a outra metade da proteção: o Campbell (cap. 54, p. 2308) lembra que **a distância entre a artéria poplítea e a cápsula posterior aumenta com a flexão**. As duas regras do livro pedem flexão perto de 90 graus; nenhuma fonte indica a extensão máxima para o portal posterior. A **rotação interna** não faz parte do portal posteromedial; ela pertence à posição em quatro para o **menisco lateral** (cap. 56, p. 2339). E nada nos livros manda deixar o **garrote** vazio ou cheio para abrir esse portal.
 
 ## Estruturas em risco e o lado lateral
 
@@ -213,7 +213,7 @@ O **posterolateral** é opcional no Campbell (cap. 56, p. 2335), útil no reparo
 !fim
 
 !questoes central=trauma-1051 relacionadas=trauma-1066
-conceito: O portal posteromedial é feito com o joelho fletido a cerca de 90 graus e a articulação maximamente distendida, para o compartimento abaular como uma bolha e a cápsula se afastar das estruturas em risco.
+conceito: O portal posteromedial é feito com o joelho fletido a cerca de 90 graus e a articulação maximamente distendida, para o compartimento abaular como uma bolha; a flexão aumenta a distância entre a artéria poplítea e a cápsula posterior.
 como: O TARO 2022 e o TARO 2023 perguntaram o que é necessário para confeccionar o portal posteromedial, entre rotação interna, garrote desinsuflado ou não utilizado, distensão hídrica e extensão máxima.
 armadilha: Marcar extensão máxima, quando o portal exige flexão perto de 90 graus; ou rotação interna, que pertence à posição em quatro do menisco lateral.
 !fim
@@ -359,7 +359,7 @@ Os nervos cutâneos mais lesados no joelho são os **ramos infrapatelares do saf
 
 A fístula sinovial é uma comunicação persistente entre a articulação e a pele pelo trajeto do portal. O HEBERT (cap. 64, Fístula sinovial e abaulamento capsular) aponta a causa técnica: é preciso **suturar também os planos profundos**; pontos superficiais deixam a comunicação aberta e criam **abaulamento** no portal. Liberações com dissecção capsular interna também abaulam. O tratamento, para ele, é **expectante**: enfaixamento, antissepsia e espera da regressão do derrame.
 
-O Campbell (cap. 54, p. 2309 e 2310) traz o dado da prova: as fístulas são **raras**, surgem após reação a fio ou abscesso de ponto e se associam sobretudo aos **portais posteromedial do joelho e aos portais do tornozelo**. A explicação está na cobertura. No tornozelo, pele e cápsula anterior são finas e quase coladas, sem músculo entre elas, numa articulação que se move a cada passo; no posteromedial do joelho, o portal atravessa pouca cobertura sobre uma cápsula tensionada e relaxada o tempo todo pela flexão e extensão. Em ambos, o trajeto é curto e mal coberto. Por isso o Campbell manda **suturar esses portais**, e não fechá-los com fita adesiva. O tratamento dele é mais ativo: antibiótico provável e **imobilização por 7 a 10 dias** para o fechamento espontâneo; cirurgia raramente. O resumo campbell15-artroscopia-tornozelo trata a fístula do lado do tornozelo.
+O Campbell (cap. 54, p. 2309 e 2310) traz o dado da prova: as fístulas são **raras**, surgem após reação a fio ou abscesso de ponto e se associam sobretudo aos **portais posteromedial do joelho e aos portais do tornozelo**. Para melhorar o fechamento, o Campbell manda **suturar esses portais** de rotina, e não fechá-los com fita adesiva. O tratamento dele é mais ativo: antibiótico provável e **imobilização por 7 a 10 dias** para o fechamento espontâneo; cirurgia raramente. O resumo campbell15-artroscopia-tornozelo trata a fístula do lado do tornozelo.
 
 A **herniação sinovial** (p. 2309) é a saída de glóbulos de gordura e sinóvia por qualquer portal, mais provável quanto maior o portal; some em semanas e só se resseca, com fechamento da cápsula, se persistir com sintoma.
 
@@ -401,6 +401,6 @@ A **parestesia pelo garrote**, no HEBERT (cap. 64), aparece após **mais de duas
 
 # Fechamento {radar=fundamento}
 
-A artroscopia do joelho cabe em cinco ideias. **Óptica**: a ótica de 30 graus é a de rotina, com campo menor e contínuo; a de 70 graus varre um círculo enorme com ponto cego central e fica para olhar atrás das esquinas. **Geometria**: o portal anterior entra na fenda entre fêmur e tíbia, a 1 cm da interlinha e do tendão; alto demais não alcança os cornos posteriores, baixo demais fere o corno anterior, colado ao tendão atravessa a gordura. **Proteção**: portal posterior só a 90 graus e com distensão até o compartimento abaular, porque flexão e líquido afastam a cápsula dos vasos e nervos; safeno de um lado, fibular comum atrás do bíceps do outro; e, pela mesma lógica, o corno anterior se sutura de fora para dentro e o posterior por dentro, pelo portal contralateral. **Indicação**: a artroscopia só resolve o que pode ser retirado ou reparado; na artrose, ajuda os sintomas mecânicos de curta duração e não muda a história natural. **Complicações**: cada uma com seu adjetivo, e a fístula nos trajetos mal cobertos.
+A artroscopia do joelho cabe em cinco ideias. **Óptica**: a ótica de 30 graus é a de rotina, com campo menor e contínuo; a de 70 graus varre um círculo enorme com ponto cego central e fica para olhar atrás das esquinas. **Geometria**: o portal anterior entra na fenda entre fêmur e tíbia, a 1 cm da interlinha e do tendão; alto demais não alcança os cornos posteriores, baixo demais fere o corno anterior, colado ao tendão atravessa a gordura. **Proteção**: portal posterior só a 90 graus e com distensão até o compartimento abaular, que dá o alvo, enquanto a flexão afasta a artéria poplítea da cápsula; safeno de um lado, fibular comum atrás do bíceps do outro; e, pela mesma lógica, o corno anterior se sutura de fora para dentro e o posterior por dentro, pelo portal contralateral. **Indicação**: a artroscopia só resolve o que pode ser retirado ou reparado; na artrose, ajuda os sintomas mecânicos de curta duração e não muda a história natural. **Complicações**: cada uma com seu adjetivo, e a fístula nos portais posteromedial do joelho e do tornozelo.
 
 > **Na prova:** ótica de **30 graus** com campo **menor e sem área cega**, a de **70 graus** com **ponto cego central**; portal **alto** perde os **cornos posteriores**, portal **baixo** lesa o **corno anterior**; **posteromedial** a **90 graus** com **distensão hídrica** máxima, **safeno** em risco, **fibular comum** atrás do bíceps; corno **anterior** se sutura **outside-in**, o **posterior** inside-out ou all-inside pelo **portal contralateral**; desbridamento na artrose vai bem com **sintomas mecânicos** e **curta duração**; **hemartrose** é a complicação pós-operatória mais comum, **TVP** a mais perigosa, infecção abaixo de **0,2%**, garrote até **90 a 120 minutos**, e **fístula sinovial** nos portais **posteromedial do joelho e do tornozelo**.

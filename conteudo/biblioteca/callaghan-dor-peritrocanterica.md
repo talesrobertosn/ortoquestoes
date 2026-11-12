@@ -1,6 +1,6 @@
 ---
 id: callaghan-dor-peritrocanterica
-versao: 1
+versao: 2
 titulo: Dor peritrocantérica e tendinopatias do quadril
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e c
 edicao: Edição de 2017
 capitulo: Capítulo 43 · Soft Tissue Disorders About the Hip
 autores: Jeffrey A. Geller
-fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip, cap. 43 (p. 589 a 601, inteiro), cap. 6 (p. 92, bursite após osteotomia trocantérica), cap. 22 (p. 326 a 337, testes laterais, posteriores e de ressalto), cap. 25 (p. 381 a 383, estruturas extracapsulares e impacto isquiofemoral na RM), cap. 31 (p. 449 aprox., fisioterapia da contratura em flexão e tendinite do iliopsoas) e cap. 85 (p. 1083 a 1086, partes moles após artroplastia); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (p. 356 a 358.e1, Tabela 7.1, exame; Tabela 7.2, p. 373; p. 394 a 397, síndrome dolorosa do grande trocânter, rupturas glúteas, ressaltos, osteíte púbica e hérnia do esporte), cap. 56 (p. 2413 a 2415, impacto isquiofemoral, rupturas abdutoras e ressaltos por endoscopia), cap. 38 (p. 1414, avulsões da pelve) e cap. 53 (p. 2281, avulsões proximais dos isquiotibiais); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 10 (Quadril do adulto: bursite, tendinite, ressalto, TRENDELENBURG), cap. 13 (Artroscopia do quadril: dores periarticulares e endoscopia peritrocantérica) e cap. 2 (piriforme), edição digital sem página impressa. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip, cap. 43 (p. 589 a 601, inteiro), cap. 6 (p. 92, bursite após osteotomia trocantérica), cap. 22 (p. 326 a 337, testes laterais, posteriores e de ressalto), cap. 25 (p. 381 a 383, estruturas extracapsulares e impacto isquiofemoral na RM), cap. 31 (p. 449 aprox., fisioterapia da contratura em flexão e tendinite do iliopsoas) e cap. 85 (p. 1083 a 1086, partes moles após artroplastia); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (p. 356 a 358.e1, Tabela 7.1, exame; Tabela 7.2, p. 373; p. 394 a 397, síndrome dolorosa do grande trocânter, rupturas glúteas, ressaltos, osteíte púbica e hérnia do esporte), cap. 56 (p. 2413 a 2415, impacto isquiofemoral, rupturas abdutoras e ressaltos por endoscopia), cap. 38 (p. 1414, avulsões da pelve) e cap. 53 (p. 2280, rupturas do glúteo médio: mulheres acima de 50 anos, sinais com mais de 70% de sensibilidade e especificidade; p. 2281, avulsões proximais dos isquiotibiais); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 10 (Quadril do adulto: bursite, tendinite, ressalto, TRENDELENBURG), cap. 13 (Artroscopia do quadril: dores periarticulares e endoscopia peritrocantérica) e cap. 2 (piriforme), edição digital sem página impressa. As páginas citadas são as impressas.
 subtemas: Dor peritrocantérica e tendinopatias
 resumo: Síndrome dolorosa do grande trocânter (bursite, tendinopatia e ruptura do médio e do mínimo, o "manguito rotador do quadril" de KAGAN, mais em mulheres acima dos 50; facetas: mínimo na anterior, médio na lateral e superoposterior); abdução resistida dolorosa e TRENDELENBURG sugerem ruptura; infiltração com anestésico e corticoide trata e diagnostica; bursite após osteotomia trocantérica em 10% (infiltração de prova antes de retirar fios); ressalto externo pela borda posterior do trato iliotibial ou anterior do glúteo máximo sobre o trocânter, interno pelo iliopsoas sobre a eminência iliopectínea ou a cabeça femoral; piriforme estirado em flexão e rotação interna; impacto isquiofemoral com edema do quadrado femoral; avulsões apofisárias (EIAI reto femoral, ísquio isquiotibiais, trocânter menor iliopsoas).
 ---
@@ -132,7 +132,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 7, p. 394), credita a KAGAN 
 
 O CALLAGHAN (cap. 43, p. 595 aprox.) diz que a demografia real da tendinite abdutora é desconhecida, mas que ela **parece mais prevalente em mulheres que em homens e pode estar ligada ao envelhecimento**, com deterioração lenta da inserção tendínea no trocânter. O Campbell (cap. 7, p. 394) traz o dado das séries cirúrgicas: entre os operados por ruptura parcial ou total, **a maioria era de mulheres**, o **médio estava quase sempre roto** e o **mínimo rompia junto em um terço**. O cap. 56 do Campbell (p. 2413) repete: **rupturas abdutoras são mais vistas em mulheres**. O cap. 85 do CALLAGHAN (p. 1084), escrito por MAHONEY, dá os números que fecham a questão da idade: rupturas do médio e do mínimo foram encontradas em **20% dos pacientes operados por fratura do colo femoral e artrose**, talvez mais comuns em mulheres, com **prevalência acima de 50% depois dos 75 anos**.
 
-Junte as peças: mulher, degeneração, envelhecimento, prevalência crescente com a idade. Por isso a resposta da banca é **mulheres acima de 50 anos**.
+O corte etário vem escrito no capítulo de lesões traumáticas do Campbell (cap. 53, p. 2280): **a maioria das rupturas do glúteo médio relatadas foi em mulheres com mais de 50 anos**. O mesmo trecho situa a frequência: rupturas do médio ou do mínimo em **4% a 20%** dos pacientes submetidos a artroplastia total do quadril e em cerca de **25%** dos que têm fratura do colo femoral. Junte as peças: mulher, degeneração, envelhecimento, prevalência crescente com a idade. Por isso a resposta da banca é **mulheres acima de 50 anos**.
 
 !questoes central=quadril-0019
 conceito: A ruptura do glúteo médio é degenerativa, ligada ao envelhecimento e mais frequente em mulheres; a prevalência passa de 50% acima dos 75 anos e o médio está quase sempre roto, com o mínimo em um terço.
@@ -146,7 +146,7 @@ A dor da tendinite abdutora (CALLAGHAN, cap. 43, p. 595 aprox.) é lateral, **in
 
 ## O exame que separa
 
-O Campbell (cap. 7, p. 358.e1) usa a **abdução resistida ou contra a gravidade** em decúbito lateral: dor indica **tendinite ou ruptura parcial** do médio ou do mínimo. O **OBER** positivo com o quadril **estendido além do neutro** indica trato iliotibial tenso; positivo **em neutro**, contratura ou tendinopatia do médio. O cap. 22 do CALLAGHAN (p. 333 aprox.) testa o **médio com o joelho fletido** (tira o glúteo máximo do trato); força diminuída nessa posição faz suspeitar de ruptura. Com fraqueza real aparece o **TRENDELENBURG**, que avalia a suficiência do médio (HEBERT, cap. 10); o Campbell (p. 394) cita também o **TRENDELENBURG de fadiga** como indicação de RM.
+O Campbell (cap. 7, p. 358.e1) usa a **abdução resistida ou contra a gravidade** em decúbito lateral: dor indica **tendinite ou ruptura parcial** do médio ou do mínimo. O **OBER** positivo com o quadril **estendido além do neutro** indica trato iliotibial tenso; positivo **em neutro**, contratura ou tendinopatia do médio. O cap. 22 do CALLAGHAN (p. 333 aprox.) testa o **médio com o joelho fletido** (tira o glúteo máximo do trato); força diminuída nessa posição faz suspeitar de ruptura. O Campbell (cap. 53, p. 2280) aponta os **dois sinais mais confiáveis** da ruptura do médio: a **marcha de TRENDELENBURG** e a **dor à abdução resistida do quadril**, ambos com **mais de 70% de sensibilidade e especificidade**; a RM (acurácia de **91%**) e o US confirmam. Com fraqueza real aparece o **TRENDELENBURG**, que avalia a suficiência do médio (HEBERT, cap. 10); o Campbell (p. 394) cita também o **TRENDELENBURG de fadiga** como indicação de RM.
 
 As definições numéricas divergem. Para o Campbell (p. 358.e1), é positivo quando **a pelve cai mais de 2 cm** no apoio unipodal. Para o CALLAGHAN (cap. 22, p. 326 aprox.), o apoio unipodal é feito nos dois lados, **primeiro o não afetado**, por **6 segundos**, e é positivo o **desvio de mais de 2 cm em direção ao lado de apoio**, porque a translocação normal é de 2 cm; a inclinação do tronco também é registrada. A técnica completa está no resumo de exame do quadril.
 
@@ -154,7 +154,7 @@ As definições numéricas divergem. Para o Campbell (p. 358.e1), é positivo qu
 conceito: Na ruptura do glúteo médio, além da marcha de TRENDELENBURG, o exame que reproduz a dor é a abdução contra resistência (em decúbito lateral, médio isolado com joelho fletido); no apoio unipodal do CALLAGHAN, 6 segundos, lado normal primeiro, desvio maior que 2 cm para o lado de apoio é positivo.
 como: O TARO 2023 pediu o teste mais reprodutível na ruptura do médio e sua acurácia; o Fellowship de Quadril pediu os detalhes do apoio unipodal segundo CALLAGHAN (tempo, lado examinado primeiro, desvio de 2 cm, inclinação do tronco).
 armadilha: Achar que a palpação dolorosa do trocânter é o teste mais específico (dói também na bursite e na dor radicular) ou que o apoio unipodal deve ser mantido 30 segundos para cansar os abdutores.
-alerta: Os livros conferidos sustentam a abdução resistida dolorosa como sinal de tendinopatia ou ruptura parcial, mas não trazem os valores de sensibilidade e especificidade de `quadril-0096`; gabarito oficial (D, abdução resistida com mais de 70%) mantido. Para `quadril-0599`, o cap. 22 do CALLAGHAN sustenta o gabarito C.
+alerta: O Campbell 15 (cap. 53, p. 2280) sustenta o gabarito oficial de `quadril-0096` (D): TRENDELENBURG e abdução resistida dolorosa são os dois sinais mais confiáveis da ruptura do médio, com mais de 70% de sensibilidade e especificidade. Para `quadril-0599`, o cap. 22 do CALLAGHAN sustenta o gabarito C.
 !fim
 
 ## A imagem
@@ -164,7 +164,7 @@ A radiografia costuma ser normal, salvo calcificação (CALLAGHAN, cap. 43, p. 5
 !tabela Bursite contra ruptura glútea (CALLAGHAN, cap. 43, p. 592 a 596; Campbell 15, cap. 7, p. 394, e cap. 56, p. 2413; CALLAGHAN, cap. 85, p. 1084)
 | Item | Bursite trocantérica | Tendinopatia/ruptura do médio e mínimo |
 | --- | --- | --- |
-| quem | 4ª a 5ª década (GELLER); idosos (HEBERT) | mulheres, envelhecimento; acima de 50% após 75 anos |
+| quem | 4ª a 5ª década (GELLER); idosos (HEBERT) | mulheres acima de 50 anos (Campbell, cap. 53); acima de 50% após 75 anos |
 | dor | distal/central no trocânter, ao deitar | superolateral, piora ao longo do dia, ao virar na cama |
 | força | normal | abdução resistida dolorosa; fraqueza e TRENDELENBURG na ruptura |
 | infiltração | alívio imediato e duradouro com 1 ou 2 | alívio curto, recidiva quase universal; repetir é alerta |

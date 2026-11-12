@@ -1,6 +1,6 @@
 ---
 id: rockwood10-luxacao-quadril
-versao: 1
+versao: 2
 titulo: Luxação do quadril e fratura da cabeça femoral
 especialidade: trauma
 acesso: gratis
@@ -108,7 +108,7 @@ A classificação de BRUMBACK (adiante) amarra essas lesões à direção: o tip
 conceito: A impacção (indentação) da cabeça é a lesão característica da luxação anterior, mais comum que o cisalhamento nessa direção e de maior risco de necrose, porque atinge a zona de entrada dos vasos da circunflexa medial; na posterior, a lesão típica da cabeça é o cisalhamento.
 como: O TEOT 2025 perguntou em qual luxação a impactação é mais comum e com que risco de necrose (anterior, maior risco); o TEOT 2022, a lesão mais frequente da anterior que predispõe à necrose (impacção); o TARO 2014, a luxação a que a indentação raramente se associa (posterior).
 armadilha: Atribuir a impacção à luxação posterior, ou responder avulsão porque o livro diz que a avulsão é a mais comum na anterior: a avulsão pequena na fóvea não aumenta a necrose; quem aumenta é a impacção.
-alerta: Em `trauma-0197`, o Rockwood diz que a avulsão é a lesão da cabeça mais comum na luxação anterior, mas que a impacção é mais comum que o cisalhamento e é a que eleva o risco de necrose; o gabarito (impacção) responde à segunda parte do enunciado. Em `trauma-0170`, o livro não afirma literalmente que a indentação é rara na posterior; sustenta que ela é a lesão da luxação anterior (BRUMBACK 4A).
+alerta: Em `trauma-0197`, o Rockwood diz que a avulsão é a lesão da cabeça mais comum na luxação anterior, mas que a impacção é mais comum que o cisalhamento e é a que eleva o risco de necrose; o gabarito (impacção) responde à segunda parte do enunciado. Em `trauma-0170`, o livro não afirma literalmente que a indentação é rara na posterior; sustenta que ela é a lesão da luxação anterior (BRUMBACK 4A), e a própria Fig. 52-3 (seção Injuries Associated With Hip Dislocations) mostra impacção da cabeça numa luxação posterior, associada a fratura do colo sem desvio. O gabarito oficial (C) foi mantido, coerente com a associação descrita.
 !fim
 
 # Anatomia aplicada: cápsula, ciático e irrigação da cabeça {radar=fundamento}
@@ -135,7 +135,7 @@ O lábio aumenta a cobertura da cabeça em mais de 10%, mantendo mais de 50% cob
 
 Todos os nervos do membro inferior passam perto do quadril, mas **o ciático é o que mais corre risco**, porque fica atrás da articulação: sai da incisura isquiática maior **profundo ao piriforme** e **superficial ao obturador interno e aos gêmeos**. Na luxação posterior, a cabeça o estira ou o comprime diretamente.
 
-As variações com o piriforme (Fig. 52-14) explicam em parte por que a **divisão fibular é a mais lesada**: em 85% o nervo é único e na posição normal; em 12% divide-se antes de sair da incisura e **a divisão fibular atravessa o piriforme**; em 3% as divisões cercam o músculo; em 1% o nervo inteiro o atravessa. Na técnica de KOCHER-LANGENBECK, o capítulo acrescenta que o nervo sai sob o piriforme e passa dorsal ao obturador interno em 84%. O Campbell (cap. 65, p. 2946) lista as explicações para a vulnerabilidade fibular: relação com o piriforme, fixação do nervo na incisura isquiática e no colo da fíbula, e a própria morfologia da divisão.
+As variações com o piriforme (Fig. 52-14) explicam em parte por que a **divisão fibular é a mais lesada**: em 85% o nervo é único e na posição normal; em 12% divide-se antes de sair da incisura e **a divisão fibular atravessa o piriforme**; em 3% as divisões cercam o músculo; em 1% o nervo inteiro o atravessa. Esses são os números do texto; os desenhos da própria Fig. 52-14 trazem **84,2%, 11,7%, 3,3% e 0,8%**, e a legenda arredonda para 84% (nervo único, anterior ao piriforme) e 16% (parte do nervo através do piriforme ou atrás dele). Na técnica de KOCHER-LANGENBECK, o capítulo acrescenta que o nervo sai sob o piriforme e passa dorsal ao obturador interno em 84%. O Campbell (cap. 65, p. 2946) lista as explicações para a vulnerabilidade fibular: relação com o piriforme, fixação do nervo na incisura isquiática e no colo da fíbula, e a própria morfologia da divisão.
 
 O **nervo obturatório** passa pela parte superolateral do forame obturado com a artéria obturatória; o **nervo femoral** fica medial ao psoas, na mesma bainha, e pode ser lesado na luxação anterior.
 
@@ -379,9 +379,9 @@ O **PIPKIN IV** costuma ser cabeça mais **parede posterior**, e o tratamento é
 | IV | Luxação cirúrgica, fixando parede e cabeça | Ditado pelo acetábulo; luxação cirúrgica | Luxação cirúrgica (KOCHER-LANGENBECK possível) |
 !fim
 
-!questoes central=trauma-0097 relacionadas=trauma-0285
+!questoes central=trauma-0097 relacionadas=trauma-0285,trauma-0117
 conceito: O fragmento do PIPKIN I é anteromedial e fica fora da área de carga; pequeno, deixa-se ou excisa-se, grande e desviado, fixa-se, e a via de escolha é a anterior; o fragmento do cisalhamento é anteromedial, e a redução incongruente não é emergência.
-como: O TARO 2017 perguntou o tratamento cirúrgico do PIPKIN I (fixação do fragmento); uma prova de Ortopedia pediu a afirmação correta sobre as fraturas da cabeça (acesso anterior no PIPKIN I), com distratores sobre urgência da redução incongruente, fragmento posteromedial e cisalhamento mais frequente que impacção na anterior.
+como: O TARO 2017 perguntou o tratamento cirúrgico do PIPKIN I (fixação do fragmento); uma prova de Ortopedia pediu a afirmação correta sobre as fraturas da cabeça (acesso anterior no PIPKIN I), com distratores sobre urgência da redução incongruente, fragmento posteromedial e cisalhamento mais frequente que impacção na anterior; o TARO 2016 perguntou a posição mais comum do fragmento livre na fratura da cabeça femoral (anteromedial).
 armadilha: Achar que a redução incongruente exige cirurgia de urgência (só a irredutível é emergência), que o fragmento é posteromedial ou que na anterior o cisalhamento supera a impacção.
 alerta: Em `trauma-0097`, o gabarito (fixação) segue o Campbell (cap. 60, p. 2689), que manda fixar o PIPKIN I grande e desviado; o Rockwood prefere tratamento não operatório ou excisão para o fragmento pequeno e relata 87% de bons resultados com a excisão.
 !fim
@@ -466,26 +466,28 @@ armadilha: Responder osteonecrose, que é a complicação mais temida e a que de
 
 Na apresentação, a disfunção do ciático aparece em **até 19%** (Rockwood) e é **mais comum nas fraturas-luxações** que nas luxações puras. O Campbell cita **13% nas luxações posteriores simples** (cap. 65, p. 2946) e **27,5%** numa série recente (cap. 60, p. 2685); **nenhuma sequela neurológica foi relatada após luxação anterior**. A **divisão fibular é a mais acometida**, por isso se testa a eversão e a dorsiflexão.
 
-!tabela Ciático: números e condutas (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 52, Prereduction, Postreduction e Sciatic Nerve Dysfunction; Campbell's Operative Orthopaedics, 15ª ed., cap. 65, p. 2946; Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, Nerve Injury)
+!tabela Ciático: números e condutas (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 52, Prereduction, Postreduction e Sciatic Nerve Dysfunction; Campbell's Operative Orthopaedics, 15ª ed., cap. 65, p. 2946; Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24, Nerve Injury; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 30, p. 1300 e 1302)
 | Situação | Dado ou conduta |
 |---|---|
 | Incidência no adulto | Até 19% (Rockwood); 13% na posterior simples (Campbell); cerca de 10% (Rockwood and Wilkins) |
-| Incidência na criança | Cerca de 5%; compressão direta pela cabeça em 2% a 13% das posteriores |
+| Incidência na criança | Cerca de 5%; compressão direta pela cabeça em 2% a 13% das posteriores (Rockwood and Wilkins); até 25% das posteriores, mais nas crianças maiores e no trauma de alta energia (Tachdjian, cap. 30, p. 1300) |
 | Divisão mais lesada | Fibular |
 | Lesão presente antes da redução | Reduzir com mais urgência; exploração em geral não recomendada |
 | Normal antes e pior depois da redução | Explorar: o nervo pode estar preso na articulação (TORNETTA e MOSTAFAVI) |
 | Recuperação | Cerca de 70% funcional (Rockwood); pelo menos parcial em dois terços (Campbell); 60% a 70% parcial (Rockwood and Wilkins); completa vai pior que parcial |
-| Sem recuperação | Órtese tornozelo-pé ou transferência tendínea |
+| Sem recuperação | Órtese tornozelo-pé ou transferência tendínea; na criança, explorar o nervo se não houver alguma recuperação em 3 meses (Tachdjian, cap. 30, p. 1302) |
 | Disfunção tardia | Ossificação heterotópica comprimindo ou estirando; examinar em toda consulta, descompressão precoce |
 !fim
 
 Na criança, o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 24) segue a mesma lógica: com redução rápida, a função volta espontaneamente na maioria; se a paralisia já existia antes da redução, não se explora, salvo se a redução aberta for necessária por outro motivo; se o nervo estava íntegro e se perdeu durante a manobra, explora-se para ter certeza de que não entrou na articulação; o tratamento é expectante, salvo suspeita de laceração ou encarceramento. O livro também lembra que a luxação na criança pode se reduzir sozinha e deixar um quadril incongruente, que a recorrência é rara (menos de 3%, mais em menores de 8 anos e em hiperfrouxos) e que o gesso pelvipodálico por pelo menos 3 meses pode resolver a recidiva nos pequenos.
 
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 30, p. 1300 e 1302), dá números mais altos e um prazo: a paralisia do ciático, tida como rara, já foi relatada em **até 25% das luxações posteriores**, sobretudo nas **crianças maiores** e no **trauma de alta energia**, e a demora da redução se associa à disfunção do nervo; as lesões costumam ser **parciais**, e recomenda-se **explorar o nervo** quando **não há alguma recuperação em 3 meses**.
+
 !questoes central=trauma-0995
-conceito: Na luxação traumática da criança, o ciático é lesado em cerca de 5% (2% a 13% das posteriores), a maioria recupera com a redução rápida, e a exploração fica para o nervo perdido durante a manobra ou para suspeita de laceração ou encarceramento.
+conceito: Na luxação traumática da criança, o ciático é lesado em cerca de 5% pelo Rockwood and Wilkins (2% a 13% das posteriores) e em até 25% das posteriores pelo Tachdjian; a maioria recupera com a redução rápida, e o Tachdjian recomenda explorar quando não há alguma recuperação em 3 meses.
 como: O TARO 2026 perguntou a frequência da lesão do ciático na luxação traumática do quadril na infância e quando explorar (até 20%, exploração após 3 meses).
 armadilha: Indicar exploração precoce para toda paralisia presente na chegada; o nervo lesado antes da redução se observa.
-alerta: Em `trauma-0995`, o Rockwood and Wilkins (cap. 24) dá cerca de 5% na criança e 2% a 13% de compressão nas posteriores, e não traz o número de 20% nem prazo de 3 ou 6 meses para explorar; o gabarito oficial foi mantido.
+alerta: Em `trauma-0995`, o gabarito oficial (A) foi mantido. O prazo de 3 meses está no Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 30, p. 1302), mas a frequência que o livro dá é de até 25% das luxações posteriores (p. 1300), e não 20%; o Rockwood and Wilkins (cap. 24) dá cerca de 5% na criança e 2% a 13% nas posteriores, sem prazo para explorar. O número de 20% não aparece em nenhum livro conferido; a alternativa A é a única compatível com o Tachdjian.
 !fim
 
 ## Outras complicações

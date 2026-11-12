@@ -1,6 +1,6 @@
 ---
 id: rockwood10-politrauma
-versao: 1
+versao: 2
 titulo: Politrauma e controle de danos
 especialidade: trauma
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 14 · Management of the Multiply Injured Patient
 autores: Tejal S. Brahmbhatt e Heather A. Vallier
-fonte: Livros conferidos localmente em 03/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14 inteiro (pp. 467 a 489), cap. 18 (MESS, pp. 605 a 606), cap. 50 (pp. aprox. 2054 a 2059, 2087 a 2089 e 2171), cap. 51 (pp. aprox. 2181 e 2185), cap. 52 (p. aprox. 2309) e cap. 26 (p. aprox. 795); AO Principles of Fracture Management, 3ª ed., cap. 4.1 (pp. 311 a 326); Skeletal Trauma, 5ª ed., caps. 9 e 11 (pp. 291 a 302 e 315 a 326); Campbell's Operative Orthopaedics, 15ª ed., caps. 48, 58, 59 e 61; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 74. As páginas citadas são as impressas; no Rockwood, que não traz página impressa no PDF, foram inferidas pelo índice remissivo (aprox.).
+fonte: Livros conferidos localmente em 03/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14 inteiro (Management of the Multiply Injured Patient), cap. 18 (MESS, Tabela 18-4), cap. 50 (Injuries Associated With Pelvic Ring Injuries, Signs and Symptoms, Initial Management e Deep Venous Thrombosis/Pulmonary Embolism Prophylaxis), cap. 51 (Mechanisms of Injury e Injuries Associated With Acetabular Fractures), cap. 52 (Injuries Associated With Hip Dislocations) e cap. 26 (Trauma-Induced Coagulopathy); AO Principles of Fracture Management, 3ª ed., cap. 4.1 (pp. 311 a 326); Skeletal Trauma, 5ª ed., caps. 9 e 11 (pp. 291 a 302 e 315 a 326); Campbell's Operative Orthopaedics, 15ª ed., caps. 48, 58, 59 e 61; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 74. As páginas citadas são as impressas; o Rockwood não traz página impressa no PDF e é citado por capítulo e seção.
 subtemas: Politrauma e controle de danos
 resumo: ABCDE e mortalidade trimodal (precoce: hematoma epidural, hemopneumotórax, sangramento de extremidades); tríade letal (hipotermia, acidose, coagulopatia); SIRS (T > 38 ou < 36, FC > 90, FR > 20 ou PaCO2 < 32, leucócitos > 12.000 ou < 4.000 ou > 10% de jovens) e IL-6 como marcador; primeiro e segundo golpes; ISS (soma dos quadrados de três regiões, até 75) e NISS; estável, borderline, instável e in extremis; lactato como guia (EAC: pH ≥ 7,25, BE ≥ -5,5, lactato < 4 em 36 h); janela do 5º ao 10º dia; PIC ≤ 20 e PPC > 70; pelve: cinta nos trocânteres, tamponamento só com pelve estabilizada, arteriografia pelo extravasamento na TC; MESS ≥ 7.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 14 (Management of the Multiply Injured Patient) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), costurado com o capítulo 4.1 do AO Principles of Fracture Management, 3ª ed., os capítulos 9 e 11 do Skeletal Trauma, 5ª ed., o Campbell's Operative Orthopaedics, 15ª ed., e o capítulo 74 do HEBERT, 5ª ed. As páginas do Rockwood são aproximadas, inferidas pelo índice remissivo.
+Este resumo é inspirado no capítulo 14 (Management of the Multiply Injured Patient) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), costurado com o capítulo 4.1 do AO Principles of Fracture Management, 3ª ed., os capítulos 9 e 11 do Skeletal Trauma, 5ª ed., o Campbell's Operative Orthopaedics, 15ª ed., e o capítulo 74 do HEBERT, 5ª ed. O PDF do Rockwood não traz página impressa, por isso ele é citado por capítulo e seção.
 
 A ideia central: **o politraumatizado morre da fisiologia, não da radiografia**. A placa perfeita no paciente frio, ácido e sangrando é um segundo golpe; a tração por semanas devolve o paciente à pneumonia e à embolia gordurosa. Quem está ressuscitado recebe o cuidado definitivo cedo; quem não está recebe o controle de danos e volta na janela certa. As bancas cobram o ATLS e as causas de morte, a tríade letal e a SIRS, a decisão entre cuidado total precoce e controle de danos, e as lesões que matam ou custam o membro (pelve instável, MESS).
 
@@ -43,9 +43,9 @@ O HEBERT, 5ª ed. (cap. 74, seção Definição), usa **ISS (EGL) acima de 17**.
 
 ## ISS, AIS e NISS
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, p. aprox. 472 a 473), divide os escores em **fisiológicos, anatômicos e combinados**. O **ISS é anatômico** e validado para morbidade e mortalidade: cada lesão recebe um grau no **AIS**; em cada região conta **só o maior AIS**; somam-se os **quadrados** das **três regiões mais graves** (ISS = A² + B² + C²). **AIS 6** em qualquer lesão leva o ISS automaticamente a **75**, o máximo; **ISS acima de 15 associa-se a 10% de mortalidade**.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, seção Injury Scoring), divide os escores em **fisiológicos, anatômicos e combinados**. O **ISS é anatômico** e validado para morbidade e mortalidade: cada lesão recebe um grau no **AIS**; em cada região conta **só o maior AIS**; somam-se os **quadrados** das **três regiões mais graves** (ISS = A² + B² + C²). **AIS 6** em qualquer lesão leva o ISS automaticamente a **75**, o máximo; **ISS acima de 15 associa-se a 10% de mortalidade**.
 
-!tabela ISS: regiões e graus do AIS (Rockwood and Green's, 10ª ed., cap. 14, Tabela 14-3, p. aprox. 473)
+!tabela ISS: regiões e graus do AIS (Rockwood and Green's, 10ª ed., cap. 14, Tabela 14-3, seção Injury Scoring)
 | Elemento | Conteúdo |
 | --- | --- |
 | Regiões | partes moles; cabeça e pescoço; tórax; abdome; extremidades e/ou pelve |
@@ -56,15 +56,15 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, p. aprox. 472 a 4
 | NISS | três maiores AIS, em qualquer região |
 !fim
 
-O defeito do ISS é a regra "só o maior AIS de cada região": fêmur bilateral, tíbia exposta e pelve instável caem todos em "extremidades e/ou pelve" e só um conta. O **NISS** soma as **três maiores lesões, independentemente da região**, e se mostrou potencialmente **mais preditivo de sobrevida**; o ISS ainda é difícil de calcular na admissão (Rockwood, p. aprox. 473). Divergência: o ISS vai **de 0 a 75** no Rockwood e **de 3 a 75** no HEBERT. O HEBERT mostra a fragilidade do idoso: com ISS acima de 15, mortalidade de **4,8% abaixo dos 65 anos e 24,3% a partir dos 65**.
+O defeito do ISS é a regra "só o maior AIS de cada região": fêmur bilateral, tíbia exposta e pelve instável caem todos em "extremidades e/ou pelve" e só um conta. O **NISS** soma as **três maiores lesões, independentemente da região**, e se mostrou potencialmente **mais preditivo de sobrevida**; o ISS ainda é difícil de calcular na admissão (Rockwood, cap. 14, Injury Scoring). Divergência: o ISS vai **de 0 a 75** no Rockwood e **de 3 a 75** no HEBERT. O HEBERT mostra a fragilidade do idoso: com ISS acima de 15, mortalidade de **4,8% abaixo dos 65 anos e 24,3% a partir dos 65**.
 
 # Por que o paciente morre e em que momento {radar=confirmado}
 
 ## A distribuição trimodal
 
-O Rockwood (cap. 14, p. aprox. 472) descreve a **distribuição trimodal** clássica da mortalidade, com a ressalva de que os limites de tempo não são uniformes na literatura e de que **a maioria das mortes ainda ocorre nas primeiras 24 horas**.
+O Rockwood (cap. 14, seção Causes of Mortality) descreve a **distribuição trimodal** clássica da mortalidade, com a ressalva de que os limites de tempo não são uniformes na literatura e de que **a maioria das mortes ainda ocorre nas primeiras 24 horas**.
 
-!tabela Mortalidade trimodal: o que mata em cada pico (Rockwood and Green's, cap. 14, p. aprox. 472; HEBERT, cap. 74)
+!tabela Mortalidade trimodal: o que mata em cada pico (Rockwood and Green's, cap. 14, Causes of Mortality; HEBERT, cap. 74)
 | Pico | Quando | Rockwood | HEBERT |
 | --- | --- | --- | --- |
 | Imediato | no local ou no transporte | perda da via aérea, grandes lesões cerebrais com efeito de massa, **lesão medular alta**, ruptura de grandes vasos | laceração cerebral, **TRM alto**, lesão de **tronco cerebral** |
@@ -84,9 +84,9 @@ armadilha: Incluir lesão de tronco cerebral ou trauma raquimedular alto (pico i
 
 ## A origem e a lógica do ABCDE
 
-O Rockwood (cap. 14, p. aprox. 468) lembra que o conceito do ATLS foi introduzido por **James STYNER, um ortopedista**, com a Universidade de Nebraska, em **1968**. A ressuscitação **horizontal** (tarefas em paralelo, com **líder de equipe**) é a realidade dos centros de trauma, e o AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 317) confirma que muitos sistemas adaptaram o ATLS para avaliar e tratar em paralelo. Regra de ouro: **só se passa à letra seguinte com a anterior segura**, porque a via aérea mata mais rápido que o pneumotórax, e este mais rápido que a hemorragia.
+O Rockwood (cap. 14, seção Initial Assessment of the Trauma Patient) lembra que o conceito do ATLS foi introduzido por **James STYNER, um ortopedista**, com a Universidade de Nebraska, em **1968**. A ressuscitação **horizontal** (tarefas em paralelo, com **líder de equipe**) é a realidade dos centros de trauma, e o AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 317) confirma que muitos sistemas adaptaram o ATLS para avaliar e tratar em paralelo. Regra de ouro: **só se passa à letra seguinte com a anterior segura**, porque a via aérea mata mais rápido que o pneumotórax, e este mais rápido que a hemorragia.
 
-!tabela Avaliação primária: o que cada letra exige (Rockwood and Green's, cap. 14, pp. aprox. 468 a 470)
+!tabela Avaliação primária: o que cada letra exige (Rockwood and Green's, cap. 14, Primary Survey)
 | Letra | O que avaliar | Condutas e números que caem |
 | --- | --- | --- |
 | A | via aérea com **imobilização cervical** | O2 empírico; **GCS ≤ 8 = intubação**; cricotireoidostomia se não intubar |
@@ -100,15 +100,15 @@ Pelo **POISEUILLE**, o fluxo é proporcional ao raio à quarta potência e inver
 
 ## Secundária, terciária e o papel do ortopedista
 
-A **secundária** é o exame da cabeça aos pés com a história **AMPLE**; a **terciária** repete tudo quando o paciente pode colaborar. **Lesões musculoesqueléticas despercebidas são comuns**, sobretudo no **TCE que foi direto para cirurgia** (Rockwood, p. aprox. 470); o Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2517), estima **5% a 20%** de lesões não reconhecidas, e a terciária padronizada as reduziu em **36%** (Skeletal Trauma, 5ª ed., cap. 9, p. 301).
+A **secundária** é o exame da cabeça aos pés com a história **AMPLE**; a **terciária** repete tudo quando o paciente pode colaborar. **Lesões musculoesqueléticas despercebidas são comuns**, sobretudo no **TCE que foi direto para cirurgia** (Rockwood, cap. 14, Tertiary Survey); o Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2517), estima **5% a 20%** de lesões não reconhecidas, e a terciária padronizada as reduziu em **36%** (Skeletal Trauma, 5ª ed., cap. 9, p. 301).
 
-O Rockwood (p. aprox. 470) define a **cirurgia ortopédica de controle de danos**: **controlar a hemorragia, reduzir a contaminação pelo desbridamento e estabilizar osso e partes moles em quem não pode receber o reparo definitivo**, inclusive em cirurgias simultâneas (craniotomia, fixador femoral e esplenectomia na mesma anestesia).
+O Rockwood (cap. 14, Role of the Orthopaedic Surgeon) define a **cirurgia ortopédica de controle de danos**: **controlar a hemorragia, reduzir a contaminação pelo desbridamento e estabilizar osso e partes moles em quem não pode receber o reparo definitivo**, inclusive em cirurgias simultâneas (craniotomia, fixador femoral e esplenectomia na mesma anestesia).
 
 # Choque: os quatro tipos e as classes da hemorragia {radar=fundamento}
 
 ## Os quatro tipos
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, pp. aprox. 470 a 472) define choque como **perfusão inadequada dos órgãos-alvo** e descreve quatro tipos: hipovolêmico, cardiogênico, neurogênico e séptico. A **hemorragia é a causa mais comum** e a **principal causa de morte evitável**; o choque hemorrágico responde por cerca de **40% das mortes traumáticas**. O **neurogênico** (medula cervical ou torácica alta, 7% a 10% dos traumas raquimedulares) dá **hipotensão com bradicardia e pele quente e seca**; como a fase tardia da hemorragia também dá hipotensão com bradicardia, **exclui-se a hipovolemia antes**. **Choque medular não é choque**: é a perda temporária dos reflexos abaixo da lesão. O cardiogênico e o séptico são raros no início; sepse no politraumatizado manda procurar lesão despercebida. A frequência cardíaca engana no idoso e no usuário de betabloqueador.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, seções Clinical Presentation e Shock) define choque como **perfusão inadequada dos órgãos-alvo** e descreve quatro tipos: hipovolêmico, cardiogênico, neurogênico e séptico. A **hemorragia é a causa mais comum** e a **principal causa de morte evitável**; o choque hemorrágico responde por cerca de **40% das mortes traumáticas**. O **neurogênico** (medula cervical ou torácica alta, 7% a 10% dos traumas raquimedulares) dá **hipotensão com bradicardia e pele quente e seca**; como a fase tardia da hemorragia também dá hipotensão com bradicardia, **exclui-se a hipovolemia antes**. **Choque medular não é choque**: é a perda temporária dos reflexos abaixo da lesão. O cardiogênico e o séptico são raros no início; sepse no politraumatizado manda procurar lesão despercebida. A frequência cardíaca engana no idoso e no usuário de betabloqueador.
 
 ## As classes da hemorragia
 
@@ -123,7 +123,7 @@ A Tabela 14-2 do Rockwood (classificação do choque hemorrágico no homem de 70
 | IV | > 40% | > 2.000 mL | taquicardia grave, pressão de pulso diminuída, **obnubilação ou coma** | sangue |
 !fim
 
-A **PAS só cai na classe III**: antes, o corpo compensa com taquicardia, e a pressão de pulso estreita. Quem estabiliza e volta a cair **está sangrando** (Skeletal Trauma, cap. 9, p. 297). O Rockwood (cap. 14, p. aprox. 476) dá a perda média: **fêmur 1.200 mL**, **úmero ou tíbia 750 mL**; **pelve e fêmur bilateral** são as lesões que mais sangram, e múltiplos ossos longos chegam a **25% de mortalidade**, com o sangue escondido em espaço fechado.
+A **PAS só cai na classe III**: antes, o corpo compensa com taquicardia, e a pressão de pulso estreita. Quem estabiliza e volta a cair **está sangrando** (Skeletal Trauma, cap. 9, p. 297). O Rockwood (cap. 14, Fractures and Dislocations, Long Bone Fractures) dá a perda média: **fêmur 1.200 mL**, **úmero ou tíbia 750 mL**; **pelve e fêmur bilateral** são as lesões que mais sangram, e múltiplos ossos longos chegam a **25% de mortalidade**, com o sangue escondido em espaço fechado.
 
 O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 315) recomenda **PAS de 80 a 90 mm Hg** até parar o grande sangramento sem TCE, e **PAM ≥ 90** com TCE (GCS ≤ 8): **hipotensão permissiva** com bolus de 250 mL aquecidos, **limitada no tempo**. O Skeletal Trauma (cap. 11, p. 318) explica: normalizar a pressão antes da hemostasia desloca o coágulo, a hipotensão volta, mais cristaloide dilui os fatores e a hipotermia chega.
 
@@ -131,7 +131,7 @@ O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 315) recomenda **P
 
 ## Por que os três se alimentam
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, p. aprox. 473, Figura 14-1) define a **tríade letal** como **hipotermia, acidose e coagulopatia**, consequência aceita da hemorragia grave. O ponto central é que os três se retroalimentam até um **ponto sem retorno**:
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, seção Resuscitation, Figura 14-1) define a **tríade letal** como **hipotermia, acidose e coagulopatia**, consequência aceita da hemorragia grave. O ponto central é que os três se retroalimentam até um **ponto sem retorno**:
 
 - a oferta inadequada de oxigênio leva ao **metabolismo anaeróbio**, que produz **acidose**;
 - a acidose altera o ambiente enzimático e torna **disfuncionais a agregação plaquetária e os fatores de coagulação**;
@@ -148,7 +148,7 @@ armadilha: Trocar acidose por alcalose ou coagulopatia por anúria.
 
 ## Como se ressuscita hoje
 
-O Rockwood (cap. 14, p. aprox. 473) usa a **tromboelastografia** para repor por defeito (R longo = plasma; K e ângulo alfa = crioprecipitado; amplitude máxima = plaquetas; fibrinólise = ácido tranexâmico) e a **transfusão maciça 1:1:1** (plasma, plaquetas, hemácias). O **REBOA** oclui a aorta na **zona 1** (sangramento intraperitoneal) ou na **zona 3** (sangramento **pélvico**, onde está a melhor evidência), e o ortopedista vigia a síndrome compartimental de reperfusão. O AO Principles (cap. 4.1, p. 316) traz o **CRASH-2**: **ácido tranexâmico em até 3 horas**, 1 g de ataque e 1 g em 8 horas, e define a **ressuscitação de controle de danos**: hemostasia externa, hipotensão permissiva limitada, pouco cristaloide, hemoderivados precoces, ácido tranexâmico, aquecimento e cirurgia de controle de danos.
+O Rockwood (cap. 14, Resuscitation) usa a **tromboelastografia** para repor por defeito (R longo = plasma; K e ângulo alfa = crioprecipitado; amplitude máxima = plaquetas; fibrinólise = ácido tranexâmico) e a **transfusão maciça 1:1:1** (plasma, plaquetas, hemácias). O **REBOA** oclui a aorta na **zona 1** (sangramento intraperitoneal) ou na **zona 3** (sangramento **pélvico**, onde está a melhor evidência), e o ortopedista vigia a síndrome compartimental de reperfusão. O AO Principles (cap. 4.1, p. 316) traz o **CRASH-2**: **ácido tranexâmico em até 3 horas**, 1 g de ataque e 1 g em 8 horas, e define a **ressuscitação de controle de danos**: hemostasia externa, hipotensão permissiva limitada, pouco cristaloide, hemoderivados precoces, ácido tranexâmico, aquecimento e cirurgia de controle de danos.
 
 O termo "damage control" foi usado por ROTONDO em **1993**, com **três fases** (FELICIANO): controlar sangramento e contaminação; corrigir a tríade na UTI; voltar para o reparo definitivo (Skeletal Trauma, 5ª ed., cap. 11, p. 317). O controle de danos ortopédico é a mesma lógica aplicada ao osso.
 
@@ -181,7 +181,7 @@ armadilha: Aceitar FC > 80 ou > 120, FR > 15 ou > 40, leucócitos > 8.000 ou > 1
 
 ## A IL-6 como marcador
 
-O AO Principles (cap. 4.1, p. 313) sustenta a resposta: a **IL-6** é o marcador útil porque tem **padrão de expressão consistente e meia-vida plasmática adequada**; **200 pg/dL** foi diagnóstico de estado de SIRS (nos dias 0 e 1, p. 315), com correlação entre IL-6, SIRS e eventos adversos. O HEBERT (cap. 74, Critérios prognósticos) acrescenta que IL-6 de entrada acima de **800 pg/mL** cursou sempre com falência múltipla de órgãos (SMITH e GIANNOUDIS). O Rockwood (cap. 26, p. aprox. 795) lista no surto pós-trauma os **pró-inflamatórios IL-6, IL-8, IL-1β e TNF-α** e os **anti-inflamatórios IL-10 e TGF-β**: TNF e IL-1 também sobem, mas é a IL-6 que os livros apontam como marcador confiável. A proteína C-reativa não aparece nos livros como marcador da fase aguda do politrauma.
+O AO Principles (cap. 4.1, p. 313) sustenta a resposta: a **IL-6** é o marcador útil porque tem **padrão de expressão consistente e meia-vida plasmática adequada**; **200 pg/dL** foi diagnóstico de estado de SIRS (nos dias 0 e 1, p. 315), com correlação entre IL-6, SIRS e eventos adversos. O HEBERT (cap. 74, Critérios prognósticos) acrescenta que IL-6 de entrada acima de **800 pg/mL** cursou sempre com falência múltipla de órgãos (SMITH e GIANNOUDIS). O Rockwood (cap. 26, seção Trauma-Induced Coagulopathy, Inflammation and Coagulopathy) lista no surto pós-trauma os **pró-inflamatórios IL-6, IL-8, IL-1β e TNF-α** e os **anti-inflamatórios IL-10 e TGF-β**: TNF e IL-1 também sobem, mas é a IL-6 que os livros apontam como marcador confiável. A proteína C-reativa não aparece nos livros como marcador da fase aguda do politrauma.
 
 !questoes central=trauma-0317 relacionadas=trauma-0070,trauma-1145
 conceito: A IL-6 é o marcador que mais se correlaciona com a gravidade e com a SIRS: expressão consistente, meia-vida adequada, corte de 200 pg/dL nos dias 0 e 1; acima de 800 pg/mL na admissão, falência múltipla.
@@ -211,7 +211,7 @@ alerta: Os livros conferidos não dizem com todas as letras que os monócitos li
 
 ## Primeiro golpe, segundo golpe
 
-O AO Principles (cap. 4.1, p. 314) define: a SIRS depende primariamente da gravidade do trauma, o **primeiro golpe**; intervenções, **cirurgias** e complicações são **segundos** (ou terceiros) **golpes**, e a elastase sobe depois da haste femoral. O Rockwood (cap. 14, p. aprox. 479) traduz: a cirurgia controla o sangramento ósseo, mas **também sangra**; acima de um limiar, vem a SIRS grave e a falência, sobretudo no **sub-ressuscitado**. O Skeletal Trauma, 5ª ed. (cap. 11, p. 317) distingue o modelo de **um golpe** (lesão maciça com choque já leva à falência precoce) do de **dois golpes** (hemorragia, ressuscitação incompleta, infecção ou cirurgia amplificam a resposta), e lembra que o **pulmão falha primeiro, em 48 a 72 horas**, depois rim e fígado, com mortalidade próxima de **80%** quando os três falham. Nenhuma droga modula a resposta; o cirurgião controla a hora e o tamanho do segundo golpe.
+O AO Principles (cap. 4.1, p. 314) define: a SIRS depende primariamente da gravidade do trauma, o **primeiro golpe**; intervenções, **cirurgias** e complicações são **segundos** (ou terceiros) **golpes**, e a elastase sobe depois da haste femoral. O Rockwood (cap. 14, Risks of Early Care) traduz: a cirurgia controla o sangramento ósseo, mas **também sangra**; acima de um limiar, vem a SIRS grave e a falência, sobretudo no **sub-ressuscitado**. O Skeletal Trauma, 5ª ed. (cap. 11, p. 317) distingue o modelo de **um golpe** (lesão maciça com choque já leva à falência precoce) do de **dois golpes** (hemorragia, ressuscitação incompleta, infecção ou cirurgia amplificam a resposta), e lembra que o **pulmão falha primeiro, em 48 a 72 horas**, depois rim e fígado, com mortalidade próxima de **80%** quando os três falham. Nenhuma droga modula a resposta; o cirurgião controla a hora e o tamanho do segundo golpe.
 
 # Estável, borderline, instável e in extremis {radar=confirmado}
 
@@ -236,13 +236,13 @@ Depois da avaliação inicial e das intervenções salvadoras, o AO Principles o
 
 O Skeletal Trauma, 5ª ed. (cap. 11, p. 320) descreve o **borderline**: fratura do membro inferior, **sobretudo do fêmur, ou da pelve**, mais uma lesão que pode piorar (**contusão pulmonar ou TCE**), episódios de instabilidade e hipóxia; precisa de **tempo** para as lesões "se declararem". O instável fica em tração esquelética ou fixador (até à beira do leito); o in extremis recebe fixador como ponte. O HEBERT (cap. 74, Considerações finais) lista quem é de risco: **TCE, contusão pulmonar bilateral, múltiplos ossos longos, coagulopatia, hipotermia ou cirurgia estimada acima de seis horas**.
 
-O termo nasceu dos dados de PAPE: com **trauma torácico grave**, a haste femoral precoce teve **SDRA em 33% e mortalidade de 21%** (Rockwood, cap. 14, p. aprox. 480). O HEBERT chama o período de "era borderline", com três fatores para a função pulmonar: **ISS, trauma torácico associado ao choque e haste fresada**. O contraponto atual vem do Campbell's Operative Orthopaedics, 15ª ed. (cap. 59, p. 2638): a **haste fresada imediata não aumenta complicações pulmonares clinicamente relevantes na maioria**, e só o borderline ou de altíssimo risco se beneficia do controle de danos; o Skeletal Trauma (cap. 11, p. 320) diz que os centros norte-americanos usam o cuidado total precoce de forma bem mais agressiva que os critérios de PAPE.
+O termo nasceu dos dados de PAPE: com **trauma torácico grave**, a haste femoral precoce teve **SDRA em 33% e mortalidade de 21%** (Rockwood, cap. 14, Risks of Early Care). O HEBERT chama o período de "era borderline", com três fatores para a função pulmonar: **ISS, trauma torácico associado ao choque e haste fresada**. O contraponto atual vem do Campbell's Operative Orthopaedics, 15ª ed. (cap. 59, p. 2638): a **haste fresada imediata não aumenta complicações pulmonares clinicamente relevantes na maioria**, e só o borderline ou de altíssimo risco se beneficia do controle de danos; o Skeletal Trauma (cap. 11, p. 320) diz que os centros norte-americanos usam o cuidado total precoce de forma bem mais agressiva que os critérios de PAPE.
 
 ## O lactato decide
 
-O Rockwood (cap. 14, p. aprox. 480) responde à questão do ENARE. A hipoperfusão gera **acidose**, medida por **pH, déficit de base ou lactato**, e a **normalização em 24 horas prediz a sobrevida**. pH e déficit de base são compensados mais facilmente e confundidos por álcool e doença renal; **o lactato é o indicador mais confiável**, e a **melhora do lactato ao longo do tempo** é um dos sinais mais acurados de ressuscitação. O que manda é a **tendência**: lactato e déficit de base que pioram dizem que o paciente não aguenta um segundo golpe. O Skeletal Trauma (cap. 11, p. 319) chama a capacidade de normalizar o lactato de fator prognóstico isolado mais importante. O HEBERT (cap. 74) nomeia a armadilha: **hipoperfusão subclínica**, com sinais vitais normais e **lactato acima de 2,5 mmol/L**, morbidade muito alta e indicação de controle de danos (GREY).
+O Rockwood (cap. 14, Indications for Damage Control) responde à questão do ENARE. A hipoperfusão gera **acidose**, medida por **pH, déficit de base ou lactato**, e a **normalização em 24 horas prediz a sobrevida**. pH e déficit de base são compensados mais facilmente e confundidos por álcool e doença renal; **o lactato é o indicador mais confiável**, e a **melhora do lactato ao longo do tempo** é um dos sinais mais acurados de ressuscitação. O que manda é a **tendência**: lactato e déficit de base que pioram dizem que o paciente não aguenta um segundo golpe. O Skeletal Trauma (cap. 11, p. 319) chama a capacidade de normalizar o lactato de fator prognóstico isolado mais importante. O HEBERT (cap. 74) nomeia a armadilha: **hipoperfusão subclínica**, com sinais vitais normais e **lactato acima de 2,5 mmol/L**, morbidade muito alta e indicação de controle de danos (GREY).
 
-!tabela Quando fazer controle de danos: os cortes de cada livro (AO Principles, Tabela 4.1-3, p. 318; Rockwood and Green's, cap. 14, p. aprox. 480; HEBERT, cap. 74)
+!tabela Quando fazer controle de danos: os cortes de cada livro (AO Principles, Tabela 4.1-3, p. 318; Rockwood and Green's, cap. 14, Indications for Damage Control; HEBERT, cap. 74)
 | Parâmetro | AO (seleção para cirurgia de controle de danos) | HEBERT (período atual) | Rockwood (EAC: pode fixar se) |
 | --- | --- | --- | --- |
 | pH | < 7,2 | < 7,25 | **≥ 7,25** |
@@ -276,15 +276,15 @@ armadilha: Escolher lactato > 1,0, PAS ≤ 110, temperatura < 36,5 °C ou hiperc
 | Atual | **cuidado apropriado precoce (EAC)** | fixação definitiva em 36 h no paciente que responde (VALLIER); ETC e DCO complementares |
 !fim
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, pp. aprox. 479 a 480) dá os números do cuidado precoce: em 132 politraumatizados com ISS ≥ 18, SDRA de **7% com fixação precoce contra 39% após 24 horas**; no ensaio de BONE, o atraso da haste (> 48 h contra < 24 h) trouxe **mais pneumonia, SDRA e síndrome de embolia gordurosa**, mais UTI e custo. O Skeletal Trauma, 5ª ed. (cap. 11, p. 317) critica o BONE: só o custo foi estatisticamente significativo, e a randomização deixou mais lesão pulmonar no grupo tardio. Fixar cedo controla a hemorragia, alivia a **dor** (cuja descarga simpática alimenta a hiperinflamação), tira o paciente da cama e reduz **trombose, embolia gordurosa, pneumonia, SDRA e sepse** (Rockwood, p. aprox. 479); o AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 312) acrescenta controlar a contaminação, prevenir a isquemia-reperfusão e facilitar ventilação e enfermagem.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, Benefits of Early Care) dá os números do cuidado precoce: em 132 politraumatizados com ISS ≥ 18, SDRA de **7% com fixação precoce contra 39% após 24 horas**; no ensaio de BONE, o atraso da haste (> 48 h contra < 24 h) trouxe **mais pneumonia, SDRA e síndrome de embolia gordurosa**, mais UTI e custo. O Skeletal Trauma, 5ª ed. (cap. 11, p. 317) critica o BONE: só o custo foi estatisticamente significativo, e a randomização deixou mais lesão pulmonar no grupo tardio. Fixar cedo controla a hemorragia, alivia a **dor** (cuja descarga simpática alimenta a hiperinflamação), tira o paciente da cama e reduz **trombose, embolia gordurosa, pneumonia, SDRA e sepse** (Rockwood, cap. 14, Benefits of Early Care); o AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 312) acrescenta controlar a contaminação, prevenir a isquemia-reperfusão e facilitar ventilação e enfermagem.
 
 ## O controle de danos ortopédico
 
-O "damage control orthopaedics" nasceu como **fixação externa femoral**, com **pouco tempo cirúrgico e pouco sangramento**, indicada no **TCE grave, na instabilidade hemodinâmica e no trauma torácico grave** (Rockwood, p. aprox. 480). O preço é uma segunda cirurgia e o risco de infecção se o fixador ficar demais (Skeletal Trauma, cap. 11, p. 318). O AO Principles (cap. 4.1, p. 317) indica a cirurgia de controle de danos em **10% a 20%** dos politraumatizados, por **critérios fisiológicos** (a tríade), **padrão complexo de lesões** (tórax, pelve, fêmur bilateral, idoso) ou **vítimas em massa**, de forma **reativa** ("bail-out") ou **preemptiva**.
+O "damage control orthopaedics" nasceu como **fixação externa femoral**, com **pouco tempo cirúrgico e pouco sangramento**, indicada no **TCE grave, na instabilidade hemodinâmica e no trauma torácico grave** (Rockwood, cap. 14, Risks of Early Care). O preço é uma segunda cirurgia e o risco de infecção se o fixador ficar demais (Skeletal Trauma, cap. 11, p. 318). O AO Principles (cap. 4.1, p. 317) indica a cirurgia de controle de danos em **10% a 20%** dos politraumatizados, por **critérios fisiológicos** (a tríade), **padrão complexo de lesões** (tórax, pelve, fêmur bilateral, idoso) ou **vítimas em massa**, de forma **reativa** ("bail-out") ou **preemptiva**.
 
 O Skeletal Trauma (cap. 11, p. 321) dá a hierarquia no osso: (1) controlar a hemorragia da extremidade e da pelve; (2) corrigir a isquemia (reduzir luxações, fasciotomia, reparo vascular); (3) desbridar; (4) estabilizar ossos longos e pelve; (5) reconstruir articulares; (6) fraturas menores. A cirurgia índice fica em torno de **2 horas**, e para-se diante de temperatura caindo, coagulopatia piorando, déficit de base sem melhora, hipóxia ou PIC subindo.
 
-O HEBERT (cap. 74) responde à pergunta "quais são as cirurgias de emergência em pacientes instáveis?" com a lista de STAHEL: **descompressão aguda de cavidades, controle da hemorragia, laparotomia, revascularizações, desbridamento de fraturas expostas e lesões articulares, fixação externa de ossos longos, fasciotomias e fixação dorsal de fraturas vertebrais instáveis**. Fora da lista: **fixação definitiva de ossos longos** e **fixação ventral da coluna**. O Rockwood (cap. 14, p. aprox. 481) confirma: no "spine damage control" de STAHEL, a instrumentação **posterior** entra em 24 horas e a fusão **anterior** só depois de 3 dias.
+O HEBERT (cap. 74) responde à pergunta "quais são as cirurgias de emergência em pacientes instáveis?" com a lista de STAHEL: **descompressão aguda de cavidades, controle da hemorragia, laparotomia, revascularizações, desbridamento de fraturas expostas e lesões articulares, fixação externa de ossos longos, fasciotomias e fixação dorsal de fraturas vertebrais instáveis**. Fora da lista: **fixação definitiva de ossos longos** e **fixação ventral da coluna**. O Rockwood (cap. 14, Techniques of Damage Control) confirma: no "spine damage control" de STAHEL, a instrumentação **posterior** entra em 24 horas e a fusão **anterior** só depois de 3 dias.
 
 !questoes central=trauma-1722
 conceito: No instável, as cirurgias de emergência são as de controle de danos: revascularização, fixação externa de ossos longos e fasciotomias (além de descompressão de cavidades, hemostasia, laparotomia, desbridamento e fixação dorsal da coluna).
@@ -294,7 +294,7 @@ armadilha: Incluir fixação definitiva de ossos longos ou fixação ventral de 
 
 ## A técnica do fixador e da tração
 
-O Rockwood (cap. 14, pp. aprox. 480 a 481) descreve o fixador femoral: **pinos de SCHANZ, dois de cada lado**, perto e longe, uniplanar; extensão distal pode exigir **transfixar o joelho**; a **tração esquelética femoral distal** é alternativa razoável; **converter em até 2 semanas** pelo risco de infecção. O Skeletal Trauma (cap. 11, pp. 324 a 326) mostra o relógio: fixador por **menos de 8 dias** reduziu em **83%** o risco de infecção na conversão, e com 50 dias a infecção chegou a **40%**; o HEBERT (cap. 74) cita intervalo **menor que 14 dias** na tíbia (BHANDARI).
+O Rockwood (cap. 14, Techniques of Damage Control) descreve o fixador femoral: **pinos de SCHANZ, dois de cada lado**, perto e longe, uniplanar; extensão distal pode exigir **transfixar o joelho**; a **tração esquelética femoral distal** é alternativa razoável; **converter em até 2 semanas** pelo risco de infecção. O Skeletal Trauma (cap. 11, pp. 324 a 326) mostra o relógio: fixador por **menos de 8 dias** reduziu em **83%** o risco de infecção na conversão, e com 50 dias a infecção chegou a **40%**; o HEBERT (cap. 74) cita intervalo **menor que 14 dias** na tíbia (BHANDARI).
 
 E a tração? O Skeletal Trauma (cap. 11, p. 320) aceita a **tração esquelética como estabilização inicial** do instável e, temporariamente, do in extremis; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 59, p. 2638) diz que fixador e tração são ambos eficientes como medida inicial. O que se condena é a **tração prolongada como tratamento**: para BORDER, ela produz um paciente obnubilado em supino forçado, com dano pulmonar e alta mortalidade (Skeletal Trauma, cap. 11, p. 317).
 
@@ -307,9 +307,9 @@ alerta: A questão `trauma-1171` está sem gabarito oficial no acervo; o gabarit
 
 ## O cuidado apropriado precoce (EAC)
 
-O Rockwood (cap. 14, pp. aprox. 480 a 483) fecha com o **EAC** (early appropriate care), de VALLIER: no paciente que responde, com **pH ≥ 7,25, déficit de base de pelo menos -5,5 mmol/L ou lactato abaixo de 4,0 mmol/L**, fixar **coluna, pelve, acetábulo e fêmur em até 36 horas**; controle de danos para quem não atinge esses números ou tem acidose prolongada, TCE grave ou isquemia cardíaca. Num estudo prospectivo de 335 pacientes, as complicações foram **16% nos fixados em 36 horas e 33% nos atrasados** (71% dos atrasos por conveniência de agenda). O AO Principles (cap. 4.1, p. 319) resume: **cuidado total precoce não significa cuidado total imediato**; os critérios de ETC (Tabela 4.1-5) incluem **lactato abaixo de 2 mmol/L**, sem vasoativo, sem hipoxemia, coagulação normal, normotermia e diurese acima de 1 mL/kg/h. O AO pede lactato normal; o EAC aceita lactato < 4 em melhora.
+O Rockwood (cap. 14, Indications for Damage Control, Principles of Early Definitive Management e Timing of Definitive Management) fecha com o **EAC** (early appropriate care), de VALLIER: no paciente que responde, com **pH ≥ 7,25, déficit de base de pelo menos -5,5 mmol/L ou lactato abaixo de 4,0 mmol/L**, fixar **coluna, pelve, acetábulo e fêmur em até 36 horas**; controle de danos para quem não atinge esses números ou tem acidose prolongada, TCE grave ou isquemia cardíaca. Num estudo prospectivo de 335 pacientes, as complicações foram **16% nos fixados em 36 horas e 33% nos atrasados** (71% dos atrasos por conveniência de agenda). O AO Principles (cap. 4.1, p. 319) resume: **cuidado total precoce não significa cuidado total imediato**; os critérios de ETC (Tabela 4.1-5) incluem **lactato abaixo de 2 mmol/L**, sem vasoativo, sem hipoxemia, coagulação normal, normotermia e diurese acima de 1 mL/kg/h. O AO pede lactato normal; o EAC aceita lactato < 4 em melhora.
 
-O Rockwood (pp. aprox. 481 a 483) ordena a urgência. **Emergentes**: hemorragia maciça de pelve ou ossos longos, lesão arterial, síndrome compartimental. **Urgentes**: exposta; pelve, acetábulo ou fêmur instáveis; quadril; luxações. **Subagudas**: articulares, porque abordagens extensas de planalto, pilão e calcâneo nos primeiros 2 a 3 dias são desastrosas. Na sequência, a **coluna instável com elementos neurais em risco vem primeiro** e o **fêmur que aceita fixador vem por último**; durante a haste, evitar **hipotensão**.
+O Rockwood (cap. 14, Timing of Definitive Management) ordena a urgência. **Emergentes**: hemorragia maciça de pelve ou ossos longos, lesão arterial, síndrome compartimental. **Urgentes**: exposta; pelve, acetábulo ou fêmur instáveis; quadril; luxações. **Subagudas**: articulares, porque abordagens extensas de planalto, pilão e calcâneo nos primeiros 2 a 3 dias são desastrosas. Na sequência, a **coluna instável com elementos neurais em risco vem primeiro** e o **fêmur que aceita fixador vem por último**; durante a haste, evitar **hipotensão**.
 
 # A janela para a fixação definitiva {radar=fundamento}
 
@@ -331,11 +331,11 @@ O HEBERT (cap. 74, Fixação ortopédica definitiva) traz a evidência: PAPE, em
 
 ## Proteger o cérebro da lesão secundária
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, p. aprox. 476) separa a lesão cerebral **primária** da **secundária** (hipóxia, hipotensão, convulsão, febre, hipoglicemia), muitas vezes iatrogênica; o **reflexo de CUSHING** (hipertensão com bradicardia) indica herniação iminente.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, seção Head Injury) separa a lesão cerebral **primária** da **secundária** (hipóxia, hipotensão, convulsão, febre, hipoglicemia), muitas vezes iatrogênica; o **reflexo de CUSHING** (hipertensão com bradicardia) indica herniação iminente.
 
 ## Os números para operar
 
-O Rockwood (p. aprox. 484): TCE acompanha **37% a 50%** das fraturas de pelve ou fêmur, quase sempre leve. A **PPC é a PAM menos a PIC**, e PPC abaixo de 70 por horas causa dano permanente. Para a fixação definitiva de fraturas axiais e femorais, **PIC de 20 mm Hg ou menos e PPC acima de 70 mm Hg**; com PIC muito alta, ventriculostomia, craniotomia, manitol e controle de danos criterioso. PIC "estável entre 30 e 40" não autoriza a osteossíntese. O Skeletal Trauma, 5ª ed. (cap. 9, p. 299) usa **PPC acima de 60**: divergência real entre os livros.
+O Rockwood (cap. 14, Fractures Associated With Severe Head Injury): TCE acompanha **37% a 50%** das fraturas de pelve ou fêmur, quase sempre leve. A **PPC é a PAM menos a PIC**, e PPC abaixo de 70 por horas causa dano permanente. Para a fixação definitiva de fraturas axiais e femorais, **PIC de 20 mm Hg ou menos e PPC acima de 70 mm Hg**; com PIC muito alta, ventriculostomia, craniotomia, manitol e controle de danos criterioso. PIC "estável entre 30 e 40" não autoriza a osteossíntese. O Skeletal Trauma, 5ª ed. (cap. 9, p. 299) usa **PPC acima de 60**: divergência real entre os livros.
 
 O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 324) é o mais favorável à fixação: com boa resposta à ressuscitação, ela tem **efeito positivo** no TCE (menos estímulo doloroso e sedação), e o temor de mais mortalidade **não é baseado em evidência**. O Skeletal Trauma (cap. 11, p. 319) lembra o contrário: o TCE pede exames e TC seriados, que a cirurgia longa impede.
 
@@ -343,14 +343,14 @@ O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 324) é o mais fav
 conceito: Para a fixação definitiva no TCE grave, a PIC deve estar em 20 mm Hg ou menos e a PPC (PAM menos PIC) acima de 70 mm Hg; PIC de 30 a 40 contraindica a osteossíntese.
 como: O TARO 2006 afirmou, para julgar certo ou errado, que a osteossíntese de ossos longos e pelve está indicada com PIC estável entre 30 e 40 mm Hg.
 armadilha: Achar que "estável" basta; o que importa é o valor da PIC e a perfusão cerebral.
-alerta: A questão `trauma-1182` está sem gabarito oficial no acervo; o Rockwood (cap. 14, p. aprox. 484) sustenta "Errado".
+alerta: A questão `trauma-1182` está sem gabarito oficial no acervo; o Rockwood (cap. 14, Fractures Associated With Severe Head Injury) sustenta "Errado".
 !fim
 
 # Tórax, fêmur, fresagem e embolia gordurosa {radar=fundamento}
 
 ## O tórax muda a conta
 
-O tórax instável é **pelo menos duas fraturas por costela em três costelas consecutivas** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14, p. aprox. 476); o AO diz "três ou mais consecutivas em vários pontos". A contusão pulmonar é o substrato em que o segundo golpe da haste femoral vira SDRA.
+O tórax instável é **pelo menos duas fraturas por costela em três costelas consecutivas** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14, Thoracic Injury, Chest Wall); o AO diz "três ou mais consecutivas em vários pontos". A contusão pulmonar é o substrato em que o segundo golpe da haste femoral vira SDRA.
 
 ## Embolia gordurosa e fresagem
 
@@ -371,7 +371,7 @@ O HEBERT (cap. 74, Fresagem) resume: **a fresagem não está contraindicada**, m
 
 ## O que vem junto com a pelve
 
-A pelve quebrada é um marcador de energia. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 50, p. aprox. 2054) lista as lesões associadas mais frequentes: **tórax 63%**, ossos longos 50%, TCE 40%, órgão sólido 40% e coluna 25%. E lembra que a mortalidade do paciente com fratura do anel pélvico decorre muitas vezes **das lesões associadas, não da pelve**. O padrão da fratura também prediz o que procurar: na **compressão anteroposterior**, oito vezes mais lesão de **aorta torácica**; na **compressão lateral**, TCE em 50%; no **cisalhamento vertical**, choque hipovolêmico em 63%, mortalidade de 25%, TCE em 56,2%, pulmão em 23% e baço em 25%.
+A pelve quebrada é um marcador de energia. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 50, seção Injuries Associated With Pelvic Ring Injuries) lista as lesões associadas mais frequentes: **tórax 63%**, ossos longos 50%, TCE 40%, órgão sólido 40% e coluna 25%. E lembra que a mortalidade do paciente com fratura do anel pélvico decorre muitas vezes **das lesões associadas, não da pelve**. O padrão da fratura também prediz o que procurar: na **compressão anteroposterior**, oito vezes mais lesão de **aorta torácica**; na **compressão lateral**, TCE em 50%; no **cisalhamento vertical**, choque hipovolêmico em 63%, mortalidade de 25%, TCE em 56,2%, pulmão em 23% e baço em 25%.
 
 !questoes treino=trauma-1490
 conceito: Nas lesões do anel pélvico, a lesão associada mais frequente é a torácica (63%), seguida de ossos longos (50%), TCE (40%), órgão sólido (40%) e coluna (25%).
@@ -381,7 +381,7 @@ armadilha: Escolher a fratura de osso longo ou o TCE, que são frequentes, mas m
 
 ## O painel do carro
 
-Com o quadril fletido, a carga axial do painel empurra a cabeça contra a **parede posterior** do acetábulo, e **mais adução** favorece a **luxação** (Rockwood, cap. 51, p. aprox. 2181). O **joelho** é a primeira parte atingida e deve ser examinado; diante de luxação posterior, procuram-se as lesões de painel e de cinto (aorta, intestino delgado) (p. aprox. 2185). Nas luxações do quadril, lesões do joelho (luxação posterior, **lesões dos ligamentos cruzados**, patela) aparecem em **25%**, algumas despercebidas (cap. 52, p. aprox. 2309).
+Com o quadril fletido, a carga axial do painel empurra a cabeça contra a **parede posterior** do acetábulo, e **mais adução** favorece a **luxação** (Rockwood, cap. 51, Mechanisms of Injury for Acetabulum Fractures). O **joelho** é a primeira parte atingida e deve ser examinado; diante de luxação posterior, procuram-se as lesões de painel e de cinto (aorta, intestino delgado) (cap. 51, Injuries Associated With Acetabular Fractures e Signs and Symptoms). Nas luxações do quadril, lesões do joelho (luxação posterior, **lesões dos ligamentos cruzados**, patela) aparecem em **25%**, algumas despercebidas (cap. 52, Injuries Associated With Hip Dislocations).
 
 !questoes treino=trauma-1524
 conceito: Painel com quadril fletido e aduzido = parede posterior com luxação posterior do quadril; procurar ativamente a lesão do joelho, sobretudo do ligamento cruzado posterior.
@@ -404,11 +404,11 @@ armadilha: Pensar em segmento torácico ou lombar porque são os mais fraturados
 
 ## De onde vem o sangue
 
-O Rockwood (cap. 14, pp. aprox. 478 a 479 e 483): **compressão anteroposterior** e **cisalhamento vertical** sangram **vários litros**, em proporção ao desvio posterior; a **compressão lateral** só sangra se grave (CL-3). As fontes são **óssea, venosa, arterial** e extrapélvica, e **quase 90% do sangramento é venoso**. O retroperitônio intacto guarda cerca de **4 L** antes de tamponar, e o volume cresce com o **cubo do raio**: fechar o anel reduz muito o espaço.
+O Rockwood (cap. 14, Pelvic Injury e Indications for Pelvis Angiography): **compressão anteroposterior** e **cisalhamento vertical** sangram **vários litros**, em proporção ao desvio posterior; a **compressão lateral** só sangra se grave (CL-3). As fontes são **óssea, venosa, arterial** e extrapélvica, e **quase 90% do sangramento é venoso**. O retroperitônio intacto guarda cerca de **4 L** antes de tamponar, e o volume cresce com o **cubo do raio**: fechar o anel reduz muito o espaço.
 
 ## Os sinais no exame
 
-O Rockwood (cap. 50, pp. aprox. 2058 a 2059) lista o que procurar:
+O Rockwood (cap. 50, Signs and Symptoms of Pelvic Ring Injuries, Physical Examination) lista o que procurar:
 
 - **sinal de DESTOT**: **hematoma palpável sobre o períneo, acima do ligamento inguinal ou na coxa proximal**, indicando fratura com sangramento;
 - **sinal de GREY TURNER**: equimose no flanco, indicando sangramento retroperitoneal;
@@ -426,7 +426,7 @@ armadilha: Confundir com GREY TURNER (flanco), com a próstata alta (uretra) ou 
 
 ## Uretra e bexiga
 
-Sangue no meato indica lesão uretral: no homem, **uretrografia retrógrada antes da sonda de FOLEY**, exceto in extremis (Rockwood, cap. 14, p. aprox. 479); a **uretrografia retrógrada dinâmica** é o melhor exame (cap. 50, p. aprox. 2054), e a **próstata alta ao toque não é confiável nem útil** (p. aprox. 2059). **Cistostomia suprapúbica deve ser evitada**: contamina o hematoma anterior e leva a osteomielite (cap. 14).
+Sangue no meato indica lesão uretral: no homem, **uretrografia retrógrada antes da sonda de FOLEY**, exceto in extremis (Rockwood, cap. 14, Pelvic Injury); a **uretrografia retrógrada dinâmica** é o melhor exame (cap. 50, Genitourinary Tract Injuries), e a **próstata alta ao toque não é confiável nem útil** (cap. 50, Physical Examination). **Cistostomia suprapúbica deve ser evitada**: contamina o hematoma anterior e leva a osteomielite (cap. 14).
 
 !questoes treino=trauma-1491
 conceito: Sangue no meato de homem com fratura do anel pélvico pede uretrografia retrógrada dinâmica antes de qualquer sondagem.
@@ -436,9 +436,9 @@ armadilha: Escolher a cistografia "após sondagem", a TC excretora ou o toque re
 
 ## Cinta, lençol, fixador e C-clamp
 
-O Rockwood (cap. 14, p. aprox. 479) manda fechar o anel do hipotenso com **lençol ou cinta circunferencial na altura dos trocânteres maiores**, com **tração se houver desvio vertical**; isso tampona o plexo sacral **se não houver coagulopatia**. A **adução e a rotação interna** dos membros ajudam (cap. 50, p. aprox. 2089); o HEBERT (cap. 74) repete os trocânteres com **rotação medial**, de preferência no pré-hospitalar. O Skeletal Trauma, 5ª ed. (cap. 11, p. 321) lembra que a cinta limita o acesso ao abdome e que retirá-la na laparotomia desestabiliza a redução.
+O Rockwood (cap. 14, Pelvic Injury) manda fechar o anel do hipotenso com **lençol ou cinta circunferencial na altura dos trocânteres maiores**, com **tração se houver desvio vertical**; isso tampona o plexo sacral **se não houver coagulopatia**. A **adução e a rotação interna** dos membros ajudam (cap. 50, Management of Instability and Bleeding); o HEBERT (cap. 74) repete os trocânteres com **rotação medial**, de preferência no pré-hospitalar. O Skeletal Trauma, 5ª ed. (cap. 11, p. 321) lembra que a cinta limita o acesso ao abdome e que retirá-la na laparotomia desestabiliza a redução.
 
-O fixador pélvico **reduz o anel anterior**, mas, com o posterior completamente rompido, **acentua o desvio posterior** (Rockwood, cap. 14, p. aprox. 481); pinos na **crista** são mais fáceis, os **supra-acetabulares** dão mais controle rotacional, mas demoram e pedem fluoroscopia, e devem ser evitados no instável (Skeletal Trauma, cap. 11, p. 322). O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 324) lembra que uma cinta bem colocada pode dispensar a fixação precoce.
+O fixador pélvico **reduz o anel anterior**, mas, com o posterior completamente rompido, **acentua o desvio posterior** (Rockwood, cap. 14, Techniques of Damage Control); pinos na **crista** são mais fáceis, os **supra-acetabulares** dão mais controle rotacional, mas demoram e pedem fluoroscopia, e devem ser evitados no instável (Skeletal Trauma, cap. 11, p. 322). O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 324) lembra que uma cinta bem colocada pode dispensar a fixação precoce.
 
 !questoes treino=trauma-1502
 conceito: A cinta ou o lençol vão na altura dos trocânteres maiores, com rotação interna e adução dos membros, para fechar o livro aberto e reduzir o volume pélvico.
@@ -448,9 +448,9 @@ armadilha: Colocar sobre as cristas ilíacas, na cicatriz umbilical ou abaixo do
 
 ## Angiografia ou tamponamento?
 
-O próprio Rockwood se divide. O capítulo 14 (pp. aprox. 479 e 483 a 484) diz que a **lesão arterial** existe em **6% a 8%** das pelves instáveis; que hipotensão persistente apesar de volume e redução pede **angioembolização**; que o **"blush" na TC é mau preditor** de sangramento ativo, embora a **ausência de blush** na angio-TC tenha **alto valor preditivo negativo**. O capítulo 50 (pp. aprox. 2087 a 2088) é direto: **a única recomendação clara de arteriografia é o extravasamento de contraste na TC, independentemente da estabilidade hemodinâmica**, com sensibilidade e valor preditivo negativo de 100% num estudo; embolizar em até **60 minutos** reduziu a mortalidade, e a **seletiva** é preferível. A questão segue o capítulo 50.
+O próprio Rockwood se divide. O capítulo 14 (Pelvic Injury e Indications for Pelvis Angiography) diz que a **lesão arterial** existe em **6% a 8%** das pelves instáveis; que hipotensão persistente apesar de volume e redução pede **angioembolização**; que o **"blush" na TC é mau preditor** de sangramento ativo, embora a **ausência de blush** na angio-TC tenha **alto valor preditivo negativo**. O capítulo 50 (Initial Management, Angiography) é direto: **a única recomendação clara de arteriografia é o extravasamento de contraste na TC, independentemente da estabilidade hemodinâmica**, com sensibilidade e valor preditivo negativo de 100% num estudo; embolizar em até **60 minutos** reduziu a mortalidade, e a **seletiva** é preferível. A questão segue o capítulo 50.
 
-O **tamponamento pré-peritoneal** abre o **espaço de RETZIUS** e coloca compressas até a angiografia, com a pelve **reduzida e fixada antes da laparotomia** (Rockwood, cap. 14, p. aprox. 483). O capítulo 50 (pp. aprox. 2088 a 2089) dá as condições: **a pelve precisa estar estabilizada (C-clamp ou fixador) para haver parede contra a qual comprimir**, e **o espaço intraperitoneal não deve ser violado**, com compressas **bilaterais** da sacroilíaca à sínfise; mortalidade de cerca de **21%** num centro, contra mais de 30% na literatura. O HEBERT (cap. 74) descreve três compressas de cada lado por acesso anterior. O Skeletal Trauma (cap. 9, p. 297) explica a complementaridade: fechar a pelve controla o **venoso**, não tanto o **arterial**.
+O **tamponamento pré-peritoneal** abre o **espaço de RETZIUS** e coloca compressas até a angiografia, com a pelve **reduzida e fixada antes da laparotomia** (Rockwood, cap. 14, Indications for Pelvis Angiography). O capítulo 50 (Pelvic Packing) dá as condições: **a pelve precisa estar estabilizada (C-clamp ou fixador) para haver parede contra a qual comprimir**, e **o espaço intraperitoneal não deve ser violado**, com compressas **bilaterais** da sacroilíaca à sínfise; mortalidade de cerca de **21%** num centro, contra mais de 30% na literatura. O HEBERT (cap. 74) descreve três compressas de cada lado por acesso anterior. O Skeletal Trauma (cap. 9, p. 297) explica a complementaridade: fechar a pelve controla o **venoso**, não tanto o **arterial**.
 
 !tabela Hemorragia pélvica: cada fonte e sua arma (Rockwood and Green's, caps. 14 e 50; Skeletal Trauma, cap. 9; HEBERT, cap. 74)
 | Fonte | Proporção | Arma principal | Condição |
@@ -465,12 +465,12 @@ O **tamponamento pré-peritoneal** abre o **espaço de RETZIUS** e coloca compre
 conceito: O tamponamento pré-peritoneal só funciona com a pelve já estabilizada (fixador ou C-clamp), sem abrir o peritônio; a indicação mais clara de arteriografia é o extravasamento de contraste na TC, independentemente do estado hemodinâmico.
 como: Uma prova de Ortopedia perguntou a condição para a eficácia do tamponamento; outra, a indicação mais clara de arteriografia com embolização.
 armadilha: Abrir o peritônio para as compressas, exigir embolização prévia das ilíacas internas, tamponar só do lado lesado; ou indicar angiografia pela CL tipo I, por qualquer diástase ou antes da laparotomia no FAST positivo.
-alerta: O Rockwood diverge entre capítulos: o cap. 14 (p. aprox. 484) diz que o blush na TC é mau preditor e não indica angiografia sozinho; o cap. 50 (p. aprox. 2088), seguido pelo gabarito de `trauma-1501`, diz que o extravasamento de contraste é a única indicação clara, independentemente da hemodinâmica.
+alerta: O Rockwood diverge entre capítulos: o cap. 14 (Indications for Pelvis Angiography) diz que o blush na TC é mau preditor e não indica angiografia sozinho; o cap. 50 (Angiography), seguido pelo gabarito de `trauma-1501`, diz que o extravasamento de contraste é a única indicação clara, independentemente da hemodinâmica.
 !fim
 
 ## Trombose: a pelve é fator de risco
 
-O Rockwood (cap. 50, p. aprox. 2171): a **fratura do anel pélvico é fator de risco independente** para tromboembolismo venoso; **profilaxia nas primeiras 12 a 24 horas**, com **heparina de baixo peso molecular ou não fracionada**, **isolada ou com compressão pneumática intermitente**. O **filtro de veia cava não é primeira linha** (reduz embolia, mas não melhora sobrevida; EAST e ACCP divergem).
+O Rockwood (cap. 50, Deep Venous Thrombosis/Pulmonary Embolism Prophylaxis): a **fratura do anel pélvico é fator de risco independente** para tromboembolismo venoso; **profilaxia nas primeiras 12 a 24 horas**, com **heparina de baixo peso molecular ou não fracionada**, **isolada ou com compressão pneumática intermitente**. O **filtro de veia cava não é primeira linha** (reduz embolia, mas não melhora sobrevida; EAST e ACCP divergem).
 
 !questoes treino=trauma-1514
 conceito: A fratura do anel pélvico é fator de risco independente para TEV; a profilaxia começa em 12 a 24 horas, com HBPM ou HNF, com ou sem compressão pneumática; o filtro de cava não é primeira linha.
@@ -482,21 +482,21 @@ armadilha: Achar que o filtro de cava é a primeira linha, que o Doppler rotinei
 
 ## A exposta no paciente grave
 
-O Rockwood (cap. 14, p. aprox. 474) trata a exposta como **emergência cirúrgica**: **cefazolina 2 g a cada 8 h** (clindamicina na alergia), gentamicina na alta energia, **penicilina** na contaminação por solo, tétano; fixação **provisória** quando há contaminação maciça, ferida que não fecha ou paciente crítico, e definitiva com a cobertura. O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 312) acrescenta que o tecido morto é **fonte de mediadores pró-inflamatórios**, e o desbridamento precoce remove essa fonte.
+O Rockwood (cap. 14, Open Fractures) trata a exposta como **emergência cirúrgica**: **cefazolina 2 g a cada 8 h** (clindamicina na alergia), gentamicina na alta energia, **penicilina** na contaminação por solo, tétano; fixação **provisória** quando há contaminação maciça, ferida que não fecha ou paciente crítico, e definitiva com a cobertura. O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 312) acrescenta que o tecido morto é **fonte de mediadores pró-inflamatórios**, e o desbridamento precoce remove essa fonte.
 
 ## Vaso: fixar antes de reparar
 
-Mais de 75% das lesões arteriais são penetrantes; no trauma fechado, a **luxação do joelho** lidera (16% a 25%). Em **6 horas de isquemia** vem a mionecrose; ITB abaixo de **0,9** pede o vascular; a fratura é **estabilizada antes do reparo vascular** definitivo, e a revascularização é seguida de **fasciotomia** (Rockwood, cap. 14, pp. aprox. 484 a 485). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2518) fala em dano irreversível com **8 horas** ou mais: divergência entre os livros.
+Mais de 75% das lesões arteriais são penetrantes; no trauma fechado, a **luxação do joelho** lidera (16% a 25%). Em **6 horas de isquemia** vem a mionecrose; ITB abaixo de **0,9** pede o vascular; a fratura é **estabilizada antes do reparo vascular** definitivo, e a revascularização é seguida de **fasciotomia** (Rockwood, cap. 14, Fractures Associated With Vascular Injury). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2518) fala em dano irreversível com **8 horas** ou mais: divergência entre os livros.
 
 ## Salvar ou amputar no politraumatizado
 
-O Rockwood (cap. 14, p. aprox. 476 e 485) aceita a **amputação para parar o sangramento** de um membro esmagado no paciente in extremis: salva a vida e reduz a carga de lesão. Esmagamento, isquemia prolongada, lesão sistêmica grave, idade avançada e doenças de base diminuem a chance de salvamento. O AO Principles (cap. 4.1, p. 326) é mais incisivo: no politrauma, o salvamento microcirúrgico é **raramente indicado**, porque reconstruções longas são um **segundo golpe** importante; a amputação primária é um desbridamento em tecido saudável, sem moldar retalhos, com o coto definitivo feito dias depois.
+O Rockwood (cap. 14, Long Bone Fractures e Limb Salvage Versus Amputation) aceita a **amputação para parar o sangramento** de um membro esmagado no paciente in extremis: salva a vida e reduz a carga de lesão. Esmagamento, isquemia prolongada, lesão sistêmica grave, idade avançada e doenças de base diminuem a chance de salvamento. O AO Principles (cap. 4.1, p. 326) é mais incisivo: no politrauma, o salvamento microcirúrgico é **raramente indicado**, porque reconstruções longas são um **segundo golpe** importante; a amputação primária é um desbridamento em tecido saudável, sem moldar retalhos, com o coto definitivo feito dias depois.
 
 ## O MESS
 
-O Rockwood (cap. 18, pp. 605 a 606) descreve o **Mangled Extremity Severity Score** (JOHANSEN e HELFET, 1990), baseado em **quatro critérios: lesão esquelética e de partes moles, choque, isquemia e idade**. Na série original e na validação, **todos os membros salvos tinham 6 ou menos e todos os amputados, 7 ou mais**.
+O Rockwood (cap. 18, Decision-Making Protocols and Limb Salvage Scores, Tabela 18-4) descreve o **Mangled Extremity Severity Score** (JOHANSEN e HELFET, 1990), baseado em **quatro critérios: lesão esquelética e de partes moles, choque, isquemia e idade**. Na série original e na validação, **todos os membros salvos tinham 6 ou menos e todos os amputados, 7 ou mais**.
 
-!tabela MESS: pontuação (Rockwood and Green's, cap. 18, Tabela 18-4, pp. 605 a 606)
+!tabela MESS: pontuação (Rockwood and Green's, cap. 18, Tabela 18-4)
 | Componente | Situação | Pontos |
 | --- | --- | --- |
 | Lesão esquelética e de partes moles | baixa energia (facada, fratura simples, arma de fogo civil) | 1 |

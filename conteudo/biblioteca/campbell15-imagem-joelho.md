@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-joelho
-versao: 1
+versao: 2
 titulo: Imagem do joelho
 especialidade: joelho
 acesso: gratis
@@ -130,13 +130,13 @@ armadilha: Chamar de alça de balde, que desloca um fragmento para o intercôndi
 
 ## HUMPHRY e WRISBERG
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1995 aprox.), descreve o menisco lateral preso posteriormente ao **côndilo femoral medial** pelo ligamento de **HUMPHRY** e/ou de **WRISBERG**, de presença variável, chamados na figura de meniscofemoral **anterior** e **posterior**. Quem diz qual é qual é o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61): **ao menos um existe em 93% dos joelhos; HUMPHRY passa à frente do LCP, WRISBERG passa atrás**. Ambos ligam o **corno posterior do menisco lateral** ao intercôndilo e são restritores secundários da translação posterior.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1996), descreve o menisco lateral preso posteriormente ao **côndilo femoral medial** pelo ligamento de **HUMPHRY** e/ou de **WRISBERG**, de presença variável, chamados na figura (Fig. 50.25, p. 1997) de meniscofemoral **anterior** e **posterior**. Quem diz qual é qual é o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61): **ao menos um existe em 93% dos joelhos; HUMPHRY passa à frente do LCP, WRISBERG passa atrás**. Ambos ligam o **corno posterior do menisco lateral** ao intercôndilo e são restritores secundários da translação posterior.
 
 No sagital, o raciocínio é topográfico: o LCP é a faixa escura, curva e grossa no intercôndilo posterior; **uma faixa menor à frente dele, rumo ao corno posterior lateral, é HUMPHRY; atrás dele, WRISBERG**. O intermeniscal fica na frente, entre os cornos anteriores, e o LCA corre paralelo ao teto do intercôndilo. Dois detalhes do Campbell mostram por que isso importa: na cirurgia do LCP isolado (p. 2104 aprox.), o HUMPHRY intacto **pode ser confundido com um LCP intacto**; e na ressonância (cap. 3, p. 161 aprox.), **meniscofemorais e transverso podem simular ruptura vertical**.
 
 ## O tendão do poplíteo
 
-O Campbell (cap. 50, p. 1995 aprox.) descreve o **tendão do poplíteo separando a periferia posterolateral do menisco lateral da cápsula e do colateral fibular**. O Rockwood and Green (cap. 61) completa: ele passa pelo **hiato poplíteo**, torna-se intra-articular e se insere no côndilo femoral lateral **anterior e distal à origem do colateral fibular**; das suas fibras nasce o popliteofibular. Na ressonância, isso vira a armadilha clássica (Campbell, cap. 3, p. 161 aprox.): **reconhecer o hiato do poplíteo evita o diagnóstico falso de ruptura do corno posterior do menisco lateral**. A faixa escura oblíqua atrás do corno posterior lateral, com líquido entre ela e o menisco, é o tendão; o colateral fibular fica mais lateral, indo à cabeça da fíbula.
+O Campbell (cap. 50, p. 1996) descreve o **tendão do poplíteo separando a periferia posterolateral do menisco lateral da cápsula e do colateral fibular**. O Rockwood and Green (cap. 61) completa: ele passa pelo **hiato poplíteo**, torna-se intra-articular e se insere no côndilo femoral lateral **anterior e distal à origem do colateral fibular**; das suas fibras nasce o popliteofibular. Na ressonância, isso vira a armadilha clássica (Campbell, cap. 3, p. 161 aprox.): **reconhecer o hiato do poplíteo evita o diagnóstico falso de ruptura do corno posterior do menisco lateral**. A faixa escura oblíqua atrás do corno posterior lateral, com líquido entre ela e o menisco, é o tendão; o colateral fibular fica mais lateral, indo à cabeça da fíbula.
 
 ## A fabela
 
@@ -299,7 +299,9 @@ O HEBERT (cap. 16) define o **CATON-DESCHAMPS** como a distância da **borda ant
 
 ## A altura decide a osteotomia
 
-O Campbell (Tabela 52.3, p. 2199) indica **distalização** para a patela alta (ali INSALL **acima de 1,3**), com risco de perder movimento ou fixação, e **anteromedialização** para o tubérculo mal alinhado (Q acima de 20 graus, TA-GT acima de 20 mm, ou 15 mm com displasia). A distalização é planejada para **não deixar o polo inferior abaixo da linha de BLUMENSAAT**, o que criaria patela baixa (p. 2203 aprox.). O ELMSLIE-TRILLAT é a osteotomia **plana** que **medializa** a tuberosidade. Daí o raciocínio: com INSALL **abaixo de 1,2**, a altura é normal e, se houver transferência, ela é **somente medial** (ELMSLIE-TRILLAT); acima disso, acrescenta-se a distalização.
+O Campbell (Tabela 52.3, p. 2199) indica **distalização** para a patela alta (ali INSALL **acima de 1,3**), com risco de perder movimento ou fixação, e **anteromedialização** para o tubérculo mal alinhado (Q acima de 20 graus, TA-GT acima de 20 mm, ou 15 mm com displasia). A distalização é planejada para **não deixar o polo inferior abaixo da linha de BLUMENSAAT**, o que criaria patela baixa (p. 2203). O ELMSLIE-TRILLAT é a osteotomia **plana** que **medializa** a tuberosidade. Daí o raciocínio: com altura normal, se houver transferência, ela é **somente medial** (ELMSLIE-TRILLAT); com patela alta, acrescenta-se a distalização.
+
+Os números de corte do próprio Campbell não são um só. A Tabela 52.2 define patela alta com INSALL **acima de 1,2** (p. 2196), mas o texto do capítulo diz que o serviço **indica o TRILLAT nas luxações por mau alinhamento com INSALL abaixo de 1,3** e condromalácia grau 2 ou menor na artroscopia (p. 2202), e que, na luxação recidivante com patela alta importante, **INSALL acima de 1,4**, a transferência **medial e distal** da tuberosidade é indicada **só ocasionalmente** (p. 2203). Na prova que pergunta o limite do ELMSLIE-TRILLAT, saiba os dois números: 1,2 pela definição de patela alta, 1,3 pela indicação textual do Campbell.
 
 !tabela Índices de altura patelar nos livros (Campbell 15, cap. 52, p. 2196 e 2199; HEBERT 5ª, caps. 15 e 16; Rockwood and Green 10ª, cap. 60)
 | Índice | Medida | Campbell | HEBERT | Rockwood and Green |
@@ -317,10 +319,10 @@ armadilha: Escolher 1,5 ou 2, que não aparecem nos livros, ou 0,8, limite da pa
 !fim
 
 !questoes central=joelho-0295 relacionadas=joelho-0286
-conceito: INSALL-SALVATI abaixo de 1,2 é altura normal; a transferência da tuberosidade, se indicada, é só medial (ELMSLIE-TRILLAT); a distalização fica para a patela alta.
+conceito: INSALL-SALVATI abaixo de 1,2 é altura normal; a transferência da tuberosidade, se indicada, é só medial (ELMSLIE-TRILLAT); a distalização fica para a patela alta. O texto do Campbell indica o TRILLAT com INSALL abaixo de 1,3 (p. 2202) e a transferência medial e distal só ocasionalmente acima de 1,4 (p. 2203).
 como: O TARO 2009 perguntou abaixo de que INSALL-SALVATI se indica o ELMSLIE-TRILLAT; o TARO 2008, a direção da transferência com INSALL inferior a 1,2.
 armadilha: Acrescentar distalização com altura normal, o que criaria patela baixa.
-alerta: As duas questões estão sem gabarito oficial no acervo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52, Tabelas 52.2 e 52.3), define alta acima de 1,2 e reserva a distalização para a alta, sustentando a alternativa B (1,2) em `joelho-0295` e a A (somente medial) em `joelho-0286`.
+alerta: As duas questões estão sem gabarito oficial no acervo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52, Tabelas 52.2 e 52.3), define alta acima de 1,2 e reserva a distalização para a alta, sustentando a alternativa B (1,2) em `joelho-0295` e a A (somente medial) em `joelho-0286`. O texto do mesmo capítulo indica o TRILLAT com INSALL abaixo de 1,3 (p. 2202); os gabaritos pela bibliografia foram mantidos.
 !fim
 
 # Tróclea e tomografia: cruzamento, DEJOUR e TA-GT {radar=confirmado}
