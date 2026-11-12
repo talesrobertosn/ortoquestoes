@@ -11,6 +11,8 @@ import { EVENTO_AMOSTRA } from '../AmostraRespondivel'
 import { urlCss } from '../../../config'
 import { luzNoBicho, mapasDeLuz, type Luz } from '../../mascote/luz'
 import { cenarioDaHora, faixaDoCenario, type Cenario } from './cenarios'
+import { climaAgora, type Clima } from './clima'
+import { Nevasca } from './Nevasca'
 import { EVENTO_ROTEIRO, ROTEIROS, tempoDeLer, type Acao, type Bicho, type Roteiro } from './roteiros'
 import type { IdComportamento } from '../../mascote/comportamentos'
 import type { Periodo } from '../../../estado/aparencia'
@@ -268,7 +270,7 @@ const SELETOR_BICHO: Record<Bicho, string> = { esqueleto: '.hd-mascote .mascote_
  * à vista e a cena na tela; no celular, bem mais espaçado. Um toque em qualquer bicho interrompe a cena na hora.
  * Com "menos movimento", só as conversas (ninguém anda nem voa).
  */
-function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObject<HTMLDivElement | null>; periodo: Periodo; cenario: string; controles: Controles }) {
+function DiretorDeCena({ palco, periodo, cenario, repertorio, controles }: { palco: RefObject<HTMLDivElement | null>; periodo: Periodo; cenario: string; repertorio?: readonly IdComportamento[]; controles: Controles }) {
   const [fala, definirFala] = useState<{ quem: Bicho; texto: string; x: number; y: number; n: number } | null>(null)
   const balao = useRef<HTMLSpanElement>(null)
   const ctl = useRef(controles)
@@ -295,6 +297,8 @@ function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObjec
       const raridade = Math.random() < 0.4
       const opcoes = ROTEIROS.filter((r) => r.id !== ultimo && (!r.raro || raridade) && (!r.horas || r.horas.includes(periodo)) && (!r.cenarios || r.cenarios.includes(cenario))
         && (!r.quando || r.quando(agora)) && (r.precisa ?? []).every(aVista)
+        // No cenário com repertório próprio (o esqueleto sentado no banco do vale), só cenas com as atividades dele.
+        && (!repertorio?.length || r.passos.every((p) => p.acao?.tipo !== 'pose' || repertorio.includes(p.acao.id)))
         && (r.passos.every((p) => p.acao?.tipo !== 'coruja-voar') || Number(el.querySelector<HTMLElement>('.hd-coruja')?.dataset.livres ?? 0) >= 2)
         && (!reduzMovimento() || r.passos.every((p) => !p.acao || p.acao.tipo === 'pose' || p.acao.tipo === 'gato-pose')))
       const total = opcoes.reduce((n, r) => n + r.peso, 0)
@@ -355,7 +359,7 @@ function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObjec
     }
     window.addEventListener(EVENTO_ROTEIRO, pedirCena)
     return () => { window.clearTimeout(timer); rodando++; io?.disconnect(); tirar(); window.removeEventListener(EVENTO_ROTEIRO, pedirCena) }
-  }, [palco, periodo, cenario])
+  }, [palco, periodo, cenario, repertorio])
   if (!fala) return null
   return <span ref={balao} key={fala.n} className={`hd-balao hd-balao--longo hd-balao--diretor hd-balao--de-${fala.quem} ${fala.x > 52 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
     onClick={() => definirFala(null)} style={{ left: `${fala.x}%`, top: `${fala.y}%` }}>{fala.texto}</span>
@@ -713,7 +717,19 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
   const brasas = useMemo(() => Array.from({ length: 9 }, (_, i) => ({ dx: ((i * 29) % 13) - 6, t: 1.8 + (i % 4) * 0.5, d: -((i * 0.7) % 3) })), [])
   // Na pausa, a fogueira respira mais alto: uma revoada de fagulhas sobe mais longe e mais devagar.
   const fagulhas = useMemo(() => Array.from({ length: 14 }, (_, i) => ({ dx: ((i * 37) % 23) - 11, t: 2.6 + (i % 5) * 0.55, d: -((i * 0.43) % 3.4) })), [])
-  const imagem = (larg: number) => recurso(`pixel/inicio/${cenario.arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
+  const imagem = (larg: number, arquivo = cenario.arquivo) => recurso(`pixel/inicio/${arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
+  // O tempo (clima.ts): igual para todos, conferido a cada meio minuto. A pintura nevada entra devagar por cima.
+  const [clima, definirClima] = useState<Clima>(() => climaAgora())
+  const [transicao, definirTransicao] = useState(false)
+  useEffect(() => {
+    if (!cenario.neve) return
+    const t = window.setInterval(() => { if (!document.hidden) definirClima(climaAgora()) }, 30_000)
+    // Na primeira pintura a neve já está (ou não está) lá; só as mudanças com a página aberta são devagar.
+    const liga = window.setTimeout(() => definirTransicao(true), 1500)
+    return () => { window.clearInterval(t); window.clearTimeout(liga) }
+  }, [cenario.neve])
+  const nevadoArquivo = cenario.neve?.arquivo
+  const coberto = !!nevadoArquivo && clima.coberto
   // As luzes da cena para os bichos (componentes/mascote/luz.ts): a fogueira, mais forte na pausa, e o céu da hora.
   const luzes: Luz[] = [
     { x: fogoX, y: fogoY - 6, forca: fogoAceso ? (pausa ? 1.15 : 0.95) : 0.06, alcance: 175, tipo: linhaFogo === 5 ? 'azul' : linhaFogo === 6 ? 'arcana' : 'fogo' },
@@ -763,9 +779,19 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
   return (
     // Só os bichos e a fogueira são alcançáveis (teclado e leitor de tela); o resto da arte é enfeite (aria-hidden).
     <div className="hd-cena">
-      <div ref={palco} className={`hd-palco hd-palco--${periodo} hd-palco--${cenario.id}${pausa && fogoAceso ? ' hd-palco--pausa' : ''}`}>
+      <div ref={palco} className={`hd-palco hd-palco--${periodo} hd-palco--${cenario.id}${pausa && fogoAceso ? ' hd-palco--pausa' : ''}${clima.nevando && cenario.neve ? ' hd-palco--nevando' : ''}`}>
         <img className="hd-palco__fundo" src={imagem(1440)} srcSet={`${imagem(960)} 960w, ${imagem(1440)} 1440w`} sizes="(max-width: 60rem) 170vw, 100vw"
           width={1440} height={600} alt="" decoding="async" fetchPriority="high" />
+        {/* A neve no chão (clima.ts): a versão nevada da pintura, que aparece devagar quando a nevasca cobre o cenário. */}
+        {nevadoArquivo && (coberto || transicao) && <img className={`hd-palco__fundo hd-palco__nevado${coberto ? ' hd-palco__nevado--sim' : ''}${transicao ? ' hd-palco__nevado--devagar' : ''}`}
+          src={imagem(1440, nevadoArquivo)} srcSet={`${imagem(960, nevadoArquivo)} 960w, ${imagem(1440, nevadoArquivo)} 1440w`} sizes="(max-width: 60rem) 170vw, 100vw"
+          width={1440} height={600} alt="" decoding="async" loading={coberto ? 'eager' : 'lazy'} />}
+        {/* O trenzinho de montanha que cruza o fundo do vale de tempos em tempos (scripts/cenarios/inicio_vale.py). */}
+        {cenario.trem && <span className="hd-trem" aria-hidden="true" style={{
+          ...lugar(cenario.trem.de[0], Math.min(cenario.trem.de[1], cenario.trem.ate[1]) - 8, cenario.trem.ate[0] - cenario.trem.de[0], Math.abs(cenario.trem.ate[1] - cenario.trem.de[1]) + 9),
+          '--sprite-trem': urlCss('pixel/inicio/trem-vale.png'), '--linha-trem': periodo === 'noite' || clima.nevando ? 1 : 0,
+          '--subida': `${((cenario.trem.de[1] - cenario.trem.ate[1]) / (Math.abs(cenario.trem.ate[1] - cenario.trem.de[1]) + 9)) * 100}%`,
+        } as CSSProperties}><i /></span>}
         <span className="hd-luz-fogo" aria-hidden="true" style={{ left: `${(fogoX / 480) * 100}%`, top: `${((fogoY - 6) / 200) * 100}%`, '--forca': linhaFogo === 0 ? 0.2 : 1 } as CSSProperties} />
         {/* A pausa vira um quadro de cinema: a borda do acampamento escurece e um calor âmbar respira em volta do fogo. */}
         <span className="hd-vinheta" aria-hidden="true" />
@@ -801,7 +827,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
           ? <Mascote key="descanso" className={classeMascote} decorativo falar={permitirFalaMascote} comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={estiloMascote} />
           : reacaoAmostra?.id === 'quadro'
             ? <Mascote key={`quadro-${reacaoAmostra.n}`} className={classeMascote} decorativo falar={permitirFalaMascote} comportamento="quadro" style={estiloMascote} />
-            : <Mascote key="dia" comportamento={cenario.posePadrao} className={classeMascote} decorativo falar={permitirFalaMascote} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
+            : <Mascote key="dia" comportamento={cenario.posePadrao} repertorio={cenario.repertorio} className={classeMascote} decorativo falar={permitirFalaMascote} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
         {pausa > 0 && <span className="so-leitor" role="status">{fogoAceso ? 'Pausa na fogueira: o esqueleto senta para se aquecer e o gato ronrona.' : 'A fogueira está apagada; o esqueleto senta um instante ao lado dela.'}</span>}
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" aria-label="Falar com o gato" tabIndex={semLugar ? -1 : undefined} aria-hidden={semLugar || undefined}
@@ -824,10 +850,11 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
         {gato === 'tala' && !andando && <span ref={balaoGato} role="status" className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
         {estrela > 0 && <span className="hd-estrela-cadente" aria-hidden="true" />}
-        <DiretorDeCena palco={palco} periodo={periodo} cenario={cenario.id} controles={controles} />
+        <DiretorDeCena palco={palco} periodo={periodo} cenario={cenario.id} repertorio={cenario.repertorio} controles={controles} />
         <CorujaDoAcampamento key={cenario.id} poleiros={cenario.coruja} luzes={luzes} periodo={periodo} />
         {cenario.dragao && <DragaoDaCena key={`dragao-${cenario.id}`} ponto={cenario.dragao} />}
         <span className={`hd-particulas hd-particulas--${cenario.particulas}`} aria-hidden="true">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
+        {cenario.neve && clima.nevando && <Nevasca intensidade={clima.intensidade} />}
       </div>
     </div>
   )

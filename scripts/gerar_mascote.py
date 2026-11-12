@@ -3035,6 +3035,209 @@ def q_pescou_bota(k):
     return t
 
 
+# ═════════ quarta leva (12/11/2026): o Natal no Vale, sentado no banco do terraço ═════════
+def banco_suico(t, cx=48.0, y=112.0):
+    """Banco de tábua com pés em V (os bancos dos chalés) e a pele de ovelha dobrada no assento."""
+    t.pinta(caixa((cx, y + 1.6), 25.0, 1.8, r=0.8), "madeira", 0.9, R=1.2, pid="banco_tabua", semente=611, tom=0.05,
+            relevo=lambda X, Y: (0.0 * X, 0.25 * np.sin(X * 0.9)))
+    t.pinta(caixa((cx, y + 3.6), 24.6, 0.6, r=0.3), "madeira", 0.92, R=0.6, pid="banco_quina", tom=-0.25)
+    for s_ in (-1, 1):
+        x = cx + s_ * 18.0
+        t.pinta(capsula((x - s_ * 1.6, y + 3.6), (x + s_ * 1.8, y + 12.6), 1.3), "madeira", 0.7, R=1.2, pid=f"banco_pe{s_}", semente=612, tom=-0.1)
+        t.pinta(capsula((x + s_ * 1.6, y + 3.6), (x - s_ * 1.4, y + 12.6), 1.1), "madeira", 0.6, R=1.0, pid=f"banco_pe2{s_}", tom=-0.22)
+    # a pele de ovelha: borda em cachos, caindo pela frente do assento
+    pele = (caixa((cx - 3.0, y + 0.4), 14.0, 2.4, r=2.0) | elipse((cx - 3.0, y + 3.6), 12.6, 2.6)).borda(0.7, 1.4, 31)
+    t.pinta(pele, "pelo_branco", 1.0, R=2.6, pid="pele_ovelha", semente=613,
+            relevo=lambda X, Y: (0.35 * ruido(X * 1.6, Y * 1.6, 7) - 0.17, 0.35 * ruido(X * 1.6, Y * 1.6, 8) - 0.17))
+
+
+def manta(t, r, z=6.05, ate=121.0, alto=-7.0):
+    """Manta xadrez de lã (vermelho, creme e verde-escuro) sobre o colo e os joelhos, com franja embaixo."""
+    P = r.P
+    q = Quadro2D((P[0], P[1]), 0.0)
+    pts = [(-15.0, alto + 1.0), (-6.0, alto - 1.0), (6.0, alto - 1.4), (16.0, alto + 0.6), (18.0, ate - P[1] - 4.0),
+           (12.0, ate - P[1] - 1.0), (0.0, ate - P[1]), (-12.0, ate - P[1] - 1.0), (-17.0, ate - P[1] - 4.0)]
+    forma = q.forma(poligono(pts))
+    t.pinta(forma, "pano", z, R=3.0, pid="manta", semente=621,
+            relevo=lambda X, Y: (0.28 * np.sin(X * 0.55 + Y * 0.1), 0.18 * np.sin(Y * 0.8)))
+    bb = (P[0] - 20, P[1] + alto - 3, P[0] + 20, ate + 2)
+    # xadrez escocês: faixas largas escuras nas duas direções (o cruzamento fica mais escuro ainda), um fio verde e
+    # um fio creme fininhos
+    t.pinta(faixas((P[0], P[1]), 0, 7.0, 2.6, bb, fase=3.0), "pano", 0, sobre="manta", tom=-0.32, normal=False)
+    t.pinta(faixas((P[0], P[1]), 90, 7.0, 2.6, bb, fase=4.5), "pano", 0, sobre="manta", tom=-0.28, normal=False)
+    t.pinta(faixas((P[0], P[1]), 0, 7.0, 0.55, bb, fase=0.4), "talo", 0, sobre="manta", R=0.6)
+    t.pinta(faixas((P[0], P[1]), 90, 7.0, 0.55, bb, fase=1.9), "talo", 0, sobre="manta", R=0.6)
+    t.pinta(faixas((P[0], P[1]), 0, 14.0, 0.5, bb, fase=6.0), "la_creme", 0, sobre="manta", R=0.6)
+    t.pinta(faixas((P[0], P[1]), 90, 14.0, 0.5, bb, fase=8.0), "la_creme", 0, sobre="manta", R=0.6)
+    for i in range(12):
+        x = P[0] - 15.0 + i * 2.7
+        y = ate - (1.6 if abs(i - 5.5) > 4 else 0.4)
+        t.pinta(capsula((x, y - 0.6), (x + 0.2, y + 1.6), 0.4), "la_creme", z + 0.02, R=0.4, pid="manta_franja", sem_contorno=True)
+
+
+def pes_sentado(t, r):
+    """Os pés de osso aparecendo embaixo da manta, apoiados no chão."""
+    P = r.P
+    for i, s_ in enumerate((-1, 1)):
+        c = (P[0] + s_ * 9.0, 122.6)
+        t.pinta(elipse(c, 3.3, 1.8), "osso", 5.9, R=1.8, pid=f"pe_s{i}", semente=25)
+        for kk in range(4):
+            x = c[0] + s_ * (-1.6 + kk * 1.3)
+            t.pinta(capsula((x, c[1] + 0.2), (x + s_ * 0.25, c[1] + 1.7), 0.55), "osso", 5.95, R=0.7, pid=f"dedo_s{i}", semente=26 + kk)
+
+
+def _sentado(k, **kw) -> Pose:
+    s = _sn(k)
+    base = dict(y=10.0, resp=0.5 + 0.5 * s, cab_dy=1.0, pe=(2.0, 178.0), pd=(2.0, 178.0), sombra=False, pano=0.25 * s)
+    base.update(kw)
+    return replace(BASE, **base)
+
+
+def _cena_sentado(p, extra, luz=0.9):
+    t = Tela()
+    sombra_em(t, 48.0, 124.8, 28.0, 2.4)
+    banco_suico(t)
+    t.luz(-14.0, 100.0, 30.0, "#ff8a2a", 120.0, luz)
+
+    def ex(t, r):
+        pes_sentado(t, r)
+        extra(t, r)
+    esqueleto(t, p, ex)
+    return t
+
+
+def q_natal_chocolate(k):
+    """Sentado no banco com a manta no colo, chocolate quente na caneca, um gole devagar e o vapor subindo."""
+    gole = [0.0, 0.1, 0.45, 0.85, 1.0, 0.8, 0.35, 0.05][k]
+    p = _sentado(k, cab=4.0 - 7.5 * gole, cab_dx=0.3 * gole, vira=0.1 + 0.15 * gole, olhar=(0.5 * gole, 0.9),
+                 bd=(20 + 34 * gole, -66 - 96 * gole, -74 - 96 * gole, "punho"), be=(10.0, -30.0, -40.0, "aberta"), ze=6.4, zd=7.2,
+                 brilho=1.0 - 0.5 * gole)
+
+    def ex(t, r):
+        manta(t, r)
+        pa = r.j["palma_d"]
+        cq = Quadro2D((pa[0] - 4.8, pa[1] - 0.6), -16 * gole)
+        caneca(t, cq, p.zd + 0.35)
+        # chantili e a canela por cima (é chocolate, não café)
+        topo = cq.p(-0.5, -5.2)
+        t.pinta(elipse((topo[0], topo[1] - 0.4), 3.6, 1.6), "marsh", p.zd + 0.4, R=1.6, pid="chantili", semente=631)
+        t.ponto_fx(topo[0] - 1, topo[1] - 1, "#7a4a24", 0.8)
+        t.ponto_fx(topo[0] + 1, topo[1] - 1, "#7a4a24", 0.8)
+        vapor(t, topo[0], topo[1] - 2, k, 3 if gole < 0.6 else 2, 16)
+    return _cena_sentado(p, ex)
+
+
+def q_natal_tricotar(k):
+    """Tricotando um cachecol vermelho e creme: as duas agulhas se cruzando, o pano crescendo e o fio até o novelo."""
+    s = _sn(k)
+    vai = math.sin(k / NQ * TAU * 2)
+    p = _sentado(k, cab=7.0 + 0.6 * s, cab_dx=0.2, olhar=(0.0, 1.4), vira=0.05,
+                 be=(26.0 + 3 * vai, -78.0, -104.0 + 8 * vai, "pinca"), bd=(26.0 - 3 * vai, -78.0, -104.0 - 8 * vai, "pinca"), ze=7.0, zd=7.2)
+
+    def ex(t, r):
+        manta(t, r, alto=-5.0)
+        a, b = r.j["palma_e"], r.j["palma_d"]
+        meio = ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 + 1.0)
+        # o pano de tricô pendurado das agulhas (cresce devagar ao longo do ciclo)
+        comp = 11.0 + k * 0.4
+        pano_ = poligono([(meio[0] - 6.4, meio[1] - 0.6), (meio[0] + 6.4, meio[1] - 0.6), (meio[0] + 5.6, meio[1] + comp), (meio[0] - 5.4, meio[1] + comp + 0.4)])
+        t.pinta(pano_, "la", 7.4, R=1.6, pid="trico", semente=641, relevo=lambda X, Y: (0.3 * np.sin(X * 2.2), 0.0 * X))
+        t.pinta(faixas((0, 0), 0, 4.0, 1.6, (meio[0] - 7, meio[1] - 2, meio[0] + 7, meio[1] + comp + 2), fase=0.6), "la_creme", 0, sobre="trico", R=1.0)
+        # as agulhas de madeira clara com a bolinha na ponta
+        for (pa, s_) in ((a, -1), (b, 1)):
+            ponta = (meio[0] - s_ * 9.0, meio[1] - 5.0 + s_ * vai * 0.8)
+            cabo = (pa[0] + s_ * 5.0, pa[1] + 2.0)
+            t.pinta(capsula(cabo, ponta, 0.65), "madeira", 7.6, R=0.6, pid=f"agulha{s_}", semente=642, tom=0.35)
+            t.pinta(circulo(cabo, 1.0), "caneca", 7.65, R=1.0, pid=f"agulha_bola{s_}")
+        # o fio descendo até o novelo no banco, à direita
+        novelo = (74.0, 110.0)
+        fio = traco([(b[0] + 1.0, b[1] + 1.0), (b[0] + 8.0, b[1] + 9.0 + 1.4 * vai), (novelo[0] - 2.0, novelo[1] - 2.0)], 0.35)
+        t.pinta(fio, "la", 7.1, R=0.4, pid="fio", sem_contorno=True)
+        t.pinta(circulo(novelo, 3.6), "la", 1.2, R=3.4, pid="novelo", semente=643,
+                relevo=lambda X, Y: (0.4 * np.sin((X + Y) * 1.6), 0.4 * np.sin((X - Y) * 1.6)))
+    return _cena_sentado(p, ex)
+
+
+def q_natal_castanhas(k):
+    """Assando castanhas: a frigideira furada de cabo comprido estendida para o fogo (à esquerda), sacudida, as
+    castanhas pulando e a fumacinha subindo."""
+    s = _sn(k)
+    sacode = [0.0, 1.0, 0.0, -1.0, 0.0, 1.0, 0.0, -1.0][k]
+    p = _sentado(k, x=4.0, cab=2.0 + 0.6 * s, vira=-0.55, olhar=(-1.4, 0.8), inclina=-3.0,
+                 be=(58.0 + 2 * sacode, 70.0 + 3 * sacode, 80.0, "punho"), bd=(8.0, -22.0, -30.0, "aberta"), ze=7.6, zd=6.4)
+
+    def ex(t, r):
+        manta(t, r)
+        pa = r.j["palma_e"]
+        cabo_fim = (pa[0] - 8.0, pa[1] + 1.5 + sacode * 0.6)
+        t.pinta(capsula((pa[0] + 1.0, pa[1]), cabo_fim, 0.8), "madeira", 7.8, R=0.8, pid="cabo_frigideira", semente=651)
+        c = (cabo_fim[0] - 6.0, cabo_fim[1] + 1.0)
+        t.pinta(elipse(c, 6.4, 2.4), "aco", 7.9, R=1.4, pid="frigideira", tom=-0.15)
+        t.pinta(elipse((c[0], c[1] - 0.6), 5.2, 1.5), "aco", 7.95, R=-1.2, pid="frigideira_dentro", tom=-0.35)
+        for i in range(6):                                     # os furinhos
+            t.ponto_fx(c[0] - 5 + i * 2, c[1] + 1.2, "#0e0d14", 0.8)
+        g = np.random.default_rng(k)
+        for i in range(6):                                     # as castanhas, umas pulando
+            pulo = max(0.0, math.sin((k + i * 1.7) / NQ * TAU * 2)) * (3.5 if i % 2 else 2.0)
+            x = c[0] - 3.6 + i * 1.4 + g.random() * 0.6
+            y = c[1] - 1.6 - pulo
+            t.pinta(elipse((x, y), 1.3, 1.0), "couro", 8.0 + pulo * 0.01, R=1.0, pid=f"castanha{i}", semente=652 + i, tom=0.1)
+            t.ponto_fx(x - 0.4, y - 0.6, "#f0d8a8", 0.7)
+        for j in range(3):                                     # a fumacinha cheirosa
+            fase = ((k + j * 8 / 3) % NQ) / NQ
+            x = c[0] + math.sin(fase * TAU + j) * 1.5
+            y = c[1] - 4 - fase * 16
+            a = 0.45 * (1 - fase)
+            t.ponto_fx(x, y, "#e8e2d8", a)
+            t.ponto_fx(x + 1, y, "#e8e2d8", a * 0.6)
+    return _cena_sentado(p, ex, luz=1.4)
+
+
+NOTA = ["..##", "..#.", "..#.", "..#.", "###.", "###."]
+
+
+def nota_musical(t, x, y, a):
+    for j, linha in enumerate(NOTA):
+        for i, ch in enumerate(linha):
+            if ch == "#":
+                t.ponto_fx(x + i, y + j, "#ffe08a", a)
+
+
+def q_natal_cantar(k):
+    """Cantando as canções de Natal com o livrinho aberto nas duas mãos, a cabeça no ritmo e as notas subindo."""
+    s = _sn(k)
+    ritmo = math.sin(k / NQ * TAU * 2)
+    p = _sentado(k, cab=-1.5 + 2.4 * ritmo, cab_dx=0.6 * ritmo, inclina=1.2 * ritmo, vira=0.1, olhar=(0.3 * ritmo, 0.6),
+                 be=(36.0, -42.0, -60.0, "punho"), bd=(36.0, -42.0, -60.0, "punho"), ze=6.8, zd=6.8)
+
+    def ex(t, r):
+        manta(t, r)
+        a, b = r.j["palma_e"], r.j["palma_d"]
+        livro(t, ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 - 3.0), 0.0, 0.0, 7.0)
+        for j in range(3):
+            fase = ((k + j * 8 / 3) % NQ) / NQ
+            x = 66 + j * 5 + fase * 6 + math.sin(fase * TAU + j) * 1.5
+            y = 66 - fase * 34
+            nota_musical(t, x, y, 0.95 * (1 - fase ** 2) * min(1.0, fase * 5))
+    return _cena_sentado(p, ex)
+
+
+def q_natal_cochilo(k):
+    """Cochilando no banco, a manta puxada até o peito e a cabeça caída; os zz subindo."""
+    s = _sn(k)
+    p = _sentado(k, cab=11.0 + 1.4 * s, cab_dy=1.6 + 0.6 * s, cab_dx=0.6, inclina=2.4 + 0.4 * s, brilho=0.0,
+                 be=(18.0, -30.0, -50.0, "aberta"), bd=(18.0, -30.0, -50.0, "aberta"), ze=5.6, zd=5.6)
+
+    def ex(t, r):
+        manta(t, r, z=6.2, alto=-16.0 + 0.4 * s)
+        for j in range(3):
+            fase = ((k + j * 8 / 3) % NQ) / NQ
+            x = 72 + fase * 8 + math.sin(fase * TAU) * 1.4
+            y = 60 - fase * 24
+            zz(t, x, y, 3 + int(fase * 3), 0.95 * (1 - fase ** 2))
+    return _cena_sentado(p, ex)
+
+
 LINHAS = [
     ("acenar", "acenando", False, q_acenar),
     ("ler", "lendo", False, q_ler),
@@ -3078,6 +3281,12 @@ LINHAS = [
     ("luneta", "olhando pela luneta", False, q_luneta),
     ("boneco_neve", "fazendo um boneco de neve", False, q_boneco_neve),
     ("pescou_bota", "pescou uma bota velha", False, q_pescou_bota),
+    # quarta leva (12/11/2026): o Natal no Vale, sentado no banco do terraço (esqueleto-poses4.png)
+    ("natal_chocolate", "tomando chocolate quente", False, q_natal_chocolate),
+    ("natal_tricotar", "tricotando um cachecol", False, q_natal_tricotar),
+    ("natal_castanhas", "assando castanhas", False, q_natal_castanhas),
+    ("natal_cantar", "cantando canções de Natal", False, q_natal_cantar),
+    ("natal_cochilo", "cochilando debaixo da manta", False, q_natal_cochilo),
 ]
 
 
@@ -3086,6 +3295,7 @@ LINHAS_POSES_31 = 9          # poses de 31/10/2026 (as primeiras de esqueleto-po
 LINHAS_POSES_2 = 7           # segunda leva (esqueleto-poses2.png; também não muda)
 LINHAS_ACESSO = 2            # tela de entrar (esqueleto-acesso.png; também não muda)
 LINHAS_POSES_3 = 6           # terceira leva (01/11/2026): o diretor de cena, em esqueleto-poses3.png
+LINHAS_POSES_4 = 5           # quarta leva (12/11/2026): o Natal no Vale, em esqueleto-poses4.png
 
 
 def folha_esqueleto(so=None) -> Image.Image:
@@ -3724,6 +3934,9 @@ def main() -> None:
     salvar(esq.crop((0, a3, esq.width, a4)), PASTA / "esqueleto-acesso.png")
     # terceira leva (01/11/2026): as ações do diretor de cena da página inicial, uma por cenário
     salvar(esq.crop((0, a4, esq.width, a4 + FH * LINHAS_POSES_3)), PASTA / "esqueleto-poses3.png")
+    # quarta leva (12/11/2026): o Natal no Vale, sentado no banco do terraço
+    a5 = a4 + FH * LINHAS_POSES_3
+    salvar(esq.crop((0, a5, esq.width, a5 + FH * LINHAS_POSES_4)), PASTA / "esqueleto-poses4.png")
     salvar(gato.crop((0, 0, gato.width, GH * LINHAS_GATO_ANTIGAS)), PASTA / "gato.png")
     g1, g2 = GH * LINHAS_GATO_ANTIGAS, GH * (LINHAS_GATO_ANTIGAS + LINHAS_GATO_POSES_31)
     salvar(gato.crop((0, g1, gato.width, g2)), PASTA / "gato-poses.png")

@@ -1,4 +1,5 @@
 import type { IdLinhaGato } from '../../mascote/sprites'
+import type { IdComportamento } from '../../mascote/comportamentos'
 
 /**
  * Os cenários do topo da página inicial (01/11/2026, pedido do Tales: "um cenário diferente para ficar trocando",
@@ -10,7 +11,7 @@ import type { IdLinhaGato } from '../../mascote/sprites'
 export type PoseGato = 'repouso' | Extract<IdLinhaGato, 'sentado' | 'observando' | 'fogueira'>
 export type Particulas = 'vagalumes' | 'faiscas' | 'neve' | 'estrelas'
 export type Cenario = {
-  id: 'acampamento' | 'forja' | 'cais' | 'observatorio' | 'neve' | 'abrigo' | 'praca'
+  id: 'acampamento' | 'forja' | 'cais' | 'observatorio' | 'neve' | 'abrigo' | 'praca' | 'vale'
   /** Prefixo dos arquivos em public/pixel/inicio/: `${arquivo}-${periodo}[-960].webp`. */
   arquivo: string
   /** Cantos do chão por onde o gato passeia: canto de cima à esquerda da caixa do gato (36 x 22 px da arte). */
@@ -29,6 +30,20 @@ export type Cenario = {
   posePadrao?: 'fogueira'
   /** Onde o dragão pousa quando visita a cena (o ponto dos pés, em pixels da pintura); só os cenários que deixam esse chão livre. */
   dragao?: { x: number; y: number }
+  /**
+   * A época em que o cenário entra no rodízio ([mês, dia] de começo e de fim, no horário de Brasília; pode virar o ano).
+   * Sem época, ele fica o ano todo. O de Natal vai de novembro ao Dia de Reis.
+   */
+  epoca?: { de: readonly [number, number]; ate: readonly [number, number] }
+  /**
+   * O sistema de neve (clima.ts, 12/11/2026): o cenário que aceita neve recebe a nevasca animada quando o tempo vira, e,
+   * se tiver `arquivo`, troca devagar a pintura pela versão nevada (`${arquivo}-${periodo}[-960].webp`).
+   */
+  neve?: { arquivo?: string }
+  /** As atividades do esqueleto neste cenário (no lugar do sorteio de sempre): ex. sentado no banco, no vale de Natal. */
+  repertorio?: readonly IdComportamento[]
+  /** O trenzinho de montanha que atravessa o fundo do vale (pontos de começo e de fim, em pixels da pintura). */
+  trem?: { de: readonly [number, number]; ate: readonly [number, number] }
 }
 
 export const CENARIOS: readonly Cenario[] = [
@@ -57,7 +72,7 @@ export const CENARIOS: readonly Cenario[] = [
     coruja: [{ x: 320, y: 95 }, { x: 358, y: 96 }, { x: 342, y: 160 }, { x: 186, y: 135 }, { x: 177, y: 111 }],
   },
   {
-    id: 'neve', arquivo: 'cena-neve', particulas: 'neve',
+    id: 'neve', arquivo: 'cena-neve', particulas: 'neve', neve: {},
     gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 168, y: 170, pose: 'repouso' }, { x: 263, y: 167, pose: 'sentado' }, { x: 301, y: 176, pose: 'observando' }, { x: 226, y: 177, pose: 'repouso' }],
     coruja: [{ x: 201, y: 134 }, { x: 164, y: 154 }, { x: 356, y: 165 }, { x: 147, y: 104 }, { x: 191, y: 104 }],
   },
@@ -75,23 +90,60 @@ export const CENARIOS: readonly Cenario[] = [
     coruja: [{ x: 166, y: 102 }, { x: 198, y: 150 }, { x: 213, y: 114 }, { x: 396, y: 150 }, { x: 308, y: 162 }],
     dragao: { x: 392, y: 174 },
   },
+  {
+    // Natal no Vale (12/11/2026, scripts/cenarios/inicio_vale.py): o terraço de um chalé suíço no alto do vale, com a
+    // cachoeira, a igrejinha lá embaixo e o trem de montanha. Só na época do Natal; o esqueleto fica sentado no banco.
+    id: 'vale', arquivo: 'cena-vale', particulas: 'neve',
+    epoca: { de: [11, 10], ate: [1, 6] },
+    neve: { arquivo: 'cena-vale-nevado' },
+    repertorio: ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'],
+    trem: { de: [150, 104], ate: [372, 97] },
+    // O cesto com a almofada xadrez, os presentes do trenó, a neve olhando o vale e a sacada do chalé.
+    gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 190, y: 148, pose: 'repouso' }, { x: 332, y: 150, pose: 'sentado' }, { x: 298, y: 170, pose: 'observando' }, { x: 416, y: 104, pose: 'repouso' }],
+    // Os moirões do guarda-corpo, o braço do poste do lampião, a lenha e a sacada.
+    coruja: [{ x: 171, y: 114 }, { x: 316, y: 119 }, { x: 387, y: 134 }, { x: 147, y: 115 }, { x: 440, y: 112 }],
+  },
 ]
 
-/** Faixas compartilhadas por todos, sempre em Brasília, sem depender do fuso do aparelho. */
-export const HORAS_CENARIOS = [0, 4, 8, 12, 16, 20] as const
+/** O relógio de Brasília para todos, sem depender do fuso do aparelho. */
 const relogio = new Intl.DateTimeFormat('en-CA', {
-  timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23',
+  timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit',
+  second: '2-digit', hourCycle: 'h23',
 })
-export function faixaDoCenario(agora = new Date()) {
+const DIA_MS = 86_400_000
+/** O dia (aaaa-mm-dd) e quantos milissegundos dele já passaram, em Brasília; `inicio` é o instante da meia-noite. */
+export function horaDeBrasilia(agora = new Date()) {
   const p = Object.fromEntries(relogio.formatToParts(agora).map(v => [v.type, v.value]))
   const dia = `${p.year}-${p.month}-${p.day}`
-  const faixa = Math.floor(Number(p.hour) / 4)
-  // O offset do próprio instante mantém a virada exata da faixa no horário de Brasília.
-  const local = Date.UTC(Number(p.year), Number(p.month) - 1, Number(p.day), Number(p.hour))
-  const horaUtc = Math.floor(agora.getTime() / 3_600_000) * 3_600_000
-  const offset = local - horaUtc
-  const proxima = Date.UTC(Number(p.year), Number(p.month) - 1, Number(p.day), (faixa + 1) * 4) - offset
-  return { dia, faixa, proxima }
+  const local = Date.UTC(Number(p.year), Number(p.month) - 1, Number(p.day), Number(p.hour), Number(p.minute), Number(p.second))
+  const offset = local - Math.floor(agora.getTime() / 1000) * 1000
+  const decorrido = agora.getTime() + offset - Date.UTC(Number(p.year), Number(p.month) - 1, Number(p.day))
+  return { dia, mes: Number(p.month), diaDoMes: Number(p.day), decorrido, inicio: agora.getTime() - decorrido }
+}
+
+/** O cenário está na época dele hoje? (sem época: sempre) */
+export function naEpoca(c: Cenario, mes: number, dia: number): boolean {
+  if (!c.epoca) return true
+  const v = mes * 100 + dia, de = c.epoca.de[0] * 100 + c.epoca.de[1], ate = c.epoca.ate[0] * 100 + c.epoca.ate[1]
+  return de <= ate ? v >= de && v <= ate : v >= de || v <= ate
+}
+
+/** Os cenários do rodízio de hoje (os sem época e os que estão na época deles). */
+export function cenariosDoDia(agora = new Date(), lista: readonly Cenario[] = CENARIOS): Cenario[] {
+  const { mes, diaDoMes } = horaDeBrasilia(agora)
+  const hoje = lista.filter((c) => naEpoca(c, mes, diaDoMes))
+  return hoje.length ? hoje : [...lista]
+}
+
+/**
+ * A faixa do dia (Tales, 12/11/2026: "quanto mais arte, menos tempo cada uma fica"): o dia de Brasília é dividido em
+ * partes iguais, uma por cenário do rodízio. Com 7 cenários, 3 h 25 min cada; com 8, 3 h cada. Todos aparecem todo dia.
+ */
+export function faixaDoCenario(agora = new Date(), n = cenariosDoDia(agora).length) {
+  const { dia, decorrido, inicio } = horaDeBrasilia(agora)
+  const faixa = Math.min(n - 1, Math.floor((decorrido * n) / DIA_MS))
+  const proxima = inicio + Math.ceil(((faixa + 1) * DIA_MS) / n)
+  return { dia, faixa, proxima, faixas: n }
 }
 
 /** Fisher–Yates com semente do dia. É um sorteio reproduzível, sem pedido ao servidor e sem sorte individual. */
@@ -112,7 +164,7 @@ export function ordemDoDia(dia: string, lista: readonly Cenario[] = CENARIOS): C
   return ordem
 }
 
-/** Mesmo cenário para todo mundo até a próxima faixa. Prévia explícita por ?cenario=abrigo; não grava preferência. */
+/** Mesmo cenário para todo mundo até a próxima faixa. Prévia explícita por ?cenario=vale; não grava preferência. */
 export function cenarioDaHora(agora: Date = new Date(), lista: readonly Cenario[] = CENARIOS): Cenario {
   if (!lista.length) throw new Error('É necessário ao menos um cenário')
   let forcado = ''
@@ -122,6 +174,7 @@ export function cenarioDaHora(agora: Date = new Date(), lista: readonly Cenario[
   } catch { /* sem janela */ }
   const pedido = lista.find(c => c.id === forcado)
   if (pedido) return pedido
-  const { dia, faixa } = faixaDoCenario(agora)
-  return ordemDoDia(dia, lista)[faixa % lista.length]
+  const hoje = cenariosDoDia(agora, lista)
+  const { dia, faixa } = faixaDoCenario(agora, hoje.length)
+  return ordemDoDia(dia, hoje)[faixa % hoje.length]
 }

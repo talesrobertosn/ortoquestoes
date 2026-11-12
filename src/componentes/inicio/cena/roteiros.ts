@@ -1,5 +1,6 @@
 import type { Periodo } from '../../../estado/aparencia'
 import type { IdComportamento } from '../../mascote/comportamentos'
+import { climaAgora } from './clima'
 
 /*
  * Os roteiros do diretor de cena (01/11/2026; plano em docs/design/MASCOTES.md, seção 6). De tempos em tempos a página
@@ -11,7 +12,7 @@ export type Bicho = 'esqueleto' | 'gato' | 'coruja'
 export type Acao =
   | { tipo: 'pose'; id: IdComportamento }
   | { tipo: 'gato-ir'; ate: 'fogo' | 'esqueleto' | 'longe' }
-  | { tipo: 'gato-pose'; id: 'acordado' | 'comemorando' | 'ronronando' | 'observando' | 'brincando' | 'sentado' | 'lambendo' | 'cacando' | 'pulando' | 'derretido' | 'assustado' }
+  | { tipo: 'gato-pose'; id: 'acordado' | 'comemorando' | 'ronronando' | 'observando' | 'brincando' | 'sentado' | 'lambendo' | 'cacando' | 'pulando' | 'derretido' | 'assustado' | 'olhando_cima' }
   | { tipo: 'coruja-voar' }
   | { tipo: 'estrela' }
 export type Passo = { quem?: Bicho; fala?: string; acao?: Acao; espera?: number }
@@ -148,6 +149,37 @@ export const ROTEIROS: Roteiro[] = [
     { quem: 'gato', fala: 'Meia-noite. A hora em que o gato estuda.', acao: { tipo: 'gato-pose', id: 'observando' } },
     { quem: 'coruja', fala: 'Sério?' },
     { quem: 'gato', fala: 'Não.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
+  // ---- O Natal no Vale (12/11/2026): o esqueleto sentado no banco do terraço, o gato no cesto, o trem lá embaixo ----
+  { id: 'novelo', peso: 5, cenarios: ['vale'], precisa: ['gato'], passos: [
+    { quem: 'esqueleto', fala: 'Mais duas voltas e o cachecol fica pronto.', acao: { tipo: 'pose', id: 'natal_tricotar' } },
+    { acao: { tipo: 'gato-ir', ate: 'esqueleto' }, espera: 3800 },
+    { acao: { tipo: 'gato-pose', id: 'brincando' }, espera: 2200 },
+    { quem: 'esqueleto', fala: 'Cadê o meu novelo?' },
+    { quem: 'gato', fala: 'Que novelo? Não vi novelo nenhum.' }] },
+  { id: 'castanha', peso: 5, cenarios: ['vale'], precisa: ['coruja'], passos: [
+    { quem: 'esqueleto', fala: 'Castanha quentinha, coruja?', acao: { tipo: 'pose', id: 'natal_castanhas' } },
+    { quem: 'coruja', fala: 'Eu como ratos. Mas obrigada pela gentileza.' },
+    { quem: 'esqueleto', fala: 'Sobra mais para mim.' }] },
+  { id: 'chocolate', peso: 4, cenarios: ['vale'], precisa: ['gato'], passos: [
+    { quem: 'esqueleto', fala: 'Alguém quer chocolate quente?', acao: { tipo: 'pose', id: 'natal_chocolate' } },
+    { quem: 'gato', fala: 'Gato não pode chocolate. Mas aceito a manta.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
+  { id: 'sino-do-vale', peso: 4, cenarios: ['vale'], precisa: ['coruja'], passos: [
+    { quem: 'coruja', fala: 'Ouviu? O sino da igreja lá no vale.' },
+    { quem: 'esqueleto', fala: 'É a deixa para mais uma canção.', acao: { tipo: 'pose', id: 'natal_cantar' } },
+    { quem: 'gato', fala: 'Era a deixa para silêncio.' }] },
+  { id: 'trenzinho', peso: 3, cenarios: ['vale'], passos: [
+    { quem: 'coruja', fala: 'Lá vai o trenzinho do vale. Pontual como revisão bem feita.' },
+    { quem: 'gato', fala: 'Eu prefiro o cesto. Não atrasa e é quentinho.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
+  { id: 'cochilo-manta', peso: 3, cenarios: ['vale'], precisa: ['coruja'], passos: [
+    { acao: { tipo: 'pose', id: 'natal_cochilo' }, espera: 2200 },
+    { quem: 'coruja', fala: 'Silêncio. Ele está consolidando a memória.' },
+    { quem: 'gato', fala: 'Eu consolido há dezesseis horas por dia.' }] },
+  { id: 'primeira-neve', peso: 9, cenarios: ['vale', 'neve'], precisa: ['gato'], quando: (d) => climaAgora(d).nevando, passos: [
+    { acao: { tipo: 'gato-pose', id: 'olhando_cima' }, espera: 1800 },
+    { quem: 'gato', fala: 'Está caindo algodão do céu.' },
+    { quem: 'coruja', fala: 'É neve. Volte para o cesto antes que molhe o bigode.' },
+    { acao: { tipo: 'gato-ir', ate: 'fogo' }, espera: 3800 },
+    { quem: 'gato', fala: 'Ninguém viu eu obedecer.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
   // Aparece sozinha de vez em quando e também por palavra digitada na página inicial (CenaDiorama).
   { id: 'louva-o-sol', peso: 2, raro: true, passos: [
     { quem: 'esqueleto', fala: 'Louvado seja o sol!', acao: { tipo: 'pose', id: 'comemora2' } },

@@ -55,6 +55,12 @@ export const LINHAS_ESQUELETO = [
   { id: 'luneta', nome: 'olhando pela luneta', halloween: false, sorteio: false },
   { id: 'boneco_neve', nome: 'fazendo um boneco de neve', halloween: false, sorteio: false },
   { id: 'pescou_bota', nome: 'pescando uma bota velha', halloween: false, sorteio: false },
+  // Quarta leva (12/11/2026): o Natal no Vale, sentado no banco do terraço (esqueleto-poses4.png).
+  { id: 'natal_chocolate', nome: 'tomando chocolate quente', halloween: false, sorteio: false },
+  { id: 'natal_tricotar', nome: 'tricotando um cachecol', halloween: false, sorteio: false },
+  { id: 'natal_castanhas', nome: 'assando castanhas', halloween: false, sorteio: false },
+  { id: 'natal_cantar', nome: 'cantando canções de Natal', halloween: false, sorteio: false },
+  { id: 'natal_cochilo', nome: 'cochilando debaixo da manta', halloween: false, sorteio: false },
 ] as const
 
 export type IdLinhaEsqueleto = (typeof LINHAS_ESQUELETO)[number]['id']
@@ -113,8 +119,9 @@ const FOLHAS_ESQUELETO: Leva[] = [
   { src: SPRITE_ESQUELETO.src, ate: 14 },
   { src: '/pixel/mascote/esqueleto-poses.png', ate: 23 },
   { src: '/pixel/mascote/esqueleto-poses2.png', ate: 30 },
-  { src: '/pixel/mascote/esqueleto-acesso.png', ate: LINHAS_ESQUELETO.length - 6 },
-  { src: '/pixel/mascote/esqueleto-poses3.png?v=1', ate: LINHAS_ESQUELETO.length },
+  { src: '/pixel/mascote/esqueleto-acesso.png', ate: LINHAS_ESQUELETO.length - 11 },
+  { src: '/pixel/mascote/esqueleto-poses3.png?v=1', ate: LINHAS_ESQUELETO.length - 5 },
+  { src: '/pixel/mascote/esqueleto-poses4.png?v=1', ate: LINHAS_ESQUELETO.length },
 ]
 const FOLHAS_GATO: Leva[] = [
   { src: SPRITE_GATO.src, ate: LINHAS_GATO.length },
