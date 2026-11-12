@@ -4,7 +4,8 @@ import {
   type Estado,
 } from './convite/regras'
 // O CSS da carta vai junto com o site, e não com a carta: baixado só na hora, ele podia falhar (aba aberta antes
-// de uma publicação, rede ruim) e a carta aparecia sem estilo, gigante no canto de cima (Tales, 12/11/2026).
+// de uma publicação, rede ruim). A carta gigante no canto de cima (Tales, 12/11/2026) vinha do prefixo .cc, igual ao
+// do calendário do cronograma; desde então a carta usa .cvc.
 import './convite/CartaConvite.css'
 
 /**

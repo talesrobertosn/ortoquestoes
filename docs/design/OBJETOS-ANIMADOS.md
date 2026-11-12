@@ -57,7 +57,7 @@ O antigo mensageiro saiu (pedido do Tales: "o mascotezinho meio ruim"). A carta 
 o gato chega com a carta na boca, deita na borda de cima com o rabo pendurado balançando e, ao fechar, levanta e sai
 andando. A carta é um envelope com lacre que abre na entrega, e dentro vem o Indique e ganhe (bilhetes "+7 / +7", as
 12 vagas das indicações e o link pessoal nos botões). O Tales pediu a carta **pequena e discreta**: 288 px, sempre no canto de baixo à direita, também no celular (12/11/2026).
-- Código em `src/componentes/convite/` (regras, carta, bichos e CSS próprio, que vai junto com o site: carregado sob demanda, ele podia falhar e a carta aparecia sem estilo, gigante no canto de cima);
+- Código em `src/componentes/convite/` (regras, carta, bichos e CSS próprio com o prefixo `.cvc`, que vai junto com o site; o prefixo antigo `.cc` era o mesmo do calendário do cronograma, e a carta herdava o `position: fixed; inset: 0` dele);
   o relógio continua em `src/componentes/ConviteDiario.tsx`.
 - Folhas dos bichos: `scripts/sprites/convite_bichos.py` (gato desenhado por código; coruja sem nenhum pixel alterado).
 - Prévia: `#/dev/convite?bicho=gato&situacao=indicar-3&tema=escuro` (só em desenvolvimento). Teste:
