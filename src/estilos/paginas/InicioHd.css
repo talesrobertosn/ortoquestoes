@@ -505,4 +505,4 @@ cenário com a página aberta; ao abrir a página, a neve já está lá. A nevas
   30.01%, 100% { left: 100%; top: 6.25%; }
 }
 .hd-palco--noite .hd-trem i { filter: drop-shadow(0 0 2px rgba(255, 200, 110, 0.55)); }
-@media (prefers-reduced-motion: reduce) { .hd-trem { display: none; } }
+@media (prefers-reduced-motion: reduce) { .hd-trem { display: none; } .hd-palco__nevado--devagar { transition-duration: 4s; } }

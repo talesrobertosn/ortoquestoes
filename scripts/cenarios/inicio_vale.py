@@ -222,7 +222,7 @@ def cachoeira(nome: str, per: dict) -> tuple[Plano, Camada]:
 
 
 # ─────────────────────────────── O vale lá embaixo ───────────────────────────────
-IGREJA = (318, 106)               # base da torre
+IGREJA = (330, 95)                # base da torre (a nave vai para a direita), logo atrás do trilho
 TRILHO = [(150, 104), (230, 101), (300, 99), (372, 97)]
 
 
@@ -259,7 +259,7 @@ def vale(nome: str, per: dict) -> tuple[Plano, Camada, list]:
         P.p(cx - larg - 1, y, NEVE[2], 0.4)
     # bosques escuros (pinheirinhos juntos), mais miúdos no fundo
     g = np.random.default_rng(364)
-    for (bx, by, n, esp) in ((214, 96, 9, 3.0), (262, 92, 7, 2.6), (344, 92, 8, 2.6), (232, 112, 10, 3.6), (360, 108, 6, 3.4),
+    for (bx, by, n, esp) in ((214, 96, 9, 3.0), (262, 92, 7, 2.6), (372, 93, 6, 2.6), (232, 112, 10, 3.6), (360, 108, 6, 3.4),
                              (282, 116, 7, 3.8), (206, 120, 8, 4.0)):
         for i in range(n):
             x = bx + (i - n / 2) * esp + g.normal(0, 1)
@@ -283,11 +283,22 @@ def vale(nome: str, per: dict) -> tuple[Plano, Camada, list]:
         if x % 4 == 0:
             P.p(x, y + 1, "#3a2a20", 0.3)
     # casinhas: telhado de neve, parede de madeira, janelas acesas (mais à noite)
-    casas = [(222, 103, 6), (236, 98, 5), (252, 106, 6), (270, 97, 5), (288, 104, 6), (300, 110, 7), (346, 104, 6), (358, 99, 5),
-             (338, 112, 7), (366, 114, 7), (244, 118, 7), (214, 114, 6), (280, 92, 4), (330, 94, 4)]
+    casas = [(222, 103, 6), (236, 98, 5), (252, 106, 6), (270, 97, 5), (288, 104, 6), (300, 110, 7), (346, 106, 6), (366, 104, 5),
+             (338, 114, 7), (366, 116, 7), (244, 118, 7), (214, 114, 6), (280, 92, 4), (316, 93, 4)]
     for (cx, cy, s) in casas:
         casinha(P, E, cx, cy, s, L, luzes, nome)
     igreja(P, E, L, luzes, nome)
+    if nome == "manha" and not nevado():
+        # o sol baixo da manhã vem da direita: o paredão da cachoeira ainda deixa a metade de cá do vale na sombra azul,
+        # com a borda serrilhada das copas; a outra metade já brilha (o contraste que faltava lá embaixo)
+        borda = 262 + (YA - fundo) * 1.1 + (ruido(366, 6) - 0.5) * 10 + (ruido(367, 2) - 0.5) * 4
+        na_sombra = XA < borda
+        P.d = np.where(na_sombra, P.d * 0.22, P.d * 1.08).astype(np.float32)
+        P.cint = np.where(na_sombra, 0, P.cint).astype(np.float32)
+        # a sombra azul fria e o lado do sol um pouco mais quente: a cor também separa as duas metades
+        rgb = P.c.c[:, :, :3]
+        P.c.c[:, :, :3] = np.where(na_sombra[:, :, None], rgb * np.array([0.7, 0.77, 0.94], np.float32),
+                                   np.clip(rgb * np.array([1.05, 1.01, 0.93], np.float32), 0, 1))
     return P, E, luzes
 
 
@@ -316,48 +327,146 @@ def casinha(P: Plano, E: Camada, cx: int, cy: int, s: int, L, luzes: list, nome:
 
 
 def igreja(P: Plano, E: Camada, L, luzes: list, nome: str) -> None:
-    """A igrejinha branca do vale: nave com telhado de neve, torre com relógio dourado, campanário e a flecha pontuda."""
+    """A igreja do vale, logo atrás do trilho: torre de reboco branco com cunhais de pedra, relógio dourado, campanário
+    com as duas aberturas, a flecha de ardósia com neve e a cruz; à direita, a nave com o telhado escuro de ardósia
+    carregado de neve, as janelas altas em arco (acesas à tarde, à noite e na nevasca) e o muro baixo do adro."""
     bx, by = IGREJA
-    d_f = direto(L, (0, 1, 0.1))
-    d_l = direto(L, (-1, 0.4, 0.1))
-    # nave (à esquerda da torre), vista de lado
-    for y in range(by - 7, by + 1):
-        for x in range(bx - 16, bx - 1):
-            P.p(x, y, REBOCO[5 if y > by - 6 else 6] if (x + y) % 9 else REBOCO[4], d_f)
-    for x in range(bx - 18, bx):
-        for k in range(3):
-            P.p(x, by - 8 - k, NEVE[6 - k], direto(L, (0, 0.3, 1)), cint=0.5)
-    for jx in (bx - 13, bx - 9, bx - 5):        # janelas altas em arco
-        for y in (by - 5, by - 4, by - 3):
-            acesa = nome != "manha" or nevado()
-            P.p(jx, y, "#ffc860" if acesa else "#3a4256", 0.0 if acesa else 0.4)
-            if acesa:
-                E.p(jx, y, "#ffc860", 0.9)
-        luzes.append((jx, by - 4))
-    # torre
-    for y in range(by - 20, by + 1):
-        for x in range(bx - 2, bx + 3):
-            u = (x - bx) / 2.5
-            P.p(x, y, REBOCO[6 if u < 0.3 else 4], d_f if u < 0.3 else d_l)
-    # relógio dourado
-    for (dx, dy) in ((0, 0), (-1, 0), (1, 0), (0, -1), (0, 1)):
-        P.p(bx + dx, by - 15 + dy, "#f4d478" if (dx, dy) != (0, 0) else "#6a4a10", 0.9)
-    # campanário (aberturas escuras) e a flecha de ardósia com neve, a cruz dourada no alto
-    for x in (bx - 1, bx + 1):
-        P.p(x, by - 19, "#2a2a34", 0.2)
-    for k in range(13):
-        y = by - 21 - k
-        meia = max(0, 2.6 - k * 0.22)
-        for x in range(int(round(bx - meia)), int(round(bx + meia)) + 1):
-            P.p(x, y, "#3a4050" if x < bx else "#262a36", 0.45 if x < bx else 0.2)
-        if k % 3 == 0:
-            P.p(bx - meia, y, NEVE[5], direto(L, (0, 0.3, 1)), cint=0.6)
-    P.p(bx, by - 34, "#e8c060", 0.9)
-    P.p(bx, by - 35, "#e8c060", 0.9)
-    P.p(bx - 1, by - 34, "#c8a040", 0.7)
-    P.p(bx + 1, by - 34, "#c8a040", 0.7)
+    lado = 1 if L[0] > 0 else -1
+    d_f = direto(L, (0, 1, 0.15))
+    d_luz = direto(L, (0.9 * lado, 0.35, 0.2))
+    d_somb = direto(L, (-0.9 * lado, 0.35, 0.2))
+    d_teto = direto(L, (0, 0.35, 1))
+    ARD = ("#161a22", "#1f2430", "#2a313f", "#38404f", "#4a5364")
+    acesa = nome != "manha" or nevado()
+    # ── a nave (à direita da torre): parede de reboco com o lado da luz mais claro, rodapé de pedra
+    nx0, nx1, alt = bx + 4, bx + 27, 11
+    for y in range(by - alt, by + 1):
+        for x in range(nx0, nx1 + 1):
+            u = (x - nx0) / (nx1 - nx0)
+            k = 5 if y > by - alt + 1 else 6
+            if (x * 3 + y * 5) % 11 == 0:
+                k -= 1
+            if y >= by - 1:
+                k = 2 if (x + y) % 3 else 1          # rodapé de pedra
+            P.p(x, y, REBOCO[k], d_f * (0.85 + 0.15 * (u if lado > 0 else 1 - u)))
+    # sombra do beiral na parede
+    for x in range(nx0, nx1 + 1):
+        P.p(x, by - alt, REBOCO[3], d_f * 0.6)
+    # telhado de ardósia visto de lado: faixa inclinada com beiral, neve em cima
+    for k in range(6):
+        y = by - alt - 1 - k
+        x0, x1 = nx0 - 2 + k // 2, nx1 + 2 - k // 2
+        for x in range(x0, x1 + 1):
+            if k >= 4:
+                P.p(x, y, NEVE[6] if k == 5 else NEVE[5], d_teto, cint=0.6)
+            elif k == 3 and (x * 7) % 5 < 3:
+                P.p(x, y, NEVE[4], d_teto, cint=0.5)
+            else:
+                t = ARD[3 if k == 0 else 2] if (x + k) % 4 else ARD[1]
+                P.p(x, y, t, d_teto * 0.7)
+        P.p(x0, y, ARD[0], 0.2)
+    for x in range(nx0 - 2, nx1 + 3, 3):           # pingentes de neve no beiral
+        P.p(x, by - alt, NEVE[5], d_teto * 0.8, cint=0.4)
+    # janelas altas em arco
+    for jx in range(nx0 + 3, nx1 - 1, 5):
+        for y in range(by - 8, by - 2):
+            for dx in (0, 1):
+                topo = y == by - 8
+                if topo and dx == 1:
+                    continue
+                cor = ("#ffd27a" if y < by - 6 else "#ffb24a") if acesa else ("#24304a" if dx == 0 else "#3a4a66")
+                if topo and not acesa:
+                    cor = "#4a5a78"
+                P.p(jx + dx, y, cor, 0.0 if acesa else 0.35)
+                if acesa:
+                    E.p(jx + dx, y, cor, 0.95)
+            P.p(jx - 1, by - 2, REBOCO[4], d_f)   # peitoril
+            P.p(jx + 2, by - 2, REBOCO[4], d_f)
+        P.p(jx + 1, by - 8, REBOCO[3], d_f * 0.7)
+        luzes.append((jx, by - 5))
+    # ── a torre: reboco branco com cunhais de pedra alternados, lado da luz e lado da sombra
+    tx0, tx1, ttopo = bx - 3, bx + 3, by - 27
+    for y in range(ttopo, by + 1):
+        for x in range(tx0, tx1 + 1):
+            borda = x in (tx0, tx1)
+            frente_luz = (x - bx) * lado > 0
+            k = 6 if frente_luz else 4
+            if x == bx:
+                k = 5
+            if borda and ((y - ttopo) // 2) % 2 == 0:
+                k = 2 if not frente_luz else 3          # cunhal de pedra
+            if y >= by - 1:
+                k = 2 if (x + y) % 3 else 1
+            P.p(x, y, REBOCO[k], d_luz if frente_luz else (d_somb if x != bx else d_f))
+    # cornijas que marcam os andares
+    for yc in (by - 13, ttopo + 7, ttopo):
+        for x in range(tx0 - 1, tx1 + 2):
+            P.p(x, yc, REBOCO[3] if x not in (tx0 - 1, tx1 + 1) else REBOCO[2], d_f * 0.8)
+        for x in range(tx0, tx1 + 1, 2):
+            P.p(x, yc - 1, NEVE[5], d_teto, cint=0.5)
+    # porta de madeira em arco com a guirlanda e o degrau de neve
+    for y in range(by - 5, by + 1):
+        for x in range(bx - 1, bx + 2):
+            if y == by - 5 and x != bx:
+                continue
+            P.p(x, y, ESCURA[3] if x == bx else ESCURA[2], 0.3)
+    P.p(bx, by - 6, "#2a5a32", 0.3)
+    P.p(bx, by - 4, "#c8323a", 0.5)
+    for x in range(bx - 2, bx + 3):
+        P.p(x, by + 1, NEVE[6], d_teto, cint=0.6)
+    # janela redonda acima da porta
+    P.p(bx, by - 10, "#ffcf70" if acesa else "#2a3650", 0.0 if acesa else 0.3)
+    if acesa:
+        E.p(bx, by - 10, "#ffcf70", 0.85)
+    # relógio dourado: aro de ouro, mostrador claro e os ponteiros
+    cy_r = by - 19
+    for dy in (-2, -1, 0, 1, 2):
+        for dx in (-2, -1, 0, 1, 2):
+            r2 = dx * dx + dy * dy
+            if r2 > 5:
+                continue
+            if r2 >= 4:
+                cor = "#d4a640" if (dx * lado + dy) < 0 else "#a87a28"
+            else:
+                cor = "#f6eed2"
+            P.p(bx + dx, cy_r + dy, cor, 0.95)
+    P.p(bx, cy_r - 1, "#2a1a0c", 0.5)
+    P.p(bx, cy_r, "#2a1a0c", 0.5)
+    P.p(bx + 1, cy_r, "#2a1a0c", 0.5)
     if nome == "noite" or nevado():
-        E.p(bx, by - 15, "#ffe08a", 0.9)          # o relógio aceso à noite
+        for (dx, dy) in ((-1, -1), (1, 1), (-1, 1), (1, -1)):
+            E.p(bx + dx, cy_r + dy, "#ffe8a8", 0.8)
+    # campanário: duas aberturas em arco, o sino dourado aparecendo
+    for ax in (bx - 2, bx + 1):
+        for y in range(ttopo + 2, ttopo + 6):
+            if y == ttopo + 2:
+                P.p(ax + (1 if ax < bx else 0), y, "#141820", 0.1)
+                continue
+            for dx in (0, 1):
+                P.p(ax + dx, y, "#141820", 0.1)
+        P.p(ax + (1 if ax < bx else 0), ttopo + 4, "#c89838", 0.6)
+    # a flecha de ardósia: lado da luz e da sombra, faixas de neve presas nas juntas, bola e cruz douradas
+    alt_f = 17
+    for k in range(alt_f):
+        y = ttopo - 1 - k
+        meia = 3.6 * (1 - k / alt_f) ** 1.1
+        for x in range(int(round(bx - meia)), int(round(bx + meia)) + 1):
+            luz_lado = (x - bx) * lado > 0 or x == bx
+            t = ARD[3] if luz_lado else ARD[1]
+            if (k % 4 == 1) and abs(x - bx) <= meia - 0.5:
+                t = NEVE[5] if luz_lado else NEVE[3]
+            P.p(x, y, t, d_luz * 0.8 if luz_lado else d_somb * 0.5, cint=0.4 if t in NEVE else 0)
+    yt = ttopo - alt_f - 1
+    P.p(bx, yt, "#f4d478", 0.9)
+    for (dx, dy, c) in ((0, -1, "#e8c060"), (0, -2, "#e8c060"), (0, -3, "#e8c060"), (-1, -2, "#c8a040"), (1, -2, "#f4d478")):
+        P.p(bx + dx, yt + dy, c, 0.9)
+    # o muro baixo do adro, com neve em cima, e duas lápides
+    for x in range(bx - 6, nx1 + 4):
+        P.p(x, by + 2, "#5a5c66" if x % 3 else "#46484f", 0.5)
+        P.p(x, by + 1, NEVE[6] if x % 5 else NEVE[5], d_teto, cint=0.5)
+    for gx in (nx1 - 4, nx1 - 1):
+        P.p(gx, by - 1, "#8a8c96", d_f)
+        P.p(gx, by - 2, NEVE[6], d_teto)
 
 
 # ─────────────────────────────── O terraço ───────────────────────────────
@@ -1129,7 +1238,9 @@ def montar(nome: str) -> Image.Image:
     planos = [  # (camada, luz direta, desfoque, névoa, recebe fogo, cintila)
         (mlonge.c, d_longe, 2.2, 0.46 if not nev else 0.86, 0.0, None),
         (mmeio.c, d_meio, 1.6, 0.3 if not nev else 0.72, 0.0, None),
-        (vale_p.c.c, vale_p.d, 1.0, (0.2 if not nev else 0.5) * k_n, 0.0, vale_p.cint),
+        # o vale: menos desfoque e menos névoa de manhã, para as casinhas, a igreja e o trilho se lerem lá de cima
+        (vale_p.c.c, vale_p.d, 1.0 if nev else (0.55 if nome == "manha" else 0.75),
+         (0.5 if nev else {"manha": 0.08, "tarde": 0.16, "noite": 0.2}[nome]) * k_n, 0.0, vale_p.cint),
         (p_dir.c.c, p_dir.d, 1.2, 0.22 if not nev else 0.55, 0.0, p_dir.cint),
         (p_esq.c.c, p_esq.d, 1.0, 0.16 if not nev else 0.5, 0.0, p_esq.cint),
         (chao.c.c, chao.d, 0.0, 0.0 if not nev else 0.06, 1.0, chao.cint),
@@ -1248,7 +1359,7 @@ def montar(nome: str) -> Image.Image:
 
     # ── névoa por distância e névoa baixa no fundo do vale
     nev_c = hexa(per["nevoa"]) * per["nevoa_k"]
-    baixa = np.exp(-((GYa - 112) / 10) ** 2) * (0.22 if not nev else 0.4) * (1 - obj_a) * (GYa < BEIRA + 2)
+    baixa = np.exp(-((GYa - 112) / 10) ** 2) * (0.4 if nev else (0.1 if nome == "manha" else 0.22)) * (1 - obj_a) * (GYa < BEIRA + 2)
     mn = np.clip(m_nev + baixa * sol_m, 0, 1)[:, :, None]
     img = img * (1 - mn) + nev_c * mn
 
@@ -1385,7 +1496,7 @@ ANCORAS = {
         {"x": 222, "y": 153, "pose": "fogueira"},     # na neve derretida junto ao fogo
         {"x": 190, "y": 148, "pose": "repouso"},      # no cesto com a almofada xadrez
         {"x": 332, "y": 150, "pose": "sentado"},      # em cima dos presentes do trenó
-        {"x": 298, "y": 170, "pose": "observando"},   # na neve, olhando o vale
+        {"x": 300, "y": 162, "pose": "observando"},   # na neve entre o banco e o trenó, olhando o vale
         {"x": 416, "y": 104, "pose": "repouso"},      # na sacada do chalé
     ],
     # coruja: o ponto dos pés: moirões do guarda-corpo, o braço do poste, a lenha, o sino e a sacada

@@ -99,7 +99,7 @@ export const CENARIOS: readonly Cenario[] = [
     repertorio: ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'],
     trem: { de: [150, 104], ate: [372, 97] },
     // O cesto com a almofada xadrez, os presentes do trenó, a neve olhando o vale e a sacada do chalé.
-    gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 190, y: 148, pose: 'repouso' }, { x: 332, y: 150, pose: 'sentado' }, { x: 298, y: 170, pose: 'observando' }, { x: 416, y: 104, pose: 'repouso' }],
+    gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 190, y: 148, pose: 'repouso' }, { x: 332, y: 150, pose: 'sentado' }, { x: 300, y: 162, pose: 'observando' }, { x: 416, y: 104, pose: 'repouso' }],
     // Os moirões do guarda-corpo, o braço do poste do lampião, a lenha e a sacada.
     coruja: [{ x: 171, y: 114 }, { x: 316, y: 119 }, { x: 387, y: 134 }, { x: 147, y: 115 }, { x: 440, y: 112 }],
   },
