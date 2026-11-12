@@ -1,6 +1,6 @@
 ---
 id: rockwood10-49-fratura-toracolombar
-versao: 3
+versao: 4
 titulo: Fraturas e luxações da coluna toracolombar
 especialidade: coluna
 acesso: gratis
@@ -178,7 +178,7 @@ Desenhos da classificação AO Spine toracolombar revisada: tipo A (A0 a A4, da 
 
 !questoes central=trauma-0237,trauma-1098,trauma-1291,coluna-0459 relacionadas=trauma-0860 treino=coluna-0540,coluna-0541,coluna-0542
 conceito: Na AO Spine a parede posterior separa compressão (A1, A2) de explosão (A3, A4), um ou dois platôs separam os subtipos, a banda de tensão define o tipo B e a translação define o C; a fratura A associada a uma B ou C é anotada à parte.
-como: O TARO 2022 perguntou o critério que separa A1 e A2 de A3 e A4. O TEOT 2022 mostrou uma explosão de L2 que atravessa os dois platôs (A4), e o TEOT 2025 mostrou uma lesão da banda de tensão em T12–L1 com explosão completa de L1 (T12–L1 B2; L1 A4). A prova de R4 de Coluna de Joinville 2010 pediu a afirmação correta sobre a AO original, em que o tipo A vem de compressão axial com ou sem flexão. O TARO 2011 pediu o tipo de explosão mais comum (gabarito: só o platô superior); o capítulo não dá essa frequência, mas lembra que os fragmentos retropulsados costumam sair junto ao platô superior.
+como: O TARO 2022 perguntou o critério que separa A1 e A2 de A3 e A4. O TEOT 2022 mostrou uma explosão de L2 que atravessa os dois platôs (A4), e o TEOT 2025 mostrou uma lesão da banda de tensão em T12–L1 com explosão completa de L1 (T12–L1 B2; L1 A4). A prova de R4 de Coluna de Joinville 2010 pediu a afirmação correta sobre a AO original, em que o tipo A vem de compressão axial com ou sem flexão. O TARO 2011 pediu o tipo de explosão mais comum (gabarito: só o platô superior); o capítulo não dá essa frequência, mas lembra que os fragmentos retropulsados costumam sair junto ao platô superior, e o Skeletal Trauma (5ª ed., p. 916) confirma: na explosão, o mais comum é a fratura só do platô superior, e a cominução que atinge os dois platôs é a lesão mais instável.
 armadilha: "Fratura de um platô" ou "dos dois platôs": é o que separa A1 de A2 (e A3 de A4), não a compressão da explosão.
 armadilha: B1 contra B2 na imagem: B1 é um traço que corta uma única vértebra, todo pelo osso; quando a lesão posterior passa pelo nível intervertebral (ligamentos, disco), é B2.
 armadilha: "Fraturas do tipo cinto de segurança são A3" e "tipo C raramente tem lesão medular": o cinto de segurança é tipo B, e o capítulo descreve déficit neurológico em 75% ou mais das lesões tipo C.

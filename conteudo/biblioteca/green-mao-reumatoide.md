@@ -1,6 +1,6 @@
 ---
 id: green-mao-reumatoide
-versao: 1
+versao: 2
 titulo: Mão reumatoide
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)
 capitulo: Capítulo 55 · Rheumatoid Arthritis and Other Connective Tissue Diseases
 autores: Paul Feldon, Andrew L. Terrono, Edward A. Nalebuff e Lewis H. Millender
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), capítulo 55, p. 1832 a 1897 (princípios, medicações, prioridades, psoríase, lúpus, esclerodermia, tenossinovites, rupturas tendíneas, punho, articulações MF e IFP, pescoço de cisne, botoeira e polegar, com as tabelas 55.2 a 55.10 extraídas do PDF); Campbell's Operative Orthopaedics, 15ª ed. (2026), capítulo 78, Arthritic Hand, p. 3444 a 3452, 3466 a 3468 e 3492 a 3498. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), capítulo 55, p. 1832 a 1897 (princípios, medicações, prioridades, psoríase, lúpus, esclerodermia, tenossinovites, rupturas tendíneas, punho, articulações MF e IFP, pescoço de cisne, botoeira e polegar, com as tabelas 55.2 a 55.10 extraídas do PDF); Campbell's Operative Orthopaedics, 15ª ed. (2026), capítulo 78, Arthritic Hand, folha de abertura (sem número impresso) e p. 3444 a 3452, 3466 a 3468 e 3492 a 3498. As páginas citadas são as impressas.
 subtemas: Mão reumatoide
 resumo: Sinóvia que estira e invade; deformidades bilaterais e simétricas; prioridade da dor, punho e polegar antes dos dedos; tenossinovite dorsal indolor; rupturas extensoras do mínimo para o indicador (VAUGHAN-JACKSON) e FPL pelo escafoide (MANNERFELT); caput ulnae com supinação do carpo, desvio radial do carpo e desvio ulnar com luxação palmar da MF; DARRACH, SAUVÉ-KAPANDJI e artrodese com pinos de STEINMANN; SWANSON e intrínseco cruzado de FLATT; pescoço de cisne de NALEBUFF tipos I a IV; botoeira que nasce na IFP; polegar tipo I botoeira, III cisne, IV goleiro.
 ---
@@ -31,9 +31,9 @@ Por isso quase toda cirurgia reumatoide cabe em **cinco grupos**: sinovectomia, 
 
 ## O padrão: bilateral e simétrico
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 78), diz que a AR atinge cerca de **0,8% da população**, é **2 a 4 vezes mais comum em mulheres**, e que as deformidades da mão são **geralmente bilaterais e simétricas**; a **MF e o punho são acometidos cedo**, e as articulações distais mais tarde (p. 3445). O Green reforça que a maioria dos pacientes tem problemas nas duas mãos (p. 1834) e usa a simetria como marca que separa a AR da psoríase, que é **assimétrica** (p. 1836).
+O Campbell's Operative Orthopaedics, 15ª ed., abre o capítulo 78 (seção Rheumatoid Arthritis, na folha de abertura, sem número impresso) dizendo que a AR atinge cerca de **0,8% da população** e é **2 a 4 vezes mais comum em mulheres**. Mais adiante afirma que as deformidades da mão são **geralmente bilaterais e simétricas**; a **MF e o punho são acometidos cedo**, e as articulações distais mais tarde (p. 3445). O Green reforça que a maioria dos pacientes tem problemas nas duas mãos (p. 1834) e usa a simetria como marca que separa a AR da psoríase, que é **assimétrica** (p. 1836).
 
-A MF é, segundo o Campbell, a articulação mais importante para a função dos dedos, e o **desvio ulnar dos dedos com subluxação ou luxação palmar da MF** tipifica a mão reumatoide (p. 3444).
+A MF é, segundo o Campbell, a articulação mais importante para a função dos dedos, e o **desvio ulnar dos dedos com subluxação ou luxação palmar da MF** tipifica a mão reumatoide (cap. 78, folha de abertura sem número impresso, seção Metacarpophalangeal and Interphalangeal Joint Involvement).
 
 !tabela Padrão de acometimento: AR contra psoríase e lúpus (Green, p. 1835 a 1837; Campbell, p. 3445 a 3447)
 | Característica | Artrite reumatoide | Artrite psoriática | Lúpus |
@@ -56,11 +56,13 @@ armadilha: Marcar assimétrico (é a psoríase) ou inverter a cronologia, dizend
 
 Nenhum dos dois capítulos discute ultrassonografia na sinovite. O raciocínio que o Green sustenta é que a sinovite proliferativa precede a erosão e a destruição, e por isso um método que a enxergue cedo vale mais que um que só mostra erosões avançadas.
 
+O estudo que deu peso à ultrassonografia é o de **SZKUDLAREK et al.** (Arthritis Res Ther 2006;8(2):R52, PMC1526591): nas MF e IFP do 2º ao 5º dedo de 40 pacientes com AR e 20 controles, tomando a **ressonância como referência**, a ultrassonografia teve **sensibilidade de 0,70, especificidade de 0,78 e acurácia de 0,76 para sinais de inflamação**, contra 0,40, 0,85 e 0,72 do exame clínico; para **erosões**, 0,59, 0,98 e 0,96, contra 0,42, 0,99 e 0,95 da radiografia. Ou seja, enxerga mais inflamação e mais erosão que a clínica e a radiografia, sem perder especificidade, e se aproxima da informação da ressonância.
+
 !questoes central=mao-0566
 conceito: A sinovite proliferativa vem antes da erosão; o valor de um exame está em detectá-la cedo, não em ver erosões avançadas.
 como: O TARO 2026 perguntou por que a ultrassonografia se destacou nas artropatias inflamatórias de mãos e pés.
 armadilha: Escolher a detecção de erosões avançadas ou a substituição da clínica e do laboratório.
-alerta: O Green, capítulo 55, e o Campbell, capítulo 78, não tratam de ultrassonografia na sinovite; o gabarito de `mao-0566` (sinovite com sensibilidade comparável à ressonância) foi mantido sem confirmação nos livros.
+alerta: O Green, capítulo 55, e o Campbell, capítulo 78, não tratam de ultrassonografia na sinovite; o gabarito de `mao-0566` (sinovite com sensibilidade comparável à ressonância) se apoia em SZKUDLAREK et al., Arthritis Res Ther 2006;8:R52 (PMC1526591), que compararam ultrassonografia e ressonância nas MF e IFP da AR.
 !fim
 
 # Antes de operar: medicações e prioridades {radar=confirmado}
@@ -494,7 +496,7 @@ armadilha: Dizer que o pescoço de cisne sempre começa na IFP ou na IFD, ou que
 
 ## A classificação de NALEBUFF
 
-NALEBUFF descreveu quatro grupos, depois ampliados para seis (Green, p. 1894). O **tipo I (botoeira) é o mais comum**, o **tipo III (pescoço de cisne) é o segundo**, o **tipo IV** aparece ocasionalmente, e os **tipos II e V são raros**; o **VI** é a destruição da artrite mutilante. O Campbell resume a lógica pelo local onde a sinovite começa: na **MF**, botoeira; na **CMC**, pescoço de cisne; no **colateral ulnar**, polegar do goleiro; na **placa volar**, hiperextensão da MF com CMC estável (p. 3444).
+NALEBUFF descreveu quatro grupos, depois ampliados para seis (Green, p. 1894). O **tipo I (botoeira) é o mais comum**, o **tipo III (pescoço de cisne) é o segundo**, o **tipo IV** aparece ocasionalmente, e os **tipos II e V são raros**; o **VI** é a destruição da artrite mutilante. O Campbell resume a lógica pelo local onde a sinovite começa: na **MF**, botoeira; na **CMC**, pescoço de cisne; no **colateral ulnar**, polegar do goleiro; na **placa volar**, hiperextensão da MF com CMC estável (folha de abertura do cap. 78, sem número impresso, e p. 3444).
 
 !tabela Polegar reumatoide: tipos de NALEBUFF (Green, tabela 55.7, p. 1894)
 | Tipo | CMC | MF | IF |

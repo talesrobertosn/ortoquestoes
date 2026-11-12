@@ -1,6 +1,6 @@
 ---
 id: rockwood10-48-coluna-cervical
-versao: 3
+versao: 4
 titulo: Fraturas e luxações da coluna cervical
 especialidade: coluna
 acesso: gratis
@@ -486,6 +486,8 @@ A classificação de **LEVINE e EDWARDS** é a mais usada:
 !figura 48-40
 Classificação das fraturas do enforcado (espondilolistese traumática de C2) de LEVINE e EDWARDS.
 !fim
+
+O Campbell 15 (cap. 48, Fig. 48.23, p. 1899) dá o mecanismo de cada tipo: o **tipo I** vem de **hiperextensão** (translação de 0 a 2 mm de C2 sobre C3, sem cifose no disco); o **tipo II**, de **hiperextensão com carga axial seguida de flexão** (traço relativamente vertical, translação de pelo menos 3 mm); o **IIa** é lesão em **flexão-distração** (traço mais horizontal, cifose acentuada no disco C2-C3 e translação mínima); e o **tipo III** é lesão em **flexão-compressão**, com luxação das facetas C2-C3.
 
 ## O tratamento por tipo
 

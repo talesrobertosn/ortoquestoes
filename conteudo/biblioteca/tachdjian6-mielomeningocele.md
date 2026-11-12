@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-mielomeningocele
-versao: 1
+versao: 2
 titulo: Mielomeningocele
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36)
 capitulo: Capítulo 32 · Disorders of the Spinal Cord
 autores: Karl E. RATHJEN (seção de mielomeningocele); John A. HERRING (editor)
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 32 (mielomeningocele, p. 1530 a 1561; espinha bífida oculta e regressão caudal, p. 1565); Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (espinha bífida e mielomeningocele, p. 1279 a 1302). As páginas citadas são as impressas; nas páginas do Tachdjian sem número no cabeçalho, a página foi inferida pelo deslocamento constante do capítulo (aprox.).
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 32 (mielomeningocele, p. 1530 a 1561; espinha bífida oculta e regressão caudal, p. 1565); Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (espinha bífida e mielomeningocele, p. 1279 a 1302). As páginas citadas são as impressas; páginas do Tachdjian conferidas em 12/11/2026 pelo deslocamento constante do capítulo (PDF menos 252), sem página aproximada.
 subtemas: Mielomeningocele
 resumo: Defeito de neurulação entre o 26º e o 28º dia, com arco POSTERIOR aberto, mielodisplasia e nervos periféricos normais; folato 0,4 mg/dia para toda mulher fértil e 4 mg/dia no alto risco; AFP sobe porque o tubo fica aberto; irmão afetado aumenta o risco (cerca de 1 em 14); espinha bífida oculta em L5 e S1; fechamento do saco em até 48 horas e derivação em 70% a 90%; CHIARI II com nistagmo, estridor e apneia; medula presa na RM em quase todos, clínica em 20% a 30%; escoliose de progressão rápida pede derivação e medula; torácico nasce em perna de rã (flexão de quadril e joelho); quadríceps decide a marcha; sacral alto = quadríceps e glúteo médio grau 3 ou mais com tríceps sural grau 2 ou menos; látex: ambiente livre de látex em todo procedimento; fraturas supracondilianas do fêmur sem dor, com calor e calo exuberante; pé calcâneo pelo tibial anterior sem oposição; luxação do quadril em geral não se reduz, e a unilateral no lombar baixo não muda a simetria da marcha.
 ---
@@ -33,7 +33,7 @@ Na **meningocele**, as meninges fazem um saco exposto, quase sempre posterior (r
 
 A **mielomeningocele** (ou meningomielocele) é a forma grave: além das meninges expostas, há **mielodisplasia** dos elementos neurais e malformação do sistema nervoso central. O resultado, distal ao defeito, é paralisia intestinal, vesical, motora e sensitiva. Muitos têm outras lesões da medula, como diastematomielia e hidromielia, às vezes longe da lesão principal, e a maioria tem hidrocefalia.
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, Tabela 36.2, p. 1279 aprox.), resume o mesmo espectro e acrescenta números para a forma oculta: o defeito atinge o **processo espinhoso e muitas vezes parte da lâmina**, é **mais comum em L5 e S1**, aparece em cerca de **10% das colunas adultas assintomáticas** e raramente tem repercussão neurológica.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, Tabela 36.2, p. 1279), resume o mesmo espectro e acrescenta números para a forma oculta: o defeito atinge o **processo espinhoso e muitas vezes parte da lâmina**, é **mais comum em L5 e S1**, aparece em cerca de **10% das colunas adultas assintomáticas** e raramente tem repercussão neurológica.
 
 !tabela Tipos de disrafismo espinal (Tachdjian, cap. 32, p. 1530 e 1565; Campbell 15, cap. 36, Tabela 36.2)
 | Forma | O que é | Neurológico | Conduta |
@@ -79,9 +79,9 @@ A origem embrionária da mielomeningocele está entre o **26º e o 28º dia de g
 
 O Tachdjian (p. 1532) lembra que MORGAGNI notou a associação entre **hidrocefalia e espinha bífida**, GARDNER atribuiu o defeito à ruptura do tubo pela hidrocefalia intrauterina e VON RECKLINGHAUSEN, à falha de fechamento. Hoje se aceitam os dois mecanismos: **falha primária de fechamento** e **ruptura secundária** de um tubo já fechado.
 
-!questoes central=pediatria-0137 relacionadas=pediatria-1073
+!questoes central=pediatria-0137 relacionadas=pediatria-1073,coluna-0046
 conceito: A mielomeningocele é defeito de neurulação, originado entre o 26º e o 28º dia, na fase de fechamento do tubo neural; meningocele e diastematomielia vêm depois, na canalização.
-como: Uma prova de Ortopedia pediu a afirmação correta sobre a etiologia embrionária; o ENARE de Cirurgia da Mão 2023 pediu o intervalo de dias em cinco alternativas.
+como: Uma prova de Ortopedia pediu a afirmação correta sobre a etiologia embrionária; o ENARE de Cirurgia da Mão 2023 pediu o intervalo de dias em cinco alternativas; o TARO 2014 perguntou o que resulta da falha no fechamento do neuroporo posterior (caudal), e a resposta é a espinha bífida.
 armadilha: Marcar 20 a 24 dias (o tubo começa a fundir por volta do 21º, mas o defeito é do fechamento final), atribuir a doença à falta de vitaminas D e E ou aos folhetos laterais, ou negar o fator genético.
 !fim
 
@@ -221,7 +221,7 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 32, p. 1540 e 1541), define 
 
 ## Comum na imagem, menos comum na clínica
 
-O ponto que a banca cobra é a discrepância entre imagem e clínica. Um cone baixo, sugerindo ancoragem, aparece na RM em **quase todos os pacientes** (o cone normal termina em L1). Por isso o diagnóstico de medula presa sintomática se apoia em **um ou mais sinais clínicos**, achados típicos na RM e **exclusão de hidromielia ou mau funcionamento da derivação** como explicação alternativa (Tachdjian, p. 1540 e 1541). Potenciais evocados somatossensitivos e urodinâmica ajudam a documentar a piora.
+O ponto que a banca cobra é a discrepância entre imagem e clínica. Um cone baixo, sugerindo ancoragem, aparece na RM em **quase todos os pacientes** (o cone normal termina em L1). Por isso o diagnóstico de medula presa sintomática se apoia em **um ou mais sinais clínicos**, achados típicos na RM e **exclusão de hidromielia ou mau funcionamento da derivação** como explicação alternativa (Tachdjian, p. 1540). Potenciais evocados somatossensitivos e urodinâmica ajudam a documentar a piora.
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, p. 1282), dá o número: a RM mostra sinais de ancoragem na **maioria** das crianças, mas só **20% a 30%** têm manifestação clínica. Os sinais mais consistentes são (1) perda de função motora; (2) espasticidade nos membros inferiores, sobretudo **isquiotibiais mediais e dorsiflexores e eversores do tornozelo**; (3) **escoliose antes dos 6 anos sem anomalia vertebral congênita**; (4) dor lombar e aumento da lordose na criança maior; (5) mudança urológica. Como a pele dérmica fica presa no fechamento inicial, um cisto dérmico costuma acompanhar a ancoragem. Com sinais documentados, a cirurgia é indicada para evitar mais perda, e o diagnóstico deve ser precoce, porque a liberação **raramente devolve toda a função perdida**.
 
@@ -239,13 +239,13 @@ armadilha: Inverter a lógica e dizer que a imagem é rara, ou que 70% têm clí
 
 ## SHARRARD e a lógica do desequilíbrio
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 32, p. 1542 aprox.), credita a SHARRARD a descrição da **função neurossegmentar** dos membros inferiores. Essa avaliação raiz por raiz virou o padrão para descrever a função e a base do prognóstico de marcha e das deformidades que surgirão. O raciocínio é sempre o mesmo: o músculo que funciona puxa, o que não funciona não resiste, e a articulação deforma para o lado do músculo vivo.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 32, p. 1542), credita a SHARRARD a descrição da **função neurossegmentar** dos membros inferiores. Essa avaliação raiz por raiz virou o padrão para descrever a função e a base do prognóstico de marcha e das deformidades que surgirão. O raciocínio é sempre o mesmo: o músculo que funciona puxa, o que não funciona não resiste, e a articulação deforma para o lado do músculo vivo.
 
 Há cuidados. O nível pode ser difícil de fixar, pode mudar com o tempo, pode ser **assimétrico** e não seguir exatamente o esquema. MCDONALD, avaliando 308 pacientes com mais de 5 anos, viu que a força do **quadríceps correlaciona com a do iliopsoas**, que os isquiotibiais mediais podem funcionar sem o tibial anterior, que os glúteos médio e máximo correlacionam entre si e com o tibial anterior, e que a fraqueza mais frequente é a do **gastrocnêmio-sóleo**. O nível visto no ultrassom pré-natal tem correlação positiva com o pós-natal.
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, Tabela 36.3, p. 1284), agrupa os pacientes em quatro níveis.
 
-!tabela Classificação por nível neurológico (Campbell 15, cap. 36, Tabela 36.3, p. 1284; Tachdjian, cap. 32, p. 1536 e 1537 aprox.)
+!tabela Classificação por nível neurológico (Campbell 15, cap. 36, Tabela 36.3, p. 1284; Tachdjian, cap. 32, p. 1536 e 1537)
 | Nível | Músculos que funcionam | Deformidades típicas |
 | --- | --- | --- |
 | Torácico | nenhum controle voluntário; sem flexão ativa do quadril | perna de rã (flexão, abdução e rotação externa do quadril), flexão do joelho, equino; cifose e escoliose |
@@ -258,7 +258,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, Tabela 36.3, p. 1284), a
 
 ## Torácico: flácido, mas não reto
 
-O Tachdjian (p. 1536 aprox.) desfaz uma expectativa. O paciente torácico tem membros inferiores flácidos e, sem músculo nenhum, não deveria ter deformidade por desequilíbrio. Mas ao nascer é frequente a **deformidade em perna de rã**: contraturas em **flexão, abdução e rotação externa dos quadris**, muitas vezes com **flexão dos joelhos** e equino dos tornozelos. É a posição que o bebê assume deitado, com as pernas abertas e sem movimento espontâneo (p. 1542 aprox.). O Campbell (p. 1294) descreve a mesma postura supina típica: quadris em abdução, flexão e rotação externa; joelhos em flexão; pés em equino. A manipulação passiva ajuda, mas as contraturas do quadril muitas vezes não cedem, e o cirurgião decide se libera para permitir a posição de pé. Às vezes surgem flexões secundárias por espasticidade reflexa abaixo da lesão.
+O Tachdjian (p. 1536) desfaz uma expectativa. O paciente torácico tem membros inferiores flácidos e, sem músculo nenhum, não deveria ter deformidade por desequilíbrio. Mas ao nascer é frequente a **deformidade em perna de rã**: contraturas em **flexão, abdução e rotação externa dos quadris**, muitas vezes com **flexão dos joelhos** e equino dos tornozelos. É a posição que o bebê assume deitado, com as pernas abertas e sem movimento espontâneo (p. 1542). O Campbell (p. 1294) descreve a mesma postura supina típica: quadris em abdução, flexão e rotação externa; joelhos em flexão; pés em equino. A manipulação passiva ajuda, mas as contraturas do quadril muitas vezes não cedem, e o cirurgião decide se libera para permitir a posição de pé. Às vezes surgem flexões secundárias por espasticidade reflexa abaixo da lesão.
 
 As deformidades mais frequentes nesse grupo, porém, são da **coluna**: escoliose congênita, escoliose do desenvolvimento e cifose congênita progressiva.
 
@@ -270,11 +270,11 @@ armadilha: Pensar que, sem músculo, os membros ficam estendidos; a postura é d
 
 ## Lombar alto, lombar baixo e sacral
 
-O **lombar alto** tem flexores e algum adutor do quadril, sem controle do joelho e do pé (Tachdjian, p. 1536 aprox.); anda como o torácico na infância (pendular ou RGO), raramente anda adulto e é o grupo com **mais luxação paralítica** (flexores e adutores sem extensores e abdutores).
+O **lombar alto** tem flexores e algum adutor do quadril, sem controle do joelho e do pé (Tachdjian, p. 1536); anda como o torácico na infância (pendular ou RGO), raramente anda adulto e é o grupo com **mais luxação paralítica** (flexores e adutores sem extensores e abdutores).
 
-O **lombar baixo** acrescenta o **quadríceps** (extensão ativa do joelho) e, em L5, o tibial anterior; anda com KAFO ou AFO, numa claudicação combinada de glúteo máximo e médio, e tem o maior risco de subluxação progressiva do quadril (p. 1537 aprox.).
+O **lombar baixo** acrescenta o **quadríceps** (extensão ativa do joelho) e, em L5, o tibial anterior; anda com KAFO ou AFO, numa claudicação combinada de glúteo máximo e médio, e tem o maior risco de subluxação progressiva do quadril (p. 1537).
 
-O **sacral** tem joelho quase normal e quadril, pé e tornozelo mais estáveis, mas a paralisia parcial e a pele insensível trazem **cavovaro, dedos em garra e úlceras neurogênicas**. Em teoria andaria sem órtese; na prática, tríceps sural e intrínsecos fracos fazem com que até os sacrais andem melhor com AFO e muletas (p. 1537 aprox.).
+O **sacral** tem joelho quase normal e quadril, pé e tornozelo mais estáveis, mas a paralisia parcial e a pele insensível trazem **cavovaro, dedos em garra e úlceras neurogênicas**. Em teoria andaria sem órtese; na prática, tríceps sural e intrínsecos fracos fazem com que até os sacrais andem melhor com AFO e muletas (p. 1537).
 
 ## Classificação funcional de SWAROOP e DIAS
 
@@ -313,7 +313,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, p. 1284 e 1285), põe a 
 
 O Campbell (p. 1285) dá o retrato de longo prazo: cerca de **40%** não andam como adultos; só **30%** são funcionalmente independentes e 30% têm emprego; quase todos com lesão **L2 ou acima** usam cadeira, e mais de dois terços dos L3 a L5 usam ao menos parte do tempo. A marcha máxima é atingida entre **4 e 6 anos**; **se a criança não fica de pé sozinha por volta dos 6 anos, a marcha é improvável**.
 
-Mesmo os sacrais perdem com o tempo: BRINKER (Tachdjian, p. 1537 aprox.) viu a marcha piorar em 11 de 35 comunitários aos 29 anos, com 11 amputações.
+Mesmo os sacrais perdem com o tempo: BRINKER (Tachdjian, p. 1537) viu a marcha piorar em 11 de 35 comunitários aos 29 anos, com 11 amputações.
 
 !questoes central=pediatria-0095
 conceito: O quadríceps é o músculo que decide a marcha; o Campbell pede esforço pela marcha quando quadríceps e isquiotibiais mediais funcionam, e o Tachdjian põe o iliopsoas como segundo preditor.
@@ -330,11 +330,11 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 32, p. 1530 e 1535), insiste
 
 ## Membro superior
 
-A função dos membros superiores é alterada em **92%** (Tachdjian, p. 1535); o Campbell (p. 1285) fala em pelo menos 80% com algum comprometimento. As causas são hidrocefalia, compressão do tronco pela CHIARI, hidromielia cervical e lesão cerebral por derivação ou por infecção dela. É mais comum em lesões altas e em quem passou por mais de três cirurgias de derivação. A disfunção aparece como **espasticidade**, ataxia, dispraxia ou combinação; a espasticidade reduz a independência nas atividades diárias, e a preensão fraca é comum. A mão pode melhorar na idade escolar. No recém-nascido, porém, pescoço e membros superiores costumam ser normais (p. 1542 aprox.).
+A função dos membros superiores é alterada em **92%** (Tachdjian, p. 1535); o Campbell (p. 1285) fala em pelo menos 80% com algum comprometimento. As causas são hidrocefalia, compressão do tronco pela CHIARI, hidromielia cervical e lesão cerebral por derivação ou por infecção dela. É mais comum em lesões altas e em quem passou por mais de três cirurgias de derivação. A disfunção aparece como **espasticidade**, ataxia, dispraxia ou combinação; a espasticidade reduz a independência nas atividades diárias, e a preensão fraca é comum. A mão pode melhorar na idade escolar. No recém-nascido, porém, pescoço e membros superiores costumam ser normais (p. 1542).
 
 ## Cognição e escola
 
-Dificuldades cognitivas são frequentes, sobretudo com derivação, e melhoram com a idade (Tachdjian, p. 1536 aprox.). O Campbell (p. 1281) dá o número que a banca procura: cerca de **65% têm inteligência normal**. Depressão e baixa autoestima são comuns na adolescência.
+Dificuldades cognitivas são frequentes, sobretudo com derivação, e melhoram com a idade (Tachdjian, p. 1536). O Campbell (p. 1281) dá o número que a banca procura: cerca de **65% têm inteligência normal**. Depressão e baixa autoestima são comuns na adolescência.
 
 ## Puberdade precoce
 
@@ -402,7 +402,7 @@ armadilha: Escolher a tíbia distal, que é o segundo local citado, ou o fêmur 
 
 # Exame do recém-nascido e acompanhamento {radar=fundamento}
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 32, p. 1542 e 1543 aprox.), manda definir o **nível de cada membro**, procurar sinais de disrafismo em outros níveis (hemangioma, tufo de pelos, covinha) e lembrar que movimento dos dedos não prova controle voluntário. A radiografia de toda a coluna mostra o último arco fechado, anomalias congênitas e alargamento pedicular (diastematomielia); nível clínico muito diferente do primeiro nível aberto sugere outra lesão. O seguimento é semestral ou anual, em clínica multidisciplinar.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 32, p. 1542 e 1543), manda definir o **nível de cada membro**, procurar sinais de disrafismo em outros níveis (hemangioma, tufo de pelos, covinha) e lembrar que movimento dos dedos não prova controle voluntário. A radiografia de toda a coluna mostra o último arco fechado, anomalias congênitas e alargamento pedicular (diastematomielia); nível clínico muito diferente do primeiro nível aberto sugere outra lesão. O seguimento é semestral ou anual, em clínica multidisciplinar.
 
 # Pé e tornozelo {radar=fundamento}
 
@@ -483,9 +483,9 @@ armadilha: Escolher meningite ou contratura em flexão do quadril, que não acel
 
 ## Cifose e hiperlordose
 
-A cifose lombar ocorre em **20% a 46%** pelo Tachdjian (p. 1551 aprox.), mais nos torácicos e lombares altos, com lordose torácica compensatória; o Campbell (p. 1302) cita a cifose congênita, a mais grave, em cerca de **10%**. CARSTENS separou a paralítica (menor que 90 graus ao nascer, 44%), a angular aguda (90 graus ou mais, 38%) e a congênita verdadeira (14%), progredindo 2 a 6 graus por ano. Os paraespinais anteriores funcionam como flexores. A cifose ulcera a pele, tira o equilíbrio sentado e comprime o tórax. A órtese não tem papel; o tratamento definitivo é a **cifectomia** com artrodese e instrumentação até a pelve, uma das cirurgias mais difíceis da ortopedia (sangramento acima de 1000 mL, complicações altas); a medula não deve ser amarrada (hidrocefalia aguda) e os rins podem estar na concavidade. A hiperlordose é rara e atrapalha o autocateterismo nas meninas (p. 1556).
+A cifose lombar ocorre em **20% a 46%** pelo Tachdjian (p. 1551), mais nos torácicos e lombares altos, com lordose torácica compensatória; o Campbell (p. 1302) cita a cifose congênita, a mais grave, em cerca de **10%**. CARSTENS separou a paralítica (menor que 90 graus ao nascer, 44%), a angular aguda (90 graus ou mais, 38%) e a congênita verdadeira (14%), progredindo 2 a 6 graus por ano. Os paraespinais anteriores funcionam como flexores. A cifose ulcera a pele, tira o equilíbrio sentado e comprime o tórax. A órtese não tem papel; o tratamento definitivo é a **cifectomia** com artrodese e instrumentação até a pelve, uma das cirurgias mais difíceis da ortopedia (sangramento acima de 1000 mL, complicações altas); a medula não deve ser amarrada (hidrocefalia aguda) e os rins podem estar na concavidade. A hiperlordose é rara e atrapalha o autocateterismo nas meninas (p. 1556).
 
-!tabela Coluna por nível e tipo (Tachdjian, cap. 32, p. 1551 a 1556 aprox.; Campbell 15, cap. 36, p. 1298 e 1302)
+!tabela Coluna por nível e tipo (Tachdjian, cap. 32, p. 1551 a 1556; Campbell 15, cap. 36, p. 1298 e 1302)
 | Item | Dado |
 | --- | --- |
 | Escoliose | 52% a 70% (Tachdjian); 94% torácicos, 20% sacrais |

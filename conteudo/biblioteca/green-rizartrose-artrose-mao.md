@@ -1,6 +1,6 @@
 ---
 id: green-rizartrose-artrose-mao
-versao: 2
+versao: 3
 titulo: Rizartrose e artrose da mão
 especialidade: mao
 acesso: gratis
@@ -158,7 +158,7 @@ A artrose CMC atinge até **10% das mulheres** na meia-idade e aparece em **75%*
 
 Na inspeção, os casos avançados costumam mostrar uma **contratura em adução** do polegar com **hiperextensão compensatória da MCF**; ao examinar a MCF, ela é frouxa em hiperextensão (Green, p. 359). O mecanismo é intuitivo: o metacarpo se fecha contra o indicador e perde a abertura da primeira comissura; para conseguir abrir a mão e pegar objetos, o paciente hiperestende a MCF, que vai cedendo. O grau dessa instabilidade da MCF importa para a cirurgia: quando se faz trapeziectomia, uma hiperextensão importante precisa ser tratada (ver adiante).
 
-O Campbell (Tabela 78.5, p. 3479 aprox.) coloca a mesma deformidade na descrição clínica do estágio mais avançado: contratura em adução da CMC e hiperextensão da MCF. E nos CAMPBELL'S CONCEPTS (p. 3475 aprox.) adverte: antes de operar a base, olhe a MCF; se a hiperextensão passa de 20 graus, espere que ela piore depois da cirurgia da CMC.
+O Campbell (Tabela 78.5, p. 3479) coloca a mesma deformidade na descrição clínica do estágio mais avançado: contratura em adução da CMC e hiperextensão da MCF. E nos CAMPBELL'S CONCEPTS (p. 3475) adverte: antes de operar a base, olhe a MCF; se a hiperextensão passa de 20 graus, espere que ela piore depois da cirurgia da CMC.
 
 !questoes central=mao-0101 treino=mao-1963
 conceito: Na rizartrose avançada, o primeiro metacarpo fica em contratura de adução e a MCF hiperestende para compensar.
@@ -215,11 +215,11 @@ EATON e colaboradores descreveram um estadiamento radiográfico amplamente aceit
 - **Estágio III:** **estreitamento acentuado** com osteófitos **maiores que 2 mm**.
 - **Estágio IV:** estágio III mais **artrose escafotrapeziotrapezoidal**.
 
-O Green faz uma ressalva importante: embora útil para descrever e explicar, esse sistema **nunca mostrou correlação** com a extensão da doença encontrada na cirurgia nem com o resultado, qualquer que seja o tratamento. O Campbell (p. 3479 aprox.) concorda: as classificações quantificam a radiografia, mas não se correlacionam com os sintomas nem escolhem a cirurgia.
+O Green faz uma ressalva importante: embora útil para descrever e explicar, esse sistema **nunca mostrou correlação** com a extensão da doença encontrada na cirurgia nem com o resultado, qualquer que seja o tratamento. O Campbell (p. 3479) concorda: as classificações quantificam a radiografia, mas não se correlacionam com os sintomas nem escolhem a cirurgia.
 
 O Campbell (Tabela 78.5) traz uma versão mais detalhada, que as provas copiam. Ela acrescenta subluxação e lesões ósseas:
 
-!tabela EATON no Green e no Campbell (Green, cap. 11, p. 359; Campbell 15, cap. 78, Tabela 78.5, p. 3479 aprox.)
+!tabela EATON no Green e no Campbell (Green, cap. 11, p. 359; Campbell 15, cap. 78, Tabela 78.5, p. 3479)
 | Estágio | Green | Campbell (radiografia) | Campbell (clínica) |
 |---|---|---|---|
 | I | Normal ou alargamento por sinovite | Sem destruição; espaço alargado se derrame; subluxação menor que 1/3 | Frouxidão, dor, grind positivo |
@@ -287,7 +287,7 @@ A contraindicação faz sentido: a osteotomia muda a direção da carga, mas nã
 
 A técnica (Green, p. 362, osteotomia de WILSON) dá os números. Via **dorsal** entre **EPL e EPB**, protegendo o **nervo radial sensitivo** e o **ramo profundo da artéria radial**. O corte é **cerca de 1 cm distal** à articulação, parando na cortical volar; um segundo corte **cerca de 2 mm distal** converge com o primeiro e produz **15 graus de ápice volar**. O autor fixa com fio de aço por furos a **5 mm** do foco e um fio de Kirschner oblíquo; gesso por 6 semanas. Note a divergência interna: 30 graus no texto de indicações, 15 graus na técnica; em qualquer versão, a cunha é **de fechamento e em extensão**, nunca em flexão.
 
-O Campbell (Tabela 78.6, p. 3485 aprox.) indica a osteotomia que põe o polegar **mais estendido e abduzido** no estágio artroscópico II.
+O Campbell (Tabela 78.6, p. 3485) indica a osteotomia que põe o polegar **mais estendido e abduzido** no estágio artroscópico II.
 
 A complicação mais comum da osteotomia, segundo o Green (p. 368), é a **pseudartrose**, que felizmente é incomum, assim como a infecção.
 
@@ -302,9 +302,9 @@ alerta: Em `mao-0575`, o Green sustenta a distância de cerca de 10 mm (1 cm) da
 
 Se a doença começa com a falha do ligamento volar, faz sentido reconstruí-lo antes que a cartilagem se perca. Para pacientes em **estágio I ou II**, a reconstrução ligamentar isolada pode ser preferida a técnicas de salvamento. A instabilidade do complexo ligamentar volar, sobretudo do oblíquo anterior profundo, foi apontada como causa potencial da artrose, e KOFF mostrou em laboratório que a reconstrução melhora a estabilidade. O consenso, diz o Green (p. 361), é reservá-la para alterações articulares muito leves e considerá-la **contraindicada nos estágios III e IV**.
 
-O Campbell (p. 3473 aprox.) amplia a indicação para o paciente **hipermóvel pré-artrítico**: reconstruir o ligamento volar pode aliviar bastante a dor e reduzir a chance de progressão; e lembra que a reconstrução trapeziometacarpal também serve para a frouxidão pós-traumática por luxação recorrente.
+O Campbell (p. 3473) amplia a indicação para o paciente **hipermóvel pré-artrítico**: reconstruir o ligamento volar pode aliviar bastante a dor e reduzir a chance de progressão; e lembra que a reconstrução trapeziometacarpal também serve para a frouxidão pós-traumática por luxação recorrente.
 
-Na técnica do Green (p. 362 e 363), pela via volar de **WAGNER**, só **metade do FRC** é usada, a **metade ulnar**, passada por um túnel na base do metacarpo de volar para dorsal, por baixo da inserção do **ALP** e de volta em torno do FRC remanescente; imobilização por 3 semanas, atividade livre em 6. O Campbell (técnica 78.21, p. 3475 aprox.) usa a **metade radial**, mantida presa distalmente, protege o ramo superficial do nervo radial, o ramo superficial da artéria radial e o cutâneo palmar do mediano, e mantém fio de Kirschner por 4 a 6 semanas. A diferença de lado é técnica; o tendão é o mesmo.
+Na técnica do Green (p. 362 e 363), pela via volar de **WAGNER**, só **metade do FRC** é usada, a **metade ulnar**, passada por um túnel na base do metacarpo de volar para dorsal, por baixo da inserção do **ALP** e de volta em torno do FRC remanescente; imobilização por 3 semanas, atividade livre em 6. O Campbell (técnica 78.21, p. 3475) usa a **metade radial**, mantida presa distalmente, protege o ramo superficial do nervo radial, o ramo superficial da artéria radial e o cutâneo palmar do mediano, e mantém fio de Kirschner por 4 a 6 semanas. A diferença de lado é técnica; o tendão é o mesmo.
 
 !tabela Tratamento por estágio de EATON (Green, cap. 11, p. 361, 362 e 364; Campbell 15, cap. 78, p. 3473, 3478 e 3489)
 | Estágio | Opções nos livros | Observação |
@@ -329,7 +329,7 @@ A maioria das reconstruções da CMC artrósica envolve a **artroplastia de ress
 
 Os epônimos se diferenciam por uma pergunta: **qual tendão e por onde passa**. Vale gravar o mapa a seguir.
 
-**BURTON e PELLEGRINI** (1984, a LRTI) se baseia na reconstrução de EATON e LITTLER: resseca o trapézio e a base do metacarpo e usa parte do **FRC** para reconstruir o oblíquo anterior profundo (ou, mais exatamente, diz o Green, o **intermetacarpal**) e para criar uma **interposição** no espaço do trapézio, resistindo à subsidência (Green, p. 361). Na técnica do Campbell (78.24, p. 3481 aprox.), a **metade radial do FRC** (10 a 12 cm, presa distalmente) passa pela base do metacarpo e sai por um furo na cortical radial; o restante vira espaçador. A peça-chave, diz o Campbell: **a tira do FRC orientada da base do primeiro metacarpo até a inserção no segundo impede a migração proximal e a subluxação radial do polegar**.
+**BURTON e PELLEGRINI** (1984, a LRTI) se baseia na reconstrução de EATON e LITTLER: resseca o trapézio e a base do metacarpo e usa parte do **FRC** para reconstruir o oblíquo anterior profundo (ou, mais exatamente, diz o Green, o **intermetacarpal**) e para criar uma **interposição** no espaço do trapézio, resistindo à subsidência (Green, p. 361). Na técnica do Campbell (78.24, p. 3481), a **metade radial do FRC** (10 a 12 cm, presa distalmente) passa pela base do metacarpo e sai por um furo na cortical radial; o restante vira espaçador. A peça-chave, diz o Campbell: **a tira do FRC orientada da base do primeiro metacarpo até a inserção no segundo impede a migração proximal e a subluxação radial do polegar**.
 
 **WEILBY** passa **metade do FRC em torno do ALP**, criando uma **treliça de suspensão** no espaço da trapeziectomia; o FRC é tecido em vai e vem, **em oito, entre o ALP e o FRC remanescente** (Green, p. 361 e 363, Fig. 11.18). O Campbell descreve a variante de KLEINMAN e ECKENRODE: uma tira distal de 8 cm com 50% do FRC passada pelo espaço, em torno do ALP e do FRC intacto, em **duplo oito**.
 
@@ -382,7 +382,7 @@ armadilha: "Remoção completa da base do metacarpo" (é só uma fatia), "seccio
 
 O dado de resultado que mais desafia o senso comum é este: **a trapeziectomia simples rende tanto quanto as técnicas com reconstrução e interposição**. O Green (p. 366 e 367) empilha os estudos:
 
-!tabela Trapeziectomia simples contra reconstrução e interposição (Green, cap. 11, p. 366 a 368; Campbell 15, cap. 78, p. 3479 aprox.)
+!tabela Trapeziectomia simples contra reconstrução e interposição (Green, cap. 11, p. 366 a 368; Campbell 15, cap. 78, p. 3479)
 | Estudo | Comparação | Resultado |
 |---|---|---|
 | DAVIS e PACE | LRTI com ou sem fio e gesso | Sem diferença em 1 ano |
@@ -440,13 +440,13 @@ armadilha: Infecção é citada como incomum; material saliente e deformidade em
 
 ## Por que a MCF importa na rizartrose
 
-Na rizartrose avançada, a MCF hiperestende, e o cirurgião decide se a estabiliza junto com a trapeziectomia: o Green acima de **30 graus** (p. 365); o Campbell alerta a partir de **20 graus** e indica **artrodese** se houver instabilidade global ou artrose da MCF (p. 3475 aprox.).
+Na rizartrose avançada, a MCF hiperestende, e o cirurgião decide se a estabiliza junto com a trapeziectomia: o Green acima de **30 graus** (p. 365); o Campbell alerta a partir de **20 graus** e indica **artrodese** se houver instabilidade global ou artrose da MCF (p. 3475).
 
 Na artrose da própria MCF, a regra do Green (p. 352) é clara: a **artrodese da MCF não é tipicamente recomendada para a artrose do indicador, médio, anelar e mínimo**, mas **é realizada na MCF do polegar** na artrose primária ou pós-traumática. A razão é funcional: nos dedos longos, a MCF responde por grande parte do arco de flexão da preensão; no polegar, uma MCF fundida e estável dá uma pinça forte e indolor. Nos dedos, a alternativa preferida é a artroplastia (silicone como padrão), indicada para alívio da dor (p. 358).
 
 ## A técnica e os números
 
-A posição é de **20 graus de flexão** no Green (p. 352) e de **15 graus com pronação** no Campbell (p. 3487 aprox.). A consolidação é alta com qualquer fixação: BREYER comparou banda e parafuso sem cabeça (**92,8%** contra **85,7%**, sem diferença), mas **25%** do grupo da banda precisou retirar o material, contra nenhum do parafuso (Green, p. 352 e 353); o Campbell (p. 3486) concorda.
+A posição é de **20 graus de flexão** no Green (p. 352) e de **15 graus com pronação** no Campbell (p. 3487). A consolidação é alta com qualquer fixação: BREYER comparou banda e parafuso sem cabeça (**92,8%** contra **85,7%**, sem diferença), mas **25%** do grupo da banda precisou retirar o material, contra nenhum do parafuso (Green, p. 352 e 353); o Campbell (p. 3486) concorda.
 
 !tabela Artrodese da MCF do polegar nos dois livros (Green, cap. 11, p. 352 e 353; Campbell 15, cap. 78, p. 3486 e 3487)
 | Item | Green | Campbell |

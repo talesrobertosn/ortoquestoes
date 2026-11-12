@@ -1,6 +1,6 @@
 ---
 id: rockwood10-44-carpo
-versao: 3
+versao: 4
 titulo: Fraturas e luxações do carpo
 especialidade: mao
 acesso: gratis
@@ -139,7 +139,7 @@ armadilha: Avaliação do desvio: é exatamente o ponto forte da tomografia.
 
 ## Fratura suspeita: o que fazer
 
-O paciente com suspeita de fratura oculta é imobilizado e **reavaliado em 7 a 10 dias**, com nova radiografia. Se o exame continuar suspeito (dor no tubérculo, na tabaqueira ou compressão positiva), pede-se ressonância ou tomografia. Quem precisa da resposta logo, como o atleta de alto nível, faz o exame avançado já na primeira consulta.
+O tratamento preferido dos autores para as fraturas do escafoide está resumido no **Algoritmo 44-1** do capítulo, que começa justamente pela fratura suspeita e segue pela fratura do tubérculo (imobilização por 4 a 6 semanas), a da cintura sem desvio, a desviada e a do polo proximal (cap. 44, Authors' Preferred Treatment for Scaphoid Fractures). O paciente com suspeita de fratura oculta é imobilizado e **reavaliado em 7 a 10 dias**, com nova radiografia. Se o exame continuar suspeito (dor no tubérculo, na tabaqueira ou compressão positiva), pede-se ressonância ou tomografia. Quem precisa da resposta logo, como o atleta de alto nível, faz o exame avançado já na primeira consulta.
 
 # Escafoide: classificação de Herbert e Fisher {radar=confirmado}
 
@@ -295,7 +295,7 @@ Os objetivos são aliviar a dor, **corrigir a deformidade**, consolidar e talvez
 - **Enxerto estrutural** dá estabilidade e serve para corrigir a **deformidade mecânica**; **esponjoso** (ou corticoesponjoso) tem mais poder de regeneração e serve para a pseudartrose **estável**. Numa revisão, o esponjoso consolidou mais rápido (11 contra 16 semanas) e o corticoesponjoso corrigiu melhor o alinhamento.
 - **Matti-Russe:** enxerto **não vascularizado por via volar**: o texto fala num enxerto cortical volar em escora, e a legenda da figura descreve enxerto corticoesponjoso socado num sulco escavado na cortical volar dos dois fragmentos, sozinho ou com fios. Como a cortical volar costuma estar encurtada, **é difícil corrigir o comprimento** sem um enxerto cortical: a técnica clássica serve quando não há encurtamento. O enxerto "alado" de Russe modificado tenta alongar. O Green 7 (cap. 16, p. 610) separa as técnicas: a de **MATTI original usava só osso esponjoso** e é a ideal na **pseudartrose da cintura sem humpback e sem colapso do carpo**; a de MATTI-RUSSE e a modificação de GREEN do RUSSE têm muito mais osso cortical que esponjoso. No algoritmo do Green (Tabela 16.4, p. 609), a pseudartrose estabelecida da cintura sem deformidade vai por via volar com enxerto corticoesponjoso de RUSSE ou de MATTI-RUSSE, cunha intercalada ou RUSSE híbrido.
 - **Fisk-Fernandez:** cunha volar do rádio distal feita sob medida para corrigir o desalinhamento do escafoide e do carpo.
-- **Enxerto vascularizado:** estrutural e vascular; usado na pseudartrose da cintura com suspeita de necrose ou no polo proximal com pouca capacidade de cura. Opções: retalhos pediculados do rádio distal (dorsais ou volares), da ulna distal, do pronador quadrado, ou livres do **côndilo femoral medial** e da crista ilíaca. Os pediculados do rádio deram união de 27% a 100%, pior na necrose; o côndilo femoral medial tem tendência a resultado melhor.
+- **Enxerto vascularizado:** estrutural e vascular; usado na pseudartrose da cintura com suspeita de necrose ou no polo proximal com pouca capacidade de cura. Opções: retalhos pediculados do rádio distal (dorsais ou volares), da ulna distal, do pronador quadrado, ou livres do **côndilo femoral medial** e da crista ilíaca. Os pediculados do rádio deram união de 27% a 100%, pior na necrose; o côndilo femoral medial tem tendência a resultado melhor. O Green 7 dá nome aos dois retalhos do rádio mais cobrados (cap. 16, p. 617 a 619). O de **ZAIDEMBERG** (grafado ZAIDENBERG no cap. 46) é dorsal, pediculado na **artéria suprarretinacular intercompartimental 1,2 (1,2 ICSRA)**, que nasce da artéria radial 5 cm proximal à radiocárpica e corre sobre o retináculo extensor entre o 1º e o 2º compartimentos; tem pedículo curto e, pelo arco de rotação limitado, só alcança o escafoide (cap. 46, p. 1630). O de **MATHOULIN** é volar, pediculado na **artéria carpal volar** (descrito primeiro por KUHLMANN), tirado do rádio distal com uma faixa de fáscia e periósteo e encaixado como cunha palmar no humpback; GRAS e MATHOULIN tiveram união de **96%** nas pseudartroses primárias e **90%** nas secundárias, em 111 pacientes sem necrose (p. 618 e 619).
 - **Vascularizado ou não:** um ensaio randomizado deu 100% de união com crista ilíaca não vascularizada e 85% com rádio vascularizado (sem diferença significativa); metanálises recentes acham taxas parecidas. A necessidade do vascularizado na necrose continua em debate.
 
 A fixação padrão é o **parafuso canulado de compressão**, por via **dorsal** no polo proximal e **volar** quando é preciso corrigir o alinhamento (cunha anterior com redução prévia do semilunar e fio radiolunar temporário). O parafuso consolidou mais que os fios (94% contra 77%) na pseudartrose instável.
@@ -612,12 +612,15 @@ A regra geral do capítulo: fratura **sem desvio** do corpo ou das tuberosidades
 
 É a **segunda fratura mais comum do carpo**. A **avulsão cortical dorsal** responde por **mais de 90%** e é, na prática, uma entorse com arrancamento capsular (do radiopiramidal e do intercarpal dorsal) ou impacção contra o hamato ou a estiloide da ulna. Outros padrões: fratura transversal do corpo (parte de uma perilunar), avulsão volar (lesão lunopiramidal) e impacção: da **estiloide ulnar** contra o dorso do piramidal (extensão, supinação e desvio ulnar, sobretudo com estiloide longa) ou do **hamato** contra o piramidal (dorsiflexão e desvio ulnar forçados com o antebraço pronado).
 
+Aqui os livros divergem sobre o mecanismo da lasca dorsal. Para o Rockwood, ela é sobretudo **avulsão** capsular. O Green 7 (cap. 16, p. 624 e 625) concorda que a fratura cortical dorsal é de longe a mais comum (até **93%** das fraturas do piramidal) e aceita avulsão, cisalhamento e impacção, mas diz que o mecanismo **mais comum** é a queda com o punho em dorsiflexão e desvio ulnar, com a **estiloide da ulna** agindo como um formão contra a cortical dorsal; GARCIA-ELIAS achou a estiloide da ulna mais longa nos pacientes com essa fratura. A avulsão, para o Green, vem da flexão palmar extrema com desvio radial, na inserção dos ligamentos radiopiramidal dorsal e piramidal-escafoide.
+
 A avulsão dorsal some na PA (sobreposta ao semilunar) e aparece no **perfil ou na oblíqua pronada**. Tratamento: **tala por 2 semanas** e alongamento ativo; dor persistente sugere lesão capsular ou lunopiramidal. A fratura do corpo com desarranjo do carpo vai para fixação; a avulsão volar é tratada como lesão lunopiramidal (6 semanas de imobilização).
 
 !questoes central=trauma-0210 treino=mao-1682,mao-2048
 conceito: A fratura do piramidal é quase sempre uma avulsão cortical dorsal, benigna, tratada com tala curta.
 como: O TEOT 2021 pediu o mecanismo mais frequente (avulsão).
-armadilha: Impacção: existe (estiloide da ulna ou hamato contra o piramidal), mas é bem menos comum.
+armadilha: Impacção: pelo Rockwood existe (estiloide da ulna ou hamato contra o piramidal), mas é bem menos comum que a avulsão.
+alerta: O gabarito da `trauma-0210` (avulsão) segue o Rockwood; o Green 7 (cap. 16, p. 625) põe a impacção da estiloide da ulna como o mecanismo mais comum da lasca dorsal.
 !fim
 
 ## Semilunar
@@ -642,7 +645,7 @@ Sem desvio, o gesso tem resultado misto (união de só 50% em algumas séries). 
 
 !questoes central=trauma-0073 treino=mao-1681
 conceito: A fratura do hâmulo do hamato se vê na incidência do túnel do carpo e numa oblíqua; o ramo profundo do nervo ulnar passa junto ao gancho.
-como: O TARO 2021 pediu a segunda incidência, além do túnel do carpo (oblíqua em supinação de 45°). O capítulo cita oblíquas e túnel do carpo sem detalhar o lado da oblíqua.
+como: O TARO 2021 pediu a segunda incidência, além do túnel do carpo (oblíqua em supinação de 45°). O capítulo cita oblíquas e túnel do carpo sem detalhar o lado da oblíqua; o Green 7 detalha: o gancho do hamato aparece com o punho em **45 graus de supinação** ou na incidência do túnel do carpo (cap. 16, p. 631), e o Box 16.4 lista a oblíqua em 45 graus de supinação entre as incidências especiais (p. 633).
 armadilha: PA ou AP: o gancho fica sobreposto; o sinal na PA é indireto (gancho ausente ou esclerótico).
 !fim
 

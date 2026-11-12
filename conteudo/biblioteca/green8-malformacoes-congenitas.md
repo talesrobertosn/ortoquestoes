@@ -1,6 +1,6 @@
 ---
 id: green8-malformacoes-congenitas
-versao: 4
+versao: 5
 titulo: Malformações congênitas da mão e do antebraço
 especialidade: mao
 acesso: gratis
@@ -49,13 +49,13 @@ A ZPA merece um parágrafo a mais, porque é a mais cobrada. A sonic hedgehog se
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 35, Fig. 35.6, p. 1212. O transplante da zona de atividade polarizadora (ZPA) ou de sonic hedgehog para a borda anterior do broto produz a duplicação em espelho do lado ulnar.
 !fim
 
-**A rotação dos membros.** No começo, os brotos apontam para a frente com o polegar e o hálux do lado cranial. Depois, o membro superior roda **90 graus para lateral** (o cotovelo vai para trás e o polegar fica lateral) e o inferior roda **90 graus para medial** (o joelho vai para a frente e o hálux fica medial). É por isso que os extensores do braço são posteriores e os da coxa, anteriores. Os capítulos do Green e do Tachdjian lidos não detalham essa rotação; o dado é da embriologia clássica.
+**A rotação dos membros.** O Lovell and Winter (7ª ed., cap. 1, pp. 11 e 12, Fig. 1-13) descreve o movimento. No período embrionário os quatro membros são parecidos, de eixos paralelos: a borda pré-axial, com o polegar e o hálux, fica para cranial, e a pós-axial, para caudal. No período fetal, o membro superior roda **90 graus para lateral (externamente)** e o inferior roda **90 graus para medial (internamente)**: os cotovelos passam a apontar para caudal e os joelhos para cranial. É por isso que, no antebraço, os flexores ficam mediais e os extensores laterais, e na perna os extensores ficam ventrais e os flexores dorsais. Por volta da 8ª semana a diferenciação dos tecidos está praticamente pronta, e o que resta é crescer.
 
 !questoes central=mao-0007 relacionadas=mao-0020,mao-0493 treino=mao-2582
 conceito: A ZPA comanda o eixo radioulnar pela sonic hedgehog e, duplicada na borda anterior, gera polidactilia em espelho; a AER comanda o comprimento; a janela crítica é de 4 a 8 semanas; o membro superior roda 90 graus para lateral e o inferior, 90 para medial.
 como: O TARO 2020 perguntou o resultado das falhas da zona de atividade polarizadora; o TARO 2018, o período da organogênese; o TARO 2012, a rotação fetal dos membros.
 armadilha: Ligar a ZPA às deficiências transversas, que são da crista apical, ou o centro Wnt ao eixo radioulnar.
-alerta: O Green situa a maioria das anomalias entre a 4ª e a 8ª semana (segundo mês); o gabarito oficial de `mao-0020` (terceiro mês) foi preservado. A rotação dos membros (`mao-0493`) não está nos capítulos lidos.
+alerta: O Green situa a maioria das anomalias entre a 4ª e a 8ª semana (segundo mês), e o Tachdjian (cap. 1, p. 3) define as malformações como interrupção da organogênese normal durante o segundo mês de gestação; o gabarito oficial de `mao-0020` (terceiro mês) foi preservado. A rotação dos membros (`mao-0493`) está no Lovell and Winter (cap. 1, pp. 11 e 12).
 !fim
 
 # As classificações: SWANSON, OMT e FRANTZ e O'RAHILLY {radar=confirmado}
@@ -91,7 +91,7 @@ alerta: O Tachdjian descreve os termos de FRANTZ e O'RAHILLY, mas não a sigla T
 
 **O mecanismo.** Toda mão embrionária começa palmada. A membrana entre os dedos regride por **apoptose**, de distal para proximal, quando as células da borda param de produzir o fator que mantém a crista apical (Tachdjian, cap. 12). Se a apoptose falha, os dedos ficam unidos. Na síndrome de APERT, o defeito no receptor do fator de crescimento de fibroblastos anula a apoptose mediada por BMP (Green, cap. 36).
 
-**Os números.** Cerca de **1 em 2.000** nascidos vivos, **duas vezes mais em meninos**, dez vezes mais em brancos que em negros, **bilateral tantas vezes quanto unilateral**; história familiar em 15 a 40%, com herança autossômica dominante de penetrância variável (Tachdjian). Na forma isolada, a **terceira comissura** (médio e anular) é de longe a mais acometida: 57% no Green, seguida da quarta (27%); a do **polegar e indicador é a mais rara**, talvez porque a primeira comissura se separa mais cedo.
+**Os números.** Cerca de **1 em 2.000** nascidos vivos, **duas vezes mais em meninos**, dez vezes mais em brancos que em negros, **bilateral tantas vezes quanto unilateral**; história familiar em 15 a 40%, com herança autossômica dominante de penetrância variável (Tachdjian). Na forma isolada, a **terceira comissura** (médio e anular) é de longe a mais acometida: 57% na Fig. 12.114 do Tachdjian (cap. 12, p. 369), seguida da quarta (27%) e da segunda (14%); a do **polegar e indicador é a mais rara** (3%), talvez porque a primeira comissura se separa mais cedo.
 
 **As palavras.** **Simples** ou cutânea: só partes moles. **Complexa**: ponte óssea, em geral entre as falanges distais, com **sinoníquia** (unha compartilhada, pista clínica da fusão do tufo). **Complicada** (DOBYNS): polidactilia, coalizões extensas, ossos transversos, típica das síndromes. **Incompleta**: a membrana para antes da ponta. **Completa**: chega à ponta. **Acrossindactilia**: palavra reservada para a banda de constrição.
 
@@ -276,7 +276,7 @@ alerta: Os livros lidos não descrevem a postura do polegar (`mao-0542`); `mao-0
 
 # A deficiência radial (mão torta radial) {radar=confirmado}
 
-**O tamanho do problema.** O Green (cap. 38, p. 1329) diz que a deficiência radial longitudinal é incomum (cerca de 1 em 5.000 nascidos vivos num estudo finlandês), mas é **o tipo mais comum de deficiência longitudinal congênita**; o Tachdjian dá 2 radiais para cada ulnar no seu serviço, e o Green, de 4 a 10. É **frequentemente bilateral e assimétrica**. O raio radial inclui o rádio, o escafoide, o trapézio, o polegar e as partes moles do lado radial.
+**O tamanho do problema.** O Green (cap. 38, p. 1328) diz que a deficiência radial longitudinal é incomum (cerca de 1 em 5.000 nascidos vivos num estudo finlandês), mas é **o tipo mais comum de deficiência longitudinal congênita**; o Tachdjian dá 2 radiais para cada ulnar no seu serviço, e o Green, de 4 a 10. É **frequentemente bilateral e assimétrica**. O raio radial inclui o rádio, o escafoide, o trapézio, o polegar e as partes moles do lado radial.
 
 **O corpo inteiro.** Só **um terço** dos pacientes tem a malformação isolada. O Tachdjian encontrou anomalias sistêmicas em cerca de 40% das deficiências radiais. As associações:
 
@@ -291,7 +291,7 @@ alerta: Os livros lidos não descrevem a postura do polegar (`mao-0542`); `mao-0
 
 O Green recomenda teste de quebra cromossômica para **toda** criança com deficiência do polegar e da borda radial, e chama a atenção para o custo de esquecer a FANCONI.
 
-**A anatomia que vira questão.** Todas as estruturas radiais do antebraço são deficientes em graus variados (Green, p. 1330): extensores radiais do punho e motores extrínsecos do polegar ausentes ou aberrantes; **nervo radial geralmente ausente abaixo do cotovelo**; **artéria radial ausente** (86,5% no Tachdjian), às vezes com persistência da artéria mediana. E o **nervo mediano está sempre presente e muitas vezes é a estrutura mais proeminente do lado radial do punho**, superficial, onde está o **anlage fibroso** que substitui o rádio e puxa a mão. Confundi-los é o jeito clássico de lesar o mediano. Outros músculos do membro podem estar ausentes, anormais ou ser acessórios; na TAR há um músculo braquiocarpal que deforma o cotovelo e o punho.
+**A anatomia que vira questão.** Todas as estruturas radiais do antebraço são deficientes em graus variados (Green, p. 1330): extensores radiais do punho e motores extrínsecos do polegar ausentes ou aberrantes; **nervo radial geralmente ausente abaixo do cotovelo**; **artéria radial ausente** (86,5% no Tachdjian), às vezes com persistência da artéria mediana. E o **nervo mediano está sempre presente e muitas vezes é a estrutura mais proeminente do lado radial do punho**, superficial, onde está o **anlage fibroso** que substitui o rádio e puxa a mão. Confundi-los é o jeito clássico de lesar o mediano. Outros músculos do membro podem estar ausentes, anormais ou ser acessórios; na TAR há um músculo braquiocarpal que deforma o cotovelo e o punho. O Campbell 15ª ed. (cap. 85, p. 3631 e Tabela 85.7, p. 3635) lembra que a musculatura é sempre deficiente, mas lista os músculos **frequentemente normais**: **tríceps**, extensor ulnar do carpo, extensor próprio do mínimo, lumbricais, interósseos (exceto o primeiro dorsal) e hipotenares; na mesma tabela, a cabeça longa do bíceps quase sempre falta, a curta é hipoplásica, o braquial costuma faltar ou ser deficiente e o braquiorradial falta em quase metade dos pacientes. O nervo **musculocutâneo em geral está ausente** (p. 3632).
 
 **A biomecânica.** Sem o rádio distal falta **80% da parte do punho que carrega carga** (Tachdjian). Por isso a mão torta radial não é como o pé torto: a cirurgia realinha, mas não substitui o que falta, e a recidiva é comum. A ulna não tratada cresce cerca de **60%** do esperado, e **80% do crescimento do antebraço vem da fise distal da ulna**: uma cirurgia agressiva que a lese produz um antebraço muito curto.
 
@@ -330,7 +330,7 @@ Usa-se junto com a classificação do polegar. A correspondência com as letras 
 conceito: É a deficiência longitudinal mais comum, muitas vezes bilateral e assimétrica, com ausência total do rádio como forma mais frequente; o mediano é a estrutura em risco no lado radial do punho; cotovelo rígido em extensão contraindica a centralização.
 como: O TARO 2014 e o TEOT 2023 perguntaram a contraindicação da centralização; o TARO 2009, o nervo em risco; o TARO 2018, o tipo mais comum de BAYNE no rádio e na ulna; uma prova de Ortopedia, o tipo mais comum de HEIKEL; o TARO 2015, os tendões da estabilização; o TEOT 2022 e o TARO 2011, o músculo normal.
 armadilha: Procurar o nervo radial no punho, onde ele costuma faltar, ou contraindicar a cirurgia pela ausência do polegar ou do rádio.
-alerta: Os livros lidos não trazem os tendões usados na estabilização (`mao-0063`), o músculo preservado (`mao-0098`, `mao-0517`), a classificação de HEIKEL (`mao-0139`) nem o tipo de BAYNE mais comum na ulna (`mao-0025`); os gabaritos oficiais foram preservados.
+alerta: O músculo preservado (`mao-0098`, `mao-0517`) está no Campbell 15ª ed. (cap. 85, Tabela 85.7, p. 3635: tríceps frequentemente normal), de acordo com o gabarito. Os livros lidos não trazem os tendões usados na estabilização (`mao-0063`), a classificação de HEIKEL (`mao-0139`) nem o tipo de BAYNE mais comum na ulna (`mao-0025`); os gabaritos oficiais foram preservados.
 !fim
 
 # A deficiência ulnar {radar=confirmado}
@@ -397,11 +397,11 @@ armadilha: Indicar a ressecção da sinostose para devolver a rotação, ou oper
 
 # A deformidade de MADELUNG {radar=confirmado}
 
-**O que é.** Um rádio que cresceu torto porque um canto da fise parou. A porção **palmar e ulnar** da fise distal do rádio cresce menos; o rádio se inclina para ulnar e para palmar, o semilunar escorrega para o vão entre rádio e ulna, a epífise fica em forma de gota e a **ulna sobra no dorso** do punho (Green, cap. 38, p. 1344; Tachdjian, cap. 12). Existe a MADELUNG invertida, com o distúrbio dorsal e a ulna luxada para palmar.
+**O que é.** Um rádio que cresceu torto porque um canto da fise parou. A porção **palmar e ulnar** da fise distal do rádio cresce menos; o rádio se inclina para ulnar e para palmar, o semilunar escorrega para o vão entre rádio e ulna, a epífise fica em forma de gota e a **ulna sobra no dorso** do punho (Green, cap. 38, p. 1339; Tachdjian, cap. 12). Existe a MADELUNG invertida, com o distúrbio dorsal e a ulna luxada para palmar.
 
 **A causa.** O Green atribui o distúrbio à soma de uma **lesão óssea na parte ulnar da fise** com um **ligamento palmar anormal que prende o semilunar ao rádio, proximal à fise**: o **ligamento de VICKERS**, descrito por VICKERS e NIELSEN em 1992. O Tachdjian descreve: faixa fibrosa de 5 a 7 mm, sob o **pronador quadrado**, saindo de uma fossa no canto ulnovolar da metáfise e indo ao semilunar e à fibrocartilagem triangular; na radiografia, um pequeno esporão no rádio com uma lucência em chama distal. Ele duvida que o ligamento seja a causa primária, porque a deformidade nunca aparece nos três primeiros anos, quando o crescimento é máximo. Muitas pacientes têm a **discondrosteose de LÉRI-WEILL** (gene **SHOX**), com baixa estatura e mesomelia.
 
-**Quem e quando.** Duas vezes mais bilateral que unilateral, **quatro vezes mais em meninas** (Tachdjian); o Green diz geralmente bilateral. Nunca foi demonstrada ao nascer: é **reconhecida na adolescência**, muitas vezes depois de um trauma que chama a atenção para a ulna saliente. A queixa é dor sobre a ulna, pior com a atividade, e a aparência do punho; a rotação do antebraço fica limitada, embora a frouxidão ligamentar compense parte dela.
+**Quem e quando.** Duas vezes mais bilateral que unilateral, **quatro vezes mais em meninas** (Tachdjian); o Green diz geralmente bilateral. Nunca foi demonstrada ao nascer: é **reconhecida na adolescência**, muitas vezes depois de um trauma que chama a atenção para a ulna saliente. A queixa é dor sobre a ulna, pior com a atividade, e a aparência do punho; a rotação do antebraço fica limitada (Lovell and Winter, cap. 7, p. 206, e cap. 22, p. 938). O Tachdjian (cap. 12) acrescenta que a remodelação óssea e ligamentar da radioulnar distal, feita devagar enquanto a deformidade se forma, muitas vezes preserva a pronação e a supinação da mão apesar da limitação do antebraço.
 
 **A radiografia.** PA e perfil dos dois punhos no mesmo filme, para não perder a deformidade leve do outro lado. Os critérios do Tachdjian: **inclinação ulnar de 33 graus ou mais**, **subsidência do semilunar de 4 mm ou mais** e **deslocamento palmar do carpo de 20 mm ou mais**. A variância ulnar fica muito positiva. Há associação com KIENBÖCK, curiosamente com ulna longa.
 
@@ -461,7 +461,7 @@ alerta: `mao-0647` não tem gabarito oficial publicado; a resposta provável (er
 | embriologia | AER = comprimento; **ZPA = radioulnar** (polidactilia, espelho); Wnt = dorsoventral; janela de **4 a 8 semanas** | Green, cap. 35 |
 | SWANSON | fenda (ectrodactilia) = **falha de formação**; sindactilia e sinostose = falha de diferenciação | Tachdjian, cap. 12 |
 | OMT | banda de constrição e gatilho = **deformações**; macrodactilia = displasia | Tachdjian, cap. 12 |
-| sindactilia | **3ª comissura** (57%); 1ª a mais rara; borda cedo, centrais aos 12 a 18 meses; feixes normais na simples | Green, cap. 36; Tachdjian |
+| sindactilia | **3ª comissura** (57%); 1ª a mais rara; borda cedo, centrais aos 12 a 18 meses; feixes normais na simples | Tachdjian (Fig. 12.114, p. 369); Green, cap. 36 |
 | banda | **PATTERSON 3 = acrossindactilia**, fenestrada; não é falha de formação | Tachdjian; Green |
 | APERT | UPTON I pá, **II colher**, III botão de rosa; **primeira comissura primeiro**; tudo antes dos 2 anos | Green, cap. 36 |
 | polidactilia | negros pós-axial, brancos pré-axial; duplicação do polegar **unilateral e esporádica**, radial menor | Green, cap. 37; Tachdjian |
