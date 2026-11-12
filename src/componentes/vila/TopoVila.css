@@ -52,6 +52,11 @@
 @keyframes vl-poeira { 0% { opacity: 0; transform: translate(0, 0); } 20% { opacity: 0.85; } 80% { opacity: 0.55; } 100% { opacity: 0; transform: translate(14px, 22px); } }
 @keyframes vl-vagalume { 0%, 100% { opacity: 0; transform: translate(0, 0); } 30% { opacity: 1; } 55% { opacity: 0.35; transform: translate(-8px, -10px); } 75% { opacity: 0.9; } 90% { transform: translate(6px, -18px); } }
 .vl-palco--parado * { animation-play-state: paused !important; }
+/* Cena estática da Revisão: a pintura e os bichos não mudam ao passar o mouse. */
+.vl--estatica .vl-palco *, .vl--estatica .vl-palco *::before, .vl--estatica .vl-palco *::after { animation: none !important; transition: none !important; }
+.vl--estatica .vl-palco__poeira { display: none; }
+.vl--estatica .vl-bicho:hover > *, .vl--estatica .vl-bicho:focus-visible > * { filter: none; }
+.vl--estatica .vl-palco--noite .vl-bicho:hover, .vl--estatica .vl-palco--noite .vl-bicho:focus-visible { filter: brightness(0.7) sepia(0.28) saturate(1.05) hue-rotate(-6deg); }
 
 /* Os bichos: point and click. Nada cobre os dois; passar o mouse acende um contorno dourado. */
 .vl-bicho { padding: 0; border: 0; background: none; cursor: pointer; }
