@@ -265,3 +265,8 @@
   .pl-acoes { justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) { .pl-veu, .pl-cartao { animation: none; } }
+
+/* Link de uma questão para uma parte fechada (12/11/2026): o resumo abre no título com este aviso, sem a porta de cara. */
+.lr-capa__pedida { margin: 0.75rem 0 0; padding: 0.7rem 0.9rem; border-radius: 10px; border: 1px solid color-mix(in srgb, var(--lr-ouro) 45%, transparent); background: color-mix(in srgb, var(--lr-ouro) 12%, transparent); font-family: var(--fonte-texto, system-ui); font-size: 0.88rem; line-height: 1.5; color: var(--lr-texto, inherit); }
+.lr-capa__pedida svg { display: inline-block; vertical-align: -2px; margin-right: 0.25rem; color: var(--lr-ouro); }
+.lr-capa__pedida strong { font-weight: 700; }
