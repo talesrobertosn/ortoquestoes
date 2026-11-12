@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { retornoConta, supabase } from '../conta/supabase'
 import { textoErro } from '../conta/erros'
 import { caixaDeEntrada } from '../conta/confirmacaoPendente'
-import { recurso } from '../config'
+import { CorujaPixel } from '../biblioteca/sala/CorujaPixel'
 import '../estilos/componentes/ModalConfirmarEmail.css'
 
 const ESPERA_REENVIO_S = 60
@@ -76,7 +76,7 @@ export function ModalConfirmarEmail({ email, aoFechar, aoCorrigir, aoEntrar }: P
       <div className="cf-email" role="dialog" aria-modal="true" aria-labelledby="cf-email-titulo" ref={caixa}>
         <button type="button" className="cf-email__fechar" onClick={aoFechar} aria-label="Fechar">X</button>
         <div className="cf-email__arte" aria-hidden="true">
-          <img src={recurso('ranking/mensageiro.png')} width={72} height={90} alt="" draggable={false} />
+          <CorujaPixel estado="acenando" />
           <span className="cf-email__carta" />
         </div>
         <p className="cf-email__selo">Missão: confirmar o e-mail</p>

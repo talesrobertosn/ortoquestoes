@@ -1,19 +1,20 @@
-import type { ReactNode } from 'react'
+import type { CSSProperties, ReactNode } from 'react'
+import { CorujaPixel } from '../biblioteca/sala/CorujaPixel'
+import { GatoPixel } from './mascote/GatoPixel'
 import { recurso } from '../config'
 import { href } from '../util/rotas'
 
 /**
- * Cenas da temporada RPG para telas vazias e de erro. Usam só as artes que já
- * existem em public/ranking (tocha, mensageiro, carta).
+ * Cenas da temporada RPG para telas vazias e de erro: a tocha e a carta de public/ranking com os bichos do site
+ * (desde 12/11/2026 o gato e a coruja ficam no lugar do antigo mensageiro).
  */
-export function MensageiroDormindo({ titulo, texto, acao }: { titulo: string; texto: ReactNode; acao?: ReactNode }) {
+export function GatoDormindo({ titulo, texto, acao }: { titulo: string; texto: ReactNode; acao?: ReactNode }) {
   return (
     <section className="cena-pixel" aria-label={titulo}>
       <div className="cena-pixel__palco" aria-hidden="true">
         <img src={recurso('ranking/tocha.png')} width={36} height={72} alt="" />
-        <img src={recurso('ranking/mensageiro.png')} width={96} height={120} alt="" />
+        <GatoPixel estado="dormindo" style={{ width: 128 }} />
         <img src={recurso('ranking/carta.png')} width={54} height={42} alt="" />
-        <span className="cena-pixel__zz"><span>z</span><span>z</span><span>Z</span></span>
       </div>
       <h2>{titulo}</h2>
       <p>{texto}</p>
@@ -40,8 +41,8 @@ export function MapaPerdido() {
         <a className="botao botao--grande" href={href('/treinar')}>Montar uma sessão</a>
       </div>
       <p className="mapa-perdido__dica">
-        <img src={recurso('ranking/mensageiro.png')} width={40} height={50} alt="" />
-        <span>Achou um link quebrado? Avise o mensageiro em <a href={href('/contato')}>Suporte e contato</a>.</span>
+        <CorujaPixel estado="olhando" style={{ '--coruja-escala': 1 } as CSSProperties} />
+        <span>Achou um link quebrado? Avise a coruja em <a href={href('/contato')}>Suporte e contato</a>.</span>
       </p>
     </article>
   )

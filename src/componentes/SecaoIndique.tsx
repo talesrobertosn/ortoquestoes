@@ -5,11 +5,12 @@ import { DIAS_POR_AMIGO, LIMITE_AMIGOS, QUESTOES_PARA_CONFIRMAR, linkIndicacao, 
 import { href } from '../util/rotas'
 import { IconeWhatsapp } from './IconeWhatsapp'
 import { Icone } from './Icone'
+import { GatoPixel } from './mascote/GatoPixel'
 import { BordaDeFogo } from './BordaDeFogo'
 
 /**
- * Indique e ganhe, na página inicial (temporada RPG): o mensageiro leva a
- * carta, o colega chega e o baú abre para os dois. Com conta, os botões já
+ * Indique e ganhe, na página inicial (temporada RPG): a carta vai, o gato leva
+ * o colega até as questões e o baú abre para os dois. Com conta, os botões já
  * mandam o link pessoal; sem conta, levam a criar a conta para pegar o link.
  */
 export function SecaoIndique() {
@@ -40,7 +41,7 @@ export function SecaoIndique() {
       </div>
       <ol className="ig__trilha" aria-label="Como funciona">
         <li><img src={recurso('ranking/carta.png')} width={44} height={44} alt="" draggable={false} /><span>Você manda o link</span></li>
-        <li><img src={recurso('ranking/mensageiro.png')} width={40} height={50} alt="" draggable={false} /><span>O colega responde {QUESTOES_PARA_CONFIRMAR} questões</span></li>
+        <li><GatoPixel estado="andando" style={{ width: 52 }} /><span>O colega responde {QUESTOES_PARA_CONFIRMAR} questões</span></li>
         <li><img src={recurso('pixel/planos.png')} width={48} height={48} alt="" draggable={false} /><span>Baú aberto: {DIAS_POR_AMIGO} dias para cada um</span></li>
       </ol>
     </section>
