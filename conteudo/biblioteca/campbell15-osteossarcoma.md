@@ -1,6 +1,6 @@
 ---
 id: campbell15-osteossarcoma
-versao: 2
+versao: 3
 titulo: Osteossarcoma
 especialidade: tumores
 acesso: gratis
@@ -544,7 +544,7 @@ alerta: Nenhum dos livros enuncia a regra textualmente; o Tachdjian (Fig. 26.7, 
 
 Com quimioterapia múltipla e cirurgia adequada, a sobrevida longa é de **60% a 75%** no alto grau sem metástase e de **90%** no baixo grau (Campbell, p. 975). Os fatores, em ordem de importância:
 
-1. **Presença e localização das metástases**, o fator mais importante ao diagnóstico. Cerca de **15%** têm metástase pulmonar detectável, com **menos de 20%** de sobrevida longa (mais de 50% se uma ou poucas ressecáveis). As **não pulmonares, como as ósseas, são ainda piores: menos de 5%**. As **skip** (no mesmo osso ou do outro lado da articulação) têm o **mesmo mau prognóstico das metástases a distância**; o Dahlin (cap. 11, p. 131) lembra que áreas de skip na medular são **extremamente raras** e que a imagem moderna dificilmente as deixa passar.
+1. **Presença e localização das metástases**, o fator mais importante ao diagnóstico. Cerca de **15%** têm metástase pulmonar detectável, com **menos de 20%** de sobrevida longa (mais de 50% se uma ou poucas ressecáveis). As **não pulmonares, como as ósseas, são ainda piores: menos de 5%**. As **skip** (no mesmo osso ou do outro lado da articulação) têm o **mesmo mau prognóstico das metástases a distância** (Campbell, p. 975), ao passo que no EWING o mesmo livro diz que skip **não são relatadas** (p. 980); o Dahlin (cap. 11, p. 131) lembra que áreas de skip na medular são **extremamente raras** e que a imagem moderna dificilmente as deixa passar.
 2. **Grau:** o baixo grau raramente metastatiza.
 3. **Tamanho:** tumores grandes vão pior.
 4. **Localização:** proximal pior que distal, em parte porque os proximais são maiores.
