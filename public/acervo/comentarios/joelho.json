@@ -3386,7 +3386,7 @@
       "tratamento-das-rupturas-tendineas-51da9e95",
       "patelectomia-parcial-e-total-ce27b267"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "7b4c10330f534d4b3664ea8584ea6be49afddf6b8c7dcb31b68d540648a0aec4"
     }
    ],
@@ -7207,49 +7207,7 @@
    "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Anatomia e biomecânica do mecanismo extensor."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Canto posterolateral",
-      "Cruzado anterior"
-     ],
-     "blocos": [
-      "canto-posterolateral-622a04b8",
-      "canto-posterolateral-0b736828",
-      "canto-posterolateral-474af362",
-      "cruzado-anterior-d3582e20"
-     ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
-     "trechosSha256": "b29599f0361d0ea5c241b07bea1db22c4355e4a9342dd29c933e95bdf3e5a5c9"
-    },
-    {
-     "resumo": "rockwood10-60-patela-mecanismo-extensor",
-     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
-     "secoes": [
-      "Anatomia e biomecânica do mecanismo extensor"
-     ],
-     "blocos": [
-      "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0"
-     ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
-     "trechosSha256": "233c4564d0dc2d2eb9dcd6857c29695e6fecea2e6c49d5252c083ad92a4b8919"
-    }
-   ],
-   "questaoSha256": "826daa4a979f4b883f09331c925e3d2cab67887810926819d1976bef53fdfe19",
-   "comentarioSha256": "b739c25d1dfe3612cfe3f419b8bc414fba671bba23feb11936675c5499fac44e"
-  }
+  "geradoEm": "2026-10-23"
  },
  "joelho-0356": {
   "conceito": "**O compartimento posterior profundo reúne poplíteo, tibial posterior, flexor longo dos dedos e flexor longo do hálux.** Todos recebem o nervo tibial. O feixe com nervo tibial e vasos tibiais posteriores ocupa esse plano, separado da camada superficial pelo septo transversal profundo.\n\nO poplíteo é proximal e tem ventre triangular na face posterior da tíbia, logo abaixo do joelho. Seu tendão se relaciona com o côndilo femoral lateral; distalmente, o músculo se fixa na tíbia posterior proximal. Ele é diferente do sóleo, cuja massa continua por grande extensão da perna até o tendão calcâneo.\n\n| Músculo profundo | Relação na perna | Inserção distal principal |\n|---|---|---|\n| Poplíteo | Triangular e proximal, abaixo do joelho | Tíbia posterior proximal |\n| Tibial posterior | Central, junto à membrana interóssea | Navicular e expansões plantares para ossos do tarso e metatarso |\n| Flexor longo dos dedos | Origem na tíbia, do lado medial | Falanges distais dos quatro dedos laterais |\n| Flexor longo do hálux | Origem na fíbula, do lado lateral | Falange distal do hálux |\n\nO flexor do hálux fica lateral na perna, embora seu tendão termine no dedo medial do pé. O flexor dos dedos nasce medialmente e chega aos quatro dedos laterais. Por isso, a posição do ventre e o dedo de destino não seguem uma correspondência simples. O tibial posterior participa da inversão e da flexão plantar; os flexores longos também atravessam o tornozelo, mas sua identificação depende da continuidade para os dedos.",
@@ -7531,7 +7489,7 @@
       "o-nervo-fibular-comum-05d3e14c",
       "cruzado-posterior-a-pedra-fundamental-ad28ed59"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "017161d99411bcb85803677c0c94594ef19e377c21e37d6e4d1ef68e71773bd3"
     }
    ],

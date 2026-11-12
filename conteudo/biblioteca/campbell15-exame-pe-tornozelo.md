@@ -1,6 +1,6 @@
 ---
 id: campbell15-exame-pe-tornozelo
-versao: 1
+versao: 2
 titulo: Exame físico do pé e tornozelo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., e o Tachdjian's Pediatric Orthopaedics, 6ª ed.
 capitulo: Capítulo 86 · Surgical Techniques of the Foot and Ankle, com o Capítulo 94 · Sports Injuries of the Ankle, o Capítulo 53 · Traumatic Disorders (Rupture of Achilles Tendon), o Capítulo 88 · Disorders of the Tendons and Fascia and Adolescent and Adult Acquired Flatfoot Deformity e o Capítulo 92 · Neurogenic Disorders
 autores: Benjamin J. GREAR (cap. 86 e 88); David R. RICHARDSON (cap. 94); David L. BERNHOLT e Frederick M. AZAR (cap. 53); Carson M. RIDER (cap. 92)
-fonte: Livros conferidos localmente em 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 86 (p. 3699 a 3707), cap. 94 (p. 4135 a 4145 e 4151), cap. 53 (p. 2252 a 2254), cap. 88 (p. 3813 a 3815 e 3840 aprox.), cap. 89 (p. 3910 aprox.) e cap. 92 (p. 4026 a 4043 aprox.); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 20.4, 21.1, 21.2, 21.3, 21.4 e 69, edição digital sem página impressa; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 3 (p. 36 a 39), cap. 4 (p. 53 a 55) e cap. 5 (p. 61 a 66 aprox.). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 86 (p. 3699 a 3707), cap. 94 (p. 4135 a 4145 e 4150), cap. 53 (p. 2252 a 2254), cap. 88 (p. 3813 a 3815 e 3839), cap. 89 (p. 3892) e cap. 92 (p. 4026 a 4033 e 4039 a 4042); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 20.4, 21.1, 21.2, 21.3, 21.4 e 69, edição digital sem página impressa; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 3 (p. 36 a 39), cap. 4 (p. 53 a 55) e cap. 5 (p. 61 a 66). As páginas citadas são as impressas.
 subtemas: Exame físico do pé e tornozelo
 resumo: Gaveta anterior = fibulotalar anterior; inclinação talar 15° (LTFA), 15 a 30° (LTFA e LFC), mais de 30° (os três); squeeze e rotação externa = sindesmose; THOMPSON e MATLES = Aquiles; muitos dedos e elevação unipodal = tibial posterior; SILFVERSKIÖLD separa gastrocnêmio de sóleo; COLEMAN corrigiu = retropé flexível e deformidade guiada pelo primeiro raio (antepé); MCBRIDE sem alinhar = retração lateral; MULDER é clique, não dor plantar; TINEL no retináculo flexor = túnel do tarso; supinação = inversão, adução e flexão plantar.
 ---
@@ -41,9 +41,9 @@ O **ligamento bifurcado** (do processo anterior do calcâneo, em Y, para o cuboi
 
 ## Os cinco nervos do tornozelo
 
-O capítulo 86 do Campbell (p. 3704 a 3707 aprox.) descreve o bloqueio do antepé e do tornozelo, e essa descrição é o melhor mapa de anatomia de superfície do livro: onde o cirurgião injeta é onde o examinador percute. O TINEL de cada nervo é procurado exatamente nesses pontos.
+O capítulo 86 do Campbell (p. 3704 a 3707) descreve o bloqueio do antepé e do tornozelo, e essa descrição é o melhor mapa de anatomia de superfície do livro: onde o cirurgião injeta é onde o examinador percute. O TINEL de cada nervo é procurado exatamente nesses pontos.
 
-!tabela Onde estão os nervos do tornozelo (Campbell 15, cap. 86, p. 3704 a 3707 aprox.)
+!tabela Onde estão os nervos do tornozelo (Campbell 15, cap. 86, p. 3704 a 3707)
 | Nervo | Ponto de referência | Território e observação |
 |---|---|---|
 | Fibular superficial | 8 a 10 cm proximal à ponta do maléolo lateral, anterior à borda subcutânea da fíbula; já perfurou a fáscia e está subcutâneo | Dorso; ramos digitais para o 2º e 3º espaços; o ramo dorsomedial do hálux é o nervo encontrado sobre o joanete |
@@ -53,7 +53,7 @@ O capítulo 86 do Campbell (p. 3704 a 3707 aprox.) descreve o bloqueio do antep�
 | Tibial | 5 cm acima do maléolo medial, entre os tendões (flexor longo dos dedos e tibial posterior) e a borda medial do Aquiles; a artéria tibial posterior é a referência | O mais difícil e o mais importante de bloquear; dá a sensibilidade plantar |
 !fim
 
-No bloqueio popliteal, **o ramo fibular responde com eversão e dorsiflexão** e **o tibial com inversão e flexão plantar** (Campbell, cap. 86, p. 3707.e1), a divisão funcional usada no exame de força. E o garrote no tornozelo **encurta os tendões longos e aumenta a garra dos dedos** (p. 3700 aprox.): a posição do tornozelo muda o que se vê nos dedos.
+No bloqueio popliteal, **o ramo fibular responde com eversão e dorsiflexão** e **o tibial com inversão e flexão plantar** (Campbell, cap. 86, p. 3707.e1), a divisão funcional usada no exame de força. E o garrote no tornozelo **encurta os tendões longos e aumenta a garra dos dedos** (p. 3701): a posição do tornozelo muda o que se vê nos dedos.
 
 # Inspeção e marcha {radar=clinico}
 
@@ -61,7 +61,7 @@ No bloqueio popliteal, **o ramo fibular responde com eversão e dorsiflexão** e
 
 O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 5, p. 61 a 63), dá os números básicos: **o apoio ocupa 60% do ciclo e o balanço 40%**. O tornozelo descreve três "rockers" (balancins) no apoio, e cada um depende de um grupo muscular diferente, o que explica as marchas patológicas.
 
-!tabela O tornozelo na marcha (Tachdjian, cap. 5, p. 63 a 66 aprox.)
+!tabela O tornozelo na marcha (Tachdjian, cap. 5, p. 63 a 66)
 | Momento | O que o tornozelo faz | Quem controla | Quando falha |
 |---|---|---|---|
 | Contato inicial | Neutro; o calcanhar toca o solo | Tibial anterior | Sem disparo do tibial anterior, o pé "bate" no chão |
@@ -118,7 +118,7 @@ armadilha: Montar a supinação com abdução ou com extensão; os três compone
 
 ## Por que a mediotársica trava
 
-A inversão do retropé no apoio terminal **trava a mediotársica** (Campbell, cap. 88, p. 3814); um calcanhar preso em valgo nunca vira alavanca rígida. Na criança, o Tachdjian (cap. 4, p. 55) manda **balançar a subtalar em inversão e eversão** com os pés pendentes: rigidez ou **espasmo dos fibulares** sugere **coalizão tarsal** ou artrite inflamatória. No adulto com coalizão unilateral, o Campbell (cap. 88, p. 3840 aprox.) encontra **diferença definida de mobilidade subtalar entre os dois pés**, com dor no seio do tarso.
+A inversão do retropé no apoio terminal **trava a mediotársica** (Campbell, cap. 88, p. 3814); um calcanhar preso em valgo nunca vira alavanca rígida. Na criança, o Tachdjian (cap. 4, p. 55) manda **balançar a subtalar em inversão e eversão** com os pés pendentes: rigidez ou **espasmo dos fibulares** sugere **coalizão tarsal** ou artrite inflamatória. No adulto com coalizão unilateral, o Campbell (cap. 88, p. 3839) encontra **diferença definida de mobilidade subtalar entre os dois pés**, com dor no seio do tarso.
 
 ## O tornozelo depende do joelho: SILFVERSKIÖLD
 
@@ -140,7 +140,7 @@ O Campbell (cap. 88, p. 3814 a 3815) usa o teste na disfunção do tibial poster
 
 O Campbell (cap. 94, p. 4135 a 4136) descreve os três ligamentos laterais com uma hierarquia que a prova adora. O **fibulotalar anterior** é **o mais fraco e o mais lesado**; vai da borda anterior do maléolo lateral ao colo do tálus, mistura-se com a cápsula anterolateral e **resiste à translação anterior do tálus com o tornozelo em posição relativamente neutra**. O **fibulocalcâneo** é mais grosso e mais forte, sai da ponta do maléolo, passa **profundo aos tendões fibulares** e é **o único ligamento lateral extracapsular**. O **fibulotalar posterior** é **o mais forte** dos três.
 
-A epidemiologia explica a frequência: **85% das lesões do tornozelo são entorses, e 85% delas por inversão lateral**; até 40% dos pacientes ficam com dor ou instabilidade persistente (Campbell, cap. 94, p. 4135 aprox.). A inversão rompe primeiro o fibulotalar anterior e, com mais energia, o fibulocalcâneo; a eversão e a abdução podem romper o deltoide, mas isso é menos comum.
+A epidemiologia explica a frequência: **85% das lesões do tornozelo são entorses, e 85% delas por inversão lateral**; até 40% dos pacientes ficam com dor ou instabilidade persistente (Campbell, cap. 94, p. 4135). A inversão rompe primeiro o fibulotalar anterior e, com mais energia, o fibulocalcâneo; a eversão e a abdução podem romper o deltoide, mas isso é menos comum.
 
 ## A gaveta anterior
 
@@ -160,7 +160,7 @@ armadilha: Atribuir a gaveta ao fibulocalcâneo (que é testado pela inclinaçã
 
 Se os ligamentos laterais estão completamente rotos, **o tálus inclina com o estresse em inversão**; o estresse é **melhor aplicado com o tornozelo em flexão plantar**, embora não haja um ponto final absoluto que separe positivo de negativo (Campbell, cap. 94, p. 4138). No serviço do Campbell, **estressam-se os dois tornozelos**, e mais de **10° de inclinação acima do lado normal** indica lesão ligamentar lateral significativa. A gradação é uma tabela clássica.
 
-!tabela Inclinação talar no estresse em inversão (Campbell 15, cap. 94, p. 4138 e 4151 aprox.)
+!tabela Inclinação talar no estresse em inversão (Campbell 15, cap. 94, p. 4138 e 4150)
 | Inclinação | Interpretação |
 |---|---|
 | Mais de 10° acima do lado normal | Lesão ligamentar lateral significativa (critério do serviço) |
@@ -174,13 +174,13 @@ O Campbell é claro que **as radiografias de estresse não precisam ser rotineir
 
 ## Quando examinar e como melhorar o exame
 
-O Campbell (cap. 94, p. 4137 aprox.) diz que o exame físico é **100% acurado nas lesões de alto grau e só 25% nas de baixo grau** (comparado à RM) e fica mais preciso **5 dias depois da lesão** do que nas primeiras 48 horas; o HEBERT (cap. 69) prefere um segundo exame **por volta do 10º dia**. O Campbell ainda sugere **anestésico na bainha dos fibulares e na goteira lateral** antes das manobras e usa a **atrofia da panturrilha** como sinal objetivo de proteção do membro.
+O Campbell (cap. 94, p. 4137) diz que o exame físico é **100% acurado nas lesões de alto grau e só 25% nas de baixo grau** (comparado à RM) e fica mais preciso **5 dias depois da lesão** do que nas primeiras 48 horas; o HEBERT (cap. 69) prefere um segundo exame **por volta do 10º dia**. O Campbell ainda sugere **anestésico na bainha dos fibulares e na goteira lateral** antes das manobras e usa a **atrofia da panturrilha** como sinal objetivo de proteção do membro.
 
-Uma última regra: os testes de estresse **precisam mostrar diferença clara entre o lado lesado e o normal** antes de serem considerados diagnósticos (Campbell, cap. 94, p. 4138). E quando a radiografia de estresse é negativa apesar de uma lesão clinicamente séria, ou o paciente relata instabilidade funcional crônica, deve-se **suspeitar de entorse subtalar** associada (p. 4139 aprox.). O restante (classificação, tratamento funcional e cirurgia da instabilidade crônica) está no resumo de entorse e instabilidade lateral do tornozelo.
+Uma última regra: os testes de estresse **precisam mostrar diferença clara entre o lado lesado e o normal** antes de serem considerados diagnósticos (Campbell, cap. 94, p. 4138). E quando a radiografia de estresse é negativa apesar de uma lesão clinicamente séria, ou o paciente relata instabilidade funcional crônica, deve-se **suspeitar de entorse subtalar** associada (p. 4139). O restante (classificação, tratamento funcional e cirurgia da instabilidade crônica) está no resumo de entorse e instabilidade lateral do tornozelo.
 
 ## O lado medial
 
-No estresse em eversão, o tálus desvia lateralmente quando o **deltoide está roto junto com a sindesmose ou com fratura do maléolo lateral** (Campbell, cap. 94, p. 4138). **Dor, edema e equimose no maléolo medial são maus preditores de instabilidade**; o estresse radiográfico em rotação externa diagnostica a incompetência do deltoide nas fraturas por supinação-eversão (LAUGE-HANSEN). E a lesão medial deve ser diferenciada da **ruptura isolada do tibial posterior** (p. 4143 aprox.).
+No estresse em eversão, o tálus desvia lateralmente quando o **deltoide está roto junto com a sindesmose ou com fratura do maléolo lateral** (Campbell, cap. 94, p. 4138). **Dor, edema e equimose no maléolo medial são maus preditores de instabilidade**; o estresse radiográfico em rotação externa diagnostica a incompetência do deltoide nas fraturas por supinação-eversão (LAUGE-HANSEN). E a lesão medial deve ser diferenciada da **ruptura isolada do tibial posterior** (p. 4143).
 
 # Sindesmose: squeeze, rotação externa e PILLINGS {radar=confirmado}
 
@@ -265,11 +265,11 @@ armadilha: Responder THOMPSON porque é o teste mais famoso do Aquiles; sem aper
 
 ## O que o tendão faz e como palpá-lo
 
-O tibial posterior insere-se no tubérculo medial do navicular por um feixe principal e continua por um segundo feixe para a planta, onde se abre em leque para os três cuneiformes, o cuboide e as bases do segundo ao quinto metatarsais (Campbell, cap. 88, Fig. 88.3, p. 3814). Pode ser palpado no maléolo medial **colocando o pé em equinovaro e pedindo ao paciente para mantê-lo ali** (p. 3813 aprox.). A figura 88.1 mostra uma pegadinha clínica: quando o examinador coloca o pé em flexão plantar e inversão e pede para segurar, o paciente com tibial posterior insuficiente **usa inconscientemente o tibial anterior** para manter a posição.
+O tibial posterior insere-se no tubérculo medial do navicular por um feixe principal e continua por um segundo feixe para a planta, onde se abre em leque para os três cuneiformes, o cuboide e as bases do segundo ao quinto metatarsais (Campbell, cap. 88, Fig. 88.3, p. 3814). Pode ser palpado no maléolo medial **colocando o pé em equinovaro e pedindo ao paciente para mantê-lo ali** (cap. 88, seção Posterior Tibial Tendon Insufficiency, Physical Examination). A figura 88.1 mostra uma pegadinha clínica: quando o examinador coloca o pé em flexão plantar e inversão e pede para segurar, o paciente com tibial posterior insuficiente **usa inconscientemente o tibial anterior** para manter a posição.
 
 ## A elevação unipodal do calcanhar
 
-O Campbell (cap. 88, p. 3813 aprox.) explica o teste pelo mecanismo: **levar o calcanhar para varo ao subir na ponta, apoiado só no pé afetado, é praticamente impossível sem um tibial posterior funcionante**. Por isso, além de olhar a postura em carga, o examinador pede a **elevação unipodal do calcanhar**. O detalhe que separa o bom examinador: alguns pacientes com deformidade flexível conseguem subir depois de **"jogar" o retropé e o mediopé numa posição em varo travado** e compensar com o gastrossóleo; a observação cuidadosa mostra o pé "pulando" para essa posição enquanto o paciente busca apoio momentâneo no examinador ou na maca. Subir gradualmente, só no pé afetado, invertendo o calcanhar e sem apoio externo, **não é possível** quando o tendão é incompetente. No trajeto do tendão pode haver **edema depressível**.
+O Campbell (cap. 88, p. 3813) explica o teste pelo mecanismo: **levar o calcanhar para varo ao subir na ponta, apoiado só no pé afetado, é praticamente impossível sem um tibial posterior funcionante**. Por isso, além de olhar a postura em carga, o examinador pede a **elevação unipodal do calcanhar**. O detalhe que separa o bom examinador: alguns pacientes com deformidade flexível conseguem subir depois de **"jogar" o retropé e o mediopé numa posição em varo travado** e compensar com o gastrossóleo; a observação cuidadosa mostra o pé "pulando" para essa posição enquanto o paciente busca apoio momentâneo no examinador ou na maca. Subir gradualmente, só no pé afetado, invertendo o calcanhar e sem apoio externo, **não é possível** quando o tendão é incompetente. No trajeto do tendão pode haver **edema depressível**.
 
 ## Muitos dedos: a abdução do antepé vista por trás
 
@@ -338,13 +338,13 @@ O HEBERT descreve ainda o **pé em serpentina** (skewfoot): adução intensa do 
 
 O HEBERT (cap. 21.4) dá a melhor explicação do teste. COLEMAN e CHESNUT o idealizaram partindo do fato de que, no cavo, existe **flexão plantar fixa do primeiro metatarsal**. O pé é um **tripé**: cabeça do primeiro metatarsal, cabeça do quinto e calcâneo. Se o primeiro raio está mais baixo que os outros, ao apoiar o pé o tripé inclina, e o calcâneo é empurrado para **varo**. A pergunta do teste é: o varo do calcanhar é **consequência** do primeiro raio caído (e o retropé é flexível) ou é **fixo** no próprio retropé?
 
-O Campbell (cap. 92, p. 4040 aprox.) mostra o mesmo mecanismo pela doença neurológica mais comum, a CHARCOT-MARIE-TOOTH: **tibial anterior fraco e fibular longo preservado** fazem o primeiro metatarsal descer; **para acomodar a pronação do antepé, o retropé assume varo**; o fibular curto fraco contra um tibial posterior quase normal piora a inversão. E resume a utilidade: **os testes do bloco de COLEMAN diferenciam deformidades flexíveis guiadas pelo antepé de deformidades mais rígidas guiadas pelo retropé**.
+O Campbell (cap. 92, p. 4039 a 4040) mostra o mesmo mecanismo pela doença neurológica mais comum, a CHARCOT-MARIE-TOOTH: **tibial anterior fraco e fibular longo preservado** fazem o primeiro metatarsal descer; **para acomodar a pronação do antepé, o retropé assume varo**; o fibular curto fraco contra um tibial posterior quase normal piora a inversão. E resume a utilidade: **os testes do bloco de COLEMAN diferenciam deformidades flexíveis guiadas pelo antepé de deformidades mais rígidas guiadas pelo retropé**.
 
 ## Como fazer e como ler
 
-O paciente fica de costas para o examinador, que registra o varo do calcanhar. Depois **sobe num bloco de madeira (ou num livro) de 2,5 cm**, com **o hálux e a cabeça do primeiro metatarsal pendentes fora da borda medial** do bloco (HEBERT, cap. 21.4; Campbell, cap. 92, Fig. 92.29, p. 4043 aprox.). O bloco elimina o toque do primeiro raio no chão, isto é, desfaz o efeito do tripé.
+O paciente fica de costas para o examinador, que registra o varo do calcanhar. Depois **sobe num bloco de madeira (ou num livro) de 2,5 cm**, com **o hálux e a cabeça do primeiro metatarsal pendentes fora da borda medial** do bloco (HEBERT, cap. 21.4; Campbell, cap. 92, Fig. 92.29, p. 4042). O bloco elimina o toque do primeiro raio no chão, isto é, desfaz o efeito do tripé.
 
-!tabela Interpretação do bloco de COLEMAN (HEBERT, cap. 21.4; Campbell 15, cap. 92, p. 4040 a 4043 aprox.)
+!tabela Interpretação do bloco de COLEMAN (HEBERT, cap. 21.4; Campbell 15, cap. 92, p. 4039 a 4042)
 | Resultado | Leitura | Onde corrigir |
 |---|---|---|
 | O varo corrige para neutro ou leve valgo | Subtalar flexível; o primeiro raio em flexão plantar (queda do primeiro raio) empurra o calcanhar | Antepé: corrigir a pronação causada pela queda do primeiro raio |
@@ -354,7 +354,7 @@ O paciente fica de costas para o examinador, que registra o varo do calcanhar. D
 
 A frase do HEBERT que responde a questão de prova: **se houver melhora do varismo, a subtalar é flexível e o primeiro raio fletido plantarmente está empurrando o calcanhar em varo**; **se o fator responsável pelo varismo está no antepé, a cirurgia é direcionada à correção da pronação do antepé causada pela queda do primeiro raio**; se o varo persiste ou corrige parcialmente, a correção engloba antepé e retropé. A legenda da figura reforça: a falha na correção espontânea para valgo indica **correção cirúrgica do retropé, além dos procedimentos no antepé**.
 
-Por isso o HEBERT chama o teste de **avaliação da flexibilidade do retropé** e de **o mais importante para o planejamento cirúrgico** do cavo: o primeiro raio está, por definição, em flexão plantar fixa; o que se decide é se o retropé precisa de cirurgia. O Campbell (cap. 92, p. 4042 aprox.) usa o bloco também para a **radiografia AP em carga com o retropé corrigido**, e o HEBERT lembra o exame da coluna (disrafismo) e que **piora rápida do cavo na mielomeningocele pode indicar medula presa**.
+Por isso o HEBERT chama o teste de **avaliação da flexibilidade do retropé** e de **o mais importante para o planejamento cirúrgico** do cavo: o primeiro raio está, por definição, em flexão plantar fixa; o que se decide é se o retropé precisa de cirurgia. O Campbell (cap. 92, p. 4041) usa o bloco também para a **radiografia AP em carga com o retropé corrigido**, e o HEBERT lembra o exame da coluna (disrafismo) e que **piora rápida do cavo na mielomeningocele pode indicar medula presa**.
 
 !questoes central=pe-tornozelo-0244 relacionadas=pe-tornozelo-0355
 conceito: No bloco de COLEMAN, o primeiro raio fica pendente; se o varo do retropé corrige, o retropé é flexível e a deformidade é guiada pela queda do primeiro raio, corrigida no antepé; se não corrige, antepé e retropé.
@@ -379,9 +379,9 @@ O mesmo capítulo descreve o teste da **hipermobilidade da articulação entre o
 
 ## Dedos menores e o KELIKIAN-DUCROQUET
 
-O Campbell (cap. 89, p. 3910 aprox.) define que a deformidade em flexão da interfalangiana proximal dos dedos menores pode ser **fixa (não corrigível passivamente para neutro) ou flexível (passivamente corrigível)**, e que nas deformidades longas a MTF se deforma em sentido oposto (extensão). É essa distinção, flexível ou fixa, que o teste de KELIKIAN-DUCROQUET procura: as questões o descrevem como a avaliação da **flexibilidade da garra dos dedos com carga simulada no antepé**. O raciocínio do teste: empurrar as cabeças dos metatarsais de baixo para cima simula o apoio; se a garra se desfaz, a deformidade é flexível e dependente da posição da MTF; se não se desfaz, está estruturada.
+O Campbell (cap. 89, p. 3892) define que a deformidade em flexão da interfalangiana proximal dos dedos menores pode ser **fixa (não corrigível passivamente para neutro) ou flexível (passivamente corrigível)**, e que nas deformidades longas a MTF se deforma em sentido oposto (extensão). É essa distinção, flexível ou fixa, que o teste de KELIKIAN-DUCROQUET procura: as questões o descrevem como a avaliação da **flexibilidade da garra dos dedos com carga simulada no antepé**. O raciocínio do teste: empurrar as cabeças dos metatarsais de baixo para cima simula o apoio; se a garra se desfaz, a deformidade é flexível e dependente da posição da MTF; se não se desfaz, está estruturada.
 
-!tabela Testes do antepé (HEBERT, cap. 21.3; Campbell 15, cap. 89, p. 3910 aprox.)
+!tabela Testes do antepé (HEBERT, cap. 21.3; Campbell 15, cap. 89, p. 3892)
 | Teste | Como | Positivo ou alterado | Significado |
 |---|---|---|---|
 | MCBRIDE | Apoio bipodálico, força varizante no hálux | O hálux não se alinha com o metatarsal | Retração das estruturas laterais |
@@ -410,7 +410,7 @@ O nervo tibial, antes de chegar ao pé, divide-se em **calcâneo medial, plantar
 
 O Campbell descreve dois testes provocativos. A **tripla compressão**: tornozelo em **flexão plantar**, pé **invertido** (o que aumenta a pressão no compartimento do túnel) e **compressão digital sobre o nervo tibial**; descrita com **86% de sensibilidade e 100% de especificidade**. O **teste de dorsiflexão-eversão**: **eversão e dorsiflexão máximas do tornozelo** com **todas as metatarsofalangianas em dorsiflexão máxima**, mantidas por 5 a 10 segundos, com pressão sobre o tibial atrás do maléolo medial; positivo se houver dor (Fig. 92.4). Os dois testes fazem o contrário um do outro em termos de posição: um comprime o túnel (flexão plantar e inversão mais pressão), o outro estira o nervo (dorsiflexão, eversão e dedos estendidos).
 
-!tabela Exame das neuropatias compressivas do pé (Campbell 15, cap. 92, p. 4026 a 4033 aprox.; HEBERT, cap. 21.1)
+!tabela Exame das neuropatias compressivas do pé (Campbell 15, cap. 92, p. 4026 a 4033; HEBERT, cap. 21.1)
 | Quadro | Achados de exame | Testes |
 |---|---|---|
 | Túnel do tarso proximal | TINEL sobre o retináculo flexor; pele seca no território plantar; atrofia dos abdutores | Tripla compressão (flexão plantar, inversão, compressão); dorsiflexão-eversão |
@@ -420,11 +420,11 @@ O Campbell descreve dois testes provocativos. A **tripla compressão**: tornozel
 | Neuroma interdigital | Dor no espaço, mais no 3º; clique reproduzindo a dor | MULDER; diferenciar com LACHMAN da MTF |
 !fim
 
-O HEBERT (cap. 21.1) dá os **critérios de suspeita da síndrome do túnel do tarso**: **dor neuropática** (choque, queimor, ardor, dormência), **sinal de TINEL** e **ENMG indicativa de compressão nesse nível**; lembra a raiz L5-S1 como diferencial e que o bilateral sugere doença sistêmica. O Campbell (p. 4027 aprox.) é mais cauteloso com a eletrofisiologia (ver Divergências); a RM identifica a causa em **até 88%**.
+O HEBERT (cap. 21.1) dá os **critérios de suspeita da síndrome do túnel do tarso**: **dor neuropática** (choque, queimor, ardor, dormência), **sinal de TINEL** e **ENMG indicativa de compressão nesse nível**; lembra a raiz L5-S1 como diferencial e que o bilateral sugere doença sistêmica. O Campbell (cap. 92, p. 4027) é mais cauteloso com a eletrofisiologia (ver Divergências); a RM identifica a causa em **até 88%**.
 
 ## O neuroma interdigital e o clique de MULDER
 
-O Campbell (cap. 92, p. 4033 aprox.) descreve o neuroma interdigital (de MORTON) como **compressão do nervo interdigital junto à borda distal do ligamento metatarsal transverso**, mais comum no **terceiro espaço**, seguido do segundo; predomina em **mulheres (8:1)** e é em geral unilateral. A dor, em queimação, dor surda ou cãibra, localiza-se em torno da **cabeça do terceiro metatarsal**, piora andando e melhora com repouso, ao **tirar o sapato** ou massagear o antepé. Dormência subjetiva dos dedos do espaço é comum; perda objetiva da sensibilidade é menos.
+O Campbell (cap. 92, p. 4033) descreve o neuroma interdigital (de MORTON) como **compressão do nervo interdigital junto à borda distal do ligamento metatarsal transverso**, mais comum no **terceiro espaço**, seguido do segundo; predomina em **mulheres (8:1)** e é em geral unilateral. A dor, em queimação, dor surda ou cãibra, localiza-se em torno da **cabeça do terceiro metatarsal**, piora andando e melhora com repouso, ao **tirar o sapato** ou massagear o antepé. Dormência subjetiva dos dedos do espaço é comum; perda objetiva da sensibilidade é menos.
 
 O exame tem duas partes. A primeira é localizar a dor: **LACHMAN da metatarsofalangiana**, palpação dorsal e **palpação sob a cabeça versus no espaço**. **Se a dor está mais no espaço** e não sob a base da falange proximal ou na face dorsolateral da segunda MTF, **o neuroma é provável**. A segunda é o **clique de MULDER**: o examinador coloca o **polegar sob o espaço com pressão dorsal** e, com a outra mão, faz uma **compressão suave do antepé de medial para lateral**; repetindo e relaxando, reproduz o **clique palpável e audível doloroso** do neuroma (Fig. 92.15). O Campbell faz a ressalva que vale questão: **o clique muitas vezes está presente sem dor no pé assintomático**, quando as cabeças são comprimidas; por isso **o clique isolado não é diagnóstico**. O que conta é o clique que reproduz a dor do paciente.
 

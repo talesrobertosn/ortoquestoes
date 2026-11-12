@@ -1,6 +1,6 @@
 ---
 id: campbell14-estadiamento-biopsia
-versao: 2
+versao: 3
 titulo: Estadiamento, biópsia e margens
 especialidade: tumores
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021)
 capitulo: Capítulo 24 · Princípios gerais dos tumores
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 24 (Robert K. Heck Jr. e Patrick C. Toy), p. 890 a 916, seções de avaliação diagnóstica, metástase de origem desconhecida, estadiamento, biópsia, radioterapia, quimioterapia, amputação e preservação do membro, margens, curetagem, ressecção e reconstrução, pacientes pediátricos, cintura escapular e úmero proximal; Quadros 24.1 a 24.4 e Tabelas 24.1 a 24.5. Para os temas vizinhos cobrados no subtema: cap. 25 (cisto ósseo aneurismático, p. 973), cap. 26 (condroblastoma, p. 995; quadro dos tumores benignos agressivos, p. 987), cap. 27 (osteossarcoma secundário, p. 1010 e 1011; metástase, p. 1028 e 1029), cap. 28 (SVNP e lipossarcoma mixoide, p. 1053 a 1064) e cap. 42 (classificação de TOMITA, p. 1946 e 1947). As páginas citadas são as impressas.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 24 (Robert K. Heck Jr. e Patrick C. Toy), p. 890 a 916, seções de avaliação diagnóstica, metástase de origem desconhecida, estadiamento, biópsia, radioterapia, quimioterapia, amputação e preservação do membro, margens, curetagem, ressecção e reconstrução, pacientes pediátricos, cintura escapular e úmero proximal; Quadros 24.1 a 24.4 e Tabelas 24.1 a 24.5. Para os temas vizinhos cobrados no subtema: cap. 25 (cisto ósseo aneurismático, p. 973), cap. 26 (condroblastoma, p. 995; quadro dos tumores benignos agressivos, p. 987), cap. 27 (osteossarcoma secundário, p. 1010 e 1011; metástase, p. 1028 e 1029), cap. 28 (SVNP e lipossarcoma mixoide, p. 1053 a 1064) e cap. 42 (classificação de TOMITA, p. 1946 e 1947); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 30 (TC de abdome e pelve no estadiamento dos sarcomas de partes moles, p. 1004). As páginas citadas são as impressas.
 subtemas: Estadiamento, biópsia e margens
 resumo: Avaliação completa antes da biópsia (radiografia em dois planos, RM da lesão, cintilografia, TC de tórax); tumor ósseo dói, partes moles raramente (exceto bainha nervosa); epífise madura = TCG, imatura = condroblastoma; massa profunda à fáscia ou maior que 5 cm = provável sarcoma; acima de 40 anos = mieloma ou metástase; primário desconhecido = pulmão e rim (ROUGRAFF acha 85%); ENNEKING benigno 1 latente (FNO), 2 ativo (COA), 3 agressivo (TCG); maligno I baixo, II alto, III metástase, A intra e B extracompartimental; AJCC partes moles (grau, 5 cm, profundidade) e ósseo (8 cm, III skip, IV-A pulmão, IV-B fora); MANKIN; biópsia longitudinal, um compartimento, elevar sem comprimir, furo redondo com pouco metilmetacrilato, dreno em linha; agulha x aberta; ressecção primária em lesão pequena, osteoma osteoide, osteocondroma e osso dispensável; radioterapia e quimioterapia neoadjuvante; margens intralesional, marginal (pseudocápsula), ampla e radical; curetagem com janela grande e broca; TIKHOFF-LINBERG; biópsia do úmero pelo terço anterior do deltoide.
 ---
@@ -336,14 +336,14 @@ como: Uma prova de Ortopedia perguntou o nome da ressecção da escápula com o 
 
 **A sinovite vilonodular pigmentada (SVNP).** Ocorre nas formas localizada (a sinovite nodular focal, uma lesão pediculada solitária) e difusa, que envolve toda a sinóvia e afeta sobretudo o joelho. As duas são **histologicamente idênticas ao tumor de células gigantes da bainha tendínea**: **células histiocitárias (células espumosas), tecido fibroso, células gigantes e depósito de hemossiderina**; a fotomicrografia do Campbell mostra células poliédricas brandas cercadas de colágeno, com células gigantes e hemossiderina. Na RM, a massa intra-articular é **hipointensa em T1 e em T2**, pela **hemossiderina** (cap. 2, p. 165); a punção dá líquido sanguinolento (cap. 28, p. 1053, 1056 e 1059 a 1060). A RM pode dar o diagnóstico específico da SVNP (cap. 24, p. 892).
 
-**O lipossarcoma mixoide.** **Tende a ocorrer no retroperitônio**, e por isso os pacientes devem ser **estadiados e acompanhados com TC de tórax, abdome e pelve**; os de alto grau têm sobrevida de 60% em 5 anos (cap. 28, p. 1064). Nos outros sarcomas de partes moles, o estadiamento pulmonar é o habitual.
+**O lipossarcoma mixoide.** **Tende a ocorrer no retroperitônio**, e por isso os pacientes devem ser **estadiados e acompanhados com TC de tórax, abdome e pelve**; os de alto grau têm sobrevida de 60% em 5 anos (cap. 28, p. 1064). O Campbell 15 amplia a indicação: **a TC de abdome e pelve serve para detectar as metástases retroperitoneais do lipossarcoma mixoide e a disseminação linfática de tumores como o sarcoma sinovial, o sarcoma epitelioide e o rabdomiossarcoma** (cap. 30, p. 1004). Nos outros sarcomas de partes moles, o estadiamento pulmonar com TC de tórax é o habitual.
 
-**O sarcoma sinovial.** É o terceiro sarcoma de partes moles mais comum nas extremidades; a radiografia mostra **calcificação amorfa**; a histologia é **bifásica**; a translocação **t(X;18)** aparece em 90%. É confundido com a SVNP localizada quando é intra-articular, o que é raro (menos de 10%) (cap. 28, p. 1064). Ele está entre os sarcomas que dão metástase linfonodal, com o rabdomiossarcoma e o sarcoma epitelioide (cap. 24, p. 890).
+**O sarcoma sinovial.** É o terceiro sarcoma de partes moles mais comum nas extremidades; a radiografia mostra **calcificação amorfa**; a histologia é **bifásica**; a translocação **t(X;18)** aparece em 90%. É confundido com a SVNP localizada quando é intra-articular, o que é raro (menos de 10%) (cap. 28, p. 1064). Ele está entre os sarcomas que dão metástase linfonodal, com o rabdomiossarcoma e o sarcoma epitelioide (cap. 24, p. 890), e por isso o Campbell 15 inclui a TC de abdome e pelve no seu estadiamento, para a disseminação linfática (cap. 30, p. 1004).
 
 **A dor nas partes moles.** A regra de que os tumores de partes moles raramente doem tem a exceção dos **tumores da bainha nervosa** (cap. 24, p. 890).
 
 !questoes central=tumores-0037 relacionadas=tumores-0138
-conceito: SVNP = histiócitos, fibrose, células gigantes e hemossiderina (escura em T1 e T2); lipossarcoma mixoide vai ao retroperitônio e pede TC de tórax, abdome e pelve; sarcoma sinovial, rabdomiossarcoma e epitelioide dão linfonodo.
+conceito: SVNP = histiócitos, fibrose, células gigantes e hemossiderina (escura em T1 e T2); lipossarcoma mixoide vai ao retroperitônio e pede TC de tórax, abdome e pelve; sarcoma sinovial, rabdomiossarcoma e epitelioide dão linfonodo, e a TC de abdome e pelve entra também no estadiamento deles (Campbell 15, cap. 30, p. 1004).
 como: O TARO 2021 perguntou a histologia da SVNP; o TARO 2023, o sarcoma que exige TC de abdome.
 !fim
 
@@ -380,4 +380,5 @@ como: O TARO 2021 perguntou a histologia da SVNP; o TARO 2023, o sarcoma que exi
 | TOMITA | tipo 4 = extensão epidural |
 | SVNP | histiócitos, células gigantes e hemossiderina |
 | Lipossarcoma mixoide | retroperitônio; TC de abdome |
+| Sinovial, epitelioide, rabdomiossarcoma | linfonodo; TC de abdome e pelve (Campbell 15) |
 !fim

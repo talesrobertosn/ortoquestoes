@@ -1,6 +1,6 @@
 ---
 id: campbell15-instabilidade-femoropatelar
-versao: 1
+versao: 2
 titulo: Instabilidade femoropatelar
 especialidade: joelho
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 38 · Fractures and Dislocations in Children (seção Patellar Dislocations), com o Capítulo 52 · Recurrent Dislocations (seção Patella) e o Capítulo 50 · Knee Injuries (seção Chondromalacia of the Patella)
 autores: David D. Spence e Benjamin W. Sheffer (cap. 38); Joseph D. Lamplot e Tyler J. Brolin (cap. 52)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 52 (seção Patella, p. 2194 a 2204, com as Tabelas 52.2, 52.3 e 52.4 extraídas do PDF), cap. 38 (Patellar Dislocations, p. 1451 e 1452), cap. 50 (p. 1984 e Chondromalacia of the Patella, p. 2128 a 2131) e cap. 8 (p. 413 e 421); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Patellofemoral Instability, p. 2034 a 2038) e cap. 18 (aprox. p. 636); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 60 (anatomia do mecanismo extensor e Acute Patellar Dislocations, aprox. p. 2649, 2665 e 2666); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 16 (Distúrbios da articulação femoropatelar) e cap. 15 (Instabilidade femoropatelar e Dor femoropatelar), sem página impressa no arquivo, citadas as páginas do PDF; Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (aprox. p. 295, 296 e 308). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 52 (seção Patella, p. 2194 a 2204, com as Tabelas 52.2, 52.3 e 52.4 extraídas do PDF), cap. 38 (Patellar Dislocations, p. 1451 e 1452), cap. 50 (p. 1984 e Chondromalacia of the Patella, p. 2128 a 2131) e cap. 8 (p. 413 e 421); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Patellofemoral Instability, p. 2034 a 2038) e cap. 18 (Congenital Dislocation of the Patella, p. 636); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 60 (seções Soft Tissue Anatomy, Biomechanics of the Extensor Mechanism e Acute Patellar Dislocations; o arquivo não tem página impressa) e cap. 1 (Physiologic Loads During Normal Activities); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 16 (Distúrbios da articulação femoropatelar) e cap. 15 (Instabilidade femoropatelar e Dor femoropatelar), sem página impressa no arquivo, citados por capítulo e seção; Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Articulação patelofemoral e exame físico da articulação patelofemoral, citados por seção); KHORMAEE e colaboradores, Sports Health 2015;7(2):115-123 (PMID 25984256, PMC4332641), para o sinal de BASSETT; HAMPSON e HILL, J Bone Joint Surg Br 1975;57-B(2):209-213 (PMID 1141287), para a operação de HAUSER. As páginas citadas são as impressas.
 subtemas: Instabilidade femoropatelar
 resumo: MPFL e VMO seguram a patela de 0 a 20 graus e a tróclea assume a partir de 30; o MPFL é o restritor estático primário (50% a 60%) e sua incompetência é a lesão da recidiva; ângulo Q aumentado por valgo, anteversão femoral e tuberosidade lateral gera vetor lateral que pesa na extensão; DEJOUR A raso, B esporão com tróclea plana, C duplo contorno, D esporão com penhasco, todos com sinal do cruzamento; INSALL-SALVATI alta acima de 1,2, CATON-DESCHAMPS acima de 1,2 a 1,3; TT-TG acima de 20 mm com tróclea normal ou acima de 15 mm com displasia indica osteotomia da tuberosidade; reconstrução isolada do MPFL com alinhamento normal, DEJOUR A ou B e WIBERG C; túnel femoral no ponto de SCHÖTTLE; ELMSLIE-TRILLAT medializa, FULKERSON anteromedializa e descarrega lesão distal e lateral; liberação lateral nunca isolada para instabilidade; Down em até 8%.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo reúne o que o Campbell's Operative Orthopaedics, 15ª ed., ensina sobre a patela que sai do lugar: a seção Patella do cap. 52 (Recurrent Dislocations), que concentra quase toda a matéria de prova, a seção de luxação patelar da criança no cap. 38, a condromalacia no cap. 50 e a biomecânica patelofemoral no cap. 8. Onde o Campbell é econômico (tipos de DEJOUR, porcentagem do MPFL, síndrome de DOWN, ponto de SCHÖTTLE em milímetros), entram o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Rockwood and Green's Fractures in Adults, 10ª ed., o SIZÍNIO HEBERT, 5ª ed., e o Netter. As páginas citadas são as impressas; no SIZÍNIO, que não traz página impressa no arquivo, cito a página do PDF.
+Este resumo reúne o que o Campbell's Operative Orthopaedics, 15ª ed., ensina sobre a patela que sai do lugar: a seção Patella do cap. 52 (Recurrent Dislocations), que concentra quase toda a matéria de prova, a seção de luxação patelar da criança no cap. 38, a condromalacia no cap. 50 e a biomecânica patelofemoral no cap. 8. Onde o Campbell é econômico (tipos de DEJOUR, porcentagem do MPFL, síndrome de DOWN, ponto de SCHÖTTLE em milímetros), entram o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Rockwood and Green's Fractures in Adults, 10ª ed., o SIZÍNIO HEBERT, 5ª ed., e o Netter. As páginas citadas são as impressas; o SIZÍNIO e o Rockwood, que não trazem página impressa no arquivo, e o Netter são citados por capítulo e seção.
 
 Uma ideia organiza tudo: **a patela é segura por partes moles no começo da flexão e por osso depois**. Entre 0 e 20 graus, ela ainda não entrou na tróclea e depende do **ligamento patelofemoral medial (MPFL)** e do **vasto medial oblíquo (VMO)**; a partir de 30 graus, o **contorno ósseo da tróclea** a centraliza. Todo fator de risco é uma falha de uma dessas duas peças (MPFL roto ou frouxo; tróclea rasa, patela alta que entra tarde no sulco) ou um **vetor lateral** exagerado (ângulo Q, TT-TG). E toda cirurgia corrige a peça que falhou: reconstrói o MPFL, medializa a tuberosidade, abaixa a patela ou aprofunda a tróclea.
 
@@ -27,15 +27,15 @@ A banca cobra três coisas: **números** (0 a 20 graus, 50% a 60%, 20 mm e 15 mm
 
 ## Patela e tróclea: o encaixe ósseo
 
-A patela é o maior sesamoide do corpo, triangular, com ápice inferior e a **cartilagem mais espessa do organismo**, até 5 mm em algumas áreas (SIZÍNIO HEBERT, 5ª ed., cap. 16, PDF 1163; o Netter, aprox. p. 295, dá o mesmo número). A face articular tem uma **crista longitudinal** que separa a **faceta lateral, maior**, da **medial, menor**, e a medial tem ainda a **faceta ímpar** (ODD), que só toca o fêmur em flexão profunda. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1984), lembra que em extensão a patela **fica acima da margem superior da tróclea**: em extensão completa ela ainda não está encaixada, e por isso depende de partes moles. Com a flexão o contato migra de distal para proximal e a patela percorre 7 a 8 cm sobre os côndilos.
+A patela é o maior sesamoide do corpo, triangular, com ápice inferior e a **cartilagem mais espessa do organismo**, até 5 mm em algumas áreas (SIZÍNIO HEBERT, 5ª ed., cap. 16, seção Anatomia, Patela; o Netter, cap. 9, Articulação patelofemoral, dá o mesmo número). A face articular tem uma **crista longitudinal** que separa a **faceta lateral, maior**, da **medial, menor**, e a medial tem ainda a **faceta ímpar** (ODD), que só toca o fêmur em flexão profunda. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1984), lembra que em extensão a patela **fica acima da margem superior da tróclea**: em extensão completa ela ainda não está encaixada, e por isso depende de partes moles. Com a flexão o contato migra de distal para proximal e a patela percorre 7 a 8 cm sobre os côndilos.
 
-A **tróclea** é a superfície anterior dos dois côndilos. A faceta lateral é mais longa e a medial mais alta, e a **porção lateral é o restritor ósseo primário** à lateralização (SIZÍNIO, cap. 16, PDF 1163). Por isso a displasia troclear que achata ou abaula o côndilo lateral é tão perigosa: o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40, p. 2034), cita SENAVONGSE e AMIS, que mediram **queda de 70% na estabilidade lateral a 30 graus** com o côndilo lateral achatado em cadáver.
+A **tróclea** é a superfície anterior dos dois côndilos. A faceta lateral é mais longa e a medial mais alta, e a **porção lateral é o restritor ósseo primário** à lateralização (SIZÍNIO, cap. 16, seção Anatomia, Tróclea). Por isso a displasia troclear que achata ou abaula o côndilo lateral é tão perigosa: o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40, p. 2034), cita SENAVONGSE e AMIS, que mediram **queda de 70% na estabilidade lateral a 30 graus** com o côndilo lateral achatado em cadáver.
 
 ## Estáticos e dinâmicos
 
-O SIZÍNIO (cap. 16, PDF 1163 e 1164) dá a divisão que a banca do ENARE copiou. **Estáticos** são ligamentos e retináculos; **dinâmicos** são músculos, que só estabilizam quando contraem.
+O SIZÍNIO (cap. 16, seção Anatomia, Estabilizadores estáticos e dinâmicos) dá a divisão que a banca do ENARE copiou. **Estáticos** são ligamentos e retináculos; **dinâmicos** são músculos, que só estabilizam quando contraem.
 
-!tabela Estabilizadores da articulação femoropatelar (SIZÍNIO 5ª ed., cap. 16, PDF 1163 e 1164; Netter, aprox. p. 296)
+!tabela Estabilizadores da articulação femoropatelar (SIZÍNIO 5ª ed., cap. 16, Estabilizadores estáticos e dinâmicos; Netter, cap. 9, Articulação patelofemoral)
 | Grupo | Estrutura | Observação |
 | --- | --- | --- |
 | estático | ligamento patelar | continuação do tendão, da patela à tuberosidade |
@@ -48,27 +48,27 @@ O SIZÍNIO (cap. 16, PDF 1163 e 1164) dá a divisão que a banca do ENARE copiou
 | dinâmico | vasto intermédio | parte do quadríceps |
 !fim
 
-O Netter (aprox. p. 296) amplia a lista de dinâmicos para **quadríceps, adutor magno, trato iliotibial, vasto medial e vasto lateral**, e chama os **ligamentos patelofemorais**, sobretudo o medial, de estabilizadores primários. A divergência importa numa questão de múltipla escolha: no SIZÍNIO, a banda iliotibial aparece como origem de uma estrutura **estática** (o retináculo oblíquo superficial), e o ligamento patelar, o retináculo e o meniscopatelar são estáticos; o **reto femoral** é o único músculo puro da lista, portanto o único dinâmico indiscutível.
+O Netter (cap. 9, Articulação patelofemoral) amplia a lista de dinâmicos para **quadríceps, adutor magno, trato iliotibial, vasto medial e vasto lateral**, e chama os **ligamentos patelofemorais**, sobretudo o medial, de estabilizadores primários. A divergência importa numa questão de múltipla escolha: no SIZÍNIO, a banda iliotibial aparece como origem de uma estrutura **estática** (o retináculo oblíquo superficial), e o ligamento patelar, o retináculo e o meniscopatelar são estáticos; o **reto femoral** é o único músculo puro da lista, portanto o único dinâmico indiscutível.
 
 !questoes central=joelho-0382
 conceito: Estabilizadores dinâmicos são os músculos (reto femoral, vastos medial, lateral e intermédio, VMO); ligamento patelar, retináculo oblíquo superficial e meniscopatelar medial são estáticos.
 como: O ENARE de Cirurgia da Mão 2023 pediu um estabilizador dinâmico da femoropatelar entre ligamento patelar, retináculo oblíquo superficial, meniscopatelar medial, reto femoral e banda iliotibial.
 armadilha: Marcar a banda iliotibial, que no SIZÍNIO entra como origem do retináculo oblíquo superficial (estático), ou um ligamento só porque é "ativo" no exame.
-alerta: O Netter (aprox. p. 296) lista o trato iliotibial entre os estabilizadores dinâmicos; o gabarito (reto femoral) segue a classificação do SIZÍNIO (cap. 16, PDF 1164), em que o reto femoral é o dinâmico e o trato não aparece como músculo.
+alerta: O Netter (cap. 9, Articulação patelofemoral) lista o trato iliotibial entre os estabilizadores dinâmicos; o gabarito (reto femoral) segue a classificação do SIZÍNIO (cap. 16, Estabilizadores estáticos e dinâmicos), em que o reto femoral é o dinâmico e o trato não aparece como músculo.
 !fim
 
 ## O ligamento patelofemoral medial
 
-O MPFL é o protagonista da prova. O Tachdjian (cap. 40, p. 2034) o descreve como um **espessamento extracapsular** de largura variável **dentro do retináculo medial**, do **tubérculo do adutor, logo anterior à origem do ligamento colateral medial**, até a **borda superomedial da patela, na junção dos terços superior e médio**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 60, aprox. p. 2649), o descreve como continuação extracapsular da face profunda do retináculo do VMO, em leque, com **58,8 mm** de comprimento. O SIZÍNIO (cap. 16, PDF 1187) situa a inserção, de 11 a 20 mm, **entre o epicôndilo medial e a inserção do adutor magno**. Na anatomia em camadas de WARREN e MARSHALL, ele está na **camada 2** (o resumo de anatomia do joelho do Netter já traz o mapa); a técnica do Campbell (cap. 52, p. 2201) disseca justamente o plano **entre as camadas 2 e 3**.
+O MPFL é o protagonista da prova. O Tachdjian (cap. 40, p. 2034) o descreve como um **espessamento extracapsular** de largura variável **dentro do retináculo medial**, do **tubérculo do adutor, logo anterior à origem do ligamento colateral medial**, até a **borda superomedial da patela, na junção dos terços superior e médio**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 60, seção Soft Tissue Anatomy), o descreve como continuação extracapsular da face profunda do retináculo do VMO, em leque, com **58,8 mm** de comprimento. O SIZÍNIO (cap. 16, seção Reconstrução do ligamento femoropatelar medial) situa a inserção, de 11 a 20 mm, **entre o epicôndilo medial e a inserção do adutor magno**. Na anatomia em camadas de WARREN e MARSHALL, ele está na **camada 2** (o resumo de anatomia do joelho do Netter já traz o mapa); a técnica do Campbell (cap. 52, p. 2201) disseca justamente o plano **entre as camadas 2 e 3**.
 
 Quanto ele vale? Os livros dão números diferentes, e a banca usa o de cima:
 
 !tabela Contribuição do MPFL para a restrição lateral (fontes como indicadas)
 | Fonte | Número | Contexto |
 | --- | --- | --- |
-| SIZÍNIO 5ª ed., cap. 16, PDF 1187 | **50% a 60%** | força medial de estabilização; atua sobretudo em extensão completa |
-| SIZÍNIO 5ª ed., cap. 15, PDF 1138 | 50% | da restrição estática à estabilidade lateral |
-| Rockwood adultos, cap. 60, aprox. p. 2649 | mais da metade | da força de todos os estabilizadores mediais |
+| SIZÍNIO 5ª ed., cap. 16, Reconstrução do ligamento femoropatelar medial | **50% a 60%** | força medial de estabilização; atua sobretudo em extensão completa |
+| SIZÍNIO 5ª ed., cap. 15, Instabilidade femoropatelar | 50% | da restrição estática à estabilidade lateral |
+| Rockwood adultos, cap. 60, Soft Tissue Anatomy | mais da metade | da força de todos os estabilizadores mediais |
 | Tachdjian, cap. 40, p. 2034 | 41% a 80% | da restrição à translação lateral em cadáver |
 | Tachdjian, cap. 40, p. 2034 | +50% | aumento do deslocamento lateral após secção do ligamento |
 !fim
@@ -108,17 +108,17 @@ armadilha: Escolher 30 a 50 graus, que é a faixa em que a patela já está cont
 
 ## A força que empurra a patela para fora
 
-O membro inferior tem **valgo fisiológico de 5 a 15 graus**, o que cria um **momento em valgo** no joelho e uma tendência permanente de lateralização da patela, equilibrada pelo osso e pelos estabilizadores (SIZÍNIO, cap. 16, PDF 1166). O quadríceps puxa ao longo do eixo do fêmur; o tendão patelar puxa para a tuberosidade; como as duas linhas não estão alinhadas, a resultante aponta para fora. O **ângulo Q** mede esse desalinhamento.
+O membro inferior tem **valgo fisiológico de 5 a 15 graus**, o que cria um **momento em valgo** no joelho e uma tendência permanente de lateralização da patela, equilibrada pelo osso e pelos estabilizadores (SIZÍNIO, cap. 16, Biomecânica). O quadríceps puxa ao longo do eixo do fêmur; o tendão patelar puxa para a tuberosidade; como as duas linhas não estão alinhadas, a resultante aponta para fora. O **ângulo Q** mede esse desalinhamento.
 
 O Campbell (cap. 8, p. 413), citando HVID, define o ângulo Q como o ângulo entre o **eixo anatômico estendido do fêmur** e a linha **centro da patela e tubérculo tibial**, e a figura desenha a linha da **espinha ilíaca anterossuperior ao centro da patela**.
 
 !tabela Valores normais do ângulo Q (fontes como indicadas)
 | Fonte | Normal ou limite |
 | --- | --- |
-| Tachdjian, cap. 40, p. 2035; SIZÍNIO cap. 15, PDF 1139 | média 10 graus em meninos e 15 em meninas; aumentado na instabilidade |
+| Tachdjian, cap. 40, p. 2035; SIZÍNIO cap. 15, Instabilidade femoropatelar | média 10 graus em meninos e 15 em meninas; aumentado na instabilidade |
 | Netter, cap. 9 (resumo de anatomia do joelho) | até 10 graus no homem e 15 na mulher |
 | Campbell 15, cap. 8, p. 421 | anormal acima de 15 graus no homem e 20 na mulher |
-| SIZÍNIO, cap. 16, PDF 1169 | normal até 20 graus |
+| SIZÍNIO, cap. 16, Exame físico (Inspeção) | normal até 20 graus |
 | Campbell 15, cap. 52, Tabela 52.3 e p. 2202 | acima de 20 graus integra a indicação de realinhamento distal |
 !fim
 
@@ -145,26 +145,26 @@ alerta: Questão sem gabarito oficial; o Campbell 15 (cap. 52, p. 2194) e o Tach
 
 ## As cargas da femoropatelar
 
-A femoropatelar suporta as maiores cargas do corpo, e a prova gosta do múltiplo do peso. O Campbell (cap. 8, p. 413) explica o mecanismo: a força de reação aumenta com a flexão porque os vetores do quadríceps e do tendão patelar ficam **mais paralelos à força de reação**; os autores somam **2 a 5 vezes o peso nas atividades diárias** e **7 a 8 vezes no agachamento** até 120 graus. O Netter (aprox. p. 295) dá **3 vezes ao subir escadas** e **7 vezes em flexão máxima**, por isso a cartilagem tem até 5 mm. O Rockwood (cap. 60, aprox. p. 2649) diz que a força do mecanismo extensor pode chegar a **8 vezes o peso** em homens jovens. Descer escadas exige mais que subir, porque o quadríceps trabalha excentricamente com o joelho mais fletido; nenhum dos livros dá o número exato da descida.
+A femoropatelar suporta as maiores cargas do corpo, e a prova gosta do múltiplo do peso. O Campbell (cap. 8, p. 413) explica o mecanismo: a força de reação aumenta com a flexão porque os vetores do quadríceps e do tendão patelar ficam **mais paralelos à força de reação**; os autores somam **2 a 5 vezes o peso nas atividades diárias** e **7 a 8 vezes no agachamento** até 120 graus. O Netter (cap. 9, Articulação patelofemoral) dá **3 vezes ao subir escadas** e **7 vezes em flexão máxima**, por isso a cartilagem tem até 5 mm. O Rockwood (cap. 60, Biomechanics of the Extensor Mechanism) diz que a força do mecanismo extensor pode chegar a **8 vezes o peso** em homens jovens. Para o joelho como um todo, o cap. 1 do Rockwood (Physiologic Loads During Normal Activities) dá até **3,5 vezes o peso ao subir e ao descer escadas**, contra 2,5 a 2,8 vezes ao levantar da cadeira; é o número mais próximo do que a banca cobra, mas é a força no joelho, não a femoropatelar isolada.
 
 !questoes central=joelho-0214
 conceito: A carga patelofemoral cresce com a flexão (vetores do quadríceps e do tendão ficam paralelos à reação): cerca de 3 vezes o peso nas escadas e 7 a 8 vezes no agachamento profundo.
 como: O TARO 2012 perguntou quantas vezes o peso corporal atinge a carga femoropatelar na descida de escadas.
 armadilha: Confundir com o agachamento (7 a 8 vezes) ou com a marcha.
-alerta: Nenhum livro consultado dá 3,5 vezes especificamente para a femoropatelar na descida: o Netter dá 3 vezes ao subir escadas, o Campbell 2 a 5 vezes nas AVDs e o Rockwood (cap. 2) até 3,5 vezes para o joelho em escadas; o gabarito oficial (3,5 vezes) é compatível com essa faixa.
+alerta: Nenhum livro consultado dá 3,5 vezes especificamente para a femoropatelar na descida: o Netter dá 3 vezes ao subir escadas, o Campbell 2 a 5 vezes nas AVDs e o Rockwood (cap. 1, Physiologic Loads During Normal Activities) até 3,5 vezes para o joelho ao subir e descer escadas; o gabarito oficial (3,5 vezes) é compatível com essa faixa.
 !fim
 
 # Quem luxa e por que recidiva {radar=confirmado}
 
 ## Epidemiologia
 
-A luxação patelar aguda tem incidência de **5,8 por 100.000** na população, subindo para **29 por 100.000 entre 10 e 17 anos** (Rockwood, cap. 60, aprox. p. 2665); o Tachdjian (p. 2034) estima **43 por 100.000 menores de 16 anos**. O SIZÍNIO (cap. 16, PDF 1183) diz que a luxação patelar é **3% de todas as lesões do joelho**, predomina em **mulheres jovens de 10 a 16 anos** e é a **segunda causa de hemartrose traumática aguda**, depois da lesão do LCA. A luxação é **quase sempre lateral**; a medial traumática é raríssima (Rockwood).
+A luxação patelar aguda tem incidência de **5,8 por 100.000** na população, subindo para **29 por 100.000 entre 10 e 17 anos** (Rockwood, cap. 60, Acute Patellar Dislocations); o Tachdjian (p. 2034) estima **43 por 100.000 menores de 16 anos**. O SIZÍNIO (cap. 16, Instabilidade femoropatelar) diz que a luxação patelar é **3% de todas as lesões do joelho**, predomina em **mulheres jovens de 10 a 16 anos** e é a **segunda causa de hemartrose traumática aguda**, depois da lesão do LCA. A luxação é **quase sempre lateral**; a medial traumática é raríssima (Rockwood).
 
 ## Os fatores de DEJOUR
 
 A escola de Lyon (DEJOUR e colaboradores) separou fatores **fundamentais** e **secundários**. O SIZÍNIO traz duas listas, uma no capítulo do adulto e outra no da criança, ligeiramente diferentes:
 
-!tabela Fatores anatômicos da instabilidade (SIZÍNIO 5ª ed., cap. 16, PDF 1183, e cap. 15, PDF 1138)
+!tabela Fatores anatômicos da instabilidade (SIZÍNIO 5ª ed., cap. 16 e cap. 15, seções Instabilidade femoropatelar)
 | Tipo | Adulto (cap. 16) | Criança (cap. 15) |
 | --- | --- | --- |
 | fundamental | displasia troclear | displasia troclear |
@@ -181,7 +181,7 @@ O Campbell (cap. 52, p. 2194) agrupa os mesmos elementos de outra forma: **restr
 
 ## Recidiva: os números e a lesão que importa
 
-Depois do primeiro episódio, a recidiva varia muito: **15% a 44%** após tratamento conservador (Rockwood, aprox. p. 2665; SIZÍNIO, cap. 15, PDF 1138), **30%** na série de LEWALLEN com 291 pacientes, metade dos quais acabou operada (SIZÍNIO, cap. 16, PDF 1184), **15% a 75%** no cap. 38 do Campbell (p. 1451), mais de **60%** nos primeiros episódios pediátricos (Tachdjian, p. 2034) e **dois terços** nos esqueleticamente imaturos (Campbell, cap. 52, p. 2194). Os preditores repetem-se em todos: **idade jovem (menor que 14 ou 15 anos), fise aberta, displasia troclear, patela alta, TT-TG elevado, esporte** e **história de instabilidade recorrente**, que prediz instabilidade futura.
+Depois do primeiro episódio, a recidiva varia muito: **15% a 44%** após tratamento conservador (Rockwood, cap. 60, Acute Patellar Dislocations; SIZÍNIO, cap. 15, Instabilidade femoropatelar), **30%** na série de LEWALLEN com 291 pacientes, metade dos quais acabou operada (SIZÍNIO, cap. 16, Luxação patelar aguda), **15% a 75%** no cap. 38 do Campbell (p. 1451), mais de **60%** nos primeiros episódios pediátricos (Tachdjian, p. 2034) e **dois terços** nos esqueleticamente imaturos (Campbell, cap. 52, p. 2194). Os preditores repetem-se em todos: **idade jovem (menor que 14 ou 15 anos), fise aberta, displasia troclear, patela alta, TT-TG elevado, esporte** e **história de instabilidade recorrente**, que prediz instabilidade futura.
 
 A pergunta "qual o fator mais importante para a recidiva" tem uma resposta mecânica. Na luxação, o MPFL rompe (Campbell, p. 2194; Rockwood); se ele cicatriza alongado, a patela perde o freio estático da faixa de 0 a 20 graus. O Tachdjian (p. 2034) mostra que a **lesão ou frouxidão primária do MPFL** reduz significativamente a restrição lateral e pode ter **papel crítico** no desequilíbrio que leva à instabilidade; a Tabela 52.3 do Campbell põe o **MPFL incompetente** (glide lateral de 3 quadrantes) na linha da reconstrução, e a Tabela 52.4 indica a reconstrução para a **deficiência recorrente do MPFL, com ou sem displasia troclear**. Por isso a reconstrução do MPFL é a cirurgia de base mesmo quando a tróclea é displásica.
 
@@ -196,13 +196,13 @@ alerta: Os livros também listam a displasia troclear entre os preditores de rec
 
 ## A história
 
-A luxação aguda típica é um **movimento de rotação com o pé fixo**, o **fêmur rodando internamente sobre a tíbia** e o **quadríceps contraído**, que lateraliza a patela (SIZÍNIO, cap. 15, PDF 1138); o paciente sente um estalo, cai, e a patela volta quando o joelho é estendido. O mecanismo **indireto** responde por **93%** (SIZÍNIO, cap. 16, PDF 1184). As luxações patelares **se autorreduzem** com mais frequência que as do ombro (cap. 52, p. 2194); apenas **20% ou menos** chegam luxadas ao pronto-socorro, e a manobra de redução é a **extensão completa** do joelho (SIZÍNIO, PDF 1184).
+A luxação aguda típica é um **movimento de rotação com o pé fixo**, o **fêmur rodando internamente sobre a tíbia** e o **quadríceps contraído**, que lateraliza a patela (SIZÍNIO, cap. 15, Instabilidade femoropatelar); o paciente sente um estalo, cai, e a patela volta quando o joelho é estendido. O mecanismo **indireto** responde por **93%** (SIZÍNIO, cap. 16, Luxação patelar aguda). As luxações patelares **se autorreduzem** com mais frequência que as do ombro (cap. 52, p. 2194); apenas **20% ou menos** chegam luxadas ao pronto-socorro, e a manobra de redução é a **extensão completa** do joelho (SIZÍNIO, cap. 16, Luxação patelar aguda).
 
 A **subluxação** (patela até a borda do sulco) e a **luxação** (completamente fora) são ambas eventos de instabilidade (Campbell, cap. 52, p. 2194).
 
 ## Os testes
 
-!tabela Testes do exame femoropatelar (Campbell 15, cap. 52, p. 2194 e 2195; Tachdjian, cap. 40, p. 2035; SIZÍNIO cap. 16, PDF 1172 a 1174; Netter, aprox. p. 308)
+!tabela Testes do exame femoropatelar (Campbell 15, cap. 52, p. 2194 e 2195; Tachdjian, cap. 40, p. 2035; SIZÍNIO cap. 16, Exame físico; Netter, cap. 9, exame físico da articulação patelofemoral)
 | Teste | Como | Positivo significa |
 | --- | --- | --- |
 | apreensão (FAIRBANK) | joelho a 20 a 30 graus com coxim; força lateral na patela | apreensão e resistência: instabilidade |
@@ -223,24 +223,24 @@ No agudo, há **dor no trajeto do MPFL, na faceta medial da patela e no côndilo
 
 ## O sinal de BASSET
 
-Nenhum dos livros consultados descreve um sinal de BASSET para o joelho: o Campbell só cita o ligamento de BASSETT, um fascículo do tibiofibular anteroinferior que causa impacto no tornozelo. O que os livros descrevem para a lesão aguda do MPFL é a **dor à palpação no trajeto do ligamento**, sobretudo junto ao **epicôndilo medial e ao tubérculo do adutor**, onde ele costuma se romper (Campbell, cap. 52, p. 2195), e a RM que mostra o local da ruptura (próxima à patela, no corpo ou no epicôndilo, SIZÍNIO, PDF 1184).
+Nenhum dos livros locais descreve o sinal pelo nome: o Campbell só cita o ligamento de BASSETT, um fascículo do tibiofibular anteroinferior que causa impacto no tornozelo. A definição está numa revisão de acesso aberto, KHORMAEE, KRAMER, YEN e HEYWORTH (Sports Health 2015;7(2):115-123; PMID 25984256): o **sinal de BASSETT** (grafia do artigo, com dois t; a revisão cita BASSETT, 1976) é a **dor à palpação sobre o epicôndilo femoral medial, no ponto de inserção do MPFL**. A mesma revisão o lista entre os achados de exame da instabilidade patelar, ao lado da dor na faceta medial da patela e na face lateral do côndilo femoral lateral e do teste de apreensão positivo, e avisa que esses testes têm sensibilidade e especificidade variáveis. É o que os livros locais descrevem sem dar nome: a **dor à palpação no trajeto do ligamento**, sobretudo junto ao **epicôndilo medial e ao tubérculo do adutor**, onde ele costuma se romper (Campbell, cap. 52, p. 2195), e a RM que mostra o local da ruptura (próxima à patela, no corpo ou no epicôndilo, SIZÍNIO, cap. 16, Luxação patelar aguda).
 
 !questoes central=trauma-1039
-conceito: Na luxação aguda, a dor à palpação no trajeto do MPFL, junto ao epicôndilo medial e ao tubérculo do adutor, denuncia a lesão do ligamento; e é a resposta que o gabarito associa ao sinal de BASSET.
+conceito: O sinal de BASSETT é a dor à palpação sobre o epicôndilo femoral medial, na inserção do MPFL, e denuncia a lesão aguda do ligamento depois da luxação da patela.
 como: O TARO 2024 perguntou o que indica o sinal de BASSET, com cisto meniscal, dor patelofemoral e lesão do colateral tibial como distratores.
 armadilha: Confundir com a lesão do colateral tibial, cuja dor também é medial, mas sem luxação patelar nem apreensão.
-alerta: Nenhum livro consultado (Campbell 15, Tachdjian, Rockwood, SIZÍNIO, Netter) descreve o sinal de BASSET; o gabarito (lesão aguda do MPFL) é mantido e o raciocínio usa a dor no trajeto do MPFL descrita no Campbell (cap. 52, p. 2195).
+alerta: Nenhum livro local (Campbell 15, Tachdjian, Rockwood, SIZÍNIO, Netter) descreve o sinal pelo nome; a definição vem de KHORMAEE e colaboradores, Sports Health 2015;7(2):115-123 (PMID 25984256), que confirma o gabarito (lesão aguda do MPFL). A banca grafa BASSET; o autor é BASSETT.
 !fim
 
 # Imagem: altura patelar {radar=fundamento}
 
 ## A radiografia de perfil
 
-O perfil é feito com o joelho a **30 graus de flexão** (Campbell, p. 2195; Tachdjian, p. 2035). A **linha de BLUMENSAAT**, que passa pelo teto do intercôndilo, deve **tocar o polo inferior da patela**; se a patela fica acima, é alta; se o polo fica abaixo, é baixa. É o método **mais fácil e rápido** (SIZÍNIO, PDF 1177), mas o Campbell avisa que a altura é medida com mais acurácia pelos índices de INSALL, CATON-DESCHAMPS e BLACKBURNE-PEEL.
+O perfil é feito com o joelho a **30 graus de flexão** (Campbell, p. 2195; Tachdjian, p. 2035). A **linha de BLUMENSAAT**, que passa pelo teto do intercôndilo, deve **tocar o polo inferior da patela**; se a patela fica acima, é alta; se o polo fica abaixo, é baixa. É o método **mais fácil e rápido** (SIZÍNIO, cap. 16, Exame por imagem, Radiografia), mas o Campbell avisa que a altura é medida com mais acurácia pelos índices de INSALL, CATON-DESCHAMPS e BLACKBURNE-PEEL.
 
 Aqui a prova explora a confusão entre numerador e denominador. A tabela abaixo segue cada livro.
 
-!tabela Índices de altura patelar (Campbell 15, cap. 52, Tabela 52.2, p. 2196; SIZÍNIO cap. 16, PDF 1177 e 1178, e cap. 15, PDF 1139 e 1140; Tachdjian p. 2035; Netter aprox. p. 296)
+!tabela Índices de altura patelar (Campbell 15, cap. 52, Tabela 52.2, p. 2196; SIZÍNIO cap. 16, Radiografia, e cap. 15, Instabilidade femoropatelar; Tachdjian p. 2035; Netter, cap. 9, Articulação patelofemoral)
 | Índice | Razão | Normal | Patela alta |
 | --- | --- | --- | --- |
 | INSALL-SALVATI | comprimento do tendão patelar / maior eixo da patela (LT:LP) | 1,0 (SIZÍNIO: 0,8 a 1) | maior que 1,2 (Campbell); tendão 20% maior que a patela (SIZÍNIO cap. 15) |
@@ -250,7 +250,7 @@ Aqui a prova explora a confusão entre numerador e denominador. A tabela abaixo 
 | INSALL no Netter | patela / tendão (razão inversa) | 1,0 (0,8 a 1,2) | menor que 0,8 |
 !fim
 
-Duas pegadinhas. O **Netter escreve a razão de INSALL ao contrário** (patela sobre tendão) e por isso diz que **menor que 0,8 é alta**; na forma clássica (tendão sobre patela), alta é **maior que 1,2**. E o CATON-DESCHAMPS tem dois cortes no próprio Campbell (**1,3** na Tabela 52.2, **1,2** no Box 52.1); na criança, o Tachdjian o prefere por depender menos da ossificação, com **alta acima de 1,3**. Com o paciente sentado e joelhos a 90 graus, a patela que "olha para cima" sugere patela alta (SIZÍNIO, PDF 1172; Campbell, p. 2195).
+Duas pegadinhas. O **Netter escreve a razão de INSALL ao contrário** (patela sobre tendão) e por isso diz que **menor que 0,8 é alta**; na forma clássica (tendão sobre patela), alta é **maior que 1,2**. E o CATON-DESCHAMPS tem dois cortes no próprio Campbell (**1,3** na Tabela 52.2, **1,2** no Box 52.1); na criança, o Tachdjian o prefere por depender menos da ossificação, com **alta acima de 1,3**. Com o paciente sentado e joelhos a 90 graus, a patela que "olha para cima" sugere patela alta (SIZÍNIO, cap. 16, Exame físico; Campbell, p. 2195).
 
 A patela alta entra na Tabela 52.3 do Campbell com **INSALL maior que 1,3** e o tratamento é a **distalização**, com o aviso de que pode custar **movimento ou fixação**. Para a luxação recorrente com **INSALL acima de 1,4**, o Campbell (p. 2203) faz transferência **medial e distal** da tuberosidade, ressecando **5 a 10 mm** da ponta distal do fragmento para chegar a um **CATON-DESCHAMPS de 1,2**, sem nunca levar o polo inferior abaixo da linha de BLUMENSAAT, o que criaria **patela baixa**.
 
@@ -258,20 +258,20 @@ A patela alta entra na Tabela 52.3 do Campbell com **INSALL maior que 1,3** e o 
 
 ## O perfil verdadeiro e o sinal do cruzamento
 
-A displasia troclear se vê no **perfil absoluto**, com os côndilos superpostos (o Tachdjian, p. 2037, define o perfil verdadeiro por **menos de 5 mm de separação** entre os contornos condilares); pequenas rotações estragam a análise (SIZÍNIO, PDF 1179). No perfil, a **linha do fundo da tróclea** normalmente fica atrás da cortical anterior dos côndilos. Na tróclea displásica, essa linha **sobe e cruza a linha dos côndilos** em sua porção superior: é o **sinal do cruzamento** (crossing sign). O Campbell (p. 2195) o chama de **melhor indicador de displasia troclear**, e acrescenta que **quanto mais precoce (mais distal) o cruzamento, maior a displasia**. Os outros sinais de perfil são o **bump troclear** (a tróclea projetada à frente da cortical femoral) e a **profundidade troclear**, medida **1 cm abaixo do topo do sulco**: normal **5 mm ou mais**; **menor que 3 mm**, ou bump **maior que 4 mm**, indicam displasia significativa (Tabela 52.2 e p. 2195).
+A displasia troclear se vê no **perfil absoluto**, com os côndilos superpostos (o Tachdjian, p. 2037, define o perfil verdadeiro por **menos de 5 mm de separação** entre os contornos condilares); pequenas rotações estragam a análise (SIZÍNIO, cap. 16, Radiografia). No perfil, a **linha do fundo da tróclea** normalmente fica atrás da cortical anterior dos côndilos. Na tróclea displásica, essa linha **sobe e cruza a linha dos côndilos** em sua porção superior: é o **sinal do cruzamento** (crossing sign). O Campbell (p. 2195) o chama de **melhor indicador de displasia troclear**, e acrescenta que **quanto mais precoce (mais distal) o cruzamento, maior a displasia**. Os outros sinais de perfil são o **bump troclear** (a tróclea projetada à frente da cortical femoral) e a **profundidade troclear**, medida **1 cm abaixo do topo do sulco**: normal **5 mm ou mais**; **menor que 3 mm**, ou bump **maior que 4 mm**, indicam displasia significativa (Tabela 52.2 e p. 2195).
 
 !questoes relacionadas=joelho-0291
 conceito: Na radiografia de perfil verdadeiro, o sinal do cruzamento (fundo da tróclea cruzando a cortical anterior dos côndilos) é o melhor indicador de displasia troclear.
 como: O TARO 2008 perguntou o que indica o sinal do cruzamento no perfil do joelho, entre patela alta, hipoplasia do côndilo lateral, displasia da tróclea e displasia da patela.
 armadilha: Associar o perfil à patela alta, que se mede pelos índices e pela linha de BLUMENSAAT, não pelo cruzamento.
-alerta: Questão sem gabarito oficial; o Campbell 15 (cap. 52, p. 2195 e Tabela 52.2) e o SIZÍNIO (cap. 16, PDF 1179) sustentam a alternativa C (displasia da tróclea).
+alerta: Questão sem gabarito oficial; o Campbell 15 (cap. 52, p. 2195 e Tabela 52.2) e o SIZÍNIO (cap. 16, Radiografia) sustentam a alternativa C (displasia da tróclea).
 !fim
 
 ## Os quatro tipos de DAVID DEJOUR
 
-O SIZÍNIO (cap. 16, PDF 1179) explica que **DAVID DEJOUR modificou a classificação original de HENRI DEJOUR** e dividiu as displasias em quatro tipos. O Tachdjian (p. 2037) resume em uma palavra cada: **A raso, B plano, C medial hipoplásico, D convexo**. O detalhe que a prova cobra está no SIZÍNIO:
+O SIZÍNIO (cap. 16, Radiografia) explica que **DAVID DEJOUR modificou a classificação original de HENRI DEJOUR** e dividiu as displasias em quatro tipos. O Tachdjian (p. 2037) resume em uma palavra cada: **A raso, B plano, C medial hipoplásico, D convexo**. O detalhe que a prova cobra está no SIZÍNIO:
 
-!tabela Classificação de DEJOUR da displasia troclear (SIZÍNIO 5ª ed., cap. 16, PDF 1179; Tachdjian, cap. 40, p. 2037)
+!tabela Classificação de DEJOUR da displasia troclear (SIZÍNIO 5ª ed., cap. 16, Radiografia; Tachdjian, cap. 40, p. 2037)
 | Tipo | Perfil | Axial | Palavra-chave |
 | --- | --- | --- | --- |
 | A | sinal do cruzamento | tróclea rasa, côndilos de forma mantida | raso |
@@ -294,14 +294,14 @@ armadilha: Marcar o D, que também tem esporão, mas acrescenta assimetria e o p
 conceito: O sinal do cruzamento é o marcador radiográfico da displasia troclear em perfil e está presente em todos os tipos de DEJOUR.
 como: O TARO 2016 perguntou em que tipo de tróclea se observa o sinal do cruzamento, com tipos I a IV em algarismos romanos.
 armadilha: Procurar um tipo exclusivo do cruzamento na classificação moderna, em que ele aparece de A a D.
-alerta: Os livros consultados não trazem a classificação original de HENRI DEJOUR em algarismos romanos; o SIZÍNIO (cap. 16, PDF 1179) dá o cruzamento nos quatro tipos de DAVID DEJOUR. O gabarito oficial (tipo II) é mantido sem confirmação nos livros.
+alerta: Os livros consultados não trazem a classificação original de HENRI DEJOUR em algarismos romanos; o SIZÍNIO (cap. 16, Radiografia) dá o cruzamento nos quatro tipos de DAVID DEJOUR. O gabarito oficial (tipo II) é mantido sem confirmação nos livros.
 !fim
 
 ## A patela e o axial
 
-O **axial da patela** é a incidência de rotina mais importante (Campbell, p. 2195 a 2197), feita com os **dois joelhos juntos**, quadríceps relaxado e flexão de **20 a 45 graus**, porque mais flexão reduz as anormalidades. Nele se avaliam a forma da patela, a tróclea e a relação entre elas. Os livros divergem nos ângulos das incidências: para o SIZÍNIO adulto (cap. 16, PDF 1176), **MERCHANT** é craniocaudal de 30 graus com o joelho a **45**, e **LAURIN** é caudocranial com o joelho a **20**, mais sensível para subluxação; para o Tachdjian (p. 2036) e o SIZÍNIO pediátrico (PDF 1140), MERCHANT a **30** e LAURIN a **45**.
+O **axial da patela** é a incidência de rotina mais importante (Campbell, p. 2195 a 2197), feita com os **dois joelhos juntos**, quadríceps relaxado e flexão de **20 a 45 graus**, porque mais flexão reduz as anormalidades. Nele se avaliam a forma da patela, a tróclea e a relação entre elas. Os livros divergem nos ângulos das incidências: para o SIZÍNIO adulto (cap. 16, Radiografia), **MERCHANT** é craniocaudal de 30 graus com o joelho a **45**, e **LAURIN** é caudocranial com o joelho a **20**, mais sensível para subluxação; para o Tachdjian (p. 2036) e o SIZÍNIO pediátrico (cap. 15, Instabilidade femoropatelar), MERCHANT a **30** e LAURIN a **45**.
 
-!tabela Medidas no axial e na TC (Campbell 15, cap. 52, p. 2196 a 2198; Tachdjian, p. 2036; SIZÍNIO cap. 16, PDF 1176 a 1180)
+!tabela Medidas no axial e na TC (Campbell 15, cap. 52, p. 2196 a 2198; Tachdjian, p. 2036; SIZÍNIO cap. 16, Radiografia e Tomografia)
 | Medida | Normal | Patológico |
 | --- | --- | --- |
 | ângulo do sulco (MERCHANT) | média 137 graus (DP 6) | maior que 145 graus = displasia |
@@ -312,13 +312,13 @@ O **axial da patela** é a incidência de rotina mais importante (Campbell, p. 2
 | TT-TG | até 20 mm (SIZÍNIO) | maior que 20 mm = mau alinhamento |
 !fim
 
-A **forma da patela** se classifica por WIBERG (o SIZÍNIO grafa "Wisberg"), pela posição da crista longitudinal: **tipo I** com a crista central e facetas simétricas, evoluindo até o **tipo IV**, acrescentado depois, em que a crista quase não existe (PDF 1179 e 1180). A displasia patelar **WIBERG tipo C** está na Tabela 52.3 do Campbell como fator de contenção, tratado com **reconstrução do MPFL**.
+A **forma da patela** se classifica por WIBERG (o SIZÍNIO grafa "Wisberg"), pela posição da crista longitudinal: **tipo I** com a crista central e facetas simétricas, evoluindo até o **tipo IV**, acrescentado depois, em que a crista quase não existe (SIZÍNIO, cap. 16, Radiografia, Fig. 16.22). A displasia patelar **WIBERG tipo C** está na Tabela 52.3 do Campbell como fator de contenção, tratado com **reconstrução do MPFL**.
 
 # Imagem: TT-TG {radar=confirmado}
 
 ## Como se mede
 
-O TT-TG (TA-GT, TAGT) é a **versão tomográfica do ângulo Q** (SIZÍNIO, PDF 1180): mede quanto a tuberosidade está lateral ao sulco troclear. A técnica, na Figura 52.6 do Campbell (p. 2198), usa **dois cortes axiais superpostos**: um na **garganta da tróclea** e outro na **tuberosidade anterior da tíbia**. Traça-se a linha tangente aos **côndilos femorais posteriores**; dela saem duas **perpendiculares**, uma pelo **fundo do sulco troclear** e outra pelo **centro da inserção do tendão patelar** na tuberosidade; a **distância entre as perpendiculares**, em milímetros, é o TT-TG. A sobreposição de imagens é a pista da figura.
+O TT-TG (TA-GT, TAGT) é a **versão tomográfica do ângulo Q** (SIZÍNIO, cap. 16, Tomografia): mede quanto a tuberosidade está lateral ao sulco troclear. A técnica, na Figura 52.6 do Campbell (p. 2198), usa **dois cortes axiais superpostos**: um na **garganta da tróclea** e outro na **tuberosidade anterior da tíbia**. Traça-se a linha tangente aos **côndilos femorais posteriores**; dela saem duas **perpendiculares**, uma pelo **fundo do sulco troclear** e outra pelo **centro da inserção do tendão patelar** na tuberosidade; a **distância entre as perpendiculares**, em milímetros, é o TT-TG. A sobreposição de imagens é a pista da figura.
 
 !questoes central=joelho-0143
 conceito: Duas imagens axiais de TC superpostas (sulco troclear e tuberosidade) com perpendiculares à linha condilar posterior medem a distância TT-TG.
@@ -328,7 +328,7 @@ armadilha: Confundir com o ângulo de inclinação patelar, que também usa a li
 
 ## Os cortes que decidem
 
-!tabela Valores de TT-TG e conduta (Campbell 15, cap. 52, p. 2197, 2199 e 2202; Tachdjian, p. 2037 e 2038; SIZÍNIO, PDF 1140 e 1180)
+!tabela Valores de TT-TG e conduta (Campbell 15, cap. 52, p. 2197, 2199 e 2202; Tachdjian, p. 2037 e 2038; SIZÍNIO, cap. 15, Instabilidade femoropatelar, e cap. 16, Tomografia)
 | Valor | Significado | Conduta |
 | --- | --- | --- |
 | menor que 20 mm com VMO disfuncionante | desequilíbrio dinâmico | reabilitação (Tabela 52.3) |
@@ -348,7 +348,7 @@ como: O TEOT 2024 perguntou o TT-TG que indica realinhamento distal no adulto se
 armadilha: Marcar 15 mm, que é o corte para a tróclea displásica, ou 25 mm, que não aparece nos livros.
 !fim
 
-!questoes central=trauma-1018 relacionadas=trauma-1067
+!questoes central=trauma-1018
 conceito: Com tróclea displásica, TT-TG acima de 15 mm já indica osteotomia da tuberosidade; com tróclea normal, o corte é 20 mm.
 como: O TARO 2026 cruzou o valor de 15 mm com tróclea normal e displásica nas quatro alternativas.
 armadilha: Aplicar o 15 mm à tróclea normal, que só se opera acima de 20 mm.
@@ -358,7 +358,7 @@ armadilha: Aplicar o 15 mm à tróclea normal, que só se opera acima de 20 mm.
 
 ## O que a luxação lesa
 
-A luxação rompe os **restritores mediais**, incluindo o MPFL, e pode produzir **defeito condral ou osteocondral na faceta medial da patela e/ou no côndilo femoral lateral** (Campbell, cap. 52, p. 2194): a faceta medial bate no côndilo lateral quando a patela volta. É o mesmo choque que a RM mostra como **contusão em beijo** (kissing bones), **edema na porção medial da patela e na face lateral do côndilo femoral lateral** (SIZÍNIO, PDF 1181 e 1184). O Rockwood (aprox. p. 2665) registra lesão de cartilagem em **até 95%** dos primeiros episódios. A **hemartrose** aumenta a chance de fratura osteocondral; a recomendação do International Patellofemoral Study Group é **RM nos de alto risco**, como os com hemartrose volumosa.
+A luxação rompe os **restritores mediais**, incluindo o MPFL, e pode produzir **defeito condral ou osteocondral na faceta medial da patela e/ou no côndilo femoral lateral** (Campbell, cap. 52, p. 2194): a faceta medial bate no côndilo lateral quando a patela volta. É o mesmo choque que a RM mostra como **contusão em beijo** (kissing bones), **edema na porção medial da patela e na face lateral do côndilo femoral lateral** (SIZÍNIO, cap. 16, Ressonância magnética e Luxação patelar aguda). O Rockwood (cap. 60, Acute Patellar Dislocations) registra lesão de cartilagem em **até 95%** dos primeiros episódios. A **hemartrose** aumenta a chance de fratura osteocondral; a recomendação do International Patellofemoral Study Group é **RM nos de alto risco**, como os com hemartrose volumosa.
 
 ## Tratamento da primeira luxação
 
@@ -369,9 +369,9 @@ A regra de todos os livros: **primeira luxação sem fratura osteocondral é tra
 | --- | --- | --- |
 | Campbell 15, cap. 52, p. 2197 | órtese estabilizadora para carga; muletas; punção se hemartrose grande | fisioterapia imediata; elevação da perna reta; agachamento na parede a 40 graus; retorno com força de 85% ou mais do lado são; órtese 6 a 8 semanas |
 | Campbell 15, cap. 38, p. 1451 (criança) | curta | órtese e reabilitação; retorno em 6 a 12 semanas |
-| Rockwood adultos, cap. 60, aprox. p. 2665 e 2666 | extensão por 3 semanas com carga (literatura); cerca de 2 semanas (autores) | órtese estabilizadora; reforço do VMO; ATKIN: retorno com 80% da força, sem recidiva em 6 meses |
-| SIZÍNIO cap. 16, PDF 1184 | 1 a 2 semanas | ganho de arco, analgesia, fortalecimento; carga quando a dor ceder |
-| SIZÍNIO cap. 15, PDF 1138 (criança) | 3 semanas | quadríceps e vasto medial |
+| Rockwood adultos, cap. 60, Acute Patellar Dislocations | extensão por 3 semanas com carga (literatura); cerca de 2 semanas (autores) | órtese estabilizadora; reforço do VMO; ATKIN: retorno com 80% da força, sem recidiva em 6 meses |
+| SIZÍNIO cap. 16, Luxação patelar aguda | 1 a 2 semanas | ganho de arco, analgesia, fortalecimento; carga quando a dor ceder |
+| SIZÍNIO cap. 15, Instabilidade femoropatelar (criança) | 3 semanas | quadríceps e vasto medial |
 | Tachdjian, p. 2037 | imobilizador só para conforto | elevação da perna reta, vasto medial; cadeia aberta e fechada; evitar torque alto |
 !fim
 
@@ -379,7 +379,7 @@ A cirurgia na primeira luxação é considerada nos de **alto risco**: combinaç
 
 ## As formas crônicas
 
-!tabela Formas de luxação crônica (SIZÍNIO cap. 16, PDF 1184; cap. 15, PDF 1141; Tachdjian, p. 2034)
+!tabela Formas de luxação crônica (SIZÍNIO cap. 16, Luxação ou subluxação patelar crônica; cap. 15, Instabilidade femoropatelar; Tachdjian, p. 2034)
 | Forma | Quando luxa | Particularidade |
 | --- | --- | --- |
 | recidivante | perto da extensão; episódios espaçados | a forma mais comum |
@@ -419,7 +419,7 @@ armadilha: Achar que qualquer displasia contraindica o MPFL isolado; as alteraç
 
 O Campbell (cap. 52, p. 2199) descreve os enxertos (autógenos ou alógenos, de partes moles) colocados em **posição fisiométrica**, confirmada pela palpação dos marcos e por **imagem**, e testados para **isometria**. A técnica 52.1 (PHILLIPS, p. 2200 e 2201) usa **semitendíneo ou grácil**, passa o enxerto pelo plano **entre as camadas 2 e 3** e localiza o **túnel femoral cerca de 4 mm distal e 2 mm anterior ao tubérculo do adutor**, na "sela" entre o tubérculo e o epicôndilo medial, confirmado na radioscopia (Fig. 52.9).
 
-O marco radiográfico é o **ponto de SCHÖTTLE**. No perfil verdadeiro do fêmur distal, traça-se a **linha da cortical posterior** do fêmur; duas perpendiculares a ela passam pelo **ponto de contato do côndilo medial com a cortical posterior** e pelo **ponto mais posterior da linha de BLUMENSAAT** (Campbell, Fig. 52.9, p. 2202). O Tachdjian (p. 2038) coloca o ponto **logo anterior à junção da linha cortical posterior com a perpendicular que passa pelo ponto posterior da linha de BLUMENSAAT**. O SIZÍNIO (PDF 1189) dá os milímetros: **1 mm anterior à linha cortical posterior**, **2,5 mm distal à origem posterior do côndilo medial** e **proximal ao ponto posterior da linha de BLUMENSAAT**. Resumo para a prova: **anterior à cortical posterior, na altura do fim posterior de BLUMENSAAT**.
+O marco radiográfico é o **ponto de SCHÖTTLE**. No perfil verdadeiro do fêmur distal, traça-se a **linha da cortical posterior** do fêmur; duas perpendiculares a ela passam pelo **ponto de contato do côndilo medial com a cortical posterior** e pelo **ponto mais posterior da linha de BLUMENSAAT** (Campbell, Fig. 52.9, p. 2202). O Tachdjian (p. 2038) coloca o ponto **logo anterior à junção da linha cortical posterior com a perpendicular que passa pelo ponto posterior da linha de BLUMENSAAT**. O SIZÍNIO (cap. 16, Reconstrução do ligamento femoropatelar medial) dá os milímetros: **1 mm anterior à linha cortical posterior**, **2,5 mm distal à origem posterior do côndilo medial** e **proximal ao ponto posterior da linha de BLUMENSAAT**. Resumo para a prova: **anterior à cortical posterior, na altura do fim posterior de BLUMENSAAT**.
 
 !questoes central=joelho-0145 relacionadas=joelho-0192
 conceito: O ponto de SCHÖTTLE, no perfil verdadeiro, fica logo anterior à linha da cortical posterior do fêmur, na altura do ponto mais posterior da linha de BLUMENSAAT, e guia o túnel femoral do MPFL.
@@ -429,7 +429,7 @@ armadilha: Associar os marcos ao colateral tibial ou ao oblíquo posterior, que 
 
 ## O teste de isometria e a tensão
 
-O Campbell (p. 2201) ensina a ler o enxerto: as suturas devem ter **movimento mínimo de 0 a 70 graus** e leve frouxidão acima de 70. Se a **tensão aumenta na flexão**, o túnel está **proximal** (o erro mais comum) ou anterior; se **aperta em extensão**, está **distal ou posterior**. A tensão final deve permitir **1 a 2 quadrantes de glide lateral** a 30 graus, sem hiperconstringir, e a fixação é feita com o joelho a **60 graus** (Campbell) ou entre **40 e 60 graus**, com a patela encaixada no sulco, como uma rédea (Tachdjian, p. 2038; SIZÍNIO, PDF 1141). A Tabela 52.4 avisa que a posição femoral **proximal ou anterior** ou o **excesso de tensão** sobrecarregam a **faceta medial**.
+O Campbell (p. 2201) ensina a ler o enxerto: as suturas devem ter **movimento mínimo de 0 a 70 graus** e leve frouxidão acima de 70. Se a **tensão aumenta na flexão**, o túnel está **proximal** (o erro mais comum) ou anterior; se **aperta em extensão**, está **distal ou posterior**. A tensão final deve permitir **1 a 2 quadrantes de glide lateral** a 30 graus, sem hiperconstringir, e a fixação é feita com o joelho a **60 graus** (Campbell) ou entre **40 e 60 graus**, com a patela encaixada no sulco, como uma rédea (Tachdjian, p. 2038; SIZÍNIO, cap. 15, Instabilidade femoropatelar). A Tabela 52.4 avisa que a posição femoral **proximal ou anterior** ou o **excesso de tensão** sobrecarregam a **faceta medial**.
 
 Na patela, a fixação fica na **junção do terço superior com o médio** da borda medial; o Tachdjian recomenda **evitar túneis transósseos** na patela pelo risco de fratura. A recidiva após as técnicas atuais é de **20% ou menos**; sexo feminino e reconstrução bilateral associam-se a complicações.
 
@@ -461,6 +461,15 @@ A diferença está no **plano do corte**. O corte **plano** do ELMSLIE-TRILLAT (
 
 O critério que decide entre as duas é a **localização da lesão condral**. Lesão **distal e lateral** da patela é descarregada pela anteromedialização, que transfere o apoio para **proximal e medial**; por isso a medialização é **contraindicada em lesões proximais e mediais**, que ficariam ainda mais carregadas (p. 2199 e 2202).
 
+A banca às vezes põe ao lado delas duas osteotomias antigas. A de **MAQUET** é o avanço anterior puro da tuberosidade, para a artrose femoropatelar, sem medializar (Campbell 15, cap. 50, Técnica 50.30, p. 2131). A de **HAUSER**, transferência da tuberosidade da tíbia usada na luxação recidivante antes das técnicas atuais, não aparece nos livros locais; o seguimento de HAMPSON e HILL (J Bone Joint Surg Br 1975;57-B(2):209-213; PMID 1141287), com joelhos revistos 10 a 25 anos depois da cirurgia, concluiu que ela impedia nova luxação, mas não a artrose: **30 de 42 joelhos (70%)** tinham artrose e 75% tinham dor na revisão.
+
+!questoes central=trauma-1067
+conceito: TT-TG acima de 20 mm com lesão condral grau III ou IV pede a osteotomia de FULKERSON: o corte oblíquo medializa a tuberosidade e a anterioriza, descarregando a cartilagem.
+como: O TARO 2022 deu TA-GT acima de 20 mm com lesão condral III e IV e ofereceu MAQUET, HAUSER, FULKERSON e ELMSLIE-TRILLAT.
+armadilha: ELMSLIE-TRILLAT: medializa, mas não anterioriza; fica para a cartilagem preservada (grau 2 ou menos).
+armadilha: HAUSER: transferência antiga da tuberosidade que evoluiu com artrose femoropatelar no seguimento longo; MAQUET só anterioriza.
+!fim
+
 ## Distalização e osteotomias rotacionais
 
 Na **patela alta com INSALL acima de 1,4**, a tuberosidade é transferida **medial e distalmente** (p. 2203), mirando CATON-DESCHAMPS de 1,2. Nas **deformidades rotacionais graves**, raramente se indica **osteotomia rotacional femoral distal** ou tibial (alto risco e alta recompensa), que dá marcha mais normal que o realinhamento distal; nas deformidades **coronais** do imaturo, a **epifisiodese**.
@@ -487,7 +496,7 @@ O preço da liberação excessiva é a patela que passa a sair para dentro. O di
 
 A criança luxa mais e recidiva mais: **dois terços** dos imaturos voltam a luxar (Campbell, cap. 52, p. 2194), e os menores de 14 anos com displasia troclear são os mais propensos (Tachdjian, p. 2034). A grande restrição é a **fise aberta**: osteotomia da tuberosidade, trocleoplastia e túneis que atravessem a fise femoral estão fora (Campbell, cap. 38, p. 1452; Tachdjian, p. 2037). Sobram os procedimentos de partes moles:
 
-!tabela Procedimentos para a fise aberta (Campbell 15, cap. 38, p. 1452; Tachdjian, p. 2037; SIZÍNIO cap. 15, PDF 1140 e 1141)
+!tabela Procedimentos para a fise aberta (Campbell 15, cap. 38, p. 1452; Tachdjian, p. 2037; SIZÍNIO cap. 15, Instabilidade femoropatelar)
 | Procedimento | O que faz |
 | --- | --- |
 | reconstrução do MPFL poupando a fise | túnel 5 a 7 mm distal à fise ou enxerto em volta do adutor magno; escolha atual |
@@ -501,7 +510,7 @@ A criança luxa mais e recidiva mais: **dois terços** dos imaturos voltam a lux
 
 ## Síndrome de DOWN e outras síndromes
 
-Algumas síndromes trazem instabilidade patelar: **DOWN, TURNER, KABUKI e RUBINSTEIN-TAYBI** (SIZÍNIO, cap. 15, PDF 1139), além da frouxidão colágena de MARFAN (cap. 16, PDF 1184). O Tachdjian (cap. 18, aprox. p. 636) dá o número que a banca cobra: a instabilidade patelofemoral foi relatada em **até 8% dos pacientes com síndrome de DOWN**, congênita ou adquirida, **muitos assintomáticos**; são mais difíceis de tratar pela recidiva, e o sucesso cirúrgico chegou a **86%** nos que tinham prejuízo funcional antes da reconstrução, dado a ponderar antes de uma "intervenção profilática" no assintomático.
+Algumas síndromes trazem instabilidade patelar: **DOWN, TURNER, KABUKI e RUBINSTEIN-TAYBI** (SIZÍNIO, cap. 15, Instabilidade femoropatelar), além da frouxidão colágena de MARFAN (cap. 16, Luxação patelar aguda). O Tachdjian (cap. 18, Congenital Dislocation of the Patella, p. 636) dá o número que a banca cobra: a instabilidade patelofemoral foi relatada em **até 8% dos pacientes com síndrome de DOWN**, congênita ou adquirida, **muitos assintomáticos**; são mais difíceis de tratar pela recidiva, e o sucesso cirúrgico chegou a **86%** nos que tinham prejuízo funcional antes da reconstrução, dado a ponderar antes de uma "intervenção profilática" no assintomático.
 
 !questoes central=joelho-0194
 conceito: A instabilidade femoropatelar ocorre em até 8% dos pacientes com síndrome de DOWN, muitos sem sintomas; a recidiva torna o tratamento mais difícil.
@@ -513,7 +522,7 @@ armadilha: Superestimar a frequência pela frouxidão ligamentar conhecida da s�
 
 ## Dor não é instabilidade
 
-A **síndrome da dor femoropatelar** é dor **peripatelar ou retropatelar** sem instabilidade objetiva, um **termo genérico** para dor anterior do joelho por muitas causas (SIZÍNIO, cap. 15, PDF 1142). Predomina em **meninas adolescentes**, piora ao **agachar, subir e descer escadas, pular, correr** e ao **ficar sentada muito tempo** com o joelho fletido: o **sinal do cinema** (SIZÍNIO, cap. 16, PDF 1168; Campbell, cap. 50, p. 2129). No SIZÍNIO adulto, a dor é intermitente em 69%, piora ao subir escadas em 88% e ao agachar em 85%. Os exames costumam ser **normais**; inclinação anormal, TT-TG aumentado e patela alta apontam para instabilidade potencial. Fatores de risco: fraqueza do quadril, do quadríceps e dos isquiotibiais, encurtamentos, frouxidão, **ângulo Q aumentado** e **ativação tardia do VMO** em relação ao vasto lateral. O tratamento é **educação e fortalecimento** dos rotadores do quadril, quadríceps e isquiotibiais, com **sucesso em 75%**; há pouca evidência para órteses, e a cirurgia **quase nunca** é indicada.
+A **síndrome da dor femoropatelar** é dor **peripatelar ou retropatelar** sem instabilidade objetiva, um **termo genérico** para dor anterior do joelho por muitas causas (SIZÍNIO, cap. 15, Dor femoropatelar). Predomina em **meninas adolescentes**, piora ao **agachar, subir e descer escadas, pular, correr** e ao **ficar sentada muito tempo** com o joelho fletido: o **sinal do cinema** (SIZÍNIO, cap. 16, História clínica; Campbell, cap. 50, p. 2129). No SIZÍNIO adulto, a dor é intermitente em 69%, piora ao subir escadas em 88% e ao agachar em 85%. Os exames costumam ser **normais**; inclinação anormal, TT-TG aumentado e patela alta apontam para instabilidade potencial. Fatores de risco: fraqueza do quadril, do quadríceps e dos isquiotibiais, encurtamentos, frouxidão, **ângulo Q aumentado** e **ativação tardia do VMO** em relação ao vasto lateral. O tratamento é **educação e fortalecimento** dos rotadores do quadril, quadríceps e isquiotibiais, com **sucesso em 75%**; há pouca evidência para órteses, e a cirurgia **quase nunca** é indicada.
 
 ## Condromalacia
 
@@ -521,13 +530,13 @@ O Campbell (cap. 50, p. 2128 a 2131) lembra que o termo é de ALEMAN (1928) e de
 
 ## A liberação lateral na dor
 
-Aqui está a única situação em que a liberação lateral é a cirurgia principal: a **síndrome da pressão lateral excessiva**, com **tilt lateral e retináculo lateral tenso**. O Campbell (cap. 50, p. 2131) diz que a liberação é **eficaz se o diagnóstico pré-operatório estiver correto**, e exige que **incongruência, tilt lateral e lateralização** estejam documentados no **axial**; com axial normal o resultado é imprevisível, e na condromalacia por **patela alta** a liberação raramente funciona. O SIZÍNIO (PDF 1182) faz a escada: conservador primeiro (analgesia, alongamento dos isquiotibiais e do trato iliotibial, VMO, mobilização do retináculo); se falhar, **liberação lateral**; com **esporão (bico) na faceta lateral**, **facetectomia parcial** associada; na **artrose avançada**, liberação e facetectomia rendem menos e a **transferência da TAT** pode ser indicada.
+Aqui está a única situação em que a liberação lateral é a cirurgia principal: a **síndrome da pressão lateral excessiva**, com **tilt lateral e retináculo lateral tenso**. O Campbell (cap. 50, p. 2131) diz que a liberação é **eficaz se o diagnóstico pré-operatório estiver correto**, e exige que **incongruência, tilt lateral e lateralização** estejam documentados no **axial**; com axial normal o resultado é imprevisível, e na condromalacia por **patela alta** a liberação raramente funciona. O SIZÍNIO (cap. 16, Síndrome da pressão lateral excessiva da patela) faz a escada: conservador primeiro (analgesia, alongamento dos isquiotibiais e do trato iliotibial, VMO, mobilização do retináculo); se falhar, **liberação lateral**; com **esporão (bico) na faceta lateral**, **facetectomia parcial** associada; na **artrose avançada**, liberação e facetectomia rendem menos e a **transferência da TAT** pode ser indicada.
 
 !questoes central=joelho-0306
 conceito: Na dor femoropatelar com tilt e retináculo lateral tenso (pressão lateral excessiva), a liberação lateral é indicada após falha do conservador; esporão na faceta lateral soma facetectomia parcial; na artrose avançada o resultado piora.
 como: O TARO 2006 pôs em certo ou errado a liberação retinacular na dor femoropatelar com osteófitos e retináculo lateral tenso.
 armadilha: Transpor para a dor a regra da instabilidade (liberação nunca isolada) ou ignorar que artrose avançada reduz o benefício.
-alerta: Questão sem gabarito oficial; o SIZÍNIO (cap. 16, PDF 1182) e o Campbell 15 (cap. 50, p. 2131; Tabela 52.4) sustentam a liberação lateral na pressão lateral excessiva com retináculo tenso, com facetectomia parcial quando há esporão, o que favorece "Certo".
+alerta: Questão sem gabarito oficial; o SIZÍNIO (cap. 16, Síndrome da pressão lateral excessiva da patela) e o Campbell 15 (cap. 50, p. 2131; Tabela 52.4) sustentam a liberação lateral na pressão lateral excessiva com retináculo tenso, com facetectomia parcial quando há esporão, o que favorece "Certo".
 !fim
 
 # Fechamento {radar=fundamento}

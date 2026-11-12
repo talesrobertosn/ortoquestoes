@@ -1,6 +1,6 @@
 ---
 id: campbell14-metastases-osseas
-versao: 2
+versao: 3
 titulo: Metástases ósseas e fratura patológica
 especialidade: tumores
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021), com o Rockwood and Green's Fractures in Adults, 10ª edição (2025)
 capitulo: Capítulo 27 · Tumores malignos do osso (carcinoma metastático), com os capítulos 24, 26, 37 e 42 e o capítulo 25 do Rockwood (fraturas patológicas)
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty); Rockwood and Green (Tornetta, Ricci, Ostrum, McQueen, McKee, Court-Brown)
-fonte: Livros conferidos localmente em 30/10/2026, no original em inglês. Campbell, cap. 27 (carcinoma metastático, p. 1028 a 1040, com osteossarcoma e Ewing, p. 1009 a 1020), cap. 24 (princípios, p. 890 a 892), cap. 26 (tumor de células gigantes, p. 986), cap. 37 (plexo de BATSON, p. 1647) e cap. 42 (metástases da coluna, p. 1945 a 1948); Rockwood and Green, 10ª ed., cap. 25 (fraturas patológicas), sem página impressa no texto. As páginas citadas do Campbell são as impressas.
+fonte: Livros conferidos localmente em 30/10/2026, no original em inglês. Campbell, cap. 27 (carcinoma metastático, p. 1028 a 1040, com osteossarcoma e Ewing, p. 1009 a 1020), cap. 24 (princípios, p. 890 a 892), cap. 26 (tumor de células gigantes, p. 986), cap. 42 (metástases da coluna, p. 1945 a 1948); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 28 (tumor de células gigantes, p. 952), cap. 29 (carcinoma metastático, imagem, p. 990), cap. 43 (plexo de BATSON, p. 1694 e 1695) e cap. 49 (metástases da coluna, p. 1967); Rockwood and Green, 10ª ed., cap. 25 (fraturas patológicas), sem página impressa no texto. As páginas citadas do Campbell são as impressas.
 subtemas: Metástases ósseas
-resumo: Carcinoma metastático é a malignidade mais tratada pelo ortopedista; acima de 40 anos, lesão agressiva nova é metástase ou mieloma; primários mais comuns mama e próstata, mas na origem desconhecida pulmão e rim; blásticas (mama, próstata), líticas (rim, tireoide), mistas (pulmão); distal ao cotovelo ou joelho, pulmão; investigar antes de biopsiar (85% acham o primário); rim radiorresistente e ressecção ampla da lesão renal isolada; fratura iminente (2,5 cm, 50% da cortical, trocânter menor, HARRINGTON) e MIRELS (8 ou mais); coluna torácica (70%) e corpo vertebral.
+resumo: Carcinoma metastático é a malignidade mais tratada pelo ortopedista; acima de 40 anos, lesão agressiva nova é metástase ou mieloma; primários mais comuns mama e próstata, mas na origem desconhecida pulmão e rim; próstata blástica, mama tipicamente lítica (Campbell 15), rim e tireoide líticas, pulmão mista; distal ao cotovelo ou joelho, pulmão; investigar antes de biopsiar (85% acham o primário); rim radiorresistente e ressecção ampla da lesão renal isolada; fratura iminente (2,5 cm, 50% da cortical, trocânter menor, HARRINGTON) e MIRELS (8 ou mais); coluna torácica (60% no Campbell 15; 70% na 14ª) e corpo vertebral.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -28,13 +28,13 @@ A seção do Campbell sobre metástases é curta, de poucas páginas, e por isso
 - **A coluna**: região mais acometida, local na vértebra, compressão medular.
 - **Os vizinhos**: questões de metástase pulmonar de tumores primários (tumor de células gigantes, Ewing, osteossarcoma) que o acervo classifica no mesmo subtema.
 
-> **Na prova:** **mama e próstata** são as que mais metastatizam para o osso, mas na **origem desconhecida** pense em **pulmão e rim**; **blásticas** mama e próstata, **líticas** rim e tireoide, **mista** pulmão; **distal ao cotovelo ou ao joelho = pulmão**; **rim** é radiorresistente e, isolado, vai para **ressecção ampla**; MIRELS **8 ou mais** = fixar; coluna **torácica** (70%) e **corpo vertebral**.
+> **Na prova:** **mama e próstata** são as que mais metastatizam para o osso, mas na **origem desconhecida** pense em **pulmão e rim**; **blástica** a próstata, **lítica** típica a mama (Campbell 15), **líticas puras** rim e tireoide, **mista** pulmão; **distal ao cotovelo ou ao joelho = pulmão**; **rim** é radiorresistente e, isolado, vai para **ressecção ampla**; MIRELS **8 ou mais** = fixar; coluna **torácica** (60% no Campbell 15) e **corpo vertebral**.
 
 # O tamanho do problema e a regra dos 40 anos {radar=fundamento}
 
 **Não ser fatalista.** O Campbell insiste: com a melhora do tratamento dos tumores primários, a sobrevida depois do diagnóstico das metástases ósseas é cada vez maior, e o ortopedista não deve abordar esses pacientes com atitude fatalista. O cuidado ortopédico certo é crucial para diminuir a dor, manter a função e a independência e melhorar a qualidade de vida (cap. 27, p. 1028).
 
-**A regra que orienta tudo.** **Se o paciente tem história de carcinoma, mesmo no passado remoto, uma lesão óssea nova é provavelmente uma metástase. Em qualquer paciente com mais de 40 anos, mesmo sem história de câncer, uma lesão óssea nova e de aspecto agressivo é provavelmente carcinoma metastático ou mieloma múltiplo** (p. 1028). O Rockwood completa o diagnóstico diferencial de uma lesão lítica acima dos 40 anos: **metástase, mieloma múltiplo, linfoma e infecção**; e lembra que a causa mais comum de uma lesão lítica acima dos 40 anos é a metástase (Rockwood, cap. 25).
+**A regra que orienta tudo.** **Se o paciente tem história de carcinoma, mesmo no passado remoto, uma lesão óssea nova é provavelmente uma metástase. Em qualquer paciente com mais de 40 anos, mesmo sem história de câncer, uma lesão óssea nova e de aspecto agressivo é provavelmente carcinoma metastático ou mieloma múltiplo** (p. 1028). O Rockwood completa o diagnóstico diferencial de uma lesão lítica acima dos 40 anos: **metástase, mieloma múltiplo, linfoma e infecção**; e lembra que a causa mais comum de uma lesão lítica acima dos 40 anos é a metástase (Rockwood, cap. 25). Não confunda com a fratura patológica em geral: **a causa mais comum de fratura patológica é a osteoporose, com as fraturas por fragilidade**; a metástase é a que traz o desafio cirúrgico e exige equipe multidisciplinar (Rockwood, cap. 25, Introdução).
 
 **A armadilha que essa regra esconde.** O próprio Campbell mostra por que não se pode tratar toda lesão lítica de adulto como metástase sem biópsia: uma mulher de 50 anos, com câncer de mama e 2 anos livre de doença, tinha uma lesão lítica no colo do fêmur; a biópsia mostrou um histiocitoma fibroso maligno, um sarcoma primário, tratado com ressecção ampla e endoprótese. Se ela tivesse recebido uma fixação profilática para uma "metástase presumida", o resultado teria sido gravemente comprometido (Fig. 27.23, p. 1031). O Rockwood resume: **não assuma de imediato que uma lesão lítica ou uma fratura patológica é de doença metastática** (cap. 25).
 
@@ -58,7 +58,7 @@ armadilha: Responder mama ou próstata na origem desconhecida: são incomuns nes
 
 # Como a metástase chega ao osso {radar=confirmado}
 
-**O caminho venoso.** As células do tumor primário chegam ao osso pelo sangue. Boa parte delas passa pela veia cava ou pelo sistema porta e acaba filtrada nos pulmões e no fígado. Mas existe um atalho: o **plexo venoso vertebral de BATSON**. O Campbell o descreve como um canal venoso grande e complexo, que se estende **da base do crânio ao cóccix** e **comunica-se diretamente com os sistemas da veia cava superior e inferior e com o sistema ázigo**; seus componentes são o plexo venoso vertebral extradural, o plexo extravertebral (veias segmentares do pescoço, intercostais, comunicações com a ázigo no tórax e na pelve, veias lombares) e as veias do próprio corpo vertebral (cap. 37, p. 1647). Por essa rede, o sangue das cavas e da ázigo se comunica diretamente com as veias das vértebras, um caminho que ajuda a entender por que a **coluna é o local mais comum de metástase esquelética** (cap. 42, p. 1945).
+**O caminho venoso.** As células do tumor primário chegam ao osso pelo sangue. Boa parte delas passa pela veia cava ou pelo sistema porta e acaba filtrada nos pulmões e no fígado. Mas existe um atalho: o **plexo venoso vertebral de BATSON**. O Campbell o descreve como um canal venoso grande e complexo, que se estende **da base do crânio ao cóccix** e **comunica-se diretamente com os sistemas da veia cava superior e inferior e com o sistema ázigo**; seus componentes são o plexo venoso vertebral extradural, o plexo extravertebral (veias segmentares do pescoço, intercostais, comunicações com a ázigo no tórax e na pelve, veias lombares) e as veias do próprio corpo vertebral (Campbell 15, cap. 43, p. 1694 e 1695). Por essa rede, o sangue das cavas e da ázigo se comunica diretamente com as veias das vértebras, um caminho que ajuda a entender por que a **coluna é o local mais comum de metástase esquelética** (cap. 42, p. 1945).
 
 **O caso especial do pulmão.** O câncer de pulmão já está no lugar do filtro. As suas células entram na circulação venosa pulmonar, chegam ao coração esquerdo e saem pela aorta, na circulação arterial sistêmica, podendo ir para qualquer osso, inclusive os mais distais, sem passar pelo sistema cava ou porta. O Campbell não descreve essa via em palavras, mas descreve a consequência, que cai muito na prova.
 
@@ -73,13 +73,13 @@ alerta: O Campbell descreve o plexo de BATSON e a lesão distal do pulmão, mas 
 
 # O aspecto na imagem {radar=confirmado}
 
-**Lítica, blástica ou mista.** O aspecto radiográfico do carcinoma metastático varia, mas costuma ser **agressivo**, sugerindo malignidade. **Mama e próstata produzem tipicamente lesões blásticas; rim e tireoide são em geral puramente líticos; o pulmão pode dar um aspecto misto** (Campbell, cap. 27, p. 1028). O Rockwood refina: as **lesões líticas são as mais comuns** e ocorrem nas metástases de pulmão, tireoide, rim, cólon e mama; as **blásticas são as mais comuns na próstata**; e a mama pode aparecer lítica ou blástica (cap. 25). As líticas resultam do desacoplamento da remodelação, com aumento da reabsorção pelos osteoclastos; as blásticas parecem densas, mas o osso é frágil e também fratura.
+**Lítica, blástica ou mista.** O aspecto radiográfico do carcinoma metastático varia, mas costuma ser **agressivo**, sugerindo malignidade. O Campbell 15 é explícito: **mama e próstata podem produzir os três padrões, ou lesões mistas, mas a próstata se associa tipicamente a lesões blásticas e a mama a lesões líticas; rim e tireoide são em geral puramente líticos; o pulmão pode dar um aspecto misto** (Campbell 15, cap. 29, p. 990). O Rockwood refina: as **lesões líticas são as mais comuns** e ocorrem nas metástases de pulmão, tireoide, rim, cólon e mama; as **blásticas são as mais comuns na próstata**; e a mama pode aparecer lítica ou blástica (cap. 25). As líticas resultam do desacoplamento da remodelação, com aumento da reabsorção pelos osteoclastos; as blásticas parecem densas, mas o osso é frágil e também fratura.
 
-!tabela Padrão radiográfico por primário (Campbell, cap. 27, p. 1028 e Tabela 27.2; Rockwood, cap. 25)
+!tabela Padrão radiográfico por primário (Campbell 15, cap. 29, p. 990; Campbell 14, Tabela 27.2; Rockwood, cap. 25)
 | Primário | Padrão típico | Detalhe |
 |---|---|---|
 | Próstata | BLÁSTICO | o mais blástico de todos |
-| Mama | BLÁSTICO no Campbell; lítico ou blástico no Rockwood | latência longa |
+| Mama | LÍTICO típico no Campbell 15 (pode ser blástico ou misto); lítico ou blástico no Rockwood | latência longa |
 | Rim | LÍTICO puro | vascular, radiorresistente |
 | Tireoide | LÍTICO puro | vascular; lesão isolada tardia (folicular) |
 | Pulmão | MISTO | distal ao cotovelo e joelho; "mordida" na cortical |
@@ -97,9 +97,9 @@ alerta: O Campbell descreve o plexo de BATSON e a lesão distal do pulmão, mas 
 **No osteossarcoma, o mesmo raciocínio.** No estadiamento do osteossarcoma, pede-se cintilografia para procurar metástases ósseas e radiografia e **tomografia do tórax para as metástases pulmonares**, porque **os pulmões são o local mais comum de metástase**; cerca de 15% têm metástases pulmonares detectáveis ao diagnóstico (Campbell, cap. 27, p. 1009 e 1012). A extensão local do tumor é avaliada pela ressonância.
 
 !questoes central=tumores-0021 relacionadas=tumores-0192,tumores-0078,tumores-0341 treino=tumores-0394,tumores-0374,tumores-0375
-conceito: Mama e próstata dão lesões blásticas, rim e tireoide líticas puras, pulmão mista; a metástase destrói a cortical com pouca reação periosteal; a tomografia é o melhor exame para o nicho do osteoma osteoide e para as metástases pulmonares; a cintilografia falha no mieloma e em alguns rins.
+conceito: A próstata dá lesão tipicamente blástica e a mama tipicamente lítica (ambas podem dar os três padrões), rim e tireoide líticas puras, pulmão mista; a metástase destrói a cortical com pouca reação periosteal; a tomografia é o melhor exame para o nicho do osteoma osteoide e para as metástases pulmonares; a cintilografia falha no mieloma e em alguns rins.
 como: O TARO 2018 pediu o padrão de rim, tireoide e próstata; o TEOT 2024, as bordas e a reação periosteal; o TEOT 2021, o exame para o osteoma osteoide e a metástase pulmonar; o TARO 2009, a avaliação do osteossarcoma.
-armadilha: Chamar a metástase de mama de lítica pura ou a de rim de blástica.
+armadilha: Chamar a metástase de mama de tipicamente blástica (no Campbell 15 ela é tipicamente lítica, e a blástica típica é a próstata) ou a de rim de blástica.
 alerta: A afirmação de que as bordas são irregulares com quase nenhuma reação periosteal (`tumores-0192`) é uma síntese do aspecto agressivo descrito nos livros, sem a frase literal; o gabarito oficial foi preservado.
 !fim
 
@@ -259,7 +259,7 @@ armadilha: Indicar ressecção ampla para a metástase isolada de mama ou próst
 
 # A coluna {radar=confirmado}
 
-**A coluna é o alvo preferido.** As metástases acometem a coluna em **50% a 85%** dos pacientes, e **a coluna é o local mais comum de metástase esquelética**. A disseminação favorece a **região torácica (70%)**, seguida da **lombar (20%)**, da cervical e do sacro. **O corpo vertebral é o local mais comum**, seguido do pedículo e dos elementos posteriores. **Noventa por cento dos tumores são extradurais**, 5% intradurais e 1% intramedulares (Campbell, cap. 42, p. 1945). O Rockwood confirma que as metástases acometem com mais frequência o corpo vertebral que os elementos posteriores (cap. 25). Na tabela de diagnóstico por localização do Campbell, as lesões do **corpo vertebral** incluem metástase e mieloma, enquanto os **elementos posteriores** são território de lesões benignas como o cisto ósseo aneurismático, o osteoblastoma e o osteoma osteoide; **as lesões anteriores tendem a ser malignas (76%)** (cap. 42, p. 1939).
+**A coluna é o alvo preferido.** As metástases acometem a coluna em **50% a 85%** dos pacientes, e **a coluna é o local mais comum de metástase esquelética**. A disseminação favorece a **região torácica (60%)**, seguida da **lombar (25%)**, da **cervical (10%)** e, por último, do sacro. **O corpo vertebral é o local mais comum**, seguido do pedículo e dos elementos posteriores. **Mais de 90% dos tumores são extradurais**, 5% intradurais e 1% intramedulares (Campbell 15, cap. 49, p. 1967). A 14ª edição dava torácica 70% e lombar 20% (cap. 42, p. 1945); a ordem é a mesma nas duas. O Rockwood confirma que as metástases acometem com mais frequência o corpo vertebral que os elementos posteriores (cap. 25). Na tabela de diagnóstico por localização do Campbell, as lesões do **corpo vertebral** incluem metástase e mieloma, enquanto os **elementos posteriores** são território de lesões benignas como o cisto ósseo aneurismático, o osteoblastoma e o osteoma osteoide; **as lesões anteriores tendem a ser malignas (76%)** (cap. 42, p. 1939).
 
 **Os sintomas.** A queixa principal é a **dor**, progressiva e contínua, que não melhora com o repouso nem à noite, embora 36% das metástases da coluna não deem sintoma. História de câncer, por mais antiga, obriga a procurar metástase. Os sinais neurológicos aparecem em 5% a 20%, mas chegam a **37% nas metástases torácicas**, provavelmente porque há menos espaço para a medula. Com déficit e paraparesia, só 25% a 35% recuperam a força perdida; paciente paraplégico ou com perda completa do controle esfincteriano há mais de 12 horas dificilmente recupera, e o início rápido (menos de 24 horas) também piora o prognóstico. Com tratamento agressivo, 60% dos que andavam antes continuam andando (p. 1945).
 
@@ -268,17 +268,17 @@ armadilha: Indicar ressecção ampla para a metástase isolada de mama ou próst
 **Osteoporose ou metástase?** Na tomografia, a fratura osteoporótica não destrói a cortical, acomete o corpo de forma homogênea e não tem massa de partes moles (Campbell, p. 1946). O Rockwood diz que a substituição completa do segmento vertebral, várias lesões no corpo, o acometimento do pedículo e o disco intacto tornam a metástase o diagnóstico mais provável (cap. 25).
 
 !questoes central=tumores-0243 relacionadas=tumores-0095,tumores-0101 treino=tumores-0384
-conceito: A coluna é o local mais comum de metástase esquelética; a região torácica recebe 70%, a lombar 20%; o corpo vertebral é o local mais comum na vértebra; a laminectomia tem pouco valor na compressão anterior, e a descompressão anterior é a mais útil.
+conceito: A coluna é o local mais comum de metástase esquelética; a região torácica recebe 60%, a lombar 25% e a cervical 10% (Campbell 15; 70% e 20% na 14ª); o corpo vertebral é o local mais comum na vértebra; a laminectomia tem pouco valor na compressão anterior, e a descompressão anterior é a mais útil.
 como: O SBOT-SP perguntou o local da vértebra; outra banca, a região da coluna e a relação entre a mama e a coluna lombar.
 armadilha: Escolher os elementos posteriores: eles são o território das lesões benignas.
-alerta: O Campbell coloca a região torácica como a mais acometida no geral (70%) e não traz a predileção da mama pela coluna lombar (`tumores-0101`); o gabarito oficial foi preservado.
+alerta: O Campbell coloca a região torácica como a mais acometida no geral (60% no Campbell 15, cap. 49, p. 1967) e não traz a predileção da mama pela coluna lombar (`tumores-0101`); o gabarito oficial foi preservado.
 !fim
 
 # Os vizinhos: metástases de tumores primários {radar=confirmado}
 
 Algumas questões classificadas neste subtema perguntam para onde metastatizam os tumores primários do osso. Vale ter os números à mão.
 
-**Tumor de células gigantes.** Embora seja tipicamente benigno, **metástases pulmonares ocorrem em cerca de 3% dos pacientes**; alguns têm regressão espontânea ou ficam assintomáticos por anos, outros têm doença pulmonar progressiva. A maioria das recidivas e das metástases pulmonares aparece até 3 anos, mas já houve casos 20 anos depois; por isso se pede radiografia do tórax no diagnóstico e o seguimento é longo (Campbell, cap. 26, p. 986 e 988).
+**Tumor de células gigantes.** Embora seja tipicamente benigno, **metástases pulmonares ocorrem em cerca de 3% dos pacientes**; alguns têm regressão espontânea ou ficam assintomáticos por anos, outros têm doença pulmonar progressiva. A maioria das recidivas e das metástases pulmonares aparece até 3 anos, mas já houve casos 20 anos depois; por isso se pede radiografia do tórax no diagnóstico e o seguimento é longo (Campbell, cap. 26, p. 986 e 988). O Campbell 15 mantém os 3%, acrescenta que a mortalidade de quem tem metástase pulmonar é de cerca de 15% e separa disso o **tumor de células gigantes maligno**, a transformação sarcomatosa de um tumor convencional, **estimada em menos de 10% dos casos**: primária quando o sarcoma já aparece junto ao tumor no diagnóstico, secundária quando surge anos depois num tumor tratado, muitas vezes após radioterapia; o osteossarcoma é o subtipo histológico mais comum (cap. 28, p. 952).
 
 **Osteossarcoma.** Os pulmões são o local mais comum de metástase; cerca de **15%** têm metástase pulmonar detectável ao diagnóstico. Pacientes com uma ou poucas metástases pulmonares ressecáveis podem ter mais de 50% de sobrevida a longo prazo, e metástases não pulmonares (ósseas) têm prognóstico ainda pior, com menos de 5% (cap. 27, p. 1012). O estadiamento usa tomografia do tórax e cintilografia (p. 1009).
 
@@ -305,7 +305,7 @@ alerta: A lesão precursora do carcinoma espinocelular (`tumores-0169`) não é 
 | Primários | mama e próstata, depois pulmão, rim, tireoide, gastrointestinal |
 | Origem desconhecida | PULMÃO e RIM; investigação acha o primário em mais de 85% |
 | Distal ao cotovelo ou joelho | PULMÃO; "mordida" na cortical |
-| Padrão | blástica: mama, próstata; lítica: rim, tireoide; mista: pulmão |
+| Padrão | blástica: próstata; lítica típica: mama (Campbell 15); lítica pura: rim, tireoide; mista: pulmão |
 | Imagem | TC = nicho do osteoma osteoide e metástase pulmonar; cintilografia falha no mieloma e no rim |
 | Biópsia | sempre da primeira lesão, como se fosse sarcoma; evitar biópsia aberta em rim, tireoide e mieloma |
 | Radiorresistente | RIM (ablação, crioablação); bisfosfonatos inibem osteoclastos |
@@ -314,7 +314,7 @@ alerta: A lesão precursora do carcinoma espinocelular (`tumores-0169`) não é 
 | Fratura em banana | transversa, trauma mínimo, osso anormal |
 | Fixação | carga total imediata; ressecar, cimentar, proteger o osso inteiro; subtrocantérica não aceita placa |
 | Rim isolado | ressecção AMPLA com intenção curativa |
-| Coluna | torácica 70%, lombar 20%; CORPO vertebral; descompressão anterior; laminectomia tem pouco valor |
+| Coluna | torácica 60%, lombar 25%, cervical 10% (Campbell 15; 70% e 20% na 14ª); CORPO vertebral; descompressão anterior; laminectomia tem pouco valor |
 | Vizinhos | tumor de células gigantes 3% de metástase pulmonar; Ewing: pulmão, depois osso |
 !fim
 

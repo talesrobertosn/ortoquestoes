@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-pe-tornozelo
-versao: 1
+versao: 2
 titulo: Imagem do pé e tornozelo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª ed., o Tachdjian's Pediatric Orthopaedics, 6ª ed., e o Ortopedia e Traumatologia (HEBERT), 5ª ed.
 capitulo: Capítulo 93 · Fractures and Dislocations of the Foot
 autores: Clayton C. Bettin
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., caps. 93 (p. 4063 a 4064.e1, 4084, 4096, 4113 a 4114), 31 (p. 1049 a 1050), 35 (p. 1263), 38 (p. 1474), 59 (p. 2571 a 2572), 63, 87 (p. 3709 a 3716), 88 (p. 3814 a 3817), 91 (p. 3999.e1 a 4011), 92 (p. 4040 a 4041) e 94 (p. 4135 a 4140, 4162 a 4163); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 65, 66 e 67 (seções de imagem, sem página impressa no cabeçalho); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (p. 683, 697, 742 a 743, 749, 759 a 760) e cap. 34 (p. 1683); Ortopedia e Traumatologia: Princípios e Prática (HEBERT et al.), 5ª ed., caps. 20.4, 21.3, 21.4, 21.5, 21.7, 68, 69 e 70 (sem página impressa no cabeçalho). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., caps. 93 (p. 4063 a 4064.e1, 4084, 4096, 4113 a 4114), 31 (p. 1049 a 1050), 35 (p. 1263), 38 (p. 1474), 59 (p. 2571 a 2572), 63, 87 (p. 3709 a 3716), 88 (p. 3814 a 3817), 91 (p. 3999.e1 a 4011), 92 (p. 4040 a 4041) e 94 (p. 4135 a 4140, 4162 a 4163); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 65, 66 e 67 (seções de imagem e, no cap. 66, a seção de necrose avascular; citados por capítulo e seção, sem página impressa no cabeçalho); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (p. 683, 697, 742 a 743, 749, 759 a 760) e cap. 34 (p. 1683); Ortopedia e Traumatologia: Princípios e Prática (HEBERT et al.), 5ª ed., caps. 20.4, 21.3, 21.4, 21.5, 21.7, 68, 69 e 70 (sem página impressa no cabeçalho). As páginas citadas são as impressas.
 subtemas: Imagem do pé e tornozelo
 resumo: Radiografia do pé sempre com carga; KITE (talocalcâneo) aumenta no plano valgo (AP 20 a 40°) e tende a zero no cavo e no pé torto (varo, paralelismo); MEARY é tálus com primeiro metatarso no perfil, normal 0°; pitch 15 a 25° (SIZÍNIO) ou 18 a 32° (Campbell); hálux normal até 15° e intermetatarsal até 9°; calcâneo com cinco incidências (perfil, HARRIS, AP, oblíqua e BRODEN em rotação interna de 40° com raio cefálico de 10 a 15°), BÖHLER 20 a 40° que cai e GISSANE 120 a 140° que sobe, BÖHLER normal com faceta dividida (dupla densidade); CANALE com pé pronado 15° e tubo a 75°; sinal de HAWKINS em 6 a 8 semanas exclui necrose; estresse do deltoide em supinação e rotação externa; BRODEN em inversão para a subtalar; nariz de tamanduá no perfil e oblíqua a 45° na coalizão calcaneonavicular; tálus vertical não reduz em flexão plantar; EICHENHOLTZ 1 = destruição com edema e calor.
 ---
@@ -27,13 +27,13 @@ A regra que organiza quase tudo: **o pé se estuda em carga**. A radiografia sem
 
 ## Por que com carga
 
-O pé é uma estrutura articulada que muda de forma quando recebe o peso do corpo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 92, p. 4041 aprox.), abre a avaliação do pé cavo com uma **série com carga do pé e do tornozelo**, e lembra que os muitos ângulos descritos servem mais para pesquisa do que para o dia a dia: o que importa é reconhecer a relação anormal entre retropé, mediopé e antepé. No hálux valgo (cap. 87, p. 3713), o livro insiste em **radiografia com carga e posicionamento correto**, porque o ângulo do hálux é mais sensível a uma radiografia mal feita do que o intermetatarsal. O HEBERT (cap. 21.3) repete: a radiografia adequada é com carga, com o peso distribuído no pé inteiro, porque a postura antálgica muda a relação entre os ossos.
+O pé é uma estrutura articulada que muda de forma quando recebe o peso do corpo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 92, p. 4041), abre a avaliação do pé cavo com uma **série com carga do pé e do tornozelo**, e lembra que os muitos ângulos descritos servem mais para pesquisa do que para o dia a dia: o que importa é reconhecer a relação anormal entre retropé, mediopé e antepé. No hálux valgo (cap. 87, p. 3713), o livro insiste em **radiografia com carga e posicionamento correto**, porque o ângulo do hálux é mais sensível a uma radiografia mal feita do que o intermetatarsal. O HEBERT (cap. 21.3) repete: a radiografia adequada é com carga, com o peso distribuído no pé inteiro, porque a postura antálgica muda a relação entre os ossos.
 
-Na lesão de LISFRANC (Campbell, cap. 93, p. 4113 aprox.), a carga é diagnóstica: se a radiografia não mostra desvio e o paciente não consegue apoiar, imobiliza-se por duas semanas e **repete-se com carga, os dois pés no mesmo chassi**, para comparar e revelar a lesão sutil.
+Na lesão de LISFRANC (Campbell, cap. 93, p. 4113), a carga é diagnóstica: se a radiografia não mostra desvio e o paciente não consegue apoiar, imobiliza-se por duas semanas e **repete-se com carga, os dois pés no mesmo chassi**, para comparar e revelar a lesão sutil.
 
 ## Quem faz o quê
 
-A radiografia é sempre o primeiro exame. A **TC** entra quando há ou se suspeita de lesão articular, para classificar e planejar (calcâneo, tálus, coalizão talocalcânea, LISFRANC sutil). A **RM** fica para partes moles, lesões ocultas (fratura de estresse, coalizão fibrosa, lesão osteocondral estágio I) e necrose do tálus. A **TC com carga** aparece em vários capítulos do Campbell como o exame que mostra a deformidade real, porque a imagem sem carga subestima a correção necessária (cap. 88, p. 3817 aprox.).
+A radiografia é sempre o primeiro exame. A **TC** entra quando há ou se suspeita de lesão articular, para classificar e planejar (calcâneo, tálus, coalizão talocalcânea, LISFRANC sutil). A **RM** fica para partes moles, lesões ocultas (fratura de estresse, coalizão fibrosa, lesão osteocondral estágio I) e necrose do tálus. A **TC com carga** aparece em vários capítulos do Campbell como o exame que mostra a deformidade real, porque a imagem sem carga subestima a correção necessária (cap. 88, p. 3817).
 
 !tabela As incidências e o que cada uma responde (Campbell 15, caps. 87, 88, 92, 93 e 94; Rockwood adultos 10, caps. 66 e 67; Tachdjian 6, cap. 19)
 | Incidência | Como se faz | O que responde |
@@ -51,7 +51,7 @@ A radiografia é sempre o primeiro exame. A **TC** entra quando há ou se suspei
 
 ## Duas incidências que viraram nome de banca
 
-**HARRIS** (axial do calcâneo) mede **largura e varo**; **BRODEN** (oblíqua do retropé) mostra a **faceta posterior** de lado, em várias angulações, para ver se a fratura entrou na articulação. A incidência de alinhamento do retropé com carga, que o Campbell chama de hindfoot alignment view (cap. 92, p. 4041 aprox.) sem epônimo nos trechos lidos, mostra o calcâneo sob o eixo da tíbia: varo no cavo, valgo no plano, e no plano mostra **mais valgo do que o exame clínico** (cap. 88, p. 3815 aprox.).
+**HARRIS** (axial do calcâneo) mede **largura e varo**; **BRODEN** (oblíqua do retropé) mostra a **faceta posterior** de lado, em várias angulações, para ver se a fratura entrou na articulação. A incidência de alinhamento do retropé com carga, que o Campbell chama de hindfoot alignment view (cap. 92, p. 4041) sem epônimo nos trechos lidos, mostra o calcâneo sob o eixo da tíbia: varo no cavo, valgo no plano, e no plano mostra **mais valgo do que o exame clínico** (cap. 88, p. 3815).
 
 # Pé plano: os ângulos que caem {radar=confirmado}
 
@@ -72,7 +72,7 @@ O Ortopedia e Traumatologia (HEBERT), 5ª ed. (cap. 20.4), lembra que o plano fl
 
 O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19, p. 697), define o **ângulo de MEARY como o ângulo lateral entre o tálus e o primeiro metatarso**, medido no perfil com carga, **normalmente 0° (uma linha reta)**. No plano flexível forma-se um ângulo de **ápice plantar**, e o local da quebra tem significado: **sag talonavicular** (o eixo do tálus passa só pela ponta inferior do navicular, que subluxou para dorsal) sugere **Aquiles curto**, com tálus fletido; **sag naviculocuneiforme** mantém o navicular centrado na cabeça do tálus. O valor normal varia com a idade, com melhora espontânea até os 8 anos. A flexão plantar do tálus em relação à horizontal é normalmente 26,5 ± 5,3°. O livro lembra que a maior razão para radiografar um pé plano é **excluir outra causa**: coalizão, tálus vertical, calcaneovalgo persistente, navicular acessório, artrites.
 
-O Campbell (cap. 88, p. 3814 a 3815 aprox.), no adulto com deformidade progressiva do pé colapsado (PCFD), usa o **talus-primeiro metatarso lateral, normal de 0 a 10° no perfil com carga**: o aumento indica perda do arco. **A perda do pitch indica perda do arco e contratura do gastrossóleo**, e o ângulo tibiocalcâneo lateral aumenta com a contratura do Aquiles. No AP, a abdução do antepé aumenta o talus-primeiro metatarso (normal 0), e o eixo do segundo metatarso deve bissectar o ângulo talocalcâneo. O consenso da AOFAS (Tab. 88.2) lista o **aumento do ângulo de cobertura talonavicular** e a menor cobertura da cabeça do tálus; a Fig. 88.8 mostra no AP a **divergência do ângulo talocalcâneo (KITE)**.
+O Campbell (cap. 88, p. 3814 a 3815), no adulto com deformidade progressiva do pé colapsado (PCFD), usa o **talus-primeiro metatarso lateral, normal de 0 a 10° no perfil com carga**: o aumento indica perda do arco. **A perda do pitch indica perda do arco e contratura do gastrossóleo**, e o ângulo tibiocalcâneo lateral aumenta com a contratura do Aquiles. No AP, a abdução do antepé aumenta o talus-primeiro metatarso (normal 0), e o eixo do segundo metatarso deve bissectar o ângulo talocalcâneo. O consenso da AOFAS (Tab. 88.2) lista o **aumento do ângulo de cobertura talonavicular** e a menor cobertura da cabeça do tálus; a Fig. 88.8 mostra no AP a **divergência do ângulo talocalcâneo (KITE)**.
 
 !tabela Ângulos do pé plano e seus valores (HEBERT 5, cap. 20.4; Tachdjian 6, cap. 19, p. 697; Campbell 15, cap. 88, p. 3814 a 3815)
 | Ângulo | Incidência | Normal | No plano valgo |
@@ -109,7 +109,7 @@ armadilha: Trocar o primeiro pelo segundo metatarsal ou o tálus pelo calcâneo.
 
 O cavo é o inverso do plano. O primeiro raio cai em flexão plantar, o antepé fica em pronação rígida e o retropé roda para varo para que o pé consiga apoiar o lado lateral no chão. Na radiografia, o calcâneo gira sob o tálus de modo que os dois ossos ficam **paralelos**: o ângulo talocalcâneo **fecha** no AP e no perfil.
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 92, p. 4041 aprox.), descreve a série com carga do cavo. O **perfil em carga** permite ver a contribuição do retropé (tálus e calcâneo), do mediopé (navicular, cuboide e cuneiformes) e do antepé (LISFRANC), e mede o **pitch do calcâneo**, o **ângulo talo-primeiro metatarso (MEARY)**, o **talocalcâneo lateral** e a **altura do cuneiforme medial**. A extensão das falanges sobre as cabeças dos metatarsais em carga ajuda a medir a gravidade da deformidade fixa do antepé. A **incidência de alinhamento do retropé com carga** mostra o calcâneo em relação à tíbia, com graus variáveis de **varo**. O **AP em carga** mostra hipercobertura da cabeça do tálus, metatarso aduto, talocalcâneo e talo-primeiro metatarso; no cavo flexível, um AP com o retropé corrigido pelo **bloco de COLEMAN** confirma se há metatarso aduto verdadeiro.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 92, p. 4041), descreve a série com carga do cavo. O **perfil em carga** permite ver a contribuição do retropé (tálus e calcâneo), do mediopé (navicular, cuboide e cuneiformes) e do antepé (LISFRANC), e mede o **pitch do calcâneo**, o **ângulo talo-primeiro metatarso (MEARY)**, o **talocalcâneo lateral** e a **altura do cuneiforme medial**. A extensão das falanges sobre as cabeças dos metatarsais em carga ajuda a medir a gravidade da deformidade fixa do antepé. A **incidência de alinhamento do retropé com carga** mostra o calcâneo em relação à tíbia, com graus variáveis de **varo**. O **AP em carga** mostra hipercobertura da cabeça do tálus, metatarso aduto, talocalcâneo e talo-primeiro metatarso; no cavo flexível, um AP com o retropé corrigido pelo **bloco de COLEMAN** confirma se há metatarso aduto verdadeiro.
 
 E a frase que a banca transformou em questão: **o ângulo talocalcâneo (KITE) é medido no AP; quanto mais ele se aproxima de 0, mais paralelo o tálus fica em relação ao calcâneo, o que indica varo do retropé.** Outros achados: artrose tibiotalar, subtalar ou mediotársica; **rotação do tálus na pinça, vista como fíbula posterior**; ossificação distrófica em partes moles. A TC tem benefício duvidoso para o tratamento conservador, mas é valiosa no planejamento.
 
@@ -140,7 +140,7 @@ armadilha: Associar o ângulo pequeno a valgo ou a uma alteração do antepé (p
 
 ## Pé torto congênito: paralelismo
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31, p. 1049 aprox.), diz que a radiografia não é rotina no pé torto: ela entra se o caso for atípico, associado a síndrome genética ou neurológica, ou resistente ao tratamento inicial. Na criança que não anda, pedem-se **AP com carga simulada e perfil em dorsiflexão sob estresse** dos dois pés; na criança maior, AP e perfil em pé. A ultrassonografia é alternativa sem radiação. As classificações de PIRANI (seis achados, 0, 0,5 ou 1 cada, máximo 6) e DIMÉGLIO são clínicas e, por terem sido correlacionadas com a radiografia, **dispensam radiografia na avaliação inicial** da maioria.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31, p. 1049), diz que a radiografia não é rotina no pé torto: ela entra se o caso for atípico, associado a síndrome genética ou neurológica, ou resistente ao tratamento inicial. Na criança que não anda, pedem-se **AP com carga simulada e perfil em dorsiflexão sob estresse** dos dois pés; na criança maior, AP e perfil em pé. A ultrassonografia é alternativa sem radiação. As classificações de PIRANI (seis achados, 0, 0,5 ou 1 cada, máximo 6) e DIMÉGLIO são clínicas e, por terem sido correlacionadas com a radiografia, **dispensam radiografia na avaliação inicial** da maioria.
 
 Os quatro ângulos que o livro destaca:
 
@@ -361,7 +361,7 @@ A TC (Rockwood, cap. 66) dá local, tamanho, desvio e cominuição, mostra sublu
 
 ## O sinal de HAWKINS
 
-O Campbell (cap. 93, p. 4096) descreve o sinal: **entre 6 e 8 semanas após a fratura, uma linha fina de atrofia subcondral ao longo da cúpula do tálus, vista no AP, indica que há vascularização e exclui o diagnóstico de osteonecrose.** O mecanismo explica: só osso vivo, com circulação, consegue reabsorver cálcio durante o desuso; o corpo necrótico não reabsorve e fica relativamente mais denso que o osso vizinho. Se o sinal **não aparece**, a necrose **pode ou não** ocorrer: o sinal é **sensível, mas não específico**. Na necrose, o osso fica **denso e esclerótico**, o que pode levar meses. A RM ajuda, mas só depois de **2 a 3 meses** do pós-operatório, para o edema cirúrgico se resolver.
+O Campbell (cap. 93, p. 4096) descreve o sinal: **entre 6 e 8 semanas após a fratura, uma linha fina de atrofia subcondral ao longo da cúpula do tálus, vista no AP, indica que há vascularização e exclui o diagnóstico de osteonecrose.** O mecanismo explica: só osso vivo, com circulação, consegue reabsorver cálcio durante o desuso; o corpo necrótico não reabsorve e fica relativamente mais denso que o osso vizinho. Se o sinal **não aparece**, a necrose **pode ou não** ocorrer: o sinal é **sensível, mas não específico**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 66, seção Management of Expected Adverse Outcomes and Unexpected Complications, Avascular Necrosis), usa a palavra oposta: o sinal de HAWKINS, **quando presente, exclui a osteonecrose e é altamente específico**, e a ausência dele não torna a necrose uma certeza. Os dois livros concordam no que importa para a prova (presente exclui necrose; ausente não a confirma) e divergem só no rótulo estatístico, sensível no Campbell e específico no Rockwood. Na necrose, o osso fica **denso e esclerótico**, o que pode levar meses. A RM ajuda, mas só depois de **2 a 3 meses** do pós-operatório, para o edema cirúrgico se resolver.
 
 O HEBERT (cap. 70) põe o sinal **por volta da 7ª semana**, como zona de diminuição da densidade no AP, **sinal de revascularização e melhor prognóstico**; a necrose aparece na radiografia com 4 a 6 meses, e a RM tem dificuldade de separar necrose de edema até 3 semanas. A classificação de HAWKINS (Campbell, Tab. 38.11; HEBERT) vai de I (sem desvio) a III (corpo luxado da subtalar e do tornozelo), com o tipo IV de CANALE (luxação talonavicular), em que a incidência de necrose é muito alta.
 
@@ -372,7 +372,7 @@ O HEBERT (cap. 70) põe o sinal **por volta da 7ª semana**, como zona de diminu
 | CANALE e KELLY | pé pronado 15°, tubo a 75° da mesa (15° cefálico) | varo e comprimento medial do colo |
 | BRODÉN | rotação interna 30 a 45°, 10 a 40° | subtalar e fragmentos |
 | TC | rotina pré-operatória | cominuição, fragmentos presos |
-| sinal de HAWKINS | atrofia subcondral no AP em 6 a 8 semanas | presente = vascularizado; sensível, não específico |
+| sinal de HAWKINS | atrofia subcondral no AP em 6 a 8 semanas | presente = vascularizado; sensível e não específico (Campbell) ou altamente específico quando presente (Rockwood) |
 | RM | necrose desde a 2ª semana; esperar 2 a 3 meses no pós-operatório | necrose e lesão oculta |
 !fim
 
@@ -429,7 +429,7 @@ armadilha: Escolher o estresse em rotação externa gravitacional, que testa del
 
 # Mediopé: LISFRANC e sinais sutis {radar=oportunidade}
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, p. 4113 aprox. a 4114), dá a lista que deve ser conferida em toda suspeita de lesão de LISFRANC. A radiografia **tem de ser com carga**; se o paciente não apoia e a radiografia é normal, imobiliza-se e repete-se em duas semanas, **com os dois pés no mesmo chassi**. Equimose plantar e incapacidade de apoiar sugerem instabilidade.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, p. 4113 a 4114), dá a lista que deve ser conferida em toda suspeita de lesão de LISFRANC. A radiografia **tem de ser com carga**; se o paciente não apoia e a radiografia é normal, imobiliza-se e repete-se em duas semanas, **com os dois pés no mesmo chassi**. Equimose plantar e incapacidade de apoiar sugerem instabilidade.
 
 !tabela Critérios radiográficos da lesão de LISFRANC (Campbell 15, cap. 93, p. 4113 a 4114)
 | Incidência | O que deve estar alinhado ou o que procurar |
@@ -449,7 +449,7 @@ O nome "fleck sign" tem outro uso no mesmo livro (cap. 88): a **avulsão do reti
 
 ## A classificação é radiográfica e clínica
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 91, Tab. 91.4, p. 4011 aprox.), apresenta a classificação de EICHENHOLTZ com duas colunas, sinais radiográficos e sinais clínicos. A história natural (p. 4006) é constante: inflamação aguda e edema, depois reabsorção óssea, depois consolidação que estabiliza o pé. O MEARY, a altura do cuboide, o pitch e o ângulo retropé-antepé pioram com o tempo, e a coluna medial falha antes da lateral pela tração do tibial posterior. O tipo 1 anatômico (tarsometatarsal) é o mais frequente.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 91, Tab. 91.4, p. 4011), apresenta a classificação de EICHENHOLTZ com duas colunas, sinais radiográficos e sinais clínicos. A história natural (p. 4006) é constante: inflamação aguda e edema, depois reabsorção óssea, depois consolidação que estabiliza o pé. O MEARY, a altura do cuboide, o pitch e o ângulo retropé-antepé pioram com o tempo, e a coluna medial falha antes da lateral pela tração do tibial posterior. O tipo 1 anatômico (tarsometatarsal) é o mais frequente.
 
 !tabela Classificação de EICHENHOLTZ (Campbell 15, cap. 91, Tab. 91.4; HEBERT 5, cap. 21.7)
 | Estágio | Radiografia | Clínica |
@@ -484,7 +484,7 @@ O Campbell (cap. 91, p. 3999.e1 a 4000) discute a dúvida mais difícil do pé d
 
 # Lesão osteocondral do tálus e outras imagens úteis {radar=clinico}
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 94, p. 4162 a 4163 aprox.), lembra que quase **metade** das lesões osteocondrais do tálus passa despercebida no pronto-socorro como entorse; derrame persistente, sinovite tardia e travamento 4 a 5 semanas depois pedem imagem. As **oblíquas e o perfil em flexão plantar, sem sobreposição da tíbia**, mostram a lesão melhor que as incidências padrão. Se a suspeita persiste, cintilografia; se positiva, **TC com cortes de 2 mm axiais e coronais** para tamanho, local e cistos; a **RM** identifica o estágio I de BERNDT e HARTY e mostra a cartilagem. As lesões **mediais** são mais **posteriores, profundas e em taça** (inversão, flexão plantar e rotação lateral da tíbia sobre o tálus); as **laterais** são **anteriores, rasas e em bolacha**, mais deslocadas (inversão com dorsiflexão forte).
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 94, p. 4162 a 4163), lembra que quase **metade** das lesões osteocondrais do tálus passa despercebida no pronto-socorro como entorse; derrame persistente, sinovite tardia e travamento 4 a 5 semanas depois pedem imagem. As **oblíquas e o perfil em flexão plantar, sem sobreposição da tíbia**, mostram a lesão melhor que as incidências padrão. Se a suspeita persiste, cintilografia; se positiva, **TC com cortes de 2 mm axiais e coronais** para tamanho, local e cistos; a **RM** identifica o estágio I de BERNDT e HARTY e mostra a cartilagem. As lesões **mediais** são mais **posteriores, profundas e em taça** (inversão, flexão plantar e rotação lateral da tíbia sobre o tálus); as **laterais** são **anteriores, rasas e em bolacha**, mais deslocadas (inversão com dorsiflexão forte).
 
 Na consolidação viciosa do calcâneo, o Campbell (cap. 63) lembra que a radiografia mostra **perda do BÖHLER, alargamento do calcanhar, incongruência subtalar e varo**; a BRODEN informa a subtalar, mas **a TC é o exame mais preciso** para alinhamento e congruência. No mesmo raciocínio, o Campbell (cap. 93, p. 4084) pede, na artrodese subtalar com bloco, radiografia intraoperatória para restaurar o **talocalcâneo lateral, normalmente de 25 a 45°**.
 

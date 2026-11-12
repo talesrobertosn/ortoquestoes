@@ -1,6 +1,6 @@
 ---
 id: rockwood10-60-patela-mecanismo-extensor
-versao: 4
+versao: 5
 titulo: Fratura da patela, luxação aguda da patela e lesões do aparelho extensor
 especialidade: trauma
 acesso: gratis
@@ -80,7 +80,7 @@ armadilha: Polo proximal sem lesão de partes moles: as avulsões dos polos cost
 
 # Exame físico e fratura exposta oculta {radar=confirmado}
 
-A história típica é golpe direto, queda da própria altura ou quase queda com contração forte do quadríceps no joelho semifletido. A fratura desviada traz **hemartrose aguda** e **defeito palpável** e doloroso entre os fragmentos. **Derrame pequeno com defeito ósseo palpável** sugere ruptura dos retináculos, por onde o sangue escapou.
+A história típica é golpe direto, queda da própria altura ou quase queda com contração forte do quadríceps no joelho semifletido. A fratura desviada traz **hemartrose aguda** e **defeito palpável** e doloroso entre os fragmentos. **Derrame pequeno com defeito ósseo palpável** sugere ruptura dos retináculos.
 
 A competência do mecanismo extensor se testa com a **elevação da perna estendida** ou com a extensão, contra a gravidade, do joelho parcialmente fletido. A hemartrose grande dói e atrapalha o teste: **aspira-se a hemartrose e injeta-se anestésico local** na articulação. Estender o joelho **não exclui a fratura**; indica apenas que a manga retinacular está íntegra.
 

@@ -1,6 +1,6 @@
 ---
 id: campbell15-metatarsalgia-morton
-versao: 2
+versao: 3
 titulo: Metatarsalgia e neuroma de MORTON
 especialidade: pe-tornozelo
 acesso: gratis
@@ -122,7 +122,7 @@ alerta: `pe-tornozelo-0332` está sem gabarito oficial e já está ligada ao res
 
 ## O calçado
 
-O HEBERT (cap. 21.5) prefere o conservador: órteses, calçado, reabilitação das deformidades redutíveis, alongamento (intrínsecos, gastrossóleo, isquiotibiais) e desbridamento das hiperqueratoses, com a ressalva honesta de que **não há evidência de eficácia para todos os tipos**. Na frase em destaque, o calçado ideal tem **câmaras anteriores amplas e acomodativas, solas rígidas e convexas e revestimento moldável**; na M23, câmara larga e **salto de até 3 cm**; na pan-metatarsalgia, couro macio e salto de no máximo 3 cm. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3881 aprox.), para a sinovite da metatarsofalângica, pede **sola rígida** e uma **placa de aço flexível (spring steel)** na palmilha ou na sola para tirar a extensão do dedo; para o dedo em taco, calçado de profundidade extra.
+O HEBERT (cap. 21.5) prefere o conservador: órteses, calçado, reabilitação das deformidades redutíveis, alongamento (intrínsecos, gastrossóleo, isquiotibiais) e desbridamento das hiperqueratoses, com a ressalva honesta de que **não há evidência de eficácia para todos os tipos**. Na frase em destaque, o calçado ideal tem **câmaras anteriores amplas e acomodativas, solas rígidas e convexas e revestimento moldável**; na M23, câmara larga e **salto de até 3 cm**; na pan-metatarsalgia, couro macio e salto de no máximo 3 cm. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3881), para a sinovite da metatarsofalângica, pede **sola rígida** e uma **placa de aço flexível (spring steel)** na palmilha ou na sola para tirar a extensão do dedo; para o dedo em taco, calçado de profundidade extra.
 
 Há divergência dentro do próprio HEBERT, que na M23 fala em sola flexível. A sola rígida protege a articulação que dói ao estender (instabilidade, hálux rígido, sinovite); a flexível basta quando o problema é só redistribuir a carga.
 
@@ -168,7 +168,7 @@ A **barra metatarsal externa** é semicilíndrica, de couro, colada à sola **ex
 
 ## Quem tem e por quê
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3878 a 3879 aprox.), descreve um espectro da **sinovite à luxação e à deformidade crônica** (martelo, garra, dedo cruzado), sobretudo no **segundo dedo**, frequente em **mulheres acima de 50 anos com salto alto e bico apertado** e em **atletas com hiperextensão crônica**. O hálux valgo acompanha muito, mas **as causas mais prováveis são alterações atritivas do colateral lateral, da cápsula e da placa plantar por sinovite crônica, e não a pressão do hálux**; somam-se a sinovite das artrites sistêmicas, as doenças neuromusculares e a ruptura traumática aguda.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3878 e 3879), descreve um espectro da **sinovite à luxação e à deformidade crônica** (martelo, garra, dedo cruzado), sobretudo no **segundo dedo**, frequente em **mulheres acima de 50 anos com salto alto e bico apertado** e em **atletas com hiperextensão crônica**. O hálux valgo acompanha muito, mas **as causas mais prováveis são alterações atritivas do colateral lateral, da cápsula e da placa plantar por sinovite crônica, e não a pressão do hálux**; somam-se a sinovite das artrites sistêmicas, as doenças neuromusculares e a ruptura traumática aguda.
 
 ## Quem estende e quem flete
 
@@ -176,7 +176,7 @@ O **extensor longo** é a força extensora mais potente, por uma tipoia que se p
 
 ## A placa plantar, primeira a falhar
 
-Os estabilizadores estáticos são os **colaterais e a placa plantar**, e **a placa fornece a maior parte da estabilidade** (p. 3879 aprox. a 3880). Ela nasce fina no periósteo da metáfise e se **insere firmemente, como fibrocartilagem, na base da falange proximal**; mede cerca de **2 cm por 1 cm, com 2 a 5 mm de espessura**, bordas mais espessas, e recebe colaterais, fáscia plantar, bainha dos flexores, interósseos e o ligamento metatarsal transverso profundo.
+Os estabilizadores estáticos são os **colaterais e a placa plantar**, e **a placa fornece a maior parte da estabilidade** (p. 3879 e 3880). Ela nasce fina no periósteo da metáfise e se **insere firmemente, como fibrocartilagem, na base da falange proximal**; mede cerca de **2 cm por 1 cm, com 2 a 5 mm de espessura**, bordas mais espessas, e recebe colaterais, fáscia plantar, bainha dos flexores, interósseos e o ligamento metatarsal transverso profundo.
 
 Os números de cadáver parecem contradizer o que vem depois, e convém entendê-los: na estabilidade à translação dorsal, a placa contribuiu com **19 a 34%** e os colaterais com **37 a 46%**; a secção bilateral do ligamento metatarsal transverso profundo também desestabiliza. Cada colateral tem a porção **própria** (na falange) e a **acessória** (na placa), e **a insuficiência do acessório dá a instabilidade mais grave**.
 
@@ -208,7 +208,7 @@ O Campbell reproduz na Tabela 89.1 o estadiamento clínico de COUGHLIN, BAUMFELD
 | 4 | Grave; luxação, martelo fixo | Sem preensão, dedo luxado |
 !fim
 
-Duas armadilhas. O alargamento do espaço e o desvio medial são do grau 1, leve; a hiperextensão com desvio em qualquer direção é do 2; o 3 é o primeiro grave, com a deformidade dorsal e a sobreposição. E "luxável" (a gaveta luxa) é o 3, enquanto "luxado" é o 4. Não confundir com a graduação anatômica da ruptura vista na cirurgia de COUGHLIN (p. 3883 aprox.), em que **rupturas transversas são graus 1 e 2 e longitudinais, grau 3**.
+Duas armadilhas. O alargamento do espaço e o desvio medial são do grau 1, leve; a hiperextensão com desvio em qualquer direção é do 2; o 3 é o primeiro grave, com a deformidade dorsal e a sobreposição. E "luxável" (a gaveta luxa) é o 3, enquanto "luxado" é o 4. Não confundir com a graduação anatômica da ruptura vista na cirurgia de COUGHLIN (p. 3883), em que **rupturas transversas são graus 1 e 2 e longitudinais, grau 3**.
 
 !questoes central=pe-tornozelo-0013 relacionadas=pe-tornozelo-0217
 conceito: No estadiamento de COUGHLIN, BAUMFELD e NERY, o grau 3 é desalinhamento grave com deformidade dorsal, dedos que podem se sobrepor e possível martelo, e a articulação é luxável na gaveta; o grau 4 é o dedo já luxado.
@@ -218,11 +218,11 @@ armadilha: Marcar moderado com hiperextensão (grau 2), alargamento do espaço (
 
 ## Tratamento
 
-Com **sinovite e pouca deformidade**, uma única infiltração intra-articular de corticoide, anti-inflamatório, suporte metatarsal, enfaixamento em neutro e sola rígida podem resolver (p. 3881 aprox.). O livro registra que não houve diferença significativa entre operados e não operados, mas o conservador pode não bastar com deformidade ou instabilidade importante.
+Com **sinovite e pouca deformidade**, uma única infiltração intra-articular de corticoide, anti-inflamatório, suporte metatarsal, enfaixamento em neutro e sola rígida podem resolver (p. 3880 e 3881). O livro registra que não houve diferença significativa entre operados e não operados, mas o conservador pode não bastar com deformidade ou instabilidade importante.
 
 O algoritmo cirúrgico segue a gravidade. **Sinovite crônica sem instabilidade**: alongamento do extensor longo, capsulotomia dorsal e sinovectomia, ressecando um neuroma do segundo espaço se houver dor neurítica. **Subluxação acima de 50%**: acrescentar estabilização. O **reparo da placa por via dorsal** é o preferido dos autores (80% bons a excelentes), com o ponto em **colchoeiro horizontal**, mais resistente que o luggage-tag.
 
-A **WEIL** corrige o que muitas vezes é o problema de base (o comprimento) e expõe a placa, mas **não se deve encurtar demais**, porque isso tira a tensão do reparo; tirar uma fatia e restaurar quase todo o comprimento basta (p. 3882). Na técnica de COUGHLIN, a cabeça recua cerca de 10 mm para expor a placa e é reduzida encurtando só **1 a 2 mm**, com o dedo em **15° de flexão plantar** (p. 3883 aprox.). Associar avanço da placa à WEIL, mesmo sem ruptura evidente, deu escores melhores. A **transferência flexor-extensor** serve à luxação grave com pouca placa; para o **dedo cruzado**, o extensor curto passado sob o ligamento intermetatarsal ou o flexor longo. As **osteotomias distais percutâneas** servem aos graus 0 a I redutíveis, com menos complicações (2,9% de metatarsalgia), mas **não ao grau III rígido** (p. 3884 a 3885 aprox.). E o aviso do livro: em cirurgia dos dedos menores, **o aconselhamento sobre expectativas é obrigatório**.
+A **WEIL** corrige o que muitas vezes é o problema de base (o comprimento) e expõe a placa, mas **não se deve encurtar demais**, porque isso tira a tensão do reparo; tirar uma fatia e restaurar quase todo o comprimento basta (p. 3882). Na técnica de COUGHLIN, a cabeça recua cerca de 10 mm para expor a placa e é reduzida encurtando só **1 a 2 mm**, com o dedo em **15° de flexão plantar** (p. 3883). Associar avanço da placa à WEIL, mesmo sem ruptura evidente, deu escores melhores. A **transferência flexor-extensor** serve à luxação grave com pouca placa; para o **dedo cruzado**, o extensor curto passado sob o ligamento intermetatarsal ou o flexor longo. As **osteotomias distais percutâneas** servem aos graus 0 a I redutíveis, com menos complicações (2,9% de metatarsalgia), mas **não ao grau III rígido** (p. 3884 a 3885 aprox.). E o aviso do livro: em cirurgia dos dedos menores, **o aconselhamento sobre expectativas é obrigatório**.
 
 No **desvio axial** (p. 3885), o medial é o do dedo cruzado e o valgo do segundo dedo acompanha o hálux valgo; **deixar o dedo menor sem correção pode fazer o hálux valgo recidivar**. O extensor curto sob o ligamento metatarsal transverso corrige o varo, mas **exige ligamento intermetatarsal competente**, e o encurtamento do metatarso impede essa transferência; KLINGE modificou a WEIL para deslocar a cabeça no plano coronal.
 
@@ -230,7 +230,7 @@ No **desvio axial** (p. 3885), o medial é o do dedo cruzado e o valgo do segund
 
 ## Turf toe é a placa plantar do hálux
 
-O turf toe está para o hálux como a instabilidade está para o segundo dedo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, p. 4129 aprox.), define: a hiperextensão que não chega a luxar produz uma **entorse da primeira metatarsofalângica**, lesão atlética que ocorre com **carga axial sobre o antepé em dorsiflexão**. **Grau 1**: estiramento mínimo, dor plantar e medial; **grau 2**: **ruptura parcial da placa plantar**, equimose, claudicação; **grau 3**: **ruptura completa da placa**, às vezes com fratura do sesamoide ou diástase do bipartido, sem apoio.
+O turf toe está para o hálux como a instabilidade está para o segundo dedo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, p. 4129), define: a hiperextensão que não chega a luxar produz uma **entorse da primeira metatarsofalângica**, lesão atlética que ocorre com **carga axial sobre o antepé em dorsiflexão**. **Grau 1**: estiramento mínimo, dor plantar e medial; **grau 2**: **ruptura parcial da placa plantar**, equimose, claudicação; **grau 3**: **ruptura completa da placa**, às vezes com fratura do sesamoide ou diástase do bipartido, sem apoio.
 
 A radiografia pode mostrar avulsão da falange, fratura do sesamoide ou **migração proximal dos sesamoides**, que se vê melhor comparando com o outro pé; **3 mm de diferença** na distância sesamoide-falange em dorsiflexão sugerem lesão de três dos quatro ligamentos do complexo; a RM mostra a placa. Graus 1 e 2 são conservadores, com **placa rígida de carbono**; o grau 3 começa com imobilização e **raramente** é operado (p. 4130). No reparo, se o defeito for grande, transfere-se o abdutor do hálux. A recuperação leva 6 a 12 meses, e **50%** ficam com alguma dor e rigidez.
 
@@ -242,9 +242,9 @@ armadilha: Pôr a lesão no sesamoide (que pode fraturar no grau 3, mas não def
 
 ## Os sesamoides
 
-O **sesamoide tibial (medial) é o mais lesado**, porque é maior e fica mais diretamente sob a cabeça (Campbell, cap. 93, p. 4131 aprox.); o HEBERT concorda (lesões do esporte): o medial é o mais afetado pelas fraturas de estresse, que evoluem muito para retardo e pseudartrose e podem se ligar à hiperdorsiflexão do turf toe. Multipartidos aparecem em **5 a 30% dos assintomáticos**; a **fratura** divide o osso em partes parecidas, de bordas irregulares, e o **bipartido** tem um fragmento maior e outro menor, de bordas lisas.
+O **sesamoide tibial (medial) é o mais lesado**, porque é maior e fica mais diretamente sob a cabeça (Campbell, cap. 93, p. 4131); o HEBERT concorda (lesões do esporte): o medial é o mais afetado pelas fraturas de estresse, que evoluem muito para retardo e pseudartrose e podem se ligar à hiperdorsiflexão do turf toe. Multipartidos aparecem em **5 a 30% dos assintomáticos**; a **fratura** divide o osso em partes parecidas, de bordas irregulares, e o **bipartido** tem um fragmento maior e outro menor, de bordas lisas.
 
-A fratura pouco desviada ou de estresse vai a gesso com placa para os dedos por 3 a 4 semanas e depois placa de carbono com recorte (dancer's pad); desvio acima de 5 mm com fragmentos iguais pede fixação. Na falha, há **excisão completa, excisão do fragmento menor do bipartido ou enxerto** (ANDERSON e McBRYDE). O tibial aumenta o braço de alavanca do flexor curto, e **reparar o flexor curto é crucial**. As complicações espelham a anatomia: **hálux varo após retirar o fibular, hálux valgo após retirar o tibial** (Campbell, p. 4133 aprox.); o HEBERT repete o raciocínio no pé diabético. Para a queratose sob o tibial, MANN e DuVRIES ressecam ou raspam a metade plantar do sesamoide (cap. 89, p. 3915 aprox.).
+A fratura pouco desviada ou de estresse vai a gesso com placa para os dedos por 3 a 4 semanas e depois placa de carbono com recorte (dancer's pad); desvio acima de 5 mm com fragmentos iguais pede fixação. Na falha, há **excisão completa, excisão do fragmento menor do bipartido ou enxerto** (ANDERSON e McBRYDE). O tibial aumenta o braço de alavanca do flexor curto, e **reparar o flexor curto é crucial**. As complicações espelham a anatomia: **hálux varo após retirar o fibular, hálux valgo após retirar o tibial** (Campbell, p. 4133); o HEBERT repete o raciocínio no pé diabético. Para a queratose sob o tibial, MANN e DuVRIES ressecam ou raspam a metade plantar do sesamoide (cap. 89, p. 3915).
 
 ## As vias e os nervos em risco
 
@@ -276,13 +276,13 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3892), define o **mar
 
 ## Os mecanismos
 
-Na **garra** (p. 3893 aprox.), os **interósseos passam plantares ao eixo da metatarsofalângica** e a fletem; sem eles, o extensor longo estende a metatarsofalângica e o flexor longo flete as interfalângicas, e com a metatarsofalângica estendida o extensor perde excursão e não estende mais as interfalângicas. A metatarsofalângica estendida empurra as cabeças contra o solo, e daí a ligação com a metatarsalgia. O **martelo**, ao contrário, **em geral não tem desequilíbrio intrínseco**: os intrínsecos ficam silenciosos nos primeiros 35% da marcha e em pé, e o martelo piora justamente em pé. As causas são **calçado apertado**, "dedo de dois ossos", **segundo raio longo**, **hálux valgo** empurrando o segundo dedo, colagenoses e trauma. O **taco** ocorre mais no **segundo dedo, o mais longo**, que flamba contra o bico curto; o extensor terminal atenua e o flexor longo fixa a flexão. É **comum no diabético neuropata**, em quem o calo de ponta ulcera antes de ser percebido.
+Na **garra** (p. 3893), os **interósseos passam plantares ao eixo da metatarsofalângica** e a fletem; sem eles, o extensor longo estende a metatarsofalângica e o flexor longo flete as interfalângicas, e com a metatarsofalângica estendida o extensor perde excursão e não estende mais as interfalângicas. A metatarsofalângica estendida empurra as cabeças contra o solo, e daí a ligação com a metatarsalgia. O **martelo**, ao contrário, **em geral não tem desequilíbrio intrínseco**: os intrínsecos ficam silenciosos nos primeiros 35% da marcha e em pé, e o martelo piora justamente em pé. As causas são **calçado apertado**, "dedo de dois ossos", **segundo raio longo**, **hálux valgo** empurrando o segundo dedo, colagenoses e trauma. O **taco** ocorre mais no **segundo dedo, o mais longo**, que flamba contra o bico curto; o extensor terminal atenua e o flexor longo fixa a flexão. É **comum no diabético neuropata**, em quem o calo de ponta ulcera antes de ser percebido.
 
 O martelo dói em três pontos: **dorso da interfalângica proximal** (calo duro, o mais comum), **ponta do dedo** (end corn) e **sob a cabeça** quando a falange sublua dorsalmente.
 
 ## O tratamento
 
-O conservador do martelo é **decepcionante**: manipulação e enfaixamento que impedem a extensão da metatarsofalângica às vezes corrigem a proximal recente, mas a recidiva é provável (p. 3893 aprox.). Só se opera **dedo sintomático**.
+O conservador do martelo é **decepcionante**: manipulação e enfaixamento que impedem a extensão da metatarsofalângica às vezes corrigem a proximal recente, mas a recidiva é provável (p. 3893). Só se opera **dedo sintomático**.
 
 Na deformidade **leve** (sem contratura fixa) do jovem, a **transferência do flexor longo para o extensor** (GIRDLESTONE, TAYLOR), mais confiável em pés planovalgos ou normais que cavos, com **menos de 30 anos** e metatarsofalângica que flete além do neutro (p. 3894). Na **moderada** (contratura fixa da proximal, metatarsofalângica livre), **ressecção da cabeça e do colo da falange proximal com dermodese**; o autor prefere não artrodesar, porque o paciente gosta de manter algum movimento, e não houve diferença entre ressecção e artrodese. Na **grave** (extensão fixa da metatarsofalângica), soma-se alongamento em Z do extensor longo (8 a 12 mm), tenotomia do curto, capsulotomia dorsal e secção dos colaterais **até, mas não através, da placa** (p. 3898 a 3900). Com **luxação**, descomprime-se no lado metatarsal (artroplastia da cabeça ou WEIL), e **não** ressecando a base da falange, que é difícil de manter e gera calo plantar lateral.
 
@@ -312,7 +312,7 @@ O HEBERT (cap. 21.5) só opera **depois de esgotar o conservador**, com deformid
 
 A WEIL é um corte oblíquo, quase paralelo à planta, na cabeça e no colo, que deixa a cabeça recuar e a fixa com um parafuso. Como incorpora osso metafisário e transfere menos que as osteotomias de diáfise, o Campbell (p. 3914) a **recomenda para a dor sob um segundo metatarso longo** e para o comprimento excessivo com calo difuso. Os livros dão números diferentes, e essa é a divergência mais útil do tema.
 
-!tabela Osteotomia de WEIL: Campbell e HEBERT (Campbell's Operative Orthopaedics, 15ª ed., cap. 89, p. 3882, 3883 aprox. e 3903; HEBERT, 5ª ed., cap. 21.5)
+!tabela Osteotomia de WEIL: Campbell e HEBERT (Campbell's Operative Orthopaedics, 15ª ed., cap. 89, p. 3882, 3883 e 3903; HEBERT, 5ª ed., cap. 21.5)
 | Ponto | Campbell | HEBERT |
 |---|---|---|
 | Início do corte | Porção dorsal da cabeça; na técnica de COUGHLIN, 2 a 3 mm abaixo do topo da superfície articular | 2 mm da borda dorsal da superfície articular |
@@ -330,7 +330,7 @@ MACEIRA descreveu uma **osteotomia tripla** que **eleva e encurta mantendo o fra
 
 ## Calo plantar e pé reumatoide
 
-Para a queratose plantar intratável, o Campbell (p. 3913 aprox.) separa: **pequena e isolada, artroplastia** (MANN e DuVRIES, sob o côndilo lateral de M2 a M5: 85 a 90% satisfeitos, perde cerca de 25% do movimento, transfere em menos de 5%); **difusa com cabeça fletida, osteotomia de dorsiflexão**; **difusa com metatarso longo, encurtamento**. Seja qual for a escolha, **recidiva ou transferência em 10 a 15%**. A **cunha dorsal na base** (p. 3914 a 3915 aprox.) pode levar 3 a 5 meses para consolidar, é difícil de controlar e encurta pouco. Na destruição reumatoide grave, o HEBERT faz o realinhamento de LELIÈVRE: ressecção oblíqua, em "bico de flauta", das cabeças do segundo ao quinto e **artrodese da metatarsofalângica do hálux**.
+Para a queratose plantar intratável, o Campbell (p. 3913) separa: **pequena e isolada, artroplastia** (MANN e DuVRIES, sob o côndilo lateral de M2 a M5: 85 a 90% satisfeitos, perde cerca de 25% do movimento, transfere em menos de 5%); **difusa com cabeça fletida, osteotomia de dorsiflexão**; **difusa com metatarso longo, encurtamento**. Seja qual for a escolha, **recidiva ou transferência em 10 a 15%**. A **cunha dorsal na base** (p. 3914 e 3915) pode levar 3 a 5 meses para consolidar, é difícil de controlar e encurta pouco. Na destruição reumatoide grave, o HEBERT faz o realinhamento de LELIÈVRE: ressecção oblíqua, em "bico de flauta", das cabeças do segundo ao quinto e **artrodese da metatarsofalângica do hálux**.
 
 # Doença de FREIBERG {radar=confirmado}
 
@@ -346,7 +346,7 @@ O Tachdjian responde às perguntas de epidemiologia: **adolescentes, em geral de
 
 ## Clínica e imagem
 
-Dor na metatarsofalângica ao apoio, dor local, limitação de movimento e edema se houver sinovite (Campbell, p. 3924); o Tachdjian descreve dor plantar sob a cabeça do segundo e marcha antálgica com impulsão fraca. A sinovite prolongada limita sobretudo a **extensão**, e a carga passa a estressar a diáfise, que **alarga por espessamento bicortical**. A radiografia mostra **achatamento e esclerose da cabeça**, lucência, colapso e fragmentação; a cintilografia capta. HOGGETT propôs um estadiamento por TC com **zona 1 dorsal e zona 2 plantar** (p. 3925 aprox.).
+Dor na metatarsofalângica ao apoio, dor local, limitação de movimento e edema se houver sinovite (Campbell, p. 3924); o Tachdjian descreve dor plantar sob a cabeça do segundo e marcha antálgica com impulsão fraca. A sinovite prolongada limita sobretudo a **extensão**, e a carga passa a estressar a diáfise, que **alarga por espessamento bicortical**. A radiografia mostra **achatamento e esclerose da cabeça**, lucência, colapso e fragmentação; a cintilografia capta. HOGGETT propôs um estadiamento por TC com **zona 1 dorsal e zona 2 plantar** (p. 3925).
 
 !questoes central=pe-tornozelo-0225 relacionadas=pe-tornozelo-0275,pe-tornozelo-0371
 conceito: FREIBERG é a osteocondrose da cabeça do segundo metatarso (às vezes do terceiro), mais frequente em meninas, na adolescência, em geral depois dos 13 anos.
@@ -357,7 +357,7 @@ alerta: `pe-tornozelo-0371` está sem gabarito oficial; o Tachdjian (p. 690) diz
 
 ## Tratamento
 
-A maioria se trata sem cirurgia (Campbell, p. 3924 a 3925 aprox.): **modificação de atividade, órteses semirrígidas e barras metatarsais**, bota gessada se falhar. O capítulo 34 avisa que **a cirurgia não é recomendada na fase aguda, que dura de 6 meses a 2 anos** (p. 1202).
+A maioria se trata sem cirurgia (Campbell, p. 3924 e 3925): **modificação de atividade, órteses semirrígidas e barras metatarsais**, bota gessada se falhar. O capítulo 34 avisa que **a cirurgia não é recomendada na fase aguda, que dura de 6 meses a 2 anos** (p. 1202).
 
 As opções cirúrgicas formam uma lista que a banca adora transformar em certo ou errado. A evidência é fraca: uma revisão achou **mais de 90% de alívio com as técnicas que preservam a articulação**, e outra, mais recente, nenhuma evidência de alta qualidade para preferir preservar ou sacrificar. O transplante osteocondral teve escores iguais ou melhores que a cunha de dorsiflexão, com menos complicações. A preferência do Campbell é o **desbridamento com remodelação da cabeça**; com lesão **limitada ao dorso** na RM, a **cunha de fechamento dorsal no colo**, que gira a cartilagem plantar sadia para a zona de contato (CHAO: girar a lesão para proximal e dorsal, sem removê-la, preservando o comprimento). O autor **evita ressecar a base da falange**, que encurta muito o dedo no jovem. Alguma **perda permanente de movimento é usual**, e barras ou coxins seguem por 3 a 6 meses (p. 3926).
 
@@ -383,7 +383,7 @@ alerta: `pe-tornozelo-0354` está sem gabarito oficial; o gabarito da bibliograf
 
 # Fraturas de estresse e braquimetatarsia {radar=clinico}
 
-A fratura de estresse é o diferencial da dor que começa depois de mudar a atividade. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, p. 4123 aprox. a 4125 aprox.), diz que ela é **mais comum em mulheres, sobretudo no início da menopausa**, e em bailarinas, atletas de salto e corte, **atletas amenorreicas** e **recrutas** (a fratura de marcha); diabetes com neuropatia, artrite reumatoide e CHARCOT-MARIE-TOOTH também predispõem. O quadro típico é **dor gradual no colo do segundo metatarso 2 a 4 semanas depois de iniciar corrida**; a **radiografia das duas primeiras semanas pode ser negativa**, cintilografia ou RM ajudam, e o calo aparece em **4 a 6 semanas**. O diferencial inclui a **sinovite da metatarsofalângica vizinha**. Na **base do segundo**, bailarinas curaram com repouso, e não bailarinos tratados sem cirurgia tiveram **50% de pseudartrose**. A consolidação em dorsiflexão do segundo **transfere carga para o terceiro**, que passa a correr risco de fratura: uma metatarsalgia de transferência de manual.
+A fratura de estresse é o diferencial da dor que começa depois de mudar a atividade. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, p. 4124 e 4125), diz que ela é **mais comum em mulheres, sobretudo no início da menopausa**, e em bailarinas, atletas de salto e corte, **atletas amenorreicas** e **recrutas** (a fratura de marcha); diabetes com neuropatia, artrite reumatoide e CHARCOT-MARIE-TOOTH também predispõem. O quadro típico é **dor gradual no colo do segundo metatarso 2 a 4 semanas depois de iniciar corrida**; a **radiografia das duas primeiras semanas pode ser negativa**, cintilografia ou RM ajudam, e o calo aparece em **4 a 6 semanas**. O diferencial inclui a **sinovite da metatarsofalângica vizinha**. Na **base do segundo**, bailarinas curaram com repouso, e não bailarinos tratados sem cirurgia tiveram **50% de pseudartrose**. A consolidação em dorsiflexão do segundo **transfere carga para o terceiro**, que passa a correr risco de fratura: uma metatarsalgia de transferência de manual.
 
 A **braquimetatarsia** (Campbell, cap. 89, p. 3928) atinge mais o **quarto raio**, depois o primeiro e o quinto; é congênita ou por fechamento fisário precoce, e se associa a DOWN, APERT, ALBRIGHT, anemia falciforme, nanismo diastrófico e poliomielite. Raramente dói; a queixa costuma ser estética. A cirurgia é indicada com **10 mm ou mais** de encurtamento; ganhos menores que 10 mm se fazem em um tempo, maiores por distração gradual. É a mesma braquimetatarsia que ESPINOSA põe entre as primárias.
 
@@ -391,7 +391,7 @@ A **braquimetatarsia** (Campbell, cap. 89, p. 3928) atinge mais o **quarto raio*
 
 ## O nome está errado
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 92, p. 4033 aprox.), começa pela histologia: **neuroma é termo incorreto**, porque não há proliferação de axônios. O aumento vem da **deposição de material hialino e colágeno**; o processo é **degenerativo**, e por isso se propôs **neurite ou neuralgia interdigital**. A causa mais provável é o trauma repetitivo contra o **ligamento metatarsal transverso profundo**. A patologia mostra fibrose perineural, desmielinização, **ausência de inflamação** e tecido de bolsa frequente.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 92, p. 4033), começa pela histologia: **neuroma é termo incorreto**, porque não há proliferação de axônios. O aumento vem da **deposição de material hialino e colágeno**; o processo é **degenerativo**, e por isso se propôs **neurite ou neuralgia interdigital**. A causa mais provável é o trauma repetitivo contra o **ligamento metatarsal transverso profundo**. A patologia mostra fibrose perineural, desmielinização, **ausência de inflamação** e tecido de bolsa frequente.
 
 ## Onde e por quê
 
@@ -403,7 +403,7 @@ A dor fica **na região da cabeça do terceiro metatarso**, em queimação, dolo
 
 O exame começa **excluindo a metatarsofalângica**: LACHMAN, palpação dorsal e palpação sob a cabeça contra o espaço. **Dor no espaço, e não sob a base da falange nem no lado dorsolateral da segunda metatarsofalângica, sugere neuroma.** Depois, o **clique de MULDER**, palpável e audível, reproduzindo a dor ao apertar o espaço de baixo para cima e comprimir o antepé de medial para lateral. O clique aparece com frequência **sem dor no pé assintomático**, e por isso **sozinho não é diagnóstico**.
 
-!tabela Dor no segundo e terceiro espaços: neuroma ou metatarsofalângica (Campbell's Operative Orthopaedics, 15ª ed., cap. 89, p. 3880 e 3893; cap. 92, p. 4033 aprox.)
+!tabela Dor no segundo e terceiro espaços: neuroma ou metatarsofalângica (Campbell's Operative Orthopaedics, 15ª ed., cap. 89, p. 3880 e 3893; cap. 92, p. 4033)
 | Achado | Neuroma interdigital | Sinovite ou instabilidade da MTF |
 |---|---|---|
 | Espaço mais comum | Terceiro, depois segundo | Segunda MTF |
@@ -446,7 +446,7 @@ A seção de dedos menores já trouxe definições, mecanismos e tratamento. Aqu
 
 ## O que separa a garra do martelo
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3892), dá três diferenças, e vale ver por que só uma serve de resposta. A **extensão da metatarsofalângica** é obrigatória na garra, mas **o martelo grave e antigo também a desenvolve**; logo, ela existe nos dois. A **rigidez** não distingue: tanto um quanto a outra podem ser flexíveis (corrigem passivamente até o neutro) ou fixos. O **calo dorsal** sobre a interfalângica proximal é justamente o ponto doloroso mais comum do martelo (p. 3893 aprox.). Resta a **interfalângica distal**: na garra ela está frequentemente fletida, porque o flexor longo, inserido na base da falange distal, flete as duas interfalângicas quando o extensor perde excursão; no martelo ela **em geral permanece livre**, embora o livro admita que possa, às vezes, fletir ou estender. Quando a distal de um martelo se fixa em flexão, o Campbell fala em **martelo combinado com taco** (p. 3904), com calo no dorso da proximal e outro na ponta do dedo.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3892), dá três diferenças, e vale ver por que só uma serve de resposta. A **extensão da metatarsofalângica** é obrigatória na garra, mas **o martelo grave e antigo também a desenvolve**; logo, ela existe nos dois. A **rigidez** não distingue: tanto um quanto a outra podem ser flexíveis (corrigem passivamente até o neutro) ou fixos. O **calo dorsal** sobre a interfalângica proximal é justamente o ponto doloroso mais comum do martelo (p. 3893). Resta a **interfalângica distal**: na garra ela está frequentemente fletida, porque o flexor longo, inserido na base da falange distal, flete as duas interfalângicas quando o extensor perde excursão; no martelo ela **em geral permanece livre**, embora o livro admita que possa, às vezes, fletir ou estender. Quando a distal de um martelo se fixa em flexão, o Campbell fala em **martelo combinado com taco** (p. 3904), com calo no dorso da proximal e outro na ponta do dedo.
 
 !questoes central=pe-tornozelo-0248
 conceito: A garra tem sempre a metatarsofalângica estendida e frequentemente a interfalângica distal fletida; no martelo a deformidade é a flexão da proximal, a distal costuma ficar livre e a extensão da metatarsofalângica pode ou não existir.
@@ -457,9 +457,9 @@ alerta: Em `pe-tornozelo-0248`, o Campbell (cap. 89, p. 3892) também lista a ex
 
 ## Martelo isolado: raro na reumatoide, comum nas soronegativas
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 90, Arthritis of the Foot, p. 3964 a 3967 aprox.), explica o antepé reumatoide a partir da **metatarsofalângica**. A sinovite libera enzimas que enfraquecem os ligamentos capsulares e os intrínsecos, e a articulação hiperestende. Com a subluxação dorsal crônica, os **interósseos são levados para dorsal ao eixo de rotação e viram extensores fracos**; os extensores curto e longo perdem excursão e deixam de estender as interfalângicas, e o resultado é a **garra**. No fim, a falange proximal luxa sobre o dorso do colo do metatarso. Como tudo começa na metatarsofalângica, o livro conclui que o **martelo isolado, sem sinovite nem deformidade metatarsofalângica, é incomum na artrite reumatoide**. Nas **espondiloartropatias soronegativas**, como a artropatia psoriásica, a artrite atinge a própria **interfalângica proximal**: o martelo é **comum** e pode vir sem envolvimento metatarsofalângico.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 90, Arthritis of the Foot, p. 3964 a 3967), explica o antepé reumatoide a partir da **metatarsofalângica**. A sinovite libera enzimas que enfraquecem os ligamentos capsulares e os intrínsecos, e a articulação hiperestende. Com a subluxação dorsal crônica, os **interósseos são levados para dorsal ao eixo de rotação e viram extensores fracos**; os extensores curto e longo perdem excursão e deixam de estender as interfalângicas, e o resultado é a **garra**. No fim, a falange proximal luxa sobre o dorso do colo do metatarso. Como tudo começa na metatarsofalângica, o livro conclui que o **martelo isolado, sem sinovite nem deformidade metatarsofalângica, é incomum na artrite reumatoide**. Nas **espondiloartropatias soronegativas**, como a artropatia psoriásica, a artrite atinge a própria **interfalângica proximal**: o martelo é **comum** e pode vir sem envolvimento metatarsofalângico.
 
-!tabela Dedos menores nas artrites inflamatórias (Campbell's Operative Orthopaedics, 15ª ed., cap. 90, p. 3964 a 3967 aprox.; HEBERT, 5ª ed., cap. 21.6)
+!tabela Dedos menores nas artrites inflamatórias (Campbell's Operative Orthopaedics, 15ª ed., cap. 90, p. 3964 a 3967; HEBERT, 5ª ed., cap. 21.6)
 | Ponto | Artrite reumatoide | Soronegativas |
 |---|---|---|
 | Alvo | Sinóvia da metatarsofalângica | Êntese (inserção do tendão no osso) e interfalângicas |
@@ -480,7 +480,7 @@ armadilha: Inverter o par porque o pé reumatoide é cheio de martelos e garras:
 
 ## GIRDLESTONE-TAYLOR-PARRISH passo a passo
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, Técnica 89.7, p. 3888 a 3890 aprox.; indicações na p. 3894), agrupa sob os nomes GIRDLESTONE, TAYLOR, PARRISH, MANN e COUGHLIN os procedimentos só de partes moles, sem encurtamento ósseo nem artrodese. A ideia é tirar o **flexor longo dos dedos** do papel de deformador e fazê-lo trabalhar como intrínseco: fletir a metatarsofalângica e estender as interfalângicas.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, Técnica 89.7, p. 3888 a 3890; indicações na p. 3894), agrupa sob os nomes GIRDLESTONE, TAYLOR, PARRISH, MANN e COUGHLIN os procedimentos só de partes moles, sem encurtamento ósseo nem artrodese. A ideia é tirar o **flexor longo dos dedos** do papel de deformador e fazê-lo trabalhar como intrínseco: fletir a metatarsofalângica e estender as interfalângicas.
 
 A técnica usa três incisões. Uma **plantar transversa na prega proximal do dedo** abre 3 a 4 mm da polia e acha o flexor longo, que é o **tendão central** (mover a distal com a proximal reta confirma). Outra, na **prega da interfalângica distal**, faz a tenotomia sem ferir a placa plantar dessa articulação. O coto é entregue na incisão proximal, conferindo-se que as duas fitas do flexor curto ficaram íntegras, e **dividido ao longo do sulco longitudinal** por 1,5 a 2,5 cm. Uma incisão **dorsal sobre a falange proximal** expõe o aparelho extensor; cada metade do tendão sobe **rente ao osso**, uma de cada lado, sempre **plantar ao ligamento intermetatarsal transverso profundo**, e é suturada sob tensão às **bandas laterais do extensor na altura da meia diáfise da falange proximal**, ou uma à outra sobre o dorso. A tensão é dada com o **tornozelo a 90°**: metatarsofalângica do neutro a 5° de flexão e interfalângica proximal com menos de 10° de flexão. Nos três dedos centrais, começa-se pelo **segundo**.
 
@@ -488,7 +488,7 @@ O procedimento só é confiável no **martelo flexível, idiopático e sintomát
 
 Os dois livros usam os epônimos de modo diferente. O HEBERT (cap. 21.4, correção dos dedos no pé cavo) chama de **técnica de PARRISH** a liberação de partes moles (extensores e cápsulas) com estabilização ativa por transferência tendínea, indicada na **garra flexível**, e de **artroplastia de DuVRIES** a **ressecção das cabeças das falanges proximais (condilectomia) com fio de KIRSCHNER intramedular**, indicada quando a **interfalângica proximal está rígida**; no cap. 21.6, diz que o flexor longo transferido assume "as funções de interósseo ou lumbrical" e pode ser passado de forma assimétrica para corrigir desvio lateral. O Campbell descreve a mesma ressecção da cabeça e do colo da falange proximal sem epônimo e guarda o nome de MANN e DuVRIES para a artroplastia da metatarsofalângica.
 
-Sobre a fixação (p. 3895 aprox.), o Campbell relata que o **fio de KIRSCHNER** manteve bem a correção em 1.115 procedimentos, e que a **artrodese com implante permanente fica sobretudo para as revisões**. No idoso de baixa demanda com deformidade grave, cabe a amputação do segundo dedo (p. 3904).
+Sobre a fixação (p. 3895), o Campbell relata que o **fio de KIRSCHNER** manteve bem a correção em 1.115 procedimentos, e que a **artrodese com implante permanente fica sobretudo para as revisões**. No idoso de baixa demanda com deformidade grave, cabe a amputação do segundo dedo (p. 3904).
 
 !questoes central=pe-tornozelo-0107
 conceito: GIRDLESTONE-TAYLOR-PARRISH é a transferência do flexor longo dos dedos, seccionado na distal e dividido em duas metades, para o aparelho extensor no dorso da falange proximal; indicada no martelo flexível do jovem, sem ressecção óssea nem artrodese.
