@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-ombro-cotovelo
-versao: 1
+versao: 2
 titulo: Imagem do ombro e cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -331,11 +331,11 @@ O capítulo 3 do Campbell's Operative Orthopaedics, 15ª ed., dá a lógica da R
 | Plano | Como é orientado | O que mostra melhor |
 | --- | --- | --- |
 | **axial** | transversal, spin-echo ou gradiente | **lábio** (sobretudo o **anterior**), bíceps no sulco, subescapular, infraespinal |
-| **coronal oblíquo** | paralelo ao tendão do **supraespinal** | **manguito** (supraespinal, retração), lábio **superior** e SLAP |
+| **coronal oblíquo** | paralelo ao tendão do **supraespinal** | **manguito** (supraespinal, retração), lábio **superior** e SLAP (também vistos no axial) |
 | **sagital oblíquo** | perpendicular ao coronal oblíquo | confirma a lesão do manguito, extensão anteroposterior da ruptura, **músculos em corte transversal** (atrofia, GOUTALLIER, sinal da tangente) |
 !fim
 
-Na imagem da questão do TARO 2025, o corte é um **coronal oblíquo ponderado em T1**: vê-se a cabeça do úmero, o acrômio e a clavícula em cima e a glenoide à direita. A seta aponta o **triângulo escuro na borda superior da glenoide**, entre a cabeça e a glenoide. Esse é o **lábio glenoidal superior**: fibrocartilagem, com **sinal baixo** em todas as sequências, como os tendões. O Campbell (cap. 3) diz que as lesões do **lábio superior** (SLAP) são bem vistas no **coronal**, enquanto as **anteriores** são mais bem vistas no **axial**.
+Na imagem da questão do TARO 2025, o corte é um **coronal oblíquo ponderado em T1**: vê-se a cabeça do úmero, o acrômio e a clavícula em cima e a glenoide à direita. A seta aponta o **triângulo escuro na borda superior da glenoide**, entre a cabeça e a glenoide. Esse é o **lábio glenoidal superior**: fibrocartilagem, com **sinal baixo** em todas as sequências, como os tendões. O Campbell (cap. 3, p. 172) diz que as lesões **anteriores** do lábio são mais bem vistas no **axial**, enquanto as do **lábio superior** (SLAP) são mais bem mostradas nas imagens **axiais ou coronais**; neste corte da questão, é o coronal que as mostra.
 
 ## O manguito na RM
 
@@ -361,7 +361,7 @@ ELLMAN classificou as rupturas parciais pelo **local** e pela **profundidade**, 
 O esquema da questão da CET-PR mostra o tendão sobre a cabeça do úmero com uma falha que atinge a maior parte da espessura: é a lesão profunda, grau III.
 
 !questoes central=ombro-cotovelo-0316
-conceito: No coronal oblíquo, o triângulo escuro na borda superior da glenoide é o lábio glenoidal superior, fibrocartilagem de sinal baixo; o coronal é o plano do lábio superior e do SLAP, e o axial, o do lábio anterior.
+conceito: No coronal oblíquo, o triângulo escuro na borda superior da glenoide é o lábio glenoidal superior, fibrocartilagem de sinal baixo; o lábio superior e o SLAP aparecem no axial ou no coronal, e o lábio anterior, no axial (Campbell 15, cap. 3, p. 172).
 como: O TARO 2025 mostrou um coronal oblíquo em T1 com seta na borda superior da glenoide e pediu a estrutura.
 armadilha: Confundir com o ligamento coracoacromial, que fica acima do supraespinal sob o acrômio, ou com o recesso axilar, que é inferior.
 !fim
@@ -389,7 +389,7 @@ O Campbell (cap. 57) desenha seis padrões do lado da glenoide: BANKART, BANKART
 | GLAD | glenoid labral articular disruption (só nomeado) | artro-RM |
 | HAGL | avulsão dos ligamentos glenoumerais no úmero (9,3%) | RM aguda, artro-RM subaguda (coronal) |
 | HILL-SACHS | impacção da cabeça posterior | AP em RI, STRYKER, TC 3D |
-| SLAP | lesão do lábio superior e da âncora do bíceps | coronal oblíquo |
+| SLAP | lesão do lábio superior e da âncora do bíceps | axial ou coronal (Campbell, cap. 3, p. 172) |
 !fim
 
 ## Artro-RM, ABER e a acurácia
@@ -410,7 +410,7 @@ O lábio tem anatomia variável, e os ligamentos glenoumerais vizinhos criam arm
 Dois detalhes práticos aparecem nos dois livros. Na **luxação aguda**, o derrame (sangue) já distende a articulação, e a RM dos primeiros dias **dispensa a artro-RM** (Campbell, cap. 52; Rockwood, cap. 35). Na HAGL aguda, a artro-RM pode até **encobrir** o local exato da lesão. A artro-RM também mostra a cápsula redundante da instabilidade multidirecional, e o Rockwood associa displasia glenoidal, retroversão aumentada e maior área capsular às lesões labrais posteriores. O Campbell (cap. 51) cita ALEXEEV: o lábio **posterior** estava envolvido em **74%** das cirurgias, as lesões isoladas de BANKART eram raras e o diagnóstico pré-operatório estava correto em apenas **30%**.
 
 !questoes central=ombro-cotovelo-0560
-conceito: O lábio anterior é mais bem avaliado no plano axial; o coronal oblíquo é o plano do manguito e do lábio superior (SLAP), e o sagital oblíquo, o dos músculos.
+conceito: O lábio anterior é mais bem avaliado no plano axial; o coronal oblíquo é o plano do manguito, o lábio superior (SLAP) aparece no axial ou no coronal, e o sagital oblíquo é o dos músculos.
 como: O TEOT 2025 perguntou o plano da RM que melhor avalia a lesão labral anterior na instabilidade anterior.
 armadilha: Marcar o coronal oblíquo por ser o plano "padrão" do ombro; ele é o padrão do manguito, não do lábio anterior.
 !fim
@@ -475,6 +475,6 @@ armadilha: Escolher ABER, que é a posição do ombro para o ligamento glenoumer
 
 # Fechamento {radar=fundamento}
 
-Toda questão de imagem do ombro e do cotovelo cabe numa pergunta: o que esta incidência põe de perfil? O GRASHEY põe a glenoide; o Y e o axilar põem o eixo anteroposterior, que decide a luxação; o STRYKER põe a face posterolateral da cabeça e a base do coracoide; o WEST POINT, a borda anteroinferior; o ZANCA tira a acromioclavicular de cima da espinha; o HEINIG tangencia a esternoclavicular. Na RM, o plano segue a estrutura: axial para o lábio anterior, coronal oblíquo para o supraespinal e o lábio superior, sagital para os músculos. E nos cortes que vêm com seta, o sinal baixo é de tendão, ligamento ou lábio; o alto em T2, de líquido.
+Toda questão de imagem do ombro e do cotovelo cabe numa pergunta: o que esta incidência põe de perfil? O GRASHEY põe a glenoide; o Y e o axilar põem o eixo anteroposterior, que decide a luxação; o STRYKER põe a face posterolateral da cabeça e a base do coracoide; o WEST POINT, a borda anteroinferior; o ZANCA tira a acromioclavicular de cima da espinha; o HEINIG tangencia a esternoclavicular. Na RM, o plano segue a estrutura: axial para o lábio anterior, coronal oblíquo para o supraespinal, axial ou coronal para o lábio superior, sagital para os músculos. E nos cortes que vêm com seta, o sinal baixo é de tendão, ligamento ou lábio; o alto em T2, de líquido.
 
 > **Na prova:** **GRASHEY** 30 graus, **Y** 60 graus; luxação = **axilar ou Y** (VELPEAU sem abdução; posterior perdida em 73% sem eles); **STRYKER** 10 graus cefálico = HILL-SACHS e coracoide; **WEST POINT** prono, 25 e 25 = BANKART ósseo; **GARTH** 45 graus caudal; **ZANCA** 10 a 15 graus cefálico, **axilar** no tipo IV; **HEINIG** tangente e paralelo à clavícula oposta, **TC** padrão-ouro na esternoclavicular; **sourcil**, intervalo < 7 e < 5 mm, barba de bode, **subluxação posterior** na artrose; TC = osteopenia, perda óssea, track **0,83D menos d**; RM **axial** = lábio anterior; **ELLMAN** 3 mm e 6 mm; **FABS** = bíceps distal.

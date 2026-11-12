@@ -1,6 +1,6 @@
 ---
 id: campbell15-exame-ombro
-versao: 1
+versao: 2
 titulo: Exame físico do ombro
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Netter Atlas de Anatomia Ortopédica, 2ª edição
 capitulo: Capítulo 52 · Recurrent Dislocations (testes de instabilidade), com os capítulos 51 · Shoulder and Elbow Injuries, 53 · Traumatic Disorders, 57 · Arthroscopy of the Upper Extremity e 14 · Open Reconstructive Procedures of the Shoulder
 autores: Frederick M. Azar, Thomas W. (Quin) Throckmorton, and Joseph D. Lamplot (cap. 51); Joseph D. Lamplot and Tyler J. Brolin (cap. 52)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (anatomia, apresentação e exame, p. 2144 a 2156; tipos e estágios do impacto, p. 2157.e1 a 2158; tratamento, p. 2160 e 2164), cap. 52 (BEIGHTON, p. 2195 aprox.; história, exame e radiografias da instabilidade do ombro, p. 2206 a 2213, com a Tabela 52.5), cap. 53 (instabilidade do bíceps, p. 2295), cap. 57 (lábio e SNYDER, p. 2429 a 2430; indicações de estabilização, p. 2441 aprox.; subescapular, p. 2477; acromioclavicular, p. 2480 aprox.) e cap. 14 (transferências e escápula alada, p. 632 a 638); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3 (ligamentos glenoumerais, p. 82 aprox.; exame físico, p. 89 a 94 aprox.). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (anatomia, apresentação e exame, p. 2144 a 2156; tipos e estágios do impacto, p. 2157.e1 a 2158; tratamento, p. 2160 e 2164), cap. 52 (BEIGHTON, p. 2195 aprox.; história, exame e radiografias da instabilidade do ombro, p. 2206 a 2213, com a Tabela 52.5), cap. 53 (instabilidade do bíceps, p. 2295), cap. 57 (lábio e SNYDER, p. 2429 a 2430; indicações de estabilização, p. 2441 aprox.; subescapular, p. 2477; acromioclavicular, p. 2480 aprox.) e cap. 14 (transferências e escápula alada, p. 632 a 638); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3, Ombro (ligamentos glenoumerais, p. 86; exame físico, p. 90 a 93; páginas conferidas no índice remissivo do atlas). As páginas citadas são as impressas.
 subtemas: Exame físico do ombro
 resumo: NEER (elevação passiva forçada, dor com anestésico que some) e HAWKINS (flexão 90 e rotação interna) provocam impacto; JOBE (90 graus, 30 de flexão, polegar para baixo) testa o supraespinal; PATTE (corneteiro) o redondo menor; drop sign e atraso em rotação externa o infraespinal; lift-off, belly-press, bear hug e atraso em rotação interna o subescapular (específicos, pouco sensíveis); O'BRIEN dói na primeira fase e alivia na segunda (dentro = lábio/SLAP, em cima = acromioclavicular); YERGASON (supinação resistida) e SPEED avaliam a cabeça longa do bíceps; apreensão e relocação de JOBE para instabilidade anterior; sulco a 0 grau = intervalo rotador, a 45 graus = glenoumeral inferior; GAGEY acima de 20 graus de diferença e BEIGHTON para hiperfrouxidão; adução cruzada para a acromioclavicular; ADSON para o desfiladeiro torácico.
 ---
@@ -37,7 +37,7 @@ O **binário de forças** mais importante é o do **subescapular contra o mangui
 
 Os ligamentos são **estabilizadores primários nos extremos do movimento**, e cada um trabalha numa posição. Este é o ponto que a prova mais explora, porque o teste do sulco e a apreensão dependem dele.
 
-!tabela Ligamentos glenoumerais e a posição em que trabalham (Campbell 15, cap. 51, p. 2145; Netter, cap. 3, p. 82 aprox.)
+!tabela Ligamentos glenoumerais e a posição em que trabalham (Campbell 15, cap. 51, p. 2145; Netter, cap. 3, Ombro, p. 86)
 | Estrutura | Posição em que trabalha | O que segura |
 | --- | --- | --- |
 | glenoumeral superior | 0 grau de abdução (braço ao lado) | **restrição primária à subluxação inferior**; também estabilizador primário a estresses anterior e posterior nessa posição |
@@ -90,9 +90,9 @@ O livro propõe um roteiro que vale como checklist:
 
 ## Inspeção e palpação pelo Netter
 
-O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 3, p. 89 a 90 aprox.), organiza a mesma etapa em tabela, com a aplicação clínica de cada achado.
+O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 3, Ombro, p. 90 e 91), organiza a mesma etapa em tabela, com a aplicação clínica de cada achado.
 
-!tabela Inspeção e palpação do ombro (Netter, cap. 3, p. 89 a 90 aprox.)
+!tabela Inspeção e palpação do ombro (Netter, cap. 3, Ombro, p. 90 e 91)
 | Achado ou ponto | Como se procura | O que sugere |
 | --- | --- | --- |
 | atrofia | perda do contorno muscular | rotura do manguito, compressão nervosa (supraescapular) |
@@ -108,7 +108,7 @@ A atrofia merece raciocínio. Atrofia da fossa supraespinal ou infraespinal pode
 
 ## Amplitude de movimento: ativa contra passiva
 
-!tabela Amplitude de movimento normal do ombro (Netter, cap. 3, p. 90 a 91 aprox.)
+!tabela Amplitude de movimento normal do ombro (Netter, cap. 3, Ombro, p. 91)
 | Movimento | Técnica | Normal |
 | --- | --- | --- |
 | flexão anterior | braços ao lado elevados para frente | 0 a 160/180 graus |
@@ -124,7 +124,7 @@ O Campbell (cap. 51, p. 2164) tira daí uma regra cirúrgica: **rigidez contrain
 
 ## Nervos: o mapa sensitivo e motor
 
-!tabela Exame neurológico do ombro (Netter, cap. 3, p. 91 a 92 aprox.)
+!tabela Exame neurológico do ombro (Netter, cap. 3, Ombro, p. 92)
 | Nervo (raízes) | Teste | Fraqueza ou déficit indica |
 | --- | --- | --- |
 | supraclavicular (C4) | sensibilidade da parte superior do ombro | lesão do nervo ou raiz |
@@ -164,7 +164,7 @@ Nos estágios de NEER (p. 2158), o 1 é edema e hemorragia abaixo de 25 anos, re
 
 ## Teste e sinal de NEER
 
-Com o paciente **sentado**, o examinador **estabiliza a escápula** e faz uma **elevação anterior forçada** do braço afetado; o tubérculo maior bate contra o acrômio (Campbell, p. 2147). É um teste **passivo**: quem move o braço é o examinador. É isso que a banca quer quando pergunta qual é "o teste de mobilização passiva para avaliar o manguito". O Netter (cap. 3, p. 92 aprox.) descreve a mesma manobra como flexão para frente além de 90 graus, com dor indicando síndrome do impacto.
+Com o paciente **sentado**, o examinador **estabiliza a escápula** e faz uma **elevação anterior forçada** do braço afetado; o tubérculo maior bate contra o acrômio (Campbell, p. 2147). É um teste **passivo**: quem move o braço é o examinador. É isso que a banca quer quando pergunta qual é "o teste de mobilização passiva para avaliar o manguito". O Netter (cap. 3, Ombro, p. 93) descreve a mesma manobra como flexão para frente além de 90 graus, com dor indicando síndrome do impacto.
 
 O sinal de NEER dói em **todos os estágios** do impacto, mas também na capsulite adesiva, na artrose, na tendinite calcária e em lesões ósseas. Daí a segunda parte, o **teste do impacto de NEER**: injetam-se **10 mL de lidocaína a 1%** no espaço subacromial e repete-se a manobra. Se a dor diminui ou some, ela vinha do espaço subacromial; a dor das outras condições persiste (talvez com exceção da calcária). NEER propôs essa infiltração como teste diagnóstico para separar o impacto puro de outros processos.
 
@@ -172,7 +172,7 @@ Os números mostram o perfil de um teste de triagem. Sensibilidade de **75%** pa
 
 ## HAWKINS-KENNEDY
 
-O braço é **fletido a 90 graus** e o ombro é **rodado internamente com força** (Campbell, p. 2148; Netter, p. 92 aprox.). A rotação interna empurra o tubérculo maior **ainda mais para baixo do ligamento coracoacromial** e reproduz a dor do impacto. Sensibilidade de **92%** para bursite e **88%** para manguito; especificidade de **44%** e **43%**; valor preditivo negativo de **93,1%** e **90%**. É positivo em **31%** dos BANKART, **69%** dos SLAP e **94%** das artroses acromioclaviculares, o que mostra o quanto a AC contamina os testes de impacto.
+O braço é **fletido a 90 graus** e o ombro é **rodado internamente com força** (Campbell, p. 2148; Netter, cap. 3, Ombro, p. 93). A rotação interna empurra o tubérculo maior **ainda mais para baixo do ligamento coracoacromial** e reproduz a dor do impacto. Sensibilidade de **92%** para bursite e **88%** para manguito; especificidade de **44%** e **43%**; valor preditivo negativo de **93,1%** e **90%**. É positivo em **31%** dos BANKART, **69%** dos SLAP e **94%** das artroses acromioclaviculares, o que mostra o quanto a AC contamina os testes de impacto.
 
 ## Os outros testes de impacto do Campbell
 
@@ -204,7 +204,7 @@ A rigidez complica tudo: um ombro rígido não chega à posição em que o atras
 
 ## Teste de JOBE (supraespinal)
 
-O ombro é posto a **90 graus de abdução** e **30 graus de flexão anterior** (o plano da escápula) e **rodado internamente** com o **polegar apontando para o chão**; o examinador aplica resistência para baixo (Campbell, p. 2148). **Fraqueza** indica insuficiência do **supraespinal** por rotura; **dor** pode ser só impacto. O Netter (p. 92 aprox.) descreve o braço pronado, elevação contra resistência no plano escapular, com dor ou fraqueza indicando rotura parcial ou total do supraespinal.
+O ombro é posto a **90 graus de abdução** e **30 graus de flexão anterior** (o plano da escápula) e **rodado internamente** com o **polegar apontando para o chão**; o examinador aplica resistência para baixo (Campbell, p. 2148). **Fraqueza** indica insuficiência do **supraespinal** por rotura; **dor** pode ser só impacto. O Netter (cap. 3, Ombro, p. 93) descreve o braço pronado, elevação contra resistência no plano escapular, com dor ou fraqueza indicando rotura parcial ou total do supraespinal.
 
 Na Tabela 51.2 do Campbell, o "supraspinatus (JOBE) muscle test" tem sensibilidade de **44,1%** e especificidade de **89,5%**: é um teste mais específico do que sensível. O texto do mesmo capítulo, ao citar PARK, chama o JOBE de "teste do infraespinal", uma troca que a própria tabela corrige: JOBE é o teste do **supraespinal**.
 
@@ -242,7 +242,7 @@ Com o paciente **de pé**, o examinador eleva o braço a **90 graus no plano da 
 
 A lógica anatômica sustenta o achado. Com o braço ao lado, o infraespinal domina a rotação externa; com o braço elevado a 90 graus, o **redondo menor** passa a ser o rotador externo decisivo. Como o redondo menor é inervado pelo **axilar** e o infraespinal pelo **supraescapular**, o PATTE também ajuda a separar os dois nervos. O Campbell lembra que o redondo menor ganhou atenção justamente porque segura a função quando os outros tendões falham.
 
-Aqui há uma **divergência entre os livros**. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 3, p. 93 aprox.), descreve o sinal do corneteiro como rotação lateral contra a resistência **em leve abdução** e atribui a fraqueza a rotura do manguito **envolvendo o infraespinal**. O Campbell 15, com a técnica a 90 graus, fala em **redondo menor**, e é o que as provas brasileiras cobram.
+Aqui há uma **divergência entre os livros**. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 3, Ombro, p. 93), descreve o sinal do corneteiro como rotação lateral contra a resistência **em leve abdução** e atribui a fraqueza a rotura do manguito **envolvendo o infraespinal**. O Campbell 15, com a técnica a 90 graus, fala em **redondo menor**, e é o que as provas brasileiras cobram.
 
 !questoes central=ombro-cotovelo-0173 relacionadas=ombro-cotovelo-0406
 conceito: O sinal do corneteiro de PATTE, com o braço a 90 graus no plano da escápula e o cotovelo a 90, testa a rotação lateral feita pelo redondo menor (nervo axilar); fraqueza ou dor = positivo.
@@ -250,7 +250,7 @@ como: O TARO 2023 pediu o músculo cuja força o sinal do corneteiro determina; 
 armadilha: Marcar infraespinal (que domina com o braço ao lado; o Netter, por descrever o teste em leve abdução, também o cita) ou redondo maior, que é rotador interno.
 !fim
 
-!tabela Testes do manguito por tendão (Campbell 15, cap. 51, p. 2148 a 2154; Netter, cap. 3, p. 93 aprox.)
+!tabela Testes do manguito por tendão (Campbell 15, cap. 51, p. 2148 a 2154; Netter, cap. 3, Ombro, p. 93)
 | Tendão | Teste ativo | Sinal de atraso | Posição-chave |
 | --- | --- | --- | --- |
 | supraespinal | JOBE (lata vazia) | queda do braço (Netter); atraso em rotação externa (com o infraespinal) | elevação no plano da escápula |
@@ -273,7 +273,7 @@ A tradução prática é que um teste positivo do subescapular vale muito (alta 
 
 ## Os quatro testes
 
-- **Lift-off** (Campbell, p. 2152, fig. 51.14): sentado ou de pé, braço em rotação interna, **dorso da mão apoiado na região lombar**; pede-se que o paciente **afaste o dorso da mão das costas**. Não conseguir sugere **rotura isolada do subescapular**. A eletromiografia confirmou que o subescapular está **maximamente ativo com a mão na região mediolombar** e com resistência. O Netter (p. 93 aprox.) chama essa manobra de **teste de GERBER** (mão atrás do dorso, empurrar para trás) e descreve uma variante de atraso: o examinador afasta a mão e o paciente precisa mantê-la afastada.
+- **Lift-off** (Campbell, p. 2152, fig. 51.14): sentado ou de pé, braço em rotação interna, **dorso da mão apoiado na região lombar**; pede-se que o paciente **afaste o dorso da mão das costas**. Não conseguir sugere **rotura isolada do subescapular**. A eletromiografia confirmou que o subescapular está **maximamente ativo com a mão na região mediolombar** e com resistência. O Netter (cap. 3, Ombro, p. 93) chama essa manobra de **teste de GERBER** (mão atrás do dorso, empurrar para trás) e descreve uma variante de atraso: o examinador afasta a mão e o paciente precisa mantê-la afastada.
 - **Belly-press** (fig. 51.15): para quem **não tem rotação interna** suficiente para levar a mão às costas. O paciente aperta o abdome com a palma e tenta manter o braço em rotação interna máxima. No teste normal o **cotovelo fica à frente do tronco**. Com o subescapular insuficiente, o **cotovelo cai para trás** e o paciente aperta o abdome **estendendo o ombro** em vez de rodá-lo internamente; com a rotura, ele **flexiona o punho** para pressionar e não consegue trazer o cotovelo para frente. O capítulo 57 resume: positivo quando o paciente não consegue pressionar a palma contra o abdome mantendo o cotovelo à frente e o punho neutro. O Netter o chama de **pressão do ventre (sinal de NAPOLEÃO)**, nome que algumas provas trocam por "abdominal press".
 - **Bear hug** (fig. 51.16): a palma do lado afetado vai sobre o **ombro oposto**, com os dedos estendidos e o **cotovelo à frente** do corpo. O paciente segura essa posição (rotação interna resistida) enquanto o examinador tenta tirar a mão do ombro com uma força de **rotação externa** perpendicular ao antebraço. É positivo se o paciente **não consegue manter** a mão ou se a força resistida for **mais de 20% menor** que a do outro lado. Força igual sem dor é negativo, e **dor sem fraqueza também é negativo**.
 - **Atraso em rotação interna** (fig. 51.21): paciente sentado de costas, braço em rotação interna quase máxima, cotovelo a 90 graus, ombro a **20 graus de elevação e 20 de extensão**. O examinador afasta passivamente o dorso da mão da região lombar e solta o punho; se o paciente **não mantém** a mão afastada, o sinal é positivo para o **subescapular**.
@@ -322,7 +322,7 @@ armadilha: Trocar o tipo II pelo III: a âncora instável define o II; a alça d
 
 ## O'BRIEN, o teste de compressão ativa
 
-O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 3, p. 93 aprox.), descreve a técnica: braço a **90 graus de flexão anterior** e **10 graus de adução**, flexão contra resistência primeiro com o antebraço em **pronação** (polegar para baixo) e depois em **supinação**. O Campbell (cap. 51, p. 2149) dá a regra de interpretação: o teste é **positivo quando a primeira manobra provoca dor e a segunda a reduz ou elimina**. A **localização** da dor separa as duas doenças que ele testa:
+O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 3, Ombro, p. 93), descreve a técnica: braço a **90 graus de flexão anterior** e **10 graus de adução**, flexão contra resistência primeiro com o antebraço em **pronação** (polegar para baixo) e depois em **supinação**. O Campbell (cap. 51, p. 2149) dá a regra de interpretação: o teste é **positivo quando a primeira manobra provoca dor e a segunda a reduz ou elimina**. A **localização** da dor separa as duas doenças que ele testa:
 
 - dor **na acromioclavicular** ou **em cima do ombro** = anormalidade **acromioclavicular**;
 - dor ou **estalido doloroso dentro da glenoumeral** = lesão **labral** (o teste foi desenhado para o SLAP).
@@ -382,7 +382,7 @@ O exame começa perguntando **em que posição** o ombro fica instável, **para 
 - **Posterior**: teste de KIM ou **clunk posterior**, em que o braço abduzido a 90 graus é levado para flexão anterior e rotação interna com estresse posterior no cotovelo; o clunk da subluxação posterior dá dor ou sensação de instabilidade.
 - **Sulco**: tração distal no braço a **0 e a 45 graus de abdução**, observando um **sulco entre a cabeça e o acrômio** que **não reduz com 45 graus de rotação externa**. Gradua-se de 0 a 3: **1+** menos de 1 cm, **2+** de 1 a 2 cm, **3+** mais de 2 cm sem redução com a rotação externa. A **0 grau** de abdução, o sulco indica frouxidão do **intervalo rotador**; a **45 graus**, do **complexo glenoumeral inferior**.
 
-!tabela Testes de instabilidade e o que revelam (Campbell 15, cap. 52, p. 2209 a 2210; Netter, cap. 3, p. 93 aprox.)
+!tabela Testes de instabilidade e o que revelam (Campbell 15, cap. 52, p. 2209 a 2210; Netter, cap. 3, Ombro, p. 93)
 | Teste | Posição | Positivo | Indica |
 | --- | --- | --- | --- |
 | apreensão | abdução 90, cotovelo 90, rotação externa e estresse anterior | apreensão | instabilidade anterior |
@@ -451,7 +451,7 @@ alerta: O gabarito oficial da `ombro-cotovelo-0330` (glenoumeral inferior a 0 gr
 
 # Acromioclavicular, escápula e desfiladeiro torácico {radar=confirmado}
 
-**A acromioclavicular.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 57, p. 2480 aprox.), define a artrose AC sintomática pela **dor à palpação** e pela dor nas manobras provocativas de **adução cruzada** e **rotação interna nas costas**; a infiltração com lidocaína a 1% sem adrenalina que alivia **80% a 100%** da dor prediz bom resultado cirúrgico. No Netter (cap. 3, p. 94 aprox.), a **adução com os braços cruzados** à frente do corpo que dói na AC indica lesão ou artrose dela. O O'BRIEN com dor em cima do ombro também aponta a AC, e a AC contamina os testes de impacto (HAWKINS positivo em 94% das artroses AC). PAXINOS não aparece nos capítulos lidos.
+**A acromioclavicular.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 57, p. 2480 aprox.), define a artrose AC sintomática pela **dor à palpação** e pela dor nas manobras provocativas de **adução cruzada** e **rotação interna nas costas**; a infiltração com lidocaína a 1% sem adrenalina que alivia **80% a 100%** da dor prediz bom resultado cirúrgico. No Netter (cap. 3, Ombro, p. 93), a **adução com os braços cruzados** à frente do corpo que dói na AC indica lesão ou artrose dela. O O'BRIEN com dor em cima do ombro também aponta a AC, e a AC contamina os testes de impacto (HAWKINS positivo em 94% das artroses AC). PAXINOS não aparece nos capítulos lidos.
 
 !tabela Acurácia dos testes para impacto, estudo de PARK (Campbell 15, cap. 51, Tabela 51.2)
 | Teste | Sensibilidade | Especificidade | Acurácia |

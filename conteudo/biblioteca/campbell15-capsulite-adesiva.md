@@ -1,6 +1,6 @@
 ---
 id: campbell15-capsulite-adesiva
-versao: 1
+versao: 2
 titulo: Capsulite adesiva (ombro congelado)
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 51 · Shoulder and Elbow Injuries (seção Adhesive Capsulitis), com o Capítulo 57 · Arthroscopy of the Upper Extremity (contraturas e liberação capsular)
 autores: Tyler J. Brolin e Joseph D. Lamplot (cap. 57); Frederick M. Azar, Thomas W. (Quin) Throckmorton e Joseph D. Lamplot (cap. 51)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (intervalo rotador, p. 2145 a 2146; Adhesive Capsulitis, p. 2172, 2172.e1, 2173 e 2174; exame e impacto, p. 2147 e 2160) e cap. 57 (portal posterior, p. 2424; contraturas do ombro, Box 57.3 e técnica 57.29 de liberação capsular, p. 2486 a 2488); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 4 Ombro e cotovelo, seção Capsulite adesiva e tendinite calcária (pág. PDF 358 a 367 e 371, sem página impressa no texto extraído); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3 Ombro (pág. PDF 139, 140 e 143, sem página impressa). As páginas citadas do Campbell são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (intervalo rotador, p. 2145 a 2146; Adhesive Capsulitis, p. 2172, 2172.e1, 2173 e 2174; exame e impacto, p. 2147 e 2160) e cap. 57 (portal posterior, p. 2424; contraturas do ombro, Box 57.3 e técnica 57.29 de liberação capsular, p. 2486 a 2488); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 4 Ombro e cotovelo, seção Capsulite adesiva e tendinite calcária (pág. PDF 358 a 367 e 371, sem página impressa no texto extraído); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3 Ombro (pág. PDF 139, 140 e 143, sem página impressa); Campbell's Operative Orthopaedics, 13ª ed., cap. 46 (p. 2322), conferido em 12/11/2026; fonte aberta: CHO e cols., J Shoulder Elbow Surg 2019 (PubMed 30846222). As páginas citadas do Campbell são as impressas.
 subtemas: Capsulite adesiva
 resumo: Cápsula contraída e espessada (termo de NEVIASER), sinovite seguida de fibrose; cerca de 2% da população, 40 a 70 anos, 70% mulheres, bilateral em 20% a 30% (50% nos diabéticos), raramente recorre; fatores: imobilidade (o principal), diabetes (insulinodependente quase 5 vezes, pior resultado: 71% contra 90% de ADM completa), hipertireoidismo, idade acima de 49 anos, doença discal cervical, AVC, infarto, autoimunes, trauma, hiperlipidemia; metaloproteinases 2 e 9 e TGF-beta1; intervalo rotador e ligamento coracoumeral contraídos; primária e secundária (LUNDBERG); estágio 1 com dor e movimento preservado, depois rigidez, maturação de 4 a 12 meses e descongelamento; perda de RE e RI passivas, depois flexão; radiografia normal, RM com cápsula inferior contraída e "burning sign", artrografia abaixo de 10 mL; autolimitada em 12 a 18 meses; corticoide intra-articular na fase 1, hidrodilatação, bloqueio do supraescapular para a dor, manipulação em FEAR, liberação artroscópica (intervalo rotador = rotação externa) com 80% a 90% de melhora; fratura do úmero e luxação na manipulação, nervo axilar na liberação inferior.
 ---
@@ -159,7 +159,7 @@ alerta: A `ombro-cotovelo-0480` está sem gabarito oficial. O SIZÍNIO HEBERT 5 
 
 O Campbell descreve a doença como uma progressão de **inflamação capsular para fibrose**, terminando no **descongelamento** (cap. 51, p. 2172). No suplemento eletrônico da mesma seção, detalha a cascata celular (p. 2172.e1):
 
-- **citocinas**, **metaloproteinases 2 e 9** e o **fator de transformação do crescimento beta 1 (TGF-beta1)** foram implicados no processo;
+- **citocinas**, **metaloproteinases 2 e 9** e o **fator de transformação do crescimento beta 1 (TGF-beta1)** foram implicados no processo; a direção é de **aumento**: CHO, LHO, HWANG e KIM compararam a cápsula de 21 pacientes com ombro congelado com a de 13 controles com instabilidade e encontraram MMP-2 e MMP-9 **hiperexpressas** na capsulite, e, no modelo de contratura em ratos, a expressão sequencial de IL-6 e das MMP acompanhou a fibrose da cápsula (J Shoulder Elbow Surg, 2019; PubMed 30846222);
 - o **evento desencadeante** da cascata continua **desconhecido**;
 - as **alarminas**, moléculas endógenas liberadas no meio extracelular depois de infecção ou lesão tecidual, estão aumentadas na cápsula do ombro congelado, e a expressão da alarmina **HMGB1** se correlaciona com a **intensidade da dor** relatada;
 - a via do receptor canabinoide **CB1** também foi estudada: ombros rígidos têm mais RNA mensageiro e mais marcação de CB1 na bursa subacromial e mais CB1 no líquido subacromial.
@@ -251,7 +251,7 @@ A queixa típica é uma **dor mal localizada no ombro**, de **início espontâne
 
 O Campbell é honesto sobre a falta de padrão: **não há critérios diagnósticos universalmente aceitos** (cap. 51, p. 2172). Na experiência dos autores:
 
-- a **rotação interna e a rotação externa** costumam ser perdidas **primeiro**, seguidas da **flexão**;
+- a **rotação interna e a rotação externa** costumam ser perdidas **primeiro**, seguidas da **flexão** (15ª ed., cap. 51, p. 2172); a 13ª edição, no mesmo parágrafo, dizia outra coisa: a **rotação interna** é perdida **primeiro**, seguida da **flexão e da rotação externa** (Campbell 13, cap. 46, p. 2322);
 - o paciente típico **roda internamente só até o sacro**, perdeu **50% da rotação externa** e tem **menos de 90 graus de abdução**;
 - o exame deve ser feito em **supino**, avaliando a ADM **passiva**, sobretudo rotação externa, rotação interna e abdução;
 - em geral há diferença de pelo menos **10 a 15 graus na rotação externa e na abdução** em relação ao outro lado, na forma idiopática;
@@ -269,7 +269,7 @@ Os testes de impacto não ajudam a separar as doenças: o teste de **NEER** dói
 conceito: O Campbell observa que rotação interna e externa costumam ser perdidas primeiro, seguidas da flexão; a perda típica é de 50% da RE, RI até o sacro e abdução abaixo de 90 graus.
 como: O TARO 2007 perguntou por qual movimento a perda costuma começar, entre flexão, extensão, rotação medial e rotação lateral.
 armadilha: Marcar flexão porque a elevação é a queixa funcional mais visível; no exame, as rotações vão primeiro, e a flexão vem depois.
-alerta: A `ombro-cotovelo-0470` está sem gabarito oficial. O Campbell 15 (cap. 51, p. 2172) diz que RI e RE são perdidas inicialmente, sem separar uma da outra; a ênfase do livro na perda de 50% da RE e no intervalo rotador contraído favorece a rotação lateral, mas a fonte não exclui a rotação medial.
+alerta: A `ombro-cotovelo-0470` está sem gabarito oficial; o gabarito da bibliografia é C (rotação medial). O Campbell 13 (cap. 46, p. 2322) sustenta essa resposta: a rotação interna é perdida primeiro, seguida da flexão e da rotação externa. O Campbell 15 (cap. 51, p. 2172) mudou a frase para RI e RE perdidas inicialmente, sem separar uma da outra, e por isso a questão deve ser respondida pela edição antiga da bibliografia.
 !fim
 
 ## Os critérios de CODMAN
@@ -515,4 +515,4 @@ O risco anatômico principal da liberação é o **nervo axilar**, junto do rece
 
 A capsulite é uma doença da **cápsula**: sinovite que vira fibrose, com **intervalo rotador** e **ligamento coracoumeral** encolhidos e recesso axilar obliterado. Por isso o movimento **ativo e passivo** se perde, as **rotações** primeiro, e a radiografia é normal. O tratamento segue o estágio: **corticoide** e **hidrodilatação** na sinovite, **bloqueio do supraescapular** para a dor, **fisioterapia** para a rigidez e, na falha, **manipulação em FEAR** e **liberação artroscópica**, em que cada região liberada devolve um movimento, sempre poupando o **nervo axilar** no recesso inferior.
 
-> **Na prova:** capsulite = ADM **ativa e passiva** reduzidas, **RE** primeiro; **2%**, **40 a 70 anos**, **70% mulheres**, bilateral em **20% a 30%** (50% no diabético), raramente recorre; **imobilidade**, **diabetes** (insulinodependente 5 vezes, ADM completa em **71% contra 90%**), **hipertireoidismo**, idade acima de 49; **MMP 2 e 9** e TGF-beta1; estágio 1 = **dor sem limitação**; RM com **"burning sign"**, artrografia abaixo de **10 mL**; corticoide na **fase 1**; bloqueio do **supraescapular** = **dor**; manipulação **FEAR**; liberar o **intervalo rotador** = **rotação externa**.
+> **Na prova:** capsulite = ADM **ativa e passiva** reduzidas, **RI e RE** primeiro, depois flexão (no Campbell 13, **RI** primeiro); **2%**, **40 a 70 anos**, **70% mulheres**, bilateral em **20% a 30%** (50% no diabético), raramente recorre; **imobilidade**, **diabetes** (insulinodependente 5 vezes, ADM completa em **71% contra 90%**), **hipertireoidismo**, idade acima de 49; **MMP 2 e 9** e TGF-beta1; estágio 1 = **dor sem limitação**; RM com **"burning sign"**, artrografia abaixo de **10 mL**; corticoide na **fase 1**; bloqueio do **supraescapular** = **dor**; manipulação **FEAR**; liberar o **intervalo rotador** = **rotação externa**.

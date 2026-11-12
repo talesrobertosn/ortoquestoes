@@ -1,6 +1,6 @@
 ---
 id: rockwood10-36-umero-proximal
-versao: 4
+versao: 5
 titulo: Fratura do úmero proximal
 especialidade: trauma
 acesso: gratis
@@ -308,7 +308,7 @@ armadilha: Prótese reversa contraindicada: o capítulo a indica justamente quan
 
 ## Necrose dos tubérculos
 
-Os tubérculos também podem necrosar, com ou sem a cabeça viva: o tubérculo maior **some** na radiografia ("tubérculo que desaparece"). Até consolidar, ele só recebe sangue pelo periósteo e pelo manguito. Perdida a inserção do manguito posterossuperior, sobram três salvamentos:
+Os tubérculos também podem necrosar, com ou sem a cabeça viva: o tubérculo maior **some** na radiografia ("tubérculo que desaparece"). Até consolidar, ele só recebe sangue pelo periósteo e pelo manguito. Perdida a inserção do manguito posterossuperior, o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36, seção Tuberosity Osteonecrosis), diz que só sobram três salvamentos:
 
 - perda da **elevação ativa**: **reversa**;
 - perda da **rotação externa**: transferência do **trapézio inferior**;
@@ -682,9 +682,9 @@ Os dois livros olham pacientes diferentes. O Rockwood trata a necrose depois da 
 
 ## Tubérculo maior perdido: a reversa não basta
 
-Quando a necrose atinge o **tubérculo maior**, o problema deixa de ser só a cartilagem: some a inserção do manguito posterossuperior. O Rockwood (cap. 36) dá três salvamentos, um para cada déficit, e a lógica fica clara com o Campbell.
+Quando a necrose atinge o **tubérculo maior**, o problema deixa de ser só a cartilagem: some a inserção do manguito posterossuperior. O Rockwood (cap. 36, seção Tuberosity Osteonecrosis) dá três salvamentos, um para cada déficit, e a lógica fica clara com o Campbell.
 
-A **reversa** devolve a **elevação** porque cria um fulcro fixo em que o deltoide trabalha mesmo sem manguito (Campbell, cap. 13, p. 606, Fig. 13.15); a lista de indicações inclui a **ausência dos tubérculos** e a viciosa do tubérculo maior. Mas ela não recria rotadores externos: o próprio Campbell (p. 607 aprox.) diz que a **infiltração gordurosa ou a ausência do redondo menor** compromete o resultado da reversa. A **transferência do grande dorsal**, sozinha, devolve **rotação externa ativa** (o tendão, inserido no assoalho do sulco bicipital e inervado pelo toracodorsal, age como depressor da cabeça ou como tenodese em rotação externa), mas o Campbell (cap. 14, p. 630) a indica isolada só **sem pseudoparalisia**, com pouca artrose e subescapular íntegro. O **trapézio inferior** (p. 632) também serve à rotação externa e não devolve elevação.
+A **reversa** devolve a **elevação** porque cria um fulcro fixo em que o deltoide trabalha mesmo sem manguito (Campbell, cap. 13, p. 606, Fig. 13.15); a lista de indicações inclui a **ausência dos tubérculos** e a viciosa do tubérculo maior. Mas ela não recria rotadores externos: o próprio Campbell (cap. 13, p. 607) diz que a **infiltração gordurosa ou a ausência do redondo menor** compromete o resultado da reversa. A **transferência do grande dorsal**, sozinha, devolve **rotação externa ativa** (o tendão, inserido no assoalho do sulco bicipital e inervado pelo toracodorsal, age como depressor da cabeça ou como tenodese em rotação externa), mas o Campbell (cap. 14, p. 630) a indica isolada só **sem pseudoparalisia**, com pouca artrose e subescapular íntegro. O **trapézio inferior** (p. 632) também serve à rotação externa e não devolve elevação.
 
 Juntando: sem elevação e sem rotação externa, nenhum dos dois procedimentos isolados resolve, e o salvamento é a **reversa associada à transferência do grande dorsal**.
 
