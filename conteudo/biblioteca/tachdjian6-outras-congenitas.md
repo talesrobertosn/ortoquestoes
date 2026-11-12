@@ -439,7 +439,7 @@ As associações valem pontos: a luxação **bilateral** é quase sempre sindrô
 
 O tratamento começa logo, com manipulação suave e gesso, evitando a flexão "em dobradiça" que deixa a tíbia anteriorizada e as manipulações forçadas, que fraturam; com 30° de flexão, uma ou duas manipulações chegam a 90° (T cap. 18, p. 632). Sem resposta, cirurgia a partir dos 6 meses e de preferência até 1 ano; os autores do Tachdjian preferem o **encurtamento femoral** à quadricepsplastia em V-Y, que deixa fraqueza e fibrose, e associam capsulorrafia posterior e reconstrução do LCA nas síndromes de frouxidão (p. 632 e 633). Com quadril e joelho luxados, o Campbell aconselha corrigir **o joelho primeiro** (cap. 31, p. 1080).
 
-!questoes central=pediatria-0025 relacionadas=pediatria-0358
+!questoes central=pediatria-0025 relacionadas=pediatria-0358,pediatria-0169
 conceito: Na luxação congênita do joelho o joelho está em hiperextensão com fibrose e encurtamento do quadríceps; quadril ipsilateral luxado em 70% e pé torto em 50%.
 como: O TARO 2018 perguntou a posição e o músculo; o TEPOP 2024, as luxações associadas.
 armadilha: Marcar frouxidão do quadríceps ou fibrose dos isquiotibiais; ou associar ao pé talo vertical em vez do pé torto.

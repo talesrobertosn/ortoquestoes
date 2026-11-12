@@ -388,7 +388,7 @@ O Lovell and Winter (cap. 16, p. 591) descreve a mesma cadeia: cadência e dorsi
 | extensores do quadril e dorsiflexores (perda) | fim da marcha, em geral por volta dos 10 anos sem tratamento |
 !fim
 
-!questoes central=pediatria-0385 relacionadas=pediatria-0354
+!questoes central=pediatria-0385 relacionadas=pediatria-0354,pediatria-0334
 conceito: A marcha anserina é a da DUCHENNE: tronco oscilando sobre o membro de apoio por glúteos fracos, com hiperlordose lombar pela fraqueza dos extensores do quadril; com a progressão, o duplo apoio aumenta.
 como: O TARO 2025 combinou PARKINSON ou DUCHENNE com hipercifose ou hiperlordose; o TEPOP 2024 pediu a característica verdadeira da DUCHENNE (fraqueza abdutora aumentando o duplo apoio).
 armadilha: Associar à cifose torácica, que é da postura parkinsoniana, ou dizer que a fraqueza é assimétrica ou começa por hipertonia; na DUCHENNE ela é simétrica, proximal e flácida.
