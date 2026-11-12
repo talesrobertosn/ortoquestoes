@@ -1,6 +1,6 @@
 ---
 id: green-dupuytren
-versao: 1
+versao: 2
 titulo: Doença de DUPUYTREN
 especialidade: mao
 acesso: gratis
@@ -344,7 +344,7 @@ Na agulha, longe da IFP, **o feixe costuma ficar central às cordas lateral e es
 conceito: A corda espiral, formada por banda pré-tendínea, banda espiral, lâmina digital lateral e ligamento de GRAYSON, passa dorsal ao feixe em proximal e volar em distal e leva o feixe para a linha média e para a superfície; aparece em quase metade das contraturas digitais.
 como: O TARO 2021 perguntou a corda que desvia o feixe; a UFG 2017, a estrutura que medializa o feixe; a USP-SP 2024, a afirmação correta sobre as cordas espirais; o TARO 2007 e a UFG 2020, as estruturas que formam (e a que não forma) a corda espiral; a USP-SP 2026, a estrutura que não forma cordões; o TARO 2022, a corda de uma figura formada por um ligamento.
 armadilha: Dizer que a corda espiral é proximalmente lateral e profunda ao feixe, ou incluir o retinacular oblíquo e o CLELAND na sua formação.
-alerta: `mao-0605` está sem gabarito; pelo Campbell, a alternativa A (banda pré-tendínea, lâmina digital lateral e GRAYSON) é a que reúne componentes da corda espiral. `mao-1622` está sem gabarito, e os dois livros descrevem as quatro estruturas oferecidas (banda espiral, lâmina digital lateral, natatório e banda pré-tendínea) como formadoras de cordas; nenhuma delas é excluída pelo texto. `mao-0113` depende de imagem não conferida; o gabarito (GRAYSON) é coerente com o Campbell, que descreve a corda de GRAYSON.
+alerta: `mao-0605` está sem gabarito; pelo Campbell, a alternativa A (banda pré-tendínea, lâmina digital lateral e GRAYSON) é a que reúne componentes da corda espiral. `mao-1622` está sem gabarito, e os dois livros descrevem as quatro estruturas oferecidas (banda espiral, lâmina digital lateral, natatório e banda pré-tendínea) como formadoras de cordas; nenhuma delas é excluída pelo texto. `mao-0113` usa o desenho da Fig. 80.5B do Campbell (cap. 80, p. 3518) sem os rótulos: a seta aponta a **corda digital lateral**, trecho do meio da corda contínua que começa como corda espiral e termina sobre a falange média como corda de GRAYSON; das alternativas, só o GRAYSON compõe essa corda (p. 3517), e o gabarito oficial (GRAYSON) foi mantido.
 !fim
 
 ## As cordas que chegam à IFD: lateral e retrovascular

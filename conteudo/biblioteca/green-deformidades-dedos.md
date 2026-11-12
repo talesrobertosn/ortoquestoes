@@ -1,6 +1,6 @@
 ---
 id: green-deformidades-dedos
-versao: 1
+versao: 2
 titulo: Deformidades dos dedos
 especialidade: mao
 acesso: gratis
@@ -90,7 +90,7 @@ O Green (cap. 10, p. 339) organiza o exame do dedo rígido em uma lógica simple
 
 ## O teste de BUNNELL
 
-O **teste de BUNNELL** examina o efeito da posição da MF sobre a flexão passiva da IFP (Green, p. 339). É **positivo quando a IFP flete menos com a MF estendida do que com a MF fletida**. O raciocínio é mecânico: o intrínseco passa **volar** ao eixo da MF e **dorsal** ao eixo da IFP. Estender a MF estica o intrínseco; se ele estiver curto, a banda lateral fica tensa e não deixa a IFP fletir. Fletir a MF afrouxa o intrínseco e a IFP volta a fletir.
+O **teste de BUNNELL** examina o efeito da posição da MF sobre a flexão passiva da IFP (Green, p. 339). É **positivo quando a IFP flete menos com a MF estendida do que com a MF fletida**. O raciocínio é mecânico: o intrínseco passa **volar** ao eixo da MF e **dorsal** ao eixo da IFP, a mesma geometria que o Green reproduz na tenodese intrínseca com enxerto, passado volar ao eixo da MF para fletir a MF e dorsal ao eixo da IFP para estender a IFP (cap. 33, p. 1143). Estender a MF estica o intrínseco; se ele estiver curto, a banda lateral fica tensa e não deixa a IFP fletir. Fletir a MF afrouxa o intrínseco e a IFP volta a fletir.
 
 O teste não separa interósseo de lumbrical. O Green sugere repetir em **desvio radial e ulnar**: tensão simétrica indica que não é só o lumbrical; tensão maior em desvio ulnar sugere componente lumbrical. Há ainda o **teste do lumbrical**: com BUNNELL normal, a flexão ativa limitada pode vir do lumbrical isolado, avaliado pelo **gancho passivo** (fletir IFP e IFD juntas), porque as fibras lumbricais são as mais volares (Green, p. 340).
 
@@ -345,18 +345,18 @@ No capítulo reumatoide do Green (FELDON, TERRONO, NALEBUFF e MILLENDER, p. 1879
 | --- | --- | --- |
 | I | IFP flexível em todas as posições | tala Silver Ring, artrodese da IFD, dermadese, tenodese do FDS, ORL de LITTLER |
 | II | flexão da IFP limitada em certas posições (com a MF estendida): tensão intrínseca | liberação intrínseca, com artroplastia da MF se preciso |
-| III | IFP rígida em todas as posições, articulação preservada na radiografia | manipulação, liberação de pele, mobilização das bandas laterais, checar flexores |
+| III | IFP rígida em todas as posições; no Green, espaço articular em geral preservado na radiografia (p. 1883); na Tabela 78.3 do Campbell, destruição articular significativa na radiografia (p. 3452) | manipulação, liberação de pele, mobilização das bandas laterais, checar flexores |
 | IV | IFP rígida com destruição articular | artrodese (preferida no indicador) ou artroplastia |
 !fim
 
-O tipo II é, na prática, um **teste de BUNNELL positivo** num reumatoide: a MF desviada e subluxada deixa os intrínsecos tensos, e a IFP só flete quando a MF flete ou desvia para ulnar. O tipo III engana: a IFP rígida sugere artrose, mas a radiografia mostra **espaço articular preservado**; o que prende é o aparelho extensor (bandas laterais dorsais que perderam o deslizamento volar), os colaterais e a pele. A **mobilização das bandas laterais** com duas incisões paralelas que as separam da banda central permite fletir a IFP; a manipulação sob anestesia chega a **80 a 90 graus**. O tipo IV pede salvamento: **artrodese** (fusão de **25 a 45 graus**, mais flexão no anelar e no mínimo) ou **artroplastia**, que funciona bem no cisne desde que a hiperextensão seja corrigida.
+O tipo II é, na prática, um **teste de BUNNELL positivo** num reumatoide: a MF desviada e subluxada deixa os intrínsecos tensos, e a IFP só flete quando a MF flete ou desvia para ulnar. O tipo III engana: a IFP rígida sugere artrose, mas, pelo Green, a radiografia **muitas vezes mostra espaço articular bem preservado** (p. 1883). O Campbell diverge: a Tabela 78.3, com dados de NALEBUFF, FELDON e MILLENDER, descreve o tipo III como articulação rígida, flexão diminuída e **destruição articular significativa na radiografia**, com o mesmo tratamento (manipulação, mobilização das bandas laterais e liberação da pele dorsal), e reserva para o tipo IV a destruição da superfície articular tratada por artrodese (cap. 78, p. 3452). Pelo Green, o que prende é o aparelho extensor (bandas laterais dorsais que perderam o deslizamento volar), os colaterais e a pele. A **mobilização das bandas laterais** com duas incisões paralelas que as separam da banda central permite fletir a IFP; a manipulação sob anestesia chega a **80 a 90 graus**. O tipo IV pede salvamento: **artrodese** (fusão de **25 a 45 graus**, mais flexão no anelar e no mínimo) ou **artroplastia**, que funciona bem no cisne desde que a hiperextensão seja corrigida.
 
 No tipo I, a **tenodese do FDS** ("sublimis sling") é a preferida quando a hiperextensão da IFP é primária: uma hemifita do FDS é cortada cerca de 1,5 cm proximal à IFP, mantida presa distalmente e fixada (âncora ou polia A2) com a IFP a **20 a 30 graus de flexão**, criando uma leve contratura em flexão (Green, p. 1881). A **artrodese da IFD** é preferida quando o martelo é primário.
 
 !questoes central=mao-0880 relacionadas=mao-1139,mao-0608,mao-0626
-conceito: NALEBUFF: I IFP flexível; II limitada conforme a posição da MF (intrínsecos); III rígida sem destruição articular; IV rígida com destruição, tratada por artrodese ou artroplastia.
+conceito: NALEBUFF: I IFP flexível; II limitada conforme a posição da MF (intrínsecos); III rígida, pelo Green sem destruição articular (a Tabela 78.3 do Campbell descreve destruição já no III); IV rígida com destruição, tratada por artrodese ou artroplastia.
 como: A UFG 2017 e a PUC-SP 2021 pediram o tipo III; o TARO 2007 e o TARO 2009 pediram o tratamento do tipo IV.
-armadilha: Achar que IFP rígida significa articulação destruída; no III a radiografia é boa e o tratamento é de partes moles.
+armadilha: Achar que IFP rígida significa articulação destruída; no III, pelo Green, a radiografia costuma ser boa e o tratamento é de partes moles (a Tabela 78.3 do Campbell, p. 3452, descreve destruição articular já no III, mas mantém o tratamento de partes moles).
 alerta: `mao-0608` e `mao-0626` estão sem gabarito oficial; o Green indica para o tipo IV artrodese ou artroplastia da IFP, o que sustenta a artrodese interfalângica proximal (alternativa D nas duas).
 !fim
 
