@@ -12,11 +12,13 @@ try{
  const file=join(dir,'cenarios.mjs')
  await build({stdin:{contents:`export * from './src/componentes/inicio/cena/cenarios'; export * from './src/componentes/inicio/cena/clima'`,resolveDir:process.cwd(),loader:'ts'},outfile:file,bundle:true,platform:'node',format:'esm',logLevel:'error'})
  const {CENARIOS,cenarioDaHora,faixaDoCenario,ordemDoCiclo,FAIXA_MS,cenariosDoDia,naEpoca,nevascasDoDia,climaAgora}=await import(pathToFileURL(file))
- assert.equal(CENARIOS.length,8)
+ assert.equal(CENARIOS.length,9)
  const vale=CENARIOS.find(c=>c.id==='vale')
+ const sala=CENARIOS.find(c=>c.id==='sala_natal')
  // A época do Natal: de 10 de novembro ao Dia de Reis, virando o ano.
  for(const [m,d,sim] of [[11,9,false],[11,10,true],[12,25,true],[1,1,true],[1,6,true],[1,7,false],[7,15,false]])assert.equal(naEpoca(vale,m,d),sim,`${d}/${m}`)
- for(const [data,n] of [['2026-11-09T12:00:00-03:00',7],['2026-11-20T12:00:00-03:00',8],['2027-01-06T23:59:00-03:00',8],['2027-01-07T00:01:00-03:00',7]]){
+ for(const [m,d,sim] of [[11,9,false],[11,10,true],[12,25,true],[1,6,true],[1,7,false]])assert.equal(naEpoca(sala,m,d),sim,`sala ${d}/${m}`)
+ for(const [data,n] of [['2026-11-09T12:00:00-03:00',7],['2026-11-20T12:00:00-03:00',9],['2027-01-06T23:59:00-03:00',9],['2027-01-07T00:01:00-03:00',7]]){
   assert.equal(cenariosDoDia(new Date(data)).length,n,data)
  }
  assert.equal(FAIXA_MS,2*3600000)
@@ -36,7 +38,7 @@ try{
  }
  process.env.TZ='America/Sao_Paulo'
  // Ciclos sem repetição: em cada sequência de n faixas passam os n cenários, e nunca o mesmo duas faixas seguidas.
- for(const [ini,n] of [['2026-07-01T00:00:00-03:00',7],['2026-11-12T00:00:00-03:00',8]]){
+ for(const [ini,n] of [['2026-07-01T00:00:00-03:00',7],['2026-11-12T00:00:00-03:00',9]]){
   const t0=faixaDoCenario(new Date(ini)).faixa
   const comeco=(Math.ceil(t0/n))*n
   let anterior=null
@@ -54,7 +56,7 @@ try{
  const ordens=new Set()
  for(let c=0;c<40;c++){
   const ordem=ordemDoCiclo(c)
-  assert.equal(new Set(ordem.map(x=>x.id)).size,8,'nenhum cenário repete no ciclo')
+  assert.equal(new Set(ordem.map(x=>x.id)).size,9,'nenhum cenário repete no ciclo')
   assert.deepEqual(ordemDoCiclo(c).map(x=>x.id),ordem.map(x=>x.id),'não muda com visitas ou reload')
   ordens.add(ordem.map(x=>x.id).join(','))
  }
@@ -65,6 +67,8 @@ try{
  assert.equal(cenarioDaHora(new Date('2026-07-01T10:00:00-03:00')).id,'vale','prévia explícita funciona até fora da época')
  globalThis.location={search:'',hash:'#/?cenario=abrigo'}
  assert.equal(cenarioDaHora().id,'abrigo','prévia explícita continua disponível')
+ globalThis.location={search:'',hash:'#/?cenario=sala_natal'}
+ assert.equal(cenarioDaHora().id,'sala_natal','prévia da sala funciona fora do Natal')
  delete globalThis.location
  // O tempo: nevascas iguais para todos, de 40 min a 2 h 30, no máximo três por dia; a neve fica no chão uma hora depois.
  let dias_com_neve=0
@@ -102,5 +106,5 @@ try{
  assert.ok(CENARIOS.find(c=>c.id==='abrigo').fogo)
  assert.ok(CENARIOS.find(c=>c.id==='praca').dragao)
  assert.ok(vale.repertorio.length>=5&&vale.neve.arquivo)
- console.log(`Inicial: oito cenários (o de Natal de 10/11 a 6/1), 2 h cada um, ciclos sem repetir, viradas nas horas pares em quatro fusos, nevascas iguais para todos (${dias_com_neve} de 200 dias com neve) e 54 imagens presentes.`)
+ console.log(`Inicial: nove cenários (os dois de Natal de 10/11 a 6/1), 2 h cada um, ciclos sem repetir, viradas nas horas pares em quatro fusos, nevascas iguais para todos (${dias_com_neve} de 200 dias com neve) e imagens presentes.`)
 }finally{await rm(dir,{recursive:true,force:true})}
