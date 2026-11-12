@@ -166,65 +166,65 @@ export function CartaConvite({ bicho, aoFechar, aoCompartilhar, previa }: Props)
   }
 
   const f = FOLHAS[bicho]
-  const boca = { left: `calc(var(--cc-bicho-x) + ${f.boca[0] * f.esc}px)`, top: `${(f.boca[1] - f.chao) * f.esc}px` }
+  const boca = { left: `calc(var(--cvc-bicho-x) + ${f.boca[0] * f.esc}px)`, top: `${(f.boca[1] - f.chao) * f.esc}px` }
 
   return createPortal(
     <aside
-      className={`cc cc--${bicho} cc--${sit}${aberta ? ' cc--aberta' : ''}${fechando ? ' cc--fechando' : ''} nao-imprime`}
-      role="dialog" aria-modal="false" aria-labelledby="cc-titulo"
+      className={`cvc cvc--${bicho} cvc--${sit}${aberta ? ' cvc--aberta' : ''}${fechando ? ' cvc--fechando' : ''} nao-imprime`}
+      role="dialog" aria-modal="false" aria-labelledby="cvc-titulo"
     >
       <BichoCarta bicho={bicho} fase={fase} />
-      {fase === 'entregando' && <img className="cc__cartinha" src={recurso('pixel/mascote/carta-mini.png')} width={18} height={14} alt="" style={boca} />}
+      {fase === 'entregando' && <img className="cvc__cartinha" src={recurso('pixel/mascote/carta-mini.png')} width={18} height={14} alt="" style={boca} />}
 
-      <div className="cc__papel">
-        <button type="button" className="cc__fechar" onClick={fechar} aria-label="Fechar"><Icone nome="fechar" tamanho={18} /></button>
-        <div className="cc__dialogo">
-          <p className="cc__quem">{bicho === 'coruja' ? 'Coruja' : 'Gato'} do {SITE.nome}</p>
-          <p className="cc__fala" aria-label={fala} onClick={() => definirLetras(fala.length)}>
+      <div className="cvc__papel">
+        <button type="button" className="cvc__fechar" onClick={fechar} aria-label="Fechar"><Icone nome="fechar" tamanho={18} /></button>
+        <div className="cvc__dialogo">
+          <p className="cvc__quem">{bicho === 'coruja' ? 'Coruja' : 'Gato'} do {SITE.nome}</p>
+          <p className="cvc__fala" aria-label={fala} onClick={() => definirLetras(fala.length)}>
             <span aria-hidden="true">{fala.slice(0, letras)}</span>
-            {letras < fala.length && <i className="cc__cursor" aria-hidden="true" />}
+            {letras < fala.length && <i className="cvc__cursor" aria-hidden="true" />}
           </p>
         </div>
 
         <Conteudo sit={sit} dados={dados} novos={novos} premium={premium} />
 
-        <div className="cc__acoes" onMouseEnter={() => olhar(true)} onMouseLeave={() => olhar(false)} onFocus={() => olhar(true)} onBlur={() => olhar(false)}>
+        <div className="cvc__acoes" onMouseEnter={() => olhar(true)} onMouseLeave={() => olhar(false)} onFocus={() => olhar(true)} onBlur={() => olhar(false)}>
           {sit === 'visitante' ? <>
-            <a className="cc__botao cc__botao--principal" href={href('/indicar')} onClick={() => aoFechar()}>
+            <a className="cvc__botao cvc__botao--principal" href={href('/indicar')} onClick={() => aoFechar()}>
               <Icone nome="usuario" tamanho={18} /> Criar conta e pegar meu link
             </a>
-            <a className="cc__simples" href={`https://wa.me/?text=${encodeURIComponent(TEXTO_CONVITE)}`} target="_blank" rel="noopener noreferrer" onClick={comemorar}>
+            <a className="cvc__simples" href={`https://wa.me/?text=${encodeURIComponent(TEXTO_CONVITE)}`} target="_blank" rel="noopener noreferrer" onClick={comemorar}>
               <IconeWhatsapp tamanho={16} /> Só mandar o site no WhatsApp
             </a>
           </> : sit === 'carregando' ? <>
-            <span className="cc__botao cc__botao--whatsapp cc__botao--espera" role="status"><IconeWhatsapp tamanho={20} /> Preparando o seu link…</span>
+            <span className="cvc__botao cvc__botao--whatsapp cvc__botao--espera" role="status"><IconeWhatsapp tamanho={20} /> Preparando o seu link…</span>
           </> : <>
-            <a className="cc__botao cc__botao--whatsapp" href={`https://wa.me/?text=${encodeURIComponent(mensagem)}`} target="_blank" rel="noopener noreferrer" onClick={comemorar}>
+            <a className="cvc__botao cvc__botao--whatsapp" href={`https://wa.me/?text=${encodeURIComponent(mensagem)}`} target="_blank" rel="noopener noreferrer" onClick={comemorar}>
               <IconeWhatsapp tamanho={18} /> {pessoal ? 'Mandar meu link no WhatsApp' : 'Mandar no WhatsApp'}
             </a>
-            <div className="cc__duplas">
-              <button type="button" className="cc__botao" onClick={() => void copiar('link')}>
+            <div className="cvc__duplas">
+              <button type="button" className="cvc__botao" onClick={() => void copiar('link')}>
                 <Icone nome={copiado === 'link' ? 'certo' : 'link'} tamanho={16} />{copiado === 'link' ? 'Link copiado' : pessoal ? 'Copiar meu link' : 'Copiar link'}
               </button>
               {temCompartilhar
-                ? <button type="button" className="cc__botao" onClick={() => void outrosApps()}><Icone nome="compartilhar" tamanho={16} /> Outros apps</button>
-                : <button type="button" className="cc__botao" onClick={() => void copiar('mensagem')}>
+                ? <button type="button" className="cvc__botao" onClick={() => void outrosApps()}><Icone nome="compartilhar" tamanho={16} /> Outros apps</button>
+                : <button type="button" className="cvc__botao" onClick={() => void copiar('mensagem')}>
                     <Icone nome={copiado === 'mensagem' ? 'certo' : 'copiar'} tamanho={16} />{copiado === 'mensagem' ? 'Copiada' : 'Copiar mensagem'}
                   </button>}
             </div>
           </>}
         </div>
 
-        <div className="cc__rodape">
+        <div className="cvc__rodape">
           {logado && <a href={href('/indicar')} onClick={() => aoFechar()}>Ver minhas indicações</a>}
           <button type="button" onClick={fechar}>{compartilhou ? 'Fechar' : 'Agora não'}</button>
         </div>
       </div>
 
       {/* A frente do envelope: cobre a carta até o bicho entregar; a aba abre e o lacre salta. */}
-      {!reduzido && <div className="cc__frente" aria-hidden="true">
-        <span className="cc__aba" />
-        <span className="cc__lacre"><Simbolo tamanho={28} variante="traco" /></span>
+      {!reduzido && <div className="cvc__frente" aria-hidden="true">
+        <span className="cvc__aba" />
+        <span className="cvc__lacre"><Simbolo tamanho={28} variante="traco" /></span>
       </div>}
     </aside>,
     document.body,
@@ -253,17 +253,17 @@ function Conteudo({ sit, dados, novos, premium }: { sit: Situacao; dados: MinhaI
   }
   const bilhetes = sit !== 'completo'
   return <>
-    <p className="cc__selo">{selo}</p>
-    <h2 className="cc__titulo" id="cc-titulo">{titulo}</h2>
-    {bilhetes && <div className="cc__bilhetes" aria-hidden="true">
-      <span className="cc__bilhete"><b>+{sit === 'agradecer' ? dias * novos : dias}</b><small>dias para você</small></span>
-      <span className="cc__mais">+</span>
-      <span className="cc__bilhete cc__bilhete--colega"><b>+{dias}</b><small>{sit === 'agradecer' && novos > 1 ? 'para cada colega' : 'para o colega'}</small></span>
+    <p className="cvc__selo">{selo}</p>
+    <h2 className="cvc__titulo" id="cvc-titulo">{titulo}</h2>
+    {bilhetes && <div className="cvc__bilhetes" aria-hidden="true">
+      <span className="cvc__bilhete"><b>+{sit === 'agradecer' ? dias * novos : dias}</b><small>dias para você</small></span>
+      <span className="cvc__mais">+</span>
+      <span className="cvc__bilhete cvc__bilhete--colega"><b>+{dias}</b><small>{sit === 'agradecer' && novos > 1 ? 'para cada colega' : 'para o colega'}</small></span>
     </div>}
-    <p className="cc__texto">{texto}</p>
+    <p className="cvc__texto">{texto}</p>
     {dados && (sit === 'indicar' || sit === 'agradecer' || sit === 'completo') && <Placar dados={dados} />}
-    {premium && (sit === 'indicar' || sit === 'agradecer') && <p className="cc__nota">Você já assina: os dias se somam ao seu plano.</p>}
-    {sit === 'sem-link' && <p className="cc__nota">O seu link pessoal não carregou agora; o convite vai com o link do site.</p>}
+    {premium && (sit === 'indicar' || sit === 'agradecer') && <p className="cvc__nota">Você já assina: os dias se somam ao seu plano.</p>}
+    {sit === 'sem-link' && <p className="cvc__nota">O seu link pessoal não carregou agora; o convite vai com o link do site.</p>}
   </>
 }
 
@@ -274,8 +274,8 @@ function Placar({ dados }: { dados: MinhaIndicacao }) {
     ? `0 de ${dados.limite} colegas`
     : `${dados.confirmados} de ${dados.limite} colegas · ${dados.dias_ganhos} dias`
   return (
-    <div className="cc__placar">
-      <ol className="cc__vagas" aria-hidden="true">{lista.map((v, i) => <li key={i} className={`cc__vaga cc__vaga--${v}`} />)}</ol>
+    <div className="cvc__placar">
+      <ol className="cvc__vagas" aria-hidden="true">{lista.map((v, i) => <li key={i} className={`cvc__vaga cvc__vaga--${v}`} />)}</ol>
       <p>{resumo}{caminho > 0 && <span> · {caminho} a caminho</span>}</p>
     </div>
   )

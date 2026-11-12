@@ -33,7 +33,7 @@ try {
   // Rotas protegidas: nunca no meio da sessão, do login, do pagamento ou do admin.
   for (const c of ['/sessao/abc', '/entrar', '/assinatura', '/admin/x', '/flashcards/estudo', '/dev/convite']) assert.equal(r.rotaLivre(c), false, c)
   for (const c of ['/', '/treinar', '/resumos', '/indicar']) assert.equal(r.rotaLivre(c), true, c)
-  assert.ok(r.JANELAS_ABERTAS.includes('.cc') && r.JANELAS_ABERTAS.includes('.jc'))
+  assert.ok(r.JANELAS_ABERTAS.includes('.cvc') && r.JANELAS_ABERTAS.includes('.jc'))
 
   // Um bicho por dia, alternando; o mesmo o dia inteiro.
   const dias = ['2026-11-10', '2026-11-11', '2026-11-12', '2026-11-13', '2026-12-31', '2027-01-01']

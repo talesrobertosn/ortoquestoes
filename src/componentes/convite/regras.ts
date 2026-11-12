@@ -20,7 +20,8 @@ export const USO_CONTINUO = 60 * 60
 export const PAUSA_ZERA = 10 * 60_000
 export const ROTAS_PROTEGIDAS = ['sessao', 'entrar', 'assinatura', 'condicoes-assinatura', 'admin', 'emails', 'flashcards', 'dev']
 /** Outras janelas do site: a carta espera elas fecharem (e nunca aparece duas vezes). */
-export const JANELAS_ABERTAS = '.jc, .cc, .ca-pequeno, .ca-fundo'
+/** .cvc é a própria carta; .cc, o calendário do cronograma aberto. */
+export const JANELAS_ABERTAS = '.jc, .cvc, .cc, .ca-pequeno, .ca-fundo'
 
 export type Bicho = 'coruja' | 'gato'
 
