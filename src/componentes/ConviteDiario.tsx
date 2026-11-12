@@ -3,14 +3,18 @@ import {
   JANELAS_ABERTAS, OCIOSO, PASSO, PAUSA_COMPARTILHOU, PAUSA_ZERA, bichoDoDia, estadoDoDia, hoje, passo, rotaLivre,
   type Estado,
 } from './convite/regras'
+// O CSS da carta vai junto com o site, e não com a carta: baixado só na hora, ele podia falhar (aba aberta antes
+// de uma publicação, rede ruim) e a carta aparecia sem estilo, gigante no canto de cima (Tales, 12/11/2026).
+import './convite/CartaConvite.css'
 
 /**
  * Quando a carta de convite aparece (as regras estão em convite/regras.ts): no máximo uma vez por dia, depois de
  * 5 minutos de uso de verdade, e de novo a cada hora de uso contínuo. Nunca interrompe uma sessão de questões nem
  * telas de login e pagamento: espera a pessoa sair delas. Quem compartilha fica um mês sem ver.
  *
- * Este arquivo fica pequeno de propósito (roda em toda página); a carta, os bichos e o CSS só descem quando chega
- * a hora (convite/CartaConvite.tsx). Desde 12/11/2026 quem entrega é a coruja ou o gato, e a carta é o Indique e ganhe.
+ * Este arquivo fica pequeno de propósito (roda em toda página); a carta e os bichos (convite/CartaConvite.tsx) só
+ * descem quando chega a hora; o CSS, uns 3 KB compactados, já vem com o site. Desde 12/11/2026 quem entrega é a
+ * coruja ou o gato, e a carta é o Indique e ganhe.
  */
 
 // Global em armazenamento.ts: sobrevive à limpeza de dados de visitante.

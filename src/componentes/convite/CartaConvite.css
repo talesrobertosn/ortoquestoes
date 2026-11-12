@@ -1,6 +1,7 @@
 /* A carta de convite (CartaConvite.tsx, 12/11/2026): um objeto pixel animado. Papel de carta com a faixa de correio
    nas cores da marca, envelope que abre quando o bicho entrega, bilhetes "+7" e as vagas das 12 indicações.
-   Carregado só quando a carta aparece. Animações só com transform e opacity; nada se mexe com movimento reduzido. */
+   Importado por ConviteDiario.tsx, junto com o site (nunca sob demanda: sem ele a carta ficava gigante no canto de
+   cima). Tudo preso a .cc e .cc-bicho. Animações só com transform e opacity; nada se mexe com movimento reduzido. */
 
 .cc {
   --cc-papel: #fbf3df;
@@ -17,8 +18,8 @@
   --cc-link: #14655e;
   --cc-sombra: rgba(27, 18, 8, 0.88);
   --cc-bicho-x: 0.75rem;
-  position: fixed; z-index: 1000; right: 1.25rem; bottom: 1.25rem;
-  width: min(21rem, calc(100vw - 2rem));
+  position: fixed; z-index: 1000; right: 1rem; bottom: 1rem; left: auto; top: auto;
+  width: min(18rem, calc(100vw - 1.5rem));
   color: var(--cc-texto);
   animation: cc-sobe 0.42s var(--curva) both;
 }
@@ -42,7 +43,7 @@
 
 /* ── o papel ── */
 .cc__papel {
-  position: relative; display: grid; gap: 0.5rem; padding: 0.95rem 0.85rem 0.45rem;
+  position: relative; display: grid; gap: 0.4rem; padding: 0.85rem 0.7rem 0.3rem;
   background: var(--cc-papel); border: 2px solid var(--cc-tinta); border-radius: 6px;
   box-shadow: 5px 5px 0 var(--cc-sombra), 0 24px 50px rgba(0, 0, 0, 0.22);
 }
@@ -66,9 +67,9 @@
 
 /* A fala do bicho: caixa de diálogo de RPG, letra a letra. */
 .cc__fala {
-  margin: 0; min-height: 2.6rem; padding: 0.55rem 0.6rem 0.4rem; cursor: pointer;
+  margin: 0; min-height: 2.3rem; padding: 0.45rem 0.55rem 0.35rem; cursor: pointer;
   background: var(--cc-balao); color: var(--cc-texto); border: 2px solid var(--cc-tinta); border-radius: 6px;
-  font-family: var(--fonte-pixel); font-weight: 600; font-size: 0.875rem; line-height: 1.3;
+  font-family: var(--fonte-pixel); font-weight: 600; font-size: 0.8125rem; line-height: 1.3;
 }
 .cc--gato .cc__fala { padding-left: 2.6rem; }
 .cc__cursor { display: inline-block; width: 0.45rem; height: 0.85rem; margin-left: 2px; vertical-align: -1px; background: currentColor; animation: cc-pisca 0.6s steps(2) infinite; }
@@ -76,7 +77,7 @@
 
 .cc__selo { margin: 0.1rem 0 -0.4rem; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cc-ouro-texto); }
 .cc__titulo {
-  margin: 0; color: var(--cc-texto); font-family: var(--fonte-marca); font-weight: 800; font-size: 1.125rem;
+  margin: 0; color: var(--cc-texto); font-family: var(--fonte-marca); font-weight: 800; font-size: 1rem;
   line-height: 1.14; letter-spacing: -0.02em; text-wrap: balance;
 }
 
@@ -94,13 +95,13 @@
 }
 .cc__bilhete::before { left: -8px; clip-path: inset(0 0 0 50%); }
 .cc__bilhete::after { right: -8px; clip-path: inset(0 50% 0 0); }
-.cc__bilhete b { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.75rem; line-height: 1; }
+.cc__bilhete b { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.35rem; line-height: 1; }
 .cc__bilhete small { max-width: 4.2rem; font-size: 0.6875rem; font-weight: 700; line-height: 1.15; color: var(--cc-texto-2); }
 .cc__bilhete--colega { background: var(--cc-colega); color: var(--cc-colega-texto); }
 :root[data-tema="escuro"] .cc__bilhete--colega { color: var(--cc-colega-texto); }
 .cc__mais { font-family: var(--fonte-pixel-titulo); font-size: 1.3rem; line-height: 1; color: var(--cc-texto-2); }
 
-.cc__texto { margin: 0; font-size: var(--meta); line-height: 1.45; }
+.cc__texto { margin: 0; font-size: 0.8125rem; line-height: 1.4; }
 .cc__texto b { font-weight: 700; color: var(--cc-texto); }
 .cc__nota { margin: -0.2rem 0 0; font-size: 0.75rem; line-height: 1.4; color: var(--cc-texto-2); }
 
@@ -123,9 +124,9 @@
 }
 .cc__botao:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--cc-tinta); color: var(--cc-texto); }
 .cc__botao:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--cc-tinta); }
-.cc__botao--whatsapp { min-height: var(--toque); font-size: var(--corpo-menor); color: #fff; background: #1a9a4f; }
+.cc__botao--whatsapp { min-height: 2.5rem; font-size: var(--meta); color: #fff; background: #1a9a4f; }
 .cc__botao--whatsapp:hover { color: #fff; background: #168543; }
-.cc__botao--principal { min-height: var(--toque); font-size: var(--corpo-menor); color: #fff; background: #14655e; }
+.cc__botao--principal { min-height: 2.5rem; font-size: var(--meta); color: #fff; background: #14655e; }
 .cc__botao--principal:hover { color: #fff; background: #0f4f49; }
 .cc__botao--espera { cursor: progress; opacity: 0.75; }
 .cc__botao--espera:hover { transform: none; box-shadow: 2px 2px 0 var(--cc-tinta); }
@@ -215,16 +216,15 @@
 }
 @keyframes cc-cai { to { transform: translate(28px, 92px) rotate(28deg) scale(0.7); opacity: 0; } }
 
-/* ── celular: sobe de baixo, como uma folha ── */
+/* ── celular: o mesmo cartão pequeno no canto de baixo, sem cobrir a tela (Tales, 12/11/2026: "bem mais discreto") ── */
+@media (max-width: 63.99rem) {
+  /* Acima da barra de abas de baixo, que aparece até o tablet. */
+  .cc { right: 0.75rem; bottom: calc(var(--altura-barra-movel, 4.25rem) + 0.75rem + env(safe-area-inset-bottom)); width: min(18rem, calc(100vw - 1.5rem)); }
+  .cc__papel { max-height: calc(100dvh - var(--altura-barra-movel, 4.25rem) - 9rem); overflow-y: auto; overscroll-behavior: contain; }
+}
 @media (max-width: 40rem) {
-  .cc { left: 0; right: 0; bottom: 0; width: auto; }
-  .cc__papel {
-    gap: 0.5rem; max-height: calc(100dvh - 8.5rem); overflow-y: auto; overscroll-behavior: contain;
-    padding: 0.95rem 0.85rem calc(0.35rem + env(safe-area-inset-bottom));
-    border-width: 2px 0 0; border-radius: 12px 12px 0 0; box-shadow: 0 -4px 0 var(--cc-sombra), 0 -18px 40px rgba(0, 0, 0, 0.3);
-  }
-  .cc__papel::before { border-radius: 10px 10px 0 0; }
-  .cc__frente { border-width: 2px 0 0; border-radius: 12px 12px 0 0; }
+  /* No celular, só o essencial: os bilhetes já dizem o que cada um ganha; a regra das 20 questões fica no Indique e ganhe. */
+  .cc__texto, .cc__selo { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
