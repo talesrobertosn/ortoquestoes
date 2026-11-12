@@ -64,7 +64,7 @@ export function candidatos(c: Contexto): Evento[] {
   lista.push(evento('hora', saudacao[0], saudacao[1], 'relogio'))
   lista.push(evento('cafe', 'Café de plantão', 'Deixamos uma xícara por aqui. O café é imaginário; a companhia, de colega.', 'cafe'))
   lista.push(evento('bilhete', 'Um bilhete na prancheta', 'Entender uma dúvida com calma vale mais que correr para a próxima página.', 'bilhete'))
-  lista.push(evento('mascote', 'Visita rápida', 'O mensageiro passou para desejar um bom estudo. Já está de saída.', 'mascote'))
+  lista.push(evento('mascote', 'Visita rápida', 'A coruja passou para desejar um bom estudo. Já está de saída.', 'mascote'))
   lista.push(evento('estrela', 'Olha uma estrela', 'Passou rápido. Fica aqui um desejo de bons encontros pelo caminho.', 'estrela', 'estrela'))
   lista.push(evento('confete', 'Uma pequena festa, sem motivo', 'Às vezes cabe comemorar só por estar aqui. Bom ter sua companhia.', 'presente', 'confete'))
   const biscoitos = ['O assunto que hoje parece confuso pode fazer sentido na próxima revisão.', 'Faça caber uma pausa entre um capítulo e outro.', 'Aprender também é dar tempo para a ideia assentar.', 'Uma boa pergunta acompanha a gente depois de fechar o livro.']

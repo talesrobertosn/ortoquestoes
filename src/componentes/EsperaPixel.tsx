@@ -17,7 +17,7 @@ const FRASES_GUERREIRO = [
   'Afiando o fêmur…',
   'Abrindo os portões do castelo…',
   'Selando o cavalo…',
-  'O mensageiro está a caminho…',
+  'A coruja está a caminho…',
   'Polindo o escudo…',
   'Acendendo as tochas…',
   'A guarda está chegando…',

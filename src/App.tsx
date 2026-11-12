@@ -57,6 +57,7 @@ const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo })
 const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
 const CronogramaMao = lazy(() => carregadores.CronogramaMao().then(({ CronogramaMao }) => ({ default: CronogramaMao })))
 const PreviaGato = import.meta.env.DEV ? lazy(() => import('./paginas/dev/PreviaGato')) : null
+const PreviaConvite = import.meta.env.DEV ? lazy(() => import('./paginas/dev/PreviaConvite')) : null
 const Resumos = lazy(() => carregadores.Resumos().then(({ Resumos }) => ({ default: Resumos })))
 const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
 const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
@@ -209,9 +210,10 @@ function paginaDaRota(rota: Rota): ReactNode {
     case 'resumos':
       pagina = <Resumos segmentos={rota.segmentos} consulta={rota.consulta} />
       break
-    // Painel de prévia do gato da espera: só em desenvolvimento (fora do pacote publicado).
+    // Painéis de prévia (gato da espera e carta de convite em #/dev/convite): só em desenvolvimento (fora do pacote publicado).
     case 'dev':
-      if (PreviaGato) pagina = <Suspense fallback={null}><PreviaGato /></Suspense>
+      if (segundo === 'convite' && PreviaConvite) pagina = <Suspense fallback={null}><PreviaConvite /></Suspense>
+      else if (PreviaGato) pagina = <Suspense fallback={null}><PreviaGato /></Suspense>
       break
     case 'indicar':
       pagina = <Indicar />

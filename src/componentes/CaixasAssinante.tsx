@@ -15,6 +15,7 @@ import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
+import { GatoPixel } from './mascote/GatoPixel'
 import { Degustacao, SeloAssinante } from './Premium'
 import { NivelCobranca } from './NivelCobranca'
 
@@ -112,7 +113,7 @@ export function TrilhaJornada({ semanas }: { semanas: CalculoPlano['semanas'] })
         const estado = n < atual ? 'feita' : n === atual ? 'atual' : 'futura'
         return (
           <li key={n} className={`cr-trilha__casa cr-trilha__casa--${estado}`}>
-            {estado === 'atual' && <img className="cr-trilha__heroi" src={recurso('ranking/mensageiro.png')} width={32} height={40} alt="" />}
+            {estado === 'atual' && <span className="cr-trilha__heroi"><GatoPixel estado="andando" style={{ width: 44 }} /></span>}
             <span className="cr-trilha__bloco">{estado === 'feita' ? <Icone nome="certo" tamanho={14} /> : n + 1}</span>
             <small>{estado === 'atual' ? 'agora' : `sem ${n + 1}`}</small>
           </li>

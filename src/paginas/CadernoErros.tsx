@@ -1,4 +1,4 @@
-import { MensageiroDormindo } from '../componentes/CenasPixel'
+import { GatoDormindo } from '../componentes/CenasPixel'
 import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
@@ -177,7 +177,7 @@ export function CadernoErros() {
             </div>
           </>} />
         <PassosCaderno />
-        <MensageiroDormindo titulo="O mensageiro está de folga" texto="Ainda não há erro esperando revanche. Quando você errar uma questão, ele traz a carta com o gabarito e o porquê." />
+        <GatoDormindo titulo="O gato está de folga" texto="Ainda não há erro esperando revanche. Quando você errar uma questão, ela aparece aqui com o gabarito e o porquê." />
       </div>
     )
   }
@@ -300,7 +300,7 @@ export function CadernoErros() {
 
       {visiveis.length === 0 ? (
         situacao === 'abertos' && abertos.length === 0
-          ? <MensageiroDormindo titulo="Nenhum erro em aberto" texto="Você corrigiu todos. O mensageiro pode descansar até a próxima batalha." acao={<a className="botao botao--principal" href={href('/treinar')}>Começar uma sessão nova</a>} />
+          ? <GatoDormindo titulo="Nenhum erro em aberto" texto="Você corrigiu todos. O gato pode cochilar até a próxima batalha." acao={<a className="botao botao--principal" href={href('/treinar')}>Começar uma sessão nova</a>} />
           : situacao === 'corrigidos' && corrigidos === 0
             ? <p className="estado">Nenhum erro recuperado ainda. Refaça um erro e acerte: ele aparece aqui, para você ver o progresso.</p>
             : <p className="estado">Nenhum erro com esses filtros.</p>

@@ -1,0 +1,236 @@
+/* A carta de convite (CartaConvite.tsx, 12/11/2026): um objeto pixel animado. Papel de carta com a faixa de correio
+   nas cores da marca, envelope que abre quando o bicho entrega, bilhetes "+7" e as vagas das 12 indicações.
+   Carregado só quando a carta aparece. Animações só com transform e opacity; nada se mexe com movimento reduzido. */
+
+.cc {
+  --cc-papel: #fbf3df;
+  --cc-papel-2: #f1e2bd;
+  --cc-tinta: #1b1208;
+  --cc-texto: #3a2a17;
+  --cc-texto-2: #6b5634;
+  --cc-balao: #fffaf0;
+  --cc-ouro: #f4cf7c;
+  --cc-ouro-texto: #7a5710;
+  --cc-bilhete: #f6dfa0;
+  --cc-colega: #d7ece7;
+  --cc-colega-texto: #0f4f49;
+  --cc-link: #14655e;
+  --cc-sombra: rgba(27, 18, 8, 0.88);
+  --cc-bicho-x: 0.75rem;
+  position: fixed; z-index: 1000; right: 1.25rem; bottom: 1.25rem;
+  width: min(21rem, calc(100vw - 2rem));
+  color: var(--cc-texto);
+  animation: cc-sobe 0.42s var(--curva) both;
+}
+:root[data-tema="escuro"] .cc {
+  --cc-papel: #2a2116;
+  --cc-papel-2: #362a1b;
+  --cc-tinta: #0b0805;
+  --cc-texto: #f1e6cd;
+  --cc-texto-2: #c9b892;
+  --cc-balao: #1f1810;
+  --cc-ouro: #f0c46a;
+  --cc-ouro-texto: #f0c46a;
+  --cc-bilhete: #4a3a1e;
+  --cc-colega: #17302e;
+  --cc-colega-texto: #8fd9cc;
+  --cc-link: #6cc7ba;
+  --cc-sombra: rgba(0, 0, 0, 0.75);
+}
+.cc--gato { --cc-bicho-x: 0.5rem; }
+@keyframes cc-sobe { from { opacity: 0; transform: translateY(36px); } }
+
+/* ── o papel ── */
+.cc__papel {
+  position: relative; display: grid; gap: 0.5rem; padding: 0.95rem 0.85rem 0.45rem;
+  background: var(--cc-papel); border: 2px solid var(--cc-tinta); border-radius: 6px;
+  box-shadow: 5px 5px 0 var(--cc-sombra), 0 24px 50px rgba(0, 0, 0, 0.22);
+}
+/* Faixa de correio aéreo, em verdete e ouro, no alto do papel. */
+.cc__papel::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 6px; border-radius: 4px 4px 0 0;
+  background: repeating-linear-gradient(-45deg, #14655e 0 8px, var(--cc-papel) 8px 12px, #c99a3b 12px 20px, var(--cc-papel) 20px 24px);
+}
+.cc__dialogo { position: relative; margin: 0.55rem 2.6rem 0 0; }
+.cc__quem {
+  position: absolute; left: 0.5rem; top: -0.7rem; z-index: 1; margin: 0; padding: 0.05rem 0.4rem; background: var(--cc-tinta); color: var(--cc-ouro);
+  font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.7rem; letter-spacing: 0.04em; line-height: 1.3; white-space: nowrap;
+}
+.cc--gato .cc__quem { left: 3.1rem; }
+.cc__fechar {
+  position: absolute; top: 0.7rem; right: 0.6rem; z-index: 1; display: grid; place-items: center; width: 2.25rem; height: 2.25rem; padding: 0; cursor: pointer;
+  color: var(--cc-texto); background: transparent; border: 2px solid var(--cc-tinta); border-radius: 6px;
+}
+.cc__fechar:hover { background: var(--cc-papel-2); }
+.cc__fechar:focus-visible, .cc__botao:focus-visible, .cc__rodape :focus-visible, .cc__simples:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+
+/* A fala do bicho: caixa de diálogo de RPG, letra a letra. */
+.cc__fala {
+  margin: 0; min-height: 2.6rem; padding: 0.55rem 0.6rem 0.4rem; cursor: pointer;
+  background: var(--cc-balao); color: var(--cc-texto); border: 2px solid var(--cc-tinta); border-radius: 6px;
+  font-family: var(--fonte-pixel); font-weight: 600; font-size: 0.875rem; line-height: 1.3;
+}
+.cc--gato .cc__fala { padding-left: 2.6rem; }
+.cc__cursor { display: inline-block; width: 0.45rem; height: 0.85rem; margin-left: 2px; vertical-align: -1px; background: currentColor; animation: cc-pisca 0.6s steps(2) infinite; }
+@keyframes cc-pisca { 50% { opacity: 0; } }
+
+.cc__selo { margin: 0.1rem 0 -0.4rem; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cc-ouro-texto); }
+.cc__titulo {
+  margin: 0; color: var(--cc-texto); font-family: var(--fonte-marca); font-weight: 800; font-size: 1.125rem;
+  line-height: 1.14; letter-spacing: -0.02em; text-wrap: balance;
+}
+
+/* Os bilhetes +7: o seu em ouro, o do colega em verdete. Os recortes laterais são círculos da cor do papel. */
+.cc__bilhetes { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.35rem; }
+.cc__bilhete {
+  position: relative; display: flex; align-items: center; justify-content: center; gap: 0.35rem; padding: 0.2rem 0.6rem 0.25rem;
+  background: var(--cc-bilhete); color: var(--cc-tinta); border: 2px solid var(--cc-tinta); border-radius: 6px;
+  box-shadow: 2px 2px 0 var(--cc-tinta);
+}
+:root[data-tema="escuro"] .cc__bilhete { color: var(--cc-ouro); }
+.cc__bilhete::before, .cc__bilhete::after {
+  content: ""; position: absolute; top: 50%; width: 12px; height: 12px; margin-top: -6px; border-radius: 50%;
+  background: var(--cc-papel); border: 2px solid var(--cc-tinta);
+}
+.cc__bilhete::before { left: -8px; clip-path: inset(0 0 0 50%); }
+.cc__bilhete::after { right: -8px; clip-path: inset(0 50% 0 0); }
+.cc__bilhete b { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.75rem; line-height: 1; }
+.cc__bilhete small { max-width: 4.2rem; font-size: 0.6875rem; font-weight: 700; line-height: 1.15; color: var(--cc-texto-2); }
+.cc__bilhete--colega { background: var(--cc-colega); color: var(--cc-colega-texto); }
+:root[data-tema="escuro"] .cc__bilhete--colega { color: var(--cc-colega-texto); }
+.cc__mais { font-family: var(--fonte-pixel-titulo); font-size: 1.3rem; line-height: 1; color: var(--cc-texto-2); }
+
+.cc__texto { margin: 0; font-size: var(--meta); line-height: 1.45; }
+.cc__texto b { font-weight: 700; color: var(--cc-texto); }
+.cc__nota { margin: -0.2rem 0 0; font-size: 0.75rem; line-height: 1.4; color: var(--cc-texto-2); }
+
+/* As 12 vagas: douradas as confirmadas, listradas as que estão a caminho das 20 questões. */
+.cc__placar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem; }
+.cc__placar p { margin: 0; font-size: 0.75rem; line-height: 1.4; color: var(--cc-texto-2); }
+.cc__vagas { display: flex; flex-wrap: wrap; gap: 3px; margin: 0; padding: 0; list-style: none; }
+.cc__vaga { width: 9px; height: 13px; border: 2px solid var(--cc-tinta); border-radius: 2px; background: var(--cc-papel-2); }
+.cc__vaga--confirmada { background: var(--cc-ouro); box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.55); }
+.cc__vaga--caminho { background: repeating-linear-gradient(-45deg, var(--cc-ouro) 0 2px, var(--cc-papel-2) 2px 4px); }
+
+/* ── os botões ── */
+.cc__acoes { display: grid; gap: 0.4rem; margin-top: 0.1rem; }
+.cc__duplas { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+.cc__botao {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 2.5rem; padding: 0 0.5rem;
+  font: inherit; font-size: var(--meta); font-weight: 700; line-height: 1.2; text-align: center; text-decoration: none; cursor: pointer;
+  color: var(--cc-texto); background: var(--cc-balao); border: 2px solid var(--cc-tinta); border-radius: 8px;
+  box-shadow: 2px 2px 0 var(--cc-tinta); transition: transform var(--duracao-rapida), box-shadow var(--duracao-rapida);
+}
+.cc__botao:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--cc-tinta); color: var(--cc-texto); }
+.cc__botao:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--cc-tinta); }
+.cc__botao--whatsapp { min-height: var(--toque); font-size: var(--corpo-menor); color: #fff; background: #1a9a4f; }
+.cc__botao--whatsapp:hover { color: #fff; background: #168543; }
+.cc__botao--principal { min-height: var(--toque); font-size: var(--corpo-menor); color: #fff; background: #14655e; }
+.cc__botao--principal:hover { color: #fff; background: #0f4f49; }
+.cc__botao--espera { cursor: progress; opacity: 0.75; }
+.cc__botao--espera:hover { transform: none; box-shadow: 2px 2px 0 var(--cc-tinta); }
+.cc__simples {
+  justify-self: center; display: inline-flex; align-items: center; gap: 0.35rem; min-height: 2rem; padding: 0 0.5rem;
+  font-size: var(--meta); font-weight: 600; color: var(--cc-texto-2); text-decoration: underline; text-underline-offset: 3px;
+}
+.cc__rodape { display: flex; align-items: center; justify-content: flex-end; gap: 0.75rem; font-size: 0.75rem; }
+.cc__rodape a { margin-right: auto; display: inline-flex; align-items: center; min-height: 2rem; font-weight: 700; color: var(--cc-link); text-underline-offset: 3px; }
+.cc__rodape button { min-height: 2rem; padding: 0 0.25rem; border: 0; background: none; font: inherit; font-weight: 600; color: var(--cc-texto-2); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+/* ── o envelope (frente) ── */
+.cc__frente {
+  position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none;
+  background: var(--cc-papel-2); border: 2px solid var(--cc-tinta); border-radius: 6px; perspective: 900px;
+}
+/* As dobras de baixo do envelope: duas linhas dos cantos até o meio. */
+.cc__frente::before {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 52%;
+  background:
+    linear-gradient(to top right, transparent calc(50% - 1.5px), rgba(27, 18, 8, 0.35) 50%, transparent calc(50% + 1.5px)) left / 50% 100% no-repeat,
+    linear-gradient(to top left, transparent calc(50% - 1.5px), rgba(27, 18, 8, 0.35) 50%, transparent calc(50% + 1.5px)) right / 50% 100% no-repeat;
+}
+.cc__aba { position: absolute; left: -2px; right: -2px; top: -2px; height: 58%; transform-origin: top; filter: drop-shadow(0 2px 0 var(--cc-tinta)); }
+.cc__aba::before { content: ""; position: absolute; inset: 0; background: var(--cc-papel); clip-path: polygon(0 0, 100% 0, 50% 100%); }
+.cc__lacre {
+  position: absolute; left: 50%; top: 58%; display: grid; place-items: center; width: 46px; height: 46px; margin: -23px 0 0 -23px;
+  color: #f4cf7c; background: #b3423a; border: 2px solid #4a1511; border-radius: 50%;
+  box-shadow: inset 0 0 0 4px #c4473d, inset 0 0 0 6px #8e2a24, 2px 3px 0 rgba(27, 18, 8, 0.45);
+}
+
+/* Abrir: o lacre salta, a aba vira para cima e a frente some; o conteúdo entra em sequência. */
+.cc--aberta .cc__lacre { animation: cc-lacre 0.26s ease-in forwards; }
+.cc--aberta .cc__aba { animation: cc-aba 0.32s 0.08s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+.cc--aberta .cc__frente { animation: cc-frente 0.26s 0.26s ease forwards; }
+@keyframes cc-lacre { 40% { transform: scale(1.18); } to { transform: scale(0.3); opacity: 0; } }
+@keyframes cc-aba { to { transform: rotateX(-170deg); opacity: 0; } }
+@keyframes cc-frente { to { opacity: 0; transform: translateY(12px); visibility: hidden; } }
+.cc--aberta .cc__papel > * { animation: cc-item 0.4s var(--curva) both; }
+.cc--aberta .cc__papel > :nth-child(2) { animation-delay: 0.32s; }
+.cc--aberta .cc__papel > :nth-child(3) { animation-delay: 0.37s; }
+.cc--aberta .cc__papel > :nth-child(4) { animation-delay: 0.41s; }
+.cc--aberta .cc__papel > :nth-child(5) { animation-delay: 0.45s; }
+.cc--aberta .cc__papel > :nth-child(6) { animation-delay: 0.49s; }
+.cc--aberta .cc__papel > :nth-child(n + 7) { animation-delay: 0.53s; }
+.cc--aberta .cc__papel > :first-child { animation-delay: 0.3s; }
+@keyframes cc-item { from { opacity: 0; transform: translateY(6px); } }
+.cc--aberta .cc__bilhete { animation: cc-bilhete 0.45s 0.45s cubic-bezier(0.3, 1.6, 0.5, 1) both; }
+.cc--aberta .cc__bilhete--colega { animation-delay: 0.55s; }
+@keyframes cc-bilhete { from { opacity: 0; transform: scale(0.6) rotate(-6deg); } }
+
+/* Fechar: o bicho vai embora primeiro e o papel desce logo depois. */
+.cc--fechando .cc__papel { animation: cc-desce 0.3s 0.3s ease-in forwards; }
+.cc--gato.cc--fechando .cc__papel { animation-delay: 0.95s; }
+@keyframes cc-desce { to { opacity: 0; transform: translateY(30px); } }
+
+/* ── o bicho ── */
+.cc-bicho {
+  position: absolute; z-index: 3; left: var(--cc-bicho-x); top: calc(var(--chao) * var(--esc) * -1px);
+  width: calc(var(--w) * var(--esc) * 1px); height: calc(var(--h) * var(--esc) * 1px); pointer-events: none;
+}
+.cc-bicho__quadros {
+  display: block; width: 100%; height: 100%; image-rendering: pixelated;
+  background-image: var(--src); background-repeat: no-repeat;
+  background-size: calc(var(--colunas) * var(--w) * var(--esc) * 1px) auto;
+  background-position: 0 calc(var(--linha) * var(--h) * var(--esc) * -1px);
+  animation: cc-quadros var(--dur) steps(var(--n)) infinite;
+}
+@keyframes cc-quadros { to { background-position-x: calc(var(--n) * var(--w) * var(--esc) * -1px); } }
+.cc-bicho__quadros--uma, .cc-bicho__quadros--volta { animation: cc-quadros-uma var(--dur) steps(var(--n), jump-none) 1 both; }
+.cc-bicho__quadros--volta { animation-direction: reverse; }
+@keyframes cc-quadros-uma { to { background-position-x: calc((var(--n) - 1) * var(--w) * var(--esc) * -1px); } }
+
+.cc-bicho--chegando { animation: cc-entra 1.3s linear both; }
+@keyframes cc-entra { from { transform: translateX(-190px); opacity: 0; } 12% { opacity: 1; } }
+.cc-bicho--gato.cc-bicho--saindo { animation: cc-sai-andando 1s linear forwards; }
+@keyframes cc-sai-andando { 80% { opacity: 1; } to { transform: translateX(min(19rem, 70vw)); opacity: 0; } }
+.cc-bicho--coruja.cc-bicho--saindo { animation: cc-sai-voando 0.85s ease-in forwards; }
+@keyframes cc-sai-voando { to { transform: translate(90px, -170px); opacity: 0; } }
+.cc-bicho--coruja.cc-bicho--feliz { animation: cc-pulinho 0.7s steps(4) infinite; }
+@keyframes cc-pulinho { 50% { transform: translateY(-6px); } }
+
+/* A cartinha cai da boca (ou do bico) no lacre. */
+.cc__cartinha {
+  position: absolute; z-index: 4; image-rendering: pixelated; pointer-events: none;
+  animation: cc-cai 0.5s cubic-bezier(0.5, 0, 0.9, 0.6) forwards;
+}
+@keyframes cc-cai { to { transform: translate(28px, 92px) rotate(28deg) scale(0.7); opacity: 0; } }
+
+/* ── celular: sobe de baixo, como uma folha ── */
+@media (max-width: 40rem) {
+  .cc { left: 0; right: 0; bottom: 0; width: auto; }
+  .cc__papel {
+    gap: 0.5rem; max-height: calc(100dvh - 8.5rem); overflow-y: auto; overscroll-behavior: contain;
+    padding: 0.95rem 0.85rem calc(0.35rem + env(safe-area-inset-bottom));
+    border-width: 2px 0 0; border-radius: 12px 12px 0 0; box-shadow: 0 -4px 0 var(--cc-sombra), 0 -18px 40px rgba(0, 0, 0, 0.3);
+  }
+  .cc__papel::before { border-radius: 10px 10px 0 0; }
+  .cc__frente { border-width: 2px 0 0; border-radius: 12px 12px 0 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cc, .cc *, .cc-bicho, .cc-bicho__quadros { animation: none !important; transition: none !important; }
+}
+
+/* No escuro, a tinta quase some no papel: os contornos de dentro ficam num marrom visível. */
+:root[data-tema="escuro"] .cc__fala, :root[data-tema="escuro"] .cc__fechar, :root[data-tema="escuro"] .cc__vaga,
+:root[data-tema="escuro"] .cc__botao:not(.cc__botao--whatsapp):not(.cc__botao--principal) { border-color: #6b5838; }
