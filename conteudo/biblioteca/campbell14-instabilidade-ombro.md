@@ -5,8 +5,8 @@ titulo: Instabilidade do ombro
 especialidade: ombro-cotovelo
 acesso: gratis
 livro: Campbell's Operative Orthopaedics
-edicao: 15ª edição (2026)
-capitulo: Capítulo 52 · Luxações recidivantes (ombro), com o capítulo 35 do Rockwood and Green's Fractures in Adults
+edicao: 14ª edição (2021)
+capitulo: Capítulo 47 · Luxações recidivantes (ombro), com o capítulo 35 do Rockwood and Green's Fractures in Adults
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty)
 fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Campbell, cap. 47, parte do ombro (p. 2438 a 2462: epidemiologia, anatomia funcional, anatomia patológica, classificação, história, exame, imagem, glenoid track, ISIS, BANKART, LATARJET, falhas, instabilidade multidirecional e posterior, McLAUGHLIN). Rockwood and Green's Fractures in Adults, 10ª edição (2025), cap. 35 (Instabilidade glenoumeral: mecanismos, lesões associadas, testes, perda óssea subcrítica, glenoid track de 83%, ISIS acima de 6, algoritmo dos autores, remplissage, LATARJET e complicações), sem páginas impressas no arquivo local. As páginas citadas são as impressas do Campbell. Versão 3, conferida em 09/11/2026, nas seções novas de instabilidade posterior e multidirecional: Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 52 (Recurrent Dislocations, p. 2193 e 2208 a 2228) e cap. 66 (Old Unreduced Dislocations, p. 2965 a 2971), com as páginas impressas da 15ª edição; HEBERT, Ortopedia e Traumatologia, 5ª edição, cap. 45, sem páginas impressas no arquivo local. Conferido e atualizado em 12/11/2026 pelo Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 52 (Recurrent Dislocations, p. 2206 a 2228): todas as páginas do Campbell citadas no texto passaram a ser as impressas da 15ª edição; acrescentados o cap. 53 (p. 2286), o cap. 57 (p. 2440), o cap. 66 (p. 2965) e o HEBERT, caps. 5 e 45.
 subtemas: Instabilidade anterior do ombro; Instabilidade posterior e multidirecional
