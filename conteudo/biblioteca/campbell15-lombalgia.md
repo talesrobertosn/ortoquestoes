@@ -1,6 +1,6 @@
 ---
 id: campbell15-lombalgia
-versao: 1
+versao: 2
 titulo: Lombalgia
 especialidade: coluna
 acesso: gratis
@@ -117,7 +117,7 @@ Leia a lista com atenção ao que **não** está nela, porque é ali que moram a
 
 !questoes central=coluna-0036
 conceito: Voltar ao médico pelo mesmo problema em até 1 mês, sem melhora, é indicação de radiografia na lombalgia aguda; dor intensa, parestesia nos braços e artrite reumatoide na família não são.
-como: O TARO 2016 perguntou quando pedir radiografia de coluna lombar na lombalgia aguda; a mesma questão aparece três vezes no acervo, com as alternativas escala visual de dor acima de 5, parestesia de membros superiores, artrite reumatoide na família e segunda visita em menos de 30 dias.
+como: O TARO 2016 perguntou quando pedir radiografia de coluna lombar na lombalgia aguda; a mesma questão aparece três vezes no acervo (`coluna-0084` e `coluna-0276` estão marcadas como duplicatas de `coluna-0036`), com as alternativas escala visual de dor acima de 5, parestesia de membros superiores, artrite reumatoide na família e segunda visita em menos de 30 dias.
 armadilha: Escolher a dor forte (nota acima de 5 na escala visual), como se intensidade fosse bandeira vermelha; a dor da lombalgia mecânica pode ser excruciante e mesmo assim não pedir imagem.
 !fim
 

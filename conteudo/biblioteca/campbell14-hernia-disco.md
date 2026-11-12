@@ -1,6 +1,6 @@
 ---
 id: campbell14-hernia-disco
-versao: 2
+versao: 3
 titulo: Hérnia de disco lombar, torácica e cervical
 especialidade: coluna
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021)
 capitulo: Capítulo 38 · Doenças degenerativas da coluna cervical e Capítulo 39 · Doenças degenerativas da coluna torácica e lombar
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 39 (p. 1720 a 1756: degeneração, história natural, ressonância, injeções, disco torácico, hérnia lombar, cirurgia, complicações e fusão) e capítulo 38 (p. 1690 a 1695: hérnia cervical, raízes C5 a T1, SPURLING, mielopatia, indicações cirúrgicas); capítulo 44 (p. 2146) para a listese de alto grau. As páginas citadas são as impressas.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 39 (p. 1720 a 1756: degeneração, história natural, ressonância, injeções, disco torácico, hérnia lombar, cirurgia, complicações e fusão) e capítulo 38 (p. 1690 a 1695: hérnia cervical, raízes C5 a T1, SPURLING, mielopatia, indicações cirúrgicas); capítulo 44 (p. 2146) para a listese de alto grau. As páginas citadas são as impressas. Complemento de 12/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (p. 1779.e1, infiltração epidural, e p. 1782, disco torácico).
 subtemas: Hérnia de disco lombar
 resumo: A hérnia é uma complicação da degeneração do disco; lombar na 3ª e 4ª décadas, com dor na perna igual ou maior que a lombar, piora sentado e ao tossir, alívio em semi-FOWLER, LASÈGUE e LASÈGUE contralateral patognomônico; mais de 95% em L4-L5 e L5-S1; a hérnia posterolateral pega a raiz que cruza o disco (L4-L5 pega L5); L4 patelar e perna medial, L5 hálux e dorso do pé sem reflexo, S1 borda lateral, tríceps sural e aquileu; cauda equina é a única cirurgia urgente; ressonância alterada em 100% acima dos 50; tratamento inicial não cirúrgico; microdiscectomia sem fusão; endoscopia interlaminar em L5-S1; lesão dural com acetazolamida; disco torácico com dor em T10 e acesso anterior ou costotransversectomia; disco cervical pega a raiz de número maior (C5-C6 pega C6), SPURLING 95% e 94%, mielopatia com clônus, hiper-reflexia e BABINSKI.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado nos capítulos 38 e 39 do Campbell's Operative Orthopaedics, 14ª edição (2021), escritos por Raymond J. Gardocki e Ashley L. Park. As páginas citadas são as impressas.
+Este resumo é inspirado nos capítulos 38 e 39 do Campbell's Operative Orthopaedics, 14ª edição (2021), escritos por Raymond J. Gardocki e Ashley L. Park. As páginas citadas são as impressas. Quando o texto diz Campbell 15, as páginas são da 15ª edição (2026), capítulo 46.
 
 O subtema "Hérnia de disco lombar" é um dos mais cobrados da coluna, com mais de cinquenta questões no acervo, e o nome engana: boa parte das questões é da **coluna cervical** (qual raiz, qual disco, qual músculo) e algumas do **disco torácico**. Por isso este resumo cobre as três regiões. Quase tudo cai em quatro blocos:
 
@@ -205,11 +205,14 @@ como: O SBOT-SP pediu para identificar o tipo de hérnia numa figura.
 - **pacientes com dor nas costas e na perna de natureza aguda, com menos de 3 meses, respondem melhor** ao corticoide epidural;
 - pacientes já operados respondem mal, a não ser que haja uma nova lesão aguda.
 
+O Campbell 15 repete as mesmas tendências, com a mesma frase sobre a dor aguda de menos de 3 meses (cap. 46, p. 1779.e1).
+
 Na coluna cervical, as melhores respostas também vêm nas hérnias agudas e nos sintomas radiculares bem definidos: num grupo de 70 pacientes sem mielopatia, a injeção evitou a cirurgia em 63%, com melhores resultados acima dos 50 anos e quando feita cedo, com menos de 100 dias do diagnóstico (cap. 38, p. 1688).
 
 !questoes central=coluna-0316 relacionadas=coluna-0477
 conceito: O tratamento inicial é não cirúrgico: repouso curto, semi-FOWLER, anti-inflamatório, atividade e fisioterapia com critério; a infiltração epidural funciona melhor na dor de menos de 3 meses, e a resposta à transforaminal prediz bom resultado da cirurgia.
 como: O TARO 2007 perguntou o que se relaciona ao bom resultado da infiltração; o SES-DF 2022 afirmou que a microdiscectomia seria o tratamento inicial de uma hérnia de duas semanas.
+alerta: A resposta pela bibliografia registrada para `coluna-0316` (dor ciática subaguda ou crônica) diverge do Campbell 14 (cap. 39, p. 1729) e do Campbell 15 (cap. 46, p. 1779.e1), que dizem que a dor nas costas e na perna aguda, com menos de 3 meses, responde melhor ao corticoide epidural; a questão segue sem gabarito oficial, e a resposta registrada foi mantida.
 armadilha: Operar a hérnia de duas semanas sem déficit progressivo nem cauda equina.
 !fim
 
@@ -285,10 +288,10 @@ como: O TEOT 2025 perguntou o medicamento que funciona como dreno químico.
 
 **A dor em faixa.** A dor é a queixa mais comum, em dois padrões: axial e **radicular em faixa**, ao longo do nervo intercostal. **O dermátomo de T10 é a distribuição mais relatada, qualquer que seja o nível da hérnia**: uma faixa em volta da parte inferior do tórax até a altura do umbigo. Os discos altos (T2 a T5) podem imitar a doença cervical, com dor no braço e síndrome de HORNER. A mielopatia aparece como paraparesia leve, clônus, BABINSKI e marcha espástica; a disfunção esfincteriana, em só 15% a 20% (p. 1737).
 
-**O tratamento.** A evolução natural é parecida com a das outras regiões, com melhora sob tratamento conservador por 6 a 12 semanas. A cirurgia fica para a mielopatia ou o déficit progressivo e a dor intolerável. **A laminectomia posterior não tem papel**: pelo menos metade das hérnias torácicas é **central**, a retirada por trás é muito difícil, e os resultados foram desanimadores, com menos da metade melhorando e alguns piorando. **A raquiotomia lateral (costotransversectomia modificada) ou a via anterior transtorácica** dão resultados bem melhores, e a cirurgia toracoscópica vídeo-assistida tem retirado hérnias centrais com sucesso (p. 1737 e 1738).
+**O tratamento.** A evolução natural é parecida com a das outras regiões, com melhora sob tratamento conservador por 6 a 12 semanas. A cirurgia fica para a mielopatia ou o déficit progressivo e a dor intolerável. **A laminectomia posterior não tem papel**: pelo menos metade das hérnias torácicas é **central**, a retirada por trás é muito difícil, e os resultados foram desanimadores, com menos da metade melhorando e alguns piorando. **A raquiotomia lateral (costotransversectomia modificada) ou a via anterior transtorácica** dão resultados bem melhores, e a cirurgia toracoscópica vídeo-assistida tem retirado hérnias centrais com sucesso (p. 1737 e 1738). O Campbell 15 repete que a toracoscopia vídeo-assistida retirou hérnias centrais sem toracotomia nem fusão e acrescenta que **a técnica mais promissora e menos invasiva é a discectomia endoscópica transforaminal com o paciente acordado**, que trata até hérnias da linha média sem cirurgia de tórax, sem fusão e sem anestesia geral (cap. 46, p. 1782).
 
 !questoes central=coluna-0328
-conceito: A hérnia torácica é rara, dói em faixa com predomínio no dermátomo de T10, e a laminectomia posterior não tem papel; hérnia central se trata pela via anterior transtorácica ou toracoscópica, e a lateral pela costotransversectomia.
+conceito: A hérnia torácica é rara, dói em faixa com predomínio no dermátomo de T10, e a laminectomia posterior não tem papel; hérnia central se trata pela via anterior transtorácica ou toracoscópica, e a lateral pela costotransversectomia; o Campbell 15 acrescenta a discectomia endoscópica transforaminal.
 como: O TARO 2008 perguntou o acesso recomendado para a hérnia torácica central.
 armadilha: Escolher a laminectomia simples, que piora parte dos pacientes.
 !fim
