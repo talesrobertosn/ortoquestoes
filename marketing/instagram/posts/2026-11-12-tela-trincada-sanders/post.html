@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Tela trincada: Sanders IIIBC</title>
+<!-- Tema "Tela trincada" (assistência técnica): questão trauma-0695, gabarito C (IIIBC). Sem citar a banca (pedido do Tales).
+     3 imagens no feed (1080x1350) e 2 nos stories (1080x1920). Imagem real da questão + figura do Rockwood and Green's,
+     10ª ed. (2025), cap. 67, Fig. 67-9 (recortes em telas/, fora do git). As trincas ficam só no vidro do celular,
+     nunca sobre a imagem da questão.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-12-tela-trincada-sanders/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Jersey; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root {
+  --noite: #0a1f1c; --verde2: #0b3a35; --ouro: #f4cf7c; --ouro2: #c99a3e; --creme: #f6eedb;
+  --papel: #f8f2e2; --tinta: #16201e; --vermelho: #c8262c; --verm-claro: #e04848; --ok: #1f8a4c; --caneta: #1d3f8f;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #2a2a2a; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; margin-bottom: 40px; color: var(--creme); }
+section.feed { height: 1350px; }
+section.story { height: 1920px; }
+
+/* ===== bancada: base de corte verde ===== */
+.mesa { position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 62% 42% at 50% 36%, rgba(255,238,196,.13), transparent 72%),
+    repeating-linear-gradient(0deg, rgba(244,207,124,.15) 0 2px, transparent 2px 100px),
+    repeating-linear-gradient(90deg, rgba(244,207,124,.15) 0 2px, transparent 2px 100px),
+    repeating-linear-gradient(0deg, rgba(214,245,228,.055) 0 1px, transparent 1px 20px),
+    repeating-linear-gradient(90deg, rgba(214,245,228,.055) 0 1px, transparent 1px 20px),
+    radial-gradient(ellipse 95% 75% at 50% 38%, #155447, #0c3b33 55%, #051a17 100%);
+  background-position: 0 0, 40px 40px, 40px 40px, 40px 40px, 40px 40px, 0 0; }
+/* textura emborrachada da base */
+.mesa::before { content: ''; position: absolute; inset: 0; opacity: .22; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>"); }
+/* vinheta */
+.mesa::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 70% at 50% 45%, transparent 55%, rgba(0,0,0,.55)); }
+.angulos { position: absolute; left: 0; bottom: 0; }
+.regua { position: absolute; z-index: 1; }
+
+/* topo */
+.topo { position: absolute; left: 64px; right: 64px; display: flex; justify-content: space-between; align-items: center; z-index: 5; }
+.feed .topo { top: 52px; } .story .topo { top: 84px; }
+.marca { display: inline-flex; align-items: center; gap: 12px; font: 800 30px Jakarta; letter-spacing: -.01em; }
+.marca img { width: 44px; height: 44px; }
+.marca span { font-weight: 500; }
+.cont { font: 400 44px Jersey; color: var(--ouro); text-shadow: 0 2px 0 rgba(0,0,0,.4); }
+
+.rotulo { position: absolute; left: 0; right: 0; z-index: 5; display: flex; justify-content: center; }
+.rotulo span { display: inline-flex; align-items: center; gap: 14px; padding: 10px 22px 10px 16px; border-radius: 999px;
+  background: rgba(5,26,23,.72); border: 2px solid rgba(244,207,124,.55); font: 800 22px Inter; letter-spacing: .24em; text-transform: uppercase; color: var(--ouro); }
+.rotulo i { width: 14px; height: 14px; border-radius: 50%; background: var(--verm-claro); box-shadow: 0 0 0 5px rgba(224,72,72,.25), 0 0 18px rgba(224,72,72,.9); }
+.titulo { position: absolute; left: 40px; right: 40px; z-index: 5; text-align: center; font: 800 104px/1.0 Jakarta; letter-spacing: -.035em; text-shadow: 0 6px 22px rgba(0,0,0,.5); }
+.feed .titulo { font-size: 84px; }
+.titulo em { font-style: normal; color: var(--ouro); }
+.titulo .risco { position: relative; display: inline-block; }
+
+/* ===== objetos da bancada ===== */
+.parafuso { position: absolute; z-index: 2; width: 34px; height: 34px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fbfbfb, #b9bec2 35%, #6c7378 70%, #3c4246);
+  box-shadow: 2px 6px 8px rgba(0,0,0,.55), inset 0 0 0 2px rgba(0,0,0,.25); }
+.parafuso::before, .parafuso::after { content: ''; position: absolute; left: 50%; top: 50%; width: 18px; height: 4px; margin: -2px 0 0 -9px; border-radius: 2px; background: #3b4145; box-shadow: inset 0 1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.35); }
+.parafuso::after { transform: rotate(90deg); }
+.palheta { position: absolute; z-index: 2; width: 70px; height: 70px; }
+.ventosa { position: absolute; z-index: 2; width: 92px; height: 92px; border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, rgba(255,255,255,.55), rgba(120,170,220,.35) 30%, rgba(40,90,150,.55) 70%, rgba(20,50,90,.7));
+  box-shadow: 4px 12px 18px rgba(0,0,0,.5), inset 0 0 0 3px rgba(255,255,255,.18); }
+.ventosa::after { content: ''; position: absolute; left: 50%; top: 50%; width: 30px; height: 30px; margin: -15px; border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #8fb5df, #2d5c93); box-shadow: 0 6px 10px rgba(0,0,0,.45); }
+
+/* ===== celular ===== */
+.cel { position: absolute; z-index: 3; border-radius: 82px; padding: 15px;
+  background: linear-gradient(140deg, #8a8f93 0%, #2a2e31 18%, #4b5155 48%, #1c1f22 70%, #6d7377 100%);
+  box-shadow: -18px 50px 70px rgba(0,0,0,.65), -6px 16px 24px rgba(0,0,0,.45), inset 0 0 0 2px rgba(255,255,255,.22), inset 0 0 0 6px #0b0c0d; }
+.cel .bt { position: absolute; width: 6px; border-radius: 3px; background: linear-gradient(90deg, #2a2e31, #7d8387, #2a2e31); }
+.tela { position: relative; height: 100%; border-radius: 68px; overflow: hidden; background: #050807; display: flex; flex-direction: column; }
+.status { height: 58px; flex: none; display: flex; align-items: center; justify-content: space-between; padding: 6px 40px 0 46px; font: 700 21px Inter; color: #fff; }
+.ilha { position: absolute; left: 50%; top: 14px; width: 118px; height: 36px; margin-left: -59px; border-radius: 20px; background: #000; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06); }
+.ilha::after { content: ''; position: absolute; right: 14px; top: 11px; width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, #2b3c5a, #0a0d14 70%); }
+.icones { display: flex; align-items: center; gap: 8px; }
+.sinal { display: flex; align-items: flex-end; gap: 2px; height: 16px; }
+.sinal i { width: 4px; background: #fff; border-radius: 1px; }
+.bateria { position: relative; width: 34px; height: 16px; border-radius: 5px; border: 2px solid rgba(255,255,255,.55); padding: 1px; }
+.bateria::before { content: ''; display: block; height: 100%; width: 62%; border-radius: 2px; background: #fff; }
+.bateria::after { content: ''; position: absolute; right: -5px; top: 4px; width: 3px; height: 5px; border-radius: 0 2px 2px 0; background: rgba(255,255,255,.55); }
+.app { height: 62px; flex: none; display: flex; align-items: center; justify-content: space-between; padding: 0 26px; background: #0b2a25; border-bottom: 1px solid rgba(244,207,124,.25); }
+.app .m { display: flex; align-items: center; gap: 8px; font: 800 20px Jakarta; color: var(--creme); }
+.app .m img { width: 26px; height: 26px; }
+.app .chip { font: 800 15px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--ouro); border: 1.5px solid rgba(244,207,124,.5); padding: 5px 10px; border-radius: 999px; }
+.tela > img.q { display: block; width: 100%; height: auto; flex: none; }
+.painel { flex: 1; position: relative; background: linear-gradient(180deg, #0d2f29, #071a17); padding: 22px 30px 0; text-align: center; }
+.painel p { font: 700 24px Inter; color: rgba(246,238,219,.9); }
+.painel p b { color: var(--ouro); }
+.teclas { display: flex; justify-content: center; gap: 16px; margin-top: 18px; }
+.teclas span { width: 64px; height: 64px; display: grid; place-items: center; border-radius: 16px; border: 2px solid rgba(244,207,124,.65); background: rgba(244,207,124,.08); font: 400 44px Jersey; color: var(--ouro); }
+.vidro { position: absolute; inset: 0; z-index: 4; pointer-events: none; border-radius: 68px;
+  background: linear-gradient(118deg, rgba(255,255,255,.16) 0%, rgba(255,255,255,.04) 26%, rgba(255,255,255,0) 40%, rgba(255,255,255,.05) 62%, rgba(255,255,255,0) 72%); }
+svg.trinca { position: absolute; left: 0; top: 0; z-index: 5; pointer-events: none; }
+
+/* ===== papel (ordem de serviço / laudo / orçamento) ===== */
+.papel { position: absolute; z-index: 3; color: var(--tinta);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,0) 18%),
+    repeating-linear-gradient(0deg, rgba(60,90,80,.035) 0 1px, transparent 1px 4px),
+    var(--papel);
+  box-shadow: 0 40px 70px rgba(0,0,0,.55), 0 10px 18px rgba(0,0,0,.35);
+  -webkit-mask: radial-gradient(circle 9px at 50% 0, transparent 97%, #000 100%) 0 0 / 30px 100% repeat-x; }
+.papel::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .35; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='p'><feTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .55  0 0 0 0 .5  0 0 0 0 .38  0 0 0 .35 0'/></filter><rect width='300' height='300' filter='url(%23p)'/></svg>"); }
+.papel .cab { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 14px; border-bottom: 3px double rgba(22,32,30,.55); }
+.papel .cab b { font: 800 22px Inter; letter-spacing: .22em; text-transform: uppercase; }
+.papel .cab small { display: block; font: 600 16px Inter; letter-spacing: .14em; text-transform: uppercase; color: rgba(22,32,30,.55); margin-top: 4px; }
+.papel .num { white-space: nowrap; font: 400 46px/0.8 Jersey; color: var(--vermelho); letter-spacing: .02em; }
+.campo { margin-top: 18px; }
+.campo label { display: block; font: 800 15px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(22,32,30,.55); }
+.campo .v { font: 600 26px/1.32 Inter; padding: 4px 0 8px; border-bottom: 2px dotted rgba(22,32,30,.35); }
+.campo .v.enun { font-size: 27px; }
+.opcoes { margin-top: 6px; }
+.op { display: flex; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 2px dotted rgba(22,32,30,.28); font: 800 34px Jakarta; letter-spacing: -.01em; }
+.op .cx { width: 34px; height: 34px; flex: none; border: 3px solid var(--tinta); border-radius: 6px; background: rgba(255,255,255,.5); }
+.op .l { display: grid; place-items: center; width: 48px; height: 48px; flex: none; border-radius: 10px; background: var(--tinta); color: var(--ouro); font: 400 38px Jersey; }
+.mao { font: 700 34px/1.1 Caveat; color: var(--caneta); }
+.codigo { height: 46px; display: flex; align-items: stretch; gap: 0; }
+.codigo i { display: block; background: var(--tinta); }
+.clipe { position: absolute; z-index: 6; width: 46px; height: 120px; border-radius: 23px; border: 6px solid #c9ccd0;
+  box-shadow: 2px 4px 6px rgba(0,0,0,.35), inset 0 0 0 1px rgba(0,0,0,.15); }
+.clipe::after { content: ''; position: absolute; left: 6px; top: 12px; width: 22px; height: 80px; border-radius: 12px; border: 5px solid #b7bbc0; border-bottom: none; }
+
+.tacha { position: absolute; z-index: 8; width: 30px; height: 30px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ff9a90, #c8262c 55%, #6e0f12); box-shadow: 4px 9px 8px rgba(0,0,0,.45), inset 0 -3px 0 rgba(0,0,0,.25); }
+.tacha::after { content: ''; position: absolute; left: 7px; top: 6px; width: 8px; height: 6px; border-radius: 50%; background: rgba(255,255,255,.7); }
+/* carimbos */
+.carimbo { position: absolute; z-index: 7; padding: 10px 24px; border: 6px solid currentColor; border-radius: 12px; font: 800 44px Jakarta; letter-spacing: .12em; text-transform: uppercase; opacity: .86; mix-blend-mode: multiply;
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 2.1'/></filter><rect width='200' height='200' filter='url(%23g)'/></svg>"); }
+.carimbo.red { color: var(--vermelho); }
+.carimbo.green { color: var(--ok); }
+.carimbo small { display: block; font: 800 15px Inter; letter-spacing: .26em; text-align: center; margin-top: 2px; }
+
+/* ===== laudo ===== */
+.veredito { display: flex; align-items: center; gap: 26px; }
+.selo { position: relative; flex: none; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #34b56b, var(--ok) 60%, #135c32); color: #fff; font: 400 1px Jersey;
+  box-shadow: 0 0 0 7px rgba(31,138,76,.18), 0 14px 26px rgba(19,92,50,.45), inset 0 -6px 0 rgba(0,0,0,.18); }
+.veredito h2 { font: 800 76px/0.95 Jakarta; letter-spacing: -.035em; }
+.veredito h2 em { font-style: normal; color: var(--ok); }
+.veredito p { font: 600 26px/1.3 Inter; color: rgba(22,32,30,.78); margin-top: 8px; }
+.veredito p b { color: var(--tinta); }
+.secao { display: flex; align-items: center; gap: 14px; font: 800 17px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(22,32,30,.6); }
+.secao::before, .secao::after { content: ''; flex: 1; height: 2px; background: rgba(22,32,30,.22); }
+.tabela { display: grid; gap: 0 22px; }
+.linha { display: flex; flex-direction: column; }
+.faixa { display: flex; align-items: baseline; gap: 12px; padding: 7px 12px; border-radius: 8px; background: var(--tinta); color: var(--creme); font: 800 20px Inter; letter-spacing: .08em; }
+.faixa b { font: 400 34px/0.8 Jersey; color: var(--ouro); letter-spacing: .02em; }
+.faixa span { color: rgba(246,238,219,.75); font-weight: 600; letter-spacing: .02em; }
+.celulas { display: flex; gap: 14px; margin-top: 10px; }
+.cel-t { position: relative; flex: none; border-radius: 10px; background: #fff; box-shadow: inset 0 0 0 2px rgba(22,32,30,.12); overflow: hidden; }
+.cel-t img { display: block; width: 100%; mix-blend-mode: multiply; }
+.cel-t img.cortada { -webkit-mask: linear-gradient(90deg, transparent 0%, transparent 24%, #000 42%); }
+.cel-t .nome { position: absolute; left: 0; right: 0; bottom: 0; padding: 4px 0 6px; text-align: center; font: 800 24px Jakarta; letter-spacing: .02em; background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,.95) 40%); }
+.cel-t.este { box-shadow: 0 0 0 5px var(--ouro2), 0 0 0 9px rgba(244,207,124,.45), 0 12px 26px rgba(122,87,16,.35); }
+.cel-t.este .nome { color: #fff; background: var(--ok); }
+.cel-t.apaga { opacity: .55; filter: grayscale(.35); }
+.etq { position: absolute; z-index: 3; padding: 6px 14px; border-radius: 8px; background: var(--ok); color: #fff; font: 800 18px Inter; letter-spacing: .18em; text-transform: uppercase; box-shadow: 0 6px 12px rgba(0,0,0,.25); }
+.tipo1 { margin-top: 14px; padding: 12px 14px; border: 2px dashed rgba(22,32,30,.35); border-radius: 10px; font: 600 20px/1.3 Inter; color: rgba(22,32,30,.78); }
+.tipo1 b { font-weight: 800; color: var(--tinta); }
+
+/* lupa */
+.lupa { position: absolute; z-index: 8; border-radius: 50%; padding: 14px;
+  background: conic-gradient(from 210deg, #f8dc95, #b98a36, #f4cf7c, #8a6020, #e9c06a, #f8dc95);
+  box-shadow: 0 26px 44px rgba(0,0,0,.45), inset 0 0 0 2px rgba(80,50,10,.5); }
+.lupa .lente { position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background: #fff; box-shadow: inset 0 0 0 3px rgba(80,50,10,.4), inset 0 0 30px rgba(0,0,0,.25); }
+.lupa .lente img { position: absolute; }
+.lupa .lente::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.45), rgba(255,255,255,0) 32%), radial-gradient(circle at 70% 80%, rgba(255,255,255,.12), transparent 30%); }
+.lupa .cabo { position: absolute; width: 40px; height: 150px; border-radius: 18px; transform-origin: 50% 0;
+  background: linear-gradient(90deg, #3a1f12, #7a4a2a 45%, #4a2a18); box-shadow: 0 16px 20px rgba(0,0,0,.4); }
+.lupa .cabo::before { content: ''; position: absolute; left: -4px; right: -4px; top: -8px; height: 26px; border-radius: 6px; background: linear-gradient(90deg, #8a6020, #f4cf7c, #8a6020); }
+.pino { position: absolute; z-index: 9; width: 46px; height: 46px; margin: -23px 0 0 -23px; display: grid; place-items: center; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff1c7, var(--ouro) 45%, #a7751f); color: var(--noite); font: 400 34px Jersey; box-shadow: 0 4px 10px rgba(0,0,0,.45), 0 0 0 3px rgba(10,31,28,.85); }
+.etiqueta-lupa { position: absolute; z-index: 9; padding: 6px 14px; border-radius: 6px; background: var(--noite); color: var(--ouro); font: 800 16px Inter; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; box-shadow: 0 6px 12px rgba(0,0,0,.35); }
+
+/* régua A B C */
+.abc { position: relative; }
+.abc .barra { position: relative; height: 16px; border-radius: 8px; background: linear-gradient(90deg, #d9cfb4, #efe6cf); box-shadow: inset 0 0 0 2px rgba(22,32,30,.25); }
+.abc .marc { position: absolute; top: -10px; width: 6px; height: 36px; margin-left: -3px; border-radius: 3px; background: rgba(22,32,30,.3); }
+.abc .marc.on { background: var(--vermelho); box-shadow: 0 0 0 3px rgba(200,38,44,.2); }
+.abc .rot { position: absolute; top: 34px; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+.abc .rot b { display: block; font: 400 46px/1 Jersey; color: rgba(22,32,30,.45); }
+.abc .rot.on b { color: var(--vermelho); }
+.abc .rot span { font: 700 19px Inter; color: rgba(22,32,30,.7); }
+.abc .ponta { position: absolute; top: -40px; font: 800 15px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(22,32,30,.5); }
+
+.fonte { font: 500 18px/1.35 Inter; color: rgba(22,32,30,.62); }
+.fonte i { font-style: italic; }
+.prova { border-radius: 14px; background: var(--tinta); color: var(--creme); padding: 18px 22px; }
+.prova small { display: block; font: 800 16px Inter; letter-spacing: .24em; text-transform: uppercase; color: var(--ouro); margin-bottom: 6px; }
+.prova p { font: 600 24px/1.36 Inter; }
+.prova p b { color: var(--ouro); }
+
+/* orçamento (feed 3) */
+.item { position: relative; display: grid; grid-template-columns: 56px 1fr; gap: 0 18px; padding: 16px 220px 16px 0; border-bottom: 2px dotted rgba(22,32,30,.3); }
+.item .l { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 12px; background: var(--tinta); color: var(--ouro); font: 400 44px Jersey; }
+.item h3 { font: 800 34px/1.05 Jakarta; letter-spacing: -.02em; }
+.item p { grid-column: 2; font: 500 22px/1.34 Inter; color: rgba(22,32,30,.78); margin-top: 4px; }
+.item p b { color: var(--tinta); font-weight: 800; }
+.item .carimbo { right: 0; top: 50%; font-size: 26px; padding: 6px 14px; border-width: 4px; border-radius: 8px; }
+.item.certo { background: linear-gradient(90deg, rgba(31,138,76,.12), rgba(31,138,76,0)); border-radius: 10px; }
+.item.certo .l { background: var(--ok); color: #fff; }
+.item.certo h3 { color: var(--ok); }
+.total { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 0 0; border-top: 3px double rgba(22,32,30,.55); margin-top: 6px; }
+.total span { font: 800 18px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(22,32,30,.6); }
+.total b { font: 800 40px Jakarta; letter-spacing: -.02em; color: var(--ok); }
+.site { position: absolute; left: 0; right: 0; z-index: 5; text-align: center; font: 800 38px Jakarta; letter-spacing: -.01em; color: var(--creme); text-shadow: 0 4px 14px rgba(0,0,0,.5); }
+.site small { display: block; font: 700 20px Inter; letter-spacing: .22em; text-transform: uppercase; color: var(--ouro); margin-top: 6px; }
+</style></head><body>
+
+<!-- ================= FEED 1: a questão ================= -->
+<section class="feed" id="f1-questao">
+  <div class="mesa"></div>
+  <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="cont">1/3</span></div>
+  <div class="rotulo" style="top:122px"><span><i></i>Assistência técnica · Trauma</span></div>
+  <div class="titulo" style="top:182px">Duas trincas.<br><em>Qual é o laudo?</em></div>
+
+  <div class="cel" data-trinca="7" style="left:62px; top:392px; width:432px; height:900px; transform:rotate(-4deg)">
+    <span class="bt" style="left:-5px; top:190px; height:70px"></span><span class="bt" style="left:-5px; top:280px; height:70px"></span><span class="bt" style="right:-5px; top:240px; height:110px"></span>
+    <div class="tela">
+      <div class="ilha"></div>
+      <div class="status"><span>7:00</span><span class="icones"><span class="sinal"><i style="height:5px"></i><i style="height:8px"></i><i style="height:11px"></i><i style="height:15px"></i></span><span class="bateria"></span></span></div>
+      <div class="app"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Questão</span><span class="chip">Calcâneo</span></div>
+      <img class="q" src="../../../../public/imagens/trauma/trauma-0695-1.png" alt="">
+      <div class="painel"><p>Sua <b>letra?</b></p><div class="teclas"><span>A</span><span>B</span><span>C</span><span>D</span></div></div>
+      <div class="vidro"></div>
+    </div>
+  </div>
+
+  <span class="tacha" style="left:770px; top:404px"></span>
+  <div class="papel os" style="left:540px; top:412px; width:484px; padding:34px 32px 26px; transform:rotate(2.2deg)">
+    <div class="cab"><div><b style="font-size:19px; letter-spacing:.12em">Ordem de serviço</b><small>Entrada na bancada</small></div><span class="num" style="font-size:38px">OS 67-09</span></div>
+    <div class="campo"><label>Aparelho</label><div class="v">Calcâneo · faceta posterior</div></div>
+    <div class="campo"><label>Pergunta da prova</label><div class="v enun">Na fratura do calcâneo, segundo a classificação de SANDERS, a imagem abaixo corresponde ao grau</div></div>
+    <div class="campo"><label>Laudo (marque um)</label></div>
+    <div class="opcoes">
+      <div class="op"><span class="cx"></span><span class="l">A</span>IIC.</div>
+      <div class="op"><span class="cx"></span><span class="l">B</span>IIIAB.</div>
+      <div class="op"><span class="cx"></span><span class="l">C</span>IIIBC.</div>
+      <div class="op" style="border-bottom:none"><span class="cx"></span><span class="l">D</span>IV.</div>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-top:12px">
+      <span class="mao">Comente a sua letra.<br>O laudo está no slide 2.</span>
+      <span class="codigo" data-codigo="67-09" style="width:120px"></span>
+    </div>
+  </div>
+  
+
+  <span class="parafuso" style="left:560px; top:1290px"></span>
+  <span class="parafuso" style="left:612px; top:1268px; transform:rotate(30deg)"></span>
+</section>
+
+<!-- ================= FEED 2: o laudo com a classificação completa ================= -->
+<section class="feed" id="f2-laudo">
+  <div class="mesa"></div>
+  <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="cont">2/3</span></div>
+  <div class="papel" style="left:46px; top:128px; width:988px; height:1180px; padding:38px 44px 30px; transform:rotate(-.7deg)">
+    <div class="cab"><div><b>Laudo técnico</b><small>Classificação de Sanders · corte coronal da TC</small></div><span class="num">OS 67-09</span></div>
+    <div class="veredito" style="margin-top:22px">
+      <span class="selo" style="width:150px; height:150px; font-size:132px">C</span>
+      <div><h2>Sanders <em>IIIBC</em></h2><p><b>2 traços, 3 partes.</b> Traços nas posições <b>B (central)</b> e <b>C (medial)</b>.</p></div>
+    </div>
+    <span class="carimbo red" style="right:40px; top:132px; font-size:30px; padding:6px 16px; border-width:5px; transform:rotate(-9deg)">Laudado</span>
+    <div class="secao" style="margin-top:22px">Tabela de defeitos</div>
+    <div class="tabela" style="grid-template-columns: auto auto; margin-top:14px">
+      <div>
+        <div class="linha">
+          <div class="faixa"><b>II</b>1 traço <span>· 2 partes</span></div>
+          <div class="celulas"><div class="cel-t apaga" style="width:150px"><img src="telas/p-IIA.png" alt=""><span class="nome">II A</span></div><div class="cel-t apaga" style="width:150px"><img src="telas/p-IIB.png" alt=""><span class="nome">II B</span></div><div class="cel-t apaga" style="width:150px"><img src="telas/p-IIC.png" alt=""><span class="nome">II C</span></div></div>
+        </div>
+        <div class="linha" style="margin-top:14px">
+          <div class="faixa"><b>III</b>2 traços <span>· 3 partes</span></div>
+          <div class="celulas"><div class="cel-t apaga" style="width:150px"><img class="cortada" src="telas/p-IIIAB.png" alt=""><span class="nome">III AB</span></div><div class="cel-t apaga" style="width:150px"><img src="telas/p-IIIAC.png" alt=""><span class="nome">III AC</span></div><div class="cel-t este" style="width:150px"><img src="telas/p-IIIBC.png" alt=""><span class="nome">III BC</span></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="linha">
+          <div class="faixa"><b>IV</b>3+ traços <span>· 4+ partes</span></div>
+          <div class="celulas"><div class="cel-t apaga" style="width:150px"><img src="telas/p-IV.png" alt=""><span class="nome">IV</span></div></div>
+        </div>
+        <div class="tipo1"><b>Tipo I:</b> sem desvio, com qualquer número de traços.</div>
+      </div>
+    </div>
+    <span class="etiqueta-lupa" style="left:680px; top:734px">Este é o seu caso</span>
+    <div class="lupa" style="left:660px; top:770px; width:270px; height:270px">
+      <div class="lente"><img src="telas/zoom-IIIBC.png" alt="" style="width:270px; left:-13px; top:-9px"></div>
+      <span class="cabo" style="left:180px; top:241px; transform:rotate(-38deg)"></span>
+      <span class="pino" style="left:106px; top:76px">B</span>
+      <span class="pino" style="left:146px; top:76px">C</span>
+    </div>
+    <div class="abc" style="position:absolute; left:44px; width:520px; top:1010px">
+      <span class="ponta" style="left:0">Lateral</span><span class="ponta" style="right:0">Medial · sustentáculo</span>
+      <div class="barra"></div>
+      <span class="marc" style="left:12%"></span><span class="marc on" style="left:50%"></span><span class="marc on" style="left:88%"></span>
+      <span class="rot" style="left:12%"><b>A</b><span>lateral</span></span>
+      <span class="rot on" style="left:50%"><b>B</b><span>central</span></span>
+      <span class="rot on" style="left:88%"><b>C</b><span>medial</span></span>
+    </div>
+    <div class="fonte" style="position:absolute; left:44px; right:44px; bottom:28px">Fonte: <i>Rockwood and Green's Fractures in Adults</i>, 10ª ed. (2025), cap. 67, Fig. 67-9.</div>
+  </div>
+  <span class="tacha" style="left:54px; top:134px"></span><span class="tacha" style="left:984px; top:132px"></span>
+</section>
+
+<!-- ================= FEED 3: o orçamento (cada alternativa) ================= -->
+<section class="feed" id="f3-orcamento">
+  <div class="mesa"></div>
+  <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="cont">3/3</span></div>
+
+  <span class="tacha" style="left:66px; top:136px; z-index:9"></span><span class="tacha" style="left:972px; top:150px; z-index:9"></span>
+  <div class="papel" style="left:58px; top:132px; width:964px; padding:36px 42px 30px; transform:rotate(.6deg)">
+    <div class="cab"><div><b>Orçamento do reparo</b><small>Cada alternativa revisada na bancada</small></div><span class="num">OS 67-09</span></div>
+    <div class="item"><span class="l">A</span><h3>IIC</h3><p><b>Um traço só.</b> O IIC tem um único traço, na posição medial, com duas partes.</p><span class="carimbo red" style="transform:translateY(-50%) rotate(-6deg)">Recusado</span></div>
+    <div class="item"><span class="l">B</span><h3>IIIAB</h3><p><b>Traços em outra posição.</b> O IIIAB tem os traços nas posições lateral e central.</p><span class="carimbo red" style="transform:translateY(-50%) rotate(4deg)">Recusado</span></div>
+    <div class="item certo"><span class="l">C</span><h3>IIIBC</h3><p><b>Dois traços</b>, nas posições central (B) e medial (C), dividem a faceta posterior em três fragmentos.</p><span class="carimbo green" style="transform:translateY(-50%) rotate(-5deg)">Aprovado</span></div>
+    <div class="item"><span class="l">D</span><h3>IV</h3><p><b>Mais fragmentos.</b> O tipo IV tem quatro partes ou mais, com cominuição.</p><span class="carimbo red" style="transform:translateY(-50%) rotate(7deg)">Recusado</span></div>
+    <div class="total"><span>Laudo final</span><b>C · Sanders IIIBC</b></div>
+    <div class="prova" style="margin-top:20px">
+      <small>Para a prova</small>
+      <p>Corte <b>coronal</b> da TC, onde a faceta posterior aparece <b>mais larga</b>. Conte os traços: <b>1 = tipo II</b>, <b>2 = tipo III</b>, <b>3 ou mais = tipo IV</b>. A letra diz onde passam. Quanto mais <b>medial</b> o traço, mais difícil reduzir pela via lateral.</p>
+    </div>
+    <div class="fonte" style="margin-top:14px">Fonte: <i>Rockwood and Green's Fractures in Adults</i>, 10ª ed. (2025), cap. 67, Fig. 67-9.</div>
+  </div>
+  <span class="parafuso" style="left:968px; top:1262px; transform:rotate(18deg)"></span>
+  <div class="site" style="top:1218px">ortoquestoes.com.br<small>O caminho está no nosso perfil</small></div>
+  <span class="parafuso" style="left:70px; top:1250px"></span>
+</section>
+
+<!-- ================= STORY 1: a questão ================= -->
+<section class="story" id="s1-questao">
+  <div class="mesa"></div>
+  <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="cont">1/2</span></div>
+  <div class="rotulo" style="top:228px"><span><i></i>Assistência técnica · Trauma</span></div>
+  <div class="titulo" style="top:300px">Duas trincas.<br><em>Qual é o laudo?</em></div>
+
+  <div class="cel" data-trinca="11" style="left:58px; top:560px; width:470px; height:990px; transform:rotate(-4deg)">
+    <span class="bt" style="left:-5px; top:200px; height:76px"></span><span class="bt" style="left:-5px; top:296px; height:76px"></span><span class="bt" style="right:-5px; top:250px; height:120px"></span>
+    <div class="tela">
+      <div class="ilha"></div>
+      <div class="status"><span>7:00</span><span class="icones"><span class="sinal"><i style="height:5px"></i><i style="height:8px"></i><i style="height:11px"></i><i style="height:15px"></i></span><span class="bateria"></span></span></div>
+      <div class="app"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Questão</span><span class="chip">Calcâneo</span></div>
+      <img class="q" src="../../../../public/imagens/trauma/trauma-0695-1.png" alt="">
+      <div class="painel"><p>Sua <b>letra?</b></p><div class="teclas"><span>A</span><span>B</span><span>C</span><span>D</span></div></div>
+      <div class="vidro"></div>
+    </div>
+  </div>
+
+  <span class="tacha" style="left:784px; top:592px"></span>
+  <div class="papel os" style="left:560px; top:600px; width:468px; padding:34px 30px 26px; transform:rotate(2.4deg)">
+    <div class="cab"><div><b style="font-size:19px; letter-spacing:.12em">Ordem de serviço</b><small>Entrada na bancada</small></div><span class="num" style="font-size:38px">OS 67-09</span></div>
+    <div class="campo"><label>Aparelho</label><div class="v">Calcâneo · faceta posterior</div></div>
+    <div class="campo"><label>Pergunta da prova</label><div class="v enun">Na fratura do calcâneo, segundo a classificação de SANDERS, a imagem abaixo corresponde ao grau</div></div>
+    <div class="campo"><label>Laudo (marque um)</label></div>
+    <div class="opcoes">
+      <div class="op"><span class="cx"></span><span class="l">A</span>IIC.</div>
+      <div class="op"><span class="cx"></span><span class="l">B</span>IIIAB.</div>
+      <div class="op"><span class="cx"></span><span class="l">C</span>IIIBC.</div>
+      <div class="op" style="border-bottom:none"><span class="cx"></span><span class="l">D</span>IV.</div>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-top:14px">
+      <span class="mao">Comente a sua letra.<br>O laudo sai no<br>próximo story.</span>
+      <span class="codigo" data-codigo="67-09" style="width:120px"></span>
+    </div>
+  </div>
+  
+
+  <span class="parafuso" style="left:600px; top:1530px"></span>
+  <span class="parafuso" style="left:654px; top:1508px; transform:rotate(30deg)"></span>
+</section>
+
+<!-- ================= STORY 2: o laudo ================= -->
+<section class="story" id="s2-laudo">
+  <div class="mesa"></div>
+  <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="cont">2/2</span></div>
+  <div class="papel" style="left:42px; top:196px; width:996px; height:1440px; padding:40px 44px 30px; transform:rotate(-.6deg)">
+    <div class="cab"><div><b>Laudo técnico</b><small>Classificação de Sanders · corte coronal da TC</small></div><span class="num">OS 67-09</span></div>
+    <div class="veredito" style="margin-top:26px">
+      <span class="selo" style="width:170px; height:170px; font-size:150px">C</span>
+      <div><h2 style="font-size:84px">Sanders <em>IIIBC</em></h2><p><b>2 traços, 3 partes.</b> Traços nas posições <b>B (central)</b> e <b>C (medial)</b>.</p></div>
+    </div>
+    <div class="secao" style="margin-top:26px">Tabela de defeitos</div>
+    <div class="tabela" style="grid-template-columns: auto auto; margin-top:16px">
+      <div>
+        <div class="linha">
+          <div class="faixa"><b>II</b>1 traço <span>· 2 partes</span></div>
+          <div class="celulas"><div class="cel-t apaga" style="width:178px"><img src="telas/p-IIA.png" alt=""><span class="nome">II A</span></div><div class="cel-t apaga" style="width:178px"><img src="telas/p-IIB.png" alt=""><span class="nome">II B</span></div><div class="cel-t apaga" style="width:178px"><img src="telas/p-IIC.png" alt=""><span class="nome">II C</span></div></div>
+        </div>
+        <div class="linha" style="margin-top:18px">
+          <div class="faixa"><b>III</b>2 traços <span>· 3 partes</span></div>
+          <div class="celulas"><div class="cel-t apaga" style="width:178px"><img class="cortada" src="telas/p-IIIAB.png" alt=""><span class="nome">III AB</span></div><div class="cel-t apaga" style="width:178px"><img src="telas/p-IIIAC.png" alt=""><span class="nome">III AC</span></div><div class="cel-t este" style="width:178px"><img src="telas/p-IIIBC.png" alt=""><span class="nome">III BC</span></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="linha">
+          <div class="faixa"><b>IV</b>3+ traços <span>· 4+ partes</span></div>
+          <div class="celulas"><div class="cel-t apaga" style="width:178px"><img src="telas/p-IV.png" alt=""><span class="nome">IV</span></div></div>
+        </div>
+        <div class="tipo1"><b>Tipo I:</b> sem desvio, com qualquer número de traços.</div>
+      </div>
+    </div>
+    <span class="etiqueta-lupa" style="left:670px; top:820px">Este é o seu caso</span>
+    <div class="lupa" style="left:650px; top:856px; width:300px; height:300px">
+      <div class="lente"><img src="telas/zoom-IIIBC.png" alt="" style="width:300px; left:-14px; top:-10px"></div>
+      <span class="cabo" style="left:200px; top:268px; transform:rotate(-38deg)"></span>
+      <span class="pino" style="left:118px; top:84px">B</span>
+      <span class="pino" style="left:162px; top:84px">C</span>
+    </div>
+    <div class="abc" style="position:absolute; left:44px; width:540px; top:1136px">
+      <span class="ponta" style="left:0">Lateral</span><span class="ponta" style="right:0">Medial · sustentáculo</span>
+      <div class="barra"></div>
+      <span class="marc" style="left:12%"></span><span class="marc on" style="left:50%"></span><span class="marc on" style="left:88%"></span>
+      <span class="rot" style="left:12%"><b>A</b><span>lateral</span></span>
+      <span class="rot on" style="left:50%"><b>B</b><span>central</span></span>
+      <span class="rot on" style="left:88%"><b>C</b><span>medial</span></span>
+    </div>
+    <div class="prova" style="position:absolute; left:44px; width:560px; top:1256px; padding:14px 20px">
+      <small>Para a prova</small>
+      <p>Conte os traços: <b>1 = II</b>, <b>2 = III</b>, <b>3+ = IV</b>. Depois veja <b>onde</b> eles passam.</p>
+    </div>
+    <span class="carimbo red" style="left:630px; top:1262px; font-size:38px; transform:rotate(-8deg)">Laudado<small>bancada 03</small></span>
+    <div class="fonte" style="position:absolute; left:44px; right:44px; bottom:28px">Fonte: <i>Rockwood and Green's Fractures in Adults</i>, 10ª ed. (2025), cap. 67, Fig. 67-9.</div>
+  </div>
+  <span class="tacha" style="left:50px; top:200px"></span><span class="tacha" style="left:990px; top:200px"></span>
+  <div class="site" style="top:1690px">ortoquestoes.com.br<small>O caminho está no nosso perfil</small></div>
+</section>
+
+<script>
+// ---------- utilidades ----------
+function rng(s) { return () => { s = (s * 16807) % 2147483647; return (s - 1) / 2147483646 } }
+const NS = 'http://www.w3.org/2000/svg'
+const el = (n, a) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e }
+
+// ---------- régua da base de corte (borda esquerda e de baixo) e linhas de ângulo ----------
+for (const sec of document.querySelectorAll('section')) {
+  const W = 1080, H = sec.offsetHeight, mesa = sec.querySelector('.mesa')
+  const s = el('svg', { width: W, height: H, class: 'regua', style: 'left:0;top:0' })
+  for (let y = 40, i = 0; y < H; y += 10, i++) {
+    const L = i % 10 === 0 ? 30 : i % 5 === 0 ? 20 : 11
+    s.appendChild(el('line', { x1: 0, y1: y, x2: L, y2: y, stroke: 'rgba(244,207,124,.45)', 'stroke-width': i % 10 === 0 ? 2 : 1.2 }))
+    if (i % 10 === 0 && i) { const t = el('text', { x: 36, y: y + 7, fill: 'rgba(244,207,124,.5)', 'font-family': 'Jersey', 'font-size': 22 }); t.textContent = i / 10; s.appendChild(t) }
+  }
+  for (let x = 40, i = 0; x < W; x += 10, i++) {
+    const L = i % 10 === 0 ? 30 : i % 5 === 0 ? 20 : 11
+    s.appendChild(el('line', { x1: x, y1: H, x2: x, y2: H - L, stroke: 'rgba(244,207,124,.45)', 'stroke-width': i % 10 === 0 ? 2 : 1.2 }))
+    if (i % 10 === 0 && i) { const t = el('text', { x: x + 4, y: H - 36, fill: 'rgba(244,207,124,.5)', 'font-family': 'Jersey', 'font-size': 22 }); t.textContent = i / 10; s.appendChild(t) }
+  }
+  // linhas de 30, 45 e 60 graus a partir do canto de baixo à direita
+  for (const g of [30, 45, 60]) {
+    const r = g * Math.PI / 180, len = 2400
+    s.appendChild(el('line', { x1: W, y1: H, x2: W - Math.cos(r) * len, y2: H - Math.sin(r) * len, stroke: 'rgba(244,207,124,.10)', 'stroke-width': 2, 'stroke-dasharray': '2 0' }))
+    const t = el('text', { x: W - Math.cos(r) * 230 - 10, y: H - Math.sin(r) * 230, fill: 'rgba(244,207,124,.32)', 'font-family': 'Jersey', 'font-size': 24 }); t.textContent = g + '°'; s.appendChild(t)
+  }
+  mesa.after(s)
+}
+
+// ---------- código de barras ----------
+for (const c of document.querySelectorAll('.codigo')) {
+  const R = rng(6709); let w = 0; const max = c.offsetWidth
+  while (w < max - 4) { const b = 1 + Math.floor(R() * 4), g = 1 + Math.floor(R() * 3); const i = document.createElement('i'); i.style.width = b + 'px'; i.style.marginRight = g + 'px'; c.appendChild(i); w += b + g }
+}
+
+// ---------- vidro trincado (só abaixo da imagem da questão) ----------
+addEventListener('load', () => { for (const cel of document.querySelectorAll('.cel[data-trinca]')) {
+  const tela = cel.querySelector('.tela'), img = tela.querySelector('img.q')
+  const W = tela.offsetWidth, H = tela.offsetHeight
+  const limite = img.offsetTop + img.offsetHeight + 4
+  const R = rng(+cel.dataset.trinca * 977)
+  const cx = W - 92, cy = H - 120          // ponto do impacto: canto de baixo à direita
+  const svg = el('svg', { class: 'trinca', width: W, height: H, viewBox: `0 0 ${W} ${H}` })
+  const defs = el('defs', {})
+  const id = 'm' + cel.dataset.trinca
+  const grad = el('linearGradient', { id: id + 'g', x1: 0, y1: 0, x2: 0, y2: 1, gradientUnits: 'objectBoundingBox' })
+  grad.appendChild(el('stop', { offset: 0, 'stop-color': '#fff', 'stop-opacity': 0 }))
+  grad.appendChild(el('stop', { offset: 1, 'stop-color': '#fff', 'stop-opacity': 1 }))
+  const mask = el('mask', { id })
+  mask.appendChild(el('rect', { x: 0, y: limite, width: W, height: 70, fill: `url(#${id}g)` }))
+  mask.appendChild(el('rect', { x: 0, y: limite + 70, width: W, height: H, fill: '#fff' }))
+  const brilho = el('radialGradient', { id: id + 'b' })
+  brilho.appendChild(el('stop', { offset: 0, 'stop-color': '#fff', 'stop-opacity': .9 }))
+  brilho.appendChild(el('stop', { offset: .35, 'stop-color': '#dff7ef', 'stop-opacity': .35 }))
+  brilho.appendChild(el('stop', { offset: 1, 'stop-color': '#fff', 'stop-opacity': 0 }))
+  defs.append(grad, mask, brilho); svg.appendChild(defs)
+  const g = el('g', { mask: `url(#${id})` }); svg.appendChild(g)
+  const lascas = el('g', {}), sombras = el('g', {}), luzes = el('g', {})
+  g.append(lascas, sombras, luzes)
+
+  const tracar = (pts, w) => {
+    const d = 'M' + pts.map(p => p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' L')
+    sombras.appendChild(el('path', { d, fill: 'none', stroke: 'rgba(0,0,0,.6)', 'stroke-width': w + 1.4, 'stroke-linejoin': 'round', transform: 'translate(1.3 1.6)' }))
+    luzes.appendChild(el('path', { d, fill: 'none', stroke: 'rgba(255,255,255,.92)', 'stroke-width': w, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }))
+    luzes.appendChild(el('path', { d, fill: 'none', stroke: 'rgba(170,235,220,.35)', 'stroke-width': w * .4, transform: 'translate(-.8 -.6)' }))
+  }
+
+  // raios
+  const N = 17, raios = []
+  for (let i = 0; i < N; i++) {
+    let a = (i / N) * Math.PI * 2 + (R() - .5) * .3
+    const alcance = 160 + R() * 520
+    const pts = [[cx, cy]]; let d = 0, x = cx, y = cy
+    while (d < alcance) {
+      const passo = 14 + R() * 30; a += (R() - .5) * .32; d += passo
+      x += Math.cos(a) * passo; y += Math.sin(a) * passo; pts.push([x, y])
+      if (d > 50 && R() < .16) {           // ramificação
+        let b = a + (R() < .5 ? -1 : 1) * (.45 + R() * .5), bx = x, by = y; const bp = [[x, y]]
+        for (let k = 0, L = 30 + R() * 130, dd = 0; dd < L; k++) { const p = 10 + R() * 22; b += (R() - .5) * .4; dd += p; bx += Math.cos(b) * p; by += Math.sin(b) * p; bp.push([bx, by]) }
+        tracar(bp, .8)
+      }
+    }
+    raios.push(pts)
+    // mais grosso perto do impacto, fino na ponta
+    const corte = Math.min(4, pts.length - 1)
+    tracar(pts.slice(0, corte + 1), 2.3)
+    tracar(pts.slice(corte), 1.1)
+  }
+  const pontoEm = (pts, r) => { for (const p of pts) if (Math.hypot(p[0] - cx, p[1] - cy) >= r) return p; return null }
+  // anéis da teia
+  for (const r of [22, 54, 98, 150]) {
+    for (let i = 0; i < N; i++) {
+      if (R() > (r < 60 ? .95 : .62)) continue
+      const p = pontoEm(raios[i], r + (R() - .5) * 10), q = pontoEm(raios[(i + 1) % N], r + (R() - .5) * 10)
+      if (!p || !q) continue
+      const m = [(p[0] + q[0]) / 2 + (R() - .5) * 10, (p[1] + q[1]) / 2 + (R() - .5) * 10]
+      tracar([p, m, q], r < 60 ? 1.4 : 1)
+      // lasca com brilho entre dois raios
+      if (R() < .55) {
+        const p2 = pontoEm(raios[i], Math.max(4, r - 34)), q2 = pontoEm(raios[(i + 1) % N], Math.max(4, r - 34))
+        if (p2 && q2) lascas.appendChild(el('path', { d: `M${p2} L${p} L${m} L${q} L${q2} Z`.replace(/,/g, ' '), fill: R() < .5 ? `rgba(255,255,255,${(.05 + R() * .16).toFixed(2)})` : `rgba(0,0,0,${(.08 + R() * .2).toFixed(2)})` }))
+      }
+    }
+  }
+  // micro trincas e o ponto do impacto
+  for (let i = 0; i < 46; i++) {
+    const a = R() * Math.PI * 2, r0 = R() * 18, L = 4 + R() * 14
+    tracar([[cx + Math.cos(a) * r0, cy + Math.sin(a) * r0], [cx + Math.cos(a + (R() - .5) * .6) * (r0 + L), cy + Math.sin(a + (R() - .5) * .6) * (r0 + L)]], .6)
+  }
+  g.appendChild(el('circle', { cx, cy, r: 30, fill: `url(#${id}b)` }))
+  g.appendChild(el('path', { d: `M${cx - 6} ${cy - 3} L${cx + 3} ${cy - 7} L${cx + 7} ${cy + 2} L${cx - 1} ${cy + 7} Z`, fill: 'rgba(0,0,0,.55)' }))
+  tela.appendChild(svg)
+} })
+</script>
+</body></html>
