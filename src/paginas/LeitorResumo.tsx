@@ -313,9 +313,12 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     if (abriu.current || !geometria.largura) return
     abriu.current = true
     medirPaginas()
-    // Link (?bloco=) para uma parte fechada ao visitante: abre direto na porta, que diz qual parte era.
-    const alvo = porta.pedida ? 'porta' : blocoInicial && elementoDoBloco(blocoInicial) ? blocoInicial : leitura?.bloco
-    if (alvo) requestAnimationFrame(() => irPara(alvo, blocoInicial ? 0 : leitura?.deslocamento ?? 0, !!blocoInicial && !porta.pedida))
+    // Link (?bloco=) para uma parte fechada a quem não assina (Tales, 12/11/2026: "cair de cara num paywall machuca a
+    // experiência"): abre no começo do resumo, no título, com um aviso na capa dizendo qual parte o link pedia. A porta
+    // (paywall) só aparece quando a pessoa chega ao fim da prévia lendo. Assinante continua indo direto à parte pedida.
+    if (porta.pedida) { const el = rolagem.current; if (el) { el.scrollTop = 0; el.scrollLeft = 0 } }
+    const alvo = porta.pedida ? null : blocoInicial && elementoDoBloco(blocoInicial) ? blocoInicial : leitura?.bloco
+    if (alvo) requestAnimationFrame(() => irPara(alvo, blocoInicial ? 0 : leitura?.deslocamento ?? 0, !!blocoInicial))
     if (!blocoInicial && leitura?.bloco && (leitura.progresso ?? 0) > 2) {
       const secao = capitulo.secoes.find((s) => s.id === secaoDe.get(leitura.bloco) || `h-${s.id}` === leitura.bloco)
       definirAviso({ texto: `Continuando de onde você parou${secao ? `: ${secao.titulo}` : ''}.`, acao: { rotulo: 'Ir ao início', fazer: () => { const el = rolagem.current; if (el) { el.scrollTop = 0; el.scrollLeft = 0; definirPaginas((p) => ({ ...p, atual: 0 })) } } } })
@@ -615,6 +618,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
             <p className="lr-capa__ref">A partir de <cite>{capitulo.livro}</cite>, {capitulo.edicao}. {capitulo.capitulo}. {capitulo.autores}.</p>
             <p className="lr-capa__meta"><span>~{capitulo.minutos} min de leitura</span>{idsDoCapitulo.length > 0 && <span>{idsDoCapitulo.length} questões citadas</span>}{leitura?.concluidoEm && <span className="lr-capa__ok"><Icone nome="certo" tamanho={14} /> Concluído</span>}{alvoFc && <a className="lr-capa__fc" href={href(linkFlashcards(alvoFc, capitulo.titulo))}><Icone nome="raio" tamanho={14} /> Estudar flashcards deste tema</a>}</p>
             <p className="lr-capa__dica">Selecione qualquer trecho para destacar ou anotar. Tudo fica salvo na sua conta.</p>
+            {porta.fechado && porta.pedida && <p className="lr-capa__pedida"><Icone nome="cadeado" tamanho={14} /> O link que você abriu leva à parte {porta.pedida.numero}, <strong>“{porta.pedida.secao.titulo}”</strong>, que é para assinantes. Comece por aqui: o começo do resumo é aberto para todos e prepara o caminho até ela.</p>}
             {porta.fechado && <p className="lr-capa__porta"><Icone nome="cadeado" tamanho={13} /> Você está lendo a prévia deste resumo. O texto completo é para assinantes: <a href={href('/assinatura')}>ver os planos</a>.</p>}
           </header>
           {secoesVisiveis.map((s, i) => {
