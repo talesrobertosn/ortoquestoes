@@ -1,6 +1,6 @@
 ---
 id: campbell15-osteonecrose-cabeca-femoral
-versao: 1
+versao: 2
 titulo: Osteonecrose da cabeça femoral no adulto
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 7 · Hip Pain in the Young Adult and Hip Preservation Surgery (seção Osteonecrosis of the Femoral Head), com os capítulos 3, 4, 5, 60 e 68
 autores: James L. GUYTON
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (seção Osteonecrosis of the Femoral Head e Idiopathic Transient Osteoporosis, p. 383 a 391, com as tabelas 7.3 e 7.4 extraídas do PDF, e os quadros de dor da p. 357), cap. 3 (RM do quadril, p. 165 e 166), cap. 4 (osteonecrose, anemia falciforme, GAUCHER e insuficiência renal na artroplastia, p. 246 e 262), cap. 5 (artroplastia de superfície, p. 337 e 338), cap. 60 (fraturas do colo e luxação, p. 2663, 2664 e 2686) e cap. 68 (enxerto ósseo vascularizado e fíbula, p. 3048 e 3066 a 3068); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 52 (vascularização da cabeça femoral, pág. PDF 2584, sem página impressa). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (seção Osteonecrosis of the Femoral Head e Idiopathic Transient Osteoporosis, p. 383 a 391, com as tabelas 7.3 e 7.4 extraídas do PDF, e os quadros de dor da p. 357), cap. 3 (RM do quadril, p. 165 e 166), cap. 4 (osteonecrose, anemia falciforme, GAUCHER e insuficiência renal na artroplastia, p. 246 e 262), cap. 5 (artroplastia de superfície, p. 337 e 338), cap. 60 (fraturas do colo e luxação, p. 2663, 2664 e 2686) e cap. 68 (enxerto ósseo vascularizado e fíbula, p. 3048 e 3066 a 3068); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 52 (Hip Dislocations and Femoral Head Fractures, seção Surgical and Applied Anatomy, Neurovascular Anatomy; sem página impressa). As páginas citadas são as impressas.
 subtemas: Osteonecrose da cabeça femoral
 resumo: Doença da 3ª à 5ª década, bilateral em até 75% das atraumáticas; fatores de risco (corticoide, álcool, falciforme, GAUCHER, mergulho, LES) e mecanismos (isquemia por oclusão, compressão ou ruptura; toxicidade celular direta pela irradiação); dor inguinal; crescente patognomônico (fratura subcondral, FICAT 3, STEINBERG III); RM de escolha, dupla linha em T2; osteoporose transitória com edema até a intertrocantérica; FICAT e ARLET 0 a 4 (2 = reparo, osso novo entre trabéculas mortas); STEINBERG e ARCO com A < 15%, B 15% a 30%, C > 30%; ângulo necrótico combinado de KERBOUL (< 190° não colapsa, > 240° colapsa); descompressão em FICAT I e IIA; trapdoor e light bulb; fíbula vascularizada abaixo de 50 anos sem colapso; osteotomia abaixo de 30%; acima de 30% e após o colapso, artroplastia total.
 ---
@@ -25,13 +25,13 @@ O fio condutor é simples. **Antes do colapso**, a cabeça ainda pode ser salva,
 
 # O suprimento sanguíneo da cabeça femoral {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 52, pág. PDF 2584), descreve a irrigação. No adulto, o suprimento principal vem das **artérias cervicais**, que nascem de um **anel extracapsular** na base do colo femoral. Esse anel é formado pela **artéria circunflexa femoral medial**, por trás, e pela **circunflexa femoral lateral**, pela frente. Os vasos capitais **atravessam a cápsula** perto da sua inserção no colo e na crista trocantérica, **sobem paralelos ao colo** e entram na cabeça junto à borda da superfície articular.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 52, seção Surgical and Applied Anatomy, Neurovascular Anatomy), descreve a irrigação. No adulto, o suprimento principal vem das **artérias cervicais**, que nascem de um **anel extracapsular** na base do colo femoral. Esse anel é formado pela **artéria circunflexa femoral medial**, por trás, e pela **circunflexa femoral lateral**, pela frente. Os vasos capitais **atravessam a cápsula** perto da sua inserção no colo e na crista trocantérica, **sobem paralelos ao colo** e entram na cabeça junto à borda da superfície articular.
 
 O ponto que a prova explora é o da **dominância**. Os vasos **superiores e posteriores**, derivados sobretudo da **circunflexa medial**, são o suprimento **dominante** da cabeça. A circunflexa medial ainda fornece o **ramo retinacular inferior**, que corre ao longo do ligamento de WEITBRECHT e irriga a porção inferomedial. A **artéria foveal**, ramo da **obturatória** que viaja dentro do **ligamento redondo**, dá uma contribuição **menor**, embora significativa para a porção epifisária em cerca de **75% dos quadris**. Ou seja: a cabeça adulta depende de vasos que correm na superfície do colo, sob a sinóvia, vulneráveis a fraturas, luxações, cirurgias e a qualquer aumento de pressão dentro da cápsula ou do osso.
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 7), reforça essa anatomia: a artrotomia é feita **nas faces anterior e lateral do colo** para poupar os **vasos retinaculares**, que correm nas faces **posterior e superior**, e nas vias posteriores preservam-se o **obturador externo** e o **quadrado femoral**, que protegem o **ramo ascendente da circunflexa medial**.
 
-!tabela Vascularização da cabeça femoral no adulto (Rockwood and Green 10ª, cap. 52, pág. PDF 2584)
+!tabela Vascularização da cabeça femoral no adulto (Rockwood and Green 10ª, cap. 52, seção Neurovascular Anatomy)
 | Vaso | Origem | Papel |
 | --- | --- | --- |
 | anel extracapsular | circunflexa medial (posterior) e lateral (anterior) | origem das artérias cervicais |
@@ -435,11 +435,13 @@ Na Técnica 7.8, abre-se uma **janela de cerca de 2 x 2 cm na junção cabeça-c
 
 A distinção visual na prova é imediata: se a imagem mostra uma **janela no colo** e uma cavidade em forma de lâmpada, é **light bulb**; se mostra um **retalho de cartilagem levantado na cabeça**, é **trapdoor**. Quanto ao estágio, o livro situa a enxertia estrutural nos estágios **I e II**, pré-colapso, porque depois do crescente o retalho condral já está fraturado e o colapso não se desfaz com enxerto.
 
+O The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (cap. 37, p. 519 e 520), dá o estágio com todas as letras. Põe o **light bulb** (janela pelo colo) e o **trapdoor** (janela na cartilagem) entre as vias da **enxertia não vascularizada**, cujas indicações comuns são a **falha da descompressão** e os **FICAT I e II**; os maus resultados aparecem com **colapso maior que 2 mm**, acometimento acetabular e delaminação da cartilagem. Na série de light bulb que o livro cita, 39 quadris em **estágios I e II**, a sobrevida foi de **67%** em 36 meses, e 80% das lesões pequenas e médias dispensaram nova cirurgia.
+
 !questoes central=quadril-0095
 conceito: Light bulb é a janela na junção cabeça-colo com cavidade em forma de lâmpada, sem luxação; trapdoor levanta um retalho de cartilagem após luxação cirúrgica; a enxertia estrutural é técnica de estágios I e II, antes do colapso.
 como: O TARO 2023 mostrou a imagem da técnica e pediu o nome e os estágios de FICAT em que é usada.
 armadilha: Trocar os nomes das técnicas ou indicá-las depois do colapso (IIb e III).
-alerta: O Campbell 15 não liga o trapdoor ou o light bulb a estágios específicos de FICAT; situa a enxertia estrutural nos estágios I e II (Fig. 7.48). O gabarito oficial (A) foi mantido.
+alerta: O Campbell 15 não liga o trapdoor ou o light bulb a estágios específicos de FICAT; situa a enxertia estrutural nos estágios I e II (Fig. 7.48). O The Adult Hip, 3ª ed. (cap. 37, p. 519 e 520), liga: a enxertia não vascularizada, light bulb e trapdoor inclusive, é indicada nos FICAT I e II, o que sustenta o gabarito oficial (A).
 !fim
 
 # Fíbula vascularizada {radar=confirmado}
@@ -470,11 +472,17 @@ A indicação geral do **enxerto ósseo vascularizado** no capítulo 68 (p. 3066
 
 A fíbula é o osso mais usado nas transferências ósseas livres: longa, reta, cortical forte e **dispensável** (cap. 68, p. 3068). O pedículo é a **artéria fibular (peroneal)**, de **1,5 a 3 mm**, com as **veias comitantes** e **6 a 8 cm** de comprimento; a **nutrícia entra no terço médio**, e cerca de **26 cm** podem ser retirados. O livro prefere a **via lateral** (GILBERT; TAMAI; WEILAND).
 
+O Campbell não diz a que vaso do quadril o pedículo é ligado. O The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (cap. 37, Fig. 37.9, p. 521), desenha: a cabeça é fresada por um túnel a partir da cortical lateral e o osso necrótico é retirado; o **ramo ascendente da artéria e da veia circunflexas femorais laterais** é seccionado; a fíbula é encaixada no túnel, e a **artéria e a veia fibulares** são **anastomosadas ao microscópio** a esse ramo. O mesmo capítulo (p. 520) indica o enxerto vascularizado (crista ilíaca ou fíbula) nos **FICAT I a III**, com resultados piores quando a lesão passa de **50%** da cabeça ou o colapso passa de **2 mm**.
+
+!figura 37.9 imagem=quadril/adulthip-37-9-ta039.jpeg
+Fonte: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (2017), cap. 37, Fig. 37.9, p. 521. Em cima, a cabeça fresada pelo túnel lateral e o ramo ascendente da circunflexa femoral lateral que será seccionado; no detalhe, a fíbula encaixada sob a área necrótica e os vasos fibulares anastomosados a esse ramo.
+!fim
+
 !questoes central=quadril-0033 relacionadas=quadril-0504
-conceito: A fíbula vascularizada vai com a artéria fibular (peroneal) e suas veias comitantes; na cabeça femoral, serve ao paciente abaixo de 50 anos sem colapso, com 80% a 91% de bons resultados, mas o capítulo de microcirurgia acha os resultados inconclusivos e reserva o enxerto vascularizado para quando a enxertia tradicional não pode ser feita ou falhou.
+conceito: A fíbula vascularizada vai com a artéria fibular (peroneal) e suas veias comitantes, anastomosadas ao ramo ascendente da circunflexa femoral lateral; na cabeça femoral, serve ao paciente abaixo de 50 anos sem colapso, com 80% a 91% de bons resultados, mas o capítulo de microcirurgia acha os resultados inconclusivos e reserva o enxerto vascularizado para quando a enxertia tradicional não pode ser feita ou falhou.
 como: O TARO 2014 perguntou com qual artéria se anastomosa a fibular no enxerto vascularizado para a cabeça femoral; o TARO 2006 pôs em certo ou errado que osteonecrose da cabeça e pseudartrose infectada são indicações primárias de enxerto vascularizado no fêmur.
 armadilha: Escolher a femoral comum ou as glúteas como receptoras, ou tomar a osteonecrose como indicação consagrada do enxerto vascularizado.
-alerta: O Campbell 15 não nomeia o vaso receptor da anastomose na cabeça femoral (`quadril-0033`, gabarito oficial D mantido). A `quadril-0504` está sem gabarito oficial; o capítulo 68 chama os resultados na osteonecrose de inconclusivos e define a indicação do enxerto vascularizado pela falha ou impossibilidade da enxertia tradicional, o que sustenta "errado".
+alerta: O Campbell 15 não nomeia o vaso receptor; o The Adult Hip, 3ª ed. (cap. 37, Fig. 37.9, p. 521), nomeia o ramo ascendente da circunflexa femoral lateral, o que confirma o gabarito oficial D da `quadril-0033`. A `quadril-0504` está sem gabarito oficial e segue o gabarito da bibliografia (certo, provável A), apoiado na seção própria da fíbula vascularizada no capítulo 7 do Campbell 15 (p. 390); a ressalva é que o capítulo 68 chama os resultados na osteonecrose de inconclusivos e define a indicação do enxerto vascularizado pela falha ou impossibilidade da enxertia tradicional, o que torna discutível a palavra "primárias".
 !fim
 
 # Osteotomias femorais proximais {radar=confirmado}
