@@ -16,7 +16,7 @@ bom = {
     "frente": "Qual zona da fise é a mais fraca, onde ocorre a maioria das fraturas fisárias e o deslizamento da epifisiólise?",
     "resposta": "Hipertrófica",
     "explicacao": "**Zona hipertrófica.** Os condrócitos aumentam de volume e a matriz se calcifica.",
-    "trecho": "**Hipertrófica** | Os condrócitos aumentam de volume, a matriz se calcifica: é a zona **mais fraca**",
+    "trecho": "enquanto a hipertrófica, com pouca matriz, é a mais fraca",
     "opcoes": ["Germinativa", "Hipertrófica"], "certa": 1,
 }
 falhas = 0
