@@ -4,13 +4,14 @@ import {mkdtemp,rm,access} from 'node:fs/promises'
 import {tmpdir} from 'node:os'
 import {join} from 'node:path'
 import {pathToFileURL} from 'node:url'
-// O rodízio dos cenários do topo da página inicial (12/11/2026): o dia de Brasília dividido em partes iguais, uma por
-// cenário do rodízio de hoje (o de Natal só na época dele), o mesmo para todos, em qualquer fuso. E o tempo (clima.ts).
+// O rodízio dos cenários do topo da página inicial (Tales, 12/11/2026): cada cenário fica 2 horas, virando nas horas
+// pares de Brasília, e nenhum repete até passarem todos (o de Natal só na época dele); o mesmo para todos, em qualquer
+// fuso. E o tempo (clima.ts).
 const dir=await mkdtemp(join(tmpdir(),'oq-cenarios-inicio-'))
 try{
  const file=join(dir,'cenarios.mjs')
  await build({stdin:{contents:`export * from './src/componentes/inicio/cena/cenarios'; export * from './src/componentes/inicio/cena/clima'`,resolveDir:process.cwd(),loader:'ts'},outfile:file,bundle:true,platform:'node',format:'esm',logLevel:'error'})
- const {CENARIOS,cenarioDaHora,faixaDoCenario,ordemDoDia,cenariosDoDia,naEpoca,nevascasDoDia,climaAgora}=await import(pathToFileURL(file))
+ const {CENARIOS,cenarioDaHora,faixaDoCenario,ordemDoCiclo,FAIXA_MS,cenariosDoDia,naEpoca,nevascasDoDia,climaAgora}=await import(pathToFileURL(file))
  assert.equal(CENARIOS.length,8)
  const vale=CENARIOS.find(c=>c.id==='vale')
  // A época do Natal: de 10 de novembro ao Dia de Reis, virando o ano.
@@ -18,36 +19,48 @@ try{
  for(const [data,n] of [['2026-11-09T12:00:00-03:00',7],['2026-11-20T12:00:00-03:00',8],['2027-01-06T23:59:00-03:00',8],['2027-01-07T00:01:00-03:00',7]]){
   assert.equal(cenariosDoDia(new Date(data)).length,n,data)
  }
- for(const [dia,n,horas] of [['2026-11-09',7,24/7],['2026-11-20',8,3]]){
-  const esperado=ordemDoDia(dia,cenariosDoDia(new Date(`${dia}T12:00:00-03:00`))).map(c=>c.id)
-  assert.equal(new Set(esperado).size,n)
-  for(const tz of ['UTC','America/Los_Angeles','Asia/Tokyo','America/Sao_Paulo']){
-   process.env.TZ=tz
-   const vistos=new Set()
-   for(let min=0;min<24*60;min+=7){
-    const d=new Date(new Date(`${dia}T00:00:00-03:00`).getTime()+min*60000+13000)
-    const id=cenarioDaHora(d).id
-    vistos.add(id)
-    assert.equal(id,esperado[Math.floor(min/60/horas)],`${tz} ${dia} ${min} min: mesmo cenário para todos`)
-    const janela=faixaDoCenario(d)
-    assert.equal(janela.dia,dia)
-    assert.equal(janela.faixas,n)
-    assert.equal(cenarioDaHora(new Date(janela.proxima-1)).id,id,'vale até o último instante da faixa')
-    if(janela.faixa<n-1)assert.equal(faixaDoCenario(new Date(janela.proxima)).faixa,janela.faixa+1,'vira exatamente na próxima')
-    else assert.equal(faixaDoCenario(new Date(janela.proxima)).faixa,0,'a última faixa vira no novo dia')
-   }
-   assert.equal(vistos.size,n,`${tz} ${dia}: todos os cenários aparecem no dia (${horas.toFixed(2)} h cada)`)
+ assert.equal(FAIXA_MS,2*3600000)
+ // As viradas caem nas horas pares de Brasília, iguais em qualquer fuso, e o cenário vale até o último instante da faixa.
+ for(const tz of ['UTC','America/Los_Angeles','Asia/Tokyo','America/Sao_Paulo']){
+  process.env.TZ=tz
+  for(const [hora,par] of [['2026-11-20T08:00:00-03:00',true],['2026-11-20T09:00:00-03:00',false],['2026-11-21T00:00:00-03:00',true]]){
+   const t=new Date(hora).getTime()
+   assert.equal(faixaDoCenario(new Date(t)).inicio===t,par,`${tz} ${hora}`)
+  }
+  for(let min=0;min<24*60;min+=7){
+   const d=new Date(new Date('2026-11-20T00:00:00-03:00').getTime()+min*60000+13000)
+   const j=faixaDoCenario(d)
+   assert.equal(j.proxima-j.inicio,FAIXA_MS)
+   assert.equal(cenarioDaHora(new Date(j.proxima-1)).id,cenarioDaHora(d).id,'vale até o último instante da faixa')
   }
  }
- for(let i=0;i<120;i++){
-  const dia=new Date(Date.UTC(2026,10,1+i)).toISOString().slice(0,10)
-  const ordem=ordemDoDia(dia)
-  assert.equal(new Set(ordem.map(c=>c.id)).size,8,'nenhum cenário repete no dia')
-  assert.deepEqual(ordemDoDia(dia),ordem,'não muda com visitas ou reload')
+ process.env.TZ='America/Sao_Paulo'
+ // Ciclos sem repetição: em cada sequência de n faixas passam os n cenários, e nunca o mesmo duas faixas seguidas.
+ for(const [ini,n] of [['2026-07-01T00:00:00-03:00',7],['2026-11-12T00:00:00-03:00',8]]){
+  const t0=faixaDoCenario(new Date(ini)).faixa
+  const comeco=(Math.ceil(t0/n))*n
+  let anterior=null
+  for(let k=comeco;k<comeco+n*30;k++){
+   const id=cenarioDaHora(new Date(Date.UTC(2026,0,1,3)+k*FAIXA_MS+60000)).id
+   assert.notEqual(id,anterior,`faixa ${k}: não repete em seguida`)
+   anterior=id
+  }
+  for(let c=comeco/n;c<comeco/n+30;c++){
+   const vistos=new Set()
+   for(let k=c*n;k<(c+1)*n;k++)vistos.add(cenarioDaHora(new Date(Date.UTC(2026,0,1,3)+k*FAIXA_MS+60000)).id)
+   assert.equal(vistos.size,n,`ciclo ${c}: todos os ${n} cenários, cada um uma vez`)
+  }
  }
- assert.ok(new Set(Array.from({length:20},(_,i)=>ordemDoDia(`2026-11-${String(i+1).padStart(2,'0')}`).map(c=>c.id).join(','))).size>15,'a ordem varia entre os dias')
+ const ordens=new Set()
+ for(let c=0;c<40;c++){
+  const ordem=ordemDoCiclo(c)
+  assert.equal(new Set(ordem.map(x=>x.id)).size,8,'nenhum cenário repete no ciclo')
+  assert.deepEqual(ordemDoCiclo(c).map(x=>x.id),ordem.map(x=>x.id),'não muda com visitas ou reload')
+  ordens.add(ordem.map(x=>x.id).join(','))
+ }
+ assert.ok(ordens.size>30,'a ordem varia entre os ciclos')
  const antes=CENARIOS.map(c=>c.id)
- ordemDoDia('2026-11-09');assert.deepEqual(CENARIOS.map(c=>c.id),antes,'sorteio não modifica catálogo')
+ ordemDoCiclo(3);assert.deepEqual(CENARIOS.map(c=>c.id),antes,'sorteio não modifica catálogo')
  globalThis.location={search:'',hash:'#/?cenario=vale'}
  assert.equal(cenarioDaHora(new Date('2026-07-01T10:00:00-03:00')).id,'vale','prévia explícita funciona até fora da época')
  globalThis.location={search:'',hash:'#/?cenario=abrigo'}
@@ -89,5 +102,5 @@ try{
  assert.ok(CENARIOS.find(c=>c.id==='abrigo').fogo)
  assert.ok(CENARIOS.find(c=>c.id==='praca').dragao)
  assert.ok(vale.repertorio.length>=5&&vale.neve.arquivo)
- console.log(`Inicial: oito cenários (o de Natal de 10/11 a 6/1), o dia dividido por igual entre os do rodízio, em quatro fusos, viradas exatas, nevascas iguais para todos (${dias_com_neve} de 200 dias com neve) e 54 imagens presentes.`)
+ console.log(`Inicial: oito cenários (o de Natal de 10/11 a 6/1), 2 h cada um, ciclos sem repetir, viradas nas horas pares em quatro fusos, nevascas iguais para todos (${dias_com_neve} de 200 dias com neve) e 54 imagens presentes.`)
 }finally{await rm(dir,{recursive:true,force:true})}

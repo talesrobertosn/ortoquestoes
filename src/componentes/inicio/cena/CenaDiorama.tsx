@@ -853,7 +853,8 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
         <DiretorDeCena palco={palco} periodo={periodo} cenario={cenario.id} repertorio={cenario.repertorio} controles={controles} />
         <CorujaDoAcampamento key={cenario.id} poleiros={cenario.coruja} luzes={luzes} periodo={periodo} />
         {cenario.dragao && <DragaoDaCena key={`dragao-${cenario.id}`} ponto={cenario.dragao} />}
-        <span className={`hd-particulas hd-particulas--${cenario.particulas}`} aria-hidden="true">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
+        {/* Nos cenários com tempo (clima.ts), a neve só cai durante a nevasca; com tempo firme, o céu fica limpo. */}
+        {!(cenario.neve && cenario.particulas === 'neve' && !clima.nevando) && <span className={`hd-particulas hd-particulas--${cenario.particulas}`} aria-hidden="true">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>}
         {cenario.neve && clima.nevando && <Nevasca intensidade={clima.intensidade} />}
       </div>
     </div>

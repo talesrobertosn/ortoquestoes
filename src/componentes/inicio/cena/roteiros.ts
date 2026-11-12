@@ -164,7 +164,7 @@ export const ROTEIROS: Roteiro[] = [
     { quem: 'esqueleto', fala: 'Alguém quer chocolate quente?', acao: { tipo: 'pose', id: 'natal_chocolate' } },
     { quem: 'gato', fala: 'Gato não pode chocolate. Mas aceito a manta.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
   { id: 'sino-do-vale', peso: 4, cenarios: ['vale'], precisa: ['coruja'], passos: [
-    { quem: 'coruja', fala: 'Ouviu? O sino da igreja lá no vale.' },
+    { quem: 'coruja', fala: 'Ouviu? O relógio da prefeitura lá no vale bateu a hora.' },
     { quem: 'esqueleto', fala: 'É a deixa para mais uma canção.', acao: { tipo: 'pose', id: 'natal_cantar' } },
     { quem: 'gato', fala: 'Era a deixa para silêncio.' }] },
   { id: 'trenzinho', peso: 3, cenarios: ['vale'], passos: [

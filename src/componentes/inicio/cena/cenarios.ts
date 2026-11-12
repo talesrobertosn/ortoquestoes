@@ -3,7 +3,7 @@ import type { IdComportamento } from '../../mascote/comportamentos'
 
 /**
  * Os cenários do topo da página inicial (01/11/2026, pedido do Tales: "um cenário diferente para ficar trocando",
- * cada um tantas horas por dia). A maioria segue o mesmo esqueleto de composição, para o fogo e o mascote não mudarem de
+ * cada um 2 horas, sem repetir até passarem todos). A maioria segue o mesmo esqueleto de composição, para o fogo e o mascote não mudarem de
  * lugar: o fogo animado na caixa x 220-260, y 104-152 da arte (480 x 200), o esqueleto em pé em x 262-308 com os pés
  * em y 163, o lado esquerdo calmo para o texto. Cada cenário diz onde o gato passeia e onde a coruja pousa (sempre em
  * algo firme). As artes saem dos scripts de scripts/ (gerar_cena_inicio.py e scripts/cenarios/inicio_*.py).
@@ -92,7 +92,7 @@ export const CENARIOS: readonly Cenario[] = [
   },
   {
     // Natal no Vale (12/11/2026, scripts/cenarios/inicio_vale.py): o terraço de um chalé suíço no alto do vale, com a
-    // cachoeira, a igrejinha lá embaixo e o trem de montanha. Só na época do Natal; o esqueleto fica sentado no banco.
+    // cachoeira, a prefeitura com a torre do relógio lá embaixo e o trem de montanha. Só na época do Natal; o esqueleto fica sentado no banco.
     id: 'vale', arquivo: 'cena-vale', particulas: 'neve',
     epoca: { de: [11, 10], ate: [1, 6] },
     neve: { arquivo: 'cena-vale-nevado' },
@@ -110,7 +110,6 @@ const relogio = new Intl.DateTimeFormat('en-CA', {
   timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit',
   second: '2-digit', hourCycle: 'h23',
 })
-const DIA_MS = 86_400_000
 /** O dia (aaaa-mm-dd) e quantos milissegundos dele já passaram, em Brasília; `inicio` é o instante da meia-noite. */
 export function horaDeBrasilia(agora = new Date()) {
   const p = Object.fromEntries(relogio.formatToParts(agora).map(v => [v.type, v.value]))
@@ -135,21 +134,20 @@ export function cenariosDoDia(agora = new Date(), lista: readonly Cenario[] = CE
   return hoje.length ? hoje : [...lista]
 }
 
-/**
- * A faixa do dia (Tales, 12/11/2026: "quanto mais arte, menos tempo cada uma fica"): o dia de Brasília é dividido em
- * partes iguais, uma por cenário do rodízio. Com 7 cenários, 3 h 25 min cada; com 8, 3 h cada. Todos aparecem todo dia.
- */
-export function faixaDoCenario(agora = new Date(), n = cenariosDoDia(agora).length) {
-  const { dia, decorrido, inicio } = horaDeBrasilia(agora)
-  const faixa = Math.min(n - 1, Math.floor((decorrido * n) / DIA_MS))
-  const proxima = inicio + Math.ceil(((faixa + 1) * DIA_MS) / n)
-  return { dia, faixa, proxima, faixas: n }
+/** Cada cenário fica 2 horas no topo (Tales, 12/11/2026: "a cada 2 horas um diferente, sem repetir até irem todos"). */
+export const FAIXA_MS = 2 * 3_600_000
+/** O marco das faixas: 1º/1/2026 à meia-noite de Brasília (UTC-3, sem horário de verão), então as viradas caem nas horas pares. */
+const MARCO = Date.UTC(2026, 0, 1, 3)
+
+/** A faixa de 2 horas em que estamos (contada desde o marco), quando ela começou e quando vira. Igual para todos. */
+export function faixaDoCenario(agora = new Date()) {
+  const faixa = Math.floor((agora.getTime() - MARCO) / FAIXA_MS)
+  return { faixa, inicio: MARCO + faixa * FAIXA_MS, proxima: MARCO + (faixa + 1) * FAIXA_MS }
 }
 
-/** Fisher–Yates com semente do dia. É um sorteio reproduzível, sem pedido ao servidor e sem sorte individual. */
-export function ordemDoDia(dia: string, lista: readonly Cenario[] = CENARIOS): Cenario[] {
+function embaralhar(chave: string, lista: readonly Cenario[]): Cenario[] {
   let seed = 2166136261
-  for (const ch of `inicio:v1:${dia}`) seed = Math.imul(seed ^ ch.charCodeAt(0), 16777619) >>> 0
+  for (const ch of chave) seed = Math.imul(seed ^ ch.charCodeAt(0), 16777619) >>> 0
   const aleatorio = () => {
     seed = (seed + 0x6D2B79F5) >>> 0
     let t = Math.imul(seed ^ (seed >>> 15), 1 | seed)
@@ -164,7 +162,22 @@ export function ordemDoDia(dia: string, lista: readonly Cenario[] = CENARIOS): C
   return ordem
 }
 
-/** Mesmo cenário para todo mundo até a próxima faixa. Prévia explícita por ?cenario=vale; não grava preferência. */
+/**
+ * A ordem de um ciclo: cada cenário do rodízio aparece uma vez, numa ordem sorteada com semente (a mesma para todos,
+ * sem servidor). O primeiro de um ciclo nunca é o último do ciclo anterior, então nada repete na emenda.
+ */
+export function ordemDoCiclo(ciclo: number, lista: readonly Cenario[] = CENARIOS): Cenario[] {
+  const chave = (c: number) => `inicio:v2:${c}:${lista.map((x) => x.id).join(',')}`
+  const ordem = embaralhar(chave(ciclo), lista)
+  if (ordem.length > 2) {
+    const antes = embaralhar(chave(ciclo - 1), lista)
+    const ultimoAntes = antes[antes.length - 1]
+    if (ordem[0].id === ultimoAntes?.id) [ordem[0], ordem[1]] = [ordem[1], ordem[0]]
+  }
+  return ordem
+}
+
+/** Mesmo cenário para todo mundo até a próxima faixa de 2 horas. Prévia explícita por ?cenario=vale; não grava preferência. */
 export function cenarioDaHora(agora: Date = new Date(), lista: readonly Cenario[] = CENARIOS): Cenario {
   if (!lista.length) throw new Error('É necessário ao menos um cenário')
   let forcado = ''
@@ -174,7 +187,9 @@ export function cenarioDaHora(agora: Date = new Date(), lista: readonly Cenario[
   } catch { /* sem janela */ }
   const pedido = lista.find(c => c.id === forcado)
   if (pedido) return pedido
-  const hoje = cenariosDoDia(agora, lista)
-  const { dia, faixa } = faixaDoCenario(agora, hoje.length)
-  return ordemDoDia(dia, hoje)[faixa % hoje.length]
+  // Faixas de 2 horas em ciclos: num ciclo de n faixas passam os n cenários do rodízio, cada um uma vez.
+  const { faixa, inicio } = faixaDoCenario(agora)
+  const hoje = cenariosDoDia(new Date(inicio), lista)
+  const n = hoje.length
+  return ordemDoCiclo(Math.floor(faixa / n), hoje)[((faixa % n) + n) % n]
 }

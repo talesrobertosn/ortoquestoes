@@ -479,10 +479,10 @@ export const FALAS: Record<IdComportamento, string[]> = {
   natal_chocolate: [
     'Chocolate quente, manta no colo e uma questão por gole.',
     'Com chantili. É Natal, a dieta volta em janeiro.',
-    'Daqui dá para ver a igreja lá embaixo. E o seu progresso, que está lindo.',
+    'Daqui dá para ver o relógio da prefeitura lá embaixo. E o seu progresso, que está lindo.',
     'Esquenta as mãos. Osso frio não vira página.',
     'Um gole a cada acerto. Hoje eu volto bem aquecido.',
-    'O sino da igreja bateu. Hora de mais um bloco de questões.',
+    'O relógio da prefeitura bateu a hora. Hora de mais um bloco de questões.',
   ],
   natal_tricotar: [
     'Um cachecol listrado para o gato. Ele vai fingir que não gostou.',
