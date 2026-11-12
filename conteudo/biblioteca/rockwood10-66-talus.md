@@ -1,6 +1,6 @@
 ---
 id: rockwood10-66-talus
-versao: 4
+versao: 5
 titulo: Fraturas do tálus e do calcâneo
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 93
 capitulo: Capítulos 66 e 67 · Fractures and Dislocations of the Talus; Calcaneus Fractures
 autores: David W. Sanders e Clayton I. Inculet
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (talus.pdf, 65 páginas) Ampliado em 01/11/2026 com o cap. 67 (calcâneo) do Rockwood and Green e o Campbell's Operative Orthopaedics, 15ª ed.
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (talus.pdf, 65 páginas). Ampliado em 01/11/2026 com o cap. 67 (calcâneo) do Rockwood and Green e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 93; cap. 58, p. 2560 e 2561, bolhas de fratura). O Rockwood and Green, 10ª ed., não traz página impressa no cabeçalho; ele é citado por capítulo e seção.
 subtemas: Fraturas do tálus e do calcâneo
 resumo: Calcâneo de ESSEX-LOPRESTI e SANDERS, BÖHLER e GISSANE, seio do tarso e as feridas; no tálus, vascularização, HAWKINS e VALLIER, incidências de CANALE e BRODEN, redução urgente do corpo luxado, placa lateral contra o varo, processos lateral e posterior, sinal de HAWKINS e a luxação subtalar.
 ---
@@ -60,7 +60,7 @@ As fraturas do tálus são **2% das fraturas do membro inferior** e **5% a 7% da
 
 - **Colo:** queda de altura e acidente automobilístico (46% das fraturas do colo vieram de colisões numa revisão). ANDERSON, em 1919, descreveu o "astrágalo do aviador" pela barra do leme no pé do piloto. Em cadáver, a hiperdorsiflexão sozinha não reproduziu a fratura; ela ocorreu com o tornozelo **em dorsiflexão e carga axial aplicada no pé, à frente do tálus**, como no pé apoiado no pedal do freio. A tíbia distal bate no colo e cria o traço; mais força, mais cominução.
 - **Corpo:** mecanismo parecido, só que mais posterior: compressão axial com o tálus subluxado para a frente e o pilão anterior batendo no domo. Numa série inglesa recente, foi a fratura mais comum do tálus (47%), seguida do colo isolado (20%) e do processo lateral isolado (9%); na classificação, o capítulo diz que a mais publicada e comum é a do colo.
-- **Cabeça:** compressão ou carga axial através da talonavicular, ou cisalhamento por subluxação da talonavicular.
+- **Cabeça:** compressão ou carga axial através da talonavicular, ou cisalhamento por subluxação ou luxação da talonavicular, em **inversão com flexão plantar** ou em **eversão com dorsiflexão** (Rockwood, cap. 66, seção Talar Head Fractures); o traço pode ser axial ou coronal (figura 66-4).
 - **Processos:** energia menor, com rotação e inversão ou eversão (ver a seção dos processos).
 
 ## O que vem junto
@@ -399,7 +399,7 @@ armadilha: Faceta média: SANDERS só conta a faceta posterior.
 No calcâneo, a pele decide o momento e a via da cirurgia. Segundo o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67):
 
 - **Língua com pele tensa:** a língua é cerca de **15%** das fraturas. O traço secundário sai pela tuberosidade, e o tríceps sural puxa o fragmento para cima, **tensionando a pele posterior**. Sem tratamento de emergência, a pele do calcanhar e do tornozelo necrosa, o que aconteceu em **até 21%** das línguas na série de GARDNER. A conduta é a **redução de emergência** do fragmento da tuberosidade. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93), acrescenta os grupos de risco: quem não se feriu em queda, fumantes, desvio maior (mas pode ocorrer com pouco desvio) e chegada tardia.
-- **Bolhas:** surgem em **24 a 48 horas**; as hemorrágicas são mais comuns no calcâneo e deixam mais cicatriz. A incisão espera o **teste do enrugamento** (a pele volta a enrugar), o que leva **7 a 21 dias**.
+- **Bolhas:** surgem em **24 a 48 horas**; as hemorrágicas são mais comuns no calcâneo e deixam mais cicatriz. A incisão espera o **teste do enrugamento** (a pele volta a enrugar), o que leva **7 a 21 dias**. Sobre a bolha em si, o Rockwood (cap. 67, seção Fracture Blisters) diz que a conduta segue a preferência do cirurgião: não houve diferença de resultado entre aspirar, destelhar e aplicar sulfadiazina de prata ou deixar a bolha intacta, e a incisão sobre a bolha intacta ou sobre o leito de uma bolha rota pode aumentar a infecção. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2560 e 2561), em geral deixa a bolha se resolver sozinha, como curativo biológico; se ela rompe ou é destelhada, usa um protocolo de queimadura, com **excisão local** e **sulfadiazina de prata** no leito em curativos diários, e relata epitelização estável em 5 a 10 dias, com **menos infecção superficial**.
 - **Síndrome compartimental do pé:** **10% a 50%** nas fraturas de alta energia; o sintoma mais constante é a **dor intensa** desproporcional; a sequela é a **garra dos dedos**. O diagnóstico é clínico, e a fasciotomia do pé continua controversa. O Campbell aponta o **SANDERS IV** como o melhor preditor de síndrome compartimental.
 - **Exposta:** até **10%**; a ferida mais comum é a **transversa medial** (a espícula sustentacular furando a pele por dentro, para o Campbell). Infecção profunda **até 39%** (Campbell); em média 2,8 cirurgias e amputação abaixo do joelho em **5% a 8%** (Rockwood).
 
