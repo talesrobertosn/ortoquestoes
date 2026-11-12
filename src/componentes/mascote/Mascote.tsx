@@ -29,8 +29,10 @@ function sorteio(fantasia: Fantasia): IdComportamento[] {
   return COMPORTAMENTOS.filter((c) => entraNoSorteio(c) && c.halloween === (fantasia === 'halloween')).map((c) => c.id)
 }
 
-export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, falas, interativo = true, decorativo = false, className = '', style }: {
+export function Mascote({ comportamento, repertorio, reacao, fantasia: fixa, falar = true, falas, interativo = true, decorativo = false, className = '', style }: {
   comportamento?: IdComportamento
+  /** As atividades possíveis aqui (no lugar do sorteio de sempre): o cenário de Natal tem as dele, todas sentado no banco. */
+  repertorio?: readonly IdComportamento[]
   /** Falas só desta aparição (ex.: a pausa na fogueira da página inicial), no lugar das do comportamento. */
   falas?: readonly string[]
   /** true: enfeite de uma cena (fora do teclado e do leitor de tela); o clique com o mouse continua. */
@@ -42,11 +44,11 @@ export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, f
   interativo?: boolean; className?: string; style?: CSSProperties
 }) {
   const fantasia = fixa ?? fantasiaDoMes()
-  const opcoes = sorteio(fantasia)
+  const opcoes = repertorio?.length ? [...repertorio] : sorteio(fantasia)
   const [atual, definirAtual] = useState<IdComportamento>(() => {
     if (comportamento) return comportamento
     const escolhido = sortear(opcoes, ler<IdComportamento | null>(CHAVE, null) ?? undefined)
-    gravar(CHAVE, escolhido)
+    if (!repertorio?.length) gravar(CHAVE, escolhido)
     return escolhido
   })
   const [fala, definirFala] = useState<string | null>(null)
@@ -81,10 +83,10 @@ export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, f
   const clicar = () => {
     const agora = Date.now()
     cliques.current = [...cliques.current.filter((t) => agora - t < 2500), agora]
-    const proximo: IdComportamento = cliques.current.length >= 5 ? 'dormir' : sortear(opcoes, atual)
+    const proximo: IdComportamento = cliques.current.length >= 5 ? (repertorio?.length ? opcoes[opcoes.length - 1] : 'dormir') : sortear(opcoes, atual)
     if (cliques.current.length >= 5) cliques.current = []
     definirAtual(proximo)
-    gravar(CHAVE, proximo)
+    if (!repertorio?.length) gravar(CHAVE, proximo)
     if (falar) novaFala(proximo)
   }
 

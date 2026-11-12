@@ -486,3 +486,23 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
   color: #f4cf7c; text-shadow: 0 0 18px rgba(244, 207, 124, 0.55), 0 2px 0 #3d2804; text-align: center; }
 @keyframes hd-consolidado { 0% { opacity: 0; } 18%, 72% { opacity: 1; } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .hd-consolidado { animation: none; } }
+
+/* ── Natal no Vale e o tempo dos cenários (12/11/2026, clima.ts) ──
+A pintura nevada fica por cima da de tempo firme e aparece devagar (uns dois minutos) quando a nevasca cobre o
+cenário com a página aberta; ao abrir a página, a neve já está lá. A nevasca é um canvas por cima de tudo da cena
+(abaixo dos textos). O trenzinho cruza o fundo do vale de vez em quando, sempre atrás dos bichos e da fogueira. */
+.hd-palco__nevado { opacity: 0; }
+.hd-palco__nevado--sim { opacity: 1; }
+.hd-palco__nevado--devagar { transition: opacity 120s linear; }
+.hd-palco > .hd-nevasca { inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.hd-trem { overflow: hidden; pointer-events: none; }
+.hd-trem i { position: absolute; left: -14%; top: calc(6.25% + var(--subida)); width: 13.5%; height: 43.75%; image-rendering: pixelated;
+  background: var(--sprite-trem) 0 calc(var(--linha-trem) * 100%) / 100% 200% no-repeat; transform: rotate(-1.8deg);
+  animation: hd-trem 84s linear -58s infinite; }
+@keyframes hd-trem {
+  0% { left: -14%; top: calc(6.25% + var(--subida)); }
+  30% { left: 100%; top: 6.25%; }
+  30.01%, 100% { left: 100%; top: 6.25%; }
+}
+.hd-palco--noite .hd-trem i { filter: drop-shadow(0 0 2px rgba(255, 200, 110, 0.55)); }
+@media (prefers-reduced-motion: reduce) { .hd-trem { display: none; } .hd-palco__nevado--devagar { transition-duration: 4s; } }
