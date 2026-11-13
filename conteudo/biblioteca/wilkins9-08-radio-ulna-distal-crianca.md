@@ -1,6 +1,6 @@
 ---
 id: wilkins9-08-radio-ulna-distal-crianca
-versao: 3
+versao: 4
 titulo: Fraturas do rádio e da ulna distais na criança
 especialidade: pediatria
 acesso: gratis
@@ -132,7 +132,7 @@ conceito: Na baioneta dorsal o periósteo dorsal fica íntegro e o volar se romp
 como: O TARO 2021 pediu o que se interpõe na fratura irredutível com deslocamento volar (periósteo dorsal e tendões extensores). O TEPOP 2024 cruzou o estado do periósteo volar e do dorsal na baioneta de ápice volar, e o TARO 2022 perguntou a estrutura ameaçada pelo fragmento proximal na baioneta reversa.
 armadilha: Periósteo volar ou tendões flexores no deslocamento volar: é a resposta do desvio dorsal (periósteo volar), e os flexores são interposição rara.
 armadilha: Braquiorradial: entra no capítulo como força deformante em pronação, não como tecido interposto.
-alerta: No TEPOP 2024 (pediatria-0944), o gabarito oficial é C, periósteo volar íntegro e dorsal rompido, para a baioneta de ápice volar. O capítulo diz o contrário para esse padrão: na baioneta dorsal (ápice volar, o padrão comum) o periósteo dorsal fica íntegro e o volar se rompe (figura 8-9), o que corresponde à alternativa B; a combinação C é a da baioneta volar (ápice dorsal, figura 8-2).
+alerta: No TEPOP 2024 (pediatria-0944), o gabarito oficial é C, periósteo volar íntegro e dorsal rompido, para a baioneta de ápice volar. O capítulo diz o contrário para esse padrão: na baioneta dorsal (ápice volar, o padrão comum) o periósteo dorsal fica íntegro e o volar se rompe (figura 8-9), o que corresponde à alternativa B; a combinação C é a da baioneta volar (ápice dorsal, figura 8-2). A 10ª edição (capítulo 9, redução fechada das fraturas metafisárias desviadas) mantém o periósteo dorsal espesso e íntegro na baioneta comum, relaxado pela hiperextensão na manobra.
 alerta: No TARO 2022 (pediatria-0574), o gabarito oficial é B, tendões flexores. Para o capítulo, na baioneta reversa (volar) a extremidade distal do fragmento proximal atravessa com frequência os tendões extensores (figura 8-2), o que corresponde à alternativa C. Os flexores ficam do lado volar, que é o lado do periósteo íntegro nesse padrão.
 !fim
 
@@ -221,8 +221,8 @@ O objetivo do tratamento é a consolidação dentro de parâmetros aceitáveis, 
 
 Fratura em criança muito nova, junto da fise distal do rádio, com angulação **sagital**, tem a maior capacidade de remodelação. A remodelação se faz por crescimento fisário assimétrico (figura 8-24, com correção anatômica em 5 meses). Os números que o capítulo junta:
 
-- **sagital:** de 10 a 35 graus aceitos abaixo de 5 anos e de 10 a 25 graus abaixo de 10 anos; em geral, **10 a 30 graus** sagitais, **10 a 15 graus** radioulnares e até a **baioneta completa** remodelam na criança mais nova com **pelo menos 2 anos de crescimento**;
-- **frontal:** a fratura tende a desviar para radial com ápice ulnar; remodela, mas menos; a maioria aceita **10 graus ou menos**, porque mais que isso pode não remodelar e limitar a rotação;
+- **sagital:** na 10ª edição (capítulo 9, tratamento não cirúrgico), aceitam-se **25 a 35 graus** abaixo de **5 anos** e **15 a 25 graus** abaixo de **10 anos** na fratura metafisária aguda; em geral, **10 a 30 graus** sagitais, **10 a 20 graus** coronais e até a **baioneta completa** remodelam na criança mais nova com **pelo menos 2 anos de crescimento** (a 9ª edição dava 10 a 35 e 10 a 25 graus sagitais e 10 a 15 graus radioulnares);
+- **frontal:** a fratura tende a desviar para radial com ápice ulnar; remodela, mas menos; a maioria aceita **10 graus ou menos**, porque mais que isso pode não remodelar e limitar a rotação; LYNCH contestou esse limite (remodelação coronal de 2,3 graus por mês abaixo de 12 anos, aceitando até **24 graus**);
 - **malrotação: não remodela**;
 - **articular:** degrau acima de **2 mm** não se aceita.
 
@@ -274,7 +274,7 @@ Foi descrita também uma técnica com o membro inferior do cirurgião ajudando a
 
 BOHM (102 crianças acima de 4 anos) e WEBB (103) randomizaram gesso curto e longo depois da redução: **mesma taxa de perda de redução**; com o curto, menos dias de escola perdidos e menos ajuda nas atividades diárias. Uma metanálise com mais de 300 crianças confirmou. Mais importante que o tamanho é o **molde no foco**: três pontos e molde interósseo.
 
-O **índice do gesso** é a razão entre o diâmetro interno do gesso **no perfil** e **no AP**, no nível da fratura (figura 8-29A); **0,7 ou menos** indica gesso bem moldado (CHESS: "o gesso do antebraço deve ser chato, não redondo"). Há também os índices de três pontos, de espaço, de acolchoamento e de CANTERBURY e o ângulo segundo metacarpo e rádio distal; o índice do gesso é o mais usado, e alguns preferem o de três pontos para prever o redesvio.
+O **índice do gesso** é a razão entre o diâmetro interno do gesso **no perfil** e **no AP**, no nível da fratura (figura 8-29A); **0,7 ou menos** indica gesso bem moldado (CHESS: "o gesso do antebraço deve ser chato, não redondo"). Há também os índices de três pontos, de espaço, de acolchoamento e de CANTERBURY e o ângulo segundo metacarpo e rádio distal; o índice do gesso é o mais usado, e alguns preferem o de três pontos para prever o redesvio. Na 10ª edição, o índice de 0,7 não aparece na técnica do gesso: fica na seção de controvérsias (imobilização), com CHESS, e nos resumos de pontos-chave, como o método mais útil de graduar o molde.
 
 !figura 8-29
 Avaliação radiográfica do molde. A: índice do gesso (x/y), razão entre o diâmetro interno do gesso no foco no perfil (x) e no AP (y). B: índice de três pontos, soma dos três espaços críticos dividida pela área de contato dos fragmentos, no AP e no perfil.
@@ -325,7 +325,7 @@ Com o rádio parado, a ulna cresce: **incongruência da radioulnar distal, impac
 
 ## Parada do crescimento da ulna
 
-É **frequente**: **10% a 55%** (GOLZ; 10% em 18 casos dele), **55%** no equivalente de Galeazzi. A **complicação mais comum da fratura fisária da ulna distal é a parada do crescimento**, e não se sabe por que ela para mais que o rádio. Na criança pequena, o rádio continua crescendo, arqueia, a superfície articular se inclina para a ulna curta, a ulna perde a incisura sigmoide e entalha a metáfise do rádio, com dor e limitação da rotação (figura 8-59). A ressecção da barra na ulna geralmente falha; a **epifisiodese do rádio** evita a deformidade, em geral perto do fim do crescimento. Na deformidade estabelecida: hemiepifisiodese do rádio, osteotomia de cunha de fechamento do rádio, **alongamento da ulna** (figura 8-59B) e reconstrução da radioulnar distal, com parada completa da fise radial se ela ainda tiver muito crescimento.
+É **frequente**: **10% a 55%** dos pacientes, números que o próprio capítulo considera pouco precisos pelas séries pequenas; GOLZ descreveu **18** fraturas fisárias da ulna distal, com parada em **55%**. A **complicação mais comum da fratura fisária da ulna distal é a parada do crescimento**, e não se sabe por que ela para mais que o rádio. Na criança pequena, o rádio continua crescendo, arqueia, a superfície articular se inclina para a ulna curta, a ulna perde a incisura sigmoide e entalha a metáfise do rádio, com dor e limitação da rotação (figura 8-59). A ressecção da barra na ulna geralmente falha; a **epifisiodese do rádio** evita a deformidade, em geral perto do fim do crescimento. Na deformidade estabelecida: hemiepifisiodese do rádio, osteotomia de cunha de fechamento do rádio, **alongamento da ulna** (figura 8-59B) e reconstrução da radioulnar distal, com parada completa da fise radial se ela ainda tiver muito crescimento.
 
 !questoes relacionadas=pediatria-0750 treino=pediatria-0978,pediatria-0979
 conceito: A fise distal do rádio é reduzida de forma atraumática antes de 7 dias; depois disso não se força nova redução, porque a remodelação é provável e a manipulação tardia arrisca a parada. A parada é de cerca de 4% no rádio e de 10% a 55% na ulna.
@@ -409,7 +409,9 @@ Mais de **50%** das fraturas fisárias do rádio distal têm fratura da ulna ass
 
 **Fibrocartilagem triangular.** As lesões periféricas traumáticas devem ser reparadas. A **pseudartrose da base do estiloide** muitas vezes indica lesão **periférica**; a pseudartrose sintomática é ressecada e a fibrocartilagem reinserida na base, com gesso axilopalmar por 4 semanas e antebraquiopalmar por mais 2. Sem pseudartrose, a artroscopia define a lesão.
 
-!tabela Lesões da fibrocartilagem triangular na criança
+Na 10ª edição, a maioria das lesões da fibrocartilagem da criança vem depois de fratura do rádio e da ulna distais; os padrões mais comuns são PALMER **1B** (cerca de **50%**) e **1D** (cerca de **20%**), com bom alívio da dor e boa função na maioria depois do tratamento. A ordem de frequência por local continua no texto; a tabela abaixo é da 9ª edição.
+
+!tabela Lesões da fibrocartilagem triangular na criança (9ª edição)
 | Lesão | Frequência | Tratamento |
 | --- | --- | --- |
 | **Periférica** | **a mais comum** | reparo artroscópico de fora para dentro |

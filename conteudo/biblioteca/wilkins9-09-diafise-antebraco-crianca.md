@@ -1,6 +1,6 @@
 ---
 id: wilkins9-09-diafise-antebraco-crianca
-versao: 4
+versao: 5
 titulo: Fraturas da diáfise do rádio e da ulna na criança
 especialidade: pediatria
 acesso: gratis
@@ -205,10 +205,12 @@ DAVIDSON propôs o jogo **pedra, papel e tesoura** (figura 9-4):
 | --- | --- | --- |
 | **Pedra** (punho cerrado em pronação) | Mediano | Pronador redondo, flexor profundo, flexor longo do polegar |
 | **Papel** (dedos e punho estendidos) | Radial | Extensor comum dos dedos, extensores radiais do carpo |
-| **Tesoura** (anular e mínimo fletidos, polegar aduzido, abrir indicador e anular) | Ulnar | Intrínsecos |
+| **Tesoura** (anular e mínimo fletidos, polegar aduzido, dois dedos abertos em V) | Ulnar | Intrínsecos |
 | **Sinal de OK** | **Interósseo anterior** | Flexor profundo do indicador, flexor longo do polegar, pronador quadrado |
 | Extensão completa das metacarpofalângicas e interfalângicas | Interósseo posterior | Extensores dos dedos e do polegar, extensor ulnar do carpo, abdutor longo do polegar |
 !fim
+
+Na tesoura, o texto do livro fala em afastar indicador e anular, mas a foto da figura 10-4 da 10ª edição mostra **indicador e médio** abertos em V. O que o gesto testa é a abertura dos dedos pelos intrínsecos, inervados pelo ulnar, e não a escolha do par de dedos.
 
 O interósseo posterior é difícil de testar quando o gesso cobre parte dos dedos. A maioria das lesões associadas é **neuropraxia** verdadeira, que se resolve em dias a semanas; a lesão presente na chegada precisa ser diferenciada da causada pelo tratamento.
 
@@ -397,7 +399,7 @@ armadilha: Haste grossa: encarcera, distrai o foco e reduz o calo; a consequênc
 
 **Ulna:** a preferida é **proximal**, logo distal à apófise do olécrano, na borda lateral da metáfise, atravessando fibras do **ancôneo** (entrada de Nancy): poupa a fise e evita a bursite dolorosa das hastes pela ponta do olécrano. Os autores entram cerca de **3 cm distal à ponta do olécrano**, uns **4 mm lateral** à crista posterior, sem passar de **5 mm anterior** à crista subcutânea (para não invadir a radioulnar proximal), com sovela em vez de broca. Há também entrada distal, acima da fise, entre o extensor e o flexor ulnar do carpo, protegendo o ramo cutâneo dorsal do ulnar.
 
-**Sequência.** Com os dois ossos, os autores fixam **primeiro o rádio**, porque é mais difícil de passar a haste e sempre mais difícil de abrir; fixar a ulna antes limita a mobilidade do antebraço e pode forçar uma redução aberta do rádio, bem mais arriscada. A haste do rádio é avançada só **1 cm além do foco** ("empoleirada") enquanto se passa a da ulna. Quando se fixa **um osso só**, em geral é a **ulna**, pela entrada benigna, posição subcutânea e canal reto; a fixação de um osso só exige boa redução dos dois. Hastes de **2 a 2,5 mm**, sem dobrar demais a ponta. Se a haste trava, a ponta abriu um sulco (rod rut): recuar 5 mm, girar e avançar. Se não cruza o foco, girar 90 a 180 graus e tentar de novo, ou usar um **fio de Kirschner de 2 mm como calçadeira** (shoehorn) para alavancar as pontas (figura 9-32). Se ainda assim não passar, **redução aberta limitada**: pelo menos 2 cm de incisão (o dobro no rádio), pela via **volar de HENRY**, protegendo o interósseo posterior.
+**Sequência.** Com os dois ossos, os autores fixam **primeiro o rádio**, porque é mais difícil de passar a haste e sempre mais difícil de abrir; fixar a ulna antes limita a mobilidade do antebraço e pode forçar uma redução aberta do rádio, bem mais arriscada. A haste do rádio é avançada só **1 cm além do foco** ("empoleirada") enquanto se passa a da ulna. Quando se fixa **um osso só**, em geral é a **ulna**, pela entrada benigna, posição subcutânea e canal reto; a fixação de um osso só exige boa redução dos dois. Hastes de **2 a 2,5 mm**, sem dobrar demais a ponta. Se a haste trava, a ponta abriu um sulco (rod rut): recuar 5 mm, girar e avançar. Se não cruza o foco, girar 90 a 180 graus e tentar de novo, ou usar um **fio de Kirschner de 2 mm como calçadeira** (shoehorn) para alavancar as pontas (figura 9-32). Se ainda assim não passar, **redução aberta limitada**: no texto, pelo menos 2 cm de incisão (o dobro no rádio); no quadro de passos cirúrgicos dos autores (Key Surgical Steps da 10ª edição), incisão de **3 a 4 cm**, com as pontas seguras por pinças de redução enquanto o auxiliar passa a haste. A via é a **volar de HENRY**, protegendo o interósseo posterior.
 
 !tabela Haste elástica: armadilhas e prevenção (quadro do capítulo)
 | Armadilha | Prevenção |
@@ -459,7 +461,7 @@ A avaliação considera os limites de redução e o potencial de remodelação: 
 
 ## Sinostose radioulnar
 
-A sinostose pós-traumática tira **toda a rotação**. Na criança é **rara** (no adulto, algumas séries relatam 6% a 9%), e a maioria é do **tipo II de VINCE e MILLER**, a ponte **diafisária** (figura 9-38). Fatores de risco na criança: **alta energia**, fraturas do **colo do rádio**, fraturas **operadas** (a sinostose pós-operatória associa-se **quase exclusivamente à placa**) e **incisão única** para os dois ossos; talvez predisposição familiar. A forma óssea é mais comum que a não óssea. Depois de **amadurecer (6 a 12 meses)**, pode ser ressecada com o tecido interposto, com interposição de material inerte (Gore-Tex, cera de osso) ou retalho vascularizado; os resultados parecem melhores no adulto (o periósteo da criança é mais ativo), e sinostoses completas evoluem pior que as com alguma lucência na tomografia. Anti-inflamatório e radioterapia não têm papel definido na criança. Se o antebraço ficou preso em **pronação ou supinação extremas**, a opção é a **osteotomia**; em **neutro**, em geral não se opera.
+A sinostose pós-traumática tira **toda a rotação**. Na criança é **rara** (no adulto, algumas séries relatam 6% a 9%), e a maioria é do **tipo II de VINCE e MILLER**, a ponte **diafisária** (figura 9-38). Fatores de risco na criança: **alta energia**, fraturas do **colo do rádio**, fraturas **operadas** (na 9ª edição, a sinostose pós-operatória associava-se "quase exclusivamente" à placa; a 10ª edição, cap. 10, seção Cross-Union/Synostosis in Diaphyseal Radius and Ulna Fractures, suavizou para **mais frequentemente à placa**) e **incisão única** para os dois ossos; talvez predisposição familiar. O Campbell 15 (cap. 38, seção Proximal Third Forearm Fractures) diverge quanto ao nível: a sinostose pode surgir em fratura de qualquer altura do antebraço, mas é **mais comum nas do terço proximal**, e os fatores de risco que ele lista são lesão inicial grave, fraturas desviadas no mesmo nível, tratamento cirúrgico e ressecção da cabeça do rádio. A forma óssea é mais comum que a não óssea. Depois de **amadurecer (6 a 12 meses)**, pode ser ressecada com o tecido interposto, com interposição de material inerte (Gore-Tex, cera de osso) ou retalho vascularizado; os resultados parecem melhores no adulto (o periósteo da criança é mais ativo), e sinostoses completas evoluem pior que as com alguma lucência na tomografia. Anti-inflamatório e radioterapia não têm papel definido na criança. Se o antebraço ficou preso em **pronação ou supinação extremas**, a opção é a **osteotomia**; em **neutro**, em geral não se opera.
 
 !questoes relacionadas=pediatria-0664 treino=pediatria-0971
 conceito: A sinostose pós-traumática na criança é rara, em geral diafisária (tipo II de VINCE e MILLER), ligada a alta energia, colo do rádio e cirurgia, sobretudo placa e incisão única; ressecção só depois de 6 a 12 meses.

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-49-fratura-toracolombar
-versao: 5
+versao: 6
 titulo: Fraturas e luxações da coluna toracolombar
 especialidade: coluna
 acesso: gratis
@@ -61,7 +61,7 @@ Fluxograma do Harborview para o manejo hemodinâmico da lesão medular traumáti
 
 O **choque medular** é neurológico, não hemodinâmico: logo depois da lesão, toda a atividade reflexa abaixo do nível some, inclusive os reflexos que dependem só de arcos locais. Enquanto ele dura, uma medula parcialmente viva fica silenciosa e **não dá para classificar a lesão como completa ou incompleta**.
 
-Quanto ele dura, este capítulo não diz, e os livros divergem. O CAMPBELL 15 (cap. 48, p. 1875) diz que o choque medular costuma se resolver em **24 a 48 horas**, mesmo nas lesões graves, mas pode persistir por semanas ou, raramente, meses. O próprio Rockwood, no capítulo 47 (p. 1888), diz que o fim do choque, marcado pela volta dos reflexos abaixo da lesão, acontece em geral **entre 48 horas e 2 semanas**.
+Quanto ele dura, este capítulo não diz, e os livros divergem. O CAMPBELL 15 (cap. 48, p. 1875) diz que o choque medular costuma se resolver em **24 a 48 horas**, mesmo nas lesões graves, mas pode persistir por semanas ou, raramente, meses. O próprio Rockwood, no capítulo 47 (seção Secondary Survey), diz que o fim do choque, marcado pela volta dos reflexos abaixo da lesão, acontece em geral **entre 48 horas e 2 semanas**.
 
 O marcador que o capítulo manda pesquisar, e que ele chama de crítico, é o **reflexo bulbocavernoso**, um reflexo sacral cuja resposta é a contração do esfíncter anal. **Ausente**, sugere que o paciente ainda está em choque medular; **presente**, indica que o choque acabou e que a ausência de função abaixo do nível passa a ter valor. O capítulo acrescenta que um bulbocavernoso **hiperativo** provavelmente representa lesão medular completa: o arco sacral voltou a funcionar, mas nada desce de cima para modulá-lo. E lembra duas exceções úteis: o reflexo costuma **demorar** nas lesões do **cone medular** e da **cauda equina**, porque nelas o próprio arco reflexo foi atingido; e o **priapismo** é um sinal ominoso de lesão aguda completa. Os reflexos tendinosos ajudam a separar lesão medular de lesão de raiz, mas a hiper-reflexia costuma não aparecer na fase aguda.
 
@@ -70,7 +70,7 @@ conceito: A presença do reflexo bulbocavernoso marca o fim do choque medular; s
 como: O TARO 2011 perguntou o que significa o reflexo positivo e ofereceu prognósticos motores e sensitivos; a prova de R4 de Coluna da SES-DF de 2024 pediu qual reflexo pesquisar e qual reflexo indica o fim do choque, com cremastérico, cutâneo abdominal, patelar e plantar como distratores. O TEOT 2022 e a mesma prova da SES-DF pediram a duração do choque medular.
 armadilha: "Bom prognóstico motor ou sensitivo": o reflexo diz que o choque acabou, não que a lesão é boa; uma lesão completa também recupera o bulbocavernoso.
 armadilha: Reflexo patelar, cremastérico ou cutâneo plantar: não são os marcadores usados para o fim do choque medular.
-alerta: O capítulo 49 não informa quanto tempo dura o choque medular. O gabarito oficial do TEOT 2022 e o da prova da SES-DF de 2024 foram 24 a 48 horas, que é o número do CAMPBELL 15 (p. 1875); o Rockwood, no capítulo 47 (p. 1888), dá 48 horas a 2 semanas. Na prova, fique com 24 a 48 horas.
+alerta: O capítulo 49 não informa quanto tempo dura o choque medular. O gabarito oficial do TEOT 2022 e o da prova da SES-DF de 2024 foram 24 a 48 horas, que é o número do CAMPBELL 15 (p. 1875); o Rockwood, no capítulo 47 (seção Secondary Survey), dá 48 horas a 2 semanas. Na prova, fique com 24 a 48 horas.
 !fim
 
 ## Preservação sacral e a escala da ASIA

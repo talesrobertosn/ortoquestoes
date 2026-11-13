@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-17-fise-distal-umero
-versao: 2
+versao: 3
 titulo: Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 18 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures
 autores: Oduche Igboechi e Joshua M. Abzug (10ª edição); Michael Glotzbecker (9ª edição)
-fonte: Escrito com o capítulo 17 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 18 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 9ª edição.
+fonte: Escrito com o capítulo 17 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 18 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 10ª edição.
 subtemas: ;
 resumo: Lactente com rádio e ulna em bloco para posteromedial e capítulo alinhado ao rádio, maus-tratos em até metade abaixo dos 2 anos, DELEE, ultrassonografia, pronação e dois fios laterais, cúbito varo; côndilo medial em espelho do lateral (SALTER-HARRIS IV, KILFOYLE, pseudartrose em varo); osteonecrose da tróclea tipos A e B; epicôndilo lateral só operado se encarcerado.
 ---
@@ -33,14 +33,14 @@ Entre 1960 e 1978, a separação de toda a fise distal do úmero apareceu em rel
 
 ## A anatomia que explica a lesão
 
-- **A fise do bebê fica alta.** No lactente, a linha fisária está mais proximal, perto do centro da fossa do olécrano (figura 17-6). Uma hiperextensão nessa idade tende a separar a fise em vez de produzir uma supracondiliana óssea.
+- **A fise do bebê fica alta.** No lactente, a linha fisária está mais proximal, perto do centro da fossa do olécrano (figura 18-7). Uma hiperextensão nessa idade tende a separar a fise em vez de produzir uma supracondiliana óssea.
 - **A epífise leva o epicôndilo medial.** A epífise distal se estende até incluir o centro secundário do epicôndilo medial até cerca de **6 a 7 anos nas meninas** e **8 a 9 anos nos meninos**. Até essa idade, a fratura de toda a linha fisária inclui o epicôndilo medial; depois, só as fises dos côndilos.
 - **Superfícies largas.** Como o traço é distal, as superfícies de fratura são mais largas que as da supracondiliana, o que ajuda a evitar a inclinação do fragmento.
 - **Traço extra-articular.** O traço não atinge a superfície articular; por isso, mesmo com consolidação viciosa, é improvável haver incongruência e perda de movimento.
 - **A tróclea depende de vasos que atravessam a fise.** Parte do sangue da crista medial da tróclea passa diretamente pela fise; essa irrigação é vulnerável e pode necrosar a tróclea (ver a seção da osteonecrose).
 
-!figura 17-6
-A: aos 5 meses, a metáfise avançou só até as cristas supracondilianas. B: aos 4 anos, a borda da metáfise já entrou bem na área dos epicôndilos.
+!figura 18-7
+A: com 1 ano, a metáfise avançou só até as cristas supracondilianas. B: aos 4 anos, a borda da metáfise já entrou bem na área dos epicôndilos.
 !fim
 
 ## Mecanismo
@@ -61,7 +61,7 @@ Num lactente com **menos de 18 meses** e cotovelo edemaciado por trauma, conheci
 
 Sem o núcleo do côndilo lateral ossificado, a única relação visível é a dos **centros primários do úmero distal com o rádio e a ulna proximais**. O rádio e a ulna mantêm a relação entre si, mas se deslocam juntos, em geral **para posterior e medial** em relação à metáfise. Em teoria o fragmento pode ir para qualquer lado, mas quase todos os casos publicados desviaram para **posteromedial**: numa série de 16 pacientes, desvio medial em 94% e posterior do rádio e da ulna em 38%; numa revisão de 33 casos, posteromedial em 64%. **Radiografias comparativas** do cotovelo normal ajudam a perceber o desvio medial. O **coxim gorduroso posterior** costuma estar presente, e o anterior, não. Radiografias do membro inteiro, sem centrar no cotovelo, levam ao erro, e 10 dos 16 pacientes daquela série nem tinham um perfil verdadeiro.
 
-!figura 17-1
+!figura 18-1
 Classificação de DELEE. A: grupo A, lactente com cotovelo edemaciado após parto difícil; o desvio medial do rádio e da ulna proximais ajuda a fazer o diagnóstico. B: cotovelo normal para comparação. C: grupo B, desvio posteromedial do fragmento distal, com a relação entre o núcleo do côndilo lateral e o rádio mantida. D e E: grupo C, desvio medial acentuado e desvio posterior no perfil, com grande fragmento metafisário.
 !fim
 
@@ -71,7 +71,7 @@ Classificação de DELEE. A: grupo A, lactente com cotovelo edemaciado após par
 |---|---|---|---|
 | Descolamento epifisário total | quase sempre **posteromedial** | relação **mantida** | o capítulo vai junto com o antebraço |
 | Luxação do cotovelo | quase sempre **posterolateral** | relação **rompida** | é rara na idade de pico do descolamento |
-| Fratura do côndilo lateral | pode desviar levemente para lateral; posterolateral se a crista lateral da tróclea for atingida | pode se romper (ou continuar normal) | figura 17-2: o côndilo lateral perde a relação com o rádio |
+| Fratura do côndilo lateral | pode desviar levemente para lateral; posterolateral se a crista lateral da tróclea for atingida | pode se romper (ou continuar normal) | figura 18-3: o côndilo lateral perde a relação com o rádio |
 | Supracondiliana baixa | posterior | mantida | contorno distal irregular do fragmento; no descolamento grupo C, o contorno da metáfise é liso |
 
 Depois que o núcleo do côndilo lateral ossifica, o desvio da epífise inteira fica evidente. Antes disso, oblíquas ou imagem avançada podem ser necessárias. DE JAGER e HOFFMAN, em 12 descolamentos, tinham diagnosticado de início três como fraturas do côndilo lateral e um como luxação do cotovelo.
@@ -85,10 +85,10 @@ armadilha: Pronação dolorosa: ocorre na mesma faixa etária, mas não dá edem
 
 ## Ultrassonografia, artrografia e ressonância
 
-Quando não se sabe se o traço é intra-articular, a **artrografia** ou a **ressonância** ajudam (figura 17-3). No recém-nascido e no lactente em que a ossificação não começou, a **ultrassonografia** identifica a epífise desviada (figura 17-4). Na série em que a radiografia deixou passar 56% das lesões, a ultrassonografia foi feita em 12 pacientes e **fez o diagnóstico em todos**. Se o diagnóstico atrasa, o periósteo descolado forma **osso novo em volta do úmero distal**, visível nas radiografias seguintes (figura 17-5, cerca de 3 semanas depois), e a epífise pode ficar desviada para posterior e medial.
+Quando não se sabe se o traço é intra-articular, a **artrografia** ou a **ressonância** ajudam (figura 18-4). No recém-nascido e no lactente em que a ossificação não começou, a **ultrassonografia** identifica a epífise desviada (figura 18-5). Na série em que a radiografia deixou passar 56% das lesões, a ultrassonografia foi feita em 12 pacientes e **fez o diagnóstico em todos**. Se o diagnóstico atrasa, o periósteo descolado forma **osso novo em volta do úmero distal**, visível nas radiografias seguintes (figura 18-6, cerca de 3 semanas depois), e a epífise pode ficar desviada para posterior e medial.
 
-!figura 17-4
-Ultrassonografia sagital mostrando o desvio posterior da epífise distal do úmero.
+!figura 18-5
+Ultrassonografia mostrando a epífise distal do úmero desviada (C: capítulo; H: úmero).
 !fim
 
 ## A classificação de DELEE
@@ -159,18 +159,18 @@ Na maioria dos lactentes e crianças pequenas com fratura desviada, a imobiliza�
 
 **Pós-operatório.** Gesso ou tala por **3 semanas**; então se retiram o gesso e os fios no consultório, sem nova imobilização, com movimento ativo. Segue-se o paciente até o arco completo e até haver sinais de crescimento normal da fise e da epífise.
 
-!figura 17-8
-A: criança de 20 meses com desvio medial do fragmento distal. B e C: o desvio medial e posterior do fragmento condilar fica mais claro após a artrografia. D: fixação com dois fios laterais percutâneos.
+!figura 18-10
+Criança de 3 anos com descolamento transfisário do úmero distal após queda da cama. A e B: AP e tentativa de perfil antes da cirurgia. C e D: radioscopia em AP e perfil depois da redução fechada e da fixação percutânea com artrografia.
 !fim
 
 ## O caso atrasado: não manipular
 
-Se a fratura é antiga (**mais de 5 a 6 dias**) e a epífise **já não se move**, não se deve tentar a manipulação: tala para conforto. Na preferência do autor, com atraso de **mais de 3 a 5 dias** e epífise sem mobilidade livre, imobilização simples; é melhor tratar a deformidade depois com **osteotomia supracondiliana** que arriscar lesão fisária ou **osteonecrose da epífise** com manipulação tardia ou redução aberta. Muitas fraturas praticamente sem tratamento **remodelam por completo** quando o fragmento está só transladado para medial, sem inclinação (figura 17-7: desvio medial não reconhecido aos 2 anos, quase totalmente remodelado 4 anos depois, sem diferença clínica). Só às vezes a deformidade exige correção, e, como a superfície articular está intacta, espera-se recuperação funcional completa.
+Se a fratura é antiga (**mais de 5 a 6 dias**, na seção de tratamento) e a epífise **já não se move**, não se deve tentar a manipulação: tala para conforto. Na preferência dos autores da 10ª edição (algoritmo 18-1), com atraso de **mais de 5 a 7 dias** e epífise sem mobilidade livre, imobilização simples em tala ou gesso, e o resumo do capítulo repete a regra: evitar a manipulação tardia (**depois de 5 a 7 dias**) pelo risco de osteonecrose, lesão fisária e distúrbio do crescimento. A 9ª edição dava, na preferência do autor, **mais de 3 a 5 dias**; vale o número da 10ª. Em qualquer caso, é melhor tratar a deformidade depois com **osteotomia supracondiliana** que arriscar lesão fisária ou **osteonecrose da epífise** com manipulação tardia ou redução aberta. Muitas fraturas praticamente sem tratamento **remodelam por completo** quando o fragmento está só transladado para medial, sem inclinação (figura 18-9: desvio medial não reconhecido aos 2 anos, quase totalmente remodelado 4 anos depois, sem diferença clínica). Só às vezes a deformidade exige correção, e, como a superfície articular está intacta, espera-se recuperação funcional completa.
 
 A redução aberta foi relatada sobretudo por erro diagnóstico (a lesão tomada por côndilo lateral). MIZUNO defendeu a redução aberta primária, por via posterior com desinserção do tríceps do olécrano, por maus resultados com a redução fechada; não é a regra do capítulo.
 
 !questoes treino=pediatria-1012,pediatria-1013
-conceito: Fratura aguda desviada: redução sob anestesia corrigindo o medial em extensão, flexão com pronação e dois fios laterais, conferindo com artrografia; fratura com mais de 5 a 6 dias e epífise presa: tala para conforto e, se sobrar deformidade, osteotomia supracondiliana depois.
+conceito: Fratura aguda desviada: redução sob anestesia corrigindo o medial em extensão, flexão com pronação e dois fios laterais, conferindo com artrografia; fratura com mais de 5 a 7 dias e epífise presa: tala para conforto e, se sobrar deformidade, osteotomia supracondiliana depois.
 como: Ponto ainda não cobrado de forma direta; a pronação na redução do desvio posteromedial é fato carimbado da supracondiliana, e este capítulo aplica a mesma manobra ao descolamento.
 armadilha: Fio medial percutâneo às cegas: o epicôndilo medial não é palpável no cotovelo edemaciado do bebê, e o nervo ulnar fica em risco.
 armadilha: Manipular ou abrir a fratura atrasada: arrisca parada do crescimento e osteonecrose da epífise.
@@ -180,7 +180,7 @@ armadilha: Manipular ou abrir a fratura atrasada: arrisca parada do crescimento 
 
 O capítulo lista, em ordem: **consolidação viciosa em cúbito varo**, lesões **neurovasculares** (raras) e **osteonecrose** do côndilo lateral ou da epífise troclear (rara).
 
-**Cúbito varo.** Pode ser importante (figura 17-7C). Como as superfícies de fratura são **mais largas** que na supracondiliana, o fragmento distal **inclina menos**, o que parece explicar a menor incidência ou gravidade do varo em comparação com a supracondiliana não tratada. Mesmo assim, recomendam-se redução e fixação percutânea nas fraturas agudas desviadas. OH e colaboradores tiveram 7 de 12 com varo residual, e seis desses sete tinham defeito parcial do côndilo medial por necrose. Quando a remodelação não basta, faz-se a osteotomia supracondiliana tardia.
+**Cúbito varo.** Pode ser importante. Como as superfícies de fratura são **mais largas** que na supracondiliana, o fragmento distal **inclina menos**, o que parece explicar a menor incidência ou gravidade do varo em comparação com a supracondiliana não tratada. Mesmo assim, recomendam-se redução e fixação percutânea nas fraturas agudas desviadas. OH e colaboradores tiveram 7 de 12 com varo residual, e seis desses sete tinham defeito parcial do côndilo medial por necrose. Quando a remodelação não basta, faz-se a osteotomia supracondiliana tardia.
 
 **Por que a lesão neurovascular é rara.** Os fragmentos são cobertos por cartilagem fisária e **não têm bordas afiadas**; costumam desviar **menos** que na supracondiliana; e o desvio é **posteromedial**, não posterolateral, que é o que estira o nervo mediano e a artéria braquial.
 
@@ -204,14 +204,14 @@ armadilha: Transpor para o descolamento o risco do mediano e da artéria braquia
 
 ## Por que a tróclea necrosa: a irrigação de HARALDSSON
 
-Os estudos clássicos de HARALDSSON mostraram que a **crista medial da tróclea tem duas fontes de sangue separadas**, **sem anastomose** entre si nem com os vasos da metáfise (figura 17-26). No lactente, os vasos são pequenos e correm na superfície do pericôndrio.
+Os estudos clássicos de HARALDSSON mostraram que a **crista medial da tróclea tem duas fontes de sangue separadas**, **sem anastomose** entre si nem com os vasos da metáfise (figura 18-29). No lactente, os vasos são pequenos e correm na superfície do pericôndrio.
 
 - **Vasos laterais:** irrigam o **ápice da tróclea e a porção lateral da crista medial**. Cruzam a fise e entram pela **face posterior** do núcleo lateral da tróclea; seus ramos terminais ficam logo abaixo da superfície articular. São vulneráveis quando o traço passa por ali, como nas fraturas do **côndilo medial**, do **côndilo lateral** e em **T**, e também na supracondiliana com traço **muito distal** e no **descolamento total**, que podem romper esses vasos na superfície da metáfise ou na entrada da fise.
 - **Vasos mediais:** entram pela superfície **não articular** da tróclea e irrigam a parte mais medial da crista medial.
 
 Os centros de ossificação precisam de sangue para aparecer e crescer. Antes de surgirem, os vasos são superficiais e mal definidos, e uma lesão neles provavelmente só **atrasa o aparecimento** do núcleo. Na criança maior, com núcleo formado, a interrupção causa **necrose óssea verdadeira** de um ou dos dois centros, com falta parcial ou total de ossificação posterior e **hipoplasia central ou de toda a porção medial** da tróclea.
 
-!figura 17-26
+!figura 18-29
 Irrigação da tróclea. A: vasculatura intraóssea num menino de 3 anos; apenas dois pequenos vasos irrigam a crista medial, e a parte central parece avascular. B e D: vistas laterais pela crista medial, com os vasos penetrando a fise por trás. C: não há anastomose entre os vasos mediais e laterais. E: persistência de dois centros de ossificação separados da crista medial num menino de 12 anos.
 !fim
 
@@ -226,11 +226,11 @@ TONIOLO e WILKINS reuniram 30 casos em 20 anos e sugeriram que a osteonecrose da
 | **A, rabo de peixe** | só a **porção lateral da crista medial** (ápice da tróclea): defeito central | **supracondiliana muito distal** e **côndilo lateral** | é o padrão mais comum; em geral **sem deformidade angular**; sintomas proporcionais ao tamanho do defeito |
 | **B, varo maligno** | **toda a tróclea**, às vezes parte da metáfise (perda dos vasos medial e lateral) | **descolamento fisário total** e **côndilo medial** | **cúbito varo progressivo** com o crescimento, perda importante de movimento, artrose precoce |
 
-!figura 17-24
-Deformidade em rabo de peixe. A e B: tipo A, necrose só do centro lateral, com defeito no ápice do sulco troclear. C: rabo de peixe típico num menino de 14 anos com fratura supracondiliana distal sem desvio 5 anos antes.
+!figura 18-27
+Deformidade em rabo de peixe. A e B: tipo A, necrose só do centro lateral, com defeito no ápice do sulco troclear. C e D: rabo de peixe típico, em AP e perfil, num menino de 14 anos com fratura supracondiliana prévia.
 !fim
 
-!figura 17-25
+!figura 18-28
 Necrose de toda a tróclea. A: no tipo B, a perda dos vasos medial e lateral necrosa toda a crista medial e parte da metáfise. B: menino de 4 anos com fratura tipo II de toda a fise distal e grande fragmento metafisário medial. C: 5 meses depois, varo leve por redução incompleta, com desaparecimento da ossificação do fragmento metafisário medial.
 !fim
 
@@ -238,7 +238,7 @@ Necrose de toda a tróclea. A: no tipo B, a perda dos vasos medial e lateral nec
 
 No início, quase não há sintomas; eles costumam surgir **4 a 8 anos depois** do trauma. A tróclea ossifica entre **7 e 10 anos** e funde entre **12 e 17**, o que explica por que o diagnóstico raramente é feito logo após a fratura. Quando aparecem, os sintomas são **dor**, **perda de movimento** por incongruência e **bloqueio** por corpos livres e instabilidade. No tipo A, a gravidade acompanha o tamanho do defeito; no tipo B, o varo progride e piora estética e função com o crescimento, e a sequela mais comum nos casos graves é a **artrose precoce** com perda de movimento.
 
-Algumas crianças desenvolvem **neuropatia ulnar tardia**, atribuída a vários fatores: mau alinhamento articular, posição anormal do nervo ulnar e do tendão do tríceps, perda da proteção de um sulco ulnar profundo e o ângulo agudo de entrada entre as duas cabeças do flexor ulnar do carpo. Raramente, a criança se apresenta com uma nova fratura (figura 17-23: supracondiliana fixada aos 5 anos e fratura do côndilo medial aos 12).
+Algumas crianças desenvolvem **neuropatia ulnar tardia**, atribuída a vários fatores: mau alinhamento articular, posição anormal do nervo ulnar e do tendão do tríceps, perda da proteção de um sulco ulnar profundo e o ângulo agudo de entrada entre as duas cabeças do flexor ulnar do carpo. Raramente, a criança se apresenta com uma nova fratura (figura 18-26: supracondiliana fixada aos 5 anos e fratura do côndilo medial aos 12).
 
 Na radiografia, a perda de movimento associa-se à **subluxação da cabeça do rádio**; com a **migração proximal da ulna**, o coronoide bate na frente e o olécrano atrás. Ressonância ou tomografia caracterizam melhor a deformidade, a cartilagem, os corpos livres e a artrose.
 
@@ -264,12 +264,12 @@ A fratura do côndilo medial é a **imagem em espelho** da fratura do côndilo l
 
 ## Mecanismo
 
-- **Queda sobre a ponta do cotovelo fletido** (os pacientes de ASHURST): a borda afiada da **incisura semilunar do olécrano** racha a tróclea como uma cunha (figura 17-10A). Apoia essa ideia a fratura do côndilo medial em cotovelos com rabo de peixe prévio.
-- **Queda com o braço estendido** e punho em dorsiflexão: **avulsão em valgo** por forças ligamentares e musculares (figura 17-10B). FOWLES e KASSAB descreveram uma fratura em **galho verde do olécrano em valgo** associada, reforçando a avulsão em valgo.
+- **Queda sobre a ponta do cotovelo fletido** (os pacientes de ASHURST): a borda afiada da **incisura semilunar do olécrano** racha a tróclea como uma cunha (figura 18-12A). Apoia essa ideia a fratura do côndilo medial em cotovelos com rabo de peixe prévio.
+- **Queda com o braço estendido** e punho em dorsiflexão: **avulsão em valgo** por forças ligamentares e musculares (figura 18-12B). FOWLES e KASSAB descreveram uma fratura em **galho verde do olécrano em valgo** associada, reforçando a avulsão em valgo.
 
 Solto do úmero, o fragmento sofre **rotação sagital anterior** pela tração dos **flexores do antebraço**.
 
-**Lesões associadas.** Fratura em galho verde do olécrano e **luxação posterolateral verdadeira** do cotovelo (figura 17-11, menina de 10 anos com tipo III e luxação). Alguns autores acharam maus-tratos mais comuns nas crianças pequenas com essa fratura. Examinar antebraço, punho e mão e procurar outras fraturas no cotovelo.
+**Lesões associadas.** Fratura em galho verde do olécrano e **luxação posterolateral verdadeira** do cotovelo (figura 18-13, menina de 8 anos com tipo III e luxação). Alguns autores acharam maus-tratos mais comuns nas crianças pequenas com essa fratura. Examinar antebraço, punho e mão e procurar outras fraturas no cotovelo.
 
 !questoes relacionadas=pediatria-0611
 conceito: Um dos mecanismos da fratura do côndilo medial é a avulsão em valgo na queda com o braço estendido, e a fratura em galho verde do olécrano em valgo associada reforça esse mecanismo.
@@ -285,11 +285,13 @@ Clinicamente e na radiografia, a fratura do côndilo medial é confundida, acima
 |---|---|---|
 | Natureza | intra-articular | extra-articular |
 | Instabilidade | valgo **e varo** | valgo |
-| Coxim gorduroso | **positivo** (a lesão entrou na articulação) | em geral negativo |
+| Coxim gorduroso posterior | **positivo** (a lesão entrou na articulação) | em geral negativo; positivo se houve luxação ou subluxação do cotovelo, mesmo já reduzida espontaneamente |
 | Luxação associada | o cotovelo tende a **subluxar para posteromedial** | frequente, em geral **posterolateral** |
 | Radiografia | **qualquer ossificação metafisária** junto do epicôndilo é sinal de fratura do côndilo | só o epicôndilo; côndilo e epicôndilo muitas vezes desviam juntos no côndilo |
 
-Na criança maior, com grande fragmento metafisário, o diagnóstico é evidente (figura 17-12A). Na menor, em que só o epicôndilo está ossificado, a fratura do côndilo medial passa por fratura isolada do epicôndilo (figura 17-12: diagnóstico de epicôndilo aos 6 anos, dor persistente e ossificação metafisária visível 3 meses depois). As luxações do cotovelo são raras antes da ossificação do côndilo medial. Abaixo de **8 a 10 anos**, com equimose medial importante e dúvida sobre o traço, faça **artrografia ou ressonância** (figura 17-9: menina de 7 anos com suspeita de epicôndilo; a artrografia mostrou o componente intra-articular).
+O **coxim gorduroso posterior** positivo indica que a lesão entrou na articulação e torna provável a fratura do côndilo medial. A fratura isolada do epicôndilo medial é extra-articular e em geral não o tem, a não ser quando se associa a **luxação do cotovelo** ou a uma **subluxação ou luxação que se reduziu sozinha**: coxim posterior positivo com fragmento medial, portanto, não fecha o diagnóstico de côndilo; pense também na luxação reduzida.
+
+Na criança maior, com grande fragmento metafisário, o diagnóstico é evidente (figura 18-14A). Na menor, em que só o epicôndilo está ossificado, a fratura do côndilo medial passa por fratura isolada do epicôndilo (figura 18-14: diagnóstico de epicôndilo aos 6 anos, dor persistente e ossificação metafisária visível 3 meses depois). As luxações do cotovelo são raras antes da ossificação do côndilo medial. Abaixo de **8 a 10 anos**, com equimose medial importante e dúvida sobre o traço, faça **artrografia ou ressonância** (figura 18-11: menina de 7 anos com suspeita de epicôndilo; a artrografia mostrou o componente intra-articular).
 
 !questoes relacionadas=pediatria-0572,pediatria-0846,pediatria-0906 treino=pediatria-1015
 conceito: A fratura do epicôndilo medial é extra-articular e costuma acompanhar a luxação posterolateral do cotovelo; a do côndilo medial é intra-articular, dá coxim gorduroso positivo e instabilidade também em varo, e o cotovelo tende a subluxar para posteromedial.
@@ -311,9 +313,9 @@ armadilha: Tomar o fragmento ósseo medial de uma criança pequena por epicôndi
 
 Alguns autores modificam KILFOYLE em sem desvio (menos de 2 mm), desvio mínimo (2 a 4 mm) e desviada (mais de 4 mm). O tipo III (só 25%) é mais comum no adolescente; o tipo I, na criança menor.
 
-**SALTER-HARRIS IV.** Uma **fise comum** separa os núcleos dos côndilos lateral e medial e termina na **incisura da tróclea** (figura 17-14). A **crista lateral da tróclea** ossifica a partir da epífise do côndilo **lateral**; só a **crista medial** vem dos centros do côndilo medial. A fratura tem componentes intra e extra-articulares e se comporta como **SALTER-HARRIS IV**, em espelho do côndilo lateral. Mas, sem tratamento, não evolui com ponte fisária como o tipo IV clássico, e sim com **pseudartrose**, como no côndilo lateral, e a deformidade da pseudartrose medial é o **cúbito varo**, em vez do **cúbito valgo** da pseudartrose lateral.
+**SALTER-HARRIS IV.** Uma **fise comum** separa os núcleos dos côndilos lateral e medial e termina na **incisura da tróclea** (figura 18-16). A **crista lateral da tróclea** ossifica a partir da epífise do côndilo **lateral**; só a **crista medial** vem dos centros do côndilo medial. A fratura tem componentes intra e extra-articulares e se comporta como **SALTER-HARRIS IV**, em espelho do côndilo lateral. Mas, sem tratamento, não evolui com ponte fisária como o tipo IV clássico, e sim com **pseudartrose**, como no côndilo lateral, e a deformidade da pseudartrose medial é o **cúbito varo**, em vez do **cúbito valgo** da pseudartrose lateral.
 
-!figura 17-13
+!figura 18-15
 A: padrões da fratura do côndilo medial; no MILCH I o traço termina na incisura troclear, no MILCH II mais lateralmente, no sulco capitulotroclear. B: classificação de KILFOYLE; tipo I incompleto, que pode abrir em dobradiça sem violar a articulação; tipo II entra na articulação com menos de 2 mm; tipo III entra na articulação com angulação, rotação e desvio articular.
 !fim
 
@@ -326,7 +328,7 @@ alerta: O TARO 2006 (pediatria-0832) não tem gabarito oficial no acervo; este c
 
 ## Para onde o fragmento roda
 
-O fragmento metafisário leva o **epicôndilo medial intacto** com a **origem comum dos flexores**. Esses músculos rodam o fragmento solto de modo que a **superfície de fratura olha para anterior e medial** e a **superfície articular para posterior e lateral**, rotação acentuada pela **extensão** do cotovelo (figura 17-15). CHACHA notou que a porção lateral da origem dos flexores e a **cápsula anterior** costumam estar rotas, e por essa abertura se chega à fratura.
+O fragmento metafisário leva o **epicôndilo medial intacto** com a **origem comum dos flexores**. Esses músculos rodam o fragmento solto de modo que a **superfície de fratura olha para anterior e medial** e a **superfície articular para posterior e lateral**, rotação acentuada pela **extensão** do cotovelo (figura 18-17). CHACHA notou que a porção lateral da origem dos flexores e a **cápsula anterior** costumam estar rotas, e por essa abertura se chega à fratura.
 
 **A irrigação.** O sangue do epicôndilo e da metáfise medial chega por fora da articulação, com os flexores. O do centro lateral da crista medial da tróclea atravessa a superfície da fise do côndilo medial; se o traço rompe esses pequenos vasos intra-articulares, a porção lateral da crista medial perde o sangue e surge o **rabo de peixe**.
 
@@ -352,7 +354,7 @@ armadilha: Trocar os grupos musculares: extensores no côndilo lateral, flexores
 
 **Pós-operatório.** Gesso por **4 a 6 semanas**, conforme idade, padrão e consolidação; fios expostos saem em geral com **4 semanas**; enterrados, a qualquer momento depois de 6 semanas. Com fixação rígida, passa-se cedo (**10 a 14 dias**) para órtese articulada com movimento protegido.
 
-!figura 17-15
+!figura 18-17
 Desvio do côndilo medial: a tração dos flexores do antebraço roda o fragmento, e a superfície de fratura fica voltada para anteromedial e a articular para posterolateral.
 !fim
 
@@ -365,7 +367,7 @@ alerta: O TARO 2020 (pediatria-0719) está sem gabarito oficial no acervo; pelo 
 
 ## Complicações
 
-**Rigidez, neuropatia ulnar, retardo de consolidação, pseudartrose e cúbito varo.** A maior complicação é **não fazer o diagnóstico**, principalmente na criança pequena; quando a hipótese é real numa criança sem ossificação da tróclea, faça exame sob anestesia, artrografia e/ou ressonância. LEET e colaboradores tiveram complicações em **33%** de 21 fraturas (osteonecrose da tróclea, pseudartrose, perda de redução com consolidação viciosa). A fratura desviada não tratada costuma terminar em **pseudartrose ou consolidação viciosa com cúbito varo** (figura 17-17); SUGIURA descreveu uma criança tratada sem cirurgia aos 4 anos que voltou aos 10 com varo grave por pseudartrose. RYU tratou uma pseudartrose dolorosa no adolescente (fratura aos 3 anos) com ressecção, enxerto ilíaco e dois parafusos maleolares. Os princípios do tratamento da pseudartrose do côndilo lateral valem para o medial (figura 17-18: pseudartrose aos 10 anos com subluxação medial do rádio e da ulna).
+**Rigidez, neuropatia ulnar, retardo de consolidação, pseudartrose e cúbito varo.** A maior complicação é **não fazer o diagnóstico**, principalmente na criança pequena; quando a hipótese é real numa criança sem ossificação da tróclea, faça exame sob anestesia, artrografia e/ou ressonância. LEET e colaboradores tiveram complicações em **33%** de 21 fraturas (osteonecrose da tróclea, pseudartrose, perda de redução com consolidação viciosa). A fratura desviada não tratada costuma terminar em **pseudartrose ou consolidação viciosa com cúbito varo** (figura 18-20, menina de 5 anos com pseudartrose e varo); SUGIURA descreveu uma criança tratada sem cirurgia aos 4 anos que voltou aos 10 com varo grave por pseudartrose. RYU tratou uma pseudartrose dolorosa no adolescente (fratura aos 3 anos) com ressecção, enxerto ilíaco e dois parafusos maleolares. Os princípios do tratamento da pseudartrose do côndilo lateral valem para o medial (figura 18-21: pseudartrose do côndilo medial numa menina de 5 anos).
 
 Mesmo consolidada, a fratura pode deixar **varo** (menor crescimento da tróclea, talvez por lesão vascular) ou **valgo** (estímulo ao crescimento do fragmento medial; a proeminência do epicôndilo pode dar falsa impressão de valgo). Alterações avasculares da crista medial foram descritas; HANSPAL reviu o paciente de COTHAY 18 anos depois de uma redução aberta tardia: quase assintomático, com sinais radiográficos de necrose do côndilo medial. EL GHAWABI descreveu uma neuropatia ulnar parcial que se recuperou quase toda com a **transposição anterior** do nervo.
 
@@ -373,9 +375,9 @@ Mesmo consolidada, a fratura pode deixar **varo** (menor crescimento da tróclea
 
 ## A apófise que imita fratura
 
-A apófise do epicôndilo lateral existe por muito tempo como cartilagem e **só ossifica na segunda década**, começando por volta dos **10 a 11 anos**. Pouco antes, a margem da crista supracondiliana lateral se curva bruscamente para medial, em direção à fise do côndilo lateral, e o contorno ósseo da face lateral do úmero distal ganha a forma do **número 3**; a cunha central desse defeito contém a apófise cartilaginosa (figura 17-22). A ossificação começa na altura da fise do côndilo lateral e avança para cima e para baixo, formando um **triângulo** com o ápice voltado para a fise, ou uma **lasca longa e irregular**. A parte distal funde com o capítulo antes de a proximal se unir ao úmero, e a fise que sobra parece fratura. SILBERSTEIN notou ainda que o traço da fratura do côndilo lateral costuma passar pela fise proximal dessa apófise, de modo que ela **quase sempre vai junto com o fragmento do côndilo lateral**.
+A apófise do epicôndilo lateral existe por muito tempo como cartilagem e **só ossifica na segunda década**, começando por volta dos **10 a 11 anos**. Pouco antes, a margem da crista supracondiliana lateral se curva bruscamente para medial, em direção à fise do côndilo lateral, e o contorno ósseo da face lateral do úmero distal ganha a forma do **número 3**; a cunha central desse defeito contém a apófise cartilaginosa (figura 18-25). A ossificação começa na altura da fise do côndilo lateral e avança para cima e para baixo, formando um **triângulo** com o ápice voltado para a fise, ou uma **lasca longa e irregular**. A parte distal funde com o capítulo antes de a proximal se unir ao úmero, e a fise que sobra parece fratura. SILBERSTEIN notou ainda que o traço da fratura do côndilo lateral costuma passar pela fise proximal dessa apófise, de modo que ela **quase sempre vai junto com o fragmento do côndilo lateral**.
 
-!figura 17-22
+!figura 18-25
 Apófise do epicôndilo lateral. A: a apófise cartilaginosa ocupa o defeito em cunha na margem entre o côndilo lateral e a metáfise. B: a ossificação começa no centro da cunha e progride para cima e para baixo, formando um centro triangular.
 !fim
 
@@ -388,9 +390,9 @@ alerta: O TARO 2008 (pediatria-0839) não tem gabarito oficial no acervo, e este
 
 ## Mecanismo, quadro e diagnóstico
 
-A fratura verdadeira é **extremamente rara**: poucos casos isolados, a maioria em livros-texto. No adulto, o mecanismo mais comum é o **golpe direto** no lado lateral; na criança, a **avulsão pelos extensores** do antebraço, que nascem ali, explica parte das lesões. HASNER e HUSBY relacionaram o desvio à posição do traço em relação às origens musculares (figura 17-19): entre a origem dos extensores comuns e a do **extensor radial longo do carpo**, pouco desvio; se o traço entra na origem do extensor radial longo do carpo, o desvio pode ser grande.
+A fratura verdadeira é **extremamente rara**: poucos casos isolados, a maioria em livros-texto. No adulto, o mecanismo mais comum é o **golpe direto** no lado lateral; na criança, a **avulsão pelos extensores** do antebraço, que nascem ali, explica parte das lesões. HASNER e HUSBY relacionaram o desvio à posição do traço em relação às origens musculares (figura 18-22): entre a origem dos extensores comuns e a do **extensor radial longo do carpo**, pouco desvio; se o traço entra na origem do extensor radial longo do carpo, o desvio pode ser grande.
 
-O quadro é o de qualquer fratura do cotovelo, com dor localizada na face lateral do úmero distal. As lesões associadas não são bem descritas. A chave para separar fratura de anatomia normal é olhar **além do osso**: o **edema de partes moles** na área da apófise sugere fratura (figura 17-20). Se o núcleo fica **distal à borda osteocondral** da epífise do côndilo lateral, considere-o **desviado** (figura 17-21). Radiografias do outro cotovelo ajudam.
+O quadro é o de qualquer fratura do cotovelo, com dor localizada na face lateral do úmero distal. As lesões associadas não são bem descritas. A chave para separar fratura de anatomia normal é olhar **além do osso**: o **edema de partes moles** na área da apófise sugere fratura (figura 18-23). Se o núcleo fica **distal à borda osteocondral** da epífise do côndilo lateral, considere-o **desviado** (figura 18-24). Radiografias do outro cotovelo ajudam.
 
 !questoes relacionadas=pediatria-0696
 conceito: A fratura do epicôndilo lateral é raríssima e se confunde com a ossificação irregular da apófise; o edema de partes moles lateral é a pista de fratura verdadeira.
@@ -431,7 +433,7 @@ armadilha: O capítulo 17 trata da osteocondrite da tróclea, não da clássica 
 - **Imagem:** radiografia falha em **mais da metade**; **ultrassonografia** no bebê sem núcleos; **artrografia** no centro cirúrgico; **ressonância** na dúvida intra-articular.
 - **DELEE:** A até 12 meses (tipo I, sem núcleo), B 12 meses a 3 anos, C 3 a 7 anos com **grande fragmento metafisário lateral**.
 - **Maus-tratos:** até **50%** abaixo dos 2 anos; **inventário esquelético e cintilografia**.
-- **Tratamento:** corrigir em extensão, **fletir com pronação**, **dois fios laterais**, fio medial só com incisão; gesso 3 semanas. Atraso de **mais de 5 a 6 dias** com epífise presa: **não manipular**, osteotomia depois.
+- **Tratamento:** corrigir em extensão, **fletir com pronação**, **dois fios laterais**, fio medial só com incisão; gesso 3 semanas. Atraso de **mais de 5 a 7 dias** (algoritmo 18-1) com epífise presa: **não manipular**, osteotomia depois.
 - **Complicações:** **cúbito varo** (menos que na supracondiliana: **superfície larga**), neurovascular rara, pseudartrose quase inexistente, osteonecrose rara e grave.
 - **Côndilo medial:** espelho do lateral, **8 a 14 anos**, **SALTER-HARRIS IV**, **MILCH I** mais comum, **KILFOYLE** I e II gesso, III redução aberta; **flexores rodam o fragmento** para anteromedial; via **posteromedial**, **nervo ulnar protegido**, **sem dissecar a face posterior**; pseudartrose dá **varo**.
 - **Côndilo medial contra epicôndilo medial:** coxim positivo, instabilidade em varo, ossificação metafisária no fragmento, subluxação posteromedial; o epicôndilo anda com a luxação posterolateral.
