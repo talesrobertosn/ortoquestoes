@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-outros-pediatria
-versao: 1
+versao: 2
 titulo: Outros temas de ortopedia pediátrica: tálus vertical, ossos acessórios do pé, hemofilia e osteotomia periacetabular
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., o Campbell's Operative Orthopaedics, 15ª ed., e o HEBERT, Ortopedia e Traumatologia, 5ª ed.
 capitulo: Capítulo 39 · Hematologic Disorders (Hemophilia), com as seções Normal Variations e Vertical Talus do capítulo 19
 autores: Anthony I. Riccio (capítulos 39 e 19); John A. Herring (editor)
-fonte: Livros conferidos localmente em 10/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 39 (p. 1976 a 1983), cap. 19 (p. 682 a 688 e 741 a 747), cap. 13 (p. 460, 461, 465 e 466), cap. 21 (p. 873 e 874), cap. 12 (p. 300), cap. 36 (p. 1819 a 1832) e cap. 23 (p. 975 a 977); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 29 (p. 1390, 1391 e 1455 a 1460), cap. 8 (p. 254 a 256) e cap. 1 (p. 9 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (p. 1068 e 1069), cap. 7 (p. 376 a 378) e cap. 64 (p. 2907 a 2911 aprox.); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 20.4, 20.5 e 6; Skeletal Trauma, cap. 25 (p. 646).
+fonte: Livros conferidos localmente em 10/11/2026 e 12/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 39 (p. 1976 a 1983), cap. 19 (p. 682 a 688 e 741 a 747), cap. 13 (p. 460, 461, 465 e 466), cap. 21 (p. 873 e 874), cap. 12 (p. 300), cap. 36 (p. 1819 a 1832) e cap. 23 (p. 975 a 977); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 29 (p. 1390, 1391 e 1455 a 1460), cap. 8 (p. 254 a 256) e cap. 1 (p. 9); Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (p. 1068 e 1069), cap. 7 (p. 376 a 378) e cap. 64 (p. 2907, 2909 e 2911); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 20.4, 20.5 e 6; Skeletal Trauma, cap. 25 (p. 646).
 subtemas: Outros temas de ortopedia pediátrica; Outras deformidades do pé na criança
 resumo: Tálus vertical congênito (luxação dorsal rígida da talonavicular com equino do retropé, contratura do tibial anterior, KITE aumentado no AP e no perfil, navicular que não reduz na flexão plantar, "sapato persa" nos paralíticos); navicular acessório como o osso acessório que mais dá sintoma; hemofilia (joelho é a articulação, quadríceps é o músculo); osteotomia periacetabular bernesa (centro-borda menor que 20 graus, TÖNNIS 0 ou 1, quadril congruente); mesoderma da placa lateral forma ossos, cartilagens e tendões; alfa-L-iduronidase é a mucopolissacaridose tipo I.
 ---
@@ -23,7 +23,7 @@ Uma regra vale para o resumo inteiro: quando a alternativa correta depende de um
 
 # Tálus vertical congênito: o que é, de onde vem e com o que anda {radar=confirmado}
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19, p. 741 aprox.) define o tálus vertical como uma **luxação dorsal fixa da articulação talonavicular associada a equino rígido do retropé**. As duas coisas juntas produzem o pé em mata-borrão, de planta convexa, **visível já ao nascimento**. O livro lembra os sinônimos pé valgo convexo congênito e, o mais exato, luxação dorsolateral teratológica da articulação talocalcaneonavicular; a primeira descrição é de HENKEN (1914) e os traços característicos foram fixados por LAMY e WEISSMAN. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 29, p. 1455) acrescenta à definição a eversão da subtalar, a dorsiflexão fixa do mediopé sobre o retropé e a luxação ocasional da calcaneocubóidea.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19, p. 741) define o tálus vertical como uma **luxação dorsal fixa da articulação talonavicular associada a equino rígido do retropé**. As duas coisas juntas produzem o pé em mata-borrão, de planta convexa, **visível já ao nascimento**. O livro lembra os sinônimos pé valgo convexo congênito e, o mais exato, luxação dorsolateral teratológica da articulação talocalcaneonavicular; a primeira descrição é de HENKEN (1914) e os traços característicos foram fixados por LAMY e WEISSMAN. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 29, p. 1455) acrescenta à definição a eversão da subtalar, a dorsiflexão fixa do mediopé sobre o retropé e a luxação ocasional da calcaneocubóidea.
 
 A ideia central é simples: o navicular sobe para o dorso do colo do tálus e fica preso ali; o tálus, sem nada à frente da cabeça, aponta para o chão; o calcâneo é puxado para o equino pelo tríceps. O antepé fica dorsifletido e abduzido e o retropé em equinovalgo, exatamente o inverso do pé torto congênito (antepé aduzido e supinado, retropé em equinovaro). O único componente comum às duas deformidades é o equino do retropé, e é ele que separa o tálus vertical do pé calcaneovalgo postural.
 
@@ -338,7 +338,7 @@ alerta: O Campbell (cap. 7, p. 378) indica com centro-borda menor que 20 graus e
 
 # Embriologia do membro: quem forma o quê {radar=confirmado}
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21, p. 873 e 874) resume o desenvolvimento do membro. Os brotos surgem no fim da quarta semana, no mesoderma do flanco do embrião; o capítulo da mão (cap. 12, p. 300) data o broto do membro superior em cerca de 23 dias, e o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 1, p. 9 aprox.) e o HEBERT (cap. 6), em 26 dias. O membro superior anda 1 a 2 dias à frente do inferior. O mesoderma da placa lateral se espessa e induz o ectoderma que o cobre a formar a **crista ectodérmica apical**; sob ela fica a zona de progresso, de mesênquima indiferenciado em proliferação rápida. O membro cresce de proximal para distal: a cintura e o úmero ou o fêmur se formam antes da diferenciação da crista, e o restante depende dela.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21, p. 873 e 874) resume o desenvolvimento do membro. Os brotos surgem no fim da quarta semana, no mesoderma do flanco do embrião; o capítulo da mão (cap. 12, p. 300) data o broto do membro superior em cerca de 23 dias, e o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 1, p. 9) e o HEBERT (cap. 6), em 26 dias. O membro superior anda 1 a 2 dias à frente do inferior. O mesoderma da placa lateral se espessa e induz o ectoderma que o cobre a formar a **crista ectodérmica apical**; sob ela fica a zona de progresso, de mesênquima indiferenciado em proliferação rápida. O membro cresce de proximal para distal: a cintura e o úmero ou o fêmur se formam antes da diferenciação da crista, e o restante depende dela.
 
 O fato cobrado é a origem dos tecidos. O Tachdjian (p. 873) escreve que **os ossos e os tecidos conjuntivos dos membros vêm do mesoderma da placa lateral, e os músculos vêm dos miótomos do mesoderma somítico**. O Lovell and Winter diz o mesmo: o broto é formado por células mesenquimais da placa lateral e depois reforçado por células dos somitos vizinhos; os elementos esqueléticos e os tendões derivam da placa lateral, e o músculo, de células somíticas que migram para dentro do broto. O HEBERT (cap. 6) traz a frase que a banca usou, quase palavra por palavra: as células da placa lateral mesodérmica formarão **ossos, cartilagens e tendões**.
 
@@ -374,6 +374,8 @@ As mucopolissacaridoses são o maior grupo das doenças de depósito lisossômic
 | IV | MORQUIO (A e B) | A: N-acetilgalactosamina-6-sulfato sulfatase; B: beta-galactosidase | queratan sulfato | autossômica recessiva | inteligência normal, nanismo de tronco curto, frouxidão ligamentar, hipoplasia do odontoide |
 | VI | MAROTEAUX-LAMY | N-acetilgalactosamina-4-sulfato sulfatase (arilsulfatase B) | dermatan sulfato | autossômica recessiva | esqueleto grave como no HURLER, sem retardo mental |
 !fim
+
+O nome completo da enzima do MORQUIO A cai em prova e não deve ser encurtado para "galactose-6-sulfatase": o Tachdjian (cap. 36, p. 1832) e o Lovell and Winter (cap. 8, p. 255) chamam a enzima deficiente de **N-acetilgalactosamina-6-sulfato sulfatase**, e o Tachdjian acrescenta que a ausência da sua atividade nas células do líquido amniótico permite o diagnóstico pré-natal.
 
 A regra de herança é fácil: **todas são autossômicas recessivas, exceto a tipo II (HUNTER), ligada ao X**. A regra da inteligência também: preservada no MORQUIO, no SCHEIE e no MAROTEAUX-LAMY. E a regra articular: nas mucopolissacaridoses a rigidez é a norma; a frouxidão generalizada do MORQUIO é a exceção que o distingue (Tachdjian, p. 1832).
 
@@ -413,9 +415,9 @@ alerta: O Tachdjian (cap. 23, p. 977) não elege um método: descreve a artrotom
 
 # Pseudoartrose: hipertrófica, oligotrófica e atrófica {radar=confirmado}
 
-Duas questões de julgamento de itens, de prova de R4, foram classificadas em ortopedia pediátrica e cobram conceitos gerais de pseudoartrose. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 64, p. 2907 aprox.) classifica as pseudoartroses pela localização (epifisária, metafisária, diafisária), pela infecção (séptica ou asséptica) e pela biologia. O Skeletal Trauma (cap. 25, p. 646) apresenta a mesma biologia pela classificação de WEBER e CECH, que separa as viáveis, capazes de atividade biológica (hipertrófica e oligotrófica), das não viáveis.
+Duas questões de julgamento de itens, de prova de R4, foram classificadas em ortopedia pediátrica e cobram conceitos gerais de pseudoartrose. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 64, p. 2907) classifica as pseudoartroses pela localização (epifisária, metafisária, diafisária), pela infecção (séptica ou asséptica) e pela biologia. O Skeletal Trauma (cap. 25, p. 646) apresenta a mesma biologia pela classificação de WEBER e CECH, que separa as viáveis, capazes de atividade biológica (hipertrófica e oligotrófica), das não viáveis.
 
-!tabela Tipos de pseudoartrose (Campbell 15ª ed., cap. 64, p. 2907 aprox. e 2909 aprox.; Skeletal Trauma, cap. 25, p. 646)
+!tabela Tipos de pseudoartrose (Campbell 15ª ed., cap. 64, p. 2907 e 2909; Skeletal Trauma, cap. 25, p. 646)
 | Tipo | Vascularização | Calo | Causa | Tratamento de base |
 |---|---|---|---|---|
 | Hipertrófica: pata de elefante | adequada | abundante | falta de estabilidade | estabilizar; enxerto raramente é necessário |
@@ -427,13 +429,13 @@ Duas questões de julgamento de itens, de prova de R4, foram classificadas em or
 
 A **pata de elefante** é, portanto, o exemplo mais típico de pseudoartrose hipertrófica: vascularizada e com calo abundante. O Skeletal Trauma explica a formação: o movimento persistente no foco mantém fibrocartilagem não mineralizada entre os fragmentos, os vasos chegam dos dois lados mas não a atravessam, o calo endosteal pode selar o canal e o calo periosteal hipertrófico cresce. O Campbell não usa as expressões pata de elefante e casco de cavalo, mas descreve a hipertrófica do mesmo modo: vascularização adequada, calo abundante, falta de estabilidade.
 
-Sobre a fixação, o Campbell (p. 2911 aprox.) diz que a placa deve dar estabilidade suficiente para a consolidação; que, na hipertrófica, a placa sem enxerto costuma bastar se o osso não for osteoporótico e os fragmentos permitirem boa pega dos parafusos; que **a placa é tipicamente aplicada com técnica de compressão**, ou de neutralização quando foi possível colocar parafusos de tração através do foco; e que a placa em ponte ou em onda também pode ser usada. Haste intramedular e fixador externo são as outras formas de estabilização. O item da prova junta "placa ponte" e "compressão interfragmentária" na mesma osteossíntese; são dois princípios distintos no texto do Campbell, que os apresenta como alternativas.
+Sobre a fixação, o Campbell (p. 2911) diz que a placa deve dar estabilidade suficiente para a consolidação; que, na hipertrófica, a placa sem enxerto costuma bastar se o osso não for osteoporótico e os fragmentos permitirem boa pega dos parafusos; que **a placa é tipicamente aplicada com técnica de compressão**, ou de neutralização quando foi possível colocar parafusos de tração através do foco; e que a placa em ponte ou em onda também pode ser usada. Haste intramedular e fixador externo são as outras formas de estabilização. O item da prova junta "placa ponte" e "compressão interfragmentária" na mesma osteossíntese; são dois princípios distintos no texto do Campbell, que os apresenta como alternativas.
 
 !questoes central=pediatria-0903 relacionadas=pediatria-0904
 conceito: A pseudoartrose em pata de elefante é hipertrófica, vascularizada e com calo abundante; falta estabilidade, não biologia. Na pseudoartrose asséptica da diáfise, a placa é tipicamente de compressão.
 como: A prova de R4 de Coluna da SES-DF de 2022 pediu para julgar dois itens: que a pata de elefante seria vascularizada mas não hipertrófica e sem calo, e que a placa ponte com compressão interfragmentária estaria bem indicada na pseudoartrose não infectada da diáfise. Os dois foram dados como errados.
 armadilha: Trocar a pata de elefante pela atrófica; a descrição "sem calo" pertence à oligotrófica e à atrófica.
-alerta: Em `pediatria-0904`, o Campbell (cap. 64, p. 2911 aprox.) cita a compressão como técnica típica e admite a placa em ponte ou em onda como alternativas; nenhum livro conferido condena expressamente a combinação descrita no item. Gabarito oficial (errado) mantido. O termo pata de elefante de `pediatria-0903` está no Skeletal Trauma (cap. 25, p. 646), não no Campbell.
+alerta: Em `pediatria-0904`, o Campbell (cap. 64, p. 2911) cita a compressão como técnica típica e admite a placa em ponte ou em onda como alternativas; nenhum livro conferido condena expressamente a combinação descrita no item. Gabarito oficial (errado) mantido. O termo pata de elefante de `pediatria-0903` está no Skeletal Trauma (cap. 25, p. 646), não no Campbell.
 !fim
 
 # Fechamento {radar=fundamento}

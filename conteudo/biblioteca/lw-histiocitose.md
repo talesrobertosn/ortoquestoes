@@ -1,6 +1,6 @@
 ---
 id: lw-histiocitose
-versao: 1
+versao: 2
 titulo: Histiocitose de células de LANGERHANS
 especialidade: tumores
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Lovell and Winter's Pediatric Orthopaedics
 edicao: 7ª edição (2014)
 capitulo: Capítulo 10 · Diseases of the Hematopoietic System (seção Langerhans Cell Histiocytosis), com o Capítulo 13 · Bone and Soft-Tissue Tumors
 autores: Michael T. Busch e Amy L. Dunn
-fonte: Livros conferidos localmente em 03/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 10 (p. 330 a 332) e cap. 13 (p. 432 e 453 a 455); Dahlin's Bone Tumors, 6ª ed., cap. 26 (Conditions That Commonly Simulate Primary Neoplasms of Bone, p. 358 a 361) e cap. 17 (linfoma, p. aprox. 208 e 209); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors, p. 1038 a 1041), cap. 24 (Box 24.1, p. 1000), cap. 7 (Back Pain, p. 84) e cap. 26 (p. aprox. 1068 e 1081); Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone, p. 952, 958 e 963 a 967), cap. 26 (Box 26.3, p. 868 a 871) e cap. 49 (p. 1953 e Tabela 49.2, p. 1954).
+fonte: Livros conferidos localmente em 03/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 10 (p. 330 a 332) e cap. 13 (p. 432 e 453 a 455); Dahlin's Bone Tumors, 6ª ed., cap. 26 (Conditions That Commonly Simulate Primary Neoplasms of Bone, p. 358 a 361) e cap. 17 (linfoma, p. 208 e 209); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors, p. 1038 a 1041), cap. 24 (Box 24.1, p. 1000), cap. 7 (Back Pain, p. 84) e cap. 26 (p. 1054 e 1067); Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone, p. 952, 958 e 963 a 967), cap. 26 (Boxes 26.2 e 26.3, p. 868 a 871) e cap. 49 (p. 1953 e Tabela 49.2, p. 1954). Fonte aberta conferida em 12/11/2026 para a classificação da coluna: GARG S, MEHTA S, DORMANS JP, J Bone Joint Surg Am. 2004;86(8):1740-50 (PMID 15292423, resumo no PubMed).
 subtemas: Histiocitose de células de Langerhans
 resumo: Proliferação de células de LANGERHANS (histiócitos dendríticos com núcleo em grão de café, S-100, CD1a e langerina, grânulos de BIRBECK em raquete perto do núcleo) que vai do granuloma eosinofílico solitário (cerca de 80%) ao HAND-SCHÜLLER-CHRISTIAN (lesões múltiplas, exoftalmia e diabetes insípido, tríade completa em só 10%) e ao LETTERER-SIWE (lactente, visceral, o mais grave); criança de 5 a 15 anos, crânio e fêmur à frente, coluna com vértebra plana (causa mais comum, disco preservado), lesão em saca-bocado que na fase inicial imita EWING e osteomielite, peça mole castanho-avermelhada, cintilografia falso-negativa e inventário esquelético, biópsia e depois conduta conservadora (cura espontânea, curetagem, infiltração de corticoide, órtese), quimioterapia na forma multissistêmica.
 ---
@@ -96,7 +96,7 @@ A idade diverge porque cada livro mede uma população diferente. O Lovell, olha
 
 O Lovell registra **2 a 5 casos por milhão por ano**, **leve predomínio masculino** e **osso envolvido em 80% a 97%** (cap. 10, p. 330); o Tachdjian, **3 a 4 por milhão** em crianças e **homem:mulher de 2:1** (p. 1038); o Campbell, osso em **cerca de 80%** (p. 963) e, na coluna, **2 a 5:1** (p. 1954).
 
-!tabela Epidemiologia da HCL nos quatro livros (Lovell 7ª ed., cap. 10, p. 330, e cap. 13, p. 454; Tachdjian 6ª ed., cap. 25, p. 1038 e 1039; Campbell 15ª ed., cap. 28, p. 963 e 964, cap. 26, p. aprox. 868, e Tabela 49.2, p. 1954; Dahlin 6ª ed., p. 358)
+!tabela Epidemiologia da HCL nos quatro livros (Lovell 7ª ed., cap. 10, p. 330, e cap. 13, p. 454; Tachdjian 6ª ed., cap. 25, p. 1038 e 1039; Campbell 15ª ed., cap. 28, p. 963 e 964, cap. 26, Box 26.2, p. 869, e Tabela 49.2, p. 1954; Dahlin 6ª ed., p. 358)
 | Dado | Lovell | Tachdjian | Campbell | Dahlin |
 |---|---|---|---|---|
 | Incidência | 2 a 5 por milhão por ano | 3 a 4 por milhão em crianças | Não informa | Não informa |
@@ -205,7 +205,7 @@ Divergência real: o Lovell escreve que a maioria das lesões é **lítica, bem 
 
 ## Tomografia e ressonância
 
-O Tachdjian usa a **TC para a extensão da lise** (pelve, coluna, crânio) e a **RM para a extensão medular e das partes moles** (p. 1039). Um dado útil para o diferencial: **o edema peritumoral do granuloma eosinofílico é menos extenso que o do sarcoma de EWING ou da osteomielite**. O capítulo de EWING do Tachdjian faz a ressalva inversa: a reação inflamatória ao redor do osso e a extensão medular da histiocitose **podem ser extensas e imitar o EWING** na RM, embora geralmente seja possível distinguir (cap. 26, p. aprox. 1081).
+O Tachdjian usa a **TC para a extensão da lise** (pelve, coluna, crânio) e a **RM para a extensão medular e das partes moles** (p. 1039). Um dado útil para o diferencial: **o edema peritumoral do granuloma eosinofílico é menos extenso que o do sarcoma de EWING ou da osteomielite**. O capítulo de EWING do Tachdjian faz a ressalva inversa: a reação inflamatória ao redor do osso e a extensão medular da histiocitose **podem ser extensas e imitar o EWING** na RM, embora geralmente seja possível distinguir (cap. 26, p. 1067).
 
 O Lovell descreve **hipersinal em T2 dentro e ao redor da lesão**, RM que **pode ser normal no início e alterar em semanas**, e a RM como **essencial para excluir a massa de partes moles do sarcoma** e, na coluna, a extensão intrarraquiana (cap. 10, p. 331; cap. 13, p. 454).
 
@@ -234,7 +234,7 @@ A Tabela 49.2 do Campbell (p. 1954) dá o retrato do granuloma eosinofílico da 
 
 ## A causa mais comum
 
-O Campbell escreve com todas as letras: **a HCL é a causa mais comum de vértebra plana** (p. 964); **sarcoma de EWING, linfoma, leucemia, doença de GAUCHER, cisto ósseo aneurismático e infecção** entram no diferencial **se a clínica justificar** (p. 965). No paciente jovem com lesão de **corpo vertebral, o mais provável é histiocitose**; nos **elementos posteriores**, osteoma osteoide, osteoblastoma e cisto aneurismático (cap. 26, p. aprox. 869, e Box 26.3, p. 870). O Tachdjian põe a **histiocitose X ("vertebra plana")** como primeira lesão de corpo vertebral na criança (Box 24.1, p. 1000) e diz que a coluna é acometida em **10% a 15% das crianças** com a doença (cap. 7, p. 84).
+O Campbell escreve com todas as letras: **a HCL é a causa mais comum de vértebra plana** (p. 964); **sarcoma de EWING, linfoma, leucemia, doença de GAUCHER, cisto ósseo aneurismático e infecção** entram no diferencial **se a clínica justificar** (p. 965). No paciente jovem com lesão de **corpo vertebral, o mais provável é histiocitose**; nos **elementos posteriores**, osteoma osteoide, osteoblastoma e cisto aneurismático (cap. 26, p. 869.e1, e Box 26.3, p. 870). O Tachdjian põe a **histiocitose X ("vertebra plana")** como primeira lesão de corpo vertebral na criança (Box 24.1, p. 1000) e diz que a coluna é acometida em **10% a 15% das crianças** com a doença (cap. 7, p. 84).
 
 !tabela Vértebra plana na criança: HCL e seus diferenciais (Lovell 7ª ed., cap. 10, p. 331; Campbell 15ª ed., p. 964 e 965, e Tabela 49.2, p. 1954; Tachdjian 6ª ed., cap. 7, p. 84, e p. 1039)
 | Achado | HCL | O que sugere outra causa |
@@ -259,13 +259,22 @@ O Tachdjian diz que o **estado neurológico geralmente permanece intacto**, embo
 
 ## A classificação de GARG, MEHTA e DORMANS
 
-A prova já cobrou a classificação de GARG, MEHTA e DORMANS para a HCL da coluna na criança. **Nenhum dos livros consultados descreve os graus**; o Lovell cita o artigo só na bibliografia dos capítulos 13 e 21. O que os livros sustentam é o fundo: colapso do corpo, neurologia geralmente preservada e altura recuperada em parte com o crescimento.
+A prova já cobrou a classificação de GARG, MEHTA e DORMANS para a HCL da coluna na criança. Nenhum dos livros consultados descreve os graus (o Lovell cita o artigo só na bibliografia dos capítulos 13 e 21), mas o resumo do artigo original, aberto no PubMed (GARG S, MEHTA S, DORMANS JP. Langerhans cell histiocytosis of the spine in children. Long-term follow-up. J Bone Joint Surg Am. 2004;86(8):1740-50, PMID 15292423), traz a escala inteira. Ela olha a vértebra na radiografia inicial e responde a duas perguntas: quanto o corpo perdeu de altura e se perdeu por igual.
+
+- **Grau I:** colapso do corpo vertebral de **0% a 50%**.
+- **Grau II:** colapso de **51% a 100%**.
+- **Grau III:** lesão nos **elementos posteriores**, e não no corpo.
+- **Subtipo A:** colapso **simétrico**; **subtipo B:** colapso **assimétrico** (vale para os graus I e II).
+
+Na série de 26 crianças (23 seguidas por no mínimo dois anos, média de 9,4 anos), as 44 vértebras se distribuíram em IA 20, IB 3, IIA 10, IIB 9 e III 2. O colapso assimétrico apareceu mais nas lesões graves, mas não previu deformidade tardia; quatro crianças evoluíram com deformidade e duas precisaram de artrodese. Todas estavam vivas, sem sintomas e sem doença ativa no fim do seguimento, e os autores concluíram que a cirurgia agressiva em geral não se indica na lesão da coluna sem doença sistêmica nem deformidade: basta acompanhar a recuperação e o alinhamento. É o mesmo fundo que os livros sustentam: colapso do corpo, neurologia geralmente preservada e altura recuperada em parte com o crescimento.
+
+O grau III conversa com o Campbell: na criança, lesão de corpo vertebral sugere histiocitose, e lesão de elementos posteriores lembra antes osteoma osteoide, osteoblastoma e cisto ósseo aneurismático (cap. 26, p. 869.e1), e o grau III foi o mais raro da série.
 
 !questoes central=tumores-0059
-conceito: A classificação de GARG, MEHTA e DORMANS gradua o colapso do corpo vertebral na HCL da coluna da criança; os livros consultados só a citam na bibliografia e sustentam o fundo da questão (colapso do corpo, neurologia preservada, recuperação parcial da altura).
+conceito: A classificação de GARG, MEHTA e DORMANS (J Bone Joint Surg Am 2004, PMID 15292423) gradua a HCL da coluna da criança: I, colapso de 0% a 50%; II, de 51% a 100%; III, elementos posteriores; A simétrico, B assimétrico.
 como: TARO 2014 descreveu colapso simétrico de 50% da altura do corpo vertebral e pediu o grau, entre IA, IB, IIA e IIB.
-armadilha: A questão exige a memória da tabela do artigo original; nada no Lovell, no Tachdjian, no Campbell ou no Dahlin permite deduzir o grau a partir da porcentagem de colapso.
-alerta: O gabarito oficial é A (IA). Nenhum dos quatro livros descreve os graus de GARG, MEHTA e DORMANS; o Lovell cita o artigo só na bibliografia (cap. 13, ref. 151). O gabarito de `tumores-0059` foi mantido, mas não há sustentação no texto conferido.
+armadilha: Exatamente 50% ainda é grau I (o II começa em 51%), e colapso simétrico é A; quem arredonda 50% para o grau II marca IIA. Os livros locais não trazem a escala, que vem do artigo original.
+alerta: O gabarito oficial é A (IA), confirmado pelo resumo do artigo original no PubMed (PMID 15292423): colapso de 0% a 50% é grau I, e simétrico é subtipo A. Os quatro livros locais não descrevem os graus; o Lovell cita o artigo só na bibliografia (cap. 13, ref. 151).
 !fim
 
 # A patologia: da peça à microscopia eletrônica {radar=confirmado}
@@ -286,7 +295,7 @@ armadilha: Consistência dura não cabe numa lesão feita de células inflamató
 
 A célula que define a doença é o **histiócito de LANGERHANS**, e o eosinófilo, apesar do nome "granuloma eosinofílico", é coadjuvante. O Lovell é explícito: **embora os eosinófilos sejam um componente comum da lesão, eles não são necessários para o diagnóstico** (cap. 13, p. 453); na legenda da Figura 13-26, os eosinófilos são numerosos, **mas é a presença dos histiócitos que define o tumor**, células grandes com **núcleo claro e dobrado e nucléolo proeminente** (p. 454).
 
-Todos os livros apontam para o **núcleo endentado**. O Tachdjian descreve uma mistura de **eosinófilos, plasmócitos, histiócitos e células de LANGERHANS** grandes, de **citoplasma pálido abundante e núcleo endentado ou clivado**, com necrose, fibrose e macrófagos espumosos, e **atividade mitótica mínima** (p. 1038). O Lovell fala em núcleo **em grão de café com sulco central**, com **linfócitos T, eosinófilos e macrófagos** (cap. 10, p. 332, Figura 10-8). O Campbell descreve **membrana nuclear nítida, citoplasma eosinofílico abundante, células gigantes multinucleadas e grupos de eosinófilos** (p. 965). O Dahlin acrescenta que as **células gigantes multinucleadas** às vezes são tantas que sugerem **tumor de células gigantes**, que **grandes áreas de necrose** são frequentes, e dá duas regras de lâmina (p. 359 e 360): as células ficam **agrupadas, sem lençóis compactos**, e **lençóis compactos sugerem linfoma**; e a **blastomicose** pode imitar a citologia. No capítulo de linfoma, o Dahlin diz que os histiócitos da HCL são **obviamente benignos, sem pleomorfismo nem hipercromasia** (cap. 17, p. aprox. 208 e 209).
+Todos os livros apontam para o **núcleo endentado**. O Tachdjian descreve uma mistura de **eosinófilos, plasmócitos, histiócitos e células de LANGERHANS** grandes, de **citoplasma pálido abundante e núcleo endentado ou clivado**, com necrose, fibrose e macrófagos espumosos, e **atividade mitótica mínima** (p. 1038). O Lovell fala em núcleo **em grão de café com sulco central**, com **linfócitos T, eosinófilos e macrófagos** (cap. 10, p. 332, Figura 10-8). O Campbell descreve **membrana nuclear nítida, citoplasma eosinofílico abundante, células gigantes multinucleadas e grupos de eosinófilos** (p. 965). O Dahlin acrescenta que as **células gigantes multinucleadas** às vezes são tantas que sugerem **tumor de células gigantes**, que **grandes áreas de necrose** são frequentes, e dá duas regras de lâmina (p. 359 e 360): as células ficam **agrupadas, sem lençóis compactos**, e **lençóis compactos sugerem linfoma**; e a **blastomicose** pode imitar a citologia. No capítulo de linfoma, o Dahlin diz que os histiócitos da HCL são **obviamente benignos, sem pleomorfismo nem hipercromasia** (cap. 17, p. 208 e 209).
 
 ## Os marcadores
 
@@ -321,9 +330,9 @@ armadilha: Grande atividade mitótica, figuras mitóticas abundantes e pleomorfi
 
 O Tachdjian monta o diferencial do granuloma eosinofílico (p. 1039 e 1040): **osteomielite, sarcoma de EWING, linfoma maligno, doença metastática** e, nos ossos longos, **cisto ósseo aneurismático e cisto ósseo simples**. A regra que vem junto é a que guia a biópsia: **a menos que haja achados patognomônicos, como múltiplas lucências no crânio ou vértebra plana, a biópsia é necessária** para diferenciar as lesões mais graves.
 
-A **osteomielite** é o imitador mais traiçoeiro: dor, febre, VHS alta e lise na criança, e até a lâmina engana, porque **zonas de necrose levam ao diagnóstico errado de osteomielite**; a HCL **deve sempre ser considerada antes de diagnosticar osteomielite aguda** (Dahlin, p. 361, legenda da Figura 26.126). Na **punção aspirativa por agulha fina**, que basta para confirmar a HCL, a osteomielite mostra **pus, neutrófilos ou germes** (Tachdjian, p. 1040); na coluna, **a osteomielite destrói o disco e a HCL o preserva** (Lovell, cap. 10, p. 331); e o tipo IA de ROBERTS da osteomielite subaguda, em saca-bocado metafisário, **se parece com o granuloma eosinofílico** (Lovell, cap. 12, Figura 12-15). O **EWING** tem **mais edema peritumoral** na RM (Tachdjian, p. 1039) e costuma ter **massa de partes moles** (Lovell, cap. 10, p. 331). Abaixo de 5 anos, histiocitose e **WILMS metastático** entram no diferencial do osteossarcoma (Tachdjian, cap. 26, p. aprox. 1068). O **fibroma não ossificante** lembra a fase de cura, mas **o granuloma costuma ser diafisário e não é distintamente excêntrico** (Tachdjian, p. 1040).
+A **osteomielite** é o imitador mais traiçoeiro: dor, febre, VHS alta e lise na criança, e até a lâmina engana, porque **zonas de necrose levam ao diagnóstico errado de osteomielite**; a HCL **deve sempre ser considerada antes de diagnosticar osteomielite aguda** (Dahlin, p. 361, legenda da Figura 26.126). Na **punção aspirativa por agulha fina**, que basta para confirmar a HCL, a osteomielite mostra **pus, neutrófilos ou germes** (Tachdjian, p. 1040); na coluna, **a osteomielite destrói o disco e a HCL o preserva** (Lovell, cap. 10, p. 331); e o tipo IA de ROBERTS da osteomielite subaguda, em saca-bocado metafisário, **se parece com o granuloma eosinofílico** (Lovell, cap. 12, Figura 12-15). O **EWING** tem **mais edema peritumoral** na RM (Tachdjian, p. 1039) e costuma ter **massa de partes moles** (Lovell, cap. 10, p. 331). Abaixo de 5 anos, histiocitose e **WILMS metastático** entram no diferencial do osteossarcoma (Tachdjian, cap. 26, p. 1054). O **fibroma não ossificante** lembra a fase de cura, mas **o granuloma costuma ser diafisário e não é distintamente excêntrico** (Tachdjian, p. 1040).
 
-!tabela Como separar a HCL dos seus imitadores (Tachdjian 6ª ed., p. 1039 e 1040, e cap. 26, p. aprox. 1068 e 1081; Lovell 7ª ed., cap. 10, p. 331; Dahlin 6ª ed., p. 360 e 361; Campbell 15ª ed., p. 965)
+!tabela Como separar a HCL dos seus imitadores (Tachdjian 6ª ed., p. 1039 e 1040, e cap. 26, p. 1054 e 1067; Lovell 7ª ed., cap. 10, p. 331; Dahlin 6ª ed., p. 360 e 361; Campbell 15ª ed., p. 965)
 | Imitador | O que é parecido | O que separa |
 |---|---|---|
 | Osteomielite | Dor, febre, VHS alta, lise, necrose na lâmina | Aspirado com pus, neutrófilos ou germes; disco destruído na coluna |

@@ -1,6 +1,6 @@
 ---
 id: campbell15-lesoes-musculares
-versao: 2
+versao: 3
 titulo: Lesões musculares
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 53 · Traumatic Disorders
 autores: David L. BERNHOLT e Frederick M. AZAR
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (p. 2242 a 2244, 2249 a 2253, 2269, 2277, 2280 a 2283, 2288 e 2289), cap. 37 (p. 1325 a 1329), cap. 38 (p. 1414), cap. 3 (p. 182 e 184) e cap. 29 (p. 972); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 35 (p. 1672, 1722, 1733 e 1734); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 1, 75 e 76; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 15.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (p. 2242 a 2244, 2249 a 2253, 2269, 2277, 2280 a 2283, 2288 e 2289), cap. 37 (p. 1325 a 1329), cap. 38 (p. 1414), cap. 3 (p. 182 e 184) e cap. 29 (p. 972); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 34 (p. 1680) e cap. 35 (p. 1722, 1733 e 1734); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 1 (seção Marcha normal), cap. 75 (Traumatologia do esporte, seções Lesões tendinosas e Lesões musculares) e cap. 76 (Reabilitação das lesões do esporte, seções Lesão muscular e Dor muscular tardia); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 15 (seção Combined Primary and Secondary Orthopaedic Injuries e Fig. 15-6). Fonte aberta lida em 12/11/2026: BOGACKA-WÓJCIK et al., Anat Sci Int 2026 (PMC13541974, tendão e junção miotendínea da cabeça longa do bíceps femoral).
 subtemas: Lesões musculares
 resumo: Estiramento por contração excêntrica, sobretudo nos isquiotibiais durante a corrida de velocidade, com a maioria das lesões na junção miotendínea proximal; graus leve, moderado e grave e a classificação de PEETRONS (menos de 5%, 5 a 50%, ruptura total); cicatrização em fase inflamatória (1 a 3 dias), de reparo (3 a 4 semanas) e de remodelamento (3 a 6 meses); RICE nos primeiros dias e mobilização precoce; tennis leg na cabeça medial do gastrocnêmio com joelho estendido e tornozelo em dorsiflexão, sempre não operatória; peitoral maior com fraqueza em adução e rotação interna e perda da prega axilar anterior; avulsão proximal dos isquiotibiais operada quando três tendões ou dois com 3 cm de retração, com dor e fraqueza como complicações principais; miosite ossificante com ossificação mais madura na periferia; síndrome compartimental crônica pelos critérios de PEDOWITZ.
 ---
@@ -52,7 +52,7 @@ O Campbell (cap. 37) mostra que a unidade motora é o que se vê na eletromiogra
 
 ## Proximal ou distal: miopatia contra neuropatia
 
-O padrão de fraqueza ajuda a separar doença do músculo e doença do nervo. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 35), descreve as distrofias de cinturas com **fraqueza nos músculos proximais** dos membros (p. 1722 aprox.) e, no CHARCOT-MARIE-TOOTH, uma **neuropatia comprimento-dependente**, em que os nervos mais longos sofrem primeiro e por isso os achados iniciais são **fraqueza e atrofia distais** (p. 1672 aprox.). O Campbell (cap. 37) lembra que, mesmo dentro das distrofias miotônicas, o tipo 2 tem músculos proximais mais fracos (p. 1329 aprox.). A regra geral da prova é esta: **miopatia, proximal; neuropatia periférica, distal**. A atrofia muscular espinal, que é doença do neurônio motor e não do nervo periférico, também é proximal, e essa é a exceção que costuma aparecer em alternativa.
+O padrão de fraqueza ajuda a separar doença do músculo e doença do nervo. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 35, Muscle Diseases), descreve as distrofias de cinturas com **fraqueza nos músculos proximais** dos membros (p. 1722) e, no capítulo dos nervos periféricos (cap. 34), no CHARCOT-MARIE-TOOTH, uma **neuropatia comprimento-dependente**, em que os nervos mais longos sofrem primeiro e por isso os achados iniciais são **fraqueza e atrofia distais** (p. 1680). O Campbell (cap. 37) lembra que, mesmo dentro das distrofias miotônicas, o tipo 2 tem músculos proximais mais fracos (Tabela 37.1, p. 1328). A regra geral da prova é esta: **miopatia, proximal; neuropatia periférica, distal**. A atrofia muscular espinal, que é doença do neurônio motor e não do nervo periférico, também é proximal, e essa é a exceção que costuma aparecer em alternativa.
 
 !questoes central=conceitos-basicos-0199 relacionadas=conceitos-basicos-0269,conceitos-basicos-0300
 conceito: Do maior para o menor: músculo, fascículo, fibra, miofibrila e miofilamento; músculo normal tem tipo I e tipo II na razão de 1:2; miopatia é proximal e neuropatia periférica é distal.
@@ -65,11 +65,11 @@ alerta: Os livros lidos não descrevem a figura de `conceitos-basicos-0199` nem 
 
 ## Os três tipos de contração
 
-O Sizínio Hebert, 5ª ed. (cap. 1, Marcha normal e patológica), define os três tipos com exemplos da marcha. O ponto central: na **concêntrica**, o músculo encurta e **gera energia**; na **excêntrica**, **alonga enquanto contrai**, freia e **absorve energia**; na **isométrica**, estabiliza sem mudar de comprimento.
+O Sizínio Hebert, 5ª ed. (cap. 1, Marcha normal e patológica), define os três tipos com exemplos da marcha (seção Marcha normal). O ponto central: na **concêntrica**, o músculo encurta e **gera energia**; na **excêntrica**, **alonga enquanto contrai**, freia e **absorve energia**; na **isométrica**, estabiliza sem mudar de comprimento.
 
 O mesmo trecho define o músculo **biarticular** como aquele que cruza ao menos duas articulações. Esses músculos podem economizar energia, transferindo força de uma articulação para a outra. O preço é que podem ser estirados nas duas pontas ao mesmo tempo, por exemplo, os isquiotibiais com o quadril fletido e o joelho estendido no fim do balanço da corrida.
 
-!tabela Os três tipos de contração (Sizínio 5ª, cap. 1)
+!tabela Os três tipos de contração (Sizínio 5ª, cap. 1, seção Marcha normal)
 | Tipo | Comprimento do músculo | Efeito no movimento | Energia | Exemplo na marcha |
 | --- | --- | --- | --- | --- |
 | concêntrica | encurta | acelera, no sentido anatômico | gera | gastrocnêmio no pré-balanço |
@@ -79,11 +79,11 @@ O mesmo trecho define o músculo **biarticular** como aquele que cruza ao menos 
 
 ## Por que a excêntrica rompe
 
-O Sizínio (cap. 75) diz que o estiramento muscular ocorre por **excesso de alongamento**, geralmente associado a **contração excêntrica brusca**. Cita ZARINS e CIULLO: as lesões acontecem com maior frequência durante **contrações excêntricas**, nos movimentos em que se geram altos níveis de força, como a corrida, no momento em que o músculo modula o gesto esportivo. Por isso a **corrida é o mecanismo de lesão mais comum**, e os **isquiotibiais**, submetidos a contrações excêntricas constantes na corrida de velocidade, são os mais atingidos. LYSHOLM e WIKLANDER mostraram que os **velocistas** têm mais lesões dos isquiotibiais que os corredores de meia e longa distância.
+O Sizínio (cap. 75) diz que o estiramento muscular ocorre por **excesso de alongamento**, geralmente associado a **contração excêntrica brusca** (cap. 75, seção Lesões musculares). Cita ZARINS e CIULLO: as lesões acontecem com maior frequência durante **contrações excêntricas**, nos movimentos em que se geram altos níveis de força, como a corrida, no momento em que o músculo modula o gesto esportivo. Por isso a **corrida é o mecanismo de lesão mais comum**, e os **isquiotibiais**, submetidos a contrações excêntricas constantes na corrida de velocidade, são os mais atingidos. LYSHOLM e WIKLANDER mostraram que os **velocistas** têm mais lesões dos isquiotibiais que os corredores de meia e longa distância (cap. 75, seção Lesões musculares).
 
 O dano não fica só na miofibrila: o enunciado do ENARE 2025 lista membrana, linha Z, sarcolema, túbulos T e miofibrilas, e liga esse microtrauma à contração excêntrica. O Sizínio sustenta o mecanismo excêntrico.
 
-A **fadiga** favorece a lesão porque diminui a capacidade do músculo de absorver carga. O músculo **frio** também: SAFRAN mostrou que músculos aquecidos precisam de maior comprimento e maior força para se romper, e que os não aquecidos são mais inelásticos.
+A **fadiga** favorece a lesão porque diminui a capacidade do músculo de absorver carga (cap. 75, seção Lesões musculares). O músculo **frio** também: SAFRAN mostrou que músculos aquecidos precisam de maior comprimento e maior força para se romper, e que os não aquecidos são mais inelásticos (cap. 75, seção Lesões musculares).
 
 ## Monoarticular ou biarticular
 
@@ -100,7 +100,7 @@ alerta: O Sizínio sustenta a contração excêntrica e define o músculo biarti
 
 ## As três portas de entrada
 
-O Sizínio (cap. 75) divide as lesões musculares em três grupos: **estiramento agudo e avulsão**, **contusões** e **lesões musculares induzidas pelo exercício**. A causa pode ser estiramento (mecanismo indireto, de dentro para fora) ou trauma direto (de fora para dentro). A laceração, terceira forma clássica, é o corte da fibra por agente penetrante, e ganha importância nas feridas de guerra.
+O Sizínio (cap. 75) divide as lesões musculares em três grupos: **estiramento agudo e avulsão**, **contusões** e **lesões musculares induzidas pelo exercício** (cap. 75, seção Lesões musculares). A causa pode ser estiramento (mecanismo indireto, de dentro para fora) ou trauma direto (de fora para dentro). A laceração, terceira forma clássica, é o corte da fibra por agente penetrante, e ganha importância nas feridas de guerra.
 
 **Contusão** é a pancada direta sobre o músculo, típica da coxa no futebol (o joelho do adversário contra o quadríceps). O dano fica na profundidade, junto ao osso, onde o músculo é esmagado contra o fêmur. Daí as duas complicações que a prova cobra na coxa: o hematoma profundo que pode virar **miosite ossificante** e, mais raramente, a **síndrome compartimental**.
 
@@ -110,15 +110,15 @@ O Sizínio (cap. 75) divide as lesões musculares em três grupos: **estiramento
 
 ## A lesão induzida pelo exercício
 
-A dor muscular tardia é o exemplo mais comum de lesão sem ruptura. O Sizínio (cap. 75) diz que as dores musculares pós-exercício surgem, em geral, **12 a 48 horas** após o esforço, com dor à palpação e limitação para o movimento. O cap. 76 descreve o quadro como dor, inchaço e rigidez dias depois de uma atividade não habitual, com mecanismos possíveis como acúmulo de ácido lático, espasmo, dano tecidual, inflamação e enzimas da lesão celular. A **oxigenoterapia hiperbárica** não mostrou benefício em revisão sistemática de sete estudos e houve até algum aumento de dor. O ponto de prova é que a lesão por exercício excêntrico pouco habitual é a que mais dói no dia seguinte.
+A dor muscular tardia é o exemplo mais comum de lesão sem ruptura. O Sizínio (cap. 75) diz que as dores musculares pós-exercício surgem, em geral, **12 a 48 horas** após o esforço, com dor à palpação e limitação para o movimento (cap. 75, seção Lesões musculares). O cap. 76 descreve o quadro como dor, inchaço e rigidez dias depois de uma atividade não habitual, com mecanismos possíveis como acúmulo de ácido lático, espasmo, dano tecidual, inflamação e enzimas da lesão celular. A **oxigenoterapia hiperbárica** não mostrou benefício em revisão sistemática de sete estudos e houve até algum aumento de dor (cap. 76, seção Dor muscular tardia). O ponto de prova é que a lesão por exercício excêntrico pouco habitual é a que mais dói no dia seguinte.
 
 ## A laceração por explosão e as zonas de NECHAEV
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 15, Gunshot and Wartime Injuries), descreve, a partir de estudos histológicos de combatentes soviéticos no Afeganistão e de modelos animais, as **três zonas de lesão** de NECHAEV após uma explosão.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 15, Gunshot and Wartime Injuries), descreve, a partir de estudos histológicos de combatentes soviéticos no Afeganistão e de modelos animais, as **três zonas de lesão** de NECHAEV após uma explosão (seção Combined Primary and Secondary Orthopaedic Injuries, Fig. 15-6). A Fig. 15-6 desenha as zonas num membro inferior atingido por mina terrestre: a **zona I** (amputação traumática) no pé, a **zona II** (zona crítica de lesão tecidual) na perna e a **zona III** (contusão de partes moles) na coxa.
 
-A zona II concentra a lesão perto dos feixes neurovasculares e dos planos osteofasciais, como se a onda de choque fosse transmitida por eles; a amputação ideal fica na fronteira entre II e III, onde as fibras ainda contraem e o edema é mínimo.
+A zona II concentra a lesão perto dos feixes neurovasculares e dos planos osteofasciais, como se a onda de choque fosse transmitida por eles; a amputação ideal fica na fronteira entre II e III, onde as fibras ainda contraem e o edema é mínimo (mesma seção).
 
-!tabela Zonas de lesão após explosão segundo NECHAEV (Rockwood and Green 10ª, cap. 15)
+!tabela Zonas de lesão após explosão segundo NECHAEV (Rockwood and Green 10ª, cap. 15, seção Combined Primary and Secondary Orthopaedic Injuries e Fig. 15-6)
 | Zona | Posição | Achados | Conduta |
 | --- | --- | --- | --- |
 | I | junto ao ponto da explosão | amputação traumática, destruição em vários níveis, contaminação por solo e fragmentos | amputar por ela é inviável |
@@ -126,26 +126,25 @@ A zona II concentra a lesão perto dos feixes neurovasculares e dos planos osteo
 | III | mais distante | avulsão de arteríolas, retorno venoso prejudicado, alterações axonais reativas | amputar na fronteira entre II e III |
 !fim
 
-A questão do TARO 2014 perguntou em qual zona ficam as lacerações da coxa causadas por estilhaços, e não pelo efeito direto da explosão. O gabarito oficial é a zona 3: os estilhaços voam além da área de destruição direta e ferem tecidos à distância. O texto do Rockwood lido não diz isso com essas palavras; descreve microlacerações na zona II e lesão vascular e nervosa na zona III.
+A questão do TARO 2014 perguntou em qual zona ficam as lacerações da coxa causadas por estilhaços, e não pelo efeito direto da explosão. O gabarito oficial é a zona 3, e a Fig. 15-6 do Rockwood o sustenta: no desenho da lesão por mina, a coxa fica na **zona III**, a de contusão de partes moles, longe do ponto da explosão. O texto descreve microlacerações na zona II e, na zona III, avulsão de arteríolas, retorno venoso prejudicado e alterações axonais reativas.
 
 !questoes central=conceitos-basicos-0060
 conceito: NECHAEV dividiu a lesão por explosão em três zonas; a I é de destruição e amputação, a II de microlacerações e hemorragia focal, a III de lesão arteriolar e axonal, e a amputação ideal fica entre II e III.
 como: O TARO 2014 perguntou a zona das lacerações na coxa provocadas por estilhaços, e não pela explosão direta (zona 3).
 armadilha: Marcar a zona 1, que é a da destruição direta pela explosão, ou uma quarta zona que não existe na descrição.
-alerta: O Rockwood and Green 10ª (cap. 15) descreve três zonas, mas não localiza explicitamente as lacerações por estilhaços na zona III; o gabarito C de `conceitos-basicos-0060` fica mantido.
 !fim
 
 # Classificações: graus, PEETRONS e o que cada grau significa {radar=fundamento}
 
 ## A classificação clínica em três graus
 
-O Sizínio (cap. 75) divide as lesões em **leves** (mínima lesão, mínima hemorragia, recuperação rápida), **moderadas** (lesão parcial, mais frequente na **transição miotendínea**, com dor e perda funcional) e **graves** (ruptura muscular, equimose intensa e edema). É a lógica dos graus I, II e III que a prova usa: grau I é o estiramento de poucas fibras, sem perda de força relevante; grau II é a ruptura parcial, com perda funcional e às vezes falha palpável; grau III é a ruptura completa, com retração e hematoma visível.
+O Sizínio (cap. 75) divide as lesões em **leves** (mínima lesão, mínima hemorragia, recuperação rápida), **moderadas** (lesão parcial, mais frequente na **transição miotendínea**, com dor e perda funcional) e **graves** (ruptura muscular, equimose intensa e edema) (cap. 75, seção Lesões musculares). É a lógica dos graus I, II e III que a prova usa: grau I é o estiramento de poucas fibras, sem perda de força relevante; grau II é a ruptura parcial, com perda funcional e às vezes falha palpável; grau III é a ruptura completa, com retração e hematoma visível.
 
 ## A classificação de PEETRONS
 
-O Sizínio (cap. 76) traz a classificação de PEETRONS, que combina o quadro clínico com a imagem, seja ressonância magnética, seja ultrassonografia. O grau 1 envolve **menos de 5%** do músculo; o grau 2 é a **ruptura parcial de 5% a 50%** do volume ou da área de secção; o grau 3 é a **ruptura total com retração completa**. Quanto maior o grau, maior o tempo de reabilitação, que vai de **uma semana a seis meses**.
+O Sizínio (cap. 76) traz a classificação de PEETRONS, que combina o quadro clínico com a imagem, seja ressonância magnética, seja ultrassonografia (cap. 76, seção Lesão muscular). O grau 1 envolve **menos de 5%** do músculo; o grau 2 é a **ruptura parcial de 5% a 50%** do volume ou da área de secção; o grau 3 é a **ruptura total com retração completa**. Quanto maior o grau, maior o tempo de reabilitação, que vai de **uma semana a seis meses**.
 
-!tabela Graus da lesão muscular (Sizínio 5ª, cap. 75, e cap. 76)
+!tabela Graus da lesão muscular (Sizínio 5ª, cap. 75, seção Lesões musculares, e cap. 76, seção Lesão muscular)
 | Grau | Clínica (Sizínio cap. 75) | PEETRONS (cap. 76) | O que esperar |
 | --- | --- | --- | --- |
 | 0 | não descrito | sintomas sem alteração na imagem | retorno rápido |
@@ -166,19 +165,19 @@ O Campbell (cap. 53) usa a graduação da ressonância de outro modo: nos estira
 
 ## As fases e seus tempos
 
-O Sizínio (cap. 76) resume: a lesão e o reparo envolvem três estágios, a **fase inflamatória (1 a 3 dias)**, a **fase de reparo (3 a 4 semanas)** e a **fase de remodelamento (3 a 6 meses)**, e as duas últimas **se sobrepõem**. A conduta inicial precisa respeitar essas fases para que o tratamento funcione.
+O Sizínio (cap. 76) resume: a lesão e o reparo envolvem três estágios, a **fase inflamatória (1 a 3 dias)**, a **fase de reparo (3 a 4 semanas)** e a **fase de remodelamento (3 a 6 meses)**, e as duas últimas **se sobrepõem** (cap. 76, seção Lesão muscular). A conduta inicial precisa respeitar essas fases para que o tratamento funcione.
 
-Na **fase inflamatória**, logo após o trauma, as fibras rompidas sofrem necrose nas pontas, forma-se hematoma entre os cotos e chegam as células de defesa. O Sizínio (cap. 75), falando da cicatrização do tendão, descreve essa largada: o local lesionado é invadido por coágulo e debris, e isso induz a **migração de fagócitos** para remover células e matriz. O livro não diz qual célula chega primeiro; o gabarito do TEOT 2025 coloca os **polimorfonucleares** como as mais abundantes imediatamente após o trauma, o que é coerente com uma fase que dura só de 1 a 3 dias.
+Na **fase inflamatória**, logo após o trauma, as fibras rompidas sofrem necrose nas pontas, forma-se hematoma entre os cotos e chegam as células de defesa. O Sizínio (cap. 75), falando da cicatrização do tendão, descreve essa largada: o local lesionado é invadido por coágulo e debris, e isso induz a **migração de fagócitos** para remover células e matriz (cap. 75, seção Lesões tendinosas). O livro não diz qual célula chega primeiro; o gabarito do TEOT 2025 coloca os **polimorfonucleares** como as mais abundantes imediatamente após o trauma, o que é coerente com uma fase que dura só de 1 a 3 dias.
 
-Na **fase de reparo**, que dura de 3 a 4 semanas, o tecido necrótico é removido por **fagocitose** e o músculo tenta **regenerar as miofibrilas**, enquanto fibroblastos produzem a cicatriz entre os cotos. Regeneração e cicatriz competem. O Sizínio (cap. 75) cita RANTANEN: o ultrassom pulsado pode aumentar a **proliferação de células-satélites na fase de miorregeneração**, ou seja, as células-satélites são as que repõem as fibras. NIKOLAOU encontrou, já ao sétimo dia, resolução da inflamação e maturação dos fibroblastos, o que mostra a sobreposição entre as fases.
+Na **fase de reparo**, que dura de 3 a 4 semanas, o tecido necrótico é removido por **fagocitose** e o músculo tenta **regenerar as miofibrilas**, enquanto fibroblastos produzem a cicatriz entre os cotos. Regeneração e cicatriz competem. O Sizínio (cap. 75) cita RANTANEN: o ultrassom pulsado pode aumentar a **proliferação de células-satélites na fase de miorregeneração** (cap. 75, seção Lesões musculares), ou seja, as células-satélites são as que repõem as fibras. NIKOLAOU encontrou, já ao sétimo dia, resolução da inflamação e maturação dos fibroblastos (cap. 75, seção Lesões musculares), o que mostra a sobreposição entre as fases.
 
-Na **fase de remodelamento**, de 3 a 6 meses, o tecido se organiza e amadurece. No tendão, o Sizínio descreve essa fase como reorientação dos fibroblastos e realinhamento do colágeno, com tecido maduro só em 4 a 6 meses. Por isso a banca do TARO 2022 separa os verbos: **regenerar** é do reparo; **maturar** é do remodelamento.
+Na **fase de remodelamento**, de 3 a 6 meses, o tecido se organiza e amadurece. No tendão, o Sizínio descreve essa fase como reorientação dos fibroblastos e realinhamento do colágeno, com tecido maduro só em 4 a 6 meses (cap. 75, seção Lesões tendinosas). Por isso a banca do TARO 2022 separa os verbos: **regenerar** é do reparo; **maturar** é do remodelamento.
 
 ## Cicatriz contra regeneração
 
-O Sizínio (cap. 75) dá o aviso que explica a recidiva: em teoria o músculo pode se regenerar, mas, quando há ruptura, **é mais frequente a formação de tecido cicatricial**, e as **adesões** ajudam a explicar a perda de força depois da lesão. NIKOLAOU observou, ao **sétimo dia**, resolução da inflamação, maturação dos fibroblastos e **fibrose localizada**, um tecido **inelástico**, diferente do músculo normal. Por isso o atleta com lesão prévia tem **maior risco de nova lesão**. As diretrizes do Futbol Club Barcelona, citadas no cap. 76, resumem o objetivo: estimular a **regeneração com o mínimo de fibrose**.
+O Sizínio (cap. 75) dá o aviso que explica a recidiva: em teoria o músculo pode se regenerar, mas, quando há ruptura, **é mais frequente a formação de tecido cicatricial**, e as **adesões** ajudam a explicar a perda de força depois da lesão (cap. 75, seção Lesões musculares). NIKOLAOU observou, ao **sétimo dia**, resolução da inflamação, maturação dos fibroblastos e **fibrose localizada**, um tecido **inelástico**, diferente do músculo normal. Por isso o atleta com lesão prévia tem **maior risco de nova lesão** (cap. 75, seção Lesões musculares). As diretrizes do Futbol Club Barcelona, citadas no cap. 76, resumem o objetivo: estimular a **regeneração com o mínimo de fibrose** (cap. 76, seção Lesão muscular).
 
-!tabela Fases da cicatrização muscular e do tendão (Sizínio 5ª, cap. 76; cap. 75)
+!tabela Fases da cicatrização muscular e do tendão (Sizínio 5ª, cap. 76, seção Lesão muscular; cap. 75, seções Lesões tendinosas e Lesões musculares)
 | Fase | Músculo (cap. 76) | O que acontece | Tendão (cap. 75) |
 | --- | --- | --- | --- |
 | inflamatória | 1 a 3 dias | hematoma, necrose das pontas, chegada dos fagócitos | cerca de 3 dias; coágulo, debris e fagócitos |
@@ -197,32 +196,32 @@ alerta: O Sizínio dá as fases e os tempos, cita fagócitos e células-satélit
 
 ## Onde a unidade falha
 
-O Sizínio (cap. 75) dá a regra que explica por que a lesão muscular moderada é **mais frequente na transição miotendínea**: quando uma **tensão longitudinal** é aplicada aos poucos sobre a unidade **músculo-tendão-osso**, a ruptura costuma ocorrer **próxima à junção musculotendínea**; se aplicada na unidade **osso-tendão**, o resultado é **avulsão da inserção óssea**. A junção é o ponto em que a estrutura contrátil, elástica, encontra a estrutura de colágeno, rígida; a concentração de tensão está ali.
+O Sizínio (cap. 75) dá a regra que explica por que a lesão muscular moderada é **mais frequente na transição miotendínea**: quando uma **tensão longitudinal** é aplicada aos poucos sobre a unidade **músculo-tendão-osso**, a ruptura costuma ocorrer **próxima à junção musculotendínea**; se aplicada na unidade **osso-tendão**, o resultado é **avulsão da inserção óssea** (cap. 75, seção Lesões tendinosas). A junção é o ponto em que a estrutura contrátil, elástica, encontra a estrutura de colágeno, rígida; a concentração de tensão está ali.
 
 No esqueleto imaturo a hierarquia muda. O Campbell (cap. 38) explica que a cartilagem da apófise é fraca comparada ao osso e que a força necessária para romper a apófise é **menor** que a necessária para romper a unidade musculotendínea; por isso, no adolescente, as **fraturas por avulsão apofisária** são mais frequentes que a lesão musculotendínea (p. 1414).
 
 ## O tendão: colágeno alinhado
 
-O Sizínio (cap. 75) lista o que determina a resistência do tendão: espessura (mais largo, mais carga), comprimento (mais comprido, mais estiramento), composição (quantidade, maturação e organização do colágeno), idade (menos reparo de colágeno e menos vasos), exercício (aumenta tamanho e resistência do colágeno), imobilização (aumenta a degradação e **altera a orientação** do colágeno, diminuindo a capacidade tênsil), alterações vasculares, hormônios (a falta de estrogênio na menopausa) e corticoide (inibe a síntese de colágeno). Um tendão normal estira até **4%** do comprimento sem lesão, tem metabolismo baixo e vascularização pobre.
+O Sizínio (cap. 75) lista o que determina a resistência do tendão: espessura (mais largo, mais carga), comprimento (mais comprido, mais estiramento), composição (quantidade, maturação e organização do colágeno), idade (menos reparo de colágeno e menos vasos), exercício (aumenta tamanho e resistência do colágeno), imobilização (aumenta a degradação e **altera a orientação** do colágeno, diminuindo a capacidade tênsil), alterações vasculares, hormônios (a falta de estrogênio na menopausa) e corticoide (inibe a síntese de colágeno) (cap. 75, seção Lesões tendinosas). Um tendão normal estira até **4%** do comprimento sem lesão, tem metabolismo baixo e vascularização pobre.
 
-A organização do colágeno é **longitudinal**, no eixo da força. Na cicatrização, os fibroblastos se organizam **no maior eixo do tendão** e, no remodelamento, há **realinhamento do colágeno**. Uma afirmação de que o colágeno do tendão é circular, independente da direção da contração, contraria essa descrição.
+A organização do colágeno é **longitudinal**, no eixo da força. Na cicatrização, os fibroblastos se organizam **no maior eixo do tendão** e, no remodelamento, há **realinhamento do colágeno** (cap. 75, seção Lesões tendinosas). Uma afirmação de que o colágeno do tendão é circular, independente da direção da contração, contraria essa descrição.
 
 !questoes central=conceitos-basicos-0306
 conceito: O colágeno do tendão é alinhado no eixo longitudinal, na direção da força; na cicatrização, os fibroblastos se orientam no maior eixo e o colágeno se realinha no remodelamento.
 como: O TARO 2006 afirmou, em certo ou errado, que o colágeno do tendão é circular, independente da direção da contração muscular.
 armadilha: Aceitar a ideia de arranjo circular por analogia com vasos ou com o anel fibroso.
-alerta: `conceitos-basicos-0306` não tem gabarito oficial; o Sizínio (cap. 75) sustenta "Errado".
+alerta: `conceitos-basicos-0306` não tem gabarito oficial; o Sizínio (cap. 75, seção Lesões tendinosas) sustenta "Errado".
 !fim
 
 # Exame clínico e diagnóstico por imagem {radar=clinico}
 
 ## O que examinar
 
-O Sizínio (cap. 76) dá o roteiro do exame. Procurar **equimose ou deformidade** no ventre muscular. Palpar em busca de **falha de continuidade**, dor, temperatura, espasmo e alteração de sensibilidade. Testar a força **em várias posições**, porque o comprimento do músculo muda com a posição articular, lembrando que a dor do teste pode ser a causa da fraqueza. Se o músculo é **biarticular**, avaliar a amplitude das duas articulações: o isquiotibial é testado pela **elevação da perna estendida** e pela flexão ativa e passiva do joelho. Nas manobras provocativas, perguntar se dói mais **ao contrair ou ao alongar**.
+O Sizínio (cap. 76) dá o roteiro do exame (cap. 76, seção Lesão muscular). Procurar **equimose ou deformidade** no ventre muscular. Palpar em busca de **falha de continuidade**, dor, temperatura, espasmo e alteração de sensibilidade. Testar a força **em várias posições**, porque o comprimento do músculo muda com a posição articular, lembrando que a dor do teste pode ser a causa da fraqueza. Se o músculo é **biarticular**, avaliar a amplitude das duas articulações: o isquiotibial é testado pela **elevação da perna estendida** e pela flexão ativa e passiva do joelho. Nas manobras provocativas, perguntar se dói mais **ao contrair ou ao alongar**.
 
 ## Radiografia, ultrassom, tomografia e ressonância
 
-O Sizínio (cap. 75) cita CLANTON e COUPE: as **radiografias são de pouca utilidade** na lesão muscular, mas ajudam a diagnosticar a **avulsão dos isquiotibiais** (fragmento ósseo). GARRETT usou tomografia para os isquiotibiais. A **ressonância magnética é o exame mais relatado** para diagnóstico e avaliação. O exame físico não dá o **local exato** nem a **extensão**, e o tratamento depende disso. O livro sugere usar exames subsidiários como **critério de retorno ao esporte**, para analisar o tecido e reduzir recidivas.
+O Sizínio (cap. 75) cita CLANTON e COUPE: as **radiografias são de pouca utilidade** na lesão muscular, mas ajudam a diagnosticar a **avulsão dos isquiotibiais** (fragmento ósseo). GARRETT usou tomografia para os isquiotibiais. A **ressonância magnética é o exame mais relatado** para diagnóstico e avaliação (cap. 75, seção Lesões musculares). O exame físico não dá o **local exato** nem a **extensão**, e o tratamento depende disso. O livro sugere usar exames subsidiários como **critério de retorno ao esporte**, para analisar o tecido e reduzir recidivas (cap. 75, seção Lesões musculares).
 
 O Campbell (cap. 53) segue a mesma linha. No gastrocnêmio, se o diagnóstico é incerto, a **RM mostra a ruptura melhor que a TC ou a ultrassonografia** (p. 2269). No peitoral maior, **RM e ultrassom** definem local e extensão (p. 2289). Na avulsão proximal dos isquiotibiais com três tendões, a confirmação é por **RM sem contraste** (p. 2281). No glúteo médio, a **RM tem 91% de acurácia** (p. 2280).
 
@@ -233,21 +232,21 @@ A exceção é a **miosite ossificante**: o Campbell (cap. 3) diz que, nela, a *
 
 ## Os primeiros dias
 
-O Sizínio (cap. 76) começa por um princípio de prudência: como é difícil saber o grau real da lesão na fase aguda, **toda lesão muscular deve ser tratada como séria nos primeiros dois a três dias**. As recomendações básicas são **repouso, compressão** da área para diminuir o extravasamento de sangue, **imobilização, resfriamento, elevação** da extremidade por um a três dias e menos carga sobre o membro. É o que o Campbell (cap. 53) chama de **RICE** (rest, ice, compression, elevation) quando trata o gastrocnêmio (p. 2269).
+O Sizínio (cap. 76) começa por um princípio de prudência: como é difícil saber o grau real da lesão na fase aguda, **toda lesão muscular deve ser tratada como séria nos primeiros dois a três dias** (cap. 76, seção Lesão muscular). As recomendações básicas são **repouso, compressão** da área para diminuir o extravasamento de sangue, **imobilização, resfriamento, elevação** da extremidade por um a três dias e menos carga sobre o membro. É o que o Campbell (cap. 53) chama de **RICE** (rest, ice, compression, elevation) quando trata o gastrocnêmio (p. 2269).
 
-O gelo tem o dado mais cobrado: o Sizínio (cap. 75) cita BARLAS, com **queda máxima da temperatura do músculo por volta dos 20 minutos**, e recomenda a crioterapia em quase todas as lesões, para diminuir dor e edema e frear a resposta inflamatória excessiva.
+O gelo tem o dado mais cobrado: o Sizínio (cap. 75) cita BARLAS, com **queda máxima da temperatura do músculo por volta dos 20 minutos**, e recomenda a crioterapia em quase todas as lesões, para diminuir dor e edema e frear a resposta inflamatória excessiva (cap. 75, seção Lesões musculares).
 
 ## Imobilização curta, movimento cedo
 
-O repouso é recomendado por **menos de uma semana**. CLANTON e COUPE recomendam **mobilização controlada, guiada pela tolerância à dor, após um a cinco dias** de imobilização. O Sizínio (cap. 75) acrescenta que, no período inicial, é importante manter a ação muscular para prevenir atrofia e favorecer a cicatrização, começando cedo os **exercícios isométricos** com o membro em posição confortável e evoluindo aos poucos. A inatividade reduz a atividade eletromiográfica e a sincronia da contração.
+O repouso é recomendado por **menos de uma semana** (cap. 75, seção Lesões musculares). CLANTON e COUPE recomendam **mobilização controlada, guiada pela tolerância à dor, após um a cinco dias** de imobilização. O Sizínio (cap. 75) acrescenta que, no período inicial, é importante manter a ação muscular para prevenir atrofia e favorecer a cicatrização, começando cedo os **exercícios isométricos** com o membro em posição confortável e evoluindo aos poucos (cap. 75, seção Lesões musculares). A inatividade reduz a atividade eletromiográfica e a sincronia da contração.
 
-Outros recursos citados: **estimulação elétrica transcutânea** para a dor do início; **ultrassom pulsado**, que pode aumentar a proliferação de células-satélites, embora sua utilidade nas lesões profundas não esteja definida; e **alongamento**, que deve durar de **10 a 60 segundos**, com pelo menos **três repetições de 20 a 30 segundos**.
+Outros recursos citados: **estimulação elétrica transcutânea** para a dor do início; **ultrassom pulsado**, que pode aumentar a proliferação de células-satélites, embora sua utilidade nas lesões profundas não esteja definida; e **alongamento**, que deve durar de **10 a 60 segundos**, com pelo menos **três repetições de 20 a 30 segundos** (cap. 75, seção Lesões musculares).
 
 ## A progressão da reabilitação
 
-O Quadro 76.1 do Sizínio organiza o tratamento em etapas (tabela abaixo), e as diretrizes do Barcelona pedem progressão do simples para o complexo até o gesto esportivo, em cadeia aberta e fechada, com exercício excêntrico dos flexores do joelho.
+O Quadro 76.1 do Sizínio organiza o tratamento em etapas (tabela abaixo), e as diretrizes do Barcelona pedem progressão do simples para o complexo até o gesto esportivo, em cadeia aberta e fechada, com exercício excêntrico dos flexores do joelho (cap. 76, seção Lesão muscular).
 
-!tabela Etapas do tratamento conservador da lesão muscular (Sizínio 5ª, cap. 76, Quadro 76.1; cap. 75)
+!tabela Etapas do tratamento conservador da lesão muscular (Sizínio 5ª, cap. 76, Quadro 76.1, seção Lesão muscular; cap. 75, seção Lesões musculares)
 | Etapa | Objetivo | Recursos |
 | --- | --- | --- |
 | primeiros 2 a 3 dias | conter hematoma e dor; tratar como lesão séria | repouso, compressão, gelo (efeito máximo em ~20 min), elevação, muletas, TENS |
@@ -258,9 +257,9 @@ O Quadro 76.1 do Sizínio organiza o tratamento em etapas (tabela abaixo), e as 
 
 ## Prevenção e retorno
 
-O afastamento médio foi de **29 dias**, com variação de 1 a 365 dias. A prevenção não tem prova definitiva: TAYLOR viu que o alongamento aumenta a absorção de energia, mas WORRELL não encontrou relação entre déficit de força dos isquiotibiais e lesão. A conclusão do livro é que **aquecimento e alongamento antes do esporte diminuem a incidência**. A meta é voltar ao nível anterior com **risco mínimo de recidiva**.
+O afastamento médio foi de **29 dias**, com variação de 1 a 365 dias (cap. 75, seção Lesões musculares). A prevenção não tem prova definitiva: TAYLOR viu que o alongamento aumenta a absorção de energia, mas WORRELL não encontrou relação entre déficit de força dos isquiotibiais e lesão. A conclusão do livro é que **aquecimento e alongamento antes do esporte diminuem a incidência** (cap. 75, seção Lesões musculares). A meta é voltar ao nível anterior com **risco mínimo de recidiva** (cap. 76, seção Lesão muscular).
 
-!tabela Lesões musculares no futebol (Sizínio 5ª, cap. 76; cap. 75)
+!tabela Lesões musculares no futebol (Sizínio 5ª, cap. 76, seção Lesão muscular; cap. 75, seção Lesões musculares)
 | Dado | Valor |
 | --- | --- |
 | incidência | 2,8 lesões por 1000 horas de jogo |
@@ -279,11 +278,11 @@ O afastamento médio foi de **29 dias**, com variação de 1 a 365 dias. A preve
 
 O Campbell (cap. 53) define as lesões dos isquiotibiais como um grupo heterogêneo: **avulsões proximais ou distais** e **estiramentos ou rupturas na junção miotendínea ou no ventre** (p. 2280). Estão entre as lesões musculoesqueléticas mais comuns em atletas, e a **vasta maioria ocorre na junção miotendínea proximal**. As avulsões proximais são **9%** de todas as lesões dos isquiotibiais; as distais, do bíceps femoral ou do semitendíneo, são bem mais raras, e a do bíceps femoral costuma vir com lesões ligamentares do lado lateral do joelho.
 
-A prova do TARO 2017 perguntou onde a lesão dos isquiotibiais ocorre mais frequentemente, e o gabarito oficial é o **ventre muscular**. O Campbell diz que a maioria ocorre na **junção miotendínea proximal**. A divergência é de conceito: muitas lesões ditas do ventre são, na verdade, lesões da junção que se estende para dentro do músculo. Para a prova, guarde o gabarito oficial, mas saiba que o Campbell escreve outra coisa.
+A prova do TARO 2017 perguntou onde a lesão dos isquiotibiais ocorre mais frequentemente, e o gabarito oficial é o **ventre muscular**. O Campbell diz que a maioria ocorre na **junção miotendínea proximal**. A divergência é em parte de conceito, porque a junção não é um ponto. No estudo anatômico de BOGACKA-WÓJCIK et al. (Anat Sci Int 2026;101:389, PMC13541974), o tendão proximal da cabeça longa do bíceps femoral continua por dentro do ventre: uma porção livre (média de 5,4 cm), uma porção intermediária coberta em parte por fibras musculares (média de 15,7 cm) e uma porção intramuscular, envolvida pelo ventre como um núcleo tendíneo; os autores ligam essa transição do tendão grosso para o segmento fino intramuscular à suscetibilidade à lesão. Uma lesão que a imagem mostra no meio da coxa pode, portanto, estar na junção miotendínea. Para a prova, guarde o gabarito oficial, mas saiba que o Campbell escreve outra coisa.
 
 ## Qual dos três
 
-O isquiotibial mais lesionado no corredor, segundo o gabarito do TEOT 2025, é o **bíceps femoral**. O Sizínio explica o contexto (corrida de velocidade, contração excêntrica constante dos isquiotibiais) sem nomear a cabeça, e o Campbell também não nomeia qual dos três músculos é o mais comum. O grácil, que aparece como alternativa, nem é isquiotibial.
+O isquiotibial mais lesionado no corredor, segundo o gabarito do TEOT 2025, é o **bíceps femoral**. O Sizínio explica o contexto (corrida de velocidade, contração excêntrica constante dos isquiotibiais) sem nomear a cabeça, e o Campbell também não nomeia qual dos três músculos é o mais comum. A fonte aberta citada acima abre dizendo que a **cabeça longa do bíceps femoral** está entre os componentes mais lesionados do complexo dos isquiotibiais, sobretudo nas junções miotendíneas (BOGACKA-WÓJCIK et al., 2026). O grácil, que aparece como alternativa, nem é isquiotibial.
 
 ## O estiramento: tratamento sempre conservador
 
@@ -324,7 +323,7 @@ O Campbell é direto: a **complicação principal** depois do reparo é **dor pe
 conceito: A maioria das lesões dos isquiotibiais está na junção miotendínea proximal; a avulsão proximal é operada com três tendões ou dois com 3 cm de retração; as complicações principais do reparo são dor persistente e fraqueza, e a rerruptura é rara.
 como: O TARO 2025 pediu as complicações primárias do reparo proximal (dor persistente e diminuição de força); o TARO 2017, o local mais frequente da lesão (ventre muscular); o TEOT 2025, o isquiotibial mais lesionado em corredores (bíceps femoral).
 armadilha: Marcar rerruptura ou infecção como complicação principal; marcar o grácil, que não é isquiotibial.
-alerta: O Campbell (cap. 53, p. 2280) diz que a vasta maioria das lesões ocorre na junção miotendínea proximal, o que diverge do gabarito B (ventre) de `conceitos-basicos-0037`, mantido. Os livros lidos não nomeiam o bíceps femoral como o mais lesionado; o gabarito C de `conceitos-basicos-0188` fica mantido.
+alerta: O Campbell (cap. 53, p. 2280) diz que a vasta maioria das lesões ocorre na junção miotendínea proximal, o que diverge do gabarito B (ventre) de `conceitos-basicos-0037`, mantido. Os livros lidos não nomeiam o bíceps femoral como o mais lesionado; a fonte aberta BOGACKA-WÓJCIK et al. (Anat Sci Int 2026, PMC13541974) põe a cabeça longa do bíceps femoral entre os componentes mais lesionados, o que sustenta o gabarito C de `conceitos-basicos-0188`.
 !fim
 
 # Gastrocnêmio medial: a tennis leg {radar=confirmado}
@@ -356,7 +355,7 @@ alerta: O Campbell (cap. 53, p. 2269) localiza a lesão na cabeça medial, mas n
 
 ## O que a contusão pode deixar
 
-A pancada direta na coxa esmaga o quadríceps contra o fêmur e produz hematoma profundo. O Sizínio (cap. 75) lembra que a ruptura muscular cicatriza mais por tecido cicatricial que por regeneração e que as adesões tiram força; no quadríceps, essa cicatriz aderida é o que rouba a **flexão do joelho**, e por isso a segunda fase do protocolo de JACKSON e FEAGIN existe para recuperá-la. O Tachdjian põe a **miosite ossificante** do adolescente que leva contusão do quadríceps no futebol como exemplo do tipo traumático (p. 1733). A **síndrome compartimental** da coxa é a complicação menos frequente. O Campbell (cap. 53) explica por quê: a síndrome compartimental da coxa é **muito menos frequente** que a da perna ou do antebraço, porque a coxa tem compartimentos grandes e complacentes, mas tem alta morbidade; entre as causas listadas estão o **trauma fechado**, a **contusão ou estiramento** e a própria ossificação heterotópica (p. 2244). Aparece sobretudo em homens jovens em esporte de contato, como futebol e rúgbi.
+A pancada direta na coxa esmaga o quadríceps contra o fêmur e produz hematoma profundo. O Sizínio (cap. 75) lembra que a ruptura muscular cicatriza mais por tecido cicatricial que por regeneração e que as adesões tiram força (cap. 75, seção Lesões musculares); no quadríceps, essa cicatriz aderida é o que rouba a **flexão do joelho**, e por isso a segunda fase do protocolo de JACKSON e FEAGIN existe para recuperá-la. O Tachdjian põe a **miosite ossificante** do adolescente que leva contusão do quadríceps no futebol como exemplo do tipo traumático (p. 1733). A **síndrome compartimental** da coxa é a complicação menos frequente. O Campbell (cap. 53) explica por quê: a síndrome compartimental da coxa é **muito menos frequente** que a da perna ou do antebraço, porque a coxa tem compartimentos grandes e complacentes, mas tem alta morbidade; entre as causas listadas estão o **trauma fechado**, a **contusão ou estiramento** e a própria ossificação heterotópica (p. 2244). Aparece sobretudo em homens jovens em esporte de contato, como futebol e rúgbi.
 
 ## Miosite ossificante: o que é
 
@@ -494,7 +493,7 @@ O diagnóstico diferencial inclui a **síndrome do estresse tibial medial**, a *
 
 O tratamento **não operatório** inclui repouso relativo, anti-inflamatório, terapia manual, alongamento e fortalecimento e palmilhas; correr apoiando o **antepé** reduziu a dor e a pressão por até um ano. Retorno ao trabalho ou ao esporte em **65% a 75%**, mas os operados ficaram mais satisfeitos. Se os sintomas persistem ou o atleta quer continuar no mesmo nível, a indicação é a **fasciotomia** (p. 2249).
 
-A fasciotomia do **compartimento anterior** tem sucesso de **80% a 90%**; a do **posterior profundo**, de **50% a 70%**. Pacientes com **menos de 23 anos** evoluem melhor, e a maioria volta a correr em **três meses**. Liberar os quatro compartimentos deu **91%** de bons resultados, contra **67%** sem liberar todos (p. 2249). Na liberação anterior, protege-se o **nervo fibular superficial**; as hérnias musculares **não são reparadas** (p. 2251 aprox.).
+A fasciotomia do **compartimento anterior** tem sucesso de **80% a 90%**; a do **posterior profundo**, de **50% a 70%**. Pacientes com **menos de 23 anos** evoluem melhor, e a maioria volta a correr em **três meses**. Liberar os quatro compartimentos deu **91%** de bons resultados, contra **67%** sem liberar todos (p. 2249). Na liberação anterior, protege-se o **nervo fibular superficial**; as hérnias musculares **não são reparadas** (Técnica 53.5, p. 2251).
 
 # Fechamento {radar=fundamento}
 

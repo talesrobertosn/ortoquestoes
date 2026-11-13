@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-12-monteggia
-versao: 3
+versao: 4
 titulo: Fratura-luxação de MONTEGGIA na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 12 · Monteggia Fracture-Dislocation in Children
 autores: Peter M. Waters e Kenneth J. Noonan
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 12.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 12, com o capítulo 11 (fraturas do rádio e da ulna proximais) para o equivalente do tipo III; as referências do Rockwood citam capítulo, seção, figura e algoritmo. Complementos conferidos em 12/11/2026 no Green's Operative Hand Surgery, 7ª ed. (cap. 20, p. 780), e no Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 29, p. 1253).
 subtemas: Fraturas do antebraço e punho na criança; Luxações na criança; Trauma pediátrico
 resumo: BADO I anterior (70% a 75%), II posterior com imobilização em extensão, III lateral por varo com mais lesão do interósseo posterior, IV com o rádio; equivalentes e LETTS; tratamento pela ulna (plástica e galho verde fechada, transversa intramedular, oblíqua longa com placa); linha radiocapitelar e arco ulnar; luxação congênita da cabeça; ligamento anular interposto; MONTEGGIA crônico com osteotomia da ulna; BELL TAWSE; nervos, síndrome compartimental e ossificação.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 12 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Peter M. Waters e Kenneth J. Noonan, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
+Este resumo é inspirado no capítulo 12 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Peter M. Waters e Kenneth J. Noonan, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo, e as referências apontam capítulo, seção, figura e algoritmo.
 
 O MONTEGGIA é uma lesão rara que as provas adoram. A banca cobra a **classificação de BADO** tipo a tipo (sobretudo o **tipo II**: ulna metafisária, mecanismo com o cotovelo a 60 graus e **imobilização em extensão**), a classificação de **LETTS**, o **mecanismo do tipo III** (varo), o **tipo IV** (raro, rádio no mesmo nível ou distal), a **luxação congênita da cabeça do rádio** (em geral posterior) e a técnica de **BELL TAWSE** para o MONTEGGIA crônico. O capítulo, por sua vez, insiste em duas ideias que atravessam tudo: o MONTEGGIA agudo **nunca deveria passar despercebido**, e o tratamento se escolhe **pela fratura da ulna**.
 
@@ -91,7 +91,7 @@ O ponto fino é a primeira: na luxação anterior isolada, o **sinal do arco uln
 
 **Equivalentes do tipo II.** Luxação posterior da cabeça com fratura da **epífise proximal** ou do **colo do rádio**.
 
-**Tipos III e IV.** BADO não descreveu equivalentes, mas relatos posteriores incluíram fraturas do **úmero distal** (supracondiliana, côndilo lateral) associadas a lesões do antebraço proximal (Fig. 12-5).
+**Tipos III e IV.** BADO não descreveu equivalentes, mas relatos posteriores incluíram fraturas do **úmero distal** (supracondiliana, côndilo lateral) associadas a lesões do antebraço proximal (Fig. 12-5). O capítulo 11 do mesmo livro (fraturas do rádio e da ulna proximais, seção Neck-Displaced Fractures, Group II, Fig. 11-11) registra ainda um **equivalente do tipo III pelo colo do rádio**: o varo aplicado ao cotovelo estendido, que no tipo III verdadeiro quebra em galho verde o olécrano ou a ulna proximal e luxa a cabeça para lateral, às vezes falha no **colo do rádio**; o colo se desvia para lateral, e a cabeça, com o fragmento proximal do colo, fica no lugar, sob o ligamento anular.
 
 **A classificação de LETTS.** LETTS propôs uma classificação pediátrica que combina a direção da cabeça com o **tipo de fratura da ulna**. Os tipos A, B e C são subdivisões do BADO I (cabeça anterior), separados pela ulna; D e E correspondem a BADO II e III.
 
@@ -239,6 +239,8 @@ O gesso axilopalmar fica **4 a 6 semanas**, com radiografias a cada **1 a 2 sema
 
 É também o momento de procurar uma **deformidade plástica do rádio** que impeça a redução.
 
+No adulto, o Green's Operative Hand Surgery, 7ª ed. (cap. 20, p. 780), raciocina do mesmo jeito: se a cabeça não se alinha com o capítulo depois de reduzida a ulna, a causa é a **ulna mal reduzida até prova em contrário**, e só raramente a cabeça precisa de redução aberta à parte. Se houver bloqueio de partes moles, o **interósseo posterior pode estar preso** nele, e por isso não se corta esse tecido sem exposição adequada.
+
 !questoes relacionadas=trauma-0005 treino=pediatria-1294,pediatria-1295
 conceito: No tipo I, corrige-se a ulna primeiro e depois se flete o cotovelo para reduzir a cabeça; imobiliza-se em 110 a 120 graus por 4 a 6 semanas; a cabeça que não reduz tem o anular interposto, reposto pela via de KOCHER com o antebraço pronado.
 como: Questões de projeção sobre a sequência da redução e a causa da redução incompleta.
@@ -289,7 +291,7 @@ armadilha: Imobilizar em extensão como no tipo II, ou moldar em varo.
 
 O Rockwood and Wilkins' Fractures in Children, 10ª ed., diz em dois lugares que as lesões do nervo radial, **sobretudo do ramo interósseo posterior**, são **mais frequentes no tipo III** do que nos outros tipos de MONTEGGIA (seções Type III Clinical Findings e Pathoanatomy, Nerves). O raciocínio é anatômico: o interósseo posterior contorna o **colo do rádio** e passa sob a **arcada de FROHSE**; quando o varo da ulna joga a cabeça para **lateral**, o nervo é estirado sobre ela. O quadro clínico do tipo III já aponta o risco: **edema lateral**, **varo do cotovelo** e perda de movimento, sobretudo da **supinação**. Por isso o exame motor (extensão das metacarpofalângicas e retropulsão do polegar) é obrigatório antes de qualquer manobra.
 
-!questoes central=trauma-0772 relacionadas=trauma-0144,trauma-0891
+!questoes central=trauma-0772 relacionadas=trauma-0144,trauma-0891,trauma-1025
 conceito: O interósseo posterior se lesa mais no BADO III (luxação lateral da cabeça com ulna em varo), pela proximidade com a cabeça e o colo do rádio e pela arcada de FROHSE.
 como: O TEPOP 2024 perguntou em qual tipo de BADO a lesão do interósseo posterior é mais comum (tipo III).
 armadilha: Marcar o tipo I por ser o mais frequente; ele é o mais comum como fratura, mas o nervo sofre mais no tipo III.
@@ -357,7 +359,7 @@ Resultados: NAKAMURA, 19 de 22 excelentes em 7 anos, mas 5 cabeças subluxadas; 
 
 **A reconstrução do ligamento anular.**
 - **BELL TAWSE**: a técnica original de redução aberta tardia com reconstrução do anular. Usa a **porção central do tendão do tríceps**, passada por um **furo na ulna** e em volta do **colo do rádio**, pela via de BOYD, com gesso axilopalmar em **extensão**. A força estabilizadora resultante é **posterior** (Figs. 12-44 e 12-45A).
-- **BUCKNILL e LLOYD-ROBERTS**: modificaram usando a **porção lateral** do tríceps, com **pino transcapitelar**, imobilizando em flexão.
+- **BUCKNILL e LLOYD-ROBERTS**: modificaram usando a **porção lateral** do tríceps, com **pino transcapitelar**, imobilizando em flexão. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 29, p. 1253), também atribui a tira lateral à modificação de LLOYD-ROBERTS, mas a legenda da Fig. 29.101, intitulada técnica de BELL TAWSE, desenha uma tira **lateral** do tendão do tríceps; para a técnica original, vale a porção **central** descrita no Rockwood.
 - **HURST e DUBROW**: porção central do tríceps, mas levando a dissecção do periósteo pela ulna até o nível do colo do rádio, e fixando a tira por um **túnel de periósteo**, mais estável.
 - **SEEL e PETERSON**: dois furos na ulna, nas **inserções originais** do anular, que permitem reparar o anular nativo (muitas vezes arrancado de uma inserção e preso na articulação) ou reconstruí-lo com tríceps; um furo oblíquo saindo medialmente no coronoide dá força **posteromedial**, mais fisiológica. Eles notaram que o BELL TAWSE puxa o rádio para **posterolateral** e que um anular apertado demais **estrangula o colo** ("notching"), limitando o crescimento e a rotação.
 - Outros enxertos: lacerto fibroso, tira de fáscia do antebraço, palmar longo livre e fáscia lata livre.
@@ -380,7 +382,7 @@ Depois: gesso bivalvado com o antebraço em **60 a 90 graus de supinação** e o
 
 **Redeslocamento.** Ocorre em até **25%**. As causas são bíceps encurtado, osteotomia insuficiente, partes moles ainda interpostas e deformidade plástica do rádio não reconhecida; falha precoce pede nova cirurgia.
 
-!questoes central=pediatria-0742 relacionadas=trauma-0332 treino=pediatria-1298,pediatria-1299,pediatria-1451
+!questoes central=pediatria-0742 relacionadas=trauma-0332,trauma-0868 treino=pediatria-1298,pediatria-1299,pediatria-1451
 conceito: BELL TAWSE reconstrói o anular com a porção central do tríceps, passada por um furo na ulna e em volta do colo do rádio, com força posterior; hoje o centro da reconstrução é a osteotomia de abertura da ulna com reparo do anular nativo, se a cabeça ainda é côncava.
 como: TARO 2007 perguntou o que a técnica de BELL TAWSE utiliza para reconstruir o ligamento anular (porção central do tríceps).
 armadilha: Trocar a porção central (BELL TAWSE) pela lateral (BUCKNILL e LLOYD-ROBERTS), ou reconstruir só o anular sem corrigir a ulna.

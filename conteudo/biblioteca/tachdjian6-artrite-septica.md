@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-artrite-septica
-versao: 2
+versao: 3
 titulo: Artrite séptica na criança e no adulto
 especialidade: conceitos-basicos
 acesso: gratis
@@ -39,11 +39,11 @@ O Sizínio (cap. 26) dá o exemplo prático: no **quadril e no ombro** a cápsul
 
 A idade abre uma segunda porta, agora vascular. O Tachdjian (p. 963 e 964, Fig. 23.18) explica que a circulação **atravessa a fise até cerca de 18 meses**: no neonato, a epífise inteira divide a irrigação com a metáfise, e a infecção metafisária invade a epífise e pode destruir as duas, com osteonecrose devastadora do fêmur proximal. Depois que o núcleo secundário se forma, metáfise e epífise passam a ter irrigações separadas e a fise funciona como barreira, mas a metáfise continua intra-articular onde a anatomia manda.
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 821, Fig. 24.1), precisa onde está esse vaso: nos menores de 18 meses há **artéria transfisária no quadril, no ombro, no cotovelo e no tornozelo, mas não no joelho**. É por isso que o joelho da criança tende a confinar a infecção metafisária, enquanto o quadril do lactente a espalha.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 821, com a Fig. 24.1 na p. 823), precisa onde está esse vaso: nos menores de 18 meses há **artéria transfisária no quadril, no ombro, no cotovelo e no tornozelo, mas não no joelho**. É por isso que o joelho da criança tende a confinar a infecção metafisária, enquanto o quadril do lactente a espalha.
 
 Juntando as duas portas, a pergunta "em criança maior de 18 meses, onde a osteomielite ainda se associa à pioartrite?" tem resposta pela metáfise intra-articular, não pelo vaso: entre rádio distal, fíbula distal, fêmur distal e tíbia proximal, só a **fíbula distal** está dentro da cápsula.
 
-!tabela Como a infecção chega à articulação (Tachdjian, cap. 23, p. 963 a 975; Campbell, cap. 24, p. 821; Sizínio, caps. 9.7 e 26)
+!tabela Como a infecção chega à articulação (Tachdjian, cap. 23, p. 963 a 975; Campbell, cap. 24, p. 821 e 823; Sizínio, caps. 9.7 e 26)
 | Mecanismo | Onde ou quando | Consequência |
 |---|---|---|
 | Semeadura hematogênica da sinóvia | Qualquer articulação; bacteremia transitória, às vezes após otite ou sinusite | Via mais comum na criança |
@@ -185,7 +185,7 @@ alerta: O Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 955, descreve a gravid
 
 ## Kingella kingae: o germe que não cresce
 
-A **Kingella kingae** é um cocobacilo **gram-negativo** aeróbio e fastidioso que coloniza a orofaringe de quase **75%** das crianças entre **6 meses e 4 anos**, exatamente a faixa das infecções invasivas; o pico é de **10 a 24 meses** (Tachdjian, p. 956). O Campbell (p. 825) dá a faixa de **6 a 36 meses**. O quadro é **mais brando**, com marcadores pouco elevados, e a febre pode faltar.
+A **Kingella kingae** é um cocobacilo **gram-negativo** aeróbio e fastidioso que coloniza a orofaringe de quase **75%** das crianças entre **6 meses e 4 anos**, exatamente a faixa das infecções invasivas; o pico é de **10 a 24 meses** (Tachdjian, cap. 23, p. 956). O Campbell (p. 825) dá a faixa de **6 a 36 meses**. O quadro é **mais brando**, com marcadores pouco elevados, e a febre pode faltar.
 
 O problema é laboratorial. A Kingella cresce devagar e mal em **meio sólido**, porque o líquido sinovial e o pus inibem seu crescimento. A recomendação é **inocular o aspirado num frasco de hemocultura aeróbia**, que dilui os inibidores, e plaquear o material sólido em ágar sangue ou chocolate ainda na sala cirúrgica (Tachdjian, p. 957). Como mesmo assim a cultura falha, desenvolveu-se a **PCR** para identificar o germe no líquido articular; ela complementa a cultura, que continua essencial. O Tachdjian (p. 976) generaliza para a artrite séptica: a cultura do líquido é positiva em apenas **30% a 70%**, e a PCR suplementar melhora a identificação.
 
