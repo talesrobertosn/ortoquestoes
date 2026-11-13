@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
 
-export type TipoLido = 'avaliacao' | 'pagamento'
+export type TipoLido = 'avaliacao' | 'pagamento' | 'relato'
 
 const chaveLocal = (tipo: TipoLido) => `oq-admin-lidos:${tipo}`
 /** Chave com que uma avaliação de comentário é marcada como lida (a mesma no banco: ver contadores_admin). */
