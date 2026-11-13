@@ -15,10 +15,10 @@ try {
   const [mensal, semestral, anual] = m.PLANOS_PIPOCA
   const brl = (s) => s.replace(/\s/g, ' ')
 
-  // Do mensal para o anual; o mensal é o destaque e vem primeiro também no celular (03/11/2026).
+  // Do mensal para o anual; desde 13/11/2026 o anual (melhor preço) é o destaque.
   assert.deepEqual(m.PLANOS_PIPOCA.map((p) => p.id), ['mensal', 'semestral', 'anual'])
   assert.deepEqual(m.PLANOS_CELULAR.map((p) => p.id), ['mensal', 'semestral', 'anual'])
-  assert.deepEqual(m.PLANOS_PIPOCA.filter((p) => p.destaque).map((p) => p.id), ['mensal'])
+  assert.deepEqual(m.PLANOS_PIPOCA.filter((p) => p.destaque).map((p) => p.id), ['anual'])
   // Escada de R$ 5 por mês (reajuste de 31/10/2026): 39,90 / 34,90 / 29,90.
   assert.equal(brl(m.semMoeda(m.porMes(anual))), '29,90')
   assert.equal(brl(m.semMoeda(m.porMes(semestral))), '34,90')
@@ -39,12 +39,12 @@ try {
   assert.equal(brl(m.semMoeda(m.porMes(soSemestral.semestral))), '29,98')
   assert.equal(soSemestral.anual.total, anual.total, 'Quem pagava o semestral não leva o anual antigo')
   assert.equal(m.planosDaPessoa(['mensal']).semestral.total, semestral.total)
-  assert.equal(m.seloPlano(mensal), 'Comece por aqui')
+  assert.equal(m.seloPlano(anual), 'Melhor preço')
+  assert.equal(m.seloPlano(mensal), null)
   assert.equal(m.seloPlano(semestral), null)
-  assert.equal(m.seloPlano(anual), null)
-  assert.deepEqual(antigo.pipoca.filter((p) => p.destaque).map((p) => p.id), ['mensal'], 'Preço antigo não muda o destaque')
+  assert.deepEqual(antigo.pipoca.filter((p) => p.destaque).map((p) => p.id), ['anual'], 'Preço antigo não muda o destaque')
   // O anual continua com a conta certa na chamada: 25% mais barato por mês que o mensal.
-  assert.equal(anual.chamada, 'O ano todo, pago de uma vez, 25% mais barato que o mensal.')
+  assert.equal(anual.chamada, 'O melhor preço: o ano todo, pago de uma vez, 25% mais barato que o mensal.')
 
   // Temas que mais caem: só porcentagens, da que mais cai para a que menos cai.
   assert.ok(m.AREAS_QUE_CAEM.length >= 10)

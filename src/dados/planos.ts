@@ -23,15 +23,15 @@ export function economiaAnual(anual: number) {
 }
 export const ECONOMIA_ANUAL = economiaAnual(ANUAL)
 
-// Destaque no mensal (Tales, 03/11/2026): sem fidelidade, é o plano que se começa hoje. Os descontos
-// do semestral e do anual continuam à mostra, com a conta certa. A pizza é verdade: R$ 39,90 contra
-// R$ 50 a 70 de uma pizza média no delivery.
+// Destaque no anual desde 13/11/2026 (Tales; antes, no mensal): é o melhor preço por mês. Os três planos
+// dizem que custam menos que uma pizza por mês, o que é verdade: de R$ 29,90 a R$ 39,90 contra R$ 50 a 70
+// de uma pizza média no delivery. Os descontos do semestral e do anual continuam à mostra, com a conta certa.
 function montarPlanos(semestral: number, anual: number): readonly [Plano, Plano, Plano] {
   const economia = economiaAnual(anual)
   return [
-    { id: 'mensal', nome: 'Mensal', total: MENSAL, meses: 1, destaque: true, chamada: 'Prepare-se para o TEOT por menos que uma pizza por mês.' },
-    { id: 'semestral', nome: 'Semestral', total: semestral, meses: 6, destaque: false, chamada: 'Seis meses de estudo, pagos de uma vez.' },
-    { id: 'anual', nome: 'Anual', total: anual, meses: 12, destaque: false, chamada: economia === 'metade do preço' ? 'O ano todo, pago de uma vez, pela metade do preço do mensal.' : `O ano todo, pago de uma vez, ${economia} que o mensal.` },
+    { id: 'mensal', nome: 'Mensal', total: MENSAL, meses: 1, destaque: false, chamada: 'Prepare-se para o TEOT por menos que uma pizza por mês.' },
+    { id: 'semestral', nome: 'Semestral', total: semestral, meses: 6, destaque: false, chamada: 'Seis meses de estudo, pagos de uma vez, por menos que uma pizza por mês.' },
+    { id: 'anual', nome: 'Anual', total: anual, meses: 12, destaque: true, chamada: economia === 'metade do preço' ? 'O melhor preço: o ano todo, pago de uma vez, pela metade do preço do mensal.' : `O melhor preço: o ano todo, pago de uma vez, ${economia} que o mensal.` },
   ]
 }
 export const PLANOS = montarPlanos(SEMESTRAL, ANUAL)
