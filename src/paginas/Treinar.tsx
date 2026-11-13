@@ -30,6 +30,7 @@ import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { confirmar, pedirTexto } from '../componentes/Confirmar'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { Painel } from '../componentes/Painel'
+import { carregarLetrasAcervo } from '../dados/letrasAcervo'
 import '../estilos/componentes/Cristal.css'
 import '../estilos/paginas/Treinar.css'
 
@@ -104,6 +105,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const [filtros, definirFiltros] = useState<Filtros>(() => consulta.size ? consultaParaFiltros(consulta) : PADRAO)
   // Chegou sem filtro: vale o padrão até a pessoa mexer (ver o efeito mais abaixo).
   const comecouNoPadrao = useRef(!consulta.size)
+  // Quem está em Treinar vai abrir uma sessão: as letras das alternativas já descem (a primeira questão espera por elas).
+  useEffect(() => { void carregarLetrasAcervo() }, [])
   useEffect(() => {
     const mudou = () => {
       const rota = rotaDe(window.location.hash)
