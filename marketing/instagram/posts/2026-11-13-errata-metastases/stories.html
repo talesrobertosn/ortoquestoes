@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Como escrevemos o comentário (stories)</title>
+<!-- Stories de propaganda "Como escrevemos o comentário" (13/11/2026), no cenário do modelo Errata
+     (marketing/instagram/estilos/ERRATA.md). Pedido do Tales: "o intuito é propaganda sobre como escrevemos os
+     comentários", mostrando o texto real num iPhone, do aviso em vermelho até as alternativas.
+     Telas reais do site, questão tumores-0394 (OrtoQuestões Simulados): capturar.mjs -> img/cel-*.png.
+     Arte em pixel art por código: ../../estilos/errata/arte_errata.py -> estilos/errata/arte/.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-13-errata-metastases/stories.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+@font-face { font-family: Cinzel; src: url(../../fontes/cinzel-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+:root { --tinta: #2a1c12; --tinta2: #5a4636; --verde: #14655e; --verm: #b8322a; --papel: #f6eedb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: var(--tinta);
+  background: #10100e url(../../estilos/errata/arte/fundo.png) center / 1080px 1920px no-repeat; }
+.px { image-rendering: pixelated; }
+.abs { position: absolute; }
+
+/* etiqueta de couro com ouro (cabeçalho), igual ao modelo Errata */
+.placa { position: absolute; left: 50%; top: 236px; transform: translateX(-50%); z-index: 8; display: flex; align-items: center; gap: 18px;
+  padding: 15px 38px 15px 24px; border-radius: 12px; white-space: nowrap;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 .1 0 0 0 0 .08 0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #23574a 0%, #17443a 55%, #10342c 100%);
+  box-shadow: inset 0 0 0 4px #10342c, inset 0 0 0 6px #c99a44, inset 0 0 0 8px #10342c, inset 0 0 0 9px rgba(242,207,114,.45), 0 0 0 2px #071a16, 0 16px 30px rgba(0,0,0,.6); }
+.placa .m { display: inline-flex; align-items: center; gap: 10px; margin-left: 8px; font: 800 28px Jakarta; letter-spacing: -.01em; }
+.placa .m img { width: 40px; height: 40px; border-radius: 9px; box-shadow: 0 0 0 2px rgba(242,207,114,.55); }
+.foil { background: linear-gradient(180deg, #fff3c4 0%, #f2cf72 40%, #c99a44 62%, #f6dc8e 100%); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 1px 0 rgba(0,0,0,.55)); }
+.placa .m span { font-weight: 500; }
+.placa .sep { width: 2px; height: 34px; background: linear-gradient(#c99a44, #6a4c1c); }
+.placa .t { font: 700 21px Cinzel; letter-spacing: .14em; text-transform: uppercase; }
+
+/* papeletas da prova (coluna da esquerda) */
+.papel { position: absolute; z-index: 5; left: 40px; width: 418px; border-radius: 4px; background-color: var(--papel);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .34 0 0 0 0 .2 0 0 0 .11 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 22% 12%, rgba(255,250,236,.9), transparent 60%);
+  box-shadow: 0 2px 0 #d9c9a3, 0 4px 0 #cdbb92, 0 22px 40px rgba(0,0,0,.6), inset 0 0 40px rgba(150,110,60,.18); }
+.papel.titulo { padding: 62px 30px 30px 40px; }
+.papel.titulo::before { content: ''; position: absolute; left: 22px; top: 0; bottom: 0; width: 2px; background: rgba(184,50,42,.3); }
+.rot { font: 700 34px/1.05 Caveat; color: var(--verm); }
+.h { font: 800 48px/1.06 Jakarta; letter-spacing: -.03em; color: var(--tinta); margin-top: 8px; }
+.h em { font-style: normal; color: var(--verde); }
+.h .v { color: var(--verm); }
+.nota { padding: 20px 22px 20px 22px; display: grid; grid-template-columns: 46px 1fr; gap: 16px; align-items: start; }
+.nota p { font: 500 25px/1.36 Inter; color: var(--tinta2); }
+.nota p b { color: var(--tinta); font-weight: 750; }
+.nota p .r { color: var(--verm); font-weight: 750; }
+.prende { position: absolute; z-index: 9; width: 72px; filter: drop-shadow(0 8px 6px rgba(0,0,0,.45)); }
+
+/* pinos dourados e as linhas que ligam a nota ao trecho da tela */
+.pino { position: absolute; z-index: 12; display: grid; place-items: center; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%;
+  font: 800 24px Jakarta; color: #2a1a08; background: radial-gradient(circle at 35% 30%, #fff3c4, #f2cf72 45%, #c99a44 80%);
+  box-shadow: 0 0 0 3px #5a3a10, 0 0 0 7px rgba(242,207,114,.35), 0 6px 12px rgba(0,0,0,.55); }
+.nota .pino { position: static; margin: 0; }
+svg.fios { position: absolute; inset: 0; z-index: 11; pointer-events: none; }
+svg.fios line { stroke: #f2cf72; stroke-width: 4; stroke-dasharray: 1 9; stroke-linecap: round; filter: drop-shadow(0 1px 1px rgba(0,0,0,.8)); }
+svg.fios circle { fill: #f2cf72; }
+
+/* iPhone */
+.cel { position: absolute; z-index: 6; left: 466px; top: 352px; width: 588px; height: 1206px; filter: drop-shadow(0 30px 34px rgba(0,0,0,.7)); }
+.cel .tela { position: absolute; left: 24px; top: 24px; width: 534px; height: 1155px; border-radius: 54px; overflow: hidden; background: #fff; }
+.cel .barra { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 6px 40px 0 52px; background: #fbfbfa; font: 700 21px Inter; color: #111; }
+.cel .barra i { display: inline-flex; gap: 8px; align-items: center; font-style: normal; }
+.sinal { display: inline-flex; gap: 2px; align-items: flex-end; height: 14px; }
+.sinal s { width: 4px; background: #111; border-radius: 1px; }
+.bat { width: 30px; height: 14px; border-radius: 4px; border: 2px solid #111; position: relative; }
+.bat::before { content: ''; position: absolute; inset: 2px 6px 2px 2px; background: #111; border-radius: 1px; }
+.bat::after { content: ''; position: absolute; right: -5px; top: 3px; width: 2px; height: 5px; background: #111; border-radius: 1px; }
+.wifi { width: 18px; height: 13px; background: radial-gradient(circle at 50% 100%, #111 0 3px, transparent 3.5px 6px, #111 6.5px 9px, transparent 9.5px 12px, #111 12.5px 15px, transparent 15.5px); clip-path: polygon(50% 100%, 0 20%, 100% 20%); }
+.cel .tela img { display: block; width: 534px; height: 1045px; }
+.cel .tela .inicio { height: 46px; background: #fff; display: grid; place-items: center; }
+.cel .tela .inicio::before { content: ''; width: 186px; height: 7px; border-radius: 4px; background: #111; }
+.cel .tela::after { content: ''; position: absolute; inset: 0; background: linear-gradient(115deg, rgba(255,255,255,.14) 0%, rgba(255,255,255,.04) 30%, transparent 31%); }
+.cel > img.casca { position: absolute; inset: 0; width: 588px; height: 1206px; }
+.chip { position: absolute; z-index: 7; left: 466px; width: 588px; top: 1572px; text-align: center; font: 700 17px Inter; letter-spacing: .22em; text-transform: uppercase; color: #e6d39c; text-shadow: 0 2px 6px rgba(0,0,0,.9); }
+
+.btn { display: inline-flex; align-items: center; padding: 18px 40px; border-radius: 18px; font: 800 42px Jakarta; letter-spacing: -.02em; color: #2a1a08;
+  background: linear-gradient(180deg, #fff3c4, #f2cf72 40%, #c99a44); box-shadow: inset 0 2px 0 rgba(255,255,255,.65), inset 0 -4px 0 rgba(90,52,16,.5), 0 0 0 3px #5a3a10, 0 18px 34px rgba(0,0,0,.6); }
+.site { font: 800 33px Jakarta; letter-spacing: -.015em; color: #f6dc8e; text-shadow: 0 2px 10px rgba(0,0,0,.9); }
+</style></head><body>
+
+<!-- ═════════ STORY 1 · O AVISO EM VERMELHO ═════════ -->
+<section id="s1-aviso">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt=""><span class="foil">Orto <span>Questões</span></span></span><span class="sep"></span><span class="t foil">Como escrevemos · 1 de 4</span></div>
+  <div class="papel titulo" style="top:352px;transform:rotate(-1deg)">
+    <div class="rot">O comentário, como está no site</div>
+    <h1 class="h">Quando o livro muda, o comentário <span class="v">avisa</span>.</h1>
+  </div>
+  <img class="prende px" src="../../estilos/errata/arte/prendedor.png" alt="" style="left:212px;top:318px;transform:rotate(-4deg)">
+  <div class="papel nota" style="top:746px;transform:rotate(0.6deg)"><span class="pino">1</span><p><b>O aviso em vermelho</b> abre o comentário quando uma edição nova do livro muda a resposta.</p></div>
+  <div class="papel nota" style="top:950px;transform:rotate(-0.8deg)"><span class="pino">2</span><p><b>Livro, edição, capítulo e página</b> em cada fato: Campbell 13ª, 14ª e 15ª e o Rockwood.</p></div>
+  <div class="papel nota" style="top:1170px;transform:rotate(0.5deg)"><span class="pino">3</span><p>Depois vem o <b>Conceito-chave</b>: a aula, antes de falar das alternativas.</p></div>
+  <div class="cel">
+    <div class="tela"><div class="barra"><span>9:41</span><i><span class="sinal"><s style="height:5px"></s><s style="height:8px"></s><s style="height:11px"></s><s style="height:14px"></s></span><span class="wifi"></span><span class="bat"></span></i></div><img src="img/cel-aviso.png" alt=""><div class="inicio"></div></div>
+    <img class="casca px" src="../../estilos/errata/arte/iphone.png" alt="">
+  </div>
+  <svg class="fios" viewBox="0 0 1080 1920"><line x1="458" y1="808" x2="500" y2="561"/><line x1="458" y1="1012" x2="500" y2="880"/><line x1="458" y1="1232" x2="500" y2="1255"/></svg>
+  <div class="pino" style="left:500px;top:561px">1</div>
+  <div class="pino" style="left:500px;top:880px">2</div>
+  <div class="pino" style="left:500px;top:1255px">3</div>
+  <div class="chip">Tela real do site</div>
+</section>
+
+<!-- ═════════ STORY 2 · A AULA E A TABELA ═════════ -->
+<section id="s2-tabela">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt=""><span class="foil">Orto <span>Questões</span></span></span><span class="sep"></span><span class="t foil">Como escrevemos · 2 de 4</span></div>
+  <div class="papel titulo" style="top:352px;transform:rotate(0.8deg)">
+    <div class="rot">Conceito-chave</div>
+    <h2 class="h">Uma aula, <em>não só</em> o gabarito.</h2>
+  </div>
+  <img class="prende px" src="../../estilos/errata/arte/prendedor.png" alt="" style="left:212px;top:322px;transform:rotate(3deg)">
+  <div class="papel nota" style="top:668px;transform:rotate(-0.6deg)"><span class="pino">1</span><p>As <b>duas edições lado a lado</b>, com capítulo e página, para você ver o que cada uma diz.</p></div>
+  <div class="papel nota" style="top:900px;transform:rotate(0.7deg)"><span class="pino">2</span><p>O que mudou fica à vista: a <b>mama</b>, blástica na 14ª e <span class="r">lítica</span> na 15ª.</p></div>
+  <div class="papel nota" style="top:1124px;transform:rotate(-0.5deg)"><span class="pino">3</span><p>E o que <b>não mudou</b> também: rim e tireoide, líticos puros nas duas.</p></div>
+  <div class="cel">
+    <div class="tela"><div class="barra"><span>9:41</span><i><span class="sinal"><s style="height:5px"></s><s style="height:8px"></s><s style="height:11px"></s><s style="height:14px"></s></span><span class="wifi"></span><span class="bat"></span></i></div><img src="img/cel-tabela.png" alt=""><div class="inicio"></div></div>
+    <img class="casca px" src="../../estilos/errata/arte/iphone.png" alt="">
+  </div>
+  <svg class="fios" viewBox="0 0 1080 1920"><line x1="458" y1="728" x2="500" y2="574"/><line x1="458" y1="960" x2="500" y2="911"/><line x1="458" y1="1184" x2="500" y2="1163"/></svg>
+  <div class="pino" style="left:500px;top:574px">1</div>
+  <div class="pino" style="left:500px;top:911px">2</div>
+  <div class="pino" style="left:500px;top:1163px">3</div>
+  <div class="chip">Tela real do site</div>
+</section>
+
+<!-- ═════════ STORY 3 · POR QUE A CERTA ═════════ -->
+<section id="s3-certa">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt=""><span class="foil">Orto <span>Questões</span></span></span><span class="sep"></span><span class="t foil">Como escrevemos · 3 de 4</span></div>
+  <div class="papel titulo" style="top:352px;transform:rotate(-0.7deg)">
+    <div class="rot">Por que a B está certa</div>
+    <h2 class="h">A certa, <em>conferida</em> no livro.</h2>
+  </div>
+  <img class="prende px" src="../../estilos/errata/arte/prendedor.png" alt="" style="left:212px;top:320px;transform:rotate(-3deg)">
+  <div class="papel nota" style="top:668px;transform:rotate(0.6deg)"><span class="pino">1</span><p>A alternativa inteira, com o <b>gabarito marcado</b> e a sua escolha ao lado.</p></div>
+  <div class="papel nota" style="top:890px;transform:rotate(-0.7deg)"><span class="pino">2</span><p><b>De onde ela veio</b>: Campbell 14ª, cap. 27, p. 1028 e 1029, igual à 13ª.</p></div>
+  <div class="papel nota" style="top:1114px;transform:rotate(0.5deg)"><span class="pino">3</span><p>E o que a <b>15ª mudou</b>, para você não errar estudando no livro novo.</p></div>
+  <div class="cel">
+    <div class="tela"><div class="barra"><span>9:41</span><i><span class="sinal"><s style="height:5px"></s><s style="height:8px"></s><s style="height:11px"></s><s style="height:14px"></s></span><span class="wifi"></span><span class="bat"></span></i></div><img src="img/cel-certa.png" alt=""><div class="inicio"></div></div>
+    <img class="casca px" src="../../estilos/errata/arte/iphone.png" alt="">
+  </div>
+  <svg class="fios" viewBox="0 0 1080 1920"><line x1="458" y1="728" x2="500" y2="639"/><line x1="458" y1="950" x2="500" y2="916"/><line x1="458" y1="1174" x2="500" y2="1025"/></svg>
+  <div class="pino" style="left:500px;top:639px">1</div>
+  <div class="pino" style="left:500px;top:916px">2</div>
+  <div class="pino" style="left:500px;top:1025px">3</div>
+  <div class="chip">Tela real do site</div>
+</section>
+
+<!-- ═════════ STORY 4 · POR QUE AS OUTRAS + CONVITE ═════════ -->
+<section id="s4-outras">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt=""><span class="foil">Orto <span>Questões</span></span></span><span class="sep"></span><span class="t foil">Como escrevemos · 4 de 4</span></div>
+  <div class="papel titulo" style="top:352px;transform:rotate(0.6deg)">
+    <div class="rot">Por que as outras não servem</div>
+    <h2 class="h">E por que cada <span class="v">errada</span> está errada.</h2>
+  </div>
+  <img class="prende px" src="../../estilos/errata/arte/prendedor.png" alt="" style="left:212px;top:322px;transform:rotate(4deg)">
+  <div class="papel nota" style="top:700px;transform:rotate(-0.6deg)"><span class="pino">1</span><p>Cada alternativa errada tem a <b>sua análise</b>, com a frase que a derruba.</p></div>
+  <div class="papel nota" style="top:930px;transform:rotate(0.6deg)"><span class="pino">2</span><p>E a <b>página que a desmente</b>, em todas as edições que tratam do assunto.</p></div>
+  <div class="abs" style="z-index:7;left:40px;width:418px;top:1214px;text-align:center">
+    <span class="btn">Treine grátis</span>
+    <div class="site" style="margin-top:22px">ortoquestoes.com.br</div>
+  </div>
+  <div class="cel">
+    <div class="tela"><div class="barra"><span>9:41</span><i><span class="sinal"><s style="height:5px"></s><s style="height:8px"></s><s style="height:11px"></s><s style="height:14px"></s></span><span class="wifi"></span><span class="bat"></span></i></div><img src="img/cel-outras.png" alt=""><div class="inicio"></div></div>
+    <img class="casca px" src="../../estilos/errata/arte/iphone.png" alt="">
+  </div>
+  <svg class="fios" viewBox="0 0 1080 1920"><line x1="458" y1="760" x2="500" y2="657"/><line x1="458" y1="990" x2="500" y2="887"/></svg>
+  <div class="pino" style="left:500px;top:657px">1</div>
+  <div class="pino" style="left:500px;top:887px">2</div>
+  <div class="chip">Tela real do site</div>
+</section>
+</body></html>

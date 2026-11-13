@@ -59,6 +59,8 @@ Em 18/10/2026, Tales aprovou para o arsenal o **Laboratório de patologia** (fee
 
 Em 19/10/2026, Tales aprovou a **Caderneta de topografia** (feed) e o **Bingo da prova** (stories). Veja [o guia](marketing/instagram/estilos/CADERNETA-E-BINGO.md). Também pediu que os estilos sigam uma **ordem fixa de rodízio**, sem sortear nem repetir: rode `node marketing/instagram/estilos/ordem.mjs` antes de cada post ([regras](marketing/instagram/estilos/ORDEM.md)). Stories nunca levam figurinha de link (tira o alcance da página).
 
+Em 13/11/2026, Tales aprovou a **Errata** (stories de aula no gabinete de revisão, para questões em que a edição do livro decide) e a variante de propaganda **Como escrevemos o comentário** (o comentário real num iPhone, do aviso em vermelho até as alternativas). Veja [o guia](marketing/instagram/estilos/ERRATA.md).
+
 Em 22/10/2026, Tales aprovou a **Busca** (feed e stories: o sintoma digitado num buscador com a marca Orto Questões, a questão como resultado e a resposta no trecho em destaque). Veja [o guia](marketing/instagram/estilos/BUSCA.md).
 
 ## Telas do site
