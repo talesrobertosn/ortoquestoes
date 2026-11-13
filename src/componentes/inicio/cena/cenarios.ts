@@ -11,7 +11,7 @@ import type { IdComportamento } from '../../mascote/comportamentos'
 export type PoseGato = 'repouso' | Extract<IdLinhaGato, 'sentado' | 'observando' | 'fogueira'>
 export type Particulas = 'vagalumes' | 'faiscas' | 'neve' | 'estrelas'
 export type Cenario = {
-  id: 'acampamento' | 'forja' | 'cais' | 'observatorio' | 'neve' | 'abrigo' | 'praca' | 'vale'
+  id: 'acampamento' | 'forja' | 'cais' | 'observatorio' | 'neve' | 'abrigo' | 'praca' | 'vale' | 'sala_natal'
   /** Prefixo dos arquivos em public/pixel/inicio/: `${arquivo}-${periodo}[-960].webp`. */
   arquivo: string
   /** Cantos do chão por onde o gato passeia: canto de cima à esquerda da caixa do gato (36 x 22 px da arte). */
@@ -102,6 +102,15 @@ export const CENARIOS: readonly Cenario[] = [
     gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 190, y: 148, pose: 'repouso' }, { x: 332, y: 150, pose: 'sentado' }, { x: 300, y: 162, pose: 'observando' }, { x: 416, y: 104, pose: 'repouso' }],
     // Os moirões do guarda-corpo, o braço do poste do lampião, a lenha e a sacada.
     coruja: [{ x: 171, y: 114 }, { x: 316, y: 119 }, { x: 387, y: 134 }, { x: 147, y: 115 }, { x: 440, y: 112 }],
+  },
+  {
+    // O interior do mesmo chalé: a vila do vale continua visível pela janela.
+    id: 'sala_natal', arquivo: 'cena-sala-natal', particulas: 'faiscas',
+    epoca: { de: [11, 10], ate: [1, 6] },
+    fogo: [298, 146], mascote: { x: 333, y: 100, w: 46, h: 67 },
+    repertorio: ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'],
+    gato: [{ x: 378, y: 149, pose: 'repouso' }, { x: 361, y: 169, pose: 'sentado' }, { x: 426, y: 169, pose: 'observando' }],
+    coruja: [{ x: 372, y: 78 }, { x: 244, y: 124 }, { x: 342, y: 77 }],
   },
 ]
 
