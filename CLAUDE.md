@@ -84,6 +84,8 @@ pelo transtorno, explicar com calma o que foi feito e se colocar à disposição
 
 ## Desenvolvimento e publicações
 
+**SQL sempre na conversa (Tales, 13/11/2026):** toda vez que houver SQL para rodar no Supabase, mande o código completo na própria resposta, num bloco pronto para copiar e colar (além do arquivo em `supabase/colar-no-painel/`), dizendo o que ele faz e se altera dados. Nunca só o caminho do arquivo.
+
 Seguir a seção **Eficiência de desenvolvimento e GitHub Actions** do
 [AGENTS.md](AGENTS.md), fonte única das regras de agrupamento de alterações,
 commits, pushes, validação e respeito ao trabalho concorrente. Os detalhes dos
