@@ -180,7 +180,7 @@ O Rockwood and Green (cap. 47, p. 1888) explica por que esse reflexo é o relóg
 | lesão do cone | reflexo atrasado | pode nunca voltar |
 !fim
 
-!questoes central=coluna-0049 relacionadas=coluna-0373,coluna-0353
+!questoes central=coluna-0049 relacionadas=coluna-0373,coluna-0353 treino=coluna-0509
 conceito: O choque medular costuma terminar em 24 a 48 horas (Campbell), e a classificação definitiva só vale depois que ele acaba.
 como: O TEOT 2022 e a SES-DF 2024 perguntaram a duração usual do choque medular; o TARO 2006, em certo ou errado, se o paciente em choque medular deve ser avaliado nas primeiras 24 horas para prever melhor a recuperação.
 armadilha: Escolher 48 a 72 horas ou 5 a 7 dias; e, no certo ou errado, aceitar que o exame das primeiras 24 horas prevê a função, quando nesse período o paciente ainda está em choque.
@@ -232,7 +232,7 @@ A fronteira C/D é a **força 3**: vencer a gravidade em toda a amplitude. A esc
 | E | normal | normal em quem teve déficit | função normal |
 !fim
 
-!questoes central=coluna-0292 relacionadas=coluna-0371,coluna-0375
+!questoes central=coluna-0292 relacionadas=coluna-0371,coluna-0375 treino=coluna-0510
 conceito: Sensibilidade preservada em S4-S5 sem motricidade abaixo do nível é ASIA B; motricidade abaixo com a maioria dos músculos-chave abaixo de grau 3 é C; qualquer preservação abaixo do nível torna a lesão incompleta.
 como: O ENARE R4 2024 descreveu jovem com fratura lombar, sensibilidade preservada e motor ausente abaixo do nível, com sensibilidade em S4 e S5; a SES-DF 2024, no capotamento, pediu a ASIA do paciente que move o membro inferior esquerdo com força grau II em todos os grupos e se a lesão é completa ou incompleta.
 armadilha: Chamar de A quem só tem sensibilidade sacral, ou de D quem move o membro mas sem vencer a gravidade (grau II fica abaixo do corte do grau 3).
@@ -443,7 +443,7 @@ Fora do trauma, o Campbell descreve a cauda equina da **hérnia discal maciça**
 | recuperação | sacral irreversível | possível; em geral incompleta |
 !fim
 
-!questoes central=coluna-0446 relacionadas=coluna-0397
+!questoes central=coluna-0446 relacionadas=coluna-0397 treino=coluna-0533
 conceito: Anestesia em sela, retenção urinária, obstipação e dor ciática são a cauda equina; a redução e mesmo a artrodese in situ da listese de alto grau podem lesar a cauda equina, porque as raízes sacrais estão esticadas sobre S1.
 como: A R4 Coluna de Joinville 2010 descreveu anestesia em sela, retenção urinária, obstipação, ciatalgia contínua e anestesia plantar; a R4 Coluna SES-DF 2024 perguntou a complicação que se destaca nas correções de listese de alto grau.
 armadilha: Na primeira, escolher claudicação neurogênica ou espondilolistese degenerativa; na segunda, escolher a lesão da raiz de L5, que também é risco real da redução.
