@@ -45,7 +45,7 @@ Os ângulos recebem nomes padronizados: a letra inicial diz se o eixo é **anat�
 | Medida | Tachdjian's Pediatric Orthopaedics, 6ª ed. | Rockwood and Green's Fractures in Adults, 10ª ed. |
 | --- | --- | --- |
 | eixo mecânico do membro | reto, 0 a 1 grau de varo | passa 1 a 15 mm medial ao centro do joelho |
-| ângulo femorotibial anatômico | 5 a 7 graus de valgo | não dá número no texto extraído |
+| ângulo femorotibial anatômico | 5 a 7 graus de valgo | sem número no livro |
 | diferença entre eixos do fêmur | 5 a 7 graus | eixo mecânico proximal fora do osso |
 | diferença entre eixos da tíbia | praticamente iguais | CORA tibial fora do osso indica multiapical |
 | **mLDFA** | **87 graus** | **88 graus** (média usada para desenhar o eixo) |

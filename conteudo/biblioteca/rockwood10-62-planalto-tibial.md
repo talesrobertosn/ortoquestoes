@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 62 · Tibial Plateau Fractures
 autores: Hemil Maniar e Daniel S. Horwitz
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (plato_tibial.pdf, 34 páginas, todas do capítulo 62); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (p. 28 a 30, Fig. 1.40 e 1.41), cap. 3 (p. 162), cap. 50 (p. 2065 e 2117) e cap. 59 (p. 2612), e ao AO Principles of Fracture Management, 3ª ed., cap. 1.4 (p. 49). O Rockwood 10 não tem página impressa e é citado por capítulo e seção; as páginas citadas dos outros livros são as impressas.
+fonte: Capítulo enviado pelo Tales em 17/10/2026; consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (p. 28 a 30, Fig. 1.40 e 1.41), cap. 3 (p. 162), cap. 50 (p. 2065 e 2117) e cap. 59 (p. 2612), e ao AO Principles of Fracture Management, 3ª ed., cap. 1.4 (p. 49). O Rockwood 10 é citado por capítulo e seção; as páginas citadas dos outros livros são as impressas.
 subtemas: Fratura do planalto tibial
 resumo: Menisco lateral e LCA, SCHATZKER (IV como luxação), LUO, HOHL e MOORE, cisalhamento posteromedial com placa antideslizante, vias anterolateral, posteromedial e posterolateral, preenchimento da falha, duas placas e fixador em etapas.
 ---

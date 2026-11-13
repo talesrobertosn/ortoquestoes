@@ -15,7 +15,7 @@ resumo: Osteoporose é DMO baixa com microarquitetura deteriorada; T-escore ≤ 
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 4 (Osteoporosis and Metabolic Bone Disease) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), de HANSEN e RALSTON, completado pelos capítulos de coluna toracolombar (49), colo femoral (53) e rádio distal (43) do mesmo livro, pelo Campbell's Operative Orthopaedics, 15ª ed., na osteoporose transitória do quadril e na fratura vertebral, e pelo capítulo 28 do Sizínio Hebert, 5ª ed., fonte da clássica tabela pós-menopausa contra senil. O arquivo local do Rockwood não tem página impressa; as citações dele vão pelo capítulo.
+Este resumo segue o capítulo 4 (Osteoporosis and Metabolic Bone Disease) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), de HANSEN e RALSTON, completado pelos capítulos de coluna toracolombar (49), colo femoral (53) e rádio distal (43) do mesmo livro, pelo Campbell's Operative Orthopaedics, 15ª ed., na osteoporose transitória do quadril e na fratura vertebral, e pelo capítulo 28 do Sizínio Hebert, 5ª ed., fonte da clássica tabela pós-menopausa contra senil. As citações do Rockwood vão pelo capítulo.
 
 Uma ideia organiza o tema: **o osso adulto é trocado o tempo todo, e a osteoporose aparece quando o osteoclasto tira mais do que o osteoblasto repõe**. Daí saem os dois tipos primários (a menopausa acelera a reabsorção; a velhice deixa a formação lenta), as drogas (as que freiam o osteoclasto e as que empurram o osteoblasto), os efeitos adversos (osso que não se renova quebra de forma atípica) e o papel do ortopedista, que recebe a primeira fratura por fragilidade.
 

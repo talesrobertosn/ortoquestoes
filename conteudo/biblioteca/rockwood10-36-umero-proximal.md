@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 36 · Proximal Humeral Fractures
 autores: Antonio M. Foruria, Natalia Martinez-Catalan e Joaquin Sanchez-Sotelo
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (umero_proximal.pdf, 58 páginas). Osteonecrose da cabeça conferida em 10/11/2026 no Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 13 (p. 604 a 607) e cap. 14 (p. 630 e 632), e no HEBERT, 5ª ed., cap. 45.
+fonte: Capítulo enviado pelo Tales em 16/10/2026. Osteonecrose da cabeça conferida em 10/11/2026 no Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 13 (p. 604 a 607) e cap. 14 (p. 630 e 632), e no HEBERT, 5ª ed., cap. 45.
 subtemas: Fratura do úmero proximal; Fraturas do úmero proximal e da escápula; Osteonecrose da cabeça umeral
 resumo: Neer, Hertel e Mayo/FJD, irrigação da cabeça, placa bloqueada e calcar, haste, reversa e hemiartroplastia, e as complicações: o úmero proximal explicado pelo que a prova cobra. Osteonecrose: corticoide, falciforme e álcool; CRUESS III é o colapso subcondral; hemi com glenoide íntegra, total no V, reversa com grande dorsal sem tubérculo maior.
 ---

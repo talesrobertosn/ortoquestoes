@@ -15,7 +15,7 @@ resumo: Pirâmide com metanálise de ECRs no topo e o ECR como o melhor estudo p
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 8 (Outcome Studies in Trauma, de Mohit BHANDARI) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), complementado pelo capítulo 27 do Skeletal Trauma (avaliação de desfechos), pelo capítulo 33 do The Adult Hip (desfechos relatados pelo paciente no quadril) e por exemplos clínicos de testes diagnósticos do Campbell's Operative Orthopaedics, 15ª ed. A edição do Rockwood and Green consultada é digital e não traz página impressa; por isso as citações dele indicam capítulo, tabela e figura.
+Este resumo é inspirado no capítulo 8 (Outcome Studies in Trauma, de Mohit BHANDARI) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), complementado pelo capítulo 27 do Skeletal Trauma (avaliação de desfechos), pelo capítulo 33 do The Adult Hip (desfechos relatados pelo paciente no quadril) e por exemplos clínicos de testes diagnósticos do Campbell's Operative Orthopaedics, 15ª ed. As citações do Rockwood and Green indicam capítulo, tabela e figura.
 
 O tema parece distante da sala de cirurgia, mas a pergunta que ele responde é a mais prática de todas: **quanto posso confiar neste resultado?** Toda a metodologia gira em torno de um inimigo, o **viés**, e de um acidente, o **acaso**. Os desenhos de estudo são formas cada vez mais eficientes de neutralizar o viés (a randomização é a arma mais forte, porque equilibra até os fatores que ninguém mediu); a estatística é a forma de medir o tamanho do acaso (valor de p, intervalo de confiança, erros tipo I e II). A pirâmide de evidências e o GRADE apenas organizam essas duas ideias em uma escala.
 

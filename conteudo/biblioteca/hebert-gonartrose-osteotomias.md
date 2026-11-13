@@ -15,7 +15,7 @@ resumo: Artrose do joelho é falha do reparo de toda a articulação, mais comum
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 16 (Joelho do adulto) do HEBERT, Ortopedia e Traumatologia, 5ª edição (2017), lido junto com o capítulo 10 (Knee Preservation Surgery) do Campbell's Operative Orthopaedics, 15ª edição, que é a fonte mais detalhada das osteotomias. As páginas citadas do Campbell são as impressas; o HEBERT local não traz página impressa.
+Este resumo é inspirado no capítulo 16 (Joelho do adulto) do HEBERT, Ortopedia e Traumatologia, 5ª edição (2017), lido junto com o capítulo 10 (Knee Preservation Surgery) do Campbell's Operative Orthopaedics, 15ª edição, que é a fonte mais detalhada das osteotomias. As páginas citadas são as do Campbell; o HEBERT é citado pela seção.
 
 O tema tem uma lógica só, e quem a entende acerta quase tudo: **a artrose do joelho é uma doença de carga mal distribuída**. O varo empurra a carga para o compartimento medial, o valgo para o lateral, e o compartimento sobrecarregado se desgasta mais rápido. Por isso a prova pergunta, em sequência, como medir o desgaste (AHLBACK e KELLGREN-LAWRENCE), como medir o eixo (panorâmica, eixo mecânico, ponto a 62,5% da interlinha), o que fazer antes da cirurgia (exercício, AINE, perda de peso), quando a artroscopia ainda ajuda (sintomas mecânicos), quando mudar o eixo com uma osteotomia (um compartimento só, joelho móvel e estável, paciente jovem e ativo) e quando trocar a superfície por uma prótese unicompartimental ou total.
 

@@ -31,7 +31,7 @@ O tendão flexor dentro da bainha precisa de três coisas para dar certo: **sang
 conceito: A2 e A4 são as polias indispensáveis contra a corda de arco; os vínculos curtos ficam junto às inserções; a face palmar é pouco irrigada.
 como: Uma prova de Ortopedia mostrou as polias e o vínculo curto do superficial em imagem; o TARO 2016, a área isquêmica sob uma polia; o TARO 2018, o efeito do fechamento das polias.
 armadilha: Achar que as cruciformes são as mais importantes ou trocar a origem dos vínculos longos.
-alerta: O texto extraído não localiza a área isquêmica do superficial sob uma polia específica (`mao-0051`) nem discute o fechamento das polias na cicatrização (`mao-0022`); os gabaritos oficiais foram preservados.
+alerta: O texto não localiza a área isquêmica do superficial sob uma polia específica (`mao-0051`) nem discute o fechamento das polias na cicatrização (`mao-0022`); os gabaritos oficiais foram preservados.
 !fim
 
 # A avulsão do profundo {radar=confirmado}

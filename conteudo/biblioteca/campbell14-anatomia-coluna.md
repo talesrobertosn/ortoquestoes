@@ -15,7 +15,7 @@ resumo: 33 vértebras e 24 segmentos móveis; a orientação das facetas define 
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 37 do Campbell's Operative Orthopaedics, 14ª edição (2021), escrito por Raymond J. Gardocki, com a anatomia aplicada do Netter Atlas de Anatomia Ortopédica, 2ª edição, capítulo 2, que no acervo local está em português. Quando o texto diz Campbell 15, as páginas são da 15ª edição (2026), usada para atualizar pontos em que a 14ª mudou ou não detalhava (lado da via anterior cervical, nível da ADAMKIEWICZ, fratura da apófise do anel, início da discite); o Rockwood adulto, 10ª ed., não tem página impressa e é citado por capítulo e seção.
+Este resumo é inspirado no capítulo 37 do Campbell's Operative Orthopaedics, 14ª edição (2021), escrito por Raymond J. Gardocki, com a anatomia aplicada do Netter Atlas de Anatomia Ortopédica, 2ª edição, capítulo 2, que no acervo local está em português. Quando o texto diz Campbell 15, as páginas são da 15ª edição (2026), usada para atualizar pontos em que a 14ª mudou ou não detalhava (lado da via anterior cervical, nível da ADAMKIEWICZ, fratura da apófise do anel, início da discite); o Rockwood adulto, 10ª ed., é citado por capítulo e seção.
 
 O subtema "Anatomia da coluna" é o maior da coluna no acervo, com quase noventa questões, e é também o mais misturado. Ele cai em quatro grupos:
 

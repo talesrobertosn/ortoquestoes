@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 24 · Stress Fractures
 autores: Brandon R. Hull, John M. Yingling e David C. Teague
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (stress_fractures.pdf, 12 páginas); complementos conferidos nos livros locais: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 68 (Fig. 68-43; o arquivo não imprime a página); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 93 (p. 4107, 4109, 4120, 4121 e 4124); Skeletal Trauma, 5ª ed., cap. 67 (p. 2357 e 2362); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 2; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 75.
+fonte: Capítulo enviado pelo Tales em 17/10/2026; complementos conferidos nos livros locais: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 68 (Fig. 68-43); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 93 (p. 4107, 4109, 4120, 4121 e 4124); Skeletal Trauma, 5ª ed., cap. 67 (p. 2357 e 2362); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 2; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 75.
 subtemas: Fraturas por estresse
 resumo: Tensão contra compressão, sítios de alto e baixo risco, KAEDING-MILLER (IV acima de 2 mm), tríade da atleta, cintilografia focal nas três fases, colo do fêmur superior fixa, linha negra da tíbia anterior, navicular sagital central e a zona do quinto metatarso.
 ---

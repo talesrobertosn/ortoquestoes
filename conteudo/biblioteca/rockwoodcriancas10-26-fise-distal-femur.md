@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 26 · Fractures of the Distal Femoral Physis
 autores: Ying Li
-fonte: Livros conferidos localmente em 26/10/2026 e 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 26 (o PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 30 (Lower Extremity Injuries, seção Knee), págs. 1332 a 1344; Campbell's Operative Orthopaedics, 15ª ed., capítulo 38 (Fractures and Dislocations in Children), págs. 1352 (aprox.), 1448 a 1451 e 1483 a 1485. As páginas citadas do Tachdjian e do Campbell são as impressas.
+fonte: Livros conferidos localmente em 26/10/2026 e 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 26 (as referências citam capítulo, seção, figura e tabela); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 30 (Lower Extremity Injuries, seção Knee), págs. 1332 a 1344; Campbell's Operative Orthopaedics, 15ª ed., capítulo 38 (Fractures and Dislocations in Children), págs. 1352 (aprox.), 1448 a 1451 e 1483 a 1485. As páginas citadas do Tachdjian e do Campbell são as impressas.
 subtemas: Fraturas do fêmur e da perna na criança; Trauma pediátrico
 resumo: SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a fise, cruzado anterior no tipo III do côndilo medial, artéria poplítea no desvio anterior, fibular por tração, distúrbio do crescimento em cerca de metade, pinos lisos por 4 semanas, 10 dias para remanipular, PARK-HARRIS e ponte menor que 50%.
 ---

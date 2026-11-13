@@ -15,7 +15,7 @@ resumo: Ótica de 30 graus (campo menor, sem área cega central) contra 70 graus
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 64 (Artroscopia do joelho) do Ortopedia e Traumatologia de HEBERT, 5ª edição (2017), e o compara com os dois capítulos de artroscopia do Campbell's Operative Orthopaedics, 15ª ed.: o 54 (princípios gerais, ótica, irrigação, garrote e complicações) e o 56 (portais e exame do joelho). O HEBERT digital não tem página impressa e é citado pela seção; o Campbell, pela página impressa.
+Este resumo segue o capítulo 64 (Artroscopia do joelho) do Ortopedia e Traumatologia de HEBERT, 5ª edição (2017), e o compara com os dois capítulos de artroscopia do Campbell's Operative Orthopaedics, 15ª ed.: o 54 (princípios gerais, ótica, irrigação, garrote e complicações) e o 56 (portais e exame do joelho). O HEBERT é citado pela seção; o Campbell, pela página.
 
 A banca quase nunca pergunta o que é artroscopia; ela pergunta **o detalhe técnico de quem já operou**: o que acontece com o portal alto, o que é obrigatório antes do portal posteromedial, por que a ótica de 70 graus tem ponto cego, qual sutura cabe no corno anterior, onde aparece a fístula sinovial, quem melhora com o desbridamento na artrose. Todas têm uma lógica geométrica ou biológica, e é ela que este resumo procura deixar clara. As **lesões meniscais** (resumo campbell15-meniscos), as **lesões condrais** (campbell15-lesoes-condrais), a **artroscopia do tornozelo** (campbell15-artroscopia-tornozelo) e a **gonartrose** (hebert-gonartrose-osteotomias) têm resumo próprio e aqui entram só no que interessa à técnica.
 

@@ -15,7 +15,7 @@ resumo: Embriologia (AER, ZPA e Wnt; janela de 4 a 8 semanas) e classificações
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado na parte de Mão Pediátrica do Green's Operative Hand Surgery (7ª edição, capítulos 35 a 38, com as notas da 8ª edição traduzida) e no capítulo 12 do Tachdjian's Pediatric Orthopaedics (6ª edição). As referências citam o livro, o capítulo e, quando o texto a traz, a página impressa.
+Este resumo é inspirado na parte de Mão Pediátrica do Green's Operative Hand Surgery (7ª edição, capítulos 35 a 38, com as notas da 8ª edição traduzida) e no capítulo 12 do Tachdjian's Pediatric Orthopaedics (6ª edição). As referências citam o livro, o capítulo e a página, quando há.
 
 As malformações da mão parecem uma coleção de nomes próprios: APERT, UPTON, PATTERSON, WASSEL, EZAKI, BILHAUT, BAYNE, HEIKEL, TACHDJIAN, CLEARY, MADELUNG, VICKERS, KIRNER, KRUKENBERG. Decorar a lista não funciona. O que funciona é fazer três perguntas a cada doença:
 

@@ -184,7 +184,7 @@ Este é o ponto que mais cai do tema, e o Campbell (cap. 46, p. 1815) o organiza
 | Dor lombar | ocasionalmente | comumente |
 | Movimento da coluna | normal | limitado |
 | Caráter da dor | cãibra, de distal para proximal | dormência, dolorimento, de proximal para distal |
-| Atrofia | (não legível no texto extraído) | ocasional |
+| Atrofia | (não legível no livro) | ocasional |
 !fim
 
 **O teste de TENHULA.** Quando a história não basta, o Campbell (p. 1817) descreve o teste bicicleta-esteira de TENHULA: o paciente é estressado em pé numa esteira e depois sentado numa bicicleta ergométrica, que permite flexão da coluna. O **início mais precoce dos sintomas na esteira plana** e o **início mais tardio na esteira inclinada** se associaram significativamente à estenose.

@@ -365,7 +365,7 @@ O Tachdjian usa o mesmo nome, camisa de rúgbi, para a **osteopetrose** (cap. 38
 
 ## Lendo um perfil bioquímico
 
-A habilidade que a prova testa é olhar três números e dizer a doença. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, seção Imaging Studies, subseção Radiographs), manda, diante de uma fratura patológica, avaliar a **osteopenia generalizada** com a ajuda de uma tabela de distúrbios que produzem osteopenia (Tabela 25-5); no PDF local, porém, só o título da tabela aparece, com o corpo em branco, e o raciocínio precisa ser reconstruído pelos outros capítulos:
+A habilidade que a prova testa é olhar três números e dizer a doença. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, seção Imaging Studies, subseção Radiographs), manda, diante de uma fratura patológica, avaliar a **osteopenia generalizada** com a ajuda de uma tabela de distúrbios que produzem osteopenia (Tabela 25-5); no livro, porém, só o título da tabela aparece, com o corpo em branco, e o raciocínio precisa ser reconstruído pelos outros capítulos:
 
 - **Cálcio baixo, fósforo alto, fosfatase alcalina alta**: só uma doença deixa o fósforo alto, a **osteodistrofia renal** (HEBERT, cap. 27; Tachdjian, p. 1971).
 - **Cálcio normal ou baixo, fósforo baixo, fosfatase alcalina alta**: **osteomalácia** (Rockwood, cap. 4, seção Osteomalacia and Rickets, subseção Investigations).
@@ -389,7 +389,7 @@ A habilidade que a prova testa é olhar três números e dizer a doença. O Rock
 conceito: Cálcio baixo com fósforo alto e fosfatase alcalina alta num paciente com osteopenia e fratura de baixa energia é osteodistrofia renal: o rim não elimina fosfato, o cálcio cai e a remodelação acelera.
 como: Um OrtoQuestões Simulado deu o trio cálcio baixo, fósforo alto e fosfatase alcalina alta e pediu o diagnóstico pelo quadro de distúrbios que produzem osteopenia do Rockwood.
 armadilha: Marcar osteomalácia (fósforo baixo) ou hiperparatireoidismo primário (cálcio alto e fósforo baixo); só a falência renal deixa o fósforo alto.
-alerta: Em `osteometabolicas-0120`, a Tabela 25-5 do Rockwood (Disorders Producing Osteopenia) está com o corpo em branco no PDF local; o gabarito A é sustentado pelo HEBERT (cap. 27: fósforo reduzido em todas as formas, exceto na osteodistrofia renal) e pelo Tachdjian (cap. 38, p. 1971: fosfato, fosfatase alcalina e PTH elevados, cálcio quase sempre baixo).
+alerta: Em `osteometabolicas-0120`, a Tabela 25-5 do Rockwood (Disorders Producing Osteopenia) está com o corpo em branco no livro; o gabarito A é sustentado pelo HEBERT (cap. 27: fósforo reduzido em todas as formas, exceto na osteodistrofia renal) e pelo Tachdjian (cap. 38, p. 1971: fosfato, fosfatase alcalina e PTH elevados, cálcio quase sempre baixo).
 !fim
 
 # A criança renal: deformidades e deslizamento epifisário {radar=clinico}

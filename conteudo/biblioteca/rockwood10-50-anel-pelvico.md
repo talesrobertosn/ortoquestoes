@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 50 · Pelvic Ring Injuries
 autores: Reza Firoozabadi
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (acetabulo_e_anel_pelvico_apenas_resumo-1-75.pdf, pp. 1 a 64; as pp. 65 a 75 são o cap. 51, acetábulo, resumido à parte)
+fonte: Capítulo enviado pelo Tales em 17/10/2026
 subtemas: Fratura do anel pélvico
 resumo: YOUNG e BURGESS e TILE, livro aberto e os 2,5 cm, zonas de DENIS, cinta nos trocânteres, embolização pelo extravasamento de contraste, tamponamento pré-peritoneal, lesão urológica, parafuso iliossacral e a raiz de L5.
 ---

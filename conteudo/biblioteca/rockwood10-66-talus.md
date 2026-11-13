@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 93
 capitulo: Capítulos 66 e 67 · Fractures and Dislocations of the Talus; Calcaneus Fractures
 autores: David W. Sanders e Clayton I. Inculet
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (talus.pdf, 65 páginas). Ampliado em 01/11/2026 com o cap. 67 (calcâneo) do Rockwood and Green e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 93; cap. 58, p. 2560 e 2561, bolhas de fratura). O Rockwood and Green, 10ª ed., não traz página impressa no cabeçalho; ele é citado por capítulo e seção.
+fonte: Capítulo enviado pelo Tales em 16/10/2026. Ampliado em 01/11/2026 com o cap. 67 (calcâneo) do Rockwood and Green e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 93; cap. 58, p. 2560 e 2561, bolhas de fratura). O Rockwood and Green, 10ª ed., é citado por capítulo e seção.
 subtemas: Fraturas do tálus e do calcâneo
 resumo: Calcâneo de ESSEX-LOPRESTI e SANDERS, BÖHLER e GISSANE, seio do tarso e as feridas; no tálus, vascularização, HAWKINS e VALLIER, incidências de CANALE e BRODEN, redução urgente do corpo luxado, placa lateral contra o varo, processos lateral e posterior, sinal de HAWKINS e a luxação subtalar.
 ---

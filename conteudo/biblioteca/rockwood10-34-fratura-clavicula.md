@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 34 · Clavicle Fractures
 autores: Sarah Woltz e Michael D. McKee
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (claviculas.pdf, 59 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026
 subtemas: Fratura da clavícula
 resumo: Allman, Neer, Craig, Robinson e AO, o desvio dos fragmentos, pseudartrose e quem operar, placa e haste, terço lateral, plexo e subclávia, ombro flutuante e consolidação viciosa: a clavícula explicada pelo que a prova cobra.
 ---

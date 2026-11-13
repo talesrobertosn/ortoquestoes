@@ -15,7 +15,7 @@ resumo: Até 5 cm abaixo do trocânter menor; fragmento proximal em flexão (ili
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 55 (Subtrochanteric Femur Fractures, de JANKOWSKI e YOON) do Rockwood and Green's Fractures in Adults, 10ª ed., com o capítulo 56 do mesmo livro para a fratura atípica, a parte subtrocantérica do capítulo 60 do Campbell's Operative Orthopaedics, 15ª ed., e, como apoio para as classificações antigas e a biomecânica, o capítulo 57 do Skeletal Trauma, 5ª ed. O PDF do Rockwood and Green não tem página impressa; por isso as citações dele vêm com a página do PDF.
+Este resumo segue o capítulo 55 (Subtrochanteric Femur Fractures, de JANKOWSKI e YOON) do Rockwood and Green's Fractures in Adults, 10ª ed., com o capítulo 56 do mesmo livro para a fratura atípica, a parte subtrocantérica do capítulo 60 do Campbell's Operative Orthopaedics, 15ª ed., e, como apoio para as classificações antigas e a biomecânica, o capítulo 57 do Skeletal Trauma, 5ª ed. As citações do Rockwood and Green trazem capítulo e seção.
 
 A fratura subtrocantérica é uma fratura de região "difícil" por três motivos que se encadeiam, e a prova cobra exatamente essa cadeia. Primeiro, **os músculos puxam o fragmento proximal curto** para uma posição previsível (flexão, abdução e rotação externa), e o distal é puxado para dentro e para cima. Segundo, **a região carrega as maiores forças de compressão e de tração do esqueleto**, de modo que o implante sofre muito, sobretudo quando o córtex medial está cominuído ou quando a redução fica em varo. Terceiro, **o varo nasce na sala de cirurgia**: ponto de entrada lateral, fresagem excêntrica e redução incompleta fazem a fratura consolidar torta ou não consolidar.
 
@@ -94,7 +94,7 @@ armadilha: Responder adução e rotação interna, que é a posição relativa d
 
 ## A resultante: varo e encurtamento
 
-Somando as forças: o proximal vai para **abdução** e o distal para **adução**; o ângulo entre eles abre para medial e fecha para lateral, ou seja, a fratura tende ao **varo**. Os adutores, o quadríceps e os isquiotibiais puxam o distal para cima, o que dá **encurtamento**. O Rockwood and Green (PDF 2743 e 2744, Fig. 55-4) descreve exatamente isso: o segmento da diáfise fica **aduzido e encurtado**. O Skeletal Trauma (p. 1741) acrescenta que as deformidades tardias mais comuns são **varo e extensão**, e o Rockwood and Green ilustra, nas Fig. 55-6 e 55-17, a má consolidação e a pseudartrose em varo.
+Somando as forças: o proximal vai para **abdução** e o distal para **adução**; o ângulo entre eles abre para medial e fecha para lateral, ou seja, a fratura tende ao **varo**. Os adutores, o quadríceps e os isquiotibiais puxam o distal para cima, o que dá **encurtamento**. O Rockwood and Green (Fig. 55-4) descreve exatamente isso: o segmento da diáfise fica **aduzido e encurtado**. O Skeletal Trauma (p. 1741) acrescenta que as deformidades tardias mais comuns são **varo e extensão**, e o Rockwood and Green ilustra, nas Fig. 55-6 e 55-17, a má consolidação e a pseudartrose em varo.
 
 !questoes central=trauma-1166
 conceito: A soma de abdução do proximal e adução do distal produz varo, e os adutores, o quadríceps e os isquiotibiais encurtam o membro.
@@ -194,7 +194,7 @@ alerta: Os livros lidos (Rockwood and Green 10, Campbell 15, Skeletal Trauma 5) 
 
 ## AO/OTA
 
-O Rockwood and Green (PDF 2740, Fig. 55-3) apresenta a AO/OTA da região subtrocantérica pela **localização, geometria e cominuição**: traço **oblíquo, transverso ou multifragmentar**. O Campbell (p. 2666), ao classificar as trocantéricas, mostra o elo com a subtrocantérica: **31A3** reúne as fraturas com **obliquidade reversa, traço transverso ou extensão subtrocantérica**. O Skeletal Trauma (p. 1741) lembra que a AO original **não descrevia** bem as fraturas com extensão para a região trocantérica, um dos motivos de a RUSSELL-TAYLOR existir.
+O Rockwood and Green (Fig. 55-3) apresenta a AO/OTA da região subtrocantérica pela **localização, geometria e cominuição**: traço **oblíquo, transverso ou multifragmentar**. O Campbell (p. 2666), ao classificar as trocantéricas, mostra o elo com a subtrocantérica: **31A3** reúne as fraturas com **obliquidade reversa, traço transverso ou extensão subtrocantérica**. O Skeletal Trauma (p. 1741) lembra que a AO original **não descrevia** bem as fraturas com extensão para a região trocantérica, um dos motivos de a RUSSELL-TAYLOR existir.
 
 !tabela AO/OTA da região trocantérica e o elo com a subtrocantérica (Campbell 15, cap. 60, p. 2664 a 2670; Rockwood and Green 10, cap. 55)
 | Grupo | Padrão | Implante favorecido |

@@ -112,7 +112,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, seções Clinical
 
 ## As classes da hemorragia
 
-A Tabela 14-2 do Rockwood (classificação do choque hemorrágico no homem de 70 kg) é uma figura no PDF e não pôde ser extraída. As classes do ATLS estão descritas no Skeletal Trauma, 5ª ed. (cap. 9, p. 297):
+A Tabela 14-2 do Rockwood (classificação do choque hemorrágico no homem de 70 kg) é uma figura e não pôde ser transcrita. As classes do ATLS estão descritas no Skeletal Trauma, 5ª ed. (cap. 9, p. 297):
 
 !tabela Classes da hemorragia do ATLS (Skeletal Trauma, 5ª ed., cap. 9, p. 297)
 | Classe | Perda (% da volemia) | Volume | Clínica | Reposição |

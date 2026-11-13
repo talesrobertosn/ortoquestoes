@@ -15,7 +15,7 @@ resumo: Fratura do quadril da criança é rara (menos de 1%), de alta energia e 
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 24 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Chinmay Paranjape e Vidyadhar Upasani, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo; como o arquivo do livro não tem página impressa, as referências apontam seção, figura e tabela.
+Este resumo é inspirado no capítulo 24 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Chinmay Paranjape e Vidyadhar Upasani, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo; as referências apontam seção, figura e tabela.
 
 O capítulo junta três lesões do quadril da criança: a **fratura do quadril** (o colo e a região trocantérica), a **fratura de estresse do colo** e a **luxação traumática**. Todas giram em torno do mesmo personagem: a **cabeça femoral da criança**, que vive de poucos vasos e não tem como pedir socorro à metáfise, porque a fise é uma parede. Entendida a vascularização, quase tudo o resto se deduz: por que a fratura alta necrosa mais que a baixa, por que se reduz com urgência e anatomicamente, por que a luxação demorada vai mal.
 

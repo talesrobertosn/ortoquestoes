@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 57 · Femoral Shaft Fractures
 autores: John D. Adams Jr. e Kyle J. Jeray
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (femur_questao_e_resumos.pdf, páginas 1 a 40)
+fonte: Capítulo enviado pelo Tales em 16/10/2026
 subtemas: Fratura da diáfise do fêmur
 resumo: Lesões associadas e o colo do mesmo lado, forças deformantes, haste fresada e bloqueada, entrada piriforme ou trocantérica, retrógrada, rotação pelo trocanter menor, controle de dano e as complicações.
 ---

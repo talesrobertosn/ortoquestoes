@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 48 · Cervical Spine Fractures and Dislocations
 autores: Hai V. Le, Andrew J. Schoenfeld, Wyatt D. Vander Voort e Christopher M. Bono
-fonte: Capítulo enviado pelo Tales em 19/10/2026 (cervical.pdf, páginas 1 a 53; a página 54, início do capítulo 49, foi ignorada)
+fonte: Capítulo enviado pelo Tales em 19/10/2026
 subtemas: Fraturas da coluna cervical; Fraturas da coluna cervical alta; Fraturas da coluna cervical baixa
 resumo: ANDERSON e D'ALONZO, GRAUER, JEFFERSON e SPENCE (6,9 mm), ADI de 3 e 5 mm, HARRIS (12 mm), LEVINE e EDWARDS, ALLEN e FERGUSON, SLIC, 11 graus e 3,5 mm, síndrome medular central e BROWN-SÉQUARD: a coluna cervical explicada pelo que a prova cobra.
 ---

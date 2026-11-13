@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed., e o HEBERT
 capitulo: Capítulo 10 · Treatment of the Stiff Finger and Hand
 autores: Robert N. Hotchkiss
-fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10 (p. 338 a 344 e o conteúdo online incluído no PDF), cap. 5 (p. 155 a 174 e referências), cap. 31 (p. 1046), cap. 36 (p. 1270 a 1275), cap. 39 (p. 1387 a 1390) e cap. 55 (p. 1879 a 1893); Campbell's Operative Orthopaedics, 15ª ed., caps. 71 (p. 3181 a 3187), 79 (p. 3510 e 3511) e 85 (p. 3672 a 3674); HEBERT (Sizínio), 5ª ed., caps. 53 e 54.
+fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10 (p. 338 a 344 e o conteúdo online), cap. 5 (p. 155 a 174 e referências), cap. 31 (p. 1046), cap. 36 (p. 1270 a 1275), cap. 39 (p. 1387 a 1390) e cap. 55 (p. 1879 a 1893); Campbell's Operative Orthopaedics, 15ª ed., caps. 71 (p. 3181 a 3187), 79 (p. 3510 e 3511) e 85 (p. 3672 a 3674); HEBERT (Sizínio), 5ª ed., caps. 53 e 54.
 subtemas: Deformidades dos dedos
 resumo: Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); BUNNELL e intrínseco plus e minus; checkrein e artéria digital transversa; camptodactilia, clinodactilia e KIRNER.
 ---
