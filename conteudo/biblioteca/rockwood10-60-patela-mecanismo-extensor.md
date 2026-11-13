@@ -118,7 +118,7 @@ Parâmetros de altura da patela: comprimento do tendão próximo ao da patela e 
 
 A **TC não é rotina** na fratura isolada: a radiografia já mostra o traço transverso em 92,8% dos casos, mas só 16% eram transversas simples na TC (MISIR). Como as evidências de desvio e resultado vêm da radiografia, decidir pela TC pode indicar cirurgia além do que a literatura sustenta. Ela serve no planejamento das cominutivas, na pseudartrose, na consolidação viciosa e na **fratura de estresse** (sensibilidade de 71% em idosos osteopênicos, contra 30% da cintilografia e 0% da radiografia). A **RM** fica para suspeita de lesão tendínea, lesões condrais da luxação e fragmento osteocondral numa fratura que se pensa tratar sem cirurgia.
 
-!questoes central=trauma-0212,trauma-0153 treino=trauma-1644
+!questoes central=trauma-0212,trauma-0153 relacionadas=trauma-1292 treino=trauma-1644
 conceito: O perfil mostra melhor o traço transverso e a separação dos fragmentos; a axial, com joelho a 45 graus e raio a 30 graus abaixo da horizontal, é a única que mostra bem os traços verticais e marginais.
 como: O TEOT 2021 perguntou em que incidência os traços marginais e verticais são mais bem identificados (axial de MERCHANT, contra perfil, oblíqua e AP); o TARO 2014, a fratura mais bem vista no perfil (transversa, contra vertical, cominutiva e osteocondral).
 armadilha: AP para o traço vertical: ele se sobrepõe ao fêmur e passa despercebido.
@@ -175,7 +175,7 @@ Quase qualquer padrão (transverso, estrelado, vertical) pode ser tratado sem ci
 
 Os autores tratam sem cirurgia o extensor íntegro, a vertical, o desvio articular menor que 3 mm e o paciente sem condição anestésica: órtese articulada travada em extensão no paciente confiável, ou gesso cilíndrico da virilha ao tornozelo no idoso com risco de queda; isométricos e elevação da perna a partir de 1 semana, carga parcial imediata. As fraturas marginais e pequenas não articulares dispensam imobilização.
 
-!questoes central=trauma-0950 treino=trauma-1234
+!questoes central=trauma-0950 relacionadas=trauma-1731 treino=trauma-1234
 conceito: Tratamento não cirúrgico: extensor íntegro e incongruência menor que 3 mm. Cirurgia: incongruência de 3 mm ou mais, extensor incompetente, exposta ou fragmentos soltos.
 como: Uma prova sem ano, em formato EXCETO, listou as indicações cirúrgicas e deixou de fora o desvio dos fragmentos de 2 mm (incongruência de 3 mm, lesão do extensor com perda de função e fragmento osteocondral intra-articular eram indicações).
 armadilha: 2 mm: o capítulo usa o degrau de 2 mm para chamar a fratura de desviada, mas a indicação cirúrgica que ele dá é a incongruência de 3 mm.
