@@ -36,7 +36,7 @@ export function Retencao({ conta, erradas, onRevisar }: {
           return <li key={estado} className={`rt__etapa rt__etapa--${estado}`} style={{ '--p': `${Math.max(2, p * 100)}%` } as CSSProperties}>
             <span className="rt__barra" aria-hidden="true"><i /></span>
             <span className="rt__texto"><strong><b className="ds-num">{n.toLocaleString('pt-BR')}</b> {rotulo}</strong><small>{ajuda}</small></span>
-            {n > 0 && estado !== 'consolidada' && <button type="button" className="rt__acao" onClick={() => onRevisar(estado)}>Refazer {Math.min(20, n)} <Icone nome="direita" tamanho={14} /></button>}
+            {n > 0 && estado !== 'consolidada' && <button type="button" className="dp-botao dp-botao--contorno dp-botao--pequeno" onClick={() => onRevisar(estado)}>Refazer {Math.min(20, n)} <Icone nome="direita" tamanho={14} /></button>}
           </li>
         })}
       </ol>
@@ -61,7 +61,7 @@ export function ErrosComCerteza({ ids, porConfianca, onRevisar }: {
           <strong>{ids.length} {ids.length === 1 ? 'questão errada com certeza' : 'questões erradas com certeza'}</strong>
           <span>É o erro mais perigoso: você tinha certeza e a prova diria o contrário. Vale ler o comentário com calma.</span>
         </div>
-        <button type="button" className="botao botao--principal" onClick={onRevisar}>Revisar {Math.min(20, ids.length)}</button>
+        <button type="button" className="dp-botao dp-botao--principal" onClick={onRevisar}>Revisar {Math.min(20, ids.length)} <Icone nome="direita" tamanho={15} /></button>
       </div>}
       <div className="cf__linhas">
         {linhas.map(([tipo, rotulo, icone]) => {
@@ -102,6 +102,7 @@ export function ResumosIndicados({ lista, titulo = 'Leia antes de refazer' }: { 
               <span>Cobre <b>{r.cobre}</b> {r.cobre === 1 ? 'questão que você errou' : 'questões que você errou'}{r.assuntos.length ? ` · ${r.assuntos.join(', ')}` : ''}</span>
             </span>
             <span className="ri__min ds-num">{r.capitulo.minutos} min{r.capitulo.acesso === 'assinante' ? <Icone nome="cadeado" tamanho={12} /> : null}</span>
+            <span className="ri__ler"><Icone nome="livro" tamanho={14} /> Ler o resumo</span>
           </a>
         </li>)}
       </ul>

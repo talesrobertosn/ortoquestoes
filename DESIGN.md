@@ -137,7 +137,8 @@ uma arte de jogo pintada à mão por código. Duas camadas, cada uma no seu pape
    nunca espalhada como decoração.
 
 Hoje o site tem três dialetos que este documento organiza: a **base** (porcelana e verdete), a **temporada pixel**
-(cartões de borda firme e sombra de degrau, números na Jersey 10, em Cronograma, Desempenho e Admin; Treinar voltou à
+(cartões de borda firme e sombra de degrau, números na Jersey 10, em Cronograma e Admin; o Desempenho saiu dela em
+14/11/2026, ver abaixo; Treinar voltou à
 base em 01/11/2026, ver `docs/design/TREINAR-MESA-LEVE.md`) e o
 **mundo HD-2D** (vidro escuro com filete dourado e losangos, na página inicial e nos topos pintados). Trabalho novo
 usa a base; a temporada pixel e o HD-2D entram só onde já moram ou onde a arte é o assunto.
@@ -166,6 +167,12 @@ Ideia em estudo (não aplicada): interface monocromática estilo shadcn com a ar
   dois temas. É a base de logos, posts e peças novas; acervo e símbolos em `marketing/instagram/marca/`.
 - **Símbolo oficial: o ladrilho das alternativas** (11/11/2026), em `src/marca/Simbolo.tsx`. No topo, o ladrilho é
   maior que o nome (32 px para um nome de 22) para a marca ficar visível.
+
+- **Desempenho (14/11/2026)**: refeito do zero numa linguagem só (`src/estilos/paginas/Desempenho.css`, raiz `.dpg`):
+  o verde-azulado `#00806f` e o azul-ardósia `#243b47` tirados da logo da SBOT sobre o papel branco, Plus Jakarta
+  nos títulos e números (nada de fonte pixel para ler), botões reais (`.dp-botao`) para cada ação, seções por extenso
+  com menu lateral fixo (barra de atalhos no celular), a arte do observatório só no topo e na mesa de "O que fazer
+  agora" (`scripts/gerar_cena_observatorio.py --mesa`).
 
 ## Typography
 
