@@ -18,7 +18,7 @@ import { MenuGeral } from './MenuGeral'
 interface Destino { destino: string; rotulo: string; icone: NomeIcone; secundario?: boolean; beta?: boolean; classe?: string }
 const LINKS: Destino[] = [
   { destino: '/treinar', rotulo: 'Treinar', icone: 'livro' },
-  { destino: '/resumos', rotulo: 'Resumos', icone: 'lapis' },
+  { destino: '/resumos', rotulo: 'Resumos', icone: 'resumo' },
   { destino: '/cronograma', rotulo: 'Cronograma', icone: 'calendario', secundario: true },
   { destino: '/dados', rotulo: 'Desempenho', icone: 'grafico' },
   { destino: '/ranking', rotulo: 'Ranking', icone: 'trofeu', secundario: true, classe: 'ranking' },
