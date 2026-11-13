@@ -1,0 +1,22 @@
+/* Direitos autorais e retirada de conteúdo (/direitos-autorais), 13/11/2026. Usa a base das páginas jurídicas
+   (.termos-pagina, premium.css) e os tokens de DESIGN.md. */
+.da .da-pedido {
+  display: grid; gap: 1rem; padding: 1.15rem 1.25rem; align-items: center;
+  border: var(--borda); border-left: 4px solid var(--verdete); border-radius: var(--raio-cartao); background: var(--superficie);
+}
+.da .da-pedido h2 { margin: 0; font-size: 1.15rem; }
+.da .da-pedido p { margin: .35rem 0 0; color: var(--texto-2, var(--ardosia)); }
+.da .da-pedido__acoes { display: flex; flex-wrap: wrap; gap: .6rem; }
+.da .da-pedido__acoes .botao { display: inline-flex; align-items: center; gap: .45rem; }
+@media (min-width: 760px) {
+  .da .da-pedido { grid-template-columns: 1fr auto; }
+  .da .da-pedido__acoes { flex-direction: column; align-items: stretch; }
+}
+
+.da .da-passos { list-style: none; margin: .75rem 0 0; padding: 0; display: grid; gap: .75rem; }
+.da .da-passos li { display: grid; grid-template-columns: auto 1fr; gap: .8rem; align-items: start; line-height: 1.55; }
+.da .da-passos .px-numero { margin-top: .1rem; }
+.da .da-lista { margin: .5rem 0 0; padding-left: 1.2rem; line-height: 1.6; display: grid; gap: .45rem; }
+.da header > .texto-2 { margin-top: .6rem; }
+.da section > .texto-2 { margin-top: .9rem; }
+.da section > h2 { margin-bottom: .2rem; }

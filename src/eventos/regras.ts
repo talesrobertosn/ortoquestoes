@@ -33,7 +33,7 @@ export function liberadoPeloRelogio(agora: number, ultima: number): boolean {
 }
 export function permitido(c: Contexto): boolean {
   if (!c.ligado || !c.visivel || c.modal) return false
-  if (/^\/(simulado-nacional|admin|conta|entrar|assinatura|termos|condicoes-assinatura|contato)(\/|$)/.test(c.rota)) return false
+  if (/^\/(simulado-nacional|admin|conta|entrar|assinatura|termos|condicoes-assinatura|direitos-autorais|contato)(\/|$)/.test(c.rota)) return false
   if (c.sessao && !c.sessao.concluidaEm && (c.sessao.simulado || c.sessao.nacional || (c.sessao.limiteSegundos ?? 0) > 0)) return false
   // Combate já tem sua própria apresentação. A Biblioteca recebe apenas o gato, por interação.
   if (c.rota.startsWith('/flashcards/') && c.rota !== '/flashcards/biblioteca') return false

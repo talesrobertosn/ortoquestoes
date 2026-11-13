@@ -8,7 +8,7 @@ import { conferirAnexos, descreverSituacao, montarCarta, MOTIVOS_SUPORTE } from 
  * src/config.ts), pelo Resend, com "responder para" no e-mail de quem escreveu.
  *
  * POST, corpo JSON:
- *   motivo     id do motivo ("pagar", "assinatura", "acesso", "questao", "dados", "outro"; 03/11/2026)
+ *   motivo     id do motivo ("pagar", "assinatura", "acesso", "questao", "dados", "direitos", "outro"; 03/11/2026 e 13/11/2026)
  *   assunto    linha de assunto montada pela página (até 160 caracteres)
  *   mensagem   o texto (10 a 6000 caracteres)
  *   email      e-mail para a resposta (obrigatório para visitante; com conta, vale o da conta)

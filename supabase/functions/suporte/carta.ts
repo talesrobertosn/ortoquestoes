@@ -7,7 +7,7 @@
 
 export const MOTIVOS_SUPORTE: Record<string, string> = {
   pagar: 'Não consegui assinar ou pagar', assinatura: 'Minha assinatura', acesso: 'Acesso à conta',
-  questao: 'Erro em questão', dados: 'Meus dados', outro: 'Sugestão ou outro assunto',
+  questao: 'Erro em questão', dados: 'Meus dados', direitos: 'Direitos autorais', outro: 'Sugestão ou outro assunto',
 }
 
 export interface DadosCarta {
