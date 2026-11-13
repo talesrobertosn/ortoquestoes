@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Errata (modelo)</title>
+<!-- MODELO "Errata" (aprovado pelo Tales em 13/11/2026: "salve esses modelos que você fez, pq ficou perfeito"):
+     4 stories de aula no gabinete de revisão. Guia: marketing/instagram/estilos/ERRATA.md.
+     Stories "Errata: a palavra que mudou" (padrão aula, marketing/instagram/estilos/PADRAO-AULA.md), 13/11/2026.
+     Questão tumores-0394 (OrtoQuestões Simulados), gabarito B. Todo o texto vem do comentário da questão
+     (public/acervo/comentarios/tumores.json) e do resumo "Metástases ósseas e fratura patológica".
+     Figura: Campbell's Operative Orthopaedics, 15ª ed., cap. 29, Fig. 29.28 A e B, p. 994 (a mesma do comentário).
+     Story 5: captura real do site (capturar.mjs -> img/site-mac-claro.png). Arte em pixel art por código:
+     arte_errata.py -> arte/. Sem desenho de anatomia; na figura, só recorte, ampliação e moldura.
+     node marketing/instagram/gerar.mjs marketing/instagram/estilos/errata/modelo.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+@font-face { font-family: Serif; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serif; font-style: italic; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Cinzel; src: url(../../fontes/cinzel-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+@font-face { font-family: Cinzel; src: url(../../fontes/cinzel-latin-900-normal.woff2) format('woff2'); font-weight: 900; }
+:root { --tinta: #2a1c12; --tinta2: #5a4636; --verde: #14655e; --verde2: #0e4a44; --verm: #b8322a; --azul: #2c4f98;
+  --papel: #f6eedb; --ouro: #f2cf72; --ouro2: #cf9f42; --noite: #0e2e2a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: var(--tinta);
+  background: #10100e url(arte/fundo.png) center / 1080px 1920px no-repeat; }
+section.mesa { background-image: url(arte/fundo-mesa.png); }
+.px { image-rendering: pixelated; }
+.abs { position: absolute; }
+
+/* ── etiqueta de couro com ouro (cabeçalho) ── */
+.placa { position: absolute; left: 50%; top: 236px; transform: translateX(-50%); z-index: 8; display: flex; align-items: center; gap: 18px;
+  padding: 15px 38px 15px 24px; border-radius: 12px; white-space: nowrap;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 .1 0 0 0 0 .08 0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #23574a 0%, #17443a 55%, #10342c 100%);
+  box-shadow: inset 0 0 0 4px #10342c, inset 0 0 0 6px #c99a44, inset 0 0 0 8px #10342c, inset 0 0 0 9px rgba(242,207,114,.45),
+    inset 0 2px 0 10px rgba(255,255,255,.04), 0 0 0 2px #071a16, 0 16px 30px rgba(0,0,0,.6); }
+.placa .m { display: inline-flex; align-items: center; gap: 10px; margin-left: 8px; font: 800 28px Jakarta; letter-spacing: -.01em; }
+.placa .m img { width: 40px; height: 40px; border-radius: 9px; box-shadow: 0 0 0 2px rgba(242,207,114,.55); }
+.foil { background: linear-gradient(180deg, #fff3c4 0%, #f2cf72 40%, #c99a44 62%, #f6dc8e 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.55)); }
+.placa .m span { font-weight: 500; }
+.placa .sep { width: 2px; height: 34px; background: linear-gradient(#c99a44, #6a4c1c); }
+.placa .t { font: 700 21px Cinzel; letter-spacing: .14em; text-transform: uppercase; }
+
+/* ── a prova tipográfica (folha) e os prendedores ── */
+.folha { position: absolute; z-index: 3; left: 48px; right: 48px; top: 340px; height: 1230px; border-radius: 4px;
+  background-color: var(--papel);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .34 0 0 0 0 .2 0 0 0 .11 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 22% 12%, rgba(255,250,236,.9), transparent 60%),
+    radial-gradient(ellipse at 90% 100%, rgba(196,160,104,.22), transparent 55%);
+  box-shadow: 0 2px 0 #d9c9a3, 0 3px 0 #efe4c8, 0 5px 0 #d4c39c, 0 30px 60px rgba(0,0,0,.62), inset 0 0 70px rgba(150,110,60,.2); }
+.folha::before { content: ''; position: absolute; left: 34px; top: 0; bottom: 0; width: 2px; background: rgba(184,50,42,.28); }
+.folha::after { content: attr(data-prova); position: absolute; left: 58px; top: 20px; font: 700 15px Inter; letter-spacing: .24em; text-transform: uppercase; color: #b5a17c; }
+.prende { position: absolute; z-index: 9; width: 72px; filter: drop-shadow(0 8px 6px rgba(0,0,0,.45)); }
+
+/* ── tipografia ── */
+.rot { font: 700 40px Caveat; color: var(--verm); }
+.h { font: 800 66px/1.03 Jakarta; letter-spacing: -.035em; color: var(--tinta); }
+.h em { font-style: normal; color: var(--verde); }
+.h .lit { color: var(--verm); }
+.txt { font: 500 30px/1.42 Inter; color: var(--tinta2); }
+.txt b { color: var(--tinta); font-weight: 750; }
+.txt .v { color: var(--verm); font-weight: 750; }
+.txt .g { color: var(--verde); font-weight: 750; }
+.nota { font: 700 34px/1.1 Caveat; color: #3e4450; }
+.ref { font: 600 19px/1.4 Inter; color: #8a7458; letter-spacing: .01em; }
+.ref.plaqueta { padding: 10px 18px; border-radius: 10px; background: rgba(12,10,8,.72); box-shadow: 0 0 0 1px rgba(242,207,114,.3); color: #ecdfc2 !important; text-shadow: none !important; }
+.ref b { color: #6a5438; }
+
+/* ── volumes em pé (story 1) ── */
+.vol { position: absolute; z-index: 6; display: grid; place-items: center; align-content: center; gap: 2px; text-align: center; }
+.vol small { font: 700 13px Cinzel; letter-spacing: .2em; }
+.vol b { font: 900 46px/1 Cinzel; }
+.vol i { font: 700 15px Cinzel; font-style: normal; letter-spacing: .14em; }
+
+/* ── questão ── */
+.enun { font: 650 31px/1.28 Jakarta; letter-spacing: -.015em; color: var(--tinta); }
+.alt { display: flex; align-items: flex-start; gap: 16px; padding: 10px 18px; border-radius: 12px; background: rgba(255,253,246,.62); border: 2px solid #d4c098; }
+.alt b { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; flex: none; border: 3px solid var(--verde); color: var(--verde); font: 800 27px Jakarta; background: #fffdf6; }
+.alt span { font: 550 26px/1.3 Inter; color: var(--tinta); padding-top: 6px; }
+
+/* ── filme da figura ── */
+.filme { position: absolute; z-index: 5; background: #07090b; padding: 12px; border-radius: 10px; box-shadow: 0 0 0 2px #23282e, 0 18px 34px rgba(0,0,0,.45); }
+.filme.cab { padding-top: 54px; }
+.filme.cab::before { content: attr(data-id); position: absolute; left: 22px; right: 22px; top: 18px; font: 700 15px Inter; letter-spacing: .22em; color: #7a858e; text-transform: uppercase; display: flex; justify-content: space-between; }
+.filme .q { width: 100%; height: 100%; overflow: hidden; border-radius: 4px; background: #000; display: flex; gap: 8px; }
+.filme img { display: block; height: 100%; width: auto; }
+.seta { position: absolute; z-index: 7; font: 700 34px/1 Caveat; color: var(--verm); }
+
+/* ── balanças (story 2) ── */
+.balanca { position: absolute; z-index: 5; width: 420px; filter: drop-shadow(0 10px 8px rgba(0,0,0,.35)); }
+.pr { position: absolute; z-index: 6; font: 700 30px/1 Caveat; text-align: center; width: 160px; margin-left: -80px; }
+.tag { display: inline-block; padding: 6px 14px; border-radius: 999px; font: 800 20px Jakarta; letter-spacing: .08em; text-transform: uppercase; }
+.tag.lit { background: rgba(184,50,42,.12); color: var(--verm); box-shadow: inset 0 0 0 2px rgba(184,50,42,.45); }
+.tag.bla { background: rgba(20,101,94,.12); color: var(--verde); box-shadow: inset 0 0 0 2px rgba(20,101,94,.45); }
+.tag.mis { background: rgba(160,110,30,.14); color: #8a5a10; box-shadow: inset 0 0 0 2px rgba(160,110,30,.45); }
+
+/* ── livro aberto (story 3) ── */
+.pagina { position: absolute; z-index: 6; font-family: Serif; color: #2a2218; }
+.pagina .cab { display: flex; justify-content: space-between; align-items: baseline; font: 600 15px Serif; letter-spacing: .16em; text-transform: uppercase; color: #8a7a5c; border-bottom: 1.5px solid #cbb994; padding-bottom: 8px; }
+.pagina .cab b { font: 700 19px Serif; letter-spacing: .02em; color: #5a4a30; text-transform: none; }
+.pagina h5 { font: italic 600 25px Serif; color: #5a4a30; margin: 16px 0 8px; }
+.linha { display: grid; grid-template-columns: 136px 1fr; gap: 10px; padding: 11px 0; border-bottom: 1px dashed #d8c9a6; font: 500 25px/1.28 Serif; }
+.linha:last-child { border-bottom: 0; }
+.linha dt { font-weight: 750; color: #1e1810; }
+.linha dd { color: #3a3024; }
+.risco { position: relative; color: #6a5a48; text-decoration: line-through; text-decoration-color: var(--verm); text-decoration-thickness: 3px; }
+.insere { position: absolute; left: 4px; top: -30px; font: 700 34px/1 Caveat; color: var(--verm); transform: rotate(-4deg); white-space: nowrap; }
+.marca { background: linear-gradient(100deg, rgba(255,214,80,0) 0%, rgba(255,214,80,.75) 4%, rgba(255,206,70,.62) 94%, rgba(255,214,80,0) 100%); padding: 0 4px; border-radius: 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.marg { position: absolute; z-index: 7; font: 700 28px/1.05 Caveat; color: var(--verm); }
+.postit { position: absolute; z-index: 9; width: 270px; padding: 22px 22px 20px; background: linear-gradient(180deg, #fff3a0, #f7e27a); box-shadow: 0 2px 0 #e4cc5c, 0 18px 26px rgba(0,0,0,.45); font: 700 30px/1.08 Caveat; color: #3a3010; }
+.postit::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 26px; background: rgba(0,0,0,.05); }
+.marcador { position: absolute; z-index: 4; padding: 14px 18px 30px; background: #efe4c6; box-shadow: 0 10px 18px rgba(0,0,0,.4); font: 700 27px/1.05 Caveat; color: #4a3c28;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 86%, 0 100%); }
+
+/* ── ficha de couro (regra) ── */
+.couro { position: absolute; z-index: 6; border-radius: 16px; padding: 26px 28px 22px; color: #f6eedb;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 .1 0 0 0 0 .08 0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #1f5245, #123a31);
+  box-shadow: inset 0 0 0 5px #123a31, inset 0 0 0 7px #c99a44, inset 0 0 0 9px #123a31, 0 0 0 2px #071a16, 0 22px 40px rgba(0,0,0,.6); }
+.couro h4 { font: 700 21px Cinzel; letter-spacing: .14em; text-transform: uppercase; text-align: center; }
+.regra { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
+.regra div { border-radius: 12px; padding: 14px 8px 12px; text-align: center; background: rgba(0,0,0,.22); box-shadow: inset 0 0 0 1.5px rgba(242,207,114,.35); }
+.regra p { font: 800 24px/1.1 Jakarta; letter-spacing: -.01em; color: #fff7e2; }
+.regra span { display: inline-block; margin-top: 10px; padding: 5px 12px; border-radius: 999px; font: 800 17px Jakarta; letter-spacing: .08em; text-transform: uppercase; }
+.r-bla { background: #2a8a6e; color: #fff; } .r-lit { background: #c0463a; color: #fff; } .r-mis { background: #d8a948; color: #2a1a08; } .r-var { background: #f6eedb; color: #123a31; }
+
+/* ── resposta (story 4) ── */
+.carimbo { position: absolute; z-index: 8; padding: 10px 22px; border: 6px solid var(--verm); border-radius: 14px; color: var(--verm);
+  font: 800 34px/1 Jakarta; letter-spacing: .04em; text-transform: uppercase; text-align: center; mix-blend-mode: multiply; opacity: .88;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.2 1.9'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.certa { border-radius: 14px; padding: 18px 22px; background: rgba(20,101,94,.09); border: 3px solid var(--verde); }
+.certa q { font: 650 28px/1.34 Inter; color: var(--tinta); quotes: none; }
+.erro { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: start; }
+.erro b { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; border: 3px dashed var(--verm); color: var(--verm); font: 800 26px Jakarta; }
+.erro p { font: 500 26px/1.36 Inter; color: var(--tinta2); padding-top: 4px; }
+.erro p b { all: unset; color: var(--tinta); font-weight: 750; }
+.cartao { position: absolute; z-index: 5; border-radius: 16px; padding: 20px; background: rgba(255,253,246,.7); border: 2px solid #d4c098; }
+.cartao h4 { font: 800 27px/1.12 Jakarta; letter-spacing: -.02em; color: var(--tinta); }
+.cartao p { font: 500 23px/1.36 Inter; color: var(--tinta2); }
+.cartao p b { color: var(--tinta); }
+.mirels { display: grid; gap: 12px; margin-top: 16px; }
+.mirels div { display: grid; grid-template-columns: 120px 1fr 34px; align-items: center; gap: 10px; font: 700 22px Inter; color: var(--tinta); }
+.mirels i { display: flex; gap: 6px; }
+.mirels i s { width: 52px; height: 30px; border-radius: 5px; background: linear-gradient(180deg, #fff0b0, #f2cf72 30%, #cf9f42 70%, #8e6420); box-shadow: inset 0 1px 0 rgba(255,255,255,.7), 0 2px 0 #5a3a10; }
+.mirels em { font: 800 30px Jakarta; font-style: normal; color: var(--verm); text-align: right; }
+
+/* ── story 5: MacBook ── */
+.mac { position: absolute; z-index: 5; width: 912px; height: 606px; filter: drop-shadow(0 26px 30px rgba(0,0,0,.65)); }
+.mac .tela { position: absolute; left: 54px; top: 18px; width: 804px; height: 522px; overflow: hidden; background: #fff; }
+.mac .tela img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.mac .tela::after { content: ''; position: absolute; inset: 0; background: linear-gradient(118deg, rgba(255,255,255,.16) 0%, rgba(255,255,255,.05) 32%, transparent 33%, transparent 100%); }
+.mac > img.casca { position: absolute; inset: 0; width: 912px; height: 606px; }
+.pino { position: absolute; z-index: 10; display: grid; place-items: center; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%;
+  font: 800 24px Jakarta; color: #2a1a08; background: radial-gradient(circle at 35% 30%, #fff3c4, #f2cf72 45%, #c99a44 80%);
+  box-shadow: 0 0 0 3px #5a3a10, 0 0 0 7px rgba(242,207,114,.35), 0 6px 12px rgba(0,0,0,.55); }
+.lente { position: absolute; z-index: 11; width: 282px; height: 282px; border-radius: 50%; overflow: hidden; background-color: #fff;
+  background-image: url(img/site-mac-claro.png); background-repeat: no-repeat; box-shadow: inset 0 0 22px rgba(0,0,0,.35); }
+.lente::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 36% 30%, rgba(255,255,255,.28), transparent 42%); }
+.lupa { position: absolute; z-index: 12; width: 600px; filter: drop-shadow(0 14px 12px rgba(0,0,0,.55)); }
+.legenda { position: absolute; z-index: 6; display: grid; gap: 12px; }
+.legenda div { display: grid; grid-template-columns: 46px 1fr; gap: 16px; align-items: center; }
+.legenda .pino { position: static; margin: 0; }
+.pino.lupinha { background: radial-gradient(circle, #fffdf6 0 44%, transparent 46%), radial-gradient(circle at 35% 30%, #fff3c4, #f2cf72 45%, #c99a44 80%); }
+.legenda p { font: 500 26px/1.3 Inter; color: #f3ead6; text-shadow: 0 2px 6px rgba(0,0,0,.8); }
+.legenda p b { color: #fff; font-weight: 750; }
+.btn { display: inline-flex; align-items: center; gap: 16px; padding: 18px 54px; border-radius: 18px; font: 800 46px Jakarta; letter-spacing: -.02em; color: #2a1a08;
+  background: linear-gradient(180deg, #fff3c4, #f2cf72 40%, #c99a44); box-shadow: inset 0 2px 0 rgba(255,255,255,.65), inset 0 -4px 0 rgba(90,52,16,.5), 0 0 0 3px #5a3a10, 0 18px 34px rgba(0,0,0,.6); }
+.site { font: 800 40px Jakarta; letter-spacing: -.015em; color: #f6dc8e; text-shadow: 0 2px 10px rgba(0,0,0,.9); }
+.selo { position: absolute; z-index: 7; width: 210px; height: 210px; border-radius: 50%; display: grid; place-items: center;
+  background: radial-gradient(circle at 38% 32%, #1f7a70, #14655e 55%, #0e4a44); box-shadow: inset 0 0 0 6px #0e4a44, inset 0 0 0 8px #f2cf72, inset 0 0 0 10px #0e4a44, 0 14px 26px rgba(0,0,0,.6); }
+.selo svg { position: absolute; inset: 0; }
+.selo img { width: 66px; height: 66px; }
+</style></head><body>
+
+<!-- ═════════ STORY 1 · O GANCHO E A QUESTÃO ═════════ -->
+<section id="s1-gancho">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt=""><span class="foil">Orto <span>Questões</span></span></span><span class="sep"></span><span class="t foil">OrtoQuestões Simulados · Errata</span></div>
+  <div class="folha" data-prova="prova 1 de 4"></div>
+  <img class="prende px" src="arte/prendedor.png" alt="" style="left:200px;top:302px;transform:rotate(-3deg)">
+  <img class="prende px" src="arte/prendedor.png" alt="" style="right:200px;top:300px;transform:rotate(4deg)">
+  <div class="abs" style="z-index:5;left:100px;top:420px;width:520px">
+    <div class="rot">Errata nº 1 · metástases ósseas</div>
+    <h1 class="h" style="margin-top:8px;font-size:72px">Mama é<br><em>blástica</em><br>ou <span class="lit">lítica</span>?</h1>
+    <p class="txt" style="margin-top:20px">Depende da edição do <b>Campbell</b>. O mesmo parágrafo aparece em três edições, e uma palavra mudou.</p>
+    <p class="nota" style="margin-top:16px;color:var(--verm)">Escolha a sua letra:<br>a resposta sai no story 4.</p>
+  </div>
+  <img class="abs px" src="arte/volumes.png" alt="" style="z-index:5;left:628px;top:400px;width:390px;filter:drop-shadow(0 16px 14px rgba(0,0,0,.45))">
+  <div class="vol" style="left:646px;top:544px;width:102px;height:114px"><small class="foil">Campbell</small><b class="foil">13ª</b><i class="foil">edição</i></div>
+  <div class="vol" style="left:760px;top:526px;width:114px;height:114px"><small class="foil">Campbell</small><b class="foil">14ª</b><i class="foil">edição</i></div>
+  <div class="vol" style="left:892px;top:514px;width:120px;height:114px"><small class="foil">Campbell</small><b class="foil">15ª</b><i class="foil">edição</i></div>
+  <div class="abs" style="z-index:5;left:96px;top:1000px;width:888px;display:grid;gap:10px">
+    <p class="enun">Sobre o aspecto radiográfico das metástases ósseas, segundo o Campbell, é correto:</p>
+    <div class="alt" style="margin-top:6px"><b>A</b><span>as metástases de rim e tireoide são tipicamente blásticas</span></div>
+    <div class="alt"><b>B</b><span>mama e próstata produzem tipicamente lesões blásticas; rim e tireoide, lesões puramente líticas; o pulmão, aspecto misto; lesão distal ao cotovelo ou ao joelho sugere pulmão, que pode deixar a imagem de uma 'mordida' na cortical</span></div>
+    <div class="alt"><b>C</b><span>as metástases acrais vêm sobretudo da mama</span></div>
+    <div class="alt"><b>D</b><span>o aspecto radiográfico permite descartar metástase quando a lesão é blástica</span></div>
+  </div>
+</section>
+
+<!-- ═════════ STORY 2 · POR QUE LÍTICA OU BLÁSTICA ═════════ -->
+<section id="s2-mecanismo">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt=""><span class="foil">Orto <span>Questões</span></span></span><span class="sep"></span><span class="t foil">Lição 1 · lítica ou blástica</span></div>
+  <div class="folha" data-prova="prova 2 de 4"></div>
+  <img class="prende px" src="arte/prendedor.png" alt="" style="left:200px;top:302px;transform:rotate(-3deg)">
+  <img class="prende px" src="arte/prendedor.png" alt="" style="right:200px;top:300px;transform:rotate(4deg)">
+  <div class="abs" style="z-index:5;left:100px;top:410px;width:880px">
+    <div class="rot">Antes da tabela, o porquê</div>
+    <h2 class="h" style="margin-top:6px;font-size:58px">O tumor <em>desequilibra</em> o osso.</h2>
+    <p class="txt" style="margin-top:14px">O osso se refaz o tempo todo: os <b>osteoclastos</b> tiram, os <b>osteoblastos</b> repõem. A metástase desacopla esse par.</p>
+  </div>
+  <img class="balanca px" src="arte/balanca-litica.png" alt="" style="left:92px;top:630px">
+  <div class="pr" style="left:149px;top:850px;color:var(--verm)">tira</div>
+  <div class="pr" style="left:455px;top:785px;color:#6a5a48">repõe</div>
+  <img class="balanca px" src="arte/balanca-blastica.png" alt="" style="left:568px;top:630px">
+  <div class="pr" style="left:625px;top:785px;color:#6a5a48">tira</div>
+  <div class="pr" style="left:931px;top:850px;color:var(--verde)">repõe</div>
+  <div class="abs" style="z-index:6;left:96px;top:968px;width:440px">
+    <span class="tag lit">Lítica</span>
+    <p class="txt" style="font-size:24px;line-height:1.34;margin-top:8px">A <b>reabsorção vence</b>: o osso some e fica a falha escura.</p>
+  </div>
+  <div class="abs" style="z-index:6;left:568px;top:968px;width:440px">
+    <span class="tag bla">Blástica</span>
+    <p class="txt" style="font-size:24px;line-height:1.34;margin-top:8px">Forma osso <b>denso, mas frágil</b>, que também fratura.</p>
+  </div>
+  <div class="filme cab" data-id="Campbell 15ª ed. · Fig. 29.28" style="left:128px;top:1116px;width:824px;height:441px">
+    <div class="q"><img src="img/fig-a-3x.png" alt=""><img src="img/fig-b-3x.png" alt=""></div>
+  </div>
+  <div class="seta" style="left:52px;top:1398px;transform:rotate(-6deg);width:80px;text-align:center">a lesão<br>→</div>
+  <div class="ref abs plaqueta" style="z-index:6;left:72px;right:72px;top:1588px;text-align:center">Fonte: Campbell's Operative Orthopaedics, 15ª ed., cap. 29, Fig. 29.28 A e B, p. 994: metástase de pulmão na tíbia proximal (A, radiografia; B, ressonância). Mecanismo: Rockwood and Green's, 10ª ed., cap. 25.</div>
+</section>
+
+<!-- ═════════ STORY 3 · A ERRATA ═════════ -->
+<section id="s3-errata">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt=""><span class="foil">Orto <span>Questões</span></span></span><span class="sep"></span><span class="t foil">Lição 2 · a errata</span></div>
+  <div class="folha" data-prova="prova 3 de 4" style="top:340px;height:250px;left:96px;right:96px;transform:rotate(-0.6deg)"></div>
+  <img class="prende px" src="arte/prendedor.png" alt="" style="left:780px;top:304px;transform:rotate(3deg)">
+  <div class="abs" style="z-index:5;left:150px;top:390px;width:800px;transform:rotate(-0.6deg)">
+    <div class="rot">O mesmo parágrafo, duas edições</div>
+    <h2 class="h" style="margin-top:4px;font-size:56px">Só uma palavra mudou:<br>a da <em>mama</em>.</h2>
+  </div>
+  <div class="marcador" style="left:150px;top:548px;width:300px;transform:rotate(-3deg)">13ª ed. (cap. 27, p. 966): igual à 14ª</div>
+  <img class="abs px" src="arte/livro-aberto.png" alt="" style="z-index:5;left:60px;top:640px;width:960px;filter:drop-shadow(0 26px 30px rgba(0,0,0,.7))">
+  <!-- página da esquerda: 14ª -->
+  <div class="pagina" style="left:110px;top:704px;width:396px">
+    <div class="cab"><span>Campbell · 14ª ed. · cap. 27</span><b>p. 1028</b></div>
+    <h5>O aspecto radiográfico</h5>
+    <dl>
+      <div class="linha"><dt>Próstata</dt><dd>tipicamente blástica</dd></div>
+      <div class="linha" style="padding-top:34px"><dt>Mama</dt><dd>tipicamente <span class="risco">blástica<span class="insere" style="left:-34px">‸ lítica <small style="font-size:24px">(15ª)</small></span></span></dd></div>
+      <div class="linha"><dt>Rim e tireoide</dt><dd>em geral puramente líticos</dd></div>
+      <div class="linha"><dt>Pulmão</dt><dd>misto</dd></div>
+    </dl>
+  </div>
+  <!-- página da direita: 15ª -->
+  <div class="pagina" style="left:574px;top:704px;width:396px">
+    <div class="cab"><span>Campbell · 15ª ed. · cap. 29</span><b>p. 990</b></div>
+    <h5>O aspecto radiográfico</h5>
+    <dl>
+      <div class="linha"><dt>Próstata</dt><dd><span class="marca">pode dar os três padrões</span>; tipicamente blástica</dd></div>
+      <div class="linha"><dt>Mama</dt><dd><span class="marca">pode dar os três padrões</span>; tipicamente <span class="marca" style="font-weight:800">lítica</span></dd></div>
+      <div class="linha"><dt>Rim e tireoide</dt><dd>em geral puramente líticos</dd></div>
+      <div class="linha"><dt>Pulmão</dt><dd>misto</dd></div>
+    </dl>
+  </div>
+  <div class="marg" style="left:112px;top:1196px;transform:rotate(-2deg)">o resto: igual nas três edições ✓</div>
+  <div class="postit" style="left:790px;top:1186px;width:250px;transform:rotate(5deg)">Rockwood 10ª, cap. 25: a mama pode ser lítica <u>ou</u> blástica</div>
+  <div class="couro" style="left:72px;right:72px;top:1346px;padding:22px 24px 18px">
+    <h4 class="foil">A regra que vale em qualquer edição</h4>
+    <div class="regra">
+      <div><p>Próstata</p><span class="r-bla">blástica</span></div>
+      <div><p>Rim e tireoide</p><span class="r-lit">lítica pura</span></div>
+      <div><p>Pulmão</p><span class="r-mis">mista</span></div>
+      <div><p>Mama</p><span class="r-var">a que varia</span></div>
+    </div>
+  </div>
+  <div class="ref abs plaqueta" style="z-index:6;left:72px;right:72px;top:1556px;text-align:center">Campbell 14ª ed., cap. 27, p. 1028 · 15ª ed., cap. 29, p. 990 · 13ª ed., cap. 27, p. 966 · Rockwood and Green's, 10ª ed., cap. 25</div>
+</section>
+
+<!-- ═════════ STORY 4 · A RESPOSTA ═════════ -->
+<section id="s4-resposta">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt=""><span class="foil">Orto <span>Questões</span></span></span><span class="sep"></span><span class="t foil">Lição 3 · a resposta</span></div>
+  <div class="folha" data-prova="prova 4 de 4"></div>
+  <img class="prende px" src="arte/prendedor.png" alt="" style="left:200px;top:302px;transform:rotate(-3deg)">
+  <img class="prende px" src="arte/prendedor.png" alt="" style="right:200px;top:300px;transform:rotate(4deg)">
+  <div class="abs" style="z-index:5;left:100px;top:410px;width:640px">
+    <div class="rot">A resposta</div>
+    <h2 class="h" style="margin-top:2px;font-size:64px">Gabarito <em>B</em>.</h2>
+  </div>
+  <img class="abs px" src="arte/carimbo.png" alt="" style="z-index:7;left:870px;top:410px;width:120px;transform:rotate(12deg);filter:drop-shadow(0 10px 8px rgba(0,0,0,.45))">
+  <div class="carimbo" style="left:590px;top:456px;transform:rotate(-8deg)">Resposta B</div>
+  <div class="abs certa" style="z-index:5;left:96px;top:560px;width:888px">
+    <q>mama e próstata produzem tipicamente lesões blásticas; rim e tireoide, lesões puramente líticas; o pulmão, aspecto misto; lesão distal ao cotovelo ou ao joelho sugere pulmão, que pode deixar a imagem de uma 'mordida' na cortical</q>
+    <p class="txt" style="font-size:25px;line-height:1.38;margin-top:12px">É a transcrição do Campbell <b>14ª ed.</b> (cap. 27, p. 1028 e 1029), igual à 13ª. Na <b>15ª ed.</b> (cap. 29, p. 990), só a <span class="v">mama</span> mudou: virou tipicamente lítica. O resto continua igual.</p>
+  </div>
+  <div class="abs" style="z-index:5;left:96px;top:922px;width:888px;display:grid;gap:12px">
+    <div class="erro"><b>A</b><p>Rim e tireoide são <b>puramente líticos</b> nas três edições. Por isso a cintilografia pode falhar no carcinoma renal.</p></div>
+    <div class="erro"><b>C</b><p>Lesão distal ao cotovelo ou ao joelho: o primário mais provável é o <b>pulmão</b>, não a mama.</p></div>
+    <div class="erro"><b>D</b><p>Blástica não descarta: a <b>próstata</b> é tipicamente blástica, e o osso blástico também fratura.</p></div>
+  </div>
+  <div class="cartao" style="left:96px;top:1206px;width:432px;height:326px;display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:start">
+    <div class="filme" style="position:relative;width:150px;height:150px;padding:6px"><div class="q"><img src="img/fig-b-zoom.png" alt="" style="width:100%;height:100%"></div></div>
+    <div><h4>Abaixo do joelho?<br>Pense em pulmão.</h4><p style="font-size:18px;margin-top:6px">RM: pulmão na tíbia</p></div>
+    <p style="grid-column:1 / -1;margin-top:-4px">Distal ao cotovelo ou ao joelho, o pulmão é o primário mais provável e pode deixar uma <b>'mordida' na cortical</b>.</p>
+  </div>
+  <div class="cartao" style="left:552px;top:1206px;width:432px;height:326px">
+    <h4>Por que o padrão importa</h4>
+    <p style="margin-top:4px">Pontos no escore de <b>MIRELS</b>:</p>
+    <div class="mirels">
+      <div>Lítica <i><s></s><s></s><s></s></i><em>3</em></div>
+      <div>Mista <i><s></s><s></s></i><em>2</em></div>
+      <div>Blástica <i><s></s></i><em>1</em></div>
+    </div>
+    <p style="margin-top:14px;font-size:21px">O osso lítico perde resistência mais depressa.</p>
+  </div>
+  <div class="ref abs" style="z-index:6;left:96px;top:1544px">Campbell 14ª ed., cap. 27, p. 1028 e 1029 e Tabela 27.1 · Rockwood and Green's, 10ª ed., cap. 25</div>
+</section>
+
+</body></html>

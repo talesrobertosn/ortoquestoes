@@ -44,3 +44,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | ombro-cotovelo-0454 | Lesão traumática do subescapular: não leva a mão às costas, reparo cirúrgico (TARO 2024) | posts/2026-11-01-grupo-cotovelo-lactente (stories) |
 | quadril-0649 | Piriforme, o mais alto dos rotadores laterais curtos, com a figura do Netter (Simulados, anatomia do quadril) | posts/2026-11-04-museu-piriforme (stories) |
 | trauma-0695 | Sanders IIIBC: dois traços, central e medial, na faceta posterior do calcâneo (banca omitida) | posts/2026-11-12-tela-trincada-sanders (feed e stories) |
+| tumores-0394 | Metástases ósseas, mama blástica no Campbell 14 e lítica no 15 (Simulados), stories "Como escrevemos o comentário" | posts/2026-11-13-errata-metastases |
