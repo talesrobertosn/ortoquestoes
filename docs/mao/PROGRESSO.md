@@ -9,13 +9,13 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 
 | Prova | Arquivo local | Questões | Publicadas | Pendentes | Ids | Gabarito (A/B/C/D) |
 |---|---|---|---|---|---|---|
-| SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 98 | 2 | mao-2466 a mao-2558; mao-2608 a mao-2612 | A 25, B 23, C 28, D 17 |
+| SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 100 | 0 | mao-2466 a mao-2558; mao-2608 a mao-2612; mao-2633 e mao-2634 | A 25, B 23, C 28, D 17 |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 98 | 2 | mao-2378 a mao-2465; mao-2598 a mao-2607 | A 26, B 21, C 24, D 17 |
-| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
+| SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 100 | 0 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663; mao-2635 a mao-2637 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 100 | 0 | mao-2278 a mao-2377 | A 27, B 25, C 25, D 23 |
 | SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 100 | 0 | mao-2613 a mao-2624; mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
-| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 99 | 1 | mao-2189 a mao-2277; ombro-cotovelo-0676 a ombro-cotovelo-0685 | A 25, B 25, C 25, D 24 |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 98 | 2 | mao-2619 a mao-2632; mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
+| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 100 | 0 | mao-2189 a mao-2277; ombro-cotovelo-0676 a ombro-cotovelo-0685; ombro-cotovelo-0724 | A 25, B 25, C 25, D 24 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 99 | 1 | mao-2619 a mao-2638; mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -299,8 +299,8 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 34 | Pseudogota: local mais comum do depósito de pirofosfato | fato | cap. 56, p. 2115; cap. 55, p. 2043 | mao / Mão reumatoide | 08 | mao-1968 | publicada |
 | 35 | Dupuytren: grupo de fatores de risco | lista | cap. 4, p. 148, 149 | mao / Doença de Dupuytren | 08 | mao-1970 | publicada |
 | 36 | Tenossinovite flexora (PANG): fator de mau prognóstico | fato | cap. 2, p. 21, 33 | mao / Infecções da mão | 13 | mao-1992 | publicada |
-| 37 | Osteoblastoma no punho: osso e exame de escolha (correção: não está no Green) | par | cap. 59, p. 2220 (só coluna e localização medular) | mao / Tumores da mão | 18 |  | pendente: sem fonte |
-| 38 | Túnel cubital: sinal da excursão lateral do dedo médio | epônimo | cap. 28 (arquivo 26): sinal não descrito | mao / Neuropatia ulnar e outras compressões | 09 |  | pendente: sem fonte (Egawa só aparece pelo nome no resumo do cap. 28; nenhum livro local define o sinal) |
+| 37 | Osteoblastoma no punho: osso e exame de escolha | par | Green 7ª ed., cap. 59, p. 2023 e 2024; Kantiwal 2026, Alder 2026, Yu 2026 (abertos) | mao / Tumores da mão | mao-pend2 02 | mao-2635 | publicada (fonte aberta, 13/11/2026) |
+| 38 | Túnel cubital: sinal da excursão lateral do dedo médio | epônimo | Green 7ª ed., cap. 31, p. 1046 e 1047 (a manobra, como PITRES-TESTUT); Savić 2026 (EGAWA) | mao / Neuropatia ulnar e outras compressões | mao-pend2 02 | mao-2636 | publicada (fonte aberta, 13/11/2026) |
 | 39 | Ramo profundo do ulnar no Guyon: músculos acometidos | anatomia | cap. 28 (arquivo 26), p. 1103 | mao / Neuropatia ulnar e outras compressões | 09 | mao-1973 | publicada |
 | 40 | Luxação congênita da cabeça do rádio: lado e direção mais comuns | fato | cap. 38, p. 1513 e 1515; resumo cap. 38 | mao / Outras malformações congênitas | 16 | mao-2008 | publicada |
 | 41 | IFP: causa mais comum da contratura em extensão | fato | cap. 10, p. 388, 389, 395, 403, 404 (a "causa mais comum" está no resumo do cap. 10) | mao / Deformidades dos dedos | 02 | mao-1939 | publicada |
@@ -351,7 +351,7 @@ quando o lote é escrito (até lá, só o capítulo). Cotovelo (lote 20) vai no 
 | 86 | Ângulo da gota de lágrima: o que representa e o ligamento inserido | par | cap. 15, p. 604; cap. 13, p. 491 | mao / Fratura do rádio distal | 06 | mao-1958 | publicada |
 | 87 | Reabilitação do flexor: início do fortalecimento isolado | número | cap. 6, p. 225 a 227 | mao / Lesões dos tendões flexores | 03 | mao-1943 | publicada |
 | 88 | Biomecânica da fratura do escafoide e do perilunar | afirmativas | cap. 16, p. 678 | mao / Fraturas do escafoide e do carpo | 04 | mao-1949 | publicada |
-| 89 | Falange proximal: desvios aceitáveis no tratamento conservador | número | cap. 7 (p. 299 e 304 não trazem os graus) | mao / Fraturas dos metacarpos e falanges | 01 | | pendente: sem fonte (11 e 21 graus não estão no Green nem nos outros livros locais; o original troca coronal por perfil) |
+| 89 | Falange proximal: desvios aceitáveis no tratamento conservador | número | Green 7ª ed., cap. 7, p. 256, 265 e 266; cap. 41, p. 1434; Weber 2025; Vahey 1998 | mao / Fraturas dos metacarpos e falanges | mao-pend2 02 | mao-2637 | publicada (11 e 21 graus sem fonte; questão nova com cerca de 10 e 20 a 25 graus e incidências corrigidas; divergência no comentário) |
 | 90 | LICHTMAN atualizada: em que se baseia | classificação | cap. 16, p. 729 a 733 | mao / Doença de Kienböck | 04 | mao-1950 | publicada |
 | 91 | Clinodactilia: deformidade que entra na classificação | classificação | cap. 36, p. 1433 | mao / Deformidades dos dedos | 15 | mao-2001 | publicada |
 | 92 | SDCR: como se faz o diagnóstico | fato | cap. 53, p. 2005 | mao / Síndrome da dor complexa regional | 17 | mao-2013 | publicada |
@@ -406,7 +406,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 23 | Artropatia pela imagem | diagnóstico, figura | cap. 55, p. 2040 e 2041 | mao / Mão reumatoide | 22 | mao-2627 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 24 | Bloqueio interescalênico | afirmativas | cap. 1, p. 2 e 5 | mao / Anestesia em cirurgia da mão | 09 | mao-2061 | publicada |
 | 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 21 | mao-2619 | publicada (Green 7ª ed., 09/11/2026) |
-| 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | pendente: sem fonte (linha cardinal de KAPLAN não está no Green) |
+| 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | Tozello, ..., Caetano, Acta Ortop Bras 2023 (aberto); Campbell 15ª ed., cap. 80, Fig. 80.23 | mao / Anatomia da mão e punho | mao-pend2 03 | mao-2638 | publicada (fonte aberta, 13/11/2026) |
 | 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist | mao / Instabilidade do carpo | 23 | mao-2631 | publicada (The Wrist, 2ª ed., 09/11/2026) |
 | 28 | Teste de BERGER | epônimo | correção cita The Wrist | mao / Exame físico da mão e punho | 23 | mao-2632 | publicada (The Wrist, 2ª ed., 09/11/2026) |
 | 29 | Melhor indicação da transferência de dedo do pé | indicação | cap. 36, p. 1404 e 1423 | mao / Outras malformações congênitas | 16 | mao-2091 | publicada |
@@ -669,7 +669,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 53 | Amputação do raio médio: efeito na pinça de chave | mecanismo | cap. 49, p. 1923 (pista) | mao / Amputações e reimplantes | 15 | mao-2261 | publicada |
 | 54 | SDRC: dor, sono e rigidez como achados inespecíficos | diagnóstico | cap. 53, p. 2011 (pista) | mao / Síndrome da dor complexa regional | 16 | mao-2266 | publicada |
 | 55 | Fibroma digital infantil: localização habitual | fato | cap. 59, página a localizar | mao / Tumores da mão | 18 | mao-2274 | publicada |
-| 56 | Cápsula anterior do cotovelo: inervação | anatomia | cap. 24, página a localizar | ombro-cotovelo / Anatomia do cotovelo | 20 |  | pendente: sem fonte (inervação da cápsula anterior não está nos livros locais) |
+| 56 | Cápsula anterior do cotovelo: inervação | anatomia | Cavalheiro, ..., Caetano, Rev Bras Ortop 2015; Nourbakhsh, J Hand Surg Am 2016 (abertos) | ombro-cotovelo / Anatomia do cotovelo | mao-pend2 04 | ombro-cotovelo-0724 | publicada (gabarito oficial mantido; radial como contribuinte anterolateral explicado no comentário) |
 | 57 | SEYMOUR: fise exposta e risco infeccioso | conduta | cap. 41, p. 1602 (pista) | mao / Fraturas dos metacarpos e falanges | 13 | mao-2252 | publicada |
 | 58 | Artrodese do mínimo: posições das três articulações | número | cap. 11, p. 414 (pista) | mao / Rizartrose e artrose da mão | 04 | mao-2205 | publicada |
 | 59 | WATSON: momento do estalido do escafoide | exame | cap. 13, p. 508 a 510 (Fig. 13.22) | mao / Instabilidade do carpo | piloto_miniaula_59 | mao-2199 | publicada (piloto do modelo de miniaula de 22/10/2026) |
@@ -868,7 +868,7 @@ Fase 0 em 26/10/2026: 100 questões extraídas de `SIMÃO 2022 SEM RESPOSTAS.pdf
 | 31 | Camptodactilia e artrogripose | reformulada (WATERS e BAE) | 39 | Congênitas | 05 | mao-2402 | publicada |
 | 32 | Artéria do 4º compartimento e interósseo posterior | reformulada | 46 | Enxerto vascularizado | 06 | mao-2403 | publicada |
 | 33 | Reimplante de vários dedos | reformulada | 42 | Reimplante | 06 | mao-2404 | publicada |
-| 34 | Distância do ponto na microanastomose | reformulada | - | Microcirurgia | - | - | pendente: sem fonte (não está no Green traduzido) |
+| 34 | Distância do ponto na microanastomose | reformulada | - | Microcirurgia | - | - | pendente: sem fonte (Green 7 e livros locais sem o múltiplo da parede; fontes abertas dão cerca de 1 vez a parede para a distância da borda e 2 vezes para o espaço entre pontos, não "2 a 3 vezes" do gabarito oficial; falta o Green 8, cap. 47, p. 1563, citado pela banca) |
 | 35 | Encurtamento radial e ligamentos radioulnares | reformulada | 14 | Radioulnar distal | 06 | mao-2405 | publicada |
 | 36 | Trapézio poupado na paralisia de ERB | reformulada | 40 | Plexo obstétrico | 17 | mao-2458 | publicada |
 | 37 | Epífise proximal da fíbula | reformulada | 46 | Enxerto vascularizado | 06 | mao-2406 | publicada |
@@ -1012,7 +1012,7 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 66 | Polegar empalmado complexo (McCARROLL e MIH) | reformulada | 37, p. 1488 | Malformações congênitas | 10 | mao-2515 | aplicada |
 | 67 | Toracodorsal como doador de transferência | reformulada, outro ângulo | 34, p. 1304, 1332 e 1333 | Plexo braquial | 10 | mao-2516 | aplicada |
 | 68 | Localização do gânglio da raiz dorsal | reformulada | 34, p. 1304 e 1310 | Plexo braquial | 10 | mao-2517 | aplicada |
-| 69 | Arco articular de CHEN no dedo do pé | — | 47 | Microcirurgia | — | — | pendente: sem fonte no Green |
+| 69 | Arco articular de CHEN no dedo do pé | reformulada | Chen IC, Tsai, Firrell, Microsurgery 1998 (resumo aberto); Green 7ª ed., cap. 47, p. 1654 | Microcirurgia | mao-pend2 01 | mao-2633 | publicada (sem gabarito oficial; resposta pela fonte: duas articulações, um pedículo) |
 | 70 | Síndrome da pele escaldada estafilocócica | reformulada | 2, p. 17 | Infecções | 10 | mao-2518 | aplicada |
 | 71 | Abscesso do espaço tenar: postura do polegar | reformulada | 2, p. 35 e 36 | Infecções | 10 | mao-2519 | aplicada |
 | 72 | Primeira manifestação da hanseníase | reformulada | 3, p. 126 e 127 | Infecções | 10 | mao-2520 | aplicada |
@@ -1032,7 +1032,7 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 86 | Alça de WEILBY (metade do FCR) | reformulada | 11, p. 427 | Rizartrose | 12 | mao-2532 | aplicada |
 | 87 | Epidemiologia da polidactilia pré-axial | reformulada | 37, p. 1470 | Polidactilia | 12 | mao-2533 | aplicada |
 | 88 | Grácil livre funcional: ordem dos passos e vasos receptores | reformulada | 34, p. 1336 e 1338 | Microcirurgia / plexo | 12 | mao-2534 | aplicada |
-| 89 | Espessura do fio 10-0 | — | — | Microcirurgia | — | — | pendente: sem fonte no Green |
+| 89 | Espessura do fio 10-0 | reformulada, outro ângulo | USP 35 (tabela de diâmetros); Chen LE, Seaber, Urbaniak, Microsurgery 1993 | Microcirurgia | mao-pend2 01 | mao-2634 | publicada (divergência: gabarito oficial 75 micras é a agulha BV75; o fio 10-0 tem 20 a 29 µm; a questão nova pergunta fio e agulha) |
 | 90 | Onde se prendem os checkrein | reformulada | 10 | Dedo rígido | 07 | mao-2497 | aplicada |
 | 91 | Macrodactilia estática x progressiva | reformulada, outro ângulo | 36, p. 1438 | Malformações congênitas | 16 | mao-2556 | aplicada |
 | 92 | GEISSLER grau III | reformulada | 17 | Artroscopia | 04 | mao-2483 | aplicada |
@@ -1052,5 +1052,12 @@ SIMÃO 2021 (37, 57, 59, 78 e 81; mao-2608 a mao-2612), SBCM 2022 (5, 44, 52, 74
 Lotes: `simao-2022/lote_19.py` a `lote_21.py`, `simao-2021/lote_21.py`, `sbcm-2022/lote_22.py` e `lote_23.py`, `sbcm-2024/lote_21.py`. A 8 da SIMÃO 2022 e a 44 da SBCM 2022 tinham figura e viraram texto.
 Divergência registrada: SIMÃO 2022 nº 28 (gabarito oficial "extensão dos dedos"; o Green 7 dá a extensão do punho como função mais necessária no grupo 1). A 57 do SIMÃO 2021 não tinha gabarito; a resposta segue o Green.
 
-**Ainda sem fonte local:** SIMÃO 2021 nº 69 (arco de CHEN) e 89 (espessura do fio 10-0); SIMÃO 2022 nº 34 (microanastomose); SIMÃO 2023 nº 37, 38 e 89; SBCM 2023 nº 56; SBCM 2024 nº 26 (a Fig. 56.4 do The Wrist mostra a linha cardinal, mas não o marco do ramo motor). As nº 27 e 28 da SBCM 2024 saíram com o The Wrist (Cooney, 2ª ed., 2010; mao-2631 e mao-2632). O PDF dele é escaneado: ler por OCR só as páginas necessárias (página impressa = folha do PDF menos 12).
+**Ainda sem fonte local (antes de 13/11; resolvidas com fonte aberta, ver o fim do arquivo, exceto SIMÃO 2022 nº 34):** SIMÃO 2021 nº 69 (arco de CHEN) e 89 (espessura do fio 10-0); SIMÃO 2022 nº 34 (microanastomose); SIMÃO 2023 nº 37, 38 e 89; SBCM 2023 nº 56; SBCM 2024 nº 26 (a Fig. 56.4 do The Wrist mostra a linha cardinal, mas não o marco do ramo motor). As nº 27 e 28 da SBCM 2024 saíram com o The Wrist (Cooney, 2ª ed., 2010; mao-2631 e mao-2632). O PDF dele é escaneado: ler por OCR só as páginas necessárias (página impressa = folha do PDF menos 12).
 **Figuras convertidas em texto (09/11/2026):** SBCM 2022 nº 19, 21, 34, 45 e 54 (mao-2620 a mao-2624) e SBCM 2024 nº 2, 19, 23, 71, 72 e 76 (mao-2625 a mao-2630). A SBCM 2024 nº 79 (camadas embrionárias) não virou questão nova: o conceito já está na mao-2004.
+
+**Pendentes resolvidas com fonte aberta (13/11/2026, regra nova do Tales: fonte faltando = artigo aberto lido e citado).**
+SIMÃO 2021 nº 69 e 89 (mao-2633 e mao-2634), SIMÃO 2023 nº 37, 38 e 89 (mao-2635 a mao-2637), SBCM 2024 nº 26 (mao-2638) e
+SBCM 2023 nº 56 (ombro-cotovelo-0724). Lotes `mao-pend2/lote_01.py` a `lote_04.py` (um por prova e ano). Divergências: SIMÃO 2021
+nº 89 (75 micras é a agulha, não o fio), SIMÃO 2023 nº 89 (11 e 21 graus sem fonte e incidências trocadas no original) e SBCM 2023
+nº 56 (o radial também inerva a cápsula anterior). **Continua sem fonte:** SIMÃO 2022 nº 34 (múltiplo da parede no ponto da
+microanastomose venosa; nenhuma fonte aberta sustenta "2 a 3 vezes").

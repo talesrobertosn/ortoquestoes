@@ -1,19 +1,19 @@
 {
   "versao": 1,
-  "geradoEm": "2026-11-13T12:41:29-03:00",
-  "total": 8446,
+  "geradoEm": "2026-11-13T12:41:36-03:00",
+  "total": 8453,
   "temas": [
     {
       "slug": "mao",
       "nome": "Mão e punho",
       "arquivo": "temas/mao.json",
-      "total": 2476
+      "total": 2482
     },
     {
       "slug": "ombro-cotovelo",
       "nome": "Ombro e cotovelo",
       "arquivo": "temas/ombro-cotovelo.json",
-      "total": 605
+      "total": 606
     },
     {
       "slug": "quadril",
@@ -42074,6 +42074,112 @@
       "ar": "mao"
     },
     {
+      "id": "mao-2633",
+      "t": 0,
+      "s": [
+        38,
+        17
+      ],
+      "p": 17,
+      "a": 2021,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2634",
+      "t": 0,
+      "s": [
+        38
+      ],
+      "p": 17,
+      "a": 2021,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2635",
+      "t": 0,
+      "s": [
+        33,
+        32
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2636",
+      "t": 0,
+      "s": [
+        2,
+        18
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2637",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": 17,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2638",
+      "t": 0,
+      "s": [
+        3,
+        16
+      ],
+      "p": 19,
+      "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
       "id": "ombro-cotovelo-0001",
       "t": 1,
       "s": [
@@ -52054,6 +52160,23 @@
       "cia": 1,
       "cc": 0,
       "sim": 1
+    },
+    {
+      "id": "ombro-cotovelo-0724",
+      "t": 1,
+      "s": [
+        55
+      ],
+      "p": 19,
+      "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
     },
     {
       "id": "quadril-0001",
