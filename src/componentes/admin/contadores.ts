@@ -28,13 +28,15 @@ async function buscarContadores(sinal: AbortSignal): Promise<Contadores> {
     if (!rpcInexistente(falha)) throw falha
   }
   // Plano B enquanto a parte 22 não for colada no Supabase.
-  const [relatos, avaliacoes, lidos] = await Promise.all([
-    chamarRpc<Array<{ status: string }>>('listar_relatos_admin', {}, { sinal }).catch(() => null),
+  const [relatos, avaliacoes, lidos, relatosLidos] = await Promise.all([
+    chamarRpc<Array<{ id: number; status: string }>>('listar_relatos_admin', {}, { sinal }).catch(() => null),
     chamarRpc<AvaliacaoBase[]>('listar_avaliacoes_comentario_admin', {}, { sinal }).catch(() => null),
     chamarRpc<Array<{ chave: string }>>('listar_lidos_admin', { p_tipo: 'avaliacao' }, { sinal }).catch(() => [] as Array<{ chave: string }>),
+    chamarRpc<Array<{ chave: string }>>('listar_lidos_admin', { p_tipo: 'relato' }, { sinal }).catch(() => [] as Array<{ chave: string }>),
   ])
+  const relatosVistos = new Set([...lerLocal('relato'), ...relatosLidos.map(l => l.chave)])
   const vistos = new Set([...lerLocal('avaliacao'), ...lidos.map(l => l.chave)])
-  const abertos = relatos?.filter(r => r.status === 'aberto').length
+  const abertos = relatos?.filter(r => r.status === 'aberto' && !relatosVistos.has(String(r.id))).length
   const paraLer = avaliacoes?.filter(l => !l.util && !vistos.has(chaveAvaliacao(l))).length
   return { usuarios: null, online: null, conteudo: abertos === undefined && paraLer === undefined ? null : (abertos ?? 0) + (paraLer ?? 0), derivado: true }
 }
