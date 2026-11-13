@@ -284,7 +284,7 @@ export function Sobre() {
               <div className="sb-acervo__texto">
                 <p>
                   O Orto Questões (também escrito OrtoQuestões) reúne questões de provas anteriores, como TEOT, TARO, R4 do ENARE
-                  e TECOC, organizadas por assunto, para quem se prepara para o título de especialista ou para a residência. Ao
+                  e a prova de título de ombro e cotovelo, organizadas por assunto, para quem se prepara para o título de especialista ou para a residência. Ao
                   lado delas ficam os {ROTULO_SIMULADOS}, questões autorais no padrão dessas provas.
                 </p>
                 <p>

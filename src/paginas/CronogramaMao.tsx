@@ -26,8 +26,8 @@ import { CenaOficina } from '../componentes/cronograma/CenaOficina'
 import { TrocaCronograma } from '../componentes/TrocaCronograma'
 
 const PROVAS: Record<ProvaMao, { titulo: string; curto: string; texto: string }> = {
-  ingresso: { titulo: 'Ingresso em Cirurgia da Mão', curto: 'Ingresso (residência)', texto: 'Para as provas de seleção da residência e dos programas de Cirurgia da Mão. Você faz todo tipo de questão da mão, das provas de ingresso e do padrão SBCM e SIMÃO, na ordem do que as provas de ingresso mais cobram.' },
-  titulo: { titulo: 'Título de Cirurgia da Mão: SBCM e SIMÃO', curto: 'Título: SBCM e SIMÃO', texto: 'Para o exame de título da SBCM e o SIMÃO, o simulado do exame. O foco são as questões no padrão da SBCM e do SIMÃO, na ordem do que a prova mais cobra; questões de ingresso dos mesmos assuntos entram só como reforço.' },
+  ingresso: { titulo: 'Ingresso em Cirurgia da Mão', curto: 'Ingresso (residência)', texto: 'Para as provas de seleção da residência e dos programas de Cirurgia da Mão. Você faz todo tipo de questão da mão, das provas de ingresso e do padrão da prova de título, na ordem do que as provas de ingresso mais cobram.' },
+  titulo: { titulo: 'Prova de título em Cirurgia da Mão', curto: 'Prova de título', texto: 'Para a prova de título de especialista em Cirurgia da Mão. O foco são as questões no padrão da prova de título, na ordem do que a prova mais cobra; questões de ingresso dos mesmos assuntos entram só como reforço.' },
 }
 const SEMANA = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
 const NOME_SEMANA = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado']
@@ -113,8 +113,8 @@ function Formulario({ prova, inicial, novo, aoSalvar, aoCancelar, logado }: { pr
         <fieldset className="pe-form__campos cm-campo">
           <legend className="pe-form__sub">Até onde ir?</legend>
           <div className="pe-intensidades" role="radiogroup" aria-label="Até onde ir">
-            <button type="button" role="radio" aria-checked={c.cobertura === 'completa'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><span>{prova === 'titulo' ? 'Todos os assuntos do título, com foco no padrão SBCM e SIMÃO e questões de seleção do mesmo assunto misturadas, como treino.' : 'Todos os assuntos, com todo tipo de questão da mão.'}</span></button>
-            <button type="button" role="radio" aria-checked={c.cobertura === 'essencial'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'essencial' })}><strong>Essencial</strong><span>Só os assuntos de prioridade máxima e alta{prova === 'titulo' ? ', só com questões no padrão SBCM e SIMÃO' : ''}. Bom para pouco tempo.</span></button>
+            <button type="button" role="radio" aria-checked={c.cobertura === 'completa'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><span>{prova === 'titulo' ? 'Todos os assuntos do título, com foco no padrão da prova de título e questões de seleção do mesmo assunto misturadas, como treino.' : 'Todos os assuntos, com todo tipo de questão da mão.'}</span></button>
+            <button type="button" role="radio" aria-checked={c.cobertura === 'essencial'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'essencial' })}><strong>Essencial</strong><span>Só os assuntos de prioridade máxima e alta{prova === 'titulo' ? ', só com questões no padrão da prova de título' : ''}. Bom para pouco tempo.</span></button>
           </div>
         </fieldset>
         <div className="pe-form__navegacao">

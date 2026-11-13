@@ -31,7 +31,7 @@ const VITRINE = ['questoes-500', 'sequencia-14', 'precisao-25', 'aproveitamento-
 const PROVAS: { grupo: string; provas: string[] }[] = [
   { grupo: 'Título de especialista', provas: ['TEOT', 'TARO'] },
   { grupo: 'Residência e R4', provas: ['ENARE R4 Ortopedia', 'USP-SP', 'FMRP-USP', 'UFG', 'PUC-SP', 'UERJ', 'INTO', 'Einstein', 'IAUPE', 'CET-PR', 'SBOT-SP'] },
-  { grupo: 'Subespecialidades', provas: ['ENARE Cirurgia da Mão', 'Título de cirurgia da mão (SBCM)', 'SIMÃO (simulado do título)', 'TECOC/SBCOC Ombro e Cotovelo', 'TEPOP', 'R4 Coluna SES-DF', 'R4 Coluna Joinville', 'Fellowship Quadril'] },
+  { grupo: 'Subespecialidades', provas: ['ENARE Cirurgia da Mão', 'Prova de título de cirurgia da mão', 'Prova de título de ombro e cotovelo', 'TEPOP', 'R4 Coluna SES-DF', 'R4 Coluna Joinville', 'Fellowship Quadril'] },
 ]
 
 /** Os três capítulos da jornada, cada um num cartão pregado um pouco torto, na faixa embaixo do mural. */

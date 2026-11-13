@@ -269,7 +269,7 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['especialista-mao', 300, 'Cirurgião da mão', 'Mão', 'esmeralda', 'Responda 300 questões das provas de cirurgia da mão.'],
     ['especialista-coluna', 150, 'Cirurgião de coluna', 'R4C', 'esmeralda', 'Responda 150 questões das provas de R4 de coluna.'],
     ['especialista-enare', 100, 'R4 do ENARE', 'R4', 'ouro', 'Responda 100 questões do R4 do ENARE.'],
-    ['especialista-tecoc', 100, 'Especialista em ombro e cotovelo', 'Omb', 'ouro', 'Responda 100 questões do TECOC.'],
+    ['especialista-tecoc', 100, 'Especialista em ombro e cotovelo', 'Omb', 'ouro', 'Responda 100 questões da prova de título de ombro e cotovelo.'],
     ['especialista-quadril', 150, 'Especialista em quadril', 'Qua', 'esmeralda', 'Responda 150 questões do Fellowship Quadril.'],
   ]),
   ...familia('aproveitamento', 'aproveitamento', [
