@@ -963,7 +963,7 @@ function ComentarioDaIA({
           </>)}
 
           <Referencias itens={comentario.referencias} notaIA />
-          <AvaliarComentario idQuestao={questao.id} />
+          <AvaliarComentario idQuestao={questao.id} versao={comentario.geradoEm ?? null} />
         </>
       )}
     </div>
