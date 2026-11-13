@@ -82,7 +82,8 @@ export function AvaliarComentario({ idQuestao, versao = null }: { idQuestao: str
     const escolherMotivo = (valor: MotivoNota) => {
       const novo = motivo === valor ? null : valor
       definirMotivo(novo)
-      void salvar({ ...atual, motivo: novo ?? undefined, observacao })
+      // Só o motivo: a frase em rascunho vai apenas por "Enviar a frase" (a já enviada continua como está).
+      void salvar({ ...atual, motivo: novo ?? undefined })
     }
     return (
       <div className="av av--motivo">
