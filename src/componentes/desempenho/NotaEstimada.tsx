@@ -41,13 +41,13 @@ export function NotaEstimadaCartao({ nota, base, turma, exemplo = false }: {
   const [px, py] = ponto(nota.nota)
   return (
     <div className="dp-nota" aria-labelledby="dp-nota-titulo">
-      <p className="dp-rotulo"><Icone nome="alvo" tamanho={14} /> Nota estimada na prova {exemplo && <span className="dp-chip">exemplo</span>}</p>
+      <p className="dp-nota__titulo"><span className="dp-nota__icone" aria-hidden="true"><Icone nome="alvo" tamanho={16} /></span> Nota estimada na prova {exemplo && <span className="dp-chip">exemplo</span>}</p>
       <div className="dp-nota__mostrador">
         <svg viewBox="-12 -14 244 146" className="dp-nota__arco" role="img" aria-labelledby="dp-nota-titulo dp-nota-faixa">
+          {/* A faixa provável: um halo largo e suave por trás do mostrador, de uma ponta à outra da faixa. */}
+          <path d={arco(nota.baixa, nota.alta)} className="dp-nota__faixa" />
           <path d={arco(0, 100)} className="dp-nota__trilho" />
           <path d={arco(0, nota.nota)} className="dp-nota__valor" />
-          <path d={arco(nota.baixa, nota.alta, R + 14)} className="dp-nota__faixa" />
-          {[nota.baixa, nota.alta].map((v) => { const [a1, b1] = ponto(v, R + 9), [a2, b2] = ponto(v, R + 19); return <line key={v} x1={a1} y1={b1} x2={a2} y2={b2} className="dp-nota__faixa" /> })}
           {[0, 50, 100].map((v) => { const [x, y] = ponto(v); return <text key={v} x={x} y={y + 18} textAnchor="middle" className="dp-nota__tique">{v}</text> })}
           <circle cx={px} cy={py} r={9} className="dp-nota__ponta" />
         </svg>

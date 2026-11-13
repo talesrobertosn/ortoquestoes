@@ -220,6 +220,11 @@ export function DadosLocais() {
   const linhas = useMemo(() => (indice ? linhasAssuntos(indice, marcadas, ev) : { temas: [], assuntos: [] }), [indice, marcadas, ev])
   const retencao = useMemo(() => contarRetencao(marcadas), [marcadas])
   const certeza = useMemo(() => errosComCerteza(marcadas), [marcadas])
+  // Aviso dos erros com certeza (Tales, 14/11/2026: "notificação é chato, mas tem que ter"): o menu conta só os que
+  // você ainda não viu; "Marcar todos como vistos" zera o aviso, e as questões continuam na seção para revisar.
+  const [certezaVistas, definirCertezaVistas] = usarArmazenado<string[]>('desempenho:certeza-vistas', [])
+  const certezaNovas = useMemo(() => { const vistas = new Set(certezaVistas); return certeza.filter((id) => !vistas.has(id)) }, [certeza, certezaVistas])
+  const marcarCertezaVistas = () => { if (!exemplo) definirCertezaVistas([...new Set([...certezaVistas.filter((id) => certeza.includes(id)), ...certeza])]) }
   const [capitulos, definirCapitulos] = useState<CapituloResumo[]>([])
   useEffect(() => {
     let vivo = true
@@ -259,7 +264,7 @@ export function DadosLocais() {
 
   return (
     <article className={'dpg' + (exemplo ? ' dpg--exemplo' : '')}>
-      <NavegacaoSecoes secoes={secoes} periodo={periodo} definirPeriodo={definirPeriodo} alertaErros={certeza.length} />
+      <NavegacaoSecoes secoes={secoes} periodo={periodo} definirPeriodo={definirPeriodo} alertaErros={exemplo ? certeza.length : certezaNovas.length} aoMarcarVistos={exemplo ? undefined : marcarCertezaVistas} />
 
       <div className="dp-conteudo">
         {/* ---------- Topo: a cena, quem é, a mensagem, a nota estimada e os números, numa peça só ---------- */}
@@ -337,7 +342,7 @@ export function DadosLocais() {
         <Secao id="erros" rotulo="Erros e retenção" icone="alvo" titulo="O que eu realmente fixei?" texto="Cada questão que você errou, do erro novo até a consolidada, e os resumos certos para ler antes de refazer.">
           <Retencao conta={retencao.conta} erradas={retencao.erradas} onRevisar={revisarEstado} />
           <ResumosIndicados lista={resumosIndicados} />
-          {temConfianca && <ErrosComCerteza ids={certeza} porConfianca={porConfianca} onRevisar={() => void revisarIds(certeza)} />}
+          {temConfianca && <ErrosComCerteza ids={certeza} novas={exemplo ? certeza.length : certezaNovas.length} porConfianca={porConfianca} onRevisar={() => void revisarIds(certeza)} onMarcarVistas={exemplo ? undefined : marcarCertezaVistas} />}
         </Secao>
 
         <Secao id="calendario" rotulo="Calendário" icone="calendario" titulo="Quanto e quando eu estudei?" texto="Cada quadrado é um dia. Toque num dia para ver o que você estudou.">
@@ -434,8 +439,8 @@ function Passo({ n: numeroPasso, titulo, texto, acao }: { n: number; titulo: str
  * Menu das seções (14/11/2026, Tales: "funções muito valiosas para ficar escondidas"): no computador, uma coluna
  * fixa ao lado com o período e a seção em que você está; no celular, uma barra de atalhos que acompanha a rolagem.
  */
-function NavegacaoSecoes({ secoes, periodo, definirPeriodo, alertaErros }: {
-  secoes: typeof SECOES; periodo: PeriodoDesempenho; definirPeriodo: (p: PeriodoDesempenho) => void; alertaErros: number
+function NavegacaoSecoes({ secoes, periodo, definirPeriodo, alertaErros, aoMarcarVistos }: {
+  secoes: typeof SECOES; periodo: PeriodoDesempenho; definirPeriodo: (p: PeriodoDesempenho) => void; alertaErros: number; aoMarcarVistos?: () => void
 }) {
   const [atual, definirAtual] = useState('topo')
   useEffect(() => {
@@ -481,6 +486,7 @@ function NavegacaoSecoes({ secoes, periodo, definirPeriodo, alertaErros }: {
             </a>
           </li>)}
         </ol>
+        {alertaErros > 0 && aoMarcarVistos && <button type="button" className="dp-nav__vistos" onClick={aoMarcarVistos}><Icone nome="certo" tamanho={14} /> Marcar como vistos</button>}
         {seletor}
       </div>
       <div className="dp-nav__chips">

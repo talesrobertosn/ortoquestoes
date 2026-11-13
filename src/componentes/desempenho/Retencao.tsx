@@ -45,8 +45,8 @@ export function Retencao({ conta, erradas, onRevisar }: {
 }
 
 /** Erros com certeza: a última resposta foi erro e a pessoa marcou "certeza". */
-export function ErrosComCerteza({ ids, porConfianca, onRevisar }: {
-  ids: string[]; porConfianca: Record<'seguro' | 'duvida' | 'chute', { certas: number; total: number }>; onRevisar: () => void
+export function ErrosComCerteza({ ids, novas = ids.length, porConfianca, onRevisar, onMarcarVistas }: {
+  ids: string[]; novas?: number; porConfianca: Record<'seguro' | 'duvida' | 'chute', { certas: number; total: number }>; onRevisar: () => void; onMarcarVistas?: () => void
 }) {
   const linhas = ([['seguro', 'Certeza', 'certo'], ['duvida', 'Dúvida', 'olho'], ['chute', 'Chute', 'interrogacao']] as const)
   return (
@@ -55,13 +55,16 @@ export function ErrosComCerteza({ ids, porConfianca, onRevisar }: {
         <h3 id="cf-titulo">Sua sensação combina com o resultado?</h3>
         <p>Acerto pelo que você marcou ao responder. Com menos de {MINIMO_LEITURA} respostas, a porcentagem ainda não diz muito.</p>
       </div>
-      {ids.length > 0 && <div className="cf__alarme">
+      {ids.length > 0 && <div className={'cf__alarme' + (novas ? '' : ' cf__alarme--visto')}>
         <span className="cf__icone" aria-hidden="true"><Icone nome="alerta" tamanho={20} /></span>
         <div>
-          <strong>{ids.length} {ids.length === 1 ? 'questão errada com certeza' : 'questões erradas com certeza'}</strong>
+          <strong>{ids.length} {ids.length === 1 ? 'questão errada com certeza' : 'questões erradas com certeza'}{novas > 0 && novas < ids.length ? ` · ${novas} ${novas === 1 ? 'nova' : 'novas'}` : ''}</strong>
           <span>É o erro mais perigoso: você tinha certeza e a prova diria o contrário. Vale ler o comentário com calma.</span>
         </div>
-        <button type="button" className="dp-botao dp-botao--principal" onClick={onRevisar}>Revisar {Math.min(20, ids.length)} <Icone nome="direita" tamanho={15} /></button>
+        <span className="cf__acoes">
+          <button type="button" className="dp-botao dp-botao--principal" onClick={onRevisar}>Revisar {Math.min(20, ids.length)} <Icone nome="direita" tamanho={15} /></button>
+          {novas > 0 && onMarcarVistas && <button type="button" className="dp-botao dp-botao--contorno" onClick={onMarcarVistas}><Icone nome="certo" tamanho={15} /> Marcar todos como vistos</button>}
+        </span>
       </div>}
       <div className="cf__linhas">
         {linhas.map(([tipo, rotulo, icone]) => {

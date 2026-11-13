@@ -163,12 +163,16 @@
 /* Nota estimada, no painel do topo. */
 .dp-nota { display: grid; gap: 0.35rem; align-content: start; justify-items: center; text-align: center; padding: var(--e-4) var(--e-4) var(--e-5); border-radius: var(--raio-cartao); background: linear-gradient(180deg, var(--dp-verde-veu), transparent 70%); border: 1px solid var(--dp-linha); }
 .dp-nota .dp-rotulo { justify-content: center; flex-wrap: wrap; }
+/* O nome do mostrador em destaque (Tales, 14/11/2026): título de verdade, com o ícone num selo verde. */
+.dp-nota__titulo { display: inline-flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem; margin: 0; color: var(--dp-ardosia); font-family: var(--fonte-marca); font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.25rem); font-weight: 800; letter-spacing: -0.01em; }
+.dp-nota__icone { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 10px; background: var(--dp-verde); color: #fff; }
+:root[data-tema="escuro"] .dp-nota__icone { color: #062521; }
 .dp-nota__mostrador { position: relative; width: min(100%, 18rem); }
 .dp-nota__arco { display: block; width: 100%; overflow: visible; }
 .dp-nota__trilho { fill: none; stroke: var(--dp-ardosia-veu); stroke-width: 16; stroke-linecap: round; }
 :root:not([data-tema="escuro"]) .dp-nota__trilho { stroke: #dfe7ea; }
 .dp-nota__valor { fill: none; stroke: var(--dp-verde); stroke-width: 16; stroke-linecap: round; }
-.dp-nota__faixa { fill: none; stroke: var(--dp-ardosia); stroke-width: 3; stroke-linecap: round; opacity: 0.7; }
+.dp-nota__faixa { fill: none; stroke: var(--dp-verde); stroke-width: 30; stroke-linecap: round; opacity: 0.22; }
 .dp-nota__ponta { fill: var(--dp-papel); stroke: var(--dp-verde-forte); stroke-width: 4; }
 .dp-nota__tique { fill: var(--dp-ardosia-2); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .dp-nota__numero { position: absolute; left: 0; right: 0; bottom: 4%; margin: 0; display: flex; align-items: baseline; justify-content: center; gap: 0.25rem; }
@@ -350,6 +354,12 @@
 
 /* Confiança e erros com certeza. */
 .cf__alarme { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.9rem; align-items: center; padding: 0.95rem 1rem; border-radius: 14px; background: color-mix(in srgb, var(--ds-ruim) 7%, var(--dp-papel)); border: 1.5px solid color-mix(in srgb, var(--ds-ruim) 40%, transparent); }
+.cf__acoes { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.5rem; }
+/* Já visto: o alarme fica mais calmo (as questões continuam para revisar). */
+.cf__alarme--visto { background: var(--dp-fundo); border-color: var(--dp-linha); }
+.cf__alarme--visto .cf__icone { background: var(--dp-ardosia-2); }
+.dp-nav__vistos { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; min-height: 38px; padding: 0 0.7rem; border: 1px solid var(--dp-linha); border-radius: 10px; background: var(--dp-papel); color: var(--dp-ardosia-2); font: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; }
+.dp-nav__vistos:hover { border-color: var(--dp-verde); color: var(--dp-verde-forte); }
 .cf__icone { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: var(--ds-ruim); color: #fff; }
 .cf__icone svg { color: #fff; stroke: #fff; }
 .cf__alarme div { display: grid; gap: 0.15rem; }
@@ -509,7 +519,8 @@
   .ds-numeros__lista { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ds-numero:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .cf__alarme { grid-template-columns: auto minmax(0, 1fr); }
-  .cf__alarme .dp-botao { grid-column: 1 / -1; }
+  .cf__alarme .cf__acoes { grid-column: 1 / -1; justify-content: stretch; }
+  .cf__acoes .dp-botao { flex: 1 1 auto; }
   .cf__linha { grid-template-columns: 6rem minmax(0, 1fr); }
   .cf__valor { grid-column: 2; }
   .cal { --cal-q: 11px; }
