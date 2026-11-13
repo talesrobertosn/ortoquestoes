@@ -16,7 +16,7 @@ import { chromium } from 'playwright'
 const raiz = process.cwd()
 const termos = await readFile(join(raiz, 'src/conta/termos.ts'), 'utf8')
 const VERSAO = termos.match(/VERSAO_CONDICOES_ASSINATURA = '([^']+)'/)[1]
-assert.equal(VERSAO, '2026-11-03', 'A versão vigente das condições mudou: confira as funções antes')
+assert.equal(VERSAO, '2026-11-13', 'A versão vigente das condições mudou: confira as funções antes')
 for (const f of ['criar-pix', 'criar-checkout']) {
   const fonte = await readFile(join(raiz, `supabase/functions/${f}/index.ts`), 'utf8')
   assert.ok(fonte.includes(`'${VERSAO}'`) && fonte.includes("'2026-10-16'") && fonte.includes("'2026-10-01'"), `${f} precisa aceitar ${VERSAO}, 2026-10-16 e 2026-10-01`)
@@ -89,18 +89,20 @@ try {
       const cartao = topo.locator('.vd-plano', { has: pagina.getByRole('heading', { name: nome, exact: true }) })
       assert.ok((await cartao.innerText()).includes(preco), `${nome} sem o preço por mês ${preco}`)
     }
-    // Destaque no mensal (03/11/2026): selo, botão dourado e primeiro da fila; o anual sem selo.
+    // Destaque no anual (13/11/2026): selo "Melhor preço" e botão dourado; mensal e semestral com botão verde.
     const destaque = topo.locator('.vd-plano--destaque')
     assert.equal(await destaque.count(), 1)
-    assert.ok(await destaque.evaluate((e) => e.classList.contains('vd-plano--mensal')), 'O destaque não é o mensal')
-    assert.match(await destaque.innerText(), /comece por aqui/i, 'Mensal sem o selo')
-    assert.ok(await destaque.locator('.vd-botao-destaque').count() === 1, 'Mensal sem o botão dourado')
-    assert.equal(await topo.locator('.vd-plano--anual .vd-plano__selo').count(), 0, 'O anual ainda tem selo')
+    assert.ok(await destaque.evaluate((e) => e.classList.contains('vd-plano--anual')), 'O destaque não é o anual')
+    assert.match(await destaque.innerText(), /melhor preço/i, 'Anual sem o selo')
+    assert.ok(await destaque.locator('.vd-botao-destaque').count() === 1, 'Anual sem o botão dourado')
+    assert.equal(await topo.locator('.vd-botao-verde').count(), 2, 'Mensal e semestral sem o botão verde')
+    for (const c of await topo.locator('.vd-plano').all()) assert.match(await c.innerText(), /sem fidelidade/i, 'Cartão sem o "Sem fidelidade"')
+    assert.equal(await topo.locator('.vd-plano--mensal .vd-plano__selo').count(), 0, 'O mensal ainda tem selo')
     assert.ok((await topo.locator('.vd-plano--anual').innerText()).includes('-25%'), 'O anual perdeu o desconto')
     // Sem o preço por dia nos cartões (Tales, 03/11/2026: não converte); fica o preço por mês e o total do período.
     assert.doesNotMatch(await topo.innerText(), /R\$\s?[\d,]+ por dia/, 'Preço por dia nos cartões')
-    assert.ok((await destaque.innerText()).includes('Prepare-se para o TEOT por menos que uma pizza por mês'), 'Mensal sem a pizza no computador')
-    assert.ok((await destaque.innerText()).includes('Mudou de ideia? Em até 7 dias, você pede o reembolso com um só clique.'), 'Mensal sem a garantia')
+    assert.ok((await topo.locator('.vd-plano--mensal').innerText()).includes('Prepare-se para o TEOT por menos que uma pizza por mês'), 'Mensal sem a pizza no computador')
+    for (const c of await topo.locator('.vd-plano').all()) assert.ok((await c.innerText()).includes('Mudou de ideia? Em até 7 dias, você pede o reembolso com um só clique.'), 'Cartão sem a garantia')
     assert.ok((await pagina.locator('.vd-heroi').innerText()).includes('7 dias de garantia'), 'Garantia fora do topo')
     // Tudo o que é da compra fica dentro da caixa verde, na mesma linguagem (Tales, 09/11/2026: o bilhete de
     // inauguração e o suporte soltos embaixo dela deixavam a página desconexa). Ordem: planos, inauguração, selos,
@@ -257,13 +259,13 @@ try {
     assert.ok(total <= janela, `Rolagem lateral em ${largura}x${altura}: ${total} > ${janela}`)
     assert.equal(await pagina.locator('.vd-anima').count(), 0, 'Animação ligada com movimento reduzido')
     if (largura === 390) {
-      // No celular, o mensal vem primeiro, inteiro; semestral e anual logo abaixo, lado a lado.
+      // No celular, o anual (destaque) vem primeiro, inteiro; mensal e semestral logo abaixo, lado a lado.
       const caixa = (id) => pagina.locator(`.vd-heroi .vd-plano--${id}`).boundingBox()
       const [m, s, a] = [await caixa('mensal'), await caixa('semestral'), await caixa('anual')]
-      assert.ok(m.y < s.y && Math.abs(s.y - a.y) < 2 && s.x < a.x && m.width > s.width * 1.8, 'Ordem dos planos no celular')
+      assert.ok(a.y < m.y && Math.abs(s.y - m.y) < 2 && m.x < s.x && a.width > s.width * 1.8, 'Ordem dos planos no celular')
       // A pizza curta, numa linha só, no lugar da chamada (que some no celular).
-      const pizza = pagina.locator('.vd-heroi .vd-plano--mensal .vd-plano__pizza-curta')
-      assert.equal((await pizza.innerText()).trim(), 'Custa menos que uma pizza por mês')
+      const pizza = pagina.locator('.vd-heroi .vd-plano--anual .vd-plano__pizza-curta')
+      assert.equal((await pizza.innerText()).trim(), 'Menos que uma pizza por mês')
       assert.ok((await pizza.boundingBox()).height < 30, 'A pizza quebrou em duas linhas no celular')
       if (process.env.PRINTS) {
         await pagina.locator('.vd-compra-rodape').first().scrollIntoViewIfNeeded(); await pagina.evaluate(() => scrollBy(0, 120))

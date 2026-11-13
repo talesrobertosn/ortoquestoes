@@ -59,6 +59,13 @@
 }
 .vd .botao.vd-botao-contorno:hover:not(:disabled) { background: var(--verdete-veu); transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--verdete); }
 .vd .botao.vd-botao-contorno:active:not(:disabled) { transform: translate(1px, 1px); box-shadow: none; }
+.vd .botao.vd-botao-verde {
+  border: 0; border-radius: 4px; background: var(--verdete); color: var(--sobre-destaque, #fff); font-weight: 800;
+  box-shadow: 0 0 0 2px var(--vd-tinta), 4px 4px 0 2px color-mix(in srgb, var(--verdete) 55%, #000);
+  transition: transform 0.18s var(--vd-curva), box-shadow 0.18s var(--vd-curva), background-color 0.18s var(--vd-curva);
+}
+.vd .botao.vd-botao-verde:hover:not(:disabled) { background: var(--verdete-tinta); color: var(--sobre-destaque, #fff); transform: translate(-1px, -1px); box-shadow: 0 0 0 2px var(--vd-tinta), 5px 5px 0 2px color-mix(in srgb, var(--verdete) 55%, #000); }
+.vd .botao.vd-botao-verde:active:not(:disabled) { transform: translate(2px, 2px); box-shadow: 0 0 0 2px var(--vd-tinta), 2px 2px 0 2px color-mix(in srgb, var(--verdete) 55%, #000); }
 .vd .botao:disabled { opacity: 0.55; cursor: not-allowed; }
 .vd-heroi :focus-visible, .vd-final :focus-visible, .vd-ativo :focus-visible, .vd-barra :focus-visible { outline: 3px solid #ffe3a3; outline-offset: 3px; }
 
@@ -143,7 +150,7 @@
 .vd-plano__total { margin: 0; color: var(--texto-2); font-size: var(--meta); }
 /* A pizza do mensal (Tales, 03/11/2026): a frase longa na chamada; onde a chamada some, a curta numa linha. */
 .vd-plano__pizza { flex: none; display: inline-block; vertical-align: -0.2em; margin-right: 0.35rem; }
-.vd-plano--mensal .vd-plano__chamada { color: var(--texto); font-weight: 650; }
+.vd-plano--destaque .vd-plano__chamada { color: var(--texto); font-weight: 650; }
 .vd-plano__pizza-curta { display: none; align-items: center; margin-top: 0.35rem; color: var(--texto); font-weight: 650; white-space: nowrap; }
 @media (max-width: 56rem) { .vd-plano__pizza-curta { display: flex; } }
 .vd-plano__ganho { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; font-size: var(--meta); font-weight: 700; color: var(--acerto-texto, var(--acerto)); min-height: 1.5rem; }
@@ -153,6 +160,8 @@
 .vd-plano:not(.vd-plano--destaque) .vd-plano__ganho { color: var(--texto-2); }
 .vd-plano:not(.vd-plano--destaque) .vd-plano__desconto { background: var(--verdete-veu); color: var(--verdete-tinta); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--verdete) 35%, transparent); }
 .vd-plano--destaque .vd-plano__neutro { color: var(--acerto-texto, var(--acerto)); font-weight: 750; }
+.vd-plano__lembrete strong { display: block; font-weight: 800; }
+.vd-plano:not(.vd-plano--destaque) .vd-plano__lembrete { background: var(--verdete-veu); color: var(--verdete-tinta); }
 .vd-plano__lembrete { margin: 0.15rem 0 0; padding: 0.5rem 0.65rem; border-radius: 4px; background: color-mix(in srgb, var(--vd-ouro) 35%, var(--superficie)); color: var(--ouro-texto); font-size: var(--meta); font-weight: 700; line-height: 1.4; }
 .vd-plano__vazio { display: block; }
 .vd-plano__cta { margin-top: auto; min-height: 48px; font-size: 1rem; text-align: center; }
@@ -455,7 +464,7 @@
   .vd-plano--destaque { grid-column: 1 / -1; order: -1; margin-top: 0.4rem; }
   .vd-plano--destaque .vd-plano__chamada { display: none; }
   .vd-plano--semestral { order: 0; }
-  .vd-plano--anual { order: 1; }
+  .vd-plano--mensal:not(.vd-plano--destaque) { order: 0; }
   .vd-plano:not(.vd-plano--destaque) { padding: 0.9rem 0.7rem 0.75rem; gap: 0.3rem; }
   .vd-plano:not(.vd-plano--destaque) :is(.vd-plano__chamada, .vd-plano__vazio) { display: none; }
   .vd-plano:not(.vd-plano--destaque) .vd-plano__topo { flex-direction: column; gap: 0; }
@@ -465,6 +474,8 @@
   .vd-plano:not(.vd-plano--destaque) .vd-plano__ganho { font-size: 0.75rem; }
   .vd-plano:not(.vd-plano--destaque) .vd-plano__cta { min-height: 46px; font-size: 0.86rem; padding-inline: 0.4rem; }
   .vd-plano:not(.vd-plano--destaque) .vd-plano__meios { font-size: 0.72rem; }
+  .vd-plano:not(.vd-plano--destaque) .vd-plano__lembrete { font-size: 0.72rem; padding: 0.4rem 0.45rem; }
+  .vd-plano:not(.vd-plano--destaque) .vd-plano__pizza-curta { white-space: normal; font-size: 0.75rem; }
   .vd-plano__cta { margin-top: auto; }
   .vd-confianca { justify-content: flex-start; }
   .vd-confianca li { width: 100%; }

@@ -24,9 +24,9 @@ export function planosDaPessoa(planosAntigos: readonly string[] = []) {
   return { mensal, semestral, anual, pipoca: [mensal, semestral, anual] as readonly Plano[] }
 }
 
-/** Do mensal para o anual, da esquerda para a direita: o mensal, primeiro e maior, é o destaque. */
+/** Do mensal para o anual, da esquerda para a direita; o anual, o melhor preço, é o destaque (13/11/2026). */
 export const PLANOS_PIPOCA: readonly Plano[] = [PLANO_MENSAL, PLANO_SEMESTRAL, PLANO_ANUAL]
-/** No celular, o destaque (mensal) vem primeiro e os outros dois logo abaixo, lado a lado. */
+/** No celular, o destaque (anual) vem primeiro, inteiro, e o mensal e o semestral logo abaixo, lado a lado. */
 export const PLANOS_CELULAR: readonly Plano[] = [PLANO_MENSAL, PLANO_SEMESTRAL, PLANO_ANUAL]
 
 export const porMes = (p: Plano) => p.total / p.meses
@@ -41,12 +41,13 @@ export const descontoPct = (p: Plano) => Math.round((1 - porMes(p) / MENSAL) * 1
 export const periodo = (p: Plano) => p.meses === 1 ? 'por mês' : p.meses === 6 ? 'a cada 6 meses' : 'por ano'
 export const cobranca = (p: Plano) => p.meses === 1 ? 'cobrado todo mês' : `${real(p.total)} ${periodo(p)}, de uma vez`
 
-/** Selo de cada plano: só o destaque (o mensal) leva selo, um convite e não um número. */
+/** Selo de cada plano: só o destaque (o anual) leva selo. */
 export function seloPlano(p: Plano): string | null {
-  return p.destaque ? 'Comece por aqui' : null
+  return p.destaque ? 'Melhor preço' : null
 }
 
-/** A linha extra do cartão em destaque: a garantia, que tira o medo de começar. */
+/** Sem fidelidade e a garantia, em todos os cartões (13/11/2026): tiram o medo de começar. */
+export const SEM_FIDELIDADE = 'Sem fidelidade · cancele quando quiser'
 export const LEMBRETE_DESTAQUE = 'Mudou de ideia? Em até 7 dias, você pede o reembolso com um só clique.'
 
 
