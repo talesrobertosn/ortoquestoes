@@ -56,7 +56,7 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
             {!conta && pagamentos
               ? <a className={classe} href={href(linkConta('criar', `/assinatura?plano=${p.id}`))} {...dados}>Assinar o {p.nome.toLowerCase()}</a>
               : <button className={classe} type="button" disabled={semCompra} onClick={() => aoEscolher(p)} {...dados}>{rotulo(p)}</button>}
-            <p className="vd-plano__meios"><span className="vd-plano__pix"><IconePix tamanho={13} /> Pix</span> ou <span><IconeCartao tamanho={14} /> cartão</span></p>
+            <p className="vd-plano__meios"><span className="vd-plano__pix"><IconePix tamanho={13} /> Pix</span> ou <span className="vd-plano__cartao"><IconeCartao tamanho={14} /> cartão</span></p>
           </article>
         )
       })}

@@ -71,13 +71,16 @@ export default function Triagem() {
   const avaliacoesQ = usarRpc<Avaliacao[]>(p.conta, 'listar_avaliacoes_comentario_admin')
   const notasQ = usarRpc<ResumoNota[]>(p.conta, 'notas_comentarios_admin')
   const lidosAval = usarLidos('avaliacao')
+  // Relatos lidos (14/11/2026): continuam em aberto, mas saem do aviso.
+  const lidosRelatos = usarLidos('relato')
   const relatos = relatosQ.dados, avaliacoes = avaliacoesQ.dados
   const abertos = relatos?.filter(r => r.status === 'aberto').length ?? null
+  const abertosNaoLidos = relatos?.filter(r => r.status === 'aberto' && !lidosRelatos.lidos.has(String(r.id))).length ?? null
   // Aviso só para nota ruim (Tales, 14/11/2026): nota de 5 ou menos ainda não lida, com ou sem mensagem. Nota boa
   // entra nas estatísticas sem avisar.
   const naoLidas = avaliacoes ? avaliacoes.filter(l => ehNotaRuim(l) && !lidosAval.lidos.has(chaveAvaliacao(l))).length : null
   const { registrarPendencias } = p
-  useEffect(() => { if (abertos !== null && naoLidas !== null) registrarPendencias(abertos + naoLidas) }, [abertos, naoLidas, registrarPendencias])
+  useEffect(() => { if (abertosNaoLidos !== null && naoLidas !== null) registrarPendencias(abertosNaoLidos + naoLidas) }, [abertosNaoLidos, naoLidas, registrarPendencias])
   const [minimo, definirMinimo] = useState(5)
   const stats = statsQ.dados
   const comAmostra = useMemo(() => (stats ?? []).filter(s => Number(s.acertos_primeira) + Number(s.erros_primeira) >= minimo), [stats, minimo])
@@ -92,11 +95,11 @@ export default function Triagem() {
     <div className="a3-abas-grandes a3-abas-grandes--5" role="tablist" aria-label="Filas da triagem">
       {VISTAS.map(([v, r]) => <button key={v} type="button" role="tab" aria-selected={vista === v} className="a3-aba-grande" onClick={() => nav.ajustar({ vista: v })}>
         <span className="a3-aba-grande__numero">{v === 'temas' ? <Icone nome="grafico" tamanho={22} /> : contagem[v] ?? '—'}</span>
-        <span>{r}{(v === 'relatos' || v === 'avaliacoes') && (contagem[v] ?? 0) > 0 ? <i className="a3-ponto a3-ponto--erro" style={{ marginLeft: 6, verticalAlign: 'middle' }} /> : null}</span>
+        <span>{r}{(v === 'relatos' ? (abertosNaoLidos ?? 0) > 0 : v === 'avaliacoes' && (contagem[v] ?? 0) > 0) ? <i className="a3-ponto a3-ponto--erro" style={{ marginLeft: 6, verticalAlign: 'middle' }} /> : null}</span>
       </button>)}
     </div>
     {vista === 'relatos' && (relatosQ.erro ? <Estado tipo="erro" titulo="Os relatos não carregaram" texto={erroDoPainel(relatosQ.erro, MIGRACAO)} /> : !relatos ? <Carregando linhas={6} /> :
-      <Relatos relatos={relatos} info={info} editar={editar} recarregar={relatosQ.recarregar} />)}
+      <Relatos relatos={relatos} info={info} editar={editar} recarregar={relatosQ.recarregar} lidos={lidosRelatos} />)}
     {vista === 'avaliacoes' && (avaliacoesQ.erro ? <Estado tipo="erro" titulo="As avaliações não carregaram" texto={erroDoPainel(avaliacoesQ.erro, '20261113040000_nota_comentarios.sql')} /> : !avaliacoes ? <Carregando linhas={6} /> :
       <NotasComentarios resumos={notasQ.dados} erroResumos={notasQ.erro} linhas={avaliacoes} info={info} lidos={lidosAval} editar={editar} />)}
     {(vista === 'suspeitas' || vista === 'faceis') && (statsQ.erro ? <Estado tipo="erro" titulo="As estatísticas não carregaram" texto={erroDoPainel(statsQ.erro, MIGRACAO)} /> : !stats ? <Carregando linhas={6} /> :
@@ -140,7 +143,11 @@ function Questao({ id, info }: { id: string; info: (id: string) => Info }) {
   </div>
 }
 
-function Relatos({ relatos, info, editar, recarregar }: { relatos: Relato[]; info: (id: string) => Info; editar: (id: string) => void; recarregar: () => Promise<void> }) {
+function Relatos({ relatos, info, editar, recarregar, lidos }: { relatos: Relato[]; info: (id: string) => Info; editar: (id: string) => void; recarregar: () => Promise<void>; lidos: ReturnType<typeof usarLidos> }) {
+  const novo = (r: Relato) => r.status === 'aberto' && !lidos.lidos.has(String(r.id))
+  const novos = relatos.filter(novo)
+  // Um clique tira todos do aviso, sem resolver nem justificar: continuam em "Em aberto" para tratar depois.
+  const lerTodos = () => { lidos.marcar(novos.map(r => String(r.id))); avisoRapido(`${novos.length} ${novos.length === 1 ? 'relato marcado como lido' : 'relatos marcados como lidos'}. Continuam em aberto.`) }
   const [filtro, definirFiltro] = useState<'aberto' | 'fechados' | 'todos'>('aberto')
   const [busca, definirBusca] = useState('')
   const termo = normalizar(busca.trim())
@@ -171,11 +178,13 @@ function Relatos({ relatos, info, editar, recarregar }: { relatos: Relato[]; inf
   }
 
   return <Mesa itens={itens} chave={r => String(r.id)}
-    topo={<><div className="a3-filtros"><Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar texto, pessoa ou questão" /></div>
+    topo={<>{novos.length > 0 && <div className="a3-filtros" style={{ paddingBottom: 0 }}><Faixa tom="aviso" titulo={`${novos.length} ${novos.length === 1 ? 'relato novo' : 'relatos novos'}`}
+        acao={<button type="button" className="a3-botao a3-botao--pequeno" onClick={lerTodos}><Icone nome="certo" tamanho={14} />Marcar todos como lidos</button>}>Tira o aviso sem resolver: eles continuam em aberto.</Faixa></div>}
+      <div className="a3-filtros"><Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar texto, pessoa ou questão" /></div>
       <div className="a3-filtros" style={{ paddingTop: 0 }} role="group" aria-label="Situação">
         {(['aberto', 'fechados', 'todos'] as const).map(f => <Filtro key={f} ativo={filtro === f} aoClicar={() => definirFiltro(f)} contagem={relatos.filter(r => f === 'todos' || (f === 'aberto' ? r.status === 'aberto' : r.status !== 'aberto')).length}>{f === 'aberto' ? 'Em aberto' : f === 'fechados' ? 'Fechados' : 'Todos'}</Filtro>)}
       </div></>}
-    linha={r => ({ titulo: info(r.id_questao).titulo, sub: `${TIPOS_RELATO[r.tipo] ?? r.tipo} · ${r.texto}`, ponto: r.status === 'aberto', quando: haQuanto(r.criado_em) })}
+    linha={r => ({ titulo: info(r.id_questao).titulo, sub: `${TIPOS_RELATO[r.tipo] ?? r.tipo} · ${r.texto}`, ponto: novo(r), quando: haQuanto(r.criado_em) })}
     vazio={<Estado icone="certo" titulo={filtro === 'aberto' ? 'Nenhum relato em aberto' : 'Nenhum relato aqui'} texto='Eles chegam pelo botão "Relatar erro nesta questão".' />}
     detalhe={(r, proximo) => <div className="a3-pilha">
       <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}><Situacao tom={r.status === 'aberto' ? 'erro' : 'neutro'}>{r.status === 'aberto' ? 'Em aberto' : r.status === 'resolvido' ? 'Resolvido' : 'Descartado'}</Situacao><Selo contorno>{TIPOS_RELATO[r.tipo] ?? r.tipo}</Selo></div>
@@ -193,6 +202,8 @@ function Relatos({ relatos, info, editar, recarregar }: { relatos: Relato[]; inf
         {r.status === 'aberto' ? <>
           <button type="button" className="a3-botao" onClick={() => void mudar(r, 'resolvido', proximo)}><Icone nome="certo" tamanho={15} />Marcar resolvido</button>
           <button type="button" className="a3-botao a3-botao--fantasma" onClick={() => void mudar(r, 'descartado', proximo)}>Descartar</button>
+          {novo(r) ? <button type="button" className="a3-botao a3-botao--fantasma" onClick={() => { lidos.marcar([String(r.id)]); proximo() }}>Lido, próximo</button>
+            : <button type="button" className="a3-botao a3-botao--fantasma" onClick={() => lidos.marcar([String(r.id)], false)}>Marcar como não lido</button>}
         </> : <button type="button" className="a3-botao a3-botao--fantasma" onClick={() => void mudar(r, 'aberto', proximo)}>Reabrir</button>}
         {r.status === 'resolvido' && r.usuario && !r.avisado_em && <button type="button" className="a3-botao a3-botao--fantasma" onClick={() => void avisar(r)}><Icone nome="enviar" tamanho={15} />Avisar por e-mail</button>}
       </div>

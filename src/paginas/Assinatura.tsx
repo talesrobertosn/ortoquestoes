@@ -276,7 +276,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           {!avisoPrecoGuardado && PRECO_DE_ABERTURA && pagamentosHabilitados && <AvisoAbertura />}
           <ul className="vd-confianca" aria-label="Pagamento e garantia">
             <li className="vd-confianca__pix"><IconePix tamanho={16} /> <span><strong>Pix</strong> à vista, liberado assim que cai</span></li>
-            <li><IconeCartao tamanho={16} /> <span><strong>Cartão</strong> com renovação que você desliga</span></li>
+            <li className="vd-confianca__cartao"><IconeCartao tamanho={16} /> <span><strong>Cartão</strong> com renovação que você desliga</span></li>
             <li><Icone nome="certo" tamanho={16} /> <span><strong>7 dias de garantia</strong>: reembolso por um botão</span></li>
           </ul>
           {!sessao && pagamentosHabilitados && <p className="vd-heroi__semconta">Ainda sem conta? O botão cria a sua, grátis, e volta direto para o pagamento do plano escolhido.</p>}
