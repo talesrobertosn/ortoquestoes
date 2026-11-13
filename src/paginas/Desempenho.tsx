@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { AtalhoFlashcards } from '../componentes/AtalhoFlashcards'
 import { BackupProgresso } from '../componentes/BackupProgresso'
-import { DetalhesDiaSemana, DetalhesNumeros, DetalhesProvas, DetalhesSemanas, usarDetalhes } from '../componentes/DesempenhoDetalhado'
-import { GraficoColunas, Medidor } from '../componentes/GraficosDesempenho'
+import { DetalhesDiaSemana, DetalhesNumeros, DetalhesProvas, usarDetalhes } from '../componentes/DesempenhoDetalhado'
+import { Medidor } from '../componentes/GraficosDesempenho'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
 import { GatoPixel } from '../componentes/mascote/GatoPixel'
@@ -12,13 +12,29 @@ import { usarIndice } from '../dados/usarIndice'
 import { type Periodo, usarPeriodo } from '../estado/aparencia'
 import { armazenamentoDisponivel, tamanhoArmazenado } from '../estado/armazenamento'
 import { conquistaAtual, proximaConquista } from '../estado/conquistas'
-import { chaveDia } from '../estado/planoRevisao'
 import type { RegistroQuestao } from '../estado/revisao'
 import { type ResumoHistorico, usarFavoritos } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
-import { FUSO_DIA, hojeBR, inicioDaChave, somarDias } from '../util/dia'
+import { hojeBR, inicioDaChave, somarDias } from '../util/dia'
 import { href } from '../util/rotas'
+import { carregarIndiceBiblioteca, carregarIndiceBibliotecaLeve } from '../biblioteca/conteudo'
+import { usarPremium } from '../conta/premium'
+import { carregarTurmaAcervo } from '../dados/turma'
+import { FILTROS_VAZIOS } from '../dados/tipos'
+import { usarSessao } from '../estado/sessao'
+import { navegar } from '../util/rotas'
+import {
+  calendario, compararTurma, contarRetencao, errosComCerteza, errosPendentes, eventosDe, indicarResumos, linhasAssuntos, notaEstimada,
+  type CapituloResumo, type ComparacaoTurma, type EstadoRetencao, type ResumoIndicado,
+} from '../dados/desempenho'
+import { NotaEstimadaCartao } from '../componentes/desempenho/NotaEstimada'
+import { Evolucao } from '../componentes/desempenho/Evolucao'
+import { Assuntos } from '../componentes/desempenho/Assuntos'
+import { ErrosComCerteza, ResumosIndicados, Retencao } from '../componentes/desempenho/Retencao'
+import { Calendario } from '../componentes/desempenho/Calendario'
+import { ResultadoCronograma } from '../componentes/desempenho/ResultadoCronograma'
 import '../estilos/paginas/Desempenho.css'
+import '../estilos/paginas/DesempenhoAbas.css'
 
 /*
  * Seu desempenho (rota /dados). Refeita em 18/10/2026 na identidade do Treinar e, em 31/10/2026, no observatório da
@@ -95,7 +111,8 @@ function primeiroNome(nome?: unknown): string {
   if (!primeiro || /[@\d_]/.test(primeiro) || primeiro.length < 2 || primeiro.length > 20) return ''
   return primeiro.charAt(0).toLocaleUpperCase('pt-BR') + primeiro.slice(1).toLocaleLowerCase('pt-BR')
 }
-const diaCurto = (em: number) => new Date(em).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', timeZone: FUSO_DIA })
+type Aba = 'geral' | 'assuntos' | 'erros' | 'calendario'
+const ABAS: Array<[Aba, string, Parameters<typeof Icone>[0]['nome']]> = [['geral', 'Visão geral', 'grafico'], ['assuntos', 'Assuntos', 'mapa'], ['erros', 'Erros e retenção', 'alvo'], ['calendario', 'Calendário', 'calendario']]
 
 export function DadosLocais() {
   const { favoritos } = usarFavoritos()
@@ -170,27 +187,6 @@ export function DadosLocais() {
     }
     return grupos
   }, [eventos])
-  const atividade = useMemo(() => {
-    const porDia = new Map<string, { total: number; certas: number }>()
-    for (const registro of Object.values(marcadas)) {
-      const historicoQuestao = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c }] : []
-      for (const evento of historicoQuestao) {
-        if (reinicioEm && evento.em < reinicioEm) continue
-        const chave = chaveDia(evento.em)
-        const atual = porDia.get(chave) ?? { total: 0, certas: 0 }
-        atual.total++
-        if (evento.correta) atual.certas++
-        porDia.set(chave, atual)
-      }
-    }
-    const hoje = hojeBR()
-    return Array.from({ length: 28 }, (_, i) => {
-      const dia = inicioDaChave(somarDias(hoje, -(27 - i)))
-      return { dia, fora: dia + 86400000 <= limite, ...(porDia.get(chaveDia(dia)) ?? { total: 0, certas: 0 }) }
-    })
-  }, [marcadas, reinicioEm, limite])
-  const diasAtivos = atividade.filter((d) => d.total > 0 && !d.fora).length
-  const questoesMes = atividade.reduce((n, d) => n + (d.fora ? 0 : d.total), 0)
   const avaliados = porTema.filter((t) => t.total >= 5)
   const temaForte = [...avaliados].sort((a, b) => b.certas / b.total - a.certas / a.total)[0]
   const temaFragil = [...avaliados].sort((a, b) => a.certas / a.total - b.certas / b.total)[0]
@@ -221,15 +217,56 @@ export function DadosLocais() {
   const exemplo = !conta && respondidas === 0
   const pct = exemplo ? 72 : percentualGeral === null ? null : Math.round(percentualGeral * 100)
   const streak = detalhes.d.streak
-  // Temas do mais forte para o mais fraco: a lista vira um mapa de onde estudar.
-  const [ordemTemas, definirOrdemTemas] = useState<'maior' | 'menor'>('maior')
-  const [todosTemas, definirTodosTemas] = useState(false)
-  const temasOrdenados = [...porTema].sort((a, b) => b.certas / b.total - a.certas / a.total || b.total - a.total)
-  if (ordemTemas === 'menor') temasOrdenados.reverse()
-  const TEMAS_VISIVEIS = 12
-  const temasMostrados = todosTemas ? temasOrdenados : temasOrdenados.slice(0, TEMAS_VISIVEIS)
-  const confiancas = ([['seguro', 'Certeza', 'certo'], ['duvida', 'Dúvida', 'olho'], ['chute', 'Chute', 'interrogacao']] as const)
   const temConfianca = porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0
+  // ---------- Abas (14/11/2026): evolução, assuntos, retenção, calendário, nota estimada, turma e resumos ----------
+  const [aba, definirAba] = usarArmazenado<Aba>('desempenho:aba', 'geral')
+  const { premium } = usarPremium()
+  const { iniciarComAviso } = usarSessao()
+  const ev = useMemo(() => eventosDe(marcadas, indice, limite), [marcadas, indice, limite])
+  const nomesTemas = useMemo(() => new Map((indice?.temas ?? []).map((t) => [t.slug, t.nome])), [indice])
+  const nota = useMemo(() => notaEstimada(ev, nomesTemas), [ev, nomesTemas])
+  const primeirasN = useMemo(() => ev.filter((e) => e.primeira && e.correta !== null).length, [ev])
+  const [turmaMapa, definirTurmaMapa] = useState<Map<string, { acerto: number }> | null>(null)
+  useEffect(() => {
+    if (!premium) return
+    let vivo = true
+    void carregarTurmaAcervo().then((m) => { if (vivo && m) definirTurmaMapa(m) }).catch(() => undefined)
+    return () => { vivo = false }
+  }, [premium])
+  const turma: ComparacaoTurma | null = useMemo(() => (turmaMapa ? compararTurma(ev, turmaMapa) : null), [turmaMapa, ev])
+  const linhas = useMemo(() => (indice ? linhasAssuntos(indice, marcadas, ev) : { temas: [], assuntos: [] }), [indice, marcadas, ev])
+  const retencao = useMemo(() => contarRetencao(marcadas), [marcadas])
+  const certeza = useMemo(() => errosComCerteza(marcadas), [marcadas])
+  const [capitulos, definirCapitulos] = useState<CapituloResumo[]>([])
+  useEffect(() => {
+    let vivo = true
+    void carregarIndiceBibliotecaLeve().catch(() => carregarIndiceBiblioteca()).then((i) => { if (vivo) definirCapitulos(i.capitulos as CapituloResumo[]) }).catch(() => undefined)
+    return () => { vivo = false }
+  }, [])
+  const pendentes = useMemo(() => errosPendentes(marcadas), [marcadas])
+  const resumosIndicados = useMemo(() => (indice && capitulos.length ? indicarResumos(capitulos, pendentes, indice, 4) : []), [capitulos, pendentes, indice])
+  // O melhor resumo de cada tema para os erros daquele tema (nota estimada e tabela).
+  const resumoPorTema = useMemo(() => {
+    const m = new Map<string, ResumoIndicado>()
+    if (!indice || !capitulos.length) return m
+    const temaDe = new Map(indice.questoes.map((q) => [q.id, indice.temas[q.t]?.slug]))
+    const porTema = new Map<string, string[]>()
+    for (const id of pendentes) { const t = temaDe.get(id); if (!t) continue; const l = porTema.get(t) ?? []; l.push(id); porTema.set(t, l) }
+    for (const [t, ids] of porTema) {
+      const [melhor] = indicarResumos(capitulos.filter((c) => c.especialidade === t), ids, indice, 1)
+      if (melhor) m.set(t, melhor)
+    }
+    return m
+  }, [capitulos, pendentes, indice])
+  const diasCalendario = useMemo(() => calendario(eventosDe(marcadas, indice, reinicioEm || 0)), [marcadas, indice, reinicioEm])
+  async function revisarIds(ids: string[]) {
+    if (!ids.length) return
+    const lista = ids.slice(0, 20)
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: true, limite: lista.length }, lista))) return
+    navegar('/sessao')
+  }
+  const revisarEstado = (estado: EstadoRetencao) => void revisarIds(retencao.ids[estado])
+
   const mostrarSync = conta && (statusSync.estado === 'erro' || statusSync.estado === 'offline' || statusSync.estado === 'conflito' || statusSync.pendentes > 0 || statusSync.rejeitados.length > 0)
 
   return (
@@ -298,6 +335,9 @@ export function DadosLocais() {
         </div>
       </section>
 
+      {/* Nota estimada em destaque (Tales, 14/11/2026), logo abaixo do placar. */}
+      {!exemplo && <NotaEstimadaCartao nota={nota} base={primeirasN} turma={turma} resumos={resumoPorTema} />}
+
       {/* Filtro único, acima de tudo o que ele recorta. */}
       <section className="ds-periodo" aria-label="Período do desempenho">
         <div className="ds-periodo__texto">
@@ -330,155 +370,24 @@ export function DadosLocais() {
         </div>
       )}
 
-      {/* ---------- Onde você está ---------- */}
-      <section className="ds-capitulo" aria-labelledby="ds-cap-onde">
-        <header className="ds-capitulo__cabeca">
-          <p className="ds-capitulo__selo"><b aria-hidden="true">1</b> Onde você está</p>
-          <h2 id="ds-cap-onde">Forte e fraco, tema por tema</h2>
-        </header>
-
-        <div className="ds-grade ds-grade--onde">
-          <section className="ds-cartao ds-temas-cartao" aria-labelledby="ds-temas-titulo">
-            <div className="ds-cartao__cabeca ds-cartao__cabeca--linha">
-              <div>
-                <h3 id="ds-temas-titulo">Por tema</h3>
-                <p>{ordemTemas === 'maior' ? 'Do maior acerto para o menor.' : 'Do menor acerto para o maior.'} Toque em um tema para treinar só ele. Com menos de 5 respostas, o número ainda é uma pista, não um diagnóstico.</p>
-              </div>
-              {porTema.length > 1 && <div className="ds-seg ds-seg--mini seletor" role="group" aria-label="Ordem dos temas">
-                <button type="button" aria-pressed={ordemTemas === 'maior'} onClick={() => definirOrdemTemas('maior')}>Maior acerto</button>
-                <button type="button" aria-pressed={ordemTemas === 'menor'} onClick={() => definirOrdemTemas('menor')}>Menor acerto</button>
-              </div>}
-            </div>
-            {porTema.length === 0 ? (
-              <p className="ds-vazio">Ainda não há questões respondidas nesta conta. Responda uma sessão e o desempenho por tema aparece aqui.</p>
-            ) : (
-              <ul className="ds-temas">
-                {temasMostrados.map((tema) => {
-                  const percentual = Math.round((tema.certas / tema.total) * 100)
-                  const avaliado = tema.total >= 5
-                  return (
-                    <li key={tema.nome}>
-                      <a className={avaliado ? 'ds-tema' : 'ds-tema ds-tema--pouco'} href={href(`/treinar?temas=${tema.slug}&limite=10`)} aria-label={`${tema.nome}: ${percentual}% de acerto, ${tema.certas} de ${tema.total} certas. Treinar 10 questões deste tema`}>
-                        <span className="ds-tema__nome">{tema.nome}</span>
-                        <span className="ds-tema__pct ds-num">{percentual}%</span>
-                        <Medidor valor={percentual} />
-                        <span className="ds-tema__meta ds-num">
-                          {tema.certas} de {tema.total} certas
-                          {avaliado && percentual >= 70 && <span className="ds-status ds-status--bom"><Icone nome="certo" tamanho={12} /> forte</span>}
-                          {avaliado && percentual < 50 && <span className="ds-status ds-status--baixo"><Icone nome="alvo" tamanho={12} /> dá para crescer</span>}
-                          {!avaliado && <span className="ds-status ds-status--pouco">amostra pequena</span>}
-                        </span>
-                      </a>
-                    </li>
-                  )
-                })}
-              </ul>
-            )}
-            {temasOrdenados.length > TEMAS_VISIVEIS && (
-              <button type="button" className="ds-mais" aria-expanded={todosTemas} onClick={() => definirTodosTemas((v) => !v)}>
-                {todosTemas ? 'Mostrar só os 12 primeiros' : `Mostrar todos os ${temasOrdenados.length} temas (${temasOrdenados.length - TEMAS_VISIVEIS} ocultos)`}
-                <Icone nome={todosTemas ? 'cima' : 'baixo'} tamanho={16} />
-              </button>
-            )}
-          </section>
-
-          <div className="ds-coluna">
-            <section className="ds-cartao" aria-labelledby="ds-atencao-titulo">
-              <div className="ds-cartao__cabeca">
-                <h3 id="ds-atencao-titulo">Pontos de atenção</h3>
-                <p>Temas com pelo menos 5 respostas.</p>
-              </div>
-              {temDestaques && temaForte && temaFragil ? (
-                <div className="ds-destaques">
-                  {/* Duas lentes de latão: o número dentro do aro, o tema e a ação ao lado. */}
-                  <a className="ds-destaque ds-destaque--bom" href={href(`/treinar?temas=${temaForte.slug}&limite=10`)}>
-                    <span className="ds-lente ds-num">{Math.round((temaForte.certas / temaForte.total) * 100)}<small>%</small></span>
-                    <span className="ds-destaque__texto">
-                      <small><Icone nome="certo" tamanho={13} /> Ponto forte</small>
-                      <strong>{temaForte.nome}</strong>
-                      <span className="ds-num">{temaForte.certas} de {temaForte.total} certas · treinar 10</span>
-                    </span>
-                  </a>
-                  <a className="ds-destaque ds-destaque--baixo" href={href(`/treinar?temas=${temaFragil.slug}&situacao=erradas&limite=10`)}>
-                    <span className="ds-lente ds-num">{Math.round((temaFragil.certas / temaFragil.total) * 100)}<small>%</small></span>
-                    <span className="ds-destaque__texto">
-                      <small><Icone nome="alvo" tamanho={13} /> Onde mais dá para crescer</small>
-                      <strong>{temaFragil.nome}</strong>
-                      <span className="ds-num">{temaFragil.certas} de {temaFragil.total} certas · refazer erros</span>
-                    </span>
-                  </a>
-                </div>
-              ) : <p className="ds-vazio">Responda mais algumas questões em temas diferentes para ver seu ponto forte e onde mais dá para crescer.</p>}
-            </section>
-            <DetalhesProvas detalhes={detalhes} />
-          </div>
+      {/* ---------- Abas (14/11/2026): cada uma responde uma pergunta ---------- */}
+      <nav className="da-abas" aria-label="Partes do desempenho">
+        <div className="da-abas__trilho" role="tablist">
+          {ABAS.map(([id, rotulo, icone]) => <button key={id} type="button" role="tab" id={`da-aba-${id}`} aria-selected={aba === id} aria-controls={`da-painel-${id}`}
+            className="da-aba" onClick={() => definirAba(id)}>
+            <Icone nome={icone} tamanho={17} /> <span>{rotulo}</span>
+            {id === 'erros' && certeza.length > 0 && <b className="da-aba__alerta" aria-label={`${certeza.length} erros com certeza`}>{certeza.length > 99 ? '99+' : certeza.length}</b>}
+          </button>)}
         </div>
+      </nav>
 
-        {temConfianca && <section className="ds-cartao" aria-labelledby="ds-confianca-titulo">
-          <div className="ds-cartao__cabeca">
-            <h3 id="ds-confianca-titulo">Sua sensação combina com o resultado?</h3>
-            <p>Acerto separado pelo que você marcou ao responder. Chute volta em 1 dia, dúvida em 3, certeza em 10. <a href={href('/revisao')}>Ver a escada completa</a></p>
-          </div>
-          <div className="ds-confianca">
-            {confiancas.map(([tipo, rotulo, icone]) => {
-              const grupo = porConfianca[tipo]
-              const p = grupo.total ? Math.round((grupo.certas / grupo.total) * 100) : 0
-              return <div className="ds-confianca__linha" key={tipo}>
-                <span className="ds-confianca__rotulo"><Icone nome={icone} tamanho={16} /> {rotulo}</span>
-                <Medidor valor={grupo.total ? Math.max(1, p) : 0} />
-                <span className="ds-confianca__valor ds-num"><strong>{grupo.total ? `${p}%` : '–'}</strong> <small>{grupo.total} {grupo.total === 1 ? 'resposta' : 'respostas'}</small></span>
-              </div>
-            })}
-          </div>
-        </section>}
-      </section>
-
-      {/* ---------- Como você evoluiu ---------- */}
-      <section className="ds-capitulo" aria-labelledby="ds-cap-evolucao">
-        <header className="ds-capitulo__cabeca">
-          <p className="ds-capitulo__selo"><b aria-hidden="true">2</b> Como você evoluiu</p>
-          <h2 id="ds-cap-evolucao">Ritmo e acerto ao longo do tempo</h2>
-        </header>
-
+      {aba === 'geral' && <div className="da-painel" role="tabpanel" id="da-painel-geral" aria-labelledby="da-aba-geral">
         <DetalhesNumeros detalhes={detalhes} />
-
-        <div className="ds-grade">
-          <section className="ds-cartao" aria-labelledby="ds-atividade-titulo">
-            <div className="ds-cartao__cabeca">
-              <h3 id="ds-atividade-titulo">Últimas 4 semanas</h3>
-              <p className="ds-num">{questoesMes} {questoesMes === 1 ? 'resposta' : 'respostas'} em {diasAtivos} {diasAtivos === 1 ? 'dia ativo' : 'dias ativos'}. Hoje em ouro.</p>
-            </div>
-            <GraficoColunas
-              rotulo={`Atividade diária: ${questoesMes} respostas em 28 dias`}
-              colunas={atividade.map((d, i) => ({
-                chave: String(d.dia),
-                valor: d.total,
-                eixo: i === 0 ? 'há 4 sem.' : i === 27 ? 'hoje' : i % 7 === 0 ? diaCurto(d.dia) : '',
-                destaque: i === 27,
-                apagada: d.fora,
-                descricao: `${i === 27 ? 'Hoje' : diaCurto(d.dia)}: ${d.total} ${d.total === 1 ? 'resposta' : 'respostas'}${d.total ? `, ${Math.round((d.certas / d.total) * 100)}% de acerto` : ''}${d.fora ? ' (fora do período)' : ''}.`,
-              }))}
-            />
-            <details className="ds-tabela">
-              <summary>Ver os 28 dias em tabela</summary>
-              <div className="rolagem-x"><table className="tabela ds-tabela__tabela">
-                <thead><tr><th scope="col">Dia</th><th scope="col" className="numerico">Respostas</th><th scope="col" className="numerico">Acerto</th></tr></thead>
-                <tbody>{[...atividade].reverse().map((d) => <tr key={d.dia}>
-                  <th scope="row">{diaCurto(d.dia)}</th>
-                  <td className="numerico">{d.total}</td>
-                  <td className="numerico">{d.total ? `${Math.round((d.certas / d.total) * 100)}%` : '–'}</td>
-                </tr>)}</tbody>
-              </table></div>
-            </details>
-          </section>
-          <DetalhesSemanas detalhes={detalhes} />
-        </div>
-
-        <DetalhesDiaSemana detalhes={detalhes} />
-      </section>
-
+        <Evolucao eventos={ev} />
+        <ResultadoCronograma indice={indice} respondidas={marcadas} eventos={ev} />
+        {temConfianca && <ErrosComCerteza ids={certeza} porConfianca={porConfianca} onRevisar={() => void revisarIds(certeza)} />}
       {/* ---------- O que fazer agora ---------- */}
-      <section className="ds-capitulo" aria-labelledby="ds-cap-agora">
+        <section className="ds-capitulo" aria-labelledby="ds-cap-agora">
         <header className="ds-capitulo__cabeca">
           <p className="ds-capitulo__selo"><b aria-hidden="true">3</b> O que fazer agora</p>
           <h2 id="ds-cap-agora">{nome ? `${nome}, sua próxima sessão` : 'Sua próxima sessão'}</h2>
@@ -500,6 +409,14 @@ export function DadosLocais() {
                 <span>Uma passada rápida transforma o que ficou incerto em certeza.</span>
               </div>
               <a className="ds-passo__acao" href={href('/treinar?situacao=incertas&limite=20')}>Treinar 20 <Icone nome="direita" tamanho={16} /></a>
+            </li>}
+            {resumosIndicados[0] && <li className="ds-passo ds-passo--resumo">
+              <span className="ds-moeda" aria-hidden="true"><Icone nome="livro" tamanho={14} /></span>
+              <div>
+                <strong>Ler {resumosIndicados[0].capitulo.titulo}</strong>
+                <span>O resumo que mais cobre os seus erros: {resumosIndicados[0].cobre} {resumosIndicados[0].cobre === 1 ? 'questão' : 'questões'}, em {resumosIndicados[0].capitulo.minutos} minutos.</span>
+              </div>
+              <a className="ds-passo__acao" href={href(`/resumos/${resumosIndicados[0].capitulo.id}`)}>Ler <Icone nome="direita" tamanho={16} /></a>
             </li>}
             {(exemplo || errosTotais > 0) && <li className="ds-passo">
               <span className="ds-moeda" aria-hidden="true">{(temaFragil && temDestaques ? 1 : 0) + (incertas > 0 ? 1 : 0) + 1}</span>
@@ -525,6 +442,25 @@ export function DadosLocais() {
         </div>
         {!exemplo && <AtalhoFlashcards tipo="desempenho" />}
       </section>
+      </div>}
+
+      {aba === 'assuntos' && <div className="da-painel" role="tabpanel" id="da-painel-assuntos" aria-labelledby="da-aba-assuntos">
+        <Assuntos temas={linhas.temas} assuntos={linhas.assuntos} turma={turma} resumos={resumoPorTema} />
+        {!premium && <p className="da-turma-convite"><Icone nome="grupo" tamanho={16} /> Assinantes veem também a coluna <b>Turma</b>: o seu acerto contra o de todo mundo nas mesmas questões. <a href={href('/assinatura')}>Ver planos</a></p>}
+        <DetalhesProvas detalhes={detalhes} />
+      </div>}
+
+      {aba === 'erros' && <div className="da-painel" role="tabpanel" id="da-painel-erros" aria-labelledby="da-aba-erros">
+        <Retencao conta={retencao.conta} erradas={retencao.erradas} onRevisar={revisarEstado} />
+        <ResumosIndicados lista={resumosIndicados} />
+        <ErrosComCerteza ids={certeza} porConfianca={porConfianca} onRevisar={() => void revisarIds(certeza)} />
+        <p className="da-rodape"><a href={href('/erros')}><Icone nome="livro" tamanho={15} /> Abrir o caderno de erros</a>, com cada questão e o comentário que explica.</p>
+      </div>}
+
+      {aba === 'calendario' && <div className="da-painel" role="tabpanel" id="da-painel-calendario" aria-labelledby="da-aba-calendario">
+        <Calendario dias={diasCalendario} eventos={eventosDe(marcadas, indice, reinicioEm || 0)} historico={historico} nomes={nomesTemas} />
+        <DetalhesDiaSemana detalhes={detalhes} />
+      </div>}
 
       {conta && <p className="meta ds-guardado">Seu progresso fica salvo e sincronizado com a sua conta ({(bytes / 1024).toFixed(1)} kB neste perfil). <a href={href('/conta')}>Minha conta</a></p>}
 

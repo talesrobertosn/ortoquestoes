@@ -10,7 +10,7 @@ import { useLayoutEffect, useRef, useState, type KeyboardEvent, type ReactNode }
  * O SVG é desenhado na largura real do cartão, para o texto não encolher no celular.
  */
 
-function usarLargura<T extends HTMLElement>(inicial: number) {
+export function usarLargura<T extends HTMLElement>(inicial: number) {
   const ref = useRef<T>(null)
   const [largura, definir] = useState(inicial)
   useLayoutEffect(() => {
@@ -27,14 +27,14 @@ function usarLargura<T extends HTMLElement>(inicial: number) {
 }
 
 /** Teto "redondo" do eixo: 1, 2, 2,5 ou 5 vezes uma potência de 10. */
-function tetoRedondo(maior: number) {
+export function tetoRedondo(maior: number) {
   if (maior <= 4) return 4
   const base = 10 ** Math.floor(Math.log10(maior))
   for (const m of [1, 2, 2.5, 5, 10]) if (m * base >= maior) return m * base
   return 10 * base
 }
 
-function setas(e: KeyboardEvent, atual: number, total: number, definir: (i: number) => void) {
+export function setas(e: KeyboardEvent, atual: number, total: number, definir: (i: number) => void) {
   const passo = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0
   if (e.key === 'Home') { e.preventDefault(); definir(0); return }
   if (e.key === 'End') { e.preventDefault(); definir(total - 1); return }
@@ -44,7 +44,7 @@ function setas(e: KeyboardEvent, atual: number, total: number, definir: (i: numb
 }
 
 /** Barra vertical com a ponta de cima arredondada (4 px) e a base reta. */
-function colunaPath(x: number, y: number, w: number, h: number) {
+export function colunaPath(x: number, y: number, w: number, h: number) {
   if (h <= 0) return ''
   const r = Math.min(4, w / 2, h)
   return `M${x} ${y + h}V${y + r}Q${x} ${y} ${x + r} ${y}H${x + w - r}Q${x + w} ${y} ${x + w} ${y + r}V${y + h}Z`
