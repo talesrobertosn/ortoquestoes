@@ -1,6 +1,6 @@
 ---
 id: rockwood10-49-fratura-toracolombar
-versao: 4
+versao: 5
 titulo: Fraturas e luxações da coluna toracolombar
 especialidade: coluna
 acesso: gratis
@@ -307,7 +307,7 @@ armadilha: Processo espinhoso: o traço transversal dele sugere falha em tensão
 
 A **via posterior** é a mais usada. Os **parafusos pediculares** fixam as três colunas, o que permitiu montagens curtas, de **um nível acima e um abaixo**. A crítica é que a fixação curta falha mais (quebra de implante, cifose) quando a coluna anterior não sustenta carga, porque os parafusos ficam expostos a forças de alavanca. Os autores reservam a fixação curta para pacientes **jovens, saudáveis, com bom osso e boa pega dos parafusos**, e estendem para **pelo menos dois níveis acima e abaixo** no osso osteoporótico, na coluna torácica e na transição (onde preservar movimento importa menos) e nas fraturas muito cominutivas.
 
-A correção pode ser indireta: contornar as hastes em lordose, prendê-las primeiro nos parafusos de cima e trazer a ponta de baixo para a frente, usando a faceta como fulcro, e depois distrair. A distração descomprime o canal por **ligamentotaxia** (o ânulo e o ligamento longitudinal posterior puxam o fragmento de volta), com ganho de **até 50%** do canal, mas ela **não funciona** quando essas inserções se romperam, como no fragmento **rodado 180 graus**, com a cortical posterior virada para a frente. Distrair o paciente intacto pede cautela.
+A correção pode ser indireta: contornar as hastes em lordose, prendê-las primeiro nos parafusos de cima e trazer a ponta de baixo para a frente, usando a faceta como fulcro, e depois distrair. A distração descomprime o canal por **ligamentotaxia** (o ânulo e o ligamento longitudinal posterior puxam o fragmento de volta), com ganho de **até 50%** do canal, mas ela **não funciona** quando essas inserções se romperam, como no fragmento **rodado 180 graus**, com a cortical posterior virada para a frente. O capítulo pede cautela ao distrair, sobretudo no paciente **neurologicamente intacto**, porque os riscos da distração podem superar o benefício.
 
 No nível da medula ou do cone, a descompressão direta por trás exige **laminectomia e pelo menos uma facetectomia**, empurrando o fragmento para dentro do corpo com curetas angulares, sem retrair a dura. Entre **L2 e S1**, onde só há raízes, a dura pode ser afastada. Como as lâminas ficam mais caudais que seus corpos, a laminectomia inclui a lâmina da vértebra fraturada e a **metade inferior da lâmina de cima**, onde costuma estar o fragmento (junto ao platô superior).
 
@@ -332,7 +332,7 @@ Explosão de L5 em adolescente com radiculopatia leve: depois de 9 meses de trat
 
 - **A4** (dois platôs) pode seguir o algoritmo da A3, mas muitos acham que indica lesão mais grave, com mais falha do tratamento conservador e limiar mais baixo para operar; quando operada, precisa mais de reconstrução anterior.
 - **A2** (pinça) é tratada como a A1, mas a pinça com fragmentos muito afastados tem disco impactado entre eles e risco maior de **pseudartrose**, cifose e dor; pode ser operada, de preferência pela frente.
-- **A1** (cunha) é estável: sem colete ou com **6 a 12 semanas** de colete. Perda de altura acima de **50%** com **25 graus** de cifose pede seguimento próximo; a dor crônica se correlaciona com a cifose.
+- **A1** (cunha) é estável: sem colete ou com **6 a 12 semanas** de colete. Perda de altura acima de **50%** **e** cifose de **25 graus** (os dois juntos, não um ou outro) pedem seguimento próximo da cifose; a dor crônica se correlaciona com a cifose.
 - **A0** (processo transverso ou espinhoso) não precisa nem de colete, mas é sinal de alerta: num estudo com 881 pacientes, a fratura isolada de processo transverso lombar baixo se associou a **fraturas da pelve e lesões abdominais**. E uma lesão B2 pode se disfarçar de fratura de processo espinhoso; o traço **transversal** denuncia a falha em tensão.
 
 # Fratura vertebral osteoporótica e cimentação {radar=confirmado}
@@ -547,7 +547,7 @@ armadilha: "Corticoide em alta dose faz parte do protocolo": é opção controve
 
 Os dois motivos principais para operar são **déficit neurológico** e **instabilidade**. Lesões com déficit são consideradas mecanicamente instáveis, com raras exceções (alguns ferimentos penetrantes e algumas explosões bem alinhadas cujo déficit vem só da retropulsão). As lesões que claramente ganham com cirurgia são as **flexões-distrações**, as lesões de três colunas com banda posterior rota (**tipos B e C**) e as com déficit; nas explosões sem déficit a indicação é controversa. No politraumatizado, operar pode facilitar a mobilização; e várias fraturas pequenas juntas podem somar uma deformidade inaceitável.
 
-Sobre o momento, o estudo **STASCIS** mostrou que descomprimir **antes de 24 horas** é seguro e se associa a melhora de **pelo menos dois graus** da escala AIS aos 6 meses (os críticos dizem que o grupo tardio tinha mais tempo para melhorar antes). Uma revisão de Bellabarba mostrou que fixar cedo a coluna **torácica** reduz dias de ventilação, de UTI e de internação e as complicações respiratórias; na **lombar**, só encurta a internação. Operar cedo demais o paciente mal ressuscitado, instável ou com lesão craniana é perigoso.
+Sobre o momento, o estudo **STASCIS** (Surgical Timing in Acute Spinal Cord Injury Study) mostrou que descomprimir **antes de 24 horas** é seguro e se associa a melhora de **pelo menos dois graus** da escala AIS aos 6 meses (os críticos dizem que o grupo tardio tinha mais tempo para melhorar antes). O desenho do estudo aparece de dois jeitos no próprio Rockwood: o capítulo 47 (Principles of Spine Trauma Care) o chama de ensaio prospectivo, multicêntrico e randomizado; o capítulo 48, de estudo prospectivo multicêntrico com 313 pacientes, em que a chance de melhorar pelo menos dois graus da AIS foi **2,8 vezes** maior no grupo operado antes de 24 horas. Uma revisão de Bellabarba mostrou que fixar cedo a coluna **torácica** reduz dias de ventilação, de UTI e de internação e as complicações respiratórias; na **lombar**, só encurta a internação. Operar cedo demais o paciente mal ressuscitado, instável ou com lesão craniana é perigoso.
 
 !questoes treino=coluna-0513
 conceito: No STASCIS, a descompressão antes de 24 horas foi segura e se associou a melhora de pelo menos dois graus na escala AIS aos 6 meses.
@@ -603,7 +603,7 @@ Fratura em extensão T10–T11 numa paciente com espondilite anquilosante que ca
 
 A **tipo C** é a falha das três colunas com **translação ou rotação**, por forças de cisalhamento no plano transversal, quase sempre de alta energia e às vezes com lesão vascular grave. Traz **déficit em 75% ou mais**. A luxação pura das facetas é rara; o comum é fratura das facetas ou da pars com translação. A estenose do canal vem do **deslocamento**, mais que da retropulsão.
 
-A conduta é **cirúrgica, qualquer que seja a neurologia**, começando **por trás**: redução aberta e artrodese posterior **pelo menos dois níveis acima e abaixo**, porque a lesão exige montagem longa e a correção multiplanar é muito mais fácil pela via extensível posterior. O realinhamento costuma descomprimir o canal indiretamente; a tomografia pós-operatória decide se falta reconstrução anterior. A via anterior isolada falha nessa lesão. O **prognóstico depende da neurologia da chegada**.
+A conduta é **cirúrgica, qualquer que seja a neurologia**, começando **por trás**: redução aberta e artrodese posterior com **instrumentação de vários níveis**, porque a lesão é muito instável, exige uma montagem multissegmentar que a via anterior típica não alcança, e a correção multiplanar é muito mais fácil pela via extensível posterior. O capítulo não fixa quantos níveis; a regra de pelo menos dois acima e dois abaixo é a que ele dá para a explosão com osso ruim, coluna torácica ou transição e cominuição grave; na coluna anquilosada, o texto fala em dois a três níveis acima e abaixo. O realinhamento costuma descomprimir o canal indiretamente; a tomografia pós-operatória decide se falta reconstrução anterior. A via anterior isolada falha nessa lesão. O **prognóstico depende da neurologia da chegada**.
 
 !questoes treino=coluna-0553
 conceito: Na fratura-luxação toracolombar (AO C), a conduta é redução e fixação posterior multissegmentar, mesmo sem déficit neurológico.

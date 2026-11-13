@@ -1,6 +1,6 @@
 ---
 id: rockwood10-51-acetabulo
-versao: 2
+versao: 3
 titulo: Fraturas do acetábulo
 especialidade: trauma
 acesso: gratis
@@ -43,7 +43,7 @@ O corte transversal do quadril (figura 51-33) mostra o problema: **artéria e ve
 - **Irrigação do osso inominado:** a face externa recebe sobretudo a **artéria glútea superior**, com a glútea inferior, a obturatória e a circunflexa femoral medial; a face interna recebe a quarta lombar, a iliolombar e a obturatória. A **artéria nutrícia do ílio**, em geral ramo da iliolombar, irriga a região supra-acetabular; a **parede posterior** depende de ramos das glúteas superior e inferior. Descolamento excessivo do periósteo pode desvascularizar fragmentos.
 - **Cabeça femoral:** a principal fonte é o **ramo profundo da circunflexa femoral medial**, protegido pelo **tendão do obturador externo**. Romper esse tendão, no trauma ou na cirurgia, põe a cabeça em risco (o capítulo mostra as distâncias do ramo profundo à crista trocantérica na figura 51-35). Os cuidados práticos estão na via de KOCHER-LANGENBECK, adiante.
 - **Feixe glúteo superior:** sai pela parte **superior** da incisura isquiática maior; fraturas da coluna posterior que entram na incisura podem lacerá-lo ou prendê-lo.
-- **Corona mortis:** origem anômala da artéria obturatória a partir do **sistema ilíaco externo** (pela epigástrica inferior), ou anastomoses menores entre os dois sistemas, cruzando o ramo púbico superior. Corre risco nas vias anteriores (ver STOPPA e ilioinguinal).
+- **Corona mortis:** origem anômala da artéria obturatória a partir do **sistema ilíaco externo** (pela epigástrica inferior), ou anastomoses menores entre os dois sistemas, cruzando o ramo púbico superior. Corre risco nas vias anteriores (ver STOPPA e ilioinguinal). O capítulo 51 não dá a frequência, e os números variam muito com o método: DARMANIS e colaboradores (Clin Anat, 2007; PubMed 16944498), em 80 hemipelves dissecadas pela via ilioinguinal, acharam anastomose vascular em **83%**, com canal de mais de 3 mm em 60% delas, mas só 5 vasos problemáticos em 492 vias anteriores operadas; o Campbell (15ª ed., cap. 61) resume como **mais de 80%** dos pacientes; o HEBERT (cap. 56, acesso anterior de STOPPA) cita KACRA, com **40%** (4 de 10 hemipelves, metade só venosa).
 
 !figura 51-7
 O acetábulo sustentado por duas colunas em forma de Y invertido, ligadas ao sacro pelo pilar ciático.
@@ -99,6 +99,8 @@ As duas oblíquas de 45 graus (incidências de JUDET) completam o AP. A regra pr
 | Melhor para | **coluna posterior**; traços da coluna anterior que saem na asa | **parede posterior**; subluxação posterior sutil (comparar com o outro lado); **sinal do esporão** |
 | Rotação correta | ponta do cóccix logo acima do centro da cabeça **contralateral** | ponta do cóccix logo acima do centro da cabeça **ipsilateral** |
 !fim
+
+Os nomes variam entre os livros, e a banca usa todos. O Skeletal Trauma (5ª ed., cap. 52, Hip Dislocations and Femoral Head Fractures, p. 1570) chama a obturatriz de **oblíqua anterior do lado lesado** e descreve a ilíaca como feita **com o lado oposto para a frente**. Na prática: **obturatriz = oblíqua anterior do lado lesado = rotação interna**; **ilíaca = alar = lado oposto para a frente = rotação externa**.
 
 Detalhes de uso que o capítulo ressalta:
 
@@ -365,7 +367,9 @@ Para as paredes, só fica sem cirurgia o quadril **completamente estável**, e a
 
 ## Fraturas sem desvio e o idoso
 
-Só **menos de 7%** das fraturas sem desvio ou com desvio mínimo são instáveis e desviam sem tração. Num estudo prognóstico de nível II, o tratamento sem cirurgia foi usado com **degrau menor que 2 mm**, congruência secundária ou parede estável (e degrau maior aceito em idosos muito doentes e octogenários): **94% de sobrevida do quadril nativo em 10 anos**, e o pior preditor foi o **degrau de 2 mm ou mais na oblíqua obturatriz**. Daí o capítulo não ver indicação de fixação profilática nessas fraturas, e o algoritmo dos autores separa uma exceção: **fratura sem desvio da parede posterior vai para o exame sob anestesia**.
+Só **cerca de 7%** das fraturas sem desvio ou com desvio mínimo são instáveis e desviam sem tração. Num estudo prognóstico de nível II, o tratamento sem cirurgia foi usado com **degrau menor que 2 mm**, congruência secundária ou parede estável (e degrau maior aceito em idosos muito doentes e octogenários): **94% de sobrevida do quadril nativo em 10 anos**, e o pior preditor foi o **degrau de 2 mm ou mais na oblíqua obturatriz**. Daí o capítulo não ver indicação de fixação profilática nessas fraturas, e o algoritmo dos autores separa uma exceção: **fratura sem desvio da parede posterior vai para o exame sob anestesia**.
+
+O capítulo 10 do mesmo Rockwood (Principles of Nonoperative Management of Fractures, seção das fraturas do membro inferior e tabela 10-9) acrescenta outra exceção, a que as provas costumam cobrar: o tratamento sem cirurgia fica para as fraturas **sem desvio**, **exceto a transversa transtectal**, que pode desviar mais tarde. Quando se escolhe o conservador, a orientação é carga restrita por **10 a 12 semanas** com fisioterapia. As duas exceções se somam: a parede posterior sem desvio pede o exame sob anestesia, e a transversa que cruza a cúpula de carga não deve ser tratada como uma fratura sem desvio qualquer.
 
 !questoes treino=trauma-1528
 conceito: No idoso com fratura sem desvio que não envolve a parede posterior, a conduta é mobilização precoce com carga parcial e radiografias seriadas, sem fixação profilática; degrau de 2 mm ou mais na obturatriz prediz mau resultado.
@@ -510,8 +514,10 @@ Indicada para **parede e coluna anteriores**, a maioria das **anteriores com hem
 | --- | --- | --- |
 | **Lateral** | elevação do ilíaco | crista ilíaca e fossa ilíaca interna até a sacroilíaca e a borda pélvica |
 | **Média** | iliopsoas e nervo femoral para lateral; vasos ilíacos externos para medial | parede anterior, eminência iliopectínea, borda pélvica e **superfície quadrilátera**; procurar a **corona mortis** antes de afastar os vasos |
-| **Medial** | vasos para lateral, funículo para medial ou lateral | ramo superior e sínfise (seccionando o reto, espaço de RETZIUS) |
+| **Medial** | vasos ilíacos externos para lateral e funículo espermático (ou ligamento redondo) para medial: **ramo púbico superior**; funículo para lateral: **sínfise** | ramo superior e sínfise (seccionando o reto, espaço de RETZIUS) |
 !fim
+
+O The Adult Hip (cap. 9, Ilioinguinal, Extended Iliofemoral, and Combined Approaches, seção Ilioinguinal Approach) deixa a janela medial em dois passos que a tabela resume: afastando os vasos para lateral e o funículo para medial, aparece o **ramo púbico superior**; afastando o funículo para lateral, aparece a **sínfise**. O mesmo capítulo lembra que a anastomose entre a obturatória e o sistema ilíaco externo costuma correr sobre o ramo e deve ser identificada; quando a obturatória nasce só da ilíaca externa, o ramo é preservado.
 
 Riscos: **cutâneo femoral lateral** (identificar e proteger; alguns ressecam 2 cm para evitar neuroma, conversando antes com o paciente), **nervo femoral**, **vasos ilíacos externos** (trombose ou lesão da íntima por tração prolongada: palpar o pulso com frequência) e conteúdo do canal inguinal. Mesmo sendo anterior, a via pode lesar o **ciático** por posição ruim e tração excessiva ou por broca ou parafuso dirigido para trás. Hoje muitos usam só a janela lateral com o STOPPA, e residentes terminam a formação sem ver a ilioinguinal completa.
 
@@ -612,7 +618,7 @@ Via ilioinguinal (ou suas variações); **STOPPA** quando a superfície quadril�
 
 Proposta para evitar desvio de fraturas sem desvio, para o idoso em quem se aceita redução imperfeita, para fraturas simples pouco desviadas e para obesos mórbidos; também como complemento da via aberta e como etapa antes de uma artroplastia.
 
-- Os proponentes tratam assim toda fratura sem desvio, **exceto a com parede posterior instável**; mas só menos de 7% delas desviam e 94% mantêm o quadril em 10 anos, o que torna difícil recomendar cirurgia.
+- Os proponentes tratam assim toda fratura sem desvio, **exceto a com parede posterior instável**; mas só cerca de 7% delas desviam e 94% mantêm o quadril em 10 anos, o que torna difícil recomendar cirurgia.
 - Desviadas adequadas: **coluna anterior e transversa**; anterior com hemitransversa, T e ambas as colunas ficam para o **idoso com pouco desvio posterior**.
 - **Contraindicação:** parede posterior desviada ou instável. **Não se resolvem por via percutânea:** fragmentos impactados da cúpula e lesão da superfície quadrilátera.
 - Parafusos canulados de **6,5 mm ou mais**; cirurgia **dentro de 1 semana** se houver redução; quase sempre precisa de uma "mini-abertura" pela janela lateral. Incidências da radioscopia: outlet obturatriz e inlet ilíaca para o parafuso anterógrado da coluna anterior, e a **incidência em lágrima** (figura 51-89).
@@ -667,7 +673,7 @@ Todo paciente com fratura do acetábulo é de **alto risco** para tromboembolism
 
 ## Pós-operatório
 
-- Radiografias AP e oblíquas; a **TC pós-operatória** é o melhor exame da redução e se associa à sobrevida do quadril, mas seu uso de rotina é controverso (custo, radiação e pouca mudança de conduta); deve ser pedida se há dúvida sobre a redução. Arcos em C com imagem tipo TC permitem corrigir a redução ainda na sala.
+- Radiografias AP e oblíquas; a **TC pós-operatória** é o melhor exame da redução e se associa à sobrevida do quadril, mas seu uso de rotina é controverso (custo, radiação e pouca mudança de conduta); deve ser pedida se há dúvida sobre a redução. Na seção de resultados, o capítulo fecha a questão: pela preocupação com a **radiação** das TCs repetidas, a **TC pós-operatória de rotina não se justifica**; fica para uma necessidade clínica, como a suspeita de **perda da redução ou da fixação** que possa exigir reintervenção. Arcos em C com imagem tipo TC permitem corrigir a redução ainda na sala.
 - Sentar no primeiro dia e exercícios ativos depois; **sem precauções de artroplastia**, porque a fixação estabilizou o quadril.
 - **Carga parcial de toque de 10 a 15 kg por 8 a 12 semanas**; fortalecimento a partir de **6 semanas**.
 - Na via **iliofemoral estendida** (abdutores desinseridos): sem abdução ativa, sem adução ativa ou passiva e sem flexão além de 90 graus por **6 semanas**.
