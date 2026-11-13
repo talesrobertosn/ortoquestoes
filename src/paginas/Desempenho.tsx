@@ -33,6 +33,7 @@ import { Assuntos } from '../componentes/desempenho/Assuntos'
 import { ErrosComCerteza, ResumosIndicados, Retencao } from '../componentes/desempenho/Retencao'
 import { Calendario } from '../componentes/desempenho/Calendario'
 import { ResultadoCronograma } from '../componentes/desempenho/ResultadoCronograma'
+import { gerarExemplo, NOME_EXEMPLO } from '../dados/exemploDesempenho'
 import '../estilos/paginas/Desempenho.css'
 import '../estilos/paginas/DesempenhoAbas.css'
 
@@ -118,11 +119,19 @@ export function DadosLocais() {
   const { favoritos } = usarFavoritos()
   const { indice } = usarIndice()
   const { sessao: conta, status: statusSync, sincronizar } = usarConta()
-  const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
-  const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
+  const [historicoReal] = usarArmazenado<ResumoHistorico[]>('historico', [])
+  const [marcadasReais] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
+  // Desempenho de exemplo (14/11/2026): sem conta e sem respostas, ou com #/dados?exemplo=1, a página inteira mostra
+  // uma residente fictícia com notas boas (dados/exemploDesempenho.ts), sempre marcada como exemplo.
+  const pedidoExemplo = typeof window !== 'undefined' && /[?&]exemplo=1(&|$)/.test(window.location.hash)
+  const exemplo = pedidoExemplo || (!conta && Object.keys(marcadasReais).length === 0)
+  const dadosExemplo = useMemo(() => (exemplo && indice ? gerarExemplo(indice) : null), [exemplo, indice])
+  const marcadas = useMemo(() => dadosExemplo?.respondidas ?? (exemplo ? {} : marcadasReais), [dadosExemplo, exemplo, marcadasReais])
+  const historico = dadosExemplo?.historico ?? (exemplo ? [] : historicoReal)
   // Depois de "Começar do zero", nada anterior ao reinício entra nos gráficos,
   // mesmo que algum aparelho ainda guarde eventos antigos no histórico da questão.
-  const [reinicioEm] = usarArmazenado<number>('reinicio:em', 0)
+  const [reinicioSalvo] = usarArmazenado<number>('reinicio:em', 0)
+  const reinicioEm = exemplo ? 0 : reinicioSalvo
   const respondidas = Object.keys(marcadas).length
   const [reinicioPendente] = usarArmazenado<string | null>('reinicio:pendente', null)
   const bytes = tamanhoArmazenado()
@@ -213,9 +222,7 @@ export function DadosLocais() {
     return frases.join(' ')
   })()
 
-  // Sem conta e sem respostas: números de exemplo, marcados como exemplo, no lugar dos zeros.
-  const exemplo = !conta && respondidas === 0
-  const pct = exemplo ? 72 : percentualGeral === null ? null : Math.round(percentualGeral * 100)
+  const pct = percentualGeral === null ? null : Math.round(percentualGeral * 100)
   const streak = detalhes.d.streak
   const temConfianca = porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0
   // ---------- Abas (14/11/2026): evolução, assuntos, retenção, calendário, nota estimada, turma e resumos ----------
@@ -233,7 +240,8 @@ export function DadosLocais() {
     void carregarTurmaAcervo().then((m) => { if (vivo && m) definirTurmaMapa(m) }).catch(() => undefined)
     return () => { vivo = false }
   }, [premium])
-  const turma: ComparacaoTurma | null = useMemo(() => (turmaMapa ? compararTurma(ev, turmaMapa) : null), [turmaMapa, ev])
+  const turmaFonte = dadosExemplo?.turma ?? (exemplo ? null : turmaMapa)
+  const turma: ComparacaoTurma | null = useMemo(() => (turmaFonte ? compararTurma(ev, turmaFonte) : null), [turmaFonte, ev])
   const linhas = useMemo(() => (indice ? linhasAssuntos(indice, marcadas, ev) : { temas: [], assuntos: [] }), [indice, marcadas, ev])
   const retencao = useMemo(() => contarRetencao(marcadas), [marcadas])
   const certeza = useMemo(() => errosComCerteza(marcadas), [marcadas])
@@ -261,6 +269,8 @@ export function DadosLocais() {
   const diasCalendario = useMemo(() => calendario(eventosDe(marcadas, indice, reinicioEm || 0)), [marcadas, indice, reinicioEm])
   async function revisarIds(ids: string[]) {
     if (!ids.length) return
+    // No exemplo, os botões levam a criar a conta (as questões da Marina não são de ninguém).
+    if (exemplo) { navegar(conta ? '/treinar' : '/conta?modo=criar&voltar=%2Fdados'); return }
     const lista = ids.slice(0, 20)
     if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: true, limite: lista.length }, lista))) return
     navegar('/sessao')
@@ -277,17 +287,18 @@ export function DadosLocais() {
           <CenaObservatorio periodo={periodoArte} />
           <div className="ds-obs__cabeca">
             <p className="ds-obs__selo"><Icone nome="grafico" tamanho={13} /> Observatório da vila</p>
-            <h1 id="ds-titulo">{nome ? `${nome}, seu desempenho` : 'Seu desempenho'}</h1>
+            <h1 id="ds-titulo">{exemplo ? `${NOME_EXEMPLO}, residente de exemplo` : nome ? `${nome}, seu desempenho` : 'Seu desempenho'}</h1>
             {exemplo && <p className="ds-obs__exemplo">Exemplo com números fictícios</p>}
           </div>
           <div className="ds-obs__texto">
             {exemplo ? <>
-              <p>É assim que fica o seu desempenho: acerto por tema, ritmo da semana e onde você mais erra. Cada resposta entra aqui, do celular ou do computador.</p>
-              <a className="ds-obs__criar" href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis e ver o meu <Icone nome="direita" tamanho={16} /></a>
+              <p>A {NOME_EXEMPLO} é fictícia: cinco meses de estudo no Orto Questões, uma sessão quase todo dia. O seu desempenho fica assim, com as suas respostas, do celular ou do computador.</p>
+              {conta ? <a className="ds-obs__criar" href={href('/dados')}>Voltar ao meu desempenho <Icone nome="direita" tamanho={16} /></a>
+                : <a className="ds-obs__criar" href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis e ver o meu <Icone nome="direita" tamanho={16} /></a>}
             </> : <p>{mensagemDesempenho}</p>}
             {/* No topo só quando há algo a fazer (erro, offline, itens parados): "Sincronizando…"
                 piscando no herói a cada 5 segundos competia com o desempenho. */}
-            {mostrarSync && (
+            {mostrarSync && !exemplo && (
               <p className="ds-obs__sync" role="status">
                 <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
                 {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} ${statusSync.pendentes === 1 ? 'alteração aguardando' : 'alterações aguardando'} envio` : 'Progresso salvo neste dispositivo'}
@@ -306,29 +317,29 @@ export function DadosLocais() {
               <dd>
                 <span className="ds-placar__valor">{pct === null ? <span className="ds-placar__vazio">–</span> : <>{pct}<small>%</small></>}</span>
                 {pct !== null && <Medidor valor={pct} rotulo={`${pct}% de acerto ${periodo.tipo === 'tudo' ? 'no total' : 'no período'}`} />}
-                <span className="ds-placar__apoio ds-num">{exemplo ? '893 certas em 1.240 respostas de exemplo' : totalContadas ? `${n(totalCertas)} certas em ${n(totalContadas)} ${totalContadas === 1 ? 'resposta' : 'respostas'}` : 'Sem respostas ainda. O acerto conta cada resposta de questão com gabarito.'}</span>
+                <span className="ds-placar__apoio ds-num">{totalContadas ? `${n(totalCertas)} certas em ${n(totalContadas)} ${totalContadas === 1 ? 'resposta' : 'respostas'}` : 'Sem respostas ainda. O acerto conta cada resposta de questão com gabarito.'}</span>
               </dd>
             </div>
             <div className="ds-placar__item">
               <dt>{periodo.tipo === 'tudo' ? 'Questões respondidas' : 'Questões no período'}</dt>
               <dd>
-                <span className="ds-placar__valor">{exemplo ? '1.240' : n(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo)}{minhaConquista && !exemplo && <span className="ds-placar__medalha"><Medalha conquista={minhaConquista} tamanho={24} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</span>
+                <span className="ds-placar__valor">{n(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo)}{minhaConquista && !exemplo && <span className="ds-placar__medalha"><Medalha conquista={minhaConquista} tamanho={24} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</span>
                 <span className="ds-placar__apoio">questões diferentes; revisar soma respostas, não questões</span>
               </dd>
             </div>
             <div className="ds-placar__item">
               <dt>Sequência</dt>
               <dd>
-                <span className="ds-placar__valor">{exemplo ? 12 : streak.atual}<small>{(exemplo ? 12 : streak.atual) === 1 ? ' dia' : ' dias'}</small></span>
-                <span className="ds-placar__apoio">recorde de {exemplo ? 21 : streak.recorde} {(exemplo ? 21 : streak.recorde) === 1 ? 'dia' : 'dias'}{periodo.tipo !== 'tudo' ? ' · conta sempre o total' : ''}</span>
+                <span className="ds-placar__valor">{streak.atual}<small>{streak.atual === 1 ? ' dia' : ' dias'}</small></span>
+                <span className="ds-placar__apoio">recorde de {streak.recorde} {streak.recorde === 1 ? 'dia' : 'dias'}{periodo.tipo !== 'tudo' ? ' · conta sempre o total' : ''}</span>
               </dd>
             </div>
           </dl>
           <div className="ds-obs__apoio">
             <dl className="ds-obs__extras">
-              <div><dt>{periodo.tipo === 'tudo' ? 'Sessões' : 'Sessões no período'}</dt><dd className="ds-num">{exemplo ? 58 : n(periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo)}</dd></div>
-              <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd className="ds-num"><a href={href('/erros')} aria-label={`${exemplo ? 347 : errosTotais} erros: abrir o caderno de erros`}>{exemplo ? 347 : n(errosTotais)}</a></dd></div>
-              <div><dt>Favoritas</dt><dd className="ds-num"><a href={href('/favoritas')} aria-label={`${exemplo ? 23 : favoritos.length} favoritas: abrir`}>{exemplo ? 23 : n(favoritos.length)}</a></dd></div>
+              <div><dt>{periodo.tipo === 'tudo' ? 'Sessões' : 'Sessões no período'}</dt><dd className="ds-num">{n(periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo)}</dd></div>
+              <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd className="ds-num"><a href={href('/erros')} aria-label={`${errosTotais} erros: abrir o caderno de erros`}>{n(errosTotais)}</a></dd></div>
+              <div><dt>Favoritas</dt><dd className="ds-num"><a href={href('/favoritas')} aria-label={`${exemplo ? 31 : favoritos.length} favoritas: abrir`}>{exemplo ? 31 : n(favoritos.length)}</a></dd></div>
             </dl>
             {proximaConquistaAlvo && !exemplo && <a className="ds-obs__conquista" href={href('/ranking')}><Icone nome="medalha" tamanho={15} /> Faltam {numero(proximaConquistaAlvo.minimo - respondidas)} {proximaConquistaAlvo.minimo - respondidas === 1 ? 'questão' : 'questões'} para {proximaConquistaAlvo.rotulo}</a>}
           </div>
@@ -336,7 +347,7 @@ export function DadosLocais() {
       </section>
 
       {/* Nota estimada em destaque (Tales, 14/11/2026), logo abaixo do placar. */}
-      {!exemplo && <NotaEstimadaCartao nota={nota} base={primeirasN} turma={turma} resumos={resumoPorTema} />}
+      <NotaEstimadaCartao nota={nota} base={primeirasN} turma={turma} resumos={resumoPorTema} exemplo={exemplo} />
 
       {/* Filtro único, acima de tudo o que ele recorta. */}
       <section className="ds-periodo" aria-label="Período do desempenho">
@@ -362,13 +373,16 @@ export function DadosLocais() {
         </div>
       </section>
 
-      {!conta && <p className="aviso-ia">Crie uma conta gratuita ({fraseGratis('curto')}) para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
+      {!conta && !exemplo && <p className="aviso-ia">Crie uma conta gratuita ({fraseGratis('curto')}) para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
       {conta && !armazenamentoDisponivel() && (
         <div className="estado">
           <p className="estado__titulo">Este navegador está com o armazenamento bloqueado.</p>
           <p>O site funciona normalmente, mas o progresso vale só até você fechar a aba. Aba anônima e bloqueio de cookies costumam ser a causa.</p>
         </div>
       )}
+
+      {exemplo && <p className="da-exemplo" role="note"><Icone nome="olho" tamanho={16} /> <span><b>Exemplo com dados fictícios.</b> Tudo o que está abaixo é da {NOME_EXEMPLO}; os botões levam {conta ? 'ao seu treino' : 'a criar a sua conta'}.</span>
+        {conta ? <a href={href('/dados')}>Ver o meu</a> : <a href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis</a>}</p>}
 
       {/* ---------- Abas (14/11/2026): cada uma responde uma pergunta ---------- */}
       <nav className="da-abas" aria-label="Partes do desempenho">
@@ -384,7 +398,7 @@ export function DadosLocais() {
       {aba === 'geral' && <div className="da-painel" role="tabpanel" id="da-painel-geral" aria-labelledby="da-aba-geral">
         <DetalhesNumeros detalhes={detalhes} />
         <Evolucao eventos={ev} />
-        <ResultadoCronograma indice={indice} respondidas={marcadas} eventos={ev} />
+        <ResultadoCronograma indice={indice} respondidas={marcadas} eventos={ev} planoExemplo={dadosExemplo?.plano} />
         {temConfianca && <ErrosComCerteza ids={certeza} porConfianca={porConfianca} onRevisar={() => void revisarIds(certeza)} />}
       {/* ---------- O que fazer agora ---------- */}
         <section className="ds-capitulo" aria-labelledby="ds-cap-agora">
@@ -422,7 +436,7 @@ export function DadosLocais() {
               <span className="ds-moeda" aria-hidden="true">{(temaFragil && temDestaques ? 1 : 0) + (incertas > 0 ? 1 : 0) + 1}</span>
               <div>
                 <strong>Abrir o caderno de erros</strong>
-                <span className="ds-num">{numero(exemplo ? 347 : errosTotais)} {(exemplo ? 347 : errosTotais) === 1 ? 'erro' : 'erros'} {periodo.tipo === 'tudo' ? 'guardados' : 'no período'}, cada um com o comentário que explica.</span>
+                <span className="ds-num">{numero(errosTotais)} {errosTotais === 1 ? 'erro' : 'erros'} {periodo.tipo === 'tudo' ? 'guardados' : 'no período'}, cada um com o comentário que explica.</span>
               </div>
               <a className="ds-passo__acao" href={href('/erros')}>Abrir <Icone nome="direita" tamanho={16} /></a>
             </li>}
@@ -441,6 +455,7 @@ export function DadosLocais() {
           </a>
         </div>
         {!exemplo && <AtalhoFlashcards tipo="desempenho" />}
+        {exemplo && <ConviteExemplo conta={!!conta} />}
       </section>
       </div>}
 
@@ -462,9 +477,9 @@ export function DadosLocais() {
         <DetalhesDiaSemana detalhes={detalhes} />
       </div>}
 
-      {conta && <p className="meta ds-guardado">Seu progresso fica salvo e sincronizado com a sua conta ({(bytes / 1024).toFixed(1)} kB neste perfil). <a href={href('/conta')}>Minha conta</a></p>}
+      {conta && !exemplo && <p className="meta ds-guardado">Seu progresso fica salvo e sincronizado com a sua conta ({(bytes / 1024).toFixed(1)} kB neste perfil). <a href={href('/conta')}>Minha conta</a></p>}
 
-      <BackupProgresso />
+      {!exemplo && <BackupProgresso />}
 
       {/* O reinício está sendo refeito: o bloco só aparece se houver um reinício pendente de sincronizar. */}
       {conta && reinicioPendente && <section className="zona-risco cartao__corpo empilha ds-risco">
@@ -478,5 +493,19 @@ export function DadosLocais() {
         </div>
       </section>}
     </article>
+  )
+}
+
+/** Fim da página de exemplo: o convite, com o que a pessoa ganha ao criar a conta. */
+function ConviteExemplo({ conta }: { conta: boolean }) {
+  return (
+    <aside className="da-convite" aria-labelledby="da-convite-titulo">
+      <div>
+        <p className="da-convite__selo"><Icone nome="estrela" tamanho={14} /> O seu pode ficar assim</p>
+        <h3 id="da-convite-titulo">{conta ? 'Volte ao seu desempenho e compare' : 'Crie a sua conta e veja o seu desempenho de verdade'}</h3>
+        <p>Nota estimada na prova, evolução semana a semana, os temas que mais caem e onde você erra, o que já fixou e os resumos certos para os seus erros. Grátis para começar.</p>
+      </div>
+      <a className="botao botao--ouro botao--grande" href={href(conta ? '/dados' : '/conta?modo=criar&voltar=%2Fdados')}>{conta ? 'Ver o meu desempenho' : 'Criar conta grátis'} <Icone nome="direita" tamanho={18} /></a>
+    </aside>
   )
 }

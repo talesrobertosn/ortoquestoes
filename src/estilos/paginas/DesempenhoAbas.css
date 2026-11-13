@@ -280,6 +280,23 @@
 .rc--convite .botao { justify-self: start; }
 @media (max-width: 56rem) { .rc__grade { grid-template-columns: 1fr 1fr; } }
 
+/* ---------- Desempenho de exemplo ---------- */
+.ne__vazia-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.2rem; }
+.ne__ver-exemplo { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; color: var(--ne-ouro-2); font-weight: 700; text-decoration: none; }
+.ne__ver-exemplo:hover { text-decoration: underline; }
+.da-exemplo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin: 0; padding: 0.75rem 1rem; border-radius: 14px;
+  background: color-mix(in srgb, var(--ouro) 12%, var(--superficie)); box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--ouro) 45%, transparent) inset; color: var(--texto); font-size: var(--meta); }
+.da-exemplo > svg { color: var(--ouro-texto, var(--ouro)); flex: none; }
+.da-exemplo > span { flex: 1 1 18rem; }
+.da-exemplo a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 1rem; border-radius: 999px; background: var(--ouro); color: #2a1a06; font-weight: 800; text-decoration: none; }
+.da-convite { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--e-4); padding: clamp(1.2rem, 3vw, 1.8rem); border-radius: 20px;
+  background: radial-gradient(40rem 14rem at 0% 0%, rgba(242, 196, 95, 0.25), transparent 60%), linear-gradient(160deg, #13201d, #0d1514 70%, #120f0a); color: #fff7e4;
+  box-shadow: 0 0 0 1px rgba(242, 196, 95, 0.35) inset, var(--sombra-folha); }
+.da-convite h3 { margin: 0.3rem 0 0; color: #fff7e4; font-size: clamp(1.2rem, 1rem + 1vw, 1.6rem); text-wrap: balance; }
+.da-convite p { margin: 0.4rem 0 0; color: #d9ccae; max-width: 60ch; }
+.da-convite__selo { display: inline-flex; align-items: center; gap: 0.35rem; color: #f2c45f !important; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+@media (max-width: 40rem) { .da-convite { grid-template-columns: 1fr; } .da-convite .botao { justify-self: stretch; justify-content: center; } }
+
 @media (prefers-reduced-motion: reduce) {
   .ne__lista li, .ri__livro, .da-painel { animation: none; }
   .ri__livro, .rt__barra i { transition: none; }

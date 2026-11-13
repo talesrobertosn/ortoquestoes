@@ -37,7 +37,10 @@ export function NotaEstimadaCartao({ nota, base, turma, resumos, exemplo = false
         <div className="ne__progresso" role="img" aria-label={`${base} de ${MINIMO_NOTA} questões novas`}>
           <span style={{ width: `${Math.min(100, (base / MINIMO_NOTA) * 100)}%` }} />
         </div>
-        <a className="botao botao--principal" href={href('/treinar?situacao=naoRespondidas&limite=10')}>Fazer 10 questões novas <Icone nome="direita" tamanho={16} /></a>
+        <span className="ne__vazia-acoes">
+          <a className="botao botao--principal" href={href('/treinar?situacao=naoRespondidas&limite=10')}>Fazer 10 questões novas <Icone nome="direita" tamanho={16} /></a>
+          <a className="ne__ver-exemplo" href={href('/dados?exemplo=1')}>Ver um exemplo de desempenho <Icone nome="olho" tamanho={15} /></a>
+        </span>
       </section>
     )
   }

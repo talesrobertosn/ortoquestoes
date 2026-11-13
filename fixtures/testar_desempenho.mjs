@@ -1,7 +1,7 @@
 // Página de Desempenho (14/11/2026): definições de primeira vez, retenção, margem, nota estimada, turma, resumos e calendário.
 import assert from 'node:assert/strict'
 import { build } from 'esbuild'
-import { mkdtemp, rm } from 'node:fs/promises'
+import { mkdtemp, readFile, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -74,7 +74,21 @@ try {
   assert.equal(cal.reduce((n, x) => n + x.n, 0), ev.length)
   const nivel = d.niveisCalendario(cal)
   assert.equal(nivel(0), 0); assert.ok(nivel(1000) === 4)
-  console.log('desempenho: retenção, margem, primeira vez, nota estimada, evolução, turma, assuntos, resumos e calendário conferidos')
+  // Desempenho de exemplo (14/11/2026): a residente fictícia tem notas boas e é sempre a mesma.
+  const saidaEx = join(pasta, 'ex.mjs')
+  await build({ entryPoints: ['src/dados/exemploDesempenho.ts'], outfile: saidaEx, bundle: true, platform: 'node', format: 'esm', logLevel: 'error' })
+  const ex = await import(pathToFileURL(saidaEx))
+  const acervo = JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))
+  const marina = ex.gerarExemplo(acervo)
+  const evM = d.eventosDe(marina.respondidas, acervo)
+  const notaM = d.notaEstimada(evM)
+  assert.ok(notaM && notaM.nota >= 74 && notaM.nota <= 88, `nota do exemplo fora do esperado: ${notaM?.nota}`)
+  assert.ok(Object.keys(marina.respondidas).length > 1500, 'o exemplo tem meses de estudo')
+  const ret = d.contarRetencao(marina.respondidas).conta
+  assert.ok(ret.consolidada > ret.erro_novo, 'o exemplo consolida mais do que acumula erro')
+  assert.ok(d.errosComCerteza(marina.respondidas).length > 0, 'o exemplo mostra o alarme de erro com certeza')
+  assert.equal(Object.keys(ex.gerarExemplo(JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))).respondidas).length, Object.keys(marina.respondidas).length, 'sempre o mesmo')
+  console.log('desempenho: retenção, margem, primeira vez, nota estimada, evolução, turma, assuntos, resumos e calendário conferidos; exemplo com nota ' + notaM.nota)
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
