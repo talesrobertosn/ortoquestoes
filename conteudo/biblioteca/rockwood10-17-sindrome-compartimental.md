@@ -1,6 +1,6 @@
 ---
 id: rockwood10-17-sindrome-compartimental
-versao: 4
+versao: 5
 titulo: Síndrome compartimental aguda
 especialidade: trauma
 acesso: gratis
@@ -225,7 +225,7 @@ Quatro compartimentos: **anterior, lateral, posterior superficial e posterior pr
 | Posterior profundo | Tibial posterior, flexores longos dos dedos e do hálux, nervo tibial posterior | Extensão do tornozelo e dos dedos e eversão | Planta do pé | Flexão dos dedos e do tornozelo, inversão |
 !fim
 
-!figura 17-8
+!figura 17-8 imagem=trauma/rwa10-17-8.jpeg
 Corte transversal da perna com os quatro compartimentos (anterior, lateral, posterior superficial e posterior profundo) e as setas das duas incisões da fasciotomia.
 !fim
 
