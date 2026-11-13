@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 6 · Compartment Syndrome in Children
 autores: Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic
-fonte: Livro conferido localmente em 28/10/2026, capítulo 6.
+fonte: Livro conferido localmente em 28/10/2026, capítulo 6. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
 subtemas: Outras fraturas na criança
 resumo: Três As (ansiedade, agitação, mais analgésico) no lugar dos seis Ps; pressão basal mais alta na criança e decisão clínica seriada; supracondiliana com lesão do mediano, cotovelo flutuante e MONTEGGIA operado; flexor profundo do antebraço; perna (13 anos, 50 kg, hastes flexíveis, quatro compartimentos); mão, coxa e pé; sem fratura, do esforço e neonatal; VOLKMANN de TSUGE e tratamento; prognóstico.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 6 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
+Este resumo é inspirado no capítulo 6 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Haleh Badkoobehi, John M. Flynn e Milan V. Stevanovic, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
 
 A banca cobra a síndrome compartimental da criança pelo cotovelo: a **supracondiliana** de risco e a **contratura de VOLKMANN**. O capítulo acrescenta o diagnóstico próprio da criança (três As, pressão basal mais alta), a técnica de cada segmento e o prognóstico.
 
