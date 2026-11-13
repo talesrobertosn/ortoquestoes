@@ -53,7 +53,7 @@ O **colateral medial** tem um feixe **anterior** e um **posterior**. O **anterio
 
 O capítulo faz uma ressalva que ajuda a entender a clínica: o medial só é o ligamento mais importante para quem carrega o cotovelo em valgo o tempo todo, como o **arremessador**. Nas atividades do dia a dia, o cotovelo sofre mais **varo** do que valgo; por isso a instabilidade residual depois de uma luxação costuma vir do **lado lateral** mal cicatrizado.
 
-!questoes central=ombro-cotovelo-0025,ombro-cotovelo-0032,ombro-cotovelo-0257,ombro-cotovelo-0121 treino=trauma-1409
+!questoes central=ombro-cotovelo-0025,ombro-cotovelo-0032,ombro-cotovelo-0257,ombro-cotovelo-0121 treino=trauma-1409,ombro-cotovelo-0651
 conceito: O feixe anterior do colateral medial vai do epicôndilo medial ao tubérculo sublime e é o principal restritor do valgo.
 como: Caiu como pergunta direta (valgo a 90°), como anatomia (o que se insere no tubérculo sublime) e como figura com números da face medial, pedindo o feixe mais importante.
 armadilha: Cabeça do rádio: segura o valgo, mas como estabilizadora secundária; ganha importância quando o medial está roto.
@@ -174,7 +174,7 @@ A reabilitação depende do que ficou lesado: com o **medial íntegro e o latera
 
 Quando o colateral lateral não cicatriza, o cotovelo fica com **instabilidade rotatória posterolateral**: rádio e ulna giram juntos em supinação sobre o úmero e a cabeça do rádio subluxa para trás do capítulo. É a forma **mais comum de instabilidade crônica** do cotovelo. O capítulo a cita como consequência de uma luxação com cura deficiente do colateral lateral e de fraturas da cabeça do rádio. A reconstrução do colateral lateral com **enxerto de tendão** é preferida, e funciona melhor quando há uma cabeça do rádio (nativa ou prótese) para tensionar o enxerto.
 
-!questoes central=ombro-cotovelo-0096,ombro-cotovelo-0536 relacionadas=ombro-cotovelo-0382,ombro-cotovelo-0513
+!questoes central=ombro-cotovelo-0096,ombro-cotovelo-0536 relacionadas=ombro-cotovelo-0382,ombro-cotovelo-0513 treino=ombro-cotovelo-0650
 conceito: A instabilidade crônica mais comum é a posterolateral, por insuficiência do colateral ulnar lateral; ela aparece com carga axial, valgo e supinação.
 como: O ENARE R4 2025 contou a história típica (luxação imobilizada 6 semanas, instabilidade residual) e pediu a manobra: carga axial com valgo e rotação externa (supinação).
 armadilha: Varo e supinação: mistura o mecanismo posteromedial (varo) com a supinação.
@@ -411,7 +411,7 @@ A sutura da cápsula anterior também é feita pela via lateral. O Green (7ª ed
 
 > Na prova: **coronoide, cabeça do rádio, colateral lateral e, se precisar, colateral medial.** E um cotovelo **rígido e estável** é preferível a um frouxo e incongruente.
 
-!questoes central=trauma-0205,trauma-0318,trauma-1295 relacionadas=trauma-0684,ombro-cotovelo-0246 treino=trauma-1422,trauma-1424,trauma-1425
+!questoes central=trauma-0205,trauma-0318,trauma-1295 relacionadas=trauma-0684,ombro-cotovelo-0246 treino=trauma-1422,trauma-1424,trauma-1425,ombro-cotovelo-0649
 conceito: Na tríade terrível, repara-se o coronoide, depois a cabeça do rádio, depois o colateral lateral (em geral avulsionado da origem) e só então, se houver instabilidade, o medial.
 como: O TEOT 2022 pediu a ordem num caso com Mason 3 e Regan-Morrey 2; o TEOT 2023, o tipo de lesão do colateral lateral (avulsão na origem); o SBOT-SP, o que fazer depois de coronoide e cabeça (lateral, e medial se persistir).
 armadilha: Medial antes do lateral: o lateral é o que mais rompe e é reparado primeiro.

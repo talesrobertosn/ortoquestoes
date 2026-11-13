@@ -368,7 +368,7 @@ O deslocamento real é sempre a **soma de dois vetores**: o "vertical" da outlet
 Direção do feixe nas incidências de entrada (inlet) e de saída (outlet) do anel pélvico.
 !fim
 
-!questoes central=quadril-0516 relacionadas=quadril-0535 treino=trauma-1494
+!questoes central=quadril-0516 relacionadas=quadril-0535,trauma-1730 treino=trauma-1494
 conceito: Inlet é feixe caudal (ideal cerca de 25 graus) e mostra rotação e translação anteroposterior; outlet é feixe cefálico (ideal cerca de 60 graus) e mostra o sacro, os forames e a altura das hemipelves; as duas são feitas inclinando o feixe, sem mover o paciente.
 como: O ENARE R4 2025 perguntou a incidência que mais contribui para o diagnóstico do desvio vertical da hemipelve (outlet), com inlet, AP, perfil do sacro e oblíqua do quadril como distratores. O R4 de Coluna da SES-DF 2022 pediu para julgar se inlet e outlet são de fácil realização por não exigirem mobilizar o paciente (certo).
 armadilha: Inlet para o desvio vertical: a inlet olha a pelve de cima e mostra rotação e translação anteroposterior.
