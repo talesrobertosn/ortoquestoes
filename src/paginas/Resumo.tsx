@@ -306,7 +306,7 @@ export function Resumo() {
     URL.revokeObjectURL(url)
   }
 
-  const mostrarBatalha = !emAndamento && !sessao.nacional && pct !== null && !!batalha
+  const mostrarBatalha = sessao.origem !== 'revisao' && !emAndamento && !sessao.nacional && pct !== null && !!batalha
   const metaCumprida = sessao.origem === 'cronograma' && !!cronograma.calculo && cronograma.calculo.metaDiaria > 0 && cronograma.calculo.feitasHoje >= cronograma.calculo.metaDiaria
   const quando = new Date(fim).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' })
   const hora = new Date(fim).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
