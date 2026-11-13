@@ -1,6 +1,6 @@
 ---
 id: rockwood10-40-cotovelo-cabeca-radio
-versao: 4
+versao: 5
 titulo: Luxação do cotovelo, cabeça do rádio e tríade terrível
 especialidade: trauma
 acesso: gratis
@@ -136,7 +136,7 @@ armadilha: Reconstruir o colateral ulnar lateral: é tratamento da instabilidade
 
 ## Como evolui
 
-As luxações simples não são tão benignas quanto parecem. Numa série com 110 pacientes acompanhados por 7 anos, **56%** relataram rigidez residual subjetiva, **62%** dor residual e **8%** instabilidade, sem ninguém precisar de cirurgia por isso. Em outra, 60% tinham sintomas, com contratura em flexão em 15%. A imobilização prolongada se associou a mais contratura e mais dor. A ossificação heterotópica sintomática é **incomum**, mas fica bem mais provável com **trauma de crânio** associado (aparece sobretudo nos colaterais e em suas inserções).
+As luxações simples não são tão benignas quanto parecem. Numa série com 110 pacientes acompanhados por 7 anos, **56%** relataram rigidez residual subjetiva, **62%** dor residual e **8%** instabilidade, sem ninguém precisar de cirurgia por isso. É a série de ANAKWE; o Campbell (15ª ed., cap. 52, p. 2229) cita o mesmo estudo com **60%** de rigidez residual (perda da extensão) e dor, e os mesmos 8% de instabilidade funcional. Em outra série do Rockwood, 60% tinham sintomas, com contratura em flexão em 15%. A imobilização prolongada se associou a mais contratura e mais dor. A ossificação heterotópica sintomática é **incomum**, mas fica bem mais provável com **trauma de crânio** associado (aparece sobretudo nos colaterais e em suas inserções).
 
 !questoes central=trauma-0775
 conceito: A complicação mais comum da luxação simples é a rigidez, e a imobilização prolongada é o que mais a provoca.
@@ -172,10 +172,10 @@ A reabilitação depende do que ficou lesado: com o **medial íntegro e o latera
 
 # Instabilidade rotatória posterolateral crônica {radar=confirmado}
 
-Quando o colateral lateral não cicatriza, o cotovelo fica com **instabilidade rotatória posterolateral**: rádio e ulna giram juntos em supinação sobre o úmero e a cabeça do rádio subluxa para trás do capítulo. É a forma **mais comum de instabilidade crônica** do cotovelo. O capítulo a cita como consequência de uma luxação com cura deficiente do colateral lateral e de fraturas da cabeça do rádio. A reconstrução do colateral lateral com **enxerto de tendão** é preferida, e funciona melhor quando há uma cabeça do rádio (nativa ou prótese) para tensionar o enxerto.
+Quando o colateral lateral não cicatriza, o cotovelo fica com **instabilidade rotatória posterolateral**: rádio e ulna giram juntos em supinação sobre o úmero e a cabeça do rádio subluxa para trás do capítulo. Depois de uma luxação traumática, quando a instabilidade persiste ou recorre, as **estruturas posterolaterais são as mais acometidas**, embora o lado medial também possa estar envolvido (Campbell, 15ª ed., cap. 52, p. 2229). O mesmo trecho lembra que, contando todas as causas, a forma de longe mais comum de instabilidade recorrente do cotovelo é a **instabilidade em valgo por desgaste do feixe anterior do colateral medial**, a do arremessador. O capítulo 40 do Rockwood cita a posterolateral como consequência de uma luxação com cura deficiente do colateral lateral e de fraturas da cabeça do rádio. A reconstrução do colateral lateral com **enxerto de tendão** é preferida, e funciona melhor quando há uma cabeça do rádio (nativa ou prótese) para tensionar o enxerto.
 
 !questoes central=ombro-cotovelo-0096,ombro-cotovelo-0536 relacionadas=ombro-cotovelo-0382,ombro-cotovelo-0513 treino=ombro-cotovelo-0650
-conceito: A instabilidade crônica mais comum é a posterolateral, por insuficiência do colateral ulnar lateral; ela aparece com carga axial, valgo e supinação.
+conceito: Depois da luxação traumática, a instabilidade crônica mais comum é a posterolateral, por insuficiência do colateral ulnar lateral; ela aparece com carga axial, valgo e supinação.
 como: O ENARE R4 2025 contou a história típica (luxação imobilizada 6 semanas, instabilidade residual) e pediu a manobra: carga axial com valgo e rotação externa (supinação).
 armadilha: Varo e supinação: mistura o mecanismo posteromedial (varo) com a supinação.
 !fim
@@ -388,6 +388,8 @@ A maioria é operada, porque a instabilidade impede a redução congruente e o m
 - a articulação fica **congruente** depois da redução;
 - há um **arco estável até 30° de flexão**.
 
+Esses quatro critérios são os da série de CHAN. O quadro de indicações do próprio capítulo é um pouco mais largo no coronoide: aceita, além do Regan-Morrey tipo I, os tipos **II e III sem desvio**; o que contraindica é o coronoide II ou III **desviado**, junto com redução não concêntrica e cabeça do rádio desviada bloqueando a rotação. A cabeça do rádio pode estar sem desvio ou desviada, desde que não bloqueie a rotação.
+
 Fragmento interposto e instabilidade residual indicam cirurgia. No tratamento sem cirurgia, tala a 90° por 7 a 10 dias, pronação na tala, braço longe do corpo e exercícios passivos proibidos (fazem varo), extensão completa em supinação só depois de 4 semanas e radiografia semanal.
 
 !questoes treino=trauma-1423
@@ -406,6 +408,8 @@ A cirurgia segue um roteiro sistemático, de dentro para fora:
 - testar de novo em pronação, neutro e supinação;
 - **colateral medial só se continuar instável** (via medial, entre as duas cabeças do flexor ulnar do carpo, protegendo o nervo ulnar);
 - se ainda instável, fixador externo estático, fixador interno articulado ou placa-ponte temporária.
+
+Nesse último degrau os livros divergem. O Rockwood prefere o **fixador externo estático** (no tratamento da luxação, os autores dizem que deixaram de usar o articulado) ou a **placa-ponte** temporária. O Campbell (15ª ed., cap. 62, p. 2809, princípios do tratamento da tríade terrível) ainda indica o **fixador externo articulado** como último recurso, quando o reparo convencional não dá estabilidade suficiente para o movimento precoce, e na técnica (p. 2811) oferece como alternativas reparar o medial, o fixador articulado ou o estabilizador interno.
 
 A sutura da cápsula anterior também é feita pela via lateral. O Green (7ª ed., cap. 22, p. 821) detalha: dois túneis da borda subcutânea da ulna até a base do coronoide, fio inabsorvível grosso (**n.º 2 ou n.º 5**) passado pela **cápsula anterior** ou pela inserção do braquial e trazido pelos túneis; a redução anatômica do fragmento não é necessária, o objetivo é devolver a inserção da cápsula à ulna. O fio só é **amarrado depois de tratar a cabeça do rádio** (a prótese), para não desfazer a fixação do coronoide.
 

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-44-carpo
-versao: 4
+versao: 5
 titulo: Fraturas e luxações do carpo
 especialidade: mao
 acesso: gratis
@@ -218,7 +218,7 @@ O **polo proximal** tem risco de pseudartrose até **7,5 vezes maior** no gesso 
 !questoes central=trauma-0810 relacionadas=mao-1319 treino=mao-1675,mao-1676,mao-2524,mao-2320
 conceito: A fratura do polo proximal se opera por via dorsal, com miniacesso e parafuso de compressão sem cabeça, porque é por trás que se alcança e se segura o fragmento pequeno.
 como: O Einstein 2026 contou a história típica (queda no futebol, polo proximal, ângulo escafossemilunar preservado) e pôs como distratores gesso longo e enxertos vascularizados de pseudartrose.
-alerta: Na USP-SP 2025 (mao-1319), o gabarito afirma que a não união ocorre em cerca de 10% a 15% de todas as fraturas do escafoide. O Rockwood fala em **até 10%**, bem menos nas sem desvio ou bem imobilizadas. As outras alternativas estão erradas pelo próprio livro: o polo proximal se opera por via **dorsal**, a flexão exigida pela via dorsal pode **desreduzir** a fratura instável e as radiografias iniciais deixam passar 30% a 40% (não 50%).
+alerta: Na USP-SP 2025 (mao-1319), o gabarito afirma que a não união ocorre em cerca de 10% a 15% de todas as fraturas do escafoide. É o número do Green 7 (cap. 16, p. 590: **10% a 15%** de todas as fraturas do escafoide); o Rockwood fala em **até 10%**, bem menos nas sem desvio ou bem imobilizadas. As outras alternativas estão erradas pelo próprio livro: o polo proximal se opera por via **dorsal**, a flexão exigida pela via dorsal pode **desreduzir** a fratura instável e as radiografias iniciais deixam passar 30% a 40% (não 50%).
 armadilha: Imobilização por 10 a 12 semanas: no polo proximal, o gesso tem risco de pseudartrose muito maior.
 armadilha: Enxerto vascularizado: é recurso de pseudartrose com necrose, não da fratura aguda.
 !fim
@@ -228,14 +228,14 @@ armadilha: Enxerto vascularizado: é recurso de pseudartrose com necrose, não d
 As duas vias dão o mesmo resultado na cintura aguda; o que muda é a técnica.
 
 - **Dorsal:** punho **fletido 30° a 45°**, ponto de entrada junto ao escafossemilunar, fio mirando a **ponta do polegar**. Vantagens: parafuso mais central, menos artrose escafotrapeziotrapezoide (ETT), melhor compra no polo proximal. Desvantagens: risco às estruturas dorsais, mais difícil reduzir o humpback e a **flexão pode desreduzir** a fratura instável.
-- **Volar:** punho **estendido e em desvio ulnar** (sobre um coxim ou com o polegar em tração), o que ajuda a reduzir e afasta o trapézio. Entrada **2 mm dorsal e logo radial ao ápice do tubérculo**, encostada no trapézio (às vezes através dele). Vantagens: imagem mais fácil, não flexiona o punho, **não há tendão no caminho**. Desvantagens: parafuso menos central e risco de artrose ETT, que ocorre em menos de 3% e quase nunca dá sintoma.
+- **Volar:** punho **estendido e em desvio ulnar** (sobre um coxim ou com o polegar em tração), o que ajuda a reduzir e afasta o trapézio. Entrada **2 mm dorsal e logo radial ao ápice do tubérculo**, encostada no trapézio (às vezes através dele). Vantagens: imagem mais fácil, não flexiona o punho e, na via percutânea, **risco mínimo às estruturas superficiais** (a desvantagem da dorsal é justamente o risco às estruturas dorsais, já que o miniacesso dorsal expõe os nervos sensitivos e os extensores do 2º ao 4º compartimentos). Desvantagens: parafuso menos central e risco de artrose ETT, que ocorre em menos de 3% e quase nunca dá sintoma.
 
-Em qualquer via: pelo menos quatro incidências (AP, perfil, oblíquas a 30°-45° em pronação e supinação), medir o fio e **subtrair 4 mm**, brocar mesmo com parafuso autoperfurante (para não afastar o traço) e fio antirrotatório se for instável. Parafusos de 20 a 22 mm costumam servir nos homens e de 18 a 20 mm nas mulheres. Biomecanicamente, só se sabe que parafuso maior é mais forte, que o canulado ajuda a centralizar, que o **eixo central** dá mais rigidez e que o parafuso **perpendicular ao traço** dá mais estabilidade.
+Em qualquer via: pelo menos quatro incidências (AP, perfil, oblíquas a 30°-45° em pronação e supinação), medir o fio e **subtrair 4 mm** (o Green 7, cap. 16, p. 602 e 603, fala em parafuso **4 a 5 mm menor** que o medido, para enterrar a cabeça e evitar a artrose escafotrapeziotrapezoide), brocar mesmo com parafuso autoperfurante (para não afastar o traço) e fio antirrotatório se for instável. Parafusos de 20 a 22 mm costumam servir nos homens e de 18 a 20 mm nas mulheres. Biomecanicamente, só se sabe que parafuso maior é mais forte, que o canulado ajuda a centralizar, que o **eixo central** dá mais rigidez e que o parafuso **perpendicular ao traço** dá mais estabilidade.
 
 Na via aberta volar, a incisão segue o **flexor radial do carpo**: abre-se a **bainha do tendão**, ele é afastado para ulnar, o ramo palmar superficial da artéria radial é afastado ou ligado e a cápsula é aberta preservando o radioescafocapitato.
 
 !questoes central=trauma-0808,mao-1530,trauma-0041 relacionadas=mao-1194 treino=mao-2222,mao-2047
-conceito: Na fixação do escafoide mede-se o fio e escolhe-se um parafuso 4 mm menor; a via volar tem a vantagem de não ter tendões no caminho e é feita pela bainha do flexor radial do carpo.
+conceito: Na fixação do escafoide mede-se o fio e escolhe-se um parafuso 4 mm menor; a via volar percutânea tem risco mínimo às estruturas superficiais, e a via volar aberta é feita pela bainha do flexor radial do carpo.
 como: O Einstein 2026 pediu quantos milímetros subtrair; a USP-SP 2026 pôs as desvantagens da via volar (centralização, polo proximal, desvio radial) como se fossem vantagens; o TARO 2018 pediu o plano do acesso. A questão da PUC-SP 2023 sobre a via volar não tem gabarito no acervo.
 armadilha: "Permite o eixo central": é a vantagem da via dorsal.
 armadilha: Desvio radial do punho: a via volar usa extensão com **desvio ulnar**, que reduz o traço e descobre o tubérculo.
@@ -262,7 +262,7 @@ armadilha: VISI: é o padrão da dissociação lunopiramidal.
 
 ## Pseudartrose: quem e por quê
 
-A pseudartrose chega a **10%** no geral e é muito menor nas fraturas sem desvio ou bem imobilizadas. As **desviadas chegam a 50%**; o polo proximal e o diagnóstico tardio também aumentam o risco.
+A pseudartrose chega a **10%** no geral pelo Rockwood; o Green 7 (cap. 16, p. 590) dá **10% a 15%** de todas as fraturas do escafoide. Ela é muito menor nas fraturas sem desvio ou bem imobilizadas. As **desviadas chegam a 50%**; o polo proximal e o diagnóstico tardio também aumentam o risco.
 
 !tabela Pseudartrose do escafoide pelo tipo de fratura e pelo tratamento (tabela 44-13)
 | Fratura | Sem cirurgia | Com cirurgia |
@@ -330,7 +330,7 @@ armadilha: Polo proximal por via volar com enxerto não estruturado: o polo prox
 
 O **ligamento interósseo escafossemilunar** tem forma de "C" e três partes. A **dorsal** é a mais grossa e forte (fibras transversais de 2 a 4 mm) e é a chave da estabilidade; a **palmar** é mais fina e oblíqua e segura a rotação; a **proximal (membranosa)** é fibrocartilagem, a mais larga, fina e fraca. O escafossemilunar é o **estabilizador primário**; o **escafotrapeziotrapezoide** e o **radioescafocapitato** são **secundários**; os ligamentos dorsais (radiocárpico dorsal e intercarpal dorsal) têm papel provavelmente terciário. O **septo cápsulo-escafossemilunar dorsal** (DCSS), confluência da cápsula dorsal, do intercarpal dorsal e do escafossemilunar, também é um estabilizador importante.
 
-A ruptura do escafossemilunar desacopla os dois ossos e o intervalo **alarga progressivamente com o tempo**; a deformidade estática depende da lesão dos estabilizadores secundários. Na cirurgia, o ligamento costuma estar **arrancado do escafoide e preso ao semilunar**; a desinserção do semilunar ou a ruptura oblíqua são raras.
+A ruptura do escafossemilunar desacopla os dois ossos e o intervalo **alarga progressivamente com o tempo**; a deformidade estática depende da lesão dos estabilizadores secundários. Na cirurgia, o ligamento costuma estar **arrancado do escafoide e preso ao semilunar**; para o Rockwood, a desinserção do semilunar ou a ruptura oblíqua são raras. O Green 7 (cap. 13, p. 440) traz os números de ANDERSSON para as rupturas do escafossemilunar dorsal: **avulsão do escafoide em 42%**, avulsão do semilunar em 18%, ruptura no meio da substância em 20% e ruptura parcial com alongamento em 22%.
 
 !questoes central=mao-0013 relacionadas=mao-0620,mao-0646,mao-1318,mao-1305 treino=mao-1670,mao-2477,mao-1954
 conceito: A dissociação escafossemilunar acontece em hiperextensão, desvio ulnar e supinação intercarpal; o ligamento costuma se soltar do escafoide e a porção dorsal é a mais forte.
@@ -402,7 +402,7 @@ Garcia-Elias propôs cinco perguntas: o escafossemilunar dorsal está íntegro? 
 | VI | Desalinhada, irredutível e com artrose (SLAC) | Denervação, estiloidectomia, escafoidectomia com artrodese mediocárpica, carpectomia, artroplastia ou artrodese total |
 !fim
 
-A tabela original de Andersson e Garcia-Elias (44-17) tem sete estágios e separa a translação ulnar (índice de descobertura do semilunar anormal, estágio V), a deformidade irredutível (VI) e a cartilagem lesada (VII); a tabela de tratamento (44-19) não tem o passo da translação ulnar e chama de V a deformidade irredutível e de VI a que já tem artrose. O que a prova pede é o encaixe dos primeiros quatro.
+A tabela original de Andersson e Garcia-Elias (44-17) tem sete estágios e separa a translação ulnar (índice de descobertura do semilunar anormal, estágio V), a deformidade irredutível (VI) e a cartilagem lesada (VII); a tabela de tratamento (44-19) não tem o passo da translação ulnar e chama de V a deformidade irredutível e de VI a que já tem artrose. O Green 7 (cap. 13, p. 438, Tabela 13.3) traz a mesma escada em sete estágios, a partir de **seis perguntas** (a sexta é se o alinhamento radiolunar se mantém): no **estágio V** o semilunar já está **desalinhado, mas a deformidade ainda é redutível**; no VI ela é irredutível com cartilagem normal; no VII a cartilagem está lesada. No **estágio II** (completa e reparável), o escafoide não está fletido e o **ângulo radioescafoide é normal**, com pouco ou nenhum espaço escafossemilunar (p. 440). O que a prova pede é o encaixe dos primeiros quatro.
 
 !questoes central=mao-0240,mao-0777 relacionadas=mao-1209 treino=mao-1687,mao-1783,mao-2290,mao-1951,mao-2209
 conceito: No Garcia-Elias, a dissociação irreparável com subluxação rotatória redutível do escafoide e cartilagem íntegra é o estágio IV e pede reconstrução com enxerto, como a tenodese de três ligamentos.
@@ -413,18 +413,20 @@ armadilha: Quatro cantos: é salvamento das fases irredutíveis ou com artrose.
 
 ## Quando a lesão é aguda, subaguda ou crônica
 
-Não há consenso; o capítulo sugere **aguda até 4 a 6 semanas**, **subaguda de 4-6 a 24 semanas** e **crônica depois de 6 meses**. A crônica (mais de 6 meses) tem ligamento provavelmente irreparável e corresponde aos estágios III e IV.
+Não há consenso; o capítulo sugere **aguda até 4 a 6 semanas**, **subaguda de 4-6 a 24 semanas** e **crônica depois de 6 meses**. A crônica (mais de 6 meses) tem ligamento provavelmente irreparável e corresponde aos estágios III e IV. O Green 7 (cap. 13, p. 433), na classificação de LARSEN, usa cortes bem mais curtos: **aguda quando diagnosticada em até 1 semana**, quando o potencial de cicatrização do ligamento é o melhor; **subaguda entre 1 e 6 semanas**, ainda facilmente redutível, mas com ligamento retraído ou necrosado; **crônica depois de 6 semanas**.
 
 !questoes central=mao-0448
-conceito: O capítulo considera crônica a dissociação escafossemilunar com mais de 6 meses; até 4 a 6 semanas ela é aguda e, entre esses limites, subaguda.
-alerta: O Einstein 2026 deu **6 semanas** como tempo mínimo para considerar a dissociação crônica. No Rockwood, 4 a 6 semanas é o fim da fase **aguda**; a crônica começa depois de **6 meses**, com a subaguda no meio. As 6 semanas do gabarito coincidem com o corte entre aguda e subaguda do livro.
+conceito: Pela classificação de LARSEN no Green 7, a dissociação escafossemilunar é crônica depois de 6 semanas; o Rockwood usa cortes mais longos (crônica depois de 6 meses).
+alerta: O Einstein 2026 deu **6 semanas** como tempo mínimo para considerar a dissociação crônica. O gabarito segue o Green 7 (cap. 13, p. 433, LARSEN: aguda até 1 semana, subaguda de 1 a 6 semanas, crônica depois de 6 semanas). No Rockwood, 4 a 6 semanas é o fim da fase **aguda** e a crônica começa depois de **6 meses**, com a subaguda no meio.
 !fim
 
 ## Tratamento da lesão aguda e subaguda
 
 A cirurgia é indicada na lesão pré-dinâmica (desbridamento artroscópico, sem reparo) e na **instabilidade dinâmica com menos de 6 semanas**. Contraindicações relativas: artrose do carpo, infecção ou ferida, idade em que algo menor resolve, dor complexa regional, artropatia inflamatória e artrofibrose. Na pré-dinâmica, vale tentar órtese e fisioterapia, porque esperar não fecha nenhuma porta; a radiofrequência em lesões Geissler I e II deu alívio em 14 de 16 pacientes.
 
-Na lesão aguda completa, o reparo direto tem resultado melhor que a reconstrução. Os autores preferem a **artroscopia** (reparo dorsal com capsulodese pelo DCSS, ou volar por um portal volar radial). Na via aberta: acesso dorsal sobre o 3º metacarpo e Lister, capsulotomia que **poupa os ligamentos** (divisão do radiocárpico dorsal e do intercarpal dorsal em retalho triangular de Berger, ou janelas), reavivamento do escafoide, **âncoras no escafoide** com sutura oblíqua, redução com joysticks, **fios escafossemilunar e escafocapitato** (de 0,045 polegada), reforço com ligamentoplastia de Mayo (metade proximal do intercarpal dorsal levada ao semilunar) e reparo firme da cápsula; gesso por 8 a 12 semanas até tirar os fios. Com diástase de até 3 mm a mais que o outro lado e menos de 3 meses de lesão, a redução se manteve em 85%.
+Na lesão aguda completa, o reparo direto tem resultado melhor que a reconstrução. Os autores preferem a **artroscopia** (reparo dorsal com capsulodese pelo DCSS, ou volar por um portal volar radial). Na via aberta: acesso dorsal sobre o 3º metacarpo e Lister, capsulotomia que **poupa os ligamentos** (divisão do radiocárpico dorsal e do intercarpal dorsal em retalho triangular de Berger, ou janelas), reavivamento do escafoide, **âncoras no escafoide** com sutura oblíqua, redução com joysticks, **fios escafossemilunar e escafocapitato** (de 0,045 polegada), reforço com ligamentoplastia de Mayo (metade proximal do intercarpal dorsal levada ao semilunar) e reparo firme da cápsula; gesso por 8 a 12 semanas até tirar os fios.
+
+Quando há lesão parcial ou completa com achado radiográfico, o intervalo precisa ser reduzido, e uma opção é a **fixação percutânea isolada**, sob radioscopia ou artroscopia: um fio **escafossemilunar** e outro **escafocapitato**, às vezes precedidos de um fio radiolunar para deixar o semilunar neutro no perfil, com fios nos dois ossos servindo de joysticks. Essa fixação manteve a redução em **85%** quando o intervalo era até **3 mm maior que o do outro punho** e a lesão tinha **menos de 3 meses**.
 
 Na subaguda, o ligamento pode ser irreparável sem desalinhamento (estágio III): capsulodese de **Blatt** (retalho dorsal de base proximal fixado no polo distal do escafoide; prende o escafoide em extensão e tira flexão), **Szabo** (porção distal do intercarpal dorsal ao polo distal do escafoide, sem prender proximalmente), **Mayo** ou **osso-ligamento-osso** (geralmente capitato-hamato, só reconstrói o dorsal).
 
@@ -433,7 +435,7 @@ Na subaguda, o ligamento pode ser irreparável sem desalinhamento (estágio III)
 Com o ligamento irreparável e a deformidade redutível, reconstrói-se com tendão (enxerto livre, palmar longo, tira do flexor radial do carpo ou dos extensores radiais). Os túneis devem ter **menos de 3 mm** e o enxerto cerca de 2 a 2,5 mm, porque túnel grande fratura e necrosa o carpo.
 
 - **Brunelli original:** tira distal do **flexor radial do carpo** passada por um túnel no eixo do escafoide, de volar para dorsal, e presa no dorso do **rádio**; corrige a flexão do escafoide, mas prende o punho.
-- **Tenodese de três ligamentos (Garcia-Elias):** o flexor radial do carpo vai ao semilunar e volta sobre si, sem prender ao rádio.
+- **Tenodese de três ligamentos (Garcia-Elias):** o flexor radial do carpo vai ao semilunar e volta sobre si, sem prender ao rádio. O Green 7 (cap. 13, p. 444) a indica na dissociação **dinâmica** redutível com cartilagem normal (estágio III) e na **estática** redutível com cartilagem normal (estágio IV).
 - **Ross:** o enxerto atravessa semilunar e piramidal.
 - **Reconstruções 360° (aberta ou artroscópica, Ho; Kakar):** dorsal e volar ao mesmo tempo, com parafusos de biotenodese e reconstrução do radiolunar longo. É a preferência dos autores nos estágios III e IV.
 - **SLAM, ANAFAB, redução-associação (RASL):** a redução-associação com parafuso tem falha e soltura frequentes.
@@ -465,7 +467,7 @@ As lesões perilunares são instabilidades **complexas** (falha entre as fileira
 - **Pequeno arco:** lesão **só ligamentar**; a força circula o semilunar começando no lado radial, depois distal, ulnar e proximal. É a luxação perilunar pura.
 - **Grande arco:** ligamentos **mais fraturas**: estiloide do rádio, estiloide da ulna, escafoide, semilunar, capitato, piramidal ou combinações. O prefixo **trans-** indica fratura; **peri-** indica luxação.
 
-As **fraturas-luxações (grande arco) são duas vezes mais comuns** que as luxações puras, e o padrão mais comum é a **fratura-luxação transescafoperilunar**. O desvio é **dorsal em 97%**. No grande arco, a força costuma passar pela cintura do escafoide e poupar o escafossemilunar.
+As **fraturas-luxações (grande arco) são duas vezes mais comuns** que as luxações puras, e o Rockwood diz que **grande parte** delas é a **fratura-luxação transescafoperilunar dorsal**. Quem a chama de a mais frequente é o Green 7: no cap. 13 (p. 470), a transescafoperilunar dorsal é a fratura-luxação perilunar mais frequente, e no cap. 16 (p. 604), o tipo mais comum de luxação complexa do carpo. O desvio é **dorsal em 97%**. No grande arco, a força costuma passar pela cintura do escafoide e poupar o escafossemilunar.
 
 ## Os quatro estágios de Mayfield
 
@@ -476,12 +478,14 @@ Mayfield mostrou que a instabilidade progride **em volta do semilunar**, a pedra
 - **Estágio III, lunopiramidal:** com o capitato dorsal, rompem o **lunopiramidal** (o mais comum), o ulnopiramidal ou o complexo piramidal-hamato-capitato. O estágio se completa com a ruptura do **lunopiramidal palmar** e das expansões do radiolunar longo. O resultado mais comum é a **luxação mediocárpica**: o carpo sai, o semilunar fica na fossa.
 - **Estágio IV, luxação do semilunar:** o capitato dorsal é puxado para proximal, empurra o dorso do semilunar e, com a ruptura do **radiocárpico dorsal**, o semilunar **gira para palmar dentro do túnel do carpo**, usando os ligamentos palmares como dobradiça. O **radiolunar curto** costuma ficar íntegro.
 
-> Na prova: **I escafossemilunar, II capitato, III lunopiramidal, IV semilunar luxado**. A luxação perilunar com o semilunar no lugar é o III; a luxação do semilunar é o IV.
+Os livros não dão o mesmo nome a cada estágio. O Green 7 (cap. 13, p. 427) chama o **estágio II de luxação perilunar**: o capitato sai da concavidade do semilunar para dorsal (com fratura do escafoide, vira a transescafoperilunar) e, menos vezes, é o **próprio capitato que fratura** nesse estágio, com o corpo indo para dorsal com a fileira distal e a cabeça ficando para trás, às vezes toda girada. O **estágio III** do Green é a ruptura dos lunopiramidais **ou uma fratura sagital do piramidal**, e o IV é a luxação do semilunar. O Rockwood chama o estágio II de luxação capitossemilunar, diz que o semilunar fica na fossa enquanto o escafoide e a fileira distal luxam em volta dele "como discutido no estágio III" e põe a luxação mediocárpica como o resultado mais comum do III. O Green também trata igual as luxações perilunares dorsais (Mayfield II ou III) e a palmar do semilunar (IV) na cirurgia (cap. 13, p. 470).
+
+> Na prova: **I escafossemilunar, II capitato, III lunopiramidal, IV semilunar luxado**. A luxação do semilunar é o IV. A luxação perilunar com o semilunar no lugar aparece no II pelo Green e entre o II e o III pelo Rockwood; a fratura do capitato entra no II pelo Green, e a do piramidal, no III.
 
 !questoes central=mao-0056,mao-0299,mao-0354,mao-1037,mao-0590,mao-1000,mao-0018 relacionadas=mao-0776,mao-0606,mao-1192 treino=mao-1689,mao-1690
 conceito: Mayfield progride de radial para ulnar em volta do semilunar: I escafossemilunar ou escafoide, II capitato, III lunopiramidal (luxação perilunar), IV luxação do semilunar.
 como: É o assunto mais repetido dessa parte: TARO 2013, TARO 2016, SBOT-SP, CET-PR, UFG 2020 e UFG 2021 pediram o estágio pelo ligamento, pela lesão ou ao contrário. O TARO 2018 cobrou o mecanismo da fratura-luxação perilunar (desvio ulnar e supinação intercarpal). O INTO 2023 perguntou em que estágio aparece o VISI (III, quando cai o lunopiramidal). O TARO 2007 pediu o estágio da luxação do semilunar; essa prova não tem gabarito no acervo, e o livro dá o IV.
-armadilha: Capitato-semilunar no estágio III: é o II.
+armadilha: Capitato-semilunar no estágio III: é o II (no Green 7, cap. 13, p. 427, a fratura do capitato também fica no II).
 armadilha: Sinal de Terry Thomas: é sinal radiográfico da dissociação escafossemilunar (estágio I), não do III.
 armadilha: Desvio radial e pronação: é o mecanismo da lesão invertida.
 !fim
@@ -504,7 +508,7 @@ Homem jovem com trauma de alta energia; cerca de um quarto são politraumatizado
 
 Na radiografia: **quebra dos arcos de Gilula** na PA, **semilunar triangular** (girado para palmar), **sinal da xícara derramada** no perfil (o semilunar virado e a capitossemilunar desfeita), aumento da translação ulnar e perda da altura do carpo. Faça tomografia **depois da redução** para achar as fraturas pequenas (ou antes, se não reduzir).
 
-> Na prova: **16% a 25% das luxações perilunares passam despercebidas** no primeiro atendimento (cerca de um quarto), sobretudo as de pequeno arco, sem fratura evidente.
+> Na prova: **16% a 25% das luxações perilunares passam despercebidas** no primeiro atendimento (cerca de um quarto), sobretudo as de pequeno arco, sem fratura evidente. A faixa vem do Green 7 (cap. 13, p. 472); o Rockwood só avisa que a luxação perilunar pode passar despercebida e que os arcos de Gilula ajudam a achá-la.
 
 !questoes central=mao-0239,mao-1074 relacionadas=mao-1169
 conceito: Cerca de um quarto das luxações perilunares não é diagnosticado no primeiro atendimento; a forma mais comum de instabilidade complexa é a fratura-luxação transescafoperilunar.
@@ -587,7 +591,7 @@ O **SNAC** (colapso avançado da pseudartrose do escafoide) e o **SLAC** (colaps
 - **Estágio III:** artrose também na **capitossemilunar**, poupando a radiolunar. A carpectomia proximal deixa de servir (sem interposição); a escafoidectomia com artrodese parcial (quatro cantos) é o salvamento.
 - **Estágio IV:** artrose pancárpica; artrodese total ou artroplastia total. Mesmo aqui, a radiolunar costuma ser considerada poupada.
 
-No SNAC, a diferença é que o **polo proximal continua articulado com o rádio**: a artrose começa entre o fragmento distal fletido e a estiloide, desce para a mediocárpica com o DISI, e a articulação do polo proximal com o rádio e a radiolunar ficam relativamente poupadas. Mais de 97% terão os primeiros sinais de artrose 5 anos depois da pseudartrose, segundo alguns autores; não se sabe se consolidar o escafoide evita a artrose, sobretudo com mais de um ano de pseudartrose.
+O Green 7 (cap. 12, p. 377, Figura 12.5) dá ao SNAC uma escada própria: no **estágio I** a degeneração aparece no segmento **distal** do escafoide, e o **polo proximal é poupado**; no **estágio II** quem se desgasta é a **escafocapitato**. No SNAC, a diferença é que o **polo proximal continua articulado com o rádio**: a artrose começa entre o fragmento distal fletido e a estiloide, desce para a mediocárpica com o DISI, e a articulação do polo proximal com o rádio e a radiolunar ficam relativamente poupadas. Mais de 97% terão os primeiros sinais de artrose 5 anos depois da pseudartrose, segundo alguns autores; não se sabe se consolidar o escafoide evita a artrose, sobretudo com mais de um ano de pseudartrose.
 
 > Na prova: o estágio I é **estiloide com escafoide**; a carpectomia proximal **perde a indicação no III**, porque a cabeça do capitato desgastada passaria a articular com a fossa do semilunar.
 

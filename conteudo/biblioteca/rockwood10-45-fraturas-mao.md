@@ -1,6 +1,6 @@
 ---
 id: rockwood10-45-fraturas-mao
-versao: 3
+versao: 4
 titulo: Fraturas e luxações da mão
 especialidade: mao
 acesso: gratis
@@ -131,17 +131,17 @@ Os metacarpos formam um **arco romano**: indicador e mínimo nas bordas, o **mé
 
 - **Encurtamento:** cada **2 mm** de encurtamento dão cerca de **7° de déficit de extensão**; como a MCF hiperestende uns 20°, toleram-se **5 a 6 mm**.
 - **Angulação da diáfise (sagital):** **10°** no indicador e no médio, cerca de **25°** no anular e até **45°** no mínimo. Quanto mais **proximal** o traço, menos se tolera, porque a mesma angulação afunda mais a cabeça.
-- **Colo:** o indicador tolera o mínimo; o **mínimo aceita até 50°**, e os autores só operam o colo do quinto com **mais de 50°**, encurtamento ou rotação. Eles lembram que essa fratura é **muito bem tolerada e frequentemente operada sem necessidade**.
+- **Colo:** o indicador tolera o mínimo; o **mínimo aceita até 50°**, e os autores só operam o colo do quinto com **mais de 50°**, encurtamento ou rotação. Eles lembram que essa fratura é **muito bem tolerada e frequentemente operada sem necessidade**. O capítulo não dá número para o colo do indicador e do médio; o Green 7 dá: pela falta de movimento compensatório na CMC, há acordo quase universal de **não aceitar mais de 10° a 15°** de angulação residual no colo do indicador e do médio (cap. 7, p. 233), e na preferência dos autores do Green mais de **15°** é inaceitável nesses dois, **30° a 40°** são aceitáveis no anular e **50° a 60°** no mínimo (cap. 7, p. 235).
 - **Rotação:** é o desvio menos tolerado. **Mais de 10°** ou **qualquer cruzamento** de dedos indica cirurgia.
 - **Plano coronal:** é raro, mas costuma exigir correção.
 
-!tabela Tolerância de angulação no plano sagital, segundo o capítulo
+!tabela Tolerância de angulação no plano sagital, segundo o capítulo (colo com o Green 7, cap. 7, p. 233 e 235)
 | Metacarpo | Diáfise | Colo |
 | --- | --- | --- |
-| Indicador | 10° | o que menos tolera |
-| Médio | 10° | sem número no capítulo |
-| Anular | cerca de 25° | sem número no capítulo |
-| Mínimo | até 45° | até 50° |
+| Indicador | 10° | o que menos tolera; Green: até 10° a 15° |
+| Médio | 10° | Green: até 10° a 15° |
+| Anular | cerca de 25° | Green: 30° a 40° |
+| Mínimo | até 45° | até 50° (Green: 50° a 60°) |
 !fim
 
 !questoes central=mao-1541,mao-0913 treino=mao-1799,mao-2332,mao-2442
@@ -178,7 +178,7 @@ armadilha: "O desvio é de ápice volar": a fratura do colo angula com ápice do
 
 ## Imagem: a incidência de Brewerton
 
-As incidências de rotina são **frente, perfil e oblíqua**. Por causa da cascata dos metacarpos, o anular e o mínimo pedem a **oblíqua em 30° de pronação** (que mostra também a CMC deles, como no reverse Bennett) e a **frente semipronada**. Para a **cabeça do metacarpo**, a incidência é a de **Brewerton**: dorso dos dedos apoiado no chassi, **MCF fletida a cerca de 65°** e raio angulado **15° de ulnar para radial**. Ela põe o recesso do colateral de perfil e mostra avulsões e fraturas pequenas. No polegar, o equivalente é a incidência de **Roberts** (frente da CMC com a mão hiperpronada).
+As incidências de rotina são **frente, perfil e oblíqua**. Por causa da cascata dos metacarpos, o anular e o mínimo pedem a **oblíqua em 30° de pronação** (que mostra também a CMC deles, como no reverse Bennett) e a **frente semipronada**. Para a **cabeça do metacarpo**, a incidência é a de **Brewerton**: dorso dos dedos apoiado no chassi, **MCF fletida a cerca de 65°** e raio angulado **15° de ulnar para radial**. Ela põe o recesso do colateral de perfil e mostra avulsões e fraturas pequenas. O Green 7 descreve a mesma técnica para o contorno articular da cabeça (cap. 7, p. 232) e a pede também na lesão do **colateral radial da MCF dos dedos**, para procurar fragmentos ósseos avulsionados, que não são incomuns (cap. 8, p. 300). No polegar, o equivalente é a incidência de **Roberts** (frente da CMC com a mão hiperpronada).
 
 !questoes central=mao-1068,mao-1492 treino=mao-1698,mao-2029
 conceito: A incidência de Brewerton tem o dorso das falanges apoiado no chassi, a MCF fletida a cerca de 65° e o raio a 15° de ulnar para radial.
@@ -192,7 +192,7 @@ armadilha: Raio de radial para ulnar: o sentido é de ulnar para radial.
 
 !questoes relacionadas=mao-0674,trauma-0472
 conceito: Na fratura articular da cabeça do metacarpo, a preocupação central é a rigidez da MCF: fixação estável, movimento precoce em arco curto e imobilização em mais de 70° de flexão.
-como: FMRP-USP 2026 e Ortopedia pediram a complicação mais comum (rigidez). O capítulo não ranqueia as complicações da cabeça, mas todo o protocolo dele existe para evitar a rigidez.
+como: FMRP-USP 2026 e Ortopedia pediram a complicação mais comum (rigidez). O Green 7 (cap. 7, p. 232) é direto: a complicação mais comum das fraturas articulares da cabeça do metacarpo é a **rigidez**, por aderência do extensor, contratura do colateral ou da cápsula dorsal, desvascularização de fragmentos pequenos ou incongruência articular; todo o protocolo do capítulo existe para evitá-la.
 !fim
 
 ## Tratamento sem cirurgia
@@ -326,7 +326,7 @@ Padrões de fratura da falange distal: longitudinal, transversa proximal da diá
 
 O tufo e a diáfise quebram por **esmagamento** ou por serra, quase sempre com lesão da polpa e do leito ungueal. O **hematoma subungueal** aumenta a chance de fratura e pede radiografia. Fratura fechada e alinhada: tala da IFD por **4 a 6 semanas**. Hematoma doloroso: furar a unha com agulha 18 aquecida, clipe ou cautério, sob bloqueio. Na exposta, lava-se e desbrida-se (em geral no consultório), sutura-se o **leito ungueal** com fio absorvível 5-0 ou 6-0 e **recoloca-se a unha** sob a prega: ela estabiliza a fratura e mantém a prega aberta.
 
-Desnível cortical ou diástase pedem redução e **fio** (0,028 a 0,035 polegada, ou agulha 18), retirado em **4 semanas**. Num estudo, dois fios consolidaram 3 semanas mais rápido que um, e o único fator de pseudartrose foi a **diástase** do foco. Pseudartroses do tufo acontecem e quase nunca dão sintomas. Uma metanálise mostrou que **antibiótico profilático não reduz a infecção** nas fraturas expostas da falange distal.
+Desnível cortical ou diástase pedem redução e **fio** (0,028 a 0,035 polegada, ou agulha 18), retirado em **4 semanas**. Num estudo, dois fios consolidaram 3 semanas mais rápido que um, e o único fator de pseudartrose foi a **diástase** do foco. Pseudartroses do tufo acontecem e quase nunca dão sintomas. O Green 7 explica por quê: as fraturas cominutivas do tufo muitas vezes não consolidam, mas ficam invariavelmente estabilizadas por uma **união fibrosa** (cap. 7, p. 248). Uma metanálise mostrou que **antibiótico profilático não reduz a infecção** nas fraturas expostas da falange distal.
 
 !questoes central=mao-1026 relacionadas=mao-1351 treino=mao-1944
 conceito: Na fratura do tufo por esmagamento, as partes moles e a unha estabilizam o fragmento; a unha removida é recolocada sob a prega para ajudar a estabilidade, depois de suturar o leito ungueal.
@@ -370,7 +370,7 @@ armadilha: Tala em hiperextensão da IFD: é tratamento de martelo, não de jers
 
 ## Fratura epifisária (Seymour)
 
-A fratura transversa da base da falange distal é típica da **criança** (fratura epifisária de Seymour) e também acontece no adulto. A base da unha sai por cima da prega e o **leito ungueal lacerado fica interposto no foco**, o que torna a fratura **exposta** e impede a redução. Como o **extensor terminal** puxa a epífise e o **flexor profundo** puxa o fragmento distal, ela é **instável** e quase sempre pede fio. O roteiro: retirar o tecido interposto (via dorsal), reduzir, pinar, reparar o leito e recolocar a unha sob a prega; tala até a consolidação, em cerca de 4 semanas.
+A fratura transversa da base da falange distal é típica da **criança** (fratura epifisária de Seymour) e também acontece no adulto. A base da unha sai por cima da prega e o **leito ungueal lacerado fica interposto no foco**, o que torna a fratura **exposta** e impede a redução. Como o **extensor terminal** puxa a epífise e o **flexor profundo** puxa o fragmento distal, ela é **instável** e quase sempre pede fio. O Green 7 confirma o desenho: o terminal fica na epífise, o profundo no fragmento distal, com angulação de ápice dorsal, e na criança há quase sempre laceração transversa da matriz com a unha por cima da prega (cap. 7, p. 248); no capítulo pediátrico, chama a fratura de SEYMOUR de fratura fisária exposta, frequentemente com **matriz germinativa interposta** no foco (cap. 41, p. 1429). O roteiro: retirar o tecido interposto (via dorsal), reduzir, pinar, reparar o leito e recolocar a unha sob a prega; tala até a consolidação, em cerca de 4 semanas.
 
 !questoes central=mao-0773,trauma-0905 relacionadas=mao-1213,pediatria-0823 treino=mao-1694,mao-2252
 conceito: Na fratura de Seymour, o leito ungueal (matriz) fica interposto no foco da fratura fisária da falange distal, que por isso é exposta e exige retirada do tecido, redução e reparo do leito.
@@ -487,13 +487,13 @@ Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 45, Fig. 
 
 ## Fratura em pilão
 
-É a fratura articular da base da falange média com **depressão, cominuição e alargamento** da base nos planos coronal e sagital, quase sempre por **carga axial**. A radiografia engana (parece menos grave); a tomografia com reconstruções ajuda. **Sem cirurgia vai mal** (sobram desvio angular e rotação). A preferência dos autores é a **tração dinâmica com fixador externo**; a redução aberta é evitada pelo risco de partes moles, embora uma série com placas bloqueadas de 1,5 mm tenha ido bem. Desvio e impacção pequenos aceitam redução percutânea com pinça e fios.
+É a fratura articular da base da falange média com **depressão, cominuição e alargamento** da base nos planos coronal e sagital, quase sempre por **carga axial**. A radiografia engana (parece menos grave); a tomografia com reconstruções ajuda. O Green 7 descreve o mesmo mecanismo com um detalhe a mais: a **carga axial** afunda o centro da superfície e **afasta as margens** em grau variável (cap. 7, p. 250). **Sem cirurgia vai mal** (sobram desvio angular e rotação). A preferência dos autores é a **tração dinâmica com fixador externo**; a redução aberta é evitada pelo risco de partes moles, embora uma série com placas bloqueadas de 1,5 mm tenha ido bem. Desvio e impacção pequenos aceitam redução percutânea com pinça e fios.
 
 !questoes central=mao-1542 relacionadas=mao-0823,trauma-0473 treino=mao-1702,mao-1704
 conceito: A fratura em pilão da base da falange média vem da carga axial, vai mal sem cirurgia e é tratada de preferência com tração dinâmica, que reduz por ligamentotaxia e permite mexer a IFP.
 como: A USP 2026 mostrou a fratura e pediu o tratamento (tração esquelética dinâmica); INTO 2026 e Ortopedia perguntaram o mecanismo.
 armadilha: Placa e parafusos ou vários fios nos fragmentos maiores: a cominuição e o risco de partes moles fazem o capítulo preferir a tração dinâmica.
-alerta: Os gabaritos do INTO 2026 (mao-0823) e da prova de Ortopedia (trauma-0473) descrevem o mecanismo do pilão como compressão axial **com desvio lateral**. O capítulo atribui o pilão à **carga axial pura**, de alta energia; o desvio lateral não aparece. Guarde o gabarito para essas bancas.
+alerta: Os gabaritos do INTO 2026 (mao-0823) e da prova de Ortopedia (trauma-0473) descrevem o mecanismo do pilão como compressão axial **com desvio lateral**. O Rockwood atribui o pilão à **carga axial pura**, de alta energia, sem desvio lateral. A origem provável do gabarito é o Green 7 (cap. 7, p. 250): carga axial com depressão central e **afastamento variável das margens** articulares; o "desvio lateral" da banca corresponde a essas margens que se abrem para os lados, não a uma força lateral no trauma.
 !fim
 
 ## Base dorsal: a botoeira óssea
@@ -575,6 +575,8 @@ O **flexor superficial** se insere nas bordas laterais do **terço médio** da f
 - **Traço distal ao superficial** (colo e diáfise distal): o superficial **flete o fragmento proximal** e o terminal estende o distal: **ápice volar**.
 - **Traço proximal ao superficial** (base): o superficial **flete o fragmento distal** e a banda central **estende o proximal**: **ápice dorsal**.
 
+O Green 7 resume a falange média de outro jeito: a angulação das fraturas dela é **variável** (cap. 7, p. 256), justamente porque depende de onde o traço cai em relação ao superficial.
+
 !questoes central=mao-0598,trauma-0042,trauma-0119 treino=mao-1699
 conceito: Na falange média, o traço distal à inserção do flexor superficial angula com ápice volar; o traço proximal a ela (base) angula com ápice dorsal, pelo superficial e pela banda central.
 como: O TARO cobrou três vezes (2016, 2018 e 2020), cada vez por um lado: o colo com ápice volar, a base com ápice dorsal e onde fica o traço que dá ápice volar.
@@ -587,7 +589,7 @@ Forças deformantes nas fraturas da diáfise da falange média: proximais à ins
 
 ## Falange proximal: os interósseos
 
-Na falange proximal, os **interósseos** (intrínsecos) fletem o **fragmento proximal** e a **banda central** estende o **distal**: a fratura angula com **ápice volar**. A diáfise quase não tem inserções estabilizadoras e por isso é instável. O **colo** também angula com ápice volar, com o fragmento distal em hiperextensão, e se reduz **fletindo a IFP**. Nos **côndilos**, os colaterais são a força deformante. Flexionar totalmente a MCF faz o aparelho extensor funcionar como **banda de tensão** sobre a fratura transversa e ajuda a reduzir.
+Na falange proximal, os **interósseos** (intrínsecos) fletem o **fragmento proximal** e a **banda central** estende o **distal**: a fratura angula com **ápice volar**. O Rockwood descreve esse desenho nas fraturas mais proximais, da **base**; o Green 7 o estende às fraturas da falange proximal em geral, com o fragmento proximal fletido pela inserção forte dos interósseos (cap. 7, p. 256), e é por isso que as provas o cobram na diáfise. A diáfise quase não tem inserções estabilizadoras e por isso é instável. O **colo** também angula com ápice volar, com o fragmento distal em hiperextensão, e se reduz **fletindo a IFP**. Nos **côndilos**, os colaterais são a força deformante. Flexionar totalmente a MCF faz o aparelho extensor funcionar como **banda de tensão** sobre a fratura transversa e ajuda a reduzir.
 
 !questoes central=mao-1397,mao-1534,trauma-0341 treino=mao-1707,mao-1932
 conceito: Na fratura da diáfise da falange proximal, os interósseos fletem o fragmento proximal e o aparelho extensor estende o distal: angulação com ápice volar.
@@ -618,14 +620,14 @@ Sem desvio, de qualquer local: **tala intrínseca plus por 3 a 4 semanas**, depo
 
 Indicações de cirurgia: fratura exposta, lesão de nervo ou tendão, **rotação ou cruzamento**, degrau articular importante e angulação **maior que 25° no plano sagital** e **maior que 15° no plano frontal**. Na base, angulação de ápice volar acima de **20° a 30°** causa pseudogarra e pede cirurgia.
 
-- **Côndilos:** desviados são cirúrgicos, e a sem desvio exige seguimento semanal. Redução com pinça e fios finos (pelo menos dois, para não rodar; o fio vai do fragmento pequeno para o grande, "do navio para o cais") ou parafusos de 1,0 a 1,5 mm. **Não desinserir o colateral** do fragmento, que leva a irrigação. A via de **Chamay** (retalho em V de base distal do extensor) dá a melhor visão nas bicondilares cominutivas, mas costuma deixar déficit de extensão.
+- **Côndilos:** desviados são cirúrgicos, e a sem desvio exige seguimento semanal. Redução com pinça e fios finos (pelo menos dois, para não rodar; o fio vai do fragmento pequeno para o grande, "do navio para o cais") ou parafusos de 1,0 a 1,5 mm. **Não desinserir o colateral** do fragmento, que leva a irrigação. A via lateral (médio-axial) é fácil, com as bandas laterais e o aparelho extensor rebatidos para dorsal, mas **não mostra a superfície articular**; para ver a articulação, a via dorsorradial ou dorsoulnar trabalha por uma janela entre a banda lateral e a banda central (a outra janela, volar à banda lateral, serve para pôr o parafuso lateral). A via de **Chamay** (retalho em V de base distal do extensor) dá a melhor visão nas bicondilares cominutivas, mas costuma deixar déficit de extensão.
 - **Diáfise:** fios por via fechada até 1 a 2 semanas do trauma (depois o calo impede). Numa série com fios em até 5 dias, 90% de bons e excelentes. Traço **mais longo que duas vezes o diâmetro** aceita parafusos interfragmentários (pelo menos dois; os autores preferem três). Placas são rígidas, mas aderem: uma série com placas de baixo perfil teve 52% de complicações.
 - **Base parcial:** costuma levar o colateral; fio com movimento tardio ou parafuso de tração com movimento precoce.
 
 !questoes central=mao-0611 relacionadas=mao-1062
 conceito: Nas fraturas das falanges, a complicação mais comum, sobretudo depois da cirurgia, é a rigidez por aderência de tendões e contratura articular; a fixação precisa ser estável para permitir movimento precoce.
 como: O TARO 2008 perguntou a complicação mais frequente do tratamento cirúrgico das falanges (limitação da flexão).
-alerta: A PUC-SP 2019 (mao-1062) deu como gabarito que a complicação mais comum das fraturas de falange é a **consolidação viciosa**. O capítulo diz que a **rigidez** é o evento adverso mais comum depois das fraturas da falange proximal e põe a consolidação viciosa entre as mais comuns; é nos **metacarpos** que ele chama a consolidação viciosa de a mais comum.
+alerta: A PUC-SP 2019 (mao-1062) deu como gabarito que a complicação mais comum das fraturas de falange é a **consolidação viciosa**. O capítulo diz que a **rigidez** é o evento adverso mais comum depois das fraturas da falange proximal e põe a consolidação viciosa entre as mais comuns; é nos **metacarpos** que ele chama a consolidação viciosa de a mais comum. O Green 7 (cap. 7, p. 266) abre as complicações das falanges pela **consolidação viciosa**, chamada de complicação comum, em quatro planos (rotação, ápice volar, angulação lateral e encurtamento); é a fonte mais próxima do gabarito da banca.
 !fim
 
 ## Consolidação viciosa e rigidez

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-50-anel-pelvico
-versao: 2
+versao: 3
 titulo: Lesões do anel pélvico
 especialidade: trauma
 acesso: gratis
@@ -256,7 +256,7 @@ O atendimento começa pelo ATLS: via aérea, respiração e, sobretudo no pacien
 - No paciente acordado e colaborativo, o exame tem **90% de sensibilidade** para a fratura do anel, e a palpação posterior direta é muito sensível e específica para a lesão posterior.
 - **Manobra de compressão:** na asa do ilíaco, **uma vez só**, porque dói e porque repetida **desloca coágulos**. Não precisa ser feita quando a imagem já mostra ruptura grosseira.
 - **Pele e partes moles:** procurar feridas e áreas **flutuantes** de desenluvamento fechado (lesão de **MOREL-LAVALLÉE**).
-- **Períneo, reto e vagina:** sangue no reto ou na uretra indica lesão subjacente; na mulher antes da menopausa o sangue vaginal pode ser menstruação, mas o exame vaginal é obrigatório para afastar laceração. A **próstata alta** no toque já não é considerada sinal confiável de lesão da uretra.
+- **Períneo, reto e vagina:** sangue no reto ou na uretra indica lesão subjacente; na mulher antes da menopausa o sangue vaginal pode ser menstruação, mas o exame vaginal é obrigatório para afastar laceração. A **próstata alta** no toque já não é considerada sinal confiável de lesão da uretra (Rockwood 10, cap. 50, Physical Examination: achado não confiável e sem utilidade). O HEBERT (cap. 55, Exame físico) ainda ensina que a próstata alta ou não palpável pode representar lesão uretral e que, na suspeita, a uretrografia retrógrada vem antes da sonda vesical; se a banca seguir o HEBERT, é essa a resposta esperada, mas pelo Rockwood o sinal perdeu valor.
 
 !questoes central=trauma-0934 treino=trauma-1493
 conceito: GREY TURNER é a equimose dos flancos da hemorragia retroperitoneal; DESTOT é o hematoma do períneo, acima do ligamento inguinal ou na coxa.
@@ -464,6 +464,8 @@ armadilha: Abdução: abre o livro.
 
 A angiografia como **primeira** medida no instável é controversa, porque o sangramento arterial que precisa de embolização é pouco frequente. Mas há bons dados de que a **embolização seletiva** ajuda e deve ser feita **rápido** quando o sangramento continua apesar da reposição, depois de afastar outras fontes e quando a cinta não estabilizou o paciente (pressão sistólica abaixo de 90), em vez de esperar o fixador de emergência. Embolizar **em até 60 minutos** da chegada reduziu a mortalidade.
 
+O momento da angiografia muda com o algoritmo do serviço: alguns fazem angiografia imediata no paciente **estável** quando o FAST ou a TC são negativos ou quando há extravasamento na TC; no paciente **instável com FAST positivo**, vai-se primeiro à **laparotomia**, e a angiografia fica **adiada** para quem continua instável depois dela; outros algoritmos deixam a angiografia como último recurso depois da laparotomia em todo instável, qualquer que seja o FAST (Rockwood 10, cap. 50, Angiography).
+
 **O extravasamento de contraste na TC** é o que mais pesa: é sinal de sangramento arterial e deve levar à angiografia. A diretriz da **EAST** dá **recomendação nível 1** para angiografia e embolização **independentemente da hemodinâmica** quando há extravasamento na TC, e essa é a **única indicação clara** de arteriografia segundo o capítulo. Num estudo de 497 pacientes, o extravasamento teve **sensibilidade e valor preditivo negativo de 100%**, especificidade de 87,9% e valor preditivo positivo de 22,7%: a ausência de extravasamento praticamente afasta a pelve como fonte arterial. Outros preditores de sangramento arterial: déficit de base, queda do déficit de base em 4 horas, pressão sistólica abaixo de 104 mmHg e transfusão no pronto-socorro; a hipotensão relativa vale mesmo com TC negativa.
 
 - **Por que embolizar e não ligar:** as lesões estão na ilíaca interna e seus ramos; explorar e ligar não funciona e pode causar sangramento incontrolável.
@@ -561,6 +563,8 @@ A mesma lógica da faceta aparece na classificação de **ISLER**, que o capítu
 ## A dissociação espinopélvica: U, H e ROY-CAMILLE
 
 Quando um traço **horizontal** atravessa o sacro no nível das sacroilíacas, costuma haver traços **verticais transforaminais bilaterais**, formando a fratura em **U ou em H** (também T e Y). Ela nasce da **hiperflexão aguda** da pelve e da transição lombossacra e produz a **dissociação lombopélvica**: a coluna e o sacro superior perdem a continuidade com a pelve, com **cifose**, impacção e possível compressão do canal sacral. A cifose se vê melhor na **reconstrução sagital** da TC. A lesão é muito instável, resulta de cisalhamento vertical ou de forças rotacionais, e a estabilidade da coluna fica afetada se o traço sobe e rompe a **articulação L5-S1**.
+
+O traço transverso entra na **zona III de DENIS** porque atinge o canal, mas o padrão varia muito; por isso o Campbell 15 (cap. 61, Sacral Transverse Fracture Classification; cap. 48, Fig. 48.41) trata a classificação de **ROY-CAMILLE** (com a modificação de STRANGE-VOGNSEN e LEBECH) como **subclassificação da zona III**. ROY-CAMILLE foi o primeiro a classificar essas fraturas, pela rotação e pelo desvio.
 
 !tabela ROY-CAMILLE modificada por STRANGE-VOGNSEN (traço transverso)
 | Tipo | O que se vê |
@@ -750,7 +754,7 @@ O **parafuso iliossacral** virou o procedimento mais comum para fixar a sacroil�
 
 - **Saída (outlet):** mostra os **forames** de frente e a placa terminal superior de S1.
 - **Entrada (inlet):** mostra a **cortical anterior** de S1 e S2; confirma-se sub e sobrecorrigindo a inclinação.
-- **Perfil do sacro:** é a **única vista que mostra todos os limites** do corredor seguro. Exige a sobreposição das densidades corticais do ilíaco e das incisuras isquiáticas dos dois lados. A instrumentação deve ficar **atrás (caudal) da densidade cortical do ilíaco**, que corresponde à asa onde repousa **a raiz de L5**, e **à frente do túnel de S1** (o canal da raiz de S1); a face posterior do corpo de S1 é a parede anterior do canal sacral, e à frente do promontório estão os grandes vasos.
+- **Perfil do sacro:** é a **única vista que mostra todos os limites** do corredor seguro. Exige a sobreposição das densidades corticais do ilíaco e das incisuras isquiáticas dos dois lados. A instrumentação deve ficar **atrás (caudal) da densidade cortical do ilíaco**, que corresponde à asa onde repousa **a raiz de L5**, e **à frente do túnel de S1** (o canal da raiz de S1); a face posterior do corpo de S1 é a parede anterior do canal sacral, e à frente do promontório estão os grandes vasos. No mesmo perfil se vê a margem anterior do canal vertebral, e o **espaço do disco vestigial** costuma marcar a **posição do forame sacral** naquele nível; o parafuso fica seguro entre a densidade cortical do ilíaco em cima, a cortical anterior do corpo de S1 e a borda cranial do túnel de S1 (Rockwood 10, cap. 50, Posterior Pelvic Screw Fixation Technique).
 
 O perfil deve ser feito **antes de avançar além da borda lateral do forame de S1**, ponto que corresponde à parte caudal da asa; no parafuso transsacral, de novo antes do forame do outro lado.
 
