@@ -101,8 +101,8 @@ export const METRICAS = {
     deduplicacao: 'Por aviso', latencia: 'Imediata', comparavel: 'Não', bom: 'desce',
   },
   pendenciasConteudo: {
-    nome: 'Pendências de conteúdo', pergunta: 'Quantos relatos e "não ajudou" esperam revisão?', unidade: 'eventos',
-    numerador: 'Relatos em aberto + avaliações "não ajudou" com texto ainda não lidas', janela: 'Agora',
+    nome: 'Pendências de conteúdo', pergunta: 'Quantos relatos e notas ruins esperam revisão?', unidade: 'eventos',
+    numerador: 'Relatos em aberto + notas de 5 ou menos ainda não lidas (nota boa não avisa)', janela: 'Agora',
     fonte: 'contadores_admin (ou as listas de relatos e avaliações)', qualidade: 'confirmado', testes: 'Incluídas',
     deduplicacao: 'Por relato / avaliação', latencia: '1 min', comparavel: 'Não', bom: 'desce',
   },
@@ -295,7 +295,7 @@ export function filaDeAtencao(e: EntradaAtencao): ItemAtencao[] {
     const pendentes = e.assinaturas.filter(a => a.status === 'pendente' && agora - new Date(a.criada_em ?? a.ultima_atualizacao ?? 0).getTime() < 7 * 86_400_000)
     if (pendentes.length) itens.push({ id: 'pix-pendente', severidade: 'oportunidade', grupo: 'receita', titulo: pl(pendentes.length, 'Pix gerado e ainda não pago', 'Pix gerados e ainda não pagos'), causa: 'A pessoa escolheu um plano na última semana e o pagamento não chegou.', contagem: pendentes.length, ultimoEm: maisRecente(pendentes.map(a => a.criada_em ?? a.ultima_atualizacao)), destino: { aba: 'assinaturas' }, acao: 'Ver quem são' })
   }
-  if (e.pendenciasConteudo) itens.push({ id: 'conteudo', severidade: 'media', grupo: 'conteudo', titulo: pl(e.pendenciasConteudo, 'relato ou "não ajudou" para revisar', 'relatos e "não ajudou" para revisar'), causa: 'Alguém apontou um erro numa questão ou disse que o comentário não ajudou.', contagem: e.pendenciasConteudo, ultimoEm: null, destino: { aba: 'conteudo', vista: 'relatos' }, acao: 'Abrir a triagem' })
+  if (e.pendenciasConteudo) itens.push({ id: 'conteudo', severidade: 'media', grupo: 'conteudo', titulo: pl(e.pendenciasConteudo, 'relato ou nota ruim para revisar', 'relatos e notas ruins para revisar'), causa: 'Alguém apontou um erro numa questão ou deu nota de 5 ou menos a um comentário.', contagem: e.pendenciasConteudo, ultimoEm: null, destino: { aba: 'conteudo', vista: 'relatos' }, acao: 'Abrir a triagem' })
   if (e.novosParados?.length) itens.push({ id: 'novos-parados', severidade: 'oportunidade', grupo: 'acompanhamento', titulo: pl(e.novosParados.length, 'pessoa nova que parou', 'pessoas novas que pararam'), causa: 'Chegaram nas últimas semanas, fizeram menos de 10 questões e não estudam há 2 dias.', contagem: e.novosParados.length, ultimoEm: maisRecente(e.novosParados.map(u => u.ultima_atividade ?? u.criado_em)), destino: { aba: 'usuarios', filtro: 'novos_parados' }, acao: 'Ver e mandar um recado' })
   for (const m of e.usoSupabase ?? []) {
     itens.push({ id: `supabase:${m.id}`, severidade: m.pct >= 90 ? 'alta' : 'media', grupo: 'tecnico', titulo: `% do limite de ${m.nome.toLowerCase()} no Supabase`,

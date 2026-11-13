@@ -493,3 +493,58 @@
 }
 .a3-galeria:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: 4px; border-radius: 14px; }
 .a3-galeria__enviar.sobre { background: var(--a3-alt); border-color: var(--a3-tinta); color: var(--a3-tinta); }
+
+/* Painel das notas dos comentários (14/11/2026): régua deitada, semanas, mapa das questões e antes/depois. */
+.nh-kpis > .a3-metrica { border: 1px solid var(--a3-linha); border-radius: var(--a3-r-cartao); background: var(--a3-papel); }
+.nh-duas { align-items: stretch; }
+.nh-regua { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px; align-items: end; height: 220px; padding: 8px 4px 0; }
+.nh-regua__col { display: grid; grid-template-rows: auto 1fr auto auto; height: 100%; text-align: center; gap: 4px; }
+.nh-regua__valor { font-size: 12px; font-weight: 600; color: var(--a3-tinta); font-variant-numeric: tabular-nums; min-height: 15px; }
+.nh-regua__barra { align-self: end; height: max(3px, var(--h)); border-radius: 6px 6px 2px 2px; background: var(--c); opacity: 0.85; transition: height 0.4s ease, opacity 0.2s; }
+.nh-regua__col:hover .nh-regua__barra { opacity: 1; }
+.nh-regua__nota { display: grid; place-items: center; height: 28px; border-radius: 6px; border: 1.5px solid var(--c); color: var(--c); font-weight: 700; font-size: 14px; font-variant-numeric: tabular-nums; }
+.nh-regua__col--moda .nh-regua__nota { background: var(--c); color: #fff; }
+.nh-regua__pct { font-size: 11px; color: var(--a3-cinza); font-variant-numeric: tabular-nums; }
+
+.nh-semanas { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 5px; align-items: end; height: 220px; padding-top: 8px; position: relative; }
+.nh-semanas__col { display: grid; grid-template-rows: auto 1fr auto auto; height: 100%; text-align: center; gap: 4px; }
+.nh-semanas__n { font-size: 11px; color: var(--a3-tinta-2); font-variant-numeric: tabular-nums; min-height: 14px; }
+.nh-semanas__barra { align-self: end; display: flex; flex-direction: column-reverse; min-height: 2px; border-radius: 4px 4px 1px 1px; background: var(--a3-serie-1); overflow: hidden; }
+.nh-semanas__barra i { display: block; background: var(--a3-erro); opacity: 0.85; }
+.nh-semanas__col--atual .nh-semanas__barra { opacity: 0.6; outline: 1.5px dashed var(--a3-serie-1); outline-offset: 1px; }
+.nh-semanas__media { display: grid; place-items: center; height: 24px; border-radius: 5px; color: #fff; font-size: 10.5px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.nh-semanas__data { font-size: 10px; color: var(--a3-cinza); font-variant-numeric: tabular-nums; }
+.nh-semanas__nota { margin: 10px 0 0; font-size: 11px; color: var(--a3-cinza); display: flex; align-items: center; gap: 6px; }
+.nh-semanas__nota i { width: 10px; height: 10px; border-radius: 2px; background: var(--a3-erro); }
+
+.nh-mapa svg { width: 100%; height: auto; display: block; }
+.nh-mapa__boa { fill: var(--a3-ok-veu); }
+.nh-mapa__ruim { fill: var(--a3-erro-veu); }
+.nh-mapa__grade { stroke: var(--a3-linha); stroke-dasharray: 3 4; }
+.nh-mapa__eixo { fill: var(--a3-cinza); font-size: 12px; font-variant-numeric: tabular-nums; }
+.nh-mapa__titulo { fill: var(--a3-cinza); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
+.nh-mapa__ponto { stroke: var(--a3-papel); stroke-width: 1.5; opacity: 0.85; cursor: pointer; transition: r 0.15s; }
+.nh-mapa__ponto:hover, .nh-mapa__ponto:focus-visible { opacity: 1; outline: none; stroke: var(--a3-tinta); }
+.nh-mapa__foco { margin: 6px 0 0; min-height: 20px; font-size: 13px; color: var(--a3-tinta-2); }
+.nh-legenda { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--a3-tinta-2); }
+.nh-legenda li { display: flex; align-items: center; gap: 6px; }
+.nh-legenda i { width: 10px; height: 10px; border-radius: 50%; }
+.nh-legenda b { color: var(--a3-tinta); font-variant-numeric: tabular-nums; }
+
+.nh-antes-depois { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.nh-antes-depois button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 44px; padding: 6px 8px; border: 0; border-radius: 8px; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.nh-antes-depois button:hover { background: var(--a3-alt); }
+.nh-antes-depois__nome { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13.5px; }
+.nh-antes-depois__notas { display: flex; align-items: center; gap: 6px; flex: none; color: var(--a3-cinza); font-variant-numeric: tabular-nums; }
+.nh-antes-depois__notas small { min-width: 40px; text-align: right; font-weight: 700; }
+.nh-sobe { color: var(--a3-ok); }
+.nh-desce { color: var(--a3-erro); }
+@media (max-width: 560px) {
+  .nh-antes-depois button { flex-wrap: wrap; gap: 2px 12px; }
+  .nh-antes-depois__nome { white-space: normal; flex: 1 1 100%; }
+  .nh-regua { gap: 3px; height: 190px; }
+  .nh-regua__nota { height: 24px; font-size: 12px; }
+  .nh-semanas { gap: 2px; }
+  .nh-semanas__media { font-size: 0; height: 12px; }
+  .nh-semanas__col:nth-child(even) .nh-semanas__data { visibility: hidden; }
+}

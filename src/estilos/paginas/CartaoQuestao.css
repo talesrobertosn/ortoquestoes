@@ -460,7 +460,11 @@
 }
 .av__motivos button.ativo { background: var(--verdete); border-color: var(--verdete); color: var(--sobre-destaque); }
 .av__obs { width: 100%; resize: vertical; }
-.av__acoes { display: flex; justify-content: flex-end; gap: .5rem; }
+.av__acoes { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem; }
+.av--motivo .av__pergunta { display: flex; align-items: center; gap: .55rem; margin: 0; font-weight: 700; }
+.av--motivo .av__sub { margin: -.35rem 0 0; }
+.av__fechar { margin-left: auto; display: inline-grid; place-items: center; width: 44px; height: 44px; border: 0; background: none; color: var(--texto-2); cursor: pointer; border-radius: 3px; }
+.av__fechar:hover { color: var(--texto); background: var(--superficie-2, var(--fundo)); }
 .av__erro { display: inline-flex; align-items: center; gap: .4rem; border: 1.5px dashed var(--erro); background: var(--erro-veu); color: var(--erro-texto); border-radius: 3px; padding: .5rem .75rem; font: 600 var(--corpo-menor) var(--fonte-texto); cursor: pointer; text-align: left; min-height: var(--toque); }
 .relato__ajuda { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
 @media (max-width: 560px) { .av__botoes { width: 100%; } .av__botao { flex: 1 1 0; min-width: 0; justify-content: center; padding-inline: .5rem; } }

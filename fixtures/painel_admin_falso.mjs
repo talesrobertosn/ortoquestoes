@@ -61,6 +61,31 @@ const eventos = [
 ]
 // 120 dias: o Comando pede o dobro do período (30 + 30 anteriores); os últimos 30 são os de sempre.
 const serie = Array.from({ length: 120 }, (_, k) => ({ dia: new Date(agora - (119 - k) * DIA - 3 * HORA).toISOString().slice(0, 10), cadastros: k % 3, ativos: 3 + (k % 5), respostas: k < 90 ? 60 + (k % 7) * 5 + Math.round(18 * Math.sin(k / 4)) : 80 + (k - 90) * 4 + Math.round(14 * Math.sin(k / 3)) }))
+// Notas de 1 a 10 (14/11/2026): três notas recentes fixas e mais 70 espalhadas em 10 semanas, determinísticas.
+const QUESTOES_NOTA = ['mao-0853', 'mao-2164', 'mao-0001', 'mao-0002', 'mao-0003', 'mao-0004', 'mao-0005', 'mao-0010', 'mao-0020', 'mao-0030', 'mao-0040', 'mao-0050']
+const avaliacoesFalsas = [
+  { id_questao: 'mao-0853', util: false, nota: 3, motivo: 'confuso', observacao: 'Não entendi por que a alternativa B está errada; o comentário pula essa parte.', atualizado_em: iso(agora - 2 * HORA), usuario: 'diego@exemplo.com', comentario_em: '2026-11-01' },
+  { id_questao: 'mao-2164', util: true, nota: 9, motivo: null, observacao: null, atualizado_em: iso(agora - 5 * HORA), usuario: 'elisa@exemplo.com', comentario_em: '2026-11-01' },
+  { id_questao: 'mao-0001', util: true, motivo: null, observacao: null, atualizado_em: iso(agora - 9 * HORA), usuario: 'fabio@exemplo.com' },
+  ...Array.from({ length: 70 }, (_, i) => {
+    const q = QUESTOES_NOTA[(i * 7) % QUESTOES_NOTA.length]
+    const base = q === 'mao-0004' ? 4 : q === 'mao-2164' || q === 'mao-0010' ? 9 : 7
+    const nota = Math.max(1, Math.min(10, base + ((i * 5) % 5) - 2 + (i % 3 === 0 ? 1 : 0)))
+    return { id_questao: q, util: nota >= 6, nota, motivo: nota <= 5 ? ['raso', 'confuso', 'faltou_imagem'][i % 3] : null, observacao: null, atualizado_em: iso(agora - (12 + i * 23) * HORA), usuario: `aluno${i}@exemplo.com`, comentario_em: q === 'mao-0004' && i % 2 ? '2026-11-10' : '2026-11-01' }
+  }),
+]
+function resumoNotasFalso() {
+  const m = new Map()
+  for (const a of avaliacoesFalsas) { const l = m.get(a.id_questao) ?? []; l.push(a); m.set(a.id_questao, l) }
+  return [...m].map(([id, l]) => {
+    const v = l.map(a => a.nota ?? (a.util ? 8 : 3)); const media = v.reduce((t, x) => t + x, 0) / v.length
+    const desvio = Math.sqrt(v.reduce((t, x) => t + (x - media) ** 2, 0) / v.length)
+    const motivos = {}; for (const a of l) if (a.motivo) motivos[a.motivo] = (motivos[a.motivo] ?? 0) + 1
+    const versoes = {}; for (const a of l) { const k = a.comentario_em ?? null; const x = versoes[k] ?? { comentario_em: k, n: 0, soma: 0 }; x.n++; x.soma += a.nota ?? (a.util ? 8 : 3); versoes[k] = x }
+    return { id_questao: id, n: v.length, media: media.toFixed(2), minima: Math.min(...v), maxima: Math.max(...v), desvio: desvio.toFixed(2), mensagens: l.filter(a => a.observacao).length, legado: l.filter(a => !a.nota).length, ultima_em: l.map(a => a.atualizado_em).sort().at(-1), motivos,
+      versoes: Object.values(versoes).sort((a, b) => String(a.comentario_em).localeCompare(String(b.comentario_em))).map(x => ({ comentario_em: x.comentario_em, n: x.n, media: (x.soma / x.n).toFixed(2) })) }
+  })
+}
 export const rpcs = {
   eh_administrador: () => true,
   obter_acesso_premium: () => [{ premium: true, motivo: 'assinatura', recursos_exclusivos: true, pagamentos_ativos: true }],
@@ -117,11 +142,8 @@ export const rpcs = {
     { id: 2, id_questao: 'mao-2164', tipo: 'imagem', texto: 'A radiografia não carrega no celular.', status: 'aberto', nota_admin: null, criado_em: iso(agora - DIA), resolvido_em: null, usuario: 'bruno@exemplo.com' },
     { id: 3, id_questao: 'mao-0001', tipo: 'enunciado', texto: 'Erro de digitação no enunciado.', status: 'resolvido', nota_admin: 'Corrigido.', criado_em: iso(agora - 5 * DIA), resolvido_em: iso(agora - 4 * DIA), usuario: 'ana@exemplo.com', avisado_em: iso(agora - 4 * DIA) },
   ],
-  listar_avaliacoes_comentario_admin: () => [
-    { id_questao: 'mao-0853', util: false, motivo: 'confuso', observacao: 'Não entendi por que a alternativa B está errada; o comentário pula essa parte.', atualizado_em: iso(agora - 2 * HORA), usuario: 'diego@exemplo.com' },
-    { id_questao: 'mao-2164', util: true, motivo: null, observacao: null, atualizado_em: iso(agora - 5 * HORA), usuario: 'elisa@exemplo.com' },
-    { id_questao: 'mao-0001', util: true, motivo: null, observacao: null, atualizado_em: iso(agora - 9 * HORA), usuario: 'fabio@exemplo.com' },
-  ],
+  listar_avaliacoes_comentario_admin: () => avaliacoesFalsas,
+  notas_comentarios_admin: () => resumoNotasFalso(),
   resumo_lembretes_admin: () => [{ campanha: 'nunca', pessoas: 2, enviados_7d: 5, enviados_total: 40, falharam_7d: 0 }, { campanha: 'tres_dias', pessoas: 1, enviados_7d: 3, enviados_total: 22, falharam_7d: 0 }],
   listar_destinatarios_lembrete_admin: (a) => a.p_campanha === 'nunca' ? [
     { id_usuario: u(0).id_usuario, nome: u(0).nome, email: u(0).email, respondidas: 0, acertos: 0, dias_fora: null, dias_restantes: null, plano: null, fim_periodo: null, ultimo_lembrete_em: null, ultimo_lembrete_assunto: null, lembretes_30d: 0, liberado: true },
