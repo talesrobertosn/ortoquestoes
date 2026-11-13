@@ -1,4 +1,5 @@
-/* O projeto (/sobre, /projeto), refeito do zero em 19/10/2026: leitura primeiro.
+/* O projeto (/sobre, /projeto). Leitura primeiro (19/10/2026) e, desde 13/11/2026, organizada em capítulos:
+   cada assunto num cartão numerado, separado do próximo, com um sumário fixo ao lado no computador.
    Texto corrido em 17 px e na cor cheia (--texto), secundário numa cor própria escura o bastante
    para passar de 7:1 no claro, poucas superfícies e nenhuma caixa dentro de caixa.
    Identidade pixel contida: selo do topo, números em selo dourado, botão ouro com sombra em degrau
@@ -16,8 +17,8 @@
 }
 .sb-pagina h1, .sb-pagina h2, .sb-pagina h3 { text-wrap: balance; color: var(--texto); }
 .sb-pagina p, .sb-pagina dd { text-wrap: pretty; }
-.sb-pagina a:not(.botao):not(.sb-recurso) { color: var(--verdete); font-weight: 650; text-decoration: underline; text-underline-offset: 3px; }
-.sb-pagina a:not(.botao):not(.sb-recurso):hover { color: var(--verdete-tinta); }
+.sb-pagina a:not(.botao):not(.sb-recurso):not(.sb-sumario__link) { color: var(--verdete); font-weight: 650; text-decoration: underline; text-underline-offset: 3px; }
+.sb-pagina a:not(.botao):not(.sb-recurso):not(.sb-sumario__link):hover { color: var(--verdete-tinta); }
 .sb-pagina a:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; }
 
 /* ---------- Topo ---------- */
@@ -33,7 +34,7 @@
   margin: 0; max-width: 18ch; font-family: var(--fonte-marca); font-weight: 750;
   font-size: clamp(2rem, 4.6vw, 3.3rem); letter-spacing: -0.025em; line-height: 1.06;
 }
-.sb-topo__lide { margin: var(--e-4) 0 var(--e-5); max-width: 52ch; font-size: clamp(1.0625rem, 1.6vw, 1.1875rem); line-height: 1.6; }
+.sb-topo__lide { margin: var(--e-4) 0 var(--e-3); max-width: 52ch; font-size: clamp(1.0625rem, 1.6vw, 1.1875rem); line-height: 1.6; }
 .sb-topo__marca { justify-self: end; margin-right: var(--e-4); line-height: 0; border-radius: 42px; box-shadow: 8px 8px 0 var(--px-sombra); }
 .sb-topo__marca svg { display: block; }
 
@@ -47,28 +48,67 @@
 .botao.sb-botao-ouro:hover:not(:disabled) { background: #ffdf95; color: var(--px-tinta); border-color: transparent; transform: translate(-1px, -1px); }
 .botao.sb-botao-ouro:active { transform: translate(2px, 2px); }
 
-/* ---------- Cabeça de cada seção ---------- */
-.sb-secao { display: grid; gap: var(--e-5); }
-.sb-cabeca { display: grid; gap: var(--e-2); }
-.sb-cabeca h2 { margin: 0; font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.25rem); letter-spacing: -0.03em; line-height: 1.12; }
-.sb-cabeca p { margin: 0; max-width: 65ch; color: var(--sb-texto-2); font-size: var(--sb-corpo); line-height: 1.55; }
+.sb-topo__autor { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 var(--e-5); font-weight: 750; font-size: 1rem; }
+.sb-topo__autor svg { flex: none; }
 
-/* ---------- O que tem no site: três grupos, lista simples em duas colunas ---------- */
+/* ---------- Leitura: sumário + capítulos ---------- */
+.sb-leitura { display: grid; gap: var(--e-6); align-items: start; }
+@media (min-width: 64rem) {
+  .sb-leitura { grid-template-columns: 14.5rem minmax(0, 1fr); gap: var(--e-7); }
+  .sb-sumario { position: sticky; top: 6rem; }
+}
+.sb-sumario {
+  padding: var(--e-4); border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie);
+  box-shadow: 4px 4px 0 var(--px-sombra);
+}
+.sb-sumario__titulo { margin: 0 0 var(--e-2); font-family: var(--fonte-pixel); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sb-texto-2); }
+.sb-sumario ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.sb-pagina .sb-sumario a {
+  display: flex; align-items: center; gap: 0.6rem; min-height: 44px; padding: 0.35rem 0.5rem; border-radius: 4px;
+  color: var(--texto); font-weight: 650; text-decoration: none;
+}
+.sb-pagina .sb-sumario a:hover { background: var(--verdete-veu); color: var(--texto); }
+.sb-pagina .sb-sumario a[aria-current] { background: var(--verdete-veu); color: var(--verdete); box-shadow: inset 3px 0 0 var(--verdete); }
+.sb-sumario__n {
+  flex: none; display: inline-grid; place-items: center; width: 1.6rem; height: 1.6rem;
+  background: var(--px-ouro); color: var(--px-tinta); font-family: var(--fonte-pixel-titulo); font-size: 1.1rem; line-height: 1;
+  box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra);
+}
+@media (max-width: 63.99rem) {
+  .sb-sumario ol { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px var(--e-3); }
+}
+
+.sb-capitulos { display: grid; gap: clamp(1.75rem, 4vw, 2.75rem); min-width: 0; }
+.sb-capitulo {
+  scroll-margin-top: 6rem;
+  padding: clamp(1.25rem, 3.5vw, 2.25rem);
+  border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie);
+  box-shadow: 5px 5px 0 var(--px-sombra);
+}
+.sb-capitulo__cabeca {
+  display: flex; align-items: flex-start; gap: var(--e-4);
+  padding-bottom: var(--e-5); margin-bottom: var(--e-5); border-bottom: 2px dashed var(--traco-forte);
+}
+.sb-capitulo__cabeca .px-numero { margin-top: 0.2rem; }
+.sb-capitulo__etiqueta { margin: 0 0 0.2rem; font-family: var(--fonte-pixel); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--verdete); }
+.sb-capitulo h2 { margin: 0; font-family: var(--fonte-marca); font-weight: 800; font-size: clamp(1.5rem, 2.8vw, 2.1rem); letter-spacing: -0.03em; line-height: 1.12; }
+.sb-capitulo h2:focus { outline: none; }
+.sb-capitulo__lide { margin: var(--e-2) 0 0; max-width: 62ch; color: var(--sb-texto-2); font-size: var(--sb-corpo); line-height: 1.55; }
+.sb-capitulo__corpo { display: grid; gap: var(--e-5); }
+
+/* ---------- O que tem no site: três grupos ---------- */
 .sb-grupos { display: grid; gap: var(--e-5); }
-.sb-grupo {
-  display: grid; grid-template-columns: minmax(13rem, 17rem) minmax(0, 1fr); gap: var(--e-3) var(--e-6);
-  padding-top: var(--e-5); border-top: 2px solid var(--px-borda);
-}
-.sb-grupo__cabeca { display: flex; align-items: flex-start; gap: var(--e-3); }
-.sb-grupo__cabeca h3 { margin: 0.15rem 0 0; font-family: var(--fonte-marca); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.02em; }
-.sb-grupo__cabeca p { margin: var(--e-1) 0 0; color: var(--sb-texto-2); font-size: 1rem; line-height: 1.45; }
-.sb-recursos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-1) var(--e-4); }
+.sb-grupo { display: grid; gap: var(--e-3); }
+.sb-grupo__cabeca { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem var(--e-3); }
+.sb-grupo + .sb-grupo { padding-top: var(--e-5); border-top: 1px solid var(--traco); }
+.sb-grupo__cabeca h3 { margin: 0; font-family: var(--fonte-marca); font-weight: 800; font-size: 1.2rem; letter-spacing: -0.02em; }
+.sb-grupo__cabeca p { margin: 0; color: var(--sb-texto-2); font-size: 0.975rem; line-height: 1.45; }
+.sb-recursos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-1) var(--e-3); }
 .sb-recurso {
-  display: flex; align-items: flex-start; gap: var(--e-3); min-height: 48px; padding: 0.7rem 0.75rem; border-radius: 4px;
-  color: var(--texto); text-decoration: none;
-  transition: background-color 0.16s ease-out;
+  display: flex; align-items: flex-start; gap: var(--e-3); min-height: 48px; padding: 0.65rem 0.7rem; border-radius: 4px;
+  color: var(--texto); text-decoration: none; transition: background-color 0.16s ease-out;
 }
-.sb-recurso:hover { background: var(--superficie); color: var(--texto); }
+.sb-recurso:hover { background: var(--superficie-2); color: var(--texto); }
 :root[data-tema="escuro"] .sb-recurso:hover { background: var(--superficie-2); }
 .sb-recurso:hover .sb-recurso__nome { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--verdete); }
 .sb-recurso__icone {
@@ -77,7 +117,7 @@
 }
 .sb-recurso__texto { flex: 1 1 auto; min-width: 0; display: grid; gap: 0.15rem; }
 .sb-recurso__nome { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.45rem; font-size: 1.0625rem; font-weight: 750; line-height: 1.3; }
-.sb-recurso__desc { color: var(--sb-texto-2); font-size: 1.0625rem; line-height: 1.45; }
+.sb-recurso__desc { color: var(--sb-texto-2); font-size: 1rem; line-height: 1.45; }
 .sb-tag {
   display: inline-block; padding: 0.05rem 0.4rem; background: var(--px-ouro); color: var(--px-tinta);
   font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase;
@@ -85,20 +125,16 @@
 }
 .sb-tag--beta { background: #0b2b27; color: #9fe3d4; box-shadow: 1px 1px 0 #072320; }
 
-/* ---------- Como os comentários são feitos ---------- */
-.sb-passos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-5) var(--e-6); }
-.sb-passos li { display: grid; align-content: start; gap: var(--e-2); }
-.sb-passos .px-numero { margin-bottom: var(--e-1); }
-.sb-passos h3 { margin: 0; font-size: 1.2rem; line-height: 1.3; }
-.sb-passos p { margin: 0; font-size: var(--sb-corpo); line-height: 1.6; }
-.sb-ia {
-  max-width: 74ch; padding: clamp(1.1rem, 3vw, 1.6rem) clamp(1.1rem, 3vw, 1.85rem);
-  border-left: 6px solid var(--ouro); border-radius: 0 6px 6px 0; background: var(--ouro-veu);
+/* ---------- Como escrevemos ---------- */
+.sb-passos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-5) var(--e-6); }
+.sb-passos li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.25rem var(--e-3); align-content: start; }
+.sb-passos__icone {
+  grid-row: span 2; display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem;
+  background: var(--verdete-veu); color: var(--verdete); box-shadow: 2px 2px 0 var(--px-sombra);
 }
-.sb-ia h3 { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 var(--e-2); font-size: 1.15rem; }
-.sb-ia h3 svg { flex: none; color: var(--ouro-texto); }
-.sb-ia p { margin: 0; font-size: var(--sb-corpo); line-height: 1.65; }
-.sb-biblio { margin: 0; max-width: 74ch; color: var(--sb-texto-2); font-size: 1rem; line-height: 1.6; }
+.sb-passos h3 { margin: 0.35rem 0 0; font-size: 1.15rem; line-height: 1.3; }
+.sb-passos p { margin: 0; font-size: var(--sb-corpo); line-height: 1.6; }
+.sb-biblio { margin: 0; padding-top: var(--e-4); border-top: 1px solid var(--traco); color: var(--sb-texto-2); font-size: 1rem; line-height: 1.6; }
 .sb-biblio strong { color: var(--texto); }
 
 /* ---------- O acervo ---------- */
@@ -108,15 +144,31 @@
 .sb-numeros { margin: 0; display: grid; gap: var(--e-4); }
 .sb-numeros > div { display: flex; flex-direction: column-reverse; padding-left: var(--e-4); border-left: 4px solid var(--px-ouro); }
 .sb-numeros dt { color: var(--sb-texto-2); font-size: 1rem; font-weight: 650; }
-.sb-numeros dd {
-  margin: 0; color: var(--verdete); font-family: var(--fonte-pixel-titulo); font-size: 3rem; line-height: 0.95;
-  font-variant-numeric: tabular-nums;
+.sb-numeros dd { margin: 0; color: var(--verdete); font-family: var(--fonte-pixel-titulo); font-size: 3rem; line-height: 0.95; font-variant-numeric: tabular-nums; }
+
+/* ---------- Avisos importantes ---------- */
+.sb-capitulo--avisos { background: var(--pergaminho, #fbf3df); border-color: var(--px-borda); }
+:root[data-tema="escuro"] .sb-capitulo--avisos { background: var(--superficie); box-shadow: 5px 5px 0 var(--px-sombra), inset 0 4px 0 var(--px-ouro); }
+.sb-capitulo--avisos .sb-capitulo__etiqueta { color: var(--ouro-texto); }
+:root[data-tema="escuro"] .sb-capitulo--avisos .sb-capitulo__etiqueta { color: var(--px-ouro); }
+.sb-avisos { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.sb-aviso { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--e-4); padding: var(--e-4) 0; }
+.sb-aviso + .sb-aviso { border-top: 1px solid rgba(122, 87, 16, 0.22); }
+:root[data-tema="escuro"] .sb-aviso + .sb-aviso { border-top-color: var(--traco); }
+.sb-aviso__icone {
+  display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem;
+  background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra);
+  margin: 2px 4px 4px 2px;
 }
+.sb-aviso h3 { margin: 0.2rem 0 var(--e-1); font-size: 1.125rem; line-height: 1.3; }
+.sb-aviso p { margin: 0; max-width: 68ch; font-size: var(--sb-corpo); line-height: 1.65; }
+.sb-avisos__rodape { margin: 0; padding-top: var(--e-4); border-top: 2px dashed rgba(122, 87, 16, 0.3); color: var(--sb-texto-2); font-size: 1rem; line-height: 1.6; }
+:root[data-tema="escuro"] .sb-avisos__rodape { border-top-color: var(--traco-forte); }
 
 /* ---------- Dúvidas comuns ---------- */
-.sb-duvidas { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-5) var(--e-7); }
-.sb-duvidas > div { display: grid; gap: var(--e-2); align-content: start; max-width: 60ch; }
-.sb-duvidas dt { font-size: 1.15rem; font-weight: 750; line-height: 1.3; }
+.sb-duvidas { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-5) var(--e-6); }
+.sb-duvidas > div { display: grid; gap: var(--e-2); align-content: start; max-width: 60ch; padding-left: var(--e-4); border-left: 3px solid var(--verdete-veu); }
+.sb-duvidas dt { font-size: 1.125rem; font-weight: 750; line-height: 1.3; }
 .sb-duvidas dd { margin: 0; font-size: var(--sb-corpo); line-height: 1.6; }
 
 /* ---------- Chamada do fim ---------- */
@@ -133,10 +185,7 @@
 
 /* ---------- Telas menores ---------- */
 @media (max-width: 60rem) {
-  .sb-grupo { grid-template-columns: minmax(0, 1fr); }
   .sb-passos { grid-template-columns: minmax(0, 1fr); }
-  .sb-passos li { grid-template-columns: auto minmax(0, 1fr); column-gap: var(--e-3); }
-  .sb-passos .px-numero { grid-row: span 2; margin-bottom: 0; }
   .sb-acervo__corpo { grid-template-columns: minmax(0, 1fr); }
   .sb-numeros { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
@@ -145,9 +194,10 @@
   .sb-topo { grid-template-columns: minmax(0, 1fr); padding-bottom: 4.25rem; }
   .sb-topo__marca { display: none; }
   .sb-topo .botao.sb-botao-ouro { width: 100%; }
+  .sb-sumario ol { grid-template-columns: minmax(0, 1fr); }
+  .sb-capitulo__cabeca { gap: var(--e-3); }
   .sb-recursos { grid-template-columns: minmax(0, 1fr); }
   .sb-recurso { padding-inline: 0.25rem; }
-  .sb-recurso__desc { font-size: 1rem; }
   .sb-duvidas { grid-template-columns: minmax(0, 1fr); }
   .sb-numeros { gap: var(--e-3); }
   .sb-numeros > div { padding-left: var(--e-3); }
