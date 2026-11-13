@@ -166,7 +166,7 @@ O capítulo cita quatro sistemas: **Russe** (pela inclinação do traço, preven
 
 > Na prova: a **B2 (cintura completa) passa de um terço** de todas as fraturas e é a mais prevalente. B3 é polo proximal, B4 é a fratura-luxação perilunar, C é retardo e D é pseudartrose.
 
-!questoes central=trauma-0731,mao-1038,mao-0998,trauma-0483,mao-1434,trauma-0811 relacionadas=trauma-0665 treino=mao-1674
+!questoes central=trauma-0731,mao-1038,mao-0998,trauma-0483,mao-1434,trauma-0811 relacionadas=trauma-0665 treino=mao-1674,mao-2463
 conceito: Na Herbert e Fisher, A é aguda estável, B é aguda instável (B2 cintura, a mais comum; B3 polo proximal; B4 transescafoperilunar), C é retardo e D é pseudartrose.
 como: É uma das classificações mais repetidas do tema: o SBOT-SP pediu a mais prevalente; a UFG pediu o B3 e o B4; o ENARE R4 2023, o tipo C; a USP-SP 2024 e o Einstein 2026 pediram o D2 com as mesmas quatro alternativas. O TARO 2024 (trauma-0665) deu a pseudartrose com necrose como **D4**: a figura do Rockwood (44-21) traz só D1 e D2, mas o HEBERT (cap. 52, Quadro 52.1) mostra a versão ampliada por FILAN e HERBERT, com **D1 fibrosa, D2 com deformidade inicial, D3 esclerótica com deformidade avançada e D4 necrose avascular**. Note a divergência: a esclerótica é D2 na figura do Rockwood e D3 no quadro do HEBERT.
 armadilha: D2 como "fratura-luxação transescafoperilunar": essa é a B4, aguda e instável.
@@ -197,7 +197,7 @@ São indicações: fratura do **tubérculo**, fratura da **cintura sem desvio ou
 
 As fraturas sem desvio são estáveis e consolidam **acima de 90%** sem cirurgia.
 
-!questoes central=mao-0917,mao-0747
+!questoes central=mao-0917,mao-0747 treino=mao-1786
 conceito: A fratura estável sem desvio da cintura ou do polo distal consolida em mais de 90% com imobilização; o tubérculo é a de menor risco de pseudartrose.
 como: A UFG 2019 pediu a taxa de união (90%); o IAUPE 2025 colocou o tubérculo entre fatores de risco verdadeiros (polo proximal, desvio maior que 1 mm, início tardio, tabagismo).
 armadilha: Desvio maior que 1 mm: é critério de instabilidade da Mayo e aumenta a pseudartrose.
@@ -215,7 +215,7 @@ Os autores fazem **decisão compartilhada**: tomografia se houver dúvida sobre 
 
 O **polo proximal** tem risco de pseudartrose até **7,5 vezes maior** no gesso numa metanálise. A interrupção da irrigação do fragmento é praticamente certa, mas, **estabilizado, ele pode revascularizar e consolidar**. A conduta é cirúrgica, por **miniacesso dorsal** (incisão de 3 cm sobre a junção escafossemilunar, entre o 2º e o 3º compartimentos, capsulotomia em T invertido) ou artroscopia, com parafuso menor e cuidado com a **crista dorsal**.
 
-!questoes central=trauma-0810 relacionadas=mao-1319 treino=mao-1675,mao-1676
+!questoes central=trauma-0810 relacionadas=mao-1319 treino=mao-1675,mao-1676,mao-2524,mao-2320
 conceito: A fratura do polo proximal se opera por via dorsal, com miniacesso e parafuso de compressão sem cabeça, porque é por trás que se alcança e se segura o fragmento pequeno.
 como: O Einstein 2026 contou a história típica (queda no futebol, polo proximal, ângulo escafossemilunar preservado) e pôs como distratores gesso longo e enxertos vascularizados de pseudartrose.
 alerta: Na USP-SP 2025 (mao-1319), o gabarito afirma que a não união ocorre em cerca de 10% a 15% de todas as fraturas do escafoide. O Rockwood fala em **até 10%**, bem menos nas sem desvio ou bem imobilizadas. As outras alternativas estão erradas pelo próprio livro: o polo proximal se opera por via **dorsal**, a flexão exigida pela via dorsal pode **desreduzir** a fratura instável e as radiografias iniciais deixam passar 30% a 40% (não 50%).
@@ -234,7 +234,7 @@ Em qualquer via: pelo menos quatro incidências (AP, perfil, oblíquas a 30°-45
 
 Na via aberta volar, a incisão segue o **flexor radial do carpo**: abre-se a **bainha do tendão**, ele é afastado para ulnar, o ramo palmar superficial da artéria radial é afastado ou ligado e a cápsula é aberta preservando o radioescafocapitato.
 
-!questoes central=trauma-0808,mao-1530,trauma-0041 relacionadas=mao-1194
+!questoes central=trauma-0808,mao-1530,trauma-0041 relacionadas=mao-1194 treino=mao-2222,mao-2047
 conceito: Na fixação do escafoide mede-se o fio e escolhe-se um parafuso 4 mm menor; a via volar tem a vantagem de não ter tendões no caminho e é feita pela bainha do flexor radial do carpo.
 como: O Einstein 2026 pediu quantos milímetros subtrair; a USP-SP 2026 pôs as desvantagens da via volar (centralização, polo proximal, desvio radial) como se fossem vantagens; o TARO 2018 pediu o plano do acesso. A questão da PUC-SP 2023 sobre a via volar não tem gabarito no acervo.
 armadilha: "Permite o eixo central": é a vantagem da via dorsal.
@@ -332,7 +332,7 @@ O **ligamento interósseo escafossemilunar** tem forma de "C" e três partes. A 
 
 A ruptura do escafossemilunar desacopla os dois ossos e o intervalo **alarga progressivamente com o tempo**; a deformidade estática depende da lesão dos estabilizadores secundários. Na cirurgia, o ligamento costuma estar **arrancado do escafoide e preso ao semilunar**; a desinserção do semilunar ou a ruptura oblíqua são raras.
 
-!questoes central=mao-0013 relacionadas=mao-0620,mao-0646,mao-1318,mao-1305 treino=mao-1670
+!questoes central=mao-0013 relacionadas=mao-0620,mao-0646,mao-1318,mao-1305 treino=mao-1670,mao-2477,mao-1954
 conceito: A dissociação escafossemilunar acontece em hiperextensão, desvio ulnar e supinação intercarpal; o ligamento costuma se soltar do escafoide e a porção dorsal é a mais forte.
 como: O TARO 2019 trocou o desvio e a rotação nas quatro alternativas. O TARO 2009 e o TARO 2006 perguntaram onde o ligamento rompe na lesão aguda; essas duas provas não têm gabarito no acervo, e o capítulo diz que o mais comum é a desinserção no escafoide. A USP-SP 2025 cobrou que a lesão aguda completa não abre logo o intervalo nem o ângulo (o alargamento é progressivo).
 armadilha: Desvio radial e pronação: é a combinação da lesão perilunar invertida, que começa pelo lunopiramidal.
@@ -343,7 +343,7 @@ armadilha: "Na fase aguda já há aumento do espaço": sem os estabilizadores se
 
 A dor fica no "ponto mole" dorsal, logo distal a Lister. O **teste de deslocamento do escafoide (Watson)**: o polegar do examinador pressiona o **tubérculo do escafoide de palmar para dorsal** enquanto o punho vai do **desvio ulnar para o desvio radial**. No desvio radial o escafoide precisa fletir; segurado pela frente e sem o ligamento, ele **subluxa para dorsal** para fora da fossa do rádio e volta com um ressalto quando a pressão é solta. É **sugestivo, mas pouco específico**: até 30% dos punhos normais dão positivo, e a frouxidão ligamentar (Beighton alto) dá falso-positivo, mais ligado à instabilidade mediocárpica.
 
-!questoes central=mao-0076,mao-0521 treino=mao-1671
+!questoes central=mao-0076,mao-0521 treino=mao-1671,mao-2199
 conceito: O teste de Watson avalia a instabilidade do escafoide (escafossemilunar), com pressão no tubérculo e movimento do desvio ulnar para o radial.
 como: O TARO cobrou o mesmo teste por dois lados: em 2014, o osso avaliado; em 2011, o sentido do movimento.
 armadilha: Do desvio radial para o ulnar: é o sentido do teste de deslocamento mediocárpico, que faz o semilunar voltar de flexão para extensão.
@@ -381,7 +381,7 @@ armadilha: Intervalo de 2 mm: está dentro do normal.
 - **Geissler:** **I** hemorragia ou atenuação vista da mediocárpica, ossos congruentes (conservador); **II** incongruência vista da mediocárpica (redução e fixação artroscópicas); **III** desalinhamento nas duas articulações com espaço que admite o **probe de 1 mm** (artroscopia, com ou sem via aberta); **IV** instabilidade grosseira com espaço que admite o **artroscópio de 2,7 mm** (redução aberta). Descreve bem a frouxidão, mas não separa bem frouxidão normal de instabilidade patológica.
 - **EWAS:** acrescenta o lugar da lesão. **I** normal; **II** lesão da membrana, ponta do probe entra, estável; **IIIA** lesão palmar (frouxidão anterior); **IIIB** lesão dorsal (frouxidão posterior); **IIIC** ruptura completa **redutível**, o probe inteiro entra e a articulação volta ao tirar o probe; **IV** ruptura completa em que a **cânula de 2,7 mm passa** da mediocárpica para a radiocárpica, sem achado radiográfico estático; **V** igual ao IV com intervalo estático e talvez DISI.
 
-!questoes central=mao-0728,mao-0830
+!questoes central=mao-0728,mao-0830 treino=mao-2483,mao-2213
 conceito: No Geissler III o probe de 1 mm passa entre os ossos; no IV passa o artroscópio. No EWAS, a ruptura dorsal e volar redutível, sem diástase estática, é o IIIC.
 como: O IAUPE 2025 pediu o grau III de Geissler; o INTO 2026, o estágio EWAS da ruptura dorsal e volar sem diástase.
 armadilha: "Passagem do probe até a radiocárpica": no Geissler, o que caracteriza o IV é a passagem do artroscópio de 2,7 mm.
@@ -404,7 +404,7 @@ Garcia-Elias propôs cinco perguntas: o escafossemilunar dorsal está íntegro? 
 
 A tabela original de Andersson e Garcia-Elias (44-17) tem sete estágios e separa a translação ulnar (índice de descobertura do semilunar anormal, estágio V), a deformidade irredutível (VI) e a cartilagem lesada (VII); a tabela de tratamento (44-19) não tem o passo da translação ulnar e chama de V a deformidade irredutível e de VI a que já tem artrose. O que a prova pede é o encaixe dos primeiros quatro.
 
-!questoes central=mao-0240,mao-0777 relacionadas=mao-1209 treino=mao-1687,mao-1783
+!questoes central=mao-0240,mao-0777 relacionadas=mao-1209 treino=mao-1687,mao-1783,mao-2290,mao-1951,mao-2209
 conceito: No Garcia-Elias, a dissociação irreparável com subluxação rotatória redutível do escafoide e cartilagem íntegra é o estágio IV e pede reconstrução com enxerto, como a tenodese de três ligamentos.
 como: A prova de Ortopedia e o INTO 2023 usaram o mesmo enunciado: um pediu a técnica, o outro o estágio. A PUC-SP 2023 pediu a definição do estágio 3; essa prova não tem gabarito no acervo, e o capítulo define o estágio III como ligamento irreparável **sem** desalinhamento.
 armadilha: Reparo ligamentar: só serve quando o ligamento ainda é reparável (estágio II).
@@ -570,7 +570,7 @@ Larsen organizou a descrição da instabilidade em seis eixos (cronicidade, cons
 
 Wolfe e Kakar propuseram o acrônimo **SCARCE** para decidir o tratamento: estabilizadores **S**ecundários, **C**ronicidade, **A**linhamento, **R**edutibilidade, **C**artilagem e **E**xtensão da lesão.
 
-!questoes central=mao-0592,mao-1036,mao-0080 relacionadas=mao-0513,mao-0138 treino=mao-1684,mao-1686
+!questoes central=mao-0592,mao-1036,mao-0080 relacionadas=mao-0513,mao-0138 treino=mao-1684,mao-1686,mao-2292,mao-2293,mao-2208
 conceito: DISI vem da perda do elo escafoide-semilunar (dissociação escafossemilunar, fratura ou pseudartrose do escafoide); VISI estático vem da lesão lunopiramidal.
 como: O TARO 2013 pediu a correlação de Dobyns e Cooney (fratura do escafoide e DISI); a UFG 2021 pediu a lesão que não faz DISI (lunopiramidal); o TARO 2014 pediu o ligamento lesado no VISI estático. A prova de Ortopedia cobrou os ângulos normais do perfil.
 alerta: No TARO 2011 (mao-0513), o gabarito foi que a instabilidade perilunar é **dissociativa**. O Rockwood se contradiz: a tabela 44-4 põe a luxação perilunar entre os exemplos de dissociativa, mas o texto da classificação a chama de instabilidade **complexa** (falha entre as fileiras e dentro delas). O gabarito segue a tabela; a subluxação rotatória do escafoide, também nas alternativas, é o exemplo mais puro de dissociativa.
@@ -591,7 +591,7 @@ No SNAC, a diferença é que o **polo proximal continua articulado com o rádio*
 
 > Na prova: o estágio I é **estiloide com escafoide**; a carpectomia proximal **perde a indicação no III**, porque a cabeça do capitato desgastada passaria a articular com a fossa do semilunar.
 
-!questoes central=mao-0587,mao-0512 relacionadas=trauma-0344,mao-1442,mao-0993 treino=mao-1680,mao-1688
+!questoes central=mao-0587,mao-0512 relacionadas=trauma-0344,mao-1442,mao-0993 treino=mao-1680,mao-1688,mao-2035
 conceito: SNAC e SLAC começam entre a estiloide do rádio e o escafoide, avançam pela fossa do escafoide e pela capitossemilunar e poupam a radiolunar; no estágio III a saída é a escafoidectomia com quatro cantos.
 como: O TARO 2012 pediu onde começa o estágio I (estiloide do rádio); o TARO 2011, o tratamento do estágio III (quatro cantos); a prova de Ortopedia mostrou a radiografia e pediu o estágio. A UFG 2020 contou colapso avançado por lesão escafossemilunar crônica e pôs a carpectomia contra reconstruções ligamentares.
 alerta: Na USP-SP 2024 (mao-1442), o gabarito foi o **polo proximal do capitato** como a superfície poupada no SNAC e comprometida no SLAC avançado. O Rockwood aponta outra superfície: no SNAC, o que fica poupado é a **articulação do polo proximal do escafoide com o rádio** (a fossa do escafoide), enquanto no SLAC o estágio II já pega **toda a fossa do escafoide**; a capitossemilunar entra no estágio III dos dois. Pelo livro, a alternativa mais defensável seria a fossa do escafoide.
