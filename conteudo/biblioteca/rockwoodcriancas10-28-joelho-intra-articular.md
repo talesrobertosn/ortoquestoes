@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 28 · Intra-Articular Injuries of the Knee
 autores: Dennis E. Kramer e Mininder S. Kocher
-fonte: Livro conferido localmente em 28/10/2026 e relido por inteiro em 31/10/2026, capítulo 28, com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38 (pp. 1451 a 1461) e cap. 56 (pp. 2380 a 2383), e o Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 30, fraturas da patela (pp. 1344 a 1346, a 1345 inferida). O PDF do Rockwood não traz numeração impressa; as referências dele citam capítulo, seção, figura, tabela e algoritmo.
+fonte: Livro conferido localmente em 28/10/2026 e relido por inteiro em 31/10/2026, capítulo 28, com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38 (pp. 1451 a 1461) e cap. 56 (pp. 2380 a 2383), e o Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 30, fraturas da patela (pp. 1344 a 1346, a 1345 inferida).
 subtemas: Joelho da criança; Trauma pediátrico
 resumo: Espinha tibial (avulsão condroepifisária, valgo com rotação externa, osso mais fraco que o LCA, MEYERS e MCKEEVER e ZARICZNYJ, menisco medial encarcerado em 26% e 65%, menisco lateral roto, extensão completa por 6 semanas no tipo I, redução fechada em 50% do II e 0% do III, parafuso epifisário ou sutura, LACHMAN positivo sem instabilidade, artrofibrose, perda da extensão, ruptura tardia do LCA); luva patelar; fratura osteocondral (faceta medial e côndilo lateral, radiografia perde 36%, 5 mm); luxação da patela (PARIKH, LPFM 60%, ângulo Q e TT-TG, conservador 60% a 70%, LPFM epifisário, osteotomia só com apófise fechada); hemartrose e LCA; colaterais; LCA no imaturo por grupo de crescimento; LCP; luxação do joelho e índice tornozelo-braquial.
 ---

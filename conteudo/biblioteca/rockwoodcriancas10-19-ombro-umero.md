@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 19 · Shoulder Dislocation and Fractures of the Proximal Humerus and Humeral Shaft
 autores: Donald S. Bae
-fonte: Livro conferido localmente em 27/10/2026 e relido inteiro em 31/10/2026, capítulo 19 (instabilidade do ombro, fraturas do úmero proximal e da diáfise do úmero). O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 27/10/2026 e relido inteiro em 31/10/2026, capítulo 19 (instabilidade do ombro, fraturas do úmero proximal e da diáfise do úmero).
 subtemas: Fraturas da clavícula e do úmero proximal na criança; Outras fraturas na criança; Lesões fisárias
 resumo: Luxação anterior em 90%, recidiva de cerca de 70% no adolescente, multidirecional tratada com fisioterapia, LATARJET na perda óssea; úmero proximal com fise extracapsular que faz 80% do crescimento, tuberosidade maior aos 1 a 3 anos, SALTER-HARRIS I abaixo de 5 anos, Tabela 19-1 (70 graus e 100% abaixo de 5 anos, 40 a 70 graus e 50 a 100% de 5 a 11, menos de 40 graus e 50% acima de 12), cabeça em abdução, flexão e rotação externa, plexo nas fraturas em valgo, fios e hastes no adolescente; diáfise bimodal, 20 a 30 graus de varo e 15 de rotação interna aceitos, radial em 5% com recuperação espontânea, fratura de parto sem redução.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 19 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Donald S. Bae, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam seção, figura e tabela.
+Este resumo é inspirado no capítulo 19 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Donald S. Bae, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 O capítulo junta três lesões do braço da criança que parecem distantes, mas têm a mesma lógica: a **luxação do ombro**, a **fratura do úmero proximal** e a **fratura da diáfise do úmero**. Nas três, o que manda é a idade. O ombro da criança tem uma fise forte em crescimento, que remodela quase tudo, e uma articulação que compensa deformidades com o seu arco de movimento enorme. Por isso o capítulo inteiro gira em torno de uma pergunta: **quanto se pode aceitar**, e a partir de que idade a remodelação deixa de dar conta.
 

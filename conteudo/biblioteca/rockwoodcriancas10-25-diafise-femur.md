@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 25 · Femoral Shaft Fractures
 autores: Keith D. Baldwin e John M. Flynn
-fonte: Livro conferido localmente em 26/10/2026 e relido em 31/10/2026, capítulo 25. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 26/10/2026 e relido em 31/10/2026, capítulo 25.
 subtemas: Fraturas do fêmur e da perna na criança; Outras fraturas na criança
 resumo: Tratamento pela idade e pelo padrão (PAVLIK, gesso imediato, hastes elásticas, haste trocantérica lateral, placa submuscular), a Tabela 25-2 de angulação aceitável, telescopagem de THOMPSON, síndrome compartimental no gesso 90 e 90, maus-tratos abaixo de 18 meses, artéria cervical ascendente e necrose, hipercrescimento e remodelação.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 25 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Keith D. Baldwin e John M. Flynn, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
+Este resumo é inspirado no capítulo 25 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Keith D. Baldwin e John M. Flynn, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 A fratura da diáfise do fêmur é a fratura pediátrica em que o tratamento muda mais com a **idade**. Quase toda questão de prova é uma variação da mesma pergunta: **qual o método para esta idade, este peso e este padrão de fratura?** Em volta dela, a banca cobra os **limites de angulação aceitável** (Tabela 25-2), a **síndrome compartimental no gesso**, o **desvio dos fragmentos** pelos músculos, os números das **hastes elásticas** e a **necrose da cabeça femoral** com a haste rígida.
 

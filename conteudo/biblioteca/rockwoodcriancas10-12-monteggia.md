@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 12 · Monteggia Fracture-Dislocation in Children
 autores: Peter M. Waters e Kenneth J. Noonan
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 12. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e algoritmo.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 12.
 subtemas: Fraturas do antebraço e punho na criança; Luxações na criança; Trauma pediátrico
 resumo: BADO I anterior (70% a 75%), II posterior com imobilização em extensão, III lateral por varo com mais lesão do interósseo posterior, IV com o rádio; equivalentes e LETTS; tratamento pela ulna (plástica e galho verde fechada, transversa intramedular, oblíqua longa com placa); linha radiocapitelar e arco ulnar; luxação congênita da cabeça; ligamento anular interposto; MONTEGGIA crônico com osteotomia da ulna; BELL TAWSE; nervos, síndrome compartimental e ossificação.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 12 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Peter M. Waters e Kenneth J. Noonan, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e algoritmo.
+Este resumo é inspirado no capítulo 12 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Peter M. Waters e Kenneth J. Noonan, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 O MONTEGGIA é uma lesão rara que as provas adoram. A banca cobra a **classificação de BADO** tipo a tipo (sobretudo o **tipo II**: ulna metafisária, mecanismo com o cotovelo a 60 graus e **imobilização em extensão**), a classificação de **LETTS**, o **mecanismo do tipo III** (varo), o **tipo IV** (raro, rádio no mesmo nível ou distal), a **luxação congênita da cabeça do rádio** (em geral posterior) e a técnica de **BELL TAWSE** para o MONTEGGIA crônico. O capítulo, por sua vez, insiste em duas ideias que atravessam tudo: o MONTEGGIA agudo **nunca deveria passar despercebido**, e o tratamento se escolhe **pela fratura da ulna**.
 

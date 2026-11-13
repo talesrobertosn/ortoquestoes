@@ -8,14 +8,14 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021)
 capitulo: Capítulo 9 · Scoliosis
 autores: B. Stephens RICHARDS, Daniel J. SUCATO e Charles E. JOHNSTON
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), pp. 132 a 176 (idiopática do adolescente, instrumentação posterior e anterior, juvenil) e pp. 191 a 219 (escoliose de início precoce, infantil, MEHTA, gesso, tração, hastes de crescimento); Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis, de Keith J. ORLAND e Jeffrey R. SAWYER), pp. 1524 a 1582 (infantil, juvenil, adolescente, técnica e complicações) e abertura da escoliose neuromuscular (p. 1592 aprox.). Tabelas conferidas no PDF. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), pp. 132 a 176 (idiopática do adolescente, instrumentação posterior e anterior, juvenil) e pp. 191 a 219 (escoliose de início precoce, infantil, MEHTA, gesso, tração, hastes de crescimento); Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis, de Keith J. ORLAND e Jeffrey R. SAWYER), pp. 1524 a 1582 (infantil, juvenil, adolescente, técnica e complicações) e abertura da escoliose neuromuscular (p. 1592 aprox.). Tabelas conferidas no PDF.
 subtemas: Escoliose idiopática
 resumo: Escoliose acima de 10 graus, rotação dos corpos para a convexidade e hipocifose torácica; AIS típica torácica direita, infantil de meninos e torácica esquerda (70% a 90% resolvem; RVAD de MEHTA acima de 20 graus ou costela em fase 2 progridem); fechamento da trirradiada perto do pico de crescimento, antes do RISSER 1 e da menarca; LONSTEIN e CARLSON (RISSER 0 a 1: 22% e 68%; RISSER 2 a 4: 1,6% e 23%); progridem mais meninas, imaturos, curvas torácicas, duplas e maiores; colete de 25 a 45 graus em RISSER 0 a 2 (TLSO só com ápice em T7 ou abaixo), cirurgia acima de 45 a 50; COBB pelas placas superior e inferior das vértebras terminais; NASH-MOE mede rotação; LENKE com tipo, modificador lombar pela CSVL e sagital T5-T12 (hipercifótico acima de 40); parafuso pedicular corrige melhor no plano coronal e axial.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 9 (Scoliosis) do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), na parte das escolioses idiopáticas (infantil, juvenil e do adolescente), e o completa com a parte idiopática do capítulo 40 do Campbell's Operative Orthopaedics, 15ª edição (2026). As páginas citadas são as impressas.
+Este resumo segue o capítulo 9 (Scoliosis) do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), na parte das escolioses idiopáticas (infantil, juvenil e do adolescente), e o completa com a parte idiopática do capítulo 40 do Campbell's Operative Orthopaedics, 15ª edição (2026).
 
 A escoliose idiopática é um diagnóstico de exclusão que a prova transforma em contas, quase sempre em quatro perguntas: qual é a curva (direção, ápice, COBB, rotação), quanto falta crescer (RISSER, trirradiada, menarca, pico de crescimento), qual o risco de piorar (LONSTEIN e CARLSON e os fatores de progressão) e o que fazer (observar, colete ou artrodese). Por cima vêm LENKE e KING, o ângulo de MEHTA da forma infantil e os números da cirurgia com parafusos pediculares.
 

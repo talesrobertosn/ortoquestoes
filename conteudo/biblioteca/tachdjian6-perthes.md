@@ -8,14 +8,14 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34
 capitulo: Capítulo 14 · Legg-Calvé-Perthes Disease
 autores: Harry K.W. Kim e John A. Herring
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14, p. 527 a 538, 540 a 548, 553 a 575 e 579 a 580 (tabelas 14.1 a 14.5 extraídas do PDF); Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Benjamin W. SHEFFER), p. 1186 a 1196, com as eTabelas 34.1 e 34.2 (p. 1186.e1). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14, p. 527 a 538, 540 a 548, 553 a 575 e 579 a 580 (tabelas 14.1 a 14.5); Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Benjamin W. SHEFFER), p. 1186 a 1196, com as eTabelas 34.1 e 34.2 (p. 1186.e1).
 subtemas: Doença de Legg-Calvé-Perthes
 resumo: Necrose da epífise femoral proximal da criança (meninos 4 a 5:1, 4 a 8 anos, bilateral em 10%); osteócitos ausentes ou picnóticos na necrose; sinal do crescente na fase inicial, achatamento e subluxação na fragmentação; perda de abdução e rotação interna; MEYER no bilateral pequeno; CATTERALL (I a IV e cabeça em risco), SALTER-THOMPSON (fratura subcondral menor ou maior que metade), HERRING (AP na fragmentação; C com mais de 50% de colapso), STULBERG no desfecho (III elíptica além de 2 mm; IV plana mais de 1 cm com acetábulo plano); idade é o melhor fator prognóstico; tratamento é contenção.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 14 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), de Harry K.W. KIM e John A. HERRING (o da classificação do pilar lateral), e o completa com a parte de LEGG-CALVÉ-PERTHES do capítulo 34 do Campbell's Operative Orthopaedics, 15ª ed. (2026). As páginas citadas são as impressas.
+Este resumo segue o capítulo 14 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), de Harry K.W. KIM e John A. HERRING (o da classificação do pilar lateral), e o completa com a parte de LEGG-CALVÉ-PERTHES do capítulo 34 do Campbell's Operative Orthopaedics, 15ª ed. (2026).
 
 A doença inteira cabe numa frase do Tachdjian (p. 527): o sangue da epífise femoral proximal falta por um tempo, o osso morre, o organismo **reabsorve o osso morto e o substitui por osso novo**, e é justamente na fase de reabsorção, a **fragmentação**, que a cabeça fica mole e **achata** (coxa plana). Depois ela reossifica, volta a crescer, às vezes cresce demais (**coxa magna**) e remodela até o fim do crescimento. Quem entende essa sequência acerta quase todas as perguntas de fase, porque cada achado da prova pertence a um momento do processo: osteócito sem núcleo é morte, crescente é fratura do osso morto, achatamento e subluxação são o colapso da fase fraca, osso novo na periferia é cura.
 

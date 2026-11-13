@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 22 · Thoracolumbar Spine Fractures
 autores: Kenneth D. Illingworth e David L. Skaggs
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 22, com trechos do Tachdjian's Pediatric Orthopaedics (6ª ed., caps. 7 e 28) sobre SCIWORA e fratura do anel apofisário, e a classificação de TAKATA da fratura do limbo pelo HEBERT (5ª ed., cap. 38, Quadro 38.1) e pelo Lovell and Winter (7ª ed., cap. 34, p. 1776). O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e algoritmo.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 22, com trechos do Tachdjian's Pediatric Orthopaedics (6ª ed., caps. 7 e 28) sobre SCIWORA e fratura do anel apofisário, e a classificação de TAKATA da fratura do limbo pelo HEBERT (5ª ed., cap. 38, Quadro 38.1) e pelo Lovell and Winter (7ª ed., cap. 34, p. 1776).
 subtemas: Trauma da coluna na criança
 resumo: Mecanismos (maus-tratos no lactente, cinto abdominal, queda com carga axial); lesão abdominal em quase metade das CHANCE; 32% de outra fratura vertebral; 85% sem déficit; SCIWORA; radiografia, tomografia e ressonância; DENIS, TLICS e AO Spine; compressão (cifose menor que 30 graus, perda de altura acima de 50%); explosão estável com TLSO; CHANCE e faceta vazia; fratura-luxação e escoliose paralítica abaixo de 10 anos; placa terminal e faceta no atleta jovem; corticoide.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 22 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Kenneth D. Illingworth e David L. Skaggs, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Duas lacunas que as provas cobram (a localização e a fisiopatologia da SCIWORA e a epidemiologia da fratura do anel apofisário) vêm do Tachdjian's Pediatric Orthopaedics (6ª edição, 2021, caps. 7 e 28), indicado em cada trecho. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e algoritmo.
+Este resumo é inspirado no capítulo 22 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Kenneth D. Illingworth e David L. Skaggs, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Duas lacunas que as provas cobram (a localização e a fisiopatologia da SCIWORA e a epidemiologia da fratura do anel apofisário) vêm do Tachdjian's Pediatric Orthopaedics (6ª edição, 2021, caps. 7 e 28), indicado em cada trecho.
 
 As fraturas da coluna toracolombar são relativamente incomuns na criança, porque a coluna jovem é elástica e móvel. Quando acontecem, a banca pergunta sobre a **SCIWORA** (onde, em quem e por que mecanismo), a **indicação cirúrgica da fratura por compressão**, o **sinal da faceta vazia** da lesão de CHANCE e a **fratura da placa terminal**, a lesão fisária da coluna do adolescente.
 

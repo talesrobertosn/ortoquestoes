@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 51 · Shoulder and Elbow Injuries (seção Adhesive Capsulitis), com o Capítulo 57 · Arthroscopy of the Upper Extremity (contraturas e liberação capsular)
 autores: Tyler J. Brolin e Joseph D. Lamplot (cap. 57); Frederick M. Azar, Thomas W. (Quin) Throckmorton e Joseph D. Lamplot (cap. 51)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (intervalo rotador, p. 2145 a 2146; Adhesive Capsulitis, p. 2172, 2172.e1, 2173 e 2174; exame e impacto, p. 2147 e 2160) e cap. 57 (portal posterior, p. 2424; contraturas do ombro, Box 57.3 e técnica 57.29 de liberação capsular, p. 2486 a 2488); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 4 Ombro e cotovelo, seção Capsulite adesiva e tendinite calcária (pág. PDF 358 a 367 e 371, sem página impressa no texto extraído); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3 Ombro (pág. PDF 139, 140 e 143, sem página impressa); Campbell's Operative Orthopaedics, 13ª ed., cap. 46 (p. 2322), conferido em 12/11/2026; fonte aberta: CHO e cols., J Shoulder Elbow Surg 2019 (PubMed 30846222). As páginas citadas do Campbell são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (intervalo rotador, p. 2145 a 2146; Adhesive Capsulitis, p. 2172, 2172.e1, 2173 e 2174; exame e impacto, p. 2147 e 2160) e cap. 57 (portal posterior, p. 2424; contraturas do ombro, Box 57.3 e técnica 57.29 de liberação capsular, p. 2486 a 2488); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 4 Ombro e cotovelo, seção Capsulite adesiva e tendinite calcária (pág. extraído); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3 Ombro; Campbell's Operative Orthopaedics, 13ª ed., cap. 46 (p. 2322), conferido em 12/11/2026; fonte aberta: CHO e cols., J Shoulder Elbow Surg 2019 (PubMed 30846222). As páginas citadas do Campbell são as impressas.
 subtemas: Capsulite adesiva
 resumo: Cápsula contraída e espessada (termo de NEVIASER), sinovite seguida de fibrose; cerca de 2% da população, 40 a 70 anos, 70% mulheres, bilateral em 20% a 30% (50% nos diabéticos), raramente recorre; fatores: imobilidade (o principal), diabetes (insulinodependente quase 5 vezes, pior resultado: 71% contra 90% de ADM completa), hipertireoidismo, idade acima de 49 anos, doença discal cervical, AVC, infarto, autoimunes, trauma, hiperlipidemia; metaloproteinases 2 e 9 e TGF-beta1; intervalo rotador e ligamento coracoumeral contraídos; primária e secundária (LUNDBERG); estágio 1 com dor e movimento preservado, depois rigidez, maturação de 4 a 12 meses e descongelamento; perda de RE e RI passivas, depois flexão; radiografia normal, RM com cápsula inferior contraída e "burning sign", artrografia abaixo de 10 mL; autolimitada em 12 a 18 meses; corticoide intra-articular na fase 1, hidrodilatação, bloqueio do supraescapular para a dor, manipulação em FEAR, liberação artroscópica (intervalo rotador = rotação externa) com 80% a 90% de melhora; fratura do úmero e luxação na manipulação, nervo axilar na liberação inferior.
 ---
@@ -41,7 +41,7 @@ O Campbell dá a epidemiologia de forma compacta (cap. 51, p. 2172):
 - **20% a 30%** terão o ombro oposto acometido; nos **diabéticos**, a bilateralidade chega a **50%**;
 - a doença **raramente recorre no mesmo ombro**.
 
-O SIZÍNIO HEBERT traz números um pouco diferentes e vale conhecer a divergência: acomete dos **40 aos 60 anos**, em especial mulheres, sem predomínio racial; o lado **não dominante** é o mais envolvido; a bilateralidade ocorre em **16%**; a prevalência na população norte-americana varia de **2% a 11%**, e nos diabéticos sobe **até 40%** (cap. 4, pág. PDF 360). O Campbell, por sua vez, diz que o acometimento do **ombro dominante prediz bom resultado** (cap. 51, p. 2173), uma informação de prognóstico, não de frequência.
+O SIZÍNIO HEBERT traz números um pouco diferentes e vale conhecer a divergência: acomete dos **40 aos 60 anos**, em especial mulheres, sem predomínio racial; o lado **não dominante** é o mais envolvido; a bilateralidade ocorre em **16%**; a prevalência na população norte-americana varia de **2% a 11%**, e nos diabéticos sobe **até 40%** (cap. 4). O Campbell, por sua vez, diz que o acometimento do **ombro dominante prediz bom resultado** (cap. 51, p. 2173), uma informação de prognóstico, não de frequência.
 
 !tabela Epidemiologia da capsulite adesiva nos dois livros (Campbell 15, cap. 51, p. 2172; SIZÍNIO HEBERT 5, cap. 4)
 | Item | Campbell 15 | SIZÍNIO HEBERT 5 |
@@ -70,7 +70,7 @@ alerta: A `ombro-cotovelo-0488` está sem gabarito oficial; o Campbell 15 (cap. 
 
 ## O fator comum a quase todos: a imobilidade
 
-O Campbell abre a lista com uma frase que organiza o tema: **quase todos os pacientes passaram por um período de imobilidade**, por causas diversas, e esse é **provavelmente o fator mais significativo** para o surgimento da doença (cap. 51, p. 2172). Faz sentido mecânico: a cápsula que não é alongada pelo movimento diário encurta, e uma cápsula inflamada que não é alongada encurta mais rápido. É por isso que o melhor tratamento da forma secundária é a **prevenção**, com movimento precoce depois de trauma ou cirurgia do membro superior, ideia que o SIZÍNIO HEBERT repete ao dizer que "a prevenção é a arma mais segura" (cap. 4, pág. PDF 363).
+O Campbell abre a lista com uma frase que organiza o tema: **quase todos os pacientes passaram por um período de imobilidade**, por causas diversas, e esse é **provavelmente o fator mais significativo** para o surgimento da doença (cap. 51, p. 2172). Faz sentido mecânico: a cápsula que não é alongada pelo movimento diário encurta, e uma cápsula inflamada que não é alongada encurta mais rápido. É por isso que o melhor tratamento da forma secundária é a **prevenção**, com movimento precoce depois de trauma ou cirurgia do membro superior, ideia que o SIZÍNIO HEBERT repete ao dizer que "a prevenção é a arma mais segura" (cap. 4).
 
 ## O Box 51.6
 
@@ -91,7 +91,7 @@ O Campbell abre a lista com uma frase que organiza o tema: **quase todos os paci
 
 Fora do box, o Campbell acrescenta a **hiperlipidemia**, proposta como fator de risco da forma primária e apoiada por um estudo comparativo de 300 pacientes com ombro congelado contra 900 controles; o próprio livro, porém, diz que ainda não se sabe se o lípide alterado é **causa, cofator ou consequência** (cap. 51, p. 2172).
 
-O SIZÍNIO HEBERT amplia a lista com as **doenças neurológicas**, o uso de **anticonvulsivantes** (e cita os **barbitúricos** como predisponentes), o **AVC**, a **dislipidemia**, as **tireoidopatias** e as **doenças intratorácicas** (cap. 4, pág. PDF 360 e 364). Repare que o Campbell escreve **hipertireoidismo**, e o SIZÍNIO HEBERT fala de **tireoidopatias** em geral; nenhuma das fontes lidas traz o hipotireoidismo como fator isolado.
+O SIZÍNIO HEBERT amplia a lista com as **doenças neurológicas**, o uso de **anticonvulsivantes** (e cita os **barbitúricos** como predisponentes), o **AVC**, a **dislipidemia**, as **tireoidopatias** e as **doenças intratorácicas** (cap. 4). Repare que o Campbell escreve **hipertireoidismo**, e o SIZÍNIO HEBERT fala de **tireoidopatias** em geral; nenhuma das fontes lidas traz o hipotireoidismo como fator isolado.
 
 ## O diabetes, em detalhe
 
@@ -132,7 +132,7 @@ O Campbell usa a classificação de **LUNDBERG**, baseada na **presença ou aus�
 
 O livro faz uma ressalva importante: a rigidez **depois de cirurgia** é tecnicamente uma forma secundária, mas o curso clínico e o tratamento são diferentes, a ponto de ser considerada **mais uma artrofibrose** do que capsulite. Por isso o Campbell não a discute na seção. No cap. 57, a distinção reaparece na prática: a contratura pós-cirúrgica geralmente exige **liberação combinada artroscópica e aberta**, às vezes com **alongamento do subescapular** para recuperar a rotação externa, e no espaço subacromial aparecem aderências entre o deltoide e o manguito que quase não existem na forma idiopática (Box 57.3, p. 2487; técnica 57.29, p. 2487 e 2488).
 
-O SIZÍNIO HEBERT credita a divisão a **LEFFERT**: **primária**, sem causa determinada; **secundária**, quando ocorre junto ou logo depois de uma das doenças do diagnóstico diferencial (manguito, tendinite calcária, luxação, tumor, trauma) (cap. 4, pág. PDF 361).
+O SIZÍNIO HEBERT credita a divisão a **LEFFERT**: **primária**, sem causa determinada; **secundária**, quando ocorre junto ou logo depois de uma das doenças do diagnóstico diferencial (manguito, tendinite calcária, luxação, tumor, trauma) (cap. 4).
 
 !tabela Primária, secundária e rigidez pós-operatória (Campbell 15, caps. 51 e 57; SIZÍNIO HEBERT 5, cap. 4)
 | Forma | Definição | O que muda |
@@ -144,13 +144,13 @@ O SIZÍNIO HEBERT credita a divisão a **LEFFERT**: **primária**, sem causa det
 
 ## A tendinite calcária como porta de entrada
 
-A tendinite calcária é um exemplo clássico de doença que leva à capsulite secundária. O SIZÍNIO HEBERT descreve a dor da fase de reabsorção como intensa, pulsátil, excruciante, a ponto de **impedir qualquer movimento**, e diz que ela **predispõe ao desenvolvimento de capsulite adesiva** (cap. 4, pág. PDF 371). A cadeia é a mesma do Campbell: dor leva à restrição voluntária do movimento, que leva à contratura. O Campbell, no cap. 51, inclui a tendinite calcária entre as doenças com história, dor e exame semelhantes aos da capsulite, o que torna o diagnóstico do ombro doloroso difícil (p. 2146).
+A tendinite calcária é um exemplo clássico de doença que leva à capsulite secundária. O SIZÍNIO HEBERT descreve a dor da fase de reabsorção como intensa, pulsátil, excruciante, a ponto de **impedir qualquer movimento**, e diz que ela **predispõe ao desenvolvimento de capsulite adesiva** (cap. 4). A cadeia é a mesma do Campbell: dor leva à restrição voluntária do movimento, que leva à contratura. O Campbell, no cap. 51, inclui a tendinite calcária entre as doenças com história, dor e exame semelhantes aos da capsulite, o que torna o diagnóstico do ombro doloroso difícil (p. 2146).
 
 !questoes central=ombro-cotovelo-0480
 conceito: A dor intensa da tendinite calcária, que impede o movimento, predispõe à capsulite adesiva (forma secundária); dor, restrição do movimento e contratura formam a mesma cadeia da forma primária.
 como: O TARO 2008 perguntou a causa comum de dor persistente depois do tratamento cirúrgico da tendinite calcária, entre infecção, capsulite adesiva, osteonecrose e tendinite do supraespinal.
 armadilha: Pensar em infecção ou em tendinite residual do supraespinal; a rigidez dolorosa depois de um ombro imobilizado pela dor aponta para capsulite.
-alerta: A `ombro-cotovelo-0480` está sem gabarito oficial. O SIZÍNIO HEBERT 5 (cap. 4, pág. PDF 371) sustenta a capsulite adesiva como consequência da dor da tendinite calcária; nenhuma fonte lida trata especificamente da dor persistente depois da cirurgia da calcificação, e o Campbell 15 não comenta essa complicação.
+alerta: A `ombro-cotovelo-0480` está sem gabarito oficial. O SIZÍNIO HEBERT 5 (cap. 4) sustenta a capsulite adesiva como consequência da dor da tendinite calcária; nenhuma fonte lida trata especificamente da dor persistente depois da cirurgia da calcificação, e o Campbell 15 não comenta essa complicação.
 !fim
 
 # Fisiopatologia: sinovite, fibrose e o intervalo rotador {radar=confirmado}
@@ -166,9 +166,9 @@ O Campbell descreve a doença como uma progressão de **inflamação capsular pa
 
 A dor, que no estágio inicial é desproporcional ao que se vê na imagem, ganhou uma explicação estrutural: a cápsula do ombro congelado mostra mais **receptor do fator de crescimento neural** e **fibras nervosas novas**, ou seja, **neoinervação e neoangiogênese** (cap. 51, p. 2172). Vaso novo e nervo novo dentro de uma cápsula inflamada explicam a dor noturna intensa.
 
-O SIZÍNIO HEBERT descreve o mesmo processo com outra ênfase (cap. 4, pág. PDF 359): a maioria dos autores **não descreve inflamação nem aderências como achado inicial**; o que se vê é **hiperplasia fibroblástica** com excesso de **colágeno tipo III**, num tecido **semelhante ao da doença de DUPUYTREN**, talvez com predisposição genética. A dor seria **neurologicamente mediada**, com alterações simpático-reflexas como as da **síndrome de dor complexa regional tipo I**; outra teoria é a da **hipovascularização** com radicais livres.
+O SIZÍNIO HEBERT descreve o mesmo processo com outra ênfase (cap. 4): a maioria dos autores **não descreve inflamação nem aderências como achado inicial**; o que se vê é **hiperplasia fibroblástica** com excesso de **colágeno tipo III**, num tecido **semelhante ao da doença de DUPUYTREN**, talvez com predisposição genética. A dor seria **neurologicamente mediada**, com alterações simpático-reflexas como as da **síndrome de dor complexa regional tipo I**; outra teoria é a da **hipovascularização** com radicais livres.
 
-!tabela Fisiopatologia segundo cada livro (Campbell 15, cap. 51, p. 2172 e 2172.e1; SIZÍNIO HEBERT 5, cap. 4, pág. PDF 359)
+!tabela Fisiopatologia segundo cada livro (Campbell 15, cap. 51, p. 2172 e 2172.e1; SIZÍNIO HEBERT 5, cap. 4)
 | Ponto | Campbell 15 | SIZÍNIO HEBERT 5 |
 | --- | --- | --- |
 | Lesão inicial | sinovite com fibrose capsular reativa | hiperplasia fibroblástica; inflamação e aderências não são achado inicial |
@@ -229,7 +229,7 @@ O Campbell descreve **quatro estágios** a partir da **aparência artroscópica 
 
 O que a tabela ensina é uma **sequência causal**, não só uma lista: primeiro vem a **dor** (estágio 1), a dor faz o paciente **parar de mexer** (estágio 2), a falta de movimento deixa as aderências **amadurecerem** e o recesso axilar **desaparecer** (estágio 3), e só então a dor cede e sobra a **rigidez** (estágio 4), até o descongelamento. Daí uma consequência clínica: no **estágio 1**, a dor domina e o arco de movimento ainda está **preservado**; quem pergunta "fase I" quer ouvir **dor sem limitação**.
 
-O SIZÍNIO HEBERT diz a mesma coisa com palavras de consultório: na **fase inicial**, a mobilidade está **preservada**, e isso confunde o diagnóstico com a **tendinite do supraespinal**, porque todos os testes provocativos são positivos (cap. 4, pág. PDF 363). O que desfaz a dúvida é a reavaliação: se a dor piora com os exercícios de estiramento capsular ou se aparece uma **restrição inexplicada das rotações**, o diagnóstico é capsulite.
+O SIZÍNIO HEBERT diz a mesma coisa com palavras de consultório: na **fase inicial**, a mobilidade está **preservada**, e isso confunde o diagnóstico com a **tendinite do supraespinal**, porque todos os testes provocativos são positivos (cap. 4). O que desfaz a dúvida é a reavaliação: se a dor piora com os exercícios de estiramento capsular ou se aparece uma **restrição inexplicada das rotações**, o diagnóstico é capsulite.
 
 O estágio também orienta o tratamento. A injeção intra-articular de corticoide é benéfica na **fase 1 ou no início da fase 2** (Tabela 51.8, p. 2174), quando ainda há sinovite para tratar; na fase de fibrose madura, o problema é mecânico, e o que resolve é alongar ou liberar a cápsula.
 
@@ -245,7 +245,7 @@ armadilha: Achar que a capsulite começa já com rigidez; a limitação dolorosa
 
 ## A história
 
-A queixa típica é uma **dor mal localizada no ombro**, de **início espontâneo**, geralmente **sem trauma**, que se torna muito intensa **mesmo em repouso** e **à noite**, contínua e pior ao movimento, e que costuma diminuir em algumas semanas (SIZÍNIO HEBERT 5, cap. 4, pág. PDF 360). O Campbell acrescenta o detalhe de piorar ao **deitar sobre o lado afetado** (Tabela 51.7, p. 2173). O SIZÍNIO HEBERT chama a atenção para o atraso: o quadro evolui lentamente, por **4 a 6 meses** antes do diagnóstico, período em que o paciente costuma receber vários diagnósticos, infiltrações e imobilizações, e são justamente esses meses que dão os melhores resultados quando o diagnóstico é feito cedo (pág. PDF 360 e 363). O Campbell nota que os pacientes **subestimam a perda de movimento** (p. 2173).
+A queixa típica é uma **dor mal localizada no ombro**, de **início espontâneo**, geralmente **sem trauma**, que se torna muito intensa **mesmo em repouso** e **à noite**, contínua e pior ao movimento, e que costuma diminuir em algumas semanas (SIZÍNIO HEBERT 5, cap. 4). O Campbell acrescenta o detalhe de piorar ao **deitar sobre o lado afetado** (Tabela 51.7, p. 2173). O SIZÍNIO HEBERT chama a atenção para o atraso: o quadro evolui lentamente, por **4 a 6 meses** antes do diagnóstico, período em que o paciente costuma receber vários diagnósticos, infiltrações e imobilizações, e são justamente esses meses que dão os melhores resultados quando o diagnóstico é feito cedo. O Campbell nota que os pacientes **subestimam a perda de movimento** (p. 2173).
 
 ## O exame: o que se perde primeiro
 
@@ -257,11 +257,11 @@ O Campbell é honesto sobre a falta de padrão: **não há critérios diagnósti
 - em geral há diferença de pelo menos **10 a 15 graus na rotação externa e na abdução** em relação ao outro lado, na forma idiopática;
 - o exame cervical e do ombro deve ser completo para afastar doença concomitante.
 
-O SIZÍNIO HEBERT descreve a limitação de **elevação, rotação interna, rotação externa e abdução** e afirma que o **bloqueio das rotações externa e interna** é uma característica **sempre presente** (cap. 4, pág. PDF 360).
+O SIZÍNIO HEBERT descreve a limitação de **elevação, rotação interna, rotação externa e abdução** e afirma que o **bloqueio das rotações externa e interna** é uma característica **sempre presente** (cap. 4).
 
 ## Ativo contra passivo
 
-O Netter Atlas de Anatomia Ortopédica, 2ª ed., resume o exame em uma linha (cap. 3, pág. PDF 143): na **ruptura do manguito**, a ADM **ativa** está diminuída e a **passiva** está normal; na **capsulite adesiva**, a ADM **ativa e passiva** estão **diminuídas**. A regra serve para quase toda questão de diagnóstico diferencial. O Campbell mostra a ponte entre os dois quadros: no paciente com lesão do manguito, a ADM passiva fica cheia **até que a dor limite tanto o movimento ativo que se instale uma capsulite** (cap. 51, p. 2163 aprox., pág. PDF 2828).
+O Netter Atlas de Anatomia Ortopédica, 2ª ed., resume o exame em uma linha (cap. 3): na **ruptura do manguito**, a ADM **ativa** está diminuída e a **passiva** está normal; na **capsulite adesiva**, a ADM **ativa e passiva** estão **diminuídas**. A regra serve para quase toda questão de diagnóstico diferencial. O Campbell mostra a ponte entre os dois quadros: no paciente com lesão do manguito, a ADM passiva fica cheia **até que a dor limite tanto o movimento ativo que se instale uma capsulite** (cap. 51, p. 2163 aprox.).
 
 Os testes de impacto não ajudam a separar as doenças: o teste de **NEER** dói no impacto, mas também na **capsulite**, na artrose, na tendinite calcária e em lesões ósseas (cap. 51, p. 2147). E a **capsulite inicial** aparece na lista de dilemas diagnósticos do impacto, junto da artrose acromioclavicular e glenoumeral, da instabilidade sutil e da fibromialgia (cap. 51, p. 2160).
 
@@ -276,7 +276,7 @@ alerta: A `ombro-cotovelo-0470` está sem gabarito oficial; o gabarito da biblio
 
 Algumas provas cobram os "critérios de CODMAN" do ombro congelado, e o gabarito do TARO 2017 inclui entre eles a **atrofia dos músculos espinhais** (supra e infraespinal). Nenhuma das fontes lidas traz esses critérios; o Campbell 15 cita CODMAN apenas na zona crítica do supraespinal e na história do manguito.
 
-O raciocínio que as fontes permitem é este: a dor do ombro congelado piora ao **deitar sobre o lado afetado** (Tabela 51.7), e não sobre o oposto; a perda que domina é a de **rotação externa** e abdução, com a RI perdida junto; e o desuso prolongado leva à atrofia, como lembra o SIZÍNIO HEBERT ao citar a osteoporose de desuso (pág. PDF 362).
+O raciocínio que as fontes permitem é este: a dor do ombro congelado piora ao **deitar sobre o lado afetado** (Tabela 51.7), e não sobre o oposto; a perda que domina é a de **rotação externa** e abdução, com a RI perdida junto; e o desuso prolongado leva à atrofia, como lembra o SIZÍNIO HEBERT ao citar a osteoporose de desuso.
 
 !questoes central=ombro-cotovelo-0030
 conceito: A dor do ombro congelado piora deitado sobre o lado afetado, as rotações e a abdução estão limitadas e o desuso prolongado atrofia a musculatura; os critérios clássicos de CODMAN incluem atrofia dos espinhais.
@@ -291,14 +291,14 @@ alerta: Os critérios de CODMAN (`ombro-cotovelo-0030`) não aparecem no Campbel
 
 A regra geral é que os exames, **inclusive a radiografia simples**, são **normais**, exceto nos pacientes com doença clínica como **diabetes** ou **tireoidopatia** (Campbell 15, cap. 51, p. 2173). Isso faz parte da definição de LUNDBERG da forma primária.
 
-- **Radiografia.** Normal; o SIZÍNIO HEBERT acrescenta que pode haver diminuição do espaço entre a glenoide e a cabeça na AP verdadeira, pela retração capsular, e que a **osteoporose de desuso** é fácil de ver (cap. 4, pág. PDF 362).
+- **Radiografia.** Normal; o SIZÍNIO HEBERT acrescenta que pode haver diminuição do espaço entre a glenoide e a cabeça na AP verdadeira, pela retração capsular, e que a **osteoporose de desuso** é fácil de ver (cap. 4).
 - **Cintilografia.** Positiva em alguns pacientes; quando positiva, tem **valor preditivo positivo** para a resposta à **injeção de corticoide** (Campbell, p. 2173).
 - **Ressonância.** Mostra a **cápsula inferior contraída** e **aumento do fluxo sanguíneo para a sinóvia**, mas o seu valor principal é avaliar as outras estruturas e **excluir outras doenças** (p. 2173). Na RM dinâmica tridimensional, os pacientes têm captação anormal de sangue vindo da rede arterial acromial e dos ramos das artérias circunflexas do úmero para o **recesso axilar** e o **intervalo rotador**, achado batizado de **"burning sign"** (p. 2173).
-- **Artrografia.** Mostra **volume articular reduzido** com **margens irregulares**. Os achados aceitos são **volume menor que 10 mL** e **falta de enchimento da prega axilar** (p. 2173). Pode haver melhora clínica depois do exame, porque o líquido injetado com força rompe aderências (brisement). O SIZÍNIO HEBERT a considera eficaz, mas bastante dolorosa (pág. PDF 362).
+- **Artrografia.** Mostra **volume articular reduzido** com **margens irregulares**. Os achados aceitos são **volume menor que 10 mL** e **falta de enchimento da prega axilar** (p. 2173). Pode haver melhora clínica depois do exame, porque o líquido injetado com força rompe aderências (brisement). O SIZÍNIO HEBERT a considera eficaz, mas bastante dolorosa.
 
-Aqui há uma divergência real entre os livros. O SIZÍNIO HEBERT afirma que a **ecografia e a RM são normais** na capsulite, "já que a anatomia" não se altera (pág. PDF 362). O Campbell descreve achados de RM (cápsula inferior contraída, hiperfluxo sinovial e o "burning sign" no intervalo rotador e no recesso axilar). Para a prova com imagem de RM contrastada, vale o Campbell: realce no **intervalo rotador** e no **recesso axilar** sugere capsulite.
+Aqui há uma divergência real entre os livros. O SIZÍNIO HEBERT afirma que a **ecografia e a RM são normais** na capsulite, "já que a anatomia" não se altera. O Campbell descreve achados de RM (cápsula inferior contraída, hiperfluxo sinovial e o "burning sign" no intervalo rotador e no recesso axilar). Para a prova com imagem de RM contrastada, vale o Campbell: realce no **intervalo rotador** e no **recesso axilar** sugere capsulite.
 
-!tabela Exames na capsulite adesiva (Campbell 15, cap. 51, p. 2173; SIZÍNIO HEBERT 5, cap. 4, pág. PDF 362)
+!tabela Exames na capsulite adesiva (Campbell 15, cap. 51, p. 2173; SIZÍNIO HEBERT 5, cap. 4)
 | Exame | Achado | Observação |
 | --- | --- | --- |
 | Radiografia | normal | alterada só em diabetes e tireoidopatia; osteopenia de desuso |
@@ -313,7 +313,7 @@ Aqui há uma divergência real entre os livros. O SIZÍNIO HEBERT afirma que a *
 conceito: Na RM com contraste a capsulite mostra cápsula inferior contraída, aumento do fluxo para a sinóvia e captação no recesso axilar e no intervalo rotador ("burning sign").
 como: A prova de título da SBCOC mostrou uma RM com gadolínio venoso e setas e pediu o diagnóstico entre artrite séptica, neuropatia axilar, capsulite adesiva e síndrome de PARSONAGE-TURNER.
 armadilha: Realce sinovial lembra artrite séptica, mas a infecção traz derrame e destruição; neuropatia axilar e PARSONAGE-TURNER mostram edema muscular de denervação, não espessamento capsular no intervalo e no recesso axilar.
-alerta: O SIZÍNIO HEBERT 5 diz que a RM é normal na capsulite (pág. PDF 362); o Campbell 15 descreve os achados de RM e o "burning sign" (cap. 51, p. 2173), que sustentam o gabarito.
+alerta: O SIZÍNIO HEBERT 5 diz que a RM é normal na capsulite; o Campbell 15 descreve os achados de RM e o "burning sign" (cap. 51, p. 2173), que sustentam o gabarito.
 !fim
 
 # Diagnóstico diferencial {radar=clinico}
@@ -322,9 +322,9 @@ alerta: O SIZÍNIO HEBERT 5 diz que a RM é normal na capsulite (pág. PDF 362);
 
 O Campbell abre o cap. 51 explicando por que o ombro doloroso é difícil: **impacto**, **lesões do manguito** (parciais e completas), **tendinite calcária**, **capsulite adesiva** e **compressões nervosas** têm histórias, padrões de dor e exames parecidos, e todas podem causar dor, fraqueza e perda de movimento (cap. 51, p. 2146). Além delas, é preciso pensar na dor **referida**: coluna cervical (hérnia de disco, espondilose, plexopatia braquial), tórax (tumor de PANCOAST, pneumonia de lobo superior), mamas, axila e abdome (irritação diafragmática, vesícula).
 
-O SIZÍNIO HEBERT lista as doenças que **evoluem para rigidez** e devem ser afastadas: **ruptura maciça do manguito**, **tendinite calcária**, **luxação glenoumeral não diagnosticada**, **tumores primários ou metastáticos**, **síndrome ombro-mão** (distrofia simpático-reflexa) e **trauma** (fratura da cabeça do úmero ou da glenoide) (cap. 4, pág. PDF 361).
+O SIZÍNIO HEBERT lista as doenças que **evoluem para rigidez** e devem ser afastadas: **ruptura maciça do manguito**, **tendinite calcária**, **luxação glenoumeral não diagnosticada**, **tumores primários ou metastáticos**, **síndrome ombro-mão** (distrofia simpático-reflexa) e **trauma** (fratura da cabeça do úmero ou da glenoide) (cap. 4).
 
-!tabela Diagnóstico diferencial do ombro doloroso e rígido (Campbell 15, cap. 51, p. 2146; SIZÍNIO HEBERT 5, cap. 4, pág. PDF 361; Netter, cap. 3)
+!tabela Diagnóstico diferencial do ombro doloroso e rígido (Campbell 15, cap. 51, p. 2146; SIZÍNIO HEBERT 5, cap. 4; Netter, cap. 3)
 | Doença | O que a separa da capsulite |
 | --- | --- |
 | Ruptura do manguito | ADM passiva preservada; fraqueza verdadeira |
@@ -377,9 +377,9 @@ alerta: O Campbell 15 diz que os resultados são piores nos diabéticos sem sepa
 
 O tratamento **inicial é não operatório**, com ênfase no **controle da dor e da inflamação** (Campbell 15, cap. 51, p. 2173). Um detalhe pouco lembrado: a **abdução deve ser evitada no início**, para não provocar impacto enquanto a articulação não fica mais flexível. O Campbell lista todas as opções da literatura: **negligência benigna**, **fisioterapia supervisionada**, **anti-inflamatórios não esteroides**, **corticoide oral**, **infiltração intra-articular de corticoide**, **artrografia de distensão**, **hidrodistensão**, **manipulação fechada**, **liberação aberta** e **liberação artroscópica**. Muitos pacientes não querem esperar meses e pedem intervenção ativa antes disso.
 
-O SIZÍNIO HEBERT organiza o tratamento em **duas fases distintas**: primeiro o **alívio da dor**, depois o **ganho de mobilidade**; só com a dor controlada o reabilitador avança sobre a retração capsular (cap. 4, pág. PDF 363). E divide os pacientes em **três grupos**:
+O SIZÍNIO HEBERT organiza o tratamento em **duas fases distintas**: primeiro o **alívio da dor**, depois o **ganho de mobilidade**; só com a dor controlada o reabilitador avança sobre a retração capsular (cap. 4). E divide os pacientes em **três grupos**:
 
-!tabela Os três grupos de tratamento (SIZÍNIO HEBERT 5, cap. 4, pág. PDF 363 e 364)
+!tabela Os três grupos de tratamento (SIZÍNIO HEBERT 5, cap. 4)
 | Grupo | Conduta |
 | --- | --- |
 | Restrição de movimento sem dor | reabilitação sob supervisão; sem melhora em 30 dias e sem dor importante, liberação artroscópica ou manipulação com distensão hidráulica |
@@ -417,9 +417,9 @@ O cap. 57 repete a ideia: **hidrodilatação** para distender a cápsula, seguid
 
 ## O bloqueio do nervo supraescapular
 
-O SIZÍNIO HEBERT dá destaque ao **bloqueio do nervo supraescapular** no paciente com **dor intensa** (cap. 4, pág. PDF 363 e 364). O racional é anatômico: o supraescapular fornece **ramos sensitivos para a cápsula articular posterior**. O bloqueio é feito com **8 a 10 mL de marcaína**, em **intervalo semanal**, com agulha longa, cerca de **2 cm medial à articulação acromioclavicular** (no trajeto da alça do sutiã, na mulher), quantas vezes forem necessárias. O objetivo é **romper o círculo vicioso da dor** e permitir que a fisioterapia aconteça com menos dor; o bloqueio trata a **dor**, não devolve movimento por si.
+O SIZÍNIO HEBERT dá destaque ao **bloqueio do nervo supraescapular** no paciente com **dor intensa** (cap. 4). O racional é anatômico: o supraescapular fornece **ramos sensitivos para a cápsula articular posterior**. O bloqueio é feito com **8 a 10 mL de marcaína**, em **intervalo semanal**, com agulha longa, cerca de **2 cm medial à articulação acromioclavicular** (no trajeto da alça do sutiã, na mulher), quantas vezes forem necessárias. O objetivo é **romper o círculo vicioso da dor** e permitir que a fisioterapia aconteça com menos dor; o bloqueio trata a **dor**, não devolve movimento por si.
 
-O mesmo livro descreve o restante do arsenal contra a dor: **analgésicos potentes** como o tramadol por tempo prolongado, **duas doses de corticoide de depósito** (se não houver contraindicação), **antidepressivos ou ansiolíticos**, tratamento da **osteoporose de desuso** e protetor gástrico. E faz uma afirmação que diverge do Campbell: o uso de **AINE está contraindicado**, "por não se tratar de inflamação" e porque a maioria já usou vários antes (pág. PDF 364 e 365). O Campbell lista o AINE entre as opções e fala em controlar "dor e inflamação" (cap. 51, p. 2173).
+O mesmo livro descreve o restante do arsenal contra a dor: **analgésicos potentes** como o tramadol por tempo prolongado, **duas doses de corticoide de depósito** (se não houver contraindicação), **antidepressivos ou ansiolíticos**, tratamento da **osteoporose de desuso** e protetor gástrico. E faz uma afirmação que diverge do Campbell: o uso de **AINE está contraindicado**, "por não se tratar de inflamação" e porque a maioria já usou vários antes. O Campbell lista o AINE entre as opções e fala em controlar "dor e inflamação" (cap. 51, p. 2173).
 
 !questoes central=ombro-cotovelo-0411
 conceito: O nervo supraescapular dá ramos sensitivos à cápsula posterior; os bloqueios seriados com marcaína controlam a dor e abrem caminho para a fisioterapia, que é quem devolve o movimento.
@@ -429,7 +429,7 @@ armadilha: Marcar amplitude de movimento porque o paciente se mexe melhor depois
 
 ## A fisioterapia
 
-O objetivo da fisioterapia é **eliminar o desconforto e restaurar a mobilidade e a função** (SIZÍNIO HEBERT 5, cap. 4, pág. PDF 366). O **calor** (diatermia) alivia a dor, mas **não determina** a recuperação. A **mobilização passiva oscilatória** é graduada em **I e II** (analgésicos) e **III e IV** (alongamento), trabalhando a **abdução a 30 a 40 graus no plano escapular** e as **rotações**. Em casa, exercícios **autopassivos** com **bastão**, **roldana** e **pendulares**, com **pouca intensidade e várias vezes ao dia**. Na **fase dolorosa**, nada de ganho de amplitude: usa-se **TENS** de **100 a 150 Hz**. Quando a rigidez domina, as mobilizações se intensificam, porque o tecido conjuntivo sofre **alongamento plástico** sob tensão leve e prolongada. O tratamento leva cerca de **3 a 6 meses**.
+O objetivo da fisioterapia é **eliminar o desconforto e restaurar a mobilidade e a função** (SIZÍNIO HEBERT 5, cap. 4). O **calor** (diatermia) alivia a dor, mas **não determina** a recuperação. A **mobilização passiva oscilatória** é graduada em **I e II** (analgésicos) e **III e IV** (alongamento), trabalhando a **abdução a 30 a 40 graus no plano escapular** e as **rotações**. Em casa, exercícios **autopassivos** com **bastão**, **roldana** e **pendulares**, com **pouca intensidade e várias vezes ao dia**. Na **fase dolorosa**, nada de ganho de amplitude: usa-se **TENS** de **100 a 150 Hz**. Quando a rigidez domina, as mobilizações se intensificam, porque o tecido conjuntivo sofre **alongamento plástico** sob tensão leve e prolongada. O tratamento leva cerca de **3 a 6 meses**.
 
 O Campbell completa com a regra do início: **evitar a abdução** enquanto a articulação está rígida, para não provocar impacto (cap. 51, p. 2173).
 
@@ -449,7 +449,7 @@ A técnica 51.4 (p. 2174):
 
 A alavanca curta reduz o torque sobre o úmero. O cap. 57 dá o mesmo conselho no início da liberação artroscópica: manipular com suavidade, **evitando torque rotacional excessivo** (p. 2486).
 
-O SIZÍNIO HEBERT descreve outra sequência: **elevação ampla no plano da escápula** (ouve-se o ruído característico da cápsula rompendo), depois, com extremo cuidado, **abdução com rotação externa**, uma **segunda elevação** e, ao final, a **distensão hidráulica** com marcaína, corticoide e morfina (cap. 4, pág. PDF 363). Na parte de fisioterapia do mesmo capítulo, a sequência é **elevação, rotação externa, abdução e rotação interna**, com um assistente estabilizando a escápula e o cirurgião segurando o úmero como uma unidade para evitar a fratura da diáfise; a **crepitação audível e palpável** confirma a ruptura da cápsula (pág. PDF 366). A prova que pede "a sequência" quer a do Campbell, o **FEAR**.
+O SIZÍNIO HEBERT descreve outra sequência: **elevação ampla no plano da escápula** (ouve-se o ruído característico da cápsula rompendo), depois, com extremo cuidado, **abdução com rotação externa**, uma **segunda elevação** e, ao final, a **distensão hidráulica** com marcaína, corticoide e morfina (cap. 4). Na parte de fisioterapia do mesmo capítulo, a sequência é **elevação, rotação externa, abdução e rotação interna**, com um assistente estabilizando a escápula e o cirurgião segurando o úmero como uma unidade para evitar a fratura da diáfise; a **crepitação audível e palpável** confirma a ruptura da cápsula. A prova que pede "a sequência" quer a do Campbell, o **FEAR**.
 
 !questoes central=ombro-cotovelo-0008
 conceito: A sequência segura da manipulação sob anestesia é o acrônimo FEAR: flexão, extensão, abdução e adução, rotação externa e interna, com alavanca curta e escápula fixa.
@@ -459,7 +459,7 @@ armadilha: Começar pelas rotações parece lógico porque são o movimento mais
 
 ## Pós-operatório
 
-A **reabilitação** depois da manipulação é **crucial para evitar a recorrência** (Campbell, p. 2174). Os autores manipulam **no início da semana** e começam a fisioterapia **no dia seguinte**; as sessões supervisionadas são **diárias** por pelo menos **2 a 4 semanas**, com a meta de **ADM completa precoce**. O SIZÍNIO HEBERT lembra que a manipulação **abrevia a rigidez, não a doença**, e que a indicação vem **caindo** com a analgesia e a reabilitação melhores (pág. PDF 363).
+A **reabilitação** depois da manipulação é **crucial para evitar a recorrência** (Campbell, p. 2174). Os autores manipulam **no início da semana** e começam a fisioterapia **no dia seguinte**; as sessões supervisionadas são **diárias** por pelo menos **2 a 4 semanas**, com a meta de **ADM completa precoce**. O SIZÍNIO HEBERT lembra que a manipulação **abrevia a rigidez, não a doença**, e que a indicação vem **caindo** com a analgesia e a reabilitação melhores.
 
 # Liberação capsular artroscópica e aberta {radar=confirmado}
 
@@ -467,7 +467,7 @@ A **reabilitação** depois da manipulação é **crucial para evitar a recorrê
 
 A **liberação artroscópica** é indicada quando a **manipulação fechada falha** ou para pacientes com capsulite **prolongada e recalcitrante**, com melhora acentuada em **80% a 90%**; um seguimento longo mostrou movimento **igual ao do lado oposto** mantido ou melhorado **7 anos** depois (Campbell 15, cap. 51, p. 2174). Se a artroscópica falha, a **liberação aberta** foi recomendada, com ênfase no **ligamento coracoumeral** e no restabelecimento do **intervalo entre supraespinal e subescapular**; os autores dizem não ter usado a via aberta recentemente e preferem a artroscopia (p. 2173 e 2174).
 
-O SIZÍNIO HEBERT aponta as vantagens da artroscopia (cap. 4, pág. PDF 367): **diminui o risco de fratura da diáfise** que a manipulação traz, permite **reconhecer a fase** da capsulite e as **doenças associadas** e libera as estruturas capsulares **diretamente**. A manipulação pode ser feita **antes** da artroscopia (facilita a entrada do artroscópio, mas exige cuidado com lesão iatrogênica da cartilagem) ou **depois** (precisa de muito menos força para completar a liberação). Alguns autores associam **tenotomia ou tenodese do bíceps**.
+O SIZÍNIO HEBERT aponta as vantagens da artroscopia (cap. 4): **diminui o risco de fratura da diáfise** que a manipulação traz, permite **reconhecer a fase** da capsulite e as **doenças associadas** e libera as estruturas capsulares **diretamente**. A manipulação pode ser feita **antes** da artroscopia (facilita a entrada do artroscópio, mas exige cuidado com lesão iatrogênica da cartilagem) ou **depois** (precisa de muito menos força para completar a liberação). Alguns autores associam **tenotomia ou tenodese do bíceps**.
 
 ## As liberações seletivas
 
@@ -495,17 +495,17 @@ A técnica 57.29 (cap. 57, p. 2486 a 2488) começa com **exame bilateral sob ane
 
 O Box 57.3 completa as regras de segurança (p. 2487): portais iniciais **1,5 cm abaixo do acrômio** e da acromioclavicular; o paciente deve entender o pós-operatório difícil; **diabéticos** exigem **liberação circunferencial completa** se a manipulação não devolve o movimento; a contratura **pós-cirúrgica** pede liberação **artroscópica e aberta**, às vezes com **alongamento do subescapular**; se a visão é ruim, **converter**; na cápsula inferior, entre **5 e 7 horas**, ficar **a 1 cm do lábio** e separar a cápsula do músculo para proteger o **nervo axilar**.
 
-O SIZÍNIO HEBERT descreve a mesma ordem de outro jeito: começar pelo **intervalo dos rotadores**, do alto até a borda do subescapular, continuar inferiormente até o **recesso axilar**, e depois, com a óptica no portal anterior, liberar a **cápsula posterior das 7 às 10 horas**; alguns autores só liberam até **5 horas**, para evitar o nervo axilar (pág. PDF 367).
+O SIZÍNIO HEBERT descreve a mesma ordem de outro jeito: começar pelo **intervalo dos rotadores**, do alto até a borda do subescapular, continuar inferiormente até o **recesso axilar**, e depois, com a óptica no portal anterior, liberar a **cápsula posterior das 7 às 10 horas**; alguns autores só liberam até **5 horas**, para evitar o nervo axilar.
 
 ## Pós-operatório da liberação
 
-Pelo Campbell (cap. 57, p. 2488): **cateter supraclavicular** guiado por ultrassom por **48 a 72 horas** (ou bloqueio único), exercícios **ativo-assistidos imediatos** e contínuos ao longo do dia, fisioterapia passiva e ativo-assistida em **24 horas**, reavaliação em **3 semanas**, alongamentos nos **quatro quadrantes**, **5 vezes ao dia**, **5 repetições** cada. O Box 57.3 prevê **reintervenção artroscópica precoce, em 3 a 4 semanas**, quando indicada. O SIZÍNIO HEBERT mantém o paciente internado **até 2 dias** com manipulação passiva supervisionada diária e fisioterapia todos os dias depois da alta (pág. PDF 367).
+Pelo Campbell (cap. 57, p. 2488): **cateter supraclavicular** guiado por ultrassom por **48 a 72 horas** (ou bloqueio único), exercícios **ativo-assistidos imediatos** e contínuos ao longo do dia, fisioterapia passiva e ativo-assistida em **24 horas**, reavaliação em **3 semanas**, alongamentos nos **quatro quadrantes**, **5 vezes ao dia**, **5 repetições** cada. O Box 57.3 prevê **reintervenção artroscópica precoce, em 3 a 4 semanas**, quando indicada. O SIZÍNIO HEBERT mantém o paciente internado **até 2 dias** com manipulação passiva supervisionada diária e fisioterapia todos os dias depois da alta.
 
 # Complicações {radar=clinico}
 
 ## Da manipulação
 
-As complicações da manipulação fechada são a **fratura do úmero proximal** e a **luxação** (Campbell 15, cap. 51, p. 2174). Por isso a manipulação deve ser **evitada na osteopenia** e nas **fraturas recém-consolidadas** e reservada para a rigidez **recalcitrante**. Se ocorrer **luxação**, a reabilitação continua **agressiva**, mas a posição de **abdução com rotação externa** deve ser evitada. O SIZÍNIO HEBERT acrescenta a **fratura da diáfise do úmero**, as **rupturas do manguito** e o **estiramento do plexo braquial**, e exige um cirurgião experiente (cap. 4, pág. PDF 363).
+As complicações da manipulação fechada são a **fratura do úmero proximal** e a **luxação** (Campbell 15, cap. 51, p. 2174). Por isso a manipulação deve ser **evitada na osteopenia** e nas **fraturas recém-consolidadas** e reservada para a rigidez **recalcitrante**. Se ocorrer **luxação**, a reabilitação continua **agressiva**, mas a posição de **abdução com rotação externa** deve ser evitada. O SIZÍNIO HEBERT acrescenta a **fratura da diáfise do úmero**, as **rupturas do manguito** e o **estiramento do plexo braquial**, e exige um cirurgião experiente (cap. 4).
 
 ## Da artroscopia
 

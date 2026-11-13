@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Green's Operative Hand Surgery, 7ª ed. (cap. 25 e 23) e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed.
 capitulo: Capítulo 82 · Compressive Neuropathies of the Hand, Forearm, and Elbow (síndrome do túnel radial), com o Capítulo 51 · Shoulder and Elbow Injuries (seção Elbow Tendinopathies) e o Capítulo 57 · Arthroscopy of the Upper Extremity (portais do cotovelo e liberação artroscópica)
 autores: William J. WELLER (cap. 82); Frederick M. AZAR, Thomas W. (Quin) THROCKMORTON e Joseph D. LAMPLOT (cap. 51); Tyler J. BROLIN e Joseph D. LAMPLOT (cap. 57)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (p. 2181 a 2184), cap. 57 (p. 2493, 2494 e 2505) e cap. 82 (p. 3561); Green's Operative Hand Surgery, 7ª ed., cap. 25 Elbow Tendinopathies and Tendon Ruptures (p. 863 a 868) e cap. 23 Chronic Elbow Instability (p. 830 a 832); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., seção Epicondilite lateral (pág. PDF 376 a 383, sem página impressa). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (p. 2181 a 2184), cap. 57 (p. 2493, 2494 e 2505) e cap. 82 (p. 3561); Green's Operative Hand Surgery, 7ª ed., cap. 25 Elbow Tendinopathies and Tendon Ruptures (p. 863 a 868) e cap. 23 Chronic Elbow Instability (p. 830 a 832); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., seção Epicondilite lateral.
 subtemas: Epicondilite lateral e medial
 resumo: Tendinose (não tendinite) da origem do extensor radial curto do carpo com hiperplasia angiofibroblástica de NIRSCHL; mais comum em não atletas na quarta e quinta décadas; dor 5 mm distal e anterior ao epicôndilo; COZEN (cotovelo a 90°, antebraço pronado, extensão resistida do punho), MILL (cotovelo estendido, flexão forçada do punho), MAUDSLEY (dedo médio), teste da cadeira de GARDNER e xícara de café; RM com hipersinal em T1 e T2; túnel radial (síndrome do supinador) como principal diferencial, coexistindo em 5%; conservador funciona em 84% a 95%; corticoide só alivia a curto prazo; cirurgia após 6 a 12 meses, aberta ou artroscópica, com falha por ressecção incompleta ou instabilidade posterolateral; portal anteromedial 2 cm distal e 2 cm anterior ao epicôndilo medial; epicondilite medial no pronador redondo e flexor radial do carpo, com neurite ulnar em 23% a 60%.
 ---
@@ -29,9 +29,9 @@ Abreviaturas usadas: ERCC (extensor radial curto do carpo), ERLC (extensor radia
 
 ## O epicôndilo lateral e seus inquilinos
 
-O epicôndilo lateral é a saliência óssea mais proeminente da face lateral do cotovelo e serve de origem a vários músculos e ao complexo ligamentar lateral. O Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed. (pág. PDF 377), descreve a disposição com precisão útil para a prova: a origem do **ERCC fica no aspecto anterior do epicôndilo lateral, profundamente à origem do extensor dos dedos e inferior à origem do ERLC**. O ERLC e o braquiorradial nascem mais acima, na crista supracondilar, e **não participam da doença**. É por isso que, na cirurgia, o ERLC é a estrutura que se afasta para chegar ao ERCC escondido embaixo.
+O epicôndilo lateral é a saliência óssea mais proeminente da face lateral do cotovelo e serve de origem a vários músculos e ao complexo ligamentar lateral. O Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., descreve a disposição com precisão útil para a prova: a origem do **ERCC fica no aspecto anterior do epicôndilo lateral, profundamente à origem do extensor dos dedos e inferior à origem do ERLC**. O ERLC e o braquiorradial nascem mais acima, na crista supracondilar, e **não participam da doença**. É por isso que, na cirurgia, o ERLC é a estrutura que se afasta para chegar ao ERCC escondido embaixo.
 
-Outro detalhe anatômico muda a forma de pensar a cirurgia: as origens do **LCL, do ERCC, do extensor dos dedos e do supinador são confluentes** (SIZÍNIO, pág. PDF 377). Não existe uma linha limpa separando tendão e ligamento. O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 863), acrescenta que as origens do **ERCC e do ECD são indistinguíveis no nível do epicôndilo** e só se separam como unidades musculotendíneas alguns centímetros distalmente.
+Outro detalhe anatômico muda a forma de pensar a cirurgia: as origens do **LCL, do ERCC, do extensor dos dedos e do supinador são confluentes** (SIZÍNIO). Não existe uma linha limpa separando tendão e ligamento. O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 863), acrescenta que as origens do **ERCC e do ECD são indistinguíveis no nível do epicôndilo** e só se separam como unidades musculotendíneas alguns centímetros distalmente.
 
 ## O ponto exato do ERCC
 
@@ -39,15 +39,15 @@ COHEN, em estudo de cadáver descrito pelo Green (cap. 25, p. 866), localizou a 
 
 ## O complexo ligamentar lateral
 
-O complexo dos ligamentos colateral lateral e anular é o **principal estabilizador lateral** do cotovelo (SIZÍNIO, pág. PDF 377). Origina-se no epicôndilo lateral e se insere na ulna proximal, misturando-se ao ligamento anular em torno da cabeça do rádio; em 55% dos casos é bifurcado. Os **restritores secundários** são os músculos extensores, suas fáscias e o septo intermuscular. O Green (cap. 23, p. 832) detalha que as fibras posteriores, ao longo da crista do supinador, formam o **LUCL**.
+O complexo dos ligamentos colateral lateral e anular é o **principal estabilizador lateral** do cotovelo (SIZÍNIO). Origina-se no epicôndilo lateral e se insere na ulna proximal, misturando-se ao ligamento anular em torno da cabeça do rádio; em 55% dos casos é bifurcado. Os **restritores secundários** são os músculos extensores, suas fáscias e o septo intermuscular. O Green (cap. 23, p. 832) detalha que as fibras posteriores, ao longo da crista do supinador, formam o **LUCL**.
 
-A consequência prática é direta: a palpação do LCL divide o cotovelo lateral em metades anterior e posterior, e **secção inadvertida do ligamento é causa reconhecida de falha cirúrgica** (SIZÍNIO, pág. PDF 377). Toda a cirurgia da epicondilite acontece **anterior** a essa linha.
+A consequência prática é direta: a palpação do LCL divide o cotovelo lateral em metades anterior e posterior, e **secção inadvertida do ligamento é causa reconhecida de falha cirúrgica** (SIZÍNIO). Toda a cirurgia da epicondilite acontece **anterior** a essa linha.
 
 ## O nervo radial ali do lado
 
-O nervo radial cruza o cotovelo num sulco entre braquial, braquiorradial e ERLC, por cima do capítulo e da cabeça do rádio, e se divide em ramo sensitivo superficial e ramo motor profundo. O profundo passa sob a **arcada de FROHSE**, a borda fibrosa proximal do supinador, entra entre as duas cabeças do músculo e passa a se chamar **NIP**. Comprimido ali, causa dor que irradia ao epicôndilo e confunde o diagnóstico; a associação entre as duas doenças não é rara (SIZÍNIO, pág. PDF 377). Esse é o fundamento anatômico do principal diagnóstico diferencial, discutido adiante.
+O nervo radial cruza o cotovelo num sulco entre braquial, braquiorradial e ERLC, por cima do capítulo e da cabeça do rádio, e se divide em ramo sensitivo superficial e ramo motor profundo. O profundo passa sob a **arcada de FROHSE**, a borda fibrosa proximal do supinador, entra entre as duas cabeças do músculo e passa a se chamar **NIP**. Comprimido ali, causa dor que irradia ao epicôndilo e confunde o diagnóstico; a associação entre as duas doenças não é rara (SIZÍNIO). Esse é o fundamento anatômico do principal diagnóstico diferencial, discutido adiante.
 
-!tabela Origens musculares e ligamentares no epicôndilo lateral (SIZÍNIO HEBERT, 5ª ed., pág. PDF 377; Green 7ª ed., cap. 25, p. 863 e 866; cap. 23, p. 832)
+!tabela Origens musculares e ligamentares no epicôndilo lateral (SIZÍNIO HEBERT, 5ª ed.; Green 7ª ed., cap. 25, p. 863 e 866; cap. 23, p. 832)
 | Estrutura | Onde se origina | Papel na epicondilite |
 |---|---|---|
 | ERCC | Aspecto anterior do epicôndilo, profundo ao extensor dos dedos, inferior ao ERLC; pegada em losango do topo do capítulo ao meio da radiocapitelar | Sede principal da tendinose |
@@ -73,9 +73,9 @@ O nome popular engana. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p
 
 O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 863), dá os números: pico de prevalência aos **45 anos**, a maioria entre **35 e 54 anos**, **braço dominante** em geral, e **distribuição igual entre os sexos**. Associa a doença a atividades repetitivas forçadas e ao tabagismo. Em pacientes acompanhados por 18 meses depois da primeira consulta com o clínico geral, **mais da metade teve recidiva**.
 
-O SIZÍNIO HEBERT (pág. PDF 376) separa dois grupos: **atletas jovens** de tênis, squash, paddle ou golfe, só cerca de **5%** dos pacientes, e **trabalhadores de 35 a 55 anos** com início insidioso, **95%** dos casos; o termo "cotovelo de tenista", diz o livro, não representa a incidência clínica. Há uma divergência menor: o Campbell lista o sexo feminino como fator de risco, enquanto o Green e o SIZÍNIO falam em distribuição igual entre os sexos.
+O SIZÍNIO HEBERT separa dois grupos: **atletas jovens** de tênis, squash, paddle ou golfe, só cerca de **5%** dos pacientes, e **trabalhadores de 35 a 55 anos** com início insidioso, **95%** dos casos; o termo "cotovelo de tenista", diz o livro, não representa a incidência clínica. Há uma divergência menor: o Campbell lista o sexo feminino como fator de risco, enquanto o Green e o SIZÍNIO falam em distribuição igual entre os sexos.
 
-!tabela Epidemiologia nos três livros (Campbell 15ª ed., cap. 51, p. 2181; Green 7ª ed., cap. 25, p. 863; SIZÍNIO HEBERT, 5ª ed., pág. PDF 376)
+!tabela Epidemiologia nos três livros (Campbell 15ª ed., cap. 51, p. 2181; Green 7ª ed., cap. 25, p. 863; SIZÍNIO HEBERT, 5ª ed.)
 | Aspecto | Campbell | Green | SIZÍNIO |
 |---|---|---|---|
 | Atletas x não atletas | Mais em não atletas | Não discute | 95% trabalhadores; 5% atletas |
@@ -96,9 +96,9 @@ armadilha: Deixar o nome "cotovelo de tenista" puxar a resposta para atletas jov
 
 ## De inflamação a degeneração
 
-Teorias antigas falavam em bursite radioumeral, sinovite, ligamento anular e periostite (GARDEN, 1961); GOLDIE (1964) descreveu inflamação (SIZÍNIO, pág. PDF 378).
+Teorias antigas falavam em bursite radioumeral, sinovite, ligamento anular e periostite (GARDEN, 1961); GOLDIE (1964) descreveu inflamação (SIZÍNIO).
 
-A teoria aceita hoje é a de **NIRSCHL e PETTRONE (1979)**: o processo envolve a **origem do ERCC** e, em menor grau, a **porção anteromedial do extensor dos dedos**. A tração repetida produz **microrrupturas**, seguidas de fibrose e tecido de granulação. Macroscopicamente o tecido é **friável, brilhante e edemaciado**. Ao microscópio, o tendão normal é interrompido pela **invasão de fibroblastos e de tecido vascular imaturo**, o que deu origem ao termo **hiperplasia angiofibroblástica**. Os autores notaram que a alteração era **degenerativa e não inflamatória** e propuseram **tendinose** no lugar de tendinite ou epicondilite. NIRSCHL chegou a chamar a doença de "infarto do cotovelo", comparando a hipovascularização do ERCC com a do miocárdio (SIZÍNIO, pág. PDF 378).
+A teoria aceita hoje é a de **NIRSCHL e PETTRONE (1979)**: o processo envolve a **origem do ERCC** e, em menor grau, a **porção anteromedial do extensor dos dedos**. A tração repetida produz **microrrupturas**, seguidas de fibrose e tecido de granulação. Macroscopicamente o tecido é **friável, brilhante e edemaciado**. Ao microscópio, o tendão normal é interrompido pela **invasão de fibroblastos e de tecido vascular imaturo**, o que deu origem ao termo **hiperplasia angiofibroblástica**. Os autores notaram que a alteração era **degenerativa e não inflamatória** e propuseram **tendinose** no lugar de tendinite ou epicondilite. NIRSCHL chegou a chamar a doença de "infarto do cotovelo", comparando a hipovascularização do ERCC com a do miocárdio (SIZÍNIO).
 
 O Campbell (cap. 51, p. 2181) resume o consenso atual em uma frase: a epicondilite começa como **microrruptura, mais frequentemente na origem do ERCC**, e os achados microscópicos mostram **tecido reparativo imaturo semelhante à hiperplasia angiofibroblástica**. O processo envolve principalmente o ERCC, mas pode atingir o ERLC e o ECD.
 
@@ -133,15 +133,15 @@ armadilha: Trocar por "angiocondroblástica" ou achar que a calcificação é o 
 
 ## A história
 
-O paciente conta dor sobre o epicôndilo lateral que irradia ao longo dos extensores. A dor atrapalha gestos simples, como abrir a porta ou escrever (SIZÍNIO, pág. PDF 379). O Campbell (cap. 51, p. 2181) resume: a dor piora com **dorsiflexão resistida do punho e supinação do antebraço** e aparece ao **agarrar objetos**. É exatamente o pedreiro que dói ao segurar firme para levantar peso.
+O paciente conta dor sobre o epicôndilo lateral que irradia ao longo dos extensores. A dor atrapalha gestos simples, como abrir a porta ou escrever (SIZÍNIO). O Campbell (cap. 51, p. 2181) resume: a dor piora com **dorsiflexão resistida do punho e supinação do antebraço** e aparece ao **agarrar objetos**. É exatamente o pedreiro que dói ao segurar firme para levantar peso.
 
 ## O ponto doloroso
 
-O diagnóstico se faz **localizando a dor na origem do ERCC**. A sensibilidade costuma estar **cerca de 5 mm distal e anterior ao ponto médio do epicôndilo** (Campbell, cap. 51, p. 2181). O Green (cap. 25, p. 863) usa as mesmas palavras: dor no epicôndilo e na origem do ERCC, "um pouco distal e anterior". O SIZÍNIO (pág. PDF 379) diz que o paciente muitas vezes aponta com precisão o ponto máximo, anterior e distal ao epicôndilo. Guarde o número: **5 mm**. Ele contrasta com a dor do túnel radial, **3 a 4 cm distal**.
+O diagnóstico se faz **localizando a dor na origem do ERCC**. A sensibilidade costuma estar **cerca de 5 mm distal e anterior ao ponto médio do epicôndilo** (Campbell, cap. 51, p. 2181). O Green (cap. 25, p. 863) usa as mesmas palavras: dor no epicôndilo e na origem do ERCC, "um pouco distal e anterior". O SIZÍNIO diz que o paciente muitas vezes aponta com precisão o ponto máximo, anterior e distal ao epicôndilo. Guarde o número: **5 mm**. Ele contrasta com a dor do túnel radial, **3 a 4 cm distal**.
 
 ## Os testes com nome
 
-Todos os testes fazem a mesma coisa: **tensionam o ERCC** (contraindo-o contra resistência ou alongando-o passivamente) e reproduzem a dor no epicôndilo. O que muda é a posição, e é a posição que a prova cobra. A fonte que nomeia os testes é o SIZÍNIO (pág. PDF 379):
+Todos os testes fazem a mesma coisa: **tensionam o ERCC** (contraindo-o contra resistência ou alongando-o passivamente) e reproduzem a dor no epicôndilo. O que muda é a posição, e é a posição que a prova cobra. A fonte que nomeia os testes é o SIZÍNIO:
 
 - **COZEN:** o paciente **estende o punho contra resistência** com o **cotovelo em 90° de flexão** e o **antebraço em pronação**; positivo se dói no epicôndilo lateral.
 - **MILL:** mão fechada, **punho em dorsiflexão** e **cotovelo em extensão**; o examinador **força o punho em flexão** e o paciente resiste. O ERCC fica alongado (cotovelo estendido, punho fletido) e ainda contrai.
@@ -155,7 +155,7 @@ O Green (cap. 25, p. 864) não usa epônimos: descreve dor à **extensão resist
 
 O Green acrescenta um alerta: **dor à extensão resistida dos dedos e à supinação resistida aparece tanto na epicondilite quanto no túnel radial**, de modo que esses testes não são definitivos para nenhuma das duas. Se a história é vaga, a dor mal localizada ou sem relação com a atividade, e se o exame não localiza a sensibilidade no ponto descrito, é preciso pensar em outras causas.
 
-!tabela Testes da epicondilite lateral (SIZÍNIO HEBERT, 5ª ed., pág. PDF 379; Green 7ª ed., cap. 25, p. 864)
+!tabela Testes da epicondilite lateral (SIZÍNIO HEBERT, 5ª ed.; Green 7ª ed., cap. 25, p. 864)
 | Teste | Cotovelo | Antebraço | Punho ou dedo | Manobra |
 |---|---|---|---|---|
 | COZEN | 90° de flexão | Pronado | Extensão do punho | Paciente estende contra resistência |
@@ -176,14 +176,14 @@ armadilha: Trocar as posições: MILL não é com o cotovelo fletido, COZEN não
 conceito: No teste da cadeira de GARDNER, o paciente ergue a cadeira com o antebraço pronado e o punho em flexão palmar, o que alonga e contrai os extensores ao mesmo tempo.
 como: O TARO 2024 pediu a posição do cotovelo e do punho no teste da cadeira.
 armadilha: Pôr o punho em extensão; o punho fica fletido, como no MILL.
-alerta: O SIZÍNIO (pág. PDF 379) e o Green (cap. 25, p. 864) dão o antebraço pronado e o punho em flexão, mas nenhum dos livros conferidos diz a posição do cotovelo; o gabarito oficial de `ombro-cotovelo-0298` (cotovelo em extensão, punho em flexão) é coerente com o punho fletido dos livros, e a extensão do cotovelo não foi confirmada nas fontes.
+alerta: O SIZÍNIO e o Green (cap. 25, p. 864) dão o antebraço pronado e o punho em flexão, mas nenhum dos livros conferidos diz a posição do cotovelo; o gabarito oficial de `ombro-cotovelo-0298` (cotovelo em extensão, punho em flexão) é coerente com o punho fletido dos livros, e a extensão do cotovelo não foi confirmada nas fontes.
 !fim
 
 # A imagem: radiografia, ultrassom e ressonância {radar=confirmado}
 
 ## Radiografia
 
-As radiografias **geralmente são negativas**; ocasionalmente há tendinite calcária (Campbell, cap. 51, p. 2181). O SIZÍNIO (pág. PDF 379) dá o número: cerca de **22%** dos indivíduos podem ter calcificações na inserção dos extensores, achados que **não afetam o prognóstico** e podem desaparecer após o tratamento. O Green (cap. 25, p. 864) comenta que pode haver ossificação de partes moles, e que não se sabe se é efeito de múltiplas infiltrações ou da própria doença. A radiografia serve sobretudo para **excluir outras doenças**.
+As radiografias **geralmente são negativas**; ocasionalmente há tendinite calcária (Campbell, cap. 51, p. 2181). O SIZÍNIO dá o número: cerca de **22%** dos indivíduos podem ter calcificações na inserção dos extensores, achados que **não afetam o prognóstico** e podem desaparecer após o tratamento. O Green (cap. 25, p. 864) comenta que pode haver ossificação de partes moles, e que não se sabe se é efeito de múltiplas infiltrações ou da própria doença. A radiografia serve sobretudo para **excluir outras doenças**.
 
 ## Ressonância magnética
 
@@ -195,7 +195,7 @@ O Green ressalva que há **falso-positivos** em assintomáticos, que o sinal pod
 
 ## Ultrassonografia e eletroneuromiografia
 
-O SIZÍNIO (pág. PDF 379) descreve na ultrassonografia **fluido hipoecogênico sob o tendão do extensor comum**, rupturas e microrrupturas e **menor ecogenicidade**. Em estudo comparativo (MILLER e colaboradores), as duas técnicas têm especificidade semelhante, entre **80% e 100%**, mas a **RM é mais sensível (90% a 100%)**. A sugestão é usar o ultrassom na avaliação inicial e reservar a RM para os casos sem alteração no ultrassom. A **ENMG dinâmica** avalia a compressão do NIP, que dá sintomas no terço proximal do antebraço e pode coexistir com a epicondilite.
+O SIZÍNIO descreve na ultrassonografia **fluido hipoecogênico sob o tendão do extensor comum**, rupturas e microrrupturas e **menor ecogenicidade**. Em estudo comparativo (MILLER e colaboradores), as duas técnicas têm especificidade semelhante, entre **80% e 100%**, mas a **RM é mais sensível (90% a 100%)**. A sugestão é usar o ultrassom na avaliação inicial e reservar a RM para os casos sem alteração no ultrassom. A **ENMG dinâmica** avalia a compressão do NIP, que dá sintomas no terço proximal do antebraço e pode coexistir com a epicondilite.
 
 !questoes central=ombro-cotovelo-0077 relacionadas=ombro-cotovelo-0024,ombro-cotovelo-0349
 conceito: Na epicondilite lateral, a RM mostra o ERCC espessado com hipersinal em T1 e em T2.
@@ -219,7 +219,7 @@ Repare nos distratores: a osteocondrite é do **capítulo** (não da tróclea), 
 
 ## Túnel radial, o diferencial número um
 
-O Campbell (p. 2181) dá os números que separam as duas doenças: a epicondilite verdadeira **coexiste com o túnel radial em 5%** dos pacientes; a dor do túnel radial fica **3 a 4 cm distal ao epicôndilo** e pode ser reproduzida pela **extensão resistida do dedo médio**. O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 864), usa o nome **síndrome do supinador** como sinônimo e repete a incidência estimada de 5%. O SIZÍNIO HEBERT (pág. PDF 380) é categórico: a **síndrome do músculo supinador é o principal diagnóstico diferencial**, com dor entre o epicôndilo e a arcada de FROHSE, e a **ENMG dinâmica** muitas vezes é necessária, embora um exame normal **não exclua** a compressão do NIP. Os outros diferenciais do SIZÍNIO incluem sinovite do cotovelo, bursite do olécrano, gota, osteocondrite dissecante, radiculopatia cervical e síndrome do desfiladeiro torácico com irritação do cordão posterior do plexo.
+O Campbell (p. 2181) dá os números que separam as duas doenças: a epicondilite verdadeira **coexiste com o túnel radial em 5%** dos pacientes; a dor do túnel radial fica **3 a 4 cm distal ao epicôndilo** e pode ser reproduzida pela **extensão resistida do dedo médio**. O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 864), usa o nome **síndrome do supinador** como sinônimo e repete a incidência estimada de 5%. O SIZÍNIO HEBERT é categórico: a **síndrome do músculo supinador é o principal diagnóstico diferencial**, com dor entre o epicôndilo e a arcada de FROHSE, e a **ENMG dinâmica** muitas vezes é necessária, embora um exame normal **não exclua** a compressão do NIP. Os outros diferenciais do SIZÍNIO incluem sinovite do cotovelo, bursite do olécrano, gota, osteocondrite dissecante, radiculopatia cervical e síndrome do desfiladeiro torácico com irritação do cordão posterior do plexo.
 
 Atenção a um detalhe aparentemente contraditório: o teste de MAUDSLEY (dedo médio) é citado pelo SIZÍNIO como teste da epicondilite, e o Campbell diz que a extensão resistida do dedo médio reproduz a dor do túnel radial. As duas coisas são verdadeiras e explicam a confusão clínica. O que separa as doenças é **onde dói**: no epicôndilo (5 mm distal e anterior) ou na massa extensora sobre a cabeça do rádio e logo abaixo dela (3 a 4 cm distal).
 
@@ -246,7 +246,7 @@ O Green (cap. 23, p. 830 e 832), no capítulo de instabilidade crônica escrito 
 
 Clinicamente, a instabilidade dá ressalto doloroso ou apreensão ao **empurrar o corpo para levantar da cadeira**, às vezes só dor lateral persistente; o Green recomenda testá-la (pivot shift posterolateral) antes de qualquer cirurgia eletiva de epicondilite (cap. 23, p. 830 e 831).
 
-!tabela Epicondilite lateral x síndrome do túnel radial (Campbell 15ª ed., cap. 51, p. 2181, e cap. 82, p. 3561; Green 7ª ed., cap. 25, p. 864; SIZÍNIO HEBERT, 5ª ed., pág. PDF 377 e 380)
+!tabela Epicondilite lateral x síndrome do túnel radial (Campbell 15ª ed., cap. 51, p. 2181, e cap. 82, p. 3561; Green 7ª ed., cap. 25, p. 864; SIZÍNIO HEBERT, 5ª ed.)
 | Aspecto | Epicondilite lateral | Túnel radial (síndrome do supinador) |
 |---|---|---|
 | Estrutura | Origem do ERCC | NIP |
@@ -268,7 +268,7 @@ armadilha: Escolher instabilidade em valgo, osteocondrite da tróclea ou compres
 
 ## A regra: a maioria melhora sem cirurgia
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2181), afirma que o tratamento não operatório tem sucesso em **84% a 95%** dos pacientes. O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 865), diz que **mais de 85% a 90%** respondem, embora algumas séries mostrem resultado mais modesto, com 40% dos pacientes mantendo algum desconforto residual. O SIZÍNIO HEBERT (pág. PDF 381), citando a metanálise de BOYER e HASTINGS, lembra que a doença tem **resolução espontânea em cerca de 70% a 80% dos casos em um ano** e que há pouca evidência de que qualquer tratamento conservador mude a história natural.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2181), afirma que o tratamento não operatório tem sucesso em **84% a 95%** dos pacientes. O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 865), diz que **mais de 85% a 90%** respondem, embora algumas séries mostrem resultado mais modesto, com 40% dos pacientes mantendo algum desconforto residual. O SIZÍNIO HEBERT, citando a metanálise de BOYER e HASTINGS, lembra que a doença tem **resolução espontânea em cerca de 70% a 80% dos casos em um ano** e que há pouca evidência de que qualquer tratamento conservador mude a história natural.
 
 Esse é o dado de uma questão frequente: o conservador tem sucesso **acima de 85%**. As alternativas erradas da mesma questão também se resolvem com os livros: o PRP **não** é comprovadamente superior, a cirurgia **não** é contraindicada (é indicada após falha prolongada) e não existe rigidez em 25% depois da cirurgia.
 
@@ -278,7 +278,7 @@ O Campbell lista repouso, gelo, injeções e fisioterapia com ultrassom, iontofo
 
 O Green (p. 865) organiza o tratamento em **três fases**: alívio e proteção (modificação de atividade, gelo, tala noturna, contraforça, eventual infiltração), reabilitação (isométricos e alongamento, depois resistidos) e manutenção (ajuste de equipamento e técnica).
 
-O SIZÍNIO (pág. PDF 381 e 382) **não usa anti-inflamatórios**, porque não há inflamação, e prefere uma **tala de velcro no punho** de dia; em estudo biomecânico, órteses de antebraço e punho que impedem a extensão foram as mais eficientes.
+O SIZÍNIO **não usa anti-inflamatórios**, porque não há inflamação, e prefere uma **tala de velcro no punho** de dia; em estudo biomecânico, órteses de antebraço e punho que impedem a extensão foram as mais eficientes.
 
 ## Corticoide: alívio rápido, benefício curto
 
@@ -288,17 +288,17 @@ O **Campbell** (p. 2181 e 2182) é o mais tolerante: em alguns pacientes, **uma 
 
 O **Green** (p. 865 e 867) é cauteloso. O corticoide foi historicamente usado para reduzir dor e sinovite e é benéfico **a curto prazo** em algumas séries, mas **não muda o resultado em 3 ou 12 meses**. COOMBES e colaboradores encontraram **resultado pior que o placebo em 1 ano**, e uma metanálise mostrou efeito **negativo a médio prazo**. Mesmo assim, o Green registra que o corticoide é **melhor que fisioterapia e modalidades** na maioria das séries. Na preferência dos autores, a infiltração pode ser **oferecida** a quem quer "algo feito", com a explicação de que o resultado a longo prazo tende a ser pior.
 
-O **SIZÍNIO** (pág. PDF 381 e 382) é o mais restritivo. No estudo de SMIDT, com três grupos, o corticoide teve **92% de sucesso em 6 semanas** contra 47% da fisioterapia e 32% sem tratamento; em **52 semanas** os números se inverteram: **69%** com corticoide, **91%** com fisioterapia e **83%** sem tratamento, com mais recidiva no grupo infiltrado. O livro conclui que o corticoide traz alívio temporário e, a longo prazo, piora o quadro por **degeneração do colágeno e destruição tecidual**, devendo ser usado **somente em situações muito especiais**.
+O **SIZÍNIO** é o mais restritivo. No estudo de SMIDT, com três grupos, o corticoide teve **92% de sucesso em 6 semanas** contra 47% da fisioterapia e 32% sem tratamento; em **52 semanas** os números se inverteram: **69%** com corticoide, **91%** com fisioterapia e **83%** sem tratamento, com mais recidiva no grupo infiltrado. O livro conclui que o corticoide traz alívio temporário e, a longo prazo, piora o quadro por **degeneração do colágeno e destruição tecidual**, devendo ser usado **somente em situações muito especiais**.
 
 Juntando: **nenhum dos três livros contraindica** a infiltração. Ela é uma opção de alívio de curto prazo, com resultado intermediário igual ou pior. Uma afirmação do tipo "o corticoide é contraindicado" é falsa pelos livros.
 
 ## PRP, sangue autólogo, toxina e ondas de choque
 
 - **PRP e sangue autólogo:** o Campbell (p. 2181) diz que não se pode tirar conclusão firme sobre a eficácia de nenhum dos dois nem sobre a superioridade de um sobre o outro; EDWARDS e CALANDRUCCIO obtiveram **79%** de alívio com sangue autólogo em pacientes refratários a tudo; a melhor evidência sugere vantagem dos dois sobre o corticoide **a médio prazo**. O Green (p. 865) relata resultados **mistos** com PRP e benefício do sangue autólogo, inclusive com agulhamento seco na epicondilite medial.
-- **Toxina botulínica:** benefício em algumas séries, com **fraqueza muscular** como efeito esperado (Green, p. 865). KEIZER comparou toxina com cirurgia de HOHMANN em refratários: **75%** de bons resultados com a toxina e **85%** com a cirurgia (SIZÍNIO, pág. PDF 381).
+- **Toxina botulínica:** benefício em algumas séries, com **fraqueza muscular** como efeito esperado (Green, p. 865). KEIZER comparou toxina com cirurgia de HOHMANN em refratários: **75%** de bons resultados com a toxina e **85%** com a cirurgia (SIZÍNIO).
 - **Ondas de choque:** estudos conflitantes, sem vantagem consistente sobre o simulado e sem uso de rotina (Campbell, p. 2181; Green, p. 866).
 
-!tabela Modalidades do tratamento conservador (Campbell 15ª ed., cap. 51, p. 2181 e 2182; Green 7ª ed., cap. 25, p. 865 a 867; SIZÍNIO HEBERT, 5ª ed., pág. PDF 381 e 382)
+!tabela Modalidades do tratamento conservador (Campbell 15ª ed., cap. 51, p. 2181 e 2182; Green 7ª ed., cap. 25, p. 865 a 867; SIZÍNIO HEBERT, 5ª ed.)
 | Modalidade | O que os livros dizem | Mensagem para a prova |
 |---|---|---|
 | Observação e modificação de atividade | Resolução espontânea em 70% a 80% em um ano; até 18 meses | Base do tratamento |
@@ -316,7 +316,7 @@ Juntando: **nenhum dos três livros contraindica** a infiltração. Ela é uma o
 conceito: O tratamento conservador tem sucesso acima de 85% (84% a 95% no Campbell); o PRP não é comprovadamente superior; o corticoide alivia a curto prazo e não é contraindicado.
 como: O CET-PR pediu a afirmação correta entre taxa de sucesso do conservador, superioridade do PRP, contraindicação da cirurgia e rigidez pós-operatória; o TARO 2006 afirmou que a infiltração de corticoide é contraindicada.
 armadilha: Achar que o corticoide é proibido por causa dos maus resultados a longo prazo, ou que o PRP já provou superioridade.
-alerta: A questão `ombro-cotovelo-0507` está sem gabarito no acervo; pelos três livros, a afirmação é errada: o Campbell (cap. 51, p. 2181) diz que uma ou duas infiltrações ajudam alguns pacientes, o Green (cap. 25, p. 865 e 867) as oferece com ressalvas e o SIZÍNIO (pág. PDF 381) as restringe a situações especiais, sem contraindicá-las.
+alerta: A questão `ombro-cotovelo-0507` está sem gabarito no acervo; pelos três livros, a afirmação é errada: o Campbell (cap. 51, p. 2181) diz que uma ou duas infiltrações ajudam alguns pacientes, o Green (cap. 25, p. 865 e 867) as oferece com ressalvas e o SIZÍNIO as restringe a situações especiais, sem contraindicá-las.
 !fim
 
 # Tratamento cirúrgico aberto {radar=confirmado}
@@ -325,7 +325,7 @@ alerta: A questão `ombro-cotovelo-0507` está sem gabarito no acervo; pelos tr�
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2182), lembra que, numa base nacional, só **2%** dos pacientes precisam de cirurgia, indicada quando o tratamento não operatório prolongado (**6 a 12 meses**) não funciona. Há estudos sugerindo que a cirurgia não é melhor que o tratamento conservador ou simulado; mesmo assim, em pacientes bem selecionados, a eficácia é de **90%**. Os **preditores de necessidade de cirurgia** são: processo de compensação trabalhista, **infiltração prévia**, presença de **túnel radial**, cirurgia ortopédica prévia e sintomas por **mais de 12 meses**.
 
-O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 866), fixa a indicação em falha de **6 meses ou mais** de tratamento conservador; os autores operam depois de **6 a 9 meses** (p. 867). O SIZÍNIO HEBERT (pág. PDF 381 e 382) fala em **6 a 12 meses** (ou 6 a 8 meses na conduta do grupo, e nos casos de recidiva), pedindo **ENMG dinâmica de rotina** para excluir compressão do NIP.
+O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 866), fixa a indicação em falha de **6 meses ou mais** de tratamento conservador; os autores operam depois de **6 a 9 meses** (p. 867). O SIZÍNIO HEBERT fala em **6 a 12 meses** (ou 6 a 8 meses na conduta do grupo, e nos casos de recidiva), pedindo **ENMG dinâmica de rotina** para excluir compressão do NIP.
 
 ## O princípio: ressecar o tecido doente
 
@@ -351,7 +351,7 @@ O Green (p. 867) descreve uma incisão lateral de cerca de **4 cm** sobre ou log
 
 O Green ensina ainda um truque para saber até onde ressecar: o **teste do arranhão**, em que o tendão normal **não sai** ao ser raspado com lâmina 10. A preocupação existe porque a área doente pode ultrapassar a visivelmente anormal, e porque o aspecto macroscópico nem sempre corresponde à histologia.
 
-No SIZÍNIO (pág. PDF 382), a técnica de NIRSCHL resseca **todo o tecido angiofibroblástico**, que em **35%** dos casos também está na porção anterior do extensor comum, e sutura o ERLC na aponeurose, com **97%** de resultados satisfatórios contra **80% a 90%** de outros procedimentos.
+No SIZÍNIO, a técnica de NIRSCHL resseca **todo o tecido angiofibroblástico**, que em **35%** dos casos também está na porção anterior do extensor comum, e sutura o ERLC na aponeurose, com **97%** de resultados satisfatórios contra **80% a 90%** de outros procedimentos.
 
 ## Resultados
 
@@ -360,13 +360,13 @@ No SIZÍNIO (pág. PDF 382), a técnica de NIRSCHL resseca **todo o tecido angio
 
 ## A pergunta da estrutura que segura o ERCC
 
-Uma prova de título perguntou qual estrutura impede a retração distal do ERCC liberado. Os livros dão a anatomia, não a frase: origens **confluentes** do ERCC, extensor dos dedos, supinador e LCL (SIZÍNIO, pág. PDF 377) e ERCC **íntimo à cápsula articular** profunda (Green, cap. 25, p. 866).
+Uma prova de título perguntou qual estrutura impede a retração distal do ERCC liberado. Os livros dão a anatomia, não a frase: origens **confluentes** do ERCC, extensor dos dedos, supinador e LCL (SIZÍNIO) e ERCC **íntimo à cápsula articular** profunda (Green, cap. 25, p. 866).
 
 !questoes central=ombro-cotovelo-0410
 conceito: Na cirurgia, o ERCC é liberado e ressecado sem se retrair porque sua origem é confluente com as estruturas vizinhas e íntima à cápsula articular profunda a ele.
 como: Uma prova de título da SBCOC perguntou qual estrutura impede a retração distal do ERCC no tratamento cirúrgico.
 armadilha: Marcar o ligamento colateral lateral, que deve ser preservado e fica posterior à área de ressecção, ou o ligamento anular.
-alerta: Nenhum dos livros conferidos afirma qual estrutura impede a retração distal do ERCC; o Green (cap. 25, p. 866) descreve o ERCC íntimo à cápsula articular e o SIZÍNIO (pág. PDF 377) descreve origens confluentes com LCL, extensor dos dedos e supinador. O gabarito oficial de `ombro-cotovelo-0410` (cápsula articular) é compatível com essa anatomia, mas não está escrito literalmente nas fontes.
+alerta: Nenhum dos livros conferidos afirma qual estrutura impede a retração distal do ERCC; o Green (cap. 25, p. 866) descreve o ERCC íntimo à cápsula articular e o SIZÍNIO descreve origens confluentes com LCL, extensor dos dedos e supinador. O gabarito oficial de `ombro-cotovelo-0410` (cápsula articular) é compatível com essa anatomia, mas não está escrito literalmente nas fontes.
 !fim
 
 # Artroscopia: técnica e portais {radar=confirmado}
@@ -375,7 +375,7 @@ alerta: Nenhum dos livros conferidos afirma qual estrutura impede a retração d
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2182), registra que o debridamento artroscópico ficou popular como alternativa menos invasiva. Revisões sistemáticas **não encontraram diferença clínica relevante** entre aberto e artroscópico; a artroscopia trouxe **retorno mais precoce ao trabalho** e trata a lesão **sem sacrificar a origem extensora comum**. O cap. 57 (p. 2505) acrescenta que a maioria volta ao trabalho em **2 a 3 semanas**, que a força de preensão fica quase igual à do lado não operado e que a melhora continua por **3 a 6 meses**.
 
-O SIZÍNIO HEBERT (pág. PDF 382) lista as mesmas vantagens: debridar o ERCC **sem dividir a aponeurose do extensor comum**, inspecionar a articulação e reabilitar em menos tempo. O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 866), lembra que **patologia intra-articular** aparece em até **69%** dos casos em algumas séries e que a liberação pode ser **seletiva** do ERCC. Por outro lado, a artroscopia do cotovelo tem curva de aprendizado longa e risco de **lesão neurovascular** e de instabilidade lateral. Uma revisão Cochrane não mostrou superioridade de nenhum método, e a escolha depende da experiência do cirurgião.
+O SIZÍNIO HEBERT lista as mesmas vantagens: debridar o ERCC **sem dividir a aponeurose do extensor comum**, inspecionar a articulação e reabilitar em menos tempo. O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 866), lembra que **patologia intra-articular** aparece em até **69%** dos casos em algumas séries e que a liberação pode ser **seletiva** do ERCC. Por outro lado, a artroscopia do cotovelo tem curva de aprendizado longa e risco de **lesão neurovascular** e de instabilidade lateral. Uma revisão Cochrane não mostrou superioridade de nenhum método, e a escolha depende da experiência do cirurgião.
 
 ## A classificação artroscópica
 
@@ -436,11 +436,11 @@ A instabilidade costuma vir de **liberação exagerada que inclui o LUCL**. Inve
 
 O Green's Operative Hand Surgery, 7ª ed. (cap. 25, p. 866), responde diretamente: na cirurgia de revisão, o achado comum é **ressecção inadequada ou incompleta da tendinose, presente em 97% dos casos**. Ressecção mais completa e reparo da aponeurose extensora deram **83%** de sucesso; a revisão em geral tem **mais de 80%** de sucesso. Para tendões muito degenerados, a **transposição do retalho de ancôneo** teve **94%** de satisfação em uma série.
 
-O SIZÍNIO HEBERT (pág. PDF 382) diz o mesmo com outras palavras: as causas de insucesso são **erro no diagnóstico** e **má técnica**, com **manutenção de tecido angiofibroblástico** e **lesões ligamentares** que geram instabilidade e dor.
+O SIZÍNIO HEBERT diz o mesmo com outras palavras: as causas de insucesso são **erro no diagnóstico** e **má técnica**, com **manutenção de tecido angiofibroblástico** e **lesões ligamentares** que geram instabilidade e dor.
 
 Portanto, na pergunta "qual a principal causa de dor no pós-operatório", a resposta é **falha em ressecar completamente o tecido patológico**. As alternativas sobre liberação excessiva do ECD, falha de cicatrização da aponeurose ou lesão do colateral existem como complicações, mas não são a causa principal.
 
-!tabela Causas de falha da cirurgia lateral (Campbell 15ª ed., cap. 51, p. 2182; Green 7ª ed., cap. 25, p. 866, e cap. 23, p. 832; SIZÍNIO HEBERT, 5ª ed., pág. PDF 382)
+!tabela Causas de falha da cirurgia lateral (Campbell 15ª ed., cap. 51, p. 2182; Green 7ª ed., cap. 25, p. 866, e cap. 23, p. 832; SIZÍNIO HEBERT, 5ª ed.)
 | Causa | Como se apresenta | Fonte |
 |---|---|---|
 | Ressecção incompleta da tendinose | Mesma dor de antes; achada em 97% das revisões | Green; SIZÍNIO; Campbell (liberação inadequada) |
@@ -508,7 +508,7 @@ O Campbell admite tratamento artroscópico entre as opções; o Green é taxativ
 
 # Reabilitação em fases {radar=oportunidade}
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, Box 51.8, p. 2184), reproduz o protocolo de WOLK, ARRIGO e ANDREWS (1993), guiado por metas. Na **fase aguda**, crioterapia, alongamento, massagem de fricção, **iontoforese com dexametasona** e evitar a preensão. Na **fase subaguda**, **fortalecimento concêntrico e excêntrico** do grupo envolvido, do ombro se houver déficit, e braçadeira de contraforça se necessário. Na **fase crônica**, manter o **excêntrico e o concêntrico**, retirar a contraforça e **modificar o equipamento** (empunhadura, tensão das cordas, piso). É aqui que mora a "fisioterapia excêntrica" das perguntas. O SIZÍNIO (pág. PDF 382) começa pelo alongamento passivo e só depois da dor eliminada põe carga de 0,5 a 1 kg.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, Box 51.8, p. 2184), reproduz o protocolo de WOLK, ARRIGO e ANDREWS (1993), guiado por metas. Na **fase aguda**, crioterapia, alongamento, massagem de fricção, **iontoforese com dexametasona** e evitar a preensão. Na **fase subaguda**, **fortalecimento concêntrico e excêntrico** do grupo envolvido, do ombro se houver déficit, e braçadeira de contraforça se necessário. Na **fase crônica**, manter o **excêntrico e o concêntrico**, retirar a contraforça e **modificar o equipamento** (empunhadura, tensão das cordas, piso). É aqui que mora a "fisioterapia excêntrica" das perguntas. O SIZÍNIO começa pelo alongamento passivo e só depois da dor eliminada põe carga de 0,5 a 1 kg.
 
 # Fechamento {radar=fundamento}
 

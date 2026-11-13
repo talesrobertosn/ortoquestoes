@@ -8,14 +8,14 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 35
 capitulo: Capítulo 31 · Disorders of the Brain (Cerebral Palsy)
 autores: Lori A. Karol
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 31, parte de paralisia cerebral, p. 1419 a 1497 (lida por inteiro); Campbell's Operative Orthopaedics, 15ª ed., capítulo 35 (Cerebral Palsy), p. 1231 a 1272, e capítulo 77 (Cerebral Palsy of the Hand), p. 3424 e 3425. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 31, parte de paralisia cerebral, p. 1419 a 1497 (lida por inteiro); Campbell's Operative Orthopaedics, 15ª ed., capítulo 35 (Cerebral Palsy), p. 1231 a 1272, e capítulo 77 (Cerebral Palsy of the Hand), p. 3424 e 3425.
 subtemas: Paralisia cerebral
 resumo: Lesão cerebral fixa com efeito ortopédico progressivo; espástica = piramidal, atetoide = extrapiramidal (gânglios da base, kernicterus), atáxica = cerebelo; leucomalácia periventricular faz diplegia; GMFCS I é o nível mais frequente e cada nível tem uma frase-chave (corrimão no II, andador no III, cadeira autopropelida no IV, sem controle de tronco no V); não sentar aos 2 anos prediz má marcha; convulsões em hemiplégicos e quadriplégicos; toxina bloqueia a liberação de acetilcolina; zonas do gastrocsóleo (STRAYER 1, VULPIUS e BAKER 2, AQUILES 3); RANCHO; agachamento com flexão de quadril e joelho e dorsiflexão; isquiotibiais curtos dão cifose lombar; quadril pelo índice de REIMERS e pelo GMFCS; GSCHWIND 3 = reorientação do pronador redondo.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado na parte de paralisia cerebral do capítulo 31 (Disorders of the Brain, de Lori A. KAROL) do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), complementada pelo capítulo 35 do Campbell's Operative Orthopaedics, 15ª ed. (2026). As páginas citadas são as impressas.
+Este resumo é inspirado na parte de paralisia cerebral do capítulo 31 (Disorders of the Brain, de Lori A. KAROL) do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), complementada pelo capítulo 35 do Campbell's Operative Orthopaedics, 15ª ed. (2026).
 
 Uma ideia organiza o tema inteiro: **a lesão do cérebro é fixa, mas o efeito sobre o esqueleto não é**. O Campbell diz isso com todas as letras: o déficit neurológico é permanente e não progressivo, mas o osso cresce mais depressa do que o músculo espástico consegue alongar, e o resultado é contratura, subluxação e, no fim, degeneração (p. 1231). Por isso o ortopedista não trata a paralisia cerebral; trata as consequências mecânicas dela, uma articulação depois da outra, ou melhor, todas de uma vez.
 

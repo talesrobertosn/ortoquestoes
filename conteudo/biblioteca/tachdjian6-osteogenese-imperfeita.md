@@ -8,14 +8,14 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 34)
 capitulo: Capítulo 38 · Metabolic and Endocrine Disorders of Bone (seção Osteogenesis Imperfecta)
 autores: Harry K.W. KIM e Mouin G. SEIKALY
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, seção Osteogenesis Imperfecta, p. 1944 a 1965 (Tabelas 38.5, 38.6, 38.7, 38.8, 38.9, 38.10 e 38.11, extraídas do PDF), e p. 1966 (osteoporose juvenil idiopática); Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Benjamin W. SHEFFER), seção Osteogenesis Imperfecta, p. 1220 a 1223 (Tabela 34.6 e Técnica 34.14). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, seção Osteogenesis Imperfecta, p. 1944 a 1965 (Tabelas 38.5, 38.6, 38.7, 38.8, 38.9, 38.10 e 38.11), e p. 1966 (osteoporose juvenil idiopática); Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Benjamin W. SHEFFER), seção Osteogenesis Imperfecta, p. 1220 a 1223 (Tabela 34.6 e Técnica 34.14).
 subtemas: Osteogênese imperfeita
 resumo: Colágeno tipo I com duas cadeias alfa-1 (COL1A1, cromossomo 17) e uma alfa-2 (COL1A2, cromossomo 7) e glicina a cada terceira posição; tipo I quantitativo com esclera azul, tipos II a IV qualitativos e quantitativos; SILLENCE: I e IV autossômicos dominantes, II letal e de fragilidade extrema, III o mais grave que sobrevive, IV com esclera normal, A e B pelos dentes; tipo V (IFITM5) com calo hiperplásico que simula osteossarcoma, membrana interóssea calcificada e luxação da cabeça do rádio; vértebras bicôncavas, wormianos, calcificações em pipoca; escoliose torácica, mais nos tipos III (89%) e IV (61%); fratura imobilizada só até a dor passar, pseudartrose incomum; olécrano no tipo I; SOFIELD-MILLAR, BAILEY-DUBOW e FASSIER-DUVAL; bisfosfonatos aumentam a massa óssea; maus-tratos no diferencial.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado na seção de osteogênese imperfeita do capítulo 38 (Metabolic and Endocrine Disorders of Bone) do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), escrito por Harry K.W. KIM e Mouin G. SEIKALY, e completado pela seção correspondente do capítulo 34 do Campbell's Operative Orthopaedics, 15ª ed., de Benjamin W. SHEFFER. As páginas citadas são as impressas.
+Este resumo é inspirado na seção de osteogênese imperfeita do capítulo 38 (Metabolic and Endocrine Disorders of Bone) do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), escrito por Harry K.W. KIM e Mouin G. SEIKALY, e completado pela seção correspondente do capítulo 34 do Campbell's Operative Orthopaedics, 15ª ed., de Benjamin W. SHEFFER.
 
 A osteogênese imperfeita (OI) é uma doença do **colágeno tipo I**, a proteína que dá ao osso a capacidade de dobrar sem quebrar. Quando falta colágeno, ou quando ele é feito torto, o osso fica quebradiço, a esclera fica fina e azulada, a dentina fica opalescente e o ouvido médio ossifica mal. Quase tudo o que a prova pergunta sai dessa frase: o que é o defeito molecular, como ele se distribui nos tipos de SILLENCE e o que o ortopedista faz com ossos que fraturam e encurvam a vida toda.
 

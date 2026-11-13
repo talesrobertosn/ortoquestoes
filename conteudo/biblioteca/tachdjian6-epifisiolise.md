@@ -8,14 +8,14 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38
 capitulo: Capítulo 15 · Slipped Capital Femoral Epiphysis
 autores: David Podeszwa
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 15, p. 581 a 605 e pranchas 15.2 e 15.3 (p. 611 e 612); Campbell's Operative Orthopaedics, 15ª ed., cap. 38 (David D. SPENCE e Benjamin W. SHEFFER), p. 1427 a 1439, com a eTécnica das p. 1435.e1 a 1435.e3, e o trecho de epifisiólise do cap. 4 (artroplastia do quadril, p. 253 aprox.). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 15, p. 581 a 605 e pranchas 15.2 e 15.3 (p. 611 e 612); Campbell's Operative Orthopaedics, 15ª ed., cap. 38 (David D. SPENCE e Benjamin W. SHEFFER), p. 1427 a 1439, com a eTécnica das p. 1435.e1 a 1435.e3, e o trecho de epifisiólise do cap. 4 (artroplastia do quadril, p. 253 aprox.).
 subtemas: Epifisiólise proximal do fêmur
 resumo: Adolescente obeso no estirão (meninos 12 a 15, meninas 11 a 13), colo que sobe e vai para anterior enquanto a epífise fica posterior e inferior; retroversão do colo, fise mais inclinada e colo-diáfise diminuído; hipotireoidismo, deficiência de GH, insuficiência renal e radioterapia pélvica; LODER pelo apoio (instável não anda nem com muletas, necrose até 47%), SOUTHWICK pelo ângulo cabeça-diáfise (leve abaixo de 30°, moderado 30 a 60°, grave acima de 60°); KLEIN e TRETHOWAN, STEEL e SCHAM no AP; parafuso canulado único central perpendicular à fise, evitando o quadrante anterossuperior; PARSCH, DUNN modificado com retalho retinacular posterior, SOUTHWICK intertrocantérica para crônicos de 30 a 70°; profilaxia contralateral com triradiada aberta e endocrinopatia; necrose prevista pela instabilidade, condrólise com espaço de 3 mm ou menos, impacto femoroacetabular do tipo came como sequela.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 15 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), escrito por David PODESZWA, e o completa com a parte de epifisiólise do capítulo 38 do Campbell's Operative Orthopaedics, 15ª ed. (2026), de David D. SPENCE e Benjamin W. SHEFFER. As páginas citadas são as impressas.
+Este resumo segue o capítulo 15 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), escrito por David PODESZWA, e o completa com a parte de epifisiólise do capítulo 38 do Campbell's Operative Orthopaedics, 15ª ed. (2026), de David D. SPENCE e Benjamin W. SHEFFER.
 
 A doença cabe numa imagem mecânica. No estirão, a fise proximal do fêmur fica mais fraca e mais inclinada, e o peso do adolescente (muitas vezes obeso) passa a cisalhá-la. A epífise fica presa no acetábulo; quem escorrega é o colo, que sobe e vai para a frente, e a cabeça parece ter caído **para trás e para baixo**. Dessa imagem saem os sinais radiográficos (KLEIN, SCHAM, STEEL), o exame (a coxa roda para fora quando o quadril flete), a técnica do parafuso (entrar pela frente do colo e mirar para trás) e a sequela tardia (a metáfise anterior que bate no acetábulo, o impacto do tipo came).
 

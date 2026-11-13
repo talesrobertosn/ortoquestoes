@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 24 · Fractures and Traumatic Dislocations of the Hip in Children
 autores: Chinmay Paranjape e Vidyadhar Upasani
-fonte: Livro conferido localmente em 27/10/2026 e relido inteiro em 31/10/2026, capítulo 24 (fraturas do quadril, fraturas de estresse do colo e luxações traumáticas). O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 27/10/2026 e relido inteiro em 31/10/2026, capítulo 24 (fraturas do quadril, fraturas de estresse do colo e luxações traumáticas).
 subtemas: Fraturas da pelve e do quadril na criança; Outras fraturas na criança; Fraturas do fêmur e da perna na criança
 resumo: Fratura do quadril da criança é rara (menos de 1%), de alta energia e cheia de complicações; a fise é barreira e a cabeça depende dos retinaculares posterossuperiores da circunflexa medial; DELBET I transepifisária (8%, IB com luxação = necrose em quase todos), II transcervical (45 a 50%, a mais comum), III cervicotrocantérica (34%), IV intertrocantérica (12%), com necrose de 38, 28, 18 e 5%; redução anatômica, aberta se sobrar desvio, fixação estável que cruza a fise se preciso; RATLIFF I toda a cabeça (pior), II parcial, III colo (bom); coxa vara, fechamento fisário (fise proximal faz 13% do membro) e pseudartrose (osteotomia valgizante); estresse de tensão = fixar; luxação posterior em mais de 90%, baixa energia abaixo de 6 anos, reduzir com anestesia e radioscopia no adolescente, necrose ligada ao tempo até a redução.
 ---

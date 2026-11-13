@@ -15,7 +15,7 @@ resumo: SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a f
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 26 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Ying Li, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
+Este resumo é inspirado no capítulo 26 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Ying Li, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 A fratura da fise distal do fêmur é **incomum**, menos de 2% das lesões fisárias, mas é uma das que **mais complicam**: de 40% a 60% precisam de nova cirurgia, e numa metanálise de 564 fraturas **52%** evoluíram com distúrbio do crescimento. Essa contradição, rara e perigosa, é o fio do capítulo e da banca. As questões giram em poucos blocos: **qual tipo de SALTER-HARRIS é o mais comum**, **por que a força em varo ou valgo quebra a fise e não o ligamento**, **qual lesão vem junto (o cruzado anterior)**, **a fise que mais cresce** e **a parada do crescimento**, que aqui acontece mesmo nos tipos I e II.
 

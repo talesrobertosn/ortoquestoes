@@ -8,14 +8,14 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12) e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36)
 capitulo: Capítulo 34 · Traumatic Brachial Plexus Injury (com o capítulo 40, Pediatric Brachial Plexus Palsy)
 autores: Robert J. Spinner, Alexander Y. Shin, Bassem T. Elhassan e Allen T. Bishop (cap. 34); Roger Cornwall e Peter M. Waters (cap. 40)
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury, pp. 1146 a 1174 e 1179) e cap. 40 (Pediatric Brachial Plexus Palsy, pp. 1391 a 1420); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (paralisia braquial neonatal, pp. 404 a 410); Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (Paralytic Disorders, pp. 1310 a 1318). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury, pp. 1146 a 1174 e 1179) e cap. 40 (Pediatric Brachial Plexus Palsy, pp. 1391 a 1420); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (paralisia braquial neonatal, pp. 404 a 410); Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (Paralytic Disorders, pp. 1310 a 1318).
 subtemas: Plexo braquial e paralisia obstétrica
 resumo: Divisões posteriores formam o fascículo posterior (toracodorsal, axilar, radial); escapular dorsal de C5 e torácico longo de C5 a C7; HORNER, romboide e serrátil paralisados e diafragma elevado indicam avulsão; pan-plexo é o padrão traumático mais comum; cotovelo antes do ombro; OBERLIN (ulnar para bíceps com C8-T1 íntegros), acessório para supraescapular, LEECHAVENGVONGS (cabeça longa do tríceps para o axilar); obstétrica: distocia de ombro, lado direito, NARAKAS I a IV, bíceps antigravitacional decide a microcirurgia; contratura em RI com displasia de WATERS, L'EPISCOPO para RE e osteotomia derrotativa no ombro incongruente.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo junta dois capítulos do Green's Operative Hand Surgery, 7ª edição (2017): o capítulo 34 (Traumatic Brachial Plexus Injury), sobre a lesão do adulto, e o capítulo 40 (Pediatric Brachial Plexus Palsy), sobre a paralisia obstétrica. Onde o Green é curto, entram o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12), e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36). As páginas citadas são as impressas.
+Este resumo junta dois capítulos do Green's Operative Hand Surgery, 7ª edição (2017): o capítulo 34 (Traumatic Brachial Plexus Injury), sobre a lesão do adulto, e o capítulo 40 (Pediatric Brachial Plexus Palsy), sobre a paralisia obstétrica. Onde o Green é curto, entram o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12), e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36).
 
 A prova cobra quatro raciocínios. **Anatomia**: de onde sai cada nervo, para deduzir o nível pelo músculo que falta. **O gânglio da raiz dorsal**: a lesão pré-ganglionar (avulsão) não se recupera nem se enxerta, e o exame a denuncia. **Estratégia**: quando operar, o que reconstruir primeiro e qual doador usar. **A criança**: fatores do parto, NARAKAS, o bíceps como relógio da decisão e o ombro que luxa para trás.
 

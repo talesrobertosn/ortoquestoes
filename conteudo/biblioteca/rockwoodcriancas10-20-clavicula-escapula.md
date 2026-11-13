@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 20 · Clavicle and Scapula Fractures and Acromioclavicular and Sternoclavicular Injuries
 autores: Benton E. Heyworth
-fonte: Livro conferido localmente em 28/10/2026 e relido inteiro em 31/10/2026, capítulo 20. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e algoritmo.
+fonte: Livro conferido localmente em 28/10/2026 e relido inteiro em 31/10/2026, capítulo 20.
 subtemas: Fraturas da clavícula e do úmero proximal na criança; Outras fraturas na criança
 resumo: Clavícula = 5% a 15% das fraturas da criança, terço médio em até 80% e lateral em 10% a 30%; ossificação intramembranosa a partir de 5,5 semanas, 80% do comprimento aos 9 (meninas) e 12 anos (meninos), mas ossificação até 25 anos; fratura de parto no ombro anterior (direito, OEA) e pseudoparalisia reavaliada com 3 a 4 semanas; queda sobre a face lateral do ombro na idade escolar; tipoia mesmo nas desviadas do adolescente (pseudartrose 0,4%), cirurgia na exposta e na lesão neurovascular; terço lateral com o osso saindo pelo periósteo superior e os coracoclaviculares presos ao inferior, cirurgia sobretudo pelo desvio posterior no trapézio; escápula de alta energia ou maus-tratos; acromioclavicular quase sempre pseudoluxação, tipo IV o mais perdido e mais operado; esternoclavicular posterior operada, redução fechada no centro cirúrgico com coxim entre as escápulas e tração em abdução.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 20 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Benton E. Heyworth, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam seção, figura e algoritmo.
+Este resumo é inspirado no capítulo 20 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Benton E. Heyworth, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 O capítulo trata da cintura escapular inteira: **clavícula** (terço médio e lateral), **escápula**, **acromioclavicular** e **esternoclavicular**. A clavícula domina, porque é uma das fraturas mais comuns da infância e porque quase toda a literatura sobre ela vem do adulto (um grupo de estudo só de clavícula do adolescente foi criado justamente para preencher essa lacuna), e o tema mais vivo do capítulo é uma controvérsia: operar ou não a fratura desviada do adolescente. A resposta do autor é clara e apoiada em séries grandes: **quase sempre não**.
 

@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (caps. 19 e 34)
 capitulo: Capítulo 92 · Neurogenic Disorders (seção Cavus Foot)
 autores: Carson M. RIDER
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (Cavus Foot, p. 4037 a 4059, com as e-páginas 4042.e1 e 4051.e1); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (Pes Cavus, p. 755 a 767, e coalizão tarsal, p. 749 aprox.) e cap. 34 (CHARCOT-MARIE-TOOTH, p. 1680 a 1686). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (Cavus Foot, p. 4037 a 4059, com as e-páginas 4042.e1 e 4051.e1); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (Pes Cavus, p. 755 a 767, e coalizão tarsal, p. 749 aprox.) e cap. 34 (CHARCOT-MARIE-TOOTH, p. 1680 a 1686).
 subtemas: Pé cavo
 resumo: Pé cavo é arco longitudinal alto com equino do antepé (1º raio em flexão plantar e pronado) e retropé varo (cavovaro, o mais comum) ou em calcâneo (calcaneocavo, da paralisia do tríceps sural); dois terços têm causa neurológica e a mais comum é CHARCOT-MARIE-TOOTH (tibial anterior e fibular curto fracos, fibular longo e tibial posterior fortes, intrínsecos contraídos); exame neurológico e da coluna obrigatórios, RM se a causa não aparece; COLEMAN testa a flexibilidade do retropé (corrigiu = tratar só o antepé); MEARY normal 0° e aumentado, HIBBS normal acima de 150° e diminuído, KITE perto de zero = varo, calcaneal pitch normal 18° a 32°; tratamento: liberação plantar sempre, fibular longo para curto, tibial posterior para o dorso, JONES, osteotomia dorsal do 1º metatarso, DWYER no varo rígido, COLE, JAPAS e JAHSS no mediopé e tríplice artrodese como último recurso.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo nasce da seção Cavus Foot do capítulo 92 (Neurogenic Disorders) do Campbell's Operative Orthopaedics, 15ª ed., e se apoia em dois capítulos do Tachdjian's Pediatric Orthopaedics, 6ª ed.: a seção Pes Cavus do capítulo 19, que é a melhor aula sobre exame, radiografia e escolha cirúrgica na criança, e a parte de CHARCOT-MARIE-TOOTH do capítulo 34, que explica a doença que está por trás da maioria dos pés cavos que chegam ao consultório. As páginas citadas são as impressas.
+Este resumo nasce da seção Cavus Foot do capítulo 92 (Neurogenic Disorders) do Campbell's Operative Orthopaedics, 15ª ed., e se apoia em dois capítulos do Tachdjian's Pediatric Orthopaedics, 6ª ed.: a seção Pes Cavus do capítulo 19, que é a melhor aula sobre exame, radiografia e escolha cirúrgica na criança, e a parte de CHARCOT-MARIE-TOOTH do capítulo 34, que explica a doença que está por trás da maioria dos pés cavos que chegam ao consultório.
 
 O tema parece um catálogo de epônimos, mas tem uma espinha dorsal só: **o pé cavo é o retrato de um desequilíbrio muscular**. Um músculo que ficou forte puxa sem oposição, outro que enfraqueceu deixa de equilibrar, e o esqueleto, que no começo é flexível, vai se moldando à força que sobrou. Quem entende quais músculos vencem e quais perdem consegue deduzir a posição do antepé, a do retropé, o resultado do teste de COLEMAN, os ângulos da radiografia e até qual tendão transferir para onde.
 

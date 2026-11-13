@@ -8,14 +8,14 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed., e o HEBERT
 capitulo: Capítulo 10 · Treatment of the Stiff Finger and Hand
 autores: Robert N. Hotchkiss
-fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10 (p. 338 a 344 e o conteúdo online incluído no PDF), cap. 5 (p. 155 a 174 e referências), cap. 31 (p. 1046), cap. 36 (p. 1270 a 1275), cap. 39 (p. 1387 a 1390) e cap. 55 (p. 1879 a 1893); Campbell's Operative Orthopaedics, 15ª ed., caps. 71 (p. 3181 a 3187), 79 (p. 3510 e 3511) e 85 (p. 3672 a 3674); HEBERT (Sizínio), 5ª ed., caps. 53 e 54. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10 (p. 338 a 344 e o conteúdo online incluído no PDF), cap. 5 (p. 155 a 174 e referências), cap. 31 (p. 1046), cap. 36 (p. 1270 a 1275), cap. 39 (p. 1387 a 1390) e cap. 55 (p. 1879 a 1893); Campbell's Operative Orthopaedics, 15ª ed., caps. 71 (p. 3181 a 3187), 79 (p. 3510 e 3511) e 85 (p. 3672 a 3674); HEBERT (Sizínio), 5ª ed., caps. 53 e 54.
 subtemas: Deformidades dos dedos
 resumo: Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); BUNNELL e intrínseco plus e minus; checkrein e artéria digital transversa; camptodactilia, clinodactilia e KIRNER.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 10 (Treatment of the Stiff Finger and Hand, de HOTCHKISS) do Green's Operative Hand Surgery, 7ª edição (2017), lido junto com o capítulo 5 (Extensor Tendon Injury, de STRAUCH), o capítulo 55 (artrite reumatoide) e os capítulos pediátricos 36 e 39 do mesmo livro, além do Campbell's Operative Orthopaedics, 15ª ed., e do HEBERT. As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 10 (Treatment of the Stiff Finger and Hand, de HOTCHKISS) do Green's Operative Hand Surgery, 7ª edição (2017), lido junto com o capítulo 5 (Extensor Tendon Injury, de STRAUCH), o capítulo 55 (artrite reumatoide) e os capítulos pediátricos 36 e 39 do mesmo livro, além do Campbell's Operative Orthopaedics, 15ª ed., e do HEBERT.
 
 Um dedo é uma corrente de três elos (MF, IFP e IFD) movida por cabos que cruzam mais de uma articulação. Quase toda deformidade dos dedos nasce do mesmo fenômeno: **um cabo falha ou encurta, e o elo vizinho paga a conta**. O terminal rompe e a IFD cai (martelo); a tensão sobra na IFP e ela hiperestende (cisne). A banda central rompe e a IFP flete; as bandas laterais escorregam para volar e a IFD hiperestende (botoeira). O intrínseco encurta e a MF flete com as IF estendidas (plus); o intrínseco paralisa e a MF hiperestende com as IF fletidas (minus, a garra). A cápsula e o checkrein encurtam e a IFP fica presa em flexão sem que o extensor tenha culpa (pseudobotoeira).
 

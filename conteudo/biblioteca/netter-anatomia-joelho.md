@@ -8,7 +8,7 @@ livro: Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatom
 edicao: 2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026)
 capitulo: Capítulo 9 · Perna/Joelho
 autores: Jon C. Thompson (ilustrações de Frank H. Netter)
-fonte: Livros conferidos localmente em 01/11/2026: Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho) lido por inteiro, inclusive as tabelas que só existem como imagem (aprox. p. 265 a 347), e as tabelas de músculos da coxa do cap. 8 (aprox. p. 237 a 240); Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries, p. 1983 a 2000, 2015 a 2023, 2065 a 2067, 2078, 2098 e 2099), cap. 1 (vias de acesso ao joelho, p. 25 a 47), cap. 8 (p. 412 a 414 e 421), cap. 10 (p. 500 e 501) e cap. 68 (p. 3072). As páginas citadas são as impressas; no Netter, que não traz número no cabeçalho do arquivo, foram inferidas pelo deslocamento constante do capítulo e vão marcadas como aproximadas.
+fonte: Livros conferidos localmente em 01/11/2026: Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho) lido por inteiro, inclusive as tabelas que só existem como imagem (aprox. p. 265 a 347), e as tabelas de músculos da coxa do cap. 8 (aprox. p. 237 a 240); Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries, p. 1983 a 2000, 2015 a 2023, 2065 a 2067, 2078, 2098 e 2099), cap. 1 (vias de acesso ao joelho, p. 25 a 47), cap. 8 (p. 412 a 414 e 421), cap. 10 (p. 500 e 501) e cap. 68 (p. 3072).
 subtemas: Anatomia do joelho; Vias de acesso ao joelho
 resumo: Semimembranáceo e suas cinco expansões (a primeira é o ligamento poplíteo oblíquo) e o oblíquo posterior de HUGHSTON (espessamento do ligamento capsular medial); canto posterolateral com LCF, tendão poplíteo e popliteofibular (rotação externa); poplíteo roda medialmente a tíbia e destrava o joelho; ligamento anterolateral extra-articular, entre GERDY e a fíbula, atuando a 30 e 90 graus; LCA irrigado pela genicular média, feixes AM e PL; LCP e meniscofemorais de HUMPHREY e WRISBERG; platô lateral convexo; trato iliotibial em GERDY; fabela no gastrocnêmio lateral; via de GALLA e LOBENHOFFER entre semimembranáceo e gastrocnêmio medial; ângulo Q; COVENTRY com hipercorreção a 8 a 10 graus de valgo; nervos fibulares e safeno; testes do exame físico.
 ---
@@ -36,7 +36,7 @@ O ponto mais cobrado dos ossos é a forma dos platôs. O Netter (cap. 9, aprox. 
 O Rockwood and Green's Fractures in Adults, 10ª ed. (2025), na anatomia aplicada das fraturas do platô (cap. 62), confirma a forma e acrescenta a altura: a superfície do **platô lateral é plana ou levemente convexa**, a do **medial é côncava** e mais congruente com o côndilo, e o **platô lateral é também mais alto que o medial**, o que responde pelos poucos graus de varo do platô em relação à diáfise. O mesmo capítulo lembra que o platô medial resiste mais à fratura que o lateral e que essa diferença de forma deixa ver os dois platôs separados na radiografia de perfil.
 
 !figura 62-21 imagem=joelho/rwa10-62-21-w29.jpeg
-Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 62, Fig. 62-21 (arquivo sem página impressa). Radiografia do joelho em perfil: os contornos dos dois platôs se sobrepõem, o medial côncavo e o lateral levemente convexo.
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 62, Fig. 62-21. Radiografia do joelho em perfil: os contornos dos dois platôs se sobrepõem, o medial côncavo e o lateral levemente convexo.
 !fim
 
 Os outros marcos da tíbia proximal estão na tabela abaixo. O Netter lembra ainda que as fraturas do **platô lateral** são as mais comuns e que a avulsão dos tubérculos intercondilares na criança envolve o **LCA**.
@@ -439,7 +439,7 @@ alerta: A `quadril-0137` cita "a figura a seguir", mas a imagem não está no ac
 !fim
 
 !figura 63-5 imagem=joelho/rwa10-63-5-w31.jpeg
-Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 63, Fig. 63-5 (arquivo sem página impressa). Os quatro compartimentos da perna em corte transversal: anterior em azul, à frente da membrana interóssea; lateral em verde, junto à fíbula; posterior profundo em amarelo, logo atrás da membrana; posterior superficial em vermelho, o mais posterior.
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 63, Fig. 63-5. Os quatro compartimentos da perna em corte transversal: anterior em azul, à frente da membrana interóssea; lateral em verde, junto à fíbula; posterior profundo em amarelo, logo atrás da membrana; posterior superficial em vermelho, o mais posterior.
 !fim
 
 Os músculos que a prova aponta ao redor do joelho (Netter, aprox. p. 316 a 319):

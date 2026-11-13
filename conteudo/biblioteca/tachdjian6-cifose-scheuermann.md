@@ -8,14 +8,14 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 41)
 capitulo: Capítulo 10 · Kyphosis
 autores: Amy L. McINTOSH e Brandon A. RAMO
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 10 (Kyphosis), p. 253 a 268, lido por inteiro, e cap. 9 (Scoliosis), seção Congenital Kyphosis, p. 185 a 190; Campbell's Operative Orthopaedics, 15ª ed., cap. 41 (Kyphosis, de Jeffrey R. SAWYER e William C. WARNER Jr.), p. 1629 a 1642, 1646 e 1647 (Box 41.1, 41.2 e 41.3, Tabela 41.1), e cap. 49 (Infections and Tumors of the Spine), p. 1949. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 10 (Kyphosis), p. 253 a 268, lido por inteiro, e cap. 9 (Scoliosis), seção Congenital Kyphosis, p. 185 a 190; Campbell's Operative Orthopaedics, 15ª ed., cap. 41 (Kyphosis, de Jeffrey R. SAWYER e William C. WARNER Jr.), p. 1629 a 1642, 1646 e 1647 (Box 41.1, 41.2 e 41.3, Tabela 41.1), e cap. 49 (Infections and Tumors of the Spine), p. 1949.
 subtemas: Cifose e doença de Scheuermann
 resumo: Cifose torácica normal de 20 a 45 graus (até 50); postural é flexível, sem cunha, nunca cirúrgica e é o diferencial mais comum; SCHEUERMANN com ápice T7 a T9 (torácico) ou T10 a T12 (toracolombar), início aos 10 a 12 anos, critérios de SORENSEN (cunha maior que 5 graus em três vértebras adjacentes no ápice, irregularidade das placas, estreitamento discal, nódulos de SCHMORL); isquiotibiais tensos, hiperlordose cervical e lombar, dor no ápice que melhora com a maturidade; escoliose em um terço, de 10 a 20 graus e que não progride; espondilólise em 50%; MILWAUKEE no ápice torácico (três pontos), órtese com mais de 50 graus, alguma flexibilidade e pelo menos 1 ano de crescimento; cirurgia com mais de 70 a 75 graus progressivos e dor refratária, posterior com osteotomias de PONTE, de T2 à vértebra sagital estável, sem hipercorrigir (cifose juncional em até 30% a 40%); cifose congênita tipo I (falha de formação) é a mais comum, mais progressiva e a que mais paralisa, órtese não tem papel.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 10 (Kyphosis) do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), escrito por Amy L. McINTOSH e Brandon A. RAMO, completado pela seção de cifose congênita do capítulo 9 do mesmo livro e pelo capítulo 41 (Kyphosis) do Campbell's Operative Orthopaedics, 15ª ed., de Jeffrey R. SAWYER e William C. WARNER Jr. As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 10 (Kyphosis) do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), escrito por Amy L. McINTOSH e Brandon A. RAMO, completado pela seção de cifose congênita do capítulo 9 do mesmo livro e pelo capítulo 41 (Kyphosis) do Campbell's Operative Orthopaedics, 15ª ed., de Jeffrey R. SAWYER e William C. WARNER Jr.
 
 A coluna vista de lado tem uma corcunda normal no tórax. O tema inteiro gira em torno de uma pergunta: **essa corcunda está grande demais, e por quê?** A resposta separa três adolescentes que chegam ao consultório com o mesmo motivo (as costas redondas):
 

@@ -8,14 +8,14 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)
 capitulo: Capítulo 55 · Rheumatoid Arthritis and Other Connective Tissue Diseases
 autores: Paul Feldon, Andrew L. Terrono, Edward A. Nalebuff e Lewis H. Millender
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), capítulo 55, p. 1832 a 1897 (princípios, medicações, prioridades, psoríase, lúpus, esclerodermia, tenossinovites, rupturas tendíneas, punho, articulações MF e IFP, pescoço de cisne, botoeira e polegar, com as tabelas 55.2 a 55.10 extraídas do PDF); Campbell's Operative Orthopaedics, 15ª ed. (2026), capítulo 78, Arthritic Hand, folha de abertura (sem número impresso) e p. 3444 a 3452, 3466 a 3468 e 3492 a 3498. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), capítulo 55, p. 1832 a 1897 (princípios, medicações, prioridades, psoríase, lúpus, esclerodermia, tenossinovites, rupturas tendíneas, punho, articulações MF e IFP, pescoço de cisne, botoeira e polegar, com as tabelas 55.2 a 55.10); Campbell's Operative Orthopaedics, 15ª ed. (2026), capítulo 78, Arthritic Hand, folha de abertura (sem número impresso) e p. 3444 a 3452, 3466 a 3468 e 3492 a 3498.
 subtemas: Mão reumatoide
 resumo: Sinóvia que estira e invade; deformidades bilaterais e simétricas; prioridade da dor, punho e polegar antes dos dedos; tenossinovite dorsal indolor; rupturas extensoras do mínimo para o indicador (VAUGHAN-JACKSON) e FPL pelo escafoide (MANNERFELT); caput ulnae com supinação do carpo, desvio radial do carpo e desvio ulnar com luxação palmar da MF; DARRACH, SAUVÉ-KAPANDJI e artrodese com pinos de STEINMANN; SWANSON e intrínseco cruzado de FLATT; pescoço de cisne de NALEBUFF tipos I a IV; botoeira que nasce na IFP; polegar tipo I botoeira, III cisne, IV goleiro.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 55 do Green's Operative Hand Surgery, 7ª edição (2017), escrito por FELDON, TERRONO, NALEBUFF e MILLENDER, a escola de Boston que criou boa parte das classificações que as bancas cobram. O capítulo 78 do Campbell's Operative Orthopaedics, 15ª ed., entra como segunda opinião, sobretudo para a ordem de prioridades, a técnica de BECKENBAUGH e a artrodese do punho. As páginas citadas são as impressas.
+Este resumo segue o capítulo 55 do Green's Operative Hand Surgery, 7ª edição (2017), escrito por FELDON, TERRONO, NALEBUFF e MILLENDER, a escola de Boston que criou boa parte das classificações que as bancas cobram. O capítulo 78 do Campbell's Operative Orthopaedics, 15ª ed., entra como segunda opinião, sobretudo para a ordem de prioridades, a técnica de BECKENBAUGH e a artrodese do punho.
 
 Uma ideia organiza todo o tema: **a artrite reumatoide é uma doença da sinóvia**. Tudo o que se vê na mão (desvio ulnar, botoeira, pescoço de cisne, ruptura de tendão, punho que gira) é consequência de uma sinóvia hipertrofiada que **destrói a cartilagem, invade o osso subcondral, estira as partes moles e invade os tendões** (Green, p. 1832). Uma articulação doente desequilibra a vizinha, e o desequilíbrio vira deformidade.
 

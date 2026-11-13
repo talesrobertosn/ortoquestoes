@@ -8,14 +8,14 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 32)
 capitulo: Capítulo 13 · Displasia do desenvolvimento do quadril
 autores: John A. Herring (editor)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulo 13, sobretudo etiologia, desenvolvimento, fisiopatologia, exame, radiografia, ultrassonografia, suspensório de PAVLIK, redução fechada e necrose avascular. As páginas citadas são as impressas. Ampliado em 01/11/2026 com o capítulo 13 relido por inteiro (tabelas extraídas do PDF) e o Campbell's Operative Orthopaedics, 15ª ed., cap. 32.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulo 13, sobretudo etiologia, desenvolvimento, fisiopatologia, exame, radiografia, ultrassonografia, suspensório de PAVLIK, redução fechada e necrose avascular. Ampliado em 01/11/2026 com o capítulo 13 relido por inteiro (tabelas) e o Campbell's Operative Orthopaedics, 15ª ed., cap. 32.
 subtemas: Displasia do desenvolvimento do quadril
 resumo: Fatores de risco (quadril esquerdo, primeiro filho, pélvica franca, oligodrâmnio, metatarso aduto); embriologia (fenda na 7ª semana, cabeça e acetábulo do mesmo mesênquima, núcleo entre 4 e 7 meses); obstáculos à redução (cápsula em ampulheta, limbo, pulvinar, ligamento redondo, iliopsoas); exame por idade (limitação da abdução, GALEAZZI, KLISIC); radiografia (HILGENREINER, PERKIN, SHENTON, índice acetabular); ultrassonografia (GRAF e HARCKE); PAVLIK; redução fechada e zona de segurança; necrose e epifisiodese trocantérica.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 13 (Displasia do desenvolvimento do quadril) do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021). As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 13 (Displasia do desenvolvimento do quadril) do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021).
 
 Uma frase organiza o capítulo inteiro: **a cabeça femoral molda o acetábulo**. Tudo o que tira a cabeça do lugar (útero apertado, frouxidão, enfaixamento) deixa o acetábulo raso; tudo o que a recoloca de forma concêntrica e cedo (PAVLIK, redução fechada) permite a remodelação. E tudo o que a aperta demais (abdução forçada, rotação interna) ameaça a circulação.
 
