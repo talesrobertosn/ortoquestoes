@@ -1,6 +1,6 @@
 ---
 id: rockwood10-34-fratura-clavicula
-versao: 1
+versao: 2
 titulo: Fratura da clavícula
 especialidade: trauma
 acesso: gratis
@@ -185,7 +185,7 @@ armadilha: Trauma direto sobre a clavícula: o golpe que fratura é na ponta do 
 As forças musculares e a gravidade explicam o desvio, e é por isso que ele é tão previsível:
 
 - o **fragmento medial** é puxado para **cima** pelo **esternocleidomastóideo**, sem oposição;
-- o **fragmento distal** é segurado **para baixo** pelo **deltoide** e pelo peso do braço, e puxado para **medial** pelo **peitoral maior**;
+- o **fragmento distal** é segurado **para baixo** pelo **deltoide** e pelo peso do braço, e puxado para **medial** pelo **peitoral maior**; o desenho da Fig. 34-5 mostra as mesmas forças por outro ângulo: o **peso do braço** puxando para baixo e o **peitoral maior junto com o grande dorsal** puxando para medial (a seção de anatomia cirúrgica do capítulo nomeia o deltoide; a figura não o desenha);
 - o resultado é o fragmento distal **transladado para inferior, anterior e medial** (encurtado) e **rodado para anterior**; a escápula vai junto e fica em **protração**.
 
 Na clínica isso aparece como o **ombro "ptótico"**: caído, empurrado para medial e encurtado, que gira e vai para frente. Visto de trás, a ponta inferior da escápula pode ficar discretamente saliente. A pele sobre a ponta do fragmento medial pode **empalidecer**: se ela estiver ameaçada, é indicação de reduzir e fixar logo, antes que a fratura fique exposta.
@@ -193,7 +193,7 @@ Na clínica isso aparece como o **ombro "ptótico"**: caído, empurrado para med
 > Na prova: o **fragmento lateral desce, vai para frente e para medial e roda para anterior**. O medial sobe pelo esternocleidomastóideo.
 
 !questoes central=trauma-0062,trauma-0768,trauma-0919,trauma-0085 treino=trauma-1350
-conceito: Na fratura do terço médio, o fragmento distal translada para inferior, anterior e medial e roda para anterior, puxado pelo peso do braço, pelo deltoide e pelo peitoral maior; o medial sobe pelo esternocleidomastóideo.
+conceito: Na fratura do terço médio, o fragmento distal translada para inferior, anterior e medial e roda para anterior, puxado pelo peso do braço, pelo deltoide e pelo peitoral maior (a Fig. 34-5 desenha também o grande dorsal); o medial sobe pelo esternocleidomastóideo.
 como: É das perguntas mais repetidas do tema: TARO 2017 e 2021, TEOT 2025 e SBOT-SP pediram o desvio do fragmento lateral, trocando as direções da translação (superior ou inferior) e da rotação (anterior ou posterior).
 armadilha: Translação superior: é o fragmento medial que sobe; o lateral cai com o braço.
 armadilha: Rotação posterior: a rotação do fragmento distal é anterior, e por isso a escápula fica protraída.
@@ -209,11 +209,13 @@ Forças musculares e da gravidade sobre a clavícula fraturada: o fragmento dist
 
 O primeiro ensaio randomizado, da **Canadian Orthopaedic Trauma Society (2007)**, comparou placa e tratamento conservador nas fraturas desviadas do terço médio e mostrou **menos pseudartrose** e **melhor função** com a placa. Os ensaios seguintes confirmaram a menor pseudartrose, mas a diferença de função ficou menor:
 
-- **Clavicle Trial** (Ahrens, mais de 300 pacientes): pseudartrose de **11% com tipoia contra 1% com placa** em 9 meses, e melhor função precoce com a placa;
+- **Clavicle Trial** (Ahrens, mais de 300 pacientes): pseudartrose de **11% com tipoia contra 1% com placa** em 9 meses, e melhor função precoce com a placa; o capítulo 10 do mesmo livro (Principles of Nonoperative Management of Fractures, seção sobre a clavícula) dá o número exato, **11% contra 0,8%** em 301 pacientes, e lembra que aos **3 meses** a consolidação ainda era igual nos dois grupos (28% contra 27%);
 - **Woltz** (160 pacientes): pseudartrose de **23% contra 2%**, e a maioria das pseudartroses era sintomática a ponto de pedir cirurgia (9 de 16); mas a placa teve muitas reintervenções (sobretudo retirada) e a função foi parecida;
 - metanálises: pseudartrose de **2,2%** (460 fraturas) e **1,3%** (899 pacientes) com placa; **13,8%** sem cirurgia numa metanálise de 24 ensaios; nas revisões, **14% a 24%** nas desviadas tratadas sem cirurgia.
 
 A conclusão do capítulo é precisa: a placa **reduz de forma inequívoca a pseudartrose**; a função é um pouco melhor em 1 ano, mas a diferença quase nunca passa do mínimo clinicamente importante (**8 pontos no Constant, 10 no DASH**), e a vantagem aparece sobretudo nas primeiras **6 semanas**. Quando só se analisam as fraturas consolidadas, o conservador vai tão bem quanto a cirurgia. A placa, em pacientes selecionados com desvio completo, consolida em cerca de **95%**, com reoperação por complicação (sem contar a retirada) de **2% a 7%**.
+
+O capítulo 10 do Rockwood (Principles of Nonoperative Management of Fractures) chega ao mesmo quadro por outro caminho: há evidência consistente de menos viciosa e menos pseudartrose com a cirurgia primária, mas quase nenhuma de que ela melhore a função final. **TAMAOKI** não achou diferença no DASH com 6 semanas, 6 meses e 1 ano, nem na dor, no retorno às atividades ou na insatisfação com a estética; já a revisão de **SMEEING**, que juntou ensaios randomizados e estudos observacionais em pacientes a partir de 16 anos, encontrou o **DASH favorecendo a cirurgia**. São as duas leituras possíveis da mesma literatura, e a prova pode cobrar qualquer uma delas.
 
 > Na prova: comparada ao conservador, a placa dá **menos pseudartrose** (global e sintomática), **menos viciosa sintomática** e **retorno mais rápido**, **sem melhora clara da função final**.
 
@@ -347,6 +349,8 @@ A placa pode ser considerada hoje o **padrão-ouro**, com consolidação de **94
 
 No pós-operatório: tipoia para conforto e pendulares, revisão com 10 a 14 dias, movimento livre sem carga, radiografia e fortalecimento com **6 semanas**, e esporte de contato só depois de **12 semanas**. A **retirada de rotina não é recomendada**; se necessária, esperar **pelo menos 1 ano** depois da consolidação (1 a 2 anos depois da fixação) para reduzir a refratura.
 
+Os outros livros dão prazos vizinhos, e a razão é a mesma. O capítulo 1 do Rockwood (Biomechanics of Fractures and Fracture Fixation, seção Primary Bone Healing) explica que a consolidação direta, obtida com redução anatômica e compressão, não forma calo e é **mais lenta**, não mais rápida; por isso a retirada precoce arrisca refratura no traço original, e a recomendação é adiar a retirada da placa **por até 2 anos** depois da cirurgia. A Fig. 1-17 do mesmo capítulo é justamente uma clavícula: com 12 meses a radiografia quase não mostra a consolidação, e a refratura veio 9 dias depois de tirar a placa. O Skeletal Trauma (cap. 49, Fractures and Dislocations of the Clavicle) diz que a retirada quase nunca é necessária; se o paciente pedir por estética ou incômodo, aconselha esperar **pelo menos 12 e de preferência 18 meses** depois do trauma e conferir a cortical refeita sob a placa na incidência lordótica em abdução, e lembra que a refratura é incomum se a placa ficar **12 a 18 meses** depois da consolidação.
+
 !questoes treino=trauma-1365,conceitos-basicos-0329
 conceito: Com parafuso de tração, três parafusos bicorticais de cada lado bastam; sem ele, quatro de cada lado ou placa bloqueada; a retirada, se indicada, espera 1 a 2 anos depois da fixação.
 !fim
@@ -449,7 +453,7 @@ No politrauma, a fratura da clavícula é muitas vezes achada na radiografia de 
 
 ## Terço medial
 
-É a fratura mais rara (**0% a 5%**), em parte porque é difícil de ver na radiografia; vem de alta energia, com lesões associadas em até **80%** e mortalidade de **20%** por trauma de crânio e tórax. A **tomografia** é o exame de escolha e diferencia uma fratura epifisária (comum até cerca de **25 anos**) de uma luxação esternoclavicular verdadeira. A maioria (**60% a 80%**) é **sem desvio** e consolida sem cirurgia (pseudartrose de 0% a 4,6%). As muito desviadas, sobretudo com o fragmento da diáfise **para trás**, podem ser operadas, lembrando que os **vasos subclávios estão colados** ao osso. Como a ponta medial se alarga, cabem parafusos de **25 a 30 mm**. Com fragmento medial pequeno, a placa pode **atravessar a articulação até o esterno**; ela vai soltar com o movimento da esternoclavicular, mas segura o bastante (cerca de **3 meses**) para consolidar e então **deve ser retirada**. **Fios ou pinos lisos isolados são contraindicados**, pelo risco de migração e lesão visceral.
+É a fratura mais rara (**0% a 5%**), em parte porque é difícil de ver na radiografia; vem de alta energia, com lesões associadas em até **80%** e mortalidade de **20%** por trauma de crânio e tórax. A **tomografia** é o exame de escolha e diferencia uma fratura epifisária (comum até cerca de **25 anos**) de uma luxação esternoclavicular verdadeira. A maioria (**60% a 80%**) é **sem desvio** e consolida sem cirurgia (pseudartrose de 0% a 4,6%). As muito desviadas, sobretudo com o fragmento da diáfise **para trás**, podem ser operadas, lembrando que os **vasos subclávios estão colados** ao osso. Como a ponta medial se alarga, cabem parafusos de **25 a 30 mm**. Outra saída para o fragmento medial pequeno é a **placa bloqueada pré-moldada com a ponta alargada** (como uma placa de clavícula distal invertida), que permite vários parafusos no fragmento curto; na revisão de VANNABOUATHONG, a placa deu os melhores resultados no terço medial, à frente da banda de tensão e dos fios, embora possa irritar. Se ainda assim faltar pega, a placa pode **atravessar a articulação até o esterno**; ela vai soltar com o movimento da esternoclavicular, mas segura o bastante para consolidar e então **deve ser retirada**. O prazo aparece de dois jeitos no capítulo: o texto fala em cerca de **3 meses**, e a legenda da Fig. 34-12 (o caso da amazona com o fragmento da diáfise para trás) diz que a consolidação vem **entre 3 e 6 meses** e que, uma vez consolidada, a placa deve sair. **Fios ou pinos lisos isolados são contraindicados**, pelo risco de migração e lesão visceral.
 
 !questoes treino=trauma-1354
 conceito: Na fratura medial com fragmento pequeno, a placa pode ser estendida ao esterno e retirada após a consolidação; fios ou pinos lisos isolados são contraindicados pela migração.

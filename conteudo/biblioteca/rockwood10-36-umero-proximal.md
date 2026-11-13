@@ -1,6 +1,6 @@
 ---
 id: rockwood10-36-umero-proximal
-versao: 5
+versao: 6
 titulo: Fratura do úmero proximal
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 36 · Proximal Humeral Fractures
 autores: Antonio M. Foruria, Natalia Martinez-Catalan e Joaquin Sanchez-Sotelo
-fonte: Capítulo enviado pelo Tales em 16/10/2026. Osteonecrose da cabeça conferida em 10/11/2026 no Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 13 (p. 604 a 607) e cap. 14 (p. 630 e 632), e no HEBERT, 5ª ed., cap. 45.
+fonte: Capítulo enviado pelo Tales em 16/10/2026. Osteonecrose da cabeça conferida em 10/11/2026 no Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 13 (p. 604 a 607) e cap. 14 (p. 630 e 632), e no HEBERT, 5ª ed., cap. 45. Revisão de 13/11/2026: nervos pelo cap. 20 do Rockwood adulto; espaço quadrangular pelo Campbell 15, cap. 51; hemiartroplastia no idoso pelo HEBERT, cap. 45.
 subtemas: Fratura do úmero proximal; Fraturas do úmero proximal e da escápula; Osteonecrose da cabeça umeral
 resumo: Neer, Hertel e Mayo/FJD, irrigação da cabeça, placa bloqueada e calcar, haste, reversa e hemiartroplastia, e as complicações: o úmero proximal explicado pelo que a prova cobra. Osteonecrose: corticoide, falciforme e álcool; CRUESS III é o colapso subcondral; hemi com glenoide íntegra, total no V, reversa com grande dorsal sem tubérculo maior.
 ---
@@ -235,7 +235,7 @@ Os princípios são cinco: **redução anatômica** com fixação provisória, p
 - **suturas de tração no manguito** (uma ou duas no subescapular, uma no supraespinal e uma no infraespinal), junto à inserção;
 - **reduzir a cabeça** e fixá-la à diáfise com fios rosqueados de 1,6 a 1,8 mm; enxerto antes de reduzir os tubérculos;
 - reduzir os **tubérculos por baixo da cabeça** com as suturas, para apoiá-la;
-- placa **lateral**, com a borda superior **pelo menos 5 mm abaixo do topo do tubérculo maior** (alta, causa impacto), mas alta o bastante para os parafusos inferiores **sustentarem o calcar**;
+- placa **lateral**, com a borda superior **pelo menos 5 mm abaixo do topo do tubérculo maior** (alta, causa impacto), mas alta o bastante para os parafusos inferiores **sustentarem o calcar**. O quadro de armadilhas do capítulo resume os dois erros de altura: **alta demais, impacto; baixa demais, trajeto ruim dos parafusos**, que deixam de subir para a parte inferomedial da cabeça e perdem justamente o apoio do calcar. No úmero curto de gente baixa, os autores preferem não subir a placa e reforçar o calcar por outros meios;
 - na cabeça, só parafusos **bloqueados**: furar **só a cortical lateral**, medir com o medidor empurrado até sentir o osso subcondral e **descontar 4 mm** (6 mm se for cimentar); sem osso no medidor, não se põe parafuso;
 - radioscopia em vários planos para afastar penetração; no fim, amarrar as **suturas do manguito na placa** (6 a 10 fios).
 
@@ -329,7 +329,9 @@ Rara no ombro (**1,8% a 8%**), pela boa irrigação. O germe mais comum é o **S
 
 ## Nervos
 
-A eletromiografia mostra lesão em até **dois terços** das fraturas. Os mais acometidos são o **nervo axilar (58%)** e o **supraescapular (48%)**, e lesões combinadas são frequentes. São mais comuns nas fraturas desviadas de alta energia, mas até um terço vem de queda da própria altura. O axilar sofre por tração, contusão ou laceração pela diáfise desviada para medial.
+Aqui é preciso separar dois números, que parecem brigar e não brigam. O capítulo 36 diz que a eletromiografia mostra lesão em até **dois terços** das fraturas. Os mais acometidos são o **nervo axilar (58%)** e o **supraescapular (48%)**, e lesões combinadas são frequentes. São mais comuns nas fraturas desviadas de alta energia, mas até um terço vem de queda da própria altura. O axilar sofre por tração, contusão ou laceração pela diáfise desviada para medial.
+
+Já o capítulo de nervos do mesmo livro (Rockwood adulto, cap. 20, seção do plexo infraclavicular e da fratura do úmero proximal) diz que a **lesão nervosa clínica é rara** depois da fratura do úmero proximal. A diferença é de método: o capítulo 36 conta o que o exame elétrico detecta, inclusive lesões discretas que nem chegam a dar sinal no exame físico; o capítulo 20 fala da paralisia que aparece no consultório. Quando a lesão clínica acontece, em geral é pela diáfise desviada para medial comprimindo o feixe na axila, a **artéria axilar** também está lesada em cerca de **50%** desses casos, há dor forte e piora neurológica progressiva, e o capítulo 20 indica **reduzir e fixar a fratura com urgência** para aliviar a compressão. Na prova, "rara" e "até dois terços" podem estar ambas certas: a primeira é clínica, a segunda é eletromiográfica.
 
 No exame, **hipoestesia na face lateral do braço** sugere lesão do axilar; o motor se testa palpando o deltoide em contração isométrica (estender, abduzir e fletir).
 
@@ -346,7 +348,7 @@ A lesão arterial é **rara** e atinge sobretudo a **artéria axilar**: dissecç
 
 ## Manguito rotador
 
-A lesão do manguito acompanha a fratura em **até 50%** dos casos e em **61%** acima de 60 anos, e boa parte já existia antes (atrofia na imagem). Costuma estar no **intervalo dos rotadores**. Mesmo assim, a integridade do manguito não previu a função depois do tratamento sem cirurgia, e por isso **não se pede imagem do manguito de rotina** quando o plano é conservador.
+A lesão do manguito acompanha a fratura em **até 50%** dos casos e em **61%** acima de 60 anos, e boa parte já existia antes (atrofia na imagem). Costuma estar no **intervalo dos rotadores**. O capítulo é cauteloso sobre o peso disso: **ainda não está claro** se a integridade do manguito influencia o desvio da fratura ou o resultado, embora um estudo recente tenha sugerido **função pior** nas fraturas com ruptura associada tratadas **sem cirurgia**. Ou seja, a ruptura não é um detalhe irrelevante, mas também não há prova firme de que mude o desfecho; é um ponto em aberto, e não uma regra para a prova.
 
 !questoes central=trauma-0533
 conceito: Cerca de metade das fraturas do úmero proximal tem lesão do manguito associada (61% acima de 60 anos).
@@ -384,7 +386,7 @@ armadilha: Arco de 130°: o capítulo dá cerca de 160°.
 
 ## O nervo axilar
 
-Ramo terminal do **fascículo posterior**, inerva o **deltoide** e o **redondo menor** e dá a sensibilidade da face lateral do braço. Passa **abaixo do colo anatômico, de anterior para posterior**, pelo **espaço quadrangular**, junto da circunflexa posterior, e volta para a frente por baixo do deltoide, **2 a 7 cm abaixo do acrômio** (distância inversamente proporcional ao comprimento do deltoide). Cruza a rafe anterior do deltoide como **um ramo único**, o que permite preservar a inervação do deltoide anterior. Corre risco na fixação percutânea, na divisão do deltoide e na dissecção abaixo da glenoide na reversa.
+Ramo terminal do **fascículo posterior**, inerva o **deltoide** e o **redondo menor** e dá a sensibilidade da face lateral do braço. Passa **abaixo do colo anatômico, de anterior para posterior**, pelo **espaço quadrangular** (limitado pelo redondo menor, pelo redondo maior, pela diáfise do úmero e pela cabeça longa do tríceps, segundo o Campbell 15, cap. 51), junto da circunflexa posterior, e volta para a frente por baixo do deltoide, **2 a 7 cm abaixo do acrômio** (distância inversamente proporcional ao comprimento do deltoide). Cruza a rafe anterior do deltoide como **um ramo único**, o que permite preservar a inervação do deltoide anterior. Corre risco na fixação percutânea, na divisão do deltoide e na dissecção abaixo da glenoide na reversa.
 
 ## O nervo musculocutâneo
 
@@ -399,7 +401,7 @@ conceito: O nervo axilar passa abaixo do colo anatômico, de anterior para poste
 como: O ENARE R4 2025 copiou trechos do capítulo em cinco afirmações sobre as vias: o intervalo (forma e limites trocados), a separação dos tubérculos pelo intervalo, o musculocutâneo (8 cm e afastamento lateral do peitoral, ambos errados), as inserções do manguito (trocadas) e o trajeto do axilar (certa).
 armadilha: "Não separar os tubérculos pelo intervalo": o capítulo diz que é justamente o caminho seguro.
 armadilha: Musculocutâneo a 8 cm e em risco ao afastar o peitoral: o capítulo dá 5,6 cm e o risco está no afastamento medial do tendão conjunto.
-alerta: A alternativa correta do ENARE (ombro-cotovelo-0542) repete o texto do Rockwood, que cita o **redondo maior** tanto como limite superior quanto inferior do espaço quadrangular. Pela anatomia descrita em outras questões do acervo, o limite superior é o **redondo menor**; é um descuido do texto, não uma regra nova.
+alerta: A alternativa correta do ENARE (ombro-cotovelo-0542) repete o texto do Rockwood, que cita o **redondo maior** tanto como limite superior quanto inferior do espaço quadrangular. É um descuido do texto. O Campbell 15 (cap. 51, seção da síndrome do espaço quadrilateral) dá os limites certos: **redondo menor e redondo maior, diáfise do úmero e cabeça longa do tríceps**; no espaço triangular vizinho, o mesmo livro (cap. 68) põe o redondo menor em cima e o redondo maior embaixo.
 !fim
 
 ## Via deltopeitoral
@@ -408,7 +410,7 @@ alerta: A alternativa correta do ENARE (ombro-cotovelo-0542) repete o texto do R
 
 ## Via transdeltoide (anterolateral)
 
-Pela rafe entre deltoide anterior e médio, começando no canto anterolateral do acrômio. Dá **melhor acesso ao tubérculo maior** e à face lateral para a placa. O preço é o **nervo axilar**: ele precisa ser **identificado e protegido se a divisão passar de 5 cm**; uma sutura de reparo no fim da incisão evita que ela se estenda. Na placa por essa via, o nervo é dissecado e a placa passa por baixo dele, com parafusos em duas janelas, acima e abaixo. Não serve bem para a fratura-luxação anteroinferior (a cabeça sai mais seguro pela deltopeitoral). Um randomizado deu melhor função à deltopeitoral; uma meta-análise achou **menos necrose e menos tempo cirúrgico** com a transdeltoide, sem diferença de função.
+Pela rafe entre deltoide anterior e médio, começando no canto anterolateral do acrômio. O número que orienta a via vem da anatomia do deltoide (cap. 36, seção Muscles): o **nervo axilar** corre quase dentro da fáscia profunda do músculo, a cerca de **5 cm da borda anterolateral do acrômio**; na técnica, os autores o palpam com o dedo na face profunda do deltoide, também a cerca de 5 cm. Dá **melhor acesso ao tubérculo maior** e à face lateral para a placa. O preço é o **nervo axilar**: ele precisa ser **identificado e protegido se a divisão passar de 5 cm**; uma sutura de reparo no fim da incisão evita que ela se estenda. Na placa por essa via, o nervo é dissecado e a placa passa por baixo dele, com parafusos em duas janelas, acima e abaixo. Não serve bem para a fratura-luxação anteroinferior (a cabeça sai mais seguro pela deltopeitoral). Um randomizado deu melhor função à deltopeitoral; uma meta-análise achou **menos necrose e menos tempo cirúrgico** com a transdeltoide, sem diferença de função.
 
 !questoes central=ombro-cotovelo-0556 treino=ombro-cotovelo-0609
 conceito: A via anterolateral estendida (transdeltoide) serve para fixar o úmero proximal com placa e exige proteger o nervo axilar quando a divisão passa de 5 cm.
@@ -426,6 +428,8 @@ Divisão do deltoide pela via anterolateral, com a sutura de reparo a 5 cm da po
 A **hemiartroplastia** depende inteiramente da **consolidação dos tubérculos** na posição certa: com tubérculos bem consolidados, o resultado é muito bom; com tubérculos soltos, desviados ou reabsorvidos, a função é quase sempre ruim, muitas vezes com **pseudoparalisia**. Robinson (138 hemiartroplastias) teve Constant mediano de 64 e desvio dos tubérculos em 38%; Antuña (57 ombros, 10 anos) teve boa analgesia em 84%, mas só 60% elevavam acima de 90°, metade dos resultados foi insatisfatória e **todos os ombros com tubérculos mal consolidados foram insatisfatórios**.
 
 A **reversa** foi criada para a artropatia do manguito: o encaixe semiconstrito dá ao **deltoide** um fulcro estável mesmo sem manguito. Por isso, no idoso, o paciente **continua elevando o braço mesmo se o tubérculo não consolidar**. O uso subiu de 26% em 2011 para 67,4% em 2015; a hemiartroplastia caiu de 19,3% (2008) para 3% (2017).
+
+Na reversa, o tubérculo maior pesa menos, mas não é indiferente, e o que ele devolve é sobretudo a **rotação externa ativa**. A consolidação dos tubérculos nessa população idosa varia de 40% a 84%. **SIMOVITCH** viu os pacientes com tubérculo consolidado recuperarem em média **40°** de rotação externa ativa, contra **28°** quando o tubérculo faltava (pseudartrose ou não reparado). **CHUN**, em 38 pacientes, não achou função nem arco de movimento melhores com o tubérculo consolidado, **exceto a rotação externa com o braço ao lado do corpo**; os dois grupos tiveram flexão e função satisfatórias, e a consolidação foi de só 37%. Por isso a técnica da reversa para fratura é ajustada para favorecer a consolidação (não lateralizar nem abaixar demais a diáfise, para que os tubérculos encostem alguns milímetros nela).
 
 > Na prova: na **hemiartroplastia**, o fator que mais decide o resultado é a **reconstrução anatômica do tubérculo maior**. Na **reversa**, o tubérculo maior consolidado melhora sobretudo a **rotação externa ativa**.
 
@@ -448,12 +452,14 @@ No algoritmo dos autores, a artroplastia é escolhida para o osso fraco com os d
 | Tubérculos pequenos e cominutos | Tubérculo íntegro ou em fragmento grande |
 !fim
 
+O livro nacional pesa diferente. O HEBERT (cap. 45) diz que a **hemiartroplastia ainda é empregada nos pacientes mais idosos com osteoporose intensa** ou quando a reconstrução é impossível, e, nas quatro partes, lista entre os tratamentos habituais a fixação (sobretudo no jovem e ativo), a hemiartroplastia e, como opção mais recente, a reversa; reconhece, porém, um número crescente de autores que preferem a **reversa primária** no idoso de baixa demanda, com osteoporose acentuada e manguito insuficiente. Para as provas brasileiras, isso explica gabaritos que ainda dão hemiartroplastia à idosa osteoporótica.
+
 Os estudos comparativos favorecem a reversa: no randomizado de **Jonsson** (acima de 70 anos), a reversa teve Constant, satisfação, abdução e flexão melhores, com complicações parecidas; quem tem **mais de 80 anos** ganha menos. Contra o tratamento conservador acima de 80 anos, Lopiz só achou **menos dor** com a reversa (Constant 61,7 contra 55,7, sem significância), e 93% dos conservadores fariam o mesmo de novo. Em ativos, a sobrevida da reversa foi de 94% em 1 ano e 73% em 5 anos.
 
 !questoes relacionadas=ombro-cotovelo-0535
 conceito: Na fratura em quatro partes do idoso com osso osteoporótico, a artroplastia é preferida à fixação; entre as próteses, o capítulo favorece a reversa no idoso, na mulher e na osteopenia.
 como: O ENARE R4 2025 deu uma paciente de 65 anos, osteoporótica, com quatro partes sem cabeça partida, e pôs tipoia, órtese, placa, artroplastia parcial e reversa.
-alerta: O gabarito oficial (ombro-cotovelo-0535) foi a **artroplastia parcial** (hemiartroplastia). Pelo capítulo, esse perfil (idosa, osteoporótica) favorece a **reversa**, e a hemiartroplastia fica para o paciente mais jovem e ativo com tubérculo grande. Guarde o gabarito da banca para essa prova e o conceito do livro.
+alerta: O gabarito oficial (ombro-cotovelo-0535) foi a **artroplastia parcial** (hemiartroplastia). Pelo Rockwood, esse perfil (idosa, osteoporótica) favorece a **reversa**, e a hemiartroplastia fica para o paciente mais jovem e ativo com tubérculo grande. O gabarito tem apoio no HEBERT (cap. 45), que ainda indica a hemiartroplastia nos pacientes mais idosos com osteoporose intensa ou sem possibilidade de reconstrução. Guarde o gabarito da banca para essa prova e o conceito do Rockwood.
 !fim
 
 ## Detalhes técnicos que caem
