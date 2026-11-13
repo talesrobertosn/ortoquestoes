@@ -89,10 +89,9 @@ const PROVAS_DO_ACERVO = [
   { nome: 'R4 ENARE', cor: '#f08f78' },
   { nome: 'R4 Coluna', cor: '#8fb6ef' },
   { nome: 'Cirurgia da mão', cor: '#f0c46a' },
-  { nome: 'Título de cirurgia da mão (SBCM)', cor: '#f0c46a' },
-  { nome: 'SIMÃO (simulado do título)', cor: '#f0c46a' },
+  { nome: 'Prova de título de cirurgia da mão', cor: '#f0c46a' },
   { nome: 'Fellowship de quadril', cor: '#c5a8f0' },
-  { nome: 'TECOC', cor: '#9fd8f2' },
+  { nome: 'Prova de título de ombro e cotovelo', cor: '#9fd8f2' },
 ]
 
 /** Os cenários pintados de cada seção (scripts/gerar_cena_*.py), como variáveis do CSS (url() absoluto). */
@@ -388,7 +387,7 @@ export function Inicio() {
 
         <section className="jn-sobre" aria-labelledby="inicio-apresentacao">
           <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
-          <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para o título de especialista em cirurgia da mão, da SBCM, há OrtoQuestões Simulados no padrão da prova de título e do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. Estude por assunto, entenda as alternativas e revise seus erros.</p>
+          <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para a prova de título de especialista em cirurgia da mão, há OrtoQuestões Simulados no padrão da prova. Estude por assunto, entenda as alternativas e revise seus erros.</p>
           <nav aria-label="Conheça o banco e organize sua preparação">
             <h3>Guias e páginas por assunto</h3>
             <ul>

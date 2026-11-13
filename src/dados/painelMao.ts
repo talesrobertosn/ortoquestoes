@@ -12,7 +12,7 @@ import { diaCivil, diasEntre, hojeBR, inicioDaChave, somarDias } from '../util/d
  */
 export const NOME_PROVA_MAO: Record<ProvaMao, string> = {
   ingresso: 'Ingresso em Cirurgia da Mão',
-  titulo: 'Título da Mão (SBCM e SIMÃO)',
+  titulo: 'Prova de título da Mão',
 }
 
 const segundaDe = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7))

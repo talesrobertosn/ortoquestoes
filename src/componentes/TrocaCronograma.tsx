@@ -7,7 +7,7 @@ export function TrocaCronograma({ atual }: { atual: 'ortopedia' | 'ingresso' | '
   const itens = [
     { id: 'ortopedia', rotulo: 'Ortopedia: TEOT e TARO', destino: '/cronograma' },
     { id: 'ingresso', rotulo: 'Mão: ingresso', destino: '/cronograma-mao?prova=ingresso' },
-    { id: 'titulo', rotulo: 'Mão: título SBCM e SIMÃO', destino: '/cronograma-mao?prova=titulo' },
+    { id: 'titulo', rotulo: 'Mão: prova de título', destino: '/cronograma-mao?prova=titulo' },
   ] as const
   // No celular a linha rola de lado: o cronograma aberto já aparece, sem a pessoa procurar.
   const nav = useRef<HTMLElement>(null)

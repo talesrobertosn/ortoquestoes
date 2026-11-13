@@ -275,7 +275,7 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome, vendasAbe
           <p className="tr-heroi__selo">Temas que mais caem</p>
           <h1 id="tq-titulo">Estude primeiro o que a prova mais cobra</h1>
           <p className="tq-heroi__lead">O que as provas oficiais mais cobraram, área por área.</p>
-          <p>Contamos uma por uma as <b className="numerico">{num(BASE_CONTAGEM)}</b> questões das provas oficiais (TEOT, TARO, TECOC e ENARE) que estão no acervo e separamos por área e por assunto: {nAreas} áreas, {num(nAssuntos)} assuntos.</p>
+          <p>Contamos uma por uma as <b className="numerico">{num(BASE_CONTAGEM)}</b> questões das provas oficiais (TEOT, TARO, título de ombro e cotovelo e ENARE) que estão no acervo e separamos por área e por assunto: {nAreas} áreas, {num(nAssuntos)} assuntos.</p>
           {fraseTopo && <p className="tq-heroi__pessoal"><Icone nome="alvo" tamanho={15} /> {fraseTopo}</p>}
           {!aberto && <p className="tq-heroi__previa"><Icone nome="cadeado" tamanho={14} /><span><b>Prévia:</b> {nome ? `${nome}, você` : 'você'} vê os {PREVIA_ASSUNTOS} assuntos que mais caem de cada área. Assinando, vê todos e treina cada um.</span></p>}
         </div>
@@ -438,7 +438,7 @@ function Ranking({ indice, respondidas, treinar, aberto, logado, nome, vendasAbe
         <dl>
           <div>
             <dt>De onde vêm os números?</dt>
-            <dd>Das provas oficiais que estão no acervo: TEOT, TARO, TECOC e ENARE. Entram {num(BASE_CONTAGEM)} questões, sem cópias, anuladas ou questões autorais. O número ao lado de cada assunto é quantas questões de prova dele há no acervo; a porcentagem de cada área é a parte dela nesse total.</dd>
+            <dd>Das provas oficiais que estão no acervo: TEOT, TARO, título de ombro e cotovelo e ENARE. Entram {num(BASE_CONTAGEM)} questões, sem cópias, anuladas ou questões autorais. O número ao lado de cada assunto é quantas questões de prova dele há no acervo; a porcentagem de cada área é a parte dela nesse total.</dd>
           </div>
           <div>
             <dt>Por que trauma e pediatria pesam mais?</dt>
