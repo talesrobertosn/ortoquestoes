@@ -102,7 +102,7 @@ async function consultarPixDoUsuario(idUsuario, idPedido) {
 }
 
 // supabase/functions/criar-pix/index.ts
-var VERSOES_CONDICOES_PIX = ["2026-11-03", "2026-10-16", "2026-10-01"];
+var VERSOES_CONDICOES_PIX = ["2026-11-13", "2026-11-03", "2026-10-16", "2026-10-01"];
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: cors(req) });
   if (req.method !== "POST") return json({ erro: "metodo_invalido" }, 405, req);

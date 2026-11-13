@@ -1,0 +1,23 @@
+{
+  "versoes": [
+    {
+      "data": "2026-11-13",
+      "hash": "9606b6601c90be80",
+      "pasta": "2026-11-13-9606b660",
+      "versao_condicoes": "2026-11-13",
+      "arquivos": [
+        "src/paginas/Assinatura.tsx",
+        "src/dados/planos.ts",
+        "src/componentes/vendas/AvisoAbertura.tsx",
+        "src/componentes/vendas/AvisoPrecoGuardado.tsx",
+        "src/componentes/vendas/CartoesPlanos.tsx",
+        "src/componentes/vendas/IconesPagamento.tsx",
+        "src/componentes/vendas/PizzaPixel.tsx",
+        "src/componentes/vendas/PreviaCronograma.tsx",
+        "src/componentes/vendas/SecaoAtlas.tsx",
+        "src/componentes/vendas/SecaoBiblioteca.tsx",
+        "src/componentes/vendas/usarRevelar.ts"
+      ]
+    }
+  ]
+}

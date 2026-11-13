@@ -6,6 +6,7 @@ import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
 import { A_PARTIR_DE } from '../dados/planos'
 import { RenovacaoPix } from './RenovacaoPix'
+import { Recibos } from './Recibos'
 import { diaMes, JANELA_RENOVACAO_PIX, usarPeriodoPix } from '../conta/periodoPix'
 
 interface EstadoAssinatura {
@@ -159,6 +160,7 @@ export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean })
         </div>
       </section>}
       <a className="botao botao--fantasma" href={href('/assinatura')}>Ver planos</a>
+      <Recibos />
       </> : <a className="conta-assinatura__detalhes-link" href={href('/conta/assinatura')}>Mais dados sobre minha assinatura <span aria-hidden="true">↗</span></a>}
     </>}
     {mensagem && <p role="status">{mensagem}</p>}

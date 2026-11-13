@@ -15,29 +15,20 @@
  * ninguém a aceitar de novo os Termos); numa revisão conjunta, como a de
  * 16/10/2026, recebem a mesma data.
  */
-export const VERSAO_TERMOS = '2026-11-10'
+export const VERSAO_TERMOS = '2026-11-13'
 
 /** Versão das condições específicas exibidas antes de abrir o checkout. */
-export const VERSAO_CONDICOES_ASSINATURA = '2026-11-03'
+export const VERSAO_CONDICOES_ASSINATURA = '2026-11-13'
 
 /**
- * O que mudou na versão atual, em linguagem simples. Aparece no aviso de
- * reaceite e no topo dos dois documentos. Trocar junto com a versão.
+ * O que mudou na versão atual, em linguagem simples. Quando a lista tem itens, aparece no aviso de reaceite e no
+ * topo dos documentos; vazia, o aviso mostra só o aceite e os links para ler (pedido do Tales na versão de
+ * 13/11/2026: "não precisa fazer um mini resumo"). Trocar junto com a versão.
  */
-export const MUDANCAS_TERMOS: readonly string[] = [
-  'Além do Meta, agora usamos também a OpenAI para saber quais anúncios do Orto Questões trazem gente nova ao site. Isso só acontece se você tocar em "Aceitar" no aviso de cookies.',
-  'Com esse aceite, a OpenAI pode receber o e-mail do cadastro embaralhado em código (hash), só para ligar a sua visita ao anúncio que você viu. O código ainda identifica a pessoa, por isso pedimos a sua permissão.',
-  'A escolha sobre cookies pode ser recusada ou revogada pelo rodapé, sem limitar o uso do site. Os eventos comerciais enviados pelo site não incluem CPF, respostas, desempenho ou assuntos estudados.',
-]
+export const MUDANCAS_TERMOS: readonly string[] = []
 
-/**
- * O que mudou nas Condições da Assinatura na versão atual (só nelas: os Termos de Uso
- * estão na versão de 10/11/2026). Aparece no topo das Condições.
- */
-export const MUDANCAS_CONDICOES: readonly string[] = [
-  'Valores dos planos: mensal R$ 39,90, semestral R$ 209,40 (R$ 34,90 por mês) e anual R$ 358,80 (R$ 29,90 por mês).',
-  'Quem já assinava antes desta versão mantém o valor de antes do plano que pagava (semestral R$ 179,90 ou anual R$ 239,90), no cartão e no Pix, enquanto continuar renovando, sem prazo final. Se o plano acabar, há 30 dias para renovar pelo mesmo valor.',
-]
+/** O que mudou nas Condições da Assinatura na versão atual (mesma regra de MUDANCAS_TERMOS). */
+export const MUDANCAS_CONDICOES: readonly string[] = []
 
 /** Dados a incluir no cadastro da conta, junto ao restante do perfil. */
 export function dadosAceiteTermos() {

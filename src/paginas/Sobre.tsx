@@ -341,10 +341,11 @@ export function Sobre() {
                 </dd>
               </div>
               <div>
-                <dt>Posso comentar uma questão?</dt>
+                <dt>O site usa inteligência artificial?</dt>
                 <dd>
-                  Pode. Toda questão tem um botão para enviar o seu comentário: o macete, a divergência entre serviços, a
-                  referência da banca. Ele é conferido antes de ser publicado com o seu crédito.
+                  Usa, para redigir comentários, resumos e flashcards a partir dos livros citados. As questões de provas
+                  anteriores não são reescritas, e as imagens médicas vêm das provas ou dos livros, nunca de IA. Relatos de
+                  erro e mensagens de suporte são lidos pelo Tales, pessoalmente.
                 </dd>
               </div>
               <div>

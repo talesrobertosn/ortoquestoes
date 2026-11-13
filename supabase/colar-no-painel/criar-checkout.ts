@@ -49,7 +49,7 @@ var planos = {
   semestral: { reason: "OrtoQuestoes Semestral", frequency: PRECOS.semestral.meses },
   anual: { reason: "OrtoQuestoes Anual", frequency: PRECOS.anual.meses }
 };
-var versoesCondicoesAceitas = ["2026-11-03", "2026-10-16", "2026-10-01", "2026-09-30", "2026-09-28", "2026-09-27"];
+var versoesCondicoesAceitas = ["2026-11-13", "2026-11-03", "2026-10-16", "2026-10-01", "2026-09-30", "2026-09-28", "2026-09-27"];
 async function contaTesteAtiva(idUsuario) {
   const resposta = await banco(`contas_teste?id_usuario=eq.${encodeURIComponent(idUsuario)}&ativa=eq.true&select=id_usuario`);
   if (!resposta.ok) throw new Error("consulta_conta_teste_falhou");
