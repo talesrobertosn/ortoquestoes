@@ -9,23 +9,24 @@ import { AvisoBloqueioDiario } from './AvisoBloqueioDiario'
 import { usarAssinante } from '../conta/plano'
 import { MenuGeral } from './MenuGeral'
 
-// Os mesmos destinos em cima (computador) e embaixo (celular, até 40rem), na
-// mesma ordem e com os mesmos ícones. Entre 40 e 56rem a barra de baixo ainda
-// não aparece e o topo não comporta tudo: os secundários (Cronograma e
-// Ranking) saem e continuam no Menu. Flashcards saiu do beta em 25/10/2026 (pedido do Tales).
-// A Revisão continua no menu e na página inicial.
+// Destinos em cima (computador) e embaixo (celular, até 40rem), com os mesmos
+// ícones. Entre 40 e 56rem a barra de baixo ainda não aparece e o topo não
+// comporta tudo: os secundários (Cronograma e Ranking) saem e continuam no Menu.
+// Flashcards saiu do beta em 25/10/2026 (pedido do Tales). Em 13/11/2026 o Tales
+// pediu os Resumos no lugar dos Flashcards na barra de cima; os Flashcards seguem
+// na barra de baixo do celular e no Menu. A Revisão continua no menu e na página inicial.
 interface Destino { destino: string; rotulo: string; icone: NomeIcone; secundario?: boolean; beta?: boolean; classe?: string }
 const LINKS: Destino[] = [
   { destino: '/treinar', rotulo: 'Treinar', icone: 'livro' },
-  { destino: '/flashcards', rotulo: 'Flashcards', icone: 'raio' },
+  { destino: '/resumos', rotulo: 'Resumos', icone: 'resumo' },
   { destino: '/cronograma', rotulo: 'Cronograma', icone: 'calendario', secundario: true },
   { destino: '/dados', rotulo: 'Desempenho', icone: 'grafico' },
   { destino: '/ranking', rotulo: 'Ranking', icone: 'trofeu', secundario: true, classe: 'ranking' },
 ]
-/** Barra de baixo: Início, os mesmos destinos do topo (Ranking antes de Desempenho, como sempre foi) e o Menu. */
+/** Barra de baixo: Início, Treinar, Flashcards, Cronograma, Ranking, Desempenho e o Menu. */
 const LINKS_CELULAR: Destino[] = [
   { destino: '/', rotulo: 'Início', icone: 'mapa' },
-  LINKS[0], LINKS[1], LINKS[2], LINKS[4], LINKS[3],
+  LINKS[0], { destino: '/flashcards', rotulo: 'Flashcards', icone: 'raio' }, LINKS[2], LINKS[4], LINKS[3],
 ]
 
 /** Primeiro nome do cadastro, como nos e-mails: vazio quando não parece um nome. */

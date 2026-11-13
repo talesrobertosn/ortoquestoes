@@ -29,6 +29,8 @@ export const CAMINHOS: Record<string, string> = {
   baixar: 'M12 3.5v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15',
   interrogacao: 'M9 9a3 3 0 1 1 4 2.8c-.8.3-1 .9-1 1.7v.8M12 17.6v.2',
   livro: 'M12 6.3C10 4.7 6.6 4.2 3.5 4.5V18c3.1-.3 6.5.2 8.5 1.7 2-1.5 5.4-2 8.5-1.7V4.5c-3.1-.3-6.5.2-8.5 1.8zM12 6.3v13.4',
+  // Resumos (barra de cima, 13/11/2026): livro fechado com lombada e linhas de texto, diferente do livro aberto do Treinar.
+  resumo: 'M6.5 3.5h12v14h-12A2 2 0 0 0 4.5 19.5V5.5a2 2 0 0 1 2-2zM4.5 19.5a1.5 1.5 0 0 0 1.5 1h12.5v-3M9 8h6.5M9 11.5h4.5',
   calendario: 'M4.5 4.5h15v15h-15zM4.5 9.2h15M8 3v3M16 3v3M8 13h.01M12 13h.01M16 13h.01M8 16.6h.01M12 16.6h.01',
   grafico: 'M4 20V13M9.5 20V8M15 20v-5M20 20V4M3.5 20h17',
   usuario: 'M12 12.3a4.15 4.15 0 1 0 0-8.3 4.15 4.15 0 0 0 0 8.3zM4.5 20a7.5 7.5 0 0 1 15 0',
