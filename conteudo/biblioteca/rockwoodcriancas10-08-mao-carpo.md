@@ -256,7 +256,7 @@ O escafoide é o osso do carpo **mais lesado** na criança, com pico entre **12 
 
 **Tratamento.** Gesso se o desvio for **menor que 1 mm**: polo distal **4 a 6 semanas**, cintura **6 a 8**, polo proximal **8 a 12** ou **parafuso**. Redução aberta se o desvio passar de **1 mm** ou a angulação de **10 graus**. A consolidação passa de **95%**; a pseudartrose (**20% a 25%** em algumas séries) vem sobretudo do **atraso** no diagnóstico; o enxerto não vascularizado funciona melhor na criança.
 
-!questoes treino=pediatria-1356,pediatria-1467
+!questoes treino=pediatria-1356,pediatria-1467,mao-1786
 conceito: O escafoide da criança quebra mais no terço distal (avulsões no início da ossificação), consolida com gesso se tratado a tempo e faz pseudartrose quando há atraso; o bipartido unilateral é pseudartrose até prova em contrário.
 como: Questões de projeção; uma prova de mão protegida (PUC-SP) perguntou a localização mais comum da fratura do escafoide na criança (distal).
 armadilha: Liberar a criança com dor na tabaqueira porque a radiografia está normal, ou chamar de congênito um bipartido unilateral.
