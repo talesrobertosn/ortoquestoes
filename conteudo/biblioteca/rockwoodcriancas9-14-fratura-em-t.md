@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-14-fratura-em-t
-versao: 3
+versao: 4
 titulo: Fratura em T (intercondiliana) do úmero distal na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,20 +8,20 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 15 · T-Condylar Fractures of the Distal Humerus
 autores: Brian P. Scannell (10ª edição); Carley Vuillermin e Peter M. Waters (9ª edição)
-fonte: Escrito com o capítulo 14 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 15 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 9ª edição.
+fonte: Escrito com o capítulo 14 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 15 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 10ª edição (15-x), salvo onde se indica a 9ª.
 subtemas: ;
 resumo: Fratura de transição do adolescente (12,8 anos, lado não dominante), flexão com fragmentos anteriores, traço até o ápice da tróclea contra THURSTON-HOLLAND, TC × RM, TONIOLO e WILKINS, AO C1 e C2, divisão do tríceps, BRYAN-MORREY e osteotomia, articulação antes das colunas, placas a 90 graus, algoritmo aos 8 anos, rigidez e nervo ulnar; na 10ª edição, via TRAP, ulnar pós-operatório de 5% a 8% e reoperação até 24%.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo foi escrito a partir do capítulo 14 do Rockwood and Wilkins' Fractures in Children (9ª edição), de Carley Vuillermin e Peter M. Waters, e reorganiza o capítulo na ordem em que o assunto tem mais chance de ser cobrado. Os números e as condutas são os do capítulo.
+Este resumo foi escrito a partir do capítulo 14 do Rockwood and Wilkins' Fractures in Children (9ª edição), de Carley Vuillermin e Peter M. Waters, e reorganiza o capítulo na ordem em que o assunto tem mais chance de ser cobrado. Os números e as condutas são os do capítulo. Na 10ª edição o capítulo passou a ser o 15, e as figuras citadas no texto seguem a numeração dela (15-x).
 
 Uma informação honesta antes de tudo: **no acervo de provas não há nenhuma questão sobre a fratura em T do úmero distal no esqueleto imaturo**. O tema é raro na prática e ainda não caiu de forma direta. O que já caiu são fatos que o capítulo usa e que a banca cobrou por outras portas: a via de BRYAN-MORREY (TEOT 2021), o nervo ulnar como a complicação neurológica mais comum da cirurgia do úmero distal (prova sem ano), a transposição do ulnar (TARO 2022), a classificação AO do úmero distal (TARO 2008), a osteonecrose da tróclea (TEOT 2022) e o fragmento de THURSTON-HOLLAND (CET-PR e ENARE R4 2023). Essas questões aparecem no meio do texto, junto do ponto que elas tocam, e os OrtoQuestões Simulados do capítulo cobrem o resto.
 
 O capítulo inteiro gira em torno de uma ideia: **a fratura em T da criança é, quase sempre, uma fratura do adolescente perto do fim do crescimento e se comporta como a do adulto**. Na criança pequena ela é rara, difícil de ver, porque a superfície articular é cartilagem, e muitas vezes confundida com outras fraturas do cotovelo. Daí saem os blocos que interessam: quem tem a fratura, como ela acontece, como diferenciar das fraturas condilares e fisárias, as duas classificações (TONIOLO e WILKINS na criança, AO no adolescente), o algoritmo por idade, a técnica (articulação primeiro, colunas depois) e as complicações (rigidez e nervo ulnar).
 
-> Na prova: **adolescente** (média de **12,8 anos**), lado **não dominante** (**2,5 vezes**); **flexão** é o mecanismo mais comum, com fragmentos **anteriores**; a chave da radiografia é o **traço vertical até o ápice da tróclea**; **TC no adolescente, RM na criança pequena**; **TONIOLO e WILKINS** I, II e III por desvio e cominuição metafisária; no adolescente, **AO C1 e C2**; vias: **divisão do tríceps (C1), BRYAN-MORREY (C2), osteotomia do olécrano (C3)**; **articulação primeiro**, com parafuso transverso de compressão; **placas de reconstrução a 90 graus**; corte do algoritmo aos **8 anos**; **rigidez esperada** e **nervo ulnar** o mais acometido.
+> Na prova: **adolescente** (média de **12,8 anos**), lado **não dominante** (**2,5 vezes**); **flexão** é o mecanismo mais comum, com fragmentos **anteriores**; a chave da radiografia é o **traço vertical até o ápice da tróclea**; **TC no adolescente, RM na criança pequena**; **TONIOLO e WILKINS** I, II e III por desvio e cominuição metafisária; no adolescente, **AO C1 e C2**; vias: **divisão do tríceps (C1), BRYAN-MORREY (C2), osteotomia do olécrano (C3)**; **articulação primeiro**, com parafuso transverso de compressão; **placas de reconstrução**, de preferência ortogonais (a 90 graus), embora as paralelas também sejam aceitas; corte do algoritmo aos **8 anos**; **rigidez esperada** e **nervo ulnar** o mais acometido.
 
 # O que é e quem tem a fratura em T {radar=fundamento}
 
@@ -121,7 +121,7 @@ Esse fragmento só se entende com a classificação de **SALTER-HARRIS** das les
 | **Fratura em T** | **traço vertical até o ápice da tróclea**, separando os côndilos |
 !fim
 
-O fragmento de THURSTON-HOLLAND não exclui a fratura em T: na figura 14-3, uma fratura em T sem desvio de uma criança de 6 anos tinha fragmentos de THURSTON-HOLLAND medial e lateral, e o traço intercondiliano só foi percebido depois de consolidado.
+O fragmento de THURSTON-HOLLAND não exclui a fratura em T: na figura 15-3, uma fratura em T sem desvio de uma criança de 6 anos tinha fragmentos de THURSTON-HOLLAND medial e lateral, e o traço intercondiliano só foi percebido depois de consolidado.
 
 !questoes relacionadas=pediatria-0909,pediatria-0921 treino=pediatria-1022
 conceito: O fragmento metafisário de THURSTON-HOLLAND aponta para fratura isolada de um côndilo ou descolamento fisário; a chave da fratura em T é o traço vertical que chega ao ápice da tróclea.
@@ -136,6 +136,8 @@ Com suspeita depois de uma análise cuidadosa das radiografias, confirma-se com:
 - **TC pré-operatória no adolescente**, que serve sobretudo ao **planejamento** da fixação de cada fragmento;
 - **RM na criança pequena**, em que o objetivo principal é o **diagnóstico** (a cartilagem articular só aparece na RM);
 - radiografias em **estresse em varo e valgo** sob anestesia geral.
+
+A 10ª edição (capítulo 15, seção Imaging and Other Diagnostic Studies) acrescenta a **radiografia sob tração**: difícil de obter na criança acordada por causa da dor, ela mostra melhor o traço articular e pode dispensar exames axiais adicionais. Também pode ser feita no centro cirúrgico, antes de começar a cirurgia, para ver melhor os fragmentos distais. A suspeita levantada nas radiografias simples ou sob tração é então confirmada pela TC ou pela RM.
 
 A **artrografia intraoperatória** distingue os traços e mostra a qualidade da redução articular. É simples, tem baixa morbidade e pode mudar o tratamento e o resultado, por isso deve fazer parte da avaliação de uma lesão suspeita na criança pequena. Para saber se a superfície articular está íntegra, o capítulo lista artrografia, **ultrassonografia** e RM.
 
@@ -152,7 +154,7 @@ As classificações do adulto são difíceis de aplicar na criança: o número d
 
 ## A cartilagem que funciona como dobradiça
 
-No esqueleto imaturo, a parte central dos fragmentos condilares costuma estar separada, mas a **superfície articular pode continuar íntegra**, graças ao grande componente cartilaginoso. A ruptura e o desvio ficam sobretudo na área **óssea supracondiliana**; a elasticidade da cartilagem atua como uma **dobradiça que se abre** e protege a superfície articular de se partir por completo (figura 14-2, um menino de 7 anos, fixado com fios percutâneos simples). No adolescente, ao contrário, os fragmentos costumam estar separados e a superfície articular completamente rompida, como no adulto, e os músculos rodam os côndilos nos dois planos.
+No esqueleto imaturo, a parte central dos fragmentos condilares costuma estar separada, mas a **superfície articular pode continuar íntegra**, graças ao grande componente cartilaginoso. A ruptura e o desvio ficam sobretudo na área **óssea supracondiliana**; a elasticidade da cartilagem atua como uma **dobradiça que se abre** e protege a superfície articular de se partir por completo (figura 15-2, um menino de 7 anos, fixado com fios percutâneos simples). No adolescente, ao contrário, os fragmentos costumam estar separados e a superfície articular completamente rompida, como no adulto, e os músculos rodam os côndilos nos dois planos.
 
 !figura 14-2
 Superfície articular íntegra: numa fratura em T de um menino de 7 anos, a cartilagem articular espessa ficou praticamente intacta e impediu a separação dos fragmentos condilares; a fratura foi fixada com fios percutâneos simples.
@@ -165,9 +167,9 @@ TONIOLO e WILKINS propuseram uma classificação simples para a fratura em T ped
 !tabela Classificação de TONIOLO e WILKINS
 | Tipo | Definição | Figura |
 | --- | --- | --- |
-| **I** | **sem desvio ou com desvio mínimo** | 14-3 |
-| **II** | **desviada, sem cominuição** dos fragmentos metafisários | 14-4 |
-| **III** | **desviada, com cominuição** dos fragmentos metafisários | 14-5 |
+| **I** | **sem desvio ou com desvio mínimo** | 15-3 |
+| **II** | **desviada, sem cominuição** dos fragmentos metafisários | 15-4 |
+| **III** | **desviada, com cominuição** dos fragmentos metafisários | 15-5 |
 !fim
 
 A ruptura da superfície articular ficou fora da classificação porque é rara na criança. Mesmo assim, o capítulo diz que é **imperativo** conhecer o alinhamento articular antes e depois do tratamento. Os autores usam TONIOLO e WILKINS na **criança pequena**, para dosar a agressividade do tratamento.
@@ -179,7 +181,7 @@ armadilha: Ruptura da cartilagem articular como critério: foi deixada de fora p
 
 ## AO (adolescente)
 
-A partir dos **12 anos**, classificação e tratamento seguem o adulto. As fraturas intra-articulares do úmero distal são definidas pela **coluna** (medial, lateral ou ambas) e pela **cominuição**, e a classificação mais usada é a **AO** (figura 14-6): **extra-articular (A)**, **articular parcial (B)** e **articular completa (C)**. A fratura em T solta todo o bloco articular e é do grupo C. No adolescente, é em geral **C1 e C2**; as **C3**, com cominuição acentuada, são **raras**. As fraturas da **junção metáfise-diáfise** são outra entidade e precisam ser reconhecidas como tal para escolher a fixação.
+A partir dos **12 anos**, classificação e tratamento seguem o adulto. As fraturas intra-articulares do úmero distal são definidas pela **coluna** (medial, lateral ou ambas) e pela **cominuição**, e a classificação mais usada é a **AO** (figura 15-6): **extra-articular (A)**, **articular parcial (B)** e **articular completa (C)**. A fratura em T solta todo o bloco articular e é do grupo C. No adolescente, é em geral **C1 e C2**; as **C3**, com cominuição acentuada, são **raras**. As fraturas da **junção metáfise-diáfise** são outra entidade e precisam ser reconhecidas como tal para escolher a fixação.
 
 !figura 14-6
 Classificação AO das fraturas do úmero distal: extra-articulares, articulares parciais e articulares completas; o tratamento pode ser ajustado a partir da classificação.
@@ -209,9 +211,9 @@ Como a lesão é rara, as recomendações vêm de casos isolados, pequenas séri
 - a maioria é de **adolescentes**, com **pouco potencial de remodelação**, que devem ser tratados com **redução aberta e fixação das duas colunas**, como o adulto;
 - a cirurgia pode dar uma boa radiografia e, ao mesmo tempo, somar dano às partes moles, o que contribui para a rigidez; a **fixação estável que permite movimento imediato** reduz o risco de contratura.
 
-## O algoritmo 14-1
+## O algoritmo 15-1
 
-!tabela Tratamento preferido dos autores por idade e desvio
+!tabela Tratamento preferido dos autores por idade e desvio (Algorithm 15-1 da 10ª edição)
 | Idade | Desvio grande | Sem desvio ou desvio mínimo |
 | --- | --- | --- |
 | **menos de 8 anos** | redução aberta e fixação com fios, parafuso ou placa | **gesso** ou **redução fechada e fios percutâneos** |
@@ -246,7 +248,7 @@ Nos resultados, só **4 de 48** fraturas das séries reunidas foram tratadas sem
 
 ## Fios percutâneos na criança pequena
 
-Na criança com menos de 8 anos e desvio mínimo, a redução guiada pela fluoroscopia e a fixação com fios é razoável. Em geral, **três fios lisos**: **um horizontal, de lateral para medial**, para a superfície articular, e **dois para as colunas**, divergentes pela lateral ou um medial e um lateral. Uma rotação anterior ou posterior da coluna no plano sagital pode ser corrigida com um fio usado como **joystick**, que depois atravessa a fratura. Os fios saem com **3 a 4 semanas**, para o movimento ativo (figura 14-13, num adolescente de 15 anos em que os fios saíram com 3 semanas e o cotovelo terminou com perda de 10 graus de extensão).
+Na criança com menos de 8 anos e desvio mínimo, a redução guiada pela fluoroscopia e a fixação com fios é razoável. Em geral, **três fios lisos**: **um horizontal, de lateral para medial**, para a superfície articular, e **dois para as colunas**, divergentes pela lateral ou um medial e um lateral. Uma rotação anterior ou posterior da coluna no plano sagital pode ser corrigida com um fio usado como **joystick**, que depois atravessa a fratura. Os fios saem com **3 a 4 semanas**, para o movimento ativo (figura 15-7: numa criança de 8 anos, a redução veio com tração longitudinal e compressão da superfície articular com pinça; primeiro um fio de lateral para medial, perpendicular ao traço, segurou a articulação, depois vieram os fios das colunas, e a artrografia final mostrou a superfície articular anatômica).
 
 ## Parafusos canulados percutâneos no mais velho
 
@@ -289,7 +291,7 @@ Todas as vias usam a mesma pele: incisão posterior longa e curvilínea, que pas
 | Via | Como expõe | Observações do capítulo |
 | --- | --- | --- |
 | **Divisão do tríceps** (CAMPBELL, defendida por VAN GORDER) | tríceps dividido na linha média e afastado além das colunas; pode-se dividir a inserção no olécrano em retalhos de espessura total e, fletindo o cotovelo, ressecar a ponta do olécrano para ver a tróclea posterior | o radial limita a extensão proximal; KASSER não viu disfunção importante do tríceps no Cybex e achou a osteotomia desnecessária |
-| **BRYAN-MORREY** (reflexão do tríceps) | o mecanismo extensor é refletido para lateral com fáscia e periósteo em camada única; na criança, por elevação subperiosteal | **contraindicada na fratura exposta**; ponto fraco na junção medial do tríceps com a fáscia e o periósteo da ulna; cuidado com a botoeira sobre a apófise; reinserção com suturas transósseas ou âncoras |
+| **BRYAN-MORREY** (reflexão do tríceps) | o mecanismo extensor é refletido para lateral com fáscia e periósteo em camada única; na criança, por elevação subperiosteal | **contraindicada na fratura exposta**, porque parte do tríceps pode estar desvascularizada pelo trauma inicial e a dissecção aumenta esse risco; ponto fraco na junção medial do tríceps com a fáscia e o periósteo da ulna; cuidado com a botoeira sobre a apófise; reinserção com suturas transósseas ou âncoras |
 | **Osteotomia do olécrano** | chevron com ápice distal na **área nua** da incisura troclear, iniciada com serra fina e completada com osteótomo; o olécrano sobe com o tríceps | descrita como padrão no adulto; os autores a reservam para a **C3** cominuta; fixação com parafuso de esponjosa e arruela, placa ou banda de tensão |
 | Paratricipital (ALONSO-LLAMES) | trabalha dos dois lados do tríceps, sem soltá-lo | uma série recente pede cautela pelo resultado menos favorável |
 !fim
@@ -325,9 +327,9 @@ O capítulo resume a cirurgia em três decisões: a **via**, o **tipo de fixaç�
 
 ## Reconstruir a articulação
 
-A primeira prioridade é reunir os fragmentos articulares, isto é, **converter a fratura em T numa supracondiliana** (figura 14-10). As **fossas do olécrano e do coronoide** são limpas de fragmentos para evitar impacto ósseo com o movimento. A melhor forma de estabilizar os côndilos é um **parafuso transverso pelo centro do eixo de rotação**, com **compressão transversa**; um fio transverso provisório, acima do parafuso, impede a rotação dos fragmentos enquanto se fura e se comprime e é retirado depois. Em geral se usa **um único parafuso de esponjosa de rosca curta com arruela**, de **3,5 a 4,5 mm**, de **lateral para medial**, conforme o tamanho do osso e o espaço entre a superfície articular e a fossa do olécrano; as fises abertas tornam a posição do parafuso ainda mais delicada.
+A primeira prioridade é reunir os fragmentos articulares, isto é, **converter a fratura em T numa supracondiliana** (figura 15-11). As **fossas do olécrano e do coronoide** são limpas de fragmentos para evitar impacto ósseo com o movimento. A melhor forma de estabilizar os côndilos é um **parafuso transverso pelo centro do eixo de rotação**, com **compressão transversa**; um fio transverso provisório, acima do parafuso, impede a rotação dos fragmentos enquanto se fura e se comprime e é retirado depois. Em geral se usa **um único parafuso de esponjosa de rosca curta com arruela**, de **3,5 a 4,5 mm**, de **lateral para medial**, conforme o tamanho do osso e o espaço entre a superfície articular e a fossa do olécrano; as fises abertas tornam a posição do parafuso ainda mais delicada.
 
-Qualquer que seja a via, é **obrigatório ver toda a redução articular**. E **não se apressa a fixação das colunas** com a articulação mal reduzida. No adolescente mais novo, a cartilagem articular pode dobrar e rasgar, e o alinhamento fica mais difícil de julgar do que no esqueleto maduro, em que os fragmentos ósseos se encaixam (figura 14-11). Felizmente, as lesões do adolescente raramente têm a cominuição periarticular extensa das fraturas-luxações complexas do adulto.
+Qualquer que seja a via, é **obrigatório ver toda a redução articular**. E **não se apressa a fixação das colunas** com a articulação mal reduzida. No adolescente mais novo, a cartilagem articular pode dobrar e rasgar, e o alinhamento fica mais difícil de julgar do que no esqueleto maduro, em que os fragmentos ósseos se encaixam (figura 14-11 da 9ª edição). Felizmente, as lesões do adolescente raramente têm a cominuição periarticular extensa das fraturas-luxações complexas do adulto.
 
 !figura 14-10
 Sequência da reconstrução do úmero distal: primeiro os fragmentos articulares são reunidos com fios provisórios e depois com parafuso; fios fixam provisoriamente o úmero distal; uma placa um terço de tubo vai no lado medial e uma placa de reconstrução pélvica de 3,5 mm na borda posterolateral.
@@ -343,15 +345,15 @@ armadilha: Fixar uma coluna primeiro: prende o côndilo na posição errada e de
 O que decide entre fios e placas é **a importância do movimento precoce**. Na criança pequena, que consolida rápido, os fios costumam bastar e saem com **3 a 4 semanas**. No adolescente perto da maturidade, os autores preferem **fixação rígida**, em geral **placas** (menos vezes parafusos), que permite movimento precoce; antes das placas, as colunas podem ser presas provisoriamente com fios.
 
 **Princípios das placas:**
-- têm de ser **fortes**: **semitubulares finas podem ser insuficientes e quebrar**; duas semitubulares sobrepostas servem no adolescente mais novo ou magro, mas são difíceis de moldar;
+- têm de ser **fortes**: **semitubulares finas podem ser insuficientes e quebrar**; duas semitubulares sobrepostas servem no adolescente mais novo ou magro, mas são difíceis de moldar. Curiosamente, a própria figura 15-11 do capítulo, que mostra a sequência da reconstrução, usa uma placa **um terço de tubo** no lado medial, apesar do alerta;
 - as **placas de reconstrução maleáveis e reforçadas** da pelve podem ser moldadas à anatomia e dão fixação muito segura;
-- o melhor é pôr as placas **a 90 graus uma da outra**, para uma montagem mais estável (figura 14-12: parafuso transcondilar e duas placas de reconstrução pélvica a 90 graus num menino de 16 anos);
+- a fixação pode ser com placas **ortogonais** (a 90 graus uma da outra) ou **paralelas**: alguns estudos não mostraram diferença na carga até a falha, e outros recomendam as ortogonais por darem uma montagem mais estável (10ª edição, capítulo 15, seção Principles of Plate Fixation); a figura 15-12 mostra parafuso transcondilar e duas placas de reconstrução pélvica a 90 graus num menino de 16 anos;
 - as placas próprias do úmero distal do adulto muitas vezes não cabem ou ficam proeminentes na criança; no adolescente grande e maduro, podem ser usadas, com possível retirada depois.
 
 O TACHDJIAN (capítulo 29, p. 1244) acrescenta dois detalhes: as placas devem ter **comprimentos diferentes**, para que as pontas não terminem na mesma altura da diáfise e criem um **ponto de concentração de tensão**; e as placas **terço de tubo finas** foram consideradas **inadequadas**. Sobre as placas anatômicas bloqueadas do adulto, confirma que raramente se ajustam ao úmero distal do adolescente, pedem moldagem e com frequência incomodam por proeminência, o que leva à **retirada do material**.
 
 !questoes treino=pediatria-1031
-conceito: No adolescente, as colunas são fixadas com placas fortes, em geral de reconstrução pélvica, colocadas a 90 graus uma da outra; semitubulares finas podem quebrar.
+conceito: No adolescente, as colunas são fixadas com placas fortes, em geral de reconstrução pélvica, ortogonais ou paralelas (alguns estudos sem diferença na carga até a falha; muitos preferem as ortogonais, mais estáveis); semitubulares finas podem quebrar.
 armadilha: Placa semitubular fina: é a placa que o capítulo diz poder falhar.
 !fim
 
@@ -369,7 +371,7 @@ A técnica também serve para o paciente que chega tarde com escoriações conta
 
 ## Múltiplos fios
 
-Nos esportes radicais, há fraturas tão cominutas que o osso não aceita parafuso nem placa, mas desviadas demais para o tratamento fechado. A opção é a **redução aberta com fios em cada fragmento**, às vezes até com sutura dos fragmentos. Essa fixação não permite movimento imediato, que começa assim que possível. A fratura muito distal e cominuta, sobretudo com **fise aberta**, é a que melhor se presta a isso, apoiada na consolidação rápida do paciente mais novo (figura 14-5).
+Nos esportes radicais, há fraturas tão cominutas que o osso não aceita parafuso nem placa, mas desviadas demais para o tratamento fechado. A opção é a **redução aberta com fios em cada fragmento**, às vezes até com sutura dos fragmentos. Essa fixação não permite movimento imediato, que começa assim que possível. A fratura muito distal e cominuta, sobretudo com **fise aberta**, é a que melhor se presta a isso, apoiada na consolidação rápida do paciente mais novo (figura 15-5).
 
 # Pós-operatório e resultados {radar=clinico}
 

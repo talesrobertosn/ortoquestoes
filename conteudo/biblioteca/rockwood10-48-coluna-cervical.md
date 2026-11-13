@@ -1,6 +1,6 @@
 ---
 id: rockwood10-48-coluna-cervical
-versao: 4
+versao: 5
 titulo: Fraturas e luxações da coluna cervical
 especialidade: coluna
 acesso: gratis
@@ -600,6 +600,16 @@ como: A SES-DF 2024 cruzou Trendelenburg ou Trendelenburg reverso com joelhos es
 armadilha: Trendelenburg comum: põe a cabeça abaixo dos pés e aumenta a congestão venosa no campo.
 !fim
 
+O evento mais grave do pós-operatório imediato é o **déficit neurológico novo ou que piora**. Se não houve um evento reconhecido na sala (lesão direta da medula, enxerto posterior que se deslocou), o roteiro do capítulo é este:
+
+- **Exame detalhado pelo mesmo examinador** que vinha acompanhando o paciente antes da cirurgia, para comparar com a mesma régua.
+- Definir se o déficit está **acima, no nível ou abaixo** dos níveis operados e se é de **raiz** ou de **medula**.
+- **Radiografia** da região operada primeiro, à procura de falha catastrófica da montagem; se houver suspeita de uma segunda lesão não contígua que passou despercebida, radiografias de toda a coluna cervical, torácica e lombar na hora.
+- **Tomografia ou ressonância** sem hesitar (por isso os autores preferem implantes de **titânio**, compatíveis com a ressonância), conferindo parafusos, enxerto e espaçador dentro do canal, nas raízes e junto às artérias vertebrais.
+- Implante que pareça causar o déficit é **retirado ou reposicionado na sala, em emergência**.
+
+O risco é alto justamente no doente com lesão medular: LIEBSCHER mostrou eventos adversos perioperatórios (descompressão insuficiente, implante mal posicionado, lesão vascular, instabilidade mecânica e complicação da ferida) em cerca de **22%** dos operados por lesão medular cervical traumática aguda, taxa bem maior que a dos pacientes sem lesão medular, com pior recuperação neurológica, pior função e mais custo. Os autores defendem tratar esses pacientes em **centros especializados**.
+
 ## Os parafusos de massa lateral
 
 São hoje o **padrão** da fixação posterior subaxial. O capítulo compara três trajetórias:
@@ -764,7 +774,7 @@ armadilha: Tração dos membros superiores ou tração cervical como causa da pi
 
 # Lesão da artéria vertebral {radar=confirmado}
 
-A vertebral pode ser lacerada, avulsionada ou ocluída por lesão da íntima; a lesão aparece em **25% a 46%** dos traumas cervicais baixos em algumas séries, sobretudo nas **luxações facetárias**, nas fraturas facetárias com translação e nas fraturas que atingem o **forame transverso**. Quase todas são **unilaterais**, com poucas sequelas; muitas recanalizam, e por isso a anticoagulação nem sempre é recomendada, e a maioria não precisa de tratamento específico. O que importa é **saber**: a cirurgia não pode lesar a **única artéria patente**, e os **parafusos de massa lateral** ou **transarticulares C1–C2** do lado sadio devem ser evitados ou feitos com cuidado redobrado. A lesão **bilateral** pode causar **infarto cerebelar** e pede recanalização de urgência.
+A vertebral pode ser lacerada, avulsionada ou ocluída por lesão da íntima; a lesão aparece em **25% a 46%** dos traumas cervicais baixos em algumas séries, sobretudo nas **luxações facetárias**, nas fraturas facetárias com translação e nas fraturas que atingem o **forame transverso**. Quase todas são **unilaterais**, com poucas sequelas; muitas recanalizam, e por isso a anticoagulação nem sempre é recomendada, e a maioria não precisa de tratamento específico. O que importa é **saber**: a cirurgia não pode lesar a **única artéria patente**, e os **parafusos de massa lateral** ou **transarticulares C1–C2** do lado sadio devem ser evitados ou feitos com cuidado redobrado. O capítulo cita a série de SACK com **8 pacientes** com lesão **unilateral** da vertebral em fraturas subaxiais: a maioria não recebeu tratamento específico da artéria (3 tomaram aspirina), **7 dos 8** fizeram **artrodese posterior** (sem detalhar se houve implante do lado da artéria sadia) e **nenhum** teve complicação isquêmica. A lesão **bilateral** pode causar **infarto cerebelar** e pede recanalização de urgência.
 
 !questoes central=trauma-0054 treino=coluna-0514,coluna-0521
 conceito: Com lesão da artéria vertebral, a fixação posterior com parafusos de massa lateral (ou transarticulares C1–C2) ameaça a artéria que sobrou; a via anterior evita esse risco.
@@ -778,7 +788,7 @@ Cerca de **75%** das fraturas cervicais são tratadas **sem cirurgia**, com órt
 
 - **Colares:** restringem por **três pontos** (mandíbula e occipital em cima, clavícula e fúrcula na frente, espinhosos torácicos atrás); **diminuem, mas não eliminam** o movimento. O **colar macio** serve a entorses e fraturas do transverso. O **Philadelphia** é **todo de espuma**, mais fácil de higienizar; o **Miami J**, de plástico com almofadas trocáveis, é o mais popular; o **NecLoc** restringiu mais nos estudos biomecânicos. Uso prolongado dá úlcera de pressão (até **38%** no traumatismo craniano grave), dificuldade de deglutir, aspiração e aumento da pressão intracraniana.
 - **Órteses cervicotorácicas** (Minerva, Yale, SOMI): controlam melhor a cabeça e a transição cervicotorácica; a Minerva é alternativa ao halo no paciente colaborativo.
-- **Halo-colete:** é o meio não cirúrgico **mais eficaz** contra rotação, angulação e translação, mas **não controla bem as luxações facetárias** (alta taxa de falha) e deixa movimento entre os segmentos subaxiais ("serpenteio"). No idoso, foi associado a mais mortalidade (quatro vezes maior acima de 65 anos numa série; 42% de morte e quase 70% de complicações em outra). Os **pinos anteriores** ficam **1 cm acima do terço lateral do rebordo orbital**, para poupar o nervo supraorbital; os posteriores não podem deixar o anel encostar na orelha; apertam-se em **pares opostos**, até **8 polegadas-libra**, e **reapertam-se em 24 a 48 horas**. Soltura e infecção dos pinos ocorrem em **6% a 60%**; úlcera de pressão em 4% a 20%. O colete desce até o **apêndice xifoide**, com o abdome livre.
+- **Halo-colete:** é o meio não cirúrgico **mais eficaz** contra rotação, angulação e translação, mas **não controla bem as luxações facetárias** (alta taxa de falha) e deixa movimento entre os segmentos subaxiais ("serpenteio"). No idoso, foi associado a mais mortalidade (quatro vezes maior acima de 65 anos numa série; 42% de morte e quase 70% de complicações em outra). Os **pinos anteriores** ficam **1 cm acima do terço lateral do rebordo orbital**, para poupar o nervo supraorbital; os posteriores não podem deixar o anel encostar na orelha; apertam-se em **pares opostos**, até **8 polegadas-libra**, e **reapertam-se em 24 a 48 horas**. Pino que solta depois pode ser **reapertado uma única vez** a 8 polegadas-libra, desde que encontre **resistência** em poucas voltas; se gira **sem resistência**, coloca-se um **pino novo em outro local** e retira-se o solto. Soltura e infecção dos pinos ocorrem em **6% a 60%**; úlcera de pressão em 4% a 20%. O colete desce até o **apêndice xifoide**, com o abdome livre.
 
 !figura 48-23
 Pinças de GARDNER-WELLS: a posição neutra fica logo acima do meato acústico externo, cerca de 1 cm acima da orelha; o pino um pouco anterior dá momento de extensão e um pouco posterior, de flexão.

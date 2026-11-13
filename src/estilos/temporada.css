@@ -19,8 +19,7 @@
 /* Cartão de jogo. */
 .px-cartao,
 .treinar-pagina .tr-etapa,
-.pe .cartao,
-.dp .cartao {
+.pe .cartao {
   border: 2px solid var(--px-borda) !important;
   border-radius: 6px !important;
   box-shadow: 5px 5px 0 var(--px-sombra) !important;
@@ -135,19 +134,7 @@
 .pe .pe-chip { border-radius: 3px; }
 
 /* ---------- Desempenho ------------------------------------------------- */
-.dp .dp-periodo { border: 2px solid var(--px-borda) !important; border-radius: 6px !important; box-shadow: 5px 5px 0 var(--px-sombra) !important; }
-.dp .dp-heroi { padding-bottom: calc(clamp(1.5rem, 4vw, 2.5rem) + 1.25rem); }
-.dp .dp-heroi__numeros > div { border-radius: 4px; background: rgba(7, 35, 32, 0.45); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14); border: 0; }
-.dp .dp-heroi__numeros dd { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 2rem; line-height: 1; color: var(--px-ouro); }
-.dp .dp-heroi__numeros dd a { color: var(--px-ouro); }
-.dp .dp-anel__valor strong { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 3.2rem; letter-spacing: 0.01em; }
-.dp .dp-cartao__cabeca h2 { display: flex; align-items: center; gap: 0.5rem; }
-.dp .dp-cartao__cabeca h2::before { content: ""; width: 0.65rem; height: 0.65rem; background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); flex: none; }
 /* Barras do mês em blocos, como uma barra de vida de jogo. */
-.dp .dp-barras__barra { border-radius: 0; background: repeating-linear-gradient(0deg, var(--verdete) 0 6px, color-mix(in srgb, var(--verdete) 70%, #7ee0c8) 6px 8px); }
-.dp .dp-barras__dia:last-child .dp-barras__barra { background: repeating-linear-gradient(0deg, var(--ouro) 0 6px, #ffe3a3 6px 8px); }
-.dp .dp-tema__trilho, .dp .dp-tema__trilho > span { border-radius: 0 !important; }
-.dp .dp-destaque { border-radius: 4px; }
 
 /* ---------- Perfil: campo de serviço e pedido do que falta ------------- */
 .campo-servico { display: grid; gap: 0.35rem; }

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-63-diafise-tibia
-versao: 3
+versao: 4
 titulo: Fratura da diáfise da tíbia e da fíbula
 especialidade: trauma
 acesso: gratis
@@ -207,7 +207,7 @@ A rotação é conferida antes e depois do bloqueio, sobretudo pelo exame físic
 
 A metáfise distal é muito mais larga que a haste, e o malalinhamento distal pode piorar o resultado. Os cuidados:
 
-- **Fio-guia na cicatriz fisária, lateral ao centro do pilão no AP e centrado (ou levemente posterior) no perfil** (figura 63-22); a haste vai o mais distal possível.
+- **Fio-guia na cicatriz fisária, lateral ao centro do pilão no AP e centrado (ou levemente posterior) no perfil**; a haste vai o mais distal possível. Esse ponto lateral vem de estudos em cadáver, radiográficos e clínicos que o texto do capítulo cita na técnica da haste e na seção "Distal Fracture Malalignment". A legenda da figura 63-22 é mais simples e mostra o fio **centrado no AP e no perfil**; a diferença é só de detalhe, e o que a figura quer mostrar é que o fio fora de posição faz a fratura distal angular quando a haste passa.
 - Curva grande na ponta do fio impede a fresa flexível de chegar ao fim, o que pesa na fratura distal com pouco osso.
 - Manter a redução enquanto se fresa: pinças, fixador temporário, parafusos de bloqueio (figura 63-39, varo distal por fresagem excêntrica corrigido com parafuso anteroposterior), posição semiestendida.
 - **Fixar primeiro a fíbula** com traço simples, sobretudo nas fraturas muito distais: dá comprimento e alinhamento. A fíbula mal reduzida impede reduzir a tíbia, e a fíbula fixa mantém o comprimento lateral, mas **não impede o colapso em varo**. Um relato achou oito vezes mais pseudartrose com placa na fíbula junto com a haste; estudos posteriores não confirmaram esse tamanho de risco. Continua controverso.
@@ -387,6 +387,12 @@ A face anteromedial sem cobertura muscular faz da exposta da diáfise da tíbia 
 
 **Fechar ou não, e quando voltar.** O capítulo 63 não detalha o fechamento; o capítulo 16 do Rockwood (p. 559 a 561, Tabela 16-16) mostra que o **fechamento primário direto** é seguro em casos escolhidos, decidido só depois da excisão da ferida e da redução da fratura: bordas viáveis e sangrantes, aproximação sem tensão e esqueleto estável. RAJASEKARAN fechou de imediato 32% das expostas tipo III com critérios estritos, com só 3% de infecção profunda. O comprimento da ferida não diz se ela fecha; o esmagamento e a alta energia (GHOIS de 10 ou mais) pedem cautela, porque a zona de lesão se revela nas 48 horas seguintes. A regra é **"na dúvida, não feche"**, com nova revisão em **48 a 72 horas** (alta energia ou explosão, desbridamento inicial insatisfatório, contaminação grave, desenluvamento, chegada tardia, sinal de infecção). O Campbell 15 (cap. 58, p. 2526 e 2528) manda repetir o desbridamento em **24 a 72 horas** quando necessário; a política dos autores é repetir na maioria das expostas **GUSTILO III** e em toda ferida duvidosa, a cada **48 horas** até a ferida ficar limpa. O fechamento precoce diminui infecção, consolidação viciosa e pseudartrose, mas não se fecha ferida que não ficou cirurgicamente limpa nem pele sob tensão.
 
+!questoes central=trauma-1216
+conceito: A limpeza da ferida, com desbridamento do tecido desvitalizado e irrigação com soro, é etapa obrigatória e consensual do tratamento inicial de toda exposta; o que ainda se discute são os detalhes, como o prazo (a regra das 6 horas não é obrigatória), os aditivos da irrigação e o momento do fechamento (Campbell 15, cap. 58, p. 2526 a 2528).
+como: A SES-DF 2022 (R4 Coluna) montou o caso de uma exposta proximal da tíbia por alta energia, com ferida maior que 10 cm, e pediu certo ou errado sobre o consenso da limpeza exaustiva como parte inicial do tratamento. Certo.
+armadilha: Confundir o consenso sobre fazer a limpeza com consenso sobre a técnica: a regra das 6 horas, os aditivos da irrigação e a hora de fechar não são ponto pacífico, mas desbridar e irrigar é.
+!fim
+
 ## Haste na exposta
 
 A haste é o tratamento mais comum também na exposta: numa pesquisa internacional, preferida em **96%** das fechadas e expostas de baixo grau; 68% usavam haste no IIIA e só 48% no IIIB. Desbridamento seguido de **haste imediata** nas expostas de baixo grau teve infecção de **3%** e consolidação de **89%** sem nova cirurgia (KAKAR e TORNETTA, com haste não fresada e cobertura em até 14 dias); o **SPRINT** mostrou infecção baixa e que a fresagem é segura. Nas mais graves ("IIIA grave", IIIB e IIIC), o **LEAP** teve infecção de **16%** e complicações de **33% a 57%**; outros chegaram a 9% de infecção no IIIB. A **suprapatelar não aumentou a artrite séptica** do joelho na exposta.
@@ -411,7 +417,7 @@ O capítulo 18 do Rockwood relativiza até essa lista. Ele mantém a amputação
 
 **LEAP:** sem diferença funcional entre salvar e amputar; cerca de metade dos pacientes dos dois grupos com incapacidade duradoura; custo ao longo da vida **três vezes maior na amputação** (prótese). Preditores de mau resultado: reinternação por complicação, pobreza, falta de seguro, baixa autoconfiança, fumo, litígio, pouco apoio social e baixa escolaridade. Num estudo, 92% dos salvos preferiam a perna salva. **Técnica:** preferir **abaixo do joelho**; **não fechar na primeira cirurgia** (a zona de lesão evolui por dias); desbridamentos seriados; retalhos não convencionais com a pele que sobreviver (figura 63-35); tala em **extensão** contra a contratura em flexão; prótese a partir de cerca de 6 semanas do fechamento.
 
-!questoes central=trauma-1093 relacionadas=trauma-0824,trauma-0435,trauma-0061,trauma-1183,trauma-1216 treino=trauma-1712
+!questoes central=trauma-1093 relacionadas=trauma-0824,trauma-0435,trauma-0061,trauma-1183 treino=trauma-1712
 conceito: São indicações absolutas de amputação a isquemia quente acima de 6 horas, o membro preso só por ponte de pele e a reconstrução que põe a vida em risco; o MESS soma energia, isquemia, choque e idade, mas escore alto não prevê amputação.
 como: O TARO 2013 e o TARO 2012 fizeram quase a mesma pergunta (MESS de sete ou mais, lesão vascular com seis horas ou mais, lesão do fibular no IIIC, neuropatia do diabético). O TARO 2023 perguntou o que o MESS leva em conta (isquemia e idade).
 armadilha: Lesão do nervo fibular no IIIC: não é indicação absoluta.

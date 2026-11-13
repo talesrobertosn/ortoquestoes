@@ -3,29 +3,31 @@ import { Icone } from '../Icone'
 import { href } from '../../util/rotas'
 import { usarPremium } from '../../conta/premium'
 import { usarPlanoSalvo } from '../../conta/cronograma'
-import { calcularPlano } from '../../dados/planoEstudo'
+import { calcularPlano, type PlanoSalvo } from '../../dados/planoEstudo'
 import { calcularConstancia, contarErrosQueImportam } from '../../dados/hubCronograma'
 import { resumoJanela, type Evento, type Respondidas } from '../../dados/desempenho'
 import type { Indice } from '../../dados/tipos'
 
 /*
  * "Seu estudo está dando resultado?" (14/11/2026): o Cronograma visto do Desempenho. Planejado contra feito desde a
- * criação do plano, a constância dos últimos 14 dias, o acerto de primeira antes e depois do plano nos temas que o
- * plano reforçou, e o que ficou pendente. As mesmas definições do Cronograma (planoEstudo.ts e hubCronograma.ts).
+ * criação do plano, a constância dos últimos 14 dias, o acerto de primeira antes e depois do plano e o que ficou
+ * pendente. As mesmas definições do Cronograma (planoEstudo.ts e hubCronograma.ts).
  */
-export function ResultadoCronograma({ indice, respondidas, eventos }: { indice: Indice | null; respondidas: Respondidas; eventos: Evento[] }) {
-  const { premium, carregado } = usarPremium()
-  const { plano } = usarPlanoSalvo(premium)
+export function ResultadoCronograma({ indice, respondidas, eventos, planoExemplo }: { indice: Indice | null; respondidas: Respondidas; eventos: Evento[]; planoExemplo?: PlanoSalvo }) {
+  const acesso = usarPremium()
+  // No Desempenho de exemplo, o plano fictício da residente mostra o bloco cheio para quem não assina.
+  const premium = acesso.premium || !!planoExemplo, carregado = acesso.carregado || !!planoExemplo
+  const { plano: planoSalvo } = usarPlanoSalvo(acesso.premium && !planoExemplo)
+  const plano = planoExemplo ?? planoSalvo
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
   const dados = useMemo(() => {
     if (!indice || !plano || !calculo) return null
     const criado = Date.parse(plano.criado_em)
     const constancia = calcularConstancia(respondidas, plano, calculo)
-    const reforcados = new Set(calculo.temas.filter((t) => t.reforcado).map((t) => t.slug))
-    const doPlano = reforcados.size ? eventos.filter((e) => e.tema && reforcados.has(e.tema)) : eventos
-    const antes = resumoJanela(doPlano, 0, criado)
-    const depois = resumoJanela(doPlano, criado, Date.now() + 1)
-    return { constancia, antes, depois, reforcados: reforcados.size, erros: contarErrosQueImportam(indice, respondidas) }
+    // Todos os temas: os "reforçados" são escolhidos por estarem fracos hoje, e compará-los só puxaria para baixo.
+    const antes = resumoJanela(eventos, 0, criado)
+    const depois = resumoJanela(eventos, criado, Date.now() + 1)
+    return { constancia, antes, depois, erros: contarErrosQueImportam(indice, respondidas) }
   }, [indice, plano, calculo, respondidas, eventos])
 
   if (!carregado) return null
@@ -33,10 +35,10 @@ export function ResultadoCronograma({ indice, respondidas, eventos }: { indice: 
     return (
       <section className="ds-cartao rc rc--convite" aria-labelledby="rc-titulo">
         <div className="ds-cartao__cabeca">
-          <h3 id="rc-titulo">Seu estudo está dando resultado?</h3>
+          <h3 id="rc-titulo">Monte o seu cronograma e acompanhe aqui</h3>
           <p>Com o Cronograma, este bloco compara o que foi planejado com o que você fez, a constância dos últimos 14 dias e se o acerto subiu nos temas que o plano reforçou.</p>
         </div>
-        <a className="botao botao--ouro" href={href('/cronograma')}><Icone nome="calendario" tamanho={16} /> {premium ? 'Montar meu cronograma' : 'Conhecer o Cronograma'}</a>
+        <a className="dp-botao dp-botao--principal" href={href('/cronograma')}><Icone nome="calendario" tamanho={16} /> {premium ? 'Montar meu cronograma' : 'Conhecer o Cronograma'}</a>
       </section>
     )
   }
@@ -48,10 +50,10 @@ export function ResultadoCronograma({ indice, respondidas, eventos }: { indice: 
     <section className="ds-cartao rc" aria-labelledby="rc-titulo">
       <div className="ds-cartao__cabeca ds-cartao__cabeca--linha">
         <div>
-          <h3 id="rc-titulo">Seu estudo está dando resultado?</h3>
-          <p>Desde que o cronograma começou, em {new Date(plano.criado_em).toLocaleDateString('pt-BR')}.</p>
+          <h3 id="rc-titulo">Desde {new Date(plano.criado_em).toLocaleDateString('pt-BR')}, quando o cronograma começou</h3>
+          <p>Prova em {new Date(`${plano.data_prova}T12:00:00`).toLocaleDateString('pt-BR')} · {calculo.diasAteProva} {calculo.diasAteProva === 1 ? 'dia' : 'dias'} até lá.</p>
         </div>
-        <a className="rc__link" href={href('/cronograma')}>Abrir o cronograma <Icone nome="direita" tamanho={14} /></a>
+        <a className="dp-botao dp-botao--principal" href={href('/cronograma')}><Icone nome="calendario" tamanho={15} /> Abrir o cronograma</a>
       </div>
       <div className="rc__grade">
         <div className="rc__bloco">
@@ -67,7 +69,7 @@ export function ResultadoCronograma({ indice, respondidas, eventos }: { indice: 
           <span className="rc__nota">sequência de {dados.constancia.sequencia} {dados.constancia.sequencia === 1 ? 'dia' : 'dias'}</span>
         </div>
         <div className="rc__bloco">
-          <span className="rc__rotulo">Acerto de primeira {dados.reforcados ? 'nos temas reforçados' : ''}</span>
+          <span className="rc__rotulo">Acerto de primeira desde o plano</span>
           <span className="rc__valor ds-num">{depois === null ? '–' : `${depois}%`} <small>{antes === null ? 'antes do plano: poucos dados' : `antes do plano: ${antes}%`}</small></span>
           {antes !== null && depois !== null && <span className={'rc__nota' + (depois >= antes ? ' rc__nota--bom' : '')}>{depois === antes ? 'igual a antes' : `${depois > antes ? '▲' : '▼'} ${Math.abs(depois - antes)} pontos desde o plano`}</span>}
         </div>

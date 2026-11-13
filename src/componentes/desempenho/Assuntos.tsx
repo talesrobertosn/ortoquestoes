@@ -86,7 +86,7 @@ export function Assuntos({ temas, assuntos, turma, resumos }: {
         <div className="as-tabela" role="table" aria-label="Desempenho por tema e assunto">
           <div className="as-linha as-linha--cabeca" role="row">
             <span role="columnheader">Tema</span><span role="columnheader">Acerto</span><span role="columnheader">Visto do acervo</span>
-            <span role="columnheader" title="Últimos 30 dias contra antes">Tendência</span><span role="columnheader">Erros a refazer</span>
+            <span role="columnheader" title="Últimos 30 dias contra antes">30 dias</span><span role="columnheader">Erros a refazer</span>
             {turma && <span role="columnheader">Turma</span>}<span role="columnheader"><span className="so-leitor">Ações</span></span>
           </div>
           {linhas.map((l) => {
@@ -108,8 +108,8 @@ export function Assuntos({ temas, assuntos, turma, resumos }: {
                 <span role="cell" data-rotulo="Erros a refazer" className="ds-num">{l.pendentes ? <a href={href(`/treinar?temas=${l.tema}&situacao=erradas&limite=${Math.min(20, l.pendentes)}`)}>{l.pendentes}</a> : '0'}</span>
                 {turma && <span role="cell" data-rotulo="Turma" className="ds-num">{t && t.n >= MINIMO_LEITURA ? <span className={t.voce >= t.turma ? 'as-tend--sobe' : 'as-tend--desce'}>{t.voce >= t.turma ? '+' : ''}{Math.round(((t.voce - t.turma) / t.n) * 100)}</span> : '–'}</span>}
                 <span role="cell" className="as-acoes">
-                  <a href={href(`/treinar?temas=${l.tema}&limite=10`)} aria-label={`Treinar ${l.nome}`}><Icone nome="alvo" tamanho={15} /> Treinar</a>
-                  {resumo && <a href={href(`/resumos/${resumo.capitulo.id}`)} title={resumo.capitulo.titulo}><Icone nome="livro" tamanho={15} /> Resumo</a>}
+                  <a className="dp-botao dp-botao--principal dp-botao--pequeno" href={href(`/treinar?temas=${l.tema}&limite=10`)} aria-label={`Treinar ${l.nome}`}><Icone nome="alvo" tamanho={14} /> Treinar</a>
+                  {resumo && <a className="dp-botao dp-botao--contorno dp-botao--pequeno" href={href(`/resumos/${resumo.capitulo.id}`)} title={resumo.capitulo.titulo}><Icone nome="livro" tamanho={14} /> Resumo</a>}
                 </span>
               </div>
               {estaAberto && sub.map((a) => {
@@ -122,7 +122,7 @@ export function Assuntos({ temas, assuntos, turma, resumos }: {
                   <span role="cell" data-rotulo="Erros a refazer" className="ds-num">{a.pendentes}</span>
                   {turma && <span role="cell" />}
                   <span role="cell" className="as-acoes">
-                    <a href={href(`/treinar?temas=${a.tema}&subtemas=${encodeURIComponent(sub2)}&limite=10`)} aria-label={`Treinar ${a.nome}`}><Icone nome="alvo" tamanho={15} /> Treinar</a>
+                    <a className="dp-botao dp-botao--contorno dp-botao--pequeno" href={href(`/treinar?temas=${a.tema}&subtemas=${encodeURIComponent(sub2)}&limite=10`)} aria-label={`Treinar ${a.nome}`}><Icone nome="alvo" tamanho={14} /> Treinar</a>
                   </span>
                 </div>
               })}

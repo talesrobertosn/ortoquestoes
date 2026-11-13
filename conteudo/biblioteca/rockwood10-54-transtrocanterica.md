@@ -1,6 +1,6 @@
 ---
 id: rockwood10-54-transtrocanterica
-versao: 4
+versao: 5
 titulo: Fratura transtrocantérica
 especialidade: trauma
 acesso: gratis
@@ -88,7 +88,7 @@ Nervos (femoral na frente, ciático atrás) e vasos raramente são lesados; o sa
 ## Fraturas isoladas dos trocânteres
 
 - **Trocânter maior isolado**: raro, e o traço pode se estender entre os trocânteres. Confirme com **tomografia ou ressonância** que é só o trocânter. Sem desvio: tratamento **não cirúrgico**, carga total e analgesia. **Desvio maior que 1 cm** ou traço que cruza a linha média da região intertrocantérica: **banda de tensão**, para não deixar os abdutores insuficientes (sinal de Trendelenburg).
-- **Trocânter menor isolado no adulto**: incomum; deve ser considerado **patológico até prova em contrário** (metástase) e investigado. Sem tumor, tratamento não cirúrgico, com mais cuidado na carga.
+- **Trocânter menor isolado no adulto**: incomum; deve ser considerado **patológico até prova em contrário** (metástase) e investigado. O capítulo 10 do Rockwood and Green (Principles of Nonoperative Management of Fractures, seção Lower Limb Fractures) diz o mesmo com todas as letras: a fratura isolada do trocânter menor é muito rara e, **no idoso, deve ser presumida metastática até prova em contrário**. Sem tumor, tratamento não cirúrgico, com mais cuidado na carga.
 
 !questoes central=tumores-0136 treino=trauma-1572,trauma-1573
 conceito: Avulsão isolada do trocânter menor no adulto sugere metástase oculta.
@@ -238,7 +238,7 @@ Pernas em tesoura, tronco inclinado para o lado oposto. Incisão de 3 cm uns 5 c
 | Quebra do implante | 1% a 2% | Consequência de pseudartrose |
 | Pseudartrose | 1% a 3% | Redução e posição do implante |
 | Consolidação viciosa | 5% a 10% | Redução e posição do implante |
-| Necrose avascular | cerca de 1% | Não rodar a cabeça na cirurgia |
+| Necrose avascular | 1% a 2% no texto (1% na tabela do capítulo) | Implante não alto na cabeça; não rodar a cabeça ao inserir o parafuso |
 !fim
 
 ## Cut-out e cut-in
@@ -249,15 +249,15 @@ O **cut-in** é a migração **craniomedial** do parafuso através da cabeça, s
 
 ## Fratura ao redor do implante e quebra
 
-Fratura na ponta da haste: 0,7% a 1,7% com os desenhos atuais, por concentração de tensão; pode ser precedida de **dor na coxa**. Fatores: haste grossa e rígida, ponta romba, parafuso distal grosso ou perto da ponta, aperto excessivo, haste curta demais para fratura com extensão subtrocantérica. Abaixo de uma haste curta: trocar por haste longa; acima do joelho com haste longa: placa distal. A **quebra da haste** quase sempre vem de **pseudartrose**, mais depois de 6 meses, e ocorre no ponto mais fraco, **onde o parafuso cefálico atravessa a haste**.
+Fratura na ponta da haste: 0,7% a 1,7% com os desenhos atuais, por concentração de tensão; pode ser precedida de **dor no meio da coxa** nos pacientes com haste cefalomedular curta. Fatores: haste grossa e rígida, ponta romba, parafuso distal grosso ou perto da ponta, aperto excessivo, haste curta demais para fratura com extensão subtrocantérica. Abaixo de uma haste curta: trocar por haste longa; acima do joelho com haste longa: placa distal. A **quebra da haste** quase sempre vem de **pseudartrose**, mais depois de 6 meses, e ocorre no ponto mais fraco, **onde o parafuso cefálico atravessa a haste**.
 
 !questoes treino=trauma-1587,trauma-1588,trauma-1592
-conceito: Cut-in em cerca de 2%; quebra da haste no orifício do parafuso cefálico, por pseudartrose; fratura na ponta precedida de dor na coxa.
+conceito: Cut-in em cerca de 2%; quebra da haste no orifício do parafuso cefálico, por pseudartrose; fratura na ponta precedida de dor no meio da coxa.
 !fim
 
 ## Pseudartrose, consolidação viciosa e necrose
 
-A **pseudartrose** ocorre em 1% a 3%. Com haste, tente **dinamizar entre 3 e 6 meses**; isso só funciona se a ponta lateral do parafuso cefálico ficou **fora da cortical**, livre para deslizar. Se não der, revisão (haste mais grossa com fresagem ou fixação extramedular); enxerto raramente é preciso. Na **consolidação viciosa**, varo e medialização encurtam o membro e pioram a função; a consolidação em valgo com offset um pouco menor pode ter bom resultado. A **necrose avascular** da cabeça é rara (1% a 2%), associada a haste ou parafuso muito altos e à rotação da cabeça; trata-se com prótese só se houver sintomas.
+A **pseudartrose** ocorre em 1% a 3%. Com haste, tente **dinamizar entre 3 e 6 meses**; isso só funciona se a ponta lateral do parafuso cefálico ficou **fora da cortical**, livre para deslizar. Se não der, revisão (haste mais grossa com fresagem ou fixação extramedular); enxerto raramente é preciso. Na **consolidação viciosa**, varo e medialização encurtam o membro e pioram a função; a consolidação em valgo com offset um pouco menor pode ter bom resultado. A **necrose avascular** da cabeça é rara: **1% a 2%** no texto do capítulo (a tabela de complicações do mesmo capítulo dá 1%). O fator direto apontado é o **implante alto**: na Fig. 54-39, a haste colocada alta na cabeça pode ter lesado a irrigação dela. A **cominuição** não causa necrose por si; pesa só porque, nas fraturas cominutivas e nas basais, sobram poucas partes moles presas ao fragmento proximal, e a cabeça **roda com facilidade** quando o parafuso deslizante é inserido (o capítulo manda segurar o colo com um dedo, passar o macho antes ou pôr um fio ou parafuso antirrotacional). Trata-se com prótese só se houver sintomas.
 
 !questoes treino=trauma-1589,trauma-1591
 conceito: Dinamização da haste entre 3 e 6 meses, com a ponta lateral do parafuso fora da cortical; necrose em 1% a 2%.

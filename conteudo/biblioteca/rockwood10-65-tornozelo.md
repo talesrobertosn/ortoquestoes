@@ -1,6 +1,6 @@
 ---
 id: rockwood10-65-tornozelo
-versao: 3
+versao: 4
 titulo: Fraturas do tornozelo
 especialidade: trauma
 acesso: gratis
@@ -82,7 +82,7 @@ armadilha: Tipo C: o traço suprassindesmal é da pronação-rotação externa, 
 
 No estágio I, o retropé aduzido traciona o lado lateral: rompe o ligamento talofibular (entorse) ou arranca a ponta da fíbula num **traço transverso abaixo da sindesmose** (AO tipo A). É estável. No estágio II, o tálus cisalha o **maléolo medial** num **traço vertical**, que é a marca do padrão, e a lesão fica instável. O tálus pode também **afundar o plafond medial**, e a radiografia deve ser examinada procurando esse impacto; McCONNELL e TORNETTA o encontraram em **42%** das fraturas verticais do maléolo medial.
 
-A cirurgia da SAD II é a exceção da regra "fíbula primeiro": **começa pelo maléolo medial**. A área impactada é exposta através do traço, a articulação é lavada para retirar fragmentos osteocondrais, o segmento afundado é elevado com impactor ou alavanca e a falha é preenchida com enxerto ou substituto se preciso. O traço de cisalhamento é fixado tipicamente com **placa de suporte (antideslizante)**, com parafusos esponjosos paralelos à articulação; a fíbula vai depois, com placa, haste ou banda de tensão (figura 65-10).
+A cirurgia da SAD II é a exceção da regra "fíbula primeiro": **começa pelo maléolo medial**. A área impactada é exposta através do traço, a articulação é lavada para retirar fragmentos osteocondrais, o segmento afundado é elevado com impactor ou alavanca e a falha é preenchida com enxerto ou substituto se preciso. O traço de cisalhamento é fixado tipicamente com **placa de suporte (antideslizante)**, com parafusos esponjosos paralelos à articulação; a fíbula vai depois, com placa, haste ou banda de tensão (figura 65-10). O Campbell (15ª ed., cap. 59, Técnica 59.1, p. 2570) também fixa a fíbula antes do maléolo medial, mas a exceção que ele aponta é outra: a **fíbula cominuta** numa bi ou trimaleolar, porque, com cominuição intensa, o maléolo lateral pode ficar hiper-reduzido no plano coronal e impedir a redução anatômica do medial; nesse caso, ele sugere fixar o medial primeiro. As duas exceções não se confundem: no Rockwood a razão é o impacto medial da SAD II; no Campbell, a cominuição da fíbula.
 
 !questoes central=trauma-0171,trauma-0766 treino=trauma-1684
 conceito: A SAD I é a avulsão transversa da fíbula abaixo da sindesmose (WEBER A) ou a lesão ligamentar lateral; a SAD II acrescenta o cisalhamento vertical do maléolo medial, com possível impacto do plafond medial.
@@ -398,7 +398,7 @@ A radiografia mede mal o fragmento, cujo traço não fica no plano do perfil. Tr
 
 !questoes central=trauma-1033 relacionadas=pe-tornozelo-0247,trauma-0904 treino=trauma-1688,trauma-1710,conceitos-basicos-0382
 conceito: O maléolo posterior é classificado na tomografia (HARAGUCHI, BARTONÍČEK, MASON); o fragmento posterolateral se fixa pela via posterolateral junto com a fíbula, o posteromedial (BARTONÍČEK 3, duplo contorno) pela posteromedial, e o grande fragmento único (tipo 4) aceita parafusos anteroposteriores percutâneos.
-como: O TARO 2025 mostrou um corte com as vias ao redor do tornozelo e pediu as duas que reduzem e fixam todas as fraturas de uma 44B2.3 (a mesma questão aparece numa prova sem ano citando o Rockwood 10ª edição); o comentário do acervo indica a posterolateral, para o maléolo posterior e a fíbula, e a medial. Uma prova sem ano perguntou a fratura articular mais associada à fratura do quarto distal da diáfise da tíbia (o cisalhamento coronal do maléolo posterior, assunto do capítulo da diáfise da tíbia).
+como: O TARO 2025 mostrou um corte com as vias ao redor do tornozelo e pediu as duas que reduzem e fixam todas as fraturas de uma 44B2.3 (a mesma questão aparece numa prova sem ano citando o Rockwood 10ª edição); pela Fig. 65-7, a 44B2.3 é a fíbula **transsindesmal multifragmentar** com lesão medial (ruptura do deltoide ou fratura do maléolo medial), **sem fragmento posterior**, porque o VOLKMANN só entra no grupo B3; o gabarito (posterolateral e medial) se explica pela fíbula multifragmentar, que recebe placa posterior pela via posterolateral, somada ao maléolo medial pela via medial. Uma prova sem ano perguntou a fratura articular mais associada à fratura do quarto distal da diáfise da tíbia (o cisalhamento coronal do maléolo posterior, assunto do capítulo da diáfise da tíbia).
 armadilha: Duas vias laterais: deixam o maléolo medial e o posterior sem acesso adequado.
 !fim
 
