@@ -19,7 +19,7 @@ export const JANELA_REVISAO_DIAS = 400
  * O ritmo só decide em que dia cada revisão aparece: não mexe no histórico
  * nem nas datas gravadas, então trocar de ideia reorganiza tudo na hora.
  */
-export interface RitmoRevisao { limite: number | null; folgas: number[] }
+export interface RitmoRevisao { limite: number | null; folgas: number[]; modo?: 'leve' | 'regular'; retomadaEm?: string }
 export const RITMO_PADRAO: RitmoRevisao = { limite: 30, folgas: [] }
 export const SEM_RITMO: RitmoRevisao = { limite: null, folgas: [] }
 
@@ -35,7 +35,7 @@ export function chaveDia(data: number) { return chaveDoDia(data) }
 const diaSeguinte = (dia: number) => inicioDoDiaSeguinte(dia)
 
 /** Mesma regra de revisarHoje: registros antigos sem data voltam 3 dias depois da resposta. */
-function vencimentoDe(r: Partial<RegistroQuestao> & { c: boolean | null }): number | null {
+export function vencimentoDe(r: Partial<RegistroQuestao> & { c: boolean | null }): number | null {
   if (r.c === null || dominada(r)) return null
   if (r.proximaRevisao === undefined) return r.q !== undefined ? (r.c === false ? r.q : r.q + 3 * DIA) : null
   return r.proximaRevisao
@@ -63,14 +63,19 @@ export function distribuirRevisoes(registros: Registros, ritmo: RitmoRevisao = S
   const capacidade = (dia: number) => {
     if (folgas.has(diaDaSemana(dia))) return 0
     if (ritmo.limite === null) return Infinity
-    return dia === hoje ? Math.max(0, ritmo.limite - feitas) : ritmo.limite
+    let teto = ritmo.limite
+    if (ritmo.retomadaEm && /^\d{4}-\d{2}-\d{2}$/.test(ritmo.retomadaEm)) {
+      const decorridos = Math.max(0, Math.floor((dia - inicioDia(Date.parse(ritmo.retomadaEm + 'T12:00:00-03:00'))) / DIA))
+      teto = Math.min(teto, decorridos < 3 ? 5 : decorridos < 7 ? 10 : teto)
+    }
+    return dia === hoje ? Math.max(0, teto - feitas) : teto
   }
   const itens: Array<{ id: string; vencimento: number; base: number; erro: boolean }> = []
   for (const [id, r] of Object.entries(registros)) {
     const venc = vencimentoDe(r)
     if (venc === null) continue
     const vencimento = inicioDia(venc)
-    itens.push({ id, vencimento, base: Math.max(vencimento, hoje), erro: r.c === false })
+    itens.push({ id, vencimento, base: Math.max(vencimento, (r.tentativas ?? 1) > 1 && (r.q ?? 0) >= hoje ? diaSeguinte(hoje) : hoje), erro: r.c === false })
   }
   itens.sort((a, b) => a.base - b.base || Number(b.erro) - Number(a.erro) || a.vencimento - b.vencimento)
   const porDia = new Map<number, Array<{ id: string; vencimento: number; redistribuida: boolean }>>()

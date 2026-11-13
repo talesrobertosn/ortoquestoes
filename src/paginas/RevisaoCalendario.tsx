@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState, type RefObject } from 'react'
+import { useEffect, useMemo, useRef, useState, type RefObject } from 'react'
 import type { Indice } from '../dados/tipos'
 import type { DiaRevisao } from '../estado/planoRevisao'
 import { corDaArea } from '../dados/coresAreas'
@@ -33,7 +33,7 @@ const somarMeses = (mes: string, delta: number) => { const [a, m] = mes.split('-
 interface Area { slug: string; nome: string; n: number; ids: string[] }
 interface Celula { k: string; passado: boolean; ehHoje: boolean; dia?: DiaRevisao; feitas: number; folga: boolean; areas: Area[] }
 
-export function CalendarioRevisao({ indice, registros, plano, folgas, hoje, rotuloArea, aoRevisar }: {
+export function CalendarioRevisao({ indice, registros, plano, folgas, hoje, rotuloArea, diaInicial, aoRevisar }: {
   indice: Indice
   /** As respostas (já filtradas pela área escolhida, se houver). */
   registros: Record<string, { c?: boolean | null; q?: number; tentativas?: number; historico?: Array<{ em: number }> }>
@@ -42,15 +42,19 @@ export function CalendarioRevisao({ indice, registros, plano, folgas, hoje, rotu
   /** Início de hoje (São Paulo). */
   hoje: number
   /** "de coluna", quando a página está filtrada por uma área. */
+  diaInicial?: string
   rotuloArea?: string
   aoRevisar: (ids: string[]) => void
 }) {
   const chaveHoje = chaveDoDia(hoje)
-  const [mes, definirMes] = useState(() => mesDaChave(chaveHoje))
-  const [selecionado, definirSelecionado] = useState(chaveHoje)
+  const [mes, definirMes] = useState(() => mesDaChave(diaInicial ?? chaveHoje))
+  const [visao, definirVisao] = useState<'semana' | 'mes'>('semana')
+  const [semana, definirSemana] = useState(() => somarDias(diaInicial ?? chaveHoje, -((diaDaSemana(diaInicial ?? chaveHoje) + 6) % 7)))
+  const [selecionado, definirSelecionado] = useState(diaInicial ?? chaveHoje)
   const [direcao, definirDirecao] = useState<'frente' | 'tras' | null>(null)
+  useEffect(() => { if (!diaInicial) return; definirSelecionado(diaInicial); definirMes(mesDaChave(diaInicial)); definirSemana(somarDias(diaInicial, -((diaDaSemana(diaInicial) + 6) % 7))) }, [diaInicial])
   const detalhe = useRef<HTMLElement>(null)
-  const mesMinimo = mesDaChave(somarDias(chaveHoje, -90))
+  const mesMinimo = mesDaChave(somarDias(chaveHoje, -182))
   const ultimo = [...plano.keys()].sort().pop() ?? chaveHoje
   const mesLimite = mesDaChave(ultimo > chaveHoje ? ultimo : chaveHoje)
 
@@ -89,6 +93,7 @@ export function CalendarioRevisao({ indice, registros, plano, folgas, hoje, rotu
   }
 
   const grade = useMemo(() => {
+    if (visao === 'semana') return Array.from({ length: 7 }, (_, i) => montar(somarDias(semana, i)))
     const recuo = (diaDaSemana(`${mes}-01`) + 6) % 7
     const [a, m] = mes.split('-').map(Number)
     const dias = new Date(Date.UTC(a, m, 0)).getUTCDate()
@@ -96,18 +101,19 @@ export function CalendarioRevisao({ indice, registros, plano, folgas, hoje, rotu
     for (let d = 1; d <= dias; d++) celulas.push(montar(`${mes}-${String(d).padStart(2, '0')}`))
     while (celulas.length % 7) celulas.push(null)
     return celulas
-  }, [mes, plano, feitasPorDia, chaveHoje, folgas.join(',')]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [visao, semana, mes, plano, feitasPorDia, chaveHoje, folgas.join(',')]) // eslint-disable-line react-hooks/exhaustive-deps
   const sel = useMemo(() => montar(selecionado), [selecionado, plano, feitasPorDia, chaveHoje, folgas.join(',')]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const resumo = grade.reduce((r, c) => {
     if (!c) return r
-    if (c.passado) r.feitas += c.feitas; else r.previstas += c.dia?.ids.length ?? 0
+    r.feitas += c.feitas; if (!c.passado) r.previstas += c.dia?.ids.length ?? 0
     return r
   }, { feitas: 0, previstas: 0 })
   const areasMes = new Map<string, string>()
   for (const c of grade) for (const a of c?.areas ?? []) areasMes.set(a.slug, a.nome)
 
   function irMes(delta: number) {
+    if (visao === 'semana') { const novo = somarDias(semana, delta * 7); if (mesDaChave(novo) < mesMinimo || mesDaChave(novo) > mesLimite) return; definirSemana(novo); definirMes(mesDaChave(novo)); definirSelecionado(novo); return }
     const novo = somarMeses(mes, delta)
     if (novo < mesMinimo || novo > mesLimite) return
     definirDirecao(delta > 0 ? 'frente' : 'tras'); definirMes(novo)
@@ -129,24 +135,24 @@ export function CalendarioRevisao({ indice, registros, plano, folgas, hoje, rotu
         <header className="cc-topo">
           <div className="cc-topo__titulo">
             <p className="cc-topo__selo"><Icone nome="calendario" tamanho={14} /> Calendário da revisão{rotuloArea ? ` · só ${rotuloArea}` : ''}</p>
-            <h2 id="ccr-titulo" aria-live="polite">{nomeMes(mes)} <span className="cc-de">de </span>{mes.slice(0, 4)}</h2>
+            <h2 id="ccr-titulo" aria-live="polite">{visao === 'semana' ? <>Semana de {Number(semana.slice(8))}/{semana.slice(5,7)}</> : <>{nomeMes(mes)} <span className="cc-de">de </span>{mes.slice(0, 4)}</>}</h2>
             <p className="cc-topo__resumo">
               {resumo.feitas > 0 && <span><b className="numerico">{resumo.feitas.toLocaleString('pt-BR')}</b> feitas</span>}
               {resumo.previstas > 0 && <span><b className="numerico">{resumo.previstas.toLocaleString('pt-BR')}</b> previstas</span>}
               {!resumo.feitas && !resumo.previstas && <span>Nada neste mês</span>}
             </p>
           </div>
-          <div className="cc-nav">
-            <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={mes <= mesMinimo} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={18} /></button>
-            <button type="button" className="cc-nav__hoje" onClick={() => { definirDirecao(null); definirMes(mesDaChave(chaveHoje)); definirSelecionado(chaveHoje) }}>Hoje</button>
-            <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={mes >= mesLimite} aria-label="Próximo mês"><Icone nome="direita" tamanho={18} /></button>
+          <div className="cc-nav"><div className="seletor" role="group" aria-label="Visão do calendário"><button type="button" aria-pressed={visao==='semana'} onClick={()=>definirVisao('semana')}>Semana</button><button type="button" aria-pressed={visao==='mes'} onClick={()=>definirVisao('mes')}>Mês</button></div>
+            <button type="button" className="cc-nav__botao" onClick={() => irMes(-1)} disabled={mes <= mesMinimo} aria-label={visao==='semana'?'Semana anterior':'Mês anterior'}><Icone nome="esquerda" tamanho={18} /></button>
+            <button type="button" className="cc-nav__hoje" onClick={() => { definirDirecao(null); definirMes(mesDaChave(chaveHoje)); definirSelecionado(chaveHoje); definirSemana(somarDias(chaveHoje, -((diaDaSemana(chaveHoje)+6)%7))) }}>Hoje</button>
+            <button type="button" className="cc-nav__botao" onClick={() => irMes(1)} disabled={mes >= mesLimite} aria-label={visao==='semana'?'Próxima semana':'Próximo mês'}><Icone nome="direita" tamanho={18} /></button>
           </div>
         </header>
         <div className="cc-corpo">
           <div className="cc-mes">
             <ol className="cc-semana" aria-hidden="true">{SEMANA.map((s) => <li key={s}>{s}</li>)}</ol>
-            <ol key={mes} className={'cc-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Revisões de ${nomeMes(mes)}`}>
-              {grade.map((c, i) => c ? <CelulaRevisao key={c.k} c={c} minimo={somarDias(chaveHoje, -90)} selecionado={c.k === selecionado} aoEscolher={escolher} /> : <li key={`v${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />)}
+            <ol key={visao+semana+mes} className={'cc-grade' + (direcao ? ` cc-grade--${direcao}` : '')} aria-label={`Revisões de ${nomeMes(mes)}`}>
+              {grade.map((c, i) => c ? <CelulaRevisao key={c.k} c={c} minimo={somarDias(chaveHoje, -182)} selecionado={c.k === selecionado} aoEscolher={escolher} /> : <li key={`v${i}`} className="cc-dia cc-dia--vazio" aria-hidden="true" />)}
             </ol>
             <ul className="cp-legenda cc-legenda" aria-label="Legenda">
               {[...areasMes].map(([slug, nome]) => <li key={slug}><i style={{ background: corDaArea(slug) }} />{nome}</li>)}
@@ -180,7 +186,7 @@ function DetalheRevisao({ ancora, c, hoje, aoRevisar }: {
   return (
     <section ref={ancora} className={`cc-detalhe cc-detalhe--${c.ehHoje ? 'hoje' : c.passado ? 'passado' : 'futuro'}`} aria-live="polite" aria-labelledby="ccr-detalhe-titulo" style={{ ['--cor-area' as string]: principal ? corDaArea(principal.slug) : undefined }}>
       <p className="cc-detalhe__data">{FORMATO_DIA.format(inicioDaChave(c.k))}{c.ehHoje && <span className="cc-detalhe__agora">hoje</span>}</p>
-      <h3 id="ccr-detalhe-titulo">{titulo}</h3>
+      <h3 id="ccr-detalhe-titulo">{titulo}</h3>{c.ehHoje && c.feitas > 0 && <p className="cc-detalhe__sub"><strong>{c.feitas} respostas em revisão já feitas hoje.</strong> {n} questões ainda reservadas.</p>}
       {sub && <p className="cc-detalhe__sub">{sub}</p>}
       {c.areas.length > 0 && <ul className="cc-detalhe__lista">
         {c.areas.map((a) => (
@@ -201,7 +207,7 @@ function CelulaRevisao({ c, minimo, selecionado, aoEscolher }: { c: Celula; mini
   const n = c.passado ? c.feitas : c.dia?.ids.length ?? 0
   const fora = c.k < minimo
   const estado = fora ? 'fora' : c.passado ? (n ? 'feito' : 'vazio') : c.ehHoje ? 'hoje' : !n && c.folga ? 'folga' : 'futuro'
-  const texto = c.passado ? (n ? `${n} feitas` : '') : !n && c.folga ? 'folga' : n ? `${n} rev.` : ''
+  const texto = c.passado ? (n ? `${n} ${n === 1 ? 'feita' : 'feitas'}` : '') : !n && c.folga ? 'folga' : n ? `${n} rev.` : ''
   const descricao = [FORMATO_DIA.format(inicioDaChave(c.k)), c.passado ? (n ? `${questoes(n)} feitas` : 'sem revisões') : n ? `${questoes(n)} previstas` : c.folga ? 'folga' : 'nada previsto', ...c.areas.slice(0, 3).map((a) => `${a.nome} ${a.n}`)].join(', ')
   return (
     <li className={`cc-dia cc-dia--${estado}${selecionado ? ' cc-dia--selecionado' : ''}${c.ehHoje ? ' cc-dia--atual' : ''}`}>

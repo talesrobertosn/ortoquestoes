@@ -6,6 +6,7 @@ import { usarFavoritos } from './sessao'
 import { usarRitmoRevisao } from './preferencias'
 import { idsRevisaoHoje } from './planoRevisao'
 import { usarPremium } from '../conta/premium'
+import { usarIndice } from '../dados/usarIndice'
 import { carregarTurmaAcervo } from '../dados/turma'
 
 /**
@@ -41,12 +42,18 @@ export function usarContextoLocal(busca: string, comTurma = false) {
     }
   }, [precisa, textos])
 
+  const { indice } = usarIndice()
+  const registrosDisponiveis = useMemo(() => {
+    if (!indice) return respondidas
+    const ids = new Set(indice.questoes.filter(q => !q.an && !q.dup).map(q => q.id))
+    return Object.fromEntries(Object.entries(respondidas).filter(([id]) => ids.has(id)))
+  }, [indice, respondidas])
   const { ritmo } = usarRitmoRevisao()
-  const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
+  const chaveRitmo = JSON.stringify(ritmo)
   const revisaoHoje = useMemo(
-    () => idsRevisaoHoje(respondidas, ritmo),
+    () => idsRevisaoHoje(registrosDisponiveis, ritmo),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [respondidas, chaveRitmo],
+    [registrosDisponiveis, chaveRitmo],
   )
   const contexto: ContextoLocal = useMemo(
     () => ({ respondidas, favoritos, textos, revisaoHoje, turma }),

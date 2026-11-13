@@ -1,3 +1,4 @@
+import { ResultadoRevisao } from '../componentes/revisao/ResultadoRevisao'
 import { letraExibida } from '../dados/ordemAlternativas'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
@@ -312,6 +313,7 @@ export function Resumo() {
 
   return (
     <article className="empilha-2 rs">
+      {!emAndamento && sessao.revisao && <ResultadoRevisao sessao={sessao} registros={marcadas} />}
       <section className="rs-heroi">
         {mostrarBatalha && <span className="rs-tochas" aria-hidden="true"><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /></span>}
         {mostrarBatalha && <span className="espera-pixel__guerreiro rs-guerreiro" aria-hidden="true" style={{ backgroundImage: `url(${recurso('ranking/guerreiro.png')})` }} />}
