@@ -41,7 +41,7 @@ alerta: No ENARE R4 2025 (ombro-cotovelo-0539), o gabarito oficial foi a alterna
 
 O **complexo colateral lateral** tem três componentes: o **colateral radial**, o **ligamento anular** e o **colateral ulnar lateral**. Juntos, são o principal estabilizador contra o **varo** e contra a **rotação posterolateral**. O anular abraça a cabeça do rádio e se prende nas bordas anterior e posterior da incisura radial da ulna; o colateral radial nasce no epicôndilo lateral e se mistura ao anular; o **colateral ulnar lateral** passa por trás do colateral radial e se insere na **crista do supinador** da ulna, logo abaixo do anular. É ele que falha na instabilidade posterolateral.
 
-!questoes central=ombro-cotovelo-0451,ombro-cotovelo-0064,ombro-cotovelo-0249 relacionadas=ombro-cotovelo-0498
+!questoes central=ombro-cotovelo-0451,ombro-cotovelo-0064,ombro-cotovelo-0249 relacionadas=ombro-cotovelo-0498 treino=ombro-cotovelo-0669
 conceito: O colateral ulnar lateral vai do epicôndilo lateral à crista do supinador e é a banda que falha na instabilidade rotatória posterolateral.
 como: As três questões mostram imagem da face lateral: duas pedem o nome da estrutura apontada (o colateral ulnar lateral), a outra pede qual banda insuficiente explica a subluxação posterolateral da figura.
 armadilha: Colateral radial: está no mesmo complexo, mas não chega à ulna e não segura a rotação.
@@ -53,7 +53,7 @@ O **colateral medial** tem um feixe **anterior** e um **posterior**. O **anterio
 
 O capítulo faz uma ressalva que ajuda a entender a clínica: o medial só é o ligamento mais importante para quem carrega o cotovelo em valgo o tempo todo, como o **arremessador**. Nas atividades do dia a dia, o cotovelo sofre mais **varo** do que valgo; por isso a instabilidade residual depois de uma luxação costuma vir do **lado lateral** mal cicatrizado.
 
-!questoes central=ombro-cotovelo-0025,ombro-cotovelo-0032,ombro-cotovelo-0257,ombro-cotovelo-0121 treino=trauma-1409,ombro-cotovelo-0651
+!questoes central=ombro-cotovelo-0025,ombro-cotovelo-0032,ombro-cotovelo-0257,ombro-cotovelo-0121 treino=trauma-1409,ombro-cotovelo-0651,ombro-cotovelo-0670
 conceito: O feixe anterior do colateral medial vai do epicôndilo medial ao tubérculo sublime e é o principal restritor do valgo.
 como: Caiu como pergunta direta (valgo a 90°), como anatomia (o que se insere no tubérculo sublime) e como figura com números da face medial, pedindo o feixe mais importante.
 armadilha: Cabeça do rádio: segura o valgo, mas como estabilizadora secundária; ganha importância quando o medial está roto.
@@ -411,7 +411,7 @@ A sutura da cápsula anterior também é feita pela via lateral. O Green (7ª ed
 
 > Na prova: **coronoide, cabeça do rádio, colateral lateral e, se precisar, colateral medial.** E um cotovelo **rígido e estável** é preferível a um frouxo e incongruente.
 
-!questoes central=trauma-0205,trauma-0318,trauma-1295 relacionadas=trauma-0684,ombro-cotovelo-0246 treino=trauma-1422,trauma-1424,trauma-1425,ombro-cotovelo-0649
+!questoes central=trauma-0205,trauma-0318,trauma-1295 relacionadas=trauma-0684,ombro-cotovelo-0246 treino=trauma-1422,trauma-1424,trauma-1425,ombro-cotovelo-0649,ombro-cotovelo-0660
 conceito: Na tríade terrível, repara-se o coronoide, depois a cabeça do rádio, depois o colateral lateral (em geral avulsionado da origem) e só então, se houver instabilidade, o medial.
 como: O TEOT 2022 pediu a ordem num caso com Mason 3 e Regan-Morrey 2; o TEOT 2023, o tipo de lesão do colateral lateral (avulsão na origem); o SBOT-SP, o que fazer depois de coronoide e cabeça (lateral, e medial se persistir).
 armadilha: Medial antes do lateral: o lateral é o que mais rompe e é reparado primeiro.
@@ -474,7 +474,7 @@ O olécrano fratura por **trauma direto**; as fraturas-luxações vêm de queda 
 
 Cada tipo é subdividido em **A, sem cominuição**, e **B, com cominuição**. O tipo I costuma ser tratado sem cirurgia; II e III, com cirurgia. As **cominutivas (B) vão melhor com placa**; as sem cominuição (A) aceitam banda de tensão.
 
-!questoes central=trauma-0862,trauma-0759,trauma-0879 relacionadas=trauma-0450
+!questoes central=trauma-0862,trauma-0759,trauma-0879 relacionadas=trauma-0450 treino=ombro-cotovelo-0665
 conceito: A classificação de Mayo do olécrano usa desvio, estabilidade umeroulnar e cominuição; o tipo IIB (desviado, estável, cominutivo) se trata com placa.
 como: O TARO 2011 pediu os três critérios; TEOT 2025 e TARO 2010 pediram o tratamento do 2B, com a banda de tensão como armadilha.
 armadilha: Banda de tensão no 2B: a banda precisa de traço simples para comprimir; com cominuição, ela encurta e desaba a incisura.
@@ -537,7 +537,7 @@ Na cirurgia (IIA e IID), o roteiro do capítulo é: **cabeça do rádio** (fixar
 
 O capítulo 41 do mesmo Rockwood fecha a ideia: a causa **mais comum** da cabeça do rádio que continua subluxada depois da fixação é a **má redução da ulna**. Só quando a ulna está anatômica é que se procura partes moles interpostas (ligamento anular, colateral lateral, cápsula, bíceps ou braquial) e se as retira para reduzir a cabeça.
 
-!questoes central=trauma-1094,trauma-0696,trauma-0761,ombro-cotovelo-0325 relacionadas=trauma-0804,trauma-0964,trauma-0089 treino=trauma-1430,trauma-1433,trauma-1434
+!questoes central=trauma-1094,trauma-0696,trauma-0761,ombro-cotovelo-0325 relacionadas=trauma-0804,trauma-0964,trauma-0089 treino=trauma-1430,trauma-1433,trauma-1434,ombro-cotovelo-0679
 conceito: A Monteggia que o capítulo trata é a posterior (Bado II), a que as provas apontam como a do adulto; Jupiter a subdivide pelo nível da fratura, e a cabeça do rádio só fica no lugar com a ulna anatômica.
 como: O TARO cobra que o tipo II é o do adulto (2013, 2025) e que a subluxação da cabeça depois da cirurgia vem da ulna mal reduzida (2012); o TEOT 2025 pediu a subdivisão de Jupiter na junção metáfise-diáfise.
 alerta: No TECOC (trauma-0964), o gabarito oficial foi que a primeira lesão a abordar na Monteggia é a fratura da ulna. Na Monteggia posterior que entra na articulação (Jupiter IIA e IID), o Rockwood começa pela cabeça do rádio, com a ulna só reduzida provisoriamente para medir a prótese, e fixa a ulna em seguida. Os dois concordam no princípio: a ulna anatômica é o que mantém a cabeça do rádio no lugar.
