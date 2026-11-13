@@ -109,8 +109,8 @@ export const CENARIOS: readonly Cenario[] = [
     epoca: { de: [11, 10], ate: [1, 6] },
     fogo: [298, 146], mascote: { x: 333, y: 100, w: 46, h: 67 },
     repertorio: ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'],
-    gato: [{ x: 380, y: 151, pose: 'repouso' }, { x: 361, y: 169, pose: 'sentado' }, { x: 426, y: 169, pose: 'observando' }],
-    coruja: [{ x: 310, y: 77 }, { x: 239, y: 124 }, { x: 342, y: 77 }],
+    gato: [{ x: 378, y: 149, pose: 'repouso' }, { x: 361, y: 169, pose: 'sentado' }, { x: 426, y: 169, pose: 'observando' }],
+    coruja: [{ x: 372, y: 78 }, { x: 244, y: 124 }, { x: 342, y: 77 }],
   },
 ]
 

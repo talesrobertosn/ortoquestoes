@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "public/pixel/inicio"
 W, H = 480, 200
 FIRE = (298, 146)
+TREE_LIGHTS=[]
 PALETTES = {
     "manha": {"wall": (56, 45, 39), "floor": (98, 75, 56), "sky": (125, 171, 205), "warm": (247, 169, 91), "blue": (137, 187, 222), "fire": .75, "day": 1.00},
     "tarde": {"wall": (56, 41, 39), "floor": (104, 67, 50), "sky": (185, 119, 151), "warm": (255, 165, 98), "blue": (179, 126, 167), "fire": 1.0, "day": .77},
@@ -30,6 +31,11 @@ def h(*values: int) -> float:
     n = 2166136261
     for value in values:
         n = (n ^ int(value)) * 16777619 & 0xffffffff
+    n ^= n >> 16
+    n = n * 0x7feb352d & 0xffffffff
+    n ^= n >> 15
+    n = n * 0x846ca68b & 0xffffffff
+    n ^= n >> 16
     return n / 0xffffffff
 
 
@@ -63,8 +69,8 @@ def wall_and_floor(img, p):
     rect(d, (0, 0, W, 126), wall)
     # Tábuas da parede, com veios e juntas de 1 px.
     for row, y in enumerate(range(1, 126, 8)):
-        for col, x in enumerate(range(-13 if row%2 else 0, 490, 40)):
-            board(d, x, y, x+39, y+7, wall, 100+row*37+col)
+        for col, x in enumerate(range(-33 if row%2 else 0, 490, 75)):
+            board(d, x, y, x+74, y+7, wall, 100+row*37+col)
     # Painel escuro na área de leitura.
     rect(d, (0, 112, 479, 130), (18, 17, 22))
     for y in (114, 117, 128):
@@ -430,6 +436,290 @@ def foreground(img):
             d.ellipse((x-radius,y-radius,x+radius,y+radius),fill=(12,33,29) if cx<0 else (17,41,30))
 
 
+def fine_details(img):
+    """Acabamento material, pequenos objetos e pontos de apoio do palco."""
+    d=ImageDraw.Draw(img)
+    # Veios longitudinais e lascas do carvalho: grupos de pixels, não ruído solto.
+    for k in range(510):
+        x=int(h(k,102)*W); y=int(h(k,103)*126)
+        if 183<x<357: continue
+        length=2+int(h(k,104)*9)
+        col=img.getpixel((x,y))
+        line(d,(x,y,min(479,x+length),y),shade(col,.71 if k%3 else 1.23))
+        if k%7==0 and y<110:
+            line(d,(x+2,y+1,min(479,x+length-1),y+1),shade(col,1.12))
+    # Relevo de pedra: fissuras curtas, granulação e pequenas lascas no corpo.
+    for k in range(850):
+        x=264+int(h(k,120)*90); y=int(h(k,121)*151)
+        if (y>87 and 272<x<328) or 66<y<94: continue
+        col=img.getpixel((x,y))
+        if max(col)<42: continue
+        d.point((x,y),fill=shade(col,.68 if k%3 else 1.18))
+        if k%13==0:
+            line(d,(x,y,x+2,y+1),shade(col,.58))
+    # Tijolos refratários escurecidos no alto, laterais do nicho em perspectiva.
+    d.polygon([(276,114),(281,118),(281,142),(276,149)],fill=(51,29,25))
+    d.polygon([(321,114),(316,118),(316,142),(321,149)],fill=(66,32,23))
+    for yy in range(118,145,5):
+        line(d,(276,yy,281,yy+2),(112,58,35))
+        line(d,(316,yy+2,321,yy),(128,64,34))
+    for y in range(98,116):
+        for x in range(282,316):
+            if ((x-299)/21)**2+((y-117)/20)**2<1:
+                c=img.getpixel((x,y)); d.point((x,y),fill=shade(c,.48+.4*(y-98)/18))
+    # Toras cruzadas dentro do nicho. Contorno carbonizado e casca em escamas.
+    for x0,y0,x1,y1 in ((281,146,313,142),(285,141,316,147)):
+        line(d,(x0,y0,x1,y1),(21,16,18),5)
+        line(d,(x0,y0-1,x1,y1-1),(89,46,28),3)
+        line(d,(x0+2,y0-1,x1-2,y1-1),(147,64,29))
+    for k in range(90):
+        x=280+int(h(k,139)*39); y=141+int(h(k,140)*9)
+        col=((68,28,22),(192,58,24),(244,127,35),(255,211,105))[int(h(k,141)*4)]
+        d.point((x,y),fill=col)
+    # O tapete tem borda tecida e desenho simétrico na perspectiva do chão.
+    mask=Image.new('1',(W,H)); md=ImageDraw.Draw(mask)
+    md.polygon([(319,174),(382,174),(406,195),(298,195)],fill=1)
+    for y in range(174,196):
+        width=63+(y-174)*2.1
+        left=350-width/2
+        for x in range(max(0,int(left)),min(W,int(left+width)+1)):
+            if not mask.getpixel((x,y)):continue
+            u=(x-350)/(width/2); v=(y-184.5)/10.5
+            diamond=abs(u)*.85+abs(v)*.75
+            if .52<diamond<.62 or .80<diamond<.88:
+                d.point((x,y),fill=(182,139,74) if (x+y)%3 else (111,66,44))
+            elif abs(math.sin(u*19)*math.cos(v*9))>.81:
+                d.point((x,y),fill=(143,75,49))
+            elif (x+y)%4==0:
+                c=img.getpixel((x,y)); d.point((x,y),fill=shade(c,1.22))
+    for x in range(292,414,2):
+        line(d,(x,198,x-1,199),(157,115,68))
+    # Cachepô: aduelas, aros metálicos e folhagem cobrindo a borda.
+    for x in range(426,445,3):
+        line(d,(x,169,x,175),(49,30,24))
+        line(d,(x+1,169,x+1,174),(151,100,52))
+    for y in (169,174):line(d,(426,y,444,y),(80,81,69))
+    # Poleiro dedicado: prateleira firme com mão-francesa, livre de adornos.
+    board(d,360,78,383,81,(112,75,43),150)
+    for x in (363,379):
+        line(d,(x,82,x,87),(77,52,34))
+        line(d,(x,87,x+4,82),(125,84,47))
+    # Livros de leitura e caixinha de chá ao pé da janela, fora do caminho.
+    for i,(x,y,w,c) in enumerate(((205,130,18,(83,56,41)),(207,128,16,(52,83,64)),(204,126,19,(120,46,40)))):
+        rect(d,(x,y,x+w,y+2),(25,23,25))
+        rect(d,(x+1,y,x+w-1,y+1),c)
+        line(d,(x+3,y+1,x+w-2,y+1),(194,171,120))
+    # Cobre com halo de metal, arco da alça, bico e reflexo recortado.
+    d.arc((322,57,337,72),185,355,fill=(227,159,76),width=2)
+    d.polygon([(325,66),(321,61),(320,61),(322,70),(326,72)],fill=(154,83,36))
+    line(d,(326,68,326,73),(246,184,96))
+    d.point((328,66),fill=(255,222,150))
+    # Laços em tecido e folhagem irregular no consolo.
+    for x in range(260,353):
+        y=70+int(2*math.sin((x-260)/93*math.pi))
+        for dy in (0,1,2):
+            if h(x,dy,169)>.25:
+                d.point((x,y+dy),fill=((23,58,34),(49,94,44),(84,124,60))[int(h(x,dy,170)*3)])
+    # Poeira de neve só do outro lado do vidro; gelo se prende às quinas.
+    for k in range(45):
+        x=201+int(h(k,180)*59); y=38+int(h(k,181)*80)
+        if x not in range(239,244) and y not in range(75,79):
+            d.point((x,y),fill=(142,174,193))
+    # Relógio de nogueira e latão, com caixa espessa e doze marcas de um pixel.
+    d.ellipse((294,37,313,57),fill=(24,21,24),outline=(133,86,45))
+    d.ellipse((296,39,311,55),fill=(177,135,77),outline=(69,43,30))
+    d.ellipse((298,41,309,53),fill=(197,176,130))
+    for k in range(12):
+        a=k*math.pi/6
+        d.point((round(303.5+math.sin(a)*5),round(47-math.cos(a)*5)),fill=(62,44,32))
+    line(d,(303,47,302,43),(42,36,32))
+    line(d,(303,47,307,48),(42,36,32))
+    d.point((303,47),fill=(221,171,86))
+    # Pequena estante: livros encadernados, lombadas e papel enrolado.
+    board(d,364,45,398,48,(100,65,37),213)
+    for i,x in enumerate(range(366,394,4)):
+        ht=9+int(h(i,200)*6)
+        col=((126,57,45),(48,82,62),(87,62,49),(107,85,49))[i%4]
+        rect(d,(x,44-ht,x+2,44),col)
+        line(d,(x,45-ht,x,43),shade(col,1.45))
+        for y in (46-ht,42):line(d,(x,y,x+2,y),(174,134,70))
+    # Meias em malha: nervuras, dobra do punho e padrões bordados.
+    for x in (337,345):
+        for yy in range(91,101,2):
+            d.point((x-1,yy),fill=(185,119,75))
+            d.point((x+1,yy+1),fill=(98,47,36))
+        for dx,dy in ((0,0),(-1,1),(1,1),(0,2)):
+            d.point((x+dx,94+dy),fill=(224,204,151))
+    # Esteio de primeiro plano e ferragens de junção, com veio vertical.
+    for x in range(473,480):
+        for y in range(27,200):
+            tone=(.58,.74,.91,1.12,.81,.62,.45)[x-473]
+            col=shade((81,51,33),tone*(.85+.2*h(x,y//6,207)))
+            d.point((x,y),fill=col)
+    for y in (35,117,179):
+        rect(d,(473,y,479,y+3),(31,32,33))
+        line(d,(473,y,479,y),(91,88,72))
+        for x in (474,478):d.point((x,y+1),fill=(151,128,82))
+    # Entalhe contínuo em losangos na frente do consolo e cravos de bronze.
+    for x in range(262,350,6):
+        line(d,[(x,80),(x+2,78),(x+4,80),(x+2,82),(x,80)],(83,43,26))
+        d.point((x+2,79),fill=(185,126,67))
+    for x in (260,350):
+        for y in (79,82):d.point((x,y),fill=(213,171,98))
+    # Cordão trançado da cortina, borla e bainha bordada.
+    for y in range(96,117):
+        x=195+(y-96)//10
+        d.point((x,y),fill=(179,122,61) if y%2 else (107,64,38))
+    for x in range(194,200):
+        line(d,(197,114,x,120),(157,96,46))
+    for y in range(42,91,6):
+        d.point((195,y),fill=(124,143,84))
+        d.point((196,y+1),fill=(79,110,65))
+    # Trançado do vime, com as fibras passando alternadamente por cima.
+    for y in range(164,171):
+        for x in range(383,403):
+            if ((x//2)+(y//2))%2==0:
+                d.point((x,y),fill=(173,111,58) if y%2 else (113,67,36))
+    # Pinha e nozes junto à tina: cada escama recebe uma quina de luz.
+    for cx,cy in ((414,177),(451,185)):
+        d.ellipse((cx-2,cy-3,cx+2,cy+2),fill=(45,29,24))
+        for dy in range(-2,3):
+            for dx in range(-1,2):
+                if (dx+dy)%2==0:d.point((cx+dx,cy+dy),fill=(163,105,52))
+    # Papel dobrado, etiqueta sem texto e pequenas estampas nos presentes.
+    for x,y in ((405,167),(462,174),(421,183),(450,167)):
+        line(d,(x,y,x+5,y+4),(76,43,34))
+        rect(d,(x+3,y+1,x+5,y+3),(219,193,139))
+        d.point((x+4,y+1),fill=(109,76,47))
+    # Pinças de ferro e pá ao lado do fogo, com rebites e reflexos.
+    for x in (362,365):
+        line(d,(x,130,x+2,149),(28,28,31),2)
+        line(d,(x,130,x+2,148),(160,116,68))
+        d.ellipse((x-1,127,x+1,130),outline=(181,134,77))
+    d.polygon([(365,147),(370,147),(370,152),(366,153)],fill=(62,61,58))
+    line(d,(366,148,369,148),(193,141,80))
+
+
+def room_life(img):
+    """Objetos de uso, construídos em planos, com acabamento na grade nativa."""
+    d=ImageDraw.Draw(img)
+    # Mesa baixa de chá sob a janela, com pés torneados e tampo octogonal.
+    d.ellipse((193,162,230,168),fill=(24,21,24))
+    for x in (198,223):
+        line(d,(x,148,x-1 if x<210 else x+1,163),(45,29,24),3)
+        for y in (151,156,161):
+            rect(d,(x-1,y,x+1,y+1),(132,87,47))
+        line(d,(x,149,x,162),(174,116,59))
+    d.polygon([(195,143),(201,140),(222,140),(229,144),(229,148),(223,151),(199,151),(194,148)],fill=(43,26,22))
+    d.polygon([(195,143),(202,140),(222,140),(228,144),(223,147),(200,147)],fill=(131,83,43))
+    line(d,(198,147,223,147),(197,136,73))
+    for y in (142,144,146):line(d,(201,y,222,y),(91,53,30))
+    # Toalhinha rendada e bandeja de latão.
+    d.ellipse((200,141,224,147),fill=(190,159,108),outline=(228,203,147))
+    for x in range(201,224,2):d.point((x,147),fill=(230,199,138))
+    d.ellipse((203,141,220,145),fill=(114,78,39),outline=(218,170,82))
+    # Bule de cerâmica verde: barriga, tampa, bico, alça e esmalte.
+    d.ellipse((206,134,215,143),fill=(34,75,62),outline=(20,35,32))
+    d.arc((213,134,220,141),265,100,fill=(127,151,107),width=1)
+    d.polygon([(207,138),(202,134),(203,139),(207,141)],fill=(67,113,86))
+    rect(d,(208,133,213,134),(148,162,109))
+    d.point((211,132),fill=(211,183,115))
+    line(d,(208,136,208,140),(161,187,137))
+    # Xícara e biscoitos, com borda de porcelana e miolo de chocolate.
+    d.ellipse((218,142,225,145),fill=(217,188,129))
+    rect(d,(219,138,222,142),(230,211,163))
+    line(d,(219,138,222,138),(108,64,37))
+    d.arc((222,138,225,141),260,100,fill=(214,179,119))
+    for x,y in ((202,143),(205,144),(217,144)):
+        d.point((x,y),fill=(210,149,70)); d.point((x+1,y),fill=(106,61,32))
+    # Um livro aberto apoiado na travessa debaixo da mesa.
+    d.polygon([(202,155),(210,156),(218,154),(218,158),(210,160),(202,158)],fill=(157,112,61))
+    d.polygon([(203,154),(210,155),(217,153),(217,157),(210,159),(203,157)],fill=(212,189,135))
+    line(d,(210,155,210,159),(91,64,40))
+    for x in (204,213):line(d,(x,156,x+3,156),(153,130,88))
+    # Cesto de tricô no primeiro plano, sem ocupar o tapete do esqueleto.
+    d.ellipse((251,180,277,191),fill=(37,26,23),outline=(123,79,43))
+    for y in range(183,191):
+        for x in range(253,276):
+            if ((x//2)+(y//2))%2==0:
+                d.point((x,y),fill=(160,105,55) if y%2 else (98,61,34))
+    d.ellipse((252,179,276,185),fill=(50,31,25),outline=(197,137,72))
+    for x,y,c in ((258,181,(153,47,48)),(266,181,(57,105,76)),(271,183,(194,153,89))):
+        d.ellipse((x-3,y-3,x+3,y+2),fill=c,outline=shade(c,.60))
+        for off in (-1,1):d.arc((x-2+off,y-2,x+2+off,y+2),50,250,fill=shade(c,1.45))
+    for x in (267,270):
+        line(d,(x,183,x+5,171),(180,151,99))
+        d.point((x+5,171),fill=(240,216,157))
+    line(d,[(256,184),(251,188),(248,189),(246,187),(248,185)],(165,63,56))
+    # Cachecol em progresso, franjas individuais e padrão xadrez.
+    for y in range(184,194):
+        for x in range(267,274):
+            d.point((x,y),fill=(151,49,45) if ((x//2+y//3)%2) else (85,31,32))
+    for x in range(267,274,2):line(d,(x,193,x,195),(193,107,71))
+    # Guirlanda artesanal na parede, à direita do poleiro.
+    for k in range(48):
+        a=k*math.tau/48
+        x=393+round(math.cos(a)*8); y=91+round(math.sin(a)*10)
+        d.ellipse((x-1,y-1,x+1,y+1),fill=((32,70,41),(61,99,49),(89,120,60))[k%3])
+        if k%7==0:d.point((x,y),fill=(189,54,43))
+    for dx in (-1,1):
+        d.polygon([(393,101),(393+dx*6,99),(393+dx*4,104)],fill=(169,48,42))
+        line(d,(393,103,393+dx*3,109),(125,35,34))
+    d.point((393,102),fill=(241,142,83))
+    # Pequeno trenó de madeira com manta dobrada ao pé da árvore.
+    for y in (191,195):line(d,(434,y,465,y),(156,104,58))
+    for x in (438,460):line(d,(x,186,x,195),(87,53,32),2)
+    for x in range(435,463,4):board(d,x,185,x+2,190,(113,71,38),x)
+    for y in range(181,187):
+        for x in range(442,458):
+            d.point((x,y),fill=(140,47,43) if ((x//3+y//2)%2) else (73,33,33))
+    line(d,(442,181,457,181),(207,142,89))
+    # Pacote de cartas fechado com barbante; nenhum texto rasterizado.
+    d.polygon([(282,175),(291,174),(294,179),(284,181)],fill=(169,130,78))
+    d.polygon([(283,174),(290,173),(293,177),(285,179)],fill=(216,190,134))
+    line(d,(286,174,289,179),(103,67,37))
+    line(d,(283,177,292,175),(115,75,41))
+    d.point((288,176),fill=(164,49,37))
+
+
+def preview_complete(image, mascots=False, frame=2):
+    """Montagem local para avaliação; a pintura de produção preserva camadas separadas."""
+    out=image.convert('RGBA')
+    fire=Image.open(OUT/'fogo.png').convert('RGBA').crop((frame*40,144,(frame+1)*40,192)).resize((120,144),Image.Resampling.NEAREST)
+    out.alpha_composite(fire,(278*3,104*3))
+    sword=Image.open(OUT/'espada.png').convert('RGBA').resize((36,120),Image.Resampling.NEAREST)
+    out.alpha_composite(sword,(292*3,109*3))
+    if mascots:
+        shadow=Image.new('RGBA',out.size)
+        sd=ImageDraw.Draw(shadow)
+        sd.ellipse((332*3,161*3,379*3,170*3),fill=(7,9,16,145))
+        shadow=shadow.filter(ImageFilter.GaussianBlur(3))
+        out.alpha_composite(shadow)
+        sheet=Image.open(ROOT/'public/pixel/mascote/esqueleto-poses4.png').convert('RGBA')
+        sw,sh=sheet.size; frame=sheet.crop((0,0,sw//8,sh//5)).resize((138,201),Image.Resampling.NEAREST)
+        out.alpha_composite(frame,(333*3,100*3))
+        cat=Image.open(ROOT/'public/pixel/mascote/gato-fofo.png').convert('RGBA').crop((0,0,64,48)).resize((96,72),Image.Resampling.NEAREST)
+        out.alpha_composite(cat,(378*3,145*3))
+        owl=Image.open(ROOT/'public/pixel/mascote/coruja-nova.png').convert('RGBA').crop((0,0,44,32)).resize((99,72),Image.Resampling.NEAREST)
+        out.alpha_composite(owl,(356*3,54*3))
+    return out.convert('RGB')
+
+
+def tree_refined(img):
+    # O mesmo pincel de agulhas usado na Praça do Pinheiro, com escala e chão
+    # ajustados ao interior; mantém a família visual dos cenários do site.
+    import inicio_praca as praca
+    praca.PINHEIRO=(435,169)
+    layer,emission=praca.Camada(),praca.Camada()
+    global TREE_LIGHTS
+    TREE_LIGHTS=praca.pinheiro_praca(layer,emission,{"luzes_k":1.0})
+    rgba=Image.fromarray(np.uint8(np.clip(layer.c,0,1)*255))
+    img.paste(rgba,(0,0),rgba)
+    d=ImageDraw.Draw(img)
+    board(d,425,168,445,176,(107,70,43),321)
+    for y in (169,175):line(d,(425,y,445,y),(114,105,78))
+
+
 def light(img, name, p):
     arr=np.asarray(img,dtype=np.float32)/255
     yy,xx=np.mgrid[0:H,0:W].astype(np.float32)
@@ -452,6 +742,15 @@ def light(img, name, p):
     reflection=np.exp(-((xx-300)/24)**2)*np.clip((yy-155)/50,0,1)*floor*(np.sin(xx*1.1+yy*.3)>.4)
     ambient=({"manha":.74,"tarde":.66,"noite":.53}[name])
     result=arr*(ambient+win[...,None]*blue*.90+fire[...,None]*warm*1.75+beam[...,None]*blue*.65)
+    # Oclusão nas junções e sombras a partir da lareira: árvore, lenheiro,
+    # soleira e cesto projetam silhuetas na direção oposta à fonte quente.
+    contact=np.exp(-((yy-130)/2.5)**2)*.17
+    contact+=np.exp(-(((xx-435)/24)**2+((yy-177)/3.2)**2))*.50
+    contact+=np.exp(-(((xx-391)/16)**2+((yy-170)/2)**2))*.35
+    contact+=np.exp(-(((xx-244)/14)**2+((yy-154)/2)**2))*.32
+    trunk_shadow=(yy>172)&(np.abs(xx-(435+(yy-172)*1.6))<4+(yy-172)*.10)
+    contact+=trunk_shadow*.36
+    result*=np.clip(1-contact,.25,1)[...,None]
     # Luz indireta: as pedras e o piso recebem energia mesmo quando a textura é escura.
     result+=fire[...,None]*warm*.19
     result+=win[...,None]*blue*.045
@@ -464,6 +763,12 @@ def light(img, name, p):
     # As barras da janela cortam o feixe e marcam o chão em azul.
     result+=beam[...,None]*blue*.13
     result+=reflection[...,None]*warm*.25*p["fire"]
+    niche=((xx>=277)&(xx<=321)&(yy>=113)&(yy<=149))|((((xx-299)/21)**2+((yy-117)/19)**2<1)&(yy<117))
+    result*=np.where(niche,.20+.80*np.clip((yy-103)/45,0,1)**1.4,1)[...,None]
+    for tx,ty,cor in TREE_LIGHTS:
+        color=np.array([int(cor[i:i+2],16)/255 for i in (1,3,5)],np.float32)
+        glow=np.exp(-(((xx-tx)/9)**2+((yy-ty)/8)**2)*1.5)
+        result+=glow[...,None]*(arr*.34+.025)*color
     # A área sob o título precisa permanecer calma e escura.
     left=np.clip((xx-105)/120,0,1)
     result*=((.73+.27*left)[...,None])
@@ -488,16 +793,53 @@ def light(img, name, p):
         glow=np.exp(-(((xx-tx)/3)**2+((yy-sy)/3)**2)*2.2)
         emit+=glow[...,None]*warm*.10
     result+=emit
+    # Segundo rebote quente: o piso devolve luz ao rodapé e à mobília.
+    bounce=np.exp(-(((xx-322)/111)**2+((yy-159)/37)**2)*1.6)
+    result+=bounce[...,None]*np.array((1.0,.48,.16))*arr*.43
+    # A lamparina da direita ilumina a madeira e os objetos próximos.
+    lamp=np.exp(-(((xx-367)/23)**2+((yy-108)/32)**2)*1.7)
+    result+=lamp[...,None]*np.array((1.0,.66,.25))*(arr*.8+.045)
+    # Reflexos interrompidos pelo relevo das tábuas, com queda por distância.
+    reflection2=np.exp(-((xx-299)/30)**2)*np.exp(-np.maximum(yy-154,0)/38)*(yy>154)
+    reflection2*=.24+.76*(np.sin(yy*2.3+np.sin(xx*.5))>.55)
+    result+=reflection2[...,None]*np.array((1,.52,.16))*.12*p['fire']
+    # Sombras projetadas por lenheiro e presentes na direção oposta ao fogo.
+    sm=Image.new('L',(W,H)); sd=ImageDraw.Draw(sm)
+    sd.polygon([(233,153),(258,153),(232,166),(210,162)],fill=85)
+    sd.polygon([(401,183),(417,183),(445,197),(423,194)],fill=90)
+    shadow=np.asarray(sm.filter(ImageFilter.GaussianBlur(.65)),dtype=np.float32)/255
+    result*=1-shadow[...,None]
+    for tx,ty,cor in TREE_LIGHTS:
+        ix,iy=int(tx),int(ty)
+        if 0<=ix<W and 0<=iy<H:
+            result[iy,ix]=np.array([int(cor[i:i+2],16)/255 for i in (1,3,5)])
     # Vinheta e grão de um pixel; bloom muito discreto só nas fontes.
     vignette=1-.19*np.clip(((xx-240)/260)**2+((yy-100)/140)**2,0,1)
     result*=vignette[...,None]
     noise=np.random.default_rng(621).normal(0,.008,(H,W,1)).astype(np.float32)
-    result=np.clip(result+noise,0,1)
+    result=result+noise
+    # Compressão suave das altas luzes preserva cerâmica, papel e fios da lã.
+    result=np.where(result>.78,.78+.22*(1-np.exp(-np.maximum(result-.78,0)/.34)),result)
+    result=np.clip(result,0,1)
     native=Image.fromarray(np.uint8(result*255))
     big=native.resize((1440,600),Image.Resampling.NEAREST)
     bloom=big.filter(ImageFilter.GaussianBlur(8))
     # O bloom incide apenas no terço direito e é fraco para não apagar o pixel.
-    mixed=Image.blend(big,bloom,.035)
+    mixed=Image.blend(big,bloom,.025)
+    # Bloom calculado só a partir das fontes; preserva as quinas dos materiais.
+    source=np.zeros((H,W,3),np.float32)
+    for tx,ty,cor in TREE_LIGHTS:
+        ix,iy=int(tx),int(ty)
+        if 0<=ix<W and 0<=iy<H:source[iy,ix]=(1,.68,.24)
+    source[103:113,367]=(1,.62,.20)
+    source[145:150,282:317]=(1,.36,.06)
+    source[69:73,313:316]=(1,.70,.28)
+    src=Image.fromarray(np.uint8(np.clip(source,0,1)*255)).resize((1440,600),Image.Resampling.NEAREST)
+    near=np.asarray(src.filter(ImageFilter.GaussianBlur(4)),dtype=np.float32)/255
+    far=np.asarray(src.filter(ImageFilter.GaussianBlur(23)),dtype=np.float32)/255
+    final=np.asarray(mixed,dtype=np.float32)/255
+    final=1-(1-final)*np.exp(-(near*.42+far*1.7))
+    mixed=Image.fromarray(np.uint8(np.clip(final,0,1)*255))
     return mixed
 
 
@@ -512,8 +854,10 @@ def render(name):
     holiday_wall(img)
     rug(img)
     basket(img)
-    tree(img)
+    tree_refined(img)
     gifts(img)
+    fine_details(img)
+    room_life(img)
     foreground(img)
     return light(img,name,p)
 
@@ -529,7 +873,7 @@ def main():
     (ROOT/"scripts/cenarios/cena-sala-natal.json").write_text(json.dumps({
         "dimensoes":[480,200],"area_texto":[0,0,190,200],"fogo":[298,146],
         "mascote":{"x":333,"y":100,"w":46,"h":67},
-        "gato":[[382,151],[363,170],[427,170]],"coruja":[[315,77],[244,124],[346,77]],
+        "gato":[[378,149],[363,170],[427,170]],"coruja":[[372,78],[244,124],[346,77]],
         "janela":[193,35,289,119],"lareira":[276,97,322,151]
     },ensure_ascii=False,indent=2)+"\n")
 
