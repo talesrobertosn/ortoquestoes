@@ -526,3 +526,18 @@
   .ds-palco__poeira { display: none; }
   .dpg *, .ri__livro, .rt__barra i { transition: none !important; }
 }
+
+/* A pintura é cenário fixo: nunca herda o pulo/zoom global de imagens pixel, nem em hover ou toque. */
+.dpg .ds-palco,
+.dpg .ds-palco__arte,
+.dpg .dp-agora__arte,
+.dpg .dp-agora__arte img,
+.dpg .ds-palco__arte:is(:hover, :active),
+.dpg .dp-agora__arte img:is(:hover, :active) {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  translate: none !important;
+  scale: none !important;
+  rotate: none !important;
+}

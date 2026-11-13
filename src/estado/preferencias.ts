@@ -31,6 +31,8 @@ export function usarRitmoRevisao() {
   const [salvo, definirRitmo] = usarArmazenado<RitmoRevisao>(CHAVE_RITMO, RITMO_PADRAO)
   const ritmo: RitmoRevisao = {
     limite: salvo && (salvo.limite === null || (typeof salvo.limite === 'number' && salvo.limite > 0)) ? salvo.limite : RITMO_PADRAO.limite,
+    ...(salvo?.modo === 'leve' || salvo?.modo === 'regular' ? { modo: salvo.modo } : {}),
+    ...(typeof salvo?.retomadaEm === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(salvo.retomadaEm) ? { retomadaEm: salvo.retomadaEm } : {}),
     folgas: Array.isArray(salvo?.folgas) ? salvo.folgas.filter((d) => Number.isInteger(d) && d >= 0 && d <= 6) : [],
   }
   return { ritmo, definirRitmo }

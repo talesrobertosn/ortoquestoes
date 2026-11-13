@@ -820,6 +820,7 @@ export function Sessao() {
         <Carregando linhas={6} />
       ) : questaoAtual ? (
         <><AvisoLimite estado={estadoLimite} />{sessao.respostas[questaoAtual.id]?.outroAparelho && <p className="conteudo aviso-outro-aparelho" role="note">Você já respondeu esta questão em outro aparelho. Siga para a próxima.</p>}<CartaoQuestao
+          recuperacaoAtiva={sessao.revisao?.recuperacaoAtiva}
           questao={questaoAtual}
           numero={posicao + 1}
           total={total}

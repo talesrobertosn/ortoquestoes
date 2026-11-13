@@ -337,9 +337,14 @@ export interface EstadoSessao {
   /** Simulado Nacional: a lista "para rever" mudou e ainda não subiu. */
   revisarPendente?: boolean
   /** De onde a sessão nasceu, para oferecer a volta no lugar certo (ex.: o cronograma). */
-  origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar' | 'erros'
+  origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar' | 'erros' | 'revisao'
   /** Sessão de um dia do cronograma de TEOT/TARO ("AAAA-MM-DD"): só ela vira o "Continuar" do botão do dia. */
   diaPlano?: string
+  /** Fotografia anterior à sessão, para explicar avanços sem reconstruir tentativas antigas. */
+  revisao?: {
+    recuperacaoAtiva: boolean
+    antes: Record<string, { c: boolean | null; q: number; sequencia: number; proximaRevisao: number | null; confianca: 'seguro' | 'duvida' | 'chute' }>
+  }
 }
 
 /** Quanto falta, em segundos. Negativo quando o tempo acabou. */

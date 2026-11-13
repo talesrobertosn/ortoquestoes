@@ -29,6 +29,7 @@ import { permutarQuestao } from '../dados/provaNacional'
 import { letraExibida, letraGuardada, reordenarComentario } from '../dados/ordemAlternativas'
 import { usarLetrasAcervo } from '../dados/letrasAcervo'
 import '../estilos/paginas/CartaoQuestao.css'
+import './revisao/ResultadoRevisao.css'
 
 interface Props {
   questao: Questao
@@ -84,6 +85,7 @@ interface Props {
    * anotações e histórico da questão (nada que leve ao gabarito ou à questão avulsa).
    */
   modoProva?: boolean
+  recuperacaoAtiva?: boolean
 }
 
 export function CartaoQuestao({ questao: questaoDoAcervo, permutacao, ordemRevisao, resposta, riscadas, aoResponder, aoRiscar, ...resto }: Props) {
@@ -132,6 +134,7 @@ function CartaoQuestaoExibida({
   aoRevisar,
   aoAvancar,
   atalhosAtivos = true,
+  recuperacaoAtiva = false,
   revelarResposta = true,
   chaveTempo = '',
   aoProxima,
@@ -144,6 +147,9 @@ function CartaoQuestaoExibida({
   ordemExibida?: string | null
   avisoOrdem?: { embaralhada: boolean; alternar: () => void } | null
 }) {
+  const [alternativasReveladas, definirAlternativasReveladas] = useState(false)
+  useEffect(() => definirAlternativasReveladas(false), [questao.id])
+  const aguardandoLembrar = recuperacaoAtiva && !alternativasReveladas && !resposta && questao.tipo !== 'dissertativa'
   const inspiracao = inspiracaoDe(questao)
   const [escolhida, definirEscolhida] = useState<Letra | null>(null)
   // Lido uma vez e atualizado por evento: antes eram dois JSON.parse do histórico
@@ -270,7 +276,7 @@ function CartaoQuestaoExibida({
   const comentarioIA = reordenado?.comentario ?? comentarioDoAcervo
 
   useEffect(() => {
-    if (!atalhosAtivos) return
+    if (!atalhosAtivos || aguardandoLembrar) return
     function aoTeclar(evento: KeyboardEvent) {
       const alvo = evento.target as HTMLElement | null
       if (alvo && /^(INPUT|TEXTAREA|SELECT)$/.test(alvo.tagName)) return
@@ -509,7 +515,8 @@ function CartaoQuestaoExibida({
           </p>
         )}
 
-        {!modoLeitura && <ul className={'alternativas' + (respondeuAgora && mostrarGabarito ? ' alternativas--agora' : '')}>
+        {aguardandoLembrar && <div className="qz-recuperacao"><p><strong>Antes das opções, tente lembrar.</strong> Formule uma resposta ou o raciocínio mentalmente. Quando estiver pronto, confira as alternativas.</p><button type="button" className="botao botao--principal" onClick={() => definirAlternativasReveladas(true)}>Mostrar alternativas</button></div>}
+        {!modoLeitura && !aguardandoLembrar && <ul className={'alternativas' + (respondeuAgora && mostrarGabarito ? ' alternativas--agora' : '')}>
           {questao.alternativas.map((alternativa, i) => {
             const letra = alternativa.letra
             const riscada = riscadas.includes(letra)
@@ -609,7 +616,7 @@ function CartaoQuestaoExibida({
               ? `Resposta marcada: ${marcada}. Pode trocar até ${modoProva ? 'entregar a prova' : 'o fim do simulado'}.`
               : modoProva ? 'Marque uma alternativa. O gabarito e o comentário aparecem depois de entregar.' : 'Marque uma alternativa. O gabarito aparece quando o simulado terminar.'}
           </div>
-        ) : !respondida ? (
+        ) : !respondida && aguardandoLembrar ? null : !respondida ? (
           <div className={'linha nao-imprime acao-responder' + (escolhida ? ' acao-responder--pronta' : '')}>
             {/* Sempre à vista, antes de escolher: o botão não pula para baixo no clique e a pessoa vê que pode marcar dúvida ou chute. */}
             <div className="grupo-opcoes confianca" role="group" aria-label="Sua confiança nesta resposta">
