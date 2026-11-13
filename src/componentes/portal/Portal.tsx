@@ -105,6 +105,7 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
     <footer className="pt-chao">
       <a href={href('/termos')} onClick={aoFechar}>Termos de uso</a>
       <a href={href('/condicoes-assinatura')} onClick={aoFechar}>Condições da assinatura</a>
+      <a href={href('/direitos-autorais')} onClick={aoFechar}>Direitos autorais</a>
     </footer>
     <Visitantes digitando={digitando} />
     </>

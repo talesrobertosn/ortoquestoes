@@ -29,6 +29,7 @@ try {
   assert.equal(abre('assunto=exclusao-conta'), 'dados')
   assert.equal(abre('assunto=sincronizacao'), 'acesso')
   assert.equal(abre('questao=mao-0853'), 'questao')
+  assert.equal(abre('assunto=direitos-autorais'), 'direitos')
   assert.equal(abre(''), 'outro')
 
   // Perguntas de um toque: só nos motivos de pagamento, e só as respondidas.

@@ -26,12 +26,14 @@ const ASSINANTE = [
 const PROJETO = [
   ['/sobre', 'O projeto'],
   ['/contato', 'Suporte e contato'],
+  ['/direitos-autorais', 'Direitos autorais'],
   ['/assinatura', 'Planos'],
 ] as const
 /** Links legais: na linha de baixo, junto do ©, onde quem procura costuma olhar. */
 const LEGAL = [
   ['/termos', 'Termos de uso e privacidade'],
   ['/condicoes-assinatura', 'Condições da assinatura'],
+  ['/direitos-autorais', 'Direitos autorais e retirada de conteúdo'],
 ] as const
 
 /** Câmera do Instagram em pixel art (12 x 12), nas cores da temporada; fica num quadro de céu com o sol da manhã. */
