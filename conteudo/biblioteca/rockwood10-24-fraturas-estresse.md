@@ -1,6 +1,6 @@
 ---
 id: rockwood10-24-fraturas-estresse
-versao: 3
+versao: 4
 titulo: Fraturas por estresse
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 24 · Stress Fractures
 autores: Brandon R. Hull, John M. Yingling e David C. Teague
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (stress_fractures.pdf, 12 páginas)
+fonte: Capítulo enviado pelo Tales em 17/10/2026 (stress_fractures.pdf, 12 páginas); complementos conferidos nos livros locais: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 68 (Fig. 68-43; o arquivo não imprime a página); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 93 (p. 4107, 4109, 4120, 4121 e 4124); Skeletal Trauma, 5ª ed., cap. 67 (p. 2357 e 2362); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 2; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 75.
 subtemas: Fraturas por estresse
 resumo: Tensão contra compressão, sítios de alto e baixo risco, KAEDING-MILLER (IV acima de 2 mm), tríade da atleta, cintilografia focal nas três fases, colo do fêmur superior fixa, linha negra da tíbia anterior, navicular sagital central e a zona do quinto metatarso.
 ---
@@ -355,7 +355,7 @@ armadilha: Anterior por ser a "famosa": é a mais lembrada por ser grave, mas a 
 | 3 | as duas corticais |
 !fim
 
-**Tratamento.** A chave é **diagnóstico precoce e tratamento agressivo**. Incompleta: **gesso sem carga por 6 a 8 semanas** e reabilitação gradual, com palmilha se houver alteração biomecânica. Cirurgia (com ou sem enxerto) para a fratura **completa**, com **esclerose nas bordas** ou que falhou no tratamento conservador; pela irrigação pobre, imobiliza-se também depois da cirurgia até consolidar. **Retorno só com consolidação clínica e confirmada por TC.** A figura 24-4 mostra o que acontece sem isso: uma bailarina com navicular grau IV que, após 3 meses de tratamento conservador, evoluiu para pseudartrose.
+**Tratamento.** A chave é **diagnóstico precoce e tratamento agressivo**. Incompleta: **gesso sem carga por 6 a 8 semanas** e reabilitação gradual, com palmilha se houver alteração biomecânica. Cirurgia (com ou sem enxerto) para a fratura **completa**, com **esclerose nas bordas** ou que falhou no tratamento conservador; pela irrigação pobre, imobiliza-se também depois da cirurgia até consolidar. **Retorno só com consolidação clínica e confirmada por TC.** O Campbell 15 (cap. 93, p. 4107 e 4109) confirma o traço no plano sagital, no terço central, e chama essa área de zona relativamente avascular, mas lembra que um estudo mais novo achou essa zona avascular pouco comum, de modo que outros fatores entram na causa. Sobre o tratamento, o Campbell cita uma metanálise em que **6 a 8 semanas de gesso sem carga** foram o ideal, com **tendência a melhor resultado** sem carga do que com cirurgia, e o gesso **com carga claramente inferior** aos dois; se operar, técnica percutânea para a fratura sem desvio e aberta para a desviada ou para a pseudartrose que pede enxerto. A figura 24-4 mostra o que acontece sem isso: uma bailarina com navicular grau IV que, após 3 meses de tratamento conservador, evoluiu para pseudartrose.
 
 !figura 24-4
 Fratura por estresse de alto risco: navicular desviado (grau IV) na RM de uma bailarina e, 3 meses depois, a pseudartrose na TC 3D.
@@ -390,12 +390,26 @@ Aparece em **jogadores de basquete e corredores**, com dor lateral no pé que pi
 - **Atleta de alta demanda:** **parafuso intramedular canulado de 4,0 ou 4,5 mm**, porque o gesso falha muito nessa população. Parafuso canulado e sólido consolidam igual. Enxerto só se já houver pseudartrose. Carga com **7 a 14 dias**, atividade plena em cerca de **9 semanas**.
 - **Números:** na NBA, consolidação radiográfica em **7,5 semanas**, retorno em cerca de **10 semanas**, mas **refratura em 30%**. Retorno ao esporte mais cedo com cirurgia (**13,8 contra 19,2 semanas**). Uma metanálise de 2015 achou pseudartrose de **11% a 50%** sem cirurgia contra **0% a 11%** com cirurgia.
 
+A classificação de **DeLEE**, cobrada no TARO 2012, não está no capítulo 24; vem do Skeletal Trauma, 5ª ed. (cap. 67, p. 2357), que separa as fraturas proximais do quinto metatarso pelo tempo e pelo local:
+
+!tabela Classificação de DeLEE do quinto metatarso proximal (Skeletal Trauma, cap. 67, p. 2357)
+| Tipo | Fratura |
+| --- | --- |
+| IA | aguda, sem desvio, metadiafisária |
+| IB | aguda, cominutiva, metadiafisária |
+| II | crônica, metadiafisária, com pródromo clínico ou reação de estresse na radiografia (a fratura por estresse) |
+| IIIA | avulsão extra-articular da tuberosidade |
+| IIIB | avulsão intra-articular da tuberosidade |
+!fim
+
+O mesmo capítulo (p. 2362) traz os três critérios de DeLEE para chamar a fratura de estresse: **pródromo de sintomas** na face lateral do pé, **reação de estresse** do quinto metatarso proximal na radiografia e **nenhum tratamento anterior** de fratura do quinto metatarso. Ele explica a localização pela zona relativamente avascular (divisor de águas) e pela tensão entre as inserções proximais (ligamentos e fibular curto) e o adutor distal, e indica cirurgia primária nos estágios II e III de TORG ou com fratura por estresse prévia, sobretudo em atletas de elite e trabalhadores braçais.
+
 !questoes central=trauma-0096,trauma-0172 relacionadas=trauma-0303,pe-tornozelo-0373,trauma-0817 treino=trauma-1250
 conceito: Na base do quinto metatarso, a zona I é a tuberosidade, a II é a junção metáfise-diáfise (a zona avascular da fratura de JONES) e a III é a diáfise proximal, onde fica a dor da fratura por estresse; no atleta, o tratamento é o parafuso intramedular de 4,0 ou 4,5 mm.
-como: O TARO 2017 perguntou a zona da fratura por estresse da base do quinto (III). O TEOT 2021 pediu, em par, as zonas da fratura de JONES e da fratura por estresse (II e III). Uma prova sem ano cobrou a localização e o mecanismo da JONES verdadeira; o TARO 2012, o tipo III-A de DELEE; o ENARE 2025, o tratamento da JONES aguda sem desvio num esportista.
+como: O TARO 2017 perguntou a zona da fratura por estresse da base do quinto (III). O TEOT 2021 pediu, em par, as zonas da fratura de JONES e da fratura por estresse (II e III). Uma prova sem ano cobrou a localização e o mecanismo da JONES verdadeira; o TARO 2012, o tipo IIIA de DeLEE; o ENARE 2025, o tratamento da JONES aguda sem desvio num esportista.
 armadilha: Zona I: é a avulsão da tuberosidade, a mais comum e a que consolida bem.
 armadilha: Gesso com carga e retorno rápido no atleta: o gesso falha muito no atleta; o capítulo indica o parafuso intramedular.
-alerta: O capítulo 24 chama a zona II de a de maior risco de retardo e põe a dor da fratura por estresse em geral na zona III; ele não descreve o mecanismo da fratura de JONES nem a classificação de DELEE, cobrados na prova sem ano (trauma-0303) e no TARO 2012 (trauma-0817). Esses dados vêm do capítulo de fraturas do pé.
+alerta: O capítulo 24 chama a zona II de a de maior risco de retardo e põe a dor da fratura por estresse em geral na zona III; ele não descreve o mecanismo da fratura de JONES nem a classificação de DeLEE, cobrados na prova sem ano (trauma-0303) e no TARO 2012 (trauma-0817). A classificação de DeLEE está no Skeletal Trauma, 5ª ed. (cap. 67, p. 2357): IIIA é a avulsão extra-articular da tuberosidade.
 alerta: No ENARE 2025 (pe-tornozelo-0373), o gabarito foi a bota ortopédica por 6 semanas para a JONES aguda sem desvio num praticante de esportes. O capítulo 24 indica o parafuso intramedular canulado no atleta de alta demanda, porque o gesso falha muito nele, e, no não atleta, gesso ou órtese **sem carga** por 6 a 8 semanas, notando a tendência atual de operar como primeira escolha. A bota de 6 semanas só cabe no paciente que não é atleta de alta demanda, e com carga restrita.
 !fim
 

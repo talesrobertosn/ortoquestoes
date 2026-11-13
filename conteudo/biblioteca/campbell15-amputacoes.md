@@ -1,6 +1,6 @@
 ---
 id: campbell15-amputacoes
-versao: 1
+versao: 2
 titulo: Amputações e próteses
 especialidade: conceitos-basicos
 acesso: gratis
@@ -91,7 +91,7 @@ Os escores tentam tirar a subjetividade. Entre o índice preditivo de salvamento
 | Regra | Pontos de isquemia dobrados se a isquemia passar de 6 horas; 7 ou mais sugere amputação | |
 !fim
 
-Nenhum escore substitui o juízo clínico. O salvamento heroico pode causar sobrecarga metabólica e falência orgânica, sobretudo no politraumatizado e no idoso; um **ISS acima de 50** foi sugerido como contraindicação a tentativas heroicas (p. 670). O capítulo 17 acrescenta dois estudos (p. 686, aprox.): o **LEAP** concluiu que os escores não ajudam a decidir quem vai se beneficiar da amputação, mas achou o MESS **muito específico para quem não precisa amputar**; o **OUTLET** mostrou pouco benefício do salvamento sobre a amputação inicial nas lesões complexas do terço distal da tíbia, tornozelo e retropé. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21, p. 912), usa o mesmo corte na criança: MESS **abaixo de 7** prediz salvamento; **7 ou mais**, amputação.
+Nenhum escore substitui o juízo clínico. O salvamento heroico pode causar sobrecarga metabólica e falência orgânica, sobretudo no politraumatizado e no idoso; um **ISS acima de 50** foi sugerido como contraindicação a tentativas heroicas (p. 670). O capítulo 17 acrescenta dois estudos (p. 686): o **LEAP** concluiu que os escores não ajudam a decidir quem vai se beneficiar da amputação, mas achou o MESS **muito específico para quem não precisa amputar**; o **OUTLET** mostrou pouco benefício do salvamento sobre a amputação inicial nas lesões complexas do terço distal da tíbia, tornozelo e retropé. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21, p. 912), usa o mesmo corte na criança: MESS **abaixo de 7** prediz salvamento; **7 ou mais**, amputação.
 
 ## O que o paciente precisa ouvir
 
@@ -243,7 +243,7 @@ Hemostasia meticulosa antes de fechar, dreno e curativo rígido devem minimizá-
 
 ## Infecção
 
-A frase que a banca transformou em questão está no Campbell (p. 678): a infecção é **mais comum nas amputações por doença vascular periférica, sobretudo nos diabéticos**, do que nas amputações por trauma ou tumor. A infecção profunda pede desbridamento e irrigação imediatos no centro cirúrgico, ferida aberta e antibiótico guiado pelas culturas intraoperatórias. O fechamento tardio fica difícil por edema e retração dos retalhos; SMITH e BURGESS propuseram **fechar só o terço central** e deixar o resto aberto, mantendo retalhos para cobrir o osso (p. 679). O capítulo 17 (p. 686, aprox.) reforça: infecções pós-operatórias graves são bem mais frequentes no diabético complicado (retinopatia, neuropatia, úlcera prévia, CHARCOT, doença vascular).
+A frase que a banca transformou em questão está no Campbell (p. 678): a infecção é **mais comum nas amputações por doença vascular periférica, sobretudo nos diabéticos**, do que nas amputações por trauma ou tumor. A infecção profunda pede desbridamento e irrigação imediatos no centro cirúrgico, ferida aberta e antibiótico guiado pelas culturas intraoperatórias. O fechamento tardio fica difícil por edema e retração dos retalhos; SMITH e BURGESS propuseram **fechar só o terço central** e deixar o resto aberto, mantendo retalhos para cobrir o osso (p. 679). O capítulo 17 (p. 686) reforça: infecções pós-operatórias graves são bem mais frequentes no diabético complicado (retinopatia, neuropatia, úlcera prévia, CHARCOT, doença vascular).
 
 ## Necrose da ferida
 
@@ -304,7 +304,7 @@ armadilha: O nome "verrucosa" puxa para vírus; a dermatite de contato também �
 
 # Amputações do pé: dedos, raios e transmetatarsal {radar=oportunidade}
 
-O capítulo 17 do Campbell's Operative Orthopaedics, 15ª ed. abre com os diabéticos: **até 30%** das amputações do pé progridem para um nível mais proximal, e quase metade dos pacientes com úlcera de retropé chegará à transtibial ou acima (p. 686, aprox.). Para otimizar: retalhos espessos, sem esmagar bordas, hemostasia, evitar hematoma e testar a dorsiflexão do tornozelo com limiar baixo para **alongar o Aquiles**.
+O capítulo 17 do Campbell's Operative Orthopaedics, 15ª ed. abre com os diabéticos: **até 30%** das amputações do pé progridem para um nível mais proximal, e quase metade dos pacientes com úlcera de retropé chegará à transtibial ou acima (p. 686). Para otimizar: retalhos espessos, sem esmagar bordas, hemostasia, evitar hematoma e testar a dorsiflexão do tornozelo com limiar baixo para **alongar o Aquiles**.
 
 !tabela Amputações do pé por nível (Campbell 15, cap. 17, p. 687 e 693 a 697)
 | Nível | Função e particularidades |
@@ -333,15 +333,15 @@ A amputação em torno do tornozelo precisa de duas coisas (Campbell's Operative
 
 ## As quatro técnicas
 
-- **SYME (1843):** corte da tíbia e da fíbula **0,5 a 1,0 cm proximal** à articulação, passando **centralmente pela cúpula** do tornozelo, com o coxim do calcanhar como retalho posterior único (p. 697 a 702). Dá apoio terminal com pele normal de carga. A objeção é **cosmética**: o coto é bulboso pela metáfise distal larga, e a prótese clássica tem **janela medial removível** e pé SACH. Técnica: ligar a tibial posterior junto à borda do retalho, preservar a gordura septada, **nunca retirar as "orelhas"** (levam boa parte da irrigação do retalho) e, pela técnica de WAGNER, suturar a fáscia profunda do coxim em furos na borda anterior da tíbia e da fíbula para evitar a migração.
-- **SARMIENTO:** para um coto menos bulboso e encaixe expansível sem janela, transecção da tíbia e da fíbula **cerca de 1 a 1,5 cm proximal** à articulação e **excisão dos maléolos medial e lateral** (p. 697).
+- **SYME (1843):** corte da tíbia e da fíbula **0,5 a 1,0 cm proximal** à articulação, passando **centralmente pela cúpula** do tornozelo, com o coxim do calcanhar como retalho posterior único (p. 697 a 702). O SYME clássico também fica sem os maléolos: a radiografia do coto na Fig. 17.19 (p. 699) traz na legenda a ausência dos maléolos, e a Fig. 17.20 E e F (p. 700) mostra a excisão dos maléolos e do plafond tibial junto com a retirada subperiosteal do calcâneo. Dá apoio terminal com pele normal de carga. A objeção é **cosmética**: o coto é bulboso pela metáfise distal larga, e a prótese clássica tem **janela medial removível** e pé SACH. Técnica: ligar a tibial posterior junto à borda do retalho, preservar a gordura septada, **nunca retirar as "orelhas"** (levam boa parte da irrigação do retalho) e, pela técnica de WAGNER, suturar a fáscia profunda do coxim em furos na borda anterior da tíbia e da fíbula para evitar a migração.
+- **SARMIENTO:** para um coto menos bulboso e encaixe expansível sem janela, transecção da tíbia e da fíbula **cerca de 1 a 1,5 cm proximal** à articulação e **excisão dos maléolos medial e lateral** (p. 697). Como o SYME também retira os maléolos (Fig. 17.19 e 17.20), o que separa o SARMIENTO é o **corte mais alto**, feito com o fim declarado de afinar o coto para o encaixe expansível.
 - **BOYD:** **talectomia, avanço do calcâneo e artrodese calcaneotibial** (p. 697, 703 e 704). Desarticulação mediotársica, retirada do tálus, osteotomia transversa do calcâneo logo distal ao tubérculo fibular, calcâneo deslocado para a frente, com a face inferior paralela ao chão, e fixado à tíbia com parafuso. Dá excelente apoio terminal e **elimina a migração posterior do coxim**, mas é tecnicamente mais difícil e o coto é mais bulboso; sem carga até 8 semanas.
 - **PIROGOFF:** artrodese da tíbia com **parte do calcâneo**: o calcâneo é seccionado **verticalmente**, a parte anterior é removida e a posterior, com o coxim, é **rodada 90 graus** para a frente e para cima até encontrar a tíbia (p. 697 e 696). Pouca vantagem sobre o BOYD e mais difícil.
 
 !tabela As amputações do tornozelo lado a lado (Campbell 15, cap. 17, p. 697 a 704; HEBERT, cap. 25)
 | Técnica | Osso | Calcâneo | Ponto forte | Ponto fraco |
 |---|---|---|---|---|
-| SYME | Tíbia e fíbula 0,5 a 1 cm acima, pela cúpula | Retirado; fica só o coxim | Apoio terminal com pele de carga | Coto bulboso; migração posterior do coxim |
+| SYME | Tíbia e fíbula 0,5 a 1 cm acima, pela cúpula; maléolos e plafond retirados (Fig. 17.20 E e F, p. 700) | Retirado; fica só o coxim | Apoio terminal com pele de carga | Coto bulboso; migração posterior do coxim |
 | SARMIENTO | Tíbia e fíbula 1 a 1,5 cm acima, com excisão dos maléolos | Retirado | Coto mais estreito, encaixe expansível | Menos flare para suspensão |
 | SYME em dois tempos (WAGNER) | 1º desarticulação com cartilagem e maléolos; 2º retira maléolos e flares após 6 semanas | Retirado | Diabético com infecção do antepé | Duas cirurgias |
 | BOYD | Talectomia; artrodese calcaneotibial | Parte posterior avançada horizontalmente | Sem migração do coxim; menor encurtamento | Mais difícil e mais bulboso |
@@ -355,7 +355,7 @@ O HEBERT (cap. 25) acrescenta o olhar pediátrico: na criança, sobretudo abaixo
 !questoes central=conceitos-basicos-0167 relacionadas=conceitos-basicos-0301
 conceito: SARMIENTO modificou o SYME seccionando a tíbia e a fíbula cerca de 1 a 1,5 cm acima do tornozelo e retirando os dois maléolos, para um coto menos bulboso e um encaixe expansível sem janela.
 como: O TARO 2024 descreveu a transecção a cerca de 1,3 cm da articulação com excisão dos maléolos e deu BOYD, SYME, WAGNER e SARMIENTO como alternativas.
-armadilha: Marcar SYME, cujo corte é 0,5 a 1 cm acima e passa pela cúpula, sem excisão programada dos maléolos; WAGNER é o SYME em dois tempos, que tira os maléolos só no segundo tempo.
+armadilha: Marcar SYME, cujo corte é 0,5 a 1 cm acima e passa pela cúpula; o SYME também fica sem os maléolos (Campbell 15, Fig. 17.19, p. 699, e Fig. 17.20 E e F, p. 700), e o que distingue o SARMIENTO é o corte mais alto, de 1 a 1,5 cm, para afinar o coto; WAGNER é o SYME em dois tempos, que tira os maléolos só no segundo tempo.
 !fim
 
 !questoes central=conceitos-basicos-0150 relacionadas=conceitos-basicos-0176

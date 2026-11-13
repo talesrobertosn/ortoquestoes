@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-osteocondrite-dissecante
-versao: 2
+versao: 3
 titulo: Osteocondrite dissecante
 especialidade: joelho
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (2026)
 capitulo: Capítulo 40 · Pediatric Sports Medicine: Issues in Contemporary Sports Participation
 autores: Philip Wilson, Henry Bone Ellis, Jr., e Jane S. Chung
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 40, seções de osteocondrite dissecante do joelho (p. 2016 a 2020), menisco discoide (p. 2013 a 2015), cotovelo do atleta (p. 2004 e 2005) e lesões osteocondrais do tálus (p. 2040 a 2042); Campbell's Operative Orthopaedics, 15ª ed., capítulo 50 (p. 2123 a 2128), capítulo 34 (p. 1204 a 1210), capítulo 56 (p. 2359 a 2362) e capítulo 38 (p. 1476 e 1477). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 40, seções de osteocondrite dissecante do joelho (p. 2016 a 2020), menisco discoide (p. 2013 a 2015), cotovelo do atleta (p. 2004 e 2005) e lesões osteocondrais do tálus (p. 2040 a 2042); Campbell's Operative Orthopaedics, 15ª ed., capítulo 50 (p. 1997, 2010 e 2123 a 2128), capítulo 34 (p. 1204 a 1210), capítulo 56 (p. 2359 a 2362) e capítulo 38 (p. 1476 e 1477). As páginas citadas são as impressas.
 subtemas: Osteocondrite dissecante
 resumo: Lesão idiopática do osso subcondral, mais comum em meninos (2:1) de 12 a 19 anos, na face lateral do côndilo femoral medial (cerca de 80%), bilateral em até 30%; sinal de WILSON (90° com rotação interna, dor a 30° ao estender; marcha em rotação externa); incidência do túnel; diferencial com centros de ossificação anômalos (radiografia comparativa, cintilografia negativa); instabilidade na RM = linha de alto sinal em T2 entre fragmento e osso, cistos e quebra da cartilagem; DIPAOLA, CAHILL, ROCK e BERNDT e HARTY; fise aberta e lesão estável cicatrizam com conservador; cirurgia se instável, sem cicatrização em 6 meses ou sintomas após o fechamento da fise; perfuração, fixação e enxertia osteocondral; patela com pior prognóstico, polo inferior e cintilografia quente contra o defeito dorsal superolateral e frio.
 ---
@@ -92,7 +92,7 @@ O Tachdjian (p. 2017) diz que as lesões **juvenis e as do adulto se comportam d
 
 # O menisco discoide e o côndilo lateral {radar=confirmado}
 
-O côndilo lateral é o segundo local mais comum, e o Tachdjian liga parte dessas lesões ao **menisco discoide lateral** (p. 2013 a 2015). O tipo **WRISBERG** de menisco discoide não tem fixação tibial posterior; a única fixação posterior é o ligamento meniscofemoral (ligamento de WRISBERG), que vai do corno posterior do menisco lateral até a face lateral do côndilo femoral medial. Esse ligamento prende o menisco, que não consegue deslizar para a frente na extensão e é puxado para o intercôndilo, e o tipo com instabilidade da borda periférica tende a dar sintomas cedo (p. 2013 e 2014). O Campbell (cap. 50, p. 2007 aprox.) descreve a mesma classificação de WATANABE: completo, incompleto e tipo WRISBERG, este sem fixação posterior além do ligamento.
+O côndilo lateral é o segundo local mais comum, e o Tachdjian liga parte dessas lesões ao **menisco discoide lateral** (p. 2013 a 2015). O tipo **WRISBERG** de menisco discoide não tem fixação tibial posterior; a única fixação posterior é o ligamento meniscofemoral (ligamento de WRISBERG), que vai do corno posterior do menisco lateral até a face lateral do côndilo femoral medial. Esse ligamento prende o menisco, que não consegue deslizar para a frente na extensão e é puxado para o intercôndilo, e o tipo com instabilidade da borda periférica tende a dar sintomas cedo (p. 2013 e 2014). O Campbell (cap. 50, p. 2010) descreve a mesma classificação de WATANABE: completo, incompleto e tipo WRISBERG, este sem fixação posterior além do ligamento.
 
 O Tachdjian (p. 2015) cita entre os riscos da instabilidade persistente do menisco a **carga anormal da epífise femoral**, que contribuiria para lesões de OCD, e diz que **meninos com menos de 12 anos e deslocamento central do menisco** têm maior risco de **OCD concomitante do côndilo femoral lateral**. O raciocínio é o mesmo da sobrecarga: o menisco anormal muda a distribuição da carga no compartimento lateral, e o côndilo lateral sofre.
 
@@ -158,7 +158,7 @@ A criança pequena tem uma ossificação irregular da epífise femoral distal qu
 
 A cintilografia ajuda nessa distinção: o Campbell (cap. 50, p. 2125) diz que ela distingue as **anomalias ossificantes com cintilografia negativa** das **lesões de OCD não cicatrizadas com cintilografia positiva**. O raciocínio é biológico: a variante de ossificação não tem um processo de reparo ativo; a OCD tem.
 
-Outros diferenciais aparecem nos livros. Uma figura do Campbell (cap. 34, p. 1205) mostra um grande defeito de OCD no côndilo lateral em que o **condroblastoma** precisou ser afastado. E o Campbell (cap. 50, p. 1993 aprox.) descreve a **osteonecrose espontânea do joelho** num contexto bem diferente: rupturas meniscais que comprometem a biomecânica, como as **radiais e as de raiz**, aumentam a força de contato e podem gerar **lesões medulares do fêmur e da tíbia** e outras alterações associadas à osteonecrose espontânea. Os livros consultados não trazem uma comparação direta entre as duas entidades; o que se tira deles é que a OCD é uma doença do adolescente, focal, na face lateral do côndilo medial, enquanto a osteonecrose espontânea aparece ligada à sobrecarga após lesão meniscal grave.
+Outros diferenciais aparecem nos livros. Uma figura do Campbell (cap. 34, p. 1205) mostra um grande defeito de OCD no côndilo lateral em que o **condroblastoma** precisou ser afastado. E o Campbell (cap. 50, p. 1997) descreve a **osteonecrose espontânea do joelho** num contexto bem diferente: rupturas meniscais que comprometem a biomecânica, como as **radiais e as de raiz**, aumentam a força de contato e podem gerar **lesões medulares do fêmur e da tíbia** e outras alterações associadas à osteonecrose espontânea. Os livros consultados não trazem uma comparação direta entre as duas entidades; o que se tira deles é que a OCD é uma doença do adolescente, focal, na face lateral do côndilo medial, enquanto a osteonecrose espontânea aparece ligada à sobrecarga após lesão meniscal grave.
 
 !tabela OCD contra seus imitadores (Campbell 15, cap. 50, p. 2124 e 2125; cap. 34, p. 1205 e 1206; cap. 56, p. 2360; Tachdjian, cap. 40, p. 2016)
 | Entidade | Como se apresenta | Como separar da OCD |
@@ -211,8 +211,8 @@ O Campbell, no capítulo 34 (p. 1205 e 1206), faz a ressalva: estudos recentes q
 !questoes central=joelho-0216 relacionadas=pediatria-0553,joelho-0196
 conceito: Na RM, o fragmento instável mostra sinal alto em T2 entre a lesão e o osso subcondral adjacente (líquido sinovial na interface), com cistos e quebra da cartilagem; a ausência dessa linha é sinal de estabilidade.
 como: O TARO 2012 perguntou o sinal da interface no fragmento instável; o TARO 2023, a imagem em T2 que implica instabilidade na forma juvenil; o TEPOP 2024 mostrou imagens e pediu a localização e a estabilidade de uma lesão na face lateral do côndilo medial.
-armadilha: Escolher edema ósseo no fragmento ou no osso adjacente; edema não é o critério, o que conta é o líquido entre o fragmento e o leito.
-alerta: O Tachdjian (p. 2018) pondera que, no joelho imaturo com cartilagem íntegra, o alto sinal em T2 pode ser cicatrização e que a continuidade da superfície pesa mais; o gabarito de `pediatria-0553` segue o critério clássico do Campbell (linha de alto sinal na interface). Em `joelho-0196`, a estabilidade depende das imagens, que este resumo não reproduz; o gabarito oficial (lesão estável) foi mantido.
+armadilha: Escolher edema ósseo no fragmento ou no osso adjacente; para o Campbell (cap. 50, p. 2125) e o Tachdjian (p. 2017 e 2018), o critério é o líquido entre o fragmento e o leito, embora o capítulo de artroscopia do Campbell (cap. 56, p. 2360) também cite o edema subcondral.
+alerta: O Tachdjian (p. 2018) pondera que, no joelho imaturo com cartilagem íntegra, o alto sinal em T2 pode ser cicatrização e que a continuidade da superfície pesa mais; o gabarito de `pediatria-0553` segue o critério clássico do Campbell (linha de alto sinal na interface). O mesmo Campbell, no capítulo de artroscopia (cap. 56, p. 2360), cita como evidência de instabilidade na RM o líquido sob a lesão (na cratera) **ou o edema subcondral**, o que aproxima a alternativa C (edema ósseo no osso subcondral adjacente); e a pista do Tachdjian (p. 2018), a continuidade da superfície articular, aproxima a B. O hipersinal na interface (D) é o único achado que os dois capítulos do Campbell e o Tachdjian tratam como instabilidade, e por isso o gabarito D foi mantido. Em `joelho-0196`, a estabilidade depende das imagens, que este resumo não reproduz; o gabarito oficial (lesão estável) foi mantido.
 !fim
 
 # As classificações {radar=confirmado}

@@ -1,6 +1,6 @@
 ---
 id: dahlin-cordoma
-versao: 1
+versao: 2
 titulo: Cordoma
 especialidade: tumores
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases
 edicao: 6ª edição (2010)
 capitulo: Capítulo 21 · Chordoma
 autores: K. Krishnan UNNI e Carrie Y. INWARDS
-fonte: Livros conferidos localmente em 04/11/2026: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 21 (Chordoma, p. 248 a 261), cap. 1 (p. 4 e 8) e cap. 19 (Giant Cell Tumor, p. 226 a 228); Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (p. 981 a 983), cap. 26 (p. 869, 870 e cerca de 912) e cap. 49 (p. 1953, 1955 com a Tabela 49.2, 1956, 1957, 1965 e 1966); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 30 (sem página impressa no PDF); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 1 (p. 17 aprox. e 20); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 7 (p. 84) e cap. 24 (p. 1000). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 04/11/2026: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 21 (Chordoma, p. 248 a 261), cap. 1 (p. 4 e 8) e cap. 19 (Giant Cell Tumor, p. 226 a 228); Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (p. 981 a 983), cap. 26 (p. 869.e1, 870 e 911) e cap. 49 (p. 1953, 1955 com a Tabela 49.2, 1956, 1957, 1965 e 1966); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 30 (seção Cordoma; o livro não traz página impressa); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 1 (p. 17 e 20); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 7 (p. 84) e cap. 24 (p. 1000). As páginas citadas são as impressas.
 subtemas: Cordoma
 resumo: Tumor maligno de baixo grau dos restos da notocorda, que mata pela invasão local; homem (2:1 a 3:1), raro antes dos 30, pico de 50 a 70 anos; linha média, sacrococcígeo primeiro, malignidade primária mais comum do sacro (na coluna o mieloma vem antes); dor lombar baixa, massa pré-sacral ao toque retal, parestesias tardias; lítica destrutiva com massa anterior e calcificação, escondida pelo gás intestinal na AP; células fisalíferas, queratina e brachyury; ressecção em bloco com margem ampla, S2 e S3 decidindo a continência, prótons na base do crânio; recidiva de 44%, metástase tardia.
 ---
@@ -27,7 +27,7 @@ As questões do acervo cobram **onde** o cordoma aparece (sacro e cóccix), **qu
 
 ## O que é a notocorda e onde ela sobra
 
-O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 1, embriologia), conta a história em poucas linhas: o **centro vertebral cresce em volta da notocorda** e forma o corpo vertebral; as **células notocordais do centro degeneram**, mas **alguns restos podem permanecer**, e **restos notocordais que persistem nas regiões sacral ou cervical podem originar cordomas na vida adulta** (p. 17 aprox.). Duas páginas adiante, o mesmo capítulo resume: o cordoma é uma neoplasia que nasce de **restos notocordais** e é encontrada **sobretudo na região sacrococcígea** (p. 20).
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 1, embriologia), conta a história em poucas linhas: o **centro vertebral cresce em volta da notocorda** e forma o corpo vertebral; as **células notocordais do centro degeneram**, mas **alguns restos podem permanecer**, e **restos notocordais que persistem nas regiões sacral ou cervical podem originar cordomas na vida adulta** (p. 17). Duas páginas adiante, o mesmo capítulo resume: o cordoma é uma neoplasia que nasce de **restos notocordais** e é encontrada **sobretudo na região sacrococcígea** (p. 20).
 
 O Dahlin abre o capítulo 21 com a mesma ideia, mas com uma nuance importante. O cordoma **desenvolve-se de remanescentes da notocorda primitiva** e parece poder nascer tanto dos **produtos normais da notocorda, os núcleos pulposos**, quanto de **restos anormais de tecido notocordal** (p. 248). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 29), define o cordoma como **neoplasia maligna rara que nasce de restos da notocorda** (p. 981), e o capítulo 49 acrescenta a consequência anatômica: por essa origem embriológica, o tumor é **geralmente anterior e da linha média** (p. 1966). O HEBERT (cap. 30) diz que o cordoma é **oriundo das células da notocorda**.
 
@@ -41,7 +41,7 @@ A explicação que o livro deixa subentendida é que o tumor depende mais dos **
 
 O Dahlin lembra que **pequenas massas não neoplásicas de tecido notocordal vestigial** são encontradas às vezes perto da **junção esfeno-occipital, na linha média**, e recebem o nome de **ecchondrosis physaliphora** (p. 248). O nome já antecipa a célula que define o cordoma na lâmina, a **célula fisalífera**, de citoplasma bolhoso. O resto benigno e o tumor compartilham a célula; separa-os a destruição óssea (ver o diferencial).
 
-!tabela Da notocorda ao cordoma: o que a origem explica (Dahlin, cap. 21, p. 248 e 249; Campbell 15, cap. 29, p. 981, e cap. 49, p. 1966; Lovell and Winter 7, cap. 1, p. 17 aprox. e 20; HEBERT, cap. 30)
+!tabela Da notocorda ao cordoma: o que a origem explica (Dahlin, cap. 21, p. 248 e 249; Campbell 15, cap. 29, p. 981, e cap. 49, p. 1966; Lovell and Winter 7, cap. 1, p. 17 e 20; HEBERT, cap. 30)
 | Fato embriológico | Consequência no tumor | Onde está escrito |
 |---|---|---|
 | O corpo vertebral se forma em volta da notocorda | Tumor central, da linha média, no corpo vertebral e não nos elementos posteriores | Lovell and Winter, p. 17; Campbell, cap. 49, p. 1966 e 1965 |
@@ -286,7 +286,7 @@ O Dahlin escreve que vários estudos confirmaram que os cordomas são **positivo
 
 ## A lista do sacro e da coluna do adulto
 
-O Campbell, capítulo 26, dá a regra de bolso: **no sacro, cordoma e tumor de células gigantes estão no topo da lista** do diferencial (p. 869). No quadro de diferencial das lesões da coluna (p. 870), **acima dos 40 anos** entram **metástase, mieloma múltiplo, hemangioma e cordoma (no sacro)**; **abaixo dos 30 anos**, no corpo vertebral, **histiocitose e hemangioma**, e nos elementos posteriores **osteoma osteoide, osteoblastoma e cisto ósseo aneurismático**. O Tachdjian põe o cordoma na lista do **corpo vertebral do adulto**, ao lado de **metástase, mieloma, PAGET e hemangioma** (cap. 24, p. 1000).
+O Campbell, capítulo 26, dá a regra de bolso: **no sacro, cordoma e tumor de células gigantes estão no topo da lista** do diferencial (p. 869.e1). No quadro de diferencial das lesões da coluna (p. 870), **acima dos 40 anos** entram **metástase, mieloma múltiplo, hemangioma e cordoma (no sacro)**; **abaixo dos 30 anos**, no corpo vertebral, **histiocitose e hemangioma**, e nos elementos posteriores **osteoma osteoide, osteoblastoma e cisto ósseo aneurismático**. O Tachdjian põe o cordoma na lista do **corpo vertebral do adulto**, ao lado de **metástase, mieloma, PAGET e hemangioma** (cap. 24, p. 1000).
 
 ## Tumor de células gigantes do sacro
 
@@ -319,7 +319,7 @@ Em biópsia pequena, como a **punção aspirativa por agulha fina**, o **carcino
 
 Na base do crânio, o **meningioma cordoide** tem fundo mixoide e cordões, mas **infiltrado linfoplasmocitário**, massa **bem circunscrita**, células **meningoteliais** e **queratina negativa** (Dahlin, p. 259). No sacro, dos 23 **neurilemomas** primários do osso na Mayo, **9 estavam no sacro** (cap. 1, p. 8).
 
-!tabela Cordoma e seus diferenciais (Dahlin, cap. 1, p. 8, cap. 19, p. 226 a 228, cap. 21, p. 253 a 260; Campbell 15, cap. 26, p. 869 e 870, cap. 49, Tabela 49.2 da p. 1955 e p. 1965; HEBERT, cap. 30)
+!tabela Cordoma e seus diferenciais (Dahlin, cap. 1, p. 8, cap. 19, p. 226 a 228, cap. 21, p. 253 a 260; Campbell 15, cap. 26, p. 869.e1 e 870, cap. 49, Tabela 49.2 da p. 1955 e p. 1965; HEBERT, cap. 30)
 | Lesão | Quem e onde | Imagem | Lâmina e imuno |
 |---|---|---|---|
 | Cordoma | Homem de 50 a 70 anos; sacro baixo, clivo; linha média | Lítica destrutiva, massa anterior, calcificação em cerca de metade | Lóbulos, cordões, fisalíferas; queratina e brachyury positivos |
@@ -345,7 +345,7 @@ O estudo de FUCHS e colaboradores na Mayo, citado pelo Dahlin, é o dado mais fo
 
 ## A via de acesso
 
-O Campbell, capítulo 26, prefere para tumores do sacro, como TCG e cordoma, a **via combinada anterior e posterior (abdominossacral)**, com **cirurgião geral, neurocirurgião e ortopedista** e **preparo intestinal** (p. 912 aprox.); na técnica de STENER e GUNTERBERG, se o reto for sacrificado a cirurgia começa e termina pela frente. O capítulo 49 lembra a **reconstrução** dos ilíacos à coluna lombar nas ressecções amplas (p. 1956).
+O Campbell, capítulo 26, prefere para tumores do sacro, como TCG e cordoma, a **via combinada anterior e posterior (abdominossacral)**, com **cirurgião geral, neurocirurgião e ortopedista** e **preparo intestinal** (p. 911); na técnica de STENER e GUNTERBERG, se o reto for sacrificado a cirurgia começa e termina pela frente. O capítulo 49 lembra a **reconstrução** dos ilíacos à coluna lombar nas ressecções amplas (p. 1956).
 
 ## As raízes sacrais e a continência
 

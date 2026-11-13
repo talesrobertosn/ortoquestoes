@@ -1,6 +1,6 @@
 ---
 id: lw-menisco-discoide
-versao: 1
+versao: 2
 titulo: Menisco discoide
 especialidade: joelho
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Lovell and Winter's Pediatric Orthopaedics
 edicao: 7ª edição (2014)
 capitulo: Capítulo 31 · Sports Medicine in the Growing Child
 autores: R. Baxter WILLIS, Mininder S. KOCHER e Theodore J. GANLEY (Lovell and Winter, cap. 31); Philip WILSON, Henry Bone ELLIS Jr. e Jane S. CHUNG (Tachdjian, cap. 40)
-fonte: Livros conferidos localmente em 04/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 31, seção Meniscal Injuries and Discoid Lateral Meniscus (p. 1612 a 1615, lida por inteiro); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40, seção Discoid Meniscus (p. 2013 a 2016, lida por inteiro) e cap. 6, Box 6.1 (p. 70); Campbell's Operative Orthopaedics, 15ª ed., cap. 3 (RM, p. 161 e 162), cap. 50 (anatomia dos meniscos, p. 1987 a 2000 aprox., e Discoid Meniscus, p. 2010 e 2011) e cap. 56 (Discoid Lateral Meniscus e Técnica 56.4, p. 2344); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 15, seção Menisco discoide congênito (edição digital sem página impressa). O Rockwood and Wilkins' Fractures in Children, 10ª ed., não trata do tema. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 04/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 31, seção Meniscal Injuries and Discoid Lateral Meniscus (p. 1612 a 1615, lida por inteiro); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40, seção Discoid Meniscus (p. 2013 a 2016, lida por inteiro) e cap. 6, Box 6.1 (p. 70); Campbell's Operative Orthopaedics, 15ª ed., cap. 3 (RM, p. 161 e 162), cap. 50 (anatomia dos meniscos, p. 1987 a 2000, e Discoid Meniscus, p. 2010 e 2011) e cap. 56 (Discoid Lateral Meniscus e Técnica 56.4, p. 2344); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 15, seção Menisco discoide congênito (edição digital sem página impressa). O Rockwood and Wilkins' Fractures in Children, 10ª ed., não trata do tema. As páginas citadas são as impressas.
 subtemas: Menisco discoide
 resumo: Lateral em 97% (asiáticos até 26%), medial 0,06 a 0,3%; o menisco normal nunca é discoide no feto (variante congênita, colágeno escasso e desorganizado); WATANABE I completo, II incompleto (menos de 80%), III WRISBERG sem inserção tibial posterior (sem coronário), que estala sem trauma na criança pequena; MONLLAU acrescenta o tipo IV em anel; radiografia com espaço lateral alargado, côndilo quadrado, platô em taça, espinha tibial lateral hipoplásica e fíbula alta; RM com gravata-borboleta em 3 ou mais cortes e diâmetro coronal acima de 15 mm ou 20%; incidental fica intacto; sintomático vai à saucerização central com rebordo de 6 a 8 mm e reparo do rebordo instável; total piora a artrose; OCD do côndilo femoral lateral.
 ---
@@ -33,7 +33,7 @@ Antes de falar do menisco anormal, é preciso ter claro como o normal se prende 
 
 O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 31, p. 1613), descreve o **menisco medial em forma de C**, cobrindo **50% do platô medial**, preso à tíbia pelo **ligamento coronário** e ao **LCM profundo** pelo **ligamento meniscotibial**. Essas amarras limitam sua translação a **2 a 5 mm** durante o movimento do joelho.
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1996), detalha: o medial tem raio maior, corno posterior mais largo que o anterior, e **toda a sua borda periférica** está firmemente presa à cápsula medial e, **pelo ligamento coronário, à borda superior da tíbia**. Por isso ele funciona como **restritor secundário da translação anterior da tíbia**, sobretudo no joelho sem LCA. O mesmo livro (p. 1987 aprox.) mostra que a porção meniscotibial do LCM profundo continua como o ligamento coronário do menisco, e (p. 1989 aprox.) que o **corno posterior do medial** se liga à cápsula posteromedial, ao LCM profundo, ao **ligamento oblíquo posterior** e à expansão do semimembranoso, funcionando como **calço** sobre o platô.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1996), detalha: o medial tem raio maior, corno posterior mais largo que o anterior, e **toda a sua borda periférica** está firmemente presa à cápsula medial e, **pelo ligamento coronário, à borda superior da tíbia**. Por isso ele funciona como **restritor secundário da translação anterior da tíbia**, sobretudo no joelho sem LCA. O mesmo livro (p. 1987) mostra que a porção meniscotibial do LCM profundo continua como o ligamento coronário do menisco, e (p. 1989) que o **corno posterior do medial** se liga à cápsula posteromedial, ao LCM profundo, ao **ligamento oblíquo posterior** e à expansão do semimembranoso, funcionando como **calço** sobre o platô.
 
 Guarde a ideia central: o **ligamento coronário** (meniscotibial) é o que prende a periferia do menisco à **borda da tíbia**. Os ligamentos meniscofemorais (HUMPHRY e WRISBERG) prendem o menisco ao **fêmur**, não à tíbia, e pertencem ao **lateral**.
 
@@ -47,9 +47,9 @@ O Campbell (cap. 50, p. 1996) acrescenta o que interessa ao discoide: o lateral 
 
 O Lovell and Winter (p. 1613) lembra que o menisco em desenvolvimento é **totalmente vascularizado ao nascer** e que a vascularidade recua até os **10% a 30% periféricos** (zona vermelho-vermelho) por volta dos **10 anos**, quando passa a se parecer com o do adulto; o centro se nutre por **difusão sinovial**. O HEBERT (cap. 15) dá a cronologia: na gestação os meniscos são vascularizados por inteiro e **não têm forma discoide**; aos **9 meses** de vida o terço central já é avascular; por volta dos **10 anos**, só o terço periférico tem vasos.
 
-Os meniscos transmitem **50% a 70% da carga em extensão** e **85% a 90 graus de flexão** (Lovell and Winter, p. 1613). O Campbell (cap. 50, p. 1997 aprox.) dá o preço de tirá-los: o **lateral** carrega **70%** da carga daquele lado, e a meniscectomia lateral reduz a área de contato em 40% a 50% e aumenta o estresse em **200% a 300%**, porque o **platô lateral é convexo**. É esse número que torna a meniscectomia total do discoide uma decisão pesada.
+Os meniscos transmitem **50% a 70% da carga em extensão** e **85% a 90 graus de flexão** (Lovell and Winter, p. 1613). O Campbell (cap. 50, p. 1997) dá o preço de tirá-los: o **lateral** carrega **70%** da carga daquele lado, e a meniscectomia lateral reduz a área de contato em 40% a 50% e aumenta o estresse em **200% a 300%**, porque o **platô lateral é convexo**. É esse número que torna a meniscectomia total do discoide uma decisão pesada.
 
-!tabela Menisco medial e lateral: o que importa para o discoide (Lovell and Winter, cap. 31, p. 1613; Campbell 15, cap. 50, p. 1987 a 1997 aprox.; HEBERT, cap. 15)
+!tabela Menisco medial e lateral: o que importa para o discoide (Lovell and Winter, cap. 31, p. 1613; Campbell 15, cap. 50, p. 1987 a 1997; HEBERT, cap. 15)
 | Característica | Medial | Lateral |
 |---|---|---|
 | Forma | C, raio maior, corno posterior mais largo | quase circular, mais espesso na periferia |
@@ -201,7 +201,7 @@ alerta: Em `pediatria-0161`, a alternativa "5% é bilateral" é falsa pela banca
 
 O Tachdjian (cap. 40, p. 2013 e 2014) explica o mecanismo com precisão. O ligamento meniscofemoral de WRISBERG, que o livro lembra ser **normalmente encontrado em quadrúpedes**, **amarra o corno posterior**. Sem a inserção tibial posterior, o menisco **não consegue deslizar para a frente quando o joelho estende**; em vez disso, o WRISBERG **puxa o menisco para o intercôndilo na extensão**, e ele **volta à posição normal na flexão**. Cada excursão produz um **estalido**, e esse vaivém repetido torna o menisco **hipertrófico e irregular**.
 
-O Campbell (cap. 50, Fig. 50.35, p. 2011 aprox.) mostra a mesma coisa: em **flexão**, o menisco WRISBERG está no lugar, sem subluxação; em **extensão**, é deslocado para o **intercôndilo** pelo WRISBERG. O Lovell and Winter (p. 1614) descreve o estalido indolor da flexão para a extensão, quando o menisco instável **reduz de volta à sua posição normal**. A diferença de redação é de ponto de vista (qual metade do movimento faz o salto), mas os três concordam que o estalido nasce do **corno posterior solto** que entra e sai do lugar.
+O Campbell (cap. 50, Fig. 50.35, p. 2011) mostra a mesma coisa: em **flexão**, o menisco WRISBERG está no lugar, sem subluxação; em **extensão**, é deslocado para o **intercôndilo** pelo WRISBERG. O Lovell and Winter (p. 1614) descreve o estalido indolor da flexão para a extensão, quando o menisco instável **reduz de volta à sua posição normal**. A diferença de redação é de ponto de vista (qual metade do movimento faz o salto), mas os três concordam que o estalido nasce do **corno posterior solto** que entra e sai do lugar.
 
 ## Quem tem e quando
 
@@ -219,11 +219,11 @@ A consequência prática: o rótulo "WRISBERG" de WATANABE é insuficiente para 
 
 ## O tratamento do WRISBERG: onde os livros discordam
 
-Esse é o ponto de maior divergência do tema, e já caiu em prova. O Campbell (cap. 50, p. 2011 aprox.) diz que, no WRISBERG, sem inserção tibial posterior adequada, o tratamento **geralmente é a meniscectomia total**, aberta ou artroscópica, porque a subtotal isolada **deixa um rebordo instável** que certamente dará problemas; acrescenta que crianças com discoide parecem menos propensas à degeneração após a total. O HEBERT (cap. 15) diz que nos instáveis (**tipo 3**) a **total é indicada com frequência**, e que alguns **reconstroem o ligamento meniscofemoral posterior** para fugir da artrose (**48% a 89%**) da ressecção total. Já o Campbell no capítulo de artroscopia (cap. 56, p. 2344) faz o **reparo do tipo WRISBERG** quando há tecido saudável, e o Lovell and Winter (p. 1614) e o Tachdjian (p. 2015) saucerizam e **suturam** as áreas instáveis.
+Esse é o ponto de maior divergência do tema, e já caiu em prova. O Campbell (cap. 50, p. 2011) diz que, no WRISBERG, sem inserção tibial posterior adequada, o tratamento **geralmente é a meniscectomia total**, aberta ou artroscópica, porque a subtotal isolada **deixa um rebordo instável** que certamente dará problemas; acrescenta que crianças com discoide parecem menos propensas à degeneração após a total. O HEBERT (cap. 15) diz que nos instáveis (**tipo 3**) a **total é indicada com frequência**, e que alguns **reconstroem o ligamento meniscofemoral posterior** para fugir da artrose (**48% a 89%**) da ressecção total. Já o Campbell no capítulo de artroscopia (cap. 56, p. 2344) faz o **reparo do tipo WRISBERG** quando há tecido saudável, e o Lovell and Winter (p. 1614) e o Tachdjian (p. 2015) saucerizam e **suturam** as áreas instáveis.
 
 Ou seja, a escola antiga (Campbell cap. 50, HEBERT) manda tirar o WRISBERG inteiro; a atual (Campbell cap. 56, Lovell and Winter, Tachdjian) prefere saucerizar e fixar. A prova que pergunta "a meniscectomia total está indicada no tipo WRISBERG" está repetindo a escola antiga, que continua escrita no Campbell.
 
-!tabela Tratamento do tipo WRISBERG em cada livro (Campbell 15, cap. 50, p. 2011 aprox., e cap. 56, p. 2344; HEBERT, cap. 15; Lovell and Winter, cap. 31, p. 1614; Tachdjian, cap. 40, p. 2015)
+!tabela Tratamento do tipo WRISBERG em cada livro (Campbell 15, cap. 50, p. 2011, e cap. 56, p. 2344; HEBERT, cap. 15; Lovell and Winter, cap. 31, p. 1614; Tachdjian, cap. 40, p. 2015)
 | Livro | Conduta | Argumento |
 |---|---|---|
 | Campbell, cap. 50 | meniscectomia total, aberta ou artroscópica | subtotal deixa rebordo instável; criança com discoide tolera melhor a total |
@@ -346,7 +346,7 @@ armadilha: Inverter um dos dois sinais: a espinha é hipoplásica (não hiperpl�
 
 Os quatro livros concordam: o discoide **assintomático** não se opera. O Lovell and Winter (cap. 31, p. 1614) diz que discoides assintomáticos são **deixados em paz** e que, quando notados **incidentalmente na artroscopia**, a maioria dos autores recomenda **não tratar**, porque o joelho **pode ter se adaptado** à anatomia discoide. O Campbell (cap. 56, p. 2344) dá a regra prática: se o discoide é achado durante a artroscopia de um joelho cujos sintomas vêm de **outra lesão**, corrige-se a lesão responsável e o discoide **fica intacto, a menos que esteja roto ou degenerado**, com cuidado de examinar as faces superior e inferior para não deixar passar uma lesão.
 
-O Campbell (cap. 50, p. 2011 aprox.) é um pouco mais nuançado: o completo ou incompleto intacto achado na artroscopia ou artrotomia **não necessariamente** requer tratamento; não se sabe quantos desenvolverão lesão ou degeneração; a conduta deve ser individual e, a não ser que o discoide estável já tenha causado **sulco, condromalácia** ou outra patologia no compartimento, o tratamento **provavelmente deve ser adiado**.
+O Campbell (cap. 50, p. 2011) é um pouco mais nuançado: o completo ou incompleto intacto achado na artroscopia ou artrotomia **não necessariamente** requer tratamento; não se sabe quantos desenvolverão lesão ou degeneração; a conduta deve ser individual e, a não ser que o discoide estável já tenha causado **sulco, condromalácia** ou outra patologia no compartimento, o tratamento **provavelmente deve ser adiado**.
 
 ## O estalido indolor: observar
 
@@ -356,7 +356,7 @@ O Tachdjian (cap. 40, p. 2015) diz que muitas crianças com achado incidental de
 
 O Tachdjian (p. 2015) lista as indicações: **desconforto, edema, perda de movimento, travamento, incapacidade de correr ou de praticar esporte**. O tratamento depende, segundo o HEBERT, dos **sintomas, da sua duração e da idade**.
 
-!tabela Indicação de cirurgia (Tachdjian, cap. 40, p. 2015; Lovell and Winter, cap. 31, p. 1614; Campbell 15, cap. 50, p. 2011 aprox., e cap. 56, p. 2344; HEBERT, cap. 15)
+!tabela Indicação de cirurgia (Tachdjian, cap. 40, p. 2015; Lovell and Winter, cap. 31, p. 1614; Campbell 15, cap. 50, p. 2011, e cap. 56, p. 2344; HEBERT, cap. 15)
 | Situação | Conduta | Fonte |
 |---|---|---|
 | Discoide assintomático na RM | observar | todos |
@@ -377,7 +377,7 @@ armadilha: Saucerizar "para prevenir": nenhum livro manda operar o discoide inta
 
 ## O que é saucerizar
 
-Saucerizar é transformar o disco num **pires**: remove-se a porção **central** do discoide e deixa-se um **rebordo periférico** com a largura aproximada de um menisco lateral normal. O Lovell and Winter (cap. 31, p. 1614) define o objetivo: criar um **menisco estável e funcional**, que absorva choque **sem relesão**. O Tachdjian (cap. 40, p. 2015) chama de **meniscectomia parcial central** com **preservação da estrutura periférica**. O Campbell (cap. 56, p. 2344) diz que o objetivo é remover a porção central deixando um **rebordo equilibrado**, e chama a meniscectomia parcial central de **saucerização**. No Campbell (cap. 50, p. 2011 aprox.), os rotos com dor, estalido e **segmento medial hipermóvel** mas inserções periféricas íntegras são tratados por **meniscectomia subtotal** ou **saucerização do fragmento móvel**, artroscópica ou aberta.
+Saucerizar é transformar o disco num **pires**: remove-se a porção **central** do discoide e deixa-se um **rebordo periférico** com a largura aproximada de um menisco lateral normal. O Lovell and Winter (cap. 31, p. 1614) define o objetivo: criar um **menisco estável e funcional**, que absorva choque **sem relesão**. O Tachdjian (cap. 40, p. 2015) chama de **meniscectomia parcial central** com **preservação da estrutura periférica**. O Campbell (cap. 56, p. 2344) diz que o objetivo é remover a porção central deixando um **rebordo equilibrado**, e chama a meniscectomia parcial central de **saucerização**. No Campbell (cap. 50, p. 2011), os rotos com dor, estalido e **segmento medial hipermóvel** mas inserções periféricas íntegras são tratados por **meniscectomia subtotal** ou **saucerização do fragmento móvel**, artroscópica ou aberta.
 
 Todos preferem preservar. O Lovell and Winter (p. 1614) diz que o discoide sintomático é **melhor tratado com preservação do tecido**, pela saucerização artroscópica, e **não pela meniscectomia total**.
 
@@ -395,7 +395,7 @@ O Tachdjian (p. 2015) usa **ótica de 30 graus**, a maior parte do trabalho em *
 
 ## Depois de saucerizar: testar e reparar
 
-Este é o passo que diferencia o tratamento atual. O Lovell and Winter (p. 1614) manda avaliar a **estabilidade do rebordo com o probe** e **suturar à cápsula**, pela técnica padrão, as áreas instáveis. O Tachdjian (p. 2015 e 2016) faz a **estabilização periférica** com **desbridamento superficial** e preparo do tecido com raspa ou shaver, seguido de **suturas verticais** por técnica **inside-out** e **all-inside**; o **terço anterior** é estabilizado por **outside-in**. Lesões do corpo dentro da zona a preservar são reparadas pelas mesmas técnicas. O HEBERT (cap. 15) diz que, quando a lesão está na **área periférica vascularizada**, **sutura e reparo** são os tratamentos de escolha. O Campbell (cap. 50, p. 2011 aprox.) explica por que isso funciona na criança: a **maior vascularização** do menisco imaturo permite **mudanças adaptativas** no rebordo restante com o crescimento, e pode surgir um rebordo **estável, saudável e útil**.
+Este é o passo que diferencia o tratamento atual. O Lovell and Winter (p. 1614) manda avaliar a **estabilidade do rebordo com o probe** e **suturar à cápsula**, pela técnica padrão, as áreas instáveis. O Tachdjian (p. 2015 e 2016) faz a **estabilização periférica** com **desbridamento superficial** e preparo do tecido com raspa ou shaver, seguido de **suturas verticais** por técnica **inside-out** e **all-inside**; o **terço anterior** é estabilizado por **outside-in**. Lesões do corpo dentro da zona a preservar são reparadas pelas mesmas técnicas. O HEBERT (cap. 15) diz que, quando a lesão está na **área periférica vascularizada**, **sutura e reparo** são os tratamentos de escolha. O Campbell (cap. 50, p. 2011) explica por que isso funciona na criança: a **maior vascularização** do menisco imaturo permite **mudanças adaptativas** no rebordo restante com o crescimento, e pode surgir um rebordo **estável, saudável e útil**.
 
 ## Pós-operatório
 
@@ -405,7 +405,7 @@ O Tachdjian (p. 2016) separa dois regimes:
 - **Após reparo**: **órtese** e **carga limitada por 4 a 6 semanas**, com exercícios precoces de amplitude e reabilitação muscular; **sem esporte por 3 a 4 meses**.
 - Quem tinha **posição em flexão** antes da cirurgia pode precisar de fisioterapia para recuperar a extensão completa.
 
-!tabela Números da saucerização (Lovell and Winter, cap. 31, p. 1614; Tachdjian, cap. 40, p. 2015 e 2016; Campbell 15, cap. 50, p. 2011 aprox., e cap. 56, p. 2344; HEBERT, cap. 15)
+!tabela Números da saucerização (Lovell and Winter, cap. 31, p. 1614; Tachdjian, cap. 40, p. 2015 e 2016; Campbell 15, cap. 50, p. 2011, e cap. 56, p. 2344; HEBERT, cap. 15)
 | Item | Lovell and Winter | Tachdjian | Campbell 15 | HEBERT |
 |---|---|---|---|---|
 | Rebordo preservado | 6 a 8 mm | 5 a 7 mm | 6 a 8 mm (técnica: cerca de 8 mm) | 5 a 8 mm |
@@ -428,7 +428,7 @@ armadilha: Marcar periférica: a periferia é justamente o que se preserva, porq
 
 O Lovell and Winter (cap. 31, p. 1614) reconhece que uma **minoria** ainda prefere a meniscectomia total, por achar que o tecido discoide residual é **anormal e não funcionará**. Mas vários estudos mostram **altas taxas de artrose** depois da total: numa série, **10 de 17 crianças** tinham alterações clínicas e radiográficas de artrose do compartimento lateral com **19,8 anos** de seguimento; em outra análise de **125 discoides** submetidos a meniscectomia parcial ou total, o grupo **parcial** foi melhor aos 5 anos e o prognóstico a longo prazo se relacionou ao **volume de menisco removido**.
 
-O Campbell (cap. 50, p. 2011 aprox.) traz os números de 10 anos que melhor mostram a curva dose-resposta: alterações degenerativas em **23%** das crianças (média de 9,9 anos) tratadas **só com saucerização**, **39%** com **meniscectomia parcial e reparo**, e **88%** com **meniscectomia subtotal**. A **idade** é fator prognóstico importante: os desfechos pioram com a idade. O HEBERT (cap. 15) dá **48% a 89%** de artrose após a ressecção total. Há, ainda, a ressalva do Campbell de que crianças com discoide parecem menos propensas à degeneração após a total do que as com menisco lateral normal.
+O Campbell (cap. 50, p. 2011) traz os números de 10 anos que melhor mostram a curva dose-resposta: alterações degenerativas em **23%** das crianças (média de 9,9 anos) tratadas **só com saucerização**, **39%** com **meniscectomia parcial e reparo**, e **88%** com **meniscectomia subtotal**. A **idade** é fator prognóstico importante: os desfechos pioram com a idade. O HEBERT (cap. 15) dá **48% a 89%** de artrose após a ressecção total. Há, ainda, a ressalva do Campbell de que crianças com discoide parecem menos propensas à degeneração após a total do que as com menisco lateral normal.
 
 ## Saucerização: bons resultados de curto prazo
 
@@ -445,7 +445,7 @@ Os dois livros listam fatores diferentes, e vale conhecer os dois:
 
 O Lovell and Winter (p. 1615) cita o **aloenxerto meniscal** como opção para pacientes sintomáticos que já fizeram meniscectomia total por discoide: em **14 pacientes**, com seguimento médio de **4,8 anos**, o escore de **LYSHOLM** subiu de **71,4 para 91,4**, e em **seis** artroscopias de revisão houve só **uma relesão**.
 
-!tabela Resultados nos livros (Lovell and Winter, cap. 31, p. 1614 e 1615; Tachdjian, cap. 40, p. 2016; Campbell 15, cap. 50, p. 2011 aprox., e cap. 56, p. 2344; HEBERT, cap. 15)
+!tabela Resultados nos livros (Lovell and Winter, cap. 31, p. 1614 e 1615; Tachdjian, cap. 40, p. 2016; Campbell 15, cap. 50, p. 2011, e cap. 56, p. 2344; HEBERT, cap. 15)
 | Tratamento | Resultado | Fonte |
 |---|---|---|
 | Meniscectomia total | 10 de 17 com artrose lateral em 19,8 anos | Lovell and Winter |

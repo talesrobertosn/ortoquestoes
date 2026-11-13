@@ -1,6 +1,6 @@
 ---
 id: hebert-hiperparatireoidismo
-versao: 1
+versao: 2
 titulo: Hiperparatireoidismo e osteodistrofia renal
 especialidade: osteometabolicas
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio HEBERT)
 edicao: 5ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), caps. 38 e 15, o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), cap. 6, o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 2, 4 e 25, o Campbell's Operative Orthopaedics, 15ª ed. (2026), caps. 7, 26, 27, 34 e 38, e o Dahlin's Bone Tumors, 6ª ed. (2010), cap. 26
 capitulo: Capítulo 27 · Doenças osteometabólicas
 autores: Akira ISHIDA, José Antonio PINTO, Francesco Camara BLUMETTI, Henrique SODRÉ e Eiffel Tsuyoshi DOBASHI (HEBERT, cap. 27); Harry K.W. KIM e Mouin G. SEIKALY (Tachdjian, cap. 38); Andrew W. HOWARD e Benjamin A. ALMAN (Lovell, cap. 6); Derek G. HANSEN e Stuart H. RALSTON (Rockwood, cap. 4)
-fonte: Livros conferidos localmente em 04/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 27 (raquitismo, osteodistrofia renal, hiperparatireoidismo primário e secundário), cap. 28 (Tabela 28.1 e teriparatida), cap. 29 (tumor marrom e diagnósticos diferenciais) e cap. 9.6 (causas de epifisiólise), edição digital sem página impressa; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, p. 1936 e 1968 a 1975 (osteodistrofia renal, hipofosfatasia e osteopetrose), e cap. 15, p. 584, 585 e 593 aprox. (epifisiólise renal); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6, p. 142 a 145 (PTH, vitamina D, calcitonina) e 149 a 151 (osteodistrofia renal); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 4, p. aprox. 87, 93 a 96, 101 e 104 (reguladores, teriparatida, PAGET, osteomalácia e hiperparatireoidismo primário com a Fig. 4-8), cap. 2 (seção Parathyroid Hormone) e cap. 25, p. 765 a 768 aprox. (fratura patológica, Tabelas 25-4 e 25-5); Campbell's Operative Orthopaedics, 15ª ed., cap. 7, p. 392, cap. 26, p. 870 e 871, cap. 27, p. 945 e 946, cap. 34, p. 1220.e1, e cap. 38, p. 1428 e 1429; Dahlin's Bone Tumors, 6ª ed., cap. 26, p. 364 a 368. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 04/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 27 (raquitismo, osteodistrofia renal, hiperparatireoidismo primário e secundário), cap. 28 (Tabela 28.1 e teriparatida), cap. 29 (tumor marrom e diagnósticos diferenciais) e cap. 9.6 (causas de epifisiólise), edição digital sem página impressa; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, p. 1936 e 1968 a 1975 (osteodistrofia renal, hipofosfatasia e osteopetrose), e cap. 15, p. 584, 585 e 593 (epifisiólise renal); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6, p. 142 a 145 (PTH, vitamina D, calcitonina) e 149 a 151 (osteodistrofia renal); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 4, seções Molecular Regulators of Bone Remodeling, Drug Treatments (Teriparatide), Paget Disease of Bone, Osteomalacia and Rickets e Primary Hyperparathyroidism com a Fig. 4-8, cap. 2 (seção Parathyroid Hormone) e cap. 25, seções Introduction, Clinical Evaluation (Laboratory Studies, Tabela 25-4) e Imaging Studies (Radiographs, Tabela 25-5); edição digital sem página impressa, citada por capítulo e seção; Campbell's Operative Orthopaedics, 15ª ed., cap. 7, p. 392, cap. 26, p. 870 e 871, cap. 27, p. 945 e 946, cap. 34, p. 1220.e1, e cap. 38, p. 1428 e 1429; Dahlin's Bone Tumors, 6ª ed., cap. 26, p. 364 a 368. As páginas citadas são as impressas.
 subtemas: Hiperparatireoidismo e osteodistrofia renal
 resumo: PTH faz o rim reter cálcio e perder fosfato, ativa o osteoclasto pelo RANKL do osteoblasto e estimula o 1,25; calcitonina quase não conta no homem; primário (80% adenoma, mulher 3:1, acima de 50 anos) = cálcio alto, fosfato baixo, PTH alto, hipercalciúria (cálcio e creatinina urinários afastam a hipercalcemia hipocalciúrica familiar); radiografia com reabsorção subperiosteal das falanges, clavícula distal afilada, crânio em sal e pimenta, perda da lâmina dura e tumor marrom (não curetar: tratar a paratireoide); secundário = resposta à hipocalcemia; terciário = glândula autônoma após o transplante; osteodistrofia renal = fosfato alto e PTH muito alto, a única forma de raquitismo com fosfato alto, coluna em camisa de rúgbi, fises largas sem taça, epifisiólise bilateral em criança pequena; teriparatida intermitente é anabólica; osteodistrofia renal, hiperparatireoidismo e osteomalácia são causas corrigíveis de fratura patológica.
 ---
@@ -41,7 +41,7 @@ O HEBERT (cap. 27, Fisiopatologia do hiperparatireoidismo primário) descreve as
 
 O Lovell (p. 142 e 143) acrescenta dois detalhes que viram pegadinha. Primeiro, **o osteoclasto não tem receptor de PTH**: o PTH estimula diretamente o osteoblasto, que passa a expressar **RANKL**, e o RANKL ativa o osteoclasto. O efeito final é reabsorção, mas a via é indireta. Segundo, a **reabsorção tubular de fosfato varia de quase 100% a menos de 50%**, e o principal fator que a diminui é o **PTH**. Por isso todo estado de PTH alto com rim funcionante tende a **fosfato baixo**.
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, p. aprox. 87), põe o PTH entre os estimuladores da reabsorção, agindo também pelo **RANKL e pela osteoprotegerina** da linhagem osteoblástica, e diz (p. aprox. 104) que a hipercalcemia do primário vem sobretudo do **aumento da reabsorção tubular renal de cálcio**.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, seção Molecular Regulators of Bone Remodeling, subseção Bone Resorption), põe o PTH entre os estimuladores da reabsorção, agindo também pelo **RANKL e pela osteoprotegerina** da linhagem osteoblástica, e diz (seção Primary Hyperparathyroidism, subseção Pathophysiology) que a hipercalcemia do primário vem sobretudo do **aumento da reabsorção tubular renal de cálcio**.
 
 ## A vitamina D
 
@@ -82,7 +82,7 @@ O HEBERT (cap. 28) diz o mesmo com as palavras que as bancas copiam: **administr
 
 O HEBERT separa os agentes em dois grupos. Os **antirreabsortivos** inibem a atividade osteoclástica e são úteis nas fases de remodelação rápida: **estrógenos, calcitonina e bifosfonados** (o alendronato é o exemplo). Os **estimuladores da formação** eram representados pelo **fluoreto de sódio**, com resultados conflitantes, e pelo **paratormônio**. Numa lista com estrógeno, calcitonina, alendronato e paratormônio, só um estimula a formação.
 
-O Rockwood (cap. 4, p. aprox. 93) dá os números: **20 µg por dia por via subcutânea**, ganho maior em osso trabecular (coluna), **duração de 2 anos** seguida de antirreabsortivo; o efeito adverso que interessa aqui é a **hipercalcemia leve**, em geral assintomática. O resto da farmacologia está no resumo de Osteoporose: diagnóstico e tratamento.
+O Rockwood (cap. 4, seção Drug Treatments, subseção Teriparatide) dá os números: **20 µg por dia por via subcutânea**, ganho maior em osso trabecular (coluna), **duração de 2 anos** seguida de antirreabsortivo; o efeito adverso que interessa aqui é a **hipercalcemia leve**, em geral assintomática. O HEBERT (cap. 28) escreve a dose como "20 mg" diários de PTH 1-34; a unidade que vale é a do Rockwood, **20 µg** (20 mg seriam mil vezes essa dose). O resto da farmacologia está no resumo de Osteoporose: diagnóstico e tratamento.
 
 !tabela PTH contínuo contra PTH intermitente (Rockwood, caps. 2 e 4; HEBERT, caps. 27 e 28)
 | Situação | Exposição | Célula que predomina | Resultado no osso |
@@ -104,7 +104,7 @@ armadilha: Marcar a calcitonina, que também é hormônio do cálcio mas é anti
 
 ## O tamanho do problema
 
-O HEBERT (cap. 27) lembra que ALBRIGHT, em 1937, já via o hiperparatireoidismo mais ligado à **nefropatia** que ao osso; hoje só **20 a 25%** têm alteração óssea na radiografia (menos de 5% nos Estados Unidos, pela dosagem rotineira do cálcio). É a **causa mais comum de hipercalcemia**, com incidência de **1 em 500 a 1 em 1.000** (2 a 3% das mulheres pós-menopáusicas), mais frequente **acima da quinta década**, com **mulheres 3 para 1**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, p. aprox. 104), concorda: **0,25% das mulheres e 0,08% dos homens**, a maioria acima dos **50 anos**.
+O HEBERT (cap. 27) lembra que ALBRIGHT, em 1937, já via o hiperparatireoidismo mais ligado à **nefropatia** que ao osso; hoje só **20 a 25%** têm alteração óssea na radiografia (menos de 5% nos Estados Unidos, pela dosagem rotineira do cálcio). É a **causa mais comum de hipercalcemia**, com incidência de **1 em 500 a 1 em 1.000** (2 a 3% das mulheres pós-menopáusicas), mais frequente **acima da quinta década**, com **mulheres 3 para 1**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), concorda (seção Primary Hyperparathyroidism, subseção Epidemiology): **0,25% das mulheres e 0,08% dos homens**, a maioria acima dos **50 anos**.
 
 ## A causa
 
@@ -132,7 +132,7 @@ O HEBERT (cap. 27, Diagnóstico laboratorial) define o padrão em uma linha: **h
 - Os **marcadores de formação** (fosfatase alcalina óssea, osteocalcina) e de **reabsorção** (C-telopeptídeo) podem subir mesmo sem doença óssea aparente; interleucina 6 e fator de necrose tumoral também.
 - Na urina: **hipercalciúria** e aumento da deoxipiridinolina e do N-telopeptídeo.
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, p. aprox. 104), lista a investigação básica: **cálcio, albumina, fosfatase alcalina, fosfato, PTH e creatinina no sangue, mais cálcio e creatinina na urina**. O padrão típico é o **cálcio corrigido pela albumina elevado com PTH elevado ou inapropriadamente normal**. A expressão "inapropriadamente normal" é a pegadinha fina: diante de cálcio alto, a glândula normal deveria estar suprimida, de modo que um PTH dentro da faixa já é anormal. O **fosfato é baixo ou normal baixo**; a **fosfatase alcalina em geral é normal** e, quando elevada, sugere **osteíte fibrosa cística**.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, seção Primary Hyperparathyroidism, subseção Investigations), lista a investigação básica: **cálcio, albumina, fosfatase alcalina, fosfato, PTH e creatinina no sangue, mais cálcio e creatinina na urina**. O padrão típico é o **cálcio corrigido pela albumina elevado com PTH elevado ou inapropriadamente normal**. A expressão "inapropriadamente normal" é a pegadinha fina: diante de cálcio alto, a glândula normal deveria estar suprimida, de modo que um PTH dentro da faixa já é anormal. O **fosfato é baixo ou normal baixo**; a **fosfatase alcalina em geral é normal** e, quando elevada, sugere **osteíte fibrosa cística**.
 
 Os dois livros convergem, com diferença de ênfase. O HEBERT escreve o trio clássico (cálcio alto, fosfato baixo, PTH alto); o Rockwood relativiza os dois últimos (fosfato "baixo ou normal baixo", PTH "elevado ou inapropriadamente normal"). Para a alternativa de prova, vale o trio do HEBERT.
 
@@ -185,7 +185,7 @@ Os sinais que o HEBERT descreve, e que se repetem nos outros livros:
 
 ## A mão, onde a reabsorção aparece primeiro
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, p. aprox. 104), diz que a radiografia **costuma ser normal** no primário, mas que a doença avançada mostra **erosões subperiosteais e reabsorção terminal das falanges**. A Figura 4-8 do capítulo, usada no OrtoQuestões Simulado, compara o dedo doente com o normal do mesmo paciente: a **margem cortical da falange média** fica rendilhada pelas erosões subperiosteais (setas laterais) e o **tufo da falange distal** está corroído (seta na ponta), enquanto o dedo normal tem contorno liso e tufo íntegro.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, seção Primary Hyperparathyroidism, subseção Investigations), diz que a radiografia **costuma ser normal** no primário, mas que a doença avançada mostra **erosões subperiosteais e reabsorção terminal das falanges**. A Figura 4-8 do capítulo, usada no OrtoQuestões Simulado, compara o dedo doente com o normal do mesmo paciente: a **margem cortical da falange média** fica rendilhada pelas erosões subperiosteais (setas laterais) e o **tufo da falange distal** está corroído (seta na ponta), enquanto o dedo normal tem contorno liso e tufo íntegro.
 
 O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 6, p. 149), dá o endereço clássico das erosões no adulto: **a margem radial das falanges médias do segundo e do terceiro dedos**. Na criança, elas também aparecem nas **faces laterais do rádio e da ulna distais** e na **face medial da tíbia proximal** (Fig. 6-6). O Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 366 e 367), insiste que, diante de uma lesão óssea suspeita, a radiografia em geral mostra **reabsorção subperiosteal, sobretudo na mão** (Fig. 26.137, segundo e terceiro dedos).
 
@@ -284,7 +284,7 @@ No assintomático sem cirurgia, **25%** passam a ter critério cirúrgico; o HEB
 
 O HEBERT (cap. 27) define: as paratireoides **sofrem hiperplasia secundária à hipocalcemia, não importa a origem** (raquitismo, osteomalácia, doenças renais, disfunções hepatobiliares). No primário a glândula é a doente e o cálcio sobe; no secundário ela é saudável e trabalha a mais porque o cálcio está baixo, de modo que **o cálcio fica baixo ou, no máximo, normal**, e o quadro **pode regredir se a causa for tratada**.
 
-O fosfato depende do rim. Com o rim funcionando, o PTH alto faz perder fosfato e o **fosfato cai**: o Rockwood (cap. 4, p. aprox. 101) descreve a osteomalácia com **fosfatase alcalina alta, cálcio normal ou baixo, fosfato baixo** e, na deficiência de vitamina D, **PTH muito elevado**. Com o rim falhando, o **fosfato sobe**: é a osteodistrofia renal.
+O fosfato depende do rim. Com o rim funcionando, o PTH alto faz perder fosfato e o **fosfato cai**: o Rockwood (cap. 4, seção Osteomalacia and Rickets, subseção Investigations) descreve a osteomalácia com **fosfatase alcalina alta, cálcio normal ou baixo, fosfato baixo** e, na deficiência de vitamina D, **PTH muito elevado**. Com o rim falhando, o **fosfato sobe**: é a osteodistrofia renal.
 
 Um secundário iatrogênico: no ligado ao X, a **principal complicação do fosfato oral é o hiperparatireoidismo secundário** (HEBERT, cap. 27); o Tachdjian (cap. 38, p. 1936) confirma que **fósforo em dose alta isolado** causa hiperparatireoidismo. O fosfato liga o cálcio, o cálcio iônico cai e a paratireoide responde.
 
@@ -365,12 +365,12 @@ O Tachdjian usa o mesmo nome, camisa de rúgbi, para a **osteopetrose** (cap. 38
 
 ## Lendo um perfil bioquímico
 
-A habilidade que a prova testa é olhar três números e dizer a doença. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, p. aprox. 768), manda, diante de uma fratura patológica, avaliar a **osteopenia generalizada** com a ajuda de uma tabela de distúrbios que produzem osteopenia (Tabela 25-5); no PDF local, porém, só o título da tabela aparece, com o corpo em branco, e o raciocínio precisa ser reconstruído pelos outros capítulos:
+A habilidade que a prova testa é olhar três números e dizer a doença. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, seção Imaging Studies, subseção Radiographs), manda, diante de uma fratura patológica, avaliar a **osteopenia generalizada** com a ajuda de uma tabela de distúrbios que produzem osteopenia (Tabela 25-5); no PDF local, porém, só o título da tabela aparece, com o corpo em branco, e o raciocínio precisa ser reconstruído pelos outros capítulos:
 
 - **Cálcio baixo, fósforo alto, fosfatase alcalina alta**: só uma doença deixa o fósforo alto, a **osteodistrofia renal** (HEBERT, cap. 27; Tachdjian, p. 1971).
-- **Cálcio normal ou baixo, fósforo baixo, fosfatase alcalina alta**: **osteomalácia** (Rockwood, cap. 4, p. aprox. 101).
-- **Cálcio alto, fósforo baixo**, fosfatase alcalina normal ou alta: **hiperparatireoidismo primário** (HEBERT; Rockwood, p. aprox. 104).
-- **Fosfatase alcalina alta isolada**, elevada em 95% dos não tratados: **PAGET** (Rockwood, cap. 4, p. aprox. 96), cujo diagnóstico é sobretudo radiográfico; o livro não descreve alteração do cálcio e do fósforo como marca da doença.
+- **Cálcio normal ou baixo, fósforo baixo, fosfatase alcalina alta**: **osteomalácia** (Rockwood, cap. 4, seção Osteomalacia and Rickets, subseção Investigations).
+- **Cálcio alto, fósforo baixo**, fosfatase alcalina normal ou alta: **hiperparatireoidismo primário** (HEBERT; Rockwood, cap. 4, seção Primary Hyperparathyroidism, subseção Investigations).
+- **Fosfatase alcalina alta isolada**, elevada em 95% dos não tratados: **PAGET** (Rockwood, cap. 4, seção Paget Disease of Bone, subseção Investigations and Diagnosis), cujo diagnóstico é sobretudo radiográfico; o livro não descreve alteração do cálcio e do fósforo como marca da doença.
 - **Fosfatase alcalina baixa**, com fósforo, vitamina D e PTH normais: **hipofosfatasia** (Tachdjian, p. 1968).
 
 !tabela Perfis bioquímicos dos distúrbios que produzem osteopenia (HEBERT, caps. 27 e 28; Rockwood, cap. 4; Tachdjian, cap. 38)
@@ -414,7 +414,7 @@ O Tachdjian (cap. 38, p. 1974) descreve o paciente: **mais jovem**, **sem obesid
 
 Os livros concordam no princípio e divergem no método, porque o objetivo do tratamento idiopático (fechar a fise) **não é desejável na criança muito pequena**, e a consolidação da fise é difícil com osteíte fibrosa e metabolismo descontrolado (Tachdjian, p. 1974):
 
-- **Tratamento clínico primeiro.** Em muitos pacientes a dor some e a fise estreita só com o controle da osteodistrofia, e nem todo deslizamento renal precisa de cirurgia (Tachdjian). O Lovell, na criança jovem com deslizamento grave e doença ainda não tratada, cita bons resultados com **tração mais tratamento clínico**; o Tachdjian (cap. 15, p. 593 aprox.) admite o **gesso pelvipodálico** em renais cujo hiperparatireoidismo pode melhorar depressa e em quem a cirurgia é desaconselhada.
+- **Tratamento clínico primeiro.** Em muitos pacientes a dor some e a fise estreita só com o controle da osteodistrofia, e nem todo deslizamento renal precisa de cirurgia (Tachdjian). O Lovell, na criança jovem com deslizamento grave e doença ainda não tratada, cita bons resultados com **tração mais tratamento clínico**; o Tachdjian (cap. 15, p. 593) admite o **gesso pelvipodálico** em renais cujo hiperparatireoidismo pode melhorar depressa e em quem a cirurgia é desaconselhada.
 - **Fixar os dois lados.** Pela alta bilateralidade, o Lovell sugere estabilizar as duas epífises.
 - **Fixar sem fechar a fise na criança pequena.** O Lovell propõe **fios lisos atravessando a fise**; o Tachdjian, **parafusos especiais parcialmente rosqueados** que cruzam sem fechar; o Campbell (cap. 38, p. 1429), um parafuso pela cortical anterolateral **sem roscas cruzando a fise**, para permitir o crescimento em jovens com osteodistrofia renal.
 - **No adolescente**, fixação in situ com fechamento da fise, desde que a doença metabólica esteja tratada (Tachdjian, p. 1975).
@@ -462,11 +462,11 @@ armadilha: Marcar calciúria aumentada ou maior atividade de osteoclastos, que s
 
 # A fratura patológica nas doenças metabólicas corrigíveis {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, p. 765), abre o capítulo de fraturas patológicas com uma regra de conduta: diante de uma fratura não neoplásica em osso anormal, **firmar o diagnóstico de base** e separar as condições em **corrigíveis e não corrigíveis**. As corrigíveis são as **sistêmicas e metabólicas**: **osteodistrofia renal, hiperparatireoidismo, osteomalácia e osteoporose por desuso**. As não corrigíveis são as **genéticas ou hereditárias**: osteogênese imperfeita, displasia fibrosa poliostótica, osteoporose pós-menopausa, doença de PAGET e osteopetrose. Todas dão osso fino, frágil ou quebradiço, com mais fraturas, **retardo de consolidação e pseudartrose**; se a causa é corrigível, faz-se o tratamento clínico, muitas vezes multidisciplinar, junto com o da fratura.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, seção Introduction), abre o capítulo de fraturas patológicas com uma regra de conduta: diante de uma fratura não neoplásica em osso anormal, **firmar o diagnóstico de base** e separar as condições em **corrigíveis e não corrigíveis**. As corrigíveis são as **sistêmicas e metabólicas**: **osteodistrofia renal, hiperparatireoidismo, osteomalácia e osteoporose por desuso**. As não corrigíveis são as **genéticas ou hereditárias**: osteogênese imperfeita, displasia fibrosa poliostótica, osteoporose pós-menopausa, doença de PAGET e osteopetrose. Todas dão osso fino, frágil ou quebradiço, com mais fraturas, **retardo de consolidação e pseudartrose**; se a causa é corrigível, faz-se o tratamento clínico, muitas vezes multidisciplinar, junto com o da fratura.
 
 As três doenças metabólicas corrigíveis têm um culpado tratável: retira-se o adenoma (densidade **10 a 12% maior em 10 anos**, HEBERT), controla-se o fosfato e o PTH no renal, dá-se vitamina D na osteomalácia. O Campbell (cap. 26, p. 870 e 871) inclui **cálcio, fósforo, fosfatase alcalina e PTH** na investigação da lesão óssea e põe o hiperparatireoidismo no diferencial das lesões múltiplas; no cap. 7 (p. 392, Box 7.6), entre as causas metabólicas de **protrusão acetabular**.
 
-!tabela Doenças com fratura patológica não neoplásica (Rockwood, cap. 25, p. 765)
+!tabela Doenças com fratura patológica não neoplásica (Rockwood, cap. 25, seção Introduction)
 | Corrigíveis (sistêmicas e metabólicas) | Não corrigíveis (genéticas ou hereditárias) |
 |---|---|
 | Osteodistrofia renal | Osteogênese imperfeita |

@@ -1,6 +1,6 @@
 ---
 id: campbell15-tcg
-versao: 1
+versao: 2
 titulo: Tumor de células gigantes
 especialidade: tumores
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição
 capitulo: Capítulo 28 · Aggressive Benign Tumors of Bone
 autores: Patrick C. TOY e Robert K. HECK Jr.
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone, seção Giant Cell Tumor inteira, Tabela 28.1 e Campbell's Concepts, p. 952 a 958), cap. 26 (General Principles of Tumors: sexo, lesões epifisárias, sacro e coluna, laboratório, ENNEKING, congelação, radioterapia e curetagem, p. 867 a 883) e cap. 49 (Infections and Tumors of the Spine, de Keith D. WILLIAMS e Keith J. ORLAND: Tabela 49.2, classificação e seção Giant Cell Tumor, p. 1955 a 1964); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais, seção TCG inteira), cap. 30 (estadiamento de ENNEKING) e capítulo de coluna cervical (tumores), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone, seção Giant Cell Tumor inteira, Tabela 28.1 e Campbell's Concepts, p. 952 a 958), cap. 26 (General Principles of Tumors: sexo, lesões epifisárias, sacro e coluna, laboratório, ENNEKING, congelação, radioterapia e curetagem, p. 867 a 883) e cap. 49 (Infections and Tumors of the Spine, de Keith D. WILLIAMS e Keith J. ORLAND: Tabela 49.2, classificação e seção Giant Cell Tumor, p. 1955 a 1964, com a Fig. 49.11 na p. 1956); Dahlin's Bone Tumors, 6ª ed. (2010), cap. 19 (Giant Cell Tumor, origem histiocítica das células mononucleares, p. 225); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais, seção TCG inteira), cap. 30 (estadiamento de ENNEKING) e capítulo de coluna cervical (tumores), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
 subtemas: Tumor de células gigantes
 resumo: Tumor benigno localmente agressivo de adulto jovem (20 a 40 anos, leve predomínio feminino, 5% das neoplasias ósseas), lesão lítica pura e excêntrica na epífise do esqueleto maduro encostada no subcondral, sem rima esclerótica nem matriz; fêmur distal, tíbia proximal e rádio distal (o mais agressivo); sacro é o local típico na coluna (benigno mais prevalente do sacro, excêntrico, ao contrário do cordoma) e o corpo vertebral é o sítio vertebral; células gigantes tipo osteoclasto com núcleos idênticos aos das mononucleares estromais; diferencial com tumor marrom (PTH), condroblastoma e condrossarcoma de células claras; ENNEKING 3 (agressivo) e CAMPANACCI I a III; curetagem estendida (janela grande, broca, adjuvante) e cimento; ressecção em bloco no estágio 3 e no rádio distal agressivo; denosumabe (anti-RANKL) nos irressecáveis, com rebote; metástase pulmonar benigna em cerca de 3%, transformação maligna em até 10%, ligada à radioterapia.
 ---
@@ -27,17 +27,17 @@ As bancas cobram de forma muito previsível. Primeiro, o **retrato**: mulher de 
 
 ## Frequência
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 952), usando os dados da Mayo Clinic, diz que o TCG responde por **5% das neoplasias ósseas**. O capítulo 49 do mesmo livro (p. 1963 aprox.) dá um número muito próximo, **4% a 5% de todos os tumores ósseos primários**, e a Tabela 49.2 (p. 1955), copiada de uma revisão sobre tumores da coluna, fala em **4,2%**. Não é um tumor raro como o condroblastoma, que representa só 1% dos tumores ósseos primários na mesma série da Mayo Clinic (p. 958); é um dos benignos agressivos que o ortopedista geral vai encontrar.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 952), usando os dados da Mayo Clinic, diz que o TCG responde por **5% das neoplasias ósseas**. O capítulo 49 do mesmo livro (p. 1963) dá um número muito próximo, **4% a 5% de todos os tumores ósseos primários**, e a Tabela 49.2 (p. 1955), copiada de uma revisão sobre tumores da coluna, fala em **4,2%**. Não é um tumor raro como o condroblastoma, que representa só 1% dos tumores ósseos primários na mesma série da Mayo Clinic (p. 958); é um dos benignos agressivos que o ortopedista geral vai encontrar.
 
 O número que a prova usa como distrator é **10%**. Ele não aparece em nenhum dos livros como frequência do TCG; aparece, isso sim, como teto da transformação maligna. Quem confunde as duas porcentagens cai na pegadinha.
 
 ## Idade
 
-A faixa clássica é **20 a 40 anos** (Campbell, p. 952; Box 26.1 do cap. 26, p. 868). O SIZÍNIO HEBERT, 5ª ed. (cap. 29), dá a mesma faixa e acrescenta o detalhe que explica tudo: o paciente **geralmente está com as placas de crescimento fechadas**. A idade, diz o SIZÍNIO, é o que ajuda a separar o TCG do cisto ósseo aneurismático e do condroblastoma epifisário, que pertencem a grupos etários mais jovens. O capítulo 49 do Campbell (p. 1963 aprox.) fala em **terceira a quinta décadas** e a Tabela 49.2, em 30 a 40 anos, valores que cabem dentro da mesma ideia de adulto jovem.
+A faixa clássica é **20 a 40 anos** (Campbell, p. 952; Box 26.1 do cap. 26, p. 868). O SIZÍNIO HEBERT, 5ª ed. (cap. 29), dá a mesma faixa e acrescenta o detalhe que explica tudo: o paciente **geralmente está com as placas de crescimento fechadas**. A idade, diz o SIZÍNIO, é o que ajuda a separar o TCG do cisto ósseo aneurismático e do condroblastoma epifisário, que pertencem a grupos etários mais jovens. O capítulo 49 do Campbell (p. 1963) fala em **terceira a quinta décadas** e a Tabela 49.2, em 30 a 40 anos, valores que cabem dentro da mesma ideia de adulto jovem.
 
 ## Sexo
 
-O TCG tem **leve predomínio feminino**. O capítulo 28 (p. 952) fala em "maior prevalência no sexo feminino", a Tabela 28.1 (p. 953) em "slight female predominance", e o capítulo 26 (p. 867) usa justamente o TCG como exemplo de tumor com predileção por sexo, avisando que esse dado **raramente tem significado diagnóstico**. Na coluna, o capítulo 49 (p. 1963 aprox.) é mais enfático: as **mulheres são acometidas duas vezes mais** que os homens.
+O TCG tem **leve predomínio feminino**. O capítulo 28 (p. 952) fala em "maior prevalência no sexo feminino", a Tabela 28.1 (p. 953) em "slight female predominance", e o capítulo 26 (p. 867) usa justamente o TCG como exemplo de tumor com predileção por sexo, avisando que esse dado **raramente tem significado diagnóstico**. Na coluna, o capítulo 49 (p. 1963) é mais enfático: as **mulheres são acometidas duas vezes mais** que os homens.
 
 A alternativa "acomete mais homens" está errada em qualquer um dos livros. Repare no contraste com o condroblastoma, que tem predomínio masculino de 2:1 e idade de 10 a 25 anos (Campbell, p. 958): a dupla idade e sexo já afasta um do outro.
 
@@ -262,7 +262,7 @@ Muitos autores tentaram graduar o TCG histologicamente, mas **nenhum sistema mos
 conceito: A célula característica do TCG é a célula gigante multinucleada do tipo osteoclástico, num mar de células estromais mononucleares com núcleos idênticos aos dela.
 como: O TARO 2010 perguntou com que célula se parece a célula característica do TCG (plasmócito, osteoclasto, macrófago, linfócito); o TARO 2012 perguntou com que se parece a célula predominante, com gabarito macrófago.
 armadilha: Responder osteoclasto à questão de 2012, que pergunta pela célula predominante e não pela característica; o gabarito oficial ali é macrófago.
-alerta: Na questão `tumores-0268` o gabarito oficial é A (macrófago). O Campbell (cap. 28, p. 952) e o SIZÍNIO (cap. 29) descrevem a célula gigante como tipo osteoclasto e a célula predominante como estromal mononuclear, citando macrófagos espumosos só como achado ocasional; nenhum dos livros lidos descreve a célula predominante como semelhante ao macrófago.
+alerta: Na questão `tumores-0268` o gabarito oficial é A (macrófago). O Campbell (cap. 28, p. 952) e o SIZÍNIO (cap. 29) descrevem a célula gigante como tipo osteoclasto e a célula predominante como estromal mononuclear, citando macrófagos espumosos só como achado ocasional; o Campbell não aproxima a célula predominante do macrófago. O Dahlin (6ª ed., cap. 19, p. 225) é o livro que sustenta o gabarito: diz que a célula de origem ainda é desconhecida, mas que vários estudos imuno-histoquímicos sugerem que **as células mononucleares são de origem histiocítica** e que as células gigantes nascem da fusão delas.
 !fim
 
 # Diagnóstico diferencial e laboratório {radar=confirmado}
@@ -421,9 +421,9 @@ O SIZÍNIO (cap. 29) chama a amputação de **indicação rara**, só para lesõ
 
 ## Denosumabe
 
-O Campbell (cap. 28, p. 954) descreve o denosumabe como um **anticorpo monoclonal totalmente humano** que inibe a lise óssea normal e tumoral **limitando a maturação dos osteoclastos**, ao impedir a ativação do **RANK** (receptor ativador do fator nuclear kB). O capítulo 49 (p. 1957 aprox.) diz a mesma coisa pelo outro lado da ligação: o anticorpo tem como alvo o **RANKL**, ligante importante para a osteólise mediada pelas células gigantes multinucleadas do TCG.
+O Campbell (cap. 28, p. 954) descreve o denosumabe como um **anticorpo monoclonal totalmente humano** que inibe a lise óssea normal e tumoral **limitando a maturação dos osteoclastos**, ao impedir a ativação do **RANK** (receptor ativador do fator nuclear kB). O capítulo 49 (p. 1957) diz a mesma coisa pelo outro lado da ligação: o anticorpo tem como alvo o **RANKL**, ligante importante para a osteólise mediada pelas células gigantes multinucleadas do TCG.
 
-A indicação aprovada pela FDA é precisa: **adultos e pacientes esqueleticamente maduros com TCG irressecável, ou quando a ressecção causaria morbidade grave** (Campbell, p. 954). No capítulo 49 (p. 1963 aprox.), o denosumabe é citado como benéfico nos TCG irressecáveis da coluna, e a Tabela 49.2 (p. 1955) fala em **uso neoadjuvante nos tumores limítrofes** e como **terapia primária nos irressecáveis**.
+A indicação aprovada pela FDA é precisa: **adultos e pacientes esqueleticamente maduros com TCG irressecável, ou quando a ressecção causaria morbidade grave** (Campbell, p. 954). No capítulo 49 (p. 1963), o denosumabe é citado como benéfico nos TCG irressecáveis da coluna, e a Tabela 49.2 (p. 1955) fala em **uso neoadjuvante nos tumores limítrofes** e como **terapia primária nos irressecáveis**.
 
 O que acontece com o tumor:
 
@@ -432,7 +432,7 @@ O que acontece com o tumor:
 - Na **RM**, sinal menor, realce mais lento e tempo de pico maior.
 - Na **patologia**, menos células gigantes, menos células estromais neoplásicas e menos vasos.
 
-E o problema: o denosumabe **não atinge as células estromais neoplásicas** de forma definitiva, o que levanta a preocupação de **crescimento de rebote ao suspender** o remédio e explica as **altas taxas de recidiva após a cirurgia** relatadas (Campbell, p. 954). O livro conclui que o denosumabe facilita preservar a articulação em casos de alto risco, mas deve ser usado com cautela, porque a recidiva local é maior que o esperado. O capítulo 49 (p. 1957 aprox.) acrescenta **relatos de transformação sarcomatosa durante a terapia** e diz que, por isso, as indicações ainda não estão claras.
+E o problema: o denosumabe **não atinge as células estromais neoplásicas** de forma definitiva, o que levanta a preocupação de **crescimento de rebote ao suspender** o remédio e explica as **altas taxas de recidiva após a cirurgia** relatadas (Campbell, p. 954). O livro conclui que o denosumabe facilita preservar a articulação em casos de alto risco, mas deve ser usado com cautela, porque a recidiva local é maior que o esperado. O capítulo 49 (p. 1957) acrescenta **relatos de transformação sarcomatosa durante a terapia** e diz que, por isso, as indicações ainda não estão claras.
 
 Entre os tumores benignos, o denosumabe sistêmico é a resposta para o TCG; nas seções lidas, nenhum outro benigno aparece com essa indicação.
 
@@ -448,7 +448,7 @@ O SIZÍNIO (cap. 29) é o mais duro: radioterapia só em lesões avançadas com 
 
 ## Embolização
 
-Para o Campbell (cap. 28, p. 954), a embolização entra com a radioterapia nas lesões inoperáveis da coluna e da pelve; o capítulo 49 (p. 1957 aprox. e 1964) recomenda a **embolização seletiva** no TCG da coluna, inclusive **pré-operatória**, com cuidado para identificar a **artéria de ADAMKIEWICZ** (em geral à esquerda, de T10 a T12), cuja oclusão já causou paralisia. O SIZÍNIO (cap. 29) a indica para tumores muito vascularizados ou inabordáveis e após falhas de ressecção; o alívio da dor é eficaz mas **temporário**, porque os vasos recanalizam, e por isso a embolização é muito mais uma técnica **pré-operatória** do que um tratamento.
+Para o Campbell (cap. 28, p. 954), a embolização entra com a radioterapia nas lesões inoperáveis da coluna e da pelve; o capítulo 49 (p. 1957, 1963 e 1964) recomenda a **embolização seletiva** no TCG da coluna, inclusive **pré-operatória**, com cuidado para identificar a **artéria de ADAMKIEWICZ** (em geral à esquerda, de T10 a T12), cuja oclusão já causou paralisia. O SIZÍNIO (cap. 29) a indica para tumores muito vascularizados ou inabordáveis e após falhas de ressecção; o alívio da dor é eficaz mas **temporário**, porque os vasos recanalizam, e por isso a embolização é muito mais uma técnica **pré-operatória** do que um tratamento.
 
 !tabela Denosumabe no TCG (Campbell 15, cap. 28, p. 954; cap. 49, p. 1955 e 1957 aprox.)
 | Aspecto | O que o Campbell diz |
@@ -485,7 +485,7 @@ Os números variam um pouco entre os livros, mas giram todos em torno de poucos 
 
 - Campbell, cap. 28 (p. 952): **cerca de 3%**.
 - Campbell, cap. 26 (p. 873): **1% a 5%** nas lesões estágio 3, com o TCG como exemplo.
-- Campbell, cap. 49 (p. 1963 aprox.), na coluna: **1% a 11%**.
+- Campbell, cap. 49 (p. 1963), na coluna: **1% a 11%**.
 - SIZÍNIO (cap. 29): **cerca de 2% a 3%**, a maioria para o pulmão; linfonodos regionais raros; mais frequente na **recidiva local, sobretudo em partes moles**.
 
 Por isso a afirmação "benigno, localmente agressivo e sem risco de metástase pulmonar" está **errada**: o TCG é benigno e pode, sim, ir ao pulmão.
@@ -497,7 +497,7 @@ O Campbell (cap. 28, p. 952) chama de **TCG maligno do osso** a transformação 
 - **Primária**: células sarcomatosas ao lado do TCG convencional **já no diagnóstico**.
 - **Secundária**: surge num TCG **previamente tratado**, muitas vezes **anos depois**, frequentemente associada à **radioterapia prévia**.
 
-Nos dois tipos, o **osteossarcoma é o subtipo histológico mais comum**. A clínica e a imagem são indistinguíveis do TCG convencional agressivo (lítico, expansivo, com destruição cortical e extensão a partes moles), e o diagnóstico exige **biópsia**. O capítulo 49 (p. 1963 aprox.) dá **10%** de transformação maligna, e a Tabela 49.2 (p. 1955), 10% com o alerta da radioterapia (5% a 15%). O SIZÍNIO (cap. 29) diz que a maioria dos TCG malignizados, para fibro-histiocitoma ou fibrossarcoma, tinha recebido radioterapia, e o capítulo 30 lista o TCG entre as doenças que podem originar osteossarcoma secundário.
+Nos dois tipos, o **osteossarcoma é o subtipo histológico mais comum**. A clínica e a imagem são indistinguíveis do TCG convencional agressivo (lítico, expansivo, com destruição cortical e extensão a partes moles), e o diagnóstico exige **biópsia**. O capítulo 49 (p. 1963) dá **10%** de transformação maligna, e a Tabela 49.2 (p. 1955), 10% com o alerta da radioterapia (5% a 15%). O SIZÍNIO (cap. 29) diz que a maioria dos TCG malignizados, para fibro-histiocitoma ou fibrossarcoma, tinha recebido radioterapia, e o capítulo 30 lista o TCG entre as doenças que podem originar osteossarcoma secundário.
 
 A dupla que as bancas usam, portanto, é **transformação em torno de 10%** e **metástase pulmonar em poucos por cento (cerca de 3%)**. Uma alternativa com metástase de 0,1% a 0,4% subestima o risco; uma com 25% de transformação o superestima.
 
@@ -537,7 +537,7 @@ alerta: A questão `tumores-0352` está sem gabarito no banco; o Campbell (cap. 
 
 ## O sacro é a exceção da coluna
 
-Fora o sacro, o TCG raramente acomete a coluna (Campbell, cap. 28, p. 952). O capítulo 26 (p. 869.e1) diz que **no sacro, cordoma e TCG estão no topo do diferencial**. O capítulo 49 (p. 1963 aprox.) abre a seção com a frase que a prova copia: o TCG **é o tumor benigno mais prevalente do sacro**. Logo depois, o mesmo parágrafo diz que ele é o **segundo, atrás do hemangioma**, como neoplasia benigna sacral mais comum, uma contradição interna do texto; a primeira frase é a que responde à questão. O **sacro concentra 50% dos TCG da coluna**, e a **coluna cervical** é o segundo local vertebral.
+Fora o sacro, o TCG raramente acomete a coluna (Campbell, cap. 28, p. 952). O capítulo 26 (p. 869.e1) diz que **no sacro, cordoma e TCG estão no topo do diferencial**. O capítulo 49 (p. 1963) abre a seção com a frase que a prova copia: o TCG **é o tumor benigno mais prevalente do sacro**. Logo depois, o mesmo parágrafo diz que ele é o **segundo, atrás do hemangioma**, como neoplasia benigna sacral mais comum, uma contradição interna do texto; a primeira frase é a que responde à questão. O **sacro concentra 50% dos TCG da coluna**, e a **coluna cervical** é o segundo local vertebral.
 
 Os outros números do capítulo 49: **1% a 18%** dos TCG ocorrem na coluna; mulheres duas vezes mais; **dor** é a queixa mais comum, com longa evolução antes do diagnóstico; **déficit neurológico em 20% a 80%**. A imagem é expansiva, lítica e septada, muitas vezes com ruptura cortical e massa de partes moles; o diferencial inclui COA, osteoblastoma e metástase.
 
@@ -547,13 +547,13 @@ O capítulo 49 dá a chave: no sacro, o TCG fica na **parte proximal e é excên
 
 ## Corpo vertebral, não arco posterior
 
-O capítulo 49 (p. 1963 aprox.) diz que **mais de 50% dos TCG vertebrais acometem só o corpo vertebral**. A Figura 49.11 (p. 1956) coloca TCG, COA, osteossarcoma e granuloma eosinofílico **ao longo do corpo vertebral**, e osteoblastoma, osteoma osteoide e EWING nos arcos e pedículos; o texto da p. 1961 aprox. lista hemangioma, granuloma eosinofílico e **TCG** como as lesões benignas típicas do corpo vertebral. O capítulo 26 (p. 869.e1) reforça a outra metade: nos **elementos posteriores**, pensar em **COA, osteoblastoma e osteoma osteoide**. O SIZÍNIO (cap. 29) concorda: na coluna, o TCG é lítico puro **do corpo vertebral**, e o osteoblastoma e o COA são mais frequentes no arco neural.
+O capítulo 49 (p. 1963) diz que **mais de 50% dos TCG vertebrais acometem só o corpo vertebral**. A Figura 49.11 (p. 1956), feita para a coluna da criança, coloca TCG, COA, osteossarcoma e granuloma eosinofílico **ao longo do corpo vertebral** (número 3), osteoblastoma, osteoma osteoide e EWING nos arcos laminares, na pars e nos pedículos (número 2) e, na legenda do número 1, **COA e osteocondroma nos processos espinhosos, arcos laminares e facetas**, isto é, nos elementos posteriores; o COA aparece nas duas regiões, e o TCG só no corpo; o texto da p. 1961 lista hemangioma, granuloma eosinofílico e **TCG** como as lesões benignas típicas do corpo vertebral. O capítulo 26 (p. 869.e1) reforça a outra metade: nos **elementos posteriores**, pensar em **COA, osteoblastoma e osteoma osteoide**. O SIZÍNIO (cap. 29) concorda: na coluna, o TCG é lítico puro **do corpo vertebral**, e o osteoblastoma e o COA são mais frequentes no arco neural.
 
 Há uma divergência dentro do próprio SIZÍNIO: o capítulo de coluna cervical diz que, nos **elementos posteriores**, os mais comuns são o TCG, o osteoma osteoide e o osteoblastoma. Essa frase contraria o capítulo de tumores do mesmo livro e o Campbell; para a prova, o TCG é o tumor dos **elementos anteriores** (corpo).
 
 ## Tratamento na coluna e no sacro
 
-Pela natureza agressiva, o melhor é a **ressecção em bloco com margem ampla** quando possível (Campbell, cap. 49, p. 1963 aprox.); a recidiva relatada vai de **10% a 80%** apesar da cirurgia agressiva. Recomenda-se **embolização pré-operatória**. Embolização, denosumabe e radioterapia ficam para lesões que não podem ser ressecadas ou cuja cirurgia traria grande morbidade; se a excisão for intralesional, considerar **crioterapia adjuvante** (p. 1964).
+Pela natureza agressiva, o melhor é a **ressecção em bloco com margem ampla** quando possível (Campbell, cap. 49, p. 1963); a recidiva relatada vai de **10% a 80%** apesar da cirurgia agressiva. Recomenda-se **embolização pré-operatória**. Embolização, denosumabe e radioterapia ficam para lesões que não podem ser ressecadas ou cuja cirurgia traria grande morbidade; se a excisão for intralesional, considerar **crioterapia adjuvante** (p. 1964).
 
 !tabela TCG na coluna e no sacro (Campbell 15, cap. 26, p. 869.e1; cap. 49, p. 1955 a 1964; SIZÍNIO 5, cap. 29)
 | Aspecto | O que os livros dizem |
