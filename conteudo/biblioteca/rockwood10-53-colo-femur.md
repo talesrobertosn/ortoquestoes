@@ -1,6 +1,6 @@
 ---
 id: rockwood10-53-colo-femur
-versao: 3
+versao: 4
 titulo: Fratura do colo do fêmur
 especialidade: trauma
 acesso: gratis
@@ -130,7 +130,7 @@ O **iliopsoas** flete o quadril e, na fratura, roda a diáfise para fora. Pirifo
 
 Peça **AP e perfil**. O AP quase sempre mostra a fratura; o perfil, mesmo doloroso, ajuda a decidir se uma fratura duvidosa está desviada, e essa decisão muda o tratamento.
 
-Quando a radiografia é normal ou duvidosa e a suspeita continua, o exame de escolha é a **ressonância magnética**. Ela é mais precisa do que a tomografia e a cintilografia nas primeiras horas, não usa radiação e ainda mostra outras causas de dor. A **cintilografia** pode dar **falso-negativo nas primeiras 48 a 72 horas** em osso osteopênico, e é sensível mas pouco específica. A **tomografia** é uma alternativa quando não há ressonância, mas deixou passar fraturas em algumas séries. Se a ressonância mostra só edema intenso, sem traço claro, alguns fazem tomografia; outros mobilizam com carga protegida e repetem a imagem em alguns dias.
+Quando a radiografia é normal ou duvidosa e a suspeita continua, o exame de escolha é a **ressonância magnética**. São duas comparações diferentes no capítulo. Contra a **cintilografia**, a ressonância é mais precisa **na fase inicial** depois do trauma. Contra a **tomografia**, os estudos que fizeram os dois exames nos mesmos pacientes (HAUBRO, 67 pacientes; COLLIN, 44) acharam a ressonância **mais precisa** para a fratura oculta. Ela também não usa radiação e ainda mostra lesões de partes moles que expliquem a dor quando não há fratura. A **cintilografia** pode dar **falso-negativo nas primeiras 48 a 72 horas** em osso osteopênico, e é sensível mas pouco específica. A **tomografia** é mais precisa que a cintilografia, mas expõe o paciente a mais radiação e teve resultados variáveis: 100% de sensibilidade e especificidade numa série, sensibilidade de 86% em outra. É uma alternativa quando não há ressonância. Se a ressonância mostra só edema intenso, sem traço claro, alguns fazem tomografia; outros mobilizam com carga protegida e repetem a imagem em alguns dias.
 
 !questoes treino=trauma-1556
 conceito: Fratura oculta: ressonância é o exame recomendado; cintilografia pode falhar nas primeiras 48 a 72 horas.
@@ -143,7 +143,7 @@ Idosa com dor no quadril após queda e radiografias normais: a ressonância most
 
 ## Tração pré-operatória
 
-A tração cutânea já foi rotina, para aliviar a dor e manter a redução. Os ensaios mostraram que ela **não alivia a dor nem melhora a redução**, e estudos arteriográficos mostraram que **tração com rotação interna reduz a perfusão da cabeça pela ACFM** e prejudica a drenagem venosa. Hoje não se recomenda de rotina.
+A tração cutânea já foi rotina, para aliviar a dor e manter a redução. Os ensaios mostraram que ela **não alivia a dor nem melhora a redução**, e estudos arteriográficos mostraram que **tração com rotação interna reduz a perfusão da cabeça pela ACFM** e prejudica a drenagem venosa. Hoje não se recomenda de rotina. O Rockwood ainda a admite numa situação: quando a cirurgia vai **atrasar** e a **fixação** está planejada.
 
 !questoes central=trauma-0260 treino=trauma-1549
 conceito: Tração pré-operatória com rotação interna diminui a perfusão da cabeça.
@@ -194,11 +194,11 @@ Classificação de Pauwels: à medida que o traço fica mais vertical (do tipo I
 
 ## AO/OTA (31B)
 
-O colo é **31B**: **B1** subcapital sem desvio ou minimamente desviada (impactada), **B2** transcervical (pelo meio ou pela base do colo) e **B3** subcapital desviada não impactada. A basocervical, antes considerada extracapsular, entra hoje como variedade intracapsular. É completa demais para o dia a dia; os cirurgiões concordam nos três grupos, mas não nos subgrupos.
+O colo é **31B**: **B1** subcapital sem desvio ou minimamente desviada (impactada), **B2** transcervical (pelo meio ou pela base do colo) e **B3** subcapital desviada não impactada. A basocervical era extracapsular na primeira versão da AO; segundo o Rockwood, a versão mais recente a coloca dentro do grupo do colo (B2, pela base do colo) e sugere que seja uma variedade intracapsular, sem dizer isso de forma categórica. O próprio capítulo, na introdução das classificações, lembra que as classificações recentes não a destacam como tipo à parte e que a relação com a cápsula **varia conforme o local exato do traço**. O Campbell 15 (cap. 60, p. 2665) é direto: a basocervical é **extracapsular**. Na prova, não marque que ela é sempre intracapsular. A AO é completa demais para o dia a dia; os cirurgiões concordam nos três grupos, mas não nos subgrupos.
 
 ## Inclinação posterior (posterior tilt)
 
-No **perfil** da fratura sem desvio (Garden I e II), mede-se o ângulo entre a linha do meio do colo e a linha do centro da cabeça até a fratura (método de Palm). **Inclinação posterior de 20° ou mais** aumenta o risco de reoperação depois da fixação: numa revisão de mais de 10 mil pacientes, a falha foi de 24,4% acima de 20° contra 10,9% abaixo (risco relativo 2,73). É um bom critério para identificar a fratura "sem desvio" de maior risco.
+No **perfil** da fratura sem desvio (Garden I e II), mede-se o ângulo entre a linha do meio do colo e a linha do centro da cabeça até a fratura (método de Palm). **Inclinação posterior de 20° ou mais** aumenta o risco de reoperação depois da fixação: numa revisão de mais de 10 mil pacientes, a falha foi de 24,4% acima de 20° contra 10,9% abaixo (risco relativo 2,73). É um bom critério para identificar a fratura "sem desvio" de maior risco. O Campbell 15 (cap. 60, p. 2664) tira a consequência prática no idoso: no GARDEN I ou II com **inclinação posterior de 20° ou mais**, deve-se **considerar a artroplastia** em vez da fixação.
 
 !questoes treino=trauma-1541
 conceito: Inclinação posterior de 20° ou mais no perfil prediz falha da fixação do Garden I e II.
@@ -207,7 +207,7 @@ como: Treine com o simulado. Este é um conceito novo no capítulo (fundamentado
 
 ## Basocervical
 
-São só 2% a 3% das fraturas do quadril. Pela localização e pelo comportamento após a fixação, os autores as tratam como **extracapsulares**, com **parafuso deslizante (DHS)**.
+São só 2% a 3% das fraturas do quadril (o Campbell 15, cap. 60, p. 2665, cita estimativas de apenas 1,6%). Pela localização e pelo comportamento após a fixação, os autores as tratam como **extracapsulares**, com **parafuso deslizante (DHS)**.
 
 !questoes treino=trauma-1553
 conceito: Basocervical: comporta-se como extracapsular e é fixada com parafuso deslizante.
@@ -399,7 +399,7 @@ Fixar nas primeiras horas parece sensato, mas não é comprovado: numa metanáli
 
 ## Seguimento
 
-A consolidação é lenta (só 14,5% das desviadas consolidadas em 6 meses numa série clássica). A **necrose avascular aparece depois da consolidação, mais no segundo ano**. Por isso o jovem é acompanhado por **2 anos, com radiografias a cada 6 meses** (os autores veem em 6 semanas, 3 e 6 meses e depois semestralmente). O **encurtamento do colo** piora a função a partir de **5 mm** e muito mais a partir de **10 mm**, mesmo com a fratura consolidada.
+A consolidação é lenta (só 14,5% das desviadas consolidadas em 6 meses numa série clássica). A **necrose avascular aparece depois da consolidação, mais no segundo ano**. Por isso o jovem é acompanhado por **2 anos, com radiografias a cada 6 meses** (os autores veem em 6 semanas, 3 e 6 meses e depois semestralmente). O **encurtamento do colo** piora a função a partir de **5 mm** e muito mais a partir de **10 mm**, mesmo com a fratura consolidada. Esse encurtamento é comum: ocorre em **até um terço** dos pacientes fixados **sem nenhuma complicação de consolidação**, e prejudica a função dos **abdutores** do quadril, o que ajuda a explicar maus resultados em fraturas que consolidaram.
 
 !questoes treino=trauma-1564,trauma-1565
 conceito: Encurtamento do colo acima de 5 mm piora a função (muito pior acima de 10 mm); necrose mais no segundo ano, seguimento de 2 anos.

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-58-femur-distal
-versao: 3
+versao: 4
 titulo: Fratura do fêmur distal
 especialidade: trauma
 acesso: gratis
@@ -61,7 +61,7 @@ A energia que quebra o fêmur distal também lesa o mesmo membro e o resto do co
 
 A lesão ligamentar do joelho junto com a fratura é **incomum** e raramente diagnosticada antes da cirurgia: a dor impede o exame, e só às vezes a radiografia mostra uma avulsão óssea. O ligamento mais lesado é o **cruzado anterior**. Nas fraturas com cominução articular, o LCA pode vir preso a um fragmento osteocondral, que deve ser **reparado no momento da fixação**, sempre que possível.
 
-A ruptura **no meio do ligamento** tem tratamento **inicial não operatório**: túneis largos no intercôndilo podem cominuir a fratura, enfraquecer a fixação ou ser impossíveis por causa do implante, e o reparo ou a reconstrução primária alongam a cirurgia e podem aumentar infecção, aderências e perda de movimento. Movimento protegido com órtese e reabilitação forte resolvem parte dos casos; quem continuar instável reconstrói **depois da consolidação**, quando o material pode ser retirado.
+A ruptura **no meio do ligamento** tem tratamento **inicial não operatório**: túneis largos no intercôndilo podem cominuir a fratura, enfraquecer a fixação ou ser impossíveis por causa do implante, e o reparo ou a reconstrução primária alongam a cirurgia e podem aumentar infecção, aderências e perda de movimento. Movimento protegido com órtese e reabilitação forte resolvem parte dos casos; quem continuar instável reconstrói **depois da consolidação**, quando o material pode ser retirado. O próprio capítulo ressalva que **não há consenso** sobre o momento de tratar a ruptura intrassubstancial dos cruzados associada à fratura; o tratamento inicial não operatório é a recomendação dos autores, não uma regra fechada.
 
 !questoes central=trauma-0048,trauma-0913 relacionadas=trauma-1004 treino=trauma-1632
 conceito: A lesão ligamentar associada é incomum e a mais frequente é a do LCA; a avulsão osteocondral se fixa junto com a fratura, e a ruptura intrassubstancial espera a consolidação.
@@ -89,7 +89,7 @@ armadilha: Sóleo em cima e hiato embaixo: é o contrário.
 
 ## Fratura exposta e joelho flutuante
 
-Cerca de **5% a 10%** das fraturas do fêmur distal são expostas. A ferida é **quase sempre anterior**, na coxa, **proximal à patela**, e lesa em grau variável o quadríceps e o aparelho extensor. Antibiótico precoce, desbridamento e irrigação; nas tipo III, desbridamentos seriados com espaçadores, pérolas de antibiótico ou curativo a vácuo. Nos estáveis com exposta tipo I, II e IIIA, muitos fazem a fixação interna definitiva depois do desbridamento, se a ferida ficar limpa; nas **IIIB e IIIC**, **fixador externo transarticular** e fixação interna tardia. A fixação interna imediata limita o desbridamento seguinte e, se infectar, a infecção pode chegar ao joelho.
+Cerca de **5% a 10%** das fraturas do fêmur distal são expostas. A ferida é **quase sempre anterior**, na coxa, **proximal à patela**, e lesa em grau variável o quadríceps e o aparelho extensor. Antibiótico precoce, desbridamento e irrigação; nas tipo III, desbridamentos seriados com espaçadores, pérolas de antibiótico ou curativo a vácuo. Nos estáveis com exposta tipo **II, III e IIIA** (é assim que a seção de fraturas expostas escreve; a preferência dos autores, adiante, diz tipo I, II e IIIA), muitos fazem a fixação interna definitiva depois do desbridamento, se a ferida ficar limpa; nas **IIIB e IIIC**, **fixador externo transarticular** e fixação interna tardia. A fixação interna imediata limita o desbridamento seguinte e, se infectar, a infecção pode chegar ao joelho.
 
 O **joelho flutuante** (fêmur e tíbia do mesmo lado) cai como tema próprio; o capítulo 58 só menciona as fraturas ipsilaterais da tíbia como comuns.
 
@@ -116,7 +116,7 @@ Não há classificação universalmente aceita; todas separam lesões extra-arti
 | Tipo | Grupos |
 | --- | --- |
 | **33A**, extra-articular | A1 simples; A2 cunha metafisária; A3 metafisária complexa |
-| **33B**, articular parcial | B1 côndilo lateral, sagital; B2 côndilo medial, sagital; **B3 frontal (HOFFA)** |
+| **33B**, articular parcial | B1 côndilo lateral, sagital; B2 côndilo medial, sagital; **B3 frontal ou coronal (HOFFA)** |
 | **33C**, articular completa | C1 articular e metafisária simples; C2 articular simples com metáfise multifragmentar; C3 articular multifragmentar |
 !fim
 
@@ -136,7 +136,7 @@ Classificação AO/OTA das fraturas do fêmur distal: tipos extra-articular, art
 
 **Tipo B, o côndilo solto.** Fratura isolada de um côndilo é incomum. A redução aberta é o meio mais confiável de restaurar a superfície. Só com boa qualidade óssea e redução anatômica fechada bastam parafusos percutâneos, o que é raro. No côndilo desviado, via aberta e **placa antideslizante** contornada com parafusos de tração; a fixação precisa ser anatômica e estável porque há cisalhamento mesmo sem carga. Via lateral ou medial direta para a B1 simples; parapatelar se houver cominução articular. Quando há fratura da diáfise junto, o côndilo é fixado primeiro e a diáfise pode receber a haste retrógrada: a haste trata a diáfise, não o côndilo.
 
-**HOFFA, a fratura coronal.** O cisalhamento coronal do côndilo lateral ou medial não é raro e costuma acompanhar outras lesões ósseas ou ligamentares do joelho. Passa despercebida na radiografia e aparece bem na TC. O fragmento posterior é quase todo articular. Na isolada, artrotomia limitada e parafusos; com desvio ou outras lesões, via ampla. Fixação com **dois ou mais parafusos de tração de 2,7 ou 3,5 mm, ou parafusos de compressão sem cabeça**, de **anterior para posterior**, embutidos abaixo da cartilagem anterior; uma espícula não articular do fragmento posterior ajuda a conferir a redução e a apoiar uma pequena placa antideslizante.
+**HOFFA, a fratura coronal.** Atenção ao nome do plano: a AO e o Rockwood chamam a HOFFA de fratura **frontal ou coronal** (33B3), enquanto o HEBERT (5ª ed., cap. 62) a descreve como fratura no "plano sagital" da parte posterior do côndilo; é o mesmo traço, que separa a metade posterior do côndilo, e na prova vale a nomenclatura AO, coronal. O cisalhamento coronal do côndilo lateral ou medial não é raro e costuma acompanhar outras lesões ósseas ou ligamentares do joelho. Passa despercebida na radiografia e aparece bem na TC. O fragmento posterior é quase todo articular. Na isolada, artrotomia limitada e parafusos; com desvio ou outras lesões, via ampla. Fixação com **dois ou mais parafusos de tração de 2,7 ou 3,5 mm, ou parafusos de compressão sem cabeça**, de **anterior para posterior**, embutidos abaixo da cartilagem anterior; uma espícula não articular do fragmento posterior ajuda a conferir a redução e a apoiar uma pequena placa antideslizante.
 
 **Tipo C.** Primeiro, redução anatômica e fixação da articulação; depois, a ligação do bloco à diáfise. Na C1 pouco desviada, um clamp grande e parafusos longos de 2,7, 3,5 ou 4,5 mm **fora da área da placa ou do trajeto da haste**. Na C2 e na C3, artrotomia aberta, em geral **anterolateral** (parapatelar lateral modificada).
 
@@ -150,7 +150,7 @@ alerta: No TARO 2022 (trauma-0241), o gabarito foi a 33C1 como tipo em que a has
 
 # Anatomia aplicada à fixação {radar=confirmado}
 
-**O trapézio.** A diáfise é cilíndrica; embaixo, o osso se alarga em dois côndilos. Visto de topo, o fêmur distal é **trapezoidal**, mais largo atrás que na frente, com a face medial inclinada cerca de **25 graus**; para a face lateral, o texto dá 15 graus e a figura 58-4C, 10 graus. A face anterior é oblíqua, mais alta do lado lateral. Consequência: um parafuso condilar **anterior** que parece ter o comprimento certo no **AP** pode ter saído pela **cortical medial** e irritar as partes moles; mede-se com cuidado e confere-se com o **AP rodado de 20 a 25 graus**. Pelo mesmo motivo, a ponta da lâmina de 95 graus fica **5 a 10 mm aquém** da cortical medial.
+**O trapézio.** A diáfise é cilíndrica; embaixo, o osso se alarga em dois côndilos. Visto de topo, o fêmur distal é **trapezoidal**, mais largo atrás que na frente, com a face medial inclinada cerca de **25 graus** e a lateral cerca de **15 graus**, nos números do texto. A figura 58-4C traz os 25 graus na face medial e deixa o ângulo lateral sem número; os **10 graus** desenhados nela medem outra coisa, a **obliquidade da face anterior**, entre uma linha horizontal e a superfície articular anterior, que é **mais alta do lado lateral** que do medial (a legenda da figura chama atenção justamente para essa obliquidade anterior). O AO Principles of Fracture Management, 3ª ed. (cap. 6.6.3, Fig. 6.6.3-1b), traz outro número para a lateral: cerca de **25 graus** na face medial e cerca de **10 graus** na lateral, com a **placa deitada plana sobre a face lateral**; a linha que une a frente dos dois côndilos (inclinação patelofemoral) cai cerca de 10 graus para trás. Divergência entre livros, então: face lateral 15 graus no Rockwood (texto) e 10 graus no AO. Consequência: um parafuso condilar **anterior** que parece ter o comprimento certo no **AP** pode ter saído pela **cortical medial** e irritar as partes moles; mede-se com cuidado e confere-se com o **AP rodado de 20 a 25 graus**. Pelo mesmo motivo, a ponta da lâmina de 95 graus fica **5 a 10 mm aquém** da cortical medial.
 
 **Os côndilos.** O sulco anterior recebe a patela; a superfície patelar vem mais do **côndilo lateral**, que é mais largo e sobe mais. Atrás, o intercôndilo dá inserção aos cruzados. O epicôndilo lateral dá origem ao **colateral fibular**, com o sulco do **poplíteo** logo abaixo; o côndilo medial é mais longo e desce mais, com o epicôndilo do **colateral tibial** e, no alto, o **tubérculo adutor**, onde se insere o adutor magno.
 
@@ -165,8 +165,8 @@ Anatomia do fêmur distal: obliquidade da superfície articular anterior, forma 
 !questoes central=trauma-0335 treino=trauma-1637,trauma-1636
 conceito: O fêmur distal é um trapézio, com a face medial inclinada cerca de 25 graus: o parafuso anterior que parece curto no AP pode furar a cortical medial e se confere com o AP rodado de 20 a 25 graus; os vasos femorais atravessam o adutor magno a cerca de 10 a 12 cm do joelho.
 como: O TEOT 2023 perguntou a rotação em que a placa bloqueada lateral deve ser colocada (interna de 10 graus), num par de sentido e graus.
-armadilha: Rotação externa ou 30 graus: a placa acompanha a inclinação da face lateral, para dentro, e o número é pequeno.
-alerta: No TEOT 2023 (trauma-0335), o gabarito foi rotação interna de 10 graus. O capítulo 58 não descreve a rotação da placa; ele dá a inclinação da face lateral como 15 graus no texto e 10 graus na figura 58-4C. A resposta da banca coincide com a figura; não confie no número lateral do texto para essa questão.
+armadilha: Rotação externa ou 30 graus: a placa deita plana na face lateral, que no AO se inclina cerca de 10 graus para dentro; os 25 graus são da face medial.
+alerta: No TEOT 2023 (trauma-0335), o gabarito oficial foi rotação interna de 10 graus e está mantido. O apoio vem do AO Principles of Fracture Management, 3ª ed. (cap. 6.6.3, Fig. 6.6.3-1b): face lateral inclinada cerca de 10 graus, placa plana sobre ela, ou seja, rodada cerca de 10 graus para dentro. O Rockwood não descreve a rotação da placa e dá 15 graus para a face lateral no texto; na figura 58-4C, o ângulo lateral não tem número e os 10 graus medem a obliquidade da face anterior, não a lateral. Não use a figura do Rockwood para justificar a resposta.
 !fim
 
 # Tratamento não operatório {radar=clinico}
@@ -225,7 +225,7 @@ A haste retrógrada é **central** e compartilha a carga, resiste melhor à flex
 conceito: A haste retrógrada entra no intercôndilo, à frente da inserção do LCP e logo à frente da linha de BLUMENSAAT, fica embutida alguns milímetros e vai até o trocânter menor, com dois ou mais parafusos condilares e bloqueio nas duas pontas.
 como: Uma prova sem ano listou as desvantagens da haste retrógrada (rigidez, dor patelofemoral, pioartrite) e usou a lesão meniscal como intrusa, num formato com EXCETO que a banca abandonou. Outra, no tema da diáfise, cobrou a flexão do joelho para o ponto de entrada.
 armadilha: Entrada atrás da linha de BLUMENSAAT ou na inserção do LCA: o portal fica à frente, anterior à inserção do LCP.
-alerta: Na questão sem ano trauma-0898, do tema da diáfise, o gabarito foi flexão do joelho de 35 a 50 graus para o ponto de entrada da haste retrógrada. O capítulo 58 apoia o joelho a 20 ou 30 graus no posicionamento para a haste e não dá outro intervalo; o dado da banca vem de outra fonte.
+alerta: Na questão sem ano trauma-0898, do tema da diáfise, o gabarito foi flexão do joelho de 35 a 50 graus para o ponto de entrada da haste retrógrada. O número está no capítulo 57 do Rockwood (diáfise do fêmur), seção Retrograde Intramedullary Nailing: o texto cita um estudo com 34 a 52 graus, e o quadro de passos-chave pede 35 a 50 graus. O capítulo 58 posiciona o joelho a 20 ou 30 graus para a haste no fêmur distal; os dois capítulos falam de fraturas diferentes, e para a questão da diáfise vale o capítulo 57.
 !fim
 
 ## Placa ou haste?

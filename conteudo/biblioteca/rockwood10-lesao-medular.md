@@ -1,6 +1,6 @@
 ---
 id: rockwood10-lesao-medular
-versao: 2
+versao: 3
 titulo: Lesão medular e síndromes medulares
 especialidade: coluna
 acesso: gratis
@@ -468,7 +468,19 @@ Caiu por três motivos: **taxas inaceitáveis de pneumonia, sepse, complicaçõe
 | Tachdjian, cap. 28 | autores seguem o NASCIS III na criança |
 !fim
 
-O que sobrou foi **reduzir a lesão secundária**: realinhar rápido, PAM de 75 a 95 mm Hg, saturação de 100% e **descompressão e estabilização em até 24 horas** quando possível (Campbell, cap. 48, p. 1875 e 1878). O **STASCIS** mostrou melhor recuperação neurológica aos 6 meses com cirurgia **antes de 24 horas** nas lesões cervicais, com a ressalva de que as centromedulares puxaram o resultado a favor (Rockwood and Green, cap. 47, p. 1895 e 1896). Na luxação facetária com déficit, o Campbell (p. 1876 a 1878) reduz com tração no paciente **acordado**, sem esperar RM: menos de 1% de piora permanente em mais de 1.200 casos e sucesso em cerca de 80%.
+!questoes treino=coluna-0512
+conceito: Pelo guia publicado com a AOSpine, a infusão de 24 horas de metilprednisolona em dose alta pode ser oferecida até 8 horas da lesão medular, não deve ser oferecida depois de 8 horas, e a infusão de 48 horas não tem papel (Rockwood and Green, cap. 47, seção Methylprednisolone).
+como: O OrtoQuestões Simulados descreveu adulto de 40 anos com lesão cervical incompleta que chega 11 horas após o trauma e perguntou o que a diretriz recomenda.
+armadilha: Escolher a infusão de 48 horas porque o NASCIS III a usava entre 3 e 8 horas: a janela de 8 horas já passou, e o guia não vê papel para 48 horas em nenhum momento.
+!fim
+
+O que sobrou foi **reduzir a lesão secundária**: realinhar rápido, PAM de 75 a 95 mm Hg, saturação de 100% e **descompressão e estabilização em até 24 horas** quando possível (Campbell, cap. 48, p. 1875 e 1878). O **STASCIS** mostrou melhor recuperação neurológica aos 6 meses com cirurgia **antes de 24 horas** nas lesões cervicais, com a ressalva de que as centromedulares puxaram o resultado a favor (Rockwood and Green, cap. 47, p. 1895 e 1896). Os números estão no capítulo 48 do Rockwood and Green (seção Operative Treatment of Cervical Spine Fractures and Dislocations, Timing): **313 pacientes** em vários centros, chance **2,8 vezes maior** de melhorar **pelo menos dois graus na ASIA** com descompressão em até 24 horas, **sem diferença estatística de mortalidade ou complicações**, e melhor custo-efetividade. O mesmo trecho lembra que muitas descompressões precoces foram **reduções fechadas** antes da fixação definitiva. Na luxação facetária com déficit, o Campbell (p. 1876 a 1878) reduz com tração no paciente **acordado**, sem esperar RM: menos de 1% de piora permanente em mais de 1.200 casos e sucesso em cerca de 80%.
+
+!questoes treino=coluna-0513
+conceito: No STASCIS, a descompressão da lesão medular cervical em até 24 horas aumentou 2,8 vezes a chance de melhora de pelo menos dois graus na ASIA aos 6 meses, sem aumentar mortalidade nem complicações (Rockwood and Green, cap. 48, seção Timing; cap. 49).
+como: O OrtoQuestões Simulados perguntou a que a descompressão antes de 24 horas se associou no STASCIS, em comparação com a feita depois.
+armadilha: Escolher menor mortalidade sem ganho neurológico ou ganho anulado por mais complicações: o estudo não mostrou diferença de mortalidade nem de complicações, e o ganho foi neurológico.
+!fim
 
 # SCIWORA: lesão medular sem anormalidade radiográfica {radar=confirmado}
 
