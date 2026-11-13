@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 33 · Scapular Fractures
 autores: Jan Bartoníček
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (escapula_.pdf, 40 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026
 subtemas: Fratura da escápula; Fraturas do úmero proximal e da escápula
 resumo: Complexo suspensor superior e ombro flutuante, colo anatômico e cirúrgico, ângulo glenopolar e critérios de cirurgia, Ideberg-Goss, dissociação escapulotorácica e via de Judet: a escápula explicada pelo que a prova cobra.
 ---

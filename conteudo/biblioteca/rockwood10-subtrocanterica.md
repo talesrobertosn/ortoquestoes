@@ -8,14 +8,14 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 60) e o Skeletal Trauma, 5ª ed. (cap. 57)
 capitulo: Capítulo 55 · Subtrochanteric Femur Fractures
 autores: Jaclyn M. JANKOWSKI e Richard S. YOON
-fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 55 (Subtrochanteric Femur Fractures, PDF 2738 a 2770) e cap. 56 (Atypical Femur Fractures, PDF 2771 a 2786); Campbell's Operative Orthopaedics, 15ª ed., cap. 60 (Fractures and Dislocations of the Hip), p. 2664 a 2683; Skeletal Trauma, 5ª ed., cap. 57 (Subtrochanteric Fractures of the Femur), p. 1736 a 1751. As páginas citadas são as impressas; o PDF do Rockwood and Green não traz página impressa, e dele se cita a página do PDF.
+fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 55 (Subtrochanteric Femur Fractures) e cap. 56 (Atypical Femur Fractures); Campbell's Operative Orthopaedics, 15ª ed., cap. 60 (Fractures and Dislocations of the Hip), p. 2664 a 2683; Skeletal Trauma, 5ª ed., cap. 57 (Subtrochanteric Fractures of the Femur), p. 1736 a 1751.
 subtemas: Fratura subtrocantérica
 resumo: Até 5 cm abaixo do trocânter menor; fragmento proximal em flexão (iliopsoas), abdução (glúteo médio) e rotação externa (rotadores externos curtos), distal aduzido e encurtado pelos adutores; RUSSELL-TAYLOR olha a fossa piriforme (I e II) e o trocânter menor (A e B); a haste cefalomedular vence a placa por braço de alavanca menor e menos colapso em varo; entrada na face medial do trocânter maior, porque a entrada lateral dá varo; revisar na mesma anestesia com rotação acima de 15° ou discrepância acima de 2 cm; a fratura atípica do bisfosfonato tem dor prodrômica, espessamento cortical lateral, traço transverso lateral, espícula medial e bilateralidade, e vai para haste cefalomedular longa, com placa só quando a haste é impossível.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 55 (Subtrochanteric Femur Fractures, de JANKOWSKI e YOON) do Rockwood and Green's Fractures in Adults, 10ª ed., com o capítulo 56 do mesmo livro para a fratura atípica, a parte subtrocantérica do capítulo 60 do Campbell's Operative Orthopaedics, 15ª ed., e, como apoio para as classificações antigas e a biomecânica, o capítulo 57 do Skeletal Trauma, 5ª ed. O PDF do Rockwood and Green não tem página impressa; por isso as citações dele vêm com a página do PDF.
+Este resumo segue o capítulo 55 (Subtrochanteric Femur Fractures, de JANKOWSKI e YOON) do Rockwood and Green's Fractures in Adults, 10ª ed., com o capítulo 56 do mesmo livro para a fratura atípica, a parte subtrocantérica do capítulo 60 do Campbell's Operative Orthopaedics, 15ª ed., e, como apoio para as classificações antigas e a biomecânica, o capítulo 57 do Skeletal Trauma, 5ª ed. As citações do Rockwood and Green trazem capítulo e seção.
 
 A fratura subtrocantérica é uma fratura de região "difícil" por três motivos que se encadeiam, e a prova cobra exatamente essa cadeia. Primeiro, **os músculos puxam o fragmento proximal curto** para uma posição previsível (flexão, abdução e rotação externa), e o distal é puxado para dentro e para cima. Segundo, **a região carrega as maiores forças de compressão e de tração do esqueleto**, de modo que o implante sofre muito, sobretudo quando o córtex medial está cominuído ou quando a redução fica em varo. Terceiro, **o varo nasce na sala de cirurgia**: ponto de entrada lateral, fresagem excêntrica e redução incompleta fazem a fratura consolidar torta ou não consolidar.
 
@@ -25,13 +25,13 @@ Por cima dessa cadeia, a banca ama a **fratura atípica associada ao bisfosfonat
 
 # Definição e quem fratura {radar=fundamento}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2738), define a fratura subtrocantérica como a que ocorre **até 5 cm distal à borda distal do trocânter menor** e já a chama, na primeira frase, de **lesão instável**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2676), dá duas definições que convivem: a região **entre o trocânter menor e o istmo do canal femoral**, ou os **primeiros 5 cm abaixo do trocânter menor**. Lembra também a origem histórica: BOYD e GRIFFIN a descreveram, em 1949, como variante das fraturas peritrocantéricas com alta taxa de maus resultados.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), define a fratura subtrocantérica como a que ocorre **até 5 cm distal à borda distal do trocânter menor** e já a chama, na primeira frase, de **lesão instável**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2676), dá duas definições que convivem: a região **entre o trocânter menor e o istmo do canal femoral**, ou os **primeiros 5 cm abaixo do trocânter menor**. Lembra também a origem histórica: BOYD e GRIFFIN a descreveram, em 1949, como variante das fraturas peritrocantéricas com alta taxa de maus resultados.
 
 O Rockwood and Green separa **três populações**: jovens em **trauma de alta energia** (colisão de carro, quadriciclo, motocross, moto, queda de altura, acidente de trabalho), idosos osteoporóticos com **trauma de baixa energia** (queda da própria altura) e pacientes expostos a **bisfosfonato crônico (5 anos ou mais) ou em dose alta**. Há sobreposição entre o segundo e o terceiro grupo, porque o bisfosfonato é remédio de osteoporose, e há também pacientes oncológicos com metástase óssea que usam o medicamento. A fratura do bisfosfonato costuma vir de baixa energia, mas pode ser **espontânea**, precedida de **dor prodrômica na coxa**.
 
 O Skeletal Trauma, 5ª ed. (cap. 57, p. 1738), soma cerca de **25% das fraturas do quadril**, com idade média de **40,6 anos** na alta energia e **76,2** na baixa, e um quarto de **patológicas** na série de BERGMAN.
 
-!tabela As três populações (Rockwood and Green 10, cap. 55, PDF 2738 e 2739; Skeletal Trauma 5, cap. 57, p. 1738)
+!tabela As três populações (Rockwood and Green 10, cap. 55; Skeletal Trauma 5, cap. 57, p. 1738)
 | População | Mecanismo | O que procurar junto |
 | --- | --- | --- |
 | jovem, alta energia | colisão, moto, queda de altura, acidente de trabalho | ATLS; colo femoral, anel pélvico, coluna, patela (painel), calcâneo; fratura exposta |
@@ -42,17 +42,17 @@ O Skeletal Trauma, 5ª ed. (cap. 57, p. 1738), soma cerca de **25% das fraturas 
 
 ## Avaliação clínica e por imagem
 
-O paciente **não apoia**, o membro parece **mais curto**, há edema e equimose; procura-se lesão de pele que torne a fratura exposta e documenta-se escoriação e flictena antes de planejar incisões. Com suspeita vascular, mede-se o **índice tornozelo-braquial** e, se alterado, arteriografia ou angiotomografia; com déficit de pulso, o **primeiro passo é reduzir com tração** (Rockwood and Green, PDF 2739). O Skeletal Trauma (p. 1739) lembra de documentar o **ciático** (tibial e fibular), vizinho da região.
+O paciente **não apoia**, o membro parece **mais curto**, há edema e equimose; procura-se lesão de pele que torne a fratura exposta e documenta-se escoriação e flictena antes de planejar incisões. Com suspeita vascular, mede-se o **índice tornozelo-braquial** e, se alterado, arteriografia ou angiotomografia; com déficit de pulso, o **primeiro passo é reduzir com tração** (Rockwood and Green). O Skeletal Trauma (p. 1739) lembra de documentar o **ciático** (tibial e fibular), vizinho da região.
 
-A imagem começa com **AP e perfil do quadril e do fêmur** e **AP da bacia**. A **abdução** do proximal aparece bem no **AP**, enquanto a **flexão** e a **rotação externa** aparecem no **perfil**. Mede-se o comprimento do fragmento proximal e o diâmetro do canal, e procura-se extensão para **fossa piriforme, trocânter maior e trocânter menor**, que muda a tática de fixação; se o traço não fica claro, tomografia. O **quadril contralateral** em rotação neutra ou interna serve de **molde do ângulo cervicodiafisário**, e radiografias com tração mostram o tamanho real do proximal e eventuais lesões patológicas. No politrauma, a tomografia da pelve com cortes finos do colo ajuda a não perder a **fratura do colo associada** (PDF 2739).
+A imagem começa com **AP e perfil do quadril e do fêmur** e **AP da bacia**. A **abdução** do proximal aparece bem no **AP**, enquanto a **flexão** e a **rotação externa** aparecem no **perfil**. Mede-se o comprimento do fragmento proximal e o diâmetro do canal, e procura-se extensão para **fossa piriforme, trocânter maior e trocânter menor**, que muda a tática de fixação; se o traço não fica claro, tomografia. O **quadril contralateral** em rotação neutra ou interna serve de **molde do ângulo cervicodiafisário**, e radiografias com tração mostram o tamanho real do proximal e eventuais lesões patológicas. No politrauma, a tomografia da pelve com cortes finos do colo ajuda a não perder a **fratura do colo associada**.
 
 # Forças deformantes: o fragmento proximal e o distal {radar=confirmado}
 
-Este é o fato mais cobrado do tema, e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2738 e 2743, Fig. 55-4), o escreve sem ambiguidade: o fragmento proximal fica em **flexão, abdução e rotação externa** pela tração do **iliopsoas, do glúteo médio e dos rotadores externos curtos, respectivamente**. O distal fica **encurtado e medializado** pela tração sem oposição do **adutor magno e do adutor longo**.
+Este é o fato mais cobrado do tema, e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, Fig. 55-4), o escreve sem ambiguidade: o fragmento proximal fica em **flexão, abdução e rotação externa** pela tração do **iliopsoas, do glúteo médio e dos rotadores externos curtos, respectivamente**. O distal fica **encurtado e medializado** pela tração sem oposição do **adutor magno e do adutor longo**.
 
 O raciocínio é anatômico. O **iliopsoas** se insere no **trocânter menor**, que, na fratura típica, fica preso ao fragmento proximal; ao se contrair sem a oposição da diáfise, ele **flete** o fragmento curto. O **glúteo médio** se insere no **trocânter maior** e, com o fragmento solto, o **abduz**. Os **rotadores externos curtos** (piriforme, gêmeos, obturadores, quadrado femoral) também chegam à região trocantérica posterior e **rodam externamente** o fragmento. Do outro lado, os **adutores** se inserem ao longo da diáfise e, sem nada que os contrarie, **aduzem e puxam para cima** o fragmento distal, que fica medial e encurtado.
 
-!tabela Músculo, inserção e deformidade (Rockwood and Green 10, cap. 55, PDF 2738 e 2743; Campbell 15, cap. 60, p. 2677)
+!tabela Músculo, inserção e deformidade (Rockwood and Green 10, cap. 55; Campbell 15, cap. 60, p. 2677)
 | Músculo | Fragmento | Deformidade |
 | --- | --- | --- |
 | iliopsoas (trocânter menor) | proximal | **flexão** (e parte da rotação externa, segundo o Campbell) |
@@ -94,7 +94,7 @@ armadilha: Responder adução e rotação interna, que é a posição relativa d
 
 ## A resultante: varo e encurtamento
 
-Somando as forças: o proximal vai para **abdução** e o distal para **adução**; o ângulo entre eles abre para medial e fecha para lateral, ou seja, a fratura tende ao **varo**. Os adutores, o quadríceps e os isquiotibiais puxam o distal para cima, o que dá **encurtamento**. O Rockwood and Green (PDF 2743 e 2744, Fig. 55-4) descreve exatamente isso: o segmento da diáfise fica **aduzido e encurtado**. O Skeletal Trauma (p. 1741) acrescenta que as deformidades tardias mais comuns são **varo e extensão**, e o Rockwood and Green ilustra, nas Fig. 55-6 e 55-17, a má consolidação e a pseudartrose em varo.
+Somando as forças: o proximal vai para **abdução** e o distal para **adução**; o ângulo entre eles abre para medial e fecha para lateral, ou seja, a fratura tende ao **varo**. Os adutores, o quadríceps e os isquiotibiais puxam o distal para cima, o que dá **encurtamento**. O Rockwood and Green (Fig. 55-4) descreve exatamente isso: o segmento da diáfise fica **aduzido e encurtado**. O Skeletal Trauma (p. 1741) acrescenta que as deformidades tardias mais comuns são **varo e extensão**, e o Rockwood and Green ilustra, nas Fig. 55-6 e 55-17, a má consolidação e a pseudartrose em varo.
 
 !questoes central=trauma-1166
 conceito: A soma de abdução do proximal e adução do distal produz varo, e os adutores, o quadríceps e os isquiotibiais encurtam o membro.
@@ -105,11 +105,11 @@ alerta: A `trauma-1166` está sem gabarito oficial; o Rockwood and Green 10 (fra
 
 # Biomecânica: a região mais carregada do esqueleto {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2743, Fig. 55-5), lembra o diagrama clássico de KOCH (1917): a região subtrocantérica suporta **as maiores forças de compressão e de tração do esqueleto humano**. A compressão fica no **córtex medial** e a tração, no **lateral**. Quando o córtex medial está **cominuído**, a carga sobre o implante passa de **1.200 libras por polegada quadrada** num indivíduo de 200 libras, porque o implante deixa de dividir carga com o osso. A **redução em varo** piora tudo: muda o vetor de carga pelo proximal e aumenta a compressão medial. Por isso a relação entre a **ponta do trocânter maior e o centro da cabeça**, medida no lado são, deve ser restaurada.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, Fig. 55-5), lembra o diagrama clássico de KOCH (1917): a região subtrocantérica suporta **as maiores forças de compressão e de tração do esqueleto humano**. A compressão fica no **córtex medial** e a tração, no **lateral**. Quando o córtex medial está **cominuído**, a carga sobre o implante passa de **1.200 libras por polegada quadrada** num indivíduo de 200 libras, porque o implante deixa de dividir carga com o osso. A **redução em varo** piora tudo: muda o vetor de carga pelo proximal e aumenta a compressão medial. Por isso a relação entre a **ponta do trocânter maior e o centro da cabeça**, medida no lado são, deve ser restaurada.
 
 O Skeletal Trauma, 5ª ed. (cap. 57, p. 1737), explica o mesmo pelo eixo: o **eixo mecânico passa medial ao anatômico** na região subtrocantérica, então a carga axial gera **compressão medial e tração lateral**, o que explica a cominuição medial e as cunhas. Daí a vantagem da haste: ela fica **no centro do osso**, perto do eixo mecânico, enquanto a placa lateral fica **excêntrica**, com menor rigidez à flexão.
 
-!tabela Haste e placa na biomecânica (Rockwood and Green 10, cap. 55, PDF 2743 e 2747; Skeletal Trauma 5, cap. 57, p. 1737 e 1738; Campbell 15, cap. 60, p. 2671)
+!tabela Haste e placa na biomecânica (Rockwood and Green 10, cap. 55; Skeletal Trauma 5, cap. 57, p. 1737 e 1738; Campbell 15, cap. 60, p. 2671)
 | Aspecto | Haste intramedular | Placa lateral |
 | --- | --- | --- |
 | posição em relação ao eixo mecânico | central, próxima do eixo | excêntrica, lateral |
@@ -121,7 +121,7 @@ O Skeletal Trauma, 5ª ed. (cap. 57, p. 1737), explica o mesmo pelo eixo: o **ei
 | torção | menos rígida | mais rígida; lâmina 95° com a melhor estabilidade torsional entre as placas |
 !fim
 
-O ponto que a banca transforma em questão é o **braço de alavanca**. A força que tenta fletir o implante age a partir da cabeça femoral; quanto mais longe do centro do osso estiver o implante, maior o momento fletor sobre ele. A placa, presa na face lateral, fica longe; a haste, dentro do canal, fica perto. O Rockwood and Green (PDF 2747) diz que, **pelo braço de alavanca menor e pelo compartilhamento de carga**, as hastes são o implante preferido na maioria dos casos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2671), lista as vantagens teóricas do implante intramedular sobre o parafuso com placa lateral: **braço de alavanca encurtado**, menos sangramento, incisões menores e menos encurtamento do colo.
+O ponto que a banca transforma em questão é o **braço de alavanca**. A força que tenta fletir o implante age a partir da cabeça femoral; quanto mais longe do centro do osso estiver o implante, maior o momento fletor sobre ele. A placa, presa na face lateral, fica longe; a haste, dentro do canal, fica perto. O Rockwood and Green diz que, **pelo braço de alavanca menor e pelo compartilhamento de carga**, as hastes são o implante preferido na maioria dos casos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2671), lista as vantagens teóricas do implante intramedular sobre o parafuso com placa lateral: **braço de alavanca encurtado**, menos sangramento, incisões menores e menos encurtamento do colo.
 
 No mesmo trecho, o Rockwood and Green cita o estudo cadavérico que comparou **haste cefalomedular, placa bloqueada femoral proximal e lâmina angulada de 95°** num modelo subtrocantérico: a haste teve **menos colapso em varo**, **maior carga até a falha**, **mais ciclos até a falha** e **maior força na falha**.
 
@@ -136,7 +136,7 @@ alerta: A `trauma-1134` está sem gabarito oficial; pelo Rockwood and Green 10 e
 
 # Classificações: RUSSELL-TAYLOR, SEINSHEIMER e AO/OTA {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2740), observa que a maioria das classificações olha **a integridade do fragmento proximal, a geometria do traço e a cominuição**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2676), é mais cético: muitas foram descritas desde BOYD e GRIFFIN, mas **nenhuma se provou superior**.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), observa que a maioria das classificações olha **a integridade do fragmento proximal, a geometria do traço e a cominuição**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2676), é mais cético: muitas foram descritas desde BOYD e GRIFFIN, mas **nenhuma se provou superior**.
 
 ## RUSSELL-TAYLOR
 
@@ -144,7 +144,7 @@ A RUSSELL-TAYLOR foca **duas características do fragmento proximal**: a **exten
 
 A lógica fica clara no Skeletal Trauma, 5ª ed. (cap. 57, p. 1741), que conta por que ela foi criada: como **guia de tratamento** na era da haste de **entrada piriforme**. Se a fossa piriforme está íntegra (tipo I), a haste piriforme fechada funciona; se o traço entra na fossa (tipo II), o portal de entrada está comprometido e a haste piriforme fechada fica **imprevisível**. O trocânter menor é tomado como **substituto do suporte posteromedial**: no IA, a haste de primeira geração (bloqueio trocânter maior para trocânter menor) serve; no IB, sem cortical medial para o parafuso proximal, é preciso **haste cefalomedular**, com bloqueio na cabeça. As fraturas com **obliquidade reversa** às vezes entram como IB, pelo modo como falham com parafuso deslizante.
 
-!tabela RUSSELL-TAYLOR nos três livros (Rockwood and Green 10, cap. 55, PDF 2740; Campbell 15, cap. 60, p. 2676; Skeletal Trauma 5, cap. 57, p. 1741)
+!tabela RUSSELL-TAYLOR nos três livros (Rockwood and Green 10, cap. 55; Campbell 15, cap. 60, p. 2676; Skeletal Trauma 5, cap. 57, p. 1741)
 | Tipo | Rockwood and Green (tabela) | Campbell | Skeletal Trauma (conduta da época) |
 | --- | --- | --- | --- |
 | I | não envolve a fossa piriforme | não se estende à fossa | haste piriforme possível |
@@ -194,9 +194,9 @@ alerta: Os livros lidos (Rockwood and Green 10, Campbell 15, Skeletal Trauma 5) 
 
 ## AO/OTA
 
-O Rockwood and Green (PDF 2740, Fig. 55-3) apresenta a AO/OTA da região subtrocantérica pela **localização, geometria e cominuição**: traço **oblíquo, transverso ou multifragmentar**. O Campbell (p. 2666), ao classificar as trocantéricas, mostra o elo com a subtrocantérica: **31A3** reúne as fraturas com **obliquidade reversa, traço transverso ou extensão subtrocantérica**. O Skeletal Trauma (p. 1741) lembra que a AO original **não descrevia** bem as fraturas com extensão para a região trocantérica, um dos motivos de a RUSSELL-TAYLOR existir.
+O Rockwood and Green (Fig. 55-3) apresenta a AO/OTA da região subtrocantérica pela **localização, geometria e cominuição**: traço **oblíquo, transverso ou multifragmentar**. O Campbell (p. 2666), ao classificar as trocantéricas, mostra o elo com a subtrocantérica: **31A3** reúne as fraturas com **obliquidade reversa, traço transverso ou extensão subtrocantérica**. O Skeletal Trauma (p. 1741) lembra que a AO original **não descrevia** bem as fraturas com extensão para a região trocantérica, um dos motivos de a RUSSELL-TAYLOR existir.
 
-!tabela AO/OTA da região trocantérica e o elo com a subtrocantérica (Campbell 15, cap. 60, p. 2664 a 2670; Rockwood and Green 10, cap. 55, PDF 2740)
+!tabela AO/OTA da região trocantérica e o elo com a subtrocantérica (Campbell 15, cap. 60, p. 2664 a 2670; Rockwood and Green 10, cap. 55)
 | Grupo | Padrão | Implante favorecido |
 | --- | --- | --- |
 | 31A1 | traço único, sem cominuição | parafuso com placa lateral ou dispositivo cefalomedular |
@@ -216,17 +216,17 @@ alerta: Os livros lidos não descrevem o subgrupo A3.1 separadamente; o Campbell
 
 # Tratamento não operatório {radar=fundamento}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2746 e 2747), reduz o tratamento conservador a quase nada: só na **recusa do consentimento**, no paciente **sem condição clínica** para cirurgia e, eventualmente, no **não deambulador** (hemiplégico, tetraplégico). Mesmo nesses, operar costuma ser melhor: diminui complicações pulmonares, feridas e escaras, e facilita a higiene e o transporte com um osso estável. A **tração com quadril e joelho a 90°** é histórica. Se precisar, tração por algumas semanas no leito, com mobilização.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), reduz o tratamento conservador a quase nada: só na **recusa do consentimento**, no paciente **sem condição clínica** para cirurgia e, eventualmente, no **não deambulador** (hemiplégico, tetraplégico). Mesmo nesses, operar costuma ser melhor: diminui complicações pulmonares, feridas e escaras, e facilita a higiene e o transporte com um osso estável. A **tração com quadril e joelho a 90°** é histórica. Se precisar, tração por algumas semanas no leito, com mobilização.
 
 A série de SEINSHEIMER mostra por que se abandonou o método: **16%** dos pacientes tratados com tração consolidaram em **100%** dos casos, mas cinco consolidaram com **15° a 29° de varo**, e o grupo tinha média de **34 anos** (viés de seleção). O próprio autor alertou para as complicações desastrosas do leito prolongado no idoso. O Rockwood and Green lembra ainda que, no não deambulador, um varo consolidado pode **atrapalhar a higiene perineal**, sobretudo com contratura em adução prévia.
 
 # Escolha do implante: por que a haste vence {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2747), considera candidatos à cirurgia **todos os pacientes sem comorbidade proibitiva**, e a base do tratamento é a **haste intramedular**, pelo braço de alavanca menor e pela divisão de carga. A placa mantém papel em **traços simples com fragmento proximal muito curto** que aceitam redução anatômica, e em **pseudartrose em torno de haste**. O **fixador externo** é temporário no politrauma (ou definitivo só em ambiente sem recursos), e a **artroplastia** fica para fratura negligenciada, pseudartrose ou fratura patológica com tumor extenso no proximal. O algoritmo dos autores (PDF 2762) prefere, para **todas** as subtrocantéricas, a **haste bloqueada de entrada trocantérica**, em decúbito dorsal na mesa de tração, mesmo que precise de mini-incisão com pinça.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), considera candidatos à cirurgia **todos os pacientes sem comorbidade proibitiva**, e a base do tratamento é a **haste intramedular**, pelo braço de alavanca menor e pela divisão de carga. A placa mantém papel em **traços simples com fragmento proximal muito curto** que aceitam redução anatômica, e em **pseudartrose em torno de haste**. O **fixador externo** é temporário no politrauma (ou definitivo só em ambiente sem recursos), e a **artroplastia** fica para fratura negligenciada, pseudartrose ou fratura patológica com tumor extenso no proximal. O algoritmo dos autores prefere, para **todas** as subtrocantéricas, a **haste bloqueada de entrada trocantérica**, em decúbito dorsal na mesa de tração, mesmo que precise de mini-incisão com pinça.
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2676), concorda: a base é a haste, há evidência de que **implantes intramedulares são superiores aos extramedulares** na maioria das fraturas da região, e lâmina e placa bloqueada proximal ficam para circunstâncias específicas.
 
-!tabela Indicações de cada opção (Rockwood and Green 10, cap. 55, PDF 2746, 2747 e 2759; Campbell 15, cap. 60, p. 2676 e 2682)
+!tabela Indicações de cada opção (Rockwood and Green 10, cap. 55; Campbell 15, cap. 60, p. 2676 e 2682)
 | Opção | Quando |
 | --- | --- |
 | haste cefalomedular ou intramedular | quase todas; preferência dos autores para todas |
@@ -237,9 +237,9 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2676), concorda: a ba
 | não operatório | recusa, sem condição clínica, não deambulador |
 !fim
 
-A clínica confirma a biomecânica (Rockwood and Green, PDF 2763): a **lâmina de 95°** dependeu muito da redução indireta, o **DCS** colapsou em **varo** com **cominuição medial**, e as **placas bloqueadas proximais**, criadas para dar mais rigidez, decepcionaram, com falhas de **26%** a **41,4%**.
+A clínica confirma a biomecânica (Rockwood and Green): a **lâmina de 95°** dependeu muito da redução indireta, o **DCS** colapsou em **varo** com **cominuição medial**, e as **placas bloqueadas proximais**, criadas para dar mais rigidez, decepcionaram, com falhas de **26%** a **41,4%**.
 
-!tabela Resultados das placas na região (Rockwood and Green 10, cap. 55, PDF 2763 e 2769; Skeletal Trauma 5, cap. 57, p. 1738 e 1751)
+!tabela Resultados das placas na região (Rockwood and Green 10, cap. 55; Skeletal Trauma 5, cap. 57, p. 1738 e 1751)
 | Implante ou série | Achado |
 | --- | --- |
 | lâmina 95°, KINAST | redução indireta 0% de retardo ou pseudartrose; direta 16% |
@@ -269,7 +269,7 @@ alerta: O gabarito oficial (C, parafuso deslizante com placa-tubo de 95°) não 
 
 # Posição na mesa e o paciente obeso {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2748 e 2749), descreve duas opções: **supina na mesa de tração**, com o membro são em **litotomia** ou **"em tesoura"**, e **decúbito lateral** em mesa radiotransparente, com o arco em C pela frente.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), descreve duas opções: **supina na mesa de tração**, com o membro são em **litotomia** ou **"em tesoura"**, e **decúbito lateral** em mesa radiotransparente, com o arco em C pela frente.
 
 O argumento a favor do lateral é o **obeso central**: o fragmento distal pode ser **fletido para encontrar o proximal fletido**, o **pannus cai** e libera o ponto de entrada, e o tronco não atrapalha. Em contrapartida, a posição é **menos fisiológica**, e politraumatizados com precaução de coluna, trauma de tórax ou dreno torácico podem não tolerá-la. Os autores preferem a supina: menos ajudantes, ajuste fino da redução e perfil fluoroscópico fácil. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2677), prefere a supina com **portal trocantérico medial modificado** e reserva a lateral para **obesos** e padrões difíceis.
 
@@ -283,11 +283,11 @@ armadilha: Escolher a haste retrógrada pensando no acesso pelo joelho; ela não
 
 # Ponto de entrada: o lugar onde nasce o varo {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2747 e 2748), oferece duas entradas: **piriforme** e **trocantérica**. Ambas dão bons resultados, mas a **trocantérica** é mais fácil (é mais lateral, longe do tronco), torna **irrelevante a cominuição da fossa piriforme** e, numa grande série, teve **menos revisões por má rotação** que a piriforme e a retrógrada; muitas hastes cefalomedulares ainda ajudam a acertar a versão pela anteversão própria do implante. Um ensaio de 34 pacientes não achou diferença entre piriforme e trocantérica (PDF 2769).
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), oferece duas entradas: **piriforme** e **trocantérica**. Ambas dão bons resultados, mas a **trocantérica** é mais fácil (é mais lateral, longe do tronco), torna **irrelevante a cominuição da fossa piriforme** e, numa grande série, teve **menos revisões por má rotação** que a piriforme e a retrógrada; muitas hastes cefalomedulares ainda ajudam a acertar a versão pela anteversão própria do implante. Um ensaio de 34 pacientes não achou diferença entre piriforme e trocantérica.
 
-O ponto de entrada da haste trocantérica, porém, tem uma regra particular na subtrocantérica: **medial**. O Rockwood and Green (PDF 2752) faz a incisão de 3 a 5 cm cerca de **4 cm proximal e 1 a 2 cm posterior à ponta do trocânter**, apoia o pino guia **na face medial do trocânter maior no AP** e **centrado no perfil**, e avisa que é **imperativo que o ponto não derive para lateral**, porque isso contribui para a **redução em varo** e pode **cominuir a parede lateral** do trocânter (Fig. 55-11). Ideal, na subtrocantérica, é o ponto na **face medial do trocânter**: **mesmo o ponto recomendado pelo fabricante pode deixar um leve varo**.
+O ponto de entrada da haste trocantérica, porém, tem uma regra particular na subtrocantérica: **medial**. O Rockwood and Green faz a incisão de 3 a 5 cm cerca de **4 cm proximal e 1 a 2 cm posterior à ponta do trocânter**, apoia o pino guia **na face medial do trocânter maior no AP** e **centrado no perfil**, e avisa que é **imperativo que o ponto não derive para lateral**, porque isso contribui para a **redução em varo** e pode **cominuir a parede lateral** do trocânter (Fig. 55-11). Ideal, na subtrocantérica, é o ponto na **face medial do trocânter**: **mesmo o ponto recomendado pelo fabricante pode deixar um leve varo**.
 
-O estudo que fundamenta isso está resumido nas referências comentadas (PDF 2769): em 21 fêmures de cadáver com quatro hastes trocantéricas, o ponto **lateral** deu **varo**, o **recomendado** deu **leve varo** e o **medial** deu posição **anatômica ou em valgo**. O Skeletal Trauma, 5ª ed. (cap. 57, p. 1737), conta o mesmo: ponto lateral à ponta do trocânter maior gerou **abertura da cortical lateral e varo**, e a conclusão foi entrar **na ponta ou levemente medial a ela**.
+O estudo que fundamenta isso está resumido nas referências comentadas: em 21 fêmures de cadáver com quatro hastes trocantéricas, o ponto **lateral** deu **varo**, o **recomendado** deu **leve varo** e o **medial** deu posição **anatômica ou em valgo**. O Skeletal Trauma, 5ª ed. (cap. 57, p. 1737), conta o mesmo: ponto lateral à ponta do trocânter maior gerou **abertura da cortical lateral e varo**, e a conclusão foi entrar **na ponta ou levemente medial a ela**.
 
 O mecanismo é geométrico. A haste trocantérica tem uma **curva lateral proximal**; se ela entra lateral demais, o eixo dela, ao descer pelo canal, empurra o fragmento proximal para a abdução (o proximal "monta" na haste inclinado). Como o proximal já tende à abdução pelas forças musculares, a entrada lateral fixa exatamente a deformidade que se queria corrigir.
 
@@ -301,25 +301,25 @@ armadilha: Escolher o centro do trocânter ou a fossa piriforme como resposta pa
 
 # Redução, fresagem e conferência final {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2749), resume a técnica em passos: tentar a redução fechada ou percutânea; **abrir no foco** e controlar o proximal, se necessário; posicionar o proximal para conseguir o **ponto de entrada perfeito**; entrar e fresar a entrada **paralela à cortical lateral** e centrada no perfil; passar o guia de ponta em bola até a fratura; **reduzir e pinçar**; avançar o guia, medir, fresar **2 mm acima** do diâmetro da haste; inserir; **bloquear proximal**; conferir **rotação e comprimento** e **bloquear distal**.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), resume a técnica em passos: tentar a redução fechada ou percutânea; **abrir no foco** e controlar o proximal, se necessário; posicionar o proximal para conseguir o **ponto de entrada perfeito**; entrar e fresar a entrada **paralela à cortical lateral** e centrada no perfil; passar o guia de ponta em bola até a fratura; **reduzir e pinçar**; avançar o guia, medir, fresar **2 mm acima** do diâmetro da haste; inserir; **bloquear proximal**; conferir **rotação e comprimento** e **bloquear distal**.
 
 ## Quando abrir e como fresar
 
-A frase-chave do capítulo é que o **limiar para abrir e pinçar deve ser muito baixo** (PDF 2749). A tentativa fechada é breve; se não reduz, abre-se em degraus: **incisões puntiformes** para pinça, elevador ou "picador", depois uma **pequena incisão no foco**. Melhor uma incisão a mais e a fratura alinhada. A dissecção pelo vasto lateral é romba e **sem desperiostizar**; a pinça leva o proximal à posição **anatômica ou a uma adução exagerada**, o que facilita o ponto de entrada (Fig. 55-9). A **cerclagem** ajuda no fragmento em borboleta, com cuidado com o **ciático** e a **femoral**. Como o traço costuma correr **de anterossuperior para posteroinferior**, a fresa tende a comer a parte posterior do proximal; por isso a pinça fica durante a fresagem. Um **pino de SCHANZ no calcar medial** derrota o proximal e, na concavidade, serve de **pino bloqueador** que empurra para o valgo (Fig. 55-8).
+A frase-chave do capítulo é que o **limiar para abrir e pinçar deve ser muito baixo**. A tentativa fechada é breve; se não reduz, abre-se em degraus: **incisões puntiformes** para pinça, elevador ou "picador", depois uma **pequena incisão no foco**. Melhor uma incisão a mais e a fratura alinhada. A dissecção pelo vasto lateral é romba e **sem desperiostizar**; a pinça leva o proximal à posição **anatômica ou a uma adução exagerada**, o que facilita o ponto de entrada (Fig. 55-9). A **cerclagem** ajuda no fragmento em borboleta, com cuidado com o **ciático** e a **femoral**. Como o traço costuma correr **de anterossuperior para posteroinferior**, a fresa tende a comer a parte posterior do proximal; por isso a pinça fica durante a fresagem. Um **pino de SCHANZ no calcar medial** derrota o proximal e, na concavidade, serve de **pino bloqueador** que empurra para o valgo (Fig. 55-8).
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2677 e 2678), chama isso de **controle da trajetória**: portal preciso, apoio nas corticais anterior e lateral e **sem fresagem excêntrica**, de preferência por um canal protetor; as deformidades do proximal são **corrigidas e mantidas antes de fresar**. Na haste piriforme, o pino é "roubado" cerca de **5 mm para anterior** no perfil.
 
-Fresa-se **2 mm acima** do diâmetro da haste, que costuma ter **10 mm**; em osso ruim, **não se fresa além do istmo**, e a curvatura excessiva pode exigir **dobrar a haste** (PDF 2756). O bloqueio proximal na cabeça **nunca** se faz sem perfil perfeito. As opções de bloqueio são um parafuso no trocânter menor, um **grande parafuso cefalomedular** (o preferido no **idoso com osso ruim**), dois parafusos no colo (modo recon) ou a configuração cruzada; no **jovem**, evita-se um trajeto largo no colo (PDF 2748). O distal é **estático** na maioria e pode ser dinâmico no transverso simples (PDF 2757).
+Fresa-se **2 mm acima** do diâmetro da haste, que costuma ter **10 mm**; em osso ruim, **não se fresa além do istmo**, e a curvatura excessiva pode exigir **dobrar a haste**. O bloqueio proximal na cabeça **nunca** se faz sem perfil perfeito. As opções de bloqueio são um parafuso no trocânter menor, um **grande parafuso cefalomedular** (o preferido no **idoso com osso ruim**), dois parafusos no colo (modo recon) ou a configuração cruzada; no **jovem**, evita-se um trajeto largo no colo. O distal é **estático** na maioria e pode ser dinâmico no transverso simples.
 
 ## Rotação e comprimento
 
-Com cominuição que impede "ler" o foco, rotação e comprimento se medem **no lado são, antes da cirurgia**: perfil verdadeiro do joelho e depois o quadril, sem girar o arco, para medir a anteversão, ou comparação do **perfil do trocânter menor** (Rockwood and Green, PDF 2747). O Campbell (p. 2678) quantifica: uma diferença de **20% no tamanho do trocânter menor** corresponde a cerca de **15° de rotação**; e, no fim, compara a rotação do quadril a **90° de flexão** com o outro lado, corrigindo pela retirada dos parafusos distais.
+Com cominuição que impede "ler" o foco, rotação e comprimento se medem **no lado são, antes da cirurgia**: perfil verdadeiro do joelho e depois o quadril, sem girar o arco, para medir a anteversão, ou comparação do **perfil do trocânter menor** (Rockwood and Green). O Campbell (p. 2678) quantifica: uma diferença de **20% no tamanho do trocânter menor** corresponde a cerca de **15° de rotação**; e, no fim, compara a rotação do quadril a **90° de flexão** com o outro lado, corrigindo pela retirada dos parafusos distais.
 
 ## A conferência antes de acordar o paciente
 
-Esta é a regra numérica que a banca cobra. O Rockwood and Green (PDF 2757) manda, **antes de acordar o paciente**: fazer uma radiografia em **rotação interna máxima** para excluir **fratura do colo femoral**; avaliar **comprimento, rotação e estabilidade do joelho**; e, se houver **má rotação acima de 15°** ou **discrepância de comprimento acima de 2 cm**, **revisar na mesma anestesia**. O livro não fixa um limite angular de varo ou flexão para revisão imediata; ele trata o varo como algo a prevenir com o ponto de entrada e a redução antes da fresagem.
+Esta é a regra numérica que a banca cobra. O Rockwood and Green manda, **antes de acordar o paciente**: fazer uma radiografia em **rotação interna máxima** para excluir **fratura do colo femoral**; avaliar **comprimento, rotação e estabilidade do joelho**; e, se houver **má rotação acima de 15°** ou **discrepância de comprimento acima de 2 cm**, **revisar na mesma anestesia**. O livro não fixa um limite angular de varo ou flexão para revisão imediata; ele trata o varo como algo a prevenir com o ponto de entrada e a redução antes da fresagem.
 
-!tabela Armadilhas e prevenção (Rockwood and Green 10, cap. 55, tabela de PDF 2758 e 2759)
+!tabela Armadilhas e prevenção (Rockwood and Green 10, cap. 55, tabela de)
 | Armadilha | Prevenção |
 | --- | --- |
 | redução em varo | evitar ponto de entrada lateral; obter e manter a redução antes e durante a fresagem |
@@ -337,17 +337,17 @@ armadilha: Escolher a rotação de 10°, que está abaixo do limite de 15°, ou 
 
 ## Pós-operatório da haste
 
-A maioria pode **carregar conforme tolerar**. As exceções são a ausência de contato ósseo e a perda segmentar: **30 libras de carga parcial** por 6 a 12 semanas. Profilaxia de TVP do primeiro dia por **6 semanas** ou até mobilizar bem; retornos em 2 semanas e radiografias com 6 semanas, 3, 6, 12 e 24 meses (Rockwood and Green, PDF 2758). O Campbell (p. 2678) também libera carga conforme tolerado após haste, e **toque de carga por 6 semanas** após placa bloqueada proximal (p. 2683).
+A maioria pode **carregar conforme tolerar**. As exceções são a ausência de contato ósseo e a perda segmentar: **30 libras de carga parcial** por 6 a 12 semanas. Profilaxia de TVP do primeiro dia por **6 semanas** ou até mobilizar bem; retornos em 2 semanas e radiografias com 6 semanas, 3, 6, 12 e 24 meses (Rockwood and Green). O Campbell (p. 2678) também libera carga conforme tolerado após haste, e **toque de carga por 6 semanas** após placa bloqueada proximal (p. 2683).
 
 # Placa: técnica e limites {radar=fundamento}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2759 a 2761), reserva a placa ao **proximal curto com traço simples** que aceita **redução anatômica**, porque a **cominuição posteromedial** dá maus resultados. O acesso é lateral, elevando o **vasto lateral** sem dissecção medial, com redução o mais **indireta** possível. Em lâmina, DHS, DCS ou placa bloqueada, o essencial é a **fixação proximal exata na cabeça**: posicionada a placa no proximal, traz-se a diáfise até ela (**autoalinhamento**, Fig. 55-16), e só assim o cervicodiafisário fica certo. No traço simples, comprime-se, porque o mais importante de qualquer montagem é o **contato osso com osso**. A carga fica limitada por **6 a 12 semanas**. Para os autores, a placa é **biomecanicamente inferior** e cabe sobretudo na **pseudartrose e na má consolidação**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2682), acrescenta que a **lâmina de 95°** não pode ser percutânea, mas é muito útil em **revisão**.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), reserva a placa ao **proximal curto com traço simples** que aceita **redução anatômica**, porque a **cominuição posteromedial** dá maus resultados. O acesso é lateral, elevando o **vasto lateral** sem dissecção medial, com redução o mais **indireta** possível. Em lâmina, DHS, DCS ou placa bloqueada, o essencial é a **fixação proximal exata na cabeça**: posicionada a placa no proximal, traz-se a diáfise até ela (**autoalinhamento**, Fig. 55-16), e só assim o cervicodiafisário fica certo. No traço simples, comprime-se, porque o mais importante de qualquer montagem é o **contato osso com osso**. A carga fica limitada por **6 a 12 semanas**. Para os autores, a placa é **biomecanicamente inferior** e cabe sobretudo na **pseudartrose e na má consolidação**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2682), acrescenta que a **lâmina de 95°** não pode ser percutânea, mas é muito útil em **revisão**.
 
 # Resultados {radar=clinico}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2762), resume: **alta consolidação e pouca reoperação**, mas maus alinhamentos não são raros; a mini-incisão com pinça ou cerclagem **não aumentou** complicações e ajuda a alinhar.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), resume: **alta consolidação e pouca reoperação**, mas maus alinhamentos não são raros; a mini-incisão com pinça ou cerclagem **não aumentou** complicações e ajuda a alinhar.
 
-!tabela Séries de resultados (Rockwood and Green 10, cap. 55, PDF 2762 e 2763)
+!tabela Séries de resultados (Rockwood and Green 10, cap. 55)
 | Grupo | Achado |
 | --- | --- |
 | alta energia, haste piriforme (95 casos) | 99% consolidam, média de 25 semanas |
@@ -359,11 +359,11 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2762), resume
 | pseudartrose, HAIDUKEWYCH (23 casos) | 95% consolidaram com hastes, lâminas, DCS, DHS ou placas duplas; 18 com enxerto |
 !fim
 
-No idoso, a **mortalidade perioperatória** é substancial e deve ser conversada com a família; na fratura por bisfosfonato, a fixação de urgência custa mais que a profilática, daí rastrear o outro lado (PDF 2762 e 2763).
+No idoso, a **mortalidade perioperatória** é substancial e deve ser conversada com a família; na fratura por bisfosfonato, a fixação de urgência custa mais que a profilática, daí rastrear o outro lado.
 
 # Complicações: má consolidação, pseudartrose e infecção {radar=clinico}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2763 a 2768), acha a **má consolidação** mais comum do que se relata. O **varo sobe o trocânter maior** e **diminui a eficiência dos abdutores**, além de alterar comprimento e rotação (Fig. 55-18). Na deformidade grave, **osteotomia corretiva no ápice com lâmina de 95°**, colocada na parte inferior da cabeça, que raramente foi violada por implantes anteriores.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55), acha a **má consolidação** mais comum do que se relata. O **varo sobe o trocânter maior** e **diminui a eficiência dos abdutores**, além de alterar comprimento e rotação (Fig. 55-18). Na deformidade grave, **osteotomia corretiva no ápice com lâmina de 95°**, colocada na parte inferior da cabeça, que raramente foi violada por implantes anteriores.
 
 Na **pseudartrose**, a pergunta é o alinhamento. **Alinhada e com haste**: troca por **haste de maior diâmetro**, fechada, de preferência com outra configuração de bloqueio proximal. Com **falha do implante, proximal curto ou mau alinhamento**: **lâmina de 95°** aberta, desbridamento, correção e enxerto nas atróficas. No idoso multioperado com dano articular, **artroplastia com haste longa diafisária**. O **varo é fator de risco** de retardo e pseudartrose (Fig. 55-17). Na pseudartrose de **atípica**, técnica aberta com osteotomia da cortical lateral, enxerto, placa bloqueada ou lâmina e carga só após **8 a 12 semanas**.
 
@@ -371,13 +371,13 @@ A **infecção precoce** se trata com desbridamento, **manutenção do implante 
 
 # Fratura atípica: o que ela é e como reconhecer {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed., dedica o capítulo 56 à **fratura atípica do fêmur**. A história começa com a série de ODVINA, em 2005: um padrão radiográfico próprio, trauma mínimo ou nenhum e **remodelação óssea gravemente suprimida**. A **força-tarefa da ASBMR** (American Society for Bone and Mineral Research) publicou dois documentos (2010 e 2014) com uma **definição radiográfica padronizada**, que separa a atípica das fraturas osteoporóticas "típicas" (PDF 2771). Tumores e doenças como PAGET ficam **fora** da definição.
+O Rockwood and Green's Fractures in Adults, 10ª ed., dedica o capítulo 56 à **fratura atípica do fêmur**. A história começa com a série de ODVINA, em 2005: um padrão radiográfico próprio, trauma mínimo ou nenhum e **remodelação óssea gravemente suprimida**. A **força-tarefa da ASBMR** (American Society for Bone and Mineral Research) publicou dois documentos (2010 e 2014) com uma **definição radiográfica padronizada**, que separa a atípica das fraturas osteoporóticas "típicas". Tumores e doenças como PAGET ficam **fora** da definição.
 
 ## Epidemiologia e o bisfosfonato
 
-A incidência estimada vai de **1,6 a 23 por 100.000 pessoas-ano**; as atípicas são **3,5% a 10,4%** das fraturas subtrocantéricas e diafisárias de baixa energia. São muito mais comuns em **mulheres** (risco relativo ajustado de **4,31**), ocorrem em pacientes **pelo menos uma década mais jovens** que as típicas e têm forte predileção por **asiáticas** (risco cerca de **8 vezes** o de brancas) (PDF 2772).
+A incidência estimada vai de **1,6 a 23 por 100.000 pessoas-ano**; as atípicas são **3,5% a 10,4%** das fraturas subtrocantéricas e diafisárias de baixa energia. São muito mais comuns em **mulheres** (risco relativo ajustado de **4,31**), ocorrem em pacientes **pelo menos uma década mais jovens** que as típicas e têm forte predileção por **asiáticas** (risco cerca de **8 vezes** o de brancas).
 
-O **bisfosfonato** é o **maior fator de risco**; glicocorticoide, inibidor de bomba de prótons e denosumabe têm ligação variável. O **alendronato** é o mais ligado, talvez pela **meia-vida acima de 10 anos**. O risco cresce com o tempo de uso, sobretudo **após 3 anos** (razão de chances de **35 abaixo de 2 anos a 176 acima de 9**), a média de uso antes da fratura é de **5 a 7 anos**, e o risco cai cerca de **70% por ano** após parar. O mecanismo proposto é a supressão dos osteoclastos: menos remodelação e microfissuras que não são reabsorvidas e coalescem. O Skeletal Trauma, 5ª ed. (cap. 57, p. 1738), diz o mesmo: o alendronato **prejudica o reparo do microdano** subtrocantérico. A ligação **não está definitivamente provada** e o **benefício do remédio supera o risco** (PDF 2772 e 2773).
+O **bisfosfonato** é o **maior fator de risco**; glicocorticoide, inibidor de bomba de prótons e denosumabe têm ligação variável. O **alendronato** é o mais ligado, talvez pela **meia-vida acima de 10 anos**. O risco cresce com o tempo de uso, sobretudo **após 3 anos** (razão de chances de **35 abaixo de 2 anos a 176 acima de 9**), a média de uso antes da fratura é de **5 a 7 anos**, e o risco cai cerca de **70% por ano** após parar. O mecanismo proposto é a supressão dos osteoclastos: menos remodelação e microfissuras que não são reabsorvidas e coalescem. O Skeletal Trauma, 5ª ed. (cap. 57, p. 1738), diz o mesmo: o alendronato **prejudica o reparo do microdano** subtrocantérico. A ligação **não está definitivamente provada** e o **benefício do remédio supera o risco**.
 
 !questoes central=trauma-0213
 conceito: A fratura atípica do fêmur está associada ao uso prolongado de bisfosfonato, sobretudo alendronato, com risco que cresce após 3 a 5 anos de uso.
@@ -387,9 +387,9 @@ armadilha: Escolher teriparatida, que é justamente usada para tratar a atípica
 
 ## Clínica: trauma mínimo, dor prodrômica e o outro lado
 
-A marca clínica é o **trauma mínimo ou nenhum**: queda da própria altura, um esbarrão, um giro, ou a sensação de que a perna **"falseou"** antes da queda; numa das primeiras séries, quase metade não caiu (PDF 2773). Ao contrário da subtrocantérica de alta energia, a atípica costuma ser **isolada**.
+A marca clínica é o **trauma mínimo ou nenhum**: queda da própria altura, um esbarrão, um giro, ou a sensação de que a perna **"falseou"** antes da queda; numa das primeiras séries, quase metade não caiu. Ao contrário da subtrocantérica de alta energia, a atípica costuma ser **isolada**.
 
-A **dor prodrômica** é o sinal específico: **86%** num registro sueco, **30% a 77%** em outros estudos, na coxa, mas também na virilha ou no joelho (até perto de uma prótese de joelho que ia bem). Num estudo, a dor na coxa precedeu a fratura completa **em 100%** dos casos, contra 25% sem dor, e a fratura pode completar-se de dias até **9 meses** depois. Os achados **contralaterais** são comuns: **28% a 54%** têm fratura contralateral simultânea ou posterior, contra **2,4%** das típicas, e o local da primeira não prevê o da segunda, então se examina **o fêmur inteiro**, e por anos (até 6 anos depois) (PDF 2774). O capítulo 55 (PDF 2762) dá o número para a subtrocantérica por bisfosfonato: **bilateral em até 44%**.
+A **dor prodrômica** é o sinal específico: **86%** num registro sueco, **30% a 77%** em outros estudos, na coxa, mas também na virilha ou no joelho (até perto de uma prótese de joelho que ia bem). Num estudo, a dor na coxa precedeu a fratura completa **em 100%** dos casos, contra 25% sem dor, e a fratura pode completar-se de dias até **9 meses** depois. Os achados **contralaterais** são comuns: **28% a 54%** têm fratura contralateral simultânea ou posterior, contra **2,4%** das típicas, e o local da primeira não prevê o da segunda, então se examina **o fêmur inteiro**, e por anos (até 6 anos depois). O capítulo 55 dá o número para a subtrocantérica por bisfosfonato: **bilateral em até 44%**.
 
 O Skeletal Trauma (p. 1738) resume o perfil: **a maioria tem dor prodrômica** e a **bilateralidade é comum**.
 
@@ -401,9 +401,9 @@ armadilha: Trocar os lados: a espícula é medial e o espessamento é da cortica
 
 ## Imagem e os critérios da ASBMR
 
-O Rockwood and Green (PDF 2775) avisa que a atípica passa despercebida (15 de 16 não foram laudadas como atípicas) e precisa ser distinguida das **zonas de LOOSER** da osteomalácia e das **fraturas de estresse típicas, que são mediais**. Os achados mais específicos são o **espessamento periosteal**, o **ângulo transverso do traço** e o **bico medial**; a linha transversa na cortical lateral é a **"linha negra temida"** (dreaded black line), precursora da fratura. O **ângulo transverso na cortical lateral** (**75° a 105°**) é talvez o critério mais específico. A **RM** mostra edema antes da radiografia; a cintilografia é sensível e pouco específica. O capítulo 55 (PDF 2739) pede, no lado oposto, procurar **espessamento cortical lateral**, com ou sem **bico medial** ou **linha negra**, na região subtrocantérica.
+O Rockwood and Green avisa que a atípica passa despercebida (15 de 16 não foram laudadas como atípicas) e precisa ser distinguida das **zonas de LOOSER** da osteomalácia e das **fraturas de estresse típicas, que são mediais**. Os achados mais específicos são o **espessamento periosteal**, o **ângulo transverso do traço** e o **bico medial**; a linha transversa na cortical lateral é a **"linha negra temida"** (dreaded black line), precursora da fratura. O **ângulo transverso na cortical lateral** (**75° a 105°**) é talvez o critério mais específico. A **RM** mostra edema antes da radiografia; a cintilografia é sensível e pouco específica. O capítulo 55 pede, no lado oposto, procurar **espessamento cortical lateral**, com ou sem **bico medial** ou **linha negra**, na região subtrocantérica.
 
-!tabela Critérios da ASBMR 2014 para fratura atípica (Rockwood and Green 10, cap. 56, Tabela 56-1, PDF 2777)
+!tabela Critérios da ASBMR 2014 para fratura atípica (Rockwood and Green 10, cap. 56, Tabela 56-1)
 | Item | Critério |
 | --- | --- |
 | localização | logo abaixo do trocânter menor até logo acima do alargamento supracondiliano |
@@ -430,25 +430,25 @@ alerta: Os livros não usam a expressão "esporão lateral": a ASBMR descreve es
 
 # Fratura atípica: tratamento {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 56, PDF 2777 a 2784), trata a atípica em dois blocos: **completa** e **incompleta**.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 56), trata a atípica em dois blocos: **completa** e **incompleta**.
 
 ## Incompleta: observar ou fixar?
 
-O tratamento **não operatório** não tem papel na fratura completa desviada e tem papel limitado na incompleta. Pode ser considerado, com cautela, quando há **achados radiográficos mínimos sem dor**, **edema na RM sem alteração radiográfica**, ou alterações corticais **sem a linha negra temida**, num paciente que consegue proteger a carga e é aderente ao seguimento. É **fortemente desaconselhado** com **dor intratável**, **linha negra** ou impossibilidade de proteger a carga; a localização **subtrocantérica** está associada a falha do conservador. A técnica é **carga protegida por 2 a 3 meses**, **suspender o bisfosfonato**, investigação endocrinológica, **cálcio e vitamina D** e, a critério do cirurgião, **teriparatida** (PDF 2777 e 2778). Os resultados são ruins: progressão para fratura completa em 6 a 10 meses, 5 de 6 numa série; na de EGOL, só **18%** consolidaram em 11 meses.
+O tratamento **não operatório** não tem papel na fratura completa desviada e tem papel limitado na incompleta. Pode ser considerado, com cautela, quando há **achados radiográficos mínimos sem dor**, **edema na RM sem alteração radiográfica**, ou alterações corticais **sem a linha negra temida**, num paciente que consegue proteger a carga e é aderente ao seguimento. É **fortemente desaconselhado** com **dor intratável**, **linha negra** ou impossibilidade de proteger a carga; a localização **subtrocantérica** está associada a falha do conservador. A técnica é **carga protegida por 2 a 3 meses**, **suspender o bisfosfonato**, investigação endocrinológica, **cálcio e vitamina D** e, a critério do cirurgião, **teriparatida**. Os resultados são ruins: progressão para fratura completa em 6 a 10 meses, 5 de 6 numa série; na de EGOL, só **18%** consolidaram em 11 meses.
 
-A **fixação profilática** das incompletas é controversa, mas tem bons resultados (EGOL: **100%** de consolidação, **81%** sem dor) e é **fortemente encorajada** com curvatura femoral em varo, atípica contralateral prévia, **localização subtrocantérica**, **dor intensa** ou falha após 2 a 3 meses de conservador (PDF 2779).
+A **fixação profilática** das incompletas é controversa, mas tem bons resultados (EGOL: **100%** de consolidação, **81%** sem dor) e é **fortemente encorajada** com curvatura femoral em varo, atípica contralateral prévia, **localização subtrocantérica**, **dor intensa** ou falha após 2 a 3 meses de conservador.
 
 ## Completa: haste cefalomedular longa
 
-Toda fratura desviada é **cirúrgica**. Entre haste intramedular comum e **cefalomedular**, prefere-se a **cefalomedular**, pelo risco de fratura proximal (até atraumática) com a haste anterógrada comum; e **longa**, para **proteger o fêmur inteiro**. O planejamento olha a **curvatura** anterior e lateral, porque fêmures muito curvos perfuram a cortical anterior distal: escolhe-se a haste de **menor raio de curvatura** disponível, às vezes de diâmetro menor; hastes **com fenda** são desaconselhadas. A posição lateral pode ajudar nas subtrocantéricas com proximal fletido e nos obesos (PDF 2779).
+Toda fratura desviada é **cirúrgica**. Entre haste intramedular comum e **cefalomedular**, prefere-se a **cefalomedular**, pelo risco de fratura proximal (até atraumática) com a haste anterógrada comum; e **longa**, para **proteger o fêmur inteiro**. O planejamento olha a **curvatura** anterior e lateral, porque fêmures muito curvos perfuram a cortical anterior distal: escolhe-se a haste de **menor raio de curvatura** disponível, às vezes de diâmetro menor; hastes **com fenda** são desaconselhadas. A posição lateral pode ajudar nas subtrocantéricas com proximal fletido e nos obesos.
 
-Na técnica, o **ponto de entrada** é o passo mais crítico: na subtrocantérica com haste trocantérica, entrar **logo medial à ponta do trocânter** ajuda a evitar o varo, e entrar medial com haste de curva lateral ajuda a conseguir valgo. O mau alinhamento em **varo** se correlaciona com falha e demora, e diferenças tão pequenas quanto **4,4° no cervicodiafisário** e **5,5° no plano sagital** já se associam a falha. A redução deve ser **anatômica ou quase**, com abertura e pinça ou placa provisória se a tração não bastar, sobretudo nas subtrocantéricas. Usa-se a **maior haste possível**, fresando **2,5 mm acima**, e um "backslap" (ou "frontslap") para fechar a distração, porque uma **abertura lateral de 2 mm** já pode levar à pseudartrose. Parafusos transversos na região subtrocantérica podem gerar novos traços; preferem-se os **parafusos cefálicos** (PDF 2779 a 2781).
+Na técnica, o **ponto de entrada** é o passo mais crítico: na subtrocantérica com haste trocantérica, entrar **logo medial à ponta do trocânter** ajuda a evitar o varo, e entrar medial com haste de curva lateral ajuda a conseguir valgo. O mau alinhamento em **varo** se correlaciona com falha e demora, e diferenças tão pequenas quanto **4,4° no cervicodiafisário** e **5,5° no plano sagital** já se associam a falha. A redução deve ser **anatômica ou quase**, com abertura e pinça ou placa provisória se a tração não bastar, sobretudo nas subtrocantéricas. Usa-se a **maior haste possível**, fresando **2,5 mm acima**, e um "backslap" (ou "frontslap") para fechar a distração, porque uma **abertura lateral de 2 mm** já pode levar à pseudartrose. Parafusos transversos na região subtrocantérica podem gerar novos traços; preferem-se os **parafusos cefálicos**.
 
 ## Placa só quando a haste é impossível
 
-Não há regras específicas de placa na atípica, mas, se usada, deve ser **longa, de grandes fragmentos**, protegendo o fêmur inteiro e, se possível, o **colo**. Como a placa depende de **consolidação direta e de osteoclastos**, justamente o que o bisfosfonato afeta, os resultados são **menos confiáveis que os da haste**, com mais falhas e revisões; por isso ela **só deve ser usada quando a haste é cirurgicamente impossível**, como em fêmures **muito curvos** ou **canais extremamente estreitos**. A técnica trata o foco **como uma pseudartrose**: expor, curetar até osso sangrante, reduzir anatomicamente, placa lateral como **banda de tensão**, compressão e, a critério, enxerto (PDF 2782 e 2783). Numa revisão de 77 artigos, a revisão foi de **31% com placas** contra **13% com hastes** (PDF 2786).
+Não há regras específicas de placa na atípica, mas, se usada, deve ser **longa, de grandes fragmentos**, protegendo o fêmur inteiro e, se possível, o **colo**. Como a placa depende de **consolidação direta e de osteoclastos**, justamente o que o bisfosfonato afeta, os resultados são **menos confiáveis que os da haste**, com mais falhas e revisões; por isso ela **só deve ser usada quando a haste é cirurgicamente impossível**, como em fêmures **muito curvos** ou **canais extremamente estreitos**. A técnica trata o foco **como uma pseudartrose**: expor, curetar até osso sangrante, reduzir anatomicamente, placa lateral como **banda de tensão**, compressão e, a critério, enxerto. Numa revisão de 77 artigos, a revisão foi de **31% com placas** contra **13% com hastes**.
 
-!tabela Haste e placa na fratura atípica (Rockwood and Green 10, cap. 56, PDF 2779 a 2786)
+!tabela Haste e placa na fratura atípica (Rockwood and Green 10, cap. 56)
 | Aspecto | Haste cefalomedular longa | Placa longa |
 | --- | --- | --- |
 | indicação | **padrão** para a completa e a profilática | só quando a haste é **cirurgicamente impossível** (curvatura grave, canal muito estreito) |
@@ -466,7 +466,7 @@ armadilha: Achar que a fratura incompleta ou a necessidade de proteger o colo in
 
 ## O tratamento médico e o seguimento
 
-Em toda atípica: **avaliação endocrinológica**, **suspensão do bisfosfonato**, **teriparatida** (análogo do PTH) se não houver contraindicação, e **avaliação do fêmur contralateral** pelo mesmo algoritmo (PDF 2784). A teriparatida acelerou a consolidação em séries, mas **não tem ensaio randomizado** na atípica. A consolidação leva **5 a 10,7 meses**, com retardo e pseudartrose em **20% a 40%**; a mortalidade é menor que a da fratura do quadril típica (**23% contra 62%** em 4 anos) (PDF 2785).
+Em toda atípica: **avaliação endocrinológica**, **suspensão do bisfosfonato**, **teriparatida** (análogo do PTH) se não houver contraindicação, e **avaliação do fêmur contralateral** pelo mesmo algoritmo. A teriparatida acelerou a consolidação em séries, mas **não tem ensaio randomizado** na atípica. A consolidação leva **5 a 10,7 meses**, com retardo e pseudartrose em **20% a 40%**; a mortalidade é menor que a da fratura do quadril típica (**23% contra 62%** em 4 anos).
 
 # Fechamento {radar=fundamento}
 

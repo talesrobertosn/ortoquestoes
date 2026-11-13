@@ -1,6 +1,6 @@
 ---
 id: rockwood10-outros-conceitos-basicos
-versao: 1
+versao: 2
 titulo: Outros temas de conceitos básicos: biomecânica das fraturas, cartilagem, tendão e clássicos de prova
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 1 · Biomechanics of Fractures and Fracture Fixation, com as partes de cartilagem e tendão do Capítulo 2 · Bone, Cartilage, and Tendon Healing
 autores: Michael Bottlang, Daniel C. Fitzpatrick, Brandon G. Wilkinson, Lutz Claes e Donald D. Anderson (cap. 1); Nathaniel E. Schaffer, Megan L. Killian, Tristan Maerz, Kurt D. Hankenson e Jaimo Ahn (cap. 2)
-fonte: Livros conferidos localmente em 10/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 1 (p. 1 a 17 aprox.), cap. 2 (p. 54 e 61 a 64 aprox.), cap. 32 (p. 1091 aprox.), cap. 48 (p. 2155 a 2158 aprox.) e cap. 50 (p. 2340 a 2343 aprox.), páginas inferidas pelo deslocamento constante porque o arquivo não imprime a página; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 2 (p. 145), cap. 8 (p. 451 a 453), cap. 31 (p. 1048 a 1051), cap. 32 (p. 1134 a 1136), cap. 39 (PDF 1961), cap. 42 (p. 1670), cap. 67 (p. 2975 a 2987) e cap. 84 (p. 3608); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 11 (p. 276), cap. 13 (p. 443), cap. 19 (p. 682, 683, 687, 706 e 714 a 718) e p. 1877; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., p. 304, 796, 797, 1003, 1417 aprox. e 1466 aprox.; Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., caps. 9 e 20, sem página impressa no arquivo, citadas as páginas do PDF (279, 635, 637, 983, 1330 a 1339 e 2599); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 5 (PDF 227) e PDF 161; Green's Operative Hand Surgery, 7ª ed. (2017), p. 23 e 24 e PDF 1283; The Adult Hip (CALLAGHAN, 2017), PDF 1767; Skeletal Trauma, PDF 382; AO Principles of Fracture Management, PDF 745. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 10/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 1 (Tabela 1-3 e Figs. 1-2, 1-4, 1-6 e 1-11), 2, 32, 48 (Fig. 48-31) e 50, citados por capítulo e seção porque o arquivo não imprime a página; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 2 (p. 145), cap. 8 (p. 451 a 453), cap. 31 (p. 1048 a 1051), cap. 32 (p. 1134 a 1136), cap. 39, cap. 42 (p. 1670), cap. 67 (p. 2975 a 2987) e cap. 84 (p. 3608); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 11 (p. 276), cap. 13 (p. 443), cap. 19 (p. 682, 683, 687, 706 e 714 a 718) e p. 1877; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., p. 304, 796, 797, 1003, 1417, 1418 e 1466; Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., caps. 9 e 20, ;  Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 5 e; Green's Operative Hand Surgery, 7ª ed. (2017), p. 23 e 24 e cap. 30, p. 990; The Adult Hip (CALLAGHAN, 2017); Skeletal Trauma; AO Principles of Fracture Management.
 subtemas: Outros temas de conceitos básicos
 resumo: Dobrar a espessura da placa multiplica a rigidez por 8 e dobrar o diâmetro do fio por 16; titânio tem metade do módulo do aço e resistência máxima semelhante; tração dá fratura transversa por avulsão e a asa de borboleta começa na cortical oposta à carga; colo femoral osteoporótico preserva osso inferior e perde no posterossuperior; orifício só enfraquece a torção acima de 10% do diâmetro; defeito condral até 1 mm, degrau acima de 1,5 mm, reparo com colágeno I e III; tendão cede aos 8%, cresce até 17 anos, colágeno III nas rupturas, epitendão dirige o reparo; ACVR1 na fibrodisplasia ossificante; TINEL avança em SUNDERLAND 2 e 3; MSIS maior é fístula ou duas culturas; lágrima supra-acetabular; PONSETI cavo, adução, varo, equino; PAVLIK anterior flete e posterior abduz; navicular é o último do tarso.
 ---
@@ -17,7 +17,7 @@ resumo: Dobrar a espessura da placa multiplica a rigidez por 8 e dobrar o diâme
 
 Este resumo é uma miscelânea de conceitos básicos: reúne as questões do tema que não couberam nos resumos de consolidação óssea, osteoporose, politrauma ou infecção. Metade delas vem de um lugar só, os dois primeiros capítulos do Rockwood and Green's Fractures in Adults, 10ª ed., que tratam da biomecânica das fraturas (cap. 1) e da cicatrização da cartilagem e do tendão (cap. 2). Por isso o Rockwood é o livro principal. A outra metade é um punhado de clássicos que as bancas de residência e de R4 gostam de repetir e que moram em capítulos espalhados: a classificação de SUNDERLAND e o sinal de TINEL, os critérios da MSIS para prótese infectada, a paroníquia crônica, o pino supra-acetabular, o ângulo de escorregamento, o método de PONSETI, o suspensório de PAVLIK e a ossificação do tarso. Para esses entram o Campbell's Operative Orthopaedics, 15ª ed., o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., o SIZÍNIO HEBERT, 5ª ed., e o Rockwood and Wilkins' Fractures in Children, 10ª ed.
 
-As páginas do Rockwood de adultos foram inferidas pelo deslocamento do arquivo, que não imprime a página, e levam "aprox."; no SIZÍNIO e no Rockwood infantil cito a página do PDF.
+O Rockwood de adultos é citado por capítulo e seção, assim como o SIZÍNIO e o Rockwood infantil.
 
 Como a prova cobra estes assuntos? Quase sempre com **um número ou um nome**: quantas vezes a rigidez aumenta, a partir de quantos por cento o orifício enfraquece o osso, que colágeno preenche o defeito, qual receptor está mutado, em quais graus o TINEL avança. Decorar a lista é possível, mas é mais seguro entender de onde cada número sai. A rigidez da placa sobe 8 vezes porque a espessura entra ao cubo na fórmula; a asa de borboleta começa do lado oposto à carga porque o osso é mais fraco em tração; o colo femoral quebra na queda e não na marcha porque a osteoporose poupa o osso inferior. Cada seção faz esse caminho: mecanismo, número e questão real.
 
@@ -25,17 +25,17 @@ Cinco das questões ligadas aqui cobram algo que nenhum dos livros conferidos tr
 
 # Material e estrutura: módulo, resistência e momento de inércia {radar=clinico}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, p. 1 a 6 aprox.), abre a biomecânica separando duas coisas que o aluno costuma misturar. **Propriedade de material** é o que o material faz sob carga, sem considerar a forma da peça. **Propriedade estrutural** é o que a peça inteira faz, e depende do material e da geometria. Uma placa de titânio e uma de aço com a mesma forma diferem pelo material; duas placas de aço, uma fina e uma grossa, diferem pela estrutura. As duas perguntas mais clássicas de biomecânica de implantes caem cada uma de um lado dessa divisão.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, seção Basic Mechanical Concepts), abre a biomecânica separando duas coisas que o aluno costuma misturar. **Propriedade de material** é o que o material faz sob carga, sem considerar a forma da peça. **Propriedade estrutural** é o que a peça inteira faz, e depende do material e da geometria. Uma placa de titânio e uma de aço com a mesma forma diferem pelo material; duas placas de aço, uma fina e uma grossa, diferem pela estrutura. As duas perguntas mais clássicas de biomecânica de implantes caem cada uma de um lado dessa divisão.
 
 ## O que é material: tensão, deformação e módulo de YOUNG
 
-Para falar do material sem depender do tamanho da amostra, a carga é dividida pela área em que atua e passa a se chamar **tensão** (stress, em pascal). O encurtamento ou alongamento é dividido pelo comprimento inicial e passa a se chamar **deformação** (strain, sem unidade, em porcentagem). A razão entre os dois, na parte reta da curva, é o **módulo de elasticidade ou de YOUNG** (E): quanto maior, mais rígido o material. O livro (p. 2) dá os dois números que a prova usa: **aço inoxidável, 200 GPa; titânio, 110 GPa**. O aço é cerca de duas vezes mais rígido.
+Para falar do material sem depender do tamanho da amostra, a carga é dividida pela área em que atua e passa a se chamar **tensão** (stress, em pascal). O encurtamento ou alongamento é dividido pelo comprimento inicial e passa a se chamar **deformação** (strain, sem unidade, em porcentagem). A razão entre os dois, na parte reta da curva, é o **módulo de elasticidade ou de YOUNG** (E): quanto maior, mais rígido o material. O livro (seção Material Properties) dá os dois números que a prova usa: **aço inoxidável, 200 GPa; titânio, 110 GPa**. O aço é cerca de duas vezes mais rígido.
 
-Rigidez não é resistência. O módulo descreve a região elástica, a faixa de trabalho em que a peça volta à forma original quando a carga sai. Para saber quanto o material aguenta é preciso passar dessa faixa. O **ponto de escoamento** (yield) é onde começa a deformação plástica, permanente: é o que o cirurgião faz de propósito quando molda a placa. A **resistência máxima** (ultimate strength) é a tensão em que o material rompe. E aqui está a frase que virou questão: a resistência máxima do **titânio (860 MPa) é semelhante à do aço inoxidável (900 MPa)**, o que mostra, nas palavras do livro, que um material mais elástico não precisa ser mais fraco (p. 3).
+Rigidez não é resistência. O módulo descreve a região elástica, a faixa de trabalho em que a peça volta à forma original quando a carga sai. Para saber quanto o material aguenta é preciso passar dessa faixa. O **ponto de escoamento** (yield) é onde começa a deformação plástica, permanente: é o que o cirurgião faz de propósito quando molda a placa. A **resistência máxima** (ultimate strength) é a tensão em que o material rompe. E aqui está a frase que virou questão: a resistência máxima do **titânio (860 MPa) é semelhante à do aço inoxidável (900 MPa)**, o que mostra, nas palavras do livro, que um material mais elástico não precisa ser mais fraco (mesma seção).
 
-O intervalo entre o escoamento e a ruptura separa o material **dúctil** do **frágil**. O aço deforma muito antes de quebrar; o metilmetacrilato quase nada, e por isso estilhaça sob o osteótomo. Na Fig. 1-2 (p. 4) o osso cortical aparece do lado frágil.
+O intervalo entre o escoamento e a ruptura separa o material **dúctil** do **frágil**. O aço deforma muito antes de quebrar; o metilmetacrilato quase nada, e por isso estilhaça sob o osteótomo. Na Fig. 1-2 o osso cortical aparece do lado frágil.
 
-!tabela Propriedades de material que a prova cobra (Rockwood 10ª ed., cap. 1, p. 2 a 4 aprox.)
+!tabela Propriedades de material que a prova cobra (Rockwood 10ª ed., cap. 1, seção Material Properties)
 | Conceito | Definição | Número ou exemplo do livro |
 | --- | --- | --- |
 | Tensão (stress) | Carga dividida pela área | Pascal; MPa e GPa na prática |
@@ -51,21 +51,21 @@ O intervalo entre o escoamento e a ruptura separa o material **dúctil** do **fr
 
 ## Osso contra implante: carga única e fadiga
 
-A resistência máxima do osso cortical é quase **quatro vezes menor** que a do aço (p. 3). Em um evento único de pico, como uma queda, quem quebra é o osso ao lado do implante: é a lógica da fratura periprotética. Na carga repetida a história se inverte. Cargas cíclicas abaixo da resistência máxima abrem microfissuras, que somadas levam à **falha por fadiga**. O osso vivo conserta essas microfissuras pela remodelação e por isso resiste muito bem à fadiga; o implante não se conserta, acumula. Daí a frase do capítulo de que a osteossíntese é uma corrida entre a consolidação e a falha da montagem: o implante de fratura é projetado para carregar só até o osso consolidar, e se a fratura não consolida, a quebra do material é questão de tempo. A prótese articular é desenhada com **limite de fadiga** acima das cargas fisiológicas.
+A resistência máxima do osso cortical é quase **quatro vezes menor** que a do aço (seção Material Properties). Em um evento único de pico, como uma queda, quem quebra é o osso ao lado do implante: é a lógica da fratura periprotética. Na carga repetida a história se inverte. Cargas cíclicas abaixo da resistência máxima abrem microfissuras, que somadas levam à **falha por fadiga**. O osso vivo conserta essas microfissuras pela remodelação e por isso resiste muito bem à fadiga; o implante não se conserta, acumula. Daí a frase do capítulo de que a osteossíntese é uma corrida entre a consolidação e a falha da montagem: o implante de fratura é projetado para carregar só até o osso consolidar, e se a fratura não consolida, a quebra do material é questão de tempo. A prótese articular é desenhada com **limite de fadiga** acima das cargas fisiológicas.
 
 ## Osso é anisotrópico e viscoelástico
 
-Titânio e aço são **isotrópicos**: respondem igual em qualquer direção e um único módulo os descreve. O osso é **anisotrópico** (p. 4): a resistência do cortical em **compressão é 50% maior que em tração**, a rigidez é cerca de 50% maior no sentido dos ósteons (17 GPa) que no transversal (12 GPa), e a resistência máxima acompanha (193 contra 133 MPa). É por isso que é preciso mais força para quebrar um osso em carga axial do que em flexão ou torção, e é essa fraqueza em tração que explica os padrões de fratura da próxima seção.
+Titânio e aço são **isotrópicos**: respondem igual em qualquer direção e um único módulo os descreve. O osso é **anisotrópico** (mesma seção): a resistência do cortical em **compressão é 50% maior que em tração**, a rigidez é cerca de 50% maior no sentido dos ósteons (17 GPa) que no transversal (12 GPa), e a resistência máxima acompanha (193 contra 133 MPa). É por isso que é preciso mais força para quebrar um osso em carga axial do que em flexão ou torção, e é essa fraqueza em tração que explica os padrões de fratura da próxima seção.
 
 O osso e a cartilagem também são **viscoelásticos**. A rigidez depende da velocidade: em carga rápida, como a queda de altura, o módulo do osso sobe até duas vezes, o osso fica mais rígido e mais frágil, embora com resistência máxima maior. E sob carga constante a deformação continua aumentando com o tempo, porque o líquido intersticial vai sendo expulso: é a **fluência** (creep), que o livro ilustra com a cartilagem articular.
 
 ## O que é estrutura: a espessura ao cubo
 
-Agora a geometria. A rigidez de uma placa à flexão é o produto do módulo pelo **segundo momento de inércia** (I), e para uma seção retangular **I = largura x espessura ao cubo, dividido por 12** (p. 5). A largura entra na primeira potência; a espessura, na terceira. Então **dobrar a largura dobra a rigidez, e dobrar a espessura multiplica a rigidez por 8** (2 ao cubo). O livro dá o exemplo da placa terço de tubo e da placa de compressão de 3,5 mm: larguras parecidas, espessuras diferentes, rigidez muito diferente.
+Agora a geometria. A rigidez de uma placa à flexão é o produto do módulo pelo **segundo momento de inércia** (I), e para uma seção retangular **I = largura x espessura ao cubo, dividido por 12** (seção Structural Properties). A largura entra na primeira potência; a espessura, na terceira. Então **dobrar a largura dobra a rigidez, e dobrar a espessura multiplica a rigidez por 8** (2 ao cubo). O livro dá o exemplo da placa terço de tubo e da placa de compressão de 3,5 mm: larguras parecidas, espessuras diferentes, rigidez muito diferente.
 
 No cilindro maciço, como o fio de KIRSCHNER, a rigidez à flexão cresce com a **quarta potência do diâmetro**: dobrar o diâmetro multiplica por **16**. No cilindro oco, que é o caso do parafuso canulado, da haste intramedular e da própria diáfise, o miolo contribui muito pouco. Retirar a metade central do diâmetro remove 25% do material e reduz a rigidez e a resistência à flexão em apenas 6%; uma haste maciça de 10 mm tem I de 490 mm4 e uma canulada de 10 por 3 mm tem 487 mm4. Canular a haste para passar o fio-guia praticamente não custa nada.
 
-!tabela Geometria e rigidez à flexão (Rockwood 10ª ed., cap. 1, p. 5 e 6 aprox., Fig. 1-4)
+!tabela Geometria e rigidez à flexão (Rockwood 10ª ed., cap. 1, seções Structural Properties e Load Transfer Through Joints and Fractures, Fig. 1-4)
 | Peça | O que muda | Efeito na rigidez à flexão |
 | --- | --- | --- |
 | Placa | Dobrar a largura | 2 vezes |
@@ -79,7 +79,7 @@ A mesma conta explica um fato da osteoporose. Com a idade, o diâmetro externo d
 
 ## Braço de alavanca
 
-O momento é a força multiplicada pela distância até o eixo (M = F x d). No exemplo do livro (p. 8), 10 N na mão, a 30 cm do cotovelo, exigem 100 N do bíceps, que se insere a 3 cm, e geram 90 N de compressão na articulação: as forças internas são muito maiores que as externas. Na osteossíntese o raciocínio é o mesmo, com o foco de fratura no lugar do eixo: uma **montagem curta** tem braço de alavanca curto, precisa de mais força na interface entre osso e implante para segurar o mesmo momento e falha mais; o **implante longo** trabalha com vantagem mecânica.
+O momento é a força multiplicada pela distância até o eixo (M = F x d). No exemplo do livro (seção Traumatic Loads Resulting in Fracture), 10 N na mão, a 30 cm do cotovelo, exigem 100 N do bíceps, que se insere a 3 cm, e geram 90 N de compressão na articulação: as forças internas são muito maiores que as externas. Na osteossíntese o raciocínio é o mesmo, com o foco de fratura no lugar do eixo: uma **montagem curta** tem braço de alavanca curto, precisa de mais força na interface entre osso e implante para segurar o mesmo momento e falha mais; o **implante longo** trabalha com vantagem mecânica.
 
 !questoes treino=conceitos-basicos-0324,conceitos-basicos-0326
 conceito: A rigidez à flexão da placa é o módulo vezes o segundo momento de inércia, I = largura x espessura ao cubo sobre 12: dobrar a largura dobra a rigidez e dobrar a espessura multiplica por 8. O titânio tem módulo de 110 GPa contra 200 GPa do aço, mas resistência máxima semelhante (860 contra 900 MPa).
@@ -89,9 +89,9 @@ armadilha: Responder 2 vezes (isso é dobrar a largura) ou 16 vezes (isso é dob
 
 # Cargas e padrões de fratura {radar=clinico}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, p. 8 a 11 aprox.), resume a regra em uma frase: **a direção da carga determina o padrão da fratura; a magnitude determina a gravidade**. O esqueleto é carregado no dia a dia no sentido axial e foi otimizado para isso. Ele quebra quando a carga vem fora desse plano, como na queda. E, por ser anisotrópico, quebra com energias muito diferentes conforme a direção: a fratura por **tração exige a menor carga**, a por **compressão, a maior**.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, seção Biomechanics of Fractures, Traumatic Loads Resulting in Fracture), resume a regra em uma frase: **a direção da carga determina o padrão da fratura; a magnitude determina a gravidade**. O esqueleto é carregado no dia a dia no sentido axial e foi otimizado para isso. Ele quebra quando a carga vem fora desse plano, como na queda. E, por ser anisotrópico, quebra com energias muito diferentes conforme a direção: a fratura por **tração exige a menor carga**, a por **compressão, a maior**.
 
-!tabela Energia relativa de fratura conforme a direção da carga (Rockwood 10ª ed., cap. 1, Tabela 1-3, p. 9 aprox.)
+!tabela Energia relativa de fratura conforme a direção da carga (Rockwood 10ª ed., cap. 1, Tabela 1-3)
 | Osso | Direção da carga | Energia de falha |
 | --- | --- | --- |
 | Patela | Tração | 3 J |
@@ -101,7 +101,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, p. 8 a 11 aprox.),
 
 ## Transversa: tração
 
-A fratura **transversa** é perpendicular ao eixo longo do osso e resulta de **carga em tração**: o osso falha no plano perpendicular à direção da carga. Há duas maneiras de puxar um osso. A primeira é a tração interna, pelo tendão ou ligamento que se insere nele: são as **fraturas por avulsão**, e o livro lista os exemplos (p. 8): **base do quinto metatarso, maléolo medial, olécrano e algumas fraturas da patela**. A segunda é a flexão de baixa energia sem componente de compressão: ao envergar, o osso é comprimido do lado em que a carga bate e tracionado na cortical oposta, e é nessa cortical tracionada que o traço transverso nasce. Como o osso é mais fraco em tração, as transversas costumam ser fraturas de energia mais baixa.
+A fratura **transversa** é perpendicular ao eixo longo do osso e resulta de **carga em tração**: o osso falha no plano perpendicular à direção da carga. Há duas maneiras de puxar um osso. A primeira é a tração interna, pelo tendão ou ligamento que se insere nele: são as **fraturas por avulsão**, e o livro lista os exemplos (mesma seção): **base do quinto metatarso, maléolo medial, olécrano e algumas fraturas da patela**. A segunda é a flexão de baixa energia sem componente de compressão: ao envergar, o osso é comprimido do lado em que a carga bate e tracionado na cortical oposta, e é nessa cortical tracionada que o traço transverso nasce. Como o osso é mais fraco em tração, as transversas costumam ser fraturas de energia mais baixa.
 
 ## Oblíqua: compressão e combinações
 
@@ -109,19 +109,19 @@ A fratura **oblíqua** é diagonal ao eixo. Em laboratório, a compressão axial
 
 ## Asa de borboleta: flexão com compressão
 
-O mecanismo clássico da **asa de borboleta** é a soma de **flexão e compressão axial** (p. 10). A flexão cria **tração do lado distante do eixo neutro**, a cortical oposta à carga, e **compressão do lado próximo**, a cortical onde a carga bate. A fratura **começa por um traço transverso de tração na cortical oposta**. Quando esse traço se propaga e chega ao lado comprimido, o osso ali falha em cisalhamento, com dois traços oblíquos a 45 graus. O encontro dos dois oblíquos com o transverso recorta a cunha. O ápice da cunha aponta para o lado tracionado e a base fica do lado da carga. A energia necessária é maior que a da transversa e a da oblíqua simples, e o tamanho da cunha depende do ponto de impacto e de haver ou não carga axial no momento do trauma.
+O mecanismo clássico da **asa de borboleta** é a soma de **flexão e compressão axial** (mesma seção). A flexão cria **tração do lado distante do eixo neutro**, a cortical oposta à carga, e **compressão do lado próximo**, a cortical onde a carga bate. A fratura **começa por um traço transverso de tração na cortical oposta**. Quando esse traço se propaga e chega ao lado comprimido, o osso ali falha em cisalhamento, com dois traços oblíquos a 45 graus. O encontro dos dois oblíquos com o transverso recorta a cunha. O ápice da cunha aponta para o lado tracionado e a base fica do lado da carga. A energia necessária é maior que a da transversa e a da oblíqua simples, e o tamanho da cunha depende do ponto de impacto e de haver ou não carga axial no momento do trauma.
 
-O livro descreve uma segunda maneira de formar a cunha: o cisalhamento progressivo de uma fratura oblíqua, em que a ponta do fragmento é arrancada pelo segmento vizinho. Nesse caso todos os traços são oblíquos e não há componente transverso (p. 11).
+O livro descreve uma segunda maneira de formar a cunha: o cisalhamento progressivo de uma fratura oblíqua, em que a ponta do fragmento é arrancada pelo segmento vizinho. Nesse caso todos os traços são oblíquos e não há componente transverso (mesma seção).
 
 ## Espiral e cominutiva
 
 A fratura **espiral** resulta de **torção**. Tem pontas longas e agudas e um componente vertical, e gira para um lado definido pela direção da torção, como a rosca de um parafuso. O componente vertical costuma guardar uma dobradiça de partes moles, e a manobra de redução é a torção no sentido contrário, usando essa dobradiça. É considerada de energia relativamente baixa. A **cominutiva** é a fratura de alta energia. A energia absorvida é proporcional à área de superfície criada entre os fragmentos, que a tomografia consegue medir.
 
 !figura 1.6 imagem=conceitos-basicos/rockwood10-1-6.jpeg
-Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 1, Fig. 1-6, p. 10 aprox. Padrão de fratura conforme a carga: repare na avulsão e na transversa por tração, na cunha da asa de borboleta com o ápice voltado para o lado oposto à seta da carga, e na espiral por torção.
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 1, Fig. 1-6. Padrão de fratura conforme a carga: repare na avulsão e na transversa por tração, na cunha da asa de borboleta com o ápice voltado para o lado oposto à seta da carga, e na espiral por torção.
 !fim
 
-!tabela Carga aplicada e padrão de fratura (Rockwood 10ª ed., cap. 1, p. 8 a 11 aprox., Fig. 1-6)
+!tabela Carga aplicada e padrão de fratura (Rockwood 10ª ed., cap. 1, seção Traumatic Loads Resulting in Fracture, Fig. 1-6)
 | Padrão | Carga | Detalhe que a prova cobra |
 | --- | --- | --- |
 | Transversa | Tração | Avulsão: olécrano, base do quinto metatarso, maléolo medial, patela; ou flexão de baixa energia |
@@ -142,7 +142,7 @@ armadilha: Associar o olécrano à flexão ou ao cisalhamento por causa do mecan
 
 ## O colo femoral osteoporótico
 
-Segundo o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, p. 13 aprox.), cerca de **90% das fraturas osteoporóticas do fêmur proximal vêm de uma queda** e só 10% são espontâneas, durante a marcha. O risco depende de dois fatores mecânicos: a densidade óssea local e a integridade estrutural da região. A resistência do osso osteoporótico é função do **cubo da densidade mineral**, de modo que uma perda pequena de densidade custa muito em resistência.
+Segundo o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, seção Osteoporosis), cerca de **90% das fraturas osteoporóticas do fêmur proximal vêm de uma queda** e só 10% são espontâneas, durante a marcha. O risco depende de dois fatores mecânicos: a densidade óssea local e a integridade estrutural da região. A resistência do osso osteoporótico é função do **cubo da densidade mineral**, de modo que uma perda pequena de densidade custa muito em resistência.
 
 A densitometria (DXA) é um mau preditor de fratura do fêmur proximal, com correlação de apenas 60%, porque entrega uma média bidimensional e não enxerga onde, dentro do colo, o osso se perdeu. A **tomografia quantitativa** enxerga, e mostra duas coisas. O osso está **preservado no colo inferior**, justamente onde as cargas da marcha são maiores; por isso a fratura espontânea ao caminhar é improvável. E a densidade está **diminuída no colo posterossuperior**, a região que transmite a carga quando o paciente cai sobre o trocânter. As duas observações juntas explicam por que quase todas as fraturas vêm da queda de baixa energia e explicam também o desvio em valgo tão comum na fratura do colo: o colo superior comprime e impacta, e o inferior mantém o comprimento.
 
@@ -150,7 +150,7 @@ A queda muda a direção e o tamanho da carga. Em pé, a carga desce pelo colo; 
 
 No osso osteoporótico a osteossíntese falha por **perda de ancoragem**, não por quebra do implante. Na diáfise, 1 mm a menos de cortical pode custar 50% da resistência ao arrancamento do parafuso. O parafuso bloqueado bicortical troca o vetor na interface, de arrancamento para flexão, e por isso a montagem bloqueada é muito mais forte nesse osso.
 
-!tabela Colo femoral osteoporótico na tomografia quantitativa (Rockwood 10ª ed., cap. 1, p. 13 aprox.)
+!tabela Colo femoral osteoporótico na tomografia quantitativa (Rockwood 10ª ed., cap. 1, seção Osteoporosis)
 | Região do colo | Densidade | Carga que transmite | Consequência |
 | --- | --- | --- | --- |
 | Inferior | Preservada | Marcha | Fratura espontânea ao andar é rara (10%) |
@@ -159,11 +159,11 @@ No osso osteoporótico a osteossíntese falha por **perda de ancoragem**, não p
 
 ## Concentradores de tensão e o orifício do parafuso
 
-**Concentrador de tensão** (stress riser) é qualquer mudança local na distribuição da tensão no osso (p. 14). Pode ser uma descontinuidade geométrica, como o orifício vazio de parafuso e o entalhe na cortical anterior do fêmur na artroplastia do joelho, ou uma descontinuidade de material, como a ponta de uma placa, de uma haste ou de uma prótese, onde a rigidez muda de repente. Em uma série de fraturas por concentrador de tensão, 58% partiram de orifícios vazios de parafusos, pinos ou brocas, 27% foram peri-implante e 15% partiram de um traço ou degrau.
+**Concentrador de tensão** (stress riser) é qualquer mudança local na distribuição da tensão no osso (seção Stress Riser Fractures: Periprosthetic, Interprosthetic, and End Screw Fractures). Pode ser uma descontinuidade geométrica, como o orifício vazio de parafuso e o entalhe na cortical anterior do fêmur na artroplastia do joelho, ou uma descontinuidade de material, como a ponta de uma placa, de uma haste ou de uma prótese, onde a rigidez muda de repente. Em uma série de fraturas por concentrador de tensão, 58% partiram de orifícios vazios de parafusos, pinos ou brocas, 27% foram peri-implante e 15% partiram de um traço ou degrau.
 
-O dado cobrado é o do orifício que sobra depois da **retirada do material de síntese** (p. 16 e 17, Fig. 1-11). A perda de resistência à torção depende do tamanho do defeito em relação ao diâmetro externo do osso. **Orifícios menores que 10% do diâmetro não mudam a resistência à torção.** Entre 10% e 20% há uma queda grande, de 34%. Daí em diante a queda é linear até 60%, quando o defeito tem o diâmetro do canal medular. O defeito unicortical reduz um pouco menos (22%) que o bicortical (26%). Em tamanhos clínicos, orifícios de 3 a 5 mm na tíbia distal tiram 28 a 38% da resistência à torção.
+O dado cobrado é o do orifício que sobra depois da **retirada do material de síntese** (mesma seção e Fig. 1-11). A perda de resistência à torção depende do tamanho do defeito em relação ao diâmetro externo do osso. **Orifícios menores que 10% do diâmetro não mudam a resistência à torção.** Entre 10% e 20% há uma queda grande, de 34%. Daí em diante a queda é linear até 60%, quando o defeito tem o diâmetro do canal medular. O defeito unicortical reduz um pouco menos (22%) que o bicortical (26%). Em tamanhos clínicos, orifícios de 3 a 5 mm na tíbia distal tiram 28 a 38% da resistência à torção.
 
-!tabela Orifício cortical e resistência à torção (Rockwood 10ª ed., cap. 1, p. 16 e 17 aprox., Fig. 1-11)
+!tabela Orifício cortical e resistência à torção (Rockwood 10ª ed., cap. 1, seção Stress Riser Fractures, Fig. 1-11)
 | Diâmetro do defeito em relação ao osso | Efeito na resistência à torção |
 | --- | --- |
 | Até 10% | Nenhuma redução |
@@ -185,13 +185,13 @@ armadilha: Marcar posterossuperior como a região preservada: é a que perde oss
 
 ## Lesão condral pura e lesão osteocondral
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, p. 61 aprox.), separa dois cenários. Na **lesão condral isolada**, que não atravessa o osso subcondral, o corpo praticamente não repara. Os motivos são quatro: a cartilagem **não tem vasos**, e sem sangue não há como iniciar e sustentar o reparo; o **condrócito migra mal** pela matriz; faltam células-tronco para repovoar o defeito; e os condrócitos da borda morrem, o que compromete a integração de qualquer tecido novo. Os condrócitos vizinhos até proliferam em grupos e sintetizam matriz, mas não chegam ao defeito. Progenitores da sinóvia podem povoá-lo, por contato direto ou avançando como um pano sobre a superfície.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, seção Cartilage Healing), separa dois cenários. Na **lesão condral isolada**, que não atravessa o osso subcondral, o corpo praticamente não repara. Os motivos são quatro: a cartilagem **não tem vasos**, e sem sangue não há como iniciar e sustentar o reparo; o **condrócito migra mal** pela matriz; faltam células-tronco para repovoar o defeito; e os condrócitos da borda morrem, o que compromete a integração de qualquer tecido novo. Os condrócitos vizinhos até proliferam em grupos e sintetizam matriz, mas não chegam ao defeito. Progenitores da sinóvia podem povoá-lo, por contato direto ou avançando como um pano sobre a superfície.
 
 Na **lesão osteocondral** o osso subcondral rompido muda a história, porque traz sangue. O hematoma dos vasos subcondrais e da medula preenche o defeito, chegam neutrófilos e monócitos, depois progenitores mesenquimais, e o processo segue a sequência conhecida de inflamação, reparo e remodelação. Algumas células se arredondam e passam a produzir uma matriz com algo de cartilagem, mas a matriz de reparo é **rica em colágeno tipo III e tipo I**, e não no **tipo II** e nos proteoglicanos da cartilagem nativa. Em poucas semanas o tecido se diferencia em **fibrocartilagem**, com quantidades variáveis de cartilagem semelhante à hialina.
 
 A evolução é a parte que a imagem da questão mostra. A composição, a estrutura e a organização em zonas da cartilagem normal **nunca são recriadas**. O produto final é uma cicatriz fibrocartilaginosa que pode funcionar bem por anos. Em muitas lesões, porém, o tecido de reparo se deteriora: as células perdem o aspecto de condrócito e ficam fibroblásticas, a matriz fibrila e fragmenta (Fig. 2-9 do capítulo). A sobrecarga da cartilagem vizinha induz apoptose de condrócitos e libera fragmentos de matriz que ativam a imunidade inata da sinóvia. É o caminho para a artrose pós-traumática.
 
-!tabela Cartilagem nativa e tecido de reparo (Rockwood 10ª ed., cap. 2, p. 61 aprox.)
+!tabela Cartilagem nativa e tecido de reparo (Rockwood 10ª ed., cap. 2, seção Cartilage Healing)
 | Aspecto | Cartilagem hialina nativa | Tecido de reparo osteocondral |
 | --- | --- | --- |
 | Colágeno | Tipo II | Tipos III e I |
@@ -203,7 +203,7 @@ A evolução é a parte que a imagem da questão mostra. A composição, a estru
 
 ## Fenda, degrau, carga e idade
 
-Quatro fatores modulam o reparo (p. 61 e 62).
+Quatro fatores modulam o reparo (seção Factors Influencing Cartilage Healing).
 
 O primeiro é a **fenda** (gap) entre os fragmentos. O trabalho experimental indica que **defeitos de 1 mm ou menos tendem a cicatrizar melhor** que os maiores, em parte pela pouca migração dos condrócitos e pela redistribuição de tensão em volta do defeito.
 
@@ -215,13 +215,13 @@ O quarto é a **idade**: a cartilagem imatura é mais suscetível à lesão mec�
 
 ## Consequências e o que pesa em cada articulação
 
-Lesão de cartilagem, com ou sem fratura, é fator de risco estabelecido para artrose pós-traumática, e a lesão ligamentar costuma vir acompanhada de lesão condral (p. 62). Em pacientes com instabilidade lateral prolongada do tornozelo, só 23% tinham cartilagem normal à artroscopia. E na **série prospectiva de 42 joelhos com lesão aguda e isolada do ligamento cruzado anterior, 100% tinham lesão condral à ressonância magnética**. A conclusão do livro é manter alta suspeita de lesão condral depois de todo trauma articular importante.
+Lesão de cartilagem, com ou sem fratura, é fator de risco estabelecido para artrose pós-traumática, e a lesão ligamentar costuma vir acompanhada de lesão condral (seção Consequences of Cartilage Injury). Em pacientes com instabilidade lateral prolongada do tornozelo, só 23% tinham cartilagem normal à artroscopia. E na **série prospectiva de 42 joelhos com lesão aguda e isolada do ligamento cruzado anterior, 100% tinham lesão condral à ressonância magnética**. A conclusão do livro é manter alta suspeita de lesão condral depois de todo trauma articular importante.
 
 A gravidade da lesão do osso subcondral prediz a degeneração. Nos estudos do pilão tibial com tomografia, a energia da fratura concordou em 88% com o desenvolvimento de artrose.
 
 Por fim, o capítulo propõe pensar em três metas: congruência, alinhamento e estabilidade. O peso de cada uma muda conforme a articulação. No **acetábulo, a congruência é o fator principal**, e mesmo degraus pequenos prejudicam a recuperação da cartilagem; no **planalto tibial, o alinhamento e a estabilidade pesam mais** que a congruência. Entre os fatores que o cirurgião consegue modificar, os mais simples são a hemartrose (evacuar e lavar) e o ressecamento da cartilagem exposta (reumedecer durante a cirurgia).
 
-!tabela Números da cartilagem que a prova cobra (Rockwood 10ª ed., cap. 2, p. 61 e 62 aprox.)
+!tabela Números da cartilagem que a prova cobra (Rockwood 10ª ed., cap. 2, seções Cartilage Healing e Factors Influencing Cartilage Healing)
 | Fato | Número |
 | --- | --- |
 | Defeito condral que cicatriza melhor (experimental) | Até 1 mm |
@@ -243,7 +243,7 @@ armadilha: Marcar colágeno tipo II, que é o da cartilagem nativa e justamente 
 
 ## Camadas e composição
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, p. 63 aprox.), descreve o tendão de dentro para fora. A menor unidade funcional é a **fibrila** de colágeno; fibrilas formam fibras, e grupos de fibras formam **fascículos**. Cada fascículo é envolvido pelo **endotendão**, tecido conjuntivo frouxo com nervos, linfáticos e vasos. Os fascículos reunidos formam o tendão, mantido pelo **epitendão**, uma camada de aspecto epitelial que leva vasos e nervos maiores. Alguns tendões têm ainda por fora o **paratendão**, frouxo, gorduroso e vascularizado, que permite a excursão dentro do compartimento; outros, em vez dele, correm em bainha sinovial.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, seção Tendon Structure, Function, and Cell Biology), descreve o tendão de dentro para fora. A menor unidade funcional é a **fibrila** de colágeno; fibrilas formam fibras, e grupos de fibras formam **fascículos**. Cada fascículo é envolvido pelo **endotendão**, tecido conjuntivo frouxo com nervos, linfáticos e vasos. Os fascículos reunidos formam o tendão, mantido pelo **epitendão**, uma camada de aspecto epitelial que leva vasos e nervos maiores. Alguns tendões têm ainda por fora o **paratendão**, frouxo, gorduroso e vascularizado, que permite a excursão dentro do compartimento; outros, em vez dele, correm em bainha sinovial.
 
 O tendão é pobre em células. As suas, os tenócitos, são fibroblastos alongados que derivam, no embrião, de progenitores dos somitos que expressam scleraxis. Ao longo da adolescência eles perdem essa expressão, diferenciam-se de modo terminal e quase não voltam ao ciclo celular. Um dado curioso virou questão: **o núcleo do tendão cresce até cerca dos 17 anos**, e depois disso a síntese proteica e a renovação da matriz caem muito. O livro liga essa baixa renovação à dificuldade de tratar tendinopatias crônicas e à má cicatrização de algumas rupturas.
 
@@ -253,7 +253,7 @@ A matriz é dominada pelo **colágeno tipo I, 65 a 80% do peso seco**, feito de 
 
 O tendão armazena energia elástica ao ser estirado e a devolve ao encurtar. Com deformação **menor que 4%**, volta ao comprimento original quando a carga sai. **Acima de 4%** as fibras de colágeno começam a falhar. **Além de 8%** o tendão fica **suscetível à ruptura**. No estiramento cíclico intenso, o calor liberado pela matriz não se dissipa, as proteínas desnaturam, e isso pode levar à tendinopatia ou à ruptura.
 
-!tabela Tendão: camadas, colágenos e limites mecânicos (Rockwood 10ª ed., cap. 2, p. 63 e 64 aprox.)
+!tabela Tendão: camadas, colágenos e limites mecânicos (Rockwood 10ª ed., cap. 2, seção Tendon Structure, Function, and Cell Biology)
 | Item | O que o livro diz |
 | --- | --- |
 | Endotendão | Envolve cada fascículo; nervos, vasos e linfáticos |
@@ -273,30 +273,30 @@ Os distúrbios do tendão respondem por 30% ou mais das lesões do esporte. A te
 
 ## Ruptura e reparo: intrínseco e extrínseco
 
-O tendão rompido cicatriza por dois mecanismos (p. 64). No **intrínseco**, **células do epitendão dirigem o reparo**. No **extrínseco**, a cicatrização vem de fora, pela formação de aderências em volta da lesão. Mesmo depois da sutura forma-se um calo entre os cotos, primeiro com macrófagos e neutrófilos, depois com miofibroblastos, condrócitos e alguns fibroblastos, de matriz desorganizada. Na reinserção do tendão ao osso, a transição normal da êntese, com o seu gradiente de fibrocartilagem, não se refaz. Nos dois casos o calo pode ser mais rígido que o tecido nativo. O movimento precoce é visto, em geral, como estímulo à cicatrização intrínseca e freio para a cicatriz; a exceção citada é o manguito rotador, em que atrasar a mobilização parece evitar novas rupturas.
+O tendão rompido cicatriza por dois mecanismos (mesma seção). No **intrínseco**, **células do epitendão dirigem o reparo**. No **extrínseco**, a cicatrização vem de fora, pela formação de aderências em volta da lesão. Mesmo depois da sutura forma-se um calo entre os cotos, primeiro com macrófagos e neutrófilos, depois com miofibroblastos, condrócitos e alguns fibroblastos, de matriz desorganizada. Na reinserção do tendão ao osso, a transição normal da êntese, com o seu gradiente de fibrocartilagem, não se refaz. Nos dois casos o calo pode ser mais rígido que o tecido nativo. O movimento precoce é visto, em geral, como estímulo à cicatrização intrínseca e freio para a cicatriz; a exceção citada é o manguito rotador, em que atrasar a mobilização parece evitar novas rupturas.
 
 !questoes central=conceitos-basicos-0415 treino=conceitos-basicos-0354,conceitos-basicos-0355,conceitos-basicos-0356,conceitos-basicos-0359
 conceito: O tendão recupera o comprimento até 4% de deformação, começa a falhar acima disso e fica suscetível à ruptura além de 8%. O colágeno tipo I faz 65 a 80% do peso seco; o tipo III é mais fino, mais fraco, e abunda nas rupturas e nos idosos. O núcleo do tendão cresce até cerca de 17 anos. Na cicatrização intrínseca, células do epitendão dirigem o reparo; a extrínseca é a das aderências.
 como: Questões no estilo da prova pediram o limiar de ruptura (8%), o colágeno das rupturas (tipo III), a idade até a qual o núcleo cresce (17 anos, por carbono-14) e a origem das células da cicatrização intrínseca (epitendão). O ENARE de Cirurgia da Mão de 2023 cobrou o efeito da imobilização sobre o colágeno.
 armadilha: Trocar 4% (início da falha das fibras) por 8% (ruptura). Trocar epitendão por paratendão, que é de onde vêm os capilares da tendinopatia, ou por endotendão, que envolve os fascículos.
-alerta: `conceitos-basicos-0415`: o capítulo do Rockwood não descreve o efeito da imobilização nem do corticoide sobre o colágeno do tendão; o que ele sustenta é o exercício excêntrico progressivo como tratamento e o movimento precoce como estímulo à cicatrização intrínseca. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (PDF 161), diz que a imobilização excessiva causa atrofia muscular, enfraquecimento ligamentar e degradação da cartilagem, sem citar o tendão. Nenhum dos livros conferidos traz a frase do gabarito (B); gabarito oficial mantido.
+alerta: `conceitos-basicos-0415`: o capítulo do Rockwood não descreve o efeito da imobilização nem do corticoide sobre o colágeno do tendão; o que ele sustenta é o exercício excêntrico progressivo como tratamento e o movimento precoce como estímulo à cicatrização intrínseca. O Rockwood and Wilkins' Fractures in Children, 10ª ed., diz que a imobilização excessiva causa atrofia muscular, enfraquecimento ligamentar e degradação da cartilagem, sem citar o tendão. Nenhum dos livros conferidos traz a frase do gabarito (B); gabarito oficial mantido.
 !fim
 
 # Ossificação heterotópica: do receptor ACVR1 ao coma da criança {radar=confirmado}
 
 ## Fibrodisplasia ossificante progressiva
 
-Ao explicar os sinais moleculares do calo, o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, p. 54 aprox.), usa uma doença rara para mostrar o poder da via das BMP: pacientes com uma forma **constitutivamente ativada do receptor de BMP do tipo I, o ACVR1**, desenvolvem a **fibrodisplasia ossificante progressiva**, com formação exuberante de osso heterotópico depois do menor trauma.
+Ao explicar os sinais moleculares do calo, o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, seção Bone Healing, Cellular Components), usa uma doença rara para mostrar o poder da via das BMP: pacientes com uma forma **constitutivamente ativada do receptor de BMP do tipo I, o ACVR1**, desenvolvem a **fibrodisplasia ossificante progressiva**, com formação exuberante de osso heterotópico depois do menor trauma.
 
 Os livros pediátricos completam o quadro. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (p. 304), afirma que todos os pacientes com diagnóstico definido têm mutação no gene ACVR1 e descreve a clínica: **hálux curto e em valgo** ao nascimento, às vezes polegar curto e clinodactilia, sinais sutis que passam despercebidos até a ossificação aparecer, em média aos 5 anos. Ela começa no **pescoço**, segue para a coluna e a cintura escapular e avança do esqueleto axial para o apendicular; os nódulos de partes moles calcificam e viram osso maduro por ossificação endocondral, até a anquilose das grandes articulações. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 1877), nomeia a mutação, **ACVR1 R206H**, e a via que ela ativa, a BMP-Smad 1/5/8. Os três livros concordam.
 
 ## Osso heterotópico depois do trauma craniano na criança
 
-O outro cenário é o da criança politraumatizada. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 5, Management of the Severely Injured Child, PDF 227), descreve que o osso heterotópico pode se formar nas partes moles semanas depois de um **trauma craniano grave com coma persistente**. Qualquer articulação pode ser afetada, mas **os locais mais comuns são o quadril e o cotovelo**. A incisão cirúrgica pode estimular o processo, como na entrada da haste femoral anterógrada. Na criança em coma com um novo inchaço no membro, a ossificação heterotópica entra no diagnóstico diferencial com fratura nova e trombose venosa; a cintilografia mostra captação nas partes moles. A conduta é observar ou ressecar: observa-se enquanto a criança está em coma ou quando o osso não atrapalha; resseca-se quando a perda de movimento impede a reabilitação, **sem esperar os 12 a 18 meses de maturação**, porque a recidiva não parece depender do momento da ressecção.
+O outro cenário é o da criança politraumatizada. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 5, Management of the Severely Injured Child), descreve que o osso heterotópico pode se formar nas partes moles semanas depois de um **trauma craniano grave com coma persistente**. Qualquer articulação pode ser afetada, mas **os locais mais comuns são o quadril e o cotovelo**. A incisão cirúrgica pode estimular o processo, como na entrada da haste femoral anterógrada. Na criança em coma com um novo inchaço no membro, a ossificação heterotópica entra no diagnóstico diferencial com fratura nova e trombose venosa; a cintilografia mostra captação nas partes moles. A conduta é observar ou ressecar: observa-se enquanto a criança está em coma ou quando o osso não atrapalha; resseca-se quando a perda de movimento impede a reabilitação, **sem esperar os 12 a 18 meses de maturação**, porque a recidiva não parece depender do momento da ressecção.
 
-O SIZÍNIO HEBERT, 5ª ed. (PDF 983), aponta para o mesmo lado no adulto: a ossificação heterotópica é mais frequente depois de cirurgia ou trauma no quadril e em pacientes com traumatismo craniencefálico e coma.
+O SIZÍNIO HEBERT, 5ª ed., aponta para o mesmo lado no adulto: a ossificação heterotópica é mais frequente depois de cirurgia ou trauma no quadril e em pacientes com traumatismo craniencefálico e coma.
 
-!tabela Duas ossificações heterotópicas (Rockwood 10ª ed., cap. 2, p. 54 aprox.; Lovell 7ª ed., p. 304; Tachdjian 6ª ed., p. 1877; Rockwood infantil 10ª ed., cap. 5, PDF 227)
+!tabela Duas ossificações heterotópicas (Rockwood 10ª ed., cap. 2, Cellular Components; Lovell 7ª ed., p. 304; Tachdjian 6ª ed., p. 1877; Rockwood infantil 10ª ed., cap. 5)
 | Aspecto | Fibrodisplasia ossificante progressiva | Pós-trauma craniano na criança |
 | --- | --- | --- |
 | Causa | Mutação ativadora do ACVR1, receptor de BMP tipo I | Trauma craniano grave com coma |
@@ -318,7 +318,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2975 a 2987), apresen
 
 No **primeiro grau**, a neurapraxia de SEDDON, a condução é interrompida mas o axônio está inteiro. Não há degeneração walleriana. A função motora sofre mais que a sensitiva, a recuperação é espontânea em dias ou semanas e, detalhe característico, **a função volta ao mesmo tempo na musculatura proximal e na distal**, o que nunca acontece quando há regeneração axonal. No **segundo grau** o axônio se rompe e degenera distalmente, mas o **tubo endoneural fica íntegro** e serve de trilho perfeito para o broto. A perda é completa, a reinervação caminha de proximal para distal na ordem em que os ramos deixam o tronco, e o resultado costuma ser bom. No **terceiro grau** rompem-se o axônio e o endoneuro, com o perineuro preservado; a cicatriz dentro do fascículo obstrui tubos e desvia brotos para caminhos errados, a recuperação demora mais e fica **incompleta**. No **quarto grau** sobra apenas parte do epineuro e do perineuro em continuidade, e no **quinto** o tronco inteiro está lesado; nesses dois o resultado depende do reparo.
 
-O sinal de TINEL é a tradução clínica da regeneração: a percussão sobre o nervo provoca formigamento no território distal porque ali há brotos axonais ainda não mielinizados. Testa-se de distal para proximal. O que interessa é a **progressão distal** do ponto mais sensível ao longo dos meses. No segundo grau ela anda cerca de **1 polegada por mês**. A frase que a banca copiou está na p. 2987: o TINEL que avança distalmente **deve ocorrer nas lesões dos tipos 2 e 3**; não ocorre no tipo 1, porque não há degeneração nem regeneração; e não ocorre nos tipos 4 e 5, **a menos que sejam reparados**. O livro avisa que poucas fibras sensitivas já bastam para um TINEL positivo, de modo que o sinal sozinho anima, mas não garante retorno útil. O Green's Operative Hand Surgery, 7ª ed. (PDF 1283), diz o mesmo com outra nomenclatura: o TINEL que avança de forma constante indica axonotmese.
+O sinal de TINEL é a tradução clínica da regeneração: a percussão sobre o nervo provoca formigamento no território distal porque ali há brotos axonais ainda não mielinizados. Testa-se de distal para proximal. O que interessa é a **progressão distal** do ponto mais sensível ao longo dos meses. No segundo grau ela anda cerca de **1 polegada por mês**. A frase que a banca copiou está na p. 2987: o TINEL que avança distalmente **deve ocorrer nas lesões dos tipos 2 e 3**; não ocorre no tipo 1, porque não há degeneração nem regeneração; e não ocorre nos tipos 4 e 5, **a menos que sejam reparados**. O livro avisa que poucas fibras sensitivas já bastam para um TINEL positivo, de modo que o sinal sozinho anima, mas não garante retorno útil. O Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 990), diz o mesmo com outra nomenclatura: o TINEL que avança de forma constante indica axonotmese.
 
 !tabela Classificação de SUNDERLAND e sinal de TINEL (Campbell 15ª ed., cap. 67, p. 2975 a 2987)
 | Grau | Estrutura lesada | Degeneração walleriana | TINEL que avança | Recuperação |
@@ -340,7 +340,7 @@ armadilha: Incluir o tipo 1 por ser o de melhor prognóstico: nele não há axô
 
 ## Prótese infectada: os critérios da MSIS
 
-Por falta de uma definição padrão de infecção periprotética, a Sociedade de Infecção Musculoesquelética (MSIS) publicou critérios para quadril e joelho, que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 8, p. 451 a 453, Tabela 8.2), reproduz. Há dois **critérios maiores**, e basta um: **duas culturas positivas com o mesmo germe** e **fístula com comunicação comprovada com a articulação ou com visualização da prótese**. Os **critérios menores** valem pontos, e **6 pontos ou mais** tornam a infecção provável. Valem 2 pontos a proteína C reativa sérica elevada (100 mg/L no quadro agudo e 10 mg/L no crônico) ou o D-dímero (860), o percentual de polimorfonucleares no líquido (70% no agudo, 90% no crônico) e a **cultura única positiva**. Valem 3 pontos a contagem de leucócitos no líquido (10.000 no agudo, 3.000 no crônico), a histologia positiva e a **purulência intraoperatória**. A esterase leucocitária e a **alfa-defensina** entram na tabela como alternativas à contagem de leucócitos sinoviais, portanto entre os menores. O The Adult Hip (CALLAGHAN, 2017, PDF 1767) lista os mesmos dois maiores: fístula que comunica com a prótese ou germe isolado em pelo menos duas amostras separadas.
+Por falta de uma definição padrão de infecção periprotética, a Sociedade de Infecção Musculoesquelética (MSIS) publicou critérios para quadril e joelho, que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 8, p. 451 a 453, Tabela 8.2), reproduz. Há dois **critérios maiores**, e basta um: **duas culturas positivas com o mesmo germe** e **fístula com comunicação comprovada com a articulação ou com visualização da prótese**. Os **critérios menores** valem pontos, e **6 pontos ou mais** tornam a infecção provável. Valem 2 pontos a proteína C reativa sérica elevada (100 mg/L no quadro agudo e 10 mg/L no crônico) ou o D-dímero (860), o percentual de polimorfonucleares no líquido (70% no agudo, 90% no crônico) e a **cultura única positiva**. Valem 3 pontos a contagem de leucócitos no líquido (10.000 no agudo, 3.000 no crônico), a histologia positiva e a **purulência intraoperatória**. A esterase leucocitária e a **alfa-defensina** entram na tabela como alternativas à contagem de leucócitos sinoviais, portanto entre os menores. O The Adult Hip (CALLAGHAN, 2017) lista os mesmos dois maiores: fístula que comunica com a prótese ou germe isolado em pelo menos duas amostras separadas.
 
 !tabela Critérios da MSIS para infecção periprotética (Campbell 15ª ed., cap. 8, p. 451 a 453, Tabela 8.2)
 | Tipo | Critério | Peso |
@@ -374,13 +374,13 @@ alerta: `conceitos-basicos-0412`: a lista da AAOS reproduzida no Campbell (cap. 
 
 # Fixador externo supra-acetabular e o sinal da lágrima {radar=confirmado}
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 50, p. 2340 a 2343 aprox.), descreve duas rotas para o fixador anterior da pelve. A clássica usa pinos na crista ilíaca. A preferida do autor usa **um pino de SCHANZ de cada lado no osso supra-acetabular**, com entrada na espinha ilíaca anteroinferior, cerca de dois dedos abaixo da espinha anterossuperior, dirigido para o osso espesso do contraforte isquiático ou para a espinha ilíaca posteroinferior. As vantagens: os pinos ficam abaixo do abdome, bastam dois, a pega é excelente, a montagem fecha o livro aberto no mesmo plano da lesão e resiste melhor à rotação. A desvantagem é depender mais de fluoroscopia.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 50, seção Operative Treatment of Pelvic Ring Injuries, fixação externa supra-acetabular), descreve duas rotas para o fixador anterior da pelve. A clássica usa pinos na crista ilíaca. A preferida do autor usa **um pino de SCHANZ de cada lado no osso supra-acetabular**, com entrada na espinha ilíaca anteroinferior, cerca de dois dedos abaixo da espinha anterossuperior, dirigido para o osso espesso do contraforte isquiático ou para a espinha ilíaca posteroinferior. As vantagens: os pinos ficam abaixo do abdome, bastam dois, a pega é excelente, a montagem fecha o livro aberto no mesmo plano da lesão e resiste melhor à rotação. A desvantagem é depender mais de fluoroscopia.
 
 A radioscopia é o ponto da questão. O ponto de entrada é achado na incidência **obturatriz com outlet**, de 25 a 35 graus de cada inclinação, que o livro chama de incidência da **lágrima** ou da tenda (teardrop, teepee). Nela o outlet corrige a altura da ponta inferior da figura, e a obturatriz, a posição dos seus ramos verticais. Depois o trajeto é conferido em mais duas incidências: a **ilíaca oblíqua**, que mostra o pino passando **acima da incisura isquiática maior**, e a **obturatriz com inlet**, que mostra o pino **entre a tábua interna e a tábua externa** do ilíaco. Esses são os três limites do corredor, e é o que a figura da lágrima representa: as duas tábuas do ilíaco dos lados e, embaixo, o topo da incisura isquiática maior. A ponta do pino deve parar no osso do contraforte, sem atravessar a cortical distante, para não ferir o que sai pela incisura.
 
-Os outros livros de trauma tratam da indicação. O Skeletal Trauma (PDF 382) lembra que as posições subcristal e supra-acetabular são mecanicamente melhores que a crista, mas exigem cirurgião treinado e fluoroscopia, e por isso não são recomendadas no paciente instável em choque. O AO Principles of Fracture Management (PDF 745) chama a via supra-acetabular de rota baixa, com a melhor pega, e alerta para o risco de penetrar o quadril.
+Os outros livros de trauma tratam da indicação. O Skeletal Trauma lembra que as posições subcristal e supra-acetabular são mecanicamente melhores que a crista, mas exigem cirurgião treinado e fluoroscopia, e por isso não são recomendadas no paciente instável em choque. O AO Principles of Fracture Management chama a via supra-acetabular de rota baixa, com a melhor pega, e alerta para o risco de penetrar o quadril.
 
-!tabela Pino na crista ilíaca e pino supra-acetabular (Rockwood 10ª ed., cap. 50, p. 2340 a 2343 aprox.; Skeletal Trauma, PDF 382; AO Principles, PDF 745)
+!tabela Pino na crista ilíaca e pino supra-acetabular (Rockwood 10ª ed., cap. 50, Operative Treatment of Pelvic Ring Injuries; Skeletal Trauma; AO Principles)
 | Aspecto | Crista ilíaca | Supra-acetabular |
 | --- | --- | --- |
 | Entrada | Crista, rumo ao osso supra-acetabular | Espinha ilíaca anteroinferior |
@@ -408,9 +408,9 @@ Os livros divergem em dois detalhes, e vale conhecê-los. O primeiro é qual pla
 
 ## Parafusos de massa lateral
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, p. 2155 a 2158 aprox.), considera o parafuso de massa lateral o **método padrão de fixação posterior da coluna cervical subaxial** e compara três técnicas. A de **ROY-CAMILLE** orienta o parafuso perpendicular ao eixo da coluna: facilita a ligação a uma haste, mas dá parafuso mais curto, menor resistência ao arrancamento e maior risco para a artéria vertebral. A de **MAGERL** mira o nível do disco: parafuso mais longo e melhor mecânica, com menos risco para a artéria e mais para a raiz que sai. A de **AN**, com 30 graus de lateralização e 15 graus cefálicos, acompanha a orientação das facetas e provavelmente tem o menor risco neurovascular. O mesmo capítulo cita a série de ROY-CAMILLE com parafusos e placas de massa lateral em 197 pacientes, com manutenção do alinhamento em 85%. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 39, PDF 1961), descreve a mesma fixação no adolescente, com entrada 1 mm medial e inferior ao centro da massa lateral.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, seção Posterior Fusion, Fig. 48-31), considera o parafuso de massa lateral o **método padrão de fixação posterior da coluna cervical subaxial** e compara três técnicas. A de **ROY-CAMILLE** orienta o parafuso perpendicular ao eixo da coluna: facilita a ligação a uma haste, mas dá parafuso mais curto, menor resistência ao arrancamento e maior risco para a artéria vertebral. A de **MAGERL** mira o nível do disco: parafuso mais longo e melhor mecânica, com menos risco para a artéria e mais para a raiz que sai. A de **AN**, com 30 graus de lateralização e 15 graus cefálicos, acompanha a orientação das facetas e provavelmente tem o menor risco neurovascular. O mesmo capítulo cita a série de ROY-CAMILLE com parafusos e placas de massa lateral em 197 pacientes, com manutenção do alinhamento em 85%. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 39), descreve a mesma fixação no adolescente, com entrada 1 mm medial e inferior ao centro da massa lateral.
 
-!tabela Técnicas de parafuso de massa lateral (Rockwood 10ª ed., cap. 48, p. 2155 a 2158 aprox.)
+!tabela Técnicas de parafuso de massa lateral (Rockwood 10ª ed., cap. 48, seção Posterior Fusion, Fig. 48-31)
 | Técnica | Direção | Vantagem | Risco maior |
 | --- | --- | --- | --- |
 | ROY-CAMILLE | Perpendicular ao eixo da coluna | Liga fácil à haste ou placa | Artéria vertebral; parafuso curto |
@@ -429,20 +429,20 @@ alerta: `conceitos-basicos-0311`: Campbell (cap. 42, p. 1670) e Lovell (p. 796) 
 
 ## Pé torto congênito e o método de PONSETI
 
-O pé torto congênito é a deformidade congênita mais frequente que exige tratamento intensivo, com **1 a 2 casos por 1.000 nascidos vivos** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19, p. 706; SIZÍNIO HEBERT, 5ª ed., cap. 20, PDF 1330). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31, p. 1048), dá a bilateralidade: **50% dos pacientes**, com gravidade e resposta ao tratamento muito parecidas nos dois pés. Os quatro componentes são **cavo, adução, varo e equino**.
+O pé torto congênito é a deformidade congênita mais frequente que exige tratamento intensivo, com **1 a 2 casos por 1.000 nascidos vivos** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19, p. 706; SIZÍNIO HEBERT, 5ª ed., cap. 20). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31, p. 1048), dá a bilateralidade: **50% dos pacientes**, com gravidade e resposta ao tratamento muito parecidas nos dois pés. Os quatro componentes são **cavo, adução, varo e equino**.
 
 O método de PONSETI corrige esses componentes por manipulação e gesso seriados, em uma ordem que tem razão anatômica. O **cavo vem primeiro**: o primeiro raio está fletido em relação ao retropé, e o primeiro gesso alinha o antepé com o retropé **supinando o antepé e elevando o primeiro metatarso**. Parece contraditório supinar um pé que já está supinado, mas é isso que desfaz o cavo; pronar o antepé agrava o cavo e trava o varo. Com os ossos do mediopé no mesmo plano, o pé é **abduzido em torno da cabeça do tálus**, com contrapressão lateral sobre ela. O calcâneo acompanha, e o **varo se corrige junto com a adução, sem que se toque no calcanhar**. O **equino fica por último** e, na maioria, pede a tenotomia percutânea do tendão calcâneo antes do último gesso. Tentar corrigir o equino antes do varo produz a deformidade em mata-borrão.
 
-Os livros descrevem a mesma sequência com pequenas diferenças de redação. O Campbell (p. 1051) escreve: primeiro o cavo e a adução do antepé, depois o varo do calcanhar, por fim o equino. O Tachdjian (p. 714 a 716) e o SIZÍNIO (PDF 1338 e 1339) preferem dizer que o cavo sai no primeiro gesso e que a **adução e o varo são corrigidos ao mesmo tempo**; o SIZÍNIO acrescenta que a tenotomia só se faz com 70 graus de abdução e menos de 15 graus de dorsiflexão. Vale o contraste com KITE, que corrigia adução, depois varo, depois equino, abduzindo o antepé com apoio na calcaneocubóidea, o que bloqueia o calcâneo (SIZÍNIO, PDF 1334 e 1339).
+Os livros descrevem a mesma sequência com pequenas diferenças de redação. O Campbell (p. 1051) escreve: primeiro o cavo e a adução do antepé, depois o varo do calcanhar, por fim o equino. O Tachdjian (p. 714 a 716) e o SIZÍNIO preferem dizer que o cavo sai no primeiro gesso e que a **adução e o varo são corrigidos ao mesmo tempo**; o SIZÍNIO acrescenta que a tenotomia só se faz com 70 graus de abdução e menos de 15 graus de dorsiflexão. Vale o contraste com KITE, que corrigia adução, depois varo, depois equino, abduzindo o antepé com apoio na calcaneocubóidea, o que bloqueia o calcâneo (SIZÍNIO).
 
 Na taxa de sucesso os números variam conforme o que se mede, e a banca escolheu o mais alto.
 
 !tabela Método de PONSETI: o que cada livro diz (fontes como indicadas)
-| Dado | Campbell 15ª ed., cap. 31, p. 1048 a 1051 | Tachdjian 6ª ed., cap. 19, p. 714 a 718 | Lovell 7ª ed., p. 1417 aprox. | SIZÍNIO 5ª ed., cap. 20, PDF 1335 a 1339 |
+| Dado | Campbell 15ª ed., cap. 31, p. 1048 a 1051 | Tachdjian 6ª ed., cap. 19, p. 714 a 718 | Lovell 7ª ed., p. 1417 e 1418 | SIZÍNIO 5ª ed., cap. 20 |
 | --- | --- | --- | --- | --- |
 | Sucesso | Mais de 90% até os 2 anos | Evita a liberação em mais de 95%; correção inicial em cerca de 95% | Cerca de 90% | 94%, contra 95% do método francês |
 | Ordem | Cavo e adução, varo, equino | Cavo; adução e varo juntos; equino | Cavo, adução e varo | Cavo; adução e varo juntos; equino |
-| Tenotomia | Na maioria | Pelo menos 85% | Não lido | 70 a 90% |
+| Tenotomia | Na maioria | Pelo menos 85% | Mais de 90% dos pés na série de COOPER e DIETZ (p. 1417) | 70 a 90% |
 | Recidiva | 10 a 30% | Parcial em um terço | Até 70% sem órtese | Não lido |
 !fim
 
@@ -450,11 +450,11 @@ Na taxa de sucesso os números variam conforme o que se mede, e a banca escolheu
 
 O PAVLIK é uma órtese dinâmica de **flexão e abdução**: impede a extensão e a adução, que reluxam o quadril, e deixa livres a flexão e a abdução, que o reduzem. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 32, p. 1134 a 1136), descreve as peças: tira torácica na linha dos mamilos, duas tiras nos ombros e dois estribos, cada um com uma **tira anteromedial de flexão** e uma **tira posterolateral de abdução**. A anterior é apertada para manter a flexão. A posterior fica **frouxa**: serve para impedir que a coxa aduza além do neutro, e não para forçar a abdução, que deve vir da gravidade. O sucesso relatado é de 85 a 95% nos primeiros meses de vida.
 
-Os erros de ajuste explicam as complicações. **Flexão excessiva** comprime o nervo femoral e pode luxar a cabeça para baixo; **flexão insuficiente**, abaixo de 90 graus, não reduz; **abdução forçada** pela tira posterior causa necrose avascular (Tachdjian, cap. 13, p. 443; SIZÍNIO, cap. 9, PDF 637).
+Os erros de ajuste explicam as complicações. **Flexão excessiva** comprime o nervo femoral e pode luxar a cabeça para baixo; **flexão insuficiente**, abaixo de 90 graus, não reduz; **abdução forçada** pela tira posterior causa necrose avascular (Tachdjian, cap. 13, p. 443; SIZÍNIO, cap. 9).
 
-A divergência está nos graus de flexão: **90 a 100** no Campbell, **100** no SIZÍNIO, **100 a 110** no Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (p. 1003), e **120** no Tachdjian. E há um tropeço de redação no SIZÍNIO (PDF 635): o texto diz que as tiras posteriores limitam a abdução, quando o que elas limitam é a adução, como a legenda da figura do próprio livro (PDF 637) e os outros três deixam claro.
+A divergência está nos graus de flexão: **90 a 100** no Campbell, **100** no SIZÍNIO, **100 a 110** no Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (p. 1003), e **120** no Tachdjian. E há um tropeço de redação no SIZÍNIO: o texto diz que as tiras posteriores limitam a abdução, quando o que elas limitam é a adução, como a legenda da figura do próprio livro e os outros três deixam claro.
 
-!tabela Suspensório de PAVLIK: tiras e erros de ajuste (Campbell 15ª ed., cap. 32, p. 1134 a 1136; Tachdjian 6ª ed., cap. 13, p. 443; Lovell 7ª ed., p. 1003; SIZÍNIO 5ª ed., cap. 9, PDF 635 e 637)
+!tabela Suspensório de PAVLIK: tiras e erros de ajuste (Campbell 15ª ed., cap. 32, p. 1134 a 1136; Tachdjian 6ª ed., cap. 13, p. 443; Lovell 7ª ed., p. 1003; SIZÍNIO 5ª ed., cap. 9)
 | Peça ou erro | Função ou consequência |
 | --- | --- |
 | Tira anterior | Mantém a flexão; limita a extensão |
@@ -467,7 +467,7 @@ A divergência está nos graus de flexão: **90 a 100** no Campbell, **100** no 
 
 ## Ossificação do tarso
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19, p. 682 e 683), dá a sequência. **Ao nascer estão ossificados o tálus, o calcâneo e o cuboide**; o navicular e os cuneiformes ainda são cartilagem. O **cuneiforme lateral** ossifica entre 4 e 20 meses, o **medial** aos 2 anos e o **intermédio** aos 3 anos. O **navicular** vem por último, entre o segundo e o quinto ano. Na seção do navicular acessório (p. 687) o mesmo livro repete que **o navicular é o último osso do tarso a ossificar** e dá as idades por sexo: **meninas de 1 a 3 anos, meninos de 3 a 5 anos**. As duas passagens batem no essencial e diferem um pouco no início da faixa. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (p. 1466 aprox.), acrescenta que o navicular ossifica de modo excêntrico, a partir da parte lateral, e por isso não serve para julgar o alinhamento talonavicular na radiografia da criança pequena.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19, p. 682 e 683), dá a sequência. **Ao nascer estão ossificados o tálus, o calcâneo e o cuboide**; o navicular e os cuneiformes ainda são cartilagem. O **cuneiforme lateral** ossifica entre 4 e 20 meses, o **medial** aos 2 anos e o **intermédio** aos 3 anos. O **navicular** vem por último, entre o segundo e o quinto ano. Na seção do navicular acessório (p. 687) o mesmo livro repete que **o navicular é o último osso do tarso a ossificar** e dá as idades por sexo: **meninas de 1 a 3 anos, meninos de 3 a 5 anos**. As duas passagens batem no essencial e diferem um pouco no início da faixa. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (p. 1466), acrescenta que o navicular ossifica de modo excêntrico, a partir da parte lateral, e por isso não serve para julgar o alinhamento talonavicular na radiografia da criança pequena.
 
 !questoes central=conceitos-basicos-0314 relacionadas=conceitos-basicos-0313,conceitos-basicos-0316,conceitos-basicos-0317,pediatria-0275
 conceito: Pé torto congênito: bilateral em metade dos casos; PONSETI corrige o cavo primeiro (supinando o antepé), depois a adução e o varo pela abdução em torno do tálus, e o equino por último, com tenotomia. No PAVLIK a tira anterior controla a flexão e a posterior, a abdução. O navicular é o último osso do tarso a ossificar.
@@ -478,7 +478,7 @@ alerta: `conceitos-basicos-0316`: os livros dão números diferentes para o suce
 
 # Articulação acromioclavicular e os tipos de articulação sinovial {radar=confirmado}
 
-O que os livros conferidos dizem sobre a articulação acromioclavicular é curto. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, p. 1091 aprox.), a define como **articulação diartrodial** entre a margem medial do acrômio e a extremidade lateral da clavícula, com um **disco fibrocartilaginoso** de tamanho e forma variáveis e um plano articular que pode ser quase vertical ou inclinado. No mesmo capítulo a esternoclavicular é diartrodial e **em sela**, a única articulação verdadeira entre o membro superior e o esqueleto axial. O SIZÍNIO HEBERT, 5ª ed. (PDF 2599), repete que a acromioclavicular é diartrodial, com disco completo ou parcial que degenera depois da quarta década, e que seus estabilizadores são os ligamentos acromioclaviculares e coracoclaviculares; ao descrever a cintura escapular (PDF 279), o livro reserva a expressão plana de deslizamento para a escapulotorácica, que não é sinovial.
+O que os livros conferidos dizem sobre a articulação acromioclavicular é curto. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, seção Anatomy of the Acromioclavicular Joint), a define como **articulação diartrodial** entre a margem medial do acrômio e a extremidade lateral da clavícula, com um **disco fibrocartilaginoso** de tamanho e forma variáveis e um plano articular que pode ser quase vertical ou inclinado. No mesmo capítulo a esternoclavicular é diartrodial e **em sela**, a única articulação verdadeira entre o membro superior e o esqueleto axial. O SIZÍNIO HEBERT, 5ª ed., repete que a acromioclavicular é diartrodial, com disco completo ou parcial que degenera depois da quarta década, e que seus estabilizadores são os ligamentos acromioclaviculares e coracoclaviculares; ao descrever a cintura escapular, o livro reserva a expressão plana de deslizamento para a escapulotorácica, que não é sinovial.
 
 A questão ligada aqui usa uma classificação das sinoviais pelo movimento em que a acromioclavicular é o exemplo de articulação linear. Essa classificação não está em nenhum dos livros conferidos, e por isso a seção se limita ao que eles descrevem da articulação.
 
@@ -486,7 +486,7 @@ A questão ligada aqui usa uma classificação das sinoviais pelo movimento em q
 conceito: A acromioclavicular é uma articulação sinovial (diartrodial) com disco fibrocartilaginoso entre o acrômio e a clavícula, e a banca a usa como exemplo de articulação linear.
 como: O ENARE de R4 de Ortopedia de 2024 pediu um exemplo de articulação sinovial linear (acromioclavicular).
 armadilha: Escolher uma articulação de grande amplitude, como o quadril ou a base do polegar; a questão quer a de movimento mais restrito entre as alternativas.
-alerta: `conceitos-basicos-0268`: Rockwood (cap. 32) e SIZÍNIO (PDF 279 e 2599) classificam a acromioclavicular apenas como diartrodial com disco; nenhum livro conferido traz a classificação das sinoviais em lineares nem os tipos das outras alternativas. Gabarito oficial mantido.
+alerta: `conceitos-basicos-0268`: Rockwood (cap. 32) e SIZÍNIO classificam a acromioclavicular apenas como diartrodial com disco; nenhum livro conferido traz a classificação das sinoviais em lineares nem os tipos das outras alternativas. Gabarito oficial mantido.
 !fim
 
 # Fechamento {radar=fundamento}

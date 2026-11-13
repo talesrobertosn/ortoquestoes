@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna
 autores: Philipp N. Streubel e Leonid S. Grossman
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (radio_ulnar.pdf, 37 páginas); consulta ao Rockwood 10ª ed., cap. 20 (Fig. 20-16), e ao HEBERT 5ª ed., caps. 48 e 50
+fonte: Capítulo enviado pelo Tales em 16/10/2026; consulta ao Rockwood 10ª ed., cap. 20 (Fig. 20-16), e ao HEBERT 5ª ed., caps. 48 e 50
 subtemas: Fraturas diafisárias do antebraço
 resumo: Monteggia e Galeazzi, vias de Henry e Thompson, forças que giram o rádio, quem trata sem cirurgia, placa e haste, síndrome compartimental, sinostose e refratura: o antebraço do adulto explicado pelo que a prova cobra.
 ---

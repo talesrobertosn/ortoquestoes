@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), caps. 59 e 60
 capitulo: Capítulo 54 · Trochanteric Hip Fractures
 autores: Martin J. Heetveld e Elvira R. Flikweert
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (transtrocanterica.pdf, 49 páginas) Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed.
+fonte: Capítulo enviado pelo Tales em 16/10/2026 Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed.
 subtemas: Fratura transtrocantérica
 resumo: Parede lateral, AO 31A, DHS ou haste, redução sem varo e a ponta-ápice: o que decide o sucesso da fixação e como as provas cobram.
 ---

@@ -59,7 +59,7 @@ armadilha: Côndilo lateral: é a fratura fisária mais comum do cotovelo, não 
 
 ## Quem tem
 
-- Idade média de **2 a 3 anos**; o mais novo descrito tinha **2 meses**; **rara depois dos 7 anos** (10ª edição, PDF 1573). Os outros livros põem o limite antes: o HEBERT (capítulo 47) a dá como muito rara depois dos **5 anos**, e o Tachdjian (6ª edição, p. 1247), como rara ou ausente acima dos 5, com pico entre 1 e 3 anos.
+- Idade média de **2 a 3 anos**; o mais novo descrito tinha **2 meses**; **rara depois dos 7 anos** (10ª edição). Os outros livros põem o limite antes: o HEBERT (capítulo 47) a dá como muito rara depois dos **5 anos**, e o Tachdjian (6ª edição, p. 1247), como rara ou ausente acima dos 5, com pico entre 1 e 3 anos.
 - **Meninas em 60% a 65%**; cotovelo **esquerdo em cerca de 70%**.
 - A incidência real é desconhecida, porque muitos casos são reduzidos no consultório, pelos pais, ou se resolvem sozinhos.
 
@@ -108,7 +108,7 @@ Se a história de tração é confiável, a criança tem **5 anos ou menos** e a
 
 Praticamente todas as subluxações reduzem fechadas. A manobra tradicional é a **supinação** (com o cotovelo fletido para alguns, estendido para outros), com o polegar sobre a cabeça do rádio sentindo o estalo. A **hiperpronação** é a alternativa: MACIAS teve **98% (40 de 41)** de sucesso com hiperpronação contra **86% (38 de 44)** com supinação, com menos tentativas e eficácia quando a supinação falhou.
 
-O roteiro dos autores na 10ª edição (PDF 1579):
+O roteiro dos autores na 10ª edição:
 
 - explicar aos pais que haverá uma dor breve seguida de alívio; criança no colo;
 - com o cotovelo estendido e o polegar na face lateral do cotovelo, **supinar o antebraço e levar o cotovelo à hiperflexão** (figura 16-35); pequenos movimentos de pronação e supinação nessa posição ajudam; sente-se ou ouve-se um clique;
@@ -232,7 +232,7 @@ No tipo 1, a tróclea funciona como um **gancho**: se o desvio lateral do rádio
 Quando suspeitar: piora do mediano depois da redução, redução incongruente, dor intensa e resistência no arco de flexão e extensão, disestesia dolorosa com o movimento. Para RAO e CRAWFORD, **fratura do epicôndilo medial com disfunção importante do mediano** é indicação absoluta de explorar o nervo; a RM ajuda a ver o trajeto.
 
 !figura 15-22
-Figura da 9ª edição; a 10ª descreve o sinal de MATEV no texto, sem figura (PDF 1547). Sinal de MATEV: depressão de margens escleróticas na face posterior do côndilo medial, onde o mediano encarcerado foi pressionado contra o osso.
+Figura da 9ª edição; a 10ª descreve o sinal de MATEV no texto, sem figura. Sinal de MATEV: depressão de margens escleróticas na face posterior do côndilo medial, onde o mediano encarcerado foi pressionado contra o osso.
 !fim
 
 ## A artéria braquial
@@ -507,7 +507,7 @@ O **cotovelo da liga infantil** (Little League elbow) é a lesão crônica por t
 - **Fratura através da apófise:** rara, por golpe direto ou avulsão parcial, vista sobretudo em arremessadores (SILBERSTEIN).
 
 !figura 16-5
-Avulsão muscular: avulsão isolada do epicôndilo medial que ocorreu de repente num quarterback de 13 anos depois de um passe longo (10ª edição, PDF 1485).
+Avulsão muscular: avulsão isolada do epicôndilo medial que ocorreu de repente num quarterback de 13 anos depois de um passe longo (10ª edição).
 !fim
 
 !questoes relacionadas=pediatria-0123

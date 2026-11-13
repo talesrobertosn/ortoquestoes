@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children
 autores: Lindley Wall e Andrea S. Bauer
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 8. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura, tabela e algoritmo. Complemento do Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38, pp. 1402 a 1405.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 8. Complemento do Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38, pp. 1402 a 1405.
 subtemas: Mão da criança
 resumo: Epidemiologia bifásica; ossificação do carpo (capitato primeiro, escafoide no quinto ano, pisiforme por último) e das epífises; zonas da fise; tendões, colaterais e placa volar (fise mais fraca que o ligamento); remodelação (rotação não remodela); exame (tenodese, teste do enrugamento) e imagem (perfil verdadeiro, escafoide e ressonância); falange distal (SEYMOUR, martelo ósseo, jérsei); colo e côndilos das falanges; extra-oitava; polegar do esquiador e STENER; metacarpos (colo, diáfise, base); base do metacarpo do polegar A a D; escafoide, bipartido, capitato, piramidal e hamato; fibrocartilagem triangular; luxações da metacarpofalângica e da interfalângica proximal.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 8 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Lindley Wall e Andrea S. Bauer, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura, tabela e algoritmo.
+Este resumo é inspirado no capítulo 8 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Lindley Wall e Andrea S. Bauer, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 Na mão da criança, a **fise** é mais fraca que o ligamento: ela quebra antes de a articulação luxar. Quase toda questão de prova sai dessa ideia e de mais três: a **ordem de ossificação do carpo**, a **anatomia dos colaterais** (que explica a SALTER-HARRIS III da metacarpofalângica) e a **rotação**, que não remodela. Em volta delas, a banca cobra a **fratura de SEYMOUR**, o **colo do metacarpo**, a **base do metacarpo do polegar**, o **escafoide** e o **capitato**.
 

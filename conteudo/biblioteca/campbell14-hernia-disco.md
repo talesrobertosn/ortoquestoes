@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021)
 capitulo: Capítulo 38 · Doenças degenerativas da coluna cervical e Capítulo 39 · Doenças degenerativas da coluna torácica e lombar
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 39 (p. 1720 a 1756: degeneração, história natural, ressonância, injeções, disco torácico, hérnia lombar, cirurgia, complicações e fusão) e capítulo 38 (p. 1690 a 1695: hérnia cervical, raízes C5 a T1, SPURLING, mielopatia, indicações cirúrgicas); capítulo 44 (p. 2146) para a listese de alto grau. As páginas citadas são as impressas. Complemento de 12/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (p. 1779.e1, infiltração epidural, e p. 1782, disco torácico).
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 39 (p. 1720 a 1756: degeneração, história natural, ressonância, injeções, disco torácico, hérnia lombar, cirurgia, complicações e fusão) e capítulo 38 (p. 1690 a 1695: hérnia cervical, raízes C5 a T1, SPURLING, mielopatia, indicações cirúrgicas); capítulo 44 (p. 2146) para a listese de alto grau. Complemento de 12/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (p. 1779.e1, infiltração epidural, e p. 1782, disco torácico).
 subtemas: Hérnia de disco lombar
 resumo: A hérnia é uma complicação da degeneração do disco; lombar na 3ª e 4ª décadas, com dor na perna igual ou maior que a lombar, piora sentado e ao tossir, alívio em semi-FOWLER, LASÈGUE e LASÈGUE contralateral patognomônico; mais de 95% em L4-L5 e L5-S1; a hérnia posterolateral pega a raiz que cruza o disco (L4-L5 pega L5); L4 patelar e perna medial, L5 hálux e dorso do pé sem reflexo, S1 borda lateral, tríceps sural e aquileu; cauda equina é a única cirurgia urgente; ressonância alterada em 100% acima dos 50; tratamento inicial não cirúrgico; microdiscectomia sem fusão; endoscopia interlaminar em L5-S1; lesão dural com acetazolamida; disco torácico com dor em T10 e acesso anterior ou costotransversectomia; disco cervical pega a raiz de número maior (C5-C6 pega C6), SPURLING 95% e 94%, mielopatia com clônus, hiper-reflexia e BABINSKI.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado nos capítulos 38 e 39 do Campbell's Operative Orthopaedics, 14ª edição (2021), escritos por Raymond J. Gardocki e Ashley L. Park. As páginas citadas são as impressas. Quando o texto diz Campbell 15, as páginas são da 15ª edição (2026), capítulo 46.
+Este resumo é inspirado nos capítulos 38 e 39 do Campbell's Operative Orthopaedics, 14ª edição (2021), escritos por Raymond J. Gardocki e Ashley L. Park. Quando o texto diz Campbell 15, as páginas são da 15ª edição (2026), capítulo 46.
 
 O subtema "Hérnia de disco lombar" é um dos mais cobrados da coluna, com mais de cinquenta questões no acervo, e o nome engana: boa parte das questões é da **coluna cervical** (qual raiz, qual disco, qual músculo) e algumas do **disco torácico**. Por isso este resumo cobre as três regiões. Quase tudo cai em quatro blocos:
 

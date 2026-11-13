@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 30 · Ankle Fractures
 autores: Jaime R. Denning
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 30. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela. Complemento do Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38, pp. 1468 e 1469.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 30. Complemento do Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38, pp. 1468 e 1469.
 subtemas: Fraturas do tornozelo na criança; Lesões fisárias
 resumo: Epidemiologia e obesidade; SALTER-HARRIS e DIAS-TACHDJIAN; fraturas de transição (TILLAUX, triplanar, pilão do adolescente, incisura, sindesmose); fechamento central, medial e lateral; Ottawa e exame de baixo risco; pinça, tomografia e ressonância; variantes normais; SH I e II (BARMADA), SH III e IV, SH V; fíbula e entorse; parada fisária (ponte medial = varo; fíbula = valgo; 7%, 25% a 40%, 50%); consolidação viciosa; artrose; retináculo extensor; sinostose; síndrome dolorosa complexa regional; expostas e cortador de grama.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 30 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Jaime R. Denning, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
+Este resumo é inspirado no capítulo 30 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Jaime R. Denning, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 O tornozelo da criança é um dos temas mais cobrados da ortopedia pediátrica, e quase tudo cai em três blocos: as **fraturas de transição** (TILLAUX e triplanar, com o fechamento assimétrico da fise que as explica), a classificação de **DIAS-TACHDJIAN** e as **complicações de crescimento**. Em volta deles, a banca pergunta pelo **exame de baixo risco**, pelos **ossículos acessórios** que imitam fratura e pela **síndrome do retináculo extensor**.
 

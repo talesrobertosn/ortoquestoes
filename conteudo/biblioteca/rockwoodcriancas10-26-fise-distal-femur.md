@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 26 · Fractures of the Distal Femoral Physis
 autores: Ying Li
-fonte: Livros conferidos localmente em 26/10/2026 e 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 26 (o PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 30 (Lower Extremity Injuries, seção Knee), págs. 1332 a 1344; Campbell's Operative Orthopaedics, 15ª ed., capítulo 38 (Fractures and Dislocations in Children), págs. 1352 (aprox.), 1448 a 1451 e 1483 a 1485. As páginas citadas do Tachdjian e do Campbell são as impressas.
+fonte: Livros conferidos localmente em 26/10/2026 e 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 26 (as referências citam capítulo, seção, figura e tabela); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 30 (Lower Extremity Injuries, seção Knee), págs. 1332 a 1344; Campbell's Operative Orthopaedics, 15ª ed., capítulo 38 (Fractures and Dislocations in Children), págs. 1352 (aprox.), 1448 a 1451 e 1483 a 1485. As páginas citadas do Tachdjian e do Campbell são as impressas.
 subtemas: Fraturas do fêmur e da perna na criança; Trauma pediátrico
 resumo: SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a fise, cruzado anterior no tipo III do côndilo medial, artéria poplítea no desvio anterior, fibular por tração, distúrbio do crescimento em cerca de metade, pinos lisos por 4 semanas, 10 dias para remanipular, PARK-HARRIS e ponte menor que 50%.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 26 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Ying Li, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
+Este resumo é inspirado no capítulo 26 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Ying Li, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 A fratura da fise distal do fêmur é **incomum**, menos de 2% das lesões fisárias, mas é uma das que **mais complicam**: de 40% a 60% precisam de nova cirurgia, e numa metanálise de 564 fraturas **52%** evoluíram com distúrbio do crescimento. Essa contradição, rara e perigosa, é o fio do capítulo e da banca. As questões giram em poucos blocos: **qual tipo de SALTER-HARRIS é o mais comum**, **por que a força em varo ou valgo quebra a fise e não o ligamento**, **qual lesão vem junto (o cruzado anterior)**, **a fise que mais cresce** e **a parada do crescimento**, que aqui acontece mesmo nos tipos I e II.
 

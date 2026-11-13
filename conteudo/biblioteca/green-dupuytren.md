@@ -8,14 +8,14 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 80)
 capitulo: Capítulo 4 · Dupuytren Disease
 autores: Charles Eaton
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 4 (Dupuytren Disease), p. 128 a 145 e 147 a 149 (demografia, diátese, estágios, anatomia normal e patológica, tipos de operação, tabelas 4.1 a 4.5, agulha e colagenase); Campbell's Operative Orthopaedics, 15ª ed., cap. 80 (Dupuytren Contracture), p. 3515 a 3532, lido por inteiro. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 4 (Dupuytren Disease), p. 128 a 145 e 147 a 149 (demografia, diátese, estágios, anatomia normal e patológica, tipos de operação, tabelas 4.1 a 4.5, agulha e colagenase); Campbell's Operative Orthopaedics, 15ª ed., cap. 80 (Dupuytren Contracture), p. 3515 a 3532, lido por inteiro.
 subtemas: Doença de Dupuytren
 resumo: Homem branco idoso, herança autossômica dominante de penetrância variável, bilateral mas assimétrica, anular e mínimo; diabetes, epilepsia e anticonvulsivantes, tabagismo, álcool e hipercolesterolemia associados, artrite reumatoide não; diátese de HUESTON (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE, PEYRONIE); miofibroblasto e colágeno III (razão III/I acima de 35% na proliferativa, 20% a 35% na involutiva e abaixo de 20% na residual de LUCK); TUBIANA em degraus de 45 graus; corda pré-tendínea na MF, corda espiral (pré-tendínea, banda espiral, lâmina digital lateral e GRAYSON) que leva o feixe para a linha média e para a superfície, retrovascular e lateral na IFD; CLELAND poupado; cirurgia com MF de 30 graus ou qualquer IFP de 15 graus; agulha mais barata, dermofasciectomia com menor recidiva; JACOBSEN no mínimo, McCASH palma aberta; lesão de nervo digital e flare como complicações.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 4 (Dupuytren Disease, de Charles EATON) do Green's Operative Hand Surgery, 7ª edição (2017), completado pelo capítulo 80 (Dupuytren Contracture, de James H. CALANDRUCCIO) do Campbell's Operative Orthopaedics, 15ª ed. As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 4 (Dupuytren Disease, de Charles EATON) do Green's Operative Hand Surgery, 7ª edição (2017), completado pelo capítulo 80 (Dupuytren Contracture, de James H. CALANDRUCCIO) do Campbell's Operative Orthopaedics, 15ª ed.
 
 A doença de DUPUYTREN cabe numa ideia: **uma fáscia normal que, sob tensão mecânica e numa pessoa geneticamente predisposta, vira corda**. O Green abre o capítulo dizendo que ela é **a doença hereditária mais comum do tecido conjuntivo**, benigna, crônica e progressiva, que encurta os tecidos **ao longo das linhas de tensão** e limita a extensão dos dedos (p. 128). EATON separa dois nomes que a prova às vezes mistura: **doença de DUPUYTREN** é o processo biológico; **contratura de DUPUYTREN** é o resultado final, a articulação que não estende. Isso tem consequência prática: **nenhum tratamento atual trata a doença**; todos tratam a contratura. Por isso a recidiva (doença de volta na área tratada) e a extensão (doença nova numa área não tratada) são comuns e fazem parte da conversa com o paciente.
 

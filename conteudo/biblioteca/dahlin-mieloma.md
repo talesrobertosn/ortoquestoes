@@ -8,14 +8,14 @@ livro: Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases
 edicao: 6ª edição (2010)
 capitulo: Capítulo 16 · Myeloma
 autores: K. Krishnan Unni e Carrie Y. Inwards
-fonte: Livros conferidos localmente em 03/11/2026: Dahlin's Bone Tumors, 6ª ed., cap. 16, p. 191 a 200; Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (p. 871 e 872), cap. 29 (p. 985 a 987, 990, 996 e Tabela 29.2 da p. 1000) e cap. 49 (p. 1954, 1955, 1967 e 1971); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 25 (Pathologic Fractures, sem página impressa no PDF); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 30 (sem página impressa no PDF). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 03/11/2026: Dahlin's Bone Tumors, 6ª ed., cap. 16, p. 191 a 200; Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (p. 871 e 872), cap. 29 (p. 985 a 987, 990, 996 e Tabela 29.2 da p. 1000) e cap. 49 (p. 1954, 1955, 1967 e 1971); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 25 (Pathologic Fractures); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 30.
 subtemas: Mieloma múltiplo e plasmocitoma
 resumo: Neoplasia primária maligna mais comum do osso (14,9% dos malignos da Mayo), homem de 50 a 70 anos com dor lombar ou torácica, fraqueza, perda de peso, anemia, VHS alta, hipercalcemia (20% a 50%), BENCE JONES (mais da metade) e rim lesado por cilindros; lesões líticas em saca-bocado sem esclerose, cintilografia fria e inventário esquelético com crânio; lençóis de plasmócitos de núcleo excêntrico e amiloide; plasmocitoma solitário que evolui em cerca de 50%; forma osteoesclerótica com neuropatia (POEMS); quimioterapia e radioterapia, fixação com cimento e MIRELS, e fraturas que consolidam mais que as de outras histologias (GAINOR e BUCHERT).
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 16 (Myeloma) do Dahlin's Bone Tumors, 6ª edição (2010), de UNNI e INWARDS, com a série da Mayo Clinic, e cruza o texto com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 29 e 49), o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, fraturas patológicas) e o HEBERT (cap. 30). As páginas citadas são as impressas; o Rockwood e o HEBERT vêm sem página impressa no arquivo e são citados pelo capítulo.
+Este resumo segue o capítulo 16 (Myeloma) do Dahlin's Bone Tumors, 6ª edição (2010), de UNNI e INWARDS, com a série da Mayo Clinic, e cruza o texto com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 29 e 49), o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, fraturas patológicas) e o HEBERT (cap. 30).
 
 O mieloma é uma doença do sangue que se manifesta no osso. O Dahlin abre o capítulo avisando que **a maioria dos pacientes se apresenta com problemas hematológicos** e é tratada por hematologistas, oncologistas e radioterapeutas; o livro se concentra no que chega ao cirurgião e ao patologista (p. 191). É exatamente esse recorte que a prova cobra: quem é o paciente, onde dói, que exame denuncia a proteína anormal, por que a cintilografia mente, como é a lâmina, o que fazer com o osso que vai quebrar e por que essa fratura, ao contrário de quase todas as outras fraturas patológicas, costuma consolidar.
 

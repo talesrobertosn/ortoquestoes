@@ -8,14 +8,14 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025), com o Green's Operative Hand Surgery, 7ª ed. (cap. 15) e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed. (cap. 51)
 capitulo: Capítulo 43 · Fractures of the Distal Radius and Ulna
 autores: Marc J. Richard, David S. Ruch
-fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 43 (p. 1629 a 1657, inteiro, com a Tabela 43-1); Green's Operative Hand Surgery, 7ª ed. (2017), cap. 15 Distal Radius Fractures, de Scott W. Wolfe (anatomia, radiografia, classificações, estabilidade, redução, pinos, fixador, placa volar, fragmento-específica e complicações, p. 513 a 576); Ortopedia e Traumatologia de Sizínio Hebert, 5ª ed., cap. 51 (inteiro, sem número de página impresso no arquivo). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 43 (p. 1629 a 1657, inteiro, com a Tabela 43-1); Green's Operative Hand Surgery, 7ª ed. (2017), cap. 15 Distal Radius Fractures, de Scott W. Wolfe (anatomia, radiografia, classificações, estabilidade, redução, pinos, fixador, placa volar, fragmento-específica e complicações, p. 513 a 576); Ortopedia e Traumatologia de Sizínio Hebert, 5ª ed., cap. 51 (inteiro, sem número de página impresso no arquivo).
 subtemas: Fratura do rádio distal
 resumo: Parâmetros normais (inclinação radial 22 a 23 graus, inclinação volar 11 a 12 graus, altura radial 11 a 12 mm medida do estiloide radial à superfície articular da ulna, gota de lágrima 70 graus e menor que 45 graus na lesão da faceta semilunar), epônimos (COLLES, SMITH, BARTON, CHAUFFEUR), AO 23 e FERNANDEZ por mecanismo, critérios de LAFONTAINE (angulação dorsal maior que 20 graus, cominuição dorsal, traço articular, fratura da ulna, idade acima de 60), redução e gesso, KAPANDJI, fixador, placa volar pela via de HENRY e linha divisória de SOONG, placa em ponte, lesão do complexo da fibrocartilagem triangular como associada mais comum, ruptura do EPL e do FPL, vitamina C e osteotomia da consolidação viciosa.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 43 (Fractures of the Distal Radius and Ulna, de Marc J. RICHARD e David S. RUCH) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), completado pelo capítulo 15 do Green's Operative Hand Surgery, 7ª ed., escrito por Scott W. WOLFE, e pelo capítulo 51 do SIZÍNIO, 5ª ed. As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 43 (Fractures of the Distal Radius and Ulna, de Marc J. RICHARD e David S. RUCH) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), completado pelo capítulo 15 do Green's Operative Hand Surgery, 7ª ed., escrito por Scott W. WOLFE, e pelo capítulo 51 do SIZÍNIO, 5ª ed.
 
 A fratura do rádio distal é a fratura mais comum do membro superior e responde por pelo menos **um sexto** das fraturas que chegam ao pronto-socorro (Rockwood and Green's Fractures in Adults, 10ª ed., p. 1629). Justamente por ser tão comum, a prova a cobra por todos os lados, mas quase sempre em cinco blocos previsíveis:
 

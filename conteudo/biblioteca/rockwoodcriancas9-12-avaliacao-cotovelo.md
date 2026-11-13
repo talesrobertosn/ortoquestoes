@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 13 · Evaluation of the Injured Pediatric Elbow
 autores: Peter M. Waters
-fonte: Escrito com o capítulo 12 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 13 da 10ª edição, conferido localmente; o PDF da 10ª edição não traz numeração impressa, e as referências citam capítulo, seção, figura e tabela.
+fonte: Escrito com o capítulo 12 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 13 da 10ª edição, conferido localmente; as referências citam capítulo, seção, figura e tabela.
 subtemas: ;
 resumo: Centros de ossificação (capítulo primeiro, epicôndilo medial o último a fundir), BAUMANN e úmero-ulnar no AP, linha umeral anterior no terço médio do capítulo, sinal do coxim gorduroso, lesões TRASH e o descolamento transfisário do lactente; na 10ª edição, incidência de JONES, linha radiocapitelar, metanálise do coxim gorduroso, ultrassonografia e inteligência artificial.
 ---

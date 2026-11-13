@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 23 · Pelvic and Acetabular Fractures
 autores: Julia S. Sanders e Wudbhav N. Sankar
-fonte: Livro conferido localmente em 27/10/2026 e relido inteiro em 31/10/2026, capítulo 23. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 27/10/2026 e relido inteiro em 31/10/2026, capítulo 23.
 subtemas: Fraturas da pelve e do quadril na criança; Outras fraturas na criança
 resumo: Fratura da pelve é menos de 1% das fraturas da criança, de alta energia quando é do anel, e mata pelas lesões associadas (cabeça, tórax, abdome), não pelo sangramento da pelve; TORODE e ZIEG modificada (I avulsão, II asa, IIIA anel anterior, IIIB anterior e posterior estável com mais morbidade, IV instável com straddle, anterior e posterior e segmento até o acetábulo); straddle com fragmento puxado para cima pelo reto do abdome e cinta contraindicada; avulsões entre 11 e 17 anos (anteroinferior a mais comum, isquiática a mais problemática); maturidade pela trirradiada (SILBER e FLYNN), que funde aos 12 a 14 anos; assimetria de 1,1 cm que não remodela; complicação principal = consolidação viciosa; acetábulo com ressonância e cirurgia se instável ou incongruente; BUCHOLZ (V = esmagamento, pior) e displasia pós-traumática com lateralização e retroversão.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 23 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Julia S. Sanders e Wudbhav N. Sankar, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam seção, figura e tabela.
+Este resumo é inspirado no capítulo 23 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Julia S. Sanders e Wudbhav N. Sankar, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 O capítulo cobre um espectro enorme: da **avulsão** da espinha ilíaca de um jogador de futebol, tratada com muletas, à **fratura instável do anel** de uma criança atropelada, que pode matar. A pelve da criança é diferente da do adulto em quase tudo, e entender essas diferenças é o que permite responder as perguntas.
 

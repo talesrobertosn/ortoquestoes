@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 8ª edição, ampliado com o Green's Operative Hand Surgery, 7ª ed., e o Campbell's Operative Orthopaedics, 15ª ed.
 capitulo: Capítulo 6 · Lesão do tendão flexor
 autores: John Gray Seiler III
-fonte: Livro conferido localmente em 31/10/2026 (tradução), capítulo 6, sobretudo anatomia da bainha, nutrição, vínculos e polias, avulsão do profundo, técnica de reparo, cicatrização e reabilitação, e reconstrução com enxerto. Sem página impressa no texto extraído. Ampliado em 01/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 6 (lido por inteiro), e o Campbell's Operative Orthopaedics, 15ª ed., cap. 71. Corrigido em 11/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 2 (espaço de PARONA, p. 29 e 33) e cap. 6 (p. 185, 189, 194 e 195), e o Campbell, 15ª ed., cap. 71 (p. 3143, 3146 e 3167).
+fonte: Livro conferido localmente em 31/10/2026 (tradução), capítulo 6, sobretudo anatomia da bainha, nutrição, vínculos e polias, avulsão do profundo, técnica de reparo, cicatrização e reabilitação, e reconstrução com enxerto. Ampliado em 01/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 6 (lido por inteiro), e o Campbell's Operative Orthopaedics, 15ª ed., cap. 71. Corrigido em 11/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 2 (espaço de PARONA, p. 29 e 33) e cap. 6 (p. 185, 189, 194 e 195), e o Campbell, 15ª ed., cap. 71 (p. 3143, 3146 e 3167).
 subtemas: Lesões dos tendões flexores
 resumo: Nutrição dupla (perfusão e difusão sinovial) e face palmar avascular; vínculos curtos e longos; polias anulares e cruciformes, com A2 e A4 indispensáveis; LEDDY e PACKER (tipo I na palma, sem vínculos, urgente); sutura central e epitendínea, lacerações parciais e a regra de 1 cm na zona 1; aderências, excursão e cicatrização intrínseca; enxertos (palmar longo, plantar), PULVERTAFT, quadriga, BOYES e PANEVA-HOLEVICH.
 ---
@@ -31,7 +31,7 @@ O tendão flexor dentro da bainha precisa de três coisas para dar certo: **sang
 conceito: A2 e A4 são as polias indispensáveis contra a corda de arco; os vínculos curtos ficam junto às inserções; a face palmar é pouco irrigada.
 como: Uma prova de Ortopedia mostrou as polias e o vínculo curto do superficial em imagem; o TARO 2016, a área isquêmica sob uma polia; o TARO 2018, o efeito do fechamento das polias.
 armadilha: Achar que as cruciformes são as mais importantes ou trocar a origem dos vínculos longos.
-alerta: O texto extraído não localiza a área isquêmica do superficial sob uma polia específica (`mao-0051`) nem discute o fechamento das polias na cicatrização (`mao-0022`); os gabaritos oficiais foram preservados.
+alerta: O texto não localiza a área isquêmica do superficial sob uma polia específica (`mao-0051`) nem discute o fechamento das polias na cicatrização (`mao-0022`); os gabaritos oficiais foram preservados.
 !fim
 
 # A avulsão do profundo {radar=confirmado}

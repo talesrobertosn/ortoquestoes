@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries
 autores: Philip K. Lim, Christen E. Chalmers e John A. Scolaro
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (questoes__resumo_de_joelho_patela_mecanismo_extensor_e_luxacao_joelho.pdf, páginas 1 a 20; as páginas seguintes são o capítulo 61). Complemento conferido localmente em 09/11/2026 para a tendinopatia patelar e do quadríceps: Campbell's Operative Orthopaedics, 15ª ed., cap. 53, p. 2269 e 2270 (joelho do saltador, BLAZINA, Tabela 53.4 de FERRETTI, Técnica 53.20); Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), caps. 16 e 76 (tendinite patelar e quadricipital), edição digital sem página impressa. Conferido em 11/11/2026 para as rupturas tendíneas: Campbell 15, cap. 53, p. 2272 (doenças associadas), p. 2277 (local da ruptura do quadricipital por idade e zona hipovascular) e p. 2279 (CODIVILLA); Rockwood 10ª ed., cap. 6, Tabela 6-51 (epidemiologia das rupturas).
+fonte: Capítulo enviado pelo Tales em 16/10/2026. Complemento conferido localmente em 09/11/2026 para a tendinopatia patelar e do quadríceps: Campbell's Operative Orthopaedics, 15ª ed., cap. 53, p. 2269 e 2270 (joelho do saltador, BLAZINA, Tabela 53.4 de FERRETTI, Técnica 53.20); Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), caps. 16 e 76 (tendinite patelar e quadricipital). Conferido em 11/11/2026 para as rupturas tendíneas: Campbell 15, cap. 53, p. 2272 (doenças associadas), p. 2277 (local da ruptura do quadricipital por idade e zona hipovascular) e p. 2279 (CODIVILLA); Rockwood 10ª ed., cap. 6, Tabela 6-51 (epidemiologia das rupturas).
 subtemas: Fratura da patela e lesão do aparelho extensor; Ruptura dos tendões patelar e quadricipital; Fratura da patela; Tendinopatias do aparelho extensor
 resumo: Retináculos e extensão ativa, axial de MERCHANT, carga salina, patela bipartida, 3 mm de incongruência, banda de tensão, patelectomia, luxação lateral aguda, idade e local das rupturas tendíneas, patela alta e baixa, cerclagem a 30 graus e CODIVILLA; joelho do saltador no polo inferior da patela, fases de BLAZINA (a 4 é fratura por estresse da patela ou ruptura do extensor) e estágios 0 a 5 de FERRETTI.
 ---
@@ -355,7 +355,7 @@ Variante incomum das lesões do extensor, tratada como a avulsão do polo distal
 
 # Tendinopatia patelar e do quadríceps: o joelho do saltador {radar=confirmado}
 
-As seções anteriores tratam do mecanismo extensor que quebra ou rompe de uma vez. Esta trata do que vem antes: o tendão que adoece aos poucos por sobrecarga, e que no fim da linha pode terminar justamente na ruptura ou na fratura por estresse da patela. O capítulo 60 do Rockwood não descreve a tendinopatia; o texto aqui vem do Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2269 e 2270), e do HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (caps. 16 e 76, edição digital sem página impressa).
+As seções anteriores tratam do mecanismo extensor que quebra ou rompe de uma vez. Esta trata do que vem antes: o tendão que adoece aos poucos por sobrecarga, e que no fim da linha pode terminar justamente na ruptura ou na fratura por estresse da patela. O capítulo 60 do Rockwood não descreve a tendinopatia; o texto aqui vem do Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2269 e 2270), e do HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (caps. 16 e 76).
 
 ## O que é e onde fica
 

@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19)
 capitulo: Capítulo 88 · Disorders of the Tendons and Fascia and Adolescent and Adult Acquired Flatfoot Deformity (seção Pes Planus and Tarsal Coalition)
 autores: Benjamin J. GREAR
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulo 88, seção Pes Planus and Tarsal Coalition (p. 3838 a 3845), com a menção às coalizões na hemimelia fibular do capítulo 31; Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 19 (Disorders of the Foot), seção Tarsal Coalition (p. 747 a 754) e avaliação do pé plano (p. 698 e 699). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulo 88, seção Pes Planus and Tarsal Coalition (p. 3838 a 3845), com a menção às coalizões na hemimelia fibular do capítulo 31; Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 19 (Disorders of the Foot), seção Tarsal Coalition (p. 747 a 754) e avaliação do pé plano (p. 698 e 699).
 subtemas: Coalizões tarsais
 resumo: Coalizão tarsal é falha de segmentação do mesênquima, autossômica dominante, bilateral em 50%; as mais comuns são a calcaneonavicular (ossifica entre 8 e 12 anos, oblíqua a 45 graus, nariz de tamanduá no perfil, ressecção com interposição do extensor curto dos dedos ou gordura) e a talocalcânea da faceta média (ossifica entre 12 e 16 anos, subtalar quase imóvel, sinal do C e bico talar no perfil, HARRIS e TC semicoronal, ressecção no jovem e artrodese quando mais de 50% da faceta posterior ou valgo maior que 16 graus); o espasmo fibular é consequência, não causa, e o objetivo da cirurgia é tirar a dor.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado na seção Pes Planus and Tarsal Coalition do capítulo 88 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 88), escrito por Benjamin J. GREAR, e completado pela seção Tarsal Coalition do capítulo 19 do Tachdjian's Pediatric Orthopaedics, 6ª ed. As páginas citadas são as impressas.
+Este resumo é inspirado na seção Pes Planus and Tarsal Coalition do capítulo 88 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 88), escrito por Benjamin J. GREAR, e completado pela seção Tarsal Coalition do capítulo 19 do Tachdjian's Pediatric Orthopaedics, 6ª ed.
 
 A coalizão tarsal é uma das poucas doenças do pé em que quase toda a prova cabe em uma única história: um adolescente que torce o tornozelo com frequência, tem dor no seio do tarso depois do esporte, anda com o pé girado para fora e tem um pé plano que não muda quando ele fica na ponta dos pés. O examinador tenta inverter o calcanhar, o pé não obedece, e os tendões fibulares saltam sob a pele. Dessa cena saem as perguntas: quais ossos estão unidos, por que a dor aparece só na adolescência, por que os fibulares estão tensos, qual radiografia mostra qual barra, o que é o nariz de tamanduá, o que é o sinal do C e quando ressecar ou fundir.
 

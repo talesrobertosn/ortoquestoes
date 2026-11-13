@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 53 · Femoral Neck Fractures
 autores: Xavier L. Griffin, Jennifer C. E. Lane, Iain Moppett e Hannah Seymour
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (fratura_colo_femur.pdf, 60 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026
 resumo: Da anatomia vascular ao algoritmo de tratamento por idade, desvio e demanda: o que o capítulo ensina e como as provas cobram.
 ---
 

@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 27 · Proximal Tibial Physeal Fractures (com a fratura metafisária do capítulo 29)
 autores: Benjamin J. Shore e Eric W. Edmonds
-fonte: Livro conferido localmente em 26/10/2026 e relido inteiro em 31/10/2026, capítulo 27 (PDF 2643 a 2695), com a seção da fratura metafisária proximal e do valgo de COZEN do capítulo 29 e os dados de crescimento do capítulo 26; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 34, p. 1808 (complicações da fratura da tuberosidade). O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 26/10/2026 e relido inteiro em 31/10/2026, capítulo 27, com a seção da fratura metafisária proximal e do valgo de COZEN do capítulo 29 e os dados de crescimento do capítulo 26; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 34, p. 1808 (complicações da fratura da tuberosidade).
 subtemas: Fraturas do fêmur e da perna na criança; Outras fraturas na criança; Lesões fisárias; Joelho da criança
 resumo: Fise estável pelos contrafortes (colateral medial na metáfise, fíbula); tíbia proximal cresce 6 mm por ano e fecha de posterior para anterior; tuberosidade = menino adolescente que salta, acima de 30 graus leva a epífise; OGDEN modificada em cinco tipos (III intra-articular, IV fise inteira, V só tendão); MUBARAK: metafisária aos 4 anos, intra-articular aos 15; hiperextensão e poplítea, tuberosidade e recorrente tibial anterior; internar sempre; cirurgia com desvio acima de 2 a 3 mm; complicação mais comum = material; deformidade fisária = recurvato; metafisária de 3 a 6 anos = valgo de COZEN, que aparece em 6 meses, piora até 18 a 24 e corrige sozinho.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 27 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Benjamin J. Shore e Eric W. Edmonds, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. A fratura metafisária proximal da criança pequena, com o valgo de COZEN, vem do capítulo 29 e entra aqui inteira, porque a banca a cobra junto. Os números são os dos capítulos. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
+Este resumo é inspirado no capítulo 27 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Benjamin J. Shore e Eric W. Edmonds, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. A fratura metafisária proximal da criança pequena, com o valgo de COZEN, vem do capítulo 29 e entra aqui inteira, porque a banca a cobra junto. Os números são os dos capítulos.
 
 Na ponta de cima da tíbia da criança moram **três lesões diferentes**, e quase toda questão começa por saber de qual delas se trata:
 

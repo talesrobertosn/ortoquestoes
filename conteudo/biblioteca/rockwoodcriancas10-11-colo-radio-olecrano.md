@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 11 · Radial Neck and Olecranon Fractures
 autores: Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel
-fonte: Livro conferido localmente em 28/10/2026 e relido inteiro em 31/10/2026, capítulo 11 (fraturas do rádio proximal e da ulna proximal). O PDF não traz numeração impressa; as referências citam capítulo, seção, figura, tabela e algoritmo.
+fonte: Livro conferido localmente em 28/10/2026 e relido inteiro em 31/10/2026, capítulo 11 (fraturas do rádio proximal e da ulna proximal).
 subtemas: Côndilo lateral, epicôndilo medial e rádio proximal na criança; Outras fraturas na criança
 resumo: Colo do rádio por queda com o cotovelo estendido e valgo, 5% a 10% das fraturas do cotovelo, 30% a 50% com outra lesão; colo quase todo extracapsular; CHAMBERS, JUDET e O'BRIEN; fraturas na luxação (D na redução, cabeça atrás; E na luxação, cabeça à frente); aceitável 45 graus abaixo de 10 anos e 30 acima, 2 mm e rotação completa; PATTERSON, israelense, METAIZEAU; pronar para proteger o interósseo posterior; fratura articular da cabeça que subluxa (TRASH); sequela = perda da pronação, crescimento da cabeça, osteonecrose de 25% após redução aberta. Olécrano em flexão, extensão (valgo = MONTEGGIA I equivalente, varo = III) e cisalhamento; apófise acima de 4 mm ou incongruente; coronoide de REGAN e MORREY.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 11 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam seção, figura e tabela.
+Este resumo é inspirado no capítulo 11 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Sumeet Garg, Mark A. Erickson e Sarah E. Sibbel, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 O capítulo trata das duas metades do antebraço proximal: o **rádio proximal** (sobretudo o colo) e a **ulna proximal** (olécrano, apófise e coronoide). As duas se encontram num ponto que a banca adora: quando o olécrano quebra em galho verde, o colo do rádio costuma quebrar junto, e a combinação vira um **equivalente de MONTEGGIA**.
 

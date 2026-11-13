@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 21 · Cervical Spine Injuries in Children
 autores: Rajiv Iyer e Douglas Brockmeyer
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 21. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 21.
 subtemas: Trauma da coluna na criança; Coluna e pescoço da criança
 resumo: Abaixo de 8 anos a lesão é alta (frouxidão, facetas horizontais, cabeça grande); prancha com recesso occipital; NEXUS e tomografia no trauma grave; pseudossubluxação C2-C3 e linha de SWISCHUK; variantes normais; côndilo occipital (TULI); luxação atlanto-occipital pelo CCI e artrodese occipital-C2; JEFFERSON e DICKMAN; odontoide pela sincondrose (SALTER-HARRIS I) e HOSALKAR; enforcado e maus-tratos; SLIC, compressão, explosão e luxação facetária; halo, metilprednisolona e técnicas de fixação.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 21 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Rajiv Iyer e Douglas Brockmeyer, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
+Este resumo é inspirado no capítulo 21 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Rajiv Iyer e Douglas Brockmeyer, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 A coluna cervical da criança é cobrada quase sempre pelo que ela tem de **diferente** da do adulto. A banca pergunta por que a lesão do pequeno é **alta**, o que a **linha de SWISCHUK** avalia, que achados **normais** imitam lesão, por onde passa a fratura do **odontoide** antes de a sincondrose fechar e como a **classificação de HOSALKAR** a divide, qual ligamento decide a instabilidade da fratura de **JEFFERSON**, o que a **carga axial** produz na cervical baixa e como se diagnostica a **luxação atlanto-occipital**.
 

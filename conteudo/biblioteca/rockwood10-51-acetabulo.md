@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 51 · Acetabulum Fractures
 autores: Joshua L. Gary e Kevin D. Phelps
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (acetabulo_e_anel_pelvico_apenas_resumo-1-75.pdf, pp. 65 a 75, e acetabulo_e_anel_pelvico_apenas_resumo-76-127.pdf, 52 páginas; as pp. 1 a 64 do primeiro arquivo são o capítulo 50, do anel pélvico)
+fonte: Capítulo enviado pelo Tales em 17/10/2026
 subtemas: Fratura do acetábulo
 resumo: Colunas em Y invertido, as seis linhas do AP e as oblíquas de JUDET, as dez fraturas de LETOURNEL com suas frequências, sinal do esporão e da asa de gaivota, arco do teto de MATTA e VRAHAS, exame sob anestesia da parede posterior, prazos de 15 e 10 dias, KOCHER-LANGENBECK, ilioinguinal e STOPPA, o idoso e a ossificação heterotópica.
 ---

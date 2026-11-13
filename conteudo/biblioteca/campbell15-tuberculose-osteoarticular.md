@@ -1,6 +1,6 @@
 ---
 id: campbell15-tuberculose-osteoarticular
-versao: 1
+versao: 2
 titulo: Tuberculose osteoarticular
 especialidade: osteometabolicas
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 23
 capitulo: Capítulo 25 · Tuberculosis and Other Unusual Infections
 autores: Kevin B. Cleveland
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 25 (p. 840 a 858, tuberculose e infecções incomuns), cap. 49 (p. 1938 a 1952, infecções da coluna, tuberculose e drenagem de abscessos) e cap. 4 (p. 263, tuberculose do quadril e artroplastia); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (p. 959 e 978 a 985, tuberculose osteoarticular e espondilite tuberculosa na criança). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 25 (p. 840 a 858, tuberculose e infecções incomuns), cap. 49 (p. 1938 a 1952, infecções da coluna, tuberculose e drenagem de abscessos) e cap. 4 (p. 263, tuberculose do quadril e artroplastia); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (p. 959 e 978 a 985, tuberculose osteoarticular e espondilite tuberculosa na criança).
 subtemas: Tuberculose osteoarticular
 resumo: Esquelética em 10% a 20% da tuberculose, metade com pulmão acometido; coluna é o sítio ósseo mais comum (espondilite), na porção anterior do corpo vertebral, transição toracolombar ou torácica baixa, com disseminação subligamentar e disco poupado; quadro de sintomas gerais e evolução indolente; periférica em quadril e joelho; no membro superior, cotovelo com olécrano e contratura em flexão; no pé, calcâneo e tálus; RM é a imagem de escolha, biópsia com cultura ou teste molecular confirma; tratamento com esquema de múltiplas drogas, cirurgia para déficit, cifose, instabilidade, abscesso grande ou falha.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 25 (Tuberculosis and Other Unusual Infections) do Campbell's Operative Orthopaedics, 15ª edição, completado pelo capítulo 49 do mesmo livro (infecções da coluna, onde fica a cirurgia do mal de POTT) e pelo capítulo 23 do Tachdjian's Pediatric Orthopaedics, 6ª edição, que descreve a patologia da espondilite e a artrite tuberculosa na criança com mais detalhe. As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 25 (Tuberculosis and Other Unusual Infections) do Campbell's Operative Orthopaedics, 15ª edição, completado pelo capítulo 49 do mesmo livro (infecções da coluna, onde fica a cirurgia do mal de POTT) e pelo capítulo 23 do Tachdjian's Pediatric Orthopaedics, 6ª edição, que descreve a patologia da espondilite e a artrite tuberculosa na criança com mais detalhe.
 
 A tuberculose osteoarticular é uma infecção granulomatosa, lenta, que chega ao osso pelo sangue a partir de um foco quase sempre pulmonar. Quase tudo o que a prova cobra sai de três ideias. Primeira: o bacilo cai na **parte anterior do corpo vertebral**, junto à placa terminal, e anda **por baixo do ligamento longitudinal anterior**, por isso o **disco é poupado** por muito tempo, ao contrário da infecção piogênica. Segunda: a doença é **crônica e sistêmica**, com mal-estar, emagrecimento, sudorese noturna e febre baixa, e a dor e a deformidade chegam tarde. Terceira: fora da coluna, ela procura as **grandes articulações de carga** (quadril e joelho); no membro superior, o **cotovelo**, com a **ulna proximal (olécrano)** como alvo e contratura em flexão como sequela.
 
@@ -52,7 +52,7 @@ O capítulo 49 do Campbell (p. 1949) reforça com outra conta: mais de **10 milh
 
 O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 959), dá a distribuição das formas osteoarticulares, que é a chave para a pergunta "qual a manifestação ortopédica mais comum": **espondilite 50%**, **artrite periférica 30%**, **osteomielite 11% a 19%** e **tenossinovite e bursite 1%**. O mesmo texto lembra que a doença extrapulmonar é mais comum em **menores de 5 anos** e que a **dactilite** surge em meses, enquanto os ossos longos levam **1 a 3 anos**.
 
-Há uma diferença de tom entre os livros sobre o pulmão. O Campbell (cap. 25, p. 840) fala em **cerca de 50%** de envolvimento pulmonar na tuberculose óssea; o Tachdjian (cap. 23, p. 982, aprox.) diz que a doença pulmonar **ativa** está presente em **menos da metade** dos casos de tuberculose esquelética. As duas frases convivem: aproximadamente metade, um pouco menos quando se exige doença pulmonar ativa. A banca do TARO 2024 usou o número do Campbell.
+Há uma diferença de tom entre os livros sobre o pulmão. O Campbell (cap. 25, p. 840) fala em **cerca de 50%** de envolvimento pulmonar na tuberculose óssea; o Tachdjian (cap. 23, p. 982) diz que a doença pulmonar **ativa** está presente em **menos da metade** dos casos de tuberculose esquelética. As duas frases convivem: aproximadamente metade, um pouco menos quando se exige doença pulmonar ativa. A banca do TARO 2024 usou o número do Campbell.
 
 !tabela Os números da tuberculose esquelética (Campbell 15, cap. 25, p. 840 e 841.e1; cap. 49, p. 1949; Tachdjian 6, cap. 23, p. 959 e 982)
 | Dado | Valor | Fonte |
@@ -73,7 +73,7 @@ Há uma diferença de tom entre os livros sobre o pulmão. O Campbell (cap. 25, 
 conceito: A manifestação ortopédica mais comum da tuberculose é a espondilite (50% das formas osteoarticulares), e cerca de 50% dos pacientes com tuberculose óssea têm envolvimento pulmonar.
 como: A SBOT-SP pediu a manifestação ortopédica mais comum, com artrite séptica, tenossinovite e osteomielite de ossos longos como distratores; o TARO 2024 perguntou o percentual de envolvimento pulmonar nos pacientes com tuberculose óssea.
 armadilha: Achar que a artrite de grandes articulações é a forma mais comum (é a segunda, com 30%) ou que quase todo paciente com tuberculose óssea tem doença pulmonar (é cerca de metade).
-alerta: Para `osteometabolicas-0040`, o Campbell (cap. 25, p. 840) sustenta 50%; o Tachdjian (cap. 23, p. 982, aprox.) diz que a doença pulmonar ativa está presente em menos da metade dos casos, o que não muda o gabarito.
+alerta: Para `osteometabolicas-0040`, o Campbell (cap. 25, p. 840) sustenta 50%; o Tachdjian (cap. 23, p. 982) diz que a doença pulmonar ativa está presente em menos da metade dos casos, o que não muda o gabarito.
 !fim
 
 # Onde a coluna adoece: o segmento e a porção da vértebra {radar=confirmado}
@@ -86,7 +86,7 @@ Quanto ao nível exato, os livros usam palavras diferentes, e isso importa para 
 
 - o capítulo 25 do Campbell (p. 840) diz que o acometimento vertebral é mais frequente na **coluna torácica baixa**;
 - o capítulo 49 do Campbell (p. 1949), escrito pelos cirurgiões de coluna, diz que a **coluna toracolombar é a área mais infectada**, seguida da **lombar** e depois da **cervical**;
-- o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 982, aprox.), diz que **qualquer nível** pode ser acometido, que a **região torácica baixa é o segmento mais comum** e que, em ordem decrescente, vêm a **lombar, a torácica alta (dorsal superior), a cervical e a sacral**.
+- o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 982), diz que **qualquer nível** pode ser acometido, que a **região torácica baixa é o segmento mais comum** e que, em ordem decrescente, vêm a **lombar, a torácica alta (dorsal superior), a cervical e a sacral**.
 
 "Torácica baixa" e "transição toracolombar" descrevem praticamente a mesma região, e as bancas brasileiras usam a segunda expressão. O que nunca é resposta: cervical, torácica alta isolada ou transição lombossacral. Por que essa região? O Campbell (cap. 25, p. 842) cita a hipótese de que o bacilo, que exige **alta pressão de oxigênio**, prefere áreas de **irrigação arterial e venosa generosa**. O capítulo 49 (p. 1938) acrescenta o plexo venoso de BATSON, via venosa dos sistemas geniturinário e gastrointestinal para a coluna toracolombar.
 
@@ -104,7 +104,7 @@ Quanto ao nível exato, os livros usam palavras diferentes, e isso importa para 
 conceito: No mal de POTT, o segmento mais acometido é a transição toracolombar (torácica baixa), e a lesão está no corpo vertebral, não no arco posterior.
 como: O TARO 2008 perguntou a região mais acometida (cervical, torácica alta, toracolombar ou lombossacral); o TARO 2020 combinou o nível com a porção da vértebra (arco posterior ou corpo, torácica alta ou toracolombar).
 armadilha: Escolher torácica alta por lembrar que a paraplegia é mais comum ali, ou marcar o arco posterior; a paraplegia é mais comum na torácica média e alta, mas a infecção é mais comum na toracolombar.
-alerta: Para `osteometabolicas-0001`, o capítulo 49 do Campbell (p. 1949) sustenta literalmente a transição toracolombar; o capítulo 25 do Campbell (p. 840) e o Tachdjian (p. 982, aprox.) dizem coluna torácica baixa, que é a mesma região; o gabarito D se mantém.
+alerta: Para `osteometabolicas-0001`, o capítulo 49 do Campbell (p. 1949) sustenta literalmente a transição toracolombar; o capítulo 25 do Campbell (p. 840) e o Tachdjian (p. 982) dizem coluna torácica baixa, que é a mesma região; o gabarito D se mantém.
 !fim
 
 ## A porção da vértebra
@@ -113,9 +113,9 @@ A segunda pergunta é dentro da vértebra. Os três textos concordam: a tubercul
 
 O Campbell (cap. 25, p. 842) descreve que a lesão ativa costuma envolver **um segmento**: **dois corpos vertebrais e o disco entre eles**. Em cerca de **80%** dos pacientes a apresentação é periférica (paradiscal), com a **porção anterior do corpo vertebral** acometida e progressão contígua por **escavação subligamentar sob o ligamento longitudinal anterior**, até alcançar as vértebras vizinhas. Com menos frequência, a lesão é **central** no corpo; essa forma é mais difícil de diagnosticar, pode **simular tumor** e contribuir para deformidades importantes. Os **elementos posteriores raramente são os únicos acometidos**.
 
-O capítulo 49 (p. 1949) diz sem rodeios que a tuberculose espinhal **envolve inicialmente o corpo vertebral anterior**. O Tachdjian (cap. 23, p. 982, aprox.) explica o mecanismo: o foco inicial costuma estar no **osso esponjoso do corpo vertebral** e só ocasionalmente no arco neural posterior, no processo transverso ou em posição subperiosteal sob o ligamento longitudinal anterior. O bacilo é depositado pelas **arteríolas terminais do corpo vertebral, junto à face anterior da placa terminal**, e por isso **a porção anterior do corpo é a mais afetada**.
+O capítulo 49 (p. 1949) diz sem rodeios que a tuberculose espinhal **envolve inicialmente o corpo vertebral anterior**. O Tachdjian (cap. 23, p. 982) explica o mecanismo: o foco inicial costuma estar no **osso esponjoso do corpo vertebral** e só ocasionalmente no arco neural posterior, no processo transverso ou em posição subperiosteal sob o ligamento longitudinal anterior. O bacilo é depositado pelas **arteríolas terminais do corpo vertebral, junto à face anterior da placa terminal**, e por isso **a porção anterior do corpo é a mais afetada**.
 
-Quando os elementos posteriores estão acometidos, o achado é **característico** da tuberculose, porque não ocorre na infecção piogênica (Tachdjian, p. 982, aprox.). Isso não muda a resposta da prova: o local mais frequente continua sendo o corpo anterior; o arco posterior é raro e, quando aparece, ajuda a pensar em tuberculose.
+Quando os elementos posteriores estão acometidos, o achado é **característico** da tuberculose, porque não ocorre na infecção piogênica (Tachdjian, p. 982). Isso não muda a resposta da prova: o local mais frequente continua sendo o corpo anterior; o arco posterior é raro e, quando aparece, ajuda a pensar em tuberculose.
 
 !tabela Onde a lesão começa na vértebra (Campbell 15, cap. 25, p. 842 e 843; cap. 49, p. 1949; Tachdjian 6, cap. 23, p. 982)
 | Localização | Frequência | O que significa |
@@ -139,9 +139,9 @@ armadilha: Marcar o disco (que é poupado), o terço médio do corpo (a forma ce
 
 O traço mais cobrado da tuberculose da coluna é a **preservação relativa do disco**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 25, p. 843), descreve na imagem a "**relativa preservação do espaço discal**", com o acometimento anterior mais comum que o central. O capítulo 49 (p. 1949) é ainda mais direto: no adulto, a infecção **poupa os discos intervertebrais** e se espalha **por baixo e ao longo dos ligamentos longitudinais anterior e posterior**. A destruição óssea anterior, que pode ser **multifocal**, e a **poupança dos discos** são justamente o que distingue a espondilodiscite tuberculosa (doença de POTT) da piogênica.
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 982, aprox.), descreve a sequência: o córtex se rompe, a infecção pode alcançar o disco e os tecidos vizinhos, formando massas paravertebrais ou epidurais; o **disco só é envolvido tardiamente**, e por isso a **preservação do espaço discal é um dado diagnóstico importante**; quando o espaço estreita, o estreitamento é **menor que na discite piogênica**. A infecção alcança duas ou mais vértebras **por extensão sob o ligamento longitudinal anterior** ou, mais tarde, através do disco. Às vezes há **focos separados por vértebras normais** (lesões salteadas), ou disseminação a vértebras distantes pelo abscesso paravertebral.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 982), descreve a sequência: o córtex se rompe, a infecção pode alcançar o disco e os tecidos vizinhos, formando massas paravertebrais ou epidurais; o **disco só é envolvido tardiamente**, e por isso a **preservação do espaço discal é um dado diagnóstico importante**; quando o espaço estreita, o estreitamento é **menor que na discite piogênica**. A infecção alcança duas ou mais vértebras **por extensão sob o ligamento longitudinal anterior** ou, mais tarde, através do disco. Às vezes há **focos separados por vértebras normais** (lesões salteadas), ou disseminação a vértebras distantes pelo abscesso paravertebral.
 
-Por que o disco resiste? O Tachdjian (cap. 23, p. 979) dá a pista na artrite periférica: o M. tuberculosis **não tem enzimas proteolíticas**, e por isso a cartilagem e o espaço articular ficam preservados até tarde, ao contrário da infecção piogênica, que destrói a cartilagem cedo. O mesmo raciocínio vale para o disco, que é cartilagem avascular no adulto (o capítulo 49, p. 1938, lembra que o núcleo pulposo é vascularizado na criança e avascular no adulto, nutrido por perfurações das placas terminais).
+Por que o disco resiste? O Tachdjian (cap. 23, p. 980) dá a pista na artrite periférica: o M. tuberculosis **não tem enzimas proteolíticas**, e por isso a cartilagem e o espaço articular ficam preservados até tarde, ao contrário da infecção piogênica, que destrói a cartilagem cedo. O mesmo raciocínio vale para o disco, que é cartilagem avascular no adulto (o capítulo 49, p. 1938, lembra que o núcleo pulposo é vascularizado na criança e avascular no adulto, nutrido por perfurações das placas terminais).
 
 ## O que a disseminação poupa e o que ela atinge
 
@@ -175,13 +175,13 @@ A doença de POTT é crônica. O Campbell's Operative Orthopaedics, 15ª ed. (ca
 
 O capítulo 49 (p. 1939) compara os tipos de dor: as infecções piogênicas tendem a dar dor mais **intensa ou aguda**, e as granulomatosas, como a tuberculose, dor **surda, em peso**. A febre aparece em cerca de **50%** das infecções da coluna, e quando presente deve levantar suspeita de infecção.
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 983, aprox.), descreve a criança: **início insidioso e evolução lenta**, sintomas iniciais vagos com **mal-estar generalizado**, cansaço fácil, perda de apetite e de peso e perda da vontade de brincar; febre **vespertina ou noturna**; **dor lombar geralmente mínima**, às vezes referida no segmento; **espasmo muscular constante** na região afetada; coluna rígida.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 983), descreve a criança: **início insidioso e evolução lenta**, sintomas iniciais vagos com **mal-estar generalizado**, cansaço fácil, perda de apetite e de peso e perda da vontade de brincar; febre **vespertina ou noturna**; **dor lombar geralmente mínima**, às vezes referida no segmento; **espasmo muscular constante** na região afetada; coluna rígida.
 
 Por isso a resposta "**sintomas generalizados e progressão indolente**" é a correta. As alternativas com "sintomas agudos" descrevem a infecção piogênica, e "progressão rápida" lembra a forma miliar (Campbell, cap. 25, p. 840), não o mal de POTT.
 
 ## O exame
 
-O Tachdjian (cap. 23, p. 983 e 984, aprox.) traz os sinais clássicos:
+O Tachdjian (cap. 23, p. 983 e 984) traz os sinais clássicos:
 
 - ao **pegar um objeto do chão**, a criança **flexiona quadris e joelhos** e mantém a coluna em extensão, por causa da rigidez;
 - a mobilidade da coluna está limitada em todas as direções;
@@ -217,13 +217,13 @@ armadilha: Marcar progressão rápida pensando na forma miliar, que é outra ent
 
 ## A deformidade
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 982 e 983, aprox.), explica a giba pela mecânica. Os corpos vertebrais perdem resistência com a destruição progressiva e **colapsam sob o peso do corpo**, enquanto as **articulações intervertebrais e o arco neural posterior continuam intactos**. O resultado é uma **cifose angular**, cuja gravidade depende da extensão da destruição, do nível e do número de vértebras. A cifose é **maior na coluna torácica**, por causa da curvatura dorsal normal; na lombar, é **leve**, porque a lordose transmite o peso para trás; na cervical, o colapso é **mínimo**, porque o peso passa pelas articulares. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 49, p. 1949), dá números: **20 graus de cifose são comuns** nas regiões torácica e toracolombar, contra **3 graus por nível** na lombar; a deformidade surge na **fase inicial** da doença e é **mais grave na criança**, porque a destruição anterior atinge também a **fise**.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 982 e 983), explica a giba pela mecânica. Os corpos vertebrais perdem resistência com a destruição progressiva e **colapsam sob o peso do corpo**, enquanto as **articulações intervertebrais e o arco neural posterior continuam intactos**. O resultado é uma **cifose angular**, cuja gravidade depende da extensão da destruição, do nível e do número de vértebras. A cifose é **maior na coluna torácica**, por causa da curvatura dorsal normal; na lombar, é **leve**, porque a lordose transmite o peso para trás; na cervical, o colapso é **mínimo**, porque o peso passa pelas articulares. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 49, p. 1949), dá números: **20 graus de cifose são comuns** nas regiões torácica e toracolombar, contra **3 graus por nível** na lombar; a deformidade surge na **fase inicial** da doença e é **mais grave na criança**, porque a destruição anterior atinge também a **fise**.
 
-A cura acontece por **fibrose e calcificação** do tecido granulomatoso, que depois ossifica, levando à **anquilose óssea** das vértebras colapsadas (Tachdjian, p. 983, aprox.). O Campbell (cap. 49, p. 1949) relata **fusão do nível acometido em 80%** com diagnóstico precoce e tratamento clínico.
+A cura acontece por **fibrose e calcificação** do tecido granulomatoso, que depois ossifica, levando à **anquilose óssea** das vértebras colapsadas (Tachdjian, p. 983). O Campbell (cap. 49, p. 1949) relata **fusão do nível acometido em 80%** com diagnóstico precoce e tratamento clínico.
 
 ## O abscesso frio e por onde ele aparece
 
-O abscesso **paravertebral está presente em quase todo caso** (Tachdjian, p. 983, aprox.). Com o colapso, tecido de granulação, material caseoso, osso necrótico e medula são extruídos pelo córtex e se acumulam sob o ligamento longitudinal anterior. Esses abscessos são chamados **frios** porque **não têm inflamação aguda** (Tachdjian, p. 978): falta calor, rubor e dor importante. Eles descem pelos planos fasciais e aparecem **longe da lesão original**:
+O abscesso **paravertebral está presente em quase todo caso** (Tachdjian, p. 983). Com o colapso, tecido de granulação, material caseoso, osso necrótico e medula são extruídos pelo córtex e se acumulam sob o ligamento longitudinal anterior. Esses abscessos são chamados **frios** porque **não têm inflamação aguda** (Tachdjian, p. 978): falta calor, rubor e dor importante. Eles descem pelos planos fasciais e aparecem **longe da lesão original**:
 
 - **lombar**: o abscesso desce pela **bainha do psoas** e costuma apontar na **virilha logo abaixo do ligamento inguinal**; o Campbell (cap. 49, p. 1939) descreve a mesma tumoração na virilha abaixo do ligamento de POUPART;
 - **torácica**: os ligamentos longitudinais contêm o abscesso, que aparece na radiografia como **sombra fusiforme** no nível da vértebra ou logo abaixo; sob tensão, pode romper no **mediastino** (abscesso "em ninho de pássaro") ou chegar à parede anterior do tórax pelos vasos intercostais;
@@ -232,7 +232,7 @@ O abscesso **paravertebral está presente em quase todo caso** (Tachdjian, p. 98
 
 ## A paraplegia e a classificação de HODGSON
 
-A paraplegia é a complicação mais grave. O Tachdjian (cap. 23, p. 983, aprox.) diz que ela resulta da compressão da medula pelo **abscesso**, pela **massa caseosa ou de granulação** ou pela borda posterior do **disco ou do osso**, com contribuição de **trombose** e **edema**. Ela é mais frequente na **coluna torácica média e alta**, onde a **cifose é mais aguda, o canal é estreito e a medula é relativamente grande**. A literatura relata **6% a 25%** (p. 983) ou **10% a 29%** (p. 985), números que caíram com o diagnóstico precoce; **crianças pequenas** ficam paraplégicas com mais facilidade.
+A paraplegia é a complicação mais grave. O Tachdjian (cap. 23, p. 983) diz que ela resulta da compressão da medula pelo **abscesso**, pela **massa caseosa ou de granulação** ou pela borda posterior do **disco ou do osso**, com contribuição de **trombose** e **edema**. Ela é mais frequente na **coluna torácica média e alta**, onde a **cifose é mais aguda, o canal é estreito e a medula é relativamente grande**. A literatura relata **6% a 25%** (p. 983) ou **10% a 29%** (p. 985), números que caíram com o diagnóstico precoce; **crianças pequenas** ficam paraplégicas com mais facilidade.
 
 Atenção ao cruzamento que confunde: a infecção é mais comum na **toracolombar**, mas a paraplegia é mais comum na **torácica média e alta**.
 
@@ -288,7 +288,7 @@ O Campbell (cap. 25, p. 843) resume a imagem: a radiografia guia o tratamento; o
 
 O capítulo 49 (p. 1941) reforça que o **único achado específico** da tuberculose na radiografia e na TC é a **calcificação fina nas partes moles paravertebrais**; que a radiografia só mostra a espondilodiscite **2 semanas a 3 meses** depois do início; que a RM com e sem contraste tem **96% de sensibilidade e 93% de especificidade** para infecção e deve cobrir **toda a coluna**, porque **15% a 20%** das infecções são não contíguas. Na tuberculose, a radiografia precoce mostra **leve redução de um ou mais discos e osteopenia localizada**, e a **RM com e sem contraste é preferida** porque mostra o abscesso epidural (cap. 49, p. 1949).
 
-O Tachdjian (cap. 23, p. 984 e 985, aprox.) acrescenta: é preciso perder **mais de 50% do osso** para a radiografia mostrar a lesão; a TC diferencia tuberculose de piogênica porque a tuberculose tem **abscessos extradurais maiores com calcificação em cerca de metade dos casos**, e a piogênica não calcifica; a RM detecta as alterações **4 a 6 meses antes** dos métodos convencionais (sensibilidade **100%**, especificidade **88%**); o gadolínio mostra **realce em anel**, mais típico da tuberculose; há **mais vértebras envolvidas e abscessos maiores** que na osteomielite vertebral comum.
+O Tachdjian (cap. 23, p. 984 e 985) acrescenta: é preciso perder **mais de 50% do osso** para a radiografia mostrar a lesão; a TC diferencia tuberculose de piogênica porque a tuberculose tem **abscessos extradurais maiores com calcificação em cerca de metade dos casos**, e a piogênica não calcifica; a RM detecta as alterações **4 a 6 meses antes** dos métodos convencionais (sensibilidade **100%**, especificidade **88%**); o gadolínio mostra **realce em anel**, mais típico da tuberculose; há **mais vértebras envolvidas e abscessos maiores** que na osteomielite vertebral comum.
 
 Divergência numérica: para o Campbell, a radiografia muda após **30%** de destruição; para o Tachdjian, após **mais de 50%**. Nos dois, ela é tardia.
 
@@ -366,7 +366,7 @@ Como o abscesso do psoas costuma vir com **contratura em flexão do quadril**, o
 
 ## Quais articulações
 
-Fora da coluna, a tuberculose procura as **grandes articulações de carga do membro inferior**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 25, p. 840 e 842), diz que o acometimento apendicular afeta sobretudo **quadril e joelho**, seguidos de **pé, cotovelo e mão**; tornozelo, pé e membro superior aparecem menos. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 959), confirma: a artrite tuberculosa é geralmente **monoarticular**, com **joelho e quadril** como as mais acometidas. O capítulo 4 do Campbell (p. 263, aprox.) acrescenta que o **quadril é o segundo sítio ósseo mais comum depois da coluna**.
+Fora da coluna, a tuberculose procura as **grandes articulações de carga do membro inferior**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 25, p. 840 e 842), diz que o acometimento apendicular afeta sobretudo **quadril e joelho**, seguidos de **pé, cotovelo e mão**; tornozelo, pé e membro superior aparecem menos. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 959), confirma: a artrite tuberculosa é geralmente **monoarticular**, com **joelho e quadril** como as mais acometidas. O capítulo 4 do Campbell (p. 263) acrescenta que o **quadril é o segundo sítio ósseo mais comum depois da coluna**.
 
 ## O que acontece dentro da articulação
 
@@ -436,7 +436,7 @@ alerta: Para `osteometabolicas-0067`, o Campbell (cap. 25, p. 854) fala em contr
 
 ## Quadril
 
-O capítulo 4 do Campbell's Operative Orthopaedics, 15ª ed. (p. 263, aprox.), descreve o quadril como o **segundo sítio ósseo** depois da coluna, com destruição grave da cartilagem e do osso, **encurtamento e instabilidade**. Suspeitar em imigrantes de países endêmicos, pacientes com AIDS e artrite do quadril sem diagnóstico. Há **poucos bacilos** no osso, o que dificulta o diagnóstico. O M. tuberculosis divide devagar, forma **pouco biofilme** e adere mal ao implante; por isso a **artroplastia** é possível: numa revisão de 226 pacientes com drogas por **2 semanas antes** e **6 a 18 meses depois**, só **3** reativaram em 5,48 anos, e a reativação muitas vezes se trata com desbridamento e drogas mantendo a prótese.
+O capítulo 4 do Campbell's Operative Orthopaedics, 15ª ed. (p. 263), descreve o quadril como o **segundo sítio ósseo** depois da coluna, com destruição grave da cartilagem e do osso, **encurtamento e instabilidade**. Suspeitar em imigrantes de países endêmicos, pacientes com AIDS e artrite do quadril sem diagnóstico. Há **poucos bacilos** no osso, o que dificulta o diagnóstico. O M. tuberculosis divide devagar, forma **pouco biofilme** e adere mal ao implante; por isso a **artroplastia** é possível: numa revisão de 226 pacientes com drogas por **2 semanas antes** e **6 a 18 meses depois**, só **3** reativaram em 5,48 anos, e a reativação muitas vezes se trata com desbridamento e drogas mantendo a prótese.
 
 O capítulo 25 (p. 851 a 853) traz o tratamento por estágio:
 
@@ -516,7 +516,7 @@ Os princípios cirúrgicos do Campbell (cap. 25, p. 844) são quatro: **desbrida
 
 # A criança {radar=fundamento}
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 982, aprox.), lembra que a espondilite tuberculosa foi doença da **primeira infância** (3 a 5 anos), mas hoje acomete mais adultos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 49, p. 1944 e 1949), diz que a criança costuma chegar **tarde**, com destruição avançada, **cifose e paraparesia**, deformidade maior porque a destruição anterior atinge a **fise**, e que a cirurgia, quando necessária, é **desbridamento anterior com enxerto em estrutura e estabilização posterior**.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 982), lembra que a espondilite tuberculosa foi doença da **primeira infância** (3 a 5 anos), mas hoje acomete mais adultos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 49, p. 1944 e 1949), diz que a criança costuma chegar **tarde**, com destruição avançada, **cifose e paraparesia**, deformidade maior porque a destruição anterior atinge a **fise**, e que a cirurgia, quando necessária, é **desbridamento anterior com enxerto em estrutura e estabilização posterior**.
 
 # Fechamento {radar=fundamento}
 

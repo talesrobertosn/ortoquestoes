@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 31 · Fractures, Dislocations, and Other Injuries of the Foot
 autores: Amy L. McIntosh
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 31, com a doença de ISELIN pelo Campbell's Operative Orthopaedics (15ª ed., cap. 34). O PDF não traz numeração impressa; as referências citam capítulo, seção, figura, tabela e algoritmo.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 31, com a doença de ISELIN pelo Campbell's Operative Orthopaedics (15ª ed., cap. 34).
 subtemas: Fraturas do pé na criança
 resumo: Pé em crescimento e ossificação; tálus (artéria do canal do tarso, HAWKINS e necrose, sinal de HAWKINS, processo lateral por dorsiflexão com inversão, osteocondral medial na criança); calcâneo extra-articular e oculto, BOHLER, SEVER, conservador abaixo dos 10 anos; síndrome dolorosa complexa regional; luxação subtalar medial; cuboide e quebra-nozes; LISFRANC (equimose plantar, carga, segundo metatarsal e cuboide, HARDCASTLE B); metatarsais (primeiro até 5 anos, quinto depois); base do quinto (apófise longitudinal, zonas, JONES, ISELIN); estresse do colo do segundo metatarsal; falanges, sesamoides, cortador de grama, esmagamento, compartimental e prego.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 31 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Amy L. McIntosh, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. A doença de ISELIN, que o capítulo descreve como apófise sem dar o epônimo, vem do Campbell's Operative Orthopaedics (15ª edição, cap. 34). Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura, tabela e algoritmo.
+Este resumo é inspirado no capítulo 31 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Amy L. McIntosh, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. A doença de ISELIN, que o capítulo descreve como apófise sem dar o epônimo, vem do Campbell's Operative Orthopaedics (15ª edição, cap. 34).
 
 O pé da criança é cobrado em provas por detalhes de **epidemiologia e imagem**: qual metatarso quebra em cada idade, como separar a **apófise do quinto metatarso** de uma fratura, onde fica a **lesão osteocondral do tálus** na criança, o **mecanismo da fratura do processo lateral do tálus**, o sinal radiográfico do **LISFRANC**, o local da **fratura de estresse** e os epônimos das apófises (**SEVER** e **ISELIN**). O fio condutor do capítulo é que o pé da criança é cartilaginoso e elástico: quebra menos, remodela mais, esconde fraturas na radiografia e muda de padrão quando ossifica.
 

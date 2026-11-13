@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 61 · Knee Dislocations
 autores: James P. Stannard e Jarod A. Richards
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (joelho_dislocation.pdf, 63 páginas); consultas ao Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (p. 1986, 1989, 1990, 2061, 2063, 2095, 2109, 2110 e 2112). As páginas citadas são as impressas do Campbell; o Rockwood 10 não tem página impressa no arquivo e é citado por capítulo e seção.
+fonte: Capítulo enviado pelo Tales em 16/10/2026; consultas ao Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (p. 1986, 1989, 1990, 2061, 2063, 2095, 2109, 2110 e 2112).
 subtemas: Luxação do joelho e lesões ligamentares; Luxação do joelho; Canto posterolateral; Lesão do ligamento cruzado posterior; Ligamento colateral medial; Vias de acesso ao joelho
 resumo: Artéria poplítea e índice tornozelo-braquial, Schenck, canto posterolateral, cruzado posterior, nervo fibular, luxação irredutível e a ordem da reconstrução: o joelho luxado explicado pelo que a prova cobra.
 ---

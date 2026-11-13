@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19)
 capitulo: Capítulo 87 · Disorders of the Hallux
 autores: Benjamin J. Grear
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulo 87 (Disorders of the Hallux), lido por inteiro na parte de hálux valgo, complicações e hálux varo (p. 3709 a 3784) e na parte de hálux rígido até a artrodese metatarsofalângica (p. 3784 a 3800), com a tabela de COUGHLIN e SHURNAS extraída do PDF; Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 19 (Disorders of the Foot), seção de hálux valgo juvenil (p. 768 a 775). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulo 87 (Disorders of the Hallux), lido por inteiro na parte de hálux valgo, complicações e hálux varo (p. 3709 a 3784) e na parte de hálux rígido até a artrodese metatarsofalângica (p. 3784 a 3800), com a tabela de COUGHLIN e SHURNAS; Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 19 (Disorders of the Foot), seção de hálux valgo juvenil (p. 768 a 775).
 subtemas: Hálux valgo
 resumo: Limites normais (IMA 8 a 9°, HVA 15 a 20°, DMAA até 10 a 15°); acima de 30 a 35° o hálux prona e o abdutor migra para plantar; sesamoide fibular no primeiro espaço; congruente x incongruente; algoritmo (CHEVRON até IMA 15° e HVA 40°, abaixo de 50 anos, 1 mm de translação = 1° de IMA; proximal com HVA > 35° e IMA > 10°; SCARF 11 a 18° e 20 a 40°, com troughing; LAPIDUS no primeiro raio instável; artrodese MTF com IMA > 20° e HVA > 45°); AKIN para o interfalângico e DMAA alto; MITCHELL e chevron-AKIN; homem com início precoce; juvenil com DMAA alto e congruência; recidiva como complicação principal; hálux varo por excesso de ressecção, sesamoidectomia fibular e IMA zerado; hálux rígido (COUGHLIN e SHURNAS, queilectomia, artrodese em 25 a 30° em relação ao metatarso).
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 87 (Disorders of the Hallux) do Campbell's Operative Orthopaedics, 15ª edição (2026), escrito por Benjamin J. GREAR, e na seção de hálux valgo juvenil do capítulo 19 do Tachdjian's Pediatric Orthopaedics, 6ª edição. As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 87 (Disorders of the Hallux) do Campbell's Operative Orthopaedics, 15ª edição (2026), escrito por Benjamin J. GREAR, e na seção de hálux valgo juvenil do capítulo 19 do Tachdjian's Pediatric Orthopaedics, 6ª edição.
 
 O nome engana: **hálux valgo não é uma doença única, é uma deformidade complexa do primeiro raio** (p. 3709). O hálux desvia para fora, o primeiro metatarso desvia para dentro, a cabeça metatarsal escorrega para fora da tipoia dos sesamoides, o hálux gira em pronação, os músculos que deveriam equilibrar a articulação passam a puxá-la para o lado errado, e o resto do antepé paga a conta com dedo em martelo, calo e metatarsalgia de transferência. Quem entende essa cadeia de eventos resolve quase todas as questões sem decorar números soltos, porque cada número que a banca pede (o limite do ângulo intermetatarsal, o ângulo que faz o hálux pronar, a translação do CHEVRON) é só um marco nessa cadeia.
 

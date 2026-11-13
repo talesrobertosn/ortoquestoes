@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries
 autores: Graham J. W. King, Daphne M. Beingessner e J. Whitcomb Pollock
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (cotovelo_deslocado.pdf, 62 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026
 subtemas: Fratura da cabeça do rádio e instabilidade do cotovelo; Instabilidade do cotovelo; Fratura do olécrano; Fraturas do cotovelo e antebraço
 resumo: Estabilizadores, luxação simples, cabeça do rádio, coronoide, tríade terrível, instabilidade posteromedial e ulna proximal: o cotovelo instável explicado pelo que a prova cobra.
 ---

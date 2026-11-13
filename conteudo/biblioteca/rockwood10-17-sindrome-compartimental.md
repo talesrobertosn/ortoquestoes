@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 17 · Acute Compartment Syndrome
 autores: Edward J. Harvey, Mitchell Bernstein e Andrew D. Duckworth
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (sind_compartimental.pdf, 33 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026
 subtemas: Síndrome compartimental
 resumo: Quem tem risco, por que os sinais clássicos falham, o delta P abaixo de 30 mmHg por 2 horas, os compartimentos de cada região, a fasciotomia passo a passo e o relógio das 6 horas.
 ---

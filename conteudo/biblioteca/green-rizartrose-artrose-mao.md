@@ -8,14 +8,14 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)
 capitulo: Capítulo 11 · Treatment of the Osteoarthritic Hand and Thumb
 autores: Peter M. Murray
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 11 (p. 345 a 368) e cap. 5 (p. 155 e 156, teste de ELSON); Campbell's Operative Orthopaedics, 15ª ed., cap. 78 Arthritic Hand (p. 3446 e 3447, 3467 a 3491). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 11 (p. 345 a 368) e cap. 5 (p. 155 e 156, teste de ELSON); Campbell's Operative Orthopaedics, 15ª ed., cap. 78 Arthritic Hand (p. 3446 e 3447, 3467 a 3491).
 subtemas: Rizartrose e artrose da mão
 resumo: Rizartrose: oblíquo anterior profundo (intracapsular, do tubérculo volar do trapézio à base volar ulnar do metacarpo) falha, metacarpo subluxa para dorsal e a metade volar se desgasta (trapézio 3:1); carga de 12 a 20 vezes na pinça; adução do metacarpo com hiperextensão da MCF; grind; ROBERT; EATON I a IV (2 mm e ETT); osteotomia em extensão e reconstrução de EATON e LITTLER nos I e II; trapeziectomia nos III e IV (BURTON e PELLEGRINI e WEILBY com FRC, THOMPSON com ALP); pseudartrose na osteotomia e na artrodese; dedos: BOUCHARD na IFP, HEBERDEN na IFD, erosiva mais na IFD e mais sintomática na IFP; IFP fundida de 30 a 60 graus, MCF do polegar 20 graus.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 11 (Treatment of the Osteoarthritic Hand and Thumb, de Peter M. MURRAY) do Green's Operative Hand Surgery, 7ª edição (2017), complementado pelo capítulo 78 (Arthritic Hand) do Campbell's Operative Orthopaedics, 15ª edição. As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 11 (Treatment of the Osteoarthritic Hand and Thumb, de Peter M. MURRAY) do Green's Operative Hand Surgery, 7ª edição (2017), complementado pelo capítulo 78 (Arthritic Hand) do Campbell's Operative Orthopaedics, 15ª edição.
 
 A artrose da mão tem dois territórios que as provas tratam de forma bem diferente. O primeiro são as articulações dos dedos (IFD, IFP e MCF), onde a banca cobra nomes (HEBERDEN e BOUCHARD), a variante erosiva e, sobretudo, os ângulos e a fixação das artrodeses. O segundo é a base do polegar, a rizartrose, que concentra a maior parte das questões: qual ligamento falha, para onde o metacarpo subluxa, qual metade da articulação se desgasta, o estadiamento de EATON (com o limiar de 2 mm e a escafotrapeziotrapezoidal no estágio IV), a incidência de ROBERT e uma coleção de epônimos cirúrgicos que se diferenciam pelo tendão usado (FRC em BURTON e PELLEGRINI e em WEILBY, ALP em THOMPSON).
 

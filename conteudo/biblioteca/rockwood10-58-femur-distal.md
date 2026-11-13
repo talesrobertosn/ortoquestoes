@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), caps. 59 e 8
 capitulo: Capítulo 58 · Distal Femur Fractures
 autores: Cory A. Collinge e Lydia G. Roward
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (femur_questao_e_resumos.pdf, páginas 41 a 64) Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed.
+fonte: Capítulo enviado pelo Tales em 16/10/2026 Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed.
 subtemas: Fratura do fêmur distal
 resumo: Forças deformantes, lesões associadas, AO 33 e HOFFA, a anatomia do trapézio, placa bloqueada e haste retrógrada, periprotética acima da prótese do joelho e a rigidez.
 ---

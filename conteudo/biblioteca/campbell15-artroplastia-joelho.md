@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 8 · Arthroplasty of the Knee
 autores: Marcus C. Ford, Christopher T. Holland, and William M. Mihalko
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulo 8 lido por inteiro (p. 401 a 470, com as páginas eletrônicas .e1), capítulo 1 (acessos ao joelho, p. 31 e 32), capítulo 2 (medicações antirreumáticas, p. 136 e 137) e capítulo 10 (contraindicações da osteotomia tibial, p. 499). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulo 8 lido por inteiro (p. 401 a 470, com as páginas eletrônicas .e1), capítulo 1 (acessos ao joelho, p. 31 e 32), capítulo 2 (medicações antirreumáticas, p. 136 e 137) e capítulo 10 (contraindicações da osteotomia tibial, p. 499).
 subtemas: Artroplastia total do joelho
 resumo: Contraindicações absolutas (sepse, foco remoto, mecanismo extensor deficiente, recurvato por fraqueza, artrodese indolor); fêmur distal em 5 a 7° de valgo e tíbia perpendicular ao eixo mecânico; rotação femoral externa de 3° em relação aos côndilos posteriores, paralela ao epicondilar e perpendicular ao eixo AP de WHITESIDE, com erro em rotação interna no valgo de côndilo lateral hipoplásico; abertura de 1 a 2 mm; liberações do valgo (trato iliotibial, canto posterolateral, poplíteo, LCL); valgo com flexo e paralisia fibular; incisão mais lateral; ramo infrapatelar do safeno; CCK com poste maior; RAND e AORI; MSIS (fístula e duas culturas); retenção com troca do polietileno só na infecção aguda, S. aureus contraindicação relativa; fratura de patela tipo I conservadora e tipo III com retirada do componente; RORABECK.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 8 (Arthroplasty of the Knee) do Campbell's Operative Orthopaedics, 15ª edição (2026), escrito por FORD, HOLLAND e MIHALKO, com três complementos curtos do mesmo livro: os acessos ao joelho (cap. 1), as medicações antirreumáticas no perioperatório (cap. 2) e as contraindicações da osteotomia tibial (cap. 10). As páginas citadas são as impressas.
+Este resumo segue o capítulo 8 (Arthroplasty of the Knee) do Campbell's Operative Orthopaedics, 15ª edição (2026), escrito por FORD, HOLLAND e MIHALKO, com três complementos curtos do mesmo livro: os acessos ao joelho (cap. 1), as medicações antirreumáticas no perioperatório (cap. 2) e as contraindicações da osteotomia tibial (cap. 10).
 
 A artroplastia total do joelho (ATJ) é uma cirurgia de geometria e de tensão. O cirurgião faz cinco cortes ósseos e depois ajusta as partes moles para que dois espaços, o de **extensão** e o de **flexão**, fiquem **retangulares e do mesmo tamanho**. Quase toda questão de prova sai desse raciocínio: por que o corte femoral distal tem 5 a 7° de valgo, por que o componente femoral gira 3° para fora, por que o valgo com côndilo lateral hipoplásico engana a referência condilar posterior, que estrutura soltar quando o lado lateral está apertado em extensão, o que fazer quando o espaço de flexão sobra.
 

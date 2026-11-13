@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 37 · Humeral Shaft Fractures
 autores: Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (diafise_umero.pdf, 34 páginas; capítulo 37 nas pp. 1 a 33, a p. 34 é o início do capítulo 38 e foi ignorada); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (Fig. 1.117, p. 105), cap. 13 (Fig. 13.21, p. 613) e cap. 62 (p. 2785.e1 e 2788). As páginas citadas são as impressas.
+fonte: Capítulo enviado pelo Tales em 17/10/2026; consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (Fig. 1.117, p. 105), cap. 13 (Fig. 13.21, p. 613) e cap. 62 (p. 2785.e1 e 2788).
 subtemas: Fratura da diáfise do úmero
 resumo: Nervo radial e HOLSTEIN-LEWIS, órtese funcional de SARMIENTO, tolerâncias (20 graus, 30 graus de rotação, 3 cm), indicações de cirurgia e cotovelo flutuante, vias anterolateral e posterior, placa de 4,5 mm com oito corticais, MIPO e o musculocutâneo, haste com bloqueio distal aberto e pseudartrose atrófica.
 ---

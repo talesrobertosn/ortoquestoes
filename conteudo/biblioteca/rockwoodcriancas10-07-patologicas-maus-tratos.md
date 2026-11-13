@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries
 autores: Alexandre Arkader e Karim Masrouha
-fonte: Livro conferido localmente em 27/10/2026, capítulo 7. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela. Ampliado em 01/11/2026 com o cap. 7 relido, o Tachdjian's Pediatric Orthopaedics, 6ª ed., e o Campbell's Operative Orthopaedics, 15ª ed., cap. 38. Em 12/11/2026, Rockwood and Wilkins cap. 29 e Tachdjian cap. 27 (Tabela 27.1).
+fonte: Livro conferido localmente em 27/10/2026, capítulo 7. Ampliado em 01/11/2026 com o cap. 7 relido, o Tachdjian's Pediatric Orthopaedics, 6ª ed., e o Campbell's Operative Orthopaedics, 15ª ed., cap. 38. Em 12/11/2026, Rockwood and Wilkins cap. 29 e Tachdjian cap. 27 (Tabela 27.1).
 subtemas: Maus-tratos
 resumo: Cisto ósseo simples e aneurismático, fibroma não ossificante, displasia fibrosa, osteogênese imperfeita, escorbuto e fraturas nas doenças neuromusculares; nos maus-tratos, KLEINMAN (metafisária clássica, costela posterior, escápula, processo espinhoso, esterno), inventário esquelético abaixo de 2 anos repetido em 2 semanas, equimoses, queimaduras, fêmur e conduta.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 7 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Alexandre Arkader e Karim Masrouha, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo. Como o arquivo do livro não tem página impressa, as referências apontam capítulo, seção, figura e tabela.
+Este resumo é inspirado no capítulo 7 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Alexandre Arkader e Karim Masrouha, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
 
 O capítulo tem duas metades: as **fraturas patológicas** (osso doente, local ou generalizado) e os **maus-tratos**. A banca cobra muito a segunda: a **especificidade das fraturas segundo KLEINMAN**, a lesão metafisária clássica e o tipo mais frequente de maus-tratos.
 
@@ -151,7 +151,7 @@ No exame, **50% dos casos confirmados mostram sinais de abuso anterior**, por is
 | Regra geral | **Nunca interpretar a equimose isolada**: somar história, desenvolvimento, exame e exames |
 !fim
 
-**Queimaduras** aparecem em cerca de 20% dos abusados, mais abaixo de 3 anos, e a **escaldadura** é o tipo abusivo mais frequente, por derramamento ou imersão. O derramamento acidental atinge tronco e parte proximal dos membros superiores, em geral pela frente, e o líquido que escorre desenha uma **ponta de flecha**, mais rasa e estreita para baixo, com respingos ao redor. Na imersão acidental a criança estende as pernas para sair e queima os membros inferiores de modo uniforme, com meia ou luva de margens imprecisas e profundidade variável; na **imersão intencional** ela é baixada na água, **flete quadris e joelhos** e **poupa as fossas poplíteas** e a prega glútea (aspecto de "rosquinha"), com profundidade uniforme e **linha d'água nítida**. Segundo e terceiro graus profundos, bem demarcados e circunferenciais devem levantar suspeita, e todo queimado abaixo de 2 anos merece inventário esquelético, porque a queimadura costuma vir com fraturas de costela antigas. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. de mão, PDF 379), acrescenta as **queimaduras de cigarro** e as **queimaduras bilaterais de mãos e pés em meia e luva**. Fotografe tudo **antes do gesso**, sobretudo antes de uma spica.
+**Queimaduras** aparecem em cerca de 20% dos abusados, mais abaixo de 3 anos, e a **escaldadura** é o tipo abusivo mais frequente, por derramamento ou imersão. O derramamento acidental atinge tronco e parte proximal dos membros superiores, em geral pela frente, e o líquido que escorre desenha uma **ponta de flecha**, mais rasa e estreita para baixo, com respingos ao redor. Na imersão acidental a criança estende as pernas para sair e queima os membros inferiores de modo uniforme, com meia ou luva de margens imprecisas e profundidade variável; na **imersão intencional** ela é baixada na água, **flete quadris e joelhos** e **poupa as fossas poplíteas** e a prega glútea (aspecto de "rosquinha"), com profundidade uniforme e **linha d'água nítida**. Segundo e terceiro graus profundos, bem demarcados e circunferenciais devem levantar suspeita, e todo queimado abaixo de 2 anos merece inventário esquelético, porque a queimadura costuma vir com fraturas de costela antigas. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. de mão), acrescenta as **queimaduras de cigarro** e as **queimaduras bilaterais de mãos e pés em meia e luva**. Fotografe tudo **antes do gesso**, sobretudo antes de uma spica.
 
 O capítulo 7 não discute o fundo de olho, mas o capítulo de clavícula do mesmo Rockwood and Wilkins lista, entre as lesões que acompanham a fratura de clavícula por NAT na criança pequena, **sangramento intracraniano, contusão ocular, hemorragia retiniana**, queimaduras e fraturas de costela, tíbia, úmero e fêmur.
 
@@ -159,7 +159,7 @@ O capítulo 7 não discute o fundo de olho, mas o capítulo de clavícula do mes
 conceito: História inconsistente, alteração neurológica e hemorragia retiniana em criança pequena apontam para trauma craniano abusivo; o abusado tem sintoma neurológico imediato e lesões sentinela.
 como: A prova de R4 de Coluna de Joinville (2010) descreveu criança de 3 anos em coma, história inconsistente e hemorragia retiniana; resposta: abuso infantil.
 armadilha: Aceitar "TCE por queda": queda de pequena altura raramente dá lesão com risco de vida.
-alerta: O capítulo 7 do Rockwood and Wilkins não trata da hemorragia retiniana; ela aparece só no capítulo de clavícula (PDF 1953) entre as lesões associadas ao NAT. O gabarito oficial (`pediatria-0881`) foi mantido.
+alerta: O capítulo 7 do Rockwood and Wilkins não trata da hemorragia retiniana; ela aparece só no capítulo de clavícula entre as lesões associadas ao NAT. O gabarito oficial (`pediatria-0881`) foi mantido.
 !fim
 
 # O osso conta o mecanismo: PIERCE, KING e os ossos longos {radar=confirmado}

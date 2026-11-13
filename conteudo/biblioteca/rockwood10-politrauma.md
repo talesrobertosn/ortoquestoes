@@ -8,14 +8,14 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 14 · Management of the Multiply Injured Patient
 autores: Tejal S. Brahmbhatt e Heather A. Vallier
-fonte: Livros conferidos localmente em 03/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14 inteiro (Management of the Multiply Injured Patient), cap. 18 (MESS, Tabela 18-4), cap. 50 (Injuries Associated With Pelvic Ring Injuries, Signs and Symptoms, Initial Management e Deep Venous Thrombosis/Pulmonary Embolism Prophylaxis), cap. 51 (Mechanisms of Injury e Injuries Associated With Acetabular Fractures), cap. 52 (Injuries Associated With Hip Dislocations) e cap. 26 (Trauma-Induced Coagulopathy); AO Principles of Fracture Management, 3ª ed., cap. 4.1 (pp. 311 a 326); Skeletal Trauma, 5ª ed., caps. 9 e 11 (pp. 291 a 302 e 315 a 326); Campbell's Operative Orthopaedics, 15ª ed., caps. 48, 58, 59 e 61; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 74. As páginas citadas são as impressas; o Rockwood não traz página impressa no PDF e é citado por capítulo e seção.
+fonte: Livros conferidos localmente em 03/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14 inteiro (Management of the Multiply Injured Patient), cap. 18 (MESS, Tabela 18-4), cap. 50 (Injuries Associated With Pelvic Ring Injuries, Signs and Symptoms, Initial Management e Deep Venous Thrombosis/Pulmonary Embolism Prophylaxis), cap. 51 (Mechanisms of Injury e Injuries Associated With Acetabular Fractures), cap. 52 (Injuries Associated With Hip Dislocations) e cap. 26 (Trauma-Induced Coagulopathy); AO Principles of Fracture Management, 3ª ed., cap. 4.1 (pp. 311 a 326); Skeletal Trauma, 5ª ed., caps. 9 e 11 (pp. 291 a 302 e 315 a 326); Campbell's Operative Orthopaedics, 15ª ed., caps. 48, 58, 59 e 61; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 74.
 subtemas: Politrauma e controle de danos
 resumo: ABCDE e mortalidade trimodal (precoce: hematoma epidural, hemopneumotórax, sangramento de extremidades); tríade letal (hipotermia, acidose, coagulopatia); SIRS (T > 38 ou < 36, FC > 90, FR > 20 ou PaCO2 < 32, leucócitos > 12.000 ou < 4.000 ou > 10% de jovens) e IL-6 como marcador; primeiro e segundo golpes; ISS (soma dos quadrados de três regiões, até 75) e NISS; estável, borderline, instável e in extremis; lactato como guia (EAC: pH ≥ 7,25, BE ≥ -5,5, lactato < 4 em 36 h); janela do 5º ao 10º dia; PIC ≤ 20 e PPC > 70; pelve: cinta nos trocânteres, tamponamento só com pelve estabilizada, arteriografia pelo extravasamento na TC; MESS ≥ 7.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 14 (Management of the Multiply Injured Patient) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), costurado com o capítulo 4.1 do AO Principles of Fracture Management, 3ª ed., os capítulos 9 e 11 do Skeletal Trauma, 5ª ed., o Campbell's Operative Orthopaedics, 15ª ed., e o capítulo 74 do HEBERT, 5ª ed. O PDF do Rockwood não traz página impressa, por isso ele é citado por capítulo e seção.
+Este resumo é inspirado no capítulo 14 (Management of the Multiply Injured Patient) do Rockwood and Green's Fractures in Adults, 10ª edição (2025), costurado com o capítulo 4.1 do AO Principles of Fracture Management, 3ª ed., os capítulos 9 e 11 do Skeletal Trauma, 5ª ed., o Campbell's Operative Orthopaedics, 15ª ed., e o capítulo 74 do HEBERT, 5ª ed.
 
 A ideia central: **o politraumatizado morre da fisiologia, não da radiografia**. A placa perfeita no paciente frio, ácido e sangrando é um segundo golpe; a tração por semanas devolve o paciente à pneumonia e à embolia gordurosa. Quem está ressuscitado recebe o cuidado definitivo cedo; quem não está recebe o controle de danos e volta na janela certa. As bancas cobram o ATLS e as causas de morte, a tríade letal e a SIRS, a decisão entre cuidado total precoce e controle de danos, e as lesões que matam ou custam o membro (pelve instável, MESS).
 
@@ -112,7 +112,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 14, seções Clinical
 
 ## As classes da hemorragia
 
-A Tabela 14-2 do Rockwood (classificação do choque hemorrágico no homem de 70 kg) é uma figura no PDF e não pôde ser extraída. As classes do ATLS estão descritas no Skeletal Trauma, 5ª ed. (cap. 9, p. 297):
+A Tabela 14-2 do Rockwood (classificação do choque hemorrágico no homem de 70 kg) é uma figura e não pôde ser transcrita. As classes do ATLS estão descritas no Skeletal Trauma, 5ª ed. (cap. 9, p. 297):
 
 !tabela Classes da hemorragia do ATLS (Skeletal Trauma, 5ª ed., cap. 9, p. 297)
 | Classe | Perda (% da volemia) | Volume | Clínica | Reposição |
