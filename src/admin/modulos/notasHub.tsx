@@ -28,6 +28,8 @@ export function HubNotas({ resumos, recentes, titulo, abrir }: {
   const saldo = saldoNotas(dist.contagem)
   const moda = notaMaisComum(dist.contagem)
   const semanas = useMemo(() => notasPorSemana(recentes, 12), [recentes])
+  // A lista recente tem no máximo 500 notas: as semanas anteriores à nota mais antiga dela ficam incompletas.
+  const limiteLista = recentes.length >= 500 ? Math.min(...recentes.map(r => Date.parse(r.atualizado_em))) : null
   const motivos = useMemo(() => motivosSomados(resumos), [resumos])
   const reescritas = useMemo(() => efeitoReescritas(resumos), [resumos])
   const fas = dist.contagem[8] + dist.contagem[9]
@@ -53,7 +55,7 @@ export function HubNotas({ resumos, recentes, titulo, abrir }: {
         <Regua contagem={dist.contagem} moda={moda} />
       </Painel>
       <Painel titulo="Semana a semana" descricao="Quantas notas chegaram e a média de cada semana (12 semanas). A cor do quadrado é a da média.">
-        <Semanas semanas={semanas} />
+        <Semanas semanas={semanas} desde={limiteLista} />
       </Painel>
     </div>
 
@@ -103,17 +105,18 @@ function Regua({ contagem, moda }: { contagem: number[]; moda: number | null }) 
 }
 
 /** Doze semanas: a coluna é a quantidade, o quadrado embaixo traz a média, na cor da régua. */
-function Semanas({ semanas }: { semanas: ReturnType<typeof notasPorSemana> }) {
+function Semanas({ semanas, desde }: { semanas: ReturnType<typeof notasPorSemana>; desde: number | null }) {
+  const incompleta = (inicio: Date) => desde !== null && inicio.getTime() < desde
   const max = Math.max(1, ...semanas.map(s => s.n))
   if (!semanas.some(s => s.n)) return <p className="a3-mudo">Sem notas nas últimas 12 semanas.</p>
   return <div><div className="nh-semanas">
-    {semanas.map((s, i) => <div key={i} className={'nh-semanas__col' + (i === semanas.length - 1 ? ' nh-semanas__col--atual' : '')} title={`Semana de ${dataCurta(s.inicio)}: ${s.n} notas${s.media !== null ? `, média ${mediaFormatada(s.media)}` : ''}${s.ruins ? `, ${s.ruins} de 5 ou menos` : ''}`}>
+    {semanas.map((s, i) => <div key={i} className={'nh-semanas__col' + (i === semanas.length - 1 ? ' nh-semanas__col--atual' : '') + (incompleta(s.inicio) ? ' nh-semanas__col--incompleta' : '')} title={`Semana de ${dataCurta(s.inicio)}${incompleta(s.inicio) ? ' (incompleta: só as 500 notas mais recentes entram)' : ''}: ${s.n} notas${s.media !== null ? `, média ${mediaFormatada(s.media)}` : ''}${s.ruins ? `, ${s.ruins} de 5 ou menos` : ''}`}>
       <span className="nh-semanas__n">{s.n || ''}</span>
       <span className="nh-semanas__barra" style={{ height: `${(s.n / max) * 100}%` }}>{s.ruins ? <i style={{ height: `${(s.ruins / Math.max(1, s.n)) * 100}%` }} /> : null}</span>
       <span className="nh-semanas__media" style={{ background: s.media === null ? 'transparent' : corDaNota(s.media) }}>{s.media === null ? '·' : mediaFormatada(s.media)}</span>
       <span className="nh-semanas__data">{dataCurta(s.inicio)}</span>
     </div>)}
-  </div><p className="nh-semanas__nota"><i /> parte vermelha da coluna: notas de 5 ou menos</p></div>
+  </div><p className="nh-semanas__nota"><i /> parte vermelha da coluna: notas de 5 ou menos{semanas.some(s => incompleta(s.inicio)) ? '. Colunas tracejadas: semanas incompletas (o painel lê as 500 notas mais recentes).' : ''}</p></div>
 }
 
 /** Dispersão: notas (escala raiz, para os poucos não se amontoarem) × média. Faixas de fundo: abaixo de 6 e 9 ou mais. */
@@ -156,14 +159,15 @@ function Achados({ resumos, dist, moda, semanas, titulo }: { resumos: ResumoNota
   const total = dist.reduce((t, n) => t + n, 0)
   const comMedia = semanas.filter(s => s.media !== null)
   const ultima = comMedia[comMedia.length - 1], anterior = comMedia[comMedia.length - 2]
-  const melhor = [...resumos].filter(r => r.n >= 3).sort((a, b) => Number(b.media) - Number(a.media) || b.n - a.n)[0]
-  const pior = [...resumos].filter(r => r.n >= 3).sort((a, b) => Number(a.media) - Number(b.media) || b.n - a.n)[0]
+  // O melhor só vira modelo se estiver na faixa de sugestão de post; o pior só pede reescrita se tiver alerta.
+  const melhor = [...resumos].filter(r => faixaDaNota(r) === 'post').sort((a, b) => Number(b.media) - Number(a.media) || b.n - a.n)[0]
+  const pior = [...resumos].filter(r => r.n >= 3 && (faixaDaNota(r) === 'prioridade' || faixaDaNota(r) === 'atencao')).sort((a, b) => Number(a.media) - Number(b.media) || b.n - a.n)[0]
   const espalhada = [...resumos].filter(r => r.n >= 3).sort((a, b) => Number(b.desvio) - Number(a.desvio))[0]
   const itens: Array<{ titulo: string; texto: React.ReactNode; tom: 'verde' | 'ouro' | 'claro'; icone: React.ReactNode }> = []
   if (moda && total) itens.push({ titulo: 'Nota mais dada', texto: <><b>{moda}</b>, em {pct(dist[moda - 1], total)}% das notas recentes.</>, tom: 'verde', icone: <Icone nome="estrela" tamanho={18} /> })
   if (ultima && anterior) { const d = (ultima.media ?? 0) - (anterior.media ?? 0); itens.push({ titulo: 'Tendência da semana', texto: <>Média <b>{mediaFormatada(ultima.media ?? 0)}</b>, {Math.abs(d) < 0.05 ? 'igual à semana anterior' : `${d > 0 ? 'subiu' : 'caiu'} ${mediaFormatada(Math.abs(d))} em relação à anterior`}.</>, tom: d >= 0 ? 'verde' : 'ouro', icone: <Icone nome="grafico" tamanho={18} /> }) }
   if (melhor) itens.push({ titulo: 'Comentário mais bem avaliado', texto: <><b>{titulo(melhor.id_questao)}</b>: média {mediaFormatada(melhor.media)} em {melhor.n} notas. Bom modelo e bom post.</>, tom: 'verde', icone: <Icone nome="certo" tamanho={18} /> })
-  if (pior && pior !== melhor) itens.push({ titulo: 'Reescrever primeiro', texto: <><b>{titulo(pior.id_questao)}</b>: média {mediaFormatada(pior.media)} em {pior.n} notas.</>, tom: 'ouro', icone: <Icone nome="lapis" tamanho={18} /> })
+  if (pior) itens.push({ titulo: 'Reescrever primeiro', texto: <><b>{titulo(pior.id_questao)}</b>: média {mediaFormatada(pior.media)} em {pior.n} notas.</>, tom: 'ouro', icone: <Icone nome="lapis" tamanho={18} /> })
   if (espalhada && Number(espalhada.desvio) >= 2.5) itens.push({ titulo: 'Divide opiniões', texto: <><b>{titulo(espalhada.id_questao)}</b>: notas de {espalhada.minima} a {espalhada.maxima}. Vale ler as mensagens.</>, tom: 'claro', icone: <Icone nome="alerta" tamanho={18} /> })
   if (!itens.length) return null
   return <div className="a3-grade a3-grade--3 nh-achados">{itens.map(i => <Achado key={i.titulo} titulo={i.titulo} tom={i.tom} icone={i.icone}>{i.texto}</Achado>)}</div>

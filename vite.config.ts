@@ -43,7 +43,8 @@ function fatiarAcervo(): Plugin {
           try { writeFileSync(caminho, JSON.stringify(JSON.parse(readFileSync(caminho, 'utf8')))) } catch { /* não é JSON válido: fica como está */ }
         }
       }
-      for (const pasta of [acervo, join(acervo, 'temas'), join(acervo, 'comentarios')]) compactar(pasta)
+      // Os baralhos de flashcards também (13/11/2026): 5,5 MB viram 4,7 MB a menos de JSON.parse ao abrir a Cripta.
+      for (const pasta of [acervo, join(acervo, 'temas'), join(acervo, 'comentarios'), join(saida, 'flashcards')]) compactar(pasta)
       const escrever = (pasta: string, dados: Record<string, unknown>) => {
         mkdirSync(join(acervo, pasta), { recursive: true })
         for (const [id, valor] of Object.entries(dados)) {

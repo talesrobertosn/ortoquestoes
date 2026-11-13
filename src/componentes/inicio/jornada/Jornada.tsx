@@ -180,13 +180,12 @@ export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
  */
 export function ConviteInstagram() {
   return (
-    <a className="jn-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me" style={{ '--cena-insta': urlCss('pixel/inicio/cena-manha-960.webp') } as CSSProperties}
-      aria-label={`Siga @${SITE.instagramUsuario} no Instagram: questões comentadas, macetes de prova e o acervo novo (abre em nova aba)`}>
+    <a className="jn-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me" style={{ '--cena-insta': urlCss('pixel/inicio/cena-manha-960.webp') } as CSSProperties}>
       <span className="jn-insta__texto">
         <span className="jn-insta__selo"><Icone nome="instagram" tamanho={14} /> No Instagram</span>
         <strong>Questões comentadas no Instagram</strong>
         <span>No feed, a questão, a resposta e o porquê de cada alternativa. Nos stories, macetes de prova e o acervo novo.</span>
-        <span className="jn-insta__botao"><Icone nome="instagram" tamanho={18} /> Siga @{SITE.instagramUsuario}</span>
+        <span className="jn-insta__botao"><Icone nome="instagram" tamanho={18} /> Siga @{SITE.instagramUsuario}<span className="so-leitor"> (abre em nova aba)</span></span>
       </span>
       <span className="jn-insta__turma" aria-hidden="true">
         <Mascote className="jn-insta__mascote" comportamento="escrevendo" fantasia="nenhuma" falar={false} interativo={false} />

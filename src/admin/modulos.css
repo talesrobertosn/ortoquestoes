@@ -512,6 +512,8 @@
 .nh-semanas__barra { align-self: end; display: flex; flex-direction: column-reverse; min-height: 2px; border-radius: 4px 4px 1px 1px; background: var(--a3-serie-1); overflow: hidden; }
 .nh-semanas__barra i { display: block; background: var(--a3-erro); opacity: 0.85; }
 .nh-semanas__col--atual .nh-semanas__barra { opacity: 0.6; outline: 1.5px dashed var(--a3-serie-1); outline-offset: 1px; }
+.nh-semanas__col--incompleta .nh-semanas__barra { opacity: .45; outline: 1.5px dashed var(--a3-cinza); outline-offset: 1px; }
+.nh-semanas__col--incompleta .nh-semanas__media { opacity: .5; }
 .nh-semanas__media { display: grid; place-items: center; height: 24px; border-radius: 5px; color: #fff; font-size: 10.5px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .nh-semanas__data { font-size: 10px; color: var(--a3-cinza); font-variant-numeric: tabular-nums; }
 .nh-semanas__nota { margin: 10px 0 0; font-size: 11px; color: var(--a3-cinza); display: flex; align-items: center; gap: 6px; }

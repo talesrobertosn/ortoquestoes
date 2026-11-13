@@ -40,7 +40,7 @@ import { alertaDeTempo, montarSessaoNacional, resumoParaEntregar } from '../dado
 import { codigoErroSN, snIniciar } from '../dados/apiSimuladoNacional'
 import { ordemParaRevisao, letraExibida } from '../dados/ordemAlternativas'
 
-import { carregarLetrasAcervo, usarLetrasAcervo } from '../dados/letrasAcervo'
+import { usarLetrasAcervo } from '../dados/letrasAcervo'
 import { lerUltimaExibida, registrarExibida } from '../estado/ordemExibida'
 
 /** Quanto tempo a dica de trocar de questão fica aberta (Tales, 01/11/2026: "só fica aberto por 3 segundos"). */
@@ -1042,8 +1042,8 @@ export function Sessao() {
   )
 }
 
-// Começa a baixar já: a primeira questão só aparece quando se sabe se ela vem em ordem nova.
-void carregarLetrasAcervo()
+// As letras (600 KB) começam a descer quando a sessão abre (usarLetrasAcervo) ou quando a pessoa entra em Treinar.
+// Antes o pedido saía na importação deste arquivo, e a pré-carga do aparelho ocioso o disparava em todas as páginas.
 
 const OPCOES_TELA: Array<[keyof PreferenciasSessao, string, string]> = [
   ['placar', 'Placar da sessão', 'Quantas você respondeu e os acertos seguidos, ao lado da questão.'],
