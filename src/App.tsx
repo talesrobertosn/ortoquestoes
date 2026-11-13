@@ -48,6 +48,7 @@ const RankingCripta = lazy(() => carregadores.RankingCripta().then(({ RankingCri
 const Conquistas = lazy(() => carregadores.Ranking().then(({ Conquistas }) => ({ default: Conquistas })))
 const Termos = lazy(() => carregadores.Termos().then(({ Termos }) => ({ default: Termos })))
 const CondicoesAssinatura = lazy(() => carregadores.CondicoesAssinatura().then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
+const DireitosAutorais = lazy(() => carregadores.DireitosAutorais().then(({ DireitosAutorais }) => ({ default: DireitosAutorais })))
 const Assinatura = lazy(() => carregadores.Assinatura().then(({ Assinatura }) => ({ default: Assinatura })))
 const Conta = lazy(() => carregadores.Conta().then(({ Conta }) => ({ default: Conta })))
 const DetalhesAssinatura = lazy(() => carregadores.DetalhesAssinatura().then(({ DetalhesAssinatura }) => ({ default: DetalhesAssinatura })))
@@ -87,6 +88,7 @@ const TITULOS: Record<string, string> = {
   '/conquistas': 'Conquistas | Orto Questões',
   '/termos': 'Termos de Uso e Privacidade | Orto Questões',
   '/condicoes-assinatura': 'Condições da assinatura | Orto Questões',
+  '/direitos-autorais': 'Direitos autorais e retirada de conteúdo | Orto Questões',
   '/assinatura': 'Planos | Orto Questões',
   '/admin': 'Painel do administrador | Orto Questões',
   '/admin/assinaturas': 'Painel do administrador | Orto Questões',
@@ -174,6 +176,9 @@ function paginaDaRota(rota: Rota): ReactNode {
       break
     case 'condicoes-assinatura':
       pagina = <CondicoesAssinatura />
+      break
+    case 'direitos-autorais':
+      pagina = <DireitosAutorais />
       break
     case 'assinatura':
       pagina = <Assinatura consulta={rota.consulta} />

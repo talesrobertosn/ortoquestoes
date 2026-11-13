@@ -10,7 +10,7 @@ import type { NomeIcone } from '../componentes/Icone'
  * de pagamento) que chegam organizadas no e-mail.
  */
 
-export type MotivoSuporte = 'pagar' | 'assinatura' | 'acesso' | 'questao' | 'dados' | 'outro'
+export type MotivoSuporte = 'pagar' | 'assinatura' | 'acesso' | 'questao' | 'dados' | 'direitos' | 'outro'
 
 export interface Motivo {
   id: MotivoSuporte
@@ -52,6 +52,12 @@ export const MOTIVOS: readonly Motivo[] = [
     dicas: ['O que você quer saber ou pedir'],
   },
   {
+    // Canal de retirada (13/11/2026): pedido de titular de direitos (Termos, cláusula 5.5); página /direitos-autorais.
+    id: 'direitos', titulo: 'Direitos autorais', descricao: 'Pedido de titular para corrigir ou retirar conteúdo.', icone: 'bandeira',
+    exemplo: 'Ex.: sou da editora do livro X, 3ª edição, e peço a retirada da figura que aparece na questão Y.',
+    dicas: ['A obra: título, edição, autor ou editora', 'Onde está no site: o link ou o número da questão ou do resumo', 'Se você é o titular ou fala em nome dele'],
+  },
+  {
     id: 'outro', titulo: 'Sugestão ou outro assunto', descricao: 'Ideia, elogio ou qualquer dúvida.', icone: 'correio',
     exemplo: 'Ex.: seria ótimo poder filtrar as questões por ano da prova.',
     dicas: ['Pode escrever do seu jeito'],
@@ -69,6 +75,7 @@ export function motivoInicial(consulta: URLSearchParams): MotivoSuporte {
   const assunto = consulta.get('assunto')
   if (assunto === 'exclusao-conta') return 'dados'
   if (assunto === 'sincronizacao') return 'acesso'
+  if (assunto === 'direitos-autorais') return 'direitos'
   if (assunto === 'assinatura' || assunto === 'pagar') return assunto
   return 'outro'
 }

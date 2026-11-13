@@ -101,6 +101,7 @@ const PAGINAS_PRE_CARGA: Record<string, string> = {
   flashcards: 'src/paginas/Flashcards.tsx',
   termos: 'src/paginas/Termos.tsx',
   'condicoes-assinatura': 'src/paginas/CondicoesAssinatura.tsx',
+  'direitos-autorais': 'src/paginas/DireitosAutorais.tsx',
   sobre: 'src/paginas/Apoio.tsx',
   projeto: 'src/paginas/Apoio.tsx',
   contato: 'src/paginas/Apoio.tsx',
