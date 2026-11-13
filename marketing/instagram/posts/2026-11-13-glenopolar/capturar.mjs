@@ -66,7 +66,7 @@ await site.listen()
 const BASE = site.resolvedUrls.local[0]
 const navegador = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
 const PASTA = new URL('./img/', import.meta.url).pathname
-const ESCONDER = '.aviso-termos, .aviso-cookies, [class*="AvisoTermos"], [class*="aviso-termos"], [class*="cookie"], [class*="Cookie"], [class*="indique"], vite-error-overlay { display: none !important; }'
+const ESCONDER = '.aviso-termos, .aviso-cookies, [class*="AvisoTermos"], [class*="aviso-termos"], [class*="cookie"], [class*="Cookie"], [class*="indique"], vite-error-overlay, .qz-chip, .qz-origem { display: none !important; }'
 const sessaoAuth = { access_token: `tok-${CONTA}`, refresh_token: 'r', token_type: 'bearer', expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 30 * 24 * 3600, user: { ...usuarioFalso(CONTA), user_metadata: { nome: 'Tales', termos_versao: 999 } } }
 async function contexto(opcoes) {
   const ctx = await navegador.newContext({ locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', ...opcoes })
@@ -90,28 +90,36 @@ async function responder(p) {
   await p.waitForSelector('text=O que o ângulo mede', { timeout: 30_000 })
   await p.addStyleTag({ content: ESCONDER }); await p.waitForTimeout(1200)
 }
-// MacBook: a questão antes de responder (1280 x 800, 2x).
-const m = await contexto({ viewport: { width: 1280, height: 800 }, deviceScaleFactor: 2 })
+// Notebook (1040 x 650, 2x: o cartão ocupa a tela toda): a questão (com zoom, para o enunciado aparecer grande) e o comentário.
+const m = await contexto({ viewport: { width: 1040, height: 650 }, deviceScaleFactor: 2 })
 await m.goto(`${BASE}#/questao/trauma-0263`)
 await m.waitForSelector(`text=${ENUNCIADO}`, { timeout: 30_000 })
 await m.addStyleTag({ content: ESCONDER }); await m.waitForTimeout(1500)
 await m.screenshot({ path: PASTA + 'mac-questao.png' })
-
-// iPhone: telas do comentário (390 x 763 pontos, 3x).
+// iPhone: abre antes de responder no notebook (o Supabase falso é o mesmo).
 const c = await contexto({ viewport: { width: 390, height: 763 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true })
 await c.goto(`${BASE}#/questao/trauma-0263`)
 await c.waitForSelector(`text=${ENUNCIADO}`, { timeout: 30_000 })
 await c.addStyleTag({ content: ESCONDER }); await c.waitForTimeout(1000)
-await c.screenshot({ path: PASTA + 'cel-questao.png' })
 await responder(m)
-
+for (const [nome, texto, aj] of [
+  ['mac-conceito', 'Conceito-chave', -84],
+  ['mac-mede', 'O que o ângulo mede', -84],
+  ['mac-numeros', 'Os números, livro a livro', -84],
+  ['mac-certa', 'Por que a D está certa', -84],
+  ['mac-outras', 'Por que as outras não servem', -84],
+]) { await rolar(m, texto, aj); await m.waitForTimeout(800); await m.screenshot({ path: PASTA + `${nome}.png` }) }
+await m.screenshot({ path: PASTA + 'mac-inteira.png', fullPage: true })
 await responder(c)
-
 for (const [nome, texto, aj] of [
   ['cel-mede', 'O que o ângulo mede', -80],
   ['cel-desenhar', 'Como desenhar, acompanhando a figura', -80],
   ['cel-numeros', 'Os números, livro a livro', -80],
   ['cel-ressalvas', 'As duas ressalvas do Rockwood', -80],
+  ['cel-figura', 'Fonte: Rockwood and Green', -470],
+  ['cel-certa', 'Por que a D está certa', -80],
+  ['cel-outras', 'Por que as outras não servem', -80],
 ]) { await rolar(c, texto, aj); await c.waitForTimeout(800); await c.screenshot({ path: PASTA + `${nome}.png` }) }
+await c.screenshot({ path: PASTA + 'cel-inteira.png', fullPage: true })
 await navegador.close()
 await site.close()
