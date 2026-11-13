@@ -205,7 +205,7 @@ Saber o conteúdo de cada compartimento é o que permite ler o exame: dor ao **e
 
 Três compartimentos, **anterior, posterior e adutor (medial)**, envolvidos pela fáscia lata e separados pelos septos intermusculares **medial e lateral**. O **anterior** (quadríceps, sartório, nervo femoral) é o mais acometido: dor à flexão passiva do joelho, dormência na face medial da perna e do pé, fraqueza da extensão do joelho. O **posterior** (isquiotibiais, nervo isquiático) dá dor à extensão passiva do joelho e fraqueza da flexão, com alteração sensitiva rara; há casos isolados documentados. O **adutor** (adutores, nervo obturatório) é raro.
 
-!questoes central=trauma-0767,trauma-0099,trauma-0419 relacionadas=trauma-0816,trauma-0916,trauma-0433
+!questoes central=trauma-0767,trauma-0099,trauma-0419 relacionadas=trauma-0816,trauma-0916,trauma-0433 treino=trauma-1663
 conceito: A coxa tem três compartimentos (anterior, posterior e adutor), e o anterior é o mais acometido e o local do cateter.
 como: A pergunta do compartimento mais acometido da coxa caiu no TARO 2017 (fratura da diáfise do fêmur), no TEOT 2025 e no SBOT-SP; o TARO 2023 pediu a lista dos compartimentos, e o TARO 2012, qual septo separa medial e posterior (o capítulo só nomeia os septos medial e lateral, e nenhum livro local nomeia um septo posterior da coxa: o Campbell 15, cap. 1 p. 48 e cap. 53 p. 2246, e o Skeletal Trauma 5ª ed., cap. 16 p. 458, só citam o septo intermuscular lateral, que se abre para descomprimir o compartimento posterior).
 armadilha: Compartimento lateral da coxa: não existe como compartimento separado; a incisão lateral é só o acesso.

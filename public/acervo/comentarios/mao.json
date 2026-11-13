@@ -17077,49 +17077,20 @@
   "conferido": false
  },
  "mao-0962": {
-  "conceito": "**Forte suspeita clínica de síndrome compartimental aguda exige descompressão dos compartimentos acometidos, sem uma espera programada que prolongue a isquemia.** A pressão dentro de um espaço fascial limitado reduz a perfusão; com atraso, o músculo pode necrosar e deixar déficit permanente. O tratamento eficaz é a fasciotomia completa.\n\nIsso não torna a medição de pressão inútil. O resumo a recomenda continuamente nos pacientes de risco, especialmente quando o exame é pouco confiável ou os sinais são escassos. O algoritmo, porém, separa esse cenário do paciente com sinais clínicos claros e múltiplos, no qual a cirurgia é urgente. Um exame complementar não deve virar barreira para uma indicação clínica estabelecida.\n\nMedidas iniciais incluem abrir e afastar gesso e algodão, soltar curativos e corrigir hipotensão. Elevar o membro pode diminuir o gradiente de perfusão quando a pressão tecidual está alta; acompanhar pulso não garante que o músculo esteja recebendo fluxo adequado. Analgesia também não trata a causa da pressão.\n\n**Na Biblioteca, leia “Fasciotomia” e o algoritmo do tratamento preferido.** A questão não contrapõe clínica e pressão como métodos rivais; ela pergunta o que fazer quando o quadro já gera forte suspeita de uma emergência isquêmica.",
-  "correta": "**A: fasciotomia dos compartimentos acometidos.** É a conduta destinada a restaurar perfusão e evitar progressão da lesão. A liberação deve ser completa, com inspeção e tratamento do tecido inviável.\n\nMonitorização ajuda na incerteza; não justifica adiar uma descompressão clinicamente indicada.",
+  "conceito": "O enunciado já entrega o diagnóstico: **forte suspeita** de síndrome compartimental aguda do antebraço depois de um trauma. O que a banca quer saber é se você vai agir ou vai procurar um motivo para esperar. Três das quatro opções são formas elegantes de esperar.\n\n**O que está acontecendo dentro do antebraço.** O compartimento é um espaço fechado por fáscia e osso que não cresce. Quando o conteúdo aumenta (sangue da fratura, edema do músculo contundido), a pressão sobe e, como as veias são tubos colapsáveis, a pressão venosa sobe junto; o gradiente entre artéria e veia cai e o fluxo pelo músculo diminui, mesmo com a artéria aberta. É o raciocínio de MATSEN que o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, seção sobre a fisiopatologia), apresenta. O Green's Operative Hand Surgery, 7ª ed. (cap. 51, p. 1765), descreve o mesmo mecanismo como um **ciclo vicioso**: menos perfusão, mais lesão celular, mais extravasamento capilar, mais edema e mais pressão, até a necrose do músculo.\n\n**O relógio.** Os dois livros insistem que o tempo é o que separa uma fasciotomia sem sequela de uma contratura de VOLKMANN:\n\n| Livro | O que diz do tempo |\n|---|---|\n| Rockwood, cap. 17 (Complications) | atraso até a fasciotomia acima de **6 horas** provavelmente causa sequelas significativas; o atraso é a causa isolada de fracasso |\n| Green, cap. 51 (p. 1769 e 1771) | fasciotomia nas primeiras **8 horas** após o diagnóstico reduz o risco de incapacidade permanente; feita nas primeiras **4 horas**, em geral deixa sequela mínima |\n\n**A conduta.** O Rockwood (seção Treatment) chama a fasciotomia de **o tratamento isolado mais eficaz** e diz que, feito o diagnóstico, ela deve ser **urgente**; antes dela, só cabem medidas que não atrasam nada: abrir e afastar gesso e algodão, soltar curativos, corrigir a hipotensão e dar oxigênio. O Green (p. 1768) acrescenta que o membro deve ficar **só na altura do coração**, porque elevar mais reduz a perfusão. E quando a dúvida persiste, o Green é direto (p. 1767): nas situações clínicas duvidosas, a intervenção mais segura é a fasciotomia; na p. 1769 os autores dizem que preferem tratar com descompressão os casos questionáveis de síndrome iminente, se o paciente estiver estável.\n\n**A pegadinha.** Medir a pressão parece a resposta \"científica\". Não é errado medir; é errado condicionar a cirurgia à medida quando a clínica já é forte. O algoritmo do Rockwood separa os dois cenários: **sinais claros e múltiplos, fasciotomia urgente**; poucos ou nenhum sinal num paciente de risco, monitorização contínua e decisão pelo delta P (diastólica menos pressão do compartimento) abaixo de 30 mmHg por mais de 2 horas.\n\n> Na prova: suspeita forte é indicação de fasciotomia completa dos compartimentos acometidos; nada de elevar acima do coração, nada de esperar.\n\nA conduta está na seção \"Fasciotomia\" do resumo, e o algoritmo, em \"O tratamento preferido dos autores\".",
+  "correta": "**A) Realizar fasciotomia nos compartimentos acometidos.** É o tratamento mais eficaz segundo o Rockwood (cap. 17, seção Treatment of Acute Compartment Syndrome), indicado com urgência quando há sinais clínicos claros, e o Green (cap. 51, p. 1767 e 1769) recomenda descompressão mesmo nos casos duvidosos. No antebraço, a liberação começa pelo volar, com incisão até a palma para abrir o túnel do carpo, e o compartimento profundo dos flexores precisa ser visto; a fasciotomia é completa, com a pele aberta em todo o comprimento do compartimento.",
   "incorretas": {
-   "B": "**Medir pressão tem papel importante quando faltam sinais claros ou o exame é inconfiável.** Não é, porém, uma etapa obrigatória que deva atrasar a cirurgia na forte suspeita clínica descrita. A alternativa troca o cenário de vigilância diagnóstica pelo de decisão urgente.",
-   "C": "**Elevação pode reduzir a margem de perfusão, e pulso presente não exclui síndrome.** Assim, o par proposto não garante proteção do músculo e pode retardar a intervenção. O tratamento precisa reduzir a pressão do compartimento, não apenas observar a circulação de grande vaso.",
-   "D": "**Analgesia não descomprime o espaço e esperar doze horas permite progressão da isquemia.** O resumo relaciona o atraso ao fracasso e às sequelas, sem apoiar esse período de observação diante de forte suspeita. Alívio da dor não deve ser confundido com resolução da ameaça tecidual."
+   "B": "**Medir as pressões dos compartimentos para decidir** é a ferramenta certa para outro paciente: o de risco com poucos ou nenhum sinal, ou o que não pode ser examinado (obnubilado, criança, bloqueio regional). Nesse cenário o Rockwood (cap. 17, algoritmo 17-1) indica fasciotomia com delta P abaixo de 30 mmHg por mais de 2 horas, e o Green (p. 1767) mede quando o exame é equívoco. Com forte suspeita clínica, condicionar a cirurgia ao cateter só gasta tempo de isquemia.",
+   "C": "**Elevar o membro e monitorar o pulso** reúne dois erros. A elevação diminui o gradiente arteriovenoso quando a pressão do tecido está alta (MATSEN, no Rockwood, cap. 17), e o Green (cap. 51, p. 1768) manda manter o membro só na altura do coração. E o pulso continua presente na síndrome confirmada, porque a pressão que mata o músculo fica muito abaixo da pressão arterial: pulso palpável não tranquiliza ninguém.",
+   "D": "**Analgesia e espera de 12 horas** é o caminho mais curto para a contratura de VOLKMANN. Foi o próprio VOLKMANN, em 1882, quem estimou que o músculo não sobrevive mais de 6 horas sem fluxo e que 12 horas de enfaixamento apertado bastavam para incapacidade permanente (Rockwood, cap. 17, seção histórica). Além disso, a analgesia mascara o sinal mais precoce, a dor crescente, que o Green (p. 1766) diz atingir o pico entre 2 e 6 horas de isquemia e depois diminuir à medida que o músculo morre."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Fasciotomia; O tratamento preferido dos autores; Por que a pressão mata o músculo; Diagnóstico clínico: por que os sinais chegam tarde."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seções Treatment of Acute Compartment Syndrome, Fasciotomy, Complications e algoritmo 17-1",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 51 (Compartment Syndrome and Volkmann Ischemic Contracture), p. 1765 a 1771",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Fasciotomia",
-      "O tratamento preferido dos autores",
-      "Por que a pressão mata o músculo",
-      "Diagnóstico clínico: por que os sinais chegam tarde"
-     ],
-     "blocos": [
-      "fasciotomia-5f4d677f",
-      "fasciotomia-4de1412f",
-      "o-tratamento-preferido-dos-autores-930f2a36",
-      "o-tratamento-preferido-dos-autores-355d35ed",
-      "por-que-a-pressao-mata-o-musculo-7d5655e4",
-      "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4"
-     ],
-     "sha256": "74181ffce2b8a8b421478f831ef8b9c9ffa624d851460aba07391cb3898e8711",
-     "trechosSha256": "78091af69f55e886fb38685c2ab831d0ba7e3985f4e328fdcb005ada2b5650fa"
-    }
-   ],
-   "questaoSha256": "571baca9131e560f8d819f9e1f73a29987019ac9b81752bba51ff97deb6356a7",
-   "comentarioSha256": "621e4fe5ccad29124e15ee41ea15dccf53063e102f5c307ae38a2a95d46e0b05"
-  }
+  "geradoEm": "2026-11-13",
+  "conferido": false
  },
  "mao-0963": {
   "alerta": "O flexor superficial dos dedos, também flexor dos dedos, costuma ser descrito na camada superficial ou intermediária do compartimento anterior. A resposta da banca considera os flexores profundos (flexor profundo dos dedos e flexor longo do polegar), que ficam no compartimento anterior profundo. O gabarito foi mantido.",
@@ -21627,7 +21598,7 @@
      "blocos": [
       "os-compartimentos-de-cada-regiao-231bd2af"
      ],
-     "sha256": "74181ffce2b8a8b421478f831ef8b9c9ffa624d851460aba07391cb3898e8711",
+     "sha256": "a4693ab9fac8713d7db6b40f85167fed81669b74a7e32740c3abbe32f4d31e9e",
      "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
     }
    ],
@@ -23725,43 +23696,28 @@
   "conferido": false
  },
  "mao-1346": {
-  "conceito": "**A mão tem dez compartimentos na descrição anatômica usada pelo resumo.** São um tenar, um hipotenar, um adutor do polegar, quatro interósseos dorsais e três interósseos palmares. A soma é 1 + 1 + 1 + 4 + 3 = **10**.\n\n| Grupo | Quantidade |\n|---|---|\n| Tenar | 1 |\n| Hipotenar | 1 |\n| Adutor do polegar | 1 |\n| Interósseos dorsais | 4 |\n| Interósseos palmares | 3 |\n\nA pergunta é quantos devem ser **avaliados para possível liberação**, não uma ordem de abrir automaticamente todos por dez incisões. O resumo descreve duas incisões dorsais para alcançar os interósseos e liberação de tenar e hipotenar quando há suspeita ou pressão elevada. Uma via pode alcançar mais de um espaço.\n\nO adutor tem compartimento próprio e não deve ser incluído no tenar apenas por agir no polegar. Da mesma forma, “interósseo” não é um único compartimento: há grupos palmares e dorsais. **Leia “Braço, antebraço e mão”, na Biblioteca, e compare a contagem anatômica com as vias de fasciotomia.** Isso separa número de espaços, número de incisões e indicação de descompressão.",
-  "correta": "**D: dez.** A contagem inclui os sete interósseos e os três compartimentos tenar, hipotenar e adutor. Avaliar todos evita esquecer espaços que podem permanecer sob pressão.\n\nO número não determina dez incisões nem dispensa a avaliação clínica e pressórica de cada região.",
+  "conceito": "A pergunta é de contagem, e a armadilha é contar grupos musculares em vez de espaços fechados por fáscia. A resposta que os dois livros de referência dão é a mesma: **a mão tem 10 compartimentos**.\n\n**Por que a mão tem tantos.** Cada compartimento é um espaço limitado por fáscia, septo e osso, que não se distende quando o músculo incha. Na mão, os metacarpais e as fáscias interósseas criam várias pequenas caixas, e cada uma pode ter sua própria pressão. Por isso, numa suspeita de síndrome compartimental da mão, cada caixa precisa ser avaliada.\n\n**A conta, pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, seção Hand e Tabela 17-11), e pelo Green's Operative Hand Surgery, 7ª ed. (cap. 51, Tabela 51.4, p. 1768):**\n\n| Compartimento | Quantos | Conteúdo |\n|---|---|---|\n| Tenar | 1 | abdutor curto, flexor curto e oponente do polegar |\n| Hipotenar | 1 | abdutor, flexor e oponente do dedo mínimo |\n| Adutor do polegar | 1 | adutor do polegar (duas cabeças) |\n| Interósseos dorsais | 4 | um em cada espaço entre os metacarpais |\n| Interósseos palmares | 3 | na face palmar dos metacarpais |\n| **Total** | **10** | |\n\nO Rockwood descreve os limites: o tenar é cercado pela fáscia tenar, pelo septo tenar e pelo primeiro metacarpal; o hipotenar, pela fáscia e septo hipotenares e pelo quinto metacarpal; os interósseos dorsais ficam entre os metacarpais, com a fáscia interóssea na frente e atrás. Ele também faz uma ressalva fina: os interósseos palmares **provavelmente não são funcionalmente separados** dos dorsais, porque a barreira entre eles não aguenta mais de 15 mmHg. A contagem anatômica, porém, continua 10.\n\n**Na figura**, o corte B da mão média mostra o tenar, o adutor do polegar (AdP), os interósseos (Int.) entre os metacarpais e o hipotenar, cada um com a seta do caminho que o cirurgião usa para chegar até ele. O desenho A mostra que 10 compartimentos não significam 10 incisões.\n\n**Do número à cirurgia.** O Green (p. 1770) é explícito: a mão tem 10 compartimentos separados, **raramente é preciso liberar os 10**, e a avaliação na cirurgia ou a medida da pressão decide a extensão. A técnica dele: liberação estendida do túnel do carpo, que também descomprime o canal de GUYON; duas incisões dorsais, entre o segundo e o terceiro e entre o quarto e o quinto metacarpais, para os interósseos; uma incisão no primeiro espaço dorsal para o primeiro interósseo dorsal e a fáscia dorsal do adutor; incisões separadas para tenar e hipotenar quando necessário. O Rockwood (seção Hand, na fasciotomia) concorda: duas incisões dorsais costumam bastar, e tenar e hipotenar são abertos se houver suspeita clínica ou pressão alta.\n\n> Na prova: mão = 10 (1 + 1 + 1 + 4 + 3). Pé = 9 (MANOLI e WEBER). Perna = 4. Coxa = 3. Antebraço = 3 no Rockwood (volar, dorsal e coxim móvel).\n\nA contagem está na seção \"Braço, antebraço e mão\" do resumo.",
+  "correta": "**D) 10.** Um tenar, um hipotenar, um adutor do polegar, quatro interósseos dorsais e três interósseos palmares, como trazem o Rockwood (cap. 17, seção Hand, Tabela 17-11) e o Green (cap. 51, Tabela 51.4, p. 1768, e texto da p. 1770). Todos precisam ser avaliados, embora raramente seja necessário abrir todos: a medida da pressão e o achado na cirurgia definem quais liberar.",
   "incorretas": {
-   "A": "**Quatro não contempla a mão inteira; é apenas a quantidade de interósseos dorsais.** Faltariam os três palmares e os compartimentos tenar, hipotenar e adutor. A alternativa confunde um subgrupo anatômico com o conjunto a avaliar.",
-   "B": "**Cinco não corresponde à soma dos grupos descritos.** Para chegar à contagem completa, é preciso manter separados os sete interósseos e os três espaços restantes, sem fundir músculos de funções próximas. O capítulo não oferece uma classificação de cinco compartimentos para esta pergunta.",
-   "C": "**Sete corresponde ao total de interósseos, mas deixa três espaços de fora.** Tenar, hipotenar e adutor do polegar precisam entrar na avaliação. O adutor não desaparece da contagem por se relacionar ao mesmo dedo dos músculos tenares."
+   "A": "**4** é o número de interósseos dorsais, um em cada espaço entre os cinco metacarpais, e também o número clássico de compartimentos da perna. Na mão, contar só os dorsais deixa de fora os três palmares, o tenar, o hipotenar e o adutor do polegar; uma avaliação limitada a quatro espaços poderia deixar um compartimento com pressão alta sem liberação.",
+   "B": "**5** não corresponde a nenhuma contagem de compartimentos da mão nos livros. É o resultado de agrupar em vez de contar: tenar, hipotenar, adutor, \"interósseos dorsais\" e \"interósseos palmares\" como se cada grupo fosse uma caixa só. Os interósseos dorsais são quatro compartimentos separados pelos metacarpais (Rockwood, cap. 17, seção Hand).",
+   "C": "**7** é o total de interósseos (4 dorsais e 3 palmares), sem os três compartimentos da musculatura própria do polegar e do dedo mínimo. Também lembra os sete compartimentos que algumas questões propõem para o pé, que na descrição de MANOLI e WEBER são nove (Rockwood, cap. 17, seção Foot). Na mão, esquecer tenar, hipotenar e adutor é exatamente o erro que deixa os músculos da pinça sem descompressão."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seção Hand (anatomia aplicada e fasciotomia), Tabela 17-11 e Fig. 17-13",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 51 (Compartment Syndrome and Volkmann Ischemic Contracture), Tabela 51.4 (p. 1768), Release of the Compartments of the Hand (p. 1770) e Fig. 51.9 (p. 1772)",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Os compartimentos de cada região",
-      "Fasciotomia"
-     ],
-     "blocos": [
-      "os-compartimentos-de-cada-regiao-231bd2af",
-      "fasciotomia-90ee7ca5"
-     ],
-     "sha256": "74181ffce2b8a8b421478f831ef8b9c9ffa624d851460aba07391cb3898e8711",
-     "trechosSha256": "5e785797d6a0ca227fdc9c53138a85106b6736d1dd6e29333a757b9840c8e6a2"
-    }
-   ],
-   "questaoSha256": "3309a1d6f9d6b7f5bf26227c80e3ed7c3f4b90a591fac1ec665909f61abfc308",
-   "comentarioSha256": "a625f97293329b91fe9e2911345a12ab3ebe7baf5547a4cd874d652a694ed400"
-  }
+  "imagens": [
+   {
+    "arquivo": "mao/green7-51-9-z06.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51, Fig. 51.9, p. 1772. A, incisões da fasciotomia da mão: duas dorsais longitudinais entre os metacarpais, uma no primeiro espaço dorsal e as dermotomias mediolaterais dos dedos (a e b); na palma, a liberação estendida do túnel do carpo e as incisões tenar e hipotenar (c e d). B, corte da mão média com as setas que chegam ao tenar, ao adutor do polegar (AdP), aos interósseos (Int.) e ao hipotenar.",
+    "largura": 746,
+    "altura": 1354
+   }
+  ],
+  "geradoEm": "2026-11-13",
+  "conferido": false
  },
  "mao-1347": {
   "conceito": "A tríade terrível do cotovelo é a soma de **luxação do cotovelo, fratura da cabeça do rádio e fratura do coronoide**, e foi HOTCHKISS quem deu nome ao padrão. A questão pede a ordem do reparo, e a ordem só faz sentido depois de entender como o cotovelo se desmonta.\n\n**Como o cotovelo luxa.** O Green's Operative Hand Surgery, 7ª ed. (cap. 22, p. 815), descreve a luxação como uma ruptura sequencial e previsível, o círculo de HORII: a lesão **começa no lado lateral e avança pela frente e por trás até o lado medial**. O complexo colateral lateral é uma das primeiras estruturas a falhar, em geral por avulsão do epicôndilo lateral; a banda anterior do colateral medial é a última, e o cotovelo pode luxar com ela íntegra. Quando a energia é maior, além das partes moles quebram a cabeça do rádio e o coronoide.\n\n**Por que quase toda tríade é cirúrgica.** O coronoide fraturado, **de qualquer tamanho**, aumenta muito a chance de instabilidade aguda e crônica e de artrose. Com raras exceções (fragmentos pequenos, redução concêntrica mantida, paciente capaz de fletir ativamente), **a tríade é operada** (Green, p. 820).\n\n**A ordem: de dentro para fora.** MCKEE e colaboradores publicaram o \"protocolo padrão\": **coronoide e cápsula anterior, depois cabeça do rádio, depois colateral lateral** (Green, p. 818). O Green generaliza a regra: primeiro a estabilidade óssea da incisura semilunar, depois a cabeça do rádio e o contato radiocapitelar, por último os ligamentos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, p. 2806), chama isso de **reparo do profundo para o superficial**. Antes de tudo, o cotovelo luxado é reduzido de imediato.\n\n| Tempo | O que se faz (Green, cap. 22, p. 818 a 821; Campbell, cap. 62, p. 2806) |\n|---|---|\n| Antes | redução da luxação |\n| 1 | coronoide e cápsula anterior (sutura transóssea, parafuso ou placa) |\n| 2 | cabeça do rádio: fixação ou prótese, nunca ressecção isolada |\n| 3 | colateral lateral reinserido no ponto isométrico |\n| Se persistir instável | avaliar o colateral medial e, por fim, fixador externo articulado |\n\n**Os detalhes que sustentam a ordem.** Pela via lateral, quando a cabeça do rádio vai ser substituída, a retirada dela abre a janela para o coronoide. O fio da sutura do coronoide é passado por dois túneis a partir da borda subcutânea da ulna, mas **só é amarrado depois que a prótese da cabeça está no lugar**. A prótese não é superdimensionada: a superfície fica no máximo 1 mm acima do canto da incisura sigmoide menor. E a cabeça do rádio **nunca é ressecada sem substituição** num cotovelo que luxou (p. 819 a 821).\n\nA sequência e a comparação com o padrão em varo posteromedial estão na seção \"A tríade terrível\" do resumo.",
@@ -25830,48 +25786,20 @@
   "conferido": false
  },
  "mao-1469": {
-  "conceito": "**Dor desproporcional é um sintoma típico e sugestivo no paciente alerta, mas não é um teste isolado capaz de excluir síndrome compartimental.** A pressão elevada compromete a perfusão muscular e pode gerar dor de repouso e ao estiramento passivo. O resumo ressalva a baixa sensibilidade dos achados clínicos, especialmente quando o paciente não consegue relatar sintomas de forma confiável.\n\nParestesia e paralisia devem preocupar, mas são tardias; esperar déficit motor para agir pode significar aguardar lesão estabelecida. O pulso também costuma estar presente, porque a ameaça começa na microcirculação antes de exigir oclusão de grande vaso.\n\nHá dois cenários distintos no algoritmo: paciente de risco com poucos sinais, que precisa de monitorização contínua e avaliação do delta P, e paciente com sinais claros e múltiplos, que precisa de fasciotomia urgente. Não se exige exame complementar em todos os casos como pré-condição para cirurgia.\n\nA operação deve deixar as incisões abertas, com revisão em cerca de 48 horas e fechamento posterior em condições apropriadas. **Leia “Diagnóstico clínico” e “A ferida: aberta, revisão em 48 horas”, na Biblioteca.** A aula une reconhecimento, decisão e proteção da descompressão, sem transformar melhora aparente da ferida em autorização para fechá-la sob tensão.",
-  "correta": "**A: dor desproporcional é típica e sugestiva.** É frequentemente o primeiro sintoma no paciente acordado. O valor do achado está em levantar suspeita e guiar avaliação, sem ser usado sozinho para excluir a síndrome quando ausente.\n\nO contexto e a confiabilidade do exame determinam a necessidade de monitorização ou intervenção urgente.",
+  "conceito": "Quatro afirmativas sobre síndrome compartimental, uma de cada fase: suspeita, diagnóstico, cirurgia e curativo. Só uma descreve o que os livros dizem; as outras três invertem o tempo dos sinais ou a regra da ferida.\n\n**Por que a dor vem primeiro.** O músculo isquêmico dói antes de o nervo deixar de conduzir e muito antes de a artéria fechar. Por isso, no paciente acordado, o primeiro sinal é a **dor desproporcional à lesão**, profunda, constante, que pede analgésico cada vez mais forte, e a **dor ao estiramento passivo** dos músculos do compartimento. O Green's Operative Hand Surgery, 7ª ed. (cap. 51, p. 1766, Tabela 51.2), diz que, na maioria das séries, a dor é **o achado mais precoce e mais confiável**, e que a dor ao estiramento passivo é o achado **mais consistente**. Ele avisa também que a dor atinge o pico entre **2 e 6 horas** de isquemia e depois diminui, à medida que o músculo necrosa: o paciente que chega tarde dói menos, não mais.\n\n**O contraponto do Rockwood.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, seção Clinical Diagnosis), mantém a dor como primeiro sintoma no paciente alerta, mas mostra os números: na Tabela 17-5, dor e dor ao estiramento têm sensibilidade de **19%** e especificidade de até **97%**; parestesia, 13% e 98%; paresia, 13% e 97%. Na revisão de ULMER, um sinal positivo dava menos de **26%** de chance de síndrome, e para passar de 90% eram precisos três achados, sendo o terceiro a paresia. Os dois livros não se contradizem: a dor é o sintoma típico e sugestivo, e é por ela que a suspeita começa; o Rockwood só lembra que, sozinha, ela falha muito, por isso monitora a pressão nos pacientes de risco.\n\n| Achado | Quando aparece | O que vale |\n|---|---|---|\n| Dor desproporcional | precoce, no paciente alerta | típica e sugestiva; sensibilidade baixa |\n| Dor ao estiramento passivo | precoce | a mais consistente no Green |\n| Parestesia | tardia | sensibilidade 13% |\n| Paralisia | tardia | lesão instalada, mau prognóstico |\n| Ausência de pulso | tardia ou lesão vascular | não exclui quando o pulso está presente |\n\n**Diagnóstico sem exame obrigatório.** O Green (p. 1765) afirma que o diagnóstico é **principalmente clínico**; a pressão se mede quando o exame é duvidoso (p. 1767). O algoritmo do Rockwood segue a mesma lógica: com sintomas e vários sinais, fasciotomia urgente; a monitorização serve ao paciente de risco sem sinais claros ou que não pode ser examinado.\n\n**A ferida fica aberta.** Rockwood (seção Management of Fasciotomy Wounds): as incisões **nunca** são fechadas primariamente, porque isso pode manter a pressão alta; revisão em cerca de 48 horas. Green (p. 1771): todas as incisões ficam abertas, porque o músculo incha mais depois que a perfusão melhora.\n\nOs sinais estão na seção \"Diagnóstico clínico: por que os sinais chegam tarde\" do resumo; a ferida, em \"A ferida: aberta, revisão em 48 horas\".",
+  "correta": "**A) Dor desproporcional é o sintoma mais típico e sugestivo.** É o primeiro sintoma no paciente acordado, isquêmica e desproporcional à lesão aparente (Rockwood, cap. 17, seção Clinical Diagnosis), e o Green (cap. 51, p. 1766) a chama de achado mais precoce e mais confiável na maioria das séries. A ressalva do Rockwood é a sensibilidade baixa da dor isolada, o que não tira dela o papel de sinal que dispara a suspeita.",
   "incorretas": {
-   "B": "**Fechar as incisões no mesmo tempo pode manter ou recriar pressão.** O edema não desaparece automaticamente após abrir a fáscia. A fonte mantém a ferida aberta e programa revisão, fechando depois somente com músculo viável e condições adequadas.",
-   "C": "**Paralisia é sinal tardio de síndrome estabelecida e mau prognóstico, não uma referência de reconhecimento inicial.** Esperá-la pode deixar a isquemia avançar até lesão irreversível. Sua presença exige atenção, mas sua ausência não garante segurança.",
-   "D": "**Exames complementares não são condição obrigatória para toda indicação de fasciotomia.** A monitorização é valiosa na dúvida e no paciente de risco sem exame confiável; sinais claros e múltiplos exigem descompressão urgente. A alternativa generaliza uma etapa diagnóstica que não deve atrasar uma cirurgia já indicada clinicamente."
+   "B": "**Fechar as incisões no mesmo tempo cirúrgico sempre que possível** contraria os dois livros. O Rockwood (cap. 17, seção Management of Fasciotomy Wounds) diz que a fasciotomia nunca é fechada primariamente, porque isso pode manter a pressão elevada, e só fecha depois da revisão de 48 horas com todo o músculo viável. O Green (cap. 51, p. 1771) deixa todas as incisões abertas, porque o músculo incha mais depois da reperfusão; na mão, só a incisão do túnel do carpo é candidata a fechamento primário retardado.",
+   "C": "**Paralisia no início do quadro** inverte a cronologia. Paralisia é sinal tardio de síndrome estabelecida, com lesão irreversível, e paralisia antes da fasciotomia é mau prognóstico (Rockwood, cap. 17, seção Clinical Diagnosis). O Green (Tabela 51.2, p. 1766) a classifica como achado tardio e pouco confiável; a fraqueza precoce, quando existe, pode ser só dor impedindo o movimento. Esperar paralisia para operar é esperar a necrose.",
+   "D": "**Exigir exame complementar junto do exame físico para indicar a cirurgia** transforma uma ferramenta em barreira. O Green (cap. 51, p. 1765) diz que o diagnóstico é principalmente clínico e reserva a medida da pressão para o exame equívoco (p. 1767). O Rockwood indica fasciotomia urgente com sintomas e vários sinais (algoritmo 17-1) e usa a monitorização contínua no paciente de risco com poucos sinais ou que não pode ser examinado; nesse paciente, sim, a pressão decide."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Diagnóstico clínico: por que os sinais chegam tarde; O tratamento preferido dos autores; Fasciotomia."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seções Clinical Diagnosis (Tabela 17-5), Management of Fasciotomy Wounds e algoritmo 17-1",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 51 (Compartment Syndrome and Volkmann Ischemic Contracture), p. 1765 a 1767 (Tabela 51.2) e p. 1771",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Diagnóstico clínico: por que os sinais chegam tarde",
-      "O tratamento preferido dos autores",
-      "Fasciotomia"
-     ],
-     "blocos": [
-      "diagnostico-clinico-por-que-os-sinais-chegam-tar-a352bc84",
-      "diagnostico-clinico-por-que-os-sinais-chegam-tar-a181af0b",
-      "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
-      "o-tratamento-preferido-dos-autores-930f2a36",
-      "o-tratamento-preferido-dos-autores-355d35ed",
-      "fasciotomia-7a3f42f7"
-     ],
-     "sha256": "74181ffce2b8a8b421478f831ef8b9c9ffa624d851460aba07391cb3898e8711",
-     "trechosSha256": "4e3f93f8da0782917766ff2b40779a9ace7ff2864a47f2a685c9e363e3b5eba1"
-    }
-   ],
-   "questaoSha256": "fed928c327c145eb79fb615c7d26dc25588512867a42cdbece67c998b0232e55",
-   "comentarioSha256": "8c2c2da97f1967d8551790156f3287bb630230f990ec7e0473ee059dd1a3bd60"
-  }
+  "geradoEm": "2026-11-13",
+  "conferido": false
  },
  "mao-1470": {
   "conceito": "A USP-SP montou uma questão de \"assinale a correta\" que mistura três assuntos: quem tem gatilho, o risco da infiltração e a classificação. A afirmação certa é a de epidemiologia, e vale entender por que diabetes e artrite reumatoide entram na conta.\n\n**Primário e secundário.** O Green separa duas populações (Green's Operative Hand Surgery, 7ª ed., cap. 56, p. 1908). O gatilho **primário**, o mais comum, aparece em **mulher de meia-idade saudável**, 2 a 6 vezes mais que no homem, com pico entre 55 e 60 anos (p. 1907). O **secundário** surge em **diabetes, gota, doença renal, artrite reumatoide e outras doenças reumáticas**, e tem prognóstico pior tanto com tratamento conservador quanto com cirurgia. O Campbell's Operative Orthopaedics, 15ª ed., lista entre os fatores das tenossinovites estenosantes os movimentos repetitivos, o **diabetes**, a **AR**, a gravidez e o trauma (cap. 81, p. 3535).\n\n**O tamanho do risco no diabético.** A incidência ao longo da vida é de **2,2%** nos não diabéticos acima de 30 anos e chega a **10%** nos diabéticos insulinodependentes (Green, p. 1908). O diabético também responde menos à infiltração: 50% na série de GRIGGS (44% no insulinodependente), 49% contra 76% na de STAHL, que viu mais tipo difuso e mais dedos acometidos (Tabela 56.1, p. 1909).\n\n**Na AR o mecanismo pode ser outro.** Até um quarto dos gatilhos do reumatoide não vem da A1: o **FDP fica preso pela sinovite na decussação do FDS** (quiasma de CAMPER). HELAL descreveu o sinal: o paciente não flete a IFD quando o examinador segura a IFP em flexão (Green, p. 1904 e 1908). Daí a importância de não tratar todo gatilho reumatoide como um gatilho primário.\n\n**O que a infiltração arrisca.** Ruptura de tendão após corticoide existe, mas como **relato raro**: o FPL quatro anos depois de duas injeções, o FDS e o FDP um ano depois de duas de triancinolona, e a ruptura de várias polias com corda de arco após uma série de injeções (GYURICZA). Por isso não se injeta dentro do tendão (Green, p. 1909). A infiltração é o primeiro tratamento da maioria, não um recurso para quem não pode operar.\n\nOs fatores de risco estão na seção \"Dedo em gatilho do adulto: mecanismo e paciente\" do resumo, e a escala na seção \"Classificação de QUINNELL modificada por GREEN\".",

@@ -60,7 +60,7 @@ A **patela** é o **maior sesamoide**, com **faceta lateral maior** e **medial m
 | cabeça da fíbula | bíceps, LCF, popliteofibular, arqueado, fabelofibular | colo com o nervo fibular |
 !fim
 
-!questoes central=joelho-0212
+!questoes central=joelho-0212 treino=joelho-0343
 conceito: O platô medial é côncavo e o lateral é convexo e mais alto (Rockwood, cap. 62); no lado medial o fêmur é uma roda no plano, no lateral uma roda sobre cúpula, por isso a estabilidade depende de ligamentos e meniscos.
 como: O TARO 2012 comparou o platô lateral com o medial pedindo altura e curvatura.
 armadilha: Inverter a curvatura e marcar o lateral como côncavo, pensando no menisco lateral, que cria a concavidade sobre o platô convexo.
@@ -228,7 +228,7 @@ A figura do platô visto de cima, com as áreas de fixação pintadas, é uma pe
 Fonte: Skeletal Trauma: Basic Science, Management, and Reconstruction, 5ª ed. (2015), cap. 61, Fig. 61-4, p. 1908. Platô tibial visto de cima, com a frente no alto: inserções do menisco medial (MM, na frente e atrás), do LCA, do menisco lateral (LM) e do LCP na borda posterior; na periferia, os colaterais, o bíceps e o semimembranáceo; em verde, a parte do platô lateral que o menisco não cobre.
 !fim
 
-!questoes central=joelho-0240
+!questoes central=joelho-0240 treino=joelho-0351
 conceito: Na vista superior do platô, o LCP é a fixação mais posterior, abaixo da linha articular; o LCA e a raiz anterior do menisco lateral ficam lado a lado à frente da eminência; as raízes do medial são as mais anterior e a mais posterior entre os meniscos.
 como: A prova mostrou a vista superior da tíbia com duas setas e pediu as estruturas que se inserem em cada área.
 armadilha: Confundir a área do LCP com a do corno posterior do menisco medial, que fica logo à frente dele, ou a do LCA com a do corno anterior do menisco medial.
