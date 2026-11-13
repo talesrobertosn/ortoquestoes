@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-13-supracondiliana
-versao: 4
+versao: 5
 titulo: Fratura supracondiliana do úmero na criança
 especialidade: pediatria
 acesso: gratis
@@ -114,7 +114,7 @@ Começa-se por um **AP verdadeiro do úmero distal** (o AP com o cotovelo a 90 g
 
 - **Coxim gorduroso posterior.** Pode ser o único sinal. Em 34 crianças com o coxim elevado e sem fratura visível, 53% tinham supracondiliana, 26% ulna proximal, 12% côndilo lateral e 9% colo do rádio.
 - **Linha umeral anterior.** No perfil verdadeiro, deve **cruzar o capítulo**. A ideia antiga de que passa sempre no terço médio não se sustentou: abaixo de 10 anos ela passa no terço médio só em 52%, e abaixo de 4 anos é tão comum no terço anterior quanto no médio (Herman); a partir de 5 anos deve passar pelo centro (Ryan). Na fratura em extensão, o capítulo fica **atrás** da linha. A ampulheta do úmero distal deve estar levemente inclinada para a frente; ajuda a ver o tipo II.
-- **Ângulo de BAUMANN** (umerocapitelar). Formado pelo eixo do úmero (no capítulo, a perpendicular ao eixo) e a linha da fise do côndilo lateral; normal de **9 a 26 graus**, regra prática de **pelo menos 10 graus**. Varia entre observadores (um em cinco mediu mais de 7 graus diferente). **Diminuído em relação ao outro lado indica varo** ou cominuição medial.
+- **Ângulo de BAUMANN** (umerocapitelar). Formado entre a linha da fise do côndilo lateral e o eixo do úmero; normal de **9 a 26 graus**, regra prática de **pelo menos 10 graus**. A 10ª edição é inconsistente na linha de referência: o texto do capítulo 14 (seção das radiografias) diz que o ângulo é traçado ao longo do **eixo longo da diáfise**, mas a legenda da figura 14-11 o descreve entre a **perpendicular ao eixo** e a fise. O capítulo 13 (seção Anteroposterior Landmarks) explica a origem da confusão: Acton e McNally acharam três técnicas diferentes nos livros-texto e recomendaram medir sempre entre o eixo longo do úmero e a fise do capítulo, como BAUMANN descreveu, chamando-o de ângulo diáfise-fise. Na prova, o que importa é usar sempre a mesma técnica e comparar com o outro lado. Varia entre observadores (um em cinco mediu mais de 7 graus diferente). **Diminuído em relação ao outro lado indica varo** ou cominuição medial.
 
 !figura 13-13
 Ângulo de BAUMANN: entre a linha perpendicular ao eixo longo da diáfise do úmero e a linha da fise do côndilo lateral; a diminuição do ângulo pode indicar cominuição medial.
@@ -324,7 +324,7 @@ armadilha: 120 graus: é a flexão do tratamento antigo sem fios, que a fixaçã
 
 ## Qual acesso
 
-- **Anterior (o preferido):** incisão **transversa de 4 a 5 cm** acima e paralela à prega do cotovelo, no nível da fratura. Entra pelo periósteo e braquial já rompidos (não desestabiliza), mostra a **artéria braquial e o mediano** e deixa cicatriz estética que não limita a extensão. Pode ser estendida para medial e proximal (seguindo artéria e mediano) ou lateral e distal. Passos: afastar o braquial, achar o feixe acima e abaixo do foco, soltá-lo, tirar o periósteo interposto (um descolador ajuda), reduzir e fixar como na fechada, reparar a artéria se preciso e **liberar os compartimentos do antebraço** se houver revascularização.
+- **Anterior (o preferido):** incisão **transversa de 5 a 8 cm** (na 10ª edição; a 9ª falava em 4 a 5 cm) acima ou na fossa cubital, no nível da fratura. Entra pelo periósteo e braquial já rompidos (não desestabiliza), mostra a **artéria braquial e o mediano** e deixa cicatriz estética que não limita a extensão. Pode ser estendida para medial e proximal (seguindo artéria e mediano) ou lateral e distal. Passos: afastar o braquial, achar o feixe acima e abaixo do foco, soltá-lo, tirar o periósteo interposto (um descolador ajuda), reduzir e fixar como na fechada, reparar a artéria se preciso e **liberar os compartimentos do antebraço** se houver revascularização.
 - **Lateral ou lateral e medial:** tradicionais, resultados equivalentes ao anterior numa série de 26.
 - **Posterior: não recomendado.** Mais perda de movimento, mais instabilidade (abre o periósteo posterior íntegro) e, **sobretudo, osteonecrose da tróclea** por lesão da irrigação terminal posterior.
 
@@ -388,7 +388,7 @@ armadilha: Esperar 10 a 15 minutos e retirar os fios: são passos do algoritmo d
 
 # Síndrome compartimental {radar=confirmado}
 
-É rara, **0,1% a 0,5%** das supracondilianas, mas é a complicação que termina em **contratura isquêmica de VOLKMANN**. Os **cinco Ps** (dor, palidez, ausência de pulso, parestesia, paralisia) são **maus indicadores na criança**. Bae: o **aumento da necessidade de analgésico** foi o sinal mais sensível e precoce. O capítulo resume nos **três As: ansiedade, agitação e aumento da necessidade de analgésico**, além da resistência à mobilização passiva dos dedos e da dor que cresce muito. A síndrome pode vir **com ou sem lesão da braquial** e **com o pulso radial presente** (palpável ou ao Doppler).
+É rara, **0,1% a 0,5%** das supracondilianas, mas é a complicação que termina em **contratura isquêmica de VOLKMANN**. Os **cinco Ps** (dor, palidez, ausência de pulso, parestesia, paralisia) são **maus indicadores na criança**. Bae: o **aumento da necessidade de analgésico** foi o sinal mais sensível e precoce. O capítulo resume nos **três As: ansiedade, agitação e aumento da necessidade de analgésico**, os mesmos do capítulo 6 da 10ª edição (Compartment Syndrome in Children, seção Diagnosis), que descreve a ansiedade como inquietação e a agitação como choro, além da resistência à mobilização passiva dos dedos e da dor que cresce muito. A síndrome pode vir **com ou sem lesão da braquial** e **com o pulso radial presente** (palpável ou ao Doppler).
 
 ## Quem tem mais risco
 

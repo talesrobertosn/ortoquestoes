@@ -1,6 +1,6 @@
 ---
 id: rockwood10-61-luxacao-joelho
-versao: 6
+versao: 7
 titulo: Luxação do joelho e lesão multiligamentar
 especialidade: trauma
 acesso: gratis
@@ -243,7 +243,7 @@ armadilha: Sóleo: não entra no defeito capsular que o capítulo descreve, que 
 
 ## Função
 
-O cruzado posterior dá a maior parte da restrição à translação posterior em todos os ângulos e **95%** dela entre 30° e 90°. É restritor **secundário** do varo (só aumenta o varo se o canto também estiver cortado), do valgo e das rotações. Um detalhe que a prova pode usar: num estudo em cadáver, o **ligamento poplíteo oblíquo** foi o principal restritor ligamentar da **hiperextensão**; cortá-lo aumentou a hiperextensão tanto quanto, ou mais que, cortar os dois cruzados juntos. A ordem entre os cruzados está no Campbell 15 (cap. 50, p. 2095): o posterior só freia a hiperextensão **depois da ruptura do cruzado anterior**.
+O cruzado posterior dá a maior parte da restrição à translação posterior em todos os ângulos e **95%** dela entre 30° e 90°. É restritor **secundário** do varo (só aumenta o varo se o canto também estiver cortado), do valgo e das rotações: cortar só o cruzado posterior aumenta **levemente** a rotação externa a **30° e a 90°** e a rotação interna a 90°. O aumento grande da rotação externa, máximo a 90°, é o da lesão **combinada** do cruzado posterior com o canto posterolateral, base do teste do dial. Um detalhe que a prova pode usar: num estudo em cadáver, o **ligamento poplíteo oblíquo** foi o principal restritor ligamentar da **hiperextensão**; cortá-lo aumentou a hiperextensão tanto quanto, ou mais que, cortar os dois cruzados juntos. A ordem entre os cruzados está no Campbell 15 (cap. 50, p. 2095): o posterior só freia a hiperextensão **depois da ruptura do cruzado anterior**.
 
 !questoes relacionadas=joelho-0186,joelho-0228 treino=joelho-0358
 conceito: Na hiperextensão, o cruzado posterior é restritor secundário: pelo Campbell 15 (cap. 50, p. 2095), ele só passa a segurar a hiperextensão depois da ruptura do cruzado anterior; o Rockwood destaca o ligamento poplíteo oblíquo, expansão do semimembranáceo, como o principal restritor ligamentar.
@@ -403,7 +403,7 @@ Depois da redução, os autores liberam o arco de movimento cedo e planejam as r
 
 O nervo fibular comum é extremamente vulnerável porque também está **preso**: em cima, no **colo da fíbula**, e embaixo, no **septo intermuscular**. A lesão é quase sempre por **tração**, ao longo de um segmento longo do nervo, e se associa sobretudo à **lesão do canto posterolateral**. Fica **profundo e posterior ao tendão do bíceps** e contorna a cabeça da fíbula **1,5 a 2 cm abaixo** da ponta do estiloide, no colo.
 
-- Frequência: paralisia fibular em cerca de **25%** em grandes séries; lesão neurológica em geral **até 40%**; lesão completa motora e sensitiva em **19%** em algumas séries. Numa amostra de 357 joelhos multiligamentares, 19% tiveram paralisia nervosa, com **pior arco final** e menor retorno ao trabalho.
+- Frequência: paralisia fibular em cerca de **25%** em grandes séries; lesão neurológica em geral **até 40%** (o Campbell 15, cap. 50, p. 2111, dá 10% a 40%); quando a luxação rompe o **cruzado posterior e o canto posterolateral juntos**, o Campbell 15 cita lesão do fibular em **até 45%** (mesma página); lesão completa motora e sensitiva em **19%** em algumas séries. Numa amostra de 357 joelhos multiligamentares, 19% tiveram paralisia nervosa, com **pior arco final** e menor retorno ao trabalho.
 - Fatores de risco: **sexo masculino**, **índice de massa corporal alto** e **fratura da cabeça da fíbula**.
 - Recuperação: cerca de **metade** se recupera, a maioria das parciais. Na série da Mayo (27 pacientes), **38%** das paralisias completas recuperaram dorsiflexão contra a gravidade, contra **83%** das parciais. Numa revisão de 214 paralisias, **38,4%** das completas tiveram recuperação funcional (força de pelo menos 3) e **87,3%** das parciais recuperaram força plena. **Idade mais jovem** foi o único fator preditivo de recuperação.
 
@@ -490,7 +490,7 @@ O capítulo divide em **emergente** (vaso, compartimento, irredutível, exposta)
 
 - **Precoce é a recomendação** quando não há urgência: dá tempo de acompanhar o vaso, o edema baixar, fazer a ressonância, planejar e montar a equipe. A janela preferida do autor sênior é **14 a 28 dias**, porque a cápsula já cicatrizou o bastante para a artroscopia não extravasar líquido para a perna.
 - **Alça de balde desviada** não deixa fazer exercícios de arco antes da cirurgia e deve ser tratada logo.
-- **Tardia (mais de 4 semanas):** pele ou edema ruins, reparo vascular ou lesões associadas que impedem a reconstrução precoce. E uma indicação específica: **cruzados rotos com o colateral medial avulsionado do fêmur**, que tem altíssima chance de **cicatrizar em 6 a 8 semanas**; depois, reconstroem-se só os cruzados.
+- **Tardia (mais de 4 semanas):** pele ou edema ruins, reparo vascular ou lesões associadas que impedem a reconstrução precoce. E uma indicação específica: **cruzados rotos com o colateral medial avulsionado do fêmur**, que tem altíssima chance de **cicatrizar em 6 a 8 semanas**; depois, reconstroem-se só os cruzados. A nuança: o capítulo fala do **ligamento** desinserido do fêmur, mostrado na ressonância coronal com o espaço medial aberto (Fig. 61-22), sem fragmento ósseo. A **avulsão óssea**, femoral ou tibial, é outra história: pelo consenso de 2021 sobre o canto posteromedial (adiante), vai para cirurgia **aguda**, assim como a lesão tipo Stener na tíbia.
 
 A literatura sobre o momento é contraditória. Uma revisão mostrou cirurgia precoce com melhor Lysholm e mais IKDC bom ou excelente (**47% contra 31%**); outra, mais instabilidade anterior, mais perda de flexão acima de 10° e mais manipulações no grupo agudo. A metanálise de 2022 (14 estudos, **1.172 pacientes**) mostrou que a reconstrução precoce (menos de 3 semanas) teve **menos lesão de menisco e cartilagem** e Lysholm maior, **sem diferença de artrofibrose**, atribuída à reabilitação moderna com movimento precoce. As definições variam (tardio já foi mais de 3, 4 ou 6 semanas), e há viés: quem foi operado tarde em geral operou porque continuava com sintomas. O estudo randomizado STAR deve responder melhor. A conclusão do capítulo: com os dados atuais, a **cirurgia precoce** dá a melhor chance de bom resultado, mas lesões associadas podem obrigar a esperar.
 
