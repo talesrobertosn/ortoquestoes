@@ -39,7 +39,7 @@ O AP precisa ser **verdadeiro**. A rotação da tíbia muda a posição aparente
 O ponto de entrada correto fica medial à espinha tibial lateral no AP e logo à frente da superfície lateral no perfil, à frente das estruturas importantes do joelho.
 !fim
 
-!questoes treino=trauma-1706
+!questoes relacionadas=trauma-0732 treino=trauma-1706
 conceito: O ponto de entrada ideal fica logo medial à espinha tibial lateral num AP verdadeiro, conferido pela borda lateral do planalto bissectando a fíbula.
 como: A banca cobra o erro (ponto medial e valgo); a gêmea pede o ponto certo e o controle da imagem.
 armadilha: Logo medial à espinha medial: é o ponto que a patela impõe na via parapatelar medial e que dá valgo.
@@ -312,7 +312,7 @@ armadilha: Espiral com fíbula intacta: é a A1.1; a B2.1 é cunha.
 
 A **OTA-OFC** pontua de 1 a 3 cinco atributos (**pele, músculo, artéria, contaminação e perda óssea**), com confiabilidade moderada a excelente e melhor previsão de complicações e amputação; soma **acima de 10** sugere pouca chance de salvar o membro, ainda sem confirmação prospectiva. Toda exposta, de qualquer grau, tem mais infecção, pseudartrose, consolidação viciosa e reoperação que a fechada.
 
-!questoes central=trauma-0139 treino=trauma-1711
+!questoes central=trauma-0139 relacionadas=trauma-0723,trauma-1212 treino=trauma-1711
 conceito: Lesão arterial isolada com pé bem perfundido não é IIIC; a fratura segmentar de alta energia é IIIA qualquer que seja o tamanho da ferida.
 como: O TARO 2015 classificou uma fratura com exposição de 3 cm e lesão isolada da artéria tibial anterior (tipo II, contra IIIA, IIIB e IIIC).
 armadilha: IIIC: exige reparo para revascularizar, não apenas lesão arterial.
@@ -371,7 +371,7 @@ O HEBERT (cap. 67, Figs. 67.5 e 67.6) traz outros números da experiência de SA
 
 Outros autores não reproduziram esses números: limitação do tornozelo e do subtalar e pseudartrose de até 40%; numa revisão sistemática, 32% de consolidação viciosa e 4,1% de pseudartrose com o tratamento fechado. Nos estudos comparativos, a haste venceu: **BONE** (99 pacientes) teve pseudartrose de **2% contra 10%**, consolidação em **18 contra 26 semanas** e melhor função, embora 26 de 47 tenham voltado ao centro cirúrgico para retirar a haste; **HOOPER** randomizou e **interrompeu o estudo** por julgar antiético continuar o tratamento fechado (27% de retardo ou pseudartrose no grupo fechado, menos tempo de afastamento com a haste). Uma metanálise de 13 ensaios mostrou menos consolidação viciosa, pseudartrose e retardo com qualquer cirurgia (placa, haste fresada ou não), e a análise de custo favoreceu a haste fresada pela volta mais rápida ao trabalho.
 
-!questoes central=trauma-0890,trauma-1097 relacionadas=trauma-0896,trauma-1170,trauma-1156 treino=trauma-1713,trauma-1236,conceitos-basicos-0362,conceitos-basicos-0365
+!questoes central=trauma-0890,trauma-1097 relacionadas=trauma-0896,trauma-1170,trauma-1156,trauma-1002 treino=trauma-1713,trauma-1236,conceitos-basicos-0362,conceitos-basicos-0365
 conceito: O método funcional de SARMIENTO se apoia na pressão hidráulica das partes moles; com fíbula íntegra, a complicação típica é a deformidade angular (varo). Os limites são menos de 5 graus de varo ou valgo e menos de 10 a 12 mm de encurtamento.
 como: O TARO 2010 e o TARO 2018 perguntaram, com o mesmo texto, a complicação mais comum com fíbula íntegra (deformidade angular, contra pseudartrose, rigidez subtalar e encurtamento); o TARO 2013 o princípio do tratamento funcional (integridade das partes moles, contra integridade da fíbula, imobilização do joelho e dois pontos). Uma prova sem ano perguntou até onde vai a borda do gesso PTB (polo inferior, para estabilidade rotacional).
 armadilha: Integridade da fíbula: é o fator que piora o resultado, não o princípio do método.
@@ -411,7 +411,7 @@ O capítulo 18 do Rockwood relativiza até essa lista. Ele mantém a amputação
 
 **LEAP:** sem diferença funcional entre salvar e amputar; cerca de metade dos pacientes dos dois grupos com incapacidade duradoura; custo ao longo da vida **três vezes maior na amputação** (prótese). Preditores de mau resultado: reinternação por complicação, pobreza, falta de seguro, baixa autoconfiança, fumo, litígio, pouco apoio social e baixa escolaridade. Num estudo, 92% dos salvos preferiam a perna salva. **Técnica:** preferir **abaixo do joelho**; **não fechar na primeira cirurgia** (a zona de lesão evolui por dias); desbridamentos seriados; retalhos não convencionais com a pele que sobreviver (figura 63-35); tala em **extensão** contra a contratura em flexão; prótese a partir de cerca de 6 semanas do fechamento.
 
-!questoes central=trauma-1093 relacionadas=trauma-0824,trauma-0435,trauma-0061,trauma-1183 treino=trauma-1712
+!questoes central=trauma-1093 relacionadas=trauma-0824,trauma-0435,trauma-0061,trauma-1183,trauma-1216 treino=trauma-1712
 conceito: São indicações absolutas de amputação a isquemia quente acima de 6 horas, o membro preso só por ponte de pele e a reconstrução que põe a vida em risco; o MESS soma energia, isquemia, choque e idade, mas escore alto não prevê amputação.
 como: O TARO 2013 e o TARO 2012 fizeram quase a mesma pergunta (MESS de sete ou mais, lesão vascular com seis horas ou mais, lesão do fibular no IIIC, neuropatia do diabético). O TARO 2023 perguntou o que o MESS leva em conta (isquemia e idade).
 armadilha: Lesão do nervo fibular no IIIC: não é indicação absoluta.
