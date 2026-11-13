@@ -4,7 +4,7 @@ Refeito a pedido do Tales: é propaganda do comentário, não aula. Mostra o que
 no maior volume possível; o enunciado aparece uma vez; nenhuma etiqueta. Modelo padrão (verde).
 
 - Story 1 e feed 1: a questão no notebook (o enunciado aparece uma vez).
-- Story 2 e feed 3: as alternativas no celular (por que a certa está certa e por que as outras não servem).
+- Story 2 e feed 3: três iPhones: a figura do Rockwood (Fig. 33-7, com a fonte) no meio, a certa e as outras alternativas dos lados.
 - Feed 2: o texto denso no notebook (o que o ângulo mede, como desenhar, o que acontece quando fecha).
 - Story 3 e feed 4: o notebook com o texto mais denso e a tabela livro a livro (Rockwood, Campbell, Skeletal Trauma), e "Treine grátis".
 
