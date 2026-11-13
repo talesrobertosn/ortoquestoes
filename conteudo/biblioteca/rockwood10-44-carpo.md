@@ -404,7 +404,7 @@ Garcia-Elias propôs cinco perguntas: o escafossemilunar dorsal está íntegro? 
 
 A tabela original de Andersson e Garcia-Elias (44-17) tem sete estágios e separa a translação ulnar (índice de descobertura do semilunar anormal, estágio V), a deformidade irredutível (VI) e a cartilagem lesada (VII); a tabela de tratamento (44-19) não tem o passo da translação ulnar e chama de V a deformidade irredutível e de VI a que já tem artrose. O que a prova pede é o encaixe dos primeiros quatro.
 
-!questoes central=mao-0240,mao-0777 relacionadas=mao-1209 treino=mao-1687
+!questoes central=mao-0240,mao-0777 relacionadas=mao-1209 treino=mao-1687,mao-1783
 conceito: No Garcia-Elias, a dissociação irreparável com subluxação rotatória redutível do escafoide e cartilagem íntegra é o estágio IV e pede reconstrução com enxerto, como a tenodese de três ligamentos.
 como: A prova de Ortopedia e o INTO 2023 usaram o mesmo enunciado: um pediu a técnica, o outro o estágio. A PUC-SP 2023 pediu a definição do estágio 3; essa prova não tem gabarito no acervo, e o capítulo define o estágio III como ligamento irreparável **sem** desalinhamento.
 armadilha: Reparo ligamentar: só serve quando o ligamento ainda é reparável (estágio II).
@@ -478,7 +478,7 @@ Mayfield mostrou que a instabilidade progride **em volta do semilunar**, a pedra
 
 > Na prova: **I escafossemilunar, II capitato, III lunopiramidal, IV semilunar luxado**. A luxação perilunar com o semilunar no lugar é o III; a luxação do semilunar é o IV.
 
-!questoes central=mao-0056,mao-0299,mao-0354,mao-1037,mao-0590,mao-1000,mao-0018 relacionadas=mao-0776,mao-0606 treino=mao-1689,mao-1690
+!questoes central=mao-0056,mao-0299,mao-0354,mao-1037,mao-0590,mao-1000,mao-0018 relacionadas=mao-0776,mao-0606,mao-1192 treino=mao-1689,mao-1690
 conceito: Mayfield progride de radial para ulnar em volta do semilunar: I escafossemilunar ou escafoide, II capitato, III lunopiramidal (luxação perilunar), IV luxação do semilunar.
 como: É o assunto mais repetido dessa parte: TARO 2013, TARO 2016, SBOT-SP, CET-PR, UFG 2020 e UFG 2021 pediram o estágio pelo ligamento, pela lesão ou ao contrário. O TARO 2018 cobrou o mecanismo da fratura-luxação perilunar (desvio ulnar e supinação intercarpal). O INTO 2023 perguntou em que estágio aparece o VISI (III, quando cai o lunopiramidal). O TARO 2007 pediu o estágio da luxação do semilunar; essa prova não tem gabarito no acervo, e o livro dá o IV.
 armadilha: Capitato-semilunar no estágio III: é o II.
