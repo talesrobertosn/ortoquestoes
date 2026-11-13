@@ -306,7 +306,7 @@ As três indicações relativas principais são **obesidade** (o ponto anterógr
 
 **Resultados.** Consolidação semelhante à anterógrada (89% e 88% numa série; 100% nas duas num ensaio de 69); a anterógrada consolidou cerca de 4 semanas antes num ensaio de 100. **Dor no joelho** foi de 36% na retrógrada contra 9% na anterógrada, e **dor no quadril** de 10% contra 4%, numa série retrospectiva; num ensaio, a dor no joelho foi igual.
 
-!questoes central=trauma-0885,trauma-0083,trauma-0898 treino=trauma-1662,trauma-1639,trauma-1530
+!questoes central=trauma-0885,trauma-0083,trauma-0898 relacionadas=trauma-1720 treino=trauma-1662,trauma-1639,trauma-1530
 conceito: A retrógrada serve ao obeso, à gestante, à fratura distal e às lesões do mesmo lado (colo, acetábulo, patela, tíbia); é contraindicada quando o joelho não dá acesso (patela baixa, flexão limitada) e na subtrocantérica; entra com o joelho a 35 a 50 graus.
 como: O TARO 2010 perguntou a contraindicação da retrógrada (patela baixa, com gravidez, bilateralidade e obesidade como distratores); o TARO 2021, a vantagem no obeso (achar o ponto de entrada); uma prova sem ano, a flexão do joelho para o ponto de entrada (35 a 50 graus).
 armadilha: Gravidez, bilateralidade ou obesidade como contraindicação: são indicações.
