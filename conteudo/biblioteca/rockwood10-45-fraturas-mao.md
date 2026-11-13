@@ -80,7 +80,7 @@ O deslocamento na fratura de Bennett é conduzido principalmente pelo abdutor lo
 
 A Rolando é a versão de **maior energia**: o traço é em **Y ou T**, a fratura é **articular completa** (nenhuma parte da superfície continua presa à diáfise) e há mais cominuição. A força deformante principal continua sendo o **abdutor longo do polegar**.
 
-!questoes central=mao-0741,mao-0910 relacionadas=trauma-0177 treino=mao-1717
+!questoes central=mao-0741,mao-0910 relacionadas=trauma-0177,mao-0872 treino=mao-1717
 conceito: A Rolando é a fratura intra-articular cominutiva da base do primeiro metacarpo, em Y ou T, sem continuidade entre a superfície articular e a diáfise.
 como: IAUPE 2025 e UFG 2019 pediram a definição; a UFG pôs como distratores a diáfise em abdução e o fragmento medial "instável" da Bennett.
 armadilha: "Na Bennett, a diáfise se desloca em abdução": ela aduz, pelo adutor do polegar.

@@ -329,7 +329,7 @@ Para a pergunta "qual teste certifica uma patologia articular do quadril", o STI
 - **Rolamento passivo** (log roll): rotação interna e externa passiva do fêmur com a perna estendida ou levemente fletida; diferença entre lados alerta para **frouxidão, derrame ou desarranjo intra-articular** (Tabela 22.7: trauma, derrame, sinovite). O Netter chama de teste de rolagem e liga a dor à artrite.
 - **Dial test**: modificação do rolamento para a **frouxidão capsular**; roda-se a perna internamente e solta-se; rotação externa **maior que 45 graus em relação à vertical** é positiva, com a ressalva de que a anteversão femoral influencia o resultado (p. 332).
 
-!questoes central=quadril-0069
+!questoes central=quadril-0069 relacionadas=mao-1257
 conceito: O teste de THOMAS avalia a contratura em flexão do quadril, com a lombar fixada pela flexão do outro quadril; o sinal do C indica dor intra-articular; o teste de impacto anterior usa adução e rotação interna; o OBER em extensão aponta o trato iliotibial (ou o tensor), e o glúteo máximo é testado em flexão.
 como: Uma prova de Ortopedia pediu a afirmação correta sobre o exame do quadril, com distratores no sinal do C, na rotação do teste de impacto e na posição do OBER.
 armadilha: Aceitar o impacto anterior com rotação externa ou o OBER em extensão como teste do glúteo máximo.

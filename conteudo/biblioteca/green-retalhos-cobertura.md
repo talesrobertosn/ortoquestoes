@@ -194,7 +194,7 @@ No membro superior, vários músculos já foram usados como retalhos pediculados
 
 Os pedículos dos músculos livres mais usados estão na Tabela 45.1 do Green: **grácil** pela **circunflexa femoral medial**, **reto abdominal** pela **epigástrica inferior profunda**, **grande dorsal** e **serrátil** pela **toracodorsal** (cap. 45, p. 1576).
 
-!questoes central=mao-0715 relacionadas=mao-1127,mao-1826,mao-1847,mao-1467
+!questoes central=mao-0715 relacionadas=mao-1127,mao-1826,mao-1847,mao-1467,mao-0883,mao-0716
 conceito: MATHES e NAHAI: I tensor da fáscia lata, II grácil, III glúteo máximo (dois dominantes), IV sartório (segmentar), V grande dorsal; nos tipos I, II e V o dominante sustenta o músculo inteiro; grácil pela circunflexa femoral medial e reto pela epigástrica inferior profunda.
 como: O IAUPE 2025 pediu o tipo com dois dominantes; a PUC-SP 2021, o exemplo do tipo IV; o ENARE de cirurgia da mão 2022, a sequência dos tipos 1, 2 e 3 e o tipo do sóleo; a USP-SP 2024, uma lista de pedículos musculares.
 armadilha: Trocar o tipo III (dois dominantes) pelo V (um dominante e segmentares) ou pôr o grande dorsal como tipo II.
@@ -419,7 +419,7 @@ A **circunflexa escapular**, 1º ramo da subescapular, passa pelo **espaço tria
 
 O **grande dorsal** vem da **toracodorsal**, continuação da subescapular; artéria de 1 a 2,5 mm, pedículo de 11 a 16 cm; nasce das seis torácicas inferiores, fáscia toracolombar e crista ilíaca posterior; aborda-se pela borda **anterior**, divide-se distal e medialmente, disseca-se de distal para proximal; o pedículo pode incluir a **subescapular até a axilar**; drenos por 10 a 14 dias (cap. 44, p. 1561; cap. 45, p. 1598 a 1602). Cicatriz axilar (dissecção axilar, mastectomia) contraindica (cap. 44, p. 1563). O **serrátil**: três fatias **inferiores** pela **toracodorsal**, seis superiores pela **torácica lateral** (p. 1603). O **reto abdominal** tem **dois pedículos**, epigástrica superior e inferior profunda; livre pela inferior, pedículo de 5 a 7 cm (p. 1604).
 
-!questoes central=mao-1173 relacionadas=mao-0663,mao-0804,mao-1151,mao-1117,mao-1214,mao-0846,mao-1287,mao-1450,mao-1147,mao-1152,mao-1178
+!questoes central=mao-1173 relacionadas=mao-0663,mao-0804,mao-1151,mao-1117,mao-1214,mao-0846,mao-1287,mao-1450,mao-1147,mao-1152,mao-1178,mao-0699
 conceito: Escapular transverso, parascapular descendente; grande dorsal pela toracodorsal; serrátil inferior também pela toracodorsal; reto com dois pedículos.
 como: FMRP-USP 2026, INTO 2023 e 2026, PUC-SP 2021 a 2023 e USP-SP 2024 e 2025.
 armadilha: Dizer que a toracodorsal vem da supraescapular.
@@ -430,7 +430,7 @@ alerta: A `mao-1214` está sem gabarito; o livro sustenta D. A `mao-0846` també
 
 O **ALT** vem do **ramo descendente da circunflexa femoral lateral** (da femoral profunda); WEI achou **87% musculocutâneas** e 13% septocutâneas; inerva-se pelo **cutâneo femoral lateral** (Green, cap. 45, p. 1597). O **temporoparietal** é fáscia ultrafina pelos vasos **temporais superficiais**, boa superfície de deslizamento sobre tendões (p. 1604 a 1605). O **côndilo femoral medial** vem da **genicular descendente** ou da **genicular superior medial** (cap. 46, p. 1625 aprox.).
 
-!questoes central=mao-0802 relacionadas=mao-0474,mao-0856,mao-0885,mao-1459,mao-1418,mao-0483,mao-0658
+!questoes central=mao-0802 relacionadas=mao-0474,mao-0856,mao-0885,mao-1459,mao-1418,mao-0483,mao-0658,mao-0803
 conceito: ALT pelo ramo descendente da circunflexa femoral lateral; temporoparietal pela temporal superficial; côndilo femoral medial pela genicular descendente ou superior medial.
 como: INTO 2023, UFG 2017, Einstein 2026, FMRP-USP 2026 e USP-SP 2024.
 armadilha: Achar que as perfurantes do ALT são em maioria septocutâneas.

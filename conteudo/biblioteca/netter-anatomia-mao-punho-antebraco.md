@@ -200,7 +200,7 @@ No antebraço, Thompson divide os músculos em **anterior** (superficial: pronad
 
 As origens do grupo móvel não são iguais, e a prova gosta da diferença. O Green's Operative Hand Surgery, 7ª edição (cap. 18, p. 698), mostra que o **braquiorradial** e o **extensor radial longo do carpo** nascem da **crista supracondiliana lateral** do úmero, enquanto o **extensor radial curto do carpo** sai do **epicôndilo lateral**, na massa extensora comum, junto com o extensor dos dedos, o extensor ulnar do carpo e a parte proximal do ancôneo, logo atrás da origem do complexo ligamentar lateral, com o qual se mistura.
 
-!questoes central=mao-0394 relacionadas=mao-0104,mao-0027,mao-0049,mao-0410,mao-0094,mao-0171,mao-0570,mao-0029,mao-0167,ombro-cotovelo-0320,mao-0408,mao-0317,ombro-cotovelo-0129 treino=mao-2559,mao-2563,mao-1265,mao-1266,mao-1267,mao-1268,mao-1269,mao-1273,mao-1277,mao-1280,mao-1281
+!questoes central=mao-0394 relacionadas=mao-0104,mao-0027,mao-0049,mao-0410,mao-0094,mao-0171,mao-0570,mao-0029,mao-0167,ombro-cotovelo-0320,mao-0408,mao-0317,ombro-cotovelo-0129,mao-0818 treino=mao-2559,mao-2563,mao-1265,mao-1266,mao-1267,mao-1268,mao-1269,mao-1273,mao-1277,mao-1280,mao-1281
 conceito: Seis compartimentos dorsais, com o ELP sozinho no III, contornando LISTER; o compartimento móvel do antebraço é braquiorradial, ERLC e ERCC, liberado pela incisão dorsal.
 como: A SBOT-SP pediu em que compartimentos ficam o ERCC, o EI, o ED e o EDM; o TEOT 2021 mostrou o segundo compartimento; o TARO 2018 cobrou o coxim móvel e o TARO 2017, o intervalo da via de HENRY; TARO 2021, TARO 2024, TARO 2025 e TEOT 2025 pediram em imagens os pronadores, o flexor ulnar do carpo e a camada de cada um; a Ortopedia, a origem do supinador e do pronador quadrado e os músculos do dorso do antebraço.
 armadilha: Pôr os extensores radiais no primeiro compartimento, ou o extensor longo do polegar junto do extensor dos dedos.
@@ -256,7 +256,7 @@ Os interósseos nascem dos metacarpais vizinhos e são todos do **ulnar**. O mne
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10, eFig. 10.5, p. 338.e4. Os interósseos vistos pela palma (A) e pelo dorso (B): os palmares, de uma cabeça só, ficam na face ulnar do segundo metacarpal e na face radial do quarto e do quinto; os dorsais nascem dos dois metacarpais de cada espaço (bipenados), com a cabeça superficial e a profunda, esta formando a banda lateral; o médio não tem interósseo palmar.
 !fim
 
-!questoes central=mao-0084 relacionadas=mao-0549,mao-0630,mao-0313,mao-0417,mao-0166,mao-0442,mao-0169,mao-0540 treino=mao-2560,mao-1643,mao-1644,mao-1645,mao-1646,mao-1647,mao-1648,mao-1649,mao-1650,mao-1651,mao-1652,mao-1653,mao-1654,mao-1655,mao-1656,mao-1657,mao-1658,mao-1659,mao-1660
+!questoes central=mao-0084 relacionadas=mao-0549,mao-0630,mao-0313,mao-0417,mao-0166,mao-0442,mao-0169,mao-0540,mao-0877 treino=mao-2560,mao-1643,mao-1644,mao-1645,mao-1646,mao-1647,mao-1648,mao-1649,mao-1650,mao-1651,mao-1652,mao-1653,mao-1654,mao-1655,mao-1656,mao-1657,mao-1658,mao-1659,mao-1660
 conceito: Lumbrical nasce no FPD e entra na banda lateral: flete a MF e estende a IFP; 1 e 2 unipenados e do mediano, 3 e 4 bipenados e do ulnar; interósseos são DAB e PAD.
 como: O TARO 2014 perguntou as ações dos lumbricais; a SBOT-SP e o TARO 2009, quais músculos são bipenados; várias imagens do TEOT e do TARO pediram interósseos, lumbricais e o adutor do polegar.
 armadilha: Confundir os lumbricais bipenados (3 e 4) com os interósseos dorsais, que também são bipenados, ou trocar a inervação dos lumbricais radiais.

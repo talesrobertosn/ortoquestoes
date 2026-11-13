@@ -54,7 +54,7 @@ O punho é uma articulação composta: **20 articulações** e **15 ossos** (rá
 
 O escafoide é o osso diferente. O capítulo de fraturas do carpo (Green, cap. 16, p. 589) diz que ele é o **único osso do carpo que une as fileiras proximal e distal** e age como um **tirante** ("tie-rod"). Essa é a ideia de GILFORD que as provas cobram: o escafoide como **elo** entre as duas fileiras. Sem esse elo, a fileira proximal colapsa; é por isso que fratura do escafoide e lesão escafossemilunar acabam no mesmo DISI.
 
-!questoes central=mao-0345
+!questoes central=mao-0345 relacionadas=mao-0258
 conceito: O escafoide é o único osso do carpo que faz a ponte entre as fileiras proximal e distal e age como tirante; é o elo da teoria de GILFORD.
 como: O CET-PR perguntou qual osso pertence às duas fileiras e serve de conexão segundo GILFORD.
 armadilha: Marcar o capitato, que é o centro de rotação do punho, ou o semilunar, que é a chave da coluna central, mas nenhum dos dois atravessa a mediocárpica.
@@ -446,7 +446,7 @@ O capítulo de DAVIS no Green (cap. 31, p. 1023) abre com uma advertência: tran
 | abdutor curto do polegar | 3,7 | 1,1 | alvo da oponentoplastia |
 !fim
 
-!questoes central=mao-0631
+!questoes central=mao-0631 relacionadas=mao-1197
 conceito: Os extensores do punho são sinérgicos aos flexores dos dedos: a extensão do punho acompanha a flexão dos dedos na preensão, e por isso um flexor do punho é fácil de treinar para estender os dedos.
 como: O TARO 2006 afirmou, em certo ou errado, que os extensores do punho são sinérgicos aos flexores dos dedos.
 armadilha: Pensar em sinergia anatômica (grupos do mesmo lado) em vez de funcional; quem fecha a mão estende o punho.

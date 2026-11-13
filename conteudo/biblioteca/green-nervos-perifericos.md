@@ -394,7 +394,7 @@ As prioridades (p. 1159): no pan-plexo, **1) flexão do cotovelo, 2) estabilidad
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 34, Fig. 34.28, p. 1173. Transferência de LEECHAVENGVONGS: A, incisão posterior no braço; B, axilar no espaço quadrilateral e radial com os ramos do tríceps no intervalo triangular; C, o ramo da cabeça longa do tríceps levado à divisão anterior do axilar; D, sutura direta sem tensão.
 !fim
 
-!questoes central=mao-0437 relacionadas=mao-0004,mao-0445,mao-0557,mao-0986,mao-0888,mao-0254,mao-0887,mao-0147
+!questoes central=mao-0437 relacionadas=mao-0004,mao-0445,mao-0557,mao-0986,mao-0888,mao-0254,mao-0887,mao-0147,mao-0722
 conceito: OBERLIN leva fascículo posteromedial do ulnar ao ramo do bíceps quando C8 e T1 estão preservados; LEECHAVENGVONGS leva a cabeça longa do tríceps à divisão anterior do axilar, no espaço quadrilateral; a flexão do cotovelo vem primeiro.
 como: O TARO 2020 e 2025 pediram o doador e o autor de OBERLIN; o Einstein 2026, a indicação; a UFG 2017 e 2020, o fascículo e o espaço; uma prova de Ortopedia, LEECHAVENGVONGS e a ordem de prioridade.
 armadilha: Trocar ulnar por radial ou mediano, posteromedial por anterolateral, cabeça longa por lateral ou medial, ou pôr o ombro antes do cotovelo.

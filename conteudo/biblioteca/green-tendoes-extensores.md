@@ -221,7 +221,7 @@ KLEINERT e VERDAN classificaram as lesões até a zona 8, no antebraço; DOYLE a
 
 Na zona T-V do Campbell estão o **EPL, o EPB e o APL**, e o **nervo radial superficial** corre risco. É por isso que a lesão do extensor do polegar associada a lesão dos tendões do 1º compartimento é típica da **zona V**: é lá que o EPL, vindo do 3º compartimento, e o APL e o EPB, do 1º, estão próximos. Para o Green, a zona 5 do polegar é a carpometacarpal, onde se lesam o EPB, o APL e, raramente, o EPL; a sutura é central com cross-stitch.
 
-!questoes central=mao-0058 relacionadas=mao-0930,mao-1031,mao-1338
+!questoes central=mao-0058 relacionadas=mao-0930,mao-1031,mao-1338,mao-0719
 conceito: Articulações em zonas ímpares: MF = V; a zona VI fica sobre o metacarpo, onde estão as juncturae; as bandas sagitais ficam na zona V.
 como: O TARO 2016 pediu a zona da MF do médio; a UFG 2019, a zona das conexões intertendíneas; a UFG 2021, a das bandas sagitais; a USP-SP 2025, as zonas de VERDAN em duas fotos.
 armadilha: Chamar a MF de zona 4 ou colocar as juncturae na zona V; elas ficam proximais à MF.

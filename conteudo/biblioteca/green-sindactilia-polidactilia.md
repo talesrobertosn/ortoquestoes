@@ -46,7 +46,7 @@ Os três centros do broto estão no resumo green8-malformacoes-congenitas; esta 
 
 Para a polidactilia, o Tachdjian (p. 358) dá a imagem: não é excesso de substrato, e sim um **aumento da partição da crista apical**; e os genes **HOX** estão alterados na **sinpolidactilia**, que o Green (p. 1234) liga ao **HOXD13**.
 
-!questoes central=mao-0267 treino=mao-2471
+!questoes central=mao-0267 relacionadas=mao-0266 treino=mao-2471
 conceito: Os dedos nascem como condensações de mesoderma numa placa palmada; a membrana regride de distal para proximal por apoptose disparada pelas BMP; a falha dessa apoptose é a sindactilia, e na APERT o FGF alterado anula a apoptose mediada por BMP.
 como: O SIMÃO 2021 perguntou qual sinal molecular, quando falha, está ligado à sindactilia; o ENARE 2023, quais estruturas embrionárias formam os dedos.
 armadilha: Ligar a sindactilia à ZPA (eixo radioulnar, polidactilia em espelho) ou atribuir a separação ao FGF sozinho.
@@ -366,7 +366,7 @@ A sindactilia acompanha polidactilia, clinodactilia, braquidactilia, sinfalangis
 | deficiência ulnar | 30% das mãos | Green, p. 1334 |
 !fim
 
-!questoes treino=mao-2284,mao-2001
+!questoes relacionadas=mao-0752 treino=mao-2284,mao-2001
 conceito: Na deficiência ulnar, 30% das mãos têm sindactilia (90% com dedos ausentes, 70% com polegar anormal); na COONEY, a clinodactilia complexa é a associada à sindactilia; na POLAND, sindactilia simples dos dedos centrais curtos.
 como: O SIMÃO 2024 perguntou a proporção de sindactilia na deficiência ulnar; o SIMÃO 2023, a deformidade associada à clinodactilia na sua classificação.
 armadilha: Trocar os três números da deficiência ulnar, ou associar a clinodactilia complexa à camptodactilia.
