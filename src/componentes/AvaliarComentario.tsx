@@ -27,8 +27,8 @@ const NOTAS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 /**
  * Nota de 1 a 10 para o comentário (13/11/2026, troca o "Este comentário te ajudou?"): uma linha só, no fim do
- * comentário, com dez quadradinhos numerados que acendem como uma régua. Nota de 1 a 5 abre, logo abaixo e sem
- * obrigar, o motivo e uma frase. Depois da nota, a linha encolhe para "Você deu 8 · obrigado · mudar".
+ * comentário, com dez quadradinhos numerados que acendem como uma régua. O clique já envia a nota. Nota de 1 a 5
+ * abre logo abaixo, sem obrigar nada, o motivo (grava ao tocar), uma frase e o relato de erro. Depois da nota, a linha encolhe para "Você deu 8 · obrigado · mudar".
  * Erro de fato (gabarito, informação errada) vai pelo relato de erro. A nota fica guardada mesmo sem rede e é
  * reenviada depois. O painel do administrador separa as questões por faixa (Triagem › Notas dos comentários).
  */
@@ -76,23 +76,34 @@ export function AvaliarComentario({ idQuestao, versao = null }: { idQuestao: str
     definirPedindoMotivo(nota <= NOTA_PEDE_MOTIVO)
   }
 
+  // Nota de 5 ou menos (Tales, 14/11/2026): a nota já foi enviada no clique. O resto é opcional e não trava nada:
+  // o motivo se grava ao tocar, a frase vai com "Enviar a frase" e o erro vai pelo relato.
   if (atual && pedindoMotivo && atual.nota) {
+    const escolherMotivo = (valor: MotivoNota) => {
+      const novo = motivo === valor ? null : valor
+      definirMotivo(novo)
+      void salvar({ ...atual, motivo: novo ?? undefined, observacao })
+    }
     return (
       <div className="av av--motivo">
-        <p className="av__pergunta">Você deu {atual.nota}. O que faltou? <small>Opcional, mas é o que mostra o que reescrever.</small></p>
+        <p className="av__pergunta">
+          <span className="av__dada" style={{ '--av-cor': corDaNota(atual.nota) } as React.CSSProperties}>{atual.nota}</span>
+          Nota enviada. Obrigado!
+          <button type="button" className="av__fechar" aria-label="Fechar" onClick={() => definirPedindoMotivo(false)}><Icone nome="fechar" tamanho={16} /></button>
+        </p>
+        <p className="av__sub">Se quiser, conte o que faltou. É opcional e ajuda a reescrever.</p>
         <div className="av__motivos">
           {MOTIVOS_NOTA.map(([valor, rotulo]) => (
-            <button key={valor} type="button" className={motivo === valor ? 'ativo' : ''} aria-pressed={motivo === valor} onClick={() => definirMotivo(motivo === valor ? null : valor)}>{rotulo}</button>
+            <button key={valor} type="button" className={motivo === valor ? 'ativo' : ''} aria-pressed={motivo === valor} onClick={() => escolherMotivo(valor)}>{rotulo}</button>
           ))}
         </div>
         <textarea className="entrada av__obs" rows={2} maxLength={1000} placeholder="Se quiser, conte em uma frase" value={observacao} onChange={(e) => definirObservacao(e.target.value)} />
-        <button type="button" className="av__erro" onClick={() => { definirPedindoMotivo(false); pedirRelato(idQuestao, 'comentario') }}>
-          <Icone nome="alerta" tamanho={15} /> Encontrou um erro? Relate e avisamos quando corrigirmos
-        </button>
         <div className="av__acoes">
-          <button type="button" className="botao botao--fantasma" onClick={() => definirPedindoMotivo(false)}>Pular</button>
-          <button type="button" className="botao botao--principal" disabled={!motivo && !observacao.trim()}
-            onClick={() => { void salvar({ ...atual, motivo: motivo ?? 'outro', observacao }); definirPedindoMotivo(false) }}>Enviar</button>
+          <button type="button" className="av__erro" onClick={() => { definirPedindoMotivo(false); pedirRelato(idQuestao, 'comentario') }}>
+            <Icone nome="alerta" tamanho={15} /> Encontrou um erro? Relate
+          </button>
+          {observacao.trim() && <button type="button" className="botao botao--principal"
+            onClick={() => { void salvar({ ...atual, motivo: motivo ?? 'outro', observacao }); definirPedindoMotivo(false) }}>Enviar a frase</button>}
         </div>
       </div>
     )

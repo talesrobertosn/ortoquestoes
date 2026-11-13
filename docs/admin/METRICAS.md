@@ -211,9 +211,9 @@ node fixtures/testar_admin_metricas.mjs --gerar
 
 | Campo | Definição |
 | --- | --- |
-| Pergunta | Quantos relatos e "não ajudou" esperam revisão? |
+| Pergunta | Quantos relatos e notas ruins esperam revisão? |
 | Unidade | eventos |
-| Numerador | Relatos em aberto + avaliações "não ajudou" com texto ainda não lidas |
+| Numerador | Relatos em aberto + notas de 5 ou menos ainda não lidas (nota boa não avisa) |
 | Janela e fuso | Agora |
 | Fonte (RPC) | contadores_admin (ou as listas de relatos e avaliações) |
 | Qualidade | Confirmado |

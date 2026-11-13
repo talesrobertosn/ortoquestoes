@@ -11,7 +11,7 @@ import { rpcInexistente, usarConsulta } from './usarRpc'
 export interface Contadores {
   usuarios: number | null
   online: number | null
-  /** Relatos em aberto + avaliações "não ajudou" com texto ainda não lidas; null se não deu para saber. */
+  /** Relatos em aberto + notas ruins (5 ou menos) ainda não lidas; nota boa não avisa. null se não deu para saber. */
   conteudo: number | null
   derivado: boolean
 }
@@ -35,7 +35,7 @@ async function buscarContadores(sinal: AbortSignal): Promise<Contadores> {
   ])
   const vistos = new Set([...lerLocal('avaliacao'), ...lidos.map(l => l.chave)])
   const abertos = relatos?.filter(r => r.status === 'aberto').length
-  const paraLer = avaliacoes?.filter(l => !l.util && l.observacao?.trim() && !vistos.has(chaveAvaliacao(l))).length
+  const paraLer = avaliacoes?.filter(l => !l.util && !vistos.has(chaveAvaliacao(l))).length
   return { usuarios: null, online: null, conteudo: abertos === undefined && paraLer === undefined ? null : (abertos ?? 0) + (paraLer ?? 0), derivado: true }
 }
 
