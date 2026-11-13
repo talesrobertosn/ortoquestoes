@@ -124,7 +124,7 @@ Todos os autores insistem que esses números são **arbitrários** (opinião de 
 
 **Os números clássicos de KLENERMAN** (20 graus de angulação anterior, 30 graus de varo e 3 cm de encurtamento), muito usados nos comentários de prova, **não aparecem neste capítulo**. A diferença que importa é o varo: o capítulo é mais rígido (15 graus pela série de SARMIENTO, 15 a 20 graus em qualquer direção no texto).
 
-!questoes relacionadas=trauma-1161
+!questoes relacionadas=trauma-1161,trauma-1729
 conceito: O capítulo aceita cerca de 20 graus de angulação (15 a 20 graus em qualquer direção, 15 graus de varo na série de SARMIENTO), até 30 graus de rotação e 2 a 3 cm de encurtamento, todos números arbitrários.
 como: O TARO 2006 pôs em certo ou errado que 30 graus de desvio angular, 2 a 3 cm de encurtamento e 15 graus de rotação são bem tolerados. A questão está sem gabarito oficial no acervo.
 armadilha: Achar que a rotação é o limite apertado: o capítulo tolera até 30 graus de rotação; o limite apertado é o angular.
