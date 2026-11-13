@@ -1,6 +1,6 @@
 # Central de revisão — prévia de 13/11/2026
 
-Branch: `codex/revisoes-painel`. Implementação local, sem publicação.
+Branch: `codex/revisoes-painel`. Publicação autorizada pelo Tales em 13/11/2026, após avaliar a prévia.
 
 ## Pedidos e referência
 
@@ -78,3 +78,7 @@ prioridades. As seções principais ficam abertas, conforme a referência mais r
   retorno sem crescimento da meta. 320/390/1440 px, claro/escuro e sem rolagem lateral.
 
 Capturas: `/Users/talesroberto/Downloads/Previa-Revisao-OrtoQuestoes/` (dados fictícios, não publicados).
+
+## Pinturas estáticas antes da publicação
+
+Tales pediu conferir o zoom involuntário do Desempenho. A regra global em `recursos.css` aplica salto/escala a imagens pixel. O Desempenho agora bloqueia animação, transição, transform, translate, scale e rotate nas pinturas do observatório e da mesa. A Revisão já faz o mesmo na estufa. `fixtures/artes_estaticas_roteiro.mjs` mede os retângulos e estilos antes, durante e depois de dois hovers, no computador/celular e nos temas claro/escuro. Mascotes e luzes continuam em camadas próprias.
