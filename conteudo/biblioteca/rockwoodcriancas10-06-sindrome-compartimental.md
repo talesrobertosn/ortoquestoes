@@ -51,7 +51,7 @@ O **antebraço** é o mais acometido, com fratura dos dois ossos ou **supracondi
 
 **Mão**: **10 compartimentos**; começar pelo **túnel do carpo estendido**; interósseos por incisões dorsais entre **2º-3º** e **4º-5º** metacarpais e no **primeiro espaço**; tenar e hipotenar separadas; dedos tensos: **dermotomia médio-axial** (CLELAND e GRAYSON comprimem os vasos digitais).
 
-!questoes central=pediatria-0850 treino=pediatria-1318,pediatria-1319,pediatria-1324
+!questoes central=pediatria-0850 relacionadas=mao-1216 treino=pediatria-1318,pediatria-1319,pediatria-1324
 conceito: No membro superior, a síndrome é do antebraço; supracondiliana com lesão do mediano, cotovelo flutuante e MONTEGGIA operado são os padrões de alto risco; o flexor profundo é o compartimento mais afetado.
 como: TEOT 2021 perguntou em que supracondiliana a síndrome compartimental é mais frequente (extensão com lesão do nervo mediano). TARO 2006 afirmou que, no VOLKMANN do antebraço, os flexores radial e ulnar do carpo são os mais acometidos.
 armadilha: Liberar só a fáscia superficial e deixar o compartimento flexor profundo fechado.
