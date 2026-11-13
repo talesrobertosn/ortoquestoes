@@ -18071,7 +18071,7 @@
   },
   {
    "id": "rockwood10-17-sindrome-compartimental",
-   "versao": 5,
+   "versao": 6,
    "titulo": "Síndrome compartimental aguda",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -18371,7 +18371,7 @@
   },
   {
    "id": "rockwood10-33-fratura-escapula",
-   "versao": 6,
+   "versao": 7,
    "titulo": "Fratura da escápula",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -19647,7 +19647,7 @@
   },
   {
    "id": "rockwood10-45-fraturas-mao",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Fraturas e luxações da mão",
    "especialidade": "mao",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -19891,7 +19891,7 @@
   },
   {
    "id": "rockwood10-48-coluna-cervical",
-   "versao": 5,
+   "versao": 6,
    "titulo": "Fraturas e luxações da coluna cervical",
    "especialidade": "coluna",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -20122,7 +20122,7 @@
   },
   {
    "id": "rockwood10-49-fratura-toracolombar",
-   "versao": 5,
+   "versao": 6,
    "titulo": "Fraturas e luxações da coluna toracolombar",
    "especialidade": "coluna",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -20937,7 +20937,7 @@
   },
   {
    "id": "rockwood10-57-diafise-femur",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Fratura da diáfise do fêmur",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -21719,7 +21719,7 @@
   },
   {
    "id": "rockwood10-63-diafise-tibia",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Fratura da diáfise da tíbia e da fíbula",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -22549,7 +22549,7 @@
   },
   {
    "id": "rockwood10-lesao-medular",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Lesão medular e síndromes medulares",
    "especialidade": "coluna",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -22557,7 +22557,7 @@
    "capitulo": "Capítulo 47 · Principles of Spine Trauma Care",
    "resumo": "Choque neurogênico (bradicardia, hipotensão, pele quente, lesão cervical ou torácica alta, vasopressor alfa e beta) contra choque medular (arreflexia, fim com o bulbocavernoso, em geral 24 a 48 h); ASIA/FRANKEL A a E com preservação sacral S4-S5 e o corte do grau 3; centromedular (a mais comum, idoso, hiperextensão, membros superiores piores), anterior (hiperflexão, artéria espinhal anterior, propriocepção poupada, pior prognóstico), BROWN-SÉQUARD (motor e propriocepção do mesmo lado, dor e temperatura do outro), posterior (só propriocepção), cone e cauda equina; metilprednisolona como opção controversa; SCIWORA na criança pequena, cervical, por flexão-distração.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 37,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -23833,7 +23833,7 @@
   },
   {
    "id": "rockwood10-radio-distal",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Fratura do rádio distal no adulto",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -23841,7 +23841,7 @@
    "capitulo": "Capítulo 43 · Fractures of the Distal Radius and Ulna",
    "resumo": "Parâmetros normais (inclinação radial 22 a 23 graus, inclinação volar 11 a 12 graus, altura radial 11 a 12 mm medida do estiloide radial à superfície articular da ulna, gota de lágrima 70 graus e menor que 45 graus na lesão da faceta semilunar), epônimos (COLLES, SMITH, BARTON, CHAUFFEUR), AO 23 e FERNANDEZ por mecanismo, critérios de LAFONTAINE (angulação dorsal maior que 20 graus, cominuição dorsal, traço articular, fratura da ulna, idade acima de 60), redução e gesso, KAPANDJI, fixador, placa volar pela via de HENRY e linha divisória de SOONG, placa em ponte, lesão do complexo da fibrocartilagem triangular como associada mais comum, ruptura do EPL e do FPL, vitamina C e osteotomia da consolidação viciosa.",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -24204,7 +24204,7 @@
   },
   {
    "id": "rockwood10-tumores-coluna",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Tumores da coluna",
    "especialidade": "coluna",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -24429,19 +24429,24 @@
   },
   {
    "id": "rockwoodcriancas10-01-epidemiologia-fraturas",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Epidemiologia das fraturas na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
-   "resumo": "As três causas das fraturas pediátricas, o que mais quebra por idade e sexo, as cifras de rádio distal, fise e fratura exposta, e como estação, ambiente e exposição explicam o risco.",
+   "resumo": "Três causas (acidental, não acidental e patológica); esporte, playground, bicicleta, skate, trampolim, trânsito, quadriciclo e arma de fogo, cada um com seu padrão; risco de fratura até 16 anos de 42% a 60% nos meninos e 27% a 40% nas meninas, 1,6% a 2,1% ao ano; rádio e ulna 59% dos ossos longos, tíbia acima do fêmur, rádio distal o local mais fraturado; fise 14,8% a 30%, rádio distal com 18% de fechamento precoce, fêmur distal com até 40% de complicações; expostas 0,7% a 1% hoje; pico aos 11 a 12 anos nas meninas e 13 a 14 nos meninos, razão 1,5:1; curvas precoce, tardia e bimodal; verão 2,5 vezes o inverno; queda de altura de cabeça, com rádio, crânio e fêmur; COVID-19 com queda de 2,5 vezes; prevenção e bases de dados.",
    "acesso": "gratis",
-   "minutos": 11,
+   "minutos": 43,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
      "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-que-estudar-epidemiologia-da-fratura-infanti",
+     "titulo": "Por que estudar epidemiologia da fratura infantil",
      "radar": "fundamento"
     },
     {
@@ -24450,13 +24455,33 @@
      "radar": "fundamento"
     },
     {
-     "id": "o-que-fratura-mais-osso-segmento-e-numero",
-     "titulo": "O que fratura mais: osso, segmento e número",
+     "id": "esporte-organizado-exposicao-nao-e-sinonimo-de-f",
+     "titulo": "Esporte organizado: exposição não é sinônimo de fragilidade",
      "radar": "oportunidade"
     },
     {
-     "id": "idade-sexo-e-o-desenho-das-curvas",
-     "titulo": "Idade, sexo e o desenho das curvas",
+     "id": "recreacao-e-equipamentos-cada-brinquedo-tem-sua-",
+     "titulo": "Recreação e equipamentos: cada brinquedo tem sua assinatura",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "transito-quadriciclo-e-arma-de-fogo-a-alta-energ",
+     "titulo": "Trânsito, quadriciclo e arma de fogo: a alta energia",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-problema-da-definicao-vies-de-classificacao",
+     "titulo": "O problema da definição: viés de classificação",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quanto-a-crianca-quebra-incidencia-e-risco-ao-lo",
+     "titulo": "Quanto a criança quebra: incidência e risco ao longo da infância",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-que-fratura-mais-osso-segmento-e-numero",
+     "titulo": "O que fratura mais: osso, segmento e número",
      "radar": "oportunidade"
     },
     {
@@ -24465,14 +24490,39 @@
      "radar": "oportunidade"
     },
     {
+     "id": "idade-sexo-e-o-desenho-das-curvas",
+     "titulo": "Idade, sexo e o desenho das curvas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fatores-socioeconomicos-culturais-e-clinicos",
+     "titulo": "Fatores socioeconômicos, culturais e clínicos",
+     "radar": "oportunidade"
+    },
+    {
      "id": "ambiente-a-estacao-muda-a-oportunidade-de-cair",
      "titulo": "Ambiente: a estação muda a oportunidade de cair",
      "radar": "oportunidade"
     },
     {
-     "id": "mudancas-de-exposicao-e-prevencao",
-     "titulo": "Mudanças de exposição e prevenção",
+     "id": "a-epidemiologia-muda-pandemia-e-prevencao",
+     "titulo": "A epidemiologia muda: pandemia e prevenção",
      "radar": "clinico"
+    },
+    {
+     "id": "de-onde-vem-os-dados-bancos-administrativos-e-re",
+     "titulo": "De onde vêm os dados: bancos administrativos e registros",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-numeros-do-capitulo-em-um-so-lugar",
+     "titulo": "Os números do capítulo em um só lugar",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "armadilhas-de-prova",
+     "titulo": "Armadilhas de prova",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento-como-usar-epidemiologia-na-consulta",
@@ -24486,10 +24536,10 @@
     "pediatria-1084",
     "pediatria-1093",
     "pediatria-1085",
-    "pediatria-1086",
-    "pediatria-1088",
     "pediatria-1087",
     "pediatria-1092",
+    "pediatria-1086",
+    "pediatria-1088",
     "pediatria-1089",
     "pediatria-1090",
     "pediatria-1091"
@@ -24823,15 +24873,15 @@
   },
   {
    "id": "rockwoodcriancas10-06-sindrome-compartimental",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Síndrome compartimental na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 6 · Compartment Syndrome in Children",
-   "resumo": "Três As (ansiedade, agitação, mais analgésico) no lugar dos seis Ps; pressão basal mais alta na criança e decisão clínica seriada; supracondiliana com lesão do mediano, cotovelo flutuante e MONTEGGIA operado; flexor profundo do antebraço; perna (13 anos, 50 kg, hastes flexíveis, quatro compartimentos); mão, coxa e pé; sem fratura, do esforço e neonatal; VOLKMANN de TSUGE e tratamento; prognóstico.",
+   "resumo": "Por que o compartimento fecha e por que a criança engana; três As (ansiedade, agitação, mais analgésico) no lugar dos seis Ps; pressão basal mais alta na criança e decisão clínica seriada; iminente, com fratura, sem fratura, do esforço e neonatal; primeiro passo e fasciotomia com desbridamento conservador; supracondiliana com lesão do mediano, cotovelo flutuante e MONTEGGIA operado; braço, antebraço (flexor profundo) e mão (10 compartimentos); coxa, perna (13 anos, 50 kg, hastes flexíveis, quatro compartimentos) e pé (9 compartimentos, limiar baixo pela fise); VOLKMANN de TSUGE e tratamento; prognóstico.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 51,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -24839,29 +24889,69 @@
      "radar": "fundamento"
     },
     {
-     "id": "diagnostico-na-crianca",
-     "titulo": "Diagnóstico na criança",
+     "id": "o-que-e-e-por-que-o-compartimento-fecha",
+     "titulo": "O que é e por que o compartimento fecha",
+     "radar": "fundamento"
+    },
+    {
+     "id": "causas-quem-tem-risco-e-onde-acontece",
+     "titulo": "Causas, quem tem risco e onde acontece",
      "radar": "confirmado"
     },
     {
-     "id": "membro-superior-e-antebraco",
-     "titulo": "Membro superior e antebraço",
-     "radar": "confirmado"
+     "id": "diagnostico-clinico-por-que-os-seis-ps-falham-na",
+     "titulo": "Diagnóstico clínico: por que os seis Ps falham na criança",
+     "radar": "clinico"
     },
     {
-     "id": "membro-inferior",
-     "titulo": "Membro inferior",
+     "id": "pressoes-por-que-o-numero-do-adulto-nao-serve",
+     "titulo": "Pressões: por que o número do adulto não serve",
+     "radar": "clinico"
+    },
+    {
+     "id": "iminente-com-fratura-sem-fratura-do-esforco-e-ne",
+     "titulo": "Iminente, com fratura, sem fratura, do esforço e neonatal",
      "radar": "oportunidade"
     },
     {
-     "id": "formas-especiais-e-tratamento",
-     "titulo": "Formas especiais e tratamento",
+     "id": "tratamento-o-primeiro-passo-e-a-fasciotomia",
+     "titulo": "Tratamento: o primeiro passo e a fasciotomia",
+     "radar": "clinico"
+    },
+    {
+     "id": "membro-superior-supracondiliana-cotovelo-flutuan",
+     "titulo": "Membro superior: supracondiliana, cotovelo flutuante e MONTEGGIA",
+     "radar": "confirmado"
+    },
+    {
+     "id": "braco-e-antebraco-compartimentos-e-fasciotomia",
+     "titulo": "Braço e antebraço: compartimentos e fasciotomia",
+     "radar": "clinico"
+    },
+    {
+     "id": "mao-dez-compartimentos-e-as-dermotomias",
+     "titulo": "Mão: dez compartimentos e as dermotomias",
+     "radar": "confirmado"
+    },
+    {
+     "id": "membro-inferior-coxa-e-perna",
+     "titulo": "Membro inferior: coxa e perna",
      "radar": "oportunidade"
     },
     {
-     "id": "contratura-de-volkmann-e-prognostico",
-     "titulo": "Contratura de VOLKMANN e prognóstico",
+     "id": "pe-nove-compartimentos-e-o-limiar-baixo-da-crian",
+     "titulo": "Pé: nove compartimentos e o limiar baixo da criança",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "contratura-isquemica-de-volkmann",
+     "titulo": "Contratura isquêmica de VOLKMANN",
      "radar": "confirmado"
+    },
+    {
+     "id": "prognostico-e-o-relogio-da-isquemia",
+     "titulo": "Prognóstico e o relógio da isquemia",
+     "radar": "clinico"
     },
     {
      "id": "fechamento",
@@ -24872,21 +24962,23 @@
    "questoes": [
     "pediatria-0666",
     "pediatria-0850",
+    "mao-1216",
+    "trauma-0081",
     "pediatria-0827"
    ],
    "treino": [
     "pediatria-1038",
     "pediatria-1315",
     "pediatria-1316",
-    "pediatria-1317",
-    "pediatria-1318",
-    "pediatria-1319",
-    "pediatria-1324",
-    "pediatria-1320",
-    "pediatria-1325",
     "pediatria-1321",
     "pediatria-1322",
     "pediatria-1323",
+    "pediatria-1317",
+    "pediatria-1324",
+    "pediatria-1318",
+    "pediatria-1319",
+    "pediatria-1325",
+    "pediatria-1320",
     "pediatria-1326",
     "pediatria-1327",
     "pediatria-1328",
@@ -26435,7 +26527,7 @@
   },
   {
    "id": "rockwoodcriancas10-26-fise-distal-femur",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Fratura da fise distal do fêmur na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -26443,7 +26535,7 @@
    "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
    "resumo": "SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a fise, cruzado anterior no tipo III do côndilo medial, artéria poplítea no desvio anterior, fibular por tração, distúrbio do crescimento em cerca de metade, pinos lisos por 4 semanas, 10 dias para remanipular, PARK-HARRIS e ponte menor que 50%.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 33,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -27694,7 +27786,7 @@
   },
   {
    "id": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -27702,7 +27794,7 @@
    "capitulo": "Capítulo 16 · Medial Epicondyle Fractures and Dislocations of the Elbow",
    "resumo": "Epicôndilo medial como a fratura que mais acompanha a luxação, ulnar o nervo mais lesado e mediano o mais grave (FOURRIER, MATEV), encarceramento como única indicação absoluta, ROBERTS, PARVIN, rigidez e imobilização curta, e a pronação dolorosa do ligamento anular (2 a 3 anos, hiperpronação).",
    "acesso": "gratis",
-   "minutos": 41,
+   "minutos": 42,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -27838,7 +27930,7 @@
   },
   {
    "id": "rockwoodcriancas9-16-condilo-lateral",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -27846,7 +27938,7 @@
    "capitulo": "Capítulo 17 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
    "resumo": "Extensores radiais e colaterais no fragmento, oblíqua interna, MILCH e SALTER-HARRIS IV, JAKOB, WEISS e SONG (2 mm), redução em extensão e supinação, dissecção posterior e necrose, esporão (75%), cúbito varo, pseudartrose com valgo e ulnar tardio, FLYNN (1 cm) e HAHN-STEINTHAL.",
    "acesso": "gratis",
-   "minutos": 34,
+   "minutos": 35,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -27949,7 +28041,7 @@
   },
   {
    "id": "rockwoodcriancas9-17-fise-distal-umero",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -27957,7 +28049,7 @@
    "capitulo": "Capítulo 18 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
    "resumo": "Lactente com rádio e ulna em bloco para posteromedial e capítulo alinhado ao rádio, maus-tratos em até metade abaixo dos 2 anos, DELEE, ultrassonografia, pronação e dois fios laterais, cúbito varo; côndilo medial em espelho do lateral (SALTER-HARRIS IV, KILFOYLE, pseudartrose em varo); osteonecrose da tróclea tipos A e B; epicôndilo lateral só operado se encarcerado.",
    "acesso": "gratis",
-   "minutos": 40,
+   "minutos": 41,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -31036,7 +31128,7 @@
   },
   {
    "id": "wilkins9-08-radio-ulna-distal-crianca",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Fraturas do rádio e da ulna distais na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -31044,7 +31136,7 @@
    "capitulo": "Capítulo 9 · Fractures of the Distal Radius and Ulna",
    "resumo": "Toro, galho verde e baioneta; a rotação de cada ápice; periósteo íntegro e o que se interpõe; THURSTON-HOLLAND e a fise que não se força depois de 7 dias; perda de redução em 20% a 30% e índice do gesso de 0,7; Galeazzi conservador; parada fisária de 4% no rádio e até 55% na ulna; a ginasta e o impacto ulnocarpal.",
    "acesso": "gratis",
-   "minutos": 43,
+   "minutos": 44,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -31179,7 +31271,7 @@
   },
   {
    "id": "wilkins9-09-diafise-antebraco-crianca",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -31187,7 +31279,7 @@
    "capitulo": "Capítulo 10 · Diaphyseal Radius and Ulna Fractures",
    "resumo": "Galho verde e a regra do ápice (dorsal = pronação, reduz em supinação), deformidade plástica (ulna, 20 a 30 kg por 2 a 3 minutos, VORLAT e DE BOECK acima de 10 graus e 6 anos), refratura (galho verde, menino, 6 meses), tuberosidade bicipital, limites de 20, 15 e 10 graus, haste elástica de METAIZEAU, MONTEGGIA perdida, sinostose e síndrome compartimental.",
    "acesso": "gratis",
-   "minutos": 46,
+   "minutos": 47,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",

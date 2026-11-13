@@ -1,6 +1,6 @@
 ---
 id: rockwood10-33-fratura-escapula
-versao: 6
+versao: 7
 titulo: Fratura da escápula
 especialidade: trauma
 acesso: gratis
@@ -45,7 +45,7 @@ O anel é sustentado por **dois pilares** (struts). O **superior** é o **terço
 A função do anel, nas palavras de Goss, é manter uma relação estável entre a escápula, o membro superior e o esqueleto axial, permitindo o pouco movimento que existe na acromioclavicular e nos ligamentos coracoclaviculares. A regra que dele deriva é simples: **uma ruptura isolada do anel costuma ser estável**; **duas rupturas** (ou uma ruptura com fratura de um pilar) criam uma situação **potencialmente instável**, que pode levar a retardo de consolidação, pseudartrose ou consolidação viciosa.
 
 !figura 33-2 imagem=ombro-cotovelo/rwa10-33-2-w59.jpeg
-Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 33, Fig. 33-2, p. 1014. Complexo suspensor superior do ombro, vista anterior da escápula direita: acrômio, acromioclavicular, clavícula, coracoide, ligamentos coracoacromial e coracoclavicular, colo e borda lateral da escápula.
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 33, Fig. 33-2. Complexo suspensor superior do ombro, vista anterior da escápula direita: acrômio, acromioclavicular, clavícula, coracoide, ligamentos coracoacromial e coracoclavicular, colo e borda lateral da escápula.
 !fim
 
 !questoes central=ombro-cotovelo-0401,trauma-0126 treino=trauma-1302
@@ -53,7 +53,7 @@ conceito: O anel de Goss é formado por glenoide, coracoide, ligamentos coracocl
 como: O TECOC pediu quais estruturas compõem o anel, com distratores que misturam peças de fora (ligamento coracoumeral, ligamento transverso do úmero, espinha da escápula). O TARO 2013 pediu qual combinação torna o anel instável: fratura do colo com lesão do ligamento acromioclavicular (duas rupturas).
 armadilha: Ligamento coracoumeral: aparece na figura do anel, mas liga o coracoide ao úmero e não faz parte do complexo.
 armadilha: Fratura do coracoide com lesão do trapezoide (TARO 2013): coracoide e ligamentos coracoclaviculares formam uma mesma unidade de Goss (a ligação clavícula, ligamentos coracoclaviculares e coracoide); não são dois pontos distantes do anel.
-alerta: No TARO 2013 (trauma-0126), o gabarito oficial foi colo da escápula com lesão do ligamento acromioclavicular, que segue Goss (a acromioclavicular é o segundo ponto do anel). O capítulo, ao descrever o colo cirúrgico, diz que o que decide a estabilidade são os ligamentos **coracoclavicular e coracoacromial** (Figura 33-13, p. 1027, e WILLIAMS, p. 1043); na p. 1044, porém, escreve que a estabilidade do colo cirúrgico depende dos ligamentos "coracoclavicular e acromioclavicular". Pelo raciocínio do autor, a ruptura do coracoclavicular (do qual o trapezoide faz parte) também pesaria; na prova, responda Goss.
+alerta: No TARO 2013 (trauma-0126), o gabarito oficial foi colo da escápula com lesão do ligamento acromioclavicular, que segue Goss (a acromioclavicular é o segundo ponto do anel). O capítulo, ao descrever o colo cirúrgico, diz que o que decide a estabilidade são os ligamentos **coracoclavicular e coracoacromial** (Figura 33-13, e WILLIAMS, seção Floating Shoulder); mais adiante na mesma seção, porém, escreve que a estabilidade do colo cirúrgico depende dos ligamentos "coracoclavicular e acromioclavicular". Pelo raciocínio do autor, a ruptura do coracoclavicular (do qual o trapezoide faz parte) também pesaria; na prova, responda Goss.
 !fim
 
 ## A história do ombro flutuante
@@ -106,7 +106,7 @@ O colo cirúrgico tem subtipos conforme os ligamentos presos ao coracoide, e é 
 - **Totalmente instável (ligamentar):** rompem **coracoclavicular e coracoacromial**; as duas distâncias aumentam, sobretudo a **coracoclavicular**, e o fragmento glenoidal gira e desvia para **distal e medial**, puxado pelos músculos presos ao coracoide.
 - **Totalmente instável (ósseo):** a **base do coracoide** se separa do colo, com os ligamentos íntegros; as distâncias ficam normais e, como no colo anatômico, o fragmento vai para **distal e em valgo**, porque os músculos do coracoide não o puxam mais.
 
-Os nomes dos ligamentos variam dentro do próprio capítulo. Na Figura 33-13 (p. 1027) e na discussão de WILLIAMS (p. 1043), os dois ligamentos do coracoide que decidem o colo cirúrgico são o **coracoclavicular** e o **coracoacromial**; na p. 1044, o texto diz que a estabilidade do colo cirúrgico depende da integridade dos ligamentos **coracoclavicular e acromioclavicular**. O TEOT 2023 usou essa segunda forma no enunciado.
+Os nomes dos ligamentos variam dentro do próprio capítulo. Na Figura 33-13 e na discussão de WILLIAMS (seção Floating Shoulder), os dois ligamentos do coracoide que decidem o colo cirúrgico são o **coracoclavicular** e o **coracoacromial**; mais adiante na mesma seção, o texto diz que a estabilidade do colo cirúrgico depende da integridade dos ligamentos **coracoclavicular e acromioclavicular**. O TEOT 2023 usou essa segunda forma no enunciado.
 
 > Na prova: **colo anatômico, distal e valgo**. **Colo cirúrgico com ligamentos rotos, distal e medial**, com a distância coracoclavicular aumentada. **Transespinhal, varo**.
 
@@ -244,16 +244,16 @@ conceito: O conservador usa tipoia por 2 semanas e mobilização progressiva; fr
 | **VI** | **Cominuta** |
 !fim
 
-O tipo IV aparece de dois jeitos no próprio Rockwood. O **desenho** da Figura 33-9 (p. 1022) mostra um traço **horizontal** que sai da glenoide e cruza todo o corpo até a **borda medial**. A **legenda** da mesma figura diz que o tipo IV é **parecido com o III**, só que o fragmento glenoidal separado é **menor** e envolve a **borda superior** do corpo da escápula. As outras fontes locais ficam com o desenho: o HEBERT (cap. 43, Fig. 43.5) define o tipo 4 apenas como **horizontal** e o desenha com o traço atravessando o corpo até a borda medial; o Skeletal Trauma (cap. 50, Fig. 50A-10, p. 1526), na versão reorganizada de MAYO, também desenha o tipo IV com o traço chegando à borda medial. O Campbell (15ª ed.) não apresenta essa classificação. A legenda do Rockwood tem ainda outro descompasso: diz que o Vc combina os tipos II, III e V, enquanto o desenho do Vc mostra os traços do II, do III e do IV.
+O tipo IV aparece de dois jeitos no próprio Rockwood. O **desenho** da Figura 33-9 mostra um traço **horizontal** que sai da glenoide e cruza todo o corpo até a **borda medial**. A **legenda** da mesma figura diz que o tipo IV é **parecido com o III**, só que o fragmento glenoidal separado é **menor** e envolve a **borda superior** do corpo da escápula. As outras fontes locais ficam com o desenho: o HEBERT (cap. 43, Fig. 43.5) define o tipo 4 apenas como **horizontal** e o desenha com o traço atravessando o corpo até a borda medial; o Skeletal Trauma (cap. 50, Fig. 50A-10, p. 1526), na versão reorganizada de MAYO, também desenha o tipo IV com o traço chegando à borda medial. O Campbell (15ª ed.) não apresenta essa classificação. A legenda do Rockwood tem ainda outro descompasso: diz que o Vc combina os tipos II, III e V, enquanto o desenho do Vc mostra os traços do II, do III e do IV.
 
 O tipo I tem ainda uma segunda leitura, e ela muda a resposta. O Skeletal Trauma, 5ª ed. (cap. 48, p. 1459), ao tratar da fratura da borda da glenoide na luxação glenoumeral, descreve a classificação **original de IDEBERG** com outro critério para dividir o tipo I: **IA quando o fragmento da borda tem 5 mm ou menos** e **IB quando é maior que 5 mm**. Pelo mesmo texto, esses são os tipos mais frequentes (85% das fraturas intra-articulares da glenoide na casuística de IDEBERG), e os fragmentos pequenos, menores que 5 mm, são os mais comuns. Na modificação de **GOSS** desenhada pelo Rockwood (Figura 33-9), a mesma letra indica o lado: **Ia anterior, Ib posterior**. Quando a alternativa fala em tamanho do fragmento, a banca está na IDEBERG original; quando fala em borda anterior ou posterior, está na GOSS.
 
 !figura 33-9
-Classificação de Goss das fraturas da glenoide: Ia borda anterior, Ib borda posterior, II glenoide inferior, III glenoide superior com o coracoide, IV traço horizontal até a borda medial (a legenda do livro, p. 1022, descreve o IV como um III de fragmento menor na borda superior), Va a Vc combinações e VI cominuta.
+Classificação de Goss das fraturas da glenoide: Ia borda anterior, Ib borda posterior, II glenoide inferior, III glenoide superior com o coracoide, IV traço horizontal até a borda medial (a legenda do livro descreve o IV como um III de fragmento menor na borda superior), Va a Vc combinações e VI cominuta.
 !fim
 
 !questoes central=trauma-1082,trauma-0963,trauma-0777 treino=trauma-1312
-conceito: Na Ideberg-Goss, o tipo I é a fratura da borda (Ia anterior, Ib posterior); o tipo III separa a metade superior da glenoide com o coracoide (legenda da Figura 33-9, p. 1022) e sai pela borda superior; o II sai pela borda lateral; o IV, no desenho da Figura 33-9 e no HEBERT (Fig. 43.5), é o traço horizontal que cruza o corpo até a borda medial (a legenda da Figura 33-9 o descreve como um III de fragmento menor, na borda superior); o VI é cominuto.
+conceito: Na Ideberg-Goss, o tipo I é a fratura da borda (Ia anterior, Ib posterior); o tipo III separa a metade superior da glenoide com o coracoide (legenda da Figura 33-9) e sai pela borda superior; o II sai pela borda lateral; o IV, no desenho da Figura 33-9 e no HEBERT (Fig. 43.5), é o traço horizontal que cruza o corpo até a borda medial (a legenda da Figura 33-9 o descreve como um III de fragmento menor, na borda superior); o VI é cominuto.
 como: O TARO 2015 pediu o tipo da fratura do terço superior com o coracoide (III). Uma prova sem ano mostrou a imagem de uma fratura da borda anterior para classificar (Ia). O TECOC perguntou o tipo que resulta da cabeça batendo no centro da concavidade (gabarito IV).
 armadilha: Tipo II: também separa parte da glenoide, mas o fragmento é o inferior e o traço sai pela borda lateral.
 armadilha: Tipo IA ou IB no impacto central: as fraturas da borda vêm da luxação, quando a cabeça sai e arranca a borda.
