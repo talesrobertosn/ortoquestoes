@@ -60,6 +60,7 @@ var MOTIVOS_SUPORTE = {
   acesso: "Acesso \xE0 conta",
   questao: "Erro em quest\xE3o",
   dados: "Meus dados",
+  direitos: "Direitos autorais",
   outro: "Sugest\xE3o ou outro assunto"
 };
 var MAX_IMAGENS = 3;
