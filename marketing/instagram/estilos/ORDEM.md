@@ -15,7 +15,7 @@ Como funciona ([ordem.json](ordem.json)):
 4. **Pedido do Tales vence a fila:** "no modelo padrão" ou um estilo citado por ele é o que vale; registre no histórico e a fila segue dali.
 5. **Modelo novo aprovado:** entra na lista, logo depois do estilo com o visual mais diferente dele (claro depois de escuro, por exemplo).
 
-Ordem atual (em 10/11/2026 entrou nos stories a **Oficina do encaixe**, logo depois da Busca; ver `ordem.json`):
+Ordem atual (em 10/11/2026 entrou nos stories a **Oficina do encaixe**, logo depois da Busca, e em 13/11/2026 a **Errata**, no fim da fila; ver `ordem.json`):
 
 | Feed | Stories |
 |---|---|
@@ -29,7 +29,7 @@ Ordem atual (em 10/11/2026 entrou nos stories a **Oficina do encaixe**, logo dep
 | 8. VAR da questão | 8. Leilão (usado em 21/10/2026; ainda sem modelo aprovado) |
 | 9. Laboratório de patologia | 9. Radar premium |
 | 10. Jogo de cartas | 10. Cupom fiscal (versão questão primeiro) |
-| 11. Embarque |  |
+| 11. Embarque | 11. Errata (aprovado em 13/11/2026) |
 | 12. Ache os 3 erros |  |
 | 13. Linhas do metrô |  |
 | 14. Plantão das 3h14 |  |

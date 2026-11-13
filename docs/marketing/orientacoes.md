@@ -5,6 +5,13 @@ de divulgação. Decisões do dono do projeto, Tales Roberto. Atualizar sempre q
 for dada. Detalhes técnicos dos posts em [marketing/instagram/README.md](../../marketing/instagram/README.md)
 e o catálogo de estilos em [marketing/instagram/estilos/ESTILOS.md](../../marketing/instagram/estilos/ESTILOS.md).
 
+## Errata e "Como escrevemos o comentário" (13/11/2026)
+
+Tales aprovou o **Errata** (gabinete de revisão à noite, prova tipográfica, livro aberto com a edição corrigida à mão)
+como modelo de stories para questões em que a edição do livro decide, e pediu a variante de propaganda que mostra o
+**comentário real num iPhone**, do aviso em vermelho até as alternativas ("o intuito é propaganda sobre como escrevemos
+os comentários"). [Guia](../../marketing/instagram/estilos/ERRATA.md).
+
 ## Marca e símbolos nos posts (11/11/2026)
 
 O **ladrilho das alternativas** é o símbolo oficial (site e posts). O selo, o brasão em pixel art e as versões do kit
@@ -19,7 +26,7 @@ partem do mesmo ladrilho. O "O que vira Q" foi descartado (parecido com o logo d
 **Leia primeiro [marketing/instagram/estilos/PADRAO-AULA.md](../../marketing/instagram/estilos/PADRAO-AULA.md).** O
 Tales aprovou a campanha do índice de REIMERS como o novo padrão: o post ensina do zero (pensado para quem está
 começando, sem escrever "R1"), com texto na medida, nenhum slide só de palavras, as imagens da questão e do comentário,
-livro e página em cada explicação, uma temática que ajuda a entender e no máximo 4 stories. Quando uma regra antiga
+livro e página em cada explicação, uma temática que ajuda a entender e de 4 a 6 stories (Tales, 10/11/2026). Quando uma regra antiga
 deste documento pedir menos texto ou só a imagem original, vale o padrão aula.
 
 ## Público
