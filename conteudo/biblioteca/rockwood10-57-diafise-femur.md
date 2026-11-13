@@ -1,6 +1,6 @@
 ---
 id: rockwood10-57-diafise-femur
-versao: 3
+versao: 4
 titulo: Fratura da diáfise do fêmur
 especialidade: trauma
 acesso: gratis
@@ -176,6 +176,8 @@ Rápido, pode ser posto na UTI e até **sem fluoroscopia**; é o recurso de esta
 
 A placa perdeu espaço para a haste, mas tem indicações claras: **canal muito estreito**, fratura junto a **consolidação viciosa** prévia, extensão para a região **pertrocantérica ou metafisária**, **lesão vascular** a reparar (o foco já está exposto pela via medial), **fratura ipsilateral do colo**, **fratura periprotética ou junto a implantes** (indicação comum no adulto) e **pseudartrose**. A osteoporose grave é contraindicação relativa (a placa não segura; parafusos bloqueados bicorticais ajudam). A placa **não compartilha carga** como a haste: a carga imediata arrisca falha. Ela não protege o pulmão: placa e haste fresada não diferiram em pneumonia, SDRA, embolia pulmonar, falência de órgãos ou óbito.
 
+**Na conduta dos próprios autores** (seção Authors' Preferred Treatment e Algoritmo 57-1), o **canal estreito** entra no grupo das "circunstâncias especiais" do osso que impedem a haste, ao lado de **deformidade ou consolidação viciosa prévia**, **implante retido** no canal e **prótese do quadril ou do joelho de haste longa**. Nesses casos, a escolha é a **placa de compressão dinâmica de 4,5 mm** quando a fratura está no meio da diáfise, e a **placa femoral pré-moldada** quando o traço se estende para o proximal ou o distal. A lesão vascular associada é outra circunstância especial, em que às vezes se usa placa ou fixador temporário.
+
 - **Via lateral**, que se estende por todo o fêmur: banda iliotibial, vasto lateral elevado da linha áspera, **perfurantes ligadas**. A via **minimamente invasiva** (placa submuscular em ponte) preserva circulação, mas tem mais **má redução** (29% contra nenhuma na aberta, numa série de 40; noutra, seis rotações externas e seis valgos em 54).
 - **Placa**: 4,5 mm estreita ou larga (larga no paciente grande), pelo menos **10 furos** no traço simples, compressão no transverso, parafuso de tração no oblíquo, ponte no cominutivo. Regra geral de **quatro parafusos ou oito corticais** de cada lado; com placa longa, três parafusos (seis corticais) bem distribuídos (um longe, um perto e um no meio) podem bastar.
 - Sem gesso; movimento imediato; carga quando há sinal de consolidação, entre **6 e 12 semanas**. Retirar raramente; se for, depois de consolidada e remodelada (consolidação primária pode pedir 12 a 24 meses).
@@ -266,7 +268,7 @@ A haste anterógrada pode ser feita em **decúbito dorsal** (mesa radiotranspare
 | Necessidade de auxiliar | maior | menor | menor |
 !fim
 
-**A mesa de tração.** Dá comprimento sem auxiliar, mas leva tempo para montar; aduzir o membro contra o poste perineal pode criar **varo**; tração por bota passa pelo joelho e estira o ciático (com pino femoral distal, o joelho fica fletido). O membro sadio no **suporte de panturrilha** (quadril e joelho a 90 graus, abdução) pode desenvolver **síndrome compartimental** (pressões que sobem com o tempo, sobretudo no obeso) e **paralisia do fibular** (quatro casos, todos na perna posta primeiro no suporte); a alternativa é a perna sadia estendida em **tesoura**, sem estender demais (paralisia do femoral).
+**A mesa de tração.** Dá comprimento sem auxiliar, mas leva tempo para montar; aduzir o membro contra o poste perineal pode criar **varo**; tração por bota passa pelo joelho e estira o ciático (com pino femoral distal, o joelho fica fletido). O membro sadio no **suporte de panturrilha** (quadril e joelho a 90 graus, abdução) pode desenvolver **síndrome compartimental** (pressões que sobem com o tempo e normalizam ao tirar a perna do suporte, sobretudo no obeso; a pressão do suporte na panturrilha somada à menor perfusão da posição fletida explica o risco) e **paralisia do fibular** (quatro casos, todos na perna posta primeiro no suporte); se essa posição for usada, a perna fletida e abduzida deve ser **examinada de hora em hora** durante a cirurgia, e o suporte deve sair da panturrilha e passar a apoiar a **face lateral do joelho**, eliminando a pressão sobre a perna. A alternativa mais segura é a perna sadia estendida em **tesoura** (numa tipoia de travesseiro ou em tração por bota, quadril e joelho estendidos), que elimina o risco de síndrome compartimental e ainda permite a radioscopia, sem estender demais o quadril (paralisia do femoral).
 
 !tabela Lesões nervosas iatrogênicas
 | Nervo | Causa | Dados e prevenção |

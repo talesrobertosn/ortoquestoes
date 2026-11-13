@@ -1,6 +1,6 @@
 ---
 id: rockwood10-37-diafise-umero
-versao: 3
+versao: 4
 titulo: Fratura da diáfise do úmero
 especialidade: trauma
 acesso: gratis
@@ -122,13 +122,23 @@ O capítulo dá os números em três lugares, e eles não são idênticos:
 
 Todos os autores insistem que esses números são **arbitrários** (opinião de especialista, nível V) e que a decisão depende do paciente: dominância, trabalho, comorbidades e nível funcional. CRESPO, com osteotomias em cadáver e modelo 3D, mostrou que **a direção e o tamanho do desvio afetam, de forma independente, a capacidade de levar a mão ao espaço**, e que o membro pode ser mais sensível ao desvio do que se pensava; DEVERS mostrou que a deformidade visível é mais comum do que se imaginava e incomoda o paciente. Por isso o capítulo prevê que as indicações de cirurgia ainda vão crescer.
 
-**Os números clássicos de KLENERMAN** (20 graus de angulação anterior, 30 graus de varo e 3 cm de encurtamento), muito usados nos comentários de prova, **não aparecem neste capítulo**. A diferença que importa é o varo: o capítulo é mais rígido (15 graus pela série de SARMIENTO, 15 a 20 graus em qualquer direção no texto).
+**Os números clássicos de KLENERMAN** (20 graus de angulação anterior, 30 graus de varo e 3 cm de encurtamento), muito usados nos comentários de prova, **não aparecem neste capítulo**, mas estão nos outros livros. O HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 46, seção do tratamento) dá como aceitáveis no tratamento conservador **angulação anterior de até 20 graus, varo de até 30 graus e encurtamento de até 2,5 cm**. O Skeletal Trauma (5ª ed., cap. 47, Mechanism of Injury and Biomechanics, p. 1389), citando KLENERMAN, aceita **no máximo 15 graus de rotação, 20 graus de angulação anterior, 30 graus de varo e menos de 3 cm de encurtamento**. Postos lado a lado:
+
+!tabela Tolerâncias de desvio em três livros
+| Fonte | Angulação anterior | Varo | Rotação | Encurtamento |
+| --- | --- | --- | --- | --- |
+| Rockwood 10, cap. 37 | 20 graus (15 a 20 em qualquer direção no texto) | 15 graus (série de SARMIENTO) | até 30 graus | 2 a 3 cm |
+| HEBERT 5, cap. 46 | até 20 graus | até 30 graus | não citada | até 2,5 cm |
+| Skeletal Trauma 5, cap. 47 (KLENERMAN) | 20 graus | 30 graus | 15 graus | menos de 3 cm |
+!fim
+
+A diferença que importa é o varo: o Rockwood é mais rígido (15 graus pela série de SARMIENTO, 15 a 20 graus em qualquer direção no texto), enquanto HEBERT e Skeletal Trauma mantêm os 30 graus de KLENERMAN. Na rotação acontece o contrário: o Rockwood tolera até 30 graus, e o Skeletal Trauma, 15.
 
 !questoes relacionadas=trauma-1161,trauma-1729
 conceito: O capítulo aceita cerca de 20 graus de angulação (15 a 20 graus em qualquer direção, 15 graus de varo na série de SARMIENTO), até 30 graus de rotação e 2 a 3 cm de encurtamento, todos números arbitrários.
 como: O TARO 2006 pôs em certo ou errado que 30 graus de desvio angular, 2 a 3 cm de encurtamento e 15 graus de rotação são bem tolerados. A questão está sem gabarito oficial no acervo.
 armadilha: Achar que a rotação é o limite apertado: o capítulo tolera até 30 graus de rotação; o limite apertado é o angular.
-alerta: A afirmação do TARO 2006 segue os limites clássicos de KLENERMAN (30 graus de varo), e a resposta provável do site é "certo". Este capítulo não sustenta 30 graus de desvio angular: ele aceita no máximo 15 a 20 graus em qualquer direção e 15 graus de varo na série de SARMIENTO. Rotação de 15 graus e encurtamento de 2 a 3 cm estão dentro do que o capítulo aceita.
+alerta: A afirmação do TARO 2006 segue os limites clássicos de KLENERMAN (30 graus de varo, 15 graus de rotação, menos de 3 cm), os mesmos do Skeletal Trauma (5ª ed., cap. 47, p. 1389) e, no varo e no encurtamento de 2,5 cm, do HEBERT (5ª ed., cap. 46), e a resposta provável do site é "certo". O Rockwood 10 (cap. 37) não sustenta 30 graus de desvio angular: ele aceita no máximo 15 a 20 graus em qualquer direção e 15 graus de varo na série de SARMIENTO. Rotação de 15 graus e encurtamento de 2 a 3 cm estão dentro do que o capítulo aceita.
 !fim
 
 ## As indicações de cirurgia
@@ -321,7 +331,7 @@ Radiografias do úmero inteiro (AP neutro e oblíqua-perfil), medida do comprime
 
 - **Implante clássico: placa DCP estreita de 4,5 mm** ou **LC-DCP de 4,5 mm** (de contato limitado). A DCP larga já foi usada pelos parafusos escalonados, mas no úmero estreito a **estreita** permite parafusos divergentes com o mesmo efeito; a LC-DCP é mais fácil de moldar, protege mais o periósteo e reduz a proteção de tensões (stress shielding).
 - **Pelo menos três a quatro furos de cada lado** da fratura; **placa de 8 a 10 furos** no traço simples; na cominução, **placa em ponte** sobre toda a área cominuta, mais longa.
-- **Sem parafuso de tração: quatro parafusos (oito corticais) acima e abaixo.** Com um bom parafuso interfragmentar, **três parafusos (seis corticais)** de cada lado bastam. Cominução, osso ruim ou má pega pedem placa mais longa e mais parafusos.
+- **Sem parafuso de tração: quatro parafusos (oito corticais) acima e abaixo.** Com um bom parafuso interfragmentar, **três parafusos (seis corticais)** de cada lado bastam. Cominução, osso ruim ou má pega pedem placa mais longa e mais parafusos. Na fratura periprotética abaixo de uma haste umeral bem fixa, o capítulo 38 (Periprosthetic Fractures of the Upper Extremity, seção Open Reduction and Internal Fixation) aceita **seis corticais (três parafusos bicorticais) acima e abaixo**, com a fixação ultrapassando a fratura em dois diâmetros corticais e combinando cerclagens, parafusos bloqueados unicorticais e corticais em volta da haste; ou seja, menos que as oito do cap. 37 sem parafuso de tração.
 - **Traço simples: placa em compressão**, pelos furos de compressão dinâmica ou por parafuso de tração. Fratura cominuta: **ponte**.
 - **Placa bloqueada:** o primeiro estudo biomecânico não mostrou vantagem sobre a convencional, apesar do custo; os seguintes mostraram desempenho melhor no **osso osteoporótico**, com **dois parafusos bloqueados** por segmento bastando. A biomecânica apoia acrescentar **1 ou 2 parafusos bloqueados** de cada lado no osso osteopênico ou na cominução.
 - **Duas placas de 3,5 mm ortogonais** (ou miniplacas bloqueadas): menos volumosas e **mais rígidas à rotação**, o esforço que mais carrega o úmero (rotação interna e externa do ombro). Num modelo de elementos finitos, a melhor configuração foi **uma placa de nove furos anterior e uma de sete furos lateral** (KOSMOPOULOS). São mais bem toleradas no paciente magro.
@@ -381,7 +391,7 @@ A MIPO ganhou espaço nas últimas duas décadas, mas está **perdendo terreno**
 **A via anterior, a mais usada,** serve à fratura do terço médio, com duas janelas (figura 37-20):
 
 - **Proximal:** 3 a 5 cm, entre a borda lateral do bíceps proximal e a borda medial do deltoide.
-- **Distal:** 3 a 5 cm, ao longo da **borda lateral do bíceps, 5 cm acima da prega do cotovelo**. Identifica-se o intervalo entre **bíceps e braquial**, com cuidado com o **musculocutâneo**, e divide-se o braquial na linha média: o **musculocutâneo vai com a metade medial**, e a **metade lateral protege o radial**. APIVATTHAKAKUL confirmou em cadáver que o musculocutâneo corre risco na janela distal pequena e recomenda **supinação completa do antebraço** e abertura suficiente para ver e proteger o nervo.
+- **Distal:** 3 a 5 cm, ao longo da **borda lateral do bíceps, 5 cm acima da prega do cotovelo**. Identifica-se o intervalo entre **bíceps e braquial**, com cuidado com o **musculocutâneo**, e divide-se o braquial na linha média: o **musculocutâneo vai com a metade medial**, e a **metade lateral protege o radial**. APIVATTHAKAKUL confirmou em cadáver que o musculocutâneo corre risco na janela distal pequena e recomenda **supinação completa do antebraço** e abertura suficiente para ver e proteger o nervo. Essa é a leitura do capítulo. O artigo original (APIVATTHAKAKUL, Injury, 2005; PubMed 15755436) liga a supinação a outro nervo: em dez braços de cadáver, com as incisões feitas em supinação completa, o radial ficou a **2 a 4,9 mm da placa (3,2 mm em média)** e se aproximou mais **0 a 3 mm na pronação**; por isso os autores mandam manter o antebraço em **supinação completa durante a passagem da placa para reduzir o risco ao radial** e evitar força excessiva ao afastar a metade lateral do braquial com o radial na incisão distal.
 - Um túnel **extraperiosteal** é aberto junto ao osso; a placa (DCP ou LCP de 4,5 mm) é amarrada à ponta do instrumento de tunelização e puxada de uma janela à outra; um parafuso num fragmento principal, redução, um parafuso no outro, conferência e o restante.
 
 A placa **lateral** (duas ou três janelas, a proximal 3 a 5 cm abaixo do acrômio e a distal entre braquiorradial e braquial, com uma janela média entre bíceps e tríceps, deixando uma camada de músculo entre o radial e a placa) e a **posterior** (duas janelas, com exploração do radial) também foram descritas, com risco maior ao radial; os autores não as usam.
@@ -403,7 +413,7 @@ conceito: Na MIPO anterior (LIVANI e BELANGERO), o nervo a identificar na janela
 como: O TEOT 2023 perguntou o nervo com maior risco na técnica de LIVANI e BELANGERO (musculocutâneo, contra axilar, radial e mediano). A TECOC/SBCOC (sem ano) cruzou mediano ou musculocutâneo com incisão proximal ou distal. A SBOT-SP (sem ano) perguntou que nervo a supinação completa protege na via distal.
 armadilha: Radial: é o nervo mais temido nas vias posterior e lateral; na via anterior ele fica atrás da metade lateral do braquial.
 armadilha: Musculocutâneo na incisão proximal: o nervo cruza o campo na janela distal, perto do cotovelo.
-alerta: No capítulo, o nome de LIVANI e BELANGERO aparece no estudo que mostrou o radial muito perto do implante (4 mm em média nas fraturas distais), e o texto chama o dano ao radial e ao musculocutâneo de risco "substancial". O gabarito do TEOT 2023 (musculocutâneo) está preservado e é sustentado pelo próprio capítulo: na técnica anterior, o nervo que exige identificação na janela distal é o musculocutâneo. Já a questão da SBOT-SP (supinação) é sustentada sem ressalva pelo texto de APIVATTHAKAKUL citado no capítulo.
+alerta: No capítulo, o nome de LIVANI e BELANGERO aparece no estudo que mostrou o radial muito perto do implante (4 mm em média nas fraturas distais), e o texto chama o dano ao radial e ao musculocutâneo de risco "substancial". O gabarito do TEOT 2023 (musculocutâneo) está preservado e é sustentado pelo próprio capítulo: na técnica anterior, o nervo que exige identificação na janela distal é o musculocutâneo. Na questão da SBOT-SP (supinação), o gabarito musculocutâneo segue o capítulo, que liga a supinação completa à proteção desse nervo na janela distal; o artigo original de APIVATTHAKAKUL (Injury, 2005; PubMed 15755436), porém, recomenda a supinação completa durante a passagem da placa para afastar o radial (3,2 mm da placa em média, mais perto na pronação). A banca seguiu a leitura do capítulo; quem leu o artigo pode ter marcado radial.
 !fim
 
 # Haste intramedular {radar=confirmado}
