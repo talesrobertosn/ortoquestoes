@@ -1,6 +1,6 @@
 ---
 id: rockwood10-64-pilao-tibial
-versao: 2
+versao: 3
 titulo: Fratura do pilão tibial
 especialidade: trauma
 acesso: gratis
@@ -47,6 +47,8 @@ Necrose de pele de espessura total depois de duas incisões longas e paralelas, 
 ## Via anterior direta
 
 Incisão de **8 a 10 cm** na linha média do tornozelo, com a maior parte acima da articulação; a parte proximal fica um pouco **lateral à crista da tíbia** (cicatriz menos dolorosa) e a distal, de 3 a 4 cm, termina na altura da **articulação talonavicular**. Logo abaixo da pele, o **nervo fibular superficial cruza o campo vindo de lateral**. O retináculo dos extensores é aberto na linha da incisão, expondo o **tibial anterior** e o **extensor longo do hálux**. No nível da articulação, a **artéria tibial anterior e o nervo fibular profundo** ficam **logo medialmente ao extensor longo do hálux**; o feixe vai **para lateral junto com o extensor longo do hálux**, e o tibial anterior vai para medial. A cápsula é aberta longitudinalmente, de preferência pelas roturas já existentes.
+
+O extensor longo do hálux cruza o feixe na frente do tornozelo, e por isso os dois capítulos parecem dizer coisas opostas. O capítulo 64 (seção da via anterior direta) descreve o feixe **na altura da articulação**: a artéria tibial anterior e o nervo fibular profundo ficam **medialmente** ao extensor longo do hálux. O capítulo 65 (Ankle Fractures, seção de anatomia aplicada), ao listar o que passa pela frente do tornozelo, já chama a artéria de **dorsal do pé** e põe o nervo fibular profundo e essa artéria **lateralmente** ao extensor longo do hálux, entre ele e o extensor longo dos dedos; é a relação do **dorso do pé**. Na via anterior direta, então, o feixe é procurado do lado medial do tendão na articulação; quem estende a incisão para o dorso do pé o encontra do lado lateral.
 
 As vantagens: vê o **plafond inteiro** (medial, central e lateral, inclusive o CHAPUT), aceita placas medial, anterior e lateral, permite incisões complementares (medial direta para uma placa longa, lateral para a fíbula, posteromedial e posterolateral) e é a via padrão de uma futura **artrodese ou prótese** do tornozelo.
 
@@ -559,6 +561,6 @@ armadilha: Valgo: é o colapso da placa medial isolada com fíbula cominuta não
 - **Fragmentos:** maléolo medial, CHAPUT anterolateral (tibiofibular anterior), VOLKMANN posterolateral (tibiofibular posterior).
 - **Colunas e fíbula:** medial, lateral (com a fíbula, 20% a 30% da carga) e posterior; valgo deixa a fíbula cominuta e a placa vai lateral; varo, fíbula por tração e placa medial; placa anterolateral sozinha sem fíbula colapsa em varo.
 - **Cirurgia:** articulação antes da diáfise; de trás para a frente, pelo VOLKMANN (43C vira 43B); parafusos de tração antes da placa; enxerto só com falha; placas a 90-90; distrator com pino de 6 mm no colo do tálus.
-- **Vias:** anterior direta (feixe medial ao extensor longo do hálux, vai lateral com ele; fibular superficial cruza de lateral); anteromedial (lateral à crista, medial ao tibial anterior); anterolateral (para o terceiro e quarto metatarsais; feixe e extensores vão medial); posterolateral (entre fibulares e flexor longo do hálux; sural na pele); posteromedial (nervo tibial no túnel do tarso). Pontes de pele de 7 cm, nunca menos de 5 cm; incisões paralelas longas necrosam.
+- **Vias:** anterior direta (feixe medial ao extensor longo do hálux na articulação e lateral a ele no dorso do pé, vai lateral com ele; fibular superficial cruza de lateral); anteromedial (lateral à crista, medial ao tibial anterior); anterolateral (para o terceiro e quarto metatarsais; feixe e extensores vão medial); posterolateral (entre fibulares e flexor longo do hálux; sural na pele); posteromedial (nervo tibial no túnel do tarso). Pontes de pele de 7 cm, nunca menos de 5 cm; incisões paralelas longas necrosam.
 - **Resultados:** artrose comum, aparece nos dois primeiros anos (RÜEDI), correlaciona-se pouco com a função; artrodese de 5% a 26%; SF-36 pior que doenças crônicas.
 - **Complicações:** necrose superficial é a ferida mais comum; implante estável fica; pseudartrose metafisária em varo com encurtamento medial.

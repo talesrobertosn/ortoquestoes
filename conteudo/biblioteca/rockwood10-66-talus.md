@@ -1,6 +1,6 @@
 ---
 id: rockwood10-66-talus
-versao: 5
+versao: 6
 titulo: Fraturas do tálus e do calcâneo
 especialidade: trauma
 acesso: gratis
@@ -62,6 +62,19 @@ As fraturas do tálus são **2% das fraturas do membro inferior** e **5% a 7% da
 - **Corpo:** mecanismo parecido, só que mais posterior: compressão axial com o tálus subluxado para a frente e o pilão anterior batendo no domo. Numa série inglesa recente, foi a fratura mais comum do tálus (47%), seguida do colo isolado (20%) e do processo lateral isolado (9%); na classificação, o capítulo diz que a mais publicada e comum é a do colo.
 - **Cabeça:** compressão ou carga axial através da talonavicular, ou cisalhamento por subluxação ou luxação da talonavicular, em **inversão com flexão plantar** ou em **eversão com dorsiflexão** (Rockwood, cap. 66, seção Talar Head Fractures); o traço pode ser axial ou coronal (figura 66-4).
 - **Processos:** energia menor, com rotação e inversão ou eversão (ver a seção dos processos).
+
+O HEBERT (cap. 70, Quadro 70.1) resume a mesma ideia num quadro de memorização, ligando cada força a uma parte do tálus. Vale como mapa rápido para a prova, que gosta de perguntar "qual mecanismo para qual fratura":
+
+| Força (HEBERT, Quadro 70.1) | Parte do tálus que quebra |
+|---|---|
+| Flexão dorsal | colo |
+| Compressão vertical | corpo |
+| Compressão longitudinal | cabeça |
+| Flexão plantar | processo posterior |
+| Eversão | processo lateral |
+| Inversão | lesão osteocondral |
+
+O quadro bate com o Rockwood no colo (dorsiflexão), no corpo (compressão axial) e na cabeça (carga axial pela talonavicular), e com o próprio HEBERT no processo posterior, que no texto quebra sobretudo por compressão na hiperflexão plantar (mais comum que a avulsão em inversão). No processo lateral, o quadro diz eversão, mas o texto do mesmo capítulo (seção das fraturas do processo lateral) fala em inversão com dorsiflexão forçada; o Rockwood fica com a eversão e a dorsiflexão, com uma série em inversão (ver a seção dos processos). Na prova, eversão com dorsiflexão é a resposta mais segura para o processo lateral.
 
 ## O que vem junto
 
@@ -217,7 +230,7 @@ como: Uma prova do CET-PR perguntou o desvio ósseo mais comum na fratura do col
 
 ## Processo lateral: a fratura do snowboarder
 
-Mecanismo: **carga axial com o retropé em eversão e o tornozelo em dorsiflexão**, reproduzido em cadáver; outro estudo obteve fraturas semelhantes com carga axial, **rotação externa e inversão**, também em dorsiflexão. Os outros livros não concordam entre si. O Campbell (cap. 93, nas fraturas do processo lateral) fala em **carga axial, dorsiflexão, rotação externa e eversão**, lembra que a fratura passa despercebida de início em até 50% dos casos e descreve o **sinal do V** de VON KNOCH (o contorno em V do processo interrompido na radiografia). O HEBERT (cap. 70) dá como mecanismo a **inversão e a dorsiflexão forçadas** do pé, com a clínica de uma entorse em inversão. Com mais energia, o fragmento cresce e cominui, e a subtalar pode ficar incongruente ou instável. A clínica é a de uma entorse com dor no **seio do tarso**; a incidência do **encaixe** mostra a fratura (figura 66-5), e a TC ou a RM confirmam quando a radiografia é negativa.
+Mecanismo: **carga axial com o retropé em eversão e o tornozelo em dorsiflexão**, reproduzido em cadáver; outro estudo obteve fraturas semelhantes com carga axial, **rotação externa e inversão**, também em dorsiflexão. Os outros livros não concordam entre si. O Campbell (cap. 93, nas fraturas do processo lateral) fala em **carga axial, dorsiflexão, rotação externa e eversão**, lembra que a fratura passa despercebida de início em até 50% dos casos e descreve o **sinal do V** de VON KNOCH (o contorno em V do processo interrompido na radiografia). O HEBERT (cap. 70) dá como mecanismo, no texto, a **inversão e a dorsiflexão forçadas** do pé, com a clínica de uma entorse em inversão, mas no Quadro 70.1 do mesmo capítulo liga o processo lateral à **eversão**. Com mais energia, o fragmento cresce e cominui, e a subtalar pode ficar incongruente ou instável. A clínica é a de uma entorse com dor no **seio do tarso**; a incidência do **encaixe** mostra a fratura (figura 66-5), e a TC ou a RM confirmam quando a radiografia é negativa.
 
 - **Sem cirurgia:** fragmento pequeno, com pouco ou nenhum desvio: carga protegida e movimento precoce, com controle radiográfico.
 - **Cirurgia:** fragmento **maior que 1 cm** ou desvio da subtalar; a **instabilidade subtalar** criada por fragmento grande é **indicação absoluta**. Fragmentos pequenos presos na subtalar podem ser retirados sem criar instabilidade. A artrodese subtalar primária na cominução irreconstruível tem papel limitado.
@@ -272,7 +285,7 @@ Qualquer tensão de pele pede **redução imediata** e tala; atraso na redução
 ## Pseudartrose, consolidação viciosa e artrose
 
 - **Retardo e pseudartrose do colo:** raros. Retardo é a falta de consolidação após **6 meses**; a pseudartrose fica entre **0% e 4%** (média de **2,5%**). Sem necrose ou artrose, revisão com enxerto; com necrose, enxerto em bloco e artrodeses.
-- **Consolidação viciosa em varo:** PETERSON **32%**, LORENTZEN **28%**, ambos com função ruim. A coluna medial curta força a subtalar em varo, com **supinação fixa do antepé e sobrecarga lateral**. A causa é não considerar a **cominução medial**; a prevenção é a placa lateral com o parafuso medial de posição. Tratamento: osteotomia de abertura medial do colo se não há artrose; senão, artrodese subtalar com osteotomias.
+- **Consolidação viciosa em varo:** PETERSON **32%**, LORENTZEN **28%**, ambos com função ruim (Rockwood, cap. 66, seção Malunion of the Talar Neck). O capítulo lembra que a taxa real é difícil de medir, porque o alinhamento do colo é difícil de avaliar no intraoperatório, mesmo com a incidência de CANALE. A coluna medial curta força a subtalar em varo, com **supinação fixa do antepé e sobrecarga lateral**. A causa é não considerar a **cominução medial**; a prevenção é a placa lateral com o parafuso medial de posição. Tratamento: osteotomia de abertura medial do colo se não há artrose; senão, artrodese subtalar com osteotomias.
 - **Consolidação viciosa dorsal:** a hiper-redução de uma cominução dorsal tira o **ângulo de declinação**, com impacto anterior do tornozelo e, de novo, varo do retropé.
 - **Artrose pós-traumática:** **46% a 97%** após fratura do colo, com ou sem necrose; a rigidez do tornozelo e da subtalar é esperada. Tratamento inicial conservador; infiltrações guiadas apontam a articulação doente. Artrodese isolada do tornozelo, da subtalar ou da talonavicular, ou **tibiotalocalcaneana** quando tornozelo e subtalar estão comprometidos, com aloenxerto de cabeça femoral e haste retrógrada nos colapsos; a artrodese de **BLAIR** (enxerto deslizante da tíbia distal no colo e cabeça) é uma alternativa; espaçadores de tântalo e a **prótese total do tálus** são opções de salvamento ainda sem seguimento longo.
 - **Resultados:** SANDERS mostrou **25% de reoperação em 1 ano e 50% em 10 anos** após a fixação das fraturas desviadas; as cirurgias secundárias mais comuns são a artrodese subtalar ou tríplice, e o motivo mais comum é a artrose, ligada à cominução, aos tipos III e IV e às lesões ipsilaterais.
