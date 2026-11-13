@@ -213,7 +213,7 @@ A metáfise distal é muito mais larga que a haste, e o malalinhamento distal po
 - **Fixar primeiro a fíbula** com traço simples, sobretudo nas fraturas muito distais: dá comprimento e alinhamento. A fíbula mal reduzida impede reduzir a tíbia, e a fíbula fixa mantém o comprimento lateral, mas **não impede o colapso em varo**. Um relato achou oito vezes mais pseudartrose com placa na fíbula junto com a haste; estudos posteriores não confirmaram esse tamanho de risco. Continua controverso.
 - **Placa ou haste?** Num ensaio randomizado (VALLIER), a haste teve mais malalinhamento que a placa nas fraturas metafisárias distais (**23% contra 8,3%**), com infecção, pseudartrose e retirada de material semelhantes e sem diferença nos escores; quem recebeu haste teve um pouco mais de dor no joelho (31% contra 22%) e no tornozelo (40% contra 32%).
 
-!questoes treino=trauma-1709
+!questoes relacionadas=trauma-0911 treino=trauma-1709
 conceito: Na fratura distal, o fio-guia termina na cicatriz fisária, lateral ao centro do pilão no AP e centrado no perfil; a placa da fíbula simples ajuda o comprimento, mas não impede o varo.
 como: Ainda não caiu; é o par distal do ponto de entrada proximal, cobrado em quatro provas.
 armadilha: Medial ao centro no AP, ou anterior no perfil: inclinam o fragmento distal.
