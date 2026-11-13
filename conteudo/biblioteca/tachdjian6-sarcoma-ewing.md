@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-sarcoma-ewing
-versao: 1
+versao: 2
 titulo: Sarcoma de EWING
 especialidade: tumores
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição
 capitulo: Capítulo 26 · Malignant Bone Tumors
 autores: Megan E. ANDERSON e Mark C. GEBHARDT
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors, seção Ewing Sarcoma and Peripheral Primitive Neuroectodermal Tumor, p. 1061 a 1071, e o início de Osteosarcoma, p. 1049) e cap. 23 (Infections of the Musculoskeletal System, osteomielite subaguda e classificação de ROBERTS, p. 968 e 969); Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone, seção Ewing Sarcoma, p. 979 a 981, osteossarcoma de pequenas células, p. 972, e linfoma, p. 987 a 989) e cap. 26 (General Principles of Tumors: história, diferencial das lesões diafisárias, laboratório, PET, estadiamento de ENNEKING e AJCC e radioterapia, p. 867 aprox., 869, 869.e1, 871, 874, 875 e 878); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (Tumores ósseos malignos, sarcoma de EWING) e cap. 7 (mão), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors, seção Ewing Sarcoma and Peripheral Primitive Neuroectodermal Tumor, p. 1061 a 1071, e o início de Osteosarcoma, p. 1049) e cap. 23 (Infections of the Musculoskeletal System, osteomielite subaguda e classificação de ROBERTS, p. 968 e 969); Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone, seção Ewing Sarcoma, p. 979 a 981, osteossarcoma de pequenas células, p. 972, e linfoma, p. 987 a 989) e cap. 26 (General Principles of Tumors: história, diferencial das lesões diafisárias, laboratório, PET, estadiamento de ENNEKING e AJCC e radioterapia, p. 868, 869, 869.e1, 871, 874, 875 e 878); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (Tumores ósseos malignos, sarcoma de EWING) e cap. 7 (mão), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
 subtemas: Sarcoma de Ewing
 resumo: Tumor de pequenas células redondas azuis da família PNET, terceiro maligno primário não hematológico do osso, mas o mais comum abaixo dos 10 anos; 10 a 20 anos (5 a 25), leve predomínio masculino, raríssimo em negros; pelve e membro inferior (fêmur, ílio, fíbula), diáfise dos ossos longos (Campbell: começa na metáfise e invade a diáfise); dor, massa grande de partes moles, febre, leucocitose e VHS imitando osteomielite (ROBERTS IV); lesão permeativa com casca de cebola; PAS positivo, reticulina negativa, CD99 (MIC2), t(11;22) EWS-FLI1 em mais de 90%; metástase em 25% ao diagnóstico, pulmão primeiro e osso segundo; todo EWING é de alto grau (AJCC II, A até 8 cm); quimioterapia VDC com ifosfamida e etoposídeo, controle local por cirurgia ou radioterapia (muito radiossensível, como linfoma e mieloma); pior prognóstico com metástase, tumor grande e central, febre e anemia, LDH alta, idade acima de 12 a 15 anos, sexo masculino e necrose abaixo de 90%; grau histológico e tipo de translocação não pesam.
 ---
@@ -86,10 +86,10 @@ Uma questão clássica compara os dois tumores. O osteossarcoma de alto grau é 
 ## Sexo e raça
 
 - **Sexo:** **leve predomínio masculino** (Campbell, p. 979; Tachdjian, p. 1062). O sexo masculino também aparece como fator de pior prognóstico no Campbell (p. 981).
-- **Raça:** o EWING é **excessivamente raro em afrodescendentes** (Campbell, p. 980), e o Tachdjian (p. 1062) estende a raridade às populações negras dos Estados Unidos e da África e às **crianças de origem asiática**. No capítulo de princípios gerais, o Campbell (cap. 26, p. 867 aprox.) usa o EWING como a única exceção à regra de que a raça tem pouca importância no diagnóstico dos tumores ósseos.
+- **Raça:** o EWING é **excessivamente raro em afrodescendentes** (Campbell, p. 980), e o Tachdjian (p. 1062) estende a raridade às populações negras dos Estados Unidos e da África e às **crianças de origem asiática**. No capítulo de princípios gerais, o Campbell (cap. 26, p. 868) usa o EWING como a única exceção à regra de que a raça tem pouca importância no diagnóstico dos tumores ósseos.
 - **Fatores predisponentes:** **nenhum conhecido** (Campbell, p. 980). Ao contrário do osteossarcoma, não há síndromes hereditárias clássicas, PAGET ou radiação prévia na lista.
 
-!tabela Perfil epidemiológico do EWING (Campbell 15, cap. 29, p. 979 e 980; cap. 26, p. 867 aprox. e 869; Tachdjian 6, cap. 26, p. 1049 e 1062; SIZÍNIO 5, cap. 30)
+!tabela Perfil epidemiológico do EWING (Campbell 15, cap. 29, p. 979 e 980; cap. 26, p. 868 e 869; Tachdjian 6, cap. 26, p. 1049 e 1062; SIZÍNIO 5, cap. 30)
 | Aspecto | O que os livros dizem | O detalhe que cai |
 | --- | --- | --- |
 | posição geral | terceiro maligno primário não hematológico do osso | depois de osteossarcoma e condrossarcoma |
@@ -217,7 +217,7 @@ O Campbell (cap. 26, p. 869 e 869.e1) organiza o diferencial das **lesões diafi
 
 ## RM do osso inteiro
 
-Os dois livros pedem **RM do osso inteiro**. O **Tachdjian** (p. 1067) justifica: o tumor pode ocupar **toda a medular** e **skip podem raramente existir**; **T1** avalia a medula, **T2** as partes moles, e a TC é melhor para a cortical. O **Campbell** (p. 980) diz que **skip não são relatadas no EWING**, ao contrário do osteossarcoma, mas que grande parte do osso, ou o **osso inteiro**, costuma estar acometida, com massa de partes moles **muito grande**. Divergem na skip, convergem na conduta. Após a quimioterapia, a radiografia mostra **mais ossificação** e a RM, **redução acentuada da massa** (Campbell, p. 981).
+Os dois livros pedem **RM do osso inteiro**. O **Tachdjian** (p. 1067) justifica: o tumor pode ocupar **toda a medular** e **skip podem raramente existir**; **T1** avalia a medula, **T2** as partes moles, e a TC é melhor para a cortical. O **Campbell** (p. 980) diz que **skip não são relatadas no EWING**, ao contrário do osteossarcoma (em que a skip pode estar no mesmo osso ou do outro lado da articulação e tem o mesmo mau prognóstico da metástase a distância; Campbell, p. 975), mas que grande parte do osso, ou o **osso inteiro**, costuma estar acometida, com massa de partes moles **muito grande**. Divergem na skip, convergem na conduta. Após a quimioterapia, a radiografia mostra **mais ossificação** e a RM, **redução acentuada da massa** (Campbell, p. 981).
 
 !tabela Que exame responde a cada pergunta no EWING (Tachdjian 6, cap. 26, p. 1067; Campbell 15, cap. 29, p. 980; cap. 26, p. 871; SIZÍNIO 5, cap. 30)
 | Exame | Pergunta que responde | Detalhe |

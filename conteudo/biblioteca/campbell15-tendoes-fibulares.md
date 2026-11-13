@@ -1,6 +1,6 @@
 ---
 id: campbell15-tendoes-fibulares
-versao: 1
+versao: 2
 titulo: Tendões fibulares e outras tendinopatias do pé e tornozelo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª ed. (2025)
 capitulo: Capítulo 94 · Sports Injuries of the Ankle (seção Peroneal Tendon Subluxation and Dislocation), com o Capítulo 88 · Disorders of the Tendons and Fascia and Adolescent and Adult Acquired Flatfoot Deformity (seções Achilles Tendon, Anterior Tibial Tendon, Peroneal Tendons e Flexor Tendons), o Capítulo 53 · Traumatic Disorders (seções Peroneal Tendons e Rupture of Achilles Tendon) e o Capítulo 1 · Surgical Techniques
 autores: David R. RICHARDSON (cap. 94); Benjamin J. GREAR (cap. 88); David L. BERNHOLT e Frederick M. AZAR (cap. 53); Michael J. BEEBE (cap. 1)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 94, p. 4136, 4151, 4157 e 4161 (ligamento calcaneofibular sob os fibulares, fibular terceiro, remissão ao cap. 88); cap. 88, p. 3811 a 3813 (Tabela 88.1 de JOHNSON e STROM) e p. 3846 a 3870 (tendão calcâneo, Box 88.1, Tabela 88.3; tibial anterior; fibulares, Tabela 88.4, Box 88.2, técnicas 88.22 a 88.26; flexor longo do hálux); cap. 53, p. 2252 a 2256 (ruptura aguda do tendão calcâneo) e p. 2291 a 2294 (luxação dos fibulares, classificação de ODEN, Tabela 53.6, Box 53.11, técnicas 53.35 a 53.38); cap. 1, p. 16 e 17 (acesso posterolateral); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 (acesso posterolateral, edição digital sem página impressa no cabeçalho) e cap. 67, p. 3041 (luxação dos fibulares na fratura do calcâneo); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 21.1 (doença de HAGLUND e os trigonum) e cap. 21.2 (Lesões tendíneas), edição digital sem paginação. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 94, p. 4136, 4151, 4157 e 4161 (ligamento calcaneofibular sob os fibulares, fibular terceiro, remissão ao cap. 88); cap. 88, p. 3811 a 3813 (Tabela 88.1 de JOHNSON e STROM) e p. 3846 a 3870 (tendão calcâneo, Box 88.1, Tabela 88.3; tibial anterior; fibulares, Tabela 88.4, Box 88.2, técnicas 88.22 a 88.26; flexor longo do hálux); cap. 53, p. 2252 a 2256 (ruptura aguda do tendão calcâneo) e p. 2291 a 2294 (luxação dos fibulares, classificação de ODEN, Tabela 53.6, Box 53.11, técnicas 53.35 a 53.38); cap. 1, p. 16 e 17 (acesso posterolateral); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 (acesso posterolateral, edição digital sem página impressa no cabeçalho) e cap. 67, seção Peroneal Tendon Dislocation (luxação dos fibulares na fratura do calcâneo; edição digital sem página impressa no cabeçalho); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 21.1 (doença de HAGLUND e os trigonum) e cap. 21.2 (Lesões tendíneas), edição digital sem paginação. As páginas citadas são as impressas.
 subtemas: Tendões fibulares e outras tendinopatias
 resumo: Tendinite reversível e inflamatória contra tendinose irreversível sem inflamação; no túnel retromaleolar o fibular curto fica junto à fíbula e o longo atrás, sob o retináculo fibular superior, que é a restrição primária; luxação anterior por contração em dorsiflexão, classificação de ODEN (grau 1 mais comum, grau 3 com "fleck" ósseo, grau 4 mais raro) e tratamento cirúrgico com reparo do retináculo e aprofundamento do sulco; rotura longitudinal na face profunda do curto (até 50% tubulariza, acima disso tenodese ao longo); teste seletivo do longo com eversão ativa contra a cabeça do 1º metatarso empurrada para dorsal; os peroneum doloroso e migrado; acesso posterolateral entre fibulares e flexor longo do hálux; tibial anterior com ruptura espontânea acima de 45 anos sob o ramo superomedial do retináculo extensor inferior; HAGLUND como exostose posterossuperior do calcâneo; conservador antes de operar a tendinopatia insercional; reforço da sutura aguda do calcâneo sem benefício sobre a sutura simples; estágio IV do tibial posterior com valgo do tornozelo.
 ---
@@ -94,7 +94,7 @@ Na frente, o tibial anterior é o tendão mais medial, seguido do extensor longo
 conceito: No corte axial, o fibular curto fica achatado junto à fíbula e o longo atrás dele; o flexor longo do hálux é o tendão posterior com músculo baixo, no túnel entre os tubérculos do tálus; o longo cruza a planta pelo sulco do cuboide até o 1º metatarso; o fibular terceiro é anterior e passa sob o retináculo extensor inferior.
 como: O TARO 2026 mostrou duas setas numa imagem (flexor longo do hálux e fibular curto) e outra com o retináculo inferior dos extensores e o fibular terceiro; o TEOT 2024, a estrutura plantar indicada (fibular longo, contra LISFRANC e tibial posterior).
 armadilha: Confundir o flexor longo do hálux com o tibial posterior (o tibial posterior fica colado ao maléolo medial), trocar curto por longo no sulco, ou marcar "fibular quinto", nome que nenhum dos livros descreve.
-alerta: As imagens dessas questões não foram vistas; o resumo explica a anatomia que os livros descrevem. O "fibular quinto" da `pe-tornozelo-0304` não aparece em nenhum dos livros conferidos.
+alerta: As imagens foram conferidas. Na `pe-tornozelo-0303` (vista posterior), a seta 1 aponta o tendão do lado medial do tendão calcâneo, junto ao feixe vascular (flexor longo do hálux), e a seta 2 o tendão do lado lateral, atrás do maléolo lateral (fibular curto), de acordo com o gabarito C. Na `pe-tornozelo-0304` (vista lateral), a seta 1 aponta a faixa transversa sobre o tarso (retináculo inferior dos extensores) e a seta 2 o tendão dorsolateral que segue para o 5º metatarso (fibular terceiro), de acordo com o gabarito A. O "fibular quinto" não aparece em nenhum dos livros conferidos.
 !fim
 
 # O acesso posterolateral do tornozelo {radar=confirmado}
@@ -158,7 +158,7 @@ O ventre baixo do curto e o fibular quarto agem por **superlotação**: ocupam o
 
 As luxações são **incomuns e frequentemente esquecidas**; mimetizam uma entorse e podem acontecer junto com ela: **só 60%** são diagnosticadas na primeira avaliação (cap. 53, p. 2291). Predominam em **jovens atletas** (esqui, futebol, basquete, patinação, ginástica). O HEBERT credita a primeira descrição a MONTEGGIA (1803).
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67), traz outro cenário: a **fratura do calcâneo**. A luxação dos fibulares é típica dos padrões de **depressão articular**, em que a parede lateral explode e encurta, e das fraturas-luxações; **quanto mais lateral a linha articular, maior a chance de lesão do retináculo**. O diagnóstico costuma ser feito no intraoperatório, e o reparo fixa a manga periosteal na borda posterolateral da fíbula (p. 3041).
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67), traz outro cenário: a **fratura do calcâneo**. A luxação dos fibulares é típica dos padrões de **depressão articular**, em que a parede lateral explode e encurta, e das fraturas-luxações; **quanto mais lateral a linha articular, maior a chance de lesão do retináculo**. O diagnóstico costuma ser feito no intraoperatório, e o reparo fixa a manga periosteal na borda posterolateral da fíbula (seção Peroneal Tendon Dislocation).
 
 # A classificação de ECKERT e DAVIS modificada por ODEN {radar=oportunidade}
 
@@ -288,7 +288,7 @@ O tratamento não operatório (repouso, mudança da técnica de dança, anti-inf
 conceito: O flexor longo do hálux é o tendão posterior que corre no túnel fibro-ósseo entre os tubérculos do tálus, com o flexor longo dos dedos à frente e o os trigonum lateral à entrada do túnel.
 como: O TEOT 2023 apontou um tendão numa imagem e deu como opções tibial posterior, flexor longo do hálux, flexor longo dos dedos e flexor superficial dos dedos.
 armadilha: Marcar "flexor superficial dos dedos", que não aparece entre os músculos dos compartimentos da perna descritos pelo HEBERT, ou o tibial posterior, que fica colado ao maléolo medial.
-alerta: A imagem da `pe-tornozelo-0116` não foi vista; o gabarito B é compatível com a anatomia descrita.
+alerta: A imagem da `pe-tornozelo-0116` foi conferida: a seta aponta um tendão posterior, à frente do tendão calcâneo e atrás dos que contornam o maléolo, compatível com o flexor longo do hálux do gabarito B.
 !fim
 
 # Tibial anterior {radar=confirmado}
@@ -347,7 +347,7 @@ A cirurgia vai do mínimo ao máximo (Campbell, p. 3848 e 3849): na doença prec
 conceito: HAGLUND é a exostose posterossuperior da tuberosidade do calcâneo, anterior ao tendão; a tendinopatia insercional é tratada de forma conservadora e prolongada, e a cirurgia vem só depois da falha.
 como: O CET-PR perguntou a definição de HAGLUND; o TARO 2024 deu um maratonista de 54 anos com dor posterior, hiperemia e contratura do gastrocsóleo, pedindo diagnóstico e conduta; uma prova de Ortopedia testou afirmações sobre a tendinopatia insercional.
 armadilha: Chamar de HAGLUND a calcificação insercional ou a bursite; achar que o salto alto piora (elevar o calcanhar alivia) ou que a maioria é cirúrgica.
-alerta: Na `pe-tornozelo-0206` o gabarito oficial (C, ressecção cirúrgica) diverge dos livros: Campbell (p. 3848) e HEBERT só indicam cirurgia após falha do não operatório (seis meses no HEBERT), o que favorece a alternativa D; talvez a banca tenha considerado as imagens, que não foram vistas. Na `pe-tornozelo-0100`, nenhum livro traz a prevalência de 50% da bursa pré-aquileana (gabarito C); o HEBERT descarta A (o salto elevado alivia) e D (a insercional é mais comum em idosos; 30 a 40 anos é o pico da ruptura aguda no Campbell, p. 2252), e o Campbell descarta B.
+alerta: Na `pe-tornozelo-0206` o gabarito oficial (C, ressecção cirúrgica) diverge dos livros: Campbell (p. 3848) e HEBERT só indicam cirurgia após falha do não operatório (seis meses no HEBERT), o que favorece a alternativa D. A imagem da questão é a Fig. 88.53 do Campbell 15 (p. 3847, insertional Achilles tendinitis: aspecto clínico e radiografias com calcificação intratendínea), que confirma o diagnóstico de tendinopatia insercional, mas não muda a ordem do tratamento que o mesmo capítulo dá. Na `pe-tornozelo-0100`, nenhum livro traz a prevalência de 50% da bursa pré-aquileana (gabarito C); o HEBERT descarta A (o salto elevado alivia) e D (a insercional é mais comum em idosos; 30 a 40 anos é o pico da ruptura aguda no Campbell, p. 2252), e o Campbell descarta B.
 !fim
 
 # Tendão calcâneo não insercional {radar=confirmado}

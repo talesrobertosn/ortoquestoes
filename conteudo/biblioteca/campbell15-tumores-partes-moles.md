@@ -1,6 +1,6 @@
 ---
 id: campbell15-tumores-partes-moles
-versao: 2
+versao: 3
 titulo: Tumores e sarcomas de partes moles
 especialidade: tumores
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Green's Operative Hand Surgery, 7ª edição (2017), o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição
 capitulo: Capítulo 30 · Soft-Tissue Tumors
 autores: Robert K. HECK Jr. e Patrick C. TOY
-fonte: Livros conferidos localmente em 01/11/2026 e 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 30 (Soft-Tissue Tumors, com as tabelas 30.1 e 30.2, p. 1004 a 1029), cap. 26 (General Principles of Tumors: estadiamento, biópsia e margens, p. 873 a 882), cap. 27 (desmoide cortical, p. 933 e 934) e cap. 83 (Tumors and Tumorous Conditions of the Hand, de James H. CALANDRUCCIO, seções de partes moles, p. 3567 a 3597); Green's Operative Hand Surgery, 7ª ed., cap. 59 (Bone and Soft Tissue Tumors, p. 2010 a 2019) e cap. 3 (sarcoma de KAPOSI, p. 121, aprox.); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (rabdomiossarcoma, p. 1073 e 1074); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (rabdomiossarcoma, p. 474 e 475); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores de partes moles da mão) e cap. 29 (síndrome de GARDNER e miosite ossificante), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026 e 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 30 (Soft-Tissue Tumors, com as tabelas 30.1 e 30.2, p. 1004 a 1029), cap. 26 (General Principles of Tumors: estadiamento, biópsia e margens, p. 873 a 882), cap. 27 (desmoide cortical, p. 933 e 934) e cap. 83 (Tumors and Tumorous Conditions of the Hand, de James H. CALANDRUCCIO, seções de partes moles, p. 3567 a 3597); Green's Operative Hand Surgery, 7ª ed., cap. 59 (Bone and Soft Tissue Tumors, p. 2010 a 2019) e cap. 3 (sarcoma de KAPOSI, p. 121); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (rabdomiossarcoma, p. 1073 e 1074); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (rabdomiossarcoma, p. 474 e 475); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (Antebraço, punho e mão do adulto, seção Tumores de partes moles: cisto sinovial, cisto mucoso, tenossinovite vilonodular pigmentada, lipoma, tumores nervosos, tumor glômico e hemangiomas) e cap. 29 (Tumores ósseos benignos e lesões pseudotumorais, seções Osteoma, para a síndrome de GARDNER, e Ossificação heterotópica, para a miosite ossificante), cujo arquivo não traz número de página impressa e por isso é citado por capítulo e seção. As páginas citadas são as impressas.
 subtemas: Tumores benignos de partes moles; Sarcomas de partes moles
 resumo: Dor não separa benigno de maligno, mas TINEL aponta para a bainha nervosa; RM para massa > 5 cm ou profunda; schwannoma enucleável e neurofibroma da NF1 que vira MPNST; SVNP com hemossiderina e células gigantes, no joelho; condromatose em homens; GARDNER com osteomas; sarcomas estadiados por grau, tamanho, profundidade e metástase, biópsia planejada com trajeto contaminado e margem ampla com radioterapia no alto grau; rabdomiossarcoma da criança na cabeça e pescoço, sensível à quimioterapia, pleomórfico no adulto; sinovial indolente no carpo; epitelioide é o sarcoma da mão; mixoide pede TC de abdome.
 ---
@@ -82,7 +82,7 @@ Macroscopicamente, o lipoma é um nódulo encapsulado de gordura; ao microscópi
 | Lipoma arborescens | Sinóvia; derrame no joelho |
 !fim
 
-O tratamento parte de um fato: **quase não há risco de transformação maligna**, então o lipoma pode ser **observado**. A ressecção marginal fica para a massa sintomática ou que cresce, e a recidiva é rara. Lipomas grandes devem ser examinados com cuidado ao microscópio para não serem confundidos com o **lipossarcoma bem diferenciado** (p. 1009). O SIZÍNIO HEBERT (cap. 7, pág. PDF 564) diverge na conduta: na mão, indica cirurgia mesmo sem sintomas, pela incerteza diagnóstica, e registra predomínio feminino de 3:1 (CANELL e DOYLE). O Green (p. 2018) segue a mesma prudência: **todo lipoma presumido deve ser abordado como potencialmente maligno**, e nenhuma biópsia deve comprometer uma futura cirurgia de salvamento.
+O tratamento parte de um fato: **quase não há risco de transformação maligna**, então o lipoma pode ser **observado**. A ressecção marginal fica para a massa sintomática ou que cresce, e a recidiva é rara. Lipomas grandes devem ser examinados com cuidado ao microscópio para não serem confundidos com o **lipossarcoma bem diferenciado** (p. 1009). O SIZÍNIO HEBERT (cap. 7, seção Lipoma) diverge na conduta: na mão, indica cirurgia mesmo sem sintomas, pela incerteza diagnóstica, e registra predomínio feminino de 3:1 (CANELL e DOYLE). O Green (p. 2018) segue a mesma prudência: **todo lipoma presumido deve ser abordado como potencialmente maligno**, e nenhuma biópsia deve comprometer uma futura cirurgia de salvamento.
 
 ## O lipoma da mão
 
@@ -134,7 +134,7 @@ O neurofibroma tem **muito mais colágeno**, e **não se separa do nervo hospede
 
 A tabela 30.1 do Campbell (p. 1006) lista a **NF1 (doença de VON RECKLINGHAUSEN)**: autossômica dominante, gene **NF1 no cromossomo 17q**, manchas **café com leite**, efélides axilares, **nódulos de LISCH**, glioma óptico, feocromocitoma; no osso, **pseudartrose congênita da tíbia, escoliose e displasia da asa do esfenoide**. O texto (p. 1011) acrescenta um detalhe fino: **a maioria dos neurofibromas ocorre em quem não tem NF1**, mas o paciente com **neurofibroma plexiforme** sem diagnóstico prévio deve ser investigado para NF1.
 
-Na mão, o Campbell (cap. 83, p. 3576) inverte a proporção: o neurofibroma **raramente é solitário**, e a maioria dos múltiplos se associa à neurofibromatose; o solitário surge na primeira década, o múltiplo depois dos 30 anos; nos nervos digitais distais pode produzir angulação e gigantismo do dedo. O schwannoma, ao contrário, é **o tumor solitário mais comum dos nervos periféricos** e **raramente multifocal** (p. 3580). O SIZÍNIO HEBERT (cap. 7, pág. PDF 567) resume o contraste: o schwannoma é único, e os neurofibromas tendem a ser múltiplos e se associam à doença de VON RECKLINGHAUSEN, preferindo o dorso da mão e dos dedos. É a base da questão sobre a NF1: o **neurofibroma é frequente** e o **neurilemoma é raro**.
+Na mão, o Campbell (cap. 83, p. 3576) inverte a proporção: o neurofibroma **raramente é solitário**, e a maioria dos múltiplos se associa à neurofibromatose; o solitário surge na primeira década, o múltiplo depois dos 30 anos; nos nervos digitais distais pode produzir angulação e gigantismo do dedo. O schwannoma, ao contrário, é **o tumor solitário mais comum dos nervos periféricos** e **raramente multifocal** (p. 3580). O SIZÍNIO HEBERT (cap. 7, seção Tumores nervosos) resume o contraste: o schwannoma é único, e os neurofibromas tendem a ser múltiplos e se associam à doença de VON RECKLINGHAUSEN, preferindo o dorso da mão e dos dedos. É a base da questão sobre a NF1: o **neurofibroma é frequente** e o **neurilemoma é raro**.
 
 A forma maligna tem vários nomes, e a prova usa qualquer um. O Campbell (p. 1026) define o **tumor maligno da bainha do nervo periférico (MPNST)** como **schwannoma maligno ou neurofibrossarcoma**, "a contrapartida maligna do neurofibroma". Cerca de **25%** dos pacientes com MPNST têm neurofibromatose, e cerca de **5%** dos pacientes com neurofibromatose desenvolvem transformação maligna de um neurofibroma; **a dor deve alertar** para essa possibilidade. Na NF, a transformação ocorre mais cedo (média de 28 anos, contra 30 a 50 anos nos demais). Os locais são os grandes troncos: **ciático, plexo braquial e plexo sacral**. Sobrevida em 5 anos de cerca de **50%** no Campbell e de cerca de **40%** no Green (p. 2019), que registra 50% dos MPNST na neurofibromatose e o pior prognóstico nesses pacientes.
 
@@ -169,7 +169,7 @@ O tratamento busca aliviar os sintomas, reduzir a recidiva e preservar a articul
 
 ## TCG da bainha: o tumor sólido da mão
 
-O TCG da bainha é um tumor benigno relativamente comum das **bainhas tendíneas dos dedos de adultos**, massa indolor de crescimento lento, às vezes com erosão da cortical vizinha (Campbell, cap. 30, p. 1011). A tabela 30.1 o chama de **massa sólida de partes moles mais comum da mão e do punho**; a tabela 83.4, de **tumor primário mais comum da mão**. O Green (p. 2012) o coloca como **segundo tumor mais comum da mão, depois do ganglion**, e o SIZÍNIO HEBERT (cap. 7, pág. PDF 563) também o chama de segundo tumor mais frequente da mão, com predomínio feminino de 3:1 entre 20 e 50 anos. As duas afirmações convivem: o ganglion é o mais comum de todos, e o TCG é o mais comum entre os **sólidos**.
+O TCG da bainha é um tumor benigno relativamente comum das **bainhas tendíneas dos dedos de adultos**, massa indolor de crescimento lento, às vezes com erosão da cortical vizinha (Campbell, cap. 30, p. 1011). A tabela 30.1 o chama de **massa sólida de partes moles mais comum da mão e do punho**; a tabela 83.4, de **tumor primário mais comum da mão**. O Green (p. 2012) o coloca como **segundo tumor mais comum da mão, depois do ganglion**, e o SIZÍNIO HEBERT (cap. 7, seção Tenossinovite vilonodular pigmentada) também o chama de segundo tumor mais frequente da mão, com predomínio feminino de 3:1 entre 20 e 50 anos. As duas afirmações convivem: o ganglion é o mais comum de todos, e o TCG é o mais comum entre os **sólidos**.
 
 Clinicamente é **firme, lobulado, indolor**, mais **volar**, nos três dedos radiais e perto da **IFD** (Green) ou da **IFP** (Campbell, p. 3572), e **não transilumina**, o que o separa do ganglion. A recidiva é o problema: **10% a 20%**, até 40% no Campbell; **5% a 50%** no Green, que avisa o paciente de cerca de **30%**. Os fatores de risco são **artrose adjacente, localização na IFD, erosão óssea, doença multifocal e envolvimento tendíneo**; lesões satélites explicam a recidiva, e a ressecção usa magnificação.
 
@@ -210,17 +210,17 @@ armadilha: Escolher mulheres por associação com doenças inflamatórias, ou pu
 
 ## A massa mais comum da mão
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3594), define o ganglion como **a causa mais comum de massa focal na mão**. Ele nasce da **sinóvia de articulações ou de bainhas tendíneas** e pode até ser intratendíneo, causando ressalto ou gatilho. Uma característica clínica o separa dos tumores verdadeiros: **o ganglion flutua de tamanho**. A causa não é clara; a maioria surge de forma insidiosa, e uma história de trauma agudo ou estresse repetido sugere origem traumática. O SIZÍNIO HEBERT (cap. 7, pág. PDF 559 e 560) concorda que o cisto sinovial é o mais frequente dos tumores desse segmento, e registra predomínio entre a **2ª e a 4ª décadas** e em **mulheres**.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3594), define o ganglion como **a causa mais comum de massa focal na mão**. Ele nasce da **sinóvia de articulações ou de bainhas tendíneas** e pode até ser intratendíneo, causando ressalto ou gatilho. Uma característica clínica o separa dos tumores verdadeiros: **o ganglion flutua de tamanho**. A causa não é clara; a maioria surge de forma insidiosa, e uma história de trauma agudo ou estresse repetido sugere origem traumática. O SIZÍNIO HEBERT (cap. 7, seção Cisto sinovial) concorda que o cisto sinovial é o mais frequente dos tumores desse segmento, e registra predomínio entre a **2ª e a 4ª décadas** e em **mulheres**.
 
 ## Onde ele nasce e como se trata
 
 O mais comum é o **ganglion dorsal do punho**, entre o **2º e o 4º compartimentos extensores**, nascido quase sempre **da porção dorsal (distal) do ligamento escafossemilunar** (Campbell, p. 3594 e 3595). Pode ser **oculto**: dor localizada sobre o intervalo escafossemilunar, sem trauma, sugere o cisto mesmo com imagem negativa. No diferencial, o **extensor curto dos dedos anômalo** fica mais firme na extensão resistida, e a **bossa carpometacarpal** é dura e um pouco mais distal e radial. O segundo mais frequente é o **ganglion volar**, **radial ao flexor radial do carpo**, com a **artéria radial** muitas vezes aderida (daí o **teste de ALLEN** antes da cirurgia); o **retinacular volar** nasce da bainha flexora na prega da MF e é duro, imóvel e doloroso à pressão.
 
-O Campbell (p. 3595) é direto: **punção, aspiração e corticoide recidivam em mais de 60%**, e o cisto sintomático vai para excisão aberta ou artroscópica, com **cerca de 90% de sucesso**; a artroscopia não reduziu a recidiva. O segredo é **ressecar margem generosa de cápsula em torno da base**, **preservar a porção dorsal distal do escafossemilunar** e **não fechar a cápsula**. O SIZÍNIO (pág. PDF 560) é mais conservador: o tratamento não cirúrgico tem valor histórico, a cirurgia recidiva em **20%** e fica para a dor persistente, e o cisto silencioso não deve ser operado.
+O Campbell (p. 3595) é direto: **punção, aspiração e corticoide recidivam em mais de 60%**, e o cisto sintomático vai para excisão aberta ou artroscópica, com **cerca de 90% de sucesso**; a artroscopia não reduziu a recidiva. O segredo é **ressecar margem generosa de cápsula em torno da base**, **preservar a porção dorsal distal do escafossemilunar** e **não fechar a cápsula**. O SIZÍNIO (cap. 7, seção Cisto sinovial) é mais conservador: o tratamento não cirúrgico tem valor histórico, a cirurgia recidiva em **20%** e fica para a dor persistente, e o cisto silencioso não deve ser operado.
 
 ## Os outros cistos
 
-O **cisto mucoso** fica no dorso da **IFD**, em mulheres de 50 a 70 anos, com pele fina e translúcida, e se associa a **nódulos de HEBERDEN** e **osteófitos**, que devem ser retirados junto com o cisto (Campbell, p. 3597; SIZÍNIO, pág. PDF 561). O **cisto epidermoide (de inclusão)** vem da implantação de epitélio por trauma penetrante, na polpa ou na palma, e pode invadir a falange distal imitando um encondroma (Campbell, p. 3596); o Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 2010), alerta que lesão lítica da falange distal pede biópsia antes de qualquer amputação.
+O **cisto mucoso** fica no dorso da **IFD**, em mulheres de 50 a 70 anos, com pele fina e translúcida, e se associa a **nódulos de HEBERDEN** e **osteófitos**, que devem ser retirados junto com o cisto (Campbell, p. 3597; SIZÍNIO, cap. 7, seção Cisto mucoso). O **cisto epidermoide (de inclusão)** vem da implantação de epitélio por trauma penetrante, na polpa ou na palma, e pode invadir a falange distal imitando um encondroma (Campbell, p. 3596); o Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 2010), alerta que lesão lítica da falange distal pede biópsia antes de qualquer amputação.
 
 # Lesões vasculares: hemangioma, malformações e tumor glômico {radar=clinico}
 
@@ -228,7 +228,7 @@ O **cisto mucoso** fica no dorso da **IFD**, em mulheres de 50 a 70 anos, com pe
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 30, p. 1012 e 1013), reconhece que a fronteira entre telangiectasias, neoplasias verdadeiras e malformações arteriovenosas é às vezes obscura. O **hemangioma em morango** (hemangioendotelioma benigno), cheio de mitoses, aparece ao nascer, **cresce rápido nos primeiros meses, para e na maioria dos casos desaparece**. O **vinho do Porto** está presente ao nascer, na face, pescoço e tronco, **cresce com o paciente e não regride**.
 
-O SIZÍNIO HEBERT (cap. 7, pág. PDF 569) organiza os angiomas imaturos do recém-nascido em três fases: **expansão até 6 meses**, **estabilidade até cerca de 20 meses** e **regressão até cerca de 7 anos**, total em 90%.
+O SIZÍNIO HEBERT (cap. 7, seção Hemangiomas, angiomas imaturos ou fásicos) organiza os angiomas imaturos do recém-nascido em três fases: **expansão até 6 meses**, **estabilidade até cerca de 20 meses** e **regressão até cerca de 7 anos**, total em 90%.
 
 O ortopedista lida mais com o **hemangioma intramuscular**. Ele **dói**, e a dor tem mecanismo claro: aumenta com o **fluxo sanguíneo da atividade** e com a **posição pendente**, quando o volume da lesão cresce (Campbell, p. 1013). A tabela 30.1 registra crianças como as mais acometidas (qualquer idade), relação homem:mulher de **1:2** na forma intramuscular e cabeça e pescoço como local mais comum. A radiografia pode mostrar **flebólitos**; a RM, lesão mal circunscrita com **gordura em T1** e **T2 alto** pelos canais de sangue. O assintomático é observado; a dor costuma ceder com **meia compressiva**; lesões pequenas e bem definidas podem ser ressecadas (com recidiva comum); lesões infiltrativas vão para **embolização ou escleroterapia**, e raramente se chega à amputação.
 
@@ -256,7 +256,7 @@ O quadro clínico é uma tríade: **dor, sensibilidade ao frio e dor à pressão
 | Tratamento | Excisão marginal completa cura; reoperação 12% a 24%; recidiva 6,9% |
 !fim
 
-A dor lancinante é atribuída às **fibras nervosas amielínicas** entremeadas com capilares de parede espessa (Campbell, cap. 83, p. 3577). O SIZÍNIO (pág. PDF 568) descreve a mesma hiperestesia extrema, mais em **mulheres na faixa dos 40 anos**, e exige a **ablação total com cauterização** para evitar recidiva.
+A dor lancinante é atribuída às **fibras nervosas amielínicas** entremeadas com capilares de parede espessa (Campbell, cap. 83, p. 3577). O SIZÍNIO (cap. 7, seção Tumor glômico) descreve a mesma hiperestesia extrema, mais em **mulheres na faixa dos 40 anos**, e exige a **ablação total com cauterização** para evitar recidiva.
 
 # Lesões fibrosas: fasciite nodular, desmoide e fibromatoses {radar=confirmado}
 
@@ -299,7 +299,7 @@ As **fibromatoses superficiais** que o ortopedista vê são a **doença de DUPUY
 
 ## GARDNER: o desmoide com osteomas
 
-A tabela 30.1 do Campbell (p. 1008) define a **síndrome de GARDNER** como a associação de **tumores desmoides, osteomas do crânio, cistos epidérmicos e adenomatose intestinal**. O SIZÍNIO HEBERT (cap. 29, pág. PDF 2013) descreve a mesma síndrome no capítulo dos tumores ósseos: **osteomas do crânio ou dos ossos longos** com **cistos epidermoides cutâneos, fibromatose e polipose adenomatosa do cólon**. A pergunta da prova é simples: o osso da síndrome é o **osteoma**, não o osteocondroma nem o encondroma.
+A tabela 30.1 do Campbell (p. 1008) define a **síndrome de GARDNER** como a associação de **tumores desmoides, osteomas do crânio, cistos epidérmicos e adenomatose intestinal**. O SIZÍNIO HEBERT (cap. 29, seção Osteoma) descreve a mesma síndrome no capítulo dos tumores ósseos: **osteomas do crânio ou dos ossos longos** com **cistos epidermoides cutâneos, fibromatose e polipose adenomatosa do cólon**. A pergunta da prova é simples: o osso da síndrome é o **osteoma**, não o osteocondroma nem o encondroma.
 
 ## Desmoide cortical: o falso tumor do fêmur
 
@@ -315,13 +315,13 @@ armadilha: Trocar osteoma por osteocondroma, ou levar o desmoide cortical para a
 
 ## O que é
 
-A miosite ossificante é uma **ossificação heterotópica não neoplásica**, às vezes relacionada a trauma, com proliferação de tecido fibroso e formação de grande quantidade de osso novo, às vezes com cartilagem (SIZÍNIO HEBERT, cap. 29, pág. PDF 2095). O SIZÍNIO observa que o nome é inadequado: **o músculo nem sempre está acometido e o processo não é inflamatório**. Há duas formas: a **progressiva**, congênita, hereditária e fatal, e a **circunscrita**, dividida em **pós-traumática (60% a 75%)** e **sem trauma (25% a 40%)**, esta associada a doenças sistêmicas (paraplegia, tétano, coma) ou idiopática ("tumor ósseo pseudomaligno dos tecidos moles").
+A miosite ossificante é uma **ossificação heterotópica não neoplásica**, às vezes relacionada a trauma, com proliferação de tecido fibroso e formação de grande quantidade de osso novo, às vezes com cartilagem (SIZÍNIO HEBERT, cap. 29, seção Ossificação heterotópica, miosite ossificante). O SIZÍNIO observa que o nome é inadequado: **o músculo nem sempre está acometido e o processo não é inflamatório**. Há duas formas: a **progressiva**, congênita, hereditária e fatal, e a **circunscrita**, dividida em **pós-traumática (60% a 75%)** e **sem trauma (25% a 40%)**, esta associada a doenças sistêmicas (paraplegia, tétano, coma) ou idiopática ("tumor ósseo pseudomaligno dos tecidos moles").
 
 ## A evolução radiográfica é o diagnóstico
 
 A queixa é **dor e aumento de volume local**, muitas vezes com limitação da articulação vizinha. A imagem acompanha a maturação:
 
-!tabela Miosite ossificante: evolução e diferencial (SIZÍNIO, cap. 29, pág. PDF 2095 a 2097; Campbell, cap. 30, p. 1004 e 1007)
+!tabela Miosite ossificante: evolução e diferencial (SIZÍNIO, cap. 29, seção Ossificação heterotópica, miosite ossificante; Campbell, cap. 30, p. 1004 e 1007)
 | Momento | Achado |
 |---|---|
 | Primeiras semanas | Massa firme e depressível; radiografia negativa |
@@ -333,19 +333,19 @@ A queixa é **dor e aumento de volume local**, muitas vezes com limitação da a
 | Histologia | Pode ser muito celular, simulando osteossarcoma justacortical e sarcoma de partes moles |
 !fim
 
-O princípio por trás da tabela é o **zoneamento**: a lesão amadurece de fora para dentro, então a periferia vira osso primeiro, e uma **faixa radiotransparente** entre a massa e a cortical mostra que o osso não está envolvido. A **TC** mostra a casca calcificada e o córtex poupado (SIZÍNIO, pág. PDF 2096); o Campbell (cap. 30, p. 1004 e 1007) a usa para separar calcificação de ossificação e põe a miosite no diferencial da condromatose. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 26, p. 1073), também a coloca, com o hematoma, no diferencial do rabdomiossarcoma da criança.
+O princípio por trás da tabela é o **zoneamento**: a lesão amadurece de fora para dentro, então a periferia vira osso primeiro, e uma **faixa radiotransparente** entre a massa e a cortical mostra que o osso não está envolvido. A **TC** mostra a casca calcificada e o córtex poupado (SIZÍNIO, cap. 29, seção Ossificação heterotópica, Diagnóstico por imagem); o Campbell (cap. 30, p. 1004 e 1007) a usa para separar calcificação de ossificação e põe a miosite no diferencial da condromatose. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 26, p. 1073), também a coloca, com o hematoma, no diferencial do rabdomiossarcoma da criança.
 
 ## Tratamento
 
-O tratamento é **conservador**, desde que os diagnósticos diferenciais estejam definitivamente afastados. A cirurgia na fase ativa agride os tecidos e provoca **novas áreas de ossificação**. Lesões que causam limitação articular, bursite ou compressão de feixes vasculonervosos são ressecadas, mas **só 12 a 18 meses depois do fim da fase de atividade** (SIZÍNIO, pág. PDF 2097).
+O tratamento é **conservador**, desde que os diagnósticos diferenciais estejam definitivamente afastados. A cirurgia na fase ativa agride os tecidos e provoca **novas áreas de ossificação**. Lesões que causam limitação articular, bursite ou compressão de feixes vasculonervosos são ressecadas, mas **só 12 a 18 meses depois do fim da fase de atividade** (SIZÍNIO, cap. 29, seção Ossificação heterotópica, Tratamento).
 
 # Sarcomas de partes moles: estadiamento, biópsia, margens e adjuvância {radar=confirmado}
 
 ## O que é maligno e quem é mais comum
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 30, p. 1017 e 1020), abre os malignos com uma mudança de nome: o antigo **histiocitoma fibroso maligno (MFH)** não é mais reconhecido pela OMS como entidade e passou a se chamar **sarcoma pleomórfico indiferenciado (UPS)**. O **lipossarcoma** é o **segundo** sarcoma mais diagnosticado e o **sinovial**, o **terceiro das extremidades**. Na mão, o Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 2015), aponta o **epitelioide, o sinovial e o histiocitoma fibroso maligno**; o SIZÍNIO HEBERT (cap. 7, pág. PDF 569) lista sinovial, lipossarcoma, rabdomiossarcoma e fibrossarcoma.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 30, p. 1017 e 1020), abre os malignos com uma mudança de nome: o antigo **histiocitoma fibroso maligno (MFH)** não é mais reconhecido pela OMS como entidade e passou a se chamar **sarcoma pleomórfico indiferenciado (UPS)**. O **lipossarcoma** é o **segundo** sarcoma mais diagnosticado e o **sinovial**, o **terceiro das extremidades**. Na mão, o Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 2015), aponta o **epitelioide, o sinovial e o histiocitoma fibroso maligno**; o SIZÍNIO HEBERT (cap. 7, seção Tumores de partes moles, no fecho depois dos hemangiomas) lista sinovial, lipossarcoma, rabdomiossarcoma e fibrossarcoma.
 
-O **sarcoma de KAPOSI** é, pelo Green (cap. 3, p. 121, aprox.), uma doença vascular ligada ao **herpes-vírus humano 8**, vista sobretudo em homens com HIV, em **nódulos ou placas violáceos e indolores**, que pode aparecer na mão, exige biópsia (o diferencial é a angiomatose bacilar), tem estadiamento próprio até a forma **visceral** e é tratada de forma sistêmica.
+O **sarcoma de KAPOSI** é, pelo Green (cap. 3, p. 121), uma doença vascular ligada ao **herpes-vírus humano 8**, vista sobretudo em homens com HIV, em **nódulos ou placas violáceos e indolores**, que pode aparecer na mão, exige biópsia (o diferencial é a angiomatose bacilar), tem estadiamento próprio até a forma **visceral** e é tratada de forma sistêmica.
 
 !questoes central=tumores-0388
 conceito: O sarcoma de KAPOSI é a lesão maligna da lista: proliferação vascular ligada ao herpes-vírus 8 e ao HIV, com nódulos violáceos que podem acometer a mão e chegar às vísceras; glômico e SVNP são benignos.

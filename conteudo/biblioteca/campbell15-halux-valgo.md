@@ -1,6 +1,6 @@
 ---
 id: campbell15-halux-valgo
-versao: 2
+versao: 3
 titulo: Hálux valgo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -395,7 +395,7 @@ O hálux rígido é a **limitação da mobilidade da metatarsofalângica** (COTT
 | 4 | Igual ao 3 | Dor na meia-amplitude passiva | Igual ao 3 |
 !fim
 
-No leve, a **queilectomia** retira os osteófitos e 20% a 30% dorsal da cabeça para chegar a cerca de 70 graus de dorsiflexão; o sucesso vai de 56% a 92%, **melhor nos graus 1 e 2 e em pacientes com mais de 60 anos** (p. 3787 e 3788). No grave, a **artrodese metatarsofalângica é o padrão** (p. 3787 e 3795). Posição: **15 graus de dorsiflexão em relação à planta do pé ou 25 a 30 graus em relação à inclinação do primeiro metatarso**, cerca de 15 graus de valgo e rotação neutra; o resumo do autor dá 10 a 15 graus em relação à planta e 20 a 30 em relação ao metatarso, com 5 a 15 de valgo (p. 3797 e 3800).
+No leve, a **queilectomia** retira os osteófitos e **20% a 30% dorsal da cabeça** para chegar a cerca de **70 graus de dorsiflexão** (texto da técnica, p. 3787 e 3788: cerca de 20% quando o problema é só a exostose, até um terço quando a lesão da cartilagem é grave); a legenda da Fig. 87.103 do mesmo livro dá números um pouco diferentes, **20% a 25% da cabeça** e articulação movida em **60 a 70 graus** (p. 3789). Na prova, as duas faixas são do Campbell; o sucesso vai de 56% a 92%, **melhor nos graus 1 e 2 e em pacientes com mais de 60 anos** (p. 3787 e 3788). No grave, a **artrodese metatarsofalângica é o padrão** (p. 3787 e 3795). Posição: **15 graus de dorsiflexão em relação à planta do pé ou 25 a 30 graus em relação à inclinação do primeiro metatarso**, cerca de 15 graus de valgo e rotação neutra; o resumo do autor dá 10 a 15 graus em relação à planta e 20 a 30 em relação ao metatarso, com 5 a 15 de valgo (p. 3797 e 3800).
 
 !questoes central=pe-tornozelo-0047 relacionadas=pe-tornozelo-0071,pe-tornozelo-0040,pe-tornozelo-0293
 conceito: COUGHLIN e SHURNAS grau 2 = dor mais constante, estreitamento moderado e restrição moderada; a queilectomia vai melhor no leve e acima de 60 anos; o hálux rígido se associa ao valgo interfalângico; a artrodese fica em 25 a 30° de dorsiflexão em relação ao primeiro metatarso.

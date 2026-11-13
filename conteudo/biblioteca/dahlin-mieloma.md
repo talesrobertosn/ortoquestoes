@@ -1,6 +1,6 @@
 ---
 id: dahlin-mieloma
-versao: 1
+versao: 2
 titulo: Mieloma múltiplo e plasmocitoma
 especialidade: tumores
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases
 edicao: 6ª edição (2010)
 capitulo: Capítulo 16 · Myeloma
 autores: K. Krishnan Unni e Carrie Y. Inwards
-fonte: Livros conferidos localmente em 03/11/2026: Dahlin's Bone Tumors, 6ª ed., cap. 16, p. 191 a 200; Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (p. 871 e 872), cap. 29 (p. 985 a 987, 990, 996 e Tabela 29.2 da p. 1000) e cap. 49 (p. 1954, 1955, cerca de 1967 e 1971); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 25 (Pathologic Fractures, sem página impressa no PDF); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 30 (sem página impressa no PDF). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 03/11/2026: Dahlin's Bone Tumors, 6ª ed., cap. 16, p. 191 a 200; Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (p. 871 e 872), cap. 29 (p. 985 a 987, 990, 996 e Tabela 29.2 da p. 1000) e cap. 49 (p. 1954, 1955, 1967 e 1971); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 25 (Pathologic Fractures, sem página impressa no PDF); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 30 (sem página impressa no PDF). As páginas citadas são as impressas.
 subtemas: Mieloma múltiplo e plasmocitoma
 resumo: Neoplasia primária maligna mais comum do osso (14,9% dos malignos da Mayo), homem de 50 a 70 anos com dor lombar ou torácica, fraqueza, perda de peso, anemia, VHS alta, hipercalcemia (20% a 50%), BENCE JONES (mais da metade) e rim lesado por cilindros; lesões líticas em saca-bocado sem esclerose, cintilografia fria e inventário esquelético com crânio; lençóis de plasmócitos de núcleo excêntrico e amiloide; plasmocitoma solitário que evolui em cerca de 50%; forma osteoesclerótica com neuropatia (POEMS); quimioterapia e radioterapia, fixação com cimento e MIRELS, e fraturas que consolidam mais que as de outras histologias (GAINOR e BUCHERT).
 ---
@@ -66,7 +66,7 @@ armadilha: Marcar osteossarcoma por ser o primário mais famoso: ele é o mais c
 
 ## Um clone de plasmócitos, uma proteína
 
-O tumor é composto de **plasmócitos com graus variados de diferenciação** (Dahlin, p. 191); o Campbell (cap. 49) fala em **proliferação desregulada de plasmócitos com manifestações sistêmicas** (p. 1967, aprox.). Cada clone de plasmócito fabrica um anticorpo só; quando um clone cresce sem controle, sangue e urina se enchem de **uma mesma imunoglobulina ou de um pedaço dela**: a **proteína M**. A cadeia leve livre que passa pelo rim é a **proteína de BENCE JONES**. Na lâmina, a mesma monoclonalidade aparece como **restrição a kappa ou lambda**, e **a cadeia leve do tecido corresponde à do soro ou da urina** (Dahlin, p. 198).
+O tumor é composto de **plasmócitos com graus variados de diferenciação** (Dahlin, p. 191); o Campbell (cap. 49) fala em **proliferação desregulada de plasmócitos com manifestações sistêmicas** (p. 1967). Cada clone de plasmócito fabrica um anticorpo só; quando um clone cresce sem controle, sangue e urina se enchem de **uma mesma imunoglobulina ou de um pedaço dela**: a **proteína M**. A cadeia leve livre que passa pelo rim é a **proteína de BENCE JONES**. Na lâmina, a mesma monoclonalidade aparece como **restrição a kappa ou lambda**, e **a cadeia leve do tecido corresponde à do soro ou da urina** (Dahlin, p. 198).
 
 ## Por que o osso some sem reagir
 
@@ -124,7 +124,7 @@ Duas lições saem desses números. Primeiro, **a eletroforese sérica isolada d
 
 ## O que os outros livros pedem
 
-O Campbell manda pedir **eletroforese de proteínas séricas sempre que o mieloma estiver no diferencial** (cap. 26, p. 871) e confirma o diagnóstico pela **imunoeletroforese sérica com gamopatia monoclonal** (cap. 29, p. 986), ou pela eletroforese sérica ou urinária (Tabela 29.2, p. 1000). O capítulo de coluna avisa que **a eletroforese pode ser negativa em 3%**, o que pede limiar baixo para o **aspirado de medula** (cap. 49, p. 1967, aprox.).
+O Campbell manda pedir **eletroforese de proteínas séricas sempre que o mieloma estiver no diferencial** (cap. 26, p. 871) e confirma o diagnóstico pela **imunoeletroforese sérica com gamopatia monoclonal** (cap. 29, p. 986), ou pela eletroforese sérica ou urinária (Tabela 29.2, p. 1000). O capítulo de coluna avisa que **a eletroforese pode ser negativa em 3%**, o que pede limiar baixo para o **aspirado de medula** (cap. 49, p. 1967).
 
 O Rockwood (cap. 25) pede em toda lesão lítica a **eletroforese de proteínas séricas** e a **urina de 24 horas para eletroforese urinária**, que **medem o anticorpo monoclonal do mieloma**; lembra que **a anemia é comum no mieloma** e que o mieloma está entre as causas da **hipercalcemia da malignidade**.
 
@@ -163,7 +163,7 @@ Nenhum dos quatro livros lidos lista "critérios maiores e menores" do mieloma. 
 
 - **Dahlin** (p. 191): a doença é tão difusa na medula que o diagnóstico é feito **com mais frequência pelo aspirado de medula óssea**; as eletroforeses fornecem informação diagnóstica crítica (p. 193).
 - **Campbell, cap. 29** (p. 986): confirmação pela **imunoeletroforese sérica com gamopatia monoclonal**; o estadiamento inclui **hemograma, bioquímica, inventário esquelético e biópsia de medula óssea**; **às vezes é necessária a biópsia da lesão óssea**.
-- **Campbell, cap. 49** (p. 1967, aprox.): o diagnóstico se confirma pela presença de **pelo menos 10% de plasmócitos anormais, lesões ósseas líticas e gamopatia monoclonal** na eletroforese sérica ou urinária; anemia e VHS elevada também são característicos.
+- **Campbell, cap. 49** (p. 1967): o diagnóstico se confirma pela presença de **pelo menos 10% de plasmócitos anormais, lesões ósseas líticas e gamopatia monoclonal** na eletroforese sérica ou urinária; anemia e VHS elevada também são característicos.
 - **HEBERT** (cap. 30): o diagnóstico é firmado em geral pelo **mielograma por punção esternal** ou pela **biópsia por agulha** de uma lesão.
 
 ## A hipercalcemia como critério
@@ -187,7 +187,7 @@ O Campbell descreve **múltiplas lesões em saca-bocado, bem delimitadas, purame
 
 ## TC e RM
 
-O Dahlin diz que **TC e RM podem mostrar lesões pequenas e discretas quando a radiografia é negativa ou mostra só osteoporose difusa** (p. 193). A RM do mieloma, porém, é variável, por dois motivos: a doença **não acomete a medula de forma homogênea**, e o aspecto da medula na RM **depende da quantidade de gordura**, que varia muito com a idade. O Campbell (Tabela 49.2) descreve a lesão vertebral como **hipointensa em T1, hiperintensa em T2 e com realce pelo gadolínio**, e o capítulo de coluna afirma que a **RM com contraste é a modalidade de escolha** para avaliar a coluna com tumor (p. 1967, aprox.). A TC ajuda a ver a extensão da destruição e a decidir a fixação profilática (Campbell, cap. 29, p. 986).
+O Dahlin diz que **TC e RM podem mostrar lesões pequenas e discretas quando a radiografia é negativa ou mostra só osteoporose difusa** (p. 193). A RM do mieloma, porém, é variável, por dois motivos: a doença **não acomete a medula de forma homogênea**, e o aspecto da medula na RM **depende da quantidade de gordura**, que varia muito com a idade. O Campbell (Tabela 49.2) descreve a lesão vertebral como **hipointensa em T1, hiperintensa em T2 e com realce pelo gadolínio**, e o capítulo de coluna afirma que a **RM com contraste é a modalidade de escolha** para avaliar a coluna com tumor (p. 1967). A TC ajuda a ver a extensão da destruição e a decidir a fixação profilática (Campbell, cap. 29, p. 986).
 
 ## A cintilografia fria
 
@@ -306,7 +306,7 @@ O Dahlin insiste que o mieloma "solitário" precisa ser diferenciado da **osteom
 
 ## A evolução
 
-O plasmocitoma solitário é, nas palavras do Dahlin, **precursor do mieloma múltiplo**: **cerca de 50%** dos pacientes desenvolvem mieloma múltiplo após **mediana de 2 a 3 anos** (p. 199). FRASSICA encontrou progressão na maioria nos **primeiros 2 anos**, mas sobrevida global de **74% em 5 anos e 45% em 10 anos**. O Campbell diz que **mais da metade** dos solitários evolui para mieloma múltiplo, que alguns pacientes têm intervalo livre de doença considerável e que poucos ficam livres da doença para sempre (p. 987). O tratamento local do solitário é a **radioterapia**, que o Dahlin reserva justamente ao mieloma solitário (p. 199), e o Campbell (cap. 49) trata plasmocitoma e mieloma da coluna primariamente com radiação (p. 1967, aprox.).
+O plasmocitoma solitário é, nas palavras do Dahlin, **precursor do mieloma múltiplo**: **cerca de 50%** dos pacientes desenvolvem mieloma múltiplo após **mediana de 2 a 3 anos** (p. 199). FRASSICA encontrou progressão na maioria nos **primeiros 2 anos**, mas sobrevida global de **74% em 5 anos e 45% em 10 anos**. O Campbell diz que **mais da metade** dos solitários evolui para mieloma múltiplo, que alguns pacientes têm intervalo livre de doença considerável e que poucos ficam livres da doença para sempre (p. 987). O tratamento local do solitário é a **radioterapia**, que o Dahlin reserva justamente ao mieloma solitário (p. 199), e o Campbell (cap. 49) trata plasmocitoma e mieloma da coluna primariamente com radiação (p. 1967).
 
 ## O plasmocitoma fora do osso
 
@@ -349,13 +349,13 @@ O Dahlin resume o tratamento em um parágrafo (p. 199):
 
 O Campbell, no capítulo de tumores malignos, concorda: **o tratamento primário do mieloma múltiplo é a quimioterapia**; **as lesões ósseas sintomáticas geralmente respondem rapidamente à radioterapia**; e os **bisfosfonatos** mostraram benefício na **prevenção de eventos relacionados ao esqueleto** (cap. 29, p. 986). A Tabela 29.2 fecha com **quimioterapia, irradiação das lesões ósseas sintomáticas e cirurgia para fraturas iminentes ou reais** (p. 1000).
 
-O capítulo de coluna do Campbell muda a ênfase: na Tabela 49.2, **o tratamento primário é a radiação**, a cirurgia fica para **instabilidade e déficit neurológico**, os **bisfosfonatos para a dor** e a **quimioterapia (talidomida com dexametasona, bortezomibe) para a doença sistêmica** (p. 1955). A Cochrane de 2017 citada ali mostrou que alguns bisfosfonatos **reduziram fraturas vertebrais, mas não as outras**, sem ganho de sobrevida, com **osteonecrose de mandíbula em 1 de 1.000** (p. 1967, aprox.). Não há contradição real: a doença se trata com quimioterapia; a lesão da coluna, com radioterapia, porque **o mieloma é suscetível à radiação** (Rockwood, cap. 25).
+O capítulo de coluna do Campbell muda a ênfase: na Tabela 49.2, **o tratamento primário é a radiação**, a cirurgia fica para **instabilidade e déficit neurológico**, os **bisfosfonatos para a dor** e a **quimioterapia (talidomida com dexametasona, bortezomibe) para a doença sistêmica** (p. 1955). A Cochrane de 2017 citada ali mostrou que alguns bisfosfonatos **reduziram fraturas vertebrais, mas não as outras**, sem ganho de sobrevida, com **osteonecrose de mandíbula em 1 de 1.000** (p. 1967). Não há contradição real: a doença se trata com quimioterapia; a lesão da coluna, com radioterapia, porque **o mieloma é suscetível à radiação** (Rockwood, cap. 25).
 
 ## Prognóstico
 
 O Dahlin é sombrio: **inanição, anemia, acometimento da medula espinal e insuficiência renal** são os principais fatores da morte no mieloma disseminado, e **muitos pacientes morrem em 2 anos** após o diagnóstico (p. 199). Numa série cirúrgica antiga, sem foco solitário ao diagnóstico, **pouco mais de 10% sobreviveram 5 anos**. **Atualmente, a mediana de sobrevida de todos os pacientes com mieloma múltiplo é de cerca de 3 anos**.
 
-O Campbell é mais otimista: **até recentemente, a sobrevida longa era muito rara**, mas **alguns centros relatam mais de 60% de sobrevida longa com tratamento agressivo** (cap. 29, p. 987). O capítulo de coluna diz que o mieloma é **geralmente fatal em 5 anos** quando há acometimento da coluna, embora o acometimento da coluna **não tenha mostrado diminuir a sobrevida global** (p. 1967, aprox.).
+O Campbell é mais otimista: **até recentemente, a sobrevida longa era muito rara**, mas **alguns centros relatam mais de 60% de sobrevida longa com tratamento agressivo** (cap. 29, p. 987). O capítulo de coluna diz que o mieloma é **geralmente fatal em 5 anos** quando há acometimento da coluna, embora o acometimento da coluna **não tenha mostrado diminuir a sobrevida global** (p. 1967).
 
 A diferença de edições (Dahlin de 2010, Campbell de 2026) explica a mudança de tom. Para o TARO 2006 ("o tratamento clássico é a quimioterapia, com bom prognóstico"), a primeira metade está certa nos dois livros e a segunda está errada no Dahlin, referência da época: o item é **errado**.
 
@@ -450,11 +450,11 @@ A coluna é o local mais comum do mieloma, da sua fratura patológica e de mais 
 
 ## A ordem do tratamento
 
-Na coluna, o tratamento local de primeira linha é a **radioterapia** (Campbell, cap. 49, Tabela 49.2, p. 1955, e p. 1967, aprox.), e o Dahlin dá a ressalva neurológica: **com sintomas neurológicos graves, a descompressão da medula pode ser necessária antes da radiação** (p. 199). O Campbell reserva a cirurgia para **instabilidade e déficit neurológico**, ou para **progressão apesar de quimioterapia e radioterapia máximas**. Para o HEBERT, a cirurgia da coluna busca **descompressão e estabilização** (cap. 30).
+Na coluna, o tratamento local de primeira linha é a **radioterapia** (Campbell, cap. 49, Tabela 49.2, p. 1955, e p. 1967), e o Dahlin dá a ressalva neurológica: **com sintomas neurológicos graves, a descompressão da medula pode ser necessária antes da radiação** (p. 199). O Campbell reserva a cirurgia para **instabilidade e déficit neurológico**, ou para **progressão apesar de quimioterapia e radioterapia máximas**. Para o HEBERT, a cirurgia da coluna busca **descompressão e estabilização** (cap. 30).
 
 ## Vertebroplastia
 
-O Campbell relata que **a vertebroplastia percutânea é eficaz para metástases osteolíticas da coluna e para o mieloma** (**97%**; **89% aos 3 meses**, **75% aos 6 meses**), com risco de **vazamento de cimento**, e que deve ser feita só em centros experientes (cap. 49, p. 1971, aprox.). A seleção decide o resultado: a dor da **fratura patológica responde ao cimento**; a da **destruição tumoral pode não responder**.
+O Campbell relata que **a vertebroplastia percutânea é eficaz para metástases osteolíticas da coluna e para o mieloma** (**97%**; **89% aos 3 meses**, **75% aos 6 meses**), com risco de **vazamento de cimento**, e que deve ser feita só em centros experientes (cap. 49, p. 1971). A seleção decide o resultado: a dor da **fratura patológica responde ao cimento**; a da **destruição tumoral pode não responder**.
 
 # Diagnóstico diferencial: o adulto com lesão lítica {radar=fundamento}
 

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-61-luxacao-joelho
-versao: 5
+versao: 6
 titulo: Luxação do joelho e lesão multiligamentar
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 61 · Knee Dislocations
 autores: James P. Stannard e Jarod A. Richards
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (joelho_dislocation.pdf, 63 páginas); consultas ao Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (p. 2095 e 2110). As páginas citadas são as impressas.
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (joelho_dislocation.pdf, 63 páginas); consultas ao Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (p. 1986, 1989, 1990, 2061, 2063, 2095, 2109, 2110 e 2112). As páginas citadas são as impressas do Campbell; o Rockwood 10 não tem página impressa no arquivo e é citado por capítulo e seção.
 subtemas: Luxação do joelho e lesões ligamentares; Luxação do joelho; Canto posterolateral; Lesão do ligamento cruzado posterior; Ligamento colateral medial; Vias de acesso ao joelho
 resumo: Artéria poplítea e índice tornozelo-braquial, Schenck, canto posterolateral, cruzado posterior, nervo fibular, luxação irredutível e a ordem da reconstrução: o joelho luxado explicado pelo que a prova cobra.
 ---
@@ -89,7 +89,7 @@ A pergunta antiga de prova é quanto do joelho se conserta enquanto a artéria e
 conceito: Com reparo da artéria poplítea, o cirurgião se limita a poucos pontos capsulares ao alcance da via vascular e adia o reparo e a reconstrução ligamentar extensos, que o Campbell admite até 3 semanas depois.
 como: O TARO 2006 afirmou, em certo ou errado, que na luxação do joelho com lesão da poplítea os reparos ligamentares devem se limitar aos visíveis pela via de acesso vascular.
 armadilha: Aproveitar a anestesia para reconstruir tudo no mesmo tempo; o reparo extenso prolonga a isquemia e põe a anastomose em risco.
-alerta: A `joelho-0315` está sem gabarito oficial no acervo. O Campbell 15 (cap. 50, p. 2113) sustenta Certo (A): só alguns pontos capsulares com a artéria exposta e o restante adiado. O Rockwood and Green's Fractures in Adults, 10ª ed., não estava disponível para nova leitura; pelo que este resumo já traz do capítulo, ele proíbe reparo ou reconstrução ligamentar sem árvore arterial íntegra e não descreve os pontos capsulares.
+alerta: A `joelho-0315` está sem gabarito oficial no acervo. O Campbell 15 (cap. 50, p. 2113) sustenta Certo (A): só alguns pontos capsulares com a artéria exposta e o restante adiado. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), relido no livro local, vai na mesma direção sem falar dos pontos capsulares: na seção de complicações, contraindica o reparo ou a reconstrução da articulação instável, aguda ou tardia, sem árvore arterial íntegra; na seção do momento da cirurgia, põe o reparo vascular entre os motivos para adiar a cirurgia ligamentar para depois de 4 semanas; e usa o fixador externo transarticular para proteger o reparo vascular.
 !fim
 
 # Classificação de Schenck {radar=confirmado}
@@ -106,6 +106,8 @@ A primeira classificação, de **Kennedy (1963)**, era pela **direção** da tí
 | KD V | Luxação com **fratura periarticular** |
 | Sufixos | **C**: lesão circulatória (arterial); **N**: lesão neurológica |
 !fim
+
+O Campbell 15 (cap. 50, Tabela 50.8, p. 2110) alarga o KD I: além da luxação com o cruzado posterior íntegro (em geral com cruzado anterior e colateral lateral rotos), inclui a **luxação com o cruzado anterior íntegro e ruptura completa do cruzado posterior**. Ou seja, KD I é a luxação em que **um dos cruzados** sobrou.
 
 O exemplo do próprio capítulo: **KD III-MC** é a ruptura dos dois cruzados e do colateral medial com lesão da artéria poplítea.
 
@@ -124,7 +126,7 @@ O canto posterolateral raramente se lesa sozinho (**menos de 2%** das lesões ag
 
 - **Ligamento colateral fibular** (colateral lateral): nasce numa pequena depressão um pouco proximal e posterior ao epicôndilo lateral (em média 1,4 mm proximal e 3,1 mm posterior), tem cerca de **70 mm**, é **extracapsular** e se insere na face lateral da cabeça da fíbula.
 - **Tendão do poplíteo**: o músculo nasce na face posteromedial da tíbia proximal, vira tendão (cerca de 54 mm), passa pelo **hiato poplíteo**, entra na articulação e se insere no sulco poplíteo do côndilo lateral, **à frente e abaixo** da origem do colateral fibular (18,5 mm). É um **rotador interno dinâmico** da tíbia e estabiliza o menisco lateral.
-- **Ligamento popliteofibular**: continuação do tendão do poplíteo até a fíbula, em **Y** (divisões anterior e posterior; a **posterior é a mais forte** e é a que se reconstrói). É um estabilizador **estático** contra **varo, rotação externa e translação posterior** da tíbia.
+- **Ligamento popliteofibular**: continuação do tendão do poplíteo até a fíbula, em **Y** (divisões anterior e posterior; a **posterior é a mais forte** e é a que se reconstrói). É um estabilizador **estático** contra **varo, rotação externa e translação posterior** da tíbia. O Rockwood chama essas divisões de antigo ligamento arqueado. O Campbell 15 (cap. 50) separa as coisas: o popliteofibular, nome dado por WARREN (p. 1989), fica profundo ao braço lateral do ligamento arqueado; o arqueado é uma condensação em Y das fibras de origem do poplíteo, unida pela cápsula (p. 1986), e a Fig. 50.11 (p. 1990) o põe na lâmina profunda da camada III, a cápsula.
 
 Completam o canto o **ligamento fabelofibular** (borda distal do braço capsular do bíceps; a fabela é óssea em 10% a 20% dos joelhos), a cápsula posterolateral, o **bíceps femoral** e o **trato iliotibial** (que tem três camadas e cuja camada superficial raramente se rompe nessas lesões). O braço direto da cabeça curta do bíceps pode arrancar a cabeça da fíbula, um achado comum nas luxações **anteromediais** e nas lesões graves em varo. O fabelofibular fica mais tenso em **extensão completa**, e a **artéria genicular inferior lateral** corre pela cápsula posterior na borda superior do menisco lateral, passando entre o popliteofibular e o fabelofibular no alto do estiloide da fíbula: é um vaso que aparece na dissecção do canto.
 
@@ -134,9 +136,9 @@ Anatomia posterolateral do joelho: colateral lateral, ligamento popliteofibular,
 
 !questoes relacionadas=joelho-0342,joelho-0294 treino=joelho-0355
 conceito: As estruturas-chave do canto posterolateral são o colateral fibular (lateral), o tendão do poplíteo e o ligamento popliteofibular.
-como: O SBOT-SP pediu os constituintes do canto misturando o cruzado posterior e o poplíteo oblíquo (que é posterior e vem do semimembranáceo); o TARO 2009 pediu as estruturas mais importantes a reconstruir, atribuindo a lista a Warren. O acervo não registra gabarito oficial dessas duas provas; o capítulo dá exatamente o trio colateral fibular, poplíteo e popliteofibular, sem citar Warren.
+como: O SBOT-SP pediu os constituintes do canto misturando o cruzado posterior e o poplíteo oblíquo (que é posterior e vem do semimembranáceo); o TARO 2009 pediu as estruturas mais importantes a reconstruir, atribuindo a lista a Warren. O acervo não registra gabarito oficial dessas duas provas; o capítulo do Rockwood dá exatamente o trio colateral fibular, poplíteo e popliteofibular, sem citar Warren. O nome vem do Campbell 15 (cap. 50): WARREN e colaboradores batizaram o ligamento popliteofibular (p. 1989), e o livro recomenda, no agudo e no crônico, reparar ou reconstruir o colateral lateral, o tendão do poplíteo com sua inserção e o popliteofibular (p. 2061), com a técnica de VELTRI e WARREN na Fig. 50.91 (p. 2063).
 armadilha: Ligamento poplíteo oblíquo: é uma expansão do semimembranáceo na cápsula posterior, não do canto posterolateral.
-armadilha: Ligamento arqueado: é o nome antigo das divisões do popliteofibular; não substitui o tendão do poplíteo.
+armadilha: Ligamento arqueado: no Rockwood, é o nome antigo das divisões do popliteofibular; no Campbell 15 (cap. 50), é uma condensação em Y das fibras de origem do poplíteo, não um ligamento separado (p. 1986), desenhada na camada III, a cápsula (Fig. 50.11, p. 1990). Em nenhum dos dois ele substitui o tendão do poplíteo.
 !fim
 
 ## O que cada estrutura segura
@@ -274,7 +276,7 @@ Para não lesar o feixe neurovascular: perfurar com o joelho a **90° de flexão
 
 Numa série de 35 reconstruções combinadas dos dois cruzados, o Lachman e o pivot shift ficaram normais em **94%**, mas a gaveta posterior só ficou normal em **46%**. Reconstruir só o cruzado posterior num joelho que também perdeu o canto deixa **mais translação posterior residual**. A **ossificação heterotópica** também se associa à reconstrução do cruzado posterior.
 
-O Campbell 15 dá a lista em ordem. Na Tabela 50.7 (cap. 50, p. 2109), a primeira complicação depois do tratamento do cruzado posterior é a **frouxidão posterior residual**, definida como **mais de 4 mm** de translação posterior a mais na radiografia com estresse; a segunda é a **perda de flexão de 10° a 20°**. Sobre o prognóstico, o mesmo capítulo (p. 2098) diz que a variável que mais prediz o estado funcional é a instabilidade ser **unidirecional, e não multidirecional**, no momento da lesão, com correlação direta entre a instabilidade combinada e condromalácia da patela, lesão de menisco, atrofia do quadríceps e artrose; a 13ª edição (cap. 45, p. 2243) dá o autor do estudo, **TORG**. Na mesma página, a gaveta posterior grau III (mais de 10 mm) é indicação relativa de reconstrução.
+O Campbell 15 lista as complicações na Tabela 50.7 (cap. 50, p. 2109), em sequência e **sem frequências**: a ordem da tabela não é um ranking medido. Abre com a **frouxidão posterior residual**, definida como **mais de 4 mm** de translação posterior a mais na radiografia com estresse; segue a **perda de flexão de 10° a 20°**, a perda de extensão, a falha do enxerto, as lesões neurológicas, as complicações vasculares e, por último, a **osteonecrose do côndilo femoral medial**, que pode aparecer meses a anos depois de perfurar o côndilo, por agressão à irrigação do osso subcondral. Sobre o prognóstico, o mesmo capítulo (p. 2098) diz que a variável que mais prediz o estado funcional é a instabilidade ser **unidirecional, e não multidirecional**, no momento da lesão, com correlação direta entre a instabilidade combinada e condromalácia da patela, lesão de menisco, atrofia do quadríceps e artrose; a 13ª edição (cap. 45, p. 2243) dá o autor do estudo, **TORG**. Na mesma página, a gaveta posterior grau III (mais de 10 mm) é indicação relativa de reconstrução.
 
 > Na prova: o problema mais comum depois de reconstruir o cruzado posterior é a **frouxidão posterior residual**.
 
@@ -283,7 +285,7 @@ conceito: A reconstrução do cruzado posterior restaura bem menos a gaveta post
 como: O TARO cobrou a mesma ideia em 2013, 2016 e 2023, com perda de flexão, dor, lesão nervosa e instabilidade posterolateral como distratores.
 armadilha: Perda de flexão: a rigidez existe, mas, quando a instabilidade residual está entre as alternativas, é ela que a banca considera a mais comum.
 armadilha: Lesão vascular ou nervosa: é a complicação mais temida, não a mais frequente.
-alerta: No TARO 2018 (joelho-0013), o gabarito oficial foi a redução do arco de movimento, numa questão em que a instabilidade residual não estava entre as alternativas. O Rockwood não dá uma hierarquia de complicações da reconstrução isolada do cruzado posterior; ele mostra a gaveta posterior normal em só 46% e a rigidez e a artrofibrose como problemas comuns da cirurgia multiligamentar. Leia as alternativas: com instabilidade residual na lista, ela é a resposta das outras três provas.
+alerta: No TARO 2018 (joelho-0013), o gabarito oficial foi a redução do arco de movimento, numa questão em que a instabilidade residual não estava entre as alternativas. A necrose do côndilo femoral medial, outra alternativa dessa prova, existe: é a última linha da Tabela 50.7 do Campbell 15 (cap. 50, p. 2109), que não dá frequências. O Rockwood não dá uma hierarquia de complicações da reconstrução isolada do cruzado posterior; ele mostra a gaveta posterior normal em só 46% e a rigidez e a artrofibrose como problemas comuns da cirurgia multiligamentar. Leia as alternativas: com instabilidade residual na lista, ela é a resposta das outras três provas.
 !fim
 
 # Imagem {radar=confirmado}
@@ -376,7 +378,7 @@ alerta: O gabarito oficial do TARO 2010 foi a luxação posterior. O Rockwood n�
 
 # Exame e luxação irredutível {radar=confirmado}
 
-É raro o joelho chegar luxado. Quando chega, a **redução rápida** evita isquemia prolongada: **tração no eixo e depois extensão** costumam bastar, e o joelho fica **mais estável em extensão**, posição em que pode ser imobilizado antes das imagens.
+É raro o joelho chegar luxado. Quando chega, a **redução rápida** evita isquemia prolongada: **tração no eixo e depois extensão** costumam bastar, e o joelho fica **mais estável em extensão**, posição em que pode ser imobilizado antes das imagens. O Campbell 15 (cap. 50, p. 2112) prefere outra posição depois da redução anatômica: tala ou órtese a **30 a 45 graus de flexão**, se o joelho estiver estável assim, porque aproxima a cápsula posterior e os cantos posteromedial e posterolateral e tira a tensão dos vasos poplíteos; evita o gesso circular, para vigiar a circulação e os nervos, e usa fixador externo transarticular se o joelho não se mantém reduzido na órtese. Os dois livros concordam em reduzir logo; divergem na posição de espera.
 
 Quando chega reduzido, a pergunta é se ele luxou e se ainda "luxa". O exame é limitado pela dor, e um detalhe engana: como a cápsula rompe, o **derrame ou a hemartrose podem faltar**, porque o líquido escapa para os compartimentos da perna. Procure pistas na pele, como a **escoriação pré-patelar** do trauma do painel. Repita o exame ligamentar depois de observação, imobilização e gelo; se precisou reduzir, examine de novo sob anestesia. Na fase aguda, a prioridade é saber se o **aparelho extensor** está íntegro (elevação da perna estendida) e onde está a patela; se a dor não deixa, meça a altura patelar na radiografia.
 

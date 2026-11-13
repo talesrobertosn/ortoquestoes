@@ -1,6 +1,6 @@
 ---
 id: campbell15-pe-diabetico-charcot
-versao: 1
+versao: 2
 titulo: Pé diabético e neuroartropatia de Charcot
 especialidade: pe-tornozelo
 acesso: gratis
@@ -101,7 +101,7 @@ alerta: O gabarito oficial é a supressão imunológica (D), sustentada pelo Cam
 
 # O exame do pé em risco: sapato, pele, pulso, monofilamento e sonda {radar=fundamento}
 
-O Box 91.1 do Campbell (cap. 91, p. 3997 aprox.) é um roteiro de consultório que vale a pena decorar na ordem, porque cada item tem um porquê.
+O Box 91.1 do Campbell (cap. 91, p. 3997) é um roteiro de consultório que vale a pena decorar na ordem, porque cada item tem um porquê.
 
 Os itens de sapato, pé e pele estão na tabela abaixo; o detalhe que mais vale questão é a manobra que separa infecção de CHARCOT diante de um pé vermelho, quente e inchado: **eleve o membro; o CHARCOT geralmente cede com a elevação**. Calos são **precursores da úlcera** (o Sizínio chama o calo de pré-úlcera).
 
@@ -150,7 +150,7 @@ O Sizínio aponta os dois defeitos da classificação. Primeiro, ela **mistura p
 
 ## BRODSKY: profundidade e isquemia em eixos separados
 
-BRODSKY notou que os graus IV e V de WAGNER eram, na verdade, isquêmicos e criou a classificação **profundidade-isquemia** (Campbell, Tabela 91.2, p. 3999 aprox.). A **profundidade** vai de 0 a 3, como a de WAGNER, e a **isquemia** é graduada à parte, de **A** (sem isquemia) a **D** (gangrena completa), conforme a tabela. O Sizínio dá a descrição clínica do A (pulsos palpáveis, cor, enchimento capilar e pelos normais), observa que o **B é o mais encontrado na prática** e oferece um exemplo: úlcera com infecção óssea e vascularização diminuída, sem gangrena, é **3B**.
+BRODSKY notou que os graus IV e V de WAGNER eram, na verdade, isquêmicos e criou a classificação **profundidade-isquemia** (Campbell, Tabela 91.2, p. 3999). A **profundidade** vai de 0 a 3, como a de WAGNER, e a **isquemia** é graduada à parte, de **A** (sem isquemia) a **D** (gangrena completa), conforme a tabela. O Sizínio dá a descrição clínica do A (pulsos palpáveis, cor, enchimento capilar e pelos normais), observa que o **B é o mais encontrado na prática** e oferece um exemplo: úlcera com infecção óssea e vascularização diminuída, sem gangrena, é **3B**.
 
 ## Universidade do TEXAS: a grade de 16 casas
 
@@ -292,7 +292,7 @@ O objetivo da cirurgia no pé neuropático, pelo Campbell (cap. 91, p. 4003), é
 
 ## Último recurso, mas não fracasso
 
-A amputação é a última opção quando a cirurgia falha, a doença vascular não é reconstruível ou a infecção não se controla (Campbell, cap. 91, p. 4005 aprox.); **5% a 15% dos diabéticos** terão alguma, cada vez em níveis mais distais.
+A amputação é a última opção quando a cirurgia falha, a doença vascular não é reconstruível ou a infecção não se controla (Campbell, cap. 91, p. 4005); **5% a 15% dos diabéticos** terão alguma, cada vez em níveis mais distais.
 
 ## Como escolher o nível
 
@@ -306,7 +306,7 @@ O Campbell segue o pé de frente para trás:
 
 O fator isolado **mais importante** para o sucesso de uma amputação parcial do pé é a **HbA1c no momento da cirurgia**; alguns autores não fazem cirurgia eletiva nem de trauma com **A1C acima de 8%**, salvo para salvar vida ou membro. A perfusão entra pelo ITB: abaixo de **0,5**, a úlcera dificilmente cicatriza sem revascularização (p. 3995.e1). Na profundidade-isquemia de BRODSKY, o **C** (gangrena parcial do antepé) pede **cirurgia vascular reconstrutiva com amputação parcial**, e o **D** (gangrena completa), provável **amputação maior** (p. 4002).
 
-!tabela Nível de amputação no pé diabético (Campbell, cap. 91, p. 4005 aprox.)
+!tabela Nível de amputação no pé diabético (Campbell, cap. 91, p. 4005)
 | Região | Opção | Exigência ou ressalva |
 | --- | --- | --- |
 | Dedos | amputação parcial ou desarticulação | preservar coto espaçador; hálux: 1 cm da falange proximal (Sizínio) |
@@ -360,7 +360,7 @@ armadilha: Trauma de alta energia não é o gatilho (o trauma é microtrauma ou 
 
 # Estágios de EICHENHOLTZ: o relógio do CHARCOT {radar=confirmado}
 
-EICHENHOLTZ percebeu que o CHARCOT tem uma **história natural constante, independente da localização**, e a dividiu por **radiografia e sinais clínicos de inflamação** (Campbell, Tabela 91.4, p. 4011 aprox.). O estágio **0** foi acrescentado depois: o pé já tem **edema, calor e eritema**, mas a radiografia é normal, e só a **ressonância** confirma (Sizínio). No **1, fragmentação**, a radiografia mostra **destruição óssea, subluxação ou luxação**, e a clínica continua inflamada. No **2, coalescência**, o debris é absorvido e os fragmentos coalescem, com **menos calor, eritema e edema**. No **3, consolidação**, os fragmentos **consolidam e remodelam**, sem sinais inflamatórios, às vezes com deformidade residual.
+EICHENHOLTZ percebeu que o CHARCOT tem uma **história natural constante, independente da localização**, e a dividiu por **radiografia e sinais clínicos de inflamação** (Campbell, Tabela 91.4, p. 4011). O estágio **0** foi acrescentado depois: o pé já tem **edema, calor e eritema**, mas a radiografia é normal, e só a **ressonância** confirma (Sizínio). No **1, fragmentação**, a radiografia mostra **destruição óssea, subluxação ou luxação**, e a clínica continua inflamada. No **2, coalescência**, o debris é absorvido e os fragmentos coalescem, com **menos calor, eritema e edema**. No **3, consolidação**, os fragmentos **consolidam e remodelam**, sem sinais inflamatórios, às vezes com deformidade residual.
 
 O raciocínio é seguir a inflamação: ela começa no 0 e no 1, diminui no 2 e some no 3, enquanto a radiografia vai de normal a destruída, depois a reparando e, por fim, consolidada. O Sizínio insiste: **o estágio, e não o local, define o tratamento**.
 
@@ -407,8 +407,8 @@ armadilha: Marcar a talonavicular ou a subtalar, que pertencem ao tipo 2, o segu
 !questoes central=pe-tornozelo-0222 relacionadas=pe-tornozelo-0340
 conceito: Os dois locais mais comuns são o tipo 1 (tarsometatarsal, 60%) e o tipo 2 (retropé: subtalar, talonavicular e calcaneocuboide, 25%); no tipo 1, o valgo do retropé é causado pela abdução do antepé, e a coluna medial falha antes da lateral.
 como: O SBOT-SP perguntou as articulações mais comumente acometidas; o TARO 2008 perguntou a deformidade primária do pé com CHARCOT.
-armadilha: Na 0222, escolher pares sem a tarsometatarsal; na 0340, escolher o varo do retropé ou a flexão plantar do tálus, que são deformidades do tipo 2.
-alerta: As duas estão sem gabarito no banco. Na `pe-tornozelo-0222`, o Campbell sustenta talonavicular e tarsometatarsal (A), por juntar o local mais comum com uma articulação do segundo tipo mais comum. Na `pe-tornozelo-0340`, o Campbell descreve no tipo 1 o valgo do retropé causado pela abdução do antepé (D), mas não usa a expressão "deformidade primária".
+armadilha: Na 0222, escolher pares sem a tarsometatarsal; na 0340, escolher o varo do retropé, deformidade de um subgrupo do tipo 2, ou o equino do calcâneo, que agrava o colapso mas não é a deformidade dele.
+alerta: As duas estão sem gabarito oficial. Na `pe-tornozelo-0222`, o Campbell sustenta talonavicular e tarsometatarsal (A), por juntar o local mais comum com uma articulação do segundo tipo mais comum. Na `pe-tornozelo-0340`, o acervo mantém a letra A (flexão plantar do tálus), que segue a bibliografia da banca (Campbell, 10ª ed.); a 15ª ed. descreve a flexão plantar da cabeça do tálus como caminho para o mata-borrão no tipo 2, mas no tipo 1 diz que o valgo do retropé é causado pela abdução do antepé (D) e não usa a expressão "deformidade primária" (p. 4006), o que deixa a questão discutível.
 !fim
 
 !questoes central=pe-tornozelo-0135
@@ -425,13 +425,13 @@ O CHARCOT agudo tem **edema, calor, rubor e até dor**, apesar da neuropatia, e 
 
 ## Conservador: proteger até consolidar
 
-O Campbell (cap. 91, p. 4008) usa **BRODSKY e EICHENHOLTZ juntos** para decidir, com um objetivo: um **pé plantígrado**, com **partes moles fechadas**, capaz de suportar carga. No **estágio 1**, **gesso de contato total ou órtese**; no **2**, **bota pré-fabricada ou AFO moldada**; no **3**, **sapato acomodativo com órtese moldada** (p. 4009 aprox.). O paciente deve saber desde o início que **até 50%** podem precisar de cirurgia. Vale suplementar **vitamina D**; calcitonina e bisfosfonatos têm efetividade limitada e **não são padrão**.
+O Campbell (cap. 91, p. 4008) usa **BRODSKY e EICHENHOLTZ juntos** para decidir, com um objetivo: um **pé plantígrado**, com **partes moles fechadas**, capaz de suportar carga. No **estágio 1**, **gesso de contato total ou órtese**; no **2**, **bota pré-fabricada ou AFO moldada**; no **3**, **sapato acomodativo com órtese moldada** (p. 4009). O paciente deve saber desde o início que **até 50%** podem precisar de cirurgia. Vale suplementar **vitamina D**; calcitonina e bisfosfonatos têm efetividade limitada e **não são padrão**.
 
 O Sizínio detalha: **cerca de 75%** são tratados conservadoramente, e a meta é diagnosticar no **estágio I**, quando o pé ainda é deformável, e protegê-lo até consolidar plantígrado. Gesso **sem carga** durante a fase aguda (em geral **4 a 6 semanas**, até sumirem edema, calor e rubor, critério clínico aceito pela Associação Americana de Diabetes), radiografias **semanais**, depois carga parcial progressiva no gesso. No tornozelo, a proteção com órtese pode durar até 12 meses.
 
 ## Cirúrgico: quando, como e com quê
 
-**O momento.** A cirurgia eletiva era evitada pelo risco de infecção, pseudartrose e problemas de ferida, mas ficou mais frequente com o melhor controle glicêmico e a melhor fixação (Campbell, p. 4009 aprox.). Muitos cirurgiões **esperam o fim da fase inflamatória**, porque o osso nessa fase tem **consolidação ruim e reabsorção osteoclástica** e não segura a fixação; por outro lado, adiar uma deformidade instável pode criar a úlcera que impede a fixação interna. Uma revisão sistemática concluiu que a evidência para operar na **fase aguda é inconclusiva**. Os conceitos do Campbell (p. 4012): deformidade **instável com diabetes controlado** (A1C abaixo de 8) pode ir para **cirurgia precoce com fixação interna**; mal controlado, **GCT** enquanto se otimiza; **úlcera não impede fixação interna** se todo o osso infectado for ressecado; **fixador externo** para deformidade gravemente infectada ou partes moles ruins. O Sizínio lembra que a cirurgia no CHARCOT agudo é **incomum**, reservada ao deslocamento que ameaça a pele, e que **a maioria se opera no estágio 3**, por úlcera recidivante apesar de palmilha e sapato.
+**O momento.** A cirurgia eletiva era evitada pelo risco de infecção, pseudartrose e problemas de ferida, mas ficou mais frequente com o melhor controle glicêmico e a melhor fixação (Campbell, p. 4009). Muitos cirurgiões **preferem esperar o fim da fase inflamatória** por **receio** de que o osso nessa fase tenha **consolidação ruim e reabsorção osteoclástica** e não segure a fixação (p. 4009 e 4011); é o motivo que o livro atribui a quem adia, não uma afirmação de que a fixação falha; por outro lado, adiar uma deformidade instável pode criar a úlcera que impede a fixação interna. Uma revisão sistemática concluiu que a evidência para operar na **fase aguda é inconclusiva**. Os conceitos do Campbell (p. 4012): deformidade **instável com diabetes controlado** (A1C abaixo de 8) pode ir para **cirurgia precoce com fixação interna**; mal controlado, **GCT** enquanto se otimiza; **úlcera não impede fixação interna** se todo o osso infectado for ressecado; **fixador externo** para deformidade gravemente infectada ou partes moles ruins. O Sizínio lembra que a cirurgia no CHARCOT agudo é **incomum**, reservada ao deslocamento que ameaça a pele, e que **a maioria se opera no estágio 3**, por úlcera recidivante apesar de palmilha e sapato.
 
 **O tornozelo** é o pior cenário: as correções do CHARCOT do tornozelo têm **altas taxas de complicação e de falha** (Campbell, p. 4014); HARKIN obteve só **50%** de resultados bons ou excelentes em 56 pacientes.
 
@@ -439,7 +439,7 @@ O Sizínio detalha: **cerca de 75%** são tratados conservadoramente, e a meta �
 
 **A artrodese** trata a instabilidade com dor ou úlcera. Pelo Campbell (p. 4012), **o tipo 1 pede artrodese do mediopé e o tipo 2, tríplice artrodese**, com osteotomias e cunhas em um ou dois tempos; há **24% de uniões parciais** e muitas uniões fibrosas assintomáticas, porque o paciente não respeita a descarga. O Sizínio resume: **a cirurgia do CHARCOT é a artrodese**, porque a lesão é instável e só a consolidação óssea dá estabilidade; no retropé crônico, **tríplice artrodese modelante** ou osteotomia em CHOPART; no tornozelo, **artrodese tibiotalocalcaneana com haste retrógrada**, em neutro a 5 graus de dorsiflexão e 5 a 10 graus de valgo. Uma **pseudartrose estável e alinhada** pode funcionar com órtese.
 
-**A fixação** é mais forte que no trauma comum (Campbell, p. 4013 aprox.): **interna sem infecção**, **fixador multiplanar com infecção** ou partes moles ruins, placa plantar como banda de tensão e vigas intramedulares. SAMMARCO chamou de **superconstrução** a fixação do mediopé com **placa plantar bloqueada e parafusos intramedulares longos nos metatarsais**, que atravessam inclusive articulações não acometidas (Sizínio); o Campbell propõe a **fixação híbrida**, haste ou viga com placa bloqueada.
+**A fixação** é mais forte que no trauma comum (Campbell, p. 4013): **interna sem infecção**, **fixador multiplanar com infecção** ou partes moles ruins, placa plantar como banda de tensão e vigas intramedulares. SAMMARCO chamou de **superconstrução** a fixação do mediopé com **placa plantar bloqueada e parafusos intramedulares longos nos metatarsais**, que atravessam inclusive articulações não acometidas (Sizínio); o Campbell propõe a **fixação híbrida**, haste ou viga com placa bloqueada.
 
 !tabela Escolha cirúrgica no CHARCOT (Campbell, cap. 91, p. 4012 a 4015; Sizínio, cap. 21.7)
 | Situação | Conduta |
@@ -462,7 +462,7 @@ armadilha: Marcar a artrodese do mediopé, que é a do tipo 1, ou a ressecção 
 !fim
 
 !questoes central=pe-tornozelo-0231
-conceito: A correção cirúrgica do CHARCOT do tornozelo tem altas taxas de complicação e de falha; na fase inflamatória o osso tem consolidação ruim e reabsorção osteoclástica, insuficiente para segurar a fixação.
+conceito: A correção cirúrgica do CHARCOT do tornozelo tem altas taxas de complicação e de falha; muitos cirurgiões adiam a cirurgia até o fim da fase inflamatória por receio de que o osso, com consolidação ruim e reabsorção osteoclástica, não segure a fixação (Campbell, p. 4009 e 4011).
 como: O TEOT 2025 perguntou a que se associa a cirurgia do CHARCOT do tornozelo na fase inflamatória.
 armadilha: Achar que operar melhora a dor e a inflamação; a síndrome compartimental e a piora da propriocepção não são as consequências descritas.
 !fim

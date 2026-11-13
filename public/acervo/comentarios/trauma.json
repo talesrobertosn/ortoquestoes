@@ -6751,7 +6751,7 @@
       "a-arteria-poplitea-82164fda",
       "a-arteria-poplitea-bca7b985"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "a7bb22f9971f7200cc46db54cf23ea129bf19de943b12010010f0ec997b65bff"
     }
    ],
@@ -6829,7 +6829,7 @@
       "exame-e-imagem-01c205b8",
       "tratamento-da-fratura-do-colo-ef0a1cf8"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "e2ef3105ec058f37640fb5d00c5d6c8ed6cf74dae053cdb45f444f2d5e1fb0cc"
     }
    ],
@@ -9729,7 +9729,7 @@
       "o-lado-medial-9548c808",
       "imagem-1f49da70"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "ee383697d59892370c3c3e94ef97091e4e48ed59121883a3e0be94705e5eeab5"
     }
    ],
@@ -9772,7 +9772,7 @@
       "tratamento-0fd132be",
       "canto-posterolateral-474af362"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "5cf78e02d181b00205562177a16593f2fb9f63f8624e6abc62ab919d62b71ef2"
     }
    ],
@@ -11451,7 +11451,7 @@
       "a-arteria-poplitea-82164fda",
       "a-arteria-poplitea-5543f024"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "376990f05077251777744a23c475d842bdbefd4de8a5829ec30e033231c7c10f"
     }
    ],
@@ -16892,7 +16892,7 @@
       "classificacao-bab0c782",
       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-7a74af3c"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "7f83c8cdf4239babcf99fdc54dd0e2ae16527699aa4f3296e7e097ce2cbbf0ce"
     }
    ],
@@ -24009,7 +24009,7 @@
       "outras-complicacoes-e-resultados-bee5e6a6",
       "outras-complicacoes-e-resultados-6f637759"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "77bddfd09db177e38205ee4697441a0eb32bd5ef855ec29cc635ac73d9052970"
     }
    ],
@@ -24318,7 +24318,7 @@
       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-7a74af3c",
       "tratamento-das-rupturas-tendineas-c716bcf4"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "7a2217d424807ca3b88ec5032fc85281b50158af1bec3a7bbc3a2bfa8fc283c6"
     }
    ],
@@ -25667,7 +25667,7 @@
       "imagem-5a3e9611",
       "patela-bipartida-e-outros-simuladores-27cbef14"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "35729c7efd2aeb95d441362fed9041eb998331a9380b31f9fb5142eb33698e37"
     }
    ],
@@ -34688,18 +34688,20 @@
   }
  },
  "trauma-1552": {
-  "conceito": "São duas perguntas epidemiológicas com denominadores diferentes. A primeira olha os pacientes com fratura do colo e pergunta quantos apresentam **outra fratura ou luxação associada**: pouco mais de **4%**. A segunda acompanha quem já sofreu uma fratura do quadril e estima uma **segunda fratura em dois anos**, chegando perto de **10% nas mulheres**.\n\nAs lesões associadas são sobretudo de membro superior, como rádio distal e úmero proximal. Já a segunda fratura evidencia que os fatores de fragilidade e queda continuam presentes depois do primeiro episódio. Nos homens, a estimativa apresentada é menor, cerca de 5%; não deve ser transferida para a população feminina da questão (resumo do Rockwood, 10ª ed., cap. 53, “Lesões associadas” e “A segunda fratura”).\n\nEsses valores aproximados não são risco individual nem justificam somar os dois percentuais: eles medem eventos distintos. Leia essas seções no resumo da Biblioteca relacionando o primeiro dado ao atendimento inicial e o segundo à prevenção secundária.\n\n**Por que esta questão foi criada.** Distingue lesão concomitante de nova fratura futura e exige manter sexo e intervalo de seguimento ligados à estimativa correta.",
-  "correta": "**D: cerca de 4% e 10%.** O primeiro valor se aproxima da frequência de lesões associadas; o segundo corresponde à segunda fratura em mulheres em dois anos. A ordem é parte essencial da resposta.",
+  "conceito": "Os dois números do enunciado olham para momentos diferentes do mesmo paciente: o primeiro é o que ele trouxe junto no dia da queda, o segundo é o que pode acontecer nos dois anos seguintes. Misturar os dois denominadores, ou trocar o sexo, é a armadilha.\n\n**Quem fratura o colo e por quê.** A fratura do colo é típica da **mulher idosa**. O risco vem de dois grupos de fatores que se somam: os que **enfraquecem o osso** (osteoporose, baixo peso, corticoide, álcool, tabagismo) e os que **aumentam as quedas** (fraqueza, alteração de marcha e equilíbrio, visão ruim, sedativos). Noventa por cento das fraturas vêm de quedas (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 53, seções da epidemiologia e do mecanismo).\n\n**Primeiro número: o que vem junto.** A maioria das fraturas do colo é isolada. Num estudo de ROBINSON com quase 2.000 pacientes, houve fratura ou luxação associada em **pouco mais de 4%**, sobretudo no **membro superior**: rádio distal e úmero proximal. O mecanismo explica: o idoso frágil cai de lado e bate o trocânter no chão, enquanto o mais ágil tende a cair para a frente e apoiar a mão. O capítulo acrescenta um detalhe de prognóstico: quem quebra o rádio junto costuma ser mais saudável, e quem quebra o **úmero proximal** junto tem **mortalidade maior** (cap. 53, seção das lesões associadas). Mais importante que as fraturas associadas são as **doenças** associadas: 60% a 70% chegam com ASA 3 ou 4.\n\n**Segundo número: o que vem depois.** Uma fratura do quadril é um sinal de alarme, porque os fatores que a causaram continuam presentes. O risco de **segunda fratura do quadril em 2 anos** chega perto de **10% nas mulheres** e de **5% nos homens**, e em **mais de 70%** a segunda fratura é do mesmo tipo da primeira (cap. 53, seção da epidemiologia). Daí a recomendação de começar o tratamento da osteoporose ainda na internação.\n\n| Dado | Valor | Quem |\n|---|---|---|\n| Fratura ou luxação associada | pouco mais de **4%** | todos os pacientes com fratura do colo |\n| Segunda fratura do quadril em 2 anos | perto de **10%** | mulheres |\n| Segunda fratura do quadril em 2 anos | perto de **5%** | homens |\n| Segunda fratura do mesmo tipo | mais de **70%** | quem refratura |\n\n**Cuidado com outro número.** O capítulo da fratura trocantérica cita uma grande coorte em que até um em cada três pacientes teve segunda fratura do quadril, em média em 1,5 ano. É outra população e outro seguimento; para a fratura do colo, a pergunta pede os 10% das mulheres em 2 anos.\n\n**Por que esta questão foi criada.** O TARO já cobrou separadamente as fraturas associadas do colo e o risco de segunda fratura no homem; este simulado junta os dois números e troca o sexo para obrigar a ler o enunciado até o fim.\n\nOs números estão nas seções \"A segunda fratura\" e \"Lesões associadas\" do resumo.",
+  "correta": "**D) 4%; 10%.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 53), dá fratura ou luxação associada em pouco mais de 4% dos pacientes com fratura do colo, quase sempre no membro superior, e um risco de segunda fratura do quadril em 2 anos que chega perto de 10% nas mulheres. A ordem do enunciado é respeitada: primeiro a lesão associada, depois a segunda fratura.",
   "incorretas": {
-   "A": "**Subestima lesões associadas e usa o risco masculino na segunda parte.** O resumo informa pouco mais de 4%, não 2%, e perto de 10% para mulheres. Os 5% pertencem aos homens no mesmo seguimento.",
-   "B": "**Acerta a recorrência feminina e reduz a frequência de lesões associadas.** Os 10% estão no horizonte de dois anos; os 2% não reproduzem o pouco mais de 4% descrito para fratura ou luxação concomitante.",
-   "C": "**Acerta o evento concomitante e troca a população da recorrência.** Cerca de 5% é o risco apresentado para os homens. A pergunta especifica mulheres, para quem o valor é perto de 10%."
+   "A": "**2%; 5%** erra as duas metades. O 2% não descreve o total de lesões associadas do colo, que passa um pouco de 4% (Rockwood, cap. 53, seção das lesões associadas); é, no capítulo vizinho, a frequência só do rádio distal na fratura trocantérica. E o 5% é o risco de segunda fratura em 2 anos dos **homens**, não das mulheres perguntadas.",
+   "B": "**2%; 10%** acerta a segunda fratura das mulheres e reduz à metade a frequência das lesões associadas. O Rockwood (cap. 53) fala em pouco mais de 4% de fratura ou luxação associada, com rádio distal e úmero proximal à frente. Um valor de 2% não aparece para o total de associações na fratura do colo.",
+   "C": "**4%; 5%** acerta a lesão associada e troca a população da segunda fratura. Os 5% em 2 anos são o risco dos **homens**; nas mulheres o capítulo dá perto de 10% (Rockwood, cap. 53, seção da epidemiologia). Seria a resposta se o enunciado perguntasse pelo homem."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Mecanismo, lesões associadas e quadro clínico; Quem sofre e por quê."
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 53 (Femoral Neck Fractures), seções da epidemiologia e das lesões associadas",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 54 (Trochanteric Hip Fractures), seção da epidemiologia",
+   "Resumo OrtoQuestões: Fratura do colo do fêmur"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23"
+  "geradoEm": "2026-11-12",
+  "conferido": false
  },
  "trauma-1553": {
   "conceito": "A fratura **basocervical** fica na base do colo e representa apenas **2% a 3% das fraturas do quadril**. Embora sua classificação possa incluí-la entre variedades intracapsulares, seu comportamento após a fixação faz os autores tratá-la como **extracapsular**, com **parafuso deslizante, o DHS**.\n\nDHS significa um sistema de parafuso deslizante associado a placa. O ponto da questão é a escolha para esse padrão da base, não uma superioridade universal do implante sobre parafusos canulados em todas as fraturas do colo. Para a maioria das fraturas sem desvio, por exemplo, o capítulo aceita ambos; na basocervical, explicita a preferência pelo deslizante (resumo do Rockwood, 10ª ed., cap. 53, “Basocervical”, “Fratura sem desvio” e “Algoritmo dos autores”).\n\nSepare localização, comportamento e classificação. Um nome dentro do colo não obriga que a estratégia mecânica seja idêntica à de uma fratura subcapital. O resumo da Biblioteca apresenta essa exceção de forma direta.\n\n**Por que esta questão foi criada.** A basocervical é uma situação em que a localização exige ajustar a escolha do implante; o percentual também impede tratá-la como a maioria das fraturas do quadril.",
@@ -35410,18 +35412,21 @@
   }
  },
  "trauma-1574": {
-  "conceito": "Depois do rádio distal, a segunda fratura associada mais comum descrita na transtrocantérica é a do **úmero proximal ipsilateral**. A frequência total de fraturas associadas é de **cerca de 4%**. É a alternativa C.\n\nO resumo informa rádio distal do mesmo lado em 2% e úmero proximal do mesmo lado em 1%. Esses valores descrevem locais específicos; os 4% referem-se ao conjunto dos pacientes com outra fratura. Não se deve usar a frequência de um osso como se fosse a de todas as associações, nem somar os dois grupos para afirmar que esgotam todos os casos (Rockwood, 10ª ed., cap. 54, “Quem sofre e o que esperar”).\n\nA queda de lado com apoio da mão do mesmo lado ajuda a compreender por que o membro superior ipsilateral aparece tanto. O quadril doloroso não elimina a necessidade de avaliar o restante do membro e as outras regiões atingidas. O capítulo também lembra trauma craniano e, menos frequentemente, fraturas da pelve.\n\nA questão começa na **segunda** associação, não na primeira. O rádio distal continua sendo o mais comum, mas a resposta aqui pede reconhecer o úmero proximal, conservar o lado e aplicar a frequência ao denominador correto.\n\nNo resumo da Biblioteca, confira a sequência e o mecanismo. Os números ajudam a orientar a atenção clínica, sem permitir presumir uma segunda fratura em todo paciente.\n\n**Por que esta questão foi criada.** Testa a associação que vem depois do rádio distal e distingue a frequência total da frequência de um local específico.",
-  "correta": "**C: úmero proximal ipsilateral; 4%.** O primeiro dado identifica a segunda associação e o segundo descreve o total de fraturas associadas.\n\nO úmero proximal corresponde a cerca de 1% no resumo; não confundir essa proporção específica com os 4% gerais.",
+  "conceito": "A questão pede dois dados que o Rockwood dá numa mesma frase sobre a fratura trocantérica: a lista das fraturas associadas, em ordem, e o total delas. O detalhe que decide é o **lado** do úmero e a diferença entre a frequência de um osso e a soma de todas as associações.\n\n**Quem sofre a fratura trocantérica.** O paciente típico tem **cerca de 80 anos**, a proporção homem para mulher é de 1 para 3, e a causa é uma **queda da própria altura**, quase sempre **de lado, sobre o quadril**: o idoso tem pouco impulso para a frente e reflexos de proteção mais lentos (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, seção da epidemiologia). É essa queda lateral que explica as fraturas associadas: o braço do mesmo lado bate no chão junto com o quadril.\n\n**As fraturas associadas.** O capítulo é direto (seção das lesões associadas à fratura trocantérica):\n\n| Associação | Frequência |\n|---|---|\n| Qualquer outra fratura | **cerca de 4%** |\n| Rádio distal **ipsilateral** (a mais comum) | 2% |\n| Úmero proximal **ipsilateral** (a segunda) | 1% |\n| Ramos do púbis e outras lesões do anel pélvico | incomuns |\n\nOs 2% e o 1% são locais específicos dentro dos 4% totais; não se somam para dar o total, nem o total se aplica a um osso só.\n\n**O que mais procurar.** O livro pede que se suspeite de **trauma de crânio** em todo paciente com fratura do quadril: numa série, 21% dos pacientes com fratura de baixa energia tiveram gravidade suficiente para justificar tomografia de crânio. No capítulo da fratura do colo, o padrão é parecido, com pouco mais de 4% de fratura ou luxação associada no membro superior.\n\n**Lembre o outro sentido da palavra \"segunda\".** O mesmo capítulo trata a fratura trocantérica como **fratura sentinela**: numa grande coorte, até um em cada três pacientes teve segunda fratura do quadril, em média em 1,5 ano. Aqui a pergunta não é sobre isso; \"segunda\" é a segunda colocada na lista das fraturas que vêm junto no dia da queda.\n\n**Por que esta questão foi criada.** O TARO já perguntou mais de uma vez a fratura associada mais comum, trocando lado e osso nas alternativas. Este simulado pede a segunda da lista junto com o total, para que a ordem, o lado e o denominador sejam lembrados de uma vez.\n\nOs números estão na seção \"Lesões associadas\" do resumo.",
+  "correta": "**C) úmero proximal ipsilateral; 4%.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54, seção das lesões associadas à fratura trocantérica), diz que cerca de 4% dos pacientes têm outra fratura; a mais comum é a do rádio distal ipsilateral (2%), seguida da do úmero proximal ipsilateral (1%). As duas ficam do mesmo lado porque a queda é lateral, sobre o quadril e o braço desse lado.",
   "incorretas": {
-   "A": "**Acerta a frequência geral e troca o lado.** O úmero proximal descrito é ipsilateral à fratura trocantérica.\n\nA lateralidade faz parte da associação ligada ao mecanismo de queda e não pode ser descartada como detalhe.",
-   "B": "**Troca o lado e eleva a frequência total.** O capítulo apresenta úmero proximal ipsilateral e cerca de 4% de outra fratura.\n\nNem a associação principal nem seu denominador correspondem ao par proposto.",
-   "D": "**Reconhece o osso e o lado, mas usa 10% em vez de 4%.** A alternativa conserva a anatomia e perde o dado populacional solicitado.\n\nEsse percentual não deve ser escolhido por parecer compatível com a gravidade do trauma; a pergunta pede o valor relatado."
+   "A": "**úmero proximal contralateral; 4%** acerta o osso e o total, mas troca o lado. O Rockwood (cap. 54) descreve o úmero proximal **ipsilateral**, e o lado não é detalhe: a fratura associada vem do mesmo mecanismo, a queda de lado que leva o quadril e o membro superior do mesmo lado ao chão.",
+   "B": "**úmero proximal contralateral; 10%** erra o lado e o total. Nenhuma frequência de 10% aparece para as fraturas associadas da trocantérica; o capítulo dá cerca de 4% (Rockwood, cap. 54). O 10% lembra outro número do quadril, o risco de segunda fratura do quadril em 2 anos nas mulheres, citado no capítulo da fratura do colo.",
+   "D": "**úmero proximal ipsilateral; 10%** acerta o osso e o lado, mas superestima o total. O Rockwood (cap. 54, seção das lesões associadas) diz que cerca de 4% dos pacientes têm outra fratura. Um total de 10% também não combina com as parcelas do capítulo (2% de rádio distal e 1% de úmero proximal)."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Quem sofre e o que esperar."
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 54 (Trochanteric Hip Fractures), seção das lesões associadas à fratura trocantérica",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 54, seção da epidemiologia e da prevenção de novas fraturas",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 53 (Femoral Neck Fractures), seções da epidemiologia e das lesões associadas",
+   "Resumo OrtoQuestões: Fratura transtrocantérica"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23"
+  "geradoEm": "2026-11-12",
+  "conferido": false
  },
  "trauma-1575": {
   "conceito": "A suspeita persiste apesar de AP e perfil de boa qualidade. A incidência radiográfica adicional descrita é **AP centrado no quadril com 10 graus de rotação interna**, alternativa D.\n\nO exame inicial do resumo inclui AP da pelve com ambos os quadris e perfil do lado afetado. O AP permite comparar alinhamento e comprimento com o lado íntegro, enquanto o perfil pode mostrar uma angulação que não fica evidente na primeira projeção. Quando esse conjunto não esclarece a suspeita, o AP centrado e em rotação interna é a tentativa adicional apresentada (Rockwood, 10ª ed., cap. 54, “Diagnóstico”).\n\nUma radiografia ainda inconclusiva não encerra a investigação. Se a dúvida persistir, o capítulo aponta **ressonância como melhor exame para fratura oculta**; se não estiver disponível, tomografia sem contraste. Elas também ajudam a reconhecer traços incompletos dos trocânteres e lesões de partes moles.\n\nA radiografia com tração tem outra utilidade descrita: avaliar melhor o traço, a parede lateral e lesão patológica. Portanto, não é um exame “errado” em todos os contextos. Apenas não é a incidência adicional especificada nessa sequência de suspeita ainda não confirmada.\n\nLeia no resumo da Biblioteca a investigação completa. A pergunta pede o próximo detalhe radiográfico, mas o cuidado real exige continuar se a suspeita clínica permanece, em vez de usar uma imagem negativa como exclusão automática.\n\n**Por que esta questão foi criada.** Distingue a incidência adicional na dúvida diagnóstica da imagem em tração usada para estudar o padrão da fratura.",
@@ -36259,18 +36264,28 @@
   }
  },
  "trauma-1596": {
-  "conceito": "**Planta do pé e fraqueza dos flexores localizam o problema no posterior profundo.** Esse compartimento contém tibial posterior, flexores longos dos dedos e do hálux e o nervo tibial posterior. A combinação sensitiva plantar com perda de flexão dos dedos e inversão acompanha esse conjunto anatômico.\n\nO exame compartimental é uma relação entre músculo, estiramento e nervo. A dor aparece ao alongar os músculos ameaçados; a dormência surge no território do nervo que atravessa o espaço; a fraqueza compromete a função desse grupo. Um único achado pode ser pouco específico, mas uma combinação coerente ajuda a localizar o risco.\n\nA localização não deve fazer esquecer os outros espaços. O resumo recomenda descompressão dos quatro compartimentos da perna quando indicada, com inspeção muscular, sem limitar a operação ao lugar em que o paciente conseguiu relatar dormência.\n\n**Na Biblioteca, leia a tabela “Compartimentos da perna e sinais”.** Compare planta, dorso, primeiro espaço e face dorsolateral antes de escolher apenas pela palavra “pé”.\n\n**Por que esta questão foi criada.** Treina a localização por território sensitivo e ação muscular, distinguindo os compartimentos que o TARO costuma trocar em perguntas sobre dormência.",
-  "correta": "**C: posterior profundo.** A sensibilidade plantar e as funções dos flexores longos e do tibial posterior correspondem ao conteúdo descrito. É a combinação que reúne os dois componentes do enunciado.\n\nA ausência ou presença de dormência isolada não substitui a avaliação da perfusão e da pressão no contexto clínico.",
+  "conceito": "Localizar a síndrome compartimental da perna pelo exame é ler três coisas ao mesmo tempo: **qual músculo dói ao ser estirado**, **onde a pele perdeu a sensibilidade** e **qual movimento enfraqueceu**. Cada compartimento tem o seu nervo e os seus músculos, e o enunciado entrega duas dessas três pistas.\n\n**Por que o exame aponta o compartimento.** Com a pressão alta, o músculo isquêmico dói quando é alongado, e o nervo que atravessa aquele espaço é o primeiro tecido a dar sintoma: a **parestesia** aparece no território dele. Depois vem a fraqueza dos músculos de dentro (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17, seção do diagnóstico clínico). São sinais **tardios e pouco sensíveis**: a parestesia tem sensibilidade de 13% e especificidade de 98% (Tabela 17-5). Quando aparecem, eles erram pouco, e é por isso que servem para localizar.\n\n**Os quatro compartimentos.** Na figura abaixo (Fig. 17-8), o anterior (A) fica entre a tíbia, a fíbula e a membrana interóssea; o lateral (L), ao lado da fíbula; o posterior superficial (SP), atrás, com a massa da panturrilha; e o **posterior profundo (DP)**, entre a tíbia, a membrana, a fíbula e o septo que o separa do superficial, coberto por pele e fáscia só na parte distal da perna. A Tabela 17-7 dá o conteúdo e os sinais de cada um:\n\n| Compartimento | Nervo | Dormência | Fraqueza |\n|---|---|---|---|\n| Anterior | fibular profundo | primeiro espaço interdigital | extensão do tornozelo e dos dedos |\n| Lateral | fibular superficial | dorso do pé | eversão |\n| Posterior superficial | sural | face dorsolateral do pé | flexão plantar |\n| **Posterior profundo** | **tibial posterior** | **planta do pé** | **flexão dos dedos e do tornozelo, inversão** |\n\n**Aplicando ao caso.** O posterior profundo contém o **tibial posterior** (o inversor), os **flexores longos dos dedos e do hálux** e o **nervo tibial**, que segue para a planta. Dormência plantar com fraqueza de flexão dos dedos e de inversão é o retrato dele. A dor ao estiramento passivo completaria o quadro: extensão do tornozelo e dos dedos e eversão, que alongam esses músculos. No pé, o compartimento calcâneo, o do quadrado plantar, comunica-se com o posterior profundo da perna (cap. 17, seção do pé).\n\n**A localização não muda a cirurgia.** Na perna, o capítulo manda liberar **os quatro compartimentos**, em geral por dupla incisão: a lateral abre anterior e lateral, e a medial, cerca de 1 a 2 cm atrás da borda medial da tíbia, abre o superficial e, afastando-o, o profundo, que é mais fácil de achar no terço distal. O compartimento acometido pelo exame é o que mais preocupa, mas não é o único que se abre.\n\n**Por que esta questão foi criada.** As provas trocam os territórios de dormência entre os quatro compartimentos; este simulado junta a sensibilidade com a fraqueza para que o compartimento se feche por duas pistas.\n\nA tabela está na seção \"Perna\" do resumo.",
+  "correta": "**C) posterior profundo.** Pela Tabela 17-7 do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), o posterior profundo contém o tibial posterior, os flexores longos dos dedos e do hálux e o nervo tibial posterior; a síndrome nesse compartimento tira a sensibilidade da planta do pé e enfraquece a flexão dos dedos e do tornozelo e a inversão. São exatamente os achados do enunciado.",
   "incorretas": {
-   "A": "**Lateral se relaciona aos fibulares e ao nervo fibular superficial.** Seu território é o dorso do pé e a função marcante é eversão, não a combinação de planta com fraqueza de inversão. A alternativa troca nervo e grupo muscular.",
-   "B": "**Anterior contém extensores e nervo fibular profundo.** A alteração sensitiva característica é no primeiro espaço interdigital, com fraqueza de extensão do tornozelo e dedos. Isso não corresponde à sensibilidade plantar e à função flexora pedidas.",
-   "D": "**Posterior superficial está ligado ao gastrocnêmio, sóleo e nervo sural.** A dormência é dorsolateral e a fraqueza principal é de flexão plantar. Não é a mesma combinação de planta do pé com flexão dos dedos e inversão do posterior profundo."
+   "A": "**lateral** contém os fibulares longo e curto e o nervo fibular superficial (Rockwood, cap. 17, Tabela 17-7). A dormência fica no **dorso** do pé, a fraqueza é de **eversão** e a dor aparece na inversão passiva, que estira os fibulares. É o oposto funcional do quadro descrito, em que a inversão está fraca.",
+   "B": "**anterior** é o compartimento mais acometido da perna, sobretudo na fratura da diáfise da tíbia, e por isso é o primeiro em que se pensa. O nervo dele é o fibular profundo, que dá dormência no **primeiro espaço interdigital**, e a fraqueza é de **extensão** do tornozelo e dos dedos (Tabela 17-7). Seria a resposta se o paciente perdesse a sensibilidade entre o hálux e o segundo dedo e não conseguisse levantar o pé.",
+   "D": "**posterior superficial** contém gastrocnêmio, sóleo, plantar e o nervo sural (Rockwood, cap. 17, Tabela 17-7). A dormência é na **face dorsolateral** do pé, a fraqueza é de flexão plantar e a dor surge na dorsiflexão passiva do tornozelo. Os flexores longos dos dedos e o tibial posterior ficam no compartimento vizinho, o profundo."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia."
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 17 (Acute Compartment Syndrome), seção dos compartimentos da perna, Tabela 17-7 e Fig. 17-8",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 17, seções do diagnóstico clínico (Tabela 17-5), do pé e da fasciotomia da perna",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21"
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-17-8.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 17, Fig. 17-8, seção dos compartimentos da perna. Corte transversal da perna com os quatro compartimentos: anterior (A), lateral (L), posterior superficial (SP) e posterior profundo (DP); as setas mostram as duas vias da fasciotomia por dupla incisão.",
+    "largura": 715,
+    "altura": 670
+   }
+  ],
+  "geradoEm": "2026-11-12",
+  "conferido": false
  },
  "trauma-1597": {
   "conceito": "**Juventude é o fator de risco mais importante, e a diáfise tibial é a principal origem de casos na distribuição geral.** O jovem tem maior volume muscular em um continente de tamanho fixo e, portanto, menos espaço para acomodar edema. No idoso, sarcopenia pode dar maior margem de volume; isso explica uma tendência populacional, sem excluir risco individual.\n\nA tabela do resumo atribui cerca de 36% dos casos à fratura diafisária da tíbia. Rádio distal aparece em 9,8%, mas somente cerca de 0,25% de suas fraturas cursam com síndrome. Esses números têm denominadores diferentes: um descreve de onde vieram os casos e o outro mede risco dentro de um tipo de fratura.\n\nPacientes sem fratura constituem uma exceção importante: podem ser mais velhos, com comorbidades e anticoagulação. Também há risco alto em certas fraturas do planalto. Nenhuma dessas ressalvas muda o par pedido na síntese geral, mas elas impedem usar idade ou localização como motivo para descartar o diagnóstico.\n\n**Leia “Quem tem síndrome compartimental”, na Biblioteca.** Compare população de risco, distribuição dos casos e incidência por fratura, mantendo cada dado na pergunta que ele responde.\n\n**Por que esta questão foi criada.** Combina a fratura cobrada no TARO 2013 com a associação de sexo e idade discutida nas provas, sem confundir diferentes denominadores epidemiológicos.",
@@ -36699,7 +36714,7 @@
       "classificacao-82bb4004",
       "tratamento-da-fratura-do-colo-c69f189c"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "96ab0bead5d3a88f5196ffde8408f87b5caaffb98a519f47a702c0cc7c3a66b2"
     }
    ],
@@ -36738,7 +36753,7 @@
       "pos-operatorio-e-necrose-avascular-3935fa2b",
       "pos-operatorio-e-necrose-avascular-54e6d12e"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "10742cf473e7c635db93a68f0b73d53d0741e9c6d26364964b985c571cd50667"
     }
    ],
@@ -36781,7 +36796,7 @@
       "pos-operatorio-e-necrose-avascular-101e1fdb",
       "exame-e-imagem-176e1e03"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "a5349009a769fb6d5671ec71aefca847188b06e2a855b5d6c535d8fcb27db75f"
     }
    ],
@@ -36843,7 +36858,7 @@
       "mecanismo-epidemiologia-e-lesoes-associadas-a61cbda2",
       "mecanismo-epidemiologia-e-lesoes-associadas-08873b34"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "5aa08b4b6e609e2596721f7ee3ae6a645972acaf6f5a01dccbcdfd9ffc3ede04"
     }
    ],
@@ -36884,7 +36899,7 @@
       "tratamento-da-fratura-do-colo-7307c8b1",
       "tratamento-da-fratura-do-colo-c69f189c"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "162f623d32c8635cc021ecc44f4a8d793825efc153a5b9acef2a2aa5c17ae499"
     }
    ],
@@ -36924,7 +36939,7 @@
       "processos-lateral-e-posterior-319972b0",
       "processos-lateral-e-posterior-ae875000"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "91a839135a6b390af98f2566fda3b832af94d070de2ada018d6bbf3b37debd1f"
     }
    ],
@@ -36998,7 +37013,7 @@
       "anatomia-e-vascularizacao-d570e842",
       "tratamento-da-fratura-do-colo-53c1a52a"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "51cb86b62579230efe4b24ac9228f34a515efe59310286278c057883c7d7ec96"
     }
    ],
@@ -37041,7 +37056,7 @@
       "tratamento-da-fratura-do-colo-d7c6aca2",
       "outras-complicacoes-e-resultados-bee5e6a6"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "9b4cc36372bc954705206aea5772395c9ce129a7322215920a561b4bb6c05c0c"
     }
    ],
@@ -37081,7 +37096,7 @@
       "luxacao-subtalar-42494929",
       "luxacao-subtalar-71ed9e35"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "a469bf0ab84169bab44640345b1f41db8d62fdffef1bd3e23814f7199ee52b0f"
     }
    ],
@@ -37125,7 +37140,7 @@
       "tratamento-da-fratura-do-colo-f5d75f5b",
       "controversias-e-o-que-falta-saber-1dd8fb8f"
      ],
-     "sha256": "c36aa54326f9abd26bc369ceaaed8ff686bda4c6f811a3c687eb069e90fb3f23",
+     "sha256": "82f427887d1e5b8a878a6b2b872894017c4b0eed21238969ed753cd3cd9f7bd6",
      "trechosSha256": "53dc3e0756eb0d1715e84bc03f0e05e9fdfb6ba220f081f83fdce9bbdf39e717"
     }
    ],
@@ -37167,7 +37182,7 @@
       "a-arteria-poplitea-9f539f11",
       "a-arteria-poplitea-0851428b"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "c3bbb10dfba7e914cadbec8f2dab6b6acbd0b4bf33c720313423cdd6ce02204f"
     }
    ],
@@ -37223,7 +37238,7 @@
       "o-nervo-fibular-comum-05d3e14c",
       "a-arteria-poplitea-b9951f36"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "20aee214d0b1d6dd129b08261f749be9cc10535b8baa8c8f2d3030caac5b0ecd"
     }
    ],
@@ -37262,7 +37277,7 @@
       "canto-posterolateral-1d24e09d",
       "canto-posterolateral-04216df0"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "93b2a2d34c57d8f1e14dc404f37bca2a57d435cd8253a96793752e6541d68055"
     }
    ],
@@ -37304,7 +37319,7 @@
       "a-arteria-poplitea-29c433db",
       "a-arteria-poplitea-cd6b4a13"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "3fa6ff376d8e33d5ebb22b9d9b21e5adf92f96d30ab0994ced32dab25a4937ce"
     }
    ],
@@ -37346,7 +37361,7 @@
       "o-lado-medial-f9dd2cc7",
       "exame-e-luxacao-irredutivel-a17fc1b9"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "22b9dfac52411439f9fd954ad967350f63a2d2e6016705e4c937fe89fad5874b"
     }
    ],
@@ -37388,7 +37403,7 @@
       "canto-posterolateral-e1623413",
       "tratamento-0fd132be"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "f4048d9e9a908b44c21f5cc51b8bda4ff63623b868be70366650b7920e87ac35"
     }
    ],
@@ -37428,7 +37443,7 @@
       "canto-posterolateral-e1623413",
       "tratamento-c73151d3"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "712ed0d001aea3005f4156bfead49641a6e23acafe7c4def85914f5974e97863"
     }
    ],
@@ -37471,7 +37486,7 @@
       "a-arteria-poplitea-a5075ff5",
       "tratamento-0fd132be"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "706c4b9aed53937efe3282a2d56ae72b0fa137134e0cca885709aa59bd5a8067"
     }
    ],
@@ -37535,7 +37550,7 @@
       "o-nervo-fibular-comum-6c2619c5",
       "o-nervo-fibular-comum-05d3e14c"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "5dd68129cbac4c5f7dd645af119b9df2c9d3b0e36889b8dd8d847094f798ad66"
     }
    ],
@@ -37577,7 +37592,7 @@
       "cruzado-posterior-a-pedra-fundamental-ed726e98",
       "imagem-ef4a6509"
      ],
-     "sha256": "514d17f36fc2b9a47b4115052fdeaf670d2a8ec5e6bc221807394557a5fe9998",
+     "sha256": "be8180ea3d75edfbe85293ff6d8ebc13fa7e8d0144ee82f45760805f140b1ef0",
      "trechosSha256": "dd6ce15ef115d182bafde296f491fdc79edf896c5aad1e3bcc05269d0c6996d9"
     }
    ],
@@ -38066,7 +38081,7 @@
       "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
       "imagem-5a3e9611"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "0f72fabfaa99c7fedce38acb2c3a1fffba064fdb4059855147c15857490e9ca8"
     }
    ],
@@ -38106,7 +38121,7 @@
       "imagem-a2c920f0",
       "anatomia-e-biomecanica-do-mecanismo-extensor-95dc48b7"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "abf477ca28b3f81f78827e772ba9088cb3e48b2edcb0cc6e076ac32d911f93c1"
     }
    ],
@@ -38143,7 +38158,7 @@
      "blocos": [
       "exame-fisico-e-fratura-exposta-oculta-cd96a587"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "4a571cf766607018703093b3a1c4963d86c258f07b9d1d15e7adae0d02277ff0"
     }
    ],
@@ -38181,7 +38196,7 @@
       "patela-bipartida-e-outros-simuladores-27cbef14",
       "patela-bipartida-e-outros-simuladores-f0b1afd4"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "e676227d5dd69a2ca45af37abc6d7c3f0c40e95c0cfb160461bcda6da678acfa"
     }
    ],
@@ -38221,7 +38236,7 @@
       "fixacao-interna-8ce3f90e",
       "fixacao-interna-39781fe4"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "324ffbd5a2a73a228cd0d16fd74019c5dc61411b64fdce3413a43e05e55f044e"
     }
    ],
@@ -38263,7 +38278,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
       "anatomia-e-biomecanica-do-mecanismo-extensor-a059d78b"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "1be4971c7a7feb2a445bda119c7477982d873626e15e62995ceeefac4065f0fd"
     }
    ],
@@ -38304,7 +38319,7 @@
       "patelectomia-parcial-e-total-ce27b267",
       "patelectomia-parcial-e-total-eca8eafb"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "4fca298663f0b614e9630386acc93d3163aab25fe7627d446b394d9ce5a24775"
     }
    ],
@@ -38345,7 +38360,7 @@
       "luxacao-aguda-da-patela-727a6900",
       "patela-bipartida-e-outros-simuladores-27cbef14"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "1e4aa71ff8d2361fcc784bc0f91d2da8c037cfd294cb66df7199af95bf537fb2"
     }
    ],
@@ -38409,7 +38424,7 @@
       "imagem-c8a6bbe6",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "69e2f8efc569ef06449595ac8bbee80d71a794b87d81163c09a587fb7d47690c"
     }
    ],
@@ -38449,7 +38464,7 @@
       "tratamento-das-rupturas-tendineas-5c9abd6f",
       "patelectomia-parcial-e-total-ce27b267"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "824af4e70a80c261d604e999bfbc52d5fce117f90a0d6bc72246e119812eed44"
     }
    ],
@@ -41325,7 +41340,7 @@
       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-a80f265b",
       "classificacao-6cb8c90a"
      ],
-     "sha256": "cf32093d9fb7fc0ff8eb7501536b4697fc641c340d6f47891241d779586ed69a",
+     "sha256": "79342e10ee4e5a163b0a692ad30f34fd264c6ba797a8f26a2e7e5f91a0cc29b6",
      "trechosSha256": "24adba243eba8227a1f23215d1a064eb75ff9164095061db413c31427ea69c56"
     }
    ],
