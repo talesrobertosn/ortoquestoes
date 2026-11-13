@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-displasia-fibrosa
-versao: 2
+versao: 3
 titulo: Displasia fibrosa e lesões fibro-ósseas afins
 especialidade: tumores
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 27 e 29), o Dahlin's Bone Tumors, 6ª ed. (caps. 24 e 26), o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13), o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), e o Sizínio Hebert, 5ª ed. (cap. 29)
 capitulo: Capítulo 25 · Benign Musculoskeletal Tumors
 autores: John A. Herring (editor)
-fonte: Livros conferidos localmente em 01/11/2026 e 04/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (p. 1013 a 1018, 1042 e 1043); Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (p. 932 a 937 e Tabela 27.3), cap. 26 (p. 869.e1, 870 e 873) e cap. 29 (p. 972, 975 e 983); Dahlin's Bone Tumors, 6ª ed. (2010), cap. 24 (Adamantinoma of Long Bones, p. 286 a 293) e cap. 26 (Osteofibrous Dysplasia, p. 327 a 330); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (Tabela 13-2, p. 432; Osteofibrous Dysplasia e adamantinoma, p. 452 e 453); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7 (p. 104 a 109 pelo índice); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29.
+fonte: Livros conferidos localmente em 01/11/2026, 04/11/2026 e 12/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (p. 1013 a 1018, 1042 e 1043); Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (p. 932 a 937 e Tabela 27.3), cap. 26 (p. 869.e1, 870 e 873) e cap. 29 (p. 972, 975 e 983); Dahlin's Bone Tumors, 6ª ed. (2010), cap. 24 (Adamantinoma of Long Bones, p. 286 a 293) e cap. 26 (Osteofibrous Dysplasia, p. 327 a 330); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 4 (p. 124 e 125) e cap. 13 (Tabela 13-2, p. 432; p. 451; Osteofibrous Dysplasia e adamantinoma, p. 452 e 453); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7 (Fibrous Dysplasia; Fibrous Cortical Defects and Nonossifying Fibromas); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29.
 subtemas: Displasia fibrosa; Displasia osteofibrosa e adamantinoma; Fibroma não ossificante e defeito fibroso cortical
 resumo: Displasia fibrosa é falha de maturação do osso trançado por mutação da Gs alfa (Arg201), intramedular, com vidro fosco, letras chinesas sem rima osteoblástica e cajado de pastor; McCUNE-ALBRIGHT soma café com leite e endocrinopatia, MAZABRAUD soma mixomas; a fratura consolida rápido com calo endosteal pobre, e a base é haste intramedular e enxerto cortical, sem radioterapia; a displasia osteofibrosa de CAMPANACCI nasce no córtex anterior da diáfise da tíbia da criança, tem rima osteoblástica, é observada e recidiva se curetada; o adamantinoma, seu diferencial maligno de baixo grau, dá lucências múltiplas em bolhas na diáfise da tíbia (85% a 90%) na 2ª e 3ª décadas, tem ilhas epiteliais com queratina, é radio e quimiorresistente, pede ressecção ampla e metastatiza tarde; o fibroma não ossificante é excêntrico metafisário, fratura no RITSCHL B e com café com leite forma o JAFFE-CAMPANACCI.
 ---
@@ -86,12 +86,14 @@ O Campbell (p. 933 e Tabela 27.3) define a síndrome de **MAZABRAUD** como **dis
 
 McCUNE-ALBRIGHT traz **pele e hormônio**; MAZABRAUD, **músculo**; JAFFE-CAMPANACCI, **pele com fibromas não ossificantes**.
 
-!tabela Síndromes das lesões fibrosas (Campbell 15, cap. 27, p. 933 e Tabela 27.3; Tachdjian, cap. 25, p. 1013 e 1014)
+Na pele, o contorno da mancha ajuda a separar as síndromes. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 4, p. 124 e 125), chama de **costa da Califórnia** a mancha café com leite de **borda lisa**, vista na neurofibromatose tipo 1 e no JAFFE-CAMPANACCI, e de **costa do Maine** a de **borda recortada**, irregular, frequente no McCUNE-ALBRIGHT. O mesmo livro repete a distinção no capítulo de tumores (cap. 13, p. 451): borda irregular na displasia fibrosa, borda lisa na neurofibromatose.
+
+!tabela Síndromes das lesões fibrosas (Campbell 15, cap. 27, p. 933 e Tabela 27.3; Tachdjian, cap. 25, p. 1013 e 1014; Lovell and Winter 7, cap. 4, p. 124 e 125)
 | Síndrome | Lesão óssea | O que vem junto |
 | --- | --- | --- |
-| McCUNE-ALBRIGHT | displasia fibrosa **poliostótica** | **café com leite** (costa do Maine) + **endocrinopatia** (puberdade precoce, sobretudo em meninas) |
+| McCUNE-ALBRIGHT | displasia fibrosa **poliostótica** | **café com leite** (costa do Maine, borda recortada) + **endocrinopatia** (puberdade precoce, sobretudo em meninas) |
 | MAZABRAUD | displasia fibrosa **poliostótica** | **mixomas intramusculares** |
-| JAFFE-CAMPANACCI | **múltiplos fibromas não ossificantes** | **café com leite** |
+| JAFFE-CAMPANACCI | **múltiplos fibromas não ossificantes** | **café com leite** (costa da Califórnia, borda lisa) |
 !fim
 
 !questoes central=tumores-0084 relacionadas=tumores-0310,tumores-0111,tumores-0031,tumores-0248

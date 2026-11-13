@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-04-gesso-tala
-versao: 4
+versao: 5
 titulo: Tratamento conservador e imobilização
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 4 · Cast and Splint Immobilization
 autores: Vince W. Prusick e Vishwas Talwalkar
-fonte: Livros conferidos localmente em 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 4 (base); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 10 (Principles of Nonoperative Management of Fractures, de OLLIVERE e DUCKWORTH), com trechos dos caps. 26, 37, 53, 57 e 63; Campbell's Operative Orthopaedics, 15ª ed., cap. 58 (p. 2537 a 2539) e cap. 62 (p. 2784 e 2785); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 46, 49, 60 e 67. Em 10/11/2026, conferidos ainda o Rockwood adulto, cap. 37 (seção Techniques: VELPEAU, tala em U, gesso pendente e órtese), e o HEBERT, cap. 46 (pinça de confeiteiro e VELPEAU). Nos dois Rockwood e no HEBERT, as referências citam capítulo, seção, tabela e figura. As páginas do Campbell são as impressas.
+fonte: Livros conferidos localmente em 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 4 (base); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 10 (Principles of Nonoperative Management of Fractures, de OLLIVERE e DUCKWORTH), com trechos dos caps. 26, 37, 53, 57 e 63; Campbell's Operative Orthopaedics, 15ª ed., cap. 58 (p. 2537 a 2539) e cap. 62 (p. 2784 e 2785); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 46, 49, 60 e 67. Em 10/11/2026, conferidos ainda o Rockwood adulto, cap. 37 (seção Techniques: VELPEAU, tala em U, gesso pendente e órtese), e o HEBERT, cap. 46 (pinça de confeiteiro e VELPEAU). Os dois Rockwood e o HEBERT são citados por capítulo, seção, tabela e figura.
 subtemas: Outras fraturas na criança; Tratamento conservador e imobilização
 resumo: Três princípios do gesso na fratura instável (dobradiça de partes moles, três pontos e pressão hidrostática: partes moles e diáfise não compressíveis ficam rígidas); dobradiça íntegra na baixa energia do jovem; cunha com dobradiça medial e varo no distal para a tíbia em valgo; BURKHALTER e JAMES com punho a 40 graus, MF a 70 a 90 e IF estendidas (colaterais estirados); PTB até o polo inferior da patela, longe do fibular comum; órtese de SARMIENTO por pressão hidrostática, contração muscular e gravidade; gesso pendente com alça curta em varo; tração 90-90 pelo iliopsoas e rigidez do joelho como pior complicação da tração; tenaz com 10 lb e 5 lb por segmento; halo acima do terço lateral da órbita; JEWETT de T6 a L3; gesso vence a órtese no paciente pouco colaborativo; na criança, regra do polegar, spica sem bota de tração, três As, queimadura acima de 50 °C e 24 camadas. No braço, só a órtese une os três princípios; VELPEAU e tala em U são provisórias, gesso pendente usa só a gravidade.
 ---
@@ -319,7 +319,7 @@ As técnicas de redução são a tração longitudinal, a manipulação que recr
 conceito: Girar o polegar em direção ao ápice reduz o galho verde do antebraço: ápice volar com pronação, ápice dorsal com supinação; o gesso é aberto do lado oposto ao desvio, e o gesso curto oval, com índice perto de 0,7, basta no terço distal.
 como: A SBOT-SP perguntou a redução do galho verde dos dois ossos em níveis diferentes com ápice dorsal (simples supinação). TARO 2026 perguntou a força que, com carga axial, produz o galho verde de ápice volar (supinação), e TARO 2008, a posição do punho para reduzir o galho verde com desvio dorsal.
 armadilha: Girar o antebraço para o lado errado, ou abrir o gesso justamente do lado que segura o fragmento.
-alerta: O capítulo dá a rotação que reduz, não o mecanismo de trauma cobrado no TARO 2026 (`pediatria-0523`); o dado está nos capítulos do antebraço. O TARO 2008 (`pediatria-0747`) está sem gabarito oficial, e o capítulo sustenta só a supinação, sem falar em flexão ou extensão do punho.
+alerta: O capítulo dá a rotação que reduz, não o mecanismo de trauma cobrado no TARO 2026 (`pediatria-0523`); o dado está nos capítulos do antebraço. O TARO 2008 (`pediatria-0747`) está sem gabarito oficial e fala em **desvio dorsal**, isto é, do fragmento distal: desvio dorsal do fragmento corresponde a **ápice volar**, que pela regra do polegar do capítulo (seção Long-Arm 90-Degree Cast Immobilization) se reduz com **pronação**, não com supinação. O capítulo não fala em flexão ou extensão do punho.
 !fim
 
 # Na criança: gesso pelvipodálico (spica) {radar=confirmado}

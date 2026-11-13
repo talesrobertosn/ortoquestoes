@@ -1,6 +1,6 @@
 ---
 id: campbell15-outros-coluna
-versao: 3
+versao: 4
 titulo: Outros temas de coluna: SCIWORA, choque neurogênico, SPRENGEL e escolioses especiais
 especialidade: coluna
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 48 · Fractures, Dislocations, and Fracture-Dislocations of the Spine, com os capítulos 33, 37, 39, 40, 41, 42, 45, 49 e 52 do mesmo livro
 autores: Keith D. Williams
-fonte: Livros conferidos localmente em 10/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (p. 1873 a 1880), cap. 33 (p. 1174 e 1175), cap. 37 (p. 1326), cap. 38 (p. 1408 e 1409), cap. 39 (p. 1515), cap. 40 (p. 1525, 1540, 1543, 1567, 1591, 1592, 1600, 1601, 1604.e1, 1619 e 1621.e1), cap. 41 (p. 1649), cap. 42 (p. 1670), cap. 45 (p. 1765 a 1767), cap. 49 (p. 1938 a 1946) e cap. 52 (p. 2207.e1); Tachdjian's Pediatric Orthopaedics, 6ª ed., caps. 4, 7, 8, 9, 11, 12, 28, 31 e 34; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., caps. 8, 14, 16, 17, 20, 21 e 22; Rockwood and Green's Fractures in Adults, 10ª ed., caps. 14, 24, 47, 48 e 49; Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22; HEBERT, Ortopedia e Traumatologia, 5ª ed., seção Escoliose idiopática infantil.
+fonte: Livros conferidos localmente em 10/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (p. 1873 a 1880), cap. 33 (p. 1174 e 1175), cap. 37 (p. 1326), cap. 38 (p. 1408 e 1409), cap. 39 (p. 1515), cap. 40 (p. 1525, 1540, 1543, 1567, 1591, 1592, 1600, 1601, 1604.e1, 1619 e 1621.e1), cap. 41 (p. 1649), cap. 42 (p. 1670), cap. 45 (p. 1765 a 1767), cap. 49 (p. 1938 a 1946) e cap. 52 (p. 2207.e1); Tachdjian's Pediatric Orthopaedics, 6ª ed., caps. 4, 7, 8, 9, 11, 12, 28, 31, 34 e 37; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., caps. 8, 14, 16, 17, 20, 21 e 22; Rockwood and Green's Fractures in Adults, 10ª ed., caps. 14, 24, 47, 48 e 49; Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22; HEBERT, Ortopedia e Traumatologia, 5ª ed., seção Escoliose idiopática infantil.
 subtemas: Outros temas da coluna
 resumo: SCIWORA (coluna mais elástica que a medula, prognóstico pelo estado neurológico inicial); síndrome medular anterior (perde força, dor e temperatura); choque neurogênico (hipotensão com bradicardia, vasopressor) e escala de GLASGOW; SPRENGEL e CAVENDISH (altura do ombro); C1-C2 na síndrome de DOWN e na artrite reumatoide; fusão à pelve na escoliose neuromuscular (não deambulador, obliquidade acima de 15 graus); CHARCOT-MARIE-TOOTH; neurofibromatose distrófica; MEHTA (diferença acima de 20 graus progride); torácica esquerda pede ressonância; ângulo de escorregamento e cachorro de LACHAPELLE; abscesso epidural por Staphylococcus aureus.
 ---
@@ -279,11 +279,11 @@ A escoliose é a manifestação esquelética mais comum da neurofibromatose do t
 | Risco neurológico | não destacado pelos livros | presente na cifoescoliose grave |
 !fim
 
-O desenho da curva distrófica tem endereço e tamanho certos. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 8, p. 230, Fig. 8-10) descreve uma curva **torácica única, curta e aguda, que costuma abranger 4 a 6 segmentos**, com deformidade das costelas e das vértebras, início precoce e progressão implacável. O Tachdjian diz o mesmo nos dois capítulos em que trata do assunto (cap. 9, p. 220, e cap. 37, p. 1873): curva **na coluna torácica**, de angulação aguda, envolvendo **4 a 6 vértebras**. A maioria das curvas da neurofibromatose, porém, se parece com a da escoliose idiopática e é conduzida como ela (Lovell and Winter, p. 230).
+O desenho da curva distrófica tem endereço e tamanho certos. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 8, p. 230, Fig. 8-10) descreve uma curva **torácica única, curta e aguda, que costuma abranger 4 a 6 segmentos**, com deformidade das costelas e das vértebras, início precoce e progressão implacável. O Tachdjian diz o mesmo nos dois capítulos em que trata do assunto (cap. 9, p. 220, e cap. 37, p. 1873): curva **na coluna torácica**, de angulação aguda, envolvendo **4 a 6 vértebras**. Qual dos dois tipos predomina divide os livros. Para o Lovell and Winter (p. 230), a maioria das curvas da neurofibromatose se parece com a da escoliose idiopática e é conduzida como ela; para o Tachdjian (cap. 37, p. 1874), a escoliose **distrófica é a mais comum**, tem maior tendência a progredir e inclui o subgrupo com cifoescoliose grave que corre risco de déficit neurológico.
 
 O mecanismo dos sinais distróficos é em parte mecânico: neurofibromas intraespinais e paraespinais e a **ectasia dural** (alargamento do saco dural) erodem o osso por dentro. Por isso, antes de operar, o Campbell exige excluir lesão intraespinal. O Tachdjian chama a atenção para a modulação: uma curva não distrófica em criança pequena pode adquirir sinais distróficos com o tempo, e o acompanhamento precisa procurar por eles.
 
-!questoes central=coluna-0338 relacionadas=coluna-0093,coluna-0256
+!questoes central=coluna-0338 relacionadas=coluna-0093,coluna-0256,coluna-0019
 conceito: A escoliose distrófica da neurofibromatose do tipo 1 é curta, de angulação aguda, precoce e progressiva; colete não funciona.
 como: O TARO 2006 apresentou a afirmação para julgar certo ou errado.
 armadilha: Achar que toda escoliose da neurofibromatose é distrófica; a não distrófica se comporta como a idiopática.

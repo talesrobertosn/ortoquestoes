@@ -1,6 +1,6 @@
 ---
 id: campbell15-dor-analgesia
-versao: 1
+versao: 2
 titulo: Dor e analgesia em ortopedia
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Skeletal Trauma, 5ª ed. (cap. 14A), o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 27 e 28), o Green's Operative Hand Surgery, 7ª ed. (cap. 1 e 53) e o Sizínio Hebert, 5ª ed.
 capitulo: Capítulo 67 · Peripheral Nerve Injuries (seção Complex Regional Pain Syndrome), com o Capítulo 2 · Perioperative Patient Optimization and Overview of Tendon-to-Bone Fixation and Bone Grafting e o Capítulo 69 · Basic Surgical Technique and Postoperative Care
 autores: William J. Weller (cap. 67); Omar Medina (cap. 2); Austin B. Murphy (cap. 69)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (p. 2982 a 2984), cap. 2 (p. 145 e 146), cap. 69 (p. 3096 a 3098) e cap. 62 (Tabela 62.15, p. 2836); Skeletal Trauma, 5ª ed., cap. 14A (p. 367 a 393); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 27, cap. 28 e cap. 43; Green's Operative Hand Surgery, 7ª ed., cap. 1 (p. 4 a 10) e cap. 53 (p. 1797 a 1820); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., seção de dor lombar.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (p. 2982 a 2984), cap. 2 (p. 145 e 146), cap. 69 (p. 3096 a 3098) e cap. 62 (Tabela 62.15, p. 2836); Skeletal Trauma, 5ª ed., cap. 14A (p. 367 a 393); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 27, cap. 28 e cap. 43; Green's Operative Hand Surgery, 7ª ed., cap. 1 (p. 4 a 10), cap. 15 (p. 576) e cap. 53 (p. 1797 a 1820); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., seção de dor lombar.
 subtemas: Dor e analgesia
 resumo: Modulação é a fase em que vias descendentes inibem ou excitam a dor na medula; alodinia é dor a estímulo que normalmente não dói, hiperpatia é dor que soma, se espalha e persiste após o estímulo; AINE por pouco tempo não prejudica a consolidação; gabapentinoides bloqueiam canais de cálcio e tratam o componente neuropático; bloqueio femoral cobre a face anterior da coxa e o joelho, interescalênico o ombro (poupa C8 e T1 e bloqueia o frênico), infraclavicular cotovelo, punho e mão; ramo medial do ramo dorsal inerva as facetas; SDCR tipo 1 sem lesão nervosa (antiga distrofia simpático-reflexa) e tipo 2 com lesão nervosa (causalgia), mais em mulheres, membro superior, após fratura do rádio distal; critérios de BUDAPESTE; estágio 1 quente, vermelho e edemaciado, estágio 2 úmido, cianótico e frio; vitamina C 500 mg para prevenção; tratamento funcional multidisciplinar com fisioterapia e terapia ocupacional.
 ---
@@ -387,7 +387,7 @@ armadilha: Pôr cianose e palidez no estágio 1 ou fibrose e rigidez antes da fa
 
 # SDCR: prevenção com vitamina C {radar=confirmado}
 
-O Green's Operative Hand Surgery, 7ª ed. (cap. 53, p. 1811), é o mais favorável: **quatro ensaios randomizados** apoiam **vitamina C 500 mg por dia** como prevenção após trauma ou cirurgia, com **risco relativo de 0,22**, mecanismo desconhecido. O Campbell (cap. 62, Tabela 62.15, p. 2836) registra que **500 mg diários** reduziram a prevalência num estudo de 427 pacientes com fratura do rádio distal. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 43), diverge: a AAOS de 2009 deu recomendação moderada, mas um ensaio recente não mostrou diferença e uma metanálise de três ensaios não achou benefício significativo; os autores não a usam de rotina e deixam a decisão ao médico. Para a prova, vale o gabarito: **vitamina C, mulher, rádio distal**.
+O Green's Operative Hand Surgery, 7ª ed. (cap. 53, p. 1811), é o mais favorável: **quatro ensaios randomizados** apoiam **vitamina C 500 mg por dia** como prevenção após trauma ou cirurgia, com **risco relativo de 0,22**, mecanismo desconhecido. No capítulo da fratura do rádio distal (cap. 15, p. 576), o mesmo livro dá a posologia do ensaio controlado e randomizado de ZOLLINGER et al.: **500 mg por dia durante 50 dias** reduziram os sintomas da SDCR (inchaço, dor, rigidez dos dedos, pele quente, mudança de cor), com a ressalva de que falta confirmação independente. O Campbell (cap. 62, Tabela 62.15, p. 2836) registra que **500 mg diários** reduziram a prevalência num estudo de 427 pacientes com fratura do rádio distal. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 43), diverge: a AAOS de 2009 deu recomendação moderada, mas um ensaio recente não mostrou diferença e uma metanálise de três ensaios não achou benefício significativo; os autores não a usam de rotina e deixam a decisão ao médico. Para a prova, vale o gabarito: **vitamina C, mulher, rádio distal**.
 
 !questoes central=conceitos-basicos-0036 relacionadas=conceitos-basicos-0065,trauma-0576
 conceito: Após fratura do rádio distal, a vitamina C 500 mg por dia previne a SDCR (Green: risco relativo 0,22), que é mais comum em mulheres.

@@ -1,6 +1,6 @@
 ---
 id: campbell15-espondiloartrites-artrites
-versao: 2
+versao: 3
 titulo: Espondiloartrites e outras artrites
 especialidade: osteometabolicas
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021) e o Green's Operative Hand Surgery, 7ª ed. (2017)
 capitulo: Capítulo 78 · Arthritic Hand
 autores: James H. CALANDRUCCIO
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 78 (Arthritic Hand, p. 3443 a 3449, 3470 a 3471 e 3494 a 3496), cap. 90 (Arthritis of the Foot, p. 3964 e 3965), cap. 46 (p. 1847 e 1848), cap. 45 (p. 1764 a 1769), cap. 25 (doença de LYME, p. 859 a 861), cap. 15 (artroplastia do cotovelo, p. 654 a 661) e cap. 4 (p. 245, 246 e 265); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 22 (Arthritis, p. 928 a 941) e cap. 23 (p. 956 a 958); Green's Operative Hand Surgery, 7ª ed. (2017), cap. 55 (p. 1865, 1866, 1894 e 1895) e cap. 56 (p. 1905). Complemento de 10/11/2026: Campbell cap. 45 (p. 1769) e cap. 46 (p. 1847) relidos no padrão de ossificação; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (coluna anquilosada, Figs. 48-56 e 48-57); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (osteotomias).
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 78 (Arthritic Hand, p. 3443 a 3449, 3470 a 3471 e 3494 a 3496), cap. 90 (Arthritis of the Foot, p. 3964 e 3965), cap. 46 (p. 1847 e 1848), cap. 45 (p. 1764 a 1769), cap. 25 (doença de LYME, p. 859 a 861), cap. 15 (artroplastia do cotovelo, p. 654 a 661) e cap. 4 (p. 245, 246 e 265); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 22 (Arthritis, p. 928 a 941) e cap. 23 (p. 956 a 958); Green's Operative Hand Surgery, 7ª ed. (2017), cap. 55 (p. 1865, 1866, 1894 e 1895) e cap. 56 (p. 1905). Complemento de 10/11/2026: Campbell cap. 45 (p. 1769) e cap. 46 (p. 1847) relidos no padrão de ossificação; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (coluna anquilosada, Figs. 48-56 e 48-57); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (osteotomias). Fontes abertas lidas em 12/11/2026: HOCHBERG et al., Arthritis Rheum 1992 (PMID 1575785, classe funcional da AR); MARINO et al., Front Med 2021 (PMC7943448, frequência das manifestações da febre reumática).
 subtemas: Espondiloartrites e outras artrites; Espondiloartrites; Artrite reumatoide
 resumo: AR é a artrite inflamatória idiopática mais comum, simétrica, de mãos e pés, com 4 de 7 critérios (rigidez matinal, 3 ou mais áreas, mão, simetria, nódulos, FR, erosões) e anti-CCP 98% específico; polegar de NALEBUFF tipo I (botoeira) é o mais comum; artrodese do punho com pino de STEINMANN saindo entre o 2º e o 3º metacarpos; prótese de cotovelo dá os melhores resultados na AR; soronegativas atacam a êntese, predominam em homens e se ligam ao HLA-B27 (88% a 96% na EA, que sobe de caudal para cefálico e poupa disco e ligamento longitudinal anterior); REITER é tríade com oligoartrite assimétrica de homem jovem; acro-osteólise e lápis na xícara são da psoriásica; gota é monoartrite súbita de homem, com cristal de birrefringência negativa; LYME acomete sobretudo o joelho; AIJ exige 6 semanas, oligoarticular em meninas de 2 a 4 anos, joelho, FAN e uveíte, e FR e FAN não diagnosticam; na EA ossificam ânulo (ponte marginal), facetas e ligamentos interespinhosos, supraespinhosos e amarelo, poupando disco e ligamento longitudinal anterior.
 ---
@@ -84,11 +84,12 @@ Nenhum exame isolado confirma a AR: o diagnóstico junta clínica, laboratório 
 | Anti-RA33 | Autoanticorpo | 85% específico |
 !fim
 
+Os livros de ortopedia conferidos não trazem a **classe funcional** da AR; o Campbell (cap. 15, p. 661) só cita a "AR classe IV" como fator de risco de infecção na prótese de cotovelo. A definição vem dos critérios revisados do American College of Rheumatology de 1991 (HOCHBERG et al., Arthritis Rheum 1992;35:498, PMID 1575785), que separam três tipos de atividade: **autocuidado** (vestir, comer, tomar banho, higiene, ir ao banheiro), **profissional** e **lazer**. **Classe I**: faz todas. **Classe II**: faz autocuidado e trabalho, limitada no lazer. **Classe III**: faz o autocuidado, mas é limitada no trabalho e no lazer. **Classe IV**: limitada até no autocuidado. O paciente que ainda se cuida sozinho, mas executa pouca atividade além disso, é classe III.
+
 !questoes central=osteometabolicas-0078 relacionadas=osteometabolicas-0008
 conceito: A AR exige 4 de 7 critérios: rigidez matinal, artrite de 3 ou mais áreas, artrite das articulações da mão, simetria, nódulos, FR positivo e erosões radiográficas de mão e punho.
 como: O TARO 2013 pediu qual item é critério diagnóstico (a artrite das articulações da mão), contra rigidez noturna, assimetria e duas articulações; o TARO 2016 cobrou a classe funcional do paciente limitado que executa pouca atividade diária (classe III).
 armadilha: Trocar rigidez matinal por noturna, aceitar acometimento assimétrico ou contar 2 articulações em vez de 3 ou mais áreas.
-alerta: A classificação de capacidade funcional da AR (classes I a IV) não aparece nos livros conferidos (Campbell 15ª, Green 7ª, Tachdjian 6ª, Sizínio 5ª); o Campbell (cap. 15, p. 661) só cita a "AR classe IV" como fator de risco de infecção na prótese de cotovelo. O gabarito oficial de `osteometabolicas-0008` (C, classe III) foi mantido sem confirmação no livro.
 !fim
 
 Com as **DMARDs e os biológicos**, a cirurgia caiu: o risco relativo de operar hoje é **menos da metade** do que era no fim do século XX (Campbell, cap. 90, p. 3965), e as artrites inflamatórias respondem por só **1% a 3%** das próteses de quadril (cap. 4, p. 245).
@@ -392,7 +393,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 25, p. 859), apresenta a doe
 
 O quadro articular é o que a prova cobra, e o Campbell o resume num quadro de conceitos (p. 859): **80%** apresentam o **eritema migratório em alvo** no primeiro mês; a erupção vem com sintomas virais e **poliartralgia de grandes e pequenas articulações**; **60%** dos que não são tratados direito desenvolvem **artrite intermitente**; a articulação fica **muito quente e inchada, com derrame, mas pouca dor**; **o joelho é a articulação mais acometida, seguido do tornozelo e do punho**; as crises duram de 2 semanas a 1 mês e mudam de articulação de uma crise para outra, o que rendeu o nome de **"artrite migratória"**.
 
-A artrite crônica surge em cerca de **10%** dos mal tratados (risco maior com **HLA-DR4**), em **1 a 3 articulações**, com **um ou os dois joelhos quase sempre** (Campbell, cap. 25, p. 860). Na doença disseminada, **15%** têm alterações neurológicas (meningite, paralisia de BELL) e **8%** cardíacas (bloqueio atrioventricular).
+A artrite crônica surge em cerca de **10%** dos mal tratados (risco maior com **HLA-DR4**), em **1 a 3 articulações**, com **um ou os dois joelhos quase sempre**; na forma crônica, o **quadril** é a articulação seguinte mais provável, e o inchaço e a dor não cedem por pelo menos 1 ano (Campbell, cap. 25, p. 860). Repare que a ordem muda conforme a fase: na artrite intermitente, o segundo lugar é do tornozelo (p. 859); na crônica, do quadril (p. 860). Na doença disseminada, **15%** têm alterações neurológicas (meningite, paralisia de BELL) e **8%** cardíacas (bloqueio atrioventricular).
 
 !tabela Doença de LYME na prática (Campbell, cap. 25, p. 859 e 860; Tachdjian, cap. 23, p. 958)
 | Item | Campbell | Tachdjian |
@@ -410,7 +411,7 @@ Os livros divergem em dois números: o eritema migratório (80% no Campbell, 60%
 !questoes central=osteometabolicas-0010
 conceito: Na doença de LYME, a articulação mais acometida é o joelho, seguido do tornozelo e do punho; a artrite é intermitente, migratória, muito inchada e pouco dolorosa, e a forma crônica quase sempre envolve um ou os dois joelhos.
 como: O TARO 2015 perguntou onde se observa geralmente a artralgia associada à picada do carrapato, entre ombro, joelho, cotovelo e tornozelo.
-armadilha: Marcar o tornozelo, que é a segunda articulação mais acometida, ou pensar numa poliartrite de pequenas articulações.
+armadilha: Marcar o tornozelo, que é a segunda articulação mais acometida na artrite intermitente (no quadro crônico, a segunda é o quadril, Campbell cap. 25, p. 860), ou pensar numa poliartrite de pequenas articulações.
 !fim
 
 # Febre reumática e artrite pós-estreptocócica {radar=confirmado}
@@ -429,13 +430,14 @@ A manifestação ortopédica clássica da febre reumática é a **poliartrite mi
 | Coreia | | |
 !fim
 
+Os livros conferidos listam os critérios, mas não a frequência de cada manifestação. A série de MARINO et al. (Front Med 2021;8:621668, PMID 33718402, PMC7943448), com 70 crianças com febre reumática aguda no norte da Itália, dá a ordem: **cardite 57%**, **artrite 39%**, **coreia 29%** e **eritema marginado 6%**, sem nenhum nódulo subcutâneo; os autores comentam que a coreia de sua série ficou acima da relatada em outros estudos (5,7% a 21%). Entre artrite, coreia, cardite e eritema, o mais raro é o **eritema marginado**.
+
 O tratamento da febre reumática é **salicilato e antibiótico**, seguidos de **profilaxia por toda a vida**. A artrite pós-estreptocócica, para alguns uma variante que não fecha os critérios de JONES, tem **latência menor**, **mais pequenas articulações e esqueleto axial**, **má resposta a AINE** e curso arrastado; cerca de **6%** têm **cardite tardia** (mitral), por isso a profilaxia com penicilina dura pelo menos **5 anos ou até os 21 anos** (Tachdjian, cap. 23, p. 956).
 
 !questoes central=osteometabolicas-0015
 conceito: A febre reumática aguda segue a faringite estreptocócica e é diagnosticada pelos critérios de JONES (cardite, poliartrite migratória, nódulos subcutâneos, eritema marginado e coreia); a artrite é a manifestação ortopédica clássica e começa pelos membros inferiores.
 como: O TARO 2014 perguntou qual a manifestação clínica mais rara da febre reumática aguda na criança, entre artrite, coreia, cardite e eritema.
 armadilha: Marcar a coreia por ser a mais tardia e lembrada; a questão pede a mais rara.
-alerta: Os livros conferidos listam os critérios de JONES (Tachdjian, cap. 22, p. 940; cap. 23, p. 956), mas não trazem a frequência de cada manifestação, de modo que não confirmam qual é a mais rara. O gabarito oficial de `osteometabolicas-0015` (D, eritema) foi mantido.
 !fim
 
 # Artrite idiopática juvenil: definição e o subtipo oligoarticular {radar=confirmado}

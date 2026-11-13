@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-26-fise-distal-femur
-versao: 3
+versao: 4
 titulo: Fratura da fise distal do fêmur na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 26 · Fractures of the Distal Femoral Physis
 autores: Ying Li
-fonte: Livros conferidos localmente em 26/10/2026 e 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 26 (as referências citam capítulo, seção, figura e tabela); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 30 (Lower Extremity Injuries, seção Knee), págs. 1332 a 1344; Campbell's Operative Orthopaedics, 15ª ed., capítulo 38 (Fractures and Dislocations in Children), págs. 1352 (aprox.), 1448 a 1451 e 1483 a 1485. As páginas citadas do Tachdjian e do Campbell são as impressas.
+fonte: Livros conferidos localmente em 26/10/2026 e 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 26 (citado por capítulo, seção, figura e tabela); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 30 (Lower Extremity Injuries, seção Knee), págs. 1332 a 1344; Campbell's Operative Orthopaedics, 15ª ed., capítulo 38 (Fractures and Dislocations in Children), págs. 1357 e 1358, 1448 a 1451 e 1483 a 1485.
 subtemas: Fraturas do fêmur e da perna na criança; Trauma pediátrico
 resumo: SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a fise, cruzado anterior no tipo III do côndilo medial, artéria poplítea no desvio anterior, fibular por tração, distúrbio do crescimento em cerca de metade, pinos lisos por 4 semanas, 10 dias para remanipular, PARK-HARRIS e ponte menor que 50%.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 26 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Ying Li, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo.
+Este resumo é inspirado no capítulo 26 do Rockwood and Wilkins' Fractures in Children (10ª edição, 2025), de Ying Li, e reorganiza as ideias dele em português, na ordem em que as provas cobram o tema. Os números são os do capítulo, e as referências apontam capítulo, seção, figura e tabela.
 
 A fratura da fise distal do fêmur é **incomum**, menos de 2% das lesões fisárias, mas é uma das que **mais complicam**: de 40% a 60% precisam de nova cirurgia, e numa metanálise de 564 fraturas **52%** evoluíram com distúrbio do crescimento. Essa contradição, rara e perigosa, é o fio do capítulo e da banca. As questões giram em poucos blocos: **qual tipo de SALTER-HARRIS é o mais comum**, **por que a força em varo ou valgo quebra a fise e não o ligamento**, **qual lesão vem junto (o cruzado anterior)**, **a fise que mais cresce** e **a parada do crescimento**, que aqui acontece mesmo nos tipos I e II.
 
@@ -86,7 +86,7 @@ A classificação de SALTER-HARRIS é a mais usada e serve para descrever, plane
 | VI (RANG) | Avulsão da periferia da fise com o anel pericondral | Raríssimo | Varo com avulsão no colateral lateral; também em feridas abertas, cortador de grama e queimaduras |
 !fim
 
-O tipo III do fim do crescimento lembra a fratura de TILLAUX do tornozelo: a parte central da fise começa a fechar antes da medial e da lateral. Já a chamada fratura triplanar do fêmur distal não é igual à do tornozelo, porque aqui a fise está totalmente aberta. A Fig. 26-4 ainda resume a energia e o risco de parada por tipo: tipo I com energia leve a moderada e risco baixo, II moderado, III a V com energia grande e risco alto, VI moderado e risco desconhecido.
+O tipo III do fim do crescimento lembra a fratura de TILLAUX do tornozelo: a parte central da fise começa a fechar antes da medial e da lateral. Já a chamada fratura triplanar do fêmur distal não é igual à do tornozelo, porque aqui a fise está totalmente aberta. A Fig. 26-4 traz só os desenhos dos tipos; o quadro sem número que vem logo depois dela, na seção Salter-Harris Classification, resume a energia e o risco de parada por tipo: tipo I com energia leve a moderada e risco baixo, II moderado, III a V com energia grande e risco alto, VI moderado e risco desconhecido.
 
 !questoes central=pediatria-0654 treino=pediatria-1094
 conceito: O SALTER-HARRIS II é o tipo mais comum na fise distal do fêmur (cerca de 57%), seguido do I (cerca de 15%).
@@ -347,7 +347,7 @@ Se a alternativa disser "cerca de 40% do membro" ou fechamento aos 13 e 15 anos,
 
 O Tachdjian acrescenta os músculos que desviam os fragmentos: as **duas cabeças do gastrocnêmio** e o plantar, presos na face posterior da metáfise logo acima da fise, **fletem o fragmento distal**; o **adutor magno**, no tubérculo adutor, leva-o para **varo**. Há também uma nuance vascular. O Rockwood fala em rede rica de anastomoses para explicar por que a **epífise** quase nunca necrosa; o Tachdjian lembra que a **circulação colateral em torno do joelho é relativamente pobre** para manter a **perna** viva, e a lesão da poplítea não tratada logo custa o membro. Um fala da epífise, o outro da perna inteira.
 
-O Campbell entra pela histologia: em geral a fratura fisária passa pela **zona proliferativa**, a mais fraca (pág. 1352, aprox.), mas no fêmur distal os tipos I e II **atravessam várias zonas, inclusive a hipertrófica**, o que explica a parada mais frequente (pág. 1448). Quanto à frequência, o Rockwood fala em menos de 2% de **todas** as lesões fisárias; o Tachdjian e o Campbell, em **7% das lesões fisárias do membro inferior**. São denominadores diferentes.
+O Campbell entra pela histologia: em geral a fratura fisária passa pela **zona proliferativa**, a mais fraca (pág. 1357 e Fig. 38.1, pág. 1358), mas no fêmur distal os tipos I e II **atravessam várias zonas, inclusive a hipertrófica**, o que explica a parada mais frequente (pág. 1448). Quanto à frequência, o Rockwood fala em menos de 2% de **todas** as lesões fisárias; o Tachdjian e o Campbell, em **7% das lesões fisárias do membro inferior**. São denominadores diferentes.
 
 # O mecanismo muda com a idade {radar=fundamento}
 
@@ -475,7 +475,7 @@ O Rockwood explica seus 22%: muitas fraturas acontecem perto do fim do crescimen
 
 ## Ponte fisária: a ressecção de LANGENSKIÖLD
 
-O Campbell (págs. 1352 aprox. e 1483) explica a lógica: a **ponte central tende a encurtar** e a **periférica, a angular**; a correção espontânea é muito rara; tamanho e lugar são mapeados por **TC ou RM tridimensional**. Perto da maturidade, observa-se. A ressecção é **imprevisível**, com insucesso em **10% a 40%**, e funciona melhor em **criança jovem com ponte periférica pequena (menos de 30% da fise)**. Para pontes grandes, **epifisiodese do restante da fise**, com correção angular e alongamento.
+O Campbell (págs. 1357 e 1483) explica a lógica: a **ponte central tende a encurtar** e a **periférica, a angular**; a correção espontânea é muito rara; tamanho e lugar são mapeados por **TC ou RM tridimensional**. Perto da maturidade, observa-se. A ressecção é **imprevisível**, com insucesso em **10% a 40%**, e funciona melhor em **criança jovem com ponte periférica pequena (menos de 30% da fise)**. Para pontes grandes, **epifisiodese do restante da fise**, com correção angular e alongamento.
 
 A técnica de **LANGENSKIÖLD** (Campbell, técnica 38.35, págs. 1483 e 1484):
 
@@ -486,7 +486,7 @@ A técnica de **LANGENSKIÖLD** (Campbell, técnica 38.35, págs. 1483 e 1484):
 
 A interposição pode ser **enxerto de fise, gordura livre ou Silastic**; o enxerto de fise da **crista ilíaca** foi superior. A fise não se regenera no local, mas a cartilagem sadia em volta volta a crescer de forma ordenada. Um limite que cai em prova: **a ressecção não corrige deformidade angular importante**; diminui a recidiva e o número de osteotomias, e por isso se associa à osteotomia quando a deformidade já existe. Na técnica de **INGRAM**, a osteotomia é feita **no nível da ponte, paralela à fise**, abrindo em cunha para **ganhar comprimento**, e a ponte é ressecada por dentro; na de **BIRCH**, para pontes periféricas, parte-se da junção com o **anel pericondral sadio**, sob fluoroscopia; pontes **centrais** entram por **janela metafisária**. O Tachdjian (Fig. 30.90) mostra uma parada após tipo IV tratada com **epifisiólise com interposição de gordura e marcador metálico**, com crescimento retomado dois anos depois.
 
-!tabela Indicação de ressecção da ponte (RWC cap. 26; Tachdjian pág. 1343; Campbell págs. 1352 aprox. e 1483)
+!tabela Indicação de ressecção da ponte (RWC cap. 26; Tachdjian pág. 1343; Campbell págs. 1357 e 1483)
 | Critério | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. | Campbell, 15ª ed. |
 | --- | --- | --- | --- |
 | Tamanho da ponte | Menos de 50% da fise | Menos de 50% da fise | Menos da metade; melhor se menos de 30% |
@@ -511,7 +511,7 @@ Para a rigidez (**27%**), o Tachdjian cita estudo multicêntrico em que o **gess
 
 # Seguimento e prognóstico nos três livros {radar=fundamento}
 
-O Rockwood pede **radiografias em pé a cada 6 meses até a maturidade**; o Tachdjian, **pelo menos 18 meses** de seguimento (pág. 1342); o Campbell, observação **até a maturidade esquelética** (pág. 1450), lembrando que os pais devem ser avisados do risco de distúrbio do crescimento em toda fratura fisária (pág. 1352, aprox.).
+O Rockwood pede **radiografias em pé a cada 6 meses até a maturidade**; o Tachdjian, **pelo menos 18 meses** de seguimento (pág. 1342); o Campbell, observação **até a maturidade esquelética** (pág. 1450), lembrando que os pais devem ser avisados do risco de distúrbio do crescimento em toda fratura fisária (pág. 1357).
 
 !tabela Fatores de prognóstico (RWC cap. 26; Tachdjian pág. 1342; Campbell pág. 1448)
 | Fator | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. | Campbell, 15ª ed. |
