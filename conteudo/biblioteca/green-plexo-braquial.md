@@ -70,7 +70,7 @@ Daí a localização (cap. 34, p. 1151): perda do **grande dorsal** indica lesã
 | medial | divisão anterior do tronco inferior | medial e profundo | peitoral medial, cutâneo medial do braço e do antebraço, contribuição medial do mediano, ulnar | intrínsecos, flexores dos dedos, peitoral esternal |
 !fim
 
-!questoes central=mao-0451 relacionadas=mao-1369,mao-0465,mao-0923,mao-0924,mao-0873,mao-0662,ombro-cotovelo-0564
+!questoes central=mao-0451 relacionadas=mao-1369,mao-0465,mao-0923,mao-0924,mao-0873,mao-0662,ombro-cotovelo-0564,mao-0878,mao-0709
 conceito: Todas as divisões posteriores formam o fascículo posterior, que dá o toracodorsal, o axilar e o radial; o lateral dá o musculocutâneo (que termina no cutâneo lateral do antebraço) e a porção sensitiva do mediano; o medial dá peitoral medial, ulnar e intrínsecos.
 como: O Einstein 2026 pediu a origem do toracodorsal e da porção sensitiva do mediano; a USP-SP 2025, a regra das divisões; a UFG 2019, a área sensitiva do fascículo lateral e o fascículo da paralisia dos intrínsecos; a UFG 2017, afirmações sobre axilar e supraescapular; a FMRP-USP 2026 e o TEOT 2025 mostraram imagens (peitoral medial; musculocutâneo perfurando o coracobraquial).
 armadilha: Dizer que existe fascículo anterior, que o axilar sai do fascículo lateral, que o supraescapular sai da raiz C5 (sai do tronco superior) ou que o medial leva a sensibilidade dos três dedos radiais.

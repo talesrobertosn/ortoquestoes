@@ -346,7 +346,7 @@ O lado ulnar do punho reúne várias doenças que doem no mesmo lugar, e o exame
 | Mobilizar o pisiforme | palpar e deslizar o pisiforme | artrite pisopiramidal |
 !fim
 
-!questoes central=mao-0310 relacionadas=mao-1843
+!questoes central=mao-0310 relacionadas=mao-1843,mao-1218
 conceito: O teste do impacto ulnocarpal é hiperextensão e desvio ulnar do punho com compressão axial; o estresse ulnocarpal reproduz rupturas do disco do TFCC; a tecla de piano e o balotamento testam a radioulnar distal; WATSON testa o escafossemilunar (dinâmico); o pisiforme se mobiliza para a artrite pisopiramidal.
 como: O TEOT 2024 perguntou a posição do teste do impacto ulnocarpal; o ENARE 2022 pediu a alternativa correta entre WATSON, flexão do dedo, impacto ulnocarpal, deslizamento do pisiforme e instabilidade mediocarpal.
 armadilha: Fazer o impacto em flexão ou em desvio radial, ou ligar o deslizamento do pisiforme ao extensor ulnar do carpo.

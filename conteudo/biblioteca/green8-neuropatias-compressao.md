@@ -140,7 +140,7 @@ alerta: No Green, o grau III de McGOWAN é a atrofia muscular. O gabarito do TAR
   - é **motor**, com sensibilidade preservada;
   - o extensor radial longo, inervado antes da divisão, mantém a extensão do punho com desvio radial.
 
-!questoes central=mao-0519 relacionadas=mao-0072,mao-0093,mao-0309,mao-0614,mao-0498 treino=mao-2577,mao-2578
+!questoes central=mao-0519 relacionadas=mao-0072,mao-0093,mao-0309,mao-0614,mao-0498,mao-0723 treino=mao-2577,mao-2578
 conceito: O sensitivo radial se aperta entre o braquiorradial e o ERLC, e dói na pronação com flexão ulnar; o interósseo posterior se aperta no supinador, é motor e poupa a pele e o ERLC.
 como: O TARO 2011 e o TARO 2012 pediram a compressão na arcada de FROHSE e o que ela causa; o TARO 2015, o local da síndrome do túnel radial; o TEOT 2022, a força e a sensibilidade na síndrome do interósseo posterior; o TEOT 2024 e o TARO 2008, a manobra e o local do WARTENBERG.
 armadilha: Esperar perda sensitiva na síndrome do interósseo posterior, ou pôr o WARTENBERG entre os tendões do polegar.
@@ -404,7 +404,7 @@ alerta: O Campbell 15 associa o cisto espinoglenoidal à lesão labral posterior
 | ressecção da primeira costela com escalenotomia | **6%** (a menor) |
 !fim
 
-!questoes central=mao-0034 relacionadas=mao-0010,mao-0248,mao-0081,mao-0425
+!questoes central=mao-0034 relacionadas=mao-0010,mao-0248,mao-0081,mao-0425,mao-1212
 conceito: O triângulo interescalênico (escalenos anterior e médio, primeira costela) é o sítio mais comum; PAGET-SCHROETTER é a trombose de esforço da veia subclávia; ROOS (3 minutos abrindo e fechando as mãos em abdução e rotação externa) é o teste mais sensível; esternoclavicular subluxada e clavícula mal consolidada causam desfiladeiro.
 como: O TARO 2021 pediu um dos focos de compressão do plexo; o TARO 2019, o que se comprime na PAGET-SCHROETTER; uma prova de Ortopedia, o autor da manobra mais sensível e específica; o TARO 2014, a luxação associada; o TECOC, a mão de GILLIATT-SUMNER.
 armadilha: Pôr a veia subclávia entre os escalenos, ou escolher ADSON como teste mais confiável.

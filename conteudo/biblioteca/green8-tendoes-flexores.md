@@ -101,7 +101,7 @@ O Green's Operative Hand Surgery, 7ª ed. (cap. 6, p. 185), de John Gray SEILER 
 
 **O quiasma de CAMPER.** No dedo, o FDS entra na A1, divide-se em **duas metades** que giram **180 graus** em torno do FDP e se reúnem **dorsalmente** a ele, sobre a placa volar da IFP, inserindo-se nos **três quintos médios** da falange média (Green, p. 186, Fig. 6.3). O Campbell (p. 3157, Fig. 71.30) chama isso de **espiral do FDS**: numa laceração no meio dela, os cotos giram **90 graus em direções opostas**, parecem casar, mas suturados assim **obliteram o canal do FDP**. O FDP retraído tem de ser recolocado no **hiato do FDS**.
 
-!questoes central=mao-0342 relacionadas=mao-0634
+!questoes central=mao-0342 relacionadas=mao-0634,mao-0673
 conceito: No túnel do carpo, o FDS do médio e do anular é o mais superficial, o FDS do indicador e do mínimo fica logo abaixo, e os quatro FDP ficam na camada mais profunda, no mesmo plano do FPL.
 como: O TARO 2024 pediu, num corte transversal do punho, o tendão assinalado (FPL); o TARO 2006 afirmou que os FDP passam no mesmo plano do FPL.
 armadilha: Pôr o FPL num plano próprio, mais superficial, ou pôr o FDS do indicador e do mínimo no andar de cima.

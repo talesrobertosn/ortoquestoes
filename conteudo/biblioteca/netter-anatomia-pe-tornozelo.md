@@ -214,7 +214,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 68, Fig. 68.36B 
 
 As artérias do canal e do seio do tarso formam uma **alça inferior ao colo**; as fraturas **HAWKINS II e III** frequentemente necrosam porque o fluxo ao corpo é **retrógrado** (Netter), enquanto a necrose da cabeça e do colo é extremamente rara (Campbell). **Os livros divergem no peso de cada vaso:** Netter e Campbell põem a **artéria do canal do tarso** como fonte primária do corpo e o Campbell dá ao seio do tarso só o **oitavo a quarto lateral**; o Rockwood atribui à **alça canal mais seio** os **dois terços laterais** do corpo. Todos concordam que a **tibial posterior** é a fonte principal. Cirurgicamente, o ramo da tibial posterior ao colo medial é preservado pela **osteotomia do maléolo medial** e ameaçado pela via anteromedial; não se disseca a **face superior do colo** nem o **deltoide** (Campbell, cap. 1, p. 13).
 
-!questoes central=pe-tornozelo-0119
+!questoes central=pe-tornozelo-0119 relacionadas=mao-0847
 conceito: A artéria fibular nasce da tibial posterior, irriga o compartimento lateral e dá o perfurante que vai ao seio do tarso e ao tálus posterior.
 como: O TEOT 2023 assinalou a artéria fibular numa imagem.
 armadilha: Achar que o compartimento lateral tem artéria própria ou trocar a fibular pela tibial anterior, que fica na frente da membrana.

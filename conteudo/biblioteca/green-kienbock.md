@@ -121,7 +121,7 @@ Algumas provas perguntam qual forma do semilunar é fator de risco, usando as cl
 | Consequência terapêutica | Ulna minus permite nivelar encurtando o rádio | Ulna neutra ou plus arrisca impacto ulnar |
 !fim
 
-!questoes central=mao-0243
+!questoes central=mao-0243 relacionadas=mao-0805
 conceito: As provas consideram fator de risco a forma do semilunar tipo I de ZAPICO e tipo I de VIEGAS; os livros de referência associam o risco à ulna minus, ao vaso único e à concentração de carga no semilunar.
 como: Uma prova de Ortopedia e o INTO 2023 trouxeram o mesmo enunciado, combinando os tipos de ZAPICO e de VIEGAS em cinco alternativas.
 armadilha: Misturar os tipos (I com II, II com I) ou confundir a forma do osso com o padrão vascular em I.
@@ -436,7 +436,7 @@ O **pisiforme vascularizado** (BOCHUD e BÜCHLER, 32 pacientes) restaurou a anat
 | Côndilo femoral medial | Retalho livre osteocondral | IIIA e IIIB (PET) | Freou o colapso a curto prazo |
 !fim
 
-!questoes central=mao-1619
+!questoes central=mao-1619 relacionadas=mao-1215,mao-0758
 conceito: O enxerto ósseo vascularizado é indicado nos estágios I, II e IIIA, enquanto o semilunar é viável e reconstruível; a base do segundo metacarpo pelo arco metacarpal dorsal é uma das fontes.
 como: A USP-SP 2026 pediu a afirmação correta sobre enxerto vascularizado, opondo o uso em II e IIIA com a artéria metacarpal dorsal a afirmações de que não muda a evolução, de que só serve no colapso completo e de que a esclerose o contraindica.
 armadilha: Achar que a esclerose (estágio II) contraindica a revascularização, ou que o enxerto serve para o semilunar fragmentado e colapsado do IIIB e IV, quando o que se precisa é de salvamento.

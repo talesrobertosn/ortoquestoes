@@ -72,7 +72,7 @@ LANZ dividiu as variações do ramo motor em **quatro grupos** (p. 930 a 932). O
 
 Os autores do Green (p. 934 e 935) só exploram o ramo motor quando há **dor tenar profunda** ou **atrofia tenar com pouca queixa sensitiva**. Nesses casos ele costuma ter **túnel tendíneo próprio** ou sair do **lado ulnar** e cruzar o nervo, mais comprimido. Puxando a folha radial do ligamento e o mediano em direção ao cirurgião, o ramo se tensiona e aparece. O Campbell (Box 82.5, p. 3550) usa o mesmo sinal, **atrofia do abdutor curto sem perda sensitiva**, para contraindicar a endoscopia.
 
-!questoes central=mao-1593 relacionadas=mao-0713 treino=mao-2468
+!questoes central=mao-1593 relacionadas=mao-0713,mao-1095,mao-1157 treino=mao-2468
 conceito: O ramo motor sai, na maioria, extraligamentar e distal ao retináculo, e inerva abdutor curto, oponente e cabeça superficial do flexor curto; LANZ descreve também os trajetos subligamentar e transligamentar.
 como: O SIMÃO 2021 pediu o padrão mais comum de LANZ; a USP-SP 2026 misturou teto, trajetos do ramo motor e órtese; o IAUPE 2025, o músculo do ramo recorrente.
 armadilha: Marcar extraligamentar proximal, chamar o retináculo extensor de teto ou escolher o adutor do polegar.
