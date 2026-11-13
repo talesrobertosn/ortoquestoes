@@ -5,7 +5,7 @@ import { centavosPara } from '../_shared/precos.ts'
 
 // A primeira é a vigente; a anterior continua aceita para quem abriu os planos antes da
 // atualização (o aceite registra a versão que a pessoa de fato viu).
-const VERSOES_CONDICOES_PIX = ['2026-11-03', '2026-10-16', '2026-10-01']
+const VERSOES_CONDICOES_PIX = ['2026-11-13', '2026-11-03', '2026-10-16', '2026-10-01']
 
 Deno.serve(async req => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })

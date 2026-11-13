@@ -1,0 +1,32 @@
+/* Recibos dos pagamentos (13/11/2026): recolhidos e discretos no fim de Detalhes da assinatura. */
+.recibos { margin-top: var(--e-4); font-size: 0.9rem; color: var(--texto-2, var(--ardosia)); }
+.recibos > summary { cursor: pointer; width: fit-content; min-height: 44px; display: inline-flex; align-items: center; color: var(--texto-2, var(--ardosia)); text-decoration: underline; text-underline-offset: 3px; }
+.recibos > summary:hover { color: var(--texto); }
+.recibos__corpo { display: grid; gap: var(--e-3); padding-top: var(--e-2); }
+.recibos__lista { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--e-2); }
+.recibos__lista li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--e-2) var(--e-4); padding: var(--e-2) 0; border-bottom: 1px solid var(--traco); }
+.recibos__ver { min-height: 44px; padding: 0 var(--e-2); border: 0; background: none; color: var(--verdete); font: inherit; font-weight: 650; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.recibos__sem { color: var(--texto-2, var(--ardosia)); }
+
+.recibo { display: grid; gap: var(--e-4); padding: var(--e-5); border: 1px solid var(--traco-forte); border-radius: var(--raio-cartao, 12px); background: var(--superficie); color: var(--texto); }
+.recibo__cabeca { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--e-2) var(--e-4); padding-bottom: var(--e-3); border-bottom: 2px solid var(--texto); }
+.recibo__selo { margin: 0; font-weight: 800; letter-spacing: 0.04em; color: var(--verdete); }
+.recibo h3 { margin: 0.15rem 0 0; font-size: 1.35rem; }
+.recibo__numero { margin: 0; font-size: 0.9rem; }
+.recibo__texto { margin: 0; line-height: 1.65; font-size: 1rem; }
+.recibo__dados { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: var(--e-2) var(--e-5); }
+.recibo__dados dt { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--texto-2, var(--ardosia)); }
+.recibo__dados dd { margin: 0.1rem 0 0; font-size: 1rem; }
+.recibo__recebedor { padding-top: var(--e-3); border-top: 1px solid var(--traco); }
+.recibo__recebedor p { margin: 0; line-height: 1.5; }
+.recibo__nota { margin: 0; font-size: 0.85rem; color: var(--texto-2, var(--ardosia)); }
+.recibo__acoes { display: flex; flex-wrap: wrap; gap: var(--e-3); }
+.recibo__acoes .botao { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+/* Na impressão, só o recibo aparece. */
+@media print {
+  body.imprimindo-recibo * { visibility: hidden !important; }
+  body.imprimindo-recibo .recibo, body.imprimindo-recibo .recibo * { visibility: visible !important; }
+  body.imprimindo-recibo .recibo { position: fixed; left: 0; right: 0; top: 0; width: auto; border: 0; padding: 0; background: #fff; color: #000; }
+  body.imprimindo-recibo .recibo .nao-imprime { display: none !important; }
+}

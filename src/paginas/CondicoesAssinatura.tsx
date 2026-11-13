@@ -10,8 +10,8 @@ function I({ n, children }: { n: string; children: ReactNode }) {
 }
 
 /**
- * Condições da Assinatura (termos de venda), versão de 16/10/2026, reescrita do
- * zero. Preços, periodicidades, garantia e limites são os mesmos de antes
+ * Condições da Assinatura (termos de venda), reescritas do zero em 16/10/2026; revisão de 13/11/2026: recibo
+ * eletrônico, promoções e cupons e o alcance do valor antigo do reajuste de 3/11. Preços, periodicidades, garantia e limites são os mesmos de antes
  * (dados/planos.ts e config.ts). Mudar o texto de forma relevante exige nova
  * VERSAO_CONDICOES_ASSINATURA e a mesma versão aceita nas Edge Functions
  * criar-checkout e criar-pix (ver conta/termos.ts).
@@ -54,10 +54,10 @@ export function CondicoesAssinatura() {
       </ul>
     </section>
 
-    <details className="juridico-mudancas">
+    {MUDANCAS_CONDICOES.length > 0 && <details className="juridico-mudancas">
       <summary>O que mudou nesta versão</summary>
       <ul>{MUDANCAS_CONDICOES.map((m) => <li key={m}>{m}</li>)}</ul>
-    </details>
+    </details>}
 
     <IndicePagina alvo={pagina} titulo="Sumário das cláusulas" />
     <VoltarAoTopo />
@@ -80,6 +80,7 @@ export function CondicoesAssinatura() {
     </div>
     <I n="2.1">Cada valor é cobrado integralmente no início do respectivo período. Valores mensais ou diários equivalentes exibidos no site servem só para comparação: os planos semestral e anual não são parcelados pelo {nome}.</I>
     <I n="2.2">Os pagamentos são feitos no ambiente do Mercado Pago, responsável pelo checkout. Os dados do cartão são informados diretamente ao Mercado Pago; o {nome} não recebe nem guarda o número completo nem o código de segurança. No Pix, o CPF do pagador e o e-mail da Conta são enviados ao Mercado Pago para gerar a cobrança; o CPF não é salvo no perfil nem nos pedidos, podendo constar nas notificações do provedor guardadas para conciliação e atendimento.</I>
+    <I n="2.3"><strong>Recibo.</strong> O fornecedor é pessoa física e não emite nota fiscal. Cada pagamento aprovado tem um recibo eletrônico, disponível em {detalhes}, com o valor, a data, o plano, o meio de pagamento e o número da operação no Mercado Pago. Se o fornecedor passar a atuar por pessoa jurídica, os documentos fiscais passam a ser emitidos na forma da lei.</I>
 
     <h2>3. O que a assinatura inclui</h2>
     <I n="3.1">O acesso gratuito não exige pagamento. {fraseGratis('condicoes')}</I>
@@ -101,7 +102,7 @@ export function CondicoesAssinatura() {
     <h2>6. Reajuste de preço</h2>
     <I n="6.1">O preço pode ser reajustado para novas contratações e renovações futuras. Para quem já assina no cartão, o novo valor será informado com antecedência mínima de 30 dias, pelo e-mail cadastrado e no site, e só valerá para renovações que ocorrerem depois desse prazo. Quem não concordar pode desligar a renovação antes da nova cobrança, sem qualquer custo.</I>
     <I n="6.2">O reajuste nunca altera o valor de um período já pago. No Pix, vale o preço exibido no momento da compra.</I>
-    <I n="6.3"><strong>Reajuste de 3 de novembro de 2026.</strong> Os valores da Cláusula 2 valem para novas contratações a partir dessa data. Quem tem pagamento aprovado antes dela, no cartão ou no Pix, mantém o valor de antes do plano que pagava (semestral R$ 179,90 ou anual R$ 239,90) enquanto continuar renovando esse plano, no cartão ou no Pix, sem prazo final e sem reajuste. Depois do fim do período pago, há 30 dias para renovar pelo mesmo valor; passado esse prazo, vale o preço da Cláusula 2. O valor antigo não se estende a outro plano. Pagamentos reembolsados não contam.</I>
+    <I n="6.3"><strong>Reajuste de 3 de novembro de 2026.</strong> Os valores da Cláusula 2 valem para novas contratações a partir dessa data. Quem tem pagamento aprovado antes dela, no cartão ou no Pix, mantém o valor de antes do plano que pagava (semestral R$ 179,90 ou anual R$ 239,90) enquanto continuar renovando esse plano, no cartão ou no Pix, sem prazo final e sem reajuste. Depois do fim do período pago, há 30 dias para renovar pelo mesmo valor; passado esse prazo, vale o preço da Cláusula 2. O valor antigo não se estende a outro plano. Pagamentos reembolsados não contam. Essa condição vale só para esse grupo e não se repete em reajustes futuros, salvo anúncio expresso.</I>
 
     <h2>7. Arrependimento e garantia de 7 dias</h2>
     <I n="7.1"><strong>Direito de arrependimento.</strong> Como a contratação é feita pela internet, o assinante pode desistir em até 7 dias da contratação, nos termos do artigo 49 do Código de Defesa do Consumidor, com devolução integral do valor pago.</I>
@@ -126,6 +127,7 @@ export function CondicoesAssinatura() {
     <I n="11.1">Cada Conta tem um link de convite pessoal. Quando uma pessoa cria a Conta por esse link e responde 20 questões, a indicação é confirmada e as duas Contas ganham 7 dias de acesso ao plano completo, como cortesia. Quem indica recebe a cortesia por até 12 indicações confirmadas.</I>
     <I n="11.2">Os dias de cortesia começam a contar depois do fim de um período pago ativo, não são convertidos em dinheiro, não geram reembolso e não são transferíveis. Indicar a si mesmo, criar Contas para obter cortesia ou burlar a regra de outra forma permite cancelar as cortesias obtidas assim.</I>
     <I n="11.3">As regras do programa podem mudar, ou o programa pode ser encerrado, com aviso no site, preservadas as cortesias já confirmadas. Liberações temporárias de recursos a todas as Contas e promoções seguem a Cláusula 7.3 dos Termos.</I>
+    <I n="11.4"><strong>Promoções e cupons.</strong> Quando houver preço promocional ou cupom de desconto, as regras de cada oferta, como validade, planos incluídos e quantidade de usos por Conta, aparecem junto dela. Salvo indicação em contrário, o desconto vale só para o período contratado com ele, e a renovação segue o preço vigente, com o aviso da Cláusula 6.</I>
 
     <h2>12. Mudanças nos recursos do plano</h2>
     <I n="12.1">Recursos podem ser acrescentados ao plano sem custo adicional para quem já assina. Alterações de aparência, nome, organização ou funcionamento que preservem a utilidade do recurso não são redução.</I>

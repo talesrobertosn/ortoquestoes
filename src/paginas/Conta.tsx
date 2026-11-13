@@ -1,5 +1,5 @@
 import { PreferenciaEncontros } from '../eventos/PreferenciaEncontros'
-import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
+import { useCallback, useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react'
 import { haQuanto } from '../componentes/IndicadorSincronia'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
@@ -222,7 +222,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   // Guarda o primeiro nome neste aparelho para a tela de entrar cumprimentar pelo nome na próxima visita.
   useEffect(() => { if (sessao?.user.email) lembrarNome(sessao.user.email, String(perfil.nome ?? '')) }, [sessao?.user.email, perfil.nome])
   const [sobrenome, definirSobrenome] = useState(String(perfil.sobrenome ?? ''))
-  const [nascimento, definirNascimento] = useState(String(perfil.nascimento ?? ''))
+  // Aniversário só com dia e mês (13/11/2026): guardado como "0000-MM-DD", formato que os e-mails e o aviso de
+  // parabéns já leem; o ano não é pedido nem guardado.
+  const [aniversario, definirAniversario] = useState(() => lerAniversario(perfil.nascimento))
+  const nascimento = aniversario.dia && aniversario.mes ? `0000-${aniversario.mes}-${aniversario.dia}` : ''
   const [servico, definirServico] = useState(String(perfil.servico ?? perfil.residencia ?? ''))
   // Outros hospitais ou serviços onde trabalha, além do principal (ortopedista com vários locais, plantões).
   const [locais, definirLocais] = useState<string[]>(() => lerLocais(perfil.locais_trabalho))
@@ -275,10 +278,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   function perfilCompleto(avisar: (texto: string) => void = definirMensagem) {
     if (nome.trim().length < 2) { avisar('Informe seu nome.'); return false }
     if (sobrenome.trim().length < 2) { avisar('Informe seu sobrenome.'); return false }
-    // Quem estuda para prova de ortopedia tem pelo menos 18 anos; o campo de data
-    // às vezes fica com o dia de hoje quando a pessoa só toca nele.
-    const anos = nascimento ? (Date.now() - new Date(`${nascimento}T12:00:00`).getTime()) / (365.25 * 864e5) : NaN
-    if (!(anos >= 18 && anos <= 100)) { avisar('Confira a data de nascimento: ela parece incompleta ou com o ano errado.'); return false }
+    if (Boolean(aniversario.dia) !== Boolean(aniversario.mes)) { avisar('Escolha o dia e o mês do aniversário, ou deixe os dois em branco.'); return false }
     if (!situacao) { avisar('Informe sua etapa profissional.'); return false }
     if (situacao === 'residente' && !anoResidencia) { avisar('Informe o ano da residência (R1, R2 ou R3).'); return false }
     if (!provas.length) { avisar('Marque ao menos uma prova para a qual você estuda.'); return false }
@@ -297,8 +297,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   /** Passo 2 (perfil): tudo é opcional, mas o que foi preenchido precisa estar certo. */
   function faltasPerfilCadastro(): Array<[string, string, string]> {
     const f: Array<[string, string, string]> = []
-    const anos = nascimento ? (Date.now() - new Date(`${nascimento}T12:00:00`).getTime()) / (365.25 * 864e5) : NaN
-    if (nascimento && !(anos >= 18 && anos <= 100)) f.push(['nascimento', 'data de nascimento', 'Confira dia, mês e ano: a data parece incompleta ou com o ano errado (ou deixe em branco).'])
+    if (Boolean(aniversario.dia) !== Boolean(aniversario.mes)) f.push(['nascimento', 'aniversário', 'Escolha o dia e o mês, ou deixe os dois em branco.'])
     if (situacao === 'residente' && !anoResidencia) f.push(['ano', 'ano da residência', 'Escolha R1, R2 ou R3.'])
     if (whatsapp.trim() && whatsapp.replace(/\D/g, '').length < 10) f.push(['whatsapp', 'WhatsApp', 'Confira o WhatsApp: use o DDD e o número (ou deixe em branco).'])
     return f
@@ -528,7 +527,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
               <div className="linha-campos linha-campos--2"><label className="campo" data-campo="nome"><span className="campo__rotulo">Nome</span><input className="entrada" autoComplete="given-name" value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo" data-campo="sobrenome"><span className="campo__rotulo">Sobrenome</span><input className="entrada" autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
               <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} erros={errosCadastro} />
               <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} locais={locais} aoMudarLocais={definirLocais} uf={uf} />
-              <label className="campo" data-campo="nascimento"><span className="campo__rotulo">Data de nascimento</span><input className={'entrada' + inv('nascimento')} type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} />{erroDe('nascimento')}</label>
+              <CampoAniversario valor={aniversario} aoMudar={definirAniversario} invalido={Boolean(inv('nascimento'))} erro={erroDe('nascimento')} />
               <div className="linha-campos linha-campos--2"><label className="campo" data-campo="cidade"><span className="campo__rotulo">Cidade</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label><label className="campo" data-campo="uf"><span className="campo__rotulo">UF</span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select></label></div>
               <label className="campo" data-campo="whatsapp"><span className="campo__rotulo">WhatsApp com DDD</span><input className={'entrada' + inv('whatsapp')} type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" />{erroDe('whatsapp')}</label>
               <p className="meta">Seu contato nunca aparece para outros usuários.</p>
@@ -613,7 +612,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const aceitoEm = typeof perfil.termos_aceitos_em === 'string' ? new Date(perfil.termos_aceitos_em) : null
   // Perfil com alterações ainda não salvas (compara com o que está na conta).
   const perfilAlterado = JSON.stringify([nome.trim(), sobrenome.trim(), nascimento, situacao, situacao === 'residente' ? anoResidencia : '', [...provas].sort(), servico.trim(), locaisLimpos(), whatsapp.trim(), cidade.trim(), uf, receberNovidades])
-    !== JSON.stringify([String(perfil.nome ?? '').trim(), String(perfil.sobrenome ?? '').trim(), String(perfil.nascimento ?? ''), String(perfil.situacao ?? ''), perfil.situacao === 'residente' ? String(perfil.ano_residencia ?? '') : '', [...lerProvas(perfil.provas_interesse)].sort(), String(perfil.servico ?? perfil.residencia ?? '').trim(), lerLocais(perfil.locais_trabalho), String(perfil.whatsapp ?? '').trim(), String(perfil.cidade ?? '').trim(), String(perfil.uf ?? ''), Boolean(perfil.receber_novidades ?? false)])
+    !== JSON.stringify([String(perfil.nome ?? '').trim(), String(perfil.sobrenome ?? '').trim(), normalizarAniversario(perfil.nascimento), String(perfil.situacao ?? ''), perfil.situacao === 'residente' ? String(perfil.ano_residencia ?? '') : '', [...lerProvas(perfil.provas_interesse)].sort(), String(perfil.servico ?? perfil.residencia ?? '').trim(), lerLocais(perfil.locais_trabalho), String(perfil.whatsapp ?? '').trim(), String(perfil.cidade ?? '').trim(), String(perfil.uf ?? ''), Boolean(perfil.receber_novidades ?? false)])
   const textoSync = `${ROTULOS_STATUS[status.estado]}${status.estado === 'salvo' && status.ultimaSincronia ? ` ${haQuanto(status.ultimaSincronia)}` : ''}${status.pendentes > 0 ? ` · ${status.pendentes} ${status.pendentes === 1 ? 'pendente' : 'pendentes'}` : ''}`
   const sair = async () => {
     if (!supabase) return
@@ -733,7 +732,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <fieldset className="ct-grupo">
             <legend>Quem é você</legend>
             <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" required minLength={2} autoComplete="given-name" value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" required minLength={2} autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
-            <label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
+            <CampoAniversario valor={aniversario} aoMudar={definirAniversario} />
           </fieldset>
           <fieldset className="ct-grupo">
             <legend>Etapa e provas</legend>
@@ -899,4 +898,38 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     </section>}
     <AvisoFlutuante aviso={aviso} aoFechar={fecharAviso} />
   </article>
+}
+
+/** Aniversário guardado na conta: "0000-MM-DD" (desde 13/11/2026) ou "AAAA-MM-DD" (cadastros antigos). */
+function lerAniversario(valor: unknown): { dia: string; mes: string } {
+  const m = String(valor ?? '').match(/^(?:\d{4}-)?(\d{2})-(\d{2})$/)
+  return m ? { mes: m[1], dia: m[2] } : { dia: '', mes: '' }
+}
+function normalizarAniversario(valor: unknown): string {
+  const { dia, mes } = lerAniversario(valor)
+  return dia && mes ? `0000-${mes}-${dia}` : ''
+}
+const MESES_ANIVERSARIO = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+
+/** Dia e mês do aniversário (opcional, sem o ano): só para o parabéns no dia. */
+function CampoAniversario({ valor, aoMudar, invalido = false, erro }: { valor: { dia: string; mes: string }; aoMudar: (v: { dia: string; mes: string }) => void; invalido?: boolean; erro?: ReactNode }) {
+  const diasNoMes = valor.mes ? new Date(2024, Number(valor.mes), 0).getDate() : 31
+  return (
+    <fieldset className="campo campo-aniversario" data-campo="nascimento">
+      <legend className="campo__rotulo">Aniversário <small>(opcional, só para o parabéns)</small></legend>
+      <div className="linha-campos linha-campos--2">
+        <select className={'entrada' + (invalido ? ' entrada--invalida' : '')} aria-label="Dia do aniversário" value={valor.dia}
+          onChange={(e) => aoMudar({ ...valor, dia: e.target.value })}>
+          <option value="">Dia</option>
+          {Array.from({ length: diasNoMes }, (_, i) => String(i + 1).padStart(2, '0')).map((d) => <option key={d} value={d}>{Number(d)}</option>)}
+        </select>
+        <select className={'entrada' + (invalido ? ' entrada--invalida' : '')} aria-label="Mês do aniversário" value={valor.mes}
+          onChange={(e) => { const mes = e.target.value; const max = mes ? new Date(2024, Number(mes), 0).getDate() : 31; aoMudar({ mes, dia: Number(valor.dia) > max ? String(max).padStart(2, '0') : valor.dia }) }}>
+          <option value="">Mês</option>
+          {MESES_ANIVERSARIO.map((m, i) => <option key={m} value={String(i + 1).padStart(2, '0')}>{m}</option>)}
+        </select>
+      </div>
+      {erro}
+    </fieldset>
+  )
 }

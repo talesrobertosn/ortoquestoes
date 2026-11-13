@@ -16,16 +16,17 @@ import { Ranking } from '../ui/graficos'
 import { Busca, Cabeca, Carregando, Estado, Faixa, Filtro, Painel, Selo, Situacao } from '../ui/kit'
 import { avisoRapido, confirmar, pedirTexto } from '../ui/sobreposicoes'
 import { Tabela } from '../ui/tabela'
+import { ROTULO_FAIXA, ROTULO_MOTIVO, faixaDaNota, mediaFormatada, ordenarResumos, valorDaAvaliacao, type FaixaNota, type ResumoNota } from '../../dados/notasComentario'
 
 interface Estatistica { id_questao: string; pessoas: number; acertos_primeira: number; erros_primeira: number; acertos_atual: number }
 interface Relato { id: number; id_questao: string; tipo: string; texto: string; status: 'aberto' | 'resolvido' | 'descartado'; nota_admin: string | null; criado_em: string; resolvido_em: string | null; usuario: string | null; avisado_em?: string | null }
-interface Avaliacao { id_questao: string; util: boolean; motivo: string | null; observacao: string | null; atualizado_em: string; usuario: string | null }
+interface Avaliacao { id_questao: string; util: boolean; motivo: string | null; observacao: string | null; atualizado_em: string; usuario: string | null; nota?: number | null; comentario_em?: string | null }
 interface Info { titulo: string; trecho: string }
 
 const MIGRACAO = '202609290200_painel_admin_2.sql'
 const TIPOS_RELATO: Record<string, string> = { gabarito: 'Gabarito', enunciado: 'Enunciado', imagem: 'Imagem', comentario: 'Comentário', outro: 'Outro' }
-const MOTIVOS: Record<string, string> = { confuso: 'Ficou confuso', raso: 'Faltou profundidade', errado: 'Parece ter erro', outro: 'Outro motivo' }
-const VISTAS: Array<[VistaTriagem, string]> = [['relatos', 'Relatos de erro'], ['avaliacoes', '"Não ajudou"'], ['suspeitas', 'Suspeitas'], ['faceis', 'Fáceis demais'], ['temas', 'Temas mais fracos']]
+const MOTIVOS = ROTULO_MOTIVO
+const VISTAS: Array<[VistaTriagem, string]> = [['relatos', 'Relatos de erro'], ['avaliacoes', 'Notas dos comentários'], ['suspeitas', 'Suspeitas'], ['faceis', 'Fáceis demais'], ['temas', 'Temas mais fracos']]
 const acertoPrimeira = (e: Estatistica) => porcentagem(Number(e.acertos_primeira), Number(e.acertos_primeira) + Number(e.erros_primeira))
 const tituloPadrao = (id: string) => { const [, n] = id.match(/-(\d+)$/) ?? []; return n ? `Questão ${Number(n)}` : id }
 
@@ -67,20 +68,22 @@ export default function Triagem() {
   const statsQ = usarRpc<Estatistica[]>(p.conta, 'estatisticas_questoes_admin')
   const relatosQ = usarRpc<Relato[]>(p.conta, 'listar_relatos_admin')
   const avaliacoesQ = usarRpc<Avaliacao[]>(p.conta, 'listar_avaliacoes_comentario_admin')
+  const notasQ = usarRpc<ResumoNota[]>(p.conta, 'notas_comentarios_admin')
+  const prioridades = notasQ.dados ? notasQ.dados.filter(r => faixaDaNota(r) === 'prioridade').length : null
   const lidosAval = usarLidos('avaliacao')
   const relatos = relatosQ.dados, avaliacoes = avaliacoesQ.dados
   const abertos = relatos?.filter(r => r.status === 'aberto').length ?? null
   const naoLidas = avaliacoes ? avaliacoes.filter(l => !l.util && l.observacao?.trim() && !lidosAval.lidos.has(chaveAvaliacao(l))).length : null
   const { registrarPendencias } = p
-  useEffect(() => { if (abertos !== null && naoLidas !== null) registrarPendencias(abertos + naoLidas) }, [abertos, naoLidas, registrarPendencias])
+  useEffect(() => { if (abertos !== null && naoLidas !== null) registrarPendencias(abertos + naoLidas + (prioridades ?? 0)) }, [abertos, naoLidas, prioridades, registrarPendencias])
   const [minimo, definirMinimo] = useState(5)
   const stats = statsQ.dados
   const comAmostra = useMemo(() => (stats ?? []).filter(s => Number(s.acertos_primeira) + Number(s.erros_primeira) >= minimo), [stats, minimo])
   const suspeitas = useMemo(() => comAmostra.filter(s => (acertoPrimeira(s) ?? 100) <= 30).sort((a, b) => (acertoPrimeira(a) ?? 0) - (acertoPrimeira(b) ?? 0) || Number(b.pessoas) - Number(a.pessoas)).slice(0, 60), [comAmostra])
   const faceis = useMemo(() => comAmostra.filter(s => (acertoPrimeira(s) ?? 0) >= 95).sort((a, b) => Number(b.pessoas) - Number(a.pessoas)).slice(0, 60), [comAmostra])
-  const info = usarInfo([...suspeitas, ...faceis].map(s => s.id_questao).concat((relatos ?? []).map(r => r.id_questao), (avaliacoes ?? []).map(a => a.id_questao)))
+  const info = usarInfo([...suspeitas, ...faceis].map(s => s.id_questao).concat((relatos ?? []).map(r => r.id_questao), (avaliacoes ?? []).map(a => a.id_questao), (notasQ.dados ?? []).map(r => r.id_questao)))
   const editar = (id: string) => nav.ir('questoes', { id })
-  const contagem: Partial<Record<VistaTriagem, number | null>> = { relatos: abertos, avaliacoes: naoLidas, suspeitas: stats ? suspeitas.length : null, faceis: stats ? faceis.length : null }
+  const contagem: Partial<Record<VistaTriagem, number | null>> = { relatos: abertos, avaliacoes: naoLidas === null || prioridades === null ? null : naoLidas + prioridades, suspeitas: stats ? suspeitas.length : null, faceis: stats ? faceis.length : null }
 
   return <div className="a3-pilha a3-pilha--larga">
     <Cabeca area="Conteúdo" titulo={parte.rotulo} pergunta={parte.pergunta} />
@@ -92,8 +95,8 @@ export default function Triagem() {
     </div>
     {vista === 'relatos' && (relatosQ.erro ? <Estado tipo="erro" titulo="Os relatos não carregaram" texto={erroDoPainel(relatosQ.erro, MIGRACAO)} /> : !relatos ? <Carregando linhas={6} /> :
       <Relatos relatos={relatos} info={info} editar={editar} recarregar={relatosQ.recarregar} />)}
-    {vista === 'avaliacoes' && (avaliacoesQ.erro ? <Estado tipo="erro" titulo="As avaliações não carregaram" texto={erroDoPainel(avaliacoesQ.erro, '202609280200_avaliacoes_comentario_admin.sql')} /> : !avaliacoes ? <Carregando linhas={6} /> :
-      <Avaliacoes linhas={avaliacoes} info={info} lidos={lidosAval} editar={editar} />)}
+    {vista === 'avaliacoes' && (avaliacoesQ.erro ? <Estado tipo="erro" titulo="As avaliações não carregaram" texto={erroDoPainel(avaliacoesQ.erro, '20261113040000_nota_comentarios.sql')} /> : !avaliacoes ? <Carregando linhas={6} /> :
+      <NotasComentarios resumos={notasQ.dados} erroResumos={notasQ.erro} linhas={avaliacoes} info={info} lidos={lidosAval} editar={editar} />)}
     {(vista === 'suspeitas' || vista === 'faceis') && (statsQ.erro ? <Estado tipo="erro" titulo="As estatísticas não carregaram" texto={erroDoPainel(statsQ.erro, MIGRACAO)} /> : !stats ? <Carregando linhas={6} /> :
       <Estatisticas lista={vista === 'suspeitas' ? suspeitas : faceis} suspeitas={vista === 'suspeitas'} info={info} editar={editar} minimo={minimo} definirMinimo={definirMinimo} />)}
     {vista === 'temas' && (statsQ.erro ? <Estado tipo="erro" titulo="As estatísticas não carregaram" texto={erroDoPainel(statsQ.erro, MIGRACAO)} /> : !stats ? <Carregando linhas={6} /> : <Temas stats={stats} />)}
@@ -213,7 +216,7 @@ function Avaliacoes({ linhas, info, lidos, editar }: { linhas: Avaliacao[]; info
   }, [filtradas])
   const topo = <>
     <div className="a3-placar-mini">
-      <span><b>{inteiro(ajudou)}</b> ajudou</span><span><b>{inteiro(linhas.length - ajudou)}</b> não ajudou</span><span><b>{linhas.length ? Math.round((ajudou / linhas.length) * 100) : 0}%</b> de aprovação</span>
+      <span><b>{inteiro(linhas.length)}</b> notas recentes</span><span><b>{linhas.length ? mediaFormatada(linhas.reduce((t, l) => t + valorDaAvaliacao(l), 0) / linhas.length) : '—'}</b> de média</span><span><b>{inteiro(linhas.length - ajudou)}</b> de 5 ou menos</span>
     </div>
     <div className="a3-filtros"><Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar tema, trecho, mensagem ou e-mail" /></div>
     <div className="a3-filtros" style={{ paddingTop: 0 }} role="group" aria-label="Vista">
@@ -222,24 +225,24 @@ function Avaliacoes({ linhas, info, lidos, editar }: { linhas: Avaliacao[]; info
       <Filtro ativo={modo === 'todas'} aoClicar={() => definirModo('todas')} contagem={filtradas.length}>Todas</Filtro>
     </div>
   </>
-  if (modo === 'questoes') return <Painel justo titulo='Placar do "Este comentário te ajudou?"' descricao="As 500 respostas mais recentes, da questão com mais 'não' para a com menos.">
+  if (modo === 'questoes') return <Painel justo titulo="Placar das notas recentes" descricao="As 500 notas mais recentes, da questão com mais notas baixas para a com menos.">
     {topo}
     <Tabela rotulo="Por questão" linhas={placar} chave={x => x.id} porPagina={30} aoAbrir={x => editar(x.id)} colunas={[
       { id: 'q', titulo: 'Questão', celula: x => <span style={{ display: 'grid' }}><span className="a3-nome">{info(x.id).titulo}</span><span className="a3-sub">{[...x.motivos].map(([m, n]) => `${MOTIVOS[m] ?? m} (${n})`).join(', ') || 'sem motivo marcado'}</span></span> },
-      { id: 'n', titulo: 'Não ajudou', numero: true, ordem: x => x.nao, celula: x => <b style={{ color: x.nao ? 'var(--a3-erro)' : undefined }}>{x.nao}</b>, rotuloCelular: 'Não' },
-      { id: 'a', titulo: 'Ajudou', numero: true, ordem: x => x.ajudou, celula: x => x.ajudou, rotuloCelular: 'Ajudou' },
+      { id: 'n', titulo: 'Nota baixa', numero: true, ordem: x => x.nao, celula: x => <b style={{ color: x.nao ? 'var(--a3-erro)' : undefined }}>{x.nao}</b>, rotuloCelular: 'Não' },
+      { id: 'a', titulo: 'Nota boa', numero: true, ordem: x => x.ajudou, celula: x => x.ajudou, rotuloCelular: 'Boa' },
       { id: 'm', titulo: 'Mensagens', numero: true, soLargo: true, ordem: x => x.mensagens, celula: x => x.mensagens },
     ]} />
   </Painel>
   const itens = modo === 'ler' ? paraLer : filtradas
   return <Mesa itens={itens} chave={l => chaveAvaliacao(l)} topo={topo}
-    linha={l => ({ titulo: info(l.id_questao).titulo, sub: l.util ? 'Ajudou' : `${MOTIVOS[l.motivo ?? ''] ?? 'Não ajudou'}${l.observacao?.trim() ? ` · ${l.observacao}` : ''}`, ponto: !l.util && !!l.observacao?.trim() && !lidos.lidos.has(chaveAvaliacao(l)), quando: haQuanto(l.atualizado_em) })}
-    vazio={<Estado icone="certo" titulo={modo === 'ler' ? 'Nenhuma mensagem nova' : 'Nenhuma avaliação neste filtro'} texto={modo === 'ler' && comMensagem.length ? `As ${comMensagem.length} já lidas ficam em "Todas".` : 'Quando alguém disser que não ajudou e escrever o porquê, aparece aqui.'} />}
+    linha={l => ({ titulo: info(l.id_questao).titulo, sub: `${l.nota ? `Nota ${l.nota}` : l.util ? 'Ajudou' : 'Não ajudou'}${l.motivo ? ` · ${MOTIVOS[l.motivo] ?? l.motivo}` : ''}${l.observacao?.trim() ? ` · ${l.observacao}` : ''}`, ponto: !l.util && !!l.observacao?.trim() && !lidos.lidos.has(chaveAvaliacao(l)), quando: haQuanto(l.atualizado_em) })}
+    vazio={<Estado icone="certo" titulo={modo === 'ler' ? 'Nenhuma mensagem nova' : 'Nenhuma avaliação neste filtro'} texto={modo === 'ler' && comMensagem.length ? `As ${comMensagem.length} já lidas ficam em "Todas".` : 'Quando alguém der nota baixa e escrever o porquê, aparece aqui.'} />}
     detalhe={(l, proximo) => { const lida = lidos.lidos.has(chaveAvaliacao(l)); return <div className="a3-pilha">
-      <div><Situacao tom={l.util ? 'ok' : 'erro'}>{l.util ? 'Ajudou' : MOTIVOS[l.motivo ?? ''] ?? 'Não ajudou'}</Situacao></div>
+      <div><Situacao tom={l.util ? 'ok' : 'erro'}>{l.nota ? `Nota ${l.nota}` : l.util ? 'Ajudou' : 'Não ajudou'}{l.motivo ? ` · ${MOTIVOS[l.motivo] ?? l.motivo}` : ''}</Situacao></div>
       <Questao id={l.id_questao} info={info} />
       {l.observacao?.trim() ? <blockquote className="a3-citacao">{l.observacao}</blockquote> : <p className="a3-mudo">Sem mensagem.</p>}
-      <dl className="a3-pares"><div><dt>Quem</dt><dd>{l.usuario ?? 'conta removida'}</dd></div><div><dt>Quando</dt><dd>{dataHora(l.atualizado_em)}</dd></div></dl>
+      <dl className="a3-pares"><div><dt>Quem</dt><dd>{l.usuario ?? 'conta removida'}</dd></div><div><dt>Quando</dt><dd>{dataHora(l.atualizado_em)}</dd></div>{l.comentario_em && <div><dt>Versão avaliada</dt><dd>{l.comentario_em}</dd></div>}</dl>
       <div className="a3-acoes-linha">
         <button type="button" className="a3-botao a3-botao--contorno" onClick={() => editar(l.id_questao)}><Icone nome="lapis" tamanho={15} />Editar questão</button>
         {!l.util && l.observacao?.trim() && (lida ? <button type="button" className="a3-botao a3-botao--fantasma" onClick={() => lidos.marcar([chaveAvaliacao(l)], false)}>Marcar como não lida</button>
@@ -247,6 +250,77 @@ function Avaliacoes({ linhas, info, lidos, editar }: { linhas: Avaliacao[]; info
         {modo === 'ler' && paraLer.length > 1 && <button type="button" className="a3-botao a3-botao--fantasma" onClick={async () => { if (await confirmar({ titulo: `Marcar ${paraLer.length} mensagens como lidas?`, texto: 'Elas continuam em "Todas".', sim: 'Marcar todas' })) lidos.marcar(paraLer.map(chaveAvaliacao)) }}>Marcar todas</button>}
       </div>
     </div> }} />
+}
+
+const FAIXAS: Array<[FaixaNota | 'temas' | 'mensagens', string]> = [['prioridade', 'Prioridade alta'], ['atencao', 'Atenção'], ['post', 'Sugestões de post'], ['temas', 'Por tema'], ['mensagens', 'Mensagens']]
+const TOM_FAIXA: Record<FaixaNota, 'erro' | 'aviso' | 'ok' | 'neutro'> = { prioridade: 'erro', atencao: 'aviso', post: 'ok', normal: 'neutro' }
+const EXPLICA_FAIXA: Record<FaixaNota, string> = {
+  prioridade: 'Média abaixo de 6 com 3 notas ou mais, ou uma nota de 1 a 3 com mensagem. Reescrever primeiro.',
+  atencao: 'Média abaixo de 7,5 ou notas muito espalhadas, ou uma nota de 5 ou menos quando ainda há poucas notas.',
+  post: 'Média 9 ou mais com 2 notas ou mais: o que está funcionando. Bons modelos para os próximos comentários e para post no Instagram.',
+  normal: 'Sem alerta.',
+}
+
+/** Notas de 1 a 10 dos comentários (13/11/2026): faixas de alerta, sugestões de post, média por tema e mensagens. */
+function NotasComentarios({ resumos, erroResumos, linhas, info, lidos, editar }: { resumos: ResumoNota[] | null | undefined; erroResumos: unknown; linhas: Avaliacao[]; info: (id: string) => Info; lidos: ReturnType<typeof usarLidos>; editar: (id: string) => void }) {
+  const [faixa, definirFaixa] = useState<FaixaNota | 'temas' | 'mensagens'>('prioridade')
+  const porFaixa = useMemo(() => {
+    const m: Record<FaixaNota, ResumoNota[]> = { prioridade: [], atencao: [], post: [], normal: [] }
+    for (const r of resumos ?? []) m[faixaDaNota(r)].push(r)
+    return m
+  }, [resumos])
+  const naoLidas = linhas.filter(l => !l.util && l.observacao?.trim() && !lidos.lidos.has(chaveAvaliacao(l))).length
+  const contagem = (f: FaixaNota | 'temas' | 'mensagens') => f === 'temas' ? null : f === 'mensagens' ? naoLidas : resumos ? porFaixa[f].length : null
+  const abas = <div className="a3-filtros" role="group" aria-label="Faixa">
+    {FAIXAS.map(([f, r]) => <Filtro key={f} ativo={faixa === f} aoClicar={() => definirFaixa(f)} contagem={contagem(f) ?? undefined}>{r}</Filtro>)}
+  </div>
+  if (faixa === 'mensagens') return <div className="a3-pilha">{abas}<Avaliacoes linhas={linhas} info={info} lidos={lidos} editar={editar} /></div>
+  if (erroResumos) return <div className="a3-pilha">{abas}<Estado tipo="erro" titulo="As notas não carregaram" texto={erroDoPainel(erroResumos, '20261113040000_nota_comentarios.sql')} /></div>
+  if (!resumos) return <div className="a3-pilha">{abas}<Carregando linhas={6} /></div>
+  if (faixa === 'temas') return <div className="a3-pilha">{abas}<NotasPorTema resumos={resumos} /></div>
+  const lista = ordenarResumos(porFaixa[faixa], faixa)
+  return <div className="a3-pilha">{abas}
+    <Mesa itens={lista} chave={r => r.id_questao}
+      topo={<div className="a3-filtros"><Faixa>{EXPLICA_FAIXA[faixa]}</Faixa></div>}
+      linha={r => ({ titulo: info(r.id_questao).titulo, sub: `Média ${mediaFormatada(r.media)} · ${inteiro(r.n)} ${r.n === 1 ? 'nota' : 'notas'}${r.mensagens ? ` · ${r.mensagens} ${r.mensagens === 1 ? 'mensagem' : 'mensagens'}` : ''}`, ponto: faixa === 'prioridade', quando: haQuanto(r.ultima_em) })}
+      vazio={<Estado icone="certo" titulo={faixa === 'post' ? 'Nenhum comentário com média 9 ou mais ainda' : 'Nenhum comentário nesta faixa'} texto="A lista se atualiza conforme as notas chegam." />}
+      detalhe={r => <div className="a3-pilha">
+        <div><Situacao tom={TOM_FAIXA[faixaDaNota(r)]}>{ROTULO_FAIXA[faixaDaNota(r)]}</Situacao></div>
+        <Questao id={r.id_questao} info={info} />
+        <dl className="a3-pares">
+          <div><dt>Média</dt><dd>{mediaFormatada(r.media)}</dd></div>
+          <div><dt>Notas</dt><dd>{inteiro(r.n)}{r.legado ? ` (${r.legado} do "ajudou" antigo)` : ''}</dd></div>
+          <div><dt>Menor e maior</dt><dd>{r.minima} e {r.maxima}</dd></div>
+          <div><dt>Última</dt><dd>{dataHora(r.ultima_em)}</dd></div>
+        </dl>
+        {Object.keys(r.motivos ?? {}).length > 0 && <p className="a3-mudo">Motivos: {Object.entries(r.motivos).map(([m, n]) => `${MOTIVOS[m] ?? m} (${n})`).join(', ')}</p>}
+        {(r.versoes ?? []).length > 1 && <div>
+          <p className="a3-rotulo">Antes e depois das reescritas</p>
+          <ul className="a3-mudo" style={{ margin: 0, paddingLeft: "1.1rem" }}>{r.versoes.map(v => <li key={v.comentario_em ?? 'sem'}>{v.comentario_em ?? 'versão não registrada'}: média {mediaFormatada(v.media)} ({v.n} {v.n === 1 ? 'nota' : 'notas'})</li>)}</ul>
+        </div>}
+        <div className="a3-acoes-linha">
+          <button type="button" className="a3-botao a3-botao--contorno" onClick={() => editar(r.id_questao)}><Icone nome="lapis" tamanho={15} />Editar questão</button>
+          <a className="a3-botao a3-botao--fantasma" href={href(`/questao/${r.id_questao}`)} target="_blank" rel="noopener noreferrer"><Icone nome="externo" tamanho={15} />Ver como aluno</a>
+        </div>
+      </div>} />
+  </div>
+}
+
+/** Média das notas por tema: onde o padrão dos comentários caiu. Só temas com 5 notas ou mais. */
+function NotasPorTema({ resumos }: { resumos: ResumoNota[] }) {
+  const { indice } = usarIndice()
+  const temas = useMemo(() => {
+    if (!indice) return []
+    const temaDe = new Map(indice.questoes.map(q => [q.id, q.t]))
+    const soma = new Map<number, { total: number; n: number; questoes: number }>()
+    for (const r of resumos) { const t = temaDe.get(r.id_questao); if (t === undefined) continue; const x = soma.get(t) ?? { total: 0, n: 0, questoes: 0 }; x.total += Number(r.media) * r.n; x.n += r.n; x.questoes++; soma.set(t, x) }
+    return [...soma].filter(([, v]) => v.n >= 5).map(([t, v]) => ({ nome: indice.temas[t]?.nome ?? String(t), media: v.total / v.n, n: v.n, questoes: v.questoes })).sort((a, b) => a.media - b.media)
+  }, [indice, resumos])
+  if (!indice) return <Carregando linhas={6} />
+  return <Painel titulo="Média das notas por tema" descricao="Da menor para a maior; só temas com 5 notas ou mais.">
+    {temas.length === 0 ? <Estado compacto titulo="Ainda não há notas suficientes por tema" /> :
+      <Ranking formato={v => mediaFormatada(v)} itens={temas.map(t => ({ nome: t.nome, valor: Math.round(t.media * 10) / 10, detalhe: `${inteiro(t.n)} notas · ${t.questoes} questões` }))} />}
+  </Painel>
 }
 
 function Estatisticas({ lista, suspeitas, info, editar, minimo, definirMinimo }: { lista: Estatistica[]; suspeitas: boolean; info: (id: string) => Info; editar: (id: string) => void; minimo: number; definirMinimo: (n: number) => void }) {

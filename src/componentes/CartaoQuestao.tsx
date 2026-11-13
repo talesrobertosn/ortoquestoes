@@ -13,7 +13,6 @@ import { DESCRICAO_PROVA, ROTULO_SIMULADOS } from '../config'
 import { FiguraAmpliavel } from './FiguraAmpliavel'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
-import { ContribuirComentario } from './ContribuirComentario'
 import { usarEtiquetas } from '../estado/preferencias'
 import { usarComentarioIA } from '../dados/comentarios'
 import { urlImagem } from '../dados/edicoes'
@@ -114,7 +113,6 @@ export function CartaoQuestao({ questao: questaoDoAcervo, permutacao, ordemRevis
       aoRiscar={riscar}
       ordemExibida={ordem}
       avisoOrdem={aviso}
-      questaoOriginal={questaoDoAcervo}
       {...resto}
     />
   )
@@ -141,10 +139,7 @@ function CartaoQuestaoExibida({
   modoProva = false,
   ordemExibida = null,
   avisoOrdem = null,
-  questaoOriginal,
 }: Omit<Props, 'permutacao' | 'ordemRevisao'> & {
-  /** A questão na ordem do acervo: o que sai do site (contribuição de comentário) usa as letras da prova. */
-  questaoOriginal: Questao
   /** A ordem em que a questão está na tela (Simulado Nacional ou revisão), para traduzir comentário e turma. */
   ordemExibida?: string | null
   avisoOrdem?: { embaralhada: boolean; alternar: () => void } | null
@@ -665,49 +660,6 @@ function CartaoQuestaoExibida({
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
-            <div className="bloco-comentario qz-bloco qz-comunidade" id={`qz-${questao.id}-comunidade`}>
-              <p className="comentario__titulo qz-titulo-px">Comentários da comunidade{(questao.comentariosComunidade?.length ?? 0) > 0 && <span className="qz-contador">{questao.comentariosComunidade!.length}</span>}</p>
-              {ordemExibida && (questao.comentariosComunidade?.length ?? 0) > 0 && <p className="meta qz-ordem-legenda">As letras citadas aqui são as da prova: {legendaDaOrdem(ordemExibida)}.</p>}
-              {(questao.comentariosComunidade?.length ?? 0) === 0 ? (
-                <p className="comentario__pendente">
-                  Ninguém comentou esta ainda. Se você sabe por que a resposta é essa, escreva —
-                  pode mandar print do livro. Sai com o seu nome, a sua especialidade e o seu
-                  serviço, e ajuda quem cair nesta questão depois de você.
-                </p>
-              ) : (
-                <ul className="empilha" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {questao.comentariosComunidade!.map((item, i) => (
-                    <li key={i} className="contribuicao">
-                      <TextoEditorial texto={item.texto} />
-                      {item.imagens && item.imagens.length > 0 && (
-                        <div className="questao__figuras" style={{ marginTop: '0.75rem' }}>
-                          {item.imagens.map((imagem) => (
-                            <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? 'Imagem enviada por colega'} alturaMaxima="18rem" />
-                          ))}
-                        </div>
-                      )}
-                      <Referencias itens={item.referencias} />
-                      <p className="contribuicao__credito">
-                        <strong>{item.autor}</strong>
-                        {[
-                          item.subespecialidade || item.especialidade,
-                          item.centro,
-                          formatarData(item.data),
-                        ]
-                          .filter(Boolean)
-                          .map((parte) => ` · ${parte}`)}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              )}
-              {mostrarGabarito && (
-                <div className="linha nao-imprime" style={{ marginTop: '0.75rem' }}>
-                  <ContribuirComentario questao={questaoOriginal} />
-                </div>
-              )}
-            </div>
-
             <Referencias itens={questao.referencias} />
           </div>
         )}
@@ -777,23 +729,11 @@ function CartaoQuestaoExibida({
   )
 }
 
-/**
- * Data do comentário da comunidade no crédito. Vem como "AAAA-MM-DD" e é
- * montada com `new Date(ano, mês, dia)` de propósito: `new Date('2026-09-09')`
- * seria lida como UTC e, em fuso negativo, mostraria o dia anterior.
- */
 /** Simulado que espelha uma prova de um ano (SIMÃO, SBCM): o selo diz de qual prova e ano ele foi inspirado. */
 function inspiracaoDe(questao: Questao): string | null {
   return questao.simulado && questao.prova && questao.ano ? `Inspirada ${questao.prova === 'SBCM' ? 'na prova da' : 'no'} ${questao.prova} ${questao.ano}` : null
 }
 
-function formatarData(iso?: string | null) {
-  if (!iso) return null
-  const partes = iso.split('-').map(Number)
-  if (partes.length !== 3 || partes.some(Number.isNaN)) return null
-  const [ano, mes, dia] = partes
-  return new Date(ano, mes - 1, dia).toLocaleDateString('pt-BR')
-}
 
 function Resultado({ questao, resposta, agora = false, nome = '' }: { questao: Questao; resposta: Resposta; agora?: boolean; nome?: string }) {
   if (questao.anulada) {
@@ -909,7 +849,6 @@ function ComentarioDaIA({
     if (referencia) partes.push(['correta', `Por que a ${referencia}`])
     if (erradas.length) partes.push(['alternativas', referencia ? 'As outras' : 'Alternativas'])
   }
-  if (comentario) partes.push(['comunidade', 'Comunidade'])
   function irPara(parte: string) {
     const alvo = document.getElementById(idParte(parte))
     if (!alvo) return
@@ -1024,7 +963,7 @@ function ComentarioDaIA({
           </>)}
 
           <Referencias itens={comentario.referencias} notaIA />
-          <AvaliarComentario idQuestao={questao.id} />
+          <AvaliarComentario idQuestao={questao.id} versao={comentario.geradoEm ?? null} />
         </>
       )}
     </div>

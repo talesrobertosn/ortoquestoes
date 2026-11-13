@@ -464,6 +464,26 @@
 .av__erro { display: inline-flex; align-items: center; gap: .4rem; border: 1.5px dashed var(--erro); background: var(--erro-veu); color: var(--erro-texto); border-radius: 3px; padding: .5rem .75rem; font: 600 var(--corpo-menor) var(--fonte-texto); cursor: pointer; text-align: left; min-height: var(--toque); }
 .relato__ajuda { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
 @media (max-width: 560px) { .av__botoes { width: 100%; } .av__botao { flex: 1 1 0; min-width: 0; justify-content: center; padding-inline: .5rem; } }
+/* Nota de 1 a 10 (13/11/2026): uma linha, dez quadradinhos que acendem como uma régua. */
+.av--regua { display: grid; gap: .35rem; padding: .7rem 1rem; }
+.av__linha { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; }
+.av--regua .av__pergunta { display: inline-flex; align-items: center; gap: .35rem; font-size: var(--corpo-menor); }
+.av__info { display: inline-grid; place-items: center; width: 32px; height: 32px; margin: -6px 0; border: 0; border-radius: 50%; background: none; color: var(--texto-2); cursor: pointer; }
+.av__info:hover, .av__info[aria-expanded="true"] { color: var(--verdete); background: var(--verdete-veu); }
+.av__regua { display: flex; gap: 4px; }
+.av__nota {
+  display: inline-grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 1.5px solid var(--traco-forte); border-radius: 4px;
+  background: var(--superficie); color: var(--texto-2); font: 700 .85rem var(--fonte-texto); font-variant-numeric: tabular-nums; cursor: pointer;
+  transition: background-color .12s ease-out, border-color .12s ease-out, color .12s ease-out, transform .12s ease-out;
+}
+.av__nota--acesa { background: var(--av-cor); border-color: var(--av-cor); color: #fff; }
+.av__nota:hover { transform: translateY(-1px); }
+.av__nota:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+.av__sub { margin: 0; color: var(--texto-2); font-size: var(--meta); line-height: 1.45; }
+.av--feito .av__dada { flex: 0 0 28px; }
+.av__dada { display: inline-grid; place-items: center; flex: 0 0 auto; width: 28px; height: 28px; border-radius: 4px; background: var(--av-cor); color: #fff; font: 800 .85rem var(--fonte-texto); }
+@media (max-width: 420px) { .av__regua { width: 100%; justify-content: space-between; gap: 2px; } .av__nota { width: calc((100% - 18px) / 10); min-width: 26px; height: 34px; } }
+@media (prefers-reduced-motion: reduce) { .av__nota { transition: none; } .av__nota:hover { transform: none; } }
 @media print { .av { display: none; } }
 
 /* Como a turma respondeu: convite para quem não assina. */

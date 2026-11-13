@@ -14,7 +14,7 @@ function adiadoNestaAba(): boolean {
 
 /**
  * Aviso de Termos atualizados para quem tem conta e aceitou uma versão anterior
- * (ou nenhuma). Mostra o que mudou, leva aos textos completos e registra a
+ * (ou nenhuma). Mostra o que mudou (quando MUDANCAS_TERMOS tem itens), leva aos textos completos e registra a
  * concordância na conta (metadados `termos_versao` e `termos_aceitos_em`).
  *
  * - `faixa` (padrão): no topo de todas as páginas, com "Agora não" (adia nesta aba).
@@ -55,13 +55,13 @@ export function AvisoTermos({ variante = 'faixa' }: { variante?: 'faixa' | 'cart
       <div className="aviso-termos__texto">
         <h2 id="aviso-termos-titulo"><Icone nome="livro" tamanho={18} /> Nossos Termos ganharam uma versão nova</h2>
         <p>
-          Vale a partir de {dataDaVersao(VERSAO_TERMOS)}. Preços, planos e a garantia de 7 dias continuam iguais,
-          e sua conta segue funcionando normalmente. Quando puder, dê uma olhada no que mudou:
+          Vale a partir de {dataDaVersao(VERSAO_TERMOS)}, e sua conta segue funcionando normalmente.
+          {MUDANCAS_TERMOS.length > 0 ? ' Quando puder, dê uma olhada no que mudou:' : ' Você pode ler os textos completos antes de concordar.'}
         </p>
-        <details className="aviso-termos__mudancas" open={variante === 'cartao'}>
+        {MUDANCAS_TERMOS.length > 0 && <details className="aviso-termos__mudancas" open={variante === 'cartao'}>
           <summary>O que mudou, em resumo</summary>
           <ul>{MUDANCAS_TERMOS.map((m) => <li key={m}>{m}</li>)}</ul>
-        </details>
+        </details>}
         {estado === 'erro' && <p className="aviso-termos__erro" role="alert">Não foi possível registrar agora. Confira sua conexão e tente de novo; sua conta continua disponível.</p>}
       </div>
       <div className="aviso-termos__acoes">
