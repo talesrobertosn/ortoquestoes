@@ -55,11 +55,11 @@ export function BichoCarta({ bicho, fase }: { bicho: Bicho; fase: Fase }) {
   const f = FOLHAS[bicho]
   const m = f.fases[fase]
   return (
-    <span className={`cc-bicho cc-bicho--${bicho} cc-bicho--${fase}`} aria-hidden="true"
+    <span className={`cvc-bicho cvc-bicho--${bicho} cvc-bicho--${fase}`} aria-hidden="true"
       style={{ '--chao': f.chao, '--w': f.w, '--h': f.h, '--esc': f.esc } as CSSProperties}>
       <span
         key={`${fase}-${m.linha}`}
-        className={`cc-bicho__quadros${m.vezes ? ` cc-bicho__quadros--${m.vezes}` : ''}`}
+        className={`cvc-bicho__quadros${m.vezes ? ` cvc-bicho__quadros--${m.vezes}` : ''}`}
         style={{
           '--src': urlCss(f.src), '--colunas': f.colunas, '--linha': m.linha, '--n': m.quadros, '--dur': `${m.dur}s`,
         } as CSSProperties}
