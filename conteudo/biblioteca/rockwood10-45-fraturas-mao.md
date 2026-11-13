@@ -144,7 +144,7 @@ Os metacarpos formam um **arco romano**: indicador e mínimo nas bordas, o **mé
 | Mínimo | até 45° | até 50° |
 !fim
 
-!questoes central=mao-1541,mao-0913
+!questoes central=mao-1541,mao-0913 treino=mao-1799
 conceito: O indicador e o médio toleram pouca angulação (10° na diáfise), o anular cerca de 25° e o mínimo até 45° na diáfise e 50° no colo; rotação acima de 10° ou cruzamento de dedos nunca é aceita.
 como: A USP 2026 pediu o limite do segundo e do terceiro metacarpos; a UFG 2019 misturou os limites com a regra do parafuso interfragmentário e pôs um limite falso (menos de 20°) para o colo do quinto.
 armadilha: "Encurtamentos de até 1,5 cm são bem tolerados": o capítulo aceita 5 a 6 mm.
@@ -155,7 +155,7 @@ armadilha: "Desvio angular é o fator mais importante": o que menos se tolera é
 
 Quando o metacarpo consolida com **ápice dorsal**, a cabeça afunda para volar, e o dedo, ao tentar estender, **hiperestende a MCF e flete a IFP**. É a **pseudogarra**: parece a garra neurológica, mas nasce do osso (também acontece na falange proximal angulada). O capítulo a trata como **uma indicação de cirurgia**, proporcional à angulação.
 
-!questoes central=trauma-0273,mao-1312
+!questoes central=trauma-0273,mao-1312 treino=mao-1935
 conceito: A pseudogarra é a hiperextensão compensatória da MCF com flexão da IFP causada por angulação de ápice dorsal do metacarpo (cabeça desviada para volar) e indica tratamento cirúrgico.
 como: A prova de Ortopedia pediu a deformidade completa; a USP 2025 pôs a pseudogarra como indicação cirúrgica no colo do quinto, entre afirmações erradas sobre limite de angulação e direção do parafuso.
 armadilha: "Angulação maior que 45° no colo do quinto sugere cirurgia": o capítulo tolera até 50° no colo do mínimo.
@@ -180,7 +180,7 @@ armadilha: "O desvio é de ápice volar": a fratura do colo angula com ápice do
 
 As incidências de rotina são **frente, perfil e oblíqua**. Por causa da cascata dos metacarpos, o anular e o mínimo pedem a **oblíqua em 30° de pronação** (que mostra também a CMC deles, como no reverse Bennett) e a **frente semipronada**. Para a **cabeça do metacarpo**, a incidência é a de **Brewerton**: dorso dos dedos apoiado no chassi, **MCF fletida a cerca de 65°** e raio angulado **15° de ulnar para radial**. Ela põe o recesso do colateral de perfil e mostra avulsões e fraturas pequenas. No polegar, o equivalente é a incidência de **Roberts** (frente da CMC com a mão hiperpronada).
 
-!questoes central=mao-1068,mao-1492 treino=mao-1698
+!questoes central=mao-1068,mao-1492 treino=mao-1698,mao-2029
 conceito: A incidência de Brewerton tem o dorso das falanges apoiado no chassi, a MCF fletida a cerca de 65° e o raio a 15° de ulnar para radial.
 como: PUC-SP 2019 e USP 2024 trocaram ângulos de flexão, sentido do raio e o que fica apoiado na mesa.
 armadilha: Raio de radial para ulnar: o sentido é de ulnar para radial.
@@ -218,7 +218,7 @@ Operam-se o desvio fora da tolerância, a rotação, o encurtamento importante, 
 
 Mais de dois metacarpos ou politrauma: parafusos intramedulares ou placas, para mexer logo. Dois metacarpos saem por uma incisão; três pedem duas. Com **mais de três fraturas**, vigiar a **síndrome compartimental** da mão.
 
-!questoes central=mao-1496,mao-1575,conceitos-basicos-0057 relacionadas=mao-1391 treino=mao-1710
+!questoes central=mao-1496,mao-1575,conceitos-basicos-0057 relacionadas=mao-1391 treino=mao-1710,mao-1796
 conceito: O parafuso interfragmentário isolado só serve para traço oblíquo longo ou espiral com comprimento de pelo menos duas vezes o diâmetro do osso.
 como: A USP cobrou o número em 2024 e 2026; o TARO 2014 perguntou o tipo de traço ideal (espiral).
 armadilha: Traço transverso ou oblíquo curto: não tem comprimento para parafuso isolado; vai para fio, intramedular ou placa.
@@ -328,7 +328,7 @@ O tufo e a diáfise quebram por **esmagamento** ou por serra, quase sempre com l
 
 Desnível cortical ou diástase pedem redução e **fio** (0,028 a 0,035 polegada, ou agulha 18), retirado em **4 semanas**. Num estudo, dois fios consolidaram 3 semanas mais rápido que um, e o único fator de pseudartrose foi a **diástase** do foco. Pseudartroses do tufo acontecem e quase nunca dão sintomas. Uma metanálise mostrou que **antibiótico profilático não reduz a infecção** nas fraturas expostas da falange distal.
 
-!questoes central=mao-1026 relacionadas=mao-1351
+!questoes central=mao-1026 relacionadas=mao-1351 treino=mao-1944
 conceito: Na fratura do tufo por esmagamento, as partes moles e a unha estabilizam o fragmento; a unha removida é recolocada sob a prega para ajudar a estabilidade, depois de suturar o leito ungueal.
 como: A UFG 2021 pediu o papel da unha; a USP 2025 mostrou a unha deslocada e pediu a conduta (retirar, explorar e suturar o leito).
 armadilha: "No tufo, de osso esponjoso, não ocorre pseudartrose": ocorre, ainda que costume ser assintomática.
@@ -372,7 +372,7 @@ armadilha: Tala em hiperextensão da IFD: é tratamento de martelo, não de jers
 
 A fratura transversa da base da falange distal é típica da **criança** (fratura epifisária de Seymour) e também acontece no adulto. A base da unha sai por cima da prega e o **leito ungueal lacerado fica interposto no foco**, o que torna a fratura **exposta** e impede a redução. Como o **extensor terminal** puxa a epífise e o **flexor profundo** puxa o fragmento distal, ela é **instável** e quase sempre pede fio. O roteiro: retirar o tecido interposto (via dorsal), reduzir, pinar, reparar o leito e recolocar a unha sob a prega; tala até a consolidação, em cerca de 4 semanas.
 
-!questoes central=mao-0773,trauma-0905 relacionadas=mao-1213,pediatria-0823 treino=mao-1694
+!questoes central=mao-0773,trauma-0905 relacionadas=mao-1213,pediatria-0823 treino=mao-1694,mao-2252
 conceito: Na fratura de Seymour, o leito ungueal (matriz) fica interposto no foco da fratura fisária da falange distal, que por isso é exposta e exige retirada do tecido, redução e reparo do leito.
 como: O INTO 2023 pediu a estrutura interposta; a prova de Ortopedia mostrou imagem e pediu "exposta" e o nome; a PUC-SP 2023 pediu o tratamento (remover o tecido interposto e reparar o leito).
 armadilha: "Fratura fisária fechada": o leito lacerado faz dela uma fratura exposta.
@@ -476,7 +476,7 @@ O objetivo é **articulação estável que desliza**; a anatomia perfeita da sup
 - **Artroplastia com placa volar**: na borda volar cominutiva com mais de 50%; pinagem a 30° por 3 semanas. Vai melhor operada até 6 semanas (95° contra 78° de arco).
 - **Hemi-hamato**: reconstrói a borda com **enxerto osteocondral da parte distal do hamato** (entre a quarta e a quinta CMC), cuja crista central imita a base da falange média. Os autores a usam nas cominutivas, sobretudo nas que chegam tarde. Numa revisão de 234 pacientes, a IFP ficou com 74° de arco, dor 1 de 10 e força de 87%, com artrose em 18% e colapso do enxerto em 4,2%. O enxerto pequeno demais no sentido proximal-distal é a causa da reabsorção.
 
-!questoes central=trauma-0438 treino=mao-1703
+!questoes central=trauma-0438 treino=mao-1703,mao-2116
 conceito: Na fratura-luxação dorsal instável da IFP com borda volar cominutiva ou irreparável, a hemiartroplastia com enxerto osteocondral do hamato reconstrói o contraforte volar.
 armadilha: Artroplastia com placa volar: é a outra opção, mas fica menos previsível quando o fragmento passa da metade da superfície.
 !fim
@@ -515,7 +515,7 @@ Kaplan descreveu o **laço** que estrangula o colo do metacarpo do indicador: **
 
 O Green 7 (cap. 8, p. 298 e 300) explica por que a tração não reduz: se a placa volar fosse o único obstáculo, a tração bastaria para trazê-la de volta sobre a cabeça, mas o **laço de tendões** em volta do colo aperta ainda mais quando se puxa o dedo. Na via volar, os autores do Green chamam a tensão desse laço de principal obstáculo à redução e a aliviam abrindo a **polia A1**.
 
-!questoes central=mao-0601,mao-0625,mao-0896,mao-0996,mao-1030 relacionadas=mao-1508 treino=mao-1712
+!questoes central=mao-0601,mao-0625,mao-0896,mao-0996,mao-1030 relacionadas=mao-1508 treino=mao-1712,mao-1800
 conceito: Na luxação dorsal complexa da MCF do indicador, a placa volar interposta entre a cabeça do metacarpo e a falange é o principal bloqueio à redução; o sesamoide dentro da articulação é o sinal radiográfico.
 como: O TARO cobrou em 2007 e 2009 com as mesmas quatro opções (placa volar, lumbrical, flexor, transverso superficial); a UFG voltou ao tema em 2017, 2020 e 2021 (sesamoide no raio X); a USP 2024 mostrou a cabeça do metacarpo no campo operatório.
 armadilha: Lumbrical e flexor: formam o laço que aperta o colo, mas o que impede a redução é a placa volar interposta.
@@ -589,7 +589,7 @@ Forças deformantes nas fraturas da diáfise da falange média: proximais à ins
 
 Na falange proximal, os **interósseos** (intrínsecos) fletem o **fragmento proximal** e a **banda central** estende o **distal**: a fratura angula com **ápice volar**. A diáfise quase não tem inserções estabilizadoras e por isso é instável. O **colo** também angula com ápice volar, com o fragmento distal em hiperextensão, e se reduz **fletindo a IFP**. Nos **côndilos**, os colaterais são a força deformante. Flexionar totalmente a MCF faz o aparelho extensor funcionar como **banda de tensão** sobre a fratura transversa e ajuda a reduzir.
 
-!questoes central=mao-1397,mao-1534,trauma-0341 treino=mao-1707
+!questoes central=mao-1397,mao-1534,trauma-0341 treino=mao-1707,mao-1932
 conceito: Na fratura da diáfise da falange proximal, os interósseos fletem o fragmento proximal e o aparelho extensor estende o distal: angulação com ápice volar.
 como: USP 2025 e 2026 pediram a estrutura (interósseos); a prova de Ortopedia descreveu a mesma deformidade como "desvio dorsal pela ação dos interósseos", olhando para o fragmento distal, que vai para dorsal enquanto o ápice aponta para volar.
 armadilha: Flexor superficial: insere-se na falange média e não desvia a proximal.
@@ -607,7 +607,7 @@ Os mecanismos são sobretudo de **torção** no esporte, com o **médio e o anul
 
 Além delas, há as bicondilares, as do colo (subcapitais), as da diáfise (transversa, espiral, oblíqua, cominutiva) e as da base.
 
-!questoes central=mao-0666,mao-1130,mao-1166 treino=mao-1708
+!questoes central=mao-0666,mao-1130,mao-1166 treino=mao-1708,mao-1797,mao-2028
 conceito: Na classificação de Weiss e Hastings das fraturas unicondilares da falange proximal, I é oblíqua volar, II sagital longa, III coronal dorsal e IV coronal volar.
 como: FMRP-USP 2026, PUC-SP 2021 e 2022 pediram o tipo III ou o II pela descrição do traço.
 !fim
@@ -644,7 +644,7 @@ O tratamento quase sempre é **cirúrgico**, porque a maioria fica instável dep
 
 A complicação mais comum é a **artrose pós-traumática**, por redução imperfeita ou degrau articular (numa série de 64 fraturas-luxações da base do quinto, 38% tinham dor intermitente na preensão forte depois de mais de 4 anos). O salvamento é a **artrodese da CMC** nos dedos, com pouco prejuízo funcional, ou a **artroplastia de Dubert** no quinto: resseca-se a base do quinto metacarpo e funde-se a metáfise dele ao quarto. No polegar, a artroplastia da CMC.
 
-!questoes central=mao-0621,mao-0816 treino=mao-1718
+!questoes central=mao-0621,mao-0816 relacionadas=mao-1528 treino=mao-1718
 conceito: A artrose depois da fratura-luxação da CMC do quinto dedo é tratada com artrodese da CMC ou com a artroplastia de Dubert (ressecção da base do quinto e fusão ao quarto metacarpo).
 como: O TARO 2009 perguntou o tratamento da artrose (artrodese); o INTO 2026 mostrou a técnica de Dubert em figura.
 armadilha: Ressecção da base do quinto metacarpo isolada: a técnica de Dubert resseca a base, mas funde a metáfise ao quarto metacarpo.
