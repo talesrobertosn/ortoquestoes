@@ -1,6 +1,6 @@
 ---
 id: rockwood10-17-sindrome-compartimental
-versao: 5
+versao: 6
 titulo: Síndrome compartimental aguda
 especialidade: trauma
 acesso: gratis
@@ -288,10 +288,6 @@ armadilha: Acesso anterolateral: é o da incisão lateral, que abre anterior e l
 - **Coxa:** os compartimentos são fáceis de ver; anterior e posterior saem por **uma incisão lateral** única, e uma incisão medial sobre os adutores entra se necessário.
 - **Pé:** **duas incisões dorsais**, sobre o **segundo e o quarto metatarsos**, dão acesso aos interósseos e ao compartimento central, que fica profundo a eles; medial e lateral são alcançados contornando as faces profundas do primeiro e do quinto metatarsos. Isso costuma bastar no antepé. Na lesão do **retropé, especialmente a fratura do calcâneo**, pode ser necessária uma **incisão medial separada** para o compartimento calcâneo. Há relatos de liberação de todos os compartimentos por duas incisões dorsais de 1 cm, com medida da pressão em cada um. A síndrome ignorada deixa dedos em garra, cirurgias repetidas, palmilhas e dor crônica. (O texto do livro escreve "metacarpos" nesse trecho, uma troca evidente por metatarsos.)
 - **Braço:** incisões anterior e posterior; raramente, também o deltoide.
-
-!figura 17-10
-Corte do retropé com os compartimentos medial, central superficial e central profundo (calcâneo), e a via medial para liberar o compartimento calcâneo.
-!fim
 
 !questoes central=trauma-0999 treino=trauma-1601
 conceito: No pé, duas incisões dorsais sobre o 2º e o 4º metatarsos alcançam interósseos e central; na fratura do calcâneo, o compartimento calcâneo (quadrado plantar) pode exigir incisão medial.

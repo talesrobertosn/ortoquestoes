@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial
-versao: 4
+versao: 5
 titulo: Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança
 especialidade: pediatria
 acesso: gratis
@@ -318,7 +318,7 @@ Redução pelas técnicas de empurrar: no método de LAVINE, a criança fica no 
 conceito: A tração de PARVIN é feita com o cotovelo fletido perto de 90 graus, tração no eixo do úmero e do antebraço e contraforça; o capítulo a prefere a partir dos 10 anos e reserva a técnica de empurrar o olécrano, com a criança no colo dos pais, para os de 9 anos ou menos.
 como: A prova Ortopedia sem ano cruzou decúbito dorsal ou ventral com cotovelo em flexão ou extensão para a manobra de PARVIN (gabarito: ventral e flexão).
 armadilha: Cotovelo em extensão: a hiperextensão é proibida; multiplica a força sobre o braquial e expõe o mediano.
-alerta: O gabarito (trauma-0959) põe a manobra de PARVIN em decúbito ventral. O capítulo diz que a técnica de tração pode ser feita em supino ou em prono e desenha a de PARVIN em supino, com contraforça por lençol na axila (figura 16-21). A flexão do cotovelo é ponto comum; a posição do paciente não é exclusiva no livro.
+alerta: O gabarito (trauma-0959) põe a manobra de PARVIN em decúbito ventral. O capítulo diz que a técnica de tração pode ser feita em supino ou em prono e desenha a de PARVIN em supino, com contraforça por lençol na axila (figura 16-21). A flexão do cotovelo é ponto comum; a posição do paciente não é exclusiva no livro. A descrição em decúbito ventral tem fonte aberta: KHAN, CHOPRA e CHAKRAVARTY (J Med Case Rep, 2008, PMC2409352) resumem a técnica de PARVIN como semelhante à de STIMSON, com o paciente em prono, tração no punho e elevação do úmero, o que sustenta o gabarito.
 !fim
 
 ## Quando operar
@@ -334,6 +334,7 @@ A antiga imobilização de 3 semanas deu lugar à **mobilização precoce**. MUR
 - tala posterior, órtese articulada ou gesso bivalvado com o cotovelo a **90 graus**; **supinação total** se houver dúvida de estabilidade, meia pronação se o cotovelo é absolutamente estável;
 - por volta de **1 semana**, trocar por tala removível ou destravar a órtese; movimento **ativo** protegido várias vezes ao dia;
 - **10 a 14 dias**: no paciente confiável, deixar a tala e usar tipoia; nos momentos de risco de queda (escola), a tala pode seguir até 5 a 6 semanas;
+- antes da redução, avisar os pais que pode sobrar perda de movimento, sobretudo de extensão, qualquer que seja o tratamento, **em geral menor que 30 graus** e sem importância funcional ou estética; se a redução foi aberta, o movimento começa quando a ferida cicatriza (1 a 2 semanas);
 - O'DRISCOLL: se o cotovelo é estável ao valgo com o antebraço **pronado**, o feixe anterior do colateral medial está íntegro e o paciente pode mover cedo.
 
 # Complicações da luxação {radar=confirmado}
@@ -342,11 +343,13 @@ A antiga imobilização de 3 semanas deu lugar à **mobilização precoce**. MUR
 | Momento | Complicação |
 | --- | --- |
 | Precoce | lesão neurológica (ulnar e mediano as mais comuns); lesão vascular (braquial a mais comum) |
-| Tardia | **perda de movimento**; ossificação heterotópica; sinostose radioulnar; cúbito recurvato |
-| Problemas especiais | luxação posterior recorrente; luxação não reduzida |
+| Tardia | **perda de movimento**; ossificação heterotópica; **luxação posterior recorrente**; sinostose radioulnar; cúbito recurvato |
+| Problema especial (não é complicação do tratamento) | luxação crônica não reduzida |
 !fim
 
-- **Perda de movimento:** quase todos perdem algo, menos que no adulto, em geral **até 10 graus de extensão**, sem importância funcional. Explicar aos pais antes da redução. Com epicôndilo desviado (perda da isometria medial) ou articulação incongruente, a perda pode ser grande; acima de **45 a 60 graus**, liberação cirúrgica tardia.
+Na 10ª edição (capítulo 16, Outcomes and Complications), a luxação posterior recorrente passou para a lista das complicações tardias, ao lado da perda de movimento, da ossificação heterotópica, da sinostose radioulnar e do cúbito recurvato; a 9ª edição a tratava, com a luxação não reduzida, como problema especial. A luxação crônica não reduzida segue à parte: o capítulo diz que ela não é considerada complicação do tratamento.
+
+- **Perda de movimento:** quase todos perdem algo, menos que no adulto, em geral **até 10 graus de extensão** (Late Complications, Loss of Motion), sem importância funcional. Explicar aos pais antes da redução; na preferência dos autores, a mesma conversa fala em perda, sobretudo de extensão, **em geral menor que 30 graus**, sem importância funcional ou estética. Os dois números vêm do mesmo capítulo: 10 graus é o habitual descrito nas séries, 30 graus é o teto que os autores anunciam aos pais. Com epicôndilo desviado (perda da isometria medial) ou articulação incongruente, a perda pode ser grande; acima de **45 a 60 graus**, liberação cirúrgica tardia.
 - **Miosite ossificante × calcificação heterotópica:** a miosite verdadeira (no braquial, que se rompe) é **rara na criança** e pode limitar o movimento; a calcificação dos ligamentos e da cápsula é **comum** (61% em JOSEFSSON; 28% em LINSCHEID e WHEELER) e quase sempre sem perda funcional.
 - **Sinostose radioulnar:** mais frequente quando há **fratura do colo do rádio** associada, tratada ou não com cirurgia, pelo grande descolamento periosteal anterior entre os dois ossos (um em três casos em CARLIOZ e ABOLS).
 - **Cúbito recurvato:** após grande rotura da cápsula anterior; pouco sintomático, às vezes estético.
@@ -521,7 +524,7 @@ alerta: O capítulo descreve a osteocondrite por compressão do côndilo lateral
 
 - **Luxação:** pico aos **13 e 14 anos**; quase todas **posteriores**; fratura associada em mais da metade, **epicôndilo medial a mais comum**; **ulnar o nervo mais lesado**, **mediano o mais grave** (FOURRIER, **MATEV**), **radial raro**; artéria: **reduzir e reavaliar**, arteriografia não é rotina.
 - **Redução:** hipersupinar, corrigir o desvio lateral, **nunca hiperextender**; **empurrar até 9 anos, PARVIN a partir de 10**; imobilizar a 90 graus e **mover em cerca de 1 semana**; mais de 2 semanas = perda de extensão.
-- **Complicações:** **rigidez** é a regra (até 10 graus de extensão); recidiva **0,6%**; sinostose com fratura do colo do rádio.
+- **Complicações:** **rigidez** é a regra (até 10 graus de extensão nas séries; aos pais, em geral menos de 30); recidiva **0,6%**, complicação tardia na 10ª; sinostose com fratura do colo do rádio.
 - **Epicôndilo medial:** apófise de tração, posterior, origem do colateral ulnar fora da cápsula; ossifica aos **4 a 6 anos**, funde aos **15** (**último**); **acima de 5 anos o núcleo tem de estar lá**; pico de fratura aos **11 e 12**, meninos, metade com luxação.
 - **Tratamento do epicôndilo:** menos de 2 mm sem cirurgia; **encarceramento = única indicação absoluta**; ROBERTS (valgo, supinação, extensão do punho e dedos, 24 h, cerca de 40%); parafuso único na coluna medial, **sem cortical lateral (radial)**.
 - **Pronação dolorosa:** **ligamento anular**, **pronação + extensão + tração**, **2 a 3 anos**, meninas, esquerdo; recidiva até 2 anos; **supinação com hiperflexão primeiro**, hiperpronação com o cotovelo estendido depois de 10 minutos (MACIAS: 98% contra 86%); sem radiografia na história típica até 5 anos; sem imobilização no primeiro episódio.

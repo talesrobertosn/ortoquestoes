@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-16-condilo-lateral
-versao: 4
+versao: 5
 titulo: Fraturas do côndilo lateral e do capítulo na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 17 · Lateral Condylar and Capitellar Fractures of the Distal Humerus
 autores: Benjamin W. Sheffer e Jeffrey R. Sawyer (10ª edição); Derek M. Kelly e Jeffrey R. Sawyer (9ª edição)
-fonte: Escrito com o capítulo 16 da 9ª edição (enviado pelo Tales em 19/10/2026) e conferido em 28/10/2026 com o capítulo 17 da 10ª edição, que mantém o texto, os dados e as preferências dos autores; as figuras citadas seguem a numeração da 10ª edição (capítulo 17). Consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 38, p. 1383.
+fonte: Escrito com o capítulo 16 da 9ª edição (enviado pelo Tales em 19/10/2026) e conferido em 28/10/2026 com o capítulo 17 da 10ª edição, que mantém quase todo o texto, os dados e as preferências dos autores (as diferenças estão apontadas na seção do assunto); as figuras citadas seguem a numeração da 10ª edição (capítulo 17). Consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 38, p. 1383.
 subtemas: Côndilo lateral, epicôndilo medial e rádio proximal na criança
 resumo: Extensores radiais e colaterais no fragmento, oblíqua interna, MILCH e SALTER-HARRIS IV, JAKOB, WEISS e SONG (2 mm), redução em extensão e supinação, dissecção posterior e necrose, esporão (75%), cúbito varo, pseudartrose com valgo e ulnar tardio, FLYNN (1 cm) e HAHN-STEINTHAL.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo foi escrito a partir do capítulo 16 do Rockwood and Wilkins' Fractures in Children (9ª edição), de Derek Kelly e Jeffrey Sawyer, na ordem em que as provas cobram o tema, e conferido com o capítulo 17 da 10ª edição (2025), de Benjamin W. Sheffer e Jeffrey R. Sawyer, que mantém o texto, os números e as condutas. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo.
+Este resumo foi escrito a partir do capítulo 16 do Rockwood and Wilkins' Fractures in Children (9ª edição), de Derek Kelly e Jeffrey Sawyer, na ordem em que as provas cobram o tema, e conferido com o capítulo 17 da 10ª edição (2025), de Benjamin W. Sheffer e Jeffrey R. Sawyer, que mantém quase todo o texto, os números e as condutas; onde a 10ª edição muda ou deixa de trazer um dado, o resumo avisa no próprio assunto. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo.
 
 A fratura do côndilo lateral é a fratura fisária e articular mais traiçoeira do cotovelo da criança: o cotovelo deforma pouco, a radiografia mostra só uma lasca de metáfise e a maior parte do fragmento é cartilagem invisível. A banca gira em torno de poucos blocos: **o que fica preso ao fragmento e por que ele desvia** (os extensores radiais do carpo), **a classificação pelo desvio** (JAKOB, SONG, o corte de 2 mm), **MILCH com SALTER-HARRIS**, **a via de acesso que poupa a irrigação posterior** e, sobretudo, **as complicações**: esporão lateral, cúbito varo, pseudartrose, cúbito valgo progressivo e paralisia tardia do nervo ulnar. A fratura do capítulo do adolescente fecha o capítulo e aparece na prova de adulto pelos epônimos HAHN-STEINTHAL e KOCHER-LORENZ e pela necrose.
 
@@ -205,7 +205,7 @@ A escolha depende do desvio e da estabilidade: imobilização, redução fechada
 | --- | --- |
 | Menos de 2 mm no AP, perfil e oblíqua interna, partes moles razoáveis | gesso axilopalmar, antebraço neutro, cotovelo a 80 a 90 graus; radiografias (com oblíqua interna) na 1ª semana e de novo em 1 a 2 semanas |
 | Mais de 2 mm com dúvida sobre a cartilagem | ressonância se pode ser estável; se a estabilidade é duvidosa ou a família não garante seguimento, exame sob anestesia com artrografia e estresse, em geral com fios percutâneos |
-| Estágio II (2 a 4 mm) | redução com fio "joystick" lateral e fixação percutânea; estresse em varo e artrografia se houver dúvida |
+| Estágio II (2 a 4 mm) | redução com fio "joystick" lateral e fixação percutânea; na 10ª edição, força suave em valgo usando a cartilagem articular íntegra como dobradiça para reduzir o desvio metafisário; estresse em varo e artrografia se houver dúvida, para testar a estabilidade |
 | Estágio III (desviado, rodado ou grosseiramente instável) | redução aberta e fixação em poucos dias, se as partes moles permitirem |
 !fim
 
@@ -215,7 +215,7 @@ Fraturas com menos de 2 mm são estáveis e mantidas pelas partes moles intactas
 
 ## Redução fechada e fixação percutânea
 
-Já foram descritas posições da hiperflexão à extensão completa, mas a redução fechada é obtida melhor com o **antebraço supinado e o cotovelo estendido**; um **estresse em varo** sobre o cotovelo estendido facilita a manipulação. Nos passos dos autores, acrescentam-se o **punho estendido** e a pressão do polegar; um fio liso pode servir de "joystick". Confirmada a estabilidade com dobradiça íntegra (estresse, artrografia ou outro exame), os fios podem ser passados com o cotovelo **em flexão**, como numa supracondiliana.
+Já foram descritas posições da hiperflexão à extensão completa, mas a redução fechada é obtida melhor com o **antebraço supinado e o cotovelo estendido**; um **estresse em varo** sobre o cotovelo estendido facilita a manipulação. Nos passos dos autores, acrescentam-se o **punho estendido** e a pressão do polegar; um fio liso pode servir de "joystick". Confirmada a estabilidade com dobradiça íntegra (estresse, artrografia ou outro exame), os fios podem ser passados com o cotovelo **em flexão**, como numa supracondiliana. Note que o varo e o valgo têm papéis diferentes: o **estresse em varo** com o cotovelo estendido serve para manipular o fragmento e, depois, como radiografia de estresse para testar se a fratura está estável; já no estágio II, com a cartilagem articular inteira, a preferência dos autores da 10ª edição (capítulo 17, Authors' Preferred Treatment) acrescenta uma **força suave em valgo**, que usa a própria dobradiça cartilaginosa como eixo para fechar o desvio da metáfise antes dos fios.
 
 Os passos-chave: estar sempre pronto para a redução aberta; anestesia geral com intubação e **relaxamento muscular**; artrografia ou radiografias em estresse para julgar a estabilidade; **2 ou 3 fios lisos divergentes**, ou parafuso canulado de **4,0 ou 4,5 mm**; fios cortados e dobrados **fora da pele**; gesso axilopalmar bivalvado; redução ruim ou fratura instável vai para a redução aberta.
 
@@ -251,7 +251,7 @@ armadilha: Pseudartrose: pode acompanhar a necrose da metáfise, mas a consequê
 
 ## Fios, parafusos e o momento da cirurgia
 
-**Fios lisos** são o método mais usado. Atravessar a fise com fio liso **não causa distúrbio de crescimento**: a área do fio é pequena perto da área da fise e só **20%** do crescimento do úmero vem da fise distal. O risco de parada de crescimento com o parafuso transfisário também é muito baixo, pelas mesmas razões. Fios **enterrados** têm mais migração, implante sintomático e protrusão pela pele (até 40%), com infecção tardia e custo maior; fios **expostos** têm infecção inicial semelhante ou um pouco maior (DAS DE, 235 crianças: infecção superficial de **9,8%** com fios expostos contra **3,1%** com enterrados, mas complicação total maior com os enterrados e economia média de 3.442 dólares com os expostos). O capítulo prefere deixá-los fora da pele, retirados no consultório.
+**Fios lisos** são o método mais usado. Atravessar a fise com fio liso **não causa distúrbio de crescimento**: a área do fio é pequena perto da área da fise e só **20%** do crescimento do úmero vem da fise distal. O risco de parada de crescimento com o parafuso transfisário também é muito baixo, pelas mesmas razões. Fios **enterrados** têm mais migração, implante sintomático e protrusão pela pele (até 40%), com infecção tardia e custo maior; fios **expostos** têm infecção inicial semelhante ou um pouco maior (DAS DE, 235 crianças, 17% com fios expostos e 83% com enterrados: a mesma taxa de consolidação, com mais infecção superficial nos expostos; os números de **9,8%** contra **3,1%** de infecção superficial, a complicação total maior com os enterrados e a economia média de 3.442 dólares com os expostos vêm do texto da 9ª edição, porque a 10ª edição deixa a série só nas referências comentadas do capítulo 17). O capítulo prefere deixá-los fora da pele, retirados no consultório.
 
 !questoes relacionadas=pediatria-0614 treino=pediatria-1002
 conceito: Fio liso atravessando a fise não causa distúrbio de crescimento (só 20% do crescimento do úmero vem da fise distal); fios enterrados têm menos infecção superficial, mas mais migração e protrusão (até 40%), e os autores deixam os fios fora da pele.

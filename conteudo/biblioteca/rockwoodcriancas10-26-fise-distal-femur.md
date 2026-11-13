@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-26-fise-distal-femur
-versao: 4
+versao: 5
 titulo: Fratura da fise distal do fêmur na criança
 especialidade: pediatria
 acesso: gratis
@@ -229,7 +229,7 @@ O gesso fica para a fratura **realmente sem desvio**, lembrando que ela pode ter
 | Adolescente no fim do crescimento, lesão grave | Placa que cruza a fise |
 !fim
 
-Pinos que cruzam a fise devem ser **lisos**; um estudo não ligou os pinos lisos transfisários à parada, que acompanhou a gravidade da fratura. Na face medial da coxa há uma "zona segura" para a artéria femoral superficial, e abaixo dos 3 anos evitam-se pinos retrógrados saindo pela face medial da coxa. A fratura consolida em cerca de **4 semanas**; os pinos saem **no máximo em 4 semanas**, porque mantê-los 30 dias ou mais aumentou a infecção do trajeto, com risco teórico de joelho séptico. Depois do gesso de 4 semanas, imobilizador ou órtese articulada, amplitude de movimento e carga; sem manipulação passiva forçada no início. A maioria anda sem muletas com cerca de 8 semanas.
+Pinos que cruzam a fise devem ser **lisos**; um estudo não ligou os pinos lisos transfisários à parada, que acompanhou a gravidade da fratura. Na face medial da coxa há uma "zona segura" para a artéria femoral superficial, e abaixo dos 3 anos evitam-se pinos retrógrados saindo pela face medial da coxa. A fratura consolida em cerca de **4 semanas**; os pinos saem **no máximo em 4 semanas**, porque mantê-los 30 dias ou mais aumentou a infecção do trajeto, com risco teórico de joelho séptico. O estudo citado pelo capítulo reuniu **163 pacientes** com pinagem percutânea retrógrada do fêmur distal e não teve nenhum caso de artrite séptica; o que subiu com 30 dias ou mais de pino foi a infecção do trajeto (seção Septic Knee). Por isso a regra de tirar os pinos em até 4 semanas. Depois do gesso de 4 semanas, imobilizador ou órtese articulada, amplitude de movimento e carga; sem manipulação passiva forçada no início. A maioria anda sem muletas com cerca de 8 semanas.
 
 !questoes treino=pediatria-1102
 conceito: Pinos que atravessam a fise são lisos e saem em até 4 semanas no fêmur distal.
@@ -239,7 +239,7 @@ armadilha: Pino rosqueado cruzando a fise, ou pinos mantidos por 8 semanas.
 
 ## Perda de redução e o limite de 10 dias
 
-Se uma fratura em gesso perde a redução, volta-se logo ao centro cirúrgico, reduz-se e fixa-se. Manipular ou remanipular é razoável **até 10 dias** do trauma; depois disso a fise já consolidou, e a manipulação fechada lesa a fise ou fratura a diáfise (num modelo em ratos, o risco foi semelhante até o equivalente a 7 dias, e mudou depois de 10). Passado o prazo: na criança com mais de 2 anos de crescimento e tipo I ou II, pode ser mais prudente observar a remodelação; na mais velha, redução aberta, às vezes com epifisiodese contralateral; nos tipos III e IV atrasados, redução aberta o quanto antes.
+Se uma fratura em gesso perde a redução, volta-se logo ao centro cirúrgico, reduz-se e fixa-se. Manipular ou remanipular é razoável **até 10 dias** do trauma; depois disso a fise já consolidou, e a manipulação fechada lesa a fise ou fratura a diáfise (num modelo em ratos, o risco foi semelhante até o equivalente a 7 dias, e mudou depois de 10). Não confunda com o rádio distal: no capítulo 9, a recomendação para a fratura fisária desviada do rádio distal é uma única redução atraumática **antes de 7 dias**, e a perda de redução depois de 7 dias pede cautela antes de remanipular, pelo risco de parada iatrogênica (seção Physeal Arrest of the Distal Radius). No fêmur distal, o número do capítulo 26 é **10 dias**. Passado o prazo: na criança com mais de 2 anos de crescimento e tipo I ou II, pode ser mais prudente observar a remodelação; na mais velha, redução aberta, às vezes com epifisiodese contralateral; nos tipos III e IV atrasados, redução aberta o quanto antes.
 
 !questoes treino=pediatria-1101
 conceito: Remanipular a fratura fisária do fêmur distal é razoável até 10 dias; depois, a manipulação fechada lesa mais do que ajuda.
