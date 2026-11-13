@@ -245,7 +245,7 @@ Classicamente eram quatro compartimentos (medial, lateral, central e interósseo
 - **Antebraço:** o capítulo conta **três compartimentos**, **volar, dorsal e coxim móvel**. Já se propôs dividir o volar em superficial, profundo e pronador quadrado, mas na fasciotomia isso não costuma ser necessário. O volar (flexores do punho e dos dedos, pronadores, nervos mediano e ulnar) dá dor à extensão passiva do punho e dos dedos; o dorsal (extensores dos dedos, extensor longo e abdutor longo do polegar, extensor ulnar do carpo), dor à flexão passiva; o coxim móvel (braquiorradial e extensores radiais do carpo), dor à flexão do punho e à extensão do cotovelo.
 - **Mão:** **10 compartimentos**: 1 tenar (abdutor curto, flexor curto e oponente do polegar), 1 hipotenar (abdutor, flexor e oponente do dedo mínimo), 1 adutor do polegar, 4 interósseos dorsais e 3 interósseos palmares. Os palmares provavelmente não são funcionalmente separados dos dorsais, porque a barreira entre eles não aguenta mais de 15 mmHg.
 
-!questoes central=mao-1346,trauma-0482 relacionadas=mao-0901
+!questoes central=mao-1346,trauma-0482 relacionadas=mao-0901,mao-1216
 conceito: A mão tem 10 compartimentos (tenar, hipotenar, adutor, 4 interósseos dorsais e 3 palmares); o tenar contém abdutor curto, flexor curto e oponente do polegar.
 como: A USP-SP 2025 perguntou quantos compartimentos da mão precisam ser avaliados (10); o ENARE R4 2023, o músculo do compartimento tenar, com o adutor do polegar como armadilha; a UFG 2017, o compartimento do antebraço acometido na fratura do rádio distal (volar).
 armadilha: Adutor do polegar: tem compartimento próprio, separado do tenar.
