@@ -159,7 +159,7 @@ Na radiografia, sugerem lesão da radioulnar distal:
 
 A luxação da radioulnar distal também pode aparecer, raramente, na fratura dos dois ossos e na fratura isolada da ulna. A ressonância mostra a fibrocartilagem triangular e a membrana; a tomografia, a radioulnar distal subluxada.
 
-!questoes central=trauma-0231 relacionadas=trauma-1110,trauma-1115 treino=trauma-1439,trauma-1440,trauma-1444
+!questoes central=trauma-0231 relacionadas=trauma-1110,trauma-1115,mao-1046 treino=trauma-1439,trauma-1440,trauma-1444
 conceito: Na fratura da diáfise do rádio, traço a até 7,5 cm da articulação, encurtamento maior que 5 mm e fratura da base do estiloide ulnar levantam a suspeita de lesão da radioulnar distal, que se confirma no exame intraoperatório.
 como: O TARO 2022 trocou os números (2 mm, 10 cm); o TARO 2020 e o TARO 2007 pediram o estiloide (base contra ponta) e o encurtamento. Nessas duas provas o acervo não registra o gabarito oficial; pelo capítulo, as respostas são a base do estiloide com traço a menos de 7,5 cm e o encurtamento maior que 5 mm.
 armadilha: Ponta do estiloide ulnar: o sinal citado é a fratura da base, onde se prende a fibrocartilagem triangular.
@@ -291,7 +291,7 @@ Na face anterior, o plano superficial tem pronador redondo, flexor radial do car
 | Coxim móvel (mobile wad) | Braquiorradial, extensor radial longo do carpo, extensor radial curto do carpo |
 !fim
 
-!questoes treino=trauma-1449
+!questoes relacionadas=mao-0882 treino=trauma-1449
 conceito: O coxim móvel do antebraço é formado por braquiorradial e extensores radiais longo e curto do carpo.
 !fim
 

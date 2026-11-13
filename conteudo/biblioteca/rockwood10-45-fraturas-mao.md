@@ -144,7 +144,7 @@ Os metacarpos formam um **arco romano**: indicador e mínimo nas bordas, o **mé
 | Mínimo | até 45° | até 50° |
 !fim
 
-!questoes central=mao-1541,mao-0913 treino=mao-1799
+!questoes central=mao-1541,mao-0913 treino=mao-1799,mao-2332,mao-2442
 conceito: O indicador e o médio toleram pouca angulação (10° na diáfise), o anular cerca de 25° e o mínimo até 45° na diáfise e 50° no colo; rotação acima de 10° ou cruzamento de dedos nunca é aceita.
 como: A USP 2026 pediu o limite do segundo e do terceiro metacarpos; a UFG 2019 misturou os limites com a regra do parafuso interfragmentário e pôs um limite falso (menos de 20°) para o colo do quinto.
 armadilha: "Encurtamentos de até 1,5 cm são bem tolerados": o capítulo aceita 5 a 6 mm.
@@ -155,7 +155,7 @@ armadilha: "Desvio angular é o fator mais importante": o que menos se tolera é
 
 Quando o metacarpo consolida com **ápice dorsal**, a cabeça afunda para volar, e o dedo, ao tentar estender, **hiperestende a MCF e flete a IFP**. É a **pseudogarra**: parece a garra neurológica, mas nasce do osso (também acontece na falange proximal angulada). O capítulo a trata como **uma indicação de cirurgia**, proporcional à angulação.
 
-!questoes central=trauma-0273,mao-1312 treino=mao-1935
+!questoes central=trauma-0273,mao-1312 treino=mao-1935,mao-2412
 conceito: A pseudogarra é a hiperextensão compensatória da MCF com flexão da IFP causada por angulação de ápice dorsal do metacarpo (cabeça desviada para volar) e indica tratamento cirúrgico.
 como: A prova de Ortopedia pediu a deformidade completa; a USP 2025 pôs a pseudogarra como indicação cirúrgica no colo do quinto, entre afirmações erradas sobre limite de angulação e direção do parafuso.
 armadilha: "Angulação maior que 45° no colo do quinto sugere cirurgia": o capítulo tolera até 50° no colo do mínimo.
@@ -260,7 +260,7 @@ armadilha: Aponeurose do abdutor: fica no lado radial e não forma Stener.
 armadilha: "Entre o LCU e a cabeça do metacarpo": a ruptura típica é distal, na base da falange proximal.
 !fim
 
-!questoes central=mao-0328,mao-1463,mao-0912
+!questoes central=mao-0328,mao-1463,mao-0912 treino=mao-2338,mao-2480
 conceito: O LCU rompe com mais frequência na inserção distal, na falange proximal; só a ruptura completa forma Stener, e a completa tem indicação de cirurgia mesmo sem interposição comprovada.
 como: SBOT-SP e USP 2024 perguntaram o local da avulsão; a UFG 2019 perguntou a indicação cirúrgica da ruptura completa.
 armadilha: "Avulsão proximal, do metacarpo, é a mais comum": a mais comum é a distal.
