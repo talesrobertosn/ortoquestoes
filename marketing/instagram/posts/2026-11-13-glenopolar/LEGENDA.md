@@ -3,9 +3,10 @@
 Refeito a pedido do Tales: é propaganda do comentário, não aula. Mostra o que está escrito e como está escrito,
 no maior volume possível; o enunciado aparece uma vez; nenhuma etiqueta. Modelo padrão (verde).
 
-- Story 1 e feed 1: a questão no notebook.
-- Story 2, feeds 2 e 3: o comentário real em dois iPhones (como desenhar, os números livro a livro, a figura do livro).
-- Story 3 e feed 4: print de notebook com "Por que as outras não servem" e "Treine grátis".
+- Story 1 e feed 1: a questão no notebook (o enunciado aparece uma vez).
+- Story 2 e feed 3: as alternativas no celular (por que a certa está certa e por que as outras não servem).
+- Feed 2: o texto denso no notebook (o que o ângulo mede, como desenhar, o que acontece quando fecha).
+- Story 3 e feed 4: o notebook com o texto mais denso e a tabela livro a livro (Rockwood, Campbell, Skeletal Trauma), e "Treine grátis".
 
 Gere com `node marketing/instagram/estilos/modelo-padrao/gerar.mjs marketing/instagram/posts/2026-11-13-glenopolar/post.html`
 (telas reais: `node marketing/instagram/posts/2026-11-13-glenopolar/capturar.mjs`). Stories sem figurinha.

@@ -108,6 +108,7 @@ for (const [nome, texto, aj] of [
   ['mac-numeros', 'Os números, livro a livro', -84],
   ['mac-certa', 'Por que a D está certa', -84],
   ['mac-outras', 'Por que as outras não servem', -84],
+  ['mac-fecha', 'O que acontece quando ele fecha', -84],
 ]) { await rolar(m, texto, aj); await m.waitForTimeout(800); await m.screenshot({ path: PASTA + `${nome}.png` }) }
 await m.screenshot({ path: PASTA + 'mac-inteira.png', fullPage: true })
 await responder(c)
@@ -121,5 +122,16 @@ for (const [nome, texto, aj] of [
   ['cel-outras', 'Por que as outras não servem', -80],
 ]) { await rolar(c, texto, aj); await c.waitForTimeout(800); await c.screenshot({ path: PASTA + `${nome}.png` }) }
 await c.screenshot({ path: PASTA + 'cel-inteira.png', fullPage: true })
+// Notebook maior (1280 x 800, 2x): mais texto por tela.
+const g = await contexto({ viewport: { width: 1280, height: 800 }, deviceScaleFactor: 2 })
+await g.goto(`${BASE}#/questao/trauma-0263`)
+await g.waitForSelector(`text=${ENUNCIADO}`, { timeout: 30_000 })
+await g.addStyleTag({ content: ESCONDER }); await g.waitForTimeout(1000)
+await g.waitForSelector('text=O que o ângulo mede', { timeout: 30_000 }).catch(async () => { await responder(g) })
+await g.addStyleTag({ content: ESCONDER }); await g.waitForTimeout(800)
+for (const [nome, texto, aj] of [
+  ['mac-g-fecha', 'O que acontece quando ele fecha', -84],
+  ['mac-g-mede', 'O que o ângulo mede', -84],
+]) { await rolar(g, texto, aj); await g.waitForTimeout(800); await g.screenshot({ path: PASTA + `${nome}.png` }) }
 await navegador.close()
 await site.close()
