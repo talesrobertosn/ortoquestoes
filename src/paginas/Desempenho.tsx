@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { AtalhoFlashcards } from '../componentes/AtalhoFlashcards'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { DetalhesDiaSemana, DetalhesNumeros, DetalhesProvas, usarDetalhes } from '../componentes/DesempenhoDetalhado'
@@ -27,7 +27,7 @@ import {
   calendario, compararTurma, contarRetencao, errosComCerteza, errosPendentes, eventosDe, indicarResumos, linhasAssuntos, notaEstimada,
   type CapituloResumo, type ComparacaoTurma, type EstadoRetencao, type ResumoIndicado,
 } from '../dados/desempenho'
-import { NotaEstimadaCartao } from '../componentes/desempenho/NotaEstimada'
+import { NotaEstimadaCartao, SobeNota } from '../componentes/desempenho/NotaEstimada'
 import { Evolucao } from '../componentes/desempenho/Evolucao'
 import { Assuntos } from '../componentes/desempenho/Assuntos'
 import { ErrosComCerteza, ResumosIndicados, Retencao } from '../componentes/desempenho/Retencao'
@@ -35,7 +35,6 @@ import { Calendario } from '../componentes/desempenho/Calendario'
 import { ResultadoCronograma } from '../componentes/desempenho/ResultadoCronograma'
 import { gerarExemplo, NOME_EXEMPLO } from '../dados/exemploDesempenho'
 import '../estilos/paginas/Desempenho.css'
-import '../estilos/paginas/DesempenhoAbas.css'
 
 /*
  * Seu desempenho (rota /dados). Refeita em 18/10/2026 na identidade do Treinar e, em 31/10/2026, no observatório da
@@ -96,11 +95,6 @@ function inicioDoPeriodo(p: PeriodoDesempenho): number {
   }
   return inicioDaChave(somarDias(hojeBR(), -(Number(p.tipo) - 1)))
 }
-function descreverPeriodo(p: PeriodoDesempenho): string {
-  if (p.tipo === 'tudo') return 'desde o começo'
-  if (p.tipo === 'desde') return p.desde ? `desde ${new Date(`${p.desde}T00:00:00`).toLocaleDateString('pt-BR')}` : 'escolha a data'
-  return `nos últimos ${p.tipo} dias`
-}
 
 const n = (v: number) => v.toLocaleString('pt-BR')
 /** Números pequenos por extenso, como nas cartas (docs/emails/TOM.md). */
@@ -112,8 +106,6 @@ function primeiroNome(nome?: unknown): string {
   if (!primeiro || /[@\d_]/.test(primeiro) || primeiro.length < 2 || primeiro.length > 20) return ''
   return primeiro.charAt(0).toLocaleUpperCase('pt-BR') + primeiro.slice(1).toLocaleLowerCase('pt-BR')
 }
-type Aba = 'geral' | 'assuntos' | 'erros' | 'calendario'
-const ABAS: Array<[Aba, string, Parameters<typeof Icone>[0]['nome']]> = [['geral', 'Visão geral', 'grafico'], ['assuntos', 'Assuntos', 'mapa'], ['erros', 'Erros e retenção', 'alvo'], ['calendario', 'Calendário', 'calendario']]
 
 export function DadosLocais() {
   const { favoritos } = usarFavoritos()
@@ -139,7 +131,8 @@ export function DadosLocais() {
 
   // Período escolhido: fica salvo e vale sempre que a pessoa volta. Em vez de
   // apagar o histórico, ela acompanha só a fase atual do estudo.
-  const [periodo, definirPeriodo] = usarArmazenado<PeriodoDesempenho>('desempenho:periodo', { tipo: 'tudo' })
+  // Sempre abre no período total (Tales, 14/11/2026); a escolha vale só enquanto a página está aberta.
+  const [periodo, definirPeriodo] = useState<PeriodoDesempenho>({ tipo: 'tudo' })
   const inicioPeriodo = inicioDoPeriodo(periodo)
   const limite = Math.max(inicioPeriodo, reinicioEm || 0)
   const detalhes = usarDetalhes({ indice, marcadas, limite, meta: conta?.user.user_metadata })
@@ -204,29 +197,11 @@ export function DadosLocais() {
   // nenhuma porcentagem abaixo de 50% e nenhum número de questões abaixo de 10.
   const pctGeral = percentualGeral === null ? null : Math.round(percentualGeral * 100)
   const streakAtual = detalhes.d.streak.atual
-  const mensagemDesempenho = (() => {
-    const quem = 'Você'
-    if (respondidas < 10) return `${quem} está nos primeiros passos. Cada resposta entra aqui e vai mostrando o que vale estudar a seguir.`
-    // O nome já está no título logo acima; repetir aqui soaria como formulário.
-    const abertura = `São ${n(respondidas)} questões feitas até aqui`
-    const tom = pctGeral === null || totalContadas < 30
-      ? ', e o retrato fica mais nítido a cada sessão.'
-      : pctGeral >= 80 ? `, com ${pctGeral}% de acerto: de quem já domina boa parte da prova.`
-        : pctGeral >= 60 ? `, com ${pctGeral}% de acerto. Mais algumas revisões e essa porcentagem sobe.`
-          : pctGeral >= 50 ? `, com ${pctGeral}% de acerto: a fase em que mais dá para crescer.`
-            : '. Cada uma já ensinou alguma coisa, e todo mundo que passou começou assim.'
-    const frases = [abertura + tom]
-    const forte = avaliados.length >= 2 && temaForte && temaForte.certas / temaForte.total >= 0.5 ? temaForte : null
-    if (forte) frases.push(`Seu terreno mais firme é ${forte.nome}.`)
-    if (streakAtual >= 2) frases.push(`E já são ${numero(streakAtual)} dias seguidos de estudo, o que é de quem senta e faz.`)
-    return frases.join(' ')
-  })()
 
   const pct = percentualGeral === null ? null : Math.round(percentualGeral * 100)
   const streak = detalhes.d.streak
   const temConfianca = porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0
   // ---------- Abas (14/11/2026): evolução, assuntos, retenção, calendário, nota estimada, turma e resumos ----------
-  const [aba, definirAba] = usarArmazenado<Aba>('desempenho:aba', 'geral')
   const { premium } = usarPremium()
   const { iniciarComAviso } = usarSessao()
   const ev = useMemo(() => eventosDe(marcadas, indice, limite), [marcadas, indice, limite])
@@ -266,7 +241,8 @@ export function DadosLocais() {
     }
     return m
   }, [capitulos, pendentes, indice])
-  const diasCalendario = useMemo(() => calendario(eventosDe(marcadas, indice, reinicioEm || 0)), [marcadas, indice, reinicioEm])
+  const eventosCalendario = useMemo(() => eventosDe(marcadas, indice, reinicioEm || 0), [marcadas, indice, reinicioEm])
+  const diasCalendario = useMemo(() => calendario(eventosCalendario), [eventosCalendario])
   async function revisarIds(ids: string[]) {
     if (!ids.length) return
     // No exemplo, os botões levam a criar a conta (as questões da Marina não são de ninguém).
@@ -278,234 +254,255 @@ export function DadosLocais() {
   const revisarEstado = (estado: EstadoRetencao) => void revisarIds(retencao.ids[estado])
 
   const mostrarSync = conta && (statusSync.estado === 'erro' || statusSync.estado === 'offline' || statusSync.estado === 'conflito' || statusSync.pendentes > 0 || statusSync.rejeitados.length > 0)
+  const forte = avaliados.length >= 2 && temaForte && temaForte.certas / temaForte.total >= 0.5 ? temaForte : null
+  const secoes = SECOES.filter(([id]) => id !== 'dados' || !exemplo)
 
   return (
-    <article className="ds">
-      {/* ---------- O observatório: título e mensagem sobre a pintura, o placar na bancada logo abaixo ---------- */}
-      <section className={`ds-obs ds-obs--${periodoArte}`} aria-labelledby="ds-titulo">
-        <div className="ds-obs__cena">
-          <CenaObservatorio periodo={periodoArte} />
-          <div className="ds-obs__cabeca">
-            <p className="ds-obs__selo"><Icone nome="grafico" tamanho={13} /> Observatório da vila</p>
-            <h1 id="ds-titulo">{exemplo ? `${NOME_EXEMPLO}, residente de exemplo` : nome ? `${nome}, seu desempenho` : 'Seu desempenho'}</h1>
-            {exemplo && <p className="ds-obs__exemplo">Exemplo com números fictícios</p>}
-          </div>
-          <div className="ds-obs__texto">
-            {exemplo ? <>
-              <p>A {NOME_EXEMPLO} é fictícia: cinco meses de estudo no Orto Questões, uma sessão quase todo dia. O seu desempenho fica assim, com as suas respostas, do celular ou do computador.</p>
-              {conta ? <a className="ds-obs__criar" href={href('/dados')}>Voltar ao meu desempenho <Icone nome="direita" tamanho={16} /></a>
-                : <a className="ds-obs__criar" href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis e ver o meu <Icone nome="direita" tamanho={16} /></a>}
-            </> : <p>{mensagemDesempenho}</p>}
-            {/* No topo só quando há algo a fazer (erro, offline, itens parados): "Sincronizando…"
-                piscando no herói a cada 5 segundos competia com o desempenho. */}
-            {mostrarSync && !exemplo && (
-              <p className="ds-obs__sync" role="status">
-                <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
-                {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.estado === 'salvo' ? 'Progresso sincronizado' : statusSync.pendentes ? `${statusSync.pendentes} ${statusSync.pendentes === 1 ? 'alteração aguardando' : 'alterações aguardando'} envio` : 'Progresso salvo neste dispositivo'}
-                {statusSync.estado !== 'sincronizando' && <button type="button" className="botao--vinculo" onClick={sincronizar}>sincronizar agora</button>}
-                {statusSync.estado === 'erro' && statusSync.detalhe && <small className="status-sincronia__detalhe">Motivo: {statusSync.detalhe}</small>}
-                {statusSync.rejeitados.length > 0 && <a className="status-sincronia__detalhe ds-obs__rejeitados" href={href('/conta')}>{statusSync.rejeitados.length} {statusSync.rejeitados.length === 1 ? 'item não enviado' : 'itens não enviados'} · ver em Minha conta</a>}
-              </p>
-            )}
-          </div>
-        </div>
+    <article className={'dpg' + (exemplo ? ' dpg--exemplo' : '')}>
+      <NavegacaoSecoes secoes={secoes} periodo={periodo} definirPeriodo={definirPeriodo} alertaErros={certeza.length} />
 
-        <div className="ds-obs__bancada">
-          <dl className="ds-placar">
-            <div className="ds-placar__item ds-placar__item--acerto">
-              <dt>{periodo.tipo === 'tudo' ? 'Acerto geral' : 'Acerto no período'}</dt>
-              <dd>
-                <span className="ds-placar__valor">{pct === null ? <span className="ds-placar__vazio">–</span> : <>{pct}<small>%</small></>}</span>
-                {pct !== null && <Medidor valor={pct} rotulo={`${pct}% de acerto ${periodo.tipo === 'tudo' ? 'no total' : 'no período'}`} />}
-                <span className="ds-placar__apoio ds-num">{totalContadas ? `${n(totalCertas)} certas em ${n(totalContadas)} ${totalContadas === 1 ? 'resposta' : 'respostas'}` : 'Sem respostas ainda. O acerto conta cada resposta de questão com gabarito.'}</span>
-              </dd>
+      <div className="dp-conteudo">
+        {/* ---------- Topo: a cena, quem é, a mensagem, a nota estimada e os números, numa peça só ---------- */}
+        <section className="dp-topo" id="dp-topo" aria-labelledby="dp-titulo">
+          <div className={`dp-topo__cena dp-topo__cena--${periodoArte}`}>
+            <CenaObservatorio periodo={periodoArte} />
+            <div className="dp-topo__titulo">
+              <p className="dp-rotulo dp-rotulo--claro"><Icone nome="grafico" tamanho={14} /> {exemplo ? 'Desempenho de exemplo' : 'Seu desempenho'}</p>
+              <h1 id="dp-titulo">{exemplo ? `${NOME_EXEMPLO}, residente de exemplo` : nome ? `${nome}, seu desempenho` : 'Seu desempenho'}</h1>
+              {exemplo && <p className="dp-selo-exemplo">Exemplo com números fictícios</p>}
             </div>
-            <div className="ds-placar__item">
-              <dt>{periodo.tipo === 'tudo' ? 'Questões respondidas' : 'Questões no período'}</dt>
-              <dd>
-                <span className="ds-placar__valor">{n(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo)}{minhaConquista && !exemplo && <span className="ds-placar__medalha"><Medalha conquista={minhaConquista} tamanho={24} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</span>
-                <span className="ds-placar__apoio">questões diferentes; revisar soma respostas, não questões</span>
-              </dd>
-            </div>
-            <div className="ds-placar__item">
-              <dt>Sequência</dt>
-              <dd>
-                <span className="ds-placar__valor">{streak.atual}<small>{streak.atual === 1 ? ' dia' : ' dias'}</small></span>
-                <span className="ds-placar__apoio">recorde de {streak.recorde} {streak.recorde === 1 ? 'dia' : 'dias'}{periodo.tipo !== 'tudo' ? ' · conta sempre o total' : ''}</span>
-              </dd>
-            </div>
-          </dl>
-          <div className="ds-obs__apoio">
-            <dl className="ds-obs__extras">
-              <div><dt>{periodo.tipo === 'tudo' ? 'Sessões' : 'Sessões no período'}</dt><dd className="ds-num">{n(periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo)}</dd></div>
-              <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd className="ds-num"><a href={href('/erros')} aria-label={`${errosTotais} erros: abrir o caderno de erros`}>{n(errosTotais)}</a></dd></div>
-              <div><dt>Favoritas</dt><dd className="ds-num"><a href={href('/favoritas')} aria-label={`${exemplo ? 31 : favoritos.length} favoritas: abrir`}>{exemplo ? 31 : n(favoritos.length)}</a></dd></div>
-            </dl>
-            {proximaConquistaAlvo && !exemplo && <a className="ds-obs__conquista" href={href('/ranking')}><Icone nome="medalha" tamanho={15} /> Faltam {numero(proximaConquistaAlvo.minimo - respondidas)} {proximaConquistaAlvo.minimo - respondidas === 1 ? 'questão' : 'questões'} para {proximaConquistaAlvo.rotulo}</a>}
           </div>
-        </div>
-      </section>
 
-      {/* Nota estimada em destaque (Tales, 14/11/2026), logo abaixo do placar. */}
-      <NotaEstimadaCartao nota={nota} base={primeirasN} turma={turma} resumos={resumoPorTema} exemplo={exemplo} />
-
-      {/* Filtro único, acima de tudo o que ele recorta. */}
-      <section className="ds-periodo" aria-label="Período do desempenho">
-        <div className="ds-periodo__texto">
-          <strong><Icone nome="calendario" tamanho={16} /> Período</strong>
-          <span>Mostrando {descreverPeriodo(periodo)}. Sequência, favoritas, Ranking e emblemas contam sempre o total.</span>
-        </div>
-        <div className="ds-periodo__controles">
-          <div className="ds-seg seletor" role="group" aria-label="Escolher período">
-            {PERIODOS.map((opcao) => (
-              <button key={opcao.tipo} type="button" aria-pressed={periodo.tipo === opcao.tipo}
-                onClick={() => definirPeriodo(opcao.tipo === 'desde' ? { tipo: 'desde', desde: periodo.desde ?? somarDias(hojeBR(), -29) } : { tipo: opcao.tipo, desde: periodo.desde })}>
-                {opcao.rotulo}
-              </button>
-            ))}
+          <div className="dp-topo__painel">
+            <div className="dp-topo__mensagem">
+              {exemplo
+                ? <p className="dp-mensagem">A <b>{NOME_EXEMPLO}</b> é fictícia: <b>seis meses</b> de estudo no Orto Questões, uma sessão quase todo dia. O seu desempenho fica assim, com as suas respostas.</p>
+                : <Mensagem respondidas={respondidas} pct={pctGeral} contadas={totalContadas} forte={forte?.nome ?? null} sequencia={streakAtual} />}
+              {exemplo && <a className="dp-botao dp-botao--principal" href={href(conta ? '/dados' : '/conta?modo=criar&voltar=%2Fdados')}>{conta ? 'Voltar ao meu desempenho' : 'Criar conta grátis e ver o meu'} <Icone nome="direita" tamanho={16} /></a>}
+              {mostrarSync && !exemplo && (
+                <p className="dp-sync" role="status">
+                  <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
+                  {statusSync.estado === 'sincronizando' ? 'Sincronizando…' : statusSync.pendentes ? `${statusSync.pendentes} ${statusSync.pendentes === 1 ? 'alteração aguardando' : 'alterações aguardando'} envio` : 'Progresso salvo neste dispositivo'}
+                  {statusSync.estado !== 'sincronizando' && <button type="button" className="botao--vinculo" onClick={sincronizar}>sincronizar agora</button>}
+                  {statusSync.estado === 'erro' && statusSync.detalhe && <small className="status-sincronia__detalhe">Motivo: {statusSync.detalhe}</small>}
+                  {statusSync.rejeitados.length > 0 && <a className="status-sincronia__detalhe" href={href('/conta')}>{statusSync.rejeitados.length} {statusSync.rejeitados.length === 1 ? 'item não enviado' : 'itens não enviados'} · ver em Minha conta</a>}
+                </p>
+              )}
+              <dl className="dp-numeros">
+                <div className="dp-numero dp-numero--acerto">
+                  <dt>{periodo.tipo === 'tudo' ? 'Acerto geral' : 'Acerto no período'}</dt>
+                  <dd><b>{pct === null ? '–' : `${pct}%`}</b>{pct !== null && <Medidor valor={pct} rotulo={`${pct}% de acerto`} />}<small>{totalContadas ? `${n(totalCertas)} certas em ${n(totalContadas)} respostas` : 'Sem respostas ainda'}</small></dd>
+                </div>
+                <div className="dp-numero">
+                  <dt>{periodo.tipo === 'tudo' ? 'Questões feitas' : 'Questões no período'}</dt>
+                  <dd><b>{n(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo)}{minhaConquista && <span className="dp-numero__medalha"><Medalha conquista={minhaConquista} tamanho={22} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</b><small>questões diferentes</small></dd>
+                </div>
+                <div className="dp-numero">
+                  <dt>Sequência</dt>
+                  <dd><b>{streak.atual}<i> {streak.atual === 1 ? 'dia' : 'dias'}</i></b><small>recorde de {streak.recorde} {streak.recorde === 1 ? 'dia' : 'dias'}</small></dd>
+                </div>
+              </dl>
+              <ul className="dp-atalhos">
+                <li><span>Sessões</span><b>{n(periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo)}</b></li>
+                <li><a href={href('/erros')}><span>Erros guardados</span><b>{n(errosTotais)}</b></a></li>
+                <li><a href={href('/favoritas')}><span>Favoritas</span><b>{exemplo ? 31 : n(favoritos.length)}</b></a></li>
+                {proximaConquistaAlvo && !exemplo && <li><a href={href('/ranking')}><Icone nome="medalha" tamanho={14} /><span>Faltam {numero(proximaConquistaAlvo.minimo - respondidas)} para {proximaConquistaAlvo.rotulo}</span></a></li>}
+              </ul>
+            </div>
+            <NotaEstimadaCartao nota={nota} base={primeirasN} turma={turma} resumos={resumoPorTema} exemplo={exemplo} />
           </div>
-          {periodo.tipo === 'desde' && (
-            <label className="ds-periodo__data">
-              <span className="so-leitor">Data inicial</span>
-              <input className="entrada" type="date" value={periodo.desde ?? ''} max={hojeBR()} onChange={(e) => definirPeriodo({ tipo: 'desde', desde: e.target.value && e.target.value > hojeBR() ? hojeBR() : e.target.value })} />
-            </label>
-          )}
-        </div>
-      </section>
+          {nota && <SobeNota nota={nota} resumos={resumoPorTema} />}
+        </section>
 
-      {!conta && !exemplo && <p className="aviso-ia">Crie uma conta gratuita ({fraseGratis('curto')}) para salvar seu desempenho, revisões e histórico e acompanhar sua evolução em qualquer dispositivo. <a href={href('/conta')}>Criar minha conta</a></p>}
-      {conta && !armazenamentoDisponivel() && (
-        <div className="estado">
-          <p className="estado__titulo">Este navegador está com o armazenamento bloqueado.</p>
-          <p>O site funciona normalmente, mas o progresso vale só até você fechar a aba. Aba anônima e bloqueio de cookies costumam ser a causa.</p>
-        </div>
-      )}
+        {exemplo && <p className="dp-faixa-exemplo" role="note"><Icone nome="olho" tamanho={16} /> <span><b>Exemplo com dados fictícios.</b> Tudo nesta página é da {NOME_EXEMPLO}; os botões levam {conta ? 'ao seu treino' : 'a criar a sua conta'}.</span>
+          <a className="dp-botao dp-botao--pequeno" href={href(conta ? '/dados' : '/conta?modo=criar&voltar=%2Fdados')}>{conta ? 'Ver o meu' : 'Criar conta grátis'}</a></p>}
+        {!conta && !exemplo && <p className="dp-faixa-exemplo">Crie uma conta gratuita ({fraseGratis('curto')}) para salvar seu desempenho em qualquer aparelho. <a className="dp-botao dp-botao--pequeno" href={href('/conta')}>Criar minha conta</a></p>}
+        {conta && !armazenamentoDisponivel() && <p className="dp-faixa-exemplo"><b>Este navegador está com o armazenamento bloqueado.</b> O progresso vale só até fechar a aba (aba anônima e bloqueio de cookies costumam ser a causa).</p>}
 
-      {exemplo && <p className="da-exemplo" role="note"><Icone nome="olho" tamanho={16} /> <span><b>Exemplo com dados fictícios.</b> Tudo o que está abaixo é da {NOME_EXEMPLO}; os botões levam {conta ? 'ao seu treino' : 'a criar a sua conta'}.</span>
-        {conta ? <a href={href('/dados')}>Ver o meu</a> : <a href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis</a>}</p>}
+        <Secao id="cronograma" rotulo="Cronograma" icone="calendario" titulo="Seu estudo está dando resultado?" texto="O que foi planejado e o que você fez, a constância e se o acerto subiu desde o começo do plano.">
+          <ResultadoCronograma indice={indice} respondidas={marcadas} eventos={ev} planoExemplo={dadosExemplo?.plano} />
+        </Secao>
 
-      {/* ---------- Abas (14/11/2026): cada uma responde uma pergunta ---------- */}
-      <nav className="da-abas" aria-label="Partes do desempenho">
-        <div className="da-abas__trilho" role="tablist">
-          {ABAS.map(([id, rotulo, icone]) => <button key={id} type="button" role="tab" id={`da-aba-${id}`} aria-selected={aba === id} aria-controls={`da-painel-${id}`}
-            className="da-aba" onClick={() => definirAba(id)}>
-            <Icone nome={icone} tamanho={17} /> <span>{rotulo}</span>
-            {id === 'erros' && certeza.length > 0 && <b className="da-aba__alerta" aria-label={`${certeza.length} erros com certeza`}>{certeza.length > 99 ? '99+' : certeza.length}</b>}
-          </button>)}
-        </div>
-      </nav>
+        <Secao id="evolucao" rotulo="Evolução" icone="grafico" titulo="Estou melhorando?" texto="Acerto de primeira vez (o que mais se parece com a prova) e o das revisões, semana a semana.">
+          <DetalhesNumeros detalhes={detalhes} />
+          <Evolucao eventos={ev} />
+        </Secao>
 
-      {aba === 'geral' && <div className="da-painel" role="tabpanel" id="da-painel-geral" aria-labelledby="da-aba-geral">
-        <DetalhesNumeros detalhes={detalhes} />
-        <Evolucao eventos={ev} />
-        <ResultadoCronograma indice={indice} respondidas={marcadas} eventos={ev} planoExemplo={dadosExemplo?.plano} />
-        {temConfianca && <ErrosComCerteza ids={certeza} porConfianca={porConfianca} onRevisar={() => void revisarIds(certeza)} />}
-      {/* ---------- O que fazer agora ---------- */}
-        <section className="ds-capitulo" aria-labelledby="ds-cap-agora">
-        <header className="ds-capitulo__cabeca">
-          <p className="ds-capitulo__selo"><b aria-hidden="true">3</b> O que fazer agora</p>
-          <h2 id="ds-cap-agora">{nome ? `${nome}, sua próxima sessão` : 'Sua próxima sessão'}</h2>
-        </header>
-        <div className="ds-agora folha">
-          <ol className="ds-passos">
-            {temaFragil && temDestaques && <li className="ds-passo">
-              <span className="ds-moeda" aria-hidden="true">1</span>
-              <div>
-                <strong>Refazer os erros de {temaFragil.nome}</strong>
-                <span>É onde mais dá para crescer agora. Que tal dez questões, com calma?</span>
-              </div>
-              <a className="ds-passo__acao" href={href(`/treinar?temas=${temaFragil.slug}&situacao=erradas&limite=10`)}>Treinar 10 <Icone nome="direita" tamanho={16} /></a>
-            </li>}
-            {incertas > 0 && <li className="ds-passo">
-              <span className="ds-moeda" aria-hidden="true">{temaFragil && temDestaques ? 2 : 1}</span>
-              <div>
-                <strong>Refazer {numero(incertas)} {incertas === 1 ? 'questão com dúvida ou chute' : 'questões com dúvida ou chute'}</strong>
-                <span>Uma passada rápida transforma o que ficou incerto em certeza.</span>
-              </div>
-              <a className="ds-passo__acao" href={href('/treinar?situacao=incertas&limite=20')}>Treinar 20 <Icone nome="direita" tamanho={16} /></a>
-            </li>}
-            {resumosIndicados[0] && <li className="ds-passo ds-passo--resumo">
-              <span className="ds-moeda" aria-hidden="true"><Icone nome="livro" tamanho={14} /></span>
-              <div>
-                <strong>Ler {resumosIndicados[0].capitulo.titulo}</strong>
-                <span>O resumo que mais cobre os seus erros: {resumosIndicados[0].cobre} {resumosIndicados[0].cobre === 1 ? 'questão' : 'questões'}, em {resumosIndicados[0].capitulo.minutos} minutos.</span>
-              </div>
-              <a className="ds-passo__acao" href={href(`/resumos/${resumosIndicados[0].capitulo.id}`)}>Ler <Icone nome="direita" tamanho={16} /></a>
-            </li>}
-            {(exemplo || errosTotais > 0) && <li className="ds-passo">
-              <span className="ds-moeda" aria-hidden="true">{(temaFragil && temDestaques ? 1 : 0) + (incertas > 0 ? 1 : 0) + 1}</span>
-              <div>
-                <strong>Abrir o caderno de erros</strong>
-                <span className="ds-num">{numero(errosTotais)} {errosTotais === 1 ? 'erro' : 'erros'} {periodo.tipo === 'tudo' ? 'guardados' : 'no período'}, cada um com o comentário que explica.</span>
-              </div>
-              <a className="ds-passo__acao" href={href('/erros')}>Abrir <Icone nome="direita" tamanho={16} /></a>
-            </li>}
-            {!exemplo && !errosTotais && !incertas && !(temaFragil && temDestaques) && <li className="ds-passo">
-              <span className="ds-moeda" aria-hidden="true">1</span>
-              <div>
-                <strong>{totalContadas ? 'Seguir com uma sessão nova' : 'Fazer a primeira sessão'}</strong>
-                <span>{totalContadas ? 'Sem erros nem dúvidas guardados neste período. Dez questões novas mantêm o ritmo.' : 'Dez questões bastam para o observatório começar a mostrar seus temas.'}</span>
-              </div>
-              <a className="ds-passo__acao" href={href('/treinar?limite=10')}>Treinar 10 <Icone nome="direita" tamanho={16} /></a>
-            </li>}
-          </ol>
-          <a className="botao botao--principal ds-agora__treinar" href={href('/treinar')}>
-            <Icone nome="filtro" tamanho={22} />
-            <span><strong>Montar uma sessão</strong><small>Escolha prova, tema e quantidade no Treinar</small></span>
-          </a>
-        </div>
-        {!exemplo && <AtalhoFlashcards tipo="desempenho" />}
-        {exemplo && <ConviteExemplo conta={!!conta} />}
-      </section>
-      </div>}
+        <Secao id="assuntos" rotulo="Assuntos" icone="mapa" titulo="Onde estudar?" texto="Cada tema e cada assunto, com quanto ele cai na prova. Comece pelos de prioridade.">
+          <Assuntos temas={linhas.temas} assuntos={linhas.assuntos} turma={turma} resumos={resumoPorTema} />
+          {!premium && !exemplo && <p className="dp-nota-rodape"><Icone nome="grupo" tamanho={16} /> Assinantes veem também a coluna <b>Turma</b>: o seu acerto contra o de todo mundo nas mesmas questões. <a href={href('/assinatura')}>Ver planos</a></p>}
+          <DetalhesProvas detalhes={detalhes} />
+        </Secao>
 
-      {aba === 'assuntos' && <div className="da-painel" role="tabpanel" id="da-painel-assuntos" aria-labelledby="da-aba-assuntos">
-        <Assuntos temas={linhas.temas} assuntos={linhas.assuntos} turma={turma} resumos={resumoPorTema} />
-        {!premium && <p className="da-turma-convite"><Icone nome="grupo" tamanho={16} /> Assinantes veem também a coluna <b>Turma</b>: o seu acerto contra o de todo mundo nas mesmas questões. <a href={href('/assinatura')}>Ver planos</a></p>}
-        <DetalhesProvas detalhes={detalhes} />
-      </div>}
+        <Secao id="erros" rotulo="Erros e retenção" icone="alvo" titulo="O que eu realmente fixei?" texto="Cada questão que você errou, do erro novo até a consolidada, e os resumos certos para ler antes de refazer.">
+          <Retencao conta={retencao.conta} erradas={retencao.erradas} onRevisar={revisarEstado} />
+          <ResumosIndicados lista={resumosIndicados} />
+          {temConfianca && <ErrosComCerteza ids={certeza} porConfianca={porConfianca} onRevisar={() => void revisarIds(certeza)} />}
+        </Secao>
 
-      {aba === 'erros' && <div className="da-painel" role="tabpanel" id="da-painel-erros" aria-labelledby="da-aba-erros">
-        <Retencao conta={retencao.conta} erradas={retencao.erradas} onRevisar={revisarEstado} />
-        <ResumosIndicados lista={resumosIndicados} />
-        <ErrosComCerteza ids={certeza} porConfianca={porConfianca} onRevisar={() => void revisarIds(certeza)} />
-        <p className="da-rodape"><a href={href('/erros')}><Icone nome="livro" tamanho={15} /> Abrir o caderno de erros</a>, com cada questão e o comentário que explica.</p>
-      </div>}
+        <Secao id="calendario" rotulo="Calendário" icone="calendario" titulo="Quanto e quando eu estudei?" texto="Cada quadrado é um dia. Toque num dia para ver o que você estudou.">
+          <Calendario dias={diasCalendario} eventos={eventosCalendario} historico={historico} nomes={nomesTemas} />
+          <DetalhesDiaSemana detalhes={detalhes} />
+        </Secao>
 
-      {aba === 'calendario' && <div className="da-painel" role="tabpanel" id="da-painel-calendario" aria-labelledby="da-aba-calendario">
-        <Calendario dias={diasCalendario} eventos={eventosDe(marcadas, indice, reinicioEm || 0)} historico={historico} nomes={nomesTemas} />
-        <DetalhesDiaSemana detalhes={detalhes} />
-      </div>}
+        <Secao id="agora" rotulo="O que fazer agora" icone="direita" titulo={exemplo ? 'A próxima sessão da Marina' : nome ? `${nome}, sua próxima sessão` : 'Sua próxima sessão'} texto="Três passos, do que mais rende para o que mantém.">
+          <div className="dp-agora">
+            <figure className="dp-agora__arte" aria-hidden="true">
+              <img src={recurso(`pixel/paginas/observatorio-mesa-${periodoArte}.webp`)} width={336} height={336} alt="" loading="lazy" decoding="async" draggable={false} />
+            </figure>
+            <ol className="dp-passos">
+              {temaFragil && temDestaques && <Passo n={1} titulo={`Refazer os erros de ${temaFragil.nome}`} texto="É onde mais dá para crescer agora. Dez questões, com calma."
+                acao={{ rotulo: 'Treinar 10', href: href(exemplo ? '/conta?modo=criar&voltar=%2Fdados' : `/treinar?temas=${temaFragil.slug}&situacao=erradas&limite=10`) }} />}
+              {resumosIndicados[0] && <Passo n={temaFragil && temDestaques ? 2 : 1} titulo={`Ler ${resumosIndicados[0].capitulo.titulo}`} texto={`O resumo que mais cobre os seus erros: ${resumosIndicados[0].cobre} ${resumosIndicados[0].cobre === 1 ? 'questão' : 'questões'}, em ${resumosIndicados[0].capitulo.minutos} minutos.`}
+                acao={{ rotulo: 'Ler o resumo', href: href(`/resumos/${resumosIndicados[0].capitulo.id}`), livro: true }} />}
+              {incertas > 0 && <Passo n={(temaFragil && temDestaques ? 1 : 0) + (resumosIndicados[0] ? 1 : 0) + 1} titulo={`Refazer ${numero(incertas)} ${incertas === 1 ? 'questão com dúvida ou chute' : 'questões com dúvida ou chute'}`} texto="Uma passada rápida transforma o que ficou incerto em certeza."
+                acao={{ rotulo: 'Treinar 20', href: href(exemplo ? '/conta?modo=criar&voltar=%2Fdados' : '/treinar?situacao=incertas&limite=20') }} />}
+              {!errosTotais && !incertas && !(temaFragil && temDestaques) && <Passo n={1} titulo={totalContadas ? 'Seguir com uma sessão nova' : 'Fazer a primeira sessão'} texto={totalContadas ? 'Sem erros nem dúvidas guardados. Dez questões novas mantêm o ritmo.' : 'Dez questões bastam para esta página começar a mostrar seus temas.'}
+                acao={{ rotulo: 'Treinar 10', href: href('/treinar?limite=10') }} />}
+              <li className="dp-passos__fim">
+                <a className="dp-botao dp-botao--principal dp-botao--grande" href={href('/treinar')}><Icone nome="filtro" tamanho={18} /> Montar uma sessão</a>
+                {errosTotais > 0 && <a className="dp-botao dp-botao--contorno" href={href('/erros')}><Icone nome="livro" tamanho={16} /> Caderno de erros ({n(errosTotais)})</a>}
+              </li>
+            </ol>
+          </div>
+          {!exemplo && <AtalhoFlashcards tipo="desempenho" />}
+          {exemplo && <ConviteExemplo conta={!!conta} />}
+        </Secao>
 
-      {conta && !exemplo && <p className="meta ds-guardado">Seu progresso fica salvo e sincronizado com a sua conta ({(bytes / 1024).toFixed(1)} kB neste perfil). <a href={href('/conta')}>Minha conta</a></p>}
-
-      {!exemplo && <BackupProgresso />}
-
-      {/* O reinício está sendo refeito: o bloco só aparece se houver um reinício pendente de sincronizar. */}
-      {conta && reinicioPendente && <section className="zona-risco cartao__corpo empilha ds-risco">
-        <p className="meta"><Icone nome="alerta" tamanho={15} /> ZONA DE RISCO</p>
-        <h2>Começar do zero <span className="ds-embreve">Em breve</span></h2>
-        <p className="texto-2">Esta opção está sendo refeita e volta em breve. Enquanto isso, use o <strong>Período</strong> lá em cima para acompanhar só a fase atual do seu estudo: o acerto, os temas e a confiança passam a contar a partir da data que você escolher, sem apagar nada.</p>
-        <div className="linha">
-          {/* A função reiniciarProgresso continua pronta; o botão só volta a funcionar quando o reinício for refeito. */}
-          <button type="button" className="botao botao--perigo" disabled aria-disabled="true" title="Em breve">Zerar meu progresso · em breve</button>
-          {reinicioPendente && <button type="button" className="botao botao--fantasma" onClick={sincronizar}>Tentar sincronizar agora</button>}
-        </div>
-      </section>}
+        {!exemplo && <Secao id="dados" rotulo="Seus dados" icone="baixar" titulo="Seu progresso, guardado" texto={conta ? `Salvo e sincronizado com a sua conta (${(bytes / 1024).toFixed(1)} kB neste perfil).` : 'Sem conta, o progresso fica só neste aparelho.'}>
+          <div className="dp-dados"><BackupProgresso /></div>
+          {conta && reinicioPendente && <div className="dp-cartao dp-risco">
+            <p className="dp-rotulo"><Icone nome="alerta" tamanho={14} /> Zona de risco</p>
+            <h3>Começar do zero <span className="dp-chip">em breve</span></h3>
+            <p>Esta opção está sendo refeita. Enquanto isso, use o <b>Período</b> no menu para acompanhar só a fase atual do estudo, sem apagar nada.</p>
+            <button type="button" className="dp-botao dp-botao--contorno" onClick={sincronizar}>Tentar sincronizar agora</button>
+          </div>}
+        </Secao>}
+      </div>
     </article>
+  )
+}
+
+/** As seções da página, na ordem: o menu lateral e a barra do celular leem daqui. */
+const SECOES: Array<[string, string, Parameters<typeof Icone>[0]['nome']]> = [
+  ['topo', 'Nota e números', 'alvo'], ['cronograma', 'Cronograma', 'calendario'], ['evolucao', 'Evolução', 'grafico'], ['assuntos', 'Assuntos', 'mapa'],
+  ['erros', 'Erros e retenção', 'alerta'], ['calendario', 'Calendário', 'calendario'], ['agora', 'O que fazer agora', 'direita'], ['dados', 'Seus dados', 'baixar'],
+]
+
+/** Cabeça de seção: rótulo, a pergunta que ela responde e uma linha de apoio. */
+function Secao({ id, rotulo, icone, titulo, texto, children }: { id: string; rotulo: string; icone: Parameters<typeof Icone>[0]['nome']; titulo: string; texto: string; children: ReactNode }) {
+  return (
+    <section className="dp-secao" id={`dp-${id}`} aria-labelledby={`dp-${id}-titulo`}>
+      <header className="dp-secao__cabeca">
+        <p className="dp-rotulo"><Icone nome={icone} tamanho={14} /> {rotulo}</p>
+        <h2 id={`dp-${id}-titulo`}>{titulo}</h2>
+        <p>{texto}</p>
+      </header>
+      {children}
+    </section>
+  )
+}
+
+/** A mensagem do topo, com os números em destaque (o texto continua o das cartas: dado real, sem número ruim). */
+function Mensagem({ respondidas, pct, contadas, forte, sequencia }: { respondidas: number; pct: number | null; contadas: number; forte: string | null; sequencia: number }) {
+  if (respondidas < 10) return <p className="dp-mensagem">Você está nos <b>primeiros passos</b>. Cada resposta entra aqui e vai mostrando o que vale estudar a seguir.</p>
+  const tom = pct === null || contadas < 30 ? <>, e o retrato fica mais nítido a cada sessão.</>
+    : pct >= 80 ? <>, com <b>{pct}% de acerto</b>: de quem já domina boa parte da prova.</>
+      : pct >= 60 ? <>, com <b>{pct}% de acerto</b>. Mais algumas revisões e essa porcentagem sobe.</>
+        : pct >= 50 ? <>, com <b>{pct}% de acerto</b>: a fase em que mais dá para crescer.</>
+          : <>. Cada uma já ensinou alguma coisa, e todo mundo que passou começou assim.</>
+  return (
+    <p className="dp-mensagem">
+      São <b>{n(respondidas)} questões</b> feitas até aqui{tom}
+      {forte && <> Seu terreno mais firme é <b>{forte}</b>.</>}
+      {sequencia >= 2 && <> E já são <b>{numero(sequencia)} dias seguidos</b> de estudo, o que é de quem senta e faz.</>}
+    </p>
+  )
+}
+
+function Passo({ n: numeroPasso, titulo, texto, acao }: { n: number; titulo: string; texto: string; acao: { rotulo: string; href: string; livro?: boolean } }) {
+  return (
+    <li className="dp-passo">
+      <span className="dp-passo__n" aria-hidden="true">{numeroPasso}</span>
+      <div><strong>{titulo}</strong><span>{texto}</span></div>
+      <a className={'dp-botao ' + (acao.livro ? 'dp-botao--contorno' : 'dp-botao--principal')} href={acao.href}>{acao.livro && <Icone nome="livro" tamanho={15} />} {acao.rotulo} <Icone nome="direita" tamanho={15} /></a>
+    </li>
+  )
+}
+
+/**
+ * Menu das seções (14/11/2026, Tales: "funções muito valiosas para ficar escondidas"): no computador, uma coluna
+ * fixa ao lado com o período e a seção em que você está; no celular, uma barra de atalhos que acompanha a rolagem.
+ */
+function NavegacaoSecoes({ secoes, periodo, definirPeriodo, alertaErros }: {
+  secoes: typeof SECOES; periodo: PeriodoDesempenho; definirPeriodo: (p: PeriodoDesempenho) => void; alertaErros: number
+}) {
+  const [atual, definirAtual] = useState('topo')
+  useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') return
+    const alvos = secoes.map(([id]) => document.getElementById(`dp-${id}`)).filter((e): e is HTMLElement => !!e)
+    const io = new IntersectionObserver((entradas) => {
+      const visiveis = entradas.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+      if (visiveis[0]) definirAtual(visiveis[0].target.id.replace(/^dp-/, ''))
+    }, { rootMargin: '-20% 0px -65% 0px' })
+    alvos.forEach((a) => io.observe(a))
+    return () => io.disconnect()
+  }, [secoes])
+  useEffect(() => {
+    const ativo = document.querySelector(`.dp-nav__chips [data-secao="${atual}"]`) as HTMLElement | null
+    ativo?.scrollIntoView({ block: 'nearest', inline: 'center' })
+  }, [atual])
+  const ir = (id: string) => (e: React.MouseEvent) => {
+    e.preventDefault()
+    const alvo = document.getElementById(`dp-${id}`)
+    if (!alvo) return
+    const reduzir = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    alvo.scrollIntoView({ behavior: reduzir ? 'auto' : 'smooth', block: 'start' })
+    definirAtual(id)
+  }
+  const seletor = (
+    <div className="dp-periodo">
+      <span className="dp-periodo__rotulo"><Icone nome="calendario" tamanho={14} /> Período</span>
+      <div className="dp-periodo__opcoes" role="group" aria-label="Período do desempenho">
+        {PERIODOS.filter((o) => o.tipo !== 'desde').map((o) => <button key={o.tipo} type="button" aria-pressed={periodo.tipo === o.tipo} onClick={() => definirPeriodo({ tipo: o.tipo })}>{o.rotulo}</button>)}
+      </div>
+      <small>Sequência, favoritas e emblemas contam sempre o total.</small>
+    </div>
+  )
+  return (
+    <nav className="dp-nav" aria-label="Seções do desempenho">
+      <div className="dp-nav__lateral">
+        <p className="dp-rotulo">Nesta página</p>
+        <ol>
+          {secoes.map(([id, rotulo, icone]) => <li key={id}>
+            <a href={`#dp-${id}`} onClick={ir(id)} aria-current={atual === id ? 'true' : undefined}>
+              <Icone nome={icone} tamanho={16} /> <span>{rotulo}</span>
+              {id === 'erros' && alertaErros > 0 && <b className="dp-nav__alerta" title={`${alertaErros} erros com certeza`}>{alertaErros > 99 ? '99+' : alertaErros}</b>}
+            </a>
+          </li>)}
+        </ol>
+        {seletor}
+      </div>
+      <div className="dp-nav__chips">
+        {secoes.map(([id, rotulo]) => <a key={id} href={`#dp-${id}`} data-secao={id} onClick={ir(id)} aria-current={atual === id ? 'true' : undefined}>{rotulo}</a>)}
+        <select aria-label="Período" value={periodo.tipo === 'desde' ? 'tudo' : periodo.tipo} onChange={(e) => definirPeriodo({ tipo: e.target.value as PeriodoDesempenho['tipo'] })}>
+          {PERIODOS.filter((o) => o.tipo !== 'desde').map((o) => <option key={o.tipo} value={o.tipo}>{o.rotulo === 'Tudo' ? 'Período: tudo' : o.rotulo}</option>)}
+        </select>
+      </div>
+    </nav>
   )
 }
 
 /** Fim da página de exemplo: o convite, com o que a pessoa ganha ao criar a conta. */
 function ConviteExemplo({ conta }: { conta: boolean }) {
   return (
-    <aside className="da-convite" aria-labelledby="da-convite-titulo">
+    <aside className="dp-convite" aria-labelledby="dp-convite-titulo">
       <div>
-        <p className="da-convite__selo"><Icone nome="estrela" tamanho={14} /> O seu pode ficar assim</p>
-        <h3 id="da-convite-titulo">{conta ? 'Volte ao seu desempenho e compare' : 'Crie a sua conta e veja o seu desempenho de verdade'}</h3>
+        <p className="dp-rotulo"><Icone nome="estrela" tamanho={14} /> O seu pode ficar assim</p>
+        <h3 id="dp-convite-titulo">{conta ? 'Volte ao seu desempenho e compare' : 'Crie a sua conta e veja o seu desempenho de verdade'}</h3>
         <p>Nota estimada na prova, evolução semana a semana, os temas que mais caem e onde você erra, o que já fixou e os resumos certos para os seus erros. Grátis para começar.</p>
       </div>
-      <a className="botao botao--ouro botao--grande" href={href(conta ? '/dados' : '/conta?modo=criar&voltar=%2Fdados')}>{conta ? 'Ver o meu desempenho' : 'Criar conta grátis'} <Icone nome="direita" tamanho={18} /></a>
+      <a className="dp-botao dp-botao--principal dp-botao--grande" href={href(conta ? '/dados' : '/conta?modo=criar&voltar=%2Fdados')}>{conta ? 'Ver o meu desempenho' : 'Criar conta grátis'} <Icone nome="direita" tamanho={18} /></a>
     </aside>
   )
 }

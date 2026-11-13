@@ -1559,9 +1559,23 @@ def montar(nome: str) -> Image.Image:
     return Image.fromarray(np.clip(img * 255, 0, 255).astype(np.uint8))
 
 
+# Recorte da mesa (pixels da arte): do mapa da parede até a borda direita, um quadrado.
+MESA_X0, MESA_Y0, MESA_LADO = 368, 48, 112
+
+
 def main() -> None:
     PASTA.mkdir(parents=True, exist_ok=True)
     pedidas = [a for a in sys.argv[1:] if a in PERIODOS] or list(PERIODOS)
+    # --mesa (14/11/2026): só o recorte da mesa do astrônomo (mapas, vela, livros), a arte do "O que fazer agora" do
+    # Desempenho. A mesma pintura do topo, sem regravar os arquivos dele.
+    if "--mesa" in sys.argv:
+        for nome in pedidas:
+            img = montar(nome)
+            recorte = img.crop((MESA_X0 * ESC, MESA_Y0 * ESC, W * ESC, (MESA_Y0 + MESA_LADO) * ESC))
+            destino = PASTA / f"observatorio-mesa-{nome}.webp"
+            recorte.save(destino, quality=86, method=6)
+            print(destino.name, recorte.size, destino.stat().st_size // 1024, "KB")
+        return
     for nome in pedidas:
         img = montar(nome)
         destino = PASTA / f"observatorio-{nome}.webp"

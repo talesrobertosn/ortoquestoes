@@ -83,7 +83,7 @@ try {
   const evM = d.eventosDe(marina.respondidas, acervo)
   const notaM = d.notaEstimada(evM)
   assert.ok(notaM && notaM.nota >= 74 && notaM.nota <= 88, `nota do exemplo fora do esperado: ${notaM?.nota}`)
-  assert.ok(Object.keys(marina.respondidas).length > 1500, 'o exemplo tem meses de estudo')
+  assert.ok(Object.keys(marina.respondidas).length > 3000, `o exemplo passa de 3 mil questões (${Object.keys(marina.respondidas).length})`)
   const ret = d.contarRetencao(marina.respondidas).conta
   assert.ok(ret.consolidada > ret.erro_novo, 'o exemplo consolida mais do que acumula erro')
   assert.ok(d.errosComCerteza(marina.respondidas).length > 0, 'o exemplo mostra o alarme de erro com certeza')

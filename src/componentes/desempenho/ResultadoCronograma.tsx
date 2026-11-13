@@ -35,10 +35,10 @@ export function ResultadoCronograma({ indice, respondidas, eventos, planoExemplo
     return (
       <section className="ds-cartao rc rc--convite" aria-labelledby="rc-titulo">
         <div className="ds-cartao__cabeca">
-          <h3 id="rc-titulo">Seu estudo está dando resultado?</h3>
+          <h3 id="rc-titulo">Monte o seu cronograma e acompanhe aqui</h3>
           <p>Com o Cronograma, este bloco compara o que foi planejado com o que você fez, a constância dos últimos 14 dias e se o acerto subiu nos temas que o plano reforçou.</p>
         </div>
-        <a className="botao botao--ouro" href={href('/cronograma')}><Icone nome="calendario" tamanho={16} /> {premium ? 'Montar meu cronograma' : 'Conhecer o Cronograma'}</a>
+        <a className="dp-botao dp-botao--principal" href={href('/cronograma')}><Icone nome="calendario" tamanho={16} /> {premium ? 'Montar meu cronograma' : 'Conhecer o Cronograma'}</a>
       </section>
     )
   }
@@ -50,10 +50,10 @@ export function ResultadoCronograma({ indice, respondidas, eventos, planoExemplo
     <section className="ds-cartao rc" aria-labelledby="rc-titulo">
       <div className="ds-cartao__cabeca ds-cartao__cabeca--linha">
         <div>
-          <h3 id="rc-titulo">Seu estudo está dando resultado?</h3>
-          <p>Desde que o cronograma começou, em {new Date(plano.criado_em).toLocaleDateString('pt-BR')}.</p>
+          <h3 id="rc-titulo">Desde {new Date(plano.criado_em).toLocaleDateString('pt-BR')}, quando o cronograma começou</h3>
+          <p>Prova em {new Date(`${plano.data_prova}T12:00:00`).toLocaleDateString('pt-BR')} · {calculo.diasAteProva} {calculo.diasAteProva === 1 ? 'dia' : 'dias'} até lá.</p>
         </div>
-        <a className="rc__link" href={href('/cronograma')}>Abrir o cronograma <Icone nome="direita" tamanho={14} /></a>
+        <a className="dp-botao dp-botao--principal" href={href('/cronograma')}><Icone nome="calendario" tamanho={15} /> Abrir o cronograma</a>
       </div>
       <div className="rc__grade">
         <div className="rc__bloco">

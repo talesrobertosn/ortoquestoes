@@ -1,6 +1,6 @@
 /*
  * Residente fictício do Desempenho de exemplo (14/11/2026, pedido do Tales: "um cenário fictício para o não usuário
- * ver como seria o desempenho, mostrando notas boas"). Cinco meses de estudo, de 72% a 84% de acerto de primeira,
+ * ver como seria o desempenho, mostrando notas boas"; "como uma conta que já fez mais de 3 mil questões"). Seis meses de estudo, de 72% a 84% de acerto de primeira,
  * revisões que consolidam, um Cronograma em dia e a turma ao lado. Sempre o mesmo (gerador com semente fixa), com
  * as datas contadas a partir de hoje, e só com questões reais do acervo, para os temas, o mapa e os resumos baterem.
  */
@@ -17,7 +17,7 @@ const BASE: Record<string, number> = {
   'pe-tornozelo': 0.73, tumores: 0.64, 'conceitos-basicos': 0.81, osteometabolicas: 0.78,
 }
 const DIA = 86_400_000
-const DIAS = 150
+const DIAS = 180
 
 export interface ExemploDesempenho {
   respondidas: Record<string, RegistroQuestao>
@@ -47,7 +47,7 @@ export function gerarExemplo(indice: Indice, agora = Date.now()): ExemploDesempe
     // Folga em parte dos domingos e alguns dias de plantão; mais questões no fim de semana.
     const dia = new Date(hoje.getTime() - d * DIA)
     if ((dia.getDay() === 0 && rnd() < 0.6) || rnd() < 0.1) continue
-    const quantas = Math.round((dia.getDay() === 6 ? 22 : 10) + rnd() * 10)
+    const quantas = Math.round((dia.getDay() === 6 ? 32 : 17) + rnd() * 10)
     let certasDia = 0
     for (let k = 0; k < quantas && i < ordem.length; k++, i++) {
       const q = ordem[i]
@@ -79,8 +79,9 @@ export function gerarExemplo(indice: Indice, agora = Date.now()): ExemploDesempe
     })
   }
   const plano: PlanoSalvo = {
-    data_prova: new Date(agora + 150 * DIA).toISOString().slice(0, 10), intensidade: 'leve', folgas: [0], prova: 'teot',
-    base_respondidas: 300, criado_em: new Date(agora - 45 * DIA).toISOString(), incluir_simulados: true, opcoes: null,
+    data_prova: new Date(agora + 150 * DIA).toISOString().slice(0, 10), intensidade: 'firme', folgas: [0], prova: 'teot',
+    // Plano de 90 dias atrás, sem base: a Marina fica uns 30% à frente do ritmo planejado.
+    base_respondidas: 0, criado_em: new Date(agora - 90 * DIA).toISOString(), incluir_simulados: true, opcoes: null,
   }
   const exemplo = { respondidas, historico, turma, plano }
   cache.set(indice, exemplo)
