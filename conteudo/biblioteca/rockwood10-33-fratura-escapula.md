@@ -1,6 +1,6 @@
 ---
 id: rockwood10-33-fratura-escapula
-versao: 5
+versao: 6
 titulo: Fratura da escápula
 especialidade: trauma
 acesso: gratis
@@ -165,7 +165,7 @@ Nas fraturas extra-articulares do colo e do corpo, a decisão se baseia no desvi
 - **Desvio mediolateral** da borda lateral (a falsa "medialização da glenoide"): na **Neer I** (AP verdadeira da escápula) ou na vista anterior da 3D.
 - **Angulação** dos fragmentos da borda lateral: na **Neer II** (perfil da escápula, ou incidência em Y) ou na vista lateral da 3D.
 - **Translação** anteroposterior dos fragmentos da borda lateral: nas mesmas vistas da angulação.
-- **Ângulo glenopolar** (GPA): ângulo agudo entre a linha que une os **polos superior e inferior da glenoide** e a linha do **polo superior da glenoide ao ângulo inferior** da escápula. Segundo Tuček, o valor padrão na Neer I é **41°** (faixa de **35° a 51°**). Mede-se nas fraturas infraespinais do corpo e em todos os tipos de fratura do colo.
+- **Ângulo glenopolar** (GPA): ângulo agudo entre a linha que une os **polos superior e inferior da glenoide** e a linha do **polo superior da glenoide ao ângulo inferior** da escápula. Segundo Tuček, o valor padrão na Neer I é **41°** (faixa de **35° a 51°**). O Campbell 15 (cap. 62, Figura 62.15) dá outra faixa normal, de **30° a 45°**, medida entre a linha dos pontos mais cranial e mais caudal da glenoide e a linha do ponto mais cranial da glenoide ao ponto mais caudal do corpo. Mede-se nas fraturas infraespinais do corpo e em todos os tipos de fratura do colo.
 
 O capítulo faz duas ressalvas sobre o ângulo glenopolar. A medida e seus valores normais e críticos **não foram padronizados**, e o valor crítico habitual para operar, **20° ou menos**, **não tem apoio universal** na literatura. E, na fratura do **colo anatômico**, o ângulo **aumenta** (pode chegar a 70°), em vez de diminuir.
 
@@ -298,7 +298,7 @@ conceito: Na série do autor, a fratura da glenoide inferior vem do impacto dire
 
 ## Quando operar a glenoide
 
-O objetivo é devolver **congruência e estabilidade**. A indicação aceita hoje é **degrau ou diástase de pelo menos 4 a 5 mm** com **pelo menos 25% a 30% da superfície articular** envolvidos, ou **subluxação persistente** da cabeça. O que mais importa é a chamada **área circular** (os dois terços inferiores da fossa, principal superfície de contato com a cabeça), sobretudo o **quadrante anteroinferior**. O **polo superior**, que leva cerca de **20%** da superfície, **não é tão crítico**. Fraturas sem desvio, pouco desviadas ou da borda com fragmento pequeno vão bem sem cirurgia. Na série do autor, **46%** (59 de 128) das fraturas da glenoide foram operadas.
+O objetivo é devolver **congruência e estabilidade**. No texto da seção de indicações, o capítulo amarra os três dados numa frase só: **degrau ou diástase de pelo menos 4 a 5 mm**, envolvendo **pelo menos 25% a 30% da superfície articular**, **com subluxação persistente** da cabeça. A subluxação sozinha, porém, também é indicação: no quadro de critérios radiológicos relativos do próprio capítulo (Figura 33-19), degrau ou diástase **menor que 4 mm** com a **articulação subluxada** já favorece a cirurgia; e o Skeletal Trauma (cap. 50, p. 1544) cita a série de MAYO, que operou com **desvio maior que 5 mm ou desvio associado à subluxação**, e a de COLE, com degrau ou diástase de **4 mm ou mais**. O que mais importa é a chamada **área circular** (os dois terços inferiores da fossa, principal superfície de contato com a cabeça), sobretudo o **quadrante anteroinferior**. O **polo superior**, que leva cerca de **20%** da superfície, **não é tão crítico**. Fraturas sem desvio, pouco desviadas ou da borda com fragmento pequeno vão bem sem cirurgia. Na série do autor, **46%** (59 de 128) das fraturas da glenoide foram operadas.
 
 Por padrão:
 
@@ -310,7 +310,7 @@ Por padrão:
 
 A **artroscopia** serve sobretudo às fraturas da **borda anterior ou posterior**, menos às da glenoide superior; as da **glenoide inferior**, que se propagam ao corpo, **não** são adequadas.
 
-> Na prova: glenoide opera com **4 a 5 mm** e **25% a 30%**, ou com **subluxação persistente**. O polo superior é o menos crítico.
+> Na prova: glenoide opera com **4 a 5 mm** e **25% a 30%**; a **subluxação persistente** opera mesmo com degrau menor que 4 mm (Figura 33-19). O polo superior é o menos crítico.
 
 !questoes central=trauma-0974,trauma-0998,trauma-0444 treino=trauma-1316,trauma-1317,trauma-1318,trauma-1333
 conceito: A glenoide é operada com degrau de 4 a 5 mm envolvendo 25% a 30% da superfície ou com subluxação persistente da cabeça; a artroscopia serve às bordas anterior e posterior.
@@ -328,6 +328,8 @@ alerta: No TECOC (trauma-0444), o gabarito oficial foi o nervo supraescapular. O
 É uma lesão **rara, grave e de alta energia**: o sistema osteoligamentar da escápula se desconecta do esqueleto axial em vários níveis, os **músculos escapuloaxiais** se separam, e há lesão dos **grandes vasos** do membro, do **plexo braquial** e das partes moles do tórax e do ombro, quase sempre com a **pele intacta**. Por isso alguns autores a chamam de **amputação interna do quarto superior** (internal forequarter amputation). A mortalidade relatada é de **11%**, pelas lesões intratorácicas.
 
 O mecanismo é uma **distração lateral violenta** (ou um desvio rotacional) da cintura escapular: o membro fica preso num objeto fixo enquanto o corpo segue em alta velocidade, ou é puxado por uma máquina pesada. A **radiografia de tórax** é importante justamente para ver a relação da escápula com a coluna. Na Figura 33-27, o caso mostra fraturas do **coracoide**, do **acrômio** e do **ângulo inferior**, com o espaço toracoescapular alargado.
+
+Os capítulos vizinhos do mesmo livro dizem por onde a cintura costuma romper. O capítulo 32 (seção Scapulothoracic Dissociation) cita a luxação acromioclavicular de alto grau, a **fratura desviada da clavícula** ou a ruptura esternoclavicular; o capítulo 34 (seções Injuries Associated With Clavicle Fractures e Neurovascular Injury, Figura 34-9) destaca que, nessa lesão, a fratura da clavícula fica **distraída** (afastada), e não encavalada e encurtada como a fratura comum. O HEBERT (cap. 43, seção Dissociação escapulotorácica) define a lesão como o deslocamento lateral da escápula e de todo o membro superior associado a fratura da clavícula, luxação acromioclavicular ou esternoclavicular.
 
 ## Zelle: a classificação que a prova cobra
 
@@ -353,7 +355,7 @@ como: O TEOT 2024 pediu o tipo 2B de Zelle (neurológico incompleto). O TARO 202
 armadilha: Tipo 2A na pergunta do 2B: o 2A é a lesão vascular.
 armadilha: Exploração do plexo ou artrodese na lesão completa: o capítulo, com Zelle, recomenda a amputação quando a função não volta.
 alerta: No TEOT 2022 (trauma-0194), o gabarito oficial foi 1,5 vez a distância do lado oposto. O capítulo não traz esse número; só diz que a radiografia de tórax é a que mostra a relação da escápula com a coluna.
-alerta: Na prova de Ortopedia sem ano (ombro-cotovelo-0372) e no CET-PR (trauma-0702), o gabarito associa a dissociação à **fratura da clavícula** desviada. O capítulo não faz essa associação: descreve a desconexão "em vários níveis", e o exemplo que ele mostra tem fraturas do coracoide, do acrômio e do ângulo inferior.
+alerta: Na prova de Ortopedia sem ano (ombro-cotovelo-0372) e no CET-PR (trauma-0702), o gabarito associa a dissociação à **fratura da clavícula** desviada. O capítulo 33 não nomeia essa associação (descreve a desconexão "em vários níveis", e o exemplo dele tem fraturas do coracoide, do acrômio e do ângulo inferior), mas o gabarito está apoiado no mesmo livro: o capítulo 32 (seção Scapulothoracic Dissociation) cita a fratura desviada da clavícula, o capítulo 34 (Figura 34-9) mostra a clavícula distraída, e o HEBERT (cap. 43, seção Dissociação escapulotorácica) põe a fratura da clavícula na própria definição.
 alerta: No quadro de Zelle do capítulo, o tipo neurológico incompleto aparece impresso só como "2" (depois do "2A"); é o 2B da classificação, como cobrou o TEOT 2024.
 !fim
 
@@ -443,7 +445,7 @@ armadilha: Incisão pela borda lateral: é a ideia da Dupont-Evrard, não da Jud
 - **Corpo:** a **borda lateral é a estrutura-chave e se fixa primeiro**. A contratura muscular encavala e encurta a borda; reduz-se com dois ganchos ou puxando parafusos postos nos fragmentos. Nas oblíquas instáveis, o **"fio de Kirschner perdido"** funciona como pino intramedular. Placa de reconstrução de 2,7 ou 3,5 mm: **2 + 2** (dois parafusos em cada fragmento) na fratura simples; **3 + 3** com fragmentos intermediários.
 - **Ângulo espinomedial:** soltar o infraespinal o desestabiliza; com desvio **menor que 5 mm** e pilar lateral **estavelmente fixado**, tolera-se algum movimento; senão, placa de 2,7 mm, parafusos bloqueados ou cerclagem.
 - **Dois pilares:** fixa-se primeiro o lateral, o que costuma melhorar o espinal.
-- **Colo:** em geral duas placas ou placa e parafusos; a fixação da borda lateral é completada por placa na face posterior do colo ou parafusos corticais da espinha para o fragmento glenoidal; cuidado com a **incisura espinoglenoidal**. O **transespinhal** quase sempre exige fixar **os dois pilares**.
+- **Colo:** em geral duas placas ou placa e parafusos; a fixação da borda lateral é completada por placa na face posterior do colo ou parafusos corticais da espinha para o fragmento glenoidal; cuidado com a **incisura espinoglenoidal**. O **transespinhal** quase sempre exige fixar **os dois pilares** (borda lateral e espinha); excepcionalmente, basta a **placa só no pilar lateral** (seção Operative Treatment of Scapular Fractures, Technique).
 
 !questoes treino=trauma-1324,trauma-1325
 conceito: No corpo, a borda lateral é fixada primeiro, com 2 + 2 na fratura simples; o ângulo espinomedial pode ficar sem fixação se o desvio for menor que 5 mm e o pilar lateral estiver estável.

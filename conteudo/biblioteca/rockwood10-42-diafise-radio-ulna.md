@@ -1,6 +1,6 @@
 ---
 id: rockwood10-42-diafise-radio-ulna
-versao: 3
+versao: 4
 titulo: Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi
 especialidade: trauma
 acesso: gratis
@@ -68,6 +68,8 @@ Jupiter observou que no tipo II a fratura costuma estar na diáfise proximal, ma
 - **IIC:** **diafisária**;
 - **IID:** fratura complexa do **olécrano até a diáfise**.
 
+O capítulo 40 do mesmo Rockwood (Elbow Dislocations and Terrible Triad Injuries, seção Olecranon Fracture-Dislocations) descreve a mesma subdivisão com outras palavras, e vale ler as duas lado a lado. Ali, o **IIA** é a fratura **na altura do coronoide**, com o coronoide como **fragmento separado**; o **IIB** é a fratura **distal ao coronoide**; o **IIC**, a fratura **pela diáfise**; e o **IID**, a fratura complexa do **olécrano até a diáfise**. O capítulo 40 acrescenta o que separa os grupos: o **IIA e o IID envolvem a ulna proximal e a superfície articular da incisura sigmoide maior**, e por isso trazem junto angulação posterior da ulna proximal, fratura da cabeça do rádio, fratura do coronoide e lesão dos ligamentos colaterais. As duas redações não brigam: "junção da metáfise com a diáfise" (cap. 42) e "distal ao coronoide" (cap. 40) descrevem o mesmo IIB, um traço que já saiu da articulação mas ainda não chegou à diáfise propriamente dita. Se a prova disser "distal ao coronoide", a letra continua sendo o B.
+
 !questoes central=trauma-0761,mao-1574 treino=trauma-1434
 conceito: Na subdivisão de Jupiter do Bado II, a fratura na junção metáfise-diáfise da ulna é o tipo IIB; o IIA passa pelo coronoide.
 como: O TEOT 2025 descreveu o traço (junção da metáfise com a diáfise) e pediu a letra; a USP-SP 2026 inverteu e deu a letra (B), pedindo o traço.
@@ -133,6 +135,8 @@ A fratura de Galeazzi é a **fratura da diáfise do rádio**, tipicamente no **t
 A Galeazzi nasce de **torção com carga axial**, como na queda com o **antebraço hiperpronado e o punho em extensão**. A fratura começa no rádio e a lesão corre para distal: rompe a **membrana interóssea**, os **ligamentos radioulnares distais** e, por fim, a **fibrocartilagem triangular**, deixando a radioulnar distal instável. O capítulo acrescenta o sentido da luxação: a **hiperpronação** gera Galeazzi com luxação **anterior** da cabeça da ulna, e a **hipersupinação** com queda sobre a mão espalmada gera a luxação **posterior**.
 
 Os outros livros dizem o contrário para a supinação. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, Fig. 62.87, p. 2824), classifica a Galeazzi pelo desvio do rádio: o **tipo I, de ápice volar**, vem da carga axial com o antebraço em **supinação**, com o rádio desviado para dorsal e a **ulna distal luxada para volar**; o **tipo II, de ápice dorsal**, vem da carga axial em **pronação**, com o rádio desviado para anterior e a **ulna luxada para dorsal**. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 9, Fig. 9-4), chama a Galeazzi de ápice volar de **tipo supinação**, com a ulna distal volar ao rádio, e diz que o ápice volar foi mais comum que o dorsal na série citada. Guarde as duas versões: no Rockwood adulto, hipersupinação com ulna para trás; no Campbell e no Rockwood infantil, supinação com ápice volar e ulna para a frente.
+
+Na hora de imobilizar, os livros voltam a concordar. O algoritmo de tratamento da Galeazzi do adulto no Campbell (cap. 62, Fig. 62.89, p. 2825) termina, para a radioulnar distal instável fixada com fios ou com a fibrocartilagem reparada, em **imobilização em supinação** em gesso axilopalmar por 4 a 6 semanas, e o texto do mesmo capítulo (p. 2821) diz que, depois de fixar o rádio, o antebraço fica na posição de maior estabilidade, **geralmente a supinação**. É a mesma regra do Rockwood para a luxação **dorsal**, a mais comum: a supinação estabiliza a ulna que escapou para trás. Por isso a divergência do mecanismo não muda a conduta: seja qual for o nome que cada livro dá ao mecanismo, a ulna luxada para dorsal se imobiliza em supinação.
 
 !questoes central=trauma-0893 relacionadas=trauma-0437 treino=trauma-1441
 conceito: O mecanismo clássico da Galeazzi é a carga axial em torção, com o antebraço hiperpronado e o punho estendido; a hipersupinação explica a variante com a ulna luxada para trás.
@@ -363,6 +367,8 @@ Por que esses limites:
 - **terço proximal**: tratado sem cirurgia, perde mais rotação, tem mais pseudartrose e pior resultado, e muitas vezes esconde uma **Monteggia**;
 - **até 10°** de angulação não tiram rotação importante, **desde que a cabeça do rádio esteja reduzida**.
 
+O HEBERT (5ª ed., cap. 50, seção Fraturas isoladas sem comprometimento do eixo do antebraço) é mais tolerante na angulação. Para a fratura isolada da ulna por trauma direto, a "fratura do cassetete", ele aceita o tratamento não cirúrgico com **angulação menor que 20°** e **desvio menor que 50%**, com imobilização axilopalmar por 7 a 10 dias e depois antebraquiopalmar ou órtese funcional, como propôs SARMIENTO, até consolidar. O limite do desvio é o mesmo nos dois livros; o da angulação, não: **Rockwood, menos de 10°; HEBERT, menos de 20°**. Numa prova brasileira que cite o HEBERT, 20° pode aparecer como resposta certa; numa que siga o Rockwood, o número é 10°.
+
 A fratura do rádio isolada desviada e a dos dois ossos tratadas sem cirurgia têm muitos resultados insatisfatórios, e a do rádio demora mais a consolidar. O gesso só fica para quem não pode ser operado (alguns pacientes de demanda muito baixa, como na demência grave).
 
 ## Como imobilizar a ulna estável
@@ -455,6 +461,10 @@ O antebraço é o **segundo lugar mais frequente** de síndrome compartimental a
 
 Feito o diagnóstico, a liberação é de urgência. O capítulo recomenda, em geral, **liberar os quatro compartimentos**: volar profundo, volar superficial, dorsal e coxim móvel.
 
+A conta muda de capítulo para capítulo no mesmo livro. O capítulo 17 do Rockwood (Acute Compartment Syndrome, seção Forearm) conta **três compartimentos** no antebraço: **volar, dorsal e coxim móvel** (mobile wad). Ele explica que o volar contém três espaços, o volar superficial, o volar profundo e o do pronador quadrado, mas que na prática não é preciso separá-los na fasciotomia. O capítulo 42 separa o volar em superficial e profundo e chega a quatro. Não é desacordo de anatomia, é jeito de contar: os mesmos três envelopes fasciais, com o volar dividido ou não. Se a alternativa disser "três compartimentos (volar, dorsal e coxim móvel)", ela está certa pelo capítulo 17.
+
+O capítulo 17 (seção Clinical Diagnosis) também desfaz uma armadilha clássica: **pulsos periféricos e enchimento capilar estão preservados** na síndrome compartimental confirmada. Ausência de pulso, palidez e enchimento capilar lento são **sinais tardios** ou apontam para lesão vascular que pede angiografia, e é perigoso afastar o diagnóstico porque o pulso distal está presente. Os sinais que valem são o edema, a dor ao estiramento passivo, a dor desproporcional à lesão, a parestesia e a paralisia.
+
 - **Incisão volar:** começa lateral ao tendão do bíceps, curva-se para medial no meio do antebraço e volta à linha média no punho; abre-se o **lacerto fibroso** (para descomprimir o flexor ulnar do carpo), a fáscia profunda entre o flexor ulnar do carpo e o flexor superficial dos dedos e, de rotina, o **túnel do carpo**.
 - **Incisão dorsal:** reta, de 2 cm abaixo do epicôndilo lateral em direção ao tubérculo de Lister, para o dorsal e o coxim móvel.
 
@@ -473,6 +483,8 @@ alerta: No TARO 2024 (trauma-0668), o gabarito oficial foi a descompressão de t
 A ponte óssea completa entre rádio e ulna aparece em **1% a 6%** das fraturas do antebraço e abole a rotação. O fator que mais se repete é o **trauma de crânio**: na série de Hadden, as 6 sinostoses de 108 pacientes foram todas em pacientes com trauma craniano fechado; no caso único de Chapman, também havia trauma de crânio (numa Monteggia com placa de 4,5 mm). Também pesam as fraturas dos **dois ossos no mesmo nível com cominuição** e a alta energia.
 
 Para prevenir: **não deixar enxerto, fragmentos ósseos, parafusos ou metal no espaço interósseo**, e não usar via única para a ulna e o rádio proximais (na Monteggia, ela expõe o cotovelo à sinostose).
+
+O HEBERT (5ª ed., cap. 50, seção de complicações tardias, Sinostose radioulnar pós-traumática) chega à mesma lista por outro caminho. Para ele, a sinostose é rara e ligada sobretudo à **gravidade do trauma**, mais comum nas vítimas de **esmagamento**, e o risco sobe com a **via de acesso única para os dois ossos**, com **parafusos grandes dirigidos à membrana interóssea** e com as **fraturas proximais**. O mesmo capítulo lembra, ao falar do enxerto autógeno, que ele não pode extravasar para o espaço interósseo. O tratamento que o HEBERT descreve é cirúrgico: ressecção da ponte óssea, controle do hematoma, interposição de partes moles e mobilização precoce, com radioterapia ou indometacina (25 mg três vezes ao dia) no pós-operatório.
 
 Jupiter e Ring classificam a sinostose **proximal** em: **A**, distal ao sulco bicipital; **B**, envolvendo a cabeça do rádio ou a radioulnar proximal; **C**, estendendo-se ao úmero distal. Na ressecção simples de 18 sinostoses (8 com interposição de gordura), só uma recidivou, num paciente com trauma de crânio, e a rotação final média foi de **139°**. Depois da ressecção, considerar indometacina ou radioterapia como adjuvantes.
 
@@ -497,7 +509,7 @@ conceito: No modelo de Matthews, 10° de deformidade residual no terço médio d
 
 ## Pseudartrose
 
-Depois da placa, a pseudartrose fica entre **0% e 10%**. As causas são mecânicas (afastamento no foco, placa fraca como a de um terço de tubo ou de reconstrução, placa curta, parafusos perto demais do foco, ponte rígida demais) ou biológicas (alta energia, exposição, cominuição, desperiostização). Cerca de **um terço** das pseudartroses acompanha **infecção profunda**, que deve sempre ser procurada. O capítulo espera **6 meses**; três radiografias mensais sem progresso depois de 3 meses predizem que não vai consolidar. O tratamento é tirar o material, cultivar, desbridar até osso vivo e refixar; enxerto (crista ilíaca ou côndilo femoral lateral) só se houver falha óssea. As séries consolidaram perto de **100%** (Kloen: 51 pseudartroses, mediana de 7 meses); a haste aberta foi pior (quase metade de maus resultados).
+Depois da placa, a pseudartrose fica entre **0% e 10%**. As causas são mecânicas (afastamento no foco, placa fraca como a de um terço de tubo ou de reconstrução, placa curta, parafusos perto demais do foco, ponte rígida demais) ou biológicas (alta energia, exposição, cominuição, desperiostização). Do lado do paciente, o capítulo (seção Treatment Options for Diaphyseal Fractures of the Radius and Ulna) lembra que o **fumo** e o **diabetes** podem diminuir a chance de consolidação. Cerca de **um terço** das pseudartroses acompanha **infecção profunda**, que deve sempre ser procurada. O capítulo espera **6 meses**; três radiografias mensais sem progresso depois de 3 meses predizem que não vai consolidar. O tratamento é tirar o material, cultivar, desbridar até osso vivo e refixar; enxerto (crista ilíaca ou côndilo femoral lateral) só se houver falha óssea. As séries consolidaram perto de **100%** (Kloen: 51 pseudartroses, mediana de 7 meses); a haste aberta foi pior (quase metade de maus resultados).
 
 ## Infecção
 
@@ -511,7 +523,7 @@ conceito: Na pseudartrose do antebraço operado com placa, a infecção profunda
 
 **Menos de 10%** das placas precisam sair; a placa da **ulna** é a que mais incomoda, pela posição subcutânea (por isso ela vai dorsal ou volar). O capítulo avisa o paciente antes da cirurgia: **retirar não é rotina**. A retirada tem riscos: **refratura** de até **18%**, pelo foco original ou por um furo de parafuso, infecção e lesão nervosa em até 21%, internação de 3 a 168 horas e, em média, **3,4 semanas** fora do trabalho.
 
-- **Refratura no foco:** evita-se esperando **12 a 18 meses** para retirar e protegendo o antebraço com tala ou órtese por **4 a 6 semanas**.
+- **Refratura no foco:** evita-se esperando **12 a 18 meses** para retirar e protegendo o antebraço com tala ou órtese por **4 a 6 semanas**. O capítulo 1 do Rockwood (Biomechanics of Fractures and Fracture Fixation, seção Primary Bone Healing) explica o porquê e vai além no prazo: a consolidação direta sob placa de compressão é **mais lenta** e não forma calo, e a retirada precoce arrisca a refratura pelo foco original; a recomendação atual é adiar a retirada **até 2 anos** depois da cirurgia. O HEBERT (5ª ed., cap. 50, seção de complicações tardias, Refratura) acrescenta quando ela costuma vir: é **mais comum nos primeiros 4 meses** depois da retirada, e deve ser tratada como fratura aguda, mas com mais complicações, porque o tecido fibroso em volta dificulta achar as estruturas.
 - **Refratura pelo furo:** costuma vir com trauma mais forte, meses depois. As placas de **4,5 mm** tinham refratura de **22%** depois da retirada; algumas séries com placas de 3,5 mm não tiveram nenhuma.
 - Mesmo com a placa no lugar, uma queda forte pode quebrar o osso no furo **mais proximal ou mais distal**.
 
