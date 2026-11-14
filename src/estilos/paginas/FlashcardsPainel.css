@@ -34,5 +34,8 @@
 main .fcn section.fcn-heroi{padding:0!important;gap:0!important}
 .fcn .cfd-dia{display:flex;align-items:end;width:100%;height:100%;border:0;background:none;padding:0;cursor:pointer;color:inherit}.fcn .cfd-dia[aria-pressed=true]{background:var(--verdete-veu)}.fcn .cfd-dia:focus-visible{outline:2px solid var(--verdete);outline-offset:1px}.fcn-leitura-dia{padding:.7rem 1rem;background:var(--superficie-2);border-radius:8px;font-size:.8rem;line-height:1.6;color:var(--texto-2)}.fcn-dados-grafico{font-size:.8rem}.fcn-dados-grafico summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--verdete);font-weight:650}.fcn .cf-chips button{min-height:44px}
 .fcn .ca-pet--gato{top:auto;bottom:10%}
-/* A fala usa o lado livre da janela e deixa coruja, gato e ações descobertos. */
-.fcn .ca-fala{left:1rem;right:auto;top:1rem;bottom:auto;max-width:55%;text-align:left}
+/* O balão acompanha o visitante; a posição considera o recorte e o tamanho real da fala. */
+.fcn .ca-fala{right:auto;bottom:auto;width:max-content;max-width:min(23rem,calc(100% - 16px));text-align:left;padding:.65rem .8rem;font-size:.78rem;line-height:1.45;overflow:visible}
+.fcn .ca-fala i{position:absolute;bottom:-7px;width:12px;height:12px;background:#fbf3df;border-right:2px solid #947448;border-bottom:2px solid #947448;transform:translateX(-50%) rotate(45deg);pointer-events:none}
+.fcn .ca-fala--abaixo i{bottom:auto;top:-7px;transform:translateX(-50%) rotate(225deg)}
+@media(max-width:35.99rem){.fcn .fcn-pintura{height:260px}.fcn .ca-fala{max-width:min(18rem,calc(100% - 16px));font-size:.72rem}}
