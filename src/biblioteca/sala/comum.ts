@@ -1,5 +1,5 @@
 import type { CSSProperties, MouseEvent } from 'react'
-import { urlCss } from '../../config'
+import { recurso, urlCss } from '../../config'
 import type { Indice } from '../../dados/tipos'
 import { apelidoLivro, chaveLivro, estadoLeitura, nomeCurtoLivro, numeroCapitulo, rotuloLivro, sobreLivro, type EstadoLeitura } from '../estante'
 import type { Leitura, ResumoCapitulo } from '../tipos'
@@ -92,3 +92,25 @@ export { chaveLivro }
 export const texturas = () => (typeof document === 'undefined' ? {} : {
   '--bb-fundo': urlCss('pixel/biblioteca/estante-fundo.png'), '--bb-tabua': urlCss('pixel/biblioteca/estante-tabua.png'), '--bb-coluna': urlCss('pixel/biblioteca/estante-coluna.png'),
 }) as CSSProperties
+
+/**
+ * O armário de cada obra (scripts/gerar_armario.py, 14/11/2026): uma madeira por livro, sempre a mesma para o mesmo
+ * livro, e a estante dos mais cobrados em madeira escura com folha de ouro. O fundo dos nichos acompanha a hora do
+ * salão (manhã, tarde e noite).
+ */
+export type Madeira = 'nogueira' | 'carvalho' | 'mogno' | 'ebano' | 'dourada'
+const MADEIRAS: Madeira[] = ['nogueira', 'carvalho', 'mogno', 'ebano']
+export function madeiraDaBaia(id: string, cobrados = false): Madeira {
+  if (cobrados) return 'dourada'
+  let h = 0
+  for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0
+  return MADEIRAS[h % MADEIRAS.length]
+}
+const ARMARIO = 'pixel/biblioteca/armario/'
+export const armario = (madeira: Madeira, periodo: 'manha' | 'tarde' | 'noite') => (typeof document === 'undefined' ? {} : {
+  '--bb-fileira': urlCss(`${ARMARIO}fileira-${madeira}-${periodo}.png`), '--bb-pilastra': urlCss(`${ARMARIO}pilastra-${madeira}.png`), '--bb-pilastras': urlCss(`${ARMARIO}pilastras-${madeira}.png`),
+  '--bb-cornija': urlCss(`${ARMARIO}cornija-${madeira}.png`), '--bb-rodape': urlCss(`${ARMARIO}rodape-${madeira}.png`),
+}) as CSSProperties
+/** Endereço de uma peça do armário (enfeites, selos, a mesa da ficha). */
+export const pecaArmario = (nome: string) => recurso(`${ARMARIO}${nome}`)
+

@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type MouseEvent, type ReactNode } from 'react'
 import { corDaArea } from '../../dados/coresAreas'
 import { href } from '../../util/rotas'
 import { estadoLeitura, numeroCapitulo, tituloLombada, rotuloLivro } from '../estante'
@@ -7,7 +7,7 @@ import { Sprite } from '../salao/Sprite'
 import { PALETA_PLANTA, PLANTA } from '../salao/sprites'
 import type { Leitura, ResumoCapitulo } from '../tipos'
 import { nomeArea } from '../busca'
-import { ESTADO_NOME, cliqueComum, idObra, pctLido, temMouse, type Obra } from './comum'
+import { ESTADO_NOME, armario, cliqueComum, idObra, madeiraDaBaia, pecaArmario, pctLido, temMouse, type Obra } from './comum'
 import type { Salao } from './usarSalao'
 import { LATERAIS, VAGA, arrumarBaias, type Fileira } from './arrumar'
 
@@ -24,7 +24,7 @@ interface PropsEstante {
   /** Um resumo para realçar (escolhido na busca). */
   realce: string | null
   primeiraBusca: string | null
-  aoAbrir: (c: ResumoCapitulo) => void
+  aoAbrir: (c: ResumoCapitulo, origem?: DOMRect) => void
   /** A Sala dos raros, quando a passagem do livro torto está aberta (ocupa o lugar daquela estante). */
   salaRaros: ReactNode
 }
@@ -83,9 +83,9 @@ export function Estante({ obras, achados, cobrados, leituras, premium, salao, re
     window.clearTimeout(fechar.current); window.clearTimeout(abrir.current)
     const ja = () => definirPop({ c, r: el.getBoundingClientRect(), el })
     if (!peloMouse) { ja(); return }
-    abrir.current = window.setTimeout(ja, pop ? 140 : 380)
+    abrir.current = window.setTimeout(ja, pop ? 90 : 220)
   }
-  const esconder = () => { window.clearTimeout(abrir.current); window.clearTimeout(fechar.current); fechar.current = window.setTimeout(() => definirPop(null), 160) }
+  const esconder = () => { window.clearTimeout(abrir.current); window.clearTimeout(fechar.current); fechar.current = window.setTimeout(() => definirPop(null), 140) }
   useEffect(() => () => { window.clearTimeout(abrir.current); window.clearTimeout(fechar.current) }, [])
   // A ficha acompanha a lombada quando a página rola (o foco do teclado rola até o livro); some se o livro sai da tela.
   useEffect(() => {
@@ -108,12 +108,37 @@ export function Estante({ obras, achados, cobrados, leituras, premium, salao, re
     if (!cliqueComum(e)) return
     e.preventDefault()
     definirPop(null)
-    aoAbrir(c)
+    aoAbrir(c, e.currentTarget.getBoundingClientRect())
+  }
+  // Teclado (14/11/2026): as setas andam de lombada em lombada (esquerda e direita na ordem da estante; cima e baixo
+  // para o livro mais perto na prateleira de cima ou de baixo); Home e End vão ao primeiro e ao último.
+  const teclar = (e: KeyboardEvent<HTMLDivElement>) => {
+    const atual = (e.target as HTMLElement).closest<HTMLElement>('.bb-vol')
+    if (!atual || !['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(e.key)) return
+    const todos = [...(parede.current?.querySelectorAll<HTMLElement>('.bb-vol') ?? [])]
+    const i = todos.indexOf(atual)
+    let alvo: HTMLElement | undefined
+    if (e.key === 'ArrowLeft') alvo = todos[i - 1]
+    else if (e.key === 'ArrowRight') alvo = todos[i + 1]
+    else if (e.key === 'Home') alvo = todos[0]
+    else if (e.key === 'End') alvo = todos[todos.length - 1]
+    else {
+      const r = atual.getBoundingClientRect()
+      const cx = r.left + r.width / 2
+      const linhas = todos.map((el) => ({ el, r: el.getBoundingClientRect() })).filter(({ r: q }) => (e.key === 'ArrowDown' ? q.top > r.bottom - 4 : q.bottom < r.top + 4))
+      const proxY = e.key === 'ArrowDown' ? Math.min(...linhas.map(({ r: q }) => q.top)) : Math.max(...linhas.map(({ r: q }) => q.bottom))
+      alvo = linhas.filter(({ r: q }) => Math.abs((e.key === 'ArrowDown' ? q.top : q.bottom) - proxY) < 60)
+        .sort((a, b) => Math.abs(a.r.left + a.r.width / 2 - cx) - Math.abs(b.r.left + b.r.width / 2 - cx))[0]?.el
+    }
+    if (!alvo) return
+    e.preventDefault()
+    alvo.focus()
+    alvo.scrollIntoView({ block: 'nearest', inline: 'nearest' })
   }
 
   const porId = new Map(baias.map((b) => [b.id, b]))
   return (
-    <div className={'bb-parede' + (celular ? ' bb-parede--celular' : '')} ref={parede} id="bb-estantes" onMouseLeave={esconder}>
+    <div className={'bb-parede' + (celular ? ' bb-parede--celular' : '')} ref={parede} id="bb-estantes" onMouseLeave={esconder} onKeyDown={teclar}>
       {salaRaros}
       {fileiras.map((fileira, fi) => (
         <div key={fi} className="bb-fileira">
@@ -152,9 +177,10 @@ function BaiaEstante({ b, vagas, indice, celular, leituras, premium, salao, real
     definirPosEscada(alvo ? { left: alvo.parentElement!.offsetLeft - 30, right: 'auto' } : undefined)
   }, [escada, primeiraBusca, vagas])
   const passagem = torto ? salao.passagem : 'fechada'
+  const madeira = madeiraDaBaia(b.id, b.cobrados)
   return (
-    <section id={b.id} className={'bb-baia' + (b.cobrados ? ' bb-baia--cobrados' : '') + (passagem === 'girando' ? ' bb-baia--girando' : '')}
-      style={{ '--vagas': vagas, '--capa': b.capa } as CSSProperties} aria-labelledby={`${b.id}-t`}>
+    <section id={b.id} className={`bb-baia bb-baia--${madeira}` + (b.cobrados ? ' bb-baia--cobrados' : '') + (passagem === 'girando' ? ' bb-baia--girando' : '')}
+      style={{ '--vagas': vagas, '--capa': b.capa, ...armario(madeira, salao.periodo) } as CSSProperties} aria-labelledby={`${b.id}-t`}>
       <header className="bb-baia__placa">
         <span className="bb-baia__capa" aria-hidden="true">{b.cobrados ? <b>★</b> : <><b>{b.titulo.split(' ')[0]}</b><small>{b.edicoes.split(' e ')[0]}</small></>}</span>
         <div className="bb-baia__nome">
@@ -177,14 +203,24 @@ function BaiaEstante({ b, vagas, indice, celular, leituras, premium, salao, real
   )
 }
 
-/** Os objetos que completam a última prateleira (apoio de livros, pilha deitada, ampulheta, vaso): nunca um livro falso. */
+/**
+ * Os objetos que completam a última prateleira, pintados em pixel art (scripts/gerar_armario.py): aparador de latão,
+ * ampulheta, globo, castiçal com a chama do site, pilha de livros deitados, crânio de estudo e tinteiro. Nunca um
+ * livro em pé falso. Quatro arranjos, um por estante, em rodízio.
+ */
+const ARRANJOS: string[][] = [['aparador', 'pilha', 'globo'], ['ampulheta', 'tinteiro', 'cranio'], ['pilha', 'castical', 'aparador'], ['globo', 'ampulheta', 'castical']]
+const TAMANHO_ENFEITE: Record<string, [number, number]> = { aparador: [11, 20], ampulheta: [12, 18], globo: [17, 22], castical: [10, 18], pilha: [24, 14], cranio: [13, 12], tinteiro: [12, 20] }
 function Enfeite({ i }: { i: number }) {
-  const tipo = i % 4
-  return <span className={`bb-enfeite__obj bb-enfeite__obj--${tipo}`}>
-    {tipo === 0 && <><span className="bb-apoio" /><span className="bb-pilha"><i /><i /><i /></span></>}
-    {tipo === 1 && <><span className="bb-ampulheta" /><span className="bb-pilha bb-pilha--baixa"><i /><i /></span></>}
-    {tipo === 2 && <><Sprite grade={PLANTA} paleta={PALETA_PLANTA} px={3} /><span className="bb-apoio" /></>}
-    {tipo === 3 && <><span className="bb-pilha"><i /><i /><i /><i /></span><span className="bb-vela" /></>}
+  const itens = ARRANJOS[i % ARRANJOS.length]
+  return <span className="bb-enfeite__obj">
+    {itens.map((nome) => {
+      const [w, h] = TAMANHO_ENFEITE[nome]
+      return <span key={nome} className={`bb-enfeite__peca bb-enfeite__peca--${nome}`}>
+        <img src={pecaArmario(`enfeite-${nome}.png`)} width={w * 3} height={h * 3} alt="" loading="lazy" decoding="async" />
+        {nome === 'castical' && <span className="bb-enfeite__chama" />}
+      </span>
+    })}
+    {i % 4 === 2 && <Sprite grade={PLANTA} paleta={PALETA_PLANTA} px={3} />}
   </span>
 }
 

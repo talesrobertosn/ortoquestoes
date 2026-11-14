@@ -66,7 +66,7 @@ const soFiltros = (c: URLSearchParams) => { const x = new URLSearchParams(c); x.
 
 function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSearchParams }) {
   const { indice } = usarIndice()
-  const { leituras, marcas } = usarBiblioteca()
+  const { leituras, marcas, preferencias } = usarBiblioteca()
   const { premium, carregado: premiumCarregado } = usarPremium()
   const { sessao } = usarConta()
   const capitulos = dados.capitulos
@@ -74,12 +74,12 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
   const [filtros, definirFiltros] = useState<FiltrosEstante>(() => filtrosDaConsulta(consulta))
   const [modo, definirModo] = useState<Modo>(() => vistaDaConsulta(consulta) ?? (ler<Modo>(CHAVE_MODO, 'estante') === 'lista' ? 'lista' : 'estante'))
   const [agrupar, definirAgrupar] = useState<Agrupar>(() => agruparDaConsulta(consulta))
-  const [ficha, definirFicha] = useState<{ c: ResumoCapitulo; selo?: string } | null>(null)
+  const [ficha, definirFicha] = useState<{ c: ResumoCapitulo; selo?: string; origem?: DOMRect } | null>(null)
   const [realce, definirRealce] = useState<string | null>(null)
   const [guia, definirGuia] = useState(false)
   const mudar = (m: Partial<FiltrosEstante>) => definirFiltros((f) => ({ ...f, ...m }))
   const limpar = () => definirFiltros({ ...FILTROS_PADRAO })
-  const abrirFicha = (c: ResumoCapitulo, selo?: string) => definirFicha({ c, selo })
+  const abrirFicha = (c: ResumoCapitulo, selo?: string, origem?: DOMRect) => definirFicha({ c, selo, origem })
   const s = usarSalao(capitulos, filtros.q, abrirFicha)
 
   // Um link novo (ex.: #/resumos?area=mao vindo do cronograma) troca os filtros; os filtros vão para o endereço.
@@ -191,14 +191,14 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
       <div key={modo} className="bb-vista">
         {modo === 'estante'
           ? filtrados.length > 0 && <Estante obras={obras} achados={achados} cobrados={cobrados} leituras={leituras} premium={premium} salao={s}
-              realce={realce} primeiraBusca={primeiraBusca} aoAbrir={(c) => abrirFicha(c)} salaRaros={salaRaros} />
+              realce={realce} primeiraBusca={primeiraBusca} aoAbrir={(c, origem) => abrirFicha(c, undefined, origem)} salaRaros={salaRaros} />
           : filtrados.length > 0 && <Lista obras={obras} filtrados={filtrados} agrupar={agrupar} relevancia={relevancia} q={filtros.q} leituras={leituras} marcas={marcas}
               indice={indice} premium={premium} aoAbrir={(c) => abrirFicha(c)} />}
       </div>
       {modo === 'lista' && salaRaros}
 
       <p className="bb-nota">Os resumos são texto autoral do OrtoQuestões a partir dos capítulos citados, com revisão técnica; as questões e os anos vêm do acervo do site. Figuras originais só aparecem quando há licença de reprodução.</p>
-      {fichaAtual && <Inspecao c={fichaAtual} selo={ficha?.selo} leitura={leituras[fichaAtual.id]} fechado={fichaAtual.acesso !== 'gratis' && !premium} indice={indice}
+      {fichaAtual && <Inspecao key={fichaAtual.id} c={fichaAtual} selo={ficha?.selo} origem={ficha?.origem} periodo={s.periodo} papel={preferencias.tema} leitura={leituras[fichaAtual.id]} fechado={fichaAtual.acesso !== 'gratis' && !premium} indice={indice}
         destaques={marcas.filter((m) => m.capitulo === fichaAtual.id && !m.marcador).length} aoFechar={() => { definirRealce(fichaAtual.id); definirFicha(null) }} />}
       {guia && <GuiaTour id="biblioteca" titulo="Como usar a Biblioteca" passos={PASSOS} aoFechar={() => definirGuia(false)} />}
     </div>

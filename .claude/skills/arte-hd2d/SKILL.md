@@ -60,6 +60,7 @@ Leia os scripts antes de pintar qualquer coisa nova e copie a técnica (cada scr
 | Arte da página Indique e ganhe: pilar de pedra em três peças, moldura de ouro de 9 fatias, parede da caverna e moedas | `scripts/gerar_arte_indicar.py` | `public/pixel/paginas/indicar/*` |
 | Dragão do tesouro (mascote, 9 linhas de 16 quadros de 224 x 112; `DragaoPixel`) | `scripts/gerar_dragao.py` | `public/pixel/mascote/dragao.png` |
 | Fogo da sequência e tochas | `scripts/gerar_sprites_inicio.py` | `fogo.png`, `tocha.png` |
+| Armários da Biblioteca (5 madeiras, nicho com luz por hora, cornija de 9 fatias, pilastras, rodapé, enfeites, selos de cera da raridade) e a mesa de leitura da ficha | `scripts/gerar_armario.py` | `public/pixel/biblioteca/armario/*` |
 
 A técnica, em ordem:
 1. **Pintar em pixel art pequena** (ex.: 480 x 160 ou 480 x 200), camada por camada (fundo, meio, objetos, frente),
