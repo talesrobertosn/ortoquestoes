@@ -23,10 +23,11 @@ Deno.serve(async (req) => {
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
     const usuario = await usuarioDoPedido(req)
-    const { plano, aceite_termos_versao, aceite_confirmado } = await req.json() as {
+    const { plano, aceite_termos_versao, aceite_confirmado, ampliar } = await req.json() as {
       plano?: keyof typeof planos
       aceite_termos_versao?: string
       aceite_confirmado?: boolean
+      ampliar?: boolean
     }
     if (!plano || !planos[plano]) return json({ erro: 'plano_invalido' }, 400, req)
     if (aceite_confirmado !== true || !aceite_termos_versao || !versoesCondicoesAceitas.includes(aceite_termos_versao)) {
@@ -47,16 +48,25 @@ Deno.serve(async (req) => {
 
     // Renovação pelo cartão de quem está num Pix (28/10/2026): nos 7 dias finais do Pix, a
     // assinatura no cartão nasce com a primeira cobrança marcada para o fim do período já pago,
-    // então nenhum dia se perde e nada é cobrado em dobro. Com um cartão vigente, não há o que renovar.
-    const vigentesResp = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=eq.ativa&fim_periodo=gt.${encodeURIComponent(new Date().toISOString())}&select=id_externo,fim_periodo`)
+    // então nenhum dia se perde e nada é cobrado em dobro.
+    // Ampliação do plano (14/11/2026): quem está num plano mais curto (Pix ou cartão) pode passar
+    // para um mais longo a qualquer momento. O plano novo nasce emendado: a primeira cobrança fica
+    // para o fim do período já pago, e o webhook cancela a recorrência curta assim que a nova é
+    // autorizada (ela vale até o fim do período e não renova mais).
+    const vigentesResp = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=eq.ativa&fim_periodo=gt.${encodeURIComponent(new Date().toISOString())}&select=id_externo,fim_periodo,plano`)
     if (!vigentesResp.ok) throw new Error('consulta_assinatura_falhou')
-    const vigentes = await vigentesResp.json() as Array<{ id_externo: string | null; fim_periodo: string | null }>
+    const vigentes = await vigentesResp.json() as Array<{ id_externo: string | null; fim_periodo: string | null; plano: string | null }>
     let inicioCobranca: string | null = null
     if (vigentes.length) {
-      if (!vigentes.every((a) => a.id_externo?.startsWith('pix:') && a.fim_periodo)) return json({ erro: 'Você já tem uma assinatura no cartão em andamento.' }, 409, req)
-      const fimPix = Math.max(...vigentes.map((a) => Date.parse(a.fim_periodo as string)))
-      if (fimPix - Date.now() > 7 * 864e5) return json({ erro: 'A renovação abre nos 7 dias antes do fim do seu Pix, e os dias que faltam continuam valendo.' }, 409, req)
-      inicioCobranca = new Date(fimPix).toISOString()
+      const mesesDe = (p: string | null) => PRECOS[p as keyof typeof PRECOS]?.meses ?? Infinity
+      const ehAmpliacao = ampliar === true && vigentes.every((a) => a.fim_periodo && mesesDe(a.plano) < planos[plano].frequency)
+      const soPix = vigentes.every((a) => a.id_externo?.startsWith('pix:') && a.fim_periodo)
+      if (!soPix && !ehAmpliacao) return json({ erro: 'Você já tem uma assinatura no cartão em andamento.' }, 409, req)
+      const fimPago = Math.max(...vigentes.map((a) => Date.parse(a.fim_periodo as string)))
+      if (!ehAmpliacao && fimPago - Date.now() > 7 * 864e5) return json({ erro: 'A renovação abre nos 7 dias antes do fim do seu Pix, e os dias que faltam continuam valendo.' }, 409, req)
+      inicioCobranca = new Date(fimPago).toISOString()
+    } else if (ampliar === true) {
+      return json({ erro: 'Não encontramos um plano vigente para ampliar. Atualize a página.' }, 409, req)
     }
 
     const centavos = await centavosPara(usuario.id, plano)

@@ -60,7 +60,7 @@ Deno.serve(async (req) => {
   if (req.method !== "POST") return json({ erro: "metodo_invalido" }, 405, req);
   try {
     const usuario = await usuarioDoPedido(req);
-    const { plano, aceite_termos_versao, aceite_confirmado } = await req.json();
+    const { plano, aceite_termos_versao, aceite_confirmado, ampliar } = await req.json();
     if (!plano || !planos[plano]) return json({ erro: "plano_invalido" }, 400, req);
     if (aceite_confirmado !== true || !aceite_termos_versao || !versoesCondicoesAceitas.includes(aceite_termos_versao)) {
       return json({ erro: "Atualize a p\xE1gina para revisar e aceitar as condi\xE7\xF5es atuais da assinatura." }, 400, req);
@@ -76,15 +76,20 @@ Deno.serve(async (req) => {
     if (!token || !origem || !payerEmail) return json({ erro: "checkout_nao_configurado" }, 503, req);
     const restritoContasTeste = ambiente === "teste" || Deno.env.get("MERCADO_PAGO_RESTRITO_CONTAS_TESTE") !== "false";
     if (restritoContasTeste && !await contaTesteAtiva(usuario.id)) return json({ erro: "checkout_requer_conta_teste" }, 403, req);
-    const vigentesResp = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=eq.ativa&fim_periodo=gt.${encodeURIComponent((/* @__PURE__ */ new Date()).toISOString())}&select=id_externo,fim_periodo`);
+    const vigentesResp = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=eq.ativa&fim_periodo=gt.${encodeURIComponent((/* @__PURE__ */ new Date()).toISOString())}&select=id_externo,fim_periodo,plano`);
     if (!vigentesResp.ok) throw new Error("consulta_assinatura_falhou");
     const vigentes = await vigentesResp.json();
     let inicioCobranca = null;
     if (vigentes.length) {
-      if (!vigentes.every((a) => a.id_externo?.startsWith("pix:") && a.fim_periodo)) return json({ erro: "Voc\xEA j\xE1 tem uma assinatura no cart\xE3o em andamento." }, 409, req);
-      const fimPix = Math.max(...vigentes.map((a) => Date.parse(a.fim_periodo)));
-      if (fimPix - Date.now() > 7 * 864e5) return json({ erro: "A renova\xE7\xE3o abre nos 7 dias antes do fim do seu Pix, e os dias que faltam continuam valendo." }, 409, req);
-      inicioCobranca = new Date(fimPix).toISOString();
+      const mesesDe = (p) => PRECOS[p]?.meses ?? Infinity;
+      const ehAmpliacao = ampliar === true && vigentes.every((a) => a.fim_periodo && mesesDe(a.plano) < planos[plano].frequency);
+      const soPix = vigentes.every((a) => a.id_externo?.startsWith("pix:") && a.fim_periodo);
+      if (!soPix && !ehAmpliacao) return json({ erro: "Voc\xEA j\xE1 tem uma assinatura no cart\xE3o em andamento." }, 409, req);
+      const fimPago = Math.max(...vigentes.map((a) => Date.parse(a.fim_periodo)));
+      if (!ehAmpliacao && fimPago - Date.now() > 7 * 864e5) return json({ erro: "A renova\xE7\xE3o abre nos 7 dias antes do fim do seu Pix, e os dias que faltam continuam valendo." }, 409, req);
+      inicioCobranca = new Date(fimPago).toISOString();
+    } else if (ampliar === true) {
+      return json({ erro: "N\xE3o encontramos um plano vigente para ampliar. Atualize a p\xE1gina." }, 409, req);
     }
     const centavos = await centavosPara(usuario.id, plano);
     const aceite = await banco("aceites_assinatura", {

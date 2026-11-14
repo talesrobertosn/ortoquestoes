@@ -124,7 +124,40 @@ async function sincronizarPreapproval(idRecurso: string) {
     })
     if (!atualizacao.ok) throw new Error('atualizacao_assinatura_falhou')
   }
+  if (status === 'ativa' && typeof preapproval.external_reference === 'string') {
+    await encerrarPlanosMaisCurtos(preapproval.external_reference, String(preapproval.id), PRECOS[plano].meses, token)
+  }
   return statusMercadoPago
+}
+
+/**
+ * Ampliação do plano (14/11/2026): quando a recorrência mais longa é autorizada, a mais curta da
+ * mesma pessoa deixa de renovar. Ela continua valendo até o fim do período já pago (cancelar_ao_fim),
+ * que é exatamente quando o plano novo faz a primeira cobrança. Nunca derruba o webhook: se o
+ * Mercado Pago recusar, os administradores recebem um alerta para cancelar à mão.
+ */
+async function encerrarPlanosMaisCurtos(idUsuario: string, idNovo: string, mesesNovo: number, token: string) {
+  const resposta = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&status=eq.ativa&cancelar_ao_fim=eq.false&id_externo=neq.${encodeURIComponent(idNovo)}&select=id,id_externo,plano`)
+  if (!resposta.ok) return
+  const outras = await resposta.json() as Array<{ id: string; id_externo: string | null; plano: string | null }>
+  for (const antiga of outras) {
+    if (!antiga.id_externo || antiga.id_externo.startsWith('pix:')) continue
+    const meses = PRECOS[antiga.plano as IdPlano]?.meses
+    if (!meses || meses >= mesesNovo) continue
+    try {
+      const cancelamento = await fetch(`https://api.mercadopago.com/preapproval/${encodeURIComponent(antiga.id_externo)}`, {
+        method: 'PUT', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ status: 'cancelled' }),
+      })
+      if (!cancelamento.ok) throw new Error(`mercado_pago_${cancelamento.status}`)
+      const agora = new Date().toISOString()
+      await banco(`assinaturas?id=eq.${encodeURIComponent(antiga.id)}`, { method: 'PATCH', body: JSON.stringify({ cancelar_ao_fim: true, cancelada_em: agora, atualizada_em: agora }) })
+    } catch (erro) {
+      await alertarAdministradores('Ampliação de plano precisa de atenção',
+        [`A pessoa ampliou para um plano de ${mesesNovo} meses, mas a recorrência antiga (${antiga.id_externo}) não foi cancelada.`,
+          `Código: ${String(erro).replace(/^Error: /, '').slice(0, 120)}`, 'Cancele a recorrência antiga no Mercado Pago para não haver cobrança em dobro.'],
+        'pagamentos', `ampliacao:${antiga.id_externo}`).catch(() => {})
+    }
+  }
 }
 
 /**

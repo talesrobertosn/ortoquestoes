@@ -86,7 +86,7 @@ pelo transtorno, explicar com calma o que foi feito e se colocar à disposição
 
 ## Desenvolvimento e publicações
 
-**SQL sempre na conversa (Tales, 13/11/2026):** toda vez que houver SQL para rodar no Supabase, mande o código completo na própria resposta, num bloco pronto para copiar e colar (além do arquivo em `supabase/colar-no-painel/`), dizendo o que ele faz e se altera dados. Nunca só o caminho do arquivo.
+**SQL sempre na conversa (Tales, 13/11/2026):** toda vez que houver SQL para rodar no Supabase, mande o código completo na própria resposta, num bloco pronto para copiar e colar (além do arquivo em `supabase/colar-no-painel/`), dizendo o que ele faz e se altera dados. Nunca só o caminho do arquivo. **Sempre em passo a passo (Tales, 14/11/2026):** numere os passos (abrir o SQL Editor do painel, colar, Run, o que deve aparecer), uma caixa de copiar e colar por SQL, na ordem em que roda. O mesmo vale para Edge Functions alteradas: rode `npm run funcoes:colar` e mande o passo a passo de colar cada `supabase/colar-no-painel/<função>.ts` no editor do painel (ou o comando `supabase functions deploy`). Quando não houver SQL, diga isso com clareza.
 
 Seguir a seção **Eficiência de desenvolvimento e GitHub Actions** do
 [AGENTS.md](AGENTS.md), fonte única das regras de agrupamento de alterações,
