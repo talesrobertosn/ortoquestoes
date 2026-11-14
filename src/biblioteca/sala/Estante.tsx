@@ -137,7 +137,21 @@ export function Estante({ obras, achados, cobrados, leituras, premium, salao, re
   }
 
   const porId = new Map(baias.map((b) => [b.id, b]))
+  // Ir direto a um livro (14/11/2026): uma lombada pequena por obra, na cor da capa; leva à estante e foca o primeiro volume.
+  const irPara = (id: string) => {
+    const alvo = document.getElementById(id)
+    if (!alvo) return
+    alvo.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })
+    window.setTimeout(() => alvo.querySelector<HTMLElement>('.bb-vol')?.focus({ preventScroll: true }), 450)
+  }
   return (
+    <>
+    {baias.length > 1 && <nav className="bb-ir" aria-label="Ir para um livro">
+      <span className="bb-ir__rotulo">Ir para</span>
+      <ul>{baias.map((b) => <li key={b.id}><button type="button" onClick={() => irPara(b.id)} style={{ '--capa': b.capa } as CSSProperties}>
+        <i aria-hidden="true">{b.cobrados ? '★' : ''}</i>{b.cobrados ? 'Mais cobrados' : b.titulo}<small className="numerico">{b.capitulos.length}</small>
+      </button></li>)}</ul>
+    </nav>}
     <div className={'bb-parede' + (celular ? ' bb-parede--celular' : '')} ref={parede} id="bb-estantes" onMouseLeave={esconder} onKeyDown={teclar}>
       {salaRaros}
       {fileiras.map((fileira, fi) => (
@@ -156,6 +170,7 @@ export function Estante({ obras, achados, cobrados, leituras, premium, salao, re
       ))}
       {pop && temMouse() && <FichaCurta c={pop.c} r={pop.r} leitura={leituras[pop.c.id]} aoEntrar={() => window.clearTimeout(fechar.current)} aoSair={esconder} />}
     </div>
+    </>
   )
 }
 
@@ -182,12 +197,13 @@ function BaiaEstante({ b, vagas, indice, celular, leituras, premium, salao, real
     <section id={b.id} className={`bb-baia bb-baia--${madeira}` + (b.cobrados ? ' bb-baia--cobrados' : '') + (passagem === 'girando' ? ' bb-baia--girando' : '')}
       style={{ '--vagas': vagas, '--capa': b.capa, ...armario(madeira, salao.periodo) } as CSSProperties} aria-labelledby={`${b.id}-t`}>
       <header className="bb-baia__placa">
-        <span className="bb-baia__capa" aria-hidden="true">{b.cobrados ? <b>★</b> : <><b>{b.titulo.split(' ')[0]}</b><small>{b.edicoes.split(' e ')[0]}</small></>}</span>
+        <span className="bb-baia__capa" aria-hidden="true">{b.cobrados ? <b>★</b> : <><b>{b.titulo.split(' ')[0].slice(0, 9)}</b><small>{edicaoCurta(b.edicoes)}</small></>}</span>
         <div className="bb-baia__nome">
-          <h2 id={`${b.id}-t`}>{b.titulo} <small>{b.cobrados ? '' : `${b.edicoes} · `}{b.capitulos.length < b.total ? `${b.capitulos.length} de ${b.total}` : b.total} {b.total === 1 ? 'resumo' : 'resumos'}</small></h2>
+          <h2 id={`${b.id}-t`} title={b.cobrados ? undefined : `${b.titulo}, ${b.edicoes}`}>{b.titulo}</h2>
+          <p className="bb-baia__meta">{!b.cobrados && edicaoCurta(b.edicoes) && <>{edicaoCurta(b.edicoes)} · </>}{b.capitulos.length < b.total ? `${b.capitulos.length} de ${b.total}` : b.total} {b.total === 1 ? 'resumo' : 'resumos'}
+            {!b.cobrados && <span className={'bb-baia__conta' + (completo ? ' bb-baia__conta--completa' : '')}>{completo ? 'Coleção completa' : <><b className="numerico">{b.lidos}</b> lidos</>}</span>}</p>
           {b.sobre && <p className="bb-baia__sobre">{b.sobre}</p>}
         </div>
-        {!b.cobrados && <p className={'bb-baia__conta' + (completo ? ' bb-baia__conta--completa' : '')}>{completo ? 'Coleção completa' : <><b className="numerico">{b.lidos}</b> de {b.total} lidos</>}</p>}
       </header>
       <div className={'bb-baia__corpo' + (celular ? ' bb-baia__corpo--rola' : '')} ref={prateleira} style={{ '--linhas': linhas } as CSSProperties}>
         {passagem === 'aberta' ? <p className="bb-passagem">A estante girou. A Sala dos raros está aberta no alto da parede.</p> : <ul className="bb-livros" aria-label={b.cobrados ? 'Mais cobrados nas provas' : `Resumos do ${b.titulo}`}>
@@ -208,6 +224,14 @@ function BaiaEstante({ b, vagas, indice, celular, leituras, premium, salao, real
  * ampulheta, globo, castiçal com a chama do site, pilha de livros deitados, crânio de estudo e tinteiro. Nunca um
  * livro em pé falso. Quatro arranjos, um por estante, em rodízio.
  */
+/** A edição em poucas letras ("10ª ed.") a partir do rótulo longo das edições ("10ª ed. e 10ª edição; Campbell's..."). */
+export function edicaoCurta(edicoes: string): string {
+  const n = edicoes.match(/(\d+)\s*[ªa]/)?.[1]
+  if (n) return `${n}ª ed.`
+  const ano = edicoes.match(/(19|20)\d{2}/)?.[0]
+  return ano ? `ed. ${ano}` : ''
+}
+
 const ARRANJOS: string[][] = [['aparador', 'pilha', 'globo'], ['ampulheta', 'tinteiro', 'cranio'], ['pilha', 'castical', 'aparador'], ['globo', 'ampulheta', 'castical']]
 const TAMANHO_ENFEITE: Record<string, [number, number]> = { aparador: [11, 20], ampulheta: [12, 18], globo: [17, 22], castical: [10, 18], pilha: [24, 14], cranio: [13, 12], tinteiro: [12, 20] }
 function Enfeite({ i }: { i: number }) {
@@ -216,11 +240,11 @@ function Enfeite({ i }: { i: number }) {
     {itens.map((nome) => {
       const [w, h] = TAMANHO_ENFEITE[nome]
       return <span key={nome} className={`bb-enfeite__peca bb-enfeite__peca--${nome}`}>
-        <img src={pecaArmario(`enfeite-${nome}.png`)} width={w * 3} height={h * 3} alt="" loading="lazy" decoding="async" />
+        <img src={pecaArmario(`enfeite-${nome}.png`)} width={w * 2} height={h * 2} alt="" loading="lazy" decoding="async" />
         {nome === 'castical' && <span className="bb-enfeite__chama" />}
       </span>
     })}
-    {i % 4 === 2 && <Sprite grade={PLANTA} paleta={PALETA_PLANTA} px={3} />}
+    {i % 4 === 2 && <Sprite grade={PLANTA} paleta={PALETA_PLANTA} px={2} />}
   </span>
 }
 
@@ -231,7 +255,7 @@ function Volume({ c, leitura, fechado, comLivro, alvo, ativo, guia, aoMostrar, a
   const estado = estadoLeitura(leitura)
   const r = raridade(c.questoes.length)
   const n = numeroCapitulo(c)
-  const estilo = { '--cor': corDaArea(c.especialidade), '--alt': `${148 + Math.round(Math.min(c.minutos, 70) / 70 * 34)}px` } as CSSProperties
+  const estilo = { '--cor': corDaArea(c.especialidade), '--alt': `${110 + Math.round(Math.min(c.minutos, 70) / 70 * 26)}px` } as CSSProperties
   const rotulo = `${c.titulo}. ${rotuloLivro(c)}${n === Number.MAX_SAFE_INTEGER ? '' : `, capítulo ${n}`}. Cerca de ${c.minutos} minutos, ${c.questoes.length} questões de prova. ${estado === 'andamento' ? `${pctLido(leitura)}% lido` : ESTADO_NOME[estado]}${fechado ? ', para assinantes' : ''}. Abrir a ficha.`
   return (
     <li className="bb-vol-li">

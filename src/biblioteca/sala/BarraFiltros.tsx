@@ -58,7 +58,15 @@ export function BarraFiltros(p: Props) {
 
   return (
     <div className="bb-barra-filtros" id="bb-resultados" data-guia="filtros">
+      {/* A busca fica sempre à vista na barra (14/11/2026, Tales: "deixar a barra de pesquisa mais óbvia"): no
+          computador a barra acompanha a rolagem, então dá para procurar de qualquer prateleira. */}
       <div className="bb-barra-filtros__linha">
+        <label className="bb-filtro-busca">
+          <Icone nome="busca" tamanho={18} />
+          <span className="so-leitor">Buscar na biblioteca</span>
+          <input type="search" value={p.filtros.q} onChange={(e) => p.mudar({ q: e.target.value })} placeholder="Buscar resumo, livro ou classificação" enterKeyHint="search" autoComplete="off" />
+          {p.filtros.q && <button type="button" className="bb-filtro-busca__limpar" onClick={() => p.mudar({ q: '' })} aria-label="Limpar a busca"><Icone nome="fechar" tamanho={15} /></button>}
+        </label>
         <div className="bb-modo" role="group" aria-label="Como ver a biblioteca">
           <button type="button" aria-pressed={p.modo === 'estante'} onClick={() => p.aoModo('estante')}><Icone nome="livro" tamanho={16} /> Estante</button>
           <button type="button" aria-pressed={p.modo === 'lista'} onClick={() => p.aoModo('lista')}><Icone nome="menu" tamanho={16} /> Lista</button>
