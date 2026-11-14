@@ -312,3 +312,7 @@ onde caiba).
 Tales aprovou o sexto cenário, **Abrigo das Águas**: pátio de pedra molhada, arco, lago e castelo, com fogueira/espada e os três mascotes oficiais. Script `scripts/cenarios/inicio_abrigo.py`. O cenário usa âncoras próprias para fogo e esqueleto, sem alterar as dos cinco anteriores. A pintura de fundo não duplica personagens, espada ou chama.
 
 O terreno da inicial é igual para todos por seis faixas de quatro horas em Brasília, com ordem embaralhada a cada dia e estável nas recargas. A troca ocorre na virada e ao voltar à aba. Detalhes e testes em [ABRIGO-DAS-AGUAS.md](ABRIGO-DAS-AGUAS.md).
+
+## Login aprovado em 14/11/2026
+
+O Tales abandonou a Suíça e aprovou a biblioteca natalina com bonfire sempre acesa, lanterna na janela e oclusão ambiente. Substitui a direção anterior do login. Ver [LOGIN-BIBLIOTECA.md](LOGIN-BIBLIOTECA.md) para geração, composição e apoios dos pets.

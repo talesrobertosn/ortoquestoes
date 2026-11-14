@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
+import { createPortal } from 'react-dom'
 import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixel'
 
 /*
@@ -7,6 +8,8 @@ import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixe
  * da lareira da página (Luz.css), quente do lado esquerdo. Só o desenho: os campos não dependem dela.
  */
 export function CorujaDoPainel() {
+  const [apoio, definirApoio] = useState<HTMLElement | null>(null)
+  useEffect(() => { definirApoio(document.getElementById('pc-coruja')) }, [])
   const ref = useRef<HTMLSpanElement>(null)
   const [estado, definirEstado] = useState<EstadoCoruja>('lendo')
   useEffect(() => {
@@ -21,9 +24,10 @@ export function CorujaDoPainel() {
     painel.addEventListener('submit', enviou)
     return () => { window.clearTimeout(volta); painel.removeEventListener('focusin', foco); painel.removeEventListener('focusout', saiu); painel.removeEventListener('submit', enviou) }
   }, [])
-  return (
+  const desenho = (
     <span ref={ref} className="pa-coruja bicho-luz luz-esq luz-fogo" aria-hidden="true" style={{ '--luz-q': 0.45, '--luz-f': 0.2 } as CSSProperties}>
       <CorujaPixel key={estado} estado={estado} />
     </span>
   )
+  return apoio ? createPortal(desenho, apoio) : desenho
 }

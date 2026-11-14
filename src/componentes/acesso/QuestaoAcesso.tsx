@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { href } from '../../util/rotas'
 import { destinosDaAmostra } from '../../dados/rodizioAmostras'
 import { GatoPixel } from '../mascote/GatoPixel'
@@ -22,6 +23,8 @@ export function QuestaoAcesso() {
   const [falhou, definirFalhou] = useState(false)
   const [marcada, definirMarcada] = useState<string | null>(null)
   const [gato, definirGato] = useState<IdLinhaGato>('dormindo')
+  const [apoioGato, definirApoioGato] = useState<HTMLElement | null>(null)
+  useEffect(() => { definirApoioGato(document.getElementById('pc-gato')) }, [])
   const ficha = useRef<HTMLElement>(null)
   const voltarFoco = useRef(false)
 
@@ -62,7 +65,7 @@ export function QuestaoAcesso() {
   return (
     <figure ref={ficha} className={`fq${respondida ? ' fq--respondida' : ''}`} aria-label="Questão para experimentar" aria-busy={!amostra || undefined} data-amostra={resumo.id}>
       {/* O gato da casa, deitado na beira da ficha (fica fora da caixa, sem cobrir o texto). */}
-      <span className="fq-gato" aria-hidden="true"><GatoPixel key={gato} estado={gato} /></span>
+      {apoioGato && createPortal(<span className="fq-gato" aria-hidden="true"><GatoPixel key={gato} estado={gato} /></span>, apoioGato)}
       <figcaption className="fq-topo">
         <span className="fq-selo">Experimente</span>
         <span className="fq-prova">{resumo.origem}<span aria-hidden="true"> · </span>{resumo.tema}</span>
