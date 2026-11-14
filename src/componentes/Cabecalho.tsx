@@ -12,9 +12,8 @@ import { MenuGeral } from './MenuGeral'
 // Destinos em cima (computador) e embaixo (celular, até 40rem), com os mesmos
 // ícones. Entre 40 e 56rem a barra de baixo ainda não aparece e o topo não
 // comporta tudo: os secundários (Cronograma e Ranking) saem e continuam no Menu.
-// Flashcards saiu do beta em 25/10/2026 (pedido do Tales). Em 13/11/2026 o Tales
-// pediu os Resumos no lugar dos Flashcards na barra de cima; os Flashcards seguem
-// na barra de baixo do celular e no Menu. A Revisão continua no menu e na página inicial.
+// Flashcards saiu do beta em 25/10/2026 (pedido do Tales). Em 13 e 14/11/2026 o Tales
+// pediu os Resumos no lugar dos Flashcards nas duas barras; os Flashcards seguem no Menu. A Revisão continua no menu e na página inicial.
 interface Destino { destino: string; rotulo: string; icone: NomeIcone; secundario?: boolean; beta?: boolean; classe?: string }
 const LINKS: Destino[] = [
   { destino: '/treinar', rotulo: 'Treinar', icone: 'livro' },
@@ -23,10 +22,10 @@ const LINKS: Destino[] = [
   { destino: '/dados', rotulo: 'Desempenho', icone: 'grafico' },
   { destino: '/ranking', rotulo: 'Ranking', icone: 'trofeu', secundario: true, classe: 'ranking' },
 ]
-/** Barra de baixo: Início, Treinar, Flashcards, Cronograma, Ranking, Desempenho e o Menu. */
+/** Barra de baixo: Início, Treinar, Resumos, Cronograma, Ranking, Desempenho e o Menu (os Flashcards ficam no Menu). */
 const LINKS_CELULAR: Destino[] = [
   { destino: '/', rotulo: 'Início', icone: 'mapa' },
-  LINKS[0], { destino: '/flashcards', rotulo: 'Flashcards', icone: 'raio' }, LINKS[2], LINKS[4], LINKS[3],
+  LINKS[0], LINKS[1], LINKS[2], LINKS[4], LINKS[3],
 ]
 
 /** Primeiro nome do cadastro, como nos e-mails: vazio quando não parece um nome. */
