@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { recurso } from '../../config'
 import { usarPeriodo } from '../../estado/aparencia'
 import '../../estilos/componentes/CenaTorre.css'
@@ -25,7 +25,9 @@ const POEIRA = [
 const FAGULHAS = [{ x: 1316, y: 520, d: 7, a: 0 }, { x: 1352, y: 500, d: 8, a: -2 }, { x: 1384, y: 530, d: 6, a: -4 }, { x: 1334, y: 470, d: 9, a: -5 }]
 
 export function CenaArquivo({ visitantes = false }: { visitantes?: boolean }) {
-  const [fala, definirFala] = useState<string | null>(null)
+  const [fala, definirFala] = useState<{ quem: 'coruja' | 'gato'; texto: string } | null>(null)
+  const coruja = useRef<HTMLButtonElement>(null), gato = useRef<HTMLButtonElement>(null), balao = useRef<HTMLButtonElement>(null)
+  const [posicao, definirPosicao] = useState({ left: 0, top: 0, seta: 20, abaixo: false })
   useEffect(() => { if (!fala) return; const t=setTimeout(()=>definirFala(null),10000); return ()=>clearTimeout(t) },[fala])
   const [abaOculta, definirAbaOculta] = useState(document.hidden)
   useEffect(()=>{const mudou=()=>definirAbaOculta(document.hidden);document.addEventListener('visibilitychange',mudou);return ()=>document.removeEventListener('visibilitychange',mudou)},[])
@@ -39,6 +41,28 @@ export function CenaArquivo({ visitantes = false }: { visitantes?: boolean }) {
     io.observe(el)
     return () => io.disconnect()
   }, [])
+  useLayoutEffect(() => {
+    if (!fala || !palco.current || !balao.current) return
+    const posicionar = () => {
+      const cena = palco.current!.getBoundingClientRect(), b = balao.current!.getBoundingClientRect()
+      const origem = (fala.quem === 'gato' ? gato : coruja).current!.getBoundingClientRect()
+      const outro = (fala.quem === 'gato' ? coruja : gato).current!.getBoundingClientRect()
+      const centro = origem.left + origem.width / 2 - cena.left, margem = 8, intervalo = 10
+      let left = Math.max(margem, Math.min(centro - b.width / 2, cena.width - b.width - margem))
+      const abaixo = origem.top - cena.top < b.height + intervalo + margem
+      const top = abaixo ? origem.bottom - cena.top + intervalo : origem.top - cena.top - b.height - intervalo
+      // Na tela estreita, afasta o balão do outro visitante mantendo a ponta junto de quem falou.
+      if (top < outro.bottom - cena.top + margem && top + b.height > outro.top - cena.top - margem) {
+        const esquerdaLivre = outro.left - cena.left - b.width - margem
+        if (esquerdaLivre >= margem) left = Math.min(left, esquerdaLivre)
+      }
+      definirPosicao({ left, top: Math.max(margem, top), seta: Math.max(14, Math.min(b.width - 14, centro - left)), abaixo })
+    }
+    posicionar()
+    const observer = new ResizeObserver(posicionar)
+    observer.observe(palco.current); observer.observe(balao.current)
+    return () => observer.disconnect()
+  }, [fala])
   const img = (nome: string) => recurso(`pixel/flashcards/${nome}`)
   const fundo = `arquivo-${periodo}`
   const graos = periodo === 'noite' ? FAGULHAS : POEIRA
@@ -51,9 +75,9 @@ export function CenaArquivo({ visitantes = false }: { visitantes?: boolean }) {
           style={{ left: pct(l.x - l.r, BASE.w), top: pct(l.y - l.r, BASE.h), width: pct(l.r * 2, BASE.w), height: pct(l.r * 2, BASE.h), animationDelay: `${-i * 0.9}s` }} />)}
         <span className="ca-cena__cripta" style={{ left: pct(CRIPTA.x - CRIPTA.r, BASE.w), top: pct(CRIPTA.y - CRIPTA.r, BASE.h), width: pct(CRIPTA.r * 2, BASE.w), height: pct(CRIPTA.r * 2, BASE.h) }} />
         <span className="ct-cena__graos">{graos.map((g, i) => <i key={i} style={{ left: pct(g.x, BASE.w), top: pct(g.y, BASE.h), animationDuration: `${g.d}s`, animationDelay: `${g.a}s` }} />)}</span>
-        {visitantes && <><button type="button" className="ca-pet ca-pet--coruja" aria-label="Falar com a coruja: conceito de prova" onClick={()=>definirFala(proximaFala('coruja',CONCEITOS_CORUJA))}><CorujaPixel estado={fala ? 'lendo' : 'parada'}/></button><button type="button" className="ca-pet ca-pet--gato" aria-label="Falar com o gato" onClick={()=>definirFala(proximaFala('gato',FALAS_GATO))}><GatoPixel estado="dormindo"/></button></>}
+        {visitantes && <><button ref={coruja} type="button" className="ca-pet ca-pet--coruja" aria-label="Falar com a coruja: conceito de prova" onClick={()=>definirFala({quem:'coruja',texto:proximaFala('coruja',CONCEITOS_CORUJA)})}><CorujaPixel estado={fala?.quem === 'coruja' ? 'lendo' : 'parada'}/></button><button ref={gato} type="button" className="ca-pet ca-pet--gato" aria-label="Falar com o gato" onClick={()=>definirFala({quem:'gato',texto:proximaFala('gato',FALAS_GATO)})}><GatoPixel estado="dormindo"/></button></>}
       </div>
-      {visitantes && fala && <button className="ca-fala" type="button" role="status" aria-label={`Fechar fala do mascote. ${fala}`} onClick={()=>definirFala(null)}>{fala}</button>}
+      {visitantes && fala && <button ref={balao} className={`ca-fala${posicao.abaixo ? ' ca-fala--abaixo' : ''}`} data-quem={fala.quem} style={{left:posicao.left,top:posicao.top}} type="button" role="status" aria-label={`Fechar fala do mascote. ${fala.texto}`} onClick={()=>definirFala(null)}><span>{fala.texto}</span><i aria-hidden="true" style={{left:posicao.seta}} /></button>}
     </div>
   )
 }
