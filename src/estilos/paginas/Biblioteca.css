@@ -314,7 +314,9 @@ button.bb-obj:disabled { cursor: default; }
 /* Tudo em 2x (14/11/2026, Tales: "tudo 25% menor"): a pixel art continua com pixels inteiros e nítidos. */
 .bb-parede { display: grid; gap: var(--e-4); padding: var(--e-4); border-radius: 16px; background: #24170d var(--bb-fundo) 0 0 / 96px 96px; image-rendering: pixelated;
   box-shadow: inset 0 0 0 3px #140c06, inset 0 24px 48px rgba(0, 0, 0, 0.45); }
-.bb-fileira { display: flex; gap: var(--e-3); align-items: flex-start; content-visibility: auto; contain-intrinsic-size: auto 560px; }
+/* Sem content-visibility (14/11/2026): no celular a altura reservada (560 px) era bem maior que a estante real e a
+   página encolhia ao subir, empurrando o dedo para baixo ("não dá para rolar para cima"). */
+.bb-fileira { display: flex; gap: var(--e-3); align-items: flex-start; }
 .bb-coluna { display: flex; flex-direction: column; gap: var(--e-3); min-width: 0; }
 .bb-baia { position: relative; min-width: 0; display: flex; flex-direction: column; background: #1d120a; image-rendering: pixelated; container-type: inline-size;
   box-shadow: 0 0 0 2px #140c06, 0 12px 24px rgba(0, 0, 0, 0.5); scroll-margin-top: calc(var(--altura-cabecalho, 64px) + 76px); }
