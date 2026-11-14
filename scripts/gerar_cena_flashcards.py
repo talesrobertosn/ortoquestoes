@@ -24,6 +24,7 @@ Uso: <python com numpy e pillow> scripts/gerar_cena_flashcards.py [manha|tarde|n
 from __future__ import annotations
 
 import math
+import json
 import sys
 from pathlib import Path
 
@@ -86,6 +87,16 @@ def lado_de_fora() -> Camada:
     c.ret(tx, 38, 1, 5, "#3a3438")
     c.disco(tx + 0.5, 70.5, 4.2, ("#fff2c8", "#f0d498", "#c8a060"))
     c.p(tx, 68, "#3a2a22"); c.p(tx + 1, 70, "#3a2a22"); c.p(tx + 2, 71, "#3a2a22")
+    # Cidade distante: telhas, cornijas, persianas e janelas individualizadas.
+    for i in range(12):
+        xx=74+i*8; yy=112+(i%3)*3
+        c.ret(xx,yy,5,1,'#b9a28e')
+        c.ret(xx+1,yy+3,2,3,'#6c6968')
+        c.ret(xx+3,yy+3,1,3,'#463e42')
+        for k in range(3):c.p(xx+k,yy-2-k%2,'#b28972')
+    c.ret(140,78,13,1,'#b4a59b')
+    c.ret(141,84,11,1,'#8a8380')
+    c.ret(144,92,2,5,'#363d48');c.ret(149,92,2,5,'#363d48')
     return c
 
 
@@ -262,7 +273,7 @@ def fichario(c: Camada, e: Camada, luzes: list) -> None:
     c.ret(lx - 3, ly - 6, 1, topo - 12 - ly + 6, "#ffffff", 0.5)
     c.ret(lx - 4, ly - 7, 9, 1, "#8a5a1e")
     e.ret(lx - 1, ly - 2, 3, 6, "#ffb040"); e.ret(lx, ly - 3, 1, 6, "#fff2c0"); e.p(lx, ly - 4, "#ffd890")
-    luzes.append((lx, ly, 70, 0.9, "#ffaa50", 1.0))
+    luzes.append((lx, ly, 70, 0.9, "#ffaa50", 0.75))
     luzes.append((lx, ly + 20, 34, 1.0, "#ffc070", 0.5))
     luzes.append((lx + 20, ly + 70, 150, 0.7, "#ff9a50", 0.22 if P == "noite" else 0.08))
 
@@ -337,6 +348,172 @@ def mesa_da_frente() -> tuple[Camada, Camada]:
     return c, e
 
 
+def microdetalhes(c: Camada, e: Camada, luzes: list) -> None:
+    """Nogueira entalhada, latão martelado, cerâmica, papéis e vidro; sementes fixas.
+    Os postos dos visitantes ficam livres: coruja (333, 65), gato (392, 183).
+    """
+    g = np.random.default_rng(1113)
+    # Caixotões no teto: juntas, veios longos, cavilhas e consoles.
+    for xx in range(0, W, 64):
+        c.poligono([(xx, 0), (xx+9, 0), (xx+37, 25), (xx+30, 25)], '#34251c')
+        c.linha(xx+9, 1, xx+37, 25, '#a07846')
+        c.linha(xx+3, 1, xx+31, 25, '#5f422b')
+        for k in range(3):
+            c.linha(xx+12+k*3, 5, xx+29+k*2, 20, '#493323')
+        c.ret(xx+30, 24, 8, 4, '#6a482d'); c.p(xx+32, 25, '#bb8a4d')
+    c.ret(0, 25, W, 4, '#3d2b20'); c.ret(0, 25, W, 1, '#aa7a48')
+    c.ret(0, 29, W, 1, '#201a18')
+    for xx in range(2, W, 7):
+        c.ret(xx, 27, 3, 1, '#7b5636')
+    # Estante inteira à direita do janelão, acima do fichário.
+    for y in (32, 61):
+        c.ret(236, y, 172, 3, '#35241b'); c.ret(235, y, 174, 1, '#a87a46')
+        c.ret(236,y+3,172,2,'#171614',.55)
+    palette=['#385e56','#674339','#345061','#74613b','#654d62','#7d5a3d']
+    x=242
+    while x<402:
+        bw=int(g.integers(3,7)); bh=int(g.integers(12,24)); col=palette[int(g.integers(0,len(palette)))]
+        c.ret(x,61-bh,bw,bh,col);c.ret(x,61-bh,1,bh,mistura(col,'#dcc394',.35));c.ret(x+bw-1,61-bh,1,bh,'#252025')
+        for yy in (63-bh,58,54):
+            c.ret(x+1,yy,max(1,bw-2),1,'#bba26c',.7)
+        if bw>=5:c.ret(x+2,49,1,3,'#dbbd88',.7)
+        x+=bw+1
+    # Poste entalhado e gavetas polidas: contraste de materiais.
+    for xx in (248,411):
+        c.ret(xx,71,3,103,'#6d492d');c.ret(xx,73,1,100,'#be8c50')
+        for yy in (76,165):c.ret(xx-1,yy,5,3,'#bc8a4e');c.ret(xx,yy+3,3,1,'#392719')
+    for li in range(6):
+        for co in range(6):
+            x,y=256+co*25,80+li*15
+            if (li,co)==(2,3):continue
+            # Veios, cantos gastos, rebites e sombra do porta-etiqueta.
+            for i in range(13):
+                px=x+int(g.integers(2,22));py=y+int(g.integers(1,13))
+                c.ret(px,py,int(g.integers(1,4)),1,'#b58752',.24)
+            c.ret(x+1,y+1,21,1,'#a67443',.7);c.ret(x+1,y+12,21,1,'#281b13')
+            c.ret(x+8,y+7,8,1,'#1d1714',.7)
+            c.p(x+8,y+3,'#ffe0a0');c.p(x+16,y+3,'#806036')
+            c.p(x+10,y+10,'#fff1b7');c.p(x+14,y+11,'#392d22')
+    # Relógio de mesa: madeira, mostrador sem números e ponteiros.
+    c.ret(372,59,25,10,'#473124');c.ret(370,66,29,3,'#8e6338')
+    c.disco(384,53,11,('#b28a53','#755332','#33291f'))
+    c.disco(384,53,8,('#eee1bc','#cabc98','#9b8d70'))
+    for i in range(12):
+        angle=i*math.tau/12
+        c.p(384+math.sin(angle)*6,53-math.cos(angle)*6,'#554b3e')
+    c.linha(384,53,380,50,'#42392d');c.linha(384,53,387,48,'#42392d');c.p(384,53,'#c59853')
+    # Lanterna trabalhada, com contornos visíveis na luz.
+    lx,ly=LAMP
+    c.ret(lx-7,ly-10,15,2,'#3c3024');c.ret(lx-5,ly-13,11,3,'#906c3b')
+    c.ret(lx-4,ly-14,9,1,'#e6bb69');c.ret(lx-1,ly-17,3,3,'#6d532c')
+    for xx in (lx-5,lx+5):c.ret(xx,ly-8,1,18,'#d9ac5e')
+    c.ret(lx-4,ly-7,2,15,'#faeac4',.42);c.ret(lx+2,ly-6,1,12,'#a7d9d0',.35)
+    c.ret(lx-6,ly+10,13,2,'#e3b869');c.ret(lx-7,ly+12,15,2,'#6e4b2b')
+    # Planta pendente em vaso de cerâmica, à direita do fichário.
+    c.ret(399,63,9,7,'#80654a');c.ret(398,62,11,2,'#c0a179');c.ret(400,65,2,4,'#c4a37a')
+    for i in range(24):
+        xx=395+int(g.integers(0,18)); yy=53+int(g.integers(0,10))
+        c.ret(xx,yy,2,2,['#345541','#567a4b','#79955c'][i%3])
+    c.linha(410,60,412,81,'#405d3c')
+    for yy in range(64,82,3):c.ret(410+(yy%2),yy,3,2,'#66864c')
+    # Ombreiras de pedra, juntas e aduelas da escada.
+    cx=448
+    for xx in (416,476):
+        cantaria(c,xx, min(W,xx+4),121,182,74,('#514a40','#756d5b','#95836b','#bdab8a'),alt=7,larg=5,musgo_de=.9)
+    for i in range(13):
+        a=math.pi+i*math.pi/12
+        x,y=cx+math.cos(a)*30,120+math.sin(a)*26
+        c.linha(x,y,cx+math.cos(a)*35,120+math.sin(a)*31,'#b3a087',grossura=3)
+        c.p(x,y,'#d6bea0')
+    # Chama da entrada em uma pequena luminária de cobre.
+    c.ret(418,102,1,17,'#4b3a2a');c.ret(415,107,7,10,'#84663a')
+    c.ret(417,108,3,7,'#ffe1a0');e.ret(418,109,1,5,'#fff2c0')
+    luzes.append((418,112,22,1.2,'#ffb65e',.6))
+
+
+def acabamento_sala(c: Camada, e: Camada, luzes: list) -> None:
+    """Segunda passagem: cortina, alvenaria, credenza, flores e objetos de uso."""
+    # Cortina em linho verde, presa à madeira do vão.
+    c.ret(62,31,6,101,'#33584d')
+    for xx in range(62,68):
+        c.ret(xx,32,1,98,['#253d38','#547566','#829278','#4d6a58','#314c42','#233d35'][xx-62])
+    c.ret(61,96,8,3,'#b79b58'); c.ret(64,99,1,18,'#d4b974')
+    # Rodapé e friso do peitoril: marcas de pedra à luz da janela.
+    for yy in range(135,148):
+        for xx in range(67,178):
+            if hash01(xx,yy,88)>.83:c.p(xx,yy,'#aa9270',.24)
+    # Credenza sob a janela, portas com moldura e puxadores.
+    c.ret(73,147,94,31,'#392b20');c.ret(71,145,98,3,'#9b7747')
+    c.ret(71,145,98,1,'#c5a06b');c.ret(74,177,92,3,'#211b17')
+    for x in (76,107,138):
+        c.ret(x,151,26,23,'#624830');c.ret(x+2,153,22,19,'#36291f')
+        c.ret(x+3,154,20,17,'#775537');c.ret(x+3,154,20,1,'#a07b4a')
+        c.ret(x+5,157,16,12,'#604630');c.ret(x+23,161,2,3,'#d9b16b')
+        for yy in range(155,171,3):c.ret(x+5,yy,14,1,'#b28a52',.18)
+    # Vasos, jarra de água e flores no peitoril.
+    c.ret(145,131,12,12,'#69867b');c.ret(147,131,3,10,'#b7c2a2')
+    c.ret(143,129,16,2,'#a8b599');c.ret(154,132,6,6,'#405c52');c.ret(156,133,2,3,'#8c9e88')
+    for i in range(16):
+        x=90+int(hash01(i,4,21)*19);y=122+int(hash01(i,5,22)*12)
+        c.linha(98,141,x,y,'#556c3c');c.ret(x,y,2,2,'#d8b67d' if i%3 else '#b56f48')
+    c.ret(94,136,10,9,'#7a4e35');c.ret(93,136,12,2,'#b18455')
+    # Caixas de tecido e cordões no armário baixo.
+    for x,y,col in ((78,140,'#4e6155'),(119,137,'#89664a')):
+        c.ret(x,y,18,5,col);c.ret(x-1,y,20,1,'#bda477');c.ret(x+8,y,1,5,'#d8c28c')
+    # Pátina e pequenas fissuras nas pedras da porta.
+    for i in range(55):
+        x=416+int(hash01(i,2,52)*63);y=91+int(hash01(i,3,52)*91)
+        if x<421 or x>474 or y<98:
+            c.p(x,y,'#e0c5a0',.45)
+    # Luminária quente com refletor acima da mesa.
+    c.linha(205,31,205,119,'#453529');c.ret(201,117,9,2,'#b8934e')
+    c.poligono([(196,123),(215,123),(210,116),(201,116)],'#8d6b3d')
+    c.ret(197,123,17,2,'#dbb76d');e.ret(201,125,9,2,'#ffd18a')
+    luzes.append((205,130,68,1.0,'#ffc77a',.65))
+    luzes.append((234,162,57,.9,'#f3bd76',.35))
+
+
+def mesa_de_leitura(c: Camada, e: Camada, luzes:list) -> None:
+    """Bancada de leitura em primeiro plano: perspectiva, pés, fichas e tinteiro."""
+    # Sombra de contato da bancada no piso.
+    c.mascara(elipse_m(236,190,64,5),'#100f15',.6)
+    for xx in (184,285):
+        c.poligono([(xx,164),(xx+7,164),(xx+5,199),(xx+1,199)],'#38271e')
+        c.linha(xx+1,167,xx+2,197,'#9b6e40')
+        c.ret(xx-1,194,8,3,'#6e482b')
+    c.poligono([(180,154),(290,154),(307,169),(168,169)],'#aa7b4b')
+    c.ret(168,169,139,4,'#67412a');c.ret(168,169,139,1,'#dbac68')
+    c.ret(171,173,134,3,'#37251b')
+    for y in range(156,168,3):
+        c.linha(180-(y-154)*.8,y,290+(y-154)*1.1,y,'#6e4e31',.65)
+    for i in range(60):
+        x=int(185+hash01(i,2,112)*100);y=156+i%12
+        c.ret(x,y,2+i%5,1,'#e7bc78',.35)
+    # Livro aberto, páginas, dobra central e marcador de veludo.
+    c.poligono([(212,153),(229,155),(246,152),(253,164),(231,166),(209,164)],'#49332b')
+    c.poligono([(214,151),(231,154),(245,151),(250,162),(231,164),(211,162)],'#e7d5af')
+    c.linha(231,154,231,164,'#8e7858')
+    for y in (155,158,161):
+        c.linha(216,y,228,y+1,'#b8a181');c.linha(234,y+1,244,y,'#ae9976')
+    c.linha(234,153,239,167,'#a34532')
+    # Fichas empilhadas, marcador e lupa de latão.
+    for i in range(4):c.ret(266+i%2,159-i,19,2,'#e5d5b5' if i%2 else '#bcae90')
+    c.ret(269,155,4,2,'#447f71')
+    c.disco(258,158,3,('#d6b574','#86703c','#3e3529'))
+    c.disco(258,158,2,('#a0b4b1','#768581','#65766f'))
+    c.linha(260,160,264,164,'#bf9b58',grossura=2)
+    c.ret(196,155,5,6,'#213f3d');c.ret(197,155,2,4,'#558275')
+    c.linha(198,155,202,143,'#e7d6ac')
+    # Poleiro vazio para a coruja na camada interativa.
+    c.ret(323,66,26,3,'#b08a55');c.ret(325,69,22,1,'#3b2b20')
+    # Cesto baixo: posto do gato, sem animal rasterizado.
+    c.ret(381,180,27,7,'#805632')
+    for y in range(181,187):
+        for x in range(382,407):
+            c.p(x,y,'#bd9258' if (x+y*2)%5<2 else '#70482c')
+    c.ret(380,179,29,2,'#d4ad70')
+
+
 # ─────────────────────────────── Montagem ───────────────────────────────
 def montar() -> Image.Image:
     luzes: list = []
@@ -359,7 +536,10 @@ def montar() -> Image.Image:
     fichario(estrutura, e, luzes)
     luzes_de_fora(e)
     arco_da_cripta(estrutura, e, luzes)
+    microdetalhes(estrutura, e, luzes)
+    acabamento_sala(estrutura, e, luzes)
     chao = assoalho_e_tapete()
+    mesa_de_leitura(chao, e, luzes)
     frente, e_frente = mesa_da_frente()
     luzes.append((94, 158, 30, 1.0, "#ffaa50", 0.6))
 
@@ -389,14 +569,21 @@ def montar() -> Image.Image:
     m.camada(frente, 0)
     janelas = luzes
     if P == "manha":
-        m.iluminar("#8a90a8", [l[:5] + (l[5] * 0.25,) for l in janelas])
+        m.iluminar("#8a90a8", [l[:5] + (l[5] * 0.5,) for l in janelas])
         m.somar(desfocar(ampliar(poca[:, :, None]), 2)[:, :, 0], "#fff0d0", 0.55)
     elif P == "tarde":
-        m.iluminar("#7a6078", [l[:5] + (l[5] * 0.45,) for l in janelas])
+        m.iluminar("#7a6078", [l[:5] + (l[5] * 0.8,) for l in janelas])
         m.somar(desfocar(ampliar(poca[:, :, None]), 2)[:, :, 0], "#ffb070", 0.6)
     else:
-        m.iluminar("#262a52", [l[:5] + (l[5] * 1.3,) for l in janelas])
+        m.iluminar("#555369", [l[:5] + (l[5] * 1.15,) for l in janelas])
         m.somar(desfocar(ampliar(poca[:, :, None]), 2)[:, :, 0], "#8a9ad8", 0.22)
+    # Quarta passagem: sombras de contato, pés da mesa e luz recortada pelos caixilhos.
+    sombras = Camada()
+    sombras.poligono([(289,174),(297,174),(333,199),(317,199)],'#171724',.34)
+    sombras.poligono([(184,176),(191,176),(214,199),(201,199)],'#171724',.32)
+    sombras.ret(250,179,163,3,'#15151b',.45)
+    sombras.ret(178,174,122,2,'#17151a',.38)
+    m.camada(sombras,1)
     m.emissivo(vidro_e, 0.6)
     m.emissivo(e, 0, halo={"manha": 0.35, "tarde": 0.6, "noite": 1.1}[P])
     # Feixe volumétrico com poeira.
@@ -413,7 +600,7 @@ def montar() -> Image.Image:
     m.camada(frente, 5, escurecer={"manha": 0.7, "tarde": 0.55, "noite": 0.4}[P])
     m.emissivo(e_frente, 3, halo=0.6 if P == "noite" else 0.2)
     quente, fria = {"manha": ("#fff0d4", "#24366a"), "tarde": ("#ffcf8a", "#3a1e4e"), "noite": ("#ffd8a8", "#121848")}[P]
-    return m.acabar(quente, fria, esquerda=0.32, centro_v=(0.66, 0.5), contraste=1.06, bloom={"manha": 0.35, "tarde": 0.6, "noite": 1.0}[P])
+    return m.acabar(quente, fria, esquerda=0.10, centro_v=(0.66, 0.5), contraste=1.06, bloom={"manha": 0.35, "tarde": 0.6, "noite": 0.65}[P])
 
 
 def piso() -> None:
@@ -539,6 +726,12 @@ def gerar(periodo: str) -> None:
     nome = f"arquivo-{periodo}"
     img.save(PASTA / f"{nome}.webp", quality=84, method=6)
     img.resize((960, 400), Image.LANCZOS).save(PASTA / f"{nome}-960.webp", quality=84, method=6)
+    (PASTA / 'arquivo-ancoras.json').write_text(json.dumps({
+        'base': [480, 200], 'coruja': {'pes': [333, 66], 'quadro': [44,32]},
+        'gato': {'pes': [395,180], 'quadro': [30,22]}, 'lamparina': [278,58],
+        'mesa': [168,154,307,176], 'mobile': {'foco':0.74},
+        'regenerar': 'python scripts/gerar_cena_flashcards.py'
+    },ensure_ascii=False,indent=2)+'\n')
     print(nome, (PASTA / f"{nome}.webp").stat().st_size // 1024, "KB")
 
 

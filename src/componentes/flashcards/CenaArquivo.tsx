@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import { recurso } from '../../config'
 import { usarPeriodo } from '../../estado/aparencia'
 import '../../estilos/componentes/CenaTorre.css'
+import { CorujaPixel } from '../../biblioteca/sala/CorujaPixel'
+import { GatoPixel } from '../mascote/GatoPixel'
+import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../mascote/falasBichos'
 
 /**
  * O Arquivo da Vila (01/11/2026): o cenário do topo dos Flashcards, pintado por scripts/gerar_cena_flashcards.py.
@@ -21,7 +24,11 @@ const POEIRA = [
 ]
 const FAGULHAS = [{ x: 1316, y: 520, d: 7, a: 0 }, { x: 1352, y: 500, d: 8, a: -2 }, { x: 1384, y: 530, d: 6, a: -4 }, { x: 1334, y: 470, d: 9, a: -5 }]
 
-export function CenaArquivo() {
+export function CenaArquivo({ visitantes = false }: { visitantes?: boolean }) {
+  const [fala, definirFala] = useState<string | null>(null)
+  useEffect(() => { if (!fala) return; const t=setTimeout(()=>definirFala(null),10000); return ()=>clearTimeout(t) },[fala])
+  const [abaOculta, definirAbaOculta] = useState(document.hidden)
+  useEffect(()=>{const mudou=()=>definirAbaOculta(document.hidden);document.addEventListener('visibilitychange',mudou);return ()=>document.removeEventListener('visibilitychange',mudou)},[])
   const periodo = usarPeriodo()
   const palco = useRef<HTMLDivElement>(null)
   const [visivel, definirVisivel] = useState(true)
@@ -36,15 +43,17 @@ export function CenaArquivo() {
   const fundo = `arquivo-${periodo}`
   const graos = periodo === 'noite' ? FAGULHAS : POEIRA
   return (
-    <div ref={palco} className={`ct-cena ct-cena--${periodo} ca-cena${visivel ? '' : ' ct-cena--pausada'}`} aria-hidden="true">
+    <div ref={palco} className={`ct-cena ct-cena--${periodo} ca-cena${visivel && !abaOculta ? '' : ' ct-cena--pausada'}`}>
       <div className="ct-cena__mundo">
-        <img className="ct-cena__fundo" src={img(`${fundo}.webp`)} srcSet={`${img(`${fundo}-960.webp`)} 960w, ${img(`${fundo}.webp`)} 1440w`}
+        <img className="ct-cena__fundo" src={img(`${fundo}.webp?v=20261114`)} srcSet={`${img(`${fundo}-960.webp?v=20261114`)} 960w, ${img(`${fundo}.webp?v=20261114`)} 1440w`}
           sizes="(max-width: 46rem) 150vw, min(76rem, 100vw)" alt="" width={BASE.w} height={BASE.h} decoding="async" fetchPriority="high" draggable={false} />
         {LUZES.map((l, i) => <span key={i} className="ct-cena__luz ca-cena__chama"
           style={{ left: pct(l.x - l.r, BASE.w), top: pct(l.y - l.r, BASE.h), width: pct(l.r * 2, BASE.w), height: pct(l.r * 2, BASE.h), animationDelay: `${-i * 0.9}s` }} />)}
         <span className="ca-cena__cripta" style={{ left: pct(CRIPTA.x - CRIPTA.r, BASE.w), top: pct(CRIPTA.y - CRIPTA.r, BASE.h), width: pct(CRIPTA.r * 2, BASE.w), height: pct(CRIPTA.r * 2, BASE.h) }} />
         <span className="ct-cena__graos">{graos.map((g, i) => <i key={i} style={{ left: pct(g.x, BASE.w), top: pct(g.y, BASE.h), animationDuration: `${g.d}s`, animationDelay: `${g.a}s` }} />)}</span>
+        {visitantes && <><button type="button" className="ca-pet ca-pet--coruja" aria-label="Falar com a coruja: conceito de prova" onClick={()=>definirFala(proximaFala('coruja',CONCEITOS_CORUJA))}><CorujaPixel estado={fala ? 'lendo' : 'parada'}/></button><button type="button" className="ca-pet ca-pet--gato" aria-label="Falar com o gato" onClick={()=>definirFala(proximaFala('gato',FALAS_GATO))}><GatoPixel estado="dormindo"/></button></>}
       </div>
+      {visitantes && fala && <button className="ca-fala" type="button" role="status" aria-label={`Fechar fala do mascote. ${fala}`} onClick={()=>definirFala(null)}>{fala}</button>}
     </div>
   )
 }

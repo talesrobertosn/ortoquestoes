@@ -1,0 +1,40 @@
+{
+  "base": [
+    480,
+    200
+  ],
+  "coruja": {
+    "pes": [
+      333,
+      66
+    ],
+    "quadro": [
+      44,
+      32
+    ]
+  },
+  "gato": {
+    "pes": [
+      395,
+      180
+    ],
+    "quadro": [
+      30,
+      22
+    ]
+  },
+  "lamparina": [
+    278,
+    58
+  ],
+  "mesa": [
+    168,
+    154,
+    307,
+    176
+  ],
+  "mobile": {
+    "foco": 0.74
+  },
+  "regenerar": "python scripts/gerar_cena_flashcards.py"
+}
