@@ -45,7 +45,7 @@ export function QuestaoAcesso() {
   }, [gato, resumo.id, marcada])
 
   if (falhou) return null
-  const outra = () => { voltarFoco.current = true; definirGato('observando'); definirResumo(trocarAmostraAcessoDaVez(resumo.id)) }
+  const outra = () => { voltarFoco.current = true; definirGato('observando'); definirResumo(trocarAmostraAcessoDaVez(resumo.id)); window.dispatchEvent(new CustomEvent(EVENTO_RESPOSTA_ACESSO, { detail: { acertou: false, trocou: true } })) }
   const responder = (letra: string) => {
     if (!amostra || marcada) return
     definirMarcada(letra)

@@ -45,10 +45,10 @@ import '../estilos/componentes/Cristal.css'
 import { fraseGratis } from '../config'
 import { guardarVitrine, lembrarNome, nomeLembrado, sortearVitrine } from '../conta/vitrineAcesso'
 import { CenaPortal } from '../componentes/acesso/CenaPortal'
-import { CorujaDoPainel } from '../componentes/acesso/CorujaDoPainel'
 import { QuestaoAcesso } from '../componentes/acesso/QuestaoAcesso'
 import { JornadaAcesso, ProvasAcesso, VitrineAcesso } from '../componentes/acesso/JornadaAcesso'
 import '../estilos/paginas/Portal.css'
+import '../estilos/paginas/LoginAlpino.css'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -504,10 +504,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const mascarar = (e: string) => { const [u, d] = e.split('@'); return d ? `${u.slice(0, 1)}•••@${d}` : e }
     const mostrarAtalho = modo === 'entrar' && !recuperacao && !perfilDepois && !!lembrado && email.trim().toLowerCase() !== lembrado.toLowerCase()
     return <div className="ac acx">
-      {/* O plano de abertura (01/11/2026; mural desde 02/11/2026): o salão de leitura do castelo no alto, com o título à
-          esquerda, o esqueleto anfitrião junto ao atril e o painel de entrar à direita, com a coruja na borda. Embaixo do
-          título, pregadas na parede, a ficha com a questão (e o gato), a vitrine e a jornada; embaixo do painel, as
-          provas (no celular: cena, título, painel, ficha, provas, vitrine e jornada). */}
+      {/* Pousada de Natal no Vale: pintura vertical, visitantes no terraço e os mesmos fluxos de acesso. */}
       <CenaPortal texto={<>
           <p className="pc-selo">{seloVitrine}</p>
           <h1 id="ac-titulo" key={tituloVitrine}>{tituloVitrine}</h1>
@@ -515,7 +512,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <p className="pc-gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
       </>} esquerda={<><div className="acx-ficha"><QuestaoAcesso /></div><VitrineAcesso /><JornadaAcesso /></>} direita={<ProvasAcesso />}>
         <section className="ac-cartao pa" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
-          <CorujaDoPainel />
           {perfilDepois ? <>
             <header className="ac-cabeca">
               <p className="ac-passo"><span className="px-numero" aria-hidden="true">2</span><span>Passo 2 de 2 · opcional</span></p>
