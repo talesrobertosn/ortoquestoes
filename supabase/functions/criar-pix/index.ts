@@ -12,7 +12,7 @@ Deno.serve(async req => {
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
     const usuario = await usuarioDoPedido(req)
-    const body = await req.json() as { plano?: keyof typeof PLANOS_PIX; cpf?: string; aceite_confirmado?: boolean; aceite_termos_versao?: string; pedido_id?: string }
+    const body = await req.json() as { plano?: keyof typeof PLANOS_PIX; cpf?: string; aceite_confirmado?: boolean; aceite_termos_versao?: string; pedido_id?: string; ampliar?: boolean }
     if (Deno.env.get('PAGAMENTOS_HABILITADOS') !== 'true' || Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') return json({ erro: 'O pagamento por Pix ainda não está disponível.' }, 503, req)
     const ambiente = Deno.env.get('MERCADO_PAGO_AMBIENTE')
     const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')
@@ -35,11 +35,16 @@ Deno.serve(async req => {
     // Renovação antecipada: com um Pix terminando nos próximos 7 dias, pode pagar o
     // próximo agora. confirmar_pagamento_pix começa o período novo no fim do atual,
     // então nenhum dia se perde. Cartão vigente ou Pix longe do fim continuam barrados.
-    const ativo = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(ativa,cancelada)&or=(fim_periodo.is.null,fim_periodo.gt.${encodeURIComponent(new Date().toISOString())})&select=id_externo,fim_periodo`)
+    const ativo = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(ativa,cancelada)&or=(fim_periodo.is.null,fim_periodo.gt.${encodeURIComponent(new Date().toISOString())})&select=id_externo,fim_periodo,plano`)
     if (!ativo.ok) throw new Error('consulta_assinatura_falhou')
-    const vigentes = await ativo.json() as Array<{ id_externo: string | null; fim_periodo: string | null }>
+    const vigentes = await ativo.json() as Array<{ id_externo: string | null; fim_periodo: string | null; plano: string | null }>
     const limiteRenovacao = Date.now() + 7 * 864e5
-    const podeRenovar = vigentes.every((a) => a.id_externo?.startsWith('pix:') && a.fim_periodo && Date.parse(a.fim_periodo) <= limiteRenovacao)
+    // Ampliação (14/11/2026): quem está num Pix mais curto pode comprar um mais longo a qualquer
+    // momento; confirmar_pagamento_pix já emenda o período novo no fim do que está valendo.
+    const mesesDe = (p: string | null) => PLANOS_PIX[p as keyof typeof PLANOS_PIX]?.meses ?? Infinity
+    const ampliacaoPix = body.ampliar === true && vigentes.every((a) => a.id_externo?.startsWith('pix:') && a.fim_periodo && mesesDe(a.plano) < plano.meses)
+    const podeRenovar = ampliacaoPix || vigentes.every((a) => a.id_externo?.startsWith('pix:') && a.fim_periodo && Date.parse(a.fim_periodo) <= limiteRenovacao)
+    if (vigentes.length && !podeRenovar && body.ampliar === true) return json({ erro: 'A ampliação pelo Pix vale para quem está num Pix mais curto. Quem paga no cartão amplia pelo cartão.' }, 409, req)
     if (vigentes.length && !podeRenovar) return json({ erro: 'Você já tem um período pago vigente. A renovação pelo Pix abre nos 7 dias antes do fim, e os dias que faltam continuam valendo.' }, 409, req)
     // Expiração local só libera outro pedido; jamais ativa ou revoga acesso.
     const expirar = await banco(`pedidos_pix?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(criando,pending)&expira_em=lt.${encodeURIComponent(new Date().toISOString())}`, { method: 'PATCH', body: JSON.stringify({ status: 'expired' }) })

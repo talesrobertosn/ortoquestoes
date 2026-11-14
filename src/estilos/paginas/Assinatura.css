@@ -687,3 +687,39 @@
   .vd-abertura--faixa { align-items: flex-start; text-align: left; }
   .vd-compra-rodape { flex-direction: column; gap: 0.1rem; margin-bottom: 0.5rem; }
 }
+
+/* ---------- Ampliar o plano (14/11/2026): mensal → semestral/anual, emendado no fim do período ---------- */
+.ampliar { display: grid; gap: 0.9rem; margin: 0.6rem 0 0; padding: 1.1rem 1.25rem 1.25rem; border: 1px solid color-mix(in srgb, var(--ouro) 45%, var(--traco)); border-radius: var(--raio-cartao, 16px); background: color-mix(in srgb, var(--ouro-veu) 40%, var(--superficie)); color: var(--texto); text-align: left; }
+.vd-ativo .ampliar p { max-width: none; color: var(--texto); }
+.ampliar__topo { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0.4rem 0.85rem; }
+.ampliar__topo h3 { margin: 0; font-size: 1.1rem; color: var(--texto); }
+.vd-ativo .ampliar__topo p { margin: 0.15rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.ampliar__icone { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--traco); }
+.ampliar__linha { display: grid; gap: 0.4rem; }
+.ampliar__barra { display: flex; gap: 3px; height: 14px; }
+.ampliar__seg { border-radius: 4px; }
+.ampliar__seg--atual { flex: 1 1 0; background: var(--verdete); }
+.ampliar__seg--novo { flex: 5 1 0; background: color-mix(in srgb, var(--ouro) 22%, var(--superficie)); box-shadow: inset 0 0 0 2px var(--ouro); border-radius: 4px 8px 8px 4px; }
+.ampliar__marcas { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.78rem; line-height: 1.2; color: var(--texto-2); }
+.ampliar__marcas > span { display: grid; }
+.ampliar__marcas b { color: var(--texto); font-weight: 700; }
+.ampliar__marca-novo { text-align: right; }
+.ampliar__marca-novo b { color: var(--ouro-texto); }
+.ampliar__opcoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.ampliar__opcao { display: grid; gap: 0.35rem; align-content: start; padding: 0.9rem 1rem 1rem; border-radius: 12px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--traco); }
+.ampliar__opcao--destaque { box-shadow: inset 0 0 0 2px var(--ouro); }
+.ampliar__opcao-nome { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
+.ampliar__opcao-nome strong { font-size: 1.05rem; }
+.ampliar__opcao-nome span { font-size: 0.82rem; color: var(--texto-2); }
+.vd-ativo .ampliar__opcao-mes { display: flex; align-items: baseline; gap: 0.15rem; }
+.ampliar__opcao-mes strong { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.ampliar__opcao-mes small { color: var(--texto-2); }
+.vd-ativo .ampliar__opcao-economia { font-size: 0.88rem; color: var(--verdete-tinta); }
+.ampliar__opcao .botao { margin-top: 0.35rem; display: inline-flex; justify-content: center; align-items: center; gap: 0.45rem; min-height: 46px; }
+.vd-ativo .ampliar__nota { display: flex; gap: 0.45rem; align-items: baseline; font-size: 0.9rem; color: var(--texto-2); }
+.ampliar__nota .icone, .ampliar__nota svg { flex: none; transform: translateY(2px); }
+@media (max-width: 560px) {
+  .ampliar { padding: 1rem; }
+  .ampliar__marcas { font-size: 0.72rem; }
+}
+.vd-ativo .ampliar__opcao-ate { font-size: 0.82rem; color: var(--texto-2); }

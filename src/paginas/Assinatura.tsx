@@ -25,6 +25,7 @@ import {
   elogioHeroi, fatiaDasDuasPrimeiras, numero, pct, porMes, saudacaoAssinante, tituloHeroi, type Plano,
 } from '../dados/vendas'
 import { CartoesPlanos } from '../componentes/vendas/CartoesPlanos'
+import { AmpliarPlano } from '../componentes/AmpliarPlano'
 import { PreviaCronograma } from '../componentes/vendas/PreviaCronograma'
 import { IconePix, IconeCartao } from '../componentes/vendas/IconesPagamento'
 import { usarRevelar } from '../componentes/vendas/usarRevelar'
@@ -74,6 +75,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const assinanteGuardado = usarAssinante(sessao)
   const [mensagem, definirMensagem] = useState<string | null>(null)
   const [planoEscolhido, definirPlanoEscolhido] = useState<Plano | null>(null)
+  // Ampliação do plano (14/11/2026): a compra é de um plano mais longo, emendado no fim do atual.
+  const [ampliando, definirAmpliando] = useState(false)
   const [aceitouCondicoes, definirAceitouCondicoes] = useState(false)
   const [abrindoCheckout, definirAbrindoCheckout] = useState(false)
   const [meioPagamento, definirMeioPagamento] = useState<'cartao' | 'pix'>(pixHabilitado ? 'pix' : 'cartao')
@@ -147,6 +150,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
     if (!pagamentosHabilitados || !sessao) return
     eventoAnuncio('AddToCart', { content_name: plano.id, currency: 'BRL', value: plano.total })
     definirPlanoEscolhido(plano)
+    definirAmpliando(false)
     definirPix(null)
     definirCpf('')
     definirAceitouCondicoes(false)
@@ -158,6 +162,12 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
     if (!sessao) { navegar(linkConta('criar', `/assinatura?plano=${plano.id}`)); return }
     escolher(plano)
   }
+  /** Ampliar: abre o mesmo checkout, mas o plano novo nasce emendado no fim do período pago. */
+  function ampliar(plano: Plano) {
+    escolher(plano)
+    definirAmpliando(true)
+    if (!ehPix || !pixHabilitado) definirMeioPagamento('cartao')
+  }
   const cpfInvalido = cpf.replace(/\D/g, '').length === 11 && !cpfValido(cpf)
   async function confirmarCompra() {
     if (!planoEscolhido || !aceitouCondicoes || !pagamentosHabilitados || !sessao || abrindoCheckout) return
@@ -168,6 +178,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
       if (meioPagamento === 'pix') {
         const r = await chamarFuncao<PixGerado>('criar-pix', {
           plano: planoEscolhido.id, cpf, aceite_termos_versao: VERSAO_CONDICOES_ASSINATURA, aceite_confirmado: true,
+          ...(ampliando ? { ampliar: true } : {}),
         })
         definirCpf('')
         definirPix(r)
@@ -180,8 +191,15 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         plano: planoEscolhido.id,
         aceite_termos_versao: versao,
         aceite_confirmado: true,
+        ...(ampliando ? { ampliar: true } : {}),
       })
       const r = await pedir(VERSAO_CONDICOES_ASSINATURA)
+      // Ampliando, a primeira cobrança precisa ficar para o fim do período pago; sem isso, não segue.
+      if (ampliando && !r.inicio_cobranca) {
+        definirMensagem('A ampliação pelo cartão ainda está sendo ativada. Tente de novo em alguns minutos ou fale com o suporte.')
+        definirAbrindoCheckout(false)
+        return
+      }
       // Renovando um Pix no cartão, só segue se o servidor marcou a primeira cobrança para o fim do Pix;
       // uma versão antiga da função cobraria já, e aí a pessoa fica no Pix por enquanto.
       if (renovarPix && !r.inicio_cobranca) {
@@ -223,6 +241,13 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   // A barra fixa só existe quando dá para comprar; fora da tela, sai também da leitura e do Tab.
   const barraNaTela = barraVisivel && !planoEscolhido
   const mostrarPlanos = !comAcessoPago || renovarPix || Boolean(metricas && !ativa)
+  // Ampliar o plano: assinante ativo de um plano mais curto (Pix fora da janela de renovação, ou
+  // cartão que ainda renova) vê os planos mais longos, emendados no fim do período pago.
+  const planoAtual = PLANOS_PIPOCA.find((p) => p.id === metricas?.plano) ?? null
+  const opcoesAmpliar = planoAtual ? PLANOS_PIPOCA.filter((p) => p.meses > planoAtual.meses) : []
+  const podeAmpliar = Boolean(pagamentosHabilitados && sessao && ativa && planoAtual && opcoesAmpliar.length && !renovarPix
+    && Number.isFinite(fimAtual) && (ehPix || !metricas?.cancelar_ao_fim))
+  const fimAmpliarTexto = podeAmpliar ? new Date(fimAtual).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) : ''
 
   // Quem criou a conta a partir de um plano volta direto para o pagamento dele (uma vez só).
   useEffect(() => {
@@ -314,6 +339,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
               <a className="botao vd-botao-destaque" href={href('/cronograma')}>Abrir o cronograma <Icone nome="direita" tamanho={16} /></a>
               <a className="tr-heroi__link" href={href('/conta/assinatura')}>{ehPix ? 'Dados da assinatura e garantia' : 'Gerenciar renovação ou pedir reembolso'}</a>
             </div>
+            {podeAmpliar && planoAtual && <AmpliarPlano atual={planoAtual} opcoes={opcoesAmpliar} fim={fimAtual} cartao={!ehPix} aoAmpliar={ampliar} />}
             {metricas && ativa && ehPix && pixHabilitado && Number.isFinite(fimAtual) && <RenovacaoPix fim={fimAtual} aoRenovar={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth', block: 'start' })} />}
           </div>
           {metricas && (renovarPix || !ativa) && <div className="vd-ativo__planos" id="planos">
@@ -394,6 +420,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         <header className="vd-cabeca" data-revelar><p className="vd-sobre">Dúvidas</p><h2 id="vd-titulo-faq">Perguntas frequentes</h2><p>As respostas que decidem a compra, sem letra miúda. O texto completo está nas <a href={href('/condicoes-assinatura')}>Condições da Assinatura</a>.</p></header>
         <div className="vd-faq__lista" data-revelar>
           <details><summary>Qual plano vale mais a pena?</summary><p>Os três liberam exatamente os mesmos recursos; muda só como você paga. O mensal sai {real(PLANO_MENSAL.total)} por mês, sem fidelidade: você paga só os meses em que estuda e desliga a renovação com um botão quando quiser. O semestral, {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). O anual, {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês: {ECONOMIA_ANUAL === 'metade do preço' ? 'metade do preço do mensal' : `${ECONOMIA_ANUAL} que o mensal`}, pago de uma vez. Se você ainda não sabe quanto tempo vai estudar até a prova, comece pelo mensal. Quem já tem o ano inteiro de estudo pela frente economiza no anual.</p></details>
+          <details><summary>Já assino o mensal. Posso passar para o semestral ou o anual?</summary><p>Pode, a qualquer momento, em Minha assinatura, no quadro "Ampliar o plano". O plano novo é emendado no fim do período que você já pagou: nenhum dia se perde e nada é cobrado em dobro. No cartão, nada é cobrado no dia; a primeira cobrança do plano novo acontece quando o mensal termina, e a renovação do mensal é desligada sozinha. No Pix, você paga o plano novo e ele começa a contar quando o período atual acaba. A garantia de 7 dias vale também para o plano novo, a partir da cobrança dele.</p></details>
           <details><summary>Posso pagar com Pix?</summary><p>Pode, em qualquer plano. Você escolhe o plano, informa o CPF de quem vai pagar (só para o Mercado Pago gerar o Pix; não fica salvo no seu perfil) e recebe o QR Code e o Pix Copia e Cola. É um pagamento único pelo período inteiro, sem renovação automática. O código vale por 24 horas; se não for pago, expira sem cobrança.</p></details>
           <details><summary>O acesso é liberado na hora?</summary><p>Sim, assim que o Mercado Pago confirma o pagamento. No Pix, a página fica conferindo sozinha e libera o acesso quando o pagamento cai, sem você precisar avisar ninguém. No cartão, o acesso começa com a aprovação da cobrança.</p></details>
           <details><summary>E no cartão? Renova sozinho?</summary><p>Renova na periodicidade escolhida (todo mês, a cada 6 meses ou todo ano), para você não ficar sem acesso na reta final. Desligar a renovação é um botão em Minha conta, a qualquer momento. Os dados do cartão são digitados no Mercado Pago; o Orto Questões não recebe nem guarda o número do cartão.</p></details>
@@ -432,10 +459,10 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         <button type="button" className="botao vd-botao-destaque" tabIndex={barraNaTela ? 0 : -1} disabled={semCompra} onClick={() => comprar(PLANO_MENSAL)} data-funil="plano-mensal-barra">Assinar o mensal</button>
       </div>}
 
-      <JanelaCentral aberta={planoEscolhido !== null} aoFechar={() => { if (!abrindoCheckout) definirPlanoEscolhido(null) }} rotulo="Finalizar assinatura" className="ck">
+      <JanelaCentral aberta={planoEscolhido !== null} aoFechar={() => { if (!abrindoCheckout) { definirPlanoEscolhido(null); definirAmpliando(false) } }} rotulo={ampliando ? 'Ampliar o plano' : 'Finalizar assinatura'} className="ck">
         {planoEscolhido && <div className="ck__corpo">
           <header className="ck__resumo">
-            <span className="ck__selo"><Simbolo tamanho={18} variante="traco" /> Plano {planoEscolhido.nome.toLowerCase()}</span>
+            <span className="ck__selo"><Simbolo tamanho={18} variante="traco" /> {ampliando ? `Ampliar para o ${planoEscolhido.nome.toLowerCase()}` : `Plano ${planoEscolhido.nome.toLowerCase()}`}</span>
             <p className="ck__preco"><strong>{real(planoEscolhido.total / planoEscolhido.meses)}</strong><small>/mês</small></p>
             <p className="ck__total">{planoEscolhido.meses === 1 ? `${real(planoEscolhido.total)} por mês` : `${real(planoEscolhido.total)} ${planoEscolhido.meses === 6 ? 'a cada 6 meses' : 'por ano'}`}{planoEscolhido.meses > 1 && <> · economia de {real(MENSAL * planoEscolhido.meses - planoEscolhido.total)}</>}</p>
             <ul className="ck__beneficios">
@@ -466,7 +493,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             <>
               <fieldset className="ck__meios" disabled={abrindoCheckout}>
                 <legend>Como você prefere pagar?</legend>
-                {pixHabilitado && <label className={'ck__meio' + (meioPagamento === 'pix' ? ' ck__meio--ativo' : '')}>
+                {pixHabilitado && !(ampliando && !ehPix) && <label className={'ck__meio' + (meioPagamento === 'pix' ? ' ck__meio--ativo' : '')}>
                   <input type="radio" name="meio-pagamento" checked={meioPagamento === 'pix'} onChange={() => { definirMeioPagamento('pix'); definirAceitouCondicoes(false); definirMensagem(null) }} />
                   <span className="ck__meio-icone ck__meio-icone--pix"><IconePix tamanho={24} /></span>
                   <span className="ck__meio-texto"><strong>Pix <em className="ck__meio-selo">o mais prático</em></strong><small>Pagamento único de {real(planoEscolhido.total)}, liberado assim que cai. Sem renovação automática.</small></span>
@@ -475,12 +502,15 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
                 <label className={'ck__meio' + (meioPagamento === 'cartao' ? ' ck__meio--ativo' : '')}>
                   <input type="radio" name="meio-pagamento" checked={meioPagamento === 'cartao'} onChange={() => { definirMeioPagamento('cartao'); definirAceitouCondicoes(false); definirMensagem(null) }} />
                   <span className="ck__meio-icone"><IconeCartao tamanho={24} /></span>
-                  <span className="ck__meio-texto"><strong>Cartão de crédito{renovarPix && <em className="ck__meio-selo">não precisa lembrar</em>}</strong><small>{renovarPix
+                  <span className="ck__meio-texto"><strong>Cartão de crédito{(renovarPix || ampliando) && <em className="ck__meio-selo">{ampliando ? 'nada cobrado hoje' : 'não precisa lembrar'}</em>}</strong><small>{ampliando
+                    ? `Primeira cobrança só em ${fimAmpliarTexto}, quando o seu plano ${planoAtual?.nome.toLowerCase() ?? 'atual'} termina${ehPix ? '' : ', e a renovação dele é desligada sozinha'}. Depois renova a cada ${planoEscolhido.meses} meses; desliga com um botão quando quiser.`
+                    : renovarPix
                     ? `Primeira cobrança só em ${fimAtualTexto}, quando o Pix termina. Depois renova sozinho a cada ${planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}; desliga com um botão quando quiser.`
                     : `Renovação automática a cada ${planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}. Desliga com um botão quando quiser.`}</small></span>
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
                 </label>
               </fieldset>
+              {ampliando && meioPagamento === 'pix' && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Ampliação: os dias que você já tem continuam valendo. O novo período de {planoEscolhido.meses} meses começa em {fimAmpliarTexto}, quando o atual termina.</p>}
               {renovarPix && meioPagamento === 'pix' && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Renovação antecipada: os {diasRestantes} {diasRestantes === 1 ? 'dia que falta' : 'dias que faltam'} continuam valendo. O novo período de {planoEscolhido.meses === 1 ? '1 mês' : `${planoEscolhido.meses} meses`} começa em {fimAtualTexto}, quando o atual termina.</p>}
               {meioPagamento === 'pix' && <label className="campo ck__cpf"><span>CPF de quem vai pagar</span><input inputMode="numeric" autoComplete="off" maxLength={14} placeholder="000.000.000-00" value={cpf} aria-invalid={cpfInvalido} aria-describedby="ck-cpf-ajuda" onChange={evento => { definirCpf(evento.target.value); definirMensagem(null) }} />
                 <small id="ck-cpf-ajuda" className={cpfInvalido ? 'ck__cpf-erro' : undefined}>{cpfInvalido ? 'Este CPF não é válido: confira os números. Pode ser o CPF de qualquer pessoa que vá pagar o Pix.' : 'Pode ser o CPF de qualquer pessoa que vá pagar o Pix. Só serve para o Mercado Pago gerar o código e não fica salvo no seu perfil.'}</small></label>}
