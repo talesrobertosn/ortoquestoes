@@ -174,6 +174,10 @@ button.bb-obj:disabled { cursor: default; }
 .bb-porta { margin: 0; display: flex; gap: 0.5rem; align-items: flex-start; padding: 0.45rem 0.65rem; border-radius: var(--raio-controle); background: var(--bb-vidro); border: 1px solid rgba(240, 196, 106, 0.3); font-size: 0.78rem; line-height: 1.4; }
 .bb-porta a { color: var(--bb-ouro); font-weight: 700; }
 
+/* As sugestões precisam sair acima da barra fixa de filtros (z-index: 30).
+   O z-index da lista, sozinho, fica preso na camada da entrada (8). */
+.bb-entrada:has(.bb-sug) { z-index: 31; }
+
 /* A busca principal. */
 .bb-busca { position: relative; }
 .bb-busca__rotulo { display: block; margin-bottom: 0.35rem; font: 700 0.875rem/1.2 var(--fonte-texto); color: var(--bb-ouro); letter-spacing: 0.01em; }
