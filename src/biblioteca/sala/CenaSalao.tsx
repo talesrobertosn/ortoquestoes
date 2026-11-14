@@ -54,7 +54,7 @@ export function ArteSalao({ periodo }: { periodo: Periodo }) {
 interface Props {
   salao: Salao
   titulo: ReactNode
-  contagem: string
+  contagem: ReactNode
   busca: ReactNode
   acoes: ReactNode
   aviso?: ReactNode
@@ -170,7 +170,7 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
         <div className="bb-placa" onClick={s.acoes.tocarPlaca}>
           <p className="bb-placa__selo">Biblioteca OrtoQuestões{s.achados.includes('orto') && <span> · bibliotecário honorário</span>}</p>
           {titulo}
-          <p className="bb-placa__conta">{contagem}</p>
+          {contagem}
         </div>
         {busca}
         {aviso}

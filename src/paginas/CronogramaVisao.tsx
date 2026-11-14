@@ -54,6 +54,10 @@ export interface AcoesVisao {
   aoRevanche: (ids: string[]) => void
   aoSoTeot: (ligar: boolean) => void
   aoDiaErros: (dia: number | null) => void
+  /** Começar do zero: o plano recomeça hoje e todas as questões voltam para ele. */
+  aoZerar?: () => void
+  /** Abandonar: apaga o plano (o histórico de respostas continua). */
+  aoAbandonar?: () => void
   /** Dia curto: abre a sessão de hoje só com as primeiras `n` questões. */
   aoComecarCurto?: (n: number) => void
 }
@@ -729,6 +733,8 @@ function Ajustes({ plano, calculo, hub, acoes, aoAjustar, ficticio, mao }: { pla
         {hub && conteudo && <Chave ligado={dificil} aoMudar={hub.aoSemanaDificil} desabilitado={ocupado} titulo="Semana difícil" texto={`só ${DIA_MINIMO} por dia nesta semana; o resto é redistribuído`} />}
         {acoes && conteudo && !mao && <li className="cg-ajuste"><span><strong>Dia dos erros</strong><small>o roteiro destaca os erros nesse dia</small></span>
           <select value={plano.opcoes?.diaErros ?? ''} disabled={ocupado} aria-label="Dia dos erros" onChange={(e) => acoes.aoDiaErros(e.target.value === '' ? null : Number(e.target.value))}><option value="">nenhum</option>{[1, 2, 3, 4, 5, 6, 0].map((d) => <option key={d} value={d}>{SEMANA[d]}</option>)}</select></li>}
+        {acoes?.aoZerar && !mao && !ficticio && <li className="cg-ajuste"><span><strong>Começar do zero</strong><small>todas as questões voltam ao plano; as respostas continuam salvas</small></span><button type="button" className="cg-mini" disabled={ocupado} onClick={acoes.aoZerar}>recomeçar</button></li>}
+        {acoes?.aoAbandonar && !mao && !ficticio && <li className="cg-ajuste"><span><strong>Abandonar o cronograma</strong><small>o plano deixa de existir; as respostas continuam salvas</small></span><button type="button" className="cg-mini" disabled={ocupado} onClick={acoes.aoAbandonar}>abandonar</button></li>}
         {mao?.ajustes}
         {!ficticio && !calculo.provaPassou && <li className="cg-ajuste"><span><strong>Levar para o calendário do celular</strong><small>cada dia vira um compromisso com lembrete</small></span>
           <span className="cg-linha"><select value={hora} aria-label="Horário do lembrete" onChange={(e) => definirHora(Number(e.target.value))}><option value={7}>7h</option><option value={12}>12h</option><option value={19}>19h</option></select><button type="button" className="cg-mini" onClick={baixar}>baixar</button></span></li>}

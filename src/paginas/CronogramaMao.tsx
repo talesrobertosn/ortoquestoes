@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS } from '../dados/tipos'
-import { acervoMao, calcularPlanoMao, comAdiantado, comSemanaDificil, configInicial, itemConfigMao, lerConfig, MINUTOS_POR_QUESTAO_MAO, type ConfigMao, type ProvaMao, type TemaDoPlano } from '../dados/cronogramaMao'
+import { acervoMao, calcularPlanoMao, comAdiantado, comSemanaDificil, configInicial, itemConfigMao, lerConfig, MINUTOS_POR_QUESTAO_MAO, zerarConfigMao, type ConfigMao, type ProvaMao, type TemaDoPlano } from '../dados/cronogramaMao'
 import { idsDoDiaMao, idsParaAdiantar, painelMao, resumoSemanaMao } from '../dados/painelMao'
 import { calcularConstancia, desempenhoPorArea, elogio, formatarTempo, prontidaoPorArea } from '../dados/hubCronograma'
 import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
@@ -71,7 +71,8 @@ export function CronogramaMao({ consulta }: { consulta?: URLSearchParams }) {
       {!indice ? <Carregando linhas={5} rotulo="Montando o plano" />
         : !config || editando
           ? <Formulario prova={prova} inicial={config ?? configInicial(prova)} novo={!config} aoSalvar={salvar} aoCancelar={config ? () => definirEditando(false) : undefined} logado={logado} />
-          : <Painel prova={prova} config={config} premium={premium} indice={indice} respondidas={respondidas} aoEstudar={estudar} aoConfig={(c) => definirMapa((antes) => ({ ...antes, [itemConfigMao(prova)]: { ...c, em: Date.now() } }))} aoEditar={() => definirEditando(true)} aoApagar={() => { if (window.confirm('Apagar este plano? Suas respostas continuam salvas.')) salvar(null) }} />}
+          : <Painel prova={prova} config={config} premium={premium} indice={indice} respondidas={respondidas} aoEstudar={estudar} aoConfig={(c) => definirMapa((antes) => ({ ...antes, [itemConfigMao(prova)]: { ...c, em: Date.now() } }))} aoEditar={() => definirEditando(true)} aoApagar={() => { if (window.confirm(`Abandonar o cronograma de ${prova === 'titulo' ? 'prova de título' : 'ingresso'}?\n\nO plano deixa de existir e dá para montar outro quando quiser. Suas respostas, o desempenho e as revisões continuam salvos.`)) salvar(null) }}
+              aoZerar={() => { if (window.confirm(`Começar o cronograma de ${prova === 'titulo' ? 'prova de título' : 'ingresso'} do zero?\n\nTodas as questões voltam para o plano, como no primeiro dia, com a mesma data e o mesmo ritmo. Suas respostas, o desempenho e as revisões continuam salvos.`)) salvar(zerarConfigMao(config)) }} />}
     </div>
   )
 }
@@ -127,7 +128,7 @@ function Formulario({ prova, inicial, novo, aoSalvar, aoCancelar, logado }: { pr
   )
 }
 
-interface PropsPainel { prova: ProvaMao; config: ConfigMao; premium: boolean; indice: NonNullable<ReturnType<typeof usarIndice>['indice']>; respondidas: Record<string, RegistroQuestao>; aoEstudar: (ids: string[]) => void; aoConfig: (c: ConfigMao) => void; aoEditar: () => void; aoApagar: () => void }
+interface PropsPainel { prova: ProvaMao; config: ConfigMao; premium: boolean; indice: NonNullable<ReturnType<typeof usarIndice>['indice']>; respondidas: Record<string, RegistroQuestao>; aoEstudar: (ids: string[]) => void; aoConfig: (c: ConfigMao) => void; aoEditar: () => void; aoApagar: () => void; aoZerar: () => void }
 
 /**
  * O plano da mão na mesma arquitetura do cronograma de ortopedia (pedido do Tales, 26/10/2026): o topo
@@ -136,7 +137,7 @@ interface PropsPainel { prova: ProvaMao; config: ConfigMao; premium: boolean; in
  * prontidão por grande área, prioridades, semana a semana, levar para o calendário do celular). As peças são
  * as mesmas da página de ortopedia; o motor é o da mão (src/dados/cronogramaMao.ts, traduzido em painelMao.ts).
  */
-function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConfig, aoEditar, aoApagar }: PropsPainel) {
+function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConfig, aoEditar, aoApagar, aoZerar }: PropsPainel) {
   const mao = useMemo(() => calcularPlanoMao(indice, respondidas, config), [indice, respondidas, config])
   const acervo = useMemo(() => acervoMao(indice), [indice])
   const { plano, calculo } = useMemo(() => painelMao(mao), [mao])
@@ -212,7 +213,10 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
             <p className="cg-nota cg-linha--sep"><a className="cg-link" href={ranking}>Ver o ranking completo da {prova === 'titulo' ? 'prova de título' : 'prova de ingresso'}</a></p>
           </section>
         </>,
-        ajustes: <li className="cg-ajuste"><span><strong>Apagar este plano</strong><small>o seu histórico de respostas continua salvo</small></span><button type="button" className="cg-mini" onClick={aoApagar}>apagar</button></li>,
+        ajustes: <>
+          <li className="cg-ajuste"><span><strong>Começar do zero</strong><small>todas as questões voltam ao plano; as respostas continuam salvas</small></span><button type="button" className="cg-mini" onClick={aoZerar}>recomeçar</button></li>
+          <li className="cg-ajuste"><span><strong>Abandonar o cronograma</strong><small>o plano deixa de existir; as respostas continuam salvas</small></span><button type="button" className="cg-mini" onClick={aoApagar}>abandonar</button></li>
+        </>,
       }} />
   </>
 }
