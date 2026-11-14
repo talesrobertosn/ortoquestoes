@@ -107,7 +107,10 @@ PAGINAS_EXTRAS = [("sobre", "Sobre o Orto Questões"),
                   # ImageObject das imagens do blog (Metadados de imagens no Search Console); os dois apontam para cá.
                   ("licenca-de-imagens", "Licença das imagens"),
                   # Atlas 3D (25/10/2026): páginas próprias em paginas_atlas_seo.py, para quem busca "atlas 3D" e "anatomia 3D"
-                  ("atlas-3d-online", "Atlas 3D online"), ("atlas-3d", "Atlas 3D"), ("esqueleto-humano-3d", "Esqueleto humano 3D"), ("musculos-do-corpo-humano-3d", "Músculos em 3D")]
+                  ("atlas-3d-online", "Atlas 3D online"), ("atlas-3d", "Atlas 3D"), ("esqueleto-humano-3d", "Esqueleto humano 3D"), ("musculos-do-corpo-humano-3d", "Músculos em 3D"),
+                  # Provas antigas e curso de subespecialidade (14/11/2026): páginas próprias em paginas_provas_antigas_seo.py
+                  ("provas-antigas-simao", "Provas antigas do SIMÃO"), ("provas-antigas-sbcm", "Provas antigas da SBCM"),
+                  ("provas-antigas-r4-coluna", "Provas antigas do R4 de coluna"), ("curso-cirurgia-da-mao", "Curso de cirurgia da mão")]
 
 CRIAR_CONTA = "../#/conta?modo=criar&amp;voltar=%2Ftreinar"
 
@@ -1710,6 +1713,8 @@ def principal() -> int:
                  pagina_flashcards, pagina_cirurgia_mao, pagina_sobre, pagina_licenca_imagens]
     from paginas_atlas_seo import GERADORES_ATLAS  # importa este módulo; por isso fica aqui dentro
     geradores += GERADORES_ATLAS
+    from paginas_provas_antigas_seo import GERADORES_PROVAS_ANTIGAS
+    geradores += GERADORES_PROVAS_ANTIGAS
     paginas = []
     for gerar in geradores:
         texto, meta = gerar(d)
