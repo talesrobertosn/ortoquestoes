@@ -386,7 +386,34 @@ export function PlanoEstudo() {
     if (exemplo) { definirSalvandoOpcoes(false); return }
     try { await salvarOpcoes(alterar) } catch { definirPlano(plano); definirErro(falha) } finally { definirSalvandoOpcoes(false) }
   }
+  /**
+   * Começar do zero (Tales, 14/11/2026): o mesmo plano (data, ritmo, folgas e opções) recomeça hoje, e todas as questões
+   * voltam para ele; só as respostas dadas daqui em diante contam (opcoes.zeradoEm). Nada do histórico é apagado.
+   */
+  async function zerar() {
+    if (ficticio) { convidar('outro'); return }
+    if (!plano || salvandoOpcoes) return
+    if (!window.confirm('Começar o cronograma do zero?\n\nTodas as questões voltam para o plano, como no primeiro dia, com a mesma data, o mesmo ritmo e as mesmas folgas. Suas respostas, o desempenho e as revisões continuam salvos.')) return
+    const { adiantados: _a, puxados: _p, marcasDia: _m, ...resto } = plano.opcoes ?? {}
+    const opcoes: OpcoesPlano = { ...resto, zeradoEm: Date.now() }
+    if (exemplo) { definirPlano({ ...plano, criado_em: new Date().toISOString(), base_respondidas: 0, opcoes }); definirEditando(false); return }
+    definirSalvandoOpcoes(true); definirErro('')
+    try {
+      const salvo = await salvarPlano({ p_data_prova: plano.data_prova, p_intensidade: plano.intensidade, p_folgas: plano.folgas, p_prova: plano.prova, p_base: 0, p_recomecar: true }, incluiSimulados(plano), opcoes, { avisar: false })
+      if (salvo) definirPlano(salvo)
+      definirEditando(false)
+    } catch { definirErro('Não foi possível recomeçar o cronograma agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
+  }
+  /** Abandonar o cronograma (14/11/2026): apaga o plano; as respostas, o desempenho e as revisões continuam salvos. */
+  async function abandonar() {
+    if (ficticio) { convidar('outro'); return }
+    if (!plano || !window.confirm('Abandonar o seu cronograma?\n\nO plano deixa de existir e a página volta para o início, onde dá para montar outro quando quiser. Suas respostas, o desempenho e as revisões continuam salvos.')) return
+    if (exemplo) { definirPlano(null); return }
+    try { await chamarRpc('apagar_plano_estudo', {}); window.location.reload() } catch { definirErro('Não foi possível abandonar o cronograma agora. Confira a conexão e tente de novo.') }
+  }
   const acoesVisao = {
+    aoZerar: () => { void zerar() },
+    aoAbandonar: () => { void abandonar() },
     aoRevanche: (ids: string[]) => comecarIds(ids, 'erros'),
     aoComecarCurto: (n: number) => { void comecarHoje(calculo, plano, n) },
     aoSoTeot: (ligar: boolean) => mudarOpcao((p) => ({ ...(p.opcoes ?? {}), soTeot: ligar }), 'Não foi possível mudar para só TEOT agora. Confira a conexão e tente de novo.'),
@@ -449,7 +476,7 @@ export function PlanoEstudo() {
   }
 
   if (editando || !plano || !calculo) {
-    return <FormularioPlano indice={indice} respondidas={respondidas} atual={plano} aoCancelar={plano ? () => definirEditando(false) : undefined}
+    return <FormularioPlano indice={indice} respondidas={respondidas} atual={plano} aoCancelar={plano ? () => definirEditando(false) : undefined} aoZerar={plano && !exemplo ? () => { void zerar() } : undefined}
       aoSalvar={(novo, fazerDiagnostico) => {
         marcarAvisoSimulados(); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-simulados'); definirPlano(novo); definirEditando(false)
         if (fazerDiagnostico) { marcarDiagnostico(new Date().toISOString()); comecarIds(idsDiagnostico(indice, respondidas, incluiSimulados(novo)), 'diagnostico') }
@@ -568,7 +595,8 @@ export interface HubDados {
   salvandoOpcoes: boolean
 }
 
-function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, previa = false }: {
+function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZerar, previa = false }: {
+  aoZerar?: () => void
   indice: Indice
   respondidas: Respondidas
   atual: PlanoSalvo | null
@@ -609,6 +637,8 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
     semanasDificeis: atual?.opcoes?.semanasDificeis ?? [],
     // O que já foi feito hoje (em qualquer aparelho) continua feito depois de editar o plano.
     ...(atual?.opcoes?.marcasDia ? { marcasDia: atual.opcoes.marcasDia } : {}),
+    // Um plano recomeçado do zero continua contando só a partir do recomeço depois de editar.
+    ...(atual?.opcoes?.zeradoEm ? { zeradoEm: atual.opcoes.zeradoEm } : {}),
     ...(provaExtra.nome.trim() && /^\d{4}-\d{2}-\d{2}$/.test(provaExtra.data) ? { provaExtra: { nome: provaExtra.nome.trim().slice(0, 30), data: provaExtra.data } } : {}),
   })
   // As três intensidades simuladas com as escolhas atuais: meta, tempo e o que cobre.
@@ -781,6 +811,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
         </div>
         <div className="pe-form__rodape">
           {aoCancelar && <button type="button" className="botao botao--fantasma" onClick={aoCancelar}>Cancelar</button>}
+          {atual && aoZerar && <button type="button" className="botao botao--contorno" onClick={aoZerar}><Icone nome="reiniciar" tamanho={16} /> Começar do zero</button>}
           {atual && <button type="button" className="botao botao--fantasma pe-form__apagar" onClick={apagar}>Apagar cronograma</button>}
         </div>
         {previa && <p className="texto-2 pe-form__nota"><Icone nome="cadeado" tamanho={14} /> A prévia mostra o dia de hoje e as duas primeiras semanas. O cronograma completo, salvo e ajustado todo dia, é do assinante.</p>}

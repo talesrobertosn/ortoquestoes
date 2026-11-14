@@ -63,13 +63,14 @@ const FALAS: Record<Bicho, Record<Situacao | 'obrigado', string>> = {
     completo: 'Huu! A turma mandou um obrigado.',
     obrigado: `Obrigada! Quando o colega chegar às ${QUESTOES_PARA_CONFIRMAR} questões, eu volto com a notícia.`,
   },
+  // Sem "miau" (Tales, 14/11/2026: "ficou meio fofo demais"): o gato entrega a carta direto, num tom sóbrio.
   gato: {
-    visitante: 'Miau! Trouxe um convite para você.',
-    carregando: 'Miau. Deixei uma carta com o seu nome.',
-    indicar: 'Miau. Deixei uma carta com o seu nome.',
-    'sem-link': 'Miau. Deixei uma carta para você.',
-    agradecer: 'Miau! Notícia boa chegando.',
-    completo: 'Miau. A turma mandou um obrigado.',
+    visitante: 'Trouxe um convite para você.',
+    carregando: 'Deixei uma carta com o seu nome.',
+    indicar: 'Deixei uma carta com o seu nome.',
+    'sem-link': 'Deixei uma carta para você.',
+    agradecer: 'Notícia boa chegando.',
+    completo: 'A turma mandou um obrigado.',
     obrigado: `Obrigado! Quando o colega chegar às ${QUESTOES_PARA_CONFIRMAR} questões, eu volto para contar.`,
   },
 }

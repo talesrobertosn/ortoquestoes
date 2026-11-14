@@ -123,6 +123,8 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
   const destaques = marcas.filter((m) => !m.marcador).length
   const relevancia = !!filtros.q.trim() && filtros.ordem === 'livro'
   const primeiraBusca = filtros.q.trim() ? filtrados[0]?.id ?? null : null
+  // O tamanho da Biblioteca, em destaque no topo (Tales, 14/11/2026: "isso tem que ser vangloriado").
+  const acervo = useMemo(() => ({ horas: Math.round(capitulos.reduce((n, c) => n + c.minutos, 0) / 60), questoes: new Set(capitulos.flatMap((c) => c.questoes)).size }), [capitulos])
   const textoRaro = useMemo(() => {
     const minutos = capitulos.reduce((n, c) => n + c.minutos, 0)
     const questoes = new Set(capitulos.flatMap((c) => c.questoes)).size
@@ -159,7 +161,15 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
       {s.aviso && <Recado key={s.aviso.n} texto={s.aviso.texto} />}
       <CenaSalao salao={s} textoRaro={textoRaro} aoAbrirGuia={() => definirGuia(true)}
         titulo={<h1>Biblioteca de <em>resumos</em></h1>}
-        contagem={`${capitulos.length} resumos · ${obras.length} livros · ${lidos} ${lidos === 1 ? 'lido' : 'lidos'} por você`}
+        contagem={<div className="bb-trofeu" aria-label={`${capitulos.length} resumos de ${obras.length} livros, cerca de ${acervo.horas} horas de leitura e ${acervo.questoes} questões de prova citadas`}>
+          <p className="bb-trofeu__grande"><b className="numerico"><ContaSobe ate={capitulos.length} /></b><span>resumos<small>prontos para ler</small></span></p>
+          <ul className="bb-trofeu__mais" aria-hidden="true">
+            <li><b className="numerico">{obras.length}</b> livros de referência</li>
+            <li><b className="numerico">~{acervo.horas.toLocaleString('pt-BR')} h</b> de leitura</li>
+            <li><b className="numerico">{acervo.questoes.toLocaleString('pt-BR')}</b> questões de prova citadas</li>
+          </ul>
+          {lidos > 0 && <p className="bb-trofeu__seus">{lidos} {lidos === 1 ? 'lido' : 'lidos'} por você</p>}
+        </div>}
         busca={<BuscaPrincipal capitulos={capitulos} leituras={leituras} valor={filtros.q} aoMudar={(q) => mudar({ q })} aoAbrirResumo={abrirDaBusca}
           aoFiltrarLivro={filtrarLivro} aoFiltrarArea={filtrarArea} aoVerResultados={irResultados} aoPrimeiraBusca={primeiraBuscaFeita} />}
         aviso={porta}
@@ -203,4 +213,22 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
       {guia && <GuiaTour id="biblioteca" titulo="Como usar a Biblioteca" passos={PASSOS} aoFechar={() => definirGuia(false)} />}
     </div>
   )
+}
+
+/** O número sobe de 0 até o total quando a página abre (uma vez, ~0,9 s); com "menos movimento", já aparece pronto. */
+function ContaSobe({ ate }: { ate: number }) {
+  const [n, definir] = useState(() => (semMovimento() ? ate : 0))
+  useEffect(() => {
+    if (semMovimento()) { definir(ate); return }
+    const inicio = performance.now()
+    let quadro = 0
+    const passo = (t: number) => {
+      const p = Math.min(1, (t - inicio) / 900)
+      definir(Math.round(ate * (1 - Math.pow(1 - p, 3))))
+      if (p < 1) quadro = requestAnimationFrame(passo)
+    }
+    quadro = requestAnimationFrame(passo)
+    return () => cancelAnimationFrame(quadro)
+  }, [ate])
+  return <>{n.toLocaleString('pt-BR')}</>
 }

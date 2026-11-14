@@ -1,7 +1,7 @@
 import type { Indice } from './tipos'
 import { desempenhoEm, modalidadePorId, prioridade, rankingModalidade, type Ranking, type TemaRanking } from './modalidades'
 import { diaDaSemana, diasEntre, hojeBR, inicioDaChave, somarDias } from '../util/dia'
-import { DIA_MINIMO, TAMANHO_MINI } from './planoEstudo'
+import { DIA_MINIMO, TAMANHO_MINI, respostasDesde } from './planoEstudo'
 
 /**
  * Cronograma de Cirurgia da Mão (27/10/2026): dois planos independentes, ingresso (provas de seleção
@@ -42,6 +42,8 @@ export interface ConfigMao {
   /** Questões feitas além da meta em cada dia ("AAAA-MM-DD"): saem do próximo dia de estudo. */
   adiantados?: Record<string, number>
   criadoEm: string
+  /** Começar do zero (14/11/2026): só as respostas dadas depois deste momento (ms) contam para o plano. */
+  zeradoEm?: number
   /** última alteração (para a sincronização escolher a mais recente) */
   em: number
 }
@@ -162,6 +164,7 @@ const dominioDe = (certas: number, validas: number) => (certas + 1) / (validas +
 const passadaDe = (nivel: number): PassadaMao => (nivel >= 4 ? 1 : nivel === 3 ? 2 : 3)
 
 export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, config: ConfigMao, agora = Date.now()): PlanoMao {
+  respondidas = respostasDesde(respondidas, config.zeradoEm)
   const hoje = hojeBR(agora)
   const { ranking, temas: doPlano } = rankingDoPlano(indice, config.prova, config.cobertura)
   const dias = config.dias.length ? config.dias : [1, 2, 3, 4, 5]
@@ -362,8 +365,17 @@ export function lerConfig(v: unknown): ConfigMao | null {
     minutosDia: Math.max(15, Math.min(300, Number(c.minutosDia) || 60)), cobertura: c.cobertura === 'essencial' ? 'essencial' : 'completa',
     ...(c.adiantados && typeof c.adiantados === 'object' ? { adiantados: Object.fromEntries(Object.entries(c.adiantados).filter(([d, n]) => /^\d{4}-\d{2}-\d{2}$/.test(d) && Number.isFinite(n) && n > 0).slice(-14)) } : {}),
     ...(Array.isArray(c.semanasDificeis) ? { semanasDificeis: c.semanasDificeis.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)).slice(-20) } : {}),
+    ...(Number(c.zeradoEm) > 0 ? { zeradoEm: Number(c.zeradoEm) } : {}),
     criadoEm: /^\d{4}-\d{2}-\d{2}$/.test(c.criadoEm ?? '') ? c.criadoEm! : c.dataProva!, em: Number(c.em) || 0,
   }
+}
+
+/**
+ * Começar do zero (Tales, 14/11/2026): o plano recomeça hoje com as mesmas escolhas (data, dias, tempo, cobertura) e
+ * todas as questões voltam para ele; só contam as respostas dadas daqui em diante. O histórico de respostas não é apagado.
+ */
+export function zerarConfigMao(config: ConfigMao, agora = Date.now()): ConfigMao {
+  return { ...config, zeradoEm: agora, criadoEm: hojeBR(agora), adiantados: {}, em: agora }
 }
 
 /** Item da conta onde cada plano fica (sincroniza entre aparelhos junto com a Biblioteca). */

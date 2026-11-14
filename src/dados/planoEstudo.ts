@@ -68,6 +68,11 @@ export interface OpcoesPlano {
    */
   puxados?: Record<string, string[]>
   /**
+   * Começar do zero (Tales, 14/11/2026): o momento (ms) em que a pessoa recomeçou o cronograma. Só as respostas dadas
+   * depois dele contam para o plano; as anteriores continuam no desempenho e nas revisões, mas as questões voltam ao plano.
+   */
+  zeradoEm?: number
+  /**
    * Só questões do TEOT (10/11/2026): o plano deixa de fora o TARO e as outras provas. Os OrtoQuestões
    * Simulados seguem a escolha de `incluir_simulados`. Ausente em planos antigos: desligado.
    */
@@ -96,7 +101,7 @@ export const TAMANHO_MINI = 30
 /** Minutos por questão quando ainda não há histórico. */
 export const MINUTOS_POR_QUESTAO = 1.5
 
-export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros'>> => ({
+export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros' | 'zeradoEm'>> => ({
   diasLeves: plano?.opcoes?.diasLeves ?? [],
   qtdLeve: Math.max(5, Math.min(40, plano?.opcoes?.qtdLeve ?? QTD_LEVE_PADRAO)),
   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],
@@ -150,6 +155,14 @@ export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number 
     if (!folgas.includes(d.getDay())) n++
   }
   return n
+}
+
+/** As respostas que contam para um plano recomeçado: só as dadas a partir de `desde` (sem `desde`, todas). */
+export function respostasDesde<R extends { q?: number } | undefined>(respondidas: Record<string, R>, desde?: number | null): Record<string, R> {
+  if (!desde) return respondidas
+  const saida: Record<string, R> = {}
+  for (const [id, r] of Object.entries(respondidas)) if ((r?.q ?? 0) >= desde) saida[id] = r
+  return saida
 }
 
 export interface RegistroMinimo { c: boolean | null; q?: number; confianca?: 'seguro' | 'duvida' | 'chute'; historico?: Array<{ em: number; correta: boolean | null }> }
@@ -239,6 +252,7 @@ export interface CalculoPlano {
 }
 
 export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
+  respondidas = respostasDesde(respondidas, plano.opcoes?.zeradoEm)
   // "Só TEOT": o motor inteiro trabalha sobre o recorte (plano antigo, sem a opção: o acervo de sempre).
   const indice = indiceDoPlano(indiceInteiro, plano)
   // Hoje e o dia de criação são dias de São Paulo (src/util/dia.ts), como datas civis.

@@ -150,6 +150,21 @@ button.bb-obj:disabled { cursor: default; }
 .bb-placa h1 { font: 800 clamp(1.6rem, 1rem + 1.8vw, 2.4rem)/1.02 var(--fonte-marca); letter-spacing: -0.035em; color: #fff8e8; text-wrap: balance; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35); }
 .bb-placa h1 em { font-style: normal; color: var(--bb-ouro); }
 .bb-placa__conta { margin: 0.4rem 0 0; font-size: 0.8125rem; color: rgba(251, 243, 223, 0.82); }
+.bb-placa { display: grid; }
+/* O tamanho da Biblioteca em destaque (14/11/2026): o número grande em ouro, sobre uma placa de latão, e o resto ao lado. */
+.bb-trofeu { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 0.35rem 0.9rem; margin-top: 0.6rem; }
+.bb-trofeu__grande { display: flex; align-items: center; gap: 0.55rem; margin: 0; padding: 0.35rem 0.85rem 0.35rem 0.6rem; border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255, 226, 150, 0.16), rgba(240, 196, 106, 0.06)); box-shadow: inset 0 0 0 1.5px rgba(240, 196, 106, 0.6), inset 0 0 0 3px rgba(20, 12, 6, 0.6), 0 0 24px rgba(240, 196, 106, 0.18); }
+.bb-trofeu__grande b { font: 800 clamp(2.2rem, 1.6rem + 1.6vw, 3rem)/0.95 var(--fonte-marca); letter-spacing: -0.04em; color: var(--bb-ouro);
+  text-shadow: 0 2px 0 #6b4a1f, 0 0 18px rgba(240, 196, 106, 0.45); font-variant-numeric: tabular-nums; }
+.bb-trofeu__grande span { display: grid; font: 800 1rem/1.05 var(--fonte-marca); color: #fff8e8; text-transform: lowercase; }
+.bb-trofeu__grande small { font: 600 0.72rem/1.2 var(--fonte-texto); color: rgba(251, 243, 223, 0.75); text-transform: none; }
+.bb-trofeu__mais { display: grid; gap: 0.15rem; margin: 0; padding: 0; list-style: none; font-size: 0.78rem; color: rgba(251, 243, 223, 0.82); }
+.bb-trofeu__mais li::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 0.45rem; transform: rotate(45deg) translateY(-1px); background: var(--bb-ouro); box-shadow: 0 0 0 1px #140c06; }
+.bb-trofeu__mais b { color: #fff8e8; font-weight: 800; }
+.bb-trofeu__seus { grid-column: 1 / -1; margin: 0; font-size: 0.72rem; color: rgba(251, 243, 223, 0.66); }
+@media (max-width: 40rem) { .bb-trofeu { grid-template-columns: minmax(0, 1fr); } .bb-trofeu__grande { justify-self: start; } .bb-trofeu__mais { display: flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; } }
+.bb-trofeu__mais b.numerico, .bb-trofeu__grande b.numerico { font-family: inherit; }
 .bb-entrada__acoes { display: flex; flex-wrap: wrap; gap: var(--e-2); }
 .bb-bandeirolas { margin: 0; align-self: flex-start; padding: 0.3rem 0.7rem; border-radius: 999px; background: rgba(158, 47, 42, 0.85); color: #fff3e0; font: 700 0.8125rem var(--fonte-texto); }
 .bb-plantao { margin: 0.6rem 0 0; display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.55rem 0.8rem; border-radius: 10px; font-size: 0.78rem; line-height: 1.45; color: var(--bb-pergaminho);
