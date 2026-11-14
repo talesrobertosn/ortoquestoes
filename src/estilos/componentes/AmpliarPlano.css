@@ -1,0 +1,31 @@
+/* Ampliar o plano (14/11/2026): mensal → semestral/anual, emendado no fim do período, com a conta dos dias. */
+.ampliar { display: grid; gap: 0.9rem; margin: 0.6rem 0 0; padding: 1.1rem 1.25rem 1.25rem; border: 1px solid color-mix(in srgb, var(--ouro) 45%, var(--traco)); border-radius: var(--raio-cartao, 16px); background: color-mix(in srgb, var(--ouro-veu) 40%, var(--superficie)); color: var(--texto); text-align: left; }
+.ampliar p { margin: 0; }
+.ampliar__topo { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0.4rem 0.85rem; }
+.ampliar__topo h3 { margin: 0; font-size: 1.1rem; color: var(--texto); }
+.ampliar .ampliar__topo p { margin: 0.15rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; }
+.ampliar__icone { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--traco); }
+.ampliar__opcoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.ampliar__opcao { container-type: inline-size; display: grid; gap: 0.5rem; align-content: start; padding: 1rem; border-radius: 12px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--traco); }
+.ampliar__opcao--destaque { box-shadow: inset 0 0 0 2px var(--ouro); }
+.ampliar__opcao-nome { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.ampliar__opcao-nome strong { font-size: 1.1rem; }
+.ampliar__selo { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.1rem 0.55rem; border-radius: 999px; background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.72rem; font-weight: 800; }
+.ampliar .ampliar__opcao-mes { display: flex; align-items: baseline; gap: 0.15rem; }
+.ampliar__opcao-mes strong { font-size: 1.7rem; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.ampliar__opcao-mes small { color: var(--texto-2); }
+.ampliar .ampliar__opcao-total { font-size: 0.88rem; color: var(--texto-2); }
+.ampliar .ampliar__opcao-economia { color: var(--verdete-tinta, var(--verdete)); font-weight: 600; }
+.ampliar__botao { margin-top: 0.2rem; width: 100%; display: inline-flex; justify-content: center; align-items: center; gap: 0.45rem; min-height: 46px; }
+.ampliar .ampliar__nota { display: flex; gap: 0.45rem; align-items: baseline; font-size: 0.9rem; color: var(--texto-2); }
+.ampliar__nota svg { flex: none; transform: translateY(2px); }
+/* Em Dados da assinatura o quadro já está dentro de uma seção: sem moldura dourada nem fundo próprio. */
+.ampliar--dp { margin: 0; padding: 0; border: 0; background: none; }
+.ampliar--dp .ampliar__opcao { background: var(--dp-papel, var(--superficie)); box-shadow: inset 0 0 0 1px var(--dp-linha, var(--traco)); border-radius: var(--raio-cartao, 16px); padding: 1.15rem; }
+.ampliar--dp .ampliar__opcao--destaque { box-shadow: inset 0 0 0 2px var(--dp-verde, var(--verdete)); }
+.ampliar--dp .ampliar__selo { background: var(--dp-verde-veu); color: var(--dp-verde-forte); }
+@media (max-width: 560px) {
+  .ampliar { padding: 1rem; }
+  .ampliar--dp { padding: 0; }
+  .ampliar__opcoes { grid-template-columns: minmax(0, 1fr); }
+}

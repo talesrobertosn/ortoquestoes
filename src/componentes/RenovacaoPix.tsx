@@ -1,6 +1,7 @@
 import { IconePixel } from './IconePixel'
 import { Icone } from './Icone'
 import { href } from '../util/rotas'
+import { ContaDias } from './ContaDias'
 import { diaMes, JANELA_RENOVACAO_PIX, somarMeses } from '../conta/periodoPix'
 
 /**
@@ -59,6 +60,8 @@ export function RenovacaoPix({ fim, aoRenovar, agora = Date.now() }: { fim: numb
     <p className="renova-pix__texto">{aberta
       ? <><strong>Faltam {dias} {dias === 1 ? 'dia' : 'dias'}, e você não perde nenhum deles renovando agora.</strong> Os {dias} {dias === 1 ? 'dia' : 'dias'} que você ainda tem continuam seus, e o novo mês só começa a contar quando eles acabam, em {diaMes(fim)}. Renovando o plano mensal hoje, seu acesso vai até <strong>{diaMes(novoFim)}</strong>. Se escolher o cartão, nada é cobrado agora: a primeira cobrança só acontece em {diaMes(fim)}.</>
       : <>Seu acesso vai até <strong>{diaMes(fim)}</strong>. A renovação abre <strong>{abreTexto.includes(',') ? abreTexto : `em ${abreTexto}`}</strong>, 7 dias antes do fim, e mandamos um lembrete por e-mail perto do fim. Quando renovar, os dias que você ainda tiver se somam ao novo mês: nada se perde.</>}</p>
+
+    <ContaDias fimAtual={fim} meses={1} agora={agora} compacta rotuloCompra="Renovando 1 mês" />
 
     {aberta
       ? (aoRenovar

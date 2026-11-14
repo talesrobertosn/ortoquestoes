@@ -1,43 +1,43 @@
 import { IconePixel } from './IconePixel'
 import { Icone } from './Icone'
+import { ContaDias } from './ContaDias'
 import { real, type Plano } from '../dados/planos'
-import { diaMes, somarMeses } from '../conta/periodoPix'
-
-const dataLonga = (ms: number) => new Date(ms).toLocaleDateString('pt-BR')
+import { diaMes } from '../conta/periodoPix'
+import { dias, diasEntre } from '../conta/dias'
+import '../estilos/componentes/AmpliarPlano.css'
 
 /**
  * Ampliar o plano (Tales, 14/11/2026): quem paga um plano mais curto passa para um mais longo
  * sem perder dia e sem pagar em dobro. O plano novo é emendado no fim do período já pago: no Pix,
  * o período novo começa quando o atual termina; no cartão, a primeira cobrança fica para essa data
- * e a renovação do plano curto é desligada sozinha. A linha do tempo mostra isso à vista.
+ * e a renovação do plano curto é desligada sozinha. Cada opção mostra a conta dos dias: o que a
+ * pessoa já tem, o que compra e o total, em dias e em meses.
+ *
+ * `estilo`: "vd" na página de planos (botão dourado da temporada), "dp" em Dados da assinatura
+ * (botões do padrão do Desempenho: verde cheio no destaque, contorno no outro).
  */
-export function AmpliarPlano({ atual, opcoes, fim, cartao, aoAmpliar }: {
+export function AmpliarPlano({ atual, opcoes, fim, cartao, aoAmpliar, estilo = 'vd', titulo = true }: {
   atual: Plano
   opcoes: readonly Plano[]
   fim: number
   cartao: boolean
   aoAmpliar: (p: Plano) => void
+  estilo?: 'vd' | 'dp'
+  titulo?: boolean
 }) {
   const porMesAtual = atual.total / atual.meses
-  return <section className="ampliar" aria-labelledby="ampliar-titulo">
-    <div className="ampliar__topo">
+  const tem = diasEntre(Date.now(), fim)
+  const classeBotao = (p: Plano) => estilo === 'dp'
+    ? 'dp-botao' + (p.destaque ? ' dp-botao--principal' : '')
+    : 'botao ' + (p.destaque ? 'vd-botao-destaque' : 'botao--principal')
+  return <section className={`ampliar ampliar--${estilo}`} aria-labelledby={titulo ? 'ampliar-titulo' : undefined} aria-label={titulo ? undefined : 'Ampliar o plano'}>
+    {titulo && <div className="ampliar__topo">
       <span className="ampliar__icone"><IconePixel nome="planos" tamanho={44} /></span>
       <div>
         <h3 id="ampliar-titulo">Ampliar o plano</h3>
-        <p>Vai estudar por mais tempo? Passe para um plano mais longo e pague <strong>menos por mês</strong>. Os dias que você já pagou continuam valendo: o plano novo só começa em <strong>{diaMes(fim)}</strong>, quando o {atual.nome.toLowerCase()} termina.</p>
+        <p>Vai estudar por mais tempo? Passe para um plano mais longo e pague <strong>menos por mês</strong>. Os <strong>{dias(tem)}</strong> que você ainda tem continuam valendo: o plano novo só começa em <strong>{diaMes(fim)}</strong>, quando o {atual.nome.toLowerCase()} termina.</p>
       </div>
-    </div>
-
-    <div className="ampliar__linha" aria-hidden="true">
-      <div className="ampliar__barra">
-        <span className="ampliar__seg ampliar__seg--atual" />
-        <span className="ampliar__seg ampliar__seg--novo" />
-      </div>
-      <div className="ampliar__marcas">
-        <span><b>Hoje</b><small>{atual.nome} até {diaMes(fim)}</small></span>
-        <span className="ampliar__marca-novo"><b>Plano novo</b><small>a partir de {diaMes(fim)}</small></span>
-      </div>
-    </div>
+    </div>}
 
     <ul className="ampliar__opcoes">
       {opcoes.map((p) => {
@@ -45,12 +45,12 @@ export function AmpliarPlano({ atual, opcoes, fim, cartao, aoAmpliar }: {
         return <li key={p.id} className={'ampliar__opcao' + (p.destaque ? ' ampliar__opcao--destaque' : '')}>
           <div className="ampliar__opcao-nome">
             <strong>{p.nome}</strong>
-            <span>{p.meses} meses · {real(p.total)}</span>
+            {p.destaque && <span className="ampliar__selo"><Icone nome="estrela" tamanho={12} /> Melhor preço</span>}
           </div>
           <p className="ampliar__opcao-mes"><strong>{real(p.total / p.meses)}</strong><small>/mês</small></p>
-          {economia > 0 && <p className="ampliar__opcao-economia">economia de <strong>{real(economia)}</strong> no período</p>}
-          <p className="ampliar__opcao-ate">Acesso até <strong>{dataLonga(somarMeses(fim, p.meses))}</strong></p>
-          <button type="button" className={'botao botao--largo ' + (p.destaque ? 'vd-botao-destaque' : 'botao--principal')} onClick={() => aoAmpliar(p)} data-funil={`ampliar-${p.id}`}>
+          <p className="ampliar__opcao-total">{real(p.total)} {p.meses === 12 ? 'por ano' : `a cada ${p.meses} meses`}{economia > 0 && <> · <span className="ampliar__opcao-economia">economia de <strong>{real(economia)}</strong></span></>}</p>
+          <ContaDias fimAtual={fim} meses={p.meses} compacta />
+          <button type="button" className={classeBotao(p) + ' ampliar__botao'} onClick={() => aoAmpliar(p)} data-funil={`ampliar-${p.id}-${estilo}`}>
             Ampliar para o {p.nome.toLowerCase()} <Icone nome="direita" tamanho={16} />
           </button>
         </li>
@@ -59,6 +59,6 @@ export function AmpliarPlano({ atual, opcoes, fim, cartao, aoAmpliar }: {
 
     <p className="ampliar__nota"><Icone nome="calendario" tamanho={14} /> <span>{cartao
       ? <>Nada é cobrado hoje. A primeira cobrança do plano novo acontece em <strong>{diaMes(fim)}</strong>, e a renovação do {atual.nome.toLowerCase()} é desligada sozinha: nunca há cobrança em dobro.</>
-      : <>Pague hoje pelo Pix ou deixe no cartão, que só cobra em <strong>{diaMes(fim)}</strong>. O período novo se soma ao que você já tem.</>}</span></p>
+      : <>Pague hoje pelo Pix ou deixe no cartão, que só cobra em <strong>{diaMes(fim)}</strong>. Os dias do plano novo se somam aos que você já tem.</>}</span></p>
   </section>
 }

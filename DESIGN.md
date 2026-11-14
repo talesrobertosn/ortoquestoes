@@ -173,6 +173,10 @@ Ideia em estudo (não aplicada): interface monocromática estilo shadcn com a ar
   nos títulos e números (nada de fonte pixel para ler), botões reais (`.dp-botao`) para cada ação, seções por extenso
   com menu lateral fixo (barra de atalhos no celular), a arte do observatório só no topo e na mesa de "O que fazer
   agora" (`scripts/gerar_cena_observatorio.py --mesa`).
+- **Dados da assinatura (14/11/2026)**: `/conta/assinatura` refeita no mesmo padrão (`DetalhesAssinatura.tsx`, `DetalhesAssinatura.css`,
+  raiz `.dpg.asn`): arte do baú no topo, os **dias de acesso** em destaque, menu lateral com Seu plano, Ampliar, Renovação,
+  Garantia, Recibos e Dúvidas. A **conta dos dias** (`ContaDias.tsx`: já tem + compra = total, em dias e meses) aparece em
+  toda compra, renovação e ampliação.
 
 ## Typography
 
