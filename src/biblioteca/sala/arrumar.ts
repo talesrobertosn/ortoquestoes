@@ -1,8 +1,8 @@
 // Regra pura da parede de estantes (sem React), para o teste fixtures/testar_busca_biblioteca.mjs.
 
 /** Medidas da estante (px de tela): largura de cada vaga de livro, laterais da estante e altura da prateleira. */
-export const VAGA = 50
-export const LATERAIS = 76
+export const VAGA = 42
+export const LATERAIS = 60
 const MIN_VAGAS = 5
 
 /**
@@ -57,6 +57,19 @@ export function arrumarBaias(baias: Array<{ id: string; n: number }>, largura: n
       if (usado + w <= largura) { usado += w; fileira.push([{ id: resto[i].id, vagas: resto[i].vagas }]); resto.splice(i, 1) } else i++
     }
     fileiras.push(fileira)
+  }
+  // Uma estante pequena que sobrou sozinha numa fileira vai para a coluna de pequenas de uma fileira grande
+  // (empilhada embaixo da última), em vez de ficar isolada com a parede vazia ao lado.
+  const ehGrande = new Set(grandes.map((g) => g.id))
+  for (let i = fileiras.length - 1; i >= 0; i--) {
+    const f = fileiras[i]
+    if (f.length !== 1 || f[0].length !== 1 || ehGrande.has(f[0][0].id)) continue
+    const solo = f[0][0]
+    const destino = fileiras.find((g) => g !== f && g.length > 1 && ehGrande.has(g[0][0].id) && g[g.length - 1][0].vagas >= solo.vagas)
+    if (!destino) continue
+    const coluna = destino[destino.length - 1]
+    coluna.push({ id: solo.id, vagas: coluna[0].vagas })
+    fileiras.splice(i, 1)
   }
   return fileiras
 }

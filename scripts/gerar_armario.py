@@ -5,15 +5,15 @@ Arte original feita por código (numpy + PIL): nada baixado nem gerado por IA. C
 pequena, com 5 tons por madeira, veio, frisos, pregos de metal e desgaste, e recebe uma luz calculada por pixel:
 a lamparina no alto do armário ilumina o fundo de cada nicho, a tábua de cima projeta sombra no topo do nicho
 (oclusão de ambiente), os livros escurecem o pé do fundo e a borda chanfrada das tábuas pega o brilho.
-No site tudo é mostrado em 3x com image-rendering: pixelated.
+No site tudo é mostrado em 2x com image-rendering: pixelated (a mesa da ficha já sai em 3x).
 
 Peças (public/pixel/biblioteca/armario/):
-- fileira-{madeira}-{periodo}.png (96 x 70): um nicho com o fundo de tábuas e a prateleira embaixo; repete nos dois
-  sentidos (70 px de arte = 210 px no site, a altura de cada prateleira);
+- fileira-{madeira}-{periodo}.png (96 x 79): um nicho com o fundo de tábuas e a prateleira embaixo; repete nos dois
+  sentidos (79 px de arte = 158 px no site, a altura de cada prateleira);
 - pilastra-{madeira}.png (10 x 96): capitel (14), fuste que repete (70) e base (12), para border-image de 3 fatias;
   pilastras-{madeira}.png (21 x 96): as duas lado a lado, para a borda do celular (o nicho rola por dentro dela);
 - cornija-{madeira}.png (60 x 36): o coroamento com dentículos, contas douradas, painel e consolos nos cantos
-  (moldura de 9 fatias: 7 em cima, 8 embaixo, 10 de cada lado);
+  (moldura de 9 fatias: 16 em cima, 8 embaixo, 10 de cada lado);
 - rodape-{madeira}.png (48 x 10): o rodapé com os pés torneados (3 fatias: pé, miolo que repete, pé);
 - enfeite-{nome}.png: aparador de latão, ampulheta, globo, castiçal, pilha de livros deitados, crânio e tinteiro;
 - selos.png (4 x 16 x 16): os selos de cera da raridade (comum, raro, épico, lendário);
@@ -107,8 +107,8 @@ def salvar(rgb: np.ndarray, alfa: np.ndarray | None, nome: str) -> None:
 
 
 # ─────────────────────────────── O nicho (fundo + prateleira) ───────────────────────────────
-NW, NH = 96, 70          # nicho: 96 x 70 (288 x 210 no site)
-TABUA_Y = 63             # a tábua ocupa as linhas 63..69 (os livros pousam em 63 = 189 px no site)
+NW, NH = 96, 79          # nicho: 96 x 79 (192 x 158 no site, em 2x)
+TABUA_Y = 72             # a tábua ocupa as linhas 72..78 (os livros pousam em 72 = 144 px no site)
 TABUAS_FUNDO = [14, 10, 16, 12, 14, 18, 12]
 
 
@@ -136,7 +136,7 @@ def fileira(madeira: str, periodo: str) -> None:
         t[:, cols] = tom_tabua + m["veio"] * 3.2 * (fio > 0.9) - m["veio"] * 2.2 * (fio < -0.94)
         # um ou outro "catedral" (o desenho em arco do veio), discreto
         if i in (2, 5):
-            cy = 20 + g.random() * 25
+            cy = 22 + g.random() * 30
             arco = np.abs(u - larg / 2) * 1.6 - (yy[:, cols] - cy) * 0.35
             t[:, cols] += m["veio"] * 2.4 * ((np.mod(arco, 5) < 0.7) & (arco > 0) & (arco < 16))
         borda[x] = 1                        # friso escuro
@@ -153,7 +153,7 @@ def fileira(madeira: str, periodo: str) -> None:
             t[:, xc] += 0.35
     # nós da madeira (fixos, com anel)
     for k in range(m["nos"]):
-        cx, cy = g.integers(4, NW - 4), g.integers(12, 52)
+        cx, cy = g.integers(4, NW - 4), g.integers(14, 60)
         d = np.hypot((xx - cx) * 1.6, yy - cy)
         t = np.where(d < 1.2, t + 0.9, np.where(d < 2.4, t - 0.35, t))
     rgb = tonalizar(t, pal)
@@ -163,8 +163,8 @@ def fileira(madeira: str, periodo: str) -> None:
     y = yy[:, 0]
     sombra_cima = np.clip((y - 2.0) / 11.0, 0, 1) ** 0.8          # 0 colado na tábua de cima, 1 depois de ~13 px
     sombra_cima = np.where(y < 2, 0.0, sombra_cima)
-    lampada = 0.62 + 0.42 * np.exp(-((y - 30) / 22) ** 2)          # o miolo do nicho é a parte mais clara
-    pe = 1 - 0.42 * np.clip((y - 50) / (TABUA_Y - 50), 0, 1) ** 1.4  # os livros escurecem o pé do fundo
+    lampada = 0.62 + 0.42 * np.exp(-((y - 34) / 25) ** 2)          # o miolo do nicho é a parte mais clara
+    pe = 1 - 0.42 * np.clip((y - 57) / (TABUA_Y - 57), 0, 1) ** 1.4  # os livros escurecem o pé do fundo
     forca = (sombra_cima * lampada * pe * luz["forca"])[:, None, None]
     amb = np.array(luz["ambiente"], np.float32)
     cor_luz = np.array(luz["cor"], np.float32)
@@ -273,7 +273,7 @@ def pilastra(madeira: str) -> None:
 
 
 # ─────────────────────────────── A cornija (moldura de 9 fatias) ───────────────────────────────
-CW, CH = 60, 36   # fatias: 7 em cima, 8 embaixo, 10 de cada lado; o miolo (40 x 21) repete
+CW, CH = 60, 36   # fatias: 16 em cima (com os botões dos cantos), 8 embaixo, 10 de cada lado; o resto repete
 
 
 def cornija(madeira: str) -> None:
@@ -311,35 +311,31 @@ def cornija(madeira: str) -> None:
     rgb[33] = tonalizar(np.full(CW, 3.4), pal)
     rgb[34] = tonalizar(np.full(CW, 4.0), pal)
     rgb[35] = tonalizar(np.full(CW, 4.0), pal) * 0.6
-    # consolos nos cantos (x 0..9 e 50..59): voluta entalhada com folha de metal
+    # Cantos (x 0..9 e 50..59): no alto, um bloco com o botão de metal (fica na fatia de cima, não estica); embaixo,
+    # o fuste canelado do consolo, igual em toda a altura (a fatia do lado repete sem deformar o desenho).
     for lado in (0, 1):
         x0 = 0 if lado == 0 else CW - 10
         for y in range(7, 28):
             for dx in range(10):
                 x = x0 + (dx if lado == 0 else 9 - dx)
-                borda = dx in (0, 9)
-                prof = abs(dx - 4.5) / 4.5
-                v = 3.9 if borda else 1.2 + prof * 1.6 + (y - 7) / 21 * 0.8
+                if dx in (0, 9):
+                    v = 3.9
+                elif y < 16:
+                    v = 1.0 + abs(dx - 4.5) / 4.5 * 1.4 + (0.9 if y in (7, 15) else 0)
+                else:
+                    v = [0, 1.0, 2.6, 1.2, 0.6, 0.8, 2.6, 1.3, 2.2, 0][dx]
                 rgb[y, x] = tonalizar(np.array(v), pal)
-        # rosácea de metal no alto do consolo (quatro pétalas e o botão claro) e a canelura do consolo embaixo
-        cx, cy = x0 + 5, 12
-        for y in range(8, 17):
+        cx, cy = x0 + 5, 11.5
+        for y in range(8, 15):
             for dx in range(1, 9):
                 x = x0 + dx
-                ddx, ddy = x + 0.5 - cx, y + 0.5 - (cy + 0.5)
+                ddx, ddy = x + 0.5 - cx, y + 0.5 - cy
                 d = math.hypot(ddx, ddy)
-                if d < 2.6:                                    # botão de metal abaulado, luz do alto à esquerda
+                if d < 2.6:
                     lam = max(0, -ddx * 0.5 - ddy * 0.6) / 2.6 + (1 - d / 2.6) * 0.5
                     rgb[y, x] = met[0] if lam > 0.75 else met[1] if lam > 0.45 else met[2] if lam > 0.2 else met[3]
-                elif d < 3.6 and int(math.degrees(math.atan2(ddy, ddx)) + 360) % 60 < 30:
-                    rgb[y, x] = met[2]                           # anel de contas em volta
-        for y in range(18, 27):
-            for dx in (3, 6):
-                x = x0 + (dx if lado == 0 else 9 - dx)
-                rgb[y, x] = tonalizar(np.array(3.4), pal)
-            x = x0 + (4 if lado == 0 else 5)
-            rgb[y, x] = tonalizar(np.array(0.5), pal)
-        rgb[26, x0 + 2:x0 + 8] = met[2]
+                elif d < 3.5 and (int(math.degrees(math.atan2(ddy, ddx)) + 360) % 90) < 45:
+                    rgb[y, x] = met[3]
     # luz da lamparina: o centro da cornija um pouco mais claro, as pontas mais escuras (a moldura repete, então a
     # variação é só vertical, para não criar emenda)
     luz = (1.08 - 0.12 * np.abs(np.linspace(-1, 1, CH)))[:, None, None]

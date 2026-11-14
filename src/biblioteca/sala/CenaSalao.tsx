@@ -176,12 +176,13 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
         {aviso}
         <div className="bb-entrada__acoes">
           {acoes}
-          {somDisponivel() && <button type="button" className="bb-botao-vidro" aria-pressed={s.som} onClick={s.acoes.alternarSom}>
-            <Icone nome={s.som ? 'tocar' : 'pausar'} tamanho={15} /> {s.som ? 'Som ligado' : 'Som desligado'}
+          {somDisponivel() && <button type="button" className="bb-botao-vidro bb-botao-vidro--icone" aria-pressed={s.som} onClick={s.acoes.alternarSom}
+            aria-label={s.som ? 'Som ligado: desligar' : 'Som desligado: ligar'} title={s.som ? 'Som ligado' : 'Som desligado'}>
+            <Icone nome={s.som ? 'tocar' : 'pausar'} tamanho={15} />
           </button>}
         </div>
-        {s.ehMadrugada && <p className="bb-plantao"><Icone nome="lua" tamanho={15} /> <span>Plantão? Estes cabem em poucos minutos: {s.curtos.map((c, i) => <span key={c.id}>{i > 0 && ', '}<a href={href(`/resumos/${c.id}`)}>{c.titulo}</a> ({c.minutos} min)</span>)}.</span></p>}
       </div>
+      {s.ehMadrugada && <p className="bb-plantao"><Icone nome="lua" tamanho={15} /> <span>Plantão? Estes cabem em poucos minutos: {s.curtos.map((c, i) => <span key={c.id}>{i > 0 && ', '}<a href={href(`/resumos/${c.id}`)}>{c.titulo}</a> ({c.minutos} min)</span>)}.</span></p>}
     </header>
   )
 }
