@@ -1,0 +1,40 @@
+/* Biblioteca aprovada: coordenadas na pintura 720x1200, palco 720x340.
+   No celular o recorte é x180..540; rodapé e miolo independem da altura do formulário. */
+.pc.pc--biblioteca { --pc-altura: calc(100cqw * 340 / 720); min-height: calc(100cqw * 1200 / 720);
+  background: url('/pixel/acesso/biblioteca/cenario.webp') center top / 100% auto no-repeat #241b16; }
+.pc--biblioteca::before { background: linear-gradient(90deg, rgba(12,13,16,.83), rgba(12,13,16,.66) 28%, transparent 46%); }
+.pc--biblioteca .pc-palco { box-shadow: none; }
+.pc--biblioteca .pc-palco *, .pc--biblioteca .pc-palco *::before, .pc--biblioteca .pc-palco *::after { pointer-events: none; }
+.pc.pc--biblioteca h1 { color: #fff4dc; }
+.pc.pc--biblioteca .pc-lide, .pc.pc--biblioteca .pc-gratis { color: #dfd5c1; }
+.pc.pc--biblioteca .pc-selo { color: #efc87f; }
+.pc--biblioteca .pc-esqueleto { left: 39.167%; top: 58.82%; width: 11.111%; height: 31.37%; }
+.pc-biblioteca__mascote, .pc-biblioteca__bonfire { display: block; background-size: 1600% 100%; image-rendering: pixelated;
+  animation: pc-biblioteca-quadros 2.24s steps(16, jump-none) infinite; }
+.pc-biblioteca__mascote { width: 100%; height: 100%; }
+.pc-biblioteca__bonfire { position: absolute; left: 48.611%; top: 49.412%; width: 11.111%; height: 19.412%; }
+.pc--biblioteca .pc-biblioteca__gato { left: 56.944%; top: 62.353%; width: 5%; height: 7.059%; z-index: 3; }
+.pc--biblioteca .pc-biblioteca__coruja { left: 45.556%; top: 22.647%; width: 6.111%; height: 9.412%; z-index: 3; }
+.pc-biblioteca__gato .fq-gato, .pc-biblioteca__coruja .pa-coruja { position: static; display: block; width: 100%; height: 100%; filter: none; }
+.pc--biblioteca .pc-biblioteca__gato .gato-pixel { width: 100%; }
+.pc-biblioteca__coruja .coruja-pixel { --coruja-escala: 1; width: 100%; height: 100%; }
+.pc-esqueleto--festa { filter: drop-shadow(0 0 5px rgba(255,195,100,.6)); }
+@keyframes pc-biblioteca-quadros { from { background-position: 0 0; } to { background-position: 100% 0; } }
+.pc-palco--pausado .pc-biblioteca__mascote, .pc-palco--pausado .pc-biblioteca__bonfire,
+.pc-palco--pausado .gato-pixel, .pc-palco--pausado .coruja-pixel { animation-play-state: paused; }
+@media (max-width: 71.99rem) {
+  .pc.pc--biblioteca { min-height: 0; overflow: hidden; padding-bottom: calc(100cqw * 250 / 480);
+    background: url('/pixel/acesso/biblioteca/movel-base.webp') center bottom / 100% auto no-repeat,
+      url('/pixel/acesso/biblioteca/miolo.webp') center top / 200% auto repeat-y #241b16; }
+  .pc--biblioteca .pc-palco { position: relative; width: 100%; height: auto; aspect-ratio: 360 / 340; border-radius: 0;
+    background: url('/pixel/acesso/biblioteca/movel-topo.webp') center top / 100% 100% no-repeat; }
+  .pc--biblioteca .pc-texto { padding: 20px; background: rgba(16,18,19,.9); margin: 0; max-width: none; border-radius: 12px; }
+  .pc--biblioteca .ac-cartao, .pc--biblioteca .acx-ficha, .pc--biblioteca .pp, .pc--biblioteca .pv, .pc--biblioteca .pj { margin-left: 10px; margin-right: 10px; rotate: 0deg; }
+  .pc--biblioteca .pc-esqueleto { left: 28.333%; width: 22.222%; }
+  .pc--biblioteca .pc-biblioteca__bonfire { left: 47.222%; width: 22.222%; }
+  .pc--biblioteca .pc-biblioteca__gato { left: 63.889%; width: 10%; }
+  .pc--biblioteca .pc-biblioteca__coruja { left: 41.111%; width: 12.222%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pc-biblioteca__mascote, .pc-biblioteca__bonfire { animation: none; }
+}
