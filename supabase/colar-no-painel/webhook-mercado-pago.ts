@@ -284,7 +284,42 @@ async function sincronizarPreapproval(idRecurso) {
     });
     if (!atualizacao.ok) throw new Error("atualizacao_assinatura_falhou");
   }
+  if (status === "ativa" && typeof preapproval.external_reference === "string") {
+    await encerrarPlanosMaisCurtos(preapproval.external_reference, String(preapproval.id), PRECOS[plano].meses, token);
+  }
   return statusMercadoPago;
+}
+async function encerrarPlanosMaisCurtos(idUsuario, idNovo, mesesNovo, token) {
+  const resposta = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&status=eq.ativa&cancelar_ao_fim=eq.false&id_externo=neq.${encodeURIComponent(idNovo)}&select=id,id_externo,plano`);
+  if (!resposta.ok) return;
+  const outras = await resposta.json();
+  for (const antiga of outras) {
+    if (!antiga.id_externo || antiga.id_externo.startsWith("pix:")) continue;
+    const meses = PRECOS[antiga.plano]?.meses;
+    if (!meses || meses >= mesesNovo) continue;
+    try {
+      const cancelamento = await fetch(`https://api.mercadopago.com/preapproval/${encodeURIComponent(antiga.id_externo)}`, {
+        method: "PUT",
+        headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ status: "cancelled" })
+      });
+      if (!cancelamento.ok) throw new Error(`mercado_pago_${cancelamento.status}`);
+      const agora = (/* @__PURE__ */ new Date()).toISOString();
+      await banco(`assinaturas?id=eq.${encodeURIComponent(antiga.id)}`, { method: "PATCH", body: JSON.stringify({ cancelar_ao_fim: true, cancelada_em: agora, atualizada_em: agora }) });
+    } catch (erro) {
+      await alertarAdministradores(
+        "Amplia\xE7\xE3o de plano precisa de aten\xE7\xE3o",
+        [
+          `A pessoa ampliou para um plano de ${mesesNovo} meses, mas a recorr\xEAncia antiga (${antiga.id_externo}) n\xE3o foi cancelada.`,
+          `C\xF3digo: ${String(erro).replace(/^Error: /, "").slice(0, 120)}`,
+          "Cancele a recorr\xEAncia antiga no Mercado Pago para n\xE3o haver cobran\xE7a em dobro."
+        ],
+        "pagamentos",
+        `ampliacao:${antiga.id_externo}`
+      ).catch(() => {
+      });
+    }
+  }
 }
 async function anotarDono(idEvento, idUsuario) {
   if (!idUsuario) return;
