@@ -1,169 +1,57 @@
 import { IconePixel } from './IconePixel'
 import { Icone } from './Icone'
-import { useCallback, useEffect, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
-import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
 import { A_PARTIR_DE } from '../dados/planos'
-import { RenovacaoPix } from './RenovacaoPix'
-import { Recibos } from './Recibos'
-import { diaMes, JANELA_RENOVACAO_PIX, usarPeriodoPix } from '../conta/periodoPix'
+import { diaMes, JANELA_RENOVACAO_PIX } from '../conta/periodoPix'
+import { dias, diasEntre } from '../conta/dias'
+import { MENSAGENS_STATUS, dataBr, usarEstadoAssinatura } from '../conta/estadoAssinatura'
 
-interface EstadoAssinatura {
-  plano: string | null
-  status_assinatura: string | null
-  fim_periodo: string | null
-  ultima_cobranca_em: string | null
-  cancelar_ao_fim: boolean
-}
-
-const data = (valor: string | null) => valor ? new Date(valor).toLocaleDateString('pt-BR') : 'Não informada'
-const mensagensStatus: Record<string, { titulo: string; explicacao: string }> = {
-  ativa: { titulo: 'Em dia', explicacao: 'Seu plano está ativo. A próxima cobrança, se houver, aparece abaixo.' },
-  cancelada: { titulo: 'Assinatura encerrada', explicacao: 'O período pago terminou e a renovação está cancelada. Não houve reembolso desta cobrança. Seu histórico permanece salvo.' },
-  pendente: { titulo: 'Pendente', explicacao: 'Aguardamos a confirmação do Mercado Pago. Não considere o acesso pago ativo ainda.' },
-  falha_pagamento: { titulo: 'Falha no pagamento', explicacao: 'O pagamento não foi aprovado. Você pode continuar usando a modalidade gratuita.' },
-  pausada: { titulo: 'Pausada', explicacao: 'A assinatura está pausada. Consulte o Mercado Pago antes de esperar uma nova cobrança.' },
-  vencida: { titulo: 'Vencida', explicacao: 'O período desta assinatura terminou. Seu histórico de estudos permanece salvo.' },
-  reembolsada: { titulo: 'Encerrada e reembolsada', explicacao: 'O Mercado Pago confirmou o reembolso. O acesso pago terminou e sua conta voltou à modalidade gratuita, com o histórico preservado.' },
-}
-
-export function ResumoAssinatura({ detalhada = false }: { detalhada?: boolean }) {
+/**
+ * O cartão "Minha assinatura" de Minha conta: plano, situação, quantos dias faltam e o atalho para
+ * Dados da assinatura (/conta/assinatura), onde ficam renovação, ampliação, garantia e recibos.
+ */
+export function ResumoAssinatura() {
   const { sessao } = usarConta()
-  const [estado, definirEstado] = useState<EstadoAssinatura | null>(null)
-  const [carregando, definirCarregando] = useState(true)
-  const [processando, definirProcessando] = useState(false)
-  const [acaoPendente, definirAcaoPendente] = useState<'cancelar' | 'reembolsar' | null>(null)
-  const [mensagem, definirMensagem] = useState('')
-
-  const atualizar = useCallback(async () => {
-    if (!sessao) return
-    try {
-      const linhas = await chamarRpc<EstadoAssinatura[]>('obter_estado_conta', {})
-      let proximoEstado = linhas[0] ?? null
-      if (proximoEstado?.plano && ['ativa', 'cancelada', 'pendente', 'falha_pagamento', 'pausada'].includes(proximoEstado.status_assinatura ?? '')) {
-        try {
-          await chamarFuncao('gerenciar-plano', { acao: 'sincronizar_cobranca' })
-          proximoEstado = (await chamarRpc<EstadoAssinatura[]>('obter_estado_conta', {}))[0] ?? proximoEstado
-        } catch { /* A consulta da conta permanece disponível se a conciliação falhar. */ }
-      }
-      definirEstado(proximoEstado)
-    } catch { definirMensagem('Não foi possível consultar a assinatura agora. Atualize a página e tente novamente.') }
-    finally { definirCarregando(false) }
-  }, [sessao])
-
-  useEffect(() => { void atualizar() }, [atualizar])
-  // Pix não tem renovação automática para desligar: em vez de "Desligada", a conta mostra a renovação pelo Pix.
-  const periodoPix = usarPeriodoPix(sessao?.user.id, estado?.fim_periodo)
-
-  async function gerenciar(acao: 'cancelar' | 'reembolsar') {
-    definirProcessando(true)
-    definirMensagem(acao === 'reembolsar' ? 'Solicitando e confirmando o reembolso com o Mercado Pago…' : 'Interrompendo as próximas renovações…')
-    try {
-      await chamarFuncao('gerenciar-plano', { acao })
-      await atualizar()
-      definirMensagem(acao === 'cancelar'
-        ? 'Renovação automática desligada. Você continua assinante até o fim do período já pago; não haverá nova cobrança.'
-        : 'Reembolso confirmado pelo Mercado Pago. O acesso voltou ao gratuito e seu histórico foi preservado.')
-    } catch (erro) {
-      const texto = erro instanceof Error ? erro.message : ''
-      definirMensagem(texto.includes('Mercado Pago não confirmou')
-        ? 'Não recebemos confirmação do reembolso. Sua assinatura não foi alterada. Entre em contato pelo canal do site para atendimento manual da garantia; confira o pagamento no Mercado Pago antes de tentar novamente.'
-        : 'Não foi possível confirmar o resultado da solicitação. Atualize a página e confira o estado no Mercado Pago antes de tentar novamente.')
-    } finally { definirProcessando(false); definirAcaoPendente(null) }
-  }
-
+  const a = usarEstadoAssinatura(sessao)
   if (!sessao) return null
-  const ativo = Boolean(estado?.status_assinatura === 'ativa' && (!estado.fim_periodo || new Date(estado.fim_periodo).getTime() > Date.now()))
-  const statusAtual = estado?.status_assinatura ?? ''
-  const descricao = mensagensStatus[statusAtual]
-  const periodoPagoVigente = Boolean(estado?.fim_periodo && new Date(estado.fim_periodo).getTime() > Date.now())
-  const pixAtivo = ativo && Boolean(periodoPix?.pix && periodoPix.fim)
-  const fimPix = pixAtivo ? periodoPix?.fim ?? null : null
-  const renovacaoCancelada = !pixAtivo && ((ativo && estado?.cancelar_ao_fim) || (statusAtual === 'cancelada' && periodoPagoVigente))
-  const statusExibido = pixAtivo ? 'Em dia · pago no Pix' : renovacaoCancelada ? 'Sem renovação automática' : descricao?.titulo ?? 'Sem assinatura'
-  const planoVisivel = estado?.plano && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente))
-    ? `Plano ${estado.plano}`
-    : 'Plano gratuito'
-  const idadeCobranca = Date.now() - new Date(estado?.ultima_cobranca_em ?? '').getTime()
-  const garantia = (ativo || statusAtual === 'cancelada') && Number.isFinite(idadeCobranca)
-    && idadeCobranca >= 0 && idadeCobranca <= 7 * 864e5
+  const { estado } = a
+  const descricao = MENSAGENS_STATUS[a.status]
+  const statusExibido = a.pixAtivo ? 'Em dia · pago no Pix' : a.renovacaoDesligada ? 'Sem renovação automática' : descricao?.titulo ?? 'Sem assinatura'
+  const planoVisivel = estado?.plano && a.comAcesso ? `Plano ${estado.plano}` : 'Plano gratuito'
+  const restam = a.fimAcesso ? diasEntre(Date.now(), a.fimAcesso) : 0
+  const podeAmpliar = a.comAcesso && (estado?.plano === 'mensal' || estado?.plano === 'semestral') && !a.renovacaoDesligada
 
   return <section className="ct-cartao ct-cartao--largo" aria-label="Minha assinatura">
-    <header className="ct-cartao__cabeca"><div><h2>Minha assinatura</h2>{detalhada && <p>Seu histórico permanece preservado ao cancelar ou usar a garantia.</p>}</div></header>
-    {carregando ? <p role="status">Carregando assinatura…</p> : <>
+    <header className="ct-cartao__cabeca"><div><h2>Minha assinatura</h2></div></header>
+    {a.carregando ? <p role="status">Carregando assinatura…</p> : <>
       <dl className="conta-assinatura__dados conta-assinatura__dados--resumo">
         <div><dt>Plano</dt><dd>{planoVisivel}</dd></div>
         <div><dt>Status</dt><dd>{statusExibido}</dd></div>
+        {a.comAcesso && a.fimAcesso && <div><dt>Dias de acesso</dt><dd>{dias(restam)} <small>· até {dataBr(a.fimAcesso)}</small></dd></div>}
       </dl>
-      {!detalhada && fimPix && <p className="conta-renovacao__resumo conta-renovacao__resumo--pix">
+      {a.fimPix && <p className="conta-renovacao__resumo conta-renovacao__resumo--pix">
         <span className="conta-renovacao__estado"><i aria-hidden="true" />Pix · sem cobrança automática</span>
-        <span>Acesso até {diaMes(fimPix)}. {Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? 'A renovação já está aberta, sem perder nenhum dia.' : `A renovação abre em ${diaMes(fimPix - JANELA_RENOVACAO_PIX)}, sem perder nenhum dia.`}</span>
-        <a href={href(Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? '/assinatura' : '/conta/assinatura')}>{Date.now() >= fimPix - JANELA_RENOVACAO_PIX ? 'Renovar (Pix ou cartão)' : 'Ver como funciona'}</a>
+        <span>Acesso até {diaMes(a.fimPix)}. {Date.now() >= a.fimPix - JANELA_RENOVACAO_PIX ? 'A renovação já está aberta, sem perder nenhum dia.' : `A renovação abre em ${diaMes(a.fimPix - JANELA_RENOVACAO_PIX)}, sem perder nenhum dia.`}</span>
+        <a href={href(Date.now() >= a.fimPix - JANELA_RENOVACAO_PIX ? '/assinatura' : '/conta/assinatura')}>{Date.now() >= a.fimPix - JANELA_RENOVACAO_PIX ? 'Renovar (Pix ou cartão)' : 'Ver como funciona'}</a>
       </p>}
-      {!detalhada && !fimPix && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <p className={'conta-renovacao__resumo' + (renovacaoCancelada ? ' conta-renovacao__resumo--desligada' : '')}>
-        <span className="conta-renovacao__estado"><i aria-hidden="true" />Renovação automática {renovacaoCancelada ? 'desligada' : 'ligada'}</span>
-        <span>{renovacaoCancelada ? `Acesso até ${data(estado?.fim_periodo ?? null)}, sem nova cobrança.` : `Próxima cobrança em ${data(estado?.fim_periodo ?? null)}. Você pode desligar sem cancelar a assinatura.`}</span>
-        {!renovacaoCancelada && <a href={href('/conta/assinatura')}>Gerenciar renovação</a>}
+      {!a.fimPix && a.comAcesso && <p className={'conta-renovacao__resumo' + (a.renovacaoDesligada ? ' conta-renovacao__resumo--desligada' : '')}>
+        <span className="conta-renovacao__estado"><i aria-hidden="true" />Renovação automática {a.renovacaoDesligada ? 'desligada' : 'ligada'}</span>
+        <span>{a.renovacaoDesligada ? `Acesso até ${dataBr(estado?.fim_periodo)}, sem nova cobrança.` : `Próxima cobrança em ${dataBr(estado?.fim_periodo)}. Você pode desligar sem cancelar a assinatura.`}</span>
+        {!a.renovacaoDesligada && <a href={href('/conta/assinatura')}>Gerenciar renovação</a>}
       </p>}
-      {!ativo && !periodoPagoVigente && !detalhada && <a className="inicio-planos-atalho ct-planos" href={href('/assinatura')}>
+      {podeAmpliar && <p className="conta-renovacao__resumo conta-renovacao__resumo--ampliar">
+        <span className="conta-renovacao__estado"><i aria-hidden="true" />Ampliar o plano</span>
+        <span>Passe para um plano mais longo e pague menos por mês. Os {dias(restam)} que você tem continuam valendo.</span>
+        <a href={href('/conta/assinatura?secao=ampliar')}>Ver quanto fica</a>
+      </p>}
+      {!a.comAcesso && <a className="inicio-planos-atalho ct-planos" href={href('/assinatura')}>
         <span className="inicio-planos-atalho__icone"><IconePixel nome="planos" tamanho={48} /></span>
         <span className="inicio-planos-atalho__texto"><strong>Conheça os planos</strong><em>a partir de {A_PARTIR_DE}/mês · Pix ou cartão</em><small>Cronograma pelo que mais cai, Simulado Nacional e questões sem limite.</small></span>
         <span className="inicio-planos-atalho__acao">Ver planos <Icone nome="direita" tamanho={16} /></span>
       </a>}
-      {detalhada ? <>
-      {estado?.plano && !ativo && <p className="ct-nota">Plano desta assinatura: {estado.plano}. Seu acesso atual é {planoVisivel.toLowerCase()}.</p>}
-      <dl className="conta-assinatura__dados">
-        <div><dt>{fimPix ? 'Acesso até' : estado?.cancelar_ao_fim || ['cancelada', 'vencida', 'reembolsada'].includes(statusAtual) ? 'Término do acesso' : ativo ? 'Próxima cobrança' : 'Data informada pelo provedor'}</dt><dd>{fimPix ? data(new Date(fimPix).toISOString()) : data(estado?.fim_periodo ?? null)}</dd></div>
-        {fimPix && <div><dt>Pagamento</dt><dd>Pix, sem cobrança automática</dd></div>}
-        <div><dt>Última cobrança</dt><dd>{data(estado?.ultima_cobranca_em ?? null)}</dd></div>
-      </dl>
-      {!(ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <p className="ct-nota">{renovacaoCancelada
-        ? 'Este período não tem renovação automática: não haverá nova cobrança. A cobrança já feita não foi reembolsada; você mantém o acesso ilimitado até o término indicado. Seu histórico permanece salvo.'
-        : descricao?.explicacao ?? 'Você está na modalidade gratuita. Pode continuar estudando normalmente.'}</p>}
-      {/* Renovação automática (19/10/2026, pedido do Tales): ligada ou desligada, à vista e separada
-          do reembolso. Desligar não cancela a assinatura: o acesso continua até o fim do período pago. */}
-      {fimPix && <RenovacaoPix fim={fimPix} />}
-      {!fimPix && (ativo || (statusAtual === 'cancelada' && periodoPagoVigente)) && <section className={'conta-renovacao' + (renovacaoCancelada ? ' conta-renovacao--desligada' : '')} aria-label="Renovação automática">
-        <div className="conta-renovacao__topo">
-          <h3>Renovação automática</h3>
-          <span className="conta-renovacao__estado"><i aria-hidden="true" />{renovacaoCancelada ? 'Desligada' : 'Ligada'}</span>
-        </div>
-        {renovacaoCancelada ? <>
-          <p className="conta-renovacao__linha">Seu acesso continua ilimitado até <strong>{data(estado?.fim_periodo ?? null)}</strong>. Não haverá nova cobrança.</p>
-          <p className="conta-renovacao__nota">Quer continuar depois dessa data? É só assinar de novo em Planos; seu histórico fica salvo.</p>
-        </> : <>
-          <p className="conta-renovacao__linha">Próxima cobrança em <strong>{data(estado?.fim_periodo ?? null)}</strong>, no mesmo cartão.</p>
-          <ul className="conta-renovacao__garantias">
-            <li><Icone nome="certo" tamanho={15} /><span>Desligar <strong>não cancela</strong> a assinatura: você continua assinante até {data(estado?.fim_periodo ?? null)}.</span></li>
-            <li><Icone nome="certo" tamanho={15} /><span>Só a próxima cobrança deixa de acontecer.</span></li>
-            <li><Icone nome="certo" tamanho={15} /><span>Suas respostas, revisões e anotações continuam salvas.</span></li>
-          </ul>
-          <button className="botao conta-renovacao__botao" type="button" disabled={processando} onClick={() => { definirAcaoPendente('cancelar'); definirMensagem('') }}>Desligar a renovação automática</button>
-        </>}
-      </section>}
-      {garantia && <div className="conta-assinatura__escolhas" aria-label="Opções da assinatura">
-        {garantia && <section className="conta-assinatura__escolha">
-          <h3>Garantia de 7 dias: desistir e pedir reembolso integral</h3>
-          <p>Disponível até sete dias após a última cobrança. Se o Mercado Pago confirmar o reembolso, esta assinatura termina, o acesso volta ao gratuito e seu histórico continua salvo.</p>
-          <button className="botao botao--principal" type="button" disabled={processando} onClick={() => { definirAcaoPendente('reembolsar'); definirMensagem('') }}>Desistir e solicitar reembolso integral</button>
-        </section>}
-      </div>}
-      {acaoPendente && <section className="conta-assinatura__confirmacao" aria-label="Confirmar escolha da assinatura">
-        <h3>{acaoPendente === 'reembolsar' ? 'Confirmar pedido de reembolso integral?' : 'Desligar a renovação automática?'}</h3>
-        <p>{acaoPendente === 'reembolsar'
-          ? 'O pedido será enviado ao Mercado Pago. Somente após a confirmação do reembolso o acesso pago será encerrado; suas respostas e revisões continuarão salvas.'
-          : `Você continua assinante, com acesso ilimitado, até ${data(estado?.fim_periodo ?? null)}. Só a próxima cobrança deixa de acontecer; a já feita não é reembolsada.`}</p>
-        <div className="linha linha--empilha-celular">
-          <button className="botao botao--principal" type="button" disabled={processando} onClick={() => void gerenciar(acaoPendente)}>{acaoPendente === 'reembolsar' ? 'Confirmar pedido de reembolso' : 'Sim, desligar a renovação'}</button>
-          <button className="botao" type="button" disabled={processando} onClick={() => definirAcaoPendente(null)}>Voltar</button>
-        </div>
-      </section>}
-      <a className="botao botao--fantasma" href={href('/assinatura')}>Ver planos</a>
-      <Recibos />
-      </> : <a className="conta-assinatura__detalhes-link" href={href('/conta/assinatura')}>Mais dados sobre minha assinatura <span aria-hidden="true">↗</span></a>}
+      <a className="conta-assinatura__detalhes-link" href={href('/conta/assinatura')}>Mais dados sobre minha assinatura <span aria-hidden="true">↗</span></a>
     </>}
-    {mensagem && <p role="status">{mensagem}</p>}
+    {a.falhou && <p role="status">Não foi possível consultar a assinatura agora. Atualize a página e tente novamente.</p>}
   </section>
 }
-

@@ -1,0 +1,94 @@
+/* Dados da assinatura (/conta/assinatura), refeita em 14/11/2026 no padrão do Desempenho (Desempenho.css, raiz .dpg):
+   a mesma paleta (verde-azulado e ardósia sobre o papel), Plus Jakarta nos títulos e números, o menu lateral fixo,
+   seções por extenso e botões reais. A arte do baú só na moldura do topo. Prefixo próprio: asn-. */
+
+/* ---------- Topo ---------- */
+.asn-topo__cena { background: #0d0a08; }
+.asn-arte { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; image-rendering: pixelated; pointer-events: none; }
+.asn-topo__painel { grid-template-columns: minmax(0, 1.5fr) minmax(15rem, 1fr); align-items: start; }
+.asn .dp-mensagem { max-width: 52ch; }
+.asn-acoes { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+
+/* Os dias de acesso: o número grande do topo, com a duração em meses e a barra. */
+.asn-dias { display: grid; gap: 0.35rem; align-content: start; padding: var(--e-4) var(--e-5) var(--e-5); border-radius: var(--raio-cartao); background: linear-gradient(180deg, var(--dp-verde-veu), transparent 85%); border: 1px solid var(--dp-linha); }
+.asn-dias__numero { display: flex; align-items: baseline; gap: 0.45rem; margin: 0.2rem 0 0; }
+.asn-dias__numero b { color: var(--dp-verde-forte); font-family: var(--fonte-marca); font-size: clamp(3rem, 2.2rem + 2.6vw, 4.1rem); font-weight: 800; letter-spacing: -0.04em; line-height: 0.95; font-variant-numeric: tabular-nums; }
+.asn-dias__numero span { color: var(--dp-ardosia); font-family: var(--fonte-marca); font-size: 1.25rem; font-weight: 750; }
+.asn-dias__meses { margin: 0; color: var(--dp-ardosia-2); font-size: var(--corpo-menor); font-weight: 600; }
+.asn-dias__vazio { margin: 0.4rem 0 0; color: var(--dp-ardosia-2); }
+.asn-dias__barra { height: 10px; margin-top: 0.4rem; border-radius: 999px; background: var(--dp-ardosia-veu); overflow: hidden; box-shadow: inset 0 0 0 1px var(--dp-linha); }
+.asn-dias__barra span { display: block; height: 100%; border-radius: 999px; background: var(--dp-verde); }
+
+.asn-numeros { grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 3vw, 2rem); border-bottom: 0; }
+.asn-numeros .dp-numero:first-child { padding-left: 0; }
+.asn .asn-numero__texto { font-size: clamp(1.35rem, 1.1rem + 0.9vw, 1.75rem); text-transform: capitalize; }
+
+/* ---------- Seções ---------- */
+.asn-ficha { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin: 0; }
+.asn-ficha > div { display: grid; gap: 0.2rem; padding: var(--e-3) var(--e-4) var(--e-3) 0; border-top: 1px solid var(--dp-linha); min-width: 0; }
+.asn-ficha > div:nth-child(-n + 3) { border-top: 0; }
+.asn-ficha dt { color: var(--dp-ardosia-2); font-size: var(--meta); font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; }
+.asn-ficha dd { margin: 0; color: var(--dp-ardosia); font-weight: 750; overflow-wrap: anywhere; }
+.asn-estado { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.15rem 0.65rem; border-radius: 999px; background: var(--dp-ardosia-veu); color: var(--dp-ardosia-2); font-size: 0.88rem; font-weight: 800; }
+.asn-estado i { width: 0.5rem; height: 0.5rem; border-radius: 999px; background: currentColor; }
+.asn-estado--ok { background: var(--dp-verde-veu); color: var(--dp-verde-forte); }
+.asn-nota { display: flex; gap: 0.45rem; align-items: baseline; margin: 0; color: var(--dp-ardosia-2); font-size: var(--corpo-menor); }
+.asn-nota svg { flex: none; color: var(--dp-verde); transform: translateY(2px); }
+
+.asn .ampliar--dp .cdias__parte--total { box-shadow: inset 0 0 0 1.5px var(--dp-verde); background: var(--dp-verde-veu); }
+.asn .ampliar--dp .cdias__parte--total small { color: var(--dp-verde-forte); }
+
+.asn-renovacao p { margin: 0; color: var(--dp-ardosia); }
+.asn-renovacao > p b, .asn-garantia b { color: var(--dp-verde-forte); }
+.asn-renovacao__topo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.asn-renovacao__topo h3 { margin: 0; font-size: 1.15rem; }
+.asn-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
+.asn-lista li { display: flex; gap: 0.5rem; align-items: baseline; color: var(--dp-ardosia-2); }
+.asn-lista svg { flex: none; color: var(--dp-verde); transform: translateY(2px); }
+.asn-botao-inicio { justify-self: start; }
+.asn-botao-alerta { border-color: color-mix(in srgb, var(--ds-ruim) 60%, var(--dp-linha)); color: var(--ds-ruim); }
+.asn-botao-alerta:hover { background: color-mix(in srgb, var(--ds-ruim) 8%, var(--dp-papel)); color: var(--ds-ruim); }
+.asn-garantia p { margin: 0; color: var(--dp-ardosia); max-width: 70ch; }
+.asn-confirmacao { border-color: color-mix(in srgb, var(--dp-verde) 45%, var(--dp-linha)); background: linear-gradient(180deg, var(--dp-verde-veu), var(--dp-papel) 70%); }
+.asn-confirmacao h3 { margin: 0; font-size: 1.15rem; }
+.asn-confirmacao p { margin: 0; color: var(--dp-ardosia-2); }
+.asn-mensagem { margin: 0; padding: 0.8rem 1rem; border-radius: var(--raio-cartao); background: var(--dp-ardosia-veu); color: var(--dp-ardosia); font-weight: 600; }
+.asn .dp-botao:disabled { opacity: 0.55; cursor: not-allowed; }
+
+/* Recibos e dúvidas: o conteúdo antigo vestido no padrão da página. */
+.asn-recibos .recibos { margin: 0; border: 0; padding: 0; background: none; }
+.asn-recibos .recibos > summary { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1rem; border: 1.5px solid var(--dp-verde); border-radius: var(--raio-controle); color: var(--dp-verde-forte); font-weight: 750; text-decoration: none; cursor: pointer; list-style: none; }
+.asn-recibos .recibos > summary::-webkit-details-marker { display: none; }
+.asn-recibos .recibos[open] > summary { margin-bottom: var(--e-4); background: var(--dp-verde-veu); }
+.asn-duvidas { gap: 0; padding-block: var(--e-2); }
+.asn-duvidas details { border-bottom: 1px solid var(--dp-linha); }
+.asn-duvidas details:last-child { border-bottom: 0; }
+.asn-duvidas summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 52px; color: var(--dp-ardosia); font-weight: 750; cursor: pointer; list-style: none; }
+.asn-duvidas summary::-webkit-details-marker { display: none; }
+.asn-duvidas summary::after { content: "+"; flex: none; display: grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 999px; background: var(--dp-verde-veu); color: var(--dp-verde-forte); font-weight: 800; }
+.asn-duvidas details[open] summary::after { content: "–"; }
+.asn-duvidas details p { margin: 0 0 var(--e-4); color: var(--dp-ardosia-2); max-width: 70ch; }
+.asn-nav__suporte { width: 100%; }
+
+.asn-entrar { justify-items: start; max-width: 40rem; }
+.asn-entrar h1 { margin: 0; font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.2rem); }
+.asn-entrar p:not(.dp-rotulo) { margin: 0; color: var(--dp-ardosia-2); }
+.asn--sem-conta { grid-template-columns: minmax(0, 1fr); }
+
+@media (max-width: 64rem) {
+  .asn-topo__painel { grid-template-columns: minmax(0, 1fr); }
+  .asn-ficha { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .asn-ficha > div:nth-child(3) { border-top: 1px solid var(--dp-linha); }
+}
+@media (max-width: 40rem) {
+  .asn-topo__cena { display: block; background: var(--dp-papel); }
+  .asn-arte { position: relative; z-index: 0; display: block; aspect-ratio: 16 / 9; height: auto; object-position: 56% 60%; }
+  .asn-numeros { grid-template-columns: minmax(0, 1fr); margin-inline: var(--e-4); }
+  .asn-numeros .dp-numero { padding: var(--e-3) 0; border-left: 0 !important; }
+  .asn-numeros .dp-numero + .dp-numero { padding-left: 0; border-top: 1px solid var(--dp-linha); }
+  .asn-ficha { grid-template-columns: minmax(0, 1fr); }
+  .asn-ficha > div { padding-right: 0; }
+  .asn-ficha > div:nth-child(n + 2) { border-top: 1px solid var(--dp-linha); }
+  .asn-acoes .dp-botao, .asn-botao-inicio { flex: 1 1 100%; justify-self: stretch; }
+}
+.dpg .asn-arte { animation: none !important; transition: none !important; transform: none !important; }

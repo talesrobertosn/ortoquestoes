@@ -13,7 +13,9 @@ HTTP_COMPARTILHADO = (RAIZ / "supabase/functions/_shared/http.ts").read_text()
 WEBHOOK_MERCADO_PAGO = (RAIZ / "supabase/functions/webhook-mercado-pago/index.ts").read_text()
 COBRANCA_MERCADO_PAGO = (RAIZ / "supabase/functions/_shared/cobranca-mercado-pago.ts").read_text()
 GERENCIAR_PLANO = (RAIZ / "supabase/functions/gerenciar-plano/index.ts").read_text()
-RESUMO_ASSINATURA = (RAIZ / "src/componentes/ResumoAssinatura.tsx").read_text()
+# Desde 14/11/2026 a assinatura da conta se divide em três arquivos: o resumo de Minha conta, o estado
+# compartilhado e a página Dados da assinatura. As garantias abaixo valem para o conjunto.
+RESUMO_ASSINATURA = "\n".join((RAIZ / c).read_text() for c in ("src/componentes/ResumoAssinatura.tsx", "src/conta/estadoAssinatura.ts", "src/paginas/DetalhesAssinatura.tsx"))
 ROTEIRO_ROLLBACK = (RAIZ / "docs/ativacao-e-rollback-assinaturas.md").read_text()
 ENV_EXEMPLO = (RAIZ / ".env.example").read_text()
 MIGRACAO_ADMIN = (RAIZ / "supabase/migrations/202609231450_admin_assinaturas.sql").read_text()
@@ -184,7 +186,7 @@ for trecho in (
 ):
     assert trecho in GERENCIAR_PLANO, f"Garantia de cobrança ausente: {trecho}"
 
-assert "statusAtual === 'cancelada'" in RESUMO_ASSINATURA
+assert "status === 'cancelada'" in RESUMO_ASSINATURA
 assert "{ acao: 'sincronizar_cobranca' }" in RESUMO_ASSINATURA
 assert "!proximoEstado.ultima_cobranca_em" not in RESUMO_ASSINATURA
 for trecho in ("Falha no pagamento", "Encerrada e reembolsada", "Pendente", "Renovação automática desligada", "Em dia"):
@@ -192,11 +194,12 @@ for trecho in ("Falha no pagamento", "Encerrada e reembolsada", "Pendente", "Ren
 for trecho in (
     "Desistir e solicitar reembolso integral",
     "Desligar a renovação automática",
-    "não cancela</strong> a assinatura",
-    "Confirmar pedido de reembolso",
+    "não cancela</b> a assinatura",
+    "Confirmar o pedido de reembolso",
     "Sim, desligar a renovação",
-    "gerenciar(acaoPendente)",
-    "statusAtual === 'cancelada' && periodoPagoVigente",
+    "gerenciar('cancelar')",
+    "gerenciar('reembolsar')",
+    "status === 'cancelada' && periodoPagoVigente",
 ):
     assert trecho in RESUMO_ASSINATURA, f"Escolha clara de cancelamento ausente: {trecho}"
 assert "Cancelar plano" not in PAGINA_ASSINATURA, "Ação ambígua de cancelamento voltou à página de planos"

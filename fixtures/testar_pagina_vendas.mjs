@@ -99,7 +99,7 @@ try {
     assert.ok(pagina.includes(preciso) || css.includes(preciso) || (await readFile('src/componentes/vendas/usarRevelar.ts', 'utf8')).includes(preciso), `Falta na página: ${preciso}`)
   }
   // O botão descrito na página é o mesmo que existe em Minha conta.
-  assert.ok((await readFile('src/componentes/ResumoAssinatura.tsx', 'utf8')).includes('Desistir e solicitar reembolso integral'))
+  assert.ok((await readFile('src/paginas/DetalhesAssinatura.tsx', 'utf8')).includes('Desistir e solicitar reembolso integral'))
   console.log('Página de vendas: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })

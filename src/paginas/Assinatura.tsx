@@ -26,6 +26,8 @@ import {
 } from '../dados/vendas'
 import { CartoesPlanos } from '../componentes/vendas/CartoesPlanos'
 import { AmpliarPlano } from '../componentes/AmpliarPlano'
+import { ContaDias } from '../componentes/ContaDias'
+import { dias, diasEntre, duracao } from '../conta/dias'
 import { PreviaCronograma } from '../componentes/vendas/PreviaCronograma'
 import { IconePix, IconeCartao } from '../componentes/vendas/IconesPagamento'
 import { usarRevelar } from '../componentes/vendas/usarRevelar'
@@ -257,6 +259,16 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [planoDaUrl, sessao, consultou, precoCarregado, comAcessoPago])
 
+  // Vindo de Dados da assinatura ("Ampliar para o semestral"), abre direto o pagamento da ampliação (uma vez só).
+  const ampliarDaUrl = opcoesAmpliar.find((p) => p.id === consulta?.get('ampliar')) ?? null
+  const abriuAmpliar = useRef(false)
+  useEffect(() => {
+    if (abriuAmpliar.current || !ampliarDaUrl || !podeAmpliar || !precoCarregado) return
+    abriuAmpliar.current = true
+    ampliar(ampliarDaUrl)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ampliarDaUrl, podeAmpliar, precoCarregado])
+
   const pessoa = useMemo(() => sessao ? dadosDaPessoa(sessao.user.user_metadata, metricas?.respostas_total, metricas?.sequencia, locais) : null, [sessao, metricas, locais])
   const titulo = tituloHeroi(pessoa)
   const elogio = elogioHeroi(pessoa)
@@ -329,6 +341,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             </>}
             <dl className="vd-ativo__dados">
               <div><dt>Plano</dt><dd>{metricas.plano ? `Plano ${metricas.plano}` : 'Assinante'}</dd></div>
+              {(ativa || acessoPagoAteOFim) && Number.isFinite(fimAtual) && <div><dt>Dias de acesso</dt><dd>{dias(diasEntre(Date.now(), fimAtual))} <small>({duracao(Date.now(), fimAtual)})</small></dd></div>}
               {ativa && ehPix
                 ? <><div><dt>Acesso até</dt><dd>{Number.isFinite(fimAtual) ? new Date(fimAtual).toLocaleDateString('pt-BR') : fimTexto ?? 'Não informada'}</dd></div><div><dt>Pagamento</dt><dd>Pix, sem cobrança automática</dd></div></>
                 : <div><dt>{semRenovacao ? 'Término do acesso' : 'Próxima cobrança'}</dt><dd>{fimTexto ?? 'Não informada'}</dd></div>}
@@ -510,6 +523,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
                 </label>
               </fieldset>
+              <div className="ck__dias"><ContaDias fimAtual={ampliando || renovarPix ? fimAtual : null} meses={planoEscolhido.meses} compacta /></div>
               {ampliando && meioPagamento === 'pix' && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Ampliação: os dias que você já tem continuam valendo. O novo período de {planoEscolhido.meses} meses começa em {fimAmpliarTexto}, quando o atual termina.</p>}
               {renovarPix && meioPagamento === 'pix' && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Renovação antecipada: os {diasRestantes} {diasRestantes === 1 ? 'dia que falta' : 'dias que faltam'} continuam valendo. O novo período de {planoEscolhido.meses === 1 ? '1 mês' : `${planoEscolhido.meses} meses`} começa em {fimAtualTexto}, quando o atual termina.</p>}
               {meioPagamento === 'pix' && <label className="campo ck__cpf"><span>CPF de quem vai pagar</span><input inputMode="numeric" autoComplete="off" maxLength={14} placeholder="000.000.000-00" value={cpf} aria-invalid={cpfInvalido} aria-describedby="ck-cpf-ajuda" onChange={evento => { definirCpf(evento.target.value); definirMensagem(null) }} />

@@ -888,3 +888,4 @@
 @keyframes renova-pix-brilho { 50% { background: color-mix(in srgb, var(--ouro) 45%, var(--superficie)); } }
 @keyframes renova-pix-flutua { 50% { transform: translateY(-3px); } }
 .conta-renovacao__resumo--pix .conta-renovacao__estado { background: color-mix(in srgb, var(--ouro) 18%, var(--superficie)); color: var(--ouro-texto); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ouro) 55%, var(--traco)); }
+.conta-renovacao__resumo--ampliar .conta-renovacao__estado { background: color-mix(in srgb, var(--verdete) 14%, var(--superficie)); color: var(--verdete); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--verdete) 45%, var(--traco)); }
