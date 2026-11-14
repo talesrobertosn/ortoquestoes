@@ -148,7 +148,7 @@ export function PaginaCronogramaFlashcards({ abas }: { abas: React.ReactNode }) 
   const { crono, salvo, nomes, cartas, registros, salvar } = usarCronograma()
   const [ajustando, definirAjustando] = useState(false)
   return (
-    <article className="cf cfc empilha-2 cf--arquivo">
+    <article className="cf cfc empilha-2 cf--arquivo fcn fcn--cronograma">
       {abas}
       <header className="cf-cabeca cf-cabeca--arquivo">
         <CenaArquivo />

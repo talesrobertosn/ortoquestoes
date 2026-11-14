@@ -11,8 +11,8 @@ import { calcularEstatisticas, chaveDoDia, type DiaResumido } from '../flashcard
 import { corDaArea } from '../dados/coresAreas'
 import { CartaoCronograma, PaginaCronogramaFlashcards, linkSessaoCronograma, resumoDeHoje, usarCronograma } from './CronogramaFlashcards'
 import { acervoFalhou, carregarAcervo, indiceDoAcervo } from '../flashcards/dados/acervo'
+import { PanoramaFlashcards } from '../componentes/flashcards/PanoramaFlashcards'
 import { CenaArquivo } from '../componentes/flashcards/CenaArquivo'
-import { VisitaCronograma } from '../componentes/cronograma/VisitaCronograma'
 import {
   CATEGORIAS_OPINIAO, deveConvidar, dispensarConvite, enviarOpiniao, mensagemDeErro,
   type CategoriaOpiniao, type OrigemOpiniao,
@@ -22,6 +22,7 @@ import type { Flashcard } from '../flashcards/tipos'
 import '../estilos/paginas/CentralFlashcards.css'
 import '../estilos/paginas/CentralFlashcardsArquivo.css'
 import '../estilos/componentes/Cristal.css'
+import '../estilos/paginas/FlashcardsPainel.css'
 
 export const AVISO_BETA = 'O Torneio de Flashcards está em beta. Estamos aprimorando o visual, o áudio e as mecânicas. Teste e conte o que funcionou — ou o que precisa melhorar.'
 
@@ -78,16 +79,8 @@ function Abas({ atual }: { atual: 'central' | 'desempenho' | 'cronograma' }) {
 
 /* ------------------------------------------------------------------ Central */
 
-/**
- * Central dos flashcards no Arquivo da Vila (01/11/2026, refeita por inteiro a pedido do Tales: "é pra mudar tudo").
- * Antes eram uns 15 botões para poucos destinos; agora a página responde, nesta ordem:
- * 1. o topo com a cena e UMA ação, a certa para hoje (revisar o que venceu, seguir o cronograma, começar pelo que
- *    mais cai ou abrir a Biblioteca), com a Biblioteca e o Torneio como caminhos discretos;
- * 2. "Hoje": um painel só, dividido por linhas finas como o progresso da página inicial, com as filas para revisar
- *    (Revisões de hoje, Errei, Hesitei, Nunca estudados), o cronograma do dia e o estudo por assunto;
- * 3. "Por onde seguir": a Biblioteca, o Torneio e o desempenho, cada um com o seu objeto pixel animado;
- * 4. "Como funciona" recolhido (aberto na primeira visita) e um bloco de opinião só.
- * Todos os destinos de antes continuam aqui ou a um toque (a Cripta direto pela Entrada do Torneio).
+/** Central de estudo: missão contextual, pintura separada, sessão curta, panorama real e filas.
+ * Preserva Biblioteca, Torneio, cronograma, assuntos e opinião. Ver docs/design/FLASHCARDS-PAINEL-2026-11.md.
  */
 export function CentralFlashcards() {
   const { cartas, nomes, crono, salvo, registros } = usarCronograma()
@@ -98,17 +91,18 @@ export function CentralFlashcards() {
     return o === 'fim_sessao' || o === 'fim_partida' ? o : null
   })
   const [convite, definirConvite] = useState(() => deveConvidar())
+  const [quantidade, definirQuantidade] = useState(10)
   const artes = usarArtesLiberadas()
 
   const contagem = useMemo(() => {
-    const v = Object.values(registros)
+    const v = cartas ? cartas.flatMap(c => registros[c.id] ? [registros[c.id]] : []) : []
     return {
       hoje: v.filter((r) => revisarHoje(r)).length,
       errei: v.filter((r) => r.c === false).length,
       hesitei: v.filter((r) => r.c === true && r.confianca === 'duvida').length,
       estudados: v.length,
     }
-  }, [registros])
+  }, [registros, cartas])
   const novos = cartas ? cartas.filter((c) => !registros[c.id]).length : null
   const areas = useMemo(() => Object.entries(nomes).sort((a, b) => a[1].localeCompare(b[1], 'pt-BR')), [nomes])
   const total = cartas?.length ?? 0
@@ -119,29 +113,27 @@ export function CentralFlashcards() {
   const acao = acaoDeHoje(contagem.hoje, contagem.estudados, plano?.total ?? 0, plano?.texto ?? '')
 
   return (
-    <article className="cf cfh cf--arquivo">
+    <article className="cf cfh cf--arquivo fcn">
       <Abas atual="central" />
-      {/* O Arquivo da Vila: o fichário de fichas ao lado da praça da torre; a escada do fundo desce para a Cripta
-          (o Torneio). O texto fica num vidro escuro do lado calmo da pintura, sem cobrir o fichário. */}
-      <section className="cfh-heroi cfh-heroi--arquivo" aria-labelledby="cfh-titulo">
-        <div className="cfh-palco">
-        <div className="cfh-janela">{artes && <CenaArquivo />}</div>
-        <div className="cfh-heroi__texto cfh-vidro-arquivo">
-          <p className="cfh-selo">Flashcards</p>
-          <h1 id="cfh-titulo">Treine flashcards de Ortopedia.</h1>
-          <p className="cfh-heroi__pessoal"><strong>{pessoal.abertura}</strong> {pessoal.dados}</p>
-          <a className="cristal cfh-heroi__estudar" href={href(acao.destino)}>
-            <Icone nome={acao.icone} tamanho={20} />
-            <span><strong>{acao.rotulo}</strong><small>{acao.detalhe}</small></span>
-          </a>
-          <div className="cfh-heroi__atalhos">
-            {acao.destino !== '/flashcards/biblioteca' && <a className="cfh-vidro" href={href('/flashcards/biblioteca')}><Icone nome="livro" tamanho={16} /> Abrir a Biblioteca</a>}
-            <a className="tr-heroi__link" href={href('/flashcards/entrada')}><Icone nome="raio" tamanho={15} /> Torneio de Flashcards</a>
+      <header className="fcn-topo">
+        <div><p className="fcn-selo">FLASHCARDS · MEMÓRIA EM CONSTRUÇÃO</p><h1>Um conceito de cada vez.</h1><p>Flashcards de Ortopedia para lembrar quando precisar.</p></div>
+        <a className="botao botao--fantasma" href={href('/flashcards/desempenho')}><Icone nome="grafico" tamanho={18} /> Meu desempenho</a>
+      </header>
+      <section className="fcn-heroi" aria-labelledby="fcn-hoje-titulo">
+        <div className="fcn-pintura">{artes && <CenaArquivo visitantes />}<span className="fcn-local">O Arquivo da Vila <span>· seu espaço de estudo</span></span></div>
+        <div className="fcn-missao">
+          <div className="fcn-missao__texto"><p className="fcn-selo">SEU PRÓXIMO PASSO</p><h2 id="fcn-hoje-titulo">{contagem.hoje ? 'Reencontre o que já estudou.' : contagem.estudados ? 'Dê espaço a um conceito novo.' : 'Comece pequeno. Volte amanhã.'}</h2>
+            <p><strong>{pessoal.abertura}</strong> {pessoal.dados}</p>
+            <a className="botao botao--principal fcn-principal" href={href(acao.destino)}><Icone nome={acao.icone} tamanho={20}/><span>{acao.rotulo}<small>{acao.detalhe}</small></span><Icone nome="direita" tamanho={18}/></a>
+            <a className="fcn-link" href={href('/flashcards/biblioteca')}>Escolher meus flashcards <Icone nome="direita" tamanho={15}/></a>
           </div>
+          <dl className="fcn-resumo"><div><dt>Para revisar hoje</dt><dd>{cartas ? contagem.hoje.toLocaleString('pt-BR') : '…'}</dd><small>Vencidos pela revisão espaçada</small></div><div><dt>Já passaram por você</dt><dd>{cartas ? contagem.estudados.toLocaleString('pt-BR') : '…'}</dd><small>Flashcards diferentes estudados</small></div></dl>
         </div>
-        </div>
-        {/* O chão do Arquivo, logo abaixo da cena: o que são os flashcards (a pintura fica inteira no topo). */}
-        <p className="cfh-chao">Por área, tirados das questões comentadas das provas reais e dos OrtoQuestões Simulados. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
+      </section>
+      <section className="fcn-curta" aria-labelledby="fcn-curta-titulo">
+        <div><p className="fcn-selo">CABE NO INTERVALO</p><h2 id="fcn-curta-titulo">Pouco tempo também conta.</h2><p>Escolha uma sessão curta. O restante continua guardado.</p></div>
+        <div className="fcn-curta__controle"><div className="fcn-opcoes" role="group" aria-label="Tamanho da sessão curta">{[5,10,20].map(n=><button key={n} type="button" aria-pressed={quantidade===n} onClick={()=>definirQuantidade(n)}><strong>{n}</strong><span>flashcards</span><small>~{Math.ceil(n/2)} min</small></button>)}</div>
+        <a className="botao botao--principal" href={href(estudar(contagem.hoje ? 'pendentes' : 'novos', quantidade))}>Começar sessão curta <Icone nome="direita" tamanho={16}/></a></div>
       </section>
 
       {cartas && acervoFalhou() && (
@@ -162,9 +154,11 @@ export function CentralFlashcards() {
         </aside>
       )}
 
-      <section className="cfa-painel" aria-labelledby="cfa-hoje">
+      <PanoramaFlashcards cartas={cartas} nomes={nomes} registros={registros} />
+
+      <section id="fcn-organizar" className="cfa-painel" aria-labelledby="cfa-hoje">
         <header className="cfa-painel__cabeca">
-          <h2 id="cfa-hoje">Hoje</h2>
+          <h2 id="cfa-hoje">Organize seu estudo</h2>
           <p>{contagem.hoje
             ? contagem.hoje >= 10 ? `${contagem.hoje.toLocaleString('pt-BR')} flashcards venceram hoje pela repetição espaçada.` : 'Alguns flashcards venceram hoje pela repetição espaçada. Poucos minutos dão conta.'
             : contagem.estudados ? 'Nada vence hoje. Bom momento para flashcards novos.' : 'Responda os primeiros flashcards e as revisões se montam sozinhas.'}</p>
@@ -211,8 +205,7 @@ export function CentralFlashcards() {
       </aside>}
 
       {opiniao && <JanelaOpiniao origem={opiniao} aoFechar={() => definirOpiniao(null)} />}
-      {/* A coruja do Arquivo ou o gato, de vez em quando, sentados num botão (easter egg). */}
-      <VisitaCronograma poleiros={POLEIROS_FLASHCARDS} />
+
     </article>
   )
 }
@@ -224,9 +217,6 @@ function acaoDeHoje(hoje: number, estudados: number, plano: number, textoPlano: 
   if (plano > 0) return { destino: linkSessaoCronograma(), rotulo: estudados ? `Seguir cronograma · faltam ${plano.toLocaleString('pt-BR')}` : 'Começar pelos que mais caem', detalhe: `${textoPlano} · ${min(plano)}`, icone: 'rota' }
   return { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', detalhe: 'Biblioteca · estudo calmo', icone: 'livro' }
 }
-
-/** Onde a coruja ou o gato podem sentar nos Flashcards, em ordem de preferência. */
-const POLEIROS_FLASHCARDS = ['.cf-crono__botoes .botao', '.cf-assunto button', '.cfa-ranking', '.cf-aviso .botao', '.cfa-caminho']
 
 /**
  * A frase pessoal do topo (adendo do dono, 18/10/2026): o primeiro nome e até duas observações com
@@ -245,7 +235,7 @@ function mensagemPessoal(nome: string, hoje: number, estudados: number, andar: n
   return { abertura, dados: obs.slice(0, 2).join(' ') }
 }
 
-/** Uma fila do painel Hoje: ícone, nome, para que serve, o número em fonte pixel e a seta. Vazia, fica apagada. */
+/** Uma fila do painel Hoje: ícone, nome, para que serve, o número em fonte de leitura e a seta. Vazia, fica apagada. */
 function Fila({ destino, rotulo, texto, numero, icone, destaque }: { destino: string; rotulo: string; texto: string; numero: number | null; icone: NomeIcone; destaque?: boolean }) {
   const vazia = !numero
   const corpo = <>
@@ -261,7 +251,11 @@ function Fila({ destino, rotulo, texto, numero, icone, destaque }: { destino: st
 
 function PorAssunto({ areas }: { areas: Array<[string, string]> }) {
   const [area, definirArea] = useState('')
+  const [busca, definirBusca] = useState('')
+  const normalizar=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()
+  const encontradas=areas.filter(([,nome])=>normalizar(nome).includes(normalizar(busca)))
   return (
+    <div className="fcn-assuntos"><div className="fcn-assuntos__cabeca"><div><h3>Qual área vamos trabalhar?</h3><p>Explore por área ou refine até um assunto específico.</p></div><label>Buscar área<input type="search" value={busca} onChange={e=>definirBusca(e.target.value)} placeholder="Ex.: joelho, mão, trauma" /></label></div><div className="fcn-areas">{encontradas.map(([id,nome])=><a key={id} href={href(estudar('area:'+id,20,[id]))}><i style={{background:corDaArea(id)}} aria-hidden="true"/><span>{nome}</span><Icone nome="direita" tamanho={15}/></a>)}</div>{!encontradas.length && <p role="status">Nenhuma área encontrada. Tente outro nome.</p>}
     <form className="cf-assunto" onSubmit={(e) => { e.preventDefault(); if (area) navegar(estudar('area:' + area, 20, [area])) }}>
       <label htmlFor="cf-area">Por assunto</label>
       <select id="cf-area" value={area} onChange={(e) => definirArea(e.target.value)}>
@@ -271,7 +265,7 @@ function PorAssunto({ areas }: { areas: Array<[string, string]> }) {
       <button type="submit" className="botao botao--principal" disabled={!area}>Estudar 20</button>
       {/* Área > grupo > assunto, com busca: abre a Biblioteca já na área escolhida (27/10/2026) */}
       <a className="cf-assunto__mais" href={href(area ? `/flashcards/biblioteca?area=${encodeURIComponent(area)}` : '/flashcards/biblioteca')}>Escolher um assunto específico</a>
-    </form>
+    </form></div>
   )
 }
 
@@ -308,14 +302,14 @@ export function DesempenhoFlashcards() {
   const { cartas, nomes } = usarAcervo()
   const [dias, definirDias] = useState(30)
   const est = useMemo(() => (cartas ? calcularEstatisticas(cartas, nomes, dias) : null), [cartas, nomes, dias])
-  if (!est) return <article className="cf empilha-2 cf--arquivo"><Abas atual="desempenho" /><p role="status" className="cf-sobre-piso">Carregando o acervo…</p></article>
+  if (!est) return <article className="cf empilha-2 cf--arquivo fcn fcn--dados"><Abas atual="desempenho" /><p role="status" className="cf-sobre-piso">Carregando o acervo…</p></article>
   const p = est.periodo
   const avaliacoes = p.errei + p.hesitei + p.sabia
   const fracos = est.porAssunto.filter((a) => a.acertos < a.tentativas).slice(0, 6)
   const estudadas = est.porArea.filter((a) => a.estudados > 0)
   const naoEstudadas = est.porArea.filter((a) => !a.estudados)
   return (
-    <article className="cf empilha-2 cf--arquivo">
+    <article className="cf empilha-2 cf--arquivo fcn fcn--dados">
       <Abas atual="desempenho" />
       <header className="cf-cabeca cf-cabeca--arquivo">
         <CenaArquivo />
@@ -396,6 +390,8 @@ export function DesempenhoFlashcards() {
 
 /** Respostas por dia, empilhadas por autoavaliação (a Cripta e as respostas sem avaliação ficam em cinza). */
 function GraficoDias({ porDia }: { porDia: DiaResumido[] }) {
+  const [selecionado, definirSelecionado] = useState<string | null>(null)
+  const diaAtivo = porDia.find(d=>d.dia===selecionado) ?? porDia[porDia.length-1]
   const max = Math.max(1, ...porDia.map((d) => d.revisoes))
   const topo = max <= 5 ? max : Math.ceil(max / 5) * 5
   const hoje = chaveDoDia(Date.now())
@@ -417,13 +413,13 @@ function GraficoDias({ porDia }: { porDia: DiaResumido[] }) {
               const ds = new Date(d.dia + 'T12:00:00')
               const texto = `${DIAS_CURTOS[ds.getDay()]}, ${rotulo(d)}: ${d.revisoes} ${d.revisoes === 1 ? 'resposta' : 'respostas'}${d.revisoes ? ` (sabia ${d.sabia}, hesitei ${d.hesitei}, errei ${d.errei}, outras ${outras})` : ''}`
               return (
-                <li key={d.dia} data-hoje={d.dia === hoje || undefined} title={texto} aria-label={texto} tabIndex={d.revisoes ? 0 : -1}>
-                  <span className="cfd-pilha" style={{ height: `${(100 * d.revisoes) / topo}%` }}>
+                <li key={d.dia} data-hoje={d.dia === hoje || undefined} title={texto}>
+                  <button type="button" className="cfd-dia" aria-label={texto} aria-pressed={diaAtivo?.dia===d.dia} onClick={()=>definirSelecionado(d.dia)}><span className="cfd-pilha" style={{ height: `${(100 * d.revisoes) / topo}%` }}>
                     {outras > 0 && <i className="cfd-c--outras" style={{ flexGrow: outras }} />}
                     {d.errei > 0 && <i className="cfd-c--errei" style={{ flexGrow: d.errei }} />}
                     {d.hesitei > 0 && <i className="cfd-c--hesitei" style={{ flexGrow: d.hesitei }} />}
                     {d.sabia > 0 && <i className="cfd-c--sabia" style={{ flexGrow: d.sabia }} />}
-                  </span>
+                  </span></button>
                 </li>
               )
             })}
@@ -431,6 +427,8 @@ function GraficoDias({ porDia }: { porDia: DiaResumido[] }) {
           <span className="cfd-grafico__datas" aria-hidden="true">{marcas.map((i) => <b key={i} style={{ left: `${((i + 0.5) * 100) / porDia.length}%` }}>{porDia[i].dia === hoje ? 'hoje' : rotulo(porDia[i])}</b>)}</span>
         </div>
       ) : <p className="cf-nota cfd-grafico__vazio">Nenhuma resposta no período. Os dias de estudo aparecem aqui como barras.</p>}
+      {diaAtivo && <p className="fcn-leitura-dia" role="status"><strong>{rotulo(diaAtivo)}</strong> · {diaAtivo.revisoes} respostas · Sabia {diaAtivo.sabia} · Hesitei {diaAtivo.hesitei} · Errei {diaAtivo.errei}{diaAtivo.objetivas ? ` · ${Math.round(diaAtivo.objetivasCertas/diaAtivo.objetivas*100)}% de acerto objetivo (${diaAtivo.objetivas} respostas)` : ''}</p>}
+      <details className="fcn-dados-grafico"><summary>Ver todos os dias em tabela</summary><div className="cf-tabela"><table><caption>Atividade nos últimos {porDia.length} dias</caption><thead><tr><th>Data</th><th>Respostas</th><th>Sabia</th><th>Hesitei</th><th>Errei</th><th>Acerto objetivo</th></tr></thead><tbody>{porDia.map(d=><tr key={d.dia}><th>{d.dia.split('-').reverse().join('/')}</th><td>{d.revisoes}</td><td>{d.sabia}</td><td>{d.hesitei}</td><td>{d.errei}</td><td>{d.objetivas ? `${pct(d.objetivasCertas,d.objetivas)} (${d.objetivasCertas}/${d.objetivas})` : '—'}</td></tr>)}</tbody></table></div></details>
     </figure>
   )
 }
