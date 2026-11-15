@@ -30,7 +30,7 @@ export function CenaPortal({ texto, children, esquerda, direita }: { texto: Reac
     <section className="pc pc--noite pc--biblioteca" aria-labelledby="ac-titulo">
       <div className="pc-palco" ref={palco} aria-hidden="true">
         <span className={`pc-esqueleto${festa ? ' pc-esqueleto--festa' : ''}`}><i className="pc-biblioteca__mascote" style={{ backgroundImage: `url("${recurso('pixel/acesso/biblioteca/mascote.webp')}")` }} /></span>
-        <i className="pc-biblioteca__bonfire" style={{ backgroundImage: `url("${recurso('pixel/acesso/biblioteca/bonfire.webp')}")` }} />
+        <i className="pc-biblioteca__bonfire" style={{ backgroundImage: `url("${recurso('pixel/acesso/biblioteca/bonfire-v2.webp')}")` }} />
         <span id="pc-gato" className="pc-biblioteca__gato" />
         <span id="pc-coruja" className="pc-biblioteca__coruja" />
       </div>
