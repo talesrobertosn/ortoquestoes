@@ -3,6 +3,8 @@
 // novo guarda só o que vale para a parte aberta (src/admin/rotas.ts).
 // Também confere as contas de Financeiro › Ganhos (ganhos.ts).
 import assert from 'node:assert/strict'
+import { createElement } from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
 import { build } from 'esbuild'
 import { mkdtemp, rm } from 'node:fs/promises'
 import { join } from 'node:path'
@@ -12,11 +14,31 @@ const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-admin-secoe
 const arquivo = join(pasta, 's.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/admin/rotas'\nexport * from './src/componentes/admin/ganhos'\nexport * from './src/componentes/admin/agora'\nexport { pedacosAtividade, areaDaQuestao } from './src/componentes/admin/formatos'\nexport * as catalogo from './src/componentes/admin/todasCartas'\nexport * as uso from './src/admin/dados/usoSupabase'`, resolveDir: process.cwd(), loader: 'ts' },
+    stdin: { contents: `export * from './src/admin/rotas'\nexport * from './src/componentes/admin/ganhos'\nexport * from './src/componentes/admin/agora'\nexport { pedacosAtividade, areaDaQuestao } from './src/componentes/admin/formatos'\nexport * as catalogo from './src/componentes/admin/todasCartas'\nexport * as uso from './src/admin/dados/usoSupabase'\nexport * from './src/admin/dados/perfilNaLista'\nexport { ResumoPessoa } from './src/admin/ui/ResumoPessoa'`, resolveDir: process.cwd(), loader: 'ts' },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', logLevel: 'error',
     define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false', 'import.meta.env': '{}' },
   })
   const m = await import(pathToFileURL(arquivo))
+  // Identidade antes da ficha: só perfil declarado e períodos pagos válidos, sem consultas por linha.
+  {
+    const agora = Date.parse('2026-11-15T12:00:00Z')
+    const base = { id_usuario: 'a', nome: 'Ana', email: 'ana@example.test', situacao: 'residente', ano_residencia: 'r2', provas: 'taro,mao,mao,inexistente' }
+    assert.deepEqual(m.perfilNaLista(base), { etapa: 'R2', objetivos: ['TARO', 'Entrada na cirurgia da mão'] })
+    assert.equal(m.perfilNaLista({ provas: 'teot' }).etapa, null, 'TEOT não permite deduzir R3')
+    assert.equal(m.perfilNaLista({ situacao: 'residente', ano_residencia: 'r5' }).etapa, 'Residente')
+    const a = (id, fim, status = 'ativa') => ({ id_usuario: id, plano: 'mensal', status, fim_periodo: fim })
+    const ultimo = a('a', '2027-02-01T12:00:00Z')
+    const mapa = m.assinaturasNaLista([a('a', '2026-12-01T12:00:00Z'), ultimo, a('a', '2028-01-01T12:00:00Z', 'reembolsada'), a('b', '2026-11-14T12:00:00Z'), { ...a('c', '2026-11-19T12:00:00Z', 'cancelada'), cancelar_ao_fim: true }], agora)
+    assert.equal(mapa.get('a'), ultimo, 'renovações antecipadas preservam todo o acesso pago')
+    assert.equal(mapa.has('b'), false)
+    assert.equal(mapa.has('c'), true, 'desligar renovação não tira os dias já pagos')
+    assert.equal(m.diasAteVencimento('2026-11-16T01:00:00Z', agora), 0, '22h em São Paulo ainda é hoje')
+    assert.equal(m.diasAteVencimento('2026-11-16T13:00:00Z', agora), 1)
+    assert.equal(m.diasAteVencimento('invalida', agora), null)
+    const html = u => renderToStaticMarkup(createElement(m.ResumoPessoa, { usuario: u, assinatura: ultimo }))
+    assert.match(html({ ...base, plano_vigente: 'mensal' }), /Acesso até/)
+    for (const u of [{ ...base }, { ...base, plano_vigente: 'cortesia' }, { ...base, plano_vigente: 'mensal', administrador: true }]) assert.doesNotMatch(html(u), /Acesso até/)
+  }
   const ler = (texto) => m.lerUrl(new URLSearchParams(texto))
   const ida = (texto) => m.urlDe(ler(texto))
 

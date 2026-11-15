@@ -212,8 +212,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     try { await chamarRpc('definir_preferencia_cartas', { p_cartas: valor }); return true }
     catch { definirCartas(!valor); avisar(ERRO_PREFERENCIA, 'erro'); return false }
   }
-  const { contexto } = usarContextoLocal('')
-  const { indice } = usarIndice()
+  // O formulário público usa só a amostra avulsa; o acervo é necessário após entrar.
+  const { contexto } = usarContextoLocal('', false, !!sessao)
+  const { indice } = usarIndice(!!sessao)
   const { ritmo, definirRitmo } = usarRitmoRevisao()
   const { densidade, definirDensidade, fonte, definirFonte } = usarLeitura()
   const { mostrarEtiquetas, definirEtiquetas } = usarEtiquetas()

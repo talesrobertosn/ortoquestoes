@@ -3,7 +3,7 @@
 .pc.pc--biblioteca { --pc-altura: calc(100cqw * 340 / 720); min-height: calc(100cqw * 1200 / 720);
   background: url('/pixel/acesso/biblioteca/cenario-v3.webp') center top / 100% auto no-repeat #241b16; }
 .pc--biblioteca::before { background: linear-gradient(90deg, rgba(12,13,16,.83), rgba(12,13,16,.66) 28%, transparent 46%); }
-.pc--biblioteca .pc-palco { box-shadow: none; --bonfire-forca: .86; animation: pc-bonfire-resposta 2.4s steps(1, end) infinite; }
+.pc--biblioteca .pc-palco { box-shadow: none; }
 .pc--biblioteca .pc-palco *, .pc--biblioteca .pc-palco *::before, .pc--biblioteca .pc-palco *::after { pointer-events: none; }
 .pc.pc--biblioteca h1 { color: #fff4dc; }
 .pc.pc--biblioteca .pc-lide, .pc.pc--biblioteca .pc-gratis { color: #dfd5c1; }
@@ -12,7 +12,7 @@
 .pc-biblioteca__mascote, .pc-biblioteca__bonfire { display: block; background-size: 1600% 100%; image-rendering: pixelated;
   animation: pc-biblioteca-quadros 2.24s steps(16, jump-none) infinite; }
 .pc-biblioteca__mascote { width: 100%; height: 100%; }
-.pc-biblioteca__bonfire { z-index: 1; position: absolute; left: 46.111%; top: 34.118%; width: 16.111%; height: 37.647%; background-size: 2400% 100%; animation: pc-bonfire-quadros 2.4s steps(24, jump-none) infinite; }
+.pc-biblioteca__bonfire { z-index: 1; position: absolute; left: 46.111%; top: 34.118%; width: 16.111%; height: 37.647%; background-size: 100% 100%; animation: none; }
 .pc--biblioteca .pc-biblioteca__gato { left: 56.944%; top: 62.353%; width: 5%; height: 7.059%; z-index: 3; }
 .pc--biblioteca .pc-biblioteca__coruja { left: 45.556%; top: 22.647%; width: 6.111%; height: 9.412%; z-index: 3; }
 .pc-biblioteca__gato .fq-gato, .pc-biblioteca__coruja .pa-coruja { position: static; display: block; width: 100%; height: 100%; filter: none; }
@@ -22,11 +22,14 @@
 @keyframes pc-bonfire-quadros { from { background-position: 0 0; } to { background-position: 100% 0; } }
 @keyframes pc-biblioteca-quadros { from { background-position: 0 0; } to { background-position: 100% 0; } }
 .pc-biblioteca__luz { position: absolute; inset: 0; z-index: 0; display: block; pointer-events: none; mix-blend-mode: screen;
-  background: url('/pixel/acesso/biblioteca/bonfire-luz-v3.webp') 0 0 / 2400% 100% no-repeat;
-  animation: pc-bonfire-quadros 2.4s steps(24, jump-none) infinite; }
+  background: url('/pixel/acesso/biblioteca/bonfire-luz-parado-v4.webp') 0 0 / 100% 100% no-repeat;
+  animation: none; }
 .pc--biblioteca :is(.pc-esqueleto, .pc-biblioteca__gato, .pc-biblioteca__coruja) {
-  filter: brightness(calc(1 + var(--bonfire-forca) * .12)) drop-shadow(0 0 3px rgba(255, 160, 65, calc(var(--bonfire-forca) * .24))); }
-.pc--biblioteca .pc-palco--pausado, .pc-palco--pausado .pc-biblioteca__luz { animation-play-state: paused; }
+  filter: brightness(1.104) drop-shadow(0 0 3px rgba(255, 160, 65, .207)); }
+.pc-palco--animado :is(.pc-biblioteca__bonfire, .pc-biblioteca__luz) { background-size: 2400% 100%; animation: pc-bonfire-quadros 2.4s steps(24, jump-none) infinite; }
+.pc-palco--animado .pc-biblioteca__luz { background-image: url('/pixel/acesso/biblioteca/bonfire-luz-v4.webp'); }
+.pc--biblioteca .pc-palco--animado :is(.pc-esqueleto, .pc-biblioteca__gato, .pc-biblioteca__coruja) { animation: pc-bonfire-bichos 2.4s steps(1, end) infinite; }
+.pc--biblioteca .pc-palco--pausado :is(.pc-esqueleto, .pc-biblioteca__gato, .pc-biblioteca__coruja), .pc-palco--pausado .pc-biblioteca__luz { animation-play-state: paused; }
 .pc-palco--pausado .pc-biblioteca__mascote, .pc-palco--pausado .pc-biblioteca__bonfire,
 .pc-palco--pausado .gato-pixel, .pc-palco--pausado .coruja-pixel { animation-play-state: paused; }
 @media (max-width: 71.99rem) {
@@ -39,10 +42,11 @@
   .pc--biblioteca .ac-cartao, .pc--biblioteca .acx-ficha, .pc--biblioteca .pp, .pc--biblioteca .pv, .pc--biblioteca .pj { margin-left: 10px; margin-right: 10px; rotate: 0deg; }
   .pc--biblioteca .pc-esqueleto { left: 28.333%; width: 22.222%; }
   .pc--biblioteca .pc-biblioteca__bonfire { left: 42.222%; width: 32.222%; }
-  .pc-biblioteca__luz { background-image: url('/pixel/acesso/biblioteca/bonfire-luz-movel-v3.webp'); }
+  .pc-biblioteca__luz { background-image: url('/pixel/acesso/biblioteca/bonfire-luz-movel-parado-v4.webp'); }
+  .pc-palco--animado .pc-biblioteca__luz { background-image: url('/pixel/acesso/biblioteca/bonfire-luz-movel-v4.webp'); }
   .pc--biblioteca .pc-biblioteca__gato { left: 63.889%; width: 10%; }
   .pc--biblioteca .pc-biblioteca__coruja { left: 41.111%; width: 12.222%; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .pc--biblioteca .pc-palco, .pc-biblioteca__luz, .pc-biblioteca__mascote, .pc-biblioteca__bonfire { animation: none; }
+  .pc--biblioteca .pc-palco :is(.pc-biblioteca__luz, .pc-biblioteca__mascote, .pc-biblioteca__bonfire, .pc-esqueleto, .pc-biblioteca__gato, .pc-biblioteca__coruja) { animation: none; }
 }
