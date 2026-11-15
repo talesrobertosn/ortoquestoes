@@ -260,7 +260,7 @@ lights=[(x,y+130 if y>800 else y,r,p) for x,y,r,p in lights]
 fire=Image.new('RGBA',(W,H));fd=ImageDraw.Draw(fire)
 for x,h in [(368,18),(378,32),(391,46),(403,27),(414,20)]:
  y=226;fd.polygon([(x-6,y),(x-5,y-10),(x-1,y-h),(x+2,y-h+9),(x+8,y-12),(x+6,y)],fill=(239,104,26,245));fd.polygon([(x-3,y),(x,y-h*.6),(x+4,y-8),(x+3,y)],fill=(255,213,96,255))
-lights.append((390,216,177,1.9));lights.append((374,1004,220,1.15))
+lights.append((390,216,177,1.15));lights.append((374,1004,220,1.15))
 # Lighting: warm falloff, material brightness, cool shadows, local floor reflections.
 a=np.asarray(im).astype(float)/255;Y,X=np.mgrid[:H,:W];illum=np.zeros((H,W,3))+np.array([.48,.49,.54]);bloom=np.asarray(em).astype(float)/255
 for lx,ly,r,power in lights:
@@ -318,6 +318,7 @@ base=Image.fromarray(np.uint8(np.clip(a,0,1)*255)).resize((W*S,H*S),Image.Resamp
 # Bloom is applied at full output resolution; source pixels remain clear.
 b=Image.fromarray(np.uint8(np.clip(bloom,0,1)*255)).resize(base.size,Image.Resampling.NEAREST).filter(ImageFilter.GaussianBlur(12))
 ba=np.asarray(base).astype(float)+np.asarray(b).astype(float)*.35;base=Image.fromarray(np.uint8(np.clip(ba,0,255)))
+np.savez_compressed(OUT/'materiais-bonfire.npz',albedo=np.asarray(im)[:340].astype(float)/255,ao=ao[:340],shadow=s[:340],window=np.asarray(wm)[:340]/255,metal=np.asarray(metal)[:340]/255)
 base.save(OUT/'biblioteca-cenario.png');base.save(OUT/'biblioteca-cenario.webp',quality=90,method=6)
 fire=fire.resize(base.size,Image.Resampling.NEAREST);fire.save(OUT/'biblioteca-fogo.png')
 preview=base.convert('RGBA');preview.alpha_composite(fire);preview.save(OUT/'biblioteca-acesa.png');preview.crop((0,0,W*S,340*S)).save(OUT/'biblioteca-topo.png')
