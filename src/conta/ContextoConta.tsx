@@ -5,14 +5,14 @@ import { definirUsuarioLocal, gravar, limparTudo } from '../estado/armazenamento
 import { supabase, contasDisponiveis } from './supabase'
 import { iniciarSincronizacao, type StatusSync } from './sincronizacao'
 import { estadoVazio, type Documento } from './modeloSync'
-import { navegar } from '../util/rotas'
+import { navegar, href } from '../util/rotas'
 import { gerarId } from '../util/id'
 import { retornoAuth, definirAvisoConta, textoErroLink, validarRetornoUmaVez } from './retornoAuth'
 import { concluirGoogle, textoErroGoogle } from './google'
 import { tomarVoltar } from './passagem'
 import { aplicarPerfilPendente } from './perfilPendente'
 import { aplicarConviteRecebido, conferirMinhaIndicacao } from './indicacao'
-import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
+import { esquecerEmail, esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
 import { ler } from '../estado/armazenamento'
 import type { RegistroQuestao } from '../estado/revisao'
 import { vigiarSessaoEntreAparelhos } from '../estado/sessao'
@@ -24,6 +24,7 @@ interface ContaContexto {
   recuperacao: boolean
   encerrarRecuperacao: () => void
   status: StatusSync
+  encerrarContaExcluida: () => Promise<void>
   sincronizar: () => void
   /** Sincroniza e espera terminar (no máximo `ms`); resolve na hora para visitantes. */
   aguardarSincronia: (ms?: number) => Promise<void>
@@ -183,6 +184,18 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       limparTudo('nuvem')
       gravar('reinicio:em', Date.now(), 'nuvem')
       sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
+    },
+    encerrarContaExcluida: async () => {
+      const id = sessao?.user.id
+      sync.current?.parar(); sync.current = null
+      try { await supabase?.auth.signOut({ scope: 'local' }) } catch { /* Auth já removido no servidor. */ }
+      try {
+        if (id) for (const store of [localStorage, sessionStorage]) {
+          for (const key of Object.keys(store)) if (key.startsWith(`ortoquestoes:conta:${id}:`)) store.removeItem(key)
+        }
+        esquecerEmail(); localStorage.removeItem('oq:vitrine-acesso:nome')
+      } catch { /* Navegador com armazenamento indisponível; a conta já foi removida. */ }
+      window.location.assign(href('/entrar'))
     },
     sincronizar: () => { void sync.current?.sincronizar() },
     aguardarSincronia: (ms) => sync.current?.aguardar(ms) ?? Promise.resolve(), resolver: (doc, manterLocal) => sync.current?.resolver(doc, manterLocal),

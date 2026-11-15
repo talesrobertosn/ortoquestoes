@@ -1,3 +1,4 @@
+import { excluirConta } from '../../conta/exclusao'
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { lerLocais, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { usarIndice } from '../../dados/usarIndice'
@@ -188,7 +189,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
             : <button type="button" className="fx-abrir-carta" onClick={() => abrirCarta(true)}><Icone nome="carta" tamanho={18} /><span>Escrever uma carta para {nomeDe(u).split(' ')[0]}<small>{detalhe.emails.length ? `${detalhe.emails.length} e-mails já enviados · o último ${haQuanto(detalhe.emails[0]?.em)}` : 'nenhum e-mail enviado ainda'}</small></span></button>}
         </section>
         <section id="ficha-acoes" className="fx-secao"><TituloSecao n={5} titulo="Ações" texto="Cortesia, ranking e desconectar. Cada ação vale na hora." />
-          <AbaAcoes u={u} detalhe={detalhe} cortesiaVale={cortesiaVale} recarregar={detalheQ.recarregar} /></section>
+          <AbaAcoes u={u} detalhe={detalhe} cortesiaVale={cortesiaVale} recarregar={detalheQ.recarregar} aoExcluir={aoFechar} /></section>
       </>}
     </div>
   </Gaveta>
@@ -437,7 +438,7 @@ function AbaAssinatura({ idUsuario, email, aoCarta }: { idUsuario: string; email
   </>
 }
 
-function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; detalhe: Detalhe; cortesiaVale: boolean; recarregar: () => Promise<void> }) {
+function AbaAcoes({ u, detalhe, cortesiaVale, recarregar, aoExcluir }: { u: LinhaUsuario; detalhe: Detalhe; cortesiaVale: boolean; recarregar: () => Promise<void>; aoExcluir: () => void }) {
   const painel = usarPainel()
   const [ocupado, definirOcupado] = useState(false)
   const [dias, definirDias] = useState('90')
@@ -475,6 +476,15 @@ function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; d
         void acao('Público', () => fora ? chamarRpc('desmarcar_fora_publico_admin', { p_ids: [u.id_usuario] }) : chamarRpc('marcar_fora_publico_admin', { p_ids: [u.id_usuario], p_motivo: 'pela ficha' }), fora ? 'Voltou ao público-alvo.' : 'Marcada fora do público-alvo.')
       }}>{painel.foraPublico.has(u.id_usuario) ? 'Voltar ao público' : 'Marcar fora do público'}</button>
     </div>
+    {!u.administrador && <div className="a3-acao-cartao">
+      <div><h3 className="a3-titulo-3">Excluir conta e dados</h3><p className="a3-mudo">Para solicitações confirmadas do titular, inclusive recebidas por e-mail. Apaga cadastro, progresso e dados vinculados no site. Cancela a renovação antes de excluir e permite novo cadastro com o mesmo e-mail. Não faz reembolso automático.</p></div>
+      <button type="button" className="a3-botao a3-botao--perigo" disabled={ocupado || !u.email} onClick={async () => {
+        if (ocupado || !u.email) return
+        if (!(await confirmar({ titulo: `Excluir definitivamente ${nome}?`, texto: `Conta: ${u.email}. Confirme apenas após verificar que o titular solicitou a exclusão. O acesso e o progresso serão perdidos. Se a renovação não puder ser cancelada, o cadastro será mantido. A pessoa poderá criar outra conta com o mesmo e-mail.`, sim: 'Solicitação confirmada: excluir', perigo: true }))) return
+        definirOcupado(true)
+        try { const r = await excluirConta(u.email, u.id_usuario); if (!r.ok || !r.excluida) throw new Error('Exclusão não confirmada.'); avisoRapido('Conta e dados excluídos. O mesmo e-mail pode ser cadastrado novamente.'); aoExcluir(); await painel.atualizar() } catch (e) { avisoRapido(e instanceof Error ? e.message : 'Falha na exclusão.', 'erro') } finally { definirOcupado(false) }
+      }}>{ocupado ? 'Aguarde…' : 'Excluir conta e dados'}</button>
+    </div>}
     <p className="a3-mudo a3-pequeno"><SeloQualidade q="confirmado" /> Cada ação vale na hora e é feita no servidor, com a checagem de administrador.</p>
     <div style={{ height: 12 }} />
   </div>

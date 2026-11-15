@@ -1,3 +1,4 @@
+import { ExcluirConta } from '../componentes/acesso/ExcluirConta'
 import { PreferenciaEncontros } from '../eventos/PreferenciaEncontros'
 import { useCallback, useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react'
 import { haQuanto } from '../componentes/IndicadorSincronia'
@@ -884,8 +885,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             <li><a href={href('/termos')}><Icone nome="livro" tamanho={17} /><span><strong>Termos de Uso e Privacidade</strong><small>Como o site funciona e como cuidamos dos seus dados.</small></span><Icone nome="direita" tamanho={16} /></a></li>
             <li><a href={href('/condicoes-assinatura')}><Icone nome="medalha" tamanho={17} /><span><strong>Condições da assinatura</strong><small>Planos, renovação, cancelamento e garantia.</small></span><Icone nome="direita" tamanho={16} /></a></li>
             {PIXEL_META && <li><button type="button" onClick={abrirPreferenciasCookies}><Icone nome="olho" tamanho={17} /><span><strong>Cookies</strong><small>Rever a sua escolha sobre os cookies de medição.</small></span><Icone nome="direita" tamanho={16} /></button></li>}
-            <li><a href={href('/contato?assunto=exclusao-conta')}><Icone nome="lixeira" tamanho={17} /><span><strong>Solicitar exclusão da conta</strong><small>Quer apagar tudo? O pedido é feito pelo suporte.</small></span><Icone nome="direita" tamanho={16} /></a></li>
+            <li><a href={href('/contato?assunto=exclusao-conta')}><Icone nome="lixeira" tamanho={17} /><span><strong>Ajuda com a exclusão</strong><small>Se preferir, solicite pelo suporte.</small></span><Icone nome="direita" tamanho={16} /></a></li>
           </ul>
+          <ExcluirConta />
         </section>}
       </div>
     </div>
