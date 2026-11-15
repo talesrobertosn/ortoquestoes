@@ -15,3 +15,7 @@ python scripts/cenarios/exportar_login_biblioteca.py
 ```
 
 Saída: `public/pixel/acesso/biblioteca/`. Fontes: `CenaPortal.tsx`, `LoginBiblioteca.css`. Miolo e base móveis são independentes da altura do formulário. A imagem é a mesma nos temas claro e escuro, conforme prévia aprovada; campos seguem o tema.
+
+## Bonfire ajustada em 15/11/2026
+
+Pedido do Tales: chama maior, mais baixa e sem o recorte quebrado na origem. A folha agora usa seis quadros nativos (80×96), estágio fogaréu do fogo original, espada e brasas de apoio. A camada frontal usa o mesmo desenho/coordenadas da chama traseira, sem a faixa reescalada anterior. Mantém pintura estática, pausa e movimento reduzido.
