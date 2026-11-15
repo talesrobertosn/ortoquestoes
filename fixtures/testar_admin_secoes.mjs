@@ -37,6 +37,9 @@ try {
     assert.equal(m.diasAteVencimento('invalida', agora), null)
     const html = u => renderToStaticMarkup(createElement(m.ResumoPessoa, { usuario: u, assinatura: ultimo }))
     assert.match(html({ ...base, plano_vigente: 'mensal' }), /Acesso até/)
+    const compacto = renderToStaticMarkup(createElement(m.ResumoPessoa, { usuario: base, mostrarEmail: false }, 'Assinante'))
+    assert.doesNotMatch(compacto, /ana@example.test/)
+    assert.match(compacto, /Assinante/)
     for (const u of [{ ...base }, { ...base, plano_vigente: 'cortesia' }, { ...base, plano_vigente: 'mensal', administrador: true }]) assert.doesNotMatch(html(u), /Acesso até/)
   }
   const ler = (texto) => m.lerUrl(new URLSearchParams(texto))

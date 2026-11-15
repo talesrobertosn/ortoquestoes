@@ -1,3 +1,6 @@
+import { assinaturasNaLista, perfilNaLista } from '../dados/perfilNaLista'
+import { ResumoPessoa } from '../ui/ResumoPessoa'
+import type { AssinaturaBase } from '../../componentes/admin/receita'
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { carregarIndiceBibliotecaLeve } from '../../biblioteca/conteudo'
 import { quadroDoDia } from '../../componentes/admin/agora'
@@ -92,6 +95,7 @@ const POR_VEZ = 12
 export default function Inicio() {
   const p = usarPainel()
   const nav = usarNav()
+  const assinaturas = useMemo(() => assinaturasNaLista(p.assinaturas ?? []), [p.assinaturas])
   // 35 dias: os gráficos comparam semanas; continua uma consulta só, a cada 5 minutos.
   const serieQ = usarSerie(35, true)
   const { funil } = usarFunil()
@@ -156,7 +160,7 @@ export default function Inicio() {
   const semSinais = !p.sinaisQ.dados
   const termo = normalizar(busca.trim())
   const comFiltro = vista === 'online' || vista === 'entraram'
-  const daVista = g ? g.listas[vista].filter(u => (!comFiltro || filtro === 'todos' || (filtro === 'nao' ? g.tipoDe(u) !== 'assinante' : g.tipoDe(u) === filtro)) && combina([u.nome, u.email], termo)) : []
+  const daVista = g ? g.listas[vista].filter(u => (!comFiltro || filtro === 'todos' || (filtro === 'nao' ? g.tipoDe(u) !== 'assinante' : g.tipoDe(u) === filtro)) && combina([u.nome, u.email, perfilNaLista(u).etapa, ...perfilNaLista(u).objetivos], termo)) : []
   const vistos = daVista.slice(0, limiteLista)
 
   /** Abre uma lista a partir de um número do topo e rola até ela. */
@@ -257,12 +261,12 @@ export default function Inicio() {
             <Filtro ativo={filtro === 'nao'} aoClicar={() => definirFiltro('nao')} contagem={g.conta.gratis + g.conta.lead}>Não assinantes</Filtro>
             <Filtro ativo={filtro === 'lead'} aoClicar={() => definirFiltro('lead')} contagem={g.conta.lead}>Viram os planos em 24 h</Filtro>
           </div>}
-          <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome ou e-mail" />
+          <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome, e-mail, etapa ou objetivo" />
         </div>
         {!daVista.length ? <div style={{ padding: 20 }}><Estado compacto icone={vista === 'ausentes' ? 'certo' : 'pessoas'} titulo={termo ? 'Ninguém com esse nome nesta lista' : vazio[vista]} /></div> : <>
           <ul className="a3-pessoas-lista">{vistos.map(u => u.online
-            ? <LinhaOnline key={u.id_usuario} u={u} tipo={g.tipoDe(u)} hoje={g.hoje} limite={limite} />
-            : <LinhaFora key={u.id_usuario} u={u} tipo={g.tipoDe(u)} hoje={g.hoje} />)}</ul>
+            ? <LinhaOnline key={u.id_usuario} u={u} assinatura={assinaturas.get(u.id_usuario)} tipo={g.tipoDe(u)} hoje={g.hoje} limite={limite} />
+            : <LinhaFora key={u.id_usuario} u={u} assinatura={assinaturas.get(u.id_usuario)} tipo={g.tipoDe(u)} hoje={g.hoje} />)}</ul>
           {daVista.length > limiteLista && <div className="a3-paginacao"><span>{vistos.length} de {daVista.length}</span>
             <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirLimiteLista(daVista.length)}>Ver todos os {daVista.length}</button></div>}
         </>}
@@ -308,7 +312,7 @@ function Filtro({ ativo, aoClicar, contagem, children }: { ativo: boolean; aoCli
 const rotuloAssinante = (plano: string | null) => plano === PLANO_CORTESIA ? 'Cortesia' : `Assinante · ${rotuloPlano(plano)}`
 const ROTULO_TIPO: Record<Tipo, string> = { assinante: 'Assinante', lead: 'Viu os planos em 24 h', gratis: 'Não assinante' }
 
-function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; hoje: string; limite: number | null }) {
+export function LinhaOnline({ u, tipo, hoje, limite, assinatura }: { assinatura?: AssinaturaBase; u: LinhaUsuario; tipo: Tipo; hoje: string; limite: number | null }) {
   const p = usarPainel()
   const nav = usarNav()
   const s = p.sinais.get(u.id_usuario)
@@ -316,13 +320,13 @@ function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; h
     <button type="button" className="a3-pessoa-linha" onClick={() => nav.abrirPessoa(u.id_usuario)}>
       <span className="a3-avatar">{iniciais(u.nome ?? u.email)}<i className="a3-ponto a3-ponto--vivo" /></span>
       <span className="a3-pessoa-linha__texto">
-        <span className="a3-pessoa-linha__nome">{nomeDe(u)}
+        <ResumoPessoa usuario={u} assinatura={assinatura} carregando={!p.assinaturas && !p.assinaturasQ.erro} mostrarEmail={false}>
           {u.administrador ? <><b className="a3-tag a3-tag--suave">{CORTESIA_ADMIN}</b><Selo solido>Admin</Selo></>
             : tipo === 'assinante' ? <b className="a3-tag a3-tag--assinante">{rotuloAssinante(u.plano_vigente)}</b>
             : tipo === 'lead' ? <b className="a3-tag a3-tag--lead">Viu os planos {quandoPlanos(s?.planos_ultima, hoje)}</b>
             : <b className="a3-tag a3-tag--suave">Não assinante</b>}
           {tipo !== 'assinante' && !u.administrador && <Temperatura t={temperatura(u, s, hoje, limite)} />}
-        </span>
+        </ResumoPessoa>
         <span className="a3-pessoa-linha__faz"><Faz u={u} /></span>
         <span className="a3-pessoa-linha__meta">
           {indicacaoEmDestaque(s?.indicacao_ultima) && <span className="a3-tag a3-tag--indicacao" title={s?.indicacao_ultima ? `Última visita: ${new Date(s.indicacao_ultima).toLocaleString('pt-BR')}` : undefined}>Viu Indique e ganhe em 24 h · {haQuanto(s?.indicacao_ultima)}</span>}
@@ -343,7 +347,7 @@ function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; h
   </li>
 }
 
-function LinhaFora({ u, tipo, hoje }: { u: LinhaUsuario; tipo: Tipo; hoje: string }) {
+export function LinhaFora({ u, tipo, hoje, assinatura }: { assinatura?: AssinaturaBase; u: LinhaUsuario; tipo: Tipo; hoje: string }) {
   const p = usarPainel()
   const nav = usarNav()
   const s = p.sinais.get(u.id_usuario)
@@ -352,8 +356,8 @@ function LinhaFora({ u, tipo, hoje }: { u: LinhaUsuario; tipo: Tipo; hoje: strin
     <button type="button" className="a3-pessoa-linha" onClick={() => nav.abrirPessoa(u.id_usuario)}>
       <span className="a3-avatar">{iniciais(u.nome ?? u.email)}</span>
       <span className="a3-pessoa-linha__texto">
-        <span className="a3-pessoa-linha__nome">{nomeDe(u)}{u.administrador ? <><b className="a3-tag a3-tag--suave">{CORTESIA_ADMIN}</b><Selo solido>Admin</Selo></>
-          : <b className={`a3-tag a3-tag--${tipo === 'assinante' ? 'assinante' : tipo === 'lead' ? 'lead' : 'suave'}`}>{tipo === 'assinante' ? rotuloAssinante(u.plano_vigente) : ROTULO_TIPO[tipo]}</b>}</span>
+        <ResumoPessoa usuario={u} assinatura={assinatura} carregando={!p.assinaturas && !p.assinaturasQ.erro} mostrarEmail={false}>{u.administrador ? <><b className="a3-tag a3-tag--suave">{CORTESIA_ADMIN}</b><Selo solido>Admin</Selo></>
+          : <b className={`a3-tag a3-tag--${tipo === 'assinante' ? 'assinante' : tipo === 'lead' ? 'lead' : 'suave'}`}>{tipo === 'assinante' ? rotuloAssinante(u.plano_vigente) : ROTULO_TIPO[tipo]}</b>}</ResumoPessoa>
         <span className="a3-pessoa-linha__meta">
           {indicacaoEmDestaque(s?.indicacao_ultima) && <span className="a3-tag a3-tag--indicacao" title={s?.indicacao_ultima ? `Última visita: ${new Date(s.indicacao_ultima).toLocaleString('pt-BR')}` : undefined}>Viu Indique e ganhe em 24 h · {haQuanto(s?.indicacao_ultima)}</span>}
           <span>{sinal ? `última vez ${haQuanto(sinal)}` : 'nunca entrou'}</span>
