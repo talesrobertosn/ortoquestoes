@@ -426,6 +426,18 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 .a3-avatar { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--a3-recuo); color: var(--a3-tinta-2); font-size: 11.5px; font-weight: 600; letter-spacing: .02em; position: relative; }
 .a3-avatar .a3-ponto { position: absolute; right: -1px; bottom: -1px; box-shadow: 0 0 0 2px var(--a3-papel); }
 .a3-avatar--grande { width: 56px; height: 56px; font-size: 18px; }
+/* Identidade: etapa ao lado do nome, período pago e objetivos antes de abrir a ficha. */
+.a3-identidade__nome { display: flex; align-items: center; flex-wrap: wrap; gap: 5px 8px; }
+.a3-etapa { display: inline-flex; border-radius: 5px; padding: 1px 6px; font-size: 11px; font-weight: 650; line-height: 1.6; color: var(--a3-acento); background: var(--a3-acento-veu); }
+.a3-objetivos { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin: 2px 0; }
+.a3-objetivo { color: var(--a3-tinta-2); background: var(--a3-recuo); border: 1px solid var(--a3-linha); border-radius: 5px; padding: 1px 6px; font-size: 11px; line-height: 1.5; }
+.a3-objetivo--mais { color: var(--a3-cinza); }
+.a3-vencimento { display: flex; flex-wrap: wrap; align-items: center; gap: 3px 5px; color: var(--a3-cinza); font-size: 11.5px; line-height: 1.6; font-variant-numeric: tabular-nums; }
+.a3-vencimento svg { flex: none; }
+.a3-vencimento--perto { color: var(--a3-aviso); font-weight: 600; }
+.a3-vencimento__dias { padding: 0 5px; border-left: 1px solid var(--a3-linha); }
+.a3-vencimento--perto .a3-vencimento__dias { border: 0; border-radius: 4px; background: var(--a3-aviso-veu); }
+.a3-identidade__email { overflow-wrap: anywhere; }
 /* Celular: cada linha vira um bloco empilhado, sem rolagem de lado */
 @media (max-width: 720px) {
   .a3-tabela--adapta thead { display: none; }

@@ -1089,3 +1089,19 @@ li.a3-indicacao .a3-pessoa-linha .a3-avatar { background: var(--cor-indicacao-ve
 @media (prefers-reduced-motion: reduce) { #a3-pessoas .a3-pessoas-lista > li, #a3-pessoas .a3-chip { transition: none; transform: none !important; } }
 #a3-pessoas .a3-abas-locais [role="tab"][aria-selected="true"], #a3-pessoas .a3-abas-locais [role="tab"].vivo[aria-selected="true"] { background: var(--verdete) !important; color: var(--cor-sobre, #fff) !important; border-color: color-mix(in srgb, var(--verdete) 70%, #000) !important; box-shadow: none; }
 #a3-pessoas .a3-abas-locais [role="tab"][aria-selected="true"] .a3-cont { background: var(--cor-sobre, #fff); color: var(--verdete); }
+
+/* O resumo acompanha a largura real da caixa, inclusive com menu lateral aberto. */
+#a3-pessoas .a3-pessoas-lista { container-type: inline-size; }
+#a3-pessoas .a3-identidade__nome { font-size: 15px; font-weight: 700; }
+#a3-pessoas .a3-identidade__nome .a3-nome { min-width: 0; overflow-wrap: anywhere; }
+#a3-pessoas .a3-pessoa-linha__texto .a3-tag { white-space: normal; max-width: 100%; overflow-wrap: anywhere; }
+#a3-pessoas .a3-pessoa-linha__links { flex-wrap: wrap; }
+@container (max-width: 680px) {
+  #a3-pessoas .a3-pessoas-lista > li { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  #a3-pessoas .a3-pessoa-linha__acoes { justify-items: start; padding-left: 48px !important; min-width: 0; }
+}
+@container (max-width: 360px) {
+  #a3-pessoas .a3-pessoa-linha__acoes { padding-left: 0 !important; width: 100%; }
+  #a3-pessoas .a3-numeros-pessoa { display: flex; flex-wrap: wrap; width: 100%; }
+  #a3-pessoas .a3-numeros-pessoa > span { flex: 1; min-width: 52px; }
+}

@@ -93,7 +93,16 @@
         // usam o índice: ali ele só disputaria a rede com o código da página.
         try {
           var rota = location.hash.replace(/^#\/?/, '').split(/[/?]/)[0]
-          var semIndice = ['assinatura', 'termos', 'condicoes-assinatura', 'ligas', 'indicar', 'convite', 'emails', 'resumao']
+          var semIndice = ['entrar', 'conta', 'assinatura', 'termos', 'condicoes-assinatura', 'ligas', 'indicar', 'convite', 'emails', 'resumao']
+          // A pintura do login começa junto com o código, com apenas o recorte da tela atual.
+          if (rota === 'entrar') {
+            ;[['(min-width: 72rem)', 'cenario-v3.webp'], ['(max-width: 71.99rem)', 'movel-topo-v3.webp']].forEach(function (arte) {
+              var l = document.createElement('link')
+              l.rel = 'preload'; l.as = 'image'; l.media = arte[0]; l.fetchPriority = 'high'
+              l.href = './pixel/acesso/biblioteca/' + arte[1]
+              document.head.appendChild(l)
+            })
+          }
           if (semIndice.indexOf(rota) < 0) window.__indiceOrtoQuestoes = fetch('./acervo/indice.json', { cache: 'no-cache' })
         } catch (e) {}
       })()

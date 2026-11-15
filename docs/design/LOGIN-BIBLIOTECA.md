@@ -35,3 +35,13 @@ python scripts/cenarios/exportar_bonfire_biblioteca.py
 ```
 
 Assets versionados `*-v3.webp` preservam os arquivos antigos em cache. `BonfireResposta.css` é gerado pelo exportador. O arquivo de materiais NPZ fica apenas em output; não é enviado ao navegador.
+
+
+## Carregamento progressivo e imagens compactas (15/11/2026)
+
+- `otimizar_biblioteca.py` deriva v4 das artes v3 aprovadas. Mantém os 24 quadros, a duração de 2,4 s e as âncoras; fogo com dois pixels por pixel de origem, mapas suaves de luz a meia resolução. Arquivos antigos permanecem para clientes com código em cache.
+- Fogo + mapa de luz: 749.328 → 342.070 bytes no desktop (−54,4%); 663.320 → 307.712 no celular (−53,6%). Memória RGBA decodificada dessas duas texturas: −60,9% / −59,2%, respectivamente. São medidas dos arquivos, não promessa de tempo em qualquer aparelho.
+- Primeiro vem a pintura e um quadro leve da bonfire acesa; os atlas são decodificados depois da pintura, em tempo ocioso. Ativam juntos, sem mostrar sprite incompleto. Falha de rede mantém o quadro aceso. Economia de dados e movimento reduzido não baixam os atlas.
+- A rota `#/entrar` pré-carrega apenas a pintura correspondente à largura. O formulário público não baixa o índice do acervo nem adianta Treinar automaticamente; a amostra avulsa e os links por intenção continuam funcionando. O acervo passa a ser solicitado após autenticação.
+- Filtros de luz dos mascotes têm keyframes diretos; não alteram uma propriedade herdada por toda a árvore a cada quadro. Pausa fora da tela/aba oculta e pintura fixa continuam.
+- Verificados no navegador: 320, 390, 1024, 1440, 1920; relógios alinhados, sem overflow/zoom, alternância entrar/criar conta, economia de dados, movimento reduzido e falha de atlas. Suíte npm, pré-carga, build e diff conferidos.

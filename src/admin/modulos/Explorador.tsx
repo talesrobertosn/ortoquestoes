@@ -1,3 +1,5 @@
+import { assinaturasNaLista, perfilNaLista } from '../dados/perfilNaLista'
+import { ResumoPessoa } from '../ui/ResumoPessoa'
 import { useEffect, useMemo, useState } from 'react'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { acertoAposRevisao, acertoReal, baixarCsv, data as dataAntiga, rotuloPagina, somarAcertos } from '../../componentes/admin/formatos'
@@ -31,9 +33,14 @@ export default function Explorador() {
   const termo = normalizar(usarAdiado(busca, 250).trim())
   const parte = defParte('usuarios')
   const usuarios = p.usuarios
+  const assinaturas = useMemo(() => assinaturasNaLista(p.assinaturas ?? []), [p.assinaturas])
   const contagem = useMemo(() => Object.fromEntries(FILTROS.map(f => [f, usuarios?.filter(u => passaFiltro(u, f, p.sinais)).length ?? 0])) as Record<FiltroPessoas, number>, [usuarios, p.sinais])
   const totais = useMemo(() => { if (!usuarios) return null; const s = somarAcertos(usuarios); return { respondidas: usuarios.reduce((a, u) => a + u.respondidas, 0), real: acertoReal(s), revisao: acertoAposRevisao(s) } }, [usuarios])
-  const visiveis = useMemo(() => (usuarios ?? []).filter(u => passaFiltro(u, filtro, p.sinais) && combina([u.nome, u.email, u.servico, servicoConhecido(u.servico, u.uf), u.cidade, p.sinais.get(u.id_usuario)?.locais_trabalho], termo)), [usuarios, filtro, p.sinais, termo])
+  const visiveis = useMemo(() => (usuarios ?? []).filter(u => {
+    if (!passaFiltro(u, filtro, p.sinais)) return false
+    const perfil = perfilNaLista(u)
+    return combina([u.nome, u.email, perfil.etapa, ...perfil.objetivos, u.servico, servicoConhecido(u.servico, u.uf), u.cidade, p.sinais.get(u.id_usuario)?.locais_trabalho], termo)
+  }), [usuarios, filtro, p.sinais, termo])
   const ordemInicial = filtro === 'novos' || filtro === 'novos_parados' ? 'cadastro' : filtro === 'hoje' || filtro === 'online' ? 'visto' : filtro === 'planos' ? 'planos' : 'total'
 
   const colunas: Array<Coluna<LinhaUsuario>> = [
@@ -42,8 +49,7 @@ export default function Explorador() {
       return <span className="a3-pessoa-cel">
         <span className="a3-avatar">{iniciais(u.nome ?? u.email)}{u.online && <i className="a3-ponto a3-ponto--vivo" />}</span>
         <span style={{ minWidth: 0, display: 'grid', gap: 3 }}>
-          <span className="a3-nome">{nomeDe(u)}</span>
-          <span className="a3-sub">{u.email ?? 'conta sem e-mail'}</span>
+          <ResumoPessoa usuario={u} assinatura={assinaturas.get(u.id_usuario)} carregando={!p.assinaturas && !p.assinaturasQ.erro} />
           <span style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
             {indicacaoEmDestaque(s?.indicacao_ultima) && <span className="a3-tag a3-tag--indicacao" title={`Última visita: ${haQuanto(s?.indicacao_ultima)}`}>Viu Indique e ganhe em 24 h</span>}
             {u.administrador && <Selo solido>Admin</Selo>}
@@ -53,9 +59,9 @@ export default function Explorador() {
         </span>
       </span>
     } },
-    { id: 'perfil', titulo: 'Perfil', soLargo: true, celula: u => <span style={{ display: 'grid' }}>
-      <span>{u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : <span className="fraco">etapa não informada</span>}</span>
-      <span className="a3-sub">{[u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ') || (u.provas ? u.provas.split(',').map(rotuloProva).join(', ') : '')}</span>
+    { id: 'perfil', titulo: 'Serviço / local', soLargo: true, celula: u => <span style={{ display: 'grid' }}>
+      <span>{u.servico || <span className="fraco">Não informado</span>}</span>
+      <span className="a3-sub">{[u.cidade, u.uf].filter(Boolean).join(' / ')}</span>
     </span> },
     { id: 'agora', titulo: 'Onde está', soLargo: true, celula: u => u.pagina ? <span style={{ display: 'grid' }}><span>{rotuloPagina(u.pagina)}</span><span className="a3-sub">{u.online ? 'agora' : haQuanto(u.pagina_em)}</span></span> : <span className="fraco">sem registro</span> },
     { id: 'hoje', titulo: 'Hoje', numero: true, rotuloCelular: 'Hoje', celula: u => <span className={'a3-pilula' + (u.respondidas_hoje ? (u.plano_vigente ? ' a3-pilula--assinante' : ' a3-pilula--gratis') : '')}>{inteiro(u.respondidas_hoje ?? 0)}</span>, ordem: u => u.respondidas_hoje ?? 0 },
@@ -78,7 +84,7 @@ export default function Explorador() {
 
     <section className="a3-painel" aria-label="Lista de pessoas">
       <div className="a3-filtros">
-        <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome, e-mail, serviço ou cidade" />
+        <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome, e-mail, etapa, objetivo, serviço ou cidade" />
       </div>
       <div className="a3-filtros" style={{ paddingTop: 0 }} role="group" aria-label="Segmentos">
         {FILTROS.map(f => <Filtro key={f} ativo={filtro === f} aoClicar={() => nav.ajustar({ filtro: f })} contagem={contagem[f]}>{ROTULO_FILTRO[f]}</Filtro>)}

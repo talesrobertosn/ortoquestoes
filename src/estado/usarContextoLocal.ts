@@ -15,7 +15,7 @@ import { carregarTurmaAcervo } from '../dados/turma'
  * palavras. Esse índice pesa e a maioria das visitas nunca busca, então ele é
  * baixado sob demanda.
  */
-export function usarContextoLocal(busca: string, comTurma = false) {
+export function usarContextoLocal(busca: string, comTurma = false, ativo = true) {
   const { favoritos } = usarFavoritos()
   // "Como a turma respondeu", para os filtros do Treinar. Só assinantes recebem.
   const { premium } = usarPremium()
@@ -42,7 +42,7 @@ export function usarContextoLocal(busca: string, comTurma = false) {
     }
   }, [precisa, textos])
 
-  const { indice } = usarIndice()
+  const { indice } = usarIndice(ativo)
   const registrosDisponiveis = useMemo(() => {
     if (!indice) return respondidas
     const ids = new Set(indice.questoes.filter(q => !q.an && !q.dup).map(q => q.id))

@@ -79,8 +79,8 @@ const PROVAVEIS: Record<string, Pagina[]> = {
   'plano-de-estudo': ['Sessao', 'Resumo'],
   dados: ['Revisao'],
   questao: ['Sessao'],
-  conta: ['Treinar'],
-  entrar: ['Treinar'],
+  conta: [], // Formulário/conta: só adiantar outra página por intenção (link/foco).
+  entrar: [],
 }
 
 /** Nas demais páginas, o caminho mais usado do site: montar sessão, responder, resumo. */

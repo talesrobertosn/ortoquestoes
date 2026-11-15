@@ -1,28 +1,28 @@
-/* Gerado por exportar_bonfire_biblioteca.py: mesmo relógio dos 24 quadros de fogo e luz. */
-@keyframes pc-bonfire-resposta {
-  0.00000% { --bonfire-forca: 0.8669; }
-  4.16667% { --bonfire-forca: 0.9081; }
-  8.33333% { --bonfire-forca: 0.7965; }
-  12.50000% { --bonfire-forca: 0.6964; }
-  16.66667% { --bonfire-forca: 0.6677; }
-  20.83333% { --bonfire-forca: 0.5993; }
-  25.00000% { --bonfire-forca: 0.5477; }
-  29.16667% { --bonfire-forca: 0.6070; }
-  33.33333% { --bonfire-forca: 0.6453; }
-  37.50000% { --bonfire-forca: 0.5996; }
-  41.66667% { --bonfire-forca: 0.6155; }
-  45.83333% { --bonfire-forca: 0.6914; }
-  50.00000% { --bonfire-forca: 0.7083; }
-  54.16667% { --bonfire-forca: 0.7428; }
-  58.33333% { --bonfire-forca: 0.8521; }
-  62.50000% { --bonfire-forca: 0.8726; }
-  66.66667% { --bonfire-forca: 0.7657; }
-  70.83333% { --bonfire-forca: 0.6788; }
-  75.00000% { --bonfire-forca: 0.5971; }
-  79.16667% { --bonfire-forca: 0.4621; }
-  83.33333% { --bonfire-forca: 0.4260; }
-  87.50000% { --bonfire-forca: 0.5514; }
-  91.66667% { --bonfire-forca: 0.6711; }
-  95.83333% { --bonfire-forca: 0.7505; }
-  100% { --bonfire-forca: 0.8669; }
+/* Gerado por exportar_bonfire_biblioteca.py: filtros diretos, sem invalidar estilos de todos os descendentes. */
+@keyframes pc-bonfire-bichos {
+  0.00000% { filter: brightness(1.10403) drop-shadow(0 0 3px rgba(255,160,65,0.20806)); }
+  4.16667% { filter: brightness(1.10897) drop-shadow(0 0 3px rgba(255,160,65,0.21793)); }
+  8.33333% { filter: brightness(1.09558) drop-shadow(0 0 3px rgba(255,160,65,0.19116)); }
+  12.50000% { filter: brightness(1.08356) drop-shadow(0 0 3px rgba(255,160,65,0.16713)); }
+  16.66667% { filter: brightness(1.08012) drop-shadow(0 0 3px rgba(255,160,65,0.16024)); }
+  20.83333% { filter: brightness(1.07192) drop-shadow(0 0 3px rgba(255,160,65,0.14384)); }
+  25.00000% { filter: brightness(1.06572) drop-shadow(0 0 3px rgba(255,160,65,0.13145)); }
+  29.16667% { filter: brightness(1.07284) drop-shadow(0 0 3px rgba(255,160,65,0.14568)); }
+  33.33333% { filter: brightness(1.07744) drop-shadow(0 0 3px rgba(255,160,65,0.15488)); }
+  37.50000% { filter: brightness(1.07195) drop-shadow(0 0 3px rgba(255,160,65,0.14389)); }
+  41.66667% { filter: brightness(1.07386) drop-shadow(0 0 3px rgba(255,160,65,0.14772)); }
+  45.83333% { filter: brightness(1.08296) drop-shadow(0 0 3px rgba(255,160,65,0.16593)); }
+  50.00000% { filter: brightness(1.08499) drop-shadow(0 0 3px rgba(255,160,65,0.16998)); }
+  54.16667% { filter: brightness(1.08914) drop-shadow(0 0 3px rgba(255,160,65,0.17828)); }
+  58.33333% { filter: brightness(1.10225) drop-shadow(0 0 3px rgba(255,160,65,0.20451)); }
+  62.50000% { filter: brightness(1.10472) drop-shadow(0 0 3px rgba(255,160,65,0.20943)); }
+  66.66667% { filter: brightness(1.09189) drop-shadow(0 0 3px rgba(255,160,65,0.18377)); }
+  70.83333% { filter: brightness(1.08146) drop-shadow(0 0 3px rgba(255,160,65,0.16292)); }
+  75.00000% { filter: brightness(1.07165) drop-shadow(0 0 3px rgba(255,160,65,0.14330)); }
+  79.16667% { filter: brightness(1.05545) drop-shadow(0 0 3px rgba(255,160,65,0.11091)); }
+  83.33333% { filter: brightness(1.05113) drop-shadow(0 0 3px rgba(255,160,65,0.10225)); }
+  87.50000% { filter: brightness(1.06617) drop-shadow(0 0 3px rgba(255,160,65,0.13234)); }
+  91.66667% { filter: brightness(1.08053) drop-shadow(0 0 3px rgba(255,160,65,0.16107)); }
+  95.83333% { filter: brightness(1.09006) drop-shadow(0 0 3px rgba(255,160,65,0.18012)); }
+  100.00000% { filter: brightness(1.10403) drop-shadow(0 0 3px rgba(255,160,65,0.20806)); }
 }
