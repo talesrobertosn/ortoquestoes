@@ -1,0 +1,28 @@
+/* Gerado por exportar_bonfire_biblioteca.py: mesmo relógio dos 24 quadros de fogo e luz. */
+@keyframes pc-bonfire-resposta {
+  0.00000% { --bonfire-forca: 0.8669; }
+  4.16667% { --bonfire-forca: 0.9081; }
+  8.33333% { --bonfire-forca: 0.7965; }
+  12.50000% { --bonfire-forca: 0.6964; }
+  16.66667% { --bonfire-forca: 0.6677; }
+  20.83333% { --bonfire-forca: 0.5993; }
+  25.00000% { --bonfire-forca: 0.5477; }
+  29.16667% { --bonfire-forca: 0.6070; }
+  33.33333% { --bonfire-forca: 0.6453; }
+  37.50000% { --bonfire-forca: 0.5996; }
+  41.66667% { --bonfire-forca: 0.6155; }
+  45.83333% { --bonfire-forca: 0.6914; }
+  50.00000% { --bonfire-forca: 0.7083; }
+  54.16667% { --bonfire-forca: 0.7428; }
+  58.33333% { --bonfire-forca: 0.8521; }
+  62.50000% { --bonfire-forca: 0.8726; }
+  66.66667% { --bonfire-forca: 0.7657; }
+  70.83333% { --bonfire-forca: 0.6788; }
+  75.00000% { --bonfire-forca: 0.5971; }
+  79.16667% { --bonfire-forca: 0.4621; }
+  83.33333% { --bonfire-forca: 0.4260; }
+  87.50000% { --bonfire-forca: 0.5514; }
+  91.66667% { --bonfire-forca: 0.6711; }
+  95.83333% { --bonfire-forca: 0.7505; }
+  100% { --bonfire-forca: 0.8669; }
+}
