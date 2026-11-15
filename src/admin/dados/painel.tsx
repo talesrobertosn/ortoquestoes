@@ -1,9 +1,10 @@
+import { pagamentosResolvidos } from './metricas'
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { usarConta } from '../../conta/ContextoConta'
 import { usarContadoresAdmin } from '../../componentes/admin/contadores'
 import { contaDeTeste, foraDosNumeros } from '../../componentes/admin/contasTeste'
 import { erroDoPainel } from '../../componentes/admin/formatos'
-import { usarLidos } from '../../componentes/admin/lidos'
+import { EVENTO_LIDOS_ADMIN, usarLidos } from '../../componentes/admin/lidos'
 import { PLANO_CORTESIA } from '../../componentes/admin/rotulos'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { indexarSinais, type SinalUsuario, type VisitaIndicacao } from '../../componentes/admin/sinais'
@@ -94,6 +95,14 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const decisoesPagamento = useMemo(() => { const m = new Map<number,string>(); for (const d of decisoesPagamentoQ.dados ?? []) if (!m.has(d.id_evento)) m.set(d.id_evento,d.decisao); return m }, [decisoesPagamentoQ.dados])
   const resumoQ = usarRpc<ResumoAdmin[]>(conta, 'resumo_admin', {}, { atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const contadoresQ = usarContadoresAdmin(conta)
+  useEffect(() => {
+    const aoLer = (e: Event) => {
+      const d = (e as CustomEvent<{ tipo: string; persistido: boolean }>).detail
+      if (d?.persistido && d.tipo !== 'pagamento') void contadoresQ.recarregar()
+    }
+    window.addEventListener(EVENTO_LIDOS_ADMIN, aoLer)
+    return () => window.removeEventListener(EVENTO_LIDOS_ADMIN, aoLer)
+  }, [contadoresQ.recarregar])
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
     // Tudo a cada 5 minutos (Tales, 11/11/2026: "atualização sempre a cada 5 minutos, sem sobrecarregar o Supabase").
@@ -104,7 +113,8 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: COM_COBRANCAS.includes(parte) })
   const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const indicacoesQ = usarRpc<VisitaIndicacao[]>(conta, 'visitas_indicacao_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
-  const lidosPagamento = usarLidos('pagamento')
+  const lidosPagamentoBase = usarLidos('pagamento')
+  const lidosPagamento = useMemo(() => ({ ...lidosPagamentoBase, lidos: pagamentosResolvidos(lidosPagamentoBase.lidos, decisoesPagamento) }), [lidosPagamentoBase.lidos, lidosPagamentoBase.marcar, decisoesPagamento])
   // Cortesias valendo (parte 37): no painel contam como assinantes, com o selo "Cortesia" (Tales, 02/11/2026).
   // Sem a parte colada, a consulta falha e ninguém vira cortesia (o painel segue como antes). Com a parte 40 a lista
   // traz também os administradores (tipo 'administrador'), que não contam como assinantes.

@@ -56,7 +56,7 @@ interface ItemFila {
   motivo: string | null
   envio_id: number | null
 }
-const LIMITES = 80
+const LIMITES = 200
 const TIPO_LEMBRETE = {
   nunca: 'nunca_comecou',
   tres_dias: 'pausa',
@@ -73,7 +73,7 @@ function campanhaDados(t: TipoCampanhaDiaria, d: Record<string, unknown>): Dados
   if (t === 'simulado_lembrete') return { lembrete: d as DadosCampanha['lembrete'] }
   return {}
 }
-async function preparar(variar?: { chave: string; semente: number }) {
+async function preparar(variar?: { chave: string; semente: number }, incluirCartao = false) {
   const hoje = new Date(),
     dia = diaSP(hoje),
     avisos: string[] = []
@@ -219,10 +219,19 @@ async function preparar(variar?: { chave: string; semente: number }) {
         site: site(),
         ignorarCadencia: true,
         campanha: campanhaDados(t, origem),
-        semente: sementeDe(`${l.id_usuario}:${l.referencia}:${dia}`),
+        semente: variar?.chave === `${l.id_usuario}:${l.referencia}` ? variar.semente : sementeDe(`${l.id_usuario}:${l.referencia}:${dia}`),
       })
       acrescentar(l.id_usuario, l.referencia, t, 'campanha', d, carta, origem)
     }
+  // Cenário operacional próprio: não pode ser enviado sem revalidar a tentativa no banco.
+  const cartoes = incluirCartao ? await rpc<Fonte[]>('hub_cartoes_recusados', { p_limite: 200 }) : []
+  if (cartoes.length === 200) avisos.push('Cartões não concluídos: janela de 200 pessoas atingida; pode haver mais pessoas além desta seleção.')
+  for (const l of cartoes) {
+    const d = base(l.id_usuario)
+    if (!d || d.assinante) continue
+    const carta = gerarCarta(perfilDosDados(d), { tipo: 'cartao_recusado', anteriores: anterioresDosDados(d), hoje, site: site(), ignorarCadencia: true, semente: sementeDe(l.referencia) })
+    acrescentar(l.id_usuario, l.referencia, 'cartao_recusado', 'pagamento', d, carta, l.dados ?? {})
+  }
   for (const { c, linhas } of lembretes)
     for (const l of linhas) {
       const d = base(l.id_usuario)
@@ -241,6 +250,7 @@ async function preparar(variar?: { chave: string; semente: number }) {
         anteriores: [],
         referencia: l.referencia,
         hoje,
+        semente: variar?.chave === `${l.id_usuario}:${l.referencia}` ? variar.semente : undefined,
       })
       acrescentar(l.id_usuario, l.referencia, TIPO_LEMBRETE[c], 'lembrete', d, e, { ...l, campanha: c }, 'lembretes')
     }
@@ -267,6 +277,7 @@ async function preparar(variar?: { chave: string; semente: number }) {
         perfil: perfilDosDados(d),
         anteriores: anterioresDosDados(d),
         hoje,
+        semente: variar?.chave === `${id}:${p.ref}` ? variar.semente : undefined,
       })
       acrescentar(id, p.ref, 'relatorio', p.fonte, d, e, {}, 'relatorio')
     }
@@ -274,7 +285,7 @@ async function preparar(variar?: { chave: string; semente: number }) {
   // Ajuste de versão só afeta a carta aberta; não muda a elegibilidade nem o destinatário.
   if (variar) {
     const m = candidatas.find((x) => x.chave === variar.chave)
-    if (m && m.fonte === 'pessoal') {
+    if (m && ['pessoal', 'pagamento'].includes(m.fonte)) {
       const d = perfis.get(m.id_usuario)!
       const c = gerarCarta(perfilDosDados(d), {
         tipo: m.tipo,
@@ -336,8 +347,9 @@ async function aindaPertinente(m: MensagemHub): Promise<boolean> {
     atual.email !== m.email
   )
     return false
+  if (m.fonte === 'pagamento') return !atual.assinante && (await rpc<Fonte[]>('hub_cartoes_recusados', { p_limite: 200 })).some(x => x.id_usuario === m.id_usuario && x.referencia === m.referencia)
   if (m.fonte === 'campanha')
-    return (await rpc<Fonte[]>(`candidatos_${m.tipo}`, { p_limite: 80 })).some(
+    return (await rpc<Fonte[]>(`candidatos_${m.tipo}`, { p_limite: LIMITES })).some(
       (x) => x.id_usuario === m.id_usuario && x.referencia === m.referencia,
     )
   if (m.fonte === 'lembrete') {
@@ -365,7 +377,7 @@ async function processar() {
   if (!emailConfigurado()) return { erro: 'email_nao_configurado' }
   const inicio = Date.now()
   let feitos = 0
-  while (Date.now() - inicio < 45_000 && feitos < 20) {
+  while (Date.now() - inicio < 45_000 && feitos < 40) {
     const [item] = await rpc<ItemFila[]>('hub_proximo')
     if (!item) break
     const m = item.mensagem
@@ -410,6 +422,10 @@ async function processar() {
         if (atual?.envio_id)
           await gravar(`emails_enviados?id=eq.${atual.envio_id}`, { status: 'falhou', erro: erro(e) }).catch(() => null)
       }
+      if (/envio_recusado_(429|401|403)/.test(erro(e))) {
+        await gravar(`email_rodadas?id=eq.${item.rodada}`, { status: 'pausada' })
+        break // Não consumir a fila com a cota ou credencial do provedor indisponível.
+      }
     }
     feitos++
     await new Promise((r) => setTimeout(r, 650))
@@ -425,6 +441,8 @@ Deno.serve(async (req) => {
   try {
     const p = (await req.json()) as {
       acao?: string
+      versao?: number
+      cenario?: unknown
       chave?: string
       semente?: number
       itens?: Array<{ chave: string; assunto?: string; corpo?: string }>
@@ -445,10 +463,14 @@ Deno.serve(async (req) => {
     const u = await usuarioDoPedido(req)
     const adm = await ler<unknown[]>(`administradores?id_usuario=eq.${u.id}&select=id_usuario`)
     if (!adm.length) return json({ erro: 'acesso_negado' }, 403, req)
-    if (p.acao === 'estado') return json(await estado(p.rodada), 200, req)
+    if (p.acao === 'estado') {
+      const atual = await estado(p.rodada)
+      if (p.versao !== 2 && atual.fila.some(x => x.mensagem.tipo === 'cartao_recusado')) return json({ erro: 'Atualize a página para ver os novos cenários de e-mail.' }, 409, req)
+      return json(atual, 200, req)
+    }
     if (p.acao === 'preparar')
       return json(
-        await preparar(p.chave ? { chave: p.chave, semente: Number(p.semente) || Date.now() } : undefined),
+        await preparar(p.chave ? { chave: p.chave, semente: Number(p.semente) || Date.now() } : undefined, p.versao === 2),
         200,
         req,
       )
@@ -462,7 +484,7 @@ Deno.serve(async (req) => {
       if (p.cenario !== undefined && !cenarioValido(p.cenario)) return json({ erro: 'cenario_invalido' }, 400, req)
       // Um clique repetido na mesma seleção não acrescenta nem reenvia ninguém.
       if (atual.rodada && p.itens.every((i: { chave: string }) => atual.fila.some(f => f.mensagem.chave === i.chave))) return json(atual, 200, req)
-      const previa = await preparar(),
+      const previa = await preparar(undefined, p.versao === 2),
         selecao = selecionarHub(previa.opcoes, p.cenario as CenarioHub | undefined),
         mapa = new Map(selecao.prontas.map((x) => [x.chave, x])),
         vistos = new Set<string>(),

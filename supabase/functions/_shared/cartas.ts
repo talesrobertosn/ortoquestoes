@@ -2,22 +2,15 @@
  * Cartas do Tales: o motor dos e-mails pessoais do Orto Questões (15/10/2026;
  * reescrito em 17/10/2026 conforme docs/emails/PLANO.md).
  *
- * Pedido do dono: e-mail com cara de e-mail de um amigo que já passou pela
- * residência, só texto, sem logo, sempre assinado "Um abraço, / Tales, do Orto
- * Questões", que faça a pessoa pensar "ele reparou em mim". Este arquivo é puro
- * (sem Deno, sem rede, sem React): o painel usa para escolher e prever a carta,
- * e a Edge Function usa o MESMO código para montar o e-mail que sai. Assim a
- * prévia do painel é exatamente o que chega.
+ * Diretriz atual (15/11/2026): mensagens claras e cordiais, sem pressão emocional,
+ * P.S. ou preenchimento automático. O painel e o servidor usam o mesmo motor puro.
  *
  * Como funciona:
  *  1. `escolherTipo` olha os dados da pessoa e decide a situação (nunca começou,
  *     começou e parou, sumiu, ativa numa faixa de acerto, assinante, convite...)
  *     e diz se a cadência permite escrever agora (`bloqueio`).
- *  2. `gerarCarta` sorteia uma das versões escritas para essa situação (5 a 7 por
- *     situação e faixa) e preenche os blocos trocáveis (saudação, observações
- *     pessoais, frase sobre tempo, dica, fecho, P.S.), evitando a versão que a
- *     pessoa já recebeu. Garante a espinha da carta: 6 a 12 linhas, exatamente um
- *     P.S., no máximo um link, assunto com até 55 caracteres.
+ *  2. `gerarCarta` escolhe versões por situação e fatos reais, evita a versão já
+ *     recebida e verifica tamanho, assunto e link. Não acrescenta P.S. ou frases.
  *  3. `renderizarCarta` transforma o texto em HTML mínimo + texto simples, com a
  *     assinatura fixa. É a única função que monta o e-mail final.
  *
@@ -50,7 +43,7 @@ export type TipoCarta =
   | 'nunca_comecou' | 'boas_vindas' | 'comecando' | 'comecou_parou' | 'pausa' | 'sumiu' | 'ativo'
   | 'obrigado_assinatura' | 'convite_20' | 'convite_50' | 'reta_final' | 'marco'
   | 'opiniao' | 'indicar' | 'cronograma'
-  | 'pix_3_dias' | 'pix_hoje' | 'relatorio'
+  | 'pix_3_dias' | 'pix_hoje' | 'relatorio' | 'cartao_recusado'
   // Novos em 17/10/2026 (sem SQL): disparados por um acontecimento no site ou no pagamento.
   | 'boas_vindas_dia0' | 'primeiras_10' | 'voltou' | 'cronograma_pronto' | 'pagamento_aprovado' | 'obrigado_tempo'
   // Parte 31 (18/10/2026): as campanhas diárias, escolhidas pelo banco (candidatos_<tipo>) e mandadas pelo agendador.
@@ -70,6 +63,8 @@ export function provaComArtigo(valor?: string | null): string {
   const nome = nomeProvaInformado(valor)
   return !nome ? 'a sua prova' : /^(?:TEOT|TEPOT|TARO|ENARE)(?:\b|$)/i.test(nome) ? `o ${nome}` : `a prova de ${nome.replace(/^prova\s+(?:de\s+)?/i, '')}`
 }
+// Tales, 15/11/2026: pagamento direto e cordial, sem P.S. ou frases de pressão disfarçada.
+export const TIPOS_SEM_PS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'pausa', 'sumiu', 'ativo', 'obrigado_assinatura', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma', 'cartao_recusado', 'pix_3_dias', 'pix_hoje', 'relatorio', 'boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo', 'assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'acesso_terminou', 'como_estao', 'simulado_lembrete']
 export const TIPOS_APOSENTADOS: readonly string[] = ['obrigado_assinatura', 'assinou_sem_cronograma']
 
 export interface InfoTipo { rotulo: string; descricao: string; grupo: 'situacao' | 'convite' | 'pessoal' | 'automatico' }
@@ -78,7 +73,7 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   boas_vindas: { grupo: 'situacao', rotulo: 'Boas-vindas', descricao: 'Chegou nos últimos 3 dias e já respondeu algumas questões.' },
   comecando: { grupo: 'situacao', rotulo: 'Começando', descricao: 'Ativo, com menos de 30 questões: pergunta como está sendo e dá uma ideia prática.' },
   comecou_parou: { grupo: 'situacao', rotulo: 'Começou e parou', descricao: 'Menos de 30 questões respondidas e alguns dias sem nova sessão.' },
-  pausa: { grupo: 'automatico', rotulo: 'Fogo apagando: 3 a 6 dias sem estudar', descricao: 'Última sessão há três a seis dias, com histórico de estudo anterior.' },
+  pausa: { grupo: 'automatico', rotulo: 'Revisão após 3 a 6 dias', descricao: 'Última sessão há três a seis dias, com histórico de estudo anterior.' },
   sumiu: { grupo: 'situacao', rotulo: 'Sem estudar há vários dias', descricao: 'Já respondia questões e está há vários dias sem estudar; o motivo mostra a janela aplicada.' },
   ativo: { grupo: 'situacao', rotulo: 'Estudando (pela faixa de acerto)', descricao: 'Uma voz para cada faixa de acerto, com o que a pessoa tem de especial.' },
   obrigado_assinatura: { grupo: 'pessoal', rotulo: 'Obrigado pela assinatura', descricao: 'Aposentado: o agradecimento já sai automaticamente no pagamento.' },
@@ -89,15 +84,16 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   opiniao: { grupo: 'pessoal', rotulo: 'Pedir opinião', descricao: 'Três perguntas concretas.' },
   indicar: { grupo: 'pessoal', rotulo: 'Pedir para indicar', descricao: '"Quem você conhece que está nessa?"; os 7 dias para os dois.' },
   cronograma: { grupo: 'pessoal', rotulo: 'Apresentar o cronograma', descricao: 'Quando ele devolve tempo.' },
+  cartao_recusado: { grupo: 'automatico', rotulo: 'Ajuda com o cartão', descricao: 'Tentativa de pagamento não concluída; oferece ajuda e a alternativa do Pix.' },
   pix_3_dias: { grupo: 'automatico', rotulo: 'Pix: faltam 3 dias', descricao: 'O período de acesso pago no Pix termina em três dias.' },
   pix_hoje: { grupo: 'automatico', rotulo: 'Pix: termina hoje', descricao: 'O período de acesso pago no Pix termina hoje.' },
   relatorio: { grupo: 'automatico', rotulo: 'Resumo de estudo', descricao: 'Automático: a quinzena ou o mês contados como uma história.' },
   boas_vindas_dia0: { grupo: 'automatico', rotulo: 'Boas-vindas no dia da confirmação', descricao: 'Primeiro login depois de confirmar o e-mail: boas-vindas, as funções do site (questões, Cronograma, resumos) e o pedido para contar aos colegas.' },
   primeiras_10: { grupo: 'automatico', rotulo: 'Primeiras 10 questões', descricao: 'Ao passar de 10 questões: o hábito começou.' },
-  voltou: { grupo: 'automatico', rotulo: 'Que bom te ver de volta', descricao: 'Primeiro login depois de 10 dias ou mais fora.' },
+  voltou: { grupo: 'automatico', rotulo: 'Retomada do estudo', descricao: 'Primeiro login depois de 10 dias ou mais fora.' },
   cronograma_pronto: { grupo: 'automatico', rotulo: 'Cronograma pronto', descricao: 'No dia em que a pessoa monta o plano até a prova.' },
   pagamento_aprovado: { grupo: 'automatico', rotulo: 'Obrigado pela assinatura', descricao: 'Sai quando a assinatura ou a renovação é aprovada: agradecimento, plano, período, o que libera e o link do cronograma. Transacional.' },
-  obrigado_tempo: { grupo: 'automatico', rotulo: 'Obrigado pelo tempo de assinatura', descricao: 'Cancelou ou pediu reembolso: porta aberta, sem cobrança.' },
+  obrigado_tempo: { grupo: 'automatico', rotulo: 'Obrigado pelo tempo de assinatura', descricao: 'Confirmação da solicitação de cancelamento ou reembolso.' },
   assinou_sem_cronograma: { grupo: 'automatico', rotulo: 'Assinou e não montou o cronograma', descricao: 'Aposentado: montar um cronograma é opcional.' },
   assinante_parado_7: { grupo: 'automatico', rotulo: 'Assinante parado há 7 dias', descricao: 'Assinatura ativa e pelo menos uma semana sem responder questões.' },
   simulado_resultado: { grupo: 'automatico', rotulo: 'Resultado do Simulado Nacional', descricao: 'Quando a edição fecha: obrigado por ter feito, o que o resultado mostra e o que fazer com ele.' },
@@ -107,7 +103,7 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   um_ano: { grupo: 'automatico', rotulo: 'Um ano de Orto Questões', descricao: 'No dia em que a conta faz um ano (ou mais): o caminho até aqui, sem convite.' },
   indicacao_deu_certo: { grupo: 'automatico', rotulo: 'Sua indicação deu certo', descricao: 'Quem a pessoa indicou chegou a 20 questões: obrigado pela confiança.' },
   resumo_do_tema: { grupo: 'automatico', rotulo: 'Saiu um resumo do seu tema', descricao: 'Semanal, só para quem aceitou novidades: um resumo novo na área que a pessoa mais estuda.' },
-  acesso_terminou: { grupo: 'situacao', rotulo: 'Sentimos sua falta (acesso terminou)', descricao: 'O acesso pago terminou há até 30 dias e não foi renovado: tudo está guardado, o que a pessoa conquistou e a porta aberta para voltar, sem pressão.' },
+  acesso_terminou: { grupo: 'situacao', rotulo: 'Acesso encerrado', descricao: 'O acesso pago terminou há até 30 dias. Sugere consultar o histórico e as revisões salvas.' },
   como_estao: { grupo: 'situacao', rotulo: 'Como estão os estudos? (risco de parar)', descricao: 'Assinante que o painel marcou com risco moderado ou alto: pergunta da rotina, a Revisão e o cronograma que se ajusta; se o acesso estiver perto do fim, a conta dos dias somados.' },
   simulado_lembrete: { grupo: 'automatico', rotulo: 'Lembrete do Simulado Nacional', descricao: 'Para quem se inscreveu: a edição abre amanhã (ou abriu hoje), quantas questões, quanto tempo e até quando dá para fazer.' },
 }
@@ -611,8 +607,7 @@ export interface Ctx {
   dica: () => string
   fecho: () => string | null
   /**
-   * O P.S., sempre presente: a linha mais humana da carta. Com `corpo` (o texto já
-   * escrito), evita um P.S. que repita uma ideia que o corpo já tem (psRepeteCorpo).
+   * Compatibilidade com consumidores antigos. O motor atual não gera P.S.
    */
   ps: (corpo?: string) => string
   /** Benefícios reais da assinatura, os mais ligados ao perfil primeiro. */
@@ -633,101 +628,26 @@ export interface Ctx {
 function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] {
   const A = (slug: string) => AREAS[slug]
   switch (chave) {
-    case 'melhorArea': {
-      const m = f.melhorArea!, a = A(m.slug)
-      return mostrar
-        ? [
-            `Reparei que ${a.em} é o seu ponto mais forte, com ${m.pct}% de acerto. Isso não aparece por acaso.`,
-            `Reparei que ${a.em} virou o seu ponto forte, com ${m.pct}% de acerto em ${questoes(m.total)}. É fruto de questão feita com atenção, e nada disso se perde.`,
-            `Em ${a.em} você está voando: ${m.pct}% de acerto. ${a.sabor[0]}`,
-            `Seu melhor tema hoje é ${a.em}, com ${m.pct}%.`,
-          ]
-        : [
-            `Vi que ${a.em} já virou um ponto forte seu. ${a.sabor[0]}`,
-            `Reparei que ${a.em} é o tema em que você mais brilha. Fiquei feliz de ver.`,
-            `Em ${a.em} você já está mandando muito bem, e isso diz muito sobre o jeito como você estuda.`,
-          ]
-    }
-    case 'maisEstudada': {
-      const m = f.maisEstudada!, a = A(m.slug)
-      return [
-        `Vi que ${a.em} é o tema a que você mais tem se dedicado: ${questoes(m.total)} até agora. ${a.sabor[a.sabor.length - 1]}`,
-        `Reparei que tem bastante questão de ${a.de} no seu histórico. ${a.sabor[a.sabor.length - 1]}`,
-        `${a.de.charAt(0).toUpperCase() + a.de.slice(1)} parece ser a sua praia por aqui: já são ${questoes(m.total)}.`,
-      ]
-    }
-    case 'areaFraca': {
-      const a = A(f.areaFraca!.slug)
-      return [
-        `Um tema bom para as próximas semanas é ${a.em}: é onde cada sessão vai render mais para você agora. Dez questões por semana já mudam o quadro.`,
-        `Reparei que ${a.em} é o tema com mais espaço para crescer no seu caso, e isso é uma boa notícia: é ali que os pontos vêm mais rápido. Dez questões por semana bastam.`,
-        `Uma sugestão: dez questões de ${a.de} por semana podem fazer uma bela diferença nas próximas semanas.`,
-      ]
-    }
-    case 'horario':
-      return {
-        noite: ['Vi que você estuda quase sempre à noite. É uma rotina pesada: o dia inteiro no hospital e o estudo esperando no fim dele.', 'Reparei que quase tudo seu sai à noite, quando o dia já acabou. Sei o que isso custa, e admiro.', 'Vi que a noite é o seu horário de estudo. Respeito demais quem encontra esse tempo depois de um dia inteiro.'],
-        madrugada: ['Vi que muita questão sua sai de madrugada, provavelmente no plantão.', 'Reparei que você estuda até de madrugada.'],
-        manha: ['Reparei que você gosta de estudar cedo, antes de o dia começar. É um jeito bonito de proteger o estudo da rotina.', 'Vi que você estuda bastante de manhã cedo, antes de o hospital te engolir. Admiro essa disciplina.'],
-        almoco: ['Vi que muita questão sua sai na hora do almoço. Que jeito esperto de encaixar o estudo no único intervalo do dia.', 'Reparei que você aproveita o horário do almoço para estudar. Isso é usar bem o pouco tempo que a residência deixa.'],
-        tarde: ['Vi que você costuma estudar à tarde, num ritmo bem constante.', 'Reparei que a tarde é o seu horário de questões. Gosto de ver essa rotina.'],
-      }[f.horario!]
-    case 'prova':
-      return {
-        teot: ['Vi que o TEOT está no seu horizonte, e fico na torcida.', 'Sei que o seu foco é o TEOT, e estou na torcida.'],
-        taro: ['Vi que você está se preparando para o TARO, e fico na torcida.', 'Sei que o TARO está no seu radar.'],
-        mao: ['Vi que você está se preparando para a prova da cirurgia da mão.', 'Sei que a prova da mão está no seu radar, e fico na torcida.'],
-        r4: ['Vi que você está mirando o R4.', 'Sei que a seleção do R4 está no seu radar, e fico na torcida.'],
-        atualizacao: ['Vi que você estuda para se manter em dia, sem prova marcada. Acho isso muito bonito.', 'Gosto muito de ver gente estudando sem prova marcada, só pelo prazer de se manter em dia.'],
-      }[f.prova!]
-    case 'etapa':
-      return {
-        r1: ['Sei que o R1 é um ano de muita novidade e pouco tempo, e mesmo assim você está aqui.', 'O R1 é o ano de aprender a sobreviver ao hospital. Estudar no meio disso tem muito valor.'],
-        r2: ['Sei que o R2 costuma ser o ano mais puxado de plantão, e mesmo assim você encontra tempo.', 'Estudar no meio do R2 não é pouca coisa, e você está fazendo.'],
-        r3: ['O R3 é o ano do TEOT, e sei como ele pesa. Cada questão agora conta muito.', 'Sei que o R3 é um ano intenso, com a prova no fim dele.'],
-        r4: ['Na subespecialidade, o detalhe faz toda a diferença.', 'Estudar no R4 é escolher ir além, e eu admiro isso.'],
-        mao: ['Residência de mão pede muito detalhe, e você está encarando com vontade.', 'Na mão, o detalhe é tudo, e dá para ver que você sabe disso.'],
-        estudante: ['Estudar ortopedia ainda na graduação é sair na frente.', 'Fico feliz de ver gente da graduação estudando ortopedia com tanta seriedade.'],
-        ortopedista: ['Admiro muito quem segue estudando depois da residência.', 'É bonito ver quem já terminou a residência mantendo o estudo em dia.'],
-      }[f.etapa!]
-    case 'ranking': {
-      const n = f.ranking!
-      return n <= 10
-        ? [`Você está em ${n}º no ranking geral, entre os dez primeiros. Que orgulho.`, `${n}º lugar no ranking geral. Isso é muito estudo, e fiquei feliz de ver.`]
-        : [`Parabéns pela ${n}ª posição no ranking geral.`, `Vi que você está em ${n}º no ranking geral, e fiquei feliz de ver o seu nome lá.`]
-    }
-    case 'sequencia':
-      return [`São ${dias(f.sequencia!)} seguidos estudando.`, `Sua sequência está em ${dias(f.sequencia!)}, e isso diz muito sobre você.`]
-    case 'flashcards':
-      return ['Vi que você também está usando os flashcards, que bom.', `Vi que você já passou por ${numero(f.flashcards!)} flashcards também.`]
-    case 'semana':
-      return [`Só nos últimos sete dias foram ${questoes(f.semana!)}. Que dedicação.`, `Vi as ${questoes(f.semana!)} desta última semana, e fiquei feliz.`]
-    case 'resumos': {
-      const r = f.resumos!
-      if (r.total === 1) return r.titulo ? [`Vi que você leu o resumo "${r.titulo}" na Biblioteca. Ler o resumo e depois fazer as questões do tema é o jeito mais rápido de fixar.`] : ['Vi que você já leu um resumo da Biblioteca. Resumo e questão do mesmo tema, na mesma sessão, é a combinação que mais rende.']
-      return [
-        r.titulo ? `Vi que você já leu ${numero(r.total)} resumos da Biblioteca, entre eles "${r.titulo}". Resumo e questão do mesmo tema, na mesma sessão, é a combinação que mais rende.` : `Vi que você já leu ${numero(r.total)} resumos da Biblioteca. Resumo e questão do mesmo tema, na mesma sessão, é a combinação que mais rende.`,
-        `Reparei nos ${numero(r.total)} resumos que você já leu na Biblioteca. Quem lê o resumo antes das questões costuma sentir o estudo render mais rápido.`,
-      ]
-    }
-    case 'cronograma': {
-      const c = f.cronograma!, prova = provaComArtigo(c.prova)
-      return [
-        `Vi no seu cronograma que faltam ${dias(c.dias)} para ${prova}. Dá tempo de muita coisa, ainda mais com a lista de cada dia já pronta.`,
-        `Pelo seu cronograma, ${prova} está a ${dias(c.dias)}, e eu estou na torcida.`,
-      ]
-    }
-    case 'servico':
-      return [`Vi que você é ${f.servico!.de}. Manda um abraço para o pessoal de lá.`, `Reparei que você está ${f.servico!.de}. Deve ser corrido por lá, e mesmo assim você encontra tempo para estudar.`]
-    case 'cidade':
-      return [`Vi que você estuda a partir de ${f.cidade}. Que bom ter alguém de lá por aqui.`, `Reparei que você escreve de ${f.cidade}. Um abraço para a cidade.`]
-    case 'aniversario':
-      return f.aniversario === 'hoje'
-        ? ['E hoje é o seu aniversário. Parabéns, de coração. Que o ano que começa traga a aprovação e, antes dela, dias mais leves.']
-        : ['Vi que o seu aniversário está chegando. Deixo o parabéns adiantado, com carinho.']
+    case 'melhorArea': { const m=f.melhorArea!, a=A(m.slug); return mostrar
+      ? [`Seu maior acerto por tema está em ${a.em}, com ${m.pct}%.`, `Em ${a.em}, seu histórico registra ${m.pct}% de acerto em ${questoes(m.total)}.`, `O tema com maior acerto no seu histórico é ${a.de}, com ${m.pct}%.`]
+      : [`${a.de.charAt(0).toUpperCase()+a.de.slice(1)} aparece entre os temas já consolidados no seu histórico.`, `Você pode usar os resultados de ${a.de} para orientar a revisão dos próximos temas.`] }
+    case 'maisEstudada': { const m=f.maisEstudada!,a=A(m.slug);return [`O tema com mais questões no seu histórico é ${a.de}.`, `Seu histórico reúne ${questoes(m.total)} de ${a.de}.`, `O tema que você mais estudou por aqui foi ${a.de}.`] }
+    case 'areaFraca': { const a=A(f.areaFraca!.slug);return [`Uma opção para a próxima revisão é incluir questões de ${a.de}.`, `Você pode selecionar ${a.de} para uma sessão específica de revisão.`, `Os comentários das questões de ${a.de} podem orientar a próxima sessão.`] }
+    case 'horario': { const h={noite:'à noite',madrugada:'de madrugada',manha:'pela manhã',almoco:'no horário do almoço',tarde:'à tarde'}[f.horario!];return [`Suas sessões costumam acontecer ${h}.`, `Os registros mostram que você costuma estudar ${h}.`] }
+    case 'prova': { const p={teot:'TEOT',taro:'TARO',mao:'cirurgia da mão',r4:'R4',atualizacao:'atualização profissional'}[f.prova!];return [`Seu perfil indica interesse em ${p}.`, `Você informou ${p} entre seus objetivos de estudo.`] }
+    case 'etapa': { const e={r1:'R1',r2:'R2',r3:'R3',r4:'R4',mao:'residência de cirurgia da mão',estudante:'graduação',ortopedista:'ortopedista'}[f.etapa!];return [`A etapa informada no seu perfil é ${e}.`, `Seu cadastro está identificado com a etapa ${e}.`] }
+    case 'ranking':return [`Sua posição atual no ranking geral é ${f.ranking}ª.`, `Você está na ${f.ranking}ª posição do ranking geral.`]
+    case 'sequencia':return [`Sua sequência atual registra ${dias(f.sequencia!)} de estudo.`, `O histórico mostra ${dias(f.sequencia!)} seguidos de estudo.`]
+    case 'flashcards':return [`Seu histórico também registra ${numero(f.flashcards!)} flashcards.`, 'Os Flashcards também aparecem entre os recursos que você já utilizou.']
+    case 'semana':return [`Na última semana, o histórico registra ${questoes(f.semana!)}.`, `Você respondeu ${questoes(f.semana!)} nos últimos sete dias.`]
+    case 'resumos':return f.resumos!.titulo?[`O resumo "${f.resumos!.titulo}" está entre as leituras do seu histórico.`]:['Seu histórico inclui leituras na Biblioteca de resumos.']
+    case 'cronograma':return [`Seu cronograma registra ${dias(f.cronograma!.dias)} até ${f.cronograma!.prova || 'a prova informada'}.`]
+    case 'servico':return [`Seu cadastro informa o serviço ${f.servico!.nome}.`]
+    case 'cidade':return [`A cidade informada no seu cadastro é ${f.cidade}.`]
+    case 'aniversario':return ['A data de aniversário informada no seu perfil é hoje.']
   }
-  return []
 }
+
 
 /** Ordem padrão de interesse dos fatos (o que mais faz a pessoa sentir que foi vista primeiro). */
 const ORDEM_FATOS: Array<keyof Fatos> = ['aniversario', 'cronograma', 'melhorArea', 'ranking', 'resumos', 'servico', 'maisEstudada', 'horario', 'prova', 'sequencia', 'semana', 'etapa', 'cidade', 'flashcards', 'areaFraca']
@@ -735,46 +655,16 @@ const ORDEM_FATOS: Array<keyof Fatos> = ['aniversario', 'cronograma', 'melhorAre
 const MAXIMO_OBS = 3
 
 /** Frases sobre tempo e praticidade: o tema de fundo de toda carta. */
-const TEMPO = [
-  'Dez minutos no intervalo já contam. Não precisa ser uma sessão grande para valer.',
-  'Você senta e estuda; o site organiza o resto.',
-  'Trinta minutos num horário fixo valem mais que duas horas espalhadas pelo fim de semana.',
-  'Estudar fácil é abrir e já saber o que fazer. Quando a lista vem pronta, o cansaço pesa menos.',
-  'O tempo que a gente mais perde não é estudando, é decidindo o que estudar. Deixar essa decisão pronta devolve uns quinze minutos por dia.',
-  'Cinco questões no ônibus, cinco no café, cinco antes de dormir. No fim da semana, isso vira um estudo de verdade.',
-  'A lista do dia já pronta quando você sai da cirurgia: é isso que faz o estudo caber numa rotina de hospital.',
-  'Pouco e todo dia rende mais do que muito de vez em quando. A memória gosta de repetição, não de maratona.',
-  'Se a semana apertar, tudo bem. O site fica do jeito que você deixou, e a Revisão guarda o que precisa de uma segunda olhada.',
-  'O segredo de quem passa com a rotina cheia não é estudar mais horas, é não desperdiçar as poucas que tem.',
-]
+const TEMPO = ['Você pode dividir o estudo em sessões por tema.', 'O histórico permite continuar a sessão de onde você parou.', 'Uma sessão curta pode ser dedicada a um tema e aos comentários das alternativas.']
 
-/** Dicas oferecidas como presente ("um truque", "se ajudar"), nunca como ordem. */
+/** Sugestões concretas de estudo, sem elogios ou cobranças implícitas. */
 const DICAS: Record<'baixo' | 'medio' | 'alto', string[]> = {
-  baixo: [
-    'Um truque que ajuda muita gente: antes de olhar as alternativas, tente responder de cabeça. É um ótimo treino para o raciocínio de prova.',
-    'Uma coisa que costuma fazer diferença: ler também o comentário das alternativas que não são a resposta. É ali que a banca esconde as pegadinhas.',
-    'Se ajudar: cinco questões por dia, com calma, costumam render mais do que trinta de uma vez no domingo.',
-    'Uma ideia que funciona bem: quando uma questão te pegar, marque como favorita e volte nela no dia seguinte. É impressionante como ela fica.',
-    'Uma estratégia simples: antes de escolher a certa, descarte as que você tem certeza de que não são. A questão fica bem mais leve.',
-  ],
-  medio: [
-    'Que tal começar cada sessão pela Revisão do dia? São as questões que pedem uma segunda olhada, voltando no momento certo.',
-    'Uma ideia: abrir o Caderno de erros uma vez por semana e refazer as que ainda incomodam. Rende muito.',
-    'Quando acertar com dúvida, vale ler o comentário como se tivesse errado. Assim o acerto vira certeza.',
-    'Alguns dias dedicados ao tema que mais te desafia costumam render muito, se fizer sentido para você.',
-    'Um truque de prova: ler o enunciado até o fim antes de olhar as alternativas. A banca adora esconder coisa na última linha.',
-  ],
-  alto: [
-    'Nesse nível, vale ler o comentário mesmo quando acerta. Às vezes ele traz um detalhe que a banca ainda vai cobrar.',
-    'Uma ideia: misturar provas e temas na mesma sessão. Obriga a reconhecer o assunto sem pista, como no dia da prova.',
-    'Uma lembrança gentil: matéria bem sabida também esfria se ficar parada, então a Revisão em dia protege o que você conquistou.',
-    'As questões que voltam a te pegar uma segunda vez são as mais valiosas da sua lista. Vale dar um carinho especial a elas.',
-    'Um detalhe de prova: o "exceto" e o "incorreta" no enunciado. É ali que até quem sabe muito ainda deixa escapar um ponto.',
-  ],
+  baixo: ['Você pode ler o comentário de cada alternativa depois de responder.', 'Os filtros permitem selecionar um tema para a próxima sessão.'],
+  medio: ['A Revisão reúne questões do seu histórico para retomar os temas.', 'O Caderno de erros permite refazer questões e consultar os comentários.'],
+  alto: ['Você pode combinar provas e temas nos filtros da sessão.', 'Os comentários das alternativas podem complementar a revisão de um tema.'],
 }
-const FECHOS = ['Se não for a hora, tudo bem também. Eu continuo por aqui.', 'Se eu puder ajudar em qualquer coisa, é só responder este e-mail.', 'Estou torcendo por você.', 'Conte comigo no que precisar.', 'Fico feliz de acompanhar o seu caminho.', 'Torço muito pela sua aprovação.', 'Bons estudos por aí, e cuide-se.']
+const FECHOS = ['Se precisar de ajuda com o site, basta responder este e-mail.', 'Pode responder por aqui se encontrar alguma dificuldade.', 'Se tiver alguma dúvida, pode me chamar por aqui.']
 /** O fecho não repete o que o texto já disse ("é só responder", "torcendo", "acompanhando"...). */
-const CHAVES_FECHO = ['respond', 'torc', 'acompanh', 'conte comigo', 'bons estudos', 'não for a hora', 'por aqui']
 /** Minúsculas e sem cedilha, para "torço" e "torcida" contarem como a mesma ideia. */
 const simples = (t: string) => t.toLowerCase().replace(/ç/g, 'c')
 
@@ -817,11 +707,6 @@ function fortesDe(texto: string): Set<number> {
   PALAVRAS_FORTES.forEach((re, i) => { if (re.test(t)) achadas.add(i) })
   return achadas
 }
-function repetemForte(a: string, b: string): boolean {
-  const deA = fortesDe(a)
-  for (const i of fortesDe(b)) if (deA.has(i)) return true
-  return false
-}
 /** Frases do texto, na ordem (ponto, exclamação, interrogação ou quebra de linha). */
 export function frasesDe(texto: string): string[] {
   return texto.replace(/^P\.S\.:\s*/gm, '').split(/(?<=[.!?])\s+|\n+/).map((f) => f.trim()).filter((f) => f.length > 0)
@@ -835,18 +720,6 @@ export function frasesSeguidasRepetem(texto: string): string | null {
   }
   return null
 }
-
-/** P.S. genéricos, humanos, para quando nenhum fato sobra. */
-const PS_HUMANOS = [
-  'P.S.: se quiser responder este e-mail, vou adorar ler.',
-  'P.S.: se encontrar algo estranho numa questão, tem um botão para relatar. Cada relato é lido com carinho.',
-  'P.S.: dez minutos no intervalo já contam. Não precisa esperar um dia livre para estudar.',
-  'P.S.: se a semana apertar, tudo bem. O site fica do jeito que você deixou.',
-  'P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.',
-  'P.S.: o comentário das alternativas erradas costuma ensinar muito. Vale ler até o fim.',
-  'P.S.: errar aqui é barato. É na prova que custa. Aproveita que aqui é treino.',
-  'P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo mais leve.',
-]
 
 function tomDaFaixa(f: Faixa | null): 'baixo' | 'medio' | 'alto' {
   if (!f) return 'baixo'
@@ -913,31 +786,7 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
     dica: () => um(...DICAS[tomDaFaixa(faixa)]),
     // "Torço pela sua aprovação" só para quem tem prova pela frente.
     fecho: () => (rnd() < 0.15 ? null : um(...FECHOS.filter((f) => !(f.includes('aprovação') && (fatos.prova === 'atualizacao' || fatos.etapa === 'ortopedista'))))),
-    ps: (corpo = '') => {
-      const candidatos: Array<[string | null, string]> = []
-      if (fatos.aniversario && !usados.has('aniversario')) candidatos.push(['aniversario', fatos.aniversario === 'hoje' ? 'P.S.: e parabéns pelo aniversário. Que o ano que começa traga a aprovação e dias mais leves.' : 'P.S.: vi que o seu aniversário está chegando. Deixo o parabéns adiantado, com carinho.'])
-      if (fatos.ranking && !usados.has('ranking')) candidatos.push(['ranking', `P.S.: vi que você está em ${fatos.ranking}º no ranking geral. Fiquei feliz de ver o seu nome lá.`])
-      if (fatos.sequencia && !usados.has('sequencia')) candidatos.push(['sequencia', `P.S.: ${dias(fatos.sequencia)} seguidos de estudo.`])
-      if (fatos.horario === 'madrugada' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: vi que você estuda até de madrugada.'])
-      if (fatos.horario === 'noite' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: vi que você estuda bastante à noite. Admiro muito quem encontra tempo depois de um dia inteiro.'])
-      if (fatos.cronograma && !usados.has('cronograma')) candidatos.push(['cronograma', `P.S.: faltam ${dias(fatos.cronograma.dias)} para ${fatos.cronograma.prova ? `o ${fatos.cronograma.prova}` : 'a sua prova'}. Estou na torcida.`])
-      if (fatos.servico && !usados.has('servico')) candidatos.push(['servico', `P.S.: um abraço para o pessoal ${fatos.servico.de}.`])
-      if (fatos.melhorArea && !usados.has('melhorArea')) {
-        const em = AREAS[fatos.melhorArea.slug].em
-        candidatos.push(['melhorArea', mostrarAcerto() ? `P.S.: ${em} com ${fatos.melhorArea.pct}% de acerto. Parabéns, de verdade.` : `P.S.: ${em} está ficando muito forte no seu estudo. Parabéns, de verdade.`])
-      }
-      if (fatos.resumos && !usados.has('resumos')) candidatos.push(['resumos', fatos.resumos.titulo ? `P.S.: vi que você leu "${fatos.resumos.titulo}" na Biblioteca. Fazer as questões do tema logo depois é o que mais fixa.` : 'P.S.: vi que você anda lendo os resumos da Biblioteca. Fazer as questões do tema logo depois é o que mais fixa.'])
-      // Nenhum P.S. repete uma ideia que o corpo já disse ("é só responder" duas vezes).
-      const novos = candidatos.filter(([, texto]) => !psRepeteCorpo(texto, corpo))
-      const humanos = PS_HUMANOS.filter((texto) => !psRepeteCorpo(texto, corpo))
-      // Metade das vezes, um fato (se ainda couber uma observação); senão, um P.S. humano.
-      if (novos.length && nObs() < MAXIMO_OBS && rnd() < 0.5) {
-        const [chave, texto] = novos[Math.floor(rnd() * novos.length)]
-        if (chave) { usados.add(chave); if (chave === 'melhorArea' && mostrarAcerto()) usados.add('acerto') }
-        return texto
-      }
-      return um(...(humanos.length ? humanos : PS_HUMANOS))
-    },
+    ps: () => '',
     beneficios: (k, curto = false) => {
       // [como item de lista, curto para o meio da frase, peso pelo perfil]
       const lista: Array<[string, string, number]> = [
@@ -970,32 +819,6 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
 
 const SAUDACOES_NOME = ['{n}, tudo bem?', 'Oi, {n}, tudo bem?', 'Olá, {n}, tudo bem?', '{n}, tudo bem por aí?', 'Oi, {n}, espero que esteja tudo bem por aí.']
 const SAUDACOES = ['Oi, tudo bem?', 'Olá, tudo bem?', 'Tudo bem por aí?', 'Oi, espero que esteja tudo bem por aí.']
-
-/**
- * Os fechos do corpo: nenhum repete o que o texto já disse ("é só responder", "torcendo",
- * "acompanhando") nem a palavra forte do parágrafo vizinho ("fiquei feliz" / "Fico feliz").
- * Quando o fecho sorteado pela versão quebra uma das regras, outro fecho entra no lugar;
- * se nenhum servir, a carta segue sem ele.
- */
-function ajustarFechos(brutos: string[], rnd: () => number, fatos: Fatos): string[] {
-  // "Torço pela sua aprovação" só para quem tem prova pela frente (como em ctx.fecho).
-  const semProva = fatos.prova === 'atualizacao' || fatos.etapa === 'ortopedista'
-  const repeteChave = (fecho: string, outros: string[]) => {
-    const chave = CHAVES_FECHO.find((k) => simples(fecho).includes(k))
-    return !!chave && outros.some((y) => simples(y).includes(chave))
-  }
-  const resultado: string[] = []
-  brutos.forEach((x, i) => {
-    if (!FECHOS.includes(x)) { resultado.push(x); return }
-    const outros = brutos.filter((_, j) => j !== i)
-    const vizinhos = [brutos[i - 1], brutos[i + 1]].filter((y): y is string => !!y && !FECHOS.includes(y))
-    const serve = (f: string) => !repeteChave(f, outros) && !vizinhos.some((y) => repetemForte(y, f))
-    if (serve(x)) { resultado.push(x); return }
-    const alternativas = FECHOS.filter((f) => f !== x && serve(f) && !(semProva && f.includes('aprovação')))
-    if (alternativas.length) resultado.push(alternativas[Math.floor(rnd() * alternativas.length)])
-  })
-  return resultado
-}
 
 export function modeloDe(tipo: TipoCarta, faixa: Faixa | null): string {
   return tipo === 'ativo' && faixa ? `ativo:${faixa}` : tipo
@@ -1064,6 +887,7 @@ export function gerarCarta(p: PerfilCarta, op: OpcoesCarta = {}): Carta {
   const anteriores = op.anteriores ?? []
   const auto = escolherTipo(p, anteriores, hoje)
   const tipo = op.tipo ?? auto.tipo
+  const minimoLinhas = 3
   if (!tipoCombina(tipo, p)) throw new Error(`tipo_nao_combina_${tipo}`)
   if (!op.ignorarCadencia) {
     const bloqueio = cadenciaBloqueia(anteriores, hoje, tipo)
@@ -1091,31 +915,16 @@ export function gerarCarta(p: PerfilCarta, op: OpcoesCarta = {}): Carta {
     const lista = novas.length ? novas : possiveis
     const v = lista[Math.floor(rnd() * lista.length)]
     const brutos = v.corpo(ctx).filter((x): x is string => typeof x === 'string' && x.trim() !== '').map((x) => x.trim())
-    const paragrafos = ajustarFechos(brutos, rnd, ctx.fatos)
     const saudacao = v.saudacao ? v.saudacao(ctx) : ctx.nome ? ctx.um(...SAUDACOES_NOME).replace('{n}', ctx.nome) : ctx.um(...SAUDACOES)
-    // P.S. em toda carta: o da versão, ou um do motor quando a versão não escreveu o seu.
-    let ps = paragrafos.find((x) => /^P\.S\.:/.test(x)) ?? null
-    const semPS = paragrafos.filter((x) => !/^P\.S\.:/.test(x))
-    // A espinha pede de 6 a 12 linhas: completa com uma frase sobre tempo ou um fecho quando faltar.
-    const linhasDe = (lista: string[]) => contarLinhas([saudacao, ...lista, ps ?? 'P.S.: x'].join('\n\n'))
-    const reforcos = [() => ctx.tempo(), () => ctx.fecho(), () => ctx.dica()]
-    for (const reforco of reforcos) {
-      if (linhasDe(semPS) >= LINHAS.minimo) break
-      const extra = reforco()
-      // O fecho acrescentado não repete a palavra forte do parágrafo anterior ("fiquei feliz" / "Fico feliz").
-      if (extra && !semPS.includes(extra) && !(FECHOS.includes(extra) && semPS.length && repetemForte(semPS[semPS.length - 1], extra))) semPS.push(extra)
-    }
-    // O P.S. não repete uma ideia que o corpo já tem: o da versão cede ao do motor quando repete.
-    const textoCorpo = [saudacao, ...semPS].join('\n\n')
-    if (!ps) ps = v.ps ? v.ps(ctx) : null
-    if (!ps || psRepeteCorpo(ps, textoCorpo)) ps = ctx.ps(textoCorpo)
+    // Nenhuma mensagem gerada recebe P.S., fecho ou preenchimento do motor.
+    const semPS = brutos.filter((x) => !/^P\.S\.:/.test(x))
     const assuntos = v.assuntos(ctx).filter((x): x is string => typeof x === 'string' && x.trim() !== '').map((x) => x.trim()).filter((a) => !problemaNoAssunto(a))
     const assunto = assuntos[Math.floor(rnd() * assuntos.length)]
-    const corpo = [saudacao, ...semPS, ps].join('\n\n')
+    const corpo = [saudacao, ...semPS].join('\n\n')
     const linhas = contarLinhas(corpo)
-    if (!assunto || problemaNoTexto(corpo) || contarLinks(corpo) > 1 || contarPS(corpo) !== 1 || linhas < LINHAS.minimo || linhas > LINHAS.maximo) continue
+    if (!assunto || problemaNoTexto(corpo) || contarLinks(corpo) > 1 || contarPS(corpo) !== 0 || linhas < minimoLinhas || linhas > LINHAS.maximo) continue
     // Duas frases seguidas com a mesma palavra forte ou um P.S. que repete o corpo: sorteia de novo.
-    if (frasesSeguidasRepetem(corpo) || psRepeteCorpo(ps, textoCorpo)) continue
+    if (frasesSeguidasRepetem(corpo)) continue
     return {
       tipo, faixa: tipo === 'ativo' || tipo === 'convite_50' ? faixa : null, modelo, versao: `${modelo}#${v.id}`, assunto, corpo,
       personalizacao: [...ctx.usados].map((c) => ROTULO_FATO[c as keyof Fatos] ?? (c === 'acerto' ? 'acerto' : c)),

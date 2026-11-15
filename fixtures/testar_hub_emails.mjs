@@ -58,6 +58,7 @@ try {
     [A, perfil('Ana')],
     [B, perfil('Bruno')],
   ])
+  let cartoes = []
   let rodada = null,
     fila = [],
     logs = [],
@@ -96,6 +97,7 @@ try {
       ),
     )
   globalThis.fetch = async (input, init = {}) => {
+    if (String(input).includes('/rpc/hub_cartoes_recusados')) return j(cartoes)
     const url = new URL(input),
       body = JSON.parse(init.body ?? '{}'),
       metodo = init.method ?? 'GET'
@@ -103,6 +105,7 @@ try {
     if (url.hostname === 'api.resend.com') {
       envios.push({ body, key: init.headers['Idempotency-Key'] })
       if (provedor === 'rede') throw new Error('conexao_interrompida')
+      if (provedor === '429') return j({ message: 'cota no teste' }, 429)
       if (provedor === '400') return j({ message: 'rejeitado no teste' }, 400)
       return j({ id: 'provedor-' + envios.length })
     }
@@ -224,7 +227,7 @@ try {
           'content-type': 'application/json',
           ...(auth === 'cron' ? { 'x-segredo': ENV.EMAIL_SEGREDO } : {}),
         },
-        body: JSON.stringify({ acao, ...extra }),
+        body: JSON.stringify({ acao, versao: 2, ...extra }),
       }),
     )
     return { status: r.status, dados: await r.json() }
@@ -305,6 +308,7 @@ try {
     'nenhum contato genérico para preencher fila',
   )
   assert.equal(regras.contaTeste('Tales Roberto', 'real@exemplo.test'), true)
+  assert.equal(regras.sugestaoPessoal(B, { ...perfil('Bruno'), respondidas: 3, dias_conta: 7, dias_parado: 2 }, new Date())?.tipo, 'comecou_parou', 'primeiros passos parados há dois dias entram no cenário específico')
   // A ficha usa as mesmas regras e não manda de novo ao repetir a mesma requisição.
   // Cenários não ocultam alternativas e o segundo lote do dia acrescenta pessoas sem repetir.
   consultasFalham = false; rodada = null; fila = []; logs = []; bloqueios.clear(); provedor = 'ok'; proximoPausado = true
@@ -333,9 +337,33 @@ try {
   ], 'fogo_apagando')
   assert.equal(alternativa.prontas[0].tipo, 'pausa', 'o cenário escolhe sua própria mensagem')
   assert.ok(!regras.CENARIOS_HUB.some(c => c.tipos.includes('assinou_sem_cronograma')))
-  await import(pathToFileURL(join(tmp, 'individual.mjs')))
   provedor = 'ok'
   consultasFalham = false
+  const enviosAnteriores = [...envios]
+  // Novo cenário: conferir o pagamento novamente; a cota do provedor pausa a rodada.
+  consultasFalham = false; rodada = null; fila = []; logs = []; envios = []; bloqueios.clear(); proximoPausado = true
+  pessoas.set(A, perfil('Ana')); pessoas.set(B, { ...perfil('Bruno'), dias_parado: 0, novidades: false })
+  cartoes = [{ id_usuario: A, referencia: 'cartao_recusado:tentativa-a' }]
+  const prepararCartao = await chamar('preparar')
+  const ajuda = prepararCartao.dados.prontas.find(m => m.id_usuario === A)
+  assert.equal(ajuda.tipo, 'cartao_recusado')
+  const legado = await chamar('preparar', { versao: 1 })
+  assert.ok(!legado.dados.opcoes.some(m => m.tipo === 'cartao_recusado'), 'cliente antigo não recebe tipo desconhecido')
+  assert.match(ajuda.corpo, /Pix/)
+  assert.match(ajuda.corpo, /captura/)
+  await chamar('iniciar', { cenario: 'cartao_recusado', itens: [{ chave: ajuda.chave }] }); await esperar()
+  pessoas.get(A).assinante = true; proximoPausado = false
+  await chamar('processar', {}, 'cron')
+  assert.equal(envios.length, 0, 'não abordar quem concluiu outro pagamento depois da prévia')
+  assert.equal(fila[0].status, 'adiado')
+  pessoas.get(A).assinante = false; rodada = null; fila = []; logs = []; provedor = '429'
+  await chamar('iniciar', { cenario: 'cartao_recusado', itens: [{ chave: ajuda.chave }] }); await esperar()
+  assert.equal(rodada.status, 'pausada', 'cota ou taxa do provedor deve pausar a rodada')
+  assert.equal(envios.length, 1)
+  await chamar('processar', {}, 'cron')
+  assert.equal(envios.length, 1, 'rodada pausada não tenta os próximos destinatários')
+  cartoes = []; provedor = 'ok'; rodada = null; fila = []; logs = []; envios = enviosAnteriores
+  await import(pathToFileURL(join(tmp, 'individual.mjs')))
   const individual = {
     id_usuario: B,
     modelo: 'opiniao',

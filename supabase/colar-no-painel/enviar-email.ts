@@ -28,3151 +28,287 @@ async function banco(caminho, init = {}) {
 
 // supabase/functions/_shared/cartas-versoes.ts
 var N = (n) => Math.round(n).toLocaleString("pt-BR");
-var Q = (n) => n >= 10 ? `${N(n)} quest\xF5es` : "os primeiros passos";
-var D = (n) => n === 1 ? "1 dia" : `${N(n)} dias`;
-var cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
-var J = (...partes) => {
-  const t = partes.filter((x) => typeof x === "string" && x.trim() !== "").join(" ").trim();
-  return t || null;
+var Q = (n) => n >= 10 ? `${N(n)} quest\xF5es` : "algumas quest\xF5es";
+var dataCurta = (iso) => iso && Number.isFinite(Date.parse(iso)) ? new Date(iso).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" }) : null;
+var nm = (c, texto, semNome = texto.charAt(0).toUpperCase() + texto.slice(1)) => c.nome ? `${c.nome}, ${texto}` : semNome;
+var ajuda = (c) => c.um("Se precisar de ajuda com o site, basta responder este e-mail.", "Pode responder por aqui se encontrar alguma dificuldade no site.", "Se tiver alguma d\xFAvida para usar esse recurso, pode me chamar por aqui.");
+var prova = (c) => {
+  const n = (c.p.provaCronograma ?? "").trim();
+  if (/^(outra(?: prova)?|outro|prova|não informad[oa])$/i.test(n)) return "a sua prova";
+  if (n) return /^(TEOT|TEPOT|TARO|ENARE)(\b|$)/i.test(n) ? `o ${n}` : `a prova de ${n}`;
+  return c.nomeProva || "a sua prova";
 };
-var nm = (c, comNome, semNome) => c.nome ? `${c.nome}, ${comNome}` : semNome;
-var temFatos = (c) => Object.values(c.fatos).some((v) => v !== void 0);
-var semanas = (d) => {
-  const s = Math.max(1, Math.round(d / 7));
-  return s === 1 ? "uma semana" : s === 2 ? "duas semanas" : s === 3 ? "tr\xEAs semanas" : s === 4 ? "um m\xEAs" : `${N(s)} semanas`;
-};
-var tempoFora = (d) => {
-  const v = Math.max(1, Math.round(Number(d) || 1));
-  if (v < 14) return v === 1 ? "um dia" : `${N(v)} dias`;
-  if (v < 60) return semanas(v);
-  return v < 120 ? "uns dois meses" : "alguns meses";
-};
-var jaFez = (c) => c.dez ? `${Q(c.r)} j\xE1 respondidas` : "os primeiros passos j\xE1 dados";
-var asSuas = (c) => c.dez ? `as suas ${Q(c.r)}` : "o que voc\xEA j\xE1 fez";
-var guardado = (c) => c.dez ? `Suas ${Q(c.r)} est\xE3o guardadas` : "O que voc\xEA j\xE1 fez est\xE1 guardado";
-var momento = (c) => {
-  const f = c.fatos;
-  if (f.cronograma && !c.usados.has("cronograma")) {
-    c.usados.add("cronograma");
-    const prova = f.cronograma.prova ? `o ${f.cronograma.prova}` : "a sua prova";
-    return c.um(
-      `Vi que ${prova} est\xE1 a ${D(f.cronograma.dias)}. Sei como esse n\xFAmero fica na cabe\xE7a, entre um plant\xE3o e outro.`,
-      `Faltam ${D(f.cronograma.dias)} para ${prova}, pelo seu cronograma, e eu estou na torcida.`
-    );
+var acesso = (c) => c.um("Seu hist\xF3rico de estudo e suas anota\xE7\xF5es continuam salvos na conta.", "As quest\xF5es respondidas e as revis\xF5es ficam guardadas no seu hist\xF3rico.", "Seu progresso permanece salvo para continuar de onde parou.");
+var sugestao = (c, rota) => rota === "erros" ? c.um("No Caderno de erros, voc\xEA pode refazer quest\xF5es e consultar a explica\xE7\xE3o de cada alternativa.", "Uma sess\xE3o no Caderno de erros permite revisar os pontos das quest\xF5es anteriores.", "Para revisar d\xFAvidas espec\xEDficas, o Caderno de erros re\xFAne as quest\xF5es e os coment\xE1rios.") : rota === "revisao" ? c.um("Na Revis\xE3o, voc\xEA encontra as quest\xF5es indicadas para retomar os temas j\xE1 estudados.", "A Revis\xE3o re\xFAne os assuntos do seu hist\xF3rico para a pr\xF3xima sess\xE3o.", "Voc\xEA pode come\xE7ar a pr\xF3xima sess\xE3o pela Revis\xE3o e consultar os coment\xE1rios das alternativas.") : c.um("Voc\xEA pode escolher um tema e resolver algumas quest\xF5es, consultando o coment\xE1rio das alternativas.", "Uma forma de organizar a pr\xF3xima sess\xE3o \xE9 escolher um tema e ler o coment\xE1rio de cada resposta.", "Na p\xE1gina de quest\xF5es, os filtros ajudam a escolher o tema e a prova da pr\xF3xima sess\xE3o.");
+var PREFERIR = [["etapa", "prova"], ["horario", "cidade"], ["servico", "flashcards"], ["resumos", "sequencia"], ["melhorArea", "areaFraca"], ["cronograma", "semana"], ["ranking", "aniversario"]];
+function estudo(tema, rota = "revisao", total = 6) {
+  return Array.from({ length: total }, (_, i) => ({
+    id: `v${i + 21}`,
+    assuntos: (c) => [nm(c, [tema, "uma sugest\xE3o para sua pr\xF3xima sess\xE3o", "seu pr\xF3ximo tema de estudo", "revis\xE3o dos temas estudados", "para organizar o pr\xF3ximo treino", "uma op\xE7\xE3o para continuar"][i % 6])],
+    corpo: (c) => [
+      c.um("Separei uma sugest\xE3o para a sua pr\xF3xima sess\xE3o de estudo.", "Voc\xEA pode continuar o estudo pelos temas do seu hist\xF3rico.", "H\xE1 uma forma de revisar os pontos das sess\xF5es anteriores."),
+      c.tipo === "ativo" && c.chance(0.4) && c.pctBom !== null ? `Seu hist\xF3rico registra ${c.pctBom}% de acerto em ${Q(c.r)}.` : null,
+      c.obs(2, ["pausa", "sumiu", "comecou_parou", "assinante_parado_7"].includes(c.tipo) ? ["maisEstudada"] : c.um(...PREFERIR)),
+      sugestao(c, rota),
+      `Para abrir: ${c.link(rota)}`,
+      ajuda(c)
+    ]
+  }));
+}
+var nunca = () => Array.from({ length: 6 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["por onde come\xE7ar", "sua primeira sess\xE3o", "para escolher um tema", "um ponto de partida", "como usar os coment\xE1rios", "as quest\xF5es por assunto"][i])],
+  corpo: (c) => [
+    c.um("Sua conta est\xE1 pronta para come\xE7ar a estudar.", "Voc\xEA j\xE1 pode escolher um assunto para sua primeira sess\xE3o.", "As quest\xF5es est\xE3o organizadas por assunto e por prova para voc\xEA come\xE7ar."),
+    sugestao(c, "treinar"),
+    c.um("Depois de responder, voc\xEA pode conferir o coment\xE1rio e a an\xE1lise das alternativas.", "Os coment\xE1rios explicam a resposta e os motivos das alternativas.", "A corre\xE7\xE3o fica dispon\xEDvel depois da resposta, com a explica\xE7\xE3o das alternativas."),
+    `Para escolher o primeiro tema: ${c.link("treinar")}`,
+    ajuda(c)
+  ]
+}));
+var convite = () => Array.from({ length: 6 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["op\xE7\xF5es para ampliar seu estudo", "sobre os planos de acesso", "recursos do plano completo", "para conhecer os planos", "assinatura do Orto Quest\xF5es", "op\xE7\xF5es de assinatura"][i])],
+  corpo: (c) => [
+    c.um("Queria apresentar as op\xE7\xF5es de assinatura do Orto Quest\xF5es.", "Voc\xEA pode conhecer os planos de acesso e os recursos inclu\xEDdos em cada um.", "A p\xE1gina de planos re\xFAne as op\xE7\xF5es para ampliar o acesso ao conte\xFAdo."),
+    c.obs(1),
+    ...c.beneficios(2, true),
+    "Os planos t\xEAm garantia de sete dias. As condi\xE7\xF5es e os recursos inclu\xEDdos est\xE3o na p\xE1gina de assinatura.",
+    `Para consultar os planos: ${c.link("assinatura")}`,
+    ajuda(c)
+  ]
+}));
+var boasVindas = [{ id: "v21", assuntos: (c) => [nm(c, "sua conta no Orto Quest\xF5es")], corpo: (c) => [
+  "Sua conta no Orto Quest\xF5es est\xE1 pronta.",
+  "Voc\xEA encontra quest\xF5es comentadas, Biblioteca de resumos e Revis\xE3o. O Cronograma permite organizar o estudo pela data da prova e pelo tempo dispon\xEDvel.",
+  `Para come\xE7ar pelas quest\xF5es: ${c.link("treinar")}`,
+  "Voc\xEA tamb\xE9m pode indicar o site aos colegas que estudam ortopedia.",
+  ajuda(c)
+] }];
+var provaVersoes = (tipo) => Array.from({ length: 6 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, (tipo === "depois_prova" ? ["sobre a sua prova", "como foi o formato da prova", "sua experi\xEAncia na prova", "conte\xFAdo da prova", "sobre os temas cobrados", "coment\xE1rios sobre a prova"] : tipo === "vespera_prova" ? ["sobre a prova de amanh\xE3", "sua revis\xE3o antes da prova", "para consultar suas anota\xE7\xF5es", "\xFAltima revis\xE3o dos temas", "sua prova est\xE1 chegando", "anota\xE7\xF5es para a prova"] : ["organizar a revis\xE3o para a prova", "seus pr\xF3ximos temas de revis\xE3o", "o plano de estudo para a prova", "sobre sua revis\xE3o", "as pr\xF3ximas sess\xF5es de estudo", "sua prepara\xE7\xE3o para a prova"])[i])],
+  corpo: (c) => tipo === "depois_prova" ? [
+    `Como foi ${prova(c)}?`,
+    c.um("Gostaria de saber quais temas apareceram e como foi o formato da prova.", "Voc\xEA pode contar quais assuntos foram cobrados e como as quest\xF5es foram apresentadas.", "Sua experi\xEAncia com o conte\xFAdo e o formato ajuda a orientar as pr\xF3ximas revis\xF5es do acervo."),
+    "Se puder compartilhar alguma observa\xE7\xE3o sobre a prova, responda por aqui."
+  ] : [
+    tipo === "vespera_prova" ? `A data informada para ${prova(c)} \xE9 amanh\xE3.` : `A prepara\xE7\xE3o para ${prova(c)} pode ser organizada pelas pr\xF3ximas sess\xF5es de revis\xE3o.`,
+    c.obs(1),
+    c.um("Uma op\xE7\xE3o \xE9 revisar as quest\xF5es j\xE1 respondidas e as anota\xE7\xF5es que voc\xEA salvou.", "Os coment\xE1rios das quest\xF5es anteriores e suas anota\xE7\xF5es podem orientar a pr\xF3xima revis\xE3o.", "Voc\xEA pode selecionar os temas que quer revisar e consultar os coment\xE1rios de cada alternativa."),
+    `Sua revis\xE3o fica aqui: ${c.link("revisao")}`,
+    ajuda(c)
+  ]
+}));
+var marco = (primeiro = false) => Array.from({ length: 6 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, [primeiro ? "suas primeiras quest\xF5es" : "seu novo marco de estudo", "progresso no seu hist\xF3rico", "um marco nas quest\xF5es", "seu hist\xF3rico est\xE1 crescendo", "as quest\xF5es j\xE1 respondidas", "seu progresso de estudo"][i])],
+  corpo: (c) => [
+    primeiro ? "Voc\xEA concluiu suas primeiras dez quest\xF5es no Orto Quest\xF5es." : `Voc\xEA chegou ao marco de ${Q(c.marco ?? 100)} respondidas. Parab\xE9ns!`,
+    c.obs(1),
+    sugestao(c, "revisao"),
+    `Para consultar seu hist\xF3rico e sua revis\xE3o: ${c.link("revisao")}`,
+    ajuda(c)
+  ]
+}));
+var opiniao = () => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["como est\xE1 sendo usar o site?", "sua opini\xE3o sobre o Orto Quest\xF5es", "o que funciona no seu estudo", "sugest\xF5es para o site", "sobre sua experi\xEAncia no site"][i])],
+  corpo: (c) => [
+    c.um("Como tem sido usar o Orto Quest\xF5es?", "Queria saber sua opini\xE3o sobre o uso do site.", "Voc\xEA pode contar como est\xE1 sendo estudar pelo Orto Quest\xF5es?"),
+    c.um("O que tem ajudado no estudo e o que poderia funcionar melhor?", "Quais recursos t\xEAm sido \xFAteis e onde voc\xEA encontrou dificuldade?", "Tem alguma melhoria que facilitaria sua pr\xF3xima sess\xE3o?"),
+    "Voc\xEA pode responder diretamente a este e-mail com suas observa\xE7\xF5es."
+  ]
+}));
+var indicar = () => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["indica\xE7\xE3o para colegas", "como indicar o Orto Quest\xF5es", "sua p\xE1gina de indica\xE7\xF5es", "compartilhar o site com colegas", "o programa de indica\xE7\xF5es"][i])],
+  corpo: (c) => [
+    c.um("Voc\xEA pode compartilhar o Orto Quest\xF5es com colegas que tamb\xE9m estudam ortopedia.", "A p\xE1gina de indica\xE7\xF5es re\xFAne o seu convite para colegas.", "O programa de indica\xE7\xF5es permite compartilhar o site com colegas de estudo."),
+    "Na p\xE1gina Indique e ganhe, voc\xEA encontra o convite e os crit\xE9rios do programa.",
+    `Para consultar: ${c.link("indicar")}`,
+    ajuda(c)
+  ]
+}));
+var cronograma = (pronto2 = false) => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, [pronto2 ? "seu cronograma est\xE1 salvo" : "organizar seu estudo", "sobre o cronograma", "suas pr\xF3ximas sess\xF5es", "organiza\xE7\xE3o dos temas", "consultar o plano de estudo"][i])],
+  corpo: (c) => [
+    pronto2 ? `Seu cronograma foi salvo${c.diasProva !== null ? `, com ${c.diasProva} dias at\xE9 ${prova(c)}` : ""}. As pr\xF3ximas sess\xF5es est\xE3o dispon\xEDveis na sua conta.` : "O Cronograma permite organizar o estudo pela data da prova e pelo tempo dispon\xEDvel.",
+    c.obs(1),
+    c.um("Voc\xEA pode consultar a lista de cada dia e ajustar sua disponibilidade.", "A p\xE1gina mostra as sess\xF5es previstas e permite atualizar o tempo dispon\xEDvel.", "Os temas e as revis\xF5es aparecem no planejamento das pr\xF3ximas sess\xF5es."),
+    `Para abrir o Cronograma: ${c.link("cronograma")}`,
+    ajuda(c)
+  ]
+}));
+var pagamento = () => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["pagamento aprovado", "sua assinatura foi confirmada", "seu acesso est\xE1 ativo", "confirma\xE7\xE3o do seu plano", "seu per\xEDodo de acesso"][i])],
+  corpo: (c) => [
+    c.um("Seu pagamento foi aprovado. Obrigado pela assinatura.", "A assinatura foi confirmada e seu acesso est\xE1 ativo. Obrigado pela confian\xE7a.", "O pagamento da sua assinatura foi aprovado."),
+    c.pagamento?.plano ? `O plano confirmado \xE9 o ${c.pagamento.plano}.` : null,
+    c.pagamento?.fimEm ? `O per\xEDodo de acesso vai at\xE9 ${dataCurta(c.pagamento.fimEm)}.` : null,
+    c.pagamento?.meio === "pix" ? "O per\xEDodo foi pago por Pix, sem renova\xE7\xE3o autom\xE1tica." : "Voc\xEA pode consultar o per\xEDodo e gerenciar a renova\xE7\xE3o em Minha assinatura.",
+    `Para consultar os detalhes do seu plano: ${c.link("conta")}`,
+    ajuda(c)
+  ]
+}));
+var encerramento = () => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["sobre a altera\xE7\xE3o na assinatura", "detalhes da sua assinatura", "confirma\xE7\xE3o da sua solicita\xE7\xE3o", "atualiza\xE7\xE3o do seu plano", "informa\xE7\xF5es da sua assinatura"][i])],
+  corpo: (c) => [
+    c.encerramento?.reembolso ? "Sua solicita\xE7\xE3o de reembolso foi registrada." : `O cancelamento da renova\xE7\xE3o foi registrado${dataCurta(c.encerramento?.fimEm) ? `, com acesso at\xE9 ${dataCurta(c.encerramento?.fimEm)}` : ""}.`,
+    acesso(c),
+    `Voc\xEA pode consultar os detalhes em Minha assinatura: ${c.link("conta")}`,
+    "Se houver alguma d\xFAvida sobre a solicita\xE7\xE3o, responda a este e-mail."
+  ]
+}));
+var relatorio = () => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["seu resumo de estudo", "o estudo neste per\xEDodo", "seu hist\xF3rico no per\xEDodo", "suas sess\xF5es de estudo", "resumo das suas sess\xF5es"][i])],
+  corpo: (c) => {
+    const d = c.relatorio, n = d?.respostas ?? 0, total = (d?.certas ?? 0) + (d?.erradas ?? 0), pct = total ? Math.round((d?.certas ?? 0) / total * 100) : null;
+    const citavel = n >= 30 && pct !== null && pct >= 50;
+    const delta = citavel && d?.acertoAnterior !== null && d?.acertoAnterior !== void 0 ? pct - d.acertoAnterior : null;
+    return [
+      d?.rotulo ? `Este \xE9 seu resumo de estudo ${d.rotulo}.` : "Seu resumo de estudo est\xE1 dispon\xEDvel.",
+      n >= 10 ? `No per\xEDodo, voc\xEA respondeu ${Q(n)}.` : n > 0 ? "Seu hist\xF3rico registra novas respostas neste per\xEDodo." : "O hist\xF3rico e as anota\xE7\xF5es das sess\xF5es anteriores continuam dispon\xEDveis.",
+      citavel ? `O acerto no per\xEDodo foi de ${pct}%.${delta !== null && delta > 0 ? ` O resultado subiu ${delta} pontos em rela\xE7\xE3o ao per\xEDodo anterior.` : ""}` : null,
+      c.um("Voc\xEA pode consultar os temas estudados e as quest\xF5es indicadas para revis\xE3o.", "Os detalhes das sess\xF5es ajudam a escolher os pr\xF3ximos temas para revisar.", "O hist\xF3rico re\xFAne suas respostas e as revis\xF5es dos temas j\xE1 estudados."),
+      `Para consultar: ${c.link("desempenho")}`,
+      ajuda(c)
+    ];
   }
-  const etapa = c.fato("etapa");
-  if (etapa && c.chance(0.7)) return etapa;
-  const horario = c.fato("horario");
-  if (horario) return horario;
-  if (etapa) return etapa;
-  return c.um(
-    "Imagino que a rotina esteja puxada por a\xED: hospital de dia, estudo quando sobra.",
-    "Sei como \xE9 estudar para prova de t\xEDtulo com o dia j\xE1 cheio. O cansa\xE7o conta, e cada quest\xE3o feita nele vale mais.",
-    "Espero que a semana esteja sendo leve, ou pelo menos poss\xEDvel. Resid\xEAncia raramente deixa ser mais do que isso.",
-    "Espero que este e-mail chegue num intervalo tranquilo do seu dia."
-  );
-};
-var diasProva = (c) => c.diasProva !== null && c.diasProva >= 1 ? D(c.diasProva) : null;
-var assuntosAtivo = (c, extras) => [
-  nm(c, "lembrei de voc\xEA hoje", "Lembrei de voc\xEA hoje"),
-  nm(c, "uma coisa que vi no seu estudo", "Uma coisa que vi no seu estudo"),
-  c.dez && nm(c, `sobre as suas ${Q(c.r)}`, `Sobre as suas ${Q(c.r)}`),
-  c.fatos.melhorArea && nm(c, `${c.area(c.fatos.melhorArea.slug).em} e voc\xEA`, `Parab\xE9ns por ${c.area(c.fatos.melhorArea.slug).em}`),
-  c.fatos.ranking && nm(c, `${c.fatos.ranking}\xBA no ranking`, `${c.fatos.ranking}\xBA no ranking`),
-  c.fatos.horario === "noite" && nm(c, "estudando \xE0 noite", "Estudando \xE0 noite"),
-  diasProva(c) && nm(c, `faltam ${diasProva(c)} e eu estou na torcida`, `Faltam ${diasProva(c)} e eu estou na torcida`),
-  ...extras
-];
-var ativo_0_10 = [
-  {
-    id: "v1",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "uma ideia para o seu estudo", "Uma ideia para o seu estudo")]),
-    corpo: (c) => [
-      momento(c),
-      `Que bom ver voc\xEA estudando por aqui: ${jaFez(c)}. Quest\xE3o de prova de t\xEDtulo \xE9 dif\xEDcil para todo mundo, e cada uma que voc\xEA faz j\xE1 ajuda.`,
-      "Uma ideia que ajuda muito nessa fase: escolher um tema s\xF3 e fazer cinco quest\xF5es com calma, lendo o coment\xE1rio de cada alternativa. Dez minutos. Parece pouco, mas \xE9 assim que a mat\xE9ria come\xE7a a ficar.",
-      c.obs(1),
-      `Se quiser experimentar hoje, o tema fica \xE0 sua escolha aqui: ${c.link("treinar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "como est\xE1 sendo o seu estudo?", "Como est\xE1 sendo o seu estudo?"), nm(c, "posso te ajudar em algo?", "Posso te ajudar em algo?")],
-    corpo: (c) => [
-      momento(c),
-      "Queria saber, com carinho, como est\xE1 sendo o seu estudo por aqui.",
-      "Todo mundo que passou na prova come\xE7ou achando as quest\xF5es dif\xEDceis e o tempo curto. \xC0s vezes um ajuste pequeno no jeito de estudar faz muita diferen\xE7a, e eu adoraria ajudar a achar o seu.",
-      c.tempo(),
-      "Se quiser, me responde contando como costuma fazer as quest\xF5es e quanto tempo tem por dia. Vou gostar muito de saber."
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "um m\xE9todo para dez minutos", "Um m\xE9todo para dez minutos"), nm(c, "cinco quest\xF5es com calma", "Cinco quest\xF5es com calma")],
-    corpo: (c) => [
-      momento(c),
-      c.obs(1) ?? `Vi que voc\xEA j\xE1 passou por ${c.dez ? Q(c.r) : "algumas quest\xF5es"} no Orto Quest\xF5es, e quis te escrever.`,
-      "Queria te passar um jeito de estudar que cabe em dez minutos: escolha um tema s\xF3, fa\xE7a cinco quest\xF5es lendo o enunciado inteiro e, depois de cada uma, leia o coment\xE1rio de todas as alternativas. No dia seguinte, abra a Revis\xE3o antes de qualquer quest\xE3o nova.",
-      `\xC9 pouco de cada vez, e \xE9 exatamente por isso que funciona na rotina de hospital. A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "todo mundo come\xE7a assim", "Todo mundo come\xE7a assim"), nm(c, "sobre o come\xE7o", "Sobre o come\xE7o")],
-    corpo: (c) => [
-      momento(c),
-      "Queria te contar uma coisa: todo mundo que passou na prova de t\xEDtulo come\xE7ou achando as quest\xF5es imposs\xEDveis. A banca gosta de detalhe de classifica\xE7\xE3o, de exce\xE7\xE3o, de nome pr\xF3prio. Faz parte do caminho, e fica mais leve com o tempo.",
-      `E fiquei feliz de ver ${jaFez(c)}. Cada uma delas conta.`,
-      c.dica(),
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "o site est\xE1 funcionando para voc\xEA?", "O site est\xE1 funcionando para voc\xEA?")],
-    corpo: (c) => [
-      momento(c),
-      "Escrevo porque gostaria de saber como o site est\xE1 funcionando para voc\xEA. Se alguma coisa estiver confusa, \xE9 s\xF3 me contar.",
-      `Uma sugest\xE3o que costuma deixar tudo mais leve no come\xE7o: ir pelos conceitos b\xE1sicos. S\xE3o quest\xF5es mais diretas, ajudam a pegar o jeito da banca e cabem em qualquer intervalo. D\xE1 para escolher o tema aqui: ${c.link("treinar")}`,
-      c.tempo(),
-      "E se preferir me contar o que est\xE1 pegando, \xE9 s\xF3 responder. Vou gostar de ajudar."
-    ]
-  },
-  {
-    id: "v6",
-    requer: temFatos,
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "menos quest\xF5es, mais coment\xE1rio", "Menos quest\xF5es, mais coment\xE1rio")]),
-    corpo: (c) => [
-      momento(c),
-      c.obs(2),
-      "Queria te dizer, com carinho, que todo come\xE7o \xE9 assim. Cada quest\xE3o que voc\xEA faz agora, mesmo a que te pega, est\xE1 construindo a base que vai te levar at\xE9 a prova.",
-      "Uma ideia para a pr\xF3xima sess\xE3o, se fizer sentido: fazer menos e ler mais. Dez quest\xF5es com o coment\xE1rio lido com calma rendem mais do que trinta corridas, e cabem num intervalo.",
-      c.fecho()
-    ]
+}));
+var aniversario = (conta = false) => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, (conta ? ["anivers\xE1rio da sua conta", "seu tempo no Orto Quest\xF5es", "um ano de conta", "sua conta faz anivers\xE1rio", "anivers\xE1rio no Orto Quest\xF5es"] : ["feliz anivers\xE1rio", "um \xF3timo anivers\xE1rio", "para o seu anivers\xE1rio", "parab\xE9ns pelo anivers\xE1rio", "felicidades no seu anivers\xE1rio"])[i])],
+  corpo: (c) => conta ? [
+    `Sua conta no Orto Quest\xF5es completa ${(c.campanha.anos ?? 1) === 2 ? "dois" : c.campanha.anos ?? 1} ${(c.campanha.anos ?? 1) === 1 ? "ano" : "anos"}.`,
+    c.um("Obrigado por fazer parte do Orto Quest\xF5es.", "Obrigado por estudar com o Orto Quest\xF5es.", "Obrigado por compartilhar esse per\xEDodo com o Orto Quest\xF5es."),
+    acesso(c)
+  ] : [
+    c.um("Feliz anivers\xE1rio!", "Parab\xE9ns pelo seu anivers\xE1rio!", "Desejo um \xF3timo anivers\xE1rio para voc\xEA!"),
+    c.um("Desejo sa\xFAde e bons momentos neste novo ano de vida.", "Que este novo ano traga sa\xFAde e boas realiza\xE7\xF5es.", "Espero que voc\xEA tenha um \xF3timo dia e um novo ano de boas realiza\xE7\xF5es.")
+  ]
+}));
+var indicacao = () => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["sua indica\xE7\xE3o foi confirmada", "atualiza\xE7\xE3o da sua indica\xE7\xE3o", "resultado da sua indica\xE7\xE3o", "sobre seu convite", "indica\xE7\xE3o no Orto Quest\xF5es"][i])],
+  corpo: (c) => [
+    "A pessoa que voc\xEA indicou chegou a 20 quest\xF5es respondidas. Sua indica\xE7\xE3o foi confirmada.",
+    c.campanha.cortesia ? "Os detalhes dos dias de cortesia est\xE3o na p\xE1gina de indica\xE7\xF5es." : "Voc\xEA pode consultar o resultado e os crit\xE9rios do programa na p\xE1gina de indica\xE7\xF5es.",
+    `Para consultar: ${c.link("indicar")}`,
+    ajuda(c)
+  ]
+}));
+var resumo = () => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, ["resumo novo para seu estudo", "uma atualiza\xE7\xE3o na Biblioteca", "novo conte\xFAdo na Biblioteca", "um resumo do seu tema", "resumo dispon\xEDvel para leitura"][i])],
+  corpo: (c) => [
+    c.campanha.resumo?.titulo ? `O resumo "${c.campanha.resumo.titulo}" est\xE1 dispon\xEDvel na Biblioteca.` : "H\xE1 um resumo novo relacionado aos temas do seu estudo na Biblioteca.",
+    c.um("O texto re\xFAne os pontos do tema e as quest\xF5es vinculadas para resolver durante a leitura.", "Voc\xEA pode ler por se\xE7\xE3o e resolver as quest\xF5es relacionadas ao tema.", "O resumo pode ser consultado junto das quest\xF5es do tema."),
+    `Para abrir: ${c.link("resumo")}`,
+    ajuda(c)
+  ]
+}));
+var simulado = (resultado = false) => Array.from({ length: 5 }, (_, i) => ({
+  id: `v${i + 21}`,
+  assuntos: (c) => [nm(c, (resultado ? ["resultado do Simulado Nacional", "seu resultado est\xE1 dispon\xEDvel", "corre\xE7\xE3o do seu simulado", "os coment\xE1rios do simulado", "consulta do seu resultado"] : ["sobre o Simulado Nacional", "sua inscri\xE7\xE3o no simulado", "acesso ao seu simulado", "data do Simulado Nacional", "informa\xE7\xF5es do seu simulado"])[i])],
+  corpo: (c) => {
+    const s = c.campanha.simulado, l = c.campanha.lembrete;
+    return [
+      resultado ? `O resultado${s?.titulo ? ` de "${s.titulo}"` : " do Simulado Nacional"} est\xE1 dispon\xEDvel.` : `Voc\xEA se inscreveu no Simulado Nacional${l?.titulo ? ` "${l.titulo}"` : ""}.`,
+      resultado && s?.total && s?.acertos !== null && s?.acertos !== void 0 && s.acertos >= 10 && s.acertos * 2 >= s.total ? `Seu resultado foi de ${s.acertos} em ${s.total} respostas.` : null,
+      !resultado && l?.tipo_lembrete === "abre_amanha" ? "O simulado abre amanh\xE3." : !resultado && l?.tipo_lembrete === "abriu_hoje" ? "O simulado j\xE1 est\xE1 aberto." : !resultado && l?.abre_em ? `A abertura est\xE1 prevista para ${dataCurta(l.abre_em)}${l.fecha_em ? `, com encerramento em ${dataCurta(l.fecha_em)}` : ""}.` : null,
+      !resultado && l?.total && l.total >= 10 ? `A edi\xE7\xE3o tem ${l.total} quest\xF5es${l.duracao_min ? `, com dura\xE7\xE3o de ${{ 120: "duas horas", 240: "quatro horas" }[l.duracao_min] ?? `${l.duracao_min} minutos`}` : ""}.` : null,
+      !resultado && l?.precisa_plano ? "Esta edi\xE7\xE3o exige assinatura ativa para participar." : null,
+      c.um("A p\xE1gina do simulado re\xFAne as informa\xE7\xF5es da edi\xE7\xE3o.", "Voc\xEA pode consultar as informa\xE7\xF5es da edi\xE7\xE3o na p\xE1gina do simulado.", "As informa\xE7\xF5es e o acesso \xE0 edi\xE7\xE3o est\xE3o na p\xE1gina do simulado."),
+      `Para consultar: ${c.link("simulado")}`,
+      ajuda(c)
+    ];
   }
-];
-var ativo_10_20 = [
-  {
-    id: "v1",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "errar aqui \xE9 o melhor jeito", "Errar aqui \xE9 o melhor jeito de acertar l\xE1")]),
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA j\xE1 tem ${c.dez ? Q(c.r) : "os primeiros passos dados"} no Orto Quest\xF5es, e quis passar para conversar um pouco.`,
-      "Cada quest\xE3o que te pega aqui \xE9 um presente: mostra exatamente o que vale estudar antes da prova. Errar aqui \xE9 o melhor jeito de acertar l\xE1, e custa s\xF3 uns minutos.",
-      `Uma sugest\xE3o, se fizer sentido para voc\xEA: abrir o Caderno de erros e refazer algumas com calma. Quando uma quest\xE3o que te pegou vira acerto, ela vale mais do que dez novas. Fica aqui: ${c.link("erros")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "quest\xE3o de prova \xE9 dif\xEDcil mesmo", "Quest\xE3o de prova \xE9 dif\xEDcil mesmo")]),
-    corpo: (c) => [
-      momento(c),
-      `Quest\xE3o de prova de ortopedia \xE9 dif\xEDcil, \xE0s vezes muito. E voc\xEA est\xE1 encarando com coragem: ${jaFez(c)}.`,
-      c.obs(1),
-      "O que mais ajuda nessa fase \xE9 voltar nas quest\xF5es que te pegaram at\xE9 elas virarem certeza. \xC9 um ajuste pequeno, n\xE3o pede mais tempo, s\xF3 muda a ordem: primeiro a Revis\xE3o, depois o novo.",
-      `Se der hoje, que tal s\xF3 a Revis\xE3o do dia? \xC9 r\xE1pida e \xE9 onde o estudo mais rende: ${c.link("revisao")}`
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "um tema por semana", "Um tema por semana"), nm(c, "uma estrat\xE9gia simples", "Uma estrat\xE9gia simples")],
-    corpo: (c) => [
-      momento(c),
-      "Fiquei feliz de ver que voc\xEA continua estudando por aqui, mesmo com a rotina que imagino.",
-      "Pensei numa estrat\xE9gia que talvez combine com voc\xEA: um tema por semana. Em vez de pular de \xE1rea em \xE1rea, ficar alguns dias num s\xF3. A sensa\xE7\xE3o de progresso aparece bem mais r\xE1pido, e a cabe\xE7a cansada agradece por n\xE3o ter que decidir todo dia.",
-      c.dica(),
-      `D\xE1 para escolher o tema aqui: ${c.link("treinar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "seguindo em frente", "Seguindo em frente")],
-    corpo: (c) => [
-      momento(c),
-      `Que bom ver que voc\xEA ${c.dez ? `j\xE1 respondeu ${Q(c.r)}` : "j\xE1 come\xE7ou"} e segue em frente, mesmo nos dias puxados. \xC9 isso que mais conta l\xE1 na frente.`,
-      "Os coment\xE1rios de cada alternativa foram escritos pensando justamente nessa fase. Uma ideia que ajuda: ler por que cada alternativa est\xE1 certa ou errada, n\xE3o s\xF3 a resposta. \xC9 ali que mora a pegadinha da banca, e \xE9 ali que o estudo come\xE7a a render.",
-      c.obs(1),
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "topa um desafio pequeno?", "Topa um desafio pequeno?"), nm(c, "sete dias, dez quest\xF5es", "Sete dias, dez quest\xF5es")],
-    corpo: (c) => [
-      momento(c),
-      c.obs(1),
-      "Queria te propor um desafio pequeno, se voc\xEA topar: nos pr\xF3ximos sete dias, dez quest\xF5es por dia, sempre lendo o coment\xE1rio inteiro. Dez minutos, no intervalo que der.",
-      "N\xE3o \xE9 para ver quantas acerta. \xC9 para sentir como o estudo fica mais leve quando vira rotina em vez de maratona.",
-      "Depois me conta como foi? Vou adorar saber."
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "estou torcendo por voc\xEA", "Estou torcendo por voc\xEA"), nm(c, "um recado curto", "Um recado curto")],
-    corpo: (c) => [
-      momento(c),
-      "Passando rapidinho s\xF3 para dizer que estou torcendo por voc\xEA.",
-      "Toda base come\xE7a assim, um pouco de cada vez. E voc\xEA est\xE1 construindo a sua nos intervalos que a rotina deixa, o que vale o dobro.",
-      "Um truque que ajuda: antes de olhar as alternativas, tente dizer a resposta de cabe\xE7a. Treina o racioc\xEDnio de prova e n\xE3o gasta um minuto a mais.",
-      c.obs(1)
-    ]
-  }
-];
-var ativo_20_30 = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "uma t\xE9cnica para as alternativas", "Uma t\xE9cnica para as alternativas"), nm(c, "descarte antes de escolher", "Descarte antes de escolher")],
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA j\xE1 est\xE1 com ${jaFez(c)}, e quis te mandar uma t\xE9cnica que costuma ajudar muito nessa fase.`,
-      "Voc\xEA j\xE1 reconhece os temas, e agora o que mais rende \xE9 a leitura das alternativas. Antes de escolher a certa, descarte mentalmente as que voc\xEA sabe que n\xE3o s\xE3o. A quest\xE3o fica bem mais leve, e isso vale ouro na prova, quando o tempo aperta.",
-      "Junto com a Revis\xE3o das quest\xF5es que te pegaram, isso costuma fazer o estudo render mais r\xE1pido do que parece.",
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "uma fase, n\xE3o um veredito", "Uma fase, n\xE3o um veredito")]),
-    corpo: (c) => [
-      momento(c),
-      c.obs(1) ?? "Que bom ver que voc\xEA continua aparecendo por aqui.",
-      "Queria te dizer uma coisa com carinho: o come\xE7o do estudo para prova de t\xEDtulo \xE9 sempre assim, e \xE9 uma fase, n\xE3o um veredito. Todo mundo que passou viveu isso.",
-      `Uma sugest\xE3o, se fizer sentido: escolher o tema que mais te desafia e ficar s\xF3 nele por uns dias. Concentrar ajuda a enxergar os padr\xF5es da banca, e poupa o tempo de decidir o que estudar. D\xE1 para escolher aqui: ${c.link("treinar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "o coment\xE1rio \xE9 o melhor professor", "O coment\xE1rio \xE9 o melhor professor")],
-    corpo: (c) => [
-      momento(c),
-      "Uma coisa que talvez ningu\xE9m tenha te contado: o coment\xE1rio da quest\xE3o ensina mais justamente quando ela te pega.",
-      `${c.dez ? `Voc\xEA j\xE1 tem ${Q(c.r)} respondidas, o que \xE9 muito material.` : "Voc\xEA j\xE1 come\xE7ou, e cada quest\xE3o \xE9 material."} Lendo com calma o coment\xE1rio de cada alternativa nas pr\xF3ximas, o estudo come\xE7a a responder. N\xE3o \xE9 m\xE1gica, \xE9 repeti\xE7\xE3o, e voc\xEA j\xE1 mostrou que tem const\xE2ncia para isso.`,
-      c.dica(),
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "seu estudo at\xE9 aqui", "Seu estudo at\xE9 aqui")],
-    corpo: (c) => [
-      momento(c),
-      `Passando s\xF3 para reconhecer o seu esfor\xE7o: ${jaFez(c)}. Isso \xE9 muita dedica\xE7\xE3o para quem tem o dia tomado.`,
-      "Uma ideia para as pr\xF3ximas semanas: manter a Revis\xE3o em dia. Ela traz de volta, no momento certo, o que te pegou, e \xE9 ali que a mat\xE9ria fica. Dez minutos por dia bastam.",
-      `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "agora \xE9 s\xF3 calibrar", "Agora \xE9 s\xF3 calibrar"), nm(c, "um ajuste pequeno", "Um ajuste pequeno")],
-    corpo: (c) => [
-      momento(c),
-      c.fatos.semana ? "Voc\xEA est\xE1 estudando com const\xE2ncia, e essa \xE9 a parte mais dif\xEDcil de toda prepara\xE7\xE3o. Parab\xE9ns por isso." : "Voc\xEA j\xE1 criou o h\xE1bito de abrir o site, e essa \xE9 a parte mais dif\xEDcil de toda prepara\xE7\xE3o. Parab\xE9ns por isso.",
-      "Agora \xE9 s\xF3 calibrar: um pouco menos de quest\xE3o nova e um pouco mais de revis\xE3o. Mesmo tempo, outra ordem. \xC9 assim que o estudo come\xE7a a sobrar em vez de faltar.",
-      c.obs(1),
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "me conta uma coisa?", "Me conta uma coisa?")],
-    corpo: (c) => [
-      momento(c),
-      "Me conta uma coisa: quando uma quest\xE3o te pega, voc\xEA costuma ter tempo de ler o coment\xE1rio at\xE9 o fim?",
-      "Pergunto porque \xE9 ali que costuma estar o maior ganho. O coment\xE1rio explica cada alternativa, e a pegadinha da banca quase sempre est\xE1 numa delas. Ler at\xE9 o fim leva um minuto a mais e economiza uma quest\xE3o na prova.",
-      c.obs(1),
-      "Se quiser testar nas pr\xF3ximas dez, me diz depois se fez diferen\xE7a? Fico curioso para saber."
-    ]
-  }
-];
-var ativo_30_40 = [
-  {
-    id: "v1",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "a base est\xE1 aparecendo", "A base est\xE1 aparecendo")]),
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA j\xE1 passou de ${jaFez(c)}, e queria te dar uma boa not\xEDcia: a base est\xE1 aparecendo.`,
-      "Nessa fase, a gente j\xE1 vai bem no que estudou, e o que escapa \xE9 o que ainda n\xE3o viu. \xC9 um \xF3timo sinal: quer dizer que o estudo est\xE1 funcionando, e que o tempo que voc\xEA arranca da rotina est\xE1 valendo.",
-      `O pr\xF3ximo passo, se fizer sentido, \xE9 transformar as quest\xF5es que te pegaram em acertos. O Caderno de erros guarda todas elas, e vale refazer com calma: ${c.link("erros")}`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    requer: temFatos,
-    assuntos: (c) => assuntosAtivo(c, []),
-    corpo: (c) => [
-      momento(c),
-      c.obs(2),
-      "Seu estudo est\xE1 a caminho de um patamar novo, e daqui para a frente cada revis\xE3o conta muito mais do que cada quest\xE3o nova.",
-      c.dica(),
-      c.tempo()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "voc\xEA est\xE1 na virada", "Voc\xEA est\xE1 na virada")],
-    corpo: (c) => [
-      momento(c),
-      "Passando para dizer que o seu ritmo est\xE1 \xF3timo.",
-      "Uma compara\xE7\xE3o de que eu gosto: os primeiros acertos v\xEAm do que voc\xEA j\xE1 sabia; os pr\xF3ximos v\xEAm do que voc\xEA aprende com as quest\xF5es que te pegam. Voc\xEA est\xE1 bem na virada.",
-      `Que tal come\xE7ar pela Revis\xE3o do dia, antes das quest\xF5es novas? S\xE3o uns dez minutos, e \xE9 onde o estudo mais rende agora: ${c.link("revisao")}`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "uma dica curta", "Uma dica curta"), nm(c, "um tema s\xF3 nesta semana", "Um tema s\xF3 nesta semana")],
-    corpo: (c) => [
-      momento(c),
-      "Uma dica curta, de presente: escolher a \xE1rea que mais te desafia e fazer dez quest\xF5es dela por semana, at\xE9 o fim do m\xEAs.",
-      c.fato("areaFraca") ?? "Concentrar num tema por vez deixa os padr\xF5es da banca bem mais claros, e poupa o tempo de ficar decidindo o que estudar cada dia.",
-      c.obs(1),
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "um empurr\xE3ozinho", "Um empurr\xE3ozinho"), nm(c, "a revis\xE3o que vale ouro", "A revis\xE3o que vale ouro")],
-    corpo: (c) => [
-      momento(c),
-      "Passando para te mandar um empurr\xE3ozinho carinhoso.",
-      `Com ${asSuas(c)}, voc\xEA j\xE1 tem material para a revis\xE3o que mais rende. Que tal, amanh\xE3, abrir a Revis\xE3o do dia antes das quest\xF5es novas? Leva poucos minutos e protege o que voc\xEA j\xE1 conquistou.`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "rende mais do que parece", "O seu estudo rende mais do que parece")],
-    corpo: (c) => [
-      momento(c),
-      "Escrevo porque d\xE1 para ver que voc\xEA est\xE1 construindo a sua base, um pouquinho de cada vez.",
-      "Os n\xFAmeros costumam mostrar o que a gente aprendeu com algumas semanas de atraso. O que voc\xEA est\xE1 estudando agora vai aparecer l\xE1 na frente. Siga no seu ritmo, mesmo que seja pouco por dia.",
-      c.obs(1),
-      c.tempo(),
-      c.fecho()
-    ]
-  }
-];
-var ativo_40_60 = [
-  {
-    id: "v1",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "a fase em que mais d\xE1 para crescer", "A fase em que mais d\xE1 para crescer")]),
-    corpo: (c) => [
-      momento(c),
-      `Que bom ver ${jaFez(c)}, com uma base que j\xE1 aparece.`,
-      "Voc\xEA est\xE1 na fase em que mais d\xE1 para crescer. J\xE1 tem base para aproveitar bem os coment\xE1rios, e cada quest\xE3o revisada agora vira ponto na prova. \xC9 a fase mais barata em tempo: pouco esfor\xE7o, muito retorno.",
-      c.dica(),
-      `A Revis\xE3o do dia fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    requer: temFatos,
-    assuntos: (c) => assuntosAtivo(c, []),
-    corpo: (c) => [
-      momento(c),
-      c.obs(2),
-      c.pctBom !== null ? `Seu acerto est\xE1 em ${c.pctBom}%, j\xE1 passando da metade. Daqui, o que mais rende \xE9 dar uma aten\xE7\xE3o especial, por alguns dias, ao tema que mais te desafia.` : "Voc\xEA est\xE1 bem no meio do caminho, que \xE9 onde mais d\xE1 para crescer. Daqui, o que mais rende \xE9 dar uma aten\xE7\xE3o especial, por alguns dias, ao tema que mais te desafia.",
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "uma dica que pode virar o jogo", "Uma dica que pode virar o jogo")],
-    corpo: (c) => [
-      momento(c),
-      "Uma dica que pode virar o jogo para voc\xEA: refazer as quest\xF5es que te pegaram antes de partir para as novas. Parece contraintuitivo, mas \xE9 o caminho mais curto para subir, e n\xE3o pede um minuto a mais do seu dia.",
-      `O Caderno de erros guarda todas: ${c.link("erros")}`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "parab\xE9ns pela const\xE2ncia", "Parab\xE9ns pela const\xE2ncia")],
-    corpo: (c) => [
-      momento(c),
-      `Parab\xE9ns pela const\xE2ncia. ${cap(jaFez(c))}, e d\xE1 para ver que voc\xEA aparece mesmo nas semanas dif\xEDceis.`,
-      c.pctBom !== null ? `Com ${c.pctBom}% de acerto, voc\xEA j\xE1 est\xE1 do lado de cima da metade. Agora \xE9 o tema que mais te desafia que vai puxar o resto para cima.` : "Agora \xE9 a fase em que cada revis\xE3o vale mais do que uma quest\xE3o nova, e isso \xE9 uma boa not\xEDcia para quem tem pouco tempo.",
-      c.obs(1),
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "uma pergunta sobre o seu estudo", "Uma pergunta sobre o seu estudo")],
-    corpo: (c) => [
-      momento(c),
-      "Uma pergunta: voc\xEA costuma estudar com a Revis\xE3o aberta antes das quest\xF5es novas, ou vai direto para o novo?",
-      "Pergunto porque, nessa fase, a Revis\xE3o \xE9 o atalho. Ela traz de volta, no momento certo, as quest\xF5es que te pegaram, e cada uma que vira acerto \xE9 um ponto garantido na prova. Dez minutos por dia bastam.",
-      c.obs(1),
-      `Se quiser experimentar amanh\xE3: ${c.link("revisao")}`
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "uma ideia que ajuda", "Uma ideia que ajuda")],
-    corpo: (c) => [
-      momento(c),
-      "Uma ideia que costuma ajudar muito nessa fase, se fizer sentido para voc\xEA.",
-      "Escolher um hor\xE1rio fixo, mesmo que curto, e proteger ele como um compromisso marcado. Trinta minutos num hor\xE1rio certo valem mais que duas horas espalhadas, principalmente para quem est\xE1 no meio do caminho.",
-      c.obs(1),
-      c.dica(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v7",
-    requer: (c) => !!c.fatos.areaFraca,
-    assuntos: (c) => [nm(c, "um tema para as pr\xF3ximas semanas", "Um tema para as pr\xF3ximas semanas")],
-    corpo: (c) => [
-      momento(c),
-      "Queria te mandar uma ideia carinhosa para as pr\xF3ximas semanas.",
-      c.fato("areaFraca"),
-      "N\xE3o \xE9 para estudar mais horas. \xC9 para escolher melhor onde gastar as que voc\xEA tem. Dez quest\xF5es por semana nesse tema, com o coment\xE1rio lido, mudam o quadro em um m\xEAs.",
-      `O tema fica \xE0 sua escolha aqui: ${c.link("treinar")}`,
-      c.fecho()
-    ]
-  }
-];
-var ativo_60_70 = [
-  {
-    id: "v1",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "voc\xEA est\xE1 numa fase boa", "Voc\xEA est\xE1 numa fase boa")]),
-    corpo: (c) => [
-      momento(c),
-      J(`Que alegria ver ${jaFez(c)}`, c.pctBom !== null ? `e ${c.pctBom}% de acerto. Isso \xE9 fruto de muito esfor\xE7o.` : "e tanta const\xE2ncia. Isso \xE9 fruto de muito esfor\xE7o."),
-      c.obs(1),
-      "Voc\xEA est\xE1 numa fase boa, em que o estudo j\xE1 responde. O que mais rende agora \xE9 transformar os acertos com d\xFAvida em certeza: ler o coment\xE1rio mesmo quando acerta, e deixar a Revis\xE3o cuidar do resto.",
-      `A Revis\xE3o fica aqui, para quando der: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    requer: temFatos,
-    assuntos: (c) => assuntosAtivo(c, []),
-    corpo: (c) => [
-      momento(c),
-      c.obs(2),
-      c.pctBom !== null ? `Com ${c.pctBom}% de acerto, voc\xEA j\xE1 est\xE1 acima da metade com folga. Daqui, cada ponto vem de detalhe: o "exceto", a classifica\xE7\xE3o menos comum, a alternativa que quase est\xE1 certa.` : 'Daqui, cada ponto vem de detalhe: o "exceto", a classifica\xE7\xE3o menos comum, a alternativa que quase est\xE1 certa.',
-      c.dica(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "uma ideia para o tema mais dif\xEDcil", "Uma ideia para o tema mais dif\xEDcil")],
-    corpo: (c) => [
-      momento(c),
-      `Fiquei feliz de ver ${asSuas(c)}.`,
-      c.fato("areaFraca") ?? "Uma ideia para as pr\xF3ximas semanas: escolher o tema em que voc\xEA menos confia e dar dez quest\xF5es por semana a ele. \xC9 onde cada sess\xE3o vai render mais agora, e cabe num intervalo.",
-      c.tempo(),
-      `O tema fica \xE0 sua escolha aqui: ${c.link("treinar")}`
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "proteja o que voc\xEA j\xE1 conquistou", "Proteja o que voc\xEA j\xE1 conquistou")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(jaFez(c))}${c.pctBom !== null ? `, com ${c.pctBom}% de acerto` : ""}. Isso \xE9 estudo de verdade, feito nos intervalos que a rotina deixa.`,
-      "Uma lembran\xE7a gentil para essa fase: mat\xE9ria bem sabida tamb\xE9m esfria se ficar parada. A Revis\xE3o em dia protege o que voc\xEA conquistou, e custa menos tempo do que aprender de novo.",
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "um pedido pequeno", "Um pedido pequeno")],
-    corpo: (c) => [
-      momento(c),
-      `Voc\xEA j\xE1 tem ${jaFez(c)}, ent\xE3o conhece o site melhor do que muita gente. Por isso tenho um pedido pequeno.`,
-      "Se algum coment\xE1rio te deixou com d\xFAvida, ou se alguma quest\xE3o parece ter algo estranho, me conta. Tem um bot\xE3o de relatar em cada quest\xE3o, e cada relato \xE9 lido com aten\xE7\xE3o. \xC9 assim que o banco melhora para voc\xEA e para quem vem depois.",
-      c.obs(1),
-      "E obrigado por estudar por aqui. Fico feliz de ver."
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "o que muda daqui para a frente", "O que muda daqui para a frente")],
-    corpo: (c) => [
-      momento(c),
-      "Queria te contar, com carinho, o que muda daqui para a frente.",
-      "At\xE9 aqui, o estudo rende por volume: quanto mais quest\xE3o, mais tema visto. A partir de agora, rende por precis\xE3o: a quest\xE3o que te pega pela segunda vez vale mais do que dez novas. \xC9 uma mudan\xE7a boa para quem tem pouco tempo, porque pede menos horas e mais aten\xE7\xE3o.",
-      c.obs(1),
-      `O Caderno de erros \xE9 o melhor mapa dessa fase: ${c.link("erros")}`,
-      c.fecho()
-    ]
-  }
-];
-var ativo_70_80 = [
-  {
-    id: "v1",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "que estudo bonito", "Que estudo bonito")]),
-    corpo: (c) => [
-      momento(c),
-      `Que alegria ver ${jaFez(c)}${c.pctBom !== null ? ` com ${c.pctBom}% de acerto` : ""}.`,
-      c.obs(1),
-      "Nesse n\xEDvel, o que mais rende \xE9 ler o coment\xE1rio mesmo quando acerta. \xC0s vezes ele traz um detalhe que a banca ainda vai cobrar, e voc\xEA j\xE1 estar\xE1 com ele guardado.",
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    requer: temFatos,
-    assuntos: (c) => assuntosAtivo(c, []),
-    corpo: (c) => [
-      momento(c),
-      c.obs(2),
-      "Voc\xEA est\xE1 num patamar muito bom. O que separa uma boa nota de uma \xF3tima, daqui para a frente, \xE9 a revis\xE3o do que ainda escapa, e n\xE3o mais horas de estudo.",
-      c.dica(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "como voc\xEA estuda?", "Como voc\xEA estuda?")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(jaFez(c))}${c.pctBom !== null ? `, com ${c.pctBom}% de acerto` : ""}. Fiquei curioso: como voc\xEA estuda?`,
-      "Pergunto porque o jeito como voc\xEA encaixa o estudo na rotina pode inspirar muita gente que est\xE1 come\xE7ando.",
-      c.obs(1),
-      "Se tiver dois minutos, me responde contando. Vou adorar saber."
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "o detalhe que ainda escapa", "O detalhe que ainda escapa")],
-    corpo: (c) => [
-      momento(c),
-      `Com ${asSuas(c)}, voc\xEA j\xE1 viu boa parte do que a banca gosta de perguntar. Agora o jogo \xE9 outro.`,
-      'Os pontos que faltam est\xE3o nos detalhes: o "exceto" no enunciado, a classifica\xE7\xE3o menos comum, a alternativa que quase est\xE1 certa. Uma ideia: misturar provas e temas na mesma sess\xE3o, para reconhecer o assunto sem pista, como no dia da prova.',
-      c.obs(1),
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "um pedido pequeno, com carinho", "Um pedido pequeno, com carinho")],
-    corpo: (c) => [
-      momento(c),
-      `Voc\xEA est\xE1 entre as pessoas que mais aproveitam o site${c.pctBom !== null ? `: ${jaFez(c)}, ${c.pctBom}% de acerto` : `: ${jaFez(c)}`}. Por isso tenho um pedido.`,
-      "Se encontrar alguma quest\xE3o com algo estranho, ou um coment\xE1rio que poderia ser melhor, me avisa pelo bot\xE3o de relatar. Cada relato ajuda a melhorar o banco de quest\xF5es.",
-      c.obs(1),
-      "Obrigado, de verdade, por estudar por aqui."
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "proteger o que j\xE1 est\xE1 forte", "Proteger o que j\xE1 est\xE1 forte")],
-    corpo: (c) => [
-      momento(c),
-      c.fato("melhorArea") ?? `${cap(jaFez(c))}. D\xE1 para ver que voc\xEA j\xE1 tem temas em que est\xE1 muito forte.`,
-      "Uma ideia: manter esses temas aquecidos s\xF3 com a Revis\xE3o, que leva poucos minutos, e usar o tempo novo nos outros. Assim voc\xEA chega na prova sem perder nada do que j\xE1 conquistou.",
-      c.obs(1),
-      `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  }
-];
-var ativo_80_90 = [
-  {
-    id: "v1",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "parab\xE9ns, de verdade", "Parab\xE9ns, de verdade")]),
-    corpo: (c) => [
-      momento(c),
-      J(`${cap(jaFez(c))}`, c.pctBom !== null ? `com ${c.pctBom}% de acerto. Parab\xE9ns, de verdade.` : "e um estudo que d\xE1 gosto de ver. Parab\xE9ns, de verdade."),
-      c.obs(2),
-      "Nesse n\xEDvel, o que ainda escapa \xE9 pouco e espec\xEDfico. As quest\xF5es que te pegam uma segunda vez s\xE3o as mais valiosas da sua lista: vale dar um carinho especial a elas, e s\xF3 a elas.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    requer: temFatos,
-    assuntos: (c) => assuntosAtivo(c, []),
-    corpo: (c) => [
-      momento(c),
-      c.obs(2),
-      "Chegar aqui \xE9 lindo de ver. Agora \xE9 cuidar para a reta final n\xE3o virar ansiedade: menos conte\xFAdo novo, mais revis\xE3o e, principalmente, sono.",
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "me ensina uma coisa?", "Me ensina uma coisa?")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(jaFez(c))}${c.pctBom !== null ? ` e ${c.pctBom}% de acerto` : ""}. Queria te pedir uma coisa diferente: me ensina como voc\xEA estuda?`,
-      "O seu jeito de estudar pode inspirar muita gente que est\xE1 come\xE7ando. Hor\xE1rio, ordem, o que faz quando uma quest\xE3o te pega. O que voc\xEA quiser contar.",
-      c.obs(1),
-      "\xC9 s\xF3 responder este e-mail. Vou guardar com carinho."
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "uma ideia para quem j\xE1 est\xE1 forte", "Uma ideia para quem j\xE1 est\xE1 forte")],
-    corpo: (c) => [
-      momento(c),
-      `Com ${asSuas(c)}, voc\xEA j\xE1 est\xE1 no n\xEDvel em que a prova se decide no detalhe.`,
-      "Uma ideia para essa fase: misturar provas e temas na mesma sess\xE3o, como no dia da prova, e cronometrar. A banca n\xE3o avisa o assunto, e treinar isso agora \xE9 o que faz a nota \xF3tima virar seguran\xE7a.",
-      c.obs(1),
-      c.dica(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "quem voc\xEA conhece que est\xE1 nessa?", "Quem voc\xEA conhece que est\xE1 nessa?")],
-    corpo: (c) => [
-      momento(c),
-      `Voc\xEA est\xE1 entre as pessoas que mais rendem por aqui${c.pctBom !== null ? `: ${c.pctBom}% em ${Q(c.r)}` : `: ${jaFez(c)}`}. Por isso quis te pedir uma ajuda.`,
-      "Quem voc\xEA conhece que est\xE1 estudando para a mesma prova e ainda n\xE3o conhece o site? Estudar junto deixa tudo mais leve, e o ranking fica mais animado.",
-      `Pelo seu link pessoal, quando a pessoa cria a conta e responde 20 quest\xF5es, voc\xEAs dois ganham 7 dias do plano completo: ${c.link("indicar")}`,
-      "Obrigado por estudar por aqui."
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "cuida de voc\xEA tamb\xE9m", "Cuida de voc\xEA tamb\xE9m")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(jaFez(c))}${c.pctBom !== null ? `, ${c.pctBom}% de acerto` : ""}. Voc\xEA j\xE1 fez a parte dif\xEDcil.`,
-      "Agora o que mais protege a sua nota \xE9 dormir bem. A mem\xF3ria se consolida no sono, e quem chega na prova com a cabe\xE7a descansada acerta o detalhe que o cansa\xE7o esconde.",
-      c.obs(1),
-      c.fecho()
-    ]
-  }
-];
-var ativo_90_100 = [
-  {
-    id: "v1",
-    assuntos: (c) => assuntosAtivo(c, [nm(c, "isso \xE9 raro", "Isso \xE9 raro")]),
-    corpo: (c) => [
-      momento(c),
-      J(`${cap(jaFez(c))}`, c.pctBom !== null ? `com ${c.pctBom}% de acerto. Isso \xE9 raro, e eu quis registrar.` : "com um acerto raro de ver. Eu quis registrar."),
-      c.obs(2),
-      "Nesse n\xEDvel, a \xFAnica coisa que eu sugeriria \xE9 proteger o que est\xE1 forte com a Revis\xE3o, que leva poucos minutos, e descansar. O resto voc\xEA j\xE1 faz muito bem.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    requer: temFatos,
-    assuntos: (c) => assuntosAtivo(c, []),
-    corpo: (c) => [
-      momento(c),
-      c.obs(2),
-      "N\xE3o tenho nada a sugerir, s\xF3 a agradecer pelo exemplo. Gente assim deixa o ranking e a turma inteira melhores.",
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "posso te pedir uma coisa?", "Posso te pedir uma coisa?")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(jaFez(c))}${c.pctBom !== null ? `, ${c.pctBom}% de acerto` : ""}. Pouqu\xEDssimas pessoas chegam aqui, e eu queria te pedir uma coisa.`,
-      "Se encontrar qualquer quest\xE3o com algo estranho, ou um coment\xE1rio que voc\xEA faria melhor, me conta pelo bot\xE3o de relatar.",
-      c.obs(1),
-      "E obrigado por estudar por aqui. \xC9 uma honra."
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "como voc\xEA estuda?", "Como voc\xEA estuda?")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(jaFez(c))}${c.pctBom !== null ? ` e ${c.pctBom}% de acerto` : ""}. Fiquei curioso de verdade: como voc\xEA estuda?`,
-      "Hor\xE1rio, ordem, o que faz quando uma quest\xE3o te pega. O seu jeito pode ajudar muita gente que est\xE1 come\xE7ando.",
-      c.obs(1),
-      "\xC9 s\xF3 responder. Vou ler com aten\xE7\xE3o e guardar."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "quem voc\xEA conhece que est\xE1 nessa?", "Quem voc\xEA conhece que est\xE1 nessa?")],
-    corpo: (c) => [
-      momento(c),
-      `Com ${asSuas(c)}${c.pctBom !== null ? ` e ${c.pctBom}% de acerto` : ""}, voc\xEA conhece o site melhor do que quase todo mundo. Por isso o pedido.`,
-      "Quem voc\xEA conhece que est\xE1 estudando para a mesma prova? O Orto Quest\xF5es cresce no boca a boca, e estudar junto deixa o ranking mais animado.",
-      `Pelo seu link, quando a pessoa cria a conta e responde 20 quest\xF5es, voc\xEAs dois ganham 7 dias do plano completo: ${c.link("indicar")}`,
-      "Obrigado, de cora\xE7\xE3o."
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "descansa tamb\xE9m", "Descansa tamb\xE9m")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(jaFez(c))}${c.pctBom !== null ? `, ${c.pctBom}% de acerto` : ""}. Voc\xEA j\xE1 fez mais do que a prova pede.`,
-      "Ent\xE3o o conselho de amigo \xE9 outro: descansa tamb\xE9m. Dormir bem nas semanas que faltam vale mais do que qualquer quest\xE3o nova, e a mem\xF3ria agradece.",
-      c.obs(1),
-      c.fecho()
-    ]
-  }
-];
-var quandoConta = (c) => c.quando(Math.max(0, Math.round(Number(c.p.diasConta) || 0)));
-var nunca_comecou = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "os primeiros dez minutos", "Os primeiros dez minutos"), nm(c, "um jeito leve de come\xE7ar", "Um jeito leve de come\xE7ar")],
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA criou a sua conta no Orto Quest\xF5es ${quandoConta(c)}, e fiquei feliz. Imagino que a rotina tenha apertado logo depois, porque \xE9 assim que ela funciona.`,
-      "Uma sugest\xE3o carinhosa para os primeiros dez minutos: cinco quest\xF5es de um tema que voc\xEA gosta, lendo o coment\xE1rio inteiro, inclusive das alternativas erradas. \xC9 ali que mora a pegadinha da banca, e \xE9 ali que o estudo come\xE7a a render.",
-      `D\xE1 para fazer isso no intervalo, pelo celular, sem planejar nada: ${c.link("treinar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "que bom ter voc\xEA por aqui", "Que bom ter voc\xEA por aqui"), nm(c, "um oi com carinho", "Um oi com carinho")],
-    corpo: (c) => [
-      momento(c),
-      "Passando para dar um oi e dizer que \xE9 uma alegria ter voc\xEA por aqui.",
-      "Por aqui, a ideia \xE9 deixar o estudo leve: abrir, fazer cinco quest\xF5es no intervalo e j\xE1 saber o que ler, com a explica\xE7\xE3o de todas as alternativas.",
-      "Quando tiver dez minutos livres, que tal cinco quest\xF5es de um tema de que voc\xEA goste? \xC9 o bastante para pegar o jeito. O resto o site organiza.",
-      "E se travar em qualquer coisa, me responde aqui. Vou gostar de ajudar."
-    ]
-  },
-  {
-    id: "v3",
-    requer: (c) => !!(c.fatos.prova || c.fatos.etapa || c.fatos.cronograma),
-    assuntos: (c) => [nm(c, "por onde come\xE7ar", "Por onde come\xE7ar"), diasProva(c) && nm(c, `faltam ${diasProva(c)}`, `Faltam ${diasProva(c)} para ${c.nomeProva}`)],
-    corpo: (c) => [
-      momento(c),
-      J(c.fato("prova"), c.fato("etapa"), c.fato("cronograma")),
-      "O jeito mais gostoso de come\xE7ar \xE9 pelo tema de que voc\xEA mais gosta. Come\xE7ar pelo que d\xE1 prazer ajuda a criar o h\xE1bito; o resto vem depois, e a Revis\xE3o cuida de trazer de volta o que te pegou.",
-      c.tempo(),
-      `O tema fica \xE0 sua escolha aqui: ${c.link("treinar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "s\xF3 tr\xEAs quest\xF5es", "S\xF3 tr\xEAs quest\xF5es"), nm(c, "sua conta est\xE1 pronta", "Sua conta est\xE1 pronta")],
-    corpo: (c) => [
-      momento(c),
-      "Sua conta est\xE1 pronta, esperando por voc\xEA, e eu sei que o dif\xEDcil n\xE3o \xE9 a conta: \xE9 o tempo.",
-      "Uma ideia: no pr\xF3ximo intervalo do plant\xE3o, abrir o site no celular e responder tr\xEAs quest\xF5es. S\xF3 tr\xEAs, para sentir como \xE9. Cada uma tem a explica\xE7\xE3o de todas as alternativas, ent\xE3o tr\xEAs j\xE1 ensinam bastante.",
-      "Se gostar, o resto vem sozinho: a Revis\xE3o aprende com o que te pega e traz de volta na hora certa, e o Desempenho mostra onde voc\xEA est\xE1 crescendo.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "o coment\xE1rio de cada alternativa", "O coment\xE1rio de cada alternativa"), nm(c, "sobre as quest\xF5es daqui", "Sobre as quest\xF5es daqui")],
-    corpo: (c) => [
-      momento(c),
-      "Uma curiosidade sobre o site: cada quest\xE3o tem a explica\xE7\xE3o de todas as alternativas, n\xE3o s\xF3 da certa. \xC9 ali que mais se aprende.",
-      "Isso muda o jeito de estudar: uma quest\xE3o bem lida vale por quatro, e cabe em dois minutos. Para quem tem o dia tomado, \xE9 a diferen\xE7a entre estudar de verdade e adiar para sempre.",
-      `Que tal ver como funciona com uma quest\xE3o s\xF3? ${c.link("treinar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v6",
-    requer: (c) => (c.p.diasConta ?? 0) > 3,
-    assuntos: (c) => [nm(c, "sem pressa", "Sem pressa"), nm(c, "quando a rotina der folga", "Quando a rotina der folga")],
-    corpo: (c) => [
-      "Imagino que a rotina esteja puxada desde que voc\xEA criou a conta. Plant\xE3o, aula, vida: \xE9 assim para quase todo mundo que estuda para prova de t\xEDtulo.",
-      "Sem pressa nenhuma. Quando der, um come\xE7o pequeno j\xE1 basta: um tema, cinco quest\xF5es, sem se preocupar com nada. O site guarda tudo, e a Revis\xE3o cuida do resto.",
-      c.obs(1, ["prova", "etapa"]),
-      "Uma coisa vale para quase todo mundo: o estudo que funciona \xE9 o que cabe na rotina real, n\xE3o na rotina ideal. Dez minutos de verdade valem mais que duas horas imagin\xE1rias.",
-      c.fecho()
-    ]
-  }
-];
-var boas_vindas = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "que bom come\xE7o", "Que bom come\xE7o"), nm(c, "tr\xEAs coisas para os primeiros dias", "Tr\xEAs coisas para os primeiros dias")],
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA chegou ao Orto Quest\xF5es h\xE1 pouco e ${c.dez ? `j\xE1 respondeu ${Q(c.r)}` : "j\xE1 deu os primeiros passos"}. Que bom come\xE7o.`,
-      "Tr\xEAs coisas que ajudam nos primeiros dias, de presente: ler o coment\xE1rio mesmo quando acertar, deixar a Revis\xE3o trazer de volta as quest\xF5es que te pegaram e n\xE3o se preocupar com n\xFAmeros agora.",
-      "E uma quarta, de amigo: cinco quest\xF5es no intervalo j\xE1 contam. N\xE3o precisa esperar uma noite livre para o estudo valer.",
-      "Qualquer d\xFAvida, \xE9 s\xF3 responder este e-mail. Vou gostar de ajudar."
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "que bom ter voc\xEA por aqui", "Que bom ter voc\xEA por aqui")],
-    corpo: (c) => [
-      "Que bom ter voc\xEA por aqui. \xC9 uma alegria ver gente nova chegando.",
-      J(momento(c), c.obs(1, ["prova", "etapa", "cronograma"])),
-      `${c.dez ? `As suas primeiras ${Q(c.r)}` : "As suas primeiras quest\xF5es"} j\xE1 est\xE3o salvas, e as que te pegaram v\xE3o voltar na Revis\xE3o no momento certo. Voc\xEA s\xF3 precisa sentar e fazer; o resto o site decide.`,
-      `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "uma ideia para os primeiros dias", "Uma ideia para os primeiros dias")],
-    corpo: (c) => [
-      momento(c),
-      "Uma ideia carinhosa para os primeiros dias, se servir: pouco e todo dia rende mais do que muito de vez em quando.",
-      `Voc\xEA j\xE1 come\xE7ou${c.dez ? `, com ${Q(c.r)}` : ""}. Se conseguir manter umas dez por dia, no hor\xE1rio que sobrar, em um m\xEAs o h\xE1bito est\xE1 criado e o seu estudo come\xE7a a contar uma hist\xF3ria bonita.`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "que alegria a sua chegada", "Que alegria a sua chegada")],
-    corpo: (c) => [
-      "Escrevo para dizer que \xE9 uma alegria ter mais algu\xE9m estudando ortopedia com tanta vontade por aqui.",
-      J(momento(c), c.fato("prova"), c.fato("etapa")),
-      "Por aqui d\xE1 para estudar mesmo com pouco tempo: cada quest\xE3o explica todas as alternativas, e o que te pegou volta na Revis\xE3o. N\xE3o precisa planejar nada nos primeiros dias; s\xF3 aparecer.",
-      "Se encontrar qualquer coisa estranha numa quest\xE3o ou tiver uma ideia, me conta. O site melhora muito com isso.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "o melhor do site", "O melhor do site"), nm(c, "uma dica para a primeira semana", "Uma dica para a primeira semana")],
-    corpo: (c) => [
-      momento(c),
-      `${c.dez ? `${cap(Q(c.r))} em poucos dias.` : "Come\xE7ou em poucos dias."} Que bom come\xE7o.`,
-      "Uma dica para a primeira semana: quando uma quest\xE3o te pegar, ler por que cada alternativa est\xE1 certa ou errada. \xC9 o que o site tem de melhor, e \xE9 o que faz uma quest\xE3o valer por quatro.",
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v6",
-    requer: temFatos,
-    assuntos: (c) => [nm(c, "que bom come\xE7o", "Que bom come\xE7o")],
-    corpo: (c) => [
-      J("Que bom come\xE7o por aqui.", momento(c)),
-      c.obs(2, ["horario", "prova", "etapa", "cronograma"]),
-      `${c.dez ? `${cap(Q(c.r))} em poucos dias j\xE1 mostram` : "Os primeiros passos em poucos dias j\xE1 mostram"} muita vontade. O pr\xF3ximo passo \xE9 deixar a Revis\xE3o trabalhar por voc\xEA: ela traz de volta, no momento certo, as quest\xF5es que te pegaram.`,
-      c.fecho()
-    ]
-  }
-];
-var comecando = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "o come\xE7o \xE9 a parte mais dif\xEDcil", "O come\xE7o \xE9 a parte mais dif\xEDcil"), c.dez && nm(c, `suas primeiras ${Q(c.r)}`, `Suas primeiras ${Q(c.r)}`)],
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA ${c.dez ? `j\xE1 respondeu ${Q(c.r)}` : "j\xE1 deu os primeiros passos"}. O come\xE7o \xE9 a parte mais dif\xEDcil, e voc\xEA est\xE1 atravessando com vontade.`,
-      "O que mais ajuda agora \xE9 const\xE2ncia: um pouco todo dia, mesmo nos dias corridos. Cinco no \xF4nibus, cinco antes de dormir. O resto vem quase sem perceber.",
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "o seu come\xE7o", "O seu come\xE7o")],
-    corpo: (c) => [
-      c.obs(1, ["prova", "etapa", "horario", "cronograma"]) ?? momento(c),
-      `Voc\xEA ${c.dez ? `j\xE1 tem ${Q(c.r)} respondidas` : "j\xE1 come\xE7ou"}. Quando chegar \xE0s trinta, o site j\xE1 consegue te mostrar os temas em que voc\xEA mais brilha.`,
-      c.dica(),
-      c.tempo(),
-      `Para seguir: ${c.link("treinar")}`
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "cinco por dia", "Cinco por dia")],
-    corpo: (c) => [
-      momento(c),
-      "Uma ideia simples, se combinar com voc\xEA: cinco quest\xF5es por dia, no mesmo hor\xE1rio.",
-      `Parece pouco, mas em um m\xEAs s\xE3o mais de cem. E com ${asSuas(c)}, o caminho j\xE1 est\xE1 aberto.`,
-      "O segredo n\xE3o \xE9 o n\xFAmero, \xE9 o hor\xE1rio fixo: a cabe\xE7a para de negociar se vai estudar e s\xF3 vai.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "como est\xE1 sendo?", "Como est\xE1 sendo?")],
-    corpo: (c) => [
-      momento(c),
-      `Voc\xEA ${c.dez ? `j\xE1 fez ${Q(c.r)}` : "j\xE1 come\xE7ou"} por aqui, e eu queria saber: como est\xE1 sendo?`,
-      "Os coment\xE1rios est\xE3o ajudando? Alguma coisa ficou confusa no site? O tempo est\xE1 dando? Pode responder do jeito que quiser, mesmo que seja uma linha. Vou gostar de saber.",
-      c.tempo()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "a Revis\xE3o vai trabalhar por voc\xEA", "A Revis\xE3o vai trabalhar por voc\xEA")],
-    corpo: (c) => [
-      momento(c),
-      "Uma coisa de que talvez ningu\xE9m tenha te falado: as quest\xF5es que te pegam voltam sozinhas na Revis\xE3o, no momento certo para fixar. N\xE3o precisa anotar nada nem lembrar de nada.",
-      `Vale abrir de vez em quando, antes das quest\xF5es novas. Leva poucos minutos e \xE9 onde o estudo mais rende: ${c.link("revisao")}`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v6",
-    requer: temFatos,
-    assuntos: (c) => [nm(c, "um recado sobre o seu come\xE7o", "Um recado sobre o seu come\xE7o")],
-    corpo: (c) => [
-      momento(c),
-      c.obs(2, ["horario", "prova", "etapa", "maisEstudada", "cronograma"]),
-      `E vi que voc\xEA ${c.dez ? `j\xE1 est\xE1 com ${Q(c.r)}` : "j\xE1 deu os primeiros passos"}. Quando passar das trinta, d\xE1 para enxergar com mais clareza os temas em que voc\xEA mais brilha.`,
-      `At\xE9 l\xE1, o melhor \xE9 seguir no seu ritmo, nos intervalos que der: ${c.link("treinar")}`
-    ]
-  }
-];
-var comecou_parou = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "tudo o que voc\xEA fez continua salvo", "Tudo o que voc\xEA fez continua salvo"), nm(c, "sobre o seu come\xE7o", "Sobre o seu come\xE7o")],
-    corpo: (c) => [
-      momento(c),
-      `Lembrei de voc\xEA com carinho: o seu come\xE7o no Orto Quest\xF5es${c.dez ? `, com ${Q(c.r)},` : ""} foi muito bonito. Sei como a rotina aperta logo depois, e acontece com todo mundo: o dif\xEDcil \xE9 transformar o come\xE7o em h\xE1bito.`,
-      "O que mais funciona \xE9 pouco e todo dia. Tr\xEAs quest\xF5es no \xF4nibus, duas antes de dormir, e quando voc\xEA v\xEA, j\xE1 passou de cem. Tudo o que voc\xEA fez continua salvo, e as que te pegaram voltam na Revis\xE3o no momento certo.",
-      `Que tal fazer as pr\xF3ximas hoje, se der? ${c.link("treinar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "posso ajudar em alguma coisa?", "Posso ajudar em alguma coisa?")],
-    corpo: (c) => [
-      momento(c),
-      `Voc\xEA come\xE7ou${c.dez ? `, com ${Q(c.r)},` : ""} e depois imagino que a rotina tenha apertado. Fiquei pensando se alguma coisa no site ficou confusa, ou se foi s\xF3 a vida.`,
-      "Se foi o site, me conta respondendo este e-mail, que eu ajudo. Se foi a vida, tudo bem tamb\xE9m: o site fica aqui, do jeito que voc\xEA deixou, sem nenhuma pressa.",
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "recome\xE7ar \xE9 mais f\xE1cil do que parece", "Recome\xE7ar \xE9 mais f\xE1cil do que parece")],
-    corpo: (c) => [
-      `Faz ${tempoFora(c.p.diasParado)} desde a sua \xFAltima quest\xE3o, e lembrei de voc\xEA.`,
-      momento(c),
-      `Recome\xE7ar \xE9 mais f\xE1cil do que parece: abrir a Revis\xE3o, fazer as que est\xE3o esperando e pronto. Em dez minutos voc\xEA est\xE1 de volta, sem precisar decidir nada: ${c.link("revisao")}`,
-      c.obs(1, ["prova", "etapa", "cronograma"]),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "o come\xE7o \xE9 sempre assim", "O come\xE7o \xE9 sempre assim")],
-    corpo: (c) => [
-      momento(c),
-      "O come\xE7o \xE9 sempre assim: alguns dias de empolga\xE7\xE3o, depois a vida aperta. Acontece com todo mundo, e mais de uma vez.",
-      `${guardado(c)}. Quando der, que tal voltar com cinco, de um tema de que voc\xEA goste? N\xE3o precisa recuperar nada, s\xF3 recome\xE7ar pequeno.`,
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "uma ideia para voltar com leveza", "Uma ideia para voltar com leveza")],
-    corpo: (c) => [
-      momento(c),
-      "Uma ideia para voltar com leveza: no hor\xE1rio em que voc\xEA costuma estar no celular, trocar cinco minutos de rede social por tr\xEAs quest\xF5es.",
-      `Parece bobo, mas \xE9 assim que o h\xE1bito pega. ${guardado(c)}, esperando a pr\xF3xima, e cada quest\xE3o explica todas as alternativas, ent\xE3o tr\xEAs j\xE1 ensinam.`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "o site fica aqui por voc\xEA", "O site fica aqui por voc\xEA")],
-    corpo: (c) => [
-      `Faz ${tempoFora(c.p.diasParado)} desde a sua \xFAltima quest\xE3o, e escrevo s\xF3 para dizer que lembrei de voc\xEA.`,
-      momento(c),
-      `Se alguma coisa no site n\xE3o funcionou bem para voc\xEA, me conta? Vou gostar de ajudar. E se foi s\xF3 a rotina, ${asSuas(c)} est\xE1 esperando, sem pressa.`,
-      "Dez minutos no intervalo j\xE1 contam. N\xE3o precisa esperar um dia livre, porque na resid\xEAncia ele quase nunca chega.",
-      c.fecho()
-    ]
-  }
-];
-var pausa = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "lembrei de voc\xEA", "Lembrei de voc\xEA"), nm(c, "uma sess\xE3o curta, se der", "Uma sess\xE3o curta, se der")],
-    corpo: (c) => {
-      const a = c.areaRecente();
-      return [
-        `Faz ${tempoFora(c.p.diasParado)} desde a sua \xFAltima sess\xE3o, e lembrei de voc\xEA. A rotina deve ter apertado, e est\xE1 tudo bem.`,
-        a ? `Voc\xEA estava em ${a.em}, e a Revis\xE3o j\xE1 separou as quest\xF5es desse tema que pedem uma segunda olhada. Est\xE1 tudo guardado, do jeito que voc\xEA deixou.` : "A Revis\xE3o j\xE1 separou as quest\xF5es que pedem uma segunda olhada. Est\xE1 tudo guardado, do jeito que voc\xEA deixou.",
-        "Uma sess\xE3o curta costuma valer mais do que uma maratona no fim de semana. Dez quest\xF5es j\xE1 mant\xEAm o h\xE1bito vivo, e cabem num intervalo.",
-        `Fica aqui o atalho, se quiser: ${c.link("revisao")}`,
-        c.fecho()
-      ];
-    }
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "uma sess\xE3o curta hoje?", "Uma sess\xE3o curta hoje?")],
-    corpo: (c) => {
-      const a = c.areaRecente();
-      return [
-        momento(c),
-        `S\xF3 um oi r\xE1pido: faz alguns dias desde a sua \xFAltima sess\xE3o, e senti falta de voc\xEA por aqui.${a ? ` Voc\xEA estava em ${a.em}. ${a.sabor[a.sabor.length - 1]}` : ""}`,
-        `Que tal dez minutos hoje, se a rotina deixar? ${guardado(c)}, e a Revis\xE3o j\xE1 separou por onde recome\xE7ar: ${c.link("revisao")}`,
-        c.tempo()
-      ];
-    }
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "a Revis\xE3o est\xE1 pronta", "A Revis\xE3o est\xE1 pronta")],
-    corpo: (c) => {
-      const a = c.areaRecente();
-      return [
-        `Faz ${tempoFora(c.p.diasParado)} desde a sua \xFAltima sess\xE3o${a ? `, quando voc\xEA estava em ${a.em}` : ""}.`,
-        momento(c),
-        "Enquanto voc\xEA estava fora, a Revis\xE3o separou as quest\xF5es que pedem uma segunda olhada, para voltar no momento certo. \xC9 o jeito mais leve de retomar: nada para decidir, s\xF3 abrir e fazer.",
-        `Fica aqui: ${c.link("revisao")}`,
-        c.fecho()
-      ];
-    }
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "dez quest\xF5es hoje?", "Dez quest\xF5es hoje?")],
-    corpo: (c) => {
-      const a = c.areaRecente();
-      return [
-        `Faz ${tempoFora(c.p.diasParado)} desde a sua \xFAltima quest\xE3o, e passei para te mandar um empurr\xE3ozinho gentil.`,
-        a ? `Voc\xEA estava em ${a.em}. ${a.sabor[a.sabor.length - 1]} Vale voltar por ali, que o tema ainda est\xE1 quente na mem\xF3ria.` : "O tema em que voc\xEA estava ainda est\xE1 quente na mem\xF3ria, e vale voltar por ali.",
-        `Dez quest\xF5es j\xE1 bastam para retomar o ritmo, e a Revis\xE3o j\xE1 separou as que mais valem: ${c.link("revisao")}`,
-        c.fecho()
-      ];
-    }
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "est\xE1 tudo guardado", "Est\xE1 tudo guardado")],
-    corpo: (c) => {
-      const a = c.areaRecente();
-      return [
-        momento(c),
-        `Alguns dias sem aparecer acontecem com todo mundo que estuda no meio da resid\xEAncia. ${guardado(c)}${a ? `, inclusive o que voc\xEA vinha fazendo em ${a.em}` : ""}, do jeito que voc\xEA deixou.`,
-        "Para voltar sem peso: n\xE3o tente recuperar o tempo. Abra a Revis\xE3o, fa\xE7a dez, e pronto. \xC9 assim que o embalo volta.",
-        `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-        c.fecho()
-      ];
-    }
-  }
-];
-var sumiu = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "lembrei de voc\xEA hoje", "Lembrei de voc\xEA hoje"), nm(c, "senti sua falta por aqui", "Senti sua falta por aqui")],
-    corpo: (c) => [
-      `Lembrei de voc\xEA hoje. Faz ${tempoFora(c.p.diasParado)} que a gente n\xE3o se v\xEA por aqui, e a primeira coisa que pensei foi: a rotina deve ter apertado. Acontece com todo mundo, e est\xE1 tudo bem.`,
-      c.obs(1, ["melhorArea", "maisEstudada", "ranking"]) ?? `Uma coisa que vale lembrar: ${asSuas(c)} est\xE1 guardado, do jeito que voc\xEA deixou. Nada disso se perdeu.`,
-      "Uma ideia para voltar sem peso: n\xE3o tente recuperar o tempo. Abra a Revis\xE3o, que j\xE1 separou as quest\xF5es que pedem uma segunda olhada, e fa\xE7a dez. Dez minutos, no intervalo que der. \xC9 assim que o embalo volta.",
-      `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "seu progresso est\xE1 guardado", "Seu progresso est\xE1 guardado")],
-    corpo: (c) => [
-      `Faz ${tempoFora(c.p.diasParado)} que n\xE3o te vejo por aqui, e passei s\xF3 para dizer que o seu progresso est\xE1 todo guardado.`,
-      momento(c),
-      c.pctBom !== null ? `${cap(Q(c.r))}, ${c.pctBom}% de acerto e um Caderno de erros esperando por voc\xEA. Nada disso se perde, e nada disso precisa ser refeito.` : `${cap(asSuas(c))} e um Caderno de erros esperando por voc\xEA. Nada disso se perde, e nada disso precisa ser refeito.`,
-      "Quando a rotina der uma folga, uma sess\xE3o curta j\xE1 retoma o embalo. N\xE3o precisa ser uma noite inteira; dez minutos bastam para o h\xE1bito lembrar de voc\xEA.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "plant\xE3o, cansa\xE7o, vida", "Plant\xE3o, cansa\xE7o, vida")],
-    corpo: (c) => [
-      "Plant\xE3o, cansa\xE7o, vida: acontece com todo mundo, e est\xE1 tudo bem. Parar e voltar faz parte de qualquer prepara\xE7\xE3o longa.",
-      c.obs(1, ["prova", "melhorArea", "etapa", "cronograma"]),
-      `Que tal recome\xE7ar pequeno? Dez quest\xF5es hoje, dez amanh\xE3, no intervalo que der. O h\xE1bito volta mais r\xE1pido do que parece: ${c.link("treinar")}`,
-      c.tempo(),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    requer: (c) => !!c.fatos.melhorArea || !!c.fatos.maisEstudada,
-    assuntos: (c) => [nm(c, "lembrei de voc\xEA", "Lembrei de voc\xEA"), c.fatos.melhorArea && nm(c, `${c.area(c.fatos.melhorArea.slug).em} e voc\xEA`, `Sobre ${c.area(c.fatos.melhorArea.slug).em}`)],
-    corpo: (c) => [
-      `Lembrei de voc\xEA com carinho. Faz ${tempoFora(c.p.diasParado)} que a gente n\xE3o se v\xEA por aqui, e est\xE1 tudo bem.`,
-      c.obs(1, ["melhorArea", "maisEstudada"]),
-      "Esse trabalho bonito continua todo aqui, esperando por voc\xEA. Quando der, uma sess\xE3o curta j\xE1 retoma o embalo, e a Revis\xE3o j\xE1 sabe por onde come\xE7ar.",
-      `Fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    requer: (c) => c.diasProva !== null && c.diasProva >= 7,
-    assuntos: (c) => [nm(c, `faltam ${diasProva(c)}`, `Faltam ${diasProva(c)} para ${c.nomeProva}`), nm(c, "a prova est\xE1 chegando", "A prova est\xE1 chegando")],
-    corpo: (c) => [
-      `Faltam ${diasProva(c)} para ${c.nomeProva}, e lembrei de voc\xEA. Faz ${tempoFora(c.p.diasParado)} que a gente n\xE3o se v\xEA por aqui, e imagino que a rotina tenha engolido o estudo.`,
-      `Ainda d\xE1 tempo de fazer muita coisa, e ${asSuas(c)} j\xE1 \xE9 um \xF3timo come\xE7o. Nada se perdeu.`,
-      `Quando quiser retomar, a Revis\xE3o est\xE1 aqui, com as quest\xF5es que pedem uma segunda olhada j\xE1 separadas: ${c.link("revisao")}`,
-      "Dez minutos por dia, daqui at\xE9 a prova, valem mais do que uma maratona na v\xE9spera.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "do jeito que voc\xEA deixou", "O site est\xE1 do jeito que voc\xEA deixou"), nm(c, "um recado curto", "Um recado curto")],
-    corpo: (c) => [
-      momento(c),
-      "S\xF3 um recado curto, com carinho: quando quiser voltar, o site est\xE1 do jeito que voc\xEA deixou.",
-      `${cap(asSuas(c))} e as quest\xF5es para revisar continuam l\xE1, esperando por voc\xEA. N\xE3o precisa recuperar nada, nem explicar nada.`,
-      c.tempo(),
-      "Se quiser me contar como foram essas semanas, \xE9 s\xF3 responder. Vou gostar de saber."
-    ]
-  }
-];
-var obrigado_assinatura = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "obrigado, e os primeiros dez minutos", "Obrigado, e os primeiros dez minutos"), nm(c, "obrigado pela assinatura", "Obrigado pela assinatura")],
-    corpo: (c) => [
-      momento(c),
-      "Vi que voc\xEA assinou o Orto Quest\xF5es, e quis te escrever para agradecer de cora\xE7\xE3o. \xC9 uma alegria ter voc\xEA no plano.",
-      `Uma sugest\xE3o carinhosa para os primeiros dez minutos: montar o cronograma. Voc\xEA diz a data ${c.daProva}, e a partir da\xED a lista de cada dia j\xE1 est\xE1 pronta quando voc\xEA senta, com o que mais cai primeiro. \xC9 o que devolve mais tempo de tudo o que o plano tem.`,
-      `Fica aqui: ${c.link("cronograma")}`,
-      "E se alguma coisa n\xE3o funcionar, \xE9 s\xF3 me responder. Vou resolver com carinho."
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "obrigado pela confian\xE7a", "Obrigado pela confian\xE7a")],
-    corpo: (c) => [
-      momento(c),
-      "Obrigado pela confian\xE7a. Fiquei muito feliz com a sua assinatura.",
-      c.obs(1),
-      `Uma dica para a assinatura render desde o primeiro dia: montar o cronograma com a data da sua prova. Ele organiza o que estudar em cada dia, come\xE7ando pelo que mais cai, e se ajusta sozinho quando a semana aperta: ${c.link("cronograma")}`,
-      "E qualquer d\xFAvida, \xE9 s\xF3 responder."
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "fiquei muito feliz", "Fiquei muito feliz")],
-    corpo: (c) => [
-      momento(c),
-      "Fiquei muito feliz de ver a sua assinatura.",
-      c.dez ? `Voc\xEA j\xE1 tem ${Q(c.r)} por aqui${c.pctBom !== null ? `, com ${c.pctBom}% de acerto` : ""}, e agora tem tudo liberado para ir at\xE9 a prova: cronograma, Simulado Nacional, temas que mais caem, Biblioteca de resumos.` : "Agora voc\xEA tem tudo liberado para ir at\xE9 a prova: cronograma, Simulado Nacional, temas que mais caem, Biblioteca de resumos.",
-      "As quest\xF5es e os coment\xE1rios seguem melhorando toda semana. Se encontrar qualquer coisa estranha, me avisa?",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "um obrigado de cora\xE7\xE3o", "Um obrigado de cora\xE7\xE3o")],
-    corpo: (c) => [
-      momento(c),
-      "Um obrigado curto, mas de cora\xE7\xE3o, pela assinatura. Fico muito contente de ter voc\xEA no plano.",
-      "Nos primeiros dias, uma ordem que costuma ajudar: primeiro o cronograma, para a lista do dia j\xE1 estar pronta quando voc\xEA sentar; depois os temas que mais caem, para saber onde insistir. O resto vem com calma.",
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    requer: temFatos,
-    assuntos: (c) => [nm(c, "obrigado, e uma coisa que reparei", "Obrigado, e uma coisa que reparei")],
-    corpo: (c) => [
-      "Obrigado por assinar o Orto Quest\xF5es. Fiquei muito contente.",
-      J(momento(c), c.obs(2)),
-      `Se quiser aproveitar desde j\xE1, uma boa porta de entrada \xE9 o cronograma: voc\xEA coloca a data ${c.daProva} e ele monta a lista de cada dia, come\xE7ando pelo que mais cai. \xC9 o que mais devolve tempo. Fica aqui: ${c.link("cronograma")}`,
-      "Mas, antes de tudo, obrigado."
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "que alegria ter voc\xEA no plano", "Que alegria ter voc\xEA no plano")],
-    corpo: (c) => [
-      momento(c),
-      "Escrevo para agradecer a sua assinatura, de cora\xE7\xE3o. Que alegria ter voc\xEA no plano.",
-      "A ideia \xE9 simples: voc\xEA senta e estuda, e o site organiza o resto. A lista do dia j\xE1 pronta, a Revis\xE3o trazendo o que precisa voltar, o Simulado Nacional todo m\xEAs.",
-      c.tempo(),
-      "Se tiver ideia ou sugest\xE3o, \xE9 s\xF3 responder este e-mail. Vou gostar de saber."
-    ]
-  }
-];
-var lista = (itens) => itens.map((t) => `- ${cap(t)}`).join("\n");
-var eLista = (itens) => itens.length <= 1 ? itens.join("") : `${itens.slice(0, -1).join(", ")} e ${itens[itens.length - 1]}`;
-var dicaInicial = (c) => c.dica();
-var garantia = "Se n\xE3o for o que voc\xEA esperava, o reembolso em 7 dias \xE9 pelo pr\xF3prio site, sem precisar explicar nada.";
-var portaAberta = "Se n\xE3o for a hora, tudo bem tamb\xE9m. Eu continuo por aqui.";
-var cronogramaDevolve = (c) => c.um(
-  `Quem estuda com o dia cheio costuma perder tempo decidindo o que estudar. A pessoa chega, abre o site, pensa "o que eu fa\xE7o hoje?", e l\xE1 se foram quinze minutos. O cronograma existe para devolver esses quinze minutos: voc\xEA diz a data ${c.daProva}, e a partir da\xED a lista de cada dia j\xE1 est\xE1 pronta quando voc\xEA senta, com o que mais cai primeiro e o tempo de cada parte. Se a semana apertar, ele se ajusta sozinho.`,
-  `O cronograma faz uma coisa simples: voc\xEA diz a data ${c.daProva}, e ele monta a lista de cada dia, com o que mais cai primeiro e o tempo de cada parte. Quando voc\xEA senta, j\xE1 est\xE1 pronto. Se um plant\xE3o bagun\xE7ar a semana, ele redistribui sozinho. \xC9 menos quinze minutos por dia decidindo, e quinze minutos por dia \xE9 muito para quem tem pouco.`
-);
-var convite_20 = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "uma dica e um convite", "Uma dica e um convite"), nm(c, "uma coisa que pode te ajudar", "Uma coisa que pode te ajudar")],
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA j\xE1 respondeu ${Q(c.r)} no Orto Quest\xF5es, e fiquei feliz de ver voc\xEA por aqui.`,
-      dicaInicial(c),
-      `E, caso seja \xFAtil para a sua rotina, queria te contar o que a assinatura faz por ela:
-${lista(c.beneficios(3))}`,
-      `${garantia} Se fizer sentido para o seu momento, os planos est\xE3o aqui: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "j\xE1 conhece o cronograma?", "J\xE1 conhece o cronograma?")],
-    corpo: (c) => [
-      momento(c),
-      "Uma pergunta: voc\xEA j\xE1 conhece o cronograma do site?",
-      cronogramaDevolve(c),
-      `Faz parte da assinatura, junto com ${eLista(c.beneficios(3, true).filter((b) => !b.startsWith("o cronograma")).slice(0, 2))}. D\xE1 para ver uma pr\xE9via do seu antes de decidir qualquer coisa: ${c.link("cronograma")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v3",
-    requer: temFatos,
-    assuntos: (c) => [nm(c, "o seu come\xE7o", "O seu come\xE7o"), nm(c, "uma sugest\xE3o para o seu estudo", "Uma sugest\xE3o para o seu estudo")],
-    corpo: (c) => [
-      J(momento(c), `Vi as suas ${Q(c.r)}, e quis te escrever.`),
-      c.obs(2),
-      `Pelo jeito que voc\xEA estuda, acho que a assinatura combinaria com a sua rotina. Ela soma:
-${lista(c.beneficios(3))}`,
-      `${garantia} Os planos ficam aqui, se quiser olhar: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "tr\xEAs coisas para a sua rotina", "Tr\xEAs coisas para a sua rotina"), nm(c, "chegar \xE0 prova com mais calma", "Chegar \xE0 prova com mais calma")],
-    corpo: (c) => [
-      momento(c),
-      `Voc\xEA j\xE1 fez ${Q(c.r)}, ent\xE3o j\xE1 conhece o jeito do site. Se a sua meta \xE9 chegar \xE0 prova com mais calma e menos tempo perdido, a assinatura soma tr\xEAs coisas que ajudam muito:
-${lista(c.beneficios(3))}`,
-      `Se quiser olhar com calma: ${c.link("assinatura")}`,
-      garantia,
-      "Qualquer d\xFAvida, me responde. Vou gostar de ajudar."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "uma coisa sobre a assinatura", "Uma coisa sobre a assinatura")],
-    corpo: (c) => [
-      momento(c),
-      "Queria te contar, com calma, o que a assinatura acrescenta ao seu estudo.",
-      `Ela libera ${eLista(c.beneficios(3, true))}. O que ela devolve, no fim, \xE9 tempo: menos decis\xE3o, mais estudo.`,
-      `${garantia} Se quiser conhecer: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "se fizer sentido para voc\xEA", "Se fizer sentido para voc\xEA")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(Q(c.r))} j\xE1 d\xE3o uma boa ideia de se o site combina com o seu jeito de estudar.`,
-      `Se combinar, a assinatura leva isso adiante, na dire\xE7\xE3o da sua prova e da sua rotina:
-${lista(c.beneficios(3))}`,
-      `Os planos est\xE3o aqui, se quiser olhar: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v7",
-    requer: (c) => (c.p.viuPlanos ?? 0) > 0,
-    assuntos: (c) => [nm(c, "sobre os planos", "Sobre os planos"), nm(c, "alguma d\xFAvida sobre os planos?", "Alguma d\xFAvida sobre os planos?")],
-    corpo: (c) => [
-      momento(c),
-      "Vi que voc\xEA deu uma olhada nos planos, e quis escrever para ajudar no que for preciso.",
-      "Se ficou alguma d\xFAvida, me responde que eu explico. \xC0s vezes \xE9 coisa simples, como a forma de pagamento ou o que acontece se o site n\xE3o for o que voc\xEA esperava.",
-      `Resumindo o que a assinatura soma:
-${lista(c.beneficios(3))}`,
-      garantia
-    ]
-  }
-];
-var tomAcerto = (c) => {
-  const p = c.pctBom;
-  if (p !== null) {
-    if (p >= 80) return c.um(`E com ${p}% de acerto, o que \xE9 admir\xE1vel.`, `${p}% de acerto, ali\xE1s. Parab\xE9ns, de verdade.`);
-    if (p >= 70) return c.um(`E com ${p}% de acerto, um resultado muito bonito.`, `Com ${p}% de acerto, voc\xEA j\xE1 est\xE1 num patamar muito bom.`);
-    if (p >= 60) return c.um(`E com ${p}% de acerto, uma base firme.`, `Seu acerto de ${p}% mostra uma base firme.`);
-    return c.um(`Seu acerto de ${p}% j\xE1 passa da metade, e \xE9 exatamente a fase em que mais d\xE1 para crescer.`, "Voc\xEA est\xE1 no meio do caminho, que \xE9 onde mais d\xE1 para crescer.");
-  }
-  if (c.pct === null) return null;
-  if (c.pct >= 40) return "Voc\xEA est\xE1 no meio do caminho, que \xE9 onde mais d\xE1 para crescer.";
-  return c.um("Voc\xEA segue aparecendo, e \xE9 isso que mais conta numa prepara\xE7\xE3o longa.", "Voc\xEA est\xE1 construindo a sua base com const\xE2ncia, e \xE9 nessa fase que um bom plano mais ajuda.");
-};
-var convite_50 = [
-  {
-    id: "v1",
-    assuntos: (c) => [diasProva(c) && nm(c, `faltam ${diasProva(c)} e eu estou na torcida`, `Faltam ${diasProva(c)} e eu estou na torcida`), nm(c, "escrevi para voc\xEA", "Escrevi para voc\xEA"), nm(c, "um convite pessoal", "Um convite pessoal")],
-    corpo: (c) => [
-      momento(c),
-      J(`Que alegria ver ${Q(c.r)} j\xE1 respondidas.`, c.obs(1, ["melhorArea", "ranking", "maisEstudada"])),
-      cronogramaDevolve(c),
-      `D\xE1 para ver uma pr\xE9via do seu aqui: ${c.link("cronograma")}. ${garantia}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v2",
-    requer: (c) => !!c.fatos.ranking,
-    assuntos: (c) => [nm(c, `${c.fatos.ranking}\xBA no ranking`, `${c.fatos.ranking}\xBA no ranking`), nm(c, "uma das pessoas que mais estudam aqui", "Uma das pessoas que mais estudam aqui")],
-    corpo: (c) => [
-      momento(c),
-      `Voc\xEA est\xE1 em ${c.fatos.ranking}\xBA no ranking geral, ou seja, entre as pessoas que mais estudam no Orto Quest\xF5es. Que alegria ver.`,
-      J(c.obs(1, ["melhorArea", "horario", "prova"]), tomAcerto(c)),
-      `Para quem estuda com essa dedica\xE7\xE3o, acho que a assinatura faz sentido pelo tempo que ela devolve: ${eLista(c.beneficios(3, true))}. ${garantia}`,
-      `Os planos ficam aqui, se quiser olhar: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "uma conversa sobre o seu estudo", "Uma conversa sobre o seu estudo")],
-    corpo: (c) => [
-      momento(c),
-      `Que alegria ver ${Q(c.r)} suas por aqui, cada uma encaixada no tempo que a rotina deixa.`,
-      J(c.obs(1), tomAcerto(c)),
-      dicaInicial(c),
-      `Se voc\xEA quiser ir al\xE9m, a assinatura soma:
-${lista(c.beneficios(3))}`,
-      `Sem press\xE3o nenhuma. Se fizer sentido: ${c.link("assinatura")}`
-    ]
-  },
-  {
-    id: "v4",
-    requer: (c) => c.diasProva !== null && c.diasProva >= 7,
-    assuntos: (c) => [nm(c, `faltam ${diasProva(c)} e eu estou na torcida`, `Faltam ${diasProva(c)} para ${c.nomeProva}`), nm(c, `um plano at\xE9 ${c.nomeProva}`, `Um plano at\xE9 ${c.nomeProva}`)],
-    corpo: (c) => [
-      J(`Vi que ${c.nomeProva} est\xE1 a ${diasProva(c)}${c.fatos.horario ? ` e que voc\xEA estuda quase sempre ${c.fatos.horario === "noite" ? "\xE0 noite" : c.fatos.horario === "madrugada" ? "de madrugada" : c.fatos.horario === "manha" ? "de manh\xE3 cedo" : c.fatos.horario === "almoco" ? "na hora do almo\xE7o" : "\xE0 tarde"}` : ""}. Imagino a rotina: o dia inteiro no hospital e a prova esperando no fim dele.`),
-      J(`Que bom ver ${Q(c.r)} j\xE1 respondidas.`, c.obs(1, ["melhorArea", "ranking", "maisEstudada"]), tomAcerto(c)),
-      cronogramaDevolve(c),
-      `D\xE1 para ver uma pr\xE9via do seu aqui: ${c.link("cronograma")}. ${garantia}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v5",
-    requer: (c) => !!c.fatos.areaFraca,
-    assuntos: (c) => [nm(c, "uma ideia para o tema que mais te desafia", "Uma ideia para o tema que mais te desafia")],
-    corpo: (c) => [
-      momento(c),
-      "Queria te mandar uma ideia carinhosa sobre o seu estudo.",
-      J(c.fato("melhorArea"), c.fato("areaFraca")),
-      "Na assinatura, d\xE1 para ver os temas que mais caem em cada \xE1rea e como a turma respondeu cada alternativa. Ajuda a saber onde vale insistir sem gastar tempo descobrindo sozinho, e mostra que muita gente trope\xE7a nas mesmas quest\xF5es.",
-      `${garantia} Se quiser conhecer: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v6",
-    requer: (c) => !!c.fatos.flashcards && !!c.p.limiteGratisLigado,
-    assuntos: (c) => [nm(c, "quest\xF5es e flashcards sem limite", "Quest\xF5es e flashcards sem limite")],
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA usa as quest\xF5es e os flashcards: ${Q(c.r)} e ${N(c.fatos.flashcards)} cartas at\xE9 agora. Que dedica\xE7\xE3o.`,
-      tomAcerto(c),
-      `Com esse ritmo, imagino que o limite di\xE1rio \xE0s vezes atrapalhe justamente no dia em que sobrou tempo. Na assinatura, quest\xF5es e flashcards ficam sem limite, e ainda entram ${eLista(c.beneficios(3, true).filter((b) => !b.includes("sem limite")).slice(0, 2))}.`,
-      `${garantia} Os planos ficam aqui, se quiser olhar: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v7",
-    requer: temFatos,
-    assuntos: (c) => [nm(c, "um convite, com carinho", "Um convite, com carinho")],
-    corpo: (c) => [
-      momento(c),
-      J("Queria te fazer um convite, e n\xE3o \xE9 pelo n\xFAmero de quest\xF5es: \xE9 pelo jeito que voc\xEA estuda.", c.obs(2)),
-      dicaInicial(c),
-      `A assinatura foi pensada para quem estuda assim, com pouco tempo e muita vontade:
-${lista(c.beneficios(3))}`,
-      `${garantia} Se quiser conhecer: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  }
-];
-var teotOuProva = (c) => c.fatos.prova === "teot" || !!c.fatos.cronograma || !c.fatos.prova && (c.fatos.etapa === "r3" || c.fatos.etapa === "r4");
-var faltam = (c) => diasProva(c) ? `Faltam ${diasProva(c)} para ${c.nomeProva}` : `${cap(c.nomeProva)} est\xE1 chegando`;
-var reta_final = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "uma ideia para a reta final", "Uma ideia para a reta final")],
-    corpo: (c) => [
-      J(usaProva(c), `${faltam(c)}. Vale reservar parte do estudo para revisar os erros anteriores.`),
-      "Uma sess\xE3o curta pode ter duas etapas: responder sem consultar e depois ler o coment\xE1rio inteiro, incluindo as alternativas que voc\xEA descartou.",
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      `O Caderno de erros re\xFAne essas quest\xF5es: ${c.link("erros")}`,
-      "\xC9 uma forma de usar o tempo para esclarecer o que ainda gera d\xFAvida."
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "revisar o racioc\xEDnio antes da prova", "Revisar o racioc\xEDnio antes da prova")],
-    corpo: (c) => [
-      J(usaProva(c), `${faltam(c)}. Nesta fase, vale olhar tamb\xE9m para os acertos que vieram com d\xFAvida.`),
-      "Ao responder de novo, tente explicar a escolha antes de abrir o coment\xE1rio. Depois, compare seu racioc\xEDnio com a explica\xE7\xE3o de cada alternativa.",
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      "Uma d\xFAvida esclarecida agora j\xE1 torna a pr\xF3xima sess\xE3o mais \xFAtil."
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "um recorte para os pr\xF3ximos dias", "Um recorte para os pr\xF3ximos dias")],
-    corpo: (c) => [
-      J(usaProva(c), `${faltam(c)}. Se o tempo estiver curto, um recorte pequeno facilita come\xE7ar.`),
-      "Escolha um tema, responda dez quest\xF5es e leia os coment\xE1rios das que errou ou acertou sem seguran\xE7a. O objetivo \xE9 descobrir o detalhe que mudou a resposta.",
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      `Seu Caderno de erros est\xE1 aqui: ${c.link("erros")}`,
-      "Esse recorte pode orientar o que revisar na sess\xE3o seguinte."
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "tempo de prova tamb\xE9m se treina", "Tempo de prova tamb\xE9m se treina")],
-    corpo: (c) => [
-      J(usaProva(c), `${faltam(c)}. Al\xE9m do conte\xFAdo, vale observar o tempo gasto para decidir uma resposta.`),
-      "Em uma sess\xE3o com tempo marcado, identifique onde voc\xEA demora mais. Depois, leia o coment\xE1rio completo dessas quest\xF5es e procure o que faltou reconhecer no enunciado.",
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      `As quest\xF5es para revisar ficam aqui: ${c.link("revisao")}`,
-      "Assim, o treino mostra onde concentrar a pr\xF3xima revis\xE3o."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "o coment\xE1rio depois da resposta", "O coment\xE1rio depois da resposta")],
-    corpo: (c) => [
-      J(usaProva(c), `${faltam(c)}. Um cuidado \xFAtil nesta fase \xE9 n\xE3o encerrar a quest\xE3o no gabarito.`),
-      "Mesmo quando acertar, confira por que as outras alternativas n\xE3o servem. Se houver um ponto que ainda precisar de explica\xE7\xE3o, ele merece voltar \xE0 revis\xE3o.",
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      `Para retomar as quest\xF5es: ${c.link("revisao")}`,
-      "\xC9 uma maneira de distinguir o que ficou claro do que apenas pareceu familiar."
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, "uma revis\xE3o com come\xE7o e fim", "Uma revis\xE3o com come\xE7o e fim")],
-    corpo: (c) => [
-      J(usaProva(c), `${faltam(c)}. Uma lista curta de d\xFAvidas pode ajudar a organizar os pr\xF3ximos dias.`),
-      "Ao terminar cada sess\xE3o, anote o conceito que faltou em cada erro. Na pr\xF3xima, responda algumas quest\xF5es desse tema antes de reler a explica\xE7\xE3o.",
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      `O Caderno de erros ajuda a encontrar esses pontos: ${c.link("erros")}`,
-      "A pr\xF3pria resposta mostra se o conceito ficou mais claro."
-    ]
-  }
-];
-var nomeMarco = (m) => ({ 50: "cinquenta", 100: "cem", 250: "duzentas e cinquenta", 500: "quinhentas", 1e3: "mil", 2e3: "duas mil", 3e3: "tr\xEAs mil", 4e3: "quatro mil" })[m] ?? N(m);
-var horasDoMarco = (m) => {
-  const h = Math.round(m * 2 / 60);
-  return h <= 1 ? "mais de uma hora" : `umas ${N(h)} horas`;
-};
-var marco = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, `${N(c.marco)} quest\xF5es`, `Voc\xEA passou das ${N(c.marco)} quest\xF5es`), nm(c, `${nomeMarco(c.marco)} quest\xF5es`, `${cap(nomeMarco(c.marco))} quest\xF5es`)],
-    corpo: (c) => [
-      momento(c),
-      `${cap(nomeMarco(c.marco))} quest\xF5es. Passei para te dar parab\xE9ns, e para fazer uma conta: isso \xE9 ${horasDoMarco(c.marco)} de estudo arrancadas de uma rotina que n\xE3o deixa sobrar nada. N\xE3o acontece por acaso.`,
-      c.marco <= 100 ? "As primeiras cem s\xE3o as mais dif\xEDceis, porque \xE9 quando o h\xE1bito ainda est\xE1 nascendo. Daqui para a frente, o site come\xE7a a mostrar onde voc\xEA est\xE1 forte e onde vale insistir." : c.marco <= 500 ? "Isso j\xE1 n\xE3o \xE9 teste, \xE9 const\xE2ncia. A essa altura, o maior ganho costuma estar no tema que mais te desafia: com calma, ele cresce r\xE1pido." : "Poucas pessoas chegam aqui. Voc\xEA j\xE1 viu boa parte do que as bancas gostam de perguntar, e daqui em diante o que leva uma boa nota a uma \xF3tima \xE9 a revis\xE3o, n\xE3o o volume.",
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, `${N(c.marco)} quest\xF5es, e contando`, `${N(c.marco)} quest\xF5es respondidas`)],
-    corpo: (c) => [
-      momento(c),
-      `Vi que voc\xEA acabou de passar das ${N(c.marco)} quest\xF5es no Orto Quest\xF5es, e fiquei muito feliz.`,
-      c.pctBom !== null ? `E com ${c.pctBom}% de acerto. Cada uma dessas quest\xF5es \xE9 um tema a mais que voc\xEA viu antes da prova, em ${horasDoMarco(c.marco)} que voc\xEA encontrou onde quase ningu\xE9m encontra.` : `Cada uma delas \xE9 um tema a mais que voc\xEA viu antes da prova, em ${horasDoMarco(c.marco)} que voc\xEA encontrou onde quase ningu\xE9m encontra.`,
-      `Para comemorar do jeito certo, que tal uma passada na Revis\xE3o? Leva dez minutos e protege tudo isso: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "um marco bonito", "Um marco bonito")],
-    corpo: (c) => [
-      momento(c),
-      `${cap(N(c.marco))} quest\xF5es. N\xE3o acontece por acaso: \xE9 a soma de muitos dias em que voc\xEA escolheu estudar, mesmo com sono. Em tempo, d\xE1 ${horasDoMarco(c.marco)}; em dias, d\xE1 muitos em que seria mais f\xE1cil n\xE3o abrir o site.`,
-      c.obs(2),
-      "Parab\xE9ns, de verdade."
-    ]
-  },
-  {
-    id: "v4",
-    requer: (c) => c.marco >= 500,
-    assuntos: (c) => [nm(c, "isso \xE9 const\xE2ncia", "Isso \xE9 const\xE2ncia")],
-    corpo: (c) => [
-      momento(c),
-      `${N(c.marco)} quest\xF5es. Que marco bonito.`,
-      J("Isso \xE9 const\xE2ncia, e eu admiro muito.", c.obs(1), c.pctBom !== null ? `${c.pctBom}% de acerto, ali\xE1s.` : null),
-      "Uma sugest\xE3o para a pr\xF3xima etapa: reler os coment\xE1rios das quest\xF5es que te pegaram mais de uma vez. \xC9 onde est\xE3o os pontos que ainda escapam, e pede menos tempo do que qualquer quest\xE3o nova.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, `parab\xE9ns pelas ${N(c.marco)} quest\xF5es`, `Parab\xE9ns pelas ${N(c.marco)} quest\xF5es`)],
-    corpo: (c) => [
-      momento(c),
-      `S\xF3 um recado r\xE1pido: parab\xE9ns pelas ${N(c.marco)} quest\xF5es. Fiquei muito feliz de ver.`,
-      `Para quem tem o dia tomado, isso \xE9 ${horasDoMarco(c.marco)} de estudo que poderiam ter virado qualquer outra coisa, e viraram estudo. Isso vale muito.`,
-      c.obs(1),
-      c.tempo()
-    ]
-  },
-  {
-    id: "v6",
-    assuntos: (c) => [nm(c, `${N(c.marco)} e o que vem agora`, `${N(c.marco)} quest\xF5es e o que vem agora`)],
-    corpo: (c) => [
-      momento(c),
-      `Voc\xEA passou das ${N(c.marco)} quest\xF5es, e eu quis registrar.`,
-      c.marco < 500 ? "O h\xE1bito j\xE1 existe. Agora o que mais rende \xE9 a Revis\xE3o: as quest\xF5es que te pegaram voltam no momento certo para virar acerto, e isso pede menos tempo do que o volume que voc\xEA j\xE1 fez." : "A partir daqui, os pontos que faltam est\xE3o nos detalhes, e o Caderno de erros \xE9 o melhor mapa deles. Menos horas, mais precis\xE3o.",
-      c.obs(1),
-      c.fecho()
-    ]
-  }
-];
-var opiniao = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "posso te pedir uma opini\xE3o?", "Posso te pedir uma opini\xE3o?")],
-    corpo: (c) => [
-      momento(c),
-      c.dez ? `Voc\xEA j\xE1 fez ${Q(c.r)} no Orto Quest\xF5es, ent\xE3o ningu\xE9m melhor para me dizer o que est\xE1 bom e o que d\xE1 para melhorar.` : "Queria muito a sua opini\xE3o sobre o site, mesmo que voc\xEA tenha usado pouco.",
-      "Tr\xEAs perguntas, responde s\xF3 as que quiser: o que faz voc\xEA voltar ao site? O que te faz perder tempo nele? O que voc\xEA gostaria que existisse e ainda n\xE3o existe?",
-      "Pode ser uma linha. Vou adorar ler.",
-      c.obs(1)
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "uma pergunta s\xF3", "Uma pergunta s\xF3")],
-    corpo: (c) => [
-      momento(c),
-      "Uma pergunta s\xF3: se voc\xEA pudesse mudar uma coisa no Orto Quest\xF5es, o que seria?",
-      "Responde aqui mesmo? As melhores ideias v\xEAm de quem estuda de verdade e sente onde o tempo escapa.",
-      c.obs(1),
-      c.tempo()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "me ajuda a melhorar o site?", "Me ajuda a melhorar o site?")],
-    corpo: (c) => [
-      momento(c),
-      J("Estou planejando as pr\xF3ximas melhorias do site e queria ouvir quem estuda de verdade por aqui.", c.obs(1)),
-      "Tr\xEAs perguntas r\xE1pidas, responde s\xF3 as que quiser:\n- Os coment\xE1rios est\xE3o ajudando, ou est\xE3o longos demais?\n- Tem alguma \xE1rea em que voc\xEA sente falta de mais quest\xF5es?\n- O site cabe na sua rotina, ou tem alguma coisa que atrapalha?",
-      "Obrigado desde j\xE1. Cada resposta vira melhoria."
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "sua opini\xE3o importa muito", "Sua opini\xE3o importa muito")],
-    corpo: (c) => [
-      momento(c),
-      "Queria muito a sua opini\xE3o, inclusive sobre o que n\xE3o est\xE1 bom. Elogio \xE9 gostoso, mas \xE9 a cr\xEDtica que melhora o site.",
-      "Os coment\xE1rios das quest\xF5es est\xE3o ajudando? O cronograma e a Revis\xE3o fazem sentido na sua rotina? Tem alguma coisa que voc\xEA abre e fecha sem usar?",
-      c.obs(1),
-      "\xC9 s\xF3 responder. Vou gostar muito de saber."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "o que est\xE1 faltando?", "O que est\xE1 faltando?")],
-    corpo: (c) => [
-      momento(c),
-      J(c.dez ? `Vi as suas ${Q(c.r)} e fiquei com uma curiosidade.` : "Fiquei com uma curiosidade.", c.obs(1)),
-      "O que est\xE1 faltando no Orto Quest\xF5es para ele ser o lugar onde voc\xEA mais gosta de estudar? Pode ser coisa grande ou pequena.",
-      "\xC9 s\xF3 responder este e-mail. Vou adorar saber."
-    ]
-  }
-];
-var indicar = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "quem voc\xEA conhece que est\xE1 nessa?", "Quem voc\xEA conhece que est\xE1 nessa?"), nm(c, "um pedido", "Um pedido")],
-    corpo: (c) => [
-      momento(c),
-      "Queria te agradecer por estudar no Orto Quest\xF5es. O site cresce no boca a boca, ent\xE3o tenho um pedido carinhoso: quem voc\xEA conhece que est\xE1 estudando para a mesma prova e ainda n\xE3o conhece o site?",
-      "Quando um colega cria a conta pelo seu link e responde 20 quest\xF5es, voc\xEAs dois ganham 7 dias do plano completo. Vale para at\xE9 12 amigos. E estudar junto deixa a rotina mais leve.",
-      `Seu link pessoal fica aqui: ${c.link("indicar")}`,
-      "Muito obrigado."
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "estudar junto rende mais", "Estudar junto rende mais")],
-    corpo: (c) => [
-      momento(c),
-      "Estudar junto rende mais, principalmente para quem tem pouco tempo: um lembra o outro, um explica o que o outro errou, e o ranking fica mais animado.",
-      `Se tiver colegas se preparando para a prova, que tal mandar o seu link? Quando algu\xE9m cria a conta por ele e responde 20 quest\xF5es, voc\xEAs dois ganham 7 dias do plano completo: ${c.link("indicar")}`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "voc\xEA conhece algu\xE9m?", "Voc\xEA conhece algu\xE9m?")],
-    corpo: (c) => [
-      momento(c),
-      "Voc\xEA conhece algu\xE9m que est\xE1 estudando para o TEOT, para o TARO ou para o R4, e que reclama de n\xE3o ter tempo?",
-      "Se conhecer, mandar o Orto Quest\xF5es para essa pessoa ajuda muito o projeto a crescer. E ainda vale para voc\xEA: pelo seu link, cada colega que responde 20 quest\xF5es d\xE1 7 dias do plano completo para os dois.",
-      `O link est\xE1 aqui: ${c.link("indicar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    requer: temFatos,
-    assuntos: (c) => [nm(c, "obrigado, e um pedido", "Obrigado, e um pedido")],
-    corpo: (c) => [
-      J("Obrigado por estar por aqui.", momento(c)),
-      c.obs(2),
-      `Um pedido: se o site te ajuda, conta para um colega? Pelo seu link, voc\xEAs dois ganham 7 dias do plano completo quando a pessoa responde 20 quest\xF5es: ${c.link("indicar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "manda para um colega?", "Manda para um colega?")],
-    corpo: (c) => [
-      momento(c),
-      "Um pedido r\xE1pido: se o Orto Quest\xF5es tem te ajudado a estudar no tempo que sobra, que tal mandar para um colega que esteja na mesma?",
-      `Pelo seu link pessoal, quando a pessoa cria a conta e responde 20 quest\xF5es, voc\xEAs dois ganham 7 dias do plano completo. Vale para at\xE9 12 amigos: ${c.link("indicar")}`,
-      c.tempo(),
-      "Obrigado pela for\xE7a."
-    ]
-  }
-];
-var cronograma = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "conhece o cronograma?", "Conhece o cronograma?"), nm(c, "um plano at\xE9 a prova", "Um plano at\xE9 a prova")],
-    corpo: (c) => [
-      momento(c),
-      "Queria te apresentar uma coisa de que o pessoal tem gostado bastante: o cronograma.",
-      cronogramaDevolve(c),
-      `A pr\xE9via do seu cronograma \xE9 aberta, vale dar uma olhada: ${c.link("cronograma")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "o que estudar hoje", "O que estudar hoje")],
-    corpo: (c) => [
-      momento(c),
-      'Sabe aquela d\xFAvida de todo dia, "o que eu estudo hoje"? Ela custa uns quinze minutos por dia, e em um m\xEAs isso \xE9 uma tarde inteira. O cronograma responde por voc\xEA.',
-      J(c.fato("prova"), `Voc\xEA coloca a data ${c.daProva}, e ele monta a lista de cada dia, com o que mais cai primeiro, e dia de plant\xE3o sem quebrar o plano.`),
-      `D\xE1 para ver a pr\xE9via do seu: ${c.link("cronograma")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "uma ideia para organizar o estudo", "Uma ideia para organizar o estudo")],
-    corpo: (c) => [
-      momento(c),
-      c.dez ? `Voc\xEA j\xE1 tem ${Q(c.r)} por aqui. Se quiser organizar as pr\xF3ximas sem gastar tempo planejando, o cronograma pode ajudar.` : "Se quiser organizar o estudo at\xE9 a prova sem gastar tempo planejando, o cronograma pode ajudar.",
-      `Ele divide o que falta pelos dias at\xE9 a prova e diz o que estudar hoje. Voc\xEA senta, a lista est\xE1 pronta. A pr\xE9via \xE9 aberta: ${c.link("cronograma")}`,
-      c.obs(1),
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    requer: teotOuProva,
-    assuntos: (c) => [diasProva(c) && nm(c, `faltam ${diasProva(c)}`, `Faltam ${diasProva(c)} para ${c.nomeProva}`), nm(c, "um plano para o tempo que falta", "Um plano para o tempo que falta")],
-    corpo: (c) => [
-      `${faltam(c)}. D\xE1 tempo de muita coisa, ainda mais com um plano que j\xE1 esteja pronto quando voc\xEA senta.`,
-      momento(c),
-      `O cronograma do site faz esse plano com voc\xEA: passa primeiro pelo que mais cai, se ajusta quando a semana aperta e termina com uma reta final de revis\xE3o. Veja a pr\xE9via do seu: ${c.link("cronograma")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "e se o plant\xE3o bagun\xE7ar a semana?", "E se o plant\xE3o bagun\xE7ar a semana?")],
-    corpo: (c) => [
-      momento(c),
-      "Se voc\xEA d\xE1 plant\xE3o, talvez j\xE1 tenha pensado nisso: e se o plant\xE3o bagun\xE7ar a semana de estudo?",
-      'Para isso existe o dia de plant\xE3o no cronograma. Voc\xEA marca, e ele redistribui o que ficou para tr\xE1s, sem quebrar o plano at\xE9 a prova. Aquele peso de "atrasei" simplesmente deixa de existir.',
-      `A pr\xE9via do seu \xE9 aberta: ${c.link("cronograma")}`,
-      c.fecho()
-    ]
-  }
-];
-var dataCurta = (iso) => iso && Number.isFinite(new Date(iso).getTime()) ? new Date(iso).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", timeZone: "America/Sao_Paulo" }) : null;
-var dataLonga = (iso) => iso && Number.isFinite(new Date(iso).getTime()) ? new Date(iso).toLocaleDateString("pt-BR", { day: "numeric", month: "long", timeZone: "America/Sao_Paulo" }) : null;
-var mesesDoPlano = (plano) => ({ mensal: "1 m\xEAs", semestral: "6 meses", anual: "12 meses" })[plano ?? ""] ?? null;
-var nomePlano = (plano) => ({ mensal: "mensal", semestral: "semestral", anual: "anual" })[plano ?? ""] ?? null;
-var nadaSePerde = (c) => c.dez ? `${cap(asSuas(c))}${c.pctBom !== null ? `, os ${c.pctBom}% de acerto` : ""} e o Caderno de erros ficam guardados de qualquer jeito. Nada se perde, renovando ou n\xE3o.` : "Tudo o que voc\xEA fez fica guardado de qualquer jeito. Nada se perde, renovando ou n\xE3o.";
-var pix_3_dias = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, `seu acesso vai at\xE9 ${dataCurta(c.pix?.fimEm) ?? "os pr\xF3ximos dias"}`, `Seu acesso vai at\xE9 ${dataCurta(c.pix?.fimEm) ?? "os pr\xF3ximos dias"}`), nm(c, "um lembrete sobre o seu Pix", "Um lembrete sobre o seu Pix")],
-    corpo: (c) => {
-      const d = Math.max(1, c.pix?.diasRestantes ?? 3), fim = dataCurta(c.pix?.fimEm), meses = mesesDoPlano(c.pix?.plano), plano = nomePlano(c.pix?.plano);
-      return [
-        momento(c),
-        `Passando com um lembrete amigo: o seu plano${plano ? ` ${plano}` : ""}, pago no Pix, vai at\xE9 ${fim ?? `daqui a ${D(d)}`}. Como o Pix n\xE3o renova sozinho, quis te avisar com calma, sem pressa nenhuma.`,
-        `Se quiser continuar, d\xE1 para renovar quando preferir, sem perder nenhum dia: os ${D(d)} que faltam continuam valendo e o per\xEDodo novo come\xE7a quando o atual termina${meses ? `. Renovando o mesmo plano, voc\xEA fica com esses ${D(d)} mais ${meses}` : ""}.`,
-        nadaSePerde(c),
-        `A renova\xE7\xE3o fica na p\xE1gina de planos: ${c.link("assinatura")}`
-      ];
-    }
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, `faltam ${D(Math.max(1, c.pix?.diasRestantes ?? 3))} do seu plano`, `Faltam ${D(Math.max(1, c.pix?.diasRestantes ?? 3))} do seu plano`)],
-    corpo: (c) => {
-      const d = Math.max(1, c.pix?.diasRestantes ?? 3), fim = dataCurta(c.pix?.fimEm);
-      return [
-        `Faltam ${D(d)} para terminar o acesso que voc\xEA pagou no Pix${fim ? ` (vai at\xE9 ${fim})` : ""}. Aviso com anteced\xEAncia, porque ningu\xE9m tem tempo de ficar lembrando de data.`,
-        c.fatos.semana ? `Vi que voc\xEA fez ${Q(c.fatos.semana)} s\xF3 na \xFAltima semana, que ritmo bonito. Quis avisar para nada interromper esse embalo.` : "Quis avisar para nada interromper o seu estudo, se voc\xEA quiser seguir.",
-        `Se renovar antes, os dias que faltam n\xE3o se perdem: o per\xEDodo novo come\xE7a quando o atual termina. Fica tudo na p\xE1gina de planos: ${c.link("assinatura")}`,
-        "Se preferir n\xE3o ter que lembrar, no cart\xE3o a assinatura renova sozinha, e d\xE1 para cancelar quando quiser em Minha conta.",
-        "E obrigado pelo tempo que voc\xEA j\xE1 passou por aqui."
-      ];
-    }
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "sobre o seu acesso no Pix", "Sobre o seu acesso no Pix")],
-    corpo: (c) => {
-      const fim = dataCurta(c.pix?.fimEm);
-      return [
-        momento(c),
-        `Um lembrete r\xE1pido, com carinho: o seu acesso pago no Pix vai at\xE9 ${fim ?? "os pr\xF3ximos dias"}.`,
-        nadaSePerde(c),
-        `Se quiser seguir estudando com tudo liberado, d\xE1 para renovar antes, sem perder os dias que ainda faltam. \xC9 pela p\xE1gina de planos: ${c.link("assinatura")}`,
-        "Se tiver qualquer d\xFAvida sobre o pagamento, me responde aqui."
-      ];
-    }
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "obrigado pelo tempo por aqui", "Obrigado pelo tempo por aqui")],
-    corpo: (c) => {
-      const d = Math.max(1, c.pix?.diasRestantes ?? 3), fim = dataCurta(c.pix?.fimEm);
-      return [
-        "Antes do lembrete, um obrigado: pelo tempo que voc\xEA j\xE1 passou estudando por aqui, e pela confian\xE7a.",
-        `O lembrete: o seu acesso pago no Pix termina em ${D(d)}${fim ? `, dia ${fim}` : ""}. Como o Pix n\xE3o renova sozinho, aviso para a escolha ser sua, com calma.`,
-        nadaSePerde(c),
-        `Se fizer sentido continuar, a renova\xE7\xE3o fica aqui, e o per\xEDodo novo emenda no atual: ${c.link("assinatura")}`,
-        portaAberta
-      ];
-    }
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "tr\xEAs dias e uma escolha sua", "Tr\xEAs dias e uma escolha sua")],
-    corpo: (c) => {
-      const fim = dataCurta(c.pix?.fimEm);
-      return [
-        momento(c),
-        `O seu acesso pago no Pix vai at\xE9 ${fim ?? "daqui a poucos dias"}. Aviso com calma, para a escolha de continuar ser sua, feita com tempo.`,
-        c.obs(1),
-        nadaSePerde(c),
-        `Se quiser seguir, a renova\xE7\xE3o emenda no atual, sem intervalo: ${c.link("assinatura")}`
-      ];
-    }
-  }
-];
-var pix_hoje = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "seu acesso vai at\xE9 hoje", "Seu acesso vai at\xE9 hoje")],
-    corpo: (c) => {
-      const meses = mesesDoPlano(c.pix?.plano), plano = nomePlano(c.pix?.plano);
-      return [
-        momento(c),
-        `Hoje \xE9 o \xFAltimo dia do seu plano${plano ? ` ${plano}` : ""} pago no Pix, e quis te avisar com carinho.`,
-        `Se renovar hoje, voc\xEA segue sem nenhum dia de intervalo: o per\xEDodo novo come\xE7a quando o atual termina${meses ? ` e vale ${meses === "1 m\xEAs" ? "1 m\xEAs completo" : `${meses} completos`}` : ""}. Se renovar depois, ele come\xE7a no dia do pagamento. Nos dois casos, nada se perde.`,
-        nadaSePerde(c),
-        `A renova\xE7\xE3o fica aqui: ${c.link("assinatura")}`
-      ];
-    }
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "\xFAltimo dia do seu plano", "\xDAltimo dia do seu plano")],
-    corpo: (c) => [
-      "S\xF3 para n\xE3o ter surpresa amanh\xE3: o seu acesso pago no Pix vai at\xE9 hoje.",
-      momento(c),
-      `Se quiser continuar, renovar hoje mant\xE9m tudo sem interrup\xE7\xE3o, inclusive a fila da Revis\xE3o. \xC9 pela p\xE1gina de planos: ${c.link("assinatura")}`,
-      "E se preferir n\xE3o renovar agora, obrigado de cora\xE7\xE3o pelo tempo de assinatura. Seu progresso fica guardado, esperando por voc\xEA, do jeito que voc\xEA deixou.",
-      portaAberta
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "hoje \xE9 o \xFAltimo dia do seu Pix", "Hoje \xE9 o \xFAltimo dia do seu Pix")],
-    corpo: (c) => [
-      "Hoje \xE9 o \xFAltimo dia do acesso do seu plano pago no Pix.",
-      c.dez ? `Voc\xEA construiu bastante coisa aqui: ${Q(c.r)}${c.pctBom !== null ? `, com ${c.pctBom}% de acerto` : ""}. Fico feliz de ver tudo isso, e nada disso se perde.` : "Tudo o que voc\xEA fez por aqui fica guardado, renovando ou n\xE3o.",
-      `Se quiser seguir, renovando hoje o per\xEDodo novo emenda no atual: ${c.link("assinatura")}`,
-      c.tempo(),
-      "Qualquer d\xFAvida, me responde."
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "obrigado, e um aviso", "Obrigado, e um aviso")],
-    corpo: (c) => [
-      "Primeiro, obrigado pelo tempo que voc\xEA passou estudando por aqui com tudo liberado.",
-      "O aviso: o seu acesso pago no Pix termina hoje. Como o Pix n\xE3o renova sozinho, a escolha \xE9 sua, e qualquer uma delas est\xE1 certa.",
-      nadaSePerde(c),
-      `Se quiser continuar, a renova\xE7\xE3o fica aqui e emenda no per\xEDodo atual: ${c.link("assinatura")}`,
-      portaAberta
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "o que acontece amanh\xE3", "O que acontece amanh\xE3")],
-    corpo: (c) => [
-      momento(c),
-      "Seu acesso pago no Pix vai at\xE9 hoje, e quis te contar com clareza o que acontece amanh\xE3, para n\xE3o ter susto.",
-      c.dez ? `As quest\xF5es abertas continuam, ${asSuas(c)} e o Caderno de erros ficam guardados, e a Revis\xE3o continua separando o que precisa voltar. O que fica fechado \xE9 a parte do plano: cronograma, Simulado Nacional, temas que mais caem e Biblioteca.` : "As quest\xF5es abertas continuam e tudo o que voc\xEA fez fica guardado. O que fica fechado \xE9 a parte do plano: cronograma, Simulado Nacional, temas que mais caem e Biblioteca.",
-      `Se quiser seguir com tudo liberado, a renova\xE7\xE3o fica aqui: ${c.link("assinatura")}`,
-      "Se n\xE3o for a hora, tudo bem tamb\xE9m. Obrigado pelo tempo por aqui."
-    ]
-  }
-];
-var AREA_NOME = (slug, c) => c.area(slug)?.em ?? slug;
-var PONTOS = (n) => n === 1 ? "1 ponto" : `${N(n)} pontos`;
-var QRel = (n) => n >= 10 ? Q(n) : "algumas quest\xF5es";
-var acertoDoPeriodo = (c) => {
-  const r = c.relatorio;
-  const a = r.certas + r.erradas > 0 ? Math.round(100 * r.certas / (r.certas + r.erradas)) : null;
-  const citavel = a !== null && r.respostas >= 30 && a >= 50 ? a : null;
-  return { acerto: a, citavel, subiu: a !== null && r.respostas >= 10 && r.acertoAnterior !== null && a > r.acertoAnterior ? a - r.acertoAnterior : null };
-};
-var diasAtivos = (r) => r.diasAtivos === 1 ? "um dia" : `${["", "um", "dois", "tr\xEAs", "quatro", "cinco", "seis", "sete", "oito", "nove"][r.diasAtivos] ?? N(r.diasAtivos)} dias`;
-var relatorio = [
-  {
-    id: "v1",
-    assuntos: (c) => {
-      const r = c.relatorio;
-      return [nm(c, `seu resumo ${r.rotulo}`, `Seu resumo ${r.rotulo}`), r.respostas >= 10 && nm(c, `${Q(r.respostas)} ${r.em}`, `${cap(Q(r.respostas))} ${r.em}`)];
-    },
-    corpo: (c) => {
-      const r = c.relatorio;
-      if (r.respostas <= 0) return [
-        `${r.frase}, a rotina deve ter apertado, e est\xE1 tudo bem: acontece com todo mundo que estuda no meio da resid\xEAncia, e nada do que voc\xEA j\xE1 fez se perdeu.`,
-        r.totalAcumulado >= 10 ? `Suas ${Q(r.totalAcumulado)} continuam guardadas, e a Revis\xE3o j\xE1 separou as que pedem uma segunda olhada.` : "O que voc\xEA j\xE1 fez continua guardado, e a Revis\xE3o j\xE1 separou o que pede uma segunda olhada.",
-        "Para voltar sem peso: n\xE3o tente recuperar o tempo. Dez quest\xF5es e a Revis\xE3o do dia j\xE1 colocam tudo nos trilhos, em dez minutos.",
-        `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-        c.fecho()
-      ];
-      const { citavel, subiu } = acertoDoPeriodo(c);
-      const destaque = r.subiram[0];
-      return [
-        `Passando com o seu resumo ${r.rotulo}, e ele veio bonito.`,
-        `${r.frase}, foram ${QRel(r.respostas)} em ${diasAtivos(r)} de estudo${citavel !== null ? `, com ${citavel}% de acerto` : ""}${subiu !== null ? `, ${PONTOS(subiu)} acima do per\xEDodo anterior` : ""}.${destaque ? ` O destaque foi ${AREA_NOME(destaque.slug, c)}, que subiu ${PONTOS(destaque.agora - destaque.antes)}. D\xE1 para ver que voc\xEA est\xE1 lendo os coment\xE1rios, porque esse tipo de salto n\xE3o vem por acaso.` : " D\xE1 para ver que voc\xEA est\xE1 lendo os coment\xE1rios, e \xE9 isso que faz o estudo render."}`,
-        c.fatos.horario ? c.fato("horario") : "Trinta minutos num hor\xE1rio fixo valem mais que duas horas espalhadas. Se achar o seu hor\xE1rio, protege ele.",
-        r.simulado && r.simulado.total > 0 && r.simulado.acertos / r.simulado.total >= 0.5 ? `No ${r.simulado.titulo}, voc\xEA fez ${r.simulado.acertos} de ${r.simulado.total}. Parab\xE9ns.` : r.simulado ? `Obrigado por encarar o ${r.simulado.titulo}: s\xF3 de fazer, j\xE1 \xE9 um \xF3timo treino de tempo e de nervoso.` : null,
-        r.maisFraco && r.maisFraco.acerto < 70 ? `Uma ideia para o pr\xF3ximo per\xEDodo: dez quest\xF5es de ${AREA_NOME(r.maisFraco.slug, c)} por semana. \xC9 onde cada sess\xE3o vai render mais agora. ${c.link("treinar")}` : `Uma ideia para o pr\xF3ximo per\xEDodo: manter a Revis\xE3o em dia e abrir um tema que voc\xEA ainda quer explorar. ${c.link("revisao")}`
-      ];
-    },
-    ps: (c) => {
-      const r = c.relatorio;
-      return r.totalAcumulado >= 100 ? `P.S.: no total j\xE1 s\xE3o ${Q(r.totalAcumulado)} diferentes. Que caminho bonito at\xE9 aqui.` : c.ps();
-    }
-  },
-  {
-    id: "v2",
-    requer: (c) => (c.relatorio?.respostas ?? 0) > 0,
-    assuntos: (c) => [nm(c, `como foi o seu estudo ${c.relatorio.em}`, `Como foi o seu estudo ${c.relatorio.em}`), nm(c, `seu resumo ${c.relatorio.rotulo}`, `Seu resumo ${c.relatorio.rotulo}`)],
-    corpo: (c) => {
-      const r = c.relatorio;
-      const { citavel, subiu } = acertoDoPeriodo(c);
-      return [
-        `Passando com o seu resumo: ${QRel(r.respostas)} ${r.em}, em ${diasAtivos(r)}.${citavel !== null ? ` Acerto de ${citavel}%${subiu !== null ? `, ${PONTOS(subiu)} a mais que no per\xEDodo anterior` : ""}.` : subiu !== null ? ` E o seu acerto subiu ${PONTOS(subiu)} em rela\xE7\xE3o ao per\xEDodo anterior.` : ""}`,
-        r.respostasAnterior >= 10 && r.respostas > r.respostasAnterior ? `Foi mais do que no per\xEDodo anterior (${Q(r.respostasAnterior)}). Que bom sinal, porque const\xE2ncia \xE9 o que mais conta.` : "O que mais conta \xE9 seguir aparecendo, e voc\xEA est\xE1 seguindo, mesmo com a rotina que imagino.",
-        r.subiram.length ? `Destaque para ${AREA_NOME(r.subiram[0].slug, c)}, que cresceu ${PONTOS(r.subiram[0].agora - r.subiram[0].antes)}. Isso \xE9 coment\xE1rio lido com aten\xE7\xE3o.` : null,
-        c.obs(1, ["horario", "sequencia", "ranking"]),
-        r.maisFraco && r.maisFraco.acerto < 70 ? `Uma ideia para o pr\xF3ximo passo: dez quest\xF5es de ${AREA_NOME(r.maisFraco.slug, c)} por semana, que \xE9 onde cada sess\xE3o vai render mais. ${c.link("treinar")}` : `Uma ideia para o pr\xF3ximo passo: manter a Revis\xE3o em dia, dez minutos por dia. ${c.link("revisao")}`
-      ];
-    },
-    ps: (c) => {
-      const r = c.relatorio;
-      return r.totalAcumulado >= 100 ? `P.S.: no total, j\xE1 s\xE3o ${Q(r.totalAcumulado)} diferentes. Isso \xE9 base de verdade.` : c.ps();
-    }
-  },
-  {
-    id: "v3",
-    requer: (c) => (c.relatorio?.respostas ?? 0) >= 10,
-    assuntos: (c) => [nm(c, "a hist\xF3ria do seu estudo", `A hist\xF3ria do seu estudo ${c.relatorio.em}`), nm(c, `seu resumo ${c.relatorio.rotulo}`, `Seu resumo ${c.relatorio.rotulo}`)],
-    corpo: (c) => {
-      const r = c.relatorio;
-      const { citavel, subiu } = acertoDoPeriodo(c);
-      return [
-        `Queria te contar a hist\xF3ria do seu estudo ${r.em}, porque ela \xE9 melhor do que parece de dentro da rotina.`,
-        `Come\xE7a com ${diasAtivos(r)} em que voc\xEA abriu o site, mesmo com sono. Nesses dias, ${Q(r.respostas)}${citavel !== null ? `, com ${citavel}% de acerto` : ""}.${subiu !== null ? ` E o acerto subiu ${PONTOS(subiu)} em rela\xE7\xE3o ao per\xEDodo anterior, o que quer dizer que as quest\xF5es que te pegaram viraram acerto.` : ""}`,
-        r.subiram.length ? `O cap\xEDtulo bonito \xE9 ${AREA_NOME(r.subiram[0].slug, c)}: subiu ${PONTOS(r.subiram[0].agora - r.subiram[0].antes)}. Esse tipo de salto n\xE3o vem por acaso; vem de coment\xE1rio lido at\xE9 o fim.` : "O cap\xEDtulo bonito \xE9 a const\xE2ncia: aparecer \xE9 a parte mais dif\xEDcil, e voc\xEA apareceu.",
-        r.cairam.length ? `O pr\xF3ximo cap\xEDtulo, se fizer sentido, pode ser uma revisita com carinho a ${AREA_NOME(r.cairam[0].slug, c)}. Dez quest\xF5es por semana bastam.` : c.tempo(),
-        `Quando quiser continuar a hist\xF3ria, a Revis\xE3o j\xE1 est\xE1 pronta: ${c.link("revisao")}`
-      ];
-    }
-  },
-  {
-    id: "v4",
-    requer: (c) => (c.relatorio?.respostas ?? 0) > 0,
-    assuntos: (c) => [nm(c, "o seu per\xEDodo de estudo", `O seu estudo ${c.relatorio.em}`), nm(c, `seu resumo ${c.relatorio.rotulo}`, `Seu resumo ${c.relatorio.rotulo}`)],
-    corpo: (c) => {
-      const r = c.relatorio;
-      const { citavel, subiu } = acertoDoPeriodo(c);
-      return [
-        momento(c),
-        `${r.frase}, voc\xEA estudou em ${diasAtivos(r)}, com ${QRel(r.respostas)}${citavel !== null ? ` e ${citavel}% de acerto` : ""}. Para quem tem o dia tomado, isso \xE9 muito.`,
-        subiu !== null ? `O mais bonito: o acerto subiu ${PONTOS(subiu)} em rela\xE7\xE3o ao per\xEDodo anterior. Isso \xE9 a Revis\xE3o trabalhando, e voc\xEA deixando ela trabalhar.` : r.subiram.length ? `O mais bonito foi ${AREA_NOME(r.subiram[0].slug, c)}, que subiu ${PONTOS(r.subiram[0].agora - r.subiram[0].antes)}.` : "O mais bonito foi a const\xE2ncia, que \xE9 a parte que ningu\xE9m v\xEA e a que mais conta.",
-        r.maisFraco && r.maisFraco.acerto < 70 ? `Para o pr\xF3ximo per\xEDodo, se fizer sentido: dez quest\xF5es de ${AREA_NOME(r.maisFraco.slug, c)} por semana. \xC9 onde cada sess\xE3o rende mais agora. ${c.link("treinar")}` : `Para o pr\xF3ximo per\xEDodo: proteger o hor\xE1rio que funciona e manter a Revis\xE3o em dia. ${c.link("revisao")}`,
-        c.fecho()
-      ];
-    }
-  },
-  {
-    id: "v5",
-    requer: (c) => (c.relatorio?.respostas ?? 0) > 0 && (c.relatorio?.respostas ?? 0) < 30,
-    assuntos: (c) => [nm(c, `seu resumo ${c.relatorio.rotulo}`, `Seu resumo ${c.relatorio.rotulo}`), nm(c, "pouco, mas de verdade", "Pouco, mas de verdade")],
-    corpo: (c) => {
-      const r = c.relatorio;
-      return [
-        `Passando com o seu resumo ${r.rotulo}, com carinho.`,
-        `${r.frase}, voc\xEA abriu o site em ${diasAtivos(r)} e fez ${QRel(r.respostas)}. Pouco, mas de verdade: cada quest\xE3o dessas tem a explica\xE7\xE3o de todas as alternativas, ent\xE3o rendeu mais do que parece.`,
-        "Para o pr\xF3ximo per\xEDodo, n\xE3o precisa recuperar nada. Dez quest\xF5es por semana, no intervalo que der, j\xE1 mant\xEAm o h\xE1bito vivo. O site guarda o resto.",
-        `A Revis\xE3o fica aqui, com o que pede uma segunda olhada: ${c.link("revisao")}`,
-        c.fecho()
-      ];
-    }
-  }
-];
-var boas_vindas_dia0 = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "boas-vindas ao Orto Quest\xF5es", "Boas-vindas ao Orto Quest\xF5es")],
-    corpo: (c) => [
-      "Muito obrigado por criar a sua conta. \xC9 uma alegria ter voc\xEA no Orto Quest\xF5es, e quero te mostrar rapidinho o que o site tem para te ajudar.",
-      "As quest\xF5es s\xE3o das provas oficiais, e cada uma vem com o coment\xE1rio de todas as alternativas, n\xE3o s\xF3 da certa. O que voc\xEA errar fica guardado e volta na Revis\xE3o no momento certo, sem voc\xEA precisar anotar nada.",
-      "No plano completo, o Cronograma monta o seu estudo at\xE9 a prova: quando voc\xEA abre o site, a lista do dia j\xE1 est\xE1 pronta, com o que mais cai primeiro e a reta final de revis\xE3o no fim. Se um plant\xE3o apertar a semana, ele redistribui sozinho.",
-      "Os resumos ficam na Biblioteca, organizados por tema, com as quest\xF5es reais no meio do texto para resolver na hora. Ler e treinar viram uma coisa s\xF3.",
-      "Um pedido carinhoso: o Orto Quest\xF5es cresce no boca a boca. Se o site te ajudar, conte para os colegas que tamb\xE9m est\xE3o estudando; \xE9 assim que o projeto chega a mais gente e continua melhorando.",
-      `Para come\xE7ar, cinco quest\xF5es de um tema de que voc\xEA goste j\xE1 s\xE3o um \xF3timo primeiro passo: ${c.link("treinar")}`
-    ],
-    ps: () => "P.S.: se tiver qualquer d\xFAvida, \xE9 s\xF3 responder este e-mail. Fico \xE0 disposi\xE7\xE3o."
-  }
-];
-var primeiras_10 = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "dez quest\xF5es, e o h\xE1bito come\xE7ou", "Dez quest\xF5es, e o h\xE1bito come\xE7ou"), nm(c, "as suas primeiras dez", "As suas primeiras dez")],
-    corpo: (c) => [
-      momento(c),
-      "Vi que voc\xEA passou das dez primeiras quest\xF5es, e quis registrar: \xE9 aqui que o h\xE1bito come\xE7a. As dez primeiras s\xE3o as mais dif\xEDceis, porque \xE9 quando a gente ainda est\xE1 decidindo se vai continuar.",
-      "Uma coisa para as pr\xF3ximas: ler o coment\xE1rio mesmo quando acerta. \xC9 onde a banca esconde o que ainda vai cobrar, e leva um minuto a mais.",
-      c.tempo(),
-      `A Revis\xE3o j\xE1 come\xE7ou a separar o que pede uma segunda olhada: ${c.link("revisao")}`
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "o come\xE7o est\xE1 feito", "O come\xE7o est\xE1 feito")],
-    corpo: (c) => [
-      momento(c),
-      "Dez quest\xF5es respondidas. Parece pouco, mas o come\xE7o est\xE1 feito, e come\xE7ar \xE9 a parte mais dif\xEDcil.",
-      "Daqui, o que mais ajuda \xE9 manter o ritmo pequeno: cinco por dia, no mesmo hor\xE1rio. Em um m\xEAs s\xE3o mais de cem, e o site j\xE1 consegue te mostrar os temas em que voc\xEA mais brilha.",
-      J(c.fato("prova"), c.fato("etapa")),
-      `Para seguir: ${c.link("treinar")}`
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "dez quest\xF5es, uma pergunta", "Dez quest\xF5es, uma pergunta")],
-    corpo: (c) => [
-      momento(c),
-      "Vi as suas primeiras dez quest\xF5es, e queria te fazer uma pergunta: o jeito do site combinou com voc\xEA?",
-      "Pergunto porque \xE9 agora que vale ajustar. Se os coment\xE1rios est\xE3o longos demais, se alguma coisa ficou confusa, se o tempo est\xE1 apertado, me conta respondendo este e-mail. Vou gostar de saber.",
-      "Se combinou, a sugest\xE3o \xE9 s\xF3 uma: seguir pequeno e constante. A Revis\xE3o cuida de trazer de volta o que te pegou.",
-      c.tempo()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "as dez primeiras s\xE3o as mais dif\xEDceis", "As dez primeiras s\xE3o as mais dif\xEDceis")],
-    corpo: (c) => [
-      momento(c),
-      "As dez primeiras quest\xF5es s\xE3o as mais dif\xEDceis de toda a prepara\xE7\xE3o. N\xE3o pelo conte\xFAdo: pelo tempo que a gente precisa achar para elas. Voc\xEA achou.",
-      "Agora o site come\xE7a a trabalhar por voc\xEA: a Revis\xE3o guarda o que te pegou e traz de volta na hora certa, e o Desempenho come\xE7a a desenhar onde voc\xEA est\xE1 forte.",
-      J(c.fato("prova"), c.fato("etapa")),
-      `Quando der, mais cinco: ${c.link("treinar")}`
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "dez feitas, e o resto \xE9 ritmo", "Dez feitas, e o resto \xE9 ritmo")],
-    corpo: (c) => [
-      momento(c),
-      "Dez quest\xF5es feitas. Fiquei feliz de ver, porque \xE9 o sinal de que voc\xEA encontrou um jeito de encaixar o estudo no dia.",
-      "Uma ideia para agora: escolher um hor\xE1rio, mesmo que curto, e repetir. Trinta minutos num hor\xE1rio fixo valem mais que duas horas espalhadas, principalmente no come\xE7o.",
-      "E ler o coment\xE1rio inteiro, inclusive das alternativas erradas. \xC9 onde mais se aprende.",
-      `A lista de hoje fica aqui: ${c.link("treinar")}`
-    ]
-  }
-];
-var voltou = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "que bom te ver de volta", "Que bom te ver de volta")],
-    corpo: (c) => [
-      `Que bom te ver de volta. Vi que voc\xEA entrou hoje depois de ${tempoFora(c.p.diasParado)} fora, e quis dizer que fiquei feliz.`,
-      c.obs(1, ["melhorArea", "maisEstudada", "ranking"]) ?? `${guardado(c)}, do jeito que voc\xEA deixou. Nada se perdeu.`,
-      "Para voltar sem peso: n\xE3o tente recuperar o tempo. Abra a Revis\xE3o, que j\xE1 separou as quest\xF5es que pedem uma segunda olhada, e fa\xE7a dez. \xC9 assim que o embalo volta.",
-      `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "voltou, e isso \xE9 o que importa", "Voltou, e isso \xE9 o que importa")],
-    corpo: (c) => [
-      `Vi que voc\xEA voltou hoje, depois de ${tempoFora(c.p.diasParado)}. Voltar \xE9 o que importa; o resto \xE9 detalhe.`,
-      momento(c),
-      `Tudo o que voc\xEA fez continua guardado${c.dez ? `: ${Q(c.r)}, o Caderno de erros, a fila da Revis\xE3o` : ""}. N\xE3o precisa refazer nada, nem explicar nada.`,
-      "Uma ideia para esta semana: dez quest\xF5es por dia, no intervalo que der. Pequeno de prop\xF3sito, para o h\xE1bito voltar antes da pressa.",
-      `Para come\xE7ar pelo que mais vale: ${c.link("revisao")}`
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "senti sua falta por aqui", "Senti sua falta por aqui")],
-    corpo: (c) => [
-      `Senti sua falta por aqui, e hoje vi que voc\xEA voltou. Faz ${tempoFora(c.p.diasParado)}, e imagino que a rotina tenha engolido o estudo. Acontece com todo mundo.`,
-      c.obs(1, ["prova", "etapa", "cronograma", "melhorArea"]),
-      "Uma coisa vale para quase todo mundo: o estudo que funciona \xE9 o que cabe na rotina real. Ent\xE3o, para voltar, nada de maratona: dez minutos, a Revis\xE3o, e pronto.",
-      `Fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "do jeito que voc\xEA deixou", "Do jeito que voc\xEA deixou")],
-    corpo: (c) => [
-      `Que bom te ver de volta depois de ${tempoFora(c.p.diasParado)}. O site est\xE1 do jeito que voc\xEA deixou.`,
-      momento(c),
-      `${cap(asSuas(c))} e as quest\xF5es para revisar continuam l\xE1. A Revis\xE3o at\xE9 aproveitou o tempo: separou o que mais vale uma segunda olhada.`,
-      "Se quiser me contar como foram essas semanas, \xE9 s\xF3 responder. Vou gostar de saber.",
-      c.tempo()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "recome\xE7ar pequeno", "Recome\xE7ar pequeno")],
-    corpo: (c) => [
-      `Que bom te ver de volta depois de ${tempoFora(c.p.diasParado)}. Uma ideia carinhosa: recome\xE7ar pequeno.`,
-      "Quem volta depois de um tempo fora costuma querer compensar, e a\xED a primeira sess\xE3o vira maratona e a segunda n\xE3o acontece. O contr\xE1rio funciona melhor: dez quest\xF5es, e amanh\xE3 mais dez.",
-      c.obs(1),
-      `A Revis\xE3o j\xE1 separou por onde come\xE7ar: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  }
-];
-var cronograma_pronto = [
-  {
-    id: "v1",
-    assuntos: (c) => [diasProva(c) && nm(c, `${diasProva(c)} e um plano pronto`, `${cap(diasProva(c))} e um plano pronto`), nm(c, "seu cronograma est\xE1 pronto", "Seu cronograma est\xE1 pronto")],
-    corpo: (c) => [
-      `Vi que voc\xEA montou o seu cronograma hoje${diasProva(c) ? `, com ${c.nomeProva} a ${diasProva(c)}` : ""}. Fiquei feliz, porque isso \xE9 a decis\xE3o que mais devolve tempo de todas.`,
-      "A partir de agora, quando voc\xEA sentar, a lista do dia j\xE1 est\xE1 pronta: o que mais cai primeiro, o tempo de cada parte, a reta final de revis\xE3o no fim. Nada para decidir.",
-      "Uma dica: n\xE3o precisa adiantar. Se um dia sobrar tempo, fa\xE7a a Revis\xE3o. Se um plant\xE3o bagun\xE7ar a semana, marque o dia de plant\xE3o e deixe o cronograma redistribuir. Ele foi feito para isso.",
-      c.obs(1, ["horario", "etapa", "prova"]),
-      `O seu plano fica aqui: ${c.link("cronograma")}`
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "a lista do dia j\xE1 est\xE1 pronta", "A lista do dia j\xE1 est\xE1 pronta")],
-    corpo: (c) => [
-      momento(c),
-      `Seu cronograma est\xE1 montado${diasProva(c) ? `: ${diasProva(c)} at\xE9 ${c.nomeProva}` : ""}. Pode dar aquela sensa\xE7\xE3o de olhar para o plano e pensar "\xE9 muita coisa".`,
-      'N\xE3o \xE9. \xC9 uma coisa por dia, e ela j\xE1 est\xE1 decidida. O que muda \xE9 que voc\xEA para de gastar os quinze minutos de "o que eu estudo hoje" e usa eles estudando.',
-      "Se a semana apertar, ele se ajusta sozinho. Se voc\xEA adiantar, ele alivia. O plano \xE9 seu, n\xE3o o contr\xE1rio.",
-      `A lista de hoje: ${c.link("cronograma")}`
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "o que fazer com o cronograma", "O que fazer com o cronograma pronto")],
-    corpo: (c) => [
-      `Cronograma pronto${diasProva(c) ? `, ${diasProva(c)} para ${c.nomeProva}` : ""}. Agora a parte boa: ele trabalha, voc\xEA estuda.`,
-      "Tr\xEAs coisas que ajudam nas primeiras semanas: abrir a lista do dia antes de qualquer outra coisa, fazer a Revis\xE3o quando sobrar tempo em vez de adiantar, e marcar o dia de plant\xE3o sem peso na consci\xEAncia, porque ele redistribui sozinho.",
-      c.obs(1, ["horario", "etapa"]),
-      "E dormir. O cronograma conta com o seu descanso; foi calibrado assim.",
-      `Fica aqui: ${c.link("cronograma")}`
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "agora \xE9 s\xF3 sentar e fazer", "Agora \xE9 s\xF3 sentar e fazer")],
-    corpo: (c) => [
-      momento(c),
-      `Vi o seu cronograma montado${diasProva(c) ? ` para ${c.nomeProva}, a ${diasProva(c)}` : ""}, e quis dizer uma coisa: a parte dif\xEDcil j\xE1 foi. Com o plano pronto, cada dia fica mais leve.`,
-      "Daqui, \xE9 s\xF3 sentar e fazer. A lista de cada dia, o que mais cai primeiro, a reta final de revis\xE3o: tudo j\xE1 est\xE1 decidido. Se um dia faltar, o plano se ajusta, sem drama.",
-      c.tempo(),
-      `A lista de hoje fica aqui: ${c.link("cronograma")}`
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "seu plano at\xE9 a prova", "Seu plano at\xE9 a prova")],
-    corpo: (c) => [
-      `Seu plano at\xE9 ${c.nomeProva} est\xE1 pronto${diasProva(c) ? `: ${diasProva(c)}, divididos em dias que cabem na sua rotina` : ""}. Fiquei feliz de ver.`,
-      "Uma coisa boa de saber: o cronograma foi feito para a rotina real, n\xE3o para a ideal. Dia de plant\xE3o, semana ruim, atraso: ele redistribui. O que ele pede de voc\xEA \xE9 s\xF3 aparecer.",
-      c.obs(1, ["horario", "etapa", "prova"]),
-      "E se em algum momento o plano parecer pesado demais ou leve demais, \xE9 s\xF3 me responder. D\xE1 para ajustar a intensidade, e eu ajudo com carinho.",
-      `Fica aqui: ${c.link("cronograma")}`
-    ]
-  }
-];
-var periodoPagamento = (c) => {
-  const p = c.pagamento;
-  const inicio = dataLonga(p?.inicioEm), fim = dataLonga(p?.fimEm);
-  if (inicio && fim) return `de ${inicio} a ${fim}`;
-  if (fim) return `at\xE9 ${fim}`;
-  const meses = mesesDoPlano(p?.plano);
-  return meses ? `pelos pr\xF3ximos ${meses}` : "pelo per\xEDodo do plano";
-};
-var oQueLibera = (c) => `cronograma at\xE9 a prova, Simulado Nacional todo m\xEAs, temas que mais caem com a resposta da turma e Biblioteca de resumos${c.p.limiteGratisLigado ? ", al\xE9m de quest\xF5es sem limite di\xE1rio" : ""}`;
-var pagamento_aprovado = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "obrigado pela assinatura", "Obrigado pela assinatura"), nm(c, "que alegria ter voc\xEA no plano", "Que alegria ter voc\xEA no plano")],
-    corpo: (c) => {
-      const plano = nomePlano(c.pagamento?.plano);
-      return [
-        `Muito obrigado pela ${c.pagamento?.renovacao ? "renova\xE7\xE3o" : "assinatura"}. Fiquei muito feliz, e queria te agradecer de cora\xE7\xE3o pela confian\xE7a.`,
-        `${c.pagamento?.renovacao ? "A renova\xE7\xE3o foi aprovada" : "O pagamento foi aprovado"}, e o plano${plano ? ` ${plano}` : ""} j\xE1 est\xE1 ativo ${periodoPagamento(c)}. Agora voc\xEA tem ${oQueLibera(c)}.`,
-        `Uma sugest\xE3o carinhosa para os primeiros dez minutos: montar o cronograma. Voc\xEA diz a data ${c.daProva}, e a lista de cada dia j\xE1 fica pronta quando voc\xEA sentar para estudar.`,
-        `Fica aqui: ${c.link("cronograma")}`,
-        c.pagamento?.meio === "pix" ? "Como foi no Pix, o plano n\xE3o renova sozinho: eu te aviso com calma quando estiver acabando." : "A assinatura renova sozinha, e d\xE1 para cancelar quando quiser em Minha conta, sem precisar explicar nada."
-      ];
-    },
-    ps: () => "P.S.: se qualquer coisa n\xE3o funcionar como esperado, \xE9 s\xF3 responder este e-mail. Vou resolver com carinho."
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "um obrigado de cora\xE7\xE3o", "Um obrigado de cora\xE7\xE3o")],
-    corpo: (c) => {
-      const plano = nomePlano(c.pagamento?.plano);
-      return [
-        "Um obrigado de cora\xE7\xE3o pela sua assinatura. \xC9 uma alegria enorme ter voc\xEA no plano.",
-        `Est\xE1 tudo certo: pagamento aprovado e acesso${plano ? ` ao plano ${plano}` : ""} liberado ${periodoPagamento(c)}, com ${oQueLibera(c)}.`,
-        "Nos primeiros dias, uma ordem que costuma ajudar: primeiro o cronograma, para a lista do dia j\xE1 estar pronta quando voc\xEA sentar; depois os temas que mais caem, para saber onde vale insistir. O resto vem com calma.",
-        `O cronograma fica aqui: ${c.link("cronograma")}`,
-        "Qualquer d\xFAvida, \xE9 s\xF3 me responder."
-      ];
-    },
-    ps: () => "P.S.: se quiser me contar para qual prova est\xE1 estudando, vou gostar de saber e torcer junto."
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "obrigado, e est\xE1 tudo liberado", "Obrigado, e est\xE1 tudo liberado")],
-    corpo: (c) => {
-      const plano = nomePlano(c.pagamento?.plano);
-      return [
-        `Obrigado, de verdade, pela sua assinatura. O plano${plano ? ` ${plano}` : ""} j\xE1 est\xE1 ativo ${periodoPagamento(c)}.`,
-        J(momento(c), c.obs(1, ["prova", "etapa", "cronograma"])),
-        `A partir de agora voc\xEA tem ${oQueLibera(c)}. Tudo para o estudo caber na sua rotina com mais leveza.`,
-        `Para come\xE7ar pelo que mais devolve tempo, o cronograma: ${c.link("cronograma")}`,
-        c.pagamento?.meio === "pix" ? "No Pix, o plano n\xE3o renova sozinho; eu aviso com calma quando estiver perto do fim." : "A assinatura renova sozinha, e cancelar \xE9 um clique em Minha conta, quando quiser."
-      ];
-    },
-    ps: () => "P.S.: obrigado mais uma vez. Fico muito contente de ter voc\xEA por aqui."
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "obrigado pela confian\xE7a", "Obrigado pela confian\xE7a"), nm(c, "seu plano est\xE1 ativo", "Seu plano est\xE1 ativo")],
-    corpo: (c) => {
-      const plano = nomePlano(c.pagamento?.plano);
-      return [
-        `Obrigado pela confian\xE7a. A sua assinatura foi aprovada, e o plano${plano ? ` ${plano}` : ""} est\xE1 ativo ${periodoPagamento(c)}.`,
-        `O que ficou liberado: ${oQueLibera(c)}. Em outras palavras, menos tempo decidindo e mais tempo estudando.`,
-        "Se fizer sentido, hoje vale uma coisa s\xF3: montar o cronograma com a data da prova. Leva dois minutos, e a partir de amanh\xE3 a lista do dia j\xE1 est\xE1 pronta.",
-        `Fica aqui: ${c.link("cronograma")}`,
-        "Se n\xE3o for o que voc\xEA esperava, o reembolso em 7 dias \xE9 pelo pr\xF3prio site, sem precisar explicar nada."
-      ];
-    },
-    ps: () => "P.S.: se quiser responder este e-mail, vou adorar ler."
-  },
-  {
-    id: "v5",
-    requer: (c) => !!c.pagamento?.renovacao,
-    assuntos: (c) => [nm(c, "obrigado por continuar", "Obrigado por continuar"), nm(c, "sua renova\xE7\xE3o foi aprovada", "Sua renova\xE7\xE3o foi aprovada")],
-    corpo: (c) => {
-      const plano = nomePlano(c.pagamento?.plano);
-      return [
-        `Obrigado por continuar com a gente. A sua renova\xE7\xE3o${plano ? ` do plano ${plano}` : ""} foi aprovada, e o acesso segue ${periodoPagamento(c)}.`,
-        c.obs(1, ["melhorArea", "ranking", "cronograma", "sequencia"]) ?? "Fico muito contente de saber que o site cabe na sua rotina.",
-        `Tudo continua liberado: ${oQueLibera(c)}. Nada muda, nada se perde, e a fila da Revis\xE3o segue de onde estava.`,
-        `Se a data da prova mudou, vale atualizar o cronograma para ele recalcular: ${c.link("cronograma")}`,
-        "E se tiver qualquer ideia para melhorar, \xE9 s\xF3 me responder."
-      ];
-    },
-    ps: () => "P.S.: obrigado, de cora\xE7\xE3o. Que bom seguir junto at\xE9 a prova."
-  }
-];
-var obrigado_tempo = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "obrigado pelo tempo por aqui", "Obrigado pelo tempo por aqui")],
-    corpo: (c) => {
-      const fim = dataLonga(c.encerramento?.fimEm);
-      return [
-        c.encerramento?.reembolso ? "Vi que voc\xEA pediu o reembolso, e j\xE1 est\xE1 encaminhado. Antes de qualquer coisa: obrigado pelo tempo que voc\xEA passou por aqui, e por ter dado uma chance ao site." : `Vi que voc\xEA cancelou a assinatura${fim ? `, e o acesso segue at\xE9 ${fim}` : ""}. Antes de qualquer coisa: obrigado pelo tempo que voc\xEA passou por aqui.`,
-        c.dez ? `${cap(asSuas(c))}, o Caderno de erros e a fila da Revis\xE3o ficam guardados. As quest\xF5es abertas continuam abertas, e nada do que voc\xEA fez se perde.` : "Tudo o que voc\xEA fez fica guardado, e as quest\xF5es abertas continuam abertas para voc\xEA.",
-        "Se foi o site que n\xE3o ajudou, vou gostar muito de saber o que faltou. Uma linha basta, e vira melhoria. Se foi a vida, a prova que passou ou o or\xE7amento que apertou, tudo bem tamb\xE9m.",
-        "A porta fica aberta, sem pressa e sem insist\xEAncia. Quando e se fizer sentido, \xE9 s\xF3 voltar.",
-        c.fecho()
-      ];
-    },
-    ps: () => "P.S.: qualquer resposta, at\xE9 cr\xEDtica, \xE9 recebida com carinho."
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "a porta fica aberta", "A porta fica aberta")],
-    corpo: (c) => {
-      const fim = dataLonga(c.encerramento?.fimEm);
-      return [
-        `${c.encerramento?.reembolso ? "Seu reembolso est\xE1 encaminhado" : `Sua assinatura foi cancelada${fim ? `, com acesso at\xE9 ${fim}` : ""}`}, e eu quis te escrever para dizer uma coisa s\xF3: obrigado, de cora\xE7\xE3o.`,
-        c.obs(1, ["melhorArea", "ranking", "sequencia"]),
-        "Nada do que voc\xEA fez se perde. O que fica fechado \xE9 a parte do plano; as quest\xF5es, o Caderno de erros e a Revis\xE3o continuam seus.",
-        "Se tiver dois minutos, me conta o que faria o site valer mais para voc\xEA. Vou gostar muito de saber.",
-        "E a porta fica aberta. Sem pressa, sem insist\xEAncia."
-      ];
-    },
-    ps: () => "P.S.: tor\xE7o por voc\xEA do mesmo jeito, assinando ou n\xE3o."
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "obrigado, e boa prova", "Obrigado, e boa prova")],
-    corpo: (c) => [
-      `Vi que voc\xEA ${c.encerramento?.reembolso ? "pediu o reembolso" : "cancelou a assinatura"}, e quis agradecer pelo tempo que passamos juntos por aqui. Fico feliz de ter feito parte do seu estudo, mesmo que por um per\xEDodo.`,
-      J(momento(c), c.obs(1, ["prova", "etapa", "cronograma"])),
-      "Se a prova ainda est\xE1 pela frente, tor\xE7o por voc\xEA do mesmo jeito. As quest\xF5es abertas continuam abertas, e tudo o que voc\xEA fez fica guardado.",
-      "Se algo no site n\xE3o funcionou como voc\xEA esperava, me conta? Uma linha j\xE1 ajuda, e eu respondo.",
-      c.fecho()
-    ],
-    ps: () => "P.S.: quando a prova passar, se quiser me contar como foi, eu vou gostar de saber."
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "sem insist\xEAncia, com gratid\xE3o", "Sem insist\xEAncia, com gratid\xE3o")],
-    corpo: (c) => {
-      const fim = dataLonga(c.encerramento?.fimEm);
-      return [
-        `${c.encerramento?.reembolso ? "O reembolso j\xE1 est\xE1 encaminhado." : `O cancelamento est\xE1 feito${fim ? `, e o acesso vale at\xE9 ${fim}` : ""}.`} Nada de pergunta, nada de "tem certeza?". S\xF3 um obrigado, de cora\xE7\xE3o.`,
-        c.dez ? `Voc\xEA deixou ${Q(c.r)} por aqui, e elas ficam suas: o Caderno de erros, a Revis\xE3o, tudo guardado.` : "Tudo o que voc\xEA fez por aqui fica guardado e continua seu.",
-        "Eu entendo que a rotina muda, que a prova passa, que o or\xE7amento aperta. Se um dia fizer sentido voltar, est\xE1 tudo do jeito que voc\xEA deixou.",
-        "E se tiver algo que eu possa melhorar, \xE9 s\xF3 responder este e-mail.",
-        c.fecho()
-      ];
-    },
-    ps: () => "P.S.: obrigado, de verdade. Foi muito bom ter voc\xEA no plano."
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "uma pergunta s\xF3, se puder", "Uma pergunta s\xF3, se puder")],
-    corpo: (c) => [
-      `Vi que voc\xEA ${c.encerramento?.reembolso ? "pediu o reembolso" : "cancelou a assinatura"}. Est\xE1 tudo certo, e obrigado pelo tempo por aqui.`,
-      "Tenho uma pergunta s\xF3, se puder responder: o que faltou? Pode ser o tempo, um recurso que n\xE3o existe, a prova que j\xE1 passou. Qualquer resposta me ajuda a fazer o site melhor para quem vem depois.",
-      c.obs(1, ["prova", "etapa"]),
-      "Independentemente da resposta, tudo o que voc\xEA fez fica guardado, e as quest\xF5es abertas continuam abertas para voc\xEA. A porta fica aberta.",
-      c.fecho()
-    ],
-    ps: () => "P.S.: qualquer resposta, mesmo de uma linha, me ajuda muito."
-  }
-];
-var provaDela = (c) => c.nomeProva;
-var daProvaDela = (c) => provaDela(c).replace(/^o /, "do ").replace(/^a /, "da ");
-var usaProva = (c) => {
-  if (c.fatos.cronograma) c.usados.add("cronograma");
-  return null;
-};
-var usaAniversario = (c) => {
-  if (c.fatos.aniversario) c.usados.add("aniversario");
-  return null;
-};
-var semanaFora = (c) => tempoFora(Math.max(7, Number(c.p.diasParado) || 7));
-var notaSimulado = (c) => {
-  const s = c.campanha.simulado;
-  const a = Number(s?.acertos), t = Number(s?.total);
-  return Number.isInteger(a) && Number.isInteger(t) && t >= 10 && a >= 10 && a <= t && a * 2 >= t ? `${N(a)} de ${N(t)}` : null;
-};
-var posicaoSimulado = (c) => {
-  const p = Number(c.campanha.simulado?.posicao);
-  return Number.isInteger(p) && p >= 1 && p <= 30 ? p : null;
-};
-var resultadoSimulado = (c) => {
-  const nota = notaSimulado(c), pos = posicaoSimulado(c);
-  if (nota && pos) return `Voc\xEA acertou ${nota} quest\xF5es e ficou em ${pos}\xBA lugar entre quem entregou no tempo.`;
-  if (nota) return `Voc\xEA acertou ${nota} quest\xF5es.`;
-  if (pos) return `Voc\xEA ficou em ${pos}\xBA lugar entre quem entregou no tempo.`;
-  return null;
-};
-var anosConta = (c) => Math.max(1, Math.round(Number(c.campanha.anos) || 0) || Math.round((Number(c.p.diasConta) || 0) / 365));
-var anosTexto = (c) => {
-  const n = anosConta(c);
-  return n === 1 ? "um ano" : n === 2 ? "dois anos" : n === 3 ? "tr\xEAs anos" : `${N(n)} anos`;
-};
-var AREA_EM = {
-  "mao": "m\xE3o e punho",
-  "ombro-cotovelo": "ombro e cotovelo",
-  "quadril": "quadril",
-  "joelho": "joelho",
-  "coluna": "coluna",
-  "pe-tornozelo": "p\xE9 e tornozelo",
-  "trauma": "trauma",
-  "pediatria": "ortopedia pedi\xE1trica",
-  "tumores": "tumores",
-  "conceitos-basicos": "conceitos b\xE1sicos",
-  "osteometabolicas": "doen\xE7as osteometab\xF3licas"
-};
-var tituloResumo = (c) => {
-  const t = (c.campanha.resumo?.titulo ?? "").trim();
-  return t.length >= 3 && t.length <= 90 && !/[{}<>"]/.test(t) ? t : null;
-};
-var areaResumo = (c) => {
-  const e = c.campanha.resumo?.especialidade;
-  return e && AREA_EM[e] ? AREA_EM[e] : null;
-};
-var oResumo = (c) => tituloResumo(c) ? `o resumo "${tituloResumo(c)}"` : "um resumo novo";
-var assinou_sem_cronograma = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "dois minutos que devolvem horas", "Dois minutos que devolvem horas"), nm(c, "o cronograma est\xE1 esperando", "O cronograma est\xE1 esperando")],
-    corpo: (c) => [
-      momento(c),
-      "Faz alguns dias que voc\xEA assinou, e eu queria te contar da parte do plano que mais devolve tempo: o cronograma. Vi que ele ainda est\xE1 em branco, e tudo bem, a primeira semana costuma ser corrida.",
-      `Leva uns dois minutos: voc\xEA diz a data ${c.daProva}, quantos dias por semana d\xE1 para estudar e quais s\xE3o as folgas. A partir da\xED, a lista de cada dia j\xE1 fica pronta quando voc\xEA sentar, com o que mais cai primeiro.`,
-      c.obs(1, ["prova", "etapa", "horario"]),
-      `Fica aqui: ${c.link("cronograma")}`,
-      c.fecho()
-    ],
-    ps: () => "P.S.: se a data da prova ainda n\xE3o saiu, vale colocar uma estimativa. D\xE1 para mudar depois, e o plano se refaz sozinho."
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "uma ideia para a primeira semana", "Uma ideia para a primeira semana"), nm(c, "uma ideia que ajuda", "Uma ideia que ajuda")],
-    corpo: (c) => [
-      "Obrigado mais uma vez pela assinatura. Passaram uns dias, e eu quis te mandar uma sugest\xE3o carinhosa para aproveitar o plano.",
-      "Monte o cronograma antes de qualquer outra coisa. O tempo que mais se perde na prepara\xE7\xE3o n\xE3o \xE9 estudando, \xE9 decidindo o que estudar, e o cronograma tira essa decis\xE3o das suas costas.",
-      J(c.fato("prova"), c.fato("etapa")),
-      "Se um plant\xE3o bagun\xE7ar a semana, voc\xEA marca o dia e ele redistribui o resto, sem quebrar o plano at\xE9 a prova.",
-      `Para montar: ${c.link("cronograma")}`
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "a lista do dia pode vir pronta", "A lista do dia pode vir pronta")],
-    corpo: (c) => [
-      momento(c),
-      "Uma pergunta r\xE1pida: como est\xE3o sendo os primeiros dias de plano? Pergunto porque reparei que o cronograma ainda est\xE1 em branco, e ele \xE9 justamente a parte feita para quem tem pouco tempo.",
-      "Funciona assim: voc\xEA coloca a data da prova e o ritmo que cabe na sua rotina, e todo dia a lista j\xE1 est\xE1 pronta quando voc\xEA sai do hospital. Nada para planejar, nada para lembrar.",
-      c.tempo(),
-      `Se quiser experimentar: ${c.link("cronograma")}`
-    ],
-    ps: () => "P.S.: se preferir montar comigo, me responde com a data da prova e quantas horas tem por semana. Eu te ajudo."
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "seu plano pode trabalhar por voc\xEA", "Seu plano pode trabalhar por voc\xEA")],
-    corpo: (c) => [
-      "Que bom ter voc\xEA no plano. Passando para lembrar, com calma, de uma coisa que faz a assinatura render muito mais: montar o cronograma at\xE9 a prova.",
-      c.obs(1, ["prova", "etapa", "horario", "maisEstudada"]) ?? "Sei que nos primeiros dias a gente sai abrindo tudo para ver como \xE9, e isso \xE9 \xF3timo.",
-      "O cronograma \xE9 o que transforma isso em rotina: o que mais cai primeiro, a revis\xE3o no lugar certo e a reta final j\xE1 desenhada. Se um dia faltar, ele se ajusta sozinho.",
-      `Dois minutos, aqui: ${c.link("cronograma")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "menos decidir, mais estudar", "Menos decidir, mais estudar")],
-    corpo: (c) => [
-      momento(c),
-      "O que mais tira tempo de quem estuda para prova de t\xEDtulo \xE9 abrir o material e passar quinze minutos escolhendo por onde come\xE7ar.",
-      "O cronograma resolve isso: voc\xEA diz a data da prova, e cada dia j\xE1 chega decidido. Vi que o seu ainda est\xE1 por montar, e queria te mostrar como \xE9 r\xE1pido.",
-      `Fica aqui: ${c.link("cronograma")}`,
-      "Se n\xE3o fizer sentido agora, tudo bem tamb\xE9m. O resto do plano continua todo seu."
-    ]
-  }
-];
-var assinante_parado_7 = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "dez quest\xF5es para retomar", "Dez quest\xF5es para retomar")],
-    corpo: (c) => [
-      `Faz ${semanaFora(c)} desde a sua \xFAltima quest\xE3o por aqui. Seu hist\xF3rico e suas marca\xE7\xF5es continuam guardados.`,
-      "Uma forma simples de retomar \xE9 escolher dez quest\xF5es e responder antes de consultar a explica\xE7\xE3o.",
-      "Depois, leia o coment\xE1rio completo das que deixaram d\xFAvida. Isso j\xE1 d\xE1 uma dire\xE7\xE3o para o pr\xF3ximo estudo.",
-      `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "sua pr\xF3xima sess\xE3o pode ser curta", "Sua pr\xF3xima sess\xE3o pode ser curta")],
-    corpo: (c) => [
-      `Vi que faz ${semanaFora(c)} desde a \xFAltima sess\xE3o. Talvez uma sess\xE3o menor caiba melhor na semana.`,
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      "Voc\xEA pode separar dez quest\xF5es, responder e conferir o racioc\xEDnio nos coment\xE1rios. N\xE3o \xE9 preciso reorganizar todo o estudo para voltar.",
-      `Para retomar: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "por onde voltar ao estudo", "Por onde voltar ao estudo")],
-    corpo: (c) => [
-      `Faz ${semanaFora(c)} desde a sua \xFAltima quest\xE3o. Queria te deixar uma sugest\xE3o para a volta.`,
-      "Retome um tema que voc\xEA j\xE1 estudou. Tentar responder antes de reler ajuda a perceber o que permaneceu claro e o que precisa de aten\xE7\xE3o.",
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      `A Revis\xE3o pode ser o ponto de partida: ${c.link("revisao")}`,
-      "Se encontrar algum problema para usar o site, pode me contar respondendo este e-mail."
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "um recorte pequeno para esta semana", "Um recorte pequeno para esta semana")],
-    corpo: (c) => [
-      `Reparei que passaram ${semanaFora(c)} desde a \xFAltima sess\xE3o por aqui.`,
-      "Se a rotina estiver apertada, escolha um \xFAnico tema e fa\xE7a dez quest\xF5es. Ao conferir o coment\xE1rio, procure o detalhe que distingue a correta das demais.",
-      c.obs(1, ["maisEstudada", "melhorArea"]),
-      `A Revis\xE3o continua dispon\xEDvel: ${c.link("revisao")}`,
-      "O hist\xF3rico anterior permanece salvo, ent\xE3o voc\xEA pode continuar de onde parou."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "retomar sem refazer o planejamento", "Retomar sem refazer o planejamento")],
-    corpo: (c) => [
-      `Faz ${semanaFora(c)} desde a sua \xFAltima quest\xE3o. Voc\xEA pode retomar sem montar um cronograma novo.`,
-      "Uma sess\xE3o de dez quest\xF5es j\xE1 permite identificar quais assuntos precisam de uma nova leitura.",
-      "Responda primeiro e consulte o coment\xE1rio depois, inclusive nas quest\xF5es que acertou com d\xFAvida.",
-      `Para come\xE7ar pela Revis\xE3o: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  }
-];
-var simulado_resultado = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "seu resultado do Simulado Nacional", "Seu resultado do Simulado Nacional"), posicaoSimulado(c) && nm(c, `${posicaoSimulado(c)}\xBA no Simulado Nacional`, `${posicaoSimulado(c)}\xBA no Simulado Nacional`)],
-    corpo: (c) => [
-      "O Simulado Nacional fechou, e o seu resultado j\xE1 est\xE1 no site. Antes de qualquer n\xFAmero: obrigado por ter feito. Sentar para uma prova inteira, no meio da rotina, j\xE1 \xE9 treino de dia de prova.",
-      resultadoSimulado(c) ?? "O que mais vale agora n\xE3o \xE9 a nota, \xE9 o que ela mostra: os temas em que a prova te pegou s\xE3o os que v\xE3o render mais nas pr\xF3ximas semanas.",
-      "Uma ideia para aproveitar: abra a corre\xE7\xE3o e leia o coment\xE1rio das quest\xF5es que te pegaram, cinco por dia. Em uma semana, a prova inteira vira revis\xE3o.",
-      `O resultado fica aqui: ${c.link("simulado")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "obrigado por fazer o simulado", "Obrigado por fazer o simulado"), nm(c, "o simulado fechou", "O simulado fechou")],
-    corpo: (c) => [
-      momento(c),
-      "A edi\xE7\xE3o do Simulado Nacional fechou, e quis te escrever, porque encaixar uma prova inteira numa semana de hospital n\xE3o \xE9 pouca coisa.",
-      resultadoSimulado(c) ? J(resultadoSimulado(c), "Fiquei feliz de ver.") : "O n\xFAmero, seja qual for, \xE9 um retrato de hoje, n\xE3o do dia da prova.",
-      "O melhor uso do resultado \xE9 simples: as quest\xF5es que te pegaram viram a sua lista da semana, e a Revis\xE3o j\xE1 come\xE7ou a separar.",
-      `Corre\xE7\xE3o e resultado: ${c.link("simulado")}`
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "o que o simulado mostrou", "O que o simulado mostrou")],
-    corpo: (c) => [
-      "O Simulado Nacional terminou, e o resultado est\xE1 pronto. Simulado \xE9 o treino que mais se parece com o dia da prova: o tempo apertado, o \xFAltimo bloco, a quest\xE3o longa que aparece na hora errada.",
-      resultadoSimulado(c) ?? "Mais do que a nota, vale olhar os temas: \xE9 ali que o simulado aponta onde cada hora de estudo vai render mais.",
-      c.obs(1, ["cronograma", "prova", "etapa"]),
-      `Se quiser ver por tema: ${c.link("simulado")}`,
-      c.fecho()
-    ],
-    ps: () => "P.S.: no m\xEAs que vem tem outra edi\xE7\xE3o. Fazer todas \xE9 o jeito mais f\xE1cil de ver o quanto voc\xEA cresce."
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "uma ideia para depois do simulado", "Uma ideia para depois do simulado")],
-    corpo: (c) => [
-      momento(c),
-      J("Vi que voc\xEA fez o Simulado Nacional desta edi\xE7\xE3o.", resultadoSimulado(c)),
-      "Uma ideia para aproveitar: em vez de refazer a prova inteira, pegue as quest\xF5es que te pegaram e leia o coment\xE1rio de todas as alternativas. \xC9 revis\xE3o sob medida, e cabe no intervalo.",
-      `A corre\xE7\xE3o fica aqui: ${c.link("simulado")}`,
-      "Se quiser me contar como foi a experi\xEAncia, \xE9 s\xF3 responder. Cada resposta ajuda a pr\xF3xima edi\xE7\xE3o."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "seu simulado, em uma linha", "Seu simulado, em uma linha")],
-    corpo: (c) => [
-      "Uma linha sobre o seu Simulado Nacional: fazer j\xE1 foi a parte mais dif\xEDcil. Prova inteira, no tempo, com a rotina que a resid\xEAncia deixa, \xE9 treino de verdade.",
-      resultadoSimulado(c),
-      "Daqui, a sugest\xE3o \xE9 olhar a corre\xE7\xE3o sem pressa e deixar a Revis\xE3o cuidar do resto. O que te pegou nesta edi\xE7\xE3o \xE9 o que mais vai render nas pr\xF3ximas semanas.",
-      c.tempo(),
-      `Resultado: ${c.link("simulado")}`
-    ]
-  }
-];
-var vespera_prova = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "amanh\xE3 \xE9 o dia", "Amanh\xE3 \xE9 o dia"), nm(c, "um recado para a v\xE9spera", "Um recado para a v\xE9spera")],
-    corpo: (c) => [
-      J(usaProva(c), `Amanh\xE3 \xE9 ${provaDela(c)}, e eu quis te escrever hoje, com calma.`),
-      "O estudo que decide a prova j\xE1 foi feito: nas quest\xF5es de cada intervalo, nas sess\xF5es depois do hospital, em cada coment\xE1rio lido at\xE9 o fim. Hoje n\xE3o \xE9 dia de mat\xE9ria nova.",
-      "Se der vontade de revisar, abra s\xF3 as frases que caem por uns vinte minutos, e pare. Depois, jantar com calma, separar documento e caneta, e deitar cedo.",
-      "Vai com a cabe\xE7a descansada e confia no que voc\xEA construiu.",
-      c.fecho()
-    ],
-    ps: () => "P.S.: depois da prova, se quiser me contar como foi, eu vou gostar muito de saber."
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "boa prova amanh\xE3", "Boa prova amanh\xE3")],
-    corpo: (c) => [
-      J(usaProva(c), `Amanh\xE3 \xE9 ${provaDela(c)}. Na v\xE9spera \xE9 comum bater a vontade de abrir tudo de novo e a sensa\xE7\xE3o de que falta alguma coisa.`),
-      "N\xE3o falta. O que vale amanh\xE3 \xE9 o que voc\xEA j\xE1 tem, e o que mais protege isso agora \xE9 descanso: comer direito, deitar cedo e chegar com folga no local.",
-      c.dez ? `Foram ${Q(c.r)} at\xE9 aqui. Isso n\xE3o some numa noite.` : "Cada hora de estudo at\xE9 aqui continua com voc\xEA. Isso n\xE3o some numa noite.",
-      "Na prova, se uma quest\xE3o travar, marque e siga. Volte nela no fim, com a cabe\xE7a mais leve.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "hoje \xE9 dia de descansar", "Hoje \xE9 dia de descansar")],
-    corpo: (c) => [
-      J(usaProva(c), `Vi no seu cronograma que ${provaDela(c)} \xE9 amanh\xE3.`),
-      "Ent\xE3o a \xFAnica tarefa de hoje \xE9 cuidar de voc\xEA. Pode parecer estranho depois de tanto tempo estudando, mas descanso na v\xE9spera rende mais que qualquer revis\xE3o de \xFAltima hora.",
-      "Tr\xEAs coisas simples: separar documento, caneta e o caminho at\xE9 o local; comer algo leve; deitar cedo, mesmo sem sono.",
-      "Amanh\xE3, leia cada enunciado at\xE9 o fim. A banca adora esconder o detalhe na \xFAltima linha, e isso voc\xEA j\xE1 treinou muito.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "estou na torcida por voc\xEA amanh\xE3", "Estou na torcida por voc\xEA amanh\xE3")],
-    corpo: (c) => [
-      J(usaProva(c), `Amanh\xE3 \xE9 ${provaDela(c)}, e eu queria que este e-mail fosse uma coisa s\xF3: um lembrete de que voc\xEA chegou at\xE9 aqui.`),
-      "Chegar \xE0 v\xE9spera estudando com a rotina que a resid\xEAncia imp\xF5e j\xE1 \xE9 uma conquista linda.",
-      "Para hoje, nada de quest\xE3o nova. Se a ansiedade bater, cinco minutos olhando as frases que caem e chega. O resto do dia \xE9 para descansar.",
-      "E amanh\xE3, no intervalo, come alguma coisa e bebe \xE1gua. Parece bobagem, mas faz diferen\xE7a no \xFAltimo bloco."
-    ],
-    ps: () => "P.S.: depois da prova, se quiser me contar como foi, vou adorar saber."
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "a v\xE9spera, com calma", "A v\xE9spera, com calma")],
-    corpo: (c) => [
-      J(usaProva(c), `Amanh\xE3 \xE9 o dia ${daProvaDela(c)}, e eu escrevo s\xF3 para dizer duas coisas.`),
-      "A primeira: o que voc\xEA estudou est\xE1 guardado, e uma boa noite de sono ajuda a mem\xF3ria a arrumar tudo. A segunda: a prova n\xE3o mede quem voc\xEA \xE9, mede um dia.",
-      "Se quiser fazer alguma coisa hoje, que seja leve: uma caminhada, uma refei\xE7\xE3o tranquila, desligar o celular mais cedo.",
-      c.fecho(),
-      "Boa prova."
-    ]
-  }
-];
-var depois_prova = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "como foi a prova?", "Como foi a prova?")],
-    corpo: (c) => [
-      J(usaProva(c), `Pela data que voc\xEA informou, ${provaDela(c)} j\xE1 passou. Como foi?`),
-      "Queria saber quais temas apareceram e se houve alguma quest\xE3o que chamou sua aten\xE7\xE3o.",
-      "Esse relato ajuda a entender melhor a prova e o que vale aprimorar no material de estudo.",
-      "Se quiser contar, pode responder este e-mail. N\xE3o precisa esperar o resultado."
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "o que achou da prova?", "O que achou da prova?")],
-    corpo: (c) => [
-      J(usaProva(c), `Como foi ${provaDela(c)}? Vi que a data informada no cronograma j\xE1 passou.`),
-      "O que voc\xEA achou do n\xEDvel das quest\xF5es e do tempo dispon\xEDvel?",
-      "Se algum tema apareceu de um jeito diferente do esperado, vou gostar de conhecer esse exemplo.",
-      "Pode responder por aqui, quando fizer sentido para voc\xEA."
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "uma pergunta depois da prova", "Uma pergunta depois da prova")],
-    corpo: (c) => [
-      J(usaProva(c), `${cap(provaDela(c))} j\xE1 passou pela data do seu cronograma. Queria saber como foi a experi\xEAncia.`),
-      "Teve algum assunto que voc\xEA sentiu ter conseguido revisar bem? E algum que fez falta na prepara\xE7\xE3o?",
-      "Seu hist\xF3rico de estudo e suas marca\xE7\xF5es continuam guardados no site.",
-      "Se quiser compartilhar suas impress\xF5es, \xE9 s\xF3 responder este e-mail."
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "como foram as quest\xF5es?", "Como foram as quest\xF5es?")],
-    corpo: (c) => [
-      J(usaProva(c), `Passando para perguntar como foi ${provaDela(c)}.`),
-      "Quais temas apareceram mais? As alternativas exigiam mais mem\xF3ria, interpreta\xE7\xE3o de imagem ou decis\xE3o de tratamento?",
-      "Esses detalhes s\xE3o \xFAteis para entender o formato da prova e melhorar os pr\xF3ximos materiais.",
-      "Se puder contar um exemplo do que chamou sua aten\xE7\xE3o, pode responder por aqui."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "suas impress\xF5es sobre a prova", "Suas impress\xF5es sobre a prova")],
-    corpo: (c) => [
-      J(usaProva(c), `Pelo seu cronograma, ${provaDela(c)} aconteceu nos \xFAltimos dias. Como foi?`),
-      "Se a data tiver mudado, vale atualizar o cadastro para que os pr\xF3ximos lembretes fa\xE7am sentido.",
-      "Se a prova j\xE1 aconteceu, queria saber o que mais surpreendeu e o que foi parecido com o seu treino.",
-      "Voc\xEA pode responder este e-mail com suas impress\xF5es, sem precisar de um relato longo."
-    ]
-  }
-];
-var aniversario = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "feliz anivers\xE1rio", "Feliz anivers\xE1rio"), nm(c, "hoje o dia \xE9 seu", "Hoje o dia \xE9 seu")],
-    corpo: (c) => [
-      J(usaAniversario(c), "Hoje \xE9 o seu anivers\xE1rio, e eu n\xE3o podia deixar passar. Parab\xE9ns, de cora\xE7\xE3o."),
-      "Que o ano que come\xE7a traga dias mais leves, plant\xF5es mais tranquilos e, quando chegar a hora, a aprova\xE7\xE3o que voc\xEA est\xE1 construindo.",
-      "Espero que consiga comemorar com quem voc\xEA gosta.",
-      "O estudo espera, e fica do jeito que voc\xEA deixou."
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "um abra\xE7o de anivers\xE1rio", "Um abra\xE7o de anivers\xE1rio")],
-    corpo: (c) => [
-      J(usaAniversario(c), "Passando s\xF3 para te desejar um feliz anivers\xE1rio."),
-      "Sei que a resid\xEAncia n\xE3o para nem no dia do anivers\xE1rio, ent\xE3o espero que hoje sobre pelo menos um tempinho s\xF3 seu: uma refei\xE7\xE3o sem pressa, uma liga\xE7\xE3o para algu\xE9m querido, uma noite de sono inteira.",
-      c.dez ? `E j\xE1 que anivers\xE1rio \xE9 dia de balan\xE7o: ${Q(c.r)} respondidas at\xE9 aqui. Isso \xE9 muito estudo, e merece ser lembrado hoje tamb\xE9m.` : "Fico contente de ter voc\xEA por aqui neste ano.",
-      "Que o ano novo da sua vida seja generoso com voc\xEA."
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "parab\xE9ns pelo seu dia", "Parab\xE9ns pelo seu dia")],
-    corpo: (c) => [
-      J(usaAniversario(c), "Parab\xE9ns pelo seu dia."),
-      "Escrevo curto de prop\xF3sito, porque hoje n\xE3o \xE9 dia de ler e-mail longo: \xE9 dia de comemorar.",
-      "Desejo um ano com mais tempo livre do que a resid\xEAncia costuma deixar, com gente boa por perto e com a prova indo do jeito que voc\xEA merece.",
-      "E se em algum momento do ano o estudo pesar, lembra que eu estou por aqui."
-    ],
-    ps: () => "P.S.: aproveita o dia. O site fica do jeito que voc\xEA deixou."
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "hoje \xE9 dia de comemorar", "Hoje \xE9 dia de comemorar")],
-    corpo: (c) => [
-      J(usaAniversario(c), "Vi que hoje \xE9 o seu anivers\xE1rio, e quis te mandar um abra\xE7o daqui."),
-      "Na correria da rotina, \xE9 f\xE1cil esquecer de parar e reparar no caminho. Ent\xE3o fica o lembrete carinhoso: estudar com a rotina que voc\xEA tem j\xE1 \xE9 uma conquista.",
-      "Que este ano traga descanso, gente querida por perto e boas not\xEDcias.",
-      c.fecho(),
-      "Feliz anivers\xE1rio."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "parab\xE9ns pelo anivers\xE1rio", "Parab\xE9ns pelo anivers\xE1rio")],
-    corpo: (c) => [
-      J(usaAniversario(c), "Feliz anivers\xE1rio."),
-      "Fico contente de ter voc\xEA por aqui, e mais ainda de poder te desejar um ano bom de verdade: com tempo para voc\xEA, com sono em dia e com a prova correndo bem.",
-      "O site n\xE3o vai a lugar nenhum. Hoje, o dia \xE9 seu.",
-      "Comemora com quem voc\xEA gosta."
-    ]
-  }
-];
-var um_ano = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, `${anosTexto(c)} de Orto Quest\xF5es`, `${cap(anosTexto(c))} de Orto Quest\xF5es`)],
-    corpo: (c) => [
-      `Hoje faz ${anosTexto(c)} que voc\xEA criou a sua conta no Orto Quest\xF5es, e eu quis marcar a data com voc\xEA.`,
-      c.dez ? `Nesse tempo foram ${Q(c.r)}, cada uma encaixada num intervalo da rotina. Isso \xE9 muito estudo de quem tem pouco tempo.` : "Nesse tempo, os primeiros passos j\xE1 foram dados, e come\xE7ar \xE9 sempre a parte mais dif\xEDcil.",
-      c.obs(1, ["melhorArea", "maisEstudada", "resumos", "ranking"]),
-      "Obrigado por ter escolhido estudar por aqui durante esse tempo. \xC9 uma alegria fazer parte do seu caminho.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, `hoje faz ${anosTexto(c)}`, `Hoje faz ${anosTexto(c)}`)],
-    corpo: (c) => [
-      `Uma data diferente hoje: a sua conta no Orto Quest\xF5es faz ${anosTexto(c)}. \xC9 esse o tempo que a gente se conhece por aqui.`,
-      c.dez ? `Olhando para tr\xE1s: ${jaFez(c)}, um Caderno de erros cheio de coisas que hoje voc\xEA j\xE1 sabe, e a Revis\xE3o trazendo de volta na hora certa.` : "Olhando para tr\xE1s, o mais importante j\xE1 aconteceu: voc\xEA escolheu um lugar para estudar.",
-      `Para treinar: ${c.link("treinar")}`
-    ],
-    ps: () => "P.S.: obrigado por estar aqui. Que venham muitos outros anos de bons estudos."
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "obrigado pelo tempo junto", "Obrigado pelo tempo junto")],
-    corpo: (c) => [
-      momento(c),
-      `Hoje a sua conta faz ${anosTexto(c)}. Parece pouco no calend\xE1rio, mas na resid\xEAncia \xE9 muita coisa: plant\xF5es, rod\xEDzios, provas, mudan\xE7as.`,
-      c.obs(2, ["melhorArea", "maisEstudada", "resumos", "flashcards", "sequencia"]) ?? `${guardado(c)}, como um di\xE1rio do seu estudo.`,
-      "Obrigado por cada sess\xE3o nesse tempo. As quest\xF5es e os coment\xE1rios seguem melhorando toda semana, pensando em quem estuda como voc\xEA.",
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "uma data bonita", "Uma data bonita")],
-    corpo: (c) => [
-      `H\xE1 ${anosTexto(c)} voc\xEA criou a sua conta por aqui. N\xE3o \xE9 uma data que aparece no calend\xE1rio de ningu\xE9m, mas eu quis lembrar.`,
-      "O mais bonito nessas datas \xE9 olhar o caminho: chegar sem saber por onde come\xE7ar e hoje abrir o site j\xE1 sabendo o que fazer.",
-      c.dez ? `No seu caso, s\xE3o ${Q(c.r)} nesse caminho.` : null,
-      c.tempo(),
-      "Se quiser me contar como foi esse tempo, o que ajudou e o que faltou, \xE9 s\xF3 responder. Vou gostar de saber."
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, `${anosTexto(c)} e contando`, `${cap(anosTexto(c))} e contando`)],
-    corpo: (c) => [
-      `Hoje s\xE3o ${anosTexto(c)} de Orto Quest\xF5es, e esta carta \xE9 s\xF3 para dizer obrigado.`,
-      "Sei que estudar para prova de t\xEDtulo \xE9 uma maratona, e que ningu\xE9m corre maratona sem dia ruim. Ficar por aqui nos dias bons e nos ruins \xE9 o que faz a diferen\xE7a.",
-      c.obs(1),
-      "Que o pr\xF3ximo ano traga a prova que voc\xEA est\xE1 esperando e o tempo livre que a resid\xEAncia costuma roubar.",
-      c.fecho()
-    ]
-  }
-];
-var indicacao_deu_certo = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "sua indica\xE7\xE3o deu certo", "Sua indica\xE7\xE3o deu certo"), nm(c, "obrigado pela indica\xE7\xE3o", "Obrigado pela indica\xE7\xE3o")],
-    corpo: (c) => [
-      "Uma not\xEDcia boa: a pessoa que voc\xEA indicou j\xE1 passou de 20 quest\xF5es no Orto Quest\xF5es. A indica\xE7\xE3o contou.",
-      "Indicar um site de estudo \xE9 emprestar um pouco da pr\xF3pria confian\xE7a. Obrigado, de cora\xE7\xE3o.",
-      c.campanha.cortesia ? "Os dias de cortesia da indica\xE7\xE3o aparecem na sua p\xE1gina de indica\xE7\xF5es assim que voc\xEA abrir." : null,
-      `Fica aqui: ${c.link("indicar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "algu\xE9m come\xE7ou por sua causa", "Algu\xE9m come\xE7ou por sua causa")],
-    corpo: (c) => [
-      momento(c),
-      "Quem voc\xEA indicou para o Orto Quest\xF5es j\xE1 est\xE1 estudando de verdade: passou de 20 quest\xF5es. Quis te contar, porque foi voc\xEA que abriu essa porta.",
-      "Estudar junto, mesmo de longe, deixa a prepara\xE7\xE3o mais leve. Quem sabe voc\xEAs trocam uma quest\xE3o dif\xEDcil de vez em quando.",
-      c.campanha.cortesia ? `Os dias de cortesia que a indica\xE7\xE3o d\xE1 aparecem aqui: ${c.link("indicar")}` : `Se quiser ver as suas indica\xE7\xF5es: ${c.link("indicar")}`
-    ],
-    ps: () => "P.S.: obrigado pela confian\xE7a. \xC9 de indica\xE7\xE3o em indica\xE7\xE3o que o site cresce."
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "uma boa not\xEDcia sobre a indica\xE7\xE3o", "Uma boa not\xEDcia sobre a indica\xE7\xE3o")],
-    corpo: (c) => [
-      "Uma boa not\xEDcia: a sua indica\xE7\xE3o deu certo. A pessoa que entrou pelo seu convite j\xE1 respondeu mais de 20 quest\xF5es.",
-      "O Orto Quest\xF5es cresce no boca a boca, com gente como voc\xEA contando para quem est\xE1 na mesma prova. Fico muito grato.",
-      c.obs(1, ["melhorArea", "ranking", "sequencia"]),
-      c.campanha.cortesia ? `Os dias da indica\xE7\xE3o ficam na p\xE1gina de indica\xE7\xF5es: ${c.link("indicar")}` : `Suas indica\xE7\xF5es ficam aqui: ${c.link("indicar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "obrigado por espalhar a palavra", "Obrigado por espalhar a palavra")],
-    corpo: (c) => [
-      "Passando para agradecer: quem voc\xEA indicou chegou a 20 quest\xF5es, e isso quer dizer que pegou o ritmo.",
-      "\xC9 uma not\xEDcia muito boa: mostra que algu\xE9m conseguiu encaixar o estudo na rotina, e foi voc\xEA quem mostrou o caminho.",
-      c.tempo(),
-      `Se quiser indicar mais algu\xE9m que est\xE1 na mesma prova, o seu link continua valendo: ${c.link("indicar")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "a indica\xE7\xE3o contou", "A indica\xE7\xE3o contou")],
-    corpo: (c) => [
-      momento(c),
-      "Uma linha s\xF3 para dizer obrigado: a pessoa que voc\xEA indicou j\xE1 passou das 20 quest\xF5es, ent\xE3o a indica\xE7\xE3o contou.",
-      c.campanha.cortesia ? "Os dias de cortesia que v\xEAm com ela aparecem na sua p\xE1gina de indica\xE7\xF5es." : "Fico contente de ver o site chegando a mais gente pelas suas m\xE3os.",
-      `Fica aqui: ${c.link("indicar")}`,
-      "Se voc\xEA conhece mais algu\xE9m estudando para a mesma prova, pode mandar o seu link. E se preferir n\xE3o, tudo bem tamb\xE9m."
-    ]
-  }
-];
-var resumo_do_tema = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "saiu um resumo do seu tema", "Saiu um resumo do seu tema"), areaResumo(c) && nm(c, `um resumo novo de ${areaResumo(c)}`, `Um resumo novo de ${areaResumo(c)}`)],
-    corpo: (c) => [
-      areaResumo(c) ? `Saiu um resumo novo na Biblioteca, e lembrei de voc\xEA: \xE9 de ${areaResumo(c)}, a \xE1rea que voc\xEA mais tem estudado.` : "Saiu um resumo novo na Biblioteca, e lembrei de voc\xEA: \xE9 do tema que voc\xEA mais tem estudado.",
-      tituloResumo(c) ? `Chama "${tituloResumo(c)}". Como os outros, saiu de um cap\xEDtulo de livro e traz no meio do texto as quest\xF5es que j\xE1 ca\xEDram, para resolver ali mesmo.` : "Como os outros, ele saiu de um cap\xEDtulo de livro e traz no meio do texto as quest\xF5es que j\xE1 ca\xEDram, para resolver ali mesmo.",
-      "Uma sugest\xE3o de uso: leia uma se\xE7\xE3o por vez, no intervalo, e fa\xE7a as quest\xF5es dela logo em seguida. \xC9 a combina\xE7\xE3o que mais fixa.",
-      `Para abrir: ${c.link("resumo")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "um resumo novo para o seu tema", "Um resumo novo para o seu tema")],
-    corpo: (c) => [
-      momento(c),
-      `Entrou na Biblioteca esta semana ${oResumo(c)}${areaResumo(c) ? `, de ${areaResumo(c)}` : ""}, e lembrei de voc\xEA, porque \xE9 o tema que mais aparece no seu estudo.`,
-      "Ele foi feito para quem tem pouco tempo: o cap\xEDtulo na ordem em que a prova cobra, com o que j\xE1 caiu marcado ano a ano.",
-      `Fica aqui: ${c.link("resumo")}`,
-      "Se ler, me conta o que achou. \xC9 um formato novo, e a sua opini\xE3o vale muito."
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "para ler no intervalo", "Para ler no intervalo")],
-    corpo: (c) => [
-      `Uma novidade pequena, mas com a sua cara: entrou na Biblioteca ${oResumo(c)}${areaResumo(c) ? `, de ${areaResumo(c)}` : ", do tema que voc\xEA mais estuda"}.`,
-      "Se o tempo estiver curto, leia s\xF3 a primeira se\xE7\xE3o hoje. O resumo guarda onde voc\xEA parou, e no dia seguinte \xE9 s\xF3 continuar.",
-      c.tempo(),
-      `Para abrir: ${c.link("resumo")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "lembrei de voc\xEA nesta semana", "Lembrei de voc\xEA nesta semana")],
-    corpo: (c) => [
-      J("Lembrei de voc\xEA nesta semana, quando saiu", oResumo(c), areaResumo(c) ? `de ${areaResumo(c)}.` : "no tema que voc\xEA mais estuda."),
-      c.obs(1, ["maisEstudada", "melhorArea", "resumos"]),
-      "O jeito que mais rende: ler o resumo e fazer as quest\xF5es do tema na mesma sess\xE3o. O que foi lido vira resposta certa mais r\xE1pido.",
-      `Fica aqui: ${c.link("resumo")}`,
-      c.fecho()
-    ],
-    ps: () => "P.S.: este e-mail s\xF3 vai para quem aceitou receber novidades. Se preferir parar, o link no fim desliga."
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "uma leitura curta para a semana", "Uma leitura curta para a semana")],
-    corpo: (c) => [
-      momento(c),
-      `Saiu ${oResumo(c)} na Biblioteca${areaResumo(c) ? `, em ${areaResumo(c)}` : ""}. Como esse \xE9 o tema que voc\xEA mais estuda, achei que fosse gostar de saber primeiro.`,
-      "Um detalhe gostoso dos resumos: as quest\xF5es reais aparecem no meio do texto, com bot\xE3o para resolver. Ler e treinar viram uma coisa s\xF3.",
-      `Para abrir: ${c.link("resumo")}`,
-      c.fecho()
-    ]
-  }
-];
-var lembrete = (c) => c.campanha.lembrete ?? null;
-var abreAmanha = (c) => lembrete(c)?.tipo_lembrete === "abre_amanha";
-var abriuHoje = (c) => lembrete(c)?.tipo_lembrete === "abriu_hoje";
-var qualEdicao = (c) => lembrete(c)?.titulo ? ` (${lembrete(c)?.titulo})` : "";
-var deQualEdicao = (c) => {
-  const t = lembrete(c)?.titulo;
-  const mes = t?.match(/^Simulado Nacional\s*[·:-]\s*(.+)$/)?.[1];
-  return mes ? ` de ${mes.charAt(0).toLowerCase()}${mes.slice(1)}` : qualEdicao(c);
-};
-var HORAS_EXTENSO = ["", "uma hora", "duas horas", "tr\xEAs horas", "quatro horas", "cinco horas", "seis horas"];
-var duracaoSimulado = (c) => {
-  const m = Math.round(Number(lembrete(c)?.duracao_min));
-  if (!Number.isFinite(m) || m < 10) return null;
-  return m % 60 === 0 && m / 60 < HORAS_EXTENSO.length ? HORAS_EXTENSO[m / 60] : `${N(m)} minutos`;
-};
-var questoesSimulado = (c) => {
-  const t = Math.round(Number(lembrete(c)?.total));
-  return Number.isFinite(t) && t >= 10 ? `${N(t)} quest\xF5es` : null;
-};
-var fechaSimulado = (c) => {
-  const f = lembrete(c)?.fecha_em;
-  const d = f ? new Date(f) : null;
-  return d && Number.isFinite(d.getTime()) ? d.toLocaleDateString("pt-BR", { day: "numeric", month: "long", timeZone: "America/Sao_Paulo" }) : null;
-};
-var quandoSimulado = (c) => abreAmanha(c) ? "abre amanh\xE3" : abriuHoje(c) ? "j\xE1 est\xE1 no ar" : "est\xE1 chegando";
-var formatoSimulado = (c) => {
-  const q = questoesSimulado(c), h = duracaoSimulado(c);
-  const base = q && h ? `S\xE3o ${q} em ${h}` : q ? `S\xE3o ${q}` : h ? `A prova tem ${h}` : "\xC9 uma prova inteira";
-  return `${base}, com o rel\xF3gio correndo desde o come\xE7o, como no dia da prova.`;
-};
-var prazoSimulado = (c) => fechaSimulado(c) ? `D\xE1 para fazer at\xE9 ${fechaSimulado(c)}, no hor\xE1rio que for melhor para voc\xEA.` : null;
-var planoSimulado = (c) => lembrete(c)?.precisa_plano === true ? "Um detalhe: esta edi\xE7\xE3o \xE9 para quem assina. A p\xE1gina do simulado mostra como funciona." : null;
-var simulado_lembrete = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, `o Simulado Nacional ${quandoSimulado(c)}`, `O Simulado Nacional ${quandoSimulado(c)}`)],
-    corpo: (c) => [
-      momento(c),
-      `Passando para lembrar: o simulado em que voc\xEA se inscreveu${qualEdicao(c)} ${quandoSimulado(c)}.`,
-      J(formatoSimulado(c), prazoSimulado(c)),
-      "Uma ideia que ajuda: escolher um hor\xE1rio em que ningu\xE9m vai te chamar, deixe \xE1gua por perto e fa\xE7a de uma vez. As respostas ficam salvas no servidor, ent\xE3o uma queda de internet n\xE3o apaga nada.",
-      planoSimulado(c),
-      `Para entrar: ${c.link("simulado")}`,
-      c.fecho()
-    ],
-    ps: () => "P.S.: o gabarito e os coment\xE1rios aparecem logo depois que voc\xEA entrega. Vale guardar um tempo para ler."
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "um lembrete do simulado", "Um lembrete do simulado"), nm(c, `o simulado ${quandoSimulado(c)}`, `O simulado ${quandoSimulado(c)}`)],
-    corpo: (c) => [
-      `Voc\xEA se inscreveu no Simulado Nacional${deQualEdicao(c)}, e ele ${quandoSimulado(c)}. Quis te avisar com calma, antes da correria do dia.`,
-      formatoSimulado(c),
-      prazoSimulado(c),
-      "Uma ideia: olhar a escala da semana e marcar o simulado como se fosse plant\xE3o, com hora para come\xE7ar. Prova feita no meio de outras coisas rende menos do que prova feita inteira.",
-      planoSimulado(c),
-      `O simulado fica aqui: ${c.link("simulado")}`,
-      c.fecho()
-    ],
-    ps: () => "P.S.: se cair a internet ou a bateria, nada se perde. \xC9 s\xF3 abrir de novo, at\xE9 em outro aparelho."
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, `seu simulado ${quandoSimulado(c)}`, `Seu simulado ${quandoSimulado(c)}`)],
-    corpo: (c) => [
-      momento(c),
-      J(`O Simulado Nacional${deQualEdicao(c)} ${quandoSimulado(c)}.`, "\xC9 o treino que mais se parece com o dia da prova: o tempo apertado, o \xFAltimo bloco, a quest\xE3o longa que aparece na hora errada."),
-      formatoSimulado(c),
-      prazoSimulado(c),
-      planoSimulado(c),
-      `Quando quiser come\xE7ar: ${c.link("simulado")}`,
-      c.fecho()
-    ],
-    ps: () => "P.S.: depois de entregar, voc\xEA v\xEA na hora onde est\xE1 pronto e onde rende revisar. Esse retrato vale mais do que a nota."
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "separei um recado sobre o simulado", "Um recado sobre o simulado")],
-    corpo: (c) => [
-      `Um recado curto: o Simulado Nacional${deQualEdicao(c)} ${quandoSimulado(c)}, e voc\xEA est\xE1 na lista.`,
-      formatoSimulado(c),
-      "Uma ideia pr\xE1tica: antes de come\xE7ar, leia as regras com calma e j\xE1 decida o que fazer com a quest\xE3o que travar. Marcar para rever e seguir costuma salvar o fim da prova.",
-      prazoSimulado(c),
-      planoSimulado(c),
-      `Para fazer: ${c.link("simulado")}`,
-      c.fecho()
-    ],
-    ps: () => "P.S.: o ranking leva em conta o tempo nos empates, mas o que mais importa \xE9 fazer inteiro, do jeito que vai ser na prova."
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, `o simulado em que voc\xEA se inscreveu ${quandoSimulado(c)}`, `O simulado ${quandoSimulado(c)}`)],
-    corpo: (c) => [
-      momento(c),
-      `S\xF3 para lembrar: o simulado em que voc\xEA se inscreveu${qualEdicao(c)} ${quandoSimulado(c)}.`,
-      J(formatoSimulado(c), "O gabarito s\xF3 aparece depois da entrega, como numa prova de verdade."),
-      prazoSimulado(c),
-      planoSimulado(c),
-      `O link: ${c.link("simulado")}`,
-      c.fecho()
-    ],
-    ps: () => "P.S.: se quiser me contar como foi, \xE9 s\xF3 responder este e-mail. Cada resposta ajuda a pr\xF3xima edi\xE7\xE3o."
-  }
-];
-var DIA_MS = 864e5;
-var ddmm = (iso) => new Date(iso).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", timeZone: "America/Sao_Paulo" });
-var quandoTerminou = (c) => c.p.fimAcesso ? c.quando(Math.max(0, Math.floor((c.hoje.getTime() - new Date(c.p.fimAcesso).getTime()) / DIA_MS))) : "h\xE1 pouco";
-var conquista = (c) => c.pctBom !== null ? `Foram ${Q(c.r)} com ${c.pctBom}% de acerto, e tudo isso continua guardado: o hist\xF3rico, o Caderno de erros e o cronograma, do jeito que voc\xEA deixou.` : `${cap(asSuas(c))}, o Caderno de erros e o cronograma continuam guardados, do jeito que voc\xEA deixou.`;
-var diasSomados = (c) => {
-  if (!c.p.assinante || c.p.renovaSozinho || !c.p.fimAcesso) return null;
-  const fim = new Date(c.p.fimAcesso).getTime();
-  const restam2 = Math.ceil((fim - c.hoje.getTime()) / DIA_MS);
-  if (!Number.isFinite(restam2) || restam2 < 0 || restam2 > 7) return null;
-  if (restam2 === 0) return "Seu acesso termina hoje. Renovando, voc\xEA segue estudando sem nenhum dia de pausa.";
-  return `Seu acesso vai at\xE9 ${ddmm(c.p.fimAcesso)}. Se renovar antes, os ${D(restam2)} que faltam n\xE3o se perdem: eles se somam ao novo m\xEAs.`;
-};
-var acesso_terminou = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "seu estudo continua guardado", "Seu estudo continua guardado"), nm(c, "tudo continua aqui", "Tudo continua aqui")],
-    corpo: (c) => [
-      `Seu plano terminou ${quandoTerminou(c)}, e eu quis passar para dizer, com carinho, que nada do que voc\xEA construiu se perdeu.`,
-      conquista(c),
-      c.obs(1, ["melhorArea", "maisEstudada", "cronograma"]),
-      "Se quiser voltar, \xE9 s\xF3 renovar: tudo reabre na hora, exatamente de onde voc\xEA parou. Sem pressa e sem press\xE3o.",
-      `Fica aqui: ${c.link("assinatura")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "sentimos sua falta", "Sentimos sua falta"), nm(c, "passando para dar um oi", "Passando para dar um oi")],
-    corpo: (c) => [
-      momento(c),
-      `Vi que o seu plano terminou ${quandoTerminou(c)}. Se foi uma pausa planejada, tudo certo. Se foi s\xF3 a correria, quis lembrar que voltar \xE9 simples.`,
-      conquista(c),
-      "Renovando, a Revis\xE3o, o cronograma e o Simulado Nacional voltam na hora, com todo o seu hist\xF3rico. Nenhuma quest\xE3o precisa ser refeita.",
-      `Se fizer sentido: ${c.link("assinatura")}`
-    ],
-    ps: () => "P.S.: se algo no site n\xE3o funcionou como voc\xEA esperava, me responde contando. Cada resposta \xE9 lida com carinho."
-  },
-  {
-    id: "v3",
-    requer: (c) => c.diasProva !== null && c.diasProva >= 7,
-    assuntos: (c) => [nm(c, `faltam ${diasProva(c)} para a prova`, `Faltam ${diasProva(c)} para a prova`)],
-    corpo: (c) => [
-      `Faltam ${diasProva(c)} para ${c.nomeProva}, e lembrei de voc\xEA. Seu plano terminou ${quandoTerminou(c)}, e quis te escrever antes que a reta final chegue.`,
-      conquista(c),
-      "Ainda d\xE1 tempo de fazer muita coisa. Com o plano de volta, o cronograma refaz a lista de cada dia at\xE9 a prova, com o que mais cai primeiro.",
-      `Para voltar: ${c.link("assinatura")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "nada do seu estudo se perdeu", "Nada do seu estudo se perdeu"), nm(c, "a porta continua aberta", "A porta continua aberta")],
-    corpo: (c) => [
-      "Passando s\xF3 para dar um oi e deixar uma coisa clara, porque muita gente fica em d\xFAvida.",
-      `Quando o plano termina, nada \xE9 apagado. O seu plano terminou ${quandoTerminou(c)}, e ${asSuas(c)}, o Caderno de erros e o cronograma est\xE3o exatamente onde voc\xEA deixou.`,
-      c.obs(1, ["melhorArea", "maisEstudada", "prova"]) ?? (c.pctBom !== null ? `E o seu acerto de ${c.pctBom}% tamb\xE9m continua l\xE1, esperando a pr\xF3xima quest\xE3o.` : null),
-      "Se e quando fizer sentido voltar, \xE9 s\xF3 renovar e seguir do mesmo ponto, sem refazer nada.",
-      `Fica aqui: ${c.link("assinatura")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "obrigado por ter estudado com a gente", "Obrigado por ter estudado com a gente")],
-    corpo: (c) => [
-      momento(c),
-      `Seu plano terminou ${quandoTerminou(c)}, e antes de qualquer coisa eu quis agradecer pela confian\xE7a nesse tempo de estudo.`,
-      conquista(c),
-      "Se a rotina pedir uma pausa, tudo bem. Quando quiser voltar, a Revis\xE3o j\xE1 vai saber por onde come\xE7ar com voc\xEA.",
-      `Para renovar, quando quiser: ${c.link("assinatura")}`
-    ],
-    ps: () => "P.S.: se tiver alguma sugest\xE3o para o site, \xE9 s\xF3 responder. Eu adoraria ouvir."
-  }
-];
-var como_estao = [
-  {
-    id: "v1",
-    assuntos: (c) => [nm(c, "como est\xE3o os estudos?", "Como est\xE3o os estudos?")],
-    corpo: (c) => [
-      "Passando s\xF3 para saber como est\xE3o os estudos por a\xED. Quem estuda trabalhando tem semanas mais cheias, e est\xE1 tudo bem.",
-      c.pctBom !== null ? `Voc\xEA j\xE1 tem ${Q(c.r)} com ${c.pctBom}% de acerto, e isso n\xE3o some.` : `${cap(asSuas(c))} continua todo aqui.`,
-      c.obs(1, ["melhorArea", "maisEstudada", "cronograma"]),
-      "Se a semana apertou, uma sugest\xE3o leve: dez quest\xF5es da Revis\xE3o no intervalo que der. Ela j\xE1 separou as que pedem uma segunda olhada.",
-      diasSomados(c),
-      `Para come\xE7ar: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "me conta como est\xE1 a rotina", "Me conta como est\xE1 a rotina")],
-    corpo: (c) => [
-      momento(c),
-      "Quis te escrever para perguntar, com carinho: como est\xE1 a rotina? Se alguma coisa no site estiver atrapalhando, ou faltando, eu adoraria saber.",
-      c.pctBom !== null ? `Do meu lado, fico feliz com o que vejo: ${Q(c.r)} e ${c.pctBom}% de acerto.` : c.obs(1, ["maisEstudada", "melhorArea", "cronograma"]),
-      "\xC0s vezes um ajuste pequeno resolve: marcar os dias corridos como plant\xE3o no cronograma, e ele reorganiza o resto sozinho, sem quebrar o plano at\xE9 a prova.",
-      diasSomados(c),
-      `O cronograma fica aqui: ${c.link("cronograma")}`
-    ],
-    ps: () => "P.S.: \xE9 s\xF3 responder este e-mail. Cada resposta \xE9 lida com carinho."
-  },
-  {
-    id: "v3",
-    requer: (c) => !!c.fatos.melhorArea || !!c.fatos.maisEstudada,
-    assuntos: (c) => [nm(c, "o que voc\xEA j\xE1 conquistou", "O que voc\xEA j\xE1 conquistou")],
-    corpo: (c) => [
-      "\xC0s vezes a gente para e esquece o quanto j\xE1 andou. Ent\xE3o quis te lembrar.",
-      c.obs(2, ["melhorArea", "maisEstudada", "ranking"]),
-      "Nada disso se perde numa semana mais corrida. Quando der, cinco quest\xF5es j\xE1 recolocam tudo em movimento.",
-      diasSomados(c),
-      `A Revis\xE3o est\xE1 pronta: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "dez minutos j\xE1 valem", "Dez minutos j\xE1 valem"), nm(c, "tudo certo por a\xED?", "Tudo certo por a\xED?")],
-    corpo: (c) => [
-      "Lembrei de voc\xEA e quis saber se est\xE1 tudo certo por a\xED. Semana de plant\xE3o, prova da resid\xEAncia, a vida acontecendo: faz parte.",
-      c.pctBom !== null ? `${cap(Q(c.r))} e ${c.pctBom}% de acerto n\xE3o somem numa semana parada.` : `${cap(asSuas(c))} continua todo guardado.`,
-      "O jeito mais leve de retomar \xE9 o menor: dez minutos da Revis\xE3o hoje, no intervalo que der. Amanh\xE3, mais dez. O embalo volta antes do que parece.",
-      diasSomados(c),
-      `Para come\xE7ar: ${c.link("revisao")}`,
-      c.fecho()
-    ]
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "seu cronograma se ajusta", "Seu cronograma se ajusta")],
-    corpo: (c) => [
-      momento(c),
-      "Quis te escrever porque reparei que os estudos deram uma desacelerada, e queria que isso n\xE3o pesasse.",
-      c.obs(1, ["cronograma", "melhorArea", "maisEstudada"]) ?? (c.pctBom !== null ? `Voc\xEA chegou a ${c.pctBom}% de acerto, e isso \xE9 trabalho seu.` : null),
-      "Se voc\xEA usa o cronograma, ele refaz a lista de cada dia com o que ficou para tr\xE1s, sem quebrar o plano at\xE9 a prova. Se ainda n\xE3o usa, leva dois minutos para montar.",
-      diasSomados(c),
-      `Fica aqui: ${c.link("cronograma")}`
-    ],
-    ps: () => "P.S.: se algo no site estiver atrapalhando, me conta respondendo este e-mail. Cada resposta \xE9 lida com carinho."
-  }
-];
+}));
+var pix_3_dias = /* @__PURE__ */ ["sobre a renova\xE7\xE3o do seu acesso", "para prolongar sua assinatura", "seu acesso ao Orto Quest\xF5es", "sobre o per\xEDodo do seu plano", "renova\xE7\xE3o da sua assinatura"].map((assunto, i) => ({
+  id: `v${i + 11}`,
+  assuntos: (c) => [nm(c, assunto, assunto.charAt(0).toUpperCase() + assunto.slice(1))],
+  corpo: (c) => [
+    c.um(`Seu acesso pago por Pix termina em ${dataCurta(c.pix?.fimEm) ?? "tr\xEAs dias"}.`, `O per\xEDodo atual da sua assinatura por Pix vai at\xE9 ${dataCurta(c.pix?.fimEm) ?? "daqui a tr\xEAs dias"}.`, `Seu plano pago por Pix est\xE1 perto do fim do per\xEDodo${dataCurta(c.pix?.fimEm) ? `, em ${dataCurta(c.pix?.fimEm)}` : ""}.`),
+    c.um("Voc\xEA j\xE1 pode prolongar a assinatura em Minha assinatura. Os dias do novo per\xEDodo s\xE3o somados aos que voc\xEA ainda tem, sem perder o saldo atual.", "Em Minha assinatura, voc\xEA pode acrescentar mais tempo ao seu plano. O novo per\xEDodo come\xE7a depois dos dias que j\xE1 est\xE3o pagos.", "Para prolongar o acesso, basta escolher o pr\xF3ximo per\xEDodo em Minha assinatura. Os dias restantes continuam valendo e o novo per\xEDodo \xE9 acrescentado ao saldo."),
+    c.um("Seu hist\xF3rico de quest\xF5es, revis\xF5es e anota\xE7\xF5es continua salvo na conta.", "Suas quest\xF5es respondidas e anota\xE7\xF5es permanecem guardadas na conta.", "Seu progresso de estudo continua salvo para voc\xEA seguir de onde parou."),
+    `Para consultar as op\xE7\xF5es e prolongar: ${c.link("conta")}`,
+    c.um("Se precisar de ajuda com a renova\xE7\xE3o, basta responder este e-mail.", "Pode responder por aqui se tiver alguma d\xFAvida sobre a renova\xE7\xE3o.", "Se surgir alguma dificuldade para prolongar o acesso, me avise por aqui.")
+  ]
+}));
+var cartao_recusado = /* @__PURE__ */ ["sobre a tentativa de pagamento", "posso ajudar com o pagamento?", "uma alternativa para o seu pagamento", "para concluir sua assinatura", "sobre o seu cart\xE3o"].map((assunto, i) => ({
+  id: `v${i + 1}`,
+  assuntos: (c) => [nm(c, assunto, assunto.charAt(0).toUpperCase() + assunto.slice(1))],
+  corpo: (c) => [
+    c.um("N\xE3o foi poss\xEDvel concluir o pagamento no cart\xE3o. Posso ajudar?", "O pagamento no cart\xE3o n\xE3o foi confirmado. Voc\xEA tamb\xE9m pode concluir a assinatura por Pix.", "A tentativa de pagamento no cart\xE3o n\xE3o foi conclu\xEDda. H\xE1 outra op\xE7\xE3o dispon\xEDvel para assinar: o Pix."),
+    c.um("O Pix est\xE1 dispon\xEDvel na p\xE1gina de planos, junto das op\xE7\xF5es de cart\xE3o.", "Voc\xEA pode concluir a assinatura por Pix na p\xE1gina de planos.", "A p\xE1gina de planos permite escolher o per\xEDodo de assinatura e pagar por Pix."),
+    `Voc\xEA pode conferir por aqui: ${c.link("assinatura")}`,
+    "Se aparecer uma mensagem de erro, pode responder este e-mail com uma captura dela. Esconda n\xFAmeros de cart\xE3o, c\xF3digos de seguran\xE7a e outros dados pessoais antes de enviar.",
+    c.um("Se precisar de ajuda para concluir, pode me chamar respondendo este e-mail.", "Pode responder por aqui se tiver alguma d\xFAvida sobre o pagamento.", "Se tiver alguma d\xFAvida ao escolher o Pix, responda por aqui que eu te ajudo.")
+  ]
+}));
+var pix_hoje = /* @__PURE__ */ ["seu per\xEDodo de acesso termina hoje", "renova\xE7\xE3o do seu acesso", "para continuar com seu plano", "sobre sua assinatura", "prolongar o per\xEDodo do seu plano"].map((assunto, i) => ({
+  id: `v${i + 11}`,
+  assuntos: (c) => [nm(c, assunto, assunto.charAt(0).toUpperCase() + assunto.slice(1))],
+  corpo: (c) => [
+    c.um("O per\xEDodo atual do seu acesso pago por Pix termina hoje.", "Seu plano pago por Pix chega ao fim do per\xEDodo hoje.", "Hoje termina o per\xEDodo que voc\xEA pagou por Pix."),
+    c.um("Voc\xEA pode prolongar a assinatura em Minha assinatura. O novo per\xEDodo se soma ao que voc\xEA j\xE1 tem.", "Para continuar com o plano, escolha o pr\xF3ximo per\xEDodo em Minha assinatura. Os dias j\xE1 pagos s\xE3o preservados.", "A op\xE7\xE3o de prolongar o acesso j\xE1 est\xE1 em Minha assinatura, com os per\xEDodos dispon\xEDveis para escolher."),
+    c.um("Seu hist\xF3rico de estudo e suas anota\xE7\xF5es continuam salvos.", "Suas quest\xF5es respondidas e revis\xF5es seguem guardadas na conta.", "Seu progresso permanece salvo para continuar de onde parou."),
+    `As op\xE7\xF5es est\xE3o aqui: ${c.link("conta")}`,
+    c.um("Se precisar de ajuda com o pagamento, pode responder este e-mail.", "Pode me chamar por aqui se tiver alguma d\xFAvida para renovar.", "Se encontrar alguma dificuldade na renova\xE7\xE3o, me avise respondendo por aqui.")
+  ]
+}));
 var VERSOES = {
-  "ativo:0-10": ativo_0_10,
-  "ativo:10-20": ativo_10_20,
-  "ativo:20-30": ativo_20_30,
-  "ativo:30-40": ativo_30_40,
-  "ativo:40-60": ativo_40_60,
-  "ativo:60-70": ativo_60_70,
-  "ativo:70-80": ativo_70_80,
-  "ativo:80-90": ativo_80_90,
-  "ativo:90-100": ativo_90_100,
-  nunca_comecou,
-  boas_vindas,
-  comecando,
-  comecou_parou,
-  pausa,
-  sumiu,
-  obrigado_assinatura,
-  convite_20,
-  convite_50,
-  reta_final,
-  marco,
-  opiniao,
-  indicar,
-  cronograma,
+  "ativo:0-10": /* @__PURE__ */ estudo("uma sugest\xE3o para estudar por tema", "treinar"),
+  "ativo:10-20": /* @__PURE__ */ estudo("coment\xE1rios e quest\xF5es por tema", "treinar"),
+  "ativo:20-30": /* @__PURE__ */ estudo("revis\xE3o das quest\xF5es anteriores", "erros"),
+  "ativo:30-40": /* @__PURE__ */ estudo("sua pr\xF3xima revis\xE3o", "revisao"),
+  "ativo:40-60": /* @__PURE__ */ estudo("organizar a pr\xF3xima sess\xE3o", "revisao"),
+  "ativo:60-70": /* @__PURE__ */ estudo("revis\xE3o dos pontos espec\xEDficos", "erros"),
+  "ativo:70-80": /* @__PURE__ */ estudo("para consultar seu Caderno de erros", "erros"),
+  "ativo:80-90": /* @__PURE__ */ estudo("revis\xE3o de temas espec\xEDficos", "erros"),
+  "ativo:90-100": /* @__PURE__ */ estudo("suas pr\xF3ximas revis\xF5es", "revisao"),
+  nunca_comecou: /* @__PURE__ */ nunca(),
+  boas_vindas: /* @__PURE__ */ estudo("recursos para seu estudo", "treinar"),
+  boas_vindas_dia0: boasVindas,
+  comecando: /* @__PURE__ */ estudo("uma sess\xE3o de quest\xF5es", "treinar"),
+  comecou_parou: /* @__PURE__ */ estudo("continuar pelos temas j\xE1 estudados"),
+  pausa: /* @__PURE__ */ estudo("sua revis\xE3o est\xE1 dispon\xEDvel"),
+  sumiu: /* @__PURE__ */ estudo("seu hist\xF3rico de estudo"),
+  voltou: /* @__PURE__ */ estudo("continuar sua revis\xE3o"),
+  assinante_parado_7: /* @__PURE__ */ estudo("acesso \xE0s suas revis\xF5es"),
+  como_estao: /* @__PURE__ */ estudo("uma op\xE7\xE3o para a pr\xF3xima sess\xE3o"),
+  acesso_terminou: /* @__PURE__ */ estudo("consultar seu hist\xF3rico de estudo"),
+  convite_20: /* @__PURE__ */ convite(),
+  convite_50: /* @__PURE__ */ convite(),
+  reta_final: /* @__PURE__ */ provaVersoes("reta_final"),
+  vespera_prova: /* @__PURE__ */ provaVersoes("vespera_prova"),
+  depois_prova: /* @__PURE__ */ provaVersoes("depois_prova"),
+  marco: /* @__PURE__ */ marco(),
+  primeiras_10: /* @__PURE__ */ marco(true),
+  opiniao: /* @__PURE__ */ opiniao(),
+  indicar: /* @__PURE__ */ indicar(),
+  cronograma: /* @__PURE__ */ cronograma(),
+  cronograma_pronto: /* @__PURE__ */ cronograma(true),
+  pagamento_aprovado: /* @__PURE__ */ pagamento(),
+  obrigado_tempo: /* @__PURE__ */ encerramento(),
+  relatorio: /* @__PURE__ */ relatorio(),
+  aniversario: /* @__PURE__ */ aniversario(),
+  um_ano: /* @__PURE__ */ aniversario(true),
+  indicacao_deu_certo: /* @__PURE__ */ indicacao(),
+  resumo_do_tema: /* @__PURE__ */ resumo(),
+  simulado_resultado: /* @__PURE__ */ simulado(true),
+  simulado_lembrete: /* @__PURE__ */ simulado(),
   pix_3_dias,
   pix_hoje,
-  relatorio,
-  boas_vindas_dia0,
-  primeiras_10,
-  voltou,
-  cronograma_pronto,
-  pagamento_aprovado,
-  obrigado_tempo,
-  assinou_sem_cronograma,
-  assinante_parado_7,
-  simulado_resultado,
-  vespera_prova,
-  depois_prova,
-  aniversario,
-  um_ano,
-  indicacao_deu_certo,
-  resumo_do_tema,
-  simulado_lembrete,
-  acesso_terminou,
-  como_estao
+  cartao_recusado,
+  // Mantidos apenas para leitura de histórico; o bloqueio central impede novos envios.
+  obrigado_assinatura: /* @__PURE__ */ pagamento(),
+  assinou_sem_cronograma: /* @__PURE__ */ cronograma()
 };
 
 // supabase/functions/_shared/cartas.ts
@@ -3291,8 +427,8 @@ function cadenciaBloqueia(anteriores = [], hoje = /* @__PURE__ */ new Date(), ti
   });
   if (noPeriodo.length >= CADENCIA.maximoNoPeriodo) {
     const maisAntigo = Math.max(...noPeriodo.map((e) => diasDesde(e.em, hoje)));
-    const faltam2 = Math.max(1, Math.ceil(CADENCIA.dias - maisAntigo));
-    return `Cad\xEAncia: j\xE1 recebeu ${noPeriodo.length} e-mails nos \xFAltimos 14 dias. A pr\xF3xima carta pode sair em ${dias(faltam2)}.`;
+    const faltam = Math.max(1, Math.ceil(CADENCIA.dias - maisAntigo));
+    return `Cad\xEAncia: j\xE1 recebeu ${noPeriodo.length} e-mails nos \xFAltimos 14 dias. A pr\xF3xima carta pode sair em ${dias(faltam)}.`;
   }
   return null;
 }
@@ -3318,8 +454,8 @@ function escolherTipo(p, anteriores = [], hoje = /* @__PURE__ */ new Date()) {
   }
   const provas = p.provas ?? [];
   const teot = provas.includes("teot") || !provas.length && (p.ano === "r3" || p.situacao === "r4");
-  const diasProva2 = p.diasParaProva ?? (teot ? diasAteTeot(hoje) : null);
-  if (diasProva2 !== null && diasProva2 <= 60 && (teot || p.diasParaProva) && !recebeu("reta_final", 30)) return com("reta_final", null, null, `Faltam ${dias(diasProva2)} para a prova.`);
+  const diasProva = p.diasParaProva ?? (teot ? diasAteTeot(hoje) : null);
+  if (diasProva !== null && diasProva <= 60 && (teot || p.diasParaProva) && !recebeu("reta_final", 30)) return com("reta_final", null, null, `Faltam ${dias(diasProva)} para a prova.`);
   if (!p.assinante && r > 20 && !recebeu("convite_20", 30) && !recebeu("convite_50", 30)) {
     return r > 50 ? com("convite_50", acerto === null ? null : faixaDe(acerto), null, `N\xE3o assina e j\xE1 fez ${questoes(r)}.`) : com("convite_20", null, null, `N\xE3o assina e j\xE1 fez ${questoes(r)}.`);
   }
@@ -3371,8 +507,8 @@ function fatosDe(p, hoje = /* @__PURE__ */ new Date()) {
     else if (parte(14, 19) >= 0.55) f.horario = "tarde";
   }
   const provas = (p.provas ?? []).filter(Boolean);
-  for (const prova of ["teot", "taro", "mao", "r4", "atualizacao"]) if (provas.includes(prova)) {
-    f.prova = prova;
+  for (const prova2 of ["teot", "taro", "mao", "r4", "atualizacao"]) if (provas.includes(prova2)) {
+    f.prova = prova2;
     break;
   }
   if (p.situacao === "residente" && (p.ano === "r1" || p.ano === "r2" || p.ano === "r3")) f.etapa = p.ano;
@@ -3390,11 +526,11 @@ function fatosDe(p, hoje = /* @__PURE__ */ new Date()) {
     const titulo = (rl.titulos ?? []).map((t) => String(t ?? "").trim()).find((t) => t.length >= 3 && t.length <= 80) ?? null;
     f.resumos = { total: Math.round(Number(rl.total)), titulo };
   }
-  let diasProva2 = p.diasParaProva === null || p.diasParaProva === void 0 ? NaN : Number(p.diasParaProva);
-  if (!Number.isFinite(diasProva2) && p.provaData) diasProva2 = Math.ceil((new Date(p.provaData).getTime() - hoje.getTime()) / 864e5);
-  if (Number.isFinite(diasProva2) && diasProva2 >= 1 && diasProva2 <= 730) {
+  let diasProva = p.diasParaProva === null || p.diasParaProva === void 0 ? NaN : Number(p.diasParaProva);
+  if (!Number.isFinite(diasProva) && p.provaData) diasProva = Math.ceil((new Date(p.provaData).getTime() - hoje.getTime()) / 864e5);
+  if (Number.isFinite(diasProva) && diasProva >= 1 && diasProva <= 730) {
     const nome = nomeProvaInformado(p.provaCronograma);
-    f.cronograma = { dias: Math.round(diasProva2), prova: nome || null };
+    f.cronograma = { dias: Math.round(diasProva), prova: nome || null };
   }
   const servico = (p.servico ?? "").trim();
   if (servico.length >= 3) f.servico = { nome: servico, de: servicoComArtigo(servico) };
@@ -3425,171 +561,58 @@ function frasesDoFato(chave, f, mostrar) {
   switch (chave) {
     case "melhorArea": {
       const m = f.melhorArea, a = A(m.slug);
-      return mostrar ? [
-        `Reparei que ${a.em} \xE9 o seu ponto mais forte, com ${m.pct}% de acerto. Isso n\xE3o aparece por acaso.`,
-        `Reparei que ${a.em} virou o seu ponto forte, com ${m.pct}% de acerto em ${questoes(m.total)}. \xC9 fruto de quest\xE3o feita com aten\xE7\xE3o, e nada disso se perde.`,
-        `Em ${a.em} voc\xEA est\xE1 voando: ${m.pct}% de acerto. ${a.sabor[0]}`,
-        `Seu melhor tema hoje \xE9 ${a.em}, com ${m.pct}%.`
-      ] : [
-        `Vi que ${a.em} j\xE1 virou um ponto forte seu. ${a.sabor[0]}`,
-        `Reparei que ${a.em} \xE9 o tema em que voc\xEA mais brilha. Fiquei feliz de ver.`,
-        `Em ${a.em} voc\xEA j\xE1 est\xE1 mandando muito bem, e isso diz muito sobre o jeito como voc\xEA estuda.`
-      ];
+      return mostrar ? [`Seu maior acerto por tema est\xE1 em ${a.em}, com ${m.pct}%.`, `Em ${a.em}, seu hist\xF3rico registra ${m.pct}% de acerto em ${questoes(m.total)}.`, `O tema com maior acerto no seu hist\xF3rico \xE9 ${a.de}, com ${m.pct}%.`] : [`${a.de.charAt(0).toUpperCase() + a.de.slice(1)} aparece entre os temas j\xE1 consolidados no seu hist\xF3rico.`, `Voc\xEA pode usar os resultados de ${a.de} para orientar a revis\xE3o dos pr\xF3ximos temas.`];
     }
     case "maisEstudada": {
       const m = f.maisEstudada, a = A(m.slug);
-      return [
-        `Vi que ${a.em} \xE9 o tema a que voc\xEA mais tem se dedicado: ${questoes(m.total)} at\xE9 agora. ${a.sabor[a.sabor.length - 1]}`,
-        `Reparei que tem bastante quest\xE3o de ${a.de} no seu hist\xF3rico. ${a.sabor[a.sabor.length - 1]}`,
-        `${a.de.charAt(0).toUpperCase() + a.de.slice(1)} parece ser a sua praia por aqui: j\xE1 s\xE3o ${questoes(m.total)}.`
-      ];
+      return [`O tema com mais quest\xF5es no seu hist\xF3rico \xE9 ${a.de}.`, `Seu hist\xF3rico re\xFAne ${questoes(m.total)} de ${a.de}.`, `O tema que voc\xEA mais estudou por aqui foi ${a.de}.`];
     }
     case "areaFraca": {
       const a = A(f.areaFraca.slug);
-      return [
-        `Um tema bom para as pr\xF3ximas semanas \xE9 ${a.em}: \xE9 onde cada sess\xE3o vai render mais para voc\xEA agora. Dez quest\xF5es por semana j\xE1 mudam o quadro.`,
-        `Reparei que ${a.em} \xE9 o tema com mais espa\xE7o para crescer no seu caso, e isso \xE9 uma boa not\xEDcia: \xE9 ali que os pontos v\xEAm mais r\xE1pido. Dez quest\xF5es por semana bastam.`,
-        `Uma sugest\xE3o: dez quest\xF5es de ${a.de} por semana podem fazer uma bela diferen\xE7a nas pr\xF3ximas semanas.`
-      ];
+      return [`Uma op\xE7\xE3o para a pr\xF3xima revis\xE3o \xE9 incluir quest\xF5es de ${a.de}.`, `Voc\xEA pode selecionar ${a.de} para uma sess\xE3o espec\xEDfica de revis\xE3o.`, `Os coment\xE1rios das quest\xF5es de ${a.de} podem orientar a pr\xF3xima sess\xE3o.`];
     }
-    case "horario":
-      return {
-        noite: ["Vi que voc\xEA estuda quase sempre \xE0 noite. \xC9 uma rotina pesada: o dia inteiro no hospital e o estudo esperando no fim dele.", "Reparei que quase tudo seu sai \xE0 noite, quando o dia j\xE1 acabou. Sei o que isso custa, e admiro.", "Vi que a noite \xE9 o seu hor\xE1rio de estudo. Respeito demais quem encontra esse tempo depois de um dia inteiro."],
-        madrugada: ["Vi que muita quest\xE3o sua sai de madrugada, provavelmente no plant\xE3o.", "Reparei que voc\xEA estuda at\xE9 de madrugada."],
-        manha: ["Reparei que voc\xEA gosta de estudar cedo, antes de o dia come\xE7ar. \xC9 um jeito bonito de proteger o estudo da rotina.", "Vi que voc\xEA estuda bastante de manh\xE3 cedo, antes de o hospital te engolir. Admiro essa disciplina."],
-        almoco: ["Vi que muita quest\xE3o sua sai na hora do almo\xE7o. Que jeito esperto de encaixar o estudo no \xFAnico intervalo do dia.", "Reparei que voc\xEA aproveita o hor\xE1rio do almo\xE7o para estudar. Isso \xE9 usar bem o pouco tempo que a resid\xEAncia deixa."],
-        tarde: ["Vi que voc\xEA costuma estudar \xE0 tarde, num ritmo bem constante.", "Reparei que a tarde \xE9 o seu hor\xE1rio de quest\xF5es. Gosto de ver essa rotina."]
-      }[f.horario];
-    case "prova":
-      return {
-        teot: ["Vi que o TEOT est\xE1 no seu horizonte, e fico na torcida.", "Sei que o seu foco \xE9 o TEOT, e estou na torcida."],
-        taro: ["Vi que voc\xEA est\xE1 se preparando para o TARO, e fico na torcida.", "Sei que o TARO est\xE1 no seu radar."],
-        mao: ["Vi que voc\xEA est\xE1 se preparando para a prova da cirurgia da m\xE3o.", "Sei que a prova da m\xE3o est\xE1 no seu radar, e fico na torcida."],
-        r4: ["Vi que voc\xEA est\xE1 mirando o R4.", "Sei que a sele\xE7\xE3o do R4 est\xE1 no seu radar, e fico na torcida."],
-        atualizacao: ["Vi que voc\xEA estuda para se manter em dia, sem prova marcada. Acho isso muito bonito.", "Gosto muito de ver gente estudando sem prova marcada, s\xF3 pelo prazer de se manter em dia."]
-      }[f.prova];
-    case "etapa":
-      return {
-        r1: ["Sei que o R1 \xE9 um ano de muita novidade e pouco tempo, e mesmo assim voc\xEA est\xE1 aqui.", "O R1 \xE9 o ano de aprender a sobreviver ao hospital. Estudar no meio disso tem muito valor."],
-        r2: ["Sei que o R2 costuma ser o ano mais puxado de plant\xE3o, e mesmo assim voc\xEA encontra tempo.", "Estudar no meio do R2 n\xE3o \xE9 pouca coisa, e voc\xEA est\xE1 fazendo."],
-        r3: ["O R3 \xE9 o ano do TEOT, e sei como ele pesa. Cada quest\xE3o agora conta muito.", "Sei que o R3 \xE9 um ano intenso, com a prova no fim dele."],
-        r4: ["Na subespecialidade, o detalhe faz toda a diferen\xE7a.", "Estudar no R4 \xE9 escolher ir al\xE9m, e eu admiro isso."],
-        mao: ["Resid\xEAncia de m\xE3o pede muito detalhe, e voc\xEA est\xE1 encarando com vontade.", "Na m\xE3o, o detalhe \xE9 tudo, e d\xE1 para ver que voc\xEA sabe disso."],
-        estudante: ["Estudar ortopedia ainda na gradua\xE7\xE3o \xE9 sair na frente.", "Fico feliz de ver gente da gradua\xE7\xE3o estudando ortopedia com tanta seriedade."],
-        ortopedista: ["Admiro muito quem segue estudando depois da resid\xEAncia.", "\xC9 bonito ver quem j\xE1 terminou a resid\xEAncia mantendo o estudo em dia."]
-      }[f.etapa];
-    case "ranking": {
-      const n = f.ranking;
-      return n <= 10 ? [`Voc\xEA est\xE1 em ${n}\xBA no ranking geral, entre os dez primeiros. Que orgulho.`, `${n}\xBA lugar no ranking geral. Isso \xE9 muito estudo, e fiquei feliz de ver.`] : [`Parab\xE9ns pela ${n}\xAA posi\xE7\xE3o no ranking geral.`, `Vi que voc\xEA est\xE1 em ${n}\xBA no ranking geral, e fiquei feliz de ver o seu nome l\xE1.`];
+    case "horario": {
+      const h = { noite: "\xE0 noite", madrugada: "de madrugada", manha: "pela manh\xE3", almoco: "no hor\xE1rio do almo\xE7o", tarde: "\xE0 tarde" }[f.horario];
+      return [`Suas sess\xF5es costumam acontecer ${h}.`, `Os registros mostram que voc\xEA costuma estudar ${h}.`];
     }
+    case "prova": {
+      const p = { teot: "TEOT", taro: "TARO", mao: "cirurgia da m\xE3o", r4: "R4", atualizacao: "atualiza\xE7\xE3o profissional" }[f.prova];
+      return [`Seu perfil indica interesse em ${p}.`, `Voc\xEA informou ${p} entre seus objetivos de estudo.`];
+    }
+    case "etapa": {
+      const e = { r1: "R1", r2: "R2", r3: "R3", r4: "R4", mao: "resid\xEAncia de cirurgia da m\xE3o", estudante: "gradua\xE7\xE3o", ortopedista: "ortopedista" }[f.etapa];
+      return [`A etapa informada no seu perfil \xE9 ${e}.`, `Seu cadastro est\xE1 identificado com a etapa ${e}.`];
+    }
+    case "ranking":
+      return [`Sua posi\xE7\xE3o atual no ranking geral \xE9 ${f.ranking}\xAA.`, `Voc\xEA est\xE1 na ${f.ranking}\xAA posi\xE7\xE3o do ranking geral.`];
     case "sequencia":
-      return [`S\xE3o ${dias(f.sequencia)} seguidos estudando.`, `Sua sequ\xEAncia est\xE1 em ${dias(f.sequencia)}, e isso diz muito sobre voc\xEA.`];
+      return [`Sua sequ\xEAncia atual registra ${dias(f.sequencia)} de estudo.`, `O hist\xF3rico mostra ${dias(f.sequencia)} seguidos de estudo.`];
     case "flashcards":
-      return ["Vi que voc\xEA tamb\xE9m est\xE1 usando os flashcards, que bom.", `Vi que voc\xEA j\xE1 passou por ${numero(f.flashcards)} flashcards tamb\xE9m.`];
+      return [`Seu hist\xF3rico tamb\xE9m registra ${numero(f.flashcards)} flashcards.`, "Os Flashcards tamb\xE9m aparecem entre os recursos que voc\xEA j\xE1 utilizou."];
     case "semana":
-      return [`S\xF3 nos \xFAltimos sete dias foram ${questoes(f.semana)}. Que dedica\xE7\xE3o.`, `Vi as ${questoes(f.semana)} desta \xFAltima semana, e fiquei feliz.`];
-    case "resumos": {
-      const r = f.resumos;
-      if (r.total === 1) return r.titulo ? [`Vi que voc\xEA leu o resumo "${r.titulo}" na Biblioteca. Ler o resumo e depois fazer as quest\xF5es do tema \xE9 o jeito mais r\xE1pido de fixar.`] : ["Vi que voc\xEA j\xE1 leu um resumo da Biblioteca. Resumo e quest\xE3o do mesmo tema, na mesma sess\xE3o, \xE9 a combina\xE7\xE3o que mais rende."];
-      return [
-        r.titulo ? `Vi que voc\xEA j\xE1 leu ${numero(r.total)} resumos da Biblioteca, entre eles "${r.titulo}". Resumo e quest\xE3o do mesmo tema, na mesma sess\xE3o, \xE9 a combina\xE7\xE3o que mais rende.` : `Vi que voc\xEA j\xE1 leu ${numero(r.total)} resumos da Biblioteca. Resumo e quest\xE3o do mesmo tema, na mesma sess\xE3o, \xE9 a combina\xE7\xE3o que mais rende.`,
-        `Reparei nos ${numero(r.total)} resumos que voc\xEA j\xE1 leu na Biblioteca. Quem l\xEA o resumo antes das quest\xF5es costuma sentir o estudo render mais r\xE1pido.`
-      ];
-    }
-    case "cronograma": {
-      const c = f.cronograma, prova = provaComArtigo(c.prova);
-      return [
-        `Vi no seu cronograma que faltam ${dias(c.dias)} para ${prova}. D\xE1 tempo de muita coisa, ainda mais com a lista de cada dia j\xE1 pronta.`,
-        `Pelo seu cronograma, ${prova} est\xE1 a ${dias(c.dias)}, e eu estou na torcida.`
-      ];
-    }
+      return [`Na \xFAltima semana, o hist\xF3rico registra ${questoes(f.semana)}.`, `Voc\xEA respondeu ${questoes(f.semana)} nos \xFAltimos sete dias.`];
+    case "resumos":
+      return f.resumos.titulo ? [`O resumo "${f.resumos.titulo}" est\xE1 entre as leituras do seu hist\xF3rico.`] : ["Seu hist\xF3rico inclui leituras na Biblioteca de resumos."];
+    case "cronograma":
+      return [`Seu cronograma registra ${dias(f.cronograma.dias)} at\xE9 ${f.cronograma.prova || "a prova informada"}.`];
     case "servico":
-      return [`Vi que voc\xEA \xE9 ${f.servico.de}. Manda um abra\xE7o para o pessoal de l\xE1.`, `Reparei que voc\xEA est\xE1 ${f.servico.de}. Deve ser corrido por l\xE1, e mesmo assim voc\xEA encontra tempo para estudar.`];
+      return [`Seu cadastro informa o servi\xE7o ${f.servico.nome}.`];
     case "cidade":
-      return [`Vi que voc\xEA estuda a partir de ${f.cidade}. Que bom ter algu\xE9m de l\xE1 por aqui.`, `Reparei que voc\xEA escreve de ${f.cidade}. Um abra\xE7o para a cidade.`];
+      return [`A cidade informada no seu cadastro \xE9 ${f.cidade}.`];
     case "aniversario":
-      return f.aniversario === "hoje" ? ["E hoje \xE9 o seu anivers\xE1rio. Parab\xE9ns, de cora\xE7\xE3o. Que o ano que come\xE7a traga a aprova\xE7\xE3o e, antes dela, dias mais leves."] : ["Vi que o seu anivers\xE1rio est\xE1 chegando. Deixo o parab\xE9ns adiantado, com carinho."];
+      return ["A data de anivers\xE1rio informada no seu perfil \xE9 hoje."];
   }
-  return [];
 }
 var ORDEM_FATOS = ["aniversario", "cronograma", "melhorArea", "ranking", "resumos", "servico", "maisEstudada", "horario", "prova", "sequencia", "semana", "etapa", "cidade", "flashcards", "areaFraca"];
 var MAXIMO_OBS = 3;
-var TEMPO = [
-  "Dez minutos no intervalo j\xE1 contam. N\xE3o precisa ser uma sess\xE3o grande para valer.",
-  "Voc\xEA senta e estuda; o site organiza o resto.",
-  "Trinta minutos num hor\xE1rio fixo valem mais que duas horas espalhadas pelo fim de semana.",
-  "Estudar f\xE1cil \xE9 abrir e j\xE1 saber o que fazer. Quando a lista vem pronta, o cansa\xE7o pesa menos.",
-  "O tempo que a gente mais perde n\xE3o \xE9 estudando, \xE9 decidindo o que estudar. Deixar essa decis\xE3o pronta devolve uns quinze minutos por dia.",
-  "Cinco quest\xF5es no \xF4nibus, cinco no caf\xE9, cinco antes de dormir. No fim da semana, isso vira um estudo de verdade.",
-  "A lista do dia j\xE1 pronta quando voc\xEA sai da cirurgia: \xE9 isso que faz o estudo caber numa rotina de hospital.",
-  "Pouco e todo dia rende mais do que muito de vez em quando. A mem\xF3ria gosta de repeti\xE7\xE3o, n\xE3o de maratona.",
-  "Se a semana apertar, tudo bem. O site fica do jeito que voc\xEA deixou, e a Revis\xE3o guarda o que precisa de uma segunda olhada.",
-  "O segredo de quem passa com a rotina cheia n\xE3o \xE9 estudar mais horas, \xE9 n\xE3o desperdi\xE7ar as poucas que tem."
-];
+var TEMPO = ["Voc\xEA pode dividir o estudo em sess\xF5es por tema.", "O hist\xF3rico permite continuar a sess\xE3o de onde voc\xEA parou.", "Uma sess\xE3o curta pode ser dedicada a um tema e aos coment\xE1rios das alternativas."];
 var DICAS = {
-  baixo: [
-    "Um truque que ajuda muita gente: antes de olhar as alternativas, tente responder de cabe\xE7a. \xC9 um \xF3timo treino para o racioc\xEDnio de prova.",
-    "Uma coisa que costuma fazer diferen\xE7a: ler tamb\xE9m o coment\xE1rio das alternativas que n\xE3o s\xE3o a resposta. \xC9 ali que a banca esconde as pegadinhas.",
-    "Se ajudar: cinco quest\xF5es por dia, com calma, costumam render mais do que trinta de uma vez no domingo.",
-    "Uma ideia que funciona bem: quando uma quest\xE3o te pegar, marque como favorita e volte nela no dia seguinte. \xC9 impressionante como ela fica.",
-    "Uma estrat\xE9gia simples: antes de escolher a certa, descarte as que voc\xEA tem certeza de que n\xE3o s\xE3o. A quest\xE3o fica bem mais leve."
-  ],
-  medio: [
-    "Que tal come\xE7ar cada sess\xE3o pela Revis\xE3o do dia? S\xE3o as quest\xF5es que pedem uma segunda olhada, voltando no momento certo.",
-    "Uma ideia: abrir o Caderno de erros uma vez por semana e refazer as que ainda incomodam. Rende muito.",
-    "Quando acertar com d\xFAvida, vale ler o coment\xE1rio como se tivesse errado. Assim o acerto vira certeza.",
-    "Alguns dias dedicados ao tema que mais te desafia costumam render muito, se fizer sentido para voc\xEA.",
-    "Um truque de prova: ler o enunciado at\xE9 o fim antes de olhar as alternativas. A banca adora esconder coisa na \xFAltima linha."
-  ],
-  alto: [
-    "Nesse n\xEDvel, vale ler o coment\xE1rio mesmo quando acerta. \xC0s vezes ele traz um detalhe que a banca ainda vai cobrar.",
-    "Uma ideia: misturar provas e temas na mesma sess\xE3o. Obriga a reconhecer o assunto sem pista, como no dia da prova.",
-    "Uma lembran\xE7a gentil: mat\xE9ria bem sabida tamb\xE9m esfria se ficar parada, ent\xE3o a Revis\xE3o em dia protege o que voc\xEA conquistou.",
-    "As quest\xF5es que voltam a te pegar uma segunda vez s\xE3o as mais valiosas da sua lista. Vale dar um carinho especial a elas.",
-    'Um detalhe de prova: o "exceto" e o "incorreta" no enunciado. \xC9 ali que at\xE9 quem sabe muito ainda deixa escapar um ponto.'
-  ]
+  baixo: ["Voc\xEA pode ler o coment\xE1rio de cada alternativa depois de responder.", "Os filtros permitem selecionar um tema para a pr\xF3xima sess\xE3o."],
+  medio: ["A Revis\xE3o re\xFAne quest\xF5es do seu hist\xF3rico para retomar os temas.", "O Caderno de erros permite refazer quest\xF5es e consultar os coment\xE1rios."],
+  alto: ["Voc\xEA pode combinar provas e temas nos filtros da sess\xE3o.", "Os coment\xE1rios das alternativas podem complementar a revis\xE3o de um tema."]
 };
-var FECHOS = ["Se n\xE3o for a hora, tudo bem tamb\xE9m. Eu continuo por aqui.", "Se eu puder ajudar em qualquer coisa, \xE9 s\xF3 responder este e-mail.", "Estou torcendo por voc\xEA.", "Conte comigo no que precisar.", "Fico feliz de acompanhar o seu caminho.", "Tor\xE7o muito pela sua aprova\xE7\xE3o.", "Bons estudos por a\xED, e cuide-se."];
-var CHAVES_FECHO = ["respond", "torc", "acompanh", "conte comigo", "bons estudos", "n\xE3o for a hora", "por aqui"];
+var FECHOS = ["Se precisar de ajuda com o site, basta responder este e-mail.", "Pode responder por aqui se encontrar alguma dificuldade.", "Se tiver alguma d\xFAvida, pode me chamar por aqui."];
 var simples = (t) => t.toLowerCase().replace(/ç/g, "c");
-var IDEIAS_PS = [
-  /respond/,
-  /\bsono\b|dormir|dormi/,
-  /relat(ar|o)\b/,
-  /dez minutos|no intervalo/,
-  /semana apertar|do jeito que voce deixou|do jeito que você deixou/,
-  /comentario das alternativas|comentário das alternativas|alternativas erradas/,
-  /\bcafe\b|\bcafé\b/,
-  /\berrar\b|errar aqui/,
-  /\bcolega\b|estudar junto/,
-  /ranking/,
-  /aniversario|aniversário/,
-  /seguidos/,
-  /madrugada/,
-  /a noite|à noite/,
-  /resumo/,
-  /\bservico\b|\bserviço\b|hospital|santa casa/,
-  /faltam .{1,12} dias|dias para (o|a) /,
-  /\bfeliz\b/,
-  /torc/,
-  /automatico|automático/,
-  /mantem (o|isto|o site) de pe|mantém (o|isto|o site) de pé/,
-  /\bleio\b/,
-  /parab[eé]ns/
-];
-function ideiasDe(texto) {
-  const t = simples(texto);
-  const achadas = /* @__PURE__ */ new Set();
-  IDEIAS_PS.forEach((re, i) => {
-    if (re.test(t)) achadas.add(i);
-  });
-  return achadas;
-}
-function psRepeteCorpo(ps, corpo) {
-  const doCorpo = ideiasDe(corpo);
-  for (const i of ideiasDe(ps.replace(/^P\.S\.:\s*/, ""))) if (doCorpo.has(i)) return true;
-  return false;
-}
 var PALAVRAS_FORTES = [/\bfeliz\b/, /\borgulho\b/, /\bbonit[ao]\b/, /\badmir/, /\btorc/, /\bcarinho\b/, /\bparab[ée]ns\b/, /\bconstancia\b/];
 function fortesDe(texto) {
   const t = simples(texto);
@@ -3598,11 +621,6 @@ function fortesDe(texto) {
     if (re.test(t)) achadas.add(i);
   });
   return achadas;
-}
-function repetemForte(a, b) {
-  const deA = fortesDe(a);
-  for (const i of fortesDe(b)) if (deA.has(i)) return true;
-  return false;
 }
 function frasesDe(texto) {
   return texto.replace(/^P\.S\.:\s*/gm, "").split(/(?<=[.!?])\s+|\n+/).map((f) => f.trim()).filter((f) => f.length > 0);
@@ -3615,16 +633,6 @@ function frasesSeguidasRepetem(texto) {
   }
   return null;
 }
-var PS_HUMANOS = [
-  "P.S.: se quiser responder este e-mail, vou adorar ler.",
-  "P.S.: se encontrar algo estranho numa quest\xE3o, tem um bot\xE3o para relatar. Cada relato \xE9 lido com carinho.",
-  "P.S.: dez minutos no intervalo j\xE1 contam. N\xE3o precisa esperar um dia livre para estudar.",
-  "P.S.: se a semana apertar, tudo bem. O site fica do jeito que voc\xEA deixou.",
-  "P.S.: se quiser me contar como est\xE1 sendo a rotina, \xE9 s\xF3 responder. Gosto de saber.",
-  "P.S.: o coment\xE1rio das alternativas erradas costuma ensinar muito. Vale ler at\xE9 o fim.",
-  "P.S.: errar aqui \xE9 barato. \xC9 na prova que custa. Aproveita que aqui \xE9 treino.",
-  "P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo mais leve."
-];
 function tomDaFaixa(f) {
   if (!f) return "baixo";
   return ["0-10", "10-20", "20-30", "30-40"].includes(f) ? "baixo" : f === "40-60" || f === "60-70" ? "medio" : "alto";
@@ -3656,7 +664,7 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado) {
     return frases[Math.floor(rnd() * frases.length)];
   };
   const teot = fatos.prova === "teot" || !fatos.prova && (fatos.etapa === "r3" || fatos.etapa === "r4");
-  const diasProva2 = fatos.cronograma?.dias ?? (teot ? diasAteTeot(hoje) : null);
+  const diasProva = fatos.cronograma?.dias ?? (teot ? diasAteTeot(hoje) : null);
   const nomeProva = p.provaData || p.provaCronograma ? provaComArtigo(p.provaCronograma) : fatos.prova ? NOME_PROVA[fatos.prova] : teot ? "o TEOT" : "a sua prova";
   const ctx = {
     p,
@@ -3675,7 +683,7 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado) {
     fatos,
     hoje,
     diasTeot: diasAteTeot(hoje),
-    diasProva: diasProva2,
+    diasProva,
     nomeProva,
     daProva: nomeProva.replace(/^o /, "do ").replace(/^a /, "da "),
     marco: marco2,
@@ -3709,46 +717,21 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado) {
     dica: () => um(...DICAS[tomDaFaixa(faixa)]),
     // "Torço pela sua aprovação" só para quem tem prova pela frente.
     fecho: () => rnd() < 0.15 ? null : um(...FECHOS.filter((f) => !(f.includes("aprova\xE7\xE3o") && (fatos.prova === "atualizacao" || fatos.etapa === "ortopedista")))),
-    ps: (corpo = "") => {
-      const candidatos = [];
-      if (fatos.aniversario && !usados.has("aniversario")) candidatos.push(["aniversario", fatos.aniversario === "hoje" ? "P.S.: e parab\xE9ns pelo anivers\xE1rio. Que o ano que come\xE7a traga a aprova\xE7\xE3o e dias mais leves." : "P.S.: vi que o seu anivers\xE1rio est\xE1 chegando. Deixo o parab\xE9ns adiantado, com carinho."]);
-      if (fatos.ranking && !usados.has("ranking")) candidatos.push(["ranking", `P.S.: vi que voc\xEA est\xE1 em ${fatos.ranking}\xBA no ranking geral. Fiquei feliz de ver o seu nome l\xE1.`]);
-      if (fatos.sequencia && !usados.has("sequencia")) candidatos.push(["sequencia", `P.S.: ${dias(fatos.sequencia)} seguidos de estudo.`]);
-      if (fatos.horario === "madrugada" && !usados.has("horario")) candidatos.push(["horario", "P.S.: vi que voc\xEA estuda at\xE9 de madrugada."]);
-      if (fatos.horario === "noite" && !usados.has("horario")) candidatos.push(["horario", "P.S.: vi que voc\xEA estuda bastante \xE0 noite. Admiro muito quem encontra tempo depois de um dia inteiro."]);
-      if (fatos.cronograma && !usados.has("cronograma")) candidatos.push(["cronograma", `P.S.: faltam ${dias(fatos.cronograma.dias)} para ${fatos.cronograma.prova ? `o ${fatos.cronograma.prova}` : "a sua prova"}. Estou na torcida.`]);
-      if (fatos.servico && !usados.has("servico")) candidatos.push(["servico", `P.S.: um abra\xE7o para o pessoal ${fatos.servico.de}.`]);
-      if (fatos.melhorArea && !usados.has("melhorArea")) {
-        const em = AREAS[fatos.melhorArea.slug].em;
-        candidatos.push(["melhorArea", mostrarAcerto() ? `P.S.: ${em} com ${fatos.melhorArea.pct}% de acerto. Parab\xE9ns, de verdade.` : `P.S.: ${em} est\xE1 ficando muito forte no seu estudo. Parab\xE9ns, de verdade.`]);
-      }
-      if (fatos.resumos && !usados.has("resumos")) candidatos.push(["resumos", fatos.resumos.titulo ? `P.S.: vi que voc\xEA leu "${fatos.resumos.titulo}" na Biblioteca. Fazer as quest\xF5es do tema logo depois \xE9 o que mais fixa.` : "P.S.: vi que voc\xEA anda lendo os resumos da Biblioteca. Fazer as quest\xF5es do tema logo depois \xE9 o que mais fixa."]);
-      const novos = candidatos.filter(([, texto]) => !psRepeteCorpo(texto, corpo));
-      const humanos = PS_HUMANOS.filter((texto) => !psRepeteCorpo(texto, corpo));
-      if (novos.length && nObs() < MAXIMO_OBS && rnd() < 0.5) {
-        const [chave, texto] = novos[Math.floor(rnd() * novos.length)];
-        if (chave) {
-          usados.add(chave);
-          if (chave === "melhorArea" && mostrarAcerto()) usados.add("acerto");
-        }
-        return texto;
-      }
-      return um(...humanos.length ? humanos : PS_HUMANOS);
-    },
+    ps: () => "",
     beneficios: (k, curto = false) => {
-      const lista2 = [
+      const lista = [
         ["o cronograma at\xE9 a prova: voc\xEA diz a data e a lista de cada dia j\xE1 est\xE1 pronta quando voc\xEA senta, com o que mais cai primeiro; se a semana apertar, ele se ajusta sozinho", "o cronograma at\xE9 a prova", fatos.prova || fatos.etapa || fatos.cronograma ? 10 : 6],
         ["o Simulado Nacional todo m\xEAs, com a sua posi\xE7\xE3o", "o Simulado Nacional do m\xEAs", fatos.ranking ? 9 : 5],
         ["os temas que mais caem em cada \xE1rea e como a turma respondeu cada alternativa", "os temas que mais caem", fatos.areaFraca ? 9 : 4],
-        ["o Resum\xE3o, com o que cai em uma frase por assunto", "o Resum\xE3o da reta final", (diasProva2 ?? 999) <= 90 ? 7 : 3],
+        ["o Resum\xE3o, com o que cai em uma frase por assunto", "o Resum\xE3o da reta final", (diasProva ?? 999) <= 90 ? 7 : 3],
         ["a Biblioteca de resumos inteira, cada resumo sa\xEDdo de um cap\xEDtulo de livro e com as quest\xF5es reais no meio do texto", "a Biblioteca de resumos", fatos.resumos ? 9 : 4],
         ["a liga da resid\xEAncia e o relat\xF3rio do m\xEAs", "a liga da resid\xEAncia", fatos.etapa && fatos.etapa.startsWith("r") ? 4 : 2]
       ];
       if (p.limiteGratisLigado) {
         const t = fatos.flashcards ? "quest\xF5es e flashcards sem limite di\xE1rio" : "quest\xF5es sem limite di\xE1rio";
-        lista2.push([t, t, fatos.flashcards || (fatos.semana ?? 0) >= 100 ? 11 : 6]);
+        lista.push([t, t, fatos.flashcards || (fatos.semana ?? 0) >= 100 ? 11 : 6]);
       }
-      return lista2.map(([longo, breve, peso]) => [curto ? breve : longo, peso + rnd() * 2]).sort((a, b) => b[1] - a[1]).slice(0, k).map(([t]) => t);
+      return lista.map(([longo, breve, peso]) => [curto ? breve : longo, peso + rnd() * 2]).sort((a, b) => b[1] - a[1]).slice(0, k).map(([t]) => t);
     },
     quando: (d) => d <= 0 ? "hoje" : d === 1 ? "ontem" : d < 60 ? `h\xE1 ${dias(d)}` : "h\xE1 alguns meses",
     area: (slug) => AREAS[slug],
@@ -3761,30 +744,6 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado) {
 }
 var SAUDACOES_NOME = ["{n}, tudo bem?", "Oi, {n}, tudo bem?", "Ol\xE1, {n}, tudo bem?", "{n}, tudo bem por a\xED?", "Oi, {n}, espero que esteja tudo bem por a\xED."];
 var SAUDACOES = ["Oi, tudo bem?", "Ol\xE1, tudo bem?", "Tudo bem por a\xED?", "Oi, espero que esteja tudo bem por a\xED."];
-function ajustarFechos(brutos, rnd, fatos) {
-  const semProva = fatos.prova === "atualizacao" || fatos.etapa === "ortopedista";
-  const repeteChave = (fecho, outros) => {
-    const chave = CHAVES_FECHO.find((k) => simples(fecho).includes(k));
-    return !!chave && outros.some((y) => simples(y).includes(chave));
-  };
-  const resultado = [];
-  brutos.forEach((x, i) => {
-    if (!FECHOS.includes(x)) {
-      resultado.push(x);
-      return;
-    }
-    const outros = brutos.filter((_, j) => j !== i);
-    const vizinhos = [brutos[i - 1], brutos[i + 1]].filter((y) => !!y && !FECHOS.includes(y));
-    const serve = (f) => !repeteChave(f, outros) && !vizinhos.some((y) => repetemForte(y, f));
-    if (serve(x)) {
-      resultado.push(x);
-      return;
-    }
-    const alternativas = FECHOS.filter((f) => f !== x && serve(f) && !(semProva && f.includes("aprova\xE7\xE3o")));
-    if (alternativas.length) resultado.push(alternativas[Math.floor(rnd() * alternativas.length)]);
-  });
-  return resultado;
-}
 function modeloDe(tipo, faixa) {
   return tipo === "ativo" && faixa ? `ativo:${faixa}` : tipo;
 }
@@ -3846,6 +805,7 @@ function gerarCarta(p, op = {}) {
   const anteriores = op.anteriores ?? [];
   const auto = escolherTipo(p, anteriores, hoje);
   const tipo = op.tipo ?? auto.tipo;
+  const minimoLinhas = 3;
   if (!tipoCombina(tipo, p)) throw new Error(`tipo_nao_combina_${tipo}`);
   if (!op.ignorarCadencia) {
     const bloqueio = cadenciaBloqueia(anteriores, hoje, tipo);
@@ -3867,29 +827,17 @@ function gerarCarta(p, op = {}) {
     const possiveis = todas.filter((v2) => !v2.requer || v2.requer(ctx));
     if (!possiveis.length) continue;
     const novas = possiveis.filter((v2) => !jaRecebidas.has(`${modelo}#${v2.id}`));
-    const lista2 = novas.length ? novas : possiveis;
-    const v = lista2[Math.floor(rnd() * lista2.length)];
+    const lista = novas.length ? novas : possiveis;
+    const v = lista[Math.floor(rnd() * lista.length)];
     const brutos = v.corpo(ctx).filter((x) => typeof x === "string" && x.trim() !== "").map((x) => x.trim());
-    const paragrafos = ajustarFechos(brutos, rnd, ctx.fatos);
     const saudacao = v.saudacao ? v.saudacao(ctx) : ctx.nome ? ctx.um(...SAUDACOES_NOME).replace("{n}", ctx.nome) : ctx.um(...SAUDACOES);
-    let ps = paragrafos.find((x) => /^P\.S\.:/.test(x)) ?? null;
-    const semPS = paragrafos.filter((x) => !/^P\.S\.:/.test(x));
-    const linhasDe = (lista3) => contarLinhas([saudacao, ...lista3, ps ?? "P.S.: x"].join("\n\n"));
-    const reforcos = [() => ctx.tempo(), () => ctx.fecho(), () => ctx.dica()];
-    for (const reforco of reforcos) {
-      if (linhasDe(semPS) >= LINHAS.minimo) break;
-      const extra = reforco();
-      if (extra && !semPS.includes(extra) && !(FECHOS.includes(extra) && semPS.length && repetemForte(semPS[semPS.length - 1], extra))) semPS.push(extra);
-    }
-    const textoCorpo = [saudacao, ...semPS].join("\n\n");
-    if (!ps) ps = v.ps ? v.ps(ctx) : null;
-    if (!ps || psRepeteCorpo(ps, textoCorpo)) ps = ctx.ps(textoCorpo);
+    const semPS = brutos.filter((x) => !/^P\.S\.:/.test(x));
     const assuntos = v.assuntos(ctx).filter((x) => typeof x === "string" && x.trim() !== "").map((x) => x.trim()).filter((a) => !problemaNoAssunto(a));
     const assunto = assuntos[Math.floor(rnd() * assuntos.length)];
-    const corpo = [saudacao, ...semPS, ps].join("\n\n");
+    const corpo = [saudacao, ...semPS].join("\n\n");
     const linhas = contarLinhas(corpo);
-    if (!assunto || problemaNoTexto(corpo) || contarLinks(corpo) > 1 || contarPS(corpo) !== 1 || linhas < LINHAS.minimo || linhas > LINHAS.maximo) continue;
-    if (frasesSeguidasRepetem(corpo) || psRepeteCorpo(ps, textoCorpo)) continue;
+    if (!assunto || problemaNoTexto(corpo) || contarLinks(corpo) > 1 || contarPS(corpo) !== 0 || linhas < minimoLinhas || linhas > LINHAS.maximo) continue;
+    if (frasesSeguidasRepetem(corpo)) continue;
     return {
       tipo,
       faixa: tipo === "ativo" || tipo === "convite_50" ? faixa : null,
@@ -4046,8 +994,8 @@ function emailMarco(d) {
 function emailCarta(d) {
   const nome = primeiroNome(d.nome);
   const recado = d.recado?.trim();
-  const padrao = d.respondidas >= 10 ? `Passando para te dar parab\xE9ns: voc\xEA j\xE1 passou de ${questoes(d.respondidas)} no Orto Quest\xF5es, e fiquei muito feliz de ver. Const\xE2ncia \xE9 o que mais faz diferen\xE7a na prova, e voc\xEA est\xE1 construindo a sua nos intervalos que a rotina deixa.` : "Passando para dar um oi e dizer que fico feliz de ter voc\xEA por aqui. Sua conta est\xE1 pronta, e quando quiser come\xE7ar, cinco quest\xF5es j\xE1 bastam para pegar o jeito.";
-  const corpo = [nome ? `${nome}, tudo bem?` : "Oi, tudo bem?", recado || padrao, "Se eu puder ajudar em qualquer coisa, \xE9 s\xF3 responder este e-mail.", "P.S.: se quiser responder, vou adorar ler."].join("\n\n");
+  const padrao = d.respondidas >= 10 ? `Seu hist\xF3rico registra ${questoes(d.respondidas)}. Voc\xEA pode consultar as quest\xF5es anteriores e os coment\xE1rios para organizar a pr\xF3xima revis\xE3o.` : "Sua conta est\xE1 pronta. Voc\xEA pode escolher um tema para come\xE7ar pelas quest\xF5es comentadas.";
+  const corpo = [nome ? `${nome}, tudo bem?` : "Oi, tudo bem?", recado || padrao, "Se precisar de ajuda com o site, pode responder este e-mail."].join("\n\n");
   const e = renderizarCarta({ assunto: nome ? `${nome}, um recado sobre o seu estudo` : "Um recado sobre o seu estudo", corpo });
   return { ...e, modelo: null, versao: null };
 }
@@ -4210,11 +1158,11 @@ function emailRelatoResolvido(d) {
   const alternativa = (d.alternativa ?? "").trim().toUpperCase().match(/^[A-E]$/) ? d.alternativa.trim().toUpperCase() : alternativaCitada(nota, relato);
   const corpo = [
     nome ? `${nome}, tudo bem?` : "Oi, tudo bem?",
-    `Muito obrigado por ter avisado do problema em ${rotulo}: "${trecho}"`,
-    alternativa ? `Conferi com cuidado, e voc\xEA tinha raz\xE3o sobre a alternativa ${alternativa}. A quest\xE3o j\xE1 est\xE1 corrigida no site${nota ? `, e o que mudou foi isto: ${nota}` : ", e o coment\xE1rio foi ajustado para explicar o ponto"}.` : `Conferi com cuidado, e a quest\xE3o j\xE1 est\xE1 corrigida no site.${nota ? ` O que mudou: ${nota}` : " O coment\xE1rio foi ajustado para deixar o ponto claro."}`,
-    "Gente atenta como voc\xEA deixa o banco de quest\xF5es melhor para todo mundo que est\xE1 estudando com pouco tempo e precisa confiar no que l\xEA. Fiquei muito grato.",
+    `Obrigado pelo aviso sobre ${rotulo}: "${trecho}"`,
+    alternativa ? `A revis\xE3o foi conclu\xEDda, incluindo a alternativa ${alternativa}. A quest\xE3o j\xE1 est\xE1 corrigida no site${nota ? `, e o que mudou foi isto: ${nota}` : ", e o coment\xE1rio foi ajustado para explicar o ponto"}.` : `A revis\xE3o foi conclu\xEDda e a quest\xE3o foi atualizada no site.${nota ? ` O que mudou: ${nota}` : " O coment\xE1rio foi ajustado para deixar o ponto claro."}`,
+    "Obrigado por contribuir com a revis\xE3o do acervo.",
     `Se quiser ver como ficou: ${link.replace(/^https?:\/\//, "")}`,
-    "P.S.: se encontrar outra coisa estranha, o bot\xE3o de relatar continua l\xE1. Cada aviso ajuda muito."
+    "Se houver alguma d\xFAvida sobre a altera\xE7\xE3o, pode responder este e-mail."
   ].join("\n\n");
   const assunto = nome ? `${nome}, obrigado pelo aviso sobre a quest\xE3o` : `Obrigado pelo aviso sobre ${rotulo}`;
   return renderizarCarta({ assunto: assunto.length <= 55 ? assunto : "Obrigado pelo aviso sobre a quest\xE3o", corpo });
@@ -4568,19 +1516,19 @@ async function enviarAutomatico(id, tipo, pedido, por) {
     if (diasFora < 10) return { resultado: "ainda_nao" };
   }
   if (tipo === "primeiras_10" && respondidas < 10) return { resultado: "ainda_nao" };
-  let diasParaProva = Number(pedido.dias_para_prova ?? 0) || null, prova = typeof pedido.prova === "string" ? pedido.prova.slice(0, 40) : null;
+  let diasParaProva = Number(pedido.dias_para_prova ?? 0) || null, prova2 = typeof pedido.prova === "string" ? pedido.prova.slice(0, 40) : null;
   if (tipo === "cronograma_pronto") {
     const p = await banco(`planos_estudo?usuario_id=eq.${id}&select=data_prova,prova&limit=1`);
     const [plano] = p.ok ? await p.json() : [];
     if (!plano?.data_prova) return { resultado: "sem_cronograma" };
     diasParaProva = Math.max(1, Math.ceil(((/* @__PURE__ */ new Date(`${plano.data_prova}T12:00:00-03:00`)).getTime() - Date.now()) / 864e5));
-    prova = plano.prova ?? prova;
+    prova2 = plano.prova ?? prova2;
   }
   if (tipo === "vespera_prova" && !diasParaProva) diasParaProva = 1;
-  if ((tipo === "vespera_prova" || tipo === "depois_prova") && !prova) {
+  if ((tipo === "vespera_prova" || tipo === "depois_prova") && !prova2) {
     const p = await banco(`planos_estudo?usuario_id=eq.${id}&select=prova&limit=1`);
     const [plano] = p.ok ? await p.json() : [];
-    prova = plano?.prova ?? null;
+    prova2 = plano?.prova ?? null;
   }
   const umaVez = UMA_VEZ.includes(tipo);
   const sufixo = typeof pedido.referencia === "string" && /^[a-zA-Z0-9_:.-]{1,60}$/.test(pedido.referencia) ? pedido.referencia : tipo === "voltou" ? diaDeHoje() : "";
@@ -4602,7 +1550,7 @@ async function enviarAutomatico(id, tipo, pedido, por) {
     linkDescadastro: transacional ? null : await linkDescadastro(id, "cartas"),
     diasFora,
     diasParaProva,
-    provaCronograma: prova,
+    provaCronograma: prova2,
     campanha: pedido.dados_campanha ?? null,
     pagamento: tipo === "pagamento_aprovado" ? { plano: pedido.plano ?? null, inicioEm: pedido.inicio_periodo ?? null, fimEm: pedido.fim_periodo ?? null, meio, renovacao: !!pedido.renovacao } : void 0,
     encerramento: tipo === "obrigado_tempo" ? { reembolso: !!pedido.reembolso, fimEm: pedido.fim_periodo ?? null } : void 0
@@ -4671,13 +1619,13 @@ async function sincronizarCatalogo() {
 async function enviarCampanhas(pedida, limitePedido, simular) {
   if (!emailConfigurado() && !simular) return { erro: "email_nao_configurado" };
   const limite = Math.max(1, Math.min(Number(limitePedido) || 20, 80));
-  const lista2 = pedida ? ehCampanhaDiaria(pedida) ? [pedida] : [] : CAMPANHAS_DIARIAS;
-  if (!lista2.length) return { erro: "campanha_invalida" };
+  const lista = pedida ? ehCampanhaDiaria(pedida) ? [pedida] : [] : CAMPANHAS_DIARIAS;
+  if (!lista.length) return { erro: "campanha_invalida" };
   const resultado = {};
   let catalogo = null;
   const inicio = Date.now(), noTempo = () => Date.now() - inicio < 11e4;
   let interrompida = false;
-  for (const tipo of lista2) {
+  for (const tipo of lista) {
     if (!noTempo()) {
       interrompida = true;
       break;

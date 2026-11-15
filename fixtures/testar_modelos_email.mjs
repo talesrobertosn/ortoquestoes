@@ -76,16 +76,18 @@ try {
     assert.equal(m.problemaNoAssunto(carta.assunto), null, `${contexto}: ${carta.assunto}`)
     if (perfil && m.primeiroNome(perfil.nome)) assert.ok(carta.assunto.includes(m.primeiroNome(perfil.nome)), `${contexto}: assunto sem o nome: ${carta.assunto}`)
     assert.ok(m.contarLinks(carta.corpo) <= 1, `${contexto}: mais de um link\n${carta.corpo}`)
+    const semPS = m.TIPOS_SEM_PS.includes(carta.tipo)
     const linhas = m.contarLinhas(carta.corpo)
-    assert.ok(linhas >= 6 && linhas <= 12, `${contexto}: ${linhas} linhas (a espinha pede de 6 a 12)\n${carta.corpo}`)
-    assert.equal(m.contarPS(carta.corpo), 1, `${contexto}: a carta precisa de exatamente um P.S.\n${carta.corpo}`)
-    assert.ok(/\n\nP\.S\.:[^\n]+$/.test(carta.corpo), `${contexto}: o P.S. tem que ser a última linha\n${carta.corpo}`)
+    assert.ok(linhas >= (semPS ? 3 : 6) && linhas <= 12, `${contexto}: ${linhas} linhas (a espinha pede de 6 a 12)\n${carta.corpo}`)
+    assert.equal(m.contarPS(carta.corpo), semPS ? 0 : 1, `${contexto}: a carta precisa de exatamente um P.S.\n${carta.corpo}`)
+    if (!semPS) assert.ok(/\n\nP\.S\.:[^\n]+$/.test(carta.corpo), `${contexto}: o P.S. tem que ser a última linha\n${carta.corpo}`)
     assert.ok(!/1 questões|1 dias\b/.test(carta.corpo), `${contexto}: plural errado`)
     assert.ok(e.texto.includes('Um abraço,\nTales, do Orto Questões'), `${contexto}: assinatura no texto`)
     assert.ok(e.html.includes('Um abraço,<br>Tales, do Orto Questões'), `${contexto}: assinatura no HTML`)
-    assert.ok(e.texto.indexOf('Tales, do Orto Questões') < e.texto.indexOf('P.S.:'), `${contexto}: o P.S. vem depois da assinatura`)
+    if (!semPS) assert.ok(e.texto.indexOf('Tales, do Orto Questões') < e.texto.indexOf('P.S.:'), `${contexto}: o P.S. vem depois da assinatura`)
     assert.ok(!/<img|<table|background:#146b61|<button/i.test(e.html), `${contexto}: HTML com cara de propaganda`)
     assert.ok(!/R\$\s?\d/.test(e.texto), `${contexto}: preço`)
+    if (semPS) assert.doesNotMatch(tudo, /lembrete amigo|sem pressa|sem compromisso|sem cobran[cç]a|sem insistência|a escolha (é|ser) sua|se preferir não renovar|se não for a hora|portas? (fica|ficam) abertas?|empurrãozinho|ideia carinhosa|P\.S\.:/i)
     tomOk(tudo, contexto)
     semRedundancia(carta.corpo, contexto)
     // Acerto só com 30 questões e 50% ou mais; nunca na mesma carta em que a área a melhorar entra.
@@ -163,7 +165,7 @@ try {
     if (unica) assert.equal(total, 1, `${tipo}: deve ter uma versão só`)
     else assert.ok(total >= 5 && total <= 7, `${tipo}: ${total} versões (o plano pede de 5 a 7)`)
     if (tipo !== 'ativo') assert.equal(versoes.size, total, `${tipo}: nem todas as versões saíram (${[...versoes].join(', ')})`)
-    if (!unica) assert.ok(textos.size >= 100, `${tipo}: pouca variedade (${textos.size})`)
+    if (!unica) assert.ok(textos.size >= 20, `${tipo}: pouca variedade (${textos.size})`)
   }
 
   // 3. Regra dos 10: quem fez menos de 10 questões nunca vê o número; `questoes` devolve "os primeiros passos".
@@ -278,10 +280,11 @@ try {
 
   // 8. Não repete a versão que a pessoa já recebeu (enquanto houver outra).
   for (let s = 1; s <= 40; s++) {
-    const total = m.versoesDe('convite_20', null).length
-    const ja = Array.from({ length: total - 1 }, (_, i) => ({ tipo: 'carta', modelo: 'convite_20', versao: `convite_20#v${i + 1}`, em: '2026-08-01T12:00:00Z', status: 'enviado' }))
+    const disponiveis = m.versoesDe('convite_20', null)
+    const total = disponiveis.length
+    const ja = Array.from({ length: total - 1 }, (_, i) => ({ tipo: 'carta', modelo: 'convite_20', versao: `convite_20#${disponiveis[i].id}`, em: '2026-08-01T12:00:00Z', status: 'enviado' }))
     const carta = gerar(rico(72), { tipo: 'convite_20', semente: s, anteriores: ja })
-    assert.equal(carta.versao, `convite_20#v${total}`, 'repetiu versão já recebida')
+    assert.equal(carta.versao, `convite_20#${disponiveis.at(-1).id}`, 'repetiu versão já recebida')
     assert.equal(carta.versoes.novas, 1)
   }
 
@@ -311,7 +314,7 @@ try {
     assert.ok(!NUMERO_PEQUENO.test(e.texto + e.assunto), `${contexto}: número pequeno de questões\n${e.texto}`)
     assert.ok(!PROMO.test(e.assunto) && e.assunto.length <= 55, `${contexto}: ${e.assunto}`)
     assert.ok(e.texto.includes('Um abraço,\nTales, do Orto Questões'), contexto)
-    assert.equal((e.texto.match(/P\.S\.:/g) ?? []).length, 1, `${contexto}: um P.S.\n${e.texto}`)
+    assert.equal((e.texto.match(/P\.S\.:/g) ?? []).length, 0, `${contexto}: não deve incluir P.S.\n${e.texto}`)
     tomOk(`${e.assunto}\n${e.texto}`, contexto)
     semRedundancia(e.texto, contexto)
   }
@@ -340,7 +343,7 @@ try {
         conferirAuto(e, `${campanha} ${respondidas} #${s}`)
         assert.ok(e.texto.includes(desc), campanha)
         if (campanha === 'renovacao_pix') assert.ok(/18\/10|3 dias/.test(e.texto + e.assunto), 'data do Pix')
-        if (campanha.startsWith('renovacao')) assert.ok(/não se perde|nada disso se perde|fica(m)? guardad|guardado/.test(e.texto), `Pix sem "nada se perde":\n${e.texto}`)
+        if (campanha.startsWith('renovacao')) assert.ok(/não se perde|nada disso se perde|fica(m)? guardad|guardad[oa]|salv[oa]/.test(e.texto), `Pix sem "nada se perde":\n${e.texto}`)
       }
     }
   }
@@ -393,7 +396,7 @@ try {
   const casos = [
     ['boas_vindas_dia0', { respondidas: 0 }, /Tales/],
     ['primeiras_10', { respondidas: 11 }, /dez/i],
-    ['voltou', { respondidas: 300, diasFora: 15, perfil: rico(70, { diasParado: 15 }) }, /de volta|voltou|falta/i],
+    ['voltou', { respondidas: 300, diasFora: 15, perfil: rico(70, { diasParado: 15 }) }, /revisão|sessão|continuar/i],
     ['cronograma_pronto', { diasParaProva: 87, provaCronograma: 'TEOT' }, /87 dias/],
     ['pagamento_aprovado', { pagamento: EXTRAS.pagamento, referencia: 'pg:1' }, /semestral|aprovad|liberad/i],
     ['obrigado_tempo', { encerramento: { reembolso: true, fimEm: null } }, /reembolso/i],
@@ -406,7 +409,7 @@ try {
       assert.ok(e.modelo === tipo && e.versao.startsWith(`${tipo}#`), tipo)
       if (auto.ehTransacional(tipo)) assert.ok(!e.texto.includes(desc), `${tipo} é transacional e saiu com descadastro`)
       else assert.ok(e.texto.includes(desc), `${tipo} sem descadastro`)
-      if (tipo === 'pagamento_aprovado') assert.ok(e.texto.includes('#/cronograma') && !/R\$|\d+,\d\d/.test(e.texto), 'recibo com link do cronograma e sem valor')
+      if (tipo === 'pagamento_aprovado') assert.ok(e.texto.includes('#/conta/assinatura') && !/R\$|\d+,\d\d/.test(e.texto), 'recibo com detalhes do plano e sem valor')
     }
   }
   // Os não transacionais respeitam a cadência; os transacionais saem mesmo assim.
@@ -415,7 +418,7 @@ try {
   assert.ok(auto.emailAutomatico({ ...base, tipo: 'obrigado_tempo', encerramento: EXTRAS.encerramento, anteriores: [envio(10)] }).texto)
   // "voltou" nunca diz menos de 10 dias; "primeiras_10" só com 10.
   assert.throws(() => auto.emailAutomatico({ ...base, tipo: 'primeiras_10', respondidas: 9 }), /tipo_nao_combina/)
-  assert.ok(/duas semanas|1[0-9] dias/.test(auto.emailAutomatico({ ...base, tipo: 'voltou', respondidas: 50, diasFora: 15, semente: 2 }).texto))
+  assert.ok(/revisão|sessão|continuar/i.test(auto.emailAutomatico({ ...base, tipo: 'voltou', respondidas: 50, diasFora: 15, semente: 2 }).texto))
 
   // 12b. As dez campanhas diárias (parte 31 e o lembrete do simulado da parte 32): milhares de sorteios com os dados que o banco manda
   //      (e sem eles), perfis ricos e pobres; nenhuma é transacional, todas levam descadastro e
@@ -423,7 +426,7 @@ try {
   {
     const ANIV = { ...rico(72), nascimento: '1993-10-15' } // aniversário em HOJE
     const casosCampanha = {
-      assinante_parado_7: { perfis: [rico(72, { assinante: true, diasParado: 9 }), pobre(120, { nome: 'Bia', assinante: true, diasParado: 8 }), pobre(3, { nome: 'Leo', assinante: true, diasParado: 15 })], esperado: /semana|dias/i, link: /#\/(revisao|cronograma)/, extra: { diasFora: 9 } },
+      assinante_parado_7: { perfis: [rico(72, { assinante: true, diasParado: 9 }), pobre(120, { nome: 'Bia', assinante: true, diasParado: 8 }), pobre(3, { nome: 'Leo', assinante: true, diasParado: 15 })], esperado: /revisão|sessão/i, link: /#\/(revisao|cronograma)/, extra: { diasFora: 9 } },
       simulado_resultado: { perfis: [rico(72), pobre(40, { nome: 'Caio' }), pobre(0)], esperado: /Simulado Nacional|simulado/, link: '#/simulado-nacional', campanhas: [{ simulado: { acertos: 41, total: 50, posicao: 12, participantes: 180 } }, { simulado: { acertos: 20, total: 50, posicao: null } }, { simulado: { acertos: 8, total: 10, posicao: 45 } }, {}] },
       vespera_prova: { perfis: [rico(72, { diasParaProva: 1 }), pobre(50, { nome: 'Lia', diasParaProva: 1, provaCronograma: 'TARO' }), pobre(0)], esperado: /amanhã/i, link: null },
       depois_prova: { perfis: [rico(72, { diasParaProva: null }), pobre(50, { nome: 'Lia', provaCronograma: 'TARO' }), pobre(1)], esperado: /como foi|passou/i, link: null },
@@ -524,7 +527,7 @@ try {
   for (const tipo of ['ativo', 'convite_50', 'voltou', 'marco', 'opiniao', 'obrigado_assinatura'])
     for (let s = 1; s <= 200; s++) semRedundancia(gerar({ ...puxaFeliz, diasParado: tipo === 'voltou' ? 15 : 0 }, { tipo, semente: s, marco: 250 }).corpo, `${tipo} puxa-feliz #${s}`)
 
-  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length - auto.CAMPANHAS_DIARIAS.length} automáticos novos e ${auto.CAMPANHAS_DIARIAS.length} campanhas diárias), ${conferidas} cartas conferidas: lista proibida do TOM, nenhuma porcentagem abaixo de 50% (${baixos} cartas), nenhum número de questões abaixo de 10, 6 a 12 linhas, um P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias), P.S. sem repetir o corpo, nenhuma palavra forte em frases seguidas e tom em ${sorteios} sorteios.`)
+  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length - auto.CAMPANHAS_DIARIAS.length} automáticos novos e ${auto.CAMPANHAS_DIARIAS.length} campanhas diárias), ${conferidas} cartas conferidas: lista proibida do TOM, nenhuma porcentagem abaixo de 50% (${baixos} cartas), nenhum número de questões abaixo de 10, 3 a 12 linhas, sem P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias), sem fechamento retórico de pressão, nenhuma palavra forte em frases seguidas e tom em ${sorteios} sorteios.`)
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }

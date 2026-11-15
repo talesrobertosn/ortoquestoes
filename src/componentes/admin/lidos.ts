@@ -3,6 +3,7 @@ import { chamarRpc } from '../../servicos/supabase'
 
 export type TipoLido = 'avaliacao' | 'pagamento' | 'relato'
 
+export const EVENTO_LIDOS_ADMIN = 'oq:admin:lidos'
 const chaveLocal = (tipo: TipoLido) => `oq-admin-lidos:${tipo}`
 /** Chave com que uma avaliação de comentário é marcada como lida (a mesma no banco: ver contadores_admin). */
 export const chaveAvaliacao = (l: { id_questao: string; usuario: string | null; atualizado_em: string }) => `${l.id_questao}|${l.usuario ?? ''}|${l.atualizado_em}`
@@ -19,9 +20,23 @@ function gravarLocal(tipo: TipoLido, chaves: Set<string>) {
  * (migração 202610010100_admin_lidos.sql) para valer em qualquer aparelho;
  * sem a migração, guarda neste navegador.
  */
+export function aplicarLidosLocais(tipo: TipoLido, chaves: string[], lido = true, persistido = false) {
+  const conjunto = new Set(lerLocal(tipo))
+  for (const c of chaves) { if (lido) conjunto.add(c); else conjunto.delete(c) }
+  gravarLocal(tipo, conjunto)
+  window.dispatchEvent(new CustomEvent(EVENTO_LIDOS_ADMIN, { detail: { tipo, persistido } }))
+}
+
 export function usarLidos(tipo: TipoLido) {
   const [lidos, definirLidos] = useState<Set<string>>(() => new Set(lerLocal(tipo)))
   const [noServidor, definirNoServidor] = useState(false)
+
+  useEffect(() => {
+    const atualizar = () => definirLidos(new Set(lerLocal(tipo)))
+    window.addEventListener(EVENTO_LIDOS_ADMIN, atualizar)
+    window.addEventListener('storage', atualizar)
+    return () => { window.removeEventListener(EVENTO_LIDOS_ADMIN, atualizar); window.removeEventListener('storage', atualizar) }
+  }, [tipo])
 
   useEffect(() => {
     let vivo = true
@@ -29,7 +44,8 @@ export function usarLidos(tipo: TipoLido) {
       .then(linhas => {
         if (!vivo) return
         const conjunto = new Set([...lerLocal(tipo), ...linhas.map(l => l.chave)])
-        definirLidos(conjunto); definirNoServidor(true)
+        gravarLocal(tipo, conjunto); definirLidos(conjunto); definirNoServidor(true)
+        window.dispatchEvent(new CustomEvent(EVENTO_LIDOS_ADMIN, { detail: { tipo, persistido: false } }))
         // O que foi lido antes da migração sobe para o servidor uma vez.
         const soLocal = lerLocal(tipo).filter(c => !linhas.some(l => l.chave === c))
         if (soLocal.length) void chamarRpc('marcar_lidos_admin', { p_tipo: tipo, p_chaves: soLocal, p_lido: true }).catch(() => undefined)
@@ -38,15 +54,15 @@ export function usarLidos(tipo: TipoLido) {
     return () => { vivo = false }
   }, [tipo])
 
-  const marcar = useCallback((chaves: string[], lido = true) => {
-    if (!chaves.length) return
-    definirLidos(atual => {
-      const novo = new Set(atual)
-      for (const c of chaves) { if (lido) novo.add(c); else novo.delete(c) }
-      gravarLocal(tipo, novo)
-      return novo
-    })
-    if (noServidor) void chamarRpc('marcar_lidos_admin', { p_tipo: tipo, p_chaves: chaves, p_lido: lido }).catch(() => undefined)
+  const marcar = useCallback(async (chaves: string[], lido = true): Promise<boolean> => {
+    if (!chaves.length) return true
+    aplicarLidosLocais(tipo, chaves, lido)
+    if (!noServidor) return false
+    try {
+      await chamarRpc('marcar_lidos_admin', { p_tipo: tipo, p_chaves: chaves, p_lido: lido })
+      window.dispatchEvent(new CustomEvent(EVENTO_LIDOS_ADMIN, { detail: { tipo, persistido: true } }))
+      return true
+    } catch { return false }
   }, [tipo, noServidor])
 
   return { lidos, marcar }

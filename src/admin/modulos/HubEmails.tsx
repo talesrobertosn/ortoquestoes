@@ -43,7 +43,7 @@ interface Preparo {
   consultadas: number
 }
 const pedir = <T,>(acao: string, extra: Record<string, unknown> = {}) =>
-  chamarFuncao<T>('hub-emails', { acao, ...extra }, { prazoMs: 120_000 })
+  chamarFuncao<T>('hub-emails', { acao, versao: 2, ...extra }, { prazoMs: 120_000 })
 const NOMES: Record<string, string> = {
   pendente: 'Na fila',
   processando: 'Processando',
@@ -146,7 +146,7 @@ export default function HubEmails() {
   const selecao = filtro === 'todos' ? selecionarHub(opcoes) : selecoes.get(filtro)!
   const prontas = selecao.prontas
   const lista = prontas.filter((m) =>
-    combina([m.nome, m.email, m.motivo, TIPOS[m.tipo].rotulo, m.assunto], normalizar(busca)),
+    combina([m.nome, m.email, m.motivo, (TIPOS[m.tipo]?.rotulo ?? 'Acompanhamento'), m.assunto], normalizar(busca)),
   )
   const geral = selecionarHub(opcoes)
   const total = geral.prontas.filter((m) => !puladas.has(m.id_usuario)).length
@@ -251,7 +251,7 @@ export default function HubEmails() {
       )}
       {rodada?.status === 'pausada' && (
         <Faixa tom="aviso" titulo="A fila está pausada">
-          Novos cenários entram na fila, mas aguardam você retomar.
+          {estado?.fila.some(x => /envio_recusado_(429|401|403)/.test(x.motivo ?? '')) ? 'O provedor recusou por limite de envio ou acesso à conta. As próximas mensagens foram preservadas; confira a liberação antes de retomar.' : 'Novos cenários entram na fila, mas aguardam você retomar.'}
           <p>
             <button
               className="a3-botao a3-botao--contorno"
@@ -495,7 +495,7 @@ export default function HubEmails() {
                   <span>{m.email}</span>
                 </div>
                 <div className="hub-pessoa__motivo">
-                  <span>{TIPOS[m.tipo].rotulo}</span>
+                  <span>{(TIPOS[m.tipo]?.rotulo ?? 'Acompanhamento')}</span>
                   <small>{m.motivo}</small>
                 </div>
                 <span className="hub-status">{puladas.has(m.id_usuario) ? 'Pulado hoje' : 'Liberado'}</span>
@@ -533,7 +533,7 @@ export default function HubEmails() {
                 {selecao.adiadas.map((m) => (
                   <li key={m.chave}>
                     <strong>{m.nome}</strong>
-                    <span>{TIPOS[m.tipo].rotulo}</span>
+                    <span>{(TIPOS[m.tipo]?.rotulo ?? 'Acompanhamento')}</span>
                     <small>{m.bloqueio}</small>
                   </li>
                 ))}
@@ -594,7 +594,7 @@ export default function HubEmails() {
                   <span>{x.mensagem.email}</span>
                 </div>
                 <div className="hub-pessoa__motivo">
-                  <span>{TIPOS[x.mensagem.tipo].rotulo}</span>
+                  <span>{(TIPOS[x.mensagem.tipo]?.rotulo ?? 'Acompanhamento')}</span>
                   <small>{x.motivo ?? x.mensagem.motivo}</small>
                 </div>
                 <span
@@ -669,7 +669,7 @@ export default function HubEmails() {
           <>
             <div className="hub-dialog__cabeca">
               <div>
-                <span className="a3-rotulo">{TIPOS[aberta.tipo].rotulo}</span>
+                <span className="a3-rotulo">{(TIPOS[aberta.tipo]?.rotulo ?? 'Acompanhamento')}</span>
                 <h2 id="hub-previa-titulo">{aberta.nome}</h2>
               </div>
               <button

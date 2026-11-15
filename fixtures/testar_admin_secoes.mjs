@@ -229,11 +229,11 @@ try {
     const cat = m.catalogo
     const modelos = cat.modelosDoCatalogo()
     const tipos = new Set(modelos.map(x => x.tipo))
-    assert.equal(tipos.size, 34, 'agradecimento duplicado e cobrança por cronograma aposentados')
+    assert.equal(tipos.size, 35, 'agradecimento duplicado e cobrança por cronograma aposentados')
     assert.equal(tipos.has('obrigado_assinatura'), false)
     assert.equal(tipos.has('assinou_sem_cronograma'), false)
     assert.equal(modelos.filter(x => x.tipo === 'ativo').length, 9, 'as 9 faixas')
-    assert.equal(modelos.length, 34 - 1 + 9)
+    assert.equal(modelos.length, 35 - 1 + 9)
     assert.equal(new Set(modelos.map(x => x.id)).size, modelos.length, 'id repetido')
     for (const grupo of ['situacao', 'faixa', 'convite', 'pessoal', 'automatico', 'novo', 'campanha']) assert.ok(modelos.some(x => x.grupo === grupo), grupo)
     assert.equal(modelos.filter(x => x.grupo === 'novo').length, 6)
@@ -248,7 +248,7 @@ try {
       const carta = cat.amostraDe(x, cat.sementeInicial(x))
       assert.equal(carta.tipo, x.tipo, x.id)
       if (x.faixa) assert.equal(carta.faixa, x.faixa)
-      assert.ok(carta.assunto && carta.corpo.includes('P.S.:'), x.id)
+      assert.ok(carta.assunto && !carta.corpo.includes('P.S.:'), x.id)
       // Sortear: outra semente dá outra versão (há sempre 5 ou mais).
       let k = 0
       const outra = cat.amostraDe(x, cat.outraSemente(x, carta.versao, () => (k += 0.137) % 1))

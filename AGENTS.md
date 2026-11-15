@@ -196,3 +196,10 @@ Em 20/10/2026, Tales aprovou como referência de profundidade o comentário de
 [023-exemplo-aprofundado-mao-sem-pulso.json](docs/comentarios-resumos/lotes/023-exemplo-aprofundado-mao-sem-pulso.json).
 Seguir a aula com mecanismo, comparação dos cenários, raciocínio próprio para cada
 alternativa, controvérsias explícitas e fonte conferida; extensão sozinha não basta.
+
+## Tom dos e-mails (Tales, 15/11/2026)
+
+Antes de alterar mensagens, ler [docs/emails/TOM.md](docs/emails/TOM.md). A orientação atual
+substitui o tom antigo “fofo/amigo”: mensagens claras, úteis e cordiais, sem P.S., pressão emocional,
+culpa pela ausência ou recuos como “sem cobrança”, “a escolha é sua” e “a porta fica aberta”.
+Não preencher mensagens só para alongar. Preservar personalização com fatos reais e regras de envio.
