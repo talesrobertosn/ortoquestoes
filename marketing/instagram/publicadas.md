@@ -46,4 +46,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0695 | Sanders IIIBC: dois traços, central e medial, na faceta posterior do calcâneo (banca omitida) | posts/2026-11-12-tela-trincada-sanders (feed e stories) |
 | tumores-0394 | Metástases ósseas, mama blástica no Campbell 14 e lítica no 15 (Simulados), stories "Como escrevemos o comentário" | posts/2026-11-13-errata-metastases |
 | trauma-0263 | Ângulo glenopolar na fratura da escápula, propaganda do comentário (questão no notebook, comentário real em iPhones e notebook) | posts/2026-11-13-glenopolar (feed e stories) |
-| trauma-0179 | Fratura de BENNETT: o abdutor longo do polegar desloca a diáfise (TEOT 2022), cartaz de cinema "o sequestro do polegar" | posts/2026-11-15-cartaz-bennett (stories) |
+| trauma-0179 | Fratura de BENNETT: o abdutor longo do polegar desloca a diáfise (TEOT 2022), cartaz de cinema "o cabo de guerra" | posts/2026-11-15-cartaz-bennett (stories) |
