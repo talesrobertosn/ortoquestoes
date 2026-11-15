@@ -45,7 +45,7 @@ try {
   const linhas = ['# Cartas: amostras e variações', '',
     '> Gerado por `node scripts/amostras-cartas.mjs` em ' + HOJE.toISOString().slice(0, 10) + '. Pessoas e números fictícios.',
     '> Cada amostra é uma das versões possíveis: no painel, "Sortear outra versão" troca o texto.', '',
-    'Todas as cartas saem só em texto, na voz de um amigo que entende a rotina de quem estuda (docs/emails/PLANO.md): abertura com o momento da pessoa, o que eu vi no estudo dela (até 3 observações), uma ideia sobre tempo e praticidade, convite leve quando couber, fecho e um P.S. De 6 a 12 linhas, assinatura fixa "Um abraço, / Tales, do Orto Questões", no máximo um link, nenhum preço, nenhum número de questões abaixo de 10, acerto só com 30 questões e de 50% para cima.', '']
+    'Todas as cartas saem só em texto, com linguagem clara e cordial (docs/emails/TOM.md): motivo da mensagem, fatos reais (até 3 observações), sugestão útil e ajuda objetiva, sem P.S. ou pressão emocional. De 3 a 12 linhas, assinatura fixa "Um abraço, / Tales, do Orto Questões", no máximo um link, nenhum preço, nenhum número de questões abaixo de 10, acerto só com 30 questões e de 50% para cima.', '']
 
   // Variedade: textos distintos em 400 sorteios para cada faixa e situação.
   const contar = (perfil, tipo) => {
@@ -71,7 +71,7 @@ try {
 
   const mostrar = (titulo, descricao, carta) => {
     const e = m.renderizarCarta({ assunto: carta.assunto, corpo: carta.corpo })
-    linhas.push(`### ${titulo}`, '', descricao, '', `**Assunto:** ${carta.assunto}  `, `*Versão ${carta.versao}${carta.personalizacao.length ? ` · personalizada com: ${carta.personalizacao.join(', ')}` : ''}*`, '', '```text', e.texto, '```', '')
+    linhas.push(`### ${titulo}`, '', descricao, '', `**Assunto:** ${carta.assunto}`, `*Versão ${carta.versao}${carta.personalizacao.length ? ` · personalizada com: ${carta.personalizacao.join(', ')}` : ''}*`, '', '```text', e.texto, '```', '')
   }
 
   linhas.push('## Uma carta para cada faixa de acerto', '', 'Pessoas assinantes que já receberam o agradecimento (por isso a carta é a da faixa).', '')
@@ -121,7 +121,7 @@ try {
   novo('Que bom te ver de volta', 'Primeiro login depois de 10 dias ou mais fora. Otávio, 340 questões, ótimo em joelho.', { tipo: 'voltou', nome: 'Otávio Reis', respondidas: 340, diasFora: 24, perfil: { ...pessoa('Otávio Reis', 68), respondidas: 340, diasParado: 24, areas: [{ slug: 'joelho', total: 70, certas: 58 }] } })
   novo('Cronograma pronto', 'No dia em que monta o plano. Pedro, TEOT a 87 dias.', { tipo: 'cronograma_pronto', nome: 'Pedro Alves', respondidas: 260, diasParaProva: 87, provaCronograma: 'TEOT', perfil: FAIXAS['70-80'] })
   novo('Pagamento aprovado', 'Recibo gentil (webhook do Mercado Pago): plano, período, o que libera, link do cronograma. Sem valor.', { tipo: 'pagamento_aprovado', nome: 'Fernanda Luz', respondidas: 260, pagamento: EXTRAS.pagamento, referencia: 'pg:123' })
-  novo('Obrigado pelo tempo de assinatura', 'Cancelamento ou reembolso: porta aberta.', { tipo: 'obrigado_tempo', nome: 'Fernanda Luz', respondidas: 260, encerramento: EXTRAS.encerramento, perfil: { ...pessoa('Fernanda Luz', 71), areas: [{ slug: 'mao', total: 60, certas: 50 }] } })
+  novo('Obrigado pelo tempo de assinatura', 'Confirmação de cancelamento ou reembolso.', { tipo: 'obrigado_tempo', nome: 'Fernanda Luz', respondidas: 260, encerramento: EXTRAS.encerramento, perfil: { ...pessoa('Fernanda Luz', 71), areas: [{ slug: 'mao', total: 60, certas: 50 }] } })
 
   linhas.push('## Campanhas diárias (parte 31, 18/10/2026)', '', 'O banco escolhe quem recebe (`candidatos_<tipo>`, já sem administrador, e-mail não confirmado, quem desligou as cartas, quem recebeu a mesma referência e quem está no teto de cadência) e o agendador manda às 7h pela ação `campanhas_diarias`, pelo mesmo caminho dos automáticos.', '')
   const julia = FAIXAS['80-90'], pedro = FAIXAS['70-80'], beatriz = FAIXAS['60-70']

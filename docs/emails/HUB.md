@@ -83,7 +83,7 @@ com os marcos corrigidos para 100, 250, 500, 1.000 e 2.000.
 ## Limites explícitos
 
 A preparação pessoal admite até 2.000 contas; acima disso falha e pede ampliar a paginação. As campanhas
-existentes têm janela de 80 por tipo, e lembretes/relatórios, 500. A tela avisa quando uma janela é atingida;
+existentes têm janela de 200 por tipo, e lembretes/relatórios, 500. A tela avisa quando uma janela é atingida;
 não apresenta a seleção parcial como se cobrisse todo o banco. Relatórios mantêm os cron jobs anteriores.
 Entregas incertas antigas não foram reenviadas nem alteradas em massa.
 
@@ -113,3 +113,22 @@ Durante o desenvolvimento, os testes do banco ocorreram na mesma transação da 
   recarregar, modelos e todas as larguras entre 320 e 1920; temas claro e escuro e menos movimento.
 - Prévia HTML independente usa os mesmos componentes, com APIs locais fictícias; navegador testado com todas
   as conexões externas bloqueadas. Não possui credenciais nem chama o serviço de envio.
+
+## Ajustes de 15/11/2026
+
+Pix a vencer, início interrompido e cartão recusado são cenários da Central, separados dos erros
+técnicos da fila “Pede ação”. O novo cenário de cartão considera falhas recentes e exclui quem já
+concluiu uma assinatura. A elegibilidade é conferida novamente antes do envio. A interface usa
+versão 2 do protocolo para não oferecer o novo cenário a uma tela antiga.
+
+O processamento usa até quarenta itens por chamada, respeita o tempo máximo, o intervalo de
+650 ms, os bloqueios de trabalho, a cadência e as preferências individuais. Respostas explícitas
+429/401/403 do provedor pausam a rodada; os pendentes ficam preservados. A janela de candidatos
+não aumenta a cota contratada de envio. Retome somente depois de conferir a cota ou o acesso.
+
+Alertas técnicos resolvidos sincronizam entre as telas. A leitura de relatos/notas pode ser
+reconhecida sem encerrar o próprio relato: “Já li estes avisos” marca somente os novos e permite
+desfazer. A migração 20261115191349 adiciona os RPCs protegidos para leitura e candidatos de cartão.
+
+Todos os modelos seguem o TOM.md atual: sem P.S., pressão por retorno ou compra e intimidade
+forçada. Variações mudam o texto, sem reiniciar a frequência de contato.

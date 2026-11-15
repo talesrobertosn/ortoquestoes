@@ -122,7 +122,7 @@ mesmo critério do financeiro), quem não confirmou o e-mail e quem desligou os 
    (TEOT a 60 dias ou menos, sem reta final em 30 dias); convite (não assina, mais de 20 ou 50
    questões, sem convite em 30 dias); começando (menos de 30); e, por fim, a carta da faixa de acerto.
 2. `gerarCarta` sorteia uma versão que a pessoa ainda não recebeu (são 5 a 7 por situação e
-   faixa) e preenche os blocos trocáveis: saudação, observações pessoais, dica, fecho e P.S.
+   faixa) e preenche os blocos trocáveis: saudação, observações pessoais e sugestões úteis. Não há P.S. nem preenchimento automático (diretriz de 15/11/2026 em TOM.md)
    Isso dá centenas de textos diferentes por faixa (a contagem está em `docs/emails/MODELOS.md`).
 3. Observações pessoais só aparecem quando o dado existe e é significativo: melhor área
    (15+ questões e 70%+), área mais estudada (25+ e 35% do total), área a melhorar, horário de

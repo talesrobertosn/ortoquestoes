@@ -73,6 +73,8 @@ try {
   assert.equal(Math.round(r.porDia.reduce((s, d) => s + d.reconstruida, 0) * 100) / 100, r.reconstruida)
   assert.equal(r.novas.atual, 3)
 
+  // Decisão já conciliada/ignorada não deve ressurgir na fila de erro.
+  assert.deepEqual([...m.pagamentosResolvidos(new Set(['2']), new Map([[1, 'ignorado'], [3, 'conciliado'], [4, 'pendente']]))].sort(), ['1', '2', '3'])
   // ---------- Fila de atenção ----------
   const fila = m.filaDeAtencao({
     eventos: [{ id: 1, status_processamento: 'erro', recebido_em: '2026-10-17T10:00:00Z' }, { id: 2, status_processamento: 'erro', recebido_em: '2026-10-17T11:00:00Z' }, { id: 3, status_processamento: 'processado', recebido_em: '2026-10-17T12:00:00Z' }],
@@ -85,11 +87,10 @@ try {
   assert.ok(fila.some(i => i.id === 'fonte:sinais' && i.grupo === 'tecnico'), 'fonte que falhou vira item, nunca zero')
   const ren = fila.find(i => i.id === 'falha-pagamento'), nova = fila.find(i => i.id === 'recusado-ao-assinar')
   assert.ok(ren, 'renovação recusada entra na fila')
-  assert.equal(nova?.severidade, 'oportunidade', 'recusa ao assinar é oportunidade, não alarme')
-  assert.equal(nova?.contagem, 1, 'recusa ao assinar com mais de 14 dias sai sozinha')
-  assert.ok(nova.resolver?.length === 1 && ren.resolver?.length >= 1, 'os dois têm Resolvido')
+  assert.equal(nova, undefined, 'abordagem de cartão recusado fica no hub, não na fila técnica')
+  assert.ok(ren.resolver?.length >= 1, 'renovação recusada mantém Resolvido')
   const recusadas = [assinatura('c', 'mensal', 'cartao', 1, { status: 'falha_pagamento' }), { id_usuario: 'novo', plano: 'anual', status: 'falha_pagamento', meio: 'cartao', criada_em: new Date(agora - 86_400_000).toISOString(), ultima_atualizacao: new Date(agora - 86_400_000).toISOString() }]
-  const depois = m.filaDeAtencao({ eventos: [], lidosPagamento: new Set([...ren.resolver, ...nova.resolver]), assinaturas: recusadas, pendenciasConteudo: 0, novosParados: [], fontesIndisponiveis: [], agora })
+  const depois = m.filaDeAtencao({ eventos: [], lidosPagamento: new Set([...ren.resolver]), assinaturas: recusadas, pendenciasConteudo: 0, novosParados: [], fontesIndisponiveis: [], agora })
   assert.ok(!depois.some(i => i.id === 'falha-pagamento' || i.id === 'recusado-ao-assinar'), '"Resolvido" tira os dois da fila')
   const mudou = m.filaDeAtencao({ eventos: [], lidosPagamento: new Set(ren.resolver), assinaturas: [{ ...recusadas[0], ultima_atualizacao: new Date(agora).toISOString() }], pendenciasConteudo: 0, novosParados: [], fontesIndisponiveis: [], agora })
   assert.ok(mudou.some(i => i.id === 'falha-pagamento'), 'se a assinatura muda depois, o alerta volta')

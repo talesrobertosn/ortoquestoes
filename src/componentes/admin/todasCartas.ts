@@ -26,6 +26,7 @@ export interface Gatilho { quando: string; paraQuem: string }
 const TRAVAS = 'Só e-mail confirmado, sem administrador, com as cartas ligadas, sem a mesma referência e dentro da cadência (48 h / 3 em 14 dias).'
 /** Quando cada carta sai e para quem (a partir do PLANO.md e do cabeçalho de enviar-email/index.ts). */
 export const GATILHOS: Record<TipoCarta, Gatilho> = {
+  cartao_recusado: { quando: 'No cenário de pagamentos da Central de e-mails, após conferir a tentativa novamente.', paraQuem: 'Tentativa de cartão não concluída nos últimos 14 dias, sem outra assinatura ativa e com contato permitido.' },
   nunca_comecou: { quando: 'Lembrete "Primeira missão" (botão em Lembretes) ou pela ficha; o motor escolhe sozinho quando a pessoa não respondeu nada.', paraQuem: 'Conta confirmada há pelo menos um dia e nenhuma questão respondida. Uma vez por pessoa.' },
   boas_vindas: { quando: 'Pela ficha ou pelo lote, quando o motor vê conta de até 3 dias com questões respondidas.', paraQuem: 'Chegou nos últimos 3 dias e já respondeu algumas questões (menos de 30).' },
   comecando: { quando: 'Pela ficha ou pelo lote, quando ainda não dá para falar de acerto.', paraQuem: 'Ativo, com menos de 30 questões.' },

@@ -156,7 +156,7 @@ try {
     const [quem, referencia] = C[t][0]
     const e = enviados.find((x) => x.to.includes(pessoas.get(quem).email))
     assert.ok(e, `${t}: não saiu`)
-    assert.ok(e.text.includes('Tales, do Orto Questões') && /P\.S\.:/.test(e.text), `${t}: carta`)
+    assert.ok(e.text.includes('Tales, do Orto Questões') && !/P\.S\.:/.test(e.text), `${t}: carta`)
     assert.ok(e.headers?.['List-Unsubscribe']?.includes('tipo=cartas'), `${t}: List-Unsubscribe`)
     assert.ok(e.subject.length <= 55 && e.subject.startsWith(pessoas.get(quem).nome.split(' ')[0]), `${t}: assunto ${e.subject}`)
     const linha = linhas.find((l) => l.id_usuario === quem && l.tipo === 'carta')

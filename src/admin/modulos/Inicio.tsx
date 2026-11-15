@@ -280,6 +280,7 @@ export default function Inicio() {
         <Painel justo titulo={fila.length ? 'Pede ação' : 'Nada pedindo ação'} descricao={fila.length ? 'Do mais grave ao menos grave' : 'Sem falha de pagamento, relato aberto ou fonte fora do ar.'}>
           {fila.length ? <ol className="a3-fila">{fila.map(i => <LinhaFila key={i.id} item={i} aoAgir={irDestino} />)}</ol>
             : <div style={{ padding: '0 20px 20px' }}><Estado compacto icone="certo" titulo="Tudo em dia" /></div>}
+          <div style={{ padding: '12px 20px', borderTop: '1px solid var(--a3-linha)' }}><p className="a3-mudo a3-pequeno">Pix, cartões não concluídos e pessoas que pararam ficam nos cenários de e-mail, com histórico e regras de contato.</p><button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => nav.ir('prontas')}><Icone nome="carta" tamanho={15} />Abrir a Central de e-mails</button></div>
         </Painel>
       </div>
       <div style={{ gridColumn: 'span 7' }} id="a3-linha" className="a3-ancora"><LinhaDoDia quadro={quadro} /></div>

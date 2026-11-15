@@ -6,7 +6,7 @@
  * Funções puras: nenhuma consulta, nenhum React. A tela só formata o que sai daqui.
  */
 import type { DiaSerie } from '../../componentes/admin/estudoHoje'
-import { cobrancas as cobrancasDe, meioDe, vigentesPorPessoa, type AssinaturaBase, type Cobranca, type CobrancaReal } from '../../componentes/admin/receita'
+import { cobrancas as cobrancasDe, type AssinaturaBase, type Cobranca, type CobrancaReal } from '../../componentes/admin/receita'
 
 /**
  * Estado de qualidade de um número.
@@ -246,6 +246,11 @@ export interface ItemAtencao {
   resolver?: string[]
 }
 
+/** Decisões do histórico e reconhecimentos da fila representam o mesmo aviso tratado. */
+export function pagamentosResolvidos(lidos: ReadonlySet<string>, decisoes: Iterable<[number, string]>) {
+  return new Set([...lidos, ...[...decisoes].filter(([, d]) => ['conciliado', 'ignorado'].includes(d)).map(([id]) => String(id))])
+}
+
 /** Chave de "Resolvido" de uma assinatura recusada: muda se a assinatura mudar, e aí o alerta volta. */
 export const chaveFalha = (a: { id_usuario: string; ultima_atualizacao?: string | null; criada_em?: string | null }) => `falha:${a.id_usuario}:${a.ultima_atualizacao ?? a.criada_em ?? ''}`
 
@@ -271,7 +276,6 @@ const maisRecente = (datas: Array<string | null | undefined>) => (datas.filter(B
  * recente primeiro. Um item só entra com contagem > 0 (alerta sem pendência real não ocupa a fila).
  */
 export function filaDeAtencao(e: EntradaAtencao): ItemAtencao[] {
-  const agora = e.agora ?? Date.now()
   const itens: ItemAtencao[] = []
   for (const fonte of e.fontesIndisponiveis) {
     itens.push({ id: `fonte:${fonte}`, severidade: 'alta', grupo: 'tecnico', titulo: `fonte indisponível: ${fonte}`, causa: 'A consulta falhou ou ainda não existe no banco; os números dela aparecem como indisponíveis, não como zero.', contagem: 1, ultimoEm: null, destino: { aba: 'comando' }, acao: 'Tentar de novo' })
@@ -285,18 +289,12 @@ export function filaDeAtencao(e: EntradaAtencao): ItemAtencao[] {
     // Qualquer uma sai da fila quando o administrador marca "Resolvido" (chave guardada nos lidos de pagamento).
     const abertas = e.assinaturas.filter(a => a.status === 'falha_pagamento' && !e.lidosPagamento.has(chaveFalha(a)))
     const renovacao = abertas.filter(a => a.ultima_cobranca_em)
-    const aoAssinar = abertas.filter(a => !a.ultima_cobranca_em && agora - new Date(a.ultima_atualizacao ?? a.criada_em ?? 0).getTime() < 14 * 86_400_000)
     if (renovacao.length) itens.push({ id: 'falha-pagamento', severidade: 'alta', grupo: 'receita', titulo: pl(renovacao.length, 'renovação recusada no cartão', 'renovações recusadas no cartão'), causa: 'O cartão de quem já assinava foi recusado; a pessoa pode perder o acesso.', contagem: renovacao.length, ultimoEm: maisRecente(renovacao.map(a => a.ultima_atualizacao)), destino: { aba: 'assinaturas', grupo: 'falha_pagamento' }, acao: 'Ver quem são', resolver: renovacao.map(chaveFalha) })
-    if (aoAssinar.length) itens.push({ id: 'recusado-ao-assinar', severidade: 'oportunidade', grupo: 'receita', titulo: pl(aoAssinar.length, 'tentou assinar e o cartão não passou', 'tentaram assinar e o cartão não passou'), causa: 'Quiseram pagar e o cartão foi recusado; nada foi cobrado. Vale uma carta oferecendo outro cartão ou o Pix.', contagem: aoAssinar.length, ultimoEm: maisRecente(aoAssinar.map(a => a.ultima_atualizacao ?? a.criada_em)), destino: { aba: 'assinaturas', grupo: 'falha_pagamento' }, acao: 'Ver quem são', resolver: aoAssinar.map(chaveFalha) })
-    const tresDias = 3 * 86_400_000
-    const vigentes = vigentesPorPessoa(e.assinaturas, agora)
-    const pixVencendo = vigentes.filter(a => meioDe(a) === 'pix' && a.fim_periodo && new Date(a.fim_periodo).getTime() - agora <= tresDias && new Date(a.fim_periodo).getTime() > agora)
-    if (pixVencendo.length) itens.push({ id: 'pix-vencendo', severidade: 'media', grupo: 'receita', titulo: pl(pixVencendo.length, 'Pix vencendo em até 3 dias', 'Pix vencendo em até 3 dias'), causa: 'O Pix não renova sozinho: sem um lembrete, o acesso termina no fim do período.', contagem: pixVencendo.length, ultimoEm: maisRecente(pixVencendo.map(a => a.fim_periodo)), destino: { aba: 'lembretes' }, acao: 'Ver a campanha Pix a vencer' })
-    const pendentes = e.assinaturas.filter(a => a.status === 'pendente' && agora - new Date(a.criada_em ?? a.ultima_atualizacao ?? 0).getTime() < 7 * 86_400_000)
-    if (pendentes.length) itens.push({ id: 'pix-pendente', severidade: 'oportunidade', grupo: 'receita', titulo: pl(pendentes.length, 'Pix gerado e ainda não pago', 'Pix gerados e ainda não pagos'), causa: 'A pessoa escolheu um plano na última semana e o pagamento não chegou.', contagem: pendentes.length, ultimoEm: maisRecente(pendentes.map(a => a.criada_em ?? a.ultima_atualizacao)), destino: { aba: 'assinaturas' }, acao: 'Ver quem são' })
+    // Pix, cartão recusado ao assinar e retomadas são cenários do hub, não pendências técnicas.
+
   }
   if (e.pendenciasConteudo) itens.push({ id: 'conteudo', severidade: 'media', grupo: 'conteudo', titulo: pl(e.pendenciasConteudo, 'relato ou nota ruim para revisar', 'relatos e notas ruins para revisar'), causa: 'Alguém apontou um erro numa questão ou deu nota de 5 ou menos a um comentário.', contagem: e.pendenciasConteudo, ultimoEm: null, destino: { aba: 'conteudo', vista: 'relatos' }, acao: 'Abrir a triagem' })
-  if (e.novosParados?.length) itens.push({ id: 'novos-parados', severidade: 'oportunidade', grupo: 'acompanhamento', titulo: pl(e.novosParados.length, 'pessoa nova que parou', 'pessoas novas que pararam'), causa: 'Chegaram nas últimas semanas, fizeram menos de 10 questões e não estudam há 2 dias.', contagem: e.novosParados.length, ultimoEm: maisRecente(e.novosParados.map(u => u.ultima_atividade ?? u.criado_em)), destino: { aba: 'usuarios', filtro: 'novos_parados' }, acao: 'Ver e mandar um recado' })
+
   for (const m of e.usoSupabase ?? []) {
     itens.push({ id: `supabase:${m.id}`, severidade: m.pct >= 90 ? 'alta' : 'media', grupo: 'tecnico', titulo: `% do limite de ${m.nome.toLowerCase()} no Supabase`,
       causa: 'Perto do limite do plano gratuito. Veja o que mais ocupa e decida se limpa ou troca de plano.', contagem: Math.round(m.pct), ultimoEm: null, destino: { aba: 'supabase' }, acao: 'Ver uso' })

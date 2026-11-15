@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { ROTULO_SEVERIDADE, filaDeAtencao, type ItemAtencao, type Severidade } from '../dados/metricas'
 import { usarPainel } from '../dados/painel'
 import { novoParado } from '../dados/pessoas'
@@ -9,6 +9,8 @@ import type { FiltroPessoas, GrupoAssinatura, Parte, VistaTriagem } from '../rot
 import { haQuanto, inteiro } from '../ui/formato'
 import { Icone } from '../ui/Icone'
 import { Situacao } from '../ui/kit'
+import { chamarRpc } from '../../servicos/supabase'
+import { aplicarLidosLocais, type TipoLido } from '../../componentes/admin/lidos'
 import { avisoRapido } from '../ui/sobreposicoes'
 
 /** "Pede ação": a fila de atenção da página inicial (falhas, pagamentos, conteúdo, acompanhamento). */
@@ -49,6 +51,7 @@ export function LinhaFila({ item, aoAgir, detalhado = false }: { item: ItemAtenc
     <span className="a3-fila__botoes">
       <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => aoAgir(item)}>{item.acao}</button>
       {item.resolver?.length ? <Resolver chaves={item.resolver} /> : null}
+      {item.id === 'conteudo' && <LerConteudo />}
     </span>
   </li>
 }
@@ -56,9 +59,35 @@ export function LinhaFila({ item, aoAgir, detalhado = false }: { item: ItemAtenc
 /** "Resolvido": tira o alerta de pagamento da fila em qualquer aparelho. Desfazer volta com ele. */
 function Resolver({ chaves }: { chaves: string[] }) {
   const p = usarPainel()
-  const marcar = () => {
-    p.lidosPagamento.marcar(chaves)
+  const [ocupado, definirOcupado] = useState(false)
+  const marcar = async () => {
+    definirOcupado(true)
+    const salvo = await p.lidosPagamento.marcar(chaves)
+    definirOcupado(false)
+    if (!salvo) { avisoRapido('Aviso ocultado neste navegador. Não foi possível sincronizar; tente novamente com a conexão ativa.', 'info'); return }
     avisoRapido(chaves.length === 1 ? 'Marcado como resolvido.' : `${chaves.length} marcados como resolvidos.`, 'ok', { rotulo: 'Desfazer', aoClicar: () => p.lidosPagamento.marcar(chaves, false) })
   }
-  return <button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" onClick={marcar}><Icone nome="certo" tamanho={14} />Resolvido</button>
+  return <button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" disabled={ocupado} onClick={() => void marcar()}><Icone nome="certo" tamanho={14} />Resolvido</button>
+}
+
+/** Ler tira o aviso; não afirma que o relato foi corrigido nem muda sua triagem. */
+function LerConteudo() {
+  const [ocupado, definirOcupado] = useState(false)
+  const ler = async () => {
+    definirOcupado(true)
+    try {
+      const lidos = await chamarRpc<Array<{ tipo: TipoLido; chave: string }>>('ler_alertas_conteudo_admin', {})
+      for (const tipo of ['avaliacao', 'relato'] as const) aplicarLidosLocais(tipo, lidos.filter(x => x.tipo === tipo).map(x => x.chave), true, true)
+      avisoRapido('Avisos marcados como lidos. Os itens continuam na triagem.', 'ok', { rotulo: 'Desfazer', aoClicar: () => {
+        void Promise.all((['avaliacao', 'relato'] as const).map(async tipo => {
+          const chaves = lidos.filter(x => x.tipo === tipo).map(x => x.chave)
+          if (!chaves.length) return
+          await chamarRpc('marcar_lidos_admin', { p_tipo: tipo, p_chaves: chaves, p_lido: false })
+          aplicarLidosLocais(tipo, chaves, false, true)
+        })).catch(() => avisoRapido('Não foi possível desfazer. Tente pela triagem.', 'info'))
+      } })
+    } catch { avisoRapido('Não foi possível marcar como lido. Nenhum aviso foi removido.', 'info') }
+    finally { definirOcupado(false) }
+  }
+  return <button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" disabled={ocupado} onClick={() => void ler()}><Icone nome="certo" tamanho={14} />{ocupado ? 'Salvando…' : 'Já li estes avisos'}</button>
 }

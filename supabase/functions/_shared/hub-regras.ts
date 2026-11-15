@@ -29,10 +29,11 @@ export interface MensagemHub {
   ultimo_envio: string | null
   concorrentes: string[]
   bloqueio: string | null
-  fonte: 'pessoal' | 'campanha' | 'lembrete' | 'mensal' | 'quinzenal'
+  fonte: 'pessoal' | 'campanha' | 'lembrete' | 'mensal' | 'quinzenal' | 'pagamento'
   origem_dados?: Record<string, unknown>
 }
 export const CENARIOS_HUB = [
+  { id: 'cartao_recusado', titulo: 'O cartão não passou', descricao: 'Ajuda cordial para quem não conseguiu concluir o pagamento, com a alternativa do Pix.', grupo: 'Com prazo', tipos: ['cartao_recusado'] },
   { id: 'pix_hoje', titulo: 'Pix: acesso termina hoje', descricao: 'Último dia do período pago no Pix.', grupo: 'Com prazo', tipos: ['pix_hoje'] },
   { id: 'pix_3_dias', titulo: 'Pix: faltam 3 dias', descricao: 'O acesso pago no Pix termina em três dias.', grupo: 'Com prazo', tipos: ['pix_3_dias'] },
   { id: 'fogo_apagando', titulo: 'Fogo apagando', descricao: 'Já estudava e está sem responder. A mensagem considera há quanto tempo parou.', grupo: 'Voltar a estudar', tipos: ['pausa', 'sumiu', 'como_estao', 'assinante_parado_7'] },
@@ -58,6 +59,7 @@ export const cenarioValido = (id: unknown): id is CenarioHub => CENARIOS_HUB.som
 
 export const PRIORIDADE: Partial<Record<TipoCarta, number>> = {
   pix_hoje: 0,
+  cartao_recusado: 5,
   vespera_prova: 10,
   simulado_lembrete: 11,
   simulado_resultado: 12,
@@ -121,7 +123,11 @@ export function sugestaoPessoal(id: string, d: DadosCartaBanco, hoje = new Date(
   const p = perfilDosDados(d),
     hist = anterioresDosDados(d),
     e = escolherTipo(p, hist, hoje)
-  if (d.assinante && Number(d.respondidas) > 0 && !['marco', 'reta_final'].includes(e.tipo)) {
+  if (Number(d.respondidas) > 0 && Number(d.respondidas) < 10 && Number(d.dias_conta) >= 2 && Number(d.dias_conta) < 30 && Number(d.dias_parado) >= 2) {
+    e.tipo = 'comecou_parou'
+    e.motivo = 'Conta recente: deu os primeiros passos e está há pelo menos dois dias sem estudar.'
+  }
+  if (d.assinante && Number(d.respondidas) > 0 && !['marco', 'reta_final', 'comecou_parou'].includes(e.tipo)) {
     const risco = avaliarRisco(
       {
         ultimaAtividade: d.ultima_atividade ?? null,
