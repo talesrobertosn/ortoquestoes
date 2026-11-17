@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { EVENTO_DADOS, chaveCompleta, type MudancaDados, gravar, ler } from './armazenamento'
+import { EVENTO_DADOS, EVENTO_USUARIO_LOCAL, chaveCompleta, type MudancaDados, gravar, ler } from './armazenamento'
 
 /** useState que persiste em localStorage e se mantém em sincronia entre abas. */
 export function usarArmazenado<T>(chave: string, padrao: T) {
@@ -30,9 +30,11 @@ export function usarArmazenado<T>(chave: string, padrao: T) {
       atual.current = ler(chave, padrao)
       definir(atual.current)
     }
+    const recarregar = () => { atual.current = ler(chave, padrao); definir(atual.current) }
+    window.addEventListener(EVENTO_USUARIO_LOCAL, recarregar)
     window.addEventListener(EVENTO_DADOS, aoMudarAqui)
     window.addEventListener('storage', aoMudar)
-    return () => { window.removeEventListener('storage', aoMudar); window.removeEventListener(EVENTO_DADOS, aoMudarAqui) }
+    return () => { window.removeEventListener(EVENTO_USUARIO_LOCAL, recarregar); window.removeEventListener('storage', aoMudar); window.removeEventListener(EVENTO_DADOS, aoMudarAqui) }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chave])
 

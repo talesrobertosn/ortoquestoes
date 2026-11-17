@@ -1,5 +1,7 @@
 # Emblemas: princípios e banco de ideias
 
+**Avisos, artes de expectativa e integração de novos emblemas:** seguir [conquistas/AVISOS.md](conquistas/AVISOS.md), contrato de 17/11/2026 compartilhado por Codex e Claude. A triagem é por família; os novos níveis entram automaticamente.
+
 ## Princípio (decisão do dono do projeto, 07/10/2026)
 
 Emblema não é o que qualquer um consegue. Tem que ser **difícil e desafiador**, no espírito de um

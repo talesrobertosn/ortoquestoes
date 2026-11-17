@@ -16,6 +16,8 @@ const GLOBAIS = new Set(['tema', 'etiquetas', 'instalar:dispensado', 'convite-co
  */
 const PERSISTE_ABA = new Set(['sessao:atual'])
 export const EVENTO_DADOS = 'ortoquestoes:dados'
+/** Invalida retratos em memória ao trocar de conta, inclusive quando a nova conta está vazia. */
+export const EVENTO_USUARIO_LOCAL = 'ortoquestoes:usuario-local'
 /** Disparado uma vez quando o navegador recusa gravar por falta de espaço. */
 export const EVENTO_ARMAZENAMENTO_CHEIO = 'ortoquestoes:armazenamento-cheio'
 let cheio = false
@@ -41,6 +43,7 @@ export function definirUsuarioLocal(id: string | null) {
       }
     } catch { /* armazenamento indisponível */ }
   }
+  if (typeof window !== 'undefined') window.dispatchEvent?.(new Event(EVENTO_USUARIO_LOCAL))
 }
 export function usuarioLocal() { return usuario }
 export function chaveCompleta(chave: string, id = usuario): string {

@@ -92,3 +92,9 @@ Seguir a seção **Eficiência de desenvolvimento e GitHub Actions** do
 [AGENTS.md](AGENTS.md), fonte única das regras de agrupamento de alterações,
 commits, pushes, validação e respeito ao trabalho concorrente. Os detalhes dos
 workflows estão em [docs/OPERACAO-ACTIONS.md](docs/OPERACAO-ACTIONS.md).
+
+## Conquistas e notificações (17/11/2026)
+
+Para qualquer novo achievement ou mudança em avisos, seguir [docs/conquistas/AVISOS.md](docs/conquistas/AVISOS.md)
+e a seção correspondente de AGENTS.md. A integração por família é automática; não criar listas paralelas de ids
+nem reativar as visitas aleatórias. Usar a galeria de prévias e os testes obrigatórios descritos no contrato.

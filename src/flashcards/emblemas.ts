@@ -18,15 +18,18 @@ const VALIDADE = 10 * 60_000
 const MINIMO_PARA_LENDARIOS = 50
 
 type Salvo = { em: number; conta: string; dados: RecordesServidor } | null
-let consultando: Promise<void> | null = null
+const consultas = new Map<string, Promise<void>>()
+const repetir = new Set<string>()
 
-function consultar(conta: string) {
+function consultar(conta: string, forcar = false) {
   const salvo = ler<Salvo>(CHAVE_SERVIDOR, null)
-  if (salvo?.conta === conta && Date.now() - salvo.em < VALIDADE) return
-  consultando ??= chamarRpc<RecordesServidor>('meus_recordes_flashcards', {})
-    .then((dados) => { if (usuarioLocal() === conta && dados) gravar(CHAVE_SERVIDOR, { em: Date.now(), conta, dados: { andar_masmorra: Number(dados.andar_masmorra) || 0, unicos: Number(dados.unicos) || 0 } }) })
+  if (!forcar && salvo?.conta === conta && Date.now() - salvo.em < VALIDADE) return
+  if (consultas.has(conta)) { if (forcar) repetir.add(conta); return }
+  const pedido = chamarRpc<RecordesServidor>('meus_recordes_flashcards', {})
+    .then((dados) => { if (usuarioLocal() === conta && dados) gravar(CHAVE_SERVIDOR, { em: Date.now(), conta, dados: { andar_masmorra: Number(dados.andar_masmorra) || 0, unicos: Number(dados.unicos) || 0 } }, 'nuvem') })
     .catch(() => { /* SQL ainda não aplicado ou sem rede: o andar fica em zero */ })
-    .finally(() => { consultando = null })
+    .finally(() => { consultas.delete(conta); const novamente = repetir.delete(conta); if (novamente && usuarioLocal() === conta) consultar(conta, true) })
+  consultas.set(conta, pedido)
 }
 
 const lendariasDe = (cartas: ReadonlyArray<{ id: string; raridade: string }>) => new Set(cartas.filter((c) => c.raridade === 'lendaria').map((c) => c.id))
@@ -41,7 +44,20 @@ export function usarMetricasFlashcards(comLendarios = false): MetricasFlashcards
   const [salvo] = usarArmazenado<Salvo>(CHAVE_SERVIDOR, null)
   const [lendarias, definirLendarias] = useState<ReadonlySet<string> | null>(null)
   const quantos = Object.keys(registros ?? {}).length
-  useEffect(() => { if (conta && RANKING_NO_SERVIDOR) consultar(conta) }, [conta])
+  useEffect(() => {
+    if (!conta || !RANKING_NO_SERVIDOR) return
+    const atualizar = () => { if (document.visibilityState === 'visible') consultar(conta) }
+    const confirmado = (evento: Event) => {
+      const andar = Number((evento as CustomEvent<{ andar: number }>).detail?.andar)
+      const atual = ler<Salvo>(CHAVE_SERVIDOR, null)
+      if (andar > (atual?.conta === conta ? atual.dados.andar_masmorra : 0)) consultar(conta, true)
+    }
+    atualizar()
+    const intervalo = setInterval(atualizar, 60_000)
+    window.addEventListener('focus', atualizar); window.addEventListener('ortoquestoes:flashcards:recorde-confirmado', confirmado)
+    document.addEventListener('visibilitychange', atualizar)
+    return () => { clearInterval(intervalo); window.removeEventListener('focus', atualizar); window.removeEventListener('ortoquestoes:flashcards:recorde-confirmado', confirmado); document.removeEventListener('visibilitychange', atualizar) }
+  }, [conta])
   useEffect(() => {
     if (!comLendarios || lendarias || quantos < MINIMO_PARA_LENDARIOS) return
     let vivo = true

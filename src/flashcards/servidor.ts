@@ -85,8 +85,8 @@ export async function sincronizarProgresso(): Promise<boolean> {
     else if (baseJogo === undefined) void sincronizarJogo(remoto ? { jogo: remoto.jogo, jogo_em: remoto.jogo_em ?? null } : { jogo: null, jogo_em: null }).catch(() => undefined)
     const registros = mesclarRegistros(ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}), remoto?.registros ?? {})
     const recordes = mesclarRecordes(ler<Partial<Recordes>>(CHAVE_RECORDES, {}), remoto?.recordes ?? {})
-    gravar(CHAVE_REGISTROS, registros)
-    gravar(CHAVE_RECORDES, recordes)
+    gravar(CHAVE_REGISTROS, registros, 'nuvem')
+    gravar(CHAVE_RECORDES, recordes, 'nuvem')
     await chamarRpc('salvar_progresso_flashcards', { p_registros: registros, p_recordes: recordes })
     return true
   } catch {
@@ -283,7 +283,10 @@ export async function vincularFlashcard(chave: string, corrida: string) {
 
 export async function registrarAndar(corrida: string, andar: number) {
   if (!RANKING_NO_SERVIDOR) return
-  try { await chamarRpc('registrar_andar_flashcards', { p_corrida: corrida, p_andar: andar }) } catch { /* idem */ }
+  try {
+    await chamarRpc('registrar_andar_flashcards', { p_corrida: corrida, p_andar: andar })
+    window.dispatchEvent(new CustomEvent('ortoquestoes:flashcards:recorde-confirmado', { detail: { andar } }))
+  } catch { /* idem */ }
 }
 
 export async function lerRanking(tipo: TipoRanking): Promise<LinhaRanking[] | null> {

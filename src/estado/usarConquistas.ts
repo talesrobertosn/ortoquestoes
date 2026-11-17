@@ -1,6 +1,6 @@
 import { usarContextoLocal } from './usarContextoLocal'
 import { lerHistorico } from './sessao'
-import { ler } from './armazenamento'
+import { ler, usuarioLocal } from './armazenamento'
 import { useEffect, useMemo } from 'react'
 import { calcularMetricas, completarMetricas, desbloqueado, EMBLEMAS, type DadosAcervo, type GrupoProva, type Metricas } from './conquistas'
 import { registrarConquistas, usarFeitos } from '../conta/feitos'
@@ -59,7 +59,7 @@ function dadosDoAcervo(indice: Indice | null): DadosAcervo | undefined {
 }
 
 /** `comLendarios`: só a página de Conquistas carrega o acervo dos flashcards para contar os lendários. */
-export function usarConquistas({ comLendarios = false }: { comLendarios?: boolean } = {}): { metricas: Metricas; streak: Streak; conquistadas: number; total: number } {
+export function usarConquistas({ comLendarios = false }: { comLendarios?: boolean } = {}): { metricas: Metricas; streak: Streak; conquistadas: number; total: number; pronto: boolean } {
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
   const grupos = useMemo(() => gruposDoIndice(indice), [indice])
@@ -70,11 +70,13 @@ export function usarConquistas({ comLendarios = false }: { comLendarios?: boolea
   const flashcards = usarMetricasFlashcards(comLendarios)
   // Biblioteca de Resumos: marcações, notas, leituras e o tempo de leitura ativa (chave sincronizada).
   const [docsBiblioteca] = usarArmazenado<Record<string, DocBiblioteca>>(CHAVE_BIBLIOTECA, {})
+  const [historico] = usarArmazenado<ReturnType<typeof lerHistorico>>('historico', [])
+  const [notas] = usarArmazenado<Record<string, string>>('notas', {})
   const biblioteca = useMemo(() => metricasBiblioteca(docsBiblioteca), [docsBiblioteca])
   const resultado = useMemo(() => {
     const favoritas = ler<string[]>('favoritos', []).length
-    const notas = Object.values(ler<Record<string, string>>('notas', {})).filter((t) => String(t ?? '').trim()).length
-    const base = calcularMetricas(contexto.respondidas, lerHistorico(), { favoritas, notas, grupos, acervo, servidor, flashcards, biblioteca, folgasRevisao: folgas ? folgas.split(',').map(Number) : [] })
+    const quantidadeNotas = Object.values(notas).filter((t) => String(t ?? '').trim()).length
+    const base = calcularMetricas(contexto.respondidas, historico, { favoritas, notas: quantidadeNotas, grupos, acervo, servidor, flashcards, biblioteca, folgasRevisao: folgas ? folgas.split(',').map(Number) : [] })
     const metricas = completarMetricas({ ...base, travadas: new Set(servidor?.conquistas ?? []) })
     return {
       metricas,
@@ -82,11 +84,11 @@ export function usarConquistas({ comLendarios = false }: { comLendarios?: boolea
       conquistadas: EMBLEMAS.filter((e) => desbloqueado(e, metricas)).length,
       total: EMBLEMAS.length,
     }
-  }, [contexto.respondidas, grupos, acervo, servidor, flashcards, biblioteca, folgas])
+  }, [contexto.respondidas, contexto.favoritos, historico, notas, grupos, acervo, servidor, flashcards, biblioteca, folgas])
   // Trava no servidor o que acabou de ser conquistado (a sequência de dias não trava: ela se perde de propósito).
   useEffect(() => {
     if (!servidor || !acervo) return
     registrarConquistas(EMBLEMAS.filter((e) => e.familia !== 'sequencia' && desbloqueado(e, resultado.metricas)).map((e) => e.id))
   }, [resultado, servidor, acervo])
-  return resultado
+  return { ...resultado, pronto: !!indice && (!usuarioLocal() || servidor !== null) }
 }

@@ -35,16 +35,33 @@ const CHAVE = 'feitos:servidor'
 const CHAVE_REGISTRADOS = 'feitos:registrados'
 const VALIDADE = 10 * 60_000
 
-let consultando: Promise<void> | null = null
+const consultas = new Map<string, Promise<void>>()
+const repetir = new Map<string, 'local' | 'nuvem'>()
 
-function consultar(id: string, forcar = false) {
+function consultar(id: string, forcar = false, origem: 'local' | 'nuvem' = 'nuvem') {
   const salvo = ler<{ em: number; conta: string; dados: FeitosServidor } | null>(CHAVE, null)
   if (!forcar && salvo?.conta === id && Date.now() - salvo.em < VALIDADE) return Promise.resolve()
-  consultando ??= chamarRpc<FeitosServidor>('meus_feitos', {})
-    .then((dados) => { if (usuarioLocal() === id) gravar(CHAVE, { em: Date.now(), conta: id, dados }) })
+  const existente = consultas.get(id)
+  if (existente) {
+    if (forcar) repetir.set(id, repetir.get(id) === 'local' ? 'local' : origem)
+    return existente
+  }
+  const pedido = chamarRpc<FeitosServidor>('meus_feitos', {})
+    .then((dados) => { if (usuarioLocal() === id) gravar(CHAVE, { em: Date.now(), conta: id, dados }, origem) })
     .catch(() => { /* SQL ainda não aplicado ou sem rede: os emblemas de servidor ficam em zero */ })
-    .finally(() => { consultando = null })
-  return consultando
+    .finally(() => {
+      consultas.delete(id)
+      const proxima = repetir.get(id); repetir.delete(id)
+      if (proxima && usuarioLocal() === id) void consultar(id, true, proxima)
+    })
+  consultas.set(id, pedido)
+  return pedido
+}
+
+/** Atualiza após uma ação local confirmada no servidor, sem antecipar conquistas. */
+export function atualizarFeitos() {
+  const id = usuarioLocal()
+  return id ? consultar(id, true, 'local') : Promise.resolve()
 }
 
 /** Os feitos da conta logada (null para visitantes ou antes da primeira leitura). */
@@ -52,7 +69,16 @@ export function usarFeitos(): FeitosServidor | null {
   const { sessao } = usarConta()
   const id = sessao?.user.id
   const [salvo] = usarArmazenado<{ em: number; conta: string; dados: FeitosServidor } | null>(CHAVE, null)
-  useEffect(() => { if (id) void consultar(id) }, [id])
+  useEffect(() => {
+    if (!id) return
+    const atualizar = () => { if (document.visibilityState === 'visible') void consultar(id) }
+    const reconectar = () => { void consultar(id, true) }
+    atualizar()
+    const intervalo = setInterval(atualizar, 60_000) // A validade de dez minutos limita as consultas.
+    window.addEventListener('focus', atualizar); window.addEventListener('online', reconectar)
+    document.addEventListener('visibilitychange', atualizar)
+    return () => { clearInterval(intervalo); window.removeEventListener('focus', atualizar); window.removeEventListener('online', reconectar); document.removeEventListener('visibilitychange', atualizar) }
+  }, [id])
   return id && salvo?.conta === id ? salvo.dados : null
 }
 
@@ -78,23 +104,23 @@ export function registrarFeito(tipo: TipoFeito) {
     })
 }
 
-let enviando = false
+const enviando = new Set<string>()
 /** Trava no servidor os emblemas recém-conquistados (só os que ele ainda não tem). */
 export function registrarConquistas(ids: readonly string[]) {
   const id = usuarioLocal()
   const salvo = ler<{ em: number; conta: string; dados: FeitosServidor } | null>(CHAVE, null)
-  if (!id || enviando || salvo?.conta !== id) return
+  if (!id || enviando.has(id) || salvo?.conta !== id) return
   const ja = new Set(salvo.dados.conquistas)
   const novos = ids.filter((e) => !ja.has(e))
   if (!novos.length) return
-  enviando = true
+  enviando.add(id)
   chamarRpc('registrar_conquistas', { p_ids: novos.slice(0, 300) })
     .then(() => {
       const atual = ler<{ em: number; conta: string; dados: FeitosServidor } | null>(CHAVE, null)
       if (atual?.conta === id) gravar(CHAVE, { ...atual, dados: { ...atual.dados, conquistas: [...new Set([...atual.dados.conquistas, ...novos])] } })
     })
     .catch(() => { /* tenta de novo na próxima mudança */ })
-    .finally(() => { enviando = false })
+    .finally(() => { enviando.delete(id) })
 }
 
 /** Meta do Cronograma: registra o dia quando a meta de hoje está cumprida. */
