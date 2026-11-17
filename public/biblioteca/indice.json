@@ -15008,15 +15008,15 @@
   },
   {
    "id": "green8-tendoes-flexores",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Lesões dos tendões flexores",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "8ª edição, ampliado com o Green's Operative Hand Surgery, 7ª ed., e o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 6 · Lesão do tendão flexor",
-   "resumo": "Nutrição dupla (perfusão e difusão sinovial) e face palmar avascular; vínculos curtos e longos; polias anulares e cruciformes, com A2 e A4 indispensáveis; LEDDY e PACKER (tipo I na palma, sem vínculos, urgente); sutura central e epitendínea, lacerações parciais e a regra de 1 cm na zona 1; aderências, excursão e cicatrização intrínseca; enxertos (palmar longo, plantar), PULVERTAFT, quadriga, BOYES e PANEVA-HOLEVICH.",
+   "resumo": "Três necessidades do tendão intrassinovial (sangue, trilho e movimento); FDS com duas cabeças e FDP com inervação dupla; túnel do carpo em três andares; zonas de KLEINERT e VERDAN; quiasma de CAMPER sobre a falange proximal distal; cinco anulares e três cruciformes, A1, A3 e A5 nas placas volares, A2 e A4 nos ossos e indispensáveis; vínculos curtos e longos e face palmar avascular; emergência só com perfusão comprometida, reparo até 7 dias; núcleo multifilamentar, alça travada, epitendínea como reforço e gap de 3 mm; LEDDY e PACKER I a IV; regra de 1 cm na zona 1; incisão mediolateral; DURAN 3 a 5 mm; tenólise não antes de 4 meses; BOYES 1 a 5; enxerto palmar longo e plantar, PULVERTAFT, cascata; HUNTER e PANEVA-HOLEVICH; polias por BUNNELL, LISTER, KAREV e DOYLE e BLYTHE; quadriga contra lumbrical plus.",
    "acesso": "gratis",
-   "minutos": 31,
+   "minutos": 94,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15024,89 +15024,89 @@
      "radar": "fundamento"
     },
     {
-     "id": "anatomia-sangue-e-trilho",
-     "titulo": "Anatomia: sangue e trilho",
+     "id": "da-terra-de-ninguem-ao-reparo-primario-como-o-co",
+     "titulo": "Da terra de ninguém ao reparo primário: como o conhecimento evoluiu",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-musculos-tunel-do-carpo-e-zonas",
+     "titulo": "Anatomia: músculos, túnel do carpo e zonas",
      "radar": "confirmado"
     },
     {
-     "id": "a-avulsao-do-profundo",
-     "titulo": "A avulsão do profundo",
+     "id": "a-bainha-as-polias-e-a-irrigacao",
+     "titulo": "A bainha, as polias e a irrigação",
      "radar": "confirmado"
     },
     {
-     "id": "o-reparo-e-a-cicatrizacao",
-     "titulo": "O reparo e a cicatrização",
-     "radar": "confirmado"
-    },
-    {
-     "id": "a-reconstrucao",
-     "titulo": "A reconstrução",
-     "radar": "confirmado"
-    },
-    {
-     "id": "os-musculos-flexores-extrinsecos-e-o-tunel-do-ca",
-     "titulo": "Os músculos flexores extrínsecos e o túnel do carpo",
-     "radar": "confirmado"
-    },
-    {
-     "id": "a-bainha-as-polias-e-a-irrigacao-em-detalhe",
-     "titulo": "A bainha, as polias e a irrigação em detalhe",
-     "radar": "confirmado"
-    },
-    {
-     "id": "o-exame-fisico-a-imagem-e-as-zonas",
-     "titulo": "O exame físico, a imagem e as zonas",
+     "id": "o-exame-fisico-a-imagem-e-a-lesao-parcial",
+     "titulo": "O exame físico, a imagem e a lesão parcial",
      "radar": "oportunidade"
     },
     {
      "id": "o-momento-do-reparo",
      "titulo": "O momento do reparo",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "a-sutura-material-calibre-e-configuracao",
-     "titulo": "A sutura: material, calibre e configuração",
      "radar": "confirmado"
     },
     {
-     "id": "as-lesoes-parciais",
-     "titulo": "As lesões parciais",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "a-zona-1-e-a-avulsao-do-profundo-em-detalhe",
-     "titulo": "A zona 1 e a avulsão do profundo em detalhe",
+     "id": "a-sutura-biomecanica-do-nucleo-e-da-epitendinea",
+     "titulo": "A sutura: biomecânica do núcleo e da epitendínea",
      "radar": "confirmado"
     },
     {
-     "id": "a-zona-2-as-zonas-proximais-e-o-polegar",
-     "titulo": "A zona 2, as zonas proximais e o polegar",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "a-biologia-da-cicatrizacao-e-a-reabilitacao",
-     "titulo": "A biologia da cicatrização e a reabilitação",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "as-complicacoes-e-a-tenolise",
-     "titulo": "As complicações e a tenólise",
-     "radar": "oportunidade"
-    },
-    {
-     "id": "a-reconstrucao-escada-enxerto-em-um-tempo-e-doad",
-     "titulo": "A reconstrução: escada, enxerto em um tempo e doadores",
+     "id": "a-cicatrizacao-do-tendao",
+     "titulo": "A cicatrização do tendão",
      "radar": "confirmado"
     },
     {
-     "id": "dois-tempos-polias-reconstruidas-e-o-polegar",
-     "titulo": "Dois tempos, polias reconstruídas e o polegar",
+     "id": "a-zona-1-e-a-avulsao-do-profundo",
+     "titulo": "A zona 1 e a avulsão do profundo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-zona-2-a-tecnica-do-autor",
+     "titulo": "A zona 2: a técnica do autor",
+     "radar": "fundamento"
+    },
+    {
+     "id": "zonas-proximais-ordem-de-reparo-e-o-polegar-agud",
+     "titulo": "Zonas proximais, ordem de reparo e o polegar agudo",
      "radar": "oportunidade"
     },
     {
-     "id": "quadriga-lumbrical-plus-e-as-complicacoes-do-enx",
-     "titulo": "Quadriga, lumbrical plus e as complicações do enxerto",
+     "id": "a-reabilitacao",
+     "titulo": "A reabilitação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-complicacoes-do-reparo-e-a-tenolise",
+     "titulo": "As complicações do reparo e a tenólise",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-reconstrucao-escada-boyes-e-o-enxerto-em-um-te",
+     "titulo": "A reconstrução: escada, BOYES e o enxerto em um tempo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dois-tempos-hunter-e-paneva-holevich",
+     "titulo": "Dois tempos: HUNTER e PANEVA-HOLEVICH",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-polegar-cronico-e-as-zonas-proximais",
+     "titulo": "O polegar crônico e as zonas proximais",
      "radar": "oportunidade"
+    },
+    {
+     "id": "a-reconstrucao-das-polias",
+     "titulo": "A reconstrução das polias",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "as-complicacoes-do-enxerto-quadriga-lumbrical-pl",
+     "titulo": "As complicações do enxerto: quadriga, lumbrical plus e outras",
+     "radar": "confirmado"
     },
     {
      "id": "flexores-na-crianca",
@@ -15120,37 +15120,137 @@
     }
    ],
    "questoes": [
-    "mao-0092",
-    "mao-0320",
-    "mao-0051",
-    "mao-0022",
-    "mao-0019",
-    "mao-0091",
-    "mao-0002",
-    "mao-0152",
-    "mao-0135",
-    "mao-0402",
-    "mao-0541",
-    "mao-0229",
-    "mao-0572",
-    "mao-0591",
-    "mao-0522",
-    "mao-0231",
-    "mao-0230",
-    "mao-0079",
+    "mao-0859",
+    "mao-0963",
     "mao-0342",
     "mao-0634",
+    "mao-1063",
+    "mao-1104",
     "mao-0673",
+    "mao-0860",
+    "mao-0092",
+    "mao-1518",
+    "mao-0022",
+    "mao-0320",
+    "mao-0861",
+    "mao-0051",
+    "mao-1525",
+    "mao-1898",
+    "mao-1102",
+    "mao-1315",
+    "mao-1894",
+    "mao-0135",
+    "mao-0862",
+    "mao-0905",
+    "mao-0002",
+    "mao-0541",
+    "mao-1526",
+    "mao-0402",
+    "mao-0812",
     "mao-0607",
-    "mao-0650"
+    "mao-0591",
+    "mao-0769",
+    "mao-0973",
+    "mao-0091",
+    "mao-0906",
+    "mao-1053",
+    "mao-0152",
+    "mao-0463",
+    "mao-0019",
+    "mao-1067",
+    "mao-1088",
+    "mao-0650",
+    "mao-0229",
+    "mao-1165",
+    "mao-0767",
+    "mao-0766",
+    "mao-0978",
+    "mao-1316",
+    "mao-1479",
+    "mao-1615",
+    "mao-1440",
+    "mao-0079",
+    "mao-0572",
+    "mao-1073",
+    "mao-0230",
+    "mao-1357",
+    "mao-0231",
+    "mao-0522",
+    "mao-0670",
+    "mao-1078"
    ],
    "treino": [
+    "mao-2113",
+    "mao-2826",
+    "mao-2852",
+    "mao-2824",
+    "mao-2866",
+    "mao-2195",
+    "mao-2836",
+    "mao-2842",
+    "mao-2844",
+    "mao-2854",
+    "mao-2868",
     "mao-2592",
-    "mao-2593",
+    "mao-2831",
+    "mao-2838",
+    "mao-2857",
+    "mao-2193",
+    "mao-1792",
+    "mao-2830",
+    "mao-2848",
     "mao-2594",
+    "mao-2625",
     "mao-2595",
+    "mao-1942",
+    "mao-2858",
+    "mao-2861",
+    "mao-2593",
+    "mao-2191",
+    "mao-2531",
+    "mao-2829",
+    "mao-2833",
+    "mao-2835",
+    "mao-2839",
+    "mao-2847",
+    "mao-2849",
+    "mao-2853",
+    "mao-2859",
+    "mao-2862",
+    "mao-2863",
+    "mao-2864",
+    "mao-1794",
+    "mao-2472",
+    "mao-2843",
+    "mao-2855",
+    "mao-2860",
+    "mao-2388",
+    "mao-2112",
+    "mao-2837",
+    "mao-2192",
+    "mao-1943",
+    "mao-2523",
+    "mao-2841",
+    "mao-2865",
+    "mao-2597",
+    "mao-2832",
     "mao-2596",
-    "mao-2597"
+    "mao-2825",
+    "mao-2851",
+    "mao-2111",
+    "mao-2026",
+    "mao-2430",
+    "mao-1780",
+    "mao-2828",
+    "mao-2845",
+    "mao-2846",
+    "mao-2850",
+    "mao-2834",
+    "mao-2370",
+    "mao-2827",
+    "mao-2840",
+    "mao-2856",
+    "mao-2867"
    ],
    "subtemas": [
     "Lesões dos tendões flexores"

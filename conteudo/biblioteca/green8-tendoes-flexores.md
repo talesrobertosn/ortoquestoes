@@ -265,7 +265,7 @@ Esta é a divergência que decide questão. O Green só diz que a face **palmar*
 | duas anulares contíguas perdidas | perda de movimento | contratura em flexão da IFP |
 !fim
 
-!questoes central=mao-0051 relacionadas=mao-0162,mao-0554
+!questoes central=mao-0051
 conceito: O FDS tem área isquêmica sob a A2; o FDP tem duas, sob a A2 e a A4; a face palmar dos tendões nas zonas 1 e 2 é a menos irrigada.
 como: O TARO 2016 perguntou, com o mesmo enunciado repetido no acervo, sob qual polia fica a área isquêmica do superficial.
 armadilha: Responder A4 para o superficial (a A4 é a segunda zona isquêmica do profundo) ou achar que a face dorsal é a avascular.
@@ -578,7 +578,7 @@ armadilha: Achar que todo FDP crônico precisa de enxerto, ou retirar o FDS ínt
 alerta: O acervo não registra o gabarito oficial de `mao-0650`; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3179), sustenta a afirmação, e o Green 7 (p. 211) põe tenodese e artrodese como opções para a IFD instável.
 !fim
 
-# A zona 2: a técnica do autor {radar=confirmado}
+# A zona 2: a técnica do autor {radar=fundamento}
 
 ## Preparo e incisão
 
@@ -784,7 +784,7 @@ armadilha: Trocar a ordem entre cicatriz, articulação e nervo.
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3169), lista os requisitos: pele maleável, feridas curadas, edema resolvido, **passivo completo**, sensibilidade normal ou **ao menos um nervo digital íntegro**, e **A2 e A4 íntegras**, senão reconstruídas em estágio separado. A idade pesa: melhores resultados entre **10 e 30 anos**, piores nos muito jovens e acima de **50**.
 
-!questoes central=mao-0079 relacionadas=mao-0160,mao-0560 treino=mao-2597,mao-2832
+!questoes central=mao-0079 treino=mao-2597,mao-2832
 conceito: O enxerto primário na zona II tardia exige túnel fibro-ósseo satisfatório com A2 e A4 íntegras, passivo completo e BOYES 1; com polias perdidas ou cicatriz, dois tempos.
 como: O TARO 2014 perguntou, com o mesmo enunciado repetido no acervo, a condição que indica o enxerto primário na reparação tardia da zona II; o simulado, como o cirurgião avalia o dedo antes do enxerto.
 armadilha: Indicar enxerto em um tempo num dedo rígido ou sem polias, que pede reconstrução em dois tempos.
