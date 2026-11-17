@@ -13,6 +13,7 @@ import { PortaoConta } from '../componentes/PortaoConta'
 import { Atalhos } from '../componentes/Atalhos'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
+import { IndicadorSincronia } from '../componentes/IndicadorSincronia'
 import { usarConta } from '../conta/ContextoConta'
 import { lerRespondidas, usarFavoritos, usarSessao } from '../estado/sessao'
 import { erroDeConexao, marcarConviteLimiteVisto, saldoGratuitoHoje, usarLimiteDiario } from '../estado/limiteDiario'
@@ -298,7 +299,7 @@ export function Sessao() {
     document.addEventListener('visibilitychange', aoVoltar)
     return () => { vivo = false; document.removeEventListener('visibilitychange', aoVoltar) }
   }, [nacional, definirSessao])
-  const { sessao: conta } = usarConta()
+  const { sessao: conta, status: statusSync } = usarConta()
   const { favoritos, alternar: alternarFavorito } = usarFavoritos()
   const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
   const [mapaAberto, definirMapaAberto] = useState(false)
@@ -631,6 +632,9 @@ export function Sessao() {
   }, [concluida])
   if (concluida) return null
 
+  if (!sessao && conta && !statusSync.pronto && statusSync.estado === 'sincronizando') {
+    return <Estado titulo="Buscando sua sessão de treino…"><IndicadorSincronia preparando /></Estado>
+  }
   if (!sessao || total === 0) {
     return (
       <Estado
@@ -641,6 +645,7 @@ export function Sessao() {
           </a>
         }
       >
+        <IndicadorSincronia />
         <p>Escolha os filtros na tela de montagem e a sessão começa na mesma hora.</p>
       </Estado>
     )
@@ -816,6 +821,7 @@ export function Sessao() {
         </p>
       )}
       <div className="sessao-palco" ref={palco}>
+        {!nacional && <IndicadorSincronia />}
       {questaoAtual && letrasAcervo === undefined && preferencias.embaralhar && !simulado && !nacional ? (
         <Carregando linhas={6} />
       ) : questaoAtual ? (

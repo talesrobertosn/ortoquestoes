@@ -9,7 +9,9 @@ export function usarArmazenado<T>(chave: string, padrao: T) {
 
   const atualizar = useCallback(
     (proximo: T | ((anterior: T) => T)) => {
-      const resultado = typeof proximo === 'function' ? (proximo as (a: T) => T)(atual.current) : proximo
+      // Outra aba pode ter gravado antes de seu evento storage chegar aqui.
+      // A persistência é a fonte atual para não regravar um retrato antigo.
+      const resultado = typeof proximo === 'function' ? (proximo as (a: T) => T)(ler(chave, padrao)) : proximo
       atual.current = resultado
       gravar(chave, resultado)
       definir(resultado)

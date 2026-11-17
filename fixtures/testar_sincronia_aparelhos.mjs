@@ -35,7 +35,7 @@ async function principal() {
   try {
     const pacote = join(pasta, 'sync.mjs')
     await build({
-      stdin: { contents: `export * from './src/conta/sincronizacao'; export * from './src/conta/modeloSync'; export * from './src/estado/armazenamento'; export * from './src/estado/sessao'; export * from './src/dados/planoEstudo'; export * from './src/conta/marcasDia';`, resolveDir: process.cwd(), loader: 'ts' },
+      stdin: { contents: `export * from './src/conta/sincronizacao'; export * from './src/conta/modeloSync'; export * from './src/conta/sessaoSync'; export * from './src/estado/armazenamento'; export * from './src/estado/sessao'; export * from './src/dados/planoEstudo'; export * from './src/conta/marcasDia';`, resolveDir: process.cwd(), loader: 'ts' },
       outfile: pacote, bundle: true, platform: 'node', format: 'esm', jsx: 'automatic', loader: { '.css': 'empty', '.png': 'empty', '.svg': 'empty' },
       define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' }, logLevel: 'error',
     })
@@ -54,6 +54,8 @@ async function principal() {
       assert.deepEqual(m.juntarRespondida(b, a), j, 'a ordem não importa')
       assert.deepEqual(m.juntarRespondida(j, b), j, 'juntar de novo não duplica')
       assert.deepEqual(m.juntarRespondida(null, b), b)
+
+      assert.equal(m.tipoAindaNaoAceito('sessoes', { code: '23514', message: 'progresso_usuario_tipo_check' }), true, 'banco antigo não descarta o treino da fila')
 
       // Erros: só dado ruim tira item da fila; login, rede e servidor não.
       assert.equal(m.erroDeDado({ code: '23514', message: 'violates check constraint' }, 400), true)
@@ -188,6 +190,82 @@ async function principal() {
       let semente = 7
       const sortear = () => ((semente = (semente * 16807) % 2147483647) / 2147483647)
       return { c, ids: m.idsDoDiaPlano(indice, itens, resp, true, sortear) }
+    }
+
+    // Relato de 15/11: o treino de 100 questões criado no PC deve abrir igual no celular.
+    {
+      const pc = criar('treino-pc', { usuario: 'conta-treino', desvio: 5 * HORA })
+      const celular = criar('treino-celular', { usuario: 'conta-treino', desvio: -5 * HORA })
+      const filtros = { temas: ['ombro'], subtemas: [], areas: ['base'], provas: [], anos: [] }
+      const treino = m.novaSessao(filtros, Array.from({ length: 100 }, (_, i) => `ombro-${i}`))
+      const resposta = { escolhida: 'C', correta: true, segundos: 42, confianca: 'duvida' }
+      treino.respostas['ombro-0'] = resposta
+      treino.ordens = { 'ombro-0': 'CBDEA' }
+      treino.posicao = 17
+      treino.revisar = ['ombro-3']
+      treino.riscadas = { 'ombro-17': ['A', 'D'] }
+      // Sessão preexistente, antes de instalar a versão nova: migração automática.
+      await pc.gravar('sessao:atual', treino)
+      await pc.cmd('iniciar'); await pc.esperar()
+      await celular.cmd('iniciar'); await celular.esperar()
+      assert.deepEqual(await celular.ler('sessao:atual'), treino, '100 questões, ordem, filtros, posição, letras e marcações são idênticos')
+      assert.deepEqual(servidor('conta-treino', 'sessoes').atual, treino)
+      assert.deepEqual(m.itens('sessoes', { ...treino, nacional: '2026-11' }), {}, 'Nacional não usa a RPC de treinos')
+      assert.equal(m.reconciliarSessao({ ...treino, simulado: true }, { 'ombro-1': { c: true, q: Date.now() + 9 * HORA } }), null, 'outro treino não preenche respostas de simulado')
+
+      // Offline nos dois: cada um responde uma questão e altera campos diferentes.
+      await pc.cmd('online', false); await celular.cmd('online', false)
+      const noPc = { ...treino, respostas: { ...treino.respostas, 'ombro-1': resposta }, revisar: [], posicao: 18 }
+      const noCelular = { ...treino, respostas: { ...treino.respostas, 'ombro-2': resposta }, riscadas: { ...treino.riscadas, 'ombro-20': ['B'] } }
+      await pc.gravar('sessao:atual', noPc)
+      await celular.gravar('sessao:atual', noCelular)
+      await pc.cmd('online', true); await pc.esperar()
+      await celular.cmd('online', true); await celular.esperar(6000)
+      await pc.sincronizar(); await pc.esperar()
+      const junto = await celular.ler('sessao:atual')
+      assert.deepEqual(await pc.ler('sessao:atual'), junto, 'os dois convergem sem depender do relógio')
+      assert.equal(Object.keys(junto.respostas).length, 3, 'nenhuma resposta desapareceu')
+      assert.equal(junto.posicao, 18, 'edição de marcações não faz a posição regredir')
+      assert.deepEqual(junto.revisar, [], 'desmarcar revisão não ressuscita a marca antiga')
+      assert.deepEqual(junto.riscadas['ombro-20'], ['B'])
+      assert.equal(junto.respostas['ombro-1'].segundos, 42)
+      assert.equal(junto.respostas['ombro-1'].outroAparelho, undefined, 'respostas da sessão mantêm autoria e contam no resumo')
+
+      // Conclusão é terminal; uma resposta feita offline não reabre o treino.
+      await celular.cmd('online', false)
+      await celular.gravar('sessao:atual', { ...junto, respostas: { ...junto.respostas, 'ombro-4': resposta } })
+      await pc.gravar('sessao:atual', { ...junto, concluidaEm: Date.now() })
+      await pc.esperar()
+      await celular.cmd('online', true); await celular.esperar(6000)
+      assert.ok((await celular.ler('sessao:atual')).concluidaEm)
+      assert.ok((await celular.ler('sessao:atual')).respostas['ombro-4'])
+      await pc.sincronizar(); await pc.esperar()
+
+      // Encerrar não pode ser desfeito pelo cache offline de outro aparelho.
+      const concluido = await celular.ler('sessao:atual')
+      await celular.cmd('online', false)
+      await celular.gravar('sessao:atual', { ...concluido, posicao: 30 })
+      await pc.gravar('sessao:atual', null); await pc.esperar()
+      await celular.cmd('online', true); await celular.esperar(6000)
+      assert.equal(await celular.ler('sessao:atual'), null)
+      assert.equal(servidor('conta-treino', 'sessoes').atual, undefined)
+
+      // Uma criação explícita substitui a antiga, preservando o novo treino
+      // quando o aparelho offline tenta modificar a sessão anterior.
+      const nova = m.novaSessao(filtros, ['nova-1'])
+      await pc.gravar('sessao:atual', nova); await pc.esperar()
+      await celular.sincronizar(); await celular.esperar()
+      await celular.cmd('online', false)
+      await celular.gravar('sessao:atual', { ...nova, posicao: 0, revisar: ['nova-1'] })
+      const seguinte = m.novaSessao(filtros, ['seguinte-1'])
+      await pc.gravar('sessao:atual', seguinte); await pc.esperar()
+      await celular.cmd('online', true); await celular.esperar(6000)
+      assert.deepEqual(await celular.ler('sessao:atual'), seguinte)
+      assert.notEqual(nova.id, seguinte.id, 'IDs não colidem mesmo no mesmo milissegundo')
+
+      await celular.cmd('trocarConta', 'conta-treino-vazia'); await celular.esperar()
+      assert.equal(await celular.ler('sessao:atual'), null, 'troca de conta isola o treino')
+      console.log('Treino PC/celular: 100 questões, migração, posição, marcações, offline simultâneo, relógios ±5 h, conclusão, encerramento, substituição e isolamento passaram.')
     }
 
     // ---------- 1) O bug relatado ----------

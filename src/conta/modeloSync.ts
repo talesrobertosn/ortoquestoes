@@ -1,7 +1,8 @@
+import { juntarSessao, sessaoSincronizavel } from './sessaoSync'
 import { gerarId } from '../util/id'
 import { juntarBiblioteca } from '../biblioteca/juntar'
 /** Documentos por questão: alterações independentes nunca substituem o progresso inteiro. */
-export const TIPOS_SYNC = ['respondidas', 'favoritos', 'notas', 'historico', 'biblioteca'] as const
+export const TIPOS_SYNC = ['respondidas', 'favoritos', 'notas', 'historico', 'biblioteca', 'sessoes'] as const
 export type TipoSync = typeof TIPOS_SYNC[number]
 export interface Documento {
   tipo: TipoSync
@@ -11,6 +12,8 @@ export interface Documento {
   operacao: string
 }
 export interface Alteracao {
+  /** Base local da sessão para conciliar campos, sem depender do relógio. */
+  anterior?: unknown
   tipo: TipoSync
   item: string
   valor: unknown
@@ -30,11 +33,13 @@ export const estadoVazio = (): EstadoSync => ({ cursor: 0, reinicio: 0, versoes:
 export const identificador = (tipo: TipoSync, item: string) => `${tipo}/${item}`
 export const ehTipoSync = (chave: string): chave is TipoSync => TIPOS_SYNC.includes(chave as TipoSync)
 export function itens(tipo: TipoSync, valor: unknown): Record<string, unknown> {
+  if (tipo === 'sessoes') return sessaoSincronizavel(valor) ? { atual: valor } : {}
   if (tipo === 'favoritos') return Object.fromEntries((Array.isArray(valor) ? valor : []).map(id => [id, true]))
   if (tipo === 'historico') return Object.fromEntries((Array.isArray(valor) ? valor : []).map(h => [h.id, h]))
   return valor && typeof valor === 'object' && !Array.isArray(valor) ? valor as Record<string, unknown> : {}
 }
 export function deItens(tipo: TipoSync, mapa: Record<string, unknown>): unknown {
+  if (tipo === 'sessoes') return mapa.atual ?? null
   if (tipo === 'favoritos') return Object.keys(mapa).filter(id => mapa[id] === true)
   if (tipo === 'historico') return Object.values(mapa).filter(Boolean).sort((a, b) => (b as { concluidaEm: number }).concluidaEm - (a as { concluidaEm: number }).concluidaEm).slice(0, 50)
   return Object.fromEntries(Object.entries(mapa).filter(([, v]) => v !== null))
@@ -45,7 +50,7 @@ export function registrarAlteracoes(estado: EstadoSync, tipo: TipoSync, antes: u
     const valor = b[item] ?? null
     if (JSON.stringify(a[item] ?? null) === JSON.stringify(valor)) continue
     const id = identificador(tipo, item)
-    estado.pendentes[id] = { tipo, item, valor, base: estado.pendentes[id]?.base ?? estado.versoes[id] ?? 0, operacao: gerarId() }
+    estado.pendentes[id] = { ...(tipo === 'sessoes' ? { anterior: estado.pendentes[id] ? estado.pendentes[id].anterior : antes } : {}), tipo, item, valor, base: estado.pendentes[id]?.base ?? estado.versoes[id] ?? 0, operacao: gerarId() }
   }
 }
 /** Uma resposta à rede só confirma a operação enviada; edições posteriores continuam pendentes. */
@@ -61,6 +66,7 @@ export function receberDocumento(estado: EstadoSync, doc: Documento, enviada?: A
     }
     if (enviada && doc.operacao === enviada.operacao) {
       pendente.base = doc.versao
+      if (doc.tipo === 'sessoes') pendente.anterior = enviada.valor
       delete estado.conflitos[id]
       return false
     }
@@ -117,6 +123,19 @@ export function resolverConflito(estado: EstadoSync, id: string, doc: Documento)
   const pendente = estado.pendentes[id]
   delete estado.conflitos[id]
   if (!pendente) return true
+  if (doc.tipo === 'sessoes') {
+    const remoto = doc.valor
+    const junto = juntarSessao(remoto, pendente.valor, pendente.anterior)
+    if (JSON.stringify(junto) === JSON.stringify(remoto)) delete estado.pendentes[id]
+    else {
+      pendente.valor = junto
+      pendente.anterior = remoto
+      pendente.base = doc.versao
+      pendente.operacao = gerarId()
+    }
+    doc.valor = junto
+    return true
+  }
   if (doc.tipo === 'respondidas' && doc.valor !== null && pendente.valor !== null) {
     const junto = juntarRespondida(doc.valor, pendente.valor)
     if (JSON.stringify(junto) === JSON.stringify(doc.valor)) {
