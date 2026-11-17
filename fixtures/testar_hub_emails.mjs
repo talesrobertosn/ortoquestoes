@@ -248,6 +248,7 @@ try {
   assert.equal(rodada, null, 'prévia não inicia rodada')
   const itens = p.dados.prontas.map((m) => ({ chave: m.chave, assunto: m.assunto, corpo: m.corpo }))
   assert.equal((await chamar('iniciar', { itens: [{ chave: 'pessoa-injetada' }] })).status, 409)
+  assert.equal((await chamar('iniciar', { itens: [{ ...itens[0], corpo: 'Seu cadastro informa o serviço HUFMA.' }] })).status, 409, 'aba antiga não envia o cadastro recitado')
   assert.equal(rodada, null, 'seleção desconhecida não cria rodada')
   proximoPausado = true
   await Promise.all([chamar('iniciar', { itens }), chamar('iniciar', { itens })])
@@ -362,6 +363,16 @@ try {
   assert.equal(envios.length, 1)
   await chamar('processar', {}, 'cron')
   assert.equal(envios.length, 1, 'rodada pausada não tenta os próximos destinatários')
+  // Uma mensagem autorizada antes da revisão fica adiada, sem reserva nem envio.
+  provedor = 'ok'; rodada = null; fila = []; logs = []; envios = []; proximoPausado = true
+  await chamar('iniciar', { cenario: 'cartao_recusado', itens: [{ chave: ajuda.chave }] }); await esperar()
+  fila[0].mensagem.corpo = 'A etapa informada no seu perfil é ortopedista.'
+  proximoPausado = false
+  await chamar('processar', {}, 'cron')
+  assert.equal(fila[0].status, 'adiado')
+  assert.match(fila[0].motivo, /Atualize a prévia/)
+  assert.equal(envios.length, 0, 'texto antigo não chega ao provedor')
+  assert.equal(logs.length, 0, 'texto antigo não consome reserva')
   cartoes = []; provedor = 'ok'; rodada = null; fila = []; logs = []; envios = enviosAnteriores
   await import(pathToFileURL(join(tmp, 'individual.mjs')))
   const individual = {
@@ -371,6 +382,7 @@ try {
     assunto: 'Bruno, sobre o estudo',
     corpo: p.dados.prontas[1].corpo,
   }
+  assert.equal((await chamar('carta', { ...individual, corpo: 'Você informou TEOT entre seus objetivos de estudo.' })).status, 409, 'ficha antiga pede nova prévia')
   bloqueios.set(B, 'Limite de três e-mails em 14 dias')
   assert.equal((await chamar('carta', individual)).status, 409)
   assert.equal(envios.length, antes, 'a ficha respeita o bloqueio central')

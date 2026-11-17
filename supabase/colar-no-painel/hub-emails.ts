@@ -40,38 +40,61 @@ var prova = (c) => {
 };
 var acesso = (c) => c.um("Seu hist\xF3rico de estudo e suas anota\xE7\xF5es continuam salvos na conta.", "As quest\xF5es respondidas e as revis\xF5es ficam guardadas no seu hist\xF3rico.", "Seu progresso permanece salvo para continuar de onde parou.");
 var sugestao = (c, rota) => rota === "erros" ? c.um("No Caderno de erros, voc\xEA pode refazer quest\xF5es e consultar a explica\xE7\xE3o de cada alternativa.", "Uma sess\xE3o no Caderno de erros permite revisar os pontos das quest\xF5es anteriores.", "Para revisar d\xFAvidas espec\xEDficas, o Caderno de erros re\xFAne as quest\xF5es e os coment\xE1rios.") : rota === "revisao" ? c.um("Na Revis\xE3o, voc\xEA encontra as quest\xF5es indicadas para retomar os temas j\xE1 estudados.", "A Revis\xE3o re\xFAne os assuntos do seu hist\xF3rico para a pr\xF3xima sess\xE3o.", "Voc\xEA pode come\xE7ar a pr\xF3xima sess\xE3o pela Revis\xE3o e consultar os coment\xE1rios das alternativas.") : c.um("Voc\xEA pode escolher um tema e resolver algumas quest\xF5es, consultando o coment\xE1rio das alternativas.", "Uma forma de organizar a pr\xF3xima sess\xE3o \xE9 escolher um tema e ler o coment\xE1rio de cada resposta.", "Na p\xE1gina de quest\xF5es, os filtros ajudam a escolher o tema e a prova da pr\xF3xima sess\xE3o.");
-var PREFERIR = [["etapa", "prova"], ["horario", "cidade"], ["servico", "flashcards"], ["resumos", "sequencia"], ["melhorArea", "areaFraca"], ["cronograma", "semana"], ["ranking", "aniversario"]];
+var primeirosPassos = (c) => [
+  c.um("Vi que voc\xEA ainda n\xE3o come\xE7ou as quest\xF5es por aqui. Que tal experimentar uma sess\xE3o?", "Voc\xEA ainda n\xE3o respondeu suas primeiras quest\xF5es no site. Queria te convidar a experimentar.", "Vi que sua primeira sess\xE3o ainda est\xE1 por come\xE7ar. Separei uma sugest\xE3o para voc\xEA experimentar o site."),
+  c.um("Escolha um assunto de que voc\xEA gosta e comece por algumas quest\xF5es. Acho que voc\xEA vai gostar de estudar pelos coment\xE1rios.", "Comece por um tema que voc\xEA quer aprender e leia as explica\xE7\xF5es depois de responder. \xC9 uma boa forma de conhecer o site.", "Experimente algumas quest\xF5es de um assunto do seu interesse. Os coment\xE1rios ajudam a entender o racioc\xEDnio e a revisar o tema."),
+  c.um("Vale ler tamb\xE9m por que as outras alternativas est\xE3o erradas; \xE9 uma parte importante do estudo.", "Depois de responder, confira o coment\xE1rio de cada alternativa e use a explica\xE7\xE3o para revisar suas d\xFAvidas.", "A ideia \xE9 aproveitar cada quest\xE3o para aprender, consultando a explica\xE7\xE3o depois da resposta."),
+  `Para come\xE7ar: ${c.link("treinar")}`,
+  ajuda(c)
+];
+var incentivo = (c) => c.um(
+  "Continue praticando e lendo os coment\xE1rios. Cada sess\xE3o \xE9 uma oportunidade de entender melhor os temas.",
+  "Continue se dedicando ao estudo. Escolha um tema por vez e use os coment\xE1rios para esclarecer as d\xFAvidas.",
+  "Siga fazendo as quest\xF5es e revisando as explica\xE7\xF5es. O importante \xE9 aproveitar cada resposta para aprender.",
+  "Continue estudando pelos coment\xE1rios e volte \xE0s quest\xF5es que trouxeram d\xFAvidas. Isso ajuda a ganhar seguran\xE7a no racioc\xEDnio.",
+  "Vamos continuar o estudo com algumas quest\xF5es de um tema e a leitura dos coment\xE1rios de cada alternativa."
+);
+function proximoPasso(c) {
+  const pct = c.pctBom;
+  if (pct === null) return [incentivo(c), c.obs(1, ["maisEstudada", "semana", "sequencia"])];
+  const meta = pct < 90 ? Math.min(90, (Math.floor(pct / 10) + 1) * 10) : pct < 95 ? 95 : null;
+  return [
+    c.um(
+      `Vi que sua taxa de acerto est\xE1 em ${pct}%.${meta ? ` Continue praticando para buscar os ${meta}%.` : " Parab\xE9ns pelo resultado! Continue variando os temas para manter o estudo completo."}`,
+      `Voc\xEA est\xE1 com ${pct}% de acerto nas quest\xF5es.${meta ? ` Vamos continuar o estudo e mirar os ${meta}%?` : " Parab\xE9ns! Agora vale revisar os detalhes e manter contato com as diferentes \xE1reas."}`,
+      `Sua taxa de acerto est\xE1 em ${pct}%.${meta ? ` Continue se dedicando para avan\xE7ar em dire\xE7\xE3o aos ${meta}%.` : " Parab\xE9ns pelo resultado! Siga revisando os temas para consolidar o que aprendeu."}`
+    ),
+    c.fato("melhorArea"),
+    c.fato("areaFraca"),
+    c.fato("ranking"),
+    // Só usa um complemento se faltarem temas/ranking; nunca preenche com cadastro.
+    c.obs(1, ["sequencia", "semana", "maisEstudada"])
+  ];
+}
 function estudo(tema, rota = "revisao", total = 6) {
   return Array.from({ length: total }, (_, i) => ({
-    id: `v${i + 21}`,
-    assuntos: (c) => [nm(c, [tema, "uma sugest\xE3o para sua pr\xF3xima sess\xE3o", "seu pr\xF3ximo tema de estudo", "revis\xE3o dos temas estudados", "para organizar o pr\xF3ximo treino", "uma op\xE7\xE3o para continuar"][i % 6])],
-    corpo: (c) => [
-      c.um("Separei uma sugest\xE3o para a sua pr\xF3xima sess\xE3o de estudo.", "Voc\xEA pode continuar o estudo pelos temas do seu hist\xF3rico.", "H\xE1 uma forma de revisar os pontos das sess\xF5es anteriores."),
-      c.tipo === "ativo" && c.chance(0.4) && c.pctBom !== null ? `Seu hist\xF3rico registra ${c.pctBom}% de acerto em ${Q(c.r)}.` : null,
-      c.obs(2, ["pausa", "sumiu", "comecou_parou", "assinante_parado_7"].includes(c.tipo) ? ["maisEstudada"] : c.um(...PREFERIR)),
+    id: `v${i + 31}`,
+    assuntos: (c) => [nm(c, [tema, "vamos continuar as quest\xF5es?", "uma sugest\xE3o para seu pr\xF3ximo treino", "para avan\xE7ar no seu estudo", "seus pr\xF3ximos temas de revis\xE3o", "vamos praticar mais um pouco?"][i % 6])],
+    corpo: (c) => c.r === 0 ? primeirosPassos(c) : [
+      c.um("Voc\xEA j\xE1 come\xE7ou a resolver as quest\xF5es. Tenho uma sugest\xE3o para o pr\xF3ximo treino.", "Vi que voc\xEA est\xE1 fazendo as quest\xF5es. Vamos continuar o estudo?", "Voc\xEA j\xE1 come\xE7ou a estudar por aqui. Queria te incentivar a continuar pelas quest\xF5es e pelos coment\xE1rios."),
+      ...proximoPasso(c),
       sugestao(c, rota),
-      `Para abrir: ${c.link(rota)}`,
+      `Para continuar: ${c.link(rota)}`,
       ajuda(c)
     ]
   }));
 }
 var nunca = () => Array.from({ length: 6 }, (_, i) => ({
-  id: `v${i + 21}`,
-  assuntos: (c) => [nm(c, ["por onde come\xE7ar", "sua primeira sess\xE3o", "para escolher um tema", "um ponto de partida", "como usar os coment\xE1rios", "as quest\xF5es por assunto"][i])],
-  corpo: (c) => [
-    c.um("Sua conta est\xE1 pronta para come\xE7ar a estudar.", "Voc\xEA j\xE1 pode escolher um assunto para sua primeira sess\xE3o.", "As quest\xF5es est\xE3o organizadas por assunto e por prova para voc\xEA come\xE7ar."),
-    sugestao(c, "treinar"),
-    c.um("Depois de responder, voc\xEA pode conferir o coment\xE1rio e a an\xE1lise das alternativas.", "Os coment\xE1rios explicam a resposta e os motivos das alternativas.", "A corre\xE7\xE3o fica dispon\xEDvel depois da resposta, com a explica\xE7\xE3o das alternativas."),
-    `Para escolher o primeiro tema: ${c.link("treinar")}`,
-    ajuda(c)
-  ]
+  id: `v${i + 31}`,
+  assuntos: (c) => [nm(c, ["vamos come\xE7ar as quest\xF5es?", "sua primeira sess\xE3o", "um tema para come\xE7ar", "experimente as quest\xF5es comentadas", "por onde come\xE7ar o estudo", "um convite para seu primeiro treino"][i])],
+  corpo: primeirosPassos
 }));
 var convite = () => Array.from({ length: 6 }, (_, i) => ({
   id: `v${i + 21}`,
   assuntos: (c) => [nm(c, ["op\xE7\xF5es para ampliar seu estudo", "sobre os planos de acesso", "recursos do plano completo", "para conhecer os planos", "assinatura do Orto Quest\xF5es", "op\xE7\xF5es de assinatura"][i])],
   corpo: (c) => [
     c.um("Queria apresentar as op\xE7\xF5es de assinatura do Orto Quest\xF5es.", "Voc\xEA pode conhecer os planos de acesso e os recursos inclu\xEDdos em cada um.", "A p\xE1gina de planos re\xFAne as op\xE7\xF5es para ampliar o acesso ao conte\xFAdo."),
-    c.obs(1),
+    c.obs(1, ["maisEstudada", "semana"]),
     ...c.beneficios(2, true),
     "Os planos t\xEAm garantia de sete dias. As condi\xE7\xF5es e os recursos inclu\xEDdos est\xE3o na p\xE1gina de assinatura.",
     `Para consultar os planos: ${c.link("assinatura")}`,
@@ -93,7 +116,7 @@ var provaVersoes = (tipo) => Array.from({ length: 6 }, (_, i) => ({
     c.um("Gostaria de saber quais temas apareceram e como foi o formato da prova.", "Voc\xEA pode contar quais assuntos foram cobrados e como as quest\xF5es foram apresentadas.", "Sua experi\xEAncia com o conte\xFAdo e o formato ajuda a orientar as pr\xF3ximas revis\xF5es do acervo."),
     "Se puder compartilhar alguma observa\xE7\xE3o sobre a prova, responda por aqui."
   ] : [
-    tipo === "vespera_prova" ? `A data informada para ${prova(c)} \xE9 amanh\xE3.` : `A prepara\xE7\xE3o para ${prova(c)} pode ser organizada pelas pr\xF3ximas sess\xF5es de revis\xE3o.`,
+    tipo === "vespera_prova" ? `Amanh\xE3 \xE9 ${prova(c)}.` : `Com ${prova(c)} se aproximando, vale retomar as quest\xF5es e as anota\xE7\xF5es que trouxeram d\xFAvidas.`,
     c.obs(1),
     c.um("Uma op\xE7\xE3o \xE9 revisar as quest\xF5es j\xE1 respondidas e as anota\xE7\xF5es que voc\xEA salvou.", "Os coment\xE1rios das quest\xF5es anteriores e suas anota\xE7\xF5es podem orientar a pr\xF3xima revis\xE3o.", "Voc\xEA pode selecionar os temas que quer revisar e consultar os coment\xE1rios de cada alternativa."),
     `Sua revis\xE3o fica aqui: ${c.link("revisao")}`,
@@ -397,7 +420,7 @@ var AREAS = {
   "pe-tornozelo": { em: "p\xE9 e tornozelo", de: "p\xE9 e tornozelo", sabor: ["P\xE9 e tornozelo tem muito ep\xF4nimo, e voc\xEA est\xE1 dominando.", "\xC1rea cheia de detalhe, boa de conhecer a fundo."] },
   "trauma": { em: "trauma", de: "trauma", sabor: ["Trauma \xE9 o feij\xE3o com arroz da prova, ent\xE3o isso sustenta a nota.", "Trauma bem estudado sustenta a nota."] },
   "pediatria": { em: "ortopedia pedi\xE1trica", de: "ortopedia pedi\xE1trica", sabor: ["Pedi\xE1trica tem muita classifica\xE7\xE3o, ent\xE3o isso tem muito valor.", "\xC1rea cheia de nome pr\xF3prio, boa de conhecer a fundo."] },
-  "tumores": { em: "tumores", de: "tumor", sabor: ["Tumor assusta muita gente, ent\xE3o isso \xE9 \xF3timo.", "Tumor \xE9 um tema que muita gente evita, e voc\xEA est\xE1 encarando."] },
+  "tumores": { em: "tumores", de: "tumores", sabor: ["Tumor assusta muita gente, ent\xE3o isso \xE9 \xF3timo.", "Tumor \xE9 um tema que muita gente evita, e voc\xEA est\xE1 encarando."] },
   "conceitos-basicos": { em: "conceitos b\xE1sicos", de: "conceitos b\xE1sicos", sabor: ["Base bem feita sustenta todo o resto."] },
   "osteometabolicas": { em: "doen\xE7as osteometab\xF3licas", de: "doen\xE7as osteometab\xF3licas", sabor: ["Tema pequeno, mas que a banca n\xE3o esquece."] }
 };
@@ -530,7 +553,7 @@ function fatosDe(p, hoje = /* @__PURE__ */ new Date()) {
   const areas = (p.areas ?? []).filter((a) => AREAS[a.slug] && a.total > 0 && a.certas >= 0 && a.certas <= a.total);
   const comAcerto = areas.filter((a) => a.total >= 15).map((a) => ({ ...a, pct: Math.round(100 * a.certas / a.total) }));
   const melhor = [...comAcerto].sort((a, b) => b.pct - a.pct || b.total - a.total)[0];
-  if (melhor && melhor.pct >= 70 && (geral === null || melhor.pct >= geral + 5)) f.melhorArea = { slug: melhor.slug, pct: melhor.pct, total: melhor.total };
+  if (melhor && melhor.pct >= 70) f.melhorArea = { slug: melhor.slug, pct: melhor.pct, total: melhor.total };
   const fraca = [...comAcerto].filter((a) => a.total >= 40).sort((a, b) => a.pct - b.pct || b.total - a.total)[0];
   if (fraca && geral !== null && fraca.pct < 60 && fraca.pct <= geral - 10 && fraca.slug !== f.melhorArea?.slug) f.areaFraca = { slug: fraca.slug, total: fraca.total };
   const total = areas.reduce((s, a) => s + a.total, 0);
@@ -601,49 +624,38 @@ function frasesDoFato(chave, f, mostrar) {
   switch (chave) {
     case "melhorArea": {
       const m = f.melhorArea, a = A(m.slug);
-      return mostrar ? [`Seu maior acerto por tema est\xE1 em ${a.em}, com ${m.pct}%.`, `Em ${a.em}, seu hist\xF3rico registra ${m.pct}% de acerto em ${questoes(m.total)}.`, `O tema com maior acerto no seu hist\xF3rico \xE9 ${a.de}, com ${m.pct}%.`] : [`${a.de.charAt(0).toUpperCase() + a.de.slice(1)} aparece entre os temas j\xE1 consolidados no seu hist\xF3rico.`, `Voc\xEA pode usar os resultados de ${a.de} para orientar a revis\xE3o dos pr\xF3ximos temas.`];
+      return mostrar ? [`Voc\xEA est\xE1 indo muito bem em ${a.em}. Parab\xE9ns! Continue revisando para manter esse resultado.`, `Sua melhor \xE1rea \xE9 ${a.de}. Parab\xE9ns pelo estudo nesse tema!`, `Vi que ${a.de} \xE9 seu ponto forte nas quest\xF5es. Continue praticando para consolidar esse resultado.`] : [`Voc\xEA j\xE1 vem praticando ${a.de}. Continue lendo os coment\xE1rios para aprofundar o tema.`, `Que tal aproveitar a pr\xF3xima sess\xE3o para continuar o estudo de ${a.de}?`];
     }
     case "maisEstudada": {
-      const m = f.maisEstudada, a = A(m.slug);
-      return [`O tema com mais quest\xF5es no seu hist\xF3rico \xE9 ${a.de}.`, `Seu hist\xF3rico re\xFAne ${questoes(m.total)} de ${a.de}.`, `O tema que voc\xEA mais estudou por aqui foi ${a.de}.`];
+      const a = A(f.maisEstudada.slug);
+      return [`Vi que voc\xEA vem praticando ${a.de}. Continue pelas quest\xF5es do tema e reveja as explica\xE7\xF5es que trouxeram d\xFAvidas.`, `Voc\xEA j\xE1 tem estudado ${a.de}. Que tal retomar algumas quest\xF5es desse tema na pr\xF3xima sess\xE3o?`, `Para continuar o que voc\xEA j\xE1 come\xE7ou em ${a.em}, vale reler os coment\xE1rios das quest\xF5es anteriores.`];
     }
     case "areaFraca": {
       const a = A(f.areaFraca.slug);
-      return [`Uma op\xE7\xE3o para a pr\xF3xima revis\xE3o \xE9 incluir quest\xF5es de ${a.de}.`, `Voc\xEA pode selecionar ${a.de} para uma sess\xE3o espec\xEDfica de revis\xE3o.`, `Os coment\xE1rios das quest\xF5es de ${a.de} podem orientar a pr\xF3xima sess\xE3o.`];
-    }
-    case "horario": {
-      const h = { noite: "\xE0 noite", madrugada: "de madrugada", manha: "pela manh\xE3", almoco: "no hor\xE1rio do almo\xE7o", tarde: "\xE0 tarde" }[f.horario];
-      return [`Suas sess\xF5es costumam acontecer ${h}.`, `Os registros mostram que voc\xEA costuma estudar ${h}.`];
-    }
-    case "prova": {
-      const p = { teot: "TEOT", taro: "TARO", mao: "cirurgia da m\xE3o", r4: "R4", atualizacao: "atualiza\xE7\xE3o profissional" }[f.prova];
-      return [`Seu perfil indica interesse em ${p}.`, `Voc\xEA informou ${p} entre seus objetivos de estudo.`];
-    }
-    case "etapa": {
-      const e = { r1: "R1", r2: "R2", r3: "R3", r4: "R4", mao: "resid\xEAncia de cirurgia da m\xE3o", estudante: "gradua\xE7\xE3o", ortopedista: "ortopedista" }[f.etapa];
-      return [`A etapa informada no seu perfil \xE9 ${e}.`, `Seu cadastro est\xE1 identificado com a etapa ${e}.`];
+      return [`Vale dar uma aten\xE7\xE3o extra ao estudo de ${a.de} na pr\xF3xima sess\xE3o. As quest\xF5es comentadas podem ajudar a esclarecer os pontos que ainda trazem d\xFAvidas.`, `Para equilibrar o estudo entre as \xE1reas, reserve tamb\xE9m uma sess\xE3o para ${a.de} e leia os coment\xE1rios das alternativas.`, `Minha sugest\xE3o para a pr\xF3xima revis\xE3o \xE9 resolver mais quest\xF5es de ${a.de}, retomando as explica\xE7\xF5es das quest\xF5es.`];
     }
     case "ranking":
-      return [`Sua posi\xE7\xE3o atual no ranking geral \xE9 ${f.ranking}\xAA.`, `Voc\xEA est\xE1 na ${f.ranking}\xAA posi\xE7\xE3o do ranking geral.`];
+      return [`Parab\xE9ns pela ${f.ranking}\xAA posi\xE7\xE3o no ranking geral! Continue praticando e variando os temas para ampliar seu dom\xEDnio das \xE1reas.`, `Voc\xEA est\xE1 na ${f.ranking}\xAA posi\xE7\xE3o do ranking geral. Parab\xE9ns! Siga fazendo as quest\xF5es e revisando os temas para continuar avan\xE7ando.`];
     case "sequencia":
-      return [`Sua sequ\xEAncia atual registra ${dias(f.sequencia)} de estudo.`, `O hist\xF3rico mostra ${dias(f.sequencia)} seguidos de estudo.`];
+      return [`Voc\xEA j\xE1 est\xE1 h\xE1 ${dias(f.sequencia)} seguidos estudando. Continue aproveitando cada sess\xE3o para revisar suas d\xFAvidas.`, `Parab\xE9ns pelos ${dias(f.sequencia)} seguidos de estudo! Siga combinando quest\xF5es e leitura dos coment\xE1rios.`];
     case "flashcards":
-      return [`Seu hist\xF3rico tamb\xE9m registra ${numero(f.flashcards)} flashcards.`, "Os Flashcards tamb\xE9m aparecem entre os recursos que voc\xEA j\xE1 utilizou."];
+      return ["Voc\xEA tamb\xE9m j\xE1 experimentou os Flashcards. Uma op\xE7\xE3o \xE9 us\xE1-los depois das quest\xF5es para revisar os conceitos do tema."];
     case "semana":
-      return [`Na \xFAltima semana, o hist\xF3rico registra ${questoes(f.semana)}.`, `Voc\xEA respondeu ${questoes(f.semana)} nos \xFAltimos sete dias.`];
+      return [`Voc\xEA respondeu ${questoes(f.semana)} nos \xFAltimos sete dias. Continue praticando e use os coment\xE1rios para revisar as d\xFAvidas.`, `Foram ${questoes(f.semana)} nesta semana. Que tal usar a pr\xF3xima sess\xE3o para retomar os pontos que trouxeram d\xFAvidas?`];
     case "resumos":
-      return f.resumos.titulo ? [`O resumo "${f.resumos.titulo}" est\xE1 entre as leituras do seu hist\xF3rico.`] : ["Seu hist\xF3rico inclui leituras na Biblioteca de resumos."];
+      return f.resumos.titulo ? [`Voc\xEA j\xE1 leu o resumo "${f.resumos.titulo}". Que tal praticar as quest\xF5es vinculadas para revisar esse conte\xFAdo?`] : ["Voc\xEA j\xE1 come\xE7ou a leitura dos resumos. As quest\xF5es vinculadas ao texto ajudam a praticar o conte\xFAdo depois de cada se\xE7\xE3o."];
     case "cronograma":
-      return [`Seu cronograma registra ${dias(f.cronograma.dias)} at\xE9 ${f.cronograma.prova || "a prova informada"}.`];
+      return [`Faltam ${dias(f.cronograma.dias)} para ${f.cronograma.prova || "a sua prova"}. Use as pr\xF3ximas sess\xF5es para revisar as d\xFAvidas e consultar seus coment\xE1rios salvos.`];
+    case "horario":
+    case "prova":
+    case "etapa":
     case "servico":
-      return [`Seu cadastro informa o servi\xE7o ${f.servico.nome}.`];
     case "cidade":
-      return [`A cidade informada no seu cadastro \xE9 ${f.cidade}.`];
     case "aniversario":
-      return ["A data de anivers\xE1rio informada no seu perfil \xE9 hoje."];
+      return [];
   }
 }
-var ORDEM_FATOS = ["aniversario", "cronograma", "melhorArea", "ranking", "resumos", "servico", "maisEstudada", "horario", "prova", "sequencia", "semana", "etapa", "cidade", "flashcards", "areaFraca"];
+var ORDEM_FATOS = ["melhorArea", "areaFraca", "ranking", "maisEstudada", "sequencia", "semana", "resumos", "cronograma", "flashcards"];
 var MAXIMO_OBS = 3;
 var TEMPO = ["Voc\xEA pode dividir o estudo em sess\xF5es por tema.", "O hist\xF3rico permite continuar a sess\xE3o de onde voc\xEA parou.", "Uma sess\xE3o curta pode ser dedicada a um tema e aos coment\xE1rios das alternativas."];
 var DICAS = {
@@ -690,17 +702,15 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado2) {
     const validas = opcoes.filter((o) => o !== null && o !== void 0 && o !== false && o !== "");
     return validas[Math.floor(rnd() * validas.length)];
   };
-  const mostrarAcerto = () => pctBomValor !== null && !usados.has("areaFraca");
+  const mostrarAcerto = () => pctBomValor !== null;
   const nObs = () => [...usados].filter((u) => u !== "acerto").length;
   const fato = (chave) => {
-    if (fatos[chave] === void 0 || usados.has(chave) || nObs() >= MAXIMO_OBS) return null;
+    if (!ORDEM_FATOS.includes(chave) || fatos[chave] === void 0 || usados.has(chave) || nObs() >= MAXIMO_OBS) return null;
     if ((chave === "maisEstudada" && usados.has("melhorArea") || chave === "melhorArea" && usados.has("maisEstudada")) && fatos.melhorArea?.slug === fatos.maisEstudada?.slug) return null;
-    if (chave === "areaFraca" && usados.has("acerto")) return null;
     const comNumero = mostrarAcerto();
     const frases = frasesDoFato(chave, fatos, comNumero);
     if (!frases.length) return null;
     usados.add(chave);
-    if (chave === "melhorArea" && comNumero) usados.add("acerto");
     return frases[Math.floor(rnd() * frases.length)];
   };
   const teot = fatos.prova === "teot" || !fatos.prova && (fatos.etapa === "r3" || fatos.etapa === "r4");
@@ -744,7 +754,7 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado2) {
     fato,
     obs: (k = 1, preferir = []) => {
       const limite = Math.min(MAXIMO_OBS, Math.max(1, k));
-      const ordem = [...preferir, ...ORDEM_FATOS.filter((c) => !preferir.includes(c))].filter((c) => fatos[c] !== void 0 && !usados.has(c));
+      const ordem = [...preferir, ...ORDEM_FATOS.filter((c) => !preferir.includes(c))].filter((c) => ORDEM_FATOS.includes(c) && fatos[c] !== void 0 && !usados.has(c));
       const escolhidos = [];
       for (const c of ordem) {
         if (escolhidos.length >= limite) break;
@@ -792,6 +802,11 @@ function contarLinhas(corpo) {
 }
 function contarPS(corpo) {
   return (corpo.match(/(^|\n)\s*P\.S\.:/g) ?? []).length;
+}
+function problemaDeTomCarta(texto) {
+  if (/seu cadastro|etapa informada|seu perfil indica|cidade informada|data de aniversário informada|você informou[^.\n]*objetivos de estudo|cadastro está identificado|P\.S\.:|lembrete amigo/i.test(texto))
+    return "Atualize a pr\xE9via: esta mensagem usa um modelo de texto antigo.";
+  return null;
 }
 function problemaNoTexto(texto) {
   if (/\bundefined\b|\bnull\b|\bNaN\b|\[object/i.test(texto)) return "valor vazio no texto";
@@ -1620,6 +1635,11 @@ async function processar() {
     const m = item.mensagem;
     let reservado = false, aceito = false;
     try {
+      const textoAntigo = problemaDeTomCarta(m.assunto + "\n" + m.corpo);
+      if (textoAntigo) {
+        await gravar(`email_fila?id=eq.${item.id}`, { status: "adiado", motivo: textoAntigo, atualizado_em: (/* @__PURE__ */ new Date()).toISOString() });
+        continue;
+      }
       if (!await aindaPertinente(m)) {
         await gravar(`email_fila?id=eq.${item.id}`, {
           status: "adiado",
@@ -1708,6 +1728,8 @@ Deno.serve(async (req) => {
         if (!m || vistos.has(m.id_usuario))
           return json({ erro: "A sele\xE7\xE3o mudou. Atualize a rodada antes de enviar." }, 409, req);
         const assunto = i.assunto?.trim() ?? m.assunto, corpo = i.corpo?.trim() ?? m.corpo;
+        const textoAntigo = problemaDeTomCarta(assunto + "\n" + corpo);
+        if (textoAntigo) return json({ erro: textoAntigo }, 409, req);
         if (!assunto || assunto.length > 120 || !corpo || corpo.length > 6e3 || problemaGrave(assunto + "\n" + corpo))
           return json({ erro: "texto_invalido" }, 400, req);
         vistos.add(m.id_usuario);

@@ -2,7 +2,7 @@ import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
 import { CAMPANHAS_DIARIAS, MARCOS, automaticoBloqueado, ehCampanhaDiaria, ehTransacional, emailAutomatico, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, marcoComCarta, tipoAutomaticoValido, type CampanhaLembrete, type DadosRelatorio, type Marco, type TipoAutomatico, type TipoCampanhaDiaria } from '../_shared/modelo-email.ts'
 import { permiteEnvio, preferenciasDaLinha, type CategoriaEmail } from '../_shared/preferencias.ts'
-import { perfilDosDados, problemaGrave, renderizarCarta, type DadosCampanha, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
+import { perfilDosDados, problemaGrave, problemaDeTomCarta, renderizarCarta, type DadosCampanha, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -731,6 +731,8 @@ Deno.serve(async (req) => {
       const assunto = typeof corpo.assunto === 'string' ? corpo.assunto.trim() : ''
       const texto = typeof corpo.corpo === 'string' ? corpo.corpo.trim() : ''
       if (!assunto || assunto.length > 120 || !texto || texto.length > 6000) return json({ erro: 'carta_invalida' }, 400, req)
+      const textoAntigo = problemaDeTomCarta(`${assunto}\n${texto}`)
+      if (textoAntigo) return json({ erro: textoAntigo }, 409, req)
       const grave = problemaGrave(`${assunto}\n${texto}`)
       if (grave) return json({ erro: `carta_com_problema: ${grave}` }, 400, req)
       const modelo = typeof corpo.modelo === 'string' && /^[a-z0-9_:-]{1,60}$/.test(corpo.modelo) ? corpo.modelo : null

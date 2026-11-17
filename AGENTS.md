@@ -212,3 +212,12 @@ comemoração com a medalha real, apresentação compacta no celular e limites c
 família existente entram automaticamente; nova família exige perfil, arte e testes. Não reativar as visitas
 aleatórias de `Encontros`. Preservar catálogo e medalhas ganhas. Conferir a galeria `#/dev/conquistas` e rodar
 `fixtures/testar_avisos_conquistas.mjs` (incluído no `npm test`) antes de publicar.
+
+## E-mails focados no estudo (Tales, 17/11/2026)
+
+Não recitar cadastro: serviço/hospital, cidade, R1–R3/ortopedista, objetivos declarados e horário
+não preenchem e-mails. O texto incentiva começar/continuar as questões. Abaixo de 50% ou sem
+amostra, não expor taxa; com bom acerto, reconhecer o resultado e sugerir a próxima faixa,
+elogiar a melhor área, recomendar atenção ao tema a revisar e parabenizar ranking real.
+Taxa positiva e tema a revisar podem coexistir, sem mostrar nota ruim nem falar “pior área”.
+Esta instrução substitui a antiga proibição de combinar acerto e área a melhorar. TOM.md detalha.

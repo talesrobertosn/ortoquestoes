@@ -17,8 +17,8 @@
  * Regras (docs/emails/TOM.md e docs/emails/PLANO.md):
  *  - Regra dos 10: nenhum número de questões abaixo de 10 em texto nenhum (abaixo
  *    disso, "os primeiros passos"). `Ctx.q` e `Ctx.dez` cuidam disso.
- *  - Acerto só com 30 questões e 50% ou mais (`Ctx.pctBom`), e nunca na mesma
- *    carta em que a área a melhorar é citada.
+ *  - Acerto só com 30 questões e 50% ou mais (`Ctx.pctBom`) na
+ *    mensagem. Pode acompanhar uma sugestão de tema a revisar, sem nota ruim.
  *  - Área a melhorar só com 40 questões na área, como oportunidade, sem número.
  *  - Até 3 observações pessoais por carta (`Ctx.obs`).
  *  - Cadência: nenhuma carta não transacional quando a pessoa recebeu qualquer
@@ -290,7 +290,7 @@ export const AREAS: Record<string, { em: string; de: string; sabor: string[] }> 
   'pe-tornozelo': { em: 'pé e tornozelo', de: 'pé e tornozelo', sabor: ['Pé e tornozelo tem muito epônimo, e você está dominando.', 'Área cheia de detalhe, boa de conhecer a fundo.'] },
   'trauma': { em: 'trauma', de: 'trauma', sabor: ['Trauma é o feijão com arroz da prova, então isso sustenta a nota.', 'Trauma bem estudado sustenta a nota.'] },
   'pediatria': { em: 'ortopedia pediátrica', de: 'ortopedia pediátrica', sabor: ['Pediátrica tem muita classificação, então isso tem muito valor.', 'Área cheia de nome próprio, boa de conhecer a fundo.'] },
-  'tumores': { em: 'tumores', de: 'tumor', sabor: ['Tumor assusta muita gente, então isso é ótimo.', 'Tumor é um tema que muita gente evita, e você está encarando.'] },
+  'tumores': { em: 'tumores', de: 'tumores', sabor: ['Tumor assusta muita gente, então isso é ótimo.', 'Tumor é um tema que muita gente evita, e você está encarando.'] },
   'conceitos-basicos': { em: 'conceitos básicos', de: 'conceitos básicos', sabor: ['Base bem feita sustenta todo o resto.'] },
   'osteometabolicas': { em: 'doenças osteometabólicas', de: 'doenças osteometabólicas', sabor: ['Tema pequeno, mas que a banca não esquece.'] },
 }
@@ -494,7 +494,7 @@ export function fatosDe(p: PerfilCarta, hoje = new Date()): Fatos {
   const areas = (p.areas ?? []).filter((a) => AREAS[a.slug] && a.total > 0 && a.certas >= 0 && a.certas <= a.total)
   const comAcerto = areas.filter((a) => a.total >= 15).map((a) => ({ ...a, pct: Math.round((100 * a.certas) / a.total) }))
   const melhor = [...comAcerto].sort((a, b) => b.pct - a.pct || b.total - a.total)[0]
-  if (melhor && melhor.pct >= 70 && (geral === null || melhor.pct >= geral + 5)) f.melhorArea = { slug: melhor.slug, pct: melhor.pct, total: melhor.total }
+  if (melhor && melhor.pct >= 70) f.melhorArea = { slug: melhor.slug, pct: melhor.pct, total: melhor.total }
   // Área a melhorar: só com 40 questões na área e distância clara do geral; nunca leva número.
   const fraca = [...comAcerto].filter((a) => a.total >= 40).sort((a, b) => a.pct - b.pct || b.total - a.total)[0]
   if (fraca && geral !== null && fraca.pct < 60 && fraca.pct <= geral - 10 && fraca.slug !== f.melhorArea?.slug) f.areaFraca = { slug: fraca.slug, total: fraca.total }
@@ -574,7 +574,7 @@ export interface Ctx {
   q: string
   /** Acerto citável ou null (uso interno: faixa). As versões usam `pctBom`. */
   pct: number | null
-  /** O acerto só quando é motivo de orgulho (50% ou mais, 30 questões); null abaixo disso e quando a área a melhorar já entrou na carta. */
+  /** O acerto só quando é motivo de orgulho (50% ou mais, 30 questões); null abaixo disso. Pode acompanhar sugestões de temas a revisar. */
   readonly pctBom: number | null
   fatos: Fatos
   hoje: Date
@@ -629,28 +629,26 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
   const A = (slug: string) => AREAS[slug]
   switch (chave) {
     case 'melhorArea': { const m=f.melhorArea!, a=A(m.slug); return mostrar
-      ? [`Seu maior acerto por tema está em ${a.em}, com ${m.pct}%.`, `Em ${a.em}, seu histórico registra ${m.pct}% de acerto em ${questoes(m.total)}.`, `O tema com maior acerto no seu histórico é ${a.de}, com ${m.pct}%.`]
-      : [`${a.de.charAt(0).toUpperCase()+a.de.slice(1)} aparece entre os temas já consolidados no seu histórico.`, `Você pode usar os resultados de ${a.de} para orientar a revisão dos próximos temas.`] }
-    case 'maisEstudada': { const m=f.maisEstudada!,a=A(m.slug);return [`O tema com mais questões no seu histórico é ${a.de}.`, `Seu histórico reúne ${questoes(m.total)} de ${a.de}.`, `O tema que você mais estudou por aqui foi ${a.de}.`] }
-    case 'areaFraca': { const a=A(f.areaFraca!.slug);return [`Uma opção para a próxima revisão é incluir questões de ${a.de}.`, `Você pode selecionar ${a.de} para uma sessão específica de revisão.`, `Os comentários das questões de ${a.de} podem orientar a próxima sessão.`] }
-    case 'horario': { const h={noite:'à noite',madrugada:'de madrugada',manha:'pela manhã',almoco:'no horário do almoço',tarde:'à tarde'}[f.horario!];return [`Suas sessões costumam acontecer ${h}.`, `Os registros mostram que você costuma estudar ${h}.`] }
-    case 'prova': { const p={teot:'TEOT',taro:'TARO',mao:'cirurgia da mão',r4:'R4',atualizacao:'atualização profissional'}[f.prova!];return [`Seu perfil indica interesse em ${p}.`, `Você informou ${p} entre seus objetivos de estudo.`] }
-    case 'etapa': { const e={r1:'R1',r2:'R2',r3:'R3',r4:'R4',mao:'residência de cirurgia da mão',estudante:'graduação',ortopedista:'ortopedista'}[f.etapa!];return [`A etapa informada no seu perfil é ${e}.`, `Seu cadastro está identificado com a etapa ${e}.`] }
-    case 'ranking':return [`Sua posição atual no ranking geral é ${f.ranking}ª.`, `Você está na ${f.ranking}ª posição do ranking geral.`]
-    case 'sequencia':return [`Sua sequência atual registra ${dias(f.sequencia!)} de estudo.`, `O histórico mostra ${dias(f.sequencia!)} seguidos de estudo.`]
-    case 'flashcards':return [`Seu histórico também registra ${numero(f.flashcards!)} flashcards.`, 'Os Flashcards também aparecem entre os recursos que você já utilizou.']
-    case 'semana':return [`Na última semana, o histórico registra ${questoes(f.semana!)}.`, `Você respondeu ${questoes(f.semana!)} nos últimos sete dias.`]
-    case 'resumos':return f.resumos!.titulo?[`O resumo "${f.resumos!.titulo}" está entre as leituras do seu histórico.`]:['Seu histórico inclui leituras na Biblioteca de resumos.']
-    case 'cronograma':return [`Seu cronograma registra ${dias(f.cronograma!.dias)} até ${f.cronograma!.prova || 'a prova informada'}.`]
-    case 'servico':return [`Seu cadastro informa o serviço ${f.servico!.nome}.`]
-    case 'cidade':return [`A cidade informada no seu cadastro é ${f.cidade}.`]
-    case 'aniversario':return ['A data de aniversário informada no seu perfil é hoje.']
+      ? [`Você está indo muito bem em ${a.em}. Parabéns! Continue revisando para manter esse resultado.`, `Sua melhor área é ${a.de}. Parabéns pelo estudo nesse tema!`, `Vi que ${a.de} é seu ponto forte nas questões. Continue praticando para consolidar esse resultado.`]
+      : [`Você já vem praticando ${a.de}. Continue lendo os comentários para aprofundar o tema.`, `Que tal aproveitar a próxima sessão para continuar o estudo de ${a.de}?`] }
+    case 'maisEstudada': { const a=A(f.maisEstudada!.slug);return [`Vi que você vem praticando ${a.de}. Continue pelas questões do tema e reveja as explicações que trouxeram dúvidas.`, `Você já tem estudado ${a.de}. Que tal retomar algumas questões desse tema na próxima sessão?`, `Para continuar o que você já começou em ${a.em}, vale reler os comentários das questões anteriores.`] }
+    case 'areaFraca': { const a=A(f.areaFraca!.slug);return [`Vale dar uma atenção extra ao estudo de ${a.de} na próxima sessão. As questões comentadas podem ajudar a esclarecer os pontos que ainda trazem dúvidas.`, `Para equilibrar o estudo entre as áreas, reserve também uma sessão para ${a.de} e leia os comentários das alternativas.`, `Minha sugestão para a próxima revisão é resolver mais questões de ${a.de}, retomando as explicações das questões.`] }
+    case 'ranking':return [`Parabéns pela ${f.ranking}ª posição no ranking geral! Continue praticando e variando os temas para ampliar seu domínio das áreas.`, `Você está na ${f.ranking}ª posição do ranking geral. Parabéns! Siga fazendo as questões e revisando os temas para continuar avançando.`]
+    case 'sequencia':return [`Você já está há ${dias(f.sequencia!)} seguidos estudando. Continue aproveitando cada sessão para revisar suas dúvidas.`, `Parabéns pelos ${dias(f.sequencia!)} seguidos de estudo! Siga combinando questões e leitura dos comentários.`]
+    case 'flashcards':return ['Você também já experimentou os Flashcards. Uma opção é usá-los depois das questões para revisar os conceitos do tema.']
+    case 'semana':return [`Você respondeu ${questoes(f.semana!)} nos últimos sete dias. Continue praticando e use os comentários para revisar as dúvidas.`, `Foram ${questoes(f.semana!)} nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?`]
+    case 'resumos':return f.resumos!.titulo?[`Você já leu o resumo "${f.resumos!.titulo}". Que tal praticar as questões vinculadas para revisar esse conteúdo?`]:['Você já começou a leitura dos resumos. As questões vinculadas ao texto ajudam a praticar o conteúdo depois de cada seção.']
+    case 'cronograma':return [`Faltam ${dias(f.cronograma!.dias)} para ${f.cronograma!.prova || 'a sua prova'}. Use as próximas sessões para revisar as dúvidas e consultar seus comentários salvos.`]
+    // Dados de cadastro continuam úteis para filtros e seleção de campanha, mas
+    // não são assunto de e-mail nem podem reaparecer via obs/fato.
+    case 'horario': case 'prova': case 'etapa': case 'servico': case 'cidade': case 'aniversario': return []
+
   }
 }
 
 
 /** Ordem padrão de interesse dos fatos (o que mais faz a pessoa sentir que foi vista primeiro). */
-const ORDEM_FATOS: Array<keyof Fatos> = ['aniversario', 'cronograma', 'melhorArea', 'ranking', 'resumos', 'servico', 'maisEstudada', 'horario', 'prova', 'sequencia', 'semana', 'etapa', 'cidade', 'flashcards', 'areaFraca']
+const ORDEM_FATOS: Array<keyof Fatos> = ['melhorArea', 'areaFraca', 'ranking', 'maisEstudada', 'sequencia', 'semana', 'resumos', 'cronograma', 'flashcards']
 /** No máximo três observações por carta (PLANO.md): a partir da quarta, vira vigilância. */
 const MAXIMO_OBS = 3
 
@@ -741,20 +739,18 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
     const validas = opcoes.filter((o): o is T => o !== null && o !== undefined && o !== false && o !== '')
     return validas[Math.floor(rnd() * validas.length)]
   }
-  const mostrarAcerto = () => pctBomValor !== null && !usados.has('areaFraca')
+  const mostrarAcerto = () => pctBomValor !== null
   /** Observações pessoais já usadas (o acerto não conta como observação). */
   const nObs = () => [...usados].filter((u) => u !== 'acerto').length
   const fato = (chave: keyof Fatos): string | null => {
-    if (fatos[chave] === undefined || usados.has(chave) || nObs() >= MAXIMO_OBS) return null
+    if (!ORDEM_FATOS.includes(chave) || fatos[chave] === undefined || usados.has(chave) || nObs() >= MAXIMO_OBS) return null
     // Melhor área e área mais estudada no mesmo tema soariam repetidas: fica só uma.
     if ((chave === 'maisEstudada' && usados.has('melhorArea') || chave === 'melhorArea' && usados.has('maisEstudada')) && fatos.melhorArea?.slug === fatos.maisEstudada?.slug) return null
-    // Acerto e área a melhorar nunca na mesma carta.
-    if (chave === 'areaFraca' && usados.has('acerto')) return null
+    // Acerto positivo e tema a revisar podem coexistir (Tales, 17/11/2026).
     const comNumero = mostrarAcerto()
     const frases = frasesDoFato(chave, fatos, comNumero)
     if (!frases.length) return null
     usados.add(chave)
-    if (chave === 'melhorArea' && comNumero) usados.add('acerto')
     return frases[Math.floor(rnd() * frases.length)]
   }
   const teot = fatos.prova === 'teot' || (!fatos.prova && (fatos.etapa === 'r3' || fatos.etapa === 'r4'))
@@ -775,7 +771,7 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
     obs: (k = 1, preferir = []) => {
       const limite = Math.min(MAXIMO_OBS, Math.max(1, k))
       const ordem = [...preferir, ...ORDEM_FATOS.filter((c) => !preferir.includes(c))]
-        .filter((c) => fatos[c] !== undefined && !usados.has(c))
+        .filter((c) => ORDEM_FATOS.includes(c) && fatos[c] !== undefined && !usados.has(c))
       // Um pouco de sorte na ordem, mas os preferidos e os mais pessoais vêm na frente.
       const escolhidos: Array<keyof Fatos> = []
       for (const c of ordem) { if (escolhidos.length >= limite) break; if (rnd() < 0.8 || ordem.length - ordem.indexOf(c) <= limite - escolhidos.length) escolhidos.push(c) }
@@ -838,6 +834,13 @@ export function contarPS(corpo: string): number {
 }
 
 /** Confere o texto final: nada de buraco nem número zerado nem número pequeno de questões. Devolve o problema ou null. */
+/** Bloqueia prévias antigas na fila ou numa aba do painel anterior à correção. */
+export function problemaDeTomCarta(texto: string): string | null {
+  if (/seu cadastro|etapa informada|seu perfil indica|cidade informada|data de aniversário informada|você informou[^.\n]*objetivos de estudo|cadastro está identificado|P\.S\.:|lembrete amigo/i.test(texto))
+    return 'Atualize a prévia: esta mensagem usa um modelo de texto antigo.'
+  return null
+}
+
 export function problemaNoTexto(texto: string): string | null {
   if (/\bundefined\b|\bnull\b|\bNaN\b|\[object/i.test(texto)) return 'valor vazio no texto'
   if (/(^|[^\d.,])0 (questões|questão|dias|dia)\b/.test(texto)) return 'número zerado'

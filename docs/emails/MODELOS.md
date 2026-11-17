@@ -9,50 +9,50 @@ Todas as cartas saem só em texto, com linguagem clara e cordial (docs/emails/TO
 
 | Situação | Versões completas | Variedade medida |
 |---|---|---|
-| Estudando, faixa até 10% | 6 | 209 textos e 6 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 10 a 20% | 6 | 343 textos e 6 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 20 a 30% | 6 | 320 textos e 6 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 30 a 40% | 6 | 357 textos e 6 assuntos diferentes em 400 sorteios |
-| Estudando, faixa na média (40 a 60%) | 6 | 394 textos e 6 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 60 a 70% | 6 | 377 textos e 6 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 70 a 80% | 6 | 389 textos e 6 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 80 a 90% | 6 | 384 textos e 6 assuntos diferentes em 400 sorteios |
-| Estudando, faixa 90% ou mais | 6 | 386 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa até 10% | 6 | 295 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 10 a 20% | 6 | 350 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 20 a 30% | 6 | 350 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 30 a 40% | 6 | 369 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa na média (40 a 60%) | 6 | 339 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 60 a 70% | 6 | 380 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 70 a 80% | 6 | 385 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 80 a 90% | 6 | 372 textos e 6 assuntos diferentes em 400 sorteios |
+| Estudando, faixa 90% ou mais | 6 | 321 textos e 6 assuntos diferentes em 400 sorteios |
 | Criou a conta e não começou | 6 | 257 textos e 6 assuntos diferentes em 400 sorteios |
-| Boas-vindas | 6 | 379 textos e 6 assuntos diferentes em 400 sorteios |
-| Começando | 6 | 379 textos e 6 assuntos diferentes em 400 sorteios |
-| Começou e parou | 6 | 328 textos e 6 assuntos diferentes em 400 sorteios |
-| Revisão após 3 a 6 dias | 6 | 330 textos e 6 assuntos diferentes em 400 sorteios |
-| Sem estudar há vários dias | 6 | 330 textos e 6 assuntos diferentes em 400 sorteios |
+| Boas-vindas | 6 | 369 textos e 6 assuntos diferentes em 400 sorteios |
+| Começando | 6 | 369 textos e 6 assuntos diferentes em 400 sorteios |
+| Começou e parou | 6 | 369 textos e 6 assuntos diferentes em 400 sorteios |
+| Revisão após 3 a 6 dias | 6 | 384 textos e 6 assuntos diferentes em 400 sorteios |
+| Sem estudar há vários dias | 6 | 384 textos e 6 assuntos diferentes em 400 sorteios |
 | Obrigado pela assinatura | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
-| Convite para assinar (mais de 20 questões) | 6 | 181 textos e 6 assuntos diferentes em 400 sorteios |
-| Convite pessoal (mais de 50 questões) | 6 | 181 textos e 6 assuntos diferentes em 400 sorteios |
-| Reta final | 6 | 113 textos e 6 assuntos diferentes em 400 sorteios |
-| Marco de questões (100, 250, 500, 1.000, 2.000) | 6 | 113 textos e 6 assuntos diferentes em 400 sorteios |
+| Convite para assinar (mais de 20 questões) | 6 | 257 textos e 6 assuntos diferentes em 400 sorteios |
+| Convite pessoal (mais de 50 questões) | 6 | 257 textos e 6 assuntos diferentes em 400 sorteios |
+| Reta final | 6 | 185 textos e 6 assuntos diferentes em 400 sorteios |
+| Marco de questões (100, 250, 500, 1.000, 2.000) | 6 | 164 textos e 6 assuntos diferentes em 400 sorteios |
 | Pedir opinião | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 | Pedir para indicar | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
-| Apresentar o cronograma | 5 | 113 textos e 5 assuntos diferentes em 400 sorteios |
+| Apresentar o cronograma | 5 | 185 textos e 5 assuntos diferentes em 400 sorteios |
 | Ajuda com o cartão | 5 | 127 textos e 5 assuntos diferentes em 400 sorteios |
 | Pix: faltam 3 dias | 5 | 257 textos e 5 assuntos diferentes em 400 sorteios |
 | Pix: termina hoje | 5 | 257 textos e 5 assuntos diferentes em 400 sorteios |
 | Resumo de estudo | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 | Boas-vindas no dia da confirmação | 1 | 15 textos e 1 assuntos diferentes em 400 sorteios |
-| Primeiras 10 questões | 6 | 105 textos e 6 assuntos diferentes em 400 sorteios |
-| Retomada do estudo | 6 | 382 textos e 6 assuntos diferentes em 400 sorteios |
-| Cronograma pronto | 5 | 113 textos e 5 assuntos diferentes em 400 sorteios |
+| Primeiras 10 questões | 6 | 156 textos e 6 assuntos diferentes em 400 sorteios |
+| Retomada do estudo | 6 | 384 textos e 6 assuntos diferentes em 400 sorteios |
+| Cronograma pronto | 5 | 185 textos e 5 assuntos diferentes em 400 sorteios |
 | Obrigado pela assinatura | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 | Obrigado pelo tempo de assinatura | 5 | 15 textos e 5 assuntos diferentes em 400 sorteios |
-| Assinou e não montou o cronograma | 5 | 113 textos e 5 assuntos diferentes em 400 sorteios |
-| Assinante parado há 7 dias | 6 | 330 textos e 6 assuntos diferentes em 400 sorteios |
+| Assinou e não montou o cronograma | 5 | 185 textos e 5 assuntos diferentes em 400 sorteios |
+| Assinante parado há 7 dias | 6 | 384 textos e 6 assuntos diferentes em 400 sorteios |
 | Resultado do Simulado Nacional | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
-| Véspera da prova | 6 | 113 textos e 6 assuntos diferentes em 400 sorteios |
+| Véspera da prova | 6 | 185 textos e 6 assuntos diferentes em 400 sorteios |
 | Depois da prova: como foi? | 6 | 15 textos e 6 assuntos diferentes em 400 sorteios |
 | Aniversário | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 | Um ano de Orto Questões | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 | Sua indicação deu certo | 5 | 15 textos e 5 assuntos diferentes em 400 sorteios |
 | Saiu um resumo do seu tema | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
-| Acesso encerrado | 6 | 382 textos e 6 assuntos diferentes em 400 sorteios |
-| Como estão os estudos? (risco de parar) | 6 | 382 textos e 6 assuntos diferentes em 400 sorteios |
+| Acesso encerrado | 6 | 384 textos e 6 assuntos diferentes em 400 sorteios |
+| Como estão os estudos? (risco de parar) | 6 | 384 textos e 6 assuntos diferentes em 400 sorteios |
 | Lembrete do Simulado Nacional | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 
 ## Uma carta para cada faixa de acerto
@@ -63,21 +63,21 @@ Pessoas assinantes que já receberam o agradecimento (por isso a carta é a da f
 
 48 questões, 6% de acerto.
 
-**Assunto:** Caio, revisão dos temas estudados
-*Versão ativo:0-10#v24 · personalizada com: etapa*
+**Assunto:** Caio, para avançar no seu estudo
+*Versão ativo:0-10#v34*
 
 ```text
-Caio, tudo bem por aí?
+Olá, Caio, tudo bem?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-Seu cadastro está identificado com a etapa R1.
+Continue estudando pelos comentários e volte às questões que trouxeram dúvidas. Isso ajuda a ganhar segurança no raciocínio.
 
-Você pode escolher um tema e resolver algumas questões, consultando o comentário das alternativas.
+Uma forma de organizar a próxima sessão é escolher um tema e ler o comentário de cada resposta.
 
-Para abrir: ortoquestoes.com.br/#/treinar
+Para continuar: ortoquestoes.com.br/#/treinar
 
-Pode responder por aqui se encontrar alguma dificuldade no site.
+Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
 
 Um abraço,
 Tales, do Orto Questões
@@ -87,21 +87,23 @@ Tales, do Orto Questões
 
 290 questões, 16% de acerto.
 
-**Assunto:** Lívia, revisão dos temas estudados
-*Versão ativo:10-20#v24 · personalizada com: prova de interesse, ritmo da semana*
+**Assunto:** Lívia, para avançar no seu estudo
+*Versão ativo:10-20#v34 · personalizada com: ritmo da semana*
 
 ```text
-Oi, Lívia, espero que esteja tudo bem por aí.
+Olá, Lívia, tudo bem?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-Você informou TARO entre seus objetivos de estudo. Você respondeu 35 questões nos últimos sete dias.
+Continue estudando pelos comentários e volte às questões que trouxeram dúvidas. Isso ajuda a ganhar segurança no raciocínio.
+
+Foram 35 questões nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?
 
 Uma forma de organizar a próxima sessão é escolher um tema e ler o comentário de cada resposta.
 
-Para abrir: ortoquestoes.com.br/#/treinar
+Para continuar: ortoquestoes.com.br/#/treinar
 
-Pode responder por aqui se encontrar alguma dificuldade no site.
+Se precisar de ajuda com o site, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -111,21 +113,23 @@ Tales, do Orto Questões
 
 290 questões, 26% de acerto.
 
-**Assunto:** Diego, revisão dos temas estudados
-*Versão ativo:20-30#v24 · personalizada com: horário de estudo, ritmo da semana*
+**Assunto:** Diego, para avançar no seu estudo
+*Versão ativo:20-30#v34 · personalizada com: ritmo da semana*
 
 ```text
 Olá, Diego, tudo bem?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-Suas sessões costumam acontecer de madrugada. Você respondeu 35 questões nos últimos sete dias.
+Continue estudando pelos comentários e volte às questões que trouxeram dúvidas. Isso ajuda a ganhar segurança no raciocínio.
+
+Foram 35 questões nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?
 
 Uma sessão no Caderno de erros permite revisar os pontos das questões anteriores.
 
-Para abrir: ortoquestoes.com.br/#/erros
+Para continuar: ortoquestoes.com.br/#/erros
 
-Pode responder por aqui se encontrar alguma dificuldade no site.
+Se precisar de ajuda com o site, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -135,21 +139,23 @@ Tales, do Orto Questões
 
 290 questões, 36% de acerto.
 
-**Assunto:** Marina, revisão dos temas estudados
-*Versão ativo:30-40#v24 · personalizada com: resumos lidos, área mais estudada*
+**Assunto:** Marina, para avançar no seu estudo
+*Versão ativo:30-40#v34 · personalizada com: área mais estudada*
 
 ```text
-Oi, Marina, espero que esteja tudo bem por aí.
+Olá, Marina, tudo bem?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-O resumo "Fraturas do fêmur na criança" está entre as leituras do seu histórico. Seu histórico reúne 80 questões de trauma.
+Continue estudando pelos comentários e volte às questões que trouxeram dúvidas. Isso ajuda a ganhar segurança no raciocínio.
+
+Para continuar o que você já começou em trauma, vale reler os comentários das questões anteriores.
 
 A Revisão reúne os assuntos do seu histórico para a próxima sessão.
 
-Para abrir: ortoquestoes.com.br/#/revisao
+Para continuar: ortoquestoes.com.br/#/revisao
 
-Pode responder por aqui se encontrar alguma dificuldade no site.
+Se precisar de ajuda com o site, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -159,21 +165,23 @@ Tales, do Orto Questões
 
 290 questões, 52% de acerto.
 
-**Assunto:** Rafael, revisão dos temas estudados
-*Versão ativo:40-60#v24 · personalizada com: prova de interesse, sequência de dias*
+**Assunto:** Rafael, para avançar no seu estudo
+*Versão ativo:40-60#v34 · personalizada com: acerto, sequência de dias*
 
 ```text
-Oi, Rafael, espero que esteja tudo bem por aí.
+Olá, Rafael, tudo bem?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-Você informou TARO entre seus objetivos de estudo. O histórico mostra 5 dias seguidos de estudo.
+Você está com 52% de acerto nas questões. Vamos continuar o estudo e mirar os 60%?
+
+Parabéns pelos 5 dias seguidos de estudo! Siga combinando questões e leitura dos comentários.
 
 A Revisão reúne os assuntos do seu histórico para a próxima sessão.
 
-Para abrir: ortoquestoes.com.br/#/revisao
+Para continuar: ortoquestoes.com.br/#/revisao
 
-Pode responder por aqui se encontrar alguma dificuldade no site.
+Se precisar de ajuda com o site, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -183,19 +191,21 @@ Tales, do Orto Questões
 
 290 questões, 66% de acerto.
 
-**Assunto:** Beatriz, revisão dos temas estudados
-*Versão ativo:60-70#v24 · personalizada com: área mais estudada, horário de estudo*
+**Assunto:** Beatriz, para avançar no seu estudo
+*Versão ativo:60-70#v34 · personalizada com: acerto, melhor área*
 
 ```text
-Oi, Beatriz, espero que esteja tudo bem por aí.
+Beatriz, tudo bem por aí?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-Seu histórico reúne 120 questões de mão. Os registros mostram que você costuma estudar no horário do almoço.
+Você está com 66% de acerto nas questões. Vamos continuar o estudo e mirar os 70%?
 
-Uma sessão no Caderno de erros permite revisar os pontos das questões anteriores.
+Sua melhor área é mão. Parabéns pelo estudo nesse tema!
 
-Para abrir: ortoquestoes.com.br/#/erros
+No Caderno de erros, você pode refazer questões e consultar a explicação de cada alternativa.
+
+Para continuar: ortoquestoes.com.br/#/erros
 
 Pode responder por aqui se encontrar alguma dificuldade no site.
 
@@ -207,19 +217,25 @@ Tales, do Orto Questões
 
 290 questões, 75% de acerto.
 
-**Assunto:** Pedro, revisão dos temas estudados
-*Versão ativo:70-80#v24 · personalizada com: dias para a prova, posição no ranking*
+**Assunto:** Pedro, para avançar no seu estudo
+*Versão ativo:70-80#v34 · personalizada com: acerto, melhor área, posição no ranking, ritmo da semana*
 
 ```text
-Oi, Pedro, espero que esteja tudo bem por aí.
+Olá, Pedro, tudo bem?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-Seu cronograma registra 87 dias até TEOT. Você está na 31ª posição do ranking geral.
+Você está com 75% de acerto nas questões. Vamos continuar o estudo e mirar os 80%?
+
+Sua melhor área é tumores. Parabéns pelo estudo nesse tema!
+
+Você está na 31ª posição do ranking geral. Parabéns! Siga fazendo as questões e revisando os temas para continuar avançando.
+
+Você respondeu 35 questões nos últimos sete dias. Continue praticando e use os comentários para revisar as dúvidas.
 
 Uma sessão no Caderno de erros permite revisar os pontos das questões anteriores.
 
-Para abrir: ortoquestoes.com.br/#/erros
+Para continuar: ortoquestoes.com.br/#/erros
 
 Pode responder por aqui se encontrar alguma dificuldade no site.
 
@@ -231,19 +247,23 @@ Tales, do Orto Questões
 
 1.450 questões, 84% de acerto.
 
-**Assunto:** Júlia, revisão dos temas estudados
-*Versão ativo:80-90#v24 · personalizada com: posição no ranking, sequência de dias*
+**Assunto:** Júlia, para avançar no seu estudo
+*Versão ativo:80-90#v34 · personalizada com: acerto, posição no ranking, ritmo da semana*
 
 ```text
-Oi, Júlia, espero que esteja tudo bem por aí.
+Olá, Júlia, tudo bem?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-Você está na 7ª posição do ranking geral. O histórico mostra 21 dias seguidos de estudo.
+Você está com 84% de acerto nas questões. Vamos continuar o estudo e mirar os 90%?
+
+Você está na 7ª posição do ranking geral. Parabéns! Siga fazendo as questões e revisando os temas para continuar avançando.
+
+Você respondeu 35 questões nos últimos sete dias. Continue praticando e use os comentários para revisar as dúvidas.
 
 Uma sessão no Caderno de erros permite revisar os pontos das questões anteriores.
 
-Para abrir: ortoquestoes.com.br/#/erros
+Para continuar: ortoquestoes.com.br/#/erros
 
 Pode responder por aqui se encontrar alguma dificuldade no site.
 
@@ -255,21 +275,23 @@ Tales, do Orto Questões
 
 160 questões, 93% de acerto.
 
-**Assunto:** Henrique, revisão dos temas estudados
-*Versão ativo:90-100#v24 · personalizada com: ritmo da semana, etapa*
+**Assunto:** Henrique, para avançar no seu estudo
+*Versão ativo:90-100#v34 · personalizada com: acerto, ritmo da semana*
 
 ```text
-Oi, Henrique, espero que esteja tudo bem por aí.
+Olá, Henrique, tudo bem?
 
-Você pode continuar o estudo pelos temas do seu histórico.
+Vi que você está fazendo as questões. Vamos continuar o estudo?
 
-Você respondeu 40 questões nos últimos sete dias. Seu cadastro está identificado com a etapa ortopedista.
+Você está com 93% de acerto nas questões. Vamos continuar o estudo e mirar os 95%?
+
+Foram 40 questões nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?
 
 A Revisão reúne os assuntos do seu histórico para a próxima sessão.
 
-Para abrir: ortoquestoes.com.br/#/revisao
+Para continuar: ortoquestoes.com.br/#/revisao
 
-Pode responder por aqui se encontrar alguma dificuldade no site.
+Se precisar de ajuda com o site, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -281,19 +303,19 @@ Tales, do Orto Questões
 
 Ana Beatriz, conta de 6 dias, quer o TEOT, nenhuma questão.
 
-**Assunto:** Ana, como usar os comentários
-*Versão nunca_comecou#v25*
+**Assunto:** Ana, por onde começar o estudo
+*Versão nunca_comecou#v35*
 
 ```text
 Olá, Ana, tudo bem?
 
-As questões estão organizadas por assunto e por prova para você começar.
+Vi que sua primeira sessão ainda está por começar. Separei uma sugestão para você experimentar o site.
 
-Você pode escolher um tema e resolver algumas questões, consultando o comentário das alternativas.
+Escolha um assunto de que você gosta e comece por algumas questões. Acho que você vai gostar de estudar pelos comentários.
 
-Os comentários explicam a resposta e os motivos das alternativas.
+Depois de responder, confira o comentário de cada alternativa e use a explicação para revisar suas dúvidas.
 
-Para escolher o primeiro tema: ortoquestoes.com.br/#/treinar
+Para começar: ortoquestoes.com.br/#/treinar
 
 Se precisar de ajuda com o site, basta responder este e-mail.
 
@@ -305,21 +327,21 @@ Tales, do Orto Questões
 
 Tiago, conta de 2 dias, 12 questões.
 
-**Assunto:** Tiago, para organizar o próximo treino
-*Versão boas_vindas#v25 · personalizada com: prova de interesse*
+**Assunto:** Tiago, seus próximos temas de revisão
+*Versão boas_vindas#v35*
 
 ```text
 Olá, Tiago, tudo bem?
 
-Há uma forma de revisar os pontos das sessões anteriores.
+Você já começou a estudar por aqui. Queria te incentivar a continuar pelas questões e pelos comentários.
 
-Seu perfil indica interesse em TARO.
+Continue se dedicando ao estudo. Escolha um tema por vez e use os comentários para esclarecer as dúvidas.
 
 Uma forma de organizar a próxima sessão é escolher um tema e ler o comentário de cada resposta.
 
-Para abrir: ortoquestoes.com.br/#/treinar
+Para continuar: ortoquestoes.com.br/#/treinar
 
-Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
+Se precisar de ajuda com o site, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -329,17 +351,19 @@ Tales, do Orto Questões
 
 Sem nome no cadastro, 18 questões, ativo.
 
-**Assunto:** Para organizar o próximo treino
-*Versão comecando#v25*
+**Assunto:** Seus próximos temas de revisão
+*Versão comecando#v35*
 
 ```text
 Tudo bem por aí?
 
-Há uma forma de revisar os pontos das sessões anteriores.
+Você já começou a estudar por aqui. Queria te incentivar a continuar pelas questões e pelos comentários.
+
+Continue se dedicando ao estudo. Escolha um tema por vez e use os comentários para esclarecer as dúvidas.
 
 Uma forma de organizar a próxima sessão é escolher um tema e ler o comentário de cada resposta.
 
-Para abrir: ortoquestoes.com.br/#/treinar
+Para continuar: ortoquestoes.com.br/#/treinar
 
 Se precisar de ajuda com o site, basta responder este e-mail.
 
@@ -351,19 +375,21 @@ Tales, do Orto Questões
 
 Clara, 7 questões (abaixo de 10: o número não aparece), 6 dias sem aparecer.
 
-**Assunto:** Clara, para organizar o próximo treino
-*Versão comecou_parou#v25*
+**Assunto:** Clara, seus próximos temas de revisão
+*Versão comecou_parou#v35*
 
 ```text
-Clara, tudo bem?
+Olá, Clara, tudo bem?
 
-Há uma forma de revisar os pontos das sessões anteriores.
+Você já começou a estudar por aqui. Queria te incentivar a continuar pelas questões e pelos comentários.
 
-Na Revisão, você encontra as questões indicadas para retomar os temas já estudados.
+Continue se dedicando ao estudo. Escolha um tema por vez e use os comentários para esclarecer as dúvidas.
 
-Para abrir: ortoquestoes.com.br/#/revisao
+A Revisão reúne os assuntos do seu histórico para a próxima sessão.
 
-Pode responder por aqui se encontrar alguma dificuldade no site.
+Para continuar: ortoquestoes.com.br/#/revisao
+
+Se precisar de ajuda com o site, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -373,21 +399,25 @@ Tales, do Orto Questões
 
 Otávio, 340 questões, 24 dias sem aparecer, ótimo em joelho.
 
-**Assunto:** Otávio, para organizar o próximo treino
-*Versão sumiu#v25 · personalizada com: área mais estudada*
+**Assunto:** Otávio, seus próximos temas de revisão
+*Versão sumiu#v35 · personalizada com: acerto, melhor área, ritmo da semana*
 
 ```text
-Olá, Otávio, tudo bem?
+Oi, Otávio, espero que esteja tudo bem por aí.
 
-Há uma forma de revisar os pontos das sessões anteriores.
+Você já começou a estudar por aqui. Queria te incentivar a continuar pelas questões e pelos comentários.
 
-O tema com mais questões no seu histórico é joelho.
+Vi que sua taxa de acerto está em 68%. Continue praticando para buscar os 70%.
 
-A Revisão reúne os assuntos do seu histórico para a próxima sessão.
+Sua melhor área é joelho. Parabéns pelo estudo nesse tema!
 
-Para abrir: ortoquestoes.com.br/#/revisao
+Foram 35 questões nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?
 
-Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
+Você pode começar a próxima sessão pela Revisão e consultar os comentários das alternativas.
+
+Para continuar: ortoquestoes.com.br/#/revisao
+
+Pode responder por aqui se encontrar alguma dificuldade no site.
 
 Um abraço,
 Tales, do Orto Questões
@@ -450,14 +480,14 @@ Tales, do Orto Questões
 Pedro, 290 questões, 75%, 31º no ranking, R3, TEOT a 87 dias, estuda à noite, ótimo em tumores.
 
 **Assunto:** Pedro, assinatura do Orto Questões
-*Versão convite_50#v25 · personalizada com: dias para a prova*
+*Versão convite_50#v25 · personalizada com: área mais estudada*
 
 ```text
 Pedro, tudo bem por aí?
 
 A página de planos reúne as opções para ampliar o acesso ao conteúdo.
 
-Seu cronograma registra 87 dias até TEOT.
+Você já tem estudado trauma. Que tal retomar algumas questões desse tema na próxima sessão?
 
 o Simulado Nacional do mês
 
@@ -478,14 +508,14 @@ Tales, do Orto Questões
 Larissa, 180 questões, 48% (abaixo de 50%: sem porcentagem), estuda à noite, usa flashcards.
 
 **Assunto:** Larissa, assinatura do Orto Questões
-*Versão convite_50#v25 · personalizada com: horário de estudo*
+*Versão convite_50#v25 · personalizada com: ritmo da semana*
 
 ```text
 Larissa, tudo bem por aí?
 
 A página de planos reúne as opções para ampliar o acesso ao conteúdo.
 
-Os registros mostram que você costuma estudar à noite.
+Foram 35 questões nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?
 
 questões e flashcards sem limite diário
 
@@ -506,14 +536,14 @@ Tales, do Orto Questões
 Pedro, R3, TEOT a 87 dias.
 
 **Assunto:** Pedro, as próximas sessões de estudo
-*Versão reta_final#v25 · personalizada com: dias para a prova*
+*Versão reta_final#v25 · personalizada com: melhor área*
 
 ```text
 Olá, Pedro, tudo bem?
 
-A preparação para o TEOT pode ser organizada pelas próximas sessões de revisão.
+Com o TEOT se aproximando, vale retomar as questões e as anotações que trouxeram dúvidas.
 
-Seu cronograma registra 87 dias até TEOT.
+Você está indo muito bem em tumores. Parabéns! Continue revisando para manter esse resultado.
 
 Os comentários das questões anteriores e suas anotações podem orientar a próxima revisão.
 
@@ -529,21 +559,21 @@ Tales, do Orto Questões
 
 Júlia passou de 500.
 
-**Assunto:** Júlia, as questões já respondidas
-*Versão marco#v25 · personalizada com: aniversário*
+**Assunto:** Júlia, seu progresso de estudo
+*Versão marco#v26 · personalizada com: posição no ranking*
 
 ```text
-Olá, Júlia, tudo bem?
+Oi, Júlia, tudo bem?
 
 Você chegou ao marco de 500 questões respondidas. Parabéns!
 
-A data de aniversário informada no seu perfil é hoje.
+Você está na 7ª posição do ranking geral. Parabéns! Siga fazendo as questões e revisando os temas para continuar avançando.
 
 A Revisão reúne os assuntos do seu histórico para a próxima sessão.
 
 Para consultar seu histórico e sua revisão: ortoquestoes.com.br/#/revisao
 
-Se precisar de ajuda com o site, basta responder este e-mail.
+Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
 
 Um abraço,
 Tales, do Orto Questões
@@ -596,14 +626,14 @@ Tales, do Orto Questões
 Pedro, TEOT.
 
 **Assunto:** Pedro, organização dos temas
-*Versão cronograma#v24 · personalizada com: dias para a prova*
+*Versão cronograma#v24 · personalizada com: melhor área*
 
 ```text
 Olá, Pedro, tudo bem?
 
 O Cronograma permite organizar o estudo pela data da prova e pelo tempo disponível.
 
-Seu cronograma registra 87 dias até TEOT.
+Você está indo muito bem em tumores. Parabéns! Continue revisando para manter esse resultado.
 
 A página mostra as sessões previstas e permite atualizar o tempo disponível.
 
@@ -628,7 +658,7 @@ Oi, Lívia, tudo bem?
 
 Você chegou ao marco de 100 questões respondidas. Parabéns!
 
-Seu cadastro informa o serviço Hospital Municipal Miguel Couto.
+Foram 35 questões nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?
 
 Na Revisão, você encontra as questões indicadas para retomar os temas já estudados.
 
@@ -648,18 +678,18 @@ Se preferir não receber mais os e-mails de conquistas: https://ortoquestoes.com
 
 Campanha "Primeira missão".
 
-**Assunto:** Ana, as questões por assunto
+**Assunto:** Ana, um convite para seu primeiro treino
 
 ```text
 Ana, tudo bem por aí?
 
-Sua conta está pronta para começar a estudar.
+Vi que você ainda não começou as questões por aqui. Que tal experimentar uma sessão?
 
-Você pode escolher um tema e resolver algumas questões, consultando o comentário das alternativas.
+Escolha um assunto de que você gosta e comece por algumas questões. Acho que você vai gostar de estudar pelos comentários.
 
-A correção fica disponível depois da resposta, com a explicação das alternativas.
+A ideia é aproveitar cada questão para aprender, consultando a explicação depois da resposta.
 
-Para escolher o primeiro tema: ortoquestoes.com.br/#/treinar
+Para começar: ortoquestoes.com.br/#/treinar
 
 Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
 
@@ -675,18 +705,20 @@ Se preferir não receber mais lembretes de estudo: https://ortoquestoes.com.br/#
 
 Campanha "Fogueira apagando": cita a área em que a pessoa estava e a Revisão.
 
-**Assunto:** Bruno, uma sugestão para sua próxima sessão
+**Assunto:** Bruno, vamos continuar as questões?
 
 ```text
 Oi, Bruno, tudo bem?
 
-Há uma forma de revisar os pontos das sessões anteriores.
+Você já começou a estudar por aqui. Queria te incentivar a continuar pelas questões e pelos comentários.
 
-O tema que você mais estudou por aqui foi joelho. Você respondeu 35 questões nos últimos sete dias.
+Vi que sua taxa de acerto está em 64%. Continue praticando para buscar os 70%.
+
+Para continuar o que você já começou em joelho, vale reler os comentários das questões anteriores.
 
 Na Revisão, você encontra as questões indicadas para retomar os temas já estudados.
 
-Para abrir: ortoquestoes.com.br/#/revisao
+Para continuar: ortoquestoes.com.br/#/revisao
 
 Se precisar de ajuda com o site, basta responder este e-mail.
 
@@ -702,18 +734,20 @@ Se preferir não receber mais lembretes de estudo: https://ortoquestoes.com.br/#
 
 Campanha "Retomar a jornada".
 
-**Assunto:** Carla, para organizar o próximo treino
+**Assunto:** Carla, seus próximos temas de revisão
 
 ```text
-Oi, Carla, tudo bem?
+Oi, Carla, espero que esteja tudo bem por aí.
 
-Separei uma sugestão para a sua próxima sessão de estudo.
+Você já começou a resolver as questões. Tenho uma sugestão para o próximo treino.
+
+Continue estudando pelos comentários e volte às questões que trouxeram dúvidas. Isso ajuda a ganhar segurança no raciocínio.
 
 Você pode começar a próxima sessão pela Revisão e consultar os comentários das alternativas.
 
-Para abrir: ortoquestoes.com.br/#/revisao
+Para continuar: ortoquestoes.com.br/#/revisao
 
-Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
+Se precisar de ajuda com o site, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -894,17 +928,15 @@ O site avisa ao passar de 10 (como o marco).
 **Assunto:** Tiago, as questões já respondidas
 
 ```text
-Olá, Tiago, tudo bem?
+Tiago, tudo bem?
 
 Você concluiu suas primeiras dez questões no Orto Questões.
-
-Seu perfil indica interesse em TARO.
 
 Na Revisão, você encontra as questões indicadas para retomar os temas já estudados.
 
 Para consultar seu histórico e sua revisão: ortoquestoes.com.br/#/revisao
 
-Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
+Pode responder por aqui se encontrar alguma dificuldade no site.
 
 Um abraço,
 Tales, do Orto Questões
@@ -918,18 +950,22 @@ Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails
 
 Primeiro login depois de 10 dias ou mais fora. Otávio, 340 questões, ótimo em joelho.
 
-**Assunto:** Otávio, para organizar o próximo treino
+**Assunto:** Otávio, seus próximos temas de revisão
 
 ```text
 Oi, Otávio, tudo bem?
 
-Separei uma sugestão para a sua próxima sessão de estudo.
+Você já começou a resolver as questões. Tenho uma sugestão para o próximo treino.
 
-Em joelho, seu histórico registra 83% de acerto em 70 questões.
+Você está com 68% de acerto nas questões. Vamos continuar o estudo e mirar os 70%?
+
+Você está indo muito bem em joelho. Parabéns! Continue revisando para manter esse resultado.
+
+Você respondeu 35 questões nos últimos sete dias. Continue praticando e use os comentários para revisar as dúvidas.
 
 A Revisão reúne os assuntos do seu histórico para a próxima sessão.
 
-Para abrir: ortoquestoes.com.br/#/revisao
+Para continuar: ortoquestoes.com.br/#/revisao
 
 Se precisar de ajuda com o site, basta responder este e-mail.
 
@@ -952,7 +988,7 @@ Olá, Pedro, tudo bem?
 
 Seu cronograma foi salvo, com 87 dias até o TEOT. As próximas sessões estão disponíveis na sua conta.
 
-Seu cronograma registra 87 dias até TEOT.
+Sua melhor área é tumores. Parabéns pelo estudo nesse tema!
 
 Você pode consultar a lista de cada dia e ajustar sua disponibilidade.
 
@@ -1029,7 +1065,7 @@ Olá, Fernanda, tudo bem?
 
 O Cronograma permite organizar o estudo pela data da prova e pelo tempo disponível.
 
-Seu perfil indica interesse em TEOT.
+Você respondeu 35 questões nos últimos sete dias. Continue praticando e use os comentários para revisar as dúvidas.
 
 Você pode consultar a lista de cada dia e ajustar sua disponibilidade.
 
@@ -1049,20 +1085,22 @@ Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails
 
 Bruno assina e está há 9 dias sem responder.
 
-**Assunto:** Bruno, para organizar o próximo treino
+**Assunto:** Bruno, seus próximos temas de revisão
 
 ```text
-Oi, Bruno, tudo bem?
+Bruno, tudo bem?
 
-Separei uma sugestão para a sua próxima sessão de estudo.
+Você já começou a resolver as questões. Tenho uma sugestão para o próximo treino.
 
-O tema que você mais estudou por aqui foi joelho. Na última semana, o histórico registra 35 questões.
+Você está com 64% de acerto nas questões. Vamos continuar o estudo e mirar os 70%?
+
+Foram 35 questões nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?
 
 A Revisão reúne os assuntos do seu histórico para a próxima sessão.
 
-Para abrir: ortoquestoes.com.br/#/revisao
+Para continuar: ortoquestoes.com.br/#/revisao
 
-Se precisar de ajuda com o site, basta responder este e-mail.
+Pode responder por aqui se encontrar alguma dificuldade no site.
 
 Um abraço,
 Tales, do Orto Questões
@@ -1168,9 +1206,9 @@ Pedro, TEOT amanhã pelo cronograma.
 ```text
 Olá, Pedro, tudo bem?
 
-A data informada para o TEOT é amanhã.
+Amanhã é o TEOT.
 
-Seu cronograma registra 1 dia até TEOT.
+Sua melhor área é tumores. Parabéns pelo estudo nesse tema!
 
 Uma opção é revisar as questões já respondidas e as anotações que você salvou.
 
