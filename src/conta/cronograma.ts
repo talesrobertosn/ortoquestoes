@@ -102,13 +102,8 @@ export interface DadosPlano {
   p_recomecar: boolean
 }
 
-/**
- * Grava o plano. `avisar` (padrão) pede a carta "Cronograma pronto" depois de salvar:
- * o site só avisa, o servidor confere o plano no banco e manda uma vez por pessoa; um
- * erro no e-mail nunca chega aqui. As regravações internas (tirar os simulados, mudar
- * opções) passam `avisar: false`, porque o plano já existia.
- */
-export async function salvarPlano(dados: DadosPlano, incluirSimulados: boolean, opcoes?: OpcoesPlano, { avisar = true } = {}): Promise<PlanoSalvo | null> {
+/** Salva o cronograma. O parâmetro legado de aviso é preservado, sem enviar e-mail. */
+export async function salvarPlano(dados: DadosPlano, incluirSimulados: boolean, opcoes?: OpcoesPlano, { avisar: _avisar = true } = {}): Promise<PlanoSalvo | null> {
   gravar(CHAVE, incluirSimulados)
   // Banco mais novo primeiro; sem a parte 20 (opções) ou a 202610070200 (simulados), cai para a versão anterior.
   const tentativas = [
@@ -122,7 +117,6 @@ export async function salvarPlano(dados: DadosPlano, incluirSimulados: boolean, 
       if (!funcaoInexistente(falha) || i === tentativas.length - 1) throw falha
     }
   }
-  if (avisar) void import('./emailsAutomaticos').then(({ avisarCronogramaPronto }) => avisarCronogramaPronto(dados.p_data_prova, dados.p_prova)).catch(() => undefined)
   return obterPlano()
 }
 

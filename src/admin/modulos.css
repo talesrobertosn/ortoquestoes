@@ -550,3 +550,6 @@
   .nh-semanas__media { font-size: 0; height: 12px; }
   .nh-semanas__col:nth-child(even) .nh-semanas__data { visibility: hidden; }
 }
+
+.a3-cortesia-origem {display:block;line-height:1.4;overflow-wrap:anywhere;font-size:.8125rem}
+.a3-vencimento--cortesia {align-items:flex-start;white-space:normal}

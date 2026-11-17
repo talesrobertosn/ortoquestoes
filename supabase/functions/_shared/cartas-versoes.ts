@@ -80,11 +80,12 @@ const convite = (): Versao[] => Array.from({length:6},(_,i)=>({
     `Para consultar os planos: ${c.link('assinatura')}`, ajuda(c),
   ],
 }))
-const boasVindas: Versao[] = [{id:'v21',assuntos:c=>[nm(c,'sua conta no Orto Questões')],corpo:c=>[
-  'Sua conta no Orto Questões está pronta.',
-  'Você encontra questões comentadas, Biblioteca de resumos e Revisão. O Cronograma permite organizar o estudo pela data da prova e pelo tempo disponível.',
+const boasVindas: Versao[] = [{id:'v41',assuntos:c=>[nm(c,'sua conta no Orto Questões')],corpo:c=>[
+  'Que bom ter você no Orto Questões! Sua conta já está pronta para começar.',
+  'Minha sugestão para o primeiro treino é escolher um tema e resolver algumas questões. Depois de responder, leia também a explicação das outras alternativas.',
+  'A Biblioteca de resumos ajuda a consultar o conteúdo, e a Revisão reúne as questões para retomar depois. O Cronograma está disponível para organizar as sessões pela data da prova.',
   `Para começar pelas questões: ${c.link('treinar')}`,
-  'Você também pode indicar o site aos colegas que estudam ortopedia.', ajuda(c),
+  ajuda(c),
 ]}]
 const provaVersoes = (tipo: 'reta_final'|'vespera_prova'|'depois_prova'): Versao[] => Array.from({length:6},(_,i)=>({
   id:`v${i+21}`, assuntos:c=>[nm(c, (tipo==='depois_prova'?['sobre a sua prova','como foi o formato da prova','sua experiência na prova','conteúdo da prova','sobre os temas cobrados','comentários sobre a prova']:tipo==='vespera_prova'?['sobre a prova de amanhã','sua revisão antes da prova','para consultar suas anotações','última revisão dos temas','sua prova está chegando','anotações para a prova']:['organizar a revisão para a prova','seus próximos temas de revisão','o plano de estudo para a prova','sobre sua revisão','as próximas sessões de estudo','sua preparação para a prova'])[i])],
@@ -100,10 +101,12 @@ const provaVersoes = (tipo: 'reta_final'|'vespera_prova'|'depois_prova'): Versao
   ],
 }))
 const marco = (primeiro = false): Versao[] => Array.from({length:6},(_,i)=>({
-  id:`v${i+21}`, assuntos:c=>[nm(c,[primeiro?'suas primeiras questões':'seu novo marco de estudo','progresso no seu histórico','um marco nas questões','seu histórico está crescendo','as questões já respondidas','seu progresso de estudo'][i])],
+  id:`v${i+41}`, assuntos:c=>[nm(c,[primeiro?'suas primeiras questões':'parabéns pelo seu novo marco','mais um passo no seu estudo','suas questões e a próxima revisão','seu progresso nas questões','para continuar seu treino','um marco para comemorar'][i])],
   corpo:c=>[
-    primeiro?'Você concluiu suas primeiras dez questões no Orto Questões.':`Você chegou ao marco de ${Q(c.marco ?? 100)} respondidas. Parabéns!`,
-    c.obs(1), sugestao(c,'revisao'), `Para consultar seu histórico e sua revisão: ${c.link('revisao')}`, ajuda(c),
+    primeiro?'Você concluiu suas primeiras dez questões no Orto Questões.':`Você completou ${Q(c.marco ?? 100)} no Orto Questões. Parabéns pela dedicação ao estudo!`,
+    c.obs(1,['ranking','melhorArea']),
+    c.um('Para aproveitar esse treino, vale voltar às questões que trouxeram dúvidas e reler os comentários.', 'A próxima sessão pode ser dedicada a refazer questões e conferir o raciocínio de cada alternativa.', 'Continue praticando e reserve uma parte do treino para revisar os conceitos das questões anteriores.'),
+    `Sua revisão está aqui: ${c.link('revisao')}`, ajuda(c),
   ],
 }))
 const opiniao = (): Versao[] => Array.from({length:5},(_,i)=>({
@@ -128,34 +131,44 @@ const cronograma = (pronto = false): Versao[] => Array.from({length:5},(_,i)=>({
     `Para abrir o Cronograma: ${c.link('cronograma')}`, ajuda(c),
   ],
 }))
+const dataCompleta = (iso?: string | null) => iso && Number.isFinite(Date.parse(iso)) ? new Date(iso).toLocaleDateString('pt-BR',{timeZone:'America/Sao_Paulo'}) : null
+const planoPorExtenso = (id?: string | null) => id ? ({mensal:'mensal',trimestral:'trimestral',semestral:'semestral',anual:'anual'}[id] ?? null) : null
 const pagamento = (): Versao[] => Array.from({length:5},(_,i)=>({
-  id:`v${i+21}`,assuntos:c=>[nm(c,['pagamento aprovado','sua assinatura foi confirmada','seu acesso está ativo','confirmação do seu plano','seu período de acesso'][i])],corpo:c=>[
-    c.um('Seu pagamento foi aprovado. Obrigado pela assinatura.', 'A assinatura foi confirmada e seu acesso está ativo. Obrigado pela confiança.', 'O pagamento da sua assinatura foi aprovado.'),
-    c.pagamento?.plano?`O plano confirmado é o ${c.pagamento.plano}.`:null,
-    c.pagamento?.fimEm?`O período de acesso vai até ${dataCurta(c.pagamento.fimEm)}.`:null,
-    c.pagamento?.meio==='pix'?'O período foi pago por Pix, sem renovação automática.':'Você pode consultar o período e gerenciar a renovação em Minha assinatura.',
-    `Para consultar os detalhes do seu plano: ${c.link('conta')}`, ajuda(c),
+  id:`v${i+41}`,assuntos:c=>[nm(c,(c.pagamento?.renovacao?['renovação confirmada','seu novo período está confirmado','pagamento da renovação aprovado','confirmação da sua renovação','seu acesso foi prolongado']:['pagamento aprovado','sua assinatura foi confirmada','seu acesso está ativo','confirmação do seu plano','seu período de acesso'])[i])],corpo:c=>[
+    c.pagamento?.renovacao?'O pagamento da renovação foi aprovado. Seu novo período de acesso está confirmado. Obrigado por continuar estudando com o Orto Questões.':c.um('Seu pagamento foi aprovado e a assinatura está confirmada. Obrigado pela confiança!', 'Sua assinatura foi confirmada. Obrigado por escolher o Orto Questões para o seu estudo.', 'O pagamento foi aprovado e seu acesso está ativo. Obrigado pela assinatura!'),
+    planoPorExtenso(c.pagamento?.plano)?`Plano confirmado: ${planoPorExtenso(c.pagamento?.plano)}.`:null,
+    dataCompleta(c.pagamento?.fimEm)?`Seu acesso pago vai até ${dataCompleta(c.pagamento?.fimEm)}.`:null,
+    c.pagamento?.meio==='pix'?'O pagamento foi feito por Pix. Não há renovação automática; os detalhes do período e as opções para prolongar ficam em Minha assinatura.':c.pagamento?.meio==='cartao'?'O pagamento foi confirmado no cartão. Em Minha assinatura você consulta o período, a renovação e os recibos.':'Em Minha assinatura você consulta os detalhes do acesso, os pagamentos e os recibos.',
+    `Para consultar seu plano: ${c.link('conta')}`, ajuda(c),
   ],
 }))
 const encerramento = (): Versao[] => Array.from({length:5},(_,i)=>({
-  id:`v${i+21}`,assuntos:c=>[nm(c,['sobre a alteração na assinatura','detalhes da sua assinatura','confirmação da sua solicitação','atualização do seu plano','informações da sua assinatura'][i])],corpo:c=>[
-    c.encerramento?.reembolso?'Sua solicitação de reembolso foi registrada.':`O cancelamento da renovação foi registrado${dataCurta(c.encerramento?.fimEm)?`, com acesso até ${dataCurta(c.encerramento?.fimEm)}`:''}.`,
-    acesso(c),
-    `Você pode consultar os detalhes em Minha assinatura: ${c.link('conta')}`,
-    'Se houver alguma dúvida sobre a solicitação, responda a este e-mail.',
-  ],
+  id:`v${i+41}`,assuntos:c=>[nm(c,(c.encerramento?.reembolso?['sobre o reembolso da assinatura','atualização do seu reembolso','reembolso registrado','detalhes do reembolso','sua assinatura e o reembolso']:['renovação automática desligada','cancelamento confirmado','sobre o fim do período pago','atualização da assinatura','detalhes do cancelamento'])[i])],corpo:c=>{
+    const fim=dataCompleta(c.encerramento?.fimEm)
+    const vigente=!!c.encerramento?.fimEm&&Date.parse(c.encerramento.fimEm)>c.hoje.getTime()
+    return [
+      c.encerramento?.reembolso?'O reembolso desta assinatura foi registrado, e o período de acesso pago foi encerrado.':vigente?`A renovação automática foi desligada. Você continua com o período pago até ${fim}; essa renovação não gerará outro pagamento.`:fim?`O cancelamento da assinatura foi confirmado. O período pago terminou em ${fim}.`:'O cancelamento da assinatura foi confirmado. Você pode consultar o período e os detalhes na sua conta.',
+      acesso(c),
+      `Os detalhes ficam em Minha assinatura: ${c.link('conta')}`,
+      'Se precisar esclarecer alguma informação sobre a solicitação, basta responder este e-mail.',
+    ]
+  },
 }))
 const relatorio = (): Versao[] => Array.from({length:5},(_,i)=>({
-  id:`v${i+21}`,assuntos:c=>[nm(c,['seu resumo de estudo','o estudo neste período','seu histórico no período','suas sessões de estudo','resumo das suas sessões'][i])],corpo:c=>{
+  id:`v${i+41}`,assuntos:c=>[nm(c,[(c.relatorio?.quinzena?'seu resumo quinzenal':'seu resumo mensal'),'seu progresso e a próxima revisão','seu estudo neste período','questões, resultados e próximos passos','uma sugestão para sua próxima sessão'][i])],corpo:c=>{
     const d=c.relatorio, n=d?.respostas??0, total=(d?.certas??0)+(d?.erradas??0), pct=total?Math.round((d?.certas??0)/total*100):null
     const citavel=n>=30&&pct!==null&&pct>=50
     const delta=citavel&&d?.acertoAnterior!==null&&d?.acertoAnterior!==undefined?pct!-d.acertoAnterior:null
+    const forte=d?.melhorArea&&c.area(d.melhorArea.slug)&&d.melhorArea.acerto>=70?d.melhorArea:null
+    const revisar=d?.maisFraco&&c.area(d.maisFraco.slug)&&d.maisFraco.slug!==forte?.slug?d.maisFraco:null
     return [
-      d?.rotulo?`Este é seu resumo de estudo ${d.rotulo}.`:'Seu resumo de estudo está disponível.',
-      n>=10?`No período, você respondeu ${Q(n)}.`:n>0?'Seu histórico registra novas respostas neste período.':'O histórico e as anotações das sessões anteriores continuam disponíveis.',
-      citavel?`O acerto no período foi de ${pct}%.${delta!==null&&delta>0?` O resultado subiu ${delta} pontos em relação ao período anterior.`:''}`:null,
-      c.um('Você pode consultar os temas estudados e as questões indicadas para revisão.', 'Os detalhes das sessões ajudam a escolher os próximos temas para revisar.', 'O histórico reúne suas respostas e as revisões dos temas já estudados.'),
-      `Para consultar: ${c.link('desempenho')}`, ajuda(c),
+      d?.rotulo?`Separei seu resumo de estudo ${d.rotulo}, com uma sugestão para a próxima sessão.`:'Seu resumo de estudo está disponível, com uma sugestão para continuar.',
+      n>=10?`Você respondeu ${Q(n)} neste período${d?.diasAtivos&&d.diasAtivos>0?`, distribuídas em ${d.diasAtivos===1?'um dia':`${d.diasAtivos} dias`} de estudo`:''}.`:n>0?'Você já começou a responder as questões neste período. Continue praticando e lendo os comentários.':'Seu histórico e suas anotações continuam salvos. Para retomar, escolha um tema e experimente uma sessão de questões comentadas.',
+      citavel?`Sua taxa de acerto no período foi de ${pct}%.${delta!==null&&delta>0?` O resultado subiu ${delta} pontos em relação ao período anterior.`:' Continue praticando e revisando os comentários para consolidar os temas.'}`:n>0?incentivo(c):null,
+      citavel&&forte?`Seu ponto forte no período foi ${c.area(forte.slug).de}. Parabéns pelo estudo desse tema!`:null,
+      revisar?`Para a próxima sessão, minha sugestão é reforçar ${c.area(revisar.slug).de}, refazendo as questões e consultando os comentários.`:n>0?'Para a próxima sessão, vale retomar as questões que trouxeram dúvidas e ler a explicação de cada alternativa.':null,
+      d?.simulado&&d.simulado.acertos>=10&&d.simulado.total>=d.simulado.acertos&&d.simulado.acertos*2>=d.simulado.total?`Na edição "${d.simulado.titulo}", você acertou ${d.simulado.acertos} de ${d.simulado.total} questões.`:null,
+      `Seu desempenho e os temas estudados: ${c.link('desempenho')}`, ajuda(c),
     ]
   },
 }))

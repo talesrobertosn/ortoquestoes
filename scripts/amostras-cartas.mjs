@@ -64,7 +64,7 @@ try {
     : tipo === 'primeiras_10' || tipo === 'boas_vindas' || tipo === 'boas_vindas_dia0' ? { ...rica, respondidas: 11, diasConta: 1, posicaoRanking: null }
     : tipo === 'comecando' ? { ...rica, respondidas: 22, posicaoRanking: null }
     : rica
-  for (const tipo of Object.keys(m.TIPOS).filter((t) => t !== 'ativo')) {
+  for (const tipo of Object.keys(m.TIPOS).filter((t) => t !== 'ativo' && !['primeiras_10','voltou','cronograma_pronto'].includes(t))) {
     linhas.push(`| ${m.TIPOS[tipo].rotulo} | ${m.versoesDe(tipo, null).length} | ${contar(perfilDoTipo(tipo), tipo)} |`)
   }
   linhas.push('')
@@ -117,13 +117,10 @@ try {
   linhas.push('## Automáticos novos (17/10/2026, sem SQL)', '', 'Disparados por um acontecimento (ação `automatico` da função `enviar-email`); idempotentes por pessoa e tipo.', '')
   const novo = (titulo, descricao, d) => auto(titulo, descricao, m.auto.emailAutomatico({ site: SITE, linkDescadastro: desc, hoje: HOJE, semente: 3, ...d }))
   novo('Boas-vindas no dia da confirmação', 'Primeiro login depois de confirmar o e-mail. Ana, R3, TEOT.', { tipo: 'boas_vindas_dia0', nome: 'Ana', respondidas: 0, perfil: { nome: 'Ana', respondidas: 0, situacao: 'residente', ano: 'r3', provas: ['teot'] } })
-  novo('Primeiras 10 questões', 'O site avisa ao passar de 10 (como o marco).', { tipo: 'primeiras_10', nome: 'Tiago', respondidas: 11, perfil: { nome: 'Tiago', respondidas: 11, provas: ['taro'], situacao: 'residente', ano: 'r1' } })
-  novo('Que bom te ver de volta', 'Primeiro login depois de 10 dias ou mais fora. Otávio, 340 questões, ótimo em joelho.', { tipo: 'voltou', nome: 'Otávio Reis', respondidas: 340, diasFora: 24, perfil: { ...pessoa('Otávio Reis', 68), respondidas: 340, diasParado: 24, areas: [{ slug: 'joelho', total: 70, certas: 58 }] } })
-  novo('Cronograma pronto', 'No dia em que monta o plano. Pedro, TEOT a 87 dias.', { tipo: 'cronograma_pronto', nome: 'Pedro Alves', respondidas: 260, diasParaProva: 87, provaCronograma: 'TEOT', perfil: FAIXAS['70-80'] })
   novo('Pagamento aprovado', 'Recibo gentil (webhook do Mercado Pago): plano, período, o que libera, link do cronograma. Sem valor.', { tipo: 'pagamento_aprovado', nome: 'Fernanda Luz', respondidas: 260, pagamento: EXTRAS.pagamento, referencia: 'pg:123' })
   novo('Obrigado pelo tempo de assinatura', 'Confirmação de cancelamento ou reembolso.', { tipo: 'obrigado_tempo', nome: 'Fernanda Luz', respondidas: 260, encerramento: EXTRAS.encerramento, perfil: { ...pessoa('Fernanda Luz', 71), areas: [{ slug: 'mao', total: 60, certas: 50 }] } })
 
-  linhas.push('## Campanhas diárias (parte 31, 18/10/2026)', '', 'O banco escolhe quem recebe (`candidatos_<tipo>`, já sem administrador, e-mail não confirmado, quem desligou as cartas, quem recebeu a mesma referência e quem está no teto de cadência) e o agendador manda às 7h pela ação `campanhas_diarias`, pelo mesmo caminho dos automáticos.', '')
+  linhas.push('## Campanhas diárias (parte 31, 18/10/2026)', '', 'O banco escolhe quem recebe (`candidatos_<tipo>`, já sem administrador, e-mail não confirmado, quem desligou as cartas, quem recebeu a mesma referência e quem está no teto de cadência) e as mensagens ficam para revisão e início manual na Central. Não há disparo diário automático dessas campanhas.', '')
   const julia = FAIXAS['80-90'], pedro = FAIXAS['70-80'], beatriz = FAIXAS['60-70']
   novo('Assinou e não montou o cronograma', 'Três dias depois de assinar, sem cronograma. Fernanda, TEOT.', { tipo: 'assinou_sem_cronograma', nome: 'Fernanda Luz', respondidas: 120, perfil: { ...pessoa('Fernanda Luz', 71), respondidas: 120, assinante: true, provas: ['teot'] } })
   novo('Assinante parado há 7 dias', 'Bruno assina e está há 9 dias sem responder.', { tipo: 'assinante_parado_7', nome: 'Bruno', respondidas: 230, diasFora: 9, perfil: { ...pessoa('Bruno', 64), respondidas: 230, assinante: true, areas: [{ slug: 'joelho', total: 90, certas: 60 }] } })

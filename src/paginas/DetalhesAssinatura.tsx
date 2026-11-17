@@ -6,6 +6,7 @@ import { RenovacaoPix } from '../componentes/RenovacaoPix'
 import { Recibos } from '../componentes/Recibos'
 import { recurso } from '../config'
 import { usarConta } from '../conta/ContextoConta'
+import { usarResumoAcesso, dadosCortesia, origemDaCortesia } from '../conta/resumoAcesso'
 import { usarPrecoAntigo } from '../conta/precoAntigo'
 import { MENSAGENS_STATUS, dataBr, gerenciarAssinatura, usarEstadoAssinatura } from '../conta/estadoAssinatura'
 import { dias, diasEntre, duracao } from '../conta/dias'
@@ -98,6 +99,9 @@ export function DetalhesAssinatura() {
   const { sessao } = usarConta()
   const a = usarEstadoAssinatura(sessao)
   const { planosAntigos } = usarPrecoAntigo(sessao)
+  const { resumo: acesso, carregando:carregandoAcesso } = usarResumoAcesso(sessao?.user.id,a.estado?.fim_periodo)
+  const cortesia = dadosCortesia(acesso)
+  const origemCortesia = origemDaCortesia(cortesia.origens)
   const planos = planosDaPessoa(planosAntigos).pipoca
   const [processando, definirProcessando] = useState(false)
   const [acaoPendente, definirAcaoPendente] = useState<'cancelar' | 'reembolsar' | null>(null)
@@ -128,12 +132,14 @@ export function DetalhesAssinatura() {
   const agora = Date.now()
   const nome = String(sessao.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0]
   const planoAtual = planos.find((p) => p.id === estado?.plano) ?? null
-  const restam = a.comAcesso && a.fimAcesso ? diasEntre(agora, a.fimAcesso) : 0
+  const temAcesso = a.comAcesso || cortesia.ativa
+  const fimTotal = cortesia.semPrazo ? null : Math.max(a.comAcesso ? a.fimAcesso ?? 0 : 0, cortesia.ativa ? cortesia.fim ?? 0 : 0) || null
+  const restam = temAcesso && fimTotal ? diasEntre(agora, fimTotal) : 0
   const opcoesAmpliar: Plano[] = planoAtual ? planos.filter((p) => p.meses > planoAtual.meses) : []
   const janelaPixAberta = Boolean(a.fimPix && agora >= a.fimPix - JANELA_RENOVACAO_PIX)
   const podeAmpliar = Boolean(pagamentosHabilitados && a.ativo && planoAtual && opcoesAmpliar.length && a.fimAcesso && (a.pixAtivo || !estado?.cancelar_ao_fim) && !janelaPixAberta)
   const statusExibido = a.pixAtivo ? 'Em dia, pago no Pix' : a.renovacaoDesligada ? 'Sem renovação automática' : MENSAGENS_STATUS[a.status]?.titulo ?? 'Plano gratuito'
-  const nomePlano = estado?.plano && a.comAcesso ? `Plano ${estado.plano}` : 'Plano gratuito'
+  const nomePlano = estado?.plano && a.comAcesso ? `Plano ${estado.plano}` : cortesia.ativa ? 'Acesso de cortesia' : 'Plano gratuito'
   const meio = a.meio === 'pix' ? 'Pix, sem cobrança automática' : a.meio === 'cartao' ? (a.renovacaoDesligada ? 'Cartão, renovação desligada' : 'Cartão, renova sozinho') : a.comAcesso ? 'Cartão' : '—'
   const cartaoRenovando = a.comAcesso && !a.pixAtivo && !a.renovacaoDesligada
 
@@ -163,32 +169,43 @@ export function DetalhesAssinatura() {
           </div>
           <div className="dp-topo__painel asn-topo__painel">
             <div className="dp-topo__mensagem">
-              {a.carregando ? <p className="dp-mensagem" role="status">Carregando a sua assinatura…</p>
+              {a.carregando || carregandoAcesso ? <p className="dp-mensagem" role="status">Carregando a sua assinatura…</p>
                 : a.falhou ? <p className="dp-mensagem" role="alert">Não deu para carregar a assinatura agora. <button type="button" className="dp-botao" onClick={() => void a.atualizar()}>Tentar de novo</button></p>
                   : a.comAcesso && a.fimAcesso ? <p className="dp-mensagem">
                     Seu <b>{nomePlano.toLowerCase()}</b> está <b>{a.renovacaoDesligada ? 'ativo até o fim do período' : 'em dia'}</b>. Você tem <b>{dias(restam)}</b> de acesso ilimitado, ou {duracao(agora, a.fimAcesso)}, até <b>{dataBr(a.fimAcesso)}</b>.
                     {a.pixAtivo ? <> Pago no Pix, sem cobrança automática.</> : a.renovacaoDesligada ? <> Não haverá nova cobrança.</> : <> A próxima cobrança é em <b>{dataBr(estado?.fim_periodo)}</b>, no mesmo cartão.</>}
                   </p>
+                    : cortesia.ativa ? <p className="dp-mensagem">
+                      {acesso?.ultimo_periodo_pago_ate && Date.parse(acesso.ultimo_periodo_pago_ate) <= agora ? <>Seu período pago terminou em <b>{dataBr(acesso.ultimo_periodo_pago_ate)}</b>. </> : null}
+                      Você continua com <b>acesso completo por cortesia</b>{cortesia.semPrazo ? ', sem prazo definido' : <> até <b>{dataBr(cortesia.fim)}</b>, por mais <b>{dias(restam)}</b></>}.
+                    </p>
                     : <p className="dp-mensagem">Você está no <b>plano gratuito</b>. {MENSAGENS_STATUS[a.status]?.explicacao ?? 'Pode estudar normalmente; com um plano, o cronograma, os simulados e as questões ficam sem limite.'}</p>}
+              {cortesia.ativa && <div className="asn-cortesia">
+                <p><b>{a.comAcesso ? 'Seus dias de cortesia estão preservados' : cortesia.cortesia?.por_indicacao ? 'Cortesia por indicação' : 'Acesso de cortesia'}</b></p>
+                {a.comAcesso && <p>{cortesia.semPrazo ? 'Você também tem cortesia sem prazo definido.' : <>A cortesia vale até <b>{dataBr(cortesia.fim)}</b>. O acesso total da conta vai até <b>{dataBr(fimTotal)}</b>.</>}</p>}
+                {!!cortesia.origens.length && <ul>{cortesia.origens.map((o,i)=><li key={`${o.em}-${i}`}>{o.tipo==='indicou'?'Você indicou':'Você recebeu o convite de'} <b>{o.nome}</b>: {dias(o.dias)} de cortesia.</li>)}</ul>}
+                {!cortesia.semPrazo && !a.comAcesso && <p>Você já pode escolher um novo período. Os dias de acesso que ainda tem são preservados; a compra acrescenta mais tempo depois deles.</p>}
+                {!cortesia.semPrazo && !a.comAcesso && <a className="dp-botao dp-botao--principal" href={href('/assinatura?renovar=1')}>Renovar e somar mais tempo <Icone nome="direita" tamanho={16}/></a>}
+              </div>}
               <div className="asn-acoes">
                 {a.comAcesso
                   ? <a className="dp-botao dp-botao--principal" href={href('/cronograma')}>Abrir o cronograma <Icone nome="direita" tamanho={16} /></a>
-                  : <a className="dp-botao dp-botao--principal" href={href('/assinatura')}>Ver os planos <Icone nome="direita" tamanho={16} /></a>}
+                  : cortesia.ativa ? <a className="dp-botao" href={href('/treinar')}>Continuar estudando <Icone nome="direita" tamanho={16}/></a> : <a className="dp-botao dp-botao--principal" href={href('/assinatura')}>Ver os planos <Icone nome="direita" tamanho={16} /></a>}
                 {podeAmpliar && <a className="dp-botao" href="#asn-ampliar" onClick={(e) => { e.preventDefault(); document.getElementById('asn-ampliar')?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}><Icone nome="estrela" tamanho={15} /> Ampliar o plano</a>}
               </div>
             </div>
             <div className="asn-dias" aria-label="Dias de acesso">
               <p className="dp-rotulo"><Icone nome="calendario" tamanho={14} /> Dias de acesso</p>
-              {a.comAcesso && a.fimAcesso ? <>
+              {temAcesso && fimTotal ? <>
                 <p className="asn-dias__numero"><b>{restam.toLocaleString('pt-BR')}</b><span>{restam === 1 ? 'dia' : 'dias'}</span></p>
-                <p className="asn-dias__meses">{duracao(agora, a.fimAcesso)} · até {dataBr(a.fimAcesso)}</p>
+                <p className="asn-dias__meses">{duracao(agora, fimTotal)} · até {dataBr(fimTotal)}</p>
                 <BarraDias restam={restam} />
-              </> : <p className="asn-dias__vazio">{a.carregando ? 'Carregando…' : 'Sem período pago agora.'}</p>}
+              </> : cortesia.semPrazo ? <p className="asn-dias__vazio">Cortesia sem prazo definido</p> : <p className="asn-dias__vazio">{a.carregando || carregandoAcesso ? 'Carregando…' : 'Sem período pago agora.'}</p>}
             </div>
           </div>
           <dl className="dp-numeros asn-numeros">
-            <div className="dp-numero"><dt>Plano</dt><dd><b className="asn-numero__texto">{nomePlano.replace('Plano ', '')}</b><small>{planoAtual ? `${planoAtual.meses === 1 ? '1 mês' : `${planoAtual.meses} meses`} por período` : 'sem cobrança'}</small></dd></div>
-            <div className="dp-numero"><dt>Pagamento</dt><dd><b className="asn-numero__texto">{a.meio === 'pix' ? 'Pix' : a.meio === 'cartao' || a.comAcesso ? 'Cartão' : '—'}</b><small>{meio}</small></dd></div>
+            <div className="dp-numero"><dt>Plano</dt><dd><b className="asn-numero__texto">{nomePlano.replace('Plano ', '')}</b><small>{planoAtual && a.comAcesso ? `${planoAtual.meses === 1 ? '1 mês' : `${planoAtual.meses} meses`} por período` : 'sem cobrança'}</small></dd></div>
+            <div className="dp-numero"><dt>Pagamento</dt><dd><b className="asn-numero__texto">{!a.comAcesso && cortesia.ativa ? 'Cortesia' : a.meio === 'pix' ? 'Pix' : a.meio === 'cartao' || a.comAcesso ? 'Cartão' : '—'}</b><small>{!a.comAcesso && cortesia.ativa ? 'sem pagamento neste benefício' : meio}</small></dd></div>
             <div className="dp-numero"><dt>{cartaoRenovando ? 'Próxima cobrança' : 'Última cobrança'}</dt><dd><b className="asn-numero__texto">{cartaoRenovando ? diaMesAno(estado?.fim_periodo) : diaMesAno(estado?.ultima_cobranca_em)}</b><small>{cartaoRenovando ? `última em ${dataBr(estado?.ultima_cobranca_em)}` : estado?.ultima_cobranca_em ? 'aprovada pelo Mercado Pago' : 'nenhuma ainda'}</small></dd></div>
           </dl>
         </section>
@@ -198,14 +215,15 @@ export function DetalhesAssinatura() {
           <div className="dp-cartao">
             <dl className="asn-ficha">
               <div><dt>Plano</dt><dd>{nomePlano}</dd></div>
-              <div><dt>Situação</dt><dd><span className={'asn-estado' + (a.comAcesso ? ' asn-estado--ok' : '')}><i aria-hidden="true" />{statusExibido}</span></dd></div>
+              <div><dt>Situação</dt><dd><span className={'asn-estado' + (a.comAcesso ? ' asn-estado--ok' : '')}><i aria-hidden="true" />{!a.comAcesso && cortesia.ativa ? 'Cortesia em vigor' : statusExibido}</span></dd></div>
               {a.comAcesso && <div><dt>Pagamento</dt><dd>{meio}</dd></div>}
               {(a.comAcesso || estado?.fim_periodo) && <div><dt>{a.pixAtivo || a.renovacaoDesligada ? 'Acesso até' : a.comAcesso ? 'Próxima cobrança' : 'Fim do último período'}</dt><dd>{dataBr(a.fimAcesso ?? estado?.fim_periodo)}</dd></div>}
               {a.comAcesso && a.fimAcesso && <div><dt>Dias de acesso</dt><dd>{dias(restam)} ({duracao(agora, a.fimAcesso)})</dd></div>}
+              {cortesia.ativa && <div><dt>Acesso de cortesia</dt><dd>{cortesia.semPrazo?'Sem prazo definido':`Até ${dataBr(cortesia.fim)}`}{origemCortesia?` · ${origemCortesia}`:''}</dd></div>}
               {estado?.ultima_cobranca_em && <div><dt>Última cobrança</dt><dd>{dataBr(estado.ultima_cobranca_em)}</dd></div>}
             </dl>
-            {!a.comAcesso && estado?.plano && <p className="asn-nota">Plano desta assinatura: {estado.plano}. {MENSAGENS_STATUS[a.status]?.explicacao}</p>}
-            {!a.comAcesso && <a className="dp-botao dp-botao--principal asn-botao-inicio" href={href('/assinatura')}>Conhecer os planos <Icone nome="direita" tamanho={16} /></a>}
+            {!temAcesso && estado?.plano && <p className="asn-nota">Plano desta assinatura: {estado.plano}. {MENSAGENS_STATUS[a.status]?.explicacao}</p>}
+            {!temAcesso && <a className="dp-botao dp-botao--principal asn-botao-inicio" href={href('/assinatura')}>Conhecer os planos <Icone nome="direita" tamanho={16} /></a>}
             <p className="asn-nota"><Icone nome="certo" tamanho={14} /> Tudo o que você estudou fica salvo, com ou sem plano: respostas, revisões, anotações e cronograma.</p>
           </div>
         </Secao>

@@ -1,3 +1,4 @@
+import type { ResumoAcesso } from '../../conta/resumoAcesso'
 import { pagamentosResolvidos } from './metricas'
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { usarConta } from '../../conta/ContextoConta'
@@ -110,6 +111,8 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
     // ir ao banco, e o botão Atualizar busca na hora.
     ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined, validadeMs: CINCO_MIN, prazoMs: 20_000,
   })
+  const acessosQ = usarRpc<Array<{id_usuario:string;resumo:ResumoAcesso}>>(conta,'listar_resumos_acesso_admin',{}, {ativo:COM_USUARIOS.includes(parte)||semContadores,atualizarCada:CINCO_MIN})
+  const acessos = useMemo(()=>new Map((acessosQ.dados??[]).map(l=>[l.id_usuario,l.resumo])),[acessosQ.dados])
   const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: COM_COBRANCAS.includes(parte) })
   const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const indicacoesQ = usarRpc<VisitaIndicacao[]>(conta, 'visitas_indicacao_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
@@ -133,7 +136,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   useEffect(() => { const t = window.setInterval(() => definirTique(Date.now()), 10_000); return () => window.clearInterval(t) }, [])
   // Administrador aparece em tudo, mas como não assinante, com o acesso "Cortesia de administrador" (Tales, 03/11/2026):
   // uma compra de teste na conta dele não o faz contar como assinante.
-  const usuarios = useMemo(() => usuariosQ.dados?.map(u => ({ ...u, plano_vigente: u.administrador ? null : u.plano_vigente ?? (cortesias.has(u.id_usuario) ? PLANO_CORTESIA : null), online: estaOnline(u, Math.max(tique, usuariosQ.atualizadoEm ?? 0)) })) ?? null, [usuariosQ.dados, usuariosQ.atualizadoEm, tique, cortesias])
+  const usuarios = useMemo(() => usuariosQ.dados?.map(u => ({ ...u, acesso_resumo:acessos.get(u.id_usuario), plano_vigente: u.administrador ? null : u.plano_vigente ?? (cortesias.has(u.id_usuario) ? PLANO_CORTESIA : null), online: estaOnline(u, Math.max(tique, usuariosQ.atualizadoEm ?? 0)) })) ?? null, [usuariosQ.dados, usuariosQ.atualizadoEm, tique, cortesias, acessos])
   const usuariosReais = useMemo(() => usuarios?.filter(u => !u.administrador && !contaDeTeste({ nome: u.nome, usuario: u.email }) && !foraPublico.has(u.id_usuario)) ?? null, [usuarios, foraPublico])
   const assinaturas = assinaturasQ.dados ?? null
   const reais = useMemo(() => assinaturas?.filter(a => !foraDosNumeros(a)) ?? null, [assinaturas])
@@ -153,7 +156,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
 
   const { recarregar: r1 } = assinaturasQ, { recarregar: r2 } = eventosQ, { recarregar: r3 } = resumoQ, { recarregar: r4 } = usuariosQ
   const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ, { recarregar: r8 } = cortesiasQ, { recarregar: r9 } = usoSupabaseQ, { recarregar: r10 } = foraQ
-  const atualizar = useCallback(async () => { await Promise.all([recarregarConsultasAtivas(conta), r1(), r2(), r3(), r4(), r5(), r6(), r7(), r8(), r9(), r10()]) }, [conta, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10])
+  const atualizar = useCallback(async () => { await Promise.all([recarregarConsultasAtivas(conta), r1(), r2(), r3(), r4(), r5(), r6(), r7(), r8(), r9(), r10(), acessosQ.recarregar()]) }, [conta, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, acessosQ.recarregar])
   const falha = resumoQ.erro ?? usuariosQ.erro
 
   const valor: DadosPainel = {

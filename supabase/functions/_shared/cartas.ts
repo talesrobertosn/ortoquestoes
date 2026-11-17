@@ -65,7 +65,7 @@ export function provaComArtigo(valor?: string | null): string {
 }
 // Tales, 15/11/2026: pagamento direto e cordial, sem P.S. ou frases de pressão disfarçada.
 export const TIPOS_SEM_PS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'pausa', 'sumiu', 'ativo', 'obrigado_assinatura', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma', 'cartao_recusado', 'pix_3_dias', 'pix_hoje', 'relatorio', 'boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo', 'assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'acesso_terminou', 'como_estao', 'simulado_lembrete']
-export const TIPOS_APOSENTADOS: readonly string[] = ['obrigado_assinatura', 'assinou_sem_cronograma']
+export const TIPOS_APOSENTADOS: readonly string[] = ['obrigado_assinatura', 'assinou_sem_cronograma', 'primeiras_10', 'voltou', 'cronograma_pronto']
 
 export interface InfoTipo { rotulo: string; descricao: string; grupo: 'situacao' | 'convite' | 'pessoal' | 'automatico' }
 export const TIPOS: Record<TipoCarta, InfoTipo> = {
@@ -89,9 +89,9 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   pix_hoje: { grupo: 'automatico', rotulo: 'Pix: termina hoje', descricao: 'O período de acesso pago no Pix termina hoje.' },
   relatorio: { grupo: 'automatico', rotulo: 'Resumo de estudo', descricao: 'Automático: a quinzena ou o mês contados como uma história.' },
   boas_vindas_dia0: { grupo: 'automatico', rotulo: 'Boas-vindas no dia da confirmação', descricao: 'Primeiro login depois de confirmar o e-mail: boas-vindas, as funções do site (questões, Cronograma, resumos) e o pedido para contar aos colegas.' },
-  primeiras_10: { grupo: 'automatico', rotulo: 'Primeiras 10 questões', descricao: 'Ao passar de 10 questões: o hábito começou.' },
-  voltou: { grupo: 'automatico', rotulo: 'Retomada do estudo', descricao: 'Primeiro login depois de 10 dias ou mais fora.' },
-  cronograma_pronto: { grupo: 'automatico', rotulo: 'Cronograma pronto', descricao: 'No dia em que a pessoa monta o plano até a prova.' },
+  primeiras_10: { grupo: 'automatico', rotulo: 'Primeiras 10 questões', descricao: 'Desativado pelo Tales em 17/11/2026. Histórico preservado; nenhum novo envio.' },
+  voltou: { grupo: 'automatico', rotulo: 'Retomada do estudo', descricao: 'Desativado pelo Tales em 17/11/2026. Histórico preservado; nenhum novo envio.' },
+  cronograma_pronto: { grupo: 'automatico', rotulo: 'Cronograma pronto', descricao: 'Desativado pelo Tales em 17/11/2026. Histórico preservado; nenhum novo envio.' },
   pagamento_aprovado: { grupo: 'automatico', rotulo: 'Obrigado pela assinatura', descricao: 'Sai quando a assinatura ou a renovação é aprovada: agradecimento, plano, período, o que libera e o link do cronograma. Transacional.' },
   obrigado_tempo: { grupo: 'automatico', rotulo: 'Obrigado pelo tempo de assinatura', descricao: 'Confirmação da solicitação de cancelamento ou reembolso.' },
   assinou_sem_cronograma: { grupo: 'automatico', rotulo: 'Assinou e não montou o cronograma', descricao: 'Aposentado: montar um cronograma é opcional.' },
@@ -110,7 +110,7 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
 /** Tipos que o administrador pode escolher na ficha (os automáticos ficam de fora). */
 export const TIPOS_MANUAIS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'sumiu', 'ativo', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma', 'acesso_terminou', 'como_estao']
 /** Os seis automáticos novos (17/10/2026), disparados por acontecimento, sem SQL novo. */
-export const TIPOS_AUTOMATICOS_NOVOS: readonly TipoCarta[] = ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo']
+export const TIPOS_AUTOMATICOS_NOVOS: readonly TipoCarta[] = ['boas_vindas_dia0', 'pagamento_aprovado', 'obrigado_tempo']
 /**
  * As dez campanhas diárias (nove da parte 31, 18/10/2026, e o lembrete do Simulado Nacional da
  * parte 32, 19/10/2026): o banco escolhe quem recebe
@@ -232,6 +232,7 @@ export interface DadosRelatorioCarta {
   totalAcumulado: number
   subiram: Array<{ slug: string; antes: number; agora: number }>
   cairam: Array<{ slug: string; antes: number; agora: number }>
+  melhorArea?: { slug: string; acerto: number; total: number } | null
   maisFraco: { slug: string; acerto: number } | null
   simulado: { titulo: string; acertos: number; total: number } | null
 }
@@ -870,8 +871,8 @@ export function tipoCombina(tipo: TipoCarta, p: PerfilCarta): boolean {
     case 'nunca_comecou': return r === 0
     case 'ativo': return acertoCitavel(p) !== null
     case 'marco': return r >= 100
-    case 'primeiras_10': return r >= MINIMO_PARA_NUMERO
-    case 'boas_vindas': case 'comecando': case 'comecou_parou': case 'pausa': case 'sumiu': case 'convite_20': case 'convite_50': case 'voltou': case 'assinante_parado_7': return r > 0
+    case 'primeiras_10': case 'voltou': case 'cronograma_pronto': return false
+    case 'boas_vindas': case 'comecando': case 'comecou_parou': case 'pausa': case 'sumiu': case 'convite_20': case 'convite_50': case 'assinante_parado_7': return r > 0
     // Pela ficha, sem a data do fim: "terminou há pouco". A tela Prontas só escolhe estas com o dado certo.
     case 'acesso_terminou': return !p.assinante && r > 0
     case 'como_estao': return r > 0

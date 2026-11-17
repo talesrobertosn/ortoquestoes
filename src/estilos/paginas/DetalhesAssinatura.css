@@ -92,3 +92,9 @@
   .asn-acoes .dp-botao, .asn-botao-inicio { flex: 1 1 100%; justify-self: stretch; }
 }
 .dpg .asn-arte { animation: none !important; transition: none !important; transform: none !important; }
+
+/* Origem e prazo do benefício, separados da cobrança da assinatura. */
+.asn-cortesia {margin-block:var(--e-5);padding:var(--e-4);background:var(--dp-papel);border:1px solid var(--dp-linha);border-radius:10px;overflow-wrap:anywhere}
+.asn-cortesia p {margin:0 0 var(--e-3)}
+.asn-cortesia ul {margin:0 0 var(--e-4);padding-left:1.25rem}
+.asn-cortesia .dp-botao {max-width:100%;white-space:normal;text-align:center}

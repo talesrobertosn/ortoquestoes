@@ -86,94 +86,31 @@ export const supabase = null
   assert.equal(await m.avisarConfirmacao(), 'enviado')
   assert.deepEqual(tipos(), ['boas_vindas_dia0', 'boas_vindas_dia0'])
 
-  // 3. "Tentar depois": ainda_nao, adiado e falhou não gravam a marca; erro de rede também não, e não sobe.
-  novaConta('conta-c')
-  for (const resultado of ['ainda_nao', 'adiado', 'falhou', 'sql_pendente']) {
-    falso.configurar({ resposta: { resultado } }); m.esquecerPedidosDaSessao()
-    assert.equal(await m.pedirAutomatico('primeiras_10'), resultado)
-    assert.equal(m.jaPedido('primeiras_10'), false, resultado)
+  // A confirmação tenta novamente quando há falha transitória, sem duplicar envio.
+  for(const resultado of ['ainda_nao','falhou','adiado','sql_pendente','email_nao_configurado']) {
+    novaConta(`confirmacao-${resultado}`);falso.configurar({resposta:{resultado}})
+    assert.equal(await m.pedirAutomatico('boas_vindas_dia0'),resultado)
+    assert.equal(m.jaPedido('boas_vindas_dia0'),false)
+    falso.configurar({resposta:{resultado:'enviado'}})
+    assert.equal(await m.pedirAutomatico('boas_vindas_dia0'),'enviado')
   }
-  falso.configurar({ falhar: true }); m.esquecerPedidosDaSessao()
-  assert.equal(await m.pedirAutomatico('primeiras_10'), null, 'erro de rede vira null')
-  assert.equal(m.jaPedido('primeiras_10'), false)
-  // Respostas definitivas (enviado, ja_enviado, nao_quer, sem_email) gravam a marca.
-  for (const resultado of ['ja_enviado', 'nao_quer', 'sem_email']) {
-    novaConta(`conta-${resultado}`); falso.configurar({ resposta: { resultado } })
-    assert.equal(await m.pedirAutomatico('primeiras_10'), resultado)
-    assert.equal(m.jaPedido('primeiras_10'), true, resultado)
-  }
-
-  // 4. Primeiras 10 questões: junto do marco, só a partir de 10, uma vez; o marco continua funcionando.
-  novaConta('conta-d')
-  await m.verificarMarcoEmail(7); await esperar()
-  assert.deepEqual(tipos(), [], 'com 7 questões nada sai')
-  assert.equal(await m.avisarPrimeirasDez(9), null)
-  await m.verificarMarcoEmail(12); await esperar()
-  assert.deepEqual(tipos(), ['primeiras_10'])
-  await m.verificarMarcoEmail(30); await esperar()
-  assert.deepEqual(tipos(), ['primeiras_10'], 'não repete na mesma conta')
-  assert.deepEqual(falso.chamadas.filter((c) => c.corpo.acao === 'marco').length, 0, 'com 30 questões ainda não há marco de carta')
-  await m.verificarMarcoEmail(105); await esperar()
-  assert.equal(falso.chamadas.filter((c) => c.corpo.acao === 'marco').length, 1, 'o marco de 100 continua sendo pedido')
-
-  // 5. Que bom te ver de volta: só com 10 dias ou mais fora; a ausência vem da última visita deste aparelho
-  //    ou, num aparelho novo, da última resposta sincronizada antes desta sessão.
-  const resp = (quando) => ({ 'mao-0001': { c: true, q: quando, historico: [{ em: quando, correta: true, confianca: 'seguro' }] } })
-  novaConta('conta-e')
-  assert.equal(m.diasForaDe({}, AGORA - 1000, AGORA), null, 'sem dado, não dá para saber')
-  assert.equal(m.diasForaDe(resp(AGORA - 12 * DIA), AGORA - 1000, AGORA), 12)
-  assert.equal(m.diasForaDe(resp(AGORA - 3 * DIA), AGORA - 1000, AGORA), 3)
-  // Uma resposta dada nesta sessão (depois de voltar) não zera a ausência.
-  assert.equal(m.diasForaDe({ ...resp(AGORA - 12 * DIA), 'mao-0002': { c: true, q: AGORA - 60_000 } }, AGORA - 5 * 60_000, AGORA), 12)
-  assert.equal(await m.conferirRetorno(resp(AGORA - 3 * DIA), AGORA - 1000, AGORA), null)
-  assert.deepEqual(tipos(), [], 'com 3 dias fora nada sai')
-  novaConta('conta-f')
-  assert.equal(await m.conferirRetorno(resp(AGORA - 12 * DIA), AGORA - 1000, AGORA), 'enviado')
-  assert.deepEqual(automaticos().map((c) => [c.corpo.tipo, c.corpo.dias_fora]), [['voltou', 12]])
-  assert.equal(m.jaPedido('voltou', AGORA), true)
-  // No dia seguinte a visita de hoje já foi registrada: 1 dia fora, nada sai.
-  m.esquecerPedidosDaSessao()
-  assert.equal(await m.conferirRetorno(resp(AGORA - 12 * DIA), AGORA + DIA - 1000, AGORA + DIA), null)
-  assert.deepEqual(tipos().length, 1)
-  // Volta de novo depois de 20 dias sem abrir: outra carta (a marca do "voltou" é por dia).
-  m.esquecerPedidosDaSessao()
-  assert.equal(await m.conferirRetorno(resp(AGORA - 12 * DIA), AGORA + 21 * DIA - 1000, AGORA + 21 * DIA), 'enviado')
-  assert.deepEqual(automaticos().map((c) => c.corpo.dias_fora), [12, 20])
-  // Marca do dia impede repetir no mesmo dia mesmo em sessão nova.
-  m.esquecerPedidosDaSessao()
-  assert.equal(await m.pedirAutomatico('voltou', { dias_fora: 20 }, AGORA + 21 * DIA + 3600_000), null)
-
-  // 6. Cronograma pronto: depois de salvarPlano (com dias para a prova e a prova), uma vez; não nas regravações internas.
-  novaConta('conta-g')
-  const dadosPlano = { p_data_prova: '2027-01-10', p_intensidade: 'normal', p_folgas: [0], p_prova: 'TEOT', p_base: 120, p_recomecar: true }
-  await m.salvarPlano(dadosPlano, true, { semanasDificeis: [] }); await esperar()
-  assert.equal(automaticos().length, 1)
-  assert.equal(automaticos()[0].corpo.tipo, 'cronograma_pronto')
-  assert.equal(automaticos()[0].corpo.prova, 'TEOT')
-  assert.ok(automaticos()[0].corpo.dias_para_prova >= 80 && automaticos()[0].corpo.dias_para_prova <= 90, `dias para a prova: ${automaticos()[0].corpo.dias_para_prova}`)
-  await m.salvarPlano(dadosPlano, true, { semanasDificeis: [] }); await esperar()
-  assert.equal(automaticos().length, 1, 'salvar de novo não repete')
-  await m.salvarOpcoes(() => ({ semanasDificeis: ['2026-10-19'] })); await esperar()
-  await m.ficarSoComOficiais(falso.plano); await esperar()
-  assert.equal(automaticos().length, 1, 'mudar opções ou tirar os simulados não pede a carta')
-  assert.ok(falso.rpcs.some((r) => r.nome === 'salvar_plano_estudo'), 'o plano foi salvo')
-  // Servidor sem o cronograma gravado ainda ("sem_cronograma"): tenta de novo na próxima vez que salvar.
-  novaConta('conta-h'); falso.configurar({ resposta: { resultado: 'sem_cronograma' } })
-  await m.salvarPlano(dadosPlano, true); await esperar()
-  assert.equal(m.jaPedido('cronograma_pronto'), false)
-  falso.configurar({ resposta: { resultado: 'enviado' } }); m.esquecerPedidosDaSessao()
-  await m.salvarPlano(dadosPlano, true); await esperar()
-  assert.equal(automaticos().length, 2)
-  assert.equal(m.jaPedido('cronograma_pronto'), true)
-  // Um erro na função não derruba o salvamento do plano.
-  novaConta('conta-i'); falso.configurar({ falhar: true })
-  const salvo = await m.salvarPlano(dadosPlano, true); await esperar()
-  assert.ok(salvo && salvo.data_prova === '2027-01-10', 'o plano foi salvo mesmo com a função fora')
-
-  // 7. Nenhum gatilho do site pede os dois tipos que são do servidor.
-  assert.ok(!tipos().some((t) => t === 'pagamento_aprovado' || t === 'obrigado_tempo'))
-
-  console.log(`Gatilhos dos automáticos no site: ok (${falso.contagem.total} chamadas à função conferidas; boas_vindas_dia0, primeiras_10, voltou e cronograma_pronto uma vez só, nas condições certas).`)
+  // Os três tipos removidos não fazem chamadas, mesmo se um chamador antigo insistir.
+  novaConta('removidos')
+  for(const tipo of ['primeiras_10','voltou','cronograma_pronto']) assert.equal(await m.pedirAutomatico(tipo,{dias_fora:30}),null)
+  await m.avisarPrimeirasDez(15)
+  await m.conferirRetorno({'q':{q:AGORA-30*DIA}},AGORA-1000,AGORA)
+  await m.avisarCronogramaPronto('2027-01-10','TEOT',AGORA)
+  assert.deepEqual(tipos(),[])
+  await m.verificarMarcoEmail(12);await esperar();assert.equal(falso.chamadas.length,0)
+  await m.verificarMarcoEmail(105);await esperar();assert.equal(falso.chamadas.filter(c=>c.corpo.acao==='marco').length,1)
+  // Salvar e ajustar o cronograma continua funcionando, sem gerar e-mail.
+  novaConta('cronograma-sem-email')
+  const dadosPlano={p_data_prova:'2027-01-10',p_intensidade:'normal',p_folgas:[0],p_prova:'TEOT',p_base:120,p_recomecar:true}
+  await m.salvarPlano(dadosPlano,true,{semanasDificeis:[]});await esperar()
+  await m.salvarOpcoes(()=>({semanasDificeis:['2026-10-19']}));await esperar()
+  assert.ok(falso.rpcs.some(r=>r.nome==='salvar_plano_estudo'))
+  assert.deepEqual(tipos(),[])
+  console.log('Gatilhos: boas-vindas com retry e deduplicação; três tipos removidos sem chamadas; conquistas preservadas; cronograma salvo sem e-mail.')
 } finally {
   mock.timers.reset()
   await rm(pasta, { recursive: true, force: true })

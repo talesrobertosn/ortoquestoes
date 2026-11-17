@@ -36,11 +36,11 @@ try {
     assert.equal(m.diasAteVencimento('2026-11-16T13:00:00Z', agora), 1)
     assert.equal(m.diasAteVencimento('invalida', agora), null)
     const html = u => renderToStaticMarkup(createElement(m.ResumoPessoa, { usuario: u, assinatura: ultimo }))
-    assert.match(html({ ...base, plano_vigente: 'mensal' }), /Acesso até/)
+    assert.match(html({ ...base, plano_vigente: 'mensal' }), /Pago até/)
     const compacto = renderToStaticMarkup(createElement(m.ResumoPessoa, { usuario: base, mostrarEmail: false }, 'Assinante'))
     assert.doesNotMatch(compacto, /ana@example.test/)
     assert.match(compacto, /Assinante/)
-    for (const u of [{ ...base }, { ...base, plano_vigente: 'cortesia' }, { ...base, plano_vigente: 'mensal', administrador: true }]) assert.doesNotMatch(html(u), /Acesso até/)
+    for (const u of [{ ...base }, { ...base, plano_vigente: 'cortesia' }, { ...base, plano_vigente: 'mensal', administrador: true }]) assert.doesNotMatch(html(u), /Pago até/)
   }
   const ler = (texto) => m.lerUrl(new URLSearchParams(texto))
   const ida = (texto) => m.urlDe(ler(texto))
@@ -229,16 +229,16 @@ try {
     const cat = m.catalogo
     const modelos = cat.modelosDoCatalogo()
     const tipos = new Set(modelos.map(x => x.tipo))
-    assert.equal(tipos.size, 35, 'agradecimento duplicado e cobrança por cronograma aposentados')
+    assert.equal(tipos.size, 32, 'agradecimento duplicado e cobrança por cronograma aposentados')
     assert.equal(tipos.has('obrigado_assinatura'), false)
     assert.equal(tipos.has('assinou_sem_cronograma'), false)
     assert.equal(modelos.filter(x => x.tipo === 'ativo').length, 9, 'as 9 faixas')
-    assert.equal(modelos.length, 35 - 1 + 9)
+    assert.equal(modelos.length, 32 - 1 + 9)
     assert.equal(new Set(modelos.map(x => x.id)).size, modelos.length, 'id repetido')
     for (const grupo of ['situacao', 'faixa', 'convite', 'pessoal', 'automatico', 'novo', 'campanha']) assert.ok(modelos.some(x => x.grupo === grupo), grupo)
-    assert.equal(modelos.filter(x => x.grupo === 'novo').length, 6)
+    assert.equal(modelos.filter(x => x.grupo === 'novo').length, 3)
     assert.equal(modelos.filter(x => x.grupo === 'campanha').length, 9, 'as 9 campanhas diárias (parte 31 e o lembrete do simulado, parte 32)')
-    for (const x of modelos.filter(x => x.grupo === 'campanha')) assert.ok(/candidatos_|Agendador/.test(x.gatilho.quando) && /cadência/.test(x.gatilho.paraQuem), `${x.id}: gatilho da campanha`)
+    for (const x of modelos.filter(x => x.grupo === 'campanha')) assert.ok(/candidatos_|Central/.test(x.gatilho.quando) && /cadência/.test(x.gatilho.paraQuem), `${x.id}: gatilho da campanha`)
     for (const x of modelos) {
       assert.ok(x.rotulo && x.descricao && x.gatilho.quando.length >= 10 && x.gatilho.paraQuem.length >= 10 && x.pessoa, `${x.id}: faltou rótulo, descrição, gatilho ou pessoa`)
       // Pedido do Tales (22/10/2026): as boas-vindas têm uma versão só, fixa.
@@ -258,7 +258,7 @@ try {
     }
     assert.equal(modelos.filter(x => x.transacional).map(x => x.tipo).sort().join(','), 'obrigado_tempo,pagamento_aprovado,pix_hoje')
     assert.ok(!cat.combinaBusca(modelos[0], null, 'xyzw-nada-disso'))
-    assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'voltou'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
+    assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'sumiu'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
   }
 
   console.log('Painel 3.0: 8 áreas e 18 itens (Central de e-mails), Crescimento numa página só, Assinantes à parte, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')

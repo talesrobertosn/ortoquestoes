@@ -2,7 +2,7 @@ import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
 import { CAMPANHAS_DIARIAS, MARCOS, automaticoBloqueado, ehCampanhaDiaria, ehTransacional, emailAutomatico, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, marcoComCarta, tipoAutomaticoValido, type CampanhaLembrete, type DadosRelatorio, type Marco, type TipoAutomatico, type TipoCampanhaDiaria } from '../_shared/modelo-email.ts'
 import { permiteEnvio, preferenciasDaLinha, type CategoriaEmail } from '../_shared/preferencias.ts'
-import { perfilDosDados, problemaGrave, problemaDeTomCarta, renderizarCarta, type DadosCampanha, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
+import { TIPOS_APOSENTADOS, perfilDosDados, problemaGrave, problemaDeTomCarta, renderizarCarta, type DadosCampanha, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -114,6 +114,14 @@ async function bloqueioCentral(id: string, tipo: string, categoria: string, refe
   return await r.json() as string | null
 }
 
+/** O agendamento tem credencial própria, limitada ao relatório mensal ou quinzenal. */
+async function agendamentoRelatorioValido(segredo: string, acao: string) {
+  if (await segredoValido(segredo)) return true
+  if (!/^[a-f0-9]{64}$/.test(segredo)) return false
+  const r = await banco('rpc/email_autenticar_relatorio', { method: 'POST', body: JSON.stringify({ p_segredo: segredo, p_acao: acao }) })
+  return r.ok && await r.json() === true
+}
+
 async function ehAdministrador(id: string) {
   const r = await banco(`administradores?id_usuario=eq.${encodeURIComponent(id)}&select=id_usuario`)
   return r.ok && (await r.json() as unknown[]).length > 0
@@ -220,7 +228,7 @@ const esperar = (ms: number) => new Promise((resolver) => setTimeout(resolver, m
  * registrada e é tentada de novo no próximo lote. O Resend aceita 2 envios
  * por segundo no plano grátis, daí a pausa entre um e outro.
  */
-async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinzenal = false) {
+async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinzenal = false, simular = false) {
   const mes = quinzenal ? quinzenaValida(mesPedido) : mesValido(mesPedido)
   const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80))
   // Busca uma janela grande e pula quem está segurado (descadastro ou cadência) sem parar o lote:
@@ -230,6 +238,7 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     : await banco('rpc/destinatarios_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_mes: mes, p_limite: JANELA_RELATORIO }) })
   if (!r.ok) throw new Error('consulta_destinatarios_falhou')
   const destinatarios = (await r.json() as Array<{ id_usuario: string }>).map((d) => d.id_usuario)
+  if (simular) return { mes, simulacao: true, candidatas: destinatarios.length, limite }
   let enviados = 0, falhas = 0, adiados = 0, recusados = 0, vistos = 0
   const inicio = Date.now()
   for (const id of destinatarios) {
@@ -257,6 +266,7 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     } catch (falha) {
       await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? 'falhou' : 'enviando', erro: motivo(falha) }) })
       falhas++
+      if (/envio_recusado_(429|401|403)\b/.test(motivo(falha))) break
     }
     await esperar(600)
   }
@@ -358,6 +368,7 @@ const UMA_VEZ: readonly string[] = ['boas_vindas_dia0', 'primeiras_10', 'cronogr
  * transacionais), o e-mail confirmado e o teto de cadência (este, menos nos transacionais).
  */
 async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: PedidoAutomatico, por: string | null) {
+  if (TIPOS_APOSENTADOS.includes(tipo)) return { resultado: 'desativado' }
   if (!emailConfigurado()) return { resultado: 'email_nao_configurado' }
   const transacional = ehTransacional(tipo)
   // Quem é a pessoa e o que ela permite (parte 27); sem ela, os dados antigos.
@@ -565,15 +576,15 @@ Deno.serve(async (req) => {
 
     // Relatório mensal pelo agendador (cron): autenticado pelo segredo, sem usuário.
     if (corpo.acao === 'relatorios_mensais' && req.headers.get('x-segredo')) {
-      if (!await segredoValido(req.headers.get('x-segredo')!)) return json({ erro: 'acesso_negado' }, 403, req)
-      return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req)
+      if (!await agendamentoRelatorioValido(req.headers.get('x-segredo')!, 'relatorios_mensais')) return json({ erro: 'acesso_negado' }, 403, req)
+      return json(await enviarRelatorios(corpo.mes, corpo.limite, false, corpo.simular === true), 200, req)
     }
 
     // Resumo quinzenal pelo agendador (dias 1 e 16): autenticado pelo segredo, sem usuário.
     if (corpo.acao === 'relatorios_quinzenais' && req.headers.get('x-segredo')) {
-      if (!await segredoValido(req.headers.get('x-segredo')!)) return json({ erro: 'acesso_negado' }, 403, req)
+      if (!await agendamentoRelatorioValido(req.headers.get('x-segredo')!, 'relatorios_quinzenais')) return json({ erro: 'acesso_negado' }, 403, req)
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
-      return json(await enviarRelatorios(corpo.quinzena, corpo.limite, true), 200, req)
+      return json(await enviarRelatorios(corpo.quinzena, corpo.limite, true, corpo.simular === true), 200, req)
     }
 
     // Lembrete de renovação do Pix pelo agendador diário: autenticado pelo segredo, sem usuário.

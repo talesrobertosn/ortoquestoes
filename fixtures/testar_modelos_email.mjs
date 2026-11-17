@@ -118,7 +118,7 @@ try {
     ignorarCadencia: true,
   }
   const gerar = (perfil, op) => m.gerarCarta(perfil, { hoje: HOJE, site: SITE, ...EXTRAS, ...op })
-  const TODOS = Object.keys(m.TIPOS)
+  const TODOS = Object.keys(m.TIPOS).filter(t=>!['primeiras_10','voltou','cronograma_pronto'].includes(t))
 
   // 1. Faixas de acerto: escolha automática, faixa certa, variedade e todas as versões aparecem.
   const meio = { '0-10': 5, '10-20': 15, '20-30': 25, '30-40': 35, '40-60': 50, '60-70': 65, '70-80': 75, '80-90': 85, '90-100': 95 }
@@ -416,18 +416,15 @@ try {
     }
   }
   const CAMPANHAS = [ 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
-  assert.deepEqual([...auto.TIPOS_AUTOMATICOS], ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo', ...CAMPANHAS])
+  assert.deepEqual([...auto.TIPOS_AUTOMATICOS], ['boas_vindas_dia0', 'pagamento_aprovado', 'obrigado_tempo', ...CAMPANHAS])
   assert.deepEqual([...auto.CAMPANHAS_DIARIAS], CAMPANHAS)
   for (const t of CAMPANHAS) assert.ok(auto.ehCampanhaDiaria(t) && !auto.ehTransacional(t), t)
   assert.equal(auto.ehCampanhaDiaria('voltou'), false)
-  assert.equal(auto.tipoAutomaticoValido('voltou'), 'voltou')
+  assert.equal(auto.tipoAutomaticoValido('voltou'), null)
   assert.equal(auto.tipoAutomaticoValido('marco'), null)
   const base = { nome: 'Ana Paula', respondidas: 12, site: SITE, linkDescadastro: desc, hoje: HOJE }
   const casos = [
     ['boas_vindas_dia0', { respondidas: 0 }, /Tales/],
-    ['primeiras_10', { respondidas: 11 }, /dez/i],
-    ['voltou', { respondidas: 300, diasFora: 15, perfil: rico(70, { diasParado: 15 }) }, /revisão|sessão|continuar/i],
-    ['cronograma_pronto', { diasParaProva: 87, provaCronograma: 'TEOT' }, /87 dias/],
     ['pagamento_aprovado', { pagamento: EXTRAS.pagamento, referencia: 'pg:1' }, /semestral|aprovad|liberad/i],
     ['obrigado_tempo', { encerramento: { reembolso: true, fimEm: null } }, /reembolso/i],
   ]
@@ -443,12 +440,15 @@ try {
     }
   }
   // Os não transacionais respeitam a cadência; os transacionais saem mesmo assim.
-  assert.throws(() => auto.emailAutomatico({ ...base, tipo: 'primeiras_10', anteriores: [envio(10)] }), /cadencia_bloqueada/)
+  assert.throws(() => auto.emailAutomatico({ ...base, tipo: 'boas_vindas_dia0', anteriores: [envio(10)] }), /cadencia_bloqueada/)
   assert.ok(auto.emailAutomatico({ ...base, tipo: 'pagamento_aprovado', pagamento: EXTRAS.pagamento, anteriores: [envio(10)] }).texto)
   assert.ok(auto.emailAutomatico({ ...base, tipo: 'obrigado_tempo', encerramento: EXTRAS.encerramento, anteriores: [envio(10)] }).texto)
   // "voltou" nunca diz menos de 10 dias; "primeiras_10" só com 10.
   assert.throws(() => auto.emailAutomatico({ ...base, tipo: 'primeiras_10', respondidas: 9 }), /tipo_nao_combina/)
-  assert.ok(/revisão|sessão|continuar/i.test(auto.emailAutomatico({ ...base, tipo: 'voltou', respondidas: 50, diasFora: 15, semente: 2 }).texto))
+  for (const tipo of ['primeiras_10','voltou','cronograma_pronto']) {
+    assert.equal(auto.tipoAutomaticoValido(tipo),null)
+    assert.throws(()=>auto.emailAutomatico({...base,tipo,respondidas:50}),/tipo_nao_combina/)
+  }
 
   // 12b. As dez campanhas diárias (parte 31 e o lembrete do simulado da parte 32): milhares de sorteios com os dados que o banco manda
   //      (e sem eles), perfis ricos e pobres; nenhuma é transacional, todas levam descadastro e
@@ -554,7 +554,7 @@ try {
   assert.equal(m.frasesSeguidasRepetem('Vi as 35 questões desta última semana, e fiquei feliz.\n\nFico feliz de acompanhar o seu caminho.'), 'feliz')
   // Um perfil que puxa "fiquei feliz" (ritmo da semana, ranking) em milhares de sorteios nunca sai com dois "feliz" seguidos nem com P.S. repetido.
   const puxaFeliz = rico(72, { semana: 80, posicaoRanking: 8 })
-  for (const tipo of ['ativo', 'convite_50', 'voltou', 'marco', 'opiniao', 'obrigado_assinatura'])
+  for (const tipo of ['ativo', 'convite_50', 'marco', 'opiniao', 'obrigado_assinatura'])
     for (let s = 1; s <= 200; s++) semRedundancia(gerar({ ...puxaFeliz, diasParado: tipo === 'voltou' ? 15 : 0 }, { tipo, semente: s, marco: 250 }).corpo, `${tipo} puxa-feliz #${s}`)
 
   console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length - auto.CAMPANHAS_DIARIAS.length} automáticos novos e ${auto.CAMPANHAS_DIARIAS.length} campanhas diárias), ${conferidas} cartas conferidas: lista proibida do TOM, nenhuma porcentagem abaixo de 50% (${baixos} cartas), nenhum número de questões abaixo de 10, 3 a 12 linhas, sem P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias), sem fechamento retórico de pressão, nenhuma palavra forte em frases seguidas e tom em ${sorteios} sorteios.`)

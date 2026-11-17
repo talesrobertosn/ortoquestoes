@@ -44,7 +44,7 @@ const PIX = {
   qr_code_base64: 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==',
 }
 
-async function abrir(navegador, { logado = true, largura = 1400, altura = 860, pix = PIX, statusPix = 'pending', movimento = 'no-preference', rota = '#/assinatura', precosAntigos = [] } = {}) {
+async function abrir(navegador, { logado = true, largura = 1400, altura = 860, pix = PIX, statusPix = 'pending', movimento = 'no-preference', rota = '#/assinatura', precosAntigos = [], resumoAcesso = null, estadoConta = null } = {}) {
   const agora = Math.floor(Date.now() / 1000)
   const user = { id: uid, aud: 'authenticated', role: 'authenticated', email: 'ana@exemplo.com', app_metadata: {}, user_metadata: { nome: 'Ana', termos_versao: VERSAO, provas_interesse: ['teot'], situacao: 'residente', ano_residencia: 'r3' } }
   const sessao = { access_token: `${b64({ alg: 'HS256' })}.${b64({ sub: uid, exp: agora + 36000 })}.x`, token_type: 'bearer', expires_in: 36000, expires_at: agora + 36000, refresh_token: 'r', user }
@@ -65,7 +65,9 @@ async function abrir(navegador, { logado = true, largura = 1400, altura = 860, p
       return r.fulfill({ json: {} })
     }
     if (u.includes('meus_precos_antigos')) return r.fulfill({ json: precosAntigos })
-    if (u.includes('obter_estado_conta')) return r.fulfill({ json: [{ respostas_total: 312, sequencia: 4, plano: null, status_assinatura: null, fim_periodo: null, ultima_cobranca_em: null, cancelar_ao_fim: false }] })
+    if (u.includes('obter_resumo_acesso')) return r.fulfill({json:resumoAcesso??{pago_ate:null,ultimo_periodo_pago_ate:null,cortesia:null}})
+    if (u.includes('obter_acesso_premium')) return r.fulfill({json:[{premium:!!resumoAcesso?.cortesia?.ativa,motivo:resumoAcesso?.cortesia?.ativa?'cortesia':'nenhum',recursos_exclusivos:true,pagamentos_ativos:true}]})
+    if (u.includes('obter_estado_conta')) return r.fulfill({ json: [estadoConta??{ respostas_total: 312, sequencia: 4, plano: null, status_assinatura: null, fim_periodo: null, ultima_cobranca_em: null, cancelar_ao_fim: false }] })
     if (u.includes('/auth/v1/user')) return r.fulfill({ json: user })
     return r.fulfill({ json: [] })
   })
@@ -75,7 +77,9 @@ async function abrir(navegador, { logado = true, largura = 1400, altura = 860, p
     if (entrar) { localStorage.setItem('sb-ortoquestoes-auth', s); localStorage.setItem('oq-aparelho-conta', id) }
   }, [JSON.stringify(sessao), uid, logado])
   await pagina.goto(BASE + rota)
-  await pagina.locator('.vd-heroi h1, .ck').first().waitFor({ timeout: 15000 })
+  await pagina.locator('.vd-heroi h1, .ck, #asn-titulo').first().waitFor({ timeout: 15000 })
+  const cookies=pagina.getByRole('button',{name:'Agora não',exact:true})
+  if(await cookies.isVisible()) await cookies.evaluate(e=>e.click())
   return { contexto, pagina, chamadas, erros }
 }
 
@@ -272,6 +276,23 @@ try {
         await pagina.screenshot({ path: join(process.env.PRINTS, 'suporte-celular.png') })
       }
     }
+    await contexto.close()
+  }
+  // Cortesia depois do período pago: datas e indicação na tela; compra soma os dias.
+  const resumoCortesia={pago_ate:null,ultimo_periodo_pago_ate:new Date(Date.now()-864e5).toISOString(),cortesia:{ate:new Date(Date.now()+7*864e5).toISOString(),ativa:true,sem_prazo:false,por_indicacao:true,origens:[{nome:'Bruno',dias:7,tipo:'indicou',em:new Date().toISOString()}]}}
+  const encerrada={plano:'mensal',status_assinatura:'vencida',fim_periodo:resumoCortesia.ultimo_periodo_pago_ate,ultima_cobranca_em:null,cancelar_ao_fim:true}
+  for (const largura of [320,390,1440]) for(const tema of ['claro','escuro']) {
+    const {contexto,pagina,erros}=await abrir(navegador,{largura,rota:'#/conta/assinatura',resumoAcesso:resumoCortesia,estadoConta:encerrada,movimento:'reduce'})
+    await pagina.locator('.asn-cortesia').waitFor()
+    await pagina.evaluate(t=>document.documentElement.dataset.tema=t,tema)
+    assert.match(await pagina.locator('.asn-topo__painel').innerText(),/cortesia/)
+    assert.match(await pagina.locator('.asn-cortesia').innerText(),/Bruno/)
+    assert.match(await pagina.locator('.asn-cortesia').innerText(),/7 dias/)
+    assert.match(await pagina.locator('.asn-cortesia').innerText(),/preservados/)
+    assert.ok(await pagina.getByRole('link',{name:'Renovar e somar mais tempo'}).count())
+    assert.equal(await pagina.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`overflow cortesia ${largura} ${tema}`)
+    assert.deepEqual(erros,[])
+    if(process.env.PRINTS) { await pagina.setViewportSize({width:largura,height:2000}); await pagina.locator('.asn-topo').screenshot({path:join(process.env.PRINTS,`cortesia-${largura}-${tema}.png`)}) }
     await contexto.close()
   }
   console.log('Compra pela página de planos: ok (visitante, Pix com QR, Pix confirmado, Pix sem QR, cartão, volta com plano, preço antigo, celular)')

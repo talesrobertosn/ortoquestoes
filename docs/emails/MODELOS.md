@@ -28,18 +28,15 @@ Todas as cartas saem só em texto, com linguagem clara e cordial (docs/emails/TO
 | Convite para assinar (mais de 20 questões) | 6 | 257 textos e 6 assuntos diferentes em 400 sorteios |
 | Convite pessoal (mais de 50 questões) | 6 | 257 textos e 6 assuntos diferentes em 400 sorteios |
 | Reta final | 6 | 185 textos e 6 assuntos diferentes em 400 sorteios |
-| Marco de questões (100, 250, 500, 1.000, 2.000) | 6 | 164 textos e 6 assuntos diferentes em 400 sorteios |
+| Marco de questões (100, 250, 500, 1.000, 2.000) | 6 | 137 textos e 6 assuntos diferentes em 400 sorteios |
 | Pedir opinião | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 | Pedir para indicar | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 | Apresentar o cronograma | 5 | 185 textos e 5 assuntos diferentes em 400 sorteios |
 | Ajuda com o cartão | 5 | 127 textos e 5 assuntos diferentes em 400 sorteios |
 | Pix: faltam 3 dias | 5 | 257 textos e 5 assuntos diferentes em 400 sorteios |
 | Pix: termina hoje | 5 | 257 textos e 5 assuntos diferentes em 400 sorteios |
-| Resumo de estudo | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
+| Resumo de estudo | 5 | 15 textos e 5 assuntos diferentes em 400 sorteios |
 | Boas-vindas no dia da confirmação | 1 | 15 textos e 1 assuntos diferentes em 400 sorteios |
-| Primeiras 10 questões | 6 | 156 textos e 6 assuntos diferentes em 400 sorteios |
-| Retomada do estudo | 6 | 384 textos e 6 assuntos diferentes em 400 sorteios |
-| Cronograma pronto | 5 | 185 textos e 5 assuntos diferentes em 400 sorteios |
 | Obrigado pela assinatura | 5 | 45 textos e 5 assuntos diferentes em 400 sorteios |
 | Obrigado pelo tempo de assinatura | 5 | 15 textos e 5 assuntos diferentes em 400 sorteios |
 | Assinou e não montou o cronograma | 5 | 185 textos e 5 assuntos diferentes em 400 sorteios |
@@ -428,20 +425,20 @@ Tales, do Orto Questões
 Fernanda acabou de assinar.
 
 **Assunto:** Fernanda, confirmação do seu plano
-*Versão obrigado_assinatura#v24*
+*Versão obrigado_assinatura#v44*
 
 ```text
 Fernanda, tudo bem por aí?
 
-O pagamento da sua assinatura foi aprovado.
+O pagamento foi aprovado e seu acesso está ativo. Obrigado pela assinatura!
 
-O plano confirmado é o semestral.
+Plano confirmado: semestral.
 
-O período de acesso vai até 17/04.
+Seu acesso pago vai até 17/04/2027.
 
-Você pode consultar o período e gerenciar a renovação em Minha assinatura.
+O pagamento foi confirmado no cartão. Em Minha assinatura você consulta o período, a renovação e os recibos.
 
-Para consultar os detalhes do seu plano: ortoquestoes.com.br/#/conta/assinatura
+Para consultar seu plano: ortoquestoes.com.br/#/conta/assinatura
 
 Se precisar de ajuda com o site, basta responder este e-mail.
 
@@ -559,19 +556,19 @@ Tales, do Orto Questões
 
 Júlia passou de 500.
 
-**Assunto:** Júlia, seu progresso de estudo
-*Versão marco#v26 · personalizada com: posição no ranking*
+**Assunto:** Júlia, um marco para comemorar
+*Versão marco#v46 · personalizada com: posição no ranking*
 
 ```text
 Oi, Júlia, tudo bem?
 
-Você chegou ao marco de 500 questões respondidas. Parabéns!
+Você completou 500 questões no Orto Questões. Parabéns pela dedicação ao estudo!
 
 Você está na 7ª posição do ranking geral. Parabéns! Siga fazendo as questões e revisando os temas para continuar avançando.
 
-A Revisão reúne os assuntos do seu histórico para a próxima sessão.
+A próxima sessão pode ser dedicada a refazer questões e conferir o raciocínio de cada alternativa.
 
-Para consultar seu histórico e sua revisão: ortoquestoes.com.br/#/revisao
+Sua revisão está aqui: ortoquestoes.com.br/#/revisao
 
 Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
 
@@ -651,18 +648,18 @@ Tales, do Orto Questões
 
 Sai sozinho ao passar do marco (100, 250, 500, 1.000, 2.000), uma vez por marco.
 
-**Assunto:** Lívia, seu histórico está crescendo
+**Assunto:** Lívia, seu progresso nas questões
 
 ```text
 Oi, Lívia, tudo bem?
 
-Você chegou ao marco de 100 questões respondidas. Parabéns!
+Você completou 100 questões no Orto Questões. Parabéns pela dedicação ao estudo!
 
 Foram 35 questões nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?
 
-Na Revisão, você encontra as questões indicadas para retomar os temas já estudados.
+Para aproveitar esse treino, vale voltar às questões que trouxeram dúvidas e reler os comentários.
 
-Para consultar seu histórico e sua revisão: ortoquestoes.com.br/#/revisao
+Sua revisão está aqui: ortoquestoes.com.br/#/revisao
 
 Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
 
@@ -815,22 +812,24 @@ Se preferir não receber mais lembretes de estudo: https://ortoquestoes.com.br/#
 
 Para quem estudou na quinzena: uma história, não uma tabela.
 
-**Assunto:** Marina, o estudo neste período
+**Assunto:** Marina, seu progresso e a próxima revisão
 
 ```text
-Oi, Marina, tudo bem?
+Olá, Marina, tudo bem?
 
-Este é seu resumo de estudo de 1 a 15 de outubro.
+Separei seu resumo de estudo de 1 a 15 de outubro, com uma sugestão para a próxima sessão.
 
-No período, você respondeu 84 questões.
+Você respondeu 84 questões neste período, distribuídas em 6 dias de estudo.
 
-O acerto no período foi de 71%. O resultado subiu 11 pontos em relação ao período anterior.
+Sua taxa de acerto no período foi de 71%. O resultado subiu 11 pontos em relação ao período anterior.
 
-O histórico reúne suas respostas e as revisões dos temas já estudados.
+Seu ponto forte no período foi joelho. Parabéns pelo estudo desse tema!
 
-Para consultar: ortoquestoes.com.br/#/desempenho
+Para a próxima sessão, minha sugestão é reforçar tumores, refazendo as questões e consultando os comentários.
 
-Pode responder por aqui se encontrar alguma dificuldade no site.
+Seu desempenho e os temas estudados: ortoquestoes.com.br/#/desempenho
+
+Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
 
 Um abraço,
 Tales, do Orto Questões
@@ -844,18 +843,16 @@ Se preferir não receber mais os resumos de estudo: https://ortoquestoes.com.br/
 
 Acolhimento; nada se perdeu; dez questões recolocam nos trilhos.
 
-**Assunto:** Marina, resumo das suas sessões
+**Assunto:** Marina, uma sugestão para sua próxima sessão
 
 ```text
-Oi, Marina, tudo bem?
+Oi, Marina, espero que esteja tudo bem por aí.
 
-Este é seu resumo de estudo de setembro.
+Separei seu resumo de estudo de setembro, com uma sugestão para a próxima sessão.
 
-O histórico e as anotações das sessões anteriores continuam disponíveis.
+Seu histórico e suas anotações continuam salvos. Para retomar, escolha um tema e experimente uma sessão de questões comentadas.
 
-O histórico reúne suas respostas e as revisões dos temas já estudados.
-
-Para consultar: ortoquestoes.com.br/#/desempenho
+Seu desempenho e os temas estudados: ortoquestoes.com.br/#/desempenho
 
 Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
 
@@ -903,98 +900,15 @@ Primeiro login depois de confirmar o e-mail. Ana, R3, TEOT.
 ```text
 Olá, Ana, tudo bem?
 
-Sua conta no Orto Questões está pronta.
+Que bom ter você no Orto Questões! Sua conta já está pronta para começar.
 
-Você encontra questões comentadas, Biblioteca de resumos e Revisão. O Cronograma permite organizar o estudo pela data da prova e pelo tempo disponível.
+Minha sugestão para o primeiro treino é escolher um tema e resolver algumas questões. Depois de responder, leia também a explicação das outras alternativas.
+
+A Biblioteca de resumos ajuda a consultar o conteúdo, e a Revisão reúne as questões para retomar depois. O Cronograma está disponível para organizar as sessões pela data da prova.
 
 Para começar pelas questões: ortoquestoes.com.br/#/treinar
 
-Você também pode indicar o site aos colegas que estudam ortopedia.
-
 Se precisar de ajuda com o site, basta responder este e-mail.
-
-Um abraço,
-Tales, do Orto Questões
-
---
-
-Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
-```
-
-### Primeiras 10 questões
-
-O site avisa ao passar de 10 (como o marco).
-
-**Assunto:** Tiago, as questões já respondidas
-
-```text
-Tiago, tudo bem?
-
-Você concluiu suas primeiras dez questões no Orto Questões.
-
-Na Revisão, você encontra as questões indicadas para retomar os temas já estudados.
-
-Para consultar seu histórico e sua revisão: ortoquestoes.com.br/#/revisao
-
-Pode responder por aqui se encontrar alguma dificuldade no site.
-
-Um abraço,
-Tales, do Orto Questões
-
---
-
-Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
-```
-
-### Que bom te ver de volta
-
-Primeiro login depois de 10 dias ou mais fora. Otávio, 340 questões, ótimo em joelho.
-
-**Assunto:** Otávio, seus próximos temas de revisão
-
-```text
-Oi, Otávio, tudo bem?
-
-Você já começou a resolver as questões. Tenho uma sugestão para o próximo treino.
-
-Você está com 68% de acerto nas questões. Vamos continuar o estudo e mirar os 70%?
-
-Você está indo muito bem em joelho. Parabéns! Continue revisando para manter esse resultado.
-
-Você respondeu 35 questões nos últimos sete dias. Continue praticando e use os comentários para revisar as dúvidas.
-
-A Revisão reúne os assuntos do seu histórico para a próxima sessão.
-
-Para continuar: ortoquestoes.com.br/#/revisao
-
-Se precisar de ajuda com o site, basta responder este e-mail.
-
-Um abraço,
-Tales, do Orto Questões
-
---
-
-Se preferir não receber mais estas cartas: https://ortoquestoes.com.br/#/emails?u=…&t=…
-```
-
-### Cronograma pronto
-
-No dia em que monta o plano. Pedro, TEOT a 87 dias.
-
-**Assunto:** Pedro, organização dos temas
-
-```text
-Olá, Pedro, tudo bem?
-
-Seu cronograma foi salvo, com 87 dias até o TEOT. As próximas sessões estão disponíveis na sua conta.
-
-Sua melhor área é tumores. Parabéns pelo estudo nesse tema!
-
-Você pode consultar a lista de cada dia e ajustar sua disponibilidade.
-
-Para abrir o Cronograma: ortoquestoes.com.br/#/cronograma
-
-Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.
 
 Um abraço,
 Tales, do Orto Questões
@@ -1013,15 +927,15 @@ Recibo gentil (webhook do Mercado Pago): plano, período, o que libera, link do 
 ```text
 Fernanda, tudo bem?
 
-Seu pagamento foi aprovado. Obrigado pela assinatura.
+Seu pagamento foi aprovado e a assinatura está confirmada. Obrigado pela confiança!
 
-O plano confirmado é o semestral.
+Plano confirmado: semestral.
 
-O período de acesso vai até 17/04.
+Seu acesso pago vai até 17/04/2027.
 
-Você pode consultar o período e gerenciar a renovação em Minha assinatura.
+O pagamento foi confirmado no cartão. Em Minha assinatura você consulta o período, a renovação e os recibos.
 
-Para consultar os detalhes do seu plano: ortoquestoes.com.br/#/conta/assinatura
+Para consultar seu plano: ortoquestoes.com.br/#/conta/assinatura
 
 Pode responder por aqui se encontrar alguma dificuldade no site.
 
@@ -1033,18 +947,18 @@ Tales, do Orto Questões
 
 Confirmação de cancelamento ou reembolso.
 
-**Assunto:** Fernanda, atualização do seu plano
+**Assunto:** Fernanda, atualização da assinatura
 
 ```text
 Olá, Fernanda, tudo bem?
 
-O cancelamento da renovação foi registrado, com acesso até 17/11.
+A renovação automática foi desligada. Você continua com o período pago até 17/11/2026; essa renovação não gerará outro pagamento.
 
 Seu histórico de estudo e suas anotações continuam salvos na conta.
 
-Você pode consultar os detalhes em Minha assinatura: ortoquestoes.com.br/#/conta/assinatura
+Os detalhes ficam em Minha assinatura: ortoquestoes.com.br/#/conta/assinatura
 
-Se houver alguma dúvida sobre a solicitação, responda a este e-mail.
+Se precisar esclarecer alguma informação sobre a solicitação, basta responder este e-mail.
 
 Um abraço,
 Tales, do Orto Questões
@@ -1052,7 +966,7 @@ Tales, do Orto Questões
 
 ## Campanhas diárias (parte 31, 18/10/2026)
 
-O banco escolhe quem recebe (`candidatos_<tipo>`, já sem administrador, e-mail não confirmado, quem desligou as cartas, quem recebeu a mesma referência e quem está no teto de cadência) e o agendador manda às 7h pela ação `campanhas_diarias`, pelo mesmo caminho dos automáticos.
+O banco escolhe quem recebe (`candidatos_<tipo>`, já sem administrador, e-mail não confirmado, quem desligou as cartas, quem recebeu a mesma referência e quem está no teto de cadência) e as mensagens ficam para revisão e início manual na Central. Não há disparo diário automático dessas campanhas.
 
 ### Assinou e não montou o cronograma
 
