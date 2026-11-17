@@ -14421,15 +14421,15 @@
   },
   {
    "id": "green-tunel-carpo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Síndrome do túnel do carpo",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (2026, cap. 82 e 78), e Ortopedia e Traumatologia (Sizínio HEBERT), 5ª ed. (cap. 7)",
    "capitulo": "Capítulo 31 · Principles of Tendon Transfers of Median, Radial, and Ulnar Nerves (oponentoplastia de CAMITZ), lido com o Capítulo 28 · Compression Neuropathies, eixo do resumo, e os capítulos 29, 53 e 56",
-   "resumo": "Teto (retináculo em três partes), conteúdo (mediano e nove tendões) e ramo motor de LANZ (extraligamentar distal na maioria; subligamentar e transligamentar); ramo cutâneo palmar entre palmar longo e FRC; fluxo epineural cai acima de 20 a 30 mm Hg; duplo esmagamento e STC em 21% a 45% dos desfiladeiros; parestesia noturna; DURKAN (30 s, mais sensível e específico), PHALEN sensível, TINEL específico; ENMG mede só fibras grossas; US acima de 10 mm² no pisiforme; órtese noturna em neutro; CHOW com dois portais e AGEE com um; sem neurólise, epineurotomia ou sinovectomia na primária; ramo do terceiro espaço o mais lesado; CAMITZ na sequela grave.",
+   "resumo": "Teto (retináculo em três partes de COBB), conteúdo (mediano e nove tendões) e ponto mais estreito a 2 cm da entrada; ramo motor de LANZ (extraligamentar e recorrente na maioria; subligamentar 31%, transligamentar 23%; grupo III com artéria mediana persistente; grupo IV acessório proximal); ramo cutâneo palmar 5 cm acima da prega proximal, entre palmar longo e FRC; fluxo epineural cai acima de 20 a 30 mm Hg; fascículos do médio e anular sofrem primeiro; STC em 21% a 45% dos desfiladeiros; parestesia noturna; DURKAN (30 s, mais sensível e específico), PHALEN sensível, TINEL específico; ENMG mede só fibras grossas e estadia; US acima de 10 mm² no pisiforme; órtese noturna em neutro (a de 30 graus de extensão piora); dexametasona a menos tóxica; GALLOWAY 1924; CHOW com dois portais e AGEE com um; incisão 6 mm ulnar à prega tenar, liberação proximal para distal até a gordura do arco; sem neurólise, epineurotomia ou sinovectomia na primária; explorar o ramo motor na atrofia sem queixa sensitiva; ramo da terceira comissura o mais lesado; neurólise interna até as bandas de FONTANA na recorrente; CAMITZ na sequela grave.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 54,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14437,8 +14437,8 @@
      "radar": "fundamento"
     },
     {
-     "id": "o-tunel-por-dentro-paredes-conteudo-e-teto",
-     "titulo": "O túnel por dentro: paredes, conteúdo e teto",
+     "id": "anatomia-do-tunel",
+     "titulo": "Anatomia do túnel",
      "radar": "confirmado"
     },
     {
@@ -14452,13 +14452,13 @@
      "radar": "confirmado"
     },
     {
-     "id": "fisiopatologia-pressao-isquemia-e-o-nervo-que-ad",
-     "titulo": "Fisiopatologia: pressão, isquemia e o nervo que adoece em etapas",
+     "id": "pressao-e-isquemia-dentro-do-tunel",
+     "titulo": "Pressão e isquemia dentro do túnel",
      "radar": "confirmado"
     },
     {
-     "id": "duplo-esmagamento-e-as-compressoes-associadas",
-     "titulo": "Duplo esmagamento e as compressões associadas",
+     "id": "a-stc-e-as-compressoes-associadas",
+     "titulo": "A STC e as compressões associadas",
      "radar": "confirmado"
     },
     {
@@ -14472,8 +14472,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "testes-provocativos-phalen-tinel-e-durkan",
-     "titulo": "Testes provocativos: PHALEN, TINEL e DURKAN",
+     "id": "testes-provocativos",
+     "titulo": "Testes provocativos",
      "radar": "confirmado"
     },
     {
@@ -14482,23 +14482,18 @@
      "radar": "confirmado"
     },
     {
-     "id": "eletroneuromiografia-o-que-ela-ve-e-o-que-ela-na",
-     "titulo": "Eletroneuromiografia: o que ela vê e o que ela não vê",
+     "id": "eletroneuromiografia-e-ultrassom",
+     "titulo": "Eletroneuromiografia e ultrassom",
      "radar": "clinico"
     },
     {
-     "id": "ultrassom-e-ressonancia",
-     "titulo": "Ultrassom e ressonância",
+     "id": "tratamento-nao-operatorio",
+     "titulo": "Tratamento não operatório",
      "radar": "confirmado"
     },
     {
-     "id": "tratamento-conservador-ortese-infiltracao-e-desl",
-     "titulo": "Tratamento conservador: órtese, infiltração e deslizamento",
-     "radar": "confirmado"
-    },
-    {
-     "id": "liberacao-aberta-o-passo-a-passo-e-o-que-nao-faz",
-     "titulo": "Liberação aberta: o passo a passo e o que não fazer",
+     "id": "liberacao-aberta",
+     "titulo": "Liberação aberta",
      "radar": "confirmado"
     },
     {
@@ -14507,18 +14502,18 @@
      "radar": "confirmado"
     },
     {
-     "id": "depois-da-liberacao-o-que-esperar-e-quando-trans",
-     "titulo": "Depois da liberação: o que esperar e quando transferir tendão",
+     "id": "depois-da-liberacao",
+     "titulo": "Depois da liberação",
      "radar": "confirmado"
     },
     {
-     "id": "complicacoes-recidiva-e-revisao",
-     "titulo": "Complicações, recidiva e revisão",
+     "id": "falhas-recidiva-e-revisao",
+     "titulo": "Falhas, recidiva e revisão",
      "radar": "confirmado"
     },
     {
-     "id": "situacoes-especiais-artrite-reumatoide-stc-aguda",
-     "titulo": "Situações especiais: artrite reumatoide, STC aguda, gestação e cristais",
+     "id": "situacoes-especiais",
+     "titulo": "Situações especiais",
      "radar": "clinico"
     },
     {
@@ -14538,6 +14533,7 @@
     "mao-0713",
     "mao-1095",
     "mao-1157",
+    "mao-1210",
     "mao-1144",
     "mao-0640",
     "mao-0043",
@@ -14557,18 +14553,30 @@
     "mao-0706",
     "mao-0455",
     "mao-1014",
+    "mao-0472",
     "mao-1448",
     "mao-0686"
    ],
    "treino": [
+    "mao-0181",
+    "mao-2778",
     "mao-2468",
+    "mao-2784",
+    "mao-2809",
+    "mao-2812",
+    "mao-2823",
     "mao-1976",
     "mao-2068",
+    "mao-2632",
     "mao-1972",
+    "mao-2810",
+    "mao-2816",
     "mao-2315",
+    "mao-2761",
     "mao-2421",
     "mao-2579",
     "mao-2142",
+    "mao-2780",
     "mao-1807",
     "mao-1967"
    ],
@@ -14740,15 +14748,15 @@
   },
   {
    "id": "green8-neuropatias-compressao",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Neuropatias de compressão no membro superior",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "8ª edição (tradução), ampliado com a 7ª edição do Green's Operative Hand Surgery e o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 28 · Neuropatias de compressão",
-   "resumo": "Fisiopatologia (barreira, edema, perineuro, mielina, axônio), duplo esmagamento e testes provocativos por sítio; túnel do carpo (técnicas de CHOW e AGEE, arco palmar superficial, amiloidose); mediano proximal (STRUTHERS, pronador, lacertus, arco do FSD, GANTZER) e interósseo anterior; canal de GUYON (zonas I, II e III, ramo cutâneo dorsal); túnel cubital (2ª compressão mais comum, flexão reduz a área em 55%, OSBORNE, STRUTHERS, McGOWAN); radial superficial (WARTENBERG) e profundo (supinador).",
+   "resumo": "Fisiopatologia (barreira hematoneural, edema, perineuro, mielina, axônio), duplo esmagamento de UPTON e McCOMAS e o reverso de LUNDBORG, HNPP e estiramento (8% venoso, 15% isquemia); testes provocativos por sítio, SPURLING, colapso ao arranhar e fibrilação como sinal precoce de desnervação; mediano proximal (ligamento de STRUTHERS, pronador, lacertus, arco do FSD, GANTZER, MARTIN-GRUBER) e interósseo anterior (PARSONAGE-TURNER, exploração aos 7 a 10 meses); canal de GUYON (zonas I, II e III, ramo dorsal, garra paradoxal, ramo profundo no hâmulo); sinais do ulnar (DUCHENNE, BOUVIER, FROMENT, WARTENBERG, PITRES-TESTUT, RICHE-CANNIEU); túnel cubital (flexão reduz a área em 55%, OSBORNE, arcada de STRUTHERS a 8 cm, McGOWAN I a III, VCM abaixo de 50 m/s, 40 m/s para conduta, epicondilectomia de 20%, OGATA, transmuscular); radial sensitivo (WARTENBERG entre BR e ERLC, pronação com flexão ulnar) e interósseo posterior (túnel radial, FROHSE do epicôndilo lateral, EIP o último, intervalo BR e ERLC); reoperações; supraescapular, quadrangular e desfiladeiro.",
    "acesso": "gratis",
-   "minutos": 34,
+   "minutos": 72,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14761,13 +14769,18 @@
      "radar": "fundamento"
     },
     {
-     "id": "tunel-do-carpo-liberacao",
-     "titulo": "Túnel do carpo: liberação",
-     "radar": "confirmado"
+     "id": "avaliacao-localizar-o-sitio",
+     "titulo": "Avaliação: localizar o sítio",
+     "radar": "fundamento"
     },
     {
-     "id": "mediano-proximal-e-interosseo-anterior",
-     "titulo": "Mediano proximal e interósseo anterior",
+     "id": "a-stc-vista-de-fora",
+     "titulo": "A STC vista de fora",
+     "radar": "fundamento"
+    },
+    {
+     "id": "mediano-no-cotovelo-e-no-antebraco",
+     "titulo": "Mediano no cotovelo e no antebraço",
      "radar": "confirmado"
     },
     {
@@ -14776,49 +14789,29 @@
      "radar": "confirmado"
     },
     {
-     "id": "tunel-cubital",
-     "titulo": "Túnel cubital",
-     "radar": "confirmado"
-    },
-    {
-     "id": "nervo-radial",
-     "titulo": "Nervo radial",
-     "radar": "confirmado"
-    },
-    {
-     "id": "tunel-do-carpo-diagnostico-em-numeros",
-     "titulo": "Túnel do carpo: diagnóstico em números",
-     "radar": "confirmado"
-    },
-    {
-     "id": "tunel-do-carpo-infiltracao-cirurgia-e-revisao",
-     "titulo": "Túnel do carpo: infiltração, cirurgia e revisão",
-     "radar": "confirmado"
-    },
-    {
-     "id": "pronador-e-interosseo-anterior-os-testes",
-     "titulo": "Pronador e interósseo anterior: os testes",
-     "radar": "confirmado"
-    },
-    {
-     "id": "tunel-cubital-exame-eletrodiagnostico-e-cirurgia",
-     "titulo": "Túnel cubital: exame, eletrodiagnóstico e cirurgia",
-     "radar": "confirmado"
-    },
-    {
      "id": "os-sinais-da-paralisia-do-ulnar",
      "titulo": "Os sinais da paralisia do ulnar",
      "radar": "confirmado"
     },
     {
-     "id": "canal-de-guyon-paredes-e-falhas",
-     "titulo": "Canal de GUYON: paredes e falhas",
+     "id": "tunel-cubital",
+     "titulo": "Túnel cubital",
      "radar": "confirmado"
     },
     {
-     "id": "nervo-radial-tunel-radial-e-wartenberg",
-     "titulo": "Nervo radial: túnel radial e WARTENBERG",
+     "id": "ramo-sensitivo-do-radial-wartenberg",
+     "titulo": "Ramo sensitivo do radial: WARTENBERG",
      "radar": "confirmado"
+    },
+    {
+     "id": "nervo-interosseo-posterior-e-tunel-radial",
+     "titulo": "Nervo interósseo posterior e túnel radial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "reoperacoes",
+     "titulo": "Reoperações",
+     "radar": "clinico"
     },
     {
      "id": "supraescapular-e-espaco-quadrangular",
@@ -14831,27 +14824,65 @@
      "radar": "confirmado"
     },
     {
+     "id": "onde-as-fontes-divergem",
+     "titulo": "Onde as fontes divergem",
+     "radar": "fundamento"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
     }
    ],
    "questoes": [
+    "mao-0060",
+    "mao-0593",
+    "mao-0043",
+    "mao-0155",
+    "mao-0087",
+    "mao-0086",
     "mao-0348",
     "mao-0088",
+    "mao-0089",
+    "mao-0178",
+    "mao-0338",
+    "mao-0465",
     "mao-0531",
     "mao-0041",
     "mao-0347",
     "mao-0623",
     "mao-0637",
+    "mao-0784",
+    "mao-0012",
+    "mao-0308",
+    "ombro-cotovelo-0116",
+    "mao-0583",
     "mao-0245",
     "mao-0102",
     "mao-0129",
+    "mao-1901",
+    "mao-0433",
+    "mao-0335",
+    "mao-0261",
     "mao-0017",
     "mao-0045",
     "mao-0055",
     "mao-0395",
     "mao-0426",
+    "mao-1577",
+    "mao-1811",
+    "mao-0925",
+    "mao-1335",
+    "mao-1109",
+    "mao-0156",
+    "mao-0337",
+    "ombro-cotovelo-0007",
+    "mao-0407",
+    "mao-1461",
+    "mao-0835",
+    "mao-0681",
+    "mao-0748",
+    "mao-1568",
     "mao-0519",
     "mao-0072",
     "mao-0093",
@@ -14859,25 +14890,7 @@
     "mao-0614",
     "mao-0498",
     "mao-0723",
-    "mao-0060",
-    "mao-0593",
-    "mao-0043",
-    "mao-0155",
-    "mao-0087",
-    "mao-0086",
-    "mao-0089",
-    "mao-0178",
-    "mao-0338",
-    "mao-0012",
-    "mao-0308",
-    "ombro-cotovelo-0116",
-    "mao-0156",
-    "mao-0337",
-    "ombro-cotovelo-0007",
-    "mao-0407",
-    "mao-0433",
-    "mao-0335",
-    "mao-0583",
+    "mao-1482",
     "mao-0565",
     "mao-0428",
     "ombro-cotovelo-0019",
@@ -14890,17 +14903,104 @@
     "mao-0248",
     "mao-0081",
     "mao-0425",
-    "mao-1212"
+    "mao-1212",
+    "mao-1546",
+    "mao-0787",
+    "mao-1466",
+    "mao-1813",
+    "mao-0836",
+    "mao-1355"
    ],
    "treino": [
     "mao-2580",
+    "mao-2783",
     "mao-2579",
     "mao-2576",
+    "mao-2790",
+    "mao-2799",
+    "mao-2133",
+    "mao-2134",
+    "mao-2314",
+    "mao-2804",
+    "mao-2815",
+    "mao-2818",
+    "mao-2772",
+    "mao-2136",
+    "mao-2767",
+    "mao-2770",
+    "mao-2771",
     "mao-2574",
     "mao-2581",
+    "mao-2760",
+    "mao-2768",
+    "mao-1971",
+    "mao-1973",
+    "mao-2135",
+    "mao-2759",
+    "mao-2764",
+    "mao-2777",
+    "mao-2792",
+    "mao-2801",
+    "mao-2808",
+    "mao-2813",
+    "mao-2817",
+    "mao-2758",
+    "mao-2763",
+    "mao-2769",
+    "mao-2775",
+    "mao-2788",
+    "mao-2636",
+    "mao-2776",
+    "mao-2787",
+    "mao-2793",
+    "mao-2795",
     "mao-2575",
+    "mao-2798",
+    "mao-2067",
+    "mao-2226",
+    "mao-2811",
+    "mao-2819",
+    "mao-2379",
+    "mao-2539",
+    "mao-2779",
+    "mao-2806",
+    "mao-2313",
+    "mao-2773",
+    "mao-2786",
+    "mao-2802",
+    "mao-1742",
+    "mao-1743",
+    "mao-2762",
+    "mao-2785",
+    "mao-2791",
+    "mao-2794",
+    "mao-2797",
+    "mao-1975",
+    "mao-2765",
+    "mao-2789",
+    "mao-2796",
+    "mao-2800",
+    "mao-2803",
+    "mao-2807",
+    "mao-2814",
+    "mao-2820",
+    "mao-2821",
+    "mao-2822",
     "mao-2577",
-    "mao-2578"
+    "mao-2578",
+    "mao-2066",
+    "mao-2757",
+    "mao-2781",
+    "mao-2137",
+    "mao-2766",
+    "mao-2774",
+    "mao-2782",
+    "mao-2805",
+    "mao-2227",
+    "mao-2140",
+    "mao-2139",
+    "mao-2542",
+    "mao-1744"
    ],
    "subtemas": [
     "Neuropatia ulnar e outras compressões"
