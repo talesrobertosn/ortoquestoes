@@ -16,6 +16,7 @@ import {
   gerarCarta,
   sementeDe,
   problemaGrave,
+  problemaDeTomCarta,
   renderizarCarta,
   type DadosCartaBanco,
   type DadosCampanha,
@@ -384,6 +385,11 @@ async function processar() {
     let reservado = false,
       aceito = false
     try {
+      const textoAntigo = problemaDeTomCarta(m.assunto + '\n' + m.corpo)
+      if (textoAntigo) {
+        await gravar(`email_fila?id=eq.${item.id}`, { status: 'adiado', motivo: textoAntigo, atualizado_em: new Date().toISOString() })
+        continue
+      }
       if (!(await aindaPertinente(m))) {
         await gravar(`email_fila?id=eq.${item.id}`, {
           status: 'adiado',
@@ -495,6 +501,8 @@ Deno.serve(async (req) => {
           return json({ erro: 'A seleção mudou. Atualize a rodada antes de enviar.' }, 409, req)
         const assunto = i.assunto?.trim() ?? m.assunto,
           corpo = i.corpo?.trim() ?? m.corpo
+        const textoAntigo = problemaDeTomCarta(assunto + '\n' + corpo)
+        if (textoAntigo) return json({ erro: textoAntigo }, 409, req)
         if (!assunto || assunto.length > 120 || !corpo || corpo.length > 6000 || problemaGrave(assunto + '\n' + corpo))
           return json({ erro: 'texto_invalido' }, 400, req)
         vistos.add(m.id_usuario)

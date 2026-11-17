@@ -124,12 +124,14 @@ mesmo critério do financeiro), quem não confirmou o e-mail e quem desligou os 
 2. `gerarCarta` sorteia uma versão que a pessoa ainda não recebeu (são 5 a 7 por situação e
    faixa) e preenche os blocos trocáveis: saudação, observações pessoais e sugestões úteis. Não há P.S. nem preenchimento automático (diretriz de 15/11/2026 em TOM.md)
    Isso dá centenas de textos diferentes por faixa (a contagem está em `docs/emails/MODELOS.md`).
-3. Observações pessoais só aparecem quando o dado existe e é significativo: melhor área
-   (15+ questões e 70%+), área mais estudada (25+ e 35% do total), área a melhorar, horário de
-   estudo (40+ tentativas em 60 dias), prova de interesse, etapa, posição no ranking (top 100,
-   50+ questões), sequência (3+ dias), flashcards (20+). O acerto só é citado com 30 questões ou
-   mais. Nada de "0 questões", "undefined", "null" ou "NaN": o motor confere o texto final e
-   troca de versão se algo escapar.
+3. A personalização serve ao estudo: melhor área (15+ questões e 70%+), tema a revisar
+   (40+ questões e diferença significativa), posição real no ranking (top 100, 50+ questões),
+   temas praticados e sugestões de questões/comentários. Acerto geral só com 30 questões e
+   pelo menos 50%; pode acompanhar elogio à melhor área e uma sugestão de tema a revisar,
+   sem nota ruim. Nunca recitar serviço, cidade, etapa ou objetivos do cadastro.
+   Com acerto baixo ou sem amostra: incentivar a prática sem citar percentual. Não inventar
+   evolução nem prometer aprovação. Modelos e prévias antigas são bloqueados quando contêm
+   as frases cadastrais recusadas. Consulte TOM.md (17/11/2026).
 4. O convite cita só benefícios reais da página de planos (cronograma, Simulado Nacional, temas que
    mais caem e a turma, Resumão, liga e relatório do mês, e "sem limite diário" só quando o limite
    do gratuito está ligado), a garantia de 7 dias e nenhum preço.

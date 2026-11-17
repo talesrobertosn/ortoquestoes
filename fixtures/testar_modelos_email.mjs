@@ -34,7 +34,7 @@ try {
   // Tom (docs/emails/TOM.md, retorno do dono em 15/10/2026 e plano de 17/10/2026).
   const TOM_PROIBIDO = [
     /vou ser (direto|direta|sincer[oa])/i, /sem rodeios/i, /\bfranc[oa]\b|franqueza/i, /olha só/i, /infelizmente/i, /\bsó que\b/i,
-    /\bsincer/i, /\bvocê (ainda )?não\b/i, /\bchut(e|es|ar|ou|ando)\b/i, /alternativa qualquer|marcando/i,
+    /\bsincer/i, /\bvocê (ainda )?não\b(?! (?:começou|respondeu suas primeiras))/i, /\bchut(e|es|ar|ou|ando)\b/i, /alternativa qualquer|marcando/i,
     /err(ou|a|am|ando|aram) muito|maior parte das respostas|errad[ao]s? demais/i, /lá embaixo|acerto (ainda )?(está )?baixo|baixo demais|n[aã]o decolou/i,
     /desanim/i, /cobran[cç]a|\bculpa\b|\bsumiu\b/i, /gr[aá]tis|gratuit|oferta|desconto|aproveite|imperd[ií]vel|promo[cç]/i,
     /[uú]ltima chance|urgente|\bcorra\b|não perca|só hoje|antes que acabe|últimas vagas|vagas limitadas/i,
@@ -90,12 +90,11 @@ try {
     if (semPS) assert.doesNotMatch(tudo, /lembrete amigo|sem pressa|sem compromisso|sem cobran[cç]a|sem insistência|a escolha (é|ser) sua|se preferir não renovar|se não for a hora|portas? (fica|ficam) abertas?|empurrãozinho|ideia carinhosa|P\.S\.:/i)
     tomOk(tudo, contexto)
     semRedundancia(carta.corpo, contexto)
-    // Acerto só com 30 questões e 50% ou mais; nunca na mesma carta em que a área a melhorar entra.
+    // Acerto só com 30 questões e 50% ou mais. O tema a revisar não expõe nota ruim.
     if (perfil) {
       const acerto = m.acertoCitavel(perfil)
       // O resumo do período fala do acerto do período (regra própria, conferida mais abaixo).
       if (carta.tipo !== 'relatorio' && (acerto === null || acerto < 50)) assert.ok(!PORCENTAGEM.test(tudo), `${contexto}: citou porcentagem com acerto ${acerto}:\n${tudo}`)
-      if (carta.personalizacao.includes('área a melhorar')) assert.ok(!carta.personalizacao.includes('acerto') && !/\d+% de acerto/.test(carta.corpo), `${contexto}: acerto e área a melhorar na mesma carta\n${carta.corpo}`)
       assert.ok(carta.personalizacao.filter((p) => p !== 'acerto').length <= 3, `${contexto}: mais de 3 observações pessoais (${carta.personalizacao.join(', ')})`)
     }
     return e
@@ -198,7 +197,7 @@ try {
   {
     const usados = new Set()
     for (const tipo of ['convite_50', 'ativo', 'sumiu', 'marco']) for (let s = 1; s <= 150; s++) gerar(rico(72, { diasParado: tipo === 'sumiu' ? 20 : 0 }), { tipo, semente: s, marco: 250 }).personalizacao.forEach((p) => usados.add(p))
-    for (const p of ['melhor área', 'posição no ranking', 'horário de estudo', 'dias para a prova', 'resumos lidos', 'serviço', 'aniversário']) assert.ok(usados.has(p), `nunca usou "${p}" (${[...usados].join(', ')})`)
+    for (const p of ['melhor área', 'área a melhorar', 'posição no ranking', 'ritmo da semana']) assert.ok(usados.has(p), `nunca usou "${p}" (${[...usados].join(', ')})`)
   }
 
   // 5. Fatos: limites de significância, inclusive os novos.
@@ -222,10 +221,41 @@ try {
   assert.deepEqual(m.fatosDe({ respondidas: 40, posicaoRanking: 5, sequencia: 2, horas: [{ hora: 22, n: 10 }], areas: [{ slug: 'mao', total: 10, certas: 10 }], servico: 'HC', resumosLidos: { total: 0 }, diasParaProva: 0 }), {}, 'fatos com amostra pequena')
   assert.equal(m.acertoCitavel({ respondidas: 29, acertos: 20, erros: 9 }), null)
   assert.equal(m.acertoCitavel({ respondidas: 30, acertos: 21, erros: 9 }), 70)
-  // A área a melhorar nunca leva número e nunca sai junto do acerto.
+  // A área a melhorar pode acompanhar o acerto positivo; sua nota não é exposta.
   for (let s = 1; s <= 120; s++) {
     const c = gerar(rico(72), { tipo: 'ativo', faixa: '70-80', semente: s })
-    if (c.personalizacao.includes('área a melhorar')) assert.ok(!/pé e tornozelo[^.]*\d+%|\d+%[^.]*pé e tornozelo/.test(c.corpo) && !/\d+% de acerto/.test(c.corpo), `área a melhorar com número:\n${c.corpo}`)
+    if (c.personalizacao.includes('área a melhorar')) assert.ok(!/pé e tornozelo[^.]*\d+%|\d+%[^.]*pé e tornozelo/.test(c.corpo), `área a melhorar com número:\n${c.corpo}`)
+  }
+
+  // 17/11/2026: regressão do cadastro recitado e incentivo por desempenho.
+  for (const servico of ['HUFMA', 'Outra', 'Hospital fornecedores de cana']) {
+    for (const tipo of TODOS) for (let semente=1;semente<=12;semente++) {
+      const p=rico(72,{servico,cidade:'CidadeCadastroTeste',situacao:'ortopedista',provas:['atualizacao']})
+      if (!m.tipoCombina(tipo,p)) continue
+      const c=gerar(p,{tipo,semente})
+      assert.doesNotMatch(c.corpo,/HUFMA|Hospital fornecedores|CidadeCadastroTeste|seu cadastro|seu perfil|etapa informada|serviço Outra|interesse em|objetivos de estudo/i,c.versao)
+      assert.ok(!c.personalizacao.some(x=>['serviço','cidade','etapa','prova','horário de estudo','aniversário'].includes(x)),c.versao)
+    }
+  }
+  const foco={...rico(70),areas:[{slug:'quadril',total:80,certas:72},{slug:'tumores',total:60,certas:24}],posicaoRanking:12}
+  for (let semente=1;semente<=30;semente++) {
+    const c=gerar(foco,{tipo:'ativo',semente})
+    assert.match(c.corpo,/70%/);assert.match(c.corpo,/80%/)
+    assert.match(c.corpo,/quadril/);assert.match(c.corpo,/tumores/)
+    assert.match(c.corpo,/12ª posição/);assert.match(c.corpo,/Parabéns/i)
+    assert.deepEqual(c.personalizacao.filter(x=>x!=='acerto').sort(),['melhor área','área a melhorar','posição no ranking'].sort())
+    assert.doesNotMatch(c.corpo,/40%|pior área|área fraca|acerto baixo/)
+  }
+  for (const [pct,meta] of [[50,60],[59,60],[60,70],[70,80],[80,90],[90,95],[95,null],[100,null]]) {
+    const c=gerar(rico(pct),{tipo:'ativo',semente:1})
+    assert.ok(c.corpo.includes(`${pct}%`),`taxa atual ${pct}`)
+    if(meta) assert.ok(c.corpo.includes(`${meta}%`),`próxima meta ${pct} → ${meta}`)
+    assert.doesNotMatch(c.corpo,/110%|105%/)
+  }
+  for(const pct of [0,12,25,49]) {
+    const c=gerar(rico(pct),{tipo:'ativo',semente:1})
+    assert.doesNotMatch(c.corpo,/\d+%|acerto baixo|pior área/)
+    assert.match(c.corpo,/Continue|Siga|continuar/)
   }
 
   // 6. Escolha automática do tipo (marcos 100, 250, 500, 1.000, 2.000; cadência no resultado).

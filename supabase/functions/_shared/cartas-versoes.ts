@@ -30,33 +30,51 @@ const sugestao = (c: Ctx, rota: 'treinar' | 'revisao' | 'erros') => rota === 'er
   : rota === 'revisao' ? c.um('Na Revisão, você encontra as questões indicadas para retomar os temas já estudados.', 'A Revisão reúne os assuntos do seu histórico para a próxima sessão.', 'Você pode começar a próxima sessão pela Revisão e consultar os comentários das alternativas.')
   : c.um('Você pode escolher um tema e resolver algumas questões, consultando o comentário das alternativas.', 'Uma forma de organizar a próxima sessão é escolher um tema e ler o comentário de cada resposta.', 'Na página de questões, os filtros ajudam a escolher o tema e a prova da próxima sessão.')
 
-const PREFERIR: Array<Array<keyof Ctx['fatos']>> = [['etapa','prova'],['horario','cidade'],['servico','flashcards'],['resumos','sequencia'],['melhorArea','areaFraca'],['cronograma','semana'],['ranking','aniversario']]
+/** A personalização ajuda a estudar; nunca recita dados do cadastro. */
+const primeirosPassos = (c: Ctx): Pedaco[] => [
+  c.um('Vi que você ainda não começou as questões por aqui. Que tal experimentar uma sessão?', 'Você ainda não respondeu suas primeiras questões no site. Queria te convidar a experimentar.', 'Vi que sua primeira sessão ainda está por começar. Separei uma sugestão para você experimentar o site.'),
+  c.um('Escolha um assunto de que você gosta e comece por algumas questões. Acho que você vai gostar de estudar pelos comentários.', 'Comece por um tema que você quer aprender e leia as explicações depois de responder. É uma boa forma de conhecer o site.', 'Experimente algumas questões de um assunto do seu interesse. Os comentários ajudam a entender o raciocínio e a revisar o tema.'),
+  c.um('Vale ler também por que as outras alternativas estão erradas; é uma parte importante do estudo.', 'Depois de responder, confira o comentário de cada alternativa e use a explicação para revisar suas dúvidas.', 'A ideia é aproveitar cada questão para aprender, consultando a explicação depois da resposta.'),
+  `Para começar: ${c.link('treinar')}`, ajuda(c),
+]
+const incentivo = (c: Ctx): string => c.um(
+  'Continue praticando e lendo os comentários. Cada sessão é uma oportunidade de entender melhor os temas.',
+  'Continue se dedicando ao estudo. Escolha um tema por vez e use os comentários para esclarecer as dúvidas.',
+  'Siga fazendo as questões e revisando as explicações. O importante é aproveitar cada resposta para aprender.',
+  'Continue estudando pelos comentários e volte às questões que trouxeram dúvidas. Isso ajuda a ganhar segurança no raciocínio.',
+  'Vamos continuar o estudo com algumas questões de um tema e a leitura dos comentários de cada alternativa.',
+)
+function proximoPasso(c: Ctx): Pedaco[] {
+  const pct = c.pctBom
+  if (pct === null) return [incentivo(c), c.obs(1, ['maisEstudada', 'semana', 'sequencia'])]
+  const meta = pct < 90 ? Math.min(90, (Math.floor(pct / 10) + 1) * 10) : pct < 95 ? 95 : null
+  return [
+    c.um(`Vi que sua taxa de acerto está em ${pct}%.${meta ? ` Continue praticando para buscar os ${meta}%.` : ' Parabéns pelo resultado! Continue variando os temas para manter o estudo completo.'}`,
+      `Você está com ${pct}% de acerto nas questões.${meta ? ` Vamos continuar o estudo e mirar os ${meta}%?` : ' Parabéns! Agora vale revisar os detalhes e manter contato com as diferentes áreas.'}`,
+      `Sua taxa de acerto está em ${pct}%.${meta ? ` Continue se dedicando para avançar em direção aos ${meta}%.` : ' Parabéns pelo resultado! Siga revisando os temas para consolidar o que aprendeu.'}`),
+    c.fato('melhorArea'), c.fato('areaFraca'), c.fato('ranking'),
+    // Só usa um complemento se faltarem temas/ranking; nunca preenche com cadastro.
+    c.obs(1, ['sequencia', 'semana', 'maisEstudada']),
+  ]
+}
 function estudo(tema: string, rota: 'treinar' | 'revisao' | 'erros' = 'revisao', total = 6): Versao[] {
   return Array.from({ length: total }, (_, i) => ({
-    id: `v${i+21}`, assuntos: c => [nm(c, [tema, 'uma sugestão para sua próxima sessão', 'seu próximo tema de estudo', 'revisão dos temas estudados', 'para organizar o próximo treino', 'uma opção para continuar'][i%6])],
-    corpo: c => [
-      c.um('Separei uma sugestão para a sua próxima sessão de estudo.', 'Você pode continuar o estudo pelos temas do seu histórico.', 'Há uma forma de revisar os pontos das sessões anteriores.'),
-      c.tipo==='ativo'&&c.chance(0.4)&&c.pctBom!==null?`Seu histórico registra ${c.pctBom}% de acerto em ${Q(c.r)}.`:null,
-      c.obs(2,['pausa','sumiu','comecou_parou','assinante_parado_7'].includes(c.tipo) ? ['maisEstudada'] : c.um(...PREFERIR)), sugestao(c, rota),
-      `Para abrir: ${c.link(rota)}`,
-      ajuda(c),
+    id: `v${i+31}`, assuntos: c => [nm(c, [tema, 'vamos continuar as questões?', 'uma sugestão para seu próximo treino', 'para avançar no seu estudo', 'seus próximos temas de revisão', 'vamos praticar mais um pouco?'][i%6])],
+    corpo: c => c.r === 0 ? primeirosPassos(c) : [
+      c.um('Você já começou a resolver as questões. Tenho uma sugestão para o próximo treino.', 'Vi que você está fazendo as questões. Vamos continuar o estudo?', 'Você já começou a estudar por aqui. Queria te incentivar a continuar pelas questões e pelos comentários.'),
+      ...proximoPasso(c), sugestao(c, rota), `Para continuar: ${c.link(rota)}`, ajuda(c),
     ],
   }))
 }
 const nunca = (): Versao[] => Array.from({length:6},(_,i)=>({
-  id:`v${i+21}`, assuntos:c=>[nm(c,['por onde começar','sua primeira sessão','para escolher um tema','um ponto de partida','como usar os comentários','as questões por assunto'][i])],
-  corpo:c=>[
-    c.um('Sua conta está pronta para começar a estudar.', 'Você já pode escolher um assunto para sua primeira sessão.', 'As questões estão organizadas por assunto e por prova para você começar.'),
-    sugestao(c,'treinar'),
-    c.um('Depois de responder, você pode conferir o comentário e a análise das alternativas.', 'Os comentários explicam a resposta e os motivos das alternativas.', 'A correção fica disponível depois da resposta, com a explicação das alternativas.'),
-    `Para escolher o primeiro tema: ${c.link('treinar')}`, ajuda(c),
-  ],
+  id:`v${i+31}`, assuntos:c=>[nm(c,['vamos começar as questões?','sua primeira sessão','um tema para começar','experimente as questões comentadas','por onde começar o estudo','um convite para seu primeiro treino'][i])],
+  corpo:primeirosPassos,
 }))
 const convite = (): Versao[] => Array.from({length:6},(_,i)=>({
   id:`v${i+21}`, assuntos:c=>[nm(c,['opções para ampliar seu estudo','sobre os planos de acesso','recursos do plano completo','para conhecer os planos','assinatura do Orto Questões','opções de assinatura'][i])],
   corpo:c=>[
     c.um('Queria apresentar as opções de assinatura do Orto Questões.', 'Você pode conhecer os planos de acesso e os recursos incluídos em cada um.', 'A página de planos reúne as opções para ampliar o acesso ao conteúdo.'),
-    c.obs(1),
+    c.obs(1, ['maisEstudada', 'semana']),
     ...c.beneficios(2,true),
     'Os planos têm garantia de sete dias. As condições e os recursos incluídos estão na página de assinatura.',
     `Para consultar os planos: ${c.link('assinatura')}`, ajuda(c),
@@ -75,7 +93,7 @@ const provaVersoes = (tipo: 'reta_final'|'vespera_prova'|'depois_prova'): Versao
     c.um('Gostaria de saber quais temas apareceram e como foi o formato da prova.', 'Você pode contar quais assuntos foram cobrados e como as questões foram apresentadas.', 'Sua experiência com o conteúdo e o formato ajuda a orientar as próximas revisões do acervo.'),
     'Se puder compartilhar alguma observação sobre a prova, responda por aqui.',
   ]:[
-    tipo==='vespera_prova'?`A data informada para ${prova(c)} é amanhã.`:`A preparação para ${prova(c)} pode ser organizada pelas próximas sessões de revisão.`,
+    tipo==='vespera_prova'?`Amanhã é ${prova(c)}.`:`Com ${prova(c)} se aproximando, vale retomar as questões e as anotações que trouxeram dúvidas.`,
     c.obs(1),
     c.um('Uma opção é revisar as questões já respondidas e as anotações que você salvou.', 'Os comentários das questões anteriores e suas anotações podem orientar a próxima revisão.', 'Você pode selecionar os temas que quer revisar e consultar os comentários de cada alternativa.'),
     `Sua revisão fica aqui: ${c.link('revisao')}`, ajuda(c),
