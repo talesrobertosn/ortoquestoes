@@ -45,7 +45,7 @@ Os **fascículos superficiais** sofrem antes, porque recebem a pressão primeiro
 
 O nervo também precisa **deslizar**. LUNDBORG e RYDEVIK estiraram o nervo tibial do coelho e mostraram que **8%** de alongamento agudo obstruem o retorno **venoso** e **15%** causam **isquemia** (J Bone Joint Surg Br 55:390-401, 1973; Green 7, p. 923). WATANABE e colaboradores mostraram, em rato, que o estiramento **repetitivo** lesa mais que o contínuo com a mesma deformação (J Hand Surg Am 26:663-669, 2001). Daí a importância do cotovelo: o ulnar passa atrás do eixo da articulação, e cada flexão o estira.
 
-!questoes treino=mao-2580
+!questoes treino=mao-2580,mao-2783
 conceito: A compressão crônica desmieliniza antes de matar o axônio; um nervo apertado em cima fica mais vulnerável embaixo; cada sítio tem um teste.
 !fim
 
@@ -73,7 +73,7 @@ O Green 7 (p. 921) lista também os **imitadores** que não melhoram com cirurgi
 
 O Green 7 (p. 923, Fig. 28.2) dá à postura um papel que outros livros não dão. Posturas mantidas aumentam a pressão em sítios conhecidos: **flexão ou extensão** moderada do punho sobem a pressão no carpo, **flexão do cotovelo** sobe a pressão no túnel cubital. A cabeça para a frente e os ombros enrolados **encurtam** os músculos que comprimem nervos (esternocleidomastóideo, escalenos, peitoral menor, pronador redondo, serrátil) e **alongam e enfraquecem** os que estabilizam a escápula (trapézio médio e inferior, serrátil). O resultado é um ciclo: o desequilíbrio comprime o plexo, o plexo comprimido deixa o nervo frágil distalmente, e a dor faz a postura piorar. Por isso o tratamento não operatório de MACKINNON inclui **alongar** os encurtados e **fortalecer** os estabilizadores da escápula.
 
-# Avaliação: localizar o sítio {radar=confirmado}
+# Avaliação: localizar o sítio {radar=fundamento}
 
 ## Questionários e o questionário de dor
 
