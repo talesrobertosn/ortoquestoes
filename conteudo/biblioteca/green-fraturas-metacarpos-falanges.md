@@ -615,7 +615,7 @@ alerta: O Green 7 cita, na via dorsoulnar, o ramo sensitivo dorsal do nervo ulna
 
 > **Na prova:** base do 5º = subluxação **proximal e dorsal** pelo **extensor ulnar do carpo**; BORA e DIDIZIAN = **AP pronado 30° a partir da supinação total**; CAIN = cominuição dorsal ou cisalhamento coronal do hamato exige **ORIF**; via **dorsoulnar** com o **ramo sensitivo dorsal do ulnar**; avulsão do 2º e 3º = **extensores radiais do carpo**; fratura isolada do **4º** = procurar lesão da CMC; artrose tardia = **artrodese**.
 
-# Complicações dos metacarpos {radar=confirmado}
+# Complicações dos metacarpos {radar=fundamento}
 
 ## Consolidação viciosa angular
 
