@@ -203,3 +203,12 @@ Antes de alterar mensagens, ler [docs/emails/TOM.md](docs/emails/TOM.md). A orie
 substitui o tom antigo “fofo/amigo”: mensagens claras, úteis e cordiais, sem P.S., pressão emocional,
 culpa pela ausência ou recuos como “sem cobrança”, “a escolha é sua” e “a porta fica aberta”.
 Não preencher mensagens só para alongar. Preservar personalização com fatos reais e regras de envio.
+
+## Avisos e novos achievements (Tales, 17/11/2026)
+
+Antes de criar, alterar ou notificar uma conquista, ler [docs/conquistas/AVISOS.md](docs/conquistas/AVISOS.md).
+É o contrato compartilhado por Codex e Claude: catálogo único, triagem por família, expectativa com objeto fechado,
+comemoração com a medalha real, apresentação compacta no celular e limites contra repetição. Novos emblemas de
+família existente entram automaticamente; nova família exige perfil, arte e testes. Não reativar as visitas
+aleatórias de `Encontros`. Preservar catálogo e medalhas ganhas. Conferir a galeria `#/dev/conquistas` e rodar
+`fixtures/testar_avisos_conquistas.mjs` (incluído no `npm test`) antes de publicar.

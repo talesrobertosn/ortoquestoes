@@ -24,7 +24,7 @@ import { AvisoCookies } from './componentes/AvisoCookies'
 // inicial, isso evita baixar o acervo completo para rotas administrativas,
 // termos, conta e planos. Os carregadores vêm de util/preCarga, que adianta o
 // download quando o dedo chega num link ou o aparelho fica ocioso.
-const Encontros = lazy(() => import('./eventos/Encontros'))
+const AvisosConquistas = lazy(() => import('./conquistas/AvisosConquistas'))
 const ConquistasDoDia = lazy(() => import('./eventos/ConquistasDoDia'))
 const ConviteAssinar = lazy(() => import('./convite/ConviteAssinar'))
 const CompletarPerfil = lazy(() => import('./componentes/CompletarPerfil'))
@@ -58,6 +58,7 @@ const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo })
 const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
 const CronogramaMao = lazy(() => carregadores.CronogramaMao().then(({ CronogramaMao }) => ({ default: CronogramaMao })))
 const PreviaGato = import.meta.env.DEV ? lazy(() => import('./paginas/dev/PreviaGato')) : null
+const PreviaConquistas = import.meta.env.DEV ? lazy(() => import('./paginas/dev/PreviaConquistas')) : null
 const PreviaConvite = import.meta.env.DEV ? lazy(() => import('./paginas/dev/PreviaConvite')) : null
 const Resumos = lazy(() => carregadores.Resumos().then(({ Resumos }) => ({ default: Resumos })))
 const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
@@ -217,7 +218,8 @@ function paginaDaRota(rota: Rota): ReactNode {
       break
     // Painéis de prévia (gato da espera e carta de convite em #/dev/convite): só em desenvolvimento (fora do pacote publicado).
     case 'dev':
-      if (segundo === 'convite' && PreviaConvite) pagina = <Suspense fallback={null}><PreviaConvite /></Suspense>
+      if (segundo === 'conquistas' && PreviaConquistas) pagina = <Suspense fallback={null}><PreviaConquistas key={rota.consulta.toString()} /></Suspense>
+      else if (segundo === 'convite' && PreviaConvite) pagina = <Suspense fallback={null}><PreviaConvite /></Suspense>
       else if (PreviaGato) pagina = <Suspense fallback={null}><PreviaGato /></Suspense>
       break
     case 'indicar':
@@ -342,7 +344,7 @@ export function App() {
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
       <HospedeConfirmacao />
-      {encontrosProntos && <Suspense fallback={null}><Encontros /><ConquistasDoDia /></Suspense>}
+      {encontrosProntos && <Suspense fallback={null}>{sessao && <AvisosConquistas />}<ConquistasDoDia /></Suspense>}
       {encontrosProntos && <Suspense fallback={null}><ConviteAssinar caminho={rota.caminho} /></Suspense>}
     </div>
   )

@@ -1,5 +1,7 @@
 # Direção artística do OrtoQuestões
 
+**Atualização de 17/11/2026 — conquistas:** as visitas e surpresas do canto inferior esquerdo foram substituídas por avisos de conquistas reais. Expectativa usa objeto fechado do cenário e luz contida; comemoração revela a medalha com subida, brilho breve e acabamento pelo nível. No celular, cartão compacto. Catálogo e medalhas ganhas preservados; popups funcionais do treino permanecem. Contrato: [../conquistas/AVISOS.md](../conquistas/AVISOS.md). Esta decisão prevalece sobre referências históricas às visitas neste guia.
+
 Guia único para quem cria arte ou mexe em telas: Claude, Codex (ChatGPT) ou qualquer pessoa. Este documento reúne o que
 o Tales (dono do projeto) aprovou, recusou e pediu até 01/11/2026.
 

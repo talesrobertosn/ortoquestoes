@@ -7,7 +7,7 @@ import { pathToFileURL } from 'node:url'
 const pasta = await mkdtemp(join(tmpdir(), 'oq-eventos-'))
 try {
   const arquivo = join(pasta, 'eventos.mjs')
-  await build({ stdin: { contents: "export * from './src/eventos/regras'; export * from './src/eventos/memoria'; export * from './src/eventos/preferencias'; export * from './src/eventos/conquistasDia'", resolveDir: process.cwd() }, outfile: arquivo, bundle: true, platform: 'node', format: 'esm', logLevel: 'error' })
+  await build({ stdin: { contents: "export * from './src/eventos/regras'; export * from './src/eventos/memoria'; export * from './src/eventos/preferencias'; export * from './src/eventos/conquistasDia'", resolveDir: process.cwd() }, outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.DEV': 'false', 'import.meta.env.BASE_URL': '"/"' }, logLevel: 'error' })
   const m = await import(pathToFileURL(arquivo))
   const hora = '2026-10-17T18:00:00Z' // sábado, 15 h em São Paulo
   const agora = Date.parse(hora)
@@ -98,7 +98,8 @@ try {
   m.guardarLembrancas('sem-disco', lembranca); assert.equal(m.lerLembrancas('sem-disco').selo, true)
   m.registrarAparicao(agora + 5); assert.equal(m.ultimaAparicao(), agora + 5, 'sem disco, o limite vale na memória da aba')
   const app = await readFile('src/App.tsx', 'utf8')
-  assert.match(app, /lazy\(\(\) => import\('\.\/eventos\/Encontros'\)\)/)
+  assert.doesNotMatch(app, /import\('\.\/eventos\/Encontros'\)/, 'visitas retiradas não voltam ao aplicativo')
+  assert.match(app, /import\('\.\/conquistas\/AvisosConquistas'\)/)
   // Conquistas do dia (raio-X, instrumental e plantão): poucas, só a mais especial de cada vez, no máximo 3 por dia
   {
     const T = Date.parse('2026-10-26T15:00:00Z')

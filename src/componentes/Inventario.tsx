@@ -11,6 +11,7 @@ import {
 } from '../estado/conquistas'
 import { META_STREAK_DIARIA } from '../estado/streak'
 import { usarArmazenado } from '../estado/usarArmazenado'
+import { usarRota } from '../util/rotas'
 
 /**
  * Dica de um emblema: ao passar o mouse, ao focar pelo teclado ou ao tocar,
@@ -165,6 +166,18 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
   metricas: Metricas; nome: string; vitrine: string[]; salvarVitrine: (ids: string[]) => Promise<string | null>; podeEscolher: boolean; abrirEscolha?: boolean
 }) {
   const [escolhendo, definirEscolhendo] = useState(false)
+  const { consulta } = usarRota()
+  const pedido = emblemaPorId(consulta.get('conquista') ?? '')
+  const destaque = pedido && (!pedido.secreta || desbloqueado(pedido, metricas)) ? pedido : undefined
+  useEffect(() => {
+    if (!destaque) return
+    const t = setTimeout(() => {
+      const alvo = document.getElementById('conquista-selecionada')
+      alvo?.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })
+      alvo?.focus({ preventScroll: true })
+    }, 150)
+    return () => clearTimeout(t)
+  }, [destaque?.id])
   // 168 emblemas numa página de 18 mil px no celular: por padrão só a próxima meta
   // de cada família; "Conquistadas" e "Todas" a um toque, e uma família por vez.
   const [filtro, definirFiltro] = usarArmazenado<FiltroInventario>('conquistas:filtro', 'proximas')
@@ -201,6 +214,10 @@ export function Inventario({ metricas, nome, vitrine, salvarVitrine, podeEscolhe
       {podeEscolher && <small className="inv-jogador__dica">Eles aparecem ao lado do seu nome no ranking, para todo mundo ver.</small>}
     </button>
 
+    {destaque && <div id="conquista-selecionada" tabIndex={-1} aria-label={`Conquista selecionada: ${destaque.rotulo}`}>
+      <p className="meta">Conquista selecionada</p>
+      <ul className="inv-grade inv-grade--proximas"><ItemInventario emblema={destaque} metricas={metricas} naVitrine={vitrine.includes(destaque.id)} familia={FAMILIAS.find(f => f.id === destaque.familia)?.titulo} /></ul>
+    </div>}
     <div className="inv-filtros" role="group" aria-label="Mostrar">
       <div className="inv-segmentado">
         {(Object.keys(ROTULO_FILTRO) as FiltroInventario[]).map((v) => <button key={v} type="button" aria-pressed={filtro === v} onClick={() => definirFiltro(v)}>{ROTULO_FILTRO[v]}</button>)}

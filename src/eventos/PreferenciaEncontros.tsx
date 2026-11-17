@@ -1,26 +1,12 @@
-import { useEffect, useState } from 'react'
-import { usarConta } from '../conta/ContextoConta'
 import { InterruptorLocal } from '../componentes/conta/PecasConta'
-import { recurso } from '../config'
-import { lerLembrancas } from './memoria'
-import { usarEventosLigados } from './preferencias'
-import './encontros.css'
+import { usarEventosLigados, usarMetasLigadas } from './preferencias'
+
+/** Mantém as escolhas do aparelho; o antigo sistema de visitas foi retirado. */
 export function PreferenciaEncontros() {
   const [ligados, definir] = usarEventosLigados()
-  const { sessao } = usarConta()
-  const id = sessao?.user.id ?? 'visitante'
-  const [lembrancas, atualizar] = useState(() => lerLembrancas(id))
-  useEffect(() => {
-    const ler = () => atualizar(lerLembrancas(id))
-    ler(); window.addEventListener('oq:eventos:lembrancas', ler); window.addEventListener('storage', ler)
-    return () => { window.removeEventListener('oq:eventos:lembrancas', ler); window.removeEventListener('storage', ler) }
-  }, [id])
+  const [metas, definirMetas] = usarMetasLigadas()
   return <>
-    <InterruptorLocal ligado={ligados} aoMudar={definir}>Receber pequenas visitas, surpresas e conquistas do dia durante o estudo</InterruptorLocal>
-    <p className="encontros-preferencia__nota">Sem som e somem sozinhas. As visitas surpresa aparecem no máximo uma vez por hora; as conquistas do dia (a fratura que consolida com as questões do dia, a fixação estável do acerto alto, o plantão dos dias seguidos) aparecem na hora, no máximo três por dia. Tudo espera o fim dos simulados e sessões cronometradas. Esta escolha vale neste aparelho.</p>
-    {(lembrancas.selo || lembrancas.arquivo) && <div className="encontros-preferencia__lembrancas">
-      {lembrancas.selo && <span><img src={recurso('eventos/selo.png')} alt="" width={32} height={32} /> Mão de cirurgião · lembrança local</span>}
-      {ligados && lembrancas.arquivo && <button className="botao" type="button" onClick={() => window.dispatchEvent(new Event('oq:eventos:arquivo'))}>Arquivo do Preceptor</button>}
-    </div>}
+    <InterruptorLocal ligado={ligados} aoMudar={definir} detalhe="Medalhas reais do inventário, com arte e comemoração breve, além dos avisos do dia durante o treino. Sem som. Simulados esperam a entrega.">Mostrar avisos de conquistas</InterruptorLocal>
+    {ligados && <InterruptorLocal ligado={metas} aoMudar={definirMetas} detalhe="Lembretes ocasionais do próximo marco, incluindo metas maiores. No treino, só depois de responder; no máximo dois por sessão.">Mostrar metas próximas enquanto estudo</InterruptorLocal>}
   </>
 }

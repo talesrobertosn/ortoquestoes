@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { atualizarFeitos } from '../conta/feitos'
 import { supabase } from '../conta/supabase'
 import { usarConta } from '../conta/ContextoConta'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -19,6 +20,7 @@ async function enviar(id: string, a: Avaliacao): Promise<boolean> {
     }
     if (a.nota) { linha.nota = a.nota; linha.comentario_em = a.versao ?? null }
     const { error } = await supabase.from('avaliacoes_comentario').upsert(linha)
+    if (!error) void atualizarFeitos()
     return !error
   } catch { return false }
 }
