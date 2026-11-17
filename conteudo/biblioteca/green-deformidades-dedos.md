@@ -490,7 +490,7 @@ Para não confundir as quatro, três perguntas bastam: **qual osso** (falange m�
 
 > **Na prova:** braquidactilia = **falange média** (a última a ossificar), dedos **mínimo e indicador**; braquimetacarpia isolada = **4º metacarpo em meninas**; clinodactilia = **mais de 10 graus**, plano **radioulnar**, **falange média**, AD, **homens**; barra ossificada cedo = **falange delta**; KIRNER = **falange distal**, **palmar e radial**, **meninas**, IFD **preservada**; camptodactilia = **IFP**, **80% no lactente**, **dois terços bilaterais**, abaixo de **30 graus** não operar.
 
-# Braquidactilia: o dedo que cresceu pouco {radar=confirmado}
+# Braquidactilia: o dedo que cresceu pouco {radar=fundamento}
 
 ## Definição e nomes
 
@@ -546,7 +546,7 @@ como: O SIMÃO 2022 perguntou os ossos mais encurtados; o SIMÃO 2024, o osso de
 armadilha: Pôr a braquidactilia na falange proximal ou distal, ou trocar o grupo da ELLIS-VAN CREVELD (polidactilia) pelo da APERT (sindactilia).
 !fim
 
-# Braquidactilia: quando e como alongar {radar=confirmado}
+# Braquidactilia: quando e como alongar {radar=fundamento}
 
 ## A decisão
 
@@ -586,7 +586,7 @@ O Green (p. 1243) dá números que caem em prova:
 
 O SIMÃO 2012 cobrou o início da distração com a resposta "7 dias" do curso; pelo livro, o intervalo é de **4 a 7 dias**, de modo que 5 e 7 dias cabem nele. O simulado cobra o **ritmo**, que não tem ambiguidade.
 
-# Clinodactilia: definição e quem tem {radar=confirmado}
+# Clinodactilia: definição e quem tem {radar=fundamento}
 
 ## Um plano, abaixo da MF
 
@@ -609,7 +609,7 @@ armadilha: Aceitar 20 graus como limite, ou inclinação ulnar como a forma mais
 alerta: Em `mao-0929`, o Green 7 (cap. 36) não liga a clinodactilia à síndrome de DOWN; liga a DOWN à KIRNER (p. 1274). Entre as alternativas (braquidactilia, ectrodactilia, clinodactilia, oligodactilia), só a clinodactilia descreve um desvio que faz o dedo cavalgar o vizinho, e o gabarito oficial foi preservado.
 !fim
 
-# Clinodactilia: a barra epifisária e a falange delta {radar=confirmado}
+# Clinodactilia: a barra epifisária e a falange delta {radar=fundamento}
 
 ## O que a radiografia mostra
 
@@ -647,7 +647,7 @@ O Green (p. 1271) considera a de **COONEY** a mais útil (COONEY, "Camptodactyly
 
 A leitura: "simples" e "complexa" dizem **o que está envolvido** (só osso ou osso e partes moles); "complicada" diz que passou de **45 graus**. A clinodactilia de 30 graus só óssea é **simples** (SIMÃO 2012); a de 50 graus só óssea é **simples complicada** (SIMÃO 2026); a de 55 graus com polidactilia é **complexa complicada** (SIMÃO 2012); a associada à sindactilia com menos de 45 graus é **complexa** (SIMÃO 2023).
 
-# Clinodactilia: o tratamento {radar=confirmado}
+# Clinodactilia: o tratamento {radar=fundamento}
 
 ## Quem opera
 
@@ -701,7 +701,7 @@ como: O SIMÃO 2026 deu 50 graus só por deformidade óssea da falange média; a
 armadilha: Chamar de complexa uma deformidade só óssea porque passou de 45 graus, ou indicar tala.
 !fim
 
-# KIRNER: a falange distal que cresce torta {radar=confirmado}
+# KIRNER: a falange distal que cresce torta {radar=fundamento}
 
 ## Definição
 
@@ -760,7 +760,7 @@ como: O SBCM 2024 descreveu a menina de 11 anos com inchaço dorsal na falange d
 armadilha: Responder clinodactilia (falange média, um plano) ou camptodactilia (IFP, flexão).
 !fim
 
-# Clinodactilia contra KIRNER: as pegadinhas {radar=confirmado}
+# Clinodactilia contra KIRNER: as pegadinhas {radar=fundamento}
 
 As duas deformidades vivem no mínimo, são progressivas com o crescimento e têm fise anormal. A banca explora exatamente isso.
 
