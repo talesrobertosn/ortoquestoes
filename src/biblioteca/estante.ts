@@ -121,9 +121,12 @@ export function consultaDosFiltros(f: FiltrosEstante): string {
 
 /** O próximo capítulo publicado do mesmo livro e edição, na ordem do livro; nenhum se este for o último. */
 export function proximoCapitulo(capitulos: ResumoCapitulo[], atual: Pick<ResumoCapitulo, 'id' | 'livro' | 'edicao' | 'capitulo'>): ResumoCapitulo | null {
+  // Na ordem da estante (número e, no mesmo número, título): dois resumos do mesmo capítulo seguem um ao outro.
+  const doLivro = capitulos.filter((c) => chaveLivro(c) === chaveLivro(atual)).sort(compararNoLivro)
+  const i = doLivro.findIndex((c) => c.id === atual.id)
+  if (i >= 0) return doLivro[i + 1] ?? null
   const n = numeroCapitulo(atual)
-  return capitulos.filter((c) => c.id !== atual.id && chaveLivro(c) === chaveLivro(atual) && numeroCapitulo(c) > n)
-    .sort(compararNoLivro)[0] ?? null
+  return doLivro.find((c) => numeroCapitulo(c) > n) ?? null
 }
 
 /** Onde a pessoa deixou a estante (filtros e busca, na aba): o "Biblioteca" do leitor reabre igual. */
