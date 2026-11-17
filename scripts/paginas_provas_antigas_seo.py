@@ -127,7 +127,7 @@ def _pagina_titulo_mao(d: dict, prova: str) -> tuple[str, dict]:
         "com o livro e a página de cada alternativa. Os cadernos oficiais não estão no site: as questões são autorais, no padrão da prova.",
         f"Provas antigas {'do SIMÃO' if simao else 'da SBCM'}",
         [(f"Treinar no padrão {'do SIMÃO' if simao else 'da SBCM'}", treino, "principal"), ("Criar conta grátis", "../#/conta?modo=criar&amp;voltar=%2Ftreinar", "claro")],
-        [f"{num(len(questoes))} questões no padrão da prova", "Comentário de cada alternativa", "Grátis para começar"],
+        ["Questões no padrão da prova", "Comentário de cada alternativa", "Grátis para começar"],
     ))
     corpo.append(f"""<section><h2>Por que não estão aqui os cadernos oficiais</h2>
 <p>As provas {'do SIMÃO' if simao else 'de título'} são da Sociedade Brasileira de Cirurgia da Mão. O Orto Questões não publica nem
@@ -146,8 +146,8 @@ um cronograma até a data da sua prova.</p>
 <li><strong>Leia o capítulo</strong> na bibliografia indicada no edital do ano.</li>
 <li><strong>Responda as questões do assunto</strong> e leia o comentário de todas as alternativas, inclusive da certa.</li>
 <li><strong>Revise os erros</strong> em outro dia: eles voltam sozinhos na revisão espaçada.</li>
-<li><strong>Faça um simulado inteiro no tempo</strong> a cada poucas semanas, misturando {'o SIMÃO e a SBCM' if simao else 'a SBCM e o SIMÃO'}
-({num(len(questoes))} e {num(len(outras))} questões no padrão de cada uma).</li>
+<li><strong>Faça um simulado inteiro no tempo</strong> a cada poucas semanas, misturando {'o SIMÃO e a SBCM' if simao else 'a SBCM e o SIMÃO'},
+com as questões no padrão de cada uma.</li>
 </ol>
 <p><a class="botao principal" href="../#/cronograma-mao?prova=titulo">Montar o cronograma do título</a></p></section>""")
     corpo.append(_exemplos(questoes))
@@ -284,8 +284,8 @@ def pagina_curso_cirurgia_mao(d: dict) -> tuple[str, dict]:
     ))
     corpo.append(f"""<section><h2>O que o site tem para a cirurgia da mão</h2>
 <ul class="relacionados">
-<li><a href="{link_treino(area="mao")}"><b>Questões comentadas</b><span>As seleções de residência reais ({num(len(oficiais))} questões) e
-{num(len(titulo_q))} questões no padrão da SBCM e do SIMÃO, com o comentário de cada alternativa, o livro e a página.</span></a></li>
+<li><a href="{link_treino(area="mao")}"><b>Questões comentadas</b><span>As seleções de residência reais e
+as questões no padrão da SBCM e do SIMÃO, com o comentário de cada alternativa, o livro e a página.</span></a></li>
 <li><a href="../#/cronograma-mao"><b>Cronograma até a prova</b><span>Ingresso ou título: a meta do dia, na ordem do que mais cai, com
 recomeço e semana difícil.</span></a></li>
 <li><a href="../resumos/"><b>Resumos dos capítulos</b><span>Os capítulos de cirurgia da mão na ordem em que a prova cobra, com as
