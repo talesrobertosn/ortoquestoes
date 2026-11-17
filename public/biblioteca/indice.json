@@ -11437,15 +11437,15 @@
   },
   {
    "id": "green-deformidades-dedos",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Deformidades dos dedos",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed., e o HEBERT",
    "capitulo": "Capítulo 10 · Treatment of the Stiff Finger and Hand",
-   "resumo": "Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); BUNNELL e intrínseco plus e minus; checkrein e artéria digital transversa; camptodactilia, clinodactilia e KIRNER.",
+   "resumo": "Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); BUNNELL e intrínseco plus e minus; checkrein e artéria digital transversa; braquidactilia (falange média, BELL E com metacarpos curtos, braquimetacarpia do 4º em meninas, distração 4 a 7 dias e 0,25 a 0,5 mm duas vezes ao dia); clinodactilia (mais de 10 graus, barra em C e falange delta, COONEY, VICKERS antes dos 6 anos, polegar com osteotomia primária); KIRNER (falange distal, palmar e radial, meninas, SONG, periósteo dorsal como dobradiça); camptodactilia (BENSON I a III, 80% no lactente, dois terços bilaterais, abaixo de 30 graus não operar).",
    "acesso": "gratis",
-   "minutos": 39,
+   "minutos": 62,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11518,8 +11518,48 @@
      "radar": "confirmado"
     },
     {
-     "id": "camptodactilia-clinodactilia-e-kirner",
-     "titulo": "Camptodactilia, clinodactilia e KIRNER",
+     "id": "os-dedos-congenitos-osso-plano-e-fise",
+     "titulo": "Os dedos congênitos: osso, plano e fise",
+     "radar": "fundamento"
+    },
+    {
+     "id": "braquidactilia-o-dedo-que-cresceu-pouco",
+     "titulo": "Braquidactilia: o dedo que cresceu pouco",
+     "radar": "fundamento"
+    },
+    {
+     "id": "braquidactilia-quando-e-como-alongar",
+     "titulo": "Braquidactilia: quando e como alongar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "clinodactilia-definicao-e-quem-tem",
+     "titulo": "Clinodactilia: definição e quem tem",
+     "radar": "fundamento"
+    },
+    {
+     "id": "clinodactilia-a-barra-epifisaria-e-a-falange-del",
+     "titulo": "Clinodactilia: a barra epifisária e a falange delta",
+     "radar": "fundamento"
+    },
+    {
+     "id": "clinodactilia-o-tratamento",
+     "titulo": "Clinodactilia: o tratamento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "kirner-a-falange-distal-que-cresce-torta",
+     "titulo": "KIRNER: a falange distal que cresce torta",
+     "radar": "fundamento"
+    },
+    {
+     "id": "clinodactilia-contra-kirner-as-pegadinhas",
+     "titulo": "Clinodactilia contra KIRNER: as pegadinhas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "camptodactilia",
+     "titulo": "Camptodactilia",
      "radar": "confirmado"
     },
     {
@@ -11550,7 +11590,9 @@
     "mao-1464",
     "mao-0065",
     "mao-1423",
-    "pe-tornozelo-0252"
+    "pe-tornozelo-0252",
+    "mao-0757",
+    "mao-0943"
    ],
    "treino": [
     "mao-1758",
@@ -11575,13 +11617,59 @@
     "mao-1939",
     "mao-2188",
     "mao-2031",
-    "mao-2010",
-    "mao-2402",
-    "mao-2374",
+    "mao-2869",
+    "mao-2902",
+    "mao-2914",
+    "mao-2921",
+    "mao-2431",
+    "mao-2278",
+    "mao-2553",
+    "mao-2152",
+    "mao-2882",
+    "mao-2888",
+    "mao-2893",
+    "mao-2905",
+    "mao-2915",
+    "mao-2944",
+    "mao-1160",
+    "mao-1183",
+    "mao-0929",
+    "mao-2872",
+    "mao-2901",
+    "mao-2904",
+    "mao-2908",
+    "mao-2926",
+    "mao-2931",
+    "mao-2937",
+    "mao-2939",
+    "mao-1727",
+    "mao-2871",
+    "mao-2877",
+    "mao-2900",
+    "mao-2916",
+    "mao-2918",
+    "mao-2919",
+    "mao-2935",
+    "mao-2941",
+    "mao-2952",
+    "mao-2630",
     "mao-2283",
     "mao-2001",
     "mao-2466",
-    "mao-2395"
+    "mao-2395",
+    "mao-2873",
+    "mao-2875",
+    "mao-2876",
+    "mao-2891",
+    "mao-2892",
+    "mao-2894",
+    "mao-2911",
+    "mao-2920",
+    "mao-2929",
+    "mao-2949",
+    "mao-2010",
+    "mao-2402",
+    "mao-2374"
    ],
    "subtemas": [
     "Deformidades dos dedos"
@@ -13779,15 +13867,15 @@
   },
   {
    "id": "green-sindactilia-polidactilia",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Sindactilia e polidactilia",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Campbell's Operative Orthopaedics, 15ª ed., o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., e o HEBERT",
    "capitulo": "Capítulo 36 · Deformities of the Hand and Fingers",
-   "resumo": "Falha da apoptose interdigital mediada por BMP; simples, complexa (sinoníquia), complicada, completa e incompleta; 1:2.000, bilateral em 50%, meninos 2:1, família em 10 a 40%; isolada na 3ª comissura (57%) e na 4ª (27%), 1ª e 2ª nas sindrômicas; borda cedo, centrais após 18 meses; um lado do dedo por vez; comissura com retalho dorsal e sem enxerto; BUCK-GRAMCKO; web creep; APERT (UPTON, KELLAM, FGFR2), POLAND e acrossindactilia (PATTERSON 3); pós-axial (A e B, negros, AD de penetrância variável, síndrome no branco), central (anular, bilateral, sinpolidactilia, HOXD13, STELLING e TUREK) e polegar (WASSEL IV, preservar o ulnar, abdutor curto com o colateral radial, BILHAUT-CLOQUET nos I e II simétricos).",
+   "resumo": "Falha da apoptose interdigital mediada por BMP; simples, complexa (sinoníquia), complicada, completa e incompleta; 1:2.000, bilateral em 50%, meninos 2:1, família em 10 a 40%; isolada na 3ª comissura (57%) e na 4ª (27%), 1ª e 2ª nas sindrômicas; borda cedo, centrais após 18 meses; um lado do dedo por vez; comissura com retalho dorsal e sem enxerto; BUCK-GRAMCKO; web creep; APERT (UPTON, KELLAM, FGFR2), POLAND e acrossindactilia (PATTERSON 3); pós-axial (A e B, negros, AD de penetrância variável, síndrome no branco), central (anular, bilateral, sinpolidactilia, HOXD13, STELLING e TUREK), mão em espelho (duas ulnas, sem polegar, AL-QATTAN, policizar o dedo radial mais móvel), epidermólise bolhosa (pseudossindactilia, recidiva acima de 50%) e polegar (WASSEL IV, preservar o ulnar, abdutor curto com o colateral radial, BILHAUT-CLOQUET nos I e II simétricos).",
    "acesso": "gratis",
-   "minutos": 35,
+   "minutos": 52,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -13835,8 +13923,8 @@
      "radar": "clinico"
     },
     {
-     "id": "acrossindactilia-e-banda-de-constricao",
-     "titulo": "Acrossindactilia e banda de constrição",
+     "id": "acrossindactilia",
+     "titulo": "Acrossindactilia",
      "radar": "confirmado"
     },
     {
@@ -13847,6 +13935,11 @@
     {
      "id": "poland-e-as-outras-associacoes",
      "titulo": "POLAND e as outras associações",
+     "radar": "clinico"
+    },
+    {
+     "id": "epidermolise-bolhosa-a-falsa-sindactilia",
+     "titulo": "Epidermólise bolhosa: a falsa sindactilia",
      "radar": "clinico"
     },
     {
@@ -13863,6 +13956,11 @@
      "id": "a-polidactilia-central-e-a-sinpolidactilia",
      "titulo": "A polidactilia central e a sinpolidactilia",
      "radar": "clinico"
+    },
+    {
+     "id": "a-mao-em-espelho",
+     "titulo": "A mão em espelho",
+     "radar": "confirmado"
     },
     {
      "id": "a-duplicacao-do-polegar-wassel",
@@ -13899,13 +13997,17 @@
     "mao-1379",
     "mao-0841",
     "mao-0876",
+    "mao-0457",
     "mao-1229",
+    "mao-1820",
+    "mao-1884",
     "mao-0752",
     "mao-1003",
     "pediatria-0804",
     "mao-1373",
     "mao-1559",
     "mao-1416",
+    "mao-0665",
     "mao-0935",
     "mao-0400",
     "mao-0423",
@@ -13921,28 +14023,55 @@
    ],
    "treino": [
     "mao-2471",
+    "mao-2953",
     "mao-2376",
+    "mao-2883",
+    "mao-2907",
     "mao-2387",
+    "mao-2870",
+    "mao-2890",
+    "mao-2934",
     "mao-2434",
     "mao-1729",
+    "mao-2884",
+    "mao-2896",
+    "mao-2897",
+    "mao-2605",
+    "mao-2924",
+    "mao-2936",
     "mao-2243",
     "mao-2000",
+    "mao-2940",
     "mao-2002",
+    "mao-2885",
+    "mao-2933",
+    "mao-2913",
     "mao-1999",
     "mao-1995",
     "mao-2092",
+    "mao-2943",
     "mao-2284",
     "mao-2001",
     "mao-2533",
+    "mao-2881",
+    "mao-2910",
+    "mao-2925",
+    "mao-2945",
     "mao-2280",
     "mao-1725",
     "mao-1996",
     "mao-2153",
     "mao-2242",
     "mao-2454",
+    "mao-2912",
     "mao-1730",
     "mao-1998",
     "mao-2419",
+    "mao-2880",
+    "mao-2909",
+    "mao-2923",
+    "mao-2950",
+    "mao-2007",
     "mao-2375"
    ],
    "subtemas": [
@@ -14586,15 +14715,15 @@
   },
   {
    "id": "green8-malformacoes-congenitas",
-   "versao": 5,
+   "versao": 6,
    "titulo": "Malformações congênitas da mão e do antebraço",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com a 8ª traduzida",
    "capitulo": "Capítulos 35 a 38 · Mão pediátrica, com o Tachdjian (caps. 12, 21 e 35)",
-   "resumo": "Embriologia (AER, ZPA e Wnt; janela de 4 a 8 semanas) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER, camptodactilia e macrodactilia; deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.",
+   "resumo": "Embriologia (AER, ZPA e Wnt; janela de 4 a 8 semanas) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER e camptodactilia em panorama; ausência de dedos transversal e longitudinal; banda de constrição (PATTERSON, um anel de cada vez); simbraquidactilia (nubbins, YAMAUCHI e TANABU, nervo radial presente); mão em fenda (MANSKE e HALIKIS pela primeira comissura, fenda em V contra U, SNOW-LITTLER); transferência de falange (RADOCHA, antes dos 15 meses) e de dedo do pé (segundo artelho, CMC estável); macrodactilia (FLATT I a IV, indicador, divergência, palmar e distal, epifisiodese no comprimento do genitor, amputação do raio cedo); deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 56,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14617,11 +14746,6 @@
      "radar": "confirmado"
     },
     {
-     "id": "a-banda-de-constricao",
-     "titulo": "A banda de constrição",
-     "radar": "confirmado"
-    },
-    {
      "id": "a-mao-de-apert",
      "titulo": "A mão de APERT",
      "radar": "confirmado"
@@ -14640,6 +14764,31 @@
      "id": "os-dedos-curtos-tortos-e-dobrados",
      "titulo": "Os dedos curtos, tortos e dobrados",
      "radar": "confirmado"
+    },
+    {
+     "id": "ausencia-de-dedos-transversal-ou-longitudinal",
+     "titulo": "Ausência de dedos: transversal ou longitudinal",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-banda-de-constricao",
+     "titulo": "A banda de constrição",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-simbraquidactilia",
+     "titulo": "A simbraquidactilia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-mao-em-fenda",
+     "titulo": "A mão em fenda",
+     "radar": "confirmado"
+    },
+    {
+     "id": "transferencia-de-falange-e-de-dedo-do-pe",
+     "titulo": "Transferência de falange e de dedo do pé",
+     "radar": "fundamento"
     },
     {
      "id": "a-macrodactilia",
@@ -14691,7 +14840,6 @@
     "mao-0073",
     "mao-0009",
     "mao-0424",
-    "mao-0078",
     "mao-0038",
     "mao-0524",
     "mao-0180",
@@ -14703,9 +14851,16 @@
     "mao-0516",
     "mao-0249",
     "mao-0146",
+    "mao-0078",
+    "mao-1161",
+    "mao-1387",
+    "mao-1567",
+    "mao-1385",
     "mao-0008",
     "mao-0542",
     "mao-0636",
+    "mao-1565",
+    "mao-1421",
     "mao-0075",
     "mao-0157",
     "mao-0562",
@@ -14737,6 +14892,45 @@
     "mao-2585",
     "mao-2589",
     "mao-2590",
+    "mao-2903",
+    "mao-2154",
+    "mao-2241",
+    "mao-1723",
+    "mao-2603",
+    "mao-2898",
+    "mao-2928",
+    "mao-2932",
+    "mao-2951",
+    "mao-2279",
+    "mao-2281",
+    "mao-2878",
+    "mao-2886",
+    "mao-2415",
+    "mao-2927",
+    "mao-2489",
+    "mao-2874",
+    "mao-2879",
+    "mao-2887",
+    "mao-2889",
+    "mao-2906",
+    "mao-2917",
+    "mao-2922",
+    "mao-2930",
+    "mao-2942",
+    "mao-2947",
+    "mao-2948",
+    "mao-2094",
+    "mao-2240",
+    "mao-2425",
+    "mao-2155",
+    "mao-2895",
+    "mao-2899",
+    "mao-2938",
+    "mao-2282",
+    "mao-2556",
+    "mao-2946",
+    "mao-1997",
+    "mao-1719",
     "mao-2586",
     "mao-2587",
     "mao-2588",
