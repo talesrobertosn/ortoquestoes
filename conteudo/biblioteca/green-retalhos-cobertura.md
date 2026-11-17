@@ -349,7 +349,7 @@ alerta: A `mao-0613` está sem gabarito oficial; o Green (cap. 44, p. 1547) o de
 
 São os grandes **fasciocutâneos** regionais do membro superior (Green's Operative Hand Surgery, 7ª ed., cap. 44, p. 1555), a resposta usual para pele perdida no dorso da mão.
 
-**Radial ("chinês").** De base distal, com pivô junto à tabaqueira, cobre quase qualquer defeito da mão e leva pele, fáscia, tendão (palmar longo) e osso (rádio, até 10 cm e 30% da secção); é o "camaleão" (p. 1555; cap. 45, p. 1589). As veias comitantes se comunicam e permitem fluxo reverso. A precaução mínima é o **teste de ALLEN** (ou Doppler dinâmico), porque a radial é dominante em 12% das mãos (p. 1555 a 1556). A **maior desvantagem** é a **área doadora** enxertada, feia sobretudo em jovens e mulheres; a versão só fascial a evita. É inervado pelos **cutâneos lateral e medial do antebraço** (cap. 45, p. 1576); o Campbell's Operative Orthopaedics, 15ª ed., diz **ramos do musculocutâneo** (cap. 70, p. 3132), e o Green lembra que o musculocutâneo continua como cutâneo lateral do antebraço (cap. 34).
+**Radial ("chinês").** De base distal, com pivô junto à tabaqueira, cobre quase qualquer defeito da mão e leva pele, fáscia, tendão (palmar longo) e osso (rádio, até 10 cm e 30% da secção); é o "camaleão" (p. 1555; cap. 45, p. 1589). As veias comitantes se comunicam e permitem fluxo reverso. A precaução mínima é o **teste de ALLEN** (ou Doppler dinâmico), porque a radial é dominante em 12% das mãos (p. 1555 a 1556). A **maior desvantagem** é a **área doadora** enxertada, feia sobretudo em jovens e mulheres; a versão só fascial a evita. É inervado pelos **cutâneos lateral e medial do antebraço** (cap. 45, p. 1576); o Campbell's Operative Orthopaedics, 15ª ed., diz **ramos do musculocutâneo** (cap. 70, p. 3131), e o Green lembra que o musculocutâneo continua como cutâneo lateral do antebraço (cap. 34).
 
 **Ulnar.** Pele menos pilosa, doadora mais discreta; septo entre flexor ulnar do carpo e flexores dos dedos; disestesia ulnar transitória (p. 1558 a 1559).
 
@@ -363,7 +363,7 @@ São os grandes **fasciocutâneos** regionais do membro superior (Green's Operat
 | interóssea posterior | entre ECU e extensor do mínimo | 2 cm proximal ao estiloide ulnar | variações; necrose parcial frequente |
 !fim
 
-!questoes central=mao-0015 relacionadas=mao-0622,mao-1327,mao-0413,mao-0854,mao-0518,mao-0845,mao-1900,mao-0271
+!questoes central=mao-0015 relacionadas=mao-0622,mao-1327,mao-0413,mao-0854,mao-0518,mao-0845,mao-1900,mao-0271,mao-1507
 conceito: Interóssea posterior: pedículo entre ECU e extensor do mínimo, pivô 2 cm proximal ao estiloide ulnar; radial: exige ALLEN normal, inervação pelo cutâneo lateral do antebraço (musculocutâneo), crítica maior na área doadora; perda de pele no dorso da mão pede fasciocutâneo.
 como: TARO 2009 e 2019 pediram o septo da interóssea posterior; TEOT 2025 e UFG 2017, o teste de ALLEN; TARO 2011, a inervação do radial; INTO 2026, por imagem, o radial; ENARE 2025, a crítica ao radial; ENARE R4 2023, o tipo de retalho para o dorso.
 armadilha: Pôr o pedículo da interóssea posterior entre extensor dos dedos e mínimo, ou o pivô no carpo.

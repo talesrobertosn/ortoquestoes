@@ -97,7 +97,7 @@ Fonte: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (2017), cap. 83, Fig. 83
 
 **O enxerto do ílio anterior.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 5), lista o que corre risco ao tirar osso da crista anterior: os nervos **cutâneo femoral lateral e ilioinguinal** e os **vasos glúteos superiores**, além de hérnia e deformidade estética da crista nos enxertos grandes.
 
-!questoes central=quadril-0193 relacionadas=quadril-0189,quadril-0042,quadril-0080,quadril-0047,quadril-0135,quadril-0497 treino=quadril-0721
+!questoes central=quadril-0193 relacionadas=quadril-0189,quadril-0042,quadril-0080,quadril-0047,quadril-0135,quadril-0497,mao-1626 treino=quadril-0721
 conceito: O glúteo superior inerva o médio, o mínimo e o tensor da fáscia lata e sai acima do piriforme; o obturatório fica com os adutores e o grácil; o cutâneo femoral lateral cruza abaixo da espinha ilíaca anterossuperior.
 como: O TARO 2012 perguntou o ramo do glúteo superior para o glúteo médio; o TARO 2025, os nervos em risco no enxerto do ílio anterior; as imagens do TEOT e do TARO pedem o ílio-hipogástrico, o obturatório e a inervação dos músculos da coxa; o TARO 2006, a causa da síndrome do piriforme.
 armadilha: Dar o tensor da fáscia lata ao femoral ou o glúteo médio ao glúteo inferior.
