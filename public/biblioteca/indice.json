@@ -13301,15 +13301,15 @@
   },
   {
    "id": "green-retalhos-cobertura",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Retalhos e cobertura cutânea da mão e do membro superior",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017)",
    "capitulo": "Capítulo 44 · Nonmicrosurgical Coverage of the Upper Extremity",
-   "resumo": "Escada (e elevador) reconstrutiva; enxerto parcial pega melhor e contrai mais, total contrai menos e sente mais (MERKEL), inosculação, bolster na superfície côncava; ao acaso (plexo subdérmico, 1:1) versus axial (vaso nomeado, defeitos maiores); MATHES e NAHAI (I tensor, II grácil, III glúteo máximo, IV sartório, V grande dorsal); Z de 60 graus alonga 75%, ângulos de 45 a 60, romboide de LIMBERG; ATASOY para perda dorsal ou transversa, contraindicado se perda palmar maior, KUTLER duplo lateral; cross-finger do dorso da falange média para defeito volar, reverso para dorsal, evitar acima de 50 anos; tenar dá contratura da IFP; MOBERG bipediculado (até 2/3 da polpa), LITTLER ulnar do anular, KITE em ilha pela 1ª metacarpal dorsal de distal para proximal; radial (ALLEN, musculocutâneo, área doadora ruim), interóssea posterior entre ECU e extensor do mínimo com pivô 2 cm do estiloide ulnar; inguinal pela circunflexa ilíaca superficial (96%, borda medial do sartório); lateral do braço pela colateral radial posterior (úmero 10 cm e 25%, fechamento até 7 cm, nervo radial); escapular transverso, parascapular descendente; ALT pelo ramo descendente da circunflexa femoral lateral; grande dorsal toracodorsal; reto com dois pedículos; débito urinário acima de 100 mL/h; congestão venosa com sangue escuro e prolongado.",
+   "resumo": "Escada e elevador reconstrutivos; o leito decide (osso, cartilagem e tendão nus pedem retalho); epiderme 5% da pele, palma sem pilossebáceas, MEISSNER e PACINI, enxerto espesso reinerva MERKEL; miofibroblasto contrai, total inibe mais (RUDOLPH); circulação plasmática, inosculação, hematoma mata o enxerto, nível crítico de 10.000 bactérias por grama no Green; enxertar cedo, sem esperar granulação; parcial padrão 0,015 polegada, fino pega mais e contrai mais, total contrai menos e sente mais; hipotenar para a polpa; bolster na concavidade; ao acaso 1:1 e autonomização de 10 dias; axial cutâneo (inguinal), fasciocutâneo (lateral do braço) e musculocutâneo (grande dorsal); MATHES e NAHAI I tensor, II grácil, III glúteo máximo, IV sartório, V grande dorsal; Z de 60 graus alonga 75%, quatro retalhos para a 1ª comissura, LIMBERG 60 e 120 graus; bandeiras e metacarpianas dorsais até a IFP; KITE pela 1ª metacarpiana dorsal; ATASOY na perda dorsal ou transversa, KUTLER raramente; ilha homodigital reversa no médio e anular (codominantes); cross-finger do dorso da falange média vizinha, reverso para o dorso, secção em 2 a 3 semanas; tenar abandonado; MOBERG bipediculado até 2/3 da polpa do polegar; LITTLER do lado ulnar do anular; radial com ALLEN (dominante em 12%); ulnar para quimioterápico; interósseo posterior entre ECU e extensor do mínimo, pivô 2 cm proximal ao estiloide ulnar; inguinal pela circunflexa ilíaca superficial (96%), fáscia do sartório incisada, fecha até 12 cm, secção em 3 semanas; lateral do braço pela colateral radial posterior; grande dorsal pela toracodorsal, seroma; falha arterial pálida, venosa roxa com sangue escuro.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 92,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -13317,13 +13317,28 @@
      "radar": "fundamento"
     },
     {
-     "id": "a-escada-reconstrutiva-e-o-leito",
-     "titulo": "A escada reconstrutiva e o leito",
+     "id": "o-leito-decide-escada-elevador-e-por-que-retalho",
+     "titulo": "O leito decide: escada, elevador e por que retalho",
      "radar": "fundamento"
     },
     {
-     "id": "enxertos-de-pele-a-pele-da-mao-a-pega-e-a-escolh",
-     "titulo": "Enxertos de pele: a pele da mão, a pega e a escolha",
+     "id": "a-pele-da-mao-o-que-se-perde-e-por-que-contrai",
+     "titulo": "A pele da mão: o que se perde e por que contrai",
+     "radar": "confirmado"
+    },
+    {
+     "id": "como-o-enxerto-pega",
+     "titulo": "Como o enxerto pega",
+     "radar": "confirmado"
+    },
+    {
+     "id": "enxerto-parcial-espessura-areas-doadoras-e-tecni",
+     "titulo": "Enxerto parcial: espessura, áreas doadoras e técnica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "enxerto-total-fixacao-e-cuidados",
+     "titulo": "Enxerto total, fixação e cuidados",
      "radar": "confirmado"
     },
     {
@@ -13337,13 +13352,18 @@
      "radar": "confirmado"
     },
     {
-     "id": "retalhos-locais-de-transposicao-z-plastia-e-romb",
-     "titulo": "Retalhos locais de transposição: Z-plastia e romboide",
+     "id": "retalhos-locais-transposicao-rotacao-avanco-e-a-",
+     "titulo": "Retalhos locais: transposição, rotação, avanço e a zetaplastia",
      "radar": "confirmado"
     },
     {
-     "id": "a-ponta-do-dedo-cicatrizacao-atasoy-e-kutler",
-     "titulo": "A ponta do dedo: cicatrização, ATASOY e KUTLER",
+     "id": "retalhos-axiais-do-dedo-e-do-dorso-da-mao-bandei",
+     "titulo": "Retalhos axiais do dedo e do dorso da mão: bandeiras e metacarpianas dorsais",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-ponta-do-dedo-cicatrizar-avancar-ou-trazer-uma",
+     "titulo": "A ponta do dedo: cicatrizar, avançar ou trazer uma ilha",
      "radar": "confirmado"
     },
     {
@@ -13352,23 +13372,18 @@
      "radar": "confirmado"
     },
     {
-     "id": "o-polegar-moberg-littler-kite-e-os-metacarpais-d",
-     "titulo": "O polegar: MOBERG, LITTLER, KITE e os metacarpais dorsais",
+     "id": "o-polegar-moberg-kite-e-littler",
+     "titulo": "O polegar: MOBERG, KITE e LITTLER",
      "radar": "confirmado"
     },
     {
-     "id": "retalhos-do-antebraco-radial-ulnar-e-interossea-",
-     "titulo": "Retalhos do antebraço: radial, ulnar e interóssea posterior",
-     "radar": "confirmado"
+     "id": "fillet-e-escapular-os-regionais-axiais-de-um-tem",
+     "titulo": "Fillet e escapular: os regionais axiais de um tempo",
+     "radar": "fundamento"
     },
     {
-     "id": "retalhos-a-distancia-o-inguinal",
-     "titulo": "Retalhos à distância: o inguinal",
-     "radar": "confirmado"
-    },
-    {
-     "id": "retalhos-livres-preparo-e-monitorizacao",
-     "titulo": "Retalhos livres: preparo e monitorização",
+     "id": "retalhos-do-antebraco-radial-ulnar-e-interosseo-",
+     "titulo": "Retalhos do antebraço: radial, ulnar e interósseo posterior",
      "radar": "confirmado"
     },
     {
@@ -13377,14 +13392,29 @@
      "radar": "confirmado"
     },
     {
-     "id": "escapula-e-tronco-escapular-grande-dorsal-serrat",
-     "titulo": "Escápula e tronco: escapular, grande dorsal, serrátil e reto",
+     "id": "retalhos-a-distancia-o-inguinal",
+     "titulo": "Retalhos à distância: o inguinal",
      "radar": "confirmado"
     },
     {
-     "id": "coxa-cranio-e-osso-alt-temporoparietal-e-condilo",
-     "titulo": "Coxa, crânio e osso: ALT, temporoparietal e côndilo femoral",
+     "id": "o-metodo-preferido-do-green-defeito-por-defeito",
+     "titulo": "O método preferido do Green, defeito por defeito",
+     "radar": "fundamento"
+    },
+    {
+     "id": "pos-operatorio-sinais-de-sofrimento-e-salvamento",
+     "titulo": "Pós-operatório, sinais de sofrimento e salvamento",
      "radar": "confirmado"
+    },
+    {
+     "id": "retalhos-livres-de-outros-territorios-escapula-t",
+     "titulo": "Retalhos livres de outros territórios: escápula, tronco, coxa e osso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "alem-do-capitulo-cicatrizacao-feridas-cronicas-e",
+     "titulo": "Além do capítulo: cicatrização, feridas crônicas e retalhos do membro inferior",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -13393,12 +13423,24 @@
     }
    ],
    "questoes": [
+    "mao-1475",
+    "mao-1402",
+    "mao-1163",
+    "mao-1170",
+    "mao-1913",
+    "mao-1599",
+    "mao-0903",
     "mao-0602",
     "mao-0798",
     "mao-0717",
+    "mao-0853",
+    "mao-1928",
+    "mao-0701",
     "mao-1219",
     "mao-1642",
     "mao-1598",
+    "mao-1326",
+    "mao-1301",
     "mao-0974",
     "mao-0682",
     "mao-0680",
@@ -13413,6 +13455,7 @@
     "mao-1467",
     "mao-0883",
     "mao-0716",
+    "mao-1430",
     "mao-1116",
     "mao-1552",
     "mao-0110",
@@ -13421,6 +13464,7 @@
     "mao-0277",
     "mao-0751",
     "mao-1294",
+    "mao-0799",
     "mao-1049",
     "mao-1435",
     "mao-0356",
@@ -13451,14 +13495,6 @@
     "mao-1900",
     "mao-0271",
     "mao-1507",
-    "mao-0107",
-    "mao-0800",
-    "mao-0975",
-    "mao-1039",
-    "mao-1082",
-    "mao-1114",
-    "mao-0462",
-    "mao-1148",
     "mao-1634",
     "mao-0253",
     "mao-1108",
@@ -13467,6 +13503,14 @@
     "mao-1175",
     "mao-1146",
     "mao-1511",
+    "mao-0107",
+    "mao-0800",
+    "mao-0975",
+    "mao-1039",
+    "mao-1082",
+    "mao-1114",
+    "mao-0462",
+    "mao-1148",
     "mao-1173",
     "mao-0663",
     "mao-0804",
@@ -13488,11 +13532,118 @@
     "mao-1418",
     "mao-0483",
     "mao-0658",
-    "mao-0803"
+    "mao-0803",
+    "mao-0927",
+    "mao-0718",
+    "mao-0977",
+    "mao-1405",
+    "mao-1912",
+    "mao-1824",
+    "mao-1835",
+    "mao-1851",
+    "mao-1841",
+    "mao-1310",
+    "mao-1154",
+    "mao-1612",
+    "mao-1823",
+    "mao-1911",
+    "mao-1876",
+    "mao-1878",
+    "mao-1605",
+    "mao-1862",
+    "mao-1882",
+    "mao-1412",
+    "mao-1606",
+    "mao-1607",
+    "mao-0301",
+    "mao-1333",
+    "mao-1324"
    ],
-   "treino": [],
+   "treino": [
+    "mao-2723",
+    "mao-2738",
+    "mao-2166",
+    "mao-2743",
+    "mao-1771",
+    "mao-2704",
+    "mao-2727",
+    "mao-2744",
+    "mao-2340",
+    "mao-2017",
+    "mao-2705",
+    "mao-2742",
+    "mao-2452",
+    "mao-2724",
+    "mao-2745",
+    "mao-2752",
+    "mao-2755",
+    "mao-2756",
+    "mao-2731",
+    "mao-2254",
+    "mao-2064",
+    "mao-2530",
+    "mao-2706",
+    "mao-2707",
+    "mao-2732",
+    "mao-2739",
+    "mao-2719",
+    "mao-2720",
+    "mao-2381",
+    "mao-2100",
+    "mao-2708",
+    "mao-2721",
+    "mao-2722",
+    "mao-2729",
+    "mao-2167",
+    "mao-2260",
+    "mao-2521",
+    "mao-2709",
+    "mao-2710",
+    "mao-2711",
+    "mao-2733",
+    "mao-2734",
+    "mao-2714",
+    "mao-2730",
+    "mao-2736",
+    "mao-2740",
+    "mao-2750",
+    "mao-2712",
+    "mao-2713",
+    "mao-2735",
+    "mao-2741",
+    "mao-2749",
+    "mao-2097",
+    "mao-2253",
+    "mao-2753",
+    "mao-1764",
+    "mao-2341",
+    "mao-2255",
+    "mao-2096",
+    "mao-2098",
+    "mao-2105",
+    "mao-2715",
+    "mao-2716",
+    "mao-2717",
+    "mao-2747",
+    "mao-2748",
+    "mao-2331",
+    "mao-2101",
+    "mao-2718",
+    "mao-2726",
+    "mao-2737",
+    "mao-2725",
+    "mao-2728",
+    "mao-2746",
+    "mao-2751",
+    "mao-1769",
+    "mao-2168",
+    "mao-2169",
+    "mao-2411",
+    "mao-2754"
+   ],
    "subtemas": [
-    "Retalhos e cobertura cutânea"
+    "Retalhos e cobertura cutânea",
+    "Cicatrização e enxertos de pele"
    ]
   },
   {
