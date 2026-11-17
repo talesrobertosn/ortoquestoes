@@ -182,7 +182,8 @@ export function analisarMes(d: DadosRelatorio) {
   const doMes = d.temas.filter((t) => t.total >= 5 && TEMAS[t.tema]).map((t) => ({ slug: t.tema, nome: TEMAS[t.tema], acerto: pctDe(t.certas, t.total)!, total: t.total }))
   const maisFraco = [...doMes].sort((a, b) => a.acerto - b.acerto)[0] ?? null
   const maisEstudados = [...doMes].sort((a, b) => b.total - a.total).slice(0, 3)
-  return { acerto, acertoAnterior, subiram, cairam, maisFraco, maisEstudados }
+  const melhorArea = [...doMes].filter(t=>t.total>=15&&t.acerto>=70).sort((a,b)=>b.acerto-a.acerto||b.total-a.total)[0] ?? null
+  return { acerto, acertoAnterior, subiram, cairam, maisFraco, maisEstudados, melhorArea }
 }
 
 export type CampanhaLembrete = 'nunca' | 'tres_dias' | 'sete_dias' | 'renovacao_pix' | 'renovacao_pix_hoje'
@@ -233,6 +234,7 @@ export function emailRelatorio(d: DadosRelatorio & { perfil?: PerfilCarta | null
     respostasAnterior: Number(d.respostas_anterior) || 0, acertoAnterior: a.acertoAnterior, totalAcumulado: Number(d.total_acumulado) || 0,
     subiram: a.subiram.map((t) => ({ slug: t.slug, antes: t.antes, agora: t.agora })),
     cairam: a.cairam.map((t) => ({ slug: t.slug, antes: t.antes, agora: t.agora })),
+    melhorArea: a.melhorArea,
     maisFraco: a.maisFraco ? { slug: a.maisFraco.slug, acerto: a.maisFraco.acerto } : null,
     simulado: d.simulado,
   }

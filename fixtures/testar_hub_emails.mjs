@@ -119,6 +119,7 @@ try {
       return j(url.searchParams.get('id_usuario') === 'eq.' + ADM ? [{ id_usuario: ADM }] : [])
     const rpc = url.pathname.split('/rpc/')[1]
     if (rpc) {
+      if (rpc === 'email_autenticar_relatorio') return j(body.p_segredo === 'a'.repeat(64) && ['relatorios_mensais','relatorios_quinzenais'].includes(body.p_acao))
       if (rpc === 'hub_worker_ativo') return j(true)
       if (rpc === 'hub_autenticar_processador') return j(body.p_segredo === 'a'.repeat(64))
       if (rpc === 'hub_pessoas') {
@@ -403,6 +404,18 @@ try {
   provedor = 'rede'
   assert.equal((await chamar('carta', { ...individual, assunto: 'Bruno, teste de rede' })).status, 502)
   assert.equal(logs.at(-1).status, 'enviando', 'falha de rede conserva a reserva para não duplicar')
+  const antesSimular=envios.length
+  for(const acao of ['relatorios_mensais','relatorios_quinzenais']) {
+    const req = segredo => new Request('https://funcao.test',{method:'POST',headers:{'Content-Type':'application/json','x-segredo':segredo},body:JSON.stringify({acao,simular:true})})
+    assert.equal((await handler(req('b'.repeat(64)))).status,403)
+    const res=await handler(req('a'.repeat(64)));assert.equal(res.status,200)
+    assert.equal((await res.json()).simulacao,true)
+  }
+  assert.equal(envios.length,antesSimular,'a simulação dos relatórios não envia')
+  for(const tipo of ['primeiras_10','voltou','cronograma_pronto']) {
+    const res=await chamar('automatico',{tipo,id_usuario:B},'cron')
+    assert.ok([200,400].includes(res.status));assert.equal(envios.length,antesSimular)
+  }
   console.log(
     'Hub: prévia sem envio, autenticação, seleção adulterada, clique concorrente, pausa/retomada, preferência alterada, falha confirmada, retry idempotente, entrega incerta, consulta indisponível e prioridade entre campanhas passaram. Nenhum e-mail real enviado.',
   )

@@ -2,21 +2,9 @@ import { gravar, ler, usuarioLocal } from '../estado/armazenamento'
 import { chamarFuncao } from '../servicos/supabase'
 import type { RegistroQuestao } from '../estado/revisao'
 
-/**
- * Os automáticos novos (17/10/2026) que o SITE dispara, logo depois do acontecimento:
- *   boas_vindas_dia0   primeiro login depois de confirmar o e-mail;
- *   primeiras_10       ao passar de 10 questões (junto da checagem do marco);
- *   voltou             primeiro acesso depois de 10 dias ou mais fora;
- *   cronograma_pronto  no dia em que a pessoa monta o plano até a prova.
- * (Pagamento aprovado e obrigado pelo tempo saem pelo servidor: webhook e gerenciar-plano.)
- *
- * O site só avisa; a função `enviar-email` (ação `automatico`) confere o acontecimento,
- * a cadência e manda uma vez por pessoa e tipo. Aqui, três cuidados:
- *   - à prova de falha: nenhum erro de e-mail chega a quem chamou;
- *   - uma vez por sessão por tipo (a sincronização avisa várias vezes seguidas);
- *   - uma marca "já pedi" por tipo no aparelho, para não chamar a função a cada carregamento.
- *     Os que saem uma vez só guardam `true`; o "voltou" guarda o dia, porque pode repetir
- *     em outra ausência.
+/** Boas-vindas ao confirmar a conta. Os outros três nomes só permanecem para
+ * compatibilidade: pedirAutomatico os bloqueia antes de chamar o servidor.
+ * O cliente não dispara primeiras dez, retorno nem cronograma desde 17/11/2026.
  */
 export type TipoAutomaticoSite = 'boas_vindas_dia0' | 'primeiras_10' | 'voltou' | 'cronograma_pronto'
 const CHAVE = (tipo: TipoAutomaticoSite) => `emails:automatico:${tipo}`
@@ -47,7 +35,8 @@ export function jaPedido(tipo: TipoAutomaticoSite, agora = Date.now()): boolean 
  * "adiado"…), ou null quando não chamou (já pedido, sem conta) ou a chamada falhou.
  */
 export async function pedirAutomatico(tipo: TipoAutomaticoSite, extra: Record<string, unknown> = {}, agora = Date.now()): Promise<string | null> {
-  if (!usuarioLocal()) return null
+  // Bloqueia também chamadas antigas que ainda estejam em alguma aba aberta.
+  if (tipo !== 'boas_vindas_dia0' || !usuarioLocal()) return null
   const chaveSessao = `${usuarioLocal()}:${tipo}`
   if (pedidosNestaSessao.has(chaveSessao) || jaPedido(tipo, agora)) return null
   pedidosNestaSessao.add(chaveSessao)
@@ -55,7 +44,7 @@ export async function pedirAutomatico(tipo: TipoAutomaticoSite, extra: Record<st
     const { resultado } = await chamarFuncao<{ resultado?: string }>('enviar-email', { acao: 'automatico', tipo, ...extra })
     const r = resultado ?? ''
     // Enviado, já enviado, pessoa não quer, sem e-mail…: não há por que perguntar de novo neste aparelho.
-    if (!TENTAR_DEPOIS.has(r)) gravar(CHAVE(tipo), tipo === 'voltou' ? diaDeHoje(agora) : true)
+    if (!TENTAR_DEPOIS.has(r)) gravar(CHAVE(tipo), true)
     else pedidosNestaSessao.delete(chaveSessao)
     return r || null
   } catch {

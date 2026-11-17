@@ -6,7 +6,7 @@
  */
 import { SITE } from '../../config'
 import {
-  FAIXAS, ROTULO_FAIXA, TIPOS, TIPOS_AUTOMATICOS_NOVOS, TIPOS_CAMPANHAS_DIARIAS, TIPOS_TRANSACIONAIS, gerarCarta, sementeDe, versoesDe,
+  FAIXAS, ROTULO_FAIXA, TIPOS, TIPOS_APOSENTADOS, TIPOS_AUTOMATICOS_NOVOS, TIPOS_CAMPANHAS_DIARIAS, TIPOS_TRANSACIONAIS, gerarCarta, sementeDe, versoesDe,
   type Carta, type Faixa, type OpcoesCarta, type PerfilCarta, type TipoCarta,
 } from './modelosEmail'
 
@@ -16,9 +16,9 @@ export const GRUPOS: Array<{ id: GrupoCatalogo; rotulo: string; descricao: strin
   { id: 'faixa', rotulo: 'Faixas de acerto', descricao: 'Estudando: uma voz para cada faixa de acerto, com 30 questões ou mais.' },
   { id: 'convite', rotulo: 'Convites', descricao: 'Para quem não assina: o que o plano faz pela rotina, sem preço.' },
   { id: 'pessoal', rotulo: 'Pessoais', descricao: 'Escritas pelo administrador a partir da ficha, com a espinha nova em volta.' },
-  { id: 'automatico', rotulo: 'Automáticos', descricao: 'Saem sozinhas: lembretes, Pix, resumos e marcos.' },
-  { id: 'novo', rotulo: 'Por acontecimento', descricao: 'Os seis que saem quando algo acontece no site ou no pagamento.' },
-  { id: 'campanha', rotulo: 'Campanhas diárias', descricao: 'O site escolhe quem recebe e manda sozinho, todo dia às 7h de Brasília.' },
+  { id: 'automatico', rotulo: 'Automáticos', descricao: 'Relatórios e avisos de assinatura saem automaticamente; Pix e demais contatos dependem de iniciar o envio na Central.' },
+  { id: 'novo', rotulo: 'Por acontecimento', descricao: 'Boas-vindas, pagamento aprovado e cancelamento/reembolso.' },
+  { id: 'campanha', rotulo: 'Ocasiões no hub', descricao: 'Candidatos selecionados por evento; você revisa e inicia o envio na Central de e-mails.' },
 ]
 
 export interface Gatilho { quando: string; paraQuem: string }
@@ -42,8 +42,8 @@ export const GATILHOS: Record<TipoCarta, Gatilho> = {
   opiniao: { quando: 'Só pela ficha, quando o administrador escolhe.', paraQuem: 'Qualquer pessoa ativa, de preferência com histórico para contar.' },
   indicar: { quando: 'Só pela ficha.', paraQuem: 'Quem gosta do site e pode conhecer colegas na mesma prova.' },
   cronograma: { quando: 'Só pela ficha.', paraQuem: 'Assinante que ainda não montou o cronograma, ou quem está decidindo assinar.' },
-  pix_3_dias: { quando: 'Agendador diário e botão "Pix: faltam 3 dias"; um por compra.', paraQuem: 'Pagou no Pix e o acesso termina em 3 dias, sem renovar.' },
-  pix_hoje: { quando: 'Agendador diário e botão "Pix: termina hoje"; transacional (fora da cadência).', paraQuem: 'Pagou no Pix e o acesso termina hoje, sem renovar.' },
+  pix_3_dias: { quando: 'Você inicia o envio no cenário Pix da Central; um por compra.', paraQuem: 'Pagou no Pix e o acesso termina em 3 dias, sem renovar.' },
+  pix_hoje: { quando: 'Você inicia o envio no cenário Pix da Central; fora da cadência de estudo.', paraQuem: 'Pagou no Pix e o acesso termina hoje, sem renovar.' },
   relatorio: { quando: 'Agendador nos dias 1 e 16 (quinzenal, para quem estudou) e no dia 1 (mensal, assinantes); também pelos botões.', paraQuem: 'Quem estudou na quinzena; assinantes recebem o do mês, mesmo sem estudar.' },
   boas_vindas_dia0: { quando: 'O site avisa no primeiro login depois de confirmar o e-mail (link de confirmação). Uma vez por pessoa.', paraQuem: 'Quem acabou de confirmar a conta.' },
   primeiras_10: { quando: 'O site avisa ao passar de 10 questões (junto da checagem do marco). Uma vez por pessoa.', paraQuem: 'Quem acabou de responder a décima questão.' },
@@ -52,18 +52,18 @@ export const GATILHOS: Record<TipoCarta, Gatilho> = {
   pagamento_aprovado: { quando: 'Webhook do Mercado Pago (cartão e Pix) e gerenciar-plano ao sincronizar a cobrança, com x-segredo; transacional, idempotente pelo id do pagamento.', paraQuem: 'Quem acabou de ter um pagamento aprovado (compra ou renovação).' },
   obrigado_tempo: { quando: 'gerenciar-plano ao cancelar ou reembolsar, e webhook em refunded, charged_back ou cancelled; transacional.', paraQuem: 'Quem cancelou a assinatura ou pediu reembolso.' },
   // Parte 31: campanhas diárias (candidatos_<tipo> no banco, ação campanhas_diarias de enviar-email, agendador às 7h).
-  assinou_sem_cronograma: { quando: 'Agendador diário (candidatos_assinou_sem_cronograma). Uma vez por pessoa.', paraQuem: `Assinatura paga vigente, a primeira feita de 3 a 30 dias atrás, e nenhum cronograma salvo. ${TRAVAS}` },
-  assinante_parado_7: { quando: 'Agendador diário (candidatos_assinante_parado_7). Uma por ausência (referência: o dia da última resposta).', paraQuem: `Assinatura paga vigente e a última resposta de 7 a 20 dias atrás. ${TRAVAS}` },
-  simulado_resultado: { quando: 'Agendador diário, até 3 dias depois de uma edição do Simulado Nacional fechar (candidatos_simulado_resultado). Uma por edição.', paraQuem: `Quem entregou o simulado da edição. A nota só aparece com 10 acertos e metade ou mais; a posição, só para quem assina e entre os 30 primeiros. ${TRAVAS}` },
-  vespera_prova: { quando: 'Agendador diário, na véspera da data da prova do cronograma (candidatos_vespera_prova). Uma por data.', paraQuem: `Quem tem cronograma com a prova amanhã. ${TRAVAS}` },
-  depois_prova: { quando: 'Agendador diário, de 1 a 3 dias depois da data da prova do cronograma (candidatos_depois_prova). Uma por data.', paraQuem: `Quem tinha a prova do cronograma nos últimos 3 dias. ${TRAVAS}` },
-  aniversario: { quando: 'Agendador diário, no dia do aniversário (candidatos_aniversario; 29/2 sai em 28/2 nos anos comuns). Uma por ano.', paraQuem: `Quem pôs a data de nascimento no cadastro. ${TRAVAS}` },
-  um_ano: { quando: 'Agendador diário, no dia em que a conta faz 1, 2, 3... anos (candidatos_um_ano). Uma por aniversário de conta.', paraQuem: `Contas que já responderam pelo menos uma questão. ${TRAVAS}` },
-  indicacao_deu_certo: { quando: 'Agendador diário (candidatos_indicacao_deu_certo): indicação confirmada nos últimos 14 dias, ou convidado com 20 questões nos últimos 90. Uma por amigo indicado.', paraQuem: `Quem indicou (o padrinho). ${TRAVAS}` },
-  simulado_lembrete: { quando: 'Agendador diário (candidatos_simulado_lembrete, parte 32): a edição abre nas próximas 24 horas ou abriu nas últimas 24. Uma por edição; depois do envio, a inscrição fica marcada.', paraQuem: `Quem se inscreveu na edição e ainda não começou a prova. Se a edição pede o plano e a pessoa não assina, a carta avisa, sem preço. ${TRAVAS}` },
+  assinou_sem_cronograma: { quando: 'Central de e-mails, após você iniciar o envio (candidatos_assinou_sem_cronograma). Uma vez por pessoa.', paraQuem: `Assinatura paga vigente, a primeira feita de 3 a 30 dias atrás, e nenhum cronograma salvo. ${TRAVAS}` },
+  assinante_parado_7: { quando: 'Central de e-mails, após você iniciar o envio (candidatos_assinante_parado_7). Uma por ausência (referência: o dia da última resposta).', paraQuem: `Assinatura paga vigente e a última resposta de 7 a 20 dias atrás. ${TRAVAS}` },
+  simulado_resultado: { quando: 'Central de e-mails, após você iniciar o envio, até 3 dias depois de uma edição do Simulado Nacional fechar (candidatos_simulado_resultado). Uma por edição.', paraQuem: `Quem entregou o simulado da edição. A nota só aparece com 10 acertos e metade ou mais; a posição, só para quem assina e entre os 30 primeiros. ${TRAVAS}` },
+  vespera_prova: { quando: 'Central de e-mails, após você iniciar o envio, na véspera da data da prova do cronograma (candidatos_vespera_prova). Uma por data.', paraQuem: `Quem tem cronograma com a prova amanhã. ${TRAVAS}` },
+  depois_prova: { quando: 'Central de e-mails, após você iniciar o envio, de 1 a 3 dias depois da data da prova do cronograma (candidatos_depois_prova). Uma por data.', paraQuem: `Quem tinha a prova do cronograma nos últimos 3 dias. ${TRAVAS}` },
+  aniversario: { quando: 'Central de e-mails, após você iniciar o envio, no dia do aniversário (candidatos_aniversario; 29/2 sai em 28/2 nos anos comuns). Uma por ano.', paraQuem: `Quem pôs a data de nascimento no cadastro. ${TRAVAS}` },
+  um_ano: { quando: 'Central de e-mails, após você iniciar o envio, no dia em que a conta faz 1, 2, 3... anos (candidatos_um_ano). Uma por aniversário de conta.', paraQuem: `Contas que já responderam pelo menos uma questão. ${TRAVAS}` },
+  indicacao_deu_certo: { quando: 'Central de e-mails, após você iniciar o envio (candidatos_indicacao_deu_certo): indicação confirmada nos últimos 14 dias, ou convidado com 20 questões nos últimos 90. Uma por amigo indicado.', paraQuem: `Quem indicou (o padrinho). ${TRAVAS}` },
+  simulado_lembrete: { quando: 'Central de e-mails, após você iniciar o envio (candidatos_simulado_lembrete, parte 32): a edição abre nas próximas 24 horas ou abriu nas últimas 24. Uma por edição; depois do envio, a inscrição fica marcada.', paraQuem: `Quem se inscreveu na edição e ainda não começou a prova. Se a edição pede o plano e a pessoa não assina, a carta avisa, sem preço. ${TRAVAS}` },
   acesso_terminou: { quando: 'Só manual: E-mails › Prontas para enviar (aba "Acesso terminou") ou pela ficha. Uma por vencimento (não repete em 60 dias).', paraQuem: 'Quem tinha o plano pago e o acesso terminou há até 30 dias sem renovar. Sem preço e sem pressão.' },
   como_estao: { quando: 'Só manual: E-mails › Prontas para enviar (aba "Em risco de parar") ou pela ficha. No máximo uma a cada 30 dias.', paraQuem: 'Assinante com risco moderado ou alto no detector de Assinantes (dias sem estudar, queda de ritmo, acesso perto do fim sem renovação automática). Nunca fala em cancelar.' },
-  resumo_do_tema: { quando: 'Agendador diário, no máximo uma por semana (candidatos_resumo_do_tema). O catálogo vem de biblioteca/indice.json, lido pela função a cada execução.', paraQuem: `Quem aceitou receber novidades e tem 10 questões ou mais na área do resumo publicado nos últimos 7 dias, que ainda não abriu. ${TRAVAS}` },
+  resumo_do_tema: { quando: 'Central de e-mails, após você iniciar o envio, no máximo uma por semana (candidatos_resumo_do_tema). O catálogo vem de biblioteca/indice.json, lido pela função a cada execução.', paraQuem: `Quem aceitou receber novidades e tem 10 questões ou mais na área do resumo publicado nos últimos 7 dias, que ainda não abriu. ${TRAVAS}` },
 }
 
 /** Um modelo do catálogo: um tipo, ou uma faixa de "ativo". */
@@ -160,7 +160,7 @@ function grupoDe(tipo: TipoCarta): GrupoCatalogo {
 export function modelosDoCatalogo(): ModeloCatalogo[] {
   const lista: ModeloCatalogo[] = []
   for (const tipo of Object.keys(TIPOS) as TipoCarta[]) {
-    if (tipo === 'obrigado_assinatura' || tipo === 'assinou_sem_cronograma') continue // Histórico preservado; substituído pelo automático no pagamento.
+    if (TIPOS_APOSENTADOS.includes(tipo)) continue // Histórico preservado; substituído pelo automático no pagamento.
     const info = TIPOS[tipo]
     if (tipo === 'ativo') {
       for (const faixa of FAIXAS) {

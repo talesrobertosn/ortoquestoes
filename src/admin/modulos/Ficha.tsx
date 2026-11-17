@@ -1,3 +1,4 @@
+import { dadosCortesia, origemDaCortesia } from '../../conta/resumoAcesso'
 import { excluirConta } from '../../conta/exclusao'
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { lerLocais, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
@@ -171,6 +172,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
     <div ref={corpo} className="fx-corpo">
       {!detalhe ? (detalheQ.erro ? <Estado tipo="erro" titulo="A ficha não abriu" texto="Confira se a migração 202609290200_painel_admin_2.sql foi aplicada." /> : <Carregando linhas={8} texto="Carregando a ficha…" />) : <>
         <section id="ficha-resumo" className="fx-secao">
+          <BeneficioDaPessoa u={u}/>
           <Retrato u={u} atividade={atividade} porTema={porTema} extra={extra} temp={temp} semAtividade={!atividade && !!atividadeQ.erro} />
           {viuPlanos && !u.plano_vigente && <Faixa tom={planosRecente ? 'aviso' : undefined} titulo={`Olhou os preços ${planos!.vezes > 1 ? `${planos!.vezes} vezes` : 'uma vez'} nos últimos 30 dias`}
             acao={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => irPara('carta')}>Escrever uma carta</button>}>
@@ -488,4 +490,17 @@ function AbaAcoes({ u, detalhe, cortesiaVale, recarregar, aoExcluir }: { u: Linh
     <p className="a3-mudo a3-pequeno"><SeloQualidade q="confirmado" /> Cada ação vale na hora e é feita no servidor, com a checagem de administrador.</p>
     <div style={{ height: 12 }} />
   </div>
+}
+
+function BeneficioDaPessoa({u}:{u:LinhaUsuario}) {
+ const c=dadosCortesia(u.acesso_resumo)
+ if(!c.ativa)return null
+ return <div className="a3-cartao"><h3 className="a3-titulo-3">Período pago e cortesia</h3>
+  {u.acesso_resumo?.ultimo_periodo_pago_ate&&<p>Fim do último período pago: <b>{data(u.acesso_resumo.ultimo_periodo_pago_ate)}</b>.</p>}
+  <p>Cortesia {c.semPrazo?'sem prazo definido':<>até <b>{data(c.cortesia?.ate)}</b> · {c.dias} dias restantes</>}.</p>
+  {origemDaCortesia(c.origens)&&<p>{origemDaCortesia(c.origens)}.</p>}
+  {!!c.origens.length&&<ul>{c.origens.map((o,i)=><li key={`${o.em}-${i}`}>{o.tipo==='indicou'?'Indicou':'Recebeu o convite de'} {o.nome}: {o.dias} dias concedidos.</li>)}</ul>}
+  {!c.origens.length&&c.cortesia?.motivo&&<p>Origem: {c.cortesia.motivo}.</p>}
+  {!c.semPrazo&&<p>Uma nova compra preserva o período de acesso restante e acrescenta o novo período depois dele.</p>}
+ </div>
 }

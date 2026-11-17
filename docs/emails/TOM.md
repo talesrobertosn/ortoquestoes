@@ -90,3 +90,16 @@ do cronograma pode ser citada em um aviso útil de data, nunca como recitação 
 Textos antigos com essas frases não saem por uma prévia aberta antes da correção ou por
 uma fila antiga: são adiados, exigindo atualizar a prévia. Nenhuma mensagem é substituída
 silenciosamente depois que o administrador revisou. O histórico de envios é preservado.
+
+## Automáticos mantidos e removidos (Tales, 17/11/2026)
+
+Primeiras dez questões, retorno aos estudos e cronograma pronto foram desativados no cliente,
+no servidor e no catálogo de novos envios. Histórico preservado. Continuam automáticos: boas-vindas,
+conquistas de 100/250/500/1.000/2.000, pagamento aprovado, cancelamento/reembolso e relatórios
+mensal/quinzenal. Os demais cenários dependem de início manual no hub. Nenhum novo e-mail de
+cortesia por indicação foi criado.
+
+Os ativos receberam versões v41 em diante: boas-vindas leva ao primeiro treino; pagamento
+distingue compra e renovação, com plano e data completa; encerramento distingue acesso ainda
+pago, período já encerrado e reembolso; relatórios usam dados do período, evolução positiva,
+melhor tema e uma sugestão concreta de revisão, sem nota ruim nem recitação cadastral.
