@@ -6,6 +6,7 @@ import { usarArmazenado } from './usarArmazenado'
 import { EVENTO_DADOS, gravar, ler, type MudancaDados } from './armazenamento'
 import { confirmar } from '../componentes/Confirmar'
 import { navegar } from '../util/rotas'
+import { gerarId } from '../util/id'
 import { chaveDoDia } from '../util/dia'
 
 export const CHAVE_SESSAO = 'sessao:atual'
@@ -48,7 +49,7 @@ export function novaSessao(
   opcoes: OpcoesSessao = {},
 ): EstadoSessao {
   return {
-    id: opcoes.nacional ? `nacional-${opcoes.nacional}` : String(Date.now().toString(36)),
+    id: opcoes.nacional ? `nacional-${opcoes.nacional}` : gerarId(),
     criadaEm: opcoes.criadaEm ?? Date.now(),
     filtros,
     ids,
@@ -84,13 +85,14 @@ export function usarSessao() {
       // reexecutados ou descartados em celulares, o que fazia respostas
       // ficarem apenas no estado visual da sessão.
       const salvo = ler<EstadoSessao | null>(CHAVE_SESSAO, null)
+      if (!salvo || salvo.concluidaEm || !salvo.ids.includes(id)) return
       // O modo simulado também registra cada resposta imediatamente. A prova
       // pode esconder o gabarito, mas nunca deve esconder o salvamento.
       // Simulado Nacional: nada vai para o histórico local antes da entrega (o caderno de erros e a
       // revisão mostrariam o que está certo no meio da prova); a resposta sobe para o servidor.
       if (salvo && !salvo.nacional && !salvo.respostas[id]) registrarRespondida(id, correta, confianca, escolhida)
       definirSessao((atual) => {
-        if (!atual) return atual
+        if (!atual || atual.id !== salvo.id || atual.concluidaEm) return atual
         const resposta: Resposta = { escolhida, correta: atual.nacional ? null : correta, segundos, confianca }
         const pendentes = atual.nacional ? { pendentesNacional: [...new Set([...(atual.pendentesNacional ?? []), id])] } : {}
         // A ordem em que ela apareceu, para o resumo mostrar as mesmas letras que a pessoa viu.
@@ -220,8 +222,8 @@ function registrarRespondida(id: string, correta: boolean | null, confianca: 'se
 /**
  * Traz para a sessão em andamento as respostas que chegaram de outro aparelho.
  *
- * A sessão (`sessao:atual`) é deste aparelho e não sobe para a nuvem; as
- * respostas (`respondidas`) sobem. Sem esta conciliação, a sessão do
+ * A sessão inteira agora sobe para a nuvem. Esta conciliação mantém a
+ * compatibilidade com aparelhos antigos, que enviam só `respondidas`: a sessão do
  * cronograma começada aqui continuava oferecendo "Continuar: faltam N" com as
  * mesmas questões que a pessoa já tinha feito no outro aparelho, e ela as
  * refazia. Regras:
@@ -234,7 +236,7 @@ function registrarRespondida(id: string, correta: boolean | null, confianca: 'se
  * Devolve a sessão nova, ou null quando nada muda.
  */
 export function reconciliarSessao(sessao: EstadoSessao | null, respondidas: Record<string, RegistroQuestao>): EstadoSessao | null {
-  if (!sessao || sessao.concluidaEm || sessao.nacional || !Array.isArray(sessao.ids)) return null
+  if (!sessao || sessao.concluidaEm || sessao.simulado || sessao.nacional || !Array.isArray(sessao.ids)) return null
   const soNovas = (sessao.origem === 'cronograma' || sessao.origem === 'diagnostico') && !sessao.simulado
   let respostas: Record<string, Resposta> | null = null
   for (const id of sessao.ids) {
@@ -270,7 +272,7 @@ export function reconciliarSessao(sessao: EstadoSessao | null, respondidas: Reco
 export function vigiarSessaoEntreAparelhos(): () => void {
   const conferir = () => {
     const nova = reconciliarSessao(ler<EstadoSessao | null>(CHAVE_SESSAO, null), lerRespondidas())
-    if (nova) gravar(CHAVE_SESSAO, nova)
+    if (nova) gravar(CHAVE_SESSAO, nova, 'nuvem')
   }
   const aoMudar = (evento: Event) => {
     const m = (evento as CustomEvent<MudancaDados>).detail

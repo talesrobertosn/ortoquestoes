@@ -34,6 +34,8 @@ export function IndicadorSincronia({ preparando = false }: { preparando?: boolea
   if (preparando) { texto = 'Trazendo o que você fez nos outros aparelhos…'; estado = 'sincronizando' }
   else if (status.estado === 'offline') texto = `Sem conexão: o que você fizer fica guardado aqui${aguardando}`
   else if (status.estado === 'erro') texto = `Não deu para sincronizar agora; tentando de novo${aguardando}`
+  else if (status.rejeitados.length) { texto = 'Há alterações que não puderam ser sincronizadas. Veja os detalhes na sua conta.'; estado = 'erro' }
+  else if (status.semServidor?.length) { texto = `Parte do progresso aguarda atualização do serviço${aguardando}`; estado = 'erro' }
   else if (status.estado === 'sincronizando' || !status.pronto) texto = 'Sincronizando…'
   else if (status.ultimaSincronia) texto = `Sincronizado ${haQuanto(status.ultimaSincronia)}${aguardando}`
   else texto = `Sincronizado${aguardando}`

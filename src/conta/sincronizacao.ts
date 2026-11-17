@@ -30,6 +30,8 @@ const RECUSA_PASSAGEIRA = /jwt|token|permission denied|autentica|not authorized|
 /** Item sem linha no servidor enviado com base diferente de zero: reenvia como item novo. */
 const versaoInicialInvalida = (erro: unknown) => /versão inicial inválida/i.test((erro as { message?: string } | null)?.message ?? '')
 
+/** O nome remoto não colide com a sessão local de versões antigas. */
+const chaveLocal = (tipo: TipoSync) => tipo === 'sessoes' ? 'sessao:atual' : tipo
 /** Linhas por página na leitura (igual ao limite que a função aceita sem cortar). */
 const PAGINA = 500
 /** Com a leitura incremental, a conferência completa vira rede de segurança rara. */
@@ -72,7 +74,7 @@ export interface StatusSync {
  * restrições da tabela. Não é erro do item: ele fica na fila deste aparelho e volta a ser tentado.
  */
 export function tipoAindaNaoAceito(tipo: TipoSync, erro: unknown): boolean {
-  if (tipo !== 'biblioteca') return false
+  if (tipo !== 'biblioteca' && tipo !== 'sessoes') return false
   const e = erro as { code?: string; message?: string; details?: string } | null
   return e?.code === '23514' && /progresso_usuario_tipo_check|forma_documento/i.test(`${e?.message ?? ''} ${e?.details ?? ''}`)
 }
@@ -115,7 +117,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     const e = erro as { message?: string; code?: string; details?: string; hint?: string; name?: string } | null
     return [e?.code, e?.message ?? (erro instanceof Error ? erro.message : String(erro)), e?.details, e?.hint].filter(Boolean).join(' · ').slice(0, 300)
   }
-  const prefixar = (p: Alteracao) => ({ ...p, item: estado.reinicio ? `r${estado.reinicio}:${p.item}` : p.item })
+  const prefixar = (p: Alteracao) => ({ tipo: p.tipo, valor: p.valor, base: p.base, operacao: p.operacao, item: estado.reinicio ? `r${estado.reinicio}:${p.item}` : p.item })
   /** Envia um lote; o caminho direto (RLS) fica só para banco sem a função. */
   async function enviar(lote: Alteracao[]): Promise<{ docs: Documento[] } | { erro: unknown; transitorio?: boolean }> {
     const remotas = lote.map(prefixar)
@@ -150,6 +152,7 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
     }
     const mapas = new Map<TipoSync, Record<string, unknown>>()
     for (const remoto of documentos) {
+      if (!ehTipoSync(remoto.tipo)) continue
       if (remoto.tipo === 'historico' && (remoto.item === '__reinicio__' || remoto.item.startsWith('reinicio.v2.'))) continue
       const prefixo = `r${estado.reinicio}:`
       // Cada reinício tem seu próprio conjunto de linhas. Dispositivos com
@@ -159,17 +162,21 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
       conhecidos.add(identificador(doc.tipo, doc.item))
       const enviada = enviadas.find(e => e.tipo === doc.tipo && e.item === doc.item)
       if (!receberDocumento(estado, doc, enviada)) continue
-      const mapa = mapas.get(doc.tipo) ?? itens(doc.tipo, ler(doc.tipo, null))
+      const mapa = mapas.get(doc.tipo) ?? itens(doc.tipo, ler(chaveLocal(doc.tipo), null))
       mapa[doc.item] = doc.valor
       mapas.set(doc.tipo, mapa)
     }
-    for (const [tipo, mapa] of mapas) gravar(tipo, deItens(tipo, mapa), 'nuvem')
+    for (const [tipo, mapa] of mapas) {
+      // O Nacional usa sua própria API autoritativa; um treino nunca o substitui.
+      if (tipo === 'sessoes' && ler<{ nacional?: string } | null>(chaveLocal(tipo), null)?.nacional) continue
+      gravar(chaveLocal(tipo), deItens(tipo, mapa), 'nuvem')
+    }
   }
   function semearLocais() {
     // Uma pessoa pode ter estudado antes de criar a conta. Esses itens não
     // aparecem como eventos retroativos, então entram na fila no primeiro sync.
     for (const tipo of TIPOS_SYNC) {
-      const locais = itens(tipo, ler(tipo, null))
+      const locais = itens(tipo, ler(chaveLocal(tipo), null))
       for (const [item, valor] of Object.entries(locais)) {
         const id = identificador(tipo, item)
         if (!conhecidos.has(id) && !estado.versoes[id] && !estado.pendentes[id]) {
@@ -290,6 +297,12 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
       for (const [id, doc] of Object.entries(estado.conflitos)) resolverConflito(estado, id, doc)
       const completa = reconciliar || Date.now() - ultimaCompleta > RECONCILIAR_A_CADA
       const referencia = estado
+      // Migra o treino que já existia neste aparelho antes da primeira leitura.
+      // Sem isso, um documento remoto o apagaria antes de ele entrar na fila.
+      if (!estado.versoes['sessoes/atual'] && !estado.pendentes['sessoes/atual']) {
+        const local = itens('sessoes', ler('sessao:atual', null)).atual
+        if (local) estado.pendentes['sessoes/atual'] = { tipo: 'sessoes', item: 'atual', valor: local, base: 0, operacao: gerarId() }
+      }
       const recebidos = await receber(completa)
       if (!recebidos || !valido()) return
       aplicar(recebidos.docs)
@@ -360,8 +373,10 @@ export function iniciarSincronizacao(cliente: ClienteSupabase, idUsuario: string
   }
   function aoGravar(evento: Event) {
     const m = (evento as CustomEvent<MudancaDados>).detail
-    if (!valido() || m.usuario !== idUsuario || m.origem !== 'local' || !ehTipoSync(m.chave)) return
-    registrarAlteracoes(estado, m.chave, m.antes, m.valor); salvar(); anunciar(navigator.onLine ? 'sincronizando' : 'offline')
+    const tipo = m.chave === 'sessao:atual' ? 'sessoes' : m.chave
+    if (!valido() || m.usuario !== idUsuario || m.origem !== 'local' || !ehTipoSync(tipo)) return
+    if (tipo === 'sessoes' && ((m.valor as { nacional?: string } | null)?.nacional || (m.antes as { nacional?: string } | null)?.nacional)) return
+    registrarAlteracoes(estado, tipo, m.antes, m.valor); salvar(); anunciar(navigator.onLine ? 'sincronizando' : 'offline')
     // Envia enquanto a aba ainda está em primeiro plano. O Chrome móvel pode
     // congelar timers quando o usuário troca de aplicativo ou de aba.
     void sincronizar(); agendar()

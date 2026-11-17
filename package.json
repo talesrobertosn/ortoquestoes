@@ -12,7 +12,7 @@
     "test:compra": "node fixtures/testar_compra_planos.mjs",
     "validar": "python3 scripts/validar_acervo.py",
     "funcoes:colar": "node scripts/juntar-funcoes.mjs",
-    "e2e:sincronia": "node fixtures/e2e_sincronia_cronograma.mjs"
+    "e2e:sincronia": "node fixtures/e2e_sincronia_cronograma.mjs && node fixtures/e2e_sincronia_treino.mjs"
   },
   "dependencies": {
     "@fontsource/alegreya": "^5.3.0",

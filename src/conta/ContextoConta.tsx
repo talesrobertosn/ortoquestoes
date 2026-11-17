@@ -126,8 +126,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!supabase || !sessao?.user.id) return
     sync.current = iniciarSincronizacao(supabase, sessao.user.id, definirStatus)
-    // A sessão de questões em andamento é deste aparelho: as respostas que chegam
-    // de outro aparelho entram nela (ver reconciliarSessao).
+    // Compatibilidade com aparelhos antigos que enviam apenas as respostas.
     const pararSessao = vigiarSessaoEntreAparelhos()
     return () => { sync.current?.parar(); sync.current = null; pararSessao() }
   }, [sessao?.user.id])
@@ -172,7 +171,13 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
     if (!cliente || !sessao?.user.id) return
     return vigiarAparelho(sessao.user.id, (outro) => {
       definirAvisoConta(`Sua conta foi aberta em outro aparelho${outro ? ` (${outro})` : ''}. Ela fica aberta em um aparelho por vez, então saímos daqui. O que você estudou neste aparelho ficou guardado: é só entrar de novo para continuar (e aí o outro aparelho é que sai).`)
-      void cliente.auth.signOut({ scope: 'local' }).finally(() => navegar('/conta'))
+      // Envia a última edição antes de parar a fila na troca de aparelho.
+      // Sem rede, o limite de espera preserva a saída e a fila continua no disco.
+      void (async () => {
+        await sync.current?.aguardar(8000)
+        if (usuarioAtual.current !== sessao.user.id) return
+        await cliente.auth.signOut({ scope: 'local' }).finally(() => navegar('/conta'))
+      })()
     })
   }, [sessao?.user.id])
   return <Contexto.Provider value={{ sessao, carregando, recuperacao, encerrarRecuperacao: () => definirRecuperacao(false), status,

@@ -97,7 +97,7 @@ export function remover(chave: string): void {
 /** Limpa apenas o perfil atual; a autenticação e os outros perfis ficam separados. */
 export function limparTudo(origem: 'local' | 'nuvem' = 'local'): void {
   gravar('respondidas', {}, origem); gravar('favoritos', [], origem); gravar('notas', {}, origem); gravar('historico', [], origem)
-  gravar('sessao:atual', null); remover('backup:anterior')
+  gravar('sessao:atual', null, origem); remover('backup:anterior')
 }
 export function tamanhoArmazenado(): number {
   if (!usuario) return 0

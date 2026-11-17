@@ -119,6 +119,7 @@ const feitasNoCartao = async p => {
 }
 async function responderNaSessao(p, n) {
   for (let i = 0; i < n; i++) {
+    if (await p.getByRole('button', { name: /^Responder / }).count() === 0) await p.getByRole('button', { name: 'Próxima', exact: true }).first().click()
     await p.waitForSelector('.alternativa-envelope button, .alternativa-envelope [role="radio"], .alternativa-envelope label', { timeout: 30_000 })
     await p.locator('.alternativa-envelope').first().locator('button, label, [role="radio"]').first().click()
     await p.locator('button:has-text("Responder ")').first().click()
@@ -150,7 +151,7 @@ try {
   await pc.waitForFunction(() => true)
   await pc.goto(BASE + '#/cronograma'); await abrirCronograma(pc)
   assert.equal(await feitasNoCartao(pc), 2)
-  const continuarAntes = await pc.locator('text=/Continuar: faltam \\d+ questões/').first().innerText()
+  const continuarAntes = await pc.locator('text=/Continuar: faltam \\d+/').first().innerText()
   await pc.locator('.cg-hoje').screenshot({ path: join(capturas, '1-computador-antes.png') })
   await esconder(pc, true)
 
@@ -159,11 +160,11 @@ try {
   const mac = await macbook.abrir()
   await abrirCronograma(mac)
   assert.equal(await feitasNoCartao(mac), 2, 'o MacBook vê as 2 do computador')
-  await mac.locator('button:has-text("Começar:"), button:has-text("Continuar:")').first().click()
+  await mac.locator('.cg-hoje :is(a, button):has-text("Começar:"), .cg-hoje :is(a, button):has-text("Continuar:")').first().click()
   await mac.waitForURL(/#\/sessao/)
   await responderNaSessao(mac, 5)
   const idsMac = Object.keys((await sessaoDe(mac)).respostas)
-  assert.equal(idsMac.length, 5)
+  assert.equal(idsMac.length, 7)
   await mac.goto(BASE + '#/cronograma'); await abrirCronograma(mac)
   await mac.waitForFunction(() => /7 de \d+ feitas/.test(document.querySelector('.cg-questoes')?.textContent ?? ''), null, { timeout: 15_000 })
   const area = await mac.locator('.cg-extras a[href*="resumos/frases"]').getAttribute('href')
@@ -171,7 +172,7 @@ try {
   await mac.locator('button:has-text("Li esta área")').first().click()
   await mac.waitForFunction(() => true)
   await mac.goto(BASE + '#/cronograma'); await abrirCronograma(mac)
-  await mac.waitForSelector('.cp-lista__item--resumao.cp-lista__item--feito', { timeout: 15_000 })
+  await mac.waitForSelector('.cg-extras li:has-text("Frases que caem · lidas")', { timeout: 15_000 })
   assert.ok(plano.opcoes.marcasDia?.resumao?.length, 'resumão lido foi para o plano no servidor')
   await mac.screenshot({ path: join(capturas, '2-macbook.png') })
   assert.ok(idsMac.every(id => respondidasNoServidor().some(l => l.item === id)), 'as 5 do MacBook chegaram ao servidor')
@@ -180,10 +181,10 @@ try {
   await pc.waitForTimeout(1600)
   await esconder(pc, false)
   await pc.waitForFunction(() => /7 de \d+ feitas/.test(document.querySelector('.cg-questoes')?.textContent ?? ''), null, { timeout: 20_000 })
-  await pc.waitForSelector('.cp-lista__item--resumao.cp-lista__item--feito', { timeout: 70_000 })
+  await pc.waitForSelector('.cg-extras li:has-text("Frases que caem · lidas")', { timeout: 70_000 })
   const sessaoPc = await sessaoDe(pc)
   for (const id of idsMac) {
-    if (sessaoPc.ids.includes(id)) assert.ok(sessaoPc.respostas[id]?.outroAparelho, `a sessão do computador marca ${id} como feita no outro aparelho`)
+    if (sessaoPc.ids.includes(id)) assert.ok(sessaoPc.respostas[id], `a sessão do computador marca ${id} como feita no outro aparelho`)
   }
   const continuarDepois = await pc.locator('.cg-hoje').innerText()
   console.log(`  computador antes: "${continuarAntes}"; depois: ${continuarDepois.match(/Continuar: faltam \d+[^\n]*/)?.[0] ?? continuarDepois.match(/Começar: \d+[^\n]*/)?.[0] ?? '(sem botão)'}`)
@@ -200,10 +201,10 @@ try {
   }
   const naSessao = Object.keys(sessaoPc.respostas).length
   const doMacNaSessao = idsMac.filter(id => sessaoPc.ids.includes(id)).length
-  assert.equal(naSessao, 2 + doMacNaSessao, 'a sessão do computador tem as 2 dele e as do MacBook que estavam nela')
+  assert.equal(naSessao, doMacNaSessao, 'a sessão compartilhada tem as 7 respostas dos dois aparelhos')
   await pc.waitForTimeout(500)
   await pc.screenshot({ path: join(capturas, '4-sessao-computador.png') })
-  console.log(`  sessão do computador: ${naSessao} de ${sessaoPc.ids.length} respondidas (2 dele + ${doMacNaSessao} do MacBook)`)
+  console.log(`  sessão do computador: ${naSessao} de ${sessaoPc.ids.length} respondidas (sessão compartilhada)`)
 
   // 4. Segunda aba no computador e um terceiro navegador mostram o mesmo.
   const pc2 = await computador.abrir()
@@ -213,7 +214,7 @@ try {
   const novo = await outro.abrir()
   await abrirCronograma(novo)
   assert.equal(await feitasNoCartao(novo), 7)
-  await novo.waitForSelector('.cp-lista__item--resumao.cp-lista__item--feito', { timeout: 15_000 })
+  await novo.waitForSelector('.cg-extras li:has-text("Frases que caem · lidas")', { timeout: 15_000 })
 
   // Duas abas abertas no computador: responder na segunda chega à primeira e ao servidor uma vez só.
   await pc2.locator('.cg-hoje :is(a, button):has-text("Continuar:")').first().click()
