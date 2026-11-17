@@ -1,6 +1,6 @@
 ---
 id: green8-tendoes-flexores
-versao: 3
+versao: 4
 titulo: Lesões dos tendões flexores
 especialidade: mao
 acesso: gratis
@@ -8,146 +8,126 @@ livro: Green's Operative Hand Surgery
 edicao: 8ª edição, ampliado com o Green's Operative Hand Surgery, 7ª ed., e o Campbell's Operative Orthopaedics, 15ª ed.
 capitulo: Capítulo 6 · Lesão do tendão flexor
 autores: John Gray Seiler III
-fonte: Livro conferido localmente em 31/10/2026 (tradução), capítulo 6, sobretudo anatomia da bainha, nutrição, vínculos e polias, avulsão do profundo, técnica de reparo, cicatrização e reabilitação, e reconstrução com enxerto. Ampliado em 01/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 6 (lido por inteiro), e o Campbell's Operative Orthopaedics, 15ª ed., cap. 71. Corrigido em 11/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 2 (espaço de PARONA, p. 29 e 33) e cap. 6 (p. 185, 189, 194 e 195), e o Campbell, 15ª ed., cap. 71 (p. 3143, 3146 e 3167).
+fonte: Livro conferido localmente em 31/10/2026 (tradução), capítulo 6. Ampliado em 01/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 6, e o Campbell's Operative Orthopaedics, 15ª ed., cap. 71; corrigido em 11/11/2026 (Green 7, cap. 2, p. 29 e 33; cap. 6, p. 185, 189, 194 e 195; Campbell, p. 3143, 3146 e 3167). Reescrito em 17/11/2026 com o Green's Operative Hand Surgery, 7ª ed. (2017), cap. 6 (Flexor Tendon Injury), p. 183 a 226, inclusive a Tabela 6.1 (p. 184) e a lista de referências (p. 226 a 230); cap. 8, p. 278 (polia C1); cap. 56, p. 1910 (polias do polegar); cap. 5, p. 158, e cap. 31, p. 1024 (excursão de BOYES). Estudos clássicos conferidos na lista de referências do capítulo e no PubMed em 17/11/2026 (PMIDs no corpo do texto).
 subtemas: Lesões dos tendões flexores
-resumo: Nutrição dupla (perfusão e difusão sinovial) e face palmar avascular; vínculos curtos e longos; polias anulares e cruciformes, com A2 e A4 indispensáveis; LEDDY e PACKER (tipo I na palma, sem vínculos, urgente); sutura central e epitendínea, lacerações parciais e a regra de 1 cm na zona 1; aderências, excursão e cicatrização intrínseca; enxertos (palmar longo, plantar), PULVERTAFT, quadriga, BOYES e PANEVA-HOLEVICH.
+resumo: Três necessidades do tendão intrassinovial (sangue, trilho e movimento); FDS com duas cabeças e FDP com inervação dupla; túnel do carpo em três andares; zonas de KLEINERT e VERDAN; quiasma de CAMPER sobre a falange proximal distal; cinco anulares e três cruciformes, A1, A3 e A5 nas placas volares, A2 e A4 nos ossos e indispensáveis; vínculos curtos e longos e face palmar avascular; emergência só com perfusão comprometida, reparo até 7 dias; núcleo multifilamentar, alça travada, epitendínea como reforço e gap de 3 mm; LEDDY e PACKER I a IV; regra de 1 cm na zona 1; incisão mediolateral; DURAN 3 a 5 mm; tenólise não antes de 4 meses; BOYES 1 a 5; enxerto palmar longo e plantar, PULVERTAFT, cascata; HUNTER e PANEVA-HOLEVICH; polias por BUNNELL, LISTER, KAREV e DOYLE e BLYTHE; quadriga contra lumbrical plus.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 6 (Lesão do tendão flexor) do Green's Operative Hand Surgery, 8ª edição, de John Gray SEILER III.
+Este resumo é inspirado no capítulo 6 (Lesão do tendão flexor) do Green's Operative Hand Surgery, 8ª edição, de John Gray SEILER III, e foi ampliado com o mesmo capítulo da 7ª edição (2017), lido por inteiro. As páginas citadas como "Green 7, p." são as impressas dessa edição. O Campbell's Operative Orthopaedics, 15ª ed., cap. 71, de Austin B. MURPHY, entra para os números que o Green não dá e para as divergências que viram questão; ele aparece sempre com o próprio nome e a própria página.
 
-O tendão flexor dentro da bainha precisa de três coisas para dar certo: **sangue** (vínculos e líquido sinovial), **trilho** (as polias, sobretudo A2 e A4) e **movimento** (para cicatrizar por dentro e não grudar). Quase todas as questões cobram uma dessas três ideias.
+SEILER herdou o capítulo de três nomes que fizeram a história do assunto: James STRICKLAND, Lawrence SCHNEIDER e Martin BOYER, cujos capítulos das edições anteriores foram fundidos e atualizados (Green 7, p. 183). Por isso o texto tem duas vozes: a do pesquisador de laboratório (Washington University, a escola de GELBERMAN, de onde vêm os estudos em cães sobre gap, força e excursão) e a do cirurgião de reconstrução (a escola de HUNTER e SCHNEIDER, de onde vêm o bastão de silicone e o enxerto em dois tempos). Quando a prova diz "segundo o Green", em geral pede a opinião dessas duas escolas.
 
-> **Na prova:** face **palmar** pouco irrigada; preservar **A2 e A4**; LEDDY e PACKER **I** = palma, **sem vínculos**, **urgente**; epitendínea = **mais força**, mas complemento; zona 1 com coto **> 1 cm** = tenorrafia; aderência = complicação **mais comum**; enxerto = **palmar longo**; **PULVERTAFT** = diâmetros diferentes; tenso = **quadriga**; PANEVA-HOLEVICH = **superficial** como enxerto.
+O fio condutor do capítulo cabe numa frase. O tendão flexor que corre dentro da bainha digital precisa de três coisas para dar certo:
 
-# Anatomia: sangue e trilho {radar=confirmado}
+- **Sangue**, que chega pelos vínculos e pela difusão do líquido sinovial.
+- **Trilho**, que são as polias, sobretudo A2 e A4, que mantêm o tendão colado ao osso.
+- **Movimento**, para que o tendão cicatrize por dentro e não grude na bainha.
 
-- **Nutrição dupla** na zona 2: **perfusão vascular** e **difusão sinovial**. A face **palmar** dos tendões nas zonas 1 e 2 é relativamente **avascular**; a **dorsal** se liga aos vínculos.
-- **Vínculos curtos** (do superficial e do profundo): mesentérios triangulares **perto das inserções**. **Vínculo longo do superficial:** do assoalho da bainha na falange proximal. **Vínculo longo do profundo:** do superficial, na interfalângica proximal.
-- **Polias anulares** (grossas, rígidas) e **cruciformes** (finas, flexíveis). **A2 e A4** = requisito mínimo; reparo por janelas entre elas.
+Quase toda conduta do capítulo serve a uma dessas três necessidades, e quase toda questão cobra uma delas: por que o tipo I de LEDDY e PACKER é urgente (perdeu o sangue), por que não se pode abrir a A2 inteira (perde o trilho), por que se mobiliza cedo (precisa de movimento). Uma segunda regra atravessa o capítulo: **fora da bainha vai melhor que dentro dela**. Reparo e reconstrução nas zonas 3 a 5 dão resultado melhor que na zona 2, porque fora da bainha há tecido frouxo e menos aderência que trava o deslizamento (Green 7, p. 190, 199 e 219).
 
-!questoes central=mao-0092 relacionadas=mao-0320,mao-0051,mao-0022 treino=mao-2592
-conceito: A2 e A4 são as polias indispensáveis contra a corda de arco; os vínculos curtos ficam junto às inserções; a face palmar é pouco irrigada.
-como: Uma prova de Ortopedia mostrou as polias e o vínculo curto do superficial em imagem; o TARO 2016, a área isquêmica sob uma polia; o TARO 2018, o efeito do fechamento das polias.
-armadilha: Achar que as cruciformes são as mais importantes ou trocar a origem dos vínculos longos.
-alerta: O texto não localiza a área isquêmica do superficial sob uma polia específica (`mao-0051`) nem discute o fechamento das polias na cicatrização (`mao-0022`); os gabaritos oficiais foram preservados.
-!fim
+A banca gira em poucos blocos, que seguem a ordem deste resumo:
 
-# A avulsão do profundo {radar=confirmado}
+- **LEDDY e PACKER**, o bloco que mais cai: nível de retração, vínculos, prazo e conduta de cada tipo.
+- **Anatomia aplicada**: polias (origem, função, camadas), vínculos, quiasma de CAMPER, origens musculares, túnel do carpo e zonas.
+- **Técnica de reparo**: número de fios, alça travada, epitendínea, gap, PULVERTAFT para calibres diferentes.
+- **Reconstrução**: BOYES, doadores de enxerto, tensão pela cascata, dois tempos de HUNTER, PANEVA-HOLEVICH, reconstrução de polias.
+- **Complicações com nome próprio**: quadriga (enxerto curto) contra lumbrical plus (enxerto longo), aderência como a mais comum, tenólise e seus prazos.
 
-!tabela LEDDY e PACKER (Green, cap. 6, Fig. 6.7)
-| Tipo | O que acontece | Conduta |
+> **Na prova:** face **palmar** do tendão pouco irrigada; **A2 e A4** indispensáveis; A1, A3 e A5 nascem das **placas volares**; LEDDY e PACKER **I** = palma, sem vínculos, até **3 semanas**; **II** = IFP, até **6 semanas**; **III** = fragmento na borda distal da **A4**; **IV** = fratura com tendão solto, coto na bainha ou na palma; núcleo **multifilamentar** e alça **travada**; epitendínea = **mais força**, mas complemento; gap **> 3 mm** não ganha força; zona 1 com coto **> 1 cm** = tenorrafia; DURAN **3 a 5 mm**; aderência = complicação **mais comum**; tenólise **não antes de 4 meses**; enxerto = **palmar longo**; **PULVERTAFT** = diâmetros diferentes; enxerto curto = **quadriga**, longo = **lumbrical plus**; PANEVA-HOLEVICH = **FDS** como enxerto.
+
+# Da terra de ninguém ao reparo primário: como o conhecimento evoluiu {radar=fundamento}
+
+## Por que a zona 2 se chamava terra de ninguém
+
+Durante a primeira metade do século XX, a recomendação era não suturar o flexor cortado dentro da bainha digital. BUNNELL, que domina a Tabela 6.1 do Green (p. 184) com publicações de 1918 a 1951, ensinou a técnica atraumática e precisa, mas o reparo primário dentro da bainha dava aderência densa e dedo rígido. A saída era fechar a pele, esperar e, semanas depois, fazer um **enxerto livre** da palma à ponta do dedo, com as junções fora da bainha. A região entre a polia A1 e a inserção do FDS ganhou o apelido de **"no man's land"**, terra de ninguém, justamente porque ali "ninguém" deveria reparar (Green 7, p. 185 e 186).
+
+O enxerto primário era, portanto, o padrão da zona 2. BOYES detalhou técnica e resultados (BOYES, J Bone Joint Surg Am 32:489-499, 1950; PMID 15428471), e PULVERTAFT publicou a série clássica de enxertos com a junção entrelaçada que leva o seu nome (PULVERTAFT, J Bone Joint Surg Br 38:175-194, 1956; PMID 13295327). Essa história explica por que boa parte do capítulo ainda é sobre enxertos: eles saíram da linha de frente, mas continuaram como a resposta para o reparo que falhou ou chegou tarde (Green 7, p. 199).
+
+## A virada dos anos 1960 e 1970
+
+A mudança veio em duas frentes. Na clínica, **VERDAN** publicou o primeiro relato de reparo primário bem-sucedido dentro da bainha (a revisão "Half a century of flexor-tendon surgery", J Bone Joint Surg Am 54:472-491, 1972; PMID 4560071, resume essa trajetória), e **KLEINERT** e colaboradores apresentaram o reparo primário na terra de ninguém com reabilitação por elástico, o primeiro relato válido nos Estados Unidos (KLEINERT, KUTZ, ASHBELL e colaboradores, J Bone Joint Surg Am 49:577, 1967, resumo citado na lista do capítulo). LISTER, KLEINERT, KUTZ e colaboradores publicaram a série com mobilização controlada imediata (J Hand Surg Am 2:441-451, 1977; PMID 336675). No laboratório, **LUNDBORG** mostrou que o tendão flexor cicatriza **sem aderência** quando nutrido só pelo líquido sinovial, o conceito de cicatrização **intrínseca** (LUNDBORG, Hand 8:235-238, 1976; PMID 976821). Se o tendão consegue cicatrizar sozinho, a aderência deixa de ser o preço obrigatório do reparo e passa a ser uma complicação evitável.
+
+O Green resume (p. 183): desde os anos 1960, avanços na anatomia, na biologia, nos fios, na magnificação e na reabilitação fizeram do **reparo primário o tratamento preferido** para o flexor cortado na zona 2. A meta continua a mesma desde então: coaptação precisa dos cotos que permita uma reabilitação que estimule o deslizamento, iniba as aderências peritendíneas, restaure a superfície de deslizamento e deixe o reparo cicatrizar de forma primária.
+
+## O laboratório que ditou as regras
+
+A partir dos anos 1980, o grupo de **GELBERMAN** (depois com BOYER, SEILER, WINTERS e outros) fez em cães os estudos que hoje viram números de prova: o gap maior que 3 mm não ganha força (GELBERMAN e colaboradores, J Bone Joint Surg Am 81:975-982, 1999; PMID 10428129); suturas de múltiplos fios são mais fortes e mais resistentes ao gap (WINTERS e colaboradores, J Hand Surg Am 23:97-104, 1998; PMID 9523962); aumentar a força aplicada na reabilitação de 5 N para 17 N não acelera o ganho de resistência (BOYER e colaboradores, J Bone Joint Surg Am 83:891-899, 2001; PMID 11407798). STRICKLAND e GLOGOVAC compararam imobilização com movimento passivo controlado na zona 2 e consolidaram a mobilização precoce na clínica (J Hand Surg Am 5:537-543, 1980; PMID 7430595).
+
+!tabela Quem construiu o conhecimento (Green 7, cap. 6, Tabela 6.1, p. 184, resumida)
+| Autor | Período | Contribuição |
 | --- | --- | --- |
-| **I** | coto **retrai até a palma**; **sem irrigação vincular** | **reparo urgente** |
-| II | coto na bainha, na **interfalângica proximal**; vínculo longo íntegro | reparo possível até ~6 semanas em alguns casos |
-| III | **fragmento ósseo grande** preso na **borda distal da A4** | fixar a fratura |
-| IV | fratura **e** avulsão do tendão do fragmento | fixar a fratura e reinserir o tendão |
+| BUNNELL | 1918 a 1951 | técnica cirúrgica delicada e precisa; enxertos |
+| MASON | 1932 a 1959 | estudo clássico in vivo da cicatrização e do ganho de força |
+| BOYES | 1947 a 1989 | técnica e resultados dos enxertos de flexor |
+| VERDAN | 1960 a 1987 | primeiro relato de reparo primário bem-sucedido dentro da bainha |
+| KLEINERT | 1967 em diante | reabilitação com elástico; primeiro relato válido nos EUA de reparo na zona 2 |
+| BRUNER | 1967 a 1975 | incisão volar em zigue-zague |
+| KESSLER | 1969 a 1987 | técnica de sutura central (núcleo) |
+| LUNDBORG | 1975 em diante | cicatrização intrínseca, vascularização e nutrição do flexor |
+| DURAN | 1975 a 1990 | protocolo de movimento passivo |
+| LEDDY | 1977 a 1993 | classificação das avulsões do FDP |
+| LISTER | 1977 a 1986 | reabilitação, reconstrução de polias, manejo da bainha |
+| GELBERMAN | 1980 em diante | biologia, biomecânica, vascularização e reabilitação do reparo |
+| STRICKLAND | 1982 em diante | estudos clínicos e experimentais de reparo e reabilitação |
+| SILFVERSKIÖLD | 1983 a 1994 | gap no reparo e reabilitação |
+| DOYLE | 1988 | importância relativa de cada polia |
+| DIAO | 1996 em diante | papel da sutura circunferencial na força inicial |
+| BOYER | 1997 em diante | biologia, biomecânica e reabilitação do reparo |
 !fim
 
-!questoes central=mao-0019 treino=mao-2593
-conceito: No tipo I, o coto vai à palma e rompe os dois vínculos; o reparo é urgente.
-como: O TARO 2018 perguntou o tipo com ruptura de ambos os vínculos.
-armadilha: Confundir o tipo I com o II, em que o vínculo longo segura o coto na interfalângica proximal.
-!fim
+A tabela ajuda a responder questões de "quem descreveu": KESSLER é núcleo, BRUNER é incisão, DURAN é movimento passivo, KLEINERT é elástico e zona 2, LEDDY é avulsão, DOYLE é polia, DIAO é epitendínea. O primeiro trabalho de KESSLER com NISSIM, que propôs o reparo dentro da bainha sem imobilização, saiu na Acta Orthopaedica Scandinavica (KESSLER e NISSIM, Acta Orthop Scand 40:587-601, 1969; PMID 4907784).
 
-# O reparo e a cicatrização {radar=confirmado}
+# Anatomia: músculos, túnel do carpo e zonas {radar=confirmado}
 
-- **Sutura central** = resistência; **epitendínea** = **aumenta a resistência** e alisa, mas é **complemento**. Sutura demais aumenta volume e atrito; **gap** precoce prejudica a cicatrização.
-- Laceração **> 50%**: central + circunferencial; **< 50%**: reparar ou desbridar.
-- **Zona 1:** coto distal **< 1 cm** = avanço e **reinserção no osso**; **> 1 cm** = **tenorrafia** (evita quadriga).
-- **Aderências** com rigidez: complicação **mais comum**; previnem-se com **excursão** na reabilitação. A área até **1 cm** do reparo é a mais ativa. **LUNDBORG**: cicatrização **intrínseca**. Reparo forte permite **carga precoce**.
+## Os três flexores extrínsecos
 
-!questoes central=mao-0091 relacionadas=mao-0002,mao-0152,mao-0135,mao-0402,mao-0541,mao-0229 treino=mao-2594,mao-2595
-conceito: A mobilização evita as aderências gerando excursão; a tensão cíclica estimula a cicatrização intrínseca em experimentos (Campbell, p. 3143), mas aumentar a força aplicada não acelera o ganho de resistência (Green, p. 189 e 195, BOYER); a epitendínea reforça a central.
-como: Uma prova de Ortopedia perguntou o papel da tensão e da mobilização e o prazo de reparo na zona V; o TARO 2020, o ganho de força da epitendínea; o TEOT 2023, a sutura na zona 1; a SBOT-SP e outra prova, as técnicas de sutura em imagem; outra prova, o coto do flexor longo do polegar.
-armadilha: Achar que a imobilização protege o reparo sem custo.
-alerta: O prazo da zona V (`mao-0135`) está em "O momento do reparo" (Campbell's Operative Orthopaedics, 15ª ed., p. 3166) e o coto do flexor longo do polegar (`mao-0229`) em "A zona 2, as zonas proximais e o polegar" (Green's Operative Hand Surgery, 7ª ed., p. 190; Campbell, p. 3165). Para a epitendínea (`mao-0002`), o Green não dá número e o Campbell dá 50% da carga de falha e 22% a mais com o epitendão primeiro (p. 3147) e 117% com o cross-stitch (p. 3146); os gabaritos oficiais foram preservados.
-!fim
+O Green 7 abre a anatomia pelos três flexores extrínsecos (p. 185), e as origens viram questão de memória pura. Vale entender a lógica para não decorar: o **FDS** é o músculo do andar intermediário, nasce alto (no úmero e na ulna proximal, e no rádio) e por isso tem duas cabeças; o **FDP** e o **FPL** são os músculos do andar profundo, nascem das diáfises (ulna e rádio, respectivamente) e da membrana interóssea, lado a lado.
 
-# A reconstrução {radar=confirmado}
+**O flexor superficial dos dedos (FDS)** tem **duas cabeças**. A **ulnar** (umeroulnar) nasce da face anterior do **epicôndilo medial**, do **ligamento colateral ulnar** do cotovelo, da face medial do **processo coronoide** e da ulna proximal. A **radial** nasce do rádio proximal, logo **distal à inserção do supinador** e **profunda ao pronador redondo**. O **nervo mediano** corre frouxamente aderido à face profunda do FDS, o que explica por que ele é achado logo abaixo desse ventre na exploração do antebraço. O FDS é inervado pelo mediano e recebe sangue das artérias **radial e ulnar**. No meio do antebraço, os tendões já se arrumam em dois andares: **médio e anular superficiais**, **indicador e mínimo profundos**.
 
-- **Avaliação:** **BOYES 1** (cicatriz mínima, articulações móveis) e **movimento passivo completo**; **A2 e A4** presentes. Com rigidez, cicatriz ou polias perdidas: **dois estágios**.
-- **Enxertos:** **palmar longo** (palma-dedo; mesmo campo; teste de **SCHAEFFER**) e **plantar delgado** (antebraço-ponta).
-- **Junção proximal:** **PULVERTAFT** (entrelaçamento; diâmetros diferentes).
-- **Complicações:** **aderências** (as mais comuns); enxerto tenso ou tendão avançado demais = **quadriga** (o dedo vizinho perde flexão).
-- **PANEVA-HOLEVICH (1969):** 1º estágio, superficial e profundo suturados na palma; ~6 semanas depois, o **superficial** é cortado no antebraço e passado pela bainha como enxerto.
+**O flexor profundo dos dedos (FDP)** nasce das faces volar e medial dos **três quartos proximais da ulna** e da **membrana interóssea**. Ocupa a camada mais profunda, ao lado do FPL. Tem **inervação dupla**: o **nervo ulnar** inerva a parte que vai ao anular e ao mínimo; o **interósseo anterior** (ramo do mediano), a que vai ao indicador e ao médio. O sangue vem sobretudo da artéria **ulnar**. A inervação dupla tem consequência clínica: na lesão alta do ulnar, o FDP do anular e do mínimo enfraquece; na do interósseo anterior, o do indicador e do médio, junto com o FPL.
 
-!questoes central=mao-0572 relacionadas=mao-0591,mao-0522,mao-0231,mao-0230,mao-0079 treino=mao-2596,mao-2597
-conceito: Palmar longo é o enxerto preferido; PULVERTAFT une tendões de calibres diferentes; enxerto tenso causa quadriga; a aderência é a complicação mais comum.
-como: O TARO 2026 perguntou o enxerto preferido; o TARO 2013, a sutura para diâmetros diferentes; o TARO 2010, a causa da quadriga; o TARO 2014, a condição do enxerto primário; provas de Ortopedia, a complicação mais comum e o PANEVA-HOLEVICH.
-armadilha: Achar que o enxerto longo demais causa quadriga (causa lumbrical-plus).
-!fim
-
-# Os músculos flexores extrínsecos e o túnel do carpo {radar=confirmado}
-
-O Green's Operative Hand Surgery, 7ª ed. (cap. 6, p. 185), de John Gray SEILER III, abre o capítulo pela anatomia dos três flexores extrínsecos, fonte das questões de imagem do corte do punho.
-
-**O flexor superficial dos dedos (FDS)** tem **duas cabeças**: a **ulnar**, do **epicôndilo medial**, do ligamento colateral ulnar e do **processo coronoide**; a **radial**, do rádio proximal, distal ao **supinador**. O **nervo mediano** corre aderido à sua face profunda. No meio do antebraço os tendões já se arrumam em dois andares: **médio e anular superficiais**, **indicador e mínimo profundos**.
-
-**O flexor profundo dos dedos (FDP)** nasce dos **três quartos proximais da ulna** e da membrana interóssea e tem inervação dupla: **ulnar** para anular e mínimo, **interósseo anterior** para indicador e médio.
-
-**O flexor longo do polegar (FPL)** nasce do **terço médio do rádio** e da membrana interóssea, é inervado pelo **interósseo anterior** e irrigado predominantemente pela **artéria radial**.
+**O flexor longo do polegar (FPL)** nasce da face volar do **terço médio do rádio** e da parte lateral da membrana interóssea, é inervado pelo **interósseo anterior** e irrigado sobretudo pela artéria **radial**.
 
 !tabela Os três flexores extrínsecos (Green 7, cap. 6, p. 185)
 | Músculo | Origem | Inervação | Irrigação |
 | --- | --- | --- | --- |
-| FDS | cabeça ulnar: epicôndilo medial, colateral ulnar, coronoide; cabeça radial: rádio proximal, distal ao supinador | **mediano** | radial e ulnar |
+| FDS | cabeça ulnar: epicôndilo medial, colateral ulnar, coronoide; cabeça radial: rádio proximal, distal ao supinador, profunda ao pronador redondo | **mediano** | radial e ulnar |
 | FDP | **3/4 proximais da ulna** e membrana interóssea | **ulnar** (anular e mínimo); **interósseo anterior** (indicador e médio) | sobretudo **ulnar** |
-| FPL | **terço médio do rádio** e membrana interóssea | **interósseo anterior** | sobretudo **radial** |
+| FPL | **terço médio do rádio** e parte lateral da membrana interóssea | **interósseo anterior** | sobretudo **radial** |
 !fim
 
-**O túnel do carpo** recebe os nove flexores numa relação constante (Green, p. 185): na camada **mais superficial**, o FDS do **médio e do anular**; logo abaixo, o FDS do **indicador e do mínimo**; na **mais profunda**, os **quatro FDP e o FPL**, lado a lado. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3160 e 3161.e1), de Austin B. MURPHY, repete a regra e lembra que nas zonas IV e V os FDP ainda **não formam unidades individuais**; como os FDP do anular e do mínimo se intercomunicam, o dedo **ainda flexiona** com os seus tendões cortados, e o exame engana (p. 3144).
+!questoes central=mao-0859,mao-0963 treino=mao-2113,mao-2826,mao-2852
+conceito: O FDS tem duas cabeças (umeroulnar e radial), é inervado só pelo mediano e recebe sangue das artérias radial e ulnar; no punho, seus tendões ficam em dois andares; o FDP e o FPL formam a camada profunda do compartimento anterior.
+como: A UFG 2017 pediu a afirmação correta sobre os flexores (tendões do FDS em duas camadas no punho); a UFG 2020 perguntou em que compartimento estão os flexores dos dedos; o simulado da SBCM 2022 cobrou as cabeças, a posição dos tendões e a irrigação do FDS.
+armadilha: Dar origem no epicôndilo medial ao FDP, inervação ulnar ao FDS ou pôr a cabeça radial superficial ao pronador redondo; ela é profunda a ele.
+alerta: A UFG 2020 deu "anterior profundo" para os flexores dos dedos; pelo Green 7 (p. 185), o FDP forma a camada profunda e o FDS a intermediária do compartimento anterior, de modo que a resposta descreve sobretudo o FDP. O gabarito oficial foi preservado.
+!fim
 
-**O quiasma de CAMPER.** No dedo, o FDS entra na A1, divide-se em **duas metades** que giram **180 graus** em torno do FDP e se reúnem **dorsalmente** a ele, sobre a placa volar da IFP, inserindo-se nos **três quintos médios** da falange média (Green, p. 186, Fig. 6.3). O Campbell (p. 3157, Fig. 71.30) chama isso de **espiral do FDS**: numa laceração no meio dela, os cotos giram **90 graus em direções opostas**, parecem casar, mas suturados assim **obliteram o canal do FDP**. O FDP retraído tem de ser recolocado no **hiato do FDS**.
+## O túnel do carpo: três andares
 
-!questoes central=mao-0342 relacionadas=mao-0634,mao-0673
+O túnel do carpo recebe os nove flexores numa relação constante (Green 7, p. 185): na camada **mais superficial**, o FDS do **médio e do anular**; logo abaixo, o FDS do **indicador e do mínimo**; na **mais profunda**, os **quatro FDP e o FPL**, lado a lado. A regra é a continuação do que acontece no antebraço, onde o FDS já separa médio e anular (por cima) de indicador e mínimo (por baixo).
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3160 e 3161.e1), repete a regra e lembra que nas zonas IV e V os FDP ainda **não formam unidades individuais**. Como os FDP do anular e do mínimo se intercomunicam, o dedo **ainda flete** com os seus tendões cortados, e o exame engana (Campbell, p. 3144). É a mesma origem comum que, lá na frente, explica a quadriga.
+
+!questoes central=mao-0342 relacionadas=mao-0634
 conceito: No túnel do carpo, o FDS do médio e do anular é o mais superficial, o FDS do indicador e do mínimo fica logo abaixo, e os quatro FDP ficam na camada mais profunda, no mesmo plano do FPL.
 como: O TARO 2024 pediu, num corte transversal do punho, o tendão assinalado (FPL); o TARO 2006 afirmou que os FDP passam no mesmo plano do FPL.
 armadilha: Pôr o FPL num plano próprio, mais superficial, ou pôr o FDS do indicador e do mínimo no andar de cima.
 alerta: O acervo não registra o gabarito oficial de `mao-0634`; o Green's Operative Hand Surgery, 7ª ed. (p. 185) sustenta a afirmação, ao pôr os quatro FDP e o FPL na camada mais profunda.
 !fim
 
-# A bainha, as polias e a irrigação em detalhe {radar=confirmado}
+## As zonas de KLEINERT e VERDAN
 
-**A bainha.** Nas zonas 1 e 2 os tendões correm dentro da **bainha digital fibro-óssea**, cobertos por uma camada de fibroblastos achatados, o **epitendão**, a superfície de deslizamento que o reparo precisa restaurar (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 186). A bainha retinacular começa no **colo do metacarpo** e termina na **falange distal**; suas condensações formam **cinco polias anulares** e **três cruciformes** (Fig. 6.4).
+As zonas dos flexores nos dedos são de **KLEINERT e VERDAN** e foram padronizadas pelo Comitê de Lesões Tendíneas da IFSSH (KLEINERT e VERDAN, J Hand Surg Am 8:794-798, 1983; PMID 6630960). O Green 7 as descreve da distal para a proximal (p. 185 e 186, Fig. 6.2), e cada fronteira tem uma razão anatômica:
 
-**As bursas e o espaço de PARONA.** No mínimo, a bainha costuma continuar na **bursa ulnar**, e no polegar a bainha do FPL continua na **bursa radial**; as duas passam proximais ao ligamento transverso do carpo (Green's Operative Hand Surgery, 7ª ed., cap. 2, p. 29). Proximal ao ligamento, elas ficam profundas aos FDP e sobre a fáscia do **pronador quadrado**: é o **espaço de PARONA**, espaço potencial profundo do antebraço distal volar, contínuo com o **espaço palmar médio**, por onde as bursas podem se comunicar (comunicação entre elas em 85% das peças); a infecção que sobe por uma bursa e desce pela outra é o **abscesso em ferradura** (p. 29 e 33).
-
-**As polias têm três camadas**: a **interna** secreta **ácido hialurônico**; a **média**, colágena, resiste à translação palmar; a **externa**, areolar, nutre a polia. **A1, A3 e A5** nascem das **placas volares** da MF, IFP e IFD; **A2**, do **terço proximal da falange proximal**; **A4**, da **falange média**. A **A2 normal mede 18 a 20 mm** (p. 223).
-
-**Quantas polias se pode perder?** Perder **duas anulares contíguas** gera **contratura em flexão da IFP**; BARTON, confirmado por DOYLE e BLYTHE e por HUNTER, estabeleceu que **pelo menos A2 e A4** devem ser mantidas ou reconstruídas, sob pena de **corda de arco** (Green, p. 221). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3154 a 3156), diverge no tom: vários autores mostraram que preservá-las **não é clinicamente relevante** no reparo agudo, tanto que **parte ou toda a A2** pode ser incisada na zona II se o resto da bainha estiver íntegro; para enxerto e tenólise, porém, volta a exigir A2 e A4. O Green aceita abrir a **A4** ("venting"; LIEBER, TANG; p. 190). As janelas ficam nas **cruciformes** C1 a C3 (Campbell, p. 3158). No **polegar**, a essencial é a **oblíqua** (Green, p. 218).
-
-**A irrigação.** O Green descreve **nutrição dupla**, por **perfusão** e por **difusão sinovial**, com sangue vindo dos **vínculos**, das **inserções ósseas**, da bainha e de **vasos longitudinais** da palma (p. 186). O Campbell mostra que a irrigação é **segmentar** (Fig. 71.11): cada segmento depende de um vínculo dorsal, e suturas intratendíneas pioram a microcirculação; por isso o núcleo na **metade volar** (p. 3146 a 3148). O **FPL não tem vínculo** e pode ser avançado sem perder irrigação (p. 3166).
-
-**Onde fica a isquemia.** Esta é a divergência que decide questão. O Green só diz que a face **palmar** dos flexores nas zonas 1 e 2 é relativamente avascular. O Campbell (p. 3143) localiza: o **FDS tem uma área isquêmica sob a polia A2**, na falange proximal; o **FDP tem duas, sob a A2 e sob a A4**.
-
-!tabela Polias e áreas isquêmicas (Green 7, cap. 6, p. 186 e 221; Campbell 15, cap. 71, p. 3143)
-| Estrutura | Origem ou dado | Por que importa |
-| --- | --- | --- |
-| A1, A3, A5 | placas volares da MF, IFP e IFD | articulares, flexíveis |
-| A2 | terço proximal da falange proximal; **18 a 20 mm** | indispensável; sob ela, isquemia do FDS e do FDP |
-| A4 | falange média | indispensável; sob ela, a 2ª isquemia do FDP |
-| cruciformes C1 a C3 | finas, colapsáveis | local das janelas de reparo |
-| oblíqua do polegar | falange proximal | a essencial no polegar |
-| duas anulares contíguas perdidas | perda de movimento | contratura em flexão da IFP |
-!fim
-
-!questoes relacionadas=mao-0051
-conceito: O FDS tem área isquêmica sob a A2; o FDP tem duas, sob a A2 e a A4; a face palmar dos tendões nas zonas 1 e 2 é a menos irrigada.
-como: O TARO 2016 perguntou, com o mesmo enunciado repetido no acervo, sob qual polia fica a área isquêmica do superficial.
-armadilha: Responder A4 para o superficial (a A4 é a segunda zona isquêmica do profundo) ou achar que a face dorsal é a avascular.
-!fim
-
-# O exame físico, a imagem e as zonas {radar=oportunidade}
-
-**O dedo em repouso.** Com os dois flexores cortados, o dedo fica **estendido na IFP e na IFD** e perde o **efeito tenodese** (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 183); o Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3144), descreve **hiperextensão** fora da cascata.
-
-**Os testes.** Para o **FDS**, o examinador mantém os dedos vizinhos em extensão completa ou leve hiperextensão; isso trava o FDP comum, e a flexão ativa da **IFP** prova que o FDS está íntegro. Para o **FDP**, estabiliza-se a **falange média** contra a mesa e pede-se flexão da **IFD** (Green, Fig. 6.1). O Campbell resume: IFP estabilizada sem flexão da IFD = **FDP cortado**; MF estabilizada sem flexão da IFP nem da IFD = **ambos cortados**; MF do polegar estabilizada sem flexão da IF = **FPL cortado** (p. 3144, Fig. 71.3).
-
-**A lesão parcial escapa.** Flexão ativa presente **não exclui** parcial; **dor** na flexão a sugere (Green, p. 183). **Ultrassom e RM** ajudam, e sem diagnóstico definitivo a regra é **explorar** (Campbell, p. 3145).
-
-**As zonas** dos dedos são de **KLEINERT e VERDAN** (Green, p. 185, Fig. 6.2). A zona 2, a **"terra de ninguém"** de BUNNELL, tem esse nome porque antes não se fazia reparo primário ali.
+- **Zona 1**: distal à inserção do FDS. Só existe o FDP. Inclui a avulsão da base da falange distal.
+- **Zona 2**: da borda proximal da **A1** até a inserção do FDS. Os dois tendões correm juntos dentro da bainha, o FDS se divide e o FDP o atravessa. É a terra de ninguém.
+- **Zona 3**: da saída do túnel do carpo até a A1, a zona da **origem dos lumbricais** no FDP, na altura do arco palmar superficial.
+- **Zona 4**: dentro do **túnel do carpo**.
+- **Zona 5**: da junção musculotendínea à entrada do túnel.
 
 !figura 6.2 imagem=mao/green7-6-2-w76.jpeg
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 6, Fig. 6.2, p. 185. As cinco zonas dos flexores nos dedos e no polegar; no polegar, a zona III fica sob a musculatura tenar e a zona IV é a do túnel do carpo, em linha com a zona IV dos dedos.
@@ -156,48 +136,286 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 6, Fig. 6.2, p. 185.
 No polegar, use o desenho do Green: o da Fig. 71.38 do Campbell (p. 3164) põe o rótulo IV sobre a eminência tenar, embora a legenda da mesma figura diga que a zona III fica sob a musculatura tenar e a zona IV corresponde ao túnel do carpo.
 
 !tabela Zonas dos flexores (Green 7, cap. 6, p. 185; Campbell 15, cap. 71, p. 3155 e 3164)
-| Zona | Dedos | Polegar (FPL) |
-| --- | --- | --- |
-| 1 | distal à inserção do FDS até a do FDP; **só o FDP** | IF e inserção do FPL |
-| 2 | da **A1** (prega palmar distal) à inserção do FDS; **terra de ninguém** | bainha fibro-óssea até logo proximal à cabeça do metacarpo e MF |
-| 3 | origem dos **lumbricais**, do ligamento transverso ao 1º ânulo | metacarpo sob a **musculatura tenar** |
-| 4 | dentro do **túnel do carpo** | túnel do carpo |
-| 5 | da junção musculotendínea à borda proximal do túnel | antebraço distal, logo proximal ao punho |
+| Zona | Dedos | Polegar (FPL) | O que importa |
+| --- | --- | --- | --- |
+| 1 | distal à inserção do FDS; **só o FDP** | IF e inserção do FPL | regra do 1 cm; avulsões |
+| 2 | da **A1** à inserção do FDS; **terra de ninguém** | bainha até a cabeça do metacarpo e MCF | dois tendões na bainha; pior prognóstico |
+| 3 | origem dos **lumbricais** | metacarpo sob a **musculatura tenar** | não suturar os lumbricais |
+| 4 | **túnel do carpo** | túnel do carpo | vários tendões e o mediano juntos |
+| 5 | da junção musculotendínea ao túnel | antebraço distal | ordem de reparo; fasciotomia |
 !fim
 
-# O momento do reparo {radar=oportunidade}
+## Os lumbricais e a zona 3
 
-Os dois livros usam réguas diferentes.
+A zona 3 é definida pelos lumbricais, que nascem do próprio FDP na palma (Green 7, p. 185). Essa origem móvel tem duas consequências que voltam no capítulo. Primeiro, o lumbrical é puxado para proximal quando o FDP se contrai e para distal quando o FDP é cortado e o coto distal fica livre; é essa tração que, num enxerto longo demais, gera o **lumbrical plus** (p. 225). Segundo, o coto do FDP do avulsionado tipo I pode ficar preso na palma justamente pela origem do lumbrical (Campbell, p. 3163). O Campbell desaconselha suturar os lumbricais no reparo da zona III, porque a sutura os encurta e também pode causar lumbrical plus (p. 3160).
 
-**O Campbell's Operative Orthopaedics, 15ª ed.** (cap. 71, p. 3154 e 3155) define primário, primário retardado, secundário e secundário tardio (tabela). O **secundário** é indicado com esmagamento e cominuição, lesão neurovascular ou articular grave, ou perda de pele que exija retalho. Atraso de **2 a 3 dias** com ferida limpa não traz complicação; quem adiar deve **prender os cotos** aos tecidos vizinhos.
+!questoes relacionadas=mao-1063,mao-1104
+conceito: Os lumbricais nascem dos tendões do FDP na palma, o que define a zona 3; os dois radiais (indicador e médio) nascem do lado radial de um só FDP.
+como: A PUC-SP 2019 perguntou a origem do primeiro e do segundo lumbricais; a PUC-SP 2020, a afirmação correta sobre eles.
+armadilha: Dar origem no FDS ou do lado ulnar do FDP aos lumbricais radiais.
+alerta: O capítulo 6 do Green 7 só diz que os lumbricais nascem do FDP na zona 3 (p. 185); o lado radial de origem dos dois primeiros vem da anatomia clássica, e os gabaritos oficiais foram preservados.
+!fim
 
-**O Green's Operative Hand Surgery, 7ª ed.** (cap. 6, p. 186, 195 e 202) reserva a **emergência** ao dedo que exige revascularização (os dois nervos e as duas artérias digitais cortados), faz os reparos de rotina **até 7 dias** e acha o primário improvável após **6 semanas**; lacerações negligenciadas por **3 a 6 semanas** já mostram degeneração e cicatriz na bainha.
+## O quiasma de CAMPER e a inserção do FDS
 
-**O prazo depende da zona.** Nas zonas III a V, fletir o punho vence a retração; passadas **4 ou 5 semanas**, pode ser preciso um **"minienxerto"** (Campbell, p. 3166, Fig. 71.39), e o Green fala em gap de **2 a 5 cm** exigindo enxerto interposto (p. 219). Na zona II, após **1 mês**: sem cicatriz extensa, **enxerto em um tempo**; com bainha e polias destruídas, **dois tempos** (Campbell, p. 3164).
+No dedo, o FDS chega à A1 por cima (volar) do FDP e precisa sair do caminho para que o FDP chegue à falange distal. A solução anatômica é elegante (Green 7, p. 186, Fig. 6.3): na altura da A1, o FDS se divide em **duas metades iguais**, que giram primeiro para lateral e depois para dorsal, cerca de **180 graus** em torno do FDP, e se reúnem **profundamente** a ele, sobre a parte **distal da falange proximal** e a **placa volar da IFP**. Esse cruzamento é o **quiasma de CAMPER**. Depois as fitas se separam de novo e se inserem como duas faixas na face volar da falange média, nos **três quintos médios**, formando ali o assoalho da bainha.
 
-!tabela Prazos do reparo (Campbell 15, cap. 71, p. 3154 e 3166; Green 7, cap. 6, p. 191, 195 e 217)
+O Campbell (p. 3157, Fig. 71.30) chama isso de **espiral do FDS** e tira dela uma armadilha cirúrgica: numa laceração no meio da espiral, os cotos giram **90 graus em direções opostas**, parecem casar, mas suturados assim **obliteram o canal do FDP**. O FDP retraído tem de ser recolocado no **hiato do FDS** antes do reparo.
+
+!questoes central=mao-0673 relacionadas=mao-0860 treino=mao-2824,mao-2866
+conceito: O FDS se divide na altura da A1, suas fitas giram 180 graus em torno do FDP e se reúnem por trás dele sobre a parte distal da falange proximal e a placa volar da IFP (quiasma de CAMPER); depois se inserem nos três quintos médios da falange média.
+como: A FMRP-USP 2026 pediu a localização do quiasma de CAMPER; a UFG 2017 trouxe afirmativas sobre as zonas, com a divisão do FDS na A1 e o quiasma na falange proximal.
+armadilha: Pôr o quiasma na base da falange proximal ou na falange média; o que fica na falange média é a inserção das fitas, não o quiasma.
+!fim
+
+# A bainha, as polias e a irrigação {radar=confirmado}
+
+## A bainha e as bursas
+
+Nas zonas 1 e 2, os tendões correm dentro da **bainha digital fibro-óssea**, cobertos por uma camada de fibroblastos achatados, o **epitendão**. É ele a superfície de deslizamento que o reparo precisa restaurar, e é por isso que o cirurgião pega o tendão pelo endotendão (pelas pontas cortadas), nunca pinçando a superfície: cada lesão do epitendão é um ponto de aderência (Green 7, p. 186, 192 e 224). A bainha retinacular começa no **colo do metacarpo** e termina na **falange distal**.
+
+No mínimo, a bainha costuma continuar na **bursa ulnar**, e no polegar a bainha do FPL continua na **bursa radial**; as duas passam proximais ao ligamento transverso do carpo (Green 7, cap. 2, p. 29). Proximal ao ligamento, elas ficam profundas aos FDP e sobre a fáscia do **pronador quadrado**: é o **espaço de PARONA**, espaço potencial profundo do antebraço distal volar, contínuo com o **espaço palmar médio**, por onde as bursas podem se comunicar (comunicação entre elas em 85% das peças); a infecção que sobe por uma bursa e desce pela outra é o **abscesso em ferradura** (cap. 2, p. 29 e 33). Para o capítulo de tendões, a importância é dupla: explica por que o coto proximal do FPL pode ser buscado no antebraço distal e por que uma tenossinovite do mínimo ameaça o antebraço.
+
+!questoes treino=mao-2195
+conceito: A bainha do mínimo continua na bursa ulnar, que passa sob o ligamento transverso do carpo e chega ao espaço de PARONA, sobre o pronador quadrado; por isso a tenossinovite do mínimo (e a do polegar, pela bursa radial) pode alcançar o antebraço.
+como: O simulado da SBCM 2023 perguntou qual dedo tem a tenossinovite classicamente ligada à disseminação para o espaço de PARONA.
+armadilha: Escolher o médio ou o anular, cujas bainhas em geral terminam na palma, sem continuar numa bursa.
+!fim
+
+## Anulares e cruciformes: trilho rígido e dobradiça
+
+A bainha se condensa em **cinco polias anulares**, espessas, e **três cruciformes**, finas (Green 7, p. 186, Fig. 6.4). As duas famílias têm papéis opostos, e entender isso resolve metade das questões:
+
+- As **anulares** são rígidas e mantêm o tendão junto ao osso. Como o tendão fica perto do eixo das articulações, uma pequena excursão do músculo gera grande rotação angular do dedo. É eficiência mecânica: o músculo tem um encurtamento máximo, e cada milímetro perdido longe do osso é flexão que não acontece.
+- As **cruciformes** são **colapsáveis**, "em sanfona". Elas se dobram quando o dedo flete e deixam as anulares se aproximarem sem se deformar. Não seguram o tendão; dão folga ao trilho.
+
+A origem de cada anular segue um padrão fácil de lembrar: as **ímpares** são **articulares** e as **pares** são **ósseas**. **A1, A3 e A5** nascem das **placas volares** da MCF, da IFP e da IFD; **A2** nasce do **terço proximal da falange proximal**; **A4** nasce da **falange média** (Green 7, p. 186). Como as ímpares acompanham a placa volar, elas se movem com a articulação; as pares, presas na diáfise, são as que fazem o trabalho de trilho, e por isso são as que importam.
+
+As cruciformes ficam nos intervalos. O capítulo 6 do Green 7 não diz onde fica cada uma; quem situa a **C1** é o capítulo 8 (p. 278): os ligamentos **checkrein** da IFP nascem dentro das paredes da A2, na sua borda **distal**, e se confundem com a origem proximal da C1. A C1 começa, portanto, logo distal à A2, entre a A2 e a A3. A descrição clássica de DOYLE (J Hand Surg Am 13:473-484, 1988; PMID 3418049) completa o desenho: C2 entre A3 e A4, C3 entre A4 e A5.
+
+Um detalhe de número: o capítulo 6 fala em cinco anulares e três cruciformes (p. 186), mas o capítulo 56 (p. 1910) cita DOYLE e BLYTHE (1975) com quatro anulares e três cruciformes. A diferença é histórica (a A5 foi descrita depois), e por isso as provas raramente perguntam o número.
+
+!questoes central=mao-0092,mao-1518 treino=mao-2836,mao-2842,mao-2844,mao-2854
+conceito: A1, A3 e A5 nascem das placas volares; A2 da falange proximal e A4 da falange média, e são estas duas, presas ao osso, que impedem a corda de arco; as cruciformes são finas e se dobram em sanfona.
+como: Uma prova de Ortopedia mostrou as polias numa figura e pediu as mais importantes contra a corda de arco; a USP-SP 2024 pediu, numa foto cirúrgica, a polia A2 e o FDP suturado.
+armadilha: Achar que as cruciformes, por terem nome de cruz, seguram o tendão; ou trocar a A2 pela A1 na foto, porque as duas ficam na base do dedo.
+!fim
+
+## As três camadas da polia
+
+Cada polia anular tem **três camadas** com funções diferentes (Green 7, p. 186):
+
+- A **interna** secreta **ácido hialurônico**, o lubrificante do deslizamento.
+- A **média**, rica em **colágeno**, é a camada de força; resiste à **translação palmar** do tendão, isto é, à corda de arco.
+- A **externa**, **areolar**, leva nutrição à própria polia.
+
+A lógica é a mesma do tendão: deslizar (camada interna), segurar (camada média) e viver (camada externa). Por isso uma polia reconstruída com tecido sem superfície sinovial desliza pior, e os enxertos intrassinoviais funcionam melhor como polia (p. 222).
+
+!questoes relacionadas=mao-0022 treino=mao-2868
+conceito: A camada interna da polia secreta ácido hialurônico, a média resiste à translação palmar e a externa nutre a polia; o fechamento das polias sobre o reparo, por aproximar uma superfície cruenta do tendão, favorece aderências.
+como: O TARO 2018 perguntou o que o fechamento das polias favorece na cicatrização dos flexores.
+armadilha: Achar que fechar a polia ajuda a cicatrização intrínseca; o que o Green diz é que fechar a bainha é opcional e só se faz se não atrapalhar o deslizamento (p. 187, 194 e 199).
+alerta: O texto não discute especificamente o fechamento das polias na cicatrização (`mao-0022`); o gabarito oficial foi preservado.
+!fim
+
+## Quantas polias se pode perder
+
+A função das anulares é manter o tendão perto do centro de rotação das articulações. Polia incompetente significa **translação palmar** do tendão (**corda de arco**), com dois efeitos: perda de flexão (o tendão encurta em linha reta em vez de girar o dedo) e **contratura em flexão** (o tendão passa a funcionar como uma corda presa às pontas). **Duas ou mais anulares contíguas** rompidas dão perda de movimento e contratura em flexão da IFP (Green 7, p. 221).
+
+A regra de quais polias manter vem de **BARTON**, num estudo experimental sobre a localização ótima das polias (BARTON, Plast Reconstr Surg 43:125-129, 1969; PMID 5765919), confirmada por DOYLE e BLYTHE e por HUNTER: **pelo menos A2 e A4** devem ser mantidas ou reconstruídas. Se houver corda de arco mesmo com A2 e A4 íntegras, deve-se considerar reconstruir outras polias (p. 221). O capítulo 56 acrescenta (p. 1910): secção só da A1 não perde função; secção da A1 com a A2 dá corda de arco, e o dedo só flete até a prega palmar distal.
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3154 a 3156), diverge no tom: vários autores mostraram que preservá-las **não é clinicamente relevante** no reparo agudo, tanto que **parte ou toda a A2** pode ser incisada na zona II se o resto da bainha estiver íntegro; para enxerto e tenólise, porém, volta a exigir A2 e A4. O Green aceita abrir parcialmente a **A4** ("venting") quando o coto não passa (LIEBER, TANG; p. 190), e KWAI BEN e ELLIOT descreveram a liberação lateral parcial da A2 e da A4 depois do reparo na zona 2 (J Hand Surg Br 23:649-654, 1998; PMID 9821612).
+
+## As polias do polegar
+
+O polegar tem um sistema próprio, descrito no capítulo 56 (Green 7, p. 1910). A **A1** (7 a 9 mm) fica sobre a MCF, ligada aos sesamoides e ao flexor curto; a **oblíqua** (9 a 11 mm) fica sobre a **falange proximal**, distal à A1, em continuidade com o adutor, com curso de ulnar-proximal para radial-distal; a **A2** fica sobre a placa volar da IF; e entre a A1 e a oblíqua pode haver uma polia anular variável (Av). A polia essencial do polegar é a **oblíqua**: na reconstrução do FPL ela deve ser preservada, e se tiver sido destruída basta refazer uma polia sobre a **metade proximal da falange proximal** (cap. 6, p. 218 a 220).
+
+## A nutrição dupla e os vínculos
+
+Na zona 2, o tendão tem **nutrição dupla**: **perfusão vascular** e **difusão sinovial**, a partir do paratendão parietal (Green 7, p. 186). O sangue chega por quatro vias: **vínculos**, **inserções ósseas**, vasos refletidos da bainha e vasos **longitudinais** que vêm da palma. A difusão é a descoberta de LUNDBORG e de MANSKE: o líquido sinovial, bombeado pelo movimento, nutre o tendão onde os vasos não chegam, e é por isso que o movimento também é nutrição.
+
+Os **vínculos** são mesos que levam vasos ao tendão pela face **dorsal** (Fig. 6.5):
+
+- **Vínculos curtos** do superficial (VBS) e do profundo (VBP): pequenos mesos **triangulares** junto às **inserções** de cada tendão.
+- **Vínculo longo do superficial** (VLS): nasce do **assoalho da bainha na falange proximal**.
+- **Vínculo longo do profundo** (VLP): nasce do **FDS**, na altura da **IFP**.
+
+Como os vínculos chegam por dorsal, a face **palmar** dos tendões nas zonas 1 e 2 é relativamente **avascular**; a face dorsal, ligada aos vínculos, é a mais irrigada (p. 186). A consequência técnica é que o núcleo da sutura tradicionalmente vai na metade volar, para não estrangular a circulação dorsal (Campbell, p. 3146 a 3148). A consequência clínica aparece no LEDDY e PACKER: o tendão que perde os dois vínculos (tipo I) perde a perfusão e depende só da difusão, que não basta quando ele está enrolado na palma. AMADIO, HUNTER e colaboradores mostraram que a lesão dos vínculos piora o resultado da cirurgia na zona 2 (J Hand Surg Am 10:626-632, 1985, citado na lista do capítulo).
+
+O Campbell mostra que a irrigação é **segmentar** (Fig. 71.11): cada segmento depende de um vínculo dorsal, e suturas intratendíneas pioram a microcirculação. O **FPL não tem vínculo** e pode ser avançado sem perder irrigação (p. 3166).
+
+!questoes central=mao-0320,mao-0861 treino=mao-2592,mao-2831,mao-2838,mao-2857
+conceito: Os vínculos curtos são mesos triangulares junto às inserções; o longo do FDS nasce do assoalho na falange proximal e o longo do FDP nasce do FDS na IFP; os vasos entram por dorsal, e a face palmar é a menos irrigada.
+como: Uma prova de Ortopedia mostrou o vínculo curto do superficial numa imagem; a UFG 2017 perguntou a característica da nutrição na zona II (face dorsal mais vascularizada); o simulado pediu a afirmação correta sobre a anatomia da bainha.
+armadilha: Trocar a origem dos vínculos longos (o do profundo nasce do superficial, não do assoalho) ou achar que os vínculos entram pela face ventral.
+!fim
+
+## Onde fica a isquemia
+
+Esta é a divergência que decide questão. O Green só diz que a face **palmar** dos flexores nas zonas 1 e 2 é relativamente avascular (p. 186). O Campbell (p. 3143) localiza: o **FDS tem uma área isquêmica sob a polia A2**, na falange proximal; o **FDP tem duas, sob a A2 e sob a A4**. Faz sentido: as polias ósseas comprimem o tendão contra o osso exatamente onde não há vínculo chegando.
+
+!tabela Polias e áreas isquêmicas (Green 7, cap. 6, p. 186 e 221 a 223; Campbell 15, cap. 71, p. 3143)
+| Estrutura | Origem ou dado | Por que importa |
+| --- | --- | --- |
+| A1, A3, A5 | placas volares da MCF, IFP e IFD | articulares, acompanham a placa |
+| A2 | terço proximal da falange proximal; **18 a 20 mm** | indispensável; sob ela, isquemia do FDS e do FDP |
+| A4 | falange média; duas voltas de enxerto dão cerca de 10 mm | indispensável; sob ela, a 2ª isquemia do FDP |
+| cruciformes C1 a C3 | finas, colapsáveis; C1 logo distal à A2 | local das janelas de reparo |
+| oblíqua do polegar | falange proximal, distal à A1 | a essencial no polegar |
+| duas anulares contíguas perdidas | perda de movimento | contratura em flexão da IFP |
+!fim
+
+!questoes central=mao-0051
+conceito: O FDS tem área isquêmica sob a A2; o FDP tem duas, sob a A2 e a A4; a face palmar dos tendões nas zonas 1 e 2 é a menos irrigada.
+como: O TARO 2016 perguntou, com o mesmo enunciado repetido no acervo, sob qual polia fica a área isquêmica do superficial.
+armadilha: Responder A4 para o superficial (a A4 é a segunda zona isquêmica do profundo) ou achar que a face dorsal é a avascular.
+alerta: O Green 7 não localiza a área isquêmica sob uma polia específica (`mao-0051`); a resposta está no Campbell's Operative Orthopaedics, 15ª ed. (p. 3143), e os gabaritos oficiais foram preservados.
+!fim
+
+# O exame físico, a imagem e a lesão parcial {radar=oportunidade}
+
+## Antes da anestesia
+
+O primeiro gesto do Green é cronológico (p. 183): história e exame **antes de qualquer anestesia local ou sedação**, para não perder a lesão de nervo ou de artéria. O exame é sistemático, por camada: pele (dorsal e volar), esqueleto (deformidade angular ou rotacional significa fratura ou lesão ligamentar, que pode precisar de redução antes do exame dos tendões), tendões, nervos e vasos.
+
+## O dedo em repouso e o efeito tenodese
+
+Com os dois flexores cortados, o dedo perde o tônus flexor e fica **estendido na IFP e na IFD**, fora da cascata dos vizinhos. Na secção completa não há flexão ativa e se **perde o efeito tenodese**: normalmente, ao estender passivamente o punho, os dedos fletem sozinhos, porque os flexores ficam mais tensos; sem tendão contínuo, esse aumento de tônus não chega ao dedo (Green 7, p. 183). O Campbell descreve **hiperextensão** fora da cascata (p. 3144). O efeito tenodese é um teste passivo: serve justamente para o paciente que não coopera, como a criança, e não avalia a força ativa.
+
+## Os testes do FDS e do FDP
+
+Os dois testes isolam um tendão travando o outro (Green 7, p. 183 e 185, Fig. 6.1):
+
+- **FDS**: o examinador segura os dedos **vizinhos** em extensão completa (MCF em leve hiperextensão, IFP e IFD estendidas) e pede flexão da **IFP**. Como os FDP têm origem muscular comum, travar os vizinhos em extensão impede o FDP do dedo examinado de agir; se a IFP flete, é o FDS. A flexão ativa presente **não afasta lesão parcial**; **dor** na flexão a sugere.
+- **FDP**: dedo estendido, **falange média estabilizada** contra a mesa, flexão ativa da **IFD**.
+
+O Campbell resume: IFP estabilizada sem flexão da IFD = **FDP cortado**; MCF estabilizada sem flexão da IFP nem da IFD = **ambos cortados**; MCF do polegar estabilizada sem flexão da IF = **FPL cortado** (p. 3144, Fig. 71.3).
+
+## Nervo, artéria e imagem
+
+O exame neurológico usa **tato leve** e **discriminação de dois pontos estática**; perda de sensibilidade num dermátomo de nervo digital depois de um corte limpo é **secção do nervo até prova em contrário** (Green 7, p. 184). O vascular avalia o enchimento capilar da polpa e do leito ungueal e, se preciso, o teste de ALLEN digital; enchimento lento ou polpa murcha sugerem lesão arterial. Na imagem, a radiografia é rotina na emergência; o **ultrassom** ajuda quando a continuidade do tendão é duvidosa ou na suspeita de lesão parcial; e a fluoroscopia pode ser usada na sala (p. 185).
+
+!questoes central=mao-1525,mao-1898
+conceito: Para testar o FDS, os dedos vizinhos ficam em extensão (o que neutraliza o FDP de origem comum); flexão ativa da IFP não afasta lesão parcial; o efeito tenodese é passivo e se perde na secção completa; corte na base do polegar sem flexão da IF e com polpa dormente indica FPL e nervos digitais lesados.
+como: A USP-SP 2026 pediu a afirmação correta sobre o exame dos flexores; o ENARE Cirurgia da Mão 2025, a interpretação de um corte com vidro na base do polegar.
+armadilha: Achar que a flexão ativa da IFP descarta lesão do FDS, ou que o efeito tenodese avalia mobilidade ativa.
+!fim
+
+## A lesão parcial
+
+As lesões parciais têm três complicações: **ruptura tardia**, **aprisionamento** (o retalho prende na borda da polia) e **gatilho** (Green 7, p. 190; Campbell, p. 3154). A conduta tem corte diferente em cada livro.
+
+**O Green usa 50%.** Laceração de **mais de 50%** da área de secção recebe **núcleo e circunferencial**; de **menos de 50%**, reparar **ou desbridar** o retalho para evitar aprisionamento e gatilho. Quando o exame sugere lesão, explora-se (p. 190).
+
+**O Campbell usa 60%** e traz os dados que justificam ser menos agressivo: um tendão com **60%** cortado retém **50% ou mais** da força, e com **90%** cortado ainda retém pouco mais de **25%**; em cadáver, lacerações de **50% e 75%** só romperam com cargas maiores que as do movimento ativo; em cães, lacerações de **30% e 70%** evoluíram igual reparadas ou não; e **14 de 15** pacientes com parcial "maior que metade da largura" na zona II tiveram resultado excelente sem cirurgia (p. 3154). A razão para não suturar a parcial pequena é que a sutura também lesa o tendão: BOARDMAN e colaboradores estudaram em cães o efeito da tenorrafia sobre o deslizamento de tendões parcialmente lacerados (J Hand Surg Am 24:302-309, 1999, citado na lista do capítulo).
+
+!tabela Lesão parcial do flexor (Campbell 15, cap. 71, p. 3154, Fig. 71.25; Green 7, cap. 6, p. 190)
+| Laceração | Conduta |
+| --- | --- |
+| Green **> 50%** | núcleo + circunferencial |
+| Green **< 50%** | reparar ou desbridar o retalho |
+| Campbell **≥ 60%** | como secção completa; força em **10 a 12 semanas** |
+| Campbell **< 60%** sem gatilho | não operatório: tala e exercício |
+| Campbell **< 60%** com gatilho | **desbridar o retalho**, reparar a bainha, tala dorsal **6 a 8 semanas** |
+!fim
+
+# O momento do reparo {radar=confirmado}
+
+## Emergência, urgência e reparo de rotina
+
+O Green 7 é claro sobre o que é emergência (p. 186, 187 e 195): **só o dedo com perfusão alterada**, que precisa de reparo microvascular. Quando os **dois nervos e as duas artérias digitais** estão cortados, o reparo é de emergência, com revascularização. Fora disso, o reparo do flexor é **precoce, mas não de emergência**: o autor o faz **em até 7 dias**, e acha o reparo primário improvável depois de **6 semanas** (p. 191 e 195).
+
+Por que precoce? Porque o tempo trabalha contra (p. 187): os cotos amolecem e incham, o músculo encurta e perde excursão, a bainha colapsa e cicatriza, e a ferida fica mais difícil. Na apresentação tardia, ou quando a história é incerta, o cirurgião deve chegar preparado para um **enxerto primário** ou para um **espaçador** de silicone. GELBERMAN e colaboradores mostraram em cães que o intervalo entre lesão e reparo influi na cicatrização (J Bone Joint Surg Am 73:66-75, 1991, citado na lista do capítulo).
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3154 e 3155), usa outra régua, com nomes para cada janela: primário, primário retardado, secundário e secundário tardio. O **secundário** é indicado com esmagamento e cominuição, lesão neurovascular ou articular grave, ou perda de pele que exija retalho. Atraso de **2 a 3 dias** com ferida limpa não traz complicação; quem adiar deve **prender os cotos** aos tecidos vizinhos para não retraírem.
+
+!questoes central=mao-1102,mao-1315 relacionadas=mao-1894
+conceito: O reparo do flexor só é de emergência quando a perfusão do dedo está comprometida e exige reparo vascular; fora disso, o reparo é precoce, de preferência em até 7 dias.
+como: A PUC-SP 2020 perguntou a indicação de reparo de emergência; a USP-SP 2025, a afirmação correta sobre as lesões agudas (zona 2 sem lesão arterial reparada em até 7 dias); o ENARE Cirurgia da Mão 2025 perguntou quando tratar a lesão do FDP no canal digital.
+armadilha: Achar que toda lesão aberta, ou toda lesão com nervo cortado, é emergência; o que define a emergência é a perfusão.
+alerta: O ENARE 2025 deu "na emergência" para a lesão do FDP no canal digital (`mao-1894`); pelo Green 7 (p. 186 a 187 e 195), o reparo é precoce, em até 7 dias, e só é de emergência com perfusão comprometida. Entre as alternativas da questão, porém, era a única que não adiava nem trocava o reparo por enxerto. O gabarito oficial foi preservado.
+!fim
+
+## Os prazos em uma tabela
+
+!tabela Prazos do reparo (Campbell 15, cap. 71, p. 3154 e 3166; Green 7, cap. 6, p. 187, 191, 195, 202, 211 e 217)
 | Situação | Prazo | Fonte |
 | --- | --- | --- |
 | primário | até **12 h** (raro 24 h) | Campbell |
 | primário retardado | **24 h a 10 dias** | Campbell |
 | secundário / secundário tardio | após **10 a 14 dias** / após **4 semanas** | Campbell |
 | reparo de rotina | até **7 dias**; improvável após **6 semanas** | Green |
+| lesão negligenciada | **3 a 6 semanas** já com degeneração e cicatriz na bainha | Green, p. 202 |
+| LEDDY e PACKER I | diagnóstico e reparo em até **3 semanas** | Green, p. 191 |
+| LEDDY e PACKER II | em alguns casos, até **6 semanas** | Green, p. 187 |
 | zonas III a V, sutura direta | **3 a 4 semanas**; depois, minienxerto | Campbell |
-| FPL, sutura direta | **3 a 6 semanas** | Green |
+| FPL, sutura direta | **3 a 6 semanas**, e mais se os cotos não se afastaram | Green, p. 217 |
 | FDP isolado com FDS íntegro | após **4 semanas**, pode exigir enxerto | Green, p. 211 |
 !fim
 
-# A sutura: material, calibre e configuração {radar=confirmado}
+**O prazo depende da zona.** Nas zonas III a V, fletir o punho vence a retração; passadas **4 ou 5 semanas**, pode ser preciso um **"minienxerto"** (Campbell, p. 3166, Fig. 71.39), e o Green fala em gap de **2 a 5 cm** exigindo enxerto interposto (p. 219). Na zona II, após **1 mês**: sem cicatriz extensa, **enxerto em um tempo**; com bainha e polias destruídas, **dois tempos** (Campbell, p. 3164).
 
-**O ideal de STRICKLAND**, citado pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3145), tem seis itens: sutura fácil de colocar, nós seguros, junção lisa, **gap mínimo**, **mínima interferência na vascularização** e força suficiente durante toda a cicatrização para permitir **movimento precoce**. Os núcleos de **4, 6 e 8 fios com epitendínea** são os que melhor cumprem isso, e a pesquisa global de TANG mostrou que a maioria usa núcleo de **4 a 8 fios 3-0 ou 4-0** com epitendínea **6-0**.
+!questoes central=mao-0135
+conceito: Nas zonas proximais, a flexão do punho vence a retração e permite sutura direta por mais tempo; passadas cerca de 4 semanas, pode ser necessário um enxerto curto.
+como: Uma prova de Ortopedia perguntou até quando a ruptura na zona V pode ser reparada sem enxerto.
+armadilha: Aplicar à zona V o prazo da zona 2 ou o do FPL.
+alerta: O prazo da zona V (`mao-0135`) vem do Campbell's Operative Orthopaedics, 15ª ed. (p. 3166); o Green 7 não dá número por zona. O gabarito oficial foi preservado.
+!fim
 
-**O que dá força ao núcleo.** O Green's Operative Hand Surgery, 7ª ed. (cap. 6, p. 188), resume em três fatores: **material**, **calibre** e **número de fios que cruzam o reparo**. Fio **3-0** é mais forte que **4-0**. Alça que **trava** ("locking") é mais forte no tempo zero que alça que só **agarra** ("grasping"); a diferença é geométrica: se o componente transverso passa **superficial** ao longitudinal, prende um feixe; se passa **profundo**, não trava e corta o tendão (Fig. 6.9). A **posição do nó**, dentro ou fora do reparo, **não tem efeito independente** sobre a força, mas nó externo pode prender na bainha. As técnicas de **dois fios** (KESSLER, KESSLER modificado, TAJIMA) perdem para as **multifilamentares** (STRICKLAND, cruzada, BECKER, SAVAGE, WINTERS), mais fortes e mais resistentes ao gap inclusive às **6 semanas**; BOYER mostrou em cães que **oito fios** foram significativamente mais fortes que **quatro** de 0 a 21 dias.
+## Reparar os dois tendões ou só o profundo
 
-**Dorsal ou volar?** Núcleos **dorsais** são **58%** mais fortes, mas a tradição manda o núcleo no **terço volar** para poupar a circulação, que chega pelos vínculos dorsais (Campbell, p. 3147 e 3156). O núcleo **não deve aproximar os cotos**: para isso servem a epitendínea parcial, um aproximador ou agulhas hipodérmicas (p. 3148).
+Em geral, **reparar o FDS e o FDP é melhor** (Green 7, p. 187): o FDS dá força, independência à IFP e um leito vascularizado ao FDP, e protege a IFP contra a hiperextensão. Mas há exceções que viram questão. Se os cotos estão ruins ou insuficientes, **excisa-se o FDS e repara-se só o FDP**: o dedo fica com um tendão a menos para aderir e um sistema mais simples. Se só o FDS é reparável, faz-se **tenodese do FDP** na falange média ou **artrodese da IFD**. E às vezes se excisa **uma das fitas** do FDS para reduzir o volume dentro da bainha (p. 187, 192 e 195). WEIDRICH publicou reparos agudos do FDP na zona 2 com excisão do FDS (Atlas Hand Clin 5:131-148, 2000, citado na lista do capítulo).
 
-**Comparações que viram questão** (Campbell, p. 3145 e 3146): ZOBITZ não achou diferença entre KESSLER, KESSLER modificado, SAVAGE, LEE, BECKER aumentado e TSUGE no gap de **1,5 mm**; a **cruzada de quatro fios** venceu KESSLER, STRICKLAND e SAVAGE; só o **BECKER** aguentou as forças do movimento ativo, com mais atrito na bainha. A sutura em **duplo ângulo reto** une sem encurtar, proximal à palma (p. 3149.e2).
+!questoes central=mao-0862
+conceito: Na zona 2, a regra é reparar os dois tendões; excisar o FDS fica para cotos ruins, e o calibre e o número de fios contam juntos para a força do reparo.
+como: A UFG 2017 trouxe quatro afirmativas sobre o reparo na zona II.
+armadilha: Achar que a força depende só do número de passadas e não do calibre, ou que a contratura por encurtamento de mais de 1 cm se compensa na fisioterapia.
+alerta: A UFG 2017 deu como correta a frase "o flexor superficial deve ser sacrificado para melhorar o deslizamento do flexor profundo"; o Green 7 (p. 187) diz que reparar os dois em geral é melhor e que a excisão do FDS é exceção, para cotos ruins ou insuficientes. As outras alternativas contrariam o livro de forma mais clara (o calibre conta, p. 188; encurtar mais de 1 cm causa quadriga, p. 187). O gabarito oficial foi preservado.
+!fim
 
-**O material.** O **aço** é o mais resistente, mas corta o tendão; **Supramid e náilon** mantêm a força mais tempo; na prática, usa-se **poliéster trançado** (Campbell, p. 3145).
+# A sutura: biomecânica do núcleo e da epitendínea {radar=confirmado}
+
+## O ideal de STRICKLAND
+
+O ideal de STRICKLAND, citado pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3145), tem seis itens: sutura fácil de colocar, nós seguros, junção lisa, **gap mínimo**, **mínima interferência na vascularização** e força suficiente durante toda a cicatrização para permitir **movimento precoce**. Os núcleos de **4, 6 e 8 fios com epitendínea** são os que melhor cumprem isso, e a pesquisa global de TANG mostrou que a maioria dos cirurgiões usa núcleo de **4 a 8 fios 3-0 ou 4-0** com epitendínea **6-0**. STRICKLAND resumiu os fundamentos em duas revisões no Journal of the American Academy of Orthopaedic Surgeons (J Am Acad Orthop Surg 3:44-54 e 3:55-62, 1995, citadas na lista do capítulo).
+
+## O que dá força ao núcleo
+
+O Green 7 (p. 188) resume a resistência do núcleo em três fatores: **material**, **calibre** e **número de fios que cruzam o reparo**. Cada fio que atravessa o foco divide a carga; mais fios, menos carga em cada um, menos chance de algum romper ou rasgar o tendão. Fio **3-0** é mais forte que **4-0**.
+
+As técnicas se dividem em dois grupos que a prova cobra como lista:
+
+- **Duas passadas** (dois fios cruzando o reparo): **KESSLER**, **KESSLER modificado** e **TAJIMA**.
+- **Multifilamentares**: **STRICKLAND**, **cruzada** ("cruciate"), **BECKER**, **SAVAGE** e **WINTERS**.
+
+As multifilamentares são **mais fortes** e **mais resistentes ao gap**, inclusive **6 semanas** depois do reparo (p. 188). WINTERS, GELBERMAN, WOO e colaboradores mostraram em cães o efeito dos múltiplos fios sobre força e excursão (J Hand Surg Am 23:97-104, 1998; PMID 9523962), e BOYER e colaboradores mostraram que **oito fios** foram significativamente mais fortes que **quatro** de 0 a 21 dias (Fig. 6.8). BECKER, por sua vez, publicou o reparo sem imobilização que leva o seu nome (Hand 10:37-47, 1978; PMID 101426), e SANDOW e McMAHON descreveram o reparo de seis fios com uma só pega cruzada, o "SAVAGE modificado" (Atlas Hand Clin 1:41-64, 1996, citado na lista do capítulo).
+
+O Campbell traz as comparações que viram questão (p. 3145 e 3146): ZOBITZ não achou diferença entre KESSLER, KESSLER modificado, SAVAGE, LEE, BECKER aumentado e TSUGE no gap de **1,5 mm**; a **cruzada de quatro fios** venceu KESSLER, STRICKLAND e SAVAGE; só o **BECKER** aguentou as forças do movimento ativo, com mais atrito na bainha.
+
+!questoes central=mao-0905 treino=mao-2193,mao-1792,mao-2830,mao-2848
+conceito: A força do núcleo depende de material, calibre e número de fios que cruzam o reparo; as técnicas multifilamentares são mais fortes que as de duas passadas desde o início e continuam mais resistentes ao gap às 6 semanas.
+como: A UFG 2019 perguntou qual técnica confere maior resistência à separação dos cotos; o simulado da SBCM 2023 comparou as multifilamentares às de dois fios; o do SIMÃO 2026 pediu a estratégia de sutura para mobilização precoce.
+armadilha: Achar que a vantagem das multifilamentares some com a cicatrização, ou que nós volumosos no foco aumentam a força (o local do nó não tem efeito independente e o volume aumenta o atrito).
+alerta: Na UFG 2019, entre KESSLER, epitendínea contínua, PULVERTAFT e MASON-ALLEN, o gabarito é PULVERTAFT, que o Green 7 (p. 208) descreve como mais forte que as suturas término-terminais; a questão compara uma junção entrelaçada com núcleos término-terminais. O gabarito oficial foi preservado.
+!fim
+
+## Alça que trava contra alça que agarra
+
+A alça que **trava** ("locking") é mais forte no tempo zero que a que só **agarra** ("grasping"), e mais travas ou mais pegas dão mais força (Green 7, p. 188). A diferença é geométrica (Fig. 6.9, p. 189): se o componente **transverso** da alça passa **superficial** ao componente longitudinal, ele abraça e prende um feixe de fibras, e a alça trava; se passa **profundo**, não prende nada, e sob carga o fio corta o tendão como um arame de queijo. HATANAKA, ZHANG e MANSKE compararam in vivo as duas formas com mobilização passiva (J Hand Surg Am 25:260-269, 2000, citado na lista do capítulo), e BARRIE e colaboradores estudaram o papel dos múltiplos fios e das travas no gap sob carga cíclica (J Hand Surg Am 25:714-720, 2000, citado na lista do capítulo).
+
+## O nó: dentro ou fora
+
+O nó dentro ou fora do reparo **não tem efeito independente** sobre a resistência (Green 7, p. 188). O que pesa é o volume: muito fio no foco aumenta o volume do reparo e o **trabalho de flexão** (a energia que o músculo gasta para fazer o tendão deslizar), e o nó externo pode atritar ou prender na borda da polia. AOKI, MANSKE e colaboradores mediram o trabalho de flexão com vários métodos em cadáver (J Hand Surg Br 20:310-313, 1995, citado na lista do capítulo).
+
+## Dorsal ou volar
+
+Núcleos **dorsais** são **58%** mais fortes, mas a tradição manda o núcleo no **terço volar** para poupar a circulação, que chega pelos vínculos dorsais (Campbell, p. 3147 e 3156). O núcleo **não deve aproximar os cotos**: para isso servem a epitendínea parcial, um aproximador ou agulhas hipodérmicas transfixando o tendão (p. 3148). O Green usa uma agulha 25 G que transfixa os cotos e os segura em posição (p. 192).
+
+## A epitendínea
+
+A sutura **circunferencial** (epitendínea) nasceu para **alisar** o reparo, sepultando as pontas e reduzindo o atrito, mas **aumenta a força** de forma importante, e quanto mais **profunda** a pega, mais forte (DIAO, HARIHARAN, SOEJIMA e colaboradores, J Hand Surg Am 21:234-239, 1996; PMID 8683052). Mesmo assim, ela é **adjunto do núcleo**, não substituto (Green 7, p. 188). Colocá-la primeiro na face dorsal ajuda a orientar e alinhar os cotos. WADE, WETHERELL e AMIS mostraram o ganho de força com a sutura periférica de HALSTED (J Hand Surg Br 14:232-235, 1989, citado na lista do capítulo).
+
+O Green desenha as duas formas circunferenciais: a **contínua simples** e a **cross-stitch de SILFVERSKIÖLD** (Fig. 6.15, p. 194). SILFVERSKIÖLD e colaboradores publicaram dois métodos novos de reparo em 1993 (J Hand Surg Am 18:58-65, 1993; PMID 8423320) e o resultado clínico com mobilização precoce em 1994 (J Hand Surg Am 19:53-60; PMID 8169369). É essa cross-stitch, de poliéster trançado 6-0, que o Campbell achou **117%** mais forte que o KESSLER modificado com epitendínea comum (p. 3146, Fig. 71.8). O Green não dá número; o Campbell diz que a epitendínea contínua **suporta 50% da carga de falha** (p. 3147). O autor do Green usa polipropileno **6-0** contínuo, profundo, não travado, começando num canto volar para esconder o nó, e dispensa a epitendínea de rotina nas zonas 3 a 5, onde o atrito na bainha não existe (p. 194).
 
 !tabela Calibre e configuração em números (Campbell 15, cap. 71, p. 3145 a 3148; Green 7, cap. 6, p. 188)
 | Dado | Número |
@@ -212,67 +430,195 @@ Os dois livros usam réguas diferentes.
 | 8 fios contra 4 fios (BOYER, cães) | mais fortes de **0 a 21 dias** |
 !fim
 
-**A epitendínea** nasceu para **alisar**, mas **aumenta a força** (DIAO) e segue como **complemento** do núcleo (Green, p. 188). O Green desenha as duas formas circunferenciais: a **contínua simples** e a **cross-stitch de SILFVERSKIÖLD** (Fig. 6.15, p. 194); é essa cross-stitch, de poliéster trançado 6-0, que o Campbell achou **117%** mais forte que o KESSLER modificado com epitendínea comum (p. 3146, Fig. 71.8). O Green não dá número; o Campbell diz que ela **suporta 50% da carga de falha** e reduz o volume (p. 3147). O Green usa polipropileno **6-0** contínuo, começando num canto volar para esconder o nó, e dispensa a epitendínea nas zonas 3 a 5 (p. 194).
-
-**Diâmetros diferentes.** Para unir um tendão de **pequeno diâmetro a um de grande diâmetro**, a técnica é a **trama de PULVERTAFT**, em "boca de peixe" (Campbell, p. 3150, Fig. 71.15). O Green a prefere como junção proximal nas zonas 3 a 5, porque é **mais forte que as término-terminais** e permite ajustar a tensão já no primeiro passe; GABUZDA viu a força aumentar com o número de tramas e recomendou **4 ou 5**, e o autor usa **pelo menos duas** (p. 208).
-
-!questoes central=mao-0607
-conceito: Tendões de diâmetros diferentes se unem pela trama de PULVERTAFT, mais forte que as suturas término-terminais e com ajuste fino da tensão; mais tramas, mais força.
-como: O TARO 2007 perguntou o método mais bem indicado para suturar flexores de diâmetros diferentes.
-armadilha: Escolher KESSLER ou BUNNELL, que são núcleos término-terminais para cotos de calibre semelhante.
-alerta: O acervo não registra o gabarito oficial de `mao-0607`; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3150) responde PULVERTAFT.
+!questoes central=mao-0002,mao-0541,mao-1526 relacionadas=mao-0402,mao-0812 treino=mao-2594
+conceito: A epitendínea contínua alisa o reparo e aumenta muito a força (mais quanto mais profunda), mas é complemento do núcleo; a cross-stitch de SILFVERSKIÖLD é a epitendínea mais forte; o núcleo cruzado de quatro fios com reforço epitendíneo é a configuração mais usada nas questões de imagem.
+como: O TARO 2020 perguntou quanto a epitendínea contínua aumenta a resistência; provas de Ortopedia, da SBOT-SP, da USP-SP 2026 e do INTO 2026 pediram a técnica numa imagem; o simulado pediu a afirmação correta sobre a técnica de reparo.
+armadilha: Achar que a epitendínea dispensa o núcleo, ou confundir o nome da técnica pela figura (TAJIMA e KESSLER têm duas passadas; a cruzada tem quatro).
+alerta: Para a epitendínea (`mao-0002`), o Green 7 não dá número e o Campbell's Operative Orthopaedics, 15ª ed. (p. 3147), dá 50% da carga de falha. As questões de imagem (`mao-0402`, `mao-0812`) dependem da figura da prova; o Green 7 não descreve uma sutura com o nome de GELBERMAN. Os gabaritos oficiais foram preservados.
 !fim
 
-# As lesões parciais {radar=oportunidade}
+## O gap de 3 mm
 
-As parciais têm três complicações: **ruptura tardia**, **aprisionamento** e **gatilho** (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 190; Campbell's Operative Orthopaedics, 15ª ed., cap. 71, p. 3154). A conduta, porém, tem corte diferente em cada livro.
+O gap é a separação entre os cotos que aparece nas primeiras semanas. O estudo canino de GELBERMAN, BOYER, BRODT e colaboradores (J Bone Joint Surg Am 81:975-982, 1999; PMID 10428129) deu o número que a prova usa (Green 7, p. 188 e 189, Fig. 6.10): reparos **sem gap ou com gap menor que 3 mm** ganham força entre a 3ª e a **6ª semana**; com gap **maior que 3 mm**, **não ganham força** no mesmo período. O gap precoce também se associa a mais ruptura depois da 3ª semana. A explicação é biológica: o espaço entre os cotos se enche de tecido de granulação desorganizado, que não ganha resistência no ritmo do colágeno alinhado do reparo justo. SILFVERSKIÖLD e MAY já tinham medido o gap clínico na zona II com mobilização controlada (Scand J Plast Reconstr Surg Hand Surg 27:263-268, 1993, citado na lista do capítulo).
 
-**O Green usa 50%.** Laceração de **mais de 50%** da área de secção recebe **núcleo e circunferencial**; de **menos de 50%**, reparar **ou desbridar** o retalho para evitar aprisionamento e gatilho.
+## Calibres diferentes: a junção de PULVERTAFT
 
-**O Campbell usa 60%** e traz os dados que justificam ser menos agressivo: um tendão com **60%** cortado retém **50% ou mais** da força, e com **90%** cortado ainda retém pouco mais de **25%**; em cadáver, lacerações de **50% e 75%** só romperam com cargas maiores que as do movimento ativo; em cães, lacerações de **30% e 70%** evoluíram igual reparadas ou não, sugerindo que até **70%** poderia ficar sem reparo; e **14 de 15** pacientes com parcial "maior que metade da largura" na zona II tiveram resultado excelente sem cirurgia (p. 3154).
+Para unir um tendão de **pequeno diâmetro a um de grande diâmetro**, a técnica é a **trama de PULVERTAFT** (Campbell, p. 3150, Fig. 71.15): o tendão menor atravessa o maior por fendas sucessivas, em planos alternados, e a ponta do maior é aparada em "**boca de peixe**" que envolve a junção. O Green a prefere como junção proximal de enxertos e transferências nas **zonas 3 a 5**, porque é **mais forte que as suturas término-terminais** e permite **ajustar a tensão já no primeiro passe** (p. 208). GABUZDA, LOVALLO e NOWAK mostraram que a força aumenta com o número de tramas e recomendaram **4 ou 5** (J Hand Surg Br 19:397-400, 1994; PMID 8077837); o autor do Green usa **pelo menos duas** (p. 208).
 
-!tabela Lesão parcial do flexor: algoritmo (Campbell 15, cap. 71, p. 3154, Fig. 71.25; Green 7, cap. 6, p. 190)
-| Laceração | Conduta |
-| --- | --- |
-| Campbell **≥ 60%** | como secção completa: núcleo, superfície com náilon 6-0 contínuo, bainha reparada; força em **10 a 12 semanas** |
-| Campbell **< 60%** sem gatilho | não operatório: tala e exercício |
-| Campbell **< 60%** com gatilho | **desbridar o retalho**, reparar a bainha, tala dorsal **6 a 8 semanas** |
-| Green **> 50%** | núcleo + circunferencial |
-| Green **< 50%** | reparar ou desbridar |
+!questoes central=mao-0607,mao-0591,mao-0769,mao-0973 treino=mao-2625
+conceito: Tendões de diâmetros diferentes se unem pela trama de PULVERTAFT: o menor atravessa o maior, que termina em boca de peixe; é mais forte que as término-terminais, permite ajustar a tensão no primeiro passe e fica fora da bainha, nas zonas 3 a 5.
+como: O TARO 2007 e o TARO 2013 perguntaram a sutura para diâmetros diferentes; o INTO 2023 repetiu a pergunta com cinco epônimos; a UFG 2020 pediu a descrição correta da técnica; o simulado da SBCM 2024, a técnica e as zonas preferidas pelo Green.
+armadilha: Escolher KESSLER, TAJIMA ou BUNNELL, que são núcleos término-terminais para cotos de calibre semelhante, ou KLEINERT, que é reabilitação.
+alerta: O acervo não registra o gabarito oficial de `mao-0607`; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3150), e o Green 7 (p. 208) respondem PULVERTAFT.
 !fim
 
-# A zona 1 e a avulsão do profundo em detalhe {radar=confirmado}
+# A cicatrização do tendão {radar=confirmado}
 
-**A regra do 1 cm tem duas leituras.** O Green's Operative Hand Surgery, 7ª ed. (cap. 6, p. 187 e 191), mede o **coto distal**: com **menos de 1 cm**, avança-se o FDP e reinsere-se no osso (âncoras ou pull-out com botão); com **pelo menos 1 cm**, faz-se **tenorrafia**, porque encurtar o FDP mais de 1 cm pode causar **quadriga**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3156), mede a **distância de avanço**: o FDP pode ser suturado ao coto distal ou **avançado e inserido** na falange quando a distância é de **1 cm ou menos**, e esse centímetro inclui o tendão excisado, o "enrugamento" e o trecho inserido no osso. Avançar demais deixa o dedo mais fletido que os vizinhos e quebra a cascata. O termo quadriga vem do latim **quadri** (quatro) e **jungere** (atrelar), o carro romano de quatro cavalos lado a lado (Green, p. 187).
+## As três fases
 
-**A reinserção.** O **pull-out** tradicional passa o fio do coto proximal pela falange distal, matriz e unha e o amarra sobre a unha; o Green o retira em cerca de **6 semanas**, o Campbell em **3 a 4 semanas**, e prefere o pull-out **anterógrado**, porque o retrógrado de BUNNELL traciona o tendão e pode separá-lo do osso; o fio sai pela ponta, logo palmar à unha, ou distal à lúnula, para não lesar o leito (p. 3152 e 3153). A **âncora** é tão eficaz quanto o pull-out e não tem as complicações ungueais: **duas âncoras**, de distal-volar para proximal-dorsal, na parte mais grossa da falange (Fig. 71.24). Em qualquer método o coto assenta na **pegada** ("footprint") da falange distal, e reparos de **dois fios** podem ser fracos para movimento ativo precoce (Green, p. 191).
+O Green 7 (p. 189) descreve três fases, sem prazo: **inflamatória**, **reparação ativa** (fibroblástica) e **remodelação**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3143), dá os números: **inflamatória 48 a 72 horas**, **fibroblástica 5 dias a 4 semanas**, **remodelação 4 semanas a 3,5 meses**. A zona de cerca de **1 cm** em volta do reparo é a mais ativa; cedo aumentam a expressão de colágeno tipo I (RNA mensageiro e proteína), a fibronectina e as integrinas α5β1 e αvβ3 (p. 189). GELBERMAN, AMIEL e HARWOOD mostraram a expressão do procolágeno tipo I nas fases iniciais (J Hand Surg Am 17:551-558, 1992, citado na lista do capítulo).
 
-**O avanço de WAGNER** (Campbell, p. 3166, Fig. 71.40) retira **no máximo 1 cm** de tendão, passa-o pela bifurcação do FDS e o insere no coto fendido, com tala de punho a **45 graus** e MF a **60 a 70 graus**.
+## Intrínseca contra extrínseca
 
-**LEDDY e PACKER nas duas fontes.** O resumo já trouxe os tipos; faltam as divergências. O Green descreve os três tipos originais e acrescenta um **tipo IV**, descrito depois: **fratura e avulsão do tendão do fragmento**, com o coto na bainha ou na palma, confirmado por **ultrassom ou RM**; fixa-se a fratura primeiro e depois se avança o tendão, e o prognóstico é pior (p. 187). O Campbell só descreve os tipos 1 a 3 e diz que o tendão solto do fragmento **é tratado como tipo 1** (p. 3164). No tipo 3, o fragmento grande impede a retração além da **borda distal da A4** e é fixado com fio de KIRSCHNER ou miniparafuso.
+Há dois mecanismos de reparo. O **extrínseco** traz células de fora, da bainha e dos tecidos vizinhos, e chega com as aderências; o **intrínseco** vem das células do próprio tendão (epitendão e endotendão). LUNDBORG mostrou a cicatrização intrínseca sem aderência (Hand 8:235-238, 1976; PMID 976821), e LUNDBORG e RANK a reproduziram com nutrição só pelo líquido sinovial (J Hand Surg Am 3:21-31, 1978, citado na lista do capítulo). O Campbell (p. 3143) diz que o extrínseco parece **dominar as aderências**, que aderência extensa exige **lesão do tendão + lesão da bainha + imobilização**, e que nenhuma barreira antiaderente se mostrou confiável.
 
-Os **prazos** também divergem. Para o tipo I, o Green fala em reparo **urgente**, com diagnóstico e tratamento **até 3 semanas**; o Campbell recomenda reinserção se detectado em **7 a 10 dias**, porque depois o coto enruga e amolece. No tipo 1 do Campbell o coto fica na palma **preso pela origem do lumbrical**; abre-se a bainha distal à A2 e, se o coto não está ali, está na palma. Para o tipo II, o Green aceita reparo em alguns casos **6 semanas** depois; o Campbell cita reparos feitos **meses** depois, graças ao **vínculo longo** íntegro. Como a radiografia não mostra onde está o tendão, o Green recomenda **reparo precoce de todas as avulsões** (p. 188).
+O que faz o tendão escolher o caminho intrínseco é o movimento. O Campbell (p. 3143) diz que, em experimentos, a **tensão cíclica** aplicada ao tendão em cicatrização **estimula a resposta intrínseca** mais que a ausência de tensão. WOO, GELBERMAN e colaboradores mostraram a importância da mobilização passiva controlada para a força do reparo (Acta Orthop Scand 52:615-622, 1981, citado na lista do capítulo).
 
-**Quem rompe.** O mais avulsionado em atletas é o **FDP do anular**, sobretudo em **homens de 20 a 30 anos**; às vezes a queixa é só uma **massa na palma** (Campbell, p. 3163).
-
-**O FDP crônico com FDS íntegro.** A maioria dos pacientes com FDS funcionante **se adapta bem** e pode não precisar de tratamento, sobretudo com IFD estável; o enxerto arrisca piorar o que funciona (Green, p. 211). Com IFD instável ou pegada fraca, **tenodese ou artrodese** da IFD. O enxerto pelo FDS íntegro fica para o **jovem** com articulações flexíveis e necessidade real da IFD; o Green o acha mais útil no **lado ulnar** (pegada de força), enquanto o Campbell o recomenda no **indicador e médio** de crianças e adultos jovens, raramente no anular e mínimo, com resultado imprevisível (p. 3156 e 3166). O Box 71.1 do Campbell define os candidatos: **10 a 21 anos**, muito motivados, músicos ou técnicos. **Nunca** se remove um FDS íntegro para passar o enxerto; se o enxerto não passa, retira-se **uma fita** do FDS (HARRISON), e o enxerto deve ser fino (palmar longo, extensor do quinto dedo ou plantar; Green, p. 212 e 214).
-
-**A tenodese** (Campbell, p. 3179, Fig. 71.54 e 71.55) é útil quando o FDP está lesado, **o enxerto é impossível** e a ponta do dedo serve mais parcialmente fletida e estável, em geral no **indicador**. Exige coto distal do FDP longo o bastante para ancorar proximal à IFD; a IFD é posta a **30 graus**, com fio de KIRSCHNER oblíquo e pull-out na falange média.
-
-!questoes central=mao-0650
-conceito: No FDP avulsionado sem reinserção possível, a tenodese da IFD está indicada quando o enxerto é impossível e a ponta do dedo é mais útil parcialmente fletida e estável.
-como: O TARO 2006 afirmou que, no arrancamento do flexor profundo, a tenodese está indicada na impossibilidade de enxerto.
-armadilha: Achar que todo FDP crônico precisa de enxerto; com FDS íntegro, observar, tenodese e artrodese são as regras.
-alerta: O acervo não registra o gabarito oficial de `mao-0650`; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3179) sustenta a afirmação.
+!questoes central=mao-0091,mao-0906 treino=mao-2595
+conceito: A tensão cíclica estimula a resposta intrínseca da cicatrização, e a mobilização gera a excursão que evita aderências; a força do reparo cai nos primeiros 10 dias, porque o tendão amolece em volta dos fios antes de o colágeno novo dar resistência.
+como: Uma prova de Ortopedia perguntou o que estimula a resposta intrínseca e o que reduz as aderências; a UFG 2019, o que os estudos da biologia do reparo evidenciam; o simulado, a afirmação correta sobre cicatrização e reabilitação.
+armadilha: Inverter a ordem (mobilização para a resposta intrínseca, tensão para as aderências) ou achar que a imobilização protege o reparo sem custo.
+alerta: O Green 7 não fala em tensão cíclica; a base é o Campbell's Operative Orthopaedics, 15ª ed. (p. 3143 e 3148). O Green (p. 189 e 195) põe o limite: aumentar a força aplicada não acelera o ganho de resistência. Os gabaritos oficiais foram preservados.
 !fim
 
-# A zona 2, as zonas proximais e o polegar {radar=oportunidade}
+## Força, excursão e aderência
 
-**Zona 2.** O reparo primário é o preferido (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 183) e dá função satisfatória em **80% ou mais**, melhor nos jovens que nos **maiores de 40 anos**; quando falha, é por **aderências nas polias** (Campbell's Operative Orthopaedics, 15ª ed., cap. 71, p. 3156). O Green repara **FDS e FDP**; com cotos ruins, só o FDP; se só o FDS é reparável, **tenodese do FDP** ou **artrodese da IFD** (p. 187). O coto proximal é buscado por ordenha, **sonda pediátrica nº 8** (SOURMELIS e MCGROUTHER) ou contraincisão, **nunca** por passes cegos de pinça (p. 192). O Campbell pede núcleo de **quatro ou mais fios** com nós sepultados; se só o **FDS** foi cortado, o reparo secundário é **desnecessário** (p. 3157 e 3166).
+A **aderência com rigidez** é uma das complicações mais comuns do reparo (Green 7, p. 189). O que a previne é a **excursão**, não a força. Em cães, uma excursão passiva de **1,6 mm ou mais** evitou aderência clinicamente relevante (p. 189). E BOYER, GELBERMAN, BURNS e colaboradores (J Bone Joint Surg Am 83:891-899, 2001; PMID 11407798) compararam em cães duas forças de reabilitação, **5 N e 17 N**: a força maior **não acelerou** o ganho de resistência nem de rigidez do reparo, e arriscou gap. A conclusão do Green (p. 195) é a frase que resume a reabilitação: a força aplicada ao reparo serve para gerar **pequena excursão proximal**, não para acelerar a cicatrização; força excessiva só leva a gap ou ruptura.
 
-**Zonas 3 a 5.** Mesmos princípios, **menos aderências** e **prognóstico melhor** (Green, p. 190). A ordem no antebraço diverge: Green, **artérias, tendões e nervos por último** (p. 194); Campbell, tendões primeiro (p. 3161.e1). Na **zona III**, **não suturar os lumbricais** (causa **lumbrical plus**; p. 3160). Na **zona IV**, abrindo todo o ligamento transverso, o punho não passa da **neutra** (corda de arco sob a pele); alternativa: abrir em **Z**. O **palmar longo** isolado **não precisa** de reparo, e entre vários tendões a prioridade é dos **profundos** (p. 3161 e 3166).
+A força do reparo **cai nos primeiros 10 dias** e só em **10 a 12 semanas** admite força ativa considerável (Campbell, p. 3148). Pegar o tendão pelo **endotendão**, nunca pela superfície, é parte da prevenção: cada lesão do epitendão gera uma aderência (Green 7, p. 192 e 224).
 
-**O FPL.** Na laceração intrassinovial, o coto proximal retrai com frequência; aqui as fontes divergem: o Green diz que ele vai **profundamente à musculatura tenar** e, se passou da borda distal dela, é buscado no **túnel do carpo ou antebraço distal** (p. 190); o Campbell diz que na zona III ele retrai **até perto do punho** e é buscado **entre a artéria radial e o flexor radial do carpo** (p. 3165). Na zona I, divisão a até **1 cm** da inserção permite sutura ou avanço ao osso; mais proximal, avanço com **alongamento em Z** proximal ao punho. Na zona II, evita-se o reparo **oposto à MF**, onde o tendão adere à polia.
+## O que vem por aí: cola, vitamina C e anti-inflamatório
+
+O Green 7 lista adjuvantes ainda experimentais (p. 189 e 190). A **cola de fibrina** em coelhos deu mais movimento com 3 semanas e igual com 8 (HE e colaboradores, J Plast Surg Hand Surg 47:509-512, 2013, citado na lista do capítulo), mas em cadáver aumentou a resistência ao deslizamento mais que a epitendínea. A **vitamina C** local reduziu as aderências a 6 semanas num modelo em galinhas (HUNG, FU, LEE e colaboradores, J Bone Joint Surg Am 95:e41, 2013; PMID 23553304); é antioxidante e cofator da síntese de colágeno, e por isso aparece como a vitamina do reparo tendíneo. Na clínica, ROUHANI e colaboradores deram **ibuprofeno 2.400 mg/dia** depois do reparo na zona 2 e obtiveram melhor arco de movimento, sem complicações (J Am Sci 9:98-100, 2013, citado na lista do capítulo; Green 7, p. 198). Agentes como 5-fluorouracila e ácido hialurônico seguem no laboratório (p. 200 e 225).
+
+!questoes central=mao-1053
+conceito: A vitamina C local reduziu as aderências do flexor em modelo animal; é a vitamina associada a melhores resultados no reparo tendíneo.
+como: A PUC-SP 2019 perguntou qual vitamina se relaciona a melhores resultados no reparo dos flexores.
+armadilha: Escolher a vitamina D ou a E por associação com osso ou com antioxidação de membrana.
+alerta: O dado do Green 7 (p. 190) é experimental, em galinhas (HUNG, 2013); não há recomendação clínica de rotina. O gabarito oficial foi preservado.
+!fim
+
+# A zona 1 e a avulsão do profundo {radar=confirmado}
+
+## A regra do 1 cm
+
+A zona 1 é a do FDP sozinho, distal à inserção do FDS, e inclui a avulsão da base da falange distal (Green 7, p. 187). A decisão entre reinserir no osso e suturar tendão com tendão depende do **coto distal**:
+
+- Coto distal **menor que 1 cm**: **avanço** do FDP e **reinserção no osso** (âncoras ou pull-out com botão).
+- Coto distal de **1 cm ou mais**: **tenorrafia**, tendão com tendão.
+
+O motivo é a **quadriga**: encurtar o FDP mais de 1 cm traciona o ventre comum dos FDP e tira flexão dos vizinhos (p. 187 e 191). O termo vem do latim **quadri** (quatro) e **jungere** (atrelar): o carro romano puxado por quatro cavalos lado a lado, conduzidos por uma só rédea. Se um cavalo é amarrado curto, os outros não avançam.
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3156), mede de outro jeito, pela **distância de avanço**: o FDP pode ser avançado e inserido na falange quando a distância é de **1 cm ou menos**, e esse centímetro inclui o tendão excisado, o "enrugamento" e o trecho inserido no osso. Avançar demais deixa o dedo mais fletido que os vizinhos e quebra a cascata. O **avanço de WAGNER** (Campbell, p. 3166, Fig. 71.40) retira **no máximo 1 cm** de tendão, passa-o pela bifurcação do FDS e o insere no coto fendido.
+
+!questoes central=mao-0152 treino=mao-1942
+conceito: Na zona 1, coto distal de 1 cm ou mais pede tenorrafia; coto menor, avanço e reinserção no osso; avançar o FDP mais de 1 cm causa quadriga.
+como: O TEOT 2023 perguntou quando a zona I pede sutura primária direta; o simulado do SIMÃO 2023, quando o coto indica tenorrafia.
+armadilha: Inverter a regra (reinserir quando o coto é longo) ou aplicá-la ao FDS, que não existe na zona 1.
+alerta: O TEOT 2023 fala em "intervalo entre os cotos do flexor profundo menor ou igual a 1 cm", leitura próxima da régua do Campbell (distância de avanço, p. 3156); o Green 7 (p. 187) mede o comprimento do coto distal. O gabarito oficial foi preservado.
+!fim
+
+## A reinserção no osso
+
+O tendão é reinserido de duas formas (Green 7, p. 187 e 188):
+
+- **Pull-out** tradicional: o fio do coto passa pela falange distal, pela matriz e pela unha e é amarrado sobre um botão na unha, retirado com cerca de **6 semanas**.
+- **Suturas internas** (âncoras), que permitem um núcleo de quatro fios e evitam as complicações ungueais.
+
+Em qualquer método, o essencial é **assentar o coto direto na pegada ("footprint")** da falange distal ao dar o nó. BOYER e colaboradores analisaram ex vivo a biomecânica da reinserção do FDP no osso (J Hand Surg Am 27:594-598, 2002, citado na lista do capítulo), e LEE e colaboradores compararam quatro técnicas (J Hand Surg Am 36:1604-1609, 2011, citado na lista do capítulo).
+
+A técnica do autor na zona 1 (p. 190): decúbito dorsal, garrote braquial a **100 mmHg acima da sistólica**, cefalosporina de primeira geração; incisão **mediolateral** extensível, com BRUNER proximal e distal se preciso. Se o coto, alargado pela retração, **não passa sob a A4**: **dilatação sequencial** com sondas cervicais pediátricas, aparar as bordas, puxar por um cateter de borracha vermelha cortado, ou **abrir ("ventilar") parte da A4**. LIEBER e TANG mostraram que a A4 pode ser parcialmente dividida sem prejuízo no trabalho de flexão nem no resultado. Uma **âncora no centro** da falange distal e duas suturas de canto 5-0 de polipropileno no manguito osteoperiosteal completam a fixação, com núcleo tipo BECKER. Se a falange é pequena demais para âncora, faz-se o **pull-out** (KESSLER modificado com polipropileno 3-0), com as agulhas de KEITH saindo pela unha **distal à lúnula**, além da matriz germinativa, para não deformar a unha; o botão fica 6 semanas. O Campbell retira o pull-out com **3 a 4 semanas** e prefere a passagem **anterógrada**, porque o retrógrado de BUNNELL traciona o tendão e pode separá-lo do osso (p. 3152 e 3153); com âncoras, usa **duas**, de distal-volar para proximal-dorsal, na parte mais grossa da falange (Fig. 71.24).
+
+Os pontos críticos do autor (p. 191): reparos de **duas passadas** podem ser insuficientes para movimento ativo precoce; tala dorsal com punho e MCF fletidos e IFP e IFD a 0 a 10 graus; retorno pleno em **4 a 6 meses**.
+
+!questoes central=mao-0463 treino=mao-2858,mao-2861
+conceito: A fratura de "jersey" é a avulsão do FDP da base volar da falange distal, e o tratamento é reinserir o FDP (com fixação do fragmento quando ele é grande).
+como: O Einstein 2026 perguntou o tratamento das fraturas de "jersey".
+armadilha: Confundir com o dedo em martelo, que é avulsão do extensor e se trata com tala em extensão.
+!fim
+
+## LEDDY e PACKER: onde o coto para e por quê
+
+A avulsão fechada do FDP acontece quando o dedo fletido é estendido à força, o clássico jogador que agarra a camisa do adversário. **LEDDY e PACKER** a classificaram pelo nível de retração do coto (LEDDY e PACKER, J Hand Surg Am 2:66-69, 1977; PMID 839056). A classificação é lógica: o coto retrai até onde a primeira estrutura o segura, e o que o segura também define se ele ainda tem sangue (Green 7, p. 187, Fig. 6.6).
+
+- **Tipo I**: nada segura o coto; os dois vínculos se rompem e ele retrai até a **palma**. Sem vínculo, sem perfusão; enrolado na palma, também perde o banho sinovial. Por isso é **urgente**: diagnóstico e reparo em até **3 semanas** (p. 191), antes que o tendão amoleça, encurte e a bainha colapse.
+- **Tipo II**: o **vínculo longo do profundo** segura o coto na altura da **IFP**, dentro da bainha. Parte da irrigação está preservada, e em alguns casos o reparo primário ainda é possível até **6 semanas**.
+- **Tipo III**: um **grande fragmento ósseo** fica preso ao coto e para na **borda distal da A4**, que funciona como uma porta estreita. Trata-se fixando o fragmento com fio de KIRSCHNER ou miniparafuso.
+- **Tipo IV**, descrito depois (TRUMBLE, VEDDER e BENIRSCHKE, "Misleading fractures after profundus tendon avulsions", J Hand Surg Am 17:902-906, 1992; PMID 1401803): **fratura e avulsão do tendão do próprio fragmento**. O fragmento fica na falange (ou na A4) e engana: parece um tipo III, mas o tendão se soltou e pode estar na bainha **ou na palma**. Confirma-se com **ultrassom ou RM**. Fixa-se a fratura **primeiro** e depois se avança e reinsere o tendão; fragmento pequeno pode ser excisado. É o mais grave, com resultado pior (p. 187).
+
+Os tipos II e III admitem reparo mais tardio, com exploração cuidadosa (p. 191). Mesmo assim, o autor recomenda **reparo precoce de todas as avulsões**, porque a radiografia inicial pode não condizer com a posição proximal do tendão (p. 187 e 188). É exatamente a lição do tipo IV: o osso visível na radiografia não diz onde está o tendão.
+
+!tabela LEDDY e PACKER (Green 7, cap. 6, p. 187 e 191, Fig. 6.6)
+| Tipo | Onde para o coto | Vínculos | Conduta e prazo |
+| --- | --- | --- | --- |
+| **I** | **palma** | os dois rompidos | **reparo urgente**, até **3 semanas** |
+| II | **IFP**, dentro da bainha | vínculo longo do FDP íntegro | reparo possível até **6 semanas** em alguns casos |
+| III | **borda distal da A4**, preso a fragmento grande | preservados | **fixar o fragmento** (KIRSCHNER ou miniparafuso) |
+| IV | bainha **ou** palma, solto do fragmento | variável | US ou RM; fixar a fratura e depois reinserir o tendão; pior prognóstico |
+!fim
+
+O Campbell descreve só os tipos 1 a 3 e diz que o tendão solto do fragmento **é tratado como tipo 1** (p. 3164). No tipo 1 do Campbell o coto fica na palma **preso pela origem do lumbrical**; abre-se a bainha distal à A2 e, se o coto não está ali, está na palma. Ele recomenda reinserção se o tipo 1 for detectado em **7 a 10 dias** e cita reparos do tipo II feitos **meses** depois, graças ao vínculo longo íntegro. O mais avulsionado em atletas é o **FDP do anular**, sobretudo em **homens de 20 a 30 anos**; às vezes a queixa é só uma **massa dolorosa na palma** (Campbell, p. 3163). BYNUM e GILBERT estudaram a anatomia e a biomecânica dessa avulsão (J Hand Surg Am 13:222-227, 1988, citado na lista do capítulo).
+
+!questoes central=mao-0019,mao-1067,mao-1088 treino=mao-2593,mao-2191,mao-2531,mao-2829,mao-2833,mao-2835,mao-2839,mao-2847,mao-2849,mao-2853,mao-2859,mao-2862,mao-2863,mao-2864
+conceito: No tipo I, o coto vai à palma e rompe os dois vínculos, e o reparo é urgente; no tipo II, o vínculo longo do profundo segura o coto na IFP, dentro da bainha.
+como: O TARO 2018 perguntou o tipo com ruptura de ambos os vínculos; a PUC-SP 2019 e a PUC-SP 2020 pediram a definição do tipo II; os simulados cobraram o coto na palma, o porquê da urgência e o caso do jogador com nódulo palmar.
+armadilha: Confundir o tipo I com o II, em que o vínculo longo segura o coto na IFP; ou achar que o tipo II perdeu todos os vínculos.
+!fim
+
+!questoes treino=mao-1794
+conceito: Fragmento ósseo parado na A4 com o tendão separado dele e retraído é o tipo IV; fixa-se ou excisa-se o fragmento conforme o tamanho e reinsere-se o FDP.
+como: O simulado do SIMÃO 2026 trouxe um jogador de rúgbi com fragmento na A4 e coto na palma ao ultrassom.
+armadilha: Chamar de tipo III só porque há fragmento na A4; no III o tendão continua preso ao osso.
+!fim
+
+## O FDP crônico com o FDS íntegro
+
+A avulsão ou o corte do FDP que passou do prazo, com o FDS funcionando, é uma situação em que o Green pede **cautela** (p. 211). Com o FDS íntegro, o dedo mantém a maior parte do arco de movimento: LITTLER mostrou que a IFD contribui pouco para o arco total de fechamento do dedo (Fig. 6.34, p. 212). A maioria dos pacientes **se adapta bem** e pode não precisar de nada, sobretudo com IFD estável. O enxerto pelo FDS íntegro tem risco considerável de **piorar** o que funciona, porque um enxerto aderido pode tirar a flexão da IFP que o FDS ainda dá. Idosos e trabalhadores braçais não devem ser operados. Com IFD instável ou preensão fraca, a resposta é **tenodese ou artrodese da IFD**.
+
+A indicação de enxerto em um tempo pelo FDS íntegro é restrita (p. 212 e 214): paciente **jovem**, articulações **flexíveis**, necessidade real de flexão da IFD (músicos, trabalho especializado), IFD **instável mas flexível**, e é mais útil nos dedos **ulnares** (anular e mínimo), que fazem a preensão de força. STARK, ZEMEL, BOYES e colaboradores publicaram a série clássica do enxerto através do FDS íntegro (J Hand Surg Am 2:456-461, 1977; PMID 925332).
+
+A técnica tem regras próprias (p. 212 e 214): enxerto **fino** (palmar longo, extensor do mínimo ou plantar) passado exatamente pela **decussação** do FDS; **nunca** retirar um FDS íntegro para dar espaço; se o enxerto não passa, HARRISON retirava **uma fita** do FDS (HARRISON, Br J Plast Surg 14:211-230, 1961; PMID 13904911); tenólise do FDS pode ajudar; com bainha ruim, dois tempos. SCHNEIDER notou que muitos desses pacientes precisaram de tenólise depois. E há uma saída antes do enxerto: se o coto do FDP ficou distal, preso por um vínculo curto, o reparo tardio ainda é possível; ultrassom ou RM localizam o coto (p. 214).
+
+O Campbell diverge no dedo: recomenda o enxerto no **indicador e no médio** de crianças e adultos jovens, raramente no anular e mínimo, com resultado imprevisível, e define os candidatos no Box 71.1 (**10 a 21 anos**, muito motivados, músicos ou técnicos; p. 3156 e 3166). A **tenodese** do Campbell (p. 3179, Figs. 71.54 e 71.55) é útil quando **o enxerto é impossível** e a ponta do dedo serve mais parcialmente fletida e estável, em geral no **indicador**: a IFD é posta a **30 graus**, com fio de KIRSCHNER oblíquo e pull-out na falange média.
+
+!questoes central=mao-0650 treino=mao-2472,mao-2843,mao-2855,mao-2860
+conceito: Com FDS íntegro, a maioria se adapta sem reconstruir o FDP; IFD instável pede tenodese ou artrodese, e a tenodese está indicada quando o enxerto é impossível; o enxerto pelo FDS íntegro fica para o jovem com IFD instável e flexível, sobretudo no anular e no mínimo.
+como: O TARO 2006 afirmou que, no arrancamento do FDP, a tenodese está indicada na impossibilidade de enxerto; o simulado do SIMÃO 2021 pediu o princípio que o Green destaca diante do FDP antigo com FDS funcionante.
+armadilha: Achar que todo FDP crônico precisa de enxerto, ou retirar o FDS íntegro para facilitar a passagem.
+alerta: O acervo não registra o gabarito oficial de `mao-0650`; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3179), sustenta a afirmação, e o Green 7 (p. 211) põe tenodese e artrodese como opções para a IFD instável.
+!fim
+
+# A zona 2: a técnica do autor {radar=fundamento}
+
+## Preparo e incisão
+
+O reparo primário na zona 2 dá função satisfatória em **80% ou mais**, melhor nos jovens que nos **maiores de 40 anos**; quando falha, é por **aderências nas polias** (Campbell's Operative Orthopaedics, 15ª ed., cap. 71, p. 3156). O preparo do Green 7 (p. 191 a 195) começa na emergência: ferida irrigada e fechada, cefalosporina 1 a 2 g, profilaxia antitetânica, e reparo **em até 7 dias**.
+
+A incisão preferida do autor é a **mediolateral** (médio-axial), porque deixa **pele e gordura intactas sobre a bainha** e não põe cicatriz cutânea em cima do tendão reparado (p. 191). Quando a ferida não permite, ela é incorporada com extensões (Fig. 6.14), e o zigue-zague de BRUNER entra como extensão proximal ou distal. O retalho é levantado espesso e único, porque tem perfusão aleatória: dividir o retalho em camadas é arriscar necrose.
+
+## As janelas na bainha
+
+O tendão é exposto por **janelas** abertas nas partes finas da bainha, **entre a A2 (distal a ela) e a A4 (proximal a ela)**, isto é, na região das cruciformes e da A3 (Green 7, p. 192, Fig. 6.13). A regra é abrir o mínimo: abertura excessiva gera **corda de arco**. O Campbell põe as janelas nas **cruciformes** C1 a C3 (p. 3158).
+
+## Como recuperar o coto proximal
+
+O coto **distal** aparece com a **flexão passiva da IFD**. O **proximal** retrai e precisa ser trazido de volta sem lesar a bainha (Green 7, p. 192): primeiro, **ordenha** do antebraço para a palma com o punho e a MCF fletidos; se não vier, uma **sonda de alimentação pediátrica nº 8** passada de forma retrógrada pela bainha até a palma, onde é suturada ao coto e puxada de volta para distal (SOURMELIS e McGROUTHER, J Hand Surg Br 12:109-111, 1987; PMID 3572160); se ainda não, uma **contraincisão** na palma. **Nunca** passadas às cegas com pinça dentro da bainha: cada pinçada lesa o epitendão e a sinovial, e cada lesão é uma aderência. Trazido o coto, uma agulha 25 G transfixa tendão e bainha e o segura sem tensão enquanto se sutura.
+
+## O núcleo do autor
+
+O autor usa **fio trançado 3-0** (caprolactama) em alça, num **KESSLER modificado de quatro fios** com alças travadas; tendões menores recebem 4-0; tendões maiores, dois KESSLER contínuos 3-0, somando **oito fios**, sem travas. A epitendínea é contínua, de polipropileno **6-0**, profunda e não travada (Green 7, p. 192 a 195, Fig. 6.12). As fitas do FDS, achatadas perto da IFP, não aceitam um núcleo convencional e são suturadas com as técnicas dos extensores das zonas 2 a 4 (p. 194).
+
+A sequência no **dedo** é: **tendões primeiro**, depois nervos e artérias; a artéria muitas vezes vai **por último**, com o garrote solto, para conferir o fluxo (p. 194).
+
+## O curativo
+
+O curativo da zona 2 deixa o **punho em 20 a 30 graus de flexão**, a **MCF em 50 a 70 graus** e a IFP e a IFD em **0 ou pouca flexão**, sem efeito de fulcro na palma, envolvendo todos os dedos (Green 7, p. 194 e 195). O punho fletido tira tensão do reparo; as IF estendidas evitam a contratura em flexão, que é a complicação articular mais comum. O retorno sem restrição leva **4 a 6 meses** (p. 195).
+
+# Zonas proximais, ordem de reparo e o polegar agudo {radar=oportunidade}
+
+## Zonas 3 a 5: mesmos princípios, melhor prognóstico
+
+Fora da bainha, os princípios são os mesmos, mas há **menos aderências** e o **prognóstico é melhor** (Green 7, p. 190). A incisão é longitudinal e extensível; a epitendínea não é de rotina; começa-se com pontos simples nos cantos antes do núcleo; e, se houver lesão vascular ou esmagamento, considera-se a **fasciotomia** (p. 194). Na **zona III**, o Campbell manda **não suturar os lumbricais** (causa **lumbrical plus**; p. 3160). Na **zona IV**, abrindo todo o ligamento transverso, o punho não pode passar da **neutra** no pós-operatório (os tendões fazem corda de arco sob a pele); alternativa: abrir o ligamento em **Z** e reconstruí-lo. O **palmar longo** isolado **não precisa** de reparo, e, entre vários tendões, a prioridade é dos **profundos** (Campbell, p. 3161 e 3166).
+
+## A ordem no antebraço
+
+Num ferimento volar do antebraço distal com artéria, nervo e tendões cortados, a ordem do Green 7 (p. 194) é: **artérias primeiro**, para devolver a perfusão e porque a anastomose precisa de campo livre e de comprimento; depois os **tendões, do mais profundo ao mais superficial**, porque reparar os superficiais primeiro esconderia os profundos; e os **nervos por último**, já que são os mais delicados e se beneficiam de um leito estável, sem tração dos reparos seguintes. O Campbell (p. 3161.e1) põe os tendões primeiro. No **dedo**, como visto, a ordem do Green é outra: tendões antes, artéria por último com o garrote solto.
+
+## O FPL agudo
+
+O FPL intrassinovial cortado retrai com frequência. O Green 7 (p. 190) diz que o coto proximal vai **profundamente à musculatura tenar** e, se passou da borda distal dela, é buscado por incisão no **túnel do carpo ou no antebraço distal**. O Campbell (p. 3165) diz que na zona III ele retrai **até perto do punho** e é buscado **entre a artéria radial e o flexor radial do carpo**. Na zona I, divisão a até **1 cm** da inserção permite sutura ou avanço ao osso; mais proximal, avanço com **alongamento em Z** proximal ao punho. Na zona II, evita-se o reparo **oposto à MCF**, onde o tendão adere à polia. O FPL não tem vínculo e pode ser avançado sem perder irrigação.
+
+O prazo do FPL é generoso: o reparo direto em qualquer nível é possível até **3 a 6 semanas**, e mais se os cotos não se afastaram (Green 7, p. 217). O polegar tem um tendão só e uma articulação a menos, e **30 a 40 graus** de flexão ativa da IF já dão função excelente; por isso vale insistir no reparo e, se preciso, na reconstrução.
 
 !tabela Conduta no FPL por zona, segundo URBANIAK (Campbell 15, cap. 71, p. 3165, Tabela 71.1)
 | Zona | Perda de tendão | Cicatriz mínima | Cicatriz grave |
@@ -283,43 +629,140 @@ alerta: O acervo não registra o gabarito oficial de `mao-0650`; o Campbell's Op
 | V | transferência ou ponte | direto | transferência |
 !fim
 
-# A biologia da cicatrização e a reabilitação {radar=oportunidade}
+!questoes central=mao-0229 treino=mao-2388,mao-2112,mao-2837
+conceito: No corte intrassinovial do FPL, o coto proximal costuma retrair para dentro da musculatura tenar; o reparo direto é possível em qualquer nível até 3 a 6 semanas, e mais se os cotos não se afastaram.
+como: Uma prova de Ortopedia perguntou onde fica o coto proximal do FPL na zona 2; os simulados do SIMÃO 2022 e da SBCM 2022 cobraram a retração e o prazo.
+armadilha: Responder espaço de PARONA ou antebraço como primeira localização; o túnel do carpo e o antebraço distal são onde se procura quando o coto passou da musculatura tenar.
+alerta: O Campbell's Operative Orthopaedics, 15ª ed. (p. 3165), descreve retração até perto do punho na zona III; o Green 7 (p. 190) põe o coto sob a musculatura tenar. O gabarito oficial foi preservado.
+!fim
 
-**As fases.** O Green's Operative Hand Surgery, 7ª ed. (cap. 6, p. 189), descreve três fases sem prazo; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3143), dá os números: **inflamatória 48 a 72 horas**, **fibroblástica 5 dias a 4 semanas**, **remodelação 4 semanas a 3,5 meses**. O mecanismo **extrínseco** parece **dominar as aderências**; o **intrínseco** vem do próprio tendão (LUNDBORG). Aderência extensa exige **lesão do tendão + lesão da bainha + imobilização**, e nenhuma barreira antiaderente se mostrou confiável.
+# A reabilitação {radar=confirmado}
 
-**Tensão e cicatrização: os livros divergem no peso.** O Campbell (p. 3143) diz que, em experimentos, a **tensão cíclica** aplicada ao tendão em cicatrização **estimula a resposta intrínseca** mais que a ausência de tensão, base da mobilização pós-operatória. O Green (p. 189 e 195) põe o limite: alguma força é útil, mas BOYER mostrou que aumentar a força aplicada de **5 N para 17 N não acelerou** o ganho de resistência do reparo multifilamentar e pode arriscar gap ou ruptura; a razão de aplicar força é gerar **pequena excursão proximal**.
+## Quanto o tendão desliza
 
-**A força do reparo** **cai nos primeiros 10 dias** e só em **10 a 12 semanas** admite força ativa considerável (Campbell, p. 3148). O **gap** decide: no estudo canino de GELBERMAN, gap **menor que 3 mm** ganha força entre a **4ª e a 6ª semana**; **maior que 3 mm**, não (Green, p. 189, Fig. 6.10). Pegar o tendão pelo **endotendão**: cada lesão da superfície gera uma aderência (p. 192 e 224). ROUHANI: **ibuprofeno 2400 mg/dia** melhorou o movimento (p. 198).
+A excursão total dos tendões, medida por BOYES, é a régua de todo o capítulo (Green 7, cap. 5, p. 158, e cap. 31, p. 1024): punho **33 mm**, extensores dos dedos e EPL **50 mm**, **flexores dos dedos 70 mm**. A reabilitação não precisa recuperar esses 70 mm na primeira semana; precisa só de alguns milímetros para que a bainha não grude.
 
-**Excursão, não força.** A força aplicada serve para gerar **pequena excursão proximal** (Green, p. 195): **1,6 mm** já evita aderências em cães (p. 189), DURAN calculou **3 a 5 mm**, e **6 a 9 mm** seria o máximo útil. As **primeiras 4 semanas** são as mais importantes.
+## Por que mover e quanto mover
+
+O raciocínio de **DURAN** foi quantitativo. Ele calculou que **3 a 5 mm** de excursão do tendão bastam para impedir aderências restritivas, e que **6 a 9 mm** seriam o limite máximo útil (DURAN e colaboradores, J Hand Surg Am 1:79, 1976, resumo citado na lista do capítulo; Green 7, p. 195). Em cães, **1,6 mm** já evitou aderência relevante (p. 189). As **primeiras 4 semanas** são as mais importantes. GELBERMAN, BOTTE, SPIEGELMAN e colaboradores mediram a excursão e a deformação de tendões reparados com movimento protegido (J Hand Surg Am 11:106-110, 1986, citado na lista do capítulo).
+
+!questoes central=mao-1165 treino=mao-2192
+conceito: No protocolo original de DURAN, 3 a 5 mm de excursão do tendão bastam para impedir aderências restritivas; 6 a 9 mm seriam o máximo útil.
+como: A PUC-SP 2022 e o simulado da SBCM 2023 perguntaram a excursão de DURAN.
+armadilha: Marcar 6 a 9 mm, que é o teto, ou 1,6 mm, que é o dado canino.
+!fim
+
+## O programa acelerado do autor
+
+O centro do autor divide os pacientes em dois grupos, decididos por cirurgião e terapeuta (Green 7, p. 196 a 198): os que podem fazer o programa **acelerado** (reparo forte, paciente colaborador) e os que não podem.
+
+No **acelerado**, a terapia começa entre o **1º e o 5º dia**. Órtese dorsal com o **punho neutro** e a **MCF em 50 graus**, posição que alonga levemente os colaterais da MCF sem esticar os flexores. A cada hora: posicionamento passivo em punho fechado por 3 minutos; **15 flexões passivas e extensões ativas** até a órtese; e o programa de **tenodese** fora da órtese (dedos fletidos passivamente com a outra mão, punho estendido ativamente, contração leve e manutenção ativa do punho fechado por **5 segundos**, depois o punho cai em flexão e os dedos se estendem passivamente; 10 ciclos). Em repouso, os dedos ficam presos à órtese com as IF a **-10 a 0 grau**. Com **3 semanas**, a órtese sai para exercícios ativos isolados e compostos. A órtese é suspensa com **6 a 8 semanas**, e os **exercícios isolados de força** começam com **10 semanas** (p. 197 e 198).
+
+O princípio do "**place and hold**" (colocar e segurar) é que a mão sã põe o dedo em flexão e o paciente só segura, com a menor força possível: a contração para manter a posição gera excursão com carga baixa, sem a tensão da flexão ativa contra a resistência da bainha e do edema.
+
+!questoes treino=mao-1943
+conceito: No programa do Green, a órtese sai com 6 a 8 semanas e os exercícios isolados de força começam com 10 semanas.
+como: O simulado do SIMÃO 2023 perguntou quando iniciar força isolada no tendão reparado.
+armadilha: Marcar 6 semanas, que é quando a órtese pode sair, não quando a força começa.
+!fim
+
+## A pirâmide de GROTH
+
+A progressão da força segue a **pirâmide de GROTH** (GROTH, J Hand Ther 17:31-42, 2004; PMID 14770136; Green 7, p. 197 e 198), que ordena os exercícios não resistidos por força crescente: **place and hold**, **punho composto**, **punho reto** e **movimento articular isolado com bloqueio**. GROTH separou duas respostas fisiológicas:
+
+- **Resposta "alta"**: cicatrização rápida, edema, cicatriz densa e aderências, com perda de excursão. Esses pacientes **sobem a pirâmide depressa**, porque estão aderindo e precisam de força para soltar o tendão.
+- **Resposta "baixa"**: cicatrização lenta, pouco edema, pequena diferença entre o ativo e o passivo. Esses deslizam bem, mas cicatrizam menos; **sobem devagar** e adiam os exercícios resistidos.
+
+É uma inversão do senso comum que vira questão: quem gruda mais recebe força mais cedo.
+
+## Passivo, criança e o paciente que não colabora
+
+Para casos complicados, entendimento limitado ou adesão duvidosa, o autor usa um programa **passivo tipo DURAN**: a mesma órtese com punho neutro e MCF a 50 graus, flexão e extensão passivas isoladas da IFP (com IFD e MCF fletidas) e da IFD (com MCF e IFP fletidas); a progressão de força é a mesma, mas **atrasada 2 a 3 semanas** (Green 7, p. 198).
+
+Na criança, a decisão é conjunta (cirurgião, pais e terapeuta): o programa precoce exige um participante ativo. Se a criança não tem condições, **gesso por 4 a 6 semanas** com punho neutro, **MCF a 70 graus** e IF retas, e depois 6 semanas de terapia. Imobilizar a criança **não é tão ruim** quanto no adulto (p. 198 e 199). O Campbell manda para manejo conservador as crianças com menos de cerca de **10 anos** e os não aderentes (p. 3161).
+
+## KLEINERT contra DURAN
 
 !tabela KLEINERT e DURAN (Campbell 15, cap. 71, p. 3161 e 3163, Box 71.2)
 | Item | KLEINERT | DURAN |
 | --- | --- | --- |
 | princípio | extensão **ativa**, flexão **passiva** por **elástico** da unha ao punho, com roldana palmar | movimento **passivo controlado** com bloqueio dorsal |
-| tala | punho **20 a 30 graus** de flexão, MF **40 a 60 graus**, IF estendidas | punho **20 a 45 graus**, MF **50 a 70 graus**, IF neutras |
+| tala | punho **20 a 30 graus** de flexão, MCF **40 a 60 graus**, IF estendidas | punho **20 a 45 graus**, MCF **50 a 70 graus**, IF neutras |
 | rotina | elástico mantém a IFP a 40 a 60 graus sem tensão | **8 repetições, 2 vezes ao dia**, gerando 3 a 5 mm de excursão |
 | tempos | tala dorsal sai em **3 semanas**; pulseira até **6 a 8**; força **8 a 10**; uso normal **10 a 12** | passivo por **4 a 5 semanas** |
 | cuidado | abandonar na **1ª semana** se o paciente não entende | "place and hold" nos reparos multifilamentares fortes |
 !fim
 
-A posição do punho na tala também diverge: o Green usa **20 a 30 graus** de flexão; a técnica do Campbell descreve **45 a 50 graus**, e 20 a 45 graus no DURAN. A margem de segurança aumenta com reparos de **quatro ou mais fios**, e crianças com menos de cerca de **10 anos** ou pacientes não aderentes vão para manejo conservador (Campbell, p. 3161).
+A posição do punho na tala também diverge: o Green usa **20 a 30 graus** de flexão no curativo e **neutro** na órtese do programa acelerado; o Campbell descreve **45 a 50 graus**, e 20 a 45 graus no DURAN. A margem de segurança aumenta com reparos de **quatro ou mais fios** (Campbell, p. 3161). A contratura das IF é mais comum com a **tração elástica** de KLEINERT (Green 7, p. 198).
 
-# As complicações e a tenólise {radar=oportunidade}
+# As complicações do reparo e a tenólise {radar=confirmado}
 
-**A complicação mais comum** do reparo é a **rigidez digital por aderências peritendíneas** ou contratura articular (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 195). A **ruptura** é incomum, muitas vezes por não aderência do paciente; a melhor proteção é **núcleo multifilamentar + epitendínea contínua + terapia de mão precoce** (p. 198). Ruptura até **3 semanas** pede novo reparo, e o diagnóstico precisa vir em dias; depois disso a chance cai e entram bastão de silicone ou enxerto. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3164), segue a mesma lógica: ruptura cedo, explorar e reparar; tarde ou em cicatriz densa, enxerto; o FPL rompido tarde exige enxerto, pelo encurtamento muscular. Outras complicações, menos comuns: ruptura de polia com corda de arco, quadriga, gatilho, **pescoço de cisne** e **lumbrical plus**. A contratura da IF aparece sobretudo com **tração elástica** e, se persistir aos **4 a 6 meses**, pede liberação articular.
+## Rigidez, ruptura e o que mais
 
-**A tenólise** é necessária em cerca de **18% a 25%** dos reparos e pode melhorar a função em **50%** (Campbell, p. 3157). O momento diverge: o Green a considera a partir de **4 meses** ("não operar antes de 4 meses"), na faixa de 4 a 6 meses; o Campbell a faz em geral aos **5 a 6 meses**, nunca antes de **3 meses** e só sem melhora nos 1 a 2 meses anteriores. Na história, FETROW esperava **6 meses** após enxerto e **3 meses** após reparo primário; RANK e WAKEFIELD passaram de 3 para **6 a 9 meses**; WEEKS e WRAY viram que a função ativa após enxerto surge até a **22ª semana** (Green, p. 200).
+A **complicação mais comum** do reparo é a **rigidez digital por aderências peritendíneas** ou contratura articular (Green 7, p. 195). A **ruptura** é incomum e, muitas vezes, ligada à não adesão do paciente; a melhor proteção é **núcleo multifilamentar + epitendínea contínua + terapia de mão precoce** (p. 198). Outras complicações, menos comuns quando polias e relações anatômicas são preservadas: ruptura de polia com corda de arco, quadriga, gatilho, **pescoço de cisne** e **lumbrical plus** (p. 195).
 
-O Campbell (p. 3178) exige ausência de progresso em **3 a 6 meses** de terapia, pele macia, fraturas consolidadas, **passivo quase normal** e sensibilidade normal ou em recuperação, e avisa que o risco de ruptura após tenólise é de **10% ou mais**. O Green aponta pior prognóstico com idade **acima de 40 anos**, nervo reparado ou enxertado, tenólise **após 1 ano**, tempo cirúrgico longo e **capsulectomia** concomitante (p. 200 e 202).
+A ruptura tem prazo: **até 3 semanas**, faz-se **novo reparo**; depois, a chance de sucesso cai, porque o coto retrai, amolece e a bainha cicatriza. Por isso o diagnóstico precisa vir **em dias** (p. 198). Passado o prazo, o paciente deve ser orientado para reconstrução com bastão de silicone ou enxerto. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3164), segue a mesma lógica e acrescenta que o FPL rompido tarde exige enxerto, pelo encurtamento muscular.
 
-O tendão aderido ao osso deixa assinatura: o **FDS adere à falange proximal** e causa contratura em flexão da IFP; o **FDP adere à falange média** e causa contratura da IFD (Campbell, p. 3179). Após enxerto falho, o Campbell prefere **novo enxerto** a tenólise.
+A contratura das IF aparece sobretudo com **tração elástica**; tratada cedo, resolve com alongamento passivo e órteses estáticas progressivas; se persistir aos **4 a 6 meses** limitando a função, pede **liberação articular** (Green 7, p. 198).
 
-# A reconstrução: escada, enxerto em um tempo e doadores {radar=confirmado}
+!questoes central=mao-0767
+conceito: A ruptura do reparo até 3 semanas pede novo reparo; depois, a chance cai e entram o bastão de silicone e o enxerto; o diagnóstico precisa ser feito em dias.
+como: O INTO 2023 perguntou o intervalo máximo ideal para um novo reparo após a ruptura da tenorrafia.
+armadilha: Esticar o prazo para 6 semanas, que é o do reparo primário tardio, não o da re-sutura.
+!fim
 
-**A escada da reconstrução** do Green's Operative Hand Surgery, 7ª ed. (cap. 6, p. 199, Fig. 6.19): ruptura precoce = novo reparo; reparo anterior aderido = **4 a 6 meses** de terapia antes de tenólise; **túnel bom** = enxerto primário palma-ponta; aderências extensas no túnel = **dois tempos** com espaçador de silicone. O enxerto é indicado por falha do reparo, perda segmentar, atraso de **3 a 6 semanas** que impede o reparo primário, escolha do cirurgião em lesão extensa da zona 2 ou avulsão tardia do FDP com grande retração (p. 202).
+## A tenólise: quando
 
-**BOYES classifica o dedo** antes da reconstrução, e só o **grau 1** vai direto ao enxerto, com passivo completo.
+A tenólise libera o tendão cicatrizado, mas aderido. A indicação é o **platô**: medidas seriadas que não mostram ganho de movimento ativo apesar da terapia, com **diferença grande entre o passivo (completo ou quase) e o ativo (limitado)** (Green 7, p. 198 e 200). O pré-requisito é exatamente esse passivo completo: tenólise solta o tendão, não a articulação. Exige também tendão e polias íntegros e articulações flexíveis. O melhor candidato tem ativo limitado, passivo completo, partes moles flexíveis e **aderência localizada** (Fig. 6.20).
+
+O prazo é uma das perguntas mais cobradas. Antes de qualquer tenólise, **4 a 6 meses de terapia** (p. 199, Fig. 6.19). O autor a considera **4 a 6 meses** depois do reparo e, nos pontos críticos, é taxativo: **nunca antes de 4 meses** (p. 198, 200 e 202). A história explica a regra (p. 200): FETROW, analisando casos de PULVERTAFT, esperava **6 meses** depois de um enxerto e no mínimo **3 meses** depois de um reparo primário (FETROW, J Bone Joint Surg Am 49:667-685, 1967; PMID 6026002); RANK e WAKEFIELD passaram de 3 meses para **6 a 9 meses**; WEEKS e WRAY mostraram que a função ativa de um enxerto continua surgindo até a **22ª semana** (J Hand Surg Am 1:174-180, 1976; PMID 1018084). Operar antes disso é arriscar soltar um tendão que ainda ia ganhar movimento sozinho, e romper um reparo ainda fraco.
+
+O Campbell faz a tenólise em geral aos **5 a 6 meses**, nunca antes de **3 meses** e só sem melhora nos 1 a 2 meses anteriores; exige ausência de progresso em **3 a 6 meses** de terapia, pele macia, fraturas consolidadas, **passivo quase normal** e sensibilidade normal ou em recuperação, e estima a tenólise necessária em **18% a 25%** dos reparos, com melhora da função em **50%** e risco de ruptura de **10% ou mais** (p. 3157 e 3178).
+
+Uma regra de sequência: qualquer cirurgia que exija **imobilização** (pseudartrose, cobertura cutânea, enxerto ósseo, osteotomia) vem **antes**, em tempo separado; a tenólise, que exige **movimento imediato**, vem **por último** (Green 7, p. 200). Na criança, a tenólise antes dos **11 anos** ganha pouco (BIRNEY e IDLER, J Hand Surg Am 20:254-257, 1995, citado na lista do capítulo).
+
+!questoes central=mao-0766,mao-0978,mao-1316,mao-1479 treino=mao-2523
+conceito: A tenólise não deve ser feita antes de 4 meses do reparo, exige platô da terapia e passivo completo ou quase, e vem por último na sequência de reconstruções, porque exige mobilização imediata; resultado pior acima de 40 anos e com tenólise após 1 ano.
+como: O INTO 2023 e a UFG 2020 perguntaram o intervalo mínimo; a USP-SP 2025, a afirmação correta (não indicar com menos de 4 meses); a USP-SP 2024, qual procedimento secundário fica por último; o simulado do SIMÃO 2021, a conduta antes de pensar em tenólise.
+armadilha: Marcar 3 meses (o mínimo de FETROW e do Campbell) quando a pergunta é pelo Green, ou achar que tenólise tardia (mais de 1 ano) dá melhor resultado.
+alerta: O Campbell's Operative Orthopaedics, 15ª ed. (p. 3157), aceita a partir de 3 meses; o Green 7 (p. 202) diz nunca antes de 4 meses. A USP-SP 2024 cita o Green 8 para a ordem dos procedimentos; o Green 7 (p. 200) diz o mesmo. Os gabaritos oficiais foram preservados.
+!fim
+
+## A tenólise: como
+
+A anestesia ideal deixa o paciente **mostrar a flexão** na mesa: local, neuroleptoanalgesia ou **WALANT** (cirurgia acordada, sem garrote), defendida por LALONDE e MARTIN (Hand Clin 29:207-213, 2013, citado na lista do capítulo; Green 7, p. 200). A grande vantagem é confirmar que a liberação está completa e que o músculo consegue mover o tendão. Sob bloqueio regional ou geral, reservado aos ansiosos e às cicatrizes extensas, o cirurgião estende a tenólise além da zona aderida e faz o **teste de tração do flexor** de WHITAKER por uma incisão no punho (WHITAKER, STRICKLAND e ELLIS, J Hand Surg Am 2:462-470, 1977; PMID 925333; p. 200 e 201). Usam-se lâminas finas (BEAVER, MEALS), preservando **A2 e A4**; se não houver tendão ou polia que preste, troca-se a tenólise por um implante em dois tempos (p. 201).
+
+No pós-operatório, **movimento ativo no 1º dia**, com cateter e bomba de anestésico até 5 dias se necessário; o movimento passivo contínuo não substitui o exercício ativo (p. 201). Numa série citada pelo autor, **80%** ganharam cerca de 70 graus, **10%** ficaram iguais e **10%** perderam cerca de 25 graus (p. 202). A complicação temida é a **ruptura** do reparo ou da junção do enxerto, que pode deixar a mão pior do que antes (p. 200).
+
+**Fatores de pior prognóstico** (p. 200 e 202): idade **acima de 40 anos**, reparo ou enxerto de nervo, tenólise **tardia** (mais de 1 ano), tempo cirúrgico longo, e capsulectomia ou osteotomia concomitantes. Os agentes locais são controversos: VERDAN e FETROW não viram ganho com corticoide, e BORA associou o corticoide a mais cicatriz (p. 200).
+
+!questoes central=mao-1615 treino=mao-2841
+conceito: Na cirurgia acordada, a flexão ativa na mesa revela o problema: se o dedo reparado flete e os vizinhos não, o FDP ficou curto ou tenso demais (quadriga), e a correção é refazer o reparo com menos tensão.
+como: A USP-SP 2026 descreveu um efeito quadriga visível durante o reparo da zona II sob WALANT e pediu a conduta.
+armadilha: Achar que a quadriga intraoperatória é efeito da anestesia ou que se corrige sozinha na reabilitação.
+!fim
+
+# A reconstrução: escada, BOYES e o enxerto em um tempo {radar=confirmado}
+
+## O paciente pesa mais que a técnica
+
+Antes da técnica, o Green 7 (p. 199) lista as variáveis do paciente que decidem o resultado: **idade**; **mecanismo e extensão** da lesão (esmagamento, fratura, lesão de nervo, de artéria, de pele e infecção pioram); **nível** (fora da bainha vai melhor); e a **resposta individual de cicatrização**, que pesa mais que a técnica ou o fio escolhido. Um mesmo enxerto, bem feito, dá resultados opostos em duas mãos diferentes.
+
+## A escada da reconstrução
+
+A **escada** (Green 7, p. 199, Fig. 6.19) organiza as opções da mais simples para a mais complexa:
+
+- Ruptura precoce do reparo: **novo reparo**.
+- Reparo cicatrizado e aderido: **4 a 6 meses de terapia** e, se houver platô, **tenólise**.
+- Reparo falho ou lesão negligenciada com **túnel bom** (palma e túnel fibro-ósseo satisfatórios, articulações móveis): **enxerto primário** palma-ponta, em um tempo.
+- Aderências extensas, túnel destruído, polias perdidas: **dois tempos**, com espaçador de silicone.
+- Quando nada disso compensa: artrodese, tenodese ou amputação.
+
+O enxerto em um tempo é indicado por **falha do reparo**, **perda segmentar** do tendão, **atraso** (lesão negligenciada por mais de 3 a 6 semanas já mostra degeneração e cicatriz na bainha), escolha do cirurgião em lesão extensa da zona 2 e, às vezes, **avulsão tardia do FDP** com grande retração (p. 202).
+
+## BOYES: o dedo antes do enxerto
+
+O pré-requisito do enxerto em um tempo é um dedo pronto: partes moles cicatrizadas, articulações sem contratura e **movimento passivo completo**. PULVERTAFT acrescentava circulação boa e **pelo menos um nervo digital íntegro** (Green 7, p. 202). BOYES transformou isso numa classificação pré-operatória (BOYES, J Bone Joint Surg Am 32:489-499, 1950; PMID 15428471), e BOYES e STARK a usaram para analisar os fatores que influíram no resultado de **1.000 enxertos** (J Bone Joint Surg Am 53:1332-1342, 1971; PMID 5114696). Só o **grau 1** vai direto ao enxerto; os outros pedem preparo (soltar articulação, trocar pele, reparar nervo) ou dois tempos.
 
 !tabela Classificação de BOYES (Green 7, cap. 6, p. 202, Tabela 6.2)
 | Grau | Nome | Achado |
@@ -331,62 +774,222 @@ O tendão aderido ao osso deixa assinatura: o **FDS adere à falange proximal** 
 | 5 | múltiplos danos | vários dedos com combinação dos anteriores |
 !fim
 
+A Tabela 6.2 do Green 7 lista as categorias sem imprimir os números dos graus; a ordem é a do artigo original de BOYES, de 1950, e é ela que as provas usam.
+
+!questoes central=mao-1440 treino=mao-2865
+conceito: BOYES classifica o dedo antes do enxerto: 1 bom, 2 cicatriz, 3 lesão articular, 4 lesão nervosa com alterações tróficas, 5 múltiplos danos; só o grau 1 vai direto ao enxerto.
+como: A USP-SP 2024 pediu o grau 3 da classificação de BOYES.
+armadilha: Trocar a ordem entre cicatriz, articulação e nervo.
+!fim
+
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3169), lista os requisitos: pele maleável, feridas curadas, edema resolvido, **passivo completo**, sensibilidade normal ou **ao menos um nervo digital íntegro**, e **A2 e A4 íntegras**, senão reconstruídas em estágio separado. A idade pesa: melhores resultados entre **10 e 30 anos**, piores nos muito jovens e acima de **50**.
 
-**Os princípios do enxerto em um tempo** (Green, p. 202): **um tendão por dedo**; **nunca sacrificar um FDS íntegro**; enxerto de **pequeno calibre**; **junções fora da bainha**; tensão correta. A junção **distal vem primeiro**, para que a tensão seja ajustada na proximal; o motor preferido é o **FDP proximal** do próprio dedo, unido em **PULVERTAFT** logo distal à origem do lumbrical (p. 210 e 211). A **tensão** reproduz a **cascata**: com o punho neutro, cada dedo cai em um pouco menos de flexão que o vizinho ulnar (Fig. 6.33). O Campbell pede, com o punho estendido, flexão **igual ou um pouco maior** que a dos vizinhos e proíbe suturar o lumbrical à junção (p. 3170). No pós-operatório do Campbell, o pull-out sai em cerca de **28 dias**, a proteção vai a **8 semanas** e a atividade vigorosa espera **12 a 14 semanas**.
+!questoes central=mao-0079 treino=mao-2597,mao-2832
+conceito: O enxerto primário na zona II tardia exige túnel fibro-ósseo satisfatório com A2 e A4 íntegras, passivo completo e BOYES 1; com polias perdidas ou cicatriz, dois tempos.
+como: O TARO 2014 perguntou, com o mesmo enunciado repetido no acervo, a condição que indica o enxerto primário na reparação tardia da zona II; o simulado, como o cirurgião avalia o dedo antes do enxerto.
+armadilha: Indicar enxerto em um tempo num dedo rígido ou sem polias, que pede reconstrução em dois tempos.
+alerta: Nenhum dos livros traz a frase literal "permeabilidade das polias"; o Green's Operative Hand Surgery, 7ª ed. (p. 199), fala em "palma e túnel fibro-ósseo satisfatórios" e o Campbell's Operative Orthopaedics, 15ª ed. (p. 3169), exige A2 e A4 íntegras; os gabaritos oficiais foram preservados.
+!fim
 
-**A ordem dos doadores** no Campbell (p. 3167) é **palmar longo**, **plantar** e **extensores longos dos dedos do pé**; raramente, o extensor comum do indicador, o extensor próprio do indicador e o FDS. O palmar longo é o de escolha porque tem comprimento, diâmetro e disponibilidade sem deixar deformidade.
+## Os princípios do enxerto em um tempo
 
-**A biologia do enxerto.** Enxertos **intrassinoviais** (flexores dos dedos do pé) sobrevivem na bainha e incorporam com **mínimas aderências**; os **extrassinoviais** (palmar longo, plantar) sofrem **necrose celular** e são repovoados a partir das aderências e das junções (Green, p. 203).
+Cinco regras (Green 7, p. 202, Fig. 6.23), cada uma com a sua razão:
 
-!tabela Doadores de enxerto (Green 7, cap. 6, p. 203 a 206; Campbell 15, cap. 71, p. 3167 a 3169)
+- **Um só tendão por dedo**: dois enxertos na mesma bainha aderem um ao outro.
+- **Nunca sacrificar um FDS íntegro**: ele é o que o dedo ainda tem de bom.
+- Enxerto de **pequeno calibre**: passa pelas polias e se revasculariza melhor.
+- **Junções fora da bainha**: a distal **distal à A4**, a proximal **proximal à A2** (na palma); junção dentro da bainha é aderência certa.
+- **Tensão** correta, pela cascata.
+
+## A biologia do enxerto
+
+O enxerto não é um tendão vivo transplantado; é uma armação que precisa ser repovoada. Enxertos **intrassinoviais** (como o flexor longo dos dedos do pé) sobrevivem na bainha e incorporam **quase sem aderência**; os **extrassinoviais** (palmar longo, plantar) sofrem **necrose celular** central e são repovoados por fibroblastos e vasos que chegam **pelas aderências e pelas junções** (Green 7, p. 203 e 211). Ou seja: no enxerto extrassinovial, a aderência é também a via de sobrevivência. SEILER, GELBERMAN, WILLIAMS e colaboradores compararam os dois tipos em cães (J Bone Joint Surg Am 75:104-114, 1993, citado na lista do capítulo), e SEILER e colaboradores descreveram a anatomia do flexor longo dos dedos do pé para uso como enxerto (J Hand Surg Am 20:492-495, 1995; PMID 7642935). A vantagem clínica do intrassinovial ainda não foi demonstrada (p. 203).
+
+## Os doadores
+
+O Green 7 descreve os doadores em ordem de uso (p. 203 a 207):
+
+- **Palmar longo**: o preferido para **palma-ponta**, porque está no **mesmo campo** operatório. Presente em **75% a 85%**. O teste é opor o polegar ao mínimo e fletir o punho contra resistência. Colhe-se por incisão de 1 a 2 cm na prega do punho, alinhada ao 3º dedo, mobilizando 6 a 8 cm e usando extrator circular. O risco é colher o **nervo mediano** por engano (relatado) ou lesar o ramo cutâneo palmar.
+- **Plantar delgado**: para **antebraço-ponta**, porque é longo; dá **2 e às vezes 3** enxertos palma-ponta ou 1 longo. A presença **não é previsível pelo exame**, mas ultrassom ou RM a confirmam. O texto cita que ele estaria ausente em só 7% dos cadáveres e, logo depois, que HARVEY o encontrou em **80%** dos membros (HARVEY, CHU e HARVEY, J Hand Surg Am 8:243-247, 1983; PMID 6875222); os pontos críticos usam 80%. Colhe-se com o joelho estendido, por incisão de 5 cm anterior e medial ao tendão calcâneo. Há relato de **síndrome compartimental** da perna depois da coleta (TARAS e FITZPATRICK, J Hand Surg Am 26:1135-1137, 2001; PMID 11721265), e por isso se palpa a panturrilha no pós-operatório.
+- **Extensores longos dos dedos do pé** (2º, 3º e 4º): presença **nunca em dúvida**, diâmetro adequado, **três enxertos longos**. O problema é que se fundem distal ao tornozelo, exigindo incisões transversas múltiplas e abertura do retináculo.
+- **Extensor próprio do indicador** (ulnar ao extensor comum do indicador, seccionado 1 cm proximal ao capuz) e **extensor do mínimo** (o mais ulnar dos dois tendões na MCF; SNOW usava só a metade ulnar: SNOW, Plast Reconstr Surg 42:603-604, 1968; PMID 5722164); cada um dá um palma-ponta.
+- **Flexor longo dos dedos do pé**: intrassinovial; o do 2º dedo tem o segmento intrassinovial mais longo.
+
+O Campbell (p. 3167) põe a ordem como **palmar longo**, **plantar** e **extensores longos dos dedos do pé**; raramente, os extensores do indicador e o FDS. O palmar é o de escolha por ter comprimento, diâmetro e disponibilidade sem deixar deformidade. O comprimento necessário se mede do ponto distal ao proximal com o dedo estendido, somando **4 a 6 cm** (Green 7, p. 202).
+
+!tabela Doadores de enxerto (Green 7, cap. 6, p. 203 a 207; Campbell 15, cap. 71, p. 3167 a 3169)
 | Doador | Uso e dados | Divergência |
 | --- | --- | --- |
-| **palmar longo** | palma-ponta, **mesmo campo**; teste: oposição ao mínimo com punho fletido contra resistência; cerca de **15 cm** | Green: presente em **75% a 85%**; Campbell: **85%** de um lado, **70%** dos dois, ausente em 10% a 15% |
-| **plantar** | antebraço-ponta; dá **2 ou 3** enxertos palma-ponta; anteromedial ao Aquiles; extrator avança cerca de **25 cm** | Green: só **80%** dos membros (HARVEY); Campbell: presente em **93%** |
-| extensores longos dos dedos do pé | terceira opção do Campbell (p. 3167) | |
-| flexor longo do 2º dedo do pé | **intrassinovial**, menos aderências | Green |
-| extensor próprio do indicador, fita do extensor do 5º | alternativas | Green |
-| FDS | grosso demais, centro necrosa | Campbell desaconselha; Green aceita o do dedo lesado na **criança** |
+| **palmar longo** | palma-ponta, **mesmo campo**; cerca de **15 cm** | Green: presente em **75% a 85%**; Campbell: **85%** de um lado, **70%** dos dois |
+| **plantar** | antebraço-ponta; **2 ou 3** enxertos palma-ponta | Green: **80%** (HARVEY); Campbell: **93%** |
+| extensores longos dos dedos do pé | **três enxertos longos**, sempre presentes | fundem-se distal ao tornozelo |
+| flexor longo do 2º dedo do pé | **intrassinovial**, menos aderências | vantagem clínica não demonstrada |
+| extensor do indicador, metade ulnar do extensor do mínimo | um palma-ponta cada | Green |
+| FDS | grosso demais, o centro necrosa | Campbell desaconselha; Green aceita o do dedo lesado na **criança** e como enxerto curto nas zonas proximais |
 !fim
 
-!questoes relacionadas=mao-0079
-conceito: O enxerto primário na zona II tardia exige túnel fibro-ósseo satisfatório com A2 e A4 íntegras, passivo completo e BOYES 1; com polias perdidas ou cicatriz, dois tempos.
-como: O TARO 2014 perguntou, com o mesmo enunciado repetido no acervo, a condição que indica o enxerto primário na reparação tardia da zona II.
-armadilha: Indicar enxerto em um tempo num dedo rígido ou sem polias, que pede reconstrução em dois tempos.
-alerta: Nenhum dos livros traz a frase literal "permeabilidade das polias"; o Green's Operative Hand Surgery, 7ª ed. (p. 199) fala em "palma e túnel fibro-ósseo satisfatórios" e o Campbell's Operative Orthopaedics, 15ª ed. (p. 3169) exige A2 e A4 íntegras; os gabaritos oficiais de `mao-0079` e `mao-0079` foram preservados.
+!questoes central=mao-0572 treino=mao-2596,mao-2825
+conceito: O palmar longo é o enxerto preferido para palma-ponta (mesmo campo, comprimento e calibre adequados); o plantar serve para antebraço-ponta; os extensores do pé são os únicos com presença garantida e dão três enxertos longos.
+como: O TARO 2026 perguntou o enxerto preferido; os simulados cobraram os usos e a presença de cada doador.
+armadilha: Escolher o plantar por ser mais longo, quando a pergunta é pelo preferido, ou achar que o exame físico garante a presença do plantar.
 !fim
 
-# Dois tempos, polias reconstruídas e o polegar {radar=oportunidade}
+## A junção distal
 
-**HUNTER** publicou os implantes em **1965**; com SALISBURY, em **1971**, apresentou mais de 10 anos de **silicone reforçado com Dacron** (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 212 e 213). No **1º tempo**: exploração, correção de contraturas, **reconstrução das polias** e implante do bastão, que induz uma **pseudobainha**; no **2º tempo**, o enxerto. O intervalo diverge: o Green pede **pelo menos 6 semanas** (6 a 12), com passivo completo e sem inflamação; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3174), pede no mínimo cerca de **8 semanas**, em geral **3 meses**, com o bastão levado até cerca de **5 cm proximal à prega do punho**. As **contraindicações** são a **tenossinovite séptica**, recente ou antiga, e o comprometimento neurovascular grave, em que artrodese ou amputação podem ser melhores (Green, p. 217). No 2º tempo, o motor mais usado é a **massa comum do FDP**; junção no antebraço pede enxerto longo, de preferência o **plantar** (p. 218).
+A junção **distal vem primeiro**, para que a tensão seja ajustada na proximal (Green 7, p. 206 e 210). As opções: sutura ao coto do FDP ou entrelaçamento nele; sem coto, **pull-out** de BUNNELL modificado ou âncoras. No pull-out em volta do osso, as agulhas saem na unha **3 a 4 mm distal à lúnula** e cerca de 2 mm da linha média (p. 207). Na criança com fise aberta, divide-se o coto longitudinalmente e puxa-se o enxerto pela polpa, com botão por 4 a 6 semanas (p. 208 e 209). O **túnel ósseo transverso** na base da falange distal exige enxerto fino e arrisca **fratura articular** (p. 208). Os autores preferem **âncora metálica** em osso bom (a absorvível já causou osteólise: GALANO e colaboradores, Hand 5:307-312, 2010, citado na lista do capítulo) e pull-out em osso ruim (p. 210).
 
-**Resultados** (Green, p. 221): LEVERSEDGE, **64%** em um tempo e **55%** em múltiplos; COYLE e LEDDY, **91%** do arco pré-operatório; FINSEN, **42%** com 3ª cirurgia. A **sinovite** após o 1º tempo caiu de 15% a 20% para **8%**, com culturas negativas (p. 225).
+## A junção proximal e o motor
 
-**PANEVA-HOLEVICH** combinou-se depois com o silicone no 1º tempo (Fig. 6.36); a vantagem é ter **uma só junção distal** no 2º tempo e transplantar um segmento **intrassinovial** do FDS (p. 214).
+O motor preferido é o **FDP** do próprio dedo, cortado logo **distal à origem do lumbrical**; se ele não serve, o **FDS** do mesmo dedo; às vezes, término-lateral num FDP vizinho (Green 7, p. 210). A junção é o **PULVERTAFT** término-lateral, com três pontos em U de 3-0, e a tensão é definida depois do **primeiro passe** (p. 210). No preparo do dedo, ressecam-se os restos até deixar as junções **distal à A4** e **proximal à A2**; mantêm-se **1 a 2 cm do coto do FDP** distal (para a junção) e **1 a 2 cm da inserção do FDS** (o leito dorsal fica melhor e a IFP fica protegida contra o **pescoço de cisne**). O enxerto só é colhido **depois** de o dedo estar preparado, e é passado com sonda pediátrica, um implante ou o passador de SWANSON (p. 209 e 210).
+
+## A tensão: a cascata
+
+A tensão é o ponto em que o enxerto dá certo ou cria uma síndrome. A regra do Green 7 (p. 211, Fig. 6.33) é reproduzir a **cascata** normal, ou deixá-la levemente aumentada: com o **punho em posição neutra**, cada dedo cai em um pouco **menos flexão que o vizinho ulnar** (o mínimo é o mais fletido, o indicador o menos). Curto demais, o enxerto trava o ventre comum do FDP e dá **quadriga**; longo demais, o FDP puxa o lumbrical antes de fletir o dedo e dá **lumbrical plus**. O Campbell pede, com o punho estendido, flexão **igual ou um pouco maior** que a dos vizinhos e proíbe suturar o lumbrical à junção (p. 3170).
+
+No pós-operatório (Green 7, p. 211): órtese dorsal estática com punho neutro, MCF a **45 graus** e IF neutras, por até 6 semanas; passivo em 2 a 3 dias; place and hold e arco curto com 2 semanas; bloqueio ativo com 4; resistência com 6. No Campbell, o pull-out sai em cerca de **28 dias**, a proteção vai a **8 semanas** e a atividade vigorosa espera **12 a 14 semanas** (p. 3170).
+
+# Dois tempos: HUNTER e PANEVA-HOLEVICH {radar=confirmado}
+
+## A ideia do bastão
+
+Quando o túnel está destruído, um enxerto em um tempo grudaria do início ao fim. A solução de **HUNTER** foi construir primeiro um túnel novo: um **implante de silicone** colocado na bainha induz, em semanas, uma **pseudobainha** lisa, e só então o enxerto é passado por ela. HUNTER apresentou os implantes em 1965 e, com SALISBURY, publicou mais de dez anos de experiência com o **silicone reforçado com Dacron** (HUNTER e SALISBURY, J Bone Joint Surg Am 53:829-858, 1971; PMID 4934073; Green 7, p. 212 e 213).
+
+A pseudobainha normal é **mole, flexível e translúcida**; com sinovite, fica espessa (p. 213, eFig. 6.3). Numa série de 109 dedos, as complicações do primeiro tempo foram dobra do bastão, ruptura distal, migração, sinovite e infecção (p. 213).
+
+## Indicações e contraindicações
+
+O primeiro tempo está indicado (Green 7, p. 217) quando há **aderência extensa** com falha do reparo; **esmagamento** com fratura ou lesão de pele; **falha de cirurgias** anteriores; **polias danificadas**; **contratura articular**; necessidade de **reconstruir nervo ou artéria**; e **pseudartrose**. As **contraindicações** são a **tenossinovite séptica**, recente ou antiga (o implante é um corpo estranho num leito que já infectou), e o **comprometimento neurovascular grave**, em que o paciente é mau candidato e a **artrodese ou a amputação** podem ser melhores.
+
+!questoes central=mao-1073 treino=mao-2851
+conceito: A tenossinovite séptica, recente ou antiga, é a contraindicação do implante em dois tempos; lesão de polias, contratura articular e necessidade de reconstruir nervo ou artéria são indicações.
+como: A PUC-SP 2019 perguntou a principal contraindicação da correção em dois estágios.
+armadilha: Achar que a lesão de polias ou a contratura contraindica o primeiro tempo; elas são justamente o motivo dele.
+alerta: A PUC-SP 2019 deu como resposta a necessidade de reconstrução de nervos digitais; pelo Green 7 (p. 217), a reconstrução de nervo é indicação do primeiro tempo e a contraindicação é a tenossinovite séptica (alternativa A). O gabarito oficial foi preservado.
+!fim
+
+## O primeiro tempo
+
+A técnica (Green 7, p. 214 a 216): incisão mediolateral; **preservar todas as anulares** e todo material de polia; deixar **2 cm do FDS** na falange média; seccionar o FDS perto da junção musculotendínea por incisão no antebraço e o FDP na origem do lumbrical; capsulectomia e liberação da placa volar se houver contratura. O implante tem **4 mm** (no homem, 5 a 6 mm). O mínimo indispensável são **A2 e A4**, e o ideal são quatro polias. A técnica é "**no touch**": o **talco** das luvas inflama a bainha. O implante é fixado distalmente com polipropileno 3-0 ou fio de aço. Puxando o implante, o cirurgião vê se há **corda de arco**: se houver, a polia é reconstruída na hora; a A2 nova vai na **metade proximal da falange proximal**, a A4 no **meio da falange média** (p. 215 e 216).
+
+No pós-operatório do primeiro tempo, o **punho fica em cerca de 35 graus de flexão**, não neutro: assim o implante desliza para proximal, a bainha proximal fica mais longa e o bastão não dobra. MCF a 60 a 70 graus, IF estendidas, passivo em 2 a 3 dias, com o dedo preso aos vizinhos ("trapping"); o nervo, se reparado, vai com conduto ou aloenxerto para não precisar imobilizar (p. 216 e 217).
+
+## O segundo tempo
+
+O enxerto entra **6 a 12 semanas** depois do primeiro tempo (Green 7, p. 213); os autores esperam cerca de **6 semanas**, e os pontos críticos exigem **pelo menos 6 semanas**, com feridas macias, articulações móveis e passivo completo; o tempo é individualizado (p. 216 a 218). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3174), pede no mínimo cerca de **8 semanas**, em geral **3 meses**, com o bastão levado até cerca de **5 cm proximal à prega do punho**.
+
+Na técnica do segundo tempo (Green 7, p. 217 e 218), uma incisão pequena distal, sem lesar a A4; o motor é a **massa comum do FDP** (médio, anular e mínimo, unidos por entrelaçamento), e no indicador o FDP independente; o FDS entra se o FDP for ruim. Se a junção é no **antebraço**, o enxerto é longo (**plantar**, de preferência, ou extensor do pé); se a palma está sem trauma, junção na **palma** com enxerto curto (**palmar**), no FDP junto à origem do lumbrical. A junção não pode bater no retináculo com punho e dedos estendidos. A tensão é ajustada depois do primeiro passe, com cascata levemente aumentada. Pós-operatório: punho neutro, MCF a 45 graus, IF neutras; arco curto e place and hold com 2 semanas; resistência com 4 a 6; crianças e pouco colaboradores imobilizados, com movimento a partir de 3 semanas e bloqueio com 4 (p. 217).
+
+## PANEVA-HOLEVICH: o FDS vira enxerto
+
+**PANEVA-HOLEVICH** publicou em 1969 uma tenoplastia em dois tempos que dispensa um doador distante (PANEVA-HOLEVICH, J Bone Joint Surg Am 51:21-32, 1969; PMID 5764348; Green 7, p. 213 e 214, Fig. 6.36):
+
+- **Primeiro tempo**: os tendões são retirados da bainha, seccionados na palma, e o **FDS é suturado ao FDP na palma**, em alça. Essa é a futura junção proximal, que cicatriza em paz.
+- **Segundo tempo**, cerca de 6 semanas depois: o **FDS é cortado na junção musculotendínea**, no antebraço, e passado para distal pela bainha até a falange distal ou o coto do FDP. O motor é o FDP, que agora puxa o FDS pela alça palmar.
+
+As vantagens são três: **uma só junção** no segundo tempo (a distal), porque a proximal já cicatrizou; o enxerto é um segmento **intrassinovial** do próprio FDS; e não se gasta doador, o que serve em dedos muito lesados e em quem tem poucos doadores. A técnica foi depois **combinada com o bastão de silicone** no primeiro tempo (bastão mais grosso, porque o FDS é maior), com tenólise da junção no segundo tempo, se preciso, e tensão um pouco maior que a cascata (Fig. 6.36). BERIS descreveu a reconstrução em dois tempos com bastão e enxerto intrassinovial pediculado (J Hand Surg Am 28:652-660, 2003, citado na lista do capítulo).
+
+!questoes central=mao-0230,mao-1357 treino=mao-2111,mao-2026,mao-2430
+conceito: Na técnica de PANEVA-HOLEVICH, o FDS é suturado ao FDP na palma no primeiro tempo e, no segundo, cortado no antebraço e levado pela bainha até a falange distal; o FDS é o enxerto e o tendão fixado distalmente; na versão modificada, um bastão de silicone é colocado no primeiro tempo.
+como: Uma prova de Ortopedia e a USP-SP 2025 perguntaram o enxerto e a base da técnica; os simulados da SBCM 2022 e 2024 e do SIMÃO 2022, o tendão fixado distalmente e a afirmação correta.
+armadilha: Marcar palmar longo ou plantar, que são os enxertos do HUNTER; ou achar que o FDP é o enxerto.
+!fim
+
+## Os resultados
+
+Os resultados dos enxertos são **inferiores aos do reparo primário** (Green 7, p. 221). LEVERSEDGE e colaboradores, com enxerto intrassinovial e movimento ativo precoce, tiveram resultado bom ou excelente em **64%** dos enxertos em um tempo, **55%** dos de vários tempos e **73%** quando o dedo era único (J Hand Surg Am 25:721-730, 2000; PMID 10913214). COYLE, LEDDY e LEDDY, em dois tempos da ponta à palma, recuperaram **91%** do arco pré-operatório (J Hand Surg Am 27:581-585, 2002; PMID 12132079). FINSEN, com 43 pacientes em dois tempos acompanhados por 3 a 15 anos, relatou **44 dias** fora do trabalho depois do primeiro tempo e **104** depois do segundo; **42%** precisaram de terceira cirurgia, **28%** não repetiriam e **28%** tiveram resultado ruim (Scand J Plast Reconstr Surg Hand Surg 37:159-162, 2003; PMID 12841617).
+
+## Transferências de tecido composto e implantes ativos
+
+Os aloenxertos compostos do sistema flexor (bainha e tendão juntos), propostos por PEACOCK, HUESTON, CHACHA (J Bone Joint Surg Am 56:960-978, 1974, citado na lista do capítulo) e ASENCIO, não têm aplicação clínica atual; e os implantes ativos permanentes falharam por falta de fixação biológica durável (Green 7, p. 214).
+
+# O polegar crônico e as zonas proximais {radar=oportunidade}
+
+## O FPL reconstruído
+
+O polegar tolera bem a perda: **30 a 40 graus** de flexão ativa da IF já dão função excelente, e por isso a reconstrução do FPL é mais indicada que a dos dedos (Green 7, p. 217). As opções são **enxerto intercalar** (em um ou dois tempos) e **transferência** (p. 218).
+
+No **enxerto livre** (p. 218 a 220): zigue-zague volar; **preservar a polia oblíqua**; polias incompetentes = dois tempos; incisão de 6 cm volar-radial no antebraço distal; doador **palmar** ou **plantar**; junção distal por entrelaçamento ou âncora (pull-out se preciso); proximal por PULVERTAFT no FPL. A **tensão**: com o **punho neutro** e o polegar em abdução palmar diante do 2º metacarpo, a IF deve ficar em cerca de **30 graus de flexão**. A órtese deixa o punho entre neutro e 5 graus de flexão, a CMC em 30 graus de abdução e MCF e IF a 20 a 30 graus; bloqueio com 6 semanas.
+
+Nos **dois tempos**, indicados por bainha muito cicatrizada ou polias destruídas, basta, se a oblíqua foi destruída, uma polia sobre o implante na **metade proximal da falange proximal**, em alça **dorsal** (belt loop) por baixo do aparelho extensor (p. 219 e 220).
+
+A **transferência do FDS do anular** (p. 219; eFig. 6.1) é a escolha quando o músculo do FPL não serve, e é muito útil na **ruptura do FPL depois de placa volar no rádio distal**, em que o músculo já encurtou. O FDS é cortado cerca de 2 cm proximal à IFP e recuperado no antebraço (é o mais ulnar dos dois superficiais ali); a junção distal é por entrelaçamento no coto, com tensão mais difícil de acertar, e o paciente precisa treinar a flexão do polegar com o anular. SCHNEIDER e WILTSHIRE publicaram essa restauração (J Hand Surg Am 8:98-101, 1983; PMID 6827065).
+
+Sem FPL, com IF estável, o paciente pouco ativo pode não precisar de nada. Se a pinça precisa ser estável, ou se há lesão articular ou IF hiperextensível, faz-se a **artrodese da IF** (p. 219).
+
+!questoes treino=mao-1780,mao-2828,mao-2845,mao-2846,mao-2850
+conceito: Placa volar do rádio distal que ultrapassa a linha da borda volar pode romper o FPL por atrito; quando o FPL rompe tarde, o músculo encurta e a reconstrução costuma ser a transferência do FDS do anular.
+como: O simulado do SIMÃO 2026 trouxe uma placa volar apoiada sobre a borda volar, distal à linha divisória, e pediu a conduta.
+armadilha: Achar que a ausência de sintomas afasta o risco de ruptura.
+alerta: A classificação de SOONG não está no capítulo 6; o Green 7 (p. 219) só cita a ruptura do FPL depois de placa volar como indicação da transferência do FDS do anular.
+!fim
+
+## Zonas 3, 4 e 5 tardias
+
+O prognóstico é melhor que na zona 2 (Green 7, p. 219). Para um gap de **2 a 5 cm** no FDP na palma ou no punho, o enxerto **interposto curto** resolve, e qualquer doador serve: o FDS lesado ou o palmar, escolhendo o mais dispensável (p. 219 e 220). Outra opção é **transferir o FDS vizinho**, passado profundo ao feixe ou ao mediano e suturado ao coto distal (p. 220; eFig. 6.2: FDS do médio para o FDP do indicador). E há a **sutura término-lateral num FDP vizinho**, por entrelaçamento, mais útil na zona 5 e também na zona 3 distal; ela pode impactar na A1 em extensão, e então a A1 é dividida (p. 220). O pós-operatório: punho neutro, MCF a 40 a 50 graus, IF neutras; tala até 4 semanas; bloqueio e resistência com 4 a 5 semanas (p. 221).
+
+# A reconstrução das polias {radar=oportunidade}
+
+## Quando reconstruir
+
+No enxerto em um tempo, guarda-se **todo** material de polia. Se falta polia, ela precisa ser reconstruída, e a reconstrução passa a ser em **dois tempos** (Green 7, p. 221). No primeiro tempo de dois, uma polia lesada pode ser suturada sobre o implante; polias danificadas, mas íntegras, servem, porque não aderem ao implante; uma polia estreita se dilata com sonda uterina pequena.
+
+## De onde tirar o tecido
+
+Os doadores são a sobra do enxerto, o **palmar longo** e, em leito muito cicatrizado, o flexor longo dos dedos do pé, intrassinovial (Green 7, p. 221). In vitro, fontes **intrassinoviais** (retináculo extensor, FDS) deslizam melhor que as extrassinoviais (palmar, extensor comum); entre as extrassinoviais, o **extensor** é melhor que o palmar; e **envolver** a falange é melhor que tecer o enxerto em restos de polia (NISHIDA, AMADIO, BETTINGER e colaboradores, J Hand Surg Am 23:665-672, 1998; PMID 9708381; p. 222). SEILER e colaboradores mostraram, em cães, o efeito da tensão e da fonte do enxerto na polia reconstruída (J Bone Joint Surg Am 80:669-703, 1998, citado na lista do capítulo).
+
+## As técnicas
 
 !tabela Reconstrução das polias (Green 7, cap. 6, p. 221 a 223; Campbell 15, cap. 71, p. 3172)
 | Técnica | Como | Nota |
 | --- | --- | --- |
-| BUNNELL | enxerto livre **circundando a falange** | preferida do Green, **profunda ao extensor**; mínimo **2 voltas**; A2 inteira 3 a 4 voltas; **6 a 8 cm** por volta |
-| LIN | **três voltas** na falange proximal | aproxima a força de um ânulo normal |
-| cauda do FDS | inserção preservada, ponta suturada sobre o implante | excelente na área de **A3** |
-| LISTER | **retináculo extensor** do punho | ótima superfície de deslizamento; coleta difícil |
-| KAREV | "**passador de cinto**" na **placa volar** | o mais eficiente mecanicamente (WIDSTROM) |
-| Campbell 71.10 | tira de **6 cm por 0,25 cm** | A2 **profunda** ao extensor; A4 **superficial**; **nunca sobre a IFP** |
+| BUNNELL | enxerto livre **envolvendo a falange** | original dorsal ao extensor na falange média e profundo a ele na proximal; volumoso, fácil de tensionar |
+| LIN | **três voltas** na falange proximal | aproxima a força de uma anular normal |
+| KLEINERT e BENNETT | enxerto fino tecido no **rebordo** que sempre sobra da polia antiga | "ever-present rim" |
+| DOYLE e BLYTHE | enxerto por **túnel ósseo** na falange, suturado nele mesmo | durável, mas **enfraquece a falange** e arrisca **fratura** |
+| cauda do FDS | inserção preservada, ponta suturada sobre o implante | excelente na região da **A3** |
+| LISTER | **retináculo extensor** (4º compartimento, 6 a 8 cm) em volta da falange | face profunda é superfície ideal de deslizamento; difícil e demorado |
+| KAREV | "**passador de cinto**" em fendas na **placa volar** | o mais **eficiente** mecanicamente (WIDSTROM); não dá movimento articular normal |
+| preferida do Green | BUNNELL envolvente, **profundo ao extensor** nas falanges proximal e média, por dentro dos feixes | mínimo **2 voltas**; A2 inteira 3 a 4 voltas; **6 a 8 cm** por volta |
+| Campbell 71.10 | tira de **6 cm por 0,25 cm** | A2 **profunda** ao extensor; A4 **superficial**; nunca sobre a IFP |
 !fim
 
-**O polegar** funciona bem com só **30 a 40 graus** de flexão da IF; as opções são enxerto livre, **transferência do FDS do anular** (útil na ruptura do FPL por **placa volar no rádio distal**) e artrodese da IF (Green, p. 217 a 220).
+A história dessas técnicas é de troca entre força e deslizamento. BUNNELL envolveu a falange com enxerto, e a dupla volta é forte o bastante para movimento ativo protegido; LIN, AMADIO, AN e colaboradores mostraram que **três voltas** na falange proximal se aproximam da polia normal (J Hand Surg Br 14:278-282, 1989; PMID 2794704). LISTER usou o **retináculo extensor**, cuja face profunda já é uma superfície sinovial de deslizamento (J Hand Surg Am 4:461-464, 1979; PMID 501060); TANG usou a bainha do 1º compartimento. KAREV passou o enxerto por fendas na placa volar, como um **passador de cinto** (J Hand Surg Am 9:923-924, 1984; PMID 6512213). E WIDSTROM, DOYLE, JOHNSON e colaboradores compararam seis métodos em cadáver (J Hand Surg Am 14:821-825, 1989; PMID 2794398): o **KAREV** foi o mais **eficiente** mecanicamente, e o **envolvente** o mais **forte** e resistente à falha (p. 222).
 
-**O "dedo de FDS"** restaura só a IFP, com o enxerto na **falange média** e a IFD instável fixada a **20 a 30 graus** (Green, p. 226).
+A preferência dos autores (p. 222 e 223): BUNNELL envolvente, enxerto **profundo ao extensor** nas falanges proximal e média, **por dentro dos feixes neurovasculares**, com palmar longo (flexor longo dos dedos do pé nos casos complexos), **mínimo de duas voltas** para A2 e A4, acabamento tipo PULVERTAFT e o reparo girado para fora da face volar. A **A2 inteira** mede **18 a 20 mm** e pede **3 a 4 voltas**; a **A4** com 2 voltas dá cerca de **10 mm**; cada volta consome **6 a 8 cm** de enxerto (os pontos críticos falam em 16 cm para uma A2 de duas voltas). No pós-operatório, um **anel protetor** externo por 4 a 6 semanas (p. 223).
 
-# Quadriga, lumbrical plus e as complicações do enxerto {radar=oportunidade}
+# As complicações do enxerto: quadriga, lumbrical plus e outras {radar=confirmado}
 
-A **aderência** é o problema **mais comum** também após enxerto, e o período crítico de terapia é de **8 semanas**; a tenólise do enxerto só vem após platô de **3 a 6 meses** (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 224). A **ruptura do enxerto** é mais frequente na **junção distal**, e o paciente costuma saber onde rompeu.
+## Aderência e ruptura
 
-**A síndrome da quadriga** é a perda de flexão dos dedos vizinhos normais quando um FDP é encurtado ou aderido, porque os FDP compartilham a origem musculotendínea; o Green a atribui a **BUNNELL** e depois **VERDAN**, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3156 e 3177), a VERDAN. As causas, segundo o Green (p. 225): FDP **avançado demais** na zona 1, **enxerto curto demais**, amputação com o flexor suturado ao extensor sobre a ponta, FDP aderido. O Campbell explica a mecânica: o enxerto **tenso** faz o dedo chegar à palma antes dos outros e bloqueia a excursão dos músculos proximais; a espiral do FDS não corrigida também causa quadriga. Trata-se com alongamento, tenólise ou secção do tendão culpado.
+A **aderência** é o problema **mais comum** depois do enxerto, como em toda cirurgia de flexor e em qualquer nível; o período crítico de terapia é de **8 semanas**, e a tenólise do enxerto (um "terceiro tempo") só vem depois do platô e de pelo menos **3 a 6 meses** (Green 7, p. 224).
 
-**O lumbrical plus** (PARKES) é o inverso: enxerto **frouxo, longo demais**, e o FDP passa a tracionar o lumbrical, que **estende paradoxalmente as IF**. O Campbell (p. 3178, Fig. 71.51 e 71.52) acrescenta que aparece também após amputação pela falange média ou secção do FDP, envolve mais o **médio** e se revela no teste de PARKES: passivo completo, mas na preensão forte a flexão é incompleta, com extensão das IF. O tratamento é a **secção do tendão do lumbrical**, pelo espaço interdigital radial, sob anestesia local.
+A **ruptura do enxerto** é rara com boa técnica, e o paciente costuma saber onde rompeu. É **mais frequente na junção distal**, onde o enxerto se prende ao osso de pior qualidade e onde a carga se concentra. Se não dá para avançar, prende-se o enxerto na falange média, e o dedo fica funcionando como um "dedo de FDS". Afrouxamento do entrelaçado significa ruptura proximal, e o antebraço deve ser explorado cedo. Há relato de ruptura intratendínea tardia (p. 224). A falha do implante no primeiro tempo é rara com o implante reforçado com Dacron; o implante **não deve ser suturado a um motor** ("implante ativo"): ele rompe, irrita, e se a junção proximal for mais forte que a distal, a distal rompe (p. 224).
+
+A **ruptura de polia** se anuncia pela perda do movimento ganho e por corda de arco; bloqueia-se com a mão contralateral, um bloco de madeira ou um anel, e, no serviço dos autores, ela foi quase eliminada com o método envolvente (p. 224).
+
+!questoes central=mao-0231 treino=mao-2834
+conceito: A aderência é a complicação mais comum da reconstrução com enxerto, como de toda cirurgia de flexor; a ruptura é rara e mais frequente na junção distal.
+como: Uma prova de Ortopedia perguntou a complicação mais comum da reconstrução com enxerto.
+armadilha: Marcar ruptura ou quadriga por serem as mais lembradas.
+!fim
+
+## A síndrome da quadriga
+
+A **quadriga** é a perda de flexão dos dedos **vizinhos normais** quando um FDP é **encurtado ou aderido** por lesão, reparo ou reconstrução (Green 7, p. 224 e 225). Foi descrita por BUNNELL e depois por VERDAN (VERDAN, Surg Clin North Am 40:425, 1960, citado na lista do capítulo). O mecanismo é a **origem musculotendínea comum** dos FDP: se um tendão não consegue mais excursionar para proximal, ele segura o ventre comum como uma rédea curta, e os outros dedos não completam a flexão. O dedo culpado, por sua vez, fica em **flexão**.
+
+As causas (p. 225): FDP **avançado demais** na zona 1 (mais de 1 cm); **enxerto curto demais**; amputação com o flexor suturado ao extensor sobre a ponta do coto; amputação com o FDP aderido à falange proximal. O Campbell (p. 3156 e 3177) atribui a descrição a VERDAN, explica que o enxerto **tenso** faz o dedo chegar à palma antes dos outros e lembra que a espiral do FDS não corrigida também causa quadriga. O tratamento é **alongar, liberar (tenólise) ou seccionar** o tendão culpado, o que devolve a excursão ao ventre comum.
+
+!questoes central=mao-0522,mao-0670,mao-1078 treino=mao-2370,mao-2827,mao-2840,mao-2856,mao-2867
+conceito: A quadriga é a perda de flexão dos dedos vizinhos quando um FDP fica curto ou aderido, por avanço maior que 1 cm na zona 1, enxerto curto ou tenso, ou amputação com o flexor preso; trata-se alongando, liberando ou seccionando o tendão culpado.
+como: O TARO 2010 perguntou a causa da quadriga no enxerto; a FMRP-USP 2026, quais dedos ela afeta; a PUC-SP 2019, a situação em que ocorre; o simulado do SIMÃO 2024, a situação aguda que a provoca.
+armadilha: Achar que o enxerto longo causa quadriga (causa lumbrical plus), ou que o dedo afetado é o próprio dedo lesado; quem perde flexão são os vizinhos.
+!fim
+
+## O lumbrical plus
+
+O **lumbrical plus** é o inverso (PARKES, J Bone Joint Surg Br 53:236-239, 1971; PMID 5578219; Green 7, p. 225). Com o enxerto **longo demais**, com tensão insuficiente, a contração do FDP não chega à falange distal: ela gasta a excursão puxando a **origem do lumbrical**, que normalmente vai para proximal junto com o FDP. O lumbrical tracionado estende as IF pela banda lateral, e o paciente, ao tentar fletir, **estende paradoxalmente as interfalângicas**. Previne-se com o comprimento correto do enxerto.
+
+O Campbell (p. 3178, Figs. 71.51 e 71.52) acrescenta que ele aparece também depois de amputação pela falange média ou secção do FDP distal ao lumbrical, envolve mais o **médio** e se revela no teste de PARKES: passivo completo, mas na preensão forte a flexão é incompleta, com extensão das IF. O tratamento é a **secção do tendão do lumbrical**, pelo espaço interdigital radial, sob anestesia local.
 
 !tabela Quadriga contra lumbrical plus (Green 7, cap. 6, p. 224 e 225; Campbell 15, cap. 71, p. 3177 e 3178)
 | Item | Quadriga | Lumbrical plus |
@@ -394,18 +997,36 @@ A **aderência** é o problema **mais comum** também após enxerto, e o períod
 | enxerto | **curto / tenso** | **longo / frouxo** |
 | quem sofre | os **dedos vizinhos** perdem flexão | o **próprio dedo** estende as IF ao fletir |
 | mecanismo | origem comum do FDP travada | FDP traciona o lumbrical |
-| outras causas | avanço maior que 1 cm na zona 1; espiral do FDS | amputação pela falange média; sutura do lumbrical |
+| outras causas | avanço maior que 1 cm na zona 1; espiral do FDS; amputação com flexor preso | amputação pela falange média; sutura do lumbrical |
 | tratamento | alongar, tenólise ou soltar o tendão culpado | **seccionar o lumbrical** |
 !fim
 
-A **hiperextensão da IFP** (pescoço de cisne) aparece no dedo enxertado sem FDS e com articulações frouxas, e se corrige com tenodese usando uma fita do FDS (Green, p. 225).
+## Pescoço de cisne, sinovite, infecção e contratura
+
+A **hiperextensão da IFP** (pescoço de cisne) aparece no dedo enxertado que ficou **sem FDS**, sobretudo com articulações frouxas: sem o FDS, nada segura a IFP contra a tração do extensor, e o paciente tem dificuldade de iniciar a flexão da IFP. Previne-se ou corrige-se com uma **tenodese** usando **uma fita do FDS** através da IFP (Green 7, p. 225), e é por isso que se deixa 1 a 2 cm da inserção do FDS no preparo do enxerto.
+
+A **sinovite** depois do primeiro tempo dá calor, crepitação, edema e uma bainha espessa no segundo tempo. A incidência caiu de 15% a 20% para cerca de **8%**, com **culturas negativas**. As causas são ruptura da junção distal do implante, dobra ou atrito por polia apertada ou inadequada e o **talco**. Trata-se com repouso, passivo de arco curto e talas; se não controla, antecipa-se o segundo tempo. Radiografias em perfil em flexão e extensão mostram a excursão e a dobra do implante (p. 225).
+
+A **infecção** depois do primeiro tempo é desastrosa: tenta-se irrigação com cateteres; estabelecida, retira-se o implante, espera-se **3 a 6 meses** e coloca-se outro (p. 225).
+
+A **deformidade tardia em flexão** vem de polia incompetente, tala mal feita ou contratura da ferida; trata-se com tala de extensão noturna e alongamento até 1 ano, e, se crônica, com capsulotomia e tenólise (p. 225).
+
+O futuro, segundo o Green (p. 225), está nos enxertos **acelularizados** e repovoados (CHONG e colaboradores, Plast Reconstr Surg 123:1759-1766, 2009; PMID 19483576), nas células-tronco e na modificação da superfície do enxerto com **ácido hialurônico derivatizado com carbodiimida** e gelatina ou lubricina (ZHAO e colaboradores, J Bone Joint Surg Am 92:2817-2828, 2010; PMID 21123612).
+
+## O dedo de FDS: salvar só a IFP
+
+Quando a IFD não tem chance, o objetivo pode ser mais modesto: devolver só a flexão da IFP, o chamado **"dedo de FDS"** (Green 7, p. 226), embora em geral o motor seja o FDP inserido na falange média. Três situações: **tipo I**, IFD inadequada por lesão articular ou do extensor (artrodese da IFD); **tipo II**, sistema flexor ruim por corda de arco apesar de reconstruções de polia; **tipo III**, ruptura da inserção distal depois de enxerto. O enxerto é fixado na **falange média** (pull-out, restos de polia, cauda do FDS com âncora ou periósteo), com a tensão ajustada para que, com o punho neutro, a IFP fique fletida como a dos vizinhos; de preferência sob anestesia local, com o paciente ajudando. Se a IFD é instável, faz-se no mesmo ato artrodese ou tenodese a **20 a 30 graus** de flexão. Quando se reconstrói polia, um anel de plástico de cerca de 2 cm protege por pelo menos 8 semanas.
 
 # Flexores na criança {radar=oportunidade}
 
-A criança cicatriza rápido e **raramente desenvolve contratura**, e o reparo direto precoce vale em todas as idades (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 223). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3161), usa fio **5-0** (circunferencial **6-0 e 7-0**) e às vezes **gesso axilopalmar até 28 dias**. O movimento ativo total cai com a idade: **82%** acima de 10 anos, **77%** entre 4 e 10 e **54%** abaixo de 4; SIKORA obteve **100%** em **40 de 47** crianças após **4 semanas** imobilizadas.
+## O diagnóstico e o reparo agudo
 
-Para **enxerto**, o Green espera **7 anos ou mais**, faz a junção distal sem violar a **epífise** e prefere **palmar longo** ou **FDS do dedo lesado**; o **plantar é fino demais** (p. 224).
+A criança não colabora com o exame, e o diagnóstico depende de truques que provocam a flexão, como o efeito tenodese e a compressão do antebraço (Green 7, p. 223). A boa notícia é biológica: a criança **cicatriza rápido** e **raramente desenvolve contratura**, salvo lesão articular direta; o reparo direto precoce vale em todas as idades e níveis. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3161), usa fio **5-0** (circunferencial **6-0 e 7-0**) e às vezes **gesso axilopalmar até 28 dias**. O movimento ativo total cai com a idade: **82%** acima de 10 anos, **77%** entre 4 e 10 e **54%** abaixo de 4; SIKORA obteve **100%** em **40 de 47** crianças imobilizadas por **4 semanas**. KATO e colaboradores acompanharam reparos da zona 2 em menores de 6 anos (J Pediatr Orthop 22:732-735, 2002, citado na lista do capítulo).
+
+## O enxerto na criança
+
+Para **enxerto**, o Green 7 espera até os **7 anos ou mais**, quando a criança colabora com a reabilitação (p. 223). A técnica muda num ponto: a junção distal **não atravessa a falange distal**, para não lesar a fise; o enxerto é passado em volta do osso, entrelaçado no coto ou puxado pela polpa, e, sem coto, os furos ficam **distais à fise**. O doador é o **palmar longo** ou o **FDS do dedo lesado**; o **plantar é fino demais**. O enxerto **cresce com a mão**, mas HAGE e DUPUIS notaram que o dedo fica um pouco menor (Br J Plast Surg 18:341-349, 1965; PMID 5891979). Os pontos de pele são absorvíveis (p. 224).
 
 # Fechamento {radar=fundamento}
 
-> **Na prova, o que a versão 2 acrescenta:** túnel do carpo com **FDS do médio e anular por cima** e **FDP no plano do FPL**; isquemia do **FDS sob A2**, do **FDP sob A2 e A4**; primário até **12 h**, secundário tardio após **4 semanas**; 3-0 **52%** mais forte que 4-0; epitendínea suporta **50%** da carga; diâmetros diferentes = **PULVERTAFT**; gap **> 3 mm** não ganha força; parcial: Green **50%**, Campbell **60%**; LEDDY e PACKER **IV** só no Green; FDP crônico: **tenodese se enxerto impossível**; tenólise em **18% a 25%**, não antes de **3 a 4 meses**; enxerto primário só com **BOYES 1** e **A2 e A4**; plantar **93%** (Campbell) ou **80%** (Green); quadriga = enxerto **curto**, lumbrical plus = **longo**.
+> **Na prova:** FDS com **duas cabeças**, inervado só pelo **mediano**; FDP com inervação **dupla** (ulnar e interósseo anterior); túnel do carpo com **FDS do médio e anular por cima** e **FDP no plano do FPL**; quiasma de CAMPER sobre a **parte distal da falange proximal**, fitas nos **três quintos médios** da falange média; A1, A3 e A5 nas **placas volares**, A2 na **falange proximal**, A4 na **falange média**; camada interna da polia = **ácido hialurônico**, média = **colágeno contra a translação palmar**; vínculo longo do FDP nasce do **FDS na IFP**; isquemia do **FDS sob A2**, do **FDP sob A2 e A4**; emergência só com **perfusão comprometida**, rotina até **7 dias**; multifilamentares mais fortes também às **6 semanas**; alça **travada** = transverso **superficial**; gap **> 3 mm** não ganha força; parcial: Green **50%**, Campbell **60%**; LEDDY e PACKER **I** palma e **3 semanas**, **II** IFP e **6 semanas**, **III** A4, **IV** fratura com tendão solto e US ou RM; incisão **mediolateral**; antebraço: **artéria, tendões do profundo ao superficial, nervo**; DURAN **3 a 5 mm**; força isolada com **10 semanas**; re-sutura até **3 semanas**; tenólise **não antes de 4 meses** e por último; **BOYES 3 = articular**, **4 = nervo**; junções **fora da bainha**; plantar **80%** (Green) ou **93%** (Campbell); cascata com **punho neutro**; FPL com IF a **30 graus**; HUNTER: **6 a 12 semanas** entre os tempos, punho a **35 graus** no 1º tempo, contraindicação = **tenossinovite séptica**; PANEVA-HOLEVICH = **FDS** como enxerto; DOYLE e BLYTHE = **fratura**; KAREV = mais **eficiente**; envolvente = mais **forte**; quadriga = enxerto **curto**, vizinhos perdem flexão; lumbrical plus = **longo**, o próprio dedo estende as IF.
