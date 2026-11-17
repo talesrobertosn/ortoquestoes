@@ -363,7 +363,7 @@ São os grandes **fasciocutâneos** regionais do membro superior (Green's Operat
 | interóssea posterior | entre ECU e extensor do mínimo | 2 cm proximal ao estiloide ulnar | variações; necrose parcial frequente |
 !fim
 
-!questoes central=mao-0015 relacionadas=mao-0622,mao-1327,mao-0413,mao-0854,mao-0518,mao-0845,mao-1900,mao-0271
+!questoes central=mao-0015 relacionadas=mao-0622,mao-1327,mao-0413,mao-0854,mao-0518,mao-0845,mao-1900,mao-0271,mao-1507
 conceito: Interóssea posterior: pedículo entre ECU e extensor do mínimo, pivô 2 cm proximal ao estiloide ulnar; radial: exige ALLEN normal, inervação pelo cutâneo lateral do antebraço (musculocutâneo), crítica maior na área doadora; perda de pele no dorso da mão pede fasciocutâneo.
 como: TARO 2009 e 2019 pediram o septo da interóssea posterior; TEOT 2025 e UFG 2017, o teste de ALLEN; TARO 2011, a inervação do radial; INTO 2026, por imagem, o radial; ENARE 2025, a crítica ao radial; ENARE R4 2023, o tipo de retalho para o dorso.
 armadilha: Pôr o pedículo da interóssea posterior entre extensor dos dedos e mínimo, ou o pivô no carpo.
