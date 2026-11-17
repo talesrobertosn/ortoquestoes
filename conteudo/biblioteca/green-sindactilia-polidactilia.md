@@ -580,7 +580,7 @@ O exame mostra o que vai limitar o resultado (p. 1237 e 1238): a **extensão do 
 
 O tratamento tem dois princípios (p. 1238): **reduzir a mão a quatro dedos** e **construir um polegar** com os dedos retirados, usando as "peças de reposição" (BARTON e colaboradores, J Hand Surg Br, 1986, policização verdadeira; AL-QATTAN e colaboradores, J Hand Surg Eur, 2013, reconstrução sem policização formal). Os autores **policizam o dedo radial mais móvel** e retiram os mais rígidos (SIMÃO 2020); a pele dos dedos retirados aumenta a primeira comissura, e uma transferência tendinosa reforça o motor do novo polegar. Com **oito dedos**, o mais pré-axial pode ser policizado e o mais pós-axial amputado (Figs. 36.51 e 36.52).
 
-!questoes relacionadas=mao-0665,mao-2007
+!questoes relacionadas=mao-0665 treino=mao-2007
 conceito: Mão em espelho: duplicação simétrica com dedo central e três de cada lado, sete dedos e nenhum polegar; duas ulnas e nenhum rádio, punho com pouca extensão e cotovelo e antebraço rígidos; vem da duplicação da ZPA (sonic hedgehog); trata-se reduzindo a quatro dedos e policizando o dedo radial mais móvel.
 como: A FMRP-USP 2026 perguntou o centro de sinalização; o SIMÃO 2023, a característica que define a anomalia.
 armadilha: Dizer que o dedo mais radial é um polegar, ou ligar a mão em espelho à crista ectodérmica apical.

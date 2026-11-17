@@ -192,7 +192,7 @@ armadilha: Pôr a KIRNER na falange média ou no plano radioulnar, que é o da c
 alerta: Para `mao-0146`, o Campbell 15 (cap. 85, p. 3672 e 3673) traz cerca de dois terços de bilaterais e o tratamento não operatório abaixo de 30 graus; o gabarito oficial foi preservado.
 !fim
 
-# Ausência de dedos: transversal ou longitudinal {radar=confirmado}
+# Ausência de dedos: transversal ou longitudinal {radar=fundamento}
 
 ## A pergunta que decide a reconstrução
 
@@ -213,7 +213,7 @@ As questões do SBCM 2022 e 2023 e do SIMÃO 2022 e 2026 vivem desse quadro: a *
 
 A ausência também pode ser **adquirida** na infância (p. 1260): trabalho infantil, queimadura, lesão elétrica, trombose, embolia e a púrpura da **meningococcemia**. O raciocínio de reconstrução é o mesmo.
 
-!questoes relacionadas=mao-2154,mao-2241,mao-1723,mao-2603 treino=mao-2903
+!questoes treino=mao-2903,mao-2154,mao-2241,mao-1723,mao-2603
 conceito: Ausência transversal tem estruturas proximais presentes (banda de constrição, simbraquidactilia) e se reconstrói repondo a parte distal com dedo do pé; ausência longitudinal não tem os motores (polegar da deficiência radial, dedos ulnares da deficiência ulnar, fenda típica) e pede repor parte e motor, como na policização.
 como: O SBCM 2022 perguntou qual ausência é transversal; o SBCM 2023, qual condição causa ausência transversal; o SIMÃO 2026, o menino sem dedos no nível das cabeças dos metacarpos; o SIMÃO 2022, a afirmação de acordo com o Green.
 armadilha: Chamar a fenda típica de transversal, ou indicar policização numa ausência transversal com tendões e nervos presentes.
@@ -270,13 +270,13 @@ como: O TARO 2014 perguntou o tipo de PATTERSON da sindactilia fenestrada; o TEP
 armadilha: Chamar a acrossindactilia de falha de formação.
 !fim
 
-!questoes relacionadas=mao-1161,mao-2279,mao-2281 treino=mao-2928,mao-2932,mao-2951
+!questoes relacionadas=mao-1161 treino=mao-2928,mao-2932,mao-2951,mao-2279,mao-2281
 conceito: PATTERSON: 1 anel simples, 2 anel com deformidade distal e linfedema, 3 acrossindactilia (a pontas unidas, b comissuras distais, c sem comissura com seio proximal), 4 amputação intrauterina; a classificação descreve mas não guia o tratamento.
 como: A PUC-SP 2022 perguntou o subtipo da fusão só das pontas; o SIMÃO 2024, o tipo IV e o tipo da fusão com túnel de pele proximal.
 armadilha: Dar o tipo 2 à acrossindactilia, ou o tipo 4 ao anel com linfedema.
 !fim
 
-# A simbraquidactilia {radar=confirmado}
+# A simbraquidactilia {radar=fundamento}
 
 ## O nome e o lugar na classificação
 
@@ -329,7 +329,7 @@ O Green (p. 1258 a 1260) descreve o que se encontra:
 | formas leves com polegar e dedo competentes | sem tratamento |
 !fim
 
-!questoes relacionadas=mao-2415 treino=mao-2878,mao-2886
+!questoes treino=mao-2878,mao-2886,mao-2415
 conceito: Simbraquidactilia é deficiência transversal esporádica e unilateral, de defeito mesodérmico com ectoderma preservado (nubbins com unha); YAMAUCHI e TANABU contam o que falta: 1 trifalângico, 2 difalângico, 3 monofalângico, 4 afalângico, 5 ametacárpico, 6 acárpico, 7 antebraço; a falange média é a primeira a faltar; o nervo radial está quase sempre presente.
 como: O SIMÃO 2022 perguntou o tipo 4 de YAMAUCHI e TANABU.
 armadilha: Trocar afalangia por monofalangia, ou dizer que a simbraquidactilia é deficiência longitudinal.
@@ -411,7 +411,7 @@ como: A USP 2025 perguntou o tipo com polegar e indicador sindactilizados; a USP
 armadilha: Achar que a classificação conta dedos ou nubbins, ou dar o tipo IV à sindactilia polegar-indicador.
 !fim
 
-# Transferência de falange e de dedo do pé {radar=confirmado}
+# Transferência de falange e de dedo do pé {radar=fundamento}
 
 ## A falange livre: RADOCHA
 
@@ -441,7 +441,7 @@ A transferência de dedo do pé na criança ganhou força com LISTER (Plast Reco
 
 **Técnica e resultados.** Sem angiografia (em mais de 300 transferências sempre houve um vaso); dissecção **retrógrada** da artéria a partir da digital fibular do hálux (WEI, SILVERMAN e HSU, Plast Reconstr Surg, 1995), porque a primeira metatarsal **dorsal** é utilizável em dois terços dos pés e a **plantar** em um terço; nervo fibular profundo; osteotomia na metatarsofalângica; **fios de Kirschner longitudinais** (os cruzados atrapalham, lesam vasos e impedem corrigir a rotação; placas não, por causa das fises); uma artéria e uma veia, sem enxerto venoso; UTI por 24 horas e fios por 6 semanas. Em **66 transferências em 40 crianças**, a amplitude ativa média foi de **60 graus** e a discriminação de dois pontos de **4 a 5 mm**; em mais de 300, houve perda de uma transferência parcial; o **polegar** foi o receptor mais comum, e o 4º raio o segundo; **84% dos pais e 88% das crianças** acharam que a mão ficou melhor. A regra final: só operar se a transferência **acrescentar pelo menos um padrão de preensão** (p. 1269 e 1270).
 
-!questoes relacionadas=mao-2489 treino=mao-2927
+!questoes treino=mao-2927,mao-2489
 conceito: RADOCHA: a falange do pé não vascularizada só cresce se transferida antes dos 15 meses, com periósteo e com reparo de colaterais e tendões; o dedo do pé microcirúrgico (segundo artelho) é a reconstrução das deficiências transversais, com o polegar e uma CMC estável como indicação ideal, nunca antes de 1 ano.
 como: O SIMÃO 2021 perguntou até que idade a transferência de falange deve ser feita para crescer.
 armadilha: Aceitar idades de 2 a 10 anos para a falange livre, ou indicar dedo do pé na deficiência longitudinal sem motores.
@@ -476,7 +476,7 @@ A classificação é de FLATT, com o tipo IV acrescentado depois (Green, Tabela 
 
 A sequência I, II, III, IV segue a lógica **lipo, neuro, osso, metade do corpo**. As bancas trocam os números: neurofibromatose é o **II** (SBCM 2024); hiperostose, o **III** (SBCM 2023); hemi-hipertrofia, o **IV** (SIMÃO 2022). O gabarito oficial do SBCM 2025 marcou o tipo I para a neurofibromatose, o que não confere com o Green 7; pelo livro, o tipo I é a lipofibromatose. A diferença entre os nervos do I e do II caiu no SBCM 2015: na neurofibromatose, o nervo plexiforme tem mais **estroma fibrovascular** e aspecto **nodular**, e não fibrolipomatoso (p. 1278).
 
-!questoes relacionadas=mao-2094,mao-2240,mao-2425,mao-2155 treino=mao-2874,mao-2879,mao-2887,mao-2889,mao-2906,mao-2917,mao-2922,mao-2930,mao-2942,mao-2947,mao-2948
+!questoes treino=mao-2874,mao-2879,mao-2887,mao-2889,mao-2906,mao-2917,mao-2922,mao-2930,mao-2942,mao-2947,mao-2948,mao-2094,mao-2240,mao-2425,mao-2155
 conceito: FLATT: I lipofibromatose (a mais comum, nervo infiltrado até o carpo), II neurofibromatose (plexiforme, muitas vezes bilateral), III hiperostose (massas osteocondrais periarticulares sem nervo aumentado), IV hemi-hipertrofia (todos os dedos, flexão, desvio ulnar, polegar aduzido).
 como: O SBCM 2024 perguntou o tipo da neurofibromatose; o SBCM 2023, o da hiperostose; o SIMÃO 2022, o da hemi-hipertrofia; o SBCM 2022, a alteração associada na grande maioria dos casos.
 armadilha: Dar o tipo I à neurofibromatose, ou trocar o III pelo IV.
@@ -518,7 +518,7 @@ O Green (p. 1278) descreve o dedo por dentro, e cada frase já virou alternativa
 
 Daí três respostas. O SIMÃO 2010 deu como certa, pelo curso, a pele espessada com **mais** glândulas sudoríparas; pelo Green, são **menos** glândulas, e as faces mais aumentadas são a **palmar e a distal**. A USP 2024 pôs como falsa a afirmação de que a face dorsal é a mais afetada. E o TARO 2006 perguntou se os tecidos aumentados são normais: não são (nervo, pele e osso são anormais), embora os **tendões** sejam.
 
-!questoes relacionadas=mao-2282,mao-2556,mao-1385 treino=mao-2895,mao-2899,mao-2938
+!questoes relacionadas=mao-1385 treino=mao-2895,mao-2899,mao-2938,mao-2282,mao-2556
 conceito: Na macrodactilia, a pele é espessada com menos glândulas sudoríparas, há muita gordura com estroma fibroso, o nervo é tortuoso e fibrosado, os tendões são normais; a face palmar e a distal são as mais aumentadas; na forma progressiva o dedo cresce mais que os outros, na estática acompanha a proporção.
 como: O SIMÃO 2024 perguntou o achado histológico da pele; o SIMÃO 2021 e a USP 2025, a diferença entre progressiva e estática.
 armadilha: Marcar mais glândulas sudoríparas, ou dizer que na estática o dedo não fica maior.
@@ -562,7 +562,7 @@ armadilha: Achar que o dedo macrodáctilo é um dedo normal ampliado, ou que o p
 alerta: O Green 7 (cap. 36, p. 1277) descreve o polegar macrodáctilo abduzido e estendido, o que sustenta o gabarito de `mao-0542` (abdução e hiperextensão). `mao-0636` não tem gabarito oficial publicado; pelo Green (p. 1278), só os tendões são normais (pele, nervo e osso são anormais), e a resposta é errado.
 !fim
 
-!questoes relacionadas=mao-1997,mao-1719,mao-1565,mao-1421
+!questoes relacionadas=mao-1565,mao-1421 treino=mao-1997,mao-1719
 conceito: Na macrodactilia progressiva, a amputação do raio deve ser considerada cedo, antes de muitas cirurgias; indica-se no dedo único acometido ou no crescimento incontrolável; evita-se amputar o polegar; nenhuma cirurgia devolve o aspecto normal.
 como: O SIMÃO 2023 e o SIMÃO 2026 (indicador progressivo, volumoso e rígido aos 7 anos) cobraram a amputação precoce do raio; a USP 2026, a indicação de amputação; a USP 2024, a afirmação correta.
 armadilha: Esperar que a forma progressiva estabilize sozinha, confiar só na epifisiodese, ou achar que os resultados cirúrgicos costumam ser satisfatórios.
