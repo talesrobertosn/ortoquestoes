@@ -467,7 +467,7 @@ armadilha: Responder 50% de ganho, cortar 45 graus achando que são 60, ou trata
 alerta: Na `mao-0276`, o gabarito diz que o objetivo da Z numa perda de tecido do polegar é melhorar estética e função; os livros indicam a Z para contratura cicatricial (Campbell, cap. 69, p. 3108; Green, p. 1543), o que corresponderia à alternativa A. O retalho em pedra fundamental (`mao-1294`) e a plastia em "homem saltador" (`mao-2260`) não aparecem no capítulo 44 do Green 7. Gabaritos oficiais mantidos.
 !fim
 
-# Retalhos axiais do dedo e do dorso da mão: bandeiras e metacarpianas dorsais {radar=confirmado}
+# Retalhos axiais do dedo e do dorso da mão: bandeiras e metacarpianas dorsais {radar=fundamento}
 
 ## Os pioneiros: HOLEVICH e PHO
 
@@ -791,7 +791,7 @@ armadilha: Trocar pela circunflexa ilíaca profunda (crista ilíaca) ou pela epi
 alerta: Na `mao-0975`, o livro não fala em ramo "ascendente" da circunflexa ilíaca superficial.
 !fim
 
-# O método preferido do Green, defeito por defeito {radar=confirmado}
+# O método preferido do Green, defeito por defeito {radar=fundamento}
 
 O capítulo termina com a Tabela 44.3 e um texto em que os autores dizem o que fazem em cada lugar da mão (p. 1568 a 1570). É a parte mais útil para responder "qual a melhor opção" e vale ler como um mapa. O princípio inicial: **cobertura definitiva no momento da lesão é preferível**, desde que o desbridamento tenha sido adequado (p. 1568).
 
