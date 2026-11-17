@@ -34,6 +34,35 @@ export interface Modalidade {
 export const PROVAS_TITULO_MAO = ['SBCM', 'SIMÃO'] as const
 const ehTitulo = (prova: string) => (PROVAS_TITULO_MAO as readonly string[]).includes(prova)
 
+/**
+ * Edições do título da mão em construção (Tales, 17/11/2026): os OrtoQuestões Simulados das provas antigas entram
+ * capítulo a capítulo do Green. Enquanto uma edição não tem pelo menos 80% das questões da prova, ela fica fora do
+ * ranking e do cronograma, senão um ano com um capítulo só pareceria uma prova inteira daquele assunto. Valor = número
+ * de questões aproveitáveis da prova. Quando todas passarem de 80%, esta lista pode ser esvaziada.
+ */
+export const EDICOES_TITULO_EM_CONSTRUCAO: Record<string, number> = {
+  'SBCM|2007': 69, 'SBCM|2014': 94, 'SBCM|2015': 92, 'SBCM|2025': 100,
+  'SIMÃO|2008': 100, 'SIMÃO|2009': 90, 'SIMÃO|2010': 89, 'SIMÃO|2012': 71, 'SIMÃO|2013': 100, 'SIMÃO|2014': 99,
+  'SIMÃO|2015': 71, 'SIMÃO|2017': 100, 'SIMÃO|2018': 27, 'SIMÃO|2019': 100, 'SIMÃO|2020': 100,
+}
+const incompletasCache = new WeakMap<Indice, Set<string>>()
+/** Chaves "prova|ano" das edições do título da mão ainda abaixo de 80% (fora do ranking). */
+export function edicoesTituloIncompletas(indice: Indice): Set<string> {
+  const c = incompletasCache.get(indice)
+  if (c) return c
+  const n = new Map<string, number>()
+  for (const q of indice.questoes) {
+    if (q.p === null || q.dup || q.ar !== 'mao') continue
+    const k = `${indice.provas[q.p] ?? ''}|${q.a ?? ''}`
+    if (k in EDICOES_TITULO_EM_CONSTRUCAO) n.set(k, (n.get(k) ?? 0) + 1)
+  }
+  const fora = new Set(Object.entries(EDICOES_TITULO_EM_CONSTRUCAO).filter(([k, total]) => (n.get(k) ?? 0) < 0.8 * total).map(([k]) => k))
+  incompletasCache.set(indice, fora)
+  return fora
+}
+const foraDaContagem = (indice: Indice, m: Modalidade, prova: string, q: ItemIndice) =>
+  m.id === 'mao-titulo' && edicoesTituloIncompletas(indice).has(`${prova}|${q.a ?? ''}`)
+
 export const MODALIDADES: Modalidade[] = [
   {
     id: 'teot', nome: 'TEOT', curto: 'TEOT', grupo: 'ortopedia', area: 'base',
@@ -123,7 +152,7 @@ export function questoesDaModalidade(indice: Indice, m: Modalidade, fonte?: stri
   return indice.questoes.filter((q) => {
     if (q.p === null || q.dup || q.an === 1) return false
     const prova = indice.provas[q.p] ?? ''
-    return m.entra(q, prova) && (!fonte || prova === fonte)
+    return m.entra(q, prova) && (!fonte || prova === fonte) && !foraDaContagem(indice, m, prova, q)
   })
 }
 
@@ -145,7 +174,7 @@ export function rankingModalidade(indice: Indice, m: Modalidade, fonte?: string 
   const todas = indice.questoes.filter((q) => {
     if (q.p === null || q.dup) return false
     const prova = indice.provas[q.p] ?? ''
-    return m.entra(q, prova) && (!fonte || prova === fonte)
+    return m.entra(q, prova) && (!fonte || prova === fonte) && !foraDaContagem(indice, m, prova, q)
   })
   const anuladas = todas.filter((q) => q.an === 1).length
   const validas = todas.filter((q) => q.an !== 1)
