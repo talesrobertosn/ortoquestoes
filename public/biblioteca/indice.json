@@ -10733,19 +10733,24 @@
   },
   {
    "id": "green-amputacoes-reimplantes",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Amputações e reimplantes na mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017)",
    "capitulo": "Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)",
-   "resumo": "Reimplante mais convincente no polegar, em vários dedos, na criança e no punho e antebraço; contraindicações relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é boa indicação; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e mais de 30 h), músculo 6 h (12 h resfriado); sequência osso, extensor, flexor, artéria, nervo, veia, vários dedos estrutura por estrutura; avulsão pede veia invertida; macrorreimplante com shunt e 20 min por hora; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.",
+   "resumo": "Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 63,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
      "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "de-carrel-ao-alotransplante-historia-e-epidemiol",
+     "titulo": "De CARREL ao alotransplante: história e epidemiologia",
      "radar": "fundamento"
     },
     {
@@ -10759,6 +10764,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "lesao-de-reperfusao-e-no-reflow",
+     "titulo": "Lesão de reperfusão e no-reflow",
+     "radar": "fundamento"
+    },
+    {
      "id": "quem-reimplantar",
      "titulo": "Quem reimplantar",
      "radar": "confirmado"
@@ -10769,9 +10779,24 @@
      "radar": "confirmado"
     },
     {
-     "id": "arterias-e-veias-intima-enxerto-e-calibre",
-     "titulo": "Artérias e veias: íntima, enxerto e calibre",
+     "id": "osso-tendoes-e-nervo-o-encurtamento-serve-ao-ner",
+     "titulo": "Osso, tendões e nervo: o encurtamento serve ao nervo",
+     "radar": "clinico"
+    },
+    {
+     "id": "as-veias-o-passo-mais-dificil",
+     "titulo": "As veias: o passo mais difícil",
+     "radar": "clinico"
+    },
+    {
+     "id": "arteria-enxerto-venoso-e-reperfusao",
+     "titulo": "Artéria, enxerto venoso e reperfusão",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-tecnica-microvascular",
+     "titulo": "A técnica microvascular",
+     "radar": "fundamento"
     },
     {
      "id": "o-macrorreimplante",
@@ -10792,6 +10817,11 @@
      "id": "resultados",
      "titulo": "Resultados",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-alotransplante-composto-vascularizado",
+     "titulo": "O alotransplante composto vascularizado",
+     "radar": "oportunidade"
     },
     {
      "id": "a-avulsao-pelo-anel",
@@ -10844,6 +10874,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "green-e-campbell-onde-os-livros-discordam",
+     "titulo": "Green e Campbell: onde os livros discordam",
+     "radar": "fundamento"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -10892,14 +10927,39 @@
    ],
    "treino": [
     "mao-2330",
+    "mao-3253",
+    "mao-3257",
+    "mao-3264",
+    "mao-3272",
     "mao-2350",
     "mao-1768",
+    "mao-3248",
+    "mao-3249",
+    "mao-3259",
+    "mao-3266",
+    "mao-3268",
     "mao-2165",
     "mao-2509",
+    "mao-3250",
+    "mao-3261",
+    "mao-3267",
     "mao-2404",
     "mao-2018",
+    "mao-3251",
+    "mao-3262",
+    "mao-3265",
+    "mao-3269",
+    "mao-3254",
+    "mao-3255",
+    "mao-3258",
+    "mao-3260",
+    "mao-3271",
     "mao-2351",
+    "mao-3256",
     "mao-1767",
+    "mao-3252",
+    "mao-3263",
+    "mao-3270",
     "mao-2065",
     "mao-1945",
     "mao-2262",
@@ -11307,15 +11367,15 @@
   },
   {
    "id": "green-deficiencias-longitudinais",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Deficiências longitudinais e mão torta",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12, o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 22, e o HEBERT (Ortopedia e Traumatologia, 5ª ed.), cap. 6",
    "capitulo": "Capítulo 38 · Malformations and Deformities of the Wrist and Forearm (com os capítulos 35, 36 e 37)",
-   "resumo": "BAYNE e KLUG modificada (N, 0, 1 rádio distal mais de 2 mm curto, 2 hipoplasia distal e proximal com fise, 3 fise distal ausente, 4 rádio ausente); só um terço é isolada (HOLT-ORAM, TAR, FANCONI com quebra cromossômica, VACTERL); nervo radial ausente abaixo do cotovelo, mediano sempre presente, artéria ulnar normal; distração antes da centralização e cotovelo rígido como contraindicação; BLAUTH (IIIA reconstrói, IIIB, IV e V policizam; corte pela fise do 2º metacarpo); deficiência ulnar (unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia, BAYNE II parcial); mão em fenda típica em V e atípica em U; MADELUNG e ligamento de VICKERS.",
+   "resumo": "BAYNE e KLUG modificada (N, 0, 1 rádio distal mais de 2 mm curto, 2 hipoplasia distal e proximal com fise, 3 fise distal ausente, 4 rádio ausente); só um terço é isolada (HOLT-ORAM, TAR com polegar presente, FANCONI com quebra cromossômica, VACTERL); nervo radial ausente abaixo do cotovelo, mediano sempre presente, artéria radial ausente; distração antes da centralização, cotovelo rígido como contraindicação, VILKKI no tipo 4, alongamento da ulna a 1 mm por dia com infecção de pinos; BLAUTH (IIIA reconstrói, IIIB, IV e V policizam); deficiência ulnar (unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia, BAYNE II parcial, COLE e MANSKE D sem polegar, anlage só com progressão, osteotomia do úmero na mão no flanco); MADELUNG (fise palmar e ulnar, VICKERS, LERI-WEILL, fisiólise e cúpula, ulna na artrose); deficiência transversa (antebraço proximal, misoprostol); luxação congênita da cabeça do rádio (47% anterior, 43% posterior, 10% lateral, 60% com outras anomalias, ressecção só no maduro com dor); sinostose radioulnar proximal (60% bilateral, 40% acima de 60 graus de pronação, CLEARY e OMER, derrotação, 85 graus); pseudartrose da ulna (70% NF, tecido fibroso, fíbula vascularizada cedo); exostose múltipla (fise ulnar distal, MASADA, grampo radial).",
    "acesso": "gratis",
-   "minutos": 42,
+   "minutos": 85,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11373,14 +11433,44 @@
      "radar": "confirmado"
     },
     {
-     "id": "simbraquidactilia-e-deficiencia-transversa",
-     "titulo": "Simbraquidactilia e deficiência transversa",
+     "id": "a-simbraquidactilia-o-que-parece-fenda-e-nao-e",
+     "titulo": "A simbraquidactilia: o que parece fenda e não é",
      "radar": "fundamento"
     },
     {
-     "id": "deformidade-de-madelung-e-pseudartrose-congenita",
-     "titulo": "Deformidade de MADELUNG e pseudartrose congênita da ulna",
+     "id": "a-deficiencia-transversa-do-antebraco",
+     "titulo": "A deficiência transversa do antebraço",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-deformidade-de-madelung",
+     "titulo": "A deformidade de MADELUNG",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-luxacao-congenita-da-cabeca-do-radio",
+     "titulo": "A luxação congênita da cabeça do rádio",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-sinostose-radioulnar-proximal-congenita",
+     "titulo": "A sinostose radioulnar proximal congênita",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-pseudartrose-congenita-da-ulna-e-do-radio",
+     "titulo": "A pseudartrose congênita da ulna e do rádio",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-exostose-multipla-hereditaria-no-antebraco",
+     "titulo": "A exostose múltipla hereditária no antebraço",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "divergencias-entre-fontes",
+     "titulo": "Divergências entre fontes",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -11413,23 +11503,81 @@
    ],
    "treino": [
     "mao-2086",
+    "mao-3411",
+    "mao-3368",
     "mao-1724",
+    "mao-3372",
+    "mao-3378",
     "mao-2247",
     "mao-2088",
     "mao-2286",
     "mao-2392",
+    "mao-3379",
+    "mao-3392",
     "mao-2537",
+    "mao-3358",
+    "mao-3366",
+    "mao-3401",
+    "mao-3408",
+    "mao-3409",
+    "mao-3405",
     "mao-1720",
     "mao-2246",
     "mao-2006",
     "mao-2160",
     "mao-2422",
+    "mao-3373",
+    "mao-3410",
+    "mao-3396",
+    "mao-3406",
+    "mao-3377",
+    "mao-3359",
+    "mao-3383",
+    "mao-3374",
+    "mao-3390",
+    "mao-3365",
+    "mao-3380",
+    "mao-3388",
+    "mao-3367",
+    "mao-3393",
+    "mao-3404",
     "mao-2245",
     "mao-2005",
     "mao-2087",
     "mao-2161",
     "mao-2427",
-    "mao-2502"
+    "mao-2629",
+    "mao-3376",
+    "mao-3361",
+    "mao-3381",
+    "mao-3384",
+    "mao-3389",
+    "mao-3391",
+    "mao-3397",
+    "mao-3402",
+    "mao-3407",
+    "mao-3413",
+    "mao-3360",
+    "mao-3364",
+    "mao-3369",
+    "mao-3371",
+    "mao-3375",
+    "mao-3382",
+    "mao-3387",
+    "mao-3394",
+    "mao-3400",
+    "mao-3414",
+    "mao-3362",
+    "mao-3363",
+    "mao-3385",
+    "mao-3386",
+    "mao-3395",
+    "mao-3398",
+    "mao-3403",
+    "mao-3412",
+    "mao-2502",
+    "mao-3370",
+    "mao-3399"
    ],
    "subtemas": [
     "Deficiências longitudinais e mão torta"
@@ -11677,15 +11825,15 @@
   },
   {
    "id": "green-dupuytren",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Doença de DUPUYTREN",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 80)",
    "capitulo": "Capítulo 4 · Dupuytren Disease",
-   "resumo": "Homem branco idoso, herança autossômica dominante de penetrância variável, bilateral mas assimétrica, anular e mínimo; diabetes, epilepsia e anticonvulsivantes, tabagismo, álcool e hipercolesterolemia associados, artrite reumatoide não; diátese de HUESTON (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE, PEYRONIE); miofibroblasto e colágeno III (razão III/I acima de 35% na proliferativa, 20% a 35% na involutiva e abaixo de 20% na residual de LUCK); TUBIANA em degraus de 45 graus; corda pré-tendínea na MF, corda espiral (pré-tendínea, banda espiral, lâmina digital lateral e GRAYSON) que leva o feixe para a linha média e para a superfície, retrovascular e lateral na IFD; CLELAND poupado; cirurgia com MF de 30 graus ou qualquer IFP de 15 graus; agulha mais barata, dermofasciectomia com menor recidiva; JACOBSEN no mínimo, McCASH palma aberta; lesão de nervo digital e flare como complicações.",
+   "resumo": "Doença hereditária mais comum do tecido conjuntivo; nenhum tratamento atua na doença, todos tratam a contratura; homem branco idoso, autossômica dominante de penetrância variável, bilateral mas assimétrica, anular e mínimo; receptor androgênico e estrogênio explicam o atraso de 10 a 15 anos na mulher; diabetes (doença leve, com desvio radial), epilepsia, tabagismo, álcool, hipercolesterolemia e IMC baixo associados, artrite reumatoide não; diátese (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE, homem, polegar, mais de dois dedos); miofibroblasto, TGF beta 1 e colágeno III; LUCK com razão III/I acima de 35%, de 20% a 35% e abaixo de 20%; TUBIANA em degraus de 45 graus sem a IFD; fasciodese e contratura dinâmica; CLELAND, transverso superficial e septos de LEGUEU e JUVARA poupados por stress shielding; corda central na MF, várias cordas na IFP (central digital, retrovascular, espiral ou lateral); corda espiral (pré-tendínea, banda espiral, lâmina digital lateral e GRAYSON) leva o feixe para a linha média e a superfície; MF de 30 graus ou IFP de 15 graus; agulha mais barata, dermofasciectomia com menor recidiva; JACOBSEN no mínimo, McCASH palma aberta; flare 1 em 10, nervo digital 3% (5 vezes mais na recidiva); recontratura precoce, progressiva e tardia; tamoxifeno.",
    "acesso": "gratis",
-   "minutos": 37,
+   "minutos": 75,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11693,8 +11841,18 @@
      "radar": "fundamento"
     },
     {
+     "id": "doenca-e-contratura-a-ideia-que-organiza-o-capit",
+     "titulo": "Doença e contratura: a ideia que organiza o capítulo",
+     "radar": "fundamento"
+    },
+    {
      "id": "quem-tem-a-doenca",
      "titulo": "Quem tem a doença",
+     "radar": "confirmado"
+    },
+    {
+     "id": "doencas-e-habitos-associados",
+     "titulo": "Doenças e hábitos associados",
      "radar": "confirmado"
     },
     {
@@ -11733,6 +11891,16 @@
      "radar": "confirmado"
     },
     {
+     "id": "recidiva-como-se-define-e-por-que-acontece",
+     "titulo": "Recidiva: como se define e por que acontece",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-historia-do-tratamento",
+     "titulo": "A história do tratamento",
+     "radar": "fundamento"
+    },
+    {
      "id": "quando-tratar",
      "titulo": "Quando tratar",
      "radar": "confirmado"
@@ -11741,6 +11909,11 @@
      "id": "fasciotomia-agulha-bisturi-e-colagenase",
      "titulo": "Fasciotomia: agulha, bisturi e colagenase",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-agulha-passo-a-passo-o-metodo-preferido-do-aut",
+     "titulo": "A agulha passo a passo: o método preferido do autor",
+     "radar": "clinico"
     },
     {
      "id": "comparando-os-procedimentos-custo-e-recidiva",
@@ -11753,9 +11926,19 @@
      "radar": "confirmado"
     },
     {
-     "id": "complicacoes-e-recidiva",
-     "titulo": "Complicações e recidiva",
+     "id": "casos-dificeis-e-cirurgia-de-salvamento",
+     "titulo": "Casos difíceis e cirurgia de salvamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "complicacoes-e-recidiva-depois-do-tratamento",
+     "titulo": "Complicações e recidiva depois do tratamento",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-futuro-uma-doenca-medica",
+     "titulo": "O futuro: uma doença médica",
+     "radar": "oportunidade"
     },
     {
      "id": "fechamento",
@@ -11816,7 +11999,40 @@
     "mao-1285",
     "mao-0944"
    ],
-   "treino": [],
+   "treino": [
+    "mao-3351",
+    "mao-3353",
+    "mao-3354",
+    "mao-1970",
+    "mao-2023",
+    "mao-2197",
+    "mao-2413",
+    "mao-3356",
+    "mao-2345",
+    "mao-2546",
+    "mao-2368",
+    "mao-3346",
+    "mao-3352",
+    "mao-2484",
+    "mao-3343",
+    "mao-3345",
+    "mao-3342",
+    "mao-3357",
+    "mao-2024",
+    "mao-2624",
+    "mao-3349",
+    "mao-3347",
+    "mao-3350",
+    "mao-1809",
+    "mao-3355",
+    "mao-2407",
+    "mao-2109",
+    "mao-1810",
+    "mao-3344",
+    "mao-1808",
+    "mao-2444",
+    "mao-3348"
+   ],
    "subtemas": [
     "Doença de Dupuytren"
    ]
@@ -11974,15 +12190,15 @@
   },
   {
    "id": "green-fcct-punho-ulnar",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Fibrocartilagem triangular e punho ulnar",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 74, e o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 42 e 43",
    "capitulo": "Capítulo 14 · Distal Radioulnar Joint",
-   "resumo": "Incisura sigmoide rasa com raio maior que o da cabeça ulnar, plana em 42% (a mais instável), tipo C 30%; FCT de PALMER e WERNER com cinco componentes e quatro funções; radioulnares profundos na fóvea (ligamentum subcruentum); só os 15% periféricos do disco vascularizados; PALMER 1A central, 1B ulnar, 1C distal, 1D radial, 2A a 2E com perfuração a partir da 2C; trampolim positivo com gancho negativo = lesão distal; 1B aguda imobilizada, reparo se persistir ou instabilizar, NAKAMURA na foveal; luxação dorsal em pronação e extensão, estável em supinação, palmar estável em pronação; radioulnares toleram 5 a 7 mm de encurtamento; impacto ulnocarpal e preensão pronada; wafer de 2 a 4 mm; SAUVÉ-KAPANDJI, BOWERS e DARRACH, com coto ulnar instável como risco comum.",
+   "resumo": "Incisura sigmoide rasa com raio maior que o da cabeça ulnar, plana em 42% (a mais instável), rebordo palmar com lábio fibrocartilaginoso; FCT de PALMER e WERNER com cinco componentes e quatro funções; radioulnares profundos na fóvea (ligamentum subcruentum), superficiais na base e no meio do estiloide; luxação completa exige os dois radioulnares; só os 15% periféricos do disco vascularizados; disco mais fino na ulna positiva; 20% da carga pela ulna, mais com desvio ulnar e pronação; PALMER 1A central, 1B ulnar, 1C distal com queda palmar do carpo, 1D radial, 2A a 2E com perfuração a partir da 2C; trampolim positivo com gancho negativo = lesão distal; 1B aguda imobilizada, reparo se persistir ou instabilizar, NAKAMURA na foveal; luxação dorsal em pronação e extensão, estável em supinação, ECU interposto quando não reduz; radioulnares toleram 5 a 7 mm de encurtamento; FERNANDEZ I estável, II instável, III articular; ADAMS e BERGER com tira de FCU; impacto ulnocarpal e preensão pronada; wafer de 2 a 4 mm; BOWERS, SAUVÉ-KAPANDJI e DARRACH, com coto ulnar instável como risco comum.",
    "acesso": "gratis",
-   "minutos": 35,
+   "minutos": 87,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -12022,7 +12238,7 @@
     {
      "id": "instabilidade-aguda-da-arud",
      "titulo": "Instabilidade aguda da ARUD",
-     "radar": "clinico"
+     "radar": "confirmado"
     },
     {
      "id": "instabilidade-cronica-da-arud",
@@ -12035,8 +12251,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "artrite-da-arud-e-salvamentos",
-     "titulo": "Artrite da ARUD e salvamentos",
+     "id": "artrose-da-arud-e-salvamentos",
+     "titulo": "Artrose da ARUD e salvamentos",
      "radar": "confirmado"
     },
     {
@@ -12087,6 +12303,7 @@
     "mao-0527",
     "mao-0496",
     "mao-0077",
+    "mao-0871",
     "mao-0815",
     "mao-0990",
     "mao-0729",
@@ -12102,28 +12319,58 @@
    "treino": [
     "mao-1759",
     "mao-2214",
+    "mao-3298",
+    "mao-3306",
+    "mao-2536",
     "mao-2216",
     "mao-2126",
-    "mao-2536",
+    "mao-3307",
+    "mao-3301",
+    "mao-3303",
+    "mao-3308",
+    "mao-3309",
     "mao-2297",
+    "mao-3320",
+    "mao-3299",
     "mao-1968",
     "mao-1777",
+    "mao-3305",
+    "mao-3300",
+    "mao-3315",
     "mao-2514",
     "mao-2296",
+    "mao-3304",
+    "mao-3318",
     "mao-1776",
     "mao-2223",
     "mao-2363",
+    "mao-3294",
+    "mao-3302",
+    "mao-3312",
     "mao-2127",
     "mao-2128",
     "mao-2215",
+    "mao-3295",
+    "mao-3296",
+    "mao-3313",
     "mao-2405",
     "mao-1956",
+    "mao-3297",
+    "mao-3321",
+    "mao-3322",
     "mao-2312",
+    "mao-3310",
     "mao-1959",
     "mao-2473",
+    "mao-3314",
+    "mao-3323",
     "mao-2039",
     "mao-2550",
     "mao-2447",
+    "mao-3311",
+    "mao-3316",
+    "mao-3317",
+    "mao-3319",
     "mao-2465",
     "mao-2040",
     "mao-1966",
@@ -12737,6 +12984,205 @@
    ]
   },
   {
+   "id": "green-infeccoes-mao",
+   "versao": 1,
+   "titulo": "Infecções agudas da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 2 · Acute Infections of the Hand",
+   "resumo": "Antibiótico não substitui drenagem; pus em espaço fechado age como síndrome compartimental; estafilococo é o germe mais comum, CA-MRSA até 60%; anaeróbio em diabético e usuário de droga; leucócitos e PCR normais em 75%; exsanguinar só por elevação; paroníquia aguda é a infecção mais comum (S. aureus), crônica 4:1 em mulheres com marsupialização em crescente; panarício 15% a 20%, incisão longitudinal unilateral, nunca boca de peixe; KANAVEL com quatro sinais, dor à palpação da bainha o mais confiável; PARONA entre pronador quadrado e bainha do FDP, ferradura polegar e mínimo; tenar é o espaço profundo mais comum; botão de colarinho começa volar; soco com cápsula aberta mesmo íntegra; Eikenella na mordida humana, Pasteurella no gato, tularemia com pneumonia, Capnocytophaga no esplenectomizado; herpético nunca se corta; fasciite tipo 1 mista e tipo 2 estreptococo A; C. perfringens no trauma e C. septicum com câncer colorretal.",
+   "acesso": "gratis",
+   "minutos": 73,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-que-a-mao-infectada-e-urgencia-cirurgica",
+     "titulo": "Por que a mão infectada é urgência cirúrgica",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tipos-de-infeccao-e-germes",
+     "titulo": "Tipos de infecção e germes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avaliacao-do-paciente",
+     "titulo": "Avaliação do paciente",
+     "radar": "confirmado"
+    },
+    {
+     "id": "principios-de-tratamento",
+     "titulo": "Princípios de tratamento",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "paroniquia-aguda",
+     "titulo": "Paroníquia aguda",
+     "radar": "confirmado"
+    },
+    {
+     "id": "paroniquia-cronica",
+     "titulo": "Paroníquia crônica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "panaricio-e-infeccao-apical",
+     "titulo": "Panarício e infecção apical",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tenossinovite-flexora-piogenica",
+     "titulo": "Tenossinovite flexora piogênica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "bursas-radial-e-ulnar-e-espaco-de-parona",
+     "titulo": "Bursas radial e ulnar e espaço de PARONA",
+     "radar": "confirmado"
+    },
+    {
+     "id": "espacos-profundos-e-superficiais-da-mao",
+     "titulo": "Espaços profundos e superficiais da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrite-septica",
+     "titulo": "Artrite séptica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "osteomielite",
+     "titulo": "Osteomielite",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mordeduras-de-animais",
+     "titulo": "Mordeduras de animais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "agua-peixes-e-sanguessugas",
+     "titulo": "Água, peixes e sanguessugas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "mordedura-humana-e-a-lesao-do-soco",
+     "titulo": "Mordedura humana e a lesão do soco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "abscesso-do-usuario-de-droga-e-tromboflebite-sep",
+     "titulo": "Abscesso do usuário de droga e tromboflebite séptica",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "panaricio-herpetico",
+     "titulo": "Panarício herpético",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hiv-e-diabetes",
+     "titulo": "HIV e diabetes",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fasciite-necrosante-e-gangrena-gasosa",
+     "titulo": "Fasciite necrosante e gangrena gasosa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "antraz-cutaneo-e-injecao-sob-alta-pressao",
+     "titulo": "Antraz cutâneo e injeção sob alta pressão",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "as-doencas-que-imitam-infeccao",
+     "titulo": "As doenças que imitam infecção",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento-o-raciocinio-em-tres-perguntas",
+     "titulo": "Fechamento: o raciocínio em três perguntas",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1863",
+    "mao-0855",
+    "mao-1098",
+    "mao-1501",
+    "mao-0761",
+    "mao-1185",
+    "mao-1187",
+    "mao-1332",
+    "mao-0466",
+    "mao-1179",
+    "mao-1226",
+    "mao-1536",
+    "mao-1486",
+    "mao-1569",
+    "mao-1181",
+    "mao-0668",
+    "mao-0762",
+    "mao-1083",
+    "mao-1325",
+    "mao-1519",
+    "mao-1017",
+    "mao-1057",
+    "mao-1133",
+    "mao-1398",
+    "mao-0941",
+    "mao-1180",
+    "mao-0821",
+    "mao-0763",
+    "mao-0807",
+    "mao-1313",
+    "mao-1414"
+   ],
+   "treino": [
+    "mao-2518",
+    "mao-2058",
+    "mao-3333",
+    "mao-2108",
+    "mao-3331",
+    "mao-3328",
+    "mao-3326",
+    "mao-2060",
+    "mao-3332",
+    "mao-1734",
+    "mao-1735",
+    "mao-3330",
+    "mao-3335",
+    "mao-3341",
+    "mao-1992",
+    "mao-1993",
+    "mao-3338",
+    "mao-2195",
+    "mao-3327",
+    "mao-2519",
+    "mao-3337",
+    "mao-3339",
+    "mao-3336",
+    "mao-3340",
+    "mao-2385",
+    "mao-3329",
+    "mao-3334",
+    "mao-2194",
+    "mao-3325",
+    "mao-2107",
+    "mao-2383",
+    "mao-2528"
+   ],
+   "subtemas": [
+    "Infecções da mão"
+   ]
+  },
+  {
    "id": "green-instabilidade-carpo",
    "versao": 1,
    "titulo": "Instabilidades do carpo",
@@ -13285,15 +13731,15 @@
   },
   {
    "id": "green-nervos-perifericos",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Lesões de nervos periféricos",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 67 e 73)",
    "capitulo": "Capítulo 30 · Nerve Injury and Repair",
-   "resumo": "Endoneuro envolve a fibra, perineuro o fascículo (barreira de difusão) e epineuro o tronco (60% a 85% da área); SEDDON (neurapraxia, axonotmese, neurotmese) e SUNDERLAND (I mielina, II axônio, III endoneuro, IV perineuro, V tronco); degeneração walleriana distal com pico de receptividade entre 1 e 3 semanas; anidrose igual ou pouco maior que a área sensitiva; TINEL que avança indica regeneração (II e III); fibrilações após 2 a 4 semanas; reparo primário sem tensão, enxerto quando falta 1 cm ou mais, condutos até 3 cm; OBERLIN (fascículo posteromedial do ulnar para o bíceps), LEECHAVENGVONGS (cabeça longa do tríceps para a divisão anterior do axilar), MACKINNON (FDS para ERCC e FRC para interósseo posterior); idade e atraso pesam no resultado; MRC M0 a M5 e S0 a S4.",
+   "resumo": "Endoneuro envolve a fibra, perineuro o fascículo (barreira de difusão, resistência à tração, bandas de FONTANA) e epineuro o tronco (60% a 85% da área, proteção contra compressão); mielínicas de 2 a 22 µm, amielínicas de 0,4 a 1,25 µm (autonômica, térmica e dor tardia); desmielinização reduz a velocidade e, se grave, bloqueia; maior excursão no punho (mediano 15,5 mm); THOMAS e HOLDORFF (I bloqueio; IIA lâmina basal preservada, IIB secção parcial, IIC completa); SEDDON e SUNDERLAND; estiramento de 8% bloqueia o retorno venoso e de 16% causa isquemia; walleriana com pico de receptividade entre 1 e 3 semanas; morte neuronal maior na lesão proximal e no neonato; pele quente e seca e TINEL indicam lesão degenerativa; fibrilações em 10 a 14 dias; primário até 5 dias, primário tardio até 3 semanas; enxerto quando falta 1 cm ou mais, 15% a 20% mais longo; cutâneo medial do antebraço cerca de 25 cm; condutos até 3 cm; OBERLIN, LEECHAVENGVONGS, MACKINNON, interósseo anterior para o motor do ulnar (1000 contra mais de 4000 fibras); violência da lesão e atraso decidem; radial é o mais favorável; neuroma: reparar é melhor que translocar.",
    "acesso": "gratis",
-   "minutos": 42,
+   "minutos": 108,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -13301,13 +13747,13 @@
      "radar": "fundamento"
     },
     {
-     "id": "o-nervo-por-dentro-fibra-fasciculo-e-tronco",
-     "titulo": "O nervo por dentro: fibra, fascículo e tronco",
+     "id": "o-nervo-por-dentro-fibra-bainhas-e-deslizamento",
+     "titulo": "O nervo por dentro: fibra, bainhas e deslizamento",
      "radar": "confirmado"
     },
     {
-     "id": "seddon-e-sunderland-o-que-foi-rompido",
-     "titulo": "SEDDON e SUNDERLAND: o que foi rompido",
+     "id": "como-o-nervo-se-lesa-classificacoes-isquemia-e-e",
+     "titulo": "Como o nervo se lesa: classificações, isquemia e estiramento",
      "radar": "confirmado"
     },
     {
@@ -13326,13 +13772,13 @@
      "radar": "confirmado"
     },
     {
-     "id": "quando-operar",
-     "titulo": "Quando operar",
+     "id": "quando-operar-e-quando-esperar",
+     "titulo": "Quando operar e quando esperar",
      "radar": "confirmado"
     },
     {
-     "id": "a-sutura-epineural-perineural-tensao-e-cola",
-     "titulo": "A sutura: epineural, perineural, tensão e cola",
+     "id": "tecnica-preparacao-neurolise-e-sutura",
+     "titulo": "Técnica: preparação, neurólise e sutura",
      "radar": "confirmado"
     },
     {
@@ -13341,8 +13787,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "transferencias-distais-nervo-ou-tendao",
-     "titulo": "Transferências distais: nervo ou tendão",
+     "id": "transferencias-de-nervo-e-transferencias-tendine",
+     "titulo": "Transferências de nervo e transferências tendíneas",
      "radar": "confirmado"
     },
     {
@@ -13356,9 +13802,24 @@
      "radar": "confirmado"
     },
     {
-     "id": "quadros-de-cada-nervo",
-     "titulo": "Quadros de cada nervo",
+     "id": "nervo-a-nervo-radial-mediano-ulnar-e-digitais",
+     "titulo": "Nervo a nervo: radial, mediano, ulnar e digitais",
      "radar": "confirmado"
+    },
+    {
+     "id": "neuroma-e-dor-neuropatica",
+     "titulo": "Neuroma e dor neuropática",
+     "radar": "clinico"
+    },
+    {
+     "id": "hanseniase-e-outros-temas-que-a-banca-poe-aqui",
+     "titulo": "Hanseníase e outros temas que a banca põe aqui",
+     "radar": "confirmado"
+    },
+    {
+     "id": "divergencias-entre-fontes-e-erros-do-livro",
+     "titulo": "Divergências entre fontes e erros do livro",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -13380,15 +13841,16 @@
     "mao-0982",
     "mao-0001",
     "mao-0651",
+    "mao-0795",
     "mao-0121",
     "mao-1850",
     "mao-0475",
     "mao-0581",
     "mao-1196",
-    "mao-0303",
-    "mao-0571",
     "mao-0915",
     "mao-1028",
+    "mao-0303",
+    "mao-0571",
     "mao-0837",
     "mao-1293",
     "mao-1614",
@@ -13398,6 +13860,10 @@
     "mao-1223",
     "mao-0727",
     "mao-0966",
+    "mao-0480",
+    "mao-0154",
+    "mao-0414",
+    "mao-0268",
     "mao-0437",
     "mao-0004",
     "mao-0445",
@@ -13408,14 +13874,12 @@
     "mao-0887",
     "mao-0147",
     "mao-0722",
-    "mao-0480",
-    "mao-0154",
-    "mao-0414",
-    "mao-0268",
+    "mao-0343",
     "mao-0914",
     "mao-0971",
     "mao-0537",
     "mao-0600",
+    "mao-1343",
     "mao-0528",
     "mao-1047",
     "mao-1621",
@@ -13428,11 +13892,51 @@
     "mao-1886",
     "mao-0539",
     "mao-0523",
-    "mao-0916"
+    "mao-0916",
+    "mao-1441",
+    "mao-1639",
+    "mao-1283",
+    "mao-0695"
    ],
-   "treino": [],
+   "treino": [
+    "mao-2543",
+    "mao-3273",
+    "mao-3274",
+    "mao-3279",
+    "mao-3281",
+    "mao-3283",
+    "mao-3284",
+    "mao-3286",
+    "mao-3288",
+    "mao-3290",
+    "mao-3291",
+    "mao-3280",
+    "mao-2401",
+    "mao-3289",
+    "mao-3287",
+    "mao-1977",
+    "mao-2609",
+    "mao-1753",
+    "mao-1978",
+    "mao-3276",
+    "mao-3292",
+    "mao-2070",
+    "mao-1754",
+    "mao-3275",
+    "mao-3293",
+    "mao-2478",
+    "mao-2438",
+    "mao-1746",
+    "mao-2138",
+    "mao-3277",
+    "mao-3278",
+    "mao-3282",
+    "mao-3285",
+    "mao-1745"
+   ],
    "subtemas": [
-    "Lesões de nervos periféricos"
+    "Lesões de nervos periféricos",
+    "Anatomia da mão e punho"
    ]
   },
   {
