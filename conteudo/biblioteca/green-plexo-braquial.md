@@ -1,6 +1,6 @@
 ---
 id: green-plexo-braquial
-versao: 1
+versao: 2
 titulo: Plexo braquial e paralisia obstétrica
 especialidade: mao
 acesso: gratis
@@ -8,30 +8,70 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12) e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36)
 capitulo: Capítulo 34 · Traumatic Brachial Plexus Injury (com o capítulo 40, Pediatric Brachial Plexus Palsy)
 autores: Robert J. Spinner, Alexander Y. Shin, Bassem T. Elhassan e Allen T. Bishop (cap. 34); Roger Cornwall e Peter M. Waters (cap. 40)
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury, pp. 1146 a 1174 e 1179) e cap. 40 (Pediatric Brachial Plexus Palsy, pp. 1391 a 1420); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (paralisia braquial neonatal, pp. 404 a 410); Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (Paralytic Disorders, pp. 1310 a 1318).
+fonte: Livros conferidos localmente em 01/11/2026 e 17/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury, p. 1146 a 1207, inclusive a lista de referências, p. 1204 a 1207) e cap. 40 (Pediatric Brachial Plexus Palsy, p. 1391 a 1424, inclusive as referências, p. 1422 a 1424); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (paralisia braquial neonatal, p. 404 a 410); Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (Paralytic Disorders, p. 1310 a 1318). Estudos citados conferidos nas listas de referências dos dois capítulos do Green.
 subtemas: Plexo braquial e paralisia obstétrica
-resumo: Divisões posteriores formam o fascículo posterior (toracodorsal, axilar, radial); escapular dorsal de C5 e torácico longo de C5 a C7; HORNER, romboide e serrátil paralisados e diafragma elevado indicam avulsão; pan-plexo é o padrão traumático mais comum; cotovelo antes do ombro; OBERLIN (ulnar para bíceps com C8-T1 íntegros), acessório para supraescapular, LEECHAVENGVONGS (cabeça longa do tríceps para o axilar); obstétrica: distocia de ombro, lado direito, NARAKAS I a IV, bíceps antigravitacional decide a microcirurgia; contratura em RI com displasia de WATERS, L'EPISCOPO para RE e osteotomia derrotativa no ombro incongruente.
+resumo: Gânglio da raiz dorsal dentro do forame separa avulsão (só transferência) de ruptura (enxerto); C5-C6 ancoradas, C8-T1 avulsionam; divisões posteriores formam o fascículo posterior (subescapular superior, toracodorsal, subescapular inferior, axilar, radial); escapular dorsal de C5, torácico longo de C5 a C7, supraescapular no ponto de ERB; HORNER, romboide e serrátil paralisados, diafragma elevado, dor de desaferentação e SNAP preservado na pele anestesiada indicam avulsão; pan-plexo é o padrão mais comum no adulto; cotovelo, ombro e sensibilidade da mão; OBERLIN, acessório para supraescapular, LEECHAVENGVONGS, intercostais, dupla de grácil de DOI; artrodese do ombro em 30 a 40 graus de abdução e flexão e 30 de RI; obstétrica: distocia de ombro, lado direito, NARAKAS I a IV, bíceps aos 3 meses (global com HORNER) ou 5 a 6 meses (alto); contratura em RI por músculo denervado que não cresce, WATERS I a VI, liberação e transferência no ombro congruente, osteotomia derrotativa no incongruente; RAIMONDI III bom.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo junta dois capítulos do Green's Operative Hand Surgery, 7ª edição (2017): o capítulo 34 (Traumatic Brachial Plexus Injury), sobre a lesão do adulto, e o capítulo 40 (Pediatric Brachial Plexus Palsy), sobre a paralisia obstétrica. Onde o Green é curto, entram o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12), e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36).
+Este resumo junta dois capítulos do Green's Operative Hand Surgery, 7ª edição (2017). O **capítulo 34** (Traumatic Brachial Plexus Injury) foi escrito pelo grupo da Clínica Mayo (SPINNER, SHIN, ELHASSAN e BISHOP) e trata da lesão do adulto, quase sempre um jovem que caiu de moto. O **capítulo 40** (Pediatric Brachial Plexus Palsy), de CORNWALL e WATERS, trata da paralisia obstétrica. Onde o Green é curto, entram o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12), e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36). As páginas citadas são as impressas.
 
-A prova cobra quatro raciocínios. **Anatomia**: de onde sai cada nervo, para deduzir o nível pelo músculo que falta. **O gânglio da raiz dorsal**: a lesão pré-ganglionar (avulsão) não se recupera nem se enxerta, e o exame a denuncia. **Estratégia**: quando operar, o que reconstruir primeiro e qual doador usar. **A criança**: fatores do parto, NARAKAS, o bíceps como relógio da decisão e o ombro que luxa para trás.
+Os dois capítulos parecem falar de doenças diferentes, mas o raciocínio é o mesmo, e é por isso que estão juntos aqui. Em ambos, o plexo sofre **tração**, e a tração produz, no mesmo paciente, uma mistura de estiramento, ruptura e avulsão; cada raiz tem o seu grau, e por isso umas recuperam e outras não (cap. 34, p. 1148 e 1149). Em ambos, tudo gira em torno de duas perguntas que o capítulo do adulto formula logo na avaliação (cap. 34, p. 1150):
 
-> **Na prova:** C5-C6 formam o tronco superior; posterior = todas as divisões posteriores; toracodorsal vem do fascículo posterior; escapular dorsal (romboide) de C5; HORNER = avulsão C8-T1 e mau prognóstico; OBERLIN para flexão do cotovelo; acessório para supraescapular; NARAKAS II = C5-C7; bíceps antigravitacional decide a microcirurgia.
+1. **Existe chance de recuperação espontânea útil?** Se existe, observa-se; operar quem vai melhorar sozinho é trocar um resultado bom por um resultado incerto.
+2. **A lesão é pré ou pós-ganglionar?** A pré-ganglionar (avulsão) não se repara nem se enxerta: só a transferência de um nervo doador traz axônios de volta.
+
+A diferença entre adulto e criança está em três pontos, e eles explicam quase todas as divergências de conduta que caem em prova. O bebê tem uma **distância curta** entre o pescoço e a mão, e por isso a mão pode ser reinervada a partir do plexo, algo que no adulto quase nunca dá certo. O bebê tem **plasticidade**, e por isso a eletroneuromiografia o faz parecer melhor do que está. E o bebê **cresce**: o músculo denervado não acompanha o crescimento do osso, e daí nascem as contraturas e a luxação posterior do ombro, que são o grande problema ortopédico da paralisia obstétrica.
+
+Uma frase do capítulo do adulto resume o espírito do tratamento: **a recuperação completa continua inalcançável**; o objetivo convencional na lesão total é um **ombro estável e a flexão do cotovelo**, com ou sem alguma sensibilidade na mão (cap. 34, p. 1146 e 1160). Quem entende essa modéstia entende por que a ordem das prioridades é cotovelo antes do ombro e ombro antes da mão no adulto, e por que ela se inverte no bebê com avulsões extensas.
+
+A banca gira em cinco blocos, que seguem a ordem deste resumo:
+
+- **Anatomia** que localiza a lesão: de onde sai cada nervo, para deduzir o nível pelo músculo que falta (ponto de ERB, ramos que saem das raízes, fascículos e artéria axilar).
+- **O gânglio da raiz dorsal**: os sinais clínicos, de imagem e eletrodiagnósticos da avulsão (HORNER, romboide e serrátil, diafragma, SNAP).
+- **Estratégia no adulto**: quando operar, o que reconstruir primeiro e qual doador usar (OBERLIN, acessório para supraescapular, LEECHAVENGVONGS, intercostais, grácil livre, artrodese do ombro).
+- **A criança**: fatores do parto, NARAKAS, o bíceps como relógio da microcirurgia, as escalas (MALLET, TORONTO, RAIMONDI).
+- **O ombro infantil**: contratura em rotação interna, WATERS, liberação, transferência e osteotomia.
+
+> **Na prova:** C5 e C6 formam o tronco superior, e no ponto de ERB sai o **supraescapular**; todas as divisões posteriores formam o **fascículo posterior** (toracodorsal, axilar, radial); escapular dorsal de **C5**; HORNER = **avulsão de C8-T1** e mau prognóstico; **OBERLIN** devolve a flexão do cotovelo e exige C8-T1 íntegros; NARAKAS **II = C5-C7** (gorjeta de garçom); bíceps antigravitacional decide a microcirurgia.
 
 # A anatomia que localiza a lesão {radar=confirmado}
 
+## O nervo espinal e o gânglio da raiz dorsal
+
+O plexo é formado pelos ramos ventrais de **C5, C6, C7, C8 e T1**, organizados em cinco porções: **nervos espinais (as "raízes" da linguagem clínica), troncos, divisões, fascículos e ramos terminais** (cap. 34, p. 1146). Antes de memorizar a árvore, vale entender o tronco dela, porque toda a semiologia da avulsão nasce aqui.
+
+Cada nervo espinal se forma pela união de duas famílias de radículas que saem da medula: as **ventrais**, motoras, cujos corpos celulares estão no **corno anterior da medula**, e as **dorsais**, sensitivas, cujos corpos celulares estão no **gânglio da raiz dorsal**. As radículas coalescem dentro do forame, e o gânglio fica **dentro do canal e do forame**, e não fora dele (cap. 34, p. 1146). Logo depois do forame, o nervo espinal manda um pequeno **ramo dorsal** para a musculatura paraespinal; o ramo ventral, mais grosso, é o que forma o plexo.
+
+Daí saem duas consequências que a prova adora:
+
+- A **lesão pré-ganglionar** (avulsão) arranca as radículas da medula, proximal ao gânglio. O neurônio motor fica na medula, desconectado de tudo; o neurônio sensitivo fica no gânglio, ainda ligado ao seu axônio periférico. Não há coto proximal para costurar: só transferência resolve.
+- A **lesão pós-ganglionar** (ruptura ou estiramento) acontece fora do forame. Sobra um coto proximal ligado à medula, com axônios motores viáveis, que pode receber um enxerto.
+
+E como o ramo dorsal para os paraespinais e os ramos que formam o frênico, o escapular dorsal e o torácico longo saem colados ao forame, a paralisia desses músculos indica que a lesão está muito perto da medula. A figura do capítulo mostra os três tipos de lesão por tração lado a lado.
+
+!figura 34.2 imagem=mao/green7-34-2.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 34, Fig. 34.2, p. 1147. A, o gânglio da raiz dorsal dentro do forame, ao lado da medula; B, avulsão: as radículas são arrancadas da medula, proximal ao gânglio (pré-ganglionar); C, estiramento do nervo, ainda em continuidade; D, ruptura extraforaminal, distal ao gânglio (pós-ganglionar), que deixa coto proximal enxertável.
+!fim
+
+!questoes treino=mao-2517,mao-3059
+conceito: O gânglio da raiz dorsal fica dentro do canal e do forame intervertebral; a avulsão é proximal a ele (pré-ganglionar) e a ruptura extraforaminal é distal (pós-ganglionar).
+como: O SIMÃO 2021 perguntou onde fica o gânglio sensitivo dos nervos que formam o plexo.
+armadilha: Pôr o gânglio fora do forame, junto aos troncos, ou confundi-lo com a cadeia simpática paravertebral.
+!fim
+
 ## Raízes e troncos
 
-O Green (cap. 34, p. 1146) descreve o plexo formado pelos ramos ventrais de **C5 a T1**, em cinco segmentos: **raízes, troncos, divisões, fascículos e ramos terminais**. O **gânglio da raiz dorsal** (corpos dos neurônios sensitivos) fica dentro do canal e do forame, e cada nervo espinal manda um pequeno ramo dorsal aos paraespinais. Toda a semiologia do pré-ganglionar sai desses dois detalhes.
+**C5 e C6 se unem para formar o tronco superior**, **C7 continua sozinho como tronco médio** (sem um ponto claro em que muda de nome) e **C8 e T1 formam o tronco inferior** (cap. 34, p. 1146). O ponto de convergência de C5 com C6 é o **ponto de ERB**, e é exatamente ali que emerge o **nervo supraescapular**. Essa frase vale questão sozinha: no ponto de ERB não sai o escapular dorsal (que é de C5, antes da união), nem o subclávio, nem o peitoral lateral.
 
-**C5 e C6 formam o tronco superior**, **C7 continua como tronco médio** e **C8 e T1 formam o tronco inferior**. A junção de C5 com C6 é o **ponto de ERB**, exatamente onde emerge o **nervo supraescapular**. Nervos espinais e troncos ficam acima da clavícula (plexo supraclavicular), entre os escalenos anterior e médio (cap. 40, p. 1391).
+Nervos espinais e troncos ficam **acima da clavícula** (plexo supraclavicular), passando **entre os escalenos anterior e médio**; as divisões ficam **atrás da clavícula** (plexo retroclavicular), e os fascículos, abaixo dela (cap. 34, p. 1146; cap. 40, p. 1391). Sob a clavícula o plexo corre sobre a primeira costela e, medial ao coracoide, os nervos envolvem a artéria axilar (cap. 40, p. 1391 e 1392). Essa topografia explica por que dois terços das lesões de tração são supraclaviculares e por que a fratura da clavícula se associa às infraclaviculares.
 
-Antes de chegar aos troncos, as raízes já soltam ramos de enorme valor clínico (cap. 34, p. 1146): uma **contribuição de C5 para o frênico**, o **nervo escapular dorsal, de C5**, que inerva o **romboide**, e o **nervo torácico longo, de C5, C6 e C7**, que inerva o **serrátil anterior**. Os **únicos ramos de tronco** são o **supraescapular** e o **nervo do subclávio**, ambos do tronco superior. Das divisões não sai nenhum ramo muscular.
+## Ramos que saem antes dos fascículos
 
-Variações caem em prova: o plexo **pré-fixado** recebe **C4** (22%) e o **pós-fixado**, **T2** (1%) (cap. 34, p. 1151; cap. 40, p. 1391); o escapular dorsal às vezes recebe C4, e o romboide pode funcionar com C5 avulsionada.
+Antes mesmo de formar os troncos, as raízes soltam ramos de enorme valor clínico (cap. 34, p. 1146): uma **contribuição de C5 para o frênico**, o **nervo escapular dorsal, de C5**, que inerva o **romboide** (e o levantador da escápula), e o **nervo torácico longo, de C5, C6 e C7**, que inerva o **serrátil anterior**. Os **únicos ramos que saem dos troncos** são o **supraescapular** e o **nervo do subclávio**, ambos do tronco superior. Das divisões, o texto diz que não sai nenhum ramo muscular.
+
+Por que a prova insiste nesses ramos? Porque são os **delatores da lesão proximal**. Um paciente com o ombro paralisado e o romboide funcionando tem a lesão de C5 distal à saída do escapular dorsal; se o romboide também está paralisado, a lesão de C5 está colada à medula, e a avulsão é provável. O mesmo vale para o serrátil (C5 a C7) e para o diafragma (C3 a C5).
 
 !tabela Ramos que saem antes dos fascículos (Green, cap. 34, p. 1146; cap. 40, p. 1391)
 | Origem | Nervo | Músculo ou função | Por que importa |
@@ -44,7 +84,9 @@ Variações caem em prova: o plexo **pré-fixado** recebe **C4** (22%) e o **pó
 | divisões | nenhum ramo muscular | | segmento retroclavicular "mudo" |
 !fim
 
-!questoes central=mao-0708 relacionadas=mao-1814,mao-1019,mao-0792,mao-0844
+Há uma pequena incoerência no livro que convém conhecer para não se assustar: a Tabela 40.1 (cap. 40, p. 1394) escreve o torácico longo como **C5, C7 e C8**, enquanto o texto dos dois capítulos (p. 1146 e 1391) diz **C5 a C7**. Vale o texto, que é também a anatomia clássica.
+
+!questoes central=mao-0708 relacionadas=mao-1814,mao-1019,mao-0792,mao-0844 treino=mao-2079,mao-2238,mao-3062
 conceito: C5 e C6 formam o tronco superior; o escapular dorsal sai de C5 e inerva o romboide; o torácico longo vem de C5 a C7.
 como: O IAUPE 2025 e o ENARE Cirurgia da Mão 2022 pediram as raízes do tronco superior; a UFG 2021, a origem do escapular dorsal; o INTO 2023 e 2026, o músculo do escapular dorsal e a raiz do romboide na paralisia obstétrica.
 armadilha: Dar C6 como origem do escapular dorsal, ou dizer que o plexo vem de C4 a C6; o romboide é C5 e não o trapézio (acessório).
@@ -52,36 +94,52 @@ armadilha: Dar C6 como origem do escapular dorsal, ou dizer que o plexo vem de C
 
 ## Divisões e fascículos
 
-Atrás da clavícula, cada tronco se divide em **divisão anterior e divisão posterior** (plexo retroclavicular). A regra é simples e é a questão mais clássica do tema (cap. 34, p. 1146): **todas as divisões posteriores formam o fascículo posterior**; as **divisões anteriores dos troncos superior e médio formam o fascículo lateral**; a **divisão anterior do tronco inferior continua como fascículo medial**. Por isso não existe "fascículo anterior", e o fascículo medial não recebe nenhuma divisão posterior.
+Atrás da clavícula, cada tronco se divide em **divisão anterior e divisão posterior**. A regra é simples e é a questão mais clássica do tema (cap. 34, p. 1146): **as três divisões posteriores formam o fascículo posterior**; as **divisões anteriores dos troncos superior e médio formam o fascículo lateral**; a **divisão anterior do tronco inferior continua como fascículo medial**. Por isso não existe "fascículo anterior", e o fascículo medial não recebe nenhuma divisão posterior.
 
-Os fascículos recebem o nome pela **relação com a artéria axilar** (cap. 40, p. 1392). Na via infraclavicular (cap. 34, p. 1157), o **fascículo lateral é superficial e lateral** à artéria; o **posterior fica levemente lateral e profundo** (posterior) a ela; o **medial fica medial e profundo**. Quando o enunciado pergunta a posição do fascículo posterior em relação à artéria, a resposta do Green é posterior e lateral.
+Há uma lógica embriológica por trás disso, útil para não esquecer: as divisões anteriores levam fibras para os músculos da face flexora (anterior) do membro, e as posteriores, para os da face extensora. O fascículo posterior, feito só de divisões posteriores, dá o axilar e o radial, que são os nervos dos extensores do ombro, do cotovelo, do punho e dos dedos; os fascículos lateral e medial dão musculocutâneo, mediano e ulnar, que são os nervos dos flexores.
 
-## Ramos terminais e colaterais dos fascículos
+Os fascículos recebem o nome pela **relação com a artéria axilar** (cap. 40, p. 1392), e não pela posição que ocupam no plexo como um todo. Na via infraclavicular (cap. 34, p. 1157), o **fascículo lateral é superficial e lateral** à artéria; o **posterior fica levemente lateral e profundo** (posterior) a ela; o **medial fica medial e profundo**. Quando o enunciado pergunta a posição do fascículo posterior em relação à artéria, a resposta do Green é posterior e levemente lateral.
 
-O **lateral** dá o **musculocutâneo** e a **contribuição lateral do mediano**; o **posterior**, o **subescapular superior, o toracodorsal, o subescapular inferior, o axilar e o radial**; o **medial**, o **peitoral medial, os cutâneos mediais do braço e do antebraço, a contribuição medial do mediano e o ulnar** (cap. 34, p. 1146). O peitoral lateral sai do fascículo lateral no capítulo pediátrico (cap. 40, p. 1391); o capítulo 34 o põe no nível das divisões.
+## Ramos dos fascículos e o que cada perda denuncia
 
-Daí a localização (cap. 34, p. 1151): perda do **grande dorsal** indica lesão no **fascículo posterior**; do **peitoral esternal**, no **medial**; do **peitoral clavicular**, no **lateral**. O musculocutâneo **perfura o coracobraquial** e termina como **cutâneo lateral do antebraço** (pp. 1157 e 1165): a lesão do fascículo lateral tira a sensibilidade da **borda radial do antebraço**. O Green devolve a sensibilidade da mão reinervando o **fascículo lateral (C6-C7)** e a **contribuição lateral do mediano** (pp. 1159 e 1160): a parte sensitiva do mediano vem sobretudo do lateral. **Intrínsecos e flexores dos dedos** dependem do **fascículo medial**.
+O **lateral** dá o **musculocutâneo** e a **contribuição lateral do mediano**; o **posterior**, de proximal para distal, o **subescapular superior, o toracodorsal e o subescapular inferior**, e termina no **axilar** e no **radial**; o **medial** dá o **peitoral medial**, o **cutâneo medial do antebraço**, o **cutâneo medial do braço**, a **contribuição medial do mediano** e o **ulnar** (cap. 34, p. 1146). O peitoral lateral sai do fascículo lateral no capítulo pediátrico (cap. 40, p. 1391), que é a anatomia clássica; o capítulo 34 o descreve de modo incoerente (ora no nível das divisões, ora no fascículo posterior), e por isso nenhuma questão séria deve cobrar a origem do peitoral lateral pelo capítulo do adulto.
 
-!tabela Fascículos, ramos e o que a lesão de cada um tira (Green, cap. 34, pp. 1146, 1151 e 1157)
+O toracodorsal merece uma linha a mais, porque reaparece como doador: sai do fascículo posterior com fibras de **C7, C8 e às vezes C6**, e tem de 8 a 19 cm de comprimento útil (cap. 34, p. 1177; a p. 1197 escreve C6 a C8).
+
+Daí a localização pelo exame (cap. 34, p. 1151): perda do **grande dorsal** indica lesão no **fascículo posterior**; da **cabeça esternal do peitoral maior** (peitoral medial), no **medial**; da **cabeça clavicular** (peitoral lateral), no **lateral**; de **supra e infraespinal**, no **supraescapular ou no tronco superior**. O musculocutâneo **perfura o coracobraquial** e termina como **cutâneo lateral do antebraço** (p. 1157 e 1165): a lesão do fascículo lateral tira a sensibilidade da **borda radial do antebraço**. O Green devolve a sensibilidade da mão reinervando o **fascículo lateral (C6-C7)** e a **contribuição lateral do mediano** (p. 1159 e 1160), porque a parte sensitiva do mediano, a dos três dedos radiais, vem sobretudo do lateral. **Intrínsecos e flexores dos dedos** dependem do **fascículo medial**.
+
+!tabela Fascículos, ramos e o que a lesão de cada um tira (Green, cap. 34, p. 1146, 1151 e 1157)
 | Fascículo | Formado por | Posição na artéria axilar | Ramos | Perda típica |
 |---|---|---|---|---|
 | lateral | divisões anteriores dos troncos superior e médio | superficial e lateral | musculocutâneo, contribuição lateral do mediano, peitoral lateral | flexão do cotovelo, peitoral clavicular, sensibilidade radial do antebraço e da mão |
 | posterior | as três divisões posteriores | levemente lateral e profundo | subescapular superior, toracodorsal, subescapular inferior, axilar, radial | grande dorsal, deltoide, extensores |
-| medial | divisão anterior do tronco inferior | medial e profundo | peitoral medial, cutâneo medial do braço e do antebraço, contribuição medial do mediano, ulnar | intrínsecos, flexores dos dedos, peitoral esternal |
+| medial | divisão anterior do tronco inferior | medial e profundo | peitoral medial, cutâneo medial do antebraço e do braço, contribuição medial do mediano, ulnar | intrínsecos, flexores dos dedos, peitoral esternal |
 !fim
 
-!questoes central=mao-0451 relacionadas=mao-1369,mao-0465,mao-0923,mao-0924,mao-0873,mao-0662,ombro-cotovelo-0564,mao-0878,mao-0709,mao-1433
+!questoes central=mao-0451 relacionadas=mao-1369,mao-0465,mao-0923,mao-0924,mao-0873,mao-0662,ombro-cotovelo-0564,mao-0878,mao-0709,mao-1433 treino=mao-3048
 conceito: Todas as divisões posteriores formam o fascículo posterior, que dá o toracodorsal, o axilar e o radial; o lateral dá o musculocutâneo (que termina no cutâneo lateral do antebraço) e a porção sensitiva do mediano; o medial dá peitoral medial, ulnar e intrínsecos.
 como: O Einstein 2026 pediu a origem do toracodorsal e da porção sensitiva do mediano; a USP-SP 2025, a regra das divisões; a UFG 2019, a área sensitiva do fascículo lateral e o fascículo da paralisia dos intrínsecos; a UFG 2017, afirmações sobre axilar e supraescapular; a FMRP-USP 2026 e o TEOT 2025 mostraram imagens (peitoral medial; musculocutâneo perfurando o coracobraquial).
 armadilha: Dizer que existe fascículo anterior, que o axilar sai do fascículo lateral, que o supraescapular sai da raiz C5 (sai do tronco superior) ou que o medial leva a sensibilidade dos três dedos radiais.
 alerta: Em `mao-0662` e `ombro-cotovelo-0564` a resposta depende da imagem; o Green descreve o peitoral medial saindo do fascículo medial e o musculocutâneo perfurando o coracobraquial, mas a identificação visual não pode ser conferida no texto.
 !fim
 
-## Relações cirúrgicas e variações
+## Inervação múltipla e variações
 
-Na **via supraclavicular** (cap. 34, p. 1156) divide-se o **omo-hióideo**; o primeiro elemento visto é o **tronco superior**; o **frênico** corre sobre o **escaleno anterior** e leva à raiz C5; **C7 fica entre os escalenos**; **C8 e T1 ficam atrás da subclávia**. Na **via infraclavicular** (p. 1157), pelo deltopeitoral, **desinsere-se o peitoral menor do coracoide** para expor os fascículos; o subclávio é dividido para chegar às divisões.
+O plexo não é uma árvore de galhos independentes, e sim uma trama. **Cada nervo espinal manda axônios para mais de um nervo periférico, e cada nervo periférico recebe de mais de um nervo espinal**; quase todo músculo tem inervação múltipla. O exemplo que o capítulo usa é o de C7: os músculos que ele inerva recebem também de C6 e C8, e por isso a **secção isolada de C7 não tira a função de nenhum músculo** (cap. 34, p. 1175). É essa redundância que torna possível usar o C7 do lado sadio como doador, como se verá adiante, e que explica por que a lesão isolada de C7 quase não aparece na clínica.
 
-!questoes central=mao-1367 relacionadas=mao-1360,mao-1620
+As variações de formação também caem. O plexo **pré-fixado** recebe contribuição significativa de **C4**, e o **pós-fixado**, de **T2**; os anatomistas as consideram comuns (cap. 34, p. 1151), e o capítulo pediátrico dá números: **22% pré-fixados e 1% pós-fixados** (cap. 40, p. 1391). Na prática, o pré-fixado engana o exame: o escapular dorsal pode receber C4, e o **romboide pode estar ativo na ENMG mesmo com avulsão de C5** (cap. 34, p. 1151). O mesmo vale para o C7 contralateral: o risco de déficit no doador é maior quando o plexo é pré ou pós-fixado (p. 1176).
+
+## Relações cirúrgicas: supraclavicular e infraclavicular
+
+A anatomia cirúrgica é o que separa uma resposta de livro de anatomia de uma resposta de cirurgião, e o Green a descreve com detalhe (cap. 34, p. 1155 a 1157).
+
+**Via supraclavicular.** Os autores preferem uma incisão cervical **transversa de 5 a 6 cm**, paralela e dois a três dedos acima da clavícula, somada a uma incisão deltopeitoral; a incisão clássica em zigue-zague, do ângulo da mandíbula pela borda posterior do esternocleidomastóideo até a clavícula e daí ao sulco deltopeitoral, expõe tudo, mas deixa cicatriz hipertrófica com frequência (p. 1155). Abre-se o platisma, preservam-se os ramos cutâneos do plexo cervical, acha-se o acessório na borda medial do trapézio, e **dividem-se o omo-hióideo e os vasos cervicais transversos** (p. 1156). O primeiro elemento do plexo que aparece é o **tronco superior**. O **frênico corre sobre a face anterior do escaleno anterior** e, seguido para cima, leva à contribuição de C5, o que confirma qual raiz é C5; estimulá-lo contrai o diafragma.
+
+A disposição das raízes segue uma lógica de profundidade: **C5 é menor, superior, lateral e mais vertical que C6**; **C7 e o tronco médio ficam entre os escalenos anterior e médio**, mais mediais, posteriores e horizontais; **C8 e T1 ficam mais baixos e mais profundos, junto à subclávia**: C8 logo acima e atrás dela, T1 quase diretamente atrás (p. 1156, Fig. 34.10). A **artéria cervical transversa frequentemente cruza por cima de C7**, e não de C5. No adulto, C8 e T1 em geral **não são expostos**, porque o reparo raramente é indicado e o resultado é ruim (p. 1156).
+
+**Via infraclavicular.** Pelo intervalo deltopeitoral, com a veia cefálica afastada para lateral, o peitoral maior pode ser desinserido do úmero (deixando coto de tendão) e o **peitoral menor é desinserido do coracoide**; abre-se a fáscia clavipeitoral (p. 1157). O **fascículo lateral é a estrutura mais superficial** que se encontra; acha-se seguindo o mediano de distal para proximal, e o musculocutâneo sai dele e perfura o coracobraquial. Preservam-se os nervos peitorais. Para chegar às divisões, atrás da clavícula, faz-se um túnel digital, solta-se a parte lateral da origem clavicular do peitoral maior, **divide-se o subclávio** e ligam-se os vasos supraescapulares; a osteotomia da clavícula é rara, e quando feita pede a placa pré-perfurada (p. 1157 e 1158).
+
+!questoes central=mao-1367 relacionadas=mao-1360,mao-1620 treino=mao-2150,mao-3037,mao-3049,mao-3074
 conceito: O fascículo posterior fica posterior e levemente lateral à artéria axilar; na via infraclavicular desinsere-se o peitoral menor do coracoide; plexo pré-fixado recebe C4 e pós-fixado recebe T2.
 como: A USP-SP 2025 perguntou a posição do fascículo posterior e o músculo desinserido na via infraclavicular; a USP-SP 2026, a variação anatômica reconhecida.
 armadilha: Achar que o peitoral maior é o músculo que se desinsere da origem, ou que variações dos fascículos não têm relevância cirúrgica; o intercostobraquial não é variação do plexo, é ramo do 2º intercostal (p. 1170).
@@ -90,43 +148,110 @@ alerta: Para `mao-1620`, o Green confirma que o plexo pré-fixado recebe inerva�
 
 # Como o plexo se rompe no adulto {radar=confirmado}
 
-## O mecanismo de tração
+## Os graus de lesão: SEDDON e SUNDERLAND
 
-A maioria das lesões é por **tração** (cap. 34, p. 1148). Abrir à força o **ângulo ombro-pescoço** (ombro para baixo, cabeça para o outro lado, a queda de moto) lesa primeiro **C5 a C7**; abrir o **ângulo escapuloumeral** lesa primeiro **C8 e T1**. Como **o tecido que ancora C5 e C6 ao forame é mais forte que o de C8 e T1** (pp. 1148 e 1149), C8-T1 tendem a avulsionar e C5-C6 a romper fora do forame. Por isso, mesmo no pan-plexo, é comum **C5 rota (enxertável) com as demais avulsionadas** (p. 1150).
+Antes de falar do plexo, o capítulo relembra a linguagem das lesões de nervo, porque o prognóstico de cada elemento depende do grau (cap. 34, p. 1146 e 1148). SEDDON descreveu três tipos; SUNDERLAND desdobrou a axonotmese e chegou a cinco graus.
 
-Dois terços das lesões são supraclaviculares. **Cerca de 75% têm lesões associadas** (crânio, tórax, coluna cervical, membro) e **20% têm lesão vascular** (p. 1149). Projétil: observar (elementos em continuidade); corte: explorar.
-
-## Os padrões
-
-!tabela Padrões da lesão traumática supraclavicular (Green, cap. 34, pp. 1149 e 1150)
-| Padrão | Frequência | O que se perde | O que fica | Nome |
-|---|---|---|---|---|
-| C5-C6 | cerca de 15% | estabilidade, abdução, RE e RI do ombro; flexão do cotovelo; supinação; sensibilidade C5-C6 | extensão do cotovelo, punho e mão | ERB, ERB-DUCHENNE |
-| C5-C7 | 20% a 35% | o anterior mais extensão variável do cotovelo, punho e dedos; sensibilidade de polegar, indicador e médio | flexão dos dedos e intrínsecos | ERB-plus |
-| C8-T1 | cerca de 10% (menos na experiência dos autores) | intrínsecos, extrínsecos variáveis, sensibilidade ulnar e medial do antebraço, HORNER | ombro e cotovelo | KLUMPKE, DEJERINE-KLUMPKE |
-| C5-T1 (pan-plexo) | 50% a 75% das supraclaviculares | membro flácido e mão insensível | quase nada | total |
+!tabela Graus de lesão nervosa (Green, cap. 34, p. 1146 e 1148)
+| SEDDON | SUNDERLAND | O que está lesado | Evolução |
+|---|---|---|---|
+| neuropraxia | 1º grau | bloqueio focal de condução, sem degeneração walleriana | recupera em horas a semanas; não se opera |
+| axonotmese | 2º grau | só o axônio; endoneuro, perineuro e epineuro intactos | regenera a 1 mm por dia (1 polegada por mês); meses a anos |
+| axonotmese | 3º grau | axônio e endoneuro | recuperação variável, às vezes ausente |
+| axonotmese | 4º grau | axônio, endoneuro e perineuro; só o epineuro intacto | recuperação variável ou nula; pode precisar de cirurgia |
+| neurotmese | 5º grau | sem continuidade | não recupera; cirurgia |
 !fim
 
-**No adulto, o padrão mais comum é o total**, seguido do C5-C7; o KLUMPKE isolado é raro. O motociclista que não abduz, não flete o cotovelo, não supina e perdeu a sensibilidade lateral do braço, com mão normal, tem **lesão do plexo superior**.
+O raciocínio por trás é o da regeneração: enquanto os tubos endoneurais estão intactos (2º grau), cada axônio que cresce é guiado de volta ao seu alvo; quando o endoneuro e o perineuro se rompem (3º e 4º graus), os axônios se perdem na cicatriz, e o resultado depende de quantos encontram um caminho. No plexo, a **neurotmese** inclui duas situações muito diferentes: a **ruptura pós-ganglionar** e a **avulsão pré-ganglionar** (p. 1148).
 
-!questoes central=mao-1587 relacionadas=mao-0268,mao-1383
+Há ainda um limite que não depende do grau, e sim da distância. Uma lesão muito proximal com alvo muito distal (o tronco inferior para os intrínsecos, o ulnar proximal para a mão) pode ter axônios perfeitamente capazes de regenerar e, mesmo assim, falhar: a 1 mm por dia, eles demoram tanto que a **placa motora degenera e o músculo atrofia antes de serem alcançados** (p. 1148). Esse é o motivo de o adulto quase nunca recuperar a mão por enxerto do tronco inferior, e é o fio que liga este capítulo às transferências nervosas distais.
+
+## Tração: qual ângulo se abre e qual raiz cede
+
+A grande maioria das lesões do adulto é por **tração** (cap. 34, p. 1148). Com energia baixa, o resultado tende a ser neuropraxia ou axonotmese leve (SUNDERLAND I a III), com bom potencial espontâneo; às vezes há também lesão isquêmica da microcirculação do nervo. Com energia alta, vêm a ruptura e a avulsão. A combinação de rupturas incompletas e avulsões é comum: dá alguma recuperação espontânea, mas a reconstrução precoce melhora o resultado.
+
+A direção da força decide qual parte do plexo cede primeiro (p. 1148, Fig. 34.3):
+
+- **Alargar o ângulo entre o pescoço e o ombro** (o ombro empurrado para baixo e a cabeça jogada para o outro lado, a queda clássica da moto) estira primeiro **C5-C6 e o tronco superior**, e depois C7.
+- **Alargar o ângulo escapuloumeral** (o braço puxado para cima, em abdução extrema) estira primeiro **C8-T1 e o tronco inferior**.
+- Um impacto extremo lesa todos.
+
+E há uma diferença anatômica que explica por que as raízes de cima rompem e as de baixo avulsionam: **o tecido que ancora C5 e C6 ao forame vertebral é bem mais forte que o de C8 e T1** (p. 1148 e 1149). Puxada, C5 resiste no forame e acaba rompendo fora dele, deixando um coto; C8 e T1, sem essa amarra, são arrancadas da medula. Por isso, mesmo no pan-plexo, **C5 costuma ser pós-ganglionar**, enxertável, com as demais avulsionadas (p. 1150), e por isso os autores insistem em explorar o plexo proximal: **menos de 20% das lesões pan-plexuais têm avulsão das cinco raízes** (p. 1155).
+
+## Energia, lesões associadas, projéteis e cortes
+
+**Dois terços** das lesões por tração são **supraclaviculares** (raízes e troncos); um terço é retro ou infraclavicular. A lesão pode estar em **dois níveis** ao mesmo tempo, e a lesão longitudinal extensa é comum (cap. 34, p. 1149). O **principal fator que determina a extensão da lesão é a energia do trauma**; a direção da força e a posição do braço em relação ao pescoço pesam menos (p. 1149). É por isso que a queda da própria altura costuma dar lesão incompleta e recuperável, e o motociclista lançado em alta velocidade, pan-plexo com avulsões.
+
+A energia também explica as associações: **cerca de 75% têm lesão associada** (crânio, tórax, coluna cervical, membro do mesmo lado) e **cerca de 20% têm lesão vascular** (p. 1149). Hematoma, pseudoaneurisma ou fístula arteriovenosa podem lesar o plexo uma segunda vez, por compressão. Um corolário prático aparece na avaliação: no politraumatizado com trauma craniano ou medular, a lesão do plexo é subdiagnosticada, e o inverso também acontece (p. 1150).
+
+Os mecanismos abertos se comportam de outro jeito (p. 1149):
+
+- **Arma de fogo**: em geral o plexo fica **em continuidade**. O projétil de baixa velocidade lesa por impacto direto; o de alta velocidade pode seccionar, mas mais vezes contunde e estira pela onda de choque e pela cavitação. Muitos recuperam, e a conduta inicial é **observar**. O pseudoaneurisma tardio é a exceção que obriga a agir: comprime o plexo e dá perda progressiva.
+- **Ferimento penetrante**: cortante (faca, vidro) ou contuso (hélice, motor, motosserra, mordida). A maioria está em descontinuidade e deve ser **explorada**; um terço precisa de cirurgia vascular, muitas vezes no mesmo ato.
+
+## Os padrões clínicos
+
+O Green descreve quatro padrões supraclaviculares e dá a frequência de cada um (cap. 34, p. 1149 e 1150). Vale entender cada déficit pelo que as raízes inervam, e não decorar a tabela.
+
+!tabela Padrões da lesão traumática supraclavicular (Green, cap. 34, p. 1149 e 1150)
+| Padrão | Frequência | O que se perde | O que fica | Nome |
+|---|---|---|---|---|
+| C5-C6 (ou ponto de ERB) | cerca de 15% | estabilidade, abdução, RE e RI do ombro (supra, infra, deltoide, subescapular); flexão do cotovelo (bíceps, braquial, braquiorradial); supinação (bíceps, supinador); sensibilidade C5-C6 | extensão do cotovelo, punho e mão | ERB, ERB-DUCHENNE |
+| C5-C7 | 20% a 35% | o anterior mais fraqueza variável da extensão do cotovelo, do punho e às vezes dos dedos; sensibilidade de polegar, indicador e médio | flexão dos dedos e intrínsecos | ERB-PLUS |
+| C8-T1 | cerca de 10% (menos na experiência dos autores) | intrínsecos, extrínsecos variáveis, sensibilidade dos dedos ulnares, da face medial do antebraço e da parte distal do braço; pode haver HORNER | ombro e cotovelo | KLUMPKE, DEJERINE-KLUMPKE |
+| C5-T1 (pan-plexo) | 50% a 75% das supraclaviculares | membro flácido e mão insensível; às vezes parcial | quase nada | total |
+!fim
+
+Três leituras desta tabela caem com frequência. Primeira: **no adulto, o padrão mais comum é o total**, seguido do C5-C7; o KLUMPKE isolado é raro. Segunda: o que o C7 acrescenta ao C5-C6 é **extensão**, do cotovelo, do punho e às vezes dos dedos, porque C7 é a raiz central do radial e contribui até para o flexor profundo dos dedos (p. 1149); a mão continua flexionando e os intrínsecos continuam funcionando, porque estes são C8-T1. Terceira: a supinação está no C5-C6 porque o **bíceps** é o supinador mais forte; o motociclista que não abduz, não flete o cotovelo, não supina e perdeu a sensibilidade lateral do braço, com mão normal, tem **lesão do plexo superior**.
+
+O capítulo do adulto não descreve a atitude do cotovelo e do antebraço no KLUMPKE, ao contrário do que alguns materiais de prova sugerem.
+
+!questoes central=mao-1587 relacionadas=mao-0268,mao-1383 treino=mao-1740,mao-3052,mao-3057,mao-3069
 conceito: No adulto, a lesão total é a mais comum, seguida de C5-C7; 75% têm lesões associadas e 20% lesão vascular; no total, C5 costuma ser pós-ganglionar e as outras pré-ganglionares; C5-C6 tira abdução, flexão do cotovelo e supinação com mão normal.
 como: A USP-SP 2026 pediu a afirmação correta sobre frequência e associações; o ENARE R4 2023 descreveu motociclista com "asa de gaivota", sem flexão do cotovelo e supinação e com anestesia lateral do braço; a USP-SP 2025, um diagnóstico diferencial.
 armadilha: Inverter os números (75% vasculares e 20% com trauma craniano) ou dizer que no total C5-C6 são pré-ganglionares e C7-T1 pós-ganglionares.
 alerta: Para `mao-1383`, os trechos lidos do Green não listam a radiculopatia cervical entre os diferenciais da lesão traumática do plexo; o capítulo apenas manda examinar os membros inferiores para afastar lesão medular associada (p. 1152). Gabarito oficial mantido.
 !fim
 
+## A lesão infraclavicular
+
+Abaixo da clavícula o quadro muda. A **fratura da clavícula é frequente** nessas lesões, e os padrões mais comuns são a lesão do **fascículo posterior** (radial e axilar juntos) e as lesões isoladas do **axilar** ou do **supraescapular** (cap. 34, p. 1149 e 1150). O paciente típico fraturou a clavícula, não abduz o ombro (deltoide) e não estende o cotovelo, o punho e os dedos (radial), mas flete o cotovelo (musculocutâneo, do fascículo lateral) e tem a sensibilidade da palma preservada (mediano e ulnar). Como as raízes estão íntegras, essas lesões são pós-ganglionares e têm prognóstico melhor; o Green mede o NAP em todos os elementos e enxerta quando o NAP está ausente, a zona é curta e a arquitetura é boa, preferindo transferências quando o paciente chega com 6 a 12 meses (p. 1160).
+
 # Pré ou pós-ganglionar: o exame que decide o prognóstico {radar=confirmado}
 
 ## Por que o gânglio importa
 
-A lesão **pré-ganglionar** arranca a raiz da medula, onde está o neurônio motor: **não se recupera e não pode ser reparada nem enxertada** (cap. 34, p. 1150); só a transferência traz axônios. A **pós-ganglionar** deixa um coto proximal com axônios viáveis, que pode ser **enxertado**. Para saber sem abrir, examinam-se **os nervos que saem colados à medula** (cap. 40, p. 1394).
+A lesão **pré-ganglionar** separa o neurônio motor (no corno anterior) do resto do nervo: **não se recupera e não pode ser reparada nem enxertada** (cap. 34, p. 1150). A **pós-ganglionar** deixa um coto proximal com axônios viáveis, que pode ser enxertado. A presença de avulsão em um ou mais níveis torna a lesão mais grave, a recuperação menor e a cirurgia mais precoce (p. 1150).
 
-## Os sinais
+O capítulo é honesto sobre o diagnóstico: **nenhum achado isolado decide**; a avaliação é integrada e, idealmente, feita em equipe (neurologista, cirurgiões, fisiatra, terapeutas) (p. 1150). Mesmo na cirurgia, **a inspeção e a palpação não distinguem pré de pós-ganglionar**: a raiz avulsionada pode ter pouca fibrose (p. 1158). O que se faz é somar indícios, e a prova cobra cada um deles.
 
-O Green (cap. 34, pp. 1151 e 1152) lista: **romboide e serrátil paralisados** (saem da raiz antes do tronco) indicam lesão proximal das raízes altas; **HORNER** correlaciona-se com **avulsão de C8-T1**, porque o **gânglio simpático de T1 fica junto da raiz**; **sem TINEL nem dor à percussão no pescoço** (não há neuroma); **paraespinais atróficos**, com a cabeça desviada **para longe** do lado lesado. Na radiografia, **diafragma elevado** indica lesão proximal, porque o **frênico vem de C3 a C5**: no C5-C6, é sinal de gravidade. Já dor à percussão, **anidrose no território do nervo** e **TINEL que avança** apontam pós-ganglionar.
+## A história que já orienta
 
-!tabela Sinais que apontam o nível da lesão (Green, cap. 34, pp. 1151 a 1153; cap. 40, p. 1394; Campbell, p. 1310)
+A história conta muito antes do exame (cap. 34, p. 1150). Acidente de carro ou moto em alta energia sugere lesão grave; queda tende a ser menos grave, salvo se houve fratura. Laceração não recupera: explora-se na fase aguda ou subaguda. Arma de fogo, ao contrário, em geral se observa.
+
+O sinal de história mais elegante é a dor. **Dor intensa num membro anestésico é dor de desaferentação**, típica da **avulsão de raiz** (p. 1150). O mecanismo é central: a raiz arrancada deixa os neurônios do corno dorsal da medula sem a sua entrada normal, e eles passam a disparar sozinhos; o paciente sente queimação intensa num braço que não sente nada ao toque. Não é sinal de regeneração nem de neuroma em recuperação, e sim de lesão grave e proximal. O tema volta no fim do capítulo do adulto, com a cirurgia da zona de entrada da raiz dorsal.
+
+O exame se faz numa ficha padronizada (a de MERLE D'AUBIGNÉ, Fig. 34.4, p. 1151) e se repete nos primeiros meses (p. 1150), porque é a evolução, e não a foto do primeiro dia, que diz quem vai recuperar.
+
+## Os sinais de avulsão no exame
+
+O Green (cap. 34, p. 1151 e 1152) lista os achados, e cada um tem uma explicação anatômica simples:
+
+- **Romboide e serrátil anterior paralisados**: o escapular dorsal (C5) e o torácico longo (C5 a C7) saem das raízes logo depois do forame; se eles falham junto com o tronco superior, a lesão está colada à medula. É um indicador importante de lesão proximal ou pré-ganglionar das raízes altas.
+- **HORNER do mesmo lado**: correlaciona-se fortemente com **avulsão de C8 e/ou T1** (ver adiante).
+- **Ausência de TINEL e de dor à percussão no pescoço**: não há neuroma pós-ganglionar para percutir.
+- **Atrofia dos paraespinais**: o ramo dorsal sai logo depois do gânglio; com a avulsão, os paraespinais do lado lesado atrofiam, e a cabeça pode desviar **para o lado oposto** à lesão.
+
+E os achados que apontam para lesão **pós-ganglionar** (p. 1152):
+
+- **Dor à percussão** supra ou infraclavicular (há neuroma).
+- **Ausência de sudorese** no território do nervo (interrupção simpática): as fibras simpáticas que vão ao membro entram no nervo espinal pelos ramos comunicantes, fora do forame, e seguem com o nervo periférico; a ruptura distal as interrompe e a pele seca, enquanto a avulsão, proximal à entrada delas, poupa o suor do membro.
+- **Preservação mínima de movimento**, que indica lesão parcial.
+- **TINEL que avança** com o tempo, sinal de lesão em recuperação.
+
+Há uma armadilha comum: o **subescapular** (fascículo posterior) e o **trapézio** (acessório, extraplexual) não servem como sinal de avulsão. O trapézio, aliás, deve ser testado por outro motivo: o acessório é o doador mais usado e às vezes é lesado junto (p. 1152). O exame termina com os membros inferiores (lesão medular associada) e com a avaliação vascular (pulsos, Doppler, frêmito, sopro).
+
+!tabela Sinais que apontam o nível da lesão (Green, cap. 34, p. 1150 a 1153; cap. 40, p. 1394; Campbell, p. 1310)
 | Achado | Estrutura | Leitura |
 |---|---|---|
 | romboide paralisado | escapular dorsal (C5) | pré-ganglionar alta |
@@ -135,12 +260,13 @@ O Green (cap. 34, pp. 1151 e 1152) lista: **romboide e serrátil paralisados** (
 | HORNER | simpático junto de T1 | avulsão C8-T1, mau prognóstico |
 | paraespinais atróficos, cabeça desviada para o lado oposto | ramo dorsal | avulsão |
 | sem TINEL nem dor à percussão no pescoço | ausência de neuroma | pré-ganglionar |
+| dor intensa em membro anestésico | desaferentação do corno dorsal | avulsão |
 | SNAP preservado com pele anestesiada | gânglio íntegro | patognomônico de avulsão |
 | pseudomeningocele | dura e aracnoide arrancadas | avulsão |
 | dor à percussão, anidrose no território, TINEL que avança | neuroma periférico | pós-ganglionar |
 !fim
 
-!questoes central=mao-1428 relacionadas=mao-0797,mao-0108,mao-0985,mao-1522,mao-0154,mao-0414,pediatria-0802
+!questoes central=mao-1428 relacionadas=mao-0797,mao-0108,mao-0985,mao-1522,mao-0154,mao-0414,pediatria-0802 treino=mao-1985,mao-2146,mao-2343,mao-2409
 conceito: Romboide e serrátil paralisados, HORNER, diafragma elevado, paraespinais atróficos e ausência de dor à percussão no pescoço sugerem lesão pré-ganglionar; a ancoragem de C5-C6 é mais forte que a de C8-T1.
 como: A USP-SP 2024 pediu a afirmação certa sobre lesão pré-ganglionar e o sinal de gravidade no C5-C6; o INTO 2023, o significado da perda de romboide e serrátil; o TEOT 2021, o músculo que denuncia lesão pré-ganglionar na criança; a UFG 2020, o nervo da escápula alada; o TEOT 2023 e 2025, a protração da escápula.
 armadilha: Dizer que a ancoragem de C8-T1 é mais forte, que a cabeça desvia para o lado da lesão, que o HORNER é parassimpático, ou escolher trapézio (acessório) e tríceps como sinal pré-ganglionar.
@@ -149,131 +275,401 @@ alerta: `mao-0797` está sem gabarito; o Green (p. 1151) chama a perda de romboi
 
 ## A síndrome de HORNER
 
-No Green (cap. 34, pp. 1150 e 1152) são quatro: **miose, ptose, anidrose e enoftalmia**; o Tachdjian (p. 405) cita ptose, miose e enoftalmia, por lesão dos simpáticos de T1. A pupila é **pequena** (midríase não entra) e a anidrose é **falta** de suor. O prognóstico é ruim: avulsão das raízes inferiores (Green, cap. 40, p. 1393), **forte indicador de mau resultado** (Campbell, p. 1311). É o HORNER que separa NARAKAS III de IV.
+No Green (cap. 34, p. 1150 e 1152, Fig. 34.5) são quatro sinais: **miose, ptose, anidrose e enoftalmia**; o Tachdjian (p. 405) cita ptose, miose e enoftalmia, por lesão dos simpáticos de T1. Entender o mecanismo evita todas as pegadinhas. As fibras simpáticas pré-ganglionares que vão para a cabeça saem da medula pela **raiz ventral de T1** (e vizinhas), entram na cadeia simpática e sobem até o gânglio cervical superior; o Green resume isso dizendo que o **gânglio simpático de T1 fica junto à raiz de T1** (p. 1151). Quando a raiz de T1 é arrancada da medula, essa via é interrompida no seu início, e a cabeça do mesmo lado perde o simpático. Sem simpático, o dilatador da pupila não age e a pupila fica **pequena** (miose, e nunca midríase); o músculo tarsal superior não sustenta a pálpebra (ptose discreta); a face **não sua** (anidrose, e não hiperidrose); e o olho parece afundado (enoftalmia).
 
-!questoes central=mao-0721 relacionadas=mao-0671,mao-0438,mao-0090,ombro-cotovelo-0500
+Por isso o HORNER é **do mesmo lado** da lesão, indica **avulsão de C8-T1** e é sinal de **gravidade e mau prognóstico**: avulsão das raízes inferiores (Green, cap. 40, p. 1393), forte indicador de mau resultado (Campbell, p. 1311). Na criança, é o HORNER que separa NARAKAS III de IV.
+
+!questoes central=mao-0721 relacionadas=mao-0671,mao-0438,mao-0090,ombro-cotovelo-0500 treino=mao-3056,mao-3066
 conceito: HORNER = ptose, miose, anidrose e enoftalmia, por lesão simpática junto de T1; indica avulsão de C8-T1 e mau prognóstico.
 como: O IAUPE 2025 pediu a tríade; a FMRP-USP 2026, o sinal que não faz parte (midríase); o TARO 2025, o tipo de alteração do suor e o prognóstico na paralisia obstétrica.
 armadilha: Marcar midríase, hiperidrose ou bom prognóstico; ou lembrar a síndrome como parassimpática.
 !fim
 
+## O tórax e o diafragma
+
+As radiografias iniciais incluem coluna cervical, tórax, cintura escapular e úmero (cap. 34, p. 1152). O detalhe que cai é a técnica do tórax: **AP em inspiração e em expiração**, para ver fraturas de costelas e, sobretudo, a **atividade do diafragma**. Um **hemidiafragma elevado** que não se move indica lesão do **frênico (C3 a C5)** e, portanto, lesão proximal, provavelmente pré-ganglionar; num C5-C6, é sinal de gravidade. Na criança, o Green prefere ver o diafragma por **fluoroscopia ou ultrassom dinâmicos** durante a respiração (cap. 40, p. 1393).
+
+Outras pistas radiográficas (cap. 34, p. 1152): a **fratura do processo transverso cervical** se associa a avulsão (as raízes passam coladas a ele); a **fratura da 1ª ou da 2ª costela** se associa a lesão do plexo; e as fraturas de costelas importam para o planejamento, porque **cerca de 10% dos intercostais** ficam inutilizados por elas. Se houve trauma torácico ou o frênico está parado, pede-se prova de função pulmonar; salvo valores muito baixos (menos de 40% do previsto), o paciente tolera a retirada de 4 a 5 intercostais mesmo com o frênico disfuncional (p. 1153).
+
 # Imagem e eletrodiagnóstico {radar=fundamento}
 
 ## Mielografia, mielo-TC e RM
 
-A **mielografia e a mielo-TC são os métodos mais confiáveis para avulsão** (Green, cap. 34, p. 1152): a dura arrancada deixa uma **pseudomeningocele**. Faz-se **3 a 4 semanas** após o trauma, quando o coágulo se dissolve. A **RM** vem substituindo a mielo-TC. Na criança (cap. 40, pp. 1395 e 1396), a mielo-TC acerta 94%; **divertículo grande ou meningocele é diagnóstico**; a RM acerta parecido e exige só sedação; a decisão final é cirúrgica.
+A **mielografia e a mielo-TC** são invasivas, mas continuam sendo **os métodos mais confiáveis para diagnosticar avulsão** (cap. 34, p. 1152). Quando a raiz é arrancada, a dura e a aracnoide que a envolvem também se rasgam, o líquor extravasa para a bainha e forma uma **pseudomeningocele** (Fig. 34.6). NAGANO e colaboradores (J Hand Surg Br, 1989) mostraram a utilidade da mielografia, e a classificação de NAGANO modificada tem seis categorias, das raízes normais à avulsão ventral ou dorsal e à pseudomeningocele.
 
-A ENMG basal é feita **3 a 4 semanas** após a lesão (cap. 34, p. 1153). O detalhe elegante é o **SNAP**: na avulsão, o gânglio continua ligado ao axônio periférico, que não degenera; o potencial sensitivo persiste, mas o paciente não sente. **SNAP preservado em pele anestesiada é patognomônico de avulsão**; na pós-ganglionar, ele some; a condução motora some nas duas. Na criança, a EMG **superestima a recuperação** (plasticidade), e a decisão é pelo **exame físico seriado** (cap. 40, p. 1396).
+O momento do exame tem uma razão: faz-se **pelo menos 3 a 4 semanas após a lesão**, porque antes disso o coágulo no saco dural pode mascarar a falha, e a pseudomeningocele ainda não se formou (p. 1152). A **RM** é cada vez mais usada e, em alguns centros, substituiu a mielo-TC: mostra a pseudomeningocele, neuromas grandes, as radículas, edema e massas. DOI e colaboradores (J Neurosurg, 2002) propuseram uma classificação de avulsão pela RM, comparada com a mielografia e a mielo-TC.
+
+Na criança, os números são de KAWAI (cap. 40, p. 1395 e 1396): mielografia com 84% de verdadeiros positivos, 4% de falsos positivos e 12% de falsos negativos; **mielo-TC acerta 94%**; divertículos pequenos só acertam 60%, mas **divertículos grandes ou meningoceles francas são universalmente diagnósticos**. A RM tem acurácia parecida, avalia também a parte extraforaminal (lesão em dois níveis) e exige só sedação, enquanto a mielografia exige anestesia geral. A decisão final, porém, é feita na cirurgia.
+
+## A angiografia e a função pulmonar
+
+Um **pulso radial normal não exclui lesão vascular**; os autores pedem angio-RM de rotina (cap. 34, p. 1152 e 1153). O motivo não é só diagnóstico: o **tronco toracoacromial** é a fonte arterial preferida para o músculo livre funcional, e saber se ele está pérvio muda o plano de reconstrução.
+
+## Eletroneuromiografia e o paradoxo do SNAP
+
+A ENMG basal se faz **3 a 4 semanas** após a lesão, quando a degeneração walleriana já aconteceu, e repete-se 6 a 12 semanas depois (cap. 34, p. 1153). Antes disso, o segmento distal de um nervo cortado ainda conduz, e o exame engana. A eletromiografia mostra fibrilação em repouso; potenciais de unidade motora ausentes (lesão completa) ou reduzidos (parcial); e, na recuperação, **potenciais nascentes**, de baixa amplitude e polifásicos. Alterações no **romboide, no serrátil e nos paraespinais cervicais** indicam lesão muito proximal ou pré-ganglionar.
+
+O detalhe elegante é o **SNAP** (potencial de ação sensitivo). Na avulsão, o gânglio da raiz dorsal fica íntegro, com o corpo celular ligado ao axônio periférico; esse axônio **não degenera**, e o SNAP medido no braço continua presente. Mas o gânglio está desconectado da medula, e o paciente **não sente nada** naquele dermátomo. Por isso **SNAP preservado em pele anestesiada é patognomônico de avulsão** (p. 1153). Na lesão pós-ganglionar, o axônio sensitivo é separado do seu corpo celular e degenera: o SNAP some. A condução **motora** some nas duas, porque o corpo do neurônio motor está na medula, do lado errado de qualquer uma das lesões. Uma ressalva: na lesão em **dois níveis** (avulsão e ruptura distal), o SNAP desaparece mesmo havendo avulsão.
+
+Por fim, o capítulo põe a ENMG no seu lugar: TINEL que avança e potenciais nascentes animam, mas **não dispensam a cirurgia** se a clínica não melhora; recuperação só eletrofisiológica que não vira recuperação clínica em pouco tempo não conta (p. 1153).
+
+!questoes treino=mao-1986,mao-3055
+conceito: A ENMG basal se faz 3 a 4 semanas após o trauma, quando a degeneração walleriana já ocorreu, e repete-se 6 a 12 semanas depois; antes disso, o nervo distal ainda conduz e engana.
+como: O SIMÃO 2023 perguntou quando fazer os estudos eletrodiagnósticos na lesão traumática do plexo.
+armadilha: Pedir a ENMG nos primeiros dias, quando o segmento distal ainda conduz, ou esperar 6 meses para o primeiro exame.
+!fim
 
 # Quando operar e o que reconstruir primeiro {radar=confirmado}
 
-## O tempo
+## Quem opera e quem observa
 
-**O resultado cai com o tempo entre lesão e cirurgia** (Green, cap. 34, p. 1154). Corte limpo: reparo imediato; corte rombo: **3 a 4 semanas**; tração ou projétil: observar. **Pan-plexo com avulsão na imagem: 2 a 3 meses**; sem suspeita de avulsão: **3 a 6 meses**; raramente mais de 6. Após **1 ano**, a reconstrução primária é contraindicada, mas **transferências distais vão até 18 meses**; o **C8-T1 isolado** não se enxerta (distância longa), preferindo-se transferências distais ou tendinosas (pp. 1153 e 1154).
+A indicação é a **falta de esperança de recuperação espontânea ou adicional** (cap. 34, p. 1153). A laceração perto do plexo é sempre explorada; o projétil e a tração são observados e operados se não houver sinal clínico ou eletrofisiológico de recuperação. Se todos os elementos estão recuperando, não se opera.
+
+As contraindicações absolutas são poucas. Rigidez, contraturas, idade, comorbidades, trauma craniano e lesão medular pesam, mas em geral **não** contraindicam. A **principal contraindicação é um objetivo irreal**, ou a recusa do paciente (p. 1153): quem espera voltar a ter uma mão normal depois de um pan-plexo com cinco avulsões vai considerar fracasso o cotovelo que flete e o ombro estável que a cirurgia pode oferecer.
+
+Duas situações são contraindicações relativas pelo tempo (p. 1153 e 1154). O **C8-T1 isolado** não se enxerta, porque a regeneração não chega à mão a tempo; preferem-se transferências no antebraço ou tendinosas. E depois de **1 ano** a reconstrução nervosa primária em geral está contraindicada (salvo no jovem), embora **transferências distais** possam ser feitas **até 18 meses** em casos escolhidos. Depois de 12 meses, o caminho é a reconstrução secundária: transferências tendinosas, músculo livre, procedimentos ósseos e de partes moles, a qualquer tempo (p. 1154).
+
+!questoes treino=mao-2149
+conceito: A principal contraindicação à reconstrução do plexo é um objetivo irreal ou a recusa do paciente; idade, rigidez, comorbidades e trauma craniano pesam, mas em geral não contraindicam.
+como: O SBCM 2022 perguntou o que mais contraindica operar, segundo o Green.
+armadilha: Escolher a idade, a lesão vascular ou o trauma craniano como contraindicação absoluta.
+!fim
+
+## O relógio da cirurgia
+
+O capítulo resume o tempo em três princípios (cap. 34, p. 1154): quem recupera sozinho evolui melhor que qualquer operado; a cirurgia é para quem não tem esperança; e **o resultado é inversamente proporcional ao intervalo entre a lesão e a cirurgia**. O terceiro princípio é a razão biológica de tudo: a placa motora e o músculo denervado têm prazo, e cada mês de espera é um mês a menos para os axônios chegarem.
+
+!tabela Momento da cirurgia no adulto (Green, cap. 34, p. 1154)
+| Situação | Momento | Por quê |
+|---|---|---|
+| ferida cortante limpa | imediata (dias): explorar e reparar | cotos nítidos, sem zona de lesão |
+| ferida contusa | subaguda, 3 a 4 semanas | a zona de lesão se define e os cotos podem ser aparados até tecido bom |
+| reparo vascular de urgência | mapear; corte limpo, reparar; rompido ou contuso, marcar com clipes radiopacos e reexplorar em 3 a 4 semanas | não perder a oportunidade sem enxertar tecido doente |
+| pan-plexo sem recuperação e com avulsão na imagem | 2 a 3 meses | sem chance espontânea; não vale esperar |
+| sem suspeita forte de avulsão | 3 a 6 meses | dar tempo à recuperação espontânea |
+| maior chance espontânea (incompleta, completa sem avulsão) | até 5 a 6 meses; raramente mais de 6 | |
+| mais de 12 meses | reconstrução secundária | placas motoras perdidas |
+!fim
+
+Os autores dizem explicitamente que **não operam "extremamente cedo"** como alguns centros, a não ser nos cortes (p. 1154).
 
 ## As prioridades
 
-O Green (cap. 34, p. 1159) escolhe pelo valor funcional, pela chance de recuperar (**proximal reinerva melhor que distal**) e pela dificuldade de substituir depois. No **pan-plexo**:
+Quando não há axônios para tudo, é preciso escolher. O Green (cap. 34, p. 1159) escolhe por três critérios: a **importância funcional** do alvo; a **chance de recuperar**, que é maior quanto mais proximal o alvo (o axônio chega antes à placa motora); e a **dificuldade de resolver depois** com cirurgia secundária. Na lesão parcial ou com falhas curtas, restaura-se a continuidade de tudo; na lesão total ou com falhas longas, prioriza-se.
 
-1. **flexão do cotovelo** (bíceps e braquial);
-2. **estabilidade, abdução e rotação externa do ombro** (supraescapular e axilar);
-3. **sensibilidade da mão**, pelo **fascículo lateral** (território C6-C7);
-4. flexão do punho e dos dedos (com o tríceps como antagonista que potencializa o músculo livre);
+No **pan-plexo**, a ordem é:
+
+1. **flexão do cotovelo** (bíceps e braquial), porque leva a mão à boca e ao corpo e é o alvo mais fácil de reinervar;
+2. **estabilidade, abdução e rotação externa do ombro** (supraescapular e axilar), porque o ombro instável e doloroso inutiliza o membro;
+3. **sensibilidade da mão**, pelo **fascículo lateral** (território de C6 e C7), que leva a sensibilidade dos dedos radiais pelo mediano;
+4. flexão do punho e dos dedos, reinervando também o **tríceps**, o antagonista que permite ao músculo livre que cruza o cotovelo gastar a força nos dedos;
 5. extensão do punho e dos dedos;
 6. função intrínseca.
 
-No **C5-C6**, as metas são as duas primeiras; a flexão do cotovelo, que leva a mão à boca, combina com a transferência de OBERLIN.
+No **C5-C6**, as metas são as duas primeiras: cotovelo (bíceps e braquial, pela divisão anterior do tronco superior ou pelo musculocutâneo) e ombro (deltoide pela divisão posterior do tronco superior ou pelo axilar, e supra e infraespinal pelo supraescapular) (p. 1159). No **C5-C7**, as mesmas, tratando a extensão do cotovelo ou do punho se estiverem muito afetadas. No **C8-T1**, enxerto não é apropriado; fazem-se transferências distais precoces ou tendinosas, e músculo livre se o C7 também falta (p. 1159). Na criança, como se verá, a ordem se inverte e a mão vem primeiro.
 
-!questoes central=mao-0147 relacionadas=mao-0557
+!questoes central=mao-0147 relacionadas=mao-0557 treino=mao-3042
 conceito: Prioridade no pan-plexo: flexão do cotovelo, depois estabilidade, abdução e rotação externa do ombro, depois sensibilidade da mão; o primeiro objetivo combina com OBERLIN.
 como: Provas de Ortopedia pediram a ordem de prioridade e o par "primeiro objetivo e neurotização compatível".
 armadilha: Pôr a abdução do ombro antes da flexão do cotovelo, ou associar a flexão do cotovelo a STEINDLER (transferência muscular, não neurotização).
 alerta: Em `mao-0147`, o Green (p. 1159) mantém a ordem cotovelo, ombro, sensibilidade, mas a sensibilidade prioritária é a da mão pelo fascículo lateral (C6-C7), e não a da borda ulnar. Gabarito oficial mantido.
 !fim
 
-## O que fazer em cada achado
+# Na sala: avaliação intraoperatória e reconstrução primária {radar=fundamento}
 
-Na cirurgia (cap. 34, pp. 1158 a 1161), o **NAP** através do neuroma decide: **presente**, neurólise; **ausente**, ressecar e enxertar. A lógica das raízes: **C5 para o ombro**, **C6 para a flexão do cotovelo**, **C7 para a extensão**; o enxerto padrão é o **sural** (35 a 40 cm por perna). No C5-C6 tardio (mais de 6 a 9 meses) ou sem coto, os autores fazem acessório para supraescapular e tríceps para axilar; no pan-plexo, intercostais para o bíceps com gracilis livre (pp. 1159 e 1160).
+## Preparo do paciente
+
+Dois detalhes do preparo mostram como pensa o cirurgião de plexo (cap. 34, p. 1154 e 1155). O anestesista evita **curares de longa ação**, relaxantes e agentes que deprimem as respostas corticais, porque a cirurgia depende de estimular nervos e registrar potenciais. E o campo é enorme: pescoço, mandíbula, hemitórax, axila, o membro inteiro e **os dois membros inferiores** (de onde sairão os surais), com o paciente em supino, cabeça para o outro lado, tronco elevado e coxim sob a escápula. Se houver chance de usar o C7 contralateral, prepara-se o outro lado do pescoço.
+
+## Potenciais intraoperatórios: PESS, PEM e NAP
+
+Como a inspeção não distingue avulsão de ruptura, o Green usa a eletrofisiologia na mesa (cap. 34, p. 1158 e 1159):
+
+- **PESS** (potencial somatossensitivo): estimula-se o nervo e registra-se no couro cabeludo. Se a resposta chega ao córtex, a raiz dorsal está ligada à medula. A limitação é que raízes dorsais e ventrais podem ser lesadas de modo diferente: **PESS presente não garante raiz motora**. A anestesia também deprime o PESS, e por isso registra-se o lado sadio junto, como controle.
+- **PEM** (potencial motor): estimula-se o córtex e registra-se no nervo, o que avalia diretamente a via motora.
+- **NAP** (potencial de ação do nervo): eletrodos proximal e distal ao neuroma, separados por **pelo menos 4 cm**. **NAP presente** significa que um número razoável de axônios atravessa o neuroma: a chance de recuperação é alta, e faz-se **neurólise**, sem ressecar. **NAP ausente** (o critério de KLINE) significa chance mínima: **ressecar o neuroma e enxertar**. KLINE e HAPPEL (Can J Neurol Sci, 1993) resumiram 25 anos de experiência com esse registro.
+- A **colina acetiltransferase** (ChAT), maior em fascículos motores (acima de 2000 cpm sugere motor bom), e a congelação histológica do coto também foram usadas, mas são demoradas e pouco confiáveis.
+
+## Neurólise, reparo e enxerto
+
+As opções primárias seguem o achado (cap. 34, p. 1160 a 1163):
+
+- **Neurólise**: neuroma pós-ganglionar em continuidade com NAP presente; externa (no epineuro) e às vezes interna.
+- **Reparo direto**: o ideal, sem tensão, mas raro no plexo; só no corte limpo explorado cedo.
+- **Enxerto**: ruptura pós-ganglionar ou neuroma sem NAP, desde que o coto proximal esteja ligado à medula. Os autores preferem enxertar quando há bom coto proximal, **salvo cirurgia tardia, alvo muito distal ou enxerto maior que 10 cm**, situações em que a transferência é mais confiável (p. 1160).
+
+O enxerto padrão é o **sural**: puramente sensitivo, a sua retirada deixa só uma área pequena de anestesia dorsolateral no pé, e cada perna dá **35 a 40 cm**, da fossa poplítea ao maléolo lateral (p. 1161 e 1162); é achado entre o maléolo lateral e o tendão de Aquiles, junto à veia safena parva. Outros doadores: radial superficial, cutâneos medial do braço e do antebraço, cutâneo lateral do antebraço, ramo cutâneo dorsal do ulnar. O enxerto vascularizado mais comum é o **ulnar**, quando ele próprio não funciona (p. 1162). A coaptação é sem tensão, com cabos suficientes para encher a área de secção, sutura epineural de 8-0 a 10-0 e cola de fibrina; os autores reforçam com um conduto bivalvado (p. 1162 e 1163). **Condutos** só servem para nervos finos e falhas curtas, e o **aloenxerto processado** não é recomendado no plexo proximal, salvo falta de autoenxerto (p. 1163).
+
+## A reconstrução anatômica: C5, C6 e C7
+
+Quando há cotos, o Green faz uma reconstrução "anatômica" (cap. 34, p. 1161, Fig. 34.13), que segue a distribuição natural de cada raiz:
+
+- **C5 para o ombro**: supraescapular, axilar ou divisão posterior do tronco superior;
+- **C6 para a flexão do cotovelo**: divisão anterior do tronco superior ou musculocutâneo;
+- **C7 para a extensão do cotovelo**: divisão posterior do tronco médio ou radial.
+
+A lógica é a mesma da regra das divisões: a **divisão anterior** do tronco superior leva ao fascículo lateral e ao musculocutâneo (flexão do cotovelo); a **divisão posterior** leva ao fascículo posterior e ao axilar (deltoide, abdução do ombro).
+
+!questoes treino=mao-2424,mao-3043
+conceito: A divisão posterior do tronco superior leva ao fascículo posterior e ao axilar; enxertá-la busca o deltoide e a abdução do ombro, enquanto a divisão anterior busca a flexão do cotovelo.
+como: O SIMÃO 2022 perguntou o que se busca ao reconstruir a divisão posterior do tronco superior com enxerto.
+armadilha: Trocar as divisões e esperar flexão do cotovelo da divisão posterior.
+!fim
+
+## A estratégia dos autores em cada padrão
+
+O capítulo dá a preferência dos autores em cada padrão, e ela resume a lógica de todo o tratamento (cap. 34, p. 1159 e 1160):
+
+- **C5-C6**: explorar com registro intraoperatório. Na ruptura pós-ganglionar sem recuperação, enxertos de C5 para a **divisão posterior do tronco superior e o supraescapular**, ou C5 para a divisão posterior somado ao **acessório para o supraescapular**. Sem coto de C5, ou na exploração tardia (mais de 6 a 9 meses), **dupla transferência no ombro**: acessório para supraescapular e ramo do tríceps para a divisão anterior do axilar. Para o cotovelo, as transferências fasciculares são **preferidas ao enxerto de C6**: fascículo do ulnar para o ramo do bíceps, às vezes somado ao fascículo do mediano para o ramo do braquial.
+- **Pan-plexo**: explorar sempre o supraclavicular; raramente há mais de um coto útil, e ele vai para o ombro (axilar e supraescapular). A maior prioridade é o cotovelo, com **dupla reinervação**: intercostais para o ramo do bíceps e um grácil livre também inervado por intercostais. Para o ombro, acessório para supraescapular, ou poupa-se o acessório para fazer depois a transferência do trapézio inferior para a rotação externa. Para a mão, grácil livre em tempo único para flexão do cotovelo e dos dedos, acessório para o ramo do tríceps com enxerto, e ramos sensitivos dos intercostais para a contribuição lateral do mediano. Cirurgias secundárias 4 a 6 meses depois: artrodese do punho, da carpometacarpal do polegar (em abdução palmar e pronação) e da interfalângica do polegar, e um laço passivo do flexor superficial nas MF contra a garra.
+- **Avulsão de todas as raízes**: não há doador proximal nem transferência tendinosa local; restam os doadores extraplexuais (acessório, intercostais, raízes C3 e C4) (p. 1159 e 1160).
 
 # As transferências nervosas {radar=confirmado}
 
 ## Por que transferir
 
-Transferência (neurotização) liga um ramo normal e dispensável a um nervo sem ligação proximal (cap. 34, p. 1163): indica-se na **avulsão pré-ganglionar**, em pós-ganglionares selecionadas e para músculos livres. A sutura fica **perto da placa motora**, com **axônios motores puros**, **fora da cicatriz** e sem as duas suturas do enxerto.
+Transferência nervosa, neurotização ou "nerve crossing" é levar um fascículo ou ramo normal e dispensável a um nervo importante cuja ligação proximal é irreparável (cap. 34, p. 1163). Não confundir com a **neurotização muscular**, que é implantar o coto do nervo diretamente no músculo. As indicações são três: **avulsão pré-ganglionar**, lesões pós-ganglionares selecionadas (tardias, com alvo distante) e a **reinervação de músculos livres** (p. 1163).
 
-## OBERLIN: ulnar para o bíceps
+As vantagens explicam por que as transferências tomaram o lugar dos enxertos em muitas situações (p. 1163):
 
-O **fascículo do ulnar para o ramo do bíceps**, fácil e confiável, **substituiu os intercostais no C5-C6** (cap. 34, p. 1166). Exige **C8 e T1 preservados**; alguns o evitam no C5-C7 (o ulnar também recebe C7), mas os autores o usam sem sequela. Pela topografia de SUNDERLAND, os fascículos **posteromediais** vão ao antebraço e os **anterolaterais** aos intrínsecos: escolhe-se o que **flete o punho (flexor ulnar do carpo) sem acionar a mão** (p. 1167). Um fascículo do **mediano** pode ir ao **braquial**, sem ganho estatístico (p. 1159). Contraindicação: **fraqueza ou déficit prévio no território do ulnar**. Mais de **90% chegam a M3 ou M4**; ideal antes de 6 a 9 meses, resgate até **9 a 15 meses** (p. 1169).
+- a sutura fica **perto da placa motora**, e a recuperação é mais rápida e confiável;
+- o doador fornece muitos axônios **motores "puros"**, que não se perdem em fascículos sensitivos;
+- o reparo é feito **fora da zona de cicatriz**;
+- evitam-se as **duas suturas** do enxerto, cada uma delas uma barreira para os axônios;
+- a reabilitação é mais fácil, sobretudo quando doador e receptor são sinérgicos.
 
-## Intercostais para o musculocutâneo
-
-Os intercostais (**3º ao 6º**, por incisão inframamária) servem sobretudo à **flexão do cotovelo no pan-plexo** (cap. 34, pp. 1169 a 1172): três ou quatro vão ao musculocutâneo, dissecados até a junção costocondral para dispensar enxerto, porque **sem enxerto 72% chegam a M3 e com enxerto só 47%**. Fratura de costela inutiliza o intercostal em cerca de 10%. A flexão antigravitacional surge entre **12 e 18 meses**, no início ligada à respiração.
-
-!questoes central=mao-0445 relacionadas=mao-1445,mao-1623,mao-1288
-conceito: OBERLIN leva um fascículo do ulnar (do flexor ulnar do carpo) ao ramo do bíceps em lesões C5-C6 ou C5-C7 com C8-T1 preservados; é contraindicado se há fraqueza prévia no território do ulnar; intercostais para musculocutâneo restauram flexão do cotovelo.
-como: O Einstein 2026 pediu a indicação principal; a USP-SP 2024, o melhor doador para o musculocutâneo no C5-C7; a USP-SP 2026, a contraindicação; a USP-SP 2025, a função restaurada pelos intercostais.
-armadilha: Indicar OBERLIN em lesão C8-T1 ou pré-ganglionar total, ou achar que pseudomeningocele em C5 o contraindica (o doador é o ulnar, não C5).
+!questoes treino=mao-2498
+conceito: A transferência nervosa leva axônios motores de um doador dispensável para perto da placa motora do alvo, fora da cicatriz e sem as duas suturas do enxerto; indica-se na avulsão, em pós-ganglionares selecionadas e na reinervação de músculos livres.
+como: O SIMÃO 2021 pediu a afirmação correta sobre as neurotizações nas lesões traumáticas do plexo.
+armadilha: Achar que transferência é a mesma coisa que neurotização muscular (implante no músculo), ou que ela exige coto proximal da raiz.
 !fim
 
 ## Acessório para supraescapular
 
-O **acessório (XI)** inerva esternocleidomastóideo e trapézio (cap. 34, pp. 1163 e 1164). É achado na face anterior do trapézio, acima da clavícula; **preserva-se o ramo proximal do trapézio superior** (lesá-lo dá ombro caído) e usam-se os ramos médio e distal. O **supraescapular** sai do tronco superior, passa pela **incisura escapular sob o ligamento transverso superior** e contorna a espinha até a fossa infraespinal: inerva **supraespinal e infraespinal**, e a transferência devolve **abdução e rotação externa** (92% com alguma abdução antigravitacional, p. 1165; melhor no C5-C6).
+O **acessório (XI)** inerva o esternocleidomastóideo e o trapézio (cap. 34, p. 1163). Nasce na fossa craniana posterior, com raízes espinais e cranianas, sai pelo **forame jugular** e se divide num ramo interno (que se junta ao vago) e num externo, que vai ao esternocleidomastóideo e ao trapézio. Depois do esternocleidomastóideo, desce oblíquo pelo **triângulo posterior**, entre as camadas superficial e profunda da fáscia cervical, junto aos linfonodos; é ali o local mais comum da sua lesão iatrogênica, na biópsia de linfonodo. Dá dois a três ramos ao trapézio superior antes de passar sob a borda anterior do músculo, e depois segue para o trapézio médio e inferior.
 
-A **via posterior** serve quando se suspeita de lesão na incisura (p. 1164): o **supraescapular fica a meio caminho entre o ângulo superior da escápula e o acrômio**, liberando-se o ligamento transverso superior, e o **acessório fica a 40% da distância entre os processos espinhosos e o acrômio**, sob o trapézio. O Green pediátrico usa essa via (cap. 40, pp. 1404 a 1406).
+Na técnica (p. 1163 e 1164), o nervo é achado na **face anterior do trapézio**, alguns centímetros acima da clavícula, pela parte lateral da incisão supraclavicular. O ponto essencial é **preservar o ramo proximal do trapézio superior** e usar só os **ramos médio e distal**: a lesão do ramo proximal deixa o **ombro caído**. Disseca-se o nervo o mais distal possível, porque cortá-lo logo após o esternocleidomastóideo obrigaria a usar enxerto. A disfunção do XI contraindica a técnica, e por isso se testa o trapézio antes (EMG) e durante (estímulo).
 
-!questoes central=mao-1159 relacionadas=mao-1444,mao-1632
+O **supraescapular** nasce do tronco superior **2 a 3 cm acima da clavícula**, vai para lateral e posterior **sob o omo-hióideo**, entra na fossa supraespinal pela **incisura supraescapular, sob o ligamento transverso superior**, e contorna a borda lateral da espinha pela **incisura espinoglenoide** até a fossa infraespinal (p. 1164). Inerva **supraespinal e infraespinal**. É vulnerável à tração nas duas incisuras, e por isso, pela via anterior, passa-se o dedo até a incisura para afastar uma segunda lesão.
+
+A **via posterior** serve quando se suspeita de lesão na incisura (p. 1164): a sutura fica mais distal, em nervo sadio, e libera-se o ligamento. A desvantagem é que o acessório distal tem menos axônios e o paciente fica em decúbito ventral ou lateral. Pela incisão transversa na borda superior da escápula, o **supraescapular fica a meio caminho entre o ângulo superior da escápula e o acrômio**, e o **acessório fica a 40% da distância entre a linha média (processos espinhosos) e o acrômio**, profundo ao trapézio.
+
+Os resultados (p. 1165): numa metanálise, **92% tiveram alguma abdução antigravitacional**, com abdução média de 45 a 122 graus e rotação externa de 0 a 118 graus. O resultado é melhor no C5-C6 que no C5-C7 e no total, e é melhor quando o **serrátil funciona** (C7 intacto), porque a escápula estável dá ao supraespinal uma base para trabalhar. O ideal é operar antes de 6 a 9 meses; imobiliza-se por 3 semanas; a reinervação aparece na EMG por volta de 6 meses (p. 1164). SUZUKI, DOI e colaboradores (J Reconstr Microsurg, 2007) publicaram os resultados de longo prazo da técnica na paralisia alta.
+
+!questoes central=mao-1159 relacionadas=mao-1444,mao-1632 treino=mao-2342,mao-3044,mao-3071
 conceito: Acessório para supraescapular reinerva supraespinal e infraespinal (abdução e rotação externa); na via posterior, o supraescapular fica a meio caminho entre o ângulo superior da escápula e o acrômio, e o acessório a 40% da distância entre a linha média e o acrômio.
 como: A PUC-SP 2022 pediu os músculos recuperados; a USP-SP 2024, o parâmetro para achar o supraescapular pela via posterior; a USP-SP 2026, a armadilha da via posterior.
 armadilha: Achar que a transferência reinerva redondo menor ou grande dorsal; o redondo menor é do axilar.
 alerta: Em `mao-1444`, o Green usa o ângulo superior da escápula (não a borda medial) como ponto medial da medida. `mao-1632` está sem gabarito, e o texto lido não sustenta nenhuma alternativa: na via posterior o livro descreve o supraescapular na incisura sob o ligamento transverso superior e o acessório sob o trapézio, sem relação com clavícula, coracoide, peitoral menor ou fossa subescapular.
 !fim
 
+## O musculocutâneo e seus ramos
+
+Para levar axônios à flexão do cotovelo é preciso conhecer o alvo (cap. 34, p. 1165). O **musculocutâneo** sai do fascículo lateral logo distal ao coracoide, **perfura o coracobraquial** e corre na face profunda do bíceps. Os **ramos do bíceps entram cerca de 12 cm distal ao acrômio**, em dois padrões: um tronco comum que se divide, ou dois ramos separados, com o da cabeça curta mais proximal. O **ramo do braquial** fica a cerca de **17 cm do acrômio**. O nervo termina como **cutâneo lateral do antebraço**.
+
+O acessório também pode ir ao musculocutâneo (p. 1165 e 1166), mas a distância exige um **enxerto** de sural de 9 a 10 cm sob a clavícula, e isso piora o resultado. Uma metanálise citada no capítulo mostra 77% de M3 e 29% de M4 com o acessório, contra 72% de M3 e **41% de M4** com os intercostais sem enxerto (diferença significativa para M4). Por isso os autores preferem os fascículos do ulnar no C5-C6 e os intercostais no pan-plexo.
+
+## OBERLIN: fascículo do ulnar para o bíceps
+
+OBERLIN e colaboradores (J Hand Surg Am, 1994) descreveram a transferência de **um fascículo do ulnar para o ramo motor do bíceps** em quatro pacientes com avulsão de C5-C6, e LEECHAVENGVONGS e colaboradores (J Hand Surg Am, 1998) a confirmaram em 32 casos. É fácil e confiável, e **substituiu os intercostais para o cotovelo no C5-C6** (cap. 34, p. 1166). Costuma ir junto com o acessório para supraescapular e o tríceps para o axilar, o pacote que resolve o ombro e o cotovelo do ERB sem tocar no pescoço.
+
+A condição óbvia é que o doador funcione: exige **C8 e T1 preservados**. Alguns a contraindicam no **C5-C7**, porque o ulnar recebe C7 e teria menos fibras; os autores a usam nessa situação com bom resultado e sem fraqueza ulnar (p. 1166 e 1167). A contraindicação formal é a **fraqueza ou o déficit sensitivo no território do ulnar** antes da cirurgia (p. 1167).
+
+A escolha do fascículo é anatomia fina. O ulnar é o maior ramo terminal do fascículo medial; no meio do braço tem de **6 a 10 fascículos mistos**, com muitas conexões entre si. Pela topografia de SUNDERLAND, os fascículos **posteromediais** levam os motores dos **músculos do antebraço** (flexor ulnar do carpo), e os **anterolaterais**, os motores dos **intrínsecos** (p. 1166). Por incisão medial no braço, identifica-se o padrão do ramo do bíceps, faz-se neurólise interna do ulnar, estimula-se e escolhe-se **o fascículo que flete o punho em ulnar sem acionar a mão**, em geral posteromedial; usam-se um ou dois fascículos, com sutura de 9-0 ou 10-0 e cola (p. 1167). Quem não estimula também não relatou complicação, porque os fascículos são mistos e redundantes.
+
+As complicações são dormência e fraqueza transitórias dos intrínsecos; curiosamente, a preensão e a pinça podem ficar **mais fortes** depois (p. 1167). A reinervação é rápida, e **mais de 90% chegam a M3 ou M4**, melhor no C5-C6 que no C5-C7. O ideal é operar antes de 6 a 9 meses; entre **9 e 15 meses** a técnica ainda serve como salvamento; a reinervação começa em 3 a 6 meses (p. 1169). A armadilha técnica é pegar o fascículo errado e criar um déficit ulnar.
+
+!questoes central=mao-0445 relacionadas=mao-1445,mao-1623,mao-1288 treino=mao-3041,mao-3050,mao-3058,mao-3060
+conceito: OBERLIN leva um fascículo do ulnar (do flexor ulnar do carpo) ao ramo do bíceps em lesões C5-C6 ou C5-C7 com C8-T1 preservados; é contraindicado se há fraqueza prévia no território do ulnar; intercostais para musculocutâneo restauram flexão do cotovelo.
+como: O Einstein 2026 pediu a indicação principal; a USP-SP 2024, o melhor doador para o musculocutâneo no C5-C7; a USP-SP 2026, a contraindicação; a USP-SP 2025, a função restaurada pelos intercostais.
+armadilha: Indicar OBERLIN em lesão C8-T1 ou pré-ganglionar total, ou achar que pseudomeningocele em C5 o contraindica (o doador é o ulnar, não C5).
+!fim
+
+## A dupla transferência: mediano para o braquial
+
+A dupla transferência, divulgada por MACKINNON e colaboradores (J Hand Surg Am, 2005), soma ao OBERLIN um **fascículo do mediano para o ramo do braquial**, reinervando os dois flexores do cotovelo (cap. 34, p. 1167 a 1169). O ramo do braquial sai alguns centímetros distal ao do bíceps e deve ser distinguido do **cutâneo lateral do antebraço**, que é maior e mais superficial (puxá-lo enruga a pele do antebraço proximal). O mediano é o maior nervo nesse nível, junto à artéria braquial; os autores escolhem o fascículo do **flexor radial do carpo**, e outros usam o do **flexor superficial dos dedos** (p. 1169). No C5-C7, pode-se usar só o mediano em vez do ulnar, conforme o doador que estiver mais forte.
+
+O ponto que cai: **a segunda transferência não melhorou o resultado de modo estatisticamente significativo**. O estudo dos próprios autores (CARLSEN e colaboradores, Plast Reconstr Surg, 2011) e um estudo prospectivo não encontraram diferença de torque ou força entre a transferência simples e a dupla (p. 1159 e 1167).
+
+## Intercostais
+
+Os intercostais são usados há décadas para o musculocutâneo e também para tríceps, deltoide, serrátil, músculos livres e sensibilidade; hoje servem sobretudo à **flexão do cotovelo no pan-plexo** e ao tríceps e à sensibilidade no segundo tempo da dupla de grácil (cap. 34, p. 1169). NAGANO e colaboradores (J Hand Surg Am, 1989) e CHUANG e colaboradores (J Hand Surg Am, 1992) estão entre as séries clássicas citadas.
+
+Usam-se os do **3º ao 6º espaço**, que dão o maior comprimento até o musculocutâneo; dissecá-los até a **junção costocondral** permite a coaptação direta, sem enxerto. O 2º e o 7º são menos confiáveis, mas o **2º vai bem para o torácico longo** no C5-C7 com serrátil denervado, e o 1º já foi levado ao supraescapular num estudo anatômico (p. 1169). Por incisão **inframamária**, da linha axilar média à junção costocondral, identifica-se e **preserva-se o intercostobraquial**, ramo grande do 2º intercostal, porque ele pode servir de doador sensitivo para a mão; o serrátil funcionante e o torácico longo também são poupados (p. 1170). O periósteo é aberto na **borda caudal** da costela, onde corre o ramo motor; o ramo cutâneo lateral, que é **maior** que o motor, sai entre as linhas axilares anterior e média (p. 1170 e 1171).
+
+Três ou quatro intercostais vão ao musculocutâneo, ou dois a três direto ao ramo do bíceps, sempre por **transferência direta**, com o braço abduzido a 90 graus e em rotação externa máxima durante a sutura (p. 1171). Os resultados explicam a regra: **sem enxerto, 72% chegam a M3 ou mais; com enxerto, só 47%** (p. 1172). Uma fratura de costela dá cerca de 10% de chance de o intercostal não funcionar, e a função pulmonar se normaliza em 3 meses.
+
+A reinervação tem uma sequência própria, porque o músculo passa a obedecer a um nervo respiratório (p. 1171): dor no tórax ao apertar o bíceps em 4 a 5 meses; contração sem mover o cotovelo, sobretudo na inspiração, em 6 a 8 meses; TINEL no braço que formiga no tórax por volta de 12 meses; **flexão antigravitacional entre 12 e 18 meses**; dissociação da respiração depois de 12 meses; EMG independente depois de 32 meses. A contração involuntária ao tossir ou espirrar persiste.
+
+!questoes treino=mao-3075
+conceito: O toracodorsal sai do fascículo posterior com fibras de C7, C8 e às vezes C6, tem de 8 a 19 cm úteis e pode ser doador para o torácico longo, o musculocutâneo e o axilar.
+como: O SIMÃO 2021 pediu a afirmação correta sobre o toracodorsal como doador.
+armadilha: Pôr o toracodorsal no fascículo lateral ou medial, ou dizer que ele vem de C5.
+!fim
+
 ## LEECHAVENGVONGS: tríceps para o axilar
 
-Por incisão posterior, acha-se o **axilar no espaço quadrilateral** e o radial entre as cabeças longa e lateral do tríceps (cap. 34, p. 1172). A técnica original de LEECHAVENGVONGS liga o **ramo da cabeça longa do tríceps** diretamente à **divisão anterior do axilar**. Contraindicação: **tríceps abaixo de M4**; com o acessório para supraescapular, o arco chegou a 124 graus. No lactente, o Green costuma usar o ramo da **cabeça medial** (cap. 40, p. 1405).
+Para o deltoide, LEECHAVENGVONGS e colaboradores (J Hand Surg Am, 2003) levaram o **ramo da cabeça longa do tríceps** à **divisão anterior do axilar**. É a dupla reinervação do ombro, junto com o acessório para supraescapular, e serve quando o tríceps está forte, em geral no C5-C6 isolado (cap. 34, p. 1172).
 
-!tabela Transferências nervosas que caem na prova (Green, cap. 34, pp. 1159 a 1172; cap. 40, pp. 1398 e 1404 a 1406)
+A técnica é um exercício de anatomia posterior (p. 1172 e 1173, Fig. 34.28). Por incisão posterior no braço, do acrômio ao meio do braço, afasta-se o deltoide para cima e acha-se o **axilar saindo do espaço quadrangular** (quadrilateral). Um truque útil é **seguir o ramo cutâneo (sensitivo) do axilar de volta até o espaço**. O alvo seletivo é a **divisão anterior** do axilar, seccionada o mais proximal possível; às vezes usa-se o axilar inteiro, para reinervar também o redondo menor e melhorar a rotação externa. Aprofundando o intervalo entre as **cabeças longa e lateral do tríceps**, acham-se o **radial e os ramos das três cabeças no intervalo triangular**. Escolhe-se o ramo da cabeça longa, como na descrição original, confirmado por estímulo, e faz-se a coaptação direta sem tensão, liberando a fáscia do redondo maior se preciso. Não há acordo sobre qual cabeça é mais importante, e a fraqueza do tríceps é rara.
+
+A contraindicação é o **tríceps abaixo de M4**; na lesão parcial de C7, faz-se EMG das três cabeças para escolher (p. 1172). A fraqueza do tríceps logo após a cirurgia está ligada a dor e medo, e não a um déficit novo. O deltoide contrai por volta de **6 meses**; LEECHAVENGVONGS relatou arco de 124 graus somando o acessório para supraescapular; o resultado é melhor no C5-C6 que no C5-C7 (p. 1172 e 1173). Na série dos autores com **lesão isolada do axilar**, a força média foi BMRC 3,5, e o deltoide ficou mais fraco quanto maior a **demora até a cirurgia**, a **idade** e o **índice de massa corporal**, nessa ordem de importância (p. 1173).
+
+Na criança, o capítulo pediátrico costuma usar o ramo da **cabeça medial** (legenda da Fig. 40.16, cap. 40, p. 1406).
+
+!tabela Transferências nervosas que caem na prova (Green, cap. 34, p. 1159 a 1177; cap. 40, p. 1398 e 1404 a 1406)
 | Nome | Doador | Receptor | Função | Condição |
 |---|---|---|---|---|
 | OBERLIN | fascículo do ulnar (flexor ulnar do carpo) | ramo do bíceps | flexão do cotovelo | C8-T1 preservados, ulnar sem déficit |
-| dupla para o cotovelo | fascículo do mediano (flexor radial do carpo) | ramo do braquial | flexão do cotovelo | mediano sem déficit |
+| dupla para o cotovelo | fascículo do mediano (flexor radial do carpo ou superficial dos dedos) | ramo do braquial | flexão do cotovelo | mediano sem déficit; sem ganho estatístico |
 | LEECHAVENGVONGS | ramo da cabeça longa do tríceps | divisão anterior do axilar | abdução | tríceps M4 ou mais |
 | acessório para supraescapular | ramos médio e distal do XI | supraescapular | abdução e rotação externa | trapézio funcionante, ramo superior poupado |
 | intercostais | 3º a 6º intercostais | musculocutâneo ou ramo do bíceps | flexão do cotovelo no pan-plexo | sem enxerto, costelas íntegras |
 | acessório para musculocutâneo | XI | musculocutâneo | flexão do cotovelo | exige enxerto, pior |
-| C7 contralateral | C7 sadio do outro lado | alvos variados | controverso | pouco usado |
+| C7 contralateral | C7 sadio do outro lado | alvos variados | controverso | abandonado pelos autores no adulto |
 !fim
 
-!questoes central=mao-1368 relacionadas=mao-0254,mao-1004
+!questoes central=mao-1368 relacionadas=mao-0254,mao-1004 treino=mao-2080,mao-2147,mao-2237,mao-3070,mao-3077,mao-3078
 conceito: LEECHAVENGVONGS liga o ramo da cabeça longa do tríceps (radial) à divisão anterior do axilar, no espaço quadrilateral, sem enxerto.
 como: A USP-SP 2025 pediu os nervos envolvidos; uma prova de Ortopedia e a UFG 2021, a cabeça do tríceps e o ramo do axilar.
 armadilha: Trocar por cabeça lateral ou medial na técnica clássica, ou pelo ramo posterior do axilar; a cabeça medial aparece como preferência do Green na criança.
 !fim
 
+## C7 contralateral e os outros doadores
+
+O **C7 contralateral** se apoia na redundância de C7: como seus músculos têm inervação cruzada, cortá-lo no lado sadio dá déficits transitórios (cap. 34, p. 1173 a 1176). Pairam três dúvidas (segurança, eficácia e independência de movimento no adulto), e ele é aceito sobretudo pela experiência asiática. A porção **posterior** de C7 tem mais fibras motoras. Se o estímulo de C7 contrai **qualquer músculo da mão**, ele está contraindicado; na hemi-C7, usa-se a metade que mais contrai o peitoral maior. Para chegar ao mediano no pan-plexo, usa-se o **ulnar do lado lesado como enxerto vascularizado pediculado** na artéria colateral ulnar superior.
+
+O doador paga: há déficits motores transitórios (extensão e adução do ombro, extensão do cotovelo, pronação, extensão do punho, grande dorsal), que se recuperam em cerca de 6 meses, e **alteração sensitiva no território de C7 em todos**; a dor neuropática grave é mais relatada na Europa que na Ásia (p. 1176). Os resultados para o mediano foram **decepcionantes**, e os autores **abandonaram a hemi-C7 contralateral** no adulto depois de mais de 50 casos, mantendo-a ocasionalmente em crianças com pan-plexo (p. 1176). SONGCHAROEN e colaboradores (J Hand Surg Am, 2001) publicaram a série clássica da hemi-C7 para o mediano.
+
+Outros doadores (p. 1176 e 1177): **C7 ipsilateral** no C5-C6; **peitoral medial** (controverso, com transferência para o axilar descrita com sucesso); **toracodorsal** (para torácico longo, musculocutâneo e axilar). Entre os extraplexuais, o **frênico** funciona mesmo na avulsão total, mas tira cerca de 10% da capacidade vital, que volta em 6 a 24 meses, e os autores o usaram em 10 pacientes e **pararam**; o **hipoglosso** deu resultados ruins e não é opção; o ramo motor do platisma foi usado num caso. CARLSTEDT e colaboradores (J Neurosurg, 2000) reimplantaram raízes ventrais avulsionadas na medula, técnica que continua controversa e em investigação (p. 1185).
+
+Depois de enxertos e transferências, imobiliza-se em tipoia por 3 semanas e segue-se o paciente por pelo menos 2 a 3 anos, idealmente 5; a contração visível aparece cerca de 2 meses depois do início da reinervação na EMG (p. 1177).
+
 # Quando o nervo não basta: o músculo livre {radar=confirmado}
 
-No pan-plexo, nervos extraplexuais podem inervar um **músculo livre** (cap. 34, pp. 1160 e 1179). O **gracilis** é o mais usado: ótima excursão, pouca força, e **pedículo neurovascular proximal**, que o acessório ou os intercostais reinervam rápido. O ramo do **obturatório** entra 6 a 12 cm da origem; a artéria vem da **femoral profunda**, 8 a 12 cm da origem; **o pedículo é dissecado entre o adutor magno (posterior) e o adutor longo (anterior)**.
+## Princípios e pré-requisitos
 
-!questoes central=mao-0839
+A transferência muscular livre funcional (TMLF) leva um músculo inteiro, com artéria, veia e nervo, e o reinerva com um doador. IKUTA e colaboradores (Ann Acad Med Singapore, 1979) fizeram o primeiro relato, numa criança tardia, para o cotovelo (cap. 34, p. 1178). O papel do músculo livre é duplo: os casos **tardios** (o músculo do braço já não aceita axônios) e a **preensão** na avulsão aguda de quatro ou mais raízes.
+
+Os pré-requisitos mostram que o músculo livre não trabalha sozinho (p. 1178): o **ombro precisa estar estável** (por nervo, tendão ou artrodese); o **cotovelo precisa de um antagonista**, o **tríceps**; o punho é estabilizado por artrodese ou outro músculo; vale a regra "um músculo, uma função"; e são necessários pele boa, leito vascularizado, nervo motor doador, vasos receptores, articulações flexíveis e um paciente aderente, com angiografia antes. A **avulsão da subclávia ou da axilar contraindica** a técnica, porque o toracoacromial ou o toracodorsal precisam estar pérvios; a lesão vascular aparece em 10% ou mais, mais com fratura da 1ª costela (p. 1178).
+
+## O grácil: anatomia da colheita
+
+Grande dorsal, grácil, adutor longo e reto femoral já foram usados (cap. 34, p. 1179). O **grácil é o mais usado**: é um músculo em fita, de fibras longas e boa excursão, com força (área de secção) menor que a do bíceps. Tem a vantagem decisiva de um **pedículo neurovascular proximal**: fixo na clavícula e tunelizado até o antebraço, o seu ponto motor fica no ombro, perto do doador, e a reinervação chega em até 6 meses. Enxertos longos até o antebraço, ao contrário, não funcionam.
+
+Na colheita (p. 1179 e 1180, Fig. 34.34), o **ramo do obturatório** entra oblíquo logo acima do pedículo, a **6 a 12 cm da origem**, cerca de 45 graus em relação aos vasos. A **artéria dominante vem da femoral profunda**, a **8 a 12 cm da origem**, com 4 a 6 cm de comprimento, e corre **entre o adutor magno (posterior) e o adutor longo (anterior)**. No pé anserino, o tendão superior é o do grácil, e o inferior, o do semitendíneo. Deixa-se uma ilha de pele proximal para monitorar o músculo e colhe-se o nervo com 10 cm ou mais. Antes de soltar o músculo, marcam-se suturas a cada 5 cm no comprimento de repouso (técnica de MANKTELOW), para recriar a tensão certa no braço.
+
+No braço, o músculo é fixado no acrômio e na clavícula com âncoras; a anastomose arterial vai a um ramo da **toracoacromial**, e a venosa, à cefálica; a isquemia deve durar menos de 1 hora; e a neurorrafia é feita o mais perto possível do músculo (p. 1180).
+
+!questoes central=mao-0839 treino=mao-2081,mao-2516
 conceito: O pedículo do gracilis, ramo da femoral profunda, corre entre o adutor longo (anterior) e o adutor magno (posterior).
 como: O INTO 2026 pediu entre quais músculos se disseca o pedículo na transferência muscular livre do adulto.
 armadilha: Escolher adutor curto ou sartório; o gracilis cobre o intervalo adutor longo e magno.
 !fim
 
+## A dupla transferência de DOI
+
+Para devolver a **preensão** a quem avulsionou quatro ou cinco raízes, DOI e colaboradores (J Hand Surg Am, 1995; J Bone Joint Surg Am, 2000) criaram a **dupla transferência de grácil** (cap. 34, p. 1181 e 1182):
+
+- **Primeiro tempo**: exploração e reparo das rupturas e um **grácil contralateral inervado pelo acessório**, que faz **flexão do cotovelo e extensão dos dedos** (os autores do Green preferem que ele estenda o **punho**, porque nem sempre o músculo consegue estender punho e dedos, e a extensão do punho dá efeito tenodese).
+- **Segundo tempo** (2 a 3 meses depois): um **grácil ipsilateral inervado pelos 5º e 6º intercostais** para a **flexão dos dedos**; os 3º e 4º intercostais vão ao **tríceps**, e ramos sensitivos dos intercostais, ao fascículo medial.
+- Cirurgias secundárias cerca de um ano e meio depois.
+
+Por que o tríceps importa tanto? Sem extensão ativa do cotovelo, o músculo que cruza o cotovelo gasta a sua força flexionando-o, e o paciente só consegue usar a mão estabilizando o cotovelo com a outra mão. Por isso **o fator mais importante do resultado da preensão é a recuperação do tríceps** (p. 1181 e 1184). Os pontos críticos são paralisia total, menos de 6 meses de lesão, subclávia, acessório e intercostais íntegros, **idade abaixo de 40 anos**, trapézio normal e articulações flexíveis (p. 1184). Em 30 de 36 pacientes, com seguimento médio de 40 meses, 57% tiveram resultado satisfatório; metade recuperou sensibilidade na palma (p. 1184). O protocolo de mobilização precoce de DOI evitou as tenólises, necessárias em 26% no protocolo convencional (p. 1183).
+
+!questoes treino=mao-1748
+conceito: Na dupla de grácil de DOI, o primeiro músculo, inervado pelo acessório, faz flexão do cotovelo e extensão dos dedos (ou do punho); o segundo, inervado pelos intercostais, faz a flexão dos dedos; outros intercostais vão ao tríceps.
+como: O SIMÃO 2026 perguntou a função e o doador de cada um dos dois músculos.
+armadilha: Inverter os doadores, ou achar que o primeiro músculo flete os dedos.
+!fim
+
+## O músculo livre em tempo único
+
+Os autores do Green criaram uma variante **em tempo único**, com a mesma indicação (quatro ou cinco raízes avulsionadas) e no máximo 6 a 8 meses depois da lesão, prazo ditado pelo tríceps (cap. 34, p. 1185). Os cotos viáveis vão por enxerto ao supraescapular e ao axilar; os intercostais T5 e T6, ao **ramo do bíceps**; T3 e T4 inervam o **grácil**, que vai aos flexores profundos e ao flexor longo do polegar, com uma polia no lacerto fibroso; o acessório vai ao **tríceps** com enxerto. Só a extensão dos dedos não é reconstruída, e as artrodeses vêm depois.
+
+# O ombro do adulto: transferências e artrodese {radar=oportunidade}
+
+## Por que o ombro paralítico é tão difícil
+
+Instabilidade e rigidez do ombro são comuns depois da lesão do plexo, e o paciente sem rotação externa fica com a **"mão na barriga"**, sem conseguir levar a mão à frente do corpo no plano coronal (cap. 34, p. 1186). Os pacientes, aliás, **reclamam mais da falta de rotação externa que da falta de abdução** (p. 1187).
+
+O ombro é movido por 14 músculos em três articulações e na escapulotorácica: **oito movem a glenoumeral** (grande dorsal, peitoral maior, deltoide, supraespinal, infraespinal, subescapular, redondo menor, redondo maior) e **seis seguram a escápula** (serrátil, trapézio, romboides maior e menor, levantador, peitoral menor) (p. 1186). GOLDNER os agrupou em motores principais (deltoide e cabeça clavicular do peitoral), estabilizadores (subescapular, supra e infraespinal), depressores e estabilizadores acessórios da escápula.
+
+A biomecânica explica as escolhas de transferência (p. 1186). O manguito é o estabilizador primário: o **par de forças** subescapular (na frente) e infraespinal (atrás) segura a cabeça contra o cisalhamento para cima do deltoide. O supraespinal contribui com só 14% do momento de abdução, contra 52% do subescapular e 32% do infraespinal com o redondo menor; o bloqueio experimental do supraescapular, de GERBER e colaboradores (J Shoulder Elbow Surg, 2007), tirou cerca de 45% da força de abdução e 70% da de rotação externa. E o **serrátil preservado dá um ombro melhor**, porque complementa o deltoide. Felizmente, **trapézio, levantador e romboides ficam preservados ou se recuperam em 96%** dos pacientes, porque o trapézio é extraplexual e o escapular dorsal recebe as raízes mais proximais (p. 1187). Para transferir, exige-se partes moles boas, ombro passivamente móvel, dor e edema controlados, paciente colaborador e doador com força 4 ou mais.
+
+## Trapézio superior: de HOFFA a SAHA
+
+A transferência do **trapézio superior** é a mais comum no ombro do adulto (cap. 34, p. 1187 e 1188). HOFFA (1891), LEWIS (1910) e LANGE (1911) a fizeram primeiro, alongando-a com fáscia lata, com maus resultados; BATEMAN (1955) a fixou com a inserção acromial; SAHA (1967) a modificou e deu o nome. SAHA, que operava ombros de poliomielite, defendia **múltiplas transferências**, cada uma substituindo um grupo: trapézio superior para os motores principais; levantador ou esternocleidomastóideo como "direcionador vertical" (o papel do supraespinal); peitoral menor, digitações do serrátil ou peitoral maior como direcionador horizontal anterior (subescapular); grande dorsal ou redondo maior como direcionadores posteriores (infraespinal e redondo menor).
+
+Os resultados são modestos (p. 1188): KOTWAL teve 60% de bons resultados; AZIZ e MONREAL, ganhos de cerca de 40 graus; RUHMANN fixou o acrômio no úmero, distal à tuberosidade maior, com dois parafusos de 6,5 mm e o ombro em 80 a 90 graus de abdução, e ganhou cerca de 30 graus, mais quando bíceps, coracobraquial, tríceps ou peitoral funcionavam; no ombro totalmente flácido, só 28 graus de abdução. **Nenhum estudo abordou a rotação externa.**
+
+O **grande dorsal** (com ou sem redondo maior) é muito usado na paralisia obstétrica e pouco no adulto, porque precisa de deltoide e subescapular parcialmente funcionantes; sem eles, piora a subluxação inferior (p. 1188). A versão bipolar, rodada 180 graus no pedículo para fazer o deltoide anterior, deu bons resultados a ITOH. O **peitoral maior** de HOU e TAI, virado 180 graus, dá 40 graus de abdução sozinho e 70 a 90 graus somado ao trapézio superior.
+
+## Trapézio inferior para a rotação externa
+
+Como a rotação externa é o que o paciente mais quer, ELHASSAN e os autores do capítulo desenvolveram a transferência do **trapézio inferior** para o infraespinal (cap. 34, p. 1188 e 1189), publicada primeiro como relato de caso (J Bone Joint Surg Am, 2009). A indicação é a paralisia do deltoide, do infraespinal e do redondo menor. O trapézio inferior foi alongado com **aloenxerto de tendão de Aquiles** até a pegada do infraespinal, e o primeiro paciente ganhou 70 graus de rotação externa; em 52 pacientes, todos ficaram estáveis, com rotação externa muito melhor e pouco ganho de abdução e flexão. Depois, dissecando 5 a 7 cm do tendão do infraespinal, passou a ser possível a sutura direta sem aloenxerto. Quando não há doador do lado lesado, usa-se o **trapézio inferior contralateral**, alongado com fáscia lombossacra (SATBHAI e colaboradores, J Hand Surg Eur, 2014).
+
+Para o ombro totalmente paralítico, o Green lista um conjunto de opções (p. 1190): serrátil superior ou peitoral menor para o subescapular (rotação interna), **levantador para o supraespinal** (abdução), **trapézio inferior para o infraespinal** (rotação externa), trapézio superior e médio para o deltoide, e grande dorsal bipolar se estiver forte. Os autores preferem priorizar a rotação externa, porque pôr a mão à frente do plano coronal vale mais que abduzir.
+
+## Artrodese glenoumeral
+
+A artrodese estabiliza o ombro, mas é **irreversível e depende da escapulotorácica** (cap. 34, p. 1186 e 1190). SAHA e GOLDNER a reservavam como último recurso, e os autores concordam; outros centros a fazem de rotina. As indicações são a **paralisia total** e a **paralisia alta**. As queixas típicas depois dela são a dificuldade de virar na cama e a **fratura do úmero**, que não é rara (p. 1190).
+
+A condição essencial é que a escápula funcione, porque depois da fusão todo o movimento do braço vem da escapulotorácica. Por isso a paralisia extensa do **trapézio** e dos estabilizadores (levantador, serrátil, romboides) contraindica a artrodese: o resultado seria subluxação escapulotorácica e dor (p. 1190). Aqui o livro se contradiz sobre o serrátil: o texto o põe entre as contraindicações e dá uma posição para o ombro sem serrátil (p. 1190 e 1192), mas os pontos críticos aceitam paralisia "com ou sem paralisia do serrátil" e exigem **trapézio e romboide fortes** (p. 1194). A leitura segura é: **sem trapézio, não se funde**.
+
+Fundir o ombro é difícil porque o úmero é uma alavanca longa, a área de contato é pequena e os músculos paralisados não comprimem a articulação (p. 1190). A **posição**, que cai em prova, é (p. 1190 e 1192):
+
+- com **trapézio e serrátil normais**: **30 a 40 graus de abdução e de flexão e 30 graus de rotação interna**;
+- sem serrátil ou trapézio, quando a artrodese for inevitável por subluxação inferior muito sintomática: **20 graus de abdução, 10 de flexão e 30 de rotação interna**.
+
+A rotação interna é o que permite levar a mão à boca e à linha média depois da fusão; um ombro fundido em rotação externa deixaria a mão longe do corpo.
+
+A técnica dos autores (p. 1192, Fig. 34.49) usa a posição de cadeira de praia e uma incisão posterior "em sabre" ao longo da espinha da escápula; desinsere-se o deltoide posterior, retira-se o manguito das tuberosidades e tira-se a cartilagem da glenoumeral **e da acromioumeral**; coloca-se **enxerto de ilíaco no espaço subacromial**, passam-se parafusos canulados de 7,3 mm através das duas articulações e fixa-se uma placa pélvica 4,5 da espinha ao úmero. Comprimir o acrômio sobre o úmero aumenta a superfície de fusão. A tala fica até a consolidação (até 4 meses), e o arco final depende dos periescapulares, com média de cerca de 60 graus de abdução e flexão. ATLAN e colaboradores (J Hand Surg Am, 2012), em 54 casos, ganharam 45 graus ou mais de abdução e de rotação em 65%, e defendem enxerto subacromial abundante contra a pseudartrose.
+
+!questoes treino=mao-2148,mao-3051,mao-3054
+conceito: A artrodese glenoumeral depende da escapulotorácica; paralisia extensa do trapézio e dos estabilizadores da escápula a contraindica, porque depois da fusão todo o movimento vem da escápula.
+como: O SBCM 2022 perguntou em que situação a fusão glenoumeral fica contraindicada na lesão completa do plexo.
+armadilha: Achar que a paralisia do deltoide ou do manguito contraindica a artrodese (é justamente a sua indicação).
+!fim
+
+# O cotovelo tardio e a dor {radar=oportunidade}
+
+## Por que o nervo tem prazo
+
+A reconstrução nervosa do cotovelo vale até **6 a 9 meses**; depois, fica cada vez menos confiável, e **com 12 meses ou mais costuma falhar**, porque o músculo denervado sofre alterações ultraestruturais irreversíveis (cap. 34, p. 1194). Passado esse prazo, as opções são as **transferências tendinosas** (STEINDLER, peitoral maior e menor, esternocleidomastóideo, tríceps, grande dorsal) e o **músculo livre**. As tendinosas só servem nas lesões incompletas, porque todos esses doadores, menos o esternocleidomastóideo, dependem do plexo; o doador precisa ter força 4 no mínimo, e músculos parcialmente denervados são comuns (p. 1194).
+
+## STEINDLER
+
+STEINDLER (1918) avançou a **massa flexopronadora** do epicôndilo medial para proximal e anterior no úmero, aumentando o seu braço de momento para fletir o cotovelo (cap. 34, p. 1195). A técnica preferida pelo Green é a de MAYER e GREEN (J Bone Joint Surg Am, 1954), que fixa o **epicôndilo inteiro na face anterior do úmero**: osso cicatriza melhor que fáscia, e quanto mais anterior a fixação, menos pronação o músculo produz. O teste que indica a técnica é o **efeito STEINDLER**: com a gravidade eliminada, o paciente flete o cotovelo fletindo o punho e pronando. A massa doadora precisa de força 4 a 5.
+
+As complicações e os resultados (p. 1196): **contratura em pronação** em 28% a 50% (sobretudo sem supinação ativa prévia), contratura em flexão acima de 30 graus incomum e parestesia ulnar. Busca-se flexão ativa completa com perda de 30 graus de extensão, porque essa pequena contratura dá vantagem mecânica. A força final é limitada.
+
+## Tríceps, grande dorsal e peitoral maior
+
+O **tríceps para o bíceps** é confiável e rápido no C5-C6 e no C5-C7, mas tira a extensão ativa do cotovelo, o que atrapalha o uso acima da cabeça, a transferência da cadeira para a cama e o uso de muletas (cap. 34, p. 1196 e 1197). Tem indicação especial na **cocontração** de um bíceps fraco com um tríceps forte. O tendão, tubulizado, passa **lateral** ao antebraço (protegendo o radial) até a tuberosidade do rádio, e a flexão final fica entre 116 e 125 graus.
+
+O **grande dorsal** bipolar (com a origem fixa no coracoide, mais eficiente) e o **peitoral maior** bipolar de CARROLL e KLEINMAN (J Hand Surg Am, 1979) são as outras opções (p. 1197 a 1202). O peitoral exige a porção esternocostal normal e o cotovelo passivamente livre; leva uma tira de fáscia do reto abdominal e deve ser evitado em mulheres, pela estética. ZANCOLLI e MITRE (J Bone Joint Surg Am, 1973) obtiveram 105 a 140 graus com o grande dorsal.
+
+## Músculo livre tardio para o cotovelo
+
+Sem doador local ou na lesão crônica, o **grácil livre** devolve a flexão do cotovelo (cap. 34, p. 1202 e 1203). O doador preferido é o **acessório**; os intercostais do 3º ao 6º são equivalentes; no C5-C6 e no C5-C7, pode-se usar o ulnar. Mais de 90% recuperam mais de 90 graus de flexão, mas a força fica entre 10% e 20% do normal, e acima de 40 anos o resultado não é o mesmo. A lesão da subclávia ou da toracoacromial é contraindicação relativa. Como o punho insensível tolera mal as órteses, a **artrodese do punho** ajuda a estabilizar a mão (p. 1202).
+
+## A dor neuropática
+
+A dor é rara na Ásia e comum em americanos e europeus; **até 80% têm dor**, e ela persiste em 20% (cap. 34, p. 1203). Há dois mecanismos: o **neuroma** pós-ganglionar e a **desaferentação** central da avulsão, em que o corno dorsal da medula fica hiperativo. O manejo começa pelo reconhecimento precoce e pela equipe, com abordagem física, social e psicológica e remédios (antidepressivos, anticonvulsivantes, analgésicos). Na lesão pós-ganglionar, neurólise, ressecção de neuroma ou enxerto. Na avulsão, a lesão por radiofrequência da **zona de entrada da raiz dorsal** (DREZ) alivia 66% a 90% em 4 anos, caindo para cerca de 50% depois; há ainda a neuromodulação (medula, córtex motor, cérebro profundo).
+
 # Paralisia obstétrica: quem tem e por quê {radar=confirmado}
 
-## Incidência e mecanismo
+## Incidência e fatores de risco
 
-O Green pediátrico (cap. 40, p. 1392) dá incidência de **0,38 a 1,56 por 1000 nascidos vivos**; o Tachdjian (p. 404) e o Campbell (p. 1310) citam **0,9 por 1000** nos dados mais recentes, em queda. O mecanismo é **estiramento** do plexo durante o parto. Na apresentação cefálica (vértice), a tração lateral do pescoço concentra a força no **plexo superior**; daí a ruptura extraforaminal do tronco superior ser típica da **distocia de ombro** (Green, p. 1392; Campbell, p. 1310).
+O capítulo pediátrico começa com uma síntese que vale guardar (cap. 40, p. 1391): as lesões leves (neuropraxias) recuperam nos primeiros meses, e as completas, até 1 ano; as avulsões graves deixam incapacidade para a vida inteira; a microcirurgia entre 3 e 9 meses melhora a história natural; e as deformidades musculoesqueléticas secundárias são comuns sempre que a recuperação é incompleta nos primeiros um a três anos. Nada normaliza o membro. Lesões em vários níveis (avulsão e ruptura) correspondem a 8% a 25% de todas.
 
-O **lado direito** é o mais acometido (Green, p. 1392): a apresentação occipito anterior esquerda, mais frequente, deixa o **ombro direito preso sob a sínfise púbica**.
-
-## Fatores de risco
+A incidência no Green é de **0,38 a 1,56 por 1000 nascidos vivos**, variando com a qualidade do cuidado obstétrico e com o peso médio ao nascer (cap. 40, p. 1392); o Tachdjian (p. 404) e o Campbell (p. 1310) citam **0,9 por 1000** nos dados mais recentes, em queda. Os fatores de risco do Green são **macrossomia, diabetes materno, multiparidade, parto anterior com paralisia, trabalho de parto prolongado, parto pélvico, distocia de ombro e parto assistido** (vácuo, fórceps) ou difícil (p. 1392). O índice de massa corporal materno crescente aumenta o tamanho fetal e o diabetes gestacional, e assim empurra a incidência para cima. A distocia é uma emergência imprevisível, e o sofrimento fetal deixa o bebê hipotônico, com menos proteção muscular para o plexo.
 
 !tabela Fatores de risco nos três livros (Green, cap. 40, p. 1392; Tachdjian, p. 404; Campbell, p. 1310)
 | Fator | Green | Tachdjian | Campbell |
 |---|---|---|---|
-| macrossomia ou peso alto | sim | sim (acima de ~3500 g os ombros superam a cabeça) | sim |
+| macrossomia ou peso alto | sim | sim (acima de cerca de 3500 g os ombros superam a cabeça) | sim |
 | distocia de ombro | sim | sim, o de maior risco | sim (lesão do tronco superior) |
 | diabetes materno ou gestacional | sim | | sim |
 | apresentação pélvica | sim | sim | sim |
@@ -281,81 +677,120 @@ O **lado direito** é o mais acometido (Green, p. 1392): a apresentação occipi
 | trabalho de parto prolongado | sim | segundo período prolongado | sim |
 | parto assistido (fórceps, vácuo) | sim | manobras de extração | sim |
 | ocitocina, taquissistolia | | sim | sim |
-| cesárea | reduz 100 vezes, não elimina | protege, casos raros | reduz de 0,2% para 0,02% |
+| cesárea | reduz cerca de 100 vezes, não elimina | protege, casos raros | reduz de 0,2% para 0,02% |
 !fim
 
-O Tachdjian (p. 404) e o Campbell (p. 1310) lembram que **a maioria das crianças não tem fator de risco identificável**, e o Tachdjian considera gemelaridade e cesárea protetores. O fator é o **segundo período** prolongado, não o primeiro; baixo peso não é fator, ao contrário.
+O Tachdjian (p. 404) e o Campbell (p. 1310) lembram que **a maioria das crianças não tem fator de risco identificável**, e o Tachdjian considera gemelaridade e cesárea protetores. O fator é o **segundo período** prolongado, e não o primeiro; baixo peso não é fator, ao contrário. Sobre a cesárea, a frase do Green é precisa: reduz a incidência em **cerca de 100 vezes, mas não garante a prevenção**; há relatos de início intrauterino (p. 1392).
 
-## A divergência sobre o parto pélvico
-
-Aqui os livros discordam. O Green (cap. 40, pp. 1392 e 1394) diz que **o parto pélvico produz avulsões pré-ganglionares de C5-C6**, às vezes bilaterais, a exceção à regra de que a lesão alta é pós-ganglionar. O Tachdjian (p. 404) e o Campbell (p. 1310) dizem que a tração do tronco com o braço abduzido no parto pélvico **concentra o estiramento no plexo inferior**. Nas questões, o pélvico aparece como fator de risco nos três, sem conflito.
-
-!questoes central=mao-0140 relacionadas=mao-1472,mao-0893
+!questoes central=mao-0140 relacionadas=mao-1472,mao-0893 treino=mao-3038,mao-3065,mao-3073
 conceito: Distocia de ombro e macrossomia são os grandes fatores; o lado direito é o mais acometido; a cesárea reduz muito, mas não elimina a lesão.
 como: Uma prova de Ortopedia pediu o fator de risco; a USP-SP 2024, afirmações sobre fatores e cirurgias (SEVER-L'EPISCOPO, CARLIOZ); a UFG 2017, o lado, o tipo de parto, o grupo mais comum e o papel da ENMG.
 armadilha: Marcar cesárea, cefálica, baixo peso ou primeiro período prolongado; dizer que a ENMG decide a cirurgia (o Green diz que a decisão é clínica) ou que o NARAKAS III é o mais comum.
 !fim
 
-# O quadro clínico e a classificação de NARAKAS {radar=confirmado}
+## O mecanismo e o lado direito
 
-## Como o bebê se apresenta
+A teoria mecânica predomina desde SMELLIE (1764) e DUCHENNE (1872), e foi reproduzida experimentalmente por METAIZEAU (cap. 40, p. 1392 e 1393): o plexo se lesa por **estiramento** durante o parto. Os graus são os mesmos do adulto: SUNDERLAND I (neuropraxia), II a IV (axonotmese), V (neurotmese) e a avulsão (Fig. 40.2, p. 1393). Causas raras incluem plexo hipoplásico, as forças propulsivas maternas empurrando o ombro posterior contra o promontório sacral e um útero anômalo (bicorno, mioma). O tema tem peso médico-legal, e o capítulo o reconhece.
 
-No ERB-DUCHENNE (Tachdjian, p. 405), o membro fica em **adução e rotação interna, cotovelo estendido e punho fletido**, com fraqueza de **abdutores e rotadores externos** e sem flexores do cotovelo; com C7, os **extensores do cotovelo enfraquecem e o cotovelo fica em posição intermediária**; no global, a mão é fria, supinada e intrínseco-minus. A radiografia afasta pseudoparalisia por fratura (Green, cap. 40, p. 1393); fratura de clavícula coexiste em 10% a 15% (Campbell, p. 1311).
+Na apresentação **cefálica** (de vértice), a tração lateral do pescoço para soltar o ombro preso concentra a força no **plexo superior**; daí a **ruptura extraforaminal do tronco superior** ser típica da **distocia de ombro** (Green, p. 1392; Campbell, p. 1310). O padrão mais comum é o do tronco superior (C5-C6, ERB), às vezes com C7 (ERB estendido); o plexo inteiro (global) é o menos comum.
 
-## NARAKAS
+O **lado direito** é o mais acometido (Green, p. 1392), e a explicação é mecânica: a apresentação mais frequente é a **occipito anterior esquerda**, que deixa o **ombro direito** na frente, preso atrás da **sínfise púbica**; é esse ombro que precisa ser solto, e é o plexo desse lado que sofre a tração.
 
-!tabela Classificação de NARAKAS (Green, cap. 40, pp. 1393 e 1394; Tachdjian, p. 404; Campbell, p. 1310)
+## A divergência sobre o parto pélvico
+
+Aqui os livros discordam. O Green (cap. 40, p. 1392, 1394 e 1403) diz que **o parto pélvico produz avulsões pré-ganglionares de C5-C6**, particularmente frequentes e às vezes **bilaterais**: é a exceção à regra de que a lesão alta do bebê é pós-ganglionar. O mecanismo faz sentido: no pélvico, a cabeça é a última a sair, e a tração do tronco com a cabeça presa estira o pescoço contra o plexo superior com força suficiente para arrancar as raízes. GEUTJENS, GILBERT e HELSEN (J Bone Joint Surg Br, 1996) descreveram esse padrão diferente do pélvico.
+
+O Tachdjian (p. 404) e o Campbell (p. 1310) dizem que a tração do tronco com o braço abduzido no parto pélvico **concentra o estiramento no plexo inferior**. Nas questões, o pélvico aparece como fator de risco nos três livros, sem conflito; quando a pergunta descreve avulsão de C5 e C6, às vezes bilateral, a resposta do Green é o parto pélvico.
+
+# O exame do bebê e a classificação de NARAKAS {radar=confirmado}
+
+## Diagnóstico diferencial
+
+O diagnóstico é predominantemente **clínico** (cap. 40, p. 1393). O diferencial principal é a **pseudoparalisia** por fratura (ou, menos, por infecção): o bebê não mexe o braço porque dói. Lesões do sistema nervoso central ou da medula cervical, doenças neuromusculares e anomalias congênitas também entram. A **fratura da clavícula pode coexistir** com a paralisia, e por isso se faz radiografia (10% a 15% no Campbell, p. 1311). A fratura da diáfise do úmero imita a plexopatia, mas não costuma coexistir com ela; quando é desviada, dá paralisia isolada do radial.
+
+O exame é dinâmico e exige paciência: observa-se o movimento espontâneo, usam-se os reflexos neonatais e estímulos (p. 1393). O mais importante, diz o capítulo, é o **prognóstico**, e por isso o exame se repete a cada 1 a 3 meses. A **atitude** do ERB-DUCHENNE (Tachdjian, p. 405) é a de **adução e rotação interna do ombro, cotovelo estendido e punho fletido**, porque os abdutores, os rotadores externos e os flexores do cotovelo (C5-C6) estão fracos; como o bíceps e o supinador também falham, o antebraço tende a ficar pronado; com C7, os extensores do cotovelo enfraquecem e o cotovelo fica em posição intermediária; no global, a mão é fria, sem movimento e intrínseco-minus.
+
+## NARAKAS e SLOOFF
+
+A classificação clínica de NARAKAS e SLOOFF tem quatro grupos (cap. 40, p. 1393). NARAKAS (em The paralysed hand, 1987) a usou para graduar o prognóstico pela extensão da lesão.
+
+!tabela Classificação de NARAKAS (Green, cap. 40, p. 1393 e 1394; Tachdjian, p. 404; Campbell, p. 1310)
 | Grupo | Raízes | Clínica | Prognóstico |
 |---|---|---|---|
-| I | C5-C6 (ERB) | sem abdução, RE, flexão do cotovelo e supinação; punho e dedos intactos | até 90% recuperam; recuperação completa ou quase em 1 a 8 semanas (Campbell) |
+| I | C5-C6 (ERB) | sem abdução e RE do ombro, sem flexão do cotovelo e supinação; punho e dedos intactos | até 90% recuperam sozinhos; recuperação completa ou quase em 1 a 8 semanas (Campbell) |
 | II | C5-C7 (ERB estendido) | o anterior mais perda da extensão do punho e dos dedos; postura em "gorjeta de garçom" | pior; bom se o bíceps volta por completo até 4 meses |
 | III | C5-T1 | membro flácido, sem HORNER | dificilmente função plena sem cirurgia |
-| IV | C5-T1 | membro flácido com HORNER; pode haver diafragma elevado | o pior; pouca chance de recuperação espontânea |
+| IV | C5-T1 | membro flácido com HORNER; pode haver paralisia frênica com hemidiafragma elevado | o pior; pouca chance de recuperação espontânea útil |
 !fim
 
-O Tachdjian (p. 404) põe no grupo 2 também a falta de extensão do cotovelo; o Campbell (p. 1310) acrescenta um tipo V, o KLUMPKE isolado (C8-T1), raro (menos de 1%). Na criança, **C5-C6 é 46%** e **C5-C7, 29%**, em geral pós-ganglionares; o global é o menos comum, com **avulsões de C8-T1** (Green, cap. 40, p. 1394). O HORNER vem dos simpáticos de **T1** (Tachdjian, p. 405), não de C4, C6 e C7.
+A chave de cada fronteira é um sinal clínico. **O que separa o II do I é a perda da extensão do punho e dos dedos** (o C7, raiz central do radial), que produz a postura em "gorjeta de garçom": ombro aduzido e rodado para dentro, cotovelo estendido, antebraço pronado e punho e dedos fletidos, como a mão do garçom que espera a gorjeta por trás do corpo. **O que separa o IV do III é o HORNER.** O Tachdjian (p. 404) põe no grupo 2 também a falta de extensão do cotovelo; o Campbell (p. 1310) acrescenta um tipo V, o KLUMPKE isolado (C8-T1), raro (menos de 1%). O "KLUMPKE obstétrico" puro é tão raro que AL-QATTAN, CLARKE e CURTIS (J Hand Surg Br, 1995) perguntaram no título do seu artigo se ele realmente existe.
 
-!questoes central=mao-0033 relacionadas=mao-0530,mao-0580,mao-1124,mao-0062,pediatria-0745
+!questoes central=mao-0033 relacionadas=mao-0530,mao-0580,mao-1124,mao-0062,pediatria-0745 treino=mao-1750,mao-2373,mao-2458,mao-2083,mao-3063,mao-3064,mao-3068
 conceito: NARAKAS I = C5-C6 (90% de recuperação espontânea, completa em 1 a 8 semanas); II = C5-C7 (gorjeta de garçom); III = total sem HORNER; IV = total com HORNER.
 como: O TARO 2021 e 2010 pediram o grupo 2; o ENARE R4 2024, a afirmação correta entre NARAKAS, HORNER e postura do cotovelo; a PUC-SP 2021, o grupo com 90% de recuperação; o TARO 2016, o tipo que se recupera entre a primeira e a oitava semana.
 armadilha: Pôr C5-C6 no grupo 2, chamar o grupo 2 de lesão isolada do tronco superior, dizer que o grupo 3 tem HORNER, ou que no C5-C6 o cotovelo fica em posição intermediária (isso é com C7).
 !fim
 
+## Frequência e nível da lesão
+
+Na criança, **C5-C6 (ERB) é 46%** dos casos, e **C5-C7 (ERB estendido), 29%**, em geral **pós-ganglionares**; o plexo inferior, quando lesado, sofre **avulsões pré-ganglionares de C8-T1**; e a exceção é o pélvico, com avulsão de C5-C6 (cap. 40, p. 1394). Os pontos críticos do capítulo (p. 1396) resumem a ordem: o mais comum é C5-C6, o segundo é C5-C7, e o global é o menos comum; o ERB tem o melhor prognóstico e o global, o pior; o exame seriado é o melhor preditor; a ENMG não é confiável. O Green acrescenta que **NARAKAS I e II com bíceps completo aos 4 meses** têm alta chance de função completa, enquanto III e IV dificilmente a alcançam sem cirurgia (p. 1394).
+
+## Sinais de avulsão no bebê
+
+Como no adulto, o exame físico localiza o nível ao testar os nervos que nascem perto da linha média e do gânglio (cap. 40, p. 1394). A Tabela 40.1 lista os indicadores de avulsão e mau prognóstico:
+
+!tabela Indicadores de avulsão e mau prognóstico na criança (Green, cap. 40, Tabela 40.1, p. 1394)
+| Achado | Nervo ou estrutura |
+|---|---|
+| paralisia dos paraespinais | ramos dorsais |
+| paralisia do romboide | escapular dorsal (C5) |
+| escápula alada | torácico longo (C5 a C7 no texto) |
+| HORNER | simpático cervicotorácico |
+| hemidiafragma paralisado | frênico |
+| pseudomeningocele | avulsão da dura e da aracnoide |
+!fim
+
+A consequência para a conduta é a mesma do adulto: a lesão pré-ganglionar só se trata por transferência (intercostais, ramo do acessório, fascículos de nervos periféricos), e a pós-ganglionar aceita enxerto ou transferência e pode recuperar sozinha, porque ao nascer as rupturas costumam ser parciais e há vias redundantes (p. 1394).
+
+!questoes treino=mao-1749,mao-1979,mao-2084,mao-3061,mao-3067
+conceito: No bebê, paralisia do romboide (escapular dorsal, C5), escápula alada (torácico longo), HORNER, hemidiafragma paralisado, paraespinais paralisados e pseudomeningocele indicam avulsão e mau prognóstico.
+como: O SIMÃO 2026 perguntou o nervo da escápula alada no lactente; o SIMÃO 2023, o achado ligado à lesão que ele indica; o SBCM 2024, o achado que sugere avulsão.
+armadilha: Tomar o serrátil por músculo do escapular dorsal, ou o HORNER por sinal de lesão do tronco superior.
+!fim
+
+## Imagem e ENMG na criança
+
+A imagem segue os números de KAWAI (cap. 40, p. 1395 e 1396), já vistos: a mielo-TC acerta 94%, divertículos grandes são diagnósticos, a RM é parecida e pede só sedação. Mas o capítulo pediátrico é cético com a eletroneuromiografia (p. 1396). Condução sensitiva normal sem condução motora indica avulsão, e a ausência de reinervação aos 3 meses a sugere; o reflexo H do braquiorradial ajuda. Porém **a atividade motora na ENMG não prediz a recuperação clínica**, e o exame pode parecer quase normal mesmo com lesão grave ou avulsão. A razão é a **plasticidade** do sistema nervoso imaturo: SLOOFF viu o deltoide e o bíceps inervados por C7 com C5 e C6 avulsionados. Assim, a ENMG **subestima a gravidade** e dá falso otimismo. Cerca de **20% a 25%** das crianças precisarão de microcirurgia, e quem decide é a **clínica**.
+
 # O bíceps como relógio da microcirurgia {radar=confirmado}
 
 ## A história natural
 
-O Green (cap. 40, p. 1397) lembra que a história natural, antes vista como benigna, deixa **déficit em 20% a 30%** das crianças, até 40% em algumas séries. Mesmo sem estudo perfeito, há conclusões firmes:
+Uma revisão de 76 estudos sobre a história natural não encontrou nenhum sem viés; o **déficit residual** foi de **20% a 30%**, e até 40% em séries posteriores (cap. 40, p. 1397). O Campbell (p. 1312) dá recuperação espontânea de **66% a 92%**, com a maior parte nos três primeiros meses. Mesmo sem estudo perfeito, há conclusões firmes (p. 1397):
 
+- **a maioria das lesões é transitória**;
 - quem recupera **força antigravitacional parcial do tronco superior nos 2 primeiros meses** costuma ter recuperação completa em 1 a 2 anos;
-- quem **não recupera o bíceps antigravitacional até 5 a 6 meses** deve fazer microcirurgia;
-- quem recupera parcialmente entre 3 e 6 meses fica com limitação permanente e risco de contratura;
-- global e avulsão do tronco inferior têm o pior prognóstico.
+- quem **não recupera o bíceps antigravitacional até 5 a 6 meses** deve fazer microcirurgia, que dá resultado melhor que a história natural;
+- quem recupera parcialmente o C5-C7 entre 3 e 6 meses fica com limitações permanentes e progressivas e com risco de contraturas;
+- o global e a avulsão do tronco inferior têm o pior prognóstico.
 
-O Campbell (p. 1312) dá recuperação espontânea de **66% a 92%**, com a maior parte nos 3 primeiros meses.
+O capítulo faz uma ressalva importante: **a flexão do cotovelo sozinha é um critério insuficiente**, porque há crianças com função útil que ainda não fletem o cotovelo aos 3 meses (p. 1397). A dor com automutilação aparece em 3% a 4% das crianças; a dor crônica no adulto parece incomum.
 
-## Quando operar
+## A janela da microcirurgia
 
-GILBERT e TASSIN adotaram **3 meses** e o **bíceps antigravitacional** como indicador (Green, cap. 40, p. 1394). O critério mais comum (p. 1398) é a **ausência de bíceps** com **lesão total e HORNER aos 2 a 3 meses**, ou com **lesão do tronco superior aos 5 a 6 meses**; opera-se entre 3 e 9 meses. Dos 49 bebês de WATERS sem bíceps aos 3 meses, **42 recuperaram até os 6 meses**, com MALLET pior quanto mais tarde (p. 1400). CLARKE usa o **teste do biscoito** aos 9 meses. O protocolo do Green (pp. 1406 e 1407):
+A cirurgia do plexo no bebê tem uma história de idas e vindas (cap. 40, p. 1397). KENNEDY (BMJ, 1903) suturou o plexo de bebês; WYETH e SHARPE (1917) propuseram operar aos 3 meses; SEVER, com 1100 casos (JAMA, 1925), duvidou do benefício, e a cirurgia foi abandonada nos anos 1930. O renascimento veio com a microcirurgia, por NARAKAS, MILLESI, GILBERT, KAWABATA e outros.
 
-!tabela Conduta do Green na paralisia obstétrica (cap. 40, pp. 1398 e 1406 a 1407; Campbell, pp. 1312 e 1313)
-| Situação | Conduta |
-|---|---|
-| bíceps antigravitacional nos 3 primeiros meses | observar, fisioterapia para manter RE e abdução passivas |
-| HORNER e sem bíceps aos 3 meses | microcirurgia aos 3 meses; prioridade mão e punho, cotovelo, ombro |
-| sem HORNER, extensão de punho e dedos voltando | esperar até 5 a 6 meses pelo bíceps; sem bíceps, operar |
-| teste do biscoito positivo aos 9 meses | transferência nervosa para o bíceps |
-| escore de TORONTO 3,5 ou menos aos 3 meses ou mais | indicação de microcirurgia (Campbell) |
-| C5-C6 ou C5-C7 sem bíceps aos 6 meses | tripla transferência (Campbell) |
-!fim
+GILBERT e TASSIN (Chirurgie, 1984) adotaram **3 meses** e o **bíceps antigravitacional** como indicador (p. 1394). Os outros critérios propostos foram o bíceps estatisticamente confiável de WATERS, o bíceps, tríceps e deltoide de LAURENT, e o escore combinado de CLARKE, que soma flexão do cotovelo e extensão do cotovelo, do punho, dos dedos e do polegar. CLARKE também criou o **teste do biscoito** (cookie test) aos **9 meses**: a criança tem de levar um biscoito à boca com o braço junto ao corpo, o que exige flexão do cotovelo sem compensar com a abdução do ombro.
 
-O Tachdjian (p. 406) dá janela de **5 a 12 meses**; o Campbell (p. 1313), 3 meses no global com HORNER e 3 a 9 meses nas rupturas.
+O critério mais comum hoje (p. 1398) é a **ausência de bíceps** com **plexopatia total e HORNER aos 2 a 3 meses**, ou com **lesão do tronco superior aos 5 a 6 meses**; opera-se entre 3 e 9 meses, conforme o centro. As razões para operar cedo são menos perda irreversível de placas motoras e a aceitação dos pais diante de um membro ainda flácido. Mas os estudos que esperaram mostram por que a pressa não vale para todos (p. 1399 e 1400):
 
-## As escalas
+- AL-QATTAN (Plast Reconstr Surg, 2000), decidindo aos 4 meses, e WATERS, aos 5 meses: quem recupera o bíceps até essa idade tem resultado equivalente ao da microcirurgia, sobretudo com transferências secundárias;
+- de 12% a 55% das crianças sem bíceps aos 3 meses evoluem tão bem quanto as enxertadas;
+- WATERS (J Bone Joint Surg Am, 1999): de 49 bebês sem bíceps aos 3 meses, **42 recuperaram até os 6 meses**, mas o MALLET caiu progressivamente a cada mês de demora;
+- SMITH e colaboradores (J Bone Joint Surg Am, 2004): de 28 sem bíceps aos 3 meses, 27 chegaram à força antigravitacional, e o bíceps recuperado entre 3 e 6 meses deu MALLET melhor que depois dos 6;
+- uma análise econômica (BRAUER e WATERS, J Bone Joint Surg Am, 2007) mostrou que operar todos aos 3 meses não poupa custo.
 
-O **escore de TORONTO** (Green, cap. 40, pp. 1394 e 1396; Campbell, p. 1312) soma cinco funções, cada uma de 0 a 2: **flexão do cotovelo, extensão do cotovelo, extensão do punho, extensão dos dedos e extensão do polegar** (total 0 a 10). Serve só no lactente, para indicar cirurgia; **3,5 ou menos aos 3 meses ou mais** indica microcirurgia. Uma criança de 6 meses com escore 3 tem resultado limitado se não for operada.
-
-A **escala de movimento ativo do Hospital for Sick Children (AMS)** vai de 0 a 7: 0 a 4 sem gravidade, 5 a 7 contra a gravidade. O **MRC modificado por GILBERT e TASSIN** vai de 0 a 3 no lactente.
+A síntese: a maioria indica a cirurgia aos 3 meses na **lesão total** e raramente na ruptura isolada do tronco superior (p. 1399).
 
 !questoes central=mao-1487 relacionadas=mao-0149,mao-0085
 conceito: Sem bíceps antigravitacional aos 5 a 6 meses numa lesão alta sem HORNER, explora-se o plexo; o retorno do bíceps (flexão do cotovelo) é o critério mais usado; TORONTO 3,5 ou menos aos 3 meses indica microcirurgia.
@@ -363,30 +798,89 @@ como: A USP-SP 2024 descreveu bebê de 6 meses sem flexão do cotovelo, mão boa
 armadilha: Esperar mais 3 a 6 meses pelo bíceps ou já fazer cirurgia de ombro; ou usar a sensibilidade lateral do braço como critério.
 !fim
 
+## As escalas de avaliação
+
+As escalas confundem porque cada uma serve a uma pergunta diferente (cap. 40, p. 1394 a 1396):
+
+- **MRC** (0 a 5) exige contração voluntária e funciona mal no bebê. O **MRC modificado por GILBERT e TASSIN** tem quatro graus: 0 sem contração; 1 contração sem movimento; 2 movimento com a gravidade eliminada; 3 movimento completo contra o peso do membro.
+- A **escala de movimento ativo** (AMS) do Hospital for Sick Children de Toronto, de CURTIS e colaboradores (J Hand Surg Am, 2002), vai de 0 a 7: **0 a 4 com a gravidade eliminada, 5 a 7 contra a gravidade**. A criança precisa da amplitude completa sem gravidade (4) antes de pontuar contra a gravidade, e as contraturas travam a passagem do 4 para o 5 (Tabela 40.2).
+- O **escore de TORONTO** (Tabela 40.3; Campbell, p. 1312) soma cinco funções, cada uma de 0 a 2: **flexão do cotovelo, extensão do cotovelo, extensão do punho, extensão dos dedos e extensão do polegar** (total 0 a 10). Serve **só na infância, para prever a necessidade de reconstrução**, e não acompanha a evolução. **3,5 ou menos aos 3 meses ou mais** indica microcirurgia; uma criança de 6 meses com escore 3 terá resultado limitado se não for operada.
+- O **MALLET modificado** avalia o ombro da criança maior e está no capítulo do ombro, adiante.
+
+Quanto à confiabilidade, a intraobservador supera a interobservador, e o MALLET, mais simples, é mais confiável que a AMS (BAE, WATERS e ZURAKOWSKI, J Bone Joint Surg Am, 2003). O PODCI, preenchido pelos pais e pelo paciente, é confiável, mas é confundido pelo litígio; o CAT (Shriners) tem pouco efeito chão e teto (p. 1394 e 1395).
+
 # A reconstrução nervosa no lactente {radar=confirmado}
 
 ## Diferenças em relação ao adulto
 
-A neurólise isolada foi praticamente abandonada (Green, cap. 40, pp. 1397 e 1401): não muda a história natural no total e parece inferior ao enxerto. O padrão é **ressecar o neuroma e enxertar com sural** as rupturas extraforaminais; as transferências ganham espaço. A grande diferença é a mão: **no lactente, a distância curta permite reinervar a mão**, e enxertar o tronco inferior é prioridade, ao contrário do adulto (pp. 1398 e 1401). Num estudo, RAIMONDI 3 ou mais foi obtido em 9 de 13 crianças com tronco inferior reconstruído contra 1 de 3 sem (p. 1420).
+A **neurólise isolada** foi praticamente abandonada (cap. 40, p. 1397 e 1401): não tem papel na avulsão e não muda a história natural no global. LAURENT a usava quando o neuroma conduzia mais de 50% do potencial muscular, mas o enxerto recupera mais força mesmo partindo de pior estado, e CAPEK, CLARKE e CURTIS (Plast Reconstr Surg, 1998) mostraram que ressecar e enxertar os neuromas, conduzindo ou não, dá melhor resultado a longo prazo. O padrão é **ressecar o neuroma e enxertar com sural** as rupturas extraforaminais (p. 1398).
 
-O Green (p. 1403) dá os cenários de avulsão:
+A grande diferença em relação ao adulto é a **mão**. GILBERT e WHITAKER e SLOOFF priorizaram a mão nas avulsões extensas, porque **no bebê a distância curta permite reinervá-la**, ao contrário do adulto (p. 1398). Os pontos críticos dizem isso com todas as letras: ao contrário do adulto, o enxerto para o tronco inferior pode dar função de mão e **deve ser prioridade na criança** (p. 1401). Os dados confirmam: antes de 1995, sem tentativa de reinervar o tronco inferior, a mão ficou boa (RAIMONDI) em 3 de 8 crianças; depois, em 8 de 14; outro estudo achou RAIMONDI 3 ou mais em 9 de 13 crianças com o tronco inferior reconstruído, contra 1 de 3 sem (p. 1419).
 
-- **C5, C6 e C7 rotos, C8 e T1 avulsionados**: três raízes para enxertar; C5 e C6 são enxertados com sural para o **supraescapular e os fascículos medial, lateral e posterior**.
-- **C5 e C6 rotos, C7 a T1 avulsionados**: menos axônios; **a mão tem prioridade**, com enxertos de C5 ou C6 para os fascículos **medial e lateral**; o supraescapular vai pelo acessório; o posterior pode ser abandonado ou feito com intercostais.
-- **Só C5 viável**: prioridade da mão, com acessório e intercostais para supraescapular, musculocutâneo e mediano.
+## Enxertos e transferências: técnica
 
-Nas avulsões totais, só sobram transferências: intercostais, acessório, C7 contralateral e até o hipoglosso (p. 1398). Os intercostais usados no bebê são T2 a T4, transferidos diretamente ao ramo do bíceps (p. 1406). A tripla transferência (acessório para supraescapular, radial para axilar, ulnar ou mediano para o musculocutâneo) entre 10 e 18 meses deu resultado equivalente ao enxerto (p. 1400), e a flexão do cotovelo por transferência funciona até 18 meses.
+Na ruptura do tronco superior, os enxertos de C5 e C6 vão para três alvos (cap. 40, p. 1398, Fig. 40.5): a **divisão anterior do tronco superior** (ou fascículo lateral ou musculocutâneo), o **supraescapular** e a **divisão posterior do tronco superior** (ou fascículo posterior, axilar ou radial). Com C7 rompido, enxerta-se C7 para o fascículo posterior. Um sural basta no C5-C6; dois, no global. Aloenxerto e conduto não foram comprovados na criança (p. 1401).
 
-!questoes central=mao-1348
+A exposição é a do adulto em miniatura (p. 1401 e 1402): anestesia geral sem bloqueador neuromuscular, supino com a cabeça para o lado sadio, incisão supraclavicular transversa, omo-hióideo seccionado ou afastado, a cervical transversa às vezes seccionada (ela costuma cruzar C7), e o **frênico** achado na face anterior do escaleno anterior, ou sobre o neuroma, e seguido até C5. O neuroma extraforaminal fica no **ponto de ERB**. A clavícula em geral só é mobilizada; se cortada, o corte é oblíquo e suturado. A **cola de fibrina** isolada reduziu muito o tempo cirúrgico e virou padrão para muitos.
+
+As **transferências** ganharam espaço no C5-C6 e no C5-C7 (p. 1398 e 1400): intercostais ou fascículo do ulnar para o ramo do bíceps, ramo do acessório para o supraescapular e ramo do tríceps para o axilar, com resultados equivalentes ao enxerto no ombro e no cotovelo. A vantagem é que a sutura fica perto do alvo, a regeneração é mais curta, e por isso a janela para esperar é maior. LADAK e colaboradores (Plast Reconstr Surg) fizeram as **três transferências** (acessório para supraescapular, radial para axilar, ulnar ou mediano para musculocutâneo) entre **10 e 18 meses**, com resultado igual ao do enxerto; TSE e colaboradores (Plast Reconstr Surg, 2011) acharam rotação externa igual com C5 enxertado ou acessório para o supraescapular; o acessório para supraescapular serve até 30 meses; e LITTLE e colaboradores mostraram que a **flexão do cotovelo por transferência de fascículos funciona até 18 meses**, com supinação melhor na dupla (mediano e ulnar para bíceps e braquial) (p. 1400). As avulsões de C5-C6 são as candidatas ideais à transferência, e a **recuperação dissociativa** (uns músculos voltam, outros não) permite transferências "à la carte" para os músculos ainda paralisados, sem ressecar o tronco superior.
+
+Detalhes técnicos de cada transferência na criança (p. 1404 a 1406): o **acessório para o supraescapular** é feito de preferência pela **via posterior**, por incisão transversa acima da espinha da escápula, seccionando o ligamento da incisura, com o cuidado de preservar as fibras do trapézio superior e médio (para evitar o ombro caído, Fig. 40.8); o **radial para o axilar** usa uma incisão na borda inferior do deltoide posterior, separando o **ramo cutâneo** do axilar dos ramos do deltoide e do redondo menor para não diluir os axônios; o **ulnar ou mediano para os flexores do cotovelo** usa fascículos que inervam sobretudo os **flexores do punho, nunca os intrínsecos**; e os **intercostais T2 a T4** vão juntos, por transferência direta, em geral para o ramo do bíceps. As três transferências podem ser feitas juntas em decúbito lateral.
+
+Nas avulsões totais, só sobram transferências: intercostais, acessório, C7 contralateral (resultados variáveis; a via retrofaríngea, com enxerto curto ou sem enxerto, é promissora) e até o hipoglosso (p. 1398 e 1404). O reimplante de raiz de CARLSTEDT não se justifica no bebê, pelo risco de instabilidade cervical (p. 1398).
+
+## Os cenários de avulsão
+
+O Green (cap. 40, p. 1403) descreve como distribuir os poucos axônios disponíveis:
+
+- **C5, C6 e C7 rotos, C8 e T1 avulsionados**: com três raízes é possível reconstruir o plexo inteiro; C5 e C6 são enxertados com sural para o **supraescapular e os fascículos medial, lateral e posterior**.
+- **C5 e C6 rotos, C7 a T1 avulsionados**: menos axônios; **a mão tem prioridade**, com enxertos de C5 ou C6 para os fascículos **medial** (ulnar e mediano) e **lateral** (musculocutâneo e mediano); o supraescapular vai por enxerto ou, mais comumente, pelo acessório; o fascículo posterior pode ser abandonado ou feito com intercostais.
+- **Só C5 viável**: prioridade da mão, com enxertos de C5 para o tronco inferior, e acessório e intercostais para supraescapular, musculocutâneo e mediano (Fig. 40.14).
+
+!questoes central=mao-1348 treino=mao-3045,mao-3053
 conceito: Com C5 a C7 rotos e C8-T1 avulsionados, o Green enxerta C5 e C6 para o supraescapular e os fascículos, com prioridade para a mão (tronco inferior e fascículo medial).
 como: A USP-SP 2025 pediu o uso do sural nesse cenário, segundo o Green.
 armadilha: Abandonar C7 ou reconstruir só o ombro e o cotovelo; no lactente o tronco inferior é prioridade.
 alerta: `mao-1348` está sem gabarito e cita a 8ª edição; na 7ª edição conferida (p. 1403), C5 e C6 vão para o supraescapular e os fascículos medial, lateral e posterior, com a mão priorizada, o que aproxima a resposta da alternativa D.
 !fim
 
+## A preferência dos autores no lactente
+
+O protocolo dos autores (cap. 40, p. 1406 e 1407) junta tudo o que foi visto:
+
+!tabela Conduta do Green na paralisia obstétrica (cap. 40, p. 1398 e 1406 a 1407; Campbell, p. 1312 e 1313)
+| Situação | Conduta |
+|---|---|
+| bíceps antigravitacional nos 3 primeiros meses | observar, fisioterapia para manter RE e abdução passivas até recuperar |
+| HORNER e sem bíceps antigravitacional aos 3 meses | microcirurgia aos 3 meses; enxertos se houver raiz, transferências quase sempre; prioridade mão e punho, cotovelo, ombro |
+| sem HORNER, extensão de punho e dedos voltando | esperar até 5 a 6 meses pelo bíceps; sem bíceps, operar |
+| não operados | vigiar até 9 meses; teste do biscoito positivo aos 9 meses: cirurgia, em geral transferência para o bíceps |
+| escore de TORONTO 3,5 ou menos aos 3 meses ou mais | indicação de microcirurgia (Campbell) |
+| C5-C6 ou C5-C7 sem bíceps aos 6 meses | tripla transferência (Campbell) |
+!fim
+
+A lógica da linha do meio é a mais cobrada: o bebê **sem HORNER** que está **recuperando a extensão do punho e dos dedos** mostra que o plexo está em continuidade e regenerando; vale esperar pelo bíceps até os 5 a 6 meses. Já o bebê com **HORNER** e membro flácido aos 3 meses tem avulsão baixa provável e não vai melhorar sozinho; opera-se logo, e a mão vem primeiro. O fascículo do ulnar só serve de doador se **C8 e T1 estiverem intactos** (p. 1406). O Tachdjian (p. 406) dá janela de 5 a 12 meses; o Campbell (p. 1313), 3 meses no global com HORNER e 3 a 9 meses nas rupturas.
+
+## Pós-operatório e complicações
+
+Depois do enxerto, o bebê fica com o braço junto ao corpo (malha, tipoia e faixa, incluindo o pescoço se houve tensão) por cerca de 4 semanas; o curativo do sural sai em 2 semanas; às vezes se aplica toxina nos rotadores internos com gesso toracobraquial em rotação externa (cap. 40, p. 1407). A melhora aparece entre 6 e 18 meses; se o bíceps não progride aos 6 a 9 meses, há motivo de preocupação, e sem bíceps 9 a 12 meses depois, reexplora-se. As complicações são raras: infecção, sangramento, quilotórax, piora neural, **paralisia frênica** (dificuldade de alimentação e infecções respiratórias; em geral por tração e transitória; plicatura tardia rara) e pseudartrose da clavícula.
+
 ## O resultado da mão: RAIMONDI
 
-A **escala de RAIMONDI** (Green, cap. 40, pp. 1407 e 1408) gradua a mão de 0 a V. Grau 0: paralisia completa; I: flexão limitada dos dedos, sem extensão; II: extensão ativa do punho com flexão passiva dos dedos por tenodese; III: flexão ativa completa de punho e dedos, polegar móvel, boa sensibilidade; IV: soma extensão ativa do punho e oponência; V: IV mais extensão dos dedos e prono-supinação quase completas. **Graus III, IV e V são considerados bons resultados** após a cirurgia. As médias foram 4,57 no C5-C6, 4,26 no C5-C7 e 2,16 no total.
+A **escala de RAIMONDI** (cap. 40, Tabela 40.4, p. 1407 e 1408) gradua a mão de 0 a V, e cada grau acrescenta uma função ao anterior:
+
+!tabela Escala de RAIMONDI para a mão (Green, cap. 40, Tabela 40.4, p. 1408)
+| Grau | Função |
+|---|---|
+| 0 | paralisia completa ou leve flexão dos dedos; polegar inútil; sem pinça |
+| I | flexão ativa limitada dos dedos; sem extensão do punho ou dos dedos; pinça lateral possível; antebraço supinado |
+| II | extensão ativa do punho com flexão passiva dos dedos (tenodese); pinça lateral passiva; antebraço pronado |
+| III | flexão ativa completa do punho e dos dedos; polegar móvel com abdução e oposição parciais; algum equilíbrio intrínseco; sem supinação ativa |
+| IV | o grau III mais extensão ativa do punho; extensão dos dedos fraca ou ausente; boa oposição com intrínsecos ativos; prono-supinação parcial |
+| V | o grau IV mais extensão ativa dos dedos e prono-supinação quase completa |
+!fim
+
+**Graus III, IV e V são considerados bons resultados** após a cirurgia, porque a partir do III a criança tem flexão ativa completa e pode pegar objetos; o II é só tenodese. As médias foram **4,57 no C5-C6, 4,26 no C5-C7 e 2,16 no total**; a avulsão dá a mão pior, e a maioria ainda precisa de alguma transferência tendinosa (p. 1407 e 1408).
 
 !questoes central=mao-1362
 conceito: Na escala de RAIMONDI, graus III, IV e V são bons resultados da mão após a cirurgia.
@@ -398,15 +892,36 @@ armadilha: Marcar II, que é só tenodese.
 
 ## Por que o ombro trava em rotação interna
 
-A contratura mais evidente é a **em rotação interna** (Green, cap. 40, p. 1408): rotadores internos ativos contra externos paralisados (a paralisia do **supraescapular** tira a RE, Tachdjian, p. 406), somados ao encurtamento do músculo denervado que não cresce (atrofia do subescapular). Empurrada em RI, a cabeça carrega a glenoide posterior: **a glenoide retroverte e a cabeça subluxa e luxa para trás**, com **perda da rotação externa passiva** (Green, p. 1408; Tachdjian, p. 408). Quase **10% luxam no primeiro ano** (p. 1409). Para levar a mão à boca sem rodar para fora, a criança abduz e roda internamente: o **corneteiro** (pp. 1417 e 1419).
+As contraturas e a deformidade óssea são a causa mais comum de cirurgia depois da paralisia obstétrica (cap. 40, p. 1408), e a mais evidente é a contratura em **rotação interna**. A explicação antiga era o **desequilíbrio**: rotadores internos funcionando (peitoral maior, grande dorsal, redondo maior, subescapular) contra rotadores externos paralisados (a paralisia do **supraescapular** tira a rotação externa, Tachdjian, p. 406). O capítulo do Green mostra que a história é mais interessante (p. 1408): são os **músculos denervados que encurtam**. Na RM, o grau da contratura se correlaciona com a **atrofia do subescapular**, um músculo que, no ERB, está paralisado, e não hiperativo.
 
-O exame se faz **com a escápula estabilizada**, medindo RI e RE em adução e a 90 graus de abdução, e observando o winging: para trás na RI, para cima na adução completa (Green, p. 1410).
+O mecanismo foi esclarecido em modelos animais (neurotomia do tronco superior em ratos e camundongos): **o músculo denervado no período neonatal não cresce junto com o osso** (p. 1408). O úmero alonga e o músculo fica para trás, curto, como uma corda que não acompanha o mastro. A **reinervação precoce previne** essa falha de crescimento; a tardia, não, o que sugere uma janela crítica. E a mecânica faz o resto: com o subescapular curto prendendo o braço em rotação interna, a cabeça do úmero pressiona a **glenoide posterior**, que retroverte e se deforma, e a cabeça **subluxa e luxa para trás**, com **perda da rotação externa passiva** (Green, p. 1408; Tachdjian, p. 408). O peitoral maior e os outros rotadores internos agravam.
+
+A deformidade é **progressiva e precoce**: cerca de **10% dos ombros luxam no primeiro ano**, alguns já aos 3 meses, e a criança pode precisar de uma cirurgia "secundária" no ombro antes mesmo de se saber se a "primária" no plexo será necessária (p. 1409). A boa notícia é que o tratamento precoce **reverte**: depois de liberar a contratura em rotação interna, com ou sem transferência, a glenoide remodela, e até a cabeça remodela; a idade-limite para isso não é conhecida (p. 1409 e 1410).
+
+Sem rotação externa, a criança não leva a mão ao occipício nem à testa; a escápula compensa quase tudo, menos a rotação externa (p. 1410 e 1411). Para levar a mão à boca, ela abduz o ombro e roda internamente, com o antebraço neutro ou pronado: é o **sinal do corneteiro**, a postura de quem toca uma corneta com o cotovelo para o alto (p. 1419).
+
+## Contraturas paradoxais e o sinal de PUTTI
+
+Se a contratura viesse só do desequilíbrio, o músculo paralisado nunca ficaria tenso. Mas o Green descreve **contraturas paradoxais**, no sentido do músculo paralisado (cap. 40, p. 1408): **flexão do cotovelo** com os flexores paralisados (correlacionada só com a atrofia do braquial) e **abdução glenoumeral** com os abdutores paralisados. É na contratura em abdução que aparece o **sinal de PUTTI** (1932): ao aduzir o braço, a glenoumeral travada não acompanha, a escápula roda sobre o tórax, e o **ângulo superomedial da escápula protrai para cima**. Há ainda contraturas em rotação externa, e o resultado de todas elas é uma "anquilose funcional" da glenoumeral, compensada pela escapulotorácica.
+
+O **Tachdjian** (p. 406), na deformidade em **rotação externa e abdução** de ZANCOLLI, chama de PUTTI a **escápula alada nas tentativas de rotação interna**. É o mesmo ombro, com a glenoumeral travada, visto em movimentos diferentes; guarde as duas formulações e identifique qual livro a questão segue.
+
+!questoes central=mao-1361 relacionadas=mao-0409 treino=mao-2082
+conceito: PUTTI é a protrusão superior do ângulo superomedial da escápula na adução, pela contratura em abdução (Green); o Tachdjian o descreve como escápula alada nas tentativas de rotação interna, no ombro em RE e abdução.
+como: A USP-SP 2025 pediu a definição do sinal; o TEOT 2025, o nome do sinal da escápula alada na rotação interna.
+armadilha: Confundir com o corneteiro (mão à boca com abdução e RI), com KLUMPKE ou com a gorjeta de garçom (C5-C7).
+alerta: Divergência entre livros: `mao-1361` segue o Green (p. 1408, adução) e `mao-0409` segue o Tachdjian (p. 406, rotação interna). Gabaritos oficiais mantidos.
+!fim
+
+## O exame do ombro
+
+O ombro se examina **com a escápula estabilizada** (cap. 40, p. 1410, Fig. 40.19 e 40.20), porque a escápula móvel esconde a falta de rotação glenoumeral. Medem-se a rotação interna e externa passivas em adução e a 90 graus de abdução, e observa-se para onde a escápula foge: **para trás na rotação interna**, **para cima na adução completa** (PUTTI) e **para a axila** na abdução e na flexão. Palpa-se a cabeça no "ponto mole" posterior (luxação), procura-se instabilidade dinâmica, e testa-se o subescapular tenso (a rotação externa passiva em adução diminui). Peitoral maior, grande dorsal e redondo maior são palpados em abdução e rotação externa.
 
 ## MALLET modificado
 
-O **MALLET modificado** gradua cinco tarefas de 1 (sem função) a 5 (normal): **abdução global, rotação externa global, mão na nuca, mão na coluna e mão na boca** (Green, cap. 40, p. 1394; Campbell, p. 1312). Por ser muito pesado em rotação externa, acrescentou-se uma sexta categoria de **rotação interna** (no Green) ou **mão no umbigo**, de ABZUG (no Campbell). **Adução não faz parte**.
+MALLET (Rev Chir Orthop, 1972) criou uma escala para o ombro da criança maior, e o **MALLET modificado** gradua cinco tarefas de **I (sem função) a V (normal)**: **abdução global, rotação externa global, mão na nuca, mão na coluna e mão na boca** (Green, cap. 40, p. 1394 e 1395, Fig. 40.4; Campbell, p. 1312). Por ser muito pesado em rotação externa, acrescentou-se uma sexta categoria de **rotação interna** (no Green) ou **mão no umbigo**, de ABZUG (no Campbell). **Adução não faz parte.**
 
-!tabela MALLET modificado (Green, cap. 40, p. 1394; Campbell, p. 1312)
+!tabela MALLET modificado (Green, cap. 40, Fig. 40.4, p. 1395; Campbell, p. 1312)
 | Item | Grau II | Grau III | Grau IV |
 |---|---|---|---|
 | abdução global | menos de 30 graus | 30 a 90 graus | mais de 90 graus |
@@ -414,125 +929,169 @@ O **MALLET modificado** gradua cinco tarefas de 1 (sem função) a 5 (normal): *
 | mão na nuca | impossível | difícil | fácil |
 | mão na coluna | impossível | S1 | T12 |
 | mão na boca | corneteiro acentuado | corneteiro parcial | menos de 40 graus de abdução |
-| sexta categoria | rotação interna (Green) ou mão no umbigo (ABZUG, Campbell) | | |
+| rotação interna (Green) | não toca a barriga | toca com flexão do punho | palma na barriga sem flexão do punho |
 !fim
 
-O grau I é sem função e o V é normal. A soma vai até 25 nos cinco itens clássicos; transferências levam a média de **13 para 18** (Green, p. 1416).
+Para pontuar sem decorar, pense no que cada grau exige. Na mão na boca, quanto mais a criança precisa abduzir para levar a mão à boca, pior a rotação externa: corneteiro **acentuado é II**, **parcial é III**, e menos de 40 graus de abdução é IV. Na mão na coluna, chegar a **S1 é III** e a **T12 é IV**, porque subir pelas costas exige rotação interna e extensão. A soma vai até 25 nos cinco itens clássicos; as transferências levam a média de **13 para 18** (Green, p. 1416 e 1417).
 
-!questoes central=mao-0421 relacionadas=mao-0021,mao-0938,mao-1576
+!questoes central=mao-0421 relacionadas=mao-0021,mao-0938,mao-1576 treino=mao-2163,mao-3047,mao-3072
 conceito: O deslocamento posterior do úmero proximal se caracteriza pela perda da rotação externa; a RE ausente vem da lesão do supraescapular; o sinal do corneteiro é paralisia dos rotadores externos; o MALLET não tem adução.
 como: O TEPOP 2024 pediu o movimento perdido na subluxação posterior; o TARO 2018, o nervo da falta de rotação lateral; a UFG 2019, a causa do corneteiro; a USP-SP 2026, o item fora do MALLET.
 armadilha: Responder axilar (o redondo menor ajuda, mas o livro atribui a perda ao supraescapular), rotadores internos ou adução.
 !fim
 
-## O sinal de PUTTI: os livros discordam
+## Tratamento inicial: manter a amplitude
 
-O **Green** (cap. 40, p. 1408) define o PUTTI como a **protrusão superior do ângulo superomedial da escápula ao aduzir o braço**: com contratura em abdução, a glenoumeral não aduz e a escápula roda no tórax. O **Tachdjian** (p. 406), na deformidade em **RE e abdução** de ZANCOLLI, chama de PUTTI a **escápula alada nas tentativas de rotação interna**. É o mesmo ombro visto em movimentos diferentes; guarde as duas formulações.
-
-!questoes central=mao-1361 relacionadas=mao-0409
-conceito: PUTTI é a protrusão superior do ângulo superomedial da escápula na adução, pela contratura em abdução (Green); o Tachdjian o descreve como escápula alada nas tentativas de rotação interna, no ombro em RE e abdução.
-como: A USP-SP 2025 pediu a definição do sinal; o TEOT 2025, o nome do sinal da escápula alada na rotação interna.
-armadilha: Confundir com o corneteiro (mão à boca com abdução e RI), com KLUMPKE ou com a gorjeta de garçom (C5-C7).
-alerta: Divergência entre livros: `mao-1361` segue o Green (p. 1408, adução) e `mao-0409` segue o Tachdjian (p. 406, rotação interna). Gabaritos oficiais mantidos.
-!fim
+No bebê, a meta é **manter a amplitude passiva completa** do ombro enquanto o nervo se recupera (cap. 40, p. 1410). A antiga imobilização do braço nas primeiras 4 a 6 semanas "para proteger o nervo" **não é mais feita**; prefere-se a mobilização precoce, com programa domiciliar e fisioterapia se não houver recuperação no primeiro mês. Se há fratura da clavícula, imobiliza-se só até a consolidação inicial, 10 a 14 dias. Órteses em abdução e rotação externa têm adesão variável (ZANCOLLI teme lesão da fise). A **toxina botulínica** nos rotadores internos reduz a força deles e chegou a permitir a redução fechada de luxações, mas não trata a causa (o músculo que não cresce) e o efeito pode ser curto.
 
 # A displasia glenoumeral de WATERS e as cirurgias do ombro {radar=confirmado}
 
-## A classificação
+## A classificação de WATERS
 
-WATERS adaptou a classificação de SEVERIN do quadril à glenoumeral, medida na RM ou TC pela versão da glenoide e pela porcentagem da cabeça anterior à linha da escápula (Green, cap. 40, p. 1409; Campbell, p. 1314). A deformidade é **progressiva** e começa no primeiro ano.
+WATERS, SMITH e JARAMILLO (J Bone Joint Surg Am, 1998) adaptaram à glenoumeral a classificação de SEVERIN do quadril displásico, medida na RM ou na TC pela **versão da glenoide** e pela **porcentagem da cabeça anterior à linha da escápula** (Green, cap. 40, p. 1409, Fig. 40.18; Campbell, p. 1314). A versão se mede com uma linha ao longo da espinha da escápula até o centro da cabeça; o ângulo do quadrante posteromedial menos 90 graus dá a retroversão (Fig. 40.18 A). No mesmo ano, PEARL e EDGERTON (J Bone Joint Surg Am, 1998) publicaram uma classificação artrográfica semelhante.
 
-!tabela Classificação de WATERS da deformidade glenoumeral (Green, cap. 40, pp. 1409 e 1411; Campbell, p. 1314)
+!tabela Classificação de WATERS da deformidade glenoumeral (Green, cap. 40, p. 1409 e 1411; Campbell, p. 1314)
 | Tipo | Achado | Tratamento preferido |
 |---|---|---|
 | I | normal (menos de 5 graus de diferença na versão) | manter RE passiva |
-| II | retroversão aumentada, sem subluxação | liberação do subescapular (ou alongamento) + grande dorsal e redondo maior |
-| III | subluxação posterior (menos de 35% da cabeça anterior à linha escapular) | redução da articulação + transferências |
+| II | retroversão aumentada (mais de 5 graus), sem subluxação | liberação do subescapular (ou alongamento) + grande dorsal e redondo maior |
+| III | subluxação posterior com displasia posterior da glenoide (menos de 35% da cabeça anterior à linha escapular) | redução da articulação + transferências |
 | IV | falsa glenoide | redução + transferências se reconstruível; avançado: osteotomia |
 | V | achatamento da cabeça e da glenoide | osteotomia derrotativa externa do úmero |
-| VI | deformidade infantil verdadeira (luxação no lactente) | redução precoce |
+| VI | deformidade glenoumeral infantil verdadeira (luxação no lactente) | redução precoce |
 !fim
 
-No lactente, a ultrassonografia avalia a articulação sem sedação (Green, p. 1411); a RM avalia a cartilagem.
+A progressão conta a história do ombro: primeiro a glenoide **retroverte** (II), depois a cabeça **escorrega para trás** (III), depois a glenoide se **remodela em duas** (a original e uma falsa, posterior, onde a cabeça passou a apoiar, IV), e por fim as duas superfícies se **achatam** (V). O tipo VI é a luxação do lactente. Uma curiosidade útil: a legenda da Fig. 40.18 C chama de "tipo II" a imagem com subluxação posterior, que pela descrição do texto é o **tipo III**; vale o texto.
 
-## A lógica das cirurgias
+!questoes treino=mao-2162,mao-2488,mao-3039,mao-3076
+conceito: Na classificação de WATERS, o tipo II é a retroversão sem subluxação, o III é a subluxação posterior com menos de 35% da cabeça anterior à linha da escápula, o IV é a falsa glenoide e o V é o achatamento da cabeça e da glenoide.
+como: O SBCM 2022 mostrou uma tomografia com falsa glenoide posterior; o SIMÃO 2021 perguntou em que tipo aparece a falsa glenoide.
+armadilha: Pôr a falsa glenoide no tipo III, ou o achatamento no IV.
+!fim
 
-A regra é a **congruência** (Tachdjian, p. 406): ombro reduzido e cabeça redonda pedem **reequilíbrio muscular**; ombro "congruentemente incongruente" só melhora com procedimentos extra-articulares.
+## Imagem do ombro infantil
 
-**Liberações.** GILBERT, BROCKMAN e CARLIOZ alongavam o subescapular se a RE passiva não voltava aos 6 a 12 meses (Green, p. 1413); o Tachdjian (p. 409) libera o subescapular **na origem**, como CARLIOZ. Liberar demais dá contratura em RE e perda da linha média.
+A **radiografia é inútil no lactente**, porque os centros de ossificação da cabeça e da glenoide só aparecem por volta dos **6 meses** (cap. 40, p. 1411). O **ultrassom pela via posterior** (Fig. 40.22) avalia a congruência e a estabilidade dinâmica **sem sedação**, e ainda detecta fratura fisária e luxação. A artrografia é melhor que a radiografia, e a **RM** (com sedação) é a mais usada, porque mostra a cartilagem.
 
-**Transferências.** L'EPISCOPO usou o **redondo maior** e depois **redondo maior e grande dorsal** (Green, pp. 1411 e 1412). No SEVER-L'EPISCOPO (GREEN) do Campbell (pp. 1315 e 1316), alongam-se peitoral maior e subescapular e os tendões do grande dorsal e do redondo maior vão para a face lateral do úmero; HOFFER os leva ao manguito posterior. O objetivo é **a rotação lateral (externa)**, com algum ganho de abdução se a inserção for alta na tuberosidade maior (Green, pp. 1412 e 1415).
+## História das cirurgias do ombro
 
-**Redução.** Nos tipos III e IV reconstruível, **redução com transferências** (Green, p. 1416): a redução remodela a glenoide, a transferência isolada não (Campbell, p. 1314).
+A história ajuda a entender os nomes que a prova usa (cap. 40, p. 1411 e 1412). STIMSON (1888) descreveu a luxação posterior; WHITMAN (1905) separou a luxação congênita da adquirida; FAIRBANKS (1913) fez a capsulotomia anterior com liberação do subescapular; **L'EPISCOPO**, nos anos 1930, transferiu o **redondo maior** e depois **redondo maior e grande dorsal**; e HOFFER, WICKENDEN e ROPER (J Bone Joint Surg Am, 1978) levaram grande dorsal e redondo maior à **tuberosidade maior**, ganhando **rotação externa e abdução**.
 
-**Osteotomia derrotativa externa do úmero.** Para IV avançado e V, em criança maior (Green, pp. 1415 a 1417). Exige arco passivo de pelo menos 90 graus e protege o radial. O ganho é **de posição**: função equivalente às transferências, **sem aumento do arco** nem RE ativa.
+## Indicações e a lógica das cirurgias
 
-**Osteotomia da glenoide.** O Green (p. 1416) faz cunha de abertura posterior no tipo IV reconstruível, ainda em investigação; o Campbell (p. 1318) a indica (DODWELL) **acima de 4 anos em WATERS IV ou V**.
+São quatro as indicações de cirurgia do ombro (cap. 40, p. 1412): **luxação infantil**; contratura em rotação interna e adução persistente apesar do tratamento; abdução e rotação externa limitadas com a recuperação neural já estabilizada; e deformidade glenoumeral progressiva.
 
-!tabela Escolha do procedimento no ombro (Green, cap. 40, pp. 1411 a 1417; Tachdjian, pp. 406 a 409; Campbell, pp. 1314 a 1318)
+A regra que organiza tudo é a **congruência** (Tachdjian, p. 406): ombro reduzido e cabeça redonda pedem **reequilíbrio muscular** (liberar o que está curto e transferir motores para a rotação externa); ombro "congruentemente incongruente", já remodelado em falsa glenoide ou achatado, só melhora com procedimentos **extra-articulares**, que mudam a posição do braço sem consertar a articulação. O Green resume por grau (p. 1411): I e II, liberação ou alongamento com transferências, com bom resultado; II, III e IV, liberação artroscópica ou redução fechada ou aberta, que permite remodelação; IV avançado e V, osteotomia derrotativa do úmero, que melhora a função mas quase não corrige a articulação; deformidade grave da glenoide, osteotomia de abertura posterior, de papel incerto.
+
+!tabela Escolha do procedimento no ombro (Green, cap. 40, p. 1411 a 1417; Tachdjian, p. 406 a 409; Campbell, p. 1314 a 1318)
 | Situação | Procedimento | O que se ganha | O que não se ganha |
 |---|---|---|---|
 | lactente com RI passiva perdendo | fisioterapia, toxina botulínica, gesso em RE | reduz e mantém | |
 | luxação infantil | redução (aberta ou artroscópica), idealmente 3 a 12 meses | remodelação | |
 | contratura em RI, articulação congruente (I e II) | liberação ou alongamento do subescapular e peitoral + grande dorsal e redondo maior | RE e abdução ativas | |
 | subluxação (III, IV reconstruível) | redução + transferências | remodelação e RE | |
-| IV avançado, V, adolescente | osteotomia derrotativa externa do úmero | posição da mão | RE ativa, arco total |
+| IV avançado, V, criança velha demais para remodelar | osteotomia derrotativa externa do úmero | posição da mão | RE ativa, arco total |
 | displasia grave, mais de 4 anos | osteotomia de anteversão da glenoide (DODWELL) | congruência | papel ainda em estudo |
 !fim
 
-!questoes central=mao-1514 relacionadas=mao-1618,mao-1631
-conceito: Com subluxação posterior em criança pequena, faz-se liberação do subescapular, redução e transferência do grande dorsal e redondo maior; no ombro incongruente de criança maior, osteotomia derrotativa melhora a posição sem dar RE ativa; a osteotomia de anteversão da glenoide trata displasia grave.
-como: A USP-SP 2024 mostrou tomografia de criança de 2 anos com contratura em RI e corneteiro; a USP-SP 2026 comparou um paciente com ombro incongruente e outro congruente e pediu a afirmação certa sobre a osteotomia de anteversão.
-armadilha: Achar que a osteotomia do úmero devolve RE ativa por alavanca, indicar osteotomia num ombro de 2 anos ainda redutível, ou explorar o plexo aos 2 anos.
-alerta: Para `mao-1631`, o Green (p. 1416) considera a osteotomia posterior em cunha de abertura ainda em investigação no tipo IV reconstruível; o Campbell (p. 1318) a indica acima de 4 anos em WATERS IV e V. A idade-limite de 6 anos citada numa alternativa não aparece nos livros.
-!fim
+## Luxação infantil e liberação do subescapular
 
-!questoes central=mao-1239 relacionadas=mao-0520,mao-0945
+A luxação infantil é tratada assim que reconhecida, idealmente entre **3 e 12 meses** (cap. 40, p. 1413). Pela **artroscopia**, em decúbito lateral, liberam-se a cápsula anteroinferior e os ligamentos e faz-se a **liberação parcial do subescapular**, preferida à total, porque a total tira força de rotação interna e cria contratura em rotação externa; às vezes basta a parte intra-articular. Protege-se o axilar, ganha-se de 30 a 70 graus de rotação, sente-se o "clunk" da redução e confirma-se com ultrassom. A redução **aberta** é feita pela via **transaxilar**, alongando subescapular e peitoral maior e liberando a cápsula anterior e os ligamentos glenoumerais médio e inferior. Abaixo de 12 a 24 meses, transferir grande dorsal e redondo maior junto é discutível (a criança ainda pode recuperar a rotação externa), mas a transferência dá suporte posterior e evita a reluxação. Gesso por 4 a 6 semanas.
+
+Na contratura progressiva sem luxação, usa-se toxina com imobilização, o **deslizamento do subescapular** na sua origem, ou a liberação artroscópica ou aberta, com ou sem transferências (p. 1413). GILBERT, BROCKMAN e CARLIOZ (Clin Orthop, 1991) alongavam o subescapular se a rotação externa passiva não voltava entre 6 e 12 meses, em Z anterior, na junção musculotendínea por via axilar posterior, ou deslizando a origem na face anterior da escápula; o Tachdjian (p. 409) libera o subescapular **na origem**, como CARLIOZ. A artroscopia é feita antes dos 3 anos. O risco é o **alongamento excessivo**, que dá contratura em rotação externa e perda da rotação interna: a criança não consegue abotoar a roupa nem fechar o zíper na linha média (Fig. 40.25).
+
+## Transferência de grande dorsal e redondo maior
+
+A transferência leva **grande dorsal e redondo maior** para a inserção do manguito na **tuberosidade maior** (cap. 40, p. 1414 e 1415, Fig. 40.26). Em decúbito lateral, alonga-se o peitoral maior por uma incisão axilar anterior de 2 a 3 cm (e, se houver contratura do cotovelo, o coracobraquial, a cabeça curta do bíceps e o peitoral menor, protegendo o musculocutâneo). Por uma incisão axilar posterior, libera-se a inserção conjunta dos dois músculos, sem confundi-la com a cabeça longa do tríceps, protegendo o axilar e os vasos circunflexos, e fixam-se os tendões entre o supra e o infraespinal.
+
+O local da inserção decide o que se ganha (p. 1415): **inserção alta na tuberosidade** dá abdução e rotação externa em abdução, mas pouca rotação externa em adução; **inserção abaixo da fise** dá mais rotação externa em adução e menos em abdução, sem abdução ativa. As âncoras não podem lesar a fise. Antes de fechar, testa-se o PUTTI. Imobiliza-se em abdução leve (30 a 40 graus) e rotação externa acima de 40 graus por 4 a 6 semanas. O ganho esperado é **abdução acima de 60 graus, rotação externa acima de 45 graus e MALLET de 13 para 18** (p. 1416 e 1417). Mesmo músculos fracos ajudam, por efeito de tenodese passiva (p. 1417).
+
+O ponto conceitual que a prova cobra: **as transferências melhoram a abdução e a rotação externa, mas sozinhas não remodelam a articulação** (p. 1417; Campbell, p. 1314). Quem remodela é a **redução**. WATERS e BAE (J Bone Joint Surg Am, 2005) estudaram justamente o efeito das transferências e do equilíbrio de partes moles sobre o desenvolvimento da glenoumeral.
+
+!questoes central=mao-1239 relacionadas=mao-0520,mao-0945 treino=mao-3046
 conceito: SEVER-L'EPISCOPO alonga peitoral maior e subescapular e transfere grande dorsal e redondo maior para restaurar a rotação lateral (externa) do ombro.
 como: O ENARE R4 2025 e o TARO 2011 pediram o objetivo do procedimento; a UFG 2019, o tipo de deformidade de GILBERT com adução, RI, extensão do cotovelo e flexão do punho.
 armadilha: Responder abdução ou rotação medial; ou trocar o redondo maior pelo redondo menor.
 alerta: Os livros lidos não trazem a classificação de deformidades de GILBERT cobrada em `mao-0945`; descrevem a postura de ERB (adução, RI, cotovelo estendido e punho fletido) no Tachdjian (p. 405). Gabarito oficial mantido.
 !fim
 
+## Osteotomia derrotativa do úmero
+
+Quando a articulação já não é reconstruível (IV avançado, V) ou a criança é velha demais para remodelar, a **osteotomia de rotação externa do úmero** muda a posição do braço (cap. 40, p. 1415 a 1417). A cabeça achatada, sozinha, não impede a transferência, porque a parte posterior arredondada volta a articular; mas na incongruência estabelecida o ganho vem do osso. A osteotomia exige um **arco passivo de pelo menos 90 graus**, idealmente mais de 120, porque ela não cria movimento, só o desloca: a meta é levar a mão à boca, à testa e ao occipício **sem perder** o acesso aos genitais, ao abdômen, ao tórax e à outra mão.
+
+A técnica tem duas vias (p. 1416): pela **deltopeitoral**, a osteotomia é feita **logo proximal à inserção do deltoide**, protegendo o **radial**; pela **via medial** (ABZUG e colaboradores, J Pediatr Orthop, 2010), ela é feita **distal à inserção**, protegendo o ulnar e o radial. Fixam-se os parafusos proximais antes do corte, e a correção usual é de 40 a 90 graus; a rotação externa média sobe cerca de 64 graus. Para a contratura em abdução, faz-se a osteotomia em **varo** com rotação externa (Fig. 40.29).
+
+O ganho é **de posição**: a função fica equivalente à das transferências, **sem aumento do arco total** nem rotação externa ativa nova (p. 1417; WATERS e BAE, J Bone Joint Surg Am, 2006). Os erros também têm nome: corrigir demais dá contratura em rotação externa, tratada com osteotomia de rotação interna com ressecção de segmento (o radial fica tenso); e o corneteiro persistente é falha de escolha, tratada com osteotomia em varo e rotação externa (p. 1417). A função pode cair com o crescimento, e há recidiva.
+
+A **osteotomia da glenoide** é a outra opção extra-articular (Green, p. 1416): uma cunha de abertura posterior no tipo IV reconstruível, ainda em investigação. O Campbell (p. 1318) indica a osteotomia de anteversão da glenoide, de DODWELL e colaboradores (J Bone Joint Surg Am, 2012), **acima de 4 anos em WATERS IV ou V**.
+
+## A preferência dos autores no ombro
+
+O algoritmo dos autores (cap. 40, p. 1416) começa pela suspeita clínica: perda rápida da rotação externa passiva, segmento umeral aparentemente curto, pregas axilares assimétricas ou cabeça palpável atrás pedem **ultrassom**.
+
+- Reduzido, mas subluxável: fisioterapia.
+- Subluxado ou luxado, mas redutível: **toxina botulínica e gesso em rotação externa**.
+- Luxado irredutível: RM e **redução cirúrgica**, em geral **com transferência**, para evitar a reluxação.
+- Contratura sem melhora após 3 meses de terapia: RM.
+- Tipo II: liberação com grande dorsal e redondo maior.
+- Tipos III e IV: **redução formal com transferências**.
+- **IV avançado e V em qualquer idade, ou criança velha demais para remodelar: osteotomia de rotação externa do úmero**, comum no adolescente.
+- Osteotomia de abertura posterior da glenoide no IV reconstruível: em investigação.
+
+O pós-operatório das transferências usa gesso ou órtese por 4 a 6 semanas em abdução leve e rotação externa, com molde escapular; o da osteotomia, tipoia por 4 semanas (p. 1416 e 1417).
+
+!questoes central=mao-1514 relacionadas=mao-1618,mao-1631 treino=mao-2249,mao-2250
+conceito: Com subluxação posterior em criança pequena, faz-se liberação do subescapular, redução e transferência do grande dorsal e redondo maior; no ombro incongruente de criança maior, osteotomia derrotativa melhora a posição sem dar RE ativa; a osteotomia de anteversão da glenoide trata displasia grave.
+como: A USP-SP 2024 mostrou tomografia de criança de 2 anos com contratura em RI e corneteiro; a USP-SP 2026 comparou um paciente com ombro incongruente e outro congruente e pediu a afirmação certa sobre a osteotomia de anteversão.
+armadilha: Achar que a osteotomia do úmero devolve RE ativa por alavanca, indicar osteotomia num ombro de 2 anos ainda redutível, ou explorar o plexo aos 2 anos.
+alerta: Para `mao-1631`, o Green (p. 1416) considera a osteotomia posterior em cunha de abertura ainda em investigação no tipo IV reconstruível; o Campbell (p. 1318) a indica acima de 4 anos em WATERS IV e V. A idade-limite de 6 anos citada numa alternativa não aparece nos livros.
+!fim
+
 # Cotovelo, antebraço e mão {radar=confirmado}
 
 ## Cotovelo
 
-A falta de bíceps pode ser **cocontração** (toxina no tríceps resolve) ou real; aí há transferência nervosa tardia, **STEINDLER**, grande dorsal, peitoral maior ou gracilis livre (Green, cap. 40, p. 1417). A **contratura em flexão** atinge 62% a 89% e é paradoxal, atribuída ao crescimento deficiente do braquial denervado (p. 1418).
+No lactente, a falta do bíceps é o principal indicador da cirurgia nervosa; a longo prazo, porém, a falta de flexão antigravitacional do cotovelo é incomum (cap. 40, p. 1417 e 1418). Antes de chamar de falha, é preciso afastar a **cocontração**: a reinervação aberrante faz o tríceps contrair junto com o bíceps, e o cotovelo não se move. A **toxina botulínica no tríceps** resolve, e o ganho vai além do tempo de efeito da toxina. Na falha verdadeira, há a transferência nervosa tardia, as tendinosas (peitoral maior, grande dorsal, tríceps, STEINDLER) e o grácil livre de DOI, inervado por intercostal, acessório ou C7 contralateral, com arco médio de 125 graus (p. 1418).
+
+A **contratura em flexão do cotovelo** é muito frequente: **62% a 89%** dos casos não resolvidos (p. 1418 e 1419). É leve de 10 a 30 graus, moderada de 30 a 60 e grave de 60 a 90; é igual na lesão alta e na global; e é paradoxal, porque os flexores costumam ser **mais fracos** que o tríceps. A causa, de novo, é o **crescimento prejudicado dos flexores denervados** (o braquial). Trata-se com fisioterapia, alongamento e órtese noturna; a maioria fica abaixo de 30 graus, sem atrapalhar a vida diária. Acima de 60 graus pode ser cirúrgica, mas o alongamento anterior do bíceps e do braquial recidiva muito, e os autores preferem operar na **adolescência**.
 
 ## Antebraço
 
-Lesões globais e baixas deixam **flexão do cotovelo e supinação**, porque o bíceps age sem oposição (Campbell, p. 1314). Com pronação passiva preservada, **o tendão do bíceps é alongado em Z e redirecionado em torno do colo do rádio**, passando a **pronar** (Green, p. 1419; Tachdjian, p. 410). Supinação fixa pede membrana interóssea ou osteotomias, com o antebraço em leve pronação.
+A limitação da rotação do antebraço é comum. Numa série, a perda da **pronação** ativa foi mais comum que a da supinação, e ela se correlacionou com MALLET pior e com NARAKAS IV (cap. 40, p. 1419). Corrigir o ombro melhora o antebraço, porque adução, rotação externa e supinação são movimentos complementares, e raramente se opera só pela supinação fraca.
 
-!tabela Sequelas distais e soluções (Green, cap. 40, pp. 1417 a 1420; Tachdjian, pp. 406 e 410; Campbell, p. 1314)
+O **global** tem uma postura própria: **flexão do cotovelo e supinação do antebraço**, muitas vezes com contratura, e o punho contraído em extensão, porque não há flexores antigravitacionais (p. 1419). A criança usa o antebraço só como apoio, e a postura incomoda pela estética. O mecanismo é o bíceps agindo sem oposição (Campbell, p. 1314). Com pronação passiva preservada, **o tendão do bíceps é alongado em Z e redirecionado em torno do colo do rádio**, protegendo o interósseo posterior, e passa a **pronar** (Green, p. 1419; Tachdjian, p. 410); o braquiorradial também pode ser redirecionado. Supinação **fixa** pede liberação da membrana interóssea (ZANCOLLI), osteotomia distal do rádio com redirecionamento do bíceps (GILBERT) ou osteotomia dos dois ossos (ulna proximal e rádio distal), deixando o antebraço entre neutro e 20 graus de pronação. A luxação da cabeça do rádio não impede a correção; a luxação da radioulnar distal pode exigir o antebraço de osso único. Se a extensão do punho ficar fraca depois de pronar, transfere-se o flexor ulnar do carpo para o extensor radial curto do carpo.
+
+!tabela Sequelas distais e soluções (Green, cap. 40, p. 1417 a 1420; Tachdjian, p. 406 e 410; Campbell, p. 1314)
 | Sequela | Causa | Solução |
 |---|---|---|
-| sem flexão do cotovelo | bíceps não recuperou | transferência nervosa tardia; STEINDLER, grande dorsal, peitoral maior, gracilis livre |
+| sem flexão do cotovelo | bíceps não recuperou | transferência nervosa tardia; STEINDLER, grande dorsal, peitoral maior, grácil livre |
 | cocontração | reinervação aberrante | toxina botulínica no tríceps |
-| contratura em flexão do cotovelo | crescimento deficiente do braquial | gesso, órtese; cirurgia acima de 60 graus |
+| contratura em flexão do cotovelo | crescimento deficiente do braquial | fisioterapia, órtese; cirurgia acima de 60 graus, de preferência na adolescência |
 | supinação com pronação passiva | bíceps sem oposição (lesão global ou baixa) | redirecionar o bíceps em torno do rádio |
 | supinação fixa | contratura e deformidade óssea | membrana interóssea, osteotomia do rádio e da ulna |
 | desvio ulnar do punho | extensor ou flexor ulnar do carpo sem oposição | transferir para o extensor radial curto |
 | extensão fraca dos dedos | C7 incompleto | flexor ulnar do carpo para os extensores |
 !fim
 
-!questoes central=mao-1329
+!questoes central=mao-1329 treino=mao-3040
 conceito: Na hipersupinação do antebraço, o bíceps alongado em Z e redirecionado em torno do rádio passa a ser pronador.
 como: A USP-SP 2025 pediu a transferência que auxilia o vetor de pronação.
 armadilha: Escolher transferências de extensores ou do pronador quadrado; o motor é o próprio bíceps.
 alerta: Em `mao-1329`, os três livros descrevem o redirecionamento do tendão do bíceps em torno do colo do rádio, não uma transferência do bíceps para o braquial; o gabarito oficial (C) foi mantido como a alternativa que envolve o bíceps.
 !fim
 
-## Mão
+## Punho e mão
 
-No ERB a mão é normal; na lesão baixa há poucos doadores, e por isso o tronco inferior deve ser reinervado já na microcirurgia (Green, p. 1419).
+Na maioria das crianças a lesão é alta, e o punho e a mão são quase normais; o C7 incompleto é compensado, e a extensão fraca dos dedos se resolve transferindo o **flexor ulnar do carpo para os extensores dos dedos** (cap. 40, p. 1419). Na mão grave, as opções tardias são poucas, e por isso **o tronco inferior deve ser reinervado já na cirurgia primária**, como visto na reconstrução do lactente. O punho pode ser estabilizado por capsulodese, por fusão da epífise do rádio ao carpo (no esqueleto imaturo) ou por artrodese (no maduro); a dupla de grácil já foi feita em crianças muito pequenas, com bom resultado. O **desvio ulnar** do punho, por extensor ou flexor ulnar do carpo sem oposição, corrige-se transferindo-os para o extensor radial curto, junto com as correções do cotovelo e do antebraço (p. 1419 e 1420).
+
+A sensibilidade também não sai ilesa: num estudo com monofilamentos em 95 crianças acima de 6 anos, ela estava alterada em 7 de 64 com C5-C6, 5 de 19 com C5-C7 e 4 de 12 com lesão total; noutra série, era normal em só 69% dos C5-C6 (p. 1420 e 1421).
 
 # Fechamento {radar=fundamento}
 
-O plexo é uma árvore com regras fixas: C5 e C6 formam o tronco superior, todas as divisões posteriores formam o fascículo posterior, os fascículos se nomeiam pela artéria axilar, e os ramos que saem antes dos troncos (escapular dorsal, torácico longo, contribuição ao frênico) são os delatores da lesão pré-ganglionar. O gânglio da raiz dorsal separa o reparável do irreparável: antes dele, só transferência; depois dele, enxerto ou transferência.
+O plexo é uma árvore com regras fixas. C5 e C6 formam o tronco superior, e no ponto de ERB sai o supraescapular; todas as divisões posteriores formam o fascículo posterior, que dá o subescapular superior, o toracodorsal, o subescapular inferior, o axilar e o radial; os fascículos se nomeiam pela artéria axilar; e os ramos que saem antes dos troncos (escapular dorsal, torácico longo, contribuição ao frênico) são os delatores da lesão proximal. O gânglio da raiz dorsal, dentro do forame, separa o reparável do irreparável: antes dele, só transferência; depois dele, enxerto ou transferência. HORNER, romboide e serrátil paralisados, diafragma elevado, paraespinais atróficos, dor em membro anestésico e SNAP preservado na pele sem sensibilidade contam a mesma história: avulsão.
 
-No adulto, a lesão total é a mais comum, C8-T1 avulsionam e C5 costuma romper fora do forame. Explora-se o ferimento cortante na hora, o pan-plexo com avulsão aos 2 a 3 meses e o restante entre 3 e 6 meses. Reconstrói-se primeiro a flexão do cotovelo, depois o ombro, depois a sensibilidade da mão, e cada alvo tem seu doador: OBERLIN para o bíceps, acessório para o supraescapular, tríceps para o axilar, intercostais quando não há mais nada.
+No adulto, a energia decide a extensão; a lesão total é a mais comum; C8-T1 avulsionam e C5 costuma romper fora do forame, porque está mais bem ancorada. Explora-se o corte limpo na hora, o contuso em 3 a 4 semanas, o pan-plexo com avulsão aos 2 a 3 meses e o restante entre 3 e 6 meses; depois de 1 ano, só transferências distais (até 18 meses) e reconstrução secundária. Reconstrói-se primeiro a flexão do cotovelo, depois o ombro, depois a sensibilidade da mão, e cada alvo tem o seu doador: OBERLIN para o bíceps (com C8-T1 íntegros), acessório para o supraescapular (poupando o trapézio superior), cabeça longa do tríceps para a divisão anterior do axilar (no espaço quadrangular), intercostais sem enxerto quando não há mais nada, e o grácil livre, com o tríceps como antagonista, para a preensão. No ombro tardio, a rotação externa vale mais que a abdução; a artrodese, em 30 a 40 graus de abdução e flexão e 30 de rotação interna, exige o trapézio.
 
-Na criança, a distocia de ombro no bebê grande lesa o tronco superior, mais à direita; NARAKAS gradua de C5-C6 (que quase sempre recupera) até o membro flácido com HORNER; o bíceps decide a microcirurgia; e o ombro, se a rotação externa não volta, trava em rotação interna, retroverte a glenoide e luxa para trás. Enquanto a articulação é congruente, liberar e transferir; quando já não é, osteotomizar.
+Na criança, a distocia de ombro no bebê grande lesa o tronco superior, mais à direita; o pélvico arranca C5-C6 no Green; NARAKAS gradua de C5-C6 (que quase sempre recupera) até o membro flácido com HORNER; o exame seriado, e não a ENMG, decide; e o bíceps é o relógio: 3 meses no global com HORNER, 5 a 6 meses na lesão alta, teste do biscoito aos 9 meses. Com avulsões extensas, a mão vem primeiro, porque o bebê ainda pode recuperá-la. E o ombro, se a rotação externa não volta, trava em rotação interna porque o músculo denervado não cresce, retroverte a glenoide e luxa para trás. Enquanto a articulação é congruente, liberar, reduzir e transferir; quando já não é, osteotomizar, sabendo que a osteotomia muda a posição e não o arco.
 
-> **Na prova:** C5-C6 = tronco superior; divisões posteriores = fascículo posterior (toracodorsal, axilar, radial); escapular dorsal C5 (romboide), torácico longo C5-C7 (serrátil); HORNER = ptose, miose, anidrose, enoftalmia, avulsão C8-T1 e mau prognóstico; diafragma elevado e romboide/serrátil paralisados = pré-ganglionar; pan-plexo é o mais comum no adulto; cotovelo antes do ombro; OBERLIN exige C8-T1; acessório para supraescapular = supra e infraespinal; LEECHAVENGVONGS = cabeça longa do tríceps para divisão anterior do axilar; NARAKAS II = C5-C7, I recupera em 90%; bíceps aos 3 meses (global com HORNER) ou 5 a 6 meses (alto); MALLET sem adução; RAIMONDI III bom; SEVER-L'EPISCOPO = rotação externa; ombro incongruente = osteotomia derrotativa sem ganho de RE ativa.
+> **Na prova:** C5-C6 = tronco superior, ponto de ERB = supraescapular; divisões posteriores = fascículo posterior (toracodorsal, axilar, radial); escapular dorsal C5 (romboide), torácico longo C5-C7 (serrátil); HORNER = ptose, miose, anidrose, enoftalmia, avulsão C8-T1 e mau prognóstico; SNAP preservado com anestesia = avulsão; pan-plexo é o mais comum no adulto; cotovelo antes do ombro; OBERLIN exige C8-T1; acessório para supraescapular = supra e infraespinal; LEECHAVENGVONGS = cabeça longa do tríceps para divisão anterior do axilar; artrodese do ombro 30 a 40 de abdução e flexão e 30 de RI; NARAKAS II = C5-C7, I recupera em 90%; bíceps aos 3 meses (global com HORNER) ou 5 a 6 meses (alto); MALLET sem adução; RAIMONDI III bom; WATERS IV = falsa glenoide; SEVER-L'EPISCOPO = rotação externa; ombro incongruente = osteotomia derrotativa sem ganho de RE ativa.
