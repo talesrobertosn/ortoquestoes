@@ -48,4 +48,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0263 | Ângulo glenopolar na fratura da escápula, propaganda do comentário (questão no notebook, comentário real em iPhones e notebook) | posts/2026-11-13-glenopolar (feed e stories) |
 | trauma-0179 | Fratura de BENNETT: o abdutor longo do polegar desloca a diáfise (TEOT 2022), cartaz de cinema "o cabo de guerra" | posts/2026-11-15-cartaz-bennett (stories) |
 | ombro-cotovelo-0249 | Complexo ligamentar lateral do cotovelo: ligamento colateral ulnar lateral nº 3 × ligamento anular nº 2 (TEOT 2024), serralheria da dobradiça | posts/2026-11-17-serralheria-cotovelo (stories) |
-| trauma-0753 | Incidência de HEINIG da esternoclavicular: feixe horizontal tangente, chassi no ombro oposto (TEOT 2025), vidro claro com espaço para enquete | posts/2026-11-18-vidro-heinig (stories) |
+| trauma-0753 | Incidência de HEINIG da esternoclavicular: feixe horizontal tangente, chassi no ombro oposto (TEOT 2025), tela do celular (bloqueio, notificações e central de controle) com área para enquete | posts/2026-11-18-vidro-heinig (stories) |

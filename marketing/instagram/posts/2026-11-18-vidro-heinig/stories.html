@@ -1,187 +1,123 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><title>Vidro claro — HEINIG, TEOT 2025 (stories)</title>
-<!-- Stories "Vidro claro" (pedido do Tales, 18/11/2026): 3 stories, sem temática, cores do site (branco e verde),
-     acabamento de vidro suave (liquid glass), área livre (sem caixa) para a enquete A/B/C/D no story 1 (o formato que deu
-     certo no story do osteoma osteoide), trecho do comentário com o livro e convite ao site gratuito.
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Tela do celular — HEINIG, TEOT 2025 (stories)</title>
+<!-- Stories "Tela do celular" (pedido do Tales, 18/11/2026): tela de bloqueio com a notificação da questão (story 1),
+     central de notificações com a resposta (story 2) e central de controle com o que o site tem (story 3), sobre um
+     papel de parede em degradê nas cores do site. Área livre, sem caixa, para a enquete A/B/C/D no story 1.
      Questão real: trauma-0753 (TEOT 2025), gabarito oficial B (HEINIG).
-     Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 32, Fig. 32-13 (a mesma figura da prova);
-     Campbell's Operative Orthopaedics, 15ª ed., cap. 52, p. 2210 (GARTH). Sem desenho de anatomia próprio. -->
+     Fontes: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 32, Fig. 32-13 (a mesma figura da prova);
+     Campbell's Operative Orthopaedics, 15ª ed., cap. 52, p. 2210 (GARTH). Sem logotipo de outra empresa. -->
 <style>
 @font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
 @font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
 
 :root {
-  --tinta: #1d3532;
-  --tinta2: #4c6460;
-  --tinta3: #7d918d;
+  --tinta: #1b2b29;
+  --tinta2: #3f524f;
+  --cinza: #6b7a77;
   --verde: #14655E;
   --verde2: #00806f;
   --ardosia: #243b47;
-  --menta: #cfe9df;
   --ouro: #F4CF7C;
-  --ouro2: #c9952c;
 }
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #e6ebe9; font-family: Inter, sans-serif; }
+body { background: #111; font-family: Inter, sans-serif; }
 
-section {
-  position: relative; overflow: hidden;
-  width: 1080px; height: 1920px; margin-bottom: 40px;
-  color: var(--tinta);
-  background: #f5f9f7;
-  isolation: isolate;
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; isolation: isolate; color: #fff; }
+
+/* Papel de parede: degradê em malha nas cores do site */
+.parede { position: absolute; inset: -40px; z-index: -2;
+  background:
+    radial-gradient(60% 40% at 12% 8%, #0c3a35 0%, rgba(12,58,53,0) 70%),
+    radial-gradient(55% 35% at 95% 14%, #243b47 0%, rgba(36,59,71,0) 72%),
+    radial-gradient(70% 45% at 85% 52%, #3fae96 0%, rgba(63,174,150,0) 70%),
+    radial-gradient(60% 40% at 8% 62%, #128070 0%, rgba(18,128,112,0) 72%),
+    radial-gradient(70% 38% at 30% 100%, #f2d79a 0%, rgba(242,215,154,0) 70%),
+    radial-gradient(60% 40% at 95% 98%, #9fdcc8 0%, rgba(159,220,200,0) 70%),
+    linear-gradient(170deg, #0f4c45 0%, #17705f 45%, #5fbfa5 78%, #e9dcae 100%);
 }
+.parede.b { background:
+    radial-gradient(60% 40% at 88% 6%, #0c3a35 0%, rgba(12,58,53,0) 70%),
+    radial-gradient(55% 35% at 4% 18%, #243b47 0%, rgba(36,59,71,0) 72%),
+    radial-gradient(70% 45% at 15% 55%, #3fae96 0%, rgba(63,174,150,0) 70%),
+    radial-gradient(60% 40% at 92% 66%, #128070 0%, rgba(18,128,112,0) 72%),
+    radial-gradient(70% 38% at 75% 100%, #f2d79a 0%, rgba(242,215,154,0) 70%),
+    radial-gradient(60% 40% at 5% 98%, #9fdcc8 0%, rgba(159,220,200,0) 70%),
+    linear-gradient(190deg, #0f4c45 0%, #17705f 45%, #5fbfa5 78%, #e9dcae 100%); }
+/* Central de controle: a mesma parede, desfocada e escurecida */
+.parede.cc { filter: blur(26px) brightness(.62) saturate(1.2); }
+.grao { position: absolute; inset: 0; z-index: -1; opacity: .07; mix-blend-mode: overlay;
+  background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 5px 5px; }
 
-/* Fundo: papel branco com manchas de verde gesso, desfocadas, para o vidro ter o que refratar. */
-.fundo { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-.fundo i { position: absolute; border-radius: 50%; filter: blur(90px); }
-.fundo .m1 { width: 780px; height: 780px; left: -260px; top: -180px; background: #bfe5d6; }
-.fundo .m2 { width: 640px; height: 640px; right: -240px; top: 520px; background: #93d1bd; opacity: .8; }
-.fundo .m3 { width: 900px; height: 700px; left: -200px; bottom: -300px; background: #d4ede4; }
-.fundo .m4 { width: 380px; height: 380px; right: 80px; top: 90px; background: #e9f5ef; }
-.fundo .m5 { width: 340px; height: 340px; left: 120px; top: 1040px; background: #7cc6ae; opacity: .5; }
-.fundo::after { /* grão muito leve, para não parecer gradiente chapado */
-  content: ''; position: absolute; inset: 0; opacity: .05;
-  background-image: radial-gradient(#0b3b35 1px, transparent 1px); background-size: 6px 6px;
-}
+/* Tela de bloqueio */
+.data { position: absolute; left: 0; right: 0; text-align: center; font: 600 36px/1 Jakarta; letter-spacing: .2px; color: rgba(255,255,255,.9); }
+.hora { position: absolute; left: 0; right: 0; text-align: center; font: 700 200px/1 Jakarta; letter-spacing: -7px; color: rgba(255,255,255,.94);
+  text-shadow: 0 6px 30px rgba(0,40,35,.25); }
+.cadeado { position: absolute; left: 50%; width: 30px; height: 40px; margin-left: -15px; }
 
-/* Vidro */
-.vidro {
-  position: absolute;
-  background: linear-gradient(150deg, rgba(255,255,255,.72), rgba(255,255,255,.38));
-  backdrop-filter: blur(28px) saturate(170%);
-  -webkit-backdrop-filter: blur(28px) saturate(170%);
-  border: 1.5px solid rgba(255,255,255,.9);
-  border-radius: 44px;
-  box-shadow:
-    0 30px 70px -30px rgba(20,101,94,.35),
-    0 2px 0 rgba(255,255,255,.9) inset,
-    0 -1px 0 rgba(20,101,94,.06) inset;
-}
-.vidro::before { /* reflexo no topo */
-  content: ''; position: absolute; inset: 0; border-radius: inherit;
-  background: radial-gradient(90% 40% at 30% 0%, rgba(255,255,255,.7), rgba(255,255,255,0) 70%);
-  pointer-events: none;
-}
+/* Notificação (vidro claro, como as do sistema) */
+.notif { position: absolute; left: 40px; right: 40px; border-radius: 46px; padding: 30px 34px 32px;
+  background: rgba(246,250,248,.74);
+  backdrop-filter: blur(40px) saturate(180%); -webkit-backdrop-filter: blur(40px) saturate(180%);
+  box-shadow: 0 30px 60px -30px rgba(0,30,26,.55), 0 1px 0 rgba(255,255,255,.7) inset;
+  color: var(--tinta); }
+.notif .cab { display: flex; align-items: center; gap: 18px; }
+.notif .cab svg { width: 62px; height: 62px; flex: none; border-radius: 15px; }
+.notif .app { font: 700 26px/1 Jakarta; color: var(--tinta); }
+.notif .quando { margin-left: auto; font: 500 24px/1 Inter; color: var(--cinza); }
+.notif h2 { font: 800 36px/1.18 Jakarta; letter-spacing: -.6px; color: var(--tinta); }
+.notif p { font: 400 28px/1.38 Inter; color: var(--tinta2); }
+.notif p b { color: var(--tinta); font-weight: 700; }
+.anexo { border-radius: 26px; overflow: hidden; background: #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.05) inset; }
+.anexo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.fonte { font: 400 19px/1.3 Inter; color: var(--cinza); }
 
-/* Topo: marca */
-.topo { position: absolute; left: 64px; right: 64px; top: 230px; display: flex; align-items: center; gap: 18px; }
-.topo svg { width: 64px; height: 64px; flex: none; filter: drop-shadow(0 8px 16px rgba(20,101,94,.25)); }
-.topo .nome { font: 700 34px/1 Jakarta; letter-spacing: -.5px; color: var(--verde); }
-.topo .pilula {
-  margin-left: auto; padding: 14px 24px; border-radius: 999px;
-  font: 700 23px/1 Jakarta; letter-spacing: 2px; text-transform: uppercase; color: var(--verde);
-  background: rgba(255,255,255,.6); border: 1.5px solid rgba(255,255,255,.95);
-  backdrop-filter: blur(16px); box-shadow: 0 10px 24px -14px rgba(20,101,94,.5);
-}
+/* Botões de ação da notificação: as alternativas */
+.acoes { position: absolute; left: 40px; right: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.acao { display: flex; align-items: center; gap: 20px; height: 104px; padding: 0 26px; border-radius: 34px;
+  background: rgba(246,250,248,.66); backdrop-filter: blur(36px) saturate(180%);
+  box-shadow: 0 20px 40px -26px rgba(0,30,26,.6), 0 1px 0 rgba(255,255,255,.7) inset;
+  font: 700 37px/1 Jakarta; letter-spacing: -.5px; color: var(--tinta); }
+.acao .l { width: 58px; height: 58px; flex: none; border-radius: 50%; display: grid; place-items: center;
+  font: 800 28px/1 Jakarta; color: #fff; background: var(--verde); }
+.acao.certa { background: rgba(255,246,220,.92); }
+.acao.certa .l { background: linear-gradient(160deg, #f8dc92, #dcaa45); color: #4a3a12; }
 
-.rotulo { font: 700 24px/1 Jakarta; letter-spacing: 3.5px; text-transform: uppercase; color: var(--verde2); }
-h1 { font: 800 74px/1.02 Jakarta; letter-spacing: -2.4px; color: var(--ardosia); }
-h1 em { font-style: normal; color: var(--verde2); }
-p { font: 400 31px/1.42 Inter; color: var(--tinta2); }
-b { font-weight: 700; color: var(--tinta); }
+/* Dica da enquete: sem caixa */
+.dica { position: absolute; left: 0; right: 0; text-align: center; color: #fff; }
+.dica .t { font: 700 25px/1 Jakarta; letter-spacing: 4px; text-transform: uppercase; text-shadow: 0 2px 12px rgba(0,40,35,.35); }
+.dica .s { margin-top: 12px; font: 500 24px/1 Inter; color: rgba(255,255,255,.85); }
+.dica svg { display: block; margin: 16px auto 0; width: 36px; height: 20px; opacity: .8; }
 
-/* Placa branca onde a figura fica, como num negatoscópio claro */
-.placa {
-  position: absolute; background: #fff; border-radius: 30px; overflow: hidden;
-  box-shadow: 0 1px 0 rgba(20,101,94,.06), 0 18px 40px -26px rgba(20,101,94,.55);
-}
-.placa img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.fonte { font: 400 19px/1.35 Inter; color: var(--tinta3); }
+/* Grupo de notificações empilhadas */
+.atras { position: absolute; border-radius: 40px; backdrop-filter: blur(30px); }
+.titulo-centro { position: absolute; left: 56px; right: 56px; display: flex; align-items: baseline; justify-content: space-between; }
+.titulo-centro h3 { font: 800 50px/1 Jakarta; letter-spacing: -1px; color: #fff; }
+.titulo-centro span { font: 600 26px/1 Inter; color: rgba(255,255,255,.8); }
+.letra { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; margin-right: 12px;
+  font: 800 22px/1 Jakarta; color: var(--verde); background: rgba(20,101,94,.12); vertical-align: -10px; }
 
-/* Alternativas escritas */
-.alts { position: absolute; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.alt {
-  position: relative; display: flex; align-items: center; gap: 22px;
-  height: 108px; padding: 0 26px; border-radius: 30px;
-  background: linear-gradient(150deg, rgba(255,255,255,.8), rgba(255,255,255,.45));
-  backdrop-filter: blur(22px) saturate(160%);
-  border: 1.5px solid rgba(255,255,255,.95);
-  box-shadow: 0 16px 36px -24px rgba(20,101,94,.55), 0 2px 0 #fff inset;
-  font: 700 38px/1 Jakarta; letter-spacing: -.6px; color: var(--ardosia);
-}
-.alt .l {
-  width: 62px; height: 62px; flex: none; border-radius: 50%;
-  display: grid; place-items: center; font: 800 30px/1 Jakarta; color: #fff;
-  background: linear-gradient(160deg, #1d8a7c, #14655E);
-  box-shadow: 0 6px 14px -6px rgba(20,101,94,.7), 0 1px 0 rgba(255,255,255,.4) inset;
-}
-.alt.certa { background: linear-gradient(150deg, #fff8e4, #fbe9b8); border-color: #fff3cf; }
-.alt.certa .l { background: linear-gradient(160deg, #f8dc92, #e2b24f); color: #4a3a12; }
-.alt.apagada { opacity: .5; }
-
-/* Espaço da enquete: nada desenhado, só a área livre e uma dica discreta no topo dela */
-.cheiro { position: absolute; left: 0; right: 0; text-align: center; }
-.cheiro .dica { display: inline-flex; align-items: center; gap: 14px;
-  font: 700 23px/1 Jakarta; letter-spacing: 3.5px; text-transform: uppercase; color: var(--verde2); }
-.cheiro .dica::before, .cheiro .dica::after { content: ''; width: 46px; height: 2px; border-radius: 2px;
-  background: linear-gradient(90deg, rgba(0,128,111,0), rgba(0,128,111,.45)); }
-.cheiro .dica::after { transform: scaleX(-1); }
-.cheiro svg { display: block; margin: 14px auto 0; width: 34px; height: 20px; opacity: .55; }
-
-/* Rodapé */
-.rodape { position: absolute; left: 64px; right: 64px; bottom: 300px; text-align: center; }
-.rodape .site { font: 800 36px/1 Jakarta; letter-spacing: -.4px; color: var(--verde); }
-.rodape .sub { margin-top: 12px; font: 500 25px/1.3 Inter; color: var(--tinta2); }
-
-/* Citação do comentário */
-.citacao { font: 500 33px/1.42 Inter; color: var(--tinta); }
-.citacao mark { background: linear-gradient(transparent 58%, rgba(244,207,124,.75) 58%); color: inherit; padding: 0 2px; }
-.livro { display: flex; align-items: center; gap: 16px; }
-.livro .lombada { width: 14px; height: 64px; border-radius: 4px; background: linear-gradient(180deg, #1d8a7c, #0e4d47); flex: none; }
-.livro .t1 { font: 700 25px/1.2 Jakarta; color: var(--ardosia); }
-.livro .t2 { font: 400 21px/1.3 Inter; color: var(--tinta3); margin-top: 4px; }
-
-.pq { display: grid; grid-template-columns: 62px 1fr; gap: 16px 22px; align-items: center; align-items: start; }
-.pq .l { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
-  font: 800 25px/1 Jakarta; color: var(--verde); background: rgba(20,101,94,.1); margin-top: 2px; }
-.pq p { font-size: 27px; line-height: 1.38; }
-
-/* Celular de vidro (story 3) */
-.tela { position: absolute; border-radius: 64px; padding: 22px;
-  background: linear-gradient(150deg, rgba(255,255,255,.7), rgba(255,255,255,.3));
-  border: 2px solid rgba(255,255,255,.95);
-  backdrop-filter: blur(30px) saturate(170%);
-  box-shadow: 0 50px 90px -40px rgba(20,101,94,.55), 0 2px 0 #fff inset;
-}
-.tela .dentro { width: 100%; height: 100%; border-radius: 46px; background: #fbfdfc; overflow: hidden; position: relative;
-  box-shadow: 0 0 0 1.5px rgba(20,101,94,.08) inset; }
-.tela .ilha { position: absolute; left: 50%; top: 18px; width: 150px; height: 40px; margin-left: -75px; border-radius: 22px; background: #1b2624; }
-.cab { position: absolute; left: 34px; right: 34px; top: 82px; display: flex; align-items: center; gap: 14px; }
-.cab .chip { padding: 9px 16px; border-radius: 999px; font: 700 18px/1 Jakarta; letter-spacing: 1.5px; text-transform: uppercase; }
-.chip.ok { background: #e3f3ed; color: var(--verde); }
-.chip.prova { background: #eef2f1; color: var(--tinta2); }
-.coment { position: absolute; left: 34px; right: 34px; }
-.coment h3 { font: 800 30px/1.15 Jakarta; color: var(--ardosia); letter-spacing: -.4px; }
-.coment p { font-size: 22.5px; line-height: 1.5; color: #3f5652; }
-.coment p + p { margin-top: 14px; }
-table { width: 100%; border-collapse: separate; border-spacing: 0; font: 400 21px/1.3 Inter; color: #3f5652; }
-th { text-align: left; font: 700 17px/1 Jakarta; letter-spacing: 1.5px; text-transform: uppercase; color: var(--verde2); padding: 0 12px 12px; }
-td { padding: 13px 12px; border-top: 1.5px solid #e4ece9; vertical-align: top; }
-td:last-child { font-weight: 600; color: var(--ardosia); }
-tr.dest td { background: #fff7e0; }
-tr.dest td:first-child { border-radius: 14px 0 0 14px; }
-tr.dest td:last-child { border-radius: 0 14px 14px 0; }
-.esmaecer { position: absolute; left: 0; right: 0; bottom: 0; height: 60px; background: linear-gradient(rgba(251,253,252,0), #fbfdfc 80%); }
-
-.botao {
-  position: absolute; display: flex; align-items: center; justify-content: center; gap: 16px;
-  height: 116px; border-radius: 999px;
-  font: 800 40px/1 Jakarta; letter-spacing: -.5px; color: #fff;
-  background: linear-gradient(170deg, #1f9584 0%, #14655E 100%);
-  box-shadow: 0 26px 44px -22px rgba(20,101,94,.85), 0 2px 0 rgba(255,255,255,.35) inset, 0 -3px 0 rgba(0,0,0,.08) inset;
-}
-.botao::after { content: ''; position: absolute; left: 30px; right: 30px; top: 6px; height: 44%; border-radius: 999px;
-  background: linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,0)); }
-
-.lista { display: grid; gap: 18px; }
-.lista div { display: flex; gap: 18px; align-items: flex-start; font: 400 29px/1.35 Inter; color: var(--tinta2); }
-.lista svg { width: 36px; height: 36px; flex: none; margin-top: 2px; }
+/* Central de controle */
+.cc-cab { position: absolute; left: 74px; right: 74px; }
+.cc-cab .r { font: 700 24px/1 Jakarta; letter-spacing: 3.5px; text-transform: uppercase; color: rgba(255,255,255,.75); }
+.cc-cab h1 { margin-top: 18px; font: 800 66px/1.04 Jakarta; letter-spacing: -2px; color: #fff; }
+.cc-cab h1 em { font-style: normal; color: var(--ouro); }
+.grade { position: absolute; left: 74px; width: 932px; display: grid; grid-template-columns: repeat(4, 212px); grid-auto-rows: 212px; gap: 28px; }
+.bloco { position: relative; border-radius: 52px; background: rgba(255,255,255,.13);
+  backdrop-filter: blur(30px) saturate(160%); box-shadow: 0 1px 0 rgba(255,255,255,.18) inset, 0 0 0 1px rgba(255,255,255,.06) inset;
+  display: flex; flex-direction: column; justify-content: space-between; padding: 30px; }
+.bloco .ic { width: 82px; height: 82px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.16); }
+.bloco .ic svg { width: 44px; height: 44px; }
+.bloco .n { font: 700 27px/1.1 Jakarta; color: #fff; letter-spacing: -.2px; }
+.bloco.ativo .ic { background: #fff; }
+.bloco.grande { grid-column: span 2; grid-row: span 2; background: linear-gradient(160deg, rgba(31,149,132,.95), rgba(14,77,71,.95)); padding: 40px; }
+.bloco.grande .t { font: 800 62px/1.02 Jakarta; letter-spacing: -1.8px; color: #fff; }
+.bloco.grande .s { font: 500 27px/1.35 Inter; color: rgba(255,255,255,.85); margin-top: 14px; }
+.bloco.largo { grid-column: span 4; grid-row: span 1; flex-direction: row; align-items: center; justify-content: flex-start; gap: 30px; height: 150px; padding: 0 40px; border-radius: 48px; }
+.bloco.largo .t { font: 800 40px/1 Jakarta; letter-spacing: -.6px; color: #fff; }
+.bloco.largo .s { font: 500 25px/1.2 Inter; color: rgba(255,255,255,.8); margin-top: 8px; }
 </style></head>
 <body>
 
-<!-- Símbolo: ladrilho das alternativas (marca de 11/11/2026), desenho cheio -->
 <svg width="0" height="0" style="position:absolute">
   <defs>
     <symbol id="ladrilho" viewBox="0 0 100 100">
@@ -190,134 +126,118 @@ tr.dest td:last-child { border-radius: 0 14px 14px 0; }
       <g fill="#F4CF7C"><circle cx="30" cy="50" r="9"/><rect x="43" y="45" width="40" height="10" rx="5"/></g>
       <path d="M26 50.2l2.9 2.9 5.2-5.6" fill="none" stroke="#14655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="visto" viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#e3f3ed"/><path d="M11 18.5l4.5 4.5 9.5-10" fill="none" stroke="#14655E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="seta" viewBox="0 0 36 20"><path d="M4 4l14 12L32 4" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-treinar" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><circle cx="22" cy="22" r="17"/><circle cx="22" cy="22" r="9.5"/><circle cx="22" cy="22" r="2.5" fill="currentColor"/></g></symbol>
+    <symbol id="i-revisao" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M36 20a14 14 0 0 0-25-7"/><path d="M8 9v6h6"/><path d="M8 24a14 14 0 0 0 25 7"/><path d="M36 35v-6h-6"/></g></symbol>
+    <symbol id="i-erros" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="5" width="28" height="34" rx="5"/><path d="M17 17l10 10M27 17L17 27"/></g></symbol>
+    <symbol id="i-simulados" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="24" r="15"/><path d="M22 24V15M18 4h8"/></g></symbol>
+    <symbol id="i-resumos" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11c-4-3-10-4-16-3v26c6-1 12 0 16 3 4-3 10-4 16-3V8c-6-1-12 0-16 3z"/><path d="M22 11v26"/></g></symbol>
+    <symbol id="i-flash" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"><rect x="11" y="9" width="24" height="30" rx="5"/><path d="M7 33V10a5 5 0 0 1 5-5h17" stroke-linecap="round"/></g></symbol>
+    <symbol id="i-crono" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="32" height="29" rx="6"/><path d="M6 18h32M15 5v8M29 5v8"/><circle cx="22" cy="28" r="2.4" fill="currentColor"/></g></symbol>
+    <symbol id="i-atlas" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"><path d="M22 5l15 8.5v17L22 39 7 30.5v-17z"/><path d="M7 13.5L22 22l15-8.5M22 22v17"/></g></symbol>
   </defs>
 </svg>
 
-<!-- ============ STORY 1: a questão + espaço da enquete ============ -->
+<!-- ============ STORY 1: tela de bloqueio com a notificação da questão ============ -->
 <section id="s1-questao">
-  <div class="fundo"><i class="m1"></i><i class="m2"></i><i class="m3"></i><i class="m4"></i><i class="m5"></i></div>
+  <div class="parede"></div><div class="grao"></div>
 
-  <div class="topo">
-    <svg><use href="#ladrilho"/></svg>
-    <span class="nome">Orto Questões</span>
-    <span class="pilula">TEOT 2025</span>
+  <svg class="cadeado" style="top:226px;" viewBox="0 0 30 40"><g fill="none" stroke="#fff" stroke-width="3.4" opacity=".9"><path d="M7 18v-6a8 8 0 0 1 16 0v6"/></g><rect x="2" y="17" width="26" height="21" rx="6" fill="#fff" opacity=".9"/></svg>
+  <div class="data" style="top:290px;">quarta-feira, 18 de novembro</div>
+  <div class="hora" style="top:336px;">7:00</div>
+
+  <div class="notif" style="top:576px;">
+    <div class="cab"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="app">Orto Questões</span><span class="quando">agora</span></div>
+    <h2 style="margin-top:24px;">Questão do TEOT 2025: que incidência é esta?</h2>
+    <p style="margin-top:12px;">Na avaliação da articulação esternoclavicular, a incidência radiográfica demonstrada na figura a seguir chama-se:</p>
+    <div class="anexo" style="margin-top:22px; height:262px;"><img src="img/heinig-desenho.png" alt="" style="padding:14px 24px;"></div>
+    <div class="fonte" style="margin-top:12px;">Figura da prova, a mesma do Rockwood and Green's Fractures in Adults, 10ª ed., Fig. 32-13A</div>
   </div>
 
-  <div class="vidro" style="left:48px; right:48px; top:316px; height:676px;">
-    <div style="position:absolute; left:48px; right:48px; top:46px;">
-      <div class="rotulo">Esternoclavicular · trauma</div>
-      <h1 style="margin-top:20px; font-size:66px;">Que incidência é <em>esta?</em></h1>
-    </div>
-    <div class="placa" style="left:48px; right:48px; top:200px; height:302px;">
-      <img src="img/heinig-desenho.png" alt="" style="padding:18px 30px;">
-    </div>
-    <p style="position:absolute; left:48px; right:48px; top:522px; font-size:27px; line-height:1.36;">
-      “Na avaliação da articulação esternoclavicular, a incidência radiográfica demonstrada na figura a seguir chama-se:”
-    </p>
-    <div class="fonte" style="position:absolute; left:48px; right:48px; top:614px; font-size:18px;">Figura da prova, a mesma do Rockwood and Green's Fractures in Adults, 10ª ed., Fig. 32-13A</div>
+  <div class="acoes" style="top:1186px;">
+    <div class="acao"><span class="l">A</span>GARTH.</div>
+    <div class="acao"><span class="l">B</span>HEINIG.</div>
+    <div class="acao"><span class="l">C</span>HOBBS.</div>
+    <div class="acao"><span class="l">D</span>Serendipity.</div>
   </div>
 
-  <div class="alts" style="left:48px; right:48px; top:1014px;">
-    <div class="alt"><span class="l">A</span>GARTH.</div>
-    <div class="alt"><span class="l">B</span>HEINIG.</div>
-    <div class="alt"><span class="l">C</span>HOBBS.</div>
-    <div class="alt"><span class="l">D</span>Serendipity.</div>
+  <div class="dica" style="top:1438px;">
+    <div class="t">Vote na sua letra</div>
+    <div class="s">a resposta chega às 12h</div>
+    <svg viewBox="0 0 36 20"><use href="#seta"/></svg>
   </div>
-
-  <!-- Espaço livre para a figurinha de enquete do Instagram (A, B, C, D): sem caixa, só a dica -->
-  <div class="cheiro" style="top:1286px;">
-    <span class="dica">Vote na sua letra</span>
-    <div style="margin-top:12px; font:500 23px/1 Inter; color:var(--tinta2);">a resposta sai no próximo story</div>
-    <svg viewBox="0 0 34 20"><path d="M4 4l13 12L30 4" fill="none" stroke="#00806f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-
 </section>
 
-<!-- ============ STORY 2: a resposta com o trecho do comentário ============ -->
+<!-- ============ STORY 2: central de notificações com a resposta ============ -->
 <section id="s2-resposta">
-  <div class="fundo"><i class="m1" style="left:auto; right:-280px;"></i><i class="m2" style="right:auto; left:-260px;"></i><i class="m3"></i><i class="m4"></i><i class="m5" style="left:auto; right:120px; top:1200px;"></i></div>
+  <div class="parede b"></div><div class="grao"></div>
 
-  <div class="topo">
-    <svg><use href="#ladrilho"/></svg>
-    <span class="nome">Orto Questões</span>
-    <span class="pilula">Resposta</span>
+  <div class="data" style="top:236px;">quarta-feira, 18 de novembro</div>
+  <div class="hora" style="top:282px; font-size:150px; letter-spacing:-5px;">12:00</div>
+
+  <div class="titulo-centro" style="top:486px;"><h3>Resposta</h3><span>TEOT 2025</span></div>
+
+  <div class="notif" style="top:562px;">
+    <div class="cab"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="app">Orto Questões</span><span class="quando">agora</span></div>
+    <div style="display:flex; align-items:center; gap:18px; margin-top:24px;">
+      <span class="acao certa" style="height:76px; padding:0 22px 0 12px; border-radius:40px; font-size:32px; box-shadow:none; gap:14px;"><span class="l" style="width:52px; height:52px; font-size:25px;">B</span>HEINIG.</span>
+      <span style="font:700 27px/1.2 Jakarta; color:var(--verde);">é a resposta certa</span>
+    </div>
+    <div style="display:grid; grid-template-columns: 1fr 300px; gap:26px; margin-top:24px; align-items:start;">
+      <div>
+        <div style="font:700 25px/1.2 Jakarta; color:var(--verde2); letter-spacing:.2px;">Segundo o Rockwood</div>
+        <p style="margin-top:10px; font-size:28px; color:var(--tinta);">Paciente em <b>supino</b>, feixe <b>horizontal</b> vindo de um lado, <b>tangente</b> à esternoclavicular e paralelo à clavícula oposta, e chassi apoiado no ombro do outro lado.</p>
+      </div>
+      <div>
+        <div class="anexo" style="height:300px;"><img src="img/heinig-radiografia.png" alt="" style="object-fit:cover;"></div>
+        <div class="fonte" style="margin-top:10px; font-size:17px;">Fig. 32-13B: manúbrio (M) e clavícula (C) de perfil</div>
+      </div>
+    </div>
+    <div class="fonte" style="margin-top:18px;">Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32</div>
   </div>
 
-  <div style="position:absolute; left:64px; right:64px; top:336px;">
-    <div class="rotulo">TEOT 2025 · gabarito</div>
-    <h1 style="margin-top:20px;">É a incidência<br>de <em>HEINIG.</em></h1>
+  <div class="titulo-centro" style="top:1244px;"><h3 style="font-size:40px;">Por que não as outras</h3><span>3 avisos</span></div>
+  <div class="atras" style="left:96px; right:96px; top:1360px; height:290px; background:rgba(246,250,248,.3);"></div>
+  <div class="atras" style="left:68px; right:68px; top:1340px; height:296px; background:rgba(246,250,248,.5);"></div>
+  <div class="notif" style="top:1310px; padding:28px 34px;">
+    <div class="cab"><svg viewBox="0 0 100 100" style="width:48px; height:48px; border-radius:12px;"><use href="#ladrilho"/></svg><span class="app" style="font-size:24px;">Orto Questões</span><span class="quando">agora</span></div>
+    <p style="margin-top:18px; font-size:27px;"><span class="letra">A</span><b>GARTH</b> é do ombro, não da esternoclavicular.</p>
+    <p style="margin-top:14px; font-size:27px;"><span class="letra">C</span><b>HOBBS</b>: sentado, feixe por cima da nuca.</p>
+    <p style="margin-top:14px; font-size:27px;"><span class="letra">D</span><b>Serendipity</b>: tubo de cima, 40° para a cabeça.</p>
   </div>
 
-  <div class="alt certa" style="position:absolute; right:64px; width:360px; top:420px;"><span class="l">B</span>HEINIG.</div>
-
-  <div class="vidro" style="left:48px; right:48px; top:600px; height:560px;">
-    <div style="position:absolute; left:46px; right:46px; top:44px;" class="livro">
-      <span class="lombada"></span>
-      <div><div class="t1">Segundo o Rockwood</div><div class="t2">Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32</div></div>
-    </div>
-    <div style="position:absolute; left:46px; width:520px; top:150px;">
-      <p class="citacao">Paciente em <mark>supino</mark>, feixe <mark>horizontal</mark> vindo de um lado, <mark>tangente</mark> à esternoclavicular e paralelo à clavícula oposta, e chassi apoiado no ombro do outro lado.</p>
-    </div>
-    <div class="placa" style="right:40px; width:370px; top:150px; height:304px;">
-      <img src="img/heinig-radiografia.png" alt="" style="object-fit:cover;">
-    </div>
-    <div class="fonte" style="position:absolute; right:40px; width:370px; top:466px; font-size:17px;">Fig. 32-13B: manúbrio (M) e clavícula (C) de perfil, lado a lado.</div>
-  </div>
-
-  <div class="vidro" style="left:48px; right:48px; top:1186px; height:262px; border-radius:40px;">
-    <div class="pq" style="position:absolute; left:40px; right:40px; top:36px;">
-      <span class="l">A</span><p><b>GARTH</b> é do ombro, não da esternoclavicular.</p>
-      <span class="l">C</span><p><b>HOBBS</b>: sentado, feixe por cima da nuca.</p>
-      <span class="l">D</span><p><b>Serendipity</b>: tubo de cima, 40° para a cabeça.</p>
-    </div>
-  </div>
-
-  <div class="rodape" style="top:1494px; bottom:auto;">
-    <div class="site">ortoquestoes.com.br</div>
-    <div class="sub">O comentário inteiro está lá, de graça</div>
+  <div class="dica" style="top:1670px;">
+    <div class="t" style="letter-spacing:.5px; text-transform:none; font-size:34px; font-weight:800;">ortoquestoes.com.br</div>
+    <div class="s">o comentário inteiro está lá, de graça</div>
   </div>
 </section>
 
-<!-- ============ STORY 3: convite, com o comentário real no celular ============ -->
+<!-- ============ STORY 3: central de controle com o que o site tem ============ -->
 <section id="s3-convite">
-  <div class="fundo"><i class="m1"></i><i class="m2" style="top:300px;"></i><i class="m3"></i><i class="m4" style="top:1300px; right:-60px;"></i><i class="m5" style="top:640px; left:-60px;"></i></div>
+  <div class="parede cc"></div><div class="grao"></div>
 
-  <div class="topo">
-    <svg><use href="#ladrilho"/></svg>
-    <span class="nome">Orto Questões</span>
-    <span class="pilula">Grátis</span>
+  <div class="cc-cab" style="top:300px;">
+    <div class="r">Orto Questões</div>
+    <h1>Tudo para a prova, <em>num toque.</em></h1>
   </div>
 
-  <div style="position:absolute; left:64px; right:64px; top:336px;">
-    <div class="rotulo">Cada questão vira uma aula</div>
-    <h1 style="margin-top:20px; font-size:68px;">O comentário explica <em>por que</em>, citando o livro.</h1>
-  </div>
-
-  <div class="tela" style="left:150px; right:150px; top:600px; height:700px;">
-    <div class="dentro">
-      <div class="ilha"></div>
-      <div class="cab"><span class="chip prova">TEOT 2025</span><span class="chip ok">Comentário</span></div>
-      <div class="coment" style="top:148px;">
-        <h3>A saída do HEINIG</h3>
-        <p style="margin-top:12px;">Em vez de atravessar o tórax inteiro, o feixe passa <b>tangente</b> à articulação. A clavícula medial pode ser vista à frente ou atrás do manúbrio.</p>
-        <h3 style="margin-top:26px;">A hierarquia dos exames</h3>
-        <table style="margin-top:14px;">
-          <tr><th>Pergunta</th><th>Exame</th></tr>
-          <tr><td>Primeira incidência dedicada</td><td>Serendipity</td></tr>
-          <tr class="dest"><td>Perfil tangente, no ambulatório</td><td>HEINIG</td></tr>
-          <tr><td>Confirmar e planejar</td><td>TC dos dois lados</td></tr>
-        </table>
-        <p style="margin-top:16px; font-size:19px; color:#8a9c98;">Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32</p>
-      </div>
-      <div class="esmaecer"></div>
+  <div class="grade" style="top:560px;">
+    <div class="bloco grande">
+      <svg viewBox="0 0 100 100" style="width:96px; height:96px; border-radius:24px; box-shadow:0 10px 24px -10px rgba(0,0,0,.4);"><use href="#ladrilho"/></svg>
+      <div><div class="t">Treine grátis</div><div class="s">Questões do TEOT e do TARO, comentadas.</div></div>
     </div>
-  </div>
-
-  <div class="botao" style="left:150px; right:150px; top:1350px;">Treine grátis</div>
-  <div class="rodape" style="top:1506px; bottom:auto;">
-    <div class="site" style="font-size:32px;">ortoquestoes.com.br</div>
-    <div class="sub">TEOT e TARO comentados · o caminho está no perfil</div>
+    <div class="bloco ativo"><span class="ic" style="color:var(--verde);"><svg><use href="#i-treinar"/></svg></span><span class="n">Treinar</span></div>
+    <div class="bloco"><span class="ic"><svg style="color:#fff;"><use href="#i-revisao"/></svg></span><span class="n">Revisão</span></div>
+    <div class="bloco"><span class="ic"><svg style="color:#fff;"><use href="#i-erros"/></svg></span><span class="n">Caderno de erros</span></div>
+    <div class="bloco"><span class="ic"><svg style="color:#fff;"><use href="#i-simulados"/></svg></span><span class="n">Simulados</span></div>
+    <div class="bloco"><span class="ic"><svg style="color:#fff;"><use href="#i-resumos"/></svg></span><span class="n">Resumos</span></div>
+    <div class="bloco"><span class="ic"><svg style="color:#fff;"><use href="#i-flash"/></svg></span><span class="n">Flashcards</span></div>
+    <div class="bloco"><span class="ic"><svg style="color:#fff;"><use href="#i-crono"/></svg></span><span class="n">Cronograma</span></div>
+    <div class="bloco"><span class="ic"><svg style="color:#fff;"><use href="#i-atlas"/></svg></span><span class="n">Atlas 3D</span></div>
+    <div class="bloco largo">
+      <svg viewBox="0 0 100 100" style="width:84px; height:84px; flex:none; border-radius:21px;"><use href="#ladrilho"/></svg>
+      <div><div class="t">ortoquestoes.com.br</div><div class="s">o caminho está no nosso perfil</div></div>
+    </div>
   </div>
 </section>
 
