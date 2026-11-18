@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Serralheria da Dobradiça — TEOT 2024 (stories)</title>
+<!-- Stories "Serralheria da Dobradiça" (Padrão Aula, marketing/instagram/estilos/PADRAO-AULA.md + régua Oficina do Encaixe).
+     Questão real: ombro-cotovelo-0249 (TEOT 2024), gabarito oficial C (número 3 = ligamento colateral ulnar lateral).
+     Fontes conferidas no comentário e no resumo: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 15, p. 643–644 (Fig. 15.1)
+     e cap. 52, p. 2229–2230; Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40.
+     Arte original em pixel art HD-2D por código: arte_dobradica.py -> arte/. Sem desenho de anatomia; sem figurinha. -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+
+:root {
+  --tinta: #231912;
+  --tinta2: #524235;
+  --verde: #14655E;
+  --noite: #0E2E2A;
+  --verm: #AE3326;
+  --ouro: #F4CF7C;
+  --latao: #D8A846;
+  --azul: #284B8C;
+  --papel: #F6EEDB;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #18181b; font-family: Inter, sans-serif; }
+
+section {
+  position: relative;
+  overflow: hidden;
+  width: 1080px;
+  height: 1920px;
+  margin-bottom: 40px;
+  color: var(--tinta);
+  background: url(arte/fundo.png) center / 1080px 1920px no-repeat;
+}
+
+.px { image-rendering: pixelated; }
+.abs { position: absolute; }
+
+/* Placa de ferro forjado e latão no topo (entre 226px e 296px, fora da barra do Instagram) */
+.placa {
+  position: absolute;
+  left: 50%;
+  top: 226px;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 28px 12px 18px;
+  border-radius: 11px;
+  white-space: nowrap;
+  background: linear-gradient(180deg, #273238 0%, #182024 55%, #101619 100%);
+  box-shadow:
+    inset 0 2px 0 rgba(255,255,255,.18),
+    inset 0 -2px 0 rgba(0,0,0,.65),
+    0 0 0 3px #D8A846,
+    0 0 0 6px #3a2810,
+    0 14px 28px rgba(0,0,0,.6);
+}
+.placa::before, .placa::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff5cc, #c89638 65%, #5a3810);
+}
+.placa::before { left: 8px; }
+.placa::after { right: 8px; }
+.placa .m {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 8px;
+  font: 800 26px Jakarta;
+  letter-spacing: -.01em;
+  color: #FBF7EC;
+}
+.placa .m img {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  box-shadow: 0 0 0 2px rgba(244,207,124,.55);
+}
+.placa .m span { font-weight: 500; color: var(--ouro); }
+.placa .sep { width: 2px; height: 30px; background: rgba(244,207,124,.35); }
+.placa .t {
+  font: 800 20px Inter;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ouro);
+}
+.placa .cnt {
+  margin-left: 4px;
+  padding: 4px 11px;
+  border-radius: 7px;
+  background: rgba(244,207,124,.16);
+  border: 1px solid rgba(244,207,124,.45);
+  font: 800 18px Jakarta;
+  color: #fff5d6;
+}
+
+/* Folha creme quadriculada de oficina presa com fita crepe */
+.folha {
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  top: 324px;
+  z-index: 3;
+  background-color: var(--papel);
+  background-image:
+    linear-gradient(rgba(40,75,140,.13) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, rgba(40,75,140,.13) 1.5px, transparent 1.5px),
+    linear-gradient(rgba(40,75,140,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(40,75,140,.055) 1px, transparent 1px),
+    radial-gradient(ellipse at 32% 18%, #fbf7ec, transparent 72%);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px, 100% 100%;
+  box-shadow:
+    0 3px 0 #cfc0a0,
+    0 26px 52px rgba(0,0,0,.62),
+    inset 0 0 54px rgba(140,102,54,.16);
+  border-radius: 5px;
+}
+
+.fita {
+  position: absolute;
+  z-index: 6;
+  width: 144px;
+  height: 42px;
+  background: rgba(236,222,182,.88);
+  box-shadow: 0 2px 5px rgba(0,0,0,.22);
+  clip-path: polygon(3% 0, 97% 4%, 100% 50%, 97% 100%, 2% 96%, 0 50%);
+}
+.fita::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,.14) 0 3px, transparent 3px 7px);
+}
+
+.rot { font: 700 36px/1.05 Caveat; color: var(--azul); }
+.h { font: 800 58px/1.03 Jakarta; letter-spacing: -.032em; color: var(--tinta); }
+.h em { font-style: normal; color: var(--verde); }
+.h .v { color: var(--verm); }
+.txt { font: 500 25.5px/1.36 Inter; color: var(--tinta2); }
+.txt b { color: var(--tinta); font-weight: 750; }
+.txt .g { color: var(--verde); font-weight: 750; }
+.txt .v { color: var(--verm); font-weight: 750; }
+.nota { font: 700 32px/1.08 Caveat; color: #3a3f47; }
+.ref { font: 600 18.5px/1.3 Inter; color: #7c674d; }
+
+/* Quadro técnico para exibir a figura real do acervo INTEIRA, sem tocar nem cortar a anatomia */
+.quadro {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  background: #14191d;
+  padding: 42px 12px 12px;
+  border-radius: 12px;
+  box-shadow: 0 0 0 2px #2e363e, 0 16px 30px rgba(0,0,0,.38);
+}
+.quadro::before {
+  content: attr(data-rotulo);
+  position: absolute;
+  left: 72px;
+  right: 16px;
+  top: 13px;
+  font: 800 14.5px Inter;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: #b8c4ce;
+  text-align: right;
+  white-space: nowrap;
+}
+.quadro.sem-grampo::before {
+  left: 16px;
+}
+.quadro.destaque {
+  box-shadow: 0 0 0 4px var(--latao), 0 16px 32px rgba(0,0,0,.42);
+}
+.quadro.destaque::before {
+  color: var(--ouro);
+}
+.quadro .miolo {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  border-radius: 7px;
+  background: #ffffff;
+  overflow: hidden;
+}
+.quadro img {
+  position: absolute;
+  inset: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  object-fit: contain;
+}
+
+.grampo {
+  position: absolute;
+  z-index: 7;
+  width: 44px;
+  filter: drop-shadow(0 5px 5px rgba(0,0,0,.45));
+}
+.obj {
+  position: absolute;
+  z-index: 6;
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,.42));
+}
+
+/* Alternativas da questão no Story 1 */
+.grade-alt {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.alt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 13px 12px;
+  border-radius: 13px;
+  background: rgba(255,255,255,.76);
+  border: 2.5px solid #c9b48c;
+  box-shadow: 0 4px 0 rgba(160,130,85,.25);
+}
+.alt b {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 3px dashed var(--verde);
+  color: var(--verde);
+  font: 800 25px Jakarta;
+}
+.alt span {
+  font: 800 34px Jakarta;
+  color: var(--tinta);
+}
+
+/* Linhas numeradas de explicação no Story 2 */
+.peca {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 12px 18px;
+  border-radius: 13px;
+  background: rgba(255,255,255,.68);
+  border: 2px solid #d4c3a2;
+}
+.peca .num {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  font: 800 30px Jakarta;
+  color: #fff;
+  background: #5b646e;
+}
+.peca h4 {
+  font: 800 25.5px/1.12 Jakarta;
+  letter-spacing: -.015em;
+  color: var(--tinta);
+}
+.peca h4 small {
+  font: 700 16.5px Inter;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-left: 8px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(90,98,108,.14);
+  color: #4d555e;
+  vertical-align: middle;
+}
+.peca p {
+  font: 500 23px/1.31 Inter;
+  color: var(--tinta2);
+  margin-top: 3px;
+}
+.peca p b { color: var(--tinta); font-weight: 750; }
+.peca.certa {
+  background: rgba(20,101,94,.12);
+  border: 3px solid var(--verde);
+  box-shadow: 0 6px 18px rgba(20,101,94,.14);
+}
+.peca.certa .num {
+  background: var(--verde);
+  box-shadow: 0 0 0 3px var(--ouro);
+}
+.peca.certa h4 { color: var(--noite); }
+.peca.certa h4 small {
+  background: var(--verde);
+  color: var(--ouro);
+}
+
+/* Selo de resposta no Story 3 */
+.carimbo-ok {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 22px;
+  border: 4px solid var(--verde);
+  border-radius: 12px;
+  color: var(--verde);
+  background: rgba(20,101,94,.10);
+  font: 800 25px/1 Jakarta;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+
+.card-lado {
+  padding: 18px 20px;
+  border-radius: 13px;
+  background: rgba(255,255,255,.74);
+  border: 2px solid #cbb692;
+}
+.card-lado.dest {
+  background: rgba(20,101,94,.12);
+  border: 3px solid var(--verde);
+}
+.card-lado .tag {
+  display: inline-block;
+  font: 800 16px Inter;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #425060;
+  color: #fff;
+}
+.card-lado.dest .tag {
+  background: var(--verde);
+  color: var(--ouro);
+}
+.card-lado h4 {
+  margin-top: 10px;
+  font: 800 27px/1.12 Jakarta;
+  letter-spacing: -.015em;
+  color: var(--tinta);
+}
+.card-lado p {
+  margin-top: 7px;
+  font: 500 23px/1.35 Inter;
+  color: var(--tinta2);
+}
+.card-lado p b { color: var(--tinta); font-weight: 750; }
+
+/* Chamada final acima da bancada (sem figurinha de link) */
+.cta-bancada {
+  position: absolute;
+  left: 64px;
+  right: 64px;
+  top: 1466px;
+  z-index: 7;
+  text-align: center;
+}
+.cta-pilula {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 30px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #fbe5a2 0%, #e0b254 48%, #b9822c 100%);
+  box-shadow:
+    inset 0 2px 0 rgba(255,255,255,.7),
+    inset 0 -3px 0 rgba(80,45,10,.55),
+    0 0 0 3px #4e300c,
+    0 14px 28px rgba(0,0,0,.62);
+  font: 800 26.5px Jakarta;
+  letter-spacing: -.01em;
+  color: #241506;
+}
+.cta-site {
+  margin-top: 10px;
+  font: 800 34px Jakarta;
+  letter-spacing: -.01em;
+  color: #fff3cc;
+  text-shadow: 0 3px 12px rgba(0,0,0,.92);
+}
+.cta-site span {
+  font-weight: 500;
+  font-size: 23px;
+  color: #e6d8b8;
+  margin-left: 8px;
+}
+</style></head><body>
+
+<!-- ═══════════════════ STORY 1 · O GANCHO E A QUESTÃO ═══════════════════ -->
+<section id="s1-questao">
+  <div class="placa">
+    <span class="m"><img src="../../marca/png/perfil-ladrilho-noite.png" alt="">Orto <span>Questões</span></span>
+    <span class="sep"></span>
+    <span class="t">TEOT 2024 · A Dobradiça</span>
+    <span class="cnt">1/3</span>
+  </div>
+
+  <div class="folha" style="height:1242px;transform:rotate(-0.3deg)"></div>
+  <div class="fita" style="left:94px;top:305px;transform:rotate(-5deg)"></div>
+  <div class="fita" style="right:94px;top:303px;transform:rotate(4deg)"></div>
+
+  <div class="abs" style="z-index:5;left:96px;top:362px;width:544px">
+    <div class="rot">Lição 1 · olhe o lado antes de responder</div>
+    <h1 class="h" style="margin-top:4px">Qual peça trava<br><em>a dobradiça?</em></h1>
+    <p class="txt" style="margin-top:14px">Quem decorou <b>“feixe anterior do colateral medial”</b> cai na armadilha sem perceber: aqui o cotovelo está visto <span class="v">por fora</span> — repare na ponta do <b>olécrano</b> atrás e no <b>anel</b> abraçando o rádio.</p>
+  </div>
+
+  <img class="obj px" src="arte/dobradica.png" alt="" style="left:656px;top:384px;width:326px">
+  <div class="nota abs" style="z-index:7;left:672px;top:346px;transform:rotate(-3deg);color:var(--azul)">braçadeira giratória ↓</div>
+  <div class="nota abs" style="z-index:7;left:660px;top:662px;transform:rotate(-2deg);color:var(--verde)">tirante entre as hastes ↑</div>
+
+  <div class="abs" style="z-index:5;left:96px;top:742px;width:888px">
+    <div style="font:800 18px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--verde)">Como caiu na prova · TEOT 2024</div>
+    <p style="margin-top:6px;font:750 27.5px/1.26 Jakarta;letter-spacing:-.015em;color:var(--tinta)">Na figura a seguir, o componente ligamentar mais importante para a estabilidade do cotovelo corresponde ao número</p>
+  </div>
+
+  <div class="quadro" data-rotulo="TEOT 2024 · Face lateral do cotovelo" style="left:190px;top:866px;width:700px;height:446px">
+    <div class="miolo"><img src="img/questao-2x.png" alt="Figura da questão TEOT 2024"></div>
+  </div>
+  <img class="grampo px" src="arte/grampo.png" alt="" style="left:208px;top:840px">
+
+  <div class="abs grade-alt" style="z-index:5;left:96px;top:1340px;width:888px">
+    <div class="alt"><b>A</b><span>1</span></div>
+    <div class="alt"><b>B</b><span>2</span></div>
+    <div class="alt"><b>C</b><span>3</span></div>
+    <div class="alt"><b>D</b><span>4</span></div>
+  </div>
+
+  <div class="nota abs" style="z-index:7;left:96px;top:1488px;width:888px;text-align:center;color:var(--verm);font-size:35px">Escolha o seu número — a resposta sai no próximo story.</div>
+</section>
+
+<!-- ═══════════════════ STORY 2 · A DESMONTAGEM E O MECANISMO ═══════════════════ -->
+<section id="s2-mecanismo">
+  <div class="placa">
+    <span class="m"><img src="../../marca/png/perfil-ladrilho-noite.png" alt="">Orto <span>Questões</span></span>
+    <span class="sep"></span>
+    <span class="t">O Tirante Lateral</span>
+    <span class="cnt">2/3</span>
+  </div>
+
+  <div class="folha" style="height:1244px;transform:rotate(0.28deg)"></div>
+  <div class="fita" style="left:94px;top:305px;transform:rotate(-4deg)"></div>
+  <div class="fita" style="right:94px;top:303px;transform:rotate(5deg)"></div>
+
+  <div class="abs" style="z-index:5;left:96px;top:358px;width:888px">
+    <div class="rot">Lição 2 · compare a prova com a figura original do livro</div>
+    <h2 class="h" style="margin-top:2px;font-size:52px">Três param no anel.<br><em>Só o 3 alcança a ulna.</em></h2>
+  </div>
+
+  <div class="quadro" data-rotulo="Prova · números 1 a 4" style="left:96px;top:538px;width:430px;height:352px">
+    <div class="miolo"><img src="img/questao-2x.png" alt="Figura da prova"></div>
+  </div>
+  <img class="grampo px" src="arte/grampo.png" alt="" style="left:114px;top:513px">
+
+  <div class="quadro destaque" data-rotulo="Campbell 15ª ed. · Fig. 15.1B" style="left:554px;top:538px;width:430px;height:352px">
+    <div class="miolo"><img src="img/campbell-lateral.png" alt="Figura 15.1B do Campbell"></div>
+  </div>
+  <img class="grampo px" src="arte/grampo.png" alt="" style="left:572px;top:513px">
+
+  <div class="abs" style="z-index:6;left:380px;top:898px;width:604px;text-align:right;font:600 16.5px Inter;color:#6c5840">Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), Fig. 15.1B, p. 644</div>
+
+  <div class="abs" style="z-index:5;left:96px;top:932px;width:888px;display:grid;gap:12px">
+    <div class="peca">
+      <div class="num">1</div>
+      <div>
+        <h4>Colateral radial <small>Armadilha</small></h4>
+        <p>Nasce no epicôndilo lateral, mas <b>termina no ligamento anular</b> — não chega à ulna.</p>
+      </div>
+    </div>
+
+    <div class="peca">
+      <div class="num">2</div>
+      <div>
+        <h4>Ligamento anular <small>A braçadeira</small></h4>
+        <p>Prende-se na própria ulna para abraçar a cabeça do rádio; <b>não liga o antebraço ao úmero</b>.</p>
+      </div>
+    </div>
+
+    <div class="peca">
+      <div class="num">4</div>
+      <div>
+        <h4>Colateral acessório <small>Auxiliar</small></h4>
+        <p>Vai até a margem inferior do anular; fica tenso no varo, mas também <b>não alcança a ulna</b>.</p>
+      </div>
+    </div>
+
+    <div class="peca certa">
+      <div class="num">3</div>
+      <div>
+        <h4>Colateral ulnar lateral <small>Gabarito C</small></h4>
+        <p>Vai do <b>epicôndilo lateral</b> à <b>crista do supinador da ulna</b>. Único tirante lateral entre úmero e ulna: <b>é ele que falha</b> na instabilidade rotatória posterolateral.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ref abs" style="z-index:6;left:96px;top:1524px">Campbell's Operative Orthopaedics, 15ª ed., cap. 15, p. 643–644 · Rockwood, 10ª ed., cap. 40</div>
+</section>
+
+<!-- ═══════════════════ STORY 3 · GABARITO + POR DENTRO × POR FORA + CONVITE ═══════════════════ -->
+<section id="s3-resposta">
+  <div class="placa">
+    <span class="m"><img src="../../marca/png/perfil-ladrilho-noite.png" alt="">Orto <span>Questões</span></span>
+    <span class="sep"></span>
+    <span class="t">Por dentro × Por fora</span>
+    <span class="cnt">3/3</span>
+  </div>
+
+  <div class="folha" style="height:1126px;transform:rotate(-0.25deg)"></div>
+  <div class="fita" style="left:94px;top:305px;transform:rotate(-5deg)"></div>
+  <div class="fita" style="right:94px;top:303px;transform:rotate(4deg)"></div>
+
+  <div class="abs" style="z-index:5;left:96px;top:360px;width:590px">
+    <div class="rot">Lição 3 · a regra que resolve os dois lados</div>
+    <h2 class="h" style="margin-top:4px;font-size:52px">Mude o lado,<br><em>muda o campeão.</em></h2>
+  </div>
+  <div class="abs" style="z-index:6;right:92px;top:382px">
+    <div class="carimbo-ok">Gabarito C · Nº 3</div>
+  </div>
+
+  <div class="quadro sem-grampo" data-rotulo="A · Face medial (por dentro)" style="left:96px;top:514px;width:430px;height:366px">
+    <div class="miolo"><img src="img/campbell-medial.png" alt="Face medial — Campbell Fig. 15.1A"></div>
+  </div>
+  <div class="quadro sem-grampo destaque" data-rotulo="B · Face lateral (por fora)" style="left:554px;top:514px;width:430px;height:366px">
+    <div class="miolo"><img src="img/campbell-lateral.png" alt="Face lateral — Campbell Fig. 15.1B"></div>
+  </div>
+
+  <div class="abs" style="z-index:6;left:96px;top:888px;width:888px;text-align:center;font:600 16.5px Inter;color:#6c5840">Fonte das figuras: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 15, Fig. 15.1, p. 644</div>
+
+  <div class="abs" style="z-index:5;left:96px;top:924px;width:888px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+    <div class="card-lado">
+      <span class="tag">Por dentro · Medial</span>
+      <h4>Feixe anterior do LCM</h4>
+      <p>Insere no <b>tubérculo sublime</b> da ulna.<br>Segura o <b>valgo</b> (desgaste crônico no arremessador).</p>
+    </div>
+    <div class="card-lado dest">
+      <span class="tag">Por fora · Lateral (Nº 3)</span>
+      <h4>Colateral ulnar lateral</h4>
+      <p>Insere na <b>crista do supinador</b> da ulna.<br>Segura o <b>varo</b> e a <b>rotação posterolateral</b>.</p>
+    </div>
+  </div>
+
+  <div class="abs" style="z-index:5;left:96px;top:1214px;width:888px;padding:20px 26px;border-radius:14px;background:#162422;color:#f5efe0;box-shadow:0 10px 22px rgba(0,0,0,.22)">
+    <div style="font:800 17px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--ouro)">Círculo de Horii / O'Driscoll · queda com a mão espalmada</div>
+    <p style="margin-top:7px;font:500 24.5px/1.36 Inter;color:#e6dfd0">A luxação abre a dobradiça <b>de fora para dentro</b>: <b style="color:var(--ouro)">1º colateral ulnar lateral</b> → <b>2º cápsula</b> → <b>3º colateral medial</b> (por último).</p>
+  </div>
+
+  <div class="ref abs" style="z-index:6;left:96px;top:1398px">Campbell's Operative Orthopaedics, 15ª ed., cap. 15, p. 643–644; cap. 52, p. 2229–2230</div>
+
+  <img class="obj px" src="arte/chave.png" alt="" style="left:386px;top:1622px;width:168px;transform:rotate(-3deg)">
+  <img class="obj px" src="arte/martelo.png" alt="" style="right:24px;top:1602px;width:176px;transform:rotate(12deg)">
+
+  <div class="cta-bancada">
+    <div class="cta-pilula">Treine grátis · o caminho está no perfil @ortoquestoes</div>
+    <div class="cta-site">ortoquestoes.com.br <span>· Provas oficiais comentadas</span></div>
+  </div>
+</section>
+
+</body></html>
