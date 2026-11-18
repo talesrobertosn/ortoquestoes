@@ -10733,19 +10733,24 @@
   },
   {
    "id": "green-amputacoes-reimplantes",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Amputações e reimplantes na mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017)",
    "capitulo": "Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)",
-   "resumo": "Reimplante mais convincente no polegar, em vários dedos, na criança e no punho e antebraço; contraindicações relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é boa indicação; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e mais de 30 h), músculo 6 h (12 h resfriado); sequência osso, extensor, flexor, artéria, nervo, veia, vários dedos estrutura por estrutura; avulsão pede veia invertida; macrorreimplante com shunt e 20 min por hora; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.",
+   "resumo": "Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 63,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
      "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "de-carrel-ao-alotransplante-historia-e-epidemiol",
+     "titulo": "De CARREL ao alotransplante: história e epidemiologia",
      "radar": "fundamento"
     },
     {
@@ -10759,6 +10764,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "lesao-de-reperfusao-e-no-reflow",
+     "titulo": "Lesão de reperfusão e no-reflow",
+     "radar": "fundamento"
+    },
+    {
      "id": "quem-reimplantar",
      "titulo": "Quem reimplantar",
      "radar": "confirmado"
@@ -10769,9 +10779,24 @@
      "radar": "confirmado"
     },
     {
-     "id": "arterias-e-veias-intima-enxerto-e-calibre",
-     "titulo": "Artérias e veias: íntima, enxerto e calibre",
+     "id": "osso-tendoes-e-nervo-o-encurtamento-serve-ao-ner",
+     "titulo": "Osso, tendões e nervo: o encurtamento serve ao nervo",
+     "radar": "clinico"
+    },
+    {
+     "id": "as-veias-o-passo-mais-dificil",
+     "titulo": "As veias: o passo mais difícil",
+     "radar": "clinico"
+    },
+    {
+     "id": "arteria-enxerto-venoso-e-reperfusao",
+     "titulo": "Artéria, enxerto venoso e reperfusão",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-tecnica-microvascular",
+     "titulo": "A técnica microvascular",
+     "radar": "fundamento"
     },
     {
      "id": "o-macrorreimplante",
@@ -10792,6 +10817,11 @@
      "id": "resultados",
      "titulo": "Resultados",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-alotransplante-composto-vascularizado",
+     "titulo": "O alotransplante composto vascularizado",
+     "radar": "oportunidade"
     },
     {
      "id": "a-avulsao-pelo-anel",
@@ -10844,6 +10874,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "green-e-campbell-onde-os-livros-discordam",
+     "titulo": "Green e Campbell: onde os livros discordam",
+     "radar": "fundamento"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -10892,14 +10927,39 @@
    ],
    "treino": [
     "mao-2330",
+    "mao-3253",
+    "mao-3257",
+    "mao-3264",
+    "mao-3272",
     "mao-2350",
     "mao-1768",
+    "mao-3248",
+    "mao-3249",
+    "mao-3259",
+    "mao-3266",
+    "mao-3268",
     "mao-2165",
     "mao-2509",
+    "mao-3250",
+    "mao-3261",
+    "mao-3267",
     "mao-2404",
     "mao-2018",
+    "mao-3251",
+    "mao-3262",
+    "mao-3265",
+    "mao-3269",
+    "mao-3254",
+    "mao-3255",
+    "mao-3258",
+    "mao-3260",
+    "mao-3271",
     "mao-2351",
+    "mao-3256",
     "mao-1767",
+    "mao-3252",
+    "mao-3263",
+    "mao-3270",
     "mao-2065",
     "mao-1945",
     "mao-2262",
