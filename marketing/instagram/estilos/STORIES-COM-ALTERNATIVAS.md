@@ -34,7 +34,7 @@ De 2 a 3 stories, nesta ordem:
   o Tales achou feio ("o Instagram nunca consegue preencher da maneira correta"). Só o **espaço vazio** e,
   em cima dele, a dica discreta com uma setinha.
 - **Tamanho:** a enquete de 4 opções ocupa cerca de **480 × 450 px** no story de 1080 × 1920 (medido no print do
-  osteoma). Deixe pelo menos **450 px de altura livre**, de preferência entre 1330 e 1800 px, sem texto nem imagem
+  osteoma). Deixe pelo menos **450 px de altura livre** abaixo da dica (no modelo, de 1440 a 1900 px), sem texto nem imagem
   importante por baixo; o fundo pode continuar (degradê, cenário).
 - O Tales escolhe onde soltar a enquete; as alternativas escritas ficam **acima** da área, para que a enquete não
   cubra nenhuma delas.
