@@ -1,6 +1,6 @@
 ---
 id: green-kienbock
-versao: 1
+versao: 2
 titulo: Doença de KIENBÖCK
 especialidade: mao
 acesso: gratis
@@ -8,14 +8,16 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017)
 capitulo: Capítulo 16 · Fractures of the Carpal Bones
 autores: Steve K. Lee
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 16 (p. 637 a 649, seção de fraturas do semilunar, osteonecrose de KIENBÖCK, doença de PREISER e necrose do capitato), cap. 17 (p. 691 e 692, classificação artroscópica), cap. 13 (p. 464) e cap. 12 (p. 380 a 389, artrodeses intercárpicas); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (p. 3308 a 3314, fraturas do semilunar e doença de KIENBÖCK, e p. 3293 aprox., PREISER); Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 358); Rockwood and Wilkins' Fractures in Children, 10ª ed..
+fonte: Livros conferidos localmente em 01/11/2026 e revistos em 17/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 16 (p. 637 a 647, irrigação do semilunar e osteonecrose de KIENBÖCK, com a lista de referências do capítulo, p. 649 a 652), cap. 17 (p. 691 e 692, classificação artroscópica), cap. 13 (p. 464) e cap. 12 (p. 380 a 389, artrodeses intercárpicas); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (p. 3308 a 3314, fraturas do semilunar e doença de KIENBÖCK, e p. 3293 aprox., PREISER); Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 358); Rockwood and Wilkins' Fractures in Children, 10ª ed.; LICHTMAN, LESLEY e SIMMONS (J Hand Surg Eur, 2010; PMID 20621943), SCHMITT e KALB (Handchir Mikrochir Plast Chir, 2010; PMID 20552545) e o relato de ROCHA (J Orthop Case Rep, 2025; PMID 41281835), conferidos no PubMed em 17/11/2026. As fraturas agudas do semilunar (TEISEN e HJARBAEK), a doença de PREISER e a necrose do capitato estão no resumo green-fraturas-carpo.
 subtemas: Doença de Kienböck
-resumo: Homem de 15 a 40 anos, punho dominante, trabalhador manual; padrão vascular em I (vaso único) é o de maior risco; ulna minus em 78% (HULTÉN), mas a relação é controversa; RM com T1 baixo em todo o semilunar; LICHTMAN I RM, II esclerose sem colapso, IIIA colapso com carpo alinhado, IIIB capitato migrado e escafoide fletido (rotação fixa, ângulo radioescafoide maior que 60°), IV artrose; BAIN e BEGG conta superfícies articulares não funcionais; ulna minus sem colapso = encurtar o rádio 2 a 3 mm; ulna neutra = encurtamento do capitato de ALMQUIST, cunha radial ou revascularização (4ª e 5ª ACE); IIIB = carpectomia proximal, STT ou escafocapitato; IV = artrodese do punho ou carpectomia.
+resumo: Homem de 15 a 40 anos, punho dominante, trabalhador manual; padrão vascular em I (vaso único) é o de maior risco; ulna minus em 78% (HULTÉN), mas a relação é controversa; RM com T1 baixo em todo o semilunar; LICHTMAN I RM, II esclerose sem colapso, IIIA colapso com carpo alinhado, IIIB capitato migrado e escafoide fletido (rotação fixa, ângulo radioescafoide maior que 60°), IV artrose; BAIN e BEGG conta superfícies articulares não funcionais; ulna minus sem colapso = encurtar o rádio 2 a 3 mm; ulna neutra = encurtamento do capitato de ALMQUIST, cunha radial ou revascularização (4ª e 5ª ACE); IIIB = carpectomia proximal, STT ou escafocapitato; IV = artrodese do punho ou carpectomia; preferência do autor: salvável com ulna negativa = encurtar o rádio com neurectomia do interósseo posterior, salvável com ulna neutra ou positiva = enxerto da 4ª e 5ª ACE.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado na seção de osteonecrose do semilunar do capítulo 16 (Fractures of the Carpal Bones) do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Steve K. LEE, e foi completado pelo capítulo 74 (Wrist Disorders) do Campbell's Operative Orthopaedics, 15ª ed., por trechos dos capítulos 12, 13 e 17 do próprio Green e por duas menções pediátricas.
+Este resumo é inspirado na seção de osteonecrose do semilunar do capítulo 16 (Fractures of the Carpal Bones) do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Steve K. LEE, e foi completado pelo capítulo 74 (Wrist Disorders) do Campbell's Operative Orthopaedics, 15ª ed., por trechos dos capítulos 12, 13 e 17 do próprio Green e por duas menções pediátricas. O mesmo capítulo 16 trata das fraturas do escafoide e dos outros ossos do carpo, das fraturas agudas do semilunar, da doença de PREISER e da necrose do capitato; tudo isso está no resumo green-fraturas-carpo, e aqui fica só o KIENBÖCK.
+
+Uma palavra sobre o método. O KIENBÖCK é uma doença em que quase tudo é controverso: a causa, o papel da ulna curta, a história natural e a escolha da cirurgia. O Green não esconde isso; ele expõe os estudos dos dois lados e, no fim, diz o que o autor faz. Por isso, em cada seção, vale separar três camadas: o que é fato anatômico (a irrigação do semilunar, os padrões Y, X e I), o que é associação discutida (ulna minus, inclinação do rádio) e o que é a preferência do autor (encurtar o rádio 2 a 3 mm, usar a 4ª e 5ª ACE). As questões de "assinale a incorreta" quase sempre moram na segunda camada.
 
 A doença de KIENBÖCK é a necrose avascular do semilunar. O osso morre, perde resistência, fratura, colapsa e arrasta o carpo inteiro: o capitato sobe, o escafoide se dobra, a altura do carpo cai e, no fim, aparece artrose radiocárpica e mediocárpica. Todo o raciocínio de tratamento nasce de duas perguntas que o próprio LEE faz no Green (p. 647): **o semilunar ainda pode ser salvo?** e **qual é a variância ulnar?** Se o osso é salvável e a ulna é curta, nivela-se a articulação encurtando o rádio; se é salvável e a ulna é neutra ou longa, descarrega-se o semilunar por outro caminho (capitato, cunha radial, descompressão) ou leva-se sangue novo até ele; se o osso não é salvável, parte-se para o salvamento (carpectomia da fileira proximal, artrodeses intercárpicas ou artrodese total).
 
@@ -30,6 +32,8 @@ A prova cobra este tema de forma muito previsível. Pouco mais da metade das que
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 74, p. 3309), traz o retrato que as provas copiam quase literalmente: a doença de KIENBÖCK é um distúrbio doloroso do punho, de causa desconhecida, que ocorre **mais frequentemente entre 15 e 40 anos** e **no punho dominante de homens que fazem trabalho manual**. O Green's Operative Hand Surgery, 7ª ed. (cap. 16, p. 640), diz a mesma coisa com outras palavras: o diagnóstico é suspeitado **particularmente em homens jovens** com dor e rigidez no **punho dominante**.
 
 Vale entender por que esse perfil faz sentido. O semilunar é a pedra central da coluna média do carpo; ele recebe a cabeça do capitato por cima e se apoia na fossa semilunar do rádio por baixo. Quem usa o punho com força e repetição, em extensão e carga axial, comprime o semilunar entre o capitato e o rádio. O Green (p. 640) cita o estudo de SCHILTENWOLF: a **pressão intraóssea do semilunar sobe 40 mmHg acima da do capitato** quando o punho passa da posição neutra para a extensão. Um osso com circulação precária, que sofre picos de pressão a cada extensão carregada, é o candidato natural à necrose. Por isso o punho dominante e o trabalho braçal aparecem juntos.
+
+O mecanismo da pressão merece um parágrafo, porque explica por que o KIENBÖCK é diferente de uma fratura comum. O semilunar fica dentro de um envelope de cartilagem quase completo, como uma bola dentro de uma luva. Quando a pressão dentro do osso sobe, o sangue venoso sai com dificuldade e o arterial entra com dificuldade: é a mesma lógica de uma síndrome compartimental em miniatura. Repetida milhares de vezes, a extensão carregada pode manter o osso num estado de congestão e isquemia que não precisa de nenhum trauma isolado para começar. É por isso que o livro fala em causa multifatorial, e também por isso que a descompressão metafisária do rádio, que melhora o retorno venoso regional, tem lugar no tratamento.
 
 ## Por que a idade acima de 50, o sexo feminino e a ulna plus caem como distratores
 
@@ -53,7 +57,7 @@ O Green (p. 640) admite que, depois de anos de experiência clínica, **a origem
 | Doenças associadas | Esclerodermia, falciforme, LES, corticoide | Sem correlação consistente |
 !fim
 
-!questoes central=mao-0074 relacionadas=mao-0030,mao-0057
+!questoes central=mao-0074 relacionadas=mao-0030,mao-0057 treino=mao-1948,mao-3196,mao-3202,mao-3213
 conceito: A doença de KIENBÖCK predomina em homens de 15 a 40 anos, no punho dominante, em trabalhadores manuais; o punho dominante é o fator de risco que as provas aceitam.
 como: O TARO 2015 perguntou sexo e faixa etária (homens de 15 a 40 anos); o TARO 2021 juntou sexo, dominância e trabalho manual; o TARO 2016 pediu o fator de risco entre gênero feminino, punho dominante, idade acima de 50 anos e ulna plus.
 armadilha: Marcar ulna plus como fator de risco: o que se associa ao KIENBÖCK é a ulna minus; a ulna longa é a do impacto ulnar.
@@ -63,9 +67,11 @@ armadilha: Marcar ulna plus como fator de risco: o que se associa ao KIENBÖCK �
 
 ## O desenho dos vasos
 
+Antes dos números, a ideia: um osso quase todo coberto de cartilagem só recebe sangue pelas faces que ficam livres, e no semilunar elas são duas, a palmar e a dorsal. Se as duas mandam vasos e esses vasos se comunicam lá dentro, o osso tem rede de segurança; se só uma manda, ou se os vasos não se comunicam, uma única lesão basta para matar o osso.
+
 O semilunar é quase todo coberto por cartilagem. Sobram para a entrada de vasos apenas as superfícies palmar e dorsal, e é aí que mora a vulnerabilidade. O Green (p. 638) resume os estudos de injeção: **suprimento palmar e dorsal está presente em 74% a 100% dos semilunares**, e cerca de **7%** têm um **suprimento vascular único**. Entre os que têm duplo suprimento, 33% recebem um vaso palmar e um dorsal que se anastomosam, 66% formam uma anastomose de três vasos e 10% uma anastomose de quatro vasos.
 
-Do lado palmar, os ramos radial, ulnar e palmar da artéria interóssea anterior formam **três arcos transversos** que nutrem o semilunar. Do lado dorsal, os ramos radial, ulnar e dorsal da interóssea anterior também formam três arcos, e o semilunar recebe sangue dos **dois arcos transversos proximais**, sobre as articulações radiocárpica e intercárpica. O detalhe importante é que o suprimento **palmar é constante** e o **dorsal é frequentemente inconsistente**. O Green também registra que **20% dos semilunares só têm artéria nutrícia palmar** dentro do osso.
+Do lado palmar, os ramos radial, ulnar e palmar da artéria interóssea anterior formam **três arcos transversos** que nutrem o semilunar. Do lado dorsal, os ramos radial, ulnar e dorsal da interóssea anterior também formam três arcos, e o semilunar recebe sangue dos **dois arcos transversos proximais**, sobre as articulações radiocárpica e intercárpica. Esses mesmos arcos dorsais são a origem das artérias que se usam nos enxertos vascularizados do rádio, o que liga a anatomia deste parágrafo à cirurgia de revascularização. O detalhe importante é que o suprimento **palmar é constante** e o **dorsal é frequentemente inconsistente**. O Green também registra que **20% dos semilunares só têm artéria nutrícia palmar** dentro do osso.
 
 ## Os padrões Y, X e I
 
@@ -85,7 +91,7 @@ O Campbell (p. 3309) chega à mesma conclusão com outro número: GELBERMAN desc
 | Vaso único ou uma superfície exposta (GELBERMAN) | Um | Ausente | Cerca de 20% (Campbell) |
 !fim
 
-!questoes central=mao-0449 relacionadas=mao-1115
+!questoes central=mao-0449 relacionadas=mao-1115 treino=mao-3167,mao-3204,mao-3205
 conceito: Entre os padrões Y, X e I, o I é o único com um só vaso entrando no semilunar e é o de maior risco de necrose.
 como: O Einstein 2026 pôs o padrão em I ao lado do padrão em Y e de tipos de ZAPICO; a PUC-SP 2020 ofereceu X, I, Y e V.
 armadilha: Escolher o Y, que é o padrão mais conhecido do desenho, ou confundir padrão vascular com forma do semilunar (ZAPICO e VIEGAS descrevem a forma do osso, não os vasos).
@@ -99,7 +105,9 @@ A variância ulnar é a diferença de altura entre a superfície articular da ul
 
 O Campbell (p. 3312) cita HULTÉN, que descreveu a **variante ulna minus** em **78% dos pacientes com KIENBÖCK**, contra **23% dos punhos normais**; nenhum paciente com a doença tinha ulna plus, contra 16% dos controles. Mas o mesmo Campbell traz o contraponto: RING e colaboradores compararam 166 punhos com KIENBÖCK a um número semelhante de controles e encontraram **prevalência alta de ulna minus nos dois grupos**. A conclusão é que o papel exato da ulna minus é desconhecido: há doentes com variância positiva e negativa, há muita ulna minus na população, e o KIENBÖCK é raro.
 
-O Green (p. 640) é ainda mais cético. GELBERMAN encontrou relação significativa; D'HOORE, ao estudar 125 punhos normais e 52 pacientes, **não encontrou relação estatística**; e o argumento lógico é forte: se a ulna curta causasse a doença, a incidência de KIENBÖCK deveria ser maior em quem fez **ressecção de DARRACH** ou **encurtamento ulnar**, o que não se vê. NAKAMURA, estudando japoneses, achou ulna minus com a mesma frequência na população geral e nos doentes. O Green resume: a relação é **controversa**. Para a prova, a resposta-padrão continua sendo que a **ulna minus está associada** ao KIENBÖCK, e o detalhe do debate serve para as questões que pedem a afirmação incorreta.
+O Green (p. 640) é ainda mais cético. GELBERMAN encontrou relação significativa; D'HOORE, ao estudar 125 punhos normais e 52 pacientes, **não encontrou relação estatística**; e o argumento lógico é forte: se a ulna curta causasse a doença, a incidência de KIENBÖCK deveria ser maior em quem fez **ressecção de DARRACH** ou **encurtamento ulnar**, o que não se vê. NAKAMURA, estudando japoneses, achou ulna minus com a mesma frequência na população geral e nos doentes. O Green resume: a relação é **controversa**. Para a prova, a resposta-padrão continua sendo que a **ulna minus está associada** ao KIENBÖCK, e o detalhe do debate serve para as questões que pedem a afirmação incorreta. O título do artigo de D'HOORE e colaboradores, na lista de referências do capítulo, já diz a conclusão: "Negative ulnar variance is not a risk factor for Kienböck's disease" (J Hand Surg Am, 1994). Quando uma alternativa afirma que a ulna minus é "causa comprovada" ou está "presente em quase todos", ela está errada pelo Green.
+
+Há um modo de conciliar os dois lados que ajuda a raciocinar. A ulna curta talvez não cause a doença, mas muda a mecânica de quem já a tem: com o semilunar apoiado quase só no rádio, cada carga passa por ele, e nivelar a articulação reduz essa carga. Assim se explica que o encurtamento do rádio funcione clinicamente mesmo que a variância não seja a causa.
 
 ## A geometria do rádio
 
@@ -121,22 +129,20 @@ Algumas provas perguntam qual forma do semilunar é fator de risco, usando as cl
 | Consequência terapêutica | Ulna minus permite nivelar encurtando o rádio | Ulna neutra ou plus arrisca impacto ulnar |
 !fim
 
-!questoes central=mao-0243 relacionadas=mao-0805
+!questoes central=mao-0243 relacionadas=mao-0805 treino=mao-2306
 conceito: As provas consideram fator de risco a forma do semilunar tipo I de ZAPICO e tipo I de VIEGAS; os livros de referência associam o risco à ulna minus, ao vaso único e à concentração de carga no semilunar.
 como: Uma prova de Ortopedia e o INTO 2023 trouxeram o mesmo enunciado, combinando os tipos de ZAPICO e de VIEGAS em cinco alternativas.
 armadilha: Misturar os tipos (I com II, II com I) ou confundir a forma do osso com o padrão vascular em I.
-alerta: Nem o Green 7ª nem o Campbell 15ª descrevem as classificações de ZAPICO e VIEGAS; o gabarito oficial (alternativa A) de `mao-0243` e `mao-0243` foi mantido sem confirmação nos livros.
+alerta: Nem o Green 7ª nem o Campbell 15ª descrevem as classificações de ZAPICO e VIEGAS; o gabarito oficial (alternativa A) de `mao-0243` e `mao-0805` foi mantido sem confirmação nos livros, e o simulado `mao-2306` segue a mesma bibliografia (tipo 1 de ZAPICO, cerca de 30%).
 !fim
 
-# Fraturas do semilunar e a fratura do KIENBÖCK {radar=confirmado}
+# A fratura dentro do KIENBÖCK {radar=confirmado}
 
 ## Fratura aguda ou fratura patológica
 
-A fratura aguda do semilunar é rara: **1% de todas as fraturas do carpo** (Green, p. 637). O problema é que fica difícil saber se a fratura é aguda ou se é patológica, resultado de trauma repetitivo num osso já enfraquecido pela necrose. Por isso, o Box 16.7 do Green (p. 637) manda que o **primeiro passo** diante de uma fratura do semilunar seja decidir se o processo é **doença de KIENBÖCK, semilunar bipartido congênito ou fratura traumática aguda**.
+A fratura aguda do semilunar é rara, cerca de **1% das fraturas do carpo** (Green, p. 637), e o primeiro passo diante dela, segundo o Box 16.7, é decidir se o processo é **doença de KIENBÖCK, semilunar bipartido congênito ou fratura traumática aguda**. A classificação das fraturas frescas de TEISEN e HJARBAEK, seus mecanismos e o tratamento por polo estão no resumo green-fraturas-carpo; aqui interessa a fronteira com a necrose.
 
-O mecanismo habitual é a **compressão axial**: a cabeça do capitato é empurrada para dentro do semilunar com o punho em dorsiflexão e desvio ulnar, e pequenas variações de posição produzem padrões diferentes. TEISEN e HJARBAEK, a partir de 17 casos em 31 anos, propuseram cinco grupos de fraturas frescas: polo palmar (que envolve as artérias nutrícias palmares), lasca osteocondral da superfície proximal, polo dorsal, fratura sagital do corpo e fratura transversa do corpo; o Box do Green acrescenta a cominutiva como sexto tipo. Os mesmos autores observaram, num seguimento longo, que **fraturas do semilunar não evoluíram para necrose**, embora metade dos pacientes tivesse variância ulnar negativa (Green, p. 639).
-
-O Green (p. 638) dá uma pista de imagem: fraturas que **separam a superfície articular proximal do corpo do semilunar** costumam ser KIENBÖCK, e aparece uma **linha em crescente paralela ao contorno proximal**. Diante de dor persistente após fratura, a RM ajuda: a necrose é **perda de sinal homogênea no semilunar inteiro**, e não de uma parte só, como na fratura.
+Dois achados ajudam a separar uma coisa da outra. O primeiro é um dado de história natural: os próprios TEISEN e HJARBAEK observaram, num seguimento longo, que as **fraturas agudas do semilunar não evoluíram para necrose**, embora metade dos pacientes tivesse variância ulnar negativa (Green, p. 639). Ou seja, quebrar o semilunar não é o mesmo que ter KIENBÖCK, e a ulna curta sozinha não transforma uma fratura em necrose. O segundo é um sinal de imagem: fraturas que **separam a superfície articular proximal do corpo do semilunar**, com uma **linha em crescente paralela ao contorno proximal**, costumam ser KIENBÖCK (Green, p. 638). É a mesma lógica da necrose da cabeça do fêmur: o osso subcondral morto colapsa sob a cartilagem e desenha um crescente. Diante de dor persistente depois de uma fratura, a RM decide: a necrose é **perda de sinal homogênea no semilunar inteiro**, e não de uma parte só, como na fratura.
 
 ## O polo anterior
 
@@ -144,18 +150,7 @@ O Campbell (p. 3309, figuras 74.50 e 74.52) descreve o padrão comum de fratura 
 
 O Green (p. 640) acrescenta que a fragmentação do semilunar ocorre **sobretudo no plano sagital**, o que casa com a ideia de um traço coronal que separa um polo anterior de um corpo dorsal que afunda.
 
-!tabela Fraturas do semilunar de TEISEN e HJARBAEK (Green 7ª, cap. 16, Box 16.7, p. 637)
-| Tipo | Traço | Mecanismo | Conduta resumida |
-|---|---|---|---|
-| I | Polo palmar | Hiperextensão, avulsão ligamentar | Pequeno e estável: gesso 4 a 6 semanas; grande ou com VISI: RAFI |
-| II | Lasca osteocondral | Cisalhamento | Gesso; desbridamento artroscópico se persistir a dor |
-| III | Polo dorsal | Cisalhamento pelo capitato ou avulsão escafossemilunar | Pequeno e estável: gesso; grande ou com DISI: RAFI |
-| IV | Sagital do corpo | Cisalhamento na fratura-luxação radiocárpica | RAFI se desviada |
-| V | Transversa do corpo | Hiperextensão: capitato estende a metade dorsal | RAFI se desviada ou instável |
-| VI | Cominutiva | Compressão axial entre rádio e capitato | Grave ou crônica: carpectomia proximal |
-!fim
-
-!questoes central=mao-0418
+!questoes central=mao-0418 treino=mao-3210
 conceito: No KIENBÖCK, o padrão comum de fratura isola o polo anterior (palmar) do semilunar; o capitato distrai o traço e a consolidação fica difícil.
 como: O TEOT 2025 perguntou qual polo é acometido no padrão mais comum de fratura, entre distal, anterior, proximal e posterior.
 armadilha: Pensar na fratura aguda do polo dorsal, que é a avulsão mais comum no trauma, ou no polo proximal porque a lesão cartilaginosa começa na superfície proximal.
@@ -179,6 +174,8 @@ A **RM é o exame mais sensível** para o KIENBÖCK (Green, p. 640). Ela mostra 
 
 Na rotina do autor (Green, p. 641), a RM serve para documentar a **ausência de vascularidade em todas as sequências**, e a RM com sequência sensível à cartilagem informa o estado da cartilagem e a artrose. O Campbell (p. 3309) também recomenda correlacionar clínica, radiografia e RM para separar KIENBÖCK de impacto ulnar.
 
+Fora do Green, a escola alemã foi mais longe com o contraste. SCHMITT e KALB (Handchir Mikrochir Plast Chir, 2010; PMID 20552545) defendem que o **gadolínio é obrigatório** na RM do KIENBÖCK, porque só o estudo de perfusão separa com segurança a **zona necrótica** (proximal) da **zona reparativa** (média) e da **zona viável** (distal) dentro do semilunar; a TC, por sua vez, é a melhor para ver as fraturas proximais e a artrose. Daí nasce a ideia, cobrada em simulado, de que LICHTMAN estadia pela **morfologia** (radiografia) e SCHMITT pela **viabilidade** (RM com contraste). O Green 7 não traz a classificação de SCHMITT; ele usa a RM para documentar a avascularidade e a cartilagem.
+
 ## Tomografia e cintilografia
 
 A **TC** com reconstruções sagitais e coronais é a ferramenta do autor para avaliar **colapso, alinhamento do carpo e reconstrutibilidade** do semilunar, ou seja, a chance de salvar o osso (Green, p. 640 e 641). A **cintilografia** pode mostrar captação aumentada na fase inicial, mas foi **suplantada pela RM** e hoje é pouco usada.
@@ -196,7 +193,7 @@ A **TC** com reconstruções sagitais e coronais é a ferramenta do autor para a
 | Índice de altura do carpo | Altura do carpo / 3º metacarpo; normal 0,54 ± 0,03 | Cai no IIIB |
 !fim
 
-!questoes central=mao-0947
+!questoes central=mao-0947 treino=mao-1781,mao-3214
 conceito: Adulto jovem com dor dorsal central no punho, radiografia normal e RM com alteração difusa do semilunar é KIENBÖCK no estágio I de LICHTMAN; PREISER é a necrose do escafoide.
 como: A UFG 2019 descreveu mulher de 27 anos com dor sob o quarto compartimento extensor, sem trauma, radiografia normal e RM com alteração no semilunar, oferecendo PREISER I e II e KIENBÖCK I e II.
 armadilha: Marcar estágio II, que já exige esclerose na radiografia, ou PREISER, que é do escafoide.
@@ -207,7 +204,7 @@ alerta: O enunciado de `mao-0947` fala em hipercaptação em T1; o Green descrev
 
 ## De STAHL a LICHTMAN
 
-O sistema mais usado para estadiar a doença foi descrito por STAHL em 1947 e modificado por LICHTMAN e colaboradores em 1977 (Green, p. 640). A classificação usa **radiografias e RM**, e o tratamento se baseia no estágio. Ela é, na prática, uma linha do tempo da morte do osso: primeiro o osso morre sem mudar de aparência (I), depois fica denso e se trinca (II), depois afunda (IIIA), depois deixa o carpo cair (IIIB) e por fim desgasta as articulações vizinhas (IV).
+O sistema mais usado para estadiar a doença foi descrito por STAHL em 1947 e modificado por LICHTMAN e colaboradores em 1977 (Green, p. 640). Um detalhe histórico explica o contexto: o artigo de LICHTMAN de 1977, na lista de referências do capítulo, tinha como tema a **artroplastia de substituição com silicone** do semilunar (J Bone Joint Surg Am, 1977), técnica depois abandonada pela sinovite; a classificação nasceu como ferramenta para indicar uma cirurgia que hoje não se faz mais, e sobreviveu a ela. A classificação usa **radiografias e RM**, e o tratamento se baseia no estágio. Ela é, na prática, uma linha do tempo da morte do osso: primeiro o osso morre sem mudar de aparência (I), depois fica denso e se trinca (II), depois afunda (IIIA), depois deixa o carpo cair (IIIB) e por fim desgasta as articulações vizinhas (IV).
 
 ## Estágio I
 
@@ -231,6 +228,12 @@ O capítulo 13 do Green (p. 464), sobre instabilidades do carpo, explica a mecâ
 
 A separação entre IIIA e IIIB tem concordância ruim entre observadores. GOLDFARB mostrou que, com radiografias, a reprodutibilidade era fraca; ao acrescentar o critério de que o **ângulo radioescafoide precisa ser maior que 60°** para chamar de IIIB, o kappa subiu para **0,75** (Green, p. 641). CONDIT viu que o **ângulo radioescafoide pré-operatório é o que melhor se correlaciona com o resultado**: punhos com ângulo **acima de 60° vão mal com qualquer cirurgia que tente salvar o semilunar**. Em contrapartida, nos estágios I, II e IIIA o ângulo fica **abaixo de 60°**, e é por isso que o Green usa esse número como fronteira para indicar os procedimentos de preservação (p. 641 e 642). Outros dados de concordância: JENSEN, kappa entre 0,45 e 0,52; JAFARNIA, 0,71 entre quatro observadores.
 
+!questoes treino=mao-2321,mao-2688,mao-3179
+conceito: O IIIA é o semilunar colapsado (e fragmentado) com o carpo ainda alinhado e de altura normal; o IIIB acrescenta a flexão e a pronação fixas do escafoide, com o capitato migrado.
+como: Os simulados pediram o estágio do semilunar fragmentado e colapsado com carpo alinhado e o sinal que separa o 3B do 3A.
+armadilha: Marcar IIIB só porque o semilunar está colapsado: o que define o B é o escafoide, não o semilunar.
+!fim
+
 ## Estágio IV
 
 No estágio IV, o colapso continua e surgem **alterações artrósicas nas articulações radiocárpica e mediocárpica**: esclerose subcondral, estreitamento do espaço, osteófitos e cistos degenerativos. O paciente tem dor constante, inchaço e perda de movimento (Green, p. 641). O Campbell (Tabela 74.2) fala em **degeneração das articulações intercárpicas adjacentes**.
@@ -238,6 +241,17 @@ No estágio IV, o colapso continua e surgem **alterações artrósicas nas artic
 ## Onde os livros divergem
 
 Há uma divergência que precisa ser conhecida. O Green (Tabela 16.7) põe a **fragmentação** dentro do estágio II (múltiplas linhas de fratura sem colapso) e define o IIIA pelo **colapso** com carpo alinhado. O Campbell (Tabela 74.2), numa tabela de uma palavra por estágio, chama o IIIA de **fragmentação do semilunar**. Nas questões que perguntam "esclerose e linhas de fratura sem colapso", a resposta é **II**, como no Green. Nas que perguntam o que caracteriza o IIIB, os dois livros concordam: **migração proximal do capitato e rotação (flexão) fixa do escafoide**. Nenhum dos dois livros descreve um estágio IIIC; a classificação vai de I a IV, com o III dividido em A e B.
+
+## O estágio IIIC das versões recentes
+
+As provas que seguem bibliografia mais nova trazem um **estágio IIIC**. LICHTMAN, LESLEY e SIMMONS (J Hand Surg Eur, 2010; PMID 20621943) revisaram a classificação e o algoritmo de tratamento e discutiram novos estágios; na literatura que adota a versão modificada, o **IIIC é definido pela fratura coronal do semilunar** (ROCHA, J Orthop Case Rep, 2025; PMID 41281835). O raciocínio é coerente com a anatomia: uma fratura no plano coronal separa o polo palmar do dorsal, e, como o osso depende das anastomoses entre os dois lados, ela ameaça a viabilidade e a reconstrução de modo diferente do simples colapso. O Green 7 não usa esse estágio; quando ele aparecer, responda pela fratura coronal.
+
+!questoes treino=mao-2305,mao-1950
+conceito: A classificação de LICHTMAN se baseia em radiografias e RM; a versão modificada acrescenta o estágio IIIC, definido pela fratura coronal do semilunar.
+como: O SIMÃO 2024 pediu o que o IIIC tem a mais que o IIIB; o SIMÃO 2023, em que exames se baseia a classificação atualizada.
+armadilha: Acrescentar o quadro clínico ou a ultrassonografia à base da classificação, ou escolher a rotação do escafoide, que já define o IIIB.
+alerta: O estágio IIIC não está no Green 7 nem no Campbell 15; o gabarito de `mao-2305` (fratura coronal) foi conferido na literatura indexada citada acima.
+!fim
 
 !tabela Classificação de LICHTMAN nos dois livros (Green 7ª, cap. 16, Tabela 16.7, p. 641; Campbell 15ª, cap. 74, Tabela 74.2, p. 3311)
 | Estágio | Green 7ª | Campbell 15ª | Palavra-chave da prova |
@@ -260,7 +274,7 @@ armadilha: Achar que linhas de fratura já significam IIIA: sem colapso, continu
 alerta: A imagem de `mao-1505` não foi conferida; o gabarito oficial (estágio 2) foi mantido. O Campbell chama o IIIA de fragmentação, enquanto o Green põe as múltiplas linhas de fratura no estágio II; vale o critério do colapso.
 !fim
 
-!questoes central=mao-0023 relacionadas=mao-0529,mao-0890
+!questoes central=mao-0023 relacionadas=mao-0529,mao-0890 treino=mao-3200
 conceito: O IIIB de LICHTMAN é o colapso do semilunar com migração proximal do capitato e rotação fixa (flexão) do escafoide, com ângulo radioescafoide maior que 60 graus.
 como: O TARO 2018 pediu o que caracteriza o IIIB, com esclerose, rotação fixa do escafoide, diminuição da altura carpal e fragmentação; o TARO 2010 pediu a alteração radiográfica do IIIB; a UFG 2017 descreveu colapso com migração proximal do capitato.
 armadilha: Escolher diminuição da altura do carpo ou fragmentação, que acompanham o colapso, em vez do sinal que define o estágio (escafoide rodado e fixo); ou marcar IV, que exige artrose.
@@ -305,7 +319,7 @@ No **grau 4**, as **quatro superfícies** estão perdidas: artrodese total do pu
 
 O Campbell (p. 3314) registra o resultado do algoritmo em 27 pacientes com 10 anos: dor de 5 para 2 e nenhuma artrodese total.
 
-!questoes central=mao-0351
+!questoes central=mao-0351 treino=mao-3175
 conceito: Na classificação de BAIN e BEGG, a lesão da faceta semilunar do rádio somada à da superfície proximal do semilunar são duas superfícies não funcionais: grau II (2A), tratado com artrodese radioescafossemilunar.
 como: O CET-PR perguntou o tipo de BAIN e BEGG para lesão da cartilagem na faceta do rádio e na superfície proximal do semilunar.
 armadilha: Marcar III por achar que a lesão do rádio já indica três superfícies; o grau conta superfícies, e aqui são duas.
@@ -325,7 +339,7 @@ O Campbell (p. 3310 e Tabela 74.2) recomenda **imobilização gessada** quando a
 
 O Green não traz um protocolo de imobilização. Ele lista o conservador entre as opções históricas e, na preferência do autor, raciocina sempre em termos de semilunar salvável ou não salvável.
 
-!questoes central=mao-0642
+!questoes central=mao-0642 treino=mao-3169
 conceito: No estágio I, o Campbell indica imobilização e anti-inflamatório como primeira conduta, tratando como estágio II se não houver melhora; a imobilização exige 4 meses ou mais e tem resultado incerto.
 como: O TARO 2006 afirmou, para julgar certo ou errado, que no estágio I a imobilização por cerca de três meses tem bom resultado.
 armadilha: Dar como certa uma afirmação de resultado bom e previsível: os livros falam em primeira conduta, mas com resultado incerto e imobilização longa.
@@ -370,7 +384,7 @@ A vantagem do nivelamento sobre os procedimentos intra-articulares é que ele **
 
 Os resultados (Green, p. 643): WEISS, 29 pacientes de I a IIIB, **87% com menos dor**, movimento 32% maior e **sem progressão do colapso**, mas **sem melhora radiográfica do semilunar**; ROCK, 13 de 16 sem dor; ALMQUIST e BURNS, alívio em 11 de 12, sem nenhum paciente totalmente livre de dor.
 
-!questoes central=mao-0430
+!questoes central=mao-0430 treino=mao-3187
 conceito: No nivelamento para ulna minus, encurta-se o rádio cerca de 2 a 3 mm, porque 90% da descarga do semilunar ocorre nos primeiros 2 mm e acima de 4 mm não há ganho e surge incongruência da radioulnar distal; o Campbell descreve o encurtamento de 2 mm.
 como: O TARO 2025 perguntou de quantos milímetros é o encurtamento do rádio no nivelamento para KIENBÖCK com ulna minus, entre 1, 2, 3 e 4 mm.
 armadilha: Marcar 4 mm, que é o limite a partir do qual nada se ganha, ou achar que o alvo é apenas zerar a variância.
@@ -386,7 +400,9 @@ Quando a variância é neutra ou positiva, o rádio já está tão curto quanto 
 
 O encurtamento do capitato, isolado ou combinado com **artrodese capitato-hamato**, foi **descrito por ALMQUIST em 1993**, com taxas de **revascularização do semilunar de até 83%** (Green, p. 646; Campbell, p. 3312). O **estágio IV contraindica** a técnica. O Campbell acrescenta que ela pode ser associada à artrodese carpometacarpal da parte distal do capitato, para uso em punhos com variância neutra.
 
-A técnica (Green, p. 646; Campbell, técnica 74.20, p. 3312 e 3313) usa incisão dorsal da base do terceiro metacarpo ao tubérculo de LISTER, abertura do quinto compartimento e afastamento dos tendões do quarto compartimento sem descolá-lo, para não lesar a vascularização. A osteotomia é feita na **cintura do capitato, no nível do polo distal do escafoide**, com osteótomo fino para **não romper a cápsula volar**, que leva sangue. Comprime-se a cabeça do capitato contra o fragmento distal e fixa-se com dois fios de 0,062 polegada (1,6 mm) cruzados ou parafusos sem cabeça. VIOLA notou que a **ponta do hamato fica proeminente** e impede o descarregamento; a solução é ressecá-la ou fazer a osteotomia atravessando capitato e hamato juntos. ALMQUIST relatou força de preensão de 80% do lado oposto e 83% de satisfação.
+A técnica (Green, p. 646; Campbell, técnica 74.20, p. 3312 e 3313) usa incisão dorsal da base do terceiro metacarpo ao tubérculo de LISTER, abertura do quinto compartimento e afastamento dos tendões do quarto compartimento sem descolá-lo, para não lesar a vascularização. A osteotomia é feita na **cintura do capitato, no nível do polo distal do escafoide**, com osteótomo fino para **não romper a cápsula volar**, que leva sangue. Comprime-se a cabeça do capitato contra o fragmento distal e fixa-se com dois fios de 0,062 polegada (1,6 mm) cruzados ou parafusos sem cabeça. VIOLA notou que a **ponta do hamato fica proeminente** e impede o descarregamento; a solução é ressecá-la ou fazer a osteotomia atravessando capitato e hamato juntos. ALMQUIST relatou força de preensão de 80% do lado oposto e 83% de satisfação. HANEL e HUNT descreveram que a melhora atinge um platô entre 8 e 12 meses depois da cirurgia (Green, p. 646).
+
+Por que encurtar o capitato descarrega o semilunar? Porque a cabeça do capitato é o pilão que empurra o semilunar contra o rádio. Encurtá-lo alguns milímetros desloca a carga da coluna central para o hamato e, com a artrodese capitato-hamato, para a coluna ulnar; no modelo de HORII, a combinação reduziu a força radiossemilunar em 66%. Ao mesmo tempo, a osteotomia na cintura do capitato cria uma resposta vascular local, o que talvez explique as taxas de revascularização relatadas. A armadilha mecânica é a de VIOLA: se a ponta proximal do hamato continuar mais alta que o capitato encurtado, ela vira o novo pilão e anula a descarga.
 
 O Campbell (p. 3312) traz o contrapeso: MANSOUR e HEGAZY viram que o encurtamento do capitato funciona melhor no **estágio II**; no **IIIA não evitou o colapso** e não melhorou dor, força ou função, e eles recomendam **não usá-lo no IIIA**.
 
@@ -400,7 +416,7 @@ A osteotomia de fechamento radial reduz a **inclinação radial** (Green, p. 646
 
 ILLARRAMENDI teve a ideia ao ver o KIENBÖCK **regredir em pacientes que sofreram fratura do rádio distal**. A descompressão metafisária do rádio (e da ulna, na descrição original) consiste em curetar e impactar o osso esponjoso por uma pequena janela cortical, criando uma resposta vascular local (Green, p. 646; Campbell, p. 3313). Em 22 pacientes seguidos por 10 anos, 16 ficaram sem dor e ninguém foi reoperado. SHERMAN mostrou que ela **não altera a carga** na fossa semilunar: o efeito é vascular, com aumento da drenagem venosa e redução da congestão intraóssea. As vantagens são a simplicidade, não invadir a articulação e não precisar de implante; ILLARRAMENDI relatou 90% de resultados satisfatórios (43 de 48), e DE CARLI viu progressão radiográfica em só 2 de 15 punhos IIIA em 13 anos. A técnica do Campbell (74.21) faz uma janela de cerca de 2,0 por 0,5 cm, a 2 cm do estiloide, com gesso por 2 semanas. MEHRPOUR descomprimiu o próprio semilunar, com 18 bons resultados em 20.
 
-!questoes central=mao-0399
+!questoes central=mao-0399 treino=mao-2551,mao-2614
 conceito: A técnica de ALMQUIST para o KIENBÖCK é o encurtamento do capitato (com ou sem artrodese capitato-hamato), usado com ulna neutra ou positiva, com revascularização de até 83%.
 como: A SBOT-SP perguntou em que consiste a técnica de ALMQUIST, com osteotomia do capitato, encurtamento do rádio, descompressão do rádio distal e cunha do rádio.
 armadilha: Marcar o encurtamento do rádio porque ALMQUIST e BURNS publicaram uma série com ele; a técnica que leva o nome de ALMQUIST é a do capitato.
@@ -418,7 +434,9 @@ A vascularização dorsal do rádio distal é constante. Há arcos dorsais (do c
 
 As **artérias do quarto e do quinto compartimentos extensores (4ª e 5ª ACE)** são as mais úteis para o KIENBÖCK. Prefere-se o enxerto da 4ª ACE alimentado pela 5ª, pela origem comum, porque a **5ª ACE tem calibre maior**, e o pedículo alcança qualquer ponto do carpo. A 5ª ACE é achada no assoalho radial do quinto compartimento e seguida até a origem na **interóssea anterior**; o enxerto é centrado **cerca de 11 mm proximal à radiocárpica**, sobre a 4ª ACE; liga-se a interóssea anterior proximalmente. Depois, capsulotomia dorsal que poupa ligamentos, janela dorsal no semilunar, retirada do osso necrótico, fio **escafocapitato** com o punho distraído para descarregar o semilunar, enxerto esponjoso e inserção do enxerto com o **pedículo vertical e a cortical em orientação proximodistal**, para manter a altura (Green, p. 643 e 644). MORAN, em 26 pacientes: 92% com melhora da dor, força de 50% para 89% do lado oposto e revascularização na RM em 71%.
 
-O enxerto da **2,3 ACSR** (artéria intercompartimental suprarretinacular do segundo e terceiro compartimentos) corre sobre o **tubérculo de LISTER**, é fácil de colher e alcança toda a fileira proximal (Green, p. 644). Outra opção usa a **base do segundo ou do terceiro metacarpo**, pelo arco vascular metacarpal dorsal, por uma única incisão mediana (Green, p. 644, figura 16.65, que identifica a artéria metacarpal dorsal do segundo espaço).
+O enxerto da **2,3 ACSR** (artéria intercompartimental suprarretinacular do segundo e terceiro compartimentos; ICSRA em inglês) tem origem proximal na **artéria interóssea anterior** ou na sua divisão posterior, corre **superficial ao retináculo, diretamente sobre o tubérculo de LISTER**, e se anastomosa com os arcos intercárpico dorsal e radiocárpico dorsal e às vezes com a 4ª ACE (Green, p. 644). É fácil de colher, e o arco de rotação alcança toda a fileira proximal; o fluxo pode ser anterógrado pela 5ª ACE. Compare com a 1,2 ACSR de ZAIDEMBERG, que fica entre o primeiro e o segundo compartimentos, nasce da radial e tem pedículo curto: serve ao escafoide, não ao semilunar.
+
+Uma regra para não confundir as artérias do dorso do rádio: as **suprarretinaculares** (1,2 e 2,3) correm **por cima** do retináculo, entre compartimentos; as **compartimentais** (4ª e 5ª ACE) correm **no assoalho** dos compartimentos, junto ao osso. A 4ª ACE fica no assoalho do quarto compartimento, a 5ª na parede radial do quinto. Outra opção usa a **base do segundo ou do terceiro metacarpo**, pelo arco vascular metacarpal dorsal, por uma única incisão mediana (Green, p. 644, figura 16.65, que identifica a artéria metacarpal dorsal do segundo espaço).
 
 HORI descreveu o **implante de feixe vascular** da **segunda artéria metacarpal dorsal** (intermetacarpal), entre o indicador e o médio, com 5 a 6 cm de pedículo passado por um furo de 2,7 mm no semilunar, de dorsal para volar. Exige arco do carpo relativamente normal e **descarga do semilunar** (fixador, encurtamento do capitato ou pino escafocapitato). Houve melhora em 8 de 9 casos (Green, p. 644 e 645).
 
@@ -436,7 +454,7 @@ O **pisiforme vascularizado** (BOCHUD e BÜCHLER, 32 pacientes) restaurou a anat
 | Côndilo femoral medial | Retalho livre osteocondral | IIIA e IIIB (PET) | Freou o colapso a curto prazo |
 !fim
 
-!questoes central=mao-1619 relacionadas=mao-1215,mao-0758
+!questoes central=mao-1619 relacionadas=mao-1215,mao-0758 treino=mao-2626,mao-3191
 conceito: O enxerto ósseo vascularizado é indicado nos estágios I, II e IIIA, enquanto o semilunar é viável e reconstruível; a base do segundo metacarpo pelo arco metacarpal dorsal é uma das fontes.
 como: A USP-SP 2026 pediu a afirmação correta sobre enxerto vascularizado, opondo o uso em II e IIIA com a artéria metacarpal dorsal a afirmações de que não muda a evolução, de que só serve no colapso completo e de que a esclerose o contraindica.
 armadilha: Achar que a esclerose (estágio II) contraindica a revascularização, ou que o enxerto serve para o semilunar fragmentado e colapsado do IIIB e IV, quando o que se precisa é de salvamento.
@@ -444,16 +462,25 @@ armadilha: Achar que a esclerose (estágio II) contraindica a revascularização
 
 # Salvamento: IIIB e IV {radar=confirmado}
 
-Quando o capitato já subiu e o escafoide rodou (IIIB), salvar o semilunar deixa de ser o objetivo: é preciso **tratar o colapso do carpo** (Green, p. 646; Campbell, Tabela 74.2). As opções são a **carpectomia da fileira proximal** e as artrodeses intercárpicas **STT** e **escafocapitato**, que mantêm o escafoide fora da flexão e tiram carga do semilunar (Green, cap. 13, p. 464). WATSON fez 71 artrodeses STT: 46% de resultados excelentes e 32% bons, altura do carpo mantida em 35 de 36 e só 5,6% de novo salvamento; a prótese de silicone associada foi abandonada pela **sinovite particulada**. A escafocapitato é tecnicamente mais fácil, sem diferença de carga em relação à STT (Green, cap. 12, p. 380). NAKAMURA teve **melhores resultados com a carpectomia proximal** do que com as artrodeses limitadas e a recomenda no lugar da STT (Green, p. 647, figura 16.70: carpectomia para IIIB). O Campbell (p. 3314) lembra as artrodeses escafocapitato, capitato-hamato e hamato-piramidal, e que a excisão simples do semilunar é controversa e inadequada para trabalho pesado.
+Quando o capitato já subiu e o escafoide rodou (IIIB), salvar o semilunar deixa de ser o objetivo: é preciso **tratar o colapso do carpo** (Green, p. 646; Campbell, Tabela 74.2). As opções são a **carpectomia da fileira proximal** e as artrodeses intercárpicas **STT** e **escafocapitato**, que mantêm o escafoide fora da flexão e tiram carga do semilunar (Green, cap. 13, p. 464). WATSON fez 71 artrodeses STT: 46% de resultados excelentes e 32% bons, altura do carpo mantida em 35 de 36 e só 5,6% de novo salvamento; a prótese de silicone associada foi abandonada pela **sinovite particulada**. A escafocapitato é tecnicamente mais fácil, sem diferença de carga em relação à STT (Green, cap. 12, p. 380). NAKAMURA teve **melhores resultados com a carpectomia proximal** do que com as artrodeses limitadas, sem significância estatística, e a recomenda no lugar da STT (Green, p. 647, figura 16.70: carpectomia para IIIB). DE SMET (J Hand Surg Br, 2005) relatou 21 carpectomias no KIENBÖCK avançado, e CROOG e STERN (J Hand Surg Am, 2008), da lista de referências do capítulo, seguiram carpectomias no KIENBÖCK avançado por 10 anos em média. O implante de **pirocarbono** foi tentado, mas sem seguimento longo (Green, p. 647).
+
+Por que artrodese STT ou escafocapitato no IIIB? Porque o problema do IIIB já não é o semilunar, e sim o escafoide que caiu em flexão e deixou o capitato descer entre os ossos da fileira proximal. Fundir o escafoide ao trapézio e ao trapezoide, ou ao capitato, trava o escafoide em posição corrigida e faz dele a coluna que sustenta a carga, tirando-a do semilunar. A escafocapitato é tecnicamente mais fácil, mas o cuidado é **manter a distância entre escafoide e capitato**, para não encurtar a coluna radial (Green, p. 646 e 647). A carpectomia proximal resolve de outro jeito: retira a fileira doente e assenta o capitato na fossa semilunar do rádio, o que exige cabeça do capitato e fossa semilunar com cartilagem boa. O Campbell (p. 3314) lembra as artrodeses escafocapitato, capitato-hamato e hamato-piramidal, e que a excisão simples do semilunar é controversa e inadequada para trabalho pesado.
 
 No **estágio IV**, com artrose radiocárpica e mediocárpica, a carpectomia ainda é possível se a **cabeça do capitato e a fossa do semilunar** estiverem preservadas; na maioria, indica-se a **artrodese total do punho** (Green, p. 647). Na preferência de LEE (p. 647 e 648): semilunar não salvável com cartilagem preservada = carpectomia proximal com neurectomia do interósseo posterior; sem cartilagem = carpectomia com interposição capsular ou artrodese total.
 
 A técnica de GRANER, cobrada com imagem, só aparece nos livros como referência: o artigo de 1966 sobre **artrodese dos ossos do carpo no KIENBÖCK** (Green, cap. 12) e um estudo anatômico sobre a "fusão intercárpica de GRANER" (Green, cap. 44).
 
-!questoes central=mao-0150 relacionadas=mao-0125,mao-0294,mao-0970
+!questoes central=mao-0150 relacionadas=mao-0125,mao-0294,mao-0970 treino=mao-1775
 conceito: A carpectomia da fileira proximal é indicada no IIIB de LICHTMAN, quando o carpo colapsou e o semilunar não é salvável, mesmo com ulna minus.
 como: A SBOT-SP, o TEOT 2023 e uma prova de Ortopedia perguntaram o estágio da carpectomia (IIIB); a UFG 2020 deu IIIB com ulna minus e ofereceu nivelamento, enxerto e descompressão.
 armadilha: Indicar o nivelamento só porque há ulna minus; ou confundir com BAIN e BEGG, que indica a carpectomia nos graus 1 e 2B.
+!fim
+
+!questoes central=mao-0968
+conceito: A artrodese triescafoide (STT) trava o escafoide em posição corrigida; foi descrita para a instabilidade rotatória do escafoide e usada por WATSON no KIENBÖCK para descarregar o semilunar.
+como: A UFG 2020 pediu a indicação da artrodese triescafoide, entre subluxação rotatória do escafoide, síndrome de FENTON, VISI e artrite radioescafoide.
+armadilha: Indicar STT na artrite radioescafoide, que contraindica a técnica (a carga passaria toda pela fossa escafoide doente).
+alerta: A indicação na subluxação rotatória do escafoide está no capítulo de instabilidades (Green 7, cap. 13; resumo green-instabilidade-carpo); o gabarito oficial de `mao-0968` foi mantido.
 !fim
 
 !questoes central=mao-0833
@@ -464,6 +491,26 @@ alerta: Os livros citam GRANER só nas referências; a imagem de `mao-0833` não
 !fim
 
 # Estágio a estágio {radar=confirmado}
+
+## O algoritmo do autor
+
+A preferência de LEE (Green, p. 647, Fig. 16.70) cabe numa árvore de duas perguntas, e vale entendê-la galho por galho, porque as questões de conduta são todas variações dela.
+
+**Primeira pergunta: o semilunar é salvável?** O autor responde com três exames. A radiografia mostra o colapso e o alinhamento do carpo; a RM mostra a avascularidade em todas as sequências e o estado da cartilagem; a TC mostra a morfologia, isto é, se ainda existe um osso inteiro o bastante para ser descarregado ou revascularizado. Na prática, salvável quer dizer estágio I, II ou IIIA, com ângulo radioescafoide abaixo de 60° e sem fragmentação que torne o osso irreconstruível.
+
+**Segunda pergunta, para o salvável: qual é a variância ulnar?**
+
+- **Ulna negativa**: encurtar o rádio **2 a 3 mm**, com **neurectomia do interósseo posterior**.
+- **Ulna neutra ou positiva**: **enxerto vascularizado da 4ª e 5ª ACE**, também com neurectomia do interósseo posterior.
+
+**Para o não salvável, a pergunta muda: a cartilagem da cabeça do capitato e da fossa semilunar está preservada?**
+
+- **Preservada**: carpectomia proximal com neurectomia do interósseo posterior.
+- **Não preservada**: carpectomia proximal com interposição capsular ou artrodese total do punho.
+
+A **neurectomia do nervo interósseo posterior** aparece em todos os galhos, e o motivo é simples: esse nervo leva a sensibilidade da cápsula dorsal do punho, exatamente onde o KIENBÖCK dói. Seccioná-lo na mesma incisão acrescenta alívio de dor sem custo motor, porque, no nível do punho, ele já não inerva músculo algum. É um gesto pequeno que melhora o resultado de qualquer uma das cirurgias principais.
+
+Note o que o autor **não** faz de rotina: não usa o encurtamento do capitato como primeira escolha na ulna neutra (prefere revascularizar), não usa artrodeses limitadas no lugar da carpectomia e não indica nada que preserve o semilunar quando o ângulo radioescafoide passou de 60°.
 
 !tabela Tratamento por estágio (Green 7ª, cap. 16, p. 641 a 648; Campbell 15ª, cap. 74, Tabela 74.2, p. 3311)
 | Estágio | Ulna minus | Ulna neutra ou plus |
@@ -481,14 +528,23 @@ armadilha: Aceitar a prótese de silicone no II ou a artrodese STT no IV.
 alerta: `mao-0604` está sem gabarito oficial; o gabarito da bibliografia da banca (Skeletal Trauma) marca a ressecção do semilunar no estágio III, resposta que o site segue; o Campbell chama essa ressecção de controversa, e o Green sustentaria o nivelamento do rádio no estágio I com ulna minus.
 !fim
 
-# Criança, PREISER e capitato {radar=fundamento}
+# KIENBÖCK na criança {radar=fundamento}
 
-O KIENBÖCK é **relativamente incomum em crianças** (Rockwood and Wilkins' Fractures in Children, 10ª ed.), e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 358), associa a necrose do semilunar à **deformidade de MADELUNG**, ao contrário da associação habitual com ulna curta.
+O KIENBÖCK é **relativamente incomum em crianças** (Rockwood and Wilkins' Fractures in Children, 10ª ed.), e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 358), associa a necrose do semilunar à **deformidade de MADELUNG**, ao contrário da associação habitual com ulna curta. O Green 7 e o Campbell 15 não trazem um protocolo para a criança.
 
-A **doença de PREISER** é a osteonecrose do **escafoide** (Green, p. 648 e 649). KALAINOV dividiu em **tipo 1** (osso inteiro, que fragmenta e colapsa) e **tipo 2** (parcial, que mantém a arquitetura). Causas: colagenoses, corticoide, trauma repetitivo ou idiopática; pode ocorrer em crianças. Sem tratamento padronizado: revascularização como no KIENBÖCK (Campbell, p. 3293 aprox.), cunha radial ou excisão do escafoide com artrodese mediocárpica ou carpectomia. A **necrose do capitato** ameaça o polo proximal, intra-articular, por fluxo retrógrado como no escafoide (Green, p. 649).
+O raciocínio que as provas esperam vem do potencial biológico: a criança revasculariza e remodela o semilunar muito melhor que o adulto, e por isso o tratamento inicial é **conservador, com imobilização**. Os algoritmos atuais de LICHTMAN tratam a doença de início na infância como um grupo próprio, separado do adulto (LICHTMAN, LESLEY e SIMMONS, J Hand Surg Eur, 2010; PMID 20621943).
+
+!questoes treino=mao-2049
+conceito: Na criança, o KIENBÖCK tem grande potencial de revascularização, e o tratamento inicial é conservador, com imobilização.
+como: O simulado do SBCM 2024 pediu a melhor conduta pelo algoritmo atual de LICHTMAN quando a doença aparece na infância.
+armadilha: Aplicar o algoritmo do adulto (encurtar o rádio, enxerto vascularizado) a um osso que ainda remodela.
+alerta: O Green 7 e o Campbell 15 não tratam do KIENBÖCK infantil; o gabarito de `mao-2049` segue o algoritmo de LICHTMAN citado, cujo resumo no PubMed não detalha a conduta na criança.
+!fim
+
+A doença de PREISER (necrose do escafoide) e a necrose do capitato, que fecham o capítulo 16 do Green, estão no resumo green-fraturas-carpo.
 
 # Fechamento {radar=fundamento}
 
-Decida em duas perguntas: o semilunar é salvável (sem colapso do carpo, ângulo radioescafoide abaixo de 60°)? E qual é a variância ulnar? A partir delas, nivelamento, capitato, revascularização ou salvamento.
+Decida em duas perguntas: o semilunar é salvável (sem colapso do carpo, ângulo radioescafoide abaixo de 60°)? E qual é a variância ulnar? A partir delas, nivelamento, capitato, revascularização ou salvamento. Por trás das duas perguntas está uma só ideia: o semilunar morre porque recebe sangue por poucas portas e carga demais; todo tratamento ou tira carga dele (nivelar, encurtar o capitato, cunha, artrodeses), ou lhe dá sangue novo (enxertos, descompressão), ou o retira do caminho quando já não há o que salvar (carpectomia, artrodese).
 
-> **Na prova:** homem de **15 a 40 anos**, **punho dominante**, braçal; padrão **I** = vaso único; **ulna minus** associada; fratura do **polo anterior**; RM com **T1 baixo no osso inteiro**; LICHTMAN **II esclerose sem colapso**, **IIIB capitato migrado e escafoide em rotação fixa**; BAIN e BEGG conta superfícies (faceta do rádio + proximal do semilunar = **2A**); rádio encurtado **2 mm** (até 3); ALMQUIST = **capitato**; enxerto vascularizado **I a IIIA**; IIIB = **carpectomia proximal**.
+> **Na prova:** homem de **15 a 40 anos**, **punho dominante**, braçal; padrão **I** = vaso único; dorsal pelos **dois arcos transversos proximais**; 20% só com nutriente **palmar**; **ulna minus** associada, mas relação **controversa**; SCHILTENWOLF: pressão **40 mmHg** maior em extensão; fratura do **polo anterior**; RM com **T1 baixo no osso inteiro**; LICHTMAN **II esclerose sem colapso**, **IIIA semilunar mais largo no perfil**, **IIIB capitato migrado e escafoide em rotação fixa**, ângulo radioescafoide **maior que 60°**; IIIC (versão modificada) = **fratura coronal**; BAIN e BEGG conta superfícies (faceta do rádio + proximal do semilunar = **2A**, artrodese radioescafossemilunar); rádio encurtado **2 mm** (até 3; 90% do efeito nos primeiros 2 mm); ALMQUIST = **capitato**, e a ponta do hamato pode anular a descarga; 2,3 ACSR **sobre o LISTER**; enxerto da **4ª ACE** com a 5ª; IIIB = **carpectomia proximal**.
