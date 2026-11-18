@@ -11737,15 +11737,15 @@
   },
   {
    "id": "green-dupuytren",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Doença de DUPUYTREN",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 80)",
    "capitulo": "Capítulo 4 · Dupuytren Disease",
-   "resumo": "Homem branco idoso, herança autossômica dominante de penetrância variável, bilateral mas assimétrica, anular e mínimo; diabetes, epilepsia e anticonvulsivantes, tabagismo, álcool e hipercolesterolemia associados, artrite reumatoide não; diátese de HUESTON (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE, PEYRONIE); miofibroblasto e colágeno III (razão III/I acima de 35% na proliferativa, 20% a 35% na involutiva e abaixo de 20% na residual de LUCK); TUBIANA em degraus de 45 graus; corda pré-tendínea na MF, corda espiral (pré-tendínea, banda espiral, lâmina digital lateral e GRAYSON) que leva o feixe para a linha média e para a superfície, retrovascular e lateral na IFD; CLELAND poupado; cirurgia com MF de 30 graus ou qualquer IFP de 15 graus; agulha mais barata, dermofasciectomia com menor recidiva; JACOBSEN no mínimo, McCASH palma aberta; lesão de nervo digital e flare como complicações.",
+   "resumo": "Doença hereditária mais comum do tecido conjuntivo; nenhum tratamento atua na doença, todos tratam a contratura; homem branco idoso, autossômica dominante de penetrância variável, bilateral mas assimétrica, anular e mínimo; receptor androgênico e estrogênio explicam o atraso de 10 a 15 anos na mulher; diabetes (doença leve, com desvio radial), epilepsia, tabagismo, álcool, hipercolesterolemia e IMC baixo associados, artrite reumatoide não; diátese (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE, homem, polegar, mais de dois dedos); miofibroblasto, TGF beta 1 e colágeno III; LUCK com razão III/I acima de 35%, de 20% a 35% e abaixo de 20%; TUBIANA em degraus de 45 graus sem a IFD; fasciodese e contratura dinâmica; CLELAND, transverso superficial e septos de LEGUEU e JUVARA poupados por stress shielding; corda central na MF, várias cordas na IFP (central digital, retrovascular, espiral ou lateral); corda espiral (pré-tendínea, banda espiral, lâmina digital lateral e GRAYSON) leva o feixe para a linha média e a superfície; MF de 30 graus ou IFP de 15 graus; agulha mais barata, dermofasciectomia com menor recidiva; JACOBSEN no mínimo, McCASH palma aberta; flare 1 em 10, nervo digital 3% (5 vezes mais na recidiva); recontratura precoce, progressiva e tardia; tamoxifeno.",
    "acesso": "gratis",
-   "minutos": 37,
+   "minutos": 75,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11753,8 +11753,18 @@
      "radar": "fundamento"
     },
     {
+     "id": "doenca-e-contratura-a-ideia-que-organiza-o-capit",
+     "titulo": "Doença e contratura: a ideia que organiza o capítulo",
+     "radar": "fundamento"
+    },
+    {
      "id": "quem-tem-a-doenca",
      "titulo": "Quem tem a doença",
+     "radar": "confirmado"
+    },
+    {
+     "id": "doencas-e-habitos-associados",
+     "titulo": "Doenças e hábitos associados",
      "radar": "confirmado"
     },
     {
@@ -11793,6 +11803,16 @@
      "radar": "confirmado"
     },
     {
+     "id": "recidiva-como-se-define-e-por-que-acontece",
+     "titulo": "Recidiva: como se define e por que acontece",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-historia-do-tratamento",
+     "titulo": "A história do tratamento",
+     "radar": "fundamento"
+    },
+    {
      "id": "quando-tratar",
      "titulo": "Quando tratar",
      "radar": "confirmado"
@@ -11801,6 +11821,11 @@
      "id": "fasciotomia-agulha-bisturi-e-colagenase",
      "titulo": "Fasciotomia: agulha, bisturi e colagenase",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-agulha-passo-a-passo-o-metodo-preferido-do-aut",
+     "titulo": "A agulha passo a passo: o método preferido do autor",
+     "radar": "clinico"
     },
     {
      "id": "comparando-os-procedimentos-custo-e-recidiva",
@@ -11813,9 +11838,19 @@
      "radar": "confirmado"
     },
     {
-     "id": "complicacoes-e-recidiva",
-     "titulo": "Complicações e recidiva",
+     "id": "casos-dificeis-e-cirurgia-de-salvamento",
+     "titulo": "Casos difíceis e cirurgia de salvamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "complicacoes-e-recidiva-depois-do-tratamento",
+     "titulo": "Complicações e recidiva depois do tratamento",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-futuro-uma-doenca-medica",
+     "titulo": "O futuro: uma doença médica",
+     "radar": "oportunidade"
     },
     {
      "id": "fechamento",
@@ -11876,7 +11911,40 @@
     "mao-1285",
     "mao-0944"
    ],
-   "treino": [],
+   "treino": [
+    "mao-3351",
+    "mao-3353",
+    "mao-3354",
+    "mao-1970",
+    "mao-2023",
+    "mao-2197",
+    "mao-2413",
+    "mao-3356",
+    "mao-2345",
+    "mao-2546",
+    "mao-2368",
+    "mao-3346",
+    "mao-3352",
+    "mao-2484",
+    "mao-3343",
+    "mao-3345",
+    "mao-3342",
+    "mao-3357",
+    "mao-2024",
+    "mao-2624",
+    "mao-3349",
+    "mao-3347",
+    "mao-3350",
+    "mao-1809",
+    "mao-3355",
+    "mao-2407",
+    "mao-2109",
+    "mao-1810",
+    "mao-3344",
+    "mao-1808",
+    "mao-2444",
+    "mao-3348"
+   ],
    "subtemas": [
     "Doença de Dupuytren"
    ]
