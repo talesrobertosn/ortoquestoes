@@ -1,0 +1,28 @@
+/* Base comum dos "Stories com alternativas" (guia: ../STORIES-COM-ALTERNATIVAS.md).
+   Fontes, o ladrilho da marca, a dica da enquete e utilidades. Cada post traz a sua temática por cima. */
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Source; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Source; font-style: italic; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+
+:root {
+  --verde: #14655E;
+  --verde2: #00806f;
+  --noite: #0E2E2A;
+  --ardosia: #243b47;
+  --creme: #F6EEDB;
+  --creme2: #FBF7EC;
+  --ouro: #F4CF7C;
+  --ouro2: #dcaa45;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #111; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; isolation: isolate; }
+.abs { position: absolute; }
+
+/* Dica da enquete: sem caixa; a área abaixo dela (450 px ou mais) fica livre para a figurinha A, B, C, D */
+.dica { position: absolute; left: 0; right: 0; text-align: center; }
+.dica .t { font: 700 25px/1 Jakarta; letter-spacing: 4px; text-transform: uppercase; }
+.dica .s { margin-top: 12px; font: 500 24px/1 Inter; opacity: .85; }
+.dica svg { display: block; margin: 16px auto 0; width: 36px; height: 20px; }

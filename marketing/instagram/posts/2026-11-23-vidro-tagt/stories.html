@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Vidro claro em degradê — TAGT, TEOT 2024 (stories)</title>
+<!-- Stories com alternativas (guia: estilos/STORIES-COM-ALTERNATIVAS.md), versão genérica clara: degradê creme,
+     menta e verde-azulado do site, cartões de vidro. Área livre (sem caixa) para a enquete A/B/C/D no story 1.
+     Questão real: joelho-0143 (TEOT 2024), gabarito oficial A (TAGT).
+     Fontes: Campbell's Operative Orthopaedics, 15ª ed., cap. 52, p. 2195 a 2202, Tabela 52.2 e Fig. 52.6 (p. 2198). -->
+<link rel="stylesheet" href="../../estilos/stories-com-alternativas/base.css">
+<style>
+section { color: #183330; }
+.fundo { position: absolute; inset: -60px; z-index: -2;
+  background:
+    radial-gradient(60% 30% at 90% 4%, rgba(244,207,124,.45) 0%, rgba(244,207,124,0) 70%),
+    radial-gradient(70% 40% at 0% 45%, #bfe8da 0%, rgba(191,232,218,0) 70%),
+    radial-gradient(80% 40% at 100% 80%, #3fae96 0%, rgba(63,174,150,0) 72%),
+    radial-gradient(70% 35% at 10% 100%, #1d8a7c 0%, rgba(29,138,124,0) 72%),
+    linear-gradient(180deg, #fbf7ec 0%, #e3f4ec 35%, #a7dccb 70%, #4fae98 100%); }
+.grao { position: absolute; inset: 0; z-index: -1; opacity: .05;
+  background-image: radial-gradient(#0b3b35 1px, transparent 1px); background-size: 6px 6px; }
+.topo { position: absolute; left: 64px; right: 64px; top: 228px; display: flex; align-items: center; gap: 18px; }
+.topo svg { width: 62px; height: 62px; border-radius: 15px; flex: none; box-shadow: 0 10px 22px -10px rgba(20,101,94,.6); }
+.topo .nome { font: 700 33px/1 Jakarta; color: var(--verde); }
+.topo .pil { margin-left: auto; padding: 13px 22px; border-radius: 999px; font: 700 22px/1 Jakarta; letter-spacing: 2.5px; text-transform: uppercase; color: var(--verde);
+  background: rgba(255,255,255,.65); border: 1.5px solid #fff; box-shadow: 0 10px 22px -14px rgba(20,101,94,.6); }
+.rot { font: 700 23px/1 Jakarta; letter-spacing: 3.5px; text-transform: uppercase; color: var(--verde2); }
+h1 { font: 800 66px/1.02 Jakarta; letter-spacing: -2.2px; color: var(--ardosia); }
+h1 em { font-style: normal; color: var(--verde2); }
+.vidro { position: absolute; border-radius: 44px;
+  background: linear-gradient(150deg, rgba(255,255,255,.82), rgba(255,255,255,.5));
+  border: 1.5px solid #fff; backdrop-filter: blur(28px) saturate(160%);
+  box-shadow: 0 34px 70px -34px rgba(14,77,71,.55), 0 2px 0 #fff inset; }
+.placa { position: absolute; background: #0b0b0b; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(0,0,0,.6); }
+.placa img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.enun { font: 400 29px/1.4 Inter; color: #3d5552; }
+.fonte { font: 400 18px/1.3 Inter; color: #6b7d7a; }
+.alts { position: absolute; left: 48px; right: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.alt { display: flex; align-items: center; gap: 18px; height: 112px; padding: 0 22px; border-radius: 32px;
+  background: rgba(255,255,255,.88); color: #183330; font: 700 31px/1.15 Jakarta; letter-spacing: -.4px;
+  box-shadow: 0 18px 36px -22px rgba(14,77,71,.7), 0 2px 0 #fff inset; }
+.alt .l { width: 56px; height: 56px; flex: none; border-radius: 50%; display: grid; place-items: center; font: 800 26px/1 Jakarta; color: #fff; background: var(--verde); }
+.alt.certa { background: linear-gradient(160deg, #fff6dc, #fbe6b0); }
+.alt.certa .l { background: linear-gradient(160deg, #f8dc92, #dcaa45); color: #4a3a12; }
+.dica .t { color: #0E2E2A; }
+.dica .s { color: #fff; }
+.cita { font: 400 30px/1.45 Source; color: #183330; }
+.cita b { font-weight: 700; color: var(--verde); }
+.passo { display: grid; grid-template-columns: 74px 1fr; gap: 14px; align-items: start; font: 400 26px/1.35 Inter; color: #2c4440; }
+.passo + .passo { margin-top: 12px; }
+.passo b.k { display: grid; place-items: center; height: 44px; border-radius: 12px; background: #e3f3ed; color: var(--verde); font: 800 21px/1 Jakarta; }
+.regua { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.regua div { border-radius: 20px; padding: 16px 18px; background: rgba(20,101,94,.08); font: 400 23px/1.3 Inter; color: #2c4440; }
+.regua b { display: block; font: 800 34px/1 Jakarta; color: var(--ardosia); margin-bottom: 6px; }
+.botao { position: absolute; display: flex; align-items: center; justify-content: center; height: 108px; border-radius: 999px;
+  font: 800 40px/1 Jakarta; color: #fff; background: linear-gradient(170deg, #1f9584, #14655E);
+  box-shadow: 0 24px 44px -22px rgba(14,77,71,.9), 0 2px 0 rgba(255,255,255,.35) inset; }
+.site { position: absolute; left: 0; right: 0; text-align: center; font: 800 34px/1 Jakarta; color: #fff; }
+.sub { position: absolute; left: 0; right: 0; text-align: center; font: 500 24px/1 Inter; color: #fff; }
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="ladrilho" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="24" fill="#14655E"/>
+    <g fill="#F6EEDB" opacity=".55"><circle cx="30" cy="30" r="6.5"/><rect x="43" y="25.5" width="34" height="9" rx="4.5"/><circle cx="30" cy="70" r="6.5"/><rect x="43" y="65.5" width="26" height="9" rx="4.5"/></g>
+    <g fill="#F4CF7C"><circle cx="30" cy="50" r="9"/><rect x="43" y="45" width="40" height="10" rx="5"/></g>
+    <path d="M26 50.2l2.9 2.9 5.2-5.6" fill="none" stroke="#14655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="seta" viewBox="0 0 36 20"><path d="M4 4l14 12L32 4" fill="none" stroke="#0E2E2A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<!-- ============ STORY 1 (7h): a questão ============ -->
+<section id="s1-questao">
+  <div class="fundo"></div><div class="grao"></div>
+  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="nome">Orto Questões</span><span class="pil">TEOT 2024</span></div>
+
+  <div class="vidro" style="left:48px; right:48px; top:318px; height:800px;">
+    <div style="position:absolute; left:46px; right:46px; top:40px;">
+      <div class="rot">Joelho · instabilidade femoropatelar</div>
+      <h1 style="margin-top:16px; font-size:58px;">O que essa TC <em>está medindo?</em></h1>
+      <p class="enun" style="margin-top:14px;">A sobreposição de imagens de tomografia computadorizada de joelho visualizada a seguir indica a aferição</p>
+    </div>
+    <div class="placa" style="left:190px; right:190px; top:300px; height:470px;"><img src="img/questao.png" alt=""></div>
+  </div>
+
+  <div class="alts" style="top:1136px;">
+    <div class="alt"><span class="l">A</span>da TAGT.</div>
+    <div class="alt"><span class="l">B</span>da altura patelar.</div>
+    <div class="alt"><span class="l">C</span>da displasia troclear.</div>
+    <div class="alt" style="font-size:27px;"><span class="l">D</span>do ângulo de inclinação patelar.</div>
+  </div>
+
+  <div class="dica" style="top:1390px;">
+    <div class="t">Vote na sua letra</div>
+    <svg viewBox="0 0 36 20"><use href="#seta"/></svg>
+  </div>
+</section>
+
+<!-- ============ STORY 2 (18h30): resposta, livro e convite ============ -->
+<section id="s2-resposta">
+  <div class="fundo" style="transform:scaleX(-1);"></div><div class="grao"></div>
+  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="nome">Orto Questões</span><span class="pil">Resposta</span></div>
+
+  <div style="position:absolute; left:64px; right:64px; top:330px;">
+    <div class="rot">TEOT 2024 · gabarito</div>
+    <h1 style="margin-top:16px;">Ela mede<br>a <em>TAGT.</em></h1>
+  </div>
+  <div class="alt certa" style="position:absolute; right:64px; width:330px; top:410px;"><span class="l">A</span>da TAGT.</div>
+
+  <div class="vidro" style="left:48px; right:48px; top:590px; height:640px;">
+    <div class="placa" style="left:36px; width:390px; top:36px; height:420px;"><img src="img/campbell.png" alt="" style="object-fit:cover;"></div>
+    <p class="fonte" style="position:absolute; left:36px; width:390px; top:466px;">Campbell 15ª ed., Fig. 52.6, p. 2198</p>
+    <div style="position:absolute; left:456px; right:36px; top:40px;">
+      <div class="rot">Segundo o Campbell</div>
+      <div style="margin-top:16px;">
+        <div class="passo"><b class="k">AB</b><span>linha nos <b>côndilos posteriores</b></span></div>
+        <div class="passo"><b class="k">CD</b><span>perpendicular pelo <b>fundo do sulco</b> troclear</span></div>
+        <div class="passo"><b class="k">EF</b><span>perpendicular pela <b>tuberosidade</b> da tíbia</span></div>
+        <div class="passo"><b class="k">GH</b><span>a distância entre elas, em mm, é a <b>TT-TG</b></span></div>
+      </div>
+    </div>
+    <p class="cita" style="position:absolute; left:36px; right:36px; top:530px; font-size:27px;">Na prova, as linhas 1, 2 e 3 fazem o papel de AB, CD e EF, e o segmento 4 marca <b>16 mm</b>.</p>
+  </div>
+
+  <div class="vidro" style="left:48px; right:48px; top:1252px; height:150px; border-radius:38px;">
+    <div class="regua" style="position:absolute; left:20px; right:20px; top:20px;">
+      <div><b>&gt; 20 mm</b>mau alinhamento (Tabela 52.2)</div>
+      <div><b>&gt; 15 mm</b>se a tróclea for displásica (p. 2202)</div>
+    </div>
+  </div>
+
+  <div class="botao" style="left:150px; right:150px; top:1440px;">Treine grátis</div>
+  <div class="site" style="top:1574px;">ortoquestoes.com.br</div>
+  <div class="sub" style="top:1622px;">o comentário inteiro está lá · o caminho está no perfil</div>
+</section>
+</body></html>
