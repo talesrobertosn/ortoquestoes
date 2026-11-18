@@ -36,4 +36,4 @@ Ordem atual (em 10/11/2026 entrou nos stories a **Oficina do encaixe**, logo dep
 | 15. Modelo padrão |  |
 | 16. Conversa do grupo R+ |  |
 
-Os stories de propaganda (Treine grátis, Créditos finais) ficam fora da fila: entram quando o Tales pedir, sempre **sem figurinha de link** (orientação de 19/10/2026).
+Os **Stories com alternativas** ([guia](STORIES-COM-ALTERNATIVAS.md), aprovados em 18/11/2026) também ficam fora da fila: entram quando o Tales pedir. Os stories de propaganda (Treine grátis, Créditos finais) ficam fora da fila: entram quando o Tales pedir, sempre **sem figurinha de link** (orientação de 19/10/2026).
