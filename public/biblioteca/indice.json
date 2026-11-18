@@ -14794,15 +14794,15 @@
   },
   {
    "id": "green-tumores-mao",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Tumores da mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83), o Dahlin's Bone Tumors, 6ª ed. (2010), e o HEBERT, 5ª ed.",
    "capitulo": "Capítulo 59 · Bone and Soft Tissue Tumors (com o capítulo 58, Skin Tumors of the Hand and Upper Extremity)",
-   "resumo": "Cisto sinovial é o tumor de partes moles mais comum e o tumor de células gigantes da bainha o segundo (recidiva maior na IFD, com artrose e erosão óssea); cisto mucoso se trata com excisão do cisto e do osteófito; tumor glômico é dor intensa, ponto doloroso e intolerância ao frio, subungueal, 1% a 5% dos tumores da mão; schwannoma se enuclea, neurofibroma é o da doença de VON RECKLINGHAUSEN, hamartoma lipofibromatoso é do mediano; encondroma é o tumor ósseo mais comum, na falange proximal; osteocondroma na região distal da falange proximal; lesão de NORA sem continuidade medular; cisto ósseo aneurismático no metacarpo; condrossarcoma é o maligno ósseo primário mais comum e vai ao pulmão; metástase acral vem do pulmão; ENNEKING IIA é alto grau intracompartimental e IIB extracompartimental; sarcoma na falange média pede ressecção do raio; sarcoma sinovial no carpo, calcificação em 20% a 30%; carcinoma espinocelular é o maligno de pele mais comum da mão e do perioníquio, no polegar, com a ceratose actínica de precursora; carcinoma basocelular agressivo no local e raramente metastático; melanoma lentiginoso acral, sinal de HUTCHINSON, biópsia após 2 meses, margem de 1 cm até 1 mm de BRESLOW.",
+   "resumo": "Grau histológico (G1 poucas células e menos de 5 mitoses, G2 muitas células e mais de 10) e ENNEKING (benignos latente, ativo e localmente agressivo; malignos IA a III, IIB alto grau extracompartimental); biópsia é o último exame, incisional, longitudinal, sem ESMARCH; na mão o compartimento é o raio e o sarcoma da falange média pede ressecção do raio; cisto sinovial é o tumor de partes moles mais comum, em mulheres da 2ª à 4ª década, parede de colágeno sem epitélio, mucina rica em ácido hialurônico, válvula de mão única, malignização nunca descrita; o dorsal (60% a 70%) nasce do escafolunar e sai entre o extensor longo do polegar e o extensor comum, a cápsula não se fecha e a complicação mais comum é a recidiva precoce; o volar (18% a 20%) fica na borda distal do rádio ou no tubérculo do escafoide, junto à artéria radial; o retinacular nasce da polia A1; criança se observa; bossa carpometacarpal em mulheres, mão direita, 3ª e 4ª décadas; tumor de células gigantes da bainha é o segundo tumor da mão (recidiva ~30%, maior na IFD, com artrose e erosão); tumor glômico é dor, ponto doloroso e frio; schwannoma enuclea, neurofibroma pede secção de fascículos, hamartoma lipofibromatoso é do mediano; sarcoma epitelioide é o mais comum da mão e vai a linfonodo, sinovial no carpo com calcificação em 20% a 30%; encondroma é até 90% dos tumores ósseos da mão, na falange proximal, diagnosticado na radiografia, recidiva 4,5% a 7%; OLLIER unilateral com malignização de ~30%, MAFFUCCI com hemangiomas e flebólitos; osteocondroma na falange proximal distal, sem malignização descrita na mão; NORA sem continuidade medular; osteoma osteoide na falange proximal e no carpo; cisto ósseo aneurismático no metacarpo, 2ª década, com criocirurgia; tumor de células gigantes do osso recidiva mais de 80% com curetagem e se resseca quando perfura; condrossarcoma é o maligno ósseo primário mais comum, acima de 60 anos, vai ao pulmão, sem papel da radioterapia; EWING imita infecção; metástase acral vem do pulmão; carcinoma espinocelular é o maligno de pele mais comum da mão, com a ceratose actínica de precursora; melanoma lentiginoso acral, HUTCHINSON, biópsia após 2 meses, margem de 1 cm até 1 mm de BRESLOW.",
    "acesso": "gratis",
-   "minutos": 42,
+   "minutos": 102,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14810,8 +14810,8 @@
      "radar": "fundamento"
     },
     {
-     "id": "estadiamento-a-classificacao-de-enneking",
-     "titulo": "Estadiamento: a classificação de ENNEKING",
+     "id": "estadiamento-grau-compartimento-e-enneking",
+     "titulo": "Estadiamento: grau, compartimento e ENNEKING",
      "radar": "confirmado"
     },
     {
@@ -14825,8 +14825,8 @@
      "radar": "clinico"
     },
     {
-     "id": "cisto-sinovial-e-cisto-mucoso",
-     "titulo": "Cisto sinovial e cisto mucoso",
+     "id": "cisto-sinovial-o-tumor-de-partes-moles-mais-comu",
+     "titulo": "Cisto sinovial: o tumor de partes moles mais comum",
      "radar": "confirmado"
     },
     {
@@ -14860,8 +14860,8 @@
      "radar": "clinico"
     },
     {
-     "id": "osteoma-osteoide-cisto-osseo-aneurismatico-e-tum",
-     "titulo": "Osteoma osteoide, cisto ósseo aneurismático e tumor de células gigantes",
+     "id": "lesoes-formadoras-de-osso-cistos-osseos-e-tumor-",
+     "titulo": "Lesões formadoras de osso, cistos ósseos e tumor de células gigantes",
      "radar": "confirmado"
     },
     {
@@ -14887,7 +14887,11 @@
    ],
    "questoes": [
     "mao-0459",
+    "mao-1538",
+    "mao-1322",
+    "mao-0272",
     "mao-0737",
+    "mao-1521",
     "mao-1864",
     "mao-0725",
     "mao-1128",
@@ -14916,19 +14920,72 @@
    ],
    "treino": [
     "mao-2187",
+    "mao-3107",
+    "mao-3108",
+    "mao-3117",
     "mao-2380",
     "mao-1732",
+    "mao-1733",
+    "mao-3090",
+    "mao-2015",
+    "mao-3110",
+    "mao-3087",
+    "mao-2326",
+    "mao-3079",
+    "mao-3099",
+    "mao-3113",
+    "mao-3114",
+    "mao-2050",
+    "mao-3105",
+    "mao-2051",
+    "mao-2503",
+    "mao-3095",
+    "mao-3116",
+    "mao-3120",
+    "mao-3124",
     "mao-2327",
+    "mao-3092",
     "mao-2274",
     "mao-2202",
+    "mao-3088",
+    "mao-3094",
+    "mao-3097",
+    "mao-3121",
     "mao-2185",
     "mao-2541",
     "mao-2016",
+    "mao-3080",
+    "mao-3100",
+    "mao-3103",
+    "mao-3118",
+    "mao-3086",
+    "mao-3096",
+    "mao-3115",
+    "mao-3123",
     "mao-2184",
+    "mao-3098",
+    "mao-3101",
+    "mao-3112",
     "mao-2183",
     "mao-2186",
     "mao-1731",
+    "mao-3081",
+    "mao-3091",
+    "mao-3093",
+    "mao-2635",
+    "mao-3082",
+    "mao-3085",
+    "mao-3111",
     "mao-2275",
+    "mao-3083",
+    "mao-3089",
+    "mao-3104",
+    "mao-3106",
+    "mao-3109",
+    "mao-3122",
+    "mao-3084",
+    "mao-3102",
+    "mao-3119",
     "mao-2014",
     "mao-2469",
     "mao-2451",
@@ -14941,7 +14998,8 @@
     "mao-2525"
    ],
    "subtemas": [
-    "Tumores da mão"
+    "Tumores da mão",
+    "Cistos sinoviais e gangliões"
    ]
   },
   {
