@@ -15,7 +15,7 @@ Questão `trauma-0753` (**TEOT 2025**), gabarito oficial **B** (HEINIG).
 
 | Ordem | Horário | Story | Arquivo |
 |---|---|---|---|
-| 1 | 7h | A questão, a figura e as alternativas; colocar a **enquete** (A, B, C, D) no espaço "Vote na sua letra" | `s1-questao.png` |
+| 1 | 7h | A questão, a figura e as alternativas; colocar a **enquete** (A, B, C, D) na área livre abaixo de "Vote na sua letra" (sem caixa desenhada) | `s1-questao.png` |
 | 2 | 12h | Resposta B, trecho do comentário "segundo o Rockwood" com a Fig. 32-13B e por que A, C e D não são | `s2-resposta.png` |
 | 3 | 19h | O comentário real num celular de vidro (a hierarquia dos exames) e "Treine grátis" | `s3-convite.png` |
 
