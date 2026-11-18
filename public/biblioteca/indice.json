@@ -13345,15 +13345,15 @@
   },
   {
    "id": "green-nervos-perifericos",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Lesões de nervos periféricos",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 67 e 73)",
    "capitulo": "Capítulo 30 · Nerve Injury and Repair",
-   "resumo": "Endoneuro envolve a fibra, perineuro o fascículo (barreira de difusão) e epineuro o tronco (60% a 85% da área); SEDDON (neurapraxia, axonotmese, neurotmese) e SUNDERLAND (I mielina, II axônio, III endoneuro, IV perineuro, V tronco); degeneração walleriana distal com pico de receptividade entre 1 e 3 semanas; anidrose igual ou pouco maior que a área sensitiva; TINEL que avança indica regeneração (II e III); fibrilações após 2 a 4 semanas; reparo primário sem tensão, enxerto quando falta 1 cm ou mais, condutos até 3 cm; OBERLIN (fascículo posteromedial do ulnar para o bíceps), LEECHAVENGVONGS (cabeça longa do tríceps para a divisão anterior do axilar), MACKINNON (FDS para ERCC e FRC para interósseo posterior); idade e atraso pesam no resultado; MRC M0 a M5 e S0 a S4.",
+   "resumo": "Endoneuro envolve a fibra, perineuro o fascículo (barreira de difusão, resistência à tração, bandas de FONTANA) e epineuro o tronco (60% a 85% da área, proteção contra compressão); mielínicas de 2 a 22 µm, amielínicas de 0,4 a 1,25 µm (autonômica, térmica e dor tardia); desmielinização reduz a velocidade e, se grave, bloqueia; maior excursão no punho (mediano 15,5 mm); THOMAS e HOLDORFF (I bloqueio; IIA lâmina basal preservada, IIB secção parcial, IIC completa); SEDDON e SUNDERLAND; estiramento de 8% bloqueia o retorno venoso e de 16% causa isquemia; walleriana com pico de receptividade entre 1 e 3 semanas; morte neuronal maior na lesão proximal e no neonato; pele quente e seca e TINEL indicam lesão degenerativa; fibrilações em 10 a 14 dias; primário até 5 dias, primário tardio até 3 semanas; enxerto quando falta 1 cm ou mais, 15% a 20% mais longo; cutâneo medial do antebraço cerca de 25 cm; condutos até 3 cm; OBERLIN, LEECHAVENGVONGS, MACKINNON, interósseo anterior para o motor do ulnar (1000 contra mais de 4000 fibras); violência da lesão e atraso decidem; radial é o mais favorável; neuroma: reparar é melhor que translocar.",
    "acesso": "gratis",
-   "minutos": 42,
+   "minutos": 108,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -13361,13 +13361,13 @@
      "radar": "fundamento"
     },
     {
-     "id": "o-nervo-por-dentro-fibra-fasciculo-e-tronco",
-     "titulo": "O nervo por dentro: fibra, fascículo e tronco",
+     "id": "o-nervo-por-dentro-fibra-bainhas-e-deslizamento",
+     "titulo": "O nervo por dentro: fibra, bainhas e deslizamento",
      "radar": "confirmado"
     },
     {
-     "id": "seddon-e-sunderland-o-que-foi-rompido",
-     "titulo": "SEDDON e SUNDERLAND: o que foi rompido",
+     "id": "como-o-nervo-se-lesa-classificacoes-isquemia-e-e",
+     "titulo": "Como o nervo se lesa: classificações, isquemia e estiramento",
      "radar": "confirmado"
     },
     {
@@ -13386,13 +13386,13 @@
      "radar": "confirmado"
     },
     {
-     "id": "quando-operar",
-     "titulo": "Quando operar",
+     "id": "quando-operar-e-quando-esperar",
+     "titulo": "Quando operar e quando esperar",
      "radar": "confirmado"
     },
     {
-     "id": "a-sutura-epineural-perineural-tensao-e-cola",
-     "titulo": "A sutura: epineural, perineural, tensão e cola",
+     "id": "tecnica-preparacao-neurolise-e-sutura",
+     "titulo": "Técnica: preparação, neurólise e sutura",
      "radar": "confirmado"
     },
     {
@@ -13401,8 +13401,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "transferencias-distais-nervo-ou-tendao",
-     "titulo": "Transferências distais: nervo ou tendão",
+     "id": "transferencias-de-nervo-e-transferencias-tendine",
+     "titulo": "Transferências de nervo e transferências tendíneas",
      "radar": "confirmado"
     },
     {
@@ -13416,9 +13416,24 @@
      "radar": "confirmado"
     },
     {
-     "id": "quadros-de-cada-nervo",
-     "titulo": "Quadros de cada nervo",
+     "id": "nervo-a-nervo-radial-mediano-ulnar-e-digitais",
+     "titulo": "Nervo a nervo: radial, mediano, ulnar e digitais",
      "radar": "confirmado"
+    },
+    {
+     "id": "neuroma-e-dor-neuropatica",
+     "titulo": "Neuroma e dor neuropática",
+     "radar": "clinico"
+    },
+    {
+     "id": "hanseniase-e-outros-temas-que-a-banca-poe-aqui",
+     "titulo": "Hanseníase e outros temas que a banca põe aqui",
+     "radar": "confirmado"
+    },
+    {
+     "id": "divergencias-entre-fontes-e-erros-do-livro",
+     "titulo": "Divergências entre fontes e erros do livro",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -13440,15 +13455,16 @@
     "mao-0982",
     "mao-0001",
     "mao-0651",
+    "mao-0795",
     "mao-0121",
     "mao-1850",
     "mao-0475",
     "mao-0581",
     "mao-1196",
-    "mao-0303",
-    "mao-0571",
     "mao-0915",
     "mao-1028",
+    "mao-0303",
+    "mao-0571",
     "mao-0837",
     "mao-1293",
     "mao-1614",
@@ -13458,6 +13474,10 @@
     "mao-1223",
     "mao-0727",
     "mao-0966",
+    "mao-0480",
+    "mao-0154",
+    "mao-0414",
+    "mao-0268",
     "mao-0437",
     "mao-0004",
     "mao-0445",
@@ -13468,14 +13488,12 @@
     "mao-0887",
     "mao-0147",
     "mao-0722",
-    "mao-0480",
-    "mao-0154",
-    "mao-0414",
-    "mao-0268",
+    "mao-0343",
     "mao-0914",
     "mao-0971",
     "mao-0537",
     "mao-0600",
+    "mao-1343",
     "mao-0528",
     "mao-1047",
     "mao-1621",
@@ -13488,11 +13506,51 @@
     "mao-1886",
     "mao-0539",
     "mao-0523",
-    "mao-0916"
+    "mao-0916",
+    "mao-1441",
+    "mao-1639",
+    "mao-1283",
+    "mao-0695"
    ],
-   "treino": [],
+   "treino": [
+    "mao-2543",
+    "mao-3273",
+    "mao-3274",
+    "mao-3279",
+    "mao-3281",
+    "mao-3283",
+    "mao-3284",
+    "mao-3286",
+    "mao-3288",
+    "mao-3290",
+    "mao-3291",
+    "mao-3280",
+    "mao-2401",
+    "mao-3289",
+    "mao-3287",
+    "mao-1977",
+    "mao-2609",
+    "mao-1753",
+    "mao-1978",
+    "mao-3276",
+    "mao-3292",
+    "mao-2070",
+    "mao-1754",
+    "mao-3275",
+    "mao-3293",
+    "mao-2478",
+    "mao-2438",
+    "mao-1746",
+    "mao-2138",
+    "mao-3277",
+    "mao-3278",
+    "mao-3282",
+    "mao-3285",
+    "mao-1745"
+   ],
    "subtemas": [
-    "Lesões de nervos periféricos"
+    "Lesões de nervos periféricos",
+    "Anatomia da mão e punho"
    ]
   },
   {
