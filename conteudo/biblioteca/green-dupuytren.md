@@ -1,6 +1,6 @@
 ---
 id: green-dupuytren
-versao: 2
+versao: 3
 titulo: Doença de DUPUYTREN
 especialidade: mao
 acesso: gratis
@@ -8,40 +8,77 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 80)
 capitulo: Capítulo 4 · Dupuytren Disease
 autores: Charles Eaton
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 4 (Dupuytren Disease), p. 128 a 145 e 147 a 149 (demografia, diátese, estágios, anatomia normal e patológica, tipos de operação, tabelas 4.1 a 4.5, agulha e colagenase); Campbell's Operative Orthopaedics, 15ª ed., cap. 80 (Dupuytren Contracture), p. 3515 a 3532, lido por inteiro.
+fonte: Livros conferidos localmente em 01/11/2026 e de novo em 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 4 (Dupuytren Disease), p. 128 a 151, lido de ponta a ponta, inclusive a lista de referências (p. 149 a 151), as Tabelas 4.1 a 4.5 e o método preferido do autor (p. 143 a 148); Campbell's Operative Orthopaedics, 15ª ed., cap. 80 (Dupuytren Contracture), p. 3515 a 3532, lido por inteiro. Fonte aberta conferida no PubMed: NOBLE, HEATHCOTE e COHEN, J Bone Joint Surg Br 66:322-325, 1984 (PMID 6725338).
 subtemas: Doença de Dupuytren
-resumo: Homem branco idoso, herança autossômica dominante de penetrância variável, bilateral mas assimétrica, anular e mínimo; diabetes, epilepsia e anticonvulsivantes, tabagismo, álcool e hipercolesterolemia associados, artrite reumatoide não; diátese de HUESTON (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE, PEYRONIE); miofibroblasto e colágeno III (razão III/I acima de 35% na proliferativa, 20% a 35% na involutiva e abaixo de 20% na residual de LUCK); TUBIANA em degraus de 45 graus; corda pré-tendínea na MF, corda espiral (pré-tendínea, banda espiral, lâmina digital lateral e GRAYSON) que leva o feixe para a linha média e para a superfície, retrovascular e lateral na IFD; CLELAND poupado; cirurgia com MF de 30 graus ou qualquer IFP de 15 graus; agulha mais barata, dermofasciectomia com menor recidiva; JACOBSEN no mínimo, McCASH palma aberta; lesão de nervo digital e flare como complicações.
+resumo: Doença hereditária mais comum do tecido conjuntivo; nenhum tratamento atua na doença, todos tratam a contratura; homem branco idoso, autossômica dominante de penetrância variável, bilateral mas assimétrica, anular e mínimo; receptor androgênico e estrogênio explicam o atraso de 10 a 15 anos na mulher; diabetes (doença leve, com desvio radial), epilepsia, tabagismo, álcool, hipercolesterolemia e IMC baixo associados, artrite reumatoide não; diátese (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE, homem, polegar, mais de dois dedos); miofibroblasto, TGF beta 1 e colágeno III; LUCK com razão III/I acima de 35%, de 20% a 35% e abaixo de 20%; TUBIANA em degraus de 45 graus sem a IFD; fasciodese e contratura dinâmica; CLELAND, transverso superficial e septos de LEGUEU e JUVARA poupados por stress shielding; corda central na MF, várias cordas na IFP (central digital, retrovascular, espiral ou lateral); corda espiral (pré-tendínea, banda espiral, lâmina digital lateral e GRAYSON) leva o feixe para a linha média e a superfície; MF de 30 graus ou IFP de 15 graus; agulha mais barata, dermofasciectomia com menor recidiva; JACOBSEN no mínimo, McCASH palma aberta; flare 1 em 10, nervo digital 3% (5 vezes mais na recidiva); recontratura precoce, progressiva e tardia; tamoxifeno.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 4 (Dupuytren Disease, de Charles EATON) do Green's Operative Hand Surgery, 7ª edição (2017), completado pelo capítulo 80 (Dupuytren Contracture, de James H. CALANDRUCCIO) do Campbell's Operative Orthopaedics, 15ª ed.
+Este resumo é inspirado no capítulo 4 (Dupuytren Disease) do Green's Operative Hand Surgery, 7ª edição (2017), escrito por um único autor, Charles EATON, que herdou e reescreveu os textos de edições anteriores (DOYLE, BURTON, MELCHIOR, BARATZ, SCHMIDT e HUGHES). Para a anatomia clássica das cordas, que o Green 7 trata de forma resumida, usamos o capítulo 80 (Dupuytren Contracture, de James H. CALANDRUCCIO) do Campbell's Operative Orthopaedics, 15ª edição. As páginas citadas são as impressas.
 
-A doença de DUPUYTREN cabe numa ideia: **uma fáscia normal que, sob tensão mecânica e numa pessoa geneticamente predisposta, vira corda**. O Green abre o capítulo dizendo que ela é **a doença hereditária mais comum do tecido conjuntivo**, benigna, crônica e progressiva, que encurta os tecidos **ao longo das linhas de tensão** e limita a extensão dos dedos (p. 128). EATON separa dois nomes que a prova às vezes mistura: **doença de DUPUYTREN** é o processo biológico; **contratura de DUPUYTREN** é o resultado final, a articulação que não estende. Isso tem consequência prática: **nenhum tratamento atual trata a doença**; todos tratam a contratura. Por isso a recidiva (doença de volta na área tratada) e a extensão (doença nova numa área não tratada) são comuns e fazem parte da conversa com o paciente.
+Vale saber quem está falando. EATON é um cirurgião que se tornou um dos maiores defensores da fasciotomia percutânea com agulha nos Estados Unidos, e o capítulo tem opinião forte: a doença de DUPUYTREN é, para ele, **uma doença médica tratada até hoje com ferramentas cirúrgicas**. Por isso o texto gasta muitas páginas com biologia, medida da contratura e recidiva, e o método preferido do autor é a agulha, não a fasciectomia. O Campbell, mais tradicional, descreve com cuidado a anatomia de McFARLANE, as incisões e os retalhos. Quando os dois livros divergem, o resumo mostra os dois lados, porque as bancas usam ora um, ora outro.
 
-As bancas cobram quatro blocos: quem tem a doença e a diátese; a biologia (miofibroblasto, colágeno III, LUCK); a anatomia das cordas; e o tratamento (quando operar, custo, recidiva, retalhos e complicações).
+O fio condutor cabe numa frase: **uma fáscia normal, numa pessoa geneticamente predisposta, responde à tensão mecânica como uma cicatriz que não desliga, e vira corda**. Tudo o que a prova cobra sai daí:
 
-> **Na prova:** homem branco idoso, assimétrico, **anular e mínimo**; família é o **preditor mais forte**; diátese = início antes dos 50, família, bilateral, GARROD, LEDDERHOSE; **corda pré-tendínea flete a MF**; **corda espiral** desloca o feixe para a **linha média e para a superfície**; **CLELAND poupado**; operar com **MF de 30 graus e IFP de 15 graus**; **dermofasciectomia** tem a menor recidiva.
+- **Quem adoece** (homem branco idoso, família positiva, diátese) e por quê.
+- **A biologia** (miofibroblasto, colágeno III, estágios de LUCK) e o que ela prevê sobre a recidiva.
+- **A anatomia**: cada corda é uma estrutura normal que adoeceu, e as estruturas protegidas da tensão não adoecem.
+- **A medida** (TUBIANA, fasciodese) e o **tratamento** (quando operar, custo contra recidiva, retalhos, salvamento, complicações).
+
+> **Na prova:** homem branco idoso, assimétrico, **anular e mínimo**; família é o **preditor mais forte** da doença, início jovem o **preditor mais forte da gravidade**; diátese = início antes dos 50, família, bilateral, GARROD, LEDDERHOSE; LUCK proliferativo **III/I acima de 35%**; TUBIANA soma **MF + IFP** em degraus de **45 graus**; **corda central (pré-tendínea) flete a MF**; **corda espiral** leva o feixe para a **linha média e para a superfície**; **CLELAND poupado**; operar com **MF de 30 graus e IFP de 15 graus**; **agulha** é a mais barata, **dermofasciectomia** tem a menor recidiva.
+
+# Doença e contratura: a ideia que organiza o capítulo {radar=fundamento}
+
+## Dois nomes para duas coisas
+
+EATON abre o capítulo (p. 128) separando **doença de DUPUYTREN** e **contratura de DUPUYTREN**. A doença é o processo biológico: benigno, crônico, progressivo, que encurta os tecidos ao longo das linhas de tensão e limita a extensão dos dedos. A contratura é o desfecho mecânico, a articulação que não estende mais. Ele chama a doença de **a doença hereditária mais comum do tecido conjuntivo**.
+
+A separação parece filosófica, mas organiza a conduta. **Nenhum tratamento disponível age sobre a doença; todos tratam a contratura** (p. 128). Cortar uma corda com agulha, dissolvê-la com colagenase ou retirá-la com bisturi corrige a deformidade, mas deixa intacta a biologia que a produziu. Por isso existem dois fenômenos que o paciente precisa ouvir antes de qualquer procedimento: a **recidiva**, quando a doença volta na área tratada, e a **extensão**, quando aparece doença nova numa área que não foi tratada. Os dois são comuns e não significam que o tratamento foi mal feito.
+
+O Green ainda divide as pessoas em quatro grupos biológicos, em ordem crescente de risco de precisar de tratamento no futuro: quem não tem doença clínica, quem tem doença sem contratura, quem tem contratura não tratada e, no topo, **quem já teve a contratura tratada** (p. 128). O último grupo já mostrou que tem biologia capaz de produzir contratura e já teve o tecido agredido por um procedimento.
+
+## A cicatriz que não desliga
+
+A comparação com a cicatrização é a chave para entender o resto. Numa ferida normal, fibroblastos submetidos a tensão e a citocinas viram **miofibroblastos**, contraem a ferida e depois desaparecem por apoptose quando o estímulo acaba. Na doença de DUPUYTREN, o mesmo programa liga sob tensão mecânica, mas **o miofibroblasto persiste** (p. 136). É por isso que uma operação, que é uma ferida, pode reativar a doença; é por isso também que a reação inflamatória exagerada depois da fasciectomia (o flare) entra no mesmo raciocínio.
+
+## Por que a mão fecha e o pé não
+
+O Green propõe uma explicação elegante para o padrão das contraturas (p. 137). A biologia da doença **fixa os tecidos na posição de repouso**. O colágeno se deposita e se remodela sob estresse mecânico, mas o processo continua no repouso: os miofibroblastos e as enzimas de ligação cruzada encurtam as fibras redundantes até que o comprimento do tecido coincida com a dimensão de repouso, como acontece com a placa volar da IFP depois de um trauma e de flexão prolongada.
+
+A mão repousa em **flexão e adução**, e é exatamente essa a deformidade da contratura de DUPUYTREN. As interfalângicas repousam em flexão, e por isso o coxim de GARROD no dorso delas não as estende; as metatarsofalângicas dos dedos do pé repousam em extensão, e por isso a doença de LEDDERHOSE quase nunca flete os dedos. Biópsias de todos esses locais contraem igualmente em laboratório; o que muda é a posição em que o tecido passa a maior parte do tempo. O autor resume dizendo que **os padrões de contratura têm mais a ver com a ligação cruzada do colágeno do que com a contração do miofibroblasto**.
+
+## Proteção mecânica: quem não sofre tensão não adoece
+
+O segundo princípio é o **stress shielding** (p. 137). Estruturas protegidas da tensão por uma estrutura rígida vizinha raramente adoecem. Ele explica por que o ligamento de CLELAND, protegido pela falange, quase nunca forma corda, e explica também o fim natural da doença: quando a contratura avança, a falta de uso e a rigidez capsular secundária **retiram a tensão da corda**, os miofibroblastos entram em apoptose e a doença chega a um estágio final estático. Esse mesmo raciocínio volta na anatomia, mais adiante.
 
 # Quem tem a doença {radar=confirmado}
 
 ## O perfil do paciente
 
-O paciente típico é **homem branco, idoso, com história familiar** (Green, p. 128). A doença é **incomum antes dos 40 anos**; a prevalência ocidental é de **12% aos 55, 21% aos 65 e 29% aos 75**. O Campbell dá apresentação entre **40 e 60 anos** (Box 80.1).
+O paciente típico é **homem, branco, idoso, de olhos azuis ou verdes e com história familiar** (Green, p. 128). A doença é **incomum antes dos 40 anos**, e o diagnóstico se concentra entre o início dos 50 e o início dos 60. A prevalência ocidental média sobe com a idade: **12% aos 55, 21% aos 65 e 29% aos 75 anos** (Fig. 4.1). O Campbell dá apresentação típica entre **40 e 60 anos** (Box 80.1).
 
-O sexo é a pergunta mais repetida. O Campbell diz que a doença é **6 a 10 vezes mais frequente nos homens** (Box 80.1, p. 3517). O Green explica por que a proporção não é fixa: **nas mulheres a incidência acompanha a dos homens com atraso de 10 a 15 anos**, e a razão homem:mulher **diminui com a idade** (p. 128). A fáscia palmar tem **excesso de receptores androgênicos**, o estrogênio suprime a síntese de colágeno, e nas mulheres a doença aparece **depois da menopausa** (p. 129).
+O sexo é a pergunta mais repetida pelas bancas. O Campbell diz que a doença é **6 a 10 vezes mais frequente nos homens** (Box 80.1, p. 3517). O Green explica por que essa razão não é fixa: **nas mulheres a incidência acompanha a dos homens com atraso de 10 a 15 anos**, e por isso a razão homem:mulher **cai com a idade** (p. 128). Num grupo de 50 anos, quase só homens; num grupo de 80, a diferença encolhe.
+
+## Por que o homem, e por que a mulher chega depois
+
+O Green dá três pistas biológicas (p. 129). A fáscia palmar tem **excesso de receptores androgênicos**. O gene do **TIMP-1** (inibidor tecidual de metaloproteinase 1), que participa do remodelamento da matriz, fica no **cromossomo X**. E o **estrogênio suprime a síntese de colágeno e a expressão de metaloproteinases** sob estresse mecânico agudo. Juntando as três: enquanto há estrogênio, a mulher tem um freio a mais sobre o mesmo programa fibrótico; depois da menopausa o freio sai, e a incidência começa a subir. Por isso a doença aparece na mulher, em média, **depois da idade da menopausa**.
+
+Isso tem uma consequência prática que o Campbell registra (Tabela 80.1): na mulher a doença começa e progride mais devagar, mas o **resultado operatório é pior** e o **flare é duas vezes mais provável**.
 
 ## Lado, simetria e dedos
 
-O paciente médio tem **dois ou três raios** acometidos, sobretudo **anular e mínimo** (Green, p. 128), que juntos são acometidos mais que todos os outros dedos somados; a doença começa no **lado ulnar, na prega palmar distal** (Campbell, p. 3515).
+O paciente médio tem **dois ou três raios** acometidos, sobretudo **anular e mínimo** (Green, p. 128); o Campbell diz que esses dois são acometidos mais que todos os outros somados e que a doença começa no **lado ulnar, perto da prega palmar distal** (p. 3515). Por que o lado ulnar? A explicação mais coerente com o capítulo é mecânica: a borda ulnar recebe o pico de tensão na preensão de força, e a doença segue as linhas de tensão.
 
-A bilateralidade tem duas leituras. O Green diz que **metade dos pacientes tem doença bilateral**, mas que isso depende do tempo: **20% são bilaterais na apresentação**, e a proporção chega a **pelo menos 70%** com a evolução (p. 128). O Campbell dá **45% de apresentação bilateral** e acrescenta a frase que as provas transformam em alternativa: o envolvimento é **muitas vezes bilateral, mas raramente simétrico** (p. 3515 e Box 80.1). Quem marcar "padrão simétrico" erra.
+A bilateralidade tem duas leituras, e uma não contradiz a outra. O Green diz que **metade dos pacientes tem doença bilateral**, mas que isso depende do tempo: **só 20% são bilaterais na apresentação**, e a proporção chega a **pelo menos 70%** com a evolução (p. 128). O Campbell dá **45% de apresentação bilateral** e acrescenta a frase que as provas transformam em alternativa: o envolvimento é **muitas vezes bilateral, mas raramente simétrico** (p. 3515 e Box 80.1). Quem marcar "padrão simétrico" erra.
+
+Outro número que ajuda a conversar com o paciente: **a contratura aparece em menos de um quinto de todos os portadores** da doença (Green, p. 128). A maioria tem nódulos ou cordas e nunca precisará de tratamento.
 
 ## Etnia e herança
 
-A herança é **autossômica dominante com penetrância variável** (Green, p. 128; Campbell, p. 3515). A doença é comum nos brancos em geral e **menos comum na Ásia**; nos Estados Unidos, negros têm menos de um quinto e asiáticos um décimo da prevalência dos brancos; o Campbell diz que é **rara** em africanos e asiáticos (Box 80.1).
+A herança é **autossômica dominante com penetrância variável** (Green, p. 128; Campbell, p. 3515). A doença é comum nos brancos de toda a Europa e **menos comum na Ásia** (Fig. 4.2). Nos Estados Unidos, os afro-americanos têm pouco menos de **um quinto**, os hispânicos **um terço** e os asiáticos **um décimo** da prevalência dos brancos; o Campbell diz que ela é **rara** em africanos e asiáticos (Box 80.1).
 
-A **história familiar positiva é o preditor isolado mais forte** da doença e antecipa o início e o primeiro tratamento (Green, p. 128). Quase **metade** dos pacientes conhece um parente acometido, e um **irmão acometido triplica o risco**.
+A **história familiar positiva é o preditor isolado mais forte** da doença, e antecipa o início e o primeiro tratamento (Green, p. 128). Quase **metade** dos pacientes conhece um parente acometido; com os **dois pais** acometidos o início é ainda mais precoce, e um **irmão acometido triplica o risco**. Apesar disso, nenhum locus único foi identificado: a doença é poligênica, como mostra a genética abaixo.
 
 !tabela Quem tem a doença de DUPUYTREN (Green 7, cap. 4, p. 128 e 129; Campbell 15, cap. 80, Box 80.1, p. 3517)
 | Dado | Green | Campbell |
@@ -55,30 +92,48 @@ A **história familiar positiva é o preditor isolado mais forte** da doença e 
 | contratura | menos de 1/5 dos portadores | evolução em anos, às vezes semanas |
 !fim
 
-!questoes central=mao-0515 relacionadas=mao-0026,mao-0070,mao-0274,mao-0866,mao-0103,mao-1865
+!questoes central=mao-0515 relacionadas=mao-0026,mao-0070,mao-0274,mao-0866,mao-0103,mao-1865 treino=mao-3351,mao-3353,mao-3354
 conceito: A doença predomina no homem (6 a 10 vezes), branco e idoso, é rara em asiáticos e negros, muitas vezes bilateral mas raramente simétrica, e acomete sobretudo o anular e o mínimo.
 como: O TARO 2011 combinou sexo, raça e diabetes; o TARO 2018, sexo e simetria; o TARO 2015, a proporção de 10 vezes; o ENARE 2023, o grupo de homens idosos e a afirmação correta com a ordem dos dedos; o TEOT 2021, o dedo mais acometido; a UFG 2017, a raridade em asiáticos e negros.
 armadilha: Marcar padrão simétrico, igual proporção entre os sexos ou o dedo médio como mais acometido.
 alerta: Nenhum dos dois livros traz a ordem completa dos dedos cobrada em `mao-1865` (anular, mínimo, polegar, médio, indicador); ambos sustentam apenas anular e mínimo como os mais acometidos, e a alternativa A dessa questão erra ao falar em colágeno tipo 2 (o tipo característico é o III).
 !fim
 
-## Doenças e hábitos associados
+## Genética: poligênica, não neoplásica
 
-O Green lista as comorbidades descritas com a doença: **hipercolesterolemia, diabetes, tabagismo, uso excessivo de álcool, epilepsia, medicação antiepiléptica, trauma regional, trabalho manual pesado crônico e índice de massa corporal abaixo da média** (p. 128 e 129). A ressalva do autor é importante para a prova discursiva e para as questões de "assinale a correta": a literatura é contraditória, existe **viés de associação** (quem vai mais ao médico por outras doenças tem mais chance de ter a DUPUYTREN anotada) e o volume de evidência sugere que essas condições são **provavelmente associadas, mas não causais**.
+O Green é claro em dois pontos (p. 129). Primeiro, **não é um processo neoplásico monoclonal**: as células doentes não descendem de um clone único, como num tumor. Segundo, o maior estudo de associação genômica encontrou **nove loci** de suscetibilidade, em vias pró-fibróticas conhecidas (TGF beta 1, diferenciação, proliferação e apoptose celular, metaloproteinases, FGF, VEGF, HIF alfa) e **sobretudo na via Wnt**. O trabalho que consolidou essa via foi de DOLMANS e colaboradores (N Engl J Med 365:307-317, 2011), da lista de referências do capítulo.
 
-O Campbell traz números que viraram questão: a doença é **mais frequente e mais grave no diabetes**, **frequente na epilepsia (42%)**, tem **relatos conflitantes no alcoolismo** e é **menos provável na obesidade** (Box 80.1). O trauma isolado é causa improvável, porque **a mão não dominante é acometida tanto quanto a dominante**; mas um trauma ou uma **cirurgia menor** (gatilho, túnel do carpo) pode precipitar a doença num suscetível, e **excisar um nódulo isolado** raramente se justifica (p. 3515).
+Há ainda dois marcadores HLA citados: **HLA-DRB1 (alelo 01)** em brancos com a doença, e **HLA-B7** descrito tanto na doença de PEYRONIE quanto na de DUPUYTREN (NYBERG e colaboradores, J Urol, 1982), o que reforça o elo entre as duas. O gene que a prova costuma pedir é o **TIMP-1**; HLA-B27, SHOX e CFTR não aparecem no capítulo.
 
-E a artrite reumatoide? O Green afirma que a doença de DUPUYTREN é **menos comum nos pacientes reumatoides**, embora possa coexistir (p. 138). Por isso ela é a resposta clássica de "não é fator de risco". A esclerodermia e o queloide, também fibrosantes, **não se associam** a maior risco e parecem ter vias moleculares diferentes (p. 132).
+# Doenças e hábitos associados {radar=confirmado}
 
-!tabela Associações e não associações (Green 7, cap. 4, p. 128, 129, 132 e 138; Campbell 15, cap. 80, p. 3515 e Box 80.1)
-| Condição | O que os livros dizem |
+## A lista e a ressalva
+
+O Green lista as condições descritas junto com a doença: **hipercolesterolemia, diabetes, tabagismo, uso excessivo de álcool, epilepsia, medicação antiepiléptica, trauma regional, trabalho manual pesado crônico e índice de massa corporal abaixo da média** (p. 128 e 129). A ressalva do autor é o que separa quem decorou de quem entendeu: a literatura é contraditória, existe **viés de falsa associação** (quem vai mais ao médico por outras doenças tem mais chance de ter a DUPUYTREN anotada no prontuário), e o volume de evidência sugere que essas condições são **associadas, provavelmente não causais**.
+
+O Campbell traz números que viraram questão: a doença é **mais frequente no diabetes**, **frequente na epilepsia (42%)**, tem **relatos conflitantes no alcoolismo** e é **menos provável na obesidade** (Box 80.1). O IMC baixo do Green e a obesidade protetora do Campbell dizem a mesma coisa por lados opostos.
+
+## Trauma e trabalho
+
+O trauma é o tema mais discutido na medicina do trabalho, e os dois livros são cautelosos. O Campbell lembra que **a mão não dominante é acometida tanto quanto a dominante**, o que torna improvável que o trauma isolado cause a doença; mas um trauma ou uma **cirurgia menor** (dedo em gatilho, túnel do carpo) pode precipitá-la numa pessoa suscetível, e por isso **excisar um nódulo isolado** raramente se justifica (p. 3515). O Green coloca o trauma regional e o trabalho manual pesado crônico entre as associações, sem afirmar causalidade.
+
+## O diabético: doença leve e mais radial
+
+O diabetes merece um parágrafo à parte, porque as provas de cirurgia da mão perguntam o comportamento da doença nesses pacientes. O Green cita o diabetes entre as associações, sem descrever a distribuição. A fonte clássica é o estudo de NOBLE, HEATHCOTE e COHEN (J Bone Joint Surg Br 66:322-325, 1984; PMID 6725338), que examinou diabéticos adultos e encontrou sinais da doença em **42%**. O padrão era diferente do clássico: doença **leve e benigna**, raramente com indicação cirúrgica, e com **desvio da distribuição para o lado radial, com o dedo médio** mais envolvido que o habitual. A frequência subia com a idade e com a **duração do diabetes**, e não com a gravidade metabólica. A leitura que se tira: no diabético, encontrar nódulo ou corda no médio e no indicador não é atípico, e a doença costuma ser mais espessamento que contratura.
+
+## E a artrite reumatoide?
+
+O Green afirma que a doença de DUPUYTREN é **menos comum nos pacientes reumatoides**, embora possa coexistir (p. 138; ARAFA, STEINGOLD e NOBLE, J Hand Surg Br, 1984). Por isso a artrite reumatoide é a resposta clássica de "não é fator de risco". A esclerodermia e o queloide, também fibrosantes, **não se associam** a maior risco e parecem usar vias moleculares diferentes (p. 132).
+
+!tabela Associações e não associações (Green 7, cap. 4, p. 128, 129, 132 e 138; Campbell 15, cap. 80, p. 3515 e Box 80.1; NOBLE 1984)
+| Condição | O que as fontes dizem |
 | --- | --- |
-| diabetes | associado (Green); mais frequente e mais grave (Campbell) |
+| diabetes | associado (Green); mais frequente (Campbell); 42% dos diabéticos, doença leve, desvio radial para o médio (NOBLE) |
 | epilepsia e antiepilépticos | associados (Green); epilepsia em 42% (Campbell) |
 | tabagismo | associado (Green); possível contribuinte (Campbell) |
 | álcool | uso excessivo associado (Green); relatos conflitantes (Campbell) |
 | hipercolesterolemia | associada (Green) |
-| trabalho manual pesado, trauma regional | associados (Green); trauma isolado improvável (Campbell) |
+| trabalho manual pesado, trauma regional | associados (Green); trauma isolado improvável, mas pode precipitar (Campbell) |
 | IMC baixo e obesidade | IMC abaixo da média associado (Green); menos provável na obesidade (Campbell) |
 | artrite reumatoide | menos comum nos reumatoides (Green) |
 | queloide e esclerodermia | sem aumento de risco, vias diferentes (Green) |
@@ -91,28 +146,35 @@ armadilha: Marcar artrite reumatoide ou lúpus como associados, ou sexo feminino
 alerta: `mao-1189` está sem gabarito; o Green lista tabagismo, hipercolesterolemia e epilepsia entre as comorbidades associadas e não cita a hipertensão, de modo que o livro sustenta a alternativa C (hipertensão) como a que não é relacionada.
 !fim
 
+!questoes treino=mao-1970,mao-2023,mao-2197
+conceito: O Green lista hipercolesterolemia, diabetes, tabagismo, álcool, epilepsia e antiepilépticos, trauma regional, trabalho manual pesado e IMC abaixo da média como associações, provavelmente não causais.
+como: O SIMÃO 2023 pediu os fatores de risco associados; o SBCM 2024, as comorbidades mais frequentes; o SBCM 2023, a associação relatada no Green.
+armadilha: Incluir artrite reumatoide, queloide, esclerodermia ou obesidade entre as associações.
+!fim
+
 # Diátese: a gravidade biológica {radar=confirmado}
 
 ## O conceito
 
-A palavra **diátese** foi trazida por HUESTON em 1963 (Green, Tabela 4.2, p. 139) e responde a uma pergunta clínica: por que alguns pacientes têm doença agressiva, que progride rápido e volta logo depois de tratada, enquanto outros convivem com um nódulo por décadas? O Green insiste que **gravidade biológica não é o mesmo que gravidade da contratura** (p. 132). Ela se mede pela **velocidade de progressão** do diagnóstico à necessidade de tratamento e pelo **risco de recidiva, extensão, rigidez e reação inflamatória** depois do tratamento.
+A palavra **diátese** foi trazida por HUESTON em 1963 (Green, Tabela 4.2, p. 139) e responde a uma pergunta clínica: por que alguns pacientes têm doença agressiva, que progride rápido e volta logo depois de tratada, enquanto outros convivem com um nódulo por décadas? O Green insiste que **gravidade biológica não é o mesmo que gravidade da contratura** (p. 132). Um idoso pode ter 90 graus de flexão na IFP depois de 20 anos de evolução lenta e biologia mansa; um jovem pode ter 20 graus que surgiram em meses e voltarão em meses. A gravidade biológica se mede pela **velocidade** entre o diagnóstico e a necessidade de tratamento e pelo **risco de recidiva, extensão, rigidez e reação inflamatória** depois do tratamento.
 
-O Campbell usa o termo no sentido dos depósitos ectópicos: pacientes com **achados associados** (nódulos plantares, nódulos dorsais, doença peniana) têm a chamada **diátese de DUPUYTREN** e tendem a uma forma **mais progressiva e mais recorrente** (p. 3515).
+O Campbell usa o termo pelo lado dos depósitos fora da palma: pacientes com nódulos plantares, nódulos dorsais ou doença peniana têm a chamada **diátese de DUPUYTREN** e tendem a uma forma **mais progressiva e mais recorrente** (p. 3515).
 
 ## Os fatores
 
-O Green lista os **fatores de diátese**: **doença palmar bilateral, nódulos dorsais (GARROD), doença de LEDDERHOSE, história familiar positiva, início antes dos 50 anos, sexo masculino, doença do primeiro raio (polegar) e mais de dois dedos acometidos** (p. 132). Quanto mais fatores, **maior a recidiva** depois da cirurgia. O preditor mais forte de gravidade biológica é o **início em idade mais jovem**; do mesmo modo, a taxa de recidiva **cai quanto maior a idade no primeiro tratamento** (p. 133). Uma **diátese alta** é definida como **três ou mais** de: início antes dos 50, família positiva, nódulos dorsais, doença bilateral e LEDDERHOSE.
+O Green lista os **fatores de diátese**: **doença palmar bilateral, nódulos dorsais (GARROD), doença de LEDDERHOSE, história familiar positiva, início antes dos 50 anos, sexo masculino, doença do primeiro raio (polegar) e mais de dois dedos acometidos** (p. 132). Quanto mais fatores, **maior a recidiva**. Uma **diátese alta** é definida como **três ou mais** de: início antes dos 50, família positiva, nódulos dorsais, doença bilateral e LEDDERHOSE.
 
-Há um paradoxo útil para questões mais finas: **ombro congelado e doença de PEYRONIE aumentam o risco de ter a doença, mas não a taxa de recidiva** após a cirurgia (p. 133). E os fatores de diátese compartilham marcadores genéticos: início precoce, nódulos dorsais e família positiva se associam a um escore de risco genético alto.
+O preditor mais forte de gravidade biológica é o **início em idade mais jovem**; do mesmo modo, a taxa de recidiva **cai quanto maior a idade no primeiro tratamento** (p. 133). O raciocínio é intuitivo: quem desenvolveu a doença cedo tem uma carga genética maior e mais anos de vida para recidivar. E de fato os fatores de diátese compartilham marcadores: início precoce, nódulos dorsais e família positiva se associam a um **escore de risco genético** alto (DOLMANS, DE BOCK e WERKER, J Hand Surg Am, 2012).
 
-Repare no que **não** é fator de diátese: o **sexo feminino** (o masculino é que é), o dedo em gatilho no mesmo raio e a contratura da IFP do mínimo. Esta última tem pior prognóstico e mais recidiva, **independentemente da técnica** (Green, p. 138), mas é um dado de localização, não da biologia do paciente.
+## O paradoxo do evento índice
+
+Há uma sutileza que aparece em provas mais finas: **ombro congelado e doença de PEYRONIE aumentam o risco de ter a doença, mas não a taxa de recidiva** depois da cirurgia (p. 133). O autor atribui isso ao viés do evento índice: essas condições se associam a ter a doença, mas não marcam a agressividade dela uma vez instalada.
+
+Repare também no que **não** é fator de diátese: o **sexo feminino** (o masculino é que é), o dedo em gatilho no mesmo raio e a contratura da IFP do mínimo. Esta última tem pior prognóstico e mais recidiva, **independentemente da técnica** (Green, p. 139), mas é um dado de localização, não da biologia do paciente.
 
 ## O que o Campbell acrescenta sobre prognóstico
 
-A Tabela 80.1 do Campbell (p. 3518) acrescenta: família positiva acelera a progressão, sobretudo com início precoce; na mulher a doença começa e progride mais devagar, mas o **resultado operatório é pior e o flare duas vezes mais provável**; doença **bilateral**, com coxins e nódulos plantares, progride mais e recidiva mais; a progressão é **mais rápida no lado ulnar**.
-
-
-As estimativas de HUESTON (Fig. 80.8) vão de **4% de recidiva e extensão sem nenhum fator a 78% com todos** (p. 3520).
+A Tabela 80.1 do Campbell (p. 3518) acrescenta: família positiva acelera a progressão, sobretudo com início precoce; na mulher a doença começa e progride mais devagar, mas o resultado operatório é pior; doença **bilateral**, com coxins e nódulos plantares, progride mais e recidiva mais; e a progressão é **mais rápida no lado ulnar**. As estimativas de HUESTON (Fig. 80.8) vão de **4% de recidiva e extensão sem nenhum fator a 78% com todos** (p. 3520).
 
 !tabela Fatores de diátese e de prognóstico (Green 7, cap. 4, p. 132 e 133; Campbell 15, cap. 80, Tab. 80.1 e Fig. 80.8)
 | Fator | Efeito |
@@ -137,17 +199,23 @@ armadilha: Marcar sexo feminino, dedo em gatilho no raio ou contratura da IFP do
 alerta: `mao-1516` está sem gabarito; pelo Green, o critério de diátese entre as alternativas é o antecedente familiar positivo (alternativa C).
 !fim
 
+!questoes treino=mao-2413
+conceito: Para o Green, o preditor mais forte da gravidade biológica, e portanto da recontratura, é o início da doença em idade mais jovem; a recidiva cai quanto mais velho o paciente no primeiro tratamento.
+como: O SIMÃO 2022 perguntou o preditor biológico mais forte de recontratura.
+armadilha: Confundir com a história familiar, que é o preditor mais forte de ter a doença, não da gravidade dela.
+!fim
+
 # Doenças associadas: LEDDERHOSE, PEYRONIE e os coxins de GARROD {radar=confirmado}
 
-O Green explica por que essas condições andam juntas. Nódulos dorsais, doença de PEYRONIE (pênis), doença de LEDDERHOSE (fáscia plantar) e ombro congelado **ocorrem onde estruturas fasciais inelásticas sofrem picos de cisalhamento ou tração** (p. 132). A opinião do autor é de um **distúrbio de base do tecido conjuntivo**, disparado pela mecânica de cada local, o que explica a sobreposição dos fatores de risco: a **família positiva aumenta o risco tanto de LEDDERHOSE quanto de nódulos dorsais**. No plano genético, o haplótipo **HLA-B7** foi descrito tanto na PEYRONIE quanto na DUPUYTREN (p. 129).
+O Green explica por que essas condições andam juntas. Nódulos dorsais, doença de PEYRONIE (pênis), doença de LEDDERHOSE (fáscia plantar) e ombro congelado **ocorrem onde estruturas fasciais inelásticas sofrem picos de cisalhamento ou tração** (p. 132). A opinião do autor é de um **distúrbio de base do tecido conjuntivo**, disparado pela mecânica de cada local, o que explica a sobreposição dos fatores de risco: a **família positiva aumenta o risco tanto de LEDDERHOSE quanto de nódulos dorsais** (GUDMUNDSSON e colaboradores, Foot Ankle Int, 2013).
 
 O Campbell dá as frequências: **LEDDERHOSE em 5%** e **PEYRONIE em 3%** dos pacientes, e as fotos da Figura 80.2 mostram o envolvimento plantar medial, inclusive do hálux, e os nódulos dorsais da IFP (p. 3516 e 3517).
 
-Por que a fáscia plantar e os coxins dorsais quase nunca contraem? O Green dá uma explicação elegante: a biologia da doença **fixa os tecidos na posição de repouso** (p. 137). A mão repousa em **flexão e adução**, e é exatamente essa a deformidade da contratura. As interfalângicas repousam em flexão, e por isso o coxim no dorso não as estende; as metatarsofalângicas repousam em extensão, e por isso a LEDDERHOSE não flete os dedos do pé. Biópsias de todos esses locais contraem igualmente em laboratório.
+Por que a fáscia plantar e os coxins dorsais quase nunca contraem? Pela regra da posição de repouso já explicada: as metatarsofalângicas repousam em extensão e as interfalângicas em flexão, de modo que o tecido doente nesses locais se fixa numa posição que não produz deformidade (p. 137).
 
 A esclerodermia e o queloide, apesar de fibrosantes, **não** fazem parte desse grupo (p. 132). Escoliose, fascite plantar comum, esclerose múltipla e tendinite bicipital também não aparecem nos livros como parte da diátese.
 
-!questoes central=mao-0738
+!questoes central=mao-0738 treino=mao-3356
 conceito: LEDDERHOSE (fáscia plantar, 5%) e PEYRONIE (pênis, 3%) são as doenças fibroproliferativas da diátese de DUPUYTREN; queloide e esclerodermia não se associam.
 como: O IAUPE 2025 perguntou quais condições estão ligadas diretamente à diátese fibroproliferativa.
 armadilha: Escolher artrite reumatoide e esclerodermia, ou fascite plantar e escoliose.
@@ -157,23 +225,45 @@ armadilha: Escolher artrite reumatoide e esclerodermia, ou fascite plantar e esc
 
 ## Os primeiros sinais
 
-O Green lista os sinais iniciais: **pele tensa**, **deformação das pregas e depressões**, **nódulos**, **cordas sem contratura** e **proeminência dos montículos palmares** (p. 129). O **nódulo** é a primeira alteração em cerca de **6 de cada 10 pacientes**: firmeza subdérmica **aderida à derme**, de **0,5 a 1,5 cm**. As lesões são em geral **indolores**; o **aprisionamento neural nos nódulos** explica os que chegam com dor (Campbell, p. 3515).
+O Green lista os sinais iniciais (p. 129; Fig. 4.3): **pele tensa**, que empalidece quando se estende o dedo; **deformação das pregas e covinhas**; **nódulos**; **cordas sem contratura**; e **proeminência dos montículos palmares**. Cada um tem uma explicação anatômica. A pele empalidece porque as fibras superficiais da fáscia doente estão ancoradas na derme e a tracionam; a covinha aparece pelo mesmo motivo, quando a fibra puxa a pele para dentro.
+
+O **nódulo** é a primeira alteração em cerca de **6 de cada 10 pacientes**: uma firmeza subdérmica de **0,5 a 1,5 cm**, **aderida à derme**, de margens indistintas, às vezes com as papilas dérmicas proeminentes ou comprimidas sobre ele (Fig. 4.4). A covinha ou a deformação de prega é o primeiro sinal em cerca de **1 em 10**. As lesões quase sempre são **indolores**; raramente o nódulo fica eritematoso, doloroso ou pruriginoso, e o Campbell atribui os casos dolorosos ao **aprisionamento de ramos nervosos no nódulo** (p. 3515).
 
 ## Nódulos dorsais de GARROD
 
-Os **nódulos dorsais de DUPUYTREN** são os **coxins de GARROD** (knuckle pads): massas firmes **na face extensora das articulações dos dedos**, histologicamente semelhantes aos nódulos palmares (Green, p. 129). A localização mais comum é a **interfalângica proximal**; às vezes a IFD, a MF ou a IF do polegar. Eles se fixam ao paratendão superficial do aparelho extensor. Aparecem em **1 de cada 5 pacientes**, muitas vezes **antes** da doença palmar, e se associam a **biologia mais agressiva**. É preciso distingui-los do **coxim cutâneo dorsal**, um espessamento com hiperceratose só da pele, sem relação com a doença. O Campbell, no Box 80.1, também os coloca **sobre as IFP, dorsalmente**.
+Os **nódulos dorsais de DUPUYTREN** são os **coxins de GARROD** (knuckle pads): massas firmes **na face extensora das articulações dos dedos**, com histologia semelhante à dos nódulos palmares (Green, p. 129; Fig. 4.5). A localização mais comum é a **interfalângica proximal**; às vezes a IFD, a MF ou a IF do polegar. Eles se prendem ao **paratendão superficial do aparelho extensor**. Aparecem em **1 de cada 5 pacientes**, muitas vezes **antes** da doença palmar, e se associam a **biologia mais agressiva**, por isso entram entre os fatores de diátese.
 
-Quando doem, a **injeção de corticoide** alivia, com **recidiva de pelo menos 50%**; a excisão arrisca o extensor e deixa **botoeira**, porque não há plano entre nódulo e aparelho extensor (Green, p. 143).
+É preciso distingui-los do **coxim cutâneo dorsal**, um espessamento com hiperceratose só da pele, frequente na população geral (quem trabalha apoiado nos nós dos dedos, por exemplo), que **não se associa** à doença (p. 129 e 130). A diferença está na profundidade: o coxim cutâneo é epidérmico; o nódulo de GARROD é fibroso e preso ao extensor.
 
-## Cordas e contraturas
+## Tratar o nódulo dorsal
 
-As **cordas** são palpadas como fios sob a pele, de poucos milímetros a mais de 1 cm de largura, e com os nódulos formam o aspecto de **contas num cordão** (Green, p. 130). A corda não nodular só fica firme **quando está sob tensão**, tem margens nítidas e **não adere à derme**. O truque do exame é sentir a passagem de mole para firme enquanto se estende passivamente o dedo a partir da flexão. A primeira manifestação da contratura é um **déficit de extensão passiva** por corda contraída, em geral na **MF e na IFP**.
+A maioria não precisa de tratamento (p. 143). Trata-se quando dói, incomoda pela aparência ou prende o aparelho extensor e limita a flexão; alguns regridem sozinhos. A primeira escolha é a **infiltração de corticoide**, por exemplo 5 mg de triancinolona, entrando pela lateral com a agulha tangente à pele e mirando o centro do nódulo. A resposta é alta, mas a **recidiva é de pelo menos 50%**, e é comum uma pele rosada e brilhante transitória no local. A **excisão** é a armadilha: **não existe plano entre o nódulo e o aparelho extensor**, que têm aspecto parecido, e a tentativa de retirar arrisca lesar o extensor e deixar uma **botoeira** secundária. Por isso fica para casos selecionados, e mesmo assim recidiva e dor persistente são frequentes.
 
-A história natural é benigna na maioria: em quase 9 anos de seguimento de pacientes só com nódulos, REILLY viu apenas **1 em 10 evoluir para contratura** (Green, p. 130). As cordas podem fletir isoladamente a MF, a IFP ou a IFD; a **corda natatória aduz os dedos** (p. 131).
+## Cordas
 
-## Diagnóstico
+As **cordas** se palpam como cordões sob a pele, de poucos milímetros a mais de 1 cm de largura, e com os nódulos formam o aspecto de **contas num fio** (Green, p. 130). A corda não nodular tem três características: **só fica firme quando está sob tensão**, tem **margens nítidas** e **não adere à derme**, ao contrário do nódulo. O truque do exame decorre disso: palpar a corda enquanto se estende passivamente o dedo a partir da flexão e sentir o momento em que o tecido mole vira firme.
 
-O diagnóstico é **clínico**, sem exame ou biomarcador próprio; o **Doppler** ajuda a achar o feixe deslocado por corda espiral (Green, p. 133). Como o nódulo isolado tem diferencial com sarcomas e outros tumores, deve ser reavaliado no seguimento (p. 130).
+A primeira manifestação da contratura é um **déficit de extensão passiva** por corda contraída, em geral na **MF e na IFP**. As cordas podem fletir isoladamente a MF, a IFP ou a IFD; a **corda natatória aduz os dedos**, e essa adução pode ficar escondida pela adução que acompanha a contratura da MF (p. 131).
+
+## O polegar e a borda ulnar
+
+Dois territórios têm deformidades próprias (p. 131). No **polegar**, a doença pode contrair a carpometacárpica, a MF ou a IF, e o padrão mais característico é a **adução** (radial ou palmar), por cordas da primeira comissura. Na **borda ulnar**, a corda hipotenar, ligada à fáscia do abdutor do dedo mínimo, produz **flexão e abdução da MF do mínimo**, e explica a perda de supinação que alguns pacientes relatam.
+
+## História natural: a maioria não piora
+
+Este é um dado que muda a conversa no consultório. REILLY, STERN e GOLDFARB (J Hand Surg Am 30:1014-1018, 2005) seguiram por cerca de 9 anos pacientes que tinham só nódulos: **1 em 10 evoluiu para contratura, 1 em 10 regrediu, 4 em 10 formaram corda sem contratura e 4 em 10 ficaram estáveis** (Green, p. 130). GUDMUNDSSON e colaboradores, na Islândia, viram que quase **dois terços** dos que tinham nódulo ou corda sem contratura **não progrediram em 18 anos**. E em quase **um quarto** dos casos o primeiro sinal é uma corda ou contratura **sem nódulo prévio**.
+
+Daí a regra prática: nódulo isolado não é indicação cirúrgica, e a presença de doença não significa que haverá contratura.
+
+## Diagnóstico e diagnóstico diferencial
+
+O diagnóstico é **clínico**; não existe exame ou biomarcador único (Green, p. 134). A imagem tem papéis pontuais:
+
+- **Radiografia**: mostra artrose associada e, raramente, **ossificação heterotópica dentro da corda**.
+- **Ultrassom com Doppler**: localiza o feixe neurovascular deslocado por uma corda espiral antes da cirurgia ou da agulha (ELSAHY, 1976, na lista do capítulo).
+- **Ressonância**: estima a celularidade (em tese, o estágio de LUCK), mas é pouco usada.
+
+O que preocupa é o **nódulo palmar isolado, sem corda**, porque tem diferencial com tumores: **fibrossarcoma, histiocitoma fibroso, tumor de células gigantes, sarcoma sinovial, fibroma aponeurótico calcificante e sarcoma epitelioide** (p. 130). Uma massa isolada rotulada como DUPUYTREN precisa de seguimento; se cresce de forma atípica, não tem o contexto clínico ou não se comporta como a doença, merece imagem e biópsia.
 
 Um caso de prova típico é o homem de 55 anos que não estende mais os dedos e tem uma faixa fibrosa palpável da palma até o dedo: é a doença de DUPUYTREN, cuja característica anatômica é a **fibrose do tecido conjuntivo da palma** (fáscia palmar e digital), não inflamação articular, líquido sinovial ou lesão nervosa.
 
@@ -183,37 +273,68 @@ como: O TARO 2017 perguntou a face e a articulação dos nódulos de GARROD; a P
 armadilha: Colocar os nódulos de GARROD na face volar ou na MF, ou confundir a doença com dedo em gatilho.
 !fim
 
+!questoes treino=mao-2345
+conceito: O diagnóstico da doença de DUPUYTREN é clínico, pela inspeção e palpação de nódulos, cordas e contraturas; o Doppler serve para localizar o feixe deslocado, não para diagnosticar.
+como: O SIMÃO 2024 perguntou como se faz adequadamente o diagnóstico.
+armadilha: Achar que a ressonância, a ultrassonografia ou um marcador sérico confirmam a doença.
+!fim
+
 # A biologia: miofibroblasto, colágeno III e os estágios de LUCK {radar=confirmado}
 
 ## O miofibroblasto
 
-A célula-chave é o **miofibroblasto**. À microscopia óptica parece um fibroblasto, mas tem diferenças ultraestruturais: **fibras de estresse**, complexos de adesão na membrana, fibras de fibronectina e **actina alfa de músculo liso** (Green, p. 131). Foi identificado na contratura de DUPUYTREN por GABBIANI em 1972 (Tabela 4.2).
+A célula-chave é o **miofibroblasto**. À microscopia óptica parece um fibroblasto, mas tem diferenças ultraestruturais: **fibras de estresse**, complexos de adesão na membrana (adesões focais), junções entre células, fibras de fibronectina e **actina alfa de músculo liso** (Green, p. 131). Foi identificado na contratura de DUPUYTREN por GABBIANI em 1972 (Tabela 4.2), e a descoberta mudou a forma de pensar a doença: deixou de ser uma "retração" passiva da fáscia e passou a ser um processo celular ativo.
 
-O Green descreve o ciclo em detalhe (p. 136): fibroblastos de uma matriz submetida a **estresse mecânico**, na presença de **TGF beta 1**, diferenciam-se em miofibroblastos. As adesões focais ligam os fios de colágeno à membrana; a contração da célula **dobra o colágeno**, e enzimas da matriz fazem **ligações cruzadas** que fixam a dobra. Resultado: a matriz encurta (até **1 cm por mês**) e enrijece, e a matriz rígida transmite força aos tecidos vizinhos, que entram no mesmo processo. Em condições normais, o miofibroblasto é temporário e desaparece por desdiferenciação ou apoptose quando o estímulo cessa; **na doença de DUPUYTREN ele persiste**, e o mecanismo dessa resistência à apoptose é desconhecido.
+## O ciclo que encurta a corda
 
-O Campbell compara a doença à **cicatrização**: os miofibroblastos, que produzem **colágeno III**, dominam tanto o tecido de granulação quanto o tecido de DUPUYTREN, e o TGF beta e o fator básico de crescimento de fibroblastos estão aumentados na fáscia doente; o **TGF beta induz a diferenciação de fibroblasto em miofibroblasto** (p. 3515.e1). Essa semelhança explica um dos problemas da cirurgia: a fasciectomia, que é uma ferida, pode **provocar** a própria biologia da doença (Green, p. 138).
+O Green descreve o ciclo em detalhe (p. 136; Fig. 4.9), e vale entendê-lo passo a passo, porque ele explica por que a contratura não volta sozinha:
+
+1. Fibroblastos de uma matriz submetida a **estresse mecânico**, na presença de **TGF beta 1**, diferenciam-se em miofibroblastos.
+2. As adesões focais prendem os fios de colágeno à membrana da célula; a célula contrai e **dobra o colágeno**, criando folga.
+3. Enzimas da matriz fazem **ligações cruzadas** que fixam o colágeno no novo comprimento e "cortam" a sobra.
+4. A célula solta, pega o colágeno num ponto mais adiante e repete.
+
+O resultado é uma catraca: a matriz encurta (até **1 cm por mês**) e fica mais rígida, e a matriz rígida passa a transmitir força aos tecidos vizinhos, que entram no mesmo processo. Por isso a doença avança ao longo das linhas de tensão. Em condições normais, o miofibroblasto é temporário e desaparece por desdiferenciação ou apoptose quando o estímulo cessa; **na doença de DUPUYTREN ele persiste**, e o mecanismo dessa resistência à apoptose é desconhecido.
+
+O Campbell compara a doença à **cicatrização**: os miofibroblastos, que produzem **colágeno III**, dominam tanto o tecido de granulação quanto o tecido de DUPUYTREN, e o TGF beta e o fator básico de crescimento de fibroblastos estão aumentados na fáscia doente; o **TGF beta induz a diferenciação de fibroblasto em miofibroblasto** (p. 3515.e1). Essa semelhança explica um dos problemas da cirurgia: a fasciectomia, que é uma ferida, pode **provocar** a própria biologia da doença.
+
+!questoes treino=mao-2546
+conceito: A diferença entre a doença de DUPUYTREN e a cicatrização normal não está no tipo de célula, e sim no tempo de vida dela: o miofibroblasto da ferida desaparece por apoptose quando o estímulo cessa, e o da doença persiste.
+como: O SIMÃO 2021 perguntou o que distingue o miofibroblasto da doença do que acontece numa ferida.
+armadilha: Achar que a doença tem uma célula própria, inexistente na cicatrização, ou que o miofibroblasto é um processo neoplásico monoclonal.
+!fim
+
+## A fáscia "normal" já é anormal
+
+Um achado curioso do capítulo (p. 137): mesmo a fáscia de aparência normal desses pacientes já mostra alterações, como **colágeno III elevado**, curva de tensão e deformação anormal, contração anormal em cultura e alterações de expressão gênica. SATISH e colaboradores mostraram que fibroblastos da fáscia fenotipicamente normal têm perfil molecular muito parecido com o da doença ativa. A frase do autor resume: **todos os pacientes são anormais, em graus diferentes**. Isso ajuda a entender a extensão (doença nova em área "sã") e por que nenhuma ressecção, por mais ampla, cura.
 
 ## Colágeno III
 
-A **fáscia palmar normal tem pouco ou nenhum colágeno tipo III**; na doença há níveis altos de colágeno III **mesmo sem contratura** (Green, p. 131). Para EATON, porém, **o colágeno não é o culpado, é a pegada da biologia primária** (p. 149).
+A **fáscia palmar normal tem pouco ou nenhum colágeno tipo III**; na doença há níveis altos de colágeno III **mesmo sem contratura** (Green, p. 131), a ponto de o colágeno III chegar a uma fração importante do colágeno total do nódulo. O colágeno III é o colágeno "jovem" da cicatriz, mais fino e menos organizado que o tipo I. Para EATON, porém, **o colágeno não é o culpado, é a pegada da biologia primária** (p. 149): ele é o rastro do processo, não a causa.
 
-## Genes
-
-O Green cita **nove loci** de suscetibilidade, em vias de **TGF beta 1**, metaloproteinases e sobretudo **Wnt**; a doença **não é neoplasia monoclonal** (p. 129). O gene cobrado é o **TIMP-1** (inibidor tecidual de metaloproteinase 1), no **cromossomo X**. HLA-B27, SHOX e CFTR não aparecem no capítulo.
+!questoes treino=mao-2368,mao-3346
+conceito: A fáscia palmar normal tem pouco ou nenhum colágeno tipo III; na doença ele aumenta de forma característica, inclusive antes da contratura.
+como: O SIMÃO 2024 perguntou qual tipo de colágeno aumenta de forma característica na fáscia doente.
+armadilha: Marcar o colágeno tipo I (é o da fáscia normal) ou o tipo II (cartilagem).
+!fim
 
 ## Os três estágios de LUCK
 
-LUCK (1959) descreveu **três estágios histológicos**: **proliferativo, involutivo e residual**, que correspondem, grosso modo, a **nódulos, cordas nodulares e cordas não nodulares** (Green, p. 131).
+LUCK (J Bone Joint Surg Am 41A:635-664, 1959) descreveu **três estágios histológicos**: **proliferativo, involutivo e residual**, que correspondem, grosso modo, a **nódulos, cordas nodulares e cordas não nodulares** (Green, p. 131). A lógica é a de uma cicatriz que amadurece: muitas células no começo, alinhamento no meio, colágeno denso e quase acelular no fim.
 
-- **Proliferativo:** histologia **muito celular, com mitoses**, miofibroblastos e fibrilas de colágeno **orientados ao acaso**, esparsos.
-- **Involutivo (fibrocelular):** menos celular, **sem mitoses**, com alguma **orientação paralela** de miofibroblastos e fibrilas.
+- **Proliferativo:** histologia **muito celular, com mitoses**, miofibroblastos e fibrilas de colágeno **orientados ao acaso**.
+- **Involutivo (fibrocelular):** menos celular, **sem mitoses**, com alguma **orientação paralela** de miofibroblastos e fibrilas, que começam a se alinhar com a tensão.
 - **Residual (fibrótico):** colágeno **relativamente acelular**, células achatadas, feixes densos de colágeno **uniformemente orientados**.
 
-O Campbell descreve os estágios clinicamente (p. 3515): no **proliferativo**, nódulos de colágeno III e fibroblastos na prega palmar distal e sobre a IFP, **não sobre a IFD**; no **involutivo**, os **miofibroblastos passam a predominar** e contraem; no **residual**, sobram **cordas fibrosas acelulares** e as contraturas.
+Nos três há microvasos ocluídos e lâmina basal espessada. O Campbell descreve os estágios clinicamente (p. 3515): no **proliferativo**, nódulos de colágeno III e fibroblastos na prega palmar distal e sobre a IFP, **não sobre a IFD**; no **involutivo**, os **miofibroblastos passam a predominar** e contraem; no **residual**, sobram **cordas fibrosas acelulares** e as contraturas.
 
-O Green liga cada estágio à **razão colágeno III / colágeno I**: **maior que 35% na fase proliferativa**, entre **20% e 35% na involutiva** e **menor que 20% na residual** (p. 131). O colágeno III persiste: a fase involutiva é estática, mas não normal.
+O Green liga cada estágio à **razão colágeno III / colágeno I**: **maior que 35% na fase proliferativa**, entre **20% e 35% na involutiva** e **menor que 20% na residual** (p. 131). E faz uma ressalva fina: **o estágio involutivo é estático, mas não normal**, porque o colágeno III persiste.
 
-O estágio também prevê a **recidiva**. BALAGUER e colaboradores, de 8 a 9 anos depois da fasciectomia, viram que a histologia proliferativa **mais que dobrou** a recidiva em relação à involutiva e **mais que triplicou** em relação à residual (Green, p. 131). Daí o conselho de **evitar operar na fase proliferativa** e a constatação do Campbell de que a fasciotomia subcutânea funciona melhor na **fase residual**, com cordas densas e maduras (p. 3523).
+Há uma pequena incoerência no próprio capítulo. Na p. 137 o autor chama o estágio final da doença de "involutivo, estático", o que contraria a ordem de LUCK da p. 131, em que o residual é o último. Para a prova vale a ordem clássica: proliferativo, involutivo, residual.
+
+## O estágio prevê a recidiva
+
+O estágio também prevê a **recidiva**. BALAGUER e colaboradores (J Hand Surg Eur 34:493-496, 2009), de 8 a 9 anos depois da fasciectomia, viram que a histologia proliferativa **mais que dobrou** a recidiva em relação à involutiva e **mais que triplicou** em relação à residual (Green, p. 131). Daí o conselho de **evitar operar na fase proliferativa** e a constatação do Campbell de que a fasciotomia subcutânea funciona melhor na **fase residual**, com cordas densas e maduras (p. 3523).
 
 Uma observação para não errar: as **cordas** maduras e acelulares são da fase **residual**; a fase proliferativa é a dos **nódulos**.
 
@@ -233,7 +354,11 @@ armadilha: Dizer que as cordas são da fase proliferativa, que o colágeno III p
 
 # Medir a contratura: TUBIANA e as armadilhas da goniometria {radar=confirmado}
 
-O Green reconhece que **não existe sistema universal** para medir a gravidade da contratura (p. 131). Testes de função global não são específicos; questionários como DASH e MHQ correlacionam mal com a amplitude de movimento, porque a contratura costuma ser indolor.
+## Por que medir é difícil
+
+O Green reconhece que **não existe sistema universal** para medir a gravidade da contratura (p. 131). Os questionários gerais de função, como DASH e MHQ, ficam diluídos pelas perguntas sobre dor, e a contratura de DUPUYTREN costuma ser indolor; por isso correlacionam mal com a amplitude de movimento. Há escalas específicas, como a URAM (francesa) e a de Southampton (SDSS), mas pouco adotadas.
+
+## O estágio de TUBIANA
 
 O estágio de **TUBIANA** é um **índice de contratura composta**: soma-se a **contratura em flexão da MF com a da IFP** de cada raio e coloca-se o total em faixas de **45 graus** (p. 131 e 132):
 
@@ -247,41 +372,67 @@ O estágio de **TUBIANA** é um **índice de contratura composta**: soma-se a **
 | 4 | mais de 135 graus |
 !fim
 
-A **IFD não entra** na soma. A classificação foi modificada para anotar nódulos e hiperextensão da IFD, mas o uso mais comum é o número do dedo acometido. Sua vantagem é resumir as contraturas de cordas que cruzam a MF e a IFP ao mesmo tempo. A variante numérica é o **índice de contratura total** (a soma em graus). O estágio de TUBIANA também orienta a tática: contratura composta **menor que 90 graus (TUBIANA I ou II)** pode ser tratada por qualquer procedimento; **maior que 90 graus (III ou IV)** pede tratamento em estágios ou tração esquelética prévia (Tabela 4.4, p. 140).
+A **IFD não entra** na soma. Isso não é descuido: a classificação nasceu para resumir as cordas que cruzam a palma e o dedo, que fletem a MF e a IFP ao mesmo tempo, e a IFD raramente é o problema principal. Versões modificadas acrescentam anotações de nódulo e de hiperextensão da IFD e um total da mão (HINDOCHA e colaboradores, Hand, 2008), mas o uso mais comum é o número do raio. A variante numérica é o **índice de contratura total** (a soma em graus, sem faixas).
 
-A goniometria de cada articulação engana: cordas que cruzam duas articulações criam **contraturas dinâmicas por fasciodese**, presentes em mais de um terço dos raios com MF + IFP (p. 132).
+O estágio também orienta a tática: contratura composta **menor que 90 graus (TUBIANA I ou II)** pode ser tratada por qualquer procedimento; **maior que 90 graus (III ou IV)** pede tratamento em estágios ou tração esquelética prévia (Tabela 4.4, p. 140).
 
-!questoes central=mao-0661 relacionadas=mao-1051
+Exemplo de conta: anular com 60 graus na MF, 45 na IFP e 40 na IFD. Somam-se só MF e IFP: 105 graus, faixa de 90 a 135, **estágio 3**. A IFD de 40 graus é a armadilha.
+
+!questoes central=mao-0661 relacionadas=mao-1051 treino=mao-3352
 conceito: TUBIANA soma a contratura da MF e da IFP do raio em faixas de 45 graus: estágio 2 de 45 a 90 graus, estágio 3 de 90 a 135 graus; a IFD não entra.
 como: A FMRP-USP 2026 pediu a faixa do estágio 2; a PUC-SP 2019, o estágio correspondente a 90 a 135 graus.
 armadilha: Somar a IFD, ou deslocar as faixas em um estágio (chamar 90 a 135 de estágio 2).
 !fim
 
+!questoes treino=mao-2484,mao-3343,mao-3345
+conceito: Com 30 graus na MF e 30 na IFP, a soma de 60 graus cai na faixa de 45 a 90 do TUBIANA; a IFD normal não muda nada, porque não entra na conta.
+como: O SIMÃO 2021 deu os graus de MF e IFP de um dedo e pediu o estágio.
+armadilha: Classificar cada articulação separadamente ou contar a IFD.
+!fim
+
+## Fasciodese: a articulação que melhora sem ser tratada
+
+A goniometria de cada articulação engana por dois motivos (p. 132).
+
+O primeiro é a **contratura dinâmica por fasciodese**. Uma corda que cruza duas articulações em sequência funciona como um tendão biarticular: a extensão que se mede numa depende da posição da outra. Se a MF está fletida, a corda afrouxa e a IFP estende mais; se a MF é estendida, a corda tensiona e a IFP flete. GROTESMAN mostrou contraturas dinâmicas em **mais de um terço dos raios com MF e IFP acometidas**, sobretudo na IFP. É por isso que, nos estudos da colagenase, a IFP **não tratada corrigiu espontaneamente em mais de um terço** dos casos em que só a corda da MF foi injetada (HAYTON e colaboradores, 2013): ao cortar a corda na palma, a tensão que fletia a IFP também foi embora.
+
+O segundo é a **corda que chega à palma proximal** e sofre o efeito da carpometacárpica (Fig. 4.6). As CMC do anular e do mínimo têm mobilidade; o paciente aprende a **fletir essas CMC** como truque para afrouxar a corda e estender a MF. Ao examinar com a CMC livre, a MF parece estender por completo; ao **bloquear a CMC**, a extensão passiva da MF mudou, num exemplo do livro, **de 0 para 65 graus** de déficit. A leitura é que a corda se estende até a palma proximal.
+
+Um terceiro viés é menor, mas real: a **força do examinador** muda a medida passiva, porque as cordas são inelásticas mas as inserções não.
+
+## Desfechos: o que conta como sucesso
+
+O capítulo discute como os estudos medem resultado (p. 133). O **coeficiente de THOMINE** divide os graus de melhora pela contratura inicial. Os estudos da colagenase usaram como sucesso a **articulação corrigida a 5 graus ou menos**, o que favorece a droga quando se define recidiva só entre os que corrigiram. E um dado que relativiza tudo: ROUSH e STERN (J Hand Surg Am, 2000), na cirurgia da recidiva, tiveram **95% de pacientes satisfeitos sem ganho médio de movimento ativo**. O paciente valoriza coisas que o goniômetro não vê.
+
 # Anatomia normal da fáscia palmar e digital {radar=confirmado}
 
-Entender as cordas exige conhecer a fáscia normal, porque **cada corda é uma estrutura normal que adoeceu**. O Green descreve essa anatomia na seção "Normal Anatomy" (p. 134 a 136).
+Entender as cordas exige conhecer a fáscia normal, porque **cada corda é uma estrutura normal que adoeceu**. O Green descreve essa anatomia na seção "Normal Anatomy" (p. 134 a 136; Fig. 4.8).
 
 ## Na palma
 
-A **fáscia palmar superficial** fica num plano coronal, profunda ao subcutâneo, e cobre um triângulo da palma central com o vértice voltado para proximal, onde termina o **palmar longo** (quando existe). Desse ponto saem **quatro bandas centrais (pré-tendíneas)**, uma para cada dedo longo; **não há banda central para o polegar**. Confluentes em proximal, as bandas divergem seguindo cada raio.
+A **fáscia palmar superficial** fica num plano coronal, logo abaixo do subcutâneo, e cobre um triângulo da palma central com o vértice voltado para proximal, onde se continua o **palmar longo** (quando existe). Desse triângulo saem **quatro bandas centrais (pré-tendíneas)**, uma para cada dedo longo; **não há banda central para o polegar**. As bandas divergem na borda distal do ligamento retinacular transverso (o retináculo dos flexores, que fica por baixo).
 
-Na **prega palmar distal**, as bandas centrais são unidas transversalmente pelo **ligamento transverso palmar superficial**, que na borda radial continua com o **ligamento proximal da primeira comissura** até perto do sesamoide radial do polegar. Nesse nível, cada banda central se divide em **três direções**:
+Na **prega palmar distal**, as bandas centrais são unidas transversalmente pelo **ligamento transverso palmar superficial**, que na borda radial continua com o **ligamento proximal da primeira comissura** até perto do sesamoide radial do polegar. Nesse nível, cada banda central se divide em **três camadas**:
 
-- **Fibras superficiais:** sobem para a derme da palma distal, entre as pregas, **onde costumam nascer os nódulos**.
-- **Fibras intermediárias:** dividem-se em duas e seguem para a borda lateral da base do dedo; são a **banda espiral**, assim chamada porque contornam o feixe neurovascular: **em proximal ficam centrais e superficiais ao feixe; em distal, laterais e profundas a ele**. Quando essas fibras adoecem, formam-se os feixes espirais.
-- **Fibras profundas:** descem para a fáscia interóssea, atravessam o ligamento metacarpal transverso e se unem às bandas sagitais; **raramente participam** das contraturas. É aí que ficam os septos de LEGUEU e JUVARA.
+- **Fibras superficiais:** sobem para a derme da palma distal, entre as pregas. É aí, onde essas fibras **ancoram a derme à fáscia contra o cisalhamento da preensão**, que **nascem os nódulos** (p. 136).
+- **Fibras intermediárias:** dividem-se em duas e seguem para a borda lateral da base do dedo; são a **banda espiral**, assim chamada porque contornam o feixe neurovascular: **em proximal ficam centrais e superficiais ao feixe; em distal, laterais e profundas a ele**. Quando essas fibras adoecem, forma-se o feixe em espiral.
+- **Fibras profundas:** descem para a fáscia interóssea sagital, atravessam o ligamento metacarpal transverso e se unem às bandas sagitais do extensor; **raramente participam** das contraturas. É por elas que se formam os septos de LEGUEU e JUVARA.
 
 ## Nas comissuras
 
-Entre os dedos, a camada subdérmica das comissuras forma o **ligamento natatório** (na primeira comissura, o ligamento distal da primeira comissura), cujas fibras seguem **em continuidade com o ligamento de GRAYSON** (Green, p. 134).
+Entre os dedos, a camada subdérmica das comissuras forma o **ligamento natatório** (na primeira comissura, o ligamento distal da primeira comissura), cujas fibras seguem **em continuidade com o ligamento de GRAYSON** e com a derme lateral do dedo (Green, p. 134). Por estar no mesmo plano subdérmico, o natatório é o responsável pela contratura em adução das comissuras.
 
 ## No dedo
 
-O feixe neurovascular digital é **envolvido por finas camadas de fáscia**. O componente **dorsal ao feixe** é o **ligamento de CLELAND**; o **palmar ao feixe** é o **ligamento de GRAYSON**. Esses "ligamentos" são, na verdade, malhas de fibras oblíquas curvas que nascem de uma zona comum em continuidade com os ligamentos retinaculares, o assoalho da bainha flexora e as fibras que se prendem à pele palmar. Na borda ulnar do mínimo, o mesmo padrão continua com a **fáscia e o tendão do abdutor do dedo mínimo** (Green, p. 136). O Campbell, com base em McFARLANE e THOMINE, acrescenta a **lâmina digital lateral**, que recebe fibras da banda espiral e do natatório (Fig. 80.4 e 80.5, p. 3517 e 3518).
+O feixe neurovascular digital é **envolvido por finas camadas de fáscia** (ZWANENBURG, WERKER e McGROUTHER, J Hand Surg Eur, 2014). O componente **dorsal ao feixe** é o **ligamento de CLELAND**; o **palmar ao feixe** é o **ligamento de GRAYSON**. Para lembrar: GRAYSON é "ground", fica no chão palmar, do lado da pele que encosta no objeto; CLELAND fica no "teto", entre o feixe e o osso. Esses "ligamentos" são, na verdade, malhas de fibras oblíquas curvas que nascem de uma zona comum em continuidade com os ligamentos retinaculares, o assoalho da bainha flexora e as fibras que se prendem à pele palmar (p. 136). Na borda ulnar do mínimo, o mesmo padrão continua com a **fáscia e o tendão do abdutor do dedo mínimo**.
+
+O Campbell, com base em McFARLANE (Plast Reconstr Surg, 1974) e THOMINE, acrescenta a **lâmina digital lateral**, uma camada de fáscia na lateral do dedo que recebe fibras da banda espiral e do natatório (Fig. 80.4 e 80.5, p. 3517 e 3518). Ela é essencial para entender a corda espiral.
+
+Uma divergência entre os livros: para EATON, a **banda retrovascular** normal, descrita como fáscia longitudinal dorsal ao feixe, é um **artefato de dissecção** (Green, p. 136); o Campbell a trata como estrutura real que adoece. Na prática, as duas leituras convivem: mesmo o Green mantém a corda retrovascular entre os padrões comuns (p. 138).
 
 ## O que fica protegido: stress shielding
 
-Uma pergunta moderna (USP-SP 2025) usa o conceito de **stress shielding**, que o Green explica na p. 137: as cordas se formam **ao longo das linhas de estresse mecânico**, e estruturas protegidas desse estresse por uma estrutura rígida vizinha **raramente adoecem**. São elas:
+O conceito de **stress shielding** (p. 137) responde à pergunta "qual estrutura quase nunca adoece?". As cordas se formam **ao longo das linhas de estresse mecânico**, e estruturas protegidas desse estresse por uma estrutura rígida vizinha **raramente adoecem**:
 
 !tabela Estruturas poupadas por proteção mecânica (Green 7, cap. 4, p. 137; Campbell 15, cap. 80, p. 3516 e 3518)
 | Estrutura | Protegida por |
@@ -292,17 +443,33 @@ Uma pergunta moderna (USP-SP 2025) usa o conceito de **stress shielding**, que o
 | septos de LEGUEU e JUVARA | metacarpo adjacente |
 !fim
 
-O **ligamento de GRAYSON**, por outro lado, fica do lado palmar do feixe, sujeito à tensão da extensão, e é **comumente acometido**: participa da corda espiral e pode formar sozinho uma corda (Campbell, Fig. 80.5). O mesmo raciocínio explica o fim da doença: quando a contratura avança, a falta de uso e as contraturas capsulares secundárias **retiram a tensão da corda**, o que permite a apoptose dos miofibroblastos e a chegada ao estágio final, estático (Green, p. 137).
+A lógica é a de um escudo: quando o dedo estende, quem sofre a tração é o tecido palmar, superficial ao eixo de rotação; o CLELAND, dorsal ao feixe e colado à falange, fica do lado "protegido" e não é esticado. O **ligamento de GRAYSON**, ao contrário, fica do lado palmar do feixe, sujeito à tensão da extensão, e é **comumente acometido**: participa da corda espiral e pode formar sozinho uma corda (Campbell, Fig. 80.5).
 
-!questoes central=mao-1547 relacionadas=mao-1284
+Há uma consequência cirúrgica curiosa. Como o CLELAND quase não adoece, a fasciectomia comum o preserva; mas na **dermofasciectomia digital** o autor retira toda a fáscia lateral, **inclusive o CLELAND**, porque a meta ali é substituir a unidade inteira de partes moles (p. 143).
+
+!questoes central=mao-1547 relacionadas=mao-1284 treino=mao-3342,mao-3357
 conceito: GRAYSON é palmar ao feixe, CLELAND é dorsal; o natatório une os dedos na comissura e continua com o GRAYSON; CLELAND, transverso superficial e septos de LEGUEU e JUVARA são poupados por stress shielding, enquanto GRAYSON adoece com frequência.
 como: A USP-SP 2026 pediu a identificação de três elementos da fáscia digital numa figura; a USP-SP 2025 perguntou, pelo conceito de stress shielding, qual estrutura costuma ser acometida.
 armadilha: Trocar GRAYSON por CLELAND, ou marcar o transverso superficial ou os septos de LEGUEU e JUVARA como estruturas frequentemente doentes.
 !fim
 
+!questoes treino=mao-2024,mao-2624
+conceito: O GRAYSON passa volar ao feixe digital e o natatório atravessa as comissuras na base dos dedos; a banda espiral passa central e superficial ao feixe na palma distal e lateral e profunda a ele mais adiante, e é a origem do feixe em espiral.
+como: O SBCM 2024 pediu a estrutura volar ao feixe e a transversal da comissura; o SBCM 2022, a estrutura que muda de posição em relação ao feixe e dá origem à espiral.
+armadilha: Trocar GRAYSON por CLELAND, ou confundir a banda espiral com o ligamento transverso palmar superficial.
+!fim
+
 # As cordas patológicas {radar=confirmado}
 
-O Green resume: a maior parte dos padrões de contratura se explica pela **transformação de estruturas fasciais existentes em cordas fibrosas**, passando pelos estágios de LUCK, guiada pelo estresse e pela proteção mecânica (p. 137). Na formação da corda, as fibras de colágeno se **reorientam paralelas às linhas de tensão**. Qualquer estrutura da fáscia palmar sob estresse pode contribuir.
+## Da estrutura normal à corda
+
+O Green resume: a maior parte dos padrões de contratura se explica pela **transformação de estruturas fasciais existentes em cordas fibrosas**, passando pelos estágios de LUCK, guiada pelo estresse e pela proteção mecânica (p. 137). Na formação da corda, as fibras de colágeno se **reorientam paralelas às linhas de tensão**, e qualquer estrutura da fáscia palmar sob estresse pode contribuir. As cordas podem ficar restritas à palma, ao dedo, ou atravessar as duas regiões. Ao contrário das palmares, uma corda **só digital** pode ter inserção óssea em proximal e em distal, o que a torna difícil de palpar (p. 137 e 138).
+
+A Figura 4.10 do Green é a melhor maneira de fixar os nomes, porque mostra cada corda no lugar da estrutura normal que a originou.
+
+!figura 4.10 imagem=mao/green7-4-10.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 4, Fig. 4.10, p. 137. Padrões comuns de corda. Em A, na palma e no dedo médio: central digital, central palmar, natatória, hipotenar, tenar, primeira comissura proximal e distal, lateral digital e espiral. À direita, o dedo visto de lado: B, cordas laterais digitais; C, corda retrovascular, por trás do feixe, junto com a central digital; D, corda espiral, que passa por baixo do feixe e o desloca.
+!fim
 
 !tabela Da estrutura normal à corda (Green 7, cap. 4, p. 134 a 138; Campbell 15, cap. 80, p. 3516 a 3518)
 | Estrutura normal | Corda | Efeito principal |
@@ -317,62 +484,147 @@ O Green resume: a maior parte dos padrões de contratura se explica pela **trans
 | fáscia do abdutor do dedo mínimo | hipotenar (abdutor do mínimo) | flexão e abdução da MF do mínimo |
 !fim
 
+Na palma central aparecem a corda central palmar, a espiral e a da primeira comissura proximal; na borda, a natatória, a da primeira comissura distal, a hipotenar e a tenar. Cordas **tenares e hipotenares são incomuns** e em geral se associam a **doença difusa ou biologia agressiva** (p. 138).
+
 ## A corda que flete a MF
 
-O Campbell é direto: a **corda pré-tendínea quase sempre é a responsável pela contratura primária da MF** (p. 3516). O Green diz o mesmo com outra nomenclatura: **a maioria das contraturas da MF resulta de uma corda central isolada** (p. 138), e a corda central da palma é a banda pré-tendínea doente.
-
-A IFP é diferente. Segundo o Green, **a maioria das contraturas da IFP se deve a múltiplas cordas digitais**, que, em ordem de frequência, são **central digital, retrovascular e espiral ou lateral** (p. 138). **Múltiplas cordas podem existir no mesmo nível longitudinal**, na palma ou no dedo. Cordas **tenares e hipotenares são incomuns** e em geral se associam a **doença difusa ou biologia agressiva**. 
+O Campbell é direto: a **corda pré-tendínea quase sempre é a responsável pela contratura primária da MF** (p. 3516). O Green diz o mesmo com outra nomenclatura: **a maioria das contraturas da MF resulta de uma corda central isolada** (p. 138), e a corda central da palma é a banda pré-tendínea doente. Faz sentido anatômico: a banda pré-tendínea corre na frente do tendão flexor, na linha média do raio, e cruza só a MF antes de chegar ao dedo.
 
 SKOOG defendia que, na palma, só as **bandas pré-tendíneas longitudinais** adoecem e que os **ligamentos transversos superficiais**, logo dorsais a elas, costumam ser poupados; mas reconheceu que os **natatórios**, no mesmo plano e um pouco mais distais, podem formar cordas e impedir o afastamento dos dedos (Campbell, p. 3518 e 3526).
 
-!questoes central=mao-0349 relacionadas=mao-1205
+!questoes central=mao-0349 relacionadas=mao-1205 treino=mao-3349
 conceito: A corda pré-tendínea (central) responde pela contratura primária da MF, em geral isolada; a IFP costuma ter múltiplas cordas, que podem coexistir no mesmo nível; cordas tenares e hipotenares são raras e indicam doença difusa.
 como: O CET-PR perguntou a estrutura da contratura primária da MF; a PUC-SP 2023, a afirmação correta sobre a anatomia patológica.
 armadilha: Atribuir a flexão da MF à banda espiral ou aos ligamentos de GRAYSON e CLELAND; dizer que a IFP tem corda única.
 alerta: `mao-1205` está sem gabarito; pelo Green (p. 138), a afirmação correta é a B (a maioria das contraturas da MF envolve uma corda central isolada); a IFP costuma ter múltiplas cordas, estas podem existir no mesmo nível, e as cordas tenares e hipotenares são incomuns e ligadas a doença difusa.
 !fim
 
+## A IFP: várias cordas ao mesmo tempo
+
+A IFP é diferente. Segundo o Green, **a maioria das contraturas da IFP se deve a múltiplas cordas digitais**, que, em ordem de frequência, são **central digital, retrovascular e espiral ou lateral** (p. 138), dado que vem do estudo de TRICKETT, SAVAGE e LOGAN (J Hand Surg Eur 39:472-476, 2014), que mediu quanto de correção angular se ganhava ao excisar cada corda específica na fasciectomia. **Múltiplas cordas podem existir no mesmo nível longitudinal**, na palma ou no dedo.
+
+Esse dado explica dois fatos clínicos. Primeiro, por que a IFP corrige menos que a MF em qualquer técnica: há mais de uma corda e há patologia secundária. Segundo, por que a recontratura **progressiva** depois da cirurgia é tão comum na IFP grave: uma corda mecanicamente importante (muitas vezes a retrovascular) pode escapar do tratamento.
+
 ## A corda espiral e o feixe neurovascular
 
 É o fato mais cobrado do tema. O Campbell descreve: quando **a banda pré-tendínea, a banda espiral, a lâmina digital lateral e o ligamento de GRAYSON** adoecem, forma-se a **corda espiral**, que passa **dorsal ao feixe neurovascular em proximal e volar a ele em distal** (p. 3517). Quando ela contrai, **o feixe é puxado para a superfície e em direção à linha média do dedo** (medialização). O deslocamento é mais comum na **face ulnar do mínimo e do anular**, e a dissecção precisa ser minuciosa para não lesar o nervo digital. O Campbell faz ainda uma distinção fina: **banda espiral doente não é sinônimo de corda espiral** (Fig. 80.5). O ligamento retinacular oblíquo (de LANDSMEER) e o ligamento de CLELAND **não** participam da corda espiral.
 
-O Green explica a mecânica (p. 138): o tecido doente **espirala em volta de um feixe reto**; quando se encurta e se retifica, é o **feixe que passa a fazer a espiral** e sobe para posição **superficial à corda**, às vezes percebido como **massa subcutânea mole** sobre a corda. Os feixes espirais foram descritos em **quase metade das contraturas digitais**, e o deslocamento superficial é mais comum **entre a prega palmar distal e a prega de flexão da IFP**.
+O Green explica a mecânica de forma visual (p. 138). No início, o tecido doente **espirala em volta de um feixe reto**. Quando a corda se encurta, ela tende a ficar reta, como uma corda de violão esticada; e um elemento que se retifica em volta de outro obriga o outro a fazer a curva. Resultado: é o **feixe que passa a fazer a espiral** e sobe para posição **superficial à corda**. O sinal clínico é uma corda subdérmica que passa por baixo de uma **massa subcutânea mole**: essa massa é o feixe deslocado envolto em gordura. O sinal se associa à espiral na maioria dos casos, mas a ausência não a exclui.
 
-Na agulha, longe da IFP, **o feixe costuma ficar central às cordas lateral e espiral e lateral à corda central**; o **Doppler** localiza o feixe espiral, e o portal fica **8 a 10 mm** proximal ou distal a ele (Green, p. 145). O Campbell descreve ainda **cordas digitais isoladas**, mais no mínimo, que também deslocam o feixe como uma espiral (p. 3517).
+Os feixes espirais foram descritos em **quase metade das contraturas digitais** (UMLAS, BISCHOFF e GELBERMAN, J Hand Surg Br, 1994; Green, p. 138), e o deslocamento superficial é mais comum **entre a prega palmar distal e a prega de flexão da IFP**, justamente o trecho em que a incisão e a agulha passam. Existem variações: a corda pode passar entre o nervo e um ramo dorsal, pode haver espiral dupla, ou a espiral pode estar sobre a falange média (p. 138 e 139). Todas põem o feixe em risco tanto na cirurgia aberta quanto na percutânea.
 
-!questoes central=mao-0037 relacionadas=mao-0867,mao-1446,mao-0605,mao-0961,mao-1622,mao-0113
+O Campbell descreve ainda **cordas digitais isoladas**, mais no mínimo, que nascem do periósteo da falange proximal ou da fáscia dos intrínsecos e também deslocam o feixe como uma espiral (p. 3517).
+
+!questoes central=mao-0037 relacionadas=mao-0867,mao-1446,mao-0605,mao-0961,mao-1622,mao-0113 treino=mao-3347,mao-3350
 conceito: A corda espiral, formada por banda pré-tendínea, banda espiral, lâmina digital lateral e ligamento de GRAYSON, passa dorsal ao feixe em proximal e volar em distal e leva o feixe para a linha média e para a superfície; aparece em quase metade das contraturas digitais.
 como: O TARO 2021 perguntou a corda que desvia o feixe; a UFG 2017, a estrutura que medializa o feixe; a USP-SP 2024, a afirmação correta sobre as cordas espirais; o TARO 2007 e a UFG 2020, as estruturas que formam (e a que não forma) a corda espiral; a USP-SP 2026, a estrutura que não forma cordões; o TARO 2022, a corda de uma figura formada por um ligamento.
 armadilha: Dizer que a corda espiral é proximalmente lateral e profunda ao feixe, ou incluir o retinacular oblíquo e o CLELAND na sua formação.
 alerta: `mao-0605` está sem gabarito; pelo Campbell, a alternativa A (banda pré-tendínea, lâmina digital lateral e GRAYSON) é a que reúne componentes da corda espiral. `mao-1622` está sem gabarito, e os dois livros descrevem as quatro estruturas oferecidas (banda espiral, lâmina digital lateral, natatório e banda pré-tendínea) como formadoras de cordas; nenhuma delas é excluída pelo texto. `mao-0113` usa o desenho da Fig. 80.5B do Campbell (cap. 80, p. 3518) sem os rótulos: a seta aponta a **corda digital lateral**, trecho do meio da corda contínua que começa como corda espiral e termina sobre a falange média como corda de GRAYSON; das alternativas, só o GRAYSON compõe essa corda (p. 3517), e o gabarito oficial (GRAYSON) foi mantido.
 !fim
 
+!questoes treino=mao-1809
+conceito: A corda espiral desloca o feixe digital para a linha média e para a superfície; a natatória, no plano subdérmico das comissuras, produz a contratura em adução da comissura.
+como: O SIMÃO 2026 pediu, numa só questão, a corda que desloca o feixe e a que contrai a comissura.
+armadilha: Atribuir o deslocamento do feixe à corda central ou a contratura da comissura à corda lateral.
+!fim
+
 ## As cordas que chegam à IFD: lateral e retrovascular
 
 A **corda retrovascular** é formada pela fáscia longitudinal **dorsal ao feixe neurovascular**. O Campbell diz que ela é frequentemente acometida e, embora **não contribua muito para a contratura da IFP**, pode responder por **contratura residual ou recidiva** se não for ressecada (p. 3516); na Figura 80.7, uma corda retrovascular é a **responsável pela contratura da IFD** de uma paciente diabética. A **corda digital lateral** também **pode se estender para distal e contribuir para a contratura em flexão da IFD**; o plano entre ela e a pele é mínimo e precisa ser desenvolvido com dissecção cortante (p. 3517).
 
-Aqui os livros divergem: para EATON, no Green, **a banda retrovascular normal é um artefato de dissecção** (p. 136), embora ele mantenha a corda retrovascular entre os padrões comuns e como segunda causa de contratura da IFP (p. 138).
+Repare na diferença de ênfase entre os livros: o Campbell diz que a retrovascular pouco contribui para a IFP, e o Green, pelo estudo de TRICKETT, a coloca como **a segunda corda mais frequente na IFP**. As duas leituras se conciliam pela posição: escondida atrás do feixe, ela passa despercebida na cirurgia e reaparece como "recidiva".
 
-A **hiperextensão da IFD** não vem de corda: é consequência da IFP fletida há muito tempo, com **atenuação da banda central** (acima de 60 graus) e **botoeira** secundária (Green, p. 138); a botoeira com IFP grave recidivada se trata com **artrodese da IFD** (p. 143).
-
-!questoes central=mao-0902 relacionadas=mao-0645,mao-0573,mao-0810,mao-0936,mao-0532
+!questoes central=mao-0902 relacionadas=mao-0645,mao-0573,mao-0810,mao-0936,mao-0532 treino=mao-3355
 conceito: As cordas retrovascular (dorsal ao feixe) e lateral podem chegar à IFD e fleti-la; a retrovascular explica contratura residual e recidiva; a hiperextensão da IFD é consequência da flexão crônica da IFP.
 como: A UFG 2017 perguntou a corda do envolvimento da IFD; o TARO 2006, se a corda lateral causa flexão da IFD; o TARO 2026 e o INTO 2026 mostraram a corda retrovascular em imagens; a UFG 2019, a causa da hiperextensão da IFD; uma prova de Ortopedia, a corda da hiperextensão da IFP.
 armadilha: Atribuir a IFD à corda central ou à natatória, ou explicar a hiperextensão da IFD pelo ligamento de LANDSMEER.
 alerta: `mao-0645` está sem gabarito; o Campbell (p. 3517) sustenta "Certo": a corda digital lateral pode contribuir para a contratura em flexão da IFD. Nenhum dos dois livros atribui hiperextensão da IFP a uma corda, como pede `mao-0532` (gabarito espiral); a corda espiral, pelos livros, causa flexão da IFP e deslocamento do feixe. Em `mao-0936`, os livros não descrevem o mecanismo diretamente, mas registram a hiperextensão da IFD e a botoeira como alterações secundárias da contratura grave da IFP, coerentes com o gabarito B. `mao-0573` e `mao-0810` dependem de imagens não conferidas.
 !fim
 
+## Patologia secundária: o que a corda deixa para trás
+
+Uma articulação fletida por anos não volta ao normal só porque a corda foi cortada. O Green chama de **patologia secundária** as alterações que a contratura crônica produz (p. 138), e elas explicam a maior parte das correções incompletas da IFP:
+
+- **Ligamento colateral acessório contraído**: a alteração mais comum na **IFP acima de 45 graus**. O colateral acessório e a placa volar se adaptam à posição fletida e encurtam.
+- **Atenuação da banda central do extensor**: contribui para o déficit de extensão na **IFP acima de 60 graus**. Com a IFP fletida há anos, a banda central fica esticada sobre o dorso da articulação e alonga; depois da liberação, a IFP estende passivamente, mas não ativamente.
+- **Botoeira**: a evolução da banda central atenuada. As bandas laterais migram para volar do eixo da IFP, e a força do extensor passa a ser descarregada na IFD, que vai para **hiperextensão**. É esse o mecanismo da IFD hiperestendida no dedo com IFP fletida há muito tempo; não há corda que hiperestenda a IFD, e o ligamento retinacular oblíquo de LANDSMEER não é a causa.
+- **Ruptura de banda sagital**, com a pista de uma **MF em abdução e supinação sem corda responsável**; **dedo em martelo**; e **deformidades rotacionais**, que tendem a persistir depois do tratamento.
+
+O Green separa ainda a **patologia sinérgica**, problemas preexistentes que pioram o resultado: lesão prévia, tenossinovite flexora, artrose, neuropatia, fraqueza intrínseca e espasticidade leve (p. 138).
+
+Por que isso importa? Porque essas alterações **corrigem menos** que a corda, não melhoram com mais ressecção de fáscia e respondem pela recontratura **precoce**, aquela dos primeiros três meses que depois estaciona.
+
+## O mínimo e a IFP: o pior cenário
+
+A **IFP do dedo mínimo** tem **pior prognóstico e mais recidiva, independentemente da técnica** (Green, p. 138). Concorrem vários fatores: o mínimo tem a corda hipotenar e a fáscia do abdutor do dedo mínimo como fonte extra de tensão, a IFP dele flete com facilidade, e as cordas digitais isoladas são mais comuns ali. Curiosamente, o **envolvimento do abdutor do mínimo não é, sozinho, um fator de risco independente**; ele explica a perda de supinação, não a recidiva.
+
+!questoes treino=mao-2407
+conceito: A contratura da IFP do dedo mínimo é a de pior prognóstico e maior recidiva, qualquer que seja a técnica.
+como: O SIMÃO 2022 perguntou o dedo de pior prognóstico no tratamento da IFP.
+armadilha: Marcar o anular por ser o mais acometido, ou o polegar por fazer parte da diátese.
+!fim
+
+# Recidiva: como se define e por que acontece {radar=fundamento}
+
+## Um problema para a vida inteira
+
+**Recidiva é um assunto para a vida inteira**, e por isso o Green defende expressá-la como **porcentagem por ano**, e não como um número solto (p. 133). Uma recidiva de 30% em 2 anos e outra de 30% em 10 anos são muito diferentes, e os estudos que comparam técnicas com seguimentos distintos só podem ser lidos assim. O autor faz ainda uma crítica aos estudos da colagenase: a definição de recidiva usada neles excluía quem não corrigiu a 5 graus ou menos, o que favorece a droga.
+
+## Os três padrões de recontratura
+
+A Tabela 4.1 (p. 133 e 134), baseada no trabalho de DIAS e colaboradores (J Hand Surg Am, 2013), separa três padrões. A diferença entre eles é o tempo, e cada tempo aponta uma causa diferente:
+
+!tabela Padrões de recontratura (Green 7, cap. 4, Tabela 4.1, p. 133 e 134)
+| Padrão | Quando | Causa | É recidiva? |
+| --- | --- | --- | --- |
+| precoce | primeiros 3 meses, depois platô | patologia secundária não corrigida (banda central frouxa, retinacular oblíquo tenso, colateral acessório, cápsula) | não |
+| progressiva | piora contínua além de 3 meses | cordas mecanicamente importantes não tratadas | não (tratamento inadequado da patologia primária) |
+| tardia | após 1 ano ou mais de estabilidade | nova atividade da doença | sim, recidiva verdadeira |
+!fim
+
+A recontratura **precoce** é mecânica e articular: a corda saiu, mas a articulação não aceita a nova posição. A **progressiva** mostra que ficou corda para trás; a contratura grave e a doença difusa têm mais chance de ter várias cordas na mesma articulação, e uma delas escapou. Só a **tardia**, depois de um ano estável, é a biologia voltando.
+
+A definição recomendada é a do grupo internacional de consenso Delphi (KAN e colaboradores, 2014): **aumento de pelo menos 20 graus** na contratura de uma articulação tratada **em 1 ano**, comparado com a medida **6 semanas** após o tratamento (Green, p. 134).
+
+!questoes treino=mao-2109
+conceito: A recontratura que continua piorando além dos três primeiros meses é a progressiva, causada por corda mecanicamente importante que não foi tratada; não é recidiva verdadeira.
+como: O SBCM 2022 pediu o nome da recontratura que piora depois de três meses por doença ativa residual.
+armadilha: Chamá-la de precoce (essa estaciona depois de três meses) ou de recidiva tardia (essa vem depois de um ano estável).
+!fim
+
+# A história do tratamento {radar=fundamento}
+
+A Tabela 4.2 e a seção de história (p. 139) mostram que o tratamento andou em círculo, e entender o círculo ajuda a entender a discussão atual.
+
+- **Início do século XIX**: as primeiras operações foram **fasciotomias**, percutâneas e abertas. A agulha foi descrita por COOPER em 1822.
+- **Fim do século XIX**: com anestesia e assepsia, surgiu a **fasciectomia**.
+- **Início do século XX até meados do século**: a **fasciectomia radical**, que retirava toda a fáscia palmar, virou moda. Foi abandonada porque trazia **mais morbidade sem ser mais eficaz** contra a recidiva.
+- **Meados do século XX**: HUESTON trouxe o conceito de diátese (1963); McCASH, a palma aberta (1964); LUCK, os estágios (1959). Na França, a **fasciotomia percutânea com agulha** foi retomada (DE SEZE e DEBEYRE, 1957; LERMUSIAUX e DEBEYRE, 1980), e a **fasciotomia enzimática** também teve pioneiros franceses.
+- **1972**: GABBIANI identificou o miofibroblasto.
+- **Anos 2000**: a agulha chegou aos Estados Unidos, e a **colagenase de Clostridium histolyticum** foi aprovada pelo FDA em **2010** (HURST e BADALAMENTE).
+- **Recente**: o **tamoxifeno reduziu a recidiva após fasciectomia em pacientes de alto risco**, a primeira prova de que a biologia pode ser modificada.
+
+Apesar de tudo, a **fasciectomia continua sendo o procedimento mais realizado nos Estados Unidos**, o padrão de comparação. A leitura de EATON (p. 149) é ácida: o crescimento dos minimamente invasivos aconteceu por causa da morbidade da fasciectomia, não porque se descobriu algo novo sobre a doença; ele chama isso de **mudança sem progresso**. Ele lembra que uma revisão de 1990 catalogou **67 incisões** diferentes para a cirurgia, sinal de que nenhuma resolvia o problema.
+
 # Quando tratar {radar=confirmado}
 
 ## Nódulo sem contratura
 
-Para o **nódulo isolado**, o Green indica **observar ou injetar corticoide** (Tabela 4.4, p. 140); a triamcinolona amolece o nódulo, mas raramente o resolve (Campbell, p. 3519). A radioterapia de baixa dose é relatada na doença inicial, com literatura pouco convincente.
+Para o **nódulo isolado**, o Green indica **observar ou injetar corticoide** (Tabela 4.4, p. 140); a triamcinolona amolece o nódulo, mas raramente o resolve (Campbell, p. 3519). A radioterapia de baixa dose é relatada na doença inicial, com literatura pouco convincente. Com os números de REILLY na cabeça (só 1 em 10 nódulos vira contratura), operar nódulo isolado é tratar algo que provavelmente nunca dará problema, com o risco de provocar a doença pela ferida.
 
 ## O momento da cirurgia
 
-O Campbell dá o número que a prova cobra: **contraturas da IFP de 15 graus e da MF de 30 graus ou mais podem ser incapacitantes e justificar a cirurgia** (p. 3523). Alguns pacientes, porém, convivem bem com contraturas maiores e adiam. A decisão deve considerar a incapacidade, a artrose, a cirurgia prévia e outros fatores de mau resultado, **não só o grau**. A cirurgia é tecnicamente mais fácil com contraturas menores, mas o ideal é operar quando os tecidos estão **maduros**: onde o plano entre tecido normal e doente é mal definido, o processo celular é mais ativo e a recidiva mais provável, e operar na **fase proliferativa** pode trazer **rigidez e aumento da contratura**.
+O Campbell dá o número que a prova cobra: **contraturas da IFP de 15 graus e da MF de 30 graus ou mais podem ser incapacitantes e justificar a cirurgia** (p. 3523). A diferença entre os dois números tem explicação: a MF corrige bem em quase qualquer grau, porque seus colaterais ficam tensos em flexão e não encurtam; a IFP, ao contrário, desenvolve rapidamente a patologia secundária que impede a correção completa, por isso o limiar é menor. Alguns pacientes, porém, convivem bem com contraturas maiores e adiam; a decisão deve considerar a incapacidade, a artrose, a cirurgia prévia e outros fatores de mau resultado, **não só o grau**.
 
-O Green trata o momento como um problema não resolvido (p. 139). Três regras: (a) operar **antes que a contratura comprometa um resultado excelente**, o que na IFP fica em torno de **40 graus**; (b) nas contraturas menores, esperar que haja **problema funcional**, para reduzir o número de procedimentos na vida; a janela costuma ficar entre o **teste da mesa** (não consegue apoiar a palma na mesa, o teste de HUESTON) e o **teste do bolso** (dificuldade de pôr a mão no bolso); (c) idealmente, **evitar a fase proliferativa**. O próprio autor reconhece a contradição: a atividade pode persistir até que a contratura passe do ponto de bom resultado, daí o conselho tradicional oposto de operar se a contratura piora rápido.
+O Campbell acrescenta que a cirurgia é tecnicamente mais fácil com contraturas menores, mas o ideal é operar quando os tecidos estão **maduros**: onde o plano entre tecido normal e doente é mal definido, o processo celular é mais ativo e a recidiva mais provável, e operar na **fase proliferativa** pode trazer **rigidez e aumento da contratura**.
+
+O Green trata o momento como um dos **três problemas não resolvidos** do tratamento (p. 139). Três regras:
+
+1. Operar **antes que a contratura comprometa a chance de um resultado excelente**, o que na IFP fica em torno de **40 graus** (TRICKETT).
+2. Nas contraturas menores, esperar que haja **problema funcional**, para reduzir o número de procedimentos ao longo da vida. A janela costuma ficar entre o **teste da mesa** (o paciente não consegue apoiar a palma espalmada sobre a mesa, o teste de HUESTON) e o **teste do bolso** (dificuldade de enfiar a mão no bolso da calça).
+3. Idealmente, **evitar a fase proliferativa**, para reduzir a recidiva.
+
+O próprio autor reconhece a contradição: a atividade pode persistir até que a contratura passe do ponto de bom resultado, daí o conselho tradicional oposto, de operar se a contratura piora rápido. E acrescenta um dado comportamental: pacientes com recidiva depois de fasciectomia **aceitam menos repetir o tratamento** do que os que recidivaram depois de um minimamente invasivo. Quem procura tratamento mas teme a fasciectomia escolhe a agulha ou a colagenase sabendo que a recidiva será maior.
 
 !tabela Indicações por cenário (Green 7, cap. 4, Tabela 4.4, p. 140)
 | Cenário | Melhores opções |
@@ -396,33 +648,98 @@ armadilha: Operar na fase nodular ou com MF de 20 graus.
 alerta: Em `mao-0263`, o gabarito (cirurgia de liberação do tecido fibroso) bate com o Green ao dizer que a fasciectomia é o procedimento mais realizado nos Estados Unidos (p. 138), mas a Tabela 4.4 indica, para nódulo isolado, observar ou injetar corticoide; o enunciado descreve um nódulo sem contratura.
 !fim
 
+!questoes treino=mao-1810
+conceito: A janela de oportunidade para correção completa vale sobretudo para a IFP, cuja chance de resultado excelente cai quando a contratura passa de cerca de 40 graus.
+como: O SIMÃO 2026 perguntou a articulação e a faixa de contratura em que a ideia de janela de oportunidade se aplica.
+armadilha: Escolher a MF, que corrige bem mesmo com contraturas grandes, ou usar os 15 graus de indicação do Campbell como limite da janela.
+!fim
+
 # Fasciotomia: agulha, bisturi e colagenase {radar=confirmado}
 
-O Green agrupa as opções em quatro categorias: **minimamente invasivas, fasciectomia, dermofasciectomia e salvamento** (p. 138). Todas são **paliativas** e sujeitas a recidiva. Os três procedimentos para doença primária (agulha, colagenase, fasciectomia) dão **correção inicial semelhante** e diferem em custo, recuperação, morbidade e recidiva.
+## As quatro famílias de tratamento
+
+O Green agrupa as opções em quatro categorias: **minimamente invasivas, fasciectomia, dermofasciectomia e salvamento** (p. 139). Todas são **paliativas** e sujeitas a recidiva. Os três procedimentos para doença primária (agulha, colagenase, fasciectomia) dão **correção inicial semelhante** e diferem em custo, tempo de recuperação, morbidade e recidiva. A escolha, portanto, não é sobre "qual corrige mais", mas sobre o que o paciente prefere pagar: recuperação longa agora ou recidiva mais cedo depois.
 
 ## Fasciotomia percutânea com agulha
 
-As técnicas minimamente invasivas mais comuns são a **fasciotomia enzimática** e a **fasciotomia percutânea com agulha (PNF)**. Comparadas à fasciectomia, têm **recuperação mais curta, menos morbidade e menos complicações**, mas **mais recidiva**; entre si, os resultados são semelhantes (Green, p. 140). A agulha foi descrita por COOPER em 1822 e retomada na França (DE SEZE e DEBEYRE, 1957; LERMUSIAUX e DEBEYRE, 1980).
+As técnicas minimamente invasivas mais comuns são a **fasciotomia enzimática** e a **fasciotomia percutânea com agulha (PNF)**. Estão indicadas quando o ganho de uma recuperação curta vale mais que a desvantagem de uma recidiva maior. Comparadas à fasciectomia, têm **recuperação mais curta, menos morbidade e menos complicações**, mas **mais recidiva**; entre si, os resultados são semelhantes (Green, p. 140; NYDICK e colaboradores, J Hand Surg Am, 2013).
 
-O requisito é **paciente cooperativo, corda palpável e tensionável e reserva de pele**; contraindicam **pele difusamente acometida**, **ausência de corda palpável** e **recidiva rápida em jovem**. A agulha trabalha de **distal para proximal**, checando nervo e tendão (p. 140). EATON a prefere como **primeira intervenção** na diátese baixa: **mais barata e menos complicada**, com recidiva que exige novo procedimento de **8% ao ano** (p. 143 e 144).
+O princípio é simples: a agulha não retira a corda, **secciona-a** em vários pontos até que ela ceda. O requisito mínimo é **paciente cooperativo com contratura causada por corda palpável e tensionável e com reserva de pele** (p. 140). Cada termo tem razão de ser: se a corda não é palpável, não há como mirar; se não pode ser tensionada, a agulha não consegue cortá-la; se a pele não tem folga, a extensão rasga a pele em vez de alongar.
 
-O Campbell é mais cético: a aponeurotomia por agulha dá **88% de redução na MF e 46% na IFP**, mas com **65% de recidiva**, e preocupam a lesão do nervo por estiramento e o trauma da agulha; é alternativa custo-efetiva à colagenase (p. 3522). Na série do próprio serviço, a fasciotomia percutânea teve **82% de satisfação** e **33% de recidiva em 1 ano** (p. 3523.e1).
+As contraindicações seguem a mesma lógica: paciente que não tolera procedimento acordado; **pele tensa ou cicatriz** que impede a extensão; **pele difusamente acometida**; **ausência de corda palpável**; **recidiva rápida em paciente jovem** (biologia agressiva, que pede dermofasciectomia); feridas ou infecção na área.
+
+É um procedimento de consultório, sob anestesia local, em visita única. Trabalha-se **de distal para proximal**, checando nervo e tendão repetidamente; ao final, extensão passiva e curativo leve, que pode sair no mesmo dia. **Nem terapia nem órtese de rotina**; a outra mão pode ser tratada no dia seguinte; evita-se preensão forte por **1 semana**.
+
+O Campbell é mais cético: a aponeurotomia por agulha dá **88% de redução na MF e 46% na IFP**, mas com **65% de recidiva**, e preocupam a lesão do nervo por estiramento e o trauma da agulha; ainda assim é alternativa custo-efetiva à colagenase (p. 3522). Na série do próprio serviço, a fasciotomia percutânea teve **82% de satisfação** e **33% de recidiva em 1 ano** (p. 3523.e1).
 
 ## Fasciotomia subcutânea com bisturi
 
-A **fasciotomia subcutânea** é o procedimento menos extenso, usado em pacientes **pouco preocupados com a aparência** ou com **saúde precária**. O Campbell é claro sobre o momento: **os resultados são melhores na fase residual**, quando há **cordas densas e maduras**, do que com lesões imaturas e difusas (p. 3523). No dedo, ela só é segura para **corda na linha média** (p. 3524).
+A **fasciotomia subcutânea**, com uma lâmina pequena por uma incisão curta, é o procedimento menos extenso entre os abertos, usado em pacientes **pouco preocupados com a aparência** ou com **saúde precária**. O Campbell é claro sobre o momento: **os resultados são melhores na fase residual**, quando há **cordas densas e maduras**, do que com lesões imaturas e difusas (p. 3523). O raciocínio é o mesmo da agulha: corda madura é um cabo bem definido, fácil de seccionar e com menos atividade celular para recidivar; nódulo imaturo é tecido difuso, que não tem onde cortar e que reage à agressão. No dedo, ela só é segura para **corda na linha média** (p. 3524), longe dos feixes.
 
-## Colagenase
-
-A **colagenase de Clostridium histolyticum** (CCH) foi aprovada pelo FDA em 2010 (HURST e BADALAMENTE; Green, Tabela 4.2). As indicações são as mesmas da agulha. Contraindicada na **alergia** à droga; segurança desconhecida em gestantes, lactantes, coagulopatas, **anticoagulados** e menores de 18 anos (Green, p. 140). O Campbell soma **linfedema, cirurgia linfonodal e implantes**, e diz que os melhores resultados vêm com **corda bem definida e longe do tendão flexor** (p. 3520). No mínimo, a agulha não passa de **3 mm de profundidade** nem de **4 mm distal à prega da base do dedo**; manipula-se nos dias seguintes.
-
-Resultados (Campbell, p. 3520): correção a 0 a 5 graus em **77% das MF e 40% das IFP**; a MF responde de forma confiável e a IFP é difícil. Efeitos transitórios: edema, dor, **equimose**, prurido, linfonodos aumentados e **rupturas de pele** (mais com contratura acima de 45 graus, calosidade ou equimose intensa). O efeito grave permanente, raro, é a **ruptura do tendão flexor**. A colagenase é **três vezes mais cara que a agulha**, com resultados semelhantes e mais complicações.
-
-!questoes central=mao-0525
+!questoes central=mao-0525 treino=mao-3344
 conceito: A fasciotomia subcutânea funciona melhor na fase residual, com cordas densas e maduras; nódulos imaturos e difusos respondem mal.
 como: O TARO 2010 perguntou a fase em que a fasciotomia subcutânea dá melhor resultado.
 armadilha: Escolher a fase proliferativa por imaginar que tratar cedo é melhor.
 !fim
+
+## Colagenase
+
+A **colagenase de Clostridium histolyticum** (CCH) foi aprovada pelo FDA em 2010 (HURST e BADALAMENTE; Green, Tabela 4.2). É uma mistura de enzimas que digere o colágeno da corda injetada; dias depois, o médico estende o dedo e a corda enfraquecida rompe. As **indicações são as mesmas da agulha** (p. 140); o Green não dá limiar em graus.
+
+Contraindicações (p. 140): **alergia grave** à CCH ou a qualquer colagenase terapêutica; segurança desconhecida na **gestação e amamentação**, nos distúrbios de coagulação, em quem usa **anticoagulante** e em **menores de 18 anos**; no resto, as mesmas da agulha. O Campbell soma **linfedema, cirurgia linfonodal e implantes**, e diz que os melhores resultados vêm com **corda bem definida e longe do tendão flexor** (p. 3520).
+
+A técnica tem detalhes que caem em prova (p. 140):
+
+- Duas visitas próximas, em geral **dois dias seguidos** por mão; novas injeções com intervalo mínimo de **30 dias**.
+- A droga fica **refrigerada** até o uso e é reconstituída na hora.
+- Injeta-se a **substância central do segmento de corda escolhido em três pontos próximos**, com a dose recomendada.
+- **No dedo mínimo**, o fabricante limita a penetração da agulha a **3 mm de profundidade** e proíbe injetar **mais de 4 mm distal à prega palmar da base do dedo**. A razão é anatômica: ali a corda é fina e fica colada à bainha flexora, e a enzima injetada fundo digere tendão e polia.
+- Depois, curativo imobilizador macio, mão elevada, sem mexer os dedos até a volta; **manipulação entre o 1º e o 4º dia**, com anestesia local opcional; órtese estática de extensão **à noite por 1 mês**, exercícios ativos de dia e nada de esforço por algumas semanas.
+
+O autor reconhece que, de todos os procedimentos, a CCH é **o mais fácil e rápido para o cirurgião**.
+
+Resultados (Campbell, p. 3520): correção a 0 a 5 graus em **77% das MF e 40% das IFP**; a MF responde de forma confiável e a IFP é difícil. Efeitos transitórios: edema, dor, **equimose extensa**, prurido, linfonodos aumentados e **rupturas de pele** (mais com contratura acima de 45 graus, calosidade ou equimose intensa). O efeito grave permanente, raro, é a **ruptura do tendão flexor** ou de polia. A colagenase é **três vezes mais cara que a agulha**, com resultados semelhantes e mais complicações.
+
+# A agulha passo a passo: o método preferido do autor {radar=clinico}
+
+EATON dedica quase cinco páginas (p. 143 a 148) ao seu método preferido, e a seção é uma aula de anatomia aplicada. Ele considera a agulha **o tratamento mais barato e menos complicado**, com alta satisfação, e a primeira opção na diátese baixa quando a recuperação rápida importa mais que a recidiva precoce. Pode ser feita na primeira consulta, sem suspender medicações.
+
+## Escolher os portais
+
+O **portal** é o ponto de entrada da agulha. Deve ficar **sobre corda tensionável, sob pele móvel**: um portal único sobre o ponto mais saliente da corda, ou dois para cordas largas e laterais em arco. Evitam-se a pele que empalidece na extensão (está colada à corda e vai rasgar), as **pregas**, as cicatrizes, as covinhas e os nódulos. Não se faz portal **proximal à linha cardinal de KAPLAN**, onde o procedimento provoca uma dor tipo pilar. Na IFP e na IFD, o portal fica alguns milímetros fora da prega, com trajeto oblíquo.
+
+As **covinhas** merecem cuidado: podem esconder um seio que corre tangente sob a pele. O autor mede a profundidade com uma sonda improvisada (um passador de fio dental embebido em iodo).
+
+## Onde está o feixe
+
+É a regra de anatomia mais útil do capítulo (p. 145). **Na IFP, o feixe em geral fica profundo à corda.** **Fora da IFP, o feixe fica central às cordas lateral e espiral e lateral à corda central** (McFARLANE). O Doppler ajuda a achar o feixe espiral, e na presença de espiral **não se faz portal no nível dela**: o portal vai **8 a 10 mm proximal ou distal** a ela.
+
+## Anestesia: o paciente é o monitor
+
+A anestesia é **só intradérmica**, no portal. O objetivo é anestesiar a pele sem bloquear o nervo digital, porque o paciente acordado e com sensibilidade é o alarme contra a lesão nervosa. Usa-se **lidocaína sem vasoconstritor tamponada com bicarbonato (1:10)**, agulha 30G e seringa de 3 mL, esperando 15 a 30 minutos; evitam-se **epinefrina** e **bupivacaína**, que prolongariam um eventual bloqueio. Antes de cada injeção e de cada portal, **checa-se a sensibilidade da polpa**. A antissepsia é a de um acesso venoso, sem luvas estéreis.
+
+O paciente recebe instruções: relaxar os dedos, avisar qualquer dor e dizer onde e como dói (aguda ou elétrica), fazer o movimento de "coçar" quando pedido e avisar dormência.
+
+## A técnica
+
+Recomenda-se agulha **25G** (0,5 mm, com borda cortante de cerca de 0,8 mm) montada numa seringa Luer de 3 mL; a 18G tem lâmina de 2,6 mm e corta mais, com mais risco. Trabalha-se **de distal para proximal** e **dos dedos para a palma**, com o **bisel perpendicular à corda**. As manobras (Fig. 4.14) são três: **limpar** (soltar a pele da corda), **perfurar** e **varrer** as fibras, sempre com a profundidade de apenas o bisel (Fig. 4.15). A corda é mantida sob tensão estendendo a articulação mais acometida e fletindo a vizinha, ou tracionando a pele.
+
+Os sinais de alerta:
+
+- **Agulha que entorta**: força demais ou profundidade excessiva. A agulha também perde o corte a cada um ou dois portais (custa centavos e deve ser trocada).
+- **Tendão**: pede-se ao paciente o movimento de "coçar"; se a agulha se move junto, está no tendão. Se a bainha foi violada, abandona-se aquele portal, testa-se e evita-se preensão por 1 mês.
+- **Nervo**: dor elétrica, ou dormência, significa feixe. Se houver bloqueio do nervo, só se continua proximal ao último portal anestesiado.
+- **Dor**: **a corda é insensível**. A dor vem da derme profunda, da cápsula e das polias cruciformes, do feixe ou dos corpúsculos de PACINI (CHIKENJI e colaboradores, J Hand Surg Am, 2010 e 2011). Uma corda dolorosa recebe 0,1 a 0,2 mL de anestésico dentro dela.
+
+Na **IFP**, libera-se por etapas, com portal distal à prega e trajeto oblíquo; para a manipulação final, a articulação pode ser anestesiada por via volar, com agulha 30G pela linha média atravessando o flexor e a placa volar com a articulação fletida (McCLELLAND e McCLINTON, J Hand Surg Am, 2013), com efeito em cerca de 2 minutos. A manipulação final é dorsal, dorsoulnar e dorsorradial, isolada e depois composta.
+
+## Resultado e pós-operatório
+
+O curativo sai no mesmo dia. **Lesões de pele** acontecem em uma minoria e fecham em 1 a 2 semanas. Gelo e elevação por 36 horas, sem preensão forte nem esporte por 1 semana; o motivo é que a preensão precoce provoca uma **reação inflamatória tardia que imita infecção**.
+
+O ganho imediato chega a **90 graus de melhora composta** (MF + IFP), com **média de 50% de melhora na IFP**, e as correções parciais continuam melhorando por meses. A recidiva que exige repetir o procedimento é de **8% ao ano** (MATTON, tese de 2012, Universidade de Groningen). Repete-se a agulha se a primeira funcionou, durou pelo menos 1 ano, há corda palpável e há reserva de pele.
+
+Não há dados que sustentem órtese depois da agulha; o autor a indica de forma branda para IFP isolada com MF hiperestendida, contratura composta de 90 graus ou mais, lag extensor depois do procedimento ou pedido do paciente (p. 145).
 
 # Comparando os procedimentos: custo e recidiva {radar=confirmado}
 
@@ -437,7 +754,9 @@ A Tabela 4.3 do Green é a melhor síntese do tema e responde quase todas as que
 | dermofasciectomia | pior | meses | as mesmas da fasciectomia | 2% |
 !fim
 
-Ou seja: **a agulha tem o melhor custo** e a **dermofasciectomia tem a menor recidiva**. O Campbell concorda nos dois pontos: a colagenase custa três vezes mais que a agulha, e na fasciectomia com enxerto de pele **não se relatou recidiva nas áreas enxertadas**; ele a indica para **jovens de mau prognóstico** (epilepsia, alcoolismo, doença em outros locais) e **sobretudo na recidiva** (p. 3532). Por que o enxerto protege? O Green explica que a substituição da pele por **enxerto de pele total muda a mecânica das partes moles e inibe a atividade dos miofibroblastos** (p. 142).
+Ou seja: **a agulha tem o melhor custo** e a **dermofasciectomia tem a menor recidiva**. O Campbell concorda nos dois pontos: a colagenase custa três vezes mais que a agulha, e na fasciectomia com enxerto de pele **não se relatou recidiva nas áreas enxertadas**; ele a indica para **jovens de mau prognóstico** (epilepsia, alcoolismo, doença em outros locais) e **sobretudo na recidiva** (p. 3532).
+
+Por que o enxerto protege? O Green dá duas razões (p. 142): a substituição da pele por **enxerto de pele total muda a mecânica das partes moles** (a pele que recebia a tração das fibras superficiais já não existe) e **inibe a atividade dos miofibroblastos**, efeito descrito por RUDOLPH (Plast Reconstr Surg, 1979). É a aplicação direta da biologia: tira-se a pele que participa da doença e coloca-se um tecido que freia o miofibroblasto.
 
 Para o Campbell, a **fasciectomia seletiva** é a técnica mais durável entre as rotineiras (p. 3532); ele não a compara com a dermofasciectomia.
 
@@ -452,29 +771,36 @@ alerta: O gabarito oficial de `mao-1076` (fasciotomia enzimática nos dois quesi
 
 ## Tipos de fasciectomia
 
-A **fasciectomia segmentar** (incisões curtas) e a **regional** (toda a fáscia doente) têm resultados semelhantes; a **radical** não é mais recomendada (Green, p. 140 e 141), e a **completa** traz **hematoma, rigidez e cicatrização tardia** sem evitar recidiva (Campbell, p. 3531). A **seletiva** é a mais realizada: recidiva de **50%**, nova operação em **15%** (p. 3526).
+O Green descreve duas abordagens atuais (p. 140 e 141). A **fasciectomia segmentar** retira segmentos curtos de corda por várias incisões pequenas, em C ou transversas, sobre os nódulos ou sobre os pontos de maior arqueamento da corda, sem tentar retirar toda a doença; é mais popular na Europa. A **regional** (também chamada local) retira **toda a fáscia visivelmente doente**, com dissecção contínua ao longo de cada corda. As duas têm resultados semelhantes (MOERMANS, J Hand Surg Br, 1996). A **radical**, que tirava toda a fáscia palmar com septos, gordura e coxins, **não é mais recomendada**, por mais morbidade e nenhum benefício. O Campbell diz o mesmo da **completa**, que traz **hematoma, rigidez e cicatrização tardia** sem evitar recidiva (p. 3531), e chama de **seletiva** a técnica mais realizada: recidiva de **50%**, nova operação em **15%** (p. 3526).
 
-Indicações da fasciectomia (Green, p. 141): **falha do tratamento minimamente invasivo, doença difusa, tratamento simultâneo da patologia secundária** ou preferência. Contraindicações: paciente que não suporta operação longa, recuperação longa ou terapia pós-operatória.
+Indicações da fasciectomia (Green, p. 141): **falha do tratamento minimamente invasivo, doença difusa, tratamento simultâneo da patologia secundária** ou preferência do paciente e do cirurgião. Contraindicações: paciente que não suporta operação longa, recuperação longa ou terapia pós-operatória. A segmentar não serve quando a falta de pele já limita a extensão; a regional não serve quando a pele está difusamente tensa além do que retalhos locais corrigem; nesses casos e na **diátese alta**, pensa-se em **dermofasciectomia**.
 
-## Incisões e cuidados com o feixe
+A cirurgia é ambulatorial, com anestesia geral ou regional e garrote, ou com a técnica **WALANT** (acordado, anestesia local e sem garrote). Planeja-se de antemão como cobrir tendão flexor exposto se a bainha for violada: enxerto, retalho lateral digital, retalho cruzado ou **matriz dérmica acelular** seguida de enxerto.
 
-**Incisão longitudinal deve sempre ser convertida em zigue-zague** com Z-plastias (Green, p. 142), o que **reduz a recidiva** em relação ao fechamento longitudinal (Tabela 4.5). Para proteger o feixe: procurar corda espiral antes, **seguir o feixe de uma área normal para a doente** e dissecar com lâmina, porque o feixe rasga antes da corda (p. 141 e 142).
+## Como proteger o feixe
+
+O Green dá uma lista de cuidados (p. 141 e 142) que decorre da anatomia da espiral:
+
+- **Procurar a corda espiral no pré-operatório** (massa mole sobre a corda, Doppler).
+- **Seccionar a corda em proximal logo no início**: o dedo estende e a exposição melhora.
+- Ir **do conhecido para o desconhecido**: achar o feixe numa área normal (proximal, distal ou pela via retrovascular, de LO e PICKFORD) e segui-lo até a área doente.
+- **Dissecar com lâmina, não abrindo a tesoura**: o feixe rasga antes da corda.
+- **Não esqueletizar** o feixe nem tirar a gordura em volta dele.
+- Ter **microscópio e material microcirúrgico** disponíveis.
+
+## Incisões e fechamento
+
+**Incisão longitudinal deve sempre ser convertida em zigue-zague** com Z-plastias no fechamento (Green, p. 142). A razão é dupla: a cicatriz reta na face palmar cruza as pregas de flexão e contrai, criando uma nova "corda" de cicatriz; e o fechamento com retalhos (Z-plastia, Y-V) acrescenta comprimento longitudinal de pele. A Tabela 4.5 registra que **retalhos locais reduzem a recidiva** em relação ao fechamento longitudinal.
+
+Outros pontos da Tabela 4.5: o enxerto de pele traz a recuperação mais longa; o **fio transarticular na IFP** serve para estabilizar enxerto, mas não melhora o resultado da liberação articular; e a **liberação articular da IFP** (dos ligamentos checkrein e do colateral acessório) desestabiliza a articulação e arrisca um **pescoço de cisne com ressalto** no pós-operatório, além de não corrigir as alterações dorsais que causam a recontratura precoce.
 
 ## Palma aberta de McCASH
 
-A técnica de **McCASH** (1964) é a **palma aberta**: fasciectomia por **incisões transversas na palma que não são fechadas** e cicatrizam por contração da ferida em **3 a 4 semanas** (Green, p. 142). O Campbell a indica para **adução e flexão da MF** tratadas por incisão palmar transversa deixada para cicatrizar por segunda intenção (p. 3526); feridas abertas por falta de pele podem cicatrizar assim. Pequenos enxertos para fechar lacunas não mudam a recidiva (Green, p. 142).
+A técnica de **McCASH** (1964) é a **palma aberta**: fasciectomia regional por **incisões transversas na palma que não são fechadas** e cicatrizam por contração da ferida em **3 a 4 semanas** (Green, p. 142). A ideia contraria o instinto do cirurgião, mas funciona: a ferida aberta drena, **não deixa hematoma**, não exige pele para fechar e permite mobilizar cedo. O Campbell a indica para **adução e flexão da MF** tratadas por incisão palmar transversa deixada para cicatrizar por segunda intenção (p. 3526). **Pequenos enxertos para fechar lacunas não mudam o resultado nem a recidiva** (o estudo do enxerto "corta-fogo" de ULLAH, DIAS e BHOWAL, da lista do capítulo).
 
 ## Retalho de JACOBSEN
 
-Para a **doença avançada do dedo mínimo**, o Campbell descreve o **retalho de JACOBSEN** como alternativa segura e simples à palma aberta (p. 3531). Em vez de zigue-zague, faz-se um **retalho de espessura total em L** com duas incisões lineares: uma **na prega transversa da palma** e outra na **linha mediolateral do mínimo até a IFD**. Liberada a contratura, a extensão do dedo leva o retalho para distal; fecha-se o braço longitudinal e deixa-se um **defeito de cerca de 15 mm na palma**, que cicatriza por segunda intenção em **4 a 6 semanas**, seguido de tala dinâmica de extensão por **10 semanas**. Vantagens: **menos hematoma e edema**, sem enxerto nem área doadora, mobilização imediata. Desvantagens: 10 semanas de tala, fisioterapia prolongada e vigilância da ferida palmar.
-
-## Dermofasciectomia
-
-A **dermofasciectomia** não é uma fasciectomia com enxerto: é a **substituição funcional da pele e das partes moles não essenciais por enxerto de pele total** (Green, p. 142). A recidiva é **menor** que a da fasciectomia, mas a recuperação é em média **50% mais longa**. Indicações: **falta longitudinal de pele** além do que retalhos corrigem, **recidiva com pele difusamente acometida ou cicatriz extensa**, **pele desvascularizada** na cirurgia e **primeiro procedimento em jovens com diátese forte**. No dedo se ressecam as fáscias laterais, **inclusive o CLELAND**, e no mínimo a **fáscia do abdutor do dedo mínimo**.
-
-## IFP grave e salvamento
-
-Na **IFP acima de 60 graus**, a **tração esquelética prévia** seguida de fasciectomia supera a liberação em um tempo (Green, p. 143), e a correção esperada é de cerca de **50%** (Campbell, p. 3530). Sem como alongar as partes moles: **artrodese da IFP**, **falangectomia média** ou **amputação**; a doença é a **indicação mais comum de amputação eletiva de dedo** (Green, p. 143).
+Para a **doença avançada do dedo mínimo**, o Campbell descreve o **retalho de JACOBSEN** como alternativa segura e simples à palma aberta (p. 3531). Em vez de zigue-zague, faz-se um **retalho de espessura total em L** com duas incisões lineares: uma **na prega transversa da palma** e outra na **linha mediolateral do mínimo até a IFD**. Liberada a contratura, a extensão do dedo leva o retalho para distal; fecha-se o braço longitudinal e deixa-se um **defeito de cerca de 15 mm na palma**, que cicatriza por segunda intenção em **4 a 6 semanas**, seguido de tala dinâmica de extensão por **10 semanas**. É, na prática, a palma aberta aplicada ao mínimo, com a vantagem de que a incisão mediolateral não cruza as pregas. Vantagens: **menos hematoma e edema**, sem enxerto nem área doadora, mobilização imediata. Desvantagens: 10 semanas de tala, fisioterapia prolongada e vigilância da ferida palmar.
 
 !questoes central=mao-0334 relacionadas=mao-0295
 conceito: O retalho de JACOBSEN é um retalho em L (prega palmar transversa e mediolateral do mínimo até a IFD) para a doença avançada do quinto dedo, com defeito palmar deixado aberto.
@@ -482,15 +808,68 @@ como: O TARO 2024 pediu o autor da técnica de retalho mostrada na figura; a SBO
 armadilha: Confundir com a palma aberta de McCASH ou atribuir a técnica a SKOOG ou HUESTON.
 !fim
 
-# Complicações e recidiva {radar=confirmado}
+## Dermofasciectomia
 
-## Complicações
+A **dermofasciectomia** não é uma fasciectomia com enxerto: é a **substituição funcional da pele e das partes moles palmares não essenciais por enxerto de pele total** (Green, p. 142). A recidiva é **menor** que a da fasciectomia (BROTHERSTON e colaboradores, Br J Plast Surg, 1994), mas a recuperação é em média **50% mais longa**.
 
-A **reação de flare pós-fasciectomia** (edema, rigidez e dor desproporcionais, semanas depois de um pós-operatório tranquilo) ocorre em cerca de **1 em 10** e deixa **rigidez permanente em 1 em 20**; é rara nos minimamente invasivos (Green, p. 138). O Campbell infunde betametasona nos drenos para reduzi-la (p. 3528).
+Indicações (p. 142):
 
-O segundo é a **anatomia distorcida**, com planos obliterados: a **lesão de nervo digital** ocorre em **pelo menos 3%** das fasciectomias primárias, e o risco é **mais de cinco vezes maior na fasciectomia por recidiva** (Green, p. 139). O Campbell chama a lesão do nervo digital de **a complicação mais significativa**, qualquer que seja o método: **neuropraxia em 4% a 18%** e **lesão permanente em 3% a 4%**; a **síndrome dolorosa regional complexa** aparece em **0,31%**, com risco maior em mulheres, procedimentos complexos e afastados do trabalho (p. 3532).
+- **Falta longitudinal de pele** além do que retalhos locais corrigem.
+- **Recidiva com pele difusamente acometida ou cicatriz extensa**.
+- **Pele desvascularizada** de forma irreversível durante a cirurgia.
+- **Primeiro procedimento em jovens selecionados com diátese forte**.
 
-O **hematoma** aparece de forma indireta: o Campbell o associa à fasciectomia extensa, manda drenar, fazer hemostasia com o garrote solto e **espremer o hematoma** que levanta a pele após 48 horas (p. 3528 e 3529); JACOBSEN e a palma aberta são vendidos por **reduzirem hematoma e edema**.
+O planejamento tem regras próprias (p. 142 e 143; Fig. 4.12). Na palma, a pele retirada é uma **elipse truncada centrada na prega palmar distal**; no dedo, um **retângulo da hemicircunferência palmar**. Evita-se enxerto sobre as **cabeças dos metacarpos**, que recebem carga e onde o enxerto sofre com durabilidade e sensibilidade. As áreas doadoras devem ser sem pelos (face medial proximal do antebraço, prega inguinal lateral ao triângulo femoral). O enxerto total cobre até **1 cm² de tendão flexor exposto**, desde que as bordas estejam sobre leito bem vascularizado; áreas maiores pedem retalho ou matriz dérmica.
+
+No dedo, retira-se **toda a fáscia digital lateral, inclusive o CLELAND**, e no mínimo, também a **fáscia do abdutor do dedo mínimo** (p. 143). A lógica é retirar a unidade inteira de partes moles que poderia recidivar, inclusive estruturas que normalmente são poupadas.
+
+!questoes treino=mao-1808
+conceito: Na dermofasciectomia digital da recidiva, retira-se a pele palmar doente ou cicatrizada junto com toda a fáscia lateral, inclusive o CLELAND, e cobre-se a área com enxerto de pele total.
+como: O SIMÃO 2026 perguntou o que se resseca e como se cobre na dermofasciectomia digital da doença recidivada.
+armadilha: Preservar o CLELAND por ser poupado pela doença, ou cobrir com enxerto de pele parcial.
+!fim
+
+# Casos difíceis e cirurgia de salvamento {radar=clinico}
+
+## A IFP grave
+
+Uma **IFP fixa acima de 60 graus** quase sempre vem acompanhada de três problemas além da corda (p. 143): **frouxidão do aparelho extensor** (a banda central atenuada), **rigidez capsuloligamentar** e **retração da bainha flexora**. Mesmo com cicatrizes bem planejadas, a pele palmar fica curta depois da correção. Sem reserva de pele, só há dois caminhos: **alongar as partes moles** ou **encurtar o esqueleto**.
+
+Para alongar, a **tração esquelética prévia** (um distrator que aplica torque de extensão por dias ou semanas) seguida de fasciectomia ou dermofasciectomia **supera a liberação em um só tempo** (CRAFT e colaboradores, Plast Reconstr Surg, 2011). O Campbell espera uma correção de cerca de **50%** nessas contraturas (p. 3530). Se há **botoeira** associada a uma IFP grave recidivada, o tratamento mais previsível é **artrodesar a IFD** junto com o tratamento da IFP.
+
+Para encurtar (Fig. 4.13):
+
+- **Artrodese da IFP**: previsível, mas o dedo fica com um arco de flexão diferente dos outros.
+- **Falangectomia média**: retira-se a falange média e cria-se uma articulação entre a falange proximal e a distal, que mantém um arco de flexão normal no nível da IFP.
+- **Amputação**: para quem falhou nas outras opções. A doença de DUPUYTREN é **a indicação mais comum de amputação eletiva de dedo**, com satisfação alta quando é o paciente que pede, e não quando apenas consente. Faz-se **amputação do raio** para contratura combinada de MF e IFP, e **desarticulação da IFP** para IFP isolada com MF que estende por completo.
+
+A **artroplastia da IFP** com fasciectomia foi relatada como salvamento, mas não se popularizou. A **osteotomia de extensão da falange média não é recomendada**: na experiência do autor, o ganho é anulado por mais flexão da articulação, e o arco só se desloca sem melhorar a extensão.
+
+!questoes treino=mao-2444
+conceito: Na IFP grave há frouxidão do extensor, rigidez capsular e retração da bainha; tração esquelética prévia seguida de fasciectomia supera a liberação única, e sem reserva de pele restam o alongamento das partes moles ou o encurtamento esquelético.
+como: O SIMÃO 2022 pediu a afirmação de acordo com o Green sobre as contraturas graves da IFP.
+armadilha: Indicar a osteotomia de extensão da falange média ou achar que a liberação articular isolada resolve.
+!fim
+
+## Contratura composta acima de 135 graus
+
+O **TUBIANA IV** traz problemas que vão além da articulação (p. 143). A **maceração da pele** é comum e pode passar despercebida dentro da mão fechada; precisa ser tratada antes da operação para reduzir infecção. A rotina do autor é limpar com álcool usando cotonetes nas áreas difíceis e secar com toalha fina e secador no ar frio, **quatro vezes ao dia por alguns dias**. O acesso limitado aos dedos pode ser resolvido **em etapas**: primeiro a palma e as MF, depois os dedos **3 meses** mais tarde; ou usando a **agulha como primeiro passo** no mesmo ato da fasciectomia, para abrir a mão e facilitar a exposição.
+
+## Quando não tratar: a reorganização cortical
+
+Um dado surpreendente: nas contraturas graves e antigas pode ocorrer **reorganização cortical** (p. 143). Quando o paciente tenta estender os dedos, os dedos "reorganizados" **fletem ativamente** enquanto os outros estendem. Funcionalmente, isso imita uma amputação e é uma melhora para um dedo que só estenderia o suficiente para atrapalhar. É **contraindicação** a um tratamento que pretenda restaurar a função desse dedo.
+
+# Complicações e recidiva depois do tratamento {radar=confirmado}
+
+## Os três problemas não resolvidos
+
+O Green abre a seção de tratamento com **três problemas não resolvidos** (p. 139): o flare, a anatomia distorcida e o momento ideal da cirurgia (este já discutido).
+
+A **reação de flare pós-fasciectomia** é edema, rigidez e dor desproporcionais que pioram **semanas depois** de um pós-operatório inicial tranquilo. Ocorre em cerca de **1 em 10** e deixa **rigidez permanente em 1 em 20**; edema e rigidez são maiores com **dissecção extensa** e em **obesos**, e o flare é **raro nos minimamente invasivos**. Faz sentido pela biologia: a fasciectomia é uma ferida grande, e a ferida reativa o programa do miofibroblasto. O Campbell infunde betametasona pelos drenos para reduzi-lo (p. 3528) e lembra que a mulher tem flare duas vezes mais.
+
+A **anatomia distorcida**, com planos obliterados e feixes espirais, explica a lesão de nervo: a **lesão de nervo digital** ocorre em **pelo menos 3%** das fasciectomias primárias, e o risco é **mais de cinco vezes maior na fasciectomia por recidiva** (Green, p. 139). O Campbell chama a lesão do nervo digital de **a complicação mais significativa**, qualquer que seja o método: **neuropraxia em 4% a 18%** e **lesão permanente em 3% a 4%**; a **síndrome dolorosa regional complexa** aparece em **0,31%**, com risco maior em mulheres, procedimentos complexos e afastados do trabalho (p. 3532).
+
+O **hematoma** aparece de forma indireta: o Campbell o associa à fasciectomia extensa, manda drenar, fazer hemostasia com o garrote solto e **espremer o hematoma** que levanta a pele depois de 48 horas (p. 3528 e 3529); JACOBSEN e a palma aberta são vendidos justamente por **reduzirem hematoma e edema**.
 
 !tabela Complicações em números (Green 7, cap. 4, p. 138, 139 e Tab. 4.3; Campbell 15, cap. 80, p. 3520 e 3532)
 | Complicação | Frequência ou dado |
@@ -505,31 +884,27 @@ O **hematoma** aparece de forma indireta: o Campbell o associa à fasciectomia e
 | amputação por isquemia | menos de 1% na fasciectomia |
 !fim
 
-## Recidiva
+## Operar a recidiva
 
-**Recidiva é um assunto para a vida inteira**, e por isso o Green defende expressá-la como **porcentagem por ano** (p. 133). Ele separa três padrões de recontratura (Tabela 4.1, p. 133 e 134):
+Na recidiva, as opções são as mesmas, mas a reoperação dá resultados **marginais**, sobretudo se precoce (Campbell, p. 3532). O risco cirúrgico sobe, a anatomia fica mais distorcida e a articulação pode já estar perdida, exigindo **artrodese, falangectomia ou amputação**. A **recidiva da IFP do mínimo é a mais frequente**, independentemente da técnica (Green, p. 139). Por isso a Tabela 4.4 manda as recidivas múltiplas ou graves para a **dermofasciectomia**, que substitui a pele cicatrizada.
 
-!tabela Padrões de recontratura (Green 7, cap. 4, Tabela 4.1, p. 133 e 134)
-| Padrão | Quando | Causa | É recidiva? |
-| --- | --- | --- | --- |
-| precoce | primeiros 3 meses, depois platô | patologia secundária não corrigida (banda central frouxa, retinacular oblíquo, cápsula) | não |
-| progressiva | piora contínua após 3 meses | cordas mecanicamente importantes não tratadas | não (tratamento inadequado) |
-| tardia | após 1 ano ou mais de estabilidade | nova atividade da doença | sim, recidiva verdadeira |
-!fim
-
-A definição recomendada é a do grupo Delphi internacional: **aumento de pelo menos 20 graus** na contratura de uma articulação tratada **em 1 ano**, comparado com **6 semanas** após o tratamento (Green, p. 134). A contratura grave e a doença difusa têm mais chance de ter várias cordas na mesma articulação, que podem escapar do tratamento.
-
-Na recidiva, as opções são as mesmas, mas a reoperação dá resultados **marginais**, sobretudo se precoce (Campbell, p. 3532). O Green acrescenta que a **recidiva da IFP do mínimo é a mais frequente**, independentemente da técnica (p. 138), e que o **tamoxifeno reduziu a recidiva após fasciectomia em pacientes de alto risco** (DEGREEF, 2009), primeira prova de que a biologia pode ser modificada (p. 149). Na recidiva, o risco cirúrgico sobe, a anatomia fica mais distorcida e a articulação pode já estar perdida, exigindo **artrodese, falangectomia ou amputação**.
-
-!questoes central=mao-1285 relacionadas=mao-0944
+!questoes central=mao-1285 relacionadas=mao-0944 treino=mao-3348
 conceito: A anatomia neurovascular é distorcida (feixe espiral), o risco de lesão nervosa é mais de cinco vezes maior na reoperação e as articulações podem ficar comprometidas a ponto de exigir cirurgias de salvamento; hematoma, flare e lesão de nervo digital são as complicações a vigiar.
 como: A USP-SP 2025 pediu a afirmação correta sobre a contratura de DUPUYTREN e suas reoperações; a UFG 2019, a complicação pós-operatória mais comum.
 armadilha: Achar que a anatomia é preservada ou que a segunda cirurgia não aumenta o risco.
 alerta: Nenhum dos dois livros diz qual é a complicação pós-operatória mais comum, como cobra `mao-0944` (gabarito hematoma); o Campbell associa o hematoma à fasciectomia e chama a lesão de nervo digital de complicação mais significativa, e o Green dá ao flare cerca de 1 em 10 casos.
 !fim
 
+# O futuro: uma doença médica {radar=oportunidade}
+
+EATON fecha o capítulo (p. 149) com uma comparação que resume sua visão: a doença de DUPUYTREN hoje está onde a artrite reumatoide estava antes dos biológicos. A cirurgia reumatoide da mão mudou quando os anti-TNF passaram a controlar a sinovite; o autor espera o mesmo para a doença de DUPUYTREN, que considera **uma condição médica**.
+
+O primeiro sinal de que isso é possível veio do **tamoxifeno**: DEGREEF e DE SMET mostraram **redução da recidiva depois da fasciectomia em pacientes de alto risco** (Tabela 4.2 e p. 149). O tamoxifeno é um modulador do receptor de estrogênio, e o resultado conversa com a biologia já vista: o estrogênio freia a síntese de colágeno na fáscia. Corticoide, bifosfonato e metotrexato não têm esse papel na doença; o corticoide serve para amolecer nódulos e aliviar coxins dolorosos, não para impedir a recidiva.
+
+Os alvos em estudo citados pelo autor são o RNA de interferência (microRNA e siRNA) contra o **TGF beta 1**, moléculas que bloqueiam citocinas e uma espécie de **"stent molecular"** contra as enzimas de ligação cruzada, que impediria a catraca de encurtar a corda. Nada disso está em uso clínico; o valor para a prova é saber que **o colágeno é a pegada, não o culpado**, e que a única droga com efeito demonstrado sobre a recidiva, no capítulo, é o tamoxifeno.
+
 # Fechamento {radar=fundamento}
 
-A doença de DUPUYTREN é uma doença **biológica** tratada com ferramentas **mecânicas**. O miofibroblasto, sob tensão e com TGF beta, encurta e fixa o colágeno III ao longo das linhas de estresse; por isso as cordas seguem estruturas normais (pré-tendínea, espiral, lateral, natatória, GRAYSON) e poupam as protegidas (CLELAND, transverso superficial, septos de LEGUEU e JUVARA). Quem tem diátese (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE) progride e recidiva mais. O tratamento escolhe entre recuperação rápida com mais recidiva (agulha, colagenase) e recuperação longa com menos recidiva (fasciectomia, dermofasciectomia), e nenhum cura.
+A doença de DUPUYTREN é uma doença **biológica** tratada com ferramentas **mecânicas**. O miofibroblasto, sob tensão e com TGF beta, encurta e fixa o colágeno III ao longo das linhas de estresse e na posição de repouso; por isso as contraturas são em flexão e adução, as cordas seguem estruturas normais (pré-tendínea, espiral, lateral, natatória, GRAYSON) e poupam as protegidas (CLELAND, transverso superficial, septos de LEGUEU e JUVARA). Quem tem diátese (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE) progride e recidiva mais. A medida engana quando a corda cruza duas articulações. O tratamento escolhe entre recuperação rápida com mais recidiva (agulha, colagenase) e recuperação longa com menos recidiva (fasciectomia, dermofasciectomia), e nenhum cura.
 
-> **Na prova:** homem branco idoso (6 a 10 vezes), herança **autossômica dominante**, bilateral mas **assimétrica**, **anular e mínimo**; diabetes, **epilepsia e anticonvulsivantes**, tabagismo, álcool e hipercolesterolemia, **não artrite reumatoide**; família é o **preditor mais forte**, início precoce o **maior preditor de gravidade**; LEDDERHOSE **5%**, PEYRONIE **3%**, GARROD na **face dorsal da IFP**; **colágeno III** e **TIMP-1**; LUCK proliferativo **III/I maior que 35%** e fibras desorganizadas, residual **menor que 20%**; TUBIANA em degraus de **45 graus** (2 = 45 a 90, 3 = 90 a 135); **pré-tendínea flete a MF**; **espiral** = pré-tendínea + banda espiral + lâmina lateral + GRAYSON, leva o feixe para a **linha média e superfície**, em quase **metade** das contraturas digitais; **retrovascular e lateral** chegam à **IFD**; **CLELAND poupado**; operar com **MF 30 graus e IFP 15 graus**, fora da fase proliferativa; fasciotomia melhor na **fase residual**; **agulha mais barata**, **dermofasciectomia com menor recidiva** (2% ao ano); **JACOBSEN** no **mínimo**, **McCASH** palma aberta; nervo digital **3%** (5 vezes mais na recidiva), flare **1 em 10**.
+> **Na prova:** homem branco idoso (6 a 10 vezes), herança **autossômica dominante**, bilateral mas **assimétrica**, **anular e mínimo**; mulher com **atraso de 10 a 15 anos** (receptor androgênico, estrogênio, TIMP-1 no X); diabetes, **epilepsia e anticonvulsivantes**, tabagismo, álcool, hipercolesterolemia e IMC baixo, **não artrite reumatoide**; no diabético, doença **leve e com desvio radial**; família é o **preditor mais forte** da doença, início precoce o **maior preditor de gravidade**; LEDDERHOSE **5%**, PEYRONIE **3%**, GARROD na **face dorsal da IFP** (corticoide, não excisão); **colágeno III** e **TIMP-1**; LUCK proliferativo **III/I acima de 35%** e fibras desorganizadas, involutivo **20% a 35%** (corda nodular), residual **abaixo de 20%**; TUBIANA em degraus de **45 graus** sem a IFD; **fasciodese**: IFP corrige quando só a MF é tratada; **corda central flete a MF**; IFP com várias cordas (**central digital, retrovascular, espiral ou lateral**); **espiral** = pré-tendínea + banda espiral + lâmina lateral + GRAYSON, leva o feixe para a **linha média e superfície**, mais entre a **prega palmar distal e a da IFP**; **retrovascular e lateral** chegam à **IFD**; **CLELAND poupado**; IFD em hiperextensão = **banda central atenuada (botoeira)**; recontratura **precoce** (3 meses, patologia secundária), **progressiva** (corda não tratada), **tardia** (recidiva verdadeira); operar com **MF 30 graus e IFP 15 graus**, IFP antes de **40 graus**, fora da fase proliferativa; fasciotomia melhor na **fase residual**; colagenase no mínimo com **3 mm** de profundidade; **agulha mais barata**, **dermofasciectomia com menor recidiva** (2% ao ano); **JACOBSEN** no **mínimo**, **McCASH** palma aberta; nervo digital **3%** (5 vezes mais na recidiva), flare **1 em 10**; **tamoxifeno** reduz a recidiva no alto risco.
