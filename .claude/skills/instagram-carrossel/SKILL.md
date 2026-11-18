@@ -21,6 +21,8 @@ código próprios, sem copiar os arquivos dele.
 1. Ler `DESIGN.md`, `docs/design/INSTAGRAM.md` e `docs/marketing/orientacoes.md` (regras da marca: sem emoji, sem IA,
    sem figurinha nos stories de questão, legenda sem link, no máximo 5 hashtags).
 2. Ver o estilo do dia: `node marketing/instagram/estilos/ordem.mjs` (pedido do Tales vence a fila).
+   Pedido de "stories com alternativas" / "com a enquete ABCD": siga `marketing/instagram/estilos/STORIES-COM-ALTERNATIVAS.md`
+   (área livre sem caixa para a enquete, temática adaptada).
 3. Escolher a questão real e inédita: `node marketing/kit/questao.mjs buscar <tema> --imagem`; conferir também o
    **assunto** em `marketing/instagram/publicadas.md` e em `marketing/instagram/posts/` (não repetir tema recente).
 

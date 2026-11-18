@@ -5,6 +5,14 @@ de divulgação. Decisões do dono do projeto, Tales Roberto. Atualizar sempre q
 for dada. Detalhes técnicos dos posts em [marketing/instagram/README.md](../../marketing/instagram/README.md)
 e o catálogo de estilos em [marketing/instagram/estilos/ESTILOS.md](../../marketing/instagram/estilos/ESTILOS.md).
 
+## Stories com alternativas (18/11/2026)
+
+Tales aprovou como modelo os stories em que a questão vem com as **alternativas escritas** e uma **área livre, sem
+caixa desenhada, para a enquete A, B, C, D** do Instagram (o formato que mais teve interação), seguidos da resposta
+com um trecho do comentário ("segundo o Rockwood") e do convite ao site gratuito. "Sempre quando eu pedir, fazer algo
+parecido. A temática também adaptar." Exceção à regra "stories sem figurinha" (só a enquete das letras).
+[Guia e modelo executável](../../marketing/instagram/estilos/STORIES-COM-ALTERNATIVAS.md).
+
 ## Errata e "Como escrevemos o comentário" (13/11/2026)
 
 Tales aprovou o **Errata** (gabinete de revisão à noite, prova tipográfica, livro aberto com a edição corrigida à mão)

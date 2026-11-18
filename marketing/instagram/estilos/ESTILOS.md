@@ -34,6 +34,8 @@ mencionar IA, não citar o número total de questões).
    Instagram entrega menos o story que manda o usuário para fora do aplicativo, e a ideia é
    baixar a imagem e postar rápido. O story é só a imagem: sem retângulo tracejado reservado.
    A pergunta vai escrita no story e a resposta sai no story seguinte (ou no feed).
+   **Exceção aprovada (18/11/2026):** os [Stories com alternativas](STORIES-COM-ALTERNATIVAS.md), a pedido do Tales,
+   deixam uma área livre (sem caixa desenhada) para a enquete A, B, C, D.
 2. **Sem desenho de anatomia.** Nada de SVG ou CSS que imite osso, articulação, músculo, nervo ou
    vaso: para uma marca de ortopedia, qualquer coisa parecida com erro anatômico é inadmissível.
    Usar a imagem real da questão (radiografia, foto da prova) ou só texto com apresentação
@@ -42,6 +44,9 @@ mencionar IA, não citar o número total de questões).
 
 Os posts e modelos antigos que ainda mostram espaço para figurinha ficam como histórico; ao
 reaproveitar, tirar esse espaço.
+
+**Stories com alternativas (aprovado em 18/11/2026, a pedido, fora do rodízio):** a questão com as alternativas
+escritas e uma área livre para a enquete A, B, C, D; temática que se adapta. [Guia](STORIES-COM-ALTERNATIVAS.md).
 
 ---
 
