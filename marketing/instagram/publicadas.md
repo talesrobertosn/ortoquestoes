@@ -49,3 +49,8 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0179 | Fratura de BENNETT: o abdutor longo do polegar desloca a diáfise (TEOT 2022), cartaz de cinema "o cabo de guerra" | posts/2026-11-15-cartaz-bennett (stories) |
 | ombro-cotovelo-0249 | Complexo ligamentar lateral do cotovelo: ligamento colateral ulnar lateral nº 3 × ligamento anular nº 2 (TEOT 2024), serralheria da dobradiça | posts/2026-11-17-serralheria-cotovelo (stories) |
 | trauma-0753 | Incidência de HEINIG da esternoclavicular: feixe horizontal tangente, chassi no ombro oposto (TEOT 2025), tela do celular (bloqueio, notificações e central de controle) com área para enquete | posts/2026-11-18-vidro-heinig (stories) |
+| tumores-0125 | Cisto ósseo aneurismático da fíbula, ENNEKING B2 (TEOT 2023), conversa do grupo com enquete | posts/2026-11-19-grupo-cisto-aneurismatico (stories) |
+| pediatria-0561 | Manobra de ALLIS na luxação anterior do quadril da criança (TEOT 2024), vidro verde-noite com enquete | posts/2026-11-20-vidro-allis (stories) |
+| trauma-0755 | SLIC: luxação facetária sem déficit, 6 pontos, cirúrgico (TEOT 2025), cupom do SLIC com enquete | posts/2026-11-21-cupom-slic (stories) |
+| mao-0406 | Deficiência radial tipo IV de BAYNE e KLUG (TEOT 2025), carta de domingo com enquete | posts/2026-11-22-carta-bayne-klug (stories) |
+| joelho-0143 | TT-TG (TAGT) na TC superposta (TEOT 2024), vidro claro com enquete | posts/2026-11-23-vidro-tagt (stories) |
