@@ -63,6 +63,9 @@ Como não há pus, o tratamento inicial é **não cirúrgico**: antibiótico, el
 A celulite é também uma das infecções mais vistas no pronto-socorro, sobretudo em grupos de risco, e isso já foi cobrado num caso clínico de dor e vermelhidão em dois dedos.
 
 !questoes central=mao-1863,mao-0855
+conceito: A celulite é das infecções mais vistas no pronto-socorro, e as infecções da mão nascem sobretudo de trauma penetrante e feridas abertas.
+como: O ENARE 2023 pediu, num caso de dor e vermelhidão em dois dedos, uma das infecções mais comuns da mão; a UFG 2017 pediu a causa mais frequente das infecções da mão.
+armadilha: Marcar tenossinovite ou artrite séptica como as mais comuns, ou achar que mordedura de animal deve ser fechada após a irrigação.
 !fim
 
 ## Síndrome da pele escaldada estafilocócica
@@ -70,6 +73,9 @@ A celulite é também uma das infecções mais vistas no pronto-socorro, sobretu
 Rara, mas de prova. É causada por uma **toxina esfoliativa** do S. aureus que separa as camadas superficiais da epiderme, e não pela invasão direta do germe (p. 17). Acomete sobretudo **crianças pequenas**, cujos rins ainda não eliminam bem a toxina. No adulto é rara, mas tem **mortalidade alta**, porque aparece justamente em quem não elimina a toxina (insuficiência renal) ou não se defende (imunossupressão). O diagnóstico exige detectar a toxina.
 
 !questoes treino=mao-2518
+conceito: A síndrome da pele escaldada estafilocócica acomete sobretudo crianças pequenas e é rara no adulto, em quem a mortalidade é alta.
+como: O simulado do SIMÃO 2021 pede a afirmação correta sobre a síndrome, com distratores sobre corticoide, dispensa de antibiótico e diagnóstico só clínico.
+armadilha: Achar que, por ser mediada por toxina, a síndrome dispensa antibiótico ou se trata com corticoide.
 !fim
 
 ## Fasciite necrosante em uma linha
@@ -97,6 +103,9 @@ Para cada mecanismo, um germe a lembrar (p. 18):
 Os anaeróbios são menos comuns na mão, mas devem ser lembrados com mais frequência em **diabéticos** e **usuários de droga intravenosa** (p. 18). O porquê é de fisiologia. O anaeróbio precisa de tecido com pouco oxigênio. O diabético tem microangiopatia e neuropatia, chega tarde e com tecido mal perfundido; o usuário de droga injeta substâncias isquemiantes (a cocaína é vasoconstritora), contamina a agulha e a pele com saliva e injeta no subcutâneo ou no músculo. A Tabela 2.1 resume que esses dois grupos têm mais infecção polimicrobiana, muitas vezes com **gás nas partes moles** visível na radiografia (p. 21). Esse fato caiu em várias provas, com o drogadito e o diabético sempre como a resposta.
 
 !questoes central=mao-1098,mao-1501 treino=mao-2058
+conceito: Anaeróbios são raros na mão e aparecem mais no diabético; na mordida de animal pensa-se em Pasteurella, na humana em Eikenella.
+como: A PUC-SP 2020 e a USP-SP 2024 perguntaram em que paciente a infecção anaeróbia é mais provável; o SBCM 2024 inspirou o simulado que pede o germe de cada situação.
+armadilha: Escolher a mordedura humana ou o idoso como cenário típico do anaeróbio, ou trocar anaeróbios por fungos no diabético.
 !fim
 
 ## MRSA comunitário: o estafilococo mudou
@@ -116,6 +125,9 @@ A mão é muito bem vascularizada, e por isso a infecção pós-operatória é p
 Dor, calor, rubor e sensibilidade localizada fazem o diagnóstico (p. 18). Febre é inconstante, e o laboratório engana: **leucócitos e PCR estão normais em cerca de 75%** dos pacientes com infecção da mão, e a VHS está elevada em apenas metade (p. 18 e 19). O porquê é que a maioria das infecções da mão é pequena em volume, localizada e sem repercussão sistêmica; um panarício de 2 mL de pus não muda o hemograma. A lição para a prova e para o plantão é a mesma: **exame normal não afasta infecção**, e quem decide é o exame físico.
 
 !questoes central=mao-0761 treino=mao-3333
+conceito: A PCR é normal em cerca de 75% das infecções da mão, e na drenagem sob garrote o membro é exsanguinado só pela elevação.
+como: O INTO 2023 pediu em que proporção a PCR fica normal; o SIMÃO 2013 inspirou o simulado sobre como exsanguinar o membro antes da drenagem.
+armadilha: Confiar na PCR normal para afastar infecção, ou passar a faixa de ESMARCH e espremer o pus para o antebraço.
 !fim
 
 ## O que fazer na chegada
@@ -179,6 +191,9 @@ A paroníquia é a infecção do tecido mole da dobra ungueal e é a **infecçã
 A maioria das paroníquias é polimicrobiana, mas o **germe mais comum é o S. aureus** (p. 20). Esse é o fato mais cobrado do tema. O Campbell 15 (cap. 84) traz um ângulo diferente, citando séries em que um quarto das culturas tem anaeróbios, um quarto aeróbios e metade é mista. Os dois dados convivem: a flora é muitas vezes mista, mas o germe isolado com mais frequência continua sendo o estafilococo.
 
 !questoes central=mao-1185,mao-1187,mao-1332 treino=mao-2108,mao-3331
+conceito: A paroníquia aguda é a infecção mais comum da mão, nasce de pequenos traumas da prega ungueal e tem o S. aureus como germe principal.
+como: A PUC-SP 2022 e 2023 pediram a mais comum e o mecanismo; a USP-SP 2025 pediu o agente pela imagem; os simulados do SBCM 2022 e do SIMÃO 2010 pedem a origem e o nome da infecção que contorna o eponíquio (runaround).
+armadilha: Apontar Candida como agente da forma aguda ou a via hematogênica como origem.
 !fim
 
 ## Anatomia que explica a evolução
@@ -232,6 +247,9 @@ O Green descreve uma cadeia, e é exatamente essa cadeia que as provas pedem (p.
 As culturas mostram cocos gram-positivos, bastonetes gram-negativos, Candida e micobactérias (p. 24). Uma questão antiga do SIMÃO dizia que a crônica é causada "em cerca de 90%" pela Candida; o Green não dá porcentagem nenhuma e descreve a Candida como um dos invasores secundários, depois da colonização estafilocócica. O Campbell 15 (cap. 84) lista S. pyogenes, S. epidermidis, Candida e gram-negativos colônicos e vê a doença como uma dermatite de exposição colonizada, o que reforça a ideia: tratar o germe sem tirar a mão da água não resolve.
 
 !questoes central=mao-0466,mao-1179 treino=mao-3328,mao-3326
+conceito: A paroníquia crônica predomina em mulheres de meia-idade que vivem com as mãos na água: colonização estafilocócica seguida de Candida e germes gram-negativos.
+como: O Einstein 2026 pediu os germes (gram-negativas e Candida); a PUC-SP 2022, o perfil do paciente; o SIMÃO 2008 e o SBCM 2015 inspiraram simulados sobre a proporção de quatro mulheres para um homem e a sequência estafilococo seguido de Candida.
+armadilha: Tratar a crônica como a aguda, só com antibiótico, ou colocá-la em homens jovens.
 !fim
 
 ## Investigação
@@ -249,6 +267,9 @@ Uma alternativa é a técnica do **rocambole** (Swiss roll) de PABARI (Tech Hand
 No pós-operatório, o curativo sai em 48 a 72 horas, com água oxigenada a 3% e PVPI três vezes ao dia; antibiótico oral por duas semanas, suspenso em 3 a 5 dias se a cultura for negativa; antifúngico em geral desnecessário. A ferida fecha em 3 a 4 semanas e a unha leva **6 a 12 meses** para crescer. Se recidivar, nova marsupialização com retirada da unha (p. 25).
 
 !questoes treino=mao-2060
+conceito: Na paroníquia crônica que não cede, a marsupialização retira um crescente de pele do eponíquio para deixar a prega drenar.
+como: O simulado do SBCM 2024 pede onde se faz a marsupialização.
+armadilha: Colocar a marsupialização no hiponíquio ou no leito ungueal.
 !fim
 
 # Panarício e infecção apical {radar=confirmado}
@@ -266,6 +287,9 @@ KANAVEL descreveu a polpa como um saco fechado de tecido conjuntivo, isolado do 
 A **infecção apical** é uma infecção superficial da pele da parte **mais distal** da polpa, logo abaixo da borda livre da unha, que **não envolve o coxim palmar** (p. 25). Como não acomete os compartimentos septais, não gera síndrome compartimental e se trata como uma pequena coleção superficial. A diferença entre os dois já foi pedida em questão discursiva: o panarício ocupa os compartimentos da polpa e se comporta como síndrome compartimental; a infecção apical fica na pele da ponta, fora dos septos.
 
 !questoes central=mao-1226,mao-1536 treino=mao-3332
+conceito: O felon é um abscesso da polpa fechado pelos septos, com mecanismo de síndrome compartimental; a infecção apical é superficial e poupa o coxim.
+como: A UERJ 2025, discursiva, pediu a definição e a consequência do felon e a diferença para a infecção apical; a USP-SP 2026 pediu a afirmação correta; o SIMÃO 2012 inspirou o simulado sobre o nome da infecção superficial da ponta.
+armadilha: Indicar a incisão em boca de peixe ou a marsupialização para o felon, ou chamar de felon a infecção que poupa o coxim.
 !fim
 
 ## Clínica e complicações
@@ -320,6 +344,9 @@ KANAVEL descreveu primeiro três sinais e depois acrescentou a **semiflexão** c
 Cada sinal tem o seu porquê, e é isso que permite resolver as pegadinhas: a prova troca **extensão** por **flexão** passiva (a flexão alivia, não dói), troca edema **simétrico** por assimétrico ou troca dor "na bainha" por dor "na articulação". Os sinais **não precisam estar todos presentes**, sobretudo no início (p. 29).
 
 !questoes central=mao-1486 treino=mao-1734,mao-1735
+conceito: Os quatro sinais de KANAVEL são dedo semifletido, edema fusiforme, dor à palpação da bainha e dor à extensão passiva.
+como: A USP-SP 2024 pediu quais sinais pertencem ao quadro; o simulado do SIMÃO 2026 pede o caso que os reúne e outro, da mordida de gato com tenossinovite, pede a Pasteurella.
+armadilha: Inverter os sinais (dor à flexão, posição em extensão) ou confundir com felon, herpes ou artrite da IFP.
 !fim
 
 ## Qual sinal é o mais útil: três respostas
@@ -333,6 +360,9 @@ Aqui o Green registra uma divergência que a prova explora (p. 29):
 Os autores do capítulo concluem que os sinais são úteis em conjunto, e nos pontos críticos destacam a dor à palpação da bainha e a dor à extensão passiva como os mais úteis no início (p. 32). Na prova, a leitura depende de quem o enunciado cita: "segundo KANAVEL" é a dor à palpação da bainha; "na série de PANG", o edema fusiforme.
 
 !questoes central=mao-1569 treino=mao-3330,mao-3335,mao-3341
+conceito: Qual sinal de KANAVEL é o mais útil depende da fonte: a dor à palpação da bainha para KANAVEL, o edema fusiforme na série de PANG.
+como: A USP-SP 2026 pediu o sinal mais confiável segundo KANAVEL; os simulados do SIMÃO 2009, 2014 e 2020 pedem o sinal mais presente na série de PANG, por que polegar e mínimo dão sinais discretos e a conduta na fase precoce sem pus.
+armadilha: Responder dor à extensão passiva sem olhar qual autor a questão cita, ou drenar logo o caso precoce que ainda cabe em antibiótico venoso e tala.
 !fim
 
 ## Polegar e mínimo: sinais mais discretos
@@ -375,6 +405,9 @@ Dois estudos definem o prognóstico ruim (p. 32). MALOON e colaboradores (J Hand
 !fim
 
 !questoes treino=mao-1992
+conceito: Para PANG, infecção polimicrobiana, idade acima de 43 anos, diabetes, doença vascular e isquemia pioram o prognóstico da tenossinovite.
+como: O simulado do SIMÃO 2023 pede qual fator da lista de PANG piora o resultado.
+armadilha: Escolher imunodeficiência ou vários dedos acometidos, que não estão entre os fatores de PANG.
 !fim
 
 ## Aderências e necrose do tendão
@@ -395,6 +428,9 @@ As infecções das bursas raramente são isoladas: quase sempre vêm de uma teno
 As variações anatômicas são muitas, descritas por SCHELDRUP (Surg Gynecol Obstet, 1951) em 367 mãos dissecadas, e acontecem em cerca de 15% das pessoas; por isso o livro manda examinar a palma, o punho e todos os dedos em toda infecção de bursa (p. 33).
 
 !questoes treino=mao-1993,mao-3338
+conceito: A bainha do polegar segue na bursa radial e a do mínimo na ulnar, e as duas podem se comunicar pelo espaço de PARONA, dando a infecção em ferradura.
+como: O simulado do SIMÃO 2023 pede por qual espaço o polegar chega ao mínimo; o do SIMÃO 2018, a afirmação correta sobre bursas e bainhas.
+armadilha: Achar que a bainha do mínimo continua na bursa ulnar em quase todos, ou procurar a comunicação nos espaços tenar ou mediopalmar.
 !fim
 
 ## O espaço de PARONA
@@ -408,6 +444,9 @@ O espaço de PARONA é um **espaço potencial profundo do antebraço volar dista
 Quando a bursa radial e a ulnar se ligam pelo PARONA, forma-se o **abscesso em ferradura**: a infecção do polegar desce pela bursa radial, cruza o antebraço distal e sobe pela bursa ulnar até o mínimo, ou o contrário (p. 29). É por isso que uma tenossinovite do polegar pode aparecer no mínimo.
 
 !questoes central=mao-1181 treino=mao-2195,mao-3327
+conceito: O espaço de PARONA fica no antebraço distal, entre o pronador quadrado e os flexores profundos, continua o espaço mediopalmar e recebe a infecção pela rotura das bursas.
+como: A PUC-SP 2022 pediu a afirmação correta sobre o espaço; o SBCM 2023 e o SIMÃO 2008 inspiraram simulados sobre o dedo ligado a ele e a continuidade com o mediopalmar.
+armadilha: Colocar o espaço entre os flexores superficiais e o pronador, ou dizer que ele se comunica diretamente com as bursas.
 !fim
 
 ## Clínica
@@ -445,6 +484,9 @@ O que separa os dois espaços principais é o **septo oblíquo mediopalmar**, qu
 Por que o **tenar** é o mais comum? Ele recebe infecção de três bainhas (polegar, indicador e médio), está exposto a ferimentos da região mais usada na preensão e se comunica facilmente com o dorso pela comissura entre o adutor e o 1º interósseo dorsal. Já o **hipotenar** é fechado em si mesmo: não tem bainha que o alimente, e por isso é extremamente raro.
 
 !questoes central=mao-0668 treino=mao-2519,mao-3337,mao-3339
+conceito: O espaço tenar é o espaço profundo mais acometido; o polegar fica abduzido e dói à adução passiva, e o hipotenar é raro e isolado das bainhas.
+como: A FMRP-USP 2026 pediu o local mais comum; os simulados do SIMÃO 2021, 2015 e 2019 pedem a posição do polegar, o comportamento do hipotenar e o espaço mais acometido após ferimento palmar.
+armadilha: Responder mediopalmar como o mais comum, ou inverter a posição do polegar no abscesso tenar.
 !fim
 
 ## Por que a mão palmar infectada incha no dorso
@@ -458,6 +500,9 @@ O **abscesso comissural**, em botão de colarinho (collar-button), recebe esse n
 O ponto de raciocínio que o livro destaca é que ele **começa volar** e chega ao dorso secundariamente: como a pele palmar está presa à fáscia, a coleção volar não tem para onde crescer e atravessa a fáscia para o dorso, onde há tecido frouxo (p. 37). O edema é maior no dorso, mas o componente volar é o mais importante. Por isso o tratamento exige **duas incisões, dorsal e volar** (p. 37 e 38).
 
 !questoes central=mao-0762
+conceito: O abscesso em botão de colarinho surge no espaço interdigital (comissura), com um componente palmar e outro dorsal ligados por um istmo.
+como: O INTO 2023 pediu o local mais comum desse abscesso.
+armadilha: Colocá-lo na IFD, na IFP ou no espaço de PARONA.
 !fim
 
 ## Como drenar cada espaço
@@ -481,6 +526,9 @@ A artrite séptica é definida pela presença de mais de 10^5 organismos por mic
 A cartilagem morre por dois mecanismos (p. 40). O primeiro é enzimático: os leucócitos liberam proteases que digerem os proteoglicanos e o colágeno da cartilagem, e a **destruição começa nas primeiras 24 horas** (p. 41). O segundo é mecânico: o pus aumenta a pressão intra-articular, força a articulação para a posição de maior volume (o paciente não quer mexer, a "pseudoparalisia") e causa necrose da cartilagem por compressão. Os dois explicam por que o tratamento é **drenagem cirúrgica pronta**; a punção seriada fica só para o paciente sem condição clínica de ir ao centro cirúrgico (p. 41).
 
 !questoes central=mao-1083
+conceito: Na artrite séptica da mão, o S. aureus é o germe mais comum.
+como: A PUC-SP 2020 pediu os micro-organismos mais frequentes.
+armadilha: Marcar gonococo, lembrado na artrite séptica do adulto jovem em grandes articulações.
 !fim
 
 ## De onde vem cada articulação
@@ -545,6 +593,9 @@ A classificação de CIERNY e MADER (Contemp Orthop, 1985) foi feita para os oss
 A ordem dos tipos é pegadinha frequente: **1 é medular, 2 é superficial** (e não o contrário). O tipo 4 é o osso instável, como a pseudartrose infectada. PCR e VHS servem para acompanhar a resposta, e as duas sobem nas primeiras 48 horas depois da cirurgia (p. 45).
 
 !questoes central=mao-1325,mao-1519
+conceito: Na osteomielite crônica, o S. aureus se esconde dentro do osteoblasto e no biofilme, e a classificação de CIERNY e MADER combina tipo anatômico e hospedeiro.
+como: A USP-SP 2025 pediu a afirmação correta sobre a fisiopatologia; a USP-SP 2024 pediu as classificações de MATHES e NAHAI e de CIERNY e MADER num caso de pseudartrose infectada.
+armadilha: Achar que o biofilme exige menos antibiótico, ou classificar como localizada a osteomielite difusa com instabilidade.
 !fim
 
 ## Diagnóstico e tratamento
@@ -574,6 +625,9 @@ Os germes vêm sobretudo da boca do animal, influenciada pelas presas que ele co
 A **Pasteurella multocida** é frequente nas duas espécies, **mais no gato**, e tem uma marca clínica: celulite de evolução rápida, com secreção serosa, nas primeiras **12 a 24 horas** (p. 47). A rapidez é a pista; uma infecção estafilocócica costuma levar mais tempo para aparecer. É o germe que a prova espera como resposta para "mordida animal" e "mordida de gato".
 
 !questoes central=mao-1017,mao-1057,mao-1133 treino=mao-3336,mao-3340
+conceito: Na mordida de animal, sobretudo de gato, o germe que se cobre é a Pasteurella multocida, junto de estafilococo e estreptococo; há germes raros ligados ao hospedeiro e ao bicho.
+como: A UFG 2021 e a PUC-SP 2019 e 2021 pediram o germe principal; os simulados do SIMÃO 2015 e 2019 pedem a Capnocytophaga no esplenectomizado mordido por cão e a Francisella no gato que caça coelhos.
+armadilha: Trocar Pasteurella por Eikenella, que é da mordida humana, ou não pensar no germe raro quando o hospedeiro ou a evolução fogem do padrão.
 !fim
 
 ## Os germes raros que a prova adora
@@ -593,6 +647,9 @@ Irrigar, desbridar e deixar a ferida da mão **aberta**; fechar frouxo depois; r
 O cuidado de deixar aberta vale para a mão, com seus espaços fechados e bainhas superficiais. Em outros territórios, a conduta pode ser outra, e uma questão da USP cobrou justamente uma mordida extensa de cão no abdome, atendida em uma hora, em que o fechamento após desbridamento e lavagem era aceitável.
 
 !questoes central=mao-1398
+conceito: Na mordedura canina recente, desbridar e lavar com pressão é a base, e o fechamento primário pode ser feito quando a ferida permite.
+como: A USP-SP 2025 pediu a conduta numa mordedura canina extensa atendida em 1 hora.
+armadilha: Achar que a mordedura canina nunca se fecha por risco de raiva, ou restringir o antibiótico à profilaxia.
 !fim
 
 # Água, peixes e sanguessugas {radar=fundamento}
@@ -610,6 +667,9 @@ O Mycobacterium marinum, do aquário e da água, causa infecção crônica e fic
 A sanguessuga (Hirudo medicinalis) é usada para descongestionar retalhos e reimplantes com insuficiência venosa. Ela carrega no intestino a **Aeromonas hydrophila**, que faz parte da sua flora intestinal e aparece em **18%** das infecções de retalho tratado com sanguessuga (p. 48). Por isso se faz profilaxia antibiótica que cubra Aeromonas, com atenção para a resistência ao ciprofloxacino já descrita (p. 48).
 
 !questoes treino=mao-2385,mao-3329
+conceito: A sanguessuga medicinal carrega Aeromonas hydrophila no intestino, e a lesão do soco exige abrir a cápsula para ver a cartilagem.
+como: O simulado do SIMÃO 2022 pede o germe da sanguessuga; o do SIMÃO 2009, a conduta na ferida sobre a cabeça do metacarpo com cápsula de aspecto íntegro.
+armadilha: Escolher Pseudomonas para a sanguessuga, ou fechar a ferida do soco sem abrir a cápsula.
 !fim
 
 # Mordedura humana e a lesão do soco {radar=confirmado}
@@ -646,6 +706,9 @@ Essa distinção entre "mais comum" e "mais associado" explica as questões que 
 As complicações incluem tenossinovite, artrite séptica, osteomielite, rigidez e dor crônica; há relatos de choque tóxico e de mortes (p. 50).
 
 !questoes central=mao-0941,mao-1180 treino=mao-3334
+conceito: Na mordedura humana, o S. aureus é o germe mais cultivado, mas é preciso cobrir Eikenella corrodens, bastonete gram-negativo anaeróbio facultativo, e anaeróbios.
+como: A UFG 2019 pediu o agente mais comum; a PUC-SP 2022, um germe a considerar; o SIMÃO 2014 inspirou o simulado sobre o que é a Eikenella.
+armadilha: Responder Eikenella como o mais comum, ou dizê-la resistente à penicilina.
 !fim
 
 # Abscesso do usuário de droga e tromboflebite séptica {radar=oportunidade}
@@ -675,6 +738,9 @@ Na **criança**, a origem típica é a gengivoestomatite herpética: ela chupa o
 A incubação é de 2 a 14 dias. Em geral **um dedo só** é acometido, mais o **indicador e o polegar**; **mais de um dedo** acometido sugere **Coxsackie**, o vírus da doença mão-pé-boca (p. 52).
 
 !questoes central=mao-0821,mao-0763 treino=mao-2194
+conceito: O panarício herpético e a doença mão-pé-boca são virais: o herpes forma vesículas agrupadas, geralmente num único dedo, e a mão-pé-boca é causada pelo Coxsackie.
+como: O INTO 2026 pediu a suspeita pela imagem numa criança de 18 meses; o INTO 2023, o agente da mão-pé-boca; o SBCM 2023 inspirou o simulado sobre a distribuição do herpético.
+armadilha: Chamar as vesículas de impetigo e drená-las, ou achar que o herpes atinge vários dedos ao mesmo tempo.
 !fim
 
 ## Clínica: dor desproporcional e polpa macia
@@ -716,6 +782,9 @@ A fasciite necrosante acomete pele, subcutâneo e fáscia, e **poupa o músculo*
 O tipo 1, misto, é o mais frequente, mas o germe isolado que a prova associa à fasciite é o **estreptococo**: ele está no tipo 2 (o S. pyogenes, que dá os quadros mais fulminantes, inclusive em pessoas saudáveis) e entre os germes do tipo 1. Quando a questão pede um germe só, a resposta esperada é o estreptococo, e a clindamicina entra no esquema justamente pela sinergia contra o S. pyogenes (Tabela 2.1, p. 21).
 
 !questoes central=mao-0807
+conceito: O estreptococo é o germe mais ligado à fasciite necrosante da mão.
+como: O INTO 2026 pediu o germe mais comum.
+armadilha: Marcar estafilococo ou MRSA comunitário.
 !fim
 
 ## Como reconhecer
@@ -729,6 +798,9 @@ O paciente às vezes descreve uma **sensação de morte iminente**; febre e leuc
 O tratamento é o **desbridamento extenso e urgente**; o primeiro desbridamento decide o resultado (p. 55). Ressuscitação volêmica como num grande queimado, reexploração em até 24 horas, oxigênio hiperbárico como possível adjuvante e enxerto de pele depois. A mortalidade vai de **9% a 75%** (a pior na parede torácica), e os fatores de risco são idade acima de 50 anos, diabetes, acometimento do tronco, bacteremia e atraso no tratamento (p. 55). A forma fúngica mostra hifas largas, não septadas, com invasão vascular, num tecido lenhoso com manchas negras, em transplantados (p. 55, Fig. 2.25).
 
 !questoes central=mao-1313,mao-1414 treino=mao-3325
+conceito: A fasciite necrosante começa parecida com uma celulite, avança rápido pela fáscia, costuma ser polimicrobiana e mata muito; a mionecrose espontânea liga-se ao C. septicum.
+como: A USP-SP 2025 pediu a afirmação correta sobre a fasciite; a USP-SP 2024, sobre a gangrena de FOURNIER; o SBCM 2015 inspirou o simulado do clostrídio no paciente com câncer colorretal.
+armadilha: Esperar uma infecção lenta e localizada, ou apontar C. perfringens na forma espontânea.
 !fim
 
 ## Gangrena gasosa: a mionecrose por clostrídio
@@ -776,6 +848,9 @@ Nem todo dedo vermelho é infecção, e o erro de cortar uma doença inflamatór
 O pioderma gangrenoso merece atenção especial. Ligado à **colite ulcerativa** e a outras doenças inflamatórias, evolui de pápula a pústula e a uma **úlcera de borda violácea, elevada**, que cresce 1 a 2 cm por dia (p. 57 e 58). Não é infecção, é uma dermatose neutrofílica, e o fenômeno que a define é a **patergia**: o trauma piora a lesão. Por isso a **excisão é contraindicada**: o desbridamento feito na suposição de infecção aumenta a necrose e a úlcera cresce. O capítulo seguinte do Green (cap. 3) explica por que o pioderma aparece entre as infecções: ele imita uma infecção fulminante, piora e se espalha de forma centrífuga se for operado, e responde rápido e de forma notável à **prednisona oral**.
 
 !questoes treino=mao-2107,mao-2383,mao-2528
+conceito: O pioderma gangrenoso imita infecção, piora com o desbridamento (patergia), avança do centro para a periferia de 1 a 2 cm por dia e se trata com corticoide.
+como: Os simulados do SBCM 2022 e do SIMÃO 2022 e 2021 pedem o tratamento de primeira linha, a forma de crescimento e a causa da piora após o desbridamento.
+armadilha: Desbridar e dar antibiótico à úlcera violácea que cresce, ou inverter o sentido do avanço.
 !fim
 
 # Fechamento: o raciocínio em três perguntas {radar=fundamento}

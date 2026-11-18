@@ -12828,6 +12828,205 @@
    ]
   },
   {
+   "id": "green-infeccoes-mao",
+   "versao": 1,
+   "titulo": "Infecções agudas da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 2 · Acute Infections of the Hand",
+   "resumo": "Antibiótico não substitui drenagem; pus em espaço fechado age como síndrome compartimental; estafilococo é o germe mais comum, CA-MRSA até 60%; anaeróbio em diabético e usuário de droga; leucócitos e PCR normais em 75%; exsanguinar só por elevação; paroníquia aguda é a infecção mais comum (S. aureus), crônica 4:1 em mulheres com marsupialização em crescente; panarício 15% a 20%, incisão longitudinal unilateral, nunca boca de peixe; KANAVEL com quatro sinais, dor à palpação da bainha o mais confiável; PARONA entre pronador quadrado e bainha do FDP, ferradura polegar e mínimo; tenar é o espaço profundo mais comum; botão de colarinho começa volar; soco com cápsula aberta mesmo íntegra; Eikenella na mordida humana, Pasteurella no gato, tularemia com pneumonia, Capnocytophaga no esplenectomizado; herpético nunca se corta; fasciite tipo 1 mista e tipo 2 estreptococo A; C. perfringens no trauma e C. septicum com câncer colorretal.",
+   "acesso": "gratis",
+   "minutos": 73,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-que-a-mao-infectada-e-urgencia-cirurgica",
+     "titulo": "Por que a mão infectada é urgência cirúrgica",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tipos-de-infeccao-e-germes",
+     "titulo": "Tipos de infecção e germes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avaliacao-do-paciente",
+     "titulo": "Avaliação do paciente",
+     "radar": "confirmado"
+    },
+    {
+     "id": "principios-de-tratamento",
+     "titulo": "Princípios de tratamento",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "paroniquia-aguda",
+     "titulo": "Paroníquia aguda",
+     "radar": "confirmado"
+    },
+    {
+     "id": "paroniquia-cronica",
+     "titulo": "Paroníquia crônica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "panaricio-e-infeccao-apical",
+     "titulo": "Panarício e infecção apical",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tenossinovite-flexora-piogenica",
+     "titulo": "Tenossinovite flexora piogênica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "bursas-radial-e-ulnar-e-espaco-de-parona",
+     "titulo": "Bursas radial e ulnar e espaço de PARONA",
+     "radar": "confirmado"
+    },
+    {
+     "id": "espacos-profundos-e-superficiais-da-mao",
+     "titulo": "Espaços profundos e superficiais da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrite-septica",
+     "titulo": "Artrite séptica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "osteomielite",
+     "titulo": "Osteomielite",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mordeduras-de-animais",
+     "titulo": "Mordeduras de animais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "agua-peixes-e-sanguessugas",
+     "titulo": "Água, peixes e sanguessugas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "mordedura-humana-e-a-lesao-do-soco",
+     "titulo": "Mordedura humana e a lesão do soco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "abscesso-do-usuario-de-droga-e-tromboflebite-sep",
+     "titulo": "Abscesso do usuário de droga e tromboflebite séptica",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "panaricio-herpetico",
+     "titulo": "Panarício herpético",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hiv-e-diabetes",
+     "titulo": "HIV e diabetes",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fasciite-necrosante-e-gangrena-gasosa",
+     "titulo": "Fasciite necrosante e gangrena gasosa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "antraz-cutaneo-e-injecao-sob-alta-pressao",
+     "titulo": "Antraz cutâneo e injeção sob alta pressão",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "as-doencas-que-imitam-infeccao",
+     "titulo": "As doenças que imitam infecção",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento-o-raciocinio-em-tres-perguntas",
+     "titulo": "Fechamento: o raciocínio em três perguntas",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1863",
+    "mao-0855",
+    "mao-1098",
+    "mao-1501",
+    "mao-0761",
+    "mao-1185",
+    "mao-1187",
+    "mao-1332",
+    "mao-0466",
+    "mao-1179",
+    "mao-1226",
+    "mao-1536",
+    "mao-1486",
+    "mao-1569",
+    "mao-1181",
+    "mao-0668",
+    "mao-0762",
+    "mao-1083",
+    "mao-1325",
+    "mao-1519",
+    "mao-1017",
+    "mao-1057",
+    "mao-1133",
+    "mao-1398",
+    "mao-0941",
+    "mao-1180",
+    "mao-0821",
+    "mao-0763",
+    "mao-0807",
+    "mao-1313",
+    "mao-1414"
+   ],
+   "treino": [
+    "mao-2518",
+    "mao-2058",
+    "mao-3333",
+    "mao-2108",
+    "mao-3331",
+    "mao-3328",
+    "mao-3326",
+    "mao-2060",
+    "mao-3332",
+    "mao-1734",
+    "mao-1735",
+    "mao-3330",
+    "mao-3335",
+    "mao-3341",
+    "mao-1992",
+    "mao-1993",
+    "mao-3338",
+    "mao-2195",
+    "mao-3327",
+    "mao-2519",
+    "mao-3337",
+    "mao-3339",
+    "mao-3336",
+    "mao-3340",
+    "mao-2385",
+    "mao-3329",
+    "mao-3334",
+    "mao-2194",
+    "mao-3325",
+    "mao-2107",
+    "mao-2383",
+    "mao-2528"
+   ],
+   "subtemas": [
+    "Infecções da mão"
+   ]
+  },
+  {
    "id": "green-instabilidade-carpo",
    "versao": 1,
    "titulo": "Instabilidades do carpo",
