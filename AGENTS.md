@@ -221,3 +221,12 @@ amostra, não expor taxa; com bom acerto, reconhecer o resultado e sugerir a pr�
 elogiar a melhor área, recomendar atenção ao tema a revisar e parabenizar ranking real.
 Taxa positiva e tema a revisar podem coexistir, sem mostrar nota ruim nem falar “pior área”.
 Esta instrução substitui a antiga proibição de combinar acerto e área a melhorar. TOM.md detalha.
+
+## Automáticos e cortesia na assinatura (Tales, 17/11/2026)
+
+Primeiras dez questões, retorno e cronograma pronto não geram mais e-mail. Otimizar os
+automáticos já existentes; outros contatos ficam manuais no hub. Não criar e-mail de cortesia.
+A tela da assinatura e o painel devem distinguir período pago e cortesia, com validade e
+primeiro nome das indicações quando disponíveis. Nova compra preserva os dias de acesso,
+com a conta dos dias no checkout; nunca prometer soma apenas na interface. Ver
+[docs/conta/ACESSO-CORTESIA.md](docs/conta/ACESSO-CORTESIA.md).

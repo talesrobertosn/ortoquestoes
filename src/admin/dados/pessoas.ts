@@ -1,3 +1,4 @@
+import type { ResumoAcesso } from '../../conta/resumoAcesso'
 /**
  * Regras das pessoas no painel 3.0 (sem React). Mesmas regras do painel anterior, agora num lugar só:
  * online, ativo hoje, novo que parou, filtros do Explorador e o acerto que ordena.
@@ -8,6 +9,7 @@ import type { FiltroPessoas } from '../rotas'
 
 export interface LinhaUsuario {
   id_usuario: string
+  acesso_resumo?: ResumoAcesso
   email: string | null
   nome: string | null
   criado_em: string

@@ -91,6 +91,10 @@ Deno.serve(async (req) => {
     } else if (ampliar === true) {
       return json({ erro: "N\xE3o encontramos um plano vigente para ampliar. Atualize a p\xE1gina." }, 409, req);
     }
+    const reserva = await banco("rpc/inicio_proximo_periodo", { method: "POST", body: JSON.stringify({ p_usuario: usuario.id }) });
+    if (!reserva.ok) throw new Error("consulta_periodo_preservado_falhou");
+    const preservado = await reserva.json();
+    if (preservado && Date.parse(preservado) > Date.now() + 6e4 && (!inicioCobranca || Date.parse(preservado) > Date.parse(inicioCobranca))) inicioCobranca = preservado;
     const centavos = await centavosPara(usuario.id, plano);
     const aceite = await banco("aceites_assinatura", {
       method: "POST",

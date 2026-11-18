@@ -101,11 +101,11 @@ var convite = () => Array.from({ length: 6 }, (_, i) => ({
     ajuda(c)
   ]
 }));
-var boasVindas = [{ id: "v21", assuntos: (c) => [nm(c, "sua conta no Orto Quest\xF5es")], corpo: (c) => [
-  "Sua conta no Orto Quest\xF5es est\xE1 pronta.",
-  "Voc\xEA encontra quest\xF5es comentadas, Biblioteca de resumos e Revis\xE3o. O Cronograma permite organizar o estudo pela data da prova e pelo tempo dispon\xEDvel.",
+var boasVindas = [{ id: "v41", assuntos: (c) => [nm(c, "sua conta no Orto Quest\xF5es")], corpo: (c) => [
+  "Que bom ter voc\xEA no Orto Quest\xF5es! Sua conta j\xE1 est\xE1 pronta para come\xE7ar.",
+  "Minha sugest\xE3o para o primeiro treino \xE9 escolher um tema e resolver algumas quest\xF5es. Depois de responder, leia tamb\xE9m a explica\xE7\xE3o das outras alternativas.",
+  "A Biblioteca de resumos ajuda a consultar o conte\xFAdo, e a Revis\xE3o re\xFAne as quest\xF5es para retomar depois. O Cronograma est\xE1 dispon\xEDvel para organizar as sess\xF5es pela data da prova.",
   `Para come\xE7ar pelas quest\xF5es: ${c.link("treinar")}`,
-  "Voc\xEA tamb\xE9m pode indicar o site aos colegas que estudam ortopedia.",
   ajuda(c)
 ] }];
 var provaVersoes = (tipo) => Array.from({ length: 6 }, (_, i) => ({
@@ -124,13 +124,13 @@ var provaVersoes = (tipo) => Array.from({ length: 6 }, (_, i) => ({
   ]
 }));
 var marco = (primeiro = false) => Array.from({ length: 6 }, (_, i) => ({
-  id: `v${i + 21}`,
-  assuntos: (c) => [nm(c, [primeiro ? "suas primeiras quest\xF5es" : "seu novo marco de estudo", "progresso no seu hist\xF3rico", "um marco nas quest\xF5es", "seu hist\xF3rico est\xE1 crescendo", "as quest\xF5es j\xE1 respondidas", "seu progresso de estudo"][i])],
+  id: `v${i + 41}`,
+  assuntos: (c) => [nm(c, [primeiro ? "suas primeiras quest\xF5es" : "parab\xE9ns pelo seu novo marco", "mais um passo no seu estudo", "suas quest\xF5es e a pr\xF3xima revis\xE3o", "seu progresso nas quest\xF5es", "para continuar seu treino", "um marco para comemorar"][i])],
   corpo: (c) => [
-    primeiro ? "Voc\xEA concluiu suas primeiras dez quest\xF5es no Orto Quest\xF5es." : `Voc\xEA chegou ao marco de ${Q(c.marco ?? 100)} respondidas. Parab\xE9ns!`,
-    c.obs(1),
-    sugestao(c, "revisao"),
-    `Para consultar seu hist\xF3rico e sua revis\xE3o: ${c.link("revisao")}`,
+    primeiro ? "Voc\xEA concluiu suas primeiras dez quest\xF5es no Orto Quest\xF5es." : `Voc\xEA completou ${Q(c.marco ?? 100)} no Orto Quest\xF5es. Parab\xE9ns pela dedica\xE7\xE3o ao estudo!`,
+    c.obs(1, ["ranking", "melhorArea"]),
+    c.um("Para aproveitar esse treino, vale voltar \xE0s quest\xF5es que trouxeram d\xFAvidas e reler os coment\xE1rios.", "A pr\xF3xima sess\xE3o pode ser dedicada a refazer quest\xF5es e conferir o racioc\xEDnio de cada alternativa.", "Continue praticando e reserve uma parte do treino para revisar os conceitos das quest\xF5es anteriores."),
+    `Sua revis\xE3o est\xE1 aqui: ${c.link("revisao")}`,
     ajuda(c)
   ]
 }));
@@ -164,41 +164,51 @@ var cronograma = (pronto2 = false) => Array.from({ length: 5 }, (_, i) => ({
     ajuda(c)
   ]
 }));
+var dataCompleta = (iso) => iso && Number.isFinite(Date.parse(iso)) ? new Date(iso).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" }) : null;
+var planoPorExtenso = (id) => id ? { mensal: "mensal", trimestral: "trimestral", semestral: "semestral", anual: "anual" }[id] ?? null : null;
 var pagamento = () => Array.from({ length: 5 }, (_, i) => ({
-  id: `v${i + 21}`,
-  assuntos: (c) => [nm(c, ["pagamento aprovado", "sua assinatura foi confirmada", "seu acesso est\xE1 ativo", "confirma\xE7\xE3o do seu plano", "seu per\xEDodo de acesso"][i])],
+  id: `v${i + 41}`,
+  assuntos: (c) => [nm(c, (c.pagamento?.renovacao ? ["renova\xE7\xE3o confirmada", "seu novo per\xEDodo est\xE1 confirmado", "pagamento da renova\xE7\xE3o aprovado", "confirma\xE7\xE3o da sua renova\xE7\xE3o", "seu acesso foi prolongado"] : ["pagamento aprovado", "sua assinatura foi confirmada", "seu acesso est\xE1 ativo", "confirma\xE7\xE3o do seu plano", "seu per\xEDodo de acesso"])[i])],
   corpo: (c) => [
-    c.um("Seu pagamento foi aprovado. Obrigado pela assinatura.", "A assinatura foi confirmada e seu acesso est\xE1 ativo. Obrigado pela confian\xE7a.", "O pagamento da sua assinatura foi aprovado."),
-    c.pagamento?.plano ? `O plano confirmado \xE9 o ${c.pagamento.plano}.` : null,
-    c.pagamento?.fimEm ? `O per\xEDodo de acesso vai at\xE9 ${dataCurta(c.pagamento.fimEm)}.` : null,
-    c.pagamento?.meio === "pix" ? "O per\xEDodo foi pago por Pix, sem renova\xE7\xE3o autom\xE1tica." : "Voc\xEA pode consultar o per\xEDodo e gerenciar a renova\xE7\xE3o em Minha assinatura.",
-    `Para consultar os detalhes do seu plano: ${c.link("conta")}`,
+    c.pagamento?.renovacao ? "O pagamento da renova\xE7\xE3o foi aprovado. Seu novo per\xEDodo de acesso est\xE1 confirmado. Obrigado por continuar estudando com o Orto Quest\xF5es." : c.um("Seu pagamento foi aprovado e a assinatura est\xE1 confirmada. Obrigado pela confian\xE7a!", "Sua assinatura foi confirmada. Obrigado por escolher o Orto Quest\xF5es para o seu estudo.", "O pagamento foi aprovado e seu acesso est\xE1 ativo. Obrigado pela assinatura!"),
+    planoPorExtenso(c.pagamento?.plano) ? `Plano confirmado: ${planoPorExtenso(c.pagamento?.plano)}.` : null,
+    dataCompleta(c.pagamento?.fimEm) ? `Seu acesso pago vai at\xE9 ${dataCompleta(c.pagamento?.fimEm)}.` : null,
+    c.pagamento?.meio === "pix" ? "O pagamento foi feito por Pix. N\xE3o h\xE1 renova\xE7\xE3o autom\xE1tica; os detalhes do per\xEDodo e as op\xE7\xF5es para prolongar ficam em Minha assinatura." : c.pagamento?.meio === "cartao" ? "O pagamento foi confirmado no cart\xE3o. Em Minha assinatura voc\xEA consulta o per\xEDodo, a renova\xE7\xE3o e os recibos." : "Em Minha assinatura voc\xEA consulta os detalhes do acesso, os pagamentos e os recibos.",
+    `Para consultar seu plano: ${c.link("conta")}`,
     ajuda(c)
   ]
 }));
 var encerramento = () => Array.from({ length: 5 }, (_, i) => ({
-  id: `v${i + 21}`,
-  assuntos: (c) => [nm(c, ["sobre a altera\xE7\xE3o na assinatura", "detalhes da sua assinatura", "confirma\xE7\xE3o da sua solicita\xE7\xE3o", "atualiza\xE7\xE3o do seu plano", "informa\xE7\xF5es da sua assinatura"][i])],
-  corpo: (c) => [
-    c.encerramento?.reembolso ? "Sua solicita\xE7\xE3o de reembolso foi registrada." : `O cancelamento da renova\xE7\xE3o foi registrado${dataCurta(c.encerramento?.fimEm) ? `, com acesso at\xE9 ${dataCurta(c.encerramento?.fimEm)}` : ""}.`,
-    acesso(c),
-    `Voc\xEA pode consultar os detalhes em Minha assinatura: ${c.link("conta")}`,
-    "Se houver alguma d\xFAvida sobre a solicita\xE7\xE3o, responda a este e-mail."
-  ]
+  id: `v${i + 41}`,
+  assuntos: (c) => [nm(c, (c.encerramento?.reembolso ? ["sobre o reembolso da assinatura", "atualiza\xE7\xE3o do seu reembolso", "reembolso registrado", "detalhes do reembolso", "sua assinatura e o reembolso"] : ["renova\xE7\xE3o autom\xE1tica desligada", "cancelamento confirmado", "sobre o fim do per\xEDodo pago", "atualiza\xE7\xE3o da assinatura", "detalhes do cancelamento"])[i])],
+  corpo: (c) => {
+    const fim = dataCompleta(c.encerramento?.fimEm);
+    const vigente = !!c.encerramento?.fimEm && Date.parse(c.encerramento.fimEm) > c.hoje.getTime();
+    return [
+      c.encerramento?.reembolso ? "O reembolso desta assinatura foi registrado, e o per\xEDodo de acesso pago foi encerrado." : vigente ? `A renova\xE7\xE3o autom\xE1tica foi desligada. Voc\xEA continua com o per\xEDodo pago at\xE9 ${fim}; essa renova\xE7\xE3o n\xE3o gerar\xE1 outro pagamento.` : fim ? `O cancelamento da assinatura foi confirmado. O per\xEDodo pago terminou em ${fim}.` : "O cancelamento da assinatura foi confirmado. Voc\xEA pode consultar o per\xEDodo e os detalhes na sua conta.",
+      acesso(c),
+      `Os detalhes ficam em Minha assinatura: ${c.link("conta")}`,
+      "Se precisar esclarecer alguma informa\xE7\xE3o sobre a solicita\xE7\xE3o, basta responder este e-mail."
+    ];
+  }
 }));
 var relatorio = () => Array.from({ length: 5 }, (_, i) => ({
-  id: `v${i + 21}`,
-  assuntos: (c) => [nm(c, ["seu resumo de estudo", "o estudo neste per\xEDodo", "seu hist\xF3rico no per\xEDodo", "suas sess\xF5es de estudo", "resumo das suas sess\xF5es"][i])],
+  id: `v${i + 41}`,
+  assuntos: (c) => [nm(c, [c.relatorio?.quinzena ? "seu resumo quinzenal" : "seu resumo mensal", "seu progresso e a pr\xF3xima revis\xE3o", "seu estudo neste per\xEDodo", "quest\xF5es, resultados e pr\xF3ximos passos", "uma sugest\xE3o para sua pr\xF3xima sess\xE3o"][i])],
   corpo: (c) => {
     const d = c.relatorio, n = d?.respostas ?? 0, total = (d?.certas ?? 0) + (d?.erradas ?? 0), pct = total ? Math.round((d?.certas ?? 0) / total * 100) : null;
     const citavel = n >= 30 && pct !== null && pct >= 50;
     const delta = citavel && d?.acertoAnterior !== null && d?.acertoAnterior !== void 0 ? pct - d.acertoAnterior : null;
+    const forte = d?.melhorArea && c.area(d.melhorArea.slug) && d.melhorArea.acerto >= 70 ? d.melhorArea : null;
+    const revisar = d?.maisFraco && c.area(d.maisFraco.slug) && d.maisFraco.slug !== forte?.slug ? d.maisFraco : null;
     return [
-      d?.rotulo ? `Este \xE9 seu resumo de estudo ${d.rotulo}.` : "Seu resumo de estudo est\xE1 dispon\xEDvel.",
-      n >= 10 ? `No per\xEDodo, voc\xEA respondeu ${Q(n)}.` : n > 0 ? "Seu hist\xF3rico registra novas respostas neste per\xEDodo." : "O hist\xF3rico e as anota\xE7\xF5es das sess\xF5es anteriores continuam dispon\xEDveis.",
-      citavel ? `O acerto no per\xEDodo foi de ${pct}%.${delta !== null && delta > 0 ? ` O resultado subiu ${delta} pontos em rela\xE7\xE3o ao per\xEDodo anterior.` : ""}` : null,
-      c.um("Voc\xEA pode consultar os temas estudados e as quest\xF5es indicadas para revis\xE3o.", "Os detalhes das sess\xF5es ajudam a escolher os pr\xF3ximos temas para revisar.", "O hist\xF3rico re\xFAne suas respostas e as revis\xF5es dos temas j\xE1 estudados."),
-      `Para consultar: ${c.link("desempenho")}`,
+      d?.rotulo ? `Separei seu resumo de estudo ${d.rotulo}, com uma sugest\xE3o para a pr\xF3xima sess\xE3o.` : "Seu resumo de estudo est\xE1 dispon\xEDvel, com uma sugest\xE3o para continuar.",
+      n >= 10 ? `Voc\xEA respondeu ${Q(n)} neste per\xEDodo${d?.diasAtivos && d.diasAtivos > 0 ? `, distribu\xEDdas em ${d.diasAtivos === 1 ? "um dia" : `${d.diasAtivos} dias`} de estudo` : ""}.` : n > 0 ? "Voc\xEA j\xE1 come\xE7ou a responder as quest\xF5es neste per\xEDodo. Continue praticando e lendo os coment\xE1rios." : "Seu hist\xF3rico e suas anota\xE7\xF5es continuam salvos. Para retomar, escolha um tema e experimente uma sess\xE3o de quest\xF5es comentadas.",
+      citavel ? `Sua taxa de acerto no per\xEDodo foi de ${pct}%.${delta !== null && delta > 0 ? ` O resultado subiu ${delta} pontos em rela\xE7\xE3o ao per\xEDodo anterior.` : " Continue praticando e revisando os coment\xE1rios para consolidar os temas."}` : n > 0 ? incentivo(c) : null,
+      citavel && forte ? `Seu ponto forte no per\xEDodo foi ${c.area(forte.slug).de}. Parab\xE9ns pelo estudo desse tema!` : null,
+      revisar ? `Para a pr\xF3xima sess\xE3o, minha sugest\xE3o \xE9 refor\xE7ar ${c.area(revisar.slug).de}, refazendo as quest\xF5es e consultando os coment\xE1rios.` : n > 0 ? "Para a pr\xF3xima sess\xE3o, vale retomar as quest\xF5es que trouxeram d\xFAvidas e ler a explica\xE7\xE3o de cada alternativa." : null,
+      d?.simulado && d.simulado.acertos >= 10 && d.simulado.total >= d.simulado.acertos && d.simulado.acertos * 2 >= d.simulado.total ? `Na edi\xE7\xE3o "${d.simulado.titulo}", voc\xEA acertou ${d.simulado.acertos} de ${d.simulado.total} quest\xF5es.` : null,
+      `Seu desempenho e os temas estudados: ${c.link("desempenho")}`,
       ajuda(c)
     ];
   }
@@ -354,7 +364,7 @@ function provaComArtigo(valor) {
   const nome = nomeProvaInformado(valor);
   return !nome ? "a sua prova" : /^(?:TEOT|TEPOT|TARO|ENARE)(?:\b|$)/i.test(nome) ? `o ${nome}` : `a prova de ${nome.replace(/^prova\s+(?:de\s+)?/i, "")}`;
 }
-var TIPOS_APOSENTADOS = ["obrigado_assinatura", "assinou_sem_cronograma"];
+var TIPOS_APOSENTADOS = ["obrigado_assinatura", "assinou_sem_cronograma", "primeiras_10", "voltou", "cronograma_pronto"];
 var TIPOS = {
   nunca_comecou: { grupo: "situacao", rotulo: "Criou a conta e n\xE3o come\xE7ou", descricao: "Conta criada h\xE1 pelo menos um dia e nenhuma quest\xE3o respondida." },
   boas_vindas: { grupo: "situacao", rotulo: "Boas-vindas", descricao: "Chegou nos \xFAltimos 3 dias e j\xE1 respondeu algumas quest\xF5es." },
@@ -376,9 +386,9 @@ var TIPOS = {
   pix_hoje: { grupo: "automatico", rotulo: "Pix: termina hoje", descricao: "O per\xEDodo de acesso pago no Pix termina hoje." },
   relatorio: { grupo: "automatico", rotulo: "Resumo de estudo", descricao: "Autom\xE1tico: a quinzena ou o m\xEAs contados como uma hist\xF3ria." },
   boas_vindas_dia0: { grupo: "automatico", rotulo: "Boas-vindas no dia da confirma\xE7\xE3o", descricao: "Primeiro login depois de confirmar o e-mail: boas-vindas, as fun\xE7\xF5es do site (quest\xF5es, Cronograma, resumos) e o pedido para contar aos colegas." },
-  primeiras_10: { grupo: "automatico", rotulo: "Primeiras 10 quest\xF5es", descricao: "Ao passar de 10 quest\xF5es: o h\xE1bito come\xE7ou." },
-  voltou: { grupo: "automatico", rotulo: "Retomada do estudo", descricao: "Primeiro login depois de 10 dias ou mais fora." },
-  cronograma_pronto: { grupo: "automatico", rotulo: "Cronograma pronto", descricao: "No dia em que a pessoa monta o plano at\xE9 a prova." },
+  primeiras_10: { grupo: "automatico", rotulo: "Primeiras 10 quest\xF5es", descricao: "Desativado pelo Tales em 17/11/2026. Hist\xF3rico preservado; nenhum novo envio." },
+  voltou: { grupo: "automatico", rotulo: "Retomada do estudo", descricao: "Desativado pelo Tales em 17/11/2026. Hist\xF3rico preservado; nenhum novo envio." },
+  cronograma_pronto: { grupo: "automatico", rotulo: "Cronograma pronto", descricao: "Desativado pelo Tales em 17/11/2026. Hist\xF3rico preservado; nenhum novo envio." },
   pagamento_aprovado: { grupo: "automatico", rotulo: "Obrigado pela assinatura", descricao: "Sai quando a assinatura ou a renova\xE7\xE3o \xE9 aprovada: agradecimento, plano, per\xEDodo, o que libera e o link do cronograma. Transacional." },
   obrigado_tempo: { grupo: "automatico", rotulo: "Obrigado pelo tempo de assinatura", descricao: "Confirma\xE7\xE3o da solicita\xE7\xE3o de cancelamento ou reembolso." },
   assinou_sem_cronograma: { grupo: "automatico", rotulo: "Assinou e n\xE3o montou o cronograma", descricao: "Aposentado: montar um cronograma \xE9 opcional." },
@@ -394,7 +404,7 @@ var TIPOS = {
   como_estao: { grupo: "situacao", rotulo: "Como est\xE3o os estudos? (risco de parar)", descricao: "Assinante que o painel marcou com risco moderado ou alto: pergunta da rotina, a Revis\xE3o e o cronograma que se ajusta; se o acesso estiver perto do fim, a conta dos dias somados." },
   simulado_lembrete: { grupo: "automatico", rotulo: "Lembrete do Simulado Nacional", descricao: "Para quem se inscreveu: a edi\xE7\xE3o abre amanh\xE3 (ou abriu hoje), quantas quest\xF5es, quanto tempo e at\xE9 quando d\xE1 para fazer." }
 };
-var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto", "pagamento_aprovado", "obrigado_tempo"];
+var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "pagamento_aprovado", "obrigado_tempo"];
 var TIPOS_CAMPANHAS_DIARIAS = ["assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema", "simulado_lembrete"];
 var TIPOS_TRANSACIONAIS = ["pix_hoje", "pagamento_aprovado", "obrigado_tempo", "relato_resolvido", "alerta_admin"];
 var ASSINATURA = "Um abra\xE7o,\nTales, do Orto Quest\xF5es";
@@ -836,7 +846,9 @@ function tipoCombina(tipo, p) {
     case "marco":
       return r >= 100;
     case "primeiras_10":
-      return r >= MINIMO_PARA_NUMERO;
+    case "voltou":
+    case "cronograma_pronto":
+      return false;
     case "boas_vindas":
     case "comecando":
     case "comecou_parou":
@@ -844,7 +856,6 @@ function tipoCombina(tipo, p) {
     case "sumiu":
     case "convite_20":
     case "convite_50":
-    case "voltou":
     case "assinante_parado_7":
       return r > 0;
     case "acesso_terminou":
@@ -1052,7 +1063,8 @@ function analisarMes(d) {
   const doMes = d.temas.filter((t) => t.total >= 5 && TEMAS[t.tema]).map((t) => ({ slug: t.tema, nome: TEMAS[t.tema], acerto: pctDe(t.certas, t.total), total: t.total }));
   const maisFraco = [...doMes].sort((a, b) => a.acerto - b.acerto)[0] ?? null;
   const maisEstudados = [...doMes].sort((a, b) => b.total - a.total).slice(0, 3);
-  return { acerto, acertoAnterior, subiram, cairam, maisFraco, maisEstudados };
+  const melhorArea = [...doMes].filter((t) => t.total >= 15 && t.acerto >= 70).sort((a, b) => b.acerto - a.acerto || b.total - a.total)[0] ?? null;
+  return { acerto, acertoAnterior, subiram, cairam, maisFraco, maisEstudados, melhorArea };
 }
 function emailLembrete(d) {
   const tipo = { nunca: "nunca_comecou", tres_dias: "pausa", sete_dias: "sumiu", renovacao_pix: "pix_3_dias", renovacao_pix_hoje: "pix_hoje" }[d.campanha];
@@ -1093,6 +1105,7 @@ function emailRelatorio(d) {
     totalAcumulado: Number(d.total_acumulado) || 0,
     subiram: a.subiram.map((t) => ({ slug: t.slug, antes: t.antes, agora: t.agora })),
     cairam: a.cairam.map((t) => ({ slug: t.slug, antes: t.antes, agora: t.agora })),
+    melhorArea: a.melhorArea,
     maisFraco: a.maisFraco ? { slug: a.maisFraco.slug, acerto: a.maisFraco.acerto } : null,
     simulado: d.simulado
   };
@@ -1635,6 +1648,10 @@ async function processar() {
     const m = item.mensagem;
     let reservado = false, aceito = false;
     try {
+      if (TIPOS_APOSENTADOS.includes(m.tipo)) {
+        await gravar(`email_fila?id=eq.${item.id}`, { status: "adiado", motivo: "Tipo de e-mail desativado", atualizado_em: (/* @__PURE__ */ new Date()).toISOString() });
+        continue;
+      }
       const textoAntigo = problemaDeTomCarta(m.assunto + "\n" + m.corpo);
       if (textoAntigo) {
         await gravar(`email_fila?id=eq.${item.id}`, { status: "adiado", motivo: textoAntigo, atualizado_em: (/* @__PURE__ */ new Date()).toISOString() });

@@ -385,6 +385,10 @@ async function processar() {
     let reservado = false,
       aceito = false
     try {
+      if (TIPOS_APOSENTADOS.includes(m.tipo)) {
+        await gravar(`email_fila?id=eq.${item.id}`, { status: 'adiado', motivo: 'Tipo de e-mail desativado', atualizado_em: new Date().toISOString() })
+        continue
+      }
       const textoAntigo = problemaDeTomCarta(m.assunto + '\n' + m.corpo)
       if (textoAntigo) {
         await gravar(`email_fila?id=eq.${item.id}`, { status: 'adiado', motivo: textoAntigo, atualizado_em: new Date().toISOString() })

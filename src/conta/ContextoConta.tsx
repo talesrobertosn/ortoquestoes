@@ -45,9 +45,6 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
   // confirmação" sai no primeiro login depois dele (emailsAutomaticos), assim que a sessão existir.
   // Estado (e não ref): o efeito abaixo precisa rodar de novo quando a confirmação chega depois da sessão.
   const [confirmouAgora, definirConfirmouAgora] = useState(false)
-  // Quando esta sessão começou e para quem já conferimos a volta (uma vez por conta e sessão).
-  const inicioSessao = useRef(Date.now())
-  const retornoConferido = useRef<string | null>(null)
   useEffect(() => {
     if (!supabase) { definirUsuarioLocal(null); return }
     let ativo = true
@@ -139,12 +136,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
     // consulta) pesava ~60 KB no código inicial só para esta checagem.
     void import('./emailsMarco').then(({ verificarMarcoEmail }) => verificarMarcoEmail(respondidas)).catch(() => undefined)
     void conferirMinhaIndicacao(sessao.user.id, respondidas)
-    // "Que bom te ver de volta": uma vez por conta e sessão, com o progresso já sincronizado
-    // (a última resposta pode ter sido em outro aparelho). Nenhum erro de e-mail sobe daqui.
-    if (retornoConferido.current !== sessao.user.id) {
-      retornoConferido.current = sessao.user.id
-      void import('./emailsAutomaticos').then(({ conferirRetorno }) => conferirRetorno(mapa, inicioSessao.current)).catch(() => undefined)
-    }
+
   }, [sessao?.user.id, status.estado, status.pendentes])
   // Chegou pelo link de confirmação e a sessão entrou: boas-vindas no dia da confirmação (uma vez; o servidor também confere).
   useEffect(() => {

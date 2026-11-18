@@ -132,3 +132,19 @@ desfazer. A migração 20261115191349 adiciona os RPCs protegidos para leitura e
 
 Todos os modelos seguem o TOM.md atual: sem P.S., pressão por retorno ou compra e intimidade
 forçada. Variações mudam o texto, sem reiniciar a frequência de contato.
+
+## Disparos de 17/11/2026
+
+O catálogo deixou de apresentar os cenários do hub como agendamentos diários. Pix, retomada,
+prova, indicação, aniversário e demais campanhas continuam manuais. Primeiras dez questões,
+volta e cronograma pronto foram retirados inclusive da fila e das chamadas de abas antigas.
+
+A autenticação antiga dos relatórios estava sendo recusada (403). Cada agendamento agora tem
+credencial própria, gerada no banco e limitada à sua ação pelo RPC `email_autenticar_relatorio`,
+exclusivo do servidor. Não depende de copiar o segredo das Edge Functions. O modo `simular`
+consulta elegíveis sem reservar envios nem chamar o provedor. Mensal continua no dia 1;
+quinzenal nos dias 1 e 16. Nenhuma campanha adicional foi agendada.
+
+Os dois agendamentos usam timeout de transporte de 60 segundos (o processamento permanece
+limitado a 40 segundos), evitando o antigo timeout de 5 segundos antes de terminar a conexão.
+Simulações em produção confirmaram HTTP 200 para ambos, sem reserva nem envio de e-mails.

@@ -69,6 +69,11 @@ Deno.serve(async (req) => {
       return json({ erro: 'Não encontramos um plano vigente para ampliar. Atualize a página.' }, 409, req)
     }
 
+    const reserva = await banco('rpc/inicio_proximo_periodo', { method: 'POST', body: JSON.stringify({p_usuario:usuario.id}) })
+    if (!reserva.ok) throw new Error('consulta_periodo_preservado_falhou')
+    const preservado = await reserva.json() as string | null
+    if (preservado && Date.parse(preservado)>Date.now()+60_000 && (!inicioCobranca||Date.parse(preservado)>Date.parse(inicioCobranca))) inicioCobranca=preservado
+
     const centavos = await centavosPara(usuario.id, plano)
     const aceite = await banco('aceites_assinatura', {
       method: 'POST',

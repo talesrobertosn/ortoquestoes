@@ -26,6 +26,7 @@ import {
 } from '../dados/vendas'
 import { CartoesPlanos } from '../componentes/vendas/CartoesPlanos'
 import { AmpliarPlano } from '../componentes/AmpliarPlano'
+import { usarResumoAcesso, dadosCortesia } from '../conta/resumoAcesso'
 import { ContaDias } from '../componentes/ContaDias'
 import { dias, diasEntre, duracao } from '../conta/dias'
 import { PreviaCronograma } from '../componentes/vendas/PreviaCronograma'
@@ -66,6 +67,8 @@ function proximoTeot(): { dias: number; data: string } | null {
 export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao } = usarConta()
   // Quem já assinava antes do reajuste vê (e paga) o preço antigo do plano que pagava.
+  const { resumo: resumoAcesso } = usarResumoAcesso(sessao?.user.id)
+  const cortesiaAtual = dadosCortesia(resumoAcesso)
   const { guardados: precosGuardados, planosAntigos, carregado: precoCarregado } = usarPrecoAntigo(sessao)
   const { mensal: PLANO_MENSAL, semestral: PLANO_SEMESTRAL, anual: PLANO_ANUAL, pipoca: PLANOS_PIPOCA } = planosDaPessoa(planosAntigos)
   const avisoPrecoGuardado = pagamentosHabilitados && precosGuardados.length > 0 && <AvisoPrecoGuardado guardados={precosGuardados} planos={PLANOS_PIPOCA} />
@@ -197,6 +200,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
       })
       const r = await pedir(VERSAO_CONDICOES_ASSINATURA)
       // Ampliando, a primeira cobrança precisa ficar para o fim do período pago; sem isso, não segue.
+      if (cortesiaAtual.ativa&&!cortesiaAtual.semPrazo&&fimPreservado&&(!r.inicio_cobranca||Date.parse(r.inicio_cobranca)<fimPreservado-60_000)) { definirMensagem('Atualize a página para preservar os dias de cortesia antes de abrir o pagamento.'); definirAbrindoCheckout(false); return }
       if (ampliando && !r.inicio_cobranca) {
         definirMensagem('A ampliação pelo cartão ainda está sendo ativada. Tente de novo em alguns minutos ou fale com o suporte.')
         definirAbrindoCheckout(false)
@@ -232,6 +236,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const periodoPix = usarPeriodoPix(sessao?.user.id, metricas?.fim_periodo)
   const ehPix = periodoPix ? periodoPix.pix : Boolean(metricas?.cancelar_ao_fim)
   const fimAtual = periodoPix?.fim ?? (metricas?.fim_periodo ? Date.parse(metricas.fim_periodo) : NaN)
+  const fimPreservado = Math.max(Number.isFinite(fimAtual)&&fimAtual>Date.now()?fimAtual:0,cortesiaAtual.ativa&&!cortesiaAtual.semPrazo?cortesiaAtual.fim??0:0)||null
   const renovarPix = pixHabilitado && ativa && ehPix && Number.isFinite(fimAtual) && fimAtual - Date.now() <= 7 * 864e5
   const diasRestantes = renovarPix ? Math.max(1, Math.ceil((fimAtual - Date.now()) / 864e5)) : 0
   const fimAtualTexto = renovarPix ? new Date(fimAtual).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) : ''
@@ -519,11 +524,12 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
                     ? `Primeira cobrança só em ${fimAmpliarTexto}, quando o seu plano ${planoAtual?.nome.toLowerCase() ?? 'atual'} termina${ehPix ? '' : ', e a renovação dele é desligada sozinha'}. Depois renova a cada ${planoEscolhido.meses} meses; desliga com um botão quando quiser.`
                     : renovarPix
                     ? `Primeira cobrança só em ${fimAtualTexto}, quando o Pix termina. Depois renova sozinho a cada ${planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}; desliga com um botão quando quiser.`
-                    : `Renovação automática a cada ${planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}. Desliga com um botão quando quiser.`}</small></span>
+                    : cortesiaAtual.ativa&&!cortesiaAtual.semPrazo&&fimPreservado ? `Primeira cobrança após o acesso que você já tem, em ${new Date(fimPreservado).toLocaleDateString('pt-BR')}. Depois, renovação automática a cada ${planoEscolhido.meses===1?'mês':`${planoEscolhido.meses} meses`}.` : `Renovação automática a cada ${planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}. Desliga com um botão quando quiser.`}</small></span>
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
                 </label>
               </fieldset>
-              <div className="ck__dias"><ContaDias fimAtual={ampliando || renovarPix ? fimAtual : null} meses={planoEscolhido.meses} compacta /></div>
+              {cortesiaAtual.ativa&&!cortesiaAtual.semPrazo&&<p className="ck__renovacao">Sua cortesia até {cortesiaAtual.fim?new Date(cortesiaAtual.fim).toLocaleDateString('pt-BR'):''} continua valendo. O novo período será acrescentado depois do acesso que você já tem.</p>}
+              <div className="ck__dias"><ContaDias fimAtual={fimPreservado} meses={planoEscolhido.meses} compacta /></div>
               {ampliando && meioPagamento === 'pix' && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Ampliação: os dias que você já tem continuam valendo. O novo período de {planoEscolhido.meses} meses começa em {fimAmpliarTexto}, quando o atual termina.</p>}
               {renovarPix && meioPagamento === 'pix' && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Renovação antecipada: os {diasRestantes} {diasRestantes === 1 ? 'dia que falta' : 'dias que faltam'} continuam valendo. O novo período de {planoEscolhido.meses === 1 ? '1 mês' : `${planoEscolhido.meses} meses`} começa em {fimAtualTexto}, quando o atual termina.</p>}
               {meioPagamento === 'pix' && <label className="campo ck__cpf"><span>CPF de quem vai pagar</span><input inputMode="numeric" autoComplete="off" maxLength={14} placeholder="000.000.000-00" value={cpf} aria-invalid={cpfInvalido} aria-describedby="ck-cpf-ajuda" onChange={evento => { definirCpf(evento.target.value); definirMensagem(null) }} />
