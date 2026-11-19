@@ -41,7 +41,7 @@ alerta: No ENARE R4 2025 (ombro-cotovelo-0539), o gabarito oficial foi a alterna
 
 O **complexo colateral lateral** tem três componentes: o **colateral radial**, o **ligamento anular** e o **colateral ulnar lateral**. Juntos, são o principal estabilizador contra o **varo** e contra a **rotação posterolateral**. O anular abraça a cabeça do rádio e se prende nas bordas anterior e posterior da incisura radial da ulna; o colateral radial nasce no epicôndilo lateral e se mistura ao anular; o **colateral ulnar lateral** passa por trás do colateral radial e se insere na **crista do supinador** da ulna, logo abaixo do anular. É ele que falha na instabilidade posterolateral.
 
-!questoes central=ombro-cotovelo-0451,ombro-cotovelo-0064,ombro-cotovelo-0249 relacionadas=ombro-cotovelo-0498 treino=ombro-cotovelo-0669
+!questoes central=ombro-cotovelo-0451,ombro-cotovelo-0064,ombro-cotovelo-0249 relacionadas=ombro-cotovelo-0498 treino=ombro-cotovelo-0669,ombro-cotovelo-0740
 conceito: O colateral ulnar lateral vai do epicôndilo lateral à crista do supinador e é a banda que falha na instabilidade rotatória posterolateral.
 como: As três questões mostram imagem da face lateral: duas pedem o nome da estrutura apontada (o colateral ulnar lateral), a outra pede qual banda insuficiente explica a subluxação posterolateral da figura.
 armadilha: Colateral radial: está no mesmo complexo, mas não chega à ulna e não segura a rotação.
@@ -174,7 +174,7 @@ A reabilitação depende do que ficou lesado: com o **medial íntegro e o latera
 
 Quando o colateral lateral não cicatriza, o cotovelo fica com **instabilidade rotatória posterolateral**: rádio e ulna giram juntos em supinação sobre o úmero e a cabeça do rádio subluxa para trás do capítulo. Depois de uma luxação traumática, quando a instabilidade persiste ou recorre, as **estruturas posterolaterais são as mais acometidas**, embora o lado medial também possa estar envolvido (Campbell, 15ª ed., cap. 52, p. 2229). O mesmo trecho lembra que, contando todas as causas, a forma de longe mais comum de instabilidade recorrente do cotovelo é a **instabilidade em valgo por desgaste do feixe anterior do colateral medial**, a do arremessador. O capítulo 40 do Rockwood cita a posterolateral como consequência de uma luxação com cura deficiente do colateral lateral e de fraturas da cabeça do rádio. A reconstrução do colateral lateral com **enxerto de tendão** é preferida, e funciona melhor quando há uma cabeça do rádio (nativa ou prótese) para tensionar o enxerto.
 
-!questoes central=ombro-cotovelo-0096,ombro-cotovelo-0536 relacionadas=ombro-cotovelo-0382,ombro-cotovelo-0513 treino=ombro-cotovelo-0650
+!questoes central=ombro-cotovelo-0096,ombro-cotovelo-0536 relacionadas=ombro-cotovelo-0382,ombro-cotovelo-0513 treino=ombro-cotovelo-0650,ombro-cotovelo-0742
 conceito: Depois da luxação traumática, a instabilidade crônica mais comum é a posterolateral, por insuficiência do colateral ulnar lateral; ela aparece com carga axial, valgo e supinação.
 como: O ENARE R4 2025 contou a história típica (luxação imobilizada 6 semanas, instabilidade residual) e pediu a manobra: carga axial com valgo e rotação externa (supinação).
 armadilha: Varo e supinação: mistura o mecanismo posteromedial (varo) com a supinação.

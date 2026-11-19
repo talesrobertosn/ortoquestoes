@@ -202,7 +202,7 @@ O HEBERT (cap. 48) descreve o pivot shift como **supinação, valgo e flexão**,
 
 A coerência ajuda a lembrar: **subluxa em extensão e supinação, reduz com flexão e pronação**.
 
-!questoes relacionadas=ombro-cotovelo-0382
+!questoes relacionadas=ombro-cotovelo-0382 treino=ombro-cotovelo-0741
 conceito: A manobra da instabilidade posterolateral rotatória (pivot shift de O'DRISCOLL) combina carga axial, estresse em valgo e antebraço supinado, levando o cotovelo da extensão para a flexão.
 como: O TARO 2020 e a SBOT-SP perguntaram com o mesmo enunciado qual é a manobra; as alternativas trocam carga axial por torcional, valgo por varo e supinado por pronado.
 armadilha: Pronação: o antebraço pronado estabiliza o cotovelo com colateral lateral deficiente e apaga o teste; a supinação é que desestabiliza.
@@ -212,7 +212,7 @@ armadilha: Pronação: o antebraço pronado estabiliza o cotovelo com colateral 
 
 A intuição manda testar o lado lateral em varo, mas para a instabilidade **rotatória** os livros pedem **valgo**: somado à supinação e à carga axial, ele reproduz o vetor da queda e empurra a cabeça do rádio para trás do capítulo (HEBERT, cap. 48; Campbell, cap. 52). O **varo** puro serve para outra coisa: com o cotovelo **estendido**, a **abertura radiocapitelar** confirma instabilidade lateral (Green, cap. 23, p. 831).
 
-!questoes central=ombro-cotovelo-0536
+!questoes central=ombro-cotovelo-0536 treino=ombro-cotovelo-0743
 conceito: A instabilidade posterolateral é diagnosticada com carga axial, valgo e supinação do antebraço (rotação externa do antebraço em relação ao úmero), que é o próprio mecanismo da luxação descrito por O'DRISCOLL.
 como: O ENARE R4 Ortopedia 2025 contou a história típica (luxação reduzida, órtese por 6 semanas, instabilidade residual) e pediu a posição do cotovelo durante a força axial.
 armadilha: Varo: é o estresse do colateral lateral em extensão, não a manobra rotatória; o pivot shift lateral é feito em valgo.
