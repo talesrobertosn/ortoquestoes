@@ -20,7 +20,7 @@ export function haQuanto(instante: number, agora = Date.now()): string {
  * aparelhos já fizeram. Só aparece para quem está na conta.
  */
 export function IndicadorSincronia({ preparando = false }: { preparando?: boolean }) {
-  const { sessao, status, sincronizar } = usarConta()
+  const { sessao, status, sincronizar, reenviarRejeitados } = usarConta()
   const [, tique] = useState(0)
   useEffect(() => {
     const t = window.setInterval(() => tique((n) => n + 1), 30_000)
@@ -29,12 +29,13 @@ export function IndicadorSincronia({ preparando = false }: { preparando?: boolea
   if (!sessao) return null
   const pendentes = status.pendentes
   const aguardando = pendentes > 0 ? ` · ${pendentes} ${pendentes === 1 ? 'alteração aguardando envio' : 'alterações aguardando envio'}` : ''
+  const podeReenviar = !preparando && status.estado !== 'offline' && status.estado !== 'sincronizando' && status.rejeitados.length > 0
   let texto: string
   let estado = status.estado
   if (preparando) { texto = 'Trazendo o que você fez nos outros aparelhos…'; estado = 'sincronizando' }
   else if (status.estado === 'offline') texto = `Sem conexão: o que você fizer fica guardado aqui${aguardando}`
+  else if (podeReenviar) { texto = 'Há alterações que não puderam ser sincronizadas. Veja os detalhes na sua conta.'; estado = 'erro' }
   else if (status.estado === 'erro') texto = `Não deu para sincronizar agora; tentando de novo${aguardando}`
-  else if (status.rejeitados.length) { texto = 'Há alterações que não puderam ser sincronizadas. Veja os detalhes na sua conta.'; estado = 'erro' }
   else if (status.semServidor?.length) { texto = `Parte do progresso aguarda atualização do serviço${aguardando}`; estado = 'erro' }
   else if (status.estado === 'sincronizando' || !status.pronto) texto = 'Sincronizando…'
   else if (status.ultimaSincronia) texto = `Sincronizado ${haQuanto(status.ultimaSincronia)}${aguardando}`
@@ -43,7 +44,12 @@ export function IndicadorSincronia({ preparando = false }: { preparando?: boolea
     <p className="indicador-sincronia" role="status" aria-live="polite">
       <span className={`ponto-sincronia ponto-sincronia--${estado}`} aria-hidden="true" />
       <span>{texto}</span>
-      {(status.estado === 'erro' || status.estado === 'offline') && !preparando && (
+      {podeReenviar && (
+        <span className="indicador-sincronia__acao">
+          <button type="button" className="botao" onClick={reenviarRejeitados}>Tentar enviar de novo</button>
+        </span>
+      )}
+      {!podeReenviar && (status.estado === 'erro' || status.estado === 'offline') && !preparando && (
         <button type="button" className="botao--vinculo" onClick={sincronizar}>Tentar agora</button>
       )}
     </p>
