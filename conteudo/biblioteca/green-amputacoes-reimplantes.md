@@ -1,6 +1,6 @@
 ---
 id: green-amputacoes-reimplantes
-versao: 4
+versao: 5
 titulo: Amputações e reimplantes na mão
 especialidade: mao
 acesso: gratis
@@ -8,18 +8,18 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017)
 capitulo: Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)
 autores: James P. Higgins
-fonte: Livros conferidos localmente em 03/11/2026 e 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 42 (Replantation, págs. 1476 a 1484, lido inteiro, com a lista de referências das págs. 1484 e 1485), cap. 43 (Mangled Upper Extremity, págs. 1486 a 1490: objetivos, lesão de reperfusão, no-reflow e avaliação da perfusão do dedo), cap. 45 (págs. 1581 a 1584), cap. 47 (Toe-to-Hand Transplantation, págs. 1645 a 1668), cap. 48 (Thumb Reconstruction, págs. 1676 a 1681 e 1695 a 1705), cap. 49 (Digital Amputations, de Sanjeev Kakar, págs. 1708 a 1752, relido em 19/11/2026 para ampliar as seções de amputação) e cap. 50 (caso clínico); Campbell's Operative Orthopaedics, 15ª ed., cap. 20 (págs. 729 a 732), cap. 21 (Amputations of the Hand, págs. 748 a 778) e cap. 68 (Microsurgery, págs. 3024 a 3045, fonte da técnica microvascular, que o Green 7 deixou num capítulo só on-line); Rockwood and Green's Fractures in Adults, 10ª ed. (tabagismo). Estudos citados pelo nome conforme a lista de referências do cap. 42 do Green.
+fonte: Livros conferidos localmente em 03/11/2026 e 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 42 (Replantation, págs. 1476 a 1484, lido inteiro, com a lista de referências das págs. 1484 e 1485), cap. 43 (Mangled Upper Extremity, págs. 1486 a 1490: objetivos, lesão de reperfusão, no-reflow e avaliação da perfusão do dedo), cap. 45 (págs. 1581 a 1584), cap. 47 (Toe-to-Hand Transplantation, págs. 1645 a 1668), cap. 48 (Thumb Reconstruction, págs. 1676 a 1681 e 1695 a 1705), cap. 49 (Digital Amputations, de Sanjeev Kakar, págs. 1708 a 1752, relido em 19/11/2026 para ampliar as seções de amputação) cap. 50 (Major Limb Amputations and Prosthetics, de Diaz-Garcia e Cederna, págs. 1753 a 1762, lido inteiro em 19/11/2026 para as amputações maiores e as próteses) e cap. 38 (deficiência transversa, pág. 1346: KRUKENBERG); Campbell's Operative Orthopaedics, 15ª ed., cap. 20 (págs. 729 a 732), cap. 20 (amputações maiores do membro superior, págs. 729 a 739, para comparar) e cap. 21 (Amputations of the Hand, págs. 748 a 778, com o KRUKENBERG nas págs. 769 e 770) e cap. 68 (Microsurgery, págs. 3024 a 3045, fonte da técnica microvascular, que o Green 7 deixou num capítulo só on-line); Rockwood and Green's Fractures in Adults, 10ª ed. (tabagismo). Estudos citados pelo nome conforme a lista de referências do cap. 42 do Green.
 subtemas: Amputações e reimplantes
-resumo: Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.
+resumo: Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação; amputações maiores: trauma é a causa principal, cinco princípios, transradial 8 a 10 cm do estiloide ulnar com mais opções, 5 cm de ulna bastam, preservar o cotovelo, sem cotovelo transumeral 10 cm acima do olécrano exceto na criança (supercrescimento), MALONE 30 dias, BIDDISS 6 meses e 16 vezes, força corporal a mais prescrita, mioelétrica no transradial, híbrida nos proximais, TMR como amplificador biológico, KRUKENBERG separa rádio e ulna no cego bilateral.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 42 (Replantation, de James P. HIGGINS) do Green's Operative Hand Surgery, 7ª edição (2017), completado pelo capítulo 49 (Digital Amputations) e por trechos dos capítulos 43, 45, 47, 48 e 50, pelos capítulos 20, 21 e 68 do Campbell's Operative Orthopaedics, 15ª edição, e pelo Rockwood and Green's Fractures in Adults, 10ª edição. As páginas citadas do Green são as impressas.
+Este resumo segue o capítulo 42 (Replantation, de James P. HIGGINS) do Green's Operative Hand Surgery, 7ª edição (2017), completado pelo capítulo 49 (Digital Amputations), por trechos dos capítulos 43, 45, 47 e 48, pelo capítulo 50 (Major Limb Amputations and Prosthetics) nas amputações maiores e nas próteses, pelo capítulo 38 no KRUKENBERG, pelos capítulos 20, 21 e 68 do Campbell's Operative Orthopaedics, 15ª edição, e pelo Rockwood and Green's Fractures in Adults, 10ª edição. As páginas citadas do Green são as impressas.
 
 O capítulo 42 é curto (nove páginas de texto), mas denso, e tem uma lacuna que o aluno precisa conhecer: a técnica da anastomose microvascular propriamente dita (clamp, fio, número de pontos, ordem de soltar os clamps) não está no livro impresso. O Green 7 manda o leitor para um capítulo clássico de princípios de microcirurgia que ficou só na versão on-line (cap. 45, p. 1581). Como as provas de Cirurgia da Mão cobram esses números há duas décadas, a técnica aqui vem do capítulo 68 (Microsurgery) do Campbell, e a lesão de reperfusão e a avaliação da perfusão do dedo vêm do capítulo 43 do próprio Green (Mangled Upper Extremity).
 
-O tema tem duas metades. O **reimplante**: quem merece a tentativa, como conservar a parte, a ordem dos reparos, a microcirurgia e a vigilância. A **amputação** como tratamento: ponta do dedo, níveis, raios, polegar não reimplantado, punho. O próprio Green avisa que reimplantar pode ser **mais triunfo técnico que benefício** ao paciente (cap. 49, p. 1708), e essa frase é a melhor porta de entrada para as duas metades: o objetivo nunca é um dedo vivo, é uma mão que funcione.
+O tema tem duas metades. O **reimplante**: quem merece a tentativa, como conservar a parte, a ordem dos reparos, a microcirurgia e a vigilância. A **amputação** como tratamento: ponta do dedo, níveis, raios, polegar não reimplantado, e as amputações maiores do punho ao ombro, com as próteses, a TMR e o KRUKENBERG. O próprio Green avisa que reimplantar pode ser **mais triunfo técnico que benefício** ao paciente (cap. 49, p. 1708), e essa frase é a melhor porta de entrada para as duas metades: o objetivo nunca é um dedo vivo, é uma mão que funcione.
 
 ## As quatro ideias que explicam o resto
 
@@ -1504,23 +1504,313 @@ O capítulo fecha com seis princípios para um bom resultado: manejo inicial cor
 
 > **Na prova:** dedo único **distal à IFP** é ótima indicação, proximal vai para **amputação do raio**; preservar comprimento, **não ressecar o nervo** proximal e cobrir com **retalho inguinal**; primária com sobrevida igual (**96,9% e 96,5%**), **30% menos convalescença** e estética **pior**; poupar **1 cm** da base da falange proximal do hálux; par de dedos do **pé esquerdo**; mão metacarpal **I** (polegar até a IF) e **II** (polegar proximal à IF), **IB** articulação composta, **IC** transmetatarsal, **IIC** polegar depois com poste; congênito ideal = **banda de constrição**, esperar cerca de **2 anos**, crescimento **60 a 100%**; FDMA **70%**, FPMA **20%**, iguais **10%**, assimetria **20%**; dissecção **retrógrada** sobre o **ligamento intermetatarsal**, sem angiografia; calibres iguais, **dorsal**; hálux total na **falange proximal ou metacarpo**, MORRISON **sem IF móvel**, aparado perde **18 graus**; hemipolpa com **dois nervos**; extensor tipo **I atenuado** e **II distinto**; órtese em extensão por **1 ano**; amarrilho intraósseo com **1,5%** de pseudartrose; **vasoespasmo** nos 3 primeiros dias, reexplorar em **1 hora**; **tenólise 6,8%**; AAS **325 mg** por 2 semanas; sucesso **98%**; pinça **75%**; dedo percebido como dedo em **6 meses**.
 
+# Amputações maiores: quem perde o membro e os cinco princípios {radar=fundamento}
+
+## Por que o membro superior é diferente
+
+Até aqui o resumo tratou do dedo e da mão. O capítulo 50 do Green (Major Limb Amputations and Prosthetics, de Rafael J. DIAZ-GARCIA e Paul S. CEDERNA) sobe para o punho, o antebraço, o cotovelo, o braço e a cintura escapular. As amputações maiores são minoria: chegam a **25%** de todas as amputações do membro superior, porque perder dedos é muito mais comum (Green's Operative Hand Surgery, 7ª ed., cap. 50, p. 1753). Ainda assim, nos Estados Unidos de 2005 havia cerca de **41 mil** pessoas vivendo com amputação transradial, e a prevalência sobe por dois motivos que parecem bons e ruins ao mesmo tempo: o trauma e a terapia intensiva salvam pacientes que antes morriam, e a população envelhece com diabetes e doença vascular.
+
+A diferença que mais importa para a prova está na **causa**. No membro inferior, a amputação é sobretudo doença vascular e diabetes; no membro superior, a **maioria vem de trauma agudo**, e em séries escandinavas o trauma responde por até **90%** dos casos (p. 1753). Isso muda tudo: o paciente típico é jovem, trabalhador, operado na urgência, sem tempo para planejar, e com décadas de vida pela frente com a prótese. O impacto social é grande: até **um terço** muda de profissão e quase **dois terços** deixam vocações e atividades de lazer (33% e 58%, p. 1757).
+
+## Quando amputar é a melhor decisão
+
+O Green é direto: amputa-se logo quando a função do membro salvo seria **muito pior** que a de uma prótese. A tentação de salvar a qualquer custo existe, mas tentativas repetidas de reconstruir um membro com dano neurovascular irreconstruível ou esqueleto destruído podem prejudicar o paciente: mais cirurgias, mais internação, mais dor, e no fim um membro insensível e rígido que atrapalha mais do que ajuda (p. 1753). É a mesma lógica do reimplante, vista do outro lado: o objetivo é a função, não a anatomia.
+
+As outras causas têm números próprios (p. 1753):
+
+- **Queimadura elétrica**: até **26%** acabam em alguma amputação maior. A corrente segue os tecidos de menor resistência (nervo, vaso, músculo) e lesa a profundidade muito mais que a pele sugere; o músculo necrótico perto do osso explica por que tantos membros se perdem dias depois.
+- **Queimadura térmica profunda**: cerca de **3,8%**, por tecido inviável ou sepse.
+- **Infecção**: a **mucormicose** quase sempre exige amputação, e a mortalidade chega a **92%**. O fungo invade a parede dos vasos e provoca trombose e necrose em avanço; sem ressecção radical do tecido morto, o antifúngico não alcança o foco.
+- **Tumor**: radioterapia, quimioterapia e cirurgia de salvamento reduziram a amputação nas últimas quatro décadas, mas a amputação radical ainda serve para a recidiva e para o tumor grande que não se ressecaria com margem.
+
+## Os cinco princípios técnicos
+
+Qualquer que seja o nível, o Green resume a cirurgia em cinco princípios (p. 1753), e cada um tem um porquê:
+
+1. **Preservar o comprimento funcional.** Cada centímetro de osso é braço de alavanca para mover a prótese e superfície para suspendê-la. O cuidado é a palavra "funcional": comprimento demais também atrapalha, como se verá na desarticulação do punho e do cotovelo.
+2. **Cobertura durável.** O coto vai passar o dia dentro de um encaixe rígido, recebendo pressão e cisalhamento. Pele fina ou cicatriz aderida ao osso ulcera; músculo preso ao osso por miodese dá coxim estável.
+3. **Prevenir o neuroma sintomático.** Todo nervo cortado faz neuroma; o que se evita é deixá-lo onde o encaixe aperta. Por isso o nervo é dissecado e cortado proximal à osteotomia, para retrair para dentro de tecido acolchoado.
+4. **Prevenir a contratura** das articulações vizinhas. Um cotovelo que perdeu a extensão ou um ombro rígido inviabilizam a prótese, por melhor que seja o coto. O movimento começa cedo.
+5. **Protetizar cedo**, no "período de ouro". É o princípio que mais pesa no resultado e tem seção própria adiante.
+
+> **Na prova:** amputações maiores = até **25%** das do membro superior; causa principal = **trauma** (até 90% na Escandinávia), ao contrário do membro inferior; queimadura elétrica até **26%**; mucormicose com mortalidade até **92%**; cinco princípios: **comprimento, cobertura, neuroma, contratura e protetização precoce**.
+
 # Punho e antebraço {radar=confirmado}
 
-A transcárpica e a **desarticulação do punho** preservam a **radioulnar distal** e a fibrocartilagem triangular, mantendo a rotação (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1737). O Campbell (cap. 20, p. 730) diz que **só 50%** da pronação e da supinação chegam à prótese, mas valem o esforço. A prótese é mais difícil e é usada por 54% dos desarticulados, contra 94% abaixo do cotovelo (Green, p. 1737). No caso clínico do capítulo 50, a **transradial** oferece **mais opções protéticas**, com nível ideal **8 a 10 cm proximal aos estiloides**; o Campbell (p. 731 e 732) mantém dois terços do antebraço e prefere 5 cm de ulna a perder o cotovelo. Na técnica da desarticulação, retalho palmar longo e dorsal curto (2:1), estiloides arredondados para não causar necrose por pressão, nervos tracionados e cortados para retraírem, e tendões fixados ao rádio em tensão fisiológica, que podem comandar uma prótese mioelétrica ou servir a um futuro transplante (Green, p. 1737). LOUIS faz ligadura dupla dos nervos no antebraço proximal, para que o neuroma fique em continuidade sob os músculos, e o alargamento metafisário distal do rádio ajuda a suspender a prótese; os ligamentos da radioulnar distal e a fibrocartilagem triangular são protegidos. A prótese deve ser adaptada em até 30 dias; cerca de 50% a abandonam em 5 anos, e a dor fantasma passa de 50%, raramente impedindo o uso (Campbell, p. 730).
+## O nível ideal na perda da mão: uma discussão sem vencedor
 
-!tabela Punho e transradial (Green, cap. 49, p. 1737, e cap. 50; Campbell, cap. 20, p. 730 a 732)
-| Aspecto | Desarticulação | Transradial |
+Quando a mão não pode ser salva, o Green admite que o nível ideal é controverso (cap. 50, p. 1753 e 1754). A dúvida é entre desarticular o punho e cortar o antebraço, e a resposta depende do que se quer preservar e do que se aceita perder. Entender o argumento vale mais que decorar a conclusão, porque a banca pergunta os dois lados.
+
+## Desarticulação do punho: o que ganha
+
+A desarticulação do punho (e a transcárpica, um pouco mais distal) deixa o antebraço inteiro. Os ganhos são três (cap. 50, p. 1754; cap. 49, p. 1737):
+
+- **A radioulnar distal fica intacta**, e com ela a pronossupinação. O rádio continua girando em torno da ulna, e esse giro pode ser aproveitado pelo encaixe. Para isso o cirurgião protege os ligamentos da radioulnar distal e a fibrocartilagem triangular.
+- **O braço de alavanca é o mais longo possível**, o que facilita levantar e posicionar a prótese.
+- **O alargamento metafisário do rádio distal** funciona como um botão: o encaixe passa por ele e prende acima, suspendendo o dispositivo terminal sem arnês (fig. 50.2).
+
+O Campbell (cap. 20, p. 730) tempera o entusiasmo com um número que a banca cobrou: só cerca de **50%** da pronação e da supinação chegam à prótese, porque o coto gira dentro do encaixe e parte do movimento se perde no acoplamento. Ainda assim, ele considera que vale o esforço. É esse 50% que o TARO 2026 pediu.
+
+## Desarticulação do punho: o que custa
+
+O mesmo comprimento que dá alavanca cria os problemas (cap. 50, p. 1754):
+
+- **Os estiloides** radial e ulnar ficam salientes e viram pontos de pressão dentro do encaixe, lesando a pele do coto. Na técnica, eles são arredondados para não causar necrose por pressão (cap. 49, p. 1737).
+- **O membro fica comprido demais.** O dispositivo terminal mioelétrico ocupa alguns centímetros; somado a um coto que já vai até o punho, o lado protetizado fica mais longo que o normal. Além da estética, isso atrapalha alcançar a linha média: para levar a mão à boca ou ao botão da calça, o paciente compensa com abdução do ombro e retração da escápula.
+
+Por isso o Green afirma que os desarticulados do punho **abandonam a prótese mais** que os transradiais. O capítulo 49 traz o dado de uso: **54%** dos desarticulados contra **94%** abaixo do cotovelo (p. 1737). O Campbell (p. 730) acrescenta que cerca de **50%** abandonam a prótese em 5 anos e que a dor fantasma passa de **50%**, raramente impedindo o uso.
+
+Há uma exceção que mostra que não existe nível certo para todos: o **trabalhador braçal** costuma preferir a desarticulação do punho, porque usa uma prótese de força corporal durável, ganha alavanca e mantém a radioulnar distal (p. 1754). Para quem levanta peso o dia inteiro, o comprimento e a robustez valem mais que a estética e a mioelétrica.
+
+## Transradial: 8 a 10 cm, o nível das mais opções
+
+Na transradial, o nível com a **maior variedade de opções protéticas** fica **8 a 10 cm proximal ao estiloide ulnar** (p. 1754). Nesse ponto ainda sobra pronossupinação adequada e alavanca razoável para fletir o cotovelo, e abre-se espaço para qualquer dispositivo terminal sem deixar o membro comprido. É o número que a SBCM 2023 pediu. O caso clínico 50.2 do capítulo repete a mesma comparação numa isquemia da mão por cateter arterial e vasopressor: a desarticulação preserva a radioulnar distal e o máximo de rotação, mas a transradial a 8 a 10 cm dos estiloides oferece mais opções de prótese.
+
+Quanto mais proximal a transradial, menos rotação: quando se remove **metade do antebraço**, quase não sobra pronossupinação, porque a membrana interóssea e os pronadores e supinadores que restam já não movem o rádio. Mesmo assim, **pelo menos 5 cm de ulna** bastam para protetizar com sucesso (p. 1754). O Campbell (p. 731 e 732) fala em manter dois terços do antebraço quando possível, conta que a transradial responde por cerca de **40%** das amputações maiores do membro superior e, no coto muito curto, faz tenodese do bíceps na ulna para não perder a flexão do cotovelo.
+
+## A técnica transradial preferida do Green
+
+A técnica do capítulo 50 (p. 1754 e 1755, fig. 50.3) é a amputação eletiva, e cada passo responde a um dos cinco princípios:
+
+- **Retalhos volar e dorsal iguais**, em boca de peixe, para a cicatriz ficar terminal e longe das áreas de apoio.
+- **Osteotomia pelo menos 1 a 2 cm proximal** ao fim da incisão de pele, para sobrar partes moles e fechar sem tensão (na figura, em geral 8 cm do estiloide ulnar).
+- Sob garrote, **ligar as artérias radial e ulnar** e cauterizar as interósseas.
+- **Nervos dissecados e cortados proximais à osteotomia**, para o neuroma ficar dentro do músculo, longe do encaixe.
+- Músculos divididos **1 cm distal** à osteotomia, serra oscilante e lima nas bordas.
+- **Miodese em dois planos.** Primeiro, os músculos profundos são presos ao osso: isso dá cobertura durável e impede que o músculo deslize sobre a ponta, o que formaria bursa. Depois, os superficiais são suturados sobre as pontas em pares **agonista e antagonista**, em tensão fisiológica. O detalhe tem um motivo moderno: esses músculos, ancorados e com tensão, continuam contraindo de forma distinta, e essas contrações comandam a **prótese mioelétrica**.
+- Fechamento em camadas e curativo compressivo.
+
+A desarticulação do punho tem técnica própria no capítulo 49 (p. 1737): retalho palmar longo e dorsal curto (2:1), estiloides arredondados, nervos tracionados e cortados para retraírem, e tendões fixados ao rádio em tensão fisiológica, que podem comandar uma mioelétrica ou servir a um futuro transplante. LOUIS faz ligadura dupla dos nervos no antebraço proximal, para que o neuroma fique em continuidade sob os músculos.
+
+!tabela Punho e transradial (Green, cap. 49, p. 1737, e cap. 50, p. 1753 a 1755; Campbell, cap. 20, p. 730 a 732)
+| Aspecto | Desarticulação do punho | Transradial |
 | --- | --- | --- |
-| pronossupinação | 50% transmitidos | perdida |
-| prótese | difícil; uso 54% | mais opções; uso 94% |
-| nível | radiocárpico, retalho palmar 2:1 | 8 a 10 cm acima dos estiloides |
+| pronossupinação | radioulnar distal preservada; 50% chegam à prótese | menor quanto mais proximal; quase nula na metade do antebraço |
+| suspensão | alargamento metafisário do rádio | encaixe e miodese |
+| problema | estiloides salientes; membro longo demais | coto curto perde alavanca |
+| uso da prótese | 54%; abandono maior | 94%; mais opções |
+| nível | radiocárpico, retalho palmar 2:1 | 8 a 10 cm acima do estiloide ulnar; mínimo 5 cm de ulna |
+| quem prefere | trabalhador braçal (força corporal) | a maioria (mioelétrica) |
 !fim
 
-!questoes central=mao-0568 treino=mao-2263
+!questoes central=mao-0568 treino=mao-2263,mao-3814,mao-3815
 conceito: Transradial ideal 8 a 10 cm proximal aos estiloides; a desarticulação transmite 50% da pronossupinação.
 como: A SBCM 2023 pediu o nível; o TARO 2026, a porcentagem.
 armadilha: Escolher 3 a 5 cm ou 80 a 95%.
 !fim
+
+> **Na prova:** mais opções protéticas = transradial **8 a 10 cm do estiloide ulnar**; mais rotação = **desarticulação do punho** (radioulnar distal), mas só **50%** chega à prótese (Campbell); desarticulados usam menos (**54% contra 94%**); **5 cm de ulna** bastam; braçal prefere a **desarticulação** com prótese de força corporal; miodese em **dois planos**, superficiais em pares **agonista e antagonista**.
+
+# Ao redor do cotovelo: salvar a articulação ou escolher o nível {radar=clinico}
+
+## Por que o cotovelo vale quase qualquer esforço
+
+Perder o cotovelo muda a categoria da amputação (p. 1754 e 1755). Abaixo dele, o paciente flete e estende a prótese com a própria articulação, e o encaixe só precisa repor punho e mão. Acima, a prótese precisa de um **cotovelo protético**, que pesa, consome energia e é menos útil que o natural; o paciente gasta mais esforço para cada tarefa, e os **transumerais abandonam a prótese mais** que os transradiais. Por isso o Green diz que preservar o cotovelo é **alta prioridade**, mesmo à custa de reconstruções complexas como **retalhos livres** para cobrir um coto curto (p. 1754). Os 5 cm de ulna da seção anterior são a outra face da mesma regra: um coto transradial curtíssimo, com cotovelo, vale mais que qualquer nível acima.
+
+Esse é o fato que a SBCM 2025 cobrou: o melhor nível ao redor do cotovelo para usar prótese é **abaixo da articulação**. A banca usou alternativas de uma palavra (úmero distal, desarticulação, diáfise umeral, abaixo da articulação), e quem entende o argumento não erra.
+
+## Desarticulação do cotovelo: côndilos contra comprimento
+
+Se o cotovelo não pode ser salvo, a primeira ideia é desarticular, porque o úmero fica inteiro. Os **côndilos** largos fazem o que o rádio distal faz no punho: suspendem o encaixe e, por não serem redondos, **transmitem a rotação** do úmero à prótese (p. 1755).
+
+O preço é o mesmo do punho, agora maior: o braço residual fica longo, e a prótese ainda precisa de uma articulação de cotovelo abaixo dele. O resultado é **discrepância de comprimento** (o cotovelo protético fica mais baixo que o do outro lado), dificuldade de alcançar a linha média e uma assimetria visível, antiestética e limitante.
+
+## A preferência do Green: transumeral, exceto na criança
+
+Pesando os dois lados, os autores preferem a **transumeral** à desarticulação do cotovelo, porque os benefícios da desarticulação são pequenos diante dos problemas de comprimento (p. 1755). Há uma exceção, e ela é a pegadinha da questão: a **criança**. Na criança, a transumeral feita pela metáfise tem alta incidência de **supercrescimento ósseo** do coto, que pode exigir revisões, e a desarticulação evita o problema (AITKEN, citado no Green).
+
+O supercrescimento não vem da fise, como muitos supõem. É **formação óssea aposicional** na ponta do osso cortado: o osso cresce em ponta de lápis, empurra a pele por dentro, forma bursa e pode perfurar. Ele só acontece no coto **transósseo**; na desarticulação, a cartilagem articular tampa a ponta e o fenômeno não ocorre. O úmero é o osso mais acometido no membro superior (o resumo do Campbell sobre amputações detalha a capa osteocondral e por que a epifisiodese é contraindicada).
+
+## O que o Campbell diz diferente
+
+O Campbell (cap. 20, p. 730 a 735) inverte a preferência no adulto: considera a desarticulação do cotovelo **geralmente preferível** a um nível mais alto, justamente pelos côndilos, que dão suspensão e transmitem a rotação. Na criança os dois livros convergem: abaixo dos **12 anos**, o Campbell desarticula o cotovelo e, se não der, capeia o úmero com o úmero distal amputado. Para a prova, a regra é a de sempre: questão com bibliografia do Green responde transumeral no adulto e desarticulação na criança.
+
+!tabela Sem o cotovelo: Green 7 e Campbell 15
+| Ponto | Green 7 (cap. 50, p. 1755 e 1756) | Campbell 15 (cap. 20, p. 730 a 735) |
+| --- | --- | --- |
+| adulto | transumeral preferida | desarticulação geralmente preferível |
+| criança | desarticulação, pelo supercrescimento | desarticulação abaixo de 12 anos; capa do úmero distal |
+| nível transumeral | osteotomia 10 cm acima da ponta do olécrano | pelo menos 3,8 cm acima da articulação, pela trava do cotovelo |
+| osteotomia de angulação | MARQUARDT e NEFF; não é rotina | 6 cm de osso, 70 graus, placa posterior |
+!fim
+
+## A técnica transumeral
+
+A técnica do Green (p. 1755 e 1756, fig. 50.4) segue a mesma lógica da transradial, com três diferenças:
+
+- **Garrote estéril**, retalhos anterior e posterior que terminam 2 cm distais à osteotomia.
+- **Osteotomia idealmente 10 cm proximal à ponta do olécrano.** Esse número existe por causa do cotovelo protético: ele precisa de espaço abaixo do encaixe para que o cotovelo artificial fique na altura do outro. O Campbell chega à mesma ideia por outro caminho: a trava interna do cotovelo ocupa **3,8 cm**, e o osso deve ser cortado pelo menos isso acima da articulação, com plataforma giratória para repor a rotação do úmero.
+- **Ligar a artéria braquial** com sutura transfixante; **radial, mediano e ulnar** dissecados e cortados proximais à osteotomia; serra, lima e soltura do garrote.
+- **Miodese** do compartimento anterior ao posterior sobre a ponta do úmero.
+- **Dreno de sucção fechado**, ao contrário da transradial descrita: o braço tem mais massa muscular e espaço morto, e a coleção sob o retalho atrasaria a protetização.
+
+A **osteotomia de angulação** do úmero distal (MARQUARDT, NEFF) cria um degrau em que o encaixe se apoia e, com isso, dá **controle rotacional** da prótese sem depender do arnês. O Green não a faz de rotina, porque o ângulo cria um ponto de pressão; ela só entra depois de discutir com o fisiatra e o protesista, e, se planejada, a amputação é feita mais distal para compensar o comprimento gasto na angulação (p. 1756). O Campbell dá os números que a banca do TEOT usou: pelo menos **6 cm** de osso residual, corte a **70 graus** e **placa posterior**.
+
+> **Na prova:** melhor nível ao redor do cotovelo = **abaixo da articulação** (preservar o cotovelo, até com retalho livre); sem cotovelo, o Green prefere a **transumeral 10 cm acima do olécrano**, exceto na **criança**, que desarticula pelo **supercrescimento** (AITKEN); o Campbell prefere a desarticulação também no adulto; transumeral leva **dreno**; angulação de **70 graus, 6 cm, placa posterior** (Campbell), não é rotina no Green.
+
+# Ombro e interescapulotorácica {radar=fundamento}
+
+## A amputação mais radical
+
+A **interescapulotorácica** (forequarter) retira o membro inteiro com a escápula e a parte lateral da clavícula, desarticulando a cintura escapular do tórax. É a mais radical e a menos frequente das amputações do membro superior (p. 1756). Foi descrita no trauma em **1808** por Ralph CUMING; hoje é sobretudo o **último recurso no tumor maligno agressivo** do ombro, da axila ou do braço proximal. Seu uso caiu de **32%** dos casos nos anos 1970 para **5%** numa série atual, à medida que o salvamento do membro ganhou espaço. O prognóstico reflete a doença, não a cirurgia: num centro oncológico, a sobrevida foi de **42% em 1 ano** e menos de **20% em 2 anos** (12 anos de seguimento).
+
+O caso clínico 50.1 mostra o cenário típico: tumor maligno de bainha de nervo periférico induzido por radiação na axila. O tratamento de base é a ressecção com margens negativas, com radioterapia pré-operatória e quimioterapia para tumores grandes, profundos, de alto grau ou metastáticos; quando a margem exige, o caminho termina na interescapulotorácica.
+
+## Planejar o fechamento antes de cortar
+
+O problema de fechar é real: na recidiva de um tumor irradiado, a pele em volta é ruim e tensa, e não dá para subir mais. O Green planeja então um **retalho livre de filé do antebraço**, fasciocutâneo, baseado na artéria braquial: o próprio membro amputado doa a cobertura (p. 1756). Por isso, se houver filé, os vasos subclávios não são ligados, mas preservados com loops para a anastomose.
+
+## A técnica e o detalhe pensado no futuro
+
+O paciente fica em decúbito lateral. A incisão é uma elipse na base do ombro e em volta da escápula, com extensão cranial ao longo da clavícula até o esternocleidomastóideo, para controlar a subclávia proximalmente (fig. 50.6). A sequência vai de anterior para posterior (p. 1756):
+
+- **Osteotomia da clavícula** logo lateral à origem do esternocleidomastóideo, com uma Cobb protegendo os vasos por baixo.
+- **Ligadura da artéria e da veia subclávias** (ou preservação, se houver retalho livre).
+- Divisão do peitoral maior; coracobraquial, cabeça curta do bíceps e peitoral menor soltos do coracoide; ligadura da transversa do pescoço e da supraescapular.
+- No paciente com **menos de 50 anos**, os grandes ramos do plexo braquial são cortados e **implantados no peitoral maior e no serrátil anterior**. A ideia é deixar músculos reinervados que possam, no futuro, comandar uma prótese por **TMR**. É um exemplo raro de cirurgia oncológica radical que já planeja a reabilitação.
+- Por fim, a parte posterior: borda medial da escápula, romboides, serrátil anterior e grande dorsal, e fechamento sobre drenos.
+
+O Campbell (cap. 20) descreve a via posterior de LITTLEWOOD como preferida à anterior de BERGER na interescapulotorácica e, na **desarticulação do ombro**, sutura as pontas musculares dentro da glenoide e leva o **deltoide para baixo da glenoide**, para preencher o vazio da cabeça umeral; quando se pode, preservar **5 a 7 cm** de úmero proximal mantém o contorno do ombro, o que ajuda a vestir roupa e a apoiar uma prótese ou capa cosmética. A dor fantasma é mais frequente nessas amputações proximais.
+
+> **Na prova:** interescapulotorácica = **último recurso no tumor**; CUMING **1808**; uso caiu de **32% para 5%**; sobrevida **42% em 1 ano, menos de 20% em 2**; cobertura com **filé do antebraço**; abaixo de **50 anos**, implantar o plexo no **peitoral maior e serrátil** para TMR; desarticulação do ombro com **deltoide abaixo da glenoide** (Campbell).
+
+# KRUKENBERG: o antebraço que vira pinça {radar=confirmado}
+
+## O problema que a cirurgia resolve
+
+Uma prótese, mesmo excelente, não sente. O usuário enxerga o que a pinça segura e corrige a força pelo olho. Agora imagine o paciente **cego** que perdeu as **duas mãos**: sem visão e sem sensibilidade, a prótese vira uma ferramenta cega na ponta de um braço cego. A operação de KRUKENBERG, descrita pelo cirurgião alemão Hermann KRUKENBERG durante a Primeira Guerra Mundial (1917), responde exatamente a isso: em vez de substituir a mão, transforma o próprio antebraço numa **pinça com pele sensível**.
+
+O capítulo 50 do Green 7 não trata do procedimento. Ele está no capítulo 38, na deficiência transversa congênita (p. 1346), e no capítulo 21 do Campbell (p. 769 e 770, técnica 21.13).
+
+## O que se faz e por que funciona
+
+O rádio e a ulna são **separados**, e os músculos são redistribuídos para que o **rádio pince contra a ulna** (Green, cap. 38, p. 1346). O movimento das duas pontas vem de cima: as articulações radiocapitelar e radioulnar proximal funcionam como a dobradiça da pinça. SWANSON comparou o membro reconstruído a um par de **pauzinhos** de comer (Campbell, p. 769). A pele entre as pontas, deslocada no fechamento para que a cicatriz não fique na superfície de contato, conserva sensibilidade normal; é isso que diferencia a pinça de KRUKENBERG de qualquer gancho.
+
+A técnica do Campbell (p. 770) ensina a biomecânica pelo nome dos músculos:
+
+- Incisão longitudinal volar um pouco para radial, e dorsal um pouco para ulnar, com um retalho em V dorsal que vai formar a comissura entre os dois raios.
+- Os músculos são separados em dois grupos. No **raio radial** ficam os flexores e extensores radiais do punho, a metade radial do flexor superficial e do extensor comum, o braquiorradial, o palmar longo e o **pronador redondo**. No **raio ulnar**, os flexores e extensores ulnares do punho e as metades ulnares do flexor superficial e do extensor comum. Se o coto ficar volumoso, ressecam-se o pronador quadrado, o flexor profundo, o flexor longo do polegar, o abdutor longo e o extensor curto do polegar, sem tocar no pronador redondo.
+- A **membrana interóssea** é incisada em todo o comprimento junto à ulna, preservando o pedículo interósseo.
+- As pontas se afastam **6 a 12 cm**, conforme o tamanho do antebraço, e devem se tocar ao fechar; se não, osteotomiza-se o rádio ou a ulna.
+- Agora o **pronador redondo**, o supinador, o flexor radial do carpo, a metade radial do superficial e o palmar longo **aduzem** o raio radial (fecham a pinça); o braquiorradial, os extensores radiais, a metade radial do extensor comum e o bíceps o **abduzem**. Do lado ulnar, o flexor ulnar do carpo, o braquial e o ancôneo aduzem, e o extensor ulnar do carpo e o tríceps abduzem.
+- A pele é girada em volta de cada raio, com a sutura fora da face de contato; enxerto de pele onde faltar.
+- Na **criança**, a pele costuma bastar e o osso **não deve ser encurtado**, porque as fises distais ainda crescem.
+
+## Quem se beneficia
+
+A indicação é **rara** e clássica (Green, cap. 38, p. 1346): o amputado **bilateral** do antebraço distal e **cego**, porque a cirurgia dá preensão unilateral **com retorno sensitivo**. O Green admite uma segunda indicação ocasional: a criança **vidente** com deficiência abaixo do cotovelo e **antebraço longo**. O Campbell (p. 769 e 770) amplia: é útil também onde não há serviço moderno de prótese, e, segundo SWANSON, crianças com amputação congênita bilateral acham o membro reconstruído muito mais útil que uma prótese mecânica, passam a dominância para ele quando usam prótese do outro lado, e a cirurgia não impede usar prótese comum.
+
+O lado ruim é honesto nos dois livros: há **poucos dados funcionais** publicados, e a aparência do antebraço é **muito anormal** (Green, p. 1346). Por isso o vidente unilateral, que enxerga e tem a outra mão, quase nunca é candidato: para ele, a prótese resolve sem o preço estético.
+
+## As alternativas na deficiência transversa
+
+O mesmo parágrafo do Green fecha as outras portas (p. 1346). O **alongamento do antebraço** tem muitas complicações e não provou ganho funcional. O **transplante de mão** já passou de **70** casos em adultos amputados por trauma, mas é **contraindicado na criança com deficiência transversa**: ela provavelmente não formou músculos capazes de mover uma mão transplantada, funciona muito bem sem ela, e a imunossupressão por toda a vida pesa mais que o ganho possível.
+
+A banca cobra o procedimento com duas armadilhas: trocar **separar** por **fundir** o rádio e a ulna, e trocar KRUKENBERG por outros epônimos (FOUCHER, por exemplo, é o retalho dorsal do indicador, nada tem com o antebraço). Na indicação, o distrator típico é o unilateral ou o vidente.
+
+!questoes central=mao-0439 relacionadas=mao-2591
+conceito: KRUKENBERG separa o rádio da ulna e faz o rádio pinçar contra ela, dando preensão com sensibilidade; indicação clássica no amputado bilateral do antebraço distal e cego, às vezes na criança vidente com antebraço longo.
+como: O TARO 2025 perguntou o procedimento possível na agenesia de punho e mão; outra prova pediu o correto sobre a deficiência transversa segundo o Green.
+armadilha: Marcar a fusão do rádio com a ulna ou trocar KRUKENBERG por FOUCHER; achar que o vidente unilateral é a indicação.
+!fim
+
+> **Na prova:** KRUKENBERG **separa** rádio e ulna, o rádio **pinça contra a ulna**; dá preensão **com sensibilidade**; indicação clássica = **cego com amputação bilateral** do antebraço distal (às vezes criança vidente com antebraço longo); pontas afastadas **6 a 12 cm**; **pronador redondo** é adutor do raio radial; na criança **não encurtar osso**; transplante de mão contraindicado na criança com deficiência transversa.
+
+# Reabilitação protética e o período de ouro {radar=fundamento}
+
+## Por que a prótese do membro superior é difícil
+
+A prótese do membro superior tem um limite que a do membro inferior quase não tem: ela precisa substituir uma mão, e a mão faz movimentos finos com retorno sensitivo constante. As próteses atuais têm **poucos graus de liberdade** e **quase nenhum retorno sensitivo**, de modo que tudo depende de pistas visuais (p. 1756 e 1757). O usuário olha para a pinça para saber se segurou, quanto apertou e se o objeto escorrega; isso gasta energia física e cognitiva, cansa e explica boa parte do abandono.
+
+O que mais pesa no resultado é o **nível**, porque ele define quantas funções precisam ser repostas, quanto comprimento sobra para estabilidade e controle e quais componentes servem. Entram também as comorbidades, o arco de movimento e a força do lado amputado, os objetivos do paciente e a cobertura do plano de saúde (p. 1757).
+
+## Antes e logo depois da cirurgia
+
+O ideal é começar **antes da amputação**, com o fisiatra e o protesista no planejamento e aconselhamento ao paciente (p. 1757). No trauma isso raramente é possível, mas na amputação eletiva (tumor, membro inútil depois de várias cirurgias) muda o resultado, porque o nível e a técnica podem ser escolhidos pensando na prótese.
+
+Depois da cirurgia, o roteiro tem quatro frentes: **arco de movimento cedo** (prevenir a contratura, o quarto princípio); **terapia ocupacional**, que ensina o lado não afetado a cuidar do autocuidado e usa extensões termoplásticas para tarefas com as duas mãos; **compressão graduada** para tirar o edema e moldar o coto num formato que o encaixe aceite; e **controle da dor**. A **prótese provisória** entra o quanto antes.
+
+## O período de ouro: 30 dias e 6 meses
+
+Este é o número mais cobrado do capítulo. MALONE descreveu o **"período de ouro"**: o **primeiro mês** depois da amputação. Pacientes adaptados depois de 30 dias tiveram reabilitação bem-sucedida em apenas **42%** (Green, cap. 50, p. 1758). O capítulo 49 dá a outra metade do dado: protetizados em até 30 dias chegaram a **93%** de reabilitação e **100%** de volta ao trabalho, contra 42% e 15% depois disso (p. 1747). BIDDISS acrescentou o horizonte maior: quem recebe a prótese definitiva em até **6 meses** tem **16 vezes** mais chance de usá-la a longo prazo (p. 1758).
+
+O motivo é o hábito, e não a ferida. Em poucas semanas o paciente aprende a fazer tudo com uma mão; quando a prótese chega, ela já não resolve um problema que ele sente, e vai para a gaveta. Protetizar cedo é aproveitar a janela em que a falta da mão ainda é sentida.
+
+## Por que se abandona a prótese
+
+O Green lista os motivos (p. 1758): desconforto, pouco ganho funcional, aparência, **peso**, falta de sensibilidade, bateria que dura pouco e custo. A rejeição é maior nas **próteses passivas**, e cerca de **20%** dos adultos amputados abandonam qualquer prótese. O Campbell (cap. 20, p. 730) fala em cerca de **50%** de abandono em 5 anos e repete a adaptação temporária em até 30 dias para reduzir a rejeição.
+
+> **Na prova:** período de ouro de **MALONE = 30 dias** (depois disso, **42%** de sucesso; antes, **93%** e **100%** de volta ao trabalho); prótese em até **6 meses** = **16 vezes** mais uso (BIDDISS); cerca de **20%** abandonam qualquer prótese; rejeição maior na **passiva**; o fator que mais pesa é o **nível**.
+
+# Os tipos de prótese: passiva, força corporal, mioelétrica e híbrida {radar=fundamento}
+
+## A regra que organiza tudo
+
+Quanto mais proximal a amputação, mais difícil **suspender** a prótese sem arnês e mais funções precisam ser repostas com articulações travadas ou motorizadas (p. 1758). As próteses se classificam pela **fonte de força**: passiva, força corporal, externa (mioelétrica) e híbrida.
+
+## Passiva
+
+A prótese passiva não se move por si. A mais conhecida é a **cosmética**, uma luva de silicone com aparência de mão; é leve e pode servir para estabilizar objetos. Existem também desenhos passivos para esportes e atividades específicas (p. 1758). Apesar de leve, é a que mais se abandona, porque faz pouco.
+
+## Força corporal
+
+A prótese de **força corporal** é a **mais prescrita** no membro superior (p. 1758). Um arnês preso ao ombro oposto e um cabo convertem o movimento da escápula e do úmero (protrair o ombro, fletir o braço) em abertura do gancho ou flexão do cotovelo, com travas e elásticos que fecham a pinça. Tem quatro virtudes: é **leve**, **barata** (sobretudo na transumeral), **durável** e de **pouca manutenção**. Por isso é a preferida do **trabalhador braçal** (fig. 50.7: o gancho). O custo é a aparência mecânica, com o gancho exposto, e a força de preensão limitada pelos elásticos. Como depende do movimento do ombro passado pelo cabo, ela precisa de **suspensão externa** por arnês.
+
+## Mioelétrica
+
+A **mioelétrica** tem motores e bateria no próprio membro. **Eletrodos de superfície** dentro do encaixe captam a atividade elétrica dos músculos do coto: contrair o grupo agonista abre, contrair o antagonista fecha (p. 1758 e 1759). É aqui que a miodese em pares agonista e antagonista da técnica transradial mostra o seu sentido. A preensão é maior: mais de **30 libras** de pinça, contra a força limitada dos elásticos da prótese de corpo. Cada função a mais, porém, aumenta custo, peso e manutenção; protótipos para transumeral passam de **100 mil dólares**. Mãos como a Michelangelo oferecem várias pegadas específicas (fig. 50.8).
+
+## Híbrida e a escolha por nível
+
+As tendências do Green (p. 1759) são uma questão pronta:
+
+- **Transradial**: a **mioelétrica** é a preferida da maioria, pela estética, pela força de pinça e pela suspensão anatômica no antebraço.
+- **Transumeral e desarticulação do ombro**: a **híbrida**, que mistura componentes de força corporal e motorizados (por exemplo, cotovelo por cabo e mão mioelétrica), porque nos níveis proximais não há sinais musculares suficientes e distintos para comandar tudo por eletrodo (fig. 50.9).
+- **Passiva e força corporal** servem a qualquer nível; a força corporal continua sendo a escolha do braçal.
+
+## O encaixe e a suspensão
+
+O **encaixe** é a fundação da prótese: se ele machuca ou solta, nada mais funciona. Primeiro se faz um encaixe de teste na prótese provisória; o definitivo é de **fibra de carbono e Kevlar** (p. 1759). A suspensão pode ser:
+
+- **Autossuspensa**: o encaixe íntimo segura nos relevos do coto (o alargamento do rádio distal, os côndilos do úmero) e transmite a força diretamente.
+- **Com arnês**: mais fácil de vestir, mas visível; necessária nos níveis proximais, como a transumeral, para suspender próteses pesadas, e sempre na força corporal, que usa o arnês para levar o movimento da escápula ao cabo.
+
+!tabela Escolha da prótese (Green, cap. 50, p. 1758 e 1759)
+| Tipo | Como funciona | Vantagem | Desvantagem | Quem usa |
+| --- | --- | --- | --- | --- |
+| passiva | luva de silicone, sem movimento | leve, estética | faz pouco; mais rejeitada | qualquer nível |
+| força corporal | arnês e cabo levam o movimento do ombro | leve, barata, durável | aparência mecânica, pinça fraca | a mais prescrita; braçal |
+| mioelétrica | eletrodos de superfície e motores | pinça acima de 30 libras, estética | cara, pesada, bateria | maioria dos transradiais |
+| híbrida | cabo e motor combinados | supre a falta de sinal proximal | complexa | transumeral e ombro |
+!fim
+
+> **Na prova:** mais prescrita = **força corporal** (leve, barata, durável; **braçal**); preferida no **transradial = mioelétrica**; nos proximais = **híbrida**; mioelétrica = **eletrodos de superfície** em músculos agonista e antagonista, pinça **acima de 30 libras**; encaixe de **carbono e Kevlar**; arnês obrigatório na **força corporal** e nos proximais.
+
+# TMR, RPNI e as interfaces com o nervo {radar=fundamento}
+
+## O problema: faltam sinais
+
+Os usuários são uniformemente insatisfeitos com a preensão das próteses, e a insatisfação cresce quanto mais alto o nível (p. 1759 e 1760). No transradial, os flexores e extensores do punho continuam no antebraço e dão dois sinais limpos para abrir e fechar a mão. No transumeral e na desarticulação do ombro, esses músculos foram embora com o membro; sobram o bíceps e o tríceps para comandar cotovelo, punho e mão, um de cada vez e com troca de modo. Os nervos que comandavam a mão (mediano, ulnar, radial) continuam vivos no coto, carregando o comando, mas terminam no vazio. O Green descreve três linhas de pesquisa para recuperar esses sinais: a reinervação muscular dirigida, as interfaces de nervo periférico e as interfaces do sistema nervoso central.
+
+## Reinervação muscular dirigida (TMR)
+
+A **TMR** tem DUMANIAN entre os pioneiros citados pelo Green. A ideia é transformar músculos que sobraram em **amplificadores biológicos**. O cirurgião escolhe músculos-alvo do coto (por exemplo, segmentos do peitoral maior na desarticulação do ombro, ou cabeças do bíceps e do tríceps na transumeral), corta o nervo original de cada segmento e sutura nele um dos nervos amputados (p. 1760). Meses depois, quando o paciente pensa em fechar a mão, o segmento reinervado pelo mediano contrai; o sinal elétrico desse músculo é grande o bastante para ser lido por **eletrodos de superfície** na pele, e vira o comando da mão mioelétrica.
+
+O ganho relatado é grande: eficiência **7 vezes maior** nas tarefas, **controle simultâneo** de várias articulações, comando mais natural e intuitivo (pensar em abrir a mão abre a mão) e menos treino (p. 1760). O limite é que poucos pacientes foram operados. A TMR tem ainda um efeito colateral bom, lembrado no Campbell (cap. 16 e cap. 20): dar ao nervo cortado um órgão-alvo reduz o neuroma doloroso e a dor fantasma. É a mesma lógica do neuroma estudado na mão: o neuroma é brotamento sem alvo, e a TMR dá um alvo ao brotamento. Isso explica por que o Green implanta os ramos do plexo no peitoral e no serrátil na interescapulotorácica do paciente jovem.
+
+## Interfaces de nervo periférico
+
+A **RPNI** (interface regenerativa de nervo periférico) é uma versão microscópica da TMR: as pontas nervosas, ou fascículos separados, são implantadas em pequenos **enxertos musculares livres** com um eletrodo e um isolante. O músculo reinervado amplifica o sinal, que fica estável, e o registro chega ao nível do fascículo, com mais canais de controle que a TMR (p. 1760 e 1761). O Campbell (cap. 20, p. 729) cita a RPNI também como tratamento e prevenção do neuroma.
+
+Os eletrodos diretamente no nervo têm um dilema: os **extraneurais** (em manguito, cuff) são seguros por até 3 anos em humanos, mas pouco seletivos, porque ouvem o nervo inteiro; os **intraneurais** (intrafasciculares, como a matriz de Utah, fig. 50.10) são seletivos, mas a **fibrose** progressiva, causada pelo trauma do implante, pela reação de corpo estranho e pelo micromovimento, faz perder o sinal com o tempo (p. 1761).
+
+## Sistema nervoso central e o desenho da prótese
+
+As interfaces cerebrais vão do **EEG**, de baixa resolução, à **eletrocorticografia**, melhor, mas que exige craniotomia e também perde fidelidade por fibrose; o Green acha que provavelmente servirão mais à lesão medular que ao amputado (p. 1761). No desenho, o CAD/CAM encurtou a confecção do encaixe (um método de Northwestern faz o encaixe em menos de 1 hora com cerca de 1 dólar de material), e o **motor de corrente contínua sem escovas** é o atuador padrão, com alternativas em estudo.
+
+A conclusão do capítulo é prática e volta ao começo (p. 1762): **protetizar cedo é crítico**, o atraso aumenta o abandono, e as interfaces neurais ainda precisam de estudo antes de virarem rotina.
+
+> **Na prova:** TMR = nervos amputados transferidos para **músculos-alvo** desnervados, que viram **amplificadores biológicos** lidos por eletrodos de **superfície**; eficiência **7 vezes** maior e controle **simultâneo**; útil sobretudo na **transumeral e no ombro**; reduz **neuroma e dor fantasma**; RPNI = TMR **microscópica** em enxerto muscular livre; eletrodo **cuff** seguro e pouco seletivo, **intraneural** seletivo mas perde sinal por **fibrose**.
 
 # Green e Campbell: onde os livros discordam {radar=fundamento}
 
