@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Vidro verde-noite — manobra de ALLIS, TEOT 2024 (stories)</title>
+<!-- Stories com alternativas (guia: estilos/STORIES-COM-ALTERNATIVAS.md), versão genérica: degradê verde-noite e
+     ardósia das cores do site, cartões de vidro. Área livre (sem caixa) para a enquete A/B/C/D no story 1.
+     Questão real: pediatria-0561 (TEOT 2024), gabarito oficial A (ALLIS).
+     Fonte: Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 30, p. 1297 a 1300, Figs. 30.30 a 30.32;
+     Campbell's Operative Orthopaedics, 15ª ed., cap. 60, p. 2688; Rockwood (STEWART-MILFORD). -->
+<link rel="stylesheet" href="../../estilos/stories-com-alternativas/base.css">
+<style>
+section { color: #fff; }
+.fundo { position: absolute; inset: -60px; z-index: -2;
+  background:
+    radial-gradient(55% 35% at 85% 6%, rgba(244,207,124,.30) 0%, rgba(244,207,124,0) 70%),
+    radial-gradient(60% 40% at 0% 30%, #1d8a7c 0%, rgba(29,138,124,0) 72%),
+    radial-gradient(70% 40% at 100% 70%, #2a5566 0%, rgba(42,85,102,0) 72%),
+    radial-gradient(80% 45% at 20% 105%, #157a6b 0%, rgba(21,122,107,0) 72%),
+    linear-gradient(170deg, #0b2a27 0%, #0e3a35 40%, #143f4a 75%, #0f2f33 100%); }
+.grao { position: absolute; inset: 0; z-index: -1; opacity: .06; mix-blend-mode: overlay;
+  background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 5px 5px; }
+.topo { position: absolute; left: 64px; right: 64px; top: 228px; display: flex; align-items: center; gap: 18px; }
+.topo svg { width: 62px; height: 62px; border-radius: 15px; flex: none; box-shadow: 0 10px 24px -10px rgba(0,0,0,.6); }
+.topo .nome { font: 700 33px/1 Jakarta; }
+.topo .pil { margin-left: auto; padding: 13px 22px; border-radius: 999px; font: 700 22px/1 Jakarta; letter-spacing: 2.5px; text-transform: uppercase;
+  background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.28); backdrop-filter: blur(16px); }
+.rot { font: 700 23px/1 Jakarta; letter-spacing: 3.5px; text-transform: uppercase; color: #9fe0cf; }
+h1 { font: 800 70px/1.02 Jakarta; letter-spacing: -2.2px; }
+h1 em { font-style: normal; color: var(--ouro); }
+.vidro { position: absolute; border-radius: 44px;
+  background: linear-gradient(150deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
+  border: 1.5px solid rgba(255,255,255,.28); backdrop-filter: blur(30px) saturate(150%);
+  box-shadow: 0 40px 80px -40px rgba(0,0,0,.7), 0 1.5px 0 rgba(255,255,255,.35) inset; }
+.placa { position: absolute; background: #fff; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(0,0,0,.6); }
+.placa img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.enun { font: 400 29px/1.4 Inter; color: rgba(255,255,255,.92); }
+.fonte { font: 400 18px/1.3 Inter; color: rgba(255,255,255,.6); }
+.alts { position: absolute; left: 48px; right: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.alt { display: flex; align-items: center; gap: 20px; height: 104px; padding: 0 24px; border-radius: 32px;
+  background: rgba(255,255,255,.9); color: #13302c; font: 700 34px/1 Jakarta; letter-spacing: -.5px;
+  box-shadow: 0 20px 40px -24px rgba(0,0,0,.7); }
+.alt .l { width: 58px; height: 58px; flex: none; border-radius: 50%; display: grid; place-items: center; font: 800 27px/1 Jakarta; color: #fff; background: var(--verde); }
+.alt.certa { background: linear-gradient(160deg, #fff6dc, #fbe6b0); }
+.alt.certa .l { background: linear-gradient(160deg, #f8dc92, #dcaa45); color: #4a3a12; }
+.dica .t { color: #fff; }
+.dica .s { color: rgba(255,255,255,.85); }
+.cita { font: 400 31px/1.42 Source; color: #fff; }
+.cita b { font-weight: 700; color: var(--ouro); }
+.tab { width: 100%; border-collapse: collapse; font: 400 25px/1.3 Inter; color: rgba(255,255,255,.9); }
+.tab td { padding: 14px 10px; border-top: 1.5px solid rgba(255,255,255,.16); vertical-align: top; }
+.tab td:first-child { font: 800 25px/1.3 Jakarta; color: #fff; width: 290px; white-space: nowrap; }
+.tab tr.ok td { background: rgba(244,207,124,.16); }
+.tab tr.ok td:first-child { color: var(--ouro); border-radius: 14px 0 0 14px; }
+.tab tr.ok td:last-child { border-radius: 0 14px 14px 0; }
+.botao { position: absolute; display: flex; align-items: center; justify-content: center; height: 108px; border-radius: 999px;
+  font: 800 40px/1 Jakarta; color: #13302c; background: linear-gradient(170deg, #f9e2a6, #e8bf62);
+  box-shadow: 0 24px 44px -22px rgba(0,0,0,.8), 0 2px 0 rgba(255,255,255,.6) inset; }
+.site { position: absolute; left: 0; right: 0; text-align: center; font: 800 34px/1 Jakarta; }
+.sub { position: absolute; left: 0; right: 0; text-align: center; font: 500 24px/1 Inter; color: rgba(255,255,255,.8); }
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="ladrilho" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="24" fill="#14655E"/>
+    <g fill="#F6EEDB" opacity=".55"><circle cx="30" cy="30" r="6.5"/><rect x="43" y="25.5" width="34" height="9" rx="4.5"/><circle cx="30" cy="70" r="6.5"/><rect x="43" y="65.5" width="26" height="9" rx="4.5"/></g>
+    <g fill="#F4CF7C"><circle cx="30" cy="50" r="9"/><rect x="43" y="45" width="40" height="10" rx="5"/></g>
+    <path d="M26 50.2l2.9 2.9 5.2-5.6" fill="none" stroke="#14655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="seta" viewBox="0 0 36 20"><path d="M4 4l14 12L32 4" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<!-- ============ STORY 1 (7h): a questão ============ -->
+<section id="s1-questao">
+  <div class="fundo"></div><div class="grao"></div>
+  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="nome">Orto Questões</span><span class="pil">TEOT 2024</span></div>
+
+  <div class="vidro" style="left:48px; right:48px; top:318px; height:790px;">
+    <div style="position:absolute; left:46px; right:46px; top:40px;">
+      <div class="rot">Pediatria · quadril</div>
+      <h1 style="margin-top:16px; font-size:62px;">Que manobra <em>é esta?</em></h1>
+      <p class="enun" style="margin-top:16px;">Na luxação traumática anterior do quadril na criança, a manobra de redução ilustrada na figura a seguir é a de</p>
+    </div>
+    <div class="placa" style="left:46px; right:46px; top:262px; height:494px;"><img src="img/questao.png" alt="" style="padding:14px;"></div>
+  </div>
+
+  <div class="alts" style="top:1126px;">
+    <div class="alt"><span class="l">A</span>ALLIS.</div>
+    <div class="alt"><span class="l">B</span>STIMSON.</div>
+    <div class="alt"><span class="l">C</span>BIGELOW.</div>
+    <div class="alt" style="font-size:30px;"><span class="l">D</span>STEWART-MILFORD.</div>
+  </div>
+
+  <div class="dica" style="top:1370px;">
+    <div class="t">Vote na sua letra</div>
+    <svg viewBox="0 0 36 20"><use href="#seta"/></svg>
+  </div>
+</section>
+
+<!-- ============ STORY 2 (18h30): resposta, livro e convite ============ -->
+<section id="s2-resposta">
+  <div class="fundo" style="transform:scaleX(-1);"></div><div class="grao"></div>
+  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="nome">Orto Questões</span><span class="pil">Resposta</span></div>
+
+  <div style="position:absolute; left:64px; right:64px; top:330px;">
+    <div class="rot">TEOT 2024 · gabarito</div>
+    <h1 style="margin-top:16px;">É a manobra<br>de <em>ALLIS.</em></h1>
+  </div>
+  <div class="alt certa" style="position:absolute; right:64px; width:300px; top:420px;"><span class="l">A</span>ALLIS.</div>
+
+  <div class="vidro" style="left:48px; right:48px; top:600px; height:500px;">
+    <div style="position:absolute; left:44px; width:560px; top:40px;">
+      <div class="rot" style="color:var(--ouro);">Segundo o Tachdjian</div>
+      <p class="cita" style="margin-top:14px;">Paciente em <b>decúbito dorsal</b>, <b>tração no eixo do fêmur</b> com a cabeça empurrada para trás e, em seguida, <b>adução com rotação interna</b> até a cabeça entrar no acetábulo.</p>
+      <p class="fonte" style="margin-top:14px;">Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 30, p. 1297 e 1300 (Fig. 30.32)</p>
+    </div>
+    <div class="placa" style="right:40px; width:340px; top:40px; height:360px;"><img src="img/stimson.png" alt="" style="object-fit:cover; object-position:30% 50%;"></div>
+    <p class="fonte" style="position:absolute; right:40px; width:340px; top:410px;">STIMSON é de bruços, com o membro pendente (Tachdjian, Fig. 30.31, p. 1299)</p>
+  </div>
+
+  <div class="vidro" style="left:48px; right:48px; top:1124px; height:250px; border-radius:38px;">
+    <table class="tab" style="position:absolute; left:30px; right:30px; top:22px; width:calc(100% - 60px);">
+      <tr><td style="border-top:0;">STIMSON</td><td style="border-top:0;">prono, a gravidade reduz</td></tr>
+      <tr><td>BIGELOW</td><td>supino, com <b>circundução</b> no fim</td></tr>
+      <tr><td>STEWART-MILFORD</td><td>não é manobra: é <b>classificação</b></td></tr>
+    </table>
+  </div>
+
+  <div class="botao" style="left:150px; right:150px; top:1420px;">Treine grátis</div>
+  <div class="site" style="top:1562px;">ortoquestoes.com.br</div>
+  <div class="sub" style="top:1610px;">o comentário inteiro está lá · o caminho está no perfil</div>
+</section>
+</body></html>
