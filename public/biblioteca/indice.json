@@ -10733,7 +10733,7 @@
   },
   {
    "id": "green-amputacoes-reimplantes",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Amputações e reimplantes na mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -10741,7 +10741,7 @@
    "capitulo": "Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)",
    "resumo": "Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.",
    "acesso": "gratis",
-   "minutos": 63,
+   "minutos": 104,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10829,33 +10829,68 @@
      "radar": "confirmado"
     },
     {
+     "id": "amputar-como-tratamento-os-principios",
+     "titulo": "Amputar como tratamento: os princípios",
+     "radar": "fundamento"
+    },
+    {
      "id": "a-ponta-do-dedo-allen-e-tamai",
      "titulo": "A ponta do dedo: ALLEN e TAMAI",
      "radar": "clinico"
     },
     {
-     "id": "a-ponta-cicatrizar-enxerto-composto-e-crianca",
-     "titulo": "A ponta: cicatrizar, enxerto composto e criança",
+     "id": "a-ponta-sem-osso-exposto-cicatrizar-enxerto-comp",
+     "titulo": "A ponta sem osso exposto: cicatrizar, enxerto composto e criança",
      "radar": "confirmado"
     },
     {
-     "id": "os-retalhos-da-ponta",
-     "titulo": "Os retalhos da ponta",
+     "id": "a-ponta-com-osso-exposto-encurtar-unha-em-gancho",
+     "titulo": "A ponta com osso exposto: encurtar, unha em gancho e matriz dérmica",
+     "radar": "clinico"
+    },
+    {
+     "id": "os-retalhos-locais-de-avanco-atasoy-kutler-e-mob",
+     "titulo": "Os retalhos locais de avanço: ATASOY, KUTLER e MOBERG",
      "radar": "confirmado"
     },
     {
-     "id": "os-niveis-no-dedo",
-     "titulo": "Os níveis no dedo",
+     "id": "cross-finger-e-tenar-tecido-emprestado",
+     "titulo": "Cross-finger e tenar: tecido emprestado",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-polpa-do-polegar-moberg-e-cross-finger-do-indi",
+     "titulo": "A polpa do polegar: MOBERG e cross-finger do indicador",
+     "radar": "clinico"
+    },
+    {
+     "id": "os-niveis-no-dedo-da-ifd-a-mf",
+     "titulo": "Os níveis no dedo: da IFD à MF",
      "radar": "fundamento"
     },
     {
-     "id": "amputacao-de-raio",
-     "titulo": "Amputação de raio",
+     "id": "amputacao-de-raio-por-que-quando-e-o-indicador",
+     "titulo": "Amputação de raio: por que, quando e o indicador",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-raio-do-medio-adutor-tesoura-e-a-transposicao-",
+     "titulo": "O raio do médio: adutor, tesoura e a transposição de CARROLL",
      "radar": "confirmado"
     },
     {
-     "id": "neuroma-e-coto-doloroso",
-     "titulo": "Neuroma e coto doloroso",
+     "id": "anelar-e-minimo-o-lado-ulnar-da-mao",
+     "titulo": "Anelar e mínimo: o lado ulnar da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "varios-dedos-protese-e-reabilitacao",
+     "titulo": "Vários dedos, prótese e reabilitação",
+     "radar": "fundamento"
+    },
+    {
+     "id": "neuroma-dor-fantasma-e-coto-doloroso",
+     "titulo": "Neuroma, dor fantasma e coto doloroso",
      "radar": "confirmado"
     },
     {
@@ -10964,7 +10999,21 @@
     "mao-1945",
     "mao-2262",
     "mao-2416",
+    "mao-3716",
+    "mao-3724",
+    "mao-3725",
+    "mao-3726",
+    "mao-3729",
     "mao-2341",
+    "mao-3717",
+    "mao-3718",
+    "mao-3719",
+    "mao-3720",
+    "mao-3721",
+    "mao-3722",
+    "mao-3723",
+    "mao-3727",
+    "mao-3728",
     "mao-2261",
     "mao-1763",
     "mao-2175",
