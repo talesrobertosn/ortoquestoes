@@ -1,19 +1,19 @@
 {
   "versao": 1,
-  "geradoEm": "2026-11-19T02:11:08-03:00",
-  "total": 9652,
+  "geradoEm": "2026-11-19T02:23:47-03:00",
+  "total": 9679,
   "temas": [
     {
       "slug": "mao",
       "nome": "Mão e punho",
       "arquivo": "temas/mao.json",
-      "total": 3681
+      "total": 3685
     },
     {
       "slug": "ombro-cotovelo",
       "nome": "Ombro e cotovelo",
       "arquivo": "temas/ombro-cotovelo.json",
-      "total": 606
+      "total": 629
     },
     {
       "slug": "quadril",
@@ -62758,6 +62758,74 @@
       "ar": "mao"
     },
     {
+      "id": "mao-3838",
+      "t": 0,
+      "s": [
+        35
+      ],
+      "p": 19,
+      "a": 2014,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-3839",
+      "t": 0,
+      "s": [
+        35
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-3840",
+      "t": 0,
+      "s": [
+        35
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-3841",
+      "t": 0,
+      "s": [
+        23
+      ],
+      "p": 19,
+      "a": 2007,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
       "id": "ombro-cotovelo-0001",
       "t": 1,
       "s": [
@@ -72747,6 +72815,407 @@
       ],
       "p": 19,
       "a": 2023,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0725",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 19,
+      "a": 2015,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0726",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0727",
+      "t": 1,
+      "s": [
+        66,
+        60
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0728",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 17,
+      "a": 2020,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0729",
+      "t": 1,
+      "s": [
+        66,
+        55
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0730",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 17,
+      "a": 2008,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0731",
+      "t": 1,
+      "s": [
+        66,
+        55
+      ],
+      "p": 17,
+      "a": 2018,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0732",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0733",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 17,
+      "a": 2017,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0734",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 17,
+      "a": 2019,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0735",
+      "t": 1,
+      "s": [
+        66,
+        48
+      ],
+      "p": 17,
+      "a": 2020,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0736",
+      "t": 1,
+      "s": [
+        62,
+        66
+      ],
+      "p": 17,
+      "a": 2009,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0737",
+      "t": 1,
+      "s": [
+        55,
+        48
+      ],
+      "p": 19,
+      "a": 2015,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0738",
+      "t": 1,
+      "s": [
+        48
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0739",
+      "t": 1,
+      "s": [
+        48,
+        62
+      ],
+      "p": 17,
+      "a": 2020,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0740",
+      "t": 1,
+      "s": [
+        48,
+        47
+      ],
+      "p": 17,
+      "a": 2008,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0741",
+      "t": 1,
+      "s": [
+        48,
+        47
+      ],
+      "p": 17,
+      "a": 2015,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0742",
+      "t": 1,
+      "s": [
+        48
+      ],
+      "p": 17,
+      "a": 2017,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0743",
+      "t": 1,
+      "s": [
+        48,
+        47
+      ],
+      "p": 17,
+      "a": 2019,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0744",
+      "t": 1,
+      "s": [
+        52
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0745",
+      "t": 1,
+      "s": [
+        52
+      ],
+      "p": 17,
+      "a": 2008,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0746",
+      "t": 1,
+      "s": [
+        52
+      ],
+      "p": 17,
+      "a": 2017,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0747",
+      "t": 1,
+      "s": [
+        52
+      ],
+      "p": 17,
+      "a": 2019,
       "d": null,
       "img": 0,
       "an": 0,

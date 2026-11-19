@@ -271,7 +271,7 @@ armadilha: Marcar 20%, que é o valor normal, ou confundir com os 42% do alongam
 
 O antebraço completa o sistema de carga. O Green (cap. 21, p. 786) lembra que a **ulna é o osso de carga** do antebraço e suspende o rádio, que roda em torno dela num eixo que passa pelo **centro da cabeça do rádio** e pela **fóvea da ulna**. As condensações mais fortes da membrana são a banda oblíqua distal, a **banda central** e as acessórias, a corda oblíqua dorsal acessória e a corda oblíqua proximal. A banda central responde por **71% da rigidez longitudinal** dada pelas partes moles e é a principal estrutura contra a **migração proximal do rádio** quando a cabeça do rádio falta (cap. 14, p. 482). O Rockwood (capítulo das fraturas da diáfise do antebraço) descreve a banda central com **3,5 cm** de largura e fibras a cerca de **20 graus** do eixo do antebraço, e lembra que a maior distância entre rádio e ulna é em **supinação total**.
 
-!questoes central=mao-0567
+!questoes central=mao-0567 treino=ombro-cotovelo-0736
 conceito: A banda central da membrana interóssea, oblíqua do rádio proximal para a ulna distal, dá 71% da rigidez longitudinal das partes moles e impede a migração proximal do rádio.
 como: O TARO 2026 perguntou em que posição de rotação a banda central fica mais tensa.
 armadilha: Supor que a tensão máxima coincide com a pronação total, quando os ossos se cruzam e se aproximam.
