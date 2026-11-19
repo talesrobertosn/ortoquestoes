@@ -11247,7 +11247,7 @@
   },
   {
    "id": "green-artrose-punho-artroscopia",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Artrose do punho e artroscopia",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -11255,7 +11255,7 @@
    "capitulo": "Capítulo 12 · Wrist Arthrodesis and Arthroplasty",
    "resumo": "Dor e estabilidade pesam mais que arco (PALMER: 30° de extensão, 5° de flexão, 10° de desvio radial e 15° de ulnar bastam); artrose primária do punho é incomum e mora na STT; SLAC de WATSON começa no estiloide e poupa a radiolunar; LLUCH: I radioescafoide, II escafocapitato, III lunocapitato, IV piramidal-hamato, V radiolunar; AR é a causa mais comum de artrose radiolunar isolada; escafocapitato e STT têm indicações e perda de movimento parecidas, escafoide a 40 a 50°; escafossemilunar tem pseudartrose de 50 a 85%; escafoidectomia com quatro cantos no SLAC ou SNAC II e III, contraindicada pela fossa do semilunar doente, com o semilunar reduzido como passo mais importante; carpectomia proximal exige capitato e fossa do semilunar sãos; artrodese total com placa do rádio ao 3º metacarpo, cinco articulações, pseudartrose parcial na 3ª CMC (decorticar 80% dorsais ou retirar a placa), ELP deixado superficial ao retináculo, túnel do carpo até 10,5% com 67% de liberação; pino de STEINMANN de MILLENDER e NALEBUFF viola a 3ª MCF; prótese só em baixa demanda; 3-4 é o portal de visão, 4-5 o de trabalho, 6-U de irrigação, mediocárpicos 1 cm distais; GEISSLER III admite o probe, IV o artroscópio; EWAS IIIB rompe o SL dorsal.",
    "acesso": "gratis",
-   "minutos": 66,
+   "minutos": 100,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11333,6 +11333,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "fibrocartilagem-triangular-pela-artroscopia",
+     "titulo": "Fibrocartilagem triangular pela artroscopia",
+     "radar": "clinico"
+    },
+    {
      "id": "indicacoes-e-procedimentos-artroscopicos",
      "titulo": "Indicações e procedimentos artroscópicos",
      "radar": "confirmado"
@@ -11362,8 +11367,8 @@
     "mao-0454",
     "mao-1195",
     "mao-1531",
-    "mao-1321",
     "mao-0292",
+    "mao-1321",
     "mao-0006",
     "mao-0246",
     "mao-1495",
@@ -11398,21 +11403,41 @@
     "mao-2400",
     "mao-2206",
     "mao-2040",
+    "mao-3702",
     "mao-2304",
     "mao-2391",
+    "mao-3701",
+    "mao-3715",
+    "mao-3713",
     "mao-2132",
-    "mao-2450",
     "mao-1774",
+    "mao-3699",
+    "mao-3696",
+    "mao-2450",
+    "mao-3700",
+    "mao-3712",
+    "mao-3708",
     "mao-1960",
+    "mao-3706",
+    "mao-3714",
     "mao-2483",
+    "mao-3707",
+    "mao-3711",
+    "mao-3697",
+    "mao-3709",
     "mao-2213",
     "mao-2037",
     "mao-1777",
     "mao-2223",
     "mao-2363",
-    "mao-2050",
+    "mao-3704",
     "mao-2224",
-    "mao-2225"
+    "mao-2050",
+    "mao-3710",
+    "mao-3705",
+    "mao-2225",
+    "mao-3698",
+    "mao-3703"
    ],
    "subtemas": [
     "Artrose do punho e artroscopia"
