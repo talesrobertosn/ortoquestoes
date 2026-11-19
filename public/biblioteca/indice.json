@@ -17290,7 +17290,7 @@
   },
   {
    "id": "green8-neuropatias-compressao",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Neuropatias de compressão no membro superior",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -17298,7 +17298,7 @@
    "capitulo": "Capítulo 28 · Neuropatias de compressão",
    "resumo": "Fisiopatologia (barreira hematoneural, edema, perineuro, mielina, axônio), duplo esmagamento de UPTON e McCOMAS e o reverso de LUNDBORG, HNPP e estiramento (8% venoso, 15% isquemia); testes provocativos por sítio, SPURLING, colapso ao arranhar e fibrilação como sinal precoce de desnervação; mediano proximal (ligamento de STRUTHERS, pronador, lacertus, arco do FSD, GANTZER, MARTIN-GRUBER) e interósseo anterior (PARSONAGE-TURNER, exploração aos 7 a 10 meses); canal de GUYON (zonas I, II e III, ramo dorsal, garra paradoxal, ramo profundo no hâmulo); sinais do ulnar (DUCHENNE, BOUVIER, FROMENT, WARTENBERG, PITRES-TESTUT, RICHE-CANNIEU); túnel cubital (flexão reduz a área em 55%, OSBORNE, arcada de STRUTHERS a 8 cm, McGOWAN I a III, VCM abaixo de 50 m/s, 40 m/s para conduta, epicondilectomia de 20%, OGATA, transmuscular); radial sensitivo (WARTENBERG entre BR e ERLC, pronação com flexão ulnar) e interósseo posterior (túnel radial, FROHSE do epicôndilo lateral, EIP o último, intervalo BR e ERLC); reoperações; supraescapular, quadrangular e desfiladeiro.",
    "acesso": "gratis",
-   "minutos": 72,
+   "minutos": 108,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -17361,9 +17361,24 @@
      "radar": "confirmado"
     },
     {
-     "id": "desfiladeiro-toracico",
-     "titulo": "Desfiladeiro torácico",
+     "id": "desfiladeiro-toracico-o-que-e-e-como-se-classifi",
+     "titulo": "Desfiladeiro torácico: o que é e como se classifica",
      "radar": "confirmado"
+    },
+    {
+     "id": "desfiladeiro-toracico-anatomia-dos-tres-espacos",
+     "titulo": "Desfiladeiro torácico: anatomia dos três espaços",
+     "radar": "confirmado"
+    },
+    {
+     "id": "desfiladeiro-toracico-clinica-exame-e-exames",
+     "titulo": "Desfiladeiro torácico: clínica, exame e exames",
+     "radar": "confirmado"
+    },
+    {
+     "id": "desfiladeiro-toracico-tratamento-resultados-e-re",
+     "titulo": "Desfiladeiro torácico: tratamento, resultados e recorrência",
+     "radar": "clinico"
     },
     {
      "id": "onde-as-fontes-divergem",
@@ -17440,17 +17455,18 @@
     "ombro-cotovelo-0117",
     "ombro-cotovelo-0112",
     "ombro-cotovelo-0429",
-    "mao-0034",
-    "mao-0010",
-    "mao-0248",
-    "mao-0081",
-    "mao-0425",
-    "mao-1212",
-    "mao-1546",
-    "mao-0787",
     "mao-1466",
-    "mao-1813",
+    "mao-0010",
+    "mao-0425",
+    "mao-0081",
+    "mao-0034",
+    "mao-0787",
+    "mao-1546",
     "mao-0836",
+    "mao-1212",
+    "mao-0248",
+    "mao-0932",
+    "mao-1813",
     "mao-1355"
    ],
    "treino": [
@@ -17538,11 +17554,28 @@
     "mao-2774",
     "mao-2782",
     "mao-2805",
+    "mao-3629",
+    "mao-3630",
+    "mao-3632",
+    "mao-3633",
+    "mao-3636",
+    "mao-1744",
+    "mao-3626",
+    "mao-3627",
+    "mao-3628",
+    "mao-3634",
+    "mao-3638",
+    "mao-3641",
     "mao-2227",
     "mao-2140",
-    "mao-2139",
+    "mao-3631",
+    "mao-3635",
+    "mao-3639",
     "mao-2542",
-    "mao-1744"
+    "mao-2139",
+    "mao-3625",
+    "mao-3637",
+    "mao-3640"
    ],
    "subtemas": [
     "Neuropatia ulnar e outras compressões"
