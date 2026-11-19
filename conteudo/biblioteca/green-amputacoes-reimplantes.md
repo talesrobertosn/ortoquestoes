@@ -1,6 +1,6 @@
 ---
 id: green-amputacoes-reimplantes
-versao: 3
+versao: 4
 titulo: Amputações e reimplantes na mão
 especialidade: mao
 acesso: gratis
@@ -1078,28 +1078,431 @@ armadilha: Escolher a CMC do indicador ou dizer que o extensor próprio vira adu
 alerta: `mao-1493` segue o Green; o Campbell fixa em flexão para evitar hiperextensão. Gabarito mantido.
 !fim
 
-# A transferência de dedos do pé {radar=confirmado}
+# A transferência de dedos do pé: igual com igual {radar=confirmado}
 
-No Green's Operative Hand Surgery, 7ª ed. (cap. 47, p. 1654), o **hálux total** é escolhido quando o polegar foi amputado **na falange proximal ou no metacarpo**, mas é grande; o **envoltório de MORRISON** fica bonito e **não tem IF móvel**; o **hálux aparado** une as vantagens e perde 18 graus na IF. A **metatarsal dorsal primeira** domina em 70%; com **calibres iguais**, prefere-se a **dorsal**, mais fácil (p. 1653 aprox.).
+Esta parte do resumo segue o capítulo 47 do Green's Operative Hand Surgery, 7ª ed. (Toe-to-Hand Transplantation, de Fu-Chan WEI e Nidal F. ALDEEK, p. 1643 a 1672), com o complemento do capítulo 68 do Campbell's Operative Orthopaedics, 15ª ed. (Microsurgery, p. 3081 a 3090), onde o Green não trata do assunto. É o capítulo escrito pelo grupo de Chang Gung, em Taiwan, que tem a maior série do mundo, e por isso quase tudo o que a prova cobra (números, classificação, preferências técnicas) é a experiência pessoal de WEI.
 
-A **mão metacarpal** de WEI tem **tipo I** (dedos proximais ao meio da falange proximal, polegar intacto ou distal à IF) e **tipo II** (polegar proximal à IF) (p. 1649). No tipo I, repõem-se ao menos dois dedos adjacentes; no tipo II com tenar bom (IIA e IIB), polegar e dois dedos num só tempo; com tenar ruim (IIC), em etapas, com um poste protético provisório (p. 1650). Os dedos transferidos na criança crescem 60 a 100% do normal (p. 1651). Na criança, evita-se antes de 2 anos, e a **síndrome do anel de constrição** é a **indicação congênita ideal**, porque as estruturas proximais são normais (p. 1650). No aparelho extensor do dedo menor, o **tipo I** tem **banda central atenuada** (a tração não corrige o déficit) e o **tipo II**, **banda central distinta** (p. 1667).
+## Por que um dedo do pé
 
-!tabela Dedos do pé (Green, cap. 47, p. 1649 a 1668)
+Quando um dedo ou o polegar se perde, perde-se um conjunto de tecidos que não existe em nenhum outro lugar do corpo, a não ser no pé: pele glabra presa ao osso por septos fibrosos (que não escorrega na pinça), a polpa com a maior densidade de inervação do organismo, a unha que dá contraforte à polpa, articulações com cartilagem e cápsula, tendões que deslizam em polias. Os retalhos locais, o cross-finger, a osteoplástica e a prótese repõem um ou dois desses itens; o dedo do pé traz todos de uma vez, num bloco que tem artéria, veia e nervo próprios. Por isso o Green chama o método de reconstrução "igual com igual" e o considera o único meio seguro e confiável de devolver ao paciente um dedo que se move, sente e, na criança, cresce (p. 1643).
+
+A comparação com o alotransplante de mão ajuda a entender o valor: o transplante de mão de doador falecido também repõe tecidos iguais, mas cobra imunossupressão por toda a vida, com risco de infecção, tumor e rejeição. O dedo do pé é autólogo; o preço é a área doadora, e boa parte do capítulo trata justamente de como pagar o menor preço possível no pé.
+
+Para o polegar, a transferência é aceita há décadas. Para os dedos longos, foi controversa (muitos achavam que não valia sacrificar um dedo do pé por um dedo da mão), e vem ganhando espaço porque os pacientes ficaram mais informados e exigentes e porque a experiência acumulada mostrou resultados previsíveis (p. 1643).
+
+## De NICOLADONI a WEI: como o método chegou aqui
+
+A ideia é antiga. NICOLADONI, no fim do século XIX, levou um dedo do pé à mão por um pedículo, em etapas: o pé ficava preso à mão por cerca de 4 semanas até o dedo ganhar irrigação no leito novo. DAVIS foi o primeiro a somar às etapas uma anastomose com a artéria dorsal do pé. A virada veio com a microcirurgia: YANG, em 1966, fez a primeira transferência em tempo único, do segundo dedo para o polegar, e COBBETT, em 1968, a primeira do hálux para o polegar. O'BRIEN, em 1978, aplicou o método à mão congênita, e BUNCKE e ROSE, em 1979, descreveram os retalhos neurossensitivos de polpa para a reconstrução distal (p. 1643 e 1650).
+
+Daí em diante a evolução seguiu uma lógica clara: tirar do pé só o que falta na mão. Da transferência do dedo inteiro passou-se ao hálux aparado, ao envoltório, às transferências parciais, à polpa, à hemipolpa e ao enxerto ungueal vascularizado, e, na outra ponta, às combinações (segundo e terceiro juntos, terceiro e quarto, até três dedos do mesmo pé) para as mãos que perderam tudo (p. 1643 e 1665). É essa lógica que explica quase todas as escolhas técnicas do capítulo.
+
+## Quem se beneficia
+
+A indicação não sai de uma tabela; o Green fala em avaliação multifatorial: nível da amputação, número de dedos perdidos, idade, motivação (dos pais, na criança), ocupação, dominância, cobertura trabalhista e cultura. Uma amputação distal de um único dedo pode pesar mais na vida de um músico que a mão metacarpal na de outro paciente (p. 1643).
+
+O ponto mais contraintuitivo, e o mais cobrado, é o do dedo único. A amputação de **um dedo distal à IFP** é uma das **melhores indicações**, com função excelente; a de um dedo **proximal à IFP** costuma ficar melhor com a **amputação do raio** (p. 1643 e 1647). O porquê está na anatomia: distal à IFP, o dedo mantém a inserção do FDS, a IFP e os intrínsecos; o dedo do pé só precisa repor um segmento curto, que ele imita bem, e o conjunto se move com os motores próprios da mão. Proximal à IFP, o dedo do pé teria de fornecer a IFP, que é justamente a sua articulação mais pobre (pouco arco e tendência à garra), e o resultado seria um dedo curto e rígido no meio da mão, atrapalhando a preensão dos vizinhos; tirar o raio fecha a mão e dá melhor função.
+
+A idade avançada não é contraindicação absoluta, mas a demanda é menor, o risco clínico maior e a sensibilidade volta pior, porque a regeneração nervosa perde velocidade com a idade. No outro extremo, lactentes e crianças se beneficiam muito, mas abaixo de 2 anos a técnica é difícil pelo calibre dos vasos (p. 1643).
+
+As prioridades seguem a função de cada parte da mão (p. 1644). Na pinça fina, as superfícies que tocam são a face **radial do indicador e do médio** e a face **ulnar do polegar**; defeitos de polpa nessas faces valem mais que os outros. Quando vários dedos faltam, reconstroem-se **pelo menos dois dedos adjacentes**, porque um dedo isolado diante do polegar não dá estabilidade lateral nem pinça trípode. Os dedos radiais servem à manipulação fina e os ulnares à preensão de força (o texto da p. 1644 escreve "anelar e médio" para os ulnares, provável troca por anelar e mínimo; nenhuma questão séria deve depender disso).
+
+## O pé que doa
+
+O preço da transferência é pago no pé, e o capítulo é cuidadoso com ele. Três regras orientam a escolha.
+
+A primeira é poupar a marcha. O hálux participa do impulso do passo: a base da falange proximal guarda a metatarsofalângica com as inserções do flexor curto, os sesamoides e o mecanismo de molinete da fáscia plantar, que endurece o arco no fim do apoio. Por isso, quando se leva o hálux, **preserva-se pelo menos 1 cm da base da falange proximal** e a metatarsofalângica do pé (p. 1656). O segundo dedo é o doador menor preferido (tamanho, unha e pedículo convenientes); o terceiro é a alternativa quando o segundo não está disponível ou precisa ficar no pé; o quarto e o quinto não são primeira escolha.
+
+A segunda é pôr a perda maior no pé que pede menos. O pé dominante (em geral o direito) deve sofrer a menor perda: se um paciente precisa do hálux e do segundo e terceiro dedos, o direito doa o par menor e o esquerdo, o hálux (p. 1644). Quando só o par de segundo e terceiro dedos é necessário, WEI tira sempre do **pé esquerdo**, porque o direito tem mais demanda (dirigir, por exemplo), e usa o direito apenas se o esquerdo não servir (p. 1664 e 1665). As duas frases não se contradizem: o esquerdo é o padrão, e a regra do pé dominante vale quando os dois pés doam.
+
+A terceira é fechar bem. A doadora do segundo dedo e do par de dedos é fechada primariamente, sem dreno e **nunca com enxerto de pele**, que no pé de carga ulcera e dói; se o fechamento ficar difícil, desarticula-se a metatarsofalângica ou encurta-se pelo metatarso (p. 1657 e 1665). Só as polpas e o retalho do primeiro espaço aceitam enxerto de pele parcial no peito do pé, que é uma área sem carga (p. 1660 e 1661).
+
+O vaso também não é escolhido de antemão: a artéria do primeiro espaço é dorsal na maioria dos pés, e a dissecção é planejada para achar a dominante em cada caso (veja a seção da anatomia arterial). Afirmar que o sistema plantar é sempre o de escolha está errado.
+
+!questoes central=mao-1629 treino=mao-3774,mao-3777,mao-3775,mao-3773
+conceito: No planejamento, poupa-se a metatarsofalângica do hálux (pelo menos 1 cm da base da falange proximal) para manter o impulso da marcha; o segundo dedo é o doador menor preferido e a artéria dominante costuma ser a dorsal.
+como: A USP-SP 2026 pediu a afirmação correta sobre o planejamento, com distratores sobre o alotransplante, o vaso plantar "sempre" e a preferência pelo quinto dedo.
+armadilha: Achar que o alotransplante de mão substitui o método sem custo clínico, que o vaso é sempre plantar ou que o quinto e o quarto dedos vêm antes do segundo.
+alerta: O enunciado oficial escreve "metacarpo-falangeana" no pé; leia metatarsofalângica. Gabarito mantido.
+!fim
+
+## O atendimento inicial já é parte da reconstrução
+
+O reimplante continua sendo a melhor opção na amputação aguda, mas o Green pede que o dedo do pé seja discutido desde o primeiro atendimento, até antes do reimplante, sobretudo nas amputações múltiplas e nos esmagamentos e avulsões, que reimplantam mal (p. 1644). A razão é prática: o que o cirurgião do pronto-socorro descarta para fechar o coto é exatamente o que o microcirurgião vai precisar meses depois. A regra geral é **preservar comprimento** de osso, tendão e feixe neurovascular depois do desbridamento (Fig. 47.1, p. 1644).
+
+- Osso: o erro comum é encurtar para fechar com retalho local. Um coto de só 5 mm já aceita um amarrilho intraósseo. Articulações e cartilagem são mantidas com a cápsula; um coto metacarpal curto pode ser alongado com bloco ósseo não vascularizado, evitando a osteotomia transmetatarsal no pé (p. 1644 e 1645).
+- Tendões: deixar o aparelho extensor no coto e as inserções intrínsecas na falange proximal; nas amputações na MF, manter o capuz extensor. A função é melhor com a inserção do FDS presente, e os flexores deixados no lugar mantêm as polias A2 e A4, que não se refazem bem depois (p. 1645).
+- Vasos: a artéria digital ulnar é maior que a radial e será a receptora preferida; as veias preocupam menos, porque a rede dorsal é ampla (p. 1645).
+- Nervos: **não ressecar proximalmente**. O reflexo de tracionar e cortar alto para esconder o neuroma é útil na amputação definitiva, mas aqui atrapalha: a sensibilidade volta mais rápido quanto mais perto do dedo transferido estiver a neurorrafia, porque o axônio cresce cerca de 1 mm por dia (p. 1645).
+- Pele: preferir o **retalho inguinal pediculado** aos retalhos locais e regionais. Os locais gastam pele e partes moles que vão faltar, deformam e atrasam a reabilitação; o inguinal traz tecido de fora, e a pele redundante dele depois cobre a base do dedo transferido, protege o pedículo e ajuda a criar a comissura. O retalho fasciocutâneo dorsal do pé não é recomendado (morbidade); o fasciossubcutâneo com enxerto de pele, sim (p. 1645).
+
+## Primária ou secundária
+
+O Green define com simplicidade: transferência **primária** é feita com a ferida ainda aberta; **secundária**, depois do fechamento definitivo. Termos como aguda, subaguda e crônica confundem e não têm relevância (p. 1645).
+
+A primária só é possível com desbridamento adequado e lesões associadas resolvidas. Na série de YIM e WEI, 31 primárias contra 144 secundárias tiveram sobrevida praticamente igual (**96,9% e 96,5%**), sem diferença em revisão de anastomose, reexploração, complicações ou procedimentos secundários. WOO mostrou **30% menos tempo de convalescença** e mais retorno ao trabalho original com a primária, mas **satisfação estética menor**, porque o dedo é montado sobre uma ferida que ainda vai remodelar. A primária pode dar melhor recuperação sensitiva, reduz a internação e às vezes é tecnicamente mais fácil, porque os planos ainda não têm fibrose. Ela é indicada no paciente motivado, informado e em bom estado, com ferida limpa e demarcada (Fig. 47.2), e também no politraumatizado de extremidades com peças disponíveis (p. 1645).
+
+Alguns serviços preferem sempre a tardia, para o paciente entender o déficit e aceitar a doadora; WEI acha que os benefícios da imediata superam. O cuidado de leitura é o verbo: do ponto de vista funcional, a primária **pode ser** mais benéfica; o livro não diz que o resultado é superior, e alternativa que afirme superioridade ou sobrevida menor na primária está errada. Na criança com amputação não reimplantável, a primária costuma ser evitada abaixo de 2 anos (p. 1645 e 1650).
+
+!tabela Primária e secundária (Green, cap. 47, p. 1645)
+| Aspecto | Primária | Secundária |
+| --- | --- | --- |
+| definição | ferida aberta | após o fechamento definitivo |
+| sobrevida (YIM e WEI) | 96,9% | 96,5% |
+| convalescença (WOO) | 30% menor | maior |
+| estética | menos satisfatória | melhor |
+| técnica | às vezes mais fácil (sem fibrose) | planos cicatrizados |
+| indicação | motivado, informado, ferida limpa e demarcada | padrão; a criança pequena |
+!fim
+
+# O que reconstruir em cada nível {radar=clinico}
+
+## O polegar
+
+O polegar amputado na IF ainda faz o básico, mas perde a manipulação fina e a estética; se não foi reimplantado, o Green manda **oferecer sempre** o dedo do pé, mesmo nesse nível distal (p. 1646). O hálux e suas variantes (total, aparado, envoltório) dão melhor função e aparência que um dedo menor, porque a largura da polpa e da unha se parecem com as do polegar.
+
+Entre a IF e a cabeça do metacarpo, o resultado depende do nível e da musculatura tenar. Proximal à MF, a tenar está destruída e a oposição se perde; o dedo do pé então é fixado em **pronação** por osteossíntese para que a pinça trípode aconteça sem músculo oponente, ou, como faz LIN, associa-se uma oponentoplastia primária. No nível do metacarpo, o dedo do pé sozinho não basta, e levar o metatarso junto custa caro ao pé; reconstrói-se primeiro o raio por técnica osteoplástica e só depois se transfere o dedo (p. 1646). A exceção é o segundo dedo, que pode ser retirado com o metatarso e serve ao polegar amputado proximal à CMC, porque traz comprimento até o metatarso proximal (p. 1656).
+
+## Um dedo longo
+
+Aqui o Green define os níveis pela inserção dos flexores (Fig. 47.3, p. 1647). A ponta, ou amputação distal, fica **distal à inserção do FPL** no polegar e **do FDS** nos dedos; é o nível I da figura. A polpa é chamada de órgão terminal do tato: pele glabra, septos fibrosos, a maior densidade de inervação do corpo e a unha como apoio. Nada disso se reproduz com cross-finger ou retalho tenar, que trazem pele com outra textura e outra sensibilidade.
+
+!tabela O dedo longo por nível (Green, cap. 47, p. 1646 a 1648, Fig. 47.3)
+| Nível | Opções e por quê |
+| --- | --- |
+| ponta e polpa (nível I) | polpa ou hemipolpa, enxerto ungueal vascularizado, retalho onicocutâneo, envoltório, parcial de dedo menor |
+| base da falange distal ao meio da média | parcial com a IFD e os tendões longos: o nível mais gratificante (teclado, instrumento) |
+| entre a inserção do FDS e a comissura | controverso: o dedo fica curto |
+| distal ao meio da falange proximal (nível II) | segundo ou terceiro dedo total, com a IFP |
+| mais proximal | amputação do raio costuma ser melhor |
+!fim
+
+O nível mais gratificante merece explicação. Entre a base da falange distal e o meio da média, o dedo da mão ainda tem a IFP e o FDS funcionando; a transferência parcial leva a IFD do pé com os tendões flexor e extensor longos, e o paciente recupera um dedo inteiro, com unha e polpa, que digita e toca instrumento (p. 1647).
+
+## Vários dedos, sem chegar à mão metacarpal
+
+Quando vários dedos foram amputados distalmente, a prioridade é o **indicador e o médio**, que fazem a manipulação fina. Quando a amputação é proximal, o objetivo passa a ser a preensão, e reconstroem-se pelo menos dois dedos: dois dedos dão pinça trípode, gancho mais forte, estabilidade lateral e precisão (Fig. 47.4, p. 1648).
+
+A técnica depende da comissura. **Proximal à comissura**, o segundo e o terceiro dedos são levados juntos num só pedículo: a comissura vem pronta, a morbidade fica num só pé e basta um par de anastomoses. **Distal à comissura**, o par combinado deixaria aspecto de sindactilia, e o Green prefere os **dois segundos dedos**, um de cada pé, no mesmo tempo (Fig. 47.5, p. 1649). LIN descreveu o par "dividido", quando a comissura está preservada e não se quer tirar os dois segundos dedos. O guia de comprimento é a ponta de um mínimo normal: os dedos reconstruídos devem ficar uniformes e na altura certa para que o conjunto forme um ponto de pinça e um arco de preensão (p. 1648 e 1664).
+
+A cabeça do metacarpo decide o nível da retirada no pé. Com a **superfície articular íntegra**, o dedo do pé é desarticulado na metatarsofalângica e a cápsula e os ligamentos do pé refazem a MF (a "articulação composta"); com a superfície **danificada ou ausente**, a transferência é **transmetatarsal** (p. 1648 e 1649). Nas mãos com amputações em níveis variados, DEL PIÑAL propõe converter a mão numa mão "aceitável": dedo do pé onde a amputação é distal, amputação do raio onde é proximal, buscando três dedos funcionantes (p. 1649).
+
+# A mão metacarpal de WEI {radar=clinico}
+
+## O problema e a lógica da classificação
+
+A mão metacarpal é a que perdeu **todos os dedos proximalmente**, com ou sem o polegar (p. 1649). É o caso mais grave da reconstrução e o que mais se beneficia do dedo do pé, porque sem dedos não há preensão alguma. WEI organizou as reconstruções numa classificação que responde, na ordem, às perguntas que o cirurgião faz diante dessa mão. Primeiro: o polegar serve? Se está íntegro ou amputado distal à IF, ainda tem comprimento para a pinça de precisão e é **tipo I**; se foi amputado proximal à IF, é **tipo II**. Depois, no tipo I, o que existe na altura da MF (A, B, C); no tipo II, como estão o nível do polegar, a tenar e a CMC (A a D) (Tabelas 47.1 e 47.2, p. 1649 e 1650).
+
+!tabela Mão metacarpal (WEI; Green, cap. 47, Tabelas 47.1 e 47.2, p. 1649 e 1650)
+| Tipo | Definição | Reconstrução |
+| --- | --- | --- |
+| I | dedos proximais ao meio da falange proximal; polegar íntegro ou distal à IF | pelo menos dois dedos adjacentes |
+| IA | dedos distais à MF | dois segundos dedos se distal à comissura; segundo e terceiro combinados se proximal (transfalange proximal) |
+| IB | através da MF, superfície articular do metacarpo íntegra | segundo e terceiro combinados com articulação composta |
+| IC | através da MF com superfície danificada, ou transmetacarpal | segundo e terceiro combinados transmetatarsais |
+| II | dedos como no I e polegar proximal à IF | polegar e dedos |
+| IIA | polegar distal ao colo do metacarpo | hálux total ou aparado (transfalange proximal) |
+| IIB | proximal ao colo, tenar adequada | alongamento (distração ou enxerto interposto) e hálux, ou segundo dedo transmetatarsal |
+| IIC | qualquer nível, tenar inadequada | polegar num segundo tempo, depois dos dedos, com transferência para oposição |
+| IID | qualquer nível, CMC danificada | como IIA e IIB, visando um poste imóvel |
+!fim
+
+## Por que cada subtipo pede o que pede
+
+No **IA**, a MF existe e funciona; basta dar comprimento, e a escolha entre dois segundos dedos e o par combinado segue a regra da comissura. No **IB**, a MF se perdeu, mas a cabeça do metacarpo está boa; a cápsula e os ligamentos da metatarsofalângica do pé, suturados ao coto, refazem uma articulação que se move contra uma cartilagem própria. No **IC**, não há onde articular, e a transferência leva o segmento do metatarso com a própria metatarsofalângica do pé, que passa a ser a MF nova.
+
+No tipo II, a questão é a tenar. Com tenar adequada (**IIA e IIB**), o polegar e dois dedos adjacentes podem ser reconstruídos **no mesmo tempo** (Fig. 47.6, p. 1651). Com tenar inadequada (**IIC**), o polegar fica para um **segundo tempo**, depois dos dedos, com transferência tendinosa para oposição; entre as etapas usa-se um **poste protético provisório** para definir o comprimento e a posição ideais do polegar diante dos dedos novos (Fig. 47.7). Com a CMC danificada (**IID**), não há como dar mobilidade na base, e o objetivo é um poste imóvel bem posicionado (p. 1650).
+
+Na mão metacarpal bilateral tipo II, a mão dominante recebe três dedos (pinça trípode) e a não dominante dois (pinça lateral ou polpa a polpa). Quando são cinco dedos do pé, WEI usa o segundo e terceiro direitos e o hálux de um lado e o terceiro e quarto esquerdos, poupando o segundo esquerdo para o equilíbrio do pé (p. 1650; Fig. 47.8).
+
+# A criança e a mão congênita {radar=clinico}
+
+## Trauma na criança
+
+Na criança, o reimplante é sempre tentado, até no dedo único. Se não é possível, o dedo do pé está indicado **mesmo para um dedo só**, ao contrário do adulto, porque a criança tem mais anos de vida para usar o dedo, adapta melhor o córtex e o dedo transferido cresce. A transferência primária é evitada abaixo de 2 anos (p. 1650).
+
+## A mão congênita
+
+A indicação congênita **ideal** é a **síndrome da banda de constrição**. O motivo é que nela a lesão é como uma amputação intrauterina: tudo o que está proximal à banda (articulações, músculos, tendões, nervos e vasos) se formou normalmente, e o dedo do pé encontra receptores prontos. Simbraquidactilia e aplasias também são indicações, mas mais difíceis, porque as estruturas receptoras podem faltar (Fig. 47.9). A hipoplasia do polegar é controversa, e muitos acham a policização melhor. A mão adactílica é reconstruída em etapas, o polegar primeiro e depois os dedos ulnares, ou o inverso (p. 1650).
+
+LISTER operou com 6 meses a 1 ano, mas em geral espera-se por volta dos **2 anos**, quando os vasos têm calibre para anastomose segura. Na deformidade unilateral, convém operar cedo, antes que a criança fixe padrões adaptativos de uso da mão normal; na bilateral não há essa pressa (p. 1650).
+
+Na aplasia, vasos, nervos e tendões receptores são identificados **antes** de levantar o dedo, porque podem não existir, e os próprios dedos do pé podem ser anormais. A primeira metatarsal dorsal costuma ser dominante, como no adulto; vários dedos podem ser levados pelo arco plantar. A fixação poupa as fises, e tendões receptores ausentes pedem transferências tendinosas primárias (p. 1650 e 1651).
+
+## Resultados na criança
+
+O sucesso chega a 96% e a sensibilidade é boa (discriminação móvel de 5 mm na série de FOUCHER). O problema **mais comum** é a amplitude de movimento imprevisível: a IFD quase não se move ativamente, a IFP tem déficit de extensão e pode haver flexão fixa. FOUCHER, em 58 crianças e 65 dedos, registrou arco ativo médio de 38 graus e déficit de extensão de 25 graus. O dedo transferido cresce **60 a 100%** do crescimento de um dedo normal, porque a fise vai com a irrigação (p. 1651).
+
+!questoes treino=mao-2091
+conceito: A síndrome da banda de constrição é a indicação congênita ideal, porque tudo o que está proximal à banda é normal e serve de receptor.
+como: A SBCM 2024 pediu a melhor indicação congênita entre várias malformações.
+armadilha: Escolher a mão torta radial ou a hipoplasia do polegar, em que faltam estruturas e a policização costuma ser melhor.
+!fim
+
+# A anatomia arterial do primeiro espaço: 70, 20 e 10 {radar=clinico}
+
+## O mapa
+
+O pedículo de quase todas as transferências está no **primeiro espaço intermetatarsal**, onde nascem a digital lateral do hálux e a digital medial do segundo dedo. Duas artérias chegam ali. Por cima vem a **primeira metatarsal dorsal** (FDMA), continuação da artéria dorsal do pé (pediosa); por baixo vem a **primeira metatarsal plantar** (FPMA), do sistema plantar. Elas se ligam em dois pontos: na base do espaço, entre o primeiro e o segundo metatarsos, pela perfurante profunda (a comunicante proximal, por onde a dorsal do pé mergulha para fechar o arco plantar), e na altura das cabeças, pela **comunicante distal**, de onde saem as digitais (Fig. 47.11, p. 1654). Classificações clássicas, como a de GILBERT, descrevem as variações da origem da FDMA e da relação dela com o interósseo e com o ligamento intermetatarsal, e mostram que essa rede é complexa e variável (p. 1651 e 1652).
+
+Na série de WEI, a **FDMA é dominante em cerca de 70%**, a **FPMA em 20%** e as duas são **iguais em 10%**; em cerca de **20%** das pessoas a dominância é **assimétrica** entre os dois pés (Fig. 47.10, p. 1652 e 1654). A assimetria é o motivo de não se poder deduzir o pé esquerdo pelo direito.
+
+!tabela Padrões arteriais do primeiro espaço (WEI; Green, cap. 47, p. 1652 a 1654)
+| Padrão | Frequência | Conduta |
+| --- | --- | --- |
+| dorsal dominante | cerca de 70% | ligar cedo a plantar menor e isolar a FDMA |
+| plantar dominante | 20% | uma veia superficial no dorso; FPMA até o meio da diáfise; enxerto de veia se curta |
+| iguais | 10% | dissecar a FDMA, mais fácil e direta |
+| assimetria entre os pés | 20% das pessoas | não deduzir um pé pelo outro |
+!fim
+
+## Por que a dissecção é retrógrada
+
+A técnica clássica começava proximal, no dorso do pé, achava a dorsal do pé e seguia a FDMA para distal; quando a artéria era plantar dominante ou mergulhava no interósseo, a dissecção virava uma escavação. WEI inverteu o caminho. Começa-se **sempre no dorso do primeiro espaço, distalmente**, onde o ponto é constante em qualquer padrão: a junção da digital lateral do hálux com a digital medial do segundo dedo, sobre o **ligamento intermetatarsal**. Dali segue-se 2 a 3 cm para proximal e se vê qual artéria é a maior. Se a dorsal domina, a plantar menor é ligada cedo e a FDMA é isolada; ela costuma ser superficial ao interósseo, mas pode correr dentro ou abaixo dele (p. 1652 e 1653). Com **calibres semelhantes**, disseca-se a **FDMA**, mais fácil e direta (p. 1653).
+
+Se a plantar domina, basta uma veia superficial do dorso, e a FPMA é isolada até o meio da diáfise metatarsal, onde se une à dorsal do pé pela comunicante proximal. Se for preciso um pedículo mais longo, a FPMA é dividida e alongada com **enxerto de veia**: perseguir a comunicante até a dorsal do pé é tedioso e destrói o pé (p. 1653).
+
+A abordagem retrógrada tem duas vantagens que o livro destaca: serve às transferências parciais, que precisam de pedículo curto, e à criança, em que o calibre do vaso doador é o fator mais importante depois da disponibilidade do receptor. E torna **desnecessária a angiografia pré-operatória** de rotina do pé, porque o padrão é descoberto na mesa (p. 1653 e 1654).
+
+## Quando a FDMA não existe
+
+No retalho do primeiro espaço e nas polpas, se a FDMA está ausente ou é muito pequena, começa-se pelo lado **plantar** e disseca-se a FPMA de forma retrógrada; se ela ficar curta, usa-se enxerto de veia. O Green é explícito: não há necessidade de abandonar o procedimento se a FDMA não existe (p. 1660 e 1661).
+
+!questoes treino=mao-2360,mao-1770,mao-3776,mao-3779
+conceito: A primeira metatarsal dorsal, ramo da artéria dorsal do pé, domina em cerca de 70%; com calibres iguais, disseca-se a dorsal, mais fácil.
+como: O SIMÃO 2024 pediu a artéria com calibres parecidos; o SIMÃO 2026, a dominante e a origem dela.
+armadilha: Escolher a plantar porque "já se disseca o lado plantar" ou dizer que ela nasce do arco plantar na maioria.
+!fim
+
+# Hálux total, hálux aparado e envoltório {radar=clinico}
+
+## Três respostas para o mesmo problema
+
+O hálux é o dedo do pé que mais se parece com o polegar na largura da polpa e da unha, mas é maior. O capítulo mostra três formas de usá-lo, e cada uma resolve o tamanho de um jeito (p. 1654).
+
+- **Hálux total**: indicado quando o polegar foi amputado **na falange proximal ou no metacarpo**. Dá o maior arco de movimento e uma polpa larga, que faz pinça forte, mas muitas vezes fica grande demais.
+- **Envoltório (wraparound) de MORRISON**: leva só a unha e o envelope de pele do hálux, que embrulham um enxerto ósseo convencional. Fica bonito e do tamanho certo, mas **não tem IF móvel**, porque não leva articulação, e o enxerto ósseo pode reabsorver.
+- **Hálux aparado (trimmed) de WEI**: soma as vantagens. O hálux é afinado no osso e na pele, mantendo a IF. É indicado quando a diferença de tamanho é inaceitável, sobretudo se o paciente quer IF móvel. Perde-se cerca de **18 graus** na IF, sem prejuízo da pinça polpa a polpa (no caso da figura do livro, 30 graus de arco ativo ficaram preservados).
+
+!tabela Hálux para o polegar (Green, cap. 47, p. 1654 a 1656)
+| Técnica | Indicação | IF | Tamanho |
+| --- | --- | --- | --- |
+| hálux total | polegar na falange proximal ou metacarpo | móvel, maior arco | muitas vezes grande |
+| envoltório de MORRISON | polegar sem esqueleto distal, estética | sem IF móvel (enxerto ósseo) | ajustado |
+| hálux aparado de WEI | diferença de tamanho inaceitável com desejo de IF móvel | móvel, cerca de 18 graus a menos | ajustado |
+!fim
+
+## Como se apara o hálux
+
+Medem-se as circunferências do hálux e do polegar do outro lado em três pontos (eponíquio, ponto mais largo na IF e meio da falange proximal) e somam-se 2 a 3 mm, para não apertar o pedículo. Uma faixa medial de pele de 0,5 a 0,8 cm fica no pé; deixam-se 2 mm de prega ungueal, e a unha não é aparada com o leito, porque isso deforma a prega (p. 1654). Leva-se uma veia e a artéria dominante, dissecada de forma retrógrada; preservam-se os ramos do fibular profundo; a incisão plantar fica lateral à cabeça do primeiro metatarso, fora da área de carga (p. 1654 e 1655).
+
+O afinamento ósseo é feito com o "retalho periarticular": colateral, cápsula e periósteo são elevados juntos, com base plantar, e uma osteotomia longitudinal tira 4 a 6 mm da proeminência medial da articulação e 2 a 4 mm das diáfises; o retalho é suturado apertado para dar estabilidade (Fig. 47.12, p. 1655 e 1656). É esse afinamento da articulação que custa os 18 graus.
+
+No pé, preserva-se **pelo menos 1 cm da base da falange proximal**, pela razão da marcha já explicada. Depois de soltar o garrote, o dedo é **reperfundido por pelo menos 20 minutos** antes de seguir, para confirmar a circulação e deixar o espasmo ceder. A doadora é fechada primariamente, sem enxerto de pele e sem dreno. Na mão, o coto é aberto em cruz em quatro retalhos, e a artéria receptora é a digital comum (primeira escolha), a princeps pollicis ou a radial na tabaqueira (p. 1656).
+
+!questoes treino=mao-2359,mao-3770
+conceito: O hálux total serve ao polegar amputado na falange proximal ou no metacarpo; o envoltório de MORRISON não tem IF móvel; a mão metacarpal de WEI se divide pelo polegar (tipo I íntegro ou distal à IF, tipo II proximal à IF).
+como: O SIMÃO 2024 pediu a afirmação correta sobre técnica por nível.
+armadilha: Dar IF móvel ao envoltório ou levar o hálux total a uma amputação na falange distal.
+!fim
+
+
+# O segundo dedo e as transferências parciais {radar=clinico}
+
+## O segundo dedo, parcial ou total
+
+No adulto, levar o segundo dedo para o polegar é controverso (é estreito e tem poucas articulações móveis), mas para os dedos longos é bem aceito; a exceção no polegar é a amputação proximal à CMC, em que o segundo dedo com o metatarso dá o comprimento que o hálux não dá. Na criança, o segundo dedo é preferido para polegar e dedos, porque a doadora pesa menos (p. 1656). A transferência é **parcial** quando o defeito é distal à inserção do FDS (Fig. 47.13) e **total** quando é mais proximal (Fig. 47.14).
+
+FOUCHER e NORRIS usam uma abordagem só dorsal, retirando o segundo metatarso, o que permite marcha precoce, mas é mais difícil para os inexperientes e manipula mais o pedículo. WEI prefere a abordagem **combinada dorsal e plantar**: a pele plantar glabra é útil na mão, e o metatarso nem sempre precisa sair (p. 1656 e 1657).
+
+No método preferido, duas equipes trabalham ao mesmo tempo. Retalhos em "V" dorsal e plantar têm o vértice 5 a 10 mm proximal à osteotomia e as pontas no meio do primeiro e do segundo espaços; a incisão proximal faz um "S", e a plantar é vertical, fora da carga. Leva-se uma veia; a artéria dominante é achada de forma retrógrada; divide-se o ligamento transverso metatarsal. Ramos do fibular superficial só vão se houver nervo sensitivo receptor. Isolam-se o extensor longo e o curto dos dedos; a pele plantar vem com 2 a 3 mm de subcutâneo; os nervos digitais são seguidos até os comuns, com neurólise interna para ganhar comprimento, e marcados com fio 6-0. Distal à osteotomia, o dedo é esqueletizado o mínimo possível, sobretudo na parcial, em que os vasos são menores e o **vasoespasmo** é mais frequente. Reperfunde-se por 20 minutos e fecha-se primariamente, sem reparar o ligamento intermetatarsal e sem dreno; se o fechamento for difícil, desarticula-se a metatarsofalângica ou amputa-se no metatarso, e **nunca** se enxerta a doadora (p. 1657).
+
+## O envoltório do segundo dedo
+
+Para os dedos longos, WEI prefere o envoltório do **segundo dedo** ao do hálux, porque tamanho e unha combinam; ele também serve ao polegar de quem não aceita perder parte do hálux. A indicação é a perda **circunferencial** ou hemicircunferencial dorsal de pele e unha distal à porção proximal da falange média, com esqueleto, tendões e IFP íntegros. O retalho não leva tendões, mas **sempre leva a falange distal**, que evita rotação, instabilidade e reabsorção; o resto do dedo é desarticulado na metatarsofalângica. As incisões evitam cicatriz nas faces de contato: radial do indicador, do médio e do anelar, e ulnar do polegar e do mínimo (Fig. 47.15, p. 1657 e 1658).
+
+## Polpa, hemipolpa e o primeiro espaço
+
+A polpa livre é indicada nos defeitos grandes que não se cobrem com retalho local ou regional, quando a sensibilidade é essencial, em profissões especiais (artista, músico) e para substituir enxertos ou retalhos instáveis e dolorosos; serve melhor ao polegar (p. 1658). O **hálux** é preferido ao segundo dedo como doador de polpa: sensibilidade melhor (discriminação de 7 a 18 mm contra 10 a 25 mm), mais tecido e fechamento direto (p. 1659).
+
+Na **hemipolpa** lateral do hálux ou medial do segundo dedo, o retalho leva **sempre dois nervos**: o digital plantar próprio e o ramo do **fibular profundo**, que inerva também essas faces e se sobrepõe ao digital. Levar só um deixa parte da ilha insensível (p. 1659). Todas as veias superficiais das faces lateral e dorsal do hálux são dissecadas em continuidade com uma veia calibrosa, e a doadora sem fechamento recebe enxerto de pele parcial do peito do pé (p. 1660).
+
+O **retalho neurossensitivo do primeiro espaço** cobre defeitos de partes moles de um dedo com tecido fino e glabro, parecido com a palma; pode chegar a 7,3 por 14 cm, indo até as pontas do hálux e do segundo dedo, e dois dedos adjacentes podem ser cobertos por um retalho só com sindactilia temporária. A irrigação vem da **comunicante distal** entre a FDMA e a FPMA; se o desenho se estende à face lateral do hálux ou medial do segundo, incluem-se as digitais respectivas. A inervação dorsal é do **fibular profundo** (e em menor grau do superficial); se o retalho chega à polpa, incluem-se os digitais comuns plantares. A doadora recebe enxerto de pele parcial com curativo de BROWN (tie-over) (Figs. 47.16 a 47.18, p. 1659 a 1661).
+
+## O enxerto ungueal vascularizado
+
+O enxerto de unha vascularizado pega melhor que o não vascularizado. É indicado na perda da ponta com leito ungueal, depois de ressecção de tumor e na unha dolorosa ou feia, como a unha em gancho pós-traumática. Muitas vezes, porém, é mais fácil levar o segundo ou o terceiro dedo inteiro distal ao meio da falange média, porque ilhas pequenas drenam mal (p. 1661).
+
+A unha do hálux combina melhor com a do polegar, mas é pouco usada pela deformidade que deixa; a do segundo é menor e quadrada, mas parecida, e o defeito é menor. Leva-se mais da **metade da polpa medial** do segundo dedo (ou lateral do hálux) para incluir a digital própria dorsal. As veias dorsais pequenas devem estar em continuidade com uma tributária da safena. No hálux faz-se osteotomia transversa da falange distal; no segundo dedo, leva-se a falange distal inteira ou a metade dorsal depois de desarticular a IFD (preferência dos autores). MORRISON estreita a unha aparando a matriz lateral. A doadora do hálux é coberta com um cross-toe dividido em 2 semanas; a do segundo e do terceiro, por desarticulação da metatarsofalângica (Figs. 47.19 e 47.20, p. 1661 a 1663). Quando todo o segmento distal falta, o envoltório do segundo dedo é melhor que a unha isolada.
+
+## O terceiro dedo isolado
+
+O terceiro dedo entra quando o segundo não está disponível ou é inadequado, quando o segundo do mesmo pé precisa ficar porque o hálux foi doado (marcha) ou quando o tamanho do terceiro combina melhor. A irrigação vem da segunda e da terceira metatarsais dorsais e plantares, mas na prática o dedo é baseado na **terceira artéria digital plantar comum**, pequena, porém maior que as dorsais; disseca-se direto o pedículo plantar e usa-se enxerto de veia se preciso (p. 1663).
+
+# Dois e três dedos de uma vez {radar=fundamento}
+
+## O segundo e o terceiro combinados
+
+O par é a solução para dois dedos adjacentes amputados **proximal às comissuras**: devolve pinça trípode, gancho e estabilidade lateral. Comparado aos dois segundos dedos, exige um só conjunto de vasos receptores, gasta menos tempo, concentra a morbidade num pé e permite andar mais cedo. O limite é o comprimento: a função é melhor com dedos uniformes, usando a ponta de um mínimo normal como guia (Fig. 47.22, p. 1663 e 1664).
+
+Se sobram 5 a 6 mm de falange proximal na mão, a osteotomia é feita na falange proximal do pé. Se a amputação foi na MF, os dedos são retirados por desarticulação da metatarsofalângica, e a cápsula e os ligamentos montam a **articulação composta**, que deu arco ativo médio de **52 graus** (30 a 80). Desarticular preserva as cabeças e o arco metatarsal, evitando a deformidade em "tesoura" no pé. Na amputação transmetacarpal, a osteotomia é transmetatarsal; reconstruir o arco do pé com enxerto ósseo não vascularizado **não é mais recomendado** (p. 1664).
+
+Antes, WEI tirava o par do pé contralateral para os dedos radiais e do ipsilateral para os ulnares, de modo que o segundo dedo, mais longo, ficasse no centro da mão. Hoje, se só um par é necessário, tira **sempre do pé esquerdo**, e do direito só se o esquerdo não servir (por exemplo, se o hálux do mesmo pé foi usado para o polegar). As incisões não passam do meio do primeiro e do terceiro espaços. Levam-se três nervos: o digital próprio medial do segundo, o digital comum do segundo e terceiro e o digital próprio lateral do terceiro. Evita-se manipular o segundo espaço, onde ficam as comunicantes que irrigam o terceiro dedo (p. 1664 e 1665).
+
+O número que define a técnica é este: em 57 transferências, quase **20%** precisaram de reexploração por insuficiência arterial quando havia uma só artéria dominante. Por isso preservam-se a segunda e a terceira digitais plantares comuns para uma **segunda anastomose arterial**, sobretudo se a perfusão do terceiro dedo parecer duvidosa. Enxerto de pele na doadora é "inaceitável" (p. 1665).
+
+## Terceiro e quarto, e as triplas
+
+O par de terceiro e quarto é a alternativa quando o segundo precisa ficar no pé (marcha ou porque vai para o polegar) ou não está disponível. A dissecção começa no segundo espaço dorsal; o sistema plantar é mais constante aqui. Inclui-se a quarta metatarsal plantar como vaso "salva-vidas" (lifeboat), e WEI aconselha **duas anastomoses arteriais**; as plantares não são dissecadas além do meio da diáfise (p. 1665).
+
+As transferências triplas do mesmo pé (segundo, terceiro e quarto, ou terceiro, quarto e quinto) são relatos de caso para a mão metacarpal bilateral; deixam deformidade visível, sem grande prejuízo funcional (p. 1665).
+
+# No receptor: osso, tendões, nervos e vasos {radar=confirmado}
+
+## A organização e a ordem
+
+Com duas equipes, mede-se a mão antes de cortar o pé, disseca-se menos no pé e reduz-se o tempo cirúrgico e anestésico. O receptor é preparado sob garrote e lupa; o coto é aberto em cruz em quatro retalhos finos e móveis. A artéria receptora é abordada por incisão separada (ulnar na falange proximal ou na palma distal, ou na tabaqueira se for a radial, com túnel largo). Polias preservadas, aderências liberadas já no preparo e tenorrafias feitas na palma média, longe da A1 (raramente no punho). Se falta o flexor, transfere-se antes o FDS de um dedo vizinho (p. 1665 e 1666).
+
+A sequência do Green é **osso, extensor, flexor, nervos, pele provisória, artéria e veia** (p. 1666). A pele é fechada provisoriamente antes das anastomoses porque, com o dedo já perfundido e edemaciado, fechar depois aumentaria a tensão sobre o pedículo.
+
+## A fixação
+
+Usam-se amarrilho intraósseo, fios de KIRSCHNER, placas e pino ósseo intramedular. YIM e WEI usaram o **amarrilho intraósseo paralelo** em 68 transferências de 47 pacientes e tiveram **1,5%** de pseudartrose em 30 meses. As vantagens explicam a preferência: estabilidade para mobilizar cedo, angulação e rotação leves corrigíveis com órtese, técnica simples, rápida e barata, e possível num coto de 5 mm. Deixam-se 2 mm de osso entre o furo e a borda, fazem-se dois furos de 1 mm no sentido dorsopalmar e usa-se fio de aço 2-0 (28 gauge), com as pontas longe do extensor (p. 1666 e 1667). Na articulação composta, a placa volar e os colaterais do pé são suturados aos do dedo, com a placa volar sob tensão para evitar hiperextensão; é usada sobretudo no par de segundo e terceiro (p. 1667).
+
+## Os tendões e a luta contra a garra
+
+O dedo do pé tem postura natural em garra: metatarsofalângica em extensão e interfalângicas em flexão, com intrínsecos fracos. Levado à mão, ele tende a repetir essa postura. Por isso o **extensor é reparado primeiro**, com a IFP e a MF em extensão total, entrelaçando o extensor longo do pé ao extensor do dedo, e com tensão apertada; e o paciente usa **órtese noturna em extensão por pelo menos um ano** (p. 1667).
+
+O flexor longo do dedo do pé é suturado ao coto proximal do FDP. Distalmente, o FDP só entra para estabilidade na pinça de força, com o FDS íntegro; sem FDP distal, sutura-se à porção distal da inserção do FDS. Proximalmente, usa-se só o FDP, na zona 3, fora das polias. A tensão segue a cascata natural dos dedos (p. 1667).
+
+## O aparelho extensor do dedo menor: tipos I e II
+
+O déficit de extensão da IFP é o problema comum do segundo dedo transferido, e o capítulo explica por quê com um estudo do aparelho extensor dos dedos menores do pé, que mostrou dois tipos (p. 1667 e 1668).
+
+- **Tipo I**: **banda central atenuada**. Tracionar o extensor longo e o curto não corrige o déficit; ele só se corrige flexionando passivamente a metatarsofalângica ou puxando juntos os extrínsecos e os intrínsecos. Ou seja, a extensão da IFP depende das bandas laterais.
+- **Tipo II**: **banda central distinta**. A tração dos extensores corrige o déficit, com ou sem os intrínsecos.
+
+O algoritmo de LAM e colaboradores, em 9 pacientes, decide no ato: no tipo I com bandas laterais receptoras suficientes, faz-se a **centralização** das bandas laterais; com bandas insuficientes, o **STACK modificado**; no tipo II, basta o **reparo apertado dos extensores**. O arco total ficou em 53,9 graus (flexão média de 72,2), 81,1% do arco passivo prévio da IFP do pé. O Campbell (cap. 68, p. 3090) cita o algoritmo de LOH e colaboradores na mesma linha: avaliar a banda central do dedo do pé e o extensor do receptor melhora o resultado.
+
+!tabela Aparelho extensor dos dedos menores do pé (Green, cap. 47, p. 1667 e 1668)
+| Tipo | Banda central | Tração dos extensores | Conduta |
+| --- | --- | --- | --- |
+| I | atenuada | não corrige o déficit | centralização (bandas suficientes) ou STACK modificado |
+| II | distinta | corrige | reparo apertado dos extensores |
+!fim
+
+## Nervos, pele e vasos
+
+Os nervos são suturados término-terminal com náilon 10-0, em geral só os digitais próprios; se houver receptores, o fibular profundo e o superficial vão separados; com um só receptor, juntam-se vários nervos do pé com prioridade aos digitais próprios. Se os digitais da mão foram avulsionados, servem o cutâneo palmar do mediano, os dorsais do ulnar, transferências da face ulnar do médio ou do anelar e ramos do radial superficial (p. 1666 e 1668).
+
+A cobertura inadequada é causa importante de complicações. Pele redundante na junção deixa a deformidade em "**cobra**"; gordura em excesso, aspecto bulboso (p. 1668).
+
+A artéria digital **ulnar**, maior, é a receptora preferida; nas amputações proximais, as digitais comuns, se o arco está íntegro; retira-se a adventícia para evitar espasmo; se os vasos são pequenos demais, usam-se a radial na tabaqueira ou a princeps. Enxerto de veia entra quando a artéria doadora é curta, como no sistema plantar dominante. Leva-se uma veia dorsal, por incisão separada no dorso da mão. A **artéria** é anastomosada primeiro e o retorno venoso é observado por alguns minutos; retorno ruim manda reavaliar a artéria e o trajeto; perfusão duvidosa (o terceiro dedo do par) pede uma segunda artéria. Sob tensão, fecha-se parcialmente e enxerta-se; drenos finos de silicone ficam longe das anastomoses (p. 1666 e 1668).
+
+!questoes central=mao-1453
+conceito: No aparelho extensor dos dedos menores do pé, o tipo I tem banda central atenuada (a tração dos extensores não corrige o déficit da IFP) e o tipo II, banda central distinta (a tração corrige).
+como: A USP-SP 2024 pediu a correspondência entre tipo e banda central, com distratores sobre a correção e o extensor curto.
+armadilha: Inverter os tipos, achar que a tração corrige mais no tipo I ou inventar uma banda "duplicada".
+!fim
+
+# Articulações vascularizadas do pé {radar=clinico}
+
+O Green 7 não tem seção própria de transferência articular vascularizada isolada; cita os trabalhos de CHEN e WEI e de LAM na lista de referências. O capítulo 68 do Campbell (p. 3090) completa. Articulações transplantadas com o pedículo **sobrevivem e funcionam sem deteriorar**, e as **fises vascularizadas continuam crescendo**, porque a cartilagem e a placa de crescimento dependem de irrigação viva; um enxerto articular não vascularizado necrosa, colapsa e não cresce.
+
+A **metatarsofalângica do pé para a MF do dedo** dá movimento indolor, estável e funcional, com crescimento quase normal; a vantagem principal é a **durabilidade**. Por isso ela é a resposta para o jovem que perdeu a MF e a fise do metacarpo: a articulação acompanha o crescimento. A **IFP do pé para a IFP do dedo** é menos bem-sucedida: arco médio de cerca de 40 graus e déficit de extensão de cerca de 30 graus, pelo mesmo motivo do segundo dedo transferido (banda central do pé muitas vezes atenuada). Avaliar a banda central e o extensor do receptor melhora o resultado (LOH e colaboradores, 2016). É opção para problemas pós-traumáticos e **pediátricos** difíceis, com cautela; dizer que "nunca" se faz em crianças está errado (Campbell, p. 3090).
+
+A comunicação arterial distal entre as artérias digitais do segundo dedo, estudada por CHEN e colaboradores, permitiu levar **duas articulações do dedo do pé num só pedículo**, para reconstruir duas articulações vizinhas de uma vez.
+
+O Campbell também diverge do Green em dois detalhes de conduta: dá força de pinça de 40 a 80% do lado oposto (p. 3081), contra até 75% no Green, e imobiliza a mão por 3 a 4 semanas com curativo compressivo no pé (p. 3089), enquanto WEI não usa tala. São diferenças de rotina, não de fato.
+
+!questoes treino=mao-2633,mao-3771,mao-3778
+conceito: A comunicação arterial distal entre as digitais do segundo dedo permitiu levar duas articulações do dedo do pé num só pedículo; a fise vascularizada continua crescendo.
+como: O SIMÃO 2021 pediu qual transferência articular essa anatomia tornou viável.
+armadilha: Multiplicar os pedículos ou reduzir a uma articulação.
+!fim
+
+# Depois da cirurgia: vigiar, complicações e retoques {radar=clinico}
+
+## O pós-operatório de WEI
+
+O paciente fica na unidade de microcirurgia em média 5 dias. **Não se usa tala**: a palma proximal e o punho são envoltos, os dedos ficam à vista e a mão discretamente elevada. Curativo volumoso é evitado porque junta coágulos, provoca espasmo na retirada e impede a reabilitação precoce (p. 1668).
+
+A rotina é **AAS 325 mg/dia por 2 semanas**. O dextran 40 (100 mL em bolo 10 minutos antes de terminar a anastomose arterial e depois 25 mL/h por 4 a 5 dias) caiu em desuso pelas complicações sistêmicas, e a heparina pode dar hematoma; WEI não usa nenhum dos dois, salvo anastomose difícil. O antibiótico é uma cefalosporina, com gentamicina em cirurgia longa ou ferida contaminada (p. 1668 e 1669).
+
+A monitorização combina cor, turgor e enchimento capilar, temperatura de superfície comparada ao dedo vizinho e à mão oposta, Doppler e **oximetria de pulso diferencial**: onda irregular ou perdida indica **trombose arterial**; dessaturação com onda presente indica **oclusão venosa**. O pé recebe gaze com nitrofurazona e curativo leve, sem tala, e fica descoberto em 2 dias (p. 1669).
+
+## O vasoespasmo
+
+O **vasoespasmo** é provavelmente a complicação **mais comum**, sobretudo nos **três primeiros dias**. Quanto menor o vaso, maior o risco, e por isso ele é mais frequente nas transferências **parciais** para reconstrução distal. Pode atingir o pedículo, o receptor ou os dois (p. 1669).
+
+A prevenção tira os gatilhos simpáticos e mecânicos: nada de cafeína, chocolate, fumo, quarto frio ou manipulação excessiva; pressão arterial adequada, hidratação e analgesia; dissecção delicada e receptores fora da zona de lesão. O tratamento começa com aquecer, deixar a mão **abaixo do coração**, soltar pontos e aplicar lidocaína tópica a 2 a 4%. Se a circulação não volta em cerca de **1 hora**, a **reexploração é imediata**: esvaziar hematoma, adventicectomia, liberar bandas, lidocaína a 4% ou papaverina; espasmo intratável pede ressecção e enxerto de veia ou retalho venoso de fluxo contínuo; receptor em espasmo pede um vaso mais proximal e maior, com enxerto. A trombose na anastomose é sempre conferida. No par de segundo e terceiro, se o problema é de influxo, a segunda ou terceira plantar faz a segunda anastomose (p. 1669).
+
+A **trombose venosa é incomum** e costuma vir de compressão por encaixe errado ou hematoma. A maioria dos dedos se salva com a reexploração; a falha final foi de **3,5%** (p. 1669).
+
+## Quando o dedo se perde
+
+Uma nova transferência é possível, mas **não imediata**: primeiro se entendem as causas e o paciente se recupera. Se o segundo dedo foi perdido, usa-se o segundo ou o hálux contralateral; se o hálux foi perdido, o segundo contralateral, preservando a marcha. Quem recusa nova transferência pode ter o coto salvo com retalho inguinal, sobretudo se o dedo perdido era o hálux (p. 1669).
+
+Entre as outras complicações, os **problemas de cobertura e cicatrização** são provavelmente os mais comuns, com necrose de retalhos finos, sobretudo depois de retalho inguinal prévio; tendões e nervos expostos devem ser cobertos logo (p. 1669).
+
+## Os procedimentos secundários
+
+Diversos autores relatam procedimentos secundários em 20 a 70% dos casos. Na série de WEI, de 133 transferências, 19 (14,3%) precisaram de um procedimento funcional, em média aos 8,8 meses: tendão em 9,0%, partes moles em 3,8%, articulação em 2,3% e osso em 1,5%. A **tenólise** foi o mais comum (**6,8%**), seguida da **artrodese** (3,0%) e do **aprofundamento da comissura** (3,0%). A tenólise flexora dá bons resultados, e faz sentido: o flexor passa por polias e cicatrizes da mão lesada, e a aderência é a causa natural do dedo que flete bem passivamente e mal ativamente. Também entram enxertos de tendão e nervo, tenorrafias, transferências, osteotomias e capsulotomias. Na estética, a **polpoplastia** sob anestesia local afina o dedo bulboso, e a revisão de cicatriz e a zetaplastia corrigem a junção (p. 1669 a 1671).
+
+!tabela Complicações e retoques (Green, cap. 47, p. 1669 a 1671)
 | Item | Fato |
 | --- | --- |
-| hálux total | polegar na falange proximal ou metacarpo |
-| envoltório de MORRISON | sem IF móvel |
-| pedículo | dorsal dominante em 70%; calibres iguais, dorsal |
-| mão metacarpal I e II | polegar distal ou proximal à IF |
-| congênito | anel de constrição |
-| extensor I e II | banda central atenuada ou distinta |
+| complicação vascular mais comum | vasoespasmo, nos 3 primeiros dias, mais nas parciais |
+| sem circulação após 1 hora | reexploração imediata |
+| trombose venosa | incomum; falha final 3,5% |
+| demais complicações mais comuns | cobertura e cicatrização |
+| procedimento funcional (WEI) | 14,3%, em média aos 8,8 meses |
+| o mais comum | tenólise 6,8%; artrodese e comissura 3,0% cada |
+| estético | polpoplastia |
 !fim
 
-!questoes central=mao-1453 treino=mao-2359,mao-2360,mao-2091
-conceito: Hálux total na falange proximal ou metacarpo; MORRISON sem IF móvel; calibres iguais, a metatarsal dorsal primeira; tipo I com banda atenuada; anel de constrição é a indicação congênita ideal.
-como: O SIMÃO 2024 pediu a afirmação correta e a artéria; a USP-SP 2024, o aparelho extensor; a SBCM 2024, a indicação congênita.
-armadilha: Dar IF móvel ao envoltório, inverter os tipos ou indicar a mão torta radial.
+!questoes treino=mao-2601,mao-3772
+conceito: O vasoespasmo é a complicação mais comum, nos três primeiros dias e mais nas transferências parciais; sem circulação após cerca de 1 hora, reexplora-se.
+como: O SIMÃO 2022 pediu a complicação mais encontrada nos primeiros dias.
+armadilha: Escolher a trombose venosa, que é incomum, ou a rigidez, que é tardia.
 !fim
+
+# Resultados, o pé que ficou e a reabilitação {radar=fundamento}
+
+## O que o dedo devolve
+
+A sobrevida passa de **97%** (1.841 transferências entre 1985 e 2007). Na série de 1985 a 2012, com 2.083 dedos em 1.871 pacientes, o segundo dedo respondeu por 45%, o hálux por 11,5%, o par de segundo e terceiro por 10% e as outras técnicas (polpas incluídas) por 33,5%, com sucesso de **98%** (Tabela 47.3, p. 1671).
+
+A discriminação de dois pontos estática chega a 8 mm e a móvel fica entre 3 e 10 mm; a pinça de polpa e o limiar sensitivo ficam normais nos dedos reconstruídos. No hálux para o polegar, o arco médio é de 25 graus na MF e 29 na IF. No dedo do pé para dedo, o arco somado de IFP e IFD fica em 50 a 60 graus, com leve déficit de extensão da IFD comum; as transferências distais recuperam MF e IFP quase normais, porque essas articulações são da própria mão. A pinça chega a **75%** do lado oposto, e a preensão vai de cerca de 70% (segundo dedo imediato) a 90% (técnicas osteo-onicocutâneas) (p. 1671 e 1672).
+
+O hálux para o polegar não difere do reimplante de polegar, a não ser por uma IF um pouco melhor no grupo do dedo do pé; uma revisão sistemática não achou diferença entre as técnicas de hálux, com dados heterogêneos (p. 1672).
+
+O resultado mais curioso é cerebral: em cerca de **6 meses** o paciente passa a perceber o dedo transferido como dedo da mão; a ressonância funcional mostra ativação da área da mão no córtex sensitivo-motor primário, e os fenômenos de dedo fantasma melhoram ou somem (p. 1672).
+
+## O pé que ficou
+
+A deformidade é maior depois do hálux ou do par de segundo e terceiro do que depois do segundo dedo isolado; cicatriz hipertrófica e necrose parcial de pele aparecem quando os retalhos ficam finos ou tensos. Em 36 pacientes sem o segundo dedo, a carga subiu um pouco no hálux e no primeiro metatarso e caiu no terceiro, sem diferença significativa na marcha. Em 17 pacientes sem o segundo e o terceiro, aos 6 meses, velocidade, cadência, passo e apoio não mudaram; houve descarga metatarsal e mais carga no hálux e um pouco no calcanhar, como compensação. No Lower Limb Function Questionnaire, os escores foram iguais aos dos controles (p. 1670).
+
+O pé é reabilitado assim: depois da segunda semana, alguns passos apoiando só o **calcanhar**, sem tocar o antepé; pontos retirados não antes da terceira semana; marcha normal depois da quarta (p. 1671).
+
+## A reabilitação da mão
+
+A reabilitação motora tem cinco fases (p. 1670 e 1671):
+
+- Proteção (dias 1 a 3): na unidade de microcirurgia, com apoio psicológico.
+- Mobilização precoce (dia 4 à semana 4): mão cerca de 30 cm acima do coração até a segunda semana; movimento passivo de cerca de 15 graus por articulação a partir do dia 4; malha tubular e órtese entre os exercícios.
+- Movimento ativo (semanas 5 e 6): bloqueio de flexão e extensão na sexta semana, depois que os tendões cicatrizaram; compressão, ultrassom e massagem.
+- Atividades de vida diária (semanas 7 e 8).
+- Pré-profissional (da semana 8 em diante).
+
+A órtese noturna em extensão continua por pelo menos um ano, contra a garra. Grupos com outros transplantados ajudam a adesão.
+
+A reeducação sensitiva não acelera o axônio; ela usa a capacidade do córtex de reinterpretar sinais incompletos. A fase precoce começa quando o paciente percebe o diapasão de 30 Hz na ponta; a tardia trabalha forma, tamanho e textura e pode ser feita em casa. O número de corpúsculos de MEISSNER no dedo transferido se correlaciona com a discriminação de dois pontos (p. 1671).
+
+## Os seis princípios de WEI
+
+O capítulo fecha com seis princípios para um bom resultado: manejo inicial correto de todas as estruturas, planejamento, escolha da técnica, execução meticulosa, reabilitação motora e sensitiva e revisões apropriadas (p. 1672). Cada um corresponde a uma das seções acima, e a prova cobra justamente os pontos em que o raciocínio de cada etapa contraria a intuição.
+
+> **Na prova:** dedo único **distal à IFP** é ótima indicação, proximal vai para **amputação do raio**; preservar comprimento, **não ressecar o nervo** proximal e cobrir com **retalho inguinal**; primária com sobrevida igual (**96,9% e 96,5%**), **30% menos convalescença** e estética **pior**; poupar **1 cm** da base da falange proximal do hálux; par de dedos do **pé esquerdo**; mão metacarpal **I** (polegar até a IF) e **II** (polegar proximal à IF), **IB** articulação composta, **IC** transmetatarsal, **IIC** polegar depois com poste; congênito ideal = **banda de constrição**, esperar cerca de **2 anos**, crescimento **60 a 100%**; FDMA **70%**, FPMA **20%**, iguais **10%**, assimetria **20%**; dissecção **retrógrada** sobre o **ligamento intermetatarsal**, sem angiografia; calibres iguais, **dorsal**; hálux total na **falange proximal ou metacarpo**, MORRISON **sem IF móvel**, aparado perde **18 graus**; hemipolpa com **dois nervos**; extensor tipo **I atenuado** e **II distinto**; órtese em extensão por **1 ano**; amarrilho intraósseo com **1,5%** de pseudartrose; **vasoespasmo** nos 3 primeiros dias, reexplorar em **1 hora**; **tenólise 6,8%**; AAS **325 mg** por 2 semanas; sucesso **98%**; pinça **75%**; dedo percebido como dedo em **6 meses**.
 
 # Punho e antebraço {radar=confirmado}
 
