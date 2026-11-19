@@ -13812,15 +13812,15 @@
   },
   {
    "id": "green-mao-reumatoide",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Mão reumatoide",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)",
    "capitulo": "Capítulo 55 · Rheumatoid Arthritis and Other Connective Tissue Diseases",
-   "resumo": "Sinóvia que estira e invade; deformidades bilaterais e simétricas; prioridade da dor, punho e polegar antes dos dedos; tenossinovite dorsal indolor; rupturas extensoras do mínimo para o indicador (VAUGHAN-JACKSON) e FPL pelo escafoide (MANNERFELT); caput ulnae com supinação do carpo, desvio radial do carpo e desvio ulnar com luxação palmar da MF; DARRACH, SAUVÉ-KAPANDJI e artrodese com pinos de STEINMANN; SWANSON e intrínseco cruzado de FLATT; pescoço de cisne de NALEBUFF tipos I a IV; botoeira que nasce na IFP; polegar tipo I botoeira, III cisne, IV goleiro.",
+   "resumo": "A sinóvia que estira, invade e destrói; mão bilateral e simétrica; prioridades da dor, punho e polegar antes dos dedos, MF antes da IFP e dos extensores; tenossinovite dorsal indolor e tenossinovectomia após 4 a 6 meses; rupturas extensoras do mínimo para o indicador (VAUGHAN-JACKSON), três simuladores e o teste da tenodese; EPL com transferência do EIP; FPL na espícula do escafoide (MANNERFELT); caput ulnae, supinação do carpo, translocação ulnar e desvio radial dos metacarpos; DARRACH limitado e chanfrado, SAUVÉ-KAPANDJI, artrodese radioescafossemilunar e total com pinos de STEINMANN; desvio ulnar e luxação palmar da MF, FLATT e SWANSON; pescoço de cisne de NALEBUFF I a IV; botoeira que nasce na IFP; polegar de NALEBUFF I a VI; lúpus redutível, psoríase assimétrica, esclerodermia em flexão da IFP.",
    "acesso": "gratis",
-   "minutos": 39,
+   "minutos": 83,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -13833,8 +13833,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "antes-de-operar-medicacoes-e-prioridades",
-     "titulo": "Antes de operar: medicações e prioridades",
+     "id": "antes-de-operar-o-paciente-as-drogas-e-as-priori",
+     "titulo": "Antes de operar: o paciente, as drogas e as prioridades",
      "radar": "confirmado"
     },
     {
@@ -13858,8 +13858,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "cirurgia-do-punho-darrach-sauve-kapandji-e-artro",
-     "titulo": "Cirurgia do punho: DARRACH, SAUVÉ-KAPANDJI e artrodese",
+     "id": "cirurgia-do-punho-sinovectomia-darrach-sauve-kap",
+     "titulo": "Cirurgia do punho: sinovectomia, DARRACH, SAUVÉ-KAPANDJI e artrodeses",
      "radar": "confirmado"
     },
     {
@@ -13883,8 +13883,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "lupus-psoriase-esclerodermia-e-gota",
-     "titulo": "Lúpus, psoríase, esclerodermia e gota",
+     "id": "lupus-psoriase-esclerodermia-e-as-artrites-de-cr",
+     "titulo": "Lúpus, psoríase, esclerodermia e as artrites de cristais",
      "radar": "confirmado"
     },
     {
@@ -13924,11 +13924,65 @@
     "mao-0142",
     "mao-0398",
     "mao-0965",
-    "mao-0350",
     "mao-0500",
+    "mao-0350",
     "mao-0848"
    ],
-   "treino": [],
+   "treino": [
+    "mao-2267",
+    "mao-1969",
+    "mao-2349",
+    "mao-3490",
+    "mao-3505",
+    "mao-2358",
+    "mao-3491",
+    "mao-3500",
+    "mao-3503",
+    "mao-1807",
+    "mao-1967",
+    "mao-3504",
+    "mao-3509",
+    "mao-1805",
+    "mao-2613",
+    "mao-3487",
+    "mao-3499",
+    "mao-3506",
+    "mao-3512",
+    "mao-3516",
+    "mao-2268",
+    "mao-2475",
+    "mao-3508",
+    "mao-3510",
+    "mao-3514",
+    "mao-2432",
+    "mao-3515",
+    "mao-1966",
+    "mao-3492",
+    "mao-3498",
+    "mao-2400",
+    "mao-3501",
+    "mao-3488",
+    "mao-2269",
+    "mao-3502",
+    "mao-2181",
+    "mao-2270",
+    "mao-2348",
+    "mao-3489",
+    "mao-3495",
+    "mao-3507",
+    "mao-3511",
+    "mao-3517",
+    "mao-3513",
+    "mao-2053",
+    "mao-2616",
+    "mao-2627",
+    "mao-3493",
+    "mao-3494",
+    "mao-3496",
+    "mao-3497",
+    "mao-1968",
+    "mao-2396"
+   ],
    "subtemas": [
     "Mão reumatoide"
    ]
