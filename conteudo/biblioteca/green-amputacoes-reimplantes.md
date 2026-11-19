@@ -1708,7 +1708,7 @@ O mesmo parágrafo do Green fecha as outras portas (p. 1346). O **alongamento do
 
 A banca cobra o procedimento com duas armadilhas: trocar **separar** por **fundir** o rádio e a ulna, e trocar KRUKENBERG por outros epônimos (FOUCHER, por exemplo, é o retalho dorsal do indicador, nada tem com o antebraço). Na indicação, o distrator típico é o unilateral ou o vidente.
 
-!questoes central=mao-0439 relacionadas=mao-2591
+!questoes central=mao-0439 treino=mao-2591
 conceito: KRUKENBERG separa o rádio da ulna e faz o rádio pinçar contra ela, dando preensão com sensibilidade; indicação clássica no amputado bilateral do antebraço distal e cego, às vezes na criança vidente com antebraço longo.
 como: O TARO 2025 perguntou o procedimento possível na agenesia de punho e mão; outra prova pediu o correto sobre a deficiência transversa segundo o Green.
 armadilha: Marcar a fusão do rádio com a ulna ou trocar KRUKENBERG por FOUCHER; achar que o vidente unilateral é a indicação.
