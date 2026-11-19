@@ -14723,7 +14723,7 @@
   },
   {
    "id": "green-outros-mao-1",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Outros temas da mão (1): cotovelo traumático, leito ungueal, vias do rádio e anestesia local",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -14837,7 +14837,6 @@
     "mao-1100",
     "mao-0305",
     "mao-1162",
-    "mao-1364",
     "mao-1409"
    ],
    "treino": [],
@@ -14847,7 +14846,7 @@
   },
   {
    "id": "green-outros-mao-2",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Outros temas da mão (2): síndrome compartimental, VOLKMANN, aneurismas e trauma do cotovelo",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -14855,7 +14854,7 @@
    "capitulo": "Capítulo 20 · Fractures of the Proximal Ulna (com os capítulos 18, 19, 21, 22, 51, 54 e 60)",
    "resumo": "Síndrome compartimental (adulto, rádio distal e dois ossos; criança, dois ossos e cotovelo flutuante; coagulopatia contraindica medir a pressão; mão com 10 compartimentos; fasciotomia nas primeiras 8 h); neonatal com lesão sentinela no braço; VOLKMANN pela classificação de TSUGE (leve, moderada com déficit sensitivo do mediano, grave com extensores) e pseudo-VOLKMANN; aneurismas raros, falsos, traumáticos e da artéria ulnar; SECRETAN como linfedema factício; capítulo do úmero (tipo IV e DUBBERLEY); cabeça do rádio (valgo e supinação, sinal da vela, zona segura de 110 graus, necrose assintomática); círculo de HORII; MONTEGGIA (alinhar a ulna, interósseo posterior).",
    "acesso": "gratis",
-   "minutos": 42,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14948,20 +14947,6 @@
     "mao-1628"
    ],
    "treino": [
-    "mao-2335",
-    "mao-2012",
-    "mao-2011",
-    "mao-2063",
-    "mao-2265",
-    "mao-2607",
-    "mao-2336",
-    "mao-2177",
-    "mao-2062",
-    "mao-2337",
-    "mao-2500",
-    "mao-2176",
-    "mao-2457",
-    "mao-2264",
     "mao-2602",
     "mao-2056",
     "mao-2276",
@@ -16210,6 +16195,193 @@
    ],
    "subtemas": [
     "Sindactilia e polidactilia"
+   ]
+  },
+  {
+   "id": "green-sindrome-compartimental-mao",
+   "versao": 1,
+   "titulo": "Síndrome compartimental do membro superior e contratura de VOLKMANN",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 51 · Compartment Syndrome and Volkmann Ischemic Contracture",
+   "resumo": "Síndrome compartimental do membro superior pelo Green: definição (pressão acima da perfusão), estágio tardio depois de 4 h, iminente, por esforço e esmagamento (síndrome do esmagamento = repercussão sistêmica); MATSEN e o ciclo vicioso; adulto com rádio distal e dois ossos, criança com dois ossos e cotovelo flutuante, mão com injeção intravenosa, sem fratura = pensar em coagulopatia; dor desproporcional com pico em 2 a 6 h, três As da criança; limiar de 30 a 40 mm Hg ou a menos de 30 da diastólica ou da média; coagulopatia contraindica a medida; volar profundo é o primeiro e mais afetado, aberto entre FUC e FSD; mão com 10 compartimentos, começar pelo túnel do carpo estendido; fasciotomia em até 8 h do diagnóstico, profilática após reparo vascular com isquemia acima de 3 h, 24 h não contraindica; déficit neurológico como complicação mais comum; lesão sentinela do neonato no braço; VOLKMANN por TSUGE (leve, moderado com déficit sensitivo mediano maior que ulnar, grave com extensor), HOLDEN 1 e 2, teste de VOLKMANN, PAGE, deslizamento com neurólise, grácil com interósseo anterior, pseudo-VOLKMANN.",
+   "acesso": "gratis",
+   "minutos": 69,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "da-descricao-de-volkmann-aos-tipos-de-holden",
+     "titulo": "Da descrição de VOLKMANN aos tipos de HOLDEN",
+     "radar": "fundamento"
+    },
+    {
+     "id": "definicoes-aguda-iminente-por-esforco-e-esmagame",
+     "titulo": "Definições: aguda, iminente, por esforço e esmagamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "fisiopatologia-o-ciclo-vicioso-de-matsen",
+     "titulo": "Fisiopatologia: o ciclo vicioso de MATSEN",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-tem-sindrome-compartimental-no-membro-super",
+     "titulo": "Quem tem síndrome compartimental no membro superior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diagnostico-clinico-os-seis-ps-e-os-tres-as",
+     "titulo": "Diagnóstico clínico: os seis Ps e os três As",
+     "radar": "confirmado"
+    },
+    {
+     "id": "medida-da-pressao-e-metodos-nao-invasivos",
+     "titulo": "Medida da pressão e métodos não invasivos",
+     "radar": "clinico"
+    },
+    {
+     "id": "sindrome-compartimental-por-esforco",
+     "titulo": "Síndrome compartimental por esforço",
+     "radar": "fundamento"
+    },
+    {
+     "id": "compartimentos-do-braco-e-do-antebraco",
+     "titulo": "Compartimentos do braço e do antebraço",
+     "radar": "confirmado"
+    },
+    {
+     "id": "compartimentos-da-mao-e-dos-dedos",
+     "titulo": "Compartimentos da mão e dos dedos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-inicial-e-indicacao-da-fasciotomia",
+     "titulo": "Tratamento inicial e indicação da fasciotomia",
+     "radar": "clinico"
+    },
+    {
+     "id": "tecnica-da-fasciotomia-braco-antebraco-mao-e-ded",
+     "titulo": "Técnica da fasciotomia: braço, antebraço, mão e dedos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "depois-da-fasciotomia-curativo-fechamento-result",
+     "titulo": "Depois da fasciotomia: curativo, fechamento, resultados e complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sindrome-compartimental-neonatal-e-a-lesao-senti",
+     "titulo": "Síndrome compartimental neonatal e a lesão sentinela",
+     "radar": "clinico"
+    },
+    {
+     "id": "contratura-isquemica-de-volkmann-o-que-e-e-por-q",
+     "titulo": "Contratura isquêmica de VOLKMANN: o que é e por que progride",
+     "radar": "fundamento"
+    },
+    {
+     "id": "classificacao-de-tsuge",
+     "titulo": "Classificação de TSUGE",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-teste-de-volkmann-flexores-extrinsecos-e-o-efe",
+     "titulo": "O teste de VOLKMANN: flexores extrínsecos e o efeito tenodese",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-da-contratura-do-osso-ao-musculo-livr",
+     "titulo": "Tratamento da contratura: do osso ao músculo livre",
+     "radar": "clinico"
+    },
+    {
+     "id": "deslizamento-flexopronador-e-transferencias-tend",
+     "titulo": "Deslizamento flexopronador e transferências tendinosas",
+     "radar": "clinico"
+    },
+    {
+     "id": "transferencia-muscular-livre-funcional",
+     "titulo": "Transferência muscular livre funcional",
+     "radar": "clinico"
+    },
+    {
+     "id": "nervo-intrinsecos-e-o-volkmann-da-mao",
+     "titulo": "Nervo, intrínsecos e o VOLKMANN da mão",
+     "radar": "fundamento"
+    },
+    {
+     "id": "pseudo-volkmann",
+     "titulo": "Pseudo-VOLKMANN",
+     "radar": "clinico"
+    },
+    {
+     "id": "onde-o-green-7-diverge-das-outras-fontes",
+     "titulo": "Onde o Green 7 diverge das outras fontes",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0901",
+    "mao-1469",
+    "mao-0962",
+    "mao-0029",
+    "mao-1346",
+    "mao-1216",
+    "mao-1539",
+    "mao-0795",
+    "mao-1364"
+   ],
+   "treino": [
+    "mao-2335",
+    "mao-2012",
+    "mao-3659",
+    "mao-3664",
+    "mao-3675",
+    "mao-3663",
+    "mao-3674",
+    "mao-3661",
+    "mao-3655",
+    "mao-3657",
+    "mao-3669",
+    "mao-3670",
+    "mao-3656",
+    "mao-3662",
+    "mao-3666",
+    "mao-3667",
+    "mao-2011",
+    "mao-3668",
+    "mao-3672",
+    "mao-2265",
+    "mao-2063",
+    "mao-3658",
+    "mao-3676",
+    "mao-2607",
+    "mao-2336",
+    "mao-2177",
+    "mao-2062",
+    "mao-3660",
+    "mao-3673",
+    "mao-2337",
+    "mao-2500",
+    "mao-2176",
+    "mao-2457",
+    "mao-3665",
+    "mao-1990",
+    "mao-3671",
+    "mao-2264"
+   ],
+   "subtemas": [
+    "Outros temas da mão"
    ]
   },
   {
