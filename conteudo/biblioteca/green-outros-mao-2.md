@@ -369,7 +369,7 @@ O Green (cap. 18, p. 752 e 753) afirma que os sintomas do nervo ulnar são **com
 
 O próprio livro reconhece que a transposição de rotina é **muito controversa**: WANG não encontrou neuropatia em 20 pacientes transpostos, mas DOORNBERG observou que problemas do nervo ulnar são raros no seguimento longo. Quando a neuropatia se instala, neurólise e transposição anterior ajudam, mas a função do nervo não parece voltar ao normal.
 
-!questoes treino=mao-2353,mao-2522,mao-2352
+!questoes treino=mao-2353,mao-2522,mao-2352,ombro-cotovelo-0729
 conceito: Tipo IV é a fratura do capítulo que avança para medial e solta a borda lateral da tróclea; DUBBERLEY 2 é capítulo e tróclea em peça única (1, capítulo com ou sem crista lateral; 3, fragmentos separados).
 como: O SIMÃO 2024 pediu o tipo que leva a borda lateral da tróclea; o SIMÃO 2021, o tipo II de DUBBERLEY; o SIMÃO 2024, a incidência de neuropatia ulnar numa metanálise citada pelo Green.
 armadilha: Confundir DUBBERLEY 2 (peça única) com DUBBERLEY 3 (fragmentos separados), ou responder tipo III, que na classificação em quatro tipos é a cominutiva.
@@ -419,7 +419,7 @@ Na via lateral, o **nervo interósseo posterior** é protegido mantendo o antebr
 
 Sobre a **necrose avascular**, o livro é tranquilizador (p. 761): ela é provavelmente **comum** depois das fraturas da cabeça, porque os fragmentos desviados têm irrigação ausente ou precária, mas **em geral é assintomática**; os fragmentos fixados com estabilidade consolidam, revascularizam sem intercorrência e o **colapso tardio é incomum**. A conduta é de espera. O problema é outro quadro, a necrose de toda a cabeça associada à fratura do colo, que costuma vir com pseudoartrose e falha do material e termina em excisão ou artroplastia.
 
-!questoes treino=mao-2437,mao-2382,mao-2364,mao-2476
+!questoes treino=mao-2437,mao-2382,mao-2364,mao-2476,ombro-cotovelo-0730,ombro-cotovelo-0731
 conceito: Zona segura da cabeça do rádio: arco de 110 graus centrado 10 graus anterior ao ponto médio lateral, em rotação neutra. Mecanismo típico: valgo com supinação. Sinal da vela: hemartrose elevando os coxins anterior e posterior. Necrose dos fragmentos: comum e em geral assintomática.
 como: O SIMÃO 2022 pediu a descrição da zona segura e a combinação de posição do cotovelo e do antebraço no mecanismo; o SIMÃO 2024, o significado do sinal da vela; o SIMÃO 2021, a evolução da necrose avascular dos fragmentos.
 armadilha: Aceitar 90 ou 120 graus, o centro posterior ou o antebraço em pronação ou supinação; pôr coxins medial e lateral no sinal da vela (os coxins são anterior e posterior); esperar dor ou perda de movimento progressivas na necrose.
