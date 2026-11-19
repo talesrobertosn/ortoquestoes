@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-18",
+ "geradoEm": "2026-11-19",
  "capitulos": [
   {
    "id": "ao-fixadores-externos",
@@ -11111,15 +11111,15 @@
   },
   {
    "id": "green-artrose-punho-artroscopia",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Artrose do punho e artroscopia",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), caps. 74, 78 e 57, e o HEBERT (Ortopedia e Traumatologia, 5ª ed.), cap. 52",
    "capitulo": "Capítulo 12 · Wrist Arthrodesis and Arthroplasty",
-   "resumo": "SLAC de WATSON começa no estiloide e poupa a radiolunar; LLUCH: I radioescafoide, II escafocapitato, III lunocapitato, IV piramidal-hamato, V radiolunar; AR é a causa mais comum de artrose radiolunar isolada; escafocapitato e STT têm indicações e perda de movimento parecidas; escafoidectomia com quatro cantos no SLAC ou SNAC II e III, preferida abaixo de 45 anos; carpectomia proximal exige capitato e fossa do semilunar sãos e perde a indicação no estágio III; artrodese total com placa em 10 a 20° de extensão alinhada ao 3º metacarpo, cinco articulações, pseudartrose parcial na 3ª CMC (decorticar 80% dorsais), túnel do carpo até 10,5% com 67% de liberação; 3-4 é o portal de visão, 4-5 o de trabalho, 6-U de irrigação, mediocárpicos 1 cm distais; GEISSLER III admite o probe, IV o artroscópio; EWAS IIIB rompe o SL dorsal.",
+   "resumo": "Dor e estabilidade pesam mais que arco (PALMER: 30° de extensão, 5° de flexão, 10° de desvio radial e 15° de ulnar bastam); artrose primária do punho é incomum e mora na STT; SLAC de WATSON começa no estiloide e poupa a radiolunar; LLUCH: I radioescafoide, II escafocapitato, III lunocapitato, IV piramidal-hamato, V radiolunar; AR é a causa mais comum de artrose radiolunar isolada; escafocapitato e STT têm indicações e perda de movimento parecidas, escafoide a 40 a 50°; escafossemilunar tem pseudartrose de 50 a 85%; escafoidectomia com quatro cantos no SLAC ou SNAC II e III, contraindicada pela fossa do semilunar doente, com o semilunar reduzido como passo mais importante; carpectomia proximal exige capitato e fossa do semilunar sãos; artrodese total com placa do rádio ao 3º metacarpo, cinco articulações, pseudartrose parcial na 3ª CMC (decorticar 80% dorsais ou retirar a placa), ELP deixado superficial ao retináculo, túnel do carpo até 10,5% com 67% de liberação; pino de STEINMANN de MILLENDER e NALEBUFF viola a 3ª MCF; prótese só em baixa demanda; 3-4 é o portal de visão, 4-5 o de trabalho, 6-U de irrigação, mediocárpicos 1 cm distais; GEISSLER III admite o probe, IV o artroscópio; EWAS IIIB rompe o SL dorsal.",
    "acesso": "gratis",
-   "minutos": 40,
+   "minutos": 66,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11127,8 +11127,13 @@
      "radar": "fundamento"
     },
     {
-     "id": "como-o-punho-degenera-e-como-se-avalia",
-     "titulo": "Como o punho degenera e como se avalia",
+     "id": "por-que-operar-um-punho-artrosico",
+     "titulo": "Por que operar um punho artrósico",
+     "radar": "fundamento"
+    },
+    {
+     "id": "avaliacao-exame-e-imagem",
+     "titulo": "Avaliação: exame e imagem",
      "radar": "fundamento"
     },
     {
@@ -11137,8 +11142,13 @@
      "radar": "confirmado"
     },
     {
-     "id": "artroses-parciais-radiocarpica-radiolunar-e-stt",
-     "titulo": "Artroses parciais: radiocárpica, radiolunar e STT",
+     "id": "as-artrodeses-parciais-logica-e-historia",
+     "titulo": "As artrodeses parciais: lógica e história",
+     "radar": "fundamento"
+    },
+    {
+     "id": "artroses-parciais-radiolunar-radioescafossemilun",
+     "titulo": "Artroses parciais: radiolunar, radioescafossemilunar e STT",
      "radar": "clinico"
     },
     {
@@ -11227,14 +11237,26 @@
     "mao-0114"
    ],
    "treino": [
+    "mao-3585",
+    "mao-3593",
     "mao-1961",
+    "mao-3583",
     "mao-2207",
+    "mao-3588",
     "mao-1784",
     "mao-2123",
     "mao-2035",
+    "mao-3591",
+    "mao-3592",
     "mao-1688",
     "mao-2467",
+    "mao-3587",
+    "mao-3590",
     "mao-2506",
+    "mao-3586",
+    "mao-3584",
+    "mao-3589",
+    "mao-3582",
     "mao-2507",
     "mao-1962",
     "mao-2400",
@@ -12841,6 +12863,210 @@
    ]
   },
   {
+   "id": "green-fraturas-radio-distal",
+   "versao": 1,
+   "titulo": "Fraturas do rádio distal na visão do cirurgião da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 15 · Distal Radius Fractures",
+   "resumo": "Metas ARMS (articular, radial, movimento, estabilidade); inclinação radial 23°, palmar 11°, variância pouco menos de 1 mm negativa; lágrima = projeção volar da faceta do semilunar, ângulo de 70° no perfil, diminui na rotação dorsal e aumenta na marginal volar desviada; distância AP 20 mm (homem) e 18 mm (mulher); profundidade da cavidade aumentada mais de 2 mm piora; lábio dorsal 3 a 5 mm além do volar no PA; THOMAS II = BARTON volar; CHAUFFEUR e lesão escafossemilunar; MEDOFF com cinco fragmentos (die-punch = canto dorsoulnar); RIKLI e REGAZZONI: coluna intermediária com a fossa do semilunar e a incisura sigmoide, medial rotacional; FERNANDEZ pelo mecanismo (I flexão, II cisalhamento, III compressão, IV avulsão e fratura-luxação radiocárpica, V combinada) e das lesões da ARUD (I estável, II instável, III potencialmente instável); LAFONTAINE com cinco critérios, idade como preditor mais forte; MACKENNEY; imobilização em neutro a leve flexão com 20 a 30° de inclinação ulnar; KAPANDJI só na extra-articular simples; fixador contraindicado na osteoporose grave e no cisalhamento volar, sai com 6 semanas e os fios com 8; via de HENRY distal entre o FRC e a artéria radial; SOONG; parafusos 2 mm mais curtos; voloulnar = pedra angular da superfície articular; estiloide primeiro; dorsoulnar pelo 5º compartimento; ~30% de lesão SL e ~15% LT; vitamina C; FLP 57%, ruptura em média com 9 meses; DISI adaptativa redutível com semilunar móvel; SMITH consolidado perde extensão e supinação.",
+   "acesso": "gratis",
+   "minutos": 93,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "historia-do-gesso-de-colles-a-placa-de-angulo-fi",
+     "titulo": "História: do gesso de COLLES à placa de ângulo fixo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-aplicada-o-plato-as-tres-fossas-e-a-aru",
+     "titulo": "Anatomia aplicada: o platô, as três fossas e a ARUD",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiografia-que-decide-parametros-lagrima-e-fa",
+     "titulo": "A radiografia que decide: parâmetros, lágrima e faceta do semilunar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "eponimos-colles-smith-barton-chauffeur-e-die-pun",
+     "titulo": "Epônimos: COLLES, SMITH, BARTON, CHAUFFEUR e die-punch",
+     "radar": "confirmado"
+    },
+    {
+     "id": "classificacoes-da-descricao-ao-mecanismo",
+     "titulo": "Classificações: da descrição ao mecanismo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estabilidade-quem-vai-perder-a-reducao",
+     "titulo": "Estabilidade: quem vai perder a redução",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-fechado-reducao-pinca-de-confeito-e-p",
+     "titulo": "Tratamento fechado: redução, pinça de confeito e posição",
+     "radar": "clinico"
+    },
+    {
+     "id": "pinos-percutaneos-e-kapandji",
+     "titulo": "Pinos percutâneos e KAPANDJI",
+     "radar": "clinico"
+    },
+    {
+     "id": "fixador-externo",
+     "titulo": "Fixador externo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artroscopia-e-enxerto-osseo",
+     "titulo": "Artroscopia e enxerto ósseo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "placa-volar-via-de-henry-soong-e-parafusos",
+     "titulo": "Placa volar: via de HENRY, SOONG e parafusos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "placa-dorsal-fixacao-fragmento-especifica-placa-",
+     "titulo": "Placa dorsal, fixação fragmento-específica, placa em ponte e haste",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-coluna-ulnar-arud-estiloide-ulnar-e-desvio-cor",
+     "titulo": "A coluna ulnar: ARUD, estiloide ulnar e desvio coronal",
+     "radar": "clinico"
+    },
+    {
+     "id": "conduta-pelo-tipo-de-fernandez",
+     "titulo": "Conduta pelo tipo de FERNANDEZ",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-idoso-e-a-evidencia",
+     "titulo": "O idoso e a evidência",
+     "radar": "fundamento"
+    },
+    {
+     "id": "lesoes-associadas-nervos-ligamentos-e-fratura-ex",
+     "titulo": "Lesões associadas: nervos, ligamentos e fratura exposta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes",
+     "titulo": "Complicações",
+     "radar": "clinico"
+    },
+    {
+     "id": "consolidacao-viciosa-e-a-arud-depois-da-fratura",
+     "titulo": "Consolidação viciosa e a ARUD depois da fratura",
+     "radar": "confirmado"
+    },
+    {
+     "id": "divergencias-e-armadilhas-do-capitulo",
+     "titulo": "Divergências e armadilhas do capítulo",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0569",
+    "mao-0570",
+    "mao-1112",
+    "mao-1024",
+    "mao-0780",
+    "mao-1352",
+    "mao-0298",
+    "mao-1001",
+    "mao-1234",
+    "mao-1503",
+    "mao-1260",
+    "mao-0584",
+    "mao-0684",
+    "mao-0714",
+    "mao-1106",
+    "mao-1211",
+    "mao-1573",
+    "mao-0831",
+    "mao-1359",
+    "mao-0901",
+    "mao-1303"
+   ],
+   "treino": [
+    "mao-2218",
+    "mao-3427",
+    "mao-2309",
+    "mao-2459",
+    "mao-2461",
+    "mao-2041",
+    "mao-1958",
+    "mao-2310",
+    "mao-3420",
+    "mao-3437",
+    "mao-2042",
+    "mao-2618",
+    "mao-3423",
+    "mao-1778",
+    "mao-3421",
+    "mao-3436",
+    "mao-3451",
+    "mao-1772",
+    "mao-3415",
+    "mao-3445",
+    "mao-3425",
+    "mao-1956",
+    "mao-3419",
+    "mao-3424",
+    "mao-3449",
+    "mao-1957",
+    "mao-2043",
+    "mao-2129",
+    "mao-3416",
+    "mao-3426",
+    "mao-3441",
+    "mao-3446",
+    "mao-2312",
+    "mao-2308",
+    "mao-2505",
+    "mao-3433",
+    "mao-2044",
+    "mao-2317",
+    "mao-3428",
+    "mao-3432",
+    "mao-3439",
+    "mao-3447",
+    "mao-3442",
+    "mao-3443",
+    "mao-3453",
+    "mao-2217",
+    "mao-1780",
+    "mao-3444",
+    "mao-3450",
+    "mao-2311",
+    "mao-3418",
+    "mao-3422",
+    "mao-3431",
+    "mao-3435",
+    "mao-3438",
+    "mao-3440",
+    "mao-3417",
+    "mao-3429",
+    "mao-3430",
+    "mao-3434",
+    "mao-3448",
+    "mao-3452"
+   ],
+   "subtemas": [
+    "Fratura do rádio distal"
+   ]
+  },
+  {
    "id": "green-imagem-mao-punho",
    "versao": 2,
    "titulo": "Imagem da mão e do punho",
@@ -13607,16 +13833,341 @@
    ]
   },
   {
+   "id": "green-luxacoes-ligamentos-dedos",
+   "versao": 1,
+   "titulo": "Luxações e lesões ligamentares dos dedos",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 8 · Dislocations and Ligament Injuries of the Digits",
+   "resumo": "IFP como caixa de três lados que precisa romper em dois planos; colaterais falham proximal e placa volar distal; checkrein na margem distal da A2; sinal do V; EATON I, II (baioneta) e III; tração pura transforma redutível em irredutível; luxação lateral cicatriza com mobilização; rotatória presa pela banda lateral, reduzida com MF e IFP fletidas; fratura-luxação estável abaixo de 30%, tenuamente estável de 30 a 50%, instável acima de 60% e colaterais só no fragmento acima de 40%; hemi-hamato mais espesso proximalmente para recriar o contraforte; IFD irredutível por placa volar; MF complexa com placa volar interposta, cabeça na palma e sesamoide no espaço, liberada pela A1; efeito came; LCR dos dedos por desvio ulnar com MF fletida; STENER com aponeurose do adutor, só na ruptura completa e distal; teste do LCU em 30 a 40 graus de flexão, ponto final mais que graus; complicação mais comum do reparo = neurapraxia do radial superficial; artrose é a única contraindicação absoluta à reconstrução; LCR roto = pronação; CMC luxa sempre para dorsal.",
+   "acesso": "gratis",
+   "minutos": 48,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-da-ifp-a-caixa-de-tres-lados",
+     "titulo": "Anatomia da IFP: a caixa de três lados",
+     "radar": "confirmado"
+    },
+    {
+     "id": "exame-e-imagem-da-ifp",
+     "titulo": "Exame e imagem da IFP",
+     "radar": "fundamento"
+    },
+    {
+     "id": "luxacao-lateral-da-ifp",
+     "titulo": "Luxação lateral da IFP",
+     "radar": "fundamento"
+    },
+    {
+     "id": "luxacao-volar-e-subluxacao-rotatoria-da-ifp",
+     "titulo": "Luxação volar e subluxação rotatória da IFP",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fratura-luxacao-dorsal-da-ifp",
+     "titulo": "Fratura-luxação dorsal da IFP",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "ifp-cronica-hiperextensao-contratura-e-fratura-l",
+     "titulo": "IFP crônica: hiperextensão, contratura e fratura-luxação antiga",
+     "radar": "clinico"
+    },
+    {
+     "id": "ifd-e-interfalangica-do-polegar",
+     "titulo": "IFD e interfalângica do polegar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mf-dos-dedos-anatomia-e-efeito-came",
+     "titulo": "MF dos dedos: anatomia e efeito came",
+     "radar": "fundamento"
+    },
+    {
+     "id": "luxacao-dorsal-da-mf-dos-dedos",
+     "titulo": "Luxação dorsal da MF dos dedos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "colaterais-da-mf-dos-dedos-e-mf-travada",
+     "titulo": "Colaterais da MF dos dedos e MF travada",
+     "radar": "fundamento"
+    },
+    {
+     "id": "mf-do-polegar-anatomia",
+     "titulo": "MF do polegar: anatomia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "colateral-ulnar-agudo-do-polegar-e-a-lesao-de-st",
+     "titulo": "Colateral ulnar agudo do polegar e a lesão de STENER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "colateral-ulnar-cronico-do-polegar",
+     "titulo": "Colateral ulnar crônico do polegar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "colateral-radial-do-polegar",
+     "titulo": "Colateral radial do polegar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "luxacao-da-mf-do-polegar",
+     "titulo": "Luxação da MF do polegar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "carpometacarpal-do-polegar",
+     "titulo": "Carpometacarpal do polegar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "divergencias-e-lacunas",
+     "titulo": "Divergências e lacunas",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1069",
+    "mao-0635",
+    "mao-0304",
+    "mao-1262",
+    "mao-1298",
+    "mao-0143",
+    "mao-0552",
+    "mao-0328",
+    "mao-0270",
+    "mao-0586",
+    "mao-1893",
+    "mao-1138",
+    "mao-1543",
+    "mao-0136",
+    "mao-0912",
+    "mao-1463",
+    "mao-0233",
+    "mao-0770",
+    "mao-0234"
+   ],
+   "treino": [
+    "mao-2115",
+    "mao-3557",
+    "mao-3558",
+    "mao-3559",
+    "mao-3547",
+    "mao-3567",
+    "mao-3570",
+    "mao-3555",
+    "mao-1706",
+    "mao-2339",
+    "mao-1705",
+    "mao-3550",
+    "mao-3556",
+    "mao-1937",
+    "mao-3569",
+    "mao-3544",
+    "mao-3552",
+    "mao-3564",
+    "mao-3545",
+    "mao-3566",
+    "mao-1713",
+    "mao-2277",
+    "mao-3554",
+    "mao-3572",
+    "mao-1714",
+    "mao-2480",
+    "mao-3549",
+    "mao-3553",
+    "mao-1802",
+    "mao-3571",
+    "mao-3562",
+    "mao-3568",
+    "mao-3563",
+    "mao-2338",
+    "mao-1801",
+    "mao-2114",
+    "mao-3551",
+    "mao-2390",
+    "mao-2030"
+   ],
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ]
+  },
+  {
+   "id": "green-mao-queimada",
+   "versao": 1,
+   "titulo": "A mão queimada",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 57 · Burned Hand",
+   "resumo": "Mão em mais de 80% das queimaduras graves e lesão maior para a American Burn Association apesar de ter menos de 3% da superfície; dorso pela chama, palma pela química, fricção e alta voltagem; zonas de necrose, estase e circulação prejudicada, com a estase virando necrose se faltar escarotomia ou volume; edema que não regride em 72 horas vira fibrose; 1º grau sem bolhas cura em 2 a 3 dias; 2º superficial com bolhas é o mais doloroso e cura em 7 a 14 dias; 2b úmido, mosqueado, empalidece e sangra à picada; 3º coriáceo, veias trombosadas, pouca dor, sem anexos para epitelizar; água corrente nos primeiros 30 minutos, sem gelo; escarotomia por dor, resistência à extensão passiva e perda do enchimento ungueal, ou pressão acima de 30 mmHg em duas medidas, experiência do cirurgião acima de tudo; incisão digital mediolateral ulnar nos dedos longos; posição de segurança com MF fletidas, IF estendidas e comissura aberta; excisão tangencial nos primeiros 5 dias ou espera de 3 semanas; enxerto parcial é o padrão-ouro, em lâmina se houver doadora, malha até 1,5:1; enxerto total só na criança e nas correções secundárias; contratura dorsal é o problema tardio mais comum; KURTZMAN e STERN I pele, II cápsula, III articulação com artrodese; zetaplastia isolada recidiva menos nas comissuras; alta voltagem acima de 1000 V, fasciotomia no centro cirúrgico com túnel do carpo e GUYON em 6 a 8 horas; ácido fluorídrico com gluconato de cálcio a 10%, fenol com polietilenoglicol, ácido crômico com hipoclorito tamponado, fósforo branco sem óleo; congelamento com reaquecimento rápido a 40 a 44 °C e amputação só após demarcação; ATLS 500 mL/h no adulto, 2 mL x kg x %SCQ e diurese de 0,5 mL/kg/h.",
+   "acesso": "gratis",
+   "minutos": 69,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-que-a-mao-queimada-e-uma-lesao-maior",
+     "titulo": "Por que a mão queimada é uma lesão maior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fisiopatologia-local-energia-zonas-e-edema",
+     "titulo": "Fisiopatologia local: energia, zonas e edema",
+     "radar": "confirmado"
+    },
+    {
+     "id": "profundidade-a-classificacao-que-decide-tudo",
+     "titulo": "Profundidade: a classificação que decide tudo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-grande-queimado-area-reposicao-e-monitorizacao",
+     "titulo": "O grande queimado: área, reposição e monitorização",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-grande-queimado-inflamacao-inalacao-nutricao-e",
+     "titulo": "O grande queimado: inflamação, inalação, nutrição e transporte",
+     "radar": "confirmado"
+    },
+    {
+     "id": "primeiros-cuidados-da-mao-e-escarotomia",
+     "titulo": "Primeiros cuidados da mão e escarotomia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ortese-e-posicao-de-seguranca",
+     "titulo": "Órtese e posição de segurança",
+     "radar": "clinico"
+    },
+    {
+     "id": "curativo-e-bolhas",
+     "titulo": "Curativo e bolhas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "excisao-e-enxerto",
+     "titulo": "Excisão e enxerto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-agudas",
+     "titulo": "Complicações agudas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "sequelas-contraturas-e-deformidades",
+     "titulo": "Sequelas: contraturas e deformidades",
+     "radar": "confirmado"
+    },
+    {
+     "id": "retalhos-para-a-mao-queimada",
+     "titulo": "Retalhos para a mão queimada",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "lesao-eletrica",
+     "titulo": "Lesão elétrica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "queimadura-quimica",
+     "titulo": "Queimadura química",
+     "radar": "confirmado"
+    },
+    {
+     "id": "congelamento",
+     "titulo": "Congelamento",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "reabilitacao-malhas-e-a-cicatriz-que-se-transfor",
+     "titulo": "Reabilitação, malhas e a cicatriz que se transforma",
+     "radar": "confirmado"
+    }
+   ],
+   "questoes": [
+    "mao-1908",
+    "mao-1874",
+    "mao-1909",
+    "mao-1889",
+    "mao-1597",
+    "mao-1875",
+    "mao-1907",
+    "mao-1640",
+    "mao-1603",
+    "mao-1403",
+    "mao-1916",
+    "mao-1289",
+    "mao-1407",
+    "mao-0691",
+    "mao-0692",
+    "mao-0693",
+    "mao-1601",
+    "mao-1891",
+    "mao-1604",
+    "mao-1887",
+    "mao-1906",
+    "mao-1296",
+    "mao-1602",
+    "mao-1641",
+    "mao-1890",
+    "mao-0275",
+    "mao-1417",
+    "mao-1613",
+    "mao-1845",
+    "mao-1870",
+    "mao-1406",
+    "mao-1904",
+    "mao-1401",
+    "mao-1905"
+   ],
+   "treino": [
+    "mao-3580",
+    "mao-2272",
+    "mao-2372",
+    "mao-2055",
+    "mao-3573",
+    "mao-3577",
+    "mao-3581",
+    "mao-3575",
+    "mao-3578",
+    "mao-3579",
+    "mao-3576",
+    "mao-2393",
+    "mao-1737",
+    "mao-2182",
+    "mao-2271",
+    "mao-3574"
+   ],
+   "subtemas": [
+    "Queimaduras"
+   ]
+  },
+  {
    "id": "green-mao-reumatoide",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Mão reumatoide",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)",
    "capitulo": "Capítulo 55 · Rheumatoid Arthritis and Other Connective Tissue Diseases",
-   "resumo": "Sinóvia que estira e invade; deformidades bilaterais e simétricas; prioridade da dor, punho e polegar antes dos dedos; tenossinovite dorsal indolor; rupturas extensoras do mínimo para o indicador (VAUGHAN-JACKSON) e FPL pelo escafoide (MANNERFELT); caput ulnae com supinação do carpo, desvio radial do carpo e desvio ulnar com luxação palmar da MF; DARRACH, SAUVÉ-KAPANDJI e artrodese com pinos de STEINMANN; SWANSON e intrínseco cruzado de FLATT; pescoço de cisne de NALEBUFF tipos I a IV; botoeira que nasce na IFP; polegar tipo I botoeira, III cisne, IV goleiro.",
+   "resumo": "A sinóvia que estira, invade e destrói; mão bilateral e simétrica; prioridades da dor, punho e polegar antes dos dedos, MF antes da IFP e dos extensores; tenossinovite dorsal indolor e tenossinovectomia após 4 a 6 meses; rupturas extensoras do mínimo para o indicador (VAUGHAN-JACKSON), três simuladores e o teste da tenodese; EPL com transferência do EIP; FPL na espícula do escafoide (MANNERFELT); caput ulnae, supinação do carpo, translocação ulnar e desvio radial dos metacarpos; DARRACH limitado e chanfrado, SAUVÉ-KAPANDJI, artrodese radioescafossemilunar e total com pinos de STEINMANN; desvio ulnar e luxação palmar da MF, FLATT e SWANSON; pescoço de cisne de NALEBUFF I a IV; botoeira que nasce na IFP; polegar de NALEBUFF I a VI; lúpus redutível, psoríase assimétrica, esclerodermia em flexão da IFP.",
    "acesso": "gratis",
-   "minutos": 39,
+   "minutos": 83,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -13629,8 +14180,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "antes-de-operar-medicacoes-e-prioridades",
-     "titulo": "Antes de operar: medicações e prioridades",
+     "id": "antes-de-operar-o-paciente-as-drogas-e-as-priori",
+     "titulo": "Antes de operar: o paciente, as drogas e as prioridades",
      "radar": "confirmado"
     },
     {
@@ -13654,8 +14205,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "cirurgia-do-punho-darrach-sauve-kapandji-e-artro",
-     "titulo": "Cirurgia do punho: DARRACH, SAUVÉ-KAPANDJI e artrodese",
+     "id": "cirurgia-do-punho-sinovectomia-darrach-sauve-kap",
+     "titulo": "Cirurgia do punho: sinovectomia, DARRACH, SAUVÉ-KAPANDJI e artrodeses",
      "radar": "confirmado"
     },
     {
@@ -13679,8 +14230,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "lupus-psoriase-esclerodermia-e-gota",
-     "titulo": "Lúpus, psoríase, esclerodermia e gota",
+     "id": "lupus-psoriase-esclerodermia-e-as-artrites-de-cr",
+     "titulo": "Lúpus, psoríase, esclerodermia e as artrites de cristais",
      "radar": "confirmado"
     },
     {
@@ -13720,11 +14271,65 @@
     "mao-0142",
     "mao-0398",
     "mao-0965",
-    "mao-0350",
     "mao-0500",
+    "mao-0350",
     "mao-0848"
    ],
-   "treino": [],
+   "treino": [
+    "mao-2267",
+    "mao-1969",
+    "mao-2349",
+    "mao-3490",
+    "mao-3505",
+    "mao-2358",
+    "mao-3491",
+    "mao-3500",
+    "mao-3503",
+    "mao-1807",
+    "mao-1967",
+    "mao-3504",
+    "mao-3509",
+    "mao-1805",
+    "mao-2613",
+    "mao-3487",
+    "mao-3499",
+    "mao-3506",
+    "mao-3512",
+    "mao-3516",
+    "mao-2268",
+    "mao-2475",
+    "mao-3508",
+    "mao-3510",
+    "mao-3514",
+    "mao-2432",
+    "mao-3515",
+    "mao-1966",
+    "mao-3492",
+    "mao-3498",
+    "mao-2400",
+    "mao-3501",
+    "mao-3488",
+    "mao-2269",
+    "mao-3502",
+    "mao-2181",
+    "mao-2270",
+    "mao-2348",
+    "mao-3489",
+    "mao-3495",
+    "mao-3507",
+    "mao-3511",
+    "mao-3517",
+    "mao-3513",
+    "mao-2053",
+    "mao-2616",
+    "mao-2627",
+    "mao-3493",
+    "mao-3494",
+    "mao-3496",
+    "mao-3497",
+    "mao-1968",
+    "mao-2396"
+   ],
    "subtemas": [
     "Mão reumatoide"
    ]
@@ -15025,15 +15630,15 @@
   },
   {
    "id": "green-rizartrose-artrose-mao",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Rizartrose e artrose da mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)",
    "capitulo": "Capítulo 11 · Treatment of the Osteoarthritic Hand and Thumb",
-   "resumo": "Rizartrose: oblíquo anterior profundo (intracapsular, do tubérculo volar do trapézio à base volar ulnar do metacarpo) falha, metacarpo subluxa para dorsal e a metade volar se desgasta (trapézio 3:1); carga de 12 a 20 vezes na pinça; adução do metacarpo com hiperextensão da MCF; grind; ROBERT; EATON I a IV (2 mm e ETT); osteotomia em extensão e reconstrução de EATON e LITTLER nos I e II; trapeziectomia nos III e IV (BURTON e PELLEGRINI e WEILBY com FRC, THOMPSON com ALP); pseudartrose na osteotomia e na artrodese; dedos: BOUCHARD na IFP, HEBERDEN na IFD, erosiva mais na IFD e mais sintomática na IFP; IFP fundida de 30 a 60 graus, MCF do polegar 20 graus.",
+   "resumo": "Dedos: HEBERDEN na IFD, BOUCHARD na IFP; erosiva (PETER, 1966) em mulheres, lado radial, IFD mais acometida e IFP mais sintomática; IFP estabilizada pelo colateral (metade basta, MINAMIKAWA); MCF com efeito came; IFD fundida em extensão (parafuso pode ferir o leito ungueal do mínimo); IFP de 30 a 60 graus no texto e 40 a 55 na Fig. 11.6, ângulo dado no corte da falange proximal, banda de tensão comprimida pela flexão ativa; MCF fundida no polegar (20 graus), não nos dedos longos. Polegar: sela instável com 16 ligamentos; oblíquo anterior profundo intracapsular falha, metacarpo subluxa para dorsal e a metade palmar se gasta (trapézio 3:1); carga de 12 a 20 vezes; adução com hiperextensão da MCF; grind; túnel do carpo em 30%; ROBERT; EATON I a IV (2 mm e ETT), sem correlação com o resultado; osteotomia em extensão e EATON e LITTLER nos I e II; trapeziectomia nos III e IV (BURTON e PELLEGRINI e WEILBY com FRC, THOMPSON com ALP, KUHNS hematoma); simples igual à LRTI; pseudartrose na osteotomia e na artrodese; portais 1R e 1U.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 73,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15044,6 +15649,31 @@
      "id": "quem-tem-artrose-da-mao-e-onde-ela-aparece",
      "titulo": "Quem tem artrose da mão e onde ela aparece",
      "radar": "confirmado"
+    },
+    {
+     "id": "pequenas-articulacoes-anatomia-biomecanica-e-his",
+     "titulo": "Pequenas articulações: anatomia, biomecânica e história",
+     "radar": "fundamento"
+    },
+    {
+     "id": "dedos-quando-tratar-sem-cirurgia",
+     "titulo": "Dedos: quando tratar sem cirurgia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrodese-das-interfalangicas",
+     "titulo": "Artrodese das interfalângicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrodese-da-mcf",
+     "titulo": "Artrodese da MCF",
+     "radar": "clinico"
+    },
+    {
+     "id": "artroplastia-das-interfalangicas-e-da-mcf",
+     "titulo": "Artroplastia das interfalângicas e da MCF",
+     "radar": "clinico"
     },
     {
      "id": "anatomia-e-biomecanica-da-trapeziometacarpal",
@@ -15061,9 +15691,9 @@
      "radar": "confirmado"
     },
     {
-     "id": "tratamento-nao-operatorio",
-     "titulo": "Tratamento não operatório",
-     "radar": "confirmado"
+     "id": "tratamento-nao-operatorio-da-rizartrose",
+     "titulo": "Tratamento não operatório da rizartrose",
+     "radar": "clinico"
     },
     {
      "id": "estagios-iniciais-osteotomia-e-reconstrucao-liga",
@@ -15076,23 +15706,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "artrodese-trapeziometacarpal-implantes-e-complic",
-     "titulo": "Artrodese trapeziometacarpal, implantes e complicações",
-     "radar": "clinico"
-    },
-    {
-     "id": "a-mcf-do-polegar-e-a-artrodese-metacarpofalangic",
-     "titulo": "A MCF do polegar e a artrodese metacarpofalângica",
-     "radar": "clinico"
-    },
-    {
-     "id": "artrodese-das-interfalangicas",
-     "titulo": "Artrodese das interfalângicas",
-     "radar": "confirmado"
-    },
-    {
-     "id": "artroplastia-das-interfalangicas-e-da-mcf",
-     "titulo": "Artroplastia das interfalângicas e da MCF",
+     "id": "artrodese-trapeziometacarpal-implantes-artroscop",
+     "titulo": "Artrodese trapeziometacarpal, implantes, artroscopia e complicações",
      "radar": "clinico"
     },
     {
@@ -15105,6 +15720,10 @@
     "mao-0306",
     "mao-0495",
     "mao-0036",
+    "mao-0595",
+    "mao-1235",
+    "mao-1317",
+    "trauma-0864",
     "mao-0014",
     "mao-0048",
     "mao-0481",
@@ -15118,8 +15737,6 @@
     "mao-1071",
     "mao-0690",
     "mao-0158",
-    "mao-0595",
-    "mao-1235",
     "mao-0575",
     "mao-0082",
     "mao-0744",
@@ -15127,28 +15744,60 @@
     "mao-0826",
     "mao-0774",
     "mao-1588",
-    "mao-0639",
-    "mao-1317",
-    "trauma-0864"
+    "mao-0639"
    ],
    "treino": [
+    "mao-3474",
     "mao-2122",
+    "mao-3458",
+    "mao-3473",
+    "mao-3480",
+    "mao-1804",
+    "mao-2323",
+    "mao-3484",
+    "mao-2329",
+    "mao-2205",
+    "mao-3454",
+    "mao-3459",
+    "mao-3460",
+    "mao-3470",
+    "mao-2501",
+    "mao-1806",
+    "mao-3464",
+    "mao-3466",
+    "mao-2204",
+    "mao-2628",
+    "mao-3485",
     "mao-2033",
+    "mao-3465",
+    "mao-3476",
+    "mao-3486",
     "mao-2322",
     "mao-1963",
     "mao-1803",
+    "mao-3479",
+    "mao-3461",
+    "mao-3467",
+    "mao-3469",
     "mao-2034",
+    "mao-3471",
     "mao-1964",
+    "mao-3462",
+    "mao-3472",
+    "mao-3483",
     "mao-1965",
+    "mao-3455",
+    "mao-3457",
+    "mao-3468",
     "mao-2532",
-    "mao-2324",
-    "mao-2501",
-    "mao-1806",
-    "mao-2323",
-    "mao-1804",
-    "mao-2329",
-    "mao-2205",
-    "mao-2204"
+    "mao-3482",
+    "mao-3463",
+    "mao-3477",
+    "mao-3478",
+    "mao-3456",
+    "mao-3475",
+    "mao-3481",
+    "mao-2324"
    ],
    "subtemas": [
     "Rizartrose e artrose da mão"
@@ -15632,15 +16281,15 @@
   },
   {
    "id": "green-tenossinovites",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Dedo em gatilho e outras tenossinovites",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 81)",
    "capitulo": "Capítulo 56 · Tendinopathy",
-   "resumo": "Gatilho é aprisionamento mecânico na A1 (metaplasia fibrocartilaginosa, pouca inflamação), mais em mulher de 55 a 60 anos, polegar e anular nos múltiplos, pior em diabetes e AR; QUINNELL modificado por GREEN (I dor sem gatilho, II estende ativo, IIIA extensão passiva, IIIB não flete ativo, IV contratura fixa da IFP); infiltração melhor em um dedo, nodular e de curta duração; A2 e A4 são as polias essenciais e a oblíqua do polegar não se corta (corda de arco); percutânea não no polegar nem no indicador, nervo digital radial do polegar é o mais exposto; polegar em gatilho da criança é adquirido, isolado, nódulo de NOTTA no FPL, bilateral em 25% a 33%, cirurgia depois de 1 ano; gatilho de vários dedos na criança lembra HURLER; DE QUERVAIN no APL e EPB, EPB em subcompartimento separado, FINKELSTEIN e EICHHOFF, ramo sensitivo do radial; intersecção 4 cm acima do punho, APL e EPB sobre o 2º compartimento; ECU dói em supinação e desvio ulnar; tendinite calcária no FCU; pseudogota calcifica a FCCT; KANAVEL: dor sobre a bainha é o sinal mais confiável; PANG: polimicrobiana, isquemia e pus subcutâneo pioram; PARONA entre pronador quadrado e FDP.",
+   "resumo": "Duas famílias: aprisionamento (bainha até 3 vezes mais grossa, metaplasia fibrocartilaginosa, pouca inflamação) e tenossinovite proliferativa (AR, cristais, amiloide, infecção); gatilho é impacto na A1, alteração maior na polia (condrócitos e colágeno tipo III), mulher de meia-idade 2 a 6 vezes, 2,2% na vida e 10% no diabético insulinodependente, múltiplos: polegar, anular, médio, mínimo, indicador; QUINNELL modificado por GREEN (I dor sem gatilho, II estende ativo, IIIA extensão passiva, IIIB não flete ativo, IV contratura fixa da IFP); infiltração melhor em um dedo, nodular, curta duração, extrassinovial igual à intrassinovial, perda súbita de resistência ao recuar, 6 semanas até a cirurgia; A2 e A4 essenciais, oblíqua do polegar preservada; percutânea com MF hiperestendida, não no polegar nem no indicador; nervo digital radial do polegar superficial e cruzado; criança: adquirido, isolado, NOTTA proximal à A1, bilateral 25% a 33%, vários dedos lembram HURLER; DE QUERVAIN: anatomia normal em menos de 20%, EPB fino e dorsal, ausente em 5% a 7%, septo em 24% a 37%, FINKELSTEIN e EICHHOFF, teste do EPB, corticoide solúvel, abrir na margem dorsal, ramo sensitivo do radial com reparo imediato; intersecção 4 cm acima do punho, tala em 15 graus de extensão, libera o 2º sem fechar o retináculo; EPL: nutrição sinovial perto do LISTER, cirurgia urgente com transposição; ECU em supinação; FCR sobre o trapézio; calcária no FCU em homens de 40 a 60 anos, AINE; pseudogota na FCCT; amiloide beta-2-microglobulina na diálise; KANAVEL, PANG, MICHON e PARONA.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 68,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15688,8 +16337,13 @@
      "radar": "confirmado"
     },
     {
-     "id": "doenca-de-de-quervain",
-     "titulo": "Doença de DE QUERVAIN",
+     "id": "doenca-de-de-quervain-anatomia-paciente-e-exame",
+     "titulo": "Doença de DE QUERVAIN: anatomia, paciente e exame",
+     "radar": "confirmado"
+    },
+    {
+     "id": "doenca-de-de-quervain-tratamento-e-cirurgia",
+     "titulo": "Doença de DE QUERVAIN: tratamento e cirurgia",
      "radar": "confirmado"
     },
     {
@@ -15703,13 +16357,13 @@
      "radar": "clinico"
     },
     {
-     "id": "tendinite-do-ecu",
-     "titulo": "Tendinite do ECU",
+     "id": "tendinite-e-instabilidade-do-ecu",
+     "titulo": "Tendinite e instabilidade do ECU",
      "radar": "confirmado"
     },
     {
-     "id": "tendinopatias-do-fcr-e-do-fcu",
-     "titulo": "Tendinopatias do FCR e do FCU",
+     "id": "tendinopatia-do-fcr",
+     "titulo": "Tendinopatia do FCR",
      "radar": "fundamento"
     },
     {
@@ -15742,8 +16396,13 @@
     "mao-0422",
     "mao-1002",
     "mao-1596",
+    "mao-0959",
+    "mao-0264",
+    "mao-1867",
+    "mao-1610",
     "mao-0450",
     "mao-0473",
+    "mao-0265",
     "mao-0011",
     "mao-0616",
     "mao-1344",
@@ -15761,14 +16420,45 @@
    ],
    "treino": [
     "mao-2052",
+    "mao-3518",
+    "mao-3534",
+    "mao-3535",
+    "mao-3536",
+    "mao-3539",
+    "mao-3529",
+    "mao-3533",
+    "mao-3538",
+    "mao-3542",
     "mao-1793",
+    "mao-3526",
+    "mao-3531",
+    "mao-2445",
+    "mao-3521",
+    "mao-3523",
+    "mao-3540",
+    "mao-1791",
+    "mao-2608",
+    "mao-2449",
+    "mao-3524",
+    "mao-3528",
+    "mao-2357",
+    "mao-3519",
     "mao-2474",
+    "mao-3520",
+    "mao-3525",
+    "mao-3527",
+    "mao-3530",
+    "mao-3532",
     "mao-2358",
     "mao-2180",
-    "mao-2557"
+    "mao-2557",
+    "mao-3522",
+    "mao-3537",
+    "mao-3541"
    ],
    "subtemas": [
-    "Dedo em gatilho e outras tenossinovites"
+    "Dedo em gatilho e outras tenossinovites",
+    "Tenossinovite de De Quervain"
    ]
   },
   {
