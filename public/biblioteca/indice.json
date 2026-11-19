@@ -17703,15 +17703,15 @@
   },
   {
    "id": "green8-malformacoes-congenitas",
-   "versao": 6,
+   "versao": 7,
    "titulo": "Malformações congênitas da mão e do antebraço",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com a 8ª traduzida",
    "capitulo": "Capítulos 35 a 38 · Mão pediátrica, com o Tachdjian (caps. 12, 21 e 35)",
-   "resumo": "Embriologia (AER, ZPA e Wnt; janela de 4 a 8 semanas) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER e camptodactilia em panorama; ausência de dedos transversal e longitudinal; banda de constrição (PATTERSON, um anel de cada vez); simbraquidactilia (nubbins, YAMAUCHI e TANABU, nervo radial presente); mão em fenda (MANSKE e HALIKIS pela primeira comissura, fenda em V contra U, SNOW-LITTLER); transferência de falange (RADOCHA, antes dos 15 meses) e de dedo do pé (segundo artelho, CMC estável); macrodactilia (FLATT I a IV, indicador, divergência, palmar e distal, epifisiodese no comprimento do genitor, amputação do raio cedo); deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.",
+   "resumo": "Embriologia (broto aos 26 dias, janela de 4 a 8 semanas, marcos da Tabela 35.1, placa lateral e mesoderma somático, vaso marginal e nervos, AER e FGF, ZPA e sonic hedgehog, AL-QATTAN, Wnt7a, Lmx-1 e Engrailed-1, apoptose por BMP e APERT, blastemas e interzonas, artrogripose, HOX e T-box, CDMP) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER e camptodactilia em panorama; ausência de dedos transversal e longitudinal; banda de constrição (PATTERSON, um anel de cada vez); simbraquidactilia (nubbins, YAMAUCHI e TANABU, nervo radial presente); mão em fenda (MANSKE e HALIKIS pela primeira comissura, fenda em V contra U, SNOW-LITTLER); transferência de falange (RADOCHA, antes dos 15 meses) e de dedo do pé (segundo artelho, CMC estável); macrodactilia (FLATT I a IV, indicador, divergência, palmar e distal, epifisiodese no comprimento do genitor, amputação do raio cedo); deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.",
    "acesso": "gratis",
-   "minutos": 56,
+   "minutos": 93,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -17719,9 +17719,44 @@
      "radar": "fundamento"
     },
     {
-     "id": "a-embriologia-e-o-broto-do-membro",
-     "titulo": "A embriologia e o broto do membro",
+     "id": "a-embriologia-o-relogio-do-broto",
+     "titulo": "A embriologia: o relógio do broto",
      "radar": "confirmado"
+    },
+    {
+     "id": "de-onde-vem-as-celulas-placa-lateral-e-mesoderma",
+     "titulo": "De onde vêm as células: placa lateral e mesoderma somático",
+     "radar": "confirmado"
+    },
+    {
+     "id": "vasos-e-nervos-do-broto",
+     "titulo": "Vasos e nervos do broto",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-tres-centros-de-sinalizacao",
+     "titulo": "Os três centros de sinalização",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-apoptose-bmp-fgf-e-a-separacao-dos-dedos",
+     "titulo": "A apoptose: BMP, FGF e a separação dos dedos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "blastemas-interzonas-e-articulacoes",
+     "titulo": "Blastemas, interzonas e articulações",
+     "radar": "fundamento"
+    },
+    {
+     "id": "genes-hox-t-box-e-as-bmp-da-cartilagem",
+     "titulo": "Genes: HOX, T-box e as BMP da cartilagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "consideracoes-sistemicas-e-a-conversa-com-os-pai",
+     "titulo": "Considerações sistêmicas e a conversa com os pais",
+     "radar": "fundamento"
     },
     {
      "id": "as-classificacoes-swanson-omt-e-frantz-e-o-rahil",
@@ -17820,11 +17855,23 @@
     }
    ],
    "questoes": [
+    "mao-1564",
+    "mao-0955",
+    "mao-1419",
+    "mao-1010",
+    "mao-0928",
+    "mao-0411",
+    "mao-0447",
+    "mao-0266",
     "mao-0007",
     "mao-0020",
     "mao-0493",
+    "mao-0665",
+    "mao-0840",
     "mao-0509",
     "mao-0491",
+    "mao-1812",
+    "mao-1853",
     "mao-0073",
     "mao-0009",
     "mao-0424",
@@ -17874,7 +17921,32 @@
     "mao-0647"
    ],
    "treino": [
+    "mao-1728",
+    "mao-3742",
+    "mao-3746",
+    "mao-3752",
+    "mao-3754",
+    "mao-3741",
+    "mao-2239",
+    "mao-3748",
+    "mao-2004",
+    "mao-1721",
+    "mao-3744",
+    "mao-3745",
+    "mao-3757",
     "mao-2582",
+    "mao-3749",
+    "mao-3750",
+    "mao-2003",
+    "mao-3753",
+    "mao-2527",
+    "mao-3751",
+    "mao-3755",
+    "mao-2151",
+    "mao-3743",
+    "mao-3747",
+    "mao-3756",
+    "mao-2346",
     "mao-2583",
     "mao-2584",
     "mao-2585",

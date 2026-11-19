@@ -419,7 +419,7 @@ Três classificações aparecem nas provas, e cada uma responde a uma pergunta d
 
 **FRANTZ e O'RAHILLY (1961)**, que o Tachdjian (cap. 21) ainda chama de a mais usada para agrupar deficiências esqueléticas, cruza duas perguntas. **Onde termina o defeito?** **Terminal** se vai até a ponta do membro; **intercalar** se falta um segmento do meio e o que é distal existe. **Em que direção?** **Transversal**, como um corte de lado a lado, ou **paraxial** (antes chamada longitudinal), quando falta uma faixa paralela ao eixo. **Hemimelia** é a falta de um dos ossos pareados, **completa** ou **incompleta**. A mão torta radial com rádio ausente é uma hemimelia terminal paraxial completa; a focomelia é a intercalar transversal completa. A classificação ISO/ISPO de 1991 simplificou tudo em transversal ou longitudinal, sem intercalar.
 
-!questoes central=mao-0509 relacionadas=mao-0491,mao-0488
+!questoes central=mao-0509 relacionadas=mao-0491
 conceito: Na classificação de SWANSON, a ectrodactilia (mão em fenda) é falha de formação; FRANTZ e O'RAHILLY cruzam terminal ou intercalar com transversal ou paraxial.
 como: O TARO 2012 perguntou a categoria da ectrodactilia segundo SWANSON (em duas versões da mesma questão no acervo) e o significado da notação T/1.
 armadilha: Pôr a mão em fenda em falha de diferenciação, que é a categoria das partes formadas que não se separaram.
