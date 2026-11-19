@@ -164,7 +164,7 @@ O mecanismo é anatômico. O tendão terminal se prende só na epífise; o FDP s
 
 A diferença entre o pseudomallet e o martelo verdadeiro é cobrada por meio da pergunta "quem puxa quem": a epífise recebe o tendão terminal; o fragmento distal recebe o FDP.
 
-!questoes relacionadas=mao-2966
+!questoes treino=mao-2966
 conceito: No pseudomallet (SALTER-HARRIS I da falange distal), a epífise fica com o tendão terminal e o fragmento distal é puxado para volar pelo flexor profundo, que se insere na epífise e na metáfise; daí o ápice dorsal.
 como: O simulado do SIMÃO 2012 perguntou por que a angulação tem ápice dorsal na fratura epifisária desviada da falange distal.
 armadilha: Inverter os tendões, pondo o flexor na epífise, ou trocar o profundo pelo superficial, que se insere na falange média.
@@ -186,7 +186,7 @@ Como suspeitar quando a ferida parece pequena: fratura fisária da falange dista
 
 O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 8, seção das fraturas da falange distal), concorda em tudo e acrescenta um detalhe de urgência: a SEYMOUR pede retirada da unha, irrigação e desbridamento, alinhamento, fio e reparo do leito de forma urgente, como qualquer fratura exposta.
 
-!questoes relacionadas=mao-0773,mao-1213,mao-1694,mao-2164,mao-2252 treino=mao-3804,mao-3806,mao-3808,mao-3807,mao-3805
+!questoes relacionadas=mao-0773,mao-1213 treino=mao-3804,mao-3806,mao-3808,mao-3807,mao-3805,mao-1694,mao-2164,mao-2252
 conceito: SEYMOUR é a fratura fisária desviada da falange distal com laceração do leito ungueal: é uma fratura exposta da fise, a matriz germinativa costuma ficar interposta no foco, e o tratamento é retirar a unha, irrigar, desbridar, extrair o tecido interposto, reduzir aberto e reparar o leito.
 como: O INTO 2023 e os simulados do SBCM 2022 e de outras bancas pediram a estrutura interposta (matriz germinativa); a PUC-SP 2023 pediu a afirmação correta sobre a conduta; o simulado do SBCM 2023 pediu o que ter em mente (fratura exposta da fise).
 armadilha: Marcar placa volar, tendão flexor ou extensor como o tecido interposto; achar que é fratura fechada da falange média; ou acreditar que a falta de tratamento dificilmente leva a osteomielite.
@@ -446,7 +446,7 @@ Os livros variam um pouco nas idades. O Rockwood and Wilkins' Fractures in Child
 
 Na mesma página, o capítulo dá os núcleos do antebraço distal: a epífise distal do **rádio** aparece no primeiro ano; a da **ulna**, por volta dos 6 anos, às vezes com dois centros, que podem imitar fratura do estiloide. A fise da ulna fecha por volta dos 16 anos nas meninas e 17 nos meninos, e a do rádio cerca de 6 meses depois.
 
-!questoes relacionadas=mao-1125,mao-2394 treino=mao-2251
+!questoes relacionadas=mao-1125 treino=mao-2251,mao-2394
 conceito: No carpo, capitato e hamato ossificam primeiro (6 a 8 meses), depois piramidal (2 a 3 anos), semilunar (4), escafoide (4 a 5), trapézio e trapezoide (5) e, por último, o pisiforme (6 a 8 anos).
 como: A PUC-SP 2021 pediu o último osso a ossificar e a idade; o simulado do SIMÃO 2022 pediu o osso que aparece mais tarde na radiografia; o do SBCM 2023, a afirmação correta sobre a ordem.
 armadilha: Marcar o escafoide como último (ele é o mais fraturado, não o último a ossificar), pôr o pisiforme logo depois do capitato, ou atrasar trapézio e trapezoide para 7 anos.
@@ -486,7 +486,7 @@ Tabaqueira dolorosa com radiografia negativa: imobilização com gesso ou tala i
 
 A preferência do autor (p. 1446): polo distal, gesso curto com polegar por 4 a 6 semanas; cintura sem desvio **confirmada por TC**, gesso curto com polegar até consolidar, sem TC de rotina se clínica e radiografia mostram consolidação; atleta ou fratura bilateral, parafuso percutâneo dorsal. Desviada da cintura, via **volar**; polo proximal, via **dorsal**; parafuso canulado sem cabeça de passo variável.
 
-!questoes relacionadas=mao-1092,mao-2389,mao-1786
+!questoes relacionadas=mao-1092 treino=mao-2389,mao-1786
 conceito: Na criança o escafoide ossifica de distal para proximal, e a descrição clássica põe o polo distal como local mais fraturado, tratado com gesso incluindo o polegar por 4 a 6 semanas; a série de GHOLSON, porém, mostrou a cintura em 71% nas crianças atuais, mais adolescentes.
 como: A PUC-SP 2020 perguntou o local mais comum; o simulado do SIMÃO 2022 pediu o local e o tratamento; o do SIMÃO 2026, em que situação o gesso é a conduta de escolha (menino de 12 anos com fratura sem desvio do terço distal).
 armadilha: Responder cintura numa questão que segue a leitura clássica, ou indicar fixação para a fratura distal sem desvio, que consolida com gesso.
@@ -544,7 +544,7 @@ Os índices que medem a qualidade do gesso (Fig. 41.30, p. 1453):
 
 O índice do gesso pede um gesso oval, achatado de dorsal para volar, como o próprio antebraço; um gesso redondo (índice perto de 1) deixa a fratura se mexer.
 
-!questoes relacionadas=mao-2044
+!questoes treino=mao-2044
 conceito: Na fratura do rádio distal da criança, a perda de redução no gesso ocorre em cerca de um terço dos casos; os fatores de risco incluem o rádio fraturado isoladamente, a ulna fraturada no mesmo nível, o desvio inicial grande (translação acima de 50%, angulação acima de 30 graus), a redução incompleta e o índice do gesso acima de 0,7.
 como: O simulado do SBCM 2024 pediu, entre lado dominante e desvios iniciais abaixo dos limites, o fator de risco para perder a redução.
 armadilha: Marcar 25 graus de angulação ou 40% de translação, que estão abaixo dos limites de risco, ou o lado dominante, que não entra na lista.
