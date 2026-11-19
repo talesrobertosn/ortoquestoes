@@ -10733,7 +10733,7 @@
   },
   {
    "id": "green-amputacoes-reimplantes",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Amputações e reimplantes na mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -10741,7 +10741,7 @@
    "capitulo": "Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)",
    "resumo": "Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.",
    "acesso": "gratis",
-   "minutos": 63,
+   "minutos": 104,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10829,33 +10829,68 @@
      "radar": "confirmado"
     },
     {
+     "id": "amputar-como-tratamento-os-principios",
+     "titulo": "Amputar como tratamento: os princípios",
+     "radar": "fundamento"
+    },
+    {
      "id": "a-ponta-do-dedo-allen-e-tamai",
      "titulo": "A ponta do dedo: ALLEN e TAMAI",
      "radar": "clinico"
     },
     {
-     "id": "a-ponta-cicatrizar-enxerto-composto-e-crianca",
-     "titulo": "A ponta: cicatrizar, enxerto composto e criança",
+     "id": "a-ponta-sem-osso-exposto-cicatrizar-enxerto-comp",
+     "titulo": "A ponta sem osso exposto: cicatrizar, enxerto composto e criança",
      "radar": "confirmado"
     },
     {
-     "id": "os-retalhos-da-ponta",
-     "titulo": "Os retalhos da ponta",
+     "id": "a-ponta-com-osso-exposto-encurtar-unha-em-gancho",
+     "titulo": "A ponta com osso exposto: encurtar, unha em gancho e matriz dérmica",
+     "radar": "clinico"
+    },
+    {
+     "id": "os-retalhos-locais-de-avanco-atasoy-kutler-e-mob",
+     "titulo": "Os retalhos locais de avanço: ATASOY, KUTLER e MOBERG",
      "radar": "confirmado"
     },
     {
-     "id": "os-niveis-no-dedo",
-     "titulo": "Os níveis no dedo",
+     "id": "cross-finger-e-tenar-tecido-emprestado",
+     "titulo": "Cross-finger e tenar: tecido emprestado",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-polpa-do-polegar-moberg-e-cross-finger-do-indi",
+     "titulo": "A polpa do polegar: MOBERG e cross-finger do indicador",
+     "radar": "clinico"
+    },
+    {
+     "id": "os-niveis-no-dedo-da-ifd-a-mf",
+     "titulo": "Os níveis no dedo: da IFD à MF",
      "radar": "fundamento"
     },
     {
-     "id": "amputacao-de-raio",
-     "titulo": "Amputação de raio",
+     "id": "amputacao-de-raio-por-que-quando-e-o-indicador",
+     "titulo": "Amputação de raio: por que, quando e o indicador",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-raio-do-medio-adutor-tesoura-e-a-transposicao-",
+     "titulo": "O raio do médio: adutor, tesoura e a transposição de CARROLL",
      "radar": "confirmado"
     },
     {
-     "id": "neuroma-e-coto-doloroso",
-     "titulo": "Neuroma e coto doloroso",
+     "id": "anelar-e-minimo-o-lado-ulnar-da-mao",
+     "titulo": "Anelar e mínimo: o lado ulnar da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "varios-dedos-protese-e-reabilitacao",
+     "titulo": "Vários dedos, prótese e reabilitação",
+     "radar": "fundamento"
+    },
+    {
+     "id": "neuroma-dor-fantasma-e-coto-doloroso",
+     "titulo": "Neuroma, dor fantasma e coto doloroso",
      "radar": "confirmado"
     },
     {
@@ -10964,7 +10999,21 @@
     "mao-1945",
     "mao-2262",
     "mao-2416",
+    "mao-3716",
+    "mao-3724",
+    "mao-3725",
+    "mao-3726",
+    "mao-3729",
     "mao-2341",
+    "mao-3717",
+    "mao-3718",
+    "mao-3719",
+    "mao-3720",
+    "mao-3721",
+    "mao-3722",
+    "mao-3723",
+    "mao-3727",
+    "mao-3728",
     "mao-2261",
     "mao-1763",
     "mao-2175",
@@ -11247,7 +11296,7 @@
   },
   {
    "id": "green-artrose-punho-artroscopia",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Artrose do punho e artroscopia",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -11255,7 +11304,7 @@
    "capitulo": "Capítulo 12 · Wrist Arthrodesis and Arthroplasty",
    "resumo": "Dor e estabilidade pesam mais que arco (PALMER: 30° de extensão, 5° de flexão, 10° de desvio radial e 15° de ulnar bastam); artrose primária do punho é incomum e mora na STT; SLAC de WATSON começa no estiloide e poupa a radiolunar; LLUCH: I radioescafoide, II escafocapitato, III lunocapitato, IV piramidal-hamato, V radiolunar; AR é a causa mais comum de artrose radiolunar isolada; escafocapitato e STT têm indicações e perda de movimento parecidas, escafoide a 40 a 50°; escafossemilunar tem pseudartrose de 50 a 85%; escafoidectomia com quatro cantos no SLAC ou SNAC II e III, contraindicada pela fossa do semilunar doente, com o semilunar reduzido como passo mais importante; carpectomia proximal exige capitato e fossa do semilunar sãos; artrodese total com placa do rádio ao 3º metacarpo, cinco articulações, pseudartrose parcial na 3ª CMC (decorticar 80% dorsais ou retirar a placa), ELP deixado superficial ao retináculo, túnel do carpo até 10,5% com 67% de liberação; pino de STEINMANN de MILLENDER e NALEBUFF viola a 3ª MCF; prótese só em baixa demanda; 3-4 é o portal de visão, 4-5 o de trabalho, 6-U de irrigação, mediocárpicos 1 cm distais; GEISSLER III admite o probe, IV o artroscópio; EWAS IIIB rompe o SL dorsal.",
    "acesso": "gratis",
-   "minutos": 66,
+   "minutos": 100,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11333,6 +11382,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "fibrocartilagem-triangular-pela-artroscopia",
+     "titulo": "Fibrocartilagem triangular pela artroscopia",
+     "radar": "clinico"
+    },
+    {
      "id": "indicacoes-e-procedimentos-artroscopicos",
      "titulo": "Indicações e procedimentos artroscópicos",
      "radar": "confirmado"
@@ -11362,8 +11416,8 @@
     "mao-0454",
     "mao-1195",
     "mao-1531",
-    "mao-1321",
     "mao-0292",
+    "mao-1321",
     "mao-0006",
     "mao-0246",
     "mao-1495",
@@ -11398,21 +11452,41 @@
     "mao-2400",
     "mao-2206",
     "mao-2040",
+    "mao-3702",
     "mao-2304",
     "mao-2391",
+    "mao-3701",
+    "mao-3715",
+    "mao-3713",
     "mao-2132",
-    "mao-2450",
     "mao-1774",
+    "mao-3699",
+    "mao-3696",
+    "mao-2450",
+    "mao-3700",
+    "mao-3712",
+    "mao-3708",
     "mao-1960",
+    "mao-3706",
+    "mao-3714",
     "mao-2483",
+    "mao-3707",
+    "mao-3711",
+    "mao-3697",
+    "mao-3709",
     "mao-2213",
     "mao-2037",
     "mao-1777",
     "mao-2223",
     "mao-2363",
-    "mao-2050",
+    "mao-3704",
     "mao-2224",
-    "mao-2225"
+    "mao-2050",
+    "mao-3710",
+    "mao-3705",
+    "mao-2225",
+    "mao-3698",
+    "mao-3703"
    ],
    "subtemas": [
     "Artrose do punho e artroscopia"
@@ -16971,6 +17045,123 @@
    ]
   },
   {
+   "id": "green-tetraplegia",
+   "versao": 1,
+   "titulo": "Tetraplegia: reconstrução do membro superior",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 76)",
+   "capitulo": "Capítulo 33 · Tetraplegia",
+   "resumo": "Tetraplegia incompleta é a categoria mais comum (41% no Green 7, 47% no Campbell 15); recuperação estabiliza em 12 meses, todo músculo grau 1 no 1º mês chega a grau 3 em 1 ano, exceto o tríceps; operar com 12 meses e exame estável, sem úlcera nem infecção, com amplitude passiva completa; espasticidade, contratura, dor crônica e instabilidade psicológica contraindicam; músculo útil e doador = grau 4 MRC; ICS (Edimburgo 1978, Giens 1984) conta os músculos grau 4 abaixo do cotovelo: 0 nenhum, 1 BR, 2 ERLC, 3 ERCC, 4 PR, 5 FRC, 6 extensores dos dedos, 7 ELP, 8 flexores parciais dos dedos, 9 falta só o intrínseco; O ou Cu pela discriminação de dois pontos de 10 mm (MOBERG); prioridade: extensão do punho, pinça, preensão, abertura; punho nunca é artrodesado (tenodese); grupo 1 = BR ao ERCC e pinça passiva de MOBERG; grupos 2 e 3 = pinça ativa de HOUSE (BR ao FLP, artrodese CMC, tenodese do ELP, FLP dividido); grupos 4 e 5 = ERLC ao FDP e BR ao FLP; bíceps ao tríceps pela via medial (contratura menor que 30°, braquial e supinador fortes, força cresce por 1 ano) supera o deltoide posterior (enxerto que alonga); ZANCOLLI passa metade do bíceps em volta do colo do rádio e faz dele pronador; transferências de nervo ainda não são rotina.",
+   "acesso": "gratis",
+   "minutos": 55,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-lesao-medular-e-a-curva-de-recuperacao",
+     "titulo": "A lesão medular e a curva de recuperação",
+     "radar": "fundamento"
+    },
+    {
+     "id": "avaliacao-forca-sensibilidade-e-a-classificacao-",
+     "titulo": "Avaliação: força, sensibilidade e a classificação internacional",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quando-operar-e-quando-nao-operar",
+     "titulo": "Quando operar e quando não operar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "principios-da-reconstrucao",
+     "titulo": "Princípios da reconstrução",
+     "radar": "confirmado"
+    },
+    {
+     "id": "extensao-do-cotovelo",
+     "titulo": "Extensão do cotovelo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "pronacao-o-rerroteamento-do-biceps-de-zancolli",
+     "titulo": "Pronação: o rerroteamento do bíceps de ZANCOLLI",
+     "radar": "fundamento"
+    },
+    {
+     "id": "grupos-0-e-1-a-mao-quase-sem-doadores",
+     "titulo": "Grupos 0 e 1: a mão quase sem doadores",
+     "radar": "fundamento"
+    },
+    {
+     "id": "grupos-2-e-3-a-pinca-ativa",
+     "titulo": "Grupos 2 e 3: a pinça ativa",
+     "radar": "clinico"
+    },
+    {
+     "id": "grupos-4-e-5-duas-fases-e-o-alfabeto-de-friden",
+     "titulo": "Grupos 4 e 5: duas fases e o alfabeto de FRIDEN",
+     "radar": "clinico"
+    },
+    {
+     "id": "grupos-6-a-9-as-lesoes-baixas",
+     "titulo": "Grupos 6 a 9: as lesões baixas",
+     "radar": "clinico"
+    },
+    {
+     "id": "reconstrucao-intrinseca",
+     "titulo": "Reconstrução intrínseca",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "transferencias-de-nervo-e-o-futuro",
+     "titulo": "Transferências de nervo e o futuro",
+     "radar": "fundamento"
+    },
+    {
+     "id": "resultados-e-fechamento",
+     "titulo": "Resultados e fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1410",
+    "mao-1555",
+    "mao-0817"
+   ],
+   "treino": [
+    "mao-3734",
+    "mao-2496",
+    "mao-1988",
+    "mao-2145",
+    "mao-3730",
+    "mao-2234",
+    "mao-3731",
+    "mao-3736",
+    "mao-3735",
+    "mao-3738",
+    "mao-1987",
+    "mao-3733",
+    "mao-3740",
+    "mao-2078",
+    "mao-3737",
+    "mao-3739",
+    "mao-2233",
+    "mao-2235",
+    "mao-2554",
+    "mao-3732",
+    "mao-2600",
+    "mao-1751",
+    "mao-2236"
+   ],
+   "subtemas": [
+    "Transferências tendinosas e paralisias"
+   ]
+  },
+  {
    "id": "green-transferencias-tendinosas",
    "versao": 1,
    "titulo": "Transferências tendinosas nas paralisias do mediano, radial e ulnar",
@@ -17137,15 +17328,15 @@
   },
   {
    "id": "green-tumores-mao",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Tumores da mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83), o Dahlin's Bone Tumors, 6ª ed. (2010), e o HEBERT, 5ª ed.",
    "capitulo": "Capítulo 59 · Bone and Soft Tissue Tumors (com o capítulo 58, Skin Tumors of the Hand and Upper Extremity)",
-   "resumo": "Grau histológico (G1 poucas células e menos de 5 mitoses, G2 muitas células e mais de 10) e ENNEKING (benignos latente, ativo e localmente agressivo; malignos IA a III, IIB alto grau extracompartimental); biópsia é o último exame, incisional, longitudinal, sem ESMARCH; na mão o compartimento é o raio e o sarcoma da falange média pede ressecção do raio; cisto sinovial é o tumor de partes moles mais comum, em mulheres da 2ª à 4ª década, parede de colágeno sem epitélio, mucina rica em ácido hialurônico, válvula de mão única, malignização nunca descrita; o dorsal (60% a 70%) nasce do escafolunar e sai entre o extensor longo do polegar e o extensor comum, a cápsula não se fecha e a complicação mais comum é a recidiva precoce; o volar (18% a 20%) fica na borda distal do rádio ou no tubérculo do escafoide, junto à artéria radial; o retinacular nasce da polia A1; criança se observa; bossa carpometacarpal em mulheres, mão direita, 3ª e 4ª décadas; tumor de células gigantes da bainha é o segundo tumor da mão (recidiva ~30%, maior na IFD, com artrose e erosão); tumor glômico é dor, ponto doloroso e frio; schwannoma enuclea, neurofibroma pede secção de fascículos, hamartoma lipofibromatoso é do mediano; sarcoma epitelioide é o mais comum da mão e vai a linfonodo, sinovial no carpo com calcificação em 20% a 30%; encondroma é até 90% dos tumores ósseos da mão, na falange proximal, diagnosticado na radiografia, recidiva 4,5% a 7%; OLLIER unilateral com malignização de ~30%, MAFFUCCI com hemangiomas e flebólitos; osteocondroma na falange proximal distal, sem malignização descrita na mão; NORA sem continuidade medular; osteoma osteoide na falange proximal e no carpo; cisto ósseo aneurismático no metacarpo, 2ª década, com criocirurgia; tumor de células gigantes do osso recidiva mais de 80% com curetagem e se resseca quando perfura; condrossarcoma é o maligno ósseo primário mais comum, acima de 60 anos, vai ao pulmão, sem papel da radioterapia; EWING imita infecção; metástase acral vem do pulmão; carcinoma espinocelular é o maligno de pele mais comum da mão, com a ceratose actínica de precursora; melanoma lentiginoso acral, HUTCHINSON, biópsia após 2 meses, margem de 1 cm até 1 mm de BRESLOW.",
+   "resumo": "Grau histológico (G1 poucas células e menos de 5 mitoses, G2 muitas células e mais de 10) e ENNEKING (benignos latente, ativo e localmente agressivo; malignos IA a III, IIB alto grau extracompartimental); biópsia é o último exame, incisional, longitudinal, sem ESMARCH; na mão o compartimento é o raio e o sarcoma da falange média pede ressecção do raio; cisto sinovial é o tumor de partes moles mais comum, em mulheres da 2ª à 4ª década, parede de colágeno sem epitélio, mucina rica em ácido hialurônico, válvula de mão única, malignização nunca descrita; o dorsal (60% a 70%) nasce do escafolunar e sai entre o extensor longo do polegar e o extensor comum, a cápsula não se fecha e a complicação mais comum é a recidiva precoce; o volar (18% a 20%) fica na borda distal do rádio ou no tubérculo do escafoide, junto à artéria radial; o retinacular nasce da polia A1; criança se observa; bossa carpometacarpal em mulheres, mão direita, 3ª e 4ª décadas; tumor de células gigantes da bainha é o segundo tumor da mão (recidiva ~30%, maior na IFD, com artrose e erosão); tumor glômico é dor, ponto doloroso e frio; schwannoma enuclea, neurofibroma pede secção de fascículos, hamartoma lipofibromatoso é do mediano; sarcoma epitelioide é o mais comum da mão e vai a linfonodo, sinovial no carpo com calcificação em 20% a 30%; encondroma é até 90% dos tumores ósseos da mão, na falange proximal, diagnosticado na radiografia, recidiva 4,5% a 7%; OLLIER unilateral com malignização de ~30%, MAFFUCCI com hemangiomas e flebólitos; osteocondroma na falange proximal distal, sem malignização descrita na mão; NORA sem continuidade medular; osteoma osteoide na falange proximal e no carpo; cisto ósseo aneurismático no metacarpo, 2ª década, com criocirurgia; tumor de células gigantes do osso recidiva mais de 80% com curetagem e se resseca quando perfura; condrossarcoma é o maligno ósseo primário mais comum, acima de 60 anos, vai ao pulmão, sem papel da radioterapia; EWING imita infecção; metástase acral vem do pulmão; carcinoma espinocelular é o maligno de pele mais comum da mão e do perioníquio (o basocelular é o mais comum do corpo), com a ceratose actínica de precursora e a doença de BOWEN de forma in situ, margem de 4 mm no baixo risco e 6 mm no alto risco; basocelular sem precursor, sem metástase, nodular o subtipo mais comum; poroceratose vira espinocelular em 13%; nevo congênito gigante com risco de 0 a 9%, maior na infância; nevo de SPITZ é o melanoma juvenil; melanoma de disseminação superficial é 70%, lentigo maligno é do sol, lentiginoso acral sem sol, subungueal no polegar, HUTCHINSON, biópsia após 2 meses, prognóstico por BRESLOW, ulceração e linfonodo, margem de 1 cm até 1 mm, sentinela acima de 1 mm, amputação proximal à articulação seguinte; granuloma piogênico se cura com excisão completa.",
    "acesso": "gratis",
-   "minutos": 102,
+   "minutos": 143,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -17213,14 +17404,34 @@
      "radar": "confirmado"
     },
     {
-     "id": "tumores-de-pele-lesoes-pre-malignas-e-carcinomas",
-     "titulo": "Tumores de pele: lesões pré-malignas e carcinomas",
+     "id": "pele-da-mao-camadas-exame-e-biopsia",
+     "titulo": "Pele da mão: camadas, exame e biópsia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lesoes-pre-malignas-e-de-comportamento-indetermi",
+     "titulo": "Lesões pré-malignas e de comportamento indeterminado",
+     "radar": "confirmado"
+    },
+    {
+     "id": "carcinomas-basocelular-e-espinocelular",
+     "titulo": "Carcinomas basocelular e espinocelular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "nevos-e-lesoes-pigmentadas-benignas",
+     "titulo": "Nevos e lesões pigmentadas benignas",
      "radar": "confirmado"
     },
     {
      "id": "melanoma",
      "titulo": "Melanoma",
      "radar": "confirmado"
+    },
+    {
+     "id": "outros-malignos-da-pele-e-do-subcutaneo",
+     "titulo": "Outros malignos da pele e do subcutâneo",
+     "radar": "oportunidade"
     },
     {
      "id": "fechamento",
@@ -17253,11 +17464,21 @@
     "mao-1340",
     "mao-0851",
     "mao-1122",
+    "mao-1888",
     "mao-1404",
+    "mao-1119",
     "mao-1070",
     "mao-1358",
     "mao-1392",
+    "mao-1844",
+    "mao-0698",
+    "mao-1871",
+    "mao-1922",
+    "mao-1015",
     "mao-1408",
+    "mao-0702",
+    "mao-0771",
+    "mao-1830",
     "mao-1309",
     "mao-1600"
    ],
@@ -17288,7 +17509,10 @@
     "mao-3124",
     "mao-2327",
     "mao-3092",
+    "mao-3769",
     "mao-2274",
+    "mao-3761",
+    "mao-3763",
     "mao-2202",
     "mao-3088",
     "mao-3094",
@@ -17330,19 +17554,29 @@
     "mao-3102",
     "mao-3119",
     "mao-2014",
+    "mao-3768",
     "mao-2469",
     "mao-2451",
+    "mao-3760",
     "mao-2328",
     "mao-2054",
+    "mao-3758",
+    "mao-3762",
+    "mao-3759",
     "mao-2118",
     "mao-2273",
+    "mao-3766",
     "mao-2117",
     "mao-2423",
+    "mao-3767",
+    "mao-3764",
+    "mao-3765",
     "mao-2525"
    ],
    "subtemas": [
     "Tumores da mão",
-    "Cistos sinoviais e gangliões"
+    "Cistos sinoviais e gangliões",
+    "Cirurgia plástica geral"
    ]
   },
   {
@@ -17512,15 +17746,15 @@
   },
   {
    "id": "green8-malformacoes-congenitas",
-   "versao": 6,
+   "versao": 7,
    "titulo": "Malformações congênitas da mão e do antebraço",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com a 8ª traduzida",
    "capitulo": "Capítulos 35 a 38 · Mão pediátrica, com o Tachdjian (caps. 12, 21 e 35)",
-   "resumo": "Embriologia (AER, ZPA e Wnt; janela de 4 a 8 semanas) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER e camptodactilia em panorama; ausência de dedos transversal e longitudinal; banda de constrição (PATTERSON, um anel de cada vez); simbraquidactilia (nubbins, YAMAUCHI e TANABU, nervo radial presente); mão em fenda (MANSKE e HALIKIS pela primeira comissura, fenda em V contra U, SNOW-LITTLER); transferência de falange (RADOCHA, antes dos 15 meses) e de dedo do pé (segundo artelho, CMC estável); macrodactilia (FLATT I a IV, indicador, divergência, palmar e distal, epifisiodese no comprimento do genitor, amputação do raio cedo); deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.",
+   "resumo": "Embriologia (broto aos 26 dias, janela de 4 a 8 semanas, marcos da Tabela 35.1, placa lateral e mesoderma somático, vaso marginal e nervos, AER e FGF, ZPA e sonic hedgehog, AL-QATTAN, Wnt7a, Lmx-1 e Engrailed-1, apoptose por BMP e APERT, blastemas e interzonas, artrogripose, HOX e T-box, CDMP) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER e camptodactilia em panorama; ausência de dedos transversal e longitudinal; banda de constrição (PATTERSON, um anel de cada vez); simbraquidactilia (nubbins, YAMAUCHI e TANABU, nervo radial presente); mão em fenda (MANSKE e HALIKIS pela primeira comissura, fenda em V contra U, SNOW-LITTLER); transferência de falange (RADOCHA, antes dos 15 meses) e de dedo do pé (segundo artelho, CMC estável); macrodactilia (FLATT I a IV, indicador, divergência, palmar e distal, epifisiodese no comprimento do genitor, amputação do raio cedo); deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.",
    "acesso": "gratis",
-   "minutos": 56,
+   "minutos": 93,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -17528,9 +17762,44 @@
      "radar": "fundamento"
     },
     {
-     "id": "a-embriologia-e-o-broto-do-membro",
-     "titulo": "A embriologia e o broto do membro",
+     "id": "a-embriologia-o-relogio-do-broto",
+     "titulo": "A embriologia: o relógio do broto",
      "radar": "confirmado"
+    },
+    {
+     "id": "de-onde-vem-as-celulas-placa-lateral-e-mesoderma",
+     "titulo": "De onde vêm as células: placa lateral e mesoderma somático",
+     "radar": "confirmado"
+    },
+    {
+     "id": "vasos-e-nervos-do-broto",
+     "titulo": "Vasos e nervos do broto",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-tres-centros-de-sinalizacao",
+     "titulo": "Os três centros de sinalização",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-apoptose-bmp-fgf-e-a-separacao-dos-dedos",
+     "titulo": "A apoptose: BMP, FGF e a separação dos dedos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "blastemas-interzonas-e-articulacoes",
+     "titulo": "Blastemas, interzonas e articulações",
+     "radar": "fundamento"
+    },
+    {
+     "id": "genes-hox-t-box-e-as-bmp-da-cartilagem",
+     "titulo": "Genes: HOX, T-box e as BMP da cartilagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "consideracoes-sistemicas-e-a-conversa-com-os-pai",
+     "titulo": "Considerações sistêmicas e a conversa com os pais",
+     "radar": "fundamento"
     },
     {
      "id": "as-classificacoes-swanson-omt-e-frantz-e-o-rahil",
@@ -17629,11 +17898,23 @@
     }
    ],
    "questoes": [
+    "mao-1564",
+    "mao-0955",
+    "mao-1419",
+    "mao-1010",
+    "mao-0928",
+    "mao-0411",
+    "mao-0447",
+    "mao-0266",
     "mao-0007",
     "mao-0020",
     "mao-0493",
+    "mao-0665",
+    "mao-0840",
     "mao-0509",
     "mao-0491",
+    "mao-1812",
+    "mao-1853",
     "mao-0073",
     "mao-0009",
     "mao-0424",
@@ -17683,7 +17964,32 @@
     "mao-0647"
    ],
    "treino": [
+    "mao-1728",
+    "mao-3742",
+    "mao-3746",
+    "mao-3752",
+    "mao-3754",
+    "mao-3741",
+    "mao-2239",
+    "mao-3748",
+    "mao-2004",
+    "mao-1721",
+    "mao-3744",
+    "mao-3745",
+    "mao-3757",
     "mao-2582",
+    "mao-3749",
+    "mao-3750",
+    "mao-2003",
+    "mao-3753",
+    "mao-2527",
+    "mao-3751",
+    "mao-3755",
+    "mao-2151",
+    "mao-3743",
+    "mao-3747",
+    "mao-3756",
+    "mao-2346",
     "mao-2583",
     "mao-2584",
     "mao-2585",

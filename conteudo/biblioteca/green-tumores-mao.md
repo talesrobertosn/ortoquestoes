@@ -1,6 +1,6 @@
 ---
 id: green-tumores-mao
-versao: 2
+versao: 3
 titulo: Tumores da mão
 especialidade: mao
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83), o Dahlin's Bone Tumors, 6ª ed. (2010), e o HEBERT, 5ª ed.
 capitulo: Capítulo 59 · Bone and Soft Tissue Tumors (com o capítulo 58, Skin Tumors of the Hand and Upper Extremity)
 autores: Edward A. Athanasian (cap. 59) e David T. Netscher (cap. 58)
-fonte: Livros conferidos localmente em 09/11/2026 e de novo em 17/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 59 (Bone and Soft Tissue Tumors), p. 1987 a 2032, inclusive a lista de referências (p. 2032 a 2035), com as tabelas 59.1 a 59.4 e a figura 59.4; cap. 58 (Skin Tumors of the Hand and Upper Extremity), p. 1958 a 1985; cap. 9 (Perionychium), p. 334 a 336 (granuloma piogênico, tumor glômico, carcinoma espinocelular e melanoma da unha); cap. 60 (Vascular Disorders of the Hand), p. 2056 a 2058 (tumor glômico); Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (Tumors and Tumorous Conditions of the Hand), p. 3567 a 3598, nas seções cobradas pelas questões (páginas "aprox." inferidas pelo deslocamento do capítulo); Dahlin's Bone Tumors, 6ª ed. (2010), cap. 2, p. 9, 18 e 19, cap. 3, p. 22 a 24, e cap. 6, p. 66 e 73; Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7. Os estudos citados no corpo do texto saem da lista de referências do capítulo 59 (número da referência entre parênteses).
-subtemas: Tumores da mão; Cistos sinoviais e gangliões
-resumo: Grau histológico (G1 poucas células e menos de 5 mitoses, G2 muitas células e mais de 10) e ENNEKING (benignos latente, ativo e localmente agressivo; malignos IA a III, IIB alto grau extracompartimental); biópsia é o último exame, incisional, longitudinal, sem ESMARCH; na mão o compartimento é o raio e o sarcoma da falange média pede ressecção do raio; cisto sinovial é o tumor de partes moles mais comum, em mulheres da 2ª à 4ª década, parede de colágeno sem epitélio, mucina rica em ácido hialurônico, válvula de mão única, malignização nunca descrita; o dorsal (60% a 70%) nasce do escafolunar e sai entre o extensor longo do polegar e o extensor comum, a cápsula não se fecha e a complicação mais comum é a recidiva precoce; o volar (18% a 20%) fica na borda distal do rádio ou no tubérculo do escafoide, junto à artéria radial; o retinacular nasce da polia A1; criança se observa; bossa carpometacarpal em mulheres, mão direita, 3ª e 4ª décadas; tumor de células gigantes da bainha é o segundo tumor da mão (recidiva ~30%, maior na IFD, com artrose e erosão); tumor glômico é dor, ponto doloroso e frio; schwannoma enuclea, neurofibroma pede secção de fascículos, hamartoma lipofibromatoso é do mediano; sarcoma epitelioide é o mais comum da mão e vai a linfonodo, sinovial no carpo com calcificação em 20% a 30%; encondroma é até 90% dos tumores ósseos da mão, na falange proximal, diagnosticado na radiografia, recidiva 4,5% a 7%; OLLIER unilateral com malignização de ~30%, MAFFUCCI com hemangiomas e flebólitos; osteocondroma na falange proximal distal, sem malignização descrita na mão; NORA sem continuidade medular; osteoma osteoide na falange proximal e no carpo; cisto ósseo aneurismático no metacarpo, 2ª década, com criocirurgia; tumor de células gigantes do osso recidiva mais de 80% com curetagem e se resseca quando perfura; condrossarcoma é o maligno ósseo primário mais comum, acima de 60 anos, vai ao pulmão, sem papel da radioterapia; EWING imita infecção; metástase acral vem do pulmão; carcinoma espinocelular é o maligno de pele mais comum da mão, com a ceratose actínica de precursora; melanoma lentiginoso acral, HUTCHINSON, biópsia após 2 meses, margem de 1 cm até 1 mm de BRESLOW.
+fonte: Livros conferidos localmente em 09/11/2026, 17/11/2026 e 19/11/2026 (tumores de pele refeitos e ampliados pelo cap. 58): Green's Operative Hand Surgery, 7ª ed., cap. 59 (Bone and Soft Tissue Tumors), p. 1987 a 2032, inclusive a lista de referências (p. 2032 a 2035), com as tabelas 59.1 a 59.4 e a figura 59.4; cap. 58 (Skin Tumors of the Hand and Upper Extremity), p. 1958 a 1986, com as tabelas 58.1 e 58.2 e as figuras 58.14 e 58.37; cap. 9 (Perionychium), p. 334 a 336 (granuloma piogênico, tumor glômico, carcinoma espinocelular e melanoma da unha); cap. 60 (Vascular Disorders of the Hand), p. 2056 a 2058 (tumor glômico); Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (Tumors and Tumorous Conditions of the Hand), p. 3567 a 3598, nas seções cobradas pelas questões (páginas "aprox." inferidas pelo deslocamento do capítulo); Dahlin's Bone Tumors, 6ª ed. (2010), cap. 2, p. 9, 18 e 19, cap. 3, p. 22 a 24, e cap. 6, p. 66 e 73; Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7. Os estudos citados no corpo do texto saem da lista de referências do capítulo 59 (número da referência entre parênteses).
+subtemas: Tumores da mão; Cistos sinoviais e gangliões; Cirurgia plástica geral
+resumo: Grau histológico (G1 poucas células e menos de 5 mitoses, G2 muitas células e mais de 10) e ENNEKING (benignos latente, ativo e localmente agressivo; malignos IA a III, IIB alto grau extracompartimental); biópsia é o último exame, incisional, longitudinal, sem ESMARCH; na mão o compartimento é o raio e o sarcoma da falange média pede ressecção do raio; cisto sinovial é o tumor de partes moles mais comum, em mulheres da 2ª à 4ª década, parede de colágeno sem epitélio, mucina rica em ácido hialurônico, válvula de mão única, malignização nunca descrita; o dorsal (60% a 70%) nasce do escafolunar e sai entre o extensor longo do polegar e o extensor comum, a cápsula não se fecha e a complicação mais comum é a recidiva precoce; o volar (18% a 20%) fica na borda distal do rádio ou no tubérculo do escafoide, junto à artéria radial; o retinacular nasce da polia A1; criança se observa; bossa carpometacarpal em mulheres, mão direita, 3ª e 4ª décadas; tumor de células gigantes da bainha é o segundo tumor da mão (recidiva ~30%, maior na IFD, com artrose e erosão); tumor glômico é dor, ponto doloroso e frio; schwannoma enuclea, neurofibroma pede secção de fascículos, hamartoma lipofibromatoso é do mediano; sarcoma epitelioide é o mais comum da mão e vai a linfonodo, sinovial no carpo com calcificação em 20% a 30%; encondroma é até 90% dos tumores ósseos da mão, na falange proximal, diagnosticado na radiografia, recidiva 4,5% a 7%; OLLIER unilateral com malignização de ~30%, MAFFUCCI com hemangiomas e flebólitos; osteocondroma na falange proximal distal, sem malignização descrita na mão; NORA sem continuidade medular; osteoma osteoide na falange proximal e no carpo; cisto ósseo aneurismático no metacarpo, 2ª década, com criocirurgia; tumor de células gigantes do osso recidiva mais de 80% com curetagem e se resseca quando perfura; condrossarcoma é o maligno ósseo primário mais comum, acima de 60 anos, vai ao pulmão, sem papel da radioterapia; EWING imita infecção; metástase acral vem do pulmão; carcinoma espinocelular é o maligno de pele mais comum da mão e do perioníquio (o basocelular é o mais comum do corpo), com a ceratose actínica de precursora e a doença de BOWEN de forma in situ, margem de 4 mm no baixo risco e 6 mm no alto risco; basocelular sem precursor, sem metástase, nodular o subtipo mais comum; poroceratose vira espinocelular em 13%; nevo congênito gigante com risco de 0 a 9%, maior na infância; nevo de SPITZ é o melanoma juvenil; melanoma de disseminação superficial é 70%, lentigo maligno é do sol, lentiginoso acral sem sol, subungueal no polegar, HUTCHINSON, biópsia após 2 meses, prognóstico por BRESLOW, ulceração e linfonodo, margem de 1 cm até 1 mm, sentinela acima de 1 mm, amputação proximal à articulação seguinte; granuloma piogênico se cura com excisão completa.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -384,7 +384,7 @@ O tratamento é a **excisão marginal**, sob lupa, com recidiva de **5% a 50%** 
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3572), dá recidiva de 10% a 20%, chegando a 40%, e amplia a lista de fatores: artrose adjacente, localização na interfalângica distal dos dedos e na interfalângica do polegar, invasão óssea, doença multifocal e envolvimento do tendão. Os dois divergem no local típico: o Green fala na região da interfalângica distal e o Campbell no indicador e no médio, muitas vezes junto à interfalângica proximal.
 
-!questoes treino=mao-2327,mao-3092
+!questoes treino=mao-2327,mao-3092,mao-3769
 conceito: tumor de células gigantes da bainha (tenossinovial) é o segundo tumor mais comum da mão; recidiva de 5% a 50% após excisão marginal, com três fatores de risco: artrose, localização na IFD e erosão óssea por pressão
 como: o SIMÃO 2024 pediu o achado que é fator de risco para recidiva local
 armadilha: marcar localização na palma, compressão do nervo digital ou tenossinovite associada, que não estão na lista do Green nem na do Campbell
@@ -400,7 +400,13 @@ O **lipoma** pode ser subcutâneo ou intramuscular; é mole, indolor e **não tr
 
 ## Granuloma piogênico
 
-O nome engana duas vezes: não é granuloma e não é infecção. O capítulo 58 do Green (p. 1970) o define como **proliferação de capilares no local de um trauma prévio**, muitas vezes banal; pode haver infecção associada, mas o processo não é infeccioso. A superfície é **friável e sangra ao menor toque**; é mais comum nas extremidades distais, e a resolução espontânea é rara. As lesões pequenas se tratam com **bastão de nitrato de prata** (Figura 58.19); as demais com excisão, eletrocirurgia ou laser, e a retirada incompleta recidiva. No capítulo 9 (p. 334 aprox.), a versão ungueal cresce através da unha depois de perfuração traumática ou iatrogênica; a cauterização repetida com nitrato de prata é o tratamento mais comum, e o diagnóstico diferencial inclui **carcinoma espinocelular e melanoma amelanótico**, de modo que a lesão persistente ou recidivante **precisa de biópsia**. O Campbell (p. 3598) diz que o nitrato de prata pode curar e que a excisão com a base vascular quase sempre resolve.
+O nome engana duas vezes: não é granuloma (não há os macrófagos epitelioides que definem um granuloma de verdade) e não é piogênico (não é infecção). O capítulo 58 do Green (p. 1970) o define como **proliferação de capilares no local de um trauma prévio**, muitas vezes tão banal que o paciente nem lembra: uma farpa, uma unha cortada rente, uma picada de agulha. Pode haver infecção associada na superfície, mas o processo de base não é infeccioso, e por isso antibiótico não resolve. O patologista o chama hoje de hemangioma capilar lobular, nome que descreve bem o que se vê: lóbulos de capilares neoformados, separados por septos fibrosos, crescendo a partir de um vaso nutridor na derme.
+
+Entender esse vaso nutridor explica quase tudo do quadro e do tratamento. A lesão cresce em semanas, como uma resposta de cicatrização que perdeu o freio: o estímulo angiogênico do trauma não se desliga e os capilares continuam proliferando para fora da pele. A superfície fica **friável e sangra ao menor toque**, porque é feita de capilares cobertos por um epitélio fino ou ulcerado; muitas vezes há um colarete de epiderme na base, que marca o ponto em que a lesão rompeu a pele. É **mais comum nas extremidades distais**, onde o microtrauma é constante, e a **regressão espontânea é incomum** (p. 1970). Gravidez e alguns medicamentos (retinoides sistêmicos e os inibidores do receptor do fator de crescimento epidérmico, na unha) também disparam lesões, o que reforça a ideia de um estímulo angiogênico e não de um germe.
+
+O tratamento segue a mesma lógica. As lesões **pequenas** podem ser destruídas com **bastão de nitrato de prata** (Figura 58.19), eletrocirurgia ou laser; o Green avisa que **a remoção incompleta recidiva**, e a recidiva vem do vaso nutridor que ficou na base. A cura mais segura é a **excisão completa, incluindo a base**, que é o que a referência citada pelo capítulo defende (WITTHAUT e colaboradores, J Hand Surg Br, 1994; ref. 65). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3598 aprox.), diz o mesmo: o nitrato de prata pode curar, e a excisão com a base vascular quase sempre resolve.
+
+Na unha, o capítulo 9 do Green (p. 334 aprox.) descreve o granuloma que cresce através da lâmina depois de perfuração traumática ou iatrogênica, ou ao lado de uma unha encravada. A cauterização repetida é o tratamento mais comum ali, mas vem com um aviso que vale para qualquer local: o diagnóstico diferencial inclui **carcinoma espinocelular e melanoma amelanótico**, e a lesão que persiste ou recidiva **precisa de biópsia**. O capítulo 58 lembra ainda dois imitadores benignos: o poroma écrino, pápula úmida e vermelha com colarete, mais na palma e na planta (p. 1964), e o fibroceratoma digital adquirido (p. 1966). Por isso a peça da excisão vai sempre ao patologista: o granuloma que não era granuloma é justamente o caso que não se pode perder.
 
 ## Fibroma digital da infância
 
@@ -442,7 +448,7 @@ A assinatura clínica é a tríade do Campbell: **dor, sensibilidade ao frio e d
 
 A técnica do capítulo 9 explica a recidiva: o tumor pode ser múltiplo, e o leito inteiro deve ser examinado depois de retirada a lâmina. Retirar a unha, abrir o leito longitudinalmente, enuclear a lesão e reparar o leito com cuidado evita a deformidade ungueal.
 
-!questoes central=mao-0725 relacionadas=mao-1128,mao-1866,mao-0638,tumores-0004
+!questoes central=mao-0725 relacionadas=mao-1128,mao-1866,mao-0638,tumores-0004 treino=mao-3761,mao-3763
 conceito: tumor glômico é a tríade dor intensa, dor em um ponto à palpação e hipersensibilidade ao frio; nasce do corpo glômico (aparato neuromioarterial que regula temperatura e fluxo) e é subungueal na maioria dos casos da mão
 como: o IAUPE 2025 e o ENARE de Cirurgia da Mão 2023 pediram a tríade; a PUC-SP 2021 pediu a característica importante (sensibilidade ao frio); o TARO 2006 afirmou que a hiperalgesia é difusa no dedo
 armadilha: trocar frio por calor, ou dor em ponto por dor difusa; hiperemia, edema e parestesia não fazem parte do quadro
@@ -767,63 +773,269 @@ como: a PUC-SP 2021 perguntou qual sítio primário mais produz metástase para 
 armadilha: marcar mama ou rim, que estão na lista mas atrás do pulmão; e tratar como panarício uma lesão lítica da falange distal sem biopsiar
 !fim
 
-# Tumores de pele: lesões pré-malignas e carcinomas {radar=confirmado}
+# Pele da mão: camadas, exame e biópsia {radar=confirmado}
 
-## De onde nasce cada tumor
+## Como o capítulo 58 pensa
 
-Os tumores de pele vêm do capítulo 58 do Green (de NETSCHER), e para entendê-los basta lembrar as camadas da epiderme. Na base fica a **camada basal**, de células que se dividem; acima, a **camada espinhosa**, de queratinócitos que amadurecem e sobem; entre as células basais ficam os **melanócitos**. O **carcinoma basocelular** nasce de células semelhantes às basais (ou, como sugere o Campbell, das estruturas anexiais), o **carcinoma espinocelular** nasce dos queratinócitos que amadurecem e o **melanoma** nasce dos melanócitos. Dessa origem saem os comportamentos: o espinocelular passa por uma fase pré-maligna visível (ceratose actínica e doença de BOWEN, em que a atipia ainda está contida pela membrana basal), o basocelular surge sem precursor, e o melanoma pode surgir de um nevo ou, mais frequentemente, de pele normal.
+Os tumores de pele vêm do capítulo 58 do Green (Skin Tumors of the Hand and Upper Extremity, p. 1958 a 1986), escrito por David T. NETSCHER, cirurgião plástico e de mão de Houston. O tom é outro em relação ao capítulo 59: ATHANASIAN pensa como oncologista ortopédico, em compartimentos e margens ósseas; NETSCHER pensa como quem opera pele todos os dias, em camadas, linhas de tensão, enxertos e retalhos. O capítulo começa pela anatomia da pele, porque quase toda a conduta sai dela: a camada de onde o tumor nasce prevê como ele se comporta, a camada até onde ele chegou prevê se ele já tem acesso a linfáticos, e a espessura da pele no local decide quanto de margem é possível tirar.
 
-## Ceratose actínica e doença de BOWEN
+A banca cobra este capítulo com enunciados curtíssimos e alternativas da mesma família: quatro cânceres de pele, quatro prazos, quatro margens, quatro subtipos de melanoma. As pegadinhas se repetem e vale tê-las em mente desde já: o câncer de pele mais comum **do corpo** (basocelular) contra o mais comum **da mão** (espinocelular); a doença de BOWEN como espinocelular in situ (e não basocelular ou melanoma); o prazo de biópsia da mancha ungueal em meses e não em semanas; e a espessura de BRESLOW como medida em milímetros, e não tamanho ou cor.
 
-A **ceratose actínica** (solar ou senil) é a **lesão pré-maligna cutânea mais frequente** (p. 1972). As lesões são **ásperas e escamosas, com borda eritematosa**, em áreas expostas ao sol, **mãos e antebraços**, tipicamente em homens idosos de pele clara. A histologia mostra hiperqueratose e paraqueratose, atipia e membrana basal espessada, mas **intacta**: é isso que a mantém pré-maligna. O carcinoma espinocelular invasivo aparece em **menos de 10%** dos pacientes. Lesões isoladas se tratam com crioterapia ou eletrodissecção com curetagem; áreas extensas, com 5-fluoruracila tópica, e a lesão que resiste a ela pode esconder carcinoma invasivo. O diagnóstico diferencial é com eczema crônico, psoríase e doença de BOWEN (o carcinoma espinocelular in situ, com atipia em toda a espessura da epiderme). A **ceratose seborreica**, ao contrário, é uma lesão gordurosa, pigmentada, "colada" na pele, mais no braço e no tronco do que na mão (p. 1964), e não é pré-maligna.
+## As camadas e de onde nasce cada tumor
 
-!questoes central=mao-1404 treino=mao-2014
+A pele tem três andares: epiderme, derme e subcutâneo (p. 1958). A **epiderme** tem quatro camadas na maior parte do corpo e cinco na palma e na planta. De baixo para cima: a **camada basal**, de células colunares e basofílicas que se dividem; a **camada espinhosa** (ou malpighiana), de queratinócitos unidos por pontes intercelulares, que ao microscópio parecem espinhos; a **camada granulosa**, com grânulos de querato-hialina; e a **camada córnea**, de células mortas e sem núcleo. Na palma, entre a granulosa e a córnea, existe a **camada lúcida**, rica em eleidina, que dá à pele palmar a resistência ao atrito. Entre as células basais ficam os **melanócitos**, células dendríticas vindas da crista neural que convertem tirosina em dopa pela tirosinase e passam a melanina para os queratinócitos vizinhos; e as **células de MERKEL**, ligadas a mecanorreceptores de adaptação lenta, os que informam pressão contínua.
+
+A **derme** se divide em papilar e reticular. A **derme papilar** se encaixa na epiderme por cristas e papilas (as "rete pegs"), um engrenamento que resiste ao cisalhamento; a **derme reticular**, mais funda, tem fibras grossas, vasos, nervos, linfáticos e músculo liso. Os anexos nascem da epiderme e mergulham na derme: glândulas **écrinas** em toda a pele, com secreção aquosa; **apócrinas** na axila, que só amadurecem na puberdade e secretam com estresse, dor e medo; **sebáceas** em todo o corpo **menos na palma e na planta**; folículos pilosos e unhas.
+
+Essa anatomia explica três fatos que a prova cobra sem dizer por quê. Primeiro, a palma não tem folículos nem glândulas sebáceas, e por isso o carcinoma basocelular (que nasce da camada basal e dos anexos pilossebáceos) e o ceratoacantoma (que nasce do epitélio do pelo) são raros ali, enquanto os tumores de glândula sudorípara são mais frequentes ali, onde há mais glândulas écrinas. Segundo, o **carcinoma in situ** é a desorganização da maturação da epiderme sem atravessar a **membrana basal**; enquanto ela está intacta, o tumor não alcança vasos nem linfáticos, que só existem na derme. Terceiro, a invasão segue uma ordem previsível (membrana basal, derme papilar, derme reticular, subcutâneo), e é nessa ordem que se apoiam os níveis de CLARK, que entram adiante, no melanoma.
+
+!tabela De onde nasce cada tumor de pele (Green 7, cap. 58, p. 1958, 1959 e 1968)
+| Origem | Exemplos benignos | Exemplos malignos |
+| --- | --- | --- |
+| camada basal e anexos pilossebáceos | (sem precursor benigno direto) | carcinoma basocelular |
+| queratinócitos da camada espinhosa | verruga, ceratose seborreica, ceratoacantoma | carcinoma espinocelular e sua forma in situ (doença de BOWEN) |
+| melanócitos (crista neural) | lentigos, nevos melanocíticos, nevo azul, nevo de SPITZ | melanoma |
+| células de MERKEL | nenhuma | carcinoma de MERKEL |
+| anexos (écrinas, apócrinas, pelo) | poroma écrino, siringoma, pilomatricoma (epitelioma calcificante de MALHERBE) | carcinomas de glândula sudorípara |
+| derme (mesênquima) | dermatofibroma, neurofibroma, tumor glômico | dermatofibrossarcoma protuberante |
+!fim
+
+O capítulo também separa os cistos pela origem (p. 1959): o **cisto de inclusão epidérmica** nasce de epiderme implantada na derme por trauma ou de um folículo ocluído e mantém um punctum na superfície; o **pilossebáceo**, de um ducto bloqueado; o **triquilemal**, do folículo. O milium é o menor de todos, um microcisto de queratina logo abaixo da epiderme. Os malignos de origem epitelial chamam-se carcinomas; os do tecido conjuntivo, sarcomas.
+
+!questoes central=mao-1888
+conceito: os tumores de pele se classificam pela célula de origem: epitelial (milium, cisto de inclusão), de anexos (pilomatricoma, siringoma, cisto triquilemal), da crista neural (nevos melanocíticos, neuroma e tumores de bainha nervosa) e mesenquimal (dermatofibroma, lipoma, xantoma); a origem prevê onde aparecem e como se comportam
+como: o ENARE de Cirurgia da Mão 2023 pediu a sequência de exemplos benignos de origem epitelial, de apêndices cutâneos, da crista neural e mesenquimal, nessa ordem
+armadilha: aceitar uma alternativa que tenha um maligno (lipossarcoma) ou um pré-maligno (ceratose actínica) no meio da lista de benignos, ou uma em que a ordem das origens não bate (siringoma e cisto triquilemal são anexiais, não epiteliais puros)
+!fim
+
+## O que o exame clínico diz da profundidade
+
+O Green ensina a ler a profundidade da lesão pela forma que ela tem na superfície (p. 1959). A lesão **intraepidérmica** forma **placa** e não pápula, porque cresce dentro de uma lâmina fina e se espalha de lado; a lesão **juncional**, na junção dermoepidérmica, é **plana** (o nevo juncional é o exemplo); a lesão **dérmica** empurra a epiderme para cima e forma **pápula ou nódulo** (dermatofibroma, nevo intradérmico, melanoma nodular). O carcinoma basocelular e o espinocelular podem ser pigmentados, porque o melanócito passa melanina às células tumorais vizinhas; por isso cor escura não é sinônimo de melanoma.
+
+Alguns termos de exame têm significado histológico preciso. **Hiperceratose** é o espessamento da camada córnea (ceratose actínica, verruga); **acantose** é o espessamento da espinhosa, que dá à pele um aspecto de couro e, quando pigmentada, chama-se acantose nigricans, associada à obesidade ou, raramente, a câncer interno; o **corno cutâneo** é a hiperceratose empilhada em forma de chifre (p. 1959 e 1960). A **ceratose seborreica** tem escama gordurosa e parece "colada" na pele. O **dermatofibroma** é duro, aderido à epiderme e móvel sobre o plano profundo, com uma umbilicação central quase patognomônica quando se aperta a lesão entre dois dedos; o nevo intradérmico, ao contrário, é mole e afunda com o cabo de um cotonete (p. 1960). E o sinal mais importante de todos: a **fixação ao plano profundo** significa invasão profunda.
+
+O exame termina nos linfonodos, e aqui a anatomia do membro superior tem uma surpresa (p. 1960). Os linfáticos superficiais do lado ulnar podem passar primeiro pelos **linfonodos supratrocleares (epitrocleares)**, logo acima do epicôndilo medial, embora a maioria vá direto à axila; os superficiais do lado radial sobem com a veia cefálica até os **deltopeitorais** e daí aos infraclaviculares; os profundos acompanham as artérias radial, ulnar e interósseas até a axila lateral. O exame completo palpa antebraço, epitroclear, axila e fossa supraclavicular, e o Green avisa que o linfonodo sentinela pode estar em qualquer um desses sítios: não se presume que a drenagem suba em linha reta até a axila.
+
+## Biópsia e tratamentos de consultório
+
+A regra que abre a seção de tratamento é simples: **antes de qualquer cirurgia ablativa, diagnóstico histológico** (p. 1961). A imagem só entra na lesão grande e profunda, em que a ressonância ajuda a planejar a ressecção; a lesão pequena vai direto à biópsia excisional (p. 1960). Cada técnica de biópsia responde a uma pergunta diferente:
+
+- **Shave (raspagem)**: anestesia em pápula, lesão pinçada entre o polegar e o indicador e cortada na horizontal (Figura 58.6). Serve para lesões epidérmicas; **não serve** para lesão que infiltra a derme nem, em geral, para lesão pigmentada suspeita de melanoma, porque corta o tumor na horizontal e destrói a única informação que importa, a espessura.
+- **Punch**: cilindros de 1,5 a 6 mm, o de **4 mm** é o mais usado; corta até a gordura, a base é seccionada com tesoura de íris e em geral não precisa de sutura (Figura 58.7).
+- **Incisional elíptica**: para lesão grande demais para sair inteira. O Green é explícito: desde que a excisão definitiva venha em tempo hábil, a biópsia incisional **não altera a história natural do melanoma nem de outros cânceres**. Deve ser **longitudinal**, para não atrapalhar a ressecção futura.
+- **Excisão elíptica**: nas linhas de menor tensão. Quando a orientação é difícil, resseca-se em círculo, deixa-se a ferida se abrir sozinha numa elipse e só então se retiram as "orelhas" (Figura 58.8).
+- **Lesões subungueais e melanoníquia**: retirar a lâmina e fazer biópsia longitudinal, incisional ou excisional, com reparo do leito sem tensão depois de descolar as bordas lateralmente.
+
+Os tratamentos destrutivos de consultório têm uma limitação comum: **nenhum avalia margem**. A **curetagem** (cureta de 5 mm) dá material para histologia, mas não diz se o tumor saiu inteiro; é excelente para ceratoses e verrugas, inclusive a subungueal, depois de retirar a lâmina e achar o plano com lupa (Figura 58.4). A **criocirurgia** com nitrogênio líquido congela até o halo de gelo passar um pouco da borda (Figura 58.5); é pouco dolorosa, mas exige cuidado com os nervos superficiais (a face volar dos dedos e o nervo ulnar no cotovelo podem sofrer lesão permanente), com o leito ungueal e com a pele escura, que despigmenta (p. 1960 e 1961). A **eletrodissecação com curetagem**, repetida cerca de três vezes, funciona porque o tecido tumoral é mole e se solta da cureta, enquanto a derme normal é firme e resiste: a mão do cirurgião sente a diferença. A vantagem é estética, e a recidiva aparece cedo, sem ficar escondida embaixo de um retalho.
+
+Os tópicos completam o arsenal. O **5-fluoruracila** serve para lesões difusas com potencial maligno (as ceratoses actínicas extensas), mas **não trata BOWEN nem carcinomas basocelulares ou espinocelulares**, nem os superficiais. O **imiquimode a 5%**, um modulador da resposta imune, foi aprovado para o **carcinoma basocelular superficial**, com dados incompletos para BOWEN, espinocelular e lentigo maligno (p. 1960).
+
+## Excisão, congelação e cirurgia de MOHS
+
+A excisão vai do simples ao sofisticado (p. 1962): elipse com fechamento primário, excisão com congelação das margens, cirurgia micrográfica de MOHS. A escolha depende de uma pergunta: o que acontece se a margem vier comprometida no exame definitivo? Se a ferida foi fechada em linha reta, reexcisar a cicatriz é simples, e não há prejuízo. Se o fechamento rearranjou tecidos com um retalho, o tumor residual pode ter sido espalhado e escondido, e já não se sabe onde ele está. Por isso o Green pede **congelação ou MOHS quando o fechamento é complexo** (retalho ou rearranjo), quando a invasão é complexa, na recidiva e na lesão infiltrativa de borda difícil. Um detalhe prático: **marcar a borda do tumor e a margem de ressecção antes do anestésico**, que distorce a pele (Figura 58.9).
+
+A diferença entre a patologia convencional e a de MOHS é geométrica. Na convencional, a peça é cortada em "fatias de pão", perpendiculares à superfície, e cada lâmina mostra só uma linha da margem; o que está entre as fatias não é visto, e a fração examinada é pequena. Na técnica de MOHS, o cirurgião retira camadas finas e tangenciais, cada uma inteira na lâmina, de modo que **toda a margem periférica e profunda** é examinada, e um mapa marca onde ficou tumor; volta-se só naquele ponto. Frederic MOHS desenvolveu o método nos anos 1930, em Wisconsin, como "quimiocirurgia": fixava o tumor na própria pele com pasta de cloreto de zinco antes de retirar cada camada. A técnica com tecido fresco, sem a pasta, firmou-se nos anos 1970 e é a que se usa hoje.
+
+As indicações de MOHS no Green (p. 1962) seguem essa lógica: lesões extensas de borda clínica difícil (a doença de BOWEN difusa, Figura 58.10), carcinoma recidivado, espinocelular de alto risco, margens mal definidas (dermatofibrossarcoma protuberante) e áreas em que se quer poupar ao máximo o tecido, como os dedos. O método não é o tratamento de rotina de todo carcinoma de pele da mão; é a ferramenta para quando a margem não se enxerga.
+
+# Lesões pré-malignas e de comportamento indeterminado {radar=confirmado}
+
+## Ceratose actínica: a lesão pré-maligna mais frequente
+
+A **ceratose actínica** (solar ou senil) é a **condição pré-maligna cutânea mais frequente** (p. 1972). O mecanismo é a radiação ultravioleta acumulada ao longo da vida, que lesa o DNA dos queratinócitos basais (as mutações do gene supressor p53 são as mais conhecidas) e cria clones de células atípicas na parte baixa da epiderme. O perfil é o **homem idoso de pele clara**, de ascendência céltica no texto do Green, com lesões nas áreas expostas: **dorso da mão e antebraço**, face, couro cabeludo calvo.
+
+A lesão é **áspera e escamosa, com borda eritematosa** (Figura 58.23), muitas vezes mais fácil de sentir com a polpa do dedo do que de ver. A histologia mostra hiperceratose, paraceratose (núcleos retidos na camada córnea), perda da camada granulosa e atipia dos queratinócitos, com a **membrana basal espessada, mas íntegra**. É essa integridade que a mantém pré-maligna. O carcinoma espinocelular invasivo aparece em **menos de 10%** dos pacientes. O diagnóstico diferencial inclui eczema crônico, psoríase e a doença de BOWEN.
+
+O tratamento acompanha a extensão. Lesões isoladas: crioterapia ou eletrodissecação com curetagem. Muitas lesões, o chamado campo de cancerização: 5-fluoruracila tópico, dermoabrasão, ácido tricloroacético ou terapia fotodinâmica. E um aviso clínico: **a lesão que resiste ao 5-fluoruracila pode esconder um carcinoma invasivo** e deve ser biopsiada (p. 1972). Também é na base de uma ceratose actínica que nasce a maioria dos cornos cutâneos.
+
+A ceratose actínica precisa ser separada da **ceratose seborreica**, a lesão gordurosa, pigmentada e "colada" na pele da meia-idade e do idoso, mais no braço e no tronco do que na mão (p. 1964; Figura 58.11). Esta não é pré-maligna, não invade a derme e sai com curetagem, shave ou nitrogênio; às vezes imita melanoma pela cor, e então se biopsia. A **ceratose arsenical** é a terceira da família, rara hoje, causada por arsênico inorgânico ingerido ou de contato agrícola, nos braços e nas plantas (p. 1972).
+
+!questoes central=mao-1404 treino=mao-2014,mao-3768
 conceito: ceratose actínica é a lesão pré-maligna mais frequente da pele, áspera, escamosa e eritematosa, no dorso da mão e no antebraço do idoso exposto ao sol, e é a precursora do carcinoma espinocelular (que surge em menos de 10% dos pacientes)
 como: a USP-SP 2024 descreveu lesão descamativa e eritematosa de bordas mal definidas no dorso da mão de um paciente de 65 anos; o SIMÃO 2023 perguntou a lesão precursora do carcinoma de células escamosas
 armadilha: marcar ceratose seborreica (gordurosa, "colada", mais no tronco) ou granuloma piogênico (vermelho, friável, sangrante); a verruga é viral e o nevo melanocítico relaciona-se ao melanoma
 !fim
 
-## Carcinoma espinocelular
+## Doença de BOWEN: o espinocelular in situ
 
-Na mão, a ordem geral dos cânceres de pele se inverte. O Green (p. 1973) diz que o carcinoma basocelular é o câncer de pele mais comum do corpo, mas **relativamente raro na mão**, onde o **carcinoma espinocelular é muito mais comum**. A explicação está no sol e na pele: o dorso da mão recebe radiação ultravioleta crônica, que é o motor do espinocelular, e tem poucas das estruturas anexiais de onde o basocelular parece nascer. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3589 a 3592), quantifica: o espinocelular responde por **58% a 90% de todas as malignidades da mão**, é quatro vezes mais comum em homens, surge em torno dos 50 anos e supera o melanoma como malignidade mais comum do leito ungueal.
+A **doença de BOWEN** é o **carcinoma espinocelular intraepidérmico**, ou seja, in situ (p. 1972). Descrita pelo dermatologista americano John T. BOWEN em 1912, ela difere da ceratose actínica num ponto histológico decisivo: a atipia ocupa **toda a espessura da epiderme**, da camada basal à superfície, e não só a parte baixa. A membrana basal ainda está íntegra, e por isso não há metástase enquanto a lesão é in situ. A invasão vem depois de anos e em **menos de 10%** dos casos, mas o carcinoma que nasce de BOWEN é **mais agressivo** do que o que nasce de ceratose actínica: metastatiza em até um terço dos casos, segundo o Green.
 
-O **perioníquio** merece atenção à parte. O capítulo 9 do Green (p. 334 e 335) diz que o carcinoma espinocelular, embora incomum, é o **tumor maligno mais comum do perioníquio**. Os fatores são radiação (as mãos dos dentistas de antigamente), trauma repetido, infecção, arsênico e **papilomavírus humano**; numa revisão da Cleveland Clinic, só duas causas ficaram claras, o papilomavírus e a radiação. Aparece como lesão elevada, vermelha, às vezes ulcerada e sangrante, ou só como deformidade da unha; cresce devagar e é confundido com paroníquia, com atraso médio de **4 anos**. É **mais comum em homens e costuma acometer o polegar**. Sem osso envolvido, ressecção com margem e enxerto; antigo, grande ou com osso, amputação na interfalângica distal ou mais proximal. O capítulo 58 completa com o prognóstico: o carcinoma espinocelular **paroniquial tem alta incidência de recidiva local e baixa taxa de metástase** (p. 1975). O Campbell acrescenta que na unha a forma mais comum é in situ, com 15% tornando-se invasivos.
+A clínica são **placas irregulares, espessas, hiperceratóticas e eritematosas**, que podem estar na palma (Figura 58.24). O diagnóstico diferencial é largo: psoríase, eczema, verruga, micose (sobretudo no perioníquio), ceratose actínica e carcinoma basocelular superficial. O BOWEN periungueal é especialmente traiçoeiro: parece uma paroníquia crônica ou uma micose que não responde, e a associação com papilomavírus humano (os tipos de alto risco, como o 16) explica por que aparece em dedos de pessoas que nem tomam muito sol. A **variante de HABER** é a forma familiar, em áreas cobertas (p. 1973).
 
-!questoes central=mao-1070 relacionadas=mao-1358 treino=mao-2469,mao-2451
+O tratamento mostra o raciocínio do capítulo. O melhor é a **excisão com margem de tecido normal**, e a cirurgia de MOHS ajuda porque a borda clínica é difícil de definir. A curetagem e os tópicos, inclusive o 5-fluoruracila, **funcionam pior**, por uma razão anatômica: as células atípicas descem pelo epitélio dos folículos pilosos, abaixo do alcance da cureta e do creme. Na ponta do dedo com distrofia importante da unha, a melhor opção pode ser a **amputação da polpa**; nas feridas extensas, retira-se todo o leito ungueal até o periósteo e cobre-se com **enxerto de pele total** (Figura 58.25).
+
+## Corno cutâneo, poroceratose e ceratoacantoma
+
+O **corno cutâneo** não é um diagnóstico, é um formato: hiperceratose compacta empilhada como um chifre sobre alguma lesão epidérmica (Figura 58.20). Na maior parte das vezes a base é uma ceratose actínica, mas **até 10% têm carcinoma espinocelular por baixo**, raríssimas vezes basocelular; outras bases possíveis são ceratoacantoma, ceratose seborreica, verruga e adenoma sebáceo. O corno em si não é pré-maligno; o que importa é o que está na base, e por isso a biópsia é a **excisão com margem de 1 a 2 mm**, levando a base inteira (p. 1970).
+
+A **poroceratose** é um distúrbio da queratinização com uma borda elevada e queratótica que corre como um muro em volta de um centro atrófico. A histologia tem uma assinatura, a **lamela cornoide**, uma coluna de paraceratose que corresponde exatamente a essa borda. Muitas vezes é **autossômica dominante**, e cerca de **13%** das lesões evoluem para carcinoma espinocelular (p. 1970). O Green lista quatro formas: a de MIBELLI (placas), a actínica superficial disseminada (a mais comum nos adultos, em áreas expostas), a linear e a puntiforme (Figura 58.21). Trata-se com crioterapia, 5-fluoruracila ou imiquimode, e as lesões que mudam de aspecto se biopsiam.
+
+!questoes central=mao-1119
+conceito: a poroceratose é um distúrbio da queratinização com borda queratótica elevada e lamela cornoide na histologia, muitas vezes autossômica dominante, que evolui para carcinoma espinocelular em cerca de 13% (Green 7, cap. 58, p. 1970)
+como: a PUC-SP 2021 perguntou o índice de transformação da poroceratose em carcinoma de células escamosas
+armadilha: confundir com a ceratose actínica (menos de 10% de invasão) ou com o corno cutâneo (até 10% de espinocelular na base); os números vizinhos (17%, 25%, 30%) não aparecem no Green
+!fim
+
+O **ceratoacantoma** é o tumor que mais se parece com câncer e mais vezes regride sozinho (p. 1971). É um tumor epitelial que nasce do **epitélio do folículo piloso**, em pele exposta ao sol **e com pelos**, e segue o ciclo do pelo: uma pápula firme cresce em semanas até 2 cm ou mais, com uma **cratera central cheia de um tampão de queratina** (Figura 58.22), fica estável e depois regride, expulsa o tampão e deixa cicatriz. O problema é que ele imita o carcinoma espinocelular **na clínica e na histologia**, e alguns casos metastatizam, e então não se distinguem do espinocelular; tanto que muitos patologistas o chamam de "carcinoma espinocelular tipo ceratoacantoma". A conduta do Green é prática: **excisão completa**, sem esperar a regressão.
+
+Há uma variante que foge à regra: o **ceratoacantoma digital distal (subungueal)**, raro, em pele **sem pelo**, de crescimento rápido, que deforma o leito, destrói a falange distal e se comporta como um carcinoma de baixo grau. Quando não se consegue excluir o carcinoma espinocelular, a conduta é a **amputação digital distal** (p. 1971 e 1972).
+
+## Síndromes que fabricam câncer de pele
+
+Três síndromes ensinam a biologia dos carcinomas por exclusão: cada uma desliga um freio diferente (p. 1972 e 1973).
+
+- A **síndrome de GORLIN (do nevo basocelular)** é autossômica dominante e se deve a mutação do gene PTCH1, que normalmente freia a via de sinalização hedgehog. Depois da puberdade surgem centenas ou milhares de pápulas castanho-avermelhadas que viram carcinomas basocelulares, com fácies típica, **depressões (pits) palmares e plantares**, braquimetacarpia, meduloblastoma e retardo (Figura 58.26). A descoberta dessa via mudou o tratamento do basocelular avançado: os inibidores da via hedgehog (como o vismodegibe) passaram a ser uma opção para doença localmente avançada ou metastática.
+- O **xeroderma pigmentoso** é autossômico recessivo: falha o reparo do DNA lesado pelo ultravioleta. Pele e olhos não toleram sol, e carcinomas e melanomas aparecem já na **primeira década**, com prognóstico sombrio (Figura 58.27).
+- A **síndrome de BAZEX** é ligada ao X dominante, com basocelulares múltiplos, hipotricose e hipoidrose.
+
+Fora das síndromes, dois grupos de imunossuprimidos mostram o papel da vigilância imune. Os **transplantados**, sobretudo de rim e coração, têm carcinomas espinocelulares múltiplos e mais agressivos (Figura 58.32), e o Green cita um risco 65% maior; a literatura de transplante fala em risco muitas vezes maior, o que só reforça o ponto. E os pacientes com **HIV** têm mais câncer de pele: KAPOSI, basocelular duas vezes mais em homens brancos, espinocelular 2,6 vezes mais, sem relação com carga viral nem com o tratamento antirretroviral (p. 1983).
+
+# Carcinomas basocelular e espinocelular {radar=confirmado}
+
+## Por que na mão a ordem se inverte
+
+O carcinoma basocelular é o câncer de pele mais comum do corpo humano, mas é **relativamente raro na mão**, onde o **carcinoma espinocelular é muito mais comum** (Green, p. 1973). A banca alterna as duas perguntas, e a única defesa é entender por quê.
+
+A primeira razão é a anatomia dos anexos. O basocelular nasce da camada basal e dos anexos pilossebáceos, e a mão tem poucos folículos no dorso e nenhum na palma; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3592 aprox.), sugere justamente que ele nasça de glândulas sebáceas, escassas ali. A segunda é o tipo de sol. O espinocelular acompanha a **dose acumulada** de ultravioleta ao longo da vida, e o dorso da mão é uma das áreas mais cronicamente expostas do corpo, ao volante, no trabalho rural, na rua; o basocelular se relaciona mais à exposição intensa e intermitente e à pele pilosa da face. A terceira é a presença de precursores: o espinocelular tem um caminho visível (ceratose actínica, doença de BOWEN), e o dorso da mão do idoso é exatamente onde esses precursores se acumulam.
+
+O Campbell quantifica: o espinocelular responde por **58% a 90% de todas as malignidades da mão**, é quatro vezes mais comum em homens, aparece em torno dos 50 anos e supera o melanoma como malignidade mais comum do leito ungueal.
+
+## Carcinoma espinocelular: perfil e perioníquio
+
+O espinocelular tem **precursores** (ceratose actínica) e uma **variante in situ** (BOWEN), mas também surge de novo; é **mais agressivo que o basocelular e metastatiza mais** (p. 1975). Os fatores de risco são os do sol e da pele: pele clara, história de queimaduras solares, olhos azuis, cabelo louro ou ruivo, além da imunossupressão. Na clínica é uma pápula ou placa queratótica que cresce, endurece, ulcera e sangra, muitas vezes sobre uma ceratose actínica antiga.
+
+O **perioníquio** merece atenção à parte. O capítulo 9 do Green (p. 334 e 335) diz que o carcinoma espinocelular, embora incomum, é o **tumor maligno mais comum do perioníquio**. Os fatores são radiação (as mãos dos dentistas de antigamente, que seguravam o filme), trauma repetido, infecção, arsênico e **papilomavírus humano**; numa revisão da Cleveland Clinic, só duas causas ficaram claras, o papilomavírus e a radiação. Aparece como lesão elevada, vermelha, às vezes ulcerada e sangrante, ou só como deformidade da unha; cresce devagar e é confundido com paroníquia, com atraso médio de **4 anos**. É **mais comum em homens e costuma acometer o polegar**. Sem osso envolvido, ressecção com margem e enxerto; antigo, grande ou com osso, amputação na interfalângica distal ou mais proximal. O capítulo 58 completa com o prognóstico: o carcinoma espinocelular **paroniquial tem alta incidência de recidiva local e baixa taxa de metástase** (p. 1975), e confunde-se com micose, eczema e BOWEN (Figura 58.35). O Campbell acrescenta que na unha a forma mais comum é in situ, com 15% tornando-se invasivos.
+
+!questoes central=mao-1070 relacionadas=mao-1358 treino=mao-2469,mao-2451,mao-3760
 conceito: o carcinoma espinocelular é o tumor maligno de pele mais comum da mão e o mais comum do perioníquio; ali é mais frequente em homens, no polegar, ligado a radiação e papilomavírus, com alta recidiva local e baixa taxa de metástase
 como: o SIMÃO 2021 pediu o maligno de pele mais comum na mão; a PUC-SP 2019, o mais comum do perioníquio; a USP-SP 2025, a epidemiologia (acomete mais o polegar); o SIMÃO 2022, a afirmativa de acordo com o Green sobre os malignos de pele
 armadilha: responder carcinoma basocelular por ser o mais comum do corpo; dizer que não há relação com o papilomavírus ou que o perioníquio é raramente acometido; e, em `mao-2451`, as três erradas trocam fatos do melanoma (in situ não se amputa, confunde-se com hematoma, o dedo mais atingido é o polegar)
 !fim
 
-## Carcinoma basocelular
+## Carcinoma espinocelular: prognóstico, margens e linfonodos
 
-O carcinoma basocelular **nasce sem lesão precursora**, é **localmente agressivo e recorrente, e a metástase é rara** (p. 1973). A célula típica tem núcleo basofílico grande e pouco citoplasma, e as células da periferia de cada ninho se alinham em **paliçada**. O Campbell (p. 3592) sugere por que ele é raro no dorso da mão apesar do sol: nasceria em glândulas sebáceas, escassas ali. A agressividade local sem metástase tem uma explicação biológica: o tumor depende do estroma que o cerca para crescer, e por isso invade em continuidade, destruindo o que encontra, mas raramente sobrevive solto na corrente sanguínea.
+No basocelular, o subtipo histológico basta para prever o comportamento. No espinocelular, o Green lista vários fatores que pesam juntos (p. 1975), e cada um tem um mecanismo:
+
+- **Grau de diferenciação**, de 1 a 4, pela proporção de células indiferenciadas. Os graus 3 e 4 (50% e 75% de células indiferenciadas) **recidivam duas vezes e metastatizam três vezes mais**. A célula indiferenciada perdeu a adesão e a maturação que a prendiam à epiderme.
+- **Local**: o paroniquial recidiva muito e metastatiza pouco, como visto acima.
+- **Tamanho**: T1 menor que 2 cm, T2 de 2 a 4 cm, T3 maior que 4 cm. Acima de 2 cm, recidiva duas vezes e metastatiza três vezes mais.
+- **Profundidade**, para alguns o fator mais importante: mais de 4 mm, ou invasão até o subcutâneo (nível 5 de CLARK), aumenta recidiva e metástase. A explicação é a mesma do melanoma: a epiderme e a derme superficial não têm linfáticos, e quanto mais fundo o tumor, mais vasos ele encontra.
+- **Invasão perineural**: mau prognóstico, muitas vezes assintomática, às vezes dolorosa; recidiva em 47%, linfonodo regional em 35% e metástase a distância em 15%. O nervo é uma via de escape que a margem cutânea não enxerga, e por isso essa invasão pede **radioterapia depois da excisão**.
+
+Daí a divisão em **alto risco** (crescimento rápido acima de 2 cm, profundidade de 2 mm ou mais ou nível 4 de CLARK, pouca diferenciação, invasão perineural) e **baixo risco**. O baixo risco pode ser tratado com crioterapia, eletrodissecação e curetagem, terapia fotodinâmica ou excisão. As **margens periféricas** do Green (p. 1977; Figura 58.33) são:
+
+!tabela Margem periférica do carcinoma espinocelular (Green 7, cap. 58, p. 1977)
+| Grupo | Margem | Profundidade |
+| --- | --- | --- |
+| baixo risco | 4 mm | até a gordura |
+| alto risco | no mínimo 6 mm | até a gordura ou a fáscia |
+!fim
+
+A cura cirúrgica fica em torno de **92%**. A cirurgia de MOHS é indicada no alto risco, no recidivado, no perineural, no pouco diferenciado, no profundo e **nos dedos**, onde cada milímetro poupado conta. O fechamento (direto, enxerto ou retalho) só vem com margens livres, confirmadas por congelação ou pelo definitivo. Os tumores agressivos podem exigir amputação; quando invadem osso e articulação, a **amputação do raio** (Figura 58.34).
+
+Os linfonodos fecham o raciocínio. **De 2% a 5%** dos espinocelulares metastatizam para a axila. O esvaziamento eletivo ou a biópsia do linfonodo sentinela **não mostraram vantagem**, exceto quando o linfonodo está clinicamente aumentado; o sentinela no espinocelular de alto risco ainda está em estudo (p. 1977). Com metástase axilar, a sobrevida em 5 anos cai para cerca de **40%**. O espinocelular invade mais devagar que o melanoma, e por isso o linfonodo entra tarde.
+
+## Carcinoma basocelular: biologia e subtipos
+
+O carcinoma basocelular **nasce sem lesão precursora**, é **localmente agressivo e recorrente, e a metástase é rara** (p. 1973). A célula típica tem núcleo basofílico grande e pouco citoplasma, e as células da periferia de cada ninho se alinham em **paliçada**, perpendiculares à borda. A agressividade local sem metástase tem uma explicação biológica: o tumor depende do estroma que o cerca para crescer, e por isso invade em continuidade, destruindo o que encontra (as antigas "úlceras roedoras" da face), mas raramente sobrevive solto na corrente sanguínea. O crescimento é lento, em meses e anos.
+
+A lesão típica, a do subtipo nodular, é uma **pápula em cúpula, rosada e perolada**, translúcida, com **telangiectasias** na superfície, que pode ulcerar no centro e deixar a borda perolada em volta. O diagnóstico diferencial inclui úlcera factícia, eczema, ceratose actínica, psoríase e micose; o basocelular nodular pigmentado imita melanoma, mas se comporta como um basocelular nodular circunscrito (p. 1973). É raro na pele negra, porque a melanina protege a camada basal, e a localização preferencial no corpo é a cabeça e o pescoço, não os membros.
 
 !tabela Subtipos do carcinoma basocelular (Green 7, cap. 58, Tabela 58.1 e p. 1974)
 | Grupo | Subtipo | O que o caracteriza |
 | --- | --- | --- |
 | circunscrito | nodular (sólido) | o mais comum; cúpula perolada com telangiectasias; pode ulcerar |
 | circunscrito | adenoide | cordões e ilhas de tumor em arranjo tubular, cercados por estroma mixoide |
-| circunscrito | cístico | lacunas por degeneração das células tumorais |
+| circunscrito | cístico | lacunas por degeneração das células tumorais; com áreas adenoides, "adenoide cístico" |
+| circunscrito | fibroepitelioma de PINKUS | variante rara, polipoide |
 | difuso | superficial | o segundo mais comum; tronco e membro superior; placa escamosa de borda perolada; focos conectados; recidiva mais |
 | difuso | morfeiforme (esclerosante) | raro na mão, mais na face; placa firme; extensão até 7 mm além da borda visível |
 | difuso | infiltrativo | margens mal definidas |
 !fim
 
-A divisão entre circunscritos e difusos é a chave da conduta: os circunscritos têm borda clínica que corresponde à borda histológica, e a excisão com margem pequena resolve; os difusos têm extensões invisíveis além do que se vê, e é neles (e nas recidivas) que a cirurgia de MOHS, com exame de toda a margem, se justifica.
+A classificação, de JACOBS, divide os subtipos em **circunscritos e difusos**, e essa é a chave da conduta: os circunscritos têm borda clínica que corresponde à borda histológica, são menos virulentos, e a excisão com margem pequena resolve; os difusos têm extensões invisíveis além do que se vê e recidivam mais. Dentro de cada grupo, pesam ainda o grau de diferenciação e a profundidade (fixação). Dois exemplos merecem o porquê. O **superficial** já foi chamado de "multicêntrico", porque parecia formado por focos separados; a reconstrução tridimensional mostrou que os focos estão **conectados** por baixo, e a recidiva vem de a lesão passar da borda clínica (Figura 58.29). No **morfeiforme**, o colágeno denso da derme comprime o tumor em cordões finos, que se estendem até 7 mm além da borda visível e não se deixam curetar.
 
-!questoes central=mao-1392 treino=mao-2328,mao-2054
+!questoes central=mao-1392 treino=mao-2328,mao-2054,mao-3758,mao-3762
 conceito: o carcinoma basocelular é raro na mão, nasce sem precursor, é agressivo e recorrente no local e raramente metastatiza; o nodular é o subtipo mais comum, o superficial recidiva mais, o esclerosante é raro na mão e o adenoide tem ilhas de tumor cercadas por estroma mixoide
 como: o SIMÃO 2024 perguntou como o basocelular se comporta na mão; a SBCM 2024 pediu a afirmativa correta sobre os subtipos; a USP-SP 2025 pediu a correta sobre os carcinomas não melanoma
 armadilha: inverter os subtipos (nodular "menos frequente", superficial "recidiva pouco", esclerosante "comum na mão"); e, nos não melanoma, tomar a cirurgia de MOHS como tratamento de escolha (o Green a reserva a lesões de alto risco, recidivadas ou de margem difícil) ou o linfonodo sentinela como rotina no espinocelular
 alerta: o gabarito de `mao-1392` (risco de 30% a 50% de nova lesão em 5 anos) não foi encontrado no Green nem no Campbell; os livros sustentam apenas que as outras três alternativas estão erradas: o Green diz que o espinocelular é "muito mais comum" que o basocelular na mão, sem dar a razão de quatro a cinco vezes, e no corpo em geral o mais comum é o basocelular
 !fim
 
+!questoes central=mao-1844 relacionadas=mao-0698
+conceito: o carcinoma basocelular cresce devagar, destrói no local e quase nunca dá metástase a distância; a lesão característica é a pápula perolada, translúcida e brilhante, com telangiectasias; predomina na cabeça e no pescoço da pele clara exposta ao sol, e o filtro solar previne
+como: o ENARE de Cirurgia da Mão 2022 pediu a afirmativa correta sobre o basocelular (lesão perolada); a FMRP-USP 2026 pediu, com EXCETO, a característica que não é típica (metástase a distância)
+armadilha: marcar que é comum no negro (a melanina protege), que cresce rápido com metástase hematogênica, que predomina nos membros (predomina na cabeça) ou que o filtro solar não ajuda; na FMRP, achar que destruição local ou crescimento lento não são típicos
+!fim
+
+## Carcinoma basocelular: tratamento e margens
+
+O tratamento mais usado é a **curetagem com eletrodissecação**, para tumores primários de **menos de 1 cm**, e a mão se presta bem a ele (p. 1974 e 1975). A **crioterapia** serve aos bem definidos, mas pode lesar nervos e deve ser evitada nos dedos e sobre o nervo ulnar no cotovelo. Esses métodos curam até **97%**, mesmo sem verificar a margem ao microscópio, o que só funciona porque o basocelular circunscrito pequeno tem borda clínica confiável.
+
+A **excisão cirúrgica** cura mais de **90%** e dá a peça para conferir a margem (Figura 58.30, com a orientação da peça para o patologista). As margens do Green (p. 1975) crescem com o tamanho e com o subtipo:
+
+!tabela Margem periférica do carcinoma basocelular (Green 7, cap. 58, p. 1975)
+| Lesão | Margem |
+| --- | --- |
+| nodular menor que 1 cm | 2 mm |
+| até 2 cm | 3 a 5 mm, até a gordura |
+| maior que 2 cm e subtipos agressivos (morfeiforme, superficial "multicêntrico") | 10 mm, quando possível |
+!fim
+
+A congelação das margens **não é necessária para todo basocelular**: é cara, e, se o exame definitivo mostrar margem comprometida, reexcisar depois **não piora a chance de cura**. Já nas lesões de alto risco, recomenda-se congelação ou MOHS. Se a reconstrução for com retalho, a margem precisa estar livre antes, pela congelação ou esperando o definitivo com curativo úmido na ferida (Figura 58.31, retalho bilobado sobre o primeiro metacarpo). O 5-fluoruracila e o imiquimode **não dão cura aceitável** no basocelular em geral; o imiquimode fica reservado ao superficial (p. 1960 e 1975).
+
+# Nevos e lesões pigmentadas benignas {radar=confirmado}
+
+## Lentigos e nevo melanocítico
+
+Antes do melanoma vêm as manchas que o imitam (p. 1965 e 1966). Os **lentigos** são máculas benignas com mais atividade melanocítica; ao contrário das efélides (sardas), não clareiam quando o sol some. O **lentigo simples** aparece na infância, tem menos de 5 mm e surge em pele exposta ou não. O **lentigo solar (senil)** está no **antebraço e no dorso da mão** do idoso, sobre pele com elastose solar, e aumenta com a idade; pode imitar melanoma, e então se biopsia; se incomoda, trata-se com laser.
+
+O **nevo melanocítico** é o **tumor mais comum do ser humano**. Poucos existem ao nascer, o número sobe até o adulto jovem e depois cai. Classifica-se pela posição das células névicas: **juncional** (na junção dermoepidérmica, plano), **intradérmico** (só na derme, elevado) e **composto** (os dois). O nevo amadurece descendo: na criança, a maioria é juncional e plana; no adulto, intradérmica e elevada. As células névicas são melanócitos que, nos ninhos dérmicos, perderam os dendritos e boa parte da síntese de pigmento (a exceção é o nevo azul).
+
+Dois fatos sobre o risco caem com frequência. O componente **juncional** dos nevos juncionais e compostos é o que, raramente, se transforma em melanoma; mas a **maioria dos melanomas não nasce de nevo prévio** (p. 1966). E os **nevos palmares**, que já foram considerados propensos à malignização, não são: aparecem em **13% dos brancos e 29% dos negros**, e a excisão de rotina é impraticável e desnecessária. O nevo comum não se trata, a menos que apareçam os sinais ABCD (assimetria, borda irregular, cor variada, diâmetro acima de 6 mm), aumento, escurecimento ou ulceração.
+
+## Nevo congênito gigante, SPITZ, displásico e nevo azul
+
+O Green classifica os nevos **congênitos pelo tamanho** (pequeno, médio, gigante) e os **adquiridos pela patologia** (comum, SPITZ, azul, atípico ou displásico) (p. 1966).
+
+O **nevo congênito gigante piloso** ocupa a face ou a região do "calção de banho", mas pode cobrir o membro superior (Figura 58.12, tratado com expansores e retalho torácico). O risco de melanoma é **incerto**; uma revisão sistemática encontrou de **0 a 9%**. E há um detalhe de mecanismo que muda a vigilância: o risco é **maior na infância e antes da puberdade**, ao contrário do melanoma em geral, que é do adulto. Isso acontece porque o melanoma nesses nevos pode nascer em ninhos profundos de células, já presentes ao nascimento, e não depende de décadas de sol. Os pequenos em geral se excisam; os grandes exigem expansão, retalhos ou enxertos em etapas; quando a ressecção é inviável, vigiar e biopsiar áreas suspeitas.
+
+O **nevo de SPITZ** (fusocelular e epitelioide) foi descrito pela patologista Sophie SPITZ em 1948 como "melanoma juvenil", porque a histologia, com células grandes e mitoses, assustava; ela mostrou que, na criança, o comportamento era benigno. O nome antigo sobrevive em "melanoma juvenil benigno". É uma pápula **rosa a vermelho-arroxeada**, só a minoria escura, mais na face e nas pernas de crianças e jovens. O Green diz que o risco não é maior que o dos outros nevos compostos e manda **excisar por inteiro**, porque a histologia pode ser difícil de separar do melanoma spitzoide.
+
+A **síndrome do nevo displásico** é esporádica ou familiar, com 10 a mais de 100 nevos atípicos, sobretudo no tronco superior, muitas vezes maiores que 1 cm e de cores variadas. A histologia mostra melanócitos grandes e atípicos e fibroplasia da derme papilar. Excisa-se uma lesão representativa e vigia-se o resto (Figura 58.13). Esses nevos foram descritos por Wallace CLARK em 1978 (a "síndrome do nevo B-K"), e por isso o nevo displásico também é chamado de **nevo de CLARK**, o mesmo CLARK dos níveis de invasão do melanoma. O Green avisa que os nevos acrais podem imitar displásicos na histologia.
+
+O **nevo azul** é feito de melanócitos dendríticos produtores de melanina, mas situados **fundo na derme**. A cor azul é física: a melanina profunda absorve a luz de comprimento de onda longo e a pele de cima espalha mais o comprimento de onda curto, o azul (o efeito TYNDALL). É mais comum no **dorso da mão**, solitário, da adolescência ao adulto jovem, e a malignização é incomum (p. 1966). Da mesma família das melanocitoses dérmicas, embora fora do Green, são o **nevo de OTA** (mancha cinza-azulada, em geral unilateral, no território dos ramos **oftálmico e maxilar do trigêmeo**, ao redor do olho, que pode tingir a conjuntiva e a esclera), o **nevo de ITO** (a mesma lesão no **ombro**, no território dos nervos supraclaviculares posteriores e cutâneo lateral do braço) (AGARWAL e PATEL, Nevus of Ota and Ito, StatPearls, 2023; PMID 32809409) e a **mancha mongólica**, presente ao nascer, mais na região **lombar e sacroglútea**, que costuma desaparecer até os 6 anos (CHUA e PICO, Dermal Melanocytosis, StatPearls, 2023; PMID 32491340). O **nevo de BECKER**, por fim, não é melanocitose dérmica: é uma mancha hipercrômica adquirida no ombro, na escápula ou no tronco superior, que pode ganhar **hipertricose** (KALIYADAN e colaboradores, Becker Melanosis, StatPearls, 2026; PMID 28613770).
+
+!questoes central=mao-1871 relacionadas=mao-1922 treino=mao-3759
+conceito: o nevo de SPITZ é o antigo "melanoma juvenil", pápula rosada a avermelhada de crianças e jovens, benigna, excisada por inteiro pela semelhança histológica com o melanoma; o nevo de OTA é a melanocitose dérmica periorbitária (trigêmeo), o de ITO fica no ombro, a mancha mongólica no sacro e o nevo de BECKER é a mácula com hipertricose
+como: o ENARE de Cirurgia da Mão 2023 pediu outro nome do melanoma juvenil; o ENARE de Cirurgia da Mão 2025 pediu a descrição do nevo de OTA
+armadilha: no SPITZ, marcar nevo displásico (que é o nevo de CLARK), nevo azul ou nevo spilus; no OTA, marcar a mancha do ombro (ITO), a sacral (mongólica) ou a mácula com pelos (BECKER)
+alerta: o nevo de OTA não está no Green; a descrição foi conferida no PubMed (AGARWAL e PATEL, StatPearls, 2023; PMID 32809409), assim como a da mancha mongólica (PMID 32491340) e a do nevo de BECKER (PMID 28613770)
+!fim
+
 # Melanoma {radar=confirmado}
+
+## Reconhecer: ABCDE e as duas fases de crescimento
+
+O melanoma é o câncer de pele que mais mata, e o capítulo o trata com mais detalhe do que todos os outros (p. 1977 a 1981). O reconhecimento clínico usa a regra **ABCDE** (Figura 58.36): **assimetria**, **borda** irregular, **cor** variada (vários tons de castanho, preto, azul, vermelho ou branco na mesma lesão), **diâmetro** acima de 6 mm e **evolução** (mudança de tamanho, forma, cor ou sintomas). A regra começou como ABCD, proposta em 1985 por um grupo da Universidade de Nova York (FRIEDMAN e colaboradores) para ensinar o público e os clínicos; o E da evolução entrou em 2004, quando se percebeu que a mudança era o sinal mais sensível de todos. Cada letra tem um porquê: o nevo benigno cresce de modo organizado e simétrico, com um único clone de células, enquanto o melanoma tem subclones que crescem em velocidades e direções diferentes e fabricam quantidades diferentes de pigmento.
+
+A regra tem dois pontos cegos que o Green aponta: o **nodular**, que cresce para baixo, pode ser simétrico, de cor única e ainda pequeno quando já é profundo; e o **amelanótico**, que não tem pigmento (p. 1977). Para esses, o sinal de alarme é a lesão nova, elevada, firme e que cresce.
+
+O conceito que organiza o melanoma é o das **duas fases de crescimento**. Na **fase radial (horizontal)**, as células se espalham pela epiderme e pela derme papilar superficial e quase não metastatizam, porque não alcançam os vasos. Na **fase vertical**, um clone ganha a capacidade de invadir a derme em profundidade, formar um nódulo e entrar nos linfáticos e vasos. O Green separa os subtipos por isso: o lentigo maligno, o de disseminação superficial e o acral lentiginoso têm a fase radial **mais longa**; o **nodular** já começa vertical (Figura 58.37). É o crescimento vertical que define a profundidade, e é a profundidade que define o prognóstico.
+
+!figura 58.37 imagem=mao/green7-58-37.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 58, Fig. 58.37, p. 1979. Três formas de melanoma. A, disseminação superficial: placa de bordas irregulares e cores variadas, que cresce mais de lado do que para baixo. B, lentigo maligno: mancha plana, castanha e mal delimitada em pele lesada pelo sol do idoso. C, nodular: lesão elevada, escura e ulcerada, que já nasce crescendo em profundidade.
+!fim
+
+!questoes central=mao-1015
+conceito: o melanoma se reconhece pela regra ABCDE: assimetria, borda irregular, cor com tonalidades variadas, diâmetro acima de 6 mm e evolução; o nodular e o amelanótico escapam dessa regra
+como: a UFG 2021 pediu a característica do melanoma entre simetria, bordas regulares, cores variadas e superfície plana
+armadilha: simetria e borda regular são do nevo benigno; superfície plana não define nada, porque o lentigo maligno é plano e o nodular é elevado
+!fim
 
 ## Subtipos
 
-O melanoma cresce em duas fases: primeiro uma **fase radial (horizontal)**, em que as células se espalham pela epiderme e pela derme superficial sem capacidade de metastatizar, e depois uma **fase vertical**, em que invadem a derme profunda. Os subtipos se diferenciam pela duração da fase horizontal, e é isso que explica o prognóstico de cada um.
+Os subtipos se diferenciam pela duração da fase horizontal, e é isso que explica o prognóstico de cada um (p. 1978 a 1980).
 
 !tabela Subtipos de melanoma (Green 7, cap. 58, p. 1978 a 1980)
 | Subtipo | Proporção | Onde e em quem | O que a prova cobra |
@@ -837,37 +1049,90 @@ O melanoma cresce em duas fases: primeiro uma **fase radial (horizontal)**, em q
 | desmoplásico | raro | às vezes nas mãos | invasão neural; sobrevida melhor que a de outros de mesma espessura |
 !fim
 
-O nodular é o único que pula a fase horizontal e já começa vertical; por isso chega espesso ao diagnóstico e metastatiza mais. O lentigo maligno fica na fase horizontal por uma ou duas décadas, e por isso tem o melhor prognóstico entre os comuns.
+O **disseminação superficial** é o mais comum, com **70%** de todos, e o mais provável de surgir dentro ou ao lado de um nevo. Como a fase horizontal dura de 6 meses a 6 anos, muitos são descobertos ainda finos, o que lhe dá bom prognóstico; a metástase vem com a invasão vertical e é rara na fase radial.
 
-Dois pontos de raciocínio completam a tabela. Primeiro, o nevo: é o componente juncional dos nevos que raramente se transforma, mas **a maioria dos melanomas não nasce de nevo** (p. 1966); quando nasce, o subtipo mais provável é o de disseminação superficial. Segundo, a etnia: o lentiginoso acral não depende de sol, então sua frequência não acompanha a cor da pele; por isso é o tipo mais comum justamente nas populações em que o melanoma em geral é incomum. O Green lembra que nevos palmares existem em 13% dos brancos e 29% dos negros, e não se excisam de rotina.
+O **lentigo maligno** responde por 4% a 10% e é o melanoma do **sol crônico** do idoso, nas mesmas áreas da ceratose actínica, sobretudo a face extensora do antebraço. A forma in situ, chamada **lentigo maligno** ou **sarda melanótica de HUTCHINSON**, é uma mácula plana que fica na fase horizontal por **uma a duas décadas**; quando surgem pápulas dentro da mancha, é sinal de invasão da derme, e o nome passa a **lentigo maligno melanoma**. A margem histológica é difícil, porque os melanócitos atípicos se estendem pela pele lesada pelo sol muito além do que se vê; o Green manda excisar com **pelo menos 5 mm** e esperar o exame definitivo antes de enxerto ou retalho (p. 1978).
 
-!questoes central=mao-1408 treino=mao-2118,mao-2273
+O **lentiginoso acral**, de 2% a 8%, está na **palma e no aparelho ungueal** e **não tem relação com o sol**. Por isso sua frequência absoluta é parecida entre as etnias, e ele vira o tipo **mais comum justamente nas populações em que o melanoma em geral é incomum** (negros, asiáticos, hispânicos). A fase horizontal é longa, mas o diagnóstico é tardio, porque palma e unha são pouco examinadas. O **nodular**, de 2% a 20%, costuma nascer **de novo**, já é espesso ao diagnóstico e metastatiza mais. O **amelanótico** é cinza ou rosa e se confunde com nevo intradérmico ou basocelular nodular. O **desmoplásico** aparece às vezes na mão: a histologia lembra o lentigo maligno melanoma, mas com reação fibroblástica na derme e **invasão neural**; tem espessura média de 4,3 mm ao diagnóstico e, mesmo assim, sobrevida melhor que a de outros melanomas de mesma espessura (63% contra 48% em 5 anos) (p. 1980).
+
+!questoes central=mao-1408 treino=mao-2118,mao-2273,mao-3766
 conceito: disseminação superficial (70%) é o subtipo que mais nasce dentro ou junto de um nevo melanocítico; lentigo maligno é o do sol prolongado no idoso; lentiginoso acral é o da palma e da unha, sem relação com o sol, o mais comum em negros, asiáticos e hispânicos
 como: a SBCM 2022 perguntou o subtipo que surge dentro ou ao lado de um nevo; a SBCM 2023, o associado à exposição solar prolongada; a USP-SP 2024, o subtipo com predileção semelhante em caucasianos e pretos
 armadilha: trocar lentigo maligno (sol) por lentiginoso acral (sem sol); e achar que o nodular nasce de nevo, quando ele costuma nascer de novo
 alerta: em `mao-1408` o Green (p. 1978) não fala em predileção "semelhante" entre brancos e negros; diz que o lentiginoso acral não se relaciona ao sol e é o tipo mais comum nas populações em que o melanoma é incomum, o que sustenta o gabarito
 !fim
 
+!questoes central=mao-0702
+conceito: o melanoma de disseminação superficial é o mais comum, com cerca de 70% dos casos; o nodular é dos mais agressivos (já nasce vertical); o acral fica na palma, na planta e na unha; o lentigo maligno é plano, do idoso, em pele cronicamente exposta (face e antebraço)
+como: a FMRP-USP 2026 pediu, com INCORRETA, a afirmativa falsa sobre os subtipos, que dava ao disseminação superficial cerca de 20%
+armadilha: aceitar 20% porque soa plausível (é a faixa máxima do nodular, 2% a 20%); ou marcar como falsa a do lentigo maligno na face, que é verdadeira na dermatologia geral (o Green destaca o antebraço porque fala do membro superior)
+!fim
+
 ## Melanoma da unha
 
-A **melanoníquia longitudinal** é a faixa escura da unha por melanina na lâmina, produzida por melanócitos ativados na matriz. Em pessoas de pele escura é comum e benigna, em geral em vários dedos. O Green (cap. 58, p. 1966) lista o que torna uma faixa suspeita: paciente de **50 a 70 anos**, faixa com **mais de 3 mm** de largura, **mudança** de cor ou tamanho, **um só dedo**, **distrofia** da unha e **extensão do pigmento à pele periungueal, o sinal de HUTCHINSON**. O sinal significa que os melanócitos atípicos saíram da matriz e estão se espalhando pela pele vizinha, ou seja, que há uma fase de crescimento horizontal. Mas é sinal de suspeita, não de certeza: a Figura 58.14 mostra o melanoma subungueal com o pigmento avançando sobre o eponíquio, e a lista é de "lesões suspeitas"; o diagnóstico é histológico. A biópsia é **longitudinal, de espessura total do leito**, depois de retirar a lâmina, com reparo do leito.
+A **melanoníquia longitudinal** é a faixa escura da unha por melanina na lâmina, produzida por melanócitos ativados na matriz e levada para a ponta pelo crescimento da unha. Em pessoas de pele escura é comum e benigna, em geral em vários dedos, porque ali os melanócitos da matriz simplesmente produzem mais pigmento. O Green (cap. 58, p. 1966) lista o que torna uma faixa suspeita: paciente de **50 a 70 anos**, faixa com **mais de 3 mm** de largura, **mudança** de cor ou tamanho, **um só dedo**, **distrofia** da unha e **extensão do pigmento à pele periungueal, o sinal de HUTCHINSON**. A lista é quase idêntica à regra ABCDEF de LEVIT, KAGEN e SCHER (The ABC rule for clinical detection of subungual melanoma, J Am Acad Dermatol, 2000; PMID 10642684), feita especificamente para o melanoma subungueal: idade e etnia, faixa (band) larga e irregular, mudança (change), dedo (digit) acometido, extensão do pigmento (extension) e história familiar (family).
 
-O **melanoma subungueal** acomete mais o **polegar** e é confundido com **hematoma subungueal**. A regra do capítulo 58 (p. 1978): **biópsia formal para lesão pigmentada da unha que persiste por mais de 2 meses**. O capítulo 9 (p. 335) dá outro critério: a lesão pigmentada que **não avança com o crescimento da unha**, como faria um hematoma, é suspeita, e, se não mudou em **4 a 6 semanas**, biopsia-se. São dois prazos no mesmo livro; a questão da banca usa o de 2 meses. O capítulo 9 acrescenta que o diagnóstico atrasa 2 a 3 anos e que os **melanomas das mãos e dos pés têm prognóstico pior** que os de outras regiões, com sobrevida em 5 anos de 41% contra 72% numa série.
+O sinal de HUTCHINSON significa que os melanócitos atípicos saíram da matriz e estão se espalhando pela pele vizinha, ou seja, que há uma fase de crescimento horizontal. Mas é sinal de suspeita, não de certeza: há **pseudo-HUTCHINSON** quando uma cutícula transparente deixa ver o pigmento da matriz por baixo, na pele escura, depois de trauma ou em síndromes de pigmentação; e há melanoma sem o sinal. A lista do Green é de "lesões suspeitas", e o diagnóstico é histológico. A biópsia é **longitudinal, de espessura total do leito**, depois de retirar a lâmina, com reparo do leito (p. 1961 e 1966). Jonathan HUTCHINSON, cirurgião inglês do século 19, empresta o nome a dois achados deste capítulo: o sinal da unha (1886) e a sarda melanótica, o lentigo maligno.
 
-O tratamento: o melanoma subungueal **in situ** se trata com **excisão de todo o leito e da região paroniquial e enxerto de pele total** sobre o periósteo; o **invasivo**, com **amputação proximal à articulação seguinte** (se a falange distal está acometida, proximal à interfalângica do polegar ou à interfalângica distal do dedo), e por razões funcionais o raio pode ser a melhor escolha (cap. 58, p. 1981).
+!figura 58.14 imagem=mao/green7-58-14.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 58, Fig. 58.14C, p. 1968. Melanoma subungueal: a faixa escura alargada e irregular destrói a lâmina, e o pigmento passa para a pele da prega proximal e da borda lateral (sinal de HUTCHINSON).
+!fim
 
-!questoes treino=mao-2117,mao-2423
+O **melanoma subungueal** acomete mais o **polegar** e é confundido com **hematoma subungueal**. A regra do capítulo 58 (p. 1978): **biópsia formal para lesão pigmentada da unha que persiste por mais de 2 meses**. O capítulo 9 (p. 335) dá outro critério: a lesão pigmentada que **não avança com o crescimento da unha**, como faria um hematoma, é suspeita, e, se não mudou em **4 a 6 semanas**, biopsia-se. O raciocínio por trás dos dois prazos é o mesmo: o hematoma está na lâmina e migra para distal com ela, a cerca de 3 mm por mês, enquanto o melanoma está na matriz e fica onde nasceu. São dois prazos no mesmo livro; a questão da banca usa o de 2 meses. O capítulo 9 acrescenta que o diagnóstico atrasa 2 a 3 anos e que os **melanomas das mãos e dos pés têm prognóstico pior** que os de outras regiões, com sobrevida em 5 anos de 41% contra 72% numa série.
+
+Por que é tão difícil medir a espessura na unha? O leito ungueal tem cristas e derme papilar mal definidas e **não tem gordura subcutânea**: a epiderme do leito fica praticamente colada ao periósteo do dorso da falange distal (p. 1959 e 1978). Os níveis de CLARK dependem de camadas que ali não existem, e a espessura de BRESLOW, medida num tecido comprimido contra o osso, deixa de servir de guia confiável de tratamento. Por isso a conduta no melanoma subungueal é decidida mais pela invasão (in situ ou invasivo) do que pelo milímetro.
+
+O tratamento: o melanoma subungueal **in situ** se trata com **excisão de todo o leito e da região paroniquial e enxerto de pele total** sobre o periósteo; o **invasivo**, com **amputação proximal à articulação seguinte** (se a falange distal está acometida, proximal à interfalângica do polegar ou à interfalângica distal do dedo; se a média, proximal à interfalângica proximal), e por razões funcionais o raio pode ser a melhor escolha (cap. 58, p. 1981). O conhecimento aqui está em movimento: séries mais recentes, como a de MOEHRLE e colaboradores ("Functional" surgery in subungual melanoma, Dermatol Surg, 2003; PMID 12656815), mostraram que a cirurgia que poupa o dedo (excisão de toda a unidade ungueal com enxerto) não piorou a sobrevida nos melanomas finos, e muitos centros já reservam a amputação aos invasivos mais espessos ou com osso acometido. Para a prova, vale a regra do Green.
+
+!questoes treino=mao-2117,mao-2423,mao-3767,mao-3764
 conceito: o sinal de HUTCHINSON é a extensão do pigmento da melanoníquia para a pele periungueal e levanta a suspeita de melanoma subungueal; lesão pigmentada da unha que persiste por mais de 2 meses pede biópsia formal
 como: a SBCM 2022 perguntou o que é o sinal de HUTCHINSON e o que ele sugere; o SIMÃO 2022, depois de quanto tempo de persistência se indica a biópsia
 armadilha: descrever o sinal como "faixa de ponta a ponta da unha" (isso é a própria melanoníquia) ou tomá-lo por sinal de benignidade
 alerta: em `mao-2423` o gabarito (mais de 2 meses) é o do cap. 58 do Green (p. 1978); o cap. 9 do mesmo livro (p. 335) manda biopsiar a lesão que não mudou em 4 a 6 semanas
 !fim
 
+!questoes central=mao-0771
+conceito: no membro superior, o melanoma subungueal acomete mais o polegar (no pé, o hálux); confunde-se com hematoma subungueal e tem diagnóstico tardio
+como: o INTO 2023 perguntou a localização mais comum do melanoma subungueal na mão
+armadilha: marcar o indicador ou o médio por serem os dedos mais traumatizados; a regra é o polegar, como no hálux do pé
+!fim
+
+## Espessura de BRESLOW, níveis de CLARK e estadiamento
+
+Até o fim dos anos 1960, o prognóstico do melanoma era estimado pelo aspecto clínico. Em 1969, o patologista Wallace H. CLARK Jr. propôs os **níveis de invasão anatômica**, descritivos, pela camada da pele atingida:
+
+!tabela Níveis de CLARK (descritivos; Green 7, cap. 58, p. 1958 e 1978)
+| Nível | Até onde o tumor chega |
+| --- | --- |
+| I | só a epiderme (in situ) |
+| II | parte da derme papilar |
+| III | preenche a derme papilar até a interface com a reticular |
+| IV | derme reticular |
+| V | gordura subcutânea |
+!fim
+
+Em 1970, o patologista Alexander BRESLOW mostrou que medir a **espessura em milímetros**, com um micrômetro ocular no microscópio, previa o prognóstico melhor que os níveis de CLARK. O porquê é simples: a derme tem espessuras muito diferentes de um lugar para outro (fina na pálpebra, grossa nas costas), e um nível III nas costas pode ter muito mais tumor que um nível IV numa pele fina; o milímetro é o mesmo em qualquer pele. O Green diz que hoje se usa a espessura de **BRESLOW**, medida, nas palavras do capítulo, da membrana basal da epiderme até as células tumorais mais profundas (p. 1978). A definição clássica, e a do estadiamento AJCC, parte da **camada granulosa** (ou da base da úlcera, quando há ulceração); a diferença não muda a ideia: é profundidade, em milímetros, e não diâmetro nem cor.
+
+O estadiamento atual é o **TNM** do American Joint Committee on Cancer (Tabela 58.2 do Green, p. 1980 e 1981). O T segue a espessura de BRESLOW em quatro faixas: **T1 até 1 mm, T2 de 1 a 2 mm, T3 de 2 a 4 mm e T4 acima de 4 mm**, cada uma subdividida em "a" (sem ulceração) e "b" (com ulceração); a ulceração sobe a lesão um subestádio. O N conta os linfonodos (micro ou macrometástase, número) e inclui as metástases satélites e em trânsito, que são depósitos de tumor nos linfáticos entre a lesão primária e a cadeia regional. O M tem três subgrupos, do melhor para o pior: pele, subcutâneo e linfonodos distantes; pulmão; outras vísceras. A **desidrogenase lática elevada**, em qualquer subgrupo, joga o paciente no último. O Green usa a 7ª edição da AJCC; na 8ª (2017), o corte entre T1a e T1b passou a ser 0,8 mm, e a taxa de mitoses saiu do T1.
+
+A banca às vezes chama essas faixas de "BRESLOW 1 a 4", como se fossem níveis; na verdade são as categorias T montadas sobre a espessura. A lógica é a mesma, e mais de 4 mm é sempre a faixa mais alta.
+
+Os **fatores prognósticos independentes** são três: **espessura de BRESLOW, ulceração** (macro ou microscópica) e **acometimento linfonodal** (p. 1980). Na espessura intermediária, a micrometástase no sentinela é o fator mais importante. O **tipo morfológico**, corrigido pela espessura, **não muda a sobrevida**: o nodular só é pior porque chega mais espesso. Possíveis outros fatores são o sexo, o índice mitótico e o local (membro melhor que tronco).
+
+Os exames de estadiamento dependem da espessura (p. 1980). O melanoma com **menos de 1 mm**, sem sintomas, **não precisa de exames**. Nos mais espessos não há consenso: radiografia de tórax, hemograma, função hepática, tomografia; o PET associado à tomografia procura metástases. O Green recomenda que o paciente seja acompanhado num ambulatório multidisciplinar.
+
+!questoes central=mao-1830 treino=mao-3765
+conceito: a espessura de BRESLOW é a profundidade do tumor em milímetros até a célula mais profunda; o estadiamento T do melanoma a divide em até 1 mm, 1 a 2 mm, 2 a 4 mm e acima de 4 mm, e a lesão com mais de 4 mm está na quarta e última faixa
+como: o ENARE de Cirurgia da Mão 2022 definiu a medida de BRESLOW e perguntou em que faixa fica a lesão com mais de 4 mm
+armadilha: marcar 5 por associar aos cinco níveis de CLARK (o nível V é a gordura, uma camada, e não uma espessura); BRESLOW tem quatro faixas, e as categorias T são as que a prova chama de "BRESLOW 1 a 4"
+alerta: o Green (p. 1978) mede a partir da membrana basal; o enunciado do ENARE, "da superfície", e a AJCC, da camada granulosa; a diferença não muda o gabarito
+!fim
+
 ## Biópsia, prognóstico e margens
 
-Na lesão pigmentada suspeita, a **biópsia por shave não serve**, porque corta a lesão na horizontal e não permite medir a espessura. O ideal é a excisional; quando a lesão é grande demais, faz-se a **incisional**, e o Green (p. 1961) é explícito: desde que a excisão definitiva venha em tempo hábil, **a biópsia incisional prévia não altera a história natural do melanoma**. A incisão é longitudinal.
+Na lesão pigmentada suspeita, a **biópsia por shave não serve**, porque corta a lesão na horizontal e não permite medir a espessura. O ideal é a excisional, com margem pequena de 1 a 3 mm, que dá o diagnóstico e a espessura de uma vez; quando a lesão é grande demais, faz-se a **incisional**, e o Green (p. 1961) é explícito: desde que a excisão definitiva venha em tempo hábil, **a biópsia incisional prévia não altera a história natural do melanoma**. A incisão é longitudinal, no eixo do membro, para que a ressecção ampla posterior e a drenagem linfática não sejam atrapalhadas.
 
-Os **fatores independentes de prognóstico** são três: **espessura de BRESLOW, ulceração e acometimento linfonodal** (p. 1980). O tipo morfológico, corrigido pela espessura, não influi. A espessura de BRESLOW, medida em milímetros até a célula tumoral mais profunda, substituiu os níveis descritivos de CLARK, que dependiam de camadas da derme que variam de espessura de um lugar para outro; o milímetro é o mesmo em qualquer pele. Na unha, a espessura é difícil de medir, porque o leito é fino e está comprimido contra o periósteo.
+As margens têm uma história que vale conhecer. Durante décadas a regra foi tirar **5 cm em volta de todo melanoma**, com enxerto quase obrigatório, e o Green lembra que essa era a prática ainda nos anos 1980 (p. 1980). Os ensaios randomizados derrubaram o dogma: o da Organização Mundial da Saúde (VERONESI e colaboradores, Thin stage I primary cutaneous malignant melanoma: comparison of excision with margins of 1 or 3 cm, N Engl J Med, 1988; PMID 3079582) mostrou que, nos melanomas de até 2 mm, 1 cm dava a mesma sobrevida que 3 cm; o Intergroup Melanoma Surgical Trial (BALCH e colaboradores, Ann Surg, 1993) mostrou que 2 cm bastavam nos de 1 a 4 mm. A margem passou a acompanhar a espessura:
 
 !tabela Margem periférica do melanoma pela espessura de BRESLOW (Green 7, cap. 58, p. 1980 e 1981)
 | Espessura | Margem recomendada | Sobrevida em 5 anos |
@@ -879,12 +1144,46 @@ Os **fatores independentes de prognóstico** são três: **espessura de BRESLOW,
 | maior que 4 mm | 3 cm | 50% |
 !fim
 
+Essas margens são **periféricas**. Na mão, é impossível uma margem profunda equivalente, porque logo abaixo da pele estão tendões, nervos e osso (p. 1981). A regra de profundidade do Green é: no in situ, até a gordura; nos invasivos, até o **paratendão no dorso da mão** e até a **fáscia no antebraço**, indo mais fundo se a histologia pedir. A margem existe para retirar as micrometástases satélites que cercam o tumor, e o seu tamanho acompanha a espessura porque o tumor mais profundo tem mais acesso aos linfáticos e espalha satélites mais longe.
+
 !questoes central=mao-1309 relacionadas=mao-1600 treino=mao-2525
 conceito: a margem periférica do melanoma segue a espessura de BRESLOW (1 cm até 1 mm); a biópsia incisional não piora o prognóstico e pode ser usada em lesões extensas; os melanomas das mãos têm prognóstico pior que os de outras regiões
 como: o SIMÃO 2021 perguntou a margem para melanoma de até 1 mm; a USP-SP 2025 pediu a afirmativa correta sobre biópsia, congelação, dermatoscopia e sinal de HUTCHINSON; a USP-SP 2026 pediu a correta sobre os melanomas nas mãos
 armadilha: dar 0,5 cm (margem do in situ) ou 2 cm (de 1 a 4 mm) ao melanoma fino; tomar o sinal de HUTCHINSON por patognomônico; dizer que o tipo mais comum na mão é o nodular ou que o local mais comum é o dorso
 alerta: em `mao-1309` o Green não discute a sensibilidade da dermatoscopia nem a congelação das lesões pigmentadas; sustenta a biópsia incisional (p. 1961) e trata HUTCHINSON como sinal de suspeita (p. 1966). Em `mao-1600` o pior prognóstico está no cap. 9 (p. 335); sobre a ulceração, o cap. 58 (p. 1980) a lista como fator independente em geral, sem dizer que vale menos na mão
 !fim
+
+## Linfonodo sentinela e esvaziamento
+
+O linfonodo sentinela é o primeiro linfonodo que recebe a drenagem do tumor; se ele está livre, os outros quase sempre estão. A técnica foi popularizada por Donald MORTON no início dos anos 1990 para o melanoma e mudou o estadiamento. No membro superior, ela tem a vantagem de mostrar a drenagem real, que pode passar pelo epitroclear ou pelo deltopeitoral antes da axila (p. 1960).
+
+A indicação do Green (p. 1981): biópsia do sentinela para **toda lesão com mais de 1 mm sem linfonodo palpável**; nas de **menos de 1 mm**, só se houver nível **IV ou V de CLARK**. Os melanomas finos, de menos de 1 mm, são cerca de **70%** dos casos novos, e a micrometástase no sentinela aparece em menos de 2% deles, por isso em geral não se indica. A técnica injeta **azul isosulfan** cerca de 10 minutos antes do preparo e **radiocoloide**, localizado com uma sonda gama; com os dois, a detecção passa de 99%, contra 87% só com o corante (Figura 58.39). A morbidade é muito menor que a do esvaziamento eletivo.
+
+O **esvaziamento** terapêutico se faz quando há **linfonodo palpável com metástase comprovada**; provavelmente não cura, mas evita a ulceração axilar, a dor por invasão do plexo braquial e o linfedema (Figura 58.38). O ensaio randomizado MSLT-1 (MORTON e colaboradores, N Engl J Med, 2006 e 2014), citado pelo Green, mostrou que, entre os pacientes com sentinela positivo, o esvaziamento imediato teve sobrevida melhor do que esperar o linfonodo crescer para operar. O benefício do sentinela para a sobrevida em geral ainda era incerto quando o capítulo foi escrito.
+
+Aqui o conhecimento avançou depois do Green 7. O MSLT-II (FARIES e colaboradores, N Engl J Med, 2017) comparou, nos pacientes com sentinela positivo, o esvaziamento completo imediato com a vigilância por ultrassom e não encontrou diferença na sobrevida específica por melanoma; o esvaziamento completo de rotina deixou de ser a regra. Ao mesmo tempo, a imunoterapia e as terapias-alvo adjuvantes passaram a ser oferecidas a pacientes com linfonodo positivo, e o sentinela continua valendo como a principal ferramenta de estadiamento.
+
+> **Na prova:** melanoma de **disseminação superficial** é o mais comum (**70%**) e o que mais nasce de nevo; **lentigo maligno** é o do **sol crônico**; **acral lentiginoso** não tem relação com o sol e é o mais comum em **negros e asiáticos**; **subungueal** no **polegar**, confundido com **hematoma**, biópsia se persiste **mais de 2 meses**; **HUTCHINSON** = pigmento na pele periungueal, sinal de suspeita; prognóstico = **BRESLOW, ulceração e linfonodo**; margem **1 cm até 1 mm**, **1 a 2 cm** de 1 a 2 mm, **2 a 3 cm** de 2 a 4 mm, **3 cm** acima de 4 mm; sentinela para **mais de 1 mm**; subungueal invasivo = amputação **proximal à articulação seguinte**.
+
+# Outros malignos da pele e do subcutâneo {radar=oportunidade}
+
+## MERKEL, STEWART-TREVES e glândulas sudoríparas
+
+O fim do capítulo reúne tumores raros que a banca ainda não cobrou, mas que um cirurgião de mão precisa reconhecer (p. 1981 a 1983).
+
+O **carcinoma de MERKEL** é neuroendócrino e nasce das células de MERKEL da camada basal, as ligadas aos receptores de pressão. É um **nódulo intracutâneo de crescimento rápido e indolor**, vermelho-violáceo, que pode chegar a 5 cm. Recidiva local e metástases são comuns, e o tratamento é a excisão ampla, às vezes amputação com linfadenectomia, com radioterapia e quimioterapia para alguns (Figura 58.40: amputação do raio, retalho e esvaziamento axilar). Desde 2008 se sabe que a maioria dos casos tem um poliomavírus (o poliomavírus da célula de MERKEL) integrado ao DNA do tumor, o que explica a frequência maior em imunossuprimidos e abriu caminho para a imunoterapia.
+
+O **linfangiossarcoma de STEWART-TREVES** é a complicação mais temida do **linfedema crônico**: aparece, em geral, mais de 10 anos depois de mastectomia com esvaziamento axilar e radioterapia, como uma equimose ou pápulas arroxeadas no braço inchado que crescem rápido. Descrito por Fred STEWART e Norman TREVES em 1948, tem prognóstico ruim; o tratamento é biópsia e **amputação**, como cirurgia salvadora, com quimioterapia adjuvante (p. 1981 e 1983). O braço linfedematoso com mancha roxa nova se biopsia, sem esperar.
+
+Os **tumores de glândula sudorípara** são mais frequentes na **palma**, onde há mais glândulas écrinas. Mesmo os benignos (poroma écrino, siringoma condroide, espiradenoma écrino) recidivam e podem malignizar, por isso saem com margem de tecido normal. Os malignos são raros e não têm diretriz: úlcera dolorosa, invasão local, linfonodos e metástase a distância; tratam-se com excisão ampla e sentinela, e alguns autores fazem esvaziamento profilático (p. 1983).
+
+## Dermatofibrossarcoma, KAPOSI e metástases
+
+O **dermatofibrossarcoma protuberante** é um sarcoma da derme, de baixo grau, localmente invasivo e de margens mal definidas, porque emite prolongamentos finos, em tentáculo, muito além do nódulo que se palpa. Daí a ressecção ampla, em geral com enxerto, e o retalho só depois de margem confirmada (Figura 58.42); é uma das indicações clássicas de MOHS (p. 1962 e 1983). A maioria tem a translocação entre os cromossomos 17 e 22 que funde os genes COL1A1 e PDGFB, e por isso a doença irressecável responde ao imatinibe.
+
+O **sarcoma de KAPOSI** aparece como manchas e nódulos violáceos e é o exemplo clássico do câncer de pele ligado ao HIV (Figura 58.41); é causado pelo herpesvírus humano 8. As **metástases para a mão e os dedos** são raras, mas existem (Figura 58.43, carcinoma renal), e o recado é o mesmo do capítulo 59: a lesão suspeita da ponta do dedo se biopsia antes de qualquer cirurgia ablativa (p. 1983).
+
+O fio que liga todo o capítulo 58 é este: a camada de origem define o comportamento, a profundidade define o prognóstico, e a margem é sempre decidida antes do retalho. Nenhuma lesão de pele vai para uma reconstrução complexa sem diagnóstico histológico e sem margem livre.
 
 # Fechamento {radar=fundamento}
 
