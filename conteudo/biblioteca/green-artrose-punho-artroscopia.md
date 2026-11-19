@@ -1,6 +1,6 @@
 ---
 id: green-artrose-punho-artroscopia
-versao: 3
+versao: 4
 titulo: Artrose do punho e artroscopia
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), caps. 74, 78 e 57, e o HEBERT (Ortopedia e Traumatologia, 5ª ed.), cap. 52
 capitulo: Capítulo 12 · Wrist Arthrodesis and Arthroplasty
 autores: Marco Rizzo
-fonte: Livros conferidos localmente em 04/11/2026 e revistos em 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 12 (Wrist Arthrodesis and Arthroplasty, de Marco RIZZO, p. 373 a 416, relido seção por seção para esta versão), cap. 17 (Wrist Arthroscopy, de William B. GEISSLER, p. 653 a 694, com a eTable 17.1 e a Tabela 17.1), cap. 13 (Wrist Instabilities, Misalignments, and Dislocations, de Marc GARCIA-ELIAS e Alberto LLUCH, p. 435, 438 a 440 e 447 a 450, com a Tabela 13.4), cap. 14 (p. 503 e 504), cap. 16 (p. 621 a 623 aprox. e 646) e cap. 55 (p. 1865 e 1866 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (Wrist Disorders, p. 3278 a 3282, 3294 a 3298, 3304, 3317, 3319, 3339 a 3341, 3354 a 3358, com o Box 74.1), cap. 78 (Arthritic Hand, p. 3494 e 3498) e cap. 57 (que remete a artroscopia do punho ao cap. 74); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 52 (Traumatismos dos ossos do carpo, quadro 52.4). A artroscopia não faz parte do capítulo 12; as seções de artroscopia vêm do capítulo 17 do Green e do capítulo 74 do Campbell, como na versão anterior.
+fonte: Livros conferidos localmente em 04/11/2026 e revistos em 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 12 (Wrist Arthrodesis and Arthroplasty, de Marco RIZZO, p. 373 a 416, relido seção por seção para esta versão), cap. 17 (Wrist Arthroscopy, de William B. GEISSLER, p. 652 a 694, com a eTable 17.1 e as Tabelas 17.1 a 17.3, relido para a versão 4 em 19/11/2026), cap. 13 (Wrist Instabilities, Misalignments, and Dislocations, de Marc GARCIA-ELIAS e Alberto LLUCH, p. 435, 438 a 440 e 447 a 450, com a Tabela 13.4), cap. 14 (p. 503 e 504), cap. 16 (p. 621 a 623 aprox. e 646) e cap. 55 (p. 1865 e 1866 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (Wrist Disorders, p. 3278 a 3282, 3294 a 3298, 3304, 3317, 3319, 3339 a 3341, 3354 a 3358, com o Box 74.1), cap. 78 (Arthritic Hand, p. 3494 e 3498) e cap. 57 (que remete a artroscopia do punho ao cap. 74); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 52 (Traumatismos dos ossos do carpo, quadro 52.4). A artroscopia não faz parte do capítulo 12; as seções de artroscopia vêm do capítulo 17 do Green e do capítulo 74 do Campbell, como na versão anterior.
 subtemas: Artrose do punho e artroscopia
 resumo: Dor e estabilidade pesam mais que arco (PALMER: 30° de extensão, 5° de flexão, 10° de desvio radial e 15° de ulnar bastam); artrose primária do punho é incomum e mora na STT; SLAC de WATSON começa no estiloide e poupa a radiolunar; LLUCH: I radioescafoide, II escafocapitato, III lunocapitato, IV piramidal-hamato, V radiolunar; AR é a causa mais comum de artrose radiolunar isolada; escafocapitato e STT têm indicações e perda de movimento parecidas, escafoide a 40 a 50°; escafossemilunar tem pseudartrose de 50 a 85%; escafoidectomia com quatro cantos no SLAC ou SNAC II e III, contraindicada pela fossa do semilunar doente, com o semilunar reduzido como passo mais importante; carpectomia proximal exige capitato e fossa do semilunar sãos; artrodese total com placa do rádio ao 3º metacarpo, cinco articulações, pseudartrose parcial na 3ª CMC (decorticar 80% dorsais ou retirar a placa), ELP deixado superficial ao retináculo, túnel do carpo até 10,5% com 67% de liberação; pino de STEINMANN de MILLENDER e NALEBUFF viola a 3ª MCF; prótese só em baixa demanda; 3-4 é o portal de visão, 4-5 o de trabalho, 6-U de irrigação, mediocárpicos 1 cm distais; GEISSLER III admite o probe, IV o artroscópio; EWAS IIIB rompe o SL dorsal.
 ---
@@ -17,7 +17,7 @@ resumo: Dor e estabilidade pesam mais que arco (PALMER: 30° de extensão, 5° d
 
 Este resumo nasce do capítulo 12 (Wrist Arthrodesis and Arthroplasty) do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Marco RIZZO. É um capítulo de autor que fala em primeira pessoa: descreve várias técnicas, cita os estudos dos dois lados e, no fim de cada seção, diz o que ele próprio faz. Essa estrutura importa para a prova, porque muitas questões do SIMÃO e da SBCM pedem justamente "o que o autor considera" (o passo mais importante, o método preferido, o destino de um tendão no fechamento). Para completar, entram o capítulo 13 do mesmo livro (instabilidades do carpo, de GARCIA-ELIAS e LLUCH), o capítulo 16 (carpectomia no SNAC e no KIENBÖCK), os capítulos 74 e 78 do Campbell's Operative Orthopaedics, 15ª edição (2026), e o capítulo 52 do HEBERT.
 
-Um aviso sobre o recorte. No site, o subtema se chama "Artrose do punho e artroscopia", mas o capítulo 12 do Green não trata de artroscopia; ela tem capítulo próprio, o 17, de William GEISSLER. As seções de artroscopia deste resumo foram mantidas da versão anterior, com as mesmas fontes (Green cap. 17 e Campbell cap. 74), porque muitas questões do acervo estão ligadas a elas. Nada foi acrescentado ali sem fonte.
+Um aviso sobre o recorte. No site, o subtema se chama "Artrose do punho e artroscopia", mas o capítulo 12 do Green não trata de artroscopia; ela tem capítulo próprio, o 17, de William GEISSLER. As seções de artroscopia deste resumo foram reescritas e ampliadas nesta versão a partir do capítulo 17 do Green (Wrist Arthroscopy, de William B. GEISSLER, p. 652 a 694), com o capítulo 74 do Campbell como segundo olhar: montagem, portais (inclusive os da ARUD e da trapeziometacárpica), anatomia artroscópica, GEISSLER e EWAS, fibrocartilagem triangular, fraturas, cistos, salvamentos e complicações.
 
 O tema tem duas metades que a prova cobra de formas diferentes. A **artrose do punho** é um raciocínio de **mapa**: onde a cartilagem está gasta e onde ainda está boa. Quase toda cirurgia de salvamento é uma forma de **tirar do circuito a articulação doente e deixar trabalhar a sadia**; as artrodeses parciais fundem o que dói e preservam o que se move. A **artroscopia** é um raciocínio de **endereço**: entre quais tendões fica cada portal, o que se vê de cada um e qual nervo mora ao lado.
 
@@ -586,7 +586,7 @@ A hemiartroplastia nasceu para fugir do componente distal, que é o que solta (p
 
 O punho artrósico não termina no carpo. Na **ARUD**, o Green (cap. 14, p. 503 e 504) descreve a **hemirressecção com interposição de BOWERS**, criada porque o DARRACH às vezes instabiliza o coto: retira-se a **superfície articular da cabeça da ulna** e **preservam-se as inserções ulnares críticas da fibrocartilagem triangular**, a ideia de DINGMAN (melhores DARRACH com ressecção mínima e regeneração na **manga periosteal**), preenchendo o espaço com cápsula, tendão ou músculo. A indicação principal é a **artrite pós-traumática ou degenerativa da ARUD**; a **variância ulnar positiva** é contraindicação relativa (a convergência provoca impacto estiloide-piramidal), a **translação ulnar do carpo** é contraindicação e a **FCT irreparável** tira a vantagem sobre o DARRACH.
 
-!questoes treino=mao-2040
+!questoes treino=mao-2040,mao-3702
 conceito: A hemirressecção-interposição de BOWERS retira a superfície articular da cabeça da ulna, mantém o estiloide, as inserções da FCT e uma manga de periósteo e preenche o espaço com cápsula ou tendão.
 como: O SBCM 2024 descreveu o procedimento na artrose da ARUD e pediu o nome.
 armadilha: Confundir com DARRACH (ressecção completa da cabeça) ou SAUVÉ-KAPANDJI (artrodese com pseudartrose proximal).
@@ -596,30 +596,55 @@ A **pisopiramidal** é o lembrete de imagem: a incidência de perfil com **10° 
 
 # Artroscopia do punho: montagem e portais {radar=confirmado}
 
-A partir daqui o resumo sai do capítulo 12: a artroscopia do punho é o capítulo 17 do Green (de William GEISSLER) e uma parte do capítulo 74 do Campbell. Ela entra aqui porque o subtema do site junta as duas coisas, e porque a artroscopia virou ferramenta da própria artrose: é ela que gradua a cartilagem do capitato e da fossa do semilunar antes de escolher entre quatro cantos e carpectomia, e é por ela que hoje se fazem estiloidectomias, carpectomias e até artrodeses parciais.
+A partir daqui o resumo sai do capítulo 12. A artroscopia do punho tem capítulo próprio no Green, o 17 (Wrist Arthroscopy, de William B. GEISSLER, p. 652 a 694), e uma parte do capítulo 74 do Campbell. Ela entra neste resumo porque o subtema do site junta as duas coisas, e porque a artroscopia virou ferramenta da própria artrose: é ela que gradua a cartilagem do capitato e da fossa do semilunar antes de escolher entre quatro cantos e carpectomia, e é por ela que hoje se fazem estiloidectomias, carpectomias e até artrodeses parciais.
 
-A chave para memorizar os portais é que o dorso do punho é uma régua: seis compartimentos extensores em fila, de radial para ulnar, e cada portal leva o nome dos dois compartimentos entre os quais passa. Saber o conteúdo de cada compartimento (1º APL e EPB; 2º ECRL e ECRB; 3º EPL; 4º extensores dos dedos e do indicador; 5º extensor do dedo mínimo; 6º ECU) resolve metade das questões; a outra metade é saber qual nervo mora em cada ponta da régua.
+Vale entender por que o capítulo existe. O punho tem oito ossos do carpo, várias superfícies articulares, ligamentos intrínsecos (entre os ossos) e extrínsecos (da cápsula) e a fibrocartilagem triangular, tudo num intervalo de uns 5 cm (Green, cap. 17, p. 652). Durante décadas o diagnóstico dessas estruturas dependeu de radiografia, artrografia e, depois, ressonância, que mostram sombras e contrastes, não a superfície. A artroscopia mudou isso porque permite **ver e tocar**: o probe mede um espaço, testa a tensão de um disco, sente uma cartilagem amolecida. O próprio GEISSLER insiste em dois exemplos ao longo do capítulo: uma fratura articular que parece reduzida na fluoroscopia pode mostrar degrau na ótica (p. 676), e a cartilagem do semilunar no KIENBÖCK é subestimada pela radiografia (p. 692). O preço dessa precisão é o espaço mínimo: errar um portal por poucos milímetros já significa raspar cartilagem ou cortar um ramo nervoso (p. 654 e 694).
 
-## Instrumental e tração
+A chave para memorizar os portais é que o dorso do punho é uma régua: seis compartimentos extensores em fila, de radial para ulnar, e cada portal leva o nome dos dois compartimentos entre os quais passa (3-4 fica entre o 3º e o 4º), ou, no lado ulnar, da relação com o extensor ulnar do carpo (6R radial a ele, 6U ulnar a ele) (p. 654). Saber o conteúdo de cada compartimento (1º APL e EPB; 2º ECRL e ECRB; 3º ELP; 4º extensores dos dedos e do indicador; 5º extensor do dedo mínimo; 6º ECU) resolve metade das questões; a outra metade é saber o que se vê de cada portal e qual nervo mora em cada ponta da régua.
 
-O Green (cap. 17, p. 653) exige óptica de **2,7 mm ou menos** e **tração** de cerca de **7 a 10 libras**, com o punho em **leve flexão**; o Campbell (cap. 74, p. 3280) usa **4 a 10 libras** e cotovelo a 80 a 90°. Os portais têm o nome dos **compartimentos extensores**. Para entrar: **agulha antes**, pele puxada contra a **lâmina 11**, dissecção romba e **trocarte rombo** inclinado cerca de **10°** (Green, p. 655 e 656) ou **12 a 15°** (Campbell, p. 3281), seguindo a inclinação volar do rádio.
+## Instrumental, tração e artroscopia seca
+
+O punho não aceita o instrumental do joelho. O Green (cap. 17, p. 652) pede **ótica de 2,7 mm ou menos**, de 30° ou 70°, **shaver de 3,5 mm ou menos** e pinças pequenas para trabalhar no disco da FCT. A razão é geométrica: o espaço radiocárpico tem poucos milímetros de altura, e uma ótica maior não passa sem raspar a cartilagem do rádio ou do carpo.
+
+A **tração** é essencial pelo mesmo motivo: sem ela as superfícies ficam encostadas e não há onde manobrar. O padrão é a torre, com o antebraço apoiado, os dedos em dedeiras e o punho em **leve flexão**, posição que abre o dorso da radiocárpica e facilita a entrada; as torres mais novas têm barra lateral, o que libera a fluoroscopia. Sem torre, usa-se um suporte de ombro com contratração no braço ou o punho deitado na mesa com peso pendurado (Fig. 17.1 e 17.2, p. 652 e 654). A força recomendada é de cerca de **7 a 10 libras (4,5 kg)**, ajustada à frouxidão do paciente (p. 652). O Campbell (cap. 74, p. 3278 e 3280) usa números um pouco menores (**4 a 7 libras**, até 10 em alguns casos) e ótica de 2,5 a 3 mm; a diferença não muda conceito algum, mas é o tipo de número que a banca pode trocar.
+
+A **artroscopia seca**, popularizada por DEL PINAL, ganhou espaço por três motivos (Green, p. 658): a visão melhora, porque o líquido sob pressão não separa os planos normais; não há extravasamento, e portanto não há o risco de síndrome compartimental que o soro traz nas fraturas; e os portais podem ser maiores. Os truques são práticos: lavar antes com **10 a 20 mL** por seringa na válvula lateral para tirar hematoma e debris, aquecer a ponta da ótica em água morna para não embaçar, deixar a válvula lateral **aberta ao ar** (senão a aspiração colapsa a cápsula) e aspirar com parcimônia.
+
+## Como se faz um portal
+
+Antes de tudo, os pontos de referência são desenhados **depois de aplicar a tração**, porque a tração muda a relação da pele com os ossos: bases do 2º, 3º e 4º metacarpos, bordas do ECU, borda dorsal do rádio (sentida com a unha do polegar), ELP e extensores dos dedos (Fig. 17.3, p. 652 e 654).
+
+A sequência de cada portal é sempre a mesma, e cada passo tem um porquê (p. 655 e 656):
+
+1. **Agulha antes da pele.** Ela deve entrar fácil, sem empalar tendão, rádio ou carpo. Se o ponto estiver proximal ou distal demais, é a cartilagem que paga (Fig. 17.5).
+2. **Incisão só na pele**: o cirurgião puxa a pele com o polegar contra a ponta da lâmina 11, sem mergulhar. A incisão pode ser longitudinal ou transversa; a transversa é mais estética, mas tem risco um pouco maior para os ramos sensitivos do radial e do ulnar, que correm longitudinais logo abaixo.
+3. **Pinça romba** até a cápsula, afastando em vez de cortar os ramos sensitivos e os tendões.
+4. **Trocarte rombo** (nunca cortante) e cânula inclinadas cerca de **10° em relação ao antebraço**, para entrar paralelas à **inclinação palmar normal do rádio** (Fig. 17.7 e 17.8). A superfície do rádio olha um pouco para palmar; uma cânula perpendicular à pele bateria de frente na borda dorsal do rádio ou rasparia a cartilagem. O Campbell (p. 3281) dá 12 a 15°; o princípio é o mesmo.
+
+O líquido entra, na preferência do autor, por um portal separado (**6U**) e sai pela **camisa da ótica** (p. 656). Entrada e saída separadas reduzem o extravasamento, um dos pilares da prevenção de complicações (p. 694).
 
 ## Os portais dorsais radiocárpicos
 
 !tabela Portais dorsais radiocárpicos e estruturas em risco (Green's Operative Hand Surgery, 7ª ed., cap. 17, p. 654 e 657; Campbell's Operative Orthopaedics, 15ª ed., cap. 74, p. 3280 e 3281)
 | Portal | Limites | Referência | Função | Estrutura em risco |
 |---|---|---|---|---|
-| 1-2 | Entre o 1º (APL e EPB) e o 2º compartimento | Junto à borda radial do EPL, distal ao estiloide | Estiloidectomia, reparo periférico da FCT, trabalho no lado radial | Artéria radial a cerca de 3 mm; ramos do radial superficial de 3 mm radial a 5 mm ulnar (outro estudo 1,8 mm) |
-| 3-4 | Entre o 3º (EPL) e o 4º (extensores dos dedos) | 1 cm distal ao tubérculo de Lister, em linha com a borda radial do dedo médio | Portal de visão mais comum | Extensores; cartilagem se a agulha errar |
+| 1-2 | Entre o 1º (APL e EPB) e o 2º compartimento | Junto à borda radial do ELP, logo distal ao estiloide | Estiloidectomia, reparo periférico da FCT, trabalho no lado radial | Artéria radial a cerca de 3 mm; ramos do radial superficial de 3 mm radial a 5 mm ulnar (outro estudo 1,8 mm) |
+| 3-4 | Entre o 3º (ELP) e o 4º (extensores dos dedos) | Cerca de 1 cm distal ao tubérculo de LISTER, em linha com a borda radial do dedo médio | Portal de visão mais comum | Extensores; cartilagem se a agulha errar |
 | 4-5 | Entre o 4º (extensores dos dedos) e o 5º (extensor do dedo mínimo) | Um pouco proximal ao 3-4 pela inclinação radial; em linha com o eixo do anelar | Principal portal de trabalho | Tendões vizinhos |
 | 6-R | Radial ao ECU (entre 5º e 6º) | Borda radial do ECU | Trabalho e visão do lado ulnar | Ramo dorsal sensitivo do ulnar |
 | 6-U | Ulnar ao ECU | Borda ulnar do ECU | Entrada de líquido, frequentemente | Ramo dorsal sensitivo do ulnar |
 !fim
 
-O **6-U** é usado para a **entrada do líquido** (3 a 5 ml abaulam o dorso do 3-4 e ajudam a localizá-lo); o autor prefere **entrada pelo 6-U e saída pela camisa do artroscópio** (Green, p. 654 e 656). O Campbell (p. 3281) usa o portal 6 ulnar ao ECU para **irrigação contínua**, evitando o **ramo dorsal sensitivo do ulnar**.
+O **3-4** é o portal de visão mais comum e o primeiro a ser feito. Para achá-lo, palpa-se o **tubérculo de LISTER** e desce-se cerca de **1 cm distal** até o ponto mole entre o ELP e os extensores dos dedos; ele fica em linha com a **borda radial do dedo médio** (Green, p. 654). Ele é o portal de visão por posição: entra sobre o intervalo escafossemilunar, no meio da radiocárpica, de onde a ótica de 30° alcança tanto o estiloide quanto a FCT. Um detalhe útil: quando se injetam 3 a 5 mL pelo 6U, o local do 3-4 **abaula**, e o ponto fica fácil de achar.
 
-!questoes treino=mao-2304,mao-2391
-conceito: O portal 3-4 fica entre o EPL (3º compartimento) e os extensores dos dedos (4º); o 4-5 fica entre os extensores dos dedos (4º) e o extensor do dedo mínimo (5º).
+O **4-5** é o principal portal de **trabalho**. Com a ótica no 3-4, o cirurgião rola o dedo para ulnar sobre o 4º compartimento até o próximo ponto mole, que fica em linha com o **eixo médio do anelar**. Ele é um pouco **mais proximal que o 3-4**, e o motivo é a anatomia do rádio: a superfície articular tem **inclinação radial** (cerca de 22° na radiografia de frente), isto é, desce de radial para ulnar. O lado ulnar da articulação fica, portanto, mais proximal, e o portal acompanha (p. 654). Essa pergunta (por que o 4-5 é mais proximal) é um bom exemplo de como a prova transforma uma medida em mecanismo.
+
+O **1-2** é o portal do lado radial, entre o 1º e o 2º compartimentos, e é o mais perigoso da régua, porque passa no meio da zona da **artéria radial** (em média 3 mm radial a ele) e dos **ramos do radial superficial** (de 3 mm radial a 5 mm ulnar; em outro estudo, a 1,8 mm) (p. 654). Daí a recomendação de fazê-lo **o mais perto possível do ELP, na borda radial dele, e logo distal ao estiloide**: quanto mais ulnar e mais justo ao tendão, mais longe da tabaqueira anatômica, onde a artéria corre. Ele serve à estiloidectomia, ao reparo periférico da FCT com agulha de TUOHY e ao trabalho no lado radial.
+
+O **6R** e o **6U** ficam de cada lado do ECU. O 6R é portal de trabalho e de visão do lado ulnar; o **6U** é usado sobretudo para a **entrada de líquido**, com a cânula colocada no **recesso pré-estiloide**, e não para ver a FCT, que dele só aparece em vistas oblíquas (p. 654 e 659). O Campbell (p. 3281) usa o portal 6 ulnar ao ECU para irrigação contínua, evitando o ramo dorsal sensitivo do ulnar.
+
+!questoes treino=mao-2304,mao-2391,mao-3701,mao-3715,mao-3713
+conceito: O portal 3-4 fica entre o ELP (3º compartimento) e os extensores dos dedos (4º); o 4-5 fica entre os extensores dos dedos (4º) e o extensor do dedo mínimo (5º).
 como: O SIMÃO 2024 perguntou entre quais tendões fica o 3-4; o SIMÃO 2022, qual portal fica entre o extensor comum e o extensor do dedo mínimo.
 armadilha: Colocar o 3-4 entre os radiais do carpo (2º compartimento) ou trocar o 4-5 pelo 6U.
 !fim
@@ -640,7 +665,13 @@ alerta: O gabarito de `mao-2132` fala em saída (vazão) do líquido; o Green (c
 
 ## O nervo do portal 6R
 
-Do lado ulnar, o risco é o **ramo dorsal sensitivo do nervo ulnar**: a Figura 17.4 do Green o mostra junto aos portais dorsoulnares (p. 655), o portal foveal exige protegê-lo (p. 657), e o Campbell (p. 3279 e 3281) o cita no portal 6 e no reparo da FCT. Do lado radial, o vizinho é o **ramo superficial do radial** (1-2 e STT).
+Os dois nervos da régua são sensitivos e correm no subcutâneo, por isso a técnica de pele puxada contra a lâmina e de dissecção romba. Do lado radial, o vizinho é o **ramo superficial do nervo radial**, que cerca o 1-2, o portal STT e o campo da trapeziometacárpica. Do lado ulnar, é o **ramo dorsal sensitivo do nervo ulnar**, que sai do tronco do ulnar no antebraço distal, contorna a cabeça da ulna e cruza a região dos portais 6R, 6U e piramidal-hamato. A Figura 17.4 do Green mostra os dois numa dissecção de cadáver, com as agulhas nos portais.
+
+!figura 17.4 imagem=mao/green7-17-4.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 17, Fig. 17.4, p. 655. Dissecção do dorso de um punho esquerdo. Em A, os portais do lado radial (1-2, 3-4 e mediocárpico radial) junto ao ELP, com o tubérculo de LISTER marcado pelo asterisco e o ramo superficial do radial (SRN) cruzando a região do 1-2. Em B, os portais do lado ulnar (4-5 e mediocárpico ulnar) entre os extensores dos dedos e o extensor do dedo mínimo, com os ramos do cutâneo dorsal do ulnar (DCBUN) na borda ulnar.
+!fim
+
+Repare na figura como o 3-4 e o mediocárpico radial ficam praticamente em fila, com 1 cm entre eles, e como o 4-5 fica um pouco proximal ao 3-4. Repare também que o ramo superficial do radial está a milímetros do 1-2: é a imagem que justifica fazer esse portal colado ao ELP. O cuidado com o ramo dorsal do ulnar reaparece em três momentos do capítulo: no portal foveal direto, em que ele é dissecado e afastado com um vessel loop (p. 657); na passagem de fios no reparo lunopiramidal (p. 663); e na sutura periférica da FCT, em que o nó amarrado na cápsula não pode prendê-lo (p. 679). O Campbell (p. 3279 e 3281) cita a lesão desse ramo entre as complicações do reparo da FCT. No portal proximal da ARUD, o risco é outro, o **interósseo posterior** (Campbell, p. 3280).
 
 !questoes central=mao-1531
 conceito: O nervo em risco nos portais 6R e 6U é o ramo dorsal sensitivo do nervo ulnar, que cruza a região dorsoulnar do punho.
@@ -648,30 +679,67 @@ como: A USP-SP 2026 perguntou o nervo em risco no portal 6R.
 armadilha: Marcar o radial superficial (risco no 1-2) ou o interósseo posterior (risco no portal proximal da ARUD).
 !fim
 
-## Os portais mediocárpicos
-
-Os mediocárpicos ficam cerca de **1 cm distais ao 3-4 e ao 4-5** (Green, p. 656). O **radial (MCR)** fica em linha com a margem radial do **3º metacarpo**, entre o ECRB e o 4º compartimento, e é mais apertado. O **ulnar (MCU)** fica no **cruzamento dos quatro cantos**, **em linha com o 4º metacarpo**, **1 a 1,5 cm distal ao 4-5**, entre o extensor comum e o do dedo mínimo (p. 657). O Campbell (p. 3280 e 3282) confirma as duas medidas. Há ainda o **STT** (ressecção do polo distal do escafoide), o **piramidal-hamato** e os da ARUD; no portal proximal da ARUD, o risco é o **interósseo posterior** (Campbell, p. 3280).
-
-!questoes central=mao-1321 treino=mao-2450
-conceito: O portal mediocárpico radial fica cerca de 1 cm distal ao 3-4; o mediocárpico ulnar fica cerca de 1 cm distal ao 4-5, em linha com o 4º metacarpo, no cruzamento dos quatro cantos.
-como: A USP-SP 2025 trouxe afirmativas sobre a localização dos portais; o SIMÃO 2022 perguntou onde fica o mediocárpico ulnar.
-armadilha: Colocar o MCU sobre o polo proximal do escafoide, derivá-lo do 6U ou do 6R, ou pôr o volar radial ulnar ao FCR.
-!fim
-
 ## Os portais volares
 
-O Green (p. 655) faz o **volar radial** entre o **radioescafocapitato e o radiolunar longo**, de dentro para fora pela cânula do 3-4, que faz tenda na pele **perto da artéria radial**. O Campbell (p. 3280) dá a referência de superfície: **lateral (radial) ao flexor radial do carpo**, na prega proximal. É o melhor acesso ao ligamento radiocárpico dorsal (p. 665). O **volar ulnar** (SLUTSKY) entra entre o **ulnossemilunar e o ulnopiramidal**, com o feixe ulnar a cerca de **5 mm** (p. 656).
+Os portais dorsais têm um ponto cego: a própria parede dorsal. Olhando de trás para a frente, a ótica vê bem os ligamentos palmares, mas não consegue virar para enxergar a cápsula e os ligamentos dorsais por onde entrou. Os portais volares nasceram para isso: ver as estruturas dorsais e a face palmar dos ligamentos interósseos (Green, p. 655).
 
-!questoes central=mao-0292 treino=mao-1774
-conceito: O portal volar radial é feito junto ao flexor radial do carpo, lateral (radial) a ele, e entra na radiocárpica entre o radioescafocapitato e o radiolunar longo.
+O **volar radial (VR)** é feito de **dentro para fora**, o que é mais seguro do que procurar o intervalo pela pele palmar. Com a ótica no 3-4, o cirurgião a coloca diretamente no intervalo entre o **radioescafocapitato** e o **radiossemilunar longo**; retira a ótica, passa um trocarte rombo pela cânula através da cápsula palmar até fazer **tenda na pele, perto da artéria radial**, faz uma pequena incisão sobre a ponta e traz a cânula de volta pelo trocarte (p. 655 e 656). O Campbell (p. 3280) dá a referência de superfície: o portal fica **radial (lateral) ao flexor radial do carpo**, na prega proximal, o que mantém o mediano do outro lado do tendão. É por esse portal que se tem o acesso **mais direto ao ligamento radiocárpico dorsal** (p. 665), que, visto de trás, passa despercebido; o 1-2 e o 6R também podem mostrá-lo, mas com dificuldade no punho pequeno.
+
+O **volar ulnar (VU)**, descrito por SLUTSKY, tem uma anatomia que vale entender, porque a questão costuma perguntar o que protege o quê. A incisão de **2 cm**, longitudinal ou em zigue-zague, fica logo proximal à prega do punho, na **borda ulnar dos tendões flexores dos dedos**. Os **flexores são afastados para radial**; o **flexor ulnar do carpo, a artéria e o nervo ulnares, para ulnar**. Uma agulha 22 entra logo distal ao pronador quadrado, e o portal cai **entre o ulnossemilunar e o ulnopiramidal**. Também pode ser feito de dentro para fora, com o trocarte vindo do 6U. Nessa posição, o feixe ulnar fica a cerca de **5 mm** ulnar ao trocarte, e o **nervo mediano fica protegido pelos próprios tendões flexores**, que ficam entre ele e o portal (p. 656). Do VU se vê a porção palmar do lunopiramidal, e o parágrafo do livro termina dizendo que ele mostra também a superfície articular dorsal do rádio e os ligamentos extrínsecos dorsais.
+
+!questoes central=mao-0292 treino=mao-1774,mao-3699,mao-3696
+conceito: O portal volar radial é feito junto ao flexor radial do carpo, lateral (radial) a ele, e entra na radiocárpica entre o radioescafocapitato e o radiossemilunar longo.
 como: Uma prova da SBOT-SP perguntou onde o portal volar pode ser feito; o SIMÃO 2026, por qual tendão ele passa e entre quais ligamentos entra.
 armadilha: Colocar o portal medial ao FCR (risco ao mediano) ou fazê-lo passar entre os radiolunares longo e curto.
 alerta: Em `mao-1774`, a expressão "pela bainha do FCR" não está literalmente nos livros: o Green (p. 655) fixa o intervalo RSC e radiolunar longo, e o Campbell (p. 3280), a posição lateral ao FCR.
 !fim
 
+## Os portais mediocárpicos
+
+A mediocárpica é o andar de baixo, entre a fileira proximal e a distal, e é nela que a instabilidade se denuncia (veja adiante). Os dois portais principais ficam cerca de **1 cm distais** aos portais radiocárpicos correspondentes (Green, p. 656).
+
+O **mediocárpico radial (MCR)** fica cerca de 1 cm distal ao 3-4, em linha com a **borda radial do 3º metacarpo**, com o ECRB do lado radial e o 4º compartimento do lado ulnar. É o espaço **mais apertado** da mediocárpica; quando ele custa a entrar, a dica do autor é começar pelo ulnar, que tem mais folga, e fazer o radial de dentro para fora ou sob visão (p. 656 e 657).
+
+O **mediocárpico ulnar (MCU)** fica na depressão do **cruzamento dos quatro cantos** (semilunar, piramidal, capitato e hamato), em linha com o **eixo do 4º metacarpo**, **1 a 1,5 cm distal ao 4-5**, entre os extensores dos dedos e o extensor do dedo mínimo. Quando a ótica está no MCR, ele costuma receber o líquido, e uma agulha no MCR faz a saída (p. 657). O Campbell (p. 3280 e 3282) confirma as duas medidas.
+
+Há outros quatro portais mediocárpicos, menos usados mas cobrados (p. 657):
+
+!tabela Portais mediocárpicos acessórios (Green's Operative Hand Surgery, 7ª ed., cap. 17, p. 657)
+| Portal | Onde fica | Para que serve | Cuidado |
+|---|---|---|---|
+| Volar mediocárpico | Agulha cerca de 11 mm distal ao volar radial | Face palmar do capitato e do hamato | Mesmas referências do VR |
+| STT | Nível da STT, em linha com a borda radial do 2º metacarpo, logo ulnar ao ELP; ECRL do lado ulnar | Sobretudo a ressecção do polo distal do escafoide na artrose STT | Ramos do radial superficial muito próximos |
+| STT-R | Mesmo nível, radial ao APL | Junto com o STT na ressecção | Ramos do radial superficial |
+| Piramidal-hamato (TH) | Entre o ECU e o FUC; piramidal proximal, base do 5º metacarpo e hamato distais | Pouco usado; instrumento ou fluxo | O ramo dorsal do ulnar cruza logo proximal |
+!fim
+
+O portal **STT** merece destaque porque responde a uma pergunta clássica: por onde se resseca, por artroscopia, o polo distal do escafoide na artrose escafotrapeziotrapezoide. A lógica é de alvo: o portal fica no nível da própria STT, com o polo distal do escafoide logo proximal a ele, e por isso dá acesso direto à superfície a ressecar. O preço é a vizinhança dos ramos do radial superficial, a mesma do 1-2. Na carpectomia artroscópica, ele volta a aparecer, agora para retirar o polo distal do escafoide (p. 690).
+
+!questoes central=mao-1321 treino=mao-2450,mao-3700,mao-3712,mao-3708
+conceito: O portal mediocárpico radial fica cerca de 1 cm distal ao 3-4; o mediocárpico ulnar fica cerca de 1 cm distal ao 4-5, em linha com o 4º metacarpo, no cruzamento dos quatro cantos.
+como: A USP-SP 2025 trouxe afirmativas sobre a localização dos portais; o SIMÃO 2022 perguntou onde fica o mediocárpico ulnar.
+armadilha: Colocar o MCU sobre o polo proximal do escafoide, derivá-lo do 6U ou do 6R, ou pôr o volar radial ulnar ao FCR.
+!fim
+
+## Os portais da ARUD
+
+A radioulnar distal tem **quatro** portais: dois dorsais, um volar e o foveal direto (Green, p. 657 e 661). A ótica de **1,9 mm** é mais fácil no começo, porque o acesso é apertado; a de 2,7 mm dá campo melhor. Um detalhe contraintuitivo: aqui convém **diminuir a tração**, para soltar a cápsula da ARUD.
+
+O **distal (D-DRUJ)** fica em linha com o 6R, **5 a 8 mm proximal** a ele, logo abaixo da FCT, com o extensor do dedo mínimo radial e o ECU ulnar; a cabeça da ulna fica embaixo e o disco em cima. Ele rende pouco na **variância ulnar positiva**, porque a cabeça longa ocupa o espaço. O **proximal (P-DRUJ)** fica cerca de 1 cm proximal ao distal, na axila da articulação, proximal à incisura sigmoide, e serve para avaliar a cartilagem da incisura e o colo da ulna; é nele que o Campbell aponta o risco ao interósseo posterior. O **volar** segue as mesmas referências do VU.
+
+O **foveal direto (DF)**, de ATZEI, é o que mais aparece em prova. Fica **1 cm proximal ao 6U**, entre o ECU e o FUC, com o **antebraço em supinação total**. A supinação tem razão de ser: ela traz a fóvea, a depressão na base do estiloide ulnar onde se insere o componente profundo da FCT, para a frente da cânula. O ramo dorsal sensitivo do ulnar é dissecado e protegido com um vessel loop. É um portal de **trabalho**, usado para reinserir o disco na fóvea ou desbridar (p. 657).
+
+A artroscopia da ARUD é indicada para desbridar um flap da face inferior do disco, retirar corpos livres, tratar a artrose da incisura sigmoide, fazer capsulorrafia na artrofibrose e ressecar a cabeça da ulna na lesão degenerativa classe II de PALMER (p. 661).
+
+## Os portais da trapeziometacárpica
+
+A trapeziometacárpica (TM) tem dois portais principais, nomeados pela relação com os tendões do 1º compartimento: o **1R**, radial ao APL, e o **1U**, ulnar ao EPB (p. 657). A diferença que cai na prova é o que cada um mostra melhor. O **1R** mostra o **dorsorradial**, o **oblíquo posterior** e o **colateral ulnar**; o **1U** mostra o **oblíquo anterior** e o colateral ulnar. A lógica é de perspectiva: cada portal enxerga melhor a parede oposta a ele, e o oblíquo anterior, palmar e ulnar, fica de frente para o 1U.
+
+O risco é que a TM **não tem plano internervoso**: os ramos do radial superficial cercam o campo, e a **artéria radial** passa logo posterior e ulnar a ele (p. 657). Por isso existem portais acessórios que mudam o ângulo de ataque. O **palmar radial modificado** (ORELLANA e CHOW) é feito com a ótica no 1U e a agulha logo distal à crista do trapézio. O **tenar** (WALSH) atravessa os músculos tenares no nível da CMC com uma agulha 18, guiada pela luz da ótica no 1U, e forma cerca de 90° com o 1U. O **D-2** (SLUTSKY) fica no dorso do 1º espaço, ulnar ao ELP, 1 cm distal ao V entre as bases do 1º e do 2º metacarpos; olha o trapézio de cima e é mais seguro para os osteófitos mediais, mas **não tem zona segura** e exige dissecção por divulsão (p. 657 e 658, Fig. 17.9). Os procedimentos da TM estão mais adiante, em "Trapeziometacárpica pela artroscopia".
+
 ## O que se vê de cada portal
 
-Pela eTable 17.1 do Green (p. 653.e1), a **FCT completa**, com o **orifício pisopiramidal**, aparece do **3-4, do 4-5 e do 6-R**; do **6-U**, só em vistas **oblíquas**; o lunopiramidal é bem visto do 4-5 ou 6-R (p. 659). O Campbell (p. 3280 e 3281) diz que o **4-5 permite melhor inspeção da FCT** e que do **6R** se veem a FCT, os ulnocárpicos e o lunopiramidal.
+Pela eTable 17.1 do Green (p. 653.e1), a **FCT completa**, com o **orifício pisopiramidal**, aparece do **3-4, do 4-5 e do 6-R**; do **6-U**, só em vistas **oblíquas**; o lunopiramidal é bem visto do 4-5 ou 6-R, e mal do 3-4, porque o piramidal fica mais distal que o semilunar e se esconde atrás dele (p. 659 e 660). O Campbell (p. 3280 e 3281) diz que o **4-5 permite melhor inspeção da FCT** e que do **6R** se veem a FCT, os ulnocárpicos e o lunopiramidal.
 
 !tabela Campo de visão por portal (Green's Operative Hand Surgery, 7ª ed., cap. 17, eTable 17.1, p. 653.e1)
 | Portal | Central | Volar | Ulnar |
@@ -692,43 +760,92 @@ armadilha: Escolher o 6-U ou achar que o 3-4 não alcança a FCT.
 alerta: As duas questões têm gabaritos diferentes para perguntas parecidas: `mao-0006` (4-5) é sustentada pelo Campbell (p. 3280); `mao-0246` (6R) se sustenta pela eTable 17.1 do Green, que lista FCT e orifício pisopiramidal no 6-R, e pelo Campbell (p. 3281). O Green não elege um único portal.
 !fim
 
+> **Na prova:** **3-4** visão, entre ELP e extensores dos dedos, 1 cm distal a LISTER, na borda radial do **médio**; **4-5** trabalho, mais **proximal** pela inclinação radial, no eixo do **anelar**; **1-2** colado ao ELP (artéria radial e radial superficial); **6U** influxo; **VR** entre RSC e radiossemilunar longo, melhor para o **radiocárpico dorsal**; **VU** com o **mediano protegido pelos flexores**; **MCU** no eixo do **4º metacarpo**, MCR na borda radial do **3º**; **STT** para o polo distal do escafoide; foveal de **ATZEI** 1 cm proximal ao 6U, em **supinação**; **1R** vê dorsorradial, oblíquo posterior e colateral ulnar, **1U** vê o oblíquo anterior.
+
 # Anatomia artroscópica e classificações {radar=confirmado}
 
 ## O passeio de radial para ulnar
 
-O exame começa no **3-4** e vai de **radial para ulnar** (Green, cap. 17, p. 658): **estiloide** e **polo proximal do escafoide** (condromalácia no SLAC); o **radioescafocapitato**, extrínseco **mais radial**; o **radiolunar longo**, **2 a 3 vezes mais largo**; o **radiolunar curto**; e, logo volar ao intervalo escafossemilunar, o **ligamento de TESTUT** (radioescafossemilunar), **vascularizado** (Figura 17.11). Depois, o **escafossemilunar côncavo**, o **disco da FCT** tenso como **trampolim** e o **recesso pré-estiloide**, normal, que não é lesão periférica (p. 658 e 659). O Campbell (p. 3281) concorda.
+O exame segue sempre a mesma ordem, e a ordem existe para não esquecer nada: com a ótica no **3-4**, vai-se de **radial para ulnar** (Green, cap. 17, p. 658). Primeiro o **estiloide radial** com o **polo proximal do escafoide**: condromalácia e sinovite ali são o começo do SLAC, a mesma lógica das duas colheres explicada na primeira metade deste resumo. Depois, os ligamentos extrínsecos palmares, de radial para ulnar:
 
-!questoes central=mao-1495 treino=mao-1960
+1. O **radioescafocapitato (RSC)**, o extrínseco **mais radial** que se vê com facilidade. É ele que a estiloidectomia excessiva destrói.
+2. O **radiossemilunar longo**, logo ulnar ao RSC e **2 a 3 vezes mais largo** que ele (Fig. 17.10). É o grande freio da translação ulnar do carpo, e por isso a artrólise artroscópica o preserva.
+3. O **radiossemilunar curto**, que o texto descreve como estrutura **vascularizada** logo palmar ao intervalo escafossemilunar. A legenda da Fig. 17.11 mostra, nessa região, o **ligamento de TESTUT** (radioescafossemilunar), bem vascularizado. TESTUT é mais um feixe neurovascular que um ligamento de força, e serve de referência para achar o intervalo escafossemilunar (p. 658).
+
+Seguindo para ulnar, aparecem o **escafossemilunar**, que normalmente tem aspecto **côncavo** entre os dois ossos (Fig. 17.12); a faceta do semilunar; a origem do **disco da FCT** na borda ulnar do rádio, com os espessamentos radioulnares palmar e dorsal; e o próprio disco, que palpado pelo 4-5 ou 6R fica tenso como um **trampolim** (p. 659).
+
+!questoes central=mao-1495 treino=mao-1960,mao-3706,mao-3714
 conceito: Com o artroscópio no 3-4, que entra sobre o intervalo escafossemilunar, o ligamento radioescafossemilunar (de TESTUT), estrutura vascularizada logo volar a esse intervalo, é o que as provas consideram a primeira estrutura encontrada; o RSC é o extrínseco mais radial e o radiolunar longo fica logo ulnar a ele.
 como: O SIMÃO 2023 e a USP-SP 2024 perguntaram a primeira estrutura vista com o artroscópio no 3-4.
 armadilha: Marcar o RSC (de WEITBRECHT, pelo enunciado) por ser o mais radial, ou os radiolunares.
 alerta: O Green (cap. 17, p. 658) descreve um exame de radial para ulnar que passa pelo estiloide, pelo RSC e pelos radiolunares antes do ligamento de TESTUT e não diz qual estrutura aparece primeiro; os gabaritos de `mao-1960` e `mao-1495` (TESTUT) não têm frase literal no livro, embora o ligamento fique bem em frente ao 3-4.
 !fim
 
+## O recesso pré-estiloide e o lado ulnar
+
+O **recesso pré-estiloide** é uma abertura **normal**, dorsal aos ligamentos ulnocárpicos, que comunica a radiocárpica com a ponta do estiloide ulnar. Ele é a pegadinha clássica do lado ulnar: um iniciante o confunde com uma desinserção periférica da FCT, mas a ruptura periférica verdadeira costuma ficar **dorsal** a ele (Green, p. 659, Fig. 17.13 a 17.15). É também ali que se coloca a cânula de influxo do 6U, distal ao disco, para não lesá-lo.
+
+O **lunopiramidal** e os **ulnocárpicos** se veem melhor do 4-5 ou do 6R. Do 3-4 a visão é ruim porque o piramidal fica mais distal que o semilunar e se esconde atrás dele (p. 659 e 660, Fig. 17.16).
+
+## A mediocárpica: o que é normal
+
+A regra de ouro do capítulo é que **a artroscopia de punho não termina sem olhar a mediocárpica** (p. 661). O motivo é mecânico: o ligamento interósseo se alonga muito antes de romper, e um ligamento esticado pode parecer apenas abaulado por cima, enquanto embaixo os ossos já rodaram um em relação ao outro. A rotação e o degrau entre os ossos aparecem de baixo, na mediocárpica, e não de cima.
+
+A ótica vai em geral no **MCR** (no punho pequeno, no MCU). De lá se veem a escafossemilunar proximal e a cabeça do capitato distal. O MCR serve para instabilidade, fratura do escafoide, cartilagem e STT; transladando para ulnar, aparecem o lunopiramidal e o polo proximal do hamato; na STT, o trapezoide fica em primeiro plano e o trapézio ao fundo (p. 660, Fig. 17.17 a 17.20). O **MCU** é o portal de quem suspeita de lesão lunopiramidal, instabilidade mediocárpica, semilunar **tipo II** e impacto ou artrose do hamato (p. 660).
+
+O que é normal na mediocárpica é a chave para não supertratar (p. 660 e 661):
+
+- A **escafossemilunar** é justa, congruente e **sem degrau**.
+- A **lunopiramidal** também é congruente, mas o piramidal fica cerca de **1 mm distal** ao semilunar e se move um pouco ao probe, e isso é **normal** (Fig. 17.18). O semilunar e o piramidal não têm a mesma altura; o degrau escafossemilunar, sim, é patológico.
+
+Um teste simples ajuda: a "**artrografia do pobre**". Com uma agulha num portal mediocárpico, injeta-se soro na radiocárpica; se ele flui livremente de um compartimento ao outro, há suspeita de rotura de um ligamento interósseo, que normalmente separa os dois espaços (p. 661).
+
 ## GEISSLER: o que o probe e o artroscópio atravessam
 
-O ligamento interósseo se **alonga muito antes de romper**, e rompe **de volar para dorsal** (p. 661). GEISSLER classificou as lesões escafossemilunares e lunopiramidais vistas em fraturas do rádio, e a classificação exige olhar **os dois espaços**, porque o mediocárpico mostra a rotação melhor:
+O ligamento interósseo se **alonga e se atenua muito antes de avulsionar**: abaula, deixa os ossos rodarem sem rotura completa e, quando rompe, rompe de **palmar para dorsal**. O ligamento roto pende e tapa a visão pela radiocárpica, outro motivo para avaliar a rotação de baixo (p. 661).
+
+GEISSLER montou a classificação observando as lesões escafossemilunares e lunopiramidais que acompanham as **fraturas do rádio distal**, e ela é inteiramente **artroscópica**: o critério é o que se vê e o que passa entre os ossos, nos **dois espaços** (p. 661). A elegância da tabela está no instrumento usado como régua: o probe mede o grau III, e o próprio artroscópio de 2,7 mm, o grau IV.
 
 !tabela Classificação artroscópica de GEISSLER (Green's Operative Hand Surgery, 7ª ed., cap. 17, Tabela 17.1, p. 661 e 662)
-| Grau | Espaço radiocárpico | Espaço mediocárpico | Conduta citada |
+| Grau | Espaço radiocárpico | Espaço mediocárpico | Conduta do autor nas agudas |
 |---|---|---|---|
-| I | Atenuação ou hemorragia; ligamento convexo | Sem incongruência | Resolve com imobilização |
-| II | Atenuação ou hemorragia | Incongruência ou degrau; pode haver pequeno espaço, menor que o probe | Redução e pinagem se agudo |
-| III | Incongruência; espaço visível | Degrau; o probe passa entre os ossos | Redução e pinagem se agudo |
+| I | Atenuação ou hemorragia; ligamento convexo (perde a concavidade) | Congruente | Imobilização apenas |
+| II | Atenuação ou hemorragia | Incongruência ou degrau; pode haver espaço menor que a largura do probe | Redução artroscópica e fios |
+| III | Incongruência; espaço visível | Degrau; o probe passa entre os ossos | Redução artroscópica e fios |
 | IV | Instabilidade grosseira | O artroscópio de 2,7 mm passa entre os ossos (drive-through) | Reparo direto por pequena artrotomia |
 !fim
 
-!questoes treino=mao-2483
+O grau II tem uma descrição fina que a prova adora: no escafossemilunar, o escafoide fica em **leve flexão palmar**, e por isso, vista da mediocárpica, a **borda dorsal do escafoide fica distal à borda do semilunar**, sem espaço entre os ossos; no lunopiramidal, o que denuncia o grau II é a **mobilidade aumentada ao probe** pelo MCU (p. 661 e 662). O grau IV corresponde ao espaço escafossemilunar alargado da radiografia, e o nome "drive-through" diz tudo: o artroscópio "dirige" da radiocárpica para a mediocárpica através do intervalo (Fig. 17.25, p. 662 e 663).
+
+!questoes treino=mao-2483,mao-3707,mao-3711,mao-3697,mao-3709
 conceito: No GEISSLER III há incongruência nos dois espaços e um espaço entre os ossos que admite a passagem do probe; a passagem do artroscópio de 2,7 mm (drive-through) é o grau IV.
 como: O SIMÃO 2021 perguntou o que caracteriza o grau III.
 armadilha: Trocar III por IV (artroscópio passa) ou por I (só hemorragia ou ligamento convexo).
 !fim
 
-Lesões agudas com incongruência são reduzidas e **pinadas por cerca de 8 semanas** (WHIPPLE: 83% de alívio com até 3 meses e gap de até 3 mm); o **encolhimento térmico** serve para lesões crônicas **grau I ou II** (p. 663 e 664).
+## A conduta por grau e o tempo da lesão
+
+A conduta do autor segue a lógica da tabela (p. 662 e 663). No **grau I agudo**, não há incongruência a corrigir: basta **imobilizar**. Nas lesões agudas **com incongruência mediocárpica (II e III)**, faz-se **redução artroscópica e fixação com fios**. No **grau IV**, o ligamento está roto por inteiro e os fios sozinhos rendem menos: o autor prefere **reparo primário direto por pequena artrotomia**.
+
+A técnica de fixação escafossemilunar tem detalhes que explicam complicações. Dois a três fios-guia entram logo distais ao estiloide em direção ao escafoide, por cânula ou em oscilação, para não enrolar o **ramo dorsal sensitivo do radial**. A ótica vai no **MCU**, olhando "através" do punho, e um fio no semilunar funciona como joystick. Quando a redução está boa e os fios cruzam o intervalo, saem gotas de gordura do espaço. São **3 a 4 fios por cerca de 8 semanas**, gesso curto, troca de curativo a cada 2 a 3 semanas, mais 4 semanas de imobilização e fisioterapia aos 3 meses. No lunopiramidal, a ótica vai no **MCR**, o cuidado é com o ramo dorsal do **ulnar**, e a redução costuma ser mais fácil (p. 663).
+
+Os fios têm limites: só ficam 6 a 8 semanas (infecção do trajeto, reabilitação travada), e o ligamento pode não cicatrizar nesse prazo. O **parafuso SLIC**, que roda no meio e tem cerca de 20° de báscula, pode ficar **6 a 9 meses** (p. 663, Fig. 17.26).
+
+O tempo decide o resultado. WHIPPLE mostrou que a fixação artroscópica funciona na lesão **aguda**: com instabilidade de **até 3 meses e diferença de até 3 mm**, **83%** de alívio; acima de 3 meses e de 3 mm, **63%** (p. 663). OSTERMAN e SEIDMAN tiveram 16 bons resultados em 20 lunopiramidais agudas sem VISI. WEISS, com desbridamento isolado, mostrou o padrão que vale guardar: **lunopiramidal responde melhor que escafossemilunar, e lesão parcial melhor que completa** (SL parcial 31 de 36 melhores, LT parcial 42 de 42, LT completa 26 de 33, SL completa pior) (p. 663 e 664).
+
+## As lesões crônicas: retração térmica e capsulodese
+
+A **retração eletrotérmica** aquece e desnatura o colágeno, que se contrai. No ombro ela não funcionou; no punho talvez funcione, porque o punho pode ficar imobilizado o tempo necessário para o colágeno contraído amadurecer (p. 664). A melhor indicação são as lesões **parciais crônicas grau I ou II**. A sonda **monopolar** penetra mais fundo; a **bipolar** esquenta mais a superfície e o soro. A técnica é "soldar em pontos", não "pintar": deixar tecido viável entre as áreas, parar quando o ligamento fica cor de **caramelo** (Fig. 17.27), **aumentar o fluxo** e monitorar a temperatura do soro na saída, com influxo separado pelo 6U. Depois, cerca de 8 semanas de imobilização e 4 de órtese. Nos resultados, GEISSLER (19 crônicas com mais de 6 meses) viu o grau II ir muito melhor que o III, sem diferença entre SL e LT; DARLIS teve 14 de 16 bons; HIRSH, 90% sem dor (p. 664).
+
+A tendência mais recente, segundo o capítulo, é olhar o lado **palmar** e a cápsula. MATHOULIN descreveu o reparo capsuloligamentar dorsal artroscópico, suturando o ligamento intercárpico dorsal ao SL dorsal com PDS 3-0, sem fios: 36 pacientes, **96% da força** e menos rigidez. DEL PINAL faz a sutura palmar toda por dentro, com agulha de TUOHY e o radiossemilunar longo; VAN KAMPEN e MORAN, uma capsulodese palmar com parte do radiossemilunar longo (p. 664).
+
+No **lunopiramidal crônico**, as opções são reparo, reconstrução ou artrodese. MOSKAL e SAVOIE descreveram a **plicatura ulnopiramidal-ulnossemilunar** artroscópica (portais 3-4, 6R, 6U e 6U volar, PDS 2-0, três suturas atadas depois de reduzir e fixar o LT com fios), com 19 de 21 bons resultados; ela é **contraindicada na VISI**, em que o problema já é de alinhamento do carpo (p. 665).
+
+O **ligamento radiocárpico dorsal** fecha a lista. Suas lesões se associam a VISI, DISI e instabilidade mediocárpica e costumam passar despercebidas, porque os portais dorsais olham por trás dele. É melhor visto pelo **VR**. No reparo de SLUTSKY, a ótica fica no VR, o gancho no 3-4, uma agulha espinhal 22 entra pelo 3-4 ou 4-5 com fio absorvível 2-0, e o nó é dado no 3-4 ou 4-5; gesso por 4 semanas; os 5 pacientes com reparo isolado ficaram satisfeitos (p. 665, Fig. 17.28).
 
 ## EWAS: qual parte do ligamento rompeu
 
-A European Wrist Arthroscopy Society propôs subdividir o GEISSLER, e LLUCH e GARCIA-ELIAS recomendam a modificação (Green, cap. 13, p. 438). O teste é feito pelo **mediocárpico radial**, com o probe no intervalo escafossemilunar:
+A European Wrist Arthroscopy Society propôs subdividir o GEISSLER, e LLUCH e GARCIA-ELIAS recomendam a modificação (Green, cap. 13, p. 438). A ideia nasceu de uma limitação do GEISSLER: ele diz quanto o intervalo abre, mas não diz **qual parte** do ligamento rompeu, e o ligamento escafossemilunar tem três partes com papéis diferentes (dorsal, a mais forte; palmar; e a membrana proximal, fina). O teste é feito pelo **mediocárpico radial**, com o probe no intervalo escafossemilunar:
 
 !tabela Classificação artroscópica EWAS das lesões escafossemilunares (Green's Operative Hand Surgery, 7ª ed., cap. 13, Tabela 13.4, p. 438)
 | Estágio | Lesão | Teste pelo mediocárpico radial |
@@ -750,7 +867,13 @@ como: O SBCM 2023 perguntou qual porção está rompida no IIIB; o SBCM 2024, em
 armadilha: Trocar IIIA e IIIB, ou indicar propriocepção no IIIB e IIIC, quando o dorsal já se foi.
 !fim
 
-## A FCT pela artroscopia
+> **Na prova:** a artroscopia **não termina sem a mediocárpica**; ligamento **estica antes de romper** e rompe de **palmar para dorsal**; degrau LT de **1 mm é normal**, degrau SL não; GEISSLER nasceu das **fraturas do rádio distal**; **I** convexo e mediocárpica congruente (imobilizar), **II** degrau com escafoide fletido e espaço menor que o probe, **III** o **probe passa**, **IV** o **artroscópio passa** (reparo por artrotomia); fixação artroscópica é para lesão **aguda** (WHIPPLE: até 3 meses e 3 mm, 83%); retração térmica para **parciais crônicas I e II**; plicatura de MOSKAL contraindicada na **VISI**; EWAS **IIIB = SL dorsal**.
+
+# Fibrocartilagem triangular pela artroscopia {radar=clinico}
+
+## Testes do disco: trampolim e gancho
+
+A FCT é o assunto do lado ulnar e tem resumo próprio (green-fcct-punho-ulnar); aqui entra o que o capítulo de artroscopia ensina sobre ela. A lesão aguda vem de **extensão e pronação com carga axial**: queda com a mão espalmada, raquete, golfe, furadeira que trava (Green, cap. 17, p. 676). A lesão periférica dá dor ulnar profunda e difusa, fraqueza de preensão, clique na rotação, dor ao girar maçaneta e **dor à palpação do recesso pré-estiloide**; a central dói sobre a ulna distal e piora na hiperpronação e supinação; na desinserção foveal, a cabeça da ulna subluxa para dorsal. A cirurgia se indica depois de **3 meses** de tratamento conservador, ou antes, se a ARUD estiver instável e sintomática apesar da imobilização (p. 677).
 
 O Campbell (cap. 74, p. 3317) ensina os dois testes: com a óptica no 3-4 e o probe no 6R ou 4-5, o **trampolim** comprime o disco e mede sua resiliência (confiabilidade de cerca de **67%**); o **gancho**, com o probe no **recesso pré-estiloide**, tenta puxar a FCT em várias direções (concordância de cerca de **90%**). A FCT só se desloca para o centro da articulação quando o **componente proximal está solto da fóvea**. Segundo ATZEI e LUCHETTI, lesão **distal isolada** dá **trampolim positivo e gancho negativo**; lesão **proximal ou completa** dá **os dois positivos**.
 
@@ -761,21 +884,34 @@ armadilha: Achar que gancho positivo indica lesão distal ou perfuração centra
 alerta: Em `mao-1777`, o Campbell (p. 3317) diz que lesão proximal ou completa deixa os dois testes positivos; o trampolim normal do enunciado não está no livro, mas a mecânica do gancho sustenta a desinserção foveal isolada.
 !fim
 
-Para reinserir a fóvea, o Campbell (p. 3319) descreve a técnica de **NAKAMURA**: suturas **transósseas** de fora para dentro para a **desinserção foveal** completa ou parcial, em punhos com **variância neutra ou negativa** (na positiva, o cisalhamento entre a cabeça e a sutura a rompe). A referência anatômica: uma linha de um ponto da cortical ulnar **15 mm proximal à ponta do estiloide** até a metade ulnar da fibrocartilagem passa pela fóvea.
+## PALMER classe 1 pela artroscopia
 
-!questoes treino=mao-2223,mao-2363
+A classificação de PALMER divide as lesões traumáticas (classe 1) pelo local, e o tratamento artroscópico depende de uma ideia simples: **o centro do disco não tem vascularização, a periferia tem**. O centro se desbrida; a periferia se repara.
+
+- **1A**, perfuração central de 1 a 2 mm, 2 a 3 mm ulnar à inserção radial na incisura sigmoide: **desbridar**, se a ulna for neutra ou negativa. Ótica no 3-4, faca banana no 6R, depois inverter os portais. Pode-se tirar até **dois terços** do disco, deixando uma borda de cerca de **2 mm**, que protege os ligamentos radioulnares, os verdadeiros estabilizadores da ARUD (p. 677, Fig. 17.68 a 17.70).
+- **1B**, avulsão da inserção ulnar, em geral com algum grau de instabilidade da ARUD: **reparável**, porque a periferia é vascularizada (p. 678).
+- **1C**, rara, da inserção distal no semilunar e no piramidal, com os ulnocárpicos: instabilidade ulnocárpica, dor sobre o pisiforme, travamento; sutura artroscópica (TRUMBLE), desbridamento ou retração térmica (p. 682 e 683).
+- **1D**, avulsão da incisura sigmoide com os radioulnares: se houver fragmento, reduzir e fixar; sem fragmento, reinserir por túneis transradiais (SAGERMAN e SHORT: cânula no 6U, ótica no 3-4, fio de 0,062 polegada, três túneis, agulhas de menisco, Ethibond 2-0 atado no rádio, contraincisão para proteger o radial superficial) ou sem nó (CORRELLA, PushLock de 2,5 mm). A incisura é escarificada **levemente**, porque se tirar osso demais o disco não alcança (p. 683 a 687).
+
+Para a 1B, o capítulo descreve três técnicas, e a de WHIPPLE é a mais cobrada (p. 678 a 682). Na sutura de **fora para dentro de WHIPPLE**, a ótica fica no 3-4, o shaver desbrida pelo 6R, e então o **6R é ampliado cerca de 1,5 cm**; abre-se o retináculo do ECU e afasta-se o tendão para ulnar. Uma agulha 18 atravessa, o mais vertical possível, o **assoalho da bainha do ECU** e o disco; o PDS 2-0 é recuperado distal ao disco; em geral três pontos, atados com o punho em leve **supinação**, e o retináculo do ECU é fechado (Fig. 17.71 a 17.77). A razão de passar pela bainha do ECU é que a periferia rota fica logo abaixo dela; é o caminho mais curto até a borda a suturar. Na técnica de **EKMAN e POEHLING**, uma agulha de TUOHY entra pelo 1-2 ou 3-4, com a ótica no 4-5, atravessa o punho até a borda rota e faz um colchoeiro amarrado na cápsula, com cuidado para não prender o ramo dorsal do ulnar. Na técnica de **GEISSLER**, toda artroscópica e sem nó, um 6R acessório 1,5 cm distal ao 6R leva uma âncora PushLock à fóvea, na base do estiloide; a âncora tende a escorregar para palmar. O pós-operatório é tala axilopalmar por cerca de 4 semanas, prono-supinação na 4ª e fisioterapia na 7ª.
+
+!questoes treino=mao-2223,mao-2363,mao-3704
 conceito: A sutura artroscópica transóssea de NAKAMURA é indicada na desinserção (ruptura) foveal da FCT, de preferência com variância ulnar neutra ou negativa.
 como: O SBCM 2023 e o SIMÃO 2024 perguntaram para qual lesão ela é mais indicada.
 armadilha: Indicá-la para perfuração central (desbridamento) ou para a borda radial.
 !fim
 
-Nas lesões degenerativas (PALMER classe II), o problema é a **ulna longa**: sem perfuração (IIA e IIB), encurtamento da ulna; com perfuração (IIC), o **wafer artroscópico** pela perfuração, ressecando 3 a 4 mm; limitar a 2 a 4 mm preserva a ARUD, e encurtar 3 mm reduz em **50%** a força na ulna (Green, cap. 17, p. 687 e 688).
+Para reinserir a fóvea, o Campbell (p. 3319) descreve também a técnica de **NAKAMURA**: suturas **transósseas** de fora para dentro para a **desinserção foveal** completa ou parcial, em punhos com **variância neutra ou negativa** (na positiva, o cisalhamento entre a cabeça e a sutura a rompe). A referência anatômica: uma linha de um ponto da cortical ulnar **15 mm proximal à ponta do estiloide** até a metade ulnar da fibrocartilagem passa pela fóvea. O portal foveal direto de ATZEI, descrito acima, é o portal de trabalho dessa reinserção.
+
+## A lesão degenerativa: o problema é a ulna longa
+
+Na classe 2 de PALMER, a rotura é **circular**, de desgaste (a traumática é linear), com condromalácia do semilunar e da ulna, e na fase final rompe o lunopiramidal. O problema não é o disco, é a **ulna longa** que o esmaga. Por isso, sem perfuração (**IIA e IIB**), a conduta é a **osteotomia de encurtamento**; com perfuração (**IIC**), há a opção de desbridar e ressecar a cabeça da ulna através da rotura, o **wafer artroscópico**: ótica no 3-4, fresa no 6R, cerca de **3 a 4 mm** (o wafer aberto de FELDON tira 2 a 4 mm), sob **fluoroscopia**, porque a magnificação da ótica engana; tirar cartilagem da ARUD demais deixa dor na rotação (p. 687 e 688, Fig. 17.112). O número que explica tudo: encurtar **3 mm** reduz em **50%** a carga na ulna. BERNSTEIN viu alívio semelhante com wafer artroscópico e com desbridamento mais osteotomia, com menos cirurgias; o autor, porém, acha que o wafer deixa desconforto residual na prono-supinação e prefere a osteotomia aberta. Na **IID** (com instabilidade LT), osteotomia aberta, porque tensionar os ulnocárpicos reduz o LT; na **IIE** (artrose da ARUD), trata-se a artrose (p. 688).
 
 # Indicações e procedimentos artroscópicos {radar=confirmado}
 
 ## A lista de indicações
 
-O Green (cap. 17, p. 653) cita lesões **interósseas**, o **lado ulnar** e a FCT, fraturas do **rádio** e do **escafoide** e lesões condrais. O Campbell (cap. 74, p. 3278 e 3279) organiza o Box 74.1:
+O Green (cap. 17, p. 652 e 653) cita lesões **interósseas**, o **lado ulnar** e a FCT, fraturas do **rádio** e do **escafoide** e lesões condrais. O Campbell (cap. 74, p. 3278 e 3279) organiza o Box 74.1:
 
 !tabela Procedimentos artroscópicos do punho (Campbell's Operative Orthopaedics, 15ª ed., cap. 74, Box 74.1, p. 3279)
 | Grupo | Procedimentos |
@@ -796,20 +932,19 @@ como: A USP-SP 2024 e o Einstein 2026 (mesmo enunciado) pediram as indicações;
 armadilha: Incluir reparo de tendão flexor ou reabordagem de fratura com falha de material, ou achar que fratura do rádio não se trata pela artroscopia.
 !fim
 
-## Cisto sinovial
+## Fratura do rádio distal pela artroscopia
 
-A excisão artroscópica do **cisto dorsal** (OSTERMAN e RAPHAEL) deixa menos cicatriz e devolve a flexão mais cedo que a aberta, com **recidiva baixa e comparável** (Green, cap. 17, p. 688): óptica no **4-5 ou 6-R**, **defeito capsular de cerca de 1 cm** na junção da cápsula com o escafossemilunar, até ver um **tendão extensor**, e movimento no dia seguinte. No cisto **volar**, shaver no **1-2**, entre o RSC e os radiolunares, sem tirar a parede (p. 689).
+A artroscopia entra no rádio distal por dois caminhos (Green, p. 671 e 672). No primeiro, ela é o tratamento principal das fraturas articulares **simples, de fragmentos grandes**: o **estiloide**, o **die-punch** palmar ou dorsal e o **BARTON**. No segundo, é adjunta nas fraturas de 3 e 4 partes com cominuição metafisária, sobretudo junto da placa palmar. Nos dois casos, há um ganho extra: a **prevalência de lesões associadas da FCT, do escafossemilunar e do lunopiramidal é alta**, e elas podem ser tratadas no mesmo ato. Foi exatamente essa observação que gerou a classificação de GEISSLER.
 
-!questoes treino=mao-2050
-conceito: A ressecção artroscópica do cisto dorsal tem recidiva baixa, comparável à aberta, com menos rigidez; a falsa recidiva precoce cobrada pela banca é manejada com massagem local pelo próprio paciente.
-como: O SBCM 2024 perguntou como se previne ou trata a pseudorrecidiva após a ressecção artroscópica.
-armadilha: Reoperar por via aberta ou infiltrar corticoide diante de um abaulamento precoce.
-alerta: A pseudorrecidiva e a massagem de `mao-2050` não constam no Green, no Campbell nem no HEBERT; o Green (cap. 17, p. 688) só traz a técnica, a recidiva baixa e o movimento precoce. Gabarito mantido sem fonte na biblioteca.
-!fim
+O momento importa: entre **2 e 10 dias**. Esperar pelo menos 48 horas reduz o sangramento que turva a visão; depois de 10 dias, os fragmentos já não se manipulam bem. Tração de 10 libras, portais 3-4, 6R e 6U, lavagem com influxo no 6U, ótica no 3-4 e shaver no 6R (p. 672). A fratura do **estiloide** é a ideal para artroscopia, e a rotação do fragmento é avaliada **olhando de um portal ulnar** (6R), de onde se vê a superfície de frente; fios em oscilação servem de joystick e um ou dois parafusos sem cabeça fixam (p. 672 e 673). Nas fraturas de três partes, o estiloide reduzido vira a referência, a faceta do semilunar é elevada com um STEINMANN percutâneo cerca de 2 cm proximal, e um fio subcondral transversal a segura; durante a fixação, prona-se e supina-se para não violar a ARUD (p. 673 e 674). Com a placa palmar, a artroscopia mostra o que a fluoroscopia esconde: uma redução "boa" na imagem pode ter degrau na ótica, e então se soltam os fios e se reduz de novo (p. 675 e 676, Fig. 17.65). DEL PINAL faz essas fraturas a seco, sem o risco do extravasamento (p. 676).
 
 ## Escafoide pela artroscopia
 
-Na técnica de GEISSLER (Green, cap. 17, p. 666 e 669), a óptica vai no **6-R** e uma agulha 14 entra pelo **3-4** no polo proximal, junto à inserção da membrana escafossemilunar; o fio-guia segue o eixo central, e o parafuso deve ser **pelo menos 4 mm mais curto** que a medida. Para conferir a redução, a óptica vai ao **mediocárpico**: as fraturas do **polo proximal** se veem melhor pelo **mediocárpico ulnar**, e as da **cintura**, pelo **mediocárpico radial**. É indicada nas agudas e nas pseudartroses **sem humpback nem DISI**.
+O gesso consolida **85 a 95%** das fraturas agudas sem desvio, mas cobra atrofia, osteopenia e rigidez; ARORA mostrou que a fixação dá consolidação mais rápida, custo menor e retorno ao trabalho 7 semanas antes (Green, p. 666). A artroscopia permite fixar sem abrir e, de quebra, ver a redução.
+
+Na **técnica de GEISSLER**, a preferida do autor (p. 666 e 667), a indicação são as agudas e as pseudartroses **sem corcunda (humpback) nem DISI**, porque a artroscopia não corrige uma deformidade estabelecida. A ótica começa no 3-4 (para ver lesões associadas) e passa ao **6R**; o punho fica fletido cerca de 30°, com a base da torre no dorso do antebraço. Uma agulha 14 entra pelo **3-4** e crava o **polo proximal** na junção com a porção membranosa do escafossemilunar, no meio do eixo palmar-dorsal, mirando o **polegar**. O fio-guia segue o eixo central até o polo distal, um segundo fio mede, e o parafuso sem cabeça deve ser **pelo menos 4 mm mais curto** que a medida, para ficar todo abaixo da cartilagem nas duas pontas. O fio sai pela eminência tenar, o que permite resgatá-lo se quebrar. A vantagem sobre a técnica dorsal percutânea é não precisar hiperfletir o punho, manobra que pode abrir a fratura em corcunda. No fim, confere-se pela radiocárpica que o parafuso está abaixo da cartilagem, porque a fluoroscopia engana (p. 668).
+
+Para conferir a redução, a ótica vai à **mediocárpica**: as fraturas do **polo proximal** se veem melhor pelo **mediocárpico ulnar**, e as da **cintura**, pelo **mediocárpico radial** (p. 666 e 669). A lógica é de ângulo: o MCU olha de ulnar e de longe, de onde o polo proximal, junto ao semilunar, fica de frente; o MCR fica sobre a cintura.
 
 !questoes treino=mao-2224
 conceito: Na fixação artroscópica do escafoide, a redução das fraturas do polo proximal é vista melhor pelo portal mediocárpico ulnar; as da cintura, pelo mediocárpico radial.
@@ -817,21 +952,75 @@ como: O SBCM 2023 perguntou o portal que mostra melhor a redução do polo proxi
 armadilha: Escolher o MCR (melhor para a cintura) ou um portal radiocárpico.
 !fim
 
+Há outras duas técnicas (p. 668 e 669). SLADE faz a fixação dorsal assistida: flete e prona o punho até o **sinal do anel**, em que os dois polos se alinham na fluoroscopia, e o fio entra no centro do anel, paralelo ao feixe (Fig. 17.38). HERBERT e WHIPPLE põem a ótica no 6R e o guia pelo 1-2, conferindo a redução pelo MCR. Para as pseudartroses, a Tabela 17.2 (SLADE e GEISSLER) gradua cronicidade, esclerose e deformidade; as técnicas percutâneas funcionam nos tipos I a III (15 fibrosas estáveis consolidaram sem enxerto em média em 3 meses), e no tipo IV, cístico, a matriz óssea desmineralizada injetada por agulha de biópsia consolidou 14 de 15 (p. 670). Até a fratura-luxação transescafoide perilunar já foi tratada toda por artroscopia, com parafuso no escafoide e SLIC no lunopiramidal: 7 casos, consolidação em 3 meses, 5 sem dor (p. 670 e 671).
+
+## Cisto sinovial
+
+A ressecção aberta do cisto dorsal não é benigna: a cicatriz dorsal pode deixar o punho rígido em flexão. A excisão artroscópica, popularizada por OSTERMAN e RAPHAEL, deixa menos cicatriz, devolve a flexão mais cedo e tem **recidiva baixa e comparável** à aberta (Green, cap. 17, p. 688).
+
+A técnica tem uma inversão curiosa: o portal de trabalho é aberto **através do próprio cisto**. A ótica vai no **4-5 ou 6R**, com o influxo por agulha no 6U. Uma agulha atravessa o saco do cisto até a radiocárpica, no nível do escafossemilunar; como o cisto costuma ficar **distal ao 3-4**, essa agulha entra mais oblíqua. Esse trajeto vira o portal do **shaver**, que abre um defeito de espessura total de cerca de **1 cm** na junção da cápsula dorsal com o escafossemilunar, onde nasce o pedículo. Ver um **tendão extensor** confirma que a cápsula foi aberta em toda a espessura; ao espremer o cisto, ele se esvazia para dentro da articulação. O movimento começa no dia seguinte (p. 688, Fig. 17.113 e 17.114).
+
+O **cisto palmar**, segunda massa mais comum do punho, nasce do escafossemilunar palmar, da escafotrapezial ou da TM e fica entre o flexor radial do carpo e o flexor longo do polegar. A ótica vai no 3-4, o abaulamento aparece entre o RSC e o radiossemilunar longo (ou entre o longo e o curto), e o shaver entra pelo **1-2**, com cuidado com os ramos radiais; abre-se um defeito de 1 cm, sem tentar tirar a parede. FERNANDEZ (31 casos) achou melhor ver pelo 4-5 e trabalhar pelo 1-2, com uma neurite, dois hematomas e uma recidiva. O cisto da STT é mais difícil e pede tração no polegar, MCR, STT e portal palmar da TM (p. 688 e 689).
+
+!questoes treino=mao-2050,mao-3710,mao-3705
+conceito: A ressecção artroscópica do cisto dorsal tem recidiva baixa, comparável à aberta, com menos rigidez; a falsa recidiva precoce cobrada pela banca é manejada com massagem local pelo próprio paciente.
+como: O SBCM 2024 perguntou como se previne ou trata a pseudorrecidiva após a ressecção artroscópica.
+armadilha: Reoperar por via aberta ou infiltrar corticoide diante de um abaulamento precoce.
+alerta: A pseudorrecidiva e a massagem de `mao-2050` não constam no Green, no Campbell nem no HEBERT; o Green (cap. 17, p. 688) só traz a técnica, a recidiva baixa e o movimento precoce. Gabarito mantido sem fonte na biblioteca.
+!fim
+
+## Estiloidectomia artroscópica
+
+A estiloidectomia aberta foi discutida na primeira metade deste resumo; a artroscópica tem a mesma indicação e um número próprio (Green, cap. 17, p. 689 e 690). Ela serve ao **SLAC inicial** ou à artrose radioescafoide focal com **dor na ponta do estiloide**. É **paliativa**: alivia o impacto, mas não restaura a cinemática do escafoide.
+
+A técnica é: ótica no 3-4 e fresa de 3,5 mm pelo **1-2**. A própria doença marca o alvo, porque a condromalácia da fossa do escafoide mostra até onde ressecar. Retira-se **cerca de 4 mm**, conferindo na **fluoroscopia**, já que a magnificação da ótica engana. O número é pequeno de propósito: na face palmar do estiloide nasce o **radioescafocapitato**, e preservá-lo evita a **translocação ulnar** do carpo, que escorrega pela inclinação do rádio quando perde o freio radial. A diferença com o "mais de 1 cm" do capítulo 16 é de ênfase: o capítulo 16 dá o limite a partir do qual o RSC é seriamente comprometido; o 17 dá a quantidade que se resseca na prática, compatível com o máximo de 4 mm do Campbell (p. 3294).
+
 ## Salvamentos pela artroscopia
 
-A artroscopia gradua a cartilagem do **capitato** e da **fossa do semilunar** e ajuda a escolher entre quatro cantos e carpectomia (Green, cap. 13, p. 449; cap. 17, p. 665). A **carpectomia artroscópica** (WEISS) tem as **mesmas indicações** da aberta e permite **movimento imediato**: óptica no **mediocárpico ulnar**, broca no **mediocárpico radial**, escafoide de ulnar para radial (polo distal pelo **STT**), depois semilunar e piramidal; em 35 pacientes, **78%** do arco, preensão de **83%** e **94%** de satisfação (Green, p. 690; Campbell, p. 3296 e 3298). Na **artrodese parcial artroscópica** (HO), as superfícies são removidas **pelo mediocárpico radial** (Green, p. 690).
+A artroscopia gradua a cartilagem da **cabeça do capitato** e da **fossa do semilunar** e ajuda a escolher entre quatro cantos e carpectomia no SLAC, como alternativa ou complemento da ressonância (Green, cap. 13, p. 449; cap. 17, p. 665).
 
-!questoes treino=mao-2225
+A **carpectomia artroscópica** (WEISS) tem as **mesmas indicações** da aberta e exige a mesma condição, cartilagem íntegra da fossa do semilunar e da cabeça do capitato. A vantagem é preservar a cápsula dorsal, o que dá estabilidade e permite **movimento imediato** (p. 690). A sequência segue uma lógica de rodízio: ótica no **mediocárpico ulnar** e fresa no **mediocárpico radial** (com o capuz voltado para o capitato, para protegê-lo); o escafoide sai de ulnar para radial e de distal para proximal, com o **polo distal pelo STT**; depois a ótica vai ao STT e o semilunar sai pelo MCR; por fim, a ótica vai ao MCR e o piramidal sai pelo MCU. Em 35 pacientes acompanhados por 33 meses, sem complicação maior nem conversão, a cirurgia levou 61 minutos e deu **78%** do arco de flexoextensão, 70% do desvio, preensão de **83%** e **94%** de satisfação (Green, p. 690; Campbell, p. 3296 e 3298).
+
+Na **artrodese parcial artroscópica** (HO, 23 casos de STT, quatro cantos, capitossemilunar, escafocapitato, radioescafossemilunar, radiolunar e lunopiramidal), as superfícies da mediocárpica são removidas **pelo MCR** com fresa e cureta e fixadas com fios ou parafusos canulados; 19 fundiram, 3 ficaram com fibrose estável e 1 foi revista (p. 690).
+
+!questoes treino=mao-2225,mao-3698
 conceito: Na quatro cantos artroscópica, o escafoide é ressecado trabalhando pelos portais mediocárpicos radial e ulnar (óptica de um, broca do outro), com o portal STT para o polo distal.
 como: O SBCM 2023 perguntou por quais portais se trabalha para ressecar o escafoide.
 armadilha: Escolher portais radiocárpicos (3-4, 4-5 ou 6R), que não alcançam a mediocárpica.
 !fim
 
-A **sinovectomia reumatoide** (ADOLFSSON) se indica após **6 meses** de remédio sem melhora, com degeneração só inicial (p. 689); a **artrólise** é contraindicada com **instabilidade do carpo** ou artrose (p. 691).
+Três outros procedimentos completam o grupo (p. 689 a 692):
+
+- **Sinovectomia na artrite reumatoide** (ADOLFSSON): indicada quando os sintomas persistem depois de **6 meses** de tratamento clínico e a radiografia só mostra alteração inicial (LARSEN); de ulnar para radial pelo 3-4, 4-5 e 6R, depois trocando os portais. O arco foi de 70 para 90°, a força subiu 87% em 18 pacientes, e a melhora se manteve a 3,8 anos.
+- **Semilunar tipo II** (bifacetado, com faceta para o hamato): a condropatia do **polo proximal do hamato** aparece em 44% deles, contra 2% no tipo I, e dá dor ulnar em desvio ulnar extremo; o tratamento é a ressecção artroscópica do polo proximal do hamato (YAO).
+- **Artrólise**: contraindicada na **instabilidade do carpo** (soltar os extrínsecos a piora), na artrose e no paciente que não vai usar órtese. LUCHETTI começa a seco pelo lado radial, com visão no 3-4 e trabalho no 1-2; a capsulectomia palmar é mais fácil; o RSC é cortado na base, mas o **radiossemilunar longo é preservado**, para não provocar translocação ulnar. A flexão foi de 44 para 54° e a extensão de 40 para 60°.
+
+No **KIENBÖCK**, a classificação artroscópica de **BAIN e BEGG** (Tabela 17.3) conta o **número de superfícies articulares não funcionais** e começa sempre pela superfície proximal do semilunar; os achados mudam a conduta, e a radiografia subestima o dano (p. 691 e 692). Os graus e o tratamento de cada um estão no resumo green-kienbock.
+
+## Trapeziometacárpica pela artroscopia
+
+A artroscopia da TM tem classificação própria, a de **BADIA** (p. 692): **1**, sinovite difusa com cartilagem íntegra e cápsula palmar frouxa; **2**, perda central de cartilagem no trapézio e na base do metacarpo, com sinovite; **3**, perda difusa e osteófito profundo no trapézio. Ela é útil porque cada estágio pede um gesto diferente: no 1, apertar a cápsula; no 2 e no 3, retirar osso.
+
+A **retração térmica** da cápsula (p. 693) usa o mesmo princípio do escafossemilunar: o colágeno tipo I contrai entre **60 e 67 °C**, atinge um platô, e até 10% da retração se perde ao esfriar. Com 5 a 10 libras de tração no polegar e o cotovelo a 90°, ótica no 1U e sonda no 1R, passam-se listras precisas, sem "pintar", começando pelo **oblíquo anterior** e indo ao colateral ulnar, depois trocando os portais para o colateral ulnar, o oblíquo posterior e o dorsorradial. Devagar demais causa dano térmico; rápido demais, pouca retração. Um pino segura a CMC por 3 a 4 semanas, e o fortalecimento começa com 6. A indicação é qualquer artrose TM isolada e refratária, e ela não impede a trapeziectomia aberta depois.
+
+Na **hemitrapeziectomia artroscópica** (p. 693 e 694), a ótica fica no **1U**, e o ressector e a fresa de 2,9 mm entram pelo **portal tenar**. A escolha do tenar como portal de trabalho tem dois motivos que a prova cobra: ele é o mais **distante do ramo sensitivo dorsal do radial** e fica **quase perpendicular ao 1U**, o que torna a triangulação fácil. Retiram-se 3 a 5 mm do trapézio, conferindo na fluoroscopia, faz-se o teste de balotamento e fixa-se com pino por 3 a 4 semanas ou um mini-tightrope entre o 1º e o 2º metacarpos. YAO operou mais de 40 casos com duas complicações num mesmo paciente (dor regional complexa e fratura do 2º metacarpo). COBB fez a trapeziectomia artroscópica pelo 1R e 1U, com interposição de enxerto fixado por suturas sobre botões, em 35 pacientes: a dor caiu de 7 para 1 e o DASH de 46 para 19, com 4 reoperações; a necessidade da interposição não está estabelecida. As contraindicações são anatomia distorcida por edema, pele que não aguenta tração, infecção recente, doença pantrapezial (relativa) e frouxidão sistêmica (EHLERS-DANLOS, lúpus) (p. 693).
+
+> **Na prova:** rádio distal pela artroscopia entre **2 e 10 dias**, estiloide visto de um portal **ulnar**; escafoide de GEISSLER pelo **3-4** com ótica no **6R**, parafuso **4 mm mais curto**, só sem **humpback nem DISI**; redução do **polo proximal pelo MCU**, da **cintura pelo MCR**; cisto dorsal com ótica no **4-5 ou 6R** e shaver **através do cisto**, defeito de **1 cm**; cisto palmar com shaver no **1-2**; estiloidectomia artroscópica de **cerca de 4 mm** preserva o **RSC**; carpectomia de WEISS com ótica no **MCU** e fresa no **MCR**, polo distal pelo **STT**; artrólise preserva o **radiossemilunar longo** e é contraindicada na instabilidade; hemitrapeziectomia com ótica no **1U** e fresa no **tenar**.
 
 # Complicações da artroscopia {radar=confirmado}
 
-O Green (cap. 17, p. 694) diz que as complicações são **raras**. BEREDJIKLIAN teve **11 em 211**: duas maiores (**artrofibrose grave** e um **cisto no portal 3-4**) e nove menores (neurapraxia ulnar transitória, rigidez transitória do punho e dos dedos, queimadura de pele, infecção de portal, tendinite do ECU). PELL e UHL tiveram **três rupturas tendíneas** em 47 ablações térmicas. A prevenção é técnica: **agulha antes de cortar**, **trocarte rombo**, **entrada e saída separadas**, **Ringer lactato** (reabsorvível, reduz o risco de síndrome compartimental) e **fios com protetor ou em oscilação** para poupar os ramos sensitivos.
+O Green (cap. 17, p. 694) diz que as complicações são **raras**, e a frase que fecha o capítulo explica por que elas existem: o punho tem tantas estruturas em tão pouco espaço que mudar um portal em poucos milímetros muda a distância a um nervo ou a um tendão. BEREDJIKLIAN teve **11 complicações em 211** artroscopias (cerca de 5%): duas maiores, **artrofibrose grave** e um **cisto sinovial no portal 3-4**, e nove menores, todas resolvidas (neurapraxia ulnar transitória, rigidez transitória do punho e dos dedos, queimadura de pele, infecção de portal e **tendinite do ECU**).
+
+A complicação tendinosa grave descrita pelo capítulo vem da energia térmica, não do portal: PELL e UHL tiveram **três rupturas tendíneas em 47** pacientes tratados com **ablação térmica por radiofrequência**, além de uma **queimadura de pele de espessura total** com a retração térmica. O mecanismo é o aquecimento do soro e dos tecidos vizinhos, e é por isso que a técnica pede fluxo alto, influxo separado e controle da temperatura na saída. O Green não elege um tendão específico como o mais lesado; ele trata tendões e ramos sensitivos como as estruturas que a técnica deve proteger.
+
+A prevenção é técnica, e cada item responde a uma complicação (p. 694):
+
+- **Planejar os portais**, porque milímetros mudam a distância às estruturas.
+- **Agulha antes de cortar**: ela deve entrar fácil, sem empalar tendão, carpo ou rádio.
+- **Trocarte rombo**, para afastar em vez de cortar.
+- **Influxo e saída separados**, que reduzem o extravasamento.
+- **Soro fisiológico ou Ringer lactato**, que o organismo reabsorve, reduzindo o risco de síndrome compartimental.
+- **Fios com protetor de partes moles ou em oscilação**, que não enrolam os ramos sensitivos.
 
 O Campbell (cap. 74, p. 3278 e 3279) dá a taxa (**1,2 a 5,2%**; **4,7%** em 895 procedimentos) e a classificação que a banca usa:
 
@@ -844,7 +1033,9 @@ O Campbell (cap. 74, p. 3278 e 3279) dá a taxa (**1,2 a 5,2%**; **4,7%** em 895
 | Gerais | Falha de equipamento, infecção |
 !fim
 
-!questoes central=mao-0114
+A lógica da tabela é a origem do dano. A **tração** age no braço inteiro, por isso machuca pele, articulações e nervos periféricos longe do punho. O **portal** age num ponto, por isso lesa o que está no trajeto: nervo cutâneo, vaso, tendão, cartilagem. O **procedimento** traz riscos próprios: a fratura sangra e deixa o soro escapar para o compartimento, o reparo da FCT passa perto do ramo dorsal do ulnar, o fio pode enrolar um nervo sensitivo.
+
+!questoes central=mao-0114 treino=mao-3703
 conceito: As complicações ligadas à tração e à posição do braço são a lesão de pele, a rigidez articular e a lesão de nervo periférico; tendão e cartilagem entram nas complicações de portal e instrumento, e a síndrome compartimental, nas do procedimento.
 como: O TARO 2022 perguntou qual complicação se relaciona à tração ou ao posicionamento do braço.
 armadilha: Marcar lesão do tendão extensor ou da cartilagem (portal) ou síndrome compartimental (extravasamento).
