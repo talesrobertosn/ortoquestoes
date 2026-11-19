@@ -289,12 +289,19 @@ export function lerRespondidas(): Record<string, RegistroQuestao> {
 
 export function descreverFiltros(filtros: Filtros): string {
   const partes: string[] = []
-  const assuntos = filtros.temas.length + filtros.subtemas.length
+  // Sessões salvas antes de `areas` e dos filtros atuais continuam chegando pela
+  // sincronização. A descrição do histórico não pode impedir sua conclusão.
+  const temas = filtros?.temas ?? []
+  const subtemas = filtros?.subtemas ?? []
+  const areas = filtros?.areas ?? ['base']
+  const provas = filtros?.provas ?? []
+  const anos = filtros?.anos ?? []
+  const assuntos = temas.length + subtemas.length
   partes.push(assuntos === 0 ? 'Todos os assuntos' : `${assuntos} assunto(s)`)
-  if (filtros.areas.length !== 1 || filtros.areas[0] !== 'base') partes.push(filtros.areas.map((a) => ROTULO_AREA[a]).join(' + '))
-  if (filtros.provas.length) partes.push(filtros.provas.join(', '))
-  if (filtros.soSimulados) partes.push('OrtoQuestões Simulados')
-  if (filtros.anos.length) partes.push(filtros.anos.join(', '))
+  if (areas.length !== 1 || areas[0] !== 'base') partes.push(areas.map((a) => ROTULO_AREA[a]).join(' + '))
+  if (provas.length) partes.push(provas.join(', '))
+  if (filtros?.soSimulados) partes.push('OrtoQuestões Simulados')
+  if (anos.length) partes.push(anos.join(', '))
   return partes.join(' · ')
 }
 

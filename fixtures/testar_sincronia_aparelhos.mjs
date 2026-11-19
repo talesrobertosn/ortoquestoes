@@ -42,6 +42,11 @@ async function principal() {
     const m = await import(pathToFileURL(pacote).href)
     const indice = JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))
 
+    // Sessões antigas ou sincronizadas podem não ter a categoria `areas`.
+    // A descrição é usada tanto por Concluir quanto por Começar a nova.
+    assert.equal(m.descreverFiltros({ temas: [], subtemas: [] }), 'Todos os assuntos')
+    assert.equal(m.descreverFiltros({ temas: ['joelho'], subtemas: [], areas: ['base'], provas: ['TEOT'], anos: [2026] }), '1 assunto(s) · TEOT · 2026')
+
     // ---------- Unidades: junção de respostas, conciliação da sessão, marcas, recusas ----------
     {
       const a = { c: false, q: 1000, tentativas: 1, acertos: 0, erros: 1, p: 'B', m: 'B', historico: [{ em: 1000, correta: false, confianca: 'seguro' }] }
