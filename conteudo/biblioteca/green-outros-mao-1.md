@@ -1,6 +1,6 @@
 ---
 id: green-outros-mao-1
-versao: 1
+versao: 2
 titulo: Outros temas da mão (1): cotovelo traumático, leito ungueal, vias do rádio e anestesia local
 especialidade: mao
 acesso: gratis
@@ -476,10 +476,10 @@ O teste continua para dizer qual flexor está curto: com o punho mantido em exte
 | Flexão passiva da interfalângica proximal maior com a metacarpofalângica fletida do que estendida | Encurtamento dos intrínsecos (teste de BUNNELL) |
 !fim
 
-!questoes central=mao-1364 relacionadas=mao-1409
-conceito: A paralisia cerebral é uma lesão cerebral irreversível e não progressiva, embora as deformidades do membro progridam. O ângulo de VOLKMANN é medido com o punho e os dedos em extensão, em relação à borda dorsal do antebraço, e quantifica o encurtamento dos flexores dos dedos.
-como: A USP-SP 2025 perguntou em que posição se mede o ângulo de VOLKMANN na paralisia cerebral; a USP-SP 2024 pediu a definição da lesão cerebral, combinando reversível ou irreversível com progressiva ou não progressiva.
-armadilha: Medir com os dedos fletidos (isso relaxa os flexores e mede só o punho) ou em relação à borda volar; chamar a lesão de progressiva porque as contraturas pioram.
+!questoes central=mao-1409
+conceito: A paralisia cerebral é uma lesão cerebral irreversível e não progressiva, embora as deformidades do membro progridam.
+como: A USP-SP 2024 pediu a definição da lesão cerebral, combinando reversível ou irreversível com progressiva ou não progressiva.
+armadilha: Chamar a lesão de progressiva porque as contraturas pioram; o que progride é a consequência no membro, não a lesão do cérebro.
 !fim
 
 # Fechamento {radar=fundamento}
