@@ -1,6 +1,6 @@
 ---
 id: green-deficiencias-longitudinais
-versao: 2
+versao: 3
 titulo: Deficiências longitudinais e mão torta
 especialidade: mao
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12, o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 22, e o HEBERT (Ortopedia e Traumatologia, 5ª ed.), cap. 6
 capitulo: Capítulo 38 · Malformations and Deformities of the Wrist and Forearm (com os capítulos 35, 36 e 37)
 autores: Michelle A. James e Andrea S. Bauer (cap. 38); Scott H. Kozin (caps. 35 e 37); Simon P. Kay, David B. McCombe e Scott H. Kozin (cap. 36)
-fonte: Livros conferidos localmente em 09/11/2026 e revistos em 18/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 38 inteiro (p. 1328 a 1364: deficiência radial, deficiência ulnar, MADELUNG, deficiência transversa, luxação congênita da cabeça do rádio, sinostose radioulnar proximal, pseudartrose congênita da ulna e do rádio e exostose múltipla hereditária, com a lista de referências impressa), cap. 37 (p. 1289 a 1302), cap. 36 (p. 1244 a 1247 e 1255 a 1259) e cap. 35 (p. 1209 a 1214); Campbell's Operative Orthopaedics, 15ª ed., cap. 85 (seções da deficiência radial e da deformidade de MADELUNG), só para o sexo na MADELUNG e a artéria interóssea comum; Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12 (p. 334 a 346); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 22 (p. 931 a 940, aproximadas); HEBERT (Sizínio), Ortopedia e Traumatologia, 5ª ed., cap. 6 (quadros 6.1 e 6.6, tabela 6.1 e figuras 6.19 a 6.35). Estudos citados pela lista de referências do capítulo 38 ou conferidos no PubMed em 18/11/2026, com o PMID no corpo do texto. O panorama das malformações e as classificações do Tachdjian para a sinostose ficam no resumo green8-malformacoes-congenitas.
-subtemas: Deficiências longitudinais e mão torta
-resumo: BAYNE e KLUG modificada (N, 0, 1 rádio distal mais de 2 mm curto, 2 hipoplasia distal e proximal com fise, 3 fise distal ausente, 4 rádio ausente); só um terço é isolada (HOLT-ORAM, TAR com polegar presente, FANCONI com quebra cromossômica, VACTERL); nervo radial ausente abaixo do cotovelo, mediano sempre presente, artéria radial ausente; distração antes da centralização, cotovelo rígido como contraindicação, VILKKI no tipo 4, alongamento da ulna a 1 mm por dia com infecção de pinos; BLAUTH (IIIA reconstrói, IIIB, IV e V policizam); deficiência ulnar (unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia, BAYNE II parcial, COLE e MANSKE D sem polegar, anlage só com progressão, osteotomia do úmero na mão no flanco); MADELUNG (fise palmar e ulnar, VICKERS, LERI-WEILL, fisiólise e cúpula, ulna na artrose); deficiência transversa (antebraço proximal, misoprostol); luxação congênita da cabeça do rádio (47% anterior, 43% posterior, 10% lateral, 60% com outras anomalias, ressecção só no maduro com dor); sinostose radioulnar proximal (60% bilateral, 40% acima de 60 graus de pronação, CLEARY e OMER, derrotação, 85 graus); pseudartrose da ulna (70% NF, tecido fibroso, fíbula vascularizada cedo); exostose múltipla (fise ulnar distal, MASADA, grampo radial).
+fonte: Livros conferidos localmente em 09/11/2026 e revistos em 18/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 38 inteiro (p. 1328 a 1364: deficiência radial, deficiência ulnar, MADELUNG, deficiência transversa, luxação congênita da cabeça do rádio, sinostose radioulnar proximal, pseudartrose congênita da ulna e do rádio e exostose múltipla hereditária, com a lista de referências impressa), cap. 37 (p. 1289 a 1302), cap. 36 (p. 1244 a 1247 e 1255 a 1259) e cap. 35 (p. 1209 a 1214); Campbell's Operative Orthopaedics, 15ª ed., cap. 85 (seções da deficiência radial e da deformidade de MADELUNG), só para o sexo na MADELUNG e a artéria interóssea comum; Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12 (p. 334 a 346); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 22 (p. 931 a 940, aproximadas); HEBERT (Sizínio), Ortopedia e Traumatologia, 5ª ed., cap. 6 (quadros 6.1 e 6.6, tabela 6.1 e figuras 6.19 a 6.35). Estudos citados pela lista de referências do capítulo 38 ou conferidos no PubMed em 18/11/2026, com o PMID no corpo do texto. Revisão de 18/11/2026 (versão 3): Green 7, cap. 37 relido para o polegar (p. 1289 a 1304 e 1320 a 1325: exame e normas, BLAUTH, oponentoplastia com o flexor superficial, policização, polegar em gatilho e polegar aduzido congênito), com o Campbell's Operative Orthopaedics, 15ª ed., cap. 85, nas seções do polegar em gatilho e do polegar na palma, e a Tabela 32.5 (HOUSE) do cap. 32 do Green 7. O panorama das malformações e as classificações do Tachdjian para a sinostose ficam no resumo green8-malformacoes-congenitas.
+subtemas: Deficiências longitudinais e mão torta; Outras malformações congênitas; Dedo em gatilho e outras tenossinovites
+resumo: BAYNE e KLUG modificada (N, 0, 1 rádio distal mais de 2 mm curto, 2 hipoplasia distal e proximal com fise, 3 fise distal ausente, 4 rádio ausente); só um terço é isolada (HOLT-ORAM, TAR com polegar presente, FANCONI com quebra cromossômica, VACTERL); nervo radial ausente abaixo do cotovelo, mediano sempre presente, artéria radial ausente; distração antes da centralização, cotovelo rígido como contraindicação, VILKKI no tipo 4, alongamento da ulna a 1 mm por dia com infecção de pinos; BLAUTH (colateral ULNAR no II, carpometacarpal decide: IIIA reconstrói e IIIB, IV e V policizam; flexor superficial do anelar na oponentoplastia; MCF em hiperextensão, um terço da força e 95% de uso na policização); polegar em gatilho da criança (adquirido, 25 a 30% bilateral, nódulo de NOTTA proximal à A1, SUGIMOTO I a IV, resolução espontânea, liberação aberta com o nervo digital radial em risco); polegar aduzido congênito (McCARROLL e MIH, MASA, órtese antes de 12 meses, extensor próprio do indicador); deficiência ulnar (unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia, BAYNE II parcial, COLE e MANSKE D sem polegar, anlage só com progressão, osteotomia do úmero na mão no flanco); MADELUNG (fise palmar e ulnar, VICKERS, LERI-WEILL, fisiólise e cúpula, ulna na artrose); deficiência transversa (antebraço proximal, misoprostol); luxação congênita da cabeça do rádio (47% anterior, 43% posterior, 10% lateral, 60% com outras anomalias, ressecção só no maduro com dor); sinostose radioulnar proximal (60% bilateral, 40% acima de 60 graus de pronação, CLEARY e OMER, derrotação, 85 graus); pseudartrose da ulna (70% NF, tecido fibroso, fíbula vascularizada cedo); exostose múltipla (fise ulnar distal, MASADA, grampo radial).
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 38 (Malformations and Deformities of the Wrist and Forearm) do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Michelle A. JAMES e Andrea S. BAUER, lido de ponta a ponta. Os capítulos 35 (embriologia), 36 (mão em fenda e simbraquidactilia) e 37 (hipoplasia do polegar e policização) do mesmo livro entram onde a deficiência longitudinal os exige. Os complementos são o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12), o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 22), o HEBERT (cap. 6) e, em dois pontos, o Campbell's Operative Orthopaedics, 15ª ed. (cap. 85). O panorama de todas as malformações congênitas da mão, com as classificações gerais e as síndromes vizinhas, está no resumo green8-malformacoes-congenitas; aqui o foco é estreito e fundo: o antebraço e o punho da criança.
+Este resumo é inspirado no capítulo 38 (Malformations and Deformities of the Wrist and Forearm) do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Michelle A. JAMES e Andrea S. BAUER, lido de ponta a ponta. Os capítulos 35 (embriologia), 36 (mão em fenda e simbraquidactilia) e 37 (hipoplasia do polegar, policização, polegar em gatilho da criança e polegar aduzido congênito) do mesmo livro entram onde a deficiência longitudinal os exige; o polegar duplicado e o trifalângico, do mesmo capítulo 37, estão no resumo Sindactilia e polidactilia. Os complementos são o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12), o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 22), o HEBERT (cap. 6) e, em dois pontos, o Campbell's Operative Orthopaedics, 15ª ed. (cap. 85). O panorama de todas as malformações congênitas da mão, com as classificações gerais e as síndromes vizinhas, está no resumo green8-malformacoes-congenitas; aqui o foco é estreito e fundo: o antebraço e o punho da criança.
 
 ## A ideia que amarra o capítulo
 
@@ -39,7 +39,8 @@ O SIMÃO e a SBCM tiram deste capítulo questões curtas, de abertura incompleta
 - **MADELUNG**, com o ligamento de VICKERS e o tratamento por idade e dor;
 - **luxação congênita da cabeça do rádio** e **sinostose radioulnar proximal**, as duas famílias que mais caem no SIMÃO depois da MADELUNG;
 - **pseudartrose congênita da ulna** e **exostose múltipla hereditária**;
-- a **deficiência transversa**, curta.
+- a **deficiência transversa**, curta;
+- o **polegar** do capítulo 37: BLAUTH (colateral ulnar, IIIA contra IIIB), policização, **polegar em gatilho** da criança (SUGIMOTO, incidência, história natural) e **polegar aduzido congênito** (McCARROLL e MIH, órtese, extensor próprio do indicador).
 
 > **Na prova:** BAYNE **2 = hipoplasia distal e proximal**, **3 = fise distal ausente**, **4 = rádio ausente**; só **um terço** é isolada; **TAR = rádio ausente com polegar presente**; **mediano sempre presente**, **radial ausente** abaixo do cotovelo; **cotovelo rígido** contraindica centralizar; **VILKKI = tipo 4 radial**; deficiência ulnar **unilateral e sem doença sistêmica**; MADELUNG = **fise palmar e ulnar do rádio**, VICKERS do **semilunar à metáfise**; cabeça do rádio **anterior 47%, posterior 43%, lateral 10%**; sinostose **bilateral em 60%**, cirurgia acima de **60 graus de pronação**; pseudartrose da ulna = **70% neurofibromatose**; exostose = **fise ulnar distal**.
 
@@ -386,10 +387,95 @@ A reconstrução dos tipos II e IIIA trata cada peça que falta (Green, p. 1292 
 
 O HEBERT descreve os mesmos tipos e cita um degrau a mais, o **IIIC** de BUCK-GRAMCKO, em que só a cabeça do primeiro metacarpo existe, difícil de separar do tipo IV.
 
-!questoes central=mao-0659 treino=mao-1720
+!questoes central=mao-0659 treino=mao-1720,mao-3596,mao-3599,mao-3614,mao-3624
 conceito: BLAUTH modificada por MANSKE: o tipo IIIB tem os achados do II mais anomalias extrínsecas e carpometacarpal instável, com a base do metacarpo afilada, e o tratamento é a policização; IIIA, com carpometacarpal estável, é reconstruído.
 como: O SIMÃO 2026 (simulado) deu a criança sem tenares, com metacarpofalângica instável, tendões extrínsecos anômalos e metacarpo sem a base, e pediu tipo e conduta; a FMRP-USP 2026 perguntou a indicação no tipo IIIB.
 armadilha: Indicar oponentoplastia com reconstrução do ligamento colateral ulnar no IIIB (é a conduta do II e do IIIA) ou transferência de dedo do pé no polegar flutuante.
+!fim
+
+## Como medir um polegar pequeno
+
+A hipoplasia grave salta aos olhos no berçário, pela assimetria. A leve engana: a criança pinça, pega e brinca, e só quando as tarefas finas aparecem (abotoar, digitar, amarrar o cadarço) alguém percebe que aquele polegar trabalha menos. É comum a família chegar com a história de um trauma recente, que apenas revelou o que já existia (Green, cap. 37, p. 1289).
+
+Para não depender da impressão, o Green dá referências simples, todas comparadas com o indicador do mesmo lado: a ponta de um polegar normal alcança mais ou menos a altura logo proximal à interfalângica proximal do indicador; a circunferência do polegar é cerca de **133%** da do indicador, e a largura da unha, cerca de **105%** (GOLDFARB). Um polegar mais curto, mais fino e de unha estreita do que isso é hipoplásico, mesmo que a mãe diga que ele "sempre foi assim".
+
+O exame segue a ordem da classificação, porque cada degrau dela é uma estrutura que falta:
+
+- **comprimento e circunferência**, contra o indicador e contra o outro lado;
+- **estabilidade e mobilidade** de três articulações: carpometacarpal, metacarpofalângica e interfalângica;
+- **intrínsecos tenares**: a eminência tenar existe? a criança faz abdução palmar e oposição?
+- **extrínsecos**: há flexão ativa da interfalângica (flexor longo)? extensão ativa da metacarpofalângica (extensor curto) e da interfalângica (extensor longo)?
+
+A instabilidade da metacarpofalângica ou da carpometacarpal muda o algoritmo inteiro (p. 1289 e 1290). A primeira se reconstrói; a segunda decide entre manter o polegar e trocá-lo pelo indicador.
+
+## O tipo II e o colateral que importa
+
+O tipo II é o primeiro em que a criança perde função de verdade, e a banca o descreve sempre pelos mesmos três achados: tenares intrínsecos ausentes, primeira comissura estreita e **ligamento colateral ULNAR** da metacarpofalângica insuficiente (Tabela 37.2, p. 1290). A troca de ULNAR por radial é a pegadinha mais repetida da família (o SIMÃO 2020 escreveu a alternativa errada assim).
+
+Por que o ulnar? Porque é ele que segura a pinça. Quando o polegar aperta um objeto contra o indicador, a força empurra a falange proximal para o lado radial, abrindo o lado ulnar da articulação. Um colateral ulnar frouxo faz a metacarpofalângica ceder em valgo a cada pinça, e o polegar perde a firmeza justamente no gesto que define a mão humana. É o mesmo raciocínio do polegar do esquiador no adulto, só que aqui o ligamento nasceu fraco. A instabilidade pode ser **global** (ulnar e radial), e então o tratamento muda (ver adiante).
+
+Os músculos que faltam também têm lógica: são os do **ramo recorrente do mediano** (abdutor curto, oponente e cabeça superficial do flexor curto). A **cabeça profunda do flexor curto**, do nervo ulnar, costuma existir e ainda flete a metacarpofalângica; por isso o polegar do tipo II não é um polegar paralisado, é um polegar que não abduz nem opõe. E a comissura engana o examinador: como a metacarpofalângica instável cai em valgo, a falange proximal se afasta do indicador e a primeira comissura parece mais larga do que é (p. 1290). O jeito de não errar é estabilizar a metacarpofalângica com a mão e só então medir o ângulo da comissura.
+
+## IIIA ou IIIB: o alicerce
+
+O tipo III acrescenta duas coisas ao II: **anomalias dos extrínsecos** (extensor longo, extensor curto ou flexor longo ausentes ou hipoplásicos, o que se vê pela falta de movimento ativo da metacarpofalângica e da interfalângica) e **deficiência esquelética**. A subdivisão de MANSKE pergunta uma coisa só: a **carpometacarpal** é estável? Não é a metacarpofalângica, que já falha no tipo II; é a base do raio, onde o polegar faz a circundução. Trocar CMC por MCF é a armadilha clássica desse degrau.
+
+A carpometacarpal é o alicerce porque todo o resto do polegar trabalha apoiado nela. Uma oponentoplastia puxa o raio para a frente; um colateral reconstruído segura a pinça; mas se a base gira solta sobre o carpo, a força de qualquer transferência se perde na base, e o polegar colapsa ao primeiro aperto. Por isso o Green fala da casa sem alicerce e registra que as tentativas heroicas de refazer a carpometacarpal tiveram resultado pior que a policização (p. 1290).
+
+O que o exame mostra é, no fundo, a decisão já tomada pela própria criança. Com a base instável, ela **ignora o polegar** e pinça **em tesoura** entre o indicador e o médio; com o uso, o indicador **prona** e a comissura entre indicador e médio **alarga** (p. 1290 e 1291). O indicador começa a se comportar como um polegar antes de qualquer cirurgia, e é isso que torna a policização tão natural nessas mãos. O SIMÃO 2014 cobrou exatamente esse comportamento num caso clínico.
+
+A radiografia tem limite de idade: o **trapézio e a base do primeiro metacarpo só ossificam por volta dos 6 anos**. Na hipoplasia grave da carpometacarpal, a base do metacarpo **afila em ponta** e o metacarpo proximal falta (Fig. 37.3, p. 1291), mas esse sinal não aparece no III leve. Ultrassom e ressonância mostram a cartilagem; o Green, porém, considera o **exame repetido** tão confiável quanto eles. O HEBERT acrescenta o **IIIC** de BUCK-GRAMCKO, em que só resta a cabeça do metacarpo e a fronteira com o tipo IV fica tênue.
+
+## O polegar flutuante e a ausência
+
+No **tipo IV**, o pouce flottant, o que sobra do polegar fica preso à mão por uma **ponte estreita de pele** que leva um **único feixe neurovascular**; não há esqueleto que o ligue ao carpo nem músculo que o mova. O dedo é mole, balança e a criança não o usa (Fig. 37.4, p. 1291). O **tipo V** é a ausência, às vezes com um botão de pele no lugar. Nos dois, não há o que reconstruir: a indicação é a policização do indicador, desde que ele seja adequado. A diferença prática com o IIIB está num detalhe da técnica: no IIIB o polegar retirado ainda tem gordura vascularizada aproveitável para encher a comissura ou a eminência tenar; no IV e no V isso não existe (p. 1295).
+
+É nessa hora que muitos pais pedem para manter o polegar, mesmo inútil, ou perguntam por um dedo do pé. O Green trata disso com a frase que resume o capítulo: **a função vence a forma**. Um polegar reconstruído a partir de uma estrutura sem base dá um apêndice pequeno e magro; o indicador policizado dá um polegar que a criança usa. Quando a família hesita, os autores entregam uma lista de pais que já tomaram a mesma decisão, e a conversa entre famílias costuma pesar mais que a do cirurgião (p. 1292).
+
+## Hipoplasia do polegar na deficiência ulnar
+
+O polegar hipoplásico não é exclusivo da deficiência radial. Ele aparece também na **deficiência ulnar** (Fig. 37.5), e o tratamento é o mesmo, com pequenas diferenças no desenho da pele da policização (p. 1291 e 1292). O Green amplia as indicações: um polegar **menor que o dedo mínimo** já pode justificar a policização, porque a pinça entre dois dedos tão desproporcionais não funciona. A deficiência ulnar tem sua própria classificação pelo polegar e pela comissura (COLE e MANSKE), tratada mais adiante neste resumo.
+
+## A conduta por tipo e a regra de CARTER
+
+O Green resume a conduta em três degraus (p. 1292):
+
+- **tipo I**: em geral nada, porque o prejuízo é desprezível;
+- **tipos II e IIIA**: cirurgia para dar estabilidade, movimento e função, mantendo o polegar;
+- **tipos IIIB, IV e V**: policização do indicador, **se o indicador for adequado**. Um **indicador rígido vira um polegar rígido** e pode não melhorar nada.
+
+Peter CARTER deixou uma regra que o Green adota com uma emenda: algumas cirurgias são feitas "na" criança, mas não necessariamente "para" ela. Os autores ajustaram a frase para dizer que a operação precisa ser feita na criança **e** para a criança. Na prática, é a pergunta a fazer antes de qualquer indicação neste capítulo: o que esta criança vai ganhar no uso da mão? O **terapeuta de mão** entra cedo, não para tratar sem cirurgia (há pouco a fazer assim), mas para apoiar a família na decisão e, depois, como peça central da reabilitação (p. 1292).
+
+## A reconstrução do tipo II e do IIIA, peça por peça
+
+Reconstruir significa tratar as três falhas do tipo II na mesma cirurgia: comissura, metacarpofalângica e oposição. Deixar uma delas para trás compromete as outras duas.
+
+**A comissura.** A **zetaplastia em quatro retalhos** alonga a pele contraída e dá um contorno arredondado à comissura, com ganho teórico de **150%** no comprimento. Por baixo da pele, libera-se a fáscia que envolve o adutor, depois de identificar e proteger a **artéria principal do polegar** (princeps pollicis). Se a comissura for muito apertada, solta-se parte do adutor e do primeiro interósseo dorsal (p. 1292).
+
+**A metacarpofalângica.** O achado mais comum é a instabilidade unidirecional por **colateral ulnar incompetente**. O Green prefere reconstruí-lo com a **sobra do tendão da oponentoplastia**, e não com tecido local. Na instabilidade **global**, reconstruir os dois colaterais com enxerto é possível, mas os autores preferem a **condrodese** da metacarpofalângica, que dá uma plataforma firme para a transferência trabalhar (p. 1292). Antes de reconstruir, procura-se o **pollex abductus**: uma conexão anômala entre o flexor longo e o extensor longo que, a cada tentativa de fletir a interfalângica, empurra a metacarpofalângica em valgo e vai afrouxando o colateral ulnar. Se não for liberado na mesma cirurgia, ele estira de novo o ligamento reconstruído.
+
+**A oposição.** Os doadores possíveis são o **flexor superficial** do médio ou do anelar, o **abdutor do dedo mínimo** (HUBER), o **extensor ulnar do carpo** e o **extensor próprio do indicador**. O Green prefere o **flexor superficial do médio ou do anelar**, por cinco razões que valem para qualquer transferência: comprimento, força, dispensabilidade, sinergia e facilidade técnica (p. 1292).
+
+A técnica do Box 37.1 (p. 1292 a 1295) mostra como uma transferência resolve dois problemas de uma vez:
+
+- o flexor superficial do **anelar** é cortado na base do dedo e puxado para o antebraço;
+- a **polia** é feita com a metade radial dos 2 a 3 cm distais do **flexor ulnar do carpo**, deixada presa ao pisiforme e dobrada em alça; ela dá ao tendão a direção do pisiforme para o polegar, que é a linha da oposição;
+- o tendão passa por um túnel subcutâneo até a face radial da metacarpofalângica;
+- um túnel transversal é aberto na cabeça do metacarpo; um fio longitudinal fixa a metacarpofalângica;
+- a tensão é ajustada com o punho em leve extensão até o polegar ficar em oposição; o tendão deve levantar a pele como uma tenda (efeito tenodese);
+- a **sobra do tendão** atravessa a cabeça do metacarpo e reconstrói o **colateral ulnar** na base da falange proximal;
+- gesso axilopalmar incluindo o polegar por **3 semanas**, depois órtese curta, e proteção até **3 meses**.
+
+Um detalhe de sala que o capítulo registra: o preparo com **clorexidina alcoólica** é preferido ao iodo, porque elimina melhor as bactérias e evita a queimadura do iodo que escorre sob o garrote.
+
+## O que a reconstrução entrega
+
+Quando cada peça é tratada, o resultado do tipo II e do IIIA é bom. Alguma **rigidez da metacarpofalângica** depois da reconstrução do colateral é inevitável e importa pouco, desde que a interfalângica e a carpometacarpal se movam (p. 1300 e 1301). Nos graus mais altos, as tentativas de refazer tendões, alongar o osso e estabilizar a base deram resultado pobre em comparação com a policização. Há famílias que, por razão cultural ou pessoal, exigem cinco dedos; elas podem aceitar esse resultado menor, desde que avisadas.
+
+!questoes treino=mao-2156,mao-2158,mao-2090
+conceito: BLAUTH separa o polegar que se reconstrói (II e IIIA: comissura com zetaplastia em quatro retalhos, colateral ULNAR com a sobra do tendão, oponentoplastia com o flexor superficial do anelar ou do médio) do que se troca pelo indicador (IIIB, IV e V), e o divisor é a estabilidade da carpometacarpal.
+como: A SBCM 2022 (simulado) descreveu o polegar sem tenares, com deficiência esquelética e carpometacarpal estável e pediu o tipo; perguntou em quais tipos se policiza; a SBCM 2024 (simulado) pediu o doador preferido da oponentoplastia.
+armadilha: Confundir a carpometacarpal (que separa IIIA de IIIB) com a metacarpofalângica (que já falha no tipo II), trocar o colateral ulnar pelo radial ou escolher o abdutor do mínimo como doador preferido.
 !fim
 
 # A policização {radar=confirmado}
@@ -424,11 +510,191 @@ O fio sai com 4 semanas, e a tala protege por 3 meses. O resultado depende do in
 
 O HEBERT descreve a técnica pelos quatro princípios de BUCK-GRAMCKO, com as mesmas ideias e pequenas diferenças: osteotomia no **colo** do metacarpo, cabeça girada em 90 graus de extensão, 45 de abdução e 120 de pronação, veias dorsais principais mantidas e ligadura do ramo arterial que vai para o terceiro dedo. Quanto à idade, os livros não concordam: o HEBERT fala em antes dos 2 anos, o Lovell and Winter em reconstrução do polegar antes dos 18 meses (pelo aprendizado da pinça), e o Tachdjian (p. 342) em policização **depois** dos 2 anos.
 
-!questoes central=mao-1562
-conceito: Na policização, o corte distal do segundo metacarpo passa pela fise (epifisiodese); a artéria digital radial do dedo médio é ligada de rotina; as veias dorsais são preservadas; o primeiro interósseo dorsal vira abdutor e o primeiro palmar vira adutor.
-como: A USP-SP 2026 pediu a afirmação correta sobre a policização, misturando o nível da ressecção, o destino dos interósseos, a ligadura arterial e o cuidado com as veias.
+!questoes central=mao-1562 relacionadas=mao-1372 treino=mao-2157,mao-3594,mao-3595,mao-3597,mao-3615,mao-3623
+conceito: Na policização, o corte distal do segundo metacarpo passa pela fise (epifisiodese); a metacarpofalângica do indicador é fixada em hiperextensão; a artéria digital radial do dedo médio é ligada de rotina; as veias dorsais são preservadas; o primeiro interósseo dorsal vira abdutor e o primeiro palmar vira adutor.
+como: A USP-SP 2026 e a USP-SP 2025 pediram a afirmação correta sobre a policização, misturando o nível da ressecção, o destino dos interósseos, a ligadura arterial e o cuidado com as veias; a SBCM 2022 (simulado), a posição da metacarpofalângica.
 armadilha: Trocar os interósseos (o dorsal é abdutor, o palmar é adutor) ou achar que a ligadura da artéria do terceiro dedo é rara: ela é o passo que libera o pedículo.
 !fim
+
+## Por que cada passo da policização existe
+
+A lista de passos fica fácil de guardar quando se lembra o objetivo: transformar um dedo de três falanges, que se move num plano, num polegar de duas falanges e um metacarpo, que gira e se opõe. Cada articulação do indicador sobe um degrau de função (a tabela acima), e cada passo técnico resolve um problema criado por essa troca.
+
+- **Encurtar pelo metacarpo.** O indicador é longo demais para ser polegar. Retirar o metacarpo inteiro, da base até a epífise, faz da cabeça o novo trapézio. O corte distal **pela fise** é o que impede o novo polegar de continuar crescendo como metacarpo: sem essa epifisiodese, o polegar policizado fica longo com os anos, uma das complicações tardias do capítulo (Fig. 37.38, p. 1303).
+- **Hiperestender a metacarpofalângica.** A metacarpofalângica do indicador, que agora é a carpometacarpal do polegar, tem hiperextensão natural; uma carpometacarpal normal não tem. Se nada for feito, o polegar novo hiperestende na base a cada pinça. Suturar a cabeça em **hiperextensão**, pela epífise e pela cápsula dorsal, deixa a cabeça do metacarpo em flexão e bloqueia esse movimento (Fig. 37.27, p. 1299). É a posição que a SBCM 2022 (simulado) cobrou.
+- **Abdução e pronação.** O raio é posicionado com a epífise à frente da base, em **45 graus de abdução** e **100 a 120 graus de pronação**, porque a polpa do polegar precisa encontrar a polpa dos outros dedos; um indicador apenas deslocado para a borda radial faria pinça lateral, não oposição. O fio de Kirschner entra anterógrado como joystick e depois é passado retrógrado até o carpo.
+- **Não encurtar os tendões.** Os flexores e extensores ficam longos demais depois do encurtamento ósseo, mas se adaptam com o tempo. O que se faz é abrir a **polia A1** do indicador, para que os flexores frouxos não dobrem em arco.
+- **Transferir os interósseos.** O primeiro interósseo dorsal, preso à banda lateral radial, passa a abduzir o polegar (vira o abdutor curto); o primeiro interósseo palmar, na banda lateral ulnar, passa a aduzir (vira o adutor) (p. 1297; Fig. 37.32). O extensor próprio do indicador faz o papel do extensor longo, e o extensor comum, o do abdutor longo.
+- **Ligar a digital do médio.** A digital comum da segunda comissura se divide em digital ulnar do indicador e digital radial do médio. Enquanto essa bifurcação existir, o indicador fica amarrado ao médio e não sobe. Clipar a **artéria digital própria do lado radial do médio** solta o pedículo e permite a transposição sem tensão; o novo polegar fica nutrido pela digital radial do indicador e pela digital comum (p. 1295). Os nervos digitais próprios se separam por microdissecção; uma alça neural que abrace a artéria é alargada, ou a menor das duas partes é cortada.
+- **Preservar as veias dorsais.** Ao levantar a pele dorsal, cada veia preservada conta, porque o problema mais comum do pós-operatório imediato é a **congestão venosa**, não a falta de fluxo arterial.
+
+No fim, solta-se o garrote e observa-se o dedo por cinco minutos. O **espasmo arterial** cede com tempo, compressas mornas e lidocaína tópica; a **congestão venosa**, mais frequente, melhora afrouxando o curativo e soltando pontos. Gesso macio axilopalmar com o cotovelo fletido além de 100 graus (para a criança não tirar), uma noite de internação, fio retirado com 4 semanas, órtese curta e proteção até 3 meses (p. 1299).
+
+Uma nota de leitura do livro: nos pontos críticos (p. 1304) o Green escreve "ligadura da artéria digital radial ao polegar", mas a técnica descrita no passo a passo (p. 1295) liga a digital própria do lado radial do **médio**. A versão do passo a passo é a que faz sentido anatômico e a que as bancas cobram.
+
+## Quando policizar
+
+A idade da cirurgia **não mostrou mudar o resultado funcional** (p. 1303). Dois argumentos puxam em sentidos opostos: a **plasticidade cortical** favorece operar cedo, quando o cérebro ainda organiza o mapa da mão e incorpora o novo polegar com facilidade; o **tamanho das estruturas** limita a cirurgia muito precoce, porque vasos e nervos minúsculos aumentam o risco. Os autores operam por volta de **1 a 2 anos** e lembram que a apresentação tardia não contraindica a policização. Os outros livros dão números vizinhos (antes dos 2 anos no HEBERT, antes dos 18 meses no Lovell and Winter, depois dos 2 anos no Tachdjian); a ideia comum é fazer antes de a criança consolidar a pinça em tesoura.
+
+## O que muda o resultado
+
+O polegar policizado é tão bom quanto o indicador de onde veio e a musculatura em volta dele (p. 1301 e 1302). Daí as diferenças que as bancas transformam em alternativas:
+
+- **Hipoplasia isolada do polegar** (antebraço normal) dá resultado melhor que a hipoplasia com **rádio hipoplásico ou ausente**: na deficiência radial, o indicador costuma ser mais rígido e a musculatura do antebraço, mais pobre.
+- **Indicador rígido** vira um poste para a preensão grosseira, sem pinça fina; a criança continua pinçando em tesoura entre o médio e o anelar.
+- A criança que já tinha um **padrão de preensão ulnar** (comum na deficiência radial) tende a mantê-lo e a ignorar o polegar novo.
+- A **mão em espelho** e a **mão de cinco dedos** têm resultados piores.
+
+Os resultados se mantêm até a vida adulta. A força fica em torno de **um terço** de um polegar normal, e cerca de **95%** dos pacientes integram o polegar às tarefas do dia (p. 1302). O polegar policizado costuma ser um pouco **mais longo e mais fino**, e as queixas de aparência giram em torno de espessura, comprimento e angulação (p. 1303). Foi esse o fato cobrado pelo SIMÃO 2019 e pela FMRP 2026 na criança com polegar IIIB.
+
+## As complicações
+
+A perda do dedo por problema vascular é rara, cerca de **0,2%** nas mãos de um cirurgião experiente (Tabela 37.3, p. 1303). As complicações tardias seguem a lógica da técnica:
+
+- **cicatriz da comissura**, que fecha o espaço: retrabalho com zetaplastia ou retalho dorsal;
+- **rigidez**, herdada de um indicador já rígido ou causada pela cicatriz: tenólise;
+- **instabilidade da carpometacarpal**, incomum, mesmo quando a união da cabeça do metacarpo é fibrosa;
+- **má rotação**: osteotomia;
+- **polegar longo** pelo crescimento residual da fise do metacarpo: epifisiodese e encurtamento;
+- **falta de movimento ativo com passivo bom**: os interósseos transferidos não deram conta, e a solução é uma oponentoplastia secundária.
+
+## Por que não refazer a carpometacarpal nem trazer um dedo do pé
+
+A pergunta aparece nas provas antigas: no polegar sem base (IIIB, IV e V), não seria melhor levar tecido do pé e manter cinco dedos? O Green responde nos pontos críticos (p. 1304): a **transferência articular microcirúrgica** para recriar a carpometacarpal no IIIB e no IV foi tentada, e os resultados foram **medíocres** em comparação com a policização. O motivo é o mesmo do alicerce: um dedo do pé ou uma articulação transplantada não traz o conjunto de músculos tenares que faz o polegar girar, e a criança continua com um apêndice que não opõe. A transferência de dedo do pé tem lugar nas deficiências transversas e nas bandas de constrição, em que a base existe e o que falta é comprimento (ver o resumo de amputações e reimplantes).
+
+# Polegar em gatilho da criança {radar=confirmado}
+
+O polegar em gatilho da criança aparece no capítulo 37 do Green (p. 1320 a 1322) ao lado das malformações do polegar, mas é uma condição diferente de tudo o que veio antes: não falta nem sobra estrutura, há só uma **desproporção** entre um tendão e o túnel por onde ele passa. O adulto com dedo em gatilho está no resumo de tenossinovites; aqui fica a criança, que tem outra história natural, outra classificação e outra conduta.
+
+## Congênito é o nome errado
+
+Os livros e as provas chamam de "polegar em gatilho congênito", e o Green explica por que o nome está errado. Três triagens de recém-nascidos, somando milhares de bebês (SLAKEY e HENNRIKUS, 4.719; MOON, 7.700; KIKUCHI e OGINO, 1.116), **não encontraram nenhum caso ao nascer** (p. 1320). A condição surge depois, com o crescimento pós-natal. "Gatilho" também é impreciso: a maioria das crianças chega com a interfalângica em **flexão fixa**, sem estalo nenhum (Fig. 37.78). Como os bebês mantêm o polegar fletido na palma nos primeiros meses, a flexão passa despercebida e a detecção atrasa.
+
+O Campbell 15 ainda trata o quadro como congênito e o separa do polegar aduzido pela articulação que fica fletida: no gatilho é a **interfalângica**, no polegar aduzido é a **metacarpofalângica**. A distinção vale para qualquer livro e resolve muita questão de diagnóstico diferencial.
+
+## Quem tem e quando aparece
+
+- O polegar em gatilho é cerca de **10 vezes mais comum** que o dedo em gatilho na criança (p. 1320).
+- A incidência depende de quem conta: GER achou **1 em 2.000** nascidos vivos, numa amostra pequena; KIKUCHI e OGINO, seguindo as crianças, acharam **3,3 por 1.000** com 1 ano de idade.
+- É **bilateral em 25% a 30%** dos casos.
+
+O Green não fala em sexo nem em herança para o gatilho. Quando uma alternativa traz esses dados, o gabarito sai por eliminação a partir da incidência e da bilateralidade.
+
+## O mecanismo: tendão grande para uma polia normal
+
+O ultrassom mudou o entendimento (p. 1321). O **flexor longo do polegar** tem ecotextura normal, sem sinal de inflamação ou trauma; o que se vê é que a área do tendão **excede a da polia A1**. O gatilho aparece quando essa desproporção existe e some quando ela some, seja porque a polia cresce, seja porque o tendão se acomoda. Isso explica de uma vez a história natural (muitos resolvem sozinhos) e a cirurgia (basta abrir a A1).
+
+O sinal clínico obrigatório é o **nódulo de NOTTA**, o espessamento do flexor longo palpado logo **proximal à polia A1**, na base do polegar. Ele está presente em todos os estágios e é condição sine qua non do diagnóstico; nenhum exame complementar é necessário (p. 1321). O nódulo fica proximal porque é a parte espessada do tendão que não consegue entrar no túnel com a interfalângica fletida.
+
+## SUGIMOTO: os quatro estágios
+
+!tabela Classificação de SUGIMOTO do polegar em gatilho da criança (Green, 7ª ed., cap. 37, p. 1321)
+| Estágio | Nome | O que se vê |
+|---|---|---|
+| I | Tumoral | nódulo de NOTTA palpável, **sem estalo** |
+| II | Gatilho ativo | estalo quando a criança **estende ativamente** a interfalângica |
+| III | Gatilho passivo | a criança **não estende ativamente**; o estalo aparece na **extensão passiva** |
+| IV | Rígido | a interfalângica **não estende nem passivamente**: contratura em flexão fixa |
+!fim
+
+A lógica é a de um nódulo que cresce em relação ao túnel. No I ele existe, mas passa; no II passa com esforço ativo; no III só passa empurrado pelo examinador; no IV não passa mais. Os estágios III e IV são os que o examinador reconhece pelo estalo à extensão passiva ou pela falta dela. A SBCM 2025 perguntou o estágio do polegar que não estende ativamente e estala ao ser estendido pelo examinador (III); a SBCM 2014, o mesmo fato num caso clínico.
+
+## A história natural do gatilho
+
+Os números variam com a idade de entrada e com o tempo de seguimento, e as bancas gostam dessa variação (p. 1321):
+
+- DINHAM e MEGGITT: cerca de **30%** resolvem quando o diagnóstico é feito antes de 1 ano; cerca de **10%** quando feito entre 6 meses e 1 ano;
+- MICHIFURI: pouco mais da metade resolveu em 5,2 anos;
+- SUGIMOTO: mais de um terço;
+- BAEK: **45 de 71 (63%)** resolveram sem tratamento, com mediana de **48 meses**.
+
+A conclusão prática é que esperar é seguro. Esperar até os **3 anos** não piorou a contratura nem o movimento final.
+
+## Tratar sem operar
+
+O alongamento passivo feito pela mãe (WATANABE) melhorou 56 de 58 polegares, sobretudo no estágio I. A **órtese** em extensão também funciona: NEMOTO manteve a interfalângica em hiperextensão nas sonecas e à noite e curou 29 de 40, com só 3 operados; outra série teve 24 de 33 (73%) curados com órtese noturna por cerca de 10 meses; LEE comparou órtese (71% de resolução) com observação (23%) (p. 1321). Funciona pelo mesmo mecanismo da desproporção: manter o tendão deslizando e esticado dá tempo para o túnel e o tendão se acomodarem.
+
+## Quando operar
+
+O Green orienta pela idade e pelo estágio (p. 1321 e 1322):
+
+- **abaixo de 1 ano**: observar;
+- **acima de 1 ano com dor e estágio IV**: operar;
+- **estágios II e III acima de 1 ano**: conservador ou cirurgia, conforme a família;
+- na instituição dos autores, a maioria das crianças acima de 1 ano com gatilho persistente é operada.
+
+## A liberação: simples, com um nervo no caminho
+
+A cirurgia é feita sob **anestesia geral**, com garrote e lupa. A incisão é **transversa** sobre a polia A1, na prega da metacarpofalângica, e corta **só a pele**; o resto é afastado no sentido longitudinal. O cuidado central é o **nervo digital radial**, que na criança cruza obliquamente sobre a polia, muito superficial e perto da incisão (Fig. 37.80). Abre-se a A1 e **não se mexe no nódulo**: ele é o tendão, e retirá-lo não tem sentido. Confere-se a excursão do flexor, e a criança sai com gesso macio ou curativo com a interfalângica estendida por uma semana; terapia em geral é desnecessária (p. 1322).
+
+A liberação **percutânea** existe, mas o Green não a oferece: o risco ao nervo digital radial é o mesmo e a criança precisa de anestesia de qualquer jeito, então a vantagem desaparece. O resultado da cirurgia aberta é uniformemente bom, e a recidiva é rara; um gatilho que persiste quase sempre significa **liberação incompleta** da A1. As outras complicações são as da ferida: cicatriz, dormência e **corda de arco** se a polia oblíqua for lesada.
+
+## O dedo em gatilho da criança é outro problema
+
+O dedo em gatilho na criança é incomum e menos simples (p. 1322). Abrir só a A1 muitas vezes não resolve, porque a causa raramente é a desproporção isolada: há relação anômala entre o flexor profundo e o superficial, decussação proximal do superficial, nódulos e polias A2 ou A3 apertadas. A rotina dos autores é abrir também a **A3** e ressecar uma tira do **flexor superficial** (Fig. 37.82). Vários dedos em gatilho numa criança pedem investigação: artrite inflamatória, diabetes juvenil e mucopolissacaridose.
+
+!questoes central=mao-1374 relacionadas=mao-0933,mao-1002,mao-0161 treino=mao-3601,mao-3602,mao-3605,mao-3606,mao-3609,mao-3611,mao-3617,mao-3620,mao-3622
+conceito: O polegar em gatilho da criança é adquirido (triagens de recém-nascidos não acharam casos), isolado, da polia A1, bilateral em 25 a 30%, com nódulo de NOTTA proximal à A1; SUGIMOTO vai do I tumoral ao IV rígido; muitos resolvem até os 3 anos, e a liberação aberta da A1 protege o nervo digital radial.
+como: A USP 2025 pediu a afirmação correta sobre o polegar em gatilho; a UFG 2019, a frequência da bilateralidade; a UFG 2021, a melhor idade de tratamento; o TARO 2016, se a alteração é isolada ou sindrômica e qual polia.
+armadilha: Chamar de congênito presente ao nascer, mexer no nódulo, operar o bebê de meses que ainda pode resolver sozinho, ou trocar a A1 pela A2.
+!fim
+
+# Polegar aduzido congênito (clasped thumb) {radar=clinico}
+
+O polegar aduzido congênito, o clasped thumb (polegar empalmado ou polegar na palma), é o polegar que fica fletido e aduzido contra a palma porque o lado extensor não dá conta. O Green o trata no fim do capítulo 37 (p. 1324 e 1325). É um espectro: vai de uma simples deficiência do extensor, que se resolve com órtese, até polegares com tenares anômalos, comissura fechada e pele palmar curta, que pedem cirurgia em vários planos.
+
+## A classificação de McCARROLL e MIH
+
+As classificações antigas (TSUYUGUCHI, WECKESSER) eram inclusivas demais e ajudavam pouco a decidir. O Green usa a de **McCARROLL**, ampliada por **MIH** (p. 1324):
+
+!tabela Polegar aduzido congênito: McCARROLL ampliada por MIH (Green, 7ª ed., cap. 37, p. 1324)
+| Tipo | Nome | O que define | Conduta |
+|---|---|---|---|
+| I | Flexível (supple) | extensor **ausente ou hipoplásico**; articulações e partes moles normais | **órtese** em extensão |
+| II | Complexo | tudo do I mais **contratura articular**, colateral anômalo, **primeira comissura contraída** e tenares anômalos | órtese e gessos para as contraturas, depois cirurgia em vários planos |
+| III | Associado à artrogripose ou a síndromes | o mecanismo extensor pode ter **pouca ou nenhuma anomalia**; a contratura vem da doença de base | tratado como contratura da artrogripose |
+!fim
+
+O tipo III é o que mais confunde. Como o problema está na artrogripose ou na síndrome, e não no tendão, o extensor pode ser quase normal; por isso o Green o remete à seção de contraturas. Entre as síndromes, ele cita a **MASA**, cuja sigla em inglês junta retardo mental, afasia, marcha arrastada (shuffling gait) e polegares aduzidos (adducted thumbs); é ligada ao X (Fig. 37.85). As outras síndromes que algumas provas antigas trouxeram como alternativa (FREEMAN-SHELDON, WAARDENBURG) não aparecem no capítulo.
+
+O Campbell 15 usa a classificação de TSUYUGUCHI com o mesmo desenho em três grupos (flexível, complexo e com artrogripose) e diz que o quadro pode ser ligado ao X, mais em meninos e bilateral. Os nomes mudam; o raciocínio é o mesmo.
+
+## O exame: qual articulação não estende
+
+O polegar empalmado tem **déficit de extensão**, e a articulação que não estende diz qual tendão falta (p. 1324):
+
+- déficit só na **metacarpofalângica**, o padrão mais comum = hipoplasia do **extensor curto**;
+- déficit também na **interfalângica** = o **extensor longo** também é deficiente;
+- **metacarpo aduzido** ao mesmo tempo = insuficiência do **abdutor longo**.
+
+O diagnóstico **atrasa** por um motivo fisiológico: todo bebê segura o polegar na palma nos primeiros 3 a 4 meses. O polegar aduzido só fica evidente quando os outros bebês já abriram a mão, e é aí que a família ou o pediatra estranham.
+
+## A órtese primeiro
+
+No tipo I, a primeira conduta é a **órtese em extensão** das articulações afetadas. Ela funciona porque mantém o extensor fraco na posição curta, sem ser esticado pelo flexor a cada momento; protegido, ele não se atenua e pode se hipertrofiar. Usada em tempo integral por **2 a 6 meses**, é eficaz (p. 1324).
+
+O tempo de início pesa muito. MIURA, em 96 mãos, teve bons resultados em **70%** quando a órtese começou **até os 12 meses**, em **21%** quando começou depois de 1 ano e em **nenhum** caso depois dos 2 anos. LIN teve 15 resultados excelentes e 2 bons em 17 polegares. O Campbell descreve um esquema parecido: órtese em extensão e abdução trocada a cada 6 semanas, por 3 a 6 meses.
+
+## Quando operar e o que a cirurgia busca
+
+A cirurgia entra quando a órtese falha ou quando a criança chega **depois dos 2 anos** (p. 1324 e 1325). Antes de indicar, pesa-se o prejuízo real: um **déficit leve da metacarpofalângica não atrapalha** a função, e adolescentes nunca tratados vivem sem queixa (Fig. 37.86).
+
+Os objetivos da cirurgia, nos pontos críticos do Green (p. 1325), são dois: **corrigir as contraturas de partes moles** e **aumentar a extensão com uma transferência**. "Restaurar a abdução" não é o objetivo descrito, e a banca usa essa troca como distrator.
+
+**As contraturas.** Contratura da metacarpofalângica ou da comissura se trata primeiro com gessos ou órteses seriados; o que sobrar entra na cirurgia. No tipo I, liberar pele e subcutâneo costuma bastar. A comissura se abre com **zetaplastia em quatro retalhos** ou **retalho dorsal de rotação e avanço**; a falta de pele palmar na metacarpofalângica pede um retalho rotacional, como o retalho dorsal modificado de GHANI (p. 1325).
+
+**A transferência.** O extensor curto em geral existe, mas é fino. O doador de primeira escolha é o **extensor próprio do indicador**, que tem o comprimento, a direção e a sinergia certos para estender a metacarpofalângica; ele pode faltar nessas mãos, e então as alternativas são o **flexor superficial** ou o **abdutor do dedo mínimo**. O tendão é fixado no extensor atenuado, na base da falange proximal ou nos dois. Pós-operatório: gesso axilopalmar com a metacarpofalângica em extensão por **4 semanas**, depois órtese curta e flexão ativa gradual; a órtese fica só à noite a partir de **6 semanas** e sai com **12 semanas** (p. 1325).
+
+## Não confundir com o polegar na palma espástico
+
+O polegar na palma da **paralisia cerebral** tem outra causa (espasticidade, não falta de extensor) e outra classificação, a de **HOUSE** (Green 7, cap. 32, Tabela 32.5, p. 1107): tipo 1, adução simples do metacarpo; tipo 2, adução com flexão da metacarpofalângica; tipo 3, adução com hiperextensão ou instabilidade da metacarpofalângica; tipo 4, adução com deformidade da metacarpofalângica e da interfalângica, envolvendo o flexor longo. O SIMÃO 2019 colocou HOUSE ao lado das questões do polegar aduzido congênito; o assunto pertence às paralisias e transferências tendinosas.
+
+!questoes treino=mao-2464,mao-2515
+conceito: Polegar aduzido congênito: McCARROLL e MIH, I flexível (extensor ausente ou hipoplásico), II complexo (contraturas, colateral, comissura e tenares), III com artrogripose ou síndrome (MASA), extensor às vezes normal; órtese primeiro, melhor antes de 12 meses; cirurgia corrige contraturas e reforça a extensão com o extensor próprio do indicador.
+como: O SIMÃO 2022 (simulado) pediu a afirmação correta sobre o diagnóstico tardio e a metacarpofalângica; o SIMÃO 2021 (simulado) descreveu o polegar rígido, com contraturas, colaterais anormais, comissura fechada e tenares anômalos, e pediu o tipo (II).
+armadilha: Achar que o diagnóstico se faz ao nascer (todo bebê segura o polegar até 3 a 4 meses), operar antes de tentar a órtese, dizer que o objetivo é restaurar a abdução ou confundir com o polegar espástico de HOUSE.
+!fim
+
 
 # Deficiência ulnar: o avesso da radial {radar=confirmado}
 
@@ -965,7 +1231,7 @@ O método dos autores junta tudo (p. 1362): grampos, ressecção do osteocondrom
 
 Parte das questões de banca foi escrita com a 8ª edição do Green, com o Campbell ou com material de curso. Onde as fontes divergem, este resumo segue o Green 7 e registra a diferença, para que você reconheça a questão pela fonte.
 
-!tabela Divergências registradas no capítulo 38 (Green 7)
+!tabela Divergências registradas nos capítulos 37 e 38 (Green 7)
 | Ponto | Outra fonte | Green 7 | Como ler na prova |
 |---|---|---|---|
 | VILKKI | Questão antiga: "mão torta ulnar" | Deficiência **radial tipo 4** (p. 1329) | Seguir o Green |
@@ -978,6 +1244,12 @@ Parte das questões de banca foi escrita com a 8ª edição do Green, com o Camp
 | Pseudartrose da ulna | Curso: neuromas no coto | Causa desconhecida, tecido **fibroso**, sem neurofibroma na maioria (p. 1354) | Seguir o Green |
 | Lesão de BESSEL-HAGEN | Nome usado para a deformidade do antebraço na exostose múltipla | Termo ausente; o Green descreve a parada da fise ulnar distal (p. 1358) | Reconhecer o quadro pela descrição |
 | Coalizão do carpo mais frequente | SBCM 2025 (semilunar-piramidal) | Fora do capítulo; o Green só cita a coalizão do carpo como associação da sinostose e no carpo da deficiência radial | O gabarito oficial vale como está |
+| Ligadura na policização | Pontos críticos do Green: "artéria digital radial ao polegar" (p. 1304) | Passo a passo: digital própria do lado radial do **médio** (p. 1295) | Seguir o passo a passo |
+| Idade da policização | HEBERT antes dos 2 anos; Lovell and Winter antes dos 18 meses; Tachdjian depois dos 2 anos | 1 a 2 anos; a idade não mudou o resultado (p. 1303) | Seguir o Green |
+| Polegar em gatilho | Campbell 15: congênito | Adquirido: nenhum caso nas triagens de recém-nascidos (p. 1320) | "Congênito" é o nome de uso; o fato é que não está presente ao nascer |
+| Polegar aduzido: classificação | Campbell 15: TSUYUGUCHI em três grupos; órtese 3 a 6 meses | McCARROLL ampliada por MIH; órtese 2 a 6 meses (p. 1324) | Os três grupos coincidem; usar o nome que a questão der |
+| FREEMAN-SHELDON e WAARDENBURG no polegar aduzido | Provas antigas do SIMÃO | Ausentes; o Green só cita artrogripose e MASA (p. 1324) | Gabarito sem fonte local |
+| Transferência do pé no polegar ausente | Curso: IIIB, IV e V | Policização nesses tipos; transferência articular microcirúrgica medíocre (p. 1304) | Seguir o Green |
 | Green 8 citado pela SBCM 2025 | p. 1496, 1500, 1508, 1518, 1524 | Os mesmos fatos nas p. 1330, 1334, 1344, 1351 e 1357 | Sem conflito |
 !fim
 
@@ -991,6 +1263,8 @@ O capítulo se resolve com quatro perguntas feitas na ordem.
 
 **O que a criança usa?** O cotovelo rígido, o indicador duro e a preensão pelo lado ulnar mandam não mexer no punho radial; o polegar sem base estável manda policizar; a mão da deficiência ulnar manda operar a mão e deixar o antebraço em paz; a MADELUNG indolor e a sinostose unilateral não se operam.
 
+**E o polegar?** Primeiro, falta ou sobra? Se falta, a carpometacarpal decide entre reconstruir (II e IIIA) e trocar pelo indicador (IIIB, IV e V). Se nada falta e o polegar está preso em flexão, a articulação diz o que é: interfalângica fletida com nódulo na base é o gatilho, que tende a resolver sozinho; metacarpofalângica fletida e metacarpo aduzido é o polegar aduzido, que começa pela órtese.
+
 **A cirurgia muda posição ou promete movimento?** As que mudam posição funcionam: centralização, osteotomia do úmero, osteotomia derrotativa, cúpula na MADELUNG, grampo na exostose. As que prometem um movimento que nunca existiu falham: ressecar a sinostose, liberar a sinostose do cotovelo, reduzir a cabeça do rádio congênita.
 
-> **Na prova:** mão torta radial = **falha de formação longitudinal pré-axial**, **bilateral e assimétrica**; BAYNE **0 = carpo anormal com rádio normal**, **1 = distal mais de 2 mm curto**, **2 = hipoplasia distal e proximal**, **3 = fise distal ausente**, **4 = rádio ausente**; só **um terço** é isolada; **TAR = rádio ausente com polegar presente**; **mediano sempre presente**, **radial ausente**; **distração** antes da centralização; **cotovelo rígido** contraindica; **VILKKI = tipo 4**; antebraço unilateral 3 e 4 com **metade** do comprimento; alongamento da ulna a **1 mm por dia em 2 ou 3 vezes**, complicação mais comum = **infecção de pinos**; BLAUTH **IIIB, IV e V policizam**; deficiência ulnar **unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia**, BAYNE **II = ausência parcial**, COLE e MANSKE **D = sem polegar**, anlage **só com progressão**, mão no flanco = **osteotomia do úmero**; MADELUNG = **fise palmar e ulnar**, **VICKERS do semilunar à metáfise**, **LERI-WEILL dominante 50%**, desvio ulnar e extensão diminuídos, **cúpula** com RUD íntegra, **ressecção da ulna** com artrose da RUD; transversa = **antebraço proximal**, **misoprostol**; cabeça do rádio **47% anterior, 43% posterior, 10% lateral**, **60% com outras anomalias**, posterior **perde extensão**, ressonância com **cabeça intracapsular**, ressecção **só no maduro com dor**; sinostose **60% bilateral**, **40% acima de 60 graus**, CLEARY e OMER **1 não óssea**, **3 posterior**, **4 anterior em cogumelo**, unilateral **0 a 15 graus de pronação**, risco acima de **85 graus**, menos de 30 graus = **só o rádio distal**; pseudartrose = **70% NF**, **tecido fibroso**, **fíbula vascularizada cedo**, **LANGENSKIÖLD contra o valgo**; exostose = **igual nos sexos, mais grave no homem**, **fise ulnar distal**, MASADA **1 o mais comum**, **grampo no lado radial**.
+> **Na prova:** mão torta radial = **falha de formação longitudinal pré-axial**, **bilateral e assimétrica**; BAYNE **0 = carpo anormal com rádio normal**, **1 = distal mais de 2 mm curto**, **2 = hipoplasia distal e proximal**, **3 = fise distal ausente**, **4 = rádio ausente**; só **um terço** é isolada; **TAR = rádio ausente com polegar presente**; **mediano sempre presente**, **radial ausente**; **distração** antes da centralização; **cotovelo rígido** contraindica; **VILKKI = tipo 4**; antebraço unilateral 3 e 4 com **metade** do comprimento; alongamento da ulna a **1 mm por dia em 2 ou 3 vezes**, complicação mais comum = **infecção de pinos**; BLAUTH **IIIB, IV e V policizam**; deficiência ulnar **unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia**, BAYNE **II = ausência parcial**, COLE e MANSKE **D = sem polegar**, anlage **só com progressão**, mão no flanco = **osteotomia do úmero**; MADELUNG = **fise palmar e ulnar**, **VICKERS do semilunar à metáfise**, **LERI-WEILL dominante 50%**, desvio ulnar e extensão diminuídos, **cúpula** com RUD íntegra, **ressecção da ulna** com artrose da RUD; transversa = **antebraço proximal**, **misoprostol**; cabeça do rádio **47% anterior, 43% posterior, 10% lateral**, **60% com outras anomalias**, posterior **perde extensão**, ressonância com **cabeça intracapsular**, ressecção **só no maduro com dor**; sinostose **60% bilateral**, **40% acima de 60 graus**, CLEARY e OMER **1 não óssea**, **3 posterior**, **4 anterior em cogumelo**, unilateral **0 a 15 graus de pronação**, risco acima de **85 graus**, menos de 30 graus = **só o rádio distal**; pseudartrose = **70% NF**, **tecido fibroso**, **fíbula vascularizada cedo**, **LANGENSKIÖLD contra o valgo**; exostose = **igual nos sexos, mais grave no homem**, **fise ulnar distal**, MASADA **1 o mais comum**, **grampo no lado radial**; polegar: BLAUTH II = **colateral ULNAR**, IIIA x IIIB = **carpometacarpal**, base do metacarpo **afilada** e ossificação só aos **6 anos**, oponentoplastia com **flexor superficial do anelar** e polia no **flexor ulnar do carpo**, policização com **epifisiodese**, MCF em **hiperextensão**, **45 graus de abdução e 100 a 120 de pronação**, **digital radial do médio ligada**, **1º DI = abdutor curto**, **1º PI = adutor**, força de **um terço** e uso em **95%**, perda vascular **0,2%**; gatilho = **adquirido**, **10 vezes** mais que o dedo, **25 a 30% bilateral**, **NOTTA proximal à A1**, SUGIMOTO **III = estala na extensão passiva**, **IV = rígido**, resolução de **30 a 63%**, esperar até **3 anos** é seguro, **nervo digital radial**; dedo em gatilho infantil = **A3 e tira do superficial**; polegar aduzido = McCARROLL e MIH **I flexível**, **II complexo**, **III artrogripose ou MASA**, só MCF = **extensor curto**, órtese **até 12 meses (70%)**, cirurgia **depois dos 2 anos**, doador = **extensor próprio do indicador**.
