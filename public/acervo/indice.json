@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-11-19T02:21:57-03:00",
-  "total": 9668,
+  "geradoEm": "2026-11-19T02:22:04-03:00",
+  "total": 9671,
   "temas": [
     {
       "slug": "mao",
@@ -13,7 +13,7 @@
       "slug": "ombro-cotovelo",
       "nome": "Ombro e cotovelo",
       "arquivo": "temas/ombro-cotovelo.json",
-      "total": 618
+      "total": 621
     },
     {
       "slug": "quadril",
@@ -73024,6 +73024,59 @@
       ],
       "p": 17,
       "a": 2009,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0737",
+      "t": 1,
+      "s": [
+        55,
+        48
+      ],
+      "p": 19,
+      "a": 2015,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0738",
+      "t": 1,
+      "s": [
+        48
+      ],
+      "p": 19,
+      "a": 2025,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0739",
+      "t": 1,
+      "s": [
+        48,
+        62
+      ],
+      "p": 17,
+      "a": 2020,
       "d": null,
       "img": 0,
       "an": 0,
