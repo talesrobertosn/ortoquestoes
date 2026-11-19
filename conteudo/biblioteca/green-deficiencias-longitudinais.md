@@ -633,7 +633,7 @@ A liberação **percutânea** existe, mas o Green não a oferece: o risco ao ner
 
 O dedo em gatilho na criança é incomum e menos simples (p. 1322). Abrir só a A1 muitas vezes não resolve, porque a causa raramente é a desproporção isolada: há relação anômala entre o flexor profundo e o superficial, decussação proximal do superficial, nódulos e polias A2 ou A3 apertadas. A rotina dos autores é abrir também a **A3** e ressecar uma tira do **flexor superficial** (Fig. 37.82). Vários dedos em gatilho numa criança pedem investigação: artrite inflamatória, diabetes juvenil e mucopolissacaridose.
 
-!questoes central=mao-1374 relacionadas=mao-0933,mao-1002,mao-0161 treino=mao-3601,mao-3602,mao-3605,mao-3606,mao-3609,mao-3611,mao-3617,mao-3620,mao-3622
+!questoes central=mao-1374 relacionadas=mao-0933,mao-1002,mao-0061 treino=mao-3601,mao-3602,mao-3605,mao-3606,mao-3609,mao-3611,mao-3617,mao-3620,mao-3622
 conceito: O polegar em gatilho da criança é adquirido (triagens de recém-nascidos não acharam casos), isolado, da polia A1, bilateral em 25 a 30%, com nódulo de NOTTA proximal à A1; SUGIMOTO vai do I tumoral ao IV rígido; muitos resolvem até os 3 anos, e a liberação aberta da A1 protege o nervo digital radial.
 como: A USP 2025 pediu a afirmação correta sobre o polegar em gatilho; a UFG 2019, a frequência da bilateralidade; a UFG 2021, a melhor idade de tratamento; o TARO 2016, se a alteração é isolada ou sindrômica e qual polia.
 armadilha: Chamar de congênito presente ao nascer, mexer no nódulo, operar o bebê de meses que ainda pode resolver sozinho, ou trocar a A1 pela A2.

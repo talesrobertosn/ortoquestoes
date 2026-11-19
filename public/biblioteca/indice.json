@@ -11389,15 +11389,15 @@
   },
   {
    "id": "green-deficiencias-longitudinais",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Deficiências longitudinais e mão torta",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12, o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 22, e o HEBERT (Ortopedia e Traumatologia, 5ª ed.), cap. 6",
    "capitulo": "Capítulo 38 · Malformations and Deformities of the Wrist and Forearm (com os capítulos 35, 36 e 37)",
-   "resumo": "BAYNE e KLUG modificada (N, 0, 1 rádio distal mais de 2 mm curto, 2 hipoplasia distal e proximal com fise, 3 fise distal ausente, 4 rádio ausente); só um terço é isolada (HOLT-ORAM, TAR com polegar presente, FANCONI com quebra cromossômica, VACTERL); nervo radial ausente abaixo do cotovelo, mediano sempre presente, artéria radial ausente; distração antes da centralização, cotovelo rígido como contraindicação, VILKKI no tipo 4, alongamento da ulna a 1 mm por dia com infecção de pinos; BLAUTH (IIIA reconstrói, IIIB, IV e V policizam); deficiência ulnar (unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia, BAYNE II parcial, COLE e MANSKE D sem polegar, anlage só com progressão, osteotomia do úmero na mão no flanco); MADELUNG (fise palmar e ulnar, VICKERS, LERI-WEILL, fisiólise e cúpula, ulna na artrose); deficiência transversa (antebraço proximal, misoprostol); luxação congênita da cabeça do rádio (47% anterior, 43% posterior, 10% lateral, 60% com outras anomalias, ressecção só no maduro com dor); sinostose radioulnar proximal (60% bilateral, 40% acima de 60 graus de pronação, CLEARY e OMER, derrotação, 85 graus); pseudartrose da ulna (70% NF, tecido fibroso, fíbula vascularizada cedo); exostose múltipla (fise ulnar distal, MASADA, grampo radial).",
+   "resumo": "BAYNE e KLUG modificada (N, 0, 1 rádio distal mais de 2 mm curto, 2 hipoplasia distal e proximal com fise, 3 fise distal ausente, 4 rádio ausente); só um terço é isolada (HOLT-ORAM, TAR com polegar presente, FANCONI com quebra cromossômica, VACTERL); nervo radial ausente abaixo do cotovelo, mediano sempre presente, artéria radial ausente; distração antes da centralização, cotovelo rígido como contraindicação, VILKKI no tipo 4, alongamento da ulna a 1 mm por dia com infecção de pinos; BLAUTH (colateral ULNAR no II, carpometacarpal decide: IIIA reconstrói e IIIB, IV e V policizam; flexor superficial do anelar na oponentoplastia; MCF em hiperextensão, um terço da força e 95% de uso na policização); polegar em gatilho da criança (adquirido, 25 a 30% bilateral, nódulo de NOTTA proximal à A1, SUGIMOTO I a IV, resolução espontânea, liberação aberta com o nervo digital radial em risco); polegar aduzido congênito (McCARROLL e MIH, MASA, órtese antes de 12 meses, extensor próprio do indicador); deficiência ulnar (unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia, BAYNE II parcial, COLE e MANSKE D sem polegar, anlage só com progressão, osteotomia do úmero na mão no flanco); MADELUNG (fise palmar e ulnar, VICKERS, LERI-WEILL, fisiólise e cúpula, ulna na artrose); deficiência transversa (antebraço proximal, misoprostol); luxação congênita da cabeça do rádio (47% anterior, 43% posterior, 10% lateral, 60% com outras anomalias, ressecção só no maduro com dor); sinostose radioulnar proximal (60% bilateral, 40% acima de 60 graus de pronação, CLEARY e OMER, derrotação, 85 graus); pseudartrose da ulna (70% NF, tecido fibroso, fíbula vascularizada cedo); exostose múltipla (fise ulnar distal, MASADA, grampo radial).",
    "acesso": "gratis",
-   "minutos": 85,
+   "minutos": 113,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11438,6 +11438,16 @@
      "id": "a-policizacao",
      "titulo": "A policização",
      "radar": "confirmado"
+    },
+    {
+     "id": "polegar-em-gatilho-da-crianca",
+     "titulo": "Polegar em gatilho da criança",
+     "radar": "confirmado"
+    },
+    {
+     "id": "polegar-aduzido-congenito-clasped-thumb",
+     "titulo": "Polegar aduzido congênito (clasped thumb)",
+     "radar": "clinico"
     },
     {
      "id": "deficiencia-ulnar-o-avesso-da-radial",
@@ -11517,6 +11527,11 @@
     "mao-1233",
     "mao-0659",
     "mao-1562",
+    "mao-1372",
+    "mao-1374",
+    "mao-0933",
+    "mao-1002",
+    "mao-0061",
     "mao-0842",
     "mao-1140",
     "mao-1009",
@@ -11544,6 +11559,30 @@
     "mao-3409",
     "mao-3405",
     "mao-1720",
+    "mao-3596",
+    "mao-3599",
+    "mao-3614",
+    "mao-3624",
+    "mao-2156",
+    "mao-2158",
+    "mao-2090",
+    "mao-2157",
+    "mao-3594",
+    "mao-3595",
+    "mao-3597",
+    "mao-3615",
+    "mao-3623",
+    "mao-3601",
+    "mao-3602",
+    "mao-3605",
+    "mao-3606",
+    "mao-3609",
+    "mao-3611",
+    "mao-3617",
+    "mao-3620",
+    "mao-3622",
+    "mao-2464",
+    "mao-2515",
     "mao-2246",
     "mao-2006",
     "mao-2160",
@@ -11602,7 +11641,9 @@
     "mao-3399"
    ],
    "subtemas": [
-    "Deficiências longitudinais e mão torta"
+    "Deficiências longitudinais e mão torta",
+    "Outras malformações congênitas",
+    "Dedo em gatilho e outras tenossinovites"
    ]
   },
   {
@@ -15805,15 +15846,15 @@
   },
   {
    "id": "green-sindactilia-polidactilia",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Sindactilia e polidactilia",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Campbell's Operative Orthopaedics, 15ª ed., o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., e o HEBERT",
    "capitulo": "Capítulo 36 · Deformities of the Hand and Fingers",
-   "resumo": "Falha da apoptose interdigital mediada por BMP; simples, complexa (sinoníquia), complicada, completa e incompleta; 1:2.000, bilateral em 50%, meninos 2:1, família em 10 a 40%; isolada na 3ª comissura (57%) e na 4ª (27%), 1ª e 2ª nas sindrômicas; borda cedo, centrais após 18 meses; um lado do dedo por vez; comissura com retalho dorsal e sem enxerto; BUCK-GRAMCKO; web creep; APERT (UPTON, KELLAM, FGFR2), POLAND e acrossindactilia (PATTERSON 3); pós-axial (A e B, negros, AD de penetrância variável, síndrome no branco), central (anular, bilateral, sinpolidactilia, HOXD13, STELLING e TUREK), mão em espelho (duas ulnas, sem polegar, AL-QATTAN, policizar o dedo radial mais móvel), epidermólise bolhosa (pseudossindactilia, recidiva acima de 50%) e polegar (WASSEL IV, preservar o ulnar, abdutor curto com o colateral radial, BILHAUT-CLOQUET nos I e II simétricos).",
+   "resumo": "Falha da apoptose interdigital mediada por BMP; simples, complexa (sinoníquia), complicada, completa e incompleta; 1:2.000, bilateral em 50%, meninos 2:1, família em 10 a 40%; isolada na 3ª comissura (57%) e na 4ª (27%), 1ª e 2ª nas sindrômicas; borda cedo, centrais após 18 meses; um lado do dedo por vez; comissura com retalho dorsal e sem enxerto; BUCK-GRAMCKO; web creep; APERT (UPTON, KELLAM, FGFR2), POLAND e acrossindactilia (PATTERSON 3); pós-axial (A e B, negros, AD de penetrância variável, síndrome no branco), central (anular, bilateral, sinpolidactilia, HOXD13, STELLING e TUREK), mão em espelho (duas ulnas, sem polegar, AL-QATTAN, policizar o dedo radial mais móvel), epidermólise bolhosa (pseudossindactilia, recidiva acima de 50%) e polegar (WASSEL IV, preservar o ulnar, abdutor curto com o colateral radial, BILHAUT-CLOQUET nos I e II simétricos, BAEK extra-articular nos II e III, colaterais críticos nos II, IV e VI, ponte cartilaginosa que reclassifica, faceta esquecida); polegar trifalângico (AD de alta penetrância, observar a falange extra, ápice ulnar, falange grande funde a articulação de menos movimento, mão de cinco dedos policiza).",
    "acesso": "gratis",
-   "minutos": 52,
+   "minutos": 64,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15911,6 +15952,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "o-polegar-trifalangico",
+     "titulo": "O polegar trifalângico",
+     "radar": "clinico"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -15957,7 +16003,8 @@
     "mao-0976",
     "mao-1371",
     "mao-1561",
-    "mao-0416"
+    "mao-0416",
+    "mao-0458"
    ],
    "treino": [
     "mao-2471",
@@ -15991,6 +16038,8 @@
     "mao-2284",
     "mao-2001",
     "mao-2533",
+    "mao-3603",
+    "mao-3612",
     "mao-2881",
     "mao-2910",
     "mao-2925",
@@ -16010,7 +16059,18 @@
     "mao-2923",
     "mao-2950",
     "mao-2007",
-    "mao-2375"
+    "mao-3607",
+    "mao-3598",
+    "mao-3600",
+    "mao-3613",
+    "mao-3616",
+    "mao-3618",
+    "mao-3619",
+    "mao-2375",
+    "mao-3604",
+    "mao-3608",
+    "mao-3610",
+    "mao-3621"
    ],
    "subtemas": [
     "Sindactilia e polidactilia"
