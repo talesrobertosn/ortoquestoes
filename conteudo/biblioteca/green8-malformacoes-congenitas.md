@@ -1,6 +1,6 @@
 ---
 id: green8-malformacoes-congenitas
-versao: 6
+versao: 7
 titulo: Malformações congênitas da mão e do antebraço
 especialidade: mao
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com a 8ª traduzida
 capitulo: Capítulos 35 a 38 · Mão pediátrica, com o Tachdjian (caps. 12, 21 e 35)
 autores: Green: Scott H. Kozin (caps. 35 e 37), David McCombe e Francisco Soldado (cap. 36), Michelle A. James e Andrea S. Bauer (cap. 38). Tachdjian: John A. Herring e colaboradores
-fonte: Livros conferidos localmente em 31/10/2026. Green 7ª ed. em inglês, caps. 35 a 38 (p. 1208 a 1362), com as notas do Green 8ª ed. traduzido conferidas em 30/10/2026; Tachdjian 6ª ed., cap. 12 (classificações de SWANSON e OMT, deficiências radial e ulnar, sinostose radioulnar, SPRENGEL, MADELUNG, polidactilia, sindactilia, macrodactilia e banda congênita), cap. 21 (FRANTZ e O'RAHILLY) e cap. 35 (distrofia fascioescapuloumeral). Revisão de 17/11/2026 só das partes do cap. 36 do Green 7 (p. 1217 a 1288, com a lista de referências do capítulo, p. 1285 a 1288): ausência de dedos, banda de constrição, simbraquidactilia, mão em fenda, transferências de falange e de dedo do pé e macrodactilia aprofundadas; sindactilia, APERT, polidactilia e dedos curtos e tortos resumidos aqui e aprofundados nos resumos green-sindactilia-polidactilia e green-deformidades-dedos.
+fonte: Livros conferidos localmente em 31/10/2026. Green 7ª ed. em inglês, caps. 35 a 38 (p. 1208 a 1362), com as notas do Green 8ª ed. traduzido conferidas em 30/10/2026; Tachdjian 6ª ed., cap. 12 (classificações de SWANSON e OMT, deficiências radial e ulnar, sinostose radioulnar, SPRENGEL, MADELUNG, polidactilia, sindactilia, macrodactilia e banda congênita), cap. 21 (FRANTZ e O'RAHILLY) e cap. 35 (distrofia fascioescapuloumeral). Revisão de 19/11/2026 da embriologia pelo Green 7, cap. 35 (Embryology of the Upper Extremity, p. 1208 a 1216), com o Lovell and Winter 7ª ed., cap. 1, e estudos com PMID conferido no PubMed. Revisão de 17/11/2026 só das partes do cap. 36 do Green 7 (p. 1217 a 1288, com a lista de referências do capítulo, p. 1285 a 1288): ausência de dedos, banda de constrição, simbraquidactilia, mão em fenda, transferências de falange e de dedo do pé e macrodactilia aprofundadas; sindactilia, APERT, polidactilia e dedos curtos e tortos resumidos aqui e aprofundados nos resumos green-sindactilia-polidactilia e green-deformidades-dedos.
 subtemas: Outras malformações congênitas
-resumo: Embriologia (AER, ZPA e Wnt; janela de 4 a 8 semanas) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER e camptodactilia em panorama; ausência de dedos transversal e longitudinal; banda de constrição (PATTERSON, um anel de cada vez); simbraquidactilia (nubbins, YAMAUCHI e TANABU, nervo radial presente); mão em fenda (MANSKE e HALIKIS pela primeira comissura, fenda em V contra U, SNOW-LITTLER); transferência de falange (RADOCHA, antes dos 15 meses) e de dedo do pé (segundo artelho, CMC estável); macrodactilia (FLATT I a IV, indicador, divergência, palmar e distal, epifisiodese no comprimento do genitor, amputação do raio cedo); deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.
+resumo: Embriologia (broto aos 26 dias, janela de 4 a 8 semanas, marcos da Tabela 35.1, placa lateral e mesoderma somático, vaso marginal e nervos, AER e FGF, ZPA e sonic hedgehog, AL-QATTAN, Wnt7a, Lmx-1 e Engrailed-1, apoptose por BMP e APERT, blastemas e interzonas, artrogripose, HOX e T-box, CDMP) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER e camptodactilia em panorama; ausência de dedos transversal e longitudinal; banda de constrição (PATTERSON, um anel de cada vez); simbraquidactilia (nubbins, YAMAUCHI e TANABU, nervo radial presente); mão em fenda (MANSKE e HALIKIS pela primeira comissura, fenda em V contra U, SNOW-LITTLER); transferência de falange (RADOCHA, antes dos 15 meses) e de dedo do pé (segundo artelho, CMC estável); macrodactilia (FLATT I a IV, indicador, divergência, palmar e distal, epifisiodese no comprimento do genitor, amputação do raio cedo); deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -25,38 +25,377 @@ As malformações da mão parecem uma coleção de nomes próprios: APERT, UPTON
 
 A mão da criança ensina uma regra que vale para tudo o que vem a seguir: a deformidade muitas vezes é a adaptação que a criança encontrou. Antes de corrigir a forma, pergunte que função ela está garantindo.
 
-> **Na prova:** ZPA = eixo radioulnar = polidactilia e mão em espelho. Janela de 4 a 8 semanas. Sindactilia = 3ª comissura; 1ª e 4ª separadas cedo. APERT tipo II de UPTON = colher; primeiro passo = primeira comissura. PATTERSON 3 = acrossindactilia. WASSEL IV = o mais comum = EZAKI I. Mão torta radial: mediano superficial; cotovelo rígido = não centralizar. Sinostose em neutro = não operar; acima de 60 graus de pronação = osteotomia; complicação = síndrome compartimental. MADELUNG = VICKERS, meninas, bilateral, adolescência. KRUKENBERG separa rádio e ulna. Ausência **transversal** de dedos (banda, simbraquidactilia) = estruturas proximais presentes = dedo do pé; **longitudinal** = policização. Fenda: **MANSKE e HALIKIS** pela primeira comissura. Macrodactilia: **FLATT I lipofibromatose**, indicador, amputação do raio cedo na progressiva.
+> **Na prova:** broto aos 26 dias; dedos separados com 52 a 53 dias; placa lateral = osso, cartilagem e tendão; somático = músculo, nervo e vaso. AER = FGF = comprimento = deficiência transversa; ZPA = sonic hedgehog = eixo radioulnar = polidactilia e mão em espelho; Wnt = dorsoventral = unha-patela. BMP dispara a apoptose interdigital. Janela de 4 a 8 semanas. Sindactilia = 3ª comissura; 1ª e 4ª separadas cedo. APERT tipo II de UPTON = colher; primeiro passo = primeira comissura. PATTERSON 3 = acrossindactilia. WASSEL IV = o mais comum = EZAKI I. Mão torta radial: mediano superficial; cotovelo rígido = não centralizar. Sinostose em neutro = não operar; acima de 60 graus de pronação = osteotomia; complicação = síndrome compartimental. MADELUNG = VICKERS, meninas, bilateral, adolescência. KRUKENBERG separa rádio e ulna. Ausência **transversal** de dedos (banda, simbraquidactilia) = estruturas proximais presentes = dedo do pé; **longitudinal** = policização. Fenda: **MANSKE e HALIKIS** pela primeira comissura. Macrodactilia: **FLATT I lipofibromatose**, indicador, amputação do raio cedo na progressiva.
 
-# A embriologia e o broto do membro {radar=confirmado}
+# A embriologia: o relógio do broto {radar=confirmado}
 
-**O relógio.** O Green (cap. 35, Critical Points, p. 1212) fixa a janela: o broto do membro superior aparece por volta da **4ª semana** de gestação e está completo na **8ª semana**. **A maioria das anomalias congênitas do membro acontece nesse intervalo**, de crescimento rápido e frágil. O Tachdjian (cap. 12) concorda (o membro superior se forma entre a 4ª e a 8ª semana pós-ovulatória) e acrescenta que, para a deficiência radial, o insulto parece cair entre a 4ª e a 5ª semana. Depois da 8ª semana começa o período fetal: o membro já tem as suas peças e cresce. O que surge daí em diante tende a ser **deformação**, como as bandas amnióticas, e não falha de organogênese.
+A embriologia do membro superior ocupa um capítulo curto do Green (7ª edição, cap. 35, Embryology of the Upper Extremity, de Scott H. Kozin, p. 1208 a 1216), mas é o capítulo que dá sentido a todos os outros. Quem entende como o broto nasce, cresce e se organiza consegue deduzir por que a mão em espelho é ulnar, por que a deficiência transversa não se repete no próximo filho, por que a sinostose radioulnar é proximal e por que a criança com artrogripose nasce rígida. Esta parte do resumo segue o Green 7 como base, com o Lovell and Winter's Pediatric Orthopaedics (7ª edição, cap. 1, Embryology and Development of the Neuromuscular Apparatus) para os vasos, os nervos e a biologia molecular que o Green só esboça, e com alguns estudos originais conferidos no PubMed.
 
-Os números gerais que o Green 8ª ed. traz ajudam a dar escala: as anomalias congênitas atingem 1 a 3% dos recém-nascidos, e cerca de 10% dessas crianças têm alteração no membro superior; por volta do 53º dia os dedos estão separados.
+## O tamanho do problema
 
-**Os três centros de sinalização.** O broto é organizado por três centros, cada um dono de um eixo.
+As anomalias congênitas atingem **1 a 3% dos recém-nascidos**, e cerca de **10% dessas crianças** têm alguma anomalia do membro superior (Green, cap. 35, p. 1208). As anomalias de membro são o **segundo grupo** de malformações ao nascer, atrás apenas das cardiopatias congênitas, e a incidência praticamente não mudou na última década. O Lovell and Winter (cap. 1, p. 15) dá outro ângulo do mesmo número: as deficiências de membro ocorrem em 3 a 8 por 1.000 nascidos vivos, e **metade vem isolada, metade acompanhada de outras malformações**, algumas com risco de vida (musculoesqueléticas, de cabeça e pescoço, cardiovasculares, digestivas e geniturinárias).
 
-!tabela Os centros de sinalização do broto (Green, cap. 35, p. 1212)
-| Centro | Eixo que controla | Experiência clássica | Malformação típica |
-| --- | --- | --- | --- |
-| **crista ectodérmica apical** (AER) | **proximodistal**, do ombro à ponta dos dedos | retirar a crista interrompe o membro no nível correspondente; fatores de crescimento de fibroblastos no lugar dela salvam o membro | **deficiência transversal** |
-| **zona de atividade polarizadora** (ZPA), pela **sonic hedgehog** | **anteroposterior**, isto é, **radioulnar** | transplantar a ZPA (ou pôr sonic hedgehog) na borda anterior gera **duplicação em espelho** do lado ulnar | **polidactilia**, mão em espelho, polegar trifalângico |
-| centro **Wnt** (dorsal) | **dorsoventral**, do dorso para a palma | sem o sinal dorsal, a ponta do dedo vira palma dos dois lados | **síndrome unha-patela**, dimelia dorsal ou ventral |
+Duas ideias desse parágrafo caem em prova e mudam a conversa no consultório. A primeira: a maioria das anomalias é **espontânea ou herdada**, e **poucas** são atribuídas a teratógenos. A segunda: como o membro se forma ao mesmo tempo que o coração, o rim, a coluna e o sangue, a mão às vezes é só a parte visível de um problema sistêmico. É por isso que a criança com deficiência radial sai do consultório com pedido de ecocardiograma e hemograma, e a com deficiência ulnar, não (ver adiante, nas considerações sistêmicas).
+
+O Green abre o capítulo com uma frase sobre o papel do cirurgião: ele fica entre o cuidado clínico e a pesquisa genética, e precisa entender a embriologia para explicá-la à família. Os pais costumam chegar com muita **culpa** ("foi o remédio que tomei", "foi a queda"), e cabe ao médico que acompanha a criança desfazer esse peso com informação verdadeira.
+
+## Do grão de arroz ao feijão: a cronologia
+
+O broto do membro superior é visto aos **26 dias após a fertilização**, quando o embrião mede cerca de **4 mm** (comprimento cabeça-nádega), o tamanho de um grão de arroz (Green, cap. 35, p. 1208). O Lovell and Winter (cap. 1, p. 9) descreve a mesma cena: uma pequena elevação na parede ventrolateral do corpo, na altura do abaulamento do pericárdio; o broto do membro inferior aparece **2 dias depois**, logo abaixo do cordão umbilical, e segue o mesmo caminho com um pequeno atraso. Nesse momento o tubo neural já está fechado e todos os somitos estão presentes. A regra que decorre disso é útil: **o membro superior está sempre um pouco à frente do inferior**, e as perguntas que comparam os dois quase sempre têm o superior como o mais precoce.
+
+O broto cresce rápido até o **47º dia**, quando o embrião mede perto de **20 mm** (um feijão-de-lima). Com **52 a 53 dias**, o embrião tem 22 a 24 mm e os **dedos estão totalmente separados**. Com **8 semanas**, a embriogênese termina e **todas as estruturas do membro estão presentes** (Green, cap. 35, p. 1208).
+
+> **Atenção à divergência interna do Green.** O texto (p. 1208) fala em broto visto aos 26 dias; a Tabela 35.1 (p. 1209), adaptada de O'RAHILLY e GARDNER (1975), põe o primeiro abaulamento na região do broto no **24º dia**. As duas coisas são compatíveis (o abaulamento precede o broto nítido), mas a banca e o site usam **26 dias**, que é o número do texto e do Lovell and Winter.
+
+## A janela de 4 a 8 semanas e o período fetal
+
+O quadro de pontos críticos do Green (cap. 35, p. 1212) resume o que mais cai: a formação do broto começa por volta da **4ª semana** e está completa na **8ª semana**, e **a maioria das anomalias do membro acontece nesse intervalo** de desenvolvimento rápido e frágil.
+
+O porquê é biológico. Entre a 4ª e a 8ª semana, cada célula do broto está recebendo a informação de onde fica (proximal ou distal, radial ou ulnar, dorsal ou palmar) e do que vai ser. Uma agressão nessa fase (genética, vascular ou química) apaga ou distorce uma instrução, e o erro se propaga para tudo o que é construído depois. Depois da 8ª semana começa o **período fetal**: não surgem estruturas novas, apenas **diferenciação, maturação e crescimento** das que já existem. Um insulto nessa fase pode deformar, comprimir ou amputar, mas não cria uma mão em espelho nem apaga um raio.
+
+Daí a distinção que organiza a classificação OMT: **malformação** é erro da organogênese (janela de 4 a 8 semanas); **deformação** é força mecânica sobre um membro já pronto, como a banda de constrição. O Tachdjian (cap. 12) acrescenta que, na deficiência radial, o insulto parece cair entre a 4ª e a 5ª semana, ainda no começo da janela.
+
+Na prática, essa janela responde a uma pergunta frequente de gestantes: a exposição a um medicamento na 14ª semana, por exemplo, já não tem como causar uma falha de formação da mão, porque o membro está completo desde a 8ª semana. O raciocínio inverso também vale: quando há malformações em vários membros, o momento da agressão provavelmente foi o começo da janela, e um teratógeno passa a ser suspeito.
+
+!questoes central=mao-1564 relacionadas=mao-0955,mao-1419 treino=mao-1728,mao-3742,mao-3746,mao-3752
+conceito: O broto do membro superior aparece por volta do 26º dia após a fertilização (4ª semana), a embriogênese termina com 8 semanas, e a maioria das anomalias congênitas do membro superior ocorre entre a 4ª e a 8ª semana; o broto é o mesoderma crescendo para dentro do ectoderma.
+como: A USP-SP 2026 pediu a afirmativa correta sobre a embriogênese (janela de 4 a 8 semanas); a UFG 2020 pediu o dia em que surge o broto (26); a USP-SP 2024 trouxe o broto aos 26 dias como a correta, entre afirmativas que trocavam o sentido do crescimento e os eixos.
+armadilha: Marcar 8 a 12 semanas (já é período fetal), dizer que o membro se forma de distal para proximal ou que o broto é o ectoderma crescendo sobre o mesoderma.
+alerta: A Tabela 35.1 do Green (p. 1209) dá o primeiro abaulamento no 24º dia; o texto (p. 1208) e o Lovell and Winter (cap. 1, p. 9) dão 26 dias, o número das provas.
 !fim
 
-A ZPA merece um parágrafo a mais, porque é a mais cobrada. A sonic hedgehog se espalha em gradiente a partir da borda posterior (ulnar) do broto, e o tempo de exposição define a identidade de cada dedo: o mínimo fica exposto mais tempo, o indicador e o médio, menos. Por isso, quando há sonic hedgehog também na borda anterior, o broto lê dois lados ulnares e faz uma **mão em espelho**, com sete ou oito dedos e sem polegar. O Green lembra que camundongos com sonic hedgehog na borda anterior são **polidáctilos** e que mutações pontuais nessa região causam o **polegar trifalângico**. Genes HOX e T-box completam o quadro molecular: mutações HOX estão por trás da sinpolidactilia e da síndrome mão-pé-genital, o gene SHOX da discondrosteose de LÉRI-WEILL (com MADELUNG), e o TBX5 da síndrome de HOLT-ORAM.
+## Os marcos dia a dia (Tabela 35.1)
+
+A Tabela 35.1 do Green (p. 1209), adaptada de O'RAHILLY e GARDNER (1975), é a fonte dos números que a banca cobra. Vale a pena lê-la como uma história, e não como lista: primeiro aparece o broto, depois a crista que comanda o crescimento, depois o esqueleto em mesênquima, depois cartilagem, e só no fim osso.
+
+!tabela Marcos do membro superior (Green, cap. 35, Tabela 35.1, p. 1209)
+| Semana | Dia | O que acontece |
+| --- | --- | --- |
+| 4ª | 24 | abaulamento na região do broto superior |
+| 4ª | 28 | vasos esparsos no broto (o broto inferior aparece) |
+| 5ª | 32 | **crista ectodérmica apical** do membro superior; **vaso marginal inicial**; **plexo braquial inicial** |
+| 5ª | 33 | **placa da mão**; condensação mesenquimal do úmero |
+| 6ª | 37 | condrificação do úmero; condensações do rádio e da ulna; plexo com **radial, mediano e ulnar até o cotovelo**; massas musculares iniciais |
+| 6ª | 41 | **raios digitais unidos por membrana**; condrificação do rádio, da ulna e dos metacarpos |
+| 7ª | 44 | **apoptose interdigital**; condrificação da escápula, da cabeça do úmero, do carpo e das falanges proximais; trapézio inervado pelo acessório; músculos principais distinguíveis |
+| 7ª | 48 | condrificação das falanges médias; interzonas do ombro e do cotovelo (formação da cavidade articular) |
+| 8ª | 51 | condrificação das falanges distais |
+| 8ª | 52 | **ossificação do úmero e do rádio**; todos os músculos distinguíveis; interzonas do punho e do carpo |
+| 8ª | 54 | **ossificação da ulna** |
+| 8ª | 57 | **ossificação da escápula**; ossificação intramembranosa da ponta da falange distal |
+!fim
+
+Quatro leituras da tabela resolvem quase todas as questões:
+
+1. **Tudo segue de proximal para distal.** O úmero se condensa antes do rádio e da ulna; os metacarpos condrificam antes das falanges proximais, que vêm antes das médias e das distais. É a assinatura da crista ectodérmica apical, que constrói o membro do ombro para a ponta.
+2. **A 6ª semana é a da diferenciação regional.** Com 37 a 41 dias já existem as condensações do úmero, do rádio e da ulna, a placa da mão com os raios digitais e os nervos chegando ao cotovelo; o membro deixa de ser uma pá uniforme e passa a ter braço, antebraço e mão reconhecíveis, com as regiões do cotovelo e do punho identificáveis. É o número que a UFG cobrou duas vezes.
+3. **A mão fica pronta entre o 41º e o 53º dia.** Os raios surgem unidos (41), a apoptose começa (44) e os dedos estão separados (52 a 53). Uma falha nesse intervalo, e só nele, produz a sindactilia.
+4. **A ossificação tem ordem própria.** Úmero e rádio no 52º dia, **ulna no 54º**, escápula no 57º. A ulna ossifica **depois** do rádio, e a alternativa "ulna antes do rádio" é a pegadinha clássica. O Lovell and Winter (cap. 1, p. 10) dá a mesma sequência para os quatro membros: úmero, rádio, fêmur, tíbia e ulna, e lembra que a clavícula é o primeiro osso do corpo a ossificar, entre a 6ª e a 7ª semana.
+
+A ponta da falange distal ossifica por via **intramembranosa** (57º dia), e não endocondral como o resto do esqueleto do membro. É um detalhe que explica por que o tufo distal tem comportamento próprio em algumas displasias e no crescimento da unha.
+
+!questoes central=mao-1010 relacionadas=mao-0928 treino=mao-3754
+conceito: Na 6ª semana (37 a 41 dias) o broto já tem úmero, rádio e ulna condensados, nervos até o cotovelo e a placa da mão com os raios digitais; é a fase da diferenciação regional, em que o cotovelo e o punho se tornam identificáveis.
+como: A UFG 2021 perguntou a partir de quantas semanas o membro tem diferenciação regional; a UFG 2019, quando as regiões do cotovelo e do punho se tornam identificáveis; nas duas, seis semanas.
+armadilha: Responder 4 semanas (é só o broto) ou 5 semanas (a placa da mão acaba de aparecer, sem segmentos definidos).
+!fim
+
+## A rotação dos membros
+
+O Lovell and Winter (7ª ed., cap. 1, pp. 11 e 12, Fig. 1-13) descreve o movimento. No período embrionário os quatro membros são parecidos, com eixos paralelos: a borda **pré-axial**, com o polegar e o hálux, fica para cranial, e a **pós-axial**, para caudal. O rádio e a tíbia são homólogos (pré-axiais), assim como a ulna e a fíbula (pós-axiais). Entre o 48º e o 54º dia, isto é, na **7ª semana**, as placas das mãos e dos pés deixam de se olhar, e os membros rodam em sentidos opostos: o superior roda **90 graus para lateral (externamente)** e o inferior roda **90 graus para medial (internamente)**. Os cotovelos passam a apontar para caudal e os joelhos para cranial.
+
+Essa rotação explica três coisas que parecem soltas. No antebraço, os flexores ficam mediais e os extensores laterais; na perna, os extensores ficam ventrais e os flexores dorsais. O mapa dos dermátomos do membro superior desce pela borda pré-axial (radial: C5, C6, C7 até o polegar) e sobe pela pós-axial (ulnar: C8, T1), o que só faz sentido lembrando que o polegar era a borda cranial do broto. E a face ventral original do membro inferior passa a ser posterior no adulto, enquanto a do superior continua anterior (Lovell and Winter, cap. 1, Fig. 1-12).
+
+!questoes central=mao-0411 treino=mao-3741
+conceito: Na 7ª semana o membro superior roda 90 graus para lateral e o inferior, 90 graus para medial; por isso o cotovelo aponta para caudal, o joelho para cranial e o polegar fica na borda radial (pré-axial).
+como: O TEOT 2025 pediu a semana e o sentido da rotação axial do membro superior.
+armadilha: Trocar o sentido (a rotação medial é a do membro inferior) ou empurrar a rotação para a 10ª semana, quando o membro já está pronto.
+alerta: O Lovell and Winter situa a rotação no fim do período embrionário e começo do fetal; a Fig. 1-13 mostra a sequência entre 48 e 54 dias, o que corresponde à 7ª semana do gabarito.
+!fim
+
+> **Na prova:** broto aos **26 dias** (4 mm); dedos separados aos **52 a 53 dias**; embriogênese completa com **8 semanas**; maioria das anomalias entre **4 e 8 semanas**; diferenciação regional na **6ª semana**; ulna ossifica **depois** do rádio (54 contra 52 dias); rotação lateral de 90 graus na **7ª semana**; cerca de **10%** das crianças com anomalia congênita têm o membro superior acometido.
+
+# De onde vêm as células: placa lateral e mesoderma somático {radar=confirmado}
+
+## O mesoderma empurra o ectoderma
+
+O broto é um **crescimento do mesoderma para dentro do ectoderma** que o recobre (Green, cap. 35, p. 1208). A frase parece banal, mas é a afirmativa que a USP-SP inverteu como distrator ("ectoderma crescendo sobre o mesoderma"). O motor do crescimento é o mesênquima: o Lovell and Winter (cap. 1, p. 9) descreve o broto inicial como um tecido mesenquimal frouxo dentro de uma bainha de ectoderma, e mostra pelos experimentos no embrião de galinha que é o mesênquima que manda. Retirado o mesênquima, não se forma membro; enxertado sob o ectoderma de outro lugar, ele induz uma crista apical e um membro novo; e mesênquima de perna posto sob a crista de um braço faz uma perna. O ectoderma, por sua vez, mantém o mesênquima vivo e crescendo. É uma conversa de mão dupla, e esse é o primeiro exemplo do princípio que atravessa o capítulo: nenhum centro funciona sozinho.
+
+## Duas fontes, dois destinos
+
+Duas populações de células migram para o broto (Green, cap. 35, p. 1208, Fig. 35.1):
+
+!tabela As duas origens das células do broto (Green, cap. 35, p. 1208)
+| Origem | O que forma | Por que faz sentido |
+| --- | --- | --- |
+| **mesoderma da placa lateral** | **osso, cartilagem e tendão** | é o mesoderma do próprio flanco, onde o broto nasce; forma o arcabouço de tecido conjuntivo |
+| **mesoderma somático** (dos somitos) | **músculo, nervo e elementos vasculares** | são células que vêm de longe, migrando dos somitos ao lado do tubo neural, e trazem consigo o que precisa se conectar ao tronco |
+!fim
+
+Uma forma de lembrar: tudo o que é **esqueleto e suas cordas** (osso, cartilagem e tendão) nasce do mesoderma local; tudo o que **move, inerva e irriga** (músculo, nervo e vaso) chega de fora, dos somitos. O distrator clássico é exatamente a troca entre as duas colunas, e as bancas também oferecem camadas que não participam do broto, como o endoderma e a notocorda.
+
+O Lovell and Winter (cap. 1, p. 9) confirma o desenho: o broto é formado pelo mesênquima da placa lateral e depois reforçado por células dos somitos vizinhos; os elementos esqueléticos e os tendões vêm da placa lateral, e o músculo vem das células dos somitos que migram para dentro do broto. Uma nota de terminologia evita confusão: o Green chama de "mesoderma somático" as células de origem **somítica** (mesoderma paraxial). Em alguns textos de embriologia, "somático" também nomeia a camada parietal da placa lateral, o que pode confundir quem estuda por mais de um livro. Para a prova, vale a tabela do Green.
+
+Há ainda um ponto que mostra por que o tendão "pertence" ao esqueleto: o tendão nasce da mesma placa lateral que o osso e se organiza junto dele, e só depois se encontra com o músculo que chega dos somitos. Isso ajuda a entender por que, em várias malformações, o tendão segue o esqueleto anômalo (por exemplo, os tendões que acompanham um raio duplicado), enquanto a musculatura pode faltar de modo independente.
+
+!questoes central=mao-0447 relacionadas=mao-0266 treino=mao-2239,mao-3748
+conceito: O broto é mesoderma crescendo para dentro do ectoderma; o mesoderma da placa lateral forma osso, cartilagem e tendão, e o mesoderma somático (dos somitos) forma músculo, nervo e vaso; os ossos dos dedos nascem de condensações do mesênquima.
+como: O Einstein 2026 pediu o que a placa lateral forma; o ENARE R4 2023 pediu a estrutura embrionária que origina os ossos longos dos dedos (condensações mesenquimais).
+armadilha: Inverter as duas origens (placa lateral para músculo, nervo e vaso) ou escolher somitos, crista neural ou placa neural como origem do esqueleto da mão.
+!fim
+
+# Vasos e nervos do broto {radar=fundamento}
+
+## O vaso marginal e a artéria axial
+
+O Green registra os vasos do broto em dois momentos da Tabela 35.1 (p. 1209): **vasos esparsos** no 28º dia e o **vaso marginal inicial** no 32º dia, junto com a crista ectodérmica apical e o plexo braquial inicial. O capítulo não descreve o padrão vascular em detalhe, e é aqui que o Lovell and Winter e a anatomia comparada completam o quadro.
+
+O Lovell and Winter (cap. 1, p. 11) admite que os mecanismos que controlam a vascularização do membro não estão bem resolvidos, mas descreve o resultado. O suprimento arterial inicial se organiza numa **artéria axial única**; no membro superior, ela se torna a **subclávia, a axilar, a braquial e a interóssea anterior**. As veias bem desenvolvidas aparecem primeiro na **borda pós-axial** (ulnar) do broto, e as veias pré-axiais, como a **cefálica**, se formam depois. O desenho clássico é este: uma artéria central, que corre no eixo do broto e se abre num **seio marginal** que contorna a borda do broto logo abaixo da crista apical e drena para as veias periféricas.
+
+Esse modelo clássico foi refinado por RODRÍGUEZ-NIEDENFÜHR, BURTON, DEU e SAÑUDO (J Anat, 2001;199:407-417, PMID 11693301), que estudaram 112 embriões humanos estadiados. Eles descreveram que o primeiro suprimento é um **plexo capilar** vindo da aorta dorsal, e que esse plexo amadurece de **proximal para distal**: subclávia e axilar se definem primeiro, depois a braquial, depois as artérias do antebraço, até o padrão definitivo no fim do período embrionário. O modelo do plexo explica bem as **variações arteriais** do adulto: um canal que deveria regredir e persiste, ou um que deveria persistir e regride, gera a artéria braquial superficial, a origem alta da radial ou a **artéria mediana persistente**, remanescente do eixo arterial primitivo do antebraço que o cirurgião da mão encontra dentro do túnel do carpo.
+
+Para a prova, duas mensagens. A primeira: o vaso marginal aparece na **5ª semana** (32º dia), no mesmo dia que a crista apical. A segunda: quando a banca pergunta sobre o "padrão vascular primitivo", a resposta tradicional é a artéria axial com o seio marginal; a descrição atual em plexo é uma refinação, não uma contradição. A clínica também aparece aqui: o Lovell and Winter (cap. 1, p. 15) lembra que acidentes vasculares provavelmente causam algumas deficiências de membro, impedindo o crescimento ou necrosando partes já diferenciadas, e o Green (p. 1210) usa a mesma ideia para explicar a deficiência transversa (sangramento ou isquemia na crista apical).
+
+## Os nervos chegam depois do esqueleto e dos vasos
+
+Pela Tabela 35.1 do Green (p. 1209), o **plexo braquial inicial** aparece no 32º dia; no 37º, os nervos **radial, mediano e ulnar** já chegam ao cotovelo; e no 44º o trapézio está inervado pelo nervo acessório. O Lovell and Winter (cap. 1, pp. 10 e 11) acrescenta a ordem dos acontecimentos: primeiro se formam o núcleo condrogênico do futuro esqueleto e o leito vascular que o envolve; **depois** chegam os nervos; e logo depois dos nervos se diferencia o músculo. Os plexos braquial e lombossacral e os grandes nervos periféricos estão presentes na **5ª semana**, invadem progressivamente os tecidos-alvo e, na **7ª semana**, já inervam músculos e pele no padrão do adulto. Com a 8ª semana, a inervação e os miotubos estão maduros o bastante para o **movimento** começar, e esse movimento é necessário para formar as articulações (ver a seção sobre interzonas).
+
+Duas consequências práticas. A inervação segmentar explica o mapa dos dermátomos, que desce pela borda pré-axial e sobe pela pós-axial; a sobreposição e a variação entre pessoas tornam o exame de dermátomo pouco específico para um nervo isolado (Lovell and Winter, cap. 1, Fig. 1-12). E a chegada dos nervos antes do músculo explica por que, em muitas malformações, o nervo segue um trajeto anômalo junto com o esqueleto malformado: o mediano superficial e radial na mão torta radial, que substitui o radial superficial ausente, é o exemplo que o cirurgião precisa conhecer antes de incisar.
+
+Quanto à origem, o Green agrupa os **elementos nervosos** com o músculo e os vasos, como derivados do **mesoderma somático** (p. 1208, Fig. 35.1), e é esse o gabarito das provas que citam o livro. A embriologia geral é mais fina: os axônios motores saem do tubo neural, os neurônios sensitivos e as células de Schwann vêm da crista neural, e o que o mesoderma somítico fornece é o caminho e o tecido de sustentação por onde eles entram. Quando a questão diz "segundo o Green", vale o mesoderma somático.
+
+!questoes treino=mao-2004
+conceito: Pela Tabela 35.1 do Green, o plexo braquial aparece no 32º dia e no 37º o radial, o mediano e o ulnar chegam ao cotovelo; o Green põe os nervos, com o músculo e os vasos, entre os derivados do mesoderma somático.
+como: O SIMÃO 2023 perguntou, segundo o Green, de onde se origina o nervo mediano no broto.
+armadilha: Escolher a placa lateral, que forma osso, cartilagem e tendão, ou camadas que não entram no broto, como a notocorda e o endoderma.
+alerta: A embriologia geral atribui os axônios motores ao tubo neural e os neurônios sensitivos e as células de Schwann à crista neural; a resposta "mesoderma somático" segue a Fig. 35.1 do Green, que é a fonte da banca.
+!fim
+
+# Os três centros de sinalização {radar=confirmado}
+
+## Três eixos, três centros e uma conversa
+
+Para entender o membro e explicá-lo à família, o Green (cap. 35, p. 1208) pede que o cirurgião conheça os centros que controlam os **três eixos espaciais**: proximodistal (do ombro à ponta dos dedos), anteroposterior (radioulnar, do polegar ao mínimo) e dorsoventral (do dorso da mão à palma). Cada eixo tem um centro, isto é, um grupo de células que emite o sinal.
+
+!tabela Os centros de sinalização do broto (Green, cap. 35, Tabela 35.2, p. 1210)
+| Centro | Onde fica | Substância | Eixo | Experiência clássica | Anomalia típica |
+| --- | --- | --- | --- | --- | --- |
+| **crista ectodérmica apical** (AER) | espessamento do **ectoderma** na ponta do broto | **fatores de crescimento de fibroblastos** (FGF) | **proximodistal** | retirar a crista trunca o membro; uma conta com FGF no lugar dela salva o membro | **deficiência transversa** |
+| **zona de atividade polarizadora** (ZPA) | **mesoderma** da margem **posterior** (ulnar) | **sonic hedgehog** (SHH) | **anteroposterior** (radioulnar) | ZPA ou SHH na margem anterior dá **duplicação em espelho do lado ulnar** | **mão em espelho**, polidactilia, polegar trifalângico |
+| **via Wnt** | **ectoderma dorsal** | Wnt7a, que induz o fator de transcrição **Lmx-1** | **dorsoventral** | sem Wnt, membro biventral; sem Engrailed-1, bidorsal | **síndrome unha-patela**, unha extra, polpa anormal |
+!fim
+
+O Green insiste num ponto que a prova também cobrou: os três centros são **interdependentes**. A perda de um sinal compromete o sistema inteiro, e há muita "conversa cruzada" entre as vias (p. 1208). O Lovell and Winter (cap. 1, p. 14) dá exemplos concretos dessa conversa: a SHH da ZPA e o FGF4 da crista apical se mantêm num circuito de retroalimentação positiva, de modo que sem SHH a crista regride e o membro fica curto; o Wnt7a dorsal é necessário para que a SHH continue a ser produzida e os dedos se formem na ordem radioulnar certa. NISWANDER, JEFFREY, MARTIN e TICKLE (Nature, 1994;371:609-612, PMID 7935794) mostraram esse circuito entre o crescimento (FGF4) e a padronização (SHH). A consequência clínica é que uma anomalia rotulada como "de um eixo" muitas vezes tem traços dos outros dois; a mão em espelho, por exemplo, tem mais dedos (radioulnar), mas também alterações de comprimento.
+
+O Lovell and Winter (cap. 1, p. 10) acrescenta a ordem em que os eixos se fixam, demonstrada por transplantes de brotos rodados: primeiro o **anteroposterior**, depois o **dorsoventral**, e por último o **proximodistal**, que vai sendo definido à medida que o membro cresce.
+
+!questoes treino=mao-1721,mao-3744,mao-3745,mao-3757
+conceito: A crista ectodérmica apical controla o eixo proximodistal pelo FGF e, quando falha, gera deficiência transversa; a ZPA controla o radioulnar pela sonic hedgehog (mão em espelho); a via Wnt controla o dorsoventral (unha-patela).
+como: O SIMÃO 2026 pediu o eixo e a anomalia ligados a um defeito da crista ectodérmica apical.
+armadilha: Associar a crista apical à mão em espelho (é da ZPA) ou à unha-patela (é da via Wnt), ou marcar proximodistal com polidactilia pré-axial.
+!fim
+
+## A crista ectodérmica apical e o FGF
+
+O membro cresce de **proximal para distal**: o ombro se forma antes do cotovelo, e o cotovelo antes do punho (Green, cap. 35, p. 1209). Quem comanda esse crescimento é a **crista ectodérmica apical**, um **espessamento do ectoderma** que se condensa sobre a ponta do broto e orienta o mesoderma subjacente a se diferenciar nas estruturas certas.
+
+As experiências que provaram isso são simples e elegantes, e é por elas que a banca pergunta:
+
+1. **Retirar a crista** trunca o membro (Fig. 35.3). Quanto mais cedo a retirada, mais proximal o nível do corte (Lovell and Winter, cap. 1, p. 13), porque as partes proximais já foram especificadas e as distais ainda não.
+2. **Implantar uma crista ectópica** faz surgir um membro extra.
+3. **Retirar a crista e pôr no lugar uma conta embebida em FGF** devolve um membro normal (Fig. 35.5). NISWANDER, TICKLE, VOGEL, BOOTH e MARTIN (Cell, 1993;75:579-587, PMID 8221896) mostraram que o FGF4 substitui a crista apical e dirige o crescimento e a padronização do membro.
+4. Camundongos deficientes em FGF têm **deficiência transversa completa** (Green, p. 1209).
+
+O Lovell and Winter (cap. 1, p. 13) completa a biologia: o FGF10 é produzido primeiro no mesoderma da placa lateral, no lugar do futuro broto, e induz o FGF8 nas células do ectoderma que vão formar a crista; os dois se sustentam em alça. Camundongos sem FGF10 nascem **sem membros** (e com falha pulmonar). Na crista, FGF2, FGF4 e FGF8 são capazes, cada um, de manter o crescimento. Logo abaixo da crista fica a **zona de progressão**, de células mesenquimais indiferenciadas que se multiplicam rápido; a hipótese clássica é que o tempo (ou o número de divisões) que a célula passa nessa zona define se ela será braço, antebraço ou mão. A crista também tem um papel mecânico: mantém o broto achatado no sentido dorsoventral, e o comprimento dela define a largura do membro.
+
+### Da bancada ao consultório: a deficiência transversa
+
+A tradução clínica da falha da crista é a **deficiência transversa**, cuja forma típica é a amputação congênita **curta abaixo do cotovelo** com pequenos cotos digitais, os **nubbins** (Green, Fig. 35.4, p. 1211). Três mensagens servem para os pais (Green, p. 1210):
+
+- **Por que aconteceu.** A crista não foi arrancada fisicamente, mas há evidência de que **sangramento ou isquemia** dentro dela a fez parar de funcionar. Um exemplo é o uso indevido de **misoprostol** no primeiro trimestre: GONZALEZ e colaboradores (Lancet, 1998;351:1624-1627, PMID 9620717) descreveram, em crianças brasileiras, defeitos terminais transversos dos membros e síndrome de MÖBIUS, atribuídos a um mecanismo vascular.
+- **Quando suspeitar de teratógeno.** A deficiência transversa costuma ser **esporádica**, sem causa definida. Quando **vários membros** estão acometidos, a agressão foi generalizada e atingiu todos os brotos ao mesmo tempo, e aí o teratógeno passa a ser suspeito.
+- **O próximo filho.** A deficiência transversa **não é hereditária**, e os próximos filhos dificilmente serão afetados.
+
+O mesmo raciocínio ajuda a separar a deficiência transversa de outras condições com cotos digitais. Na **simbraquidactilia**, os nubbins com restos de unha mostram que o ectoderma (que forma a unha) foi preservado e o defeito é do mesoderma subjacente; na **banda de constrição**, o membro estava pronto e foi estrangulado depois, sem nubbins verdadeiros e com a parte proximal normal (ver as seções da banda e da simbraquidactilia).
+
+> **Na prova:** crista apical = **ectoderma** = **FGF** = **proximodistal** = **deficiência transversa**. A crista não é mesodérmica, e a "zona de progressão" fica abaixo dela, no mesoderma. A deficiência transversa é esporádica, unilateral, sem risco aumentado para o próximo filho; vários membros acometidos fazem pensar em teratógeno.
+
+## A zona de atividade polarizadora e a sonic hedgehog
+
+A ZPA é a mais cobrada das três. Ela fica no **mesoderma da margem posterior (ulnar)** do broto e polariza o membro numa borda radial e numa borda ulnar (Green, cap. 35, p. 1210). A molécula sinalizadora é a **sonic hedgehog**: RIDDLE, JOHNSON, LAUFER e TABIN (Cell, 1993;75:1401-1416, PMID 8269518) mostraram que a SHH, expressa exatamente na ZPA, reproduz sozinha a atividade polarizadora quando colocada na margem anterior.
+
+**O experimento.** Transplantar a ZPA, ou a proteína SHH, para a margem **anterior** do broto produz uma **duplicação em espelho do lado ulnar** do membro (Fig. 35.6). O efeito é **dose-dependente**: quanto mais células transplantadas, mais dedos duplicados (Fig. 35.7, mão em espelho com sete dedos). Isso explica o número variável de dedos e os diferentes fenótipos da mão em espelho. Camundongos mutantes que expressam SHH na margem anterior são **polidáctilos**, com duplicação dos dedos ulnares (p. 1211).
+
+**O gradiente.** A SHH se espalha em gradiente a partir da borda ulnar, e o **tempo de exposição** define a identidade de cada dedo: o **mínimo** fica exposto mais tempo; o **indicador e o médio**, menos (p. 1211). O polegar é o dedo que se forma praticamente fora do alcance da SHH. Por isso, quando há SHH também na borda anterior, o broto "lê" dois lados ulnares, e a mão resultante tem dedos ulnares de um lado e de outro, **sem polegar**.
+
+**O polegar trifalângico.** Mutações pontuais que levam à expressão **ectópica de SHH na margem anterior** produzem o polegar trifalângico (Green, p. 1211). O mecanismo foi esclarecido por LETTICE e colaboradores (Hum Mol Genet, 2003;12:1725-1735, PMID 12837695), que identificaram um intensificador da SHH muito distante do gene (a região ZRS); mutações pontuais nessa região fazem a SHH aparecer também na borda radial e se associam à polidactilia pré-axial e ao polegar trifalângico. Daí a regra: o polegar com uma falange a mais é um polegar que recebeu um pouco de sinal "ulnar".
+
+**O ácido retinoico.** O Lovell and Winter (cap. 1, pp. 13 e 14) conta como se chegou à SHH: primeiro se descobriu que o ácido retinoico causava duplicação de membros e que ele existia em gradiente no broto; depois se viu que ele não é o morfógeno em si, mas regula as células capazes de produzir SHH. A importância clínica é que os retinoides usados em dermatologia (isotretinoína e acitretina) são teratógenos potentes, e a recomendação é evitar a gestação por um longo período depois do uso sistêmico.
+
+### A mão em espelho: AL-QATTAN
+
+O Green (Tabela 35.3, p. 1213) reproduz a classificação de AL-QATTAN (1998), que organiza o espectro da duplicação em espelho:
+
+!tabela Classificação da mão em espelho de AL-QATTAN (Green, cap. 35, Tabela 35.3, p. 1213)
+| Tipo | Nome | Achados |
+| --- | --- | --- |
+| 1 | **dimelia ulnar** | vários dedos e **duas ulnas**; A: as duas bem formadas; B: ulna pré-axial hipoplásica |
+| 2 | forma intermediária | vários dedos, duas ulnas e um rádio |
+| 3 | forma intermediária | vários dedos, **uma ulna e um rádio**; A: rádio bem formado; B: rádio hipoplásico |
+| 4 | **forma sindrômica** | bilateral, com **pés em espelho e defeitos nasais**; A: LAURIN-SANDROW (duas ulnas); B: MARTIN (uma ulna e um rádio) |
+| 5 | **mão múltipla** | duplicação completa da mão, **inclusive o polegar**; antebraço normal |
+!fim
+
+A classificação conta a dose de SHH ectópica. Quanto mais proximal e mais intensa, mais a borda radial vira ulnar: no tipo 1, até o antebraço é duplicado (duas ulnas); nos intermediários, o rádio sobrevive; no tipo 5, a mão inteira se duplica mas o antebraço é normal e há polegar, o que mostra que o problema ali não é só de SHH. O tipo sindrômico se reconhece pelo que está fora da mão: pés em espelho e nariz.
 
 !figura 35.6 imagem=mao/green7-35-6.jpeg
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 35, Fig. 35.6, p. 1212. O transplante da zona de atividade polarizadora (ZPA) ou de sonic hedgehog para a borda anterior do broto produz a duplicação em espelho do lado ulnar.
 !fim
 
-**A rotação dos membros.** O Lovell and Winter (7ª ed., cap. 1, pp. 11 e 12, Fig. 1-13) descreve o movimento. No período embrionário os quatro membros são parecidos, de eixos paralelos: a borda pré-axial, com o polegar e o hálux, fica para cranial, e a pós-axial, para caudal. No período fetal, o membro superior roda **90 graus para lateral (externamente)** e o inferior roda **90 graus para medial (internamente)**: os cotovelos passam a apontar para caudal e os joelhos para cranial. É por isso que, no antebraço, os flexores ficam mediais e os extensores laterais, e na perna os extensores ficam ventrais e os flexores dorsais. Por volta da 8ª semana a diferenciação dos tecidos está praticamente pronta, e o que resta é crescer.
-
-!questoes central=mao-0007 relacionadas=mao-0020,mao-0493 treino=mao-2582
+!questoes central=mao-0007 relacionadas=mao-0020,mao-0493 treino=mao-2582,mao-3749,mao-3750
 conceito: A ZPA comanda o eixo radioulnar pela sonic hedgehog e, duplicada na borda anterior, gera polidactilia em espelho; a AER comanda o comprimento; a janela crítica é de 4 a 8 semanas; o membro superior roda 90 graus para lateral e o inferior, 90 para medial.
 como: O TARO 2020 perguntou o resultado das falhas da zona de atividade polarizadora; o TARO 2018, o período da organogênese; o TARO 2012, a rotação fetal dos membros.
 armadilha: Ligar a ZPA às deficiências transversas, que são da crista apical, ou o centro Wnt ao eixo radioulnar.
 alerta: O Green situa a maioria das anomalias entre a 4ª e a 8ª semana (segundo mês), e o Tachdjian (cap. 1, p. 3) define as malformações como interrupção da organogênese normal durante o segundo mês de gestação; o gabarito oficial de `mao-0020` (terceiro mês) foi preservado. A rotação dos membros (`mao-0493`) está no Lovell and Winter (cap. 1, pp. 11 e 12).
 !fim
+
+!questoes central=mao-0665 treino=mao-2003,mao-3753
+conceito: A ZPA fica no mesoderma da margem posterior (ulnar) do broto e sinaliza pela proteína sonic hedgehog; ZPA ou SHH na margem anterior produzem a mão em espelho, duplicação do lado ulnar sem polegar.
+como: A FMRP-USP 2026 perguntou o centro ligado à mão em espelho; o SIMÃO 2023, a substância que responde pelo sinal da ZPA.
+armadilha: Responder FGF (é a crista apical), Lmx-1 (é a via Wnt dorsal) ou "um fator de transcrição": a SHH é uma proteína sinalizadora secretada.
+!fim
+
+> **Na prova:** ZPA = **mesoderma posterior** = **sonic hedgehog** = **radioulnar** = **mão em espelho** (duplicação **ulnar**). O mínimo é o dedo mais exposto à SHH. SHH ectópica na borda radial = **polegar trifalângico** e polidactilia pré-axial. AL-QATTAN 4 = sindrômica, com pés em espelho e nariz; 5 = mão múltipla com polegar.
+
+## O centro Wnt: Wnt7a, Lmx-1 e Engrailed-1
+
+O eixo dorsoventral é o que diferencia o dorso do dedo, com a unha, da face palmar, rica em polpa. É o **menos compreendido** dos três (Green, cap. 35, p. 1211), e o menos cobrado, o que o torna bom material de questão difícil.
+
+O mecanismo, em três peças:
+
+1. A **via Wnt** fica no **ectoderma dorsal**. A molécula é o **Wnt7a**, uma proteína secretada que confere caráter dorsal ao ectoderma (Lovell and Winter, cap. 1, p. 14). PARR e MCMAHON (Nature, 1995;374:350-353, PMID 7885472) mostraram que camundongos sem Wnt7a têm a face dorsal das patas ventralizada e, além disso, perdem dedos posteriores, porque o Wnt7a também ajuda a manter a SHH: outra prova da conversa entre os eixos.
+2. O Wnt7a induz o fator de transcrição **Lmx-1** (no humano, LMX1B) no mesoderma dorsal, e é o Lmx-1 que faz o mesoderma adotar **características dorsais** (unha, pele fina do dorso, tendões extensores).
+3. No **ectoderma ventral**, a via Wnt é **bloqueada** pelo produto do gene **Engrailed-1** (En-1). Assim, a palma não recebe o sinal dorsal.
+
+Os experimentos fecham o raciocínio (Green, p. 1211): camundongos **sem a via Wnt** têm **ventralização** do dorso, isto é, membros **biventrais**, com coxins plantares dos dois lados da pata; camundongos **sem Engrailed-1** têm **dorsalização** da face palmar, isto é, membros **bidorsais**. O Lovell and Winter (cap. 1, p. 10) acrescenta que, em transplantes que invertem o ectoderma sobre o mesoderma, os dedos, os músculos e os tendões seguem a orientação do ectoderma: no eixo dorsoventral, quem manda depois dos primeiros dias é o ectoderma.
+
+Na clínica, as anomalias desse eixo são **raras**. A perda do **Lmx-1** (LMX1B) causa a **síndrome unha-patela**: unhas hipoplásicas ou ausentes (sobretudo no polegar e no lado radial), patela pequena ou ausente, cornos ilíacos e, às vezes, doença renal, que é o que pede seguimento. Crianças com **unha extra** na face palmar ou **polpa anormal** no dorso (dimelia dorsal ou ventral) têm alterações ligadas à via Wnt e aparecem de modo esporádico, sem causa definida (AL-QATTAN, citado pelo Green, p. 1211).
+
+> **Na prova:** Wnt = **ectoderma dorsal** = **dorsoventral**; Wnt7a induz **Lmx-1** (dorsaliza o mesoderma); **Engrailed-1** bloqueia a via Wnt no **ectoderma ventral**. Sem Wnt = biventral; sem En-1 = bidorsal. Perda de LMX1B = **unha-patela**.
+
+# A apoptose: BMP, FGF e a separação dos dedos {radar=fundamento}
+
+## Morte celular que constrói
+
+A morte celular programada é parte essencial da formação do membro (Green, cap. 35, p. 1208). A **apoptose** é um processo **ativo e geneticamente controlado** para eliminar células indesejadas: a célula fragmenta o próprio DNA, degenera e é englobada por fagócitos, sem inflamação. É o oposto da necrose por agressão, e é por isso que o embrião consegue esculpir formas sem cicatriz.
+
+O exemplo mais importante é a mão. Os dedos começam **unidos por membrana** (raios digitais no 41º dia, Tabela 35.1), e o tecido entre eles precisa sofrer apoptose e necrose interdigital para que os dedos se separem. A apoptose interdigital começa por volta do **44º dia**, e os dedos estão totalmente separados com **52 a 53 dias**. A **falha da apoptose interdigital** resulta em **sindactilia** (p. 1208).
+
+## Quem dispara e quem freia
+
+As **proteínas morfogenéticas ósseas** (BMP), conhecidas pelo papel na condrogênese e na osteogênese, são as que **disparam** a apoptose do mesênquima interdigital (Green, p. 1208 e 1209). Um **antagonista de BMP** impede a apoptose e mantém a membrana: os **morcegos** têm asas membranosas justamente porque a sinalização de BMP é bloqueada entre os dedos durante a embriogênese. Do outro lado, a sinalização alterada de **FGF**, como na **síndrome de APERT** (mutação do receptor de FGF tipo 2, FGFR2), **anula** a apoptose mediada por BMP e produz sindactilia (Fig. 35.2: fácies típica, sindactilia grave incluindo a primeira comissura e palma com sulcos profundos).
+
+O raciocínio fica claro quando se pensa no papel do FGF no broto. O FGF da crista apical mantém o mesênquima embaixo dela vivo e proliferando; para que a membrana entre dois raios desapareça, a crista sobre aquele espaço precisa regredir e o sinal de sobrevivência precisa cair, deixando a BMP agir. Um FGF que sinaliza demais (o receptor ativado da APERT) mantém o mesênquima interdigital vivo e a membrana persiste.
+
+> **Divergência interna do Green, resolvida.** A Tabela 35.2 (p. 1210) lista "necrose interdigital" entre as ações da crista apical e do FGF, enquanto o texto (p. 1208 e 1209) diz que quem **dispara** a apoptose são as **BMP** e que o FGF alterado a **anula**. As duas informações se encaixam pelo mecanismo acima: o FGF controla a sobrevivência do mesênquima, e a BMP executa a morte. Para a prova: "a BMP dispara a apoptose interdigital"; se a única alternativa possível for "o FGF age na necrose interdigital", ela vem da tabela e foi aceita como correta pelo curso no SIMÃO 2009.
+
+A apoptose também participa de outras etapas: a cavitação das articulações (ver a seção seguinte) e a regressão de estruturas transitórias. Quando ela falha entre dois ossos em vez de entre dois dedos, o resultado é uma **sinostose**; quando falha entre dois dedos, sindactilia. O Lovell and Winter (cap. 1, p. 15) faz a mesma ponte: falhas da morte celular programada estão por trás de algumas sindactilias e de vários distúrbios com sinostose.
+
+!questoes treino=mao-2527,mao-3751,mao-3755
+conceito: Os raios digitais aparecem unidos por membrana no 41º dia, a apoptose interdigital começa no 44º e, com 52 a 53 dias, os dedos estão totalmente separados; a BMP dispara a apoptose e o FGF alterado da APERT a anula.
+como: O SIMÃO 2021 perguntou com quantos dias os dedos estão totalmente separados.
+armadilha: Marcar 26 dias (é o surgimento do broto) ou 70 dias (já é período fetal, com o membro completo desde a 8ª semana).
+!fim
+
+> **Na prova:** dedos unidos no 41º dia, apoptose no 44º, separados com **52 a 53 dias**. **BMP dispara** a apoptose; antagonista de BMP mantém a membrana (morcego); **FGF alterado (APERT) anula** a apoptose; falha da apoptose = **sindactilia**.
+
+# Blastemas, interzonas e articulações {radar=fundamento}
+
+## O centro pobre em oxigênio vira osso
+
+Dentro do broto, duas massas de células se separam: o **blastema muscular** forma os músculos, e o **blastema condrogênico** forma os ossos (Green, cap. 35, p. 1211). O condrogênico fica nas **partes centrais**, onde a **tensão de oxigênio é baixa**; o muscular fica na **periferia**, onde a tensão de oxigênio é **maior**. Os dois se formam de **proximal para distal**: os músculos se destacam do blastema muscular em sequência, e a cartilagem do blastema condrogênico depois ossifica.
+
+A lógica do oxigênio vem da biologia da cartilagem: o condrócito é a célula do corpo mais adaptada a viver com pouco oxigênio, e o centro do broto, longe dos vasos da periferia, é o ambiente onde ele prospera. O Lovell and Winter (cap. 1, p. 10) descreve o mesmo arranjo visto de outro ângulo: o núcleo condrogênico central é rodeado por um leito vascular rico, e entre esse leito e o ectoderma há uma zona avascular espessa; o ectoderma mantém as células vizinhas achatadas, o que as impede de virar cartilagem, enquanto as células centrais se arredondam e formam o núcleo condrogênico. No começo da 7ª semana, todo o esqueleto cartilaginoso do membro superior está presente, exceto as falanges distais.
+
+!questoes treino=mao-2151,mao-3743,mao-3747,mao-3756
+conceito: O blastema condrogênico fica no centro do broto, onde a tensão de oxigênio é baixa, e forma os ossos; o blastema muscular fica na periferia, com mais oxigênio, e forma os músculos; os dois amadurecem de proximal para distal.
+como: O SBCM 2022 perguntou como se distribuem os blastemas que originam os ossos e os músculos.
+armadilha: Inverter as posições (condrogênico na periferia) ou dizer que a tensão de oxigênio é a mesma nas duas regiões.
+!fim
+
+## A articulação nasce de uma fenda
+
+As articulações se formam nas **interzonas**, entre as pontas de dois blastemas (Green, p. 1211). Uma cápsula envolve a interzona; no centro dela ocorre a **cavitação**, que abre o espaço articular; forma-se o líquido sinovial, e a cartilagem cobre as duas pontas ósseas. O Lovell and Winter (cap. 1, p. 11) detalha a interzona: suas células se diferenciam em condrogênicas (que formam a cartilagem articular), centrais (que formam as estruturas intra-articulares) e sinoviais (que formam a cápsula fibrosa e a sinóvia), e a cavitação acontece por apoptose. As interzonas do ombro e do cotovelo surgem no 48º dia, e as do punho e do carpo no 52º (Green, Tabela 35.1).
+
+No plano molecular, o Lovell and Winter (cap. 1, p. 14) mostra que a articulação é um equilíbrio entre ativar e inibir: as BMP2 e BMP4 empurram as células para virar cartilagem; o GDF5, uma proteína da família das BMP, marca o local da futura articulação; e a **noggin**, um inibidor de BMP, precisa estar presente para que a articulação se abra. Sem noggin, o esqueleto sai contínuo, sem articulações.
+
+**Quando a cavitação falha**, o resultado é uma **sinostose** através da articulação pretendida: radioulnar proximal ou ulnoumeral (Green, p. 1211 e 1212; Fig. 35.8, sinostose radioulnar proximal bilateral por falha da necrose da interzona). Esse mecanismo explica por que a sinostose radioulnar congênita é **proximal**: é ali que o rádio e a ulna compartilham uma interzona com o úmero, e é ali que uma falha de separação os deixa unidos.
+
+## O movimento modela a articulação
+
+O Green (p. 1208 e 1212) faz uma afirmação que muda a forma de ver a artrogripose: o **movimento é necessário** para formar uma articulação móvel. A cavitação abre o espaço, mas é o movimento que modela a superfície articular definitiva. **Sem movimento**, como na **artrogripose**, o espaço articular é invadido por **tecido fibroso**, e a articulação fica imóvel. A postura típica do membro superior na artrogripose (Fig. 35.9, p. 1213) é a do membro que não se moveu dentro do útero: **ombros aduzidos e em rotação medial, cotovelos estendidos, punhos fletidos e desviados para ulnar, polegar na palma e dedos rígidos**.
+
+O Lovell and Winter (cap. 1, p. 11) lembra que o movimento começa por volta da 8ª semana, quando a inervação e os miotubos estão prontos, e que experimentos que paralisam o feto animal reproduzem as anomalias articulares. A lição clínica é que, na artrogripose, a rigidez não é um erro do esqueleto, mas a falta do estímulo mecânico que o esqueleto precisava. É por isso que a mobilização precoce, logo depois do nascimento, faz parte do tratamento.
+
+> **Na prova:** condrogênico **central** (pouco oxigênio), muscular **periférico** (mais oxigênio); articulação = **interzona** + **cavitação**; falha da cavitação = **sinostose** (radioulnar proximal); falta de **movimento** = **fibrose** da interzona = **artrogripose**.
+
+# Genes: HOX, T-box e as BMP da cartilagem {radar=confirmado}
+
+## Por que os genes entram na consulta
+
+Os eixos são só um aspecto da formação do membro. Mutações em genes de **proteínas sinalizadoras, receptores e fatores de transcrição** alteram o arranjo normal e produzem anomalias (Green, cap. 35, p. 1212). O número de anomalias identificáveis no plano molecular cresce todo ano, mas só uma parte pequena foi mapeada em segmentos cromossômicos específicos.
+
+O Green tira daí uma regra de conduta: o **diagnóstico preciso é obrigatório**, e o encaminhamento à **genética** se justifica sempre que há herança. O conceito-chave é a **expressão variável**: o mesmo defeito genético produz quadros de gravidades diferentes. O erro que o Green descreve é comum: o pai levemente afetado (mão e coração "nem tão ruins") conclui que o filho "vai ficar como ele", segue com a gestação sem orientação, e a criança nasce muito mais acometida. O aconselhamento **antes** da gestação desfaz esse equívoco (p. 1212 e 1213).
+
+## HOX: os genes da identidade dos segmentos
+
+Os genes **HOX** e **T-box** codificam **fatores de transcrição** essenciais para a formação do membro, e a gravidade da malformação acompanha o número e a extensão das alterações genéticas (Green, p. 1213). Um exemplo experimental mostra o alcance: camundongos sem hoxa-11 e hoxd-11 não formam rádio nem ulna. Os HOX são os equivalentes, nos vertebrados, dos genes homeóticos da mosca, que definem a identidade de cada segmento do corpo; no membro, eles se expressam em faixas sobrepostas ao longo do eixo radioulnar e ajudam a definir o comprimento, a segmentação e a ramificação dos elementos (Lovell and Winter, cap. 1, p. 14). Como a atividade dos HOX é redundante, a mutação de um único gene costuma dar uma anomalia pequena.
+
+O Green liga três condições a mutações no lócus HOX (p. 1213 e 1214):
+
+- **Sinpolidactilia** (HOXD13): sindactilia entre o médio e o anular com **duplicação oculta do anular** dentro da membrana (Figs. 35.10 e 35.11). A radiografia é obrigatória antes de separar, porque o "dedo grosso" contém um raio a mais com deformidades angulares.
+- **Síndrome mão-pé-genital** (HOXA13): polegares e háluces curtos, com anomalias geniturinárias.
+- **Deformidade de MADELUNG da discondrosteose de LERI-WEILL**: baixa estatura, antebraços curtos e MADELUNG bilateral (Fig. 35.12). O gene envolvido é o **SHOX**, um gene homeobox da região pseudoautossômica dos cromossomos sexuais; o Green o põe na família dos defeitos HOX, e é assim que a banca cobra.
+
+As três condições são **autossômicas dominantes**, e a LERI-WEILL é **mais grave nas mulheres** (p. 1214). Essa informação precisa ser passada à família e justifica o aconselhamento genético.
+
+## T-box: o eixo radioulnar e o coração
+
+Os genes **T-box** formam uma família muito conservada de fatores de transcrição que governam tanto o membro quanto outros órgãos (Green, p. 1214). Alterações nos produtos T-box afetam o desenvolvimento **anteroposterior (radioulnar)** do membro.
+
+- **HOLT-ORAM**: cardiopatia (sobretudo defeitos de septo) com **deficiência radial**, ligada ao fator de transcrição **Tbx5**. É autossômica dominante, de fenótipo variável, e as famílias se beneficiam de aconselhamento. BASSON e colaboradores (Nat Genet, 1997;15:30-35, PMID 8988165) demonstraram as mutações do TBX5 que causam as malformações do membro e do coração na síndrome. A lógica anatômica é bonita: o Tbx5 é o gene de identidade do membro **superior** (o Tbx4 é o do inferior) e também participa da formação do coração, que se forma na mesma janela.
+- **Síndrome ulnar-mamária** (**Tbx3**): anomalias **pós-axiais** (do lado ulnar) com hipoplasia das mamas e glândulas apócrinas.
+
+A dupla é fácil de guardar pelos lados: o **Tbx5 é radial** (pré-axial) com o coração; o **Tbx3 é ulnar** (pós-axial) com a mama.
+
+## As BMP da cartilagem e o comprimento dos dedos
+
+A família das **BMP** se expressa no membro em formação (Green, p. 1214). A **proteína morfogenética derivada da cartilagem** (CDMP, também chamada GDF5) é essencial para o **comprimento dos dedos**: sua deficiência se associa a várias formas de **braquidactilia**. As condrodisplasias de **GREBE** e de **HUNTER-THOMPSON** cursam com braquidactilia grave e foram ligadas diretamente à deficiência de CDMP (Fig. 35.13). É o mesmo GDF5 que marca as interzonas, o que ajuda a entender por que a braquidactilia tantas vezes vem com articulações interfalângicas anormais ou ausentes.
+
+!questoes central=mao-0840 treino=mao-2346
+conceito: Os genes HOX e T-box codificam fatores de transcrição essenciais para o membro; mutações HOX causam a sinpolidactilia, a síndrome mão-pé-genital e o MADELUNG da discondrosteose de LERI-WEILL (todas autossômicas dominantes); o T-box liga-se à HOLT-ORAM (Tbx5) e à ulnar-mamária (Tbx3).
+como: O INTO 2026 perguntou o gene do MADELUNG associado à LERI-WEILL; o SIMÃO 2024 trouxe os genes HOX e T-box como a afirmativa correta entre trocas de eixo e de tempo.
+armadilha: Marcar T-box para a LERI-WEILL (o T-box é da HOLT-ORAM e da ulnar-mamária) ou aceitar a crista apical no eixo radioulnar e a ZPA no proximodistal.
+alerta: O gene da LERI-WEILL é o SHOX, um gene homeobox que não pertence aos agrupamentos HOX clássicos; o Green o põe entre os defeitos HOX, e é essa a leitura do gabarito.
+!fim
+
+> **Na prova:** HOX e T-box = **fatores de transcrição**. HOX: **sinpolidactilia** (HOXD13, anular duplicado oculto), **mão-pé-genital** (HOXA13), **MADELUNG de LERI-WEILL** (SHOX), todas **AD**, LERI-WEILL pior nas mulheres. T-box: **HOLT-ORAM = Tbx5** (radial e coração), **ulnar-mamária = Tbx3** (pós-axial). **CDMP** = comprimento dos dedos = braquidactilia (GREBE, HUNTER-THOMPSON).
+
+# Considerações sistêmicas e a conversa com os pais {radar=fundamento}
+
+Enquanto o membro se forma, os outros órgãos também se formam, e o erro que atinge o membro pode atingir esses sistemas (Green, cap. 35, p. 1214). O Green separa três padrões, e cada um muda a investigação:
+
+!tabela Anomalia do membro e o que procurar fora da mão (Green, cap. 35, p. 1214)
+| Anomalia | Associação | O que fazer |
+| --- | --- | --- |
+| **deficiência radial** | doenças **sistêmicas**: HOLT-ORAM (coração), VACTERL (vértebras, ânus, coração, traqueia, esôfago, rim, membros), TAR (plaquetas baixas) e anemia de FANCONI (medula) | ecocardiograma, ultrassom renal, radiografia da coluna e hemograma; na suspeita de FANCONI, teste de quebra cromossômica |
+| **deficiência ulnar** | **isolada** ou com outras anomalias **musculoesqueléticas** (fíbula, fêmur proximal, focomelia, escoliose) | exame ortopédico completo; não tem o mesmo peso visceral da radial |
+| **deficiência central** (mão em fenda) | sistêmica (síndrome **EEC**: ectrodactilia, displasia ectodérmica e fenda facial) ou com hemimelia do membro inferior | olhar pele, dentes, cabelo, face e os pés |
+!fim
+
+A frase que fecha a seção do Green é a que importa: muitas dessas doenças sistêmicas são **mais importantes que a mão** e exigem avaliação precisa para evitar consequências que ameaçam a vida. A anemia de FANCONI, por exemplo, pode só se manifestar anos depois, e a aplasia medular é a causa de morte; perder esse diagnóstico porque a atenção ficou toda no punho é o erro que o cirurgião da mão não pode cometer. O Green cita o banco **OMIM** (Online Mendelian Inheritance in Man) como fonte atualizada para as associações.
+
+A conversa com os pais junta tudo o que veio antes. Explicar a **embriologia** tira a culpa: a mão se formou entre a 4ª e a 8ª semana, muitas vezes antes de a gestante saber que estava grávida, por um erro de sinalização que ninguém provocou. Explicar o **padrão de herança** responde à pergunta sobre o próximo filho: risco baixo na deficiência transversa e na simbraquidactilia (esporádicas); risco real nas formas autossômicas dominantes (HOLT-ORAM, sinpolidactilia, LERI-WEILL, mão em fenda típica), em que a **expressão variável** pode tornar o próximo filho mais grave que o genitor. E encaminhar à **genética** quem tem herança provável (Green, p. 1212 a 1214).
 
 # As classificações: SWANSON, OMT e FRANTZ e O'RAHILLY {radar=confirmado}
 
@@ -80,11 +419,19 @@ Três classificações aparecem nas provas, e cada uma responde a uma pergunta d
 
 **FRANTZ e O'RAHILLY (1961)**, que o Tachdjian (cap. 21) ainda chama de a mais usada para agrupar deficiências esqueléticas, cruza duas perguntas. **Onde termina o defeito?** **Terminal** se vai até a ponta do membro; **intercalar** se falta um segmento do meio e o que é distal existe. **Em que direção?** **Transversal**, como um corte de lado a lado, ou **paraxial** (antes chamada longitudinal), quando falta uma faixa paralela ao eixo. **Hemimelia** é a falta de um dos ossos pareados, **completa** ou **incompleta**. A mão torta radial com rádio ausente é uma hemimelia terminal paraxial completa; a focomelia é a intercalar transversal completa. A classificação ISO/ISPO de 1991 simplificou tudo em transversal ou longitudinal, sem intercalar.
 
-!questoes central=mao-0509 relacionadas=mao-0491
+!questoes central=mao-0509 relacionadas=mao-0491,mao-0488
 conceito: Na classificação de SWANSON, a ectrodactilia (mão em fenda) é falha de formação; FRANTZ e O'RAHILLY cruzam terminal ou intercalar com transversal ou paraxial.
-como: O TARO 2012 perguntou a categoria da ectrodactilia segundo SWANSON e o significado da notação T/1.
+como: O TARO 2012 perguntou a categoria da ectrodactilia segundo SWANSON (em duas versões da mesma questão no acervo) e o significado da notação T/1.
 armadilha: Pôr a mão em fenda em falha de diferenciação, que é a categoria das partes formadas que não se separaram.
 alerta: O Tachdjian descreve os termos de FRANTZ e O'RAHILLY, mas não a sigla T/1 de `mao-0491`; o gabarito oficial foi preservado.
+!fim
+
+A falha de diferenciação merece uma linha a mais, porque é a categoria que a banca usa para separar o que "não se separou" do que "não se formou". Nela, as partes existem, mas não se individualizam: a sindactilia (os dedos não se separaram), a sinostose radioulnar (o rádio e a ulna não se separaram na interzona) e, nas partes moles, a artrogripose, a camptodactilia, o polegar em adução e flexão e as ausências ou anomalias de tendões, como a ausência dos extensores. A embriologia explica a fronteira: falha de formação é um eixo que não construiu (crista apical, ZPA); falha de diferenciação é apoptose ou cavitação que não aconteceu.
+
+!questoes central=mao-1812 relacionadas=mao-1853
+conceito: Na classificação embriológica da IFSSH (SWANSON), falha de diferenciação reúne partes formadas que não se separaram: sindactilia e sinostose no esqueleto e nos dedos, e, nas partes moles, alterações como a ausência de extensores; mão torta radial é falha de formação, e mão em espelho é duplicação.
+como: O ENARE Cirurgia da Mão 2022 pediu o par que só tem falha de diferenciação (sinostose e sindactilia); o ENARE 2023, a categoria da ausência de extensores (falha de diferenciação das partes moles).
+armadilha: Pôr a mão torta radial em falha de diferenciação (é falha de formação longitudinal) ou a mão em espelho (é duplicação); classificar a ausência de extensores como falha de formação.
 !fim
 
 # A sindactilia {radar=confirmado}
@@ -752,7 +1099,11 @@ alerta: `mao-0647` não tem gabarito oficial publicado; a resposta provável (er
 !tabela Os fatos que mais caem
 | Tema | O fato | Fonte |
 | --- | --- | --- |
-| embriologia | AER = comprimento; **ZPA = radioulnar** (polidactilia, espelho); Wnt = dorsoventral; janela de **4 a 8 semanas** | Green, cap. 35 |
+| embriologia | broto aos **26 dias**; diferenciação regional na **6ª semana**; dedos separados com **52 a 53 dias**; janela de **4 a 8 semanas**; ulna ossifica **depois** do rádio | Green, cap. 35, p. 1208 e Tabela 35.1 |
+| células do broto | **placa lateral** = osso, cartilagem e tendão; **somático** = músculo, nervo e vaso | Green, cap. 35, p. 1208 |
+| centros | AER (ectoderma, **FGF**) = comprimento, **deficiência transversa**; **ZPA** (mesoderma posterior, **sonic hedgehog**) = radioulnar, **mão em espelho**, polegar trifalângico; **Wnt7a/Lmx-1** = dorsoventral, **unha-patela**; Engrailed-1 bloqueia na palma | Green, cap. 35, Tabela 35.2 |
+| apoptose e articulações | **BMP dispara** a apoptose; **APERT** (FGF) a anula; condrogênico central (pouco oxigênio); falha da cavitação = **sinostose**; sem movimento = **artrogripose** | Green, cap. 35, p. 1208 a 1212 |
+| genes | HOX: sinpolidactilia, mão-pé-genital, **MADELUNG de LERI-WEILL**; T-box: **HOLT-ORAM = Tbx5**, ulnar-mamária = Tbx3; CDMP = braquidactilia | Green, cap. 35, p. 1213 e 1214 |
 | SWANSON | fenda (ectrodactilia) = **falha de formação**; sindactilia e sinostose = falha de diferenciação | Tachdjian, cap. 12 |
 | OMT | banda de constrição e gatilho = **deformações**; macrodactilia = displasia | Tachdjian, cap. 12 |
 | sindactilia | **3ª comissura** (57%); 1ª a mais rara; borda cedo, centrais aos 12 a 18 meses; feixes normais na simples | Tachdjian (Fig. 12.114, p. 369); Green, cap. 36 |
