@@ -11111,15 +11111,15 @@
   },
   {
    "id": "green-artrose-punho-artroscopia",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Artrose do punho e artroscopia",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), caps. 74, 78 e 57, e o HEBERT (Ortopedia e Traumatologia, 5ª ed.), cap. 52",
    "capitulo": "Capítulo 12 · Wrist Arthrodesis and Arthroplasty",
-   "resumo": "SLAC de WATSON começa no estiloide e poupa a radiolunar; LLUCH: I radioescafoide, II escafocapitato, III lunocapitato, IV piramidal-hamato, V radiolunar; AR é a causa mais comum de artrose radiolunar isolada; escafocapitato e STT têm indicações e perda de movimento parecidas; escafoidectomia com quatro cantos no SLAC ou SNAC II e III, preferida abaixo de 45 anos; carpectomia proximal exige capitato e fossa do semilunar sãos e perde a indicação no estágio III; artrodese total com placa em 10 a 20° de extensão alinhada ao 3º metacarpo, cinco articulações, pseudartrose parcial na 3ª CMC (decorticar 80% dorsais), túnel do carpo até 10,5% com 67% de liberação; 3-4 é o portal de visão, 4-5 o de trabalho, 6-U de irrigação, mediocárpicos 1 cm distais; GEISSLER III admite o probe, IV o artroscópio; EWAS IIIB rompe o SL dorsal.",
+   "resumo": "Dor e estabilidade pesam mais que arco (PALMER: 30° de extensão, 5° de flexão, 10° de desvio radial e 15° de ulnar bastam); artrose primária do punho é incomum e mora na STT; SLAC de WATSON começa no estiloide e poupa a radiolunar; LLUCH: I radioescafoide, II escafocapitato, III lunocapitato, IV piramidal-hamato, V radiolunar; AR é a causa mais comum de artrose radiolunar isolada; escafocapitato e STT têm indicações e perda de movimento parecidas, escafoide a 40 a 50°; escafossemilunar tem pseudartrose de 50 a 85%; escafoidectomia com quatro cantos no SLAC ou SNAC II e III, contraindicada pela fossa do semilunar doente, com o semilunar reduzido como passo mais importante; carpectomia proximal exige capitato e fossa do semilunar sãos; artrodese total com placa do rádio ao 3º metacarpo, cinco articulações, pseudartrose parcial na 3ª CMC (decorticar 80% dorsais ou retirar a placa), ELP deixado superficial ao retináculo, túnel do carpo até 10,5% com 67% de liberação; pino de STEINMANN de MILLENDER e NALEBUFF viola a 3ª MCF; prótese só em baixa demanda; 3-4 é o portal de visão, 4-5 o de trabalho, 6-U de irrigação, mediocárpicos 1 cm distais; GEISSLER III admite o probe, IV o artroscópio; EWAS IIIB rompe o SL dorsal.",
    "acesso": "gratis",
-   "minutos": 40,
+   "minutos": 66,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11127,8 +11127,13 @@
      "radar": "fundamento"
     },
     {
-     "id": "como-o-punho-degenera-e-como-se-avalia",
-     "titulo": "Como o punho degenera e como se avalia",
+     "id": "por-que-operar-um-punho-artrosico",
+     "titulo": "Por que operar um punho artrósico",
+     "radar": "fundamento"
+    },
+    {
+     "id": "avaliacao-exame-e-imagem",
+     "titulo": "Avaliação: exame e imagem",
      "radar": "fundamento"
     },
     {
@@ -11137,8 +11142,13 @@
      "radar": "confirmado"
     },
     {
-     "id": "artroses-parciais-radiocarpica-radiolunar-e-stt",
-     "titulo": "Artroses parciais: radiocárpica, radiolunar e STT",
+     "id": "as-artrodeses-parciais-logica-e-historia",
+     "titulo": "As artrodeses parciais: lógica e história",
+     "radar": "fundamento"
+    },
+    {
+     "id": "artroses-parciais-radiolunar-radioescafossemilun",
+     "titulo": "Artroses parciais: radiolunar, radioescafossemilunar e STT",
      "radar": "clinico"
     },
     {
@@ -11227,14 +11237,26 @@
     "mao-0114"
    ],
    "treino": [
+    "mao-3585",
+    "mao-3593",
     "mao-1961",
+    "mao-3583",
     "mao-2207",
+    "mao-3588",
     "mao-1784",
     "mao-2123",
     "mao-2035",
+    "mao-3591",
+    "mao-3592",
     "mao-1688",
     "mao-2467",
+    "mao-3587",
+    "mao-3590",
     "mao-2506",
+    "mao-3586",
+    "mao-3584",
+    "mao-3589",
+    "mao-3582",
     "mao-2507",
     "mao-1962",
     "mao-2400",
