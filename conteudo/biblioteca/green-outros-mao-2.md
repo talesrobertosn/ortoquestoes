@@ -1,6 +1,6 @@
 ---
 id: green-outros-mao-2
-versao: 2
+versao: 3
 titulo: Outros temas da mão (2): síndrome compartimental, VOLKMANN, aneurismas e trauma do cotovelo
 especialidade: mao
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017)
 capitulo: Capítulo 20 · Fractures of the Proximal Ulna (com os capítulos 18, 19, 21, 22, 51, 54 e 60)
 autores: George S.M. Dyer e David Ring
-fonte: Livros conferidos localmente em 10/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 51 (Compartment Syndrome and Volkmann Ischemic Contracture, págs. 1763 a 1786), cap. 60 (Vascular Disorders of the Hand, págs. 2037 a 2054), cap. 54 (Factitious Disorders, pág. 1828), cap. 5 (pág. 177), cap. 18 (Fractures of the Distal Humerus, págs. 703 e 751 a 753), cap. 19 (Fractures of the Radial Head, págs. 735 a 739 e 761), cap. 20 (Fractures of the Proximal Ulna, págs. 770 a 781), cap. 21 (Disorders of the Forearm Axis, págs. 791 a 799), cap. 22 (Complex Traumatic Elbow Dislocation, págs. 814 a 827) e cap. 1 (págs. 2 e 6); Campbell's Operative Orthopaedics, 15ª ed., cap. 79 (Compartment Syndromes and Volkmann Contracture, págs. 3501 a 3511), cap. 75 (Special Hand Disorders, págs. 3360 e 3376), cap. 38 (pág. 1389) e cap. 44 (pág. 1718); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 20 e 42; Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 10; Tachdjian's Pediatric Orthopaedics, 6ª ed. (bibliografia das fraturas do antebraço); HEBERT, Ortopedia e Traumatologia, 5ª ed. (síndrome compartimental).
+fonte: Livros conferidos localmente em 10/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 51 (Compartment Syndrome and Volkmann Ischemic Contracture, págs. 1763 a 1786), cap. 60 (Vascular Disorders of the Hand, págs. 2037 a 2054), cap. 54 (Factitious Disorders, pág. 1828), cap. 5 (pág. 177), cap. 18 (Fractures of the Distal Humerus, págs. 703 e 751 a 753), cap. 19 (Fractures of the Radial Head, págs. 735 a 739 e 761), cap. 20 (Fractures of the Proximal Ulna, págs. 770 a 781), cap. 21 (Disorders of the Forearm Axis, págs. 791 a 799), cap. 22 (Complex Traumatic Elbow Dislocation, págs. 814 a 827) e cap. 1 (págs. 2 e 6); Campbell's Operative Orthopaedics, 15ª ed., cap. 79 (Compartment Syndromes and Volkmann Contracture, págs. 3501 a 3511), cap. 75 (Special Hand Disorders, págs. 3360 e 3376), cap. 38 (pág. 1389) e cap. 44 (pág. 1718); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 20 e 42; Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 10; Tachdjian's Pediatric Orthopaedics, 6ª ed. (bibliografia das fraturas do antebraço); HEBERT, Ortopedia e Traumatologia, 5ª ed. (síndrome compartimental). Em 19/11/2026, Green's Operative Hand Surgery, 7ª ed., cap. 52 (Management of Venomous Injuries, págs. 1788 a 1796), lido inteiro, e, para escorpião e primeiros socorros, que o Green não trata, o Manual de Diagnóstico e Tratamento de Acidentes por Animais Peçonhentos (Artrópodes e Peixes), Ministério da Saúde/Fundação Nacional de Saúde, 2ª ed., 1992, pp. 11 a 17 (escorpionismo), conferido no texto digitalizado da BVS/MS (outras edições do manual constam nas referências 3 e 44 do cap. 52); para os primeiros socorros na picada de cobra, que o Green não trata, PARKER-COTE e MEGGS, Trop Med Infect Dis 3(2):45, 2018, PMID 30274441, e AVAU e colaboradores, PLoS Negl Trop Dis 10(10):e0005079, 2016, PMID 27749906.
 subtemas: Outros temas da mão
-resumo: Síndrome compartimental (adulto, rádio distal e dois ossos; criança, dois ossos e cotovelo flutuante; coagulopatia contraindica medir a pressão; mão com 10 compartimentos; fasciotomia nas primeiras 8 h); neonatal com lesão sentinela no braço; VOLKMANN pela classificação de TSUGE (leve, moderada com déficit sensitivo do mediano, grave com extensores) e pseudo-VOLKMANN; aneurismas raros, falsos, traumáticos e da artéria ulnar; SECRETAN como linfedema factício; capítulo do úmero (tipo IV e DUBBERLEY); cabeça do rádio (valgo e supinação, sinal da vela, zona segura de 110 graus, necrose assintomática); círculo de HORII; MONTEGGIA (alinhar a ulna, interósseo posterior).
+resumo: Síndrome compartimental (adulto, rádio distal e dois ossos; criança, dois ossos e cotovelo flutuante; coagulopatia contraindica medir a pressão; mão com 10 compartimentos; fasciotomia nas primeiras 8 h); neonatal com lesão sentinela no braço; VOLKMANN pela classificação de TSUGE (leve, moderada com déficit sensitivo do mediano, grave com extensores) e pseudo-VOLKMANN; aneurismas raros, falsos, traumáticos e da artéria ulnar; SECRETAN como linfedema factício; capítulo do úmero (tipo IV e DUBBERLEY); cabeça do rádio (valgo e supinação, sinal da vela, zona segura de 110 graus, necrose assintomática); círculo de HORII; MONTEGGIA (alinhar a ulna, interósseo posterior); animais peçonhentos (Loxosceles com cirurgia tardia, Viperidae com soro e fasciotomia rara, escorpião, água-viva, peixes).
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -529,12 +529,128 @@ O nervo frênico aparece nos livros de Cirurgia da Mão por causa do plexo braqu
 
 Desses dados sai parte do raciocínio da questão: se o bloqueio do frênico paralisa o diafragma do mesmo lado, a laceração do nervo **não deixa normal a função do hemidiafragma ipsilateral**. O trajeto colado ao pericárdio ajuda a entender por que o gabarito aponta a sensibilidade do **pericárdio fibroso e da pleura mediastinal**, mas esse território sensitivo não está descrito em nenhum dos livros conferidos.
 
-!questoes central=mao-1628
+!questoes central=mao-1628 treino=mao-3841
 conceito: O frênico é o nervo motor do diafragma e desce sobre o pericárdio; a lesão paralisa o hemidiafragma ipsilateral e, pelo gabarito, tira a sensibilidade do pericárdio fibroso e da pleura mediastinal.
 como: A USP-SP 2026 descreveu um ferimento por arma branca com suspeita de laceração do frênico direito e pediu o achado compatível.
 armadilha: Aceitar função normal do diafragma do lado lesado; os livros conferidos sustentam a paralisia ipsilateral, mas não permitem discutir as alternativas sensitivas.
 alerta: Em `mao-1628`, os livros locais conferidos (Green 7ª ed., Campbell 15ª ed.) trazem só o trajeto e a função motora do nervo frênico; nenhum descreve a inervação sensitiva do pericárdio fibroso e da pleura mediastinal. Gabarito oficial mantido.
 !fim
+
+# Animais peçonhentos: cobras, aranhas, escorpiões e animais marinhos {radar=clinico}
+
+O capítulo 52 do Green's Operative Hand Surgery, 7ª ed. (Management of Venomous Injuries, p. 1788 a 1796), tem um sabor brasileiro: os autores são Vidal HADDAD Jr. e Trajano SARDENBERG, de Botucatu, e quase todas as fotos e boa parte das referências vêm do Brasil, com apoio do Instituto Butantan. É um capítulo curto, de baixa incidência em prova, mas cheio de condutas que contrariam o senso comum: não garrotear, não operar cedo a aranha-marrom, não lavar a queimadura de água-viva com água doce. O escorpião e os primeiros socorros leigos não estão no Green; para o escorpião, este resumo usa o Manual de Diagnóstico e Tratamento de Acidentes por Animais Peçonhentos do Ministério da Saúde (Fundação Nacional de Saúde, 2ª ed., 1992, Artrópodes e Peixes), cujas outras edições o próprio capítulo lista entre as referências; para os primeiros socorros na picada de cobra, duas revisões indexadas (PMID 30274441 e 27749906).
+
+## Peçonhento e venenoso não são a mesma coisa
+
+O Green (p. 1788) começa por uma distinção que vale a pena guardar. **Animal peçonhento** (venomous) produz ou armazena toxinas e as **inocula** por um aparelho próprio: presas, ferrão, quelíceras, nematocistos. Cobras, aranhas, escorpiões, arraias e águas-vivas são peçonhentos. **Animal venenoso** (poisonous) tem toxina, mas sem aparelho para injetá-la; ela só age por contato quando o animal é manuseado ou esmagado, como em alguns besouros e sapos.
+
+O veneno é uma mistura de toxinas que serve para defesa e para obter alimento. Os alvos são três: o **sangue** (efeito hemolítico e sobre a coagulação), o **sistema nervoso** (efeito neurotóxico) e o **tecido do local** (efeito necrosante). A regra que organiza a cirurgia da mão é simples: venenos sobretudo neurotóxicos ou hemolíticos dão pouca lesão local; frações coagulantes, anticoagulantes e **proteolíticas** causam necrose grave, e a necrose abre a porta à infecção bacteriana secundária.
+
+Pela profundidade, há duas lesões: a **superficial** (cutânea), por contato com substância irritante de invertebrados, como a água-viva; e a **de inoculação**, com veneno na derme e no subcutâneo e necrose variável, que é profunda e grave nas cobras e em algumas aranhas.
+
+O perfil de quem é picado por cobra é o do **homem lavrador, sem proteção nos pés e nas pernas**. A mão é atingida pela sua função **exploratória**: a criança que enfia a mão num buraco, o adulto que colhe, pesca ou mexe em lenha.
+
+## Lagartas: o acidente mais comum
+
+O envenenamento por lagartas (taturanas, das famílias Saturniidae e Megalopygidae, Fig. 52.1) é o **mais comum entre todos os animais peçonhentos** no mundo. As cerdas ocas carregam a toxina. A dor é intensa e **desproporcional** ao eritema e ao edema, que são discretos; às vezes há necrose superficial. O tratamento é o **bloqueio anestésico regional** para a dor, e não há sequela tardia. (No Brasil, a Lonomia causa também síndrome hemorrágica, com soro próprio, assunto do Manual do Ministério da Saúde e não do Green.)
+
+## Aranhas: quem mata e quem necrosa
+
+A maioria das picadas de aranha tem efeito local e sistêmico mínimo; analgesia e higiene bastam. O Green (p. 1788 e 1789) separa dois grupos perigosos, e a lógica é oposta entre eles:
+
+!tabela Aranhas de importância médica (Green 7, cap. 52, p. 1788 e 1789)
+| Grupo | Exemplos | O que predomina |
+|---|---|---|
+| Neurotóxicas | Latrodectus (viúva-negra), Atrax (funnel web), Phoneutria (armadeira) | Risco sistêmico e de vida, sem lesão local importante |
+| Necrosantes | Loxosceles (aranha-marrom) | Lesão local grave com necrose |
+!fim
+
+A **Loxosceles** é a aranha da cirurgia da mão. É cosmopolita, vive dentro de casa, em lugares escuros (atrás de quadros, em roupas guardadas, no meio de toalhas), e pica quando é comprimida contra o corpo, ao vestir uma roupa ou ao se enxugar. Braço e mão são 15 a 30% das picadas, e a incapacidade pode ser longa. A fração principal do veneno é a **esfingomielinase D**, responsável pela necrose cutânea, pela vasculite e pela hemólise.
+
+A evolução tem um tempo característico, e conhecê-lo evita erros:
+
+1. A picada é pouco dolorosa e muitas vezes passa despercebida.
+2. Em **2 a 6 horas**, surgem dor em queimação, eritema e palidez; depois, cianose e edema, às vezes bolhas hemorrágicas. A mistura de áreas pálidas (isquemia) e vermelhas (hemorragia) na mesma lesão é a chamada placa marmórea.
+3. A **necrose** fica evidente em **3 a 7 dias** (Fig. 52.2, necrose do quinto dedo). Se não há lesão de pele em 2 a 3 dias, a necrose é improvável.
+4. A forma **cutâneo-visceral** aparece em 24 a 72 horas: febre, artralgia, vômitos, **hemólise**, petéquias, urticária e, no extremo, coagulação intravascular disseminada e insuficiência renal.
+
+O diagnóstico de certeza exigiria capturar e identificar a aranha, o que é raro; na prática, ele é clínico. A necrose não é específica e entra no diferencial com erisipela, celulite, fasciíte necrosante e infecções por fungos e bactérias.
+
+Não há tratamento padronizado. Na fase inicial: repouso, **compressas frias**, elevação, limpeza, profilaxia do tétano, analgésico e mobilização suave. Nos casos moderados ou graves, com necrose significativa: **dapsona**, corticoide, excisão cirúrgica e soro. A dapsona, uma sulfona usada na hanseníase, bloqueia a diapedese dos neutrófilos que amplificam a necrose; é usada na fase tardia (a partir de 48 horas), em 100 a 300 mg por dia. O Green é honesto: nenhum estudo conclusivo comprovou a eficácia da dapsona ou do corticoide. Antibiótico de verdade só quando há infecção secundária. O **soro antiloxoscélico** é rotina no Brasil e evita a necrose se dado nas **primeiras 12 horas**; nos Estados Unidos ele não existe.
+
+A conduta cirúrgica é o ponto que a prova pode cobrar: **a necrose da Loxosceles fica ativa por 2 a 8 semanas**. Operar cedo é cortar num tecido que ainda vai necrosar. REES mostrou melhores resultados com dapsona e excisão adiada do que com excisão precoce. A conduta prudente é desbridar o que já morreu, manter a higiene e esperar estabilizar; desbridamento extenso, enxerto ou retalho só **depois da 6ª a 8ª semana** (p. 1794).
+
+## Cobras: Elapidae e Viperidae
+
+As famílias de importância médica são duas, e a diferença entre elas decide o que o cirurgião da mão vai ver (Green, p. 1789 a 1791):
+
+!tabela Cobras peçonhentas (Green 7, cap. 52, p. 1789 e 1790)
+| Família | Exemplos | Lesão local | Efeito sistêmico típico |
+|---|---|---|---|
+| Elapidae | Coral americana (Micrurus), mambas, najas, taipans | Pouca | Neurotóxico e miolítico: paralisia, ptose ("face miastênica") |
+| Viperidae | Bothrops (jararaca), Crotalus (cascavel), Lachesis (surucucu), Agkistrodon; víboras do Velho Mundo | Necrose de pele e de estruturas profundas, edema, bolhas | Coagulopatia e hemorragia; a cascavel é sobretudo neurotóxica |
+!fim
+
+Nas **Elapidae**, o sinal típico é a **face miastênica** (drunken face), com ptose palpebral, que não deve ser confundida com miastenia gravis nem com embriaguez; o efeito principal é a paralisia muscular, e a prioridade é reconhecer cedo o envenenamento grave.
+
+Nas **Viperidae**, que no Brasil são sobretudo a **jararaca (Bothrops)** e a **cascavel (Crotalus)**, a lesão local manda. O veneno da Crotalus durissus é principalmente neurotóxico, mas também pode necrosar a pele. A necrose depende da capacidade das frações do veneno de destruir tecido e de onde ele foi depositado (subcutâneo ou músculo); a marca da presa pode ser invisível. Os achados, em ordem:
+
+- **Edema muito precoce e intenso**, com **dor proporcional ao edema** (Fig. 52.4); o edema pode comprimir e causar isquemia na mão.
+- Fatores coagulantes e anticoagulantes, com efeito local e sistêmico: equimose, sangramento.
+- **Bolhas**, muitas vezes hemorrágicas (Fig. 52.5); necrose extensa que simula erisipela e celulite.
+- **Infecção secundária** comum, que estende a necrose (Fig. 52.6), com **abscesso por bacilos gram-negativos e anaeróbios**, vindos da boca da cobra e da pele.
+- **Amputação**, sobretudo de **dedos**, pela circulação terminal; a necrose pode chegar a músculo, tendão e osso.
+
+## O soro e o que não fazer
+
+A frase central do Green (p. 1791) é: **a soroterapia específica é o único tratamento que vale a pena, mas tem pouco efeito nas complicações locais**. O soro é específico para o gênero (antibotrópico, anticrotálico, antilaquético, antielapídico; nos Estados Unidos, o CroFab, fragmento Fab ovino aprovado pela FDA em 2000). Ele neutraliza o veneno circulante e corrige a coagulopatia, mas a necrose local, que começa em minutos, já está em curso quando o soro chega.
+
+Os primeiros socorros leigos não estão no Green. Duas revisões indexadas (PARKER-COTE e MEGGS, Trop Med Infect Dis 2018, PMID 30274441; AVAU e colaboradores, PLoS Negl Trop Dis 2016, PMID 27749906) sustentam o essencial:
+
+- **Não fazer garrote**: o torniquete causa isquemia do membro e amputações, e a evidência recomenda evitá-lo.
+- **Não usar aparelhos de sucção**: não têm eficácia nos estudos experimentais.
+- **Imobilizar o paciente e levá-lo rápido** a um serviço que tenha soro. A bandagem com pressão e imobilização é a única técnica com efeito comprovado sobre a dispersão do veneno, mas é difícil de aplicar corretamente por leigos e pode aumentar a lesão local nos venenos que destroem tecido, como o das Viperidae; por isso a conduta se individualiza.
+
+## Síndrome compartimental após picada de cobra
+
+A **síndrome compartimental** é uma complicação **rara, mas muito grave** da picada de Viperidae: dedos, perna e antebraço, dorsal e volar. O problema é que o envenenamento já dá dor e edema intensos, as duas armas habituais do diagnóstico. O sinal mais valioso, segundo o Green, é a **dor não proporcional ao edema** somada à limitação neuromuscular. Nos Estados Unidos, o padrão-ouro é **medir a pressão** do compartimento. Pode haver hipotensão sistêmica com pulso periférico normal.
+
+A picada de víbora difere das outras causas porque o veneno vai direto para a pele e o subcutâneo, com edema, equimose e inchaço imediatos, e pode ou não cair num compartimento fechado. O Green (p. 1791) dá uma sequência de decisões:
+
+1. Se o membro parece isquêmico ou com síndrome compartimental, preparar para cirurgia, com o soro em curso ou não, mas **só operar depois dos exames de coagulação**.
+2. Se o inchaço exige **dermotomia** (abrir a pele apertada), a fáscia foi penetrada e há edema dentro do compartimento: fazer a **fasciotomia junto, sem medir a pressão**. Deixar a pele apertada sem liberar significa perda de tecido.
+3. Desbridar só a necrose das marcas das presas, nada além, nesse tempo.
+4. Sem sinal de perda tecidual nem de síndrome compartimental, **não operar**.
+5. Na dúvida, porque dor e edema confundem, **monitorizar a pressão continuamente** e decidir pela medida.
+
+Quando indicada, a fasciotomia é mais eficaz se precoce. Na tabela de causas do capítulo 51, resumida neste mesmo resumo na seção da síndrome compartimental aguda, a picada de cobra crotalídea aparece como causa intrínseca tratada com soro e que raramente pede descompressão; o capítulo 52 explica quando essa descompressão rara deve ser feita.
+
+## Escorpiões
+
+O escorpião não está no Green. O Manual do Ministério da Saúde (1992) informa que, no Brasil, só o gênero Tityus tem interesse médico, que as picadas ocorrem sobretudo nos membros superiores, principalmente nas mãos (o escorpião só pica quando é tocado), e descreve o quadro: o veneno age nos canais de sódio, despolariza as terminações nervosas pós-ganglionares e libera catecolaminas e acetilcolina. O T. serrulatus causa os acidentes mais graves.
+
+- **Local**: a dor local é constante no escorpionismo e pode vir com parestesias; nos casos leves é o único achado.
+- **Sistêmico** (minutos a 2 horas depois): sudorese, náuseas, vômitos, sialorreia, agitação, arritmias, hipertensão ou hipotensão e, nos graves, bradicardia, edema pulmonar agudo, choque, convulsões e coma. Os acidentes são mais graves em **crianças e idosos**.
+- **Tratamento**: analgesia (dipirona e, se necessário, **lidocaína a 2% sem vasoconstritor** infiltrada no local); **soro antiescorpiônico** (ou antiaracnídico), o mais cedo possível, nos casos moderados e graves, em geral em crianças e idosos; os leves, só com dor e parestesia, não recebem soro.
+
+Para o cirurgião da mão, o escorpião não é um problema cirúrgico: o quadro é de dor local e risco sistêmico. O raciocínio de prova é saber que o perigo está na manifestação sistêmica, sobretudo em crianças e idosos.
+
+## Animais marinhos: água-viva, ouriço e peixes
+
+**Cnidários** (água-viva, caravela, anêmonas, corais) têm células com **nematocistos**, cápsulas que disparam um tubo com veneno neurotóxico e necrosante; são milhões por tentáculo. A dor é imediata e intensa, ainda dentro da água, com placas eritematosas lineares que copiam a forma dos tentáculos; na caravela (Physalia), a necrose superficial fica em contas de rosário (Fig. 52.7). Chamar isso de queimadura é errado: é envenenamento. No local, usar **água do mar gelada** e banhar com **vinagre**, que estabiliza os nematocistos ainda não disparados; **nunca água doce**, porque a diferença osmótica faz os nematocistos restantes dispararem (p. 1791 e 1792).
+
+O **ouriço-do-mar** tem espinhos de carbonato de cálcio, que podem ser peçonhentos; o espinho retido dá granuloma de corpo estranho e infecção. A conduta é a **extração precoce**, por incisão elíptica no ponto de entrada ou com agulha de grosso calibre, sob magnificação (Fig. 52.8). Água quente, vela, vinagre e urina só controlam a dor; o granuloma tardio pede extração cirúrgica.
+
+Os **peixes peçonhentos** agem de forma parecida: **dor intensa**, pela neurotoxicidade, necrose variável e infecção secundária comum (p. 1792 e 1793). Os mais peçonhentos são os escorpenídeos: o peixe-pedra, o peixe-escorpião e o **peixe-leão**, vendido para aquário. Também ferem as arraias, marinhas e de água doce, e os bagres.
+
+- **Bagre**: três ferrões serrilhados (um dorsal e dois peitorais); é o envenenamento por peixe mais comum, cerca de 80% dos casos na série do capítulo. O fragmento de ferrão retido e a infecção levam a **osteomielite** e até amputação do raio (Figs. 52.10 e 52.11). Os germes são aquáticos: Edwardsiella tarda, Vibrio e Aeromonas hydrophila; o antibiótico inicial é aminoglicosídeo ou ciprofloxacino, e a infecção instalada pede desbridamento agressivo. Nódulo doloroso dias depois com fragmento na radiografia é indicação de retirar o fragmento.
+- **Arraia**: ferrão ósseo na cauda; dor intensa e necrose em 24 horas, com úlcera extensa e lenta (Fig. 52.12), que entra no diferencial com úlcera tropical, pioderma gangrenoso, anemia falciforme, estase venosa e erisipela bolhosa.
+
+Para qualquer acidente por peixe peçonhento, a medida inicial é a **água quente** tolerável, em torno de 40 °C: o calor desnatura as proteínas termolábeis do veneno e provoca vasodilatação contra a vasoconstrição que ele causa. A dor volta se a imersão for interrompida cedo, e é preciso cuidado para não queimar uma pele já anestesiada pela dor. A úlcera crônica é tratada com retalho ou enxerto.
+
+Os peixes não peçonhentos (tubarão, barracuda, moreia) lesam por laceração e infecção; a saliva da moreia tem toxinas associadas a dor desproporcional (Fig. 52.13).
+
+> **Na prova:** **peçonhento inocula**, venenoso só por contato; lagarta = acidente **mais comum**, dor **desproporcional**, bloqueio anestésico; **Loxosceles** = necrose por **esfingomielinase D**, necrose em **3 a 7 dias**, ativa por **2 a 8 semanas**, cirurgia **tardia** (6ª a 8ª semana), soro nas **primeiras 12 h**, dapsona sem prova; viúva-negra e armadeira = **sistêmicas sem lesão local**; **Elapidae** (coral) = **neurotóxica**, **face miastênica**; **Viperidae** (jararaca, cascavel) = **edema precoce**, **dor proporcional ao edema**, bolhas, necrose, **gram-negativos e anaeróbios**, amputação de **dedos**; **soro** é o único tratamento útil, **pouco efeito local**; **não garrotear, não usar sucção**, imobilizar e transportar; síndrome compartimental **rara**, sinal = **dor desproporcional ao edema**, operar só **depois da coagulação**, dermotomia = fasciotomia sem medir; escorpião = **dor local**, risco **sistêmico** em crianças e idosos, lidocaína sem vasoconstritor e soro nos moderados e graves; água-viva = **água do mar gelada e vinagre, nunca água doce**; ouriço = **extração precoce**; peixe = **água quente**; bagre = fragmento retido e **osteomielite**.
 
 # Fechamento {radar=fundamento}
 
