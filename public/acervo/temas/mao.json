@@ -95636,11 +95636,11 @@
         },
         {
           "letra": "C",
-          "texto": "Em pronação leve"
+          "texto": "Em supinação leve"
         },
         {
           "letra": "D",
-          "texto": "Em posição neutra ou leve supinação"
+          "texto": "Em posição neutra ou leve pronação"
         }
       ],
       "gabarito": "D",
@@ -166569,6 +166569,367 @@
         "arquivo": "SBCM 2025",
         "pagina": 1755,
         "numeroOriginal": 64
+      }
+    },
+    {
+      "id": "mao-3816",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Outras malformações congênitas"
+      ],
+      "prova": "SBCM",
+      "simulado": true,
+      "area": "cirurgia-mao",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "A artrogripose distal do tipo 9, conhecida como síndrome de BEALS, reúne quais achados característicos?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Face de assobio, boca pequena e pé torto"
+        },
+        {
+          "letra": "B",
+          "texto": "Aracnodactilia, camptodactilia e estatura alta"
+        },
+        {
+          "letra": "C",
+          "texto": "Fenda palatina, camptodactilia e baixa estatura"
+        },
+        {
+          "letra": "D",
+          "texto": "Pterígios múltiplos, ptose e escoliose"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBCM 2025",
+        "pagina": 1368,
+        "numeroOriginal": 26
+      }
+    },
+    {
+      "id": "mao-3817",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Outras malformações congênitas"
+      ],
+      "prova": "SIMÃO",
+      "simulado": true,
+      "area": "cirurgia-mao",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na criança com AMIOPLASIA, qual é a combinação mais típica da postura do punho e do polegar?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Punho estendido; carpometacarpal estendida e metacarpofalângica fletida"
+        },
+        {
+          "letra": "B",
+          "texto": "Punho estendido; carpometacarpal fletida e metacarpofalângica estendida"
+        },
+        {
+          "letra": "C",
+          "texto": "Punho fletido; carpometacarpal estendida e metacarpofalângica fletida"
+        },
+        {
+          "letra": "D",
+          "texto": "Punho fletido; carpometacarpal fletida e metacarpofalângica estendida"
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SIMAO 2009",
+        "pagina": 1382,
+        "numeroOriginal": 42
+      }
+    },
+    {
+      "id": "mao-3818",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Outras malformações congênitas"
+      ],
+      "prova": "SIMÃO",
+      "simulado": true,
+      "area": "cirurgia-mao",
+      "ano": 2013,
+      "dificuldade": null,
+      "enunciado": "Qual contratura do membro superior é a mais frequente na amioplasia congênita?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Extensão do cotovelo"
+        },
+        {
+          "letra": "B",
+          "texto": "Supinação do antebraço"
+        },
+        {
+          "letra": "C",
+          "texto": "Flexão do cotovelo"
+        },
+        {
+          "letra": "D",
+          "texto": "Desvio radial do punho"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SIMAO 2013",
+        "pagina": 1366,
+        "numeroOriginal": 9
+      }
+    },
+    {
+      "id": "mao-3819",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Outras malformações congênitas"
+      ],
+      "prova": "SIMÃO",
+      "simulado": true,
+      "area": "cirurgia-mao",
+      "ano": 2014,
+      "dificuldade": null,
+      "enunciado": "Na osteotomia de rotação externa do úmero para a contratura em rotação interna do ombro na artrogripose, em que posição se fixa o braço?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Entre 15 e 30 graus de rotação externa"
+        },
+        {
+          "letra": "B",
+          "texto": "Entre 30 e 45 graus de rotação externa"
+        },
+        {
+          "letra": "C",
+          "texto": "Entre o neutro e 15 graus de rotação interna"
+        },
+        {
+          "letra": "D",
+          "texto": "Entre 30 e 45 graus de rotação interna"
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SIMAO 2014",
+        "pagina": 1370,
+        "numeroOriginal": 58
+      }
+    },
+    {
+      "id": "mao-3820",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Outras malformações congênitas"
+      ],
+      "prova": "SIMÃO",
+      "simulado": true,
+      "area": "cirurgia-mao",
+      "ano": 2015,
+      "dificuldade": null,
+      "enunciado": "Na osteotomia derrotativa do úmero na artrogripose, qual erro de rotação a criança pequena costuma compensar sozinha?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A subcorreção, que deixa o braço rodado para dentro"
+        },
+        {
+          "letra": "B",
+          "texto": "A hipercorreção, que deixa o braço rodado para fora"
+        },
+        {
+          "letra": "C",
+          "texto": "A subcorreção e a hipercorreção, igualmente"
+        },
+        {
+          "letra": "D",
+          "texto": "Nenhum dos dois, pela rigidez do ombro"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SIMAO 2015",
+        "pagina": 1372,
+        "numeroOriginal": 12
+      }
+    },
+    {
+      "id": "mao-3821",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Outras malformações congênitas",
+        "Deformidades dos dedos"
+      ],
+      "prova": "SIMÃO",
+      "simulado": true,
+      "area": "cirurgia-mao",
+      "ano": 2017,
+      "dificuldade": null,
+      "enunciado": "Menina de 7 anos com artrogripose distal fez Z-plastia volar e tenotomia do flexor superficial para camptodactilia da IFP. Qual é a complicação mais esperada?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rigidez do dedo operado"
+        },
+        {
+          "letra": "B",
+          "texto": "Lesão do nervo digital"
+        },
+        {
+          "letra": "C",
+          "texto": "Necrose do retalho da Z-plastia"
+        },
+        {
+          "letra": "D",
+          "texto": "Deformidade em pescoço de cisne"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SIMAO 2017",
+        "pagina": 1390,
+        "numeroOriginal": 19
+      }
+    },
+    {
+      "id": "mao-3822",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Outras malformações congênitas"
+      ],
+      "prova": "SIMÃO",
+      "simulado": true,
+      "area": "cirurgia-mao",
+      "ano": 2019,
+      "dificuldade": null,
+      "enunciado": "Criança com amioplasia parece ter o antebraço muito pronado, com o cotovelo rígido em extensão. De onde vem, em geral, essa postura?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Da contratura do pronador redondo"
+        },
+        {
+          "letra": "B",
+          "texto": "Da luxação congênita da cabeça do rádio"
+        },
+        {
+          "letra": "C",
+          "texto": "Da sinostose radioulnar proximal"
+        },
+        {
+          "letra": "D",
+          "texto": "Da rotação interna do ombro"
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SIMAO 2019",
+        "pagina": 1366,
+        "numeroOriginal": 23
+      }
+    },
+    {
+      "id": "mao-3823",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Outras malformações congênitas"
+      ],
+      "prova": "SIMÃO",
+      "simulado": true,
+      "area": "cirurgia-mao",
+      "ano": 2020,
+      "dificuldade": null,
+      "enunciado": "Bebê de 15 meses com amioplasia tem os cotovelos em extensão, com 20 graus de flexão passiva, e não leva a mão à boca. Qual a conduta indicada?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Transferir o tríceps inteiro para o bíceps"
+        },
+        {
+          "letra": "B",
+          "texto": "Transferir o grande dorsal para o bíceps"
+        },
+        {
+          "letra": "C",
+          "texto": "Liberar o cotovelo com alongamento do tríceps"
+        },
+        {
+          "letra": "D",
+          "texto": "Manter órtese em ampulheta até os 6 anos"
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SIMAO 2020",
+        "pagina": 1373,
+        "numeroOriginal": 81
       }
     }
   ]
