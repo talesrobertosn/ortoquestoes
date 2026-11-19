@@ -681,9 +681,9 @@ export function Sessao() {
   )
 
   function avancar() {
+    if (posicao + 1 >= total) { void concluir(); return }
     if (limiteZerado) { irAdiante(); return }
-    if (posicao + 1 < total) irPara(posicao + 1)
-    else concluir()
+    irPara(posicao + 1)
   }
 
   async function concluir() {
