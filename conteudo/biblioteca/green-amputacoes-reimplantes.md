@@ -1,6 +1,6 @@
 ---
 id: green-amputacoes-reimplantes
-versao: 2
+versao: 3
 titulo: Amputações e reimplantes na mão
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017)
 capitulo: Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)
 autores: James P. Higgins
-fonte: Livros conferidos localmente em 03/11/2026 e 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 42 (Replantation, págs. 1476 a 1484, lido inteiro, com a lista de referências das págs. 1484 e 1485), cap. 43 (Mangled Upper Extremity, págs. 1486 a 1490: objetivos, lesão de reperfusão, no-reflow e avaliação da perfusão do dedo), cap. 45 (págs. 1581 a 1584), cap. 47 (Toe-to-Hand Transplantation, págs. 1645 a 1668), cap. 48 (Thumb Reconstruction, págs. 1695 a 1705), cap. 49 (Digital Amputations, págs. 1708 a 1740) e cap. 50 (caso clínico); Campbell's Operative Orthopaedics, 15ª ed., cap. 20 (págs. 729 a 732), cap. 21 (Amputations of the Hand, págs. 748 a 778) e cap. 68 (Microsurgery, págs. 3024 a 3045, fonte da técnica microvascular, que o Green 7 deixou num capítulo só on-line); Rockwood and Green's Fractures in Adults, 10ª ed. (tabagismo). Estudos citados pelo nome conforme a lista de referências do cap. 42 do Green.
+fonte: Livros conferidos localmente em 03/11/2026 e 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 42 (Replantation, págs. 1476 a 1484, lido inteiro, com a lista de referências das págs. 1484 e 1485), cap. 43 (Mangled Upper Extremity, págs. 1486 a 1490: objetivos, lesão de reperfusão, no-reflow e avaliação da perfusão do dedo), cap. 45 (págs. 1581 a 1584), cap. 47 (Toe-to-Hand Transplantation, págs. 1645 a 1668), cap. 48 (Thumb Reconstruction, págs. 1676 a 1681 e 1695 a 1705), cap. 49 (Digital Amputations, de Sanjeev Kakar, págs. 1708 a 1752, relido em 19/11/2026 para ampliar as seções de amputação) e cap. 50 (caso clínico); Campbell's Operative Orthopaedics, 15ª ed., cap. 20 (págs. 729 a 732), cap. 21 (Amputations of the Hand, págs. 748 a 778) e cap. 68 (Microsurgery, págs. 3024 a 3045, fonte da técnica microvascular, que o Green 7 deixou num capítulo só on-line); Rockwood and Green's Fractures in Adults, 10ª ed. (tabagismo). Estudos citados pelo nome conforme a lista de referências do cap. 42 do Green.
 subtemas: Amputações e reimplantes
 resumo: Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.
 ---
@@ -30,7 +30,7 @@ Quase toda questão de reimplante se responde com quatro raciocínios que atrave
 - **Encurtar o osso serve ao nervo.** A sensibilidade recuperada é o que decide se o dedo vivo será usado; por isso o osso é encurtado o quanto for preciso para coaptar o nervo sem enxerto.
 - **A microcirurgia vem por último.** Reparos delicados não podem ser estragados pela manipulação de osso e tendão, e a artéria precisa do garrote solto para que se veja o jato do coto proximal.
 
-As provas cobram listas e números: horas de isquemia, indicações, sequência, número de veias por artéria, pressão do clamp, falha arterial contra venosa, sanguessuga, discriminação de dois pontos, ALLEN e TAMAI, o que cada raio leva e a policização. Os retalhos da ponta estão no resumo de retalhos e cobertura cutânea, e os retalhos livres, no resumo de retalhos livres.
+As provas cobram listas e números: horas de isquemia, indicações, sequência, número de veias por artéria, pressão do clamp, falha arterial contra venosa, sanguessuga, discriminação de dois pontos, ALLEN e TAMAI, o que cada raio leva e a policização. Na metade da amputação, este resumo segue o capítulo 49 de perto: princípios, ponta do dedo, retalhos locais (ATASOY, KUTLER, MOBERG, cross-finger e tenar), a polpa do polegar, os níveis, os raios, a prótese e o neuroma. As questões de cobertura cutânea em geral continuam no resumo de retalhos e cobertura cutânea, e os retalhos livres, no resumo de retalhos livres.
 
 > **Na prova:** polegar, vários dedos e criança são as indicações mais fortes; dedo aguenta 6 a 12 h quente e 24 h frio; pálido é arterial, azulado é venoso.
 
@@ -544,9 +544,46 @@ como: O TARO 2023 pediu a última estrutura.
 armadilha: Responder osso ou pele.
 !fim
 
+# Amputar como tratamento: os princípios {radar=fundamento}
+
+## Por que um capítulo inteiro sobre amputar
+
+O capítulo 49 do Green's Operative Hand Surgery, 7ª ed. (Digital Amputations, de Sanjeev KAKAR, p. 1708 a 1752), começa com uma ideia que muda o jeito de olhar o tema: a amputação não é a derrota da cirurgia da mão, é uma cirurgia reconstrutiva com objetivo próprio, que é devolver função. A causa mais comum é o **trauma acidental**; as outras são congênitas, tumor maligno, infecção crônica, dedo rígido ou doloroso como sequela e revisão de coto para encaixar prótese. Raramente aparecem a automutilação e a fraude de seguro, e o capítulo as cita porque o cirurgião precisa ter isso em mente quando a história não fecha.
+
+O peso do capítulo cresceu porque o entusiasmo pelo reimplante de dedo esfriou. Os resultados funcionais ruins vinham com custo maior: salários perdidos, internação longa e meses de terapia. O Green chama o reimplante que não serve ao paciente de **triunfo técnico** (p. 1708): o dedo vive, mas fica rígido, frio e insensível, e a mão passa a trabalhar contornando-o. Daí a valorização da amputação bem feita, que devolve o paciente ao trabalho em semanas.
+
+Para decidir, o cirurgião precisa conhecer a profissão e o lazer do paciente, ter empatia e avaliar a resposta emocional, porque o mesmo dedo tem valor diferente para um pianista, um pedreiro e um digitador. Não existe padrão-ouro para cada cenário: uns preferem técnicas elaboradas, outros encurtar e fechar ou deixar cicatrizar, e as séries comparativas raramente decidem a questão.
+
+## As oito metas e o porquê de cada uma
+
+O Green lista oito metas para toda amputação na mão (p. 1708). Cada uma responde a um problema concreto do coto:
+
+- **Comprimento funcional.** O dedo é uma alavanca; cada milímetro perdido diminui o alcance e a força da pinça. Encurtar só o necessário.
+- **Cobertura cutânea durável.** O coto vai bater, apertar e apoiar; pele fina sobre osso ulcera e dói.
+- **Sensibilidade útil.** Um dedo insensível é excluído do uso: o cérebro deixa de recrutá-lo, mesmo que se mova.
+- **Evitar o neuroma sintomático.** É a causa mais comum de coto doloroso e inútil; o nervo cortado sempre forma neuroma, e a técnica decide onde ele vai ficar.
+- **Evitar contratura das articulações vizinhas.** Imobilização longa e tendões amarrados enrijecem também os dedos sãos.
+- **Menor morbidade.** Retalhos de outros dedos e áreas doadoras cobram um preço.
+- **Prótese precoce**, quando couber.
+- **Volta precoce** ao trabalho e às atividades.
+
+As metas se contradizem com frequência: preservar comprimento pode exigir retalho (mais morbidade e mais tempo parado), e encurtar devolve o paciente ao trabalho mais cedo. A arte do capítulo é pesar essas metas caso a caso.
+
+## Criança, adulto e a dúvida entre salvar e amputar
+
+Na **criança**, a atitude é conservadora: a reconstrução tardia é preferível à ablação radical precoce (p. 1708). O motivo é biológico e prático: a criança cicatriza melhor, remodela, adapta o uso da mão com facilidade, e qualquer tecido preservado pode servir depois a uma reconstrução. No **adulto com papel definido**, como o trabalhador braçal que precisa voltar ao serviço, uma conduta mais definitiva acelera a reabilitação.
+
+Na dúvida entre salvar e amputar, o Green recomenda consultar um colega experiente, registrar no prontuário e **fotografar antes de amputar**. A intolerância ao frio é um problema importante depois de qualquer amputação ou reimplante, mas **melhora com o tempo**, e o paciente deve ouvir isso antes da cirurgia.
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 21, p. 748), dá um critério prático: considerar a amputação do dedo quando ele tem lesão de **mais de três** destes componentes: pele que exigiria enxerto, tendão, nervo, fratura ou esmagamento e articulação aberta. A lógica é cumulativa: cada estrutura lesada soma aderência, rigidez e dor, e o dedo com cinco componentes lesados tende a virar um dedo que atrapalha os outros.
+
+> **Na prova:** oito metas (comprimento, cobertura, sensibilidade, evitar neuroma e contratura, menor morbidade, prótese e volta precoces); criança conservadora; reimplante de dedo pode ser **triunfo técnico**; Campbell amputa com mais de três componentes lesados.
+
 # A ponta do dedo: ALLEN e TAMAI {radar=clinico}
 
-A amputação da ponta é a **mais comum** do membro superior (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1709), e o Green usa **HIRASE, ALLEN e TAMAI**; ISHIKAWA não aparece nos capítulos lidos. A chave é a **lúnula**, limite visível da matriz germinativa.
+A amputação da ponta é a **mais comum** do membro superior e também a **mais controversa**, porque há opções demais para o mesmo defeito (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1709). As metas não mudam: comprimento funcional e sensibilidade. O Green usa as classificações de **HIRASE, ALLEN e TAMAI** (fig. 49.1); ISHIKAWA não aparece nos capítulos lidos.
+
+A chave das duas classificações é a **lúnula**, a meia-lua branca na base da unha, que marca o limite visível da **matriz germinativa** (a parte que fabrica a unha). Distal a ela, a amputação tira polpa, leito estéril e osso, mas a unha volta a crescer do que restou; proximal a ela, a matriz se perde e a unha não volta. A lúnula também separa a ponta em que quase nunca há veia dorsal calibrosa para anastomose (distal) da região em que a **veia dorsal** muitas vezes está disponível (proximal), e por isso a zona 4 de ALLEN é a que se discute para reimplante.
 
 !tabela ALLEN e TAMAI (Green, cap. 49, fig. 49.1, p. 1709)
 | Zona | Limite | Perda |
@@ -561,17 +598,39 @@ A amputação da ponta é a **mais comum** do membro superior (Green's Operative
 
 **ALLEN 4 corresponde a TAMAI II**. Como na zona 4 há veia dorsal, o Campbell (cap. 68, p. 3031) chama a amputação **proximal à lúnula** de indicação relativa de reimplante; distais ao eponíquio, em geral não se reimplantam (cap. 21, p. 748).
 
+## A geometria do defeito decide a técnica
+
+Mais que a zona, o que escolhe a técnica é a **geometria** do corte (p. 1709): transversa, oblíqua com mais perda **volar**, oblíqua com mais perda **dorsal** ou lateral (radial ou ulnar). A razão é simples: todo retalho local é feito com a pele que sobrou. Na oblíqua dorsal, sobra polpa, e a polpa pode avançar; na oblíqua volar, a polpa foi embora, e o tecido tem de vir de outro lugar (dedo vizinho, eminência tenar, matriz dérmica). Essa frase resume metade das questões sobre retalhos da ponta.
+
 !questoes treino=mao-2065,mao-1945,mao-2262,mao-2416
 conceito: ALLEN 1 polpa, 2 leito distal, 3 leito proximal com osso, 4 proximal à lúnula; TAMAI I até a lúnula, II até a IFD; a matriz se perde em TAMAI II e ALLEN 4.
 como: A SBCM 2024 e 2023 e o SIMÃO 2023 e 2022 pediram zonas.
 armadilha: Pôr osso na zona 2 de ALLEN ou dar ao TAMAI quatro zonas.
 !fim
 
-# A ponta: cicatrizar, enxerto composto e criança {radar=confirmado}
+# A ponta sem osso exposto: cicatrizar, enxerto composto e criança {radar=confirmado}
 
-Sem osso exposto, a **segunda intenção** é uma das melhores opções (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1709 e 1710): perdas de **até 1,5 cm** reepitelizam em **3 a 4 semanas** com sensibilidade normal, melhor que as reconstruções; com perda de subcutâneo, **1 a 2 meses**. O enxerto parcial decepciona (56% bons contra 90% conservador). No fechamento primário, **neurectomia por tração**; na lúnula, **ablação** completa do leito para não sobrar corno ungueal; nunca puxar o leito sobre o osso, o que forma a **unha em gancho** (p. 1711). O Campbell (cap. 21, p. 749) faz a ablação se **metade da unha** fica sem apoio ósseo.
+## A segunda intenção e por que ela funciona
 
-O **enxerto composto** (recolocar a ponta como cobertura biológica) é **eficaz em crianças** distais à IFD, desengordurado e **sem microcirurgia**, com o osso fixado por sutura, fio ou agulha (Green, p. 1709). MOIEMEN e ELLIOT tiveram **61%** de sobrevida em até **5 horas** e nenhuma depois; nos **adultos** o sucesso é menor (43% entre IFD e eponíquio). O Campbell (cap. 21, p. 749 e 750) chama de técnica do **capuz**, mais bem-sucedida em crianças, e lembra que pontas de crianças pequenas cicatrizam sem enxerto. A ponta pode necrosar, mas o Green a deixa no lugar enquanto não houver infecção, porque funciona como curativo biológico. Nos adultos, HEISTEIN e COOK tiveram 43% de sucesso entre a IFD e o eponíquio e 58% distal ao eponíquio, com resultados piores no fumo, idade acima de 18 anos, álcool, diabetes e esmagamento; CHEN subiu a sobrevida para mais de 93% desengordurando, desepitelizando e retirando o osso da ponta (Green, p. 1709). O Campbell cita 61% de sobrevida total quando a cirurgia foi feita em até 5 horas, contra 31% de falha após 7 horas, e manda ventilar o enxerto contra hematoma (p. 749). Na criança, o Campbell só considera amputar se as partes não puderem ficar viáveis por microcirurgia (p. 748).
+Sem osso exposto, a **segunda intenção** com curativos é uma das melhores opções (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1709 e 1710; fig. 49.2): simples, barata e eficaz em qualquer idade. Perdas de pele de **até 1,5 cm** reepitelizam em **3 a 4 semanas**, com sensibilidade e discriminação de dois pontos normais, e a sensibilidade tende a ficar **melhor** que a das reconstruções cirúrgicas. Com perda de subcutâneo de tamanho parecido, leva **1 a 2 meses**.
+
+O mecanismo explica o resultado. A ferida se fecha por **contração**: a borda puxa para o centro a pele vizinha, que é pele de polpa, com os seus receptores e a sua inervação. O que sobra no meio é coberto por epitélio que migra das bordas. Um enxerto, ao contrário, traz pele de outra região, com menos receptores, cicatriz em volta e contração própria. Por isso, no dedo, a cicatrização espontânea costuma terminar com uma polpa mais sensível que a do enxerto. O Green menciona ainda a terapia por ultrassom (MIST), que reduz a carga bacteriana e aumenta angiogênese, fatores de crescimento e colágeno (p. 1710).
+
+As séries sustentam a regra. **BOJSEN-MOLLER** (134 lesões) viu o tratamento conservador quase sem complicações, com encurtamento e fechamento primário inferiores ao enxerto ou aos curativos e o mesmo tempo de afastamento. **ALLEN** (49 lesões, osso aparado para as partes moles cobrirem) teve 45 de 46 resultados bons ou muito bons, discriminação média de 6 mm, afastamento de 18 a 26 dias e nenhuma rigidez, mas intolerância ao frio em 50% (marcada em 10%) (p. 1710). **WEICHMAN** ensina a ler essas comparações com cuidado: os pacientes operados tinham feridas maiores (3,3 contra 1,75 cm), mais oblíquas volares (50 contra 9%), mais osso exposto (81 contra 35%) e mais fratura da falange distal (81 contra 47%), e ficaram afastados mais tempo (4,3 contra 2,9 semanas) (p. 1710 e 1711). Parte do pior resultado das cirurgias vem de lesões piores, não só da técnica.
+
+## Fechamento primário e enxerto de pele
+
+O **fechamento primário** só serve sem tensão, e na ponta costuma faltar derme móvel (p. 1711). HOLM e ZACHARIAE o acharam equivalente à segunda intenção; STURMAN e DURAN viram dor e alguma incapacidade em 51%.
+
+O **enxerto de pele parcial** precisa de leito vascularizado, contrai mais que o total e não pega sobre osso ou tendão sem paratendão. Na série de cinco anos de HOLM e ZACHARIAE, o resultado foi bom em **56%** com enxerto contra **90%** com segunda intenção; intolerância ao frio de 33% contra 39%; hipoestesia de **67% contra 26%**. STURMAN e DURAN viram dolorimento em 70% dos enxertos (41% acentuado), frio em 49% e discriminação de 5 mm. A conclusão do Green é direta: o enxerto parcial não traz vantagem na ponta do dedo (p. 1711).
+
+## O enxerto composto e a criança
+
+O **enxerto composto** (recolocar a ponta amputada como cobertura biológica, sem anastomose) é **eficaz em crianças** distais à IFD (Green, p. 1709). A ponta é desengordurada e, se houver osso, ele é fixado com fio absorvível, fio de KIRSCHNER ou agulha 18G. O tempo pesa: MOIEMEN e ELLIOT tiveram **61%** de sobrevida quando o reparo foi feito em até **5 horas** e nenhuma depois. A ponta pode necrosar, mas o Green a deixa no lugar enquanto não houver infecção, porque funciona como **curativo biológico** sob o qual o dedo cicatriza.
+
+O porquê da diferença entre criança e adulto está na forma como o enxerto composto sobrevive. Sem vasos anastomosados, ele vive nos primeiros dias da difusão de plasma a partir do leito e depois de vasos que brotam e se conectam aos dele. Essa nutrição alcança poucos milímetros: quanto menor o volume da peça, maior a chance. A ponta da criança é pequena e o tecido infantil tem capacidade regenerativa maior; no adulto, a peça é maior e o leito pior. CHEN levou isso à técnica: **desengordurar, desepitelizar e retirar o osso** da ponta reduziu o volume a nutrir e subiu a sobrevida para **mais de 93%**, com discriminação média de 6,3 mm (p. 1709).
+
+Nos **adultos**, HEISTEIN e COOK (53 enxertos compostos distais à IFD) tiveram 43% de sucesso entre a IFD e o eponíquio e 58% distal ao eponíquio, com resultados piores no fumo, idade acima de 18 anos, álcool, diabetes e esmagamento; todos esses fatores diminuem o fluxo do leito ou aumentam a lesão da peça. O Campbell (cap. 21, p. 749 e 750) chama a técnica de **capuz**, mais bem-sucedida em crianças; cita 61% de sobrevida total quando a cirurgia foi feita em até 5 horas, contra 31% de falha após 7 horas, manda ventilar o enxerto contra hematoma e lembra que pontas de crianças pequenas cicatrizam sem enxerto. Na criança, o Campbell só considera amputar se as partes não puderem ficar viáveis por microcirurgia (p. 748).
 
 !tabela Ponta sem retalho (Green, cap. 49, p. 1709 a 1712; Campbell, cap. 21, p. 748 a 750)
 | Situação | Conduta |
@@ -584,56 +643,297 @@ O **enxerto composto** (recolocar a ponta como cobertura biológica) é **eficaz
 | adulto | enxerto composto com pior resultado |
 !fim
 
-!questoes central=mao-1595 relacionadas=mao-1437,mao-0487
+!questoes central=mao-1595 relacionadas=mao-1437,mao-0487 treino=mao-3716,mao-3724,mao-3725,mao-3726,mao-3729
 conceito: Até 1,5 cm cicatriza em 3 a 4 semanas; enxerto composto funciona em crianças distais à IFD, sem microcirurgia, em até 5 h.
 como: A USP-SP 2026 pediu a afirmação sobre a polpa; a USP-SP 2024 e o Einstein 2026, a criança com o mínimo amputado pela corrente da bicicleta na base da unha.
 armadilha: Contraindicar o enxerto composto na criança pequena ou indicar anastomoses.
 alerta: O caso da bicicleta não está nos livros; a conduta de `mao-1437` e `mao-0487` é coerente com a recolocação não microcirúrgica com reparo ósseo e do leito. Gabaritos mantidos.
 !fim
 
-# Os retalhos da ponta {radar=confirmado}
+# A ponta com osso exposto: encurtar, unha em gancho e matriz dérmica {radar=clinico}
 
-Os retalhos estão no resumo de retalhos e cobertura cutânea; aqui fica a decisão (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1712 a 1716). O **ATASOY-KLEINERT** (V-Y volar) serve às amputações **dorsais oblíquas ou transversas** e é **contraindicado** se a perda palmar é maior. O **KUTLER** usa dois triângulos laterais e avança só 3 a 4 mm. O **MOBERG** é um **avanço volar bipediculado** com os dois feixes, para a ponta do **polegar**, onde a pele é móvel e a contratura menos provável; avança até **1 cm** no Green e **1 a 2 cm** no Campbell (cap. 21, p. 766). O **cross-finger** cobre a perda volar oblíqua e é contraindicado com artrite ou acima de 50 anos; o **tenar** fica para indicador e médio de jovens.
+## A pergunta central
 
-!questoes central=mao-0613 relacionadas=mao-0486 treino=mao-2341
+Com osso exposto, a decisão é uma só: **preservar o comprimento** (cobrindo o osso com algum tecido) ou **sacrificar comprimento** (encurtando o osso até que as partes moles o cubram) (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1711 e 1712). A resposta depende do dedo (indicador e polegar valem mais comprimento), da quantidade de osso exposto, da geometria e do paciente.
+
+## Pouco osso: roer e cicatrizar
+
+Quando a ponta de osso exposta é pequena, ela é **roída com goiva** e a ferida é fechada com fio absorvível 3-0 (para não ter de tirar pontos sob a crosta) ou deixada cicatrizar por segunda intenção, com o leito ungueal apoiado em osso (p. 1711). Depois de um desbridamento adequado, **não se dá antibiótico de rotina**. O retorno é em 1 a 2 semanas, com terapia e dessensibilização depois de cicatrizar; o trabalhador braçal volta sem restrição em **6 a 8 semanas**.
+
+O **curativo semioclusivo** (filmes como OpSite ou Flexifix), aplicado nos primeiros dias e trocado semanalmente, levou a regeneração ainda mais longe: HOIGNE tratou 17 pacientes com falange exposta e viu regenerar cerca de **90% do volume** da polpa, com discriminação de 4 mm em 6,5 semanas, sem infecção. O osso não regenera; o que volta é a partes moles, que passa a cobrir o osso. As complicações foram um corno ungueal e um neuroma (p. 1711).
+
+## Encurtar e fechar: o que exige
+
+Encurtar o osso permite fechar a pele, mas cobra dois cuidados (p. 1711). O primeiro é a **neurectomia por tração** dos nervos digitais: puxa-se o nervo, corta-se e deixa-se retrair, para que o neuroma inevitável fique longe da cicatriz da ponta. O segundo é a unha: se a lesão está **na lúnula ou através dela**, faz-se a **ablação** completa do leito, retirando toda a matriz germinativa e estéril, raspando a cortical dorsal e a face inferior da prega ungueal proximal e das paroníquias. Se sobra uma ilha de matriz, ela fabrica um fragmento de unha deformado, o **corno ungueal**, e o paciente deve ser avisado desse risco e do de neuroma. O Campbell (cap. 21, p. 749) faz a ablação quando **metade da unha** fica sem apoio ósseo.
+
+## A unha em gancho
+
+A **unha em gancho** é a complicação mais característica da ponta, e o seu mecanismo explica a regra de prevenção. O leito ungueal está colado ao periósteo da falange distal e a unha cresce seguindo o leito. Quando a falange encurta e o cirurgião puxa o leito por cima da ponta do osso para fechá-lo à polpa, o leito perde o apoio, curva-se para volar, e a unha acompanha, crescendo em garra sobre a ponta (p. 1711). A regra é **aparar o leito no mesmo nível do osso** e **nunca puxá-lo sobre a ponta**. A mesma deformidade aparece quando um V-Y é fechado sob tensão: o retalho traciona o leito para volar.
+
+## A matriz dérmica bilaminar
+
+A **matriz dérmica bilaminar** (Integra: uma camada de colágeno bovino acelular coberta por silicone) mudou o meio do caminho entre encurtar e fazer retalho (p. 1711 e 1712; fig. 49.3, avulsão por anel). Ao contrário do enxerto de pele, ela **pode ir direto sobre osso ou tendão**, porque não precisa de leito vascularizado no primeiro dia: é colonizada aos poucos por vasos e células, formando uma neoderme. Usa-se em dois tempos (enxerto autólogo 3 a 4 semanas depois, tirando o silicone) ou em um tempo, funcionando como uma segunda intenção guiada. TARAS teve incorporação em 20 de 21 dedos; JACOBY (um tempo, defeito médio de 2,3 cm²) obteve discriminação de 9,6 mm contra 4,6 mm no dedo oposto, com uma infecção seguida de unha em gancho. É mais cara, mas **preserva comprimento sem retalho**, e o autor diz estar cada vez mais impressionado com ela.
+
+!tabela Osso exposto na ponta (Green, cap. 49, p. 1711 e 1712)
+| Situação | Conduta | Cuidado |
+| --- | --- | --- |
+| pouco osso | goiva e fechar ou cicatrizar | sem antibiótico de rotina |
+| encurtar e fechar | neurectomia por tração | ablação se na lúnula |
+| falange encurtada | aparar o leito no nível do osso | nunca puxar o leito (gancho) |
+| curativo semioclusivo | troca semanal | regenera 90% do volume, não o osso |
+| matriz bilaminar | sobre osso ou tendão | cara; um ou dois tempos |
+!fim
+
+> **Na prova:** unha em gancho = **leito puxado sobre a ponta** do osso; corno ungueal = matriz que sobrou; enxerto parcial **não** traz vantagem na ponta; matriz dérmica vai sobre osso e tendão.
+
+# Os retalhos locais de avanço: ATASOY, KUTLER e MOBERG {radar=confirmado}
+
+## A lógica comum dos avanços em V-Y
+
+A polpa é presa ao osso por **septos fibrosos** verticais que vão da derme ao periósteo da falange distal. Eles dão estabilidade à polpa na pinça (sem eles, a polpa escorregaria sobre o osso ao apertar um objeto), mas também a impedem de avançar. Num retalho em V-Y, o cirurgião corta só a pele em forma de V, **divide os septos fibrosos** que prendem o subcutâneo ao osso e à bainha, e mantém a pele presa ao subcutâneo, que carrega os pequenos vasos (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1712 e 1713). Solto do osso, o triângulo desliza para distal; a ferida em V que fica atrás é fechada em linha, e o desenho vira um Y. Não são os ligamentos de CLELAND nem os de GRAYSON que se cortam aqui; esses envolvem o feixe neurovascular e não seguram a polpa ao osso.
+
+## ATASOY-KLEINERT: o V-Y volar
+
+O **ATASOY-KLEINERT** (1970) é um retalho **triangular volar** de avanço que refaz a polpa e preserva o comprimento quando há osso exposto (p. 1712 e 1713; fig. 49.4).
+
+- **Indicação:** amputação **transversa** ou **oblíqua dorsal** (inclinada de dorsal-proximal para volar-distal), além da metade da unha. Nela sobra polpa, e é a polpa que avança.
+- **Contraindicação:** oblíqua com **mais perda palmar** que dorsal e perda cutânea extensa. Na oblíqua volar falta justamente o tecido que formaria o triângulo, e a distância a cobrir é maior que o avanço possível.
+- **Desenho:** garrote digital (dedo de luva ou dreno de PENROSE); molde do defeito; a base do triângulo é a borda distal cortada; o **ápice fica na prega de flexão da IFD**; os lados têm pelo menos **1,5 vez** o avanço desejado. A proporção existe porque um triângulo curto demais não tem pele para deslizar sem tensão.
+- **Dissecção:** incisão só da espessura da pele, preservando nervos e vasos; o retalho é irrigado por pequenos ramos das artérias digitais, distais à trifurcação dos nervos digitais. O que solta o retalho é a secção dos septos fibrosos, separando a bainha flexora do subcutâneo.
+- **Fechamento:** a base é suturada ao leito ou à unha; o V vira Y. O garrote é solto **antes** de fixar para conferir a perfusão. O avanço chega a **1 cm**; pode-se desengordurar se preciso. O curativo permite mobilidade precoce.
+
+Os resultados mostram a distância entre a série do criador e a dos outros. ATASOY relatou 56 de 61 dedos com sensibilidade e movimento normais. FRANDSEN viu hipoestesia ou disestesia em 7 de 10, frio em 4 e dificuldade de pegar em 5; CONOLLY e GOULSTON tiveram 4 de 7 insatisfatórios; TUPPER e MILLER, sensibilidade diminuída nos 16 e hipersensibilidade ao frio em 8 (p. 1713). A lição é que o V-Y é bom quando bem indicado e feito sem tensão, mas não devolve uma polpa normal.
+
+## KUTLER: os dois triângulos laterais
+
+O **KUTLER** (1944) usa **dois triângulos** das faces médio-laterais, com incisão só até a derme e septos divididos, avançados até a linha média e suturados entre si (p. 1713 e 1714; fig. 49.5). Como cada triângulo vem de uma lateral estreita do dedo, o avanço clássico é **só de 3 a 4 mm**. HADDAD viu necrose marginal quando os retalhos eram grandes; FREIBERG e MANKTELOW, hipersensibilidade e dormência em 7 de 22; FRANDSEN (14 casos), frio em 57%, dor à percussão em 71%, dificuldade com objetos pequenos em 43%, hipoestesia em 71% e afastamento médio de 61 dias.
+
+A indicação do KUTLER é o ponto em que as fontes não se alinham. A regra clássica das provas liga o KUTLER à amputação com perda lateral ou à oblíqua em que as laterais estão íntegras. O Green cita SHEPARD, que, dividindo o pedículo dorsal, conseguiu avanços de **10 a 14 mm** e considerou o KUTLER mais aplicável às **oblíquas palmares e transversas**. O Campbell (cap. 21, p. 752) usa o ATASOY quando sobra mais pele de polpa e o KUTLER quando a polpa está comprometida e a pele lateral está íntegra. O que é firme e sem divergência é o avanço do KUTLER clássico (3 a 4 mm). Há variantes: em ilha neurovascular (BIDDULPH) ou estendidas até a prega da IFP, que avançam até 2 cm, mas com frio em 49%, dormência em 78% e contratura da IFP em 17% e da IFD em 22%.
+
+## O risco comum: a tensão
+
+Todo V-Y fechado sob tensão arrisca três coisas (p. 1714): **necrose** do retalho (o fluxo pelos pequenos vasos cai quando a pele é estirada), **unha em gancho** (a tensão puxa o leito para volar) e **hipoestesia** (os nervos são tracionados). O remédio é não forçar: deixar a área proximal do V cicatrizar por segunda intenção ou cobri-la com matriz bilaminar.
+
+## O avanço volar de MOBERG nos dedos
+
+O **MOBERG** é um retalho cutâneo de avanço **bipediculado**, de padrão **axial**, porque leva os **dois feixes neurovasculares** dentro dele (p. 1714; fig. 49.6). SNOW o levou do polegar aos dedos, e ARONS acrescentou um enxerto dérmico terminal. As incisões são médio-axiais, logo dorsais às pregas de flexão das IF, dos dois lados, e o retalho é descolado totalmente da bainha flexora. O avanço vem da flexão das IF e da elasticidade da pele, e o cap. 49 o limita a **1 cm**, nos dedos e no polegar.
+
+O retalho é **mais apropriado ao polegar**. No polegar, a pele volar é mais móvel e a IF tolera a flexão sem que a contratura atrapalhe a função. Nos dedos longos, as complicações pesam: **deformidade fixa em flexão** das IF (o retalho só avança se o dedo fletir, e a pele avançada mantém essa flexão) e **necrose da pele dorsal** do dedo. A necrose dorsal tem explicação anatômica: os ramos dorsais das artérias digitais nutrem a pele dorsal das falanges média e distal; levar os dois feixes para dentro do retalho volar e descolá-los tira essa irrigação. Há ainda a preocupação teórica de comprometer os vínculos do aparelho flexor, sem casos relatados.
+
+!tabela Avanços locais da ponta (Green, cap. 49, p. 1712 a 1714; Campbell, cap. 21, p. 752)
+| Retalho | Desenho | Indicação | Avanço | Problema |
+| --- | --- | --- | --- | --- |
+| ATASOY-KLEINERT | um V volar, ápice na prega da IFD | transversa ou oblíqua dorsal | até 1 cm | contraindicado na perda palmar |
+| KUTLER | dois V laterais | laterais íntegras (clássico) | 3 a 4 mm | necrose marginal, hipoestesia |
+| MOBERG | bipediculado com os dois feixes | ponta do polegar | 1 cm (cap. 49) | contratura em flexão e necrose dorsal nos dedos |
+!fim
+
+!questoes central=mao-0613 relacionadas=mao-0486 treino=mao-2341,mao-3717,mao-3718,mao-3719,mao-3720,mao-3721,mao-3722,mao-3723,mao-3727,mao-3728
 conceito: MOBERG é avanço volar bipediculado para a falange distal do polegar; ATASOY cobre a amputação dorsal oblíqua.
 como: O SIMÃO 2024 pediu a lesão do MOBERG; o TARO 2008, o tipo de retalho; o Einstein 2026, a geometria do ATASOY.
 armadilha: Chamar o MOBERG de V-Y ou de cross-finger; usar o ATASOY na perda volar.
 alerta: `mao-0613` não tem gabarito; os livros sustentam a alternativa C (avanço).
 !fim
 
-# Os níveis no dedo {radar=fundamento}
+> **Na prova:** ATASOY para a **oblíqua dorsal**, contraindicado na **perda palmar**, ápice na **prega da IFD**, lados **1,5 vez** o avanço, divide os **septos fibrosos**; KUTLER avança **3 a 4 mm**; MOBERG é **bipediculado** com os dois feixes e serve ao **polegar**.
 
-Objetivos de toda amputação: comprimento funcional, cobertura durável, sensibilidade, **evitar neuroma** e contraturas, prótese e volta precoces; na criança, conservadorismo (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1708). O Campbell (cap. 21, p. 748) quer retalho **volar** longo, nervos ressecados **6 mm** proximais à borda e tendões retraídos.
+# Cross-finger e tenar: tecido emprestado {radar=clinico}
 
-- **IFD:** encurtar e fechar, preservar o **FDP** (comprimento, flexão e estabilidade da pinça), aparar os côndilos para dar forma de tufo, cortar os nervos sob tensão e **nunca suturar flexor ao extensor**, o que limita a excursão dos dois e prejudica os outros dedos (Green, p. 1717). WANG: arco da IFP de 94 graus, frio em 24%, discriminação de 5,6 mm e volta ao trabalho em 7 semanas.
-- **Lumbrical plus:** FDP liberado puxa o lumbrical e estende paradoxalmente a IFP; secciona-se o lumbrical (p. 1718).
-- **Falange média:** preservar o **FDS**; no indicador a pinça migra para o médio (p. 1718).
-- **Falange proximal:** a MF flete 45 graus, e a **tenodese do FDS** leva a 90; perto da MF no médio e no anular, objetos caem; no indicador, raio imediato (p. 1719). O Campbell (p. 760) diz que o coto do indicador proximal à IFP é inútil e atrapalha a pinça.
+## Quando a ponta precisa de tecido de fora
 
-# Amputação de raio {radar=confirmado}
+Quando a perda é volar ou extensa, não sobra polpa para avançar. Se o comprimento importa (ponta do indicador ou do polegar, vários dedos lesados) e os retalhos locais não servem, o tecido vem de outro lugar: do dorso do dedo vizinho (**cross-finger**) ou da eminência tenar (**retalho tenar**). Os dois são retalhos **regionais ao acaso**, sem pedículo nomeado, que vivem do dedo doador até o receptor criar circulação própria, e os dois exigem um segundo tempo para a secção (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1714 a 1716).
 
-O Green's Operative Hand Surgery, 7ª ed. (cap. 49, p. 1719 a 1721), indica o raio por trauma, tumor, infecção, **reimplante falho**, Dupuytren e macrodactilia, quase sempre como cirurgia **secundária**. A mão tem três unidades: **polegar**, **indicador e médio** (pinça) e **anular e mínimo** (preensão). Tirar um raio estreita a palma em **10%** e diminui a preensão (PEIMER: menos 28%); raios de borda recuperam melhor que os centrais.
+## O cross-finger
 
-**Indicador.** MURRAY viu queda de 20% na preensão, na pinça lateral e na **supinação**, e de **50% na pronação**, com redução de 25% do fulcro da pronossupinação: perder um raio diminui o vão e a força de rotação do antebraço (p. 1721; fig. 49.16). A hiperestesia pelo nervo digital radial atingiu 59%.
+O **cross-finger** foi descrito por GURDIN e PANGMAN em 1950 (p. 1714 a 1716; fig. 49.7). Cobre o **defeito volar oblíquo** da polpa ou a **perda volar extensa** com osso e tendão expostos, e o Green cita a ponta do indicador e do polegar e os dedos múltiplos como cenários típicos.
 
-**Médio.** A **pinça de chave** enfraquece porque a **origem do adutor do polegar** sai do **terceiro metacarpal** (Green, p. 1723); a complicação típica é a **tesoura** do indicador e do anular. Sem transposição, imbrica-se o ligamento intermetacarpal transverso profundo; com **transposição do indicador**, fecha-se a falha (HANEL: preensão 65%), com risco de pseudartrose (p. 1723 a 1728). O Campbell (cap. 21, p. 762) não transpõe o indicador sem reinserir o adutor e considera a operação **contraindicada se a mão faz trabalho braçal pesado**. O raciocínio é mecânico: a transposição exige excisar a diáfise do terceiro metacarpal, onde nasce o adutor; se o músculo não for reinserido no metacarpal transposto, a adução e a chave ficam fracas justamente em quem mais precisa de força. A operação é sobretudo estética (simetria, três dedos menos aparentes), tecnicamente difícil, e exige rotação correta e fixação sólida. No Green (p. 1727 e 1730), a osteotomia é feita na base, o periósteo com a origem do adutor é reinserido no indicador transposto e a primeira comissura fica grande, perdendo a relação entre polegar e indicador da pinça de precisão. Sem transposição, o ligamento intermetacarpal transverso profundo é imbricado apertado, porque estica, e um fio transverso temporário segura os metacarpais; MELIKYAN não viu tesoura com esse reparo (p. 1723 a 1726).
+A técnica explica o comportamento do retalho:
 
-**Anelar.** É **considerado por alguns o dedo menos importante** (Green, p. 1730). A CMC do quarto e do quinto tem 15 a 30 graus de mobilidade, e a base do **quinto desliza radialmente** sobre o hamato fechando a falha; o Campbell não transpõe o quinto e acha a desarticulação do anelar a mais estética (p. 762). Ainda assim, a ressecção tem custo: NUZUMLALI comparou, nas avulsões do anelar na IFP, a ressecção do raio com a amputação na falange proximal, e as pinças lateral e trípode ficaram piores com o raio (Green, p. 1730). Quem quer a transposição do mínimo tem a osteotomia intracárpica com artrodese capitato-hamato de LE VIET e a osteotomia em degrau de POSNER, que alonga o mínimo em 1,5 cm (p. 1733).
+- Faz-se um molde do defeito (com o próprio garrote de ESMARCH) e o retalho é cortado **2 mm maior** em três lados, porque o retalho contrai ao ser levantado.
+- A pele é tirada do **dorso da falange média do dedo vizinho**, com **base lateral**, voltada para o dedo lesado.
+- O plano é **entre o paratendão extensor e a gordura**. O paratendão fica no dedo doador porque é ele que permite pegar o enxerto de pele sobre o tendão; se for levado com o retalho, sobra tendão nu.
+- A drenagem venosa da base é preservada; três bordas são suturadas ao receptor, e a quarta só na secção.
+- A área doadora recebe **enxerto de pele total** da fossa antecubital ou do antebraço medial, sem pelos.
+- Os dedos são suturados entre si ou presos por fio de KIRSCHNER transdigital.
+- Com **3 semanas**, um dreno de PENROSE é apertado na base do retalho para testar se ele já vive do receptor; se a cor se mantém, faz-se a secção.
 
-**Mínimo.** Tem o **maior valor depois do polegar** para alguns, pela preensão digitopalmar e pelo vão; preserva-se a **base do quinto** (ECU e FCU) (Green, p. 1734 e 1735).
+O preço é a **rigidez**: dois dedos ficam presos juntos por semanas. Por isso o cross-finger é contraindicado com **artrose prévia** ou **acima de 50 anos**; PATERSON viu mais rigidez já acima de 41 anos (p. 1715). A articulação idosa ou artrósica imobilizada perde movimento que não recupera.
 
-!tabela O que cada raio leva (Green, cap. 49, p. 1719 a 1735; Campbell, cap. 21, p. 760 a 768)
-| Raio | Perda e cuidado |
-| --- | --- |
-| indicador | pronação menos 50%; neuroma do digital radial |
-| médio | origem do adutor do polegar; tesoura; não transpor no braçal pesado |
-| anelar | o menos importante para alguns; o quinto desliza no hamato |
-| mínimo | maior valor depois do polegar; preservar a base |
-| polegar | mais de 40% da função da mão |
+A sensibilidade costuma voltar melhor do que se espera, porque os nervos do receptor crescem para dentro do retalho. COHEN e CRONIN descreveram a **variante inervada**, levando um ramo sensitivo dorsal do nervo digital, coaptado ao digital do receptor: discriminação média de 4,8 mm em 88%. LASSNER, com inervação bilateral, chegou a 3,6 mm, com frio em 6 de 15. STURMAN e DURAN, KLEINERT, JOHNSON e IVERSON viram reinervação excelente na maioria, melhorando com o tempo (p. 1716).
+
+## O retalho tenar
+
+O **retalho tenar** foi descrito por GATEWOOD em 1926, ampliado por FLATT em 1957 e modificado por SMITH e ALBIN como o "H" tenar (p. 1716; fig. 49.8). Serve à ponta com osso exposto, com indicação parecida com a do cross-finger (o comprimento importa e as outras técnicas não servem), mas o Green o restringe ao **indicador e ao médio**, em **pacientes jovens** sem artrose ou lesão articular. São os dedos que alcançam a eminência tenar com a menor flexão; os dedos ulnares precisariam de flexão extrema. As vantagens são cor e textura parecidas com as da polpa, subcutâneo abundante e alguma sensibilidade.
+
+A crítica clássica ao tenar de GATEWOOD tem dois itens: **rigidez em flexão das IF** (sobretudo da IFP) do dedo receptor, que fica semanas dobrado sobre a palma, e **cicatriz feia** na área doadora. MELONE propôs três princípios que respondem exatamente a essas críticas:
+
+- Desenhar o retalho **perto da prega da MF do polegar**, longe do meio da palma, onde a cicatriz incomoda menos e o dedo alcança com menos flexão das IF.
+- **Fletir totalmente a MF** do dedo receptor, usando só a flexão necessária das IF; a MF tolera bem a flexão, e as IF são as que enrijecem.
+- **Seccionar com 10 a 14 dias** e mobilizar já, encurtando o tempo de imobilização.
+
+No "H" de SMITH e ALBIN, o H é desenhado cerca de **20% mais largo** que o defeito, com o ramo transverso no ponto mais distal de contato; o retalho proximal vai à ponta e o distal à borda proximal do defeito; a secção é feita em **2 semanas**, e a área doadora fecha primariamente. Outra opção é a base proximal, com enxerto ou retalho de LIMBERG na área doadora. PORTER achou a sensibilidade melhor com cross-finger e tenar que com enxertos, e o enxerto total melhor que o parcial. O próprio autor do capítulo **evita o tenar** por medo da rigidez das IF e só o considera em jovens com perda da ponta do indicador ou do médio.
+
+O Campbell (cap. 21, p. 755) diverge na indicação: usa o tenar mais no **médio e no anular**, em qualquer dedo exceto o polegar. Questão que pede o dedo do tenar segundo o Green tem como resposta indicador e médio.
+
+!tabela Cross-finger e tenar (Green, cap. 49, p. 1714 a 1716; Campbell, cap. 21, p. 755)
+| Item | Cross-finger | Tenar |
+| --- | --- | --- |
+| autor | GURDIN e PANGMAN, 1950 | GATEWOOD, 1926; FLATT; "H" de SMITH e ALBIN |
+| doador | dorso da falange média do vizinho | eminência tenar, perto da prega da MF do polegar |
+| defeito | volar oblíquo, osso e tendão expostos | ponta com osso exposto |
+| dedos | indicador, polegar, vários dedos | indicador e médio (Green); médio e anular (Campbell) |
+| contraindicação | artrose, acima de 50 anos | artrose, lesão articular, não jovem |
+| secção | 3 semanas, teste do PENROSE | 10 a 14 dias (MELONE), 2 semanas no "H" |
+| risco | rigidez dos dois dedos | contratura em flexão da IFP |
 !fim
 
-Na mão mutilada, o **polegar** responde por mais de 40% da função; com mais um dedo há pinça, com um terceiro, trípode e força (Green, p. 1735). O Campbell (p. 768) preserva o terceiro metacarpal pela origem do adutor.
+## Ilhas e retalhos livres
+
+Os **retalhos em ilha** (homo e heterodigitais, anterógrados ou retrógrados) fazem tudo num tempo, sem imobilizar o dedo em posição esdrúxula, com polpa sensível e acolchoada e arco de rotação maior. Em troca, são mais exigentes, têm falha, contratura e intolerância ao frio, e **não provaram ser melhores** que os retalhos simples (p. 1717). Os **retalhos livres** para a ponta incluem o braço medial, o anterolateral da coxa, o "wraparound", o venoso arterializado, o do ramo palmar superficial da radial, o tenar livre (KAMEI), o primeira metacarpal dorsal proximal e o perfurante da ulnar (ZHENG, bilobado: 14 de 15 bons, discriminação de 6 a 11 mm).
+
+## O método preferido do autor
+
+O capítulo fecha a ponta com uma escada clara (p. 1717):
+
+- **Sem osso exposto:** conservador (curativos ou MIST). O autor mostra fotos de casos anteriores, porque a ferida parece feia nas primeiras semanas e o paciente precisa acreditar que vai sarar.
+- **Pequena ponta de osso** num dedo só: aparar e segunda intenção.
+- **Mais osso exposto:** V-Y de ATASOY nas oblíquas dorsais e transversas.
+- **Oblíquas volares:** matriz bilaminar e depois enxerto, quando cabível.
+- **Tenar:** evitado (rigidez das IF), talvez em jovens, no indicador ou no médio.
+- **Defeito grande:** cross-finger; grande perda volar: ilha neurovascular.
+
+> **Na prova:** cross-finger cobre a **perda volar**, sai do **dorso do dedo vizinho** acima do paratendão, contraindicado com **artrose ou acima de 50 anos**, secção com **3 semanas**; tenar só **indicador e médio** de jovens, crítica = **contratura da IFP**, MELONE = prega da MF do polegar, MF fletida e secção com **10 a 14 dias**.
+
+# A polpa do polegar: MOBERG e cross-finger do indicador {radar=clinico}
+
+O polegar tem regras próprias, que o Green trata no capítulo 48 (Thumb Reconstruction, p. 1676 a 1681), e as provas misturam os dois capítulos. A amputação na altura da IF do polegar é uma **zona de amputação compensada**: o polegar perde pouco comprimento útil e quase não há déficit (p. 1676). Por isso o esforço de reconstrução se concentra na qualidade da polpa.
+
+## Quando cicatrizar e quando fazer retalho
+
+Um **defeito pequeno** (em geral **menor que 1 cm²**) sem osso exposto cicatriza por **segunda intenção**, a preferência dos autores; enxerto e V-Y também servem. A contração favorável deixa um defeito mínimo com sensibilidade quase normal (p. 1676). Retalho só entra quando a perda passa de **50% da polpa** ou quando há tendão sem bainha ou osso sem periósteo, porque nesses leitos o enxerto não pega e a cicatrização seria longa e dolorosa.
+
+## O avanço palmar de MOBERG no polegar
+
+O **MOBERG** leva pele sensível com os dois feixes para cobrir **mais da metade da polpa** (p. 1677). Os pontos críticos do capítulo dão a faixa de indicação: defeitos de polpa **maiores que 1 cm e menores que 2 cm**, com a falange distal exposta sem periósteo. Abaixo de 1 cm a segunda intenção basta; acima de 2 cm o avanço simples não alcança.
+
+- **Sem incisão proximal:** cobre defeitos de até **1,5 cm** de comprimento. As incisões médio-axiais vão até a prega proximal do polegar, dorsais aos feixes, e a MF e a IF são fletidas a 30 a 45 graus. A IF do polegar pode fletir até 45 graus para dar avanço, mas os autores acham que isso deixa contratura em flexão; acima de 1,5 cm, preferem a incisão de alívio (p. 1677).
+- **Com incisão transversa proximal** (o retalho vira uma ilha): cobre até **2,5 cm**, com pontos críticos entre **2 e 2,5 cm**. A incisão fica no terço proximal da falange proximal, a área doadora recebe **enxerto de pele total** do braço medial, usa-se tala, e o movimento começa com **3 semanas** (p. 1677 a 1679).
+
+Os riscos são a **isquemia ungueal** (sobretudo em fumantes; não dissecar demais o pedículo, que leva também a irrigação do leito), a perda de pedaços de osso ou de unha e a contratura em flexão (p. 1679).
+
+A diferença entre o "1 cm" do cap. 49 e os "1,5 e 2,5 cm" do cap. 48 não é contradição: o cap. 49 dá o avanço genérico do retalho nos dedos e no polegar sem manobras, e o cap. 48 detalha a técnica própria do polegar, com e sem incisão de alívio. Questão que fala em incisão proximal e enxerto pede 2,5 cm.
+
+## O cross-finger do indicador para o polegar
+
+Quando **toda a polpa** do polegar se perde, o Green usa o cross-finger tirado do **dorso da falange proximal do indicador** (p. 1679 a 1681). A base fica palmar à linha médio-axial, o plano é superficial ao paratendão, e veias do canto radial são preservadas. Para soltar a base e deixar o retalho girar até o polegar, seccionam-se os **ligamentos de CLELAND** do lado radial. A anatomia explica: os ligamentos de CLELAND ficam **dorsais** ao feixe neurovascular e prendem a pele lateral ao osso; os de GRAYSON ficam **palmares** ao feixe. Como o retalho é dorsal e a base é lateral, quem o segura são os de CLELAND. A área doadora recebe enxerto total do braço medial, e a secção é feita com **10 a 14 dias** pelos pontos críticos (o texto do capítulo diz 14 a 21 dias).
+
+A **variante inervada** leva um **ramo sensitivo do nervo radial**, dissecado na primeira comissura, que inerva o dorso da falange proximal do indicador. A sensibilidade protetora volta melhor abaixo dos 20 anos; acima dos 40, quase metade não recupera. WALKER viu sensibilidade final mista (mediano e radial); HASTINGS descreveu a "dupla inervação", coaptando o digital radial dorsal do indicador ao digital ulnar do polegar (p. 1681). Quando o nervo do polegar está perdido, há a **ilha neurovascular** de MOBERG e LITTLER, exigente e com qualidade sensitiva questionada (p. 1680).
+
+!tabela Polpa do polegar por tamanho (Green, cap. 48, p. 1676 a 1681)
+| Defeito | Conduta |
+| --- | --- |
+| menor que 1 cm², sem osso | segunda intenção |
+| 1 a 1,5 cm | MOBERG sem incisão proximal |
+| 1,5 a 2,5 cm | MOBERG com incisão proximal e enxerto total |
+| toda a polpa | cross-finger do dorso da falange proximal do indicador, CLELAND seccionados |
+| nervo do polegar perdido | ilha neurovascular (MOBERG, LITTLER) |
+!fim
+
+> **Na prova:** IF do polegar é **zona compensada**; MOBERG entre **1 e 2 cm**, até **1,5 cm** sem incisão e **2,5 cm** com incisão proximal; cross-finger do **indicador** solta os ligamentos de **CLELAND** e a variante sensitiva leva ramo do **nervo radial**.
+
+# Os níveis no dedo: da IFD à MF {radar=fundamento}
+
+Objetivos de toda amputação: comprimento funcional, cobertura durável, sensibilidade, **evitar neuroma** e contraturas, prótese e volta precoces; na criança, conservadorismo (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1708). O Campbell (cap. 21, p. 748) quer retalho **volar** longo (a pele palmar é mais grossa e mais sensível), nervos ressecados pelo menos **6 mm** proximais à borda do retalho, tendões tracionados, cortados e deixados retrair, côndilos aparados nas desarticulações e o **garrote solto antes de fechar**, para fazer a hemostasia e não deixar hematoma sob o retalho.
+
+## A IFD e a falange distal
+
+Na desarticulação da IFD, ou logo distal a ela com perda do FDP, o Green encurta e fecha primariamente (p. 1717). A primeira regra é **preservar a inserção do FDP** sempre que possível (fig. 49.9): ela mantém comprimento, flexão ativa da ponta e estabilidade para a pinça. Se não der, o FDP é puxado o mais distal possível e cortado sob tensão, para retrair.
+
+WHITAKER viu menos inflamação preservando a cartilagem da falange média; o autor prefere modelar o coto como um **tufo**, roendo os côndilos volares e laterais. Os côndilos deixados intactos fazem um coto bulboso, que pressiona a pele fina e dói ao apoiar.
+
+Os nervos digitais são dissecados e cortados **sob tensão**, para que o neuroma se forme longe da cicatriz, no meio da gordura acolchoada. E os tendões flexor e extensor **nunca são suturados entre si** sobre a ponta do osso (p. 1717). O porquê é o **efeito quadriga**: o FDP do médio, do anular e do mínimo nasce de um ventre muscular em grande parte comum. Se o FDP de um dedo é amarrado ao extensor, ele fica preso numa posição; o ventre comum não consegue encurtar além disso, e os dedos vizinhos perdem flexão. Além disso, os dois tendões amarrados limitam a excursão um do outro.
+
+WANG, revisando amputações na IFD ou distais a ela, encontrou arco da IFP de **94 graus**, intolerância ao frio em 24%, discriminação de 5,6 mm e volta ao trabalho em 7 semanas (p. 1717).
+
+## O dedo em lumbrical plus
+
+O **lumbrical plus** é uma complicação rara, mas que as provas adoram por ser paradoxal (p. 1718). O lumbrical nasce do FDP e se insere na banda lateral do aparelho extensor. Quando o FDP fica solto distalmente (amputação com o tendão sem inserção), ele e o lumbrical migram para proximal. Ao tentar fletir o dedo, o FDP contrai, mas, sem inserção, sua força passa pelo lumbrical para a banda lateral: a tensão no extensor aumenta e a IFP **estende** em vez de fletir. Essa é a **extensão paradoxal da IFP**. O tratamento é **seccionar o tendão do lumbrical**; o FDS retoma a flexão da IFP. Como é raro, o Green não manda seccionar o lumbrical de rotina na amputação.
+
+## A falange média
+
+Quando o **indicador** é amputado proximal à IFD, a pinça passa para a ponta do **médio**, porque o indicador curto não alcança mais o polegar com precisão (p. 1718; fig. 49.10 a 49.13). Por isso pode valer a pena cobrir com retalho para manter o comprimento do indicador; o comprimento importa também em músicos e em quem usa teclado. Sem como preservar, encurta-se até fechar sem tensão.
+
+A segunda regra do nível é **preservar a inserção do FDS**, que fica na falange média. Com ela, o coto da falange média flete na IFP e participa da preensão; se o coto é curto, a flexão é limitada. **Proximal à inserção do FDS** (ou com o FDS seccionado), o coto da falange média **não tem flexão ativa**: preservá-lo vira questão estética e de impedir que objetos pequenos caiam entre os dedos (fig. 49.12). Números de arco de movimento da IFP por nível, que algumas provas antigas cobraram, não aparecem no Green 7 nem no Campbell 15; o que o Green dá é a regra qualitativa do FDS e o arco de 94 graus da revisão na IFD (WANG).
+
+A técnica é a mesma nos vários níveis: incisão em **boca de peixe**, com retalhos palmar e dorsal iguais ou palmar maior; osteotomia alguns milímetros proximal à incisão, com serra, e acabamento com lima; na desarticulação, manter a cartilagem e aparar os côndilos; pontos inabsorvíveis 4-0, retirados com 2 semanas (fig. 49.11).
+
+## A IFP e a falange proximal
+
+Na **IFP**, faz-se como na IFD: desnudar ou manter a cartilagem, modelar os côndilos e fechar com pele local (p. 1719).
+
+Na **falange proximal**, o coto é controlado pelos intrínsecos e pelo extensor comum, e a MF flete ativamente cerca de **45 graus** (p. 1719; fig. 49.14 e 49.15). Os intrínsecos (lumbricais e interósseos) fletem a MF, mas o coto perdeu a alavanca dos flexores longos. A **tenodese do FDS** na ponta da falange proximal (furos com fio de KIRSCHNER, FDS fixado na tensão de repouso) devolve um flexor forte ao coto e dá **quase 90 graus** de flexão na preensão.
+
+Perto da MF ou na MF, sobretudo no **médio e no anular**, o coto curto deixa um buraco por onde objetos pequenos caem; pensa-se em prótese ou em amputação do raio. No **indicador** nesse nível, considera-se a **amputação imediata do raio**, porque o coto atrapalha a pinça entre o polegar e o médio. O Campbell (cap. 21, p. 760) diz o mesmo: o coto do indicador proximal à IFP é inútil e atrapalha a pinça.
+
+!tabela Pontos críticos por nível (Green, cap. 49, p. 1717 a 1720)
+| Nível | Conduta | Por quê |
+| --- | --- | --- |
+| IFD | encurtar e fechar; preservar o FDP | flexão e estabilidade da pinça |
+| FDP íntegro | considerar retalho para manter comprimento | o tendão funciona |
+| falange média | encurtar, de preferência distal ao FDS | o FDS flete o coto |
+| proximal ao FDS | sem flexão ativa do coto | preservar só por estética |
+| IFP | como na IFD | modelar côndilos |
+| falange proximal perto da IFP | tenodese do FDS | 45 para 90 graus de flexão da MF |
+| perto da MF ou na MF | raio (indicador imediato) | objetos caem; coto atrapalha a pinça |
+!fim
+
+> **Na prova:** preservar o **FDP** na IFD e o **FDS** na falange média; **nunca suturar flexor ao extensor** (quadriga); lumbrical plus = **extensão paradoxal da IFP**, trata seccionando o **lumbrical**; MF flete **45 graus**, com tenodese do FDS **90**.
+
+# Amputação de raio: por que, quando e o indicador {radar=fundamento}
+
+## Indicações e as três unidades da mão
+
+O Green's Operative Hand Surgery, 7ª ed. (cap. 49, p. 1719 a 1721), indica o raio por trauma, tumor, infecção, **reimplante falho**, DUPUYTREN grave e macrodactilia. A mão funciona em **três unidades**: o **polegar** oponível; o **indicador e o médio**, para a pinça; o **anular e o mínimo**, para a preensão de força (p. 1720). Saber qual unidade perde um raio diz o que o paciente vai sentir.
+
+Tirar um raio estreita a palma em **10%** e diminui a força de preensão; nos raios centrais, pesa também o espaço por onde caem objetos. Em geral é um procedimento **eletivo e secundário**, feito por dor ou déficit; no trauma agudo, o Green salva todo tecido viável, porque ele pode servir de fonte de enxerto ou de retalho. PEIMER viu melhores resultados em força, destreza e afastamento nas amputações primárias (até 2 semanas), com perdas médias de **28%** da preensão, 26% da oponência e 13% da pinça lateral (p. 1720 e 1721). MELIKYAN encontrou preensão 27% menor e pinça de três pontos 22% menor, e os **raios de borda recuperam melhor que os centrais**: tirar um raio de borda não deixa buraco no meio da mão nem desestabiliza os vizinhos.
+
+## O raio do indicador
+
+**MURRAY** estudou 41 amputações transmetacarpais do indicador e viu queda de 20% na preensão, na pinça lateral e na **supinação**, e de **50% na pronação**, com redução de **25% do fulcro da pronossupinação** (p. 1721; fig. 49.16). O mecanismo é a largura da palma: para girar uma chave ou uma maçaneta, a mão usa o objeto como alavanca entre o polegar e o lado radial; a palma estreitada encurta esse braço de alavanca, e o torque de pronação cai. Não houve diferença entre os níveis de amputação. A intolerância ao frio apareceu em 35 dos 41, e a **hiperestesia** na comissura entre o polegar e o médio em **59%**, atribuída à mobilização excessiva do nervo digital radial do indicador. Quem já tinha dor no coto antes do raio raramente melhorou (3 de 21).
+
+AY e AKINCI transpuseram os nervos digitais do indicador para os interósseos do médio. As transferências para o médio (primeiro interósseo dorsal para o segundo e assim por diante) não melhoraram a pinça lateral e causaram intrínseco plus em 11 de 28: são desnecessárias. GERMANN (120 casos) viu pouco déficit, força igual à da amputação na falange média e 90% de satisfação com a estética; MELIKYAN observou que 6 de 8 transferiram a destreza para o médio, com a comissura livre. Nos tumores, PUHAINDRAN não teve recidiva, mas a radioterapia pré-operatória piorou a função (preensão de 66%) (p. 1721 e 1722).
+
+A preferência do autor (p. 1722 e 1723): no trauma, **não fazer transmetacarpal aguda**, salvo lesão proximal à MF. A incisão é em V volar na falange proximal com Y dorsal; o segundo metacarpal é seccionado **distal à inserção do ERLC**, para manter a força de extensão e desvio radial do punho, protegendo a artéria radial; os nervos são transpostos entre o primeiro e o segundo interósseos dorsais; a força é liberada com 6 semanas. As complicações são o neuroma e a **síndrome do túnel do carpo** pela migração dos flexores cortados.
+
+# O raio do médio: adutor, tesoura e a transposição de CARROLL {radar=confirmado}
+
+## O que o médio leva
+
+O médio tem papel central na pinça lateral, na pinça de três pontos e na preensão (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1723 a 1730). Perdido distal à IFP, objetos caem entre o indicador e o anular e a pinça de três pontos se perde; perdido na MF, o indicador tende a angular para ulnar.
+
+A **pinça lateral** (de chave) fica mais fraca porque sai junto a **origem do adutor do polegar**, que nasce do **terceiro metacarpal**. O adutor é o motor da pinça de chave: ele aperta o polegar contra a face radial do indicador. Tirar o seu ponto fixo enfraquece a adução, e o efeito aparece mesmo que o polegar esteja intacto.
+
+## A tesoura e as duas soluções
+
+A complicação principal é a **tesoura**: o indicador e o anular cruzam ao fletir, porque perderam o **ligamento intermetacarpal transverso profundo** (LITP) que os ligava ao médio e parte da função intrínseca que os mantinha alinhados. Há duas soluções: **reparar ou reconstruir o LITP**, ou **transpor um raio** para o lugar do médio (p. 1723).
+
+MELIKYAN mostrou que as amputações centrais pioram a pinça de três pontos, a destreza e o torque (até 38%), mas não viu tesoura com o reparo primário do LITP. STEICHEN e IDLER notaram que imbricar o LITP funciona melhor no anular (metacarpal mais fino e CMC do mínimo móvel, que deixa o quinto convergir) que no médio, onde o metacarpal é mais largo e a CMC do indicador é rígida. GONG reconstruiu um LITP dorsal com enxerto de tendão em volta dos colos (ou com parafusos de biotenodese); ISELIN e PEZE fizeram osteotomia em cunha de fechamento do **capitato**; LYALL e ELLIOT tiraram o raio inteiro na CMC, protegendo o ramo motor do ulnar e descolando o ERCC (p. 1723 a 1725).
+
+## Sem transposição: a preferência do autor
+
+O autor prefere **não transpor** (p. 1725 e 1726; fig. 49.19 a 49.22). A incisão é dorsal sobre o raio, com as pontas sobre a falange proximal para sobrar pele na comissura (ou a incisão que poupa a comissura). A osteotomia é feita na base, **distal à inserção do ERCC**. O LITP é imbricado em "jaquetão" com fio inabsorvível 3-0, bem apertado, porque vai afrouxar com o tempo. Os nervos são sepultados nos interósseos ou suturados ponta a ponta. A rotação é conferida pela tenodese do punho (ao estender o punho, os dedos fletem e devem apontar para o escafoide sem cruzar), e fios de KIRSCHNER transversos seguram os metacarpais por 4 a 6 semanas.
+
+## A transposição do indicador e a técnica de CARROLL
+
+A transposição do indicador para o lugar do médio **fecha o espaço na hora** e permite controlar a rotação na própria osteotomia (p. 1726 a 1728). COLEN viu preensão total de 80% e achou a transposição do mínimo para o anular melhor que a do indicador para o médio. POSNER (9 indicadores e 5 mínimos), com osteotomia em degrau, teve consolidação em 13 de 14 em 9,5 semanas, sem má rotação. HANEL e LEDERMAN (10 casos) tiveram consolidação de 100%, preensão de 65%, pinça de 78% e comissura dentro de 2 mm do lado oposto.
+
+**CARROLL** (1950, 20 casos) transpôs o **metacarpal inteiro do indicador** para a **base do capitato**, com **artrodese** entre a base do segundo metacarpal e o capitato (p. 1728). Não encontrou diferença em relação à transposição para a base do terceiro metacarpal, mas acabou **preferindo** a osteotomia na base do segundo metacarpal, com a diáfise fixada na base do terceiro. As provas cobram CARROLL de duas formas: o que a operação é (ressecção do terceiro raio com transposição do indicador) e onde o metacarpal foi fixado nos casos originais (base do capitato, com artrodese).
+
+As complicações próprias da transposição (e não da ressecção simples) são a **consolidação viciosa**, a **pseudartrose** (sobretudo quando a osteotomia do terceiro metacarpal é feita distal demais; o Green manda fazê-la na base; fig. 49.23), a **rigidez** por aderência do extensor e uma **primeira comissura larga**, que perde a relação entre o polegar e o indicador na pinça fina (p. 1728).
+
+Quando transpõe, o autor usa placa em T com pelo menos três parafusos proximais; faz a osteotomia na junção metadiafisária, distal ao ERCC; preserva o LITP; reinsere no indicador o **manguito periosteal com a origem do adutor**; sutura o terceiro interósseo dorsal ao primeiro palmar, para dar abdução; usa tala em intrínseco plus por 4 a 6 semanas, com as IF livres (p. 1728 a 1730; fig. 49.24).
+
+O Campbell (cap. 21, p. 762) não transpõe o indicador sem reinserir o adutor e considera a operação **contraindicada se a mão faz trabalho braçal pesado**. O raciocínio é mecânico: a transposição exige excisar a diáfise do terceiro metacarpal, onde nasce o adutor; se o músculo não for reinserido no metacarpal transposto, a adução e a chave ficam fracas justamente em quem mais precisa de força. A operação é sobretudo estética (simetria, três dedos menos aparentes), tecnicamente difícil e exige rotação correta e fixação sólida.
 
 !questoes central=mao-0050 treino=mao-2261,mao-1763
 conceito: O raio do médio leva a origem do adutor do polegar e enfraquece a adução e a pinça de chave; perder um raio reduz a força de pronação e de supinação.
@@ -648,21 +948,104 @@ como: O TEOT 2022 pediu em quem.
 armadilha: Escolher idosos ou diabéticos.
 !fim
 
+> **Na prova:** raio do médio leva a **origem do adutor** (pinça de chave fraca); complicação = **tesoura** pelo LITP; CARROLL = transposição do **indicador**, metacarpal inteiro na **base do capitato** com artrodese; pseudartrose se a osteotomia do terceiro for **distal demais**; Campbell contraindica no **braçal pesado**.
+
+# Anelar e mínimo: o lado ulnar da mão {radar=confirmado}
+
+## O anelar
+
+O anelar forma com o médio a pedra angular do arco palmar e, com o mínimo, a preensão de força; tem pouco papel na pinça fina, e **alguns o consideram o dedo menos importante** (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1730). Ainda assim, a ressecção tem custo: NUZUMLALI comparou, nas avulsões do anelar na IFP, a ressecção do raio com a amputação na falange proximal, e as pinças lateral e de três pontos ficaram piores com o raio.
+
+A anatomia da base explica por que o anelar se fecha sozinho (p. 1730 a 1733; fig. 49.27 e 49.28). A CMC do quarto e do quinto tem **15 a 30 graus** de mobilidade; a base do quarto metacarpal não recebe inserção tendínea; e o quarto e o quinto dividem a faceta do **hamato**. Se o quarto metacarpal é retirado inteiro, a **base do quinto desliza radialmente** sobre o hamato e fecha a falha. Na transmetacarpal, ao contrário, a base que fica impede essa convergência e deixa o espaço. A deleção completa também pode tirar a abdução do mínimo e causar tesoura.
+
+Sem transposição, o autor faz incisão em raquete, desarticula na CMC, protege o nervo e a artéria ulnares, imbrica o LITP e fixa com fios por 4 a 6 semanas. Quem quer transpor o mínimo tem a técnica de **LE VIET** (osteotomia intracárpica em cunha e artrodese capitato-hamato), que evita a convergência, mantém o lado ulnar, preserva a CMC do quinto e não muda os interósseos (17 casos, 14 satisfeitos, 7 com má rotação e 1 pseudartrose), e a **osteotomia em degrau de POSNER**, que alonga o mínimo em 1,5 cm (fig. 49.29 e 49.30). A fixação é com placa em T ou dois fios cruzados. O Campbell (cap. 21, p. 762) diverge: transpor o quinto raio "não é indicado" na amputação do anelar, e a desarticulação na CMC dá a amputação de raio mais estética.
+
+## O mínimo
+
+O mínimo faz a **preensão digitopalmar**, graças à CMC móvel e aos hipotenares, e aumenta a abertura da mão; para alguns, é o dedo de **maior valor depois do polegar** (p. 1734). Na técnica, a incisão não passa sobre a borda ulnar (a cicatriz ali fica apoiada e sensível); protegem-se os ramos dorsais do ulnar; a osteotomia é feita na metáfise alargada, **preservando a base** do quinto metacarpal, onde se inserem o **FUC** e o **EUC**, que estabilizam o punho do lado ulnar; os hipotenares preenchem o defeito e acolchoam o coto, sem reinserção no quarto interósseo dorsal (fig. 49.33).
+
+## Os pontos críticos dos raios
+
+O Green fecha os raios assim (p. 1735): a amputação de um raio altera a biomecânica sem grande perda funcional; deve ser feita na fase aguda após trauma com parcimônia; melhora a aparência; as incisões devem evitar contratura da comissura; **sem transposição é preferível** (sem pseudartrose e com menos imobilização); cuidado com a tesoura; no mínimo, preservar a base.
+
+!tabela O que cada raio leva (Green, cap. 49, p. 1719 a 1735; Campbell, cap. 21, p. 760 a 768)
+| Raio | Perda e cuidado |
+| --- | --- |
+| indicador | pronação menos 50%; neuroma do digital radial; secção distal ao ERLC |
+| médio | origem do adutor do polegar; tesoura; não transpor no braçal pesado; secção distal ao ERCC |
+| anelar | o menos importante para alguns; o quinto desliza no hamato |
+| mínimo | maior valor depois do polegar; preservar a base (FUC e EUC) |
+| polegar | mais de 40% da função da mão |
+!fim
+
+Na mão mutilada, o **polegar** responde por mais de 40% da função; com mais um dedo há pinça, com um terceiro, trípode e força (Green, p. 1735). O Campbell (p. 768) preserva o terceiro metacarpal pela origem do adutor.
+
 !questoes central=mao-1452 relacionadas=mao-1527
 conceito: O anelar é o raio de menor perda funcional.
 como: A USP-SP 2024 e 2026 pediram o raio e o dedo de menor perda.
 armadilha: Escolher o mínimo.
 !fim
 
-# Neuroma e coto doloroso {radar=confirmado}
+# Vários dedos, prótese e reabilitação {radar=fundamento}
 
-O neuroma é inevitável; evita-se o **sintomático** deixando-o em área acolchoada (Campbell's Operative Orthopaedics, 15ª ed., cap. 21, p. 748). O neuroma em área sem coxim é a causa usual de dor, e os **sintomáticos são mais comuns no indicador e nas lesões por avulsão** (p. 768): o indicador é o dedo da pinça e o seu nervo digital radial é mobilizado no raio; na avulsão, o nervo é arrancado em vários níveis. O diagnóstico é uma área de dor extrema com pequena massa no trajeto do nervo. Previne-se com **neurectomia por tração**, transposição para o espaço interósseo ou sutura centrocentral, que reduziu neuromas de 22,7% para **12,8%** (Green, cap. 49, p. 1719; Campbell, p. 769). Outras causas de dor são a proeminência óssea sob pele fina (resolve-se encurtando o osso e dando coxim) e a cãibra por contratura do coto, por estiramento do extensor ou aderência do flexor (Campbell, p. 768 e 769). O tratamento começa com acolchoamento e dessensibilização; a excisão com corte mais proximal é frequente, e o novo neuroma fica indolor se estiver em área acolchoada. Suturar os nervos digitais radial e ulnar entre si reduz dor em repouso, frio e hipersensibilidade, à custa do tato. Depressão e acidente de trabalho pioram o resultado, e operar depois de 3 semanas dá desfecho pior. No membro proximal, o Campbell (cap. 20, p. 729) descreve também a interface nervosa periférica regenerativa e a reinervação muscular dirigida.
+## Vários dedos e o polegar
+
+As amputações de vários dedos são **3 a 6 vezes** mais frequentes em homens e 4,9 vezes mais em canhotos (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1735 e 1736). A regra é salvar todo tecido viável. O **polegar** vale mais de 40% da função da mão, e tudo se faz para reimplantá-lo ou salvá-lo. SOUCACOS descreveu a microcirurgia transposicional: reimplantar no lugar do polegar o dedo amputado menos lesado. Um polegar sensível com um só dedo já dá oponência básica; um terceiro dedo melhora a pinça de três pontos, o gancho e a preensão. ROSE e BUNCKE colocam os dedos menos lesados nos raios mais ulnares, porque isso abre a mão; GORDON, com duas transferências de dedos do pé, obteve mais de 9 libras de pinça. Nos tumores, PUHAINDRAN teve escore MSTS médio de 26; a ressecção dupla de raios foi pior, com preensão de 24%, mas as pinças se mantiveram quando o ramo motor profundo do ulnar foi preservado.
+
+## Carpo e punho
+
+Na amputação **transcárpica**, sem intrínsecos, não há pinça nem preensão; manter a radioulnar distal e a fibrocartilagem triangular preserva a rotação (p. 1736 e 1737). O comprimento extra complica a prótese, mas na urgência o Green salva o que der e deixa o paciente decidir depois; algum movimento do punho permite enganchar objetos. A desarticulação do punho segue na seção de punho e antebraço.
+
+## Prótese
+
+O momento pesa mais que o modelo: BIDDISS e CHAU viram que quem é protetizado em **até 6 meses** usa a prótese **16 vezes** mais (p. 1738). O polegar responde por 40% da função, e um polegar parcial sensível vale mais que um longo insensível; por isso o Green prefere distração, aprofundar a comissura, policização ou dedo do pé a uma prótese insensível.
+
+Há quatro tipos de prótese parcial da mão (p. 1738 a 1745):
+
+- **Passivas** (silicone): estéticas, protegem uma área hipersensível.
+- **Postes de oposição**, quando falta o polegar, para os dedos terem contra o que apertar.
+- **Por força corporal** (cabo): no X-finger e no M-finger, a flexão do punho ou do coto flete a MF e a IFP, com a IFD fixa.
+- **Externamente acionadas** (mioelétricas): a iLIMB tem polegar posicionado à mão; a Michelangelo, polegar motorizado; chegam a 30 libras de preensão, contra 8 nas por força corporal.
+
+STEIN e WALLEY viram o gancho usado mais horas (14 contra 9,6) e tarefas feitas 2 vezes mais rápido, mas os pacientes preferiam a mioelétrica. HOPPER encontrou 28% de pouco uso e 24% de uso acima de 4 horas; próteses do anelar e do polegar são as menos usadas, e mulheres usam mais. BURGER mostrou o impacto no trabalho: menos de 50% voltam ao mesmo emprego, nenhum com 3 ou mais dedos amputados manteve o emprego, a perda do polegar é a pior, e a falta de sensibilidade na ponta impede o uso da prótese no trabalho.
+
+A **osseointegração** ancora a prótese direto no osso. LUNDBORG fez o polegar na MF, estável em 3 meses, com "osseopercepção" (o paciente sente pela vibração do osso); MANURANGSEE usou a base da falange proximal com pelo menos 1,5 cm de osso. Os critérios de JÖNSSON pedem osso suficiente, impossibilidade de prótese comum, ausência de imunossupressão e paciente muito motivado.
+
+## Reabilitação e a janela de 30 dias
+
+A reabilitação tem quatro fases: pós-cirúrgica, pré-protética, protética básica e treino funcional avançado, com equipe multidisciplinar e contato com outros amputados (p. 1745 a 1747). O impacto emocional é grande: GRUNERT viu até **94%** com sintomas de estresse pós-traumático em 2 meses, e o apoio começa no terceiro dia. O ajuste passa por três fases: aceitação funcional, estética e emocional; WEIS achou melhor a exposição imaginária precoce. A **janela de ouro de 30 dias** (MALONE) é o número que fica: protetizados em até 30 dias tiveram **93%** de reabilitação e **100%** de volta ao trabalho, contra 42% e 15% depois de 30 dias (p. 1747). O motivo é o hábito: em poucas semanas o paciente aprende a viver com uma mão só, e a prótese que chega tarde vira objeto de gaveta.
+
+> **Na prova:** polegar = **mais de 40%**; protetizar em até **30 dias** (MALONE, 93% e 100%); em até 6 meses usa **16 vezes** mais; mioelétrica até 30 libras; ninguém com **3 ou mais dedos** amputados manteve o emprego.
+
+# Neuroma, dor fantasma e coto doloroso {radar=confirmado}
+
+## Dor do coto e dor fantasma
+
+De **7 a 49%** dos amputados do membro superior têm dor residual (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1747). É preciso separar três coisas: a **dor do coto** (no segmento que ficou), a **dor fantasma** (sentida no segmento que não existe mais) e a **sensação fantasma** não dolorosa, que melhora com o tempo. HANLEY (104 pacientes) encontrou dor do coto em 71%, fantasma em 79% e algum tipo de dor em 90%, e o uso de prótese se associou a mais dor fantasma. JENSEN viu que a dor anterior à amputação aumenta a fantasma (72% aos 8 dias, 50% aos 2 anos), e LAMBERT mostrou que a peridural pré-operatória reduz a dor do coto, mas não a fantasma (p. 1747 e 1748). A analgesia agressiva pode reduzir a dor fantasma.
+
+A **dessensibilização** funciona porque o córtex se adapta (SICA): o estímulo repetido reorganiza a representação do coto e diminui a resposta exagerada. O programa domiciliar dura no mínimo **6 semanas**, esfregando e batendo a ponta em superfícies de texturas diferentes.
+
+## O neuroma: o que é e quando dói
+
+O neuroma é o **brotamento axonal sem órgão-alvo**: os axônios cortados tentam regenerar, não encontram o coto distal e formam um novelo de fibras e tecido cicatricial, com mediadores como substância P, CGRP e FGF que sensibilizam a dor (p. 1748). Depois de uma amputação, a incidência vai de **2,7 a 30%**, e a maioria é assintomática; só **3 a 5%** são sintomáticos. O neuroma é **inevitável**; o que se evita é o neuroma **sintomático**, deixando-o em área acolchoada (Campbell's Operative Orthopaedics, 15ª ed., cap. 21, p. 748).
+
+Os neuromas sintomáticos são **mais comuns no indicador e nas lesões por avulsão** (Campbell, p. 768): o indicador é o dedo da pinça e o seu nervo digital radial é mobilizado no raio; na avulsão, o nervo é arrancado em vários níveis. O diagnóstico é **clínico**: área de dor extrema com pequena massa no trajeto do nervo e **TINEL** localizado com dor lancinante. O **bloqueio anestésico seletivo** confirma o nervo responsável e mostra ao paciente a área que ficará dormente depois da cirurgia (Green, p. 1748).
+
+## Prevenir e tratar
+
+Previne-se com **neurectomia por tração**, transposição para o espaço interósseo ou sutura centrocentral, que reduziu neuromas de 22,7% para **12,8%** (Green, cap. 49, p. 1719; Campbell, p. 769). Outras causas de dor são a proeminência óssea sob pele fina (resolve-se encurtando o osso e dando coxim) e a cãibra por contratura do coto, por estiramento do extensor ou aderência do flexor (Campbell, p. 768 e 769).
+
+O tratamento começa **conservador**: massagem, dessensibilização, TENS e medicamentos. A cirurgia fica para os refratários que responderam ao bloqueio, com cautela quando a dor não segue o território de um nervo (Green, p. 1748 e 1749). O Green lista quatro opções cirúrgicas, sem estudo que defina a melhor: **ressecção**; **coaptação** ponta a ponta (direta ou com veia ou tubo); **contenção** (translocação para músculo ou osso); e **translocação** do nervo. A preferência do autor é relocar o nervo para proximal, fora da zona da lesão (dentro de um músculo interósseo), ou suturar os digitais entre si; as três zonas de ATHERTON orientam o local (fig. 49.46, tabela 49.3). No Campbell, suturar os nervos digitais radial e ulnar entre si reduz dor em repouso, frio e hipersensibilidade, à custa do tato; a excisão com corte mais proximal é frequente, e o novo neuroma fica indolor se estiver em área acolchoada. Depressão e acidente de trabalho pioram o resultado, e operar depois de 3 semanas dá desfecho pior. No membro proximal, o Campbell (cap. 20, p. 729) descreve também a interface nervosa periférica regenerativa e a reinervação muscular dirigida.
+
+O Green termina com um aviso honesto: mesmo com boa técnica, o coto pode ficar disestésico, sobretudo nas amputações distais (p. 1749).
 
 !questoes central=mao-0112 relacionadas=mao-0035
 conceito: O neuroma sintomático é mais frequente no indicador e nas avulsões.
 como: O TARO 2022 e 2021 repetiram a pergunta.
 armadilha: Trocar pelo médio ou pela laceração.
 !fim
+
+> **Na prova:** neuroma = brotamento **sem órgão-alvo**; **3 a 5%** sintomáticos; diagnóstico **clínico** (TINEL e bloqueio); mais no **indicador e na avulsão**; peridural reduz a dor do coto, não a fantasma; dessensibilização por **6 semanas**.
 
 # O polegar que não foi reimplantado {radar=confirmado}
 
@@ -720,7 +1103,7 @@ armadilha: Dar IF móvel ao envoltório, inverter os tipos ou indicar a mão tor
 
 # Punho e antebraço {radar=confirmado}
 
-A transcárpica e a **desarticulação do punho** preservam a **radioulnar distal** e a fibrocartilagem triangular, mantendo a rotação (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1737). O Campbell (cap. 20, p. 730) diz que **só 50%** da pronação e da supinação chegam à prótese, mas valem o esforço. A prótese é mais difícil e é usada por 54% dos desarticulados, contra 94% abaixo do cotovelo (Green, p. 1737). No caso clínico do capítulo 50, a **transradial** oferece **mais opções protéticas**, com nível ideal **8 a 10 cm proximal aos estiloides**; o Campbell (p. 731 e 732) mantém dois terços do antebraço e prefere 5 cm de ulna a perder o cotovelo. Na técnica da desarticulação, retalho palmar longo e dorsal curto (2:1), estiloides arredondados para não causar necrose por pressão, nervos tracionados e cortados para retraírem, e tendões fixados ao rádio, que podem comandar uma prótese mioelétrica ou servir a um futuro transplante (Green, p. 1737). A prótese deve ser adaptada em até 30 dias; cerca de 50% a abandonam em 5 anos, e a dor fantasma passa de 50%, raramente impedindo o uso (Campbell, p. 730).
+A transcárpica e a **desarticulação do punho** preservam a **radioulnar distal** e a fibrocartilagem triangular, mantendo a rotação (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1737). O Campbell (cap. 20, p. 730) diz que **só 50%** da pronação e da supinação chegam à prótese, mas valem o esforço. A prótese é mais difícil e é usada por 54% dos desarticulados, contra 94% abaixo do cotovelo (Green, p. 1737). No caso clínico do capítulo 50, a **transradial** oferece **mais opções protéticas**, com nível ideal **8 a 10 cm proximal aos estiloides**; o Campbell (p. 731 e 732) mantém dois terços do antebraço e prefere 5 cm de ulna a perder o cotovelo. Na técnica da desarticulação, retalho palmar longo e dorsal curto (2:1), estiloides arredondados para não causar necrose por pressão, nervos tracionados e cortados para retraírem, e tendões fixados ao rádio em tensão fisiológica, que podem comandar uma prótese mioelétrica ou servir a um futuro transplante (Green, p. 1737). LOUIS faz ligadura dupla dos nervos no antebraço proximal, para que o neuroma fique em continuidade sob os músculos, e o alargamento metafisário distal do rádio ajuda a suspender a prótese; os ligamentos da radioulnar distal e a fibrocartilagem triangular são protegidos. A prótese deve ser adaptada em até 30 dias; cerca de 50% a abandonam em 5 anos, e a dor fantasma passa de 50%, raramente impedindo o uso (Campbell, p. 730).
 
 !tabela Punho e transradial (Green, cap. 49, p. 1737, e cap. 50; Campbell, cap. 20, p. 730 a 732)
 | Aspecto | Desarticulação | Transradial |
@@ -754,6 +1137,10 @@ Boa parte dos erros em questões de reimplante vem de misturar os dois livros, e
 | comorbidades | não discute | diabetes, lúpus, colagenoses, aterosclerose (p. 3030) |
 | discriminação | 8 mm corte, 15 mm esmagamento (p. 1483) | raramente menor que 10 mm (p. 3029) |
 | técnica microvascular | fora do livro impresso | clamp, fio, pontos, ordem dos clamps (p. 3025 a 3037) |
+| KUTLER (amputações) | SHEPARD: oblíquas palmares e transversas (cap. 49, p. 1714) | polpa comprometida, pele lateral íntegra (cap. 21, p. 752) |
+| tenar (amputações) | indicador e médio (cap. 49, p. 1716) | médio e anular mais comuns (cap. 21, p. 755) |
+| transpor o quinto no anelar | descreve e usa (LE VIET, POSNER, p. 1733) | não indicado (cap. 21, p. 762) |
+| MOBERG (avanço) | 1 cm (cap. 49); 1,5 e 2,5 cm (cap. 48) | 1 a 2 cm (cap. 21, p. 766) |
 !fim
 
 A regra prática é simples: quando a questão cita o Green ou a SBCM com bibliografia do Green, o número é o do Green; quando a alternativa traz 8 h, 30 h, duas veias por artéria ou a sequência artéria, nervo, veia, ela está falando o Campbell, e só é a resposta se nenhuma alternativa trouxer a versão do Green.
@@ -762,4 +1149,4 @@ A regra prática é simples: quando a questão cita o Green ou a SBCM com biblio
 
 O reimplante é decisão antes de técnica: polegar, vários dedos e criança justificam a tentativa; o dedo distal ao FDS reimplanta-se depressa e funciona; o paciente instável não vai ao microscópio. O relógio é o músculo, e o frio compra tempo sem congelar. A técnica vai do grosseiro ao delicado, com osso encurtado para o nervo, íntima ressecada, veia invertida e artéria feita depois do teste do jato. A veia é o elo fraco, e a cor diz o que falhou. Sem reimplante, a amputação bem feita preserva comprimento, nervo em coxim e o raio certo.
 
-> **Na prova:** **polegar, vários dedos e criança**; única contraindicação firme a **instabilidade clínica**; relativas contra **zona 2, segmentar e anel**; dedo **6 a 12 h quente e 24 h frio** (Campbell **8 h e 30 h**), antebraço **2 a 3 h** já necrosa; abaixo de **4 °C** forma cristais; **LIN**: sem relação entre tempo e resultado acima de 24 h; encurtar pelo **nervo**; ordem clássica **osso, extensor, flexor, artéria, nervo, veia**, no Green **artéria depois de soltar o garrote**; vários dedos **estrutura por estrutura**; zona 1 com **veias volares ou a segunda artéria**; **duas veias por artéria**; avulsão com **veia invertida** das veias volares do antebraço; clamp **menor que 30 g/mm²**, **5 a 8 pontos** na artéria de 1 mm, soltar o clamp **a jusante** primeiro; **20 min por hora** no macro; no-reflow por **neutrófilos**; olhar a **paroníquia dorsal**, não o leito ungueal; **calor e aspirina**; pálido arterial, **azulado venoso**; **Aeromonas**; discriminação **8 e 15 mm**, útil em **61% e 54%**; tendão é o **último** no anel; **ALLEN 4 e TAMAI II** proximais à lúnula; **1,5 cm** em 3 a 4 semanas; enxerto composto na criança em **5 h**; raio do médio leva o **adutor**; anelar de **menor perda**; neuroma no **indicador e na avulsão**; **MF do indicador vira CMC**; hálux total na **falange proximal ou metacarpo**; punho transmite **50%**; transradial **8 a 10 cm**.
+> **Na prova:** **polegar, vários dedos e criança**; única contraindicação firme a **instabilidade clínica**; relativas contra **zona 2, segmentar e anel**; dedo **6 a 12 h quente e 24 h frio** (Campbell **8 h e 30 h**), antebraço **2 a 3 h** já necrosa; abaixo de **4 °C** forma cristais; **LIN**: sem relação entre tempo e resultado acima de 24 h; encurtar pelo **nervo**; ordem clássica **osso, extensor, flexor, artéria, nervo, veia**, no Green **artéria depois de soltar o garrote**; vários dedos **estrutura por estrutura**; zona 1 com **veias volares ou a segunda artéria**; **duas veias por artéria**; avulsão com **veia invertida** das veias volares do antebraço; clamp **menor que 30 g/mm²**, **5 a 8 pontos** na artéria de 1 mm, soltar o clamp **a jusante** primeiro; **20 min por hora** no macro; no-reflow por **neutrófilos**; olhar a **paroníquia dorsal**, não o leito ungueal; **calor e aspirina**; pálido arterial, **azulado venoso**; **Aeromonas**; discriminação **8 e 15 mm**, útil em **61% e 54%**; tendão é o **último** no anel; **ALLEN 4 e TAMAI II** proximais à lúnula; **1,5 cm** em 3 a 4 semanas; enxerto composto na criança em **5 h**; raio do médio leva o **adutor**; anelar de **menor perda**; neuroma no **indicador e na avulsão**; ATASOY na **oblíqua dorsal**, KUTLER **3 a 4 mm**, MOBERG **bipediculado** do polegar (1,5 cm sem e 2,5 cm com incisão), cross-finger até **50 anos**, tenar no **indicador e médio**; unha em gancho pelo **leito puxado**; preservar **FDP** e **FDS**; lumbrical plus = **extensão paradoxal**; CARROLL na **base do capitato**; protetizar em **30 dias**; **MF do indicador vira CMC**; hálux total na **falange proximal ou metacarpo**; punho transmite **50%**; transradial **8 a 10 cm**.
