@@ -68,7 +68,7 @@ DUBBERLEY propôs uma classificação voltada para o planejamento: **tipo 1**, c
 
 A falta de consolidação ocorre em **2 a 10%** das fraturas do úmero distal e, nas palavras do Green (cap. 18, p. 728), **invariavelmente na região metadiafisária**, isto é, na junção supracondilar entre o bloco articular e a diáfise, e não dentro da epífise, da tróclea ou nos epicôndilos. A causa principal é a **fixação inadequada**, favorecida por trauma de alta energia, cominuição extensa e osso de má qualidade. O quadro típico é uma pseudoartrose móvel e dolorosa com a articulação ulnoumeral rígida (o movimento acontece no foco, não no cotovelo), e a **neuropatia ulnar associada é comum**. Poucos casos se resolvem com órtese; a reconstrução é exigente, por acesso posterior amplo, com transposição anterior do nervo ulnar.
 
-!questoes central=mao-1350 relacionadas=mao-1572,mao-1490
+!questoes central=mao-1350 relacionadas=mao-1572,mao-1490 treino=ombro-cotovelo-0725,ombro-cotovelo-0726,ombro-cotovelo-0727,ombro-cotovelo-0728
 conceito: MEHNE e MATTA classificam o úmero distal por achados anatômicos cirúrgicos e pelo conceito de colunas, para planejar a tática operatória; a fratura do capítulo tipo III é a cominutiva; a pseudoartrose do úmero distal ocorre na região metadiafisária.
 como: A USP-SP 2025 perguntou como a classificação de MEHNE e MATTA ajuda no preparo cirúrgico; a USP-SP 2026 pediu a fratura tipo 3 do capítulo; a USP-SP 2024 pediu a região do úmero distal onde as pseudoartroses são mais frequentes.
 armadilha: Achar que a classificação dispensa as colunas ou foca os côndilos; trocar o tipo III (cominutiva) pelo II (pequeno fragmento) ou pelo IV (extensão à tróclea); marcar "troclear" ou "epifisária" para a pseudoartrose.
