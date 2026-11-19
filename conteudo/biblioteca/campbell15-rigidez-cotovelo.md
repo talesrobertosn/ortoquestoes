@@ -109,7 +109,7 @@ A divisão muda a conduta. A causa **extrínseca** se trata **ressecando as estr
 
 O Campbell (cap. 51, p. 2184) lista as causas: **trauma, OH, queimaduras, espasticidade, cicatriz pós-operatória e imobilização prolongada**. No trauma, os fatores de risco são **luxação ulnoumeral**, **fraturas segmentares**, **movimento limitado com 6 semanas de pós-operatório** e **OH**; destes, **só a OH pode ser prevenida**. O Green (p. 843) explica o mecanismo: o **derrame** leva o cotovelo à **flexão**, posição de **maior volume da cápsula**; fletido, flexores e extensores cocontraem; a cápsula, antes fina e transparente, **espessa** e vira "**bloqueio**" para a flexão e "**amarra**" para a extensão. Daí a regra de iniciar o **movimento ativo assistido o mais cedo possível**: começar com 6 semanas, após fratura ou luxação simples, costuma ser tarde.
 
-!questoes central=ombro-cotovelo-0326
+!questoes central=ombro-cotovelo-0326 treino=ombro-cotovelo-0747
 conceito: Contratura da cápsula, dos colaterais, consolidação viciosa extra-articular e OH são extrínsecas; lesão de cartilagem, incongruência e aderências intra-articulares são intrínsecas.
 como: O TARO 2012 pediu, na ordem, uma causa extrínseca e uma intrínseca, com pares de aderências, contratura da cápsula, OH e contratura de colateral.
 armadilha: Inverter a ordem (aderências e cápsula) ou achar que a OH ou o colateral contraído são intrínsecos; os dois são extrínsecos, então nenhum par com eles fecha extrínseca mais intrínseca.
@@ -236,7 +236,7 @@ O Green's Operative Hand Surgery, 7ª ed. (cap. 21, p. 804, Tabela 21.1), reprod
 | III | Anquilose óssea do cotovelo ou do antebraço | Anquilose completa do cotovelo, do antebraço ou de ambos |
 !fim
 
-!questoes central=ombro-cotovelo-0386 treino=ombro-cotovelo-0666
+!questoes central=ombro-cotovelo-0386 treino=ombro-cotovelo-0666,ombro-cotovelo-0745
 conceito: Na classificação de HASTINGS e GRAHAM, a limitação parcial da pronação e da supinação, sem anquilose e sem perda da flexoextensão, é a classe IIB.
 como: O simulado SBCM 2024 pediu a classe da perda parcial da pronação e da supinação; uma prova de Ortopedia perguntou a classe da limitação da pronossupinação (a mesma questão aparece duas vezes no acervo).
 armadilha: Marcar IIA (é a flexoextensão), IIC (exige os dois planos) ou III (só a anquilose completa, como a sinostose radioulnar fechada).
@@ -320,7 +320,7 @@ O **fixador articulado** tem três indicações (Green, p. 855 e 856): **instabi
 | Contratura antiga sem cirurgia | Manipulação isolada não recomendada |
 !fim
 
-!questoes central=ombro-cotovelo-0467
+!questoes central=ombro-cotovelo-0467 treino=ombro-cotovelo-0744
 conceito: Manipulação isolada não se faz em contratura antiga; artroscopia exige cartilagem preservada; a via lateral isolada (coluna) alcança cápsula anterior e posterior; a distração com ou sem interposição fascial é a saída quando o problema é intra-articular.
 como: O TARO 2007 pediu a afirmação correta, com alternativas sobre manipulação como primeira opção, artroscopia na destruição articular, artroplastia de distração na aderência intra-articular extensa e proibição da via lateral isolada.
 armadilha: Achar que a via lateral não alcança a parte posterior; o procedimento da coluna faz cápsulectomia anterior e posterior pela mesma incisão.
@@ -372,7 +372,7 @@ A técnica (Green, p. 850 a 852): decúbito dorsal com **duas toalhas sob a esc�
 
 O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39), descreve a mesma via: começa por **identificar e transpor o ulnar**, divide a origem flexora em linha com as fibras, **evita dissecar logo abaixo do epicôndilo** (feixe anterior do LCM) e eleva a **cabeça umeral do flexor ulnar do carpo, o palmar longo, o flexor radial do carpo e o pronador redondo**; a artrotomia fica **à frente do feixe anterior**.
 
-!questoes treino=ombro-cotovelo-0664,ombro-cotovelo-0673
+!questoes treino=ombro-cotovelo-0664,ombro-cotovelo-0673,ombro-cotovelo-0746
 conceito: A medial over-the-top de HOTCHKISS expõe, protege e transpõe o ulnar, preserva o feixe anterior do LCM e chega à cápsula anterior dividindo a massa flexopronadora entre o flexor ulnar do carpo e o pronador redondo.
 como: A SBCM 2024 perguntou o benefício da via over-the-top no cotovelo rígido; a SBCM 2022, entre quais músculos se acessa a cápsula anterior.
 armadilha: Achar que a via medial dá bom acesso à cabeça do rádio ou à OH lateral (são as desvantagens), ou escolher o intervalo do flexor radial do carpo com os flexores dos dedos.
