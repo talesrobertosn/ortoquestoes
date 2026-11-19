@@ -531,7 +531,7 @@ export function sessaoPendente(sessao: EstadoSessao | null, agora: number = Date
   if (chaveDoDia(sessao.criadaEm) !== chaveDoDia(agora)) return null
   const feitas = Object.keys(sessao.respostas).length
   if (feitas >= sessao.ids.length) return null
-  return { feitas, total: sessao.ids.length, tema: sessao.filtros.temas[0] ?? '', simulado: !!sessao.simulado }
+  return { feitas, total: sessao.ids.length, tema: sessao.filtros?.temas?.[0] ?? '', simulado: !!sessao.simulado }
 }
 
 /** Resumo da semana que passou (para domingo e segunda): questões, dias, acerto e a área mais fraca. */
