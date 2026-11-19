@@ -10733,15 +10733,15 @@
   },
   {
    "id": "green-amputacoes-reimplantes",
-   "versao": 3,
+   "versao": 5,
    "titulo": "Amputações e reimplantes na mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017)",
    "capitulo": "Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)",
-   "resumo": "Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.",
+   "resumo": "Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação; amputações maiores: trauma é a causa principal, cinco princípios, transradial 8 a 10 cm do estiloide ulnar com mais opções, 5 cm de ulna bastam, preservar o cotovelo, sem cotovelo transumeral 10 cm acima do olécrano exceto na criança (supercrescimento), MALONE 30 dias, BIDDISS 6 meses e 16 vezes, força corporal a mais prescrita, mioelétrica no transradial, híbrida nos proximais, TMR como amplificador biológico, KRUKENBERG separa rádio e ulna no cego bilateral.",
    "acesso": "gratis",
-   "minutos": 104,
+   "minutos": 175,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10899,14 +10899,104 @@
      "radar": "confirmado"
     },
     {
-     "id": "a-transferencia-de-dedos-do-pe",
-     "titulo": "A transferência de dedos do pé",
+     "id": "a-transferencia-de-dedos-do-pe-igual-com-igual",
+     "titulo": "A transferência de dedos do pé: igual com igual",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-que-reconstruir-em-cada-nivel",
+     "titulo": "O que reconstruir em cada nível",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-mao-metacarpal-de-wei",
+     "titulo": "A mão metacarpal de WEI",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-crianca-e-a-mao-congenita",
+     "titulo": "A criança e a mão congênita",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-anatomia-arterial-do-primeiro-espaco-70-20-e-1",
+     "titulo": "A anatomia arterial do primeiro espaço: 70, 20 e 10",
+     "radar": "clinico"
+    },
+    {
+     "id": "halux-total-halux-aparado-e-envoltorio",
+     "titulo": "Hálux total, hálux aparado e envoltório",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-segundo-dedo-e-as-transferencias-parciais",
+     "titulo": "O segundo dedo e as transferências parciais",
+     "radar": "clinico"
+    },
+    {
+     "id": "dois-e-tres-dedos-de-uma-vez",
+     "titulo": "Dois e três dedos de uma vez",
+     "radar": "fundamento"
+    },
+    {
+     "id": "no-receptor-osso-tendoes-nervos-e-vasos",
+     "titulo": "No receptor: osso, tendões, nervos e vasos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "articulacoes-vascularizadas-do-pe",
+     "titulo": "Articulações vascularizadas do pé",
+     "radar": "clinico"
+    },
+    {
+     "id": "depois-da-cirurgia-vigiar-complicacoes-e-retoque",
+     "titulo": "Depois da cirurgia: vigiar, complicações e retoques",
+     "radar": "clinico"
+    },
+    {
+     "id": "resultados-o-pe-que-ficou-e-a-reabilitacao",
+     "titulo": "Resultados, o pé que ficou e a reabilitação",
+     "radar": "fundamento"
+    },
+    {
+     "id": "amputacoes-maiores-quem-perde-o-membro-e-os-cinc",
+     "titulo": "Amputações maiores: quem perde o membro e os cinco princípios",
+     "radar": "fundamento"
     },
     {
      "id": "punho-e-antebraco",
      "titulo": "Punho e antebraço",
      "radar": "confirmado"
+    },
+    {
+     "id": "ao-redor-do-cotovelo-salvar-a-articulacao-ou-esc",
+     "titulo": "Ao redor do cotovelo: salvar a articulação ou escolher o nível",
+     "radar": "clinico"
+    },
+    {
+     "id": "ombro-e-interescapulotoracica",
+     "titulo": "Ombro e interescapulotorácica",
+     "radar": "fundamento"
+    },
+    {
+     "id": "krukenberg-o-antebraco-que-vira-pinca",
+     "titulo": "KRUKENBERG: o antebraço que vira pinça",
+     "radar": "confirmado"
+    },
+    {
+     "id": "reabilitacao-protetica-e-o-periodo-de-ouro",
+     "titulo": "Reabilitação protética e o período de ouro",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-tipos-de-protese-passiva-forca-corporal-mioel",
+     "titulo": "Os tipos de prótese: passiva, força corporal, mioelétrica e híbrida",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tmr-rpni-e-as-interfaces-com-o-nervo",
+     "titulo": "TMR, RPNI e as interfaces com o nervo",
+     "radar": "fundamento"
     },
     {
      "id": "green-e-campbell-onde-os-livros-discordam",
@@ -10957,8 +11047,10 @@
     "mao-1493",
     "mao-1381",
     "mao-1510",
+    "mao-1629",
     "mao-1453",
-    "mao-0568"
+    "mao-0568",
+    "mao-0439"
    ],
    "treino": [
     "mao-2330",
@@ -11018,10 +11110,26 @@
     "mao-1763",
     "mao-2175",
     "mao-2369",
-    "mao-2359",
-    "mao-2360",
+    "mao-3774",
+    "mao-3777",
+    "mao-3775",
+    "mao-3773",
     "mao-2091",
-    "mao-2263"
+    "mao-2360",
+    "mao-1770",
+    "mao-3776",
+    "mao-3779",
+    "mao-2359",
+    "mao-3770",
+    "mao-2633",
+    "mao-3771",
+    "mao-3778",
+    "mao-2601",
+    "mao-3772",
+    "mao-2263",
+    "mao-3814",
+    "mao-3815",
+    "mao-2591"
    ],
    "subtemas": [
     "Amputações e reimplantes"
@@ -11161,6 +11269,121 @@
    ],
    "subtemas": [
     "Anestesia em cirurgia da mão"
+   ]
+  },
+  {
+   "id": "green-artrogripose",
+   "versao": 1,
+   "titulo": "Artrogripose",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed., cap. 36",
+   "capitulo": "Capítulo 39 · Arthrogryposis",
+   "resumo": "AMC = contraturas congênitas em dois ou mais membros, nome de achado e não de doença; amioplasia idiopática e esporádica, inteligência normal, gêmeo idêntico discordante, útero bicorno e oligoidrâmnio sem ligação confirmada; DA genéticas, 11 tipos (DA2A FREEMAN-SHELDON, DA3 GORDON, DA8 ESCOBAR, DA9 BEALS); postura da amioplasia: ombro aduzido e rodado para dentro, cotovelo estendido, antebraço neutro a leve pronação (a pronação é ilusão do ombro), punho fletido e ulnar; tríceps preservado e flexores ausentes, por isso a contratura em extensão do cotovelo é a mais comum, e a em flexão é a mais difícil; meta \"uma mão para comer e uma para limpar\", que pode ser a mesma; úmero derrotado entre neutro e 15° de rotação interna; liberação do tríceps em V-Y se menos de 30° de flexão aos 12 a 18 meses, melhor abaixo de 3 anos, ulnar transposto primeiro; flexão ativa = grande dorsal bipolar; antebraço de um osso é o mais previsível, mas quem limpa com pronação não neutraliza o antebraço; cunha dorsal e radial do carpo com ECU para ECRB, extensão até 30°; polegar tipo 1 (CMC estendida, MF fletida, DA), tipo 2 (CMC fletida, MF estendida, amioplasia), tipo 3 (as duas fletidas); fixo = condrodese da MF, corrigível = EIP para ELP, CMC fletida = osteotomia de reorientação; retalho STILETTO; camptodactilia mais comum nas DA, Z-plastia sempre, FDS cortado se o FDP funciona, rigidez é a complicação mais comum.",
+   "acesso": "gratis",
+   "minutos": 50,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-e-artrogripose-amioplasia-e-artrogriposes-",
+     "titulo": "O que é artrogripose: amioplasia e artrogriposes distais",
+     "radar": "clinico"
+    },
+    {
+     "id": "avaliacao-e-postura-tipica",
+     "titulo": "Avaliação e postura típica",
+     "radar": "clinico"
+    },
+    {
+     "id": "anatomia-que-muda-a-cirurgia",
+     "titulo": "Anatomia que muda a cirurgia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "historia-de-lewin-a-bennett",
+     "titulo": "História: de LEWIN a BENNETT",
+     "radar": "fundamento"
+    },
+    {
+     "id": "objetivos-uma-mao-para-comer-e-uma-para-limpar",
+     "titulo": "Objetivos: uma mão para comer e uma para limpar",
+     "radar": "clinico"
+    },
+    {
+     "id": "ombro-osteotomia-de-rotacao-externa-do-umero",
+     "titulo": "Ombro: osteotomia de rotação externa do úmero",
+     "radar": "clinico"
+    },
+    {
+     "id": "cotovelo-a-contratura-em-extensao-e-a-liberacao-",
+     "titulo": "Cotovelo: a contratura em extensão e a liberação do tríceps",
+     "radar": "confirmado"
+    },
+    {
+     "id": "flexao-ativa-do-cotovelo-o-grande-dorsal-bipolar",
+     "titulo": "Flexão ativa do cotovelo: o grande dorsal bipolar",
+     "radar": "clinico"
+    },
+    {
+     "id": "antebraco-osteotomias-do-radio-da-ulna-e-o-anteb",
+     "titulo": "Antebraço: osteotomias do rádio, da ulna e o antebraço de um osso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "punho-a-osteotomia-em-cunha-do-carpo",
+     "titulo": "Punho: a osteotomia em cunha do carpo",
+     "radar": "clinico"
+    },
+    {
+     "id": "polegar-tres-tipos-e-um-algoritmo",
+     "titulo": "Polegar: três tipos e um algoritmo",
+     "radar": "clinico"
+    },
+    {
+     "id": "dedos-e-camptodactilia",
+     "titulo": "Dedos e camptodactilia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1566",
+    "mao-1386",
+    "mao-1123",
+    "mao-0757"
+   ],
+   "treino": [
+    "mao-2093",
+    "mao-3816",
+    "mao-3756",
+    "mao-2248",
+    "mao-3822",
+    "mao-2076",
+    "mao-3818",
+    "mao-3819",
+    "mao-3820",
+    "mao-3823",
+    "mao-2544",
+    "mao-2440",
+    "mao-3817",
+    "mao-3605",
+    "mao-3611",
+    "mao-2439",
+    "mao-3821",
+    "mao-2010",
+    "mao-2402",
+    "mao-2466"
+   ],
+   "subtemas": [
+    "Outras malformações congênitas"
    ]
   },
   {
@@ -11858,15 +12081,15 @@
   },
   {
    "id": "green-deformidades-dedos",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Deformidades dos dedos",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed., e o HEBERT",
    "capitulo": "Capítulo 10 · Treatment of the Stiff Finger and Hand",
-   "resumo": "Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); BUNNELL e intrínseco plus e minus; checkrein e artéria digital transversa; braquidactilia (falange média, BELL E com metacarpos curtos, braquimetacarpia do 4º em meninas, distração 4 a 7 dias e 0,25 a 0,5 mm duas vezes ao dia); clinodactilia (mais de 10 graus, barra em C e falange delta, COONEY, VICKERS antes dos 6 anos, polegar com osteotomia primária); KIRNER (falange distal, palmar e radial, meninas, SONG, periósteo dorsal como dobradiça); camptodactilia (BENSON I a III, 80% no lactente, dois terços bilaterais, abaixo de 30 graus não operar).",
+   "resumo": "Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); rigidez pós-traumática (edema e postura, came da MF, BUNNELL positivo com a MF estendida, extensor com punho e MF fletidos, lumbrical pelo desvio ulnar e pelo gancho passivo, 87% resolvem com tala, liberação dorsal da MF com meta de 70 graus e acessório que ressalta, IFP em flexão com checkrein, artéria digital transversa e via mediolateral, extensor como fator decisivo, DIGIT WIDGET, IFP em extensão com BUNNELL depois da liberação); intrínseco plus e minus; braquidactilia (falange média, BELL E com metacarpos curtos, braquimetacarpia do 4º em meninas, distração 4 a 7 dias e 0,25 a 0,5 mm duas vezes ao dia); clinodactilia (mais de 10 graus, barra em C e falange delta, COONEY, VICKERS antes dos 6 anos, polegar com osteotomia primária); KIRNER (falange distal, palmar e radial, meninas, SONG, periósteo dorsal como dobradiça); camptodactilia (BENSON I a III, 80% no lactente, dois terços bilaterais, abaixo de 30 graus não operar).",
    "acesso": "gratis",
-   "minutos": 62,
+   "minutos": 90,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11929,14 +12152,34 @@
      "radar": "confirmado"
     },
     {
+     "id": "rigidez-do-dedo-edema-postura-e-o-que-vale-salva",
+     "titulo": "Rigidez do dedo: edema, postura e o que vale salvar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "rigidez-talas-e-o-tratamento-sem-cirurgia",
+     "titulo": "Rigidez: talas e o tratamento sem cirurgia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "rigidez-antes-de-operar",
+     "titulo": "Rigidez: antes de operar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "rigidez-a-mf-que-nao-flete",
+     "titulo": "Rigidez: a MF que não flete",
+     "radar": "confirmado"
+    },
+    {
      "id": "rigidez-a-contratura-em-flexao-da-ifp",
      "titulo": "Rigidez: a contratura em flexão da IFP",
      "radar": "confirmado"
     },
     {
-     "id": "rigidez-contratura-em-extensao-da-ifp-e-da-mf",
-     "titulo": "Rigidez: contratura em extensão da IFP e da MF",
-     "radar": "confirmado"
+     "id": "rigidez-a-contratura-em-extensao-da-ifp",
+     "titulo": "Rigidez: a contratura em extensão da IFP",
+     "radar": "clinico"
     },
     {
      "id": "os-dedos-congenitos-osso-plano-e-fise",
@@ -11991,7 +12234,11 @@
    ],
    "questoes": [
     "mao-1052",
+    "mao-1342",
     "mao-0066",
+    "mao-0124",
+    "mao-1190",
+    "mao-1869",
     "mao-1261",
     "mao-0654",
     "mao-0909",
@@ -12007,9 +12254,9 @@
     "mao-1011",
     "mao-0952",
     "mao-1012",
-    "mao-0772",
     "mao-1464",
     "mao-0065",
+    "mao-0772",
     "mao-1423",
     "pe-tornozelo-0252",
     "mao-0757",
@@ -12017,8 +12264,13 @@
    ],
    "treino": [
     "mao-1758",
+    "mao-1709",
     "mao-2497",
     "mao-2378",
+    "mao-2115",
+    "mao-3797",
+    "mao-3798",
+    "mao-3799",
     "mao-1790",
     "mao-1789",
     "mao-1941",
@@ -12031,17 +12283,16 @@
     "mao-2408",
     "mao-2538",
     "mao-2365",
+    "mao-2031",
+    "mao-3800",
+    "mao-2188",
+    "mao-3801",
     "mao-2119",
     "mao-2121",
     "mao-2032",
+    "mao-3802",
     "mao-2120",
     "mao-1939",
-    "mao-2188",
-    "mao-2031",
-    "mao-2869",
-    "mao-2902",
-    "mao-2914",
-    "mao-2921",
     "mao-2431",
     "mao-2278",
     "mao-2553",
@@ -12052,6 +12303,10 @@
     "mao-2905",
     "mao-2915",
     "mao-2944",
+    "mao-2869",
+    "mao-2902",
+    "mao-2914",
+    "mao-2921",
     "mao-1160",
     "mao-1183",
     "mao-0929",
@@ -12094,6 +12349,128 @@
    ],
    "subtemas": [
     "Deformidades dos dedos"
+   ]
+  },
+  {
+   "id": "green-doencas-vasculares-mao",
+   "versao": 1,
+   "titulo": "Doenças vasculares da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 60 · Vascular Disorders of the Hand",
+   "resumo": "Arco superficial = terminação da ulnar, completo em cerca de 78% (COLEMAN e ANSON); arco profundo = terminação da radial com a princeps pollicis, completo em cerca de 98%; lesão aguda de uma só artéria raramente causa isquemia; ALLEN mostra fluxo ou ausência de fluxo por uma artéria; sinal de Doppler no punho não garante fluxo nutritivo; padrão-ouro = angiografia por subtração digital; índice digitobraquial abaixo de 0,7 = oclusão significativa; trauma aberto: vaso único pode ser ligado, reparar no jovem, veia autóloga, anastomose proximal primeiro, sem anticoagulação sistêmica, AAS 81 mg por 6 semanas; martelo hipotenar = trombose da ulnar no GUYON por lesão da íntima, isquemia embólica do anular, ponte de veia basílica até o \"Y\" da digital comum do 4º espaço (patência de cerca de 90% em 2 anos); trombose da radial sob o ELP = indicador; diabetes e insuficiência renal são hoje a causa mais comum de oclusão: ponte in situ com a cefálica da braquial à radial na tabaqueira, ou arterialização venosa sem outflow; RAYNAUD: bloqueador de cálcio no inverno, toxina botulínica 10 U por digital comum, simpatectomia periarterial para úlcera ou gangrena iminente (melhora o fluxo nutritivo, não o total), contraindicada na artéria calcificada; simpatectomia torácica = rebote, evitar; aneurismas raros, traumáticos e falsos, quase sempre na ulnar: excisar e enxertar veia invertida; hemangioma verdadeiro raro, da criança, involui; malformação venosa é a mais comum e se opera com garrote; esclerose e embolização são problemáticas na mão.",
+   "acesso": "gratis",
+   "minutos": 55,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-arterial-da-mao",
+     "titulo": "Anatomia arterial da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "iatrogenia-e-o-teste-de-allen",
+     "titulo": "Iatrogenia e o teste de ALLEN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avaliacao-do-paciente-com-isquemia",
+     "titulo": "Avaliação do paciente com isquemia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "de-hunter-a-koman-a-historia-em-um-quadro",
+     "titulo": "De HUNTER a KOMAN: a história em um quadro",
+     "radar": "fundamento"
+    },
+    {
+     "id": "trauma-arterial-aberto",
+     "titulo": "Trauma arterial aberto",
+     "radar": "clinico"
+    },
+    {
+     "id": "trauma-fechado-trombose-da-ulnar-e-o-martelo-hip",
+     "titulo": "Trauma fechado: trombose da ulnar e o martelo hipotenar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "trombose-da-arteria-radial",
+     "titulo": "Trombose da artéria radial",
+     "radar": "clinico"
+    },
+    {
+     "id": "doenca-vascular-oclusiva-diabetes-insuficiencia-",
+     "titulo": "Doença vascular oclusiva: diabetes, insuficiência renal e as pontes longas",
+     "radar": "clinico"
+    },
+    {
+     "id": "vasoespasmo-e-raynaud",
+     "titulo": "Vasoespasmo e RAYNAUD",
+     "radar": "clinico"
+    },
+    {
+     "id": "aneurismas-do-antebraco-e-da-mao",
+     "titulo": "Aneurismas do antebraço e da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "trombose-venosa",
+     "titulo": "Trombose venosa",
+     "radar": "fundamento"
+    },
+    {
+     "id": "malformacoes-vasculares-e-hemangioma",
+     "titulo": "Malformações vasculares e hemangioma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumor-glomico",
+     "titulo": "Tumor glômico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revisao-final",
+     "titulo": "Revisão final",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1282",
+    "mao-0632",
+    "mao-1427",
+    "mao-1330",
+    "mao-1570",
+    "mao-0967",
+    "mao-0413",
+    "mao-1842",
+    "mao-1869",
+    "mao-0255",
+    "mao-0468",
+    "mao-1880",
+    "mao-1828",
+    "mao-1128",
+    "mao-0725",
+    "mao-1203",
+    "mao-0638",
+    "mao-1866"
+   ],
+   "treino": [
+    "mao-2344",
+    "mao-2371",
+    "mao-2610",
+    "mao-3811",
+    "mao-3809",
+    "mao-3812",
+    "mao-3813",
+    "mao-3810"
+   ],
+   "subtemas": [
+    "Outros temas da mão"
    ]
   },
   {
@@ -12308,6 +12685,134 @@
    ],
    "subtemas": [
     "Doença de Dupuytren"
+   ]
+  },
+  {
+   "id": "green-espasticidade-membro-superior",
+   "versao": 1,
+   "titulo": "Membro superior espástico: paralisia cerebral, TCE e AVC",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 35 e 77)",
+   "capitulo": "Capítulo 32 · Spasticity: Cerebral Palsy and Traumatic Brain Injury",
+   "resumo": "Lesão do neurônio motor superior irreversível e não progressiva, com contratura que progride; espástico com antagonista flácido; postura de rotação medial do ombro, flexão do cotovelo, pronação, flexão do punho e dos dedos, polegar na palma e pescoço de cisne; GOLDNER: menos de 20% das crianças com PC e de 30% com TCE são candidatas; espástico hemiplégico é o melhor candidato, atetoide e distônico os piores; espasticidade x contratura; TARDIEU e ASHWORTH modificadas; MACS I a V; HOUSE funcional 0 a 8 (4 = pega e segura fraco); ângulo de VOLKMANN com dedos estendidos, aquém do neutro indica cirurgia; EMG dinâmica (fase da preensão para o punho, da soltura para os dedos); toxina botulínica tipo A bloqueia a liberação pré-sináptica de acetilcolina, 10 U/kg, começa em cerca de 24 h e dura 2 a 6 meses; subescapular em Z, artrodese 30/30/30; neurectomia do musculocutâneo abaixo de 30 graus; bíceps fracionado na espasticidade dinâmica e Z na contratura fixa acima de 40 graus; pronador: tenotomia x redirecionamento, palpar o pronador redondo na supinação passiva; ZANCOLLI tipos I, II e III com a regra dos 20 graus; FUC para ERCC (GREEN), EUC para ERCC, FUC para ECD; alongamento fracionado, Z e STP (higiene); HOUSE do polegar 1 a 4 e SAKELLARIDES I a IV (IV = FLP, Z do FLP); redirecionamento do ELP; MF que hiperestende mais de 20 graus pede artrodese; intrínseco-plus, pescoço de cisne e neurectomia motora do ulnar; TCE e AVC operados depois do platô (AVC só após 6 meses).",
+   "acesso": "gratis",
+   "minutos": 61,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "neuronio-motor-superior-o-que-a-lesao-faz-com-o-",
+     "titulo": "Neurônio motor superior: o que a lesão faz com o membro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quem-se-beneficia-da-cirurgia",
+     "titulo": "Quem se beneficia da cirurgia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-que-decide-espasticidade-contratura-e-es",
+     "titulo": "O exame que decide: espasticidade, contratura e escalas",
+     "radar": "clinico"
+    },
+    {
+     "id": "angulo-de-volkmann-e-o-exame-do-punho-e-dos-dedo",
+     "titulo": "Ângulo de VOLKMANN e o exame do punho e dos dedos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "emg-dinamica-e-bloqueios-provar-antes-de-cortar",
+     "titulo": "EMG dinâmica e bloqueios: provar antes de cortar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tratamento-nao-operatorio-e-toxina-botulinica",
+     "titulo": "Tratamento não operatório e toxina botulínica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ombro",
+     "titulo": "Ombro",
+     "radar": "fundamento"
+    },
+    {
+     "id": "cotovelo-em-flexao",
+     "titulo": "Cotovelo em flexão",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "antebraco-em-pronacao",
+     "titulo": "Antebraço em pronação",
+     "radar": "clinico"
+    },
+    {
+     "id": "extensao-do-punho-e-dos-dedos-zancolli-e-as-tran",
+     "titulo": "Extensão do punho e dos dedos: ZANCOLLI e as transferências",
+     "radar": "clinico"
+    },
+    {
+     "id": "flexores-tensos-fracionado-z-e-superficial-para-",
+     "titulo": "Flexores tensos: fracionado, Z e superficial para profundo",
+     "radar": "clinico"
+    },
+    {
+     "id": "polegar-na-palma-house-e-sakellarides",
+     "titulo": "Polegar na palma: HOUSE e SAKELLARIDES",
+     "radar": "confirmado"
+    },
+    {
+     "id": "intrinsecos-espasticos-e-pescoco-de-cisne",
+     "titulo": "Intrínsecos espásticos e pescoço de cisne",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-mao-do-adulto-tce-e-avc",
+     "titulo": "A mão do adulto: TCE e AVC",
+     "radar": "fundamento"
+    },
+    {
+     "id": "resultados-o-que-prometer",
+     "titulo": "Resultados: o que prometer",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1409",
+    "mao-1006",
+    "mao-1364",
+    "mao-1308",
+    "mao-1553"
+   ],
+   "treino": [
+    "mao-2075",
+    "mao-2074",
+    "mao-3830",
+    "mao-1989",
+    "mao-3831",
+    "mao-3833",
+    "mao-2615",
+    "mao-3832",
+    "mao-3835",
+    "mao-2144",
+    "mao-2599",
+    "mao-2612",
+    "mao-1747",
+    "mao-3834",
+    "mao-3836",
+    "mao-3837",
+    "mao-1741"
+   ],
+   "subtemas": [
+    "Transferências tendinosas e paralisias"
    ]
   },
   {
@@ -12893,6 +13398,128 @@
    ],
    "subtemas": [
     "Fraturas do escafoide e do carpo"
+   ]
+  },
+  {
+   "id": "green-fraturas-mao-crianca",
+   "versao": 1,
+   "titulo": "Fraturas da mão, do punho e do antebraço na criança",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 41 · Hand, Wrist, and Forearm Fractures in Children",
+   "resumo": "Criança não é adulto pequeno: periósteo grosso, consolidação rápida, janela curta para reduzir e remodelação que só corrige o desvio no plano do movimento, perto da fise e com muito crescimento pela frente (rotação não remodela); fise das falanges na base e dos metacarpos no colo, menos no polegar; SALTER-HARRIS II predomina, SH III é comum na MF e raro na IF por causa dos colaterais; alto risco (Box 41.1) = articulares, SEYMOUR, colo da falange e expostas; SEYMOUR é fratura exposta da fise com matriz germinativa interposta; pseudomallet pelo FDP; martelo ósseo operado com mais de 40% e subluxação volar; colo da falange (AL-QATTAN I sem desvio, II contato parcial, III sem contato; II e III com fio; chegada tardia com osteoclasia percutânea, nunca osteotomia aberta); fratura extraoctave do mínimo; reduzir a fisária com mais de 10 graus ou qualquer rotação; colo do metacarpo pela manobra de JAHSS; guarda-caça pediátrico = SH III da falange proximal do polegar; base do metacarpo do polegar por KOZIN e WATERS (A metafisária, B THURSTON-HOLLAND ulnar, C THURSTON-HOLLAND radial, D SH III ou IV = BENNETT pediátrico); carpo ossifica do capitato e hamato (6 a 8 meses) ao pisiforme (6 a 8 anos); escafoide clássico no polo distal, hoje cintura em 71% (GHOLSON); rádio distal perde a redução em um terço (índice do gesso maior que 0,7, rádio isolado); parada fisária no rádio cerca de 4% e na ulna cerca de 50%; antebraço com hastes intramedulares, MONTEGGIA pela fratura da ulna e refratura em cerca de 5%.",
+   "acesso": "gratis",
+   "minutos": 68,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-que-a-crianca-e-diferente",
+     "titulo": "Por que a criança é diferente",
+     "radar": "fundamento"
+    },
+    {
+     "id": "epidemiologia",
+     "titulo": "Epidemiologia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "avaliacao-e-imagem",
+     "titulo": "Avaliação e imagem",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-da-mao-em-crescimento",
+     "titulo": "Anatomia da mão em crescimento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "falange-distal-pseudomallet-seymour-e-martelo-os",
+     "titulo": "Falange distal: pseudomallet, SEYMOUR e martelo ósseo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "condilos-da-falange-as-fraturas-da-cabeca",
+     "titulo": "Côndilos da falange: as fraturas da cabeça",
+     "radar": "fundamento"
+    },
+    {
+     "id": "colo-da-falange-e-a-classificacao-de-al-qattan",
+     "titulo": "Colo da falange e a classificação de AL-QATTAN",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "diafise-e-fise-das-falanges-proximal-e-media",
+     "titulo": "Diáfise e fise das falanges proximal e média",
+     "radar": "confirmado"
+    },
+    {
+     "id": "metacarpos",
+     "titulo": "Metacarpos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "polegar-guarda-caca-pediatrico-e-kozin-e-waters",
+     "titulo": "Polegar: guarda-caça pediátrico e KOZIN e WATERS",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-punho-da-crianca-ossificacao-do-carpo",
+     "titulo": "O punho da criança: ossificação do carpo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas-do-escafoide-e-do-carpo-na-crianca",
+     "titulo": "Fraturas do escafoide e do carpo na criança",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radio-distal-da-crianca",
+     "titulo": "Rádio distal da criança",
+     "radar": "clinico"
+    },
+    {
+     "id": "diafise-do-antebraco-monteggia-e-galeazzi",
+     "titulo": "Diáfise do antebraço, MONTEGGIA e GALEAZZI",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0773",
+    "mao-1213",
+    "mao-1300",
+    "mao-0768",
+    "mao-1125",
+    "mao-1092"
+   ],
+   "treino": [
+    "mao-2966",
+    "mao-3804",
+    "mao-3806",
+    "mao-3808",
+    "mao-3807",
+    "mao-3805",
+    "mao-1694",
+    "mao-2164",
+    "mao-2252",
+    "mao-3803",
+    "mao-2251",
+    "mao-2394",
+    "mao-2389",
+    "mao-1786",
+    "mao-2044"
+   ],
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
    ]
   },
   {
@@ -14225,6 +14852,129 @@
    ]
   },
   {
+   "id": "green-leito-ungueal",
+   "versao": 1,
+   "titulo": "Leito ungueal e perioníquio",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 9 · Perionychium",
+   "resumo": "Perioníquio = leito ungueal, prega ungueal, eponíquio, paroníquio e hiponíquio; matriz germinativa (assoalho ventral da prega, até a lúnula) faz cerca de 90% da unha, a estéril dá a aderência, o teto dorsal dá o brilho; cicatriz na germinativa = ausência, na estéril = deformidade e não aderência; hiponíquio tem a maior densidade de linfáticos da derme; limite proximal da germinativa a 1,2 mm da inserção do extensor terminal (SHUM); porta, dedo médio, 50% com fratura (radiografar sempre); hematoma: decide pelas bordas da unha, não pela porcentagem; reparo com categute cromado 7-0 em agulha espatulada, unha recolocada como molde e tala; falha aguda de 3 a 5 mm = avanço de JOHNSON; enxerto parcial só de matriz estéril, germinativa exige espessura total (2º dedo do pé); fratura desviada = dois fios, nunca um; unha cresce 0,1 mm por dia, atraso de 3 a 4 semanas só se foi retirada; unha em gancho = leito puxado sobre a ponta; paroníquia aguda = S. aureus, crônica = gram-negativos e CANDIDA; CEC é o maligno mais comum do perioníquio.",
+   "acesso": "gratis",
+   "minutos": 49,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-e-fisiologia-do-perioniquio",
+     "titulo": "Anatomia e fisiologia do perioníquio",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avaliacao-da-lesao-aguda",
+     "titulo": "Avaliação da lesão aguda",
+     "radar": "fundamento"
+    },
+    {
+     "id": "hematoma-subungueal",
+     "titulo": "Hematoma subungueal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "reparo-do-leito-ungueal",
+     "titulo": "Reparo do leito ungueal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avulsao-do-leito",
+     "titulo": "Avulsão do leito",
+     "radar": "fundamento"
+    },
+    {
+     "id": "falhas-do-leito-e-enxertos",
+     "titulo": "Falhas do leito e enxertos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fratura-associada-da-falange-distal",
+     "titulo": "Fratura associada da falange distal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fratura-de-seymour-o-leito-preso-no-foco",
+     "titulo": "Fratura de SEYMOUR: o leito preso no foco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "amputacao-da-ponta-e-unha-em-gancho",
+     "titulo": "Amputação da ponta e unha em gancho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-tardio-do-agudo-pos-operatorio-e-cres",
+     "titulo": "Tratamento tardio do agudo, pós-operatório e crescimento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "deformidades-tardias-e-reconstrucao",
+     "titulo": "Deformidades tardias e reconstrução",
+     "radar": "clinico"
+    },
+    {
+     "id": "unha-em-pinca",
+     "titulo": "Unha em pinça",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "infeccoes-do-perioniquio",
+     "titulo": "Infecções do perioníquio",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumores-do-perioniquio",
+     "titulo": "Tumores do perioníquio",
+     "radar": "confirmado"
+    }
+   ],
+   "questoes": [
+    "mao-1167",
+    "mao-0824",
+    "mao-1484",
+    "mao-1351",
+    "mao-1026",
+    "mao-0773",
+    "mao-0487",
+    "mao-1595",
+    "mao-0452",
+    "mao-0466",
+    "mao-0725",
+    "mao-0737"
+   ],
+   "treino": [
+    "mao-2203",
+    "mao-3781",
+    "mao-3787",
+    "mao-3786",
+    "mao-3785",
+    "mao-3780",
+    "mao-3783",
+    "mao-2354",
+    "mao-3782",
+    "mao-3784"
+   ],
+   "subtemas": [
+    "Outros temas da mão",
+    "Anatomia da mão e punho",
+    "Fraturas dos metacarpos e falanges",
+    "Amputações e reimplantes",
+    "Infecções da mão",
+    "Tumores da mão"
+   ]
+  },
+  {
    "id": "green-luxacoes-ligamentos-dedos",
    "versao": 1,
    "titulo": "Luxações e lesões ligamentares dos dedos",
@@ -14724,6 +15474,169 @@
    ],
    "subtemas": [
     "Mão reumatoide"
+   ]
+  },
+  {
+   "id": "green-membro-mutilado",
+   "versao": 1,
+   "titulo": "O membro superior mutilado",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 43 · Mangled Upper Extremity",
+   "resumo": "Lesão mutilante atinge todos os sistemas e cicatriza como uma ferida e uma cicatriz (PEACOCK); remédio é a mobilização precoce, sustentada por desbridamento completo, boa vascularização, fixação rígida e cobertura vascularizada; objetivos na ordem vida, tecido, função e reconstrução do membro e do paciente; MESS não decide no membro superior (não carrega peso) e HISS prevê afastamento, não amputação; vasos, gordura, músculo e pele são os mais lesados no esmagamento, nervo fica íntegro por último; na isquemia caem oxigênio, glicose, ATP e superóxido dismutase, sobem CO2, lactato, prostaciclina e tromboxano; no-reflow por neutrófilos; zona de lesão impõe second look em 24 a 48 h; músculo tolera 4 a 6 h; paroníquia dorsal e não leito ungueal; picada com agulha é o sinal mais confiável; sete funções e quatro unidades da mão, mínimo = dígito oponente e poste estável; pressão direta, nunca pinçar às cegas, shunt na isquemia crítica, resfriar, pontes de pele; desbridamento agressivo sob garrote, peças de reposição; ordem osso, tendão, vaso, nervo e pele; encurtar 1 a 1,5 cm na mão e até 4 cm no antebraço; placa em ponte; primeira comissura; só o profundo se os dois travam a A2; enxerto venoso invertido; conduto até 1 a 2 cm; cobertura em 5 a 10 dias, NPT como miofibroblasto mecânico, estrutura branca pede retalho; MF fletida e IF estendida; secundários em 3 a 6 meses, imobilização antes e tenólise depois, enxerto ósseo e nervo motor cedo; lesão de partes moles é o fator de maior impacto no resultado.",
+   "acesso": "gratis",
+   "minutos": 72,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "uma-ferida-uma-cicatriz-a-ideia-que-organiza-o-c",
+     "titulo": "Uma ferida, uma cicatriz: a ideia que organiza o capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "objetivos-e-prioridades-primeiro-a-vida",
+     "titulo": "Objetivos e prioridades: primeiro a vida",
+     "radar": "clinico"
+    },
+    {
+     "id": "escores-de-gravidade-por-que-nenhum-decide-sozin",
+     "titulo": "Escores de gravidade: por que nenhum decide sozinho",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-trauma-por-dentro-mecanismo-tecidos-e-zona-de-",
+     "titulo": "O trauma por dentro: mecanismo, tecidos e zona de lesão",
+     "radar": "fundamento"
+    },
+    {
+     "id": "isquemia-e-reperfusao-o-que-sobe-o-que-cai-e-o-n",
+     "titulo": "Isquemia e reperfusão: o que sobe, o que cai e o neutrófilo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "avaliacao-inicial-historia-tempo-e-exame",
+     "titulo": "Avaliação inicial: história, tempo e exame",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-que-a-mao-precisa-funcoes-unidades-e-o-minimo-",
+     "titulo": "O que a mão precisa: funções, unidades e o mínimo funcional",
+     "radar": "fundamento"
+    },
+    {
+     "id": "articulacoes-tendoes-e-pele-como-metas-da-recons",
+     "titulo": "Articulações, tendões e pele como metas da reconstrução",
+     "radar": "fundamento"
+    },
+    {
+     "id": "de-amputar-a-reconstruir-como-o-tratamento-evolu",
+     "titulo": "De amputar a reconstruir: como o tratamento evoluiu",
+     "radar": "fundamento"
+    },
+    {
+     "id": "emergencia-hemorragia-shunt-frio-e-antibiotico",
+     "titulo": "Emergência: hemorragia, shunt, frio e antibiótico",
+     "radar": "clinico"
+    },
+    {
+     "id": "desbridamento-a-excisao-da-ferida",
+     "titulo": "Desbridamento: a excisão da ferida",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-ordem-da-reconstrucao",
+     "titulo": "A ordem da reconstrução",
+     "radar": "clinico"
+    },
+    {
+     "id": "esqueleto-fixar-cedo-e-encurtar-quando-ajuda",
+     "titulo": "Esqueleto: fixar cedo e encurtar quando ajuda",
+     "radar": "clinico"
+    },
+    {
+     "id": "tendoes-no-membro-mutilado",
+     "titulo": "Tendões no membro mutilado",
+     "radar": "clinico"
+    },
+    {
+     "id": "vasos-revascularizar-com-vaso-sao",
+     "titulo": "Vasos: revascularizar com vaso são",
+     "radar": "clinico"
+    },
+    {
+     "id": "nervos-ultimo-antes-da-pele",
+     "titulo": "Nervos: último antes da pele",
+     "radar": "clinico"
+    },
+    {
+     "id": "cobertura-precoce-o-fator-que-mais-pesa",
+     "titulo": "Cobertura precoce: o fator que mais pesa",
+     "radar": "clinico"
+    },
+    {
+     "id": "reabilitacao-a-mao-comeca-a-se-mexer-no-centro-c",
+     "titulo": "Reabilitação: a mão começa a se mexer no centro cirúrgico",
+     "radar": "clinico"
+    },
+    {
+     "id": "reconstrucao-em-etapas-os-procedimentos-secundar",
+     "titulo": "Reconstrução em etapas: os procedimentos secundários",
+     "radar": "clinico"
+    },
+    {
+     "id": "complicacoes-resultados-e-a-decisao-entre-salvar",
+     "titulo": "Complicações, resultados e a decisão entre salvar e amputar",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1126",
+    "mao-0852",
+    "mao-0858",
+    "mao-0730",
+    "mao-1642",
+    "mao-1598",
+    "mao-0854",
+    "mao-0277",
+    "mao-1506",
+    "mao-0717",
+    "mao-0602",
+    "mao-0682",
+    "mao-1899",
+    "mao-1475",
+    "mao-1479"
+   ],
+   "treino": [
+    "mao-3792",
+    "mao-3794",
+    "mao-2330",
+    "mao-3266",
+    "mao-3790",
+    "mao-3791",
+    "mao-3256",
+    "mao-3788",
+    "mao-3795",
+    "mao-3796",
+    "mao-3793",
+    "mao-2547",
+    "mao-1753",
+    "mao-2064",
+    "mao-2744",
+    "mao-2411",
+    "mao-3789"
+   ],
+   "subtemas": [
+    "Amputações e reimplantes"
    ]
   },
   {
@@ -15451,6 +16364,152 @@
    ],
    "subtemas": [
     "Plexo braquial e paralisia obstétrica"
+   ]
+  },
+  {
+   "id": "green-reconstrucao-polegar",
+   "versao": 1,
+   "titulo": "Reconstrução do polegar",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 21)",
+   "capitulo": "Capítulo 48 · Thumb Reconstruction",
+   "resumo": "Mão sem polegar é uma pinça cujas pontas não se encontram (NAPIER); o polegar reconstruído precisa de sensibilidade e oposição, e a CMC móvel é o que não se pode perder; sem CMC, artrodese em 40 graus de abdução, 15 de extensão e 120 de pronação; LISTER em quatro níveis (cobertura, subtotal, total com basal, total sem basal); polpa menor que 1 cm quadrado cicatriza por segunda intenção; MOBERG bipediculado e homodigital cobre até 1,5 cm sem incisão de alívio e até 2,5 cm com ela, com MF e IF em 30 a 45 graus e enxerto de pele total; cross-finger do dorso radial da falange proximal do indicador com secção do CLELAND e divisão em 10 a 21 dias; inervado pelo radial (GAUL, MIURA) e duplamente inervado (HASTINGS, ramo dorsal do digital radial do indicador ao digital ulnar do polegar); KITE de FOUCHER pela primeira artéria metacarpal dorsal, da MF à IFP, pivô na base do primeiro e segundo metacarpais; ilha heterodigital de LITTLER do lado ulnar do médio, ou do anular sem mediano; falangização por zetaplastia simples ou de quatro retalhos (ganho de 1,5 a 2 cm) e retalho dorsal de BROWN; dedo do pé como opção ótima no nível 3; distração do metacarpal de 3 a 4 cm; osteoplástica de NICOLADONI com enxerto tricortical e ilha neurovascular; policização do coto lesado; no nível 4, policização: a MF hiperextendida vira a nova CMC.",
+   "acesso": "gratis",
+   "minutos": 55,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-o-polegar-faz-e-o-que-a-reconstrucao-preci",
+     "titulo": "O que o polegar faz e o que a reconstrução precisa devolver",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-niveis-de-lister-a-pergunta-que-organiza-tudo",
+     "titulo": "Os níveis de LISTER: a pergunta que organiza tudo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "nivel-1-a-polpa-e-a-ponta-escolhidas-pelo-tamanh",
+     "titulo": "Nível 1: a polpa e a ponta, escolhidas pelo tamanho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-avanco-palmar-de-moberg",
+     "titulo": "O avanço palmar de MOBERG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-cross-finger-do-indicador-ao-polegar",
+     "titulo": "O cross-finger do indicador ao polegar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-cross-finger-inervado-radial-e-hastings",
+     "titulo": "O cross-finger inervado: radial e HASTINGS",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-kite-a-ilha-da-primeira-arteria-metacarpal-dor",
+     "titulo": "O KITE: a ilha da primeira artéria metacarpal dorsal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-ilha-neurovascular-heterodigital-de-littler",
+     "titulo": "A ilha neurovascular heterodigital de LITTLER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-nivel-1-em-uma-tabela",
+     "titulo": "O nível 1 em uma tabela",
+     "radar": "fundamento"
+    },
+    {
+     "id": "nivel-2-falangizacao-e-as-zetaplastias-da-comiss",
+     "titulo": "Nível 2: falangização e as zetaplastias da comissura",
+     "radar": "confirmado"
+    },
+    {
+     "id": "retalho-dorsal-rotacional-de-brown-e-pele-de-for",
+     "titulo": "Retalho dorsal rotacional de BROWN e pele de fora",
+     "radar": "clinico"
+    },
+    {
+     "id": "nivel-3-devolver-o-comprimento",
+     "titulo": "Nível 3: devolver o comprimento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "alongamento-do-metacarpo-por-distracao",
+     "titulo": "Alongamento do metacarpo por distração",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-osteoplastica-enxerto-tubo-e-ilha",
+     "titulo": "A osteoplástica: enxerto, tubo e ilha",
+     "radar": "clinico"
+    },
+    {
+     "id": "policizacao-de-um-dedo-ja-lesado",
+     "titulo": "Policização de um dedo já lesado",
+     "radar": "clinico"
+    },
+    {
+     "id": "nivel-4-a-basal-perdida-e-a-policizacao",
+     "titulo": "Nível 4: a basal perdida e a policização",
+     "radar": "confirmado"
+    },
+    {
+     "id": "green-e-campbell-onde-os-numeros-divergem",
+     "titulo": "Green e Campbell: onde os números divergem",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1635",
+    "mao-1424",
+    "mao-0613",
+    "mao-0736",
+    "mao-0478",
+    "mao-0141",
+    "mao-0244",
+    "mao-0434",
+    "mao-0293",
+    "mao-0597",
+    "mao-0904",
+    "mao-1143",
+    "mao-1172",
+    "mao-1331",
+    "mao-1868",
+    "mao-0799",
+    "mao-1453",
+    "mao-1381",
+    "mao-1493",
+    "mao-1510",
+    "mao-1562"
+   ],
+   "treino": [
+    "mao-2598",
+    "mao-2611",
+    "mao-3827",
+    "mao-3829",
+    "mao-3824",
+    "mao-3828",
+    "mao-3825",
+    "mao-3826"
+   ],
+   "subtemas": [
+    "Amputações e reimplantes",
+    "Retalhos e cobertura cutânea"
    ]
   },
   {

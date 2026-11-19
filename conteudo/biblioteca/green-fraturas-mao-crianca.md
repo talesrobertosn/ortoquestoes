@@ -1,0 +1,635 @@
+---
+id: green-fraturas-mao-crianca
+versao: 1
+titulo: Fraturas da mão, do punho e do antebraço na criança
+especialidade: mao
+acesso: gratis
+livro: Green's Operative Hand Surgery
+edicao: 7ª edição (2017)
+capitulo: Capítulo 41 · Hand, Wrist, and Forearm Fractures in Children
+autores: Donald S. Bae
+fonte: Livro conferido localmente em 19/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 41 (p. 1425 a 1475), lido inteiro, com as figuras 41.1 a 41.40 e o Box 41.1. Complemento do Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 8 (Fractures and Dislocations of the Hand and Carpal Bones in Children), seções das fraturas fisárias das falanges e da base do metacarpo do polegar. As fraturas da mão do adulto estão em green-fraturas-metacarpos-falanges, as do carpo em green-fraturas-carpo e as do rádio distal do adulto em green-fraturas-radio-distal.
+subtemas: Fraturas dos metacarpos e falanges
+resumo: Criança não é adulto pequeno: periósteo grosso, consolidação rápida, janela curta para reduzir e remodelação que só corrige o desvio no plano do movimento, perto da fise e com muito crescimento pela frente (rotação não remodela); fise das falanges na base e dos metacarpos no colo, menos no polegar; SALTER-HARRIS II predomina, SH III é comum na MF e raro na IF por causa dos colaterais; alto risco (Box 41.1) = articulares, SEYMOUR, colo da falange e expostas; SEYMOUR é fratura exposta da fise com matriz germinativa interposta; pseudomallet pelo FDP; martelo ósseo operado com mais de 40% e subluxação volar; colo da falange (AL-QATTAN I sem desvio, II contato parcial, III sem contato; II e III com fio; chegada tardia com osteoclasia percutânea, nunca osteotomia aberta); fratura extraoctave do mínimo; reduzir a fisária com mais de 10 graus ou qualquer rotação; colo do metacarpo pela manobra de JAHSS; guarda-caça pediátrico = SH III da falange proximal do polegar; base do metacarpo do polegar por KOZIN e WATERS (A metafisária, B THURSTON-HOLLAND ulnar, C THURSTON-HOLLAND radial, D SH III ou IV = BENNETT pediátrico); carpo ossifica do capitato e hamato (6 a 8 meses) ao pisiforme (6 a 8 anos); escafoide clássico no polo distal, hoje cintura em 71% (GHOLSON); rádio distal perde a redução em um terço (índice do gesso maior que 0,7, rádio isolado); parada fisária no rádio cerca de 4% e na ulna cerca de 50%; antebraço com hastes intramedulares, MONTEGGIA pela fratura da ulna e refratura em cerca de 5%.
+---
+
+# Como ler este capítulo {radar=fundamento}
+
+Este resumo nasce do capítulo 41 do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Donald S. BAE, do Boston Children's Hospital. É um capítulo longo, de cinquenta páginas (p. 1425 a 1475), que percorre a mão, o punho e o antebraço da criança de ponta a ponta. Aqui o foco é o que o título do resumo promete: a fise, a remodelação, as falanges, a fratura de SEYMOUR, o colo da falange, os metacarpos, o polegar e o carpo infantil. O rádio distal e a diáfise do antebraço entram no fim, só no que o próprio capítulo 41 ensina sobre a criança e com o olhar de quem precisa disso numa prova de Cirurgia da Mão.
+
+Uma ideia atravessa o capítulo inteiro e vale a pena fixá-la antes de qualquer detalhe: a fratura da criança é decidida por três forças que no adulto não existem ou são fracas. A primeira é a **fise**, a placa de crescimento, que é ao mesmo tempo o ponto fraco do esqueleto (por onde a fratura passa) e o motor da correção (porque é ela que remodela o desvio). A segunda é o **periósteo grosso e ativo**, que segura os fragmentos, consolida a fratura em poucas semanas e serve de dobradiça para a redução. A terceira é o **tempo**: a criança cola a fratura tão rápido que a janela para reduzir de forma fechada se fecha em dias, e quem chega tarde já encontra calo. Quase toda conduta do capítulo é uma conversa entre essas três forças.
+
+O segundo fio condutor é a ideia de **alto risco**. A maioria das fraturas da mão da criança vai bem com gesso, e o próprio BAE lembra que só 10 a 20% precisam de cirurgia. O trabalho do cirurgião é reconhecer as poucas que não vão bem: as articulares desviadas, as fisárias da falange distal (SEYMOUR), as do colo da falange e as expostas. É exatamente nessas que as provas moram.
+
+Como ler as seções. Primeiro vem o porquê (biologia, epidemiologia, anatomia da fise, dos ligamentos e dos tendões), porque é dele que nascem as respostas. Depois a mão de distal para proximal: falange distal, falanges proximal e média, metacarpos e polegar. Por fim o punho (ossificação do carpo, escafoide e outros ossos) e, mais curtos, o rádio distal e o antebraço.
+
+O que as bancas cobram. Nas provas oficiais publicadas no site, o tema aparece por quatro portas: a fratura de SEYMOUR e o que fica interposto no foco; o tipo de SALTER-HARRIS das fraturas da cabeça do metacarpo; a ordem de ossificação do carpo (com o pisiforme por último); e o local mais comum da fratura do escafoide na criança. A USP-SP 2025 levou a conduta no descolamento epifisário da falange proximal com interposição. Nas provas da Sociedade Brasileira de Cirurgia da Mão e no SIMÃO, o molde é outro: classificações curtas, sobretudo AL-QATTAN (colo da falange) e KOZIN e WATERS (base do metacarpo do polegar), com alternativas que trocam os tipos vizinhos.
+
+> **Na prova:** remodela o desvio **no plano do movimento**, **perto da fise**, na criança **pequena**; **rotação não remodela**; fise das falanges **na base**, dos metacarpos **no colo**, menos no **polegar** (base); SEYMOUR = **fratura exposta da fise** com **matriz germinativa interposta**; AL-QATTAN **I sem desvio, II contato parcial, III sem contato**; KOZIN e WATERS **B = THURSTON-HOLLAND ulnar**; carpo: **capitato e hamato primeiro (6 a 8 meses), pisiforme por último (6 a 8 anos)**.
+
+# Por que a criança é diferente {radar=fundamento}
+
+## Crianças não são adultos pequenos
+
+O capítulo abre com uma frase que os ortopedistas pediátricos repetem há décadas: crianças não são adultos pequenos (p. 1425). BAE dá a ela um sentido prático em quatro frentes.
+
+A primeira é o **exame**. A criança tem medo, chora, às vezes nem fala; a gordura subcutânea esconde o relevo dos ossos e o edema; ela não colabora com testes de sensibilidade nem de força. Isso significa que a fratura da criança é diagnosticada mais pela observação (como o dedo repousa, como a mão se mexe sozinha) do que pelo que ela diz.
+
+A segunda é o **material**. Os ossos são pequenos, os canais medulares estreitos e as fises estão no caminho. Fios finos, poucos fios, implantes que não atravessem a fise sem necessidade: o arsenal muda de escala.
+
+A terceira, e a mais importante, é a **biologia da consolidação**. O periósteo da criança é grosso, solto do osso e muito ativo: ele faz crescimento aposicional, remodelação e ainda serve de superfície de deslizamento para os tendões (p. 1425). Por isso retardo de consolidação e pseudartrose são raros na mão infantil. O outro lado da mesma moeda é que a fratura cola depressa: em uma a duas semanas já há calo, e a redução fechada que seria fácil no dia da lesão vira um problema na terceira semana. A janela é curta.
+
+A quarta é a **rigidez**. O adulto que fica quatro semanas com o dedo no gesso pode perder movimento para sempre; a criança, em geral, não. BAE diz que as crianças são os próprios terapeutas: brincam, usam a mão e recuperam o arco sem fisioterapia formal na maioria dos casos. É por isso que imobilizações mais longas e mais restritivas, que seriam más ideias no adulto, são bem toleradas e muitas vezes preferidas na criança.
+
+## O que a remodelação corrige e o que ela não corrige
+
+Remodelação é a capacidade do osso em crescimento de endireitar um desvio com o tempo. Ela não é mágica, e o capítulo é preciso sobre quando ela funciona (p. 1425). A remodelação é maior quando três condições se somam.
+
+O desvio está **no plano do movimento** da articulação vizinha. Uma falange angulada em flexão ou extensão, perto de uma articulação que flete e estende, é corrigida pelas forças musculares e pela fise que cresce perpendicular à carga. O mesmo não vale para o plano coronal: a angulação radioulnar (lateral) de um dedo remodela pouco, porque a articulação não se move nesse plano e a carga não ajuda.
+
+A fratura está **perto da fise**. A fise é o motor da correção: quanto mais perto dela, mais o crescimento consegue reorientar o osso. Uma fratura no colo do metacarpo, vizinha da fise distal, remodela muito; uma fratura no colo da falange, longe da fise (que está na base), remodela pouco.
+
+A criança é **pequena e tem muito crescimento pela frente**. O potencial cai conforme a fise se aproxima do fechamento.
+
+E há uma deformidade que praticamente não remodela em lugar nenhum: a **rotação** (p. 1425). Um dedo girado em 15 graus continua girado, porque nenhuma força fisiológica age para desfazer a torção e a fise cresce na direção do eixo do osso, não em torno dele. A consequência clínica é a sobreposição dos dedos na flexão (o dedo em tesoura). É por isso que, em quase todo o capítulo, a regra de redução vem acompanhada da frase "ou qualquer rotação".
+
+Esse trio (plano do movimento, perto da fise, criança pequena) e a exceção da rotação respondem a boa parte das questões sobre conduta. Sempre que a alternativa disser "observar, pois vai remodelar", confira: o desvio é sagital? Está perto da fise? A criança é pequena? Não há rotação? Se uma dessas respostas for não, a remodelação não salva.
+
+## A fise: onde a fratura passa e por que raramente para de crescer
+
+A fise tem quatro zonas, da epífise para a metáfise: **repouso** (ou germinativa), **proliferativa**, **hipertrófica** e de **calcificação provisória** (p. 1427 e 1428). A zona hipertrófica é a mais fraca, porque as células estão grandes e a matriz ainda não calcificou. É por ela que passa a maioria das fraturas fisárias.
+
+Isso explica um fato que tranquiliza pais: a parada de crescimento é **incomum** depois de uma fratura fisária fechada da mão. A fratura que passa pela zona hipertrófica deixa intactas as células germinativas e proliferativas, que continuam produzindo osso. O problema aparece quando o traço atravessa a fise inteira e chega à epífise (SALTER-HARRIS III e IV) ou quando há esmagamento (SALTER-HARRIS V): nesses casos o traço passa pelas zonas proliferativa e de repouso e pode formar uma ponte óssea entre epífise e metáfise.
+
+A classificação de SALTER-HARRIS é a mais usada para essas lesões porque é simples, orienta a conduta e diz algo sobre o prognóstico (p. 1427, Fig. 41.4). Vale lembrar a lógica de cada tipo: I atravessa só a fise; II atravessa a fise e sai pela metáfise, levando um fragmento metafisário (o de THURSTON-HOLLAND); III atravessa a fise e sai pela epífise, entrando na articulação; IV cruza epífise, fise e metáfise; V é o esmagamento da fise. Na mão, o tipo II domina, sobretudo na falange proximal (p. 1426).
+
+Perto da maturidade esquelética, a fise começa a fechar de forma desigual e os tipos III e IV ficam mais comuns. As fraturas do adolescente passam a imitar os padrões do adulto: o exemplo do capítulo é o BENNETT, que no adolescente aparece como SALTER-HARRIS III ou IV da base do metacarpo do polegar (p. 1428).
+
+# Epidemiologia {radar=fundamento}
+
+## Quantas, onde e em quem
+
+O capítulo traz três grandes estudos, cada um com uma lição (p. 1425 e 1426).
+
+CHUNG e SPILSON, com os dados do NHAMCS de 1998, estimaram cerca de 1,47 milhão de fraturas de mão e antebraço por ano nos Estados Unidos. As falanges respondem por 23% e os metacarpos por 18%. Entre 0 e 14 anos estão 15% das fraturas do metacarpo e 33% das fraturas das falanges: a falange é, de longe, o osso da mão infantil que mais quebra. Fraturas múltiplas da mão são mais frequentes na faixa de 0 a 4 anos (29,8%), o que faz sentido pelo mecanismo de esmagamento.
+
+FEEHAN e SHEPS, na Colúmbia Britânica, mostraram o pico de incidência entre 10 e 14 anos (8,69 por mil). Meninos têm o pico mais tarde e mais alto (15 a 19 anos, 12,3 por mil); meninas mais cedo e mais baixo (10 a 14 anos, 5,3 por mil). O deslocamento do pico acompanha o estirão e o esporte de contato.
+
+A série do Pulvertaft Hand Center, em Derby, deu a geografia: o **dedo mínimo** responde por 52% das fraturas e o polegar por 23%; a **falange proximal** é a falange mais fraturada (67%); o metacarpo quebra em geral na diáfise, a falange em geral na metáfise e na fise proximal. Esmagamento é o mecanismo mais comum, e o esporte domina acima dos 10 anos.
+
+## Distribuição bimodal e o que cada idade quebra
+
+A distribuição é **bimodal** (p. 1426). No primeiro pico estão os pequenos, com lacerações, queimaduras, esmagamentos de ponta de dedo em portas e lesões da falange distal. No segundo estão os adolescentes, com esporte e briga. RAJESH resumiu isso por faixa etária (Fig. 41.1): de 0 a 4 anos, o tufo da falange distal; de 5 a 8, o tufo e a diáfise da distal; de 9 a 12, a falange proximal do mínimo; de 13 a 16, o colo do quinto metacarpo, que é a fratura do boxeador do adolescente.
+
+Essa escada é útil para raciocinar diante de um caso: um menino de 3 anos com o dedo preso na porta tem fratura da falange distal até prova em contrário; um menino de 15 anos que socou a parede tem fratura do colo do quinto metacarpo.
+
+Cerca de **um terço** das fraturas da mão da criança passa pela fise, com predomínio do SALTER-HARRIS II, sobretudo na falange proximal, e a parada fisária pós-traumática é incomum nas fraturas fechadas isoladas (p. 1426).
+
+# Avaliação e imagem {radar=fundamento}
+
+## Exame sem colaboração
+
+Edema, equimose e o movimento protegido (a criança que não usa o dedo) são os sinais mais confiáveis (p. 1426 e 1427). Para avaliar os tendões e a rotação sem pedir nada à criança, o capítulo destaca o **efeito tenodese** (Fig. 41.2): ao estender passivamente o punho, os dedos fletem; ao fletir o punho, os dedos estendem. Apertar o ventre dos flexores no antebraço produz o mesmo efeito. Um dedo que não acompanha os vizinhos sugere lesão tendínea; um dedo que, ao fletir, cruza o vizinho sugere má rotação.
+
+A rotação merece atenção especial porque o raio X não a mostra bem. Na flexão, os dedos normais apontam todos para o tubérculo do escafoide. Desvio de mais de 10 graus no plano das unhas em relação às vizinhas é sinal de alerta. Uma leve sobreposição do mínimo pode ser normal, e por isso a comparação com o outro lado é obrigatória.
+
+A sensibilidade é outro desafio: a discriminação de dois pontos e os testes de limiar são pouco confiáveis **antes dos 8 anos**. O recurso clássico é o **teste da imersão em água morna**: a pele inervada enruga depois de alguns minutos na água; a pele desnervada não enruga.
+
+## Radiografia certa e os erros de leitura
+
+Radiografias **do dedo** (AP, perfil e oblíqua), e não da mão inteira, são as que mostram as fraturas das falanges (p. 1427). O perfil verdadeiro de cada dedo é especialmente importante nas fraturas do colo da falange e nas luxações epifisárias, em que o AP parece benigno.
+
+Na criança pequena, com epífises ainda pouco ossificadas, o **teste da linha falangeana** ajuda (Fig. 41.3): os eixos do metacarpo e das falanges devem estar alinhados; um desvio dessa linha denuncia fratura ou luxação mesmo quando o núcleo de ossificação ainda é pequeno. Radioscopia e ultrassom completam a avaliação em casos duvidosos.
+
+CHEW e CHONG mostraram 8% de erro diagnóstico nas radiografias de mão infantil, e a principal causa foi **confundir epífise ou variante de ossificação com fratura** (p. 1427). Esse é o motivo de a anatomia da ossificação, que vem a seguir, ser cobrada em prova: ela é a defesa contra o erro mais comum.
+
+## As fraturas de alto risco
+
+Depois de dizer que 10 a 20% das fraturas da mão infantil precisam de cirurgia, o capítulo lembra a série de HASTINGS e SIMMONS (354 fraturas): os dedos de borda e o metacarpo e a falange proximal foram os mais acometidos, e só dois casos tiveram distúrbio de crescimento, ambos com esmagamento grave ou infecção (p. 1428). As causas de mau resultado foram três: radiografia inadequada, falsa expectativa de remodelação e má rotação não percebida.
+
+Daí o **Box 41.1**, que lista as fraturas de alto risco:
+
+| Fratura de alto risco | Por que é de alto risco |
+| --- | --- |
+| Articulares (inclui SALTER-HARRIS III da falange proximal) | Degrau na cartilagem leva a rigidez e artrose; a remodelação não corrige superfície articular |
+| Fisárias da falange distal (SEYMOUR) | São expostas: osteomielite, parada fisária e deformidade da unha se não tratadas |
+| Colo da falange | Remodelam pouco (longe da fise), desviam em extensão e bloqueiam a flexão |
+| Expostas | Infecção e lesão de partes moles |
+
+Esse quadro é um mapa do resto do capítulo: cada linha corresponde a uma seção onde a conduta muda de gesso para cirurgia.
+
+# Anatomia da mão em crescimento {radar=fundamento}
+
+## Onde ficam as fises
+
+Este é o fato anatômico mais cobrado do capítulo, e ele se decora melhor pela lógica do que pela memória (p. 1427). Nas **falanges**, a fise fica na **base** (proximal). Nos **metacarpos do segundo ao quinto**, a fise fica no **colo e na cabeça** (distal). O **metacarpo do polegar** é a exceção: tem a fise na **base** (proximal), como uma falange.
+
+A lógica é evolutiva: o metacarpo do polegar se comporta como uma falange proximal, porque o polegar tem uma falange a menos e o seu metacarpo faz o papel de primeira falange. Essa exceção explica por que as fraturas fisárias do metacarpo do polegar são da base (e têm classificação própria, a de KOZIN e WATERS), enquanto as fisárias dos outros metacarpos estão no colo e na cabeça.
+
+Consequências práticas: a fratura do colo do quinto metacarpo do adolescente está vizinha da fise e remodela bem; a fratura do colo da falange está na ponta oposta da fise e remodela mal. A mesma região (colo) tem comportamento oposto conforme o osso.
+
+## Quando os núcleos aparecem e quando as fises fecham
+
+A epífise da falange proximal ossifica entre 10 e 24 meses, antes nas meninas; as da média e da distal aparecem 6 a 8 meses depois (p. 1427). As fises das falanges fecham **de distal para proximal**, entre 14 e 16 anos. As epífises do segundo ao quinto metacarpo aparecem entre 12 e 27 meses e fecham entre 14 e 16 anos; a do metacarpo do polegar aparece mais tarde, entre 24 e 36 meses.
+
+Há variantes que enganam (p. 1427). A **pseudoepífise** aparece na cabeça do metacarpo do polegar e na base do metacarpo do indicador, isto é, na ponta oposta à fise verdadeira: surge cedo, não contribui para o crescimento e funde até os 7 anos. A **epífise dupla**, nas duas pontas do osso, é descrita no indicador e no polegar. Ambas podem parecer fratura numa radiografia lida com pressa, e são parte dos 8% de erro de CHEW e CHONG.
+
+## Os ligamentos colaterais explicam o tipo de SALTER-HARRIS
+
+Esta é a parte mais elegante do capítulo e a que mais explica respostas (p. 1427 e 1428). O tipo de fratura fisária depende de onde os colaterais se inserem, porque a força que chega pela articulação é transmitida pelo ligamento ao osso em que ele se prende.
+
+Nas **interfalângicas**, os colaterais nascem nos recessos do colo da falange de cima e se inserem tanto na **epífise** quanto na **metáfise** da base da falange de baixo. A epífise fica, portanto, protegida: uma força lateral é distribuída entre epífise e metáfise e não arranca a epífise sozinha. Por isso o SALTER-HARRIS III é **raro nas IF**. A força lateral na IF produz outras lesões: fratura diafisária ou SALTER-HARRIS II da falange de baixo, ou fraturas da cabeça e do colo da falange de cima.
+
+Na **metacarpofalângica** o desenho é outro. O colateral radial vai da epífise do metacarpo à epífise da falange proximal; o colateral ulnar vai da epífise e da metáfise do metacarpo à epífise da falange. Os dois se prendem na epífise da falange, sem âncora metafisária desse lado. Uma força lateral na MF, então, arranca a epífise da base da falange: o SALTER-HARRIS III é **comum na MF**. O exemplo clássico é o polegar, em que o valgo forçado que no adulto rompe o colateral ulnar arranca, na criança, um fragmento epifisário ulnar: é o equivalente pediátrico do polegar do guarda-caça (veja a seção do polegar).
+
+Uma maneira simples de guardar: o ligamento é mais forte que a fise, e a fise é mais fraca que o osso. Onde o ligamento se prende só na epífise, a força leva a epífise junto; onde ele se prende também na metáfise, a força é dividida.
+
+## Os tendões e o desvio das fraturas
+
+As inserções tendíneas determinam para onde os fragmentos vão (p. 1428). Nos dedos, o **tendão terminal** do extensor se insere na epífise dorsal da falange distal; o **flexor profundo (FDP)** se insere na epífise **e** na metáfise volar da falange distal. Essa diferença explica o pseudomallet: numa fratura através da fise da distal, o fragmento distal (metáfise e diáfise) é puxado para volar pelo FDP, e a epífise fica com o tendão terminal.
+
+No polegar, o extensor longo (EPL) se insere na epífise dorsal da distal; o extensor curto (EPB) na epífise da proximal; o abdutor longo (APL) na epífise e na metáfise do primeiro metacarpo; e o flexor longo (FPL) na metadiáfise da distal. A inserção do APL na base do primeiro metacarpo e a do adutor do polegar mais distal explicam o desvio das fraturas da base do metacarpo do polegar, que é a chave da classificação de KOZIN e WATERS.
+
+# Falange distal: pseudomallet, SEYMOUR e martelo ósseo {radar=confirmado}
+
+## Tufo e diáfise
+
+As fraturas do tufo e da diáfise da falange distal são as fraturas da criança pequena que prende o dedo (p. 1428 e 1429). O traço pode ser transverso, longitudinal ou cominutivo, e é comum vir com avulsão de partes moles e laceração do leito ungueal. O tratamento é tala ou gesso por 4 semanas. Raramente se usa um fio retrógrado pela ponta do dedo, cruzando a IFD até a cabeça da falange média, ou uma agulha hipodérmica como fio improvisado no pequeno. O leito ungueal lacerado é reparado como no adulto.
+
+## SALTER-HARRIS I e o pseudomallet
+
+Na fratura SALTER-HARRIS I da falange distal, o fragmento diafisário desvia para **volar** e a fratura fica com **ápice dorsal** (p. 1429). O dedo cai em flexão na IFD e parece um dedo em martelo, mas o tendão terminal está íntegro: é o **pseudomallet**.
+
+O mecanismo é anatômico. O tendão terminal se prende só na epífise; o FDP se prende na epífise e na metáfise volar. Quando a fise se separa, o tendão terminal segura a epífise em extensão e o FDP puxa a metáfise e a diáfise para volar. O resultado é uma angulação com o vértice para o dorso. O tratamento é tala em extensão da falange e da IFD por 4 a 6 semanas, com gesso na criança pequena que tira a tala.
+
+A diferença entre o pseudomallet e o martelo verdadeiro é cobrada por meio da pergunta "quem puxa quem": a epífise recebe o tendão terminal; o fragmento distal recebe o FDP.
+
+!questoes treino=mao-2966
+conceito: No pseudomallet (SALTER-HARRIS I da falange distal), a epífise fica com o tendão terminal e o fragmento distal é puxado para volar pelo flexor profundo, que se insere na epífise e na metáfise; daí o ápice dorsal.
+como: O simulado do SIMÃO 2012 perguntou por que a angulação tem ápice dorsal na fratura epifisária desviada da falange distal.
+armadilha: Inverter os tendões, pondo o flexor na epífise, ou trocar o profundo pelo superficial, que se insere na falange média.
+!fim
+
+## A fratura de SEYMOUR
+
+SEYMOUR descreveu em 1966 a fratura fisária desviada da falange distal com **laceração do leito ungueal** por cima. O mecanismo costuma ser esmagamento ou hiperflexão: a fise se abre, a base da unha se solta da prega ungueal proximal e o leito ungueal se rompe sobre o foco (p. 1429). O que transforma essa fratura numa armadilha são dois fatos.
+
+O primeiro: ela é uma **fratura exposta**. O leito ungueal lacerado comunica o foco com o exterior através da unha. Uma fratura da fise com o osso em contato com o meio externo é uma fratura exposta da fise, e precisa ser tratada como tal.
+
+O segundo: o leito ungueal, em especial a **matriz germinativa**, fica muitas vezes **interposto no foco** da fratura (Fig. 41.5). O tecido mole preso entre a epífise e a metáfise impede a redução fechada e, se ficar ali, mantém a fise aberta e o foco contaminado.
+
+Juntando os dois fatos, a conduta é a de uma fratura exposta com interposição: **retirar a unha, irrigar e desbridar, extrair o tecido interposto, reduzir aberto e reparar o leito ungueal** com cuidado. Para expor a matriz, o capítulo descreve incisões que partem dos cantos da prega ungueal em direção à prega da IFD, preservando o tendão terminal na epífise. A própria unha, recolocada sob a prega ungueal proximal, funciona como tala e costuma estabilizar a fratura; se ficar instável, usa-se um fio longitudinal transarticular pela IFD.
+
+O resultado bem tratado é bom: KRUSCHE-MANDL relatou 23 de 24 crianças com movimento completo em 10 anos. O resultado da SEYMOUR não reconhecida é outro (Fig. 41.6): **osteomielite** tardia, **parada fisária** e **deformidade da unha**.
+
+Como suspeitar quando a ferida parece pequena: fratura fisária da falange distal com ápice dorsal e **hematoma subungueal** ou sangue saindo pela prega da unha. Depois da redução fechada, uma fise que continua **alargada no dorso** no perfil indica interposição (p. 1429).
+
+O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 8, seção das fraturas da falange distal), concorda em tudo e acrescenta um detalhe de urgência: a SEYMOUR pede retirada da unha, irrigação e desbridamento, alinhamento, fio e reparo do leito de forma urgente, como qualquer fratura exposta.
+
+!questoes relacionadas=mao-0773,mao-1213 treino=mao-3804,mao-3806,mao-3808,mao-3807,mao-3805,mao-1694,mao-2164,mao-2252
+conceito: SEYMOUR é a fratura fisária desviada da falange distal com laceração do leito ungueal: é uma fratura exposta da fise, a matriz germinativa costuma ficar interposta no foco, e o tratamento é retirar a unha, irrigar, desbridar, extrair o tecido interposto, reduzir aberto e reparar o leito.
+como: O INTO 2023 e os simulados do SBCM 2022 e de outras bancas pediram a estrutura interposta (matriz germinativa); a PUC-SP 2023 pediu a afirmação correta sobre a conduta; o simulado do SBCM 2023 pediu o que ter em mente (fratura exposta da fise).
+armadilha: Marcar placa volar, tendão flexor ou extensor como o tecido interposto; achar que é fratura fechada da falange média; ou acreditar que a falta de tratamento dificilmente leva a osteomielite.
+!fim
+
+## SALTER-HARRIS III dorsal: o martelo ósseo da criança
+
+A fratura SALTER-HARRIS III da borda dorsal da base da falange distal é o equivalente pediátrico do **martelo ósseo** do adulto (Fig. 41.7, p. 1429 a 1432). Aqui não é a metáfise que desvia: é o tendão terminal que puxa o fragmento epifisário dorsal, levando junto um pedaço da superfície articular.
+
+A conduta segue a mesma lógica do adulto. Fratura pouco desviada: tala em extensão por 4 a 6 semanas. Cirurgia, na preferência do autor, quando o fragmento ocupa **mais de 40% da superfície articular** e há **subluxação volar** da IFD. A razão é mecânica: com um fragmento grande, a base da falange distal perde o apoio dorsal e escorrega para volar, e a articulação subluxada não se congruenta com tala. O tratamento é pino percutâneo (transarticular ou de bloqueio de extensão) se a redução fechada funcionar; se não, redução aberta pela via dorsal, sempre preservando o tendão terminal no fragmento.
+
+Uma nota de banca: a classificação brasileira de ALBERTONI, usada para o dedo em martelo e cobrada no SIMÃO 2015, não aparece no Green 7. As questões do Green sobre o tema giram em torno do mecanismo (tendão terminal no fragmento epifisário) e da indicação cirúrgica (mais de 40% e subluxação volar).
+
+Para não confundir as três lesões fisárias da falange distal, vale um quadro:
+
+| Lesão | Quem desloca | Ferida | Conduta |
+| --- | --- | --- | --- |
+| Pseudomallet (SH I) | FDP puxa a metáfise para volar; ápice dorsal | Fechada | Tala em extensão 4 a 6 semanas |
+| SEYMOUR | Fise aberta, matriz germinativa interposta | Exposta pelo leito ungueal | Desbridar, extrair a matriz, reduzir aberto, reparar o leito |
+| SH III dorsal (martelo ósseo) | Tendão terminal puxa a epífise dorsal | Fechada | Tala; cirurgia se mais de 40% e subluxação volar |
+
+## Luxação epifisária
+
+A extrusão da epífise da falange distal é rara (Fig. 41.8): a epífise inteira desloca, em geral para dorsal. A radiografia é sutil, às vezes só um "floco" ou um "crescente" de osso atrás da base da falange, e por isso exige **perfil verdadeiro** (p. 1432). É uma lesão de tratamento cirúrgico, porque a epífise solta perdeu as conexões e precisa ser recolocada para preservar o crescimento e o mecanismo extensor.
+
+# Côndilos da falange: as fraturas da cabeça {radar=fundamento}
+
+## Por que a cabeça da falange é traiçoeira
+
+As fraturas da cabeça das falanges proximal e média são articulares: unicondilares, bicondilares ou cominutivas (p. 1430 a 1432). Elas são de alto risco porque a superfície articular não remodela, o fragmento condilar tem pouca área de contato e ligação vascular quase só pelo colateral, e qualquer degrau na IF significa rigidez e artrose a longo prazo.
+
+A fratura sem desvio pode ser tratada com gesso, mas com **radiografia semanal**: o côndilo solto tende a desviar no gesso, e um desvio que passa despercebido por duas semanas já está colando na posição errada.
+
+A indicação cirúrgica é numérica: **mais de 5 a 10 graus de angulação** ou **degrau de 1 a 2 mm** (p. 1430). A redução pode ser fechada com fixação percutânea ou aberta pela via dorsal, entre o tendão extensor e a banda lateral. Os fios lisos ou parafusos devem ser **dois**, para controlar a rotação do fragmento, e o cirurgião precisa **preservar o colateral e as partes moles** presos ao côndilo, porque é por eles que o fragmento recebe sangue. Os fios saem em 3 a 4 semanas.
+
+A Figura 41.9 mostra o exemplo extremo: um côndilo girado 90 graus, com a cartilagem virada para o foco. Esse fragmento não volta sozinho, e a família deve ser avisada desde o início de que rigidez e artrose são possíveis mesmo com cirurgia bem feita.
+
+# Colo da falange e a classificação de AL-QATTAN {radar=oportunidade}
+
+## Uma fratura típica da infância
+
+A fratura do colo da falange é quase exclusiva da criança (p. 1430 a 1434). O mecanismo é o da **porta** (doorjamb): o dedo fica preso numa porta que se fecha, e a criança puxa a mão. O puxão leva a cabeça da falange em extensão e rotação, quebrando o colo, que é fino e fraco logo atrás da cabeça. Acomete mais os dedos de borda e, curiosamente, mais a **falange média** do que a proximal.
+
+O fragmento distal (a cabeça) desvia em **extensão**, para dorsal, de modo que a fratura fica com **ápice volar**, e muitas vezes há rotação associada. Duas características tornam essa fratura fácil de perder. A primeira é que o **AP parece benigno**: o desvio é no plano sagital e só aparece no **perfil verdadeiro** do dedo, que é obrigatório. A segunda é que, na criança pequena, a cabeça é quase toda cartilagem: o que aparece no raio X é só um "floco" ósseo, que na verdade é a capa cartilaginosa desviada.
+
+## Por que o desvio em extensão bloqueia a flexão
+
+Logo atrás da cabeça da falange, no lado volar, existe uma depressão chamada **fossa subcondilar** (ou retrocondilar). Quando a IF flete, a base da falange de baixo entra nessa fossa; é ela que permite a flexão completa. Quando a cabeça desvia para dorsal, o colo angulado empurra o osso para volar e **oblitera a fossa** (p. 1430). A base da falange vizinha, ao fletir, bate no osso: é um **bloqueio ósseo à flexão** da IF. Esse mecanismo explica por que a fratura do colo consolidada com desvio dá perda de flexão, e não de extensão.
+
+E, como a fise da falange está na base, longe do colo, a remodelação é limitada. O colo da falange junta tudo o que dá errado: desvio no plano certo, mas longe da fise, numa criança que cola rápido.
+
+## A classificação de AL-QATTAN
+
+AL-QATTAN classificou as fraturas extra-articulares do colo da falange em três tipos, com valor de prognóstico e de conduta (p. 1431):
+
+| Tipo | Desvio | Conduta pelo Green |
+| --- | --- | --- |
+| I | Sem desvio | Gesso com radiografias seriadas (semanais) |
+| II | Desvio parcial, com algum contato ósseo (cortical) entre os fragmentos | Redução fechada e fixação percutânea com fios |
+| III | Desvio completo, sem aposição óssea | Redução fechada (ou aberta) e fixação percutânea com fios |
+
+A frase-chave é o contato: o tipo II ainda tem algum contato cortical; o tipo III perdeu o contato. A classificação vale tanto para a falange proximal quanto para a média, e as bancas gostam de trocar uma pela outra no enunciado, sem que isso mude o tipo.
+
+## O que a série original ensinou
+
+A série de AL-QATTAN tinha 66 pacientes e 67 fraturas (p. 1432). As 13 sem desvio tiveram resultados bons ou excelentes com gesso. O tipo II foi a maioria, e o resultado dependeu do tratamento: com fio, bom ou excelente; com redução fechada **sem fixação**, regular ou ruim em 66%. O tipo III, sete casos tratados sem redução cirúrgica e sem fio, evoluiu para **pseudartrose** e mau resultado em todos.
+
+Essa série é a razão pela qual o tipo II não é tratado só com gesso: a fratura reduz bem na manipulação, mas o colo fino, com a cabeça puxada pelos colaterais e pela placa volar, perde a redução no gesso. MATZON e CORNWALL confirmaram o caminho fechado em 61 crianças com tipo II agudo: 49 com manipulação fechada e pino, 12 com redução assistida por pino (o pino usado como alavanca no foco) e nenhuma redução aberta.
+
+
+## Remodelação: quando dá para esperar
+
+Por estar longe da fise, o colo da falange remodela pouco, mas não zero (p. 1432 e 1434). PUCKETT acompanhou oito consolidações viciosas: a angulação sagital caiu de 31 graus para zero e a coronal de 11 para 4 graus. A remodelação acontece sobretudo na criança muito pequena, no plano sagital, é mais visível na falange média e nem sempre devolve a flexão completa (o arco final ficou entre 80 e 90 graus).
+
+Daí a regra do capítulo: só se observa uma consolidação viciosa do colo se **todas** as condições estiverem presentes: sem rotação nem desvio radioulnar, IF congruente, muito crescimento pela frente, perda de flexão tolerável e família disposta a esperar meses ou anos.
+
+## Chegada tardia: osteoclasia percutânea, nunca osteotomia aberta
+
+Como a criança cola rápido, é comum ela chegar duas a quatro semanas depois da lesão com uma consolidação incipiente. Para esse momento, o capítulo descreve a **osteoclasia percutânea com fio**, técnica popularizada por WATERS (Fig. 41.11, p. 1434). Um fio liso é introduzido pelo foco ainda mole, usado como alavanca para desfazer o calo e reduzir, e depois serve para fixar.
+
+As condições para tentar são três: ainda há **dor no foco** (sinal de que o calo não amadureceu), o **traço ainda é visível** na radiografia e a IF flete **menos de 90 graus**. O exemplo da figura é uma criança de 6 anos com 4 semanas de evolução, tratada com osteoclasia e fio, sem necrose da cabeça no seguimento.
+
+Por que não abrir? Porque a **osteotomia aberta corretiva** no colo exige descolar as partes moles da cabeça, que recebe sangue quase só pelos colaterais e pela cápsula: o risco de **osteonecrose da cabeça** é alto, e o capítulo **não recomenda** essa cirurgia.
+
+Quando a consolidação já é antiga e a perda de flexão incomoda, a saída é outra: **reconstruir a fossa subcondilar** (p. 1434). Por via volar ou mediolateral, com pinça goiva ou broca, retira-se o osso que oblitera a fossa até que a flexão passiva chegue a 90 graus ou mais. O cuidado é não afinar demais a ponte dorsal do colo, que pode quebrar. Pseudartrose do colo é rara; se ocorrer e não houver necrose, trata-se com enxerto e fio longitudinal.
+
+
+## A preferência do autor
+
+O resumo da conduta de BAE no colo da falange (p. 1434): sem desvio, gesso com radiografia semanal; tipos II e III, redução fechada e **fios cruzados**, com gesso por 3 a 4 semanas; redução aberta, se necessária, pela via **medioaxial** (mid-axial), preservando o colateral; chegada tardia com calo mole, osteoclasia; chegada tardia com flexão de 90 graus ou mais, observar.
+
+# Diáfise e fise das falanges proximal e média {radar=confirmado}
+
+## Diáfise: o desvio pelos músculos
+
+As fraturas da diáfise respondem por cerca de dois terços das fraturas das falanges, por flexão e torção em quedas e esporte (p. 1434 e 1435). O desvio segue a mesma mecânica do adulto. Na **falange proximal**, o ápice é **volar**: os intrínsecos, que passam volares ao eixo da MF e se inserem na base da falange, fletem o fragmento proximal, e o mecanismo extensor, pela banda central na base da média, estende o fragmento distal. Na **falange média**, o ápice depende da relação com a inserção do flexor superficial (FDS): distal à inserção, o FDS flete o fragmento proximal e o ápice fica volar; proximal à inserção, o FDS flete o distal e o ápice fica dorsal.
+
+Até **10 graus** de angulação são aceitáveis; mais do que isso, ou qualquer rotação com sobreposição dos dedos, pede redução. AL-QATTAN estudou 92 crianças com fratura da base da falange proximal: as com mais de 10 graus foram reduzidas, com ou sem pino, e tiveram resultado excelente; as com menos de 10 graus remodelaram (p. 1435).
+
+Fratura instável é fixada com fios lisos: oblíqua longa com dois ou mais fios perpendiculares ao traço; transversa com fios cruzados que **não se cruzem no foco** (fios cruzados no foco funcionam como eixo e deixam a fratura girar). Os fios saem em 4 semanas. BOYER acompanhou 105 crianças com pino: 36 ficaram rígidas no início, mas todas as seguidas por mais de 12 meses recuperaram o movimento completo. É o retrato da criança que é a própria terapeuta.
+
+A preferência do autor (p. 1435): redução fechada e gesso quando há má rotação ou mais de 10 graus; radiografias seriadas; gesso por 3 a 4 semanas. Instável ou mal alinhada, redução fechada e pino percutâneo (Fig. 41.12). Fratura **irredutível**, redução aberta e pino.
+
+## Fisárias da falange: a fratura extraoctave
+
+As fraturas fisárias das falanges são comuns, por flexão associada a rotação (p. 1435). Lembre que um terço das lesões ósseas da mão em crescimento toca a fise, e a parada é incomum.
+
+A **falange proximal do dedo mínimo** é a mais acometida, numa lesão com nome próprio: a **fratura extraoctave** (Fig. 41.13). O nome vem do piano: o dedo mínimo, desviado em abdução (ulnar) pela fratura da base da falange proximal, abre a mão como quem quer alcançar uma nota além da oitava. O polegar responde por cerca de um quinto das fisárias; a falange média é bem menos acometida que a proximal.
+
+O padrão predominante é o **SALTER-HARRIS II**, e o motivo é a anatomia dos colaterais da MF descrita antes: a força lateral passa pela fise e sai pela metáfise, levando o fragmento de THURSTON-HOLLAND. O Green não descreve essas fraturas como transversas: o traço é fisário com fragmento metafisário.
+
+## Quando e como reduzir
+
+A regra de redução é a mais repetida do capítulo: reduzir quando há **mais de 10 graus de angulação ou qualquer rotação** (p. 1435). A justificativa já foi vista: o desvio radioulnar (como o da extraoctave) e a rotação remodelam pouco.
+
+A manobra tem dois truques (p. 1435). O primeiro é **fletir a MF**: em flexão, os colaterais da MF ficam tensos (a cabeça do metacarpo é excêntrica, mais larga no volar) e travam o fragmento proximal, a epífise, que não teria outra forma de ser segurado. O segundo é usar um **lápis ou uma caneta na comissura**, no vértice da deformidade, como fulcro: o cirurgião empurra o dedo contra o lápis e corrige a angulação, como se dobrasse uma alavanca sobre um apoio.
+
+Depois da redução, confere-se a rotação clinicamente (os dedos em flexão apontando para o escafoide, sem cruzamento) e o alinhamento por radiografia. O gesso fica em **posição intrínseco-plus** (MF fletidas, IF estendidas, que mantém os colaterais longos e evita a rigidez) por 3 a 4 semanas. O capítulo discute a tala removível com movimento precoce, que alguns defendem, e conclui que, na criança, o risco de a tala ser tirada e a redução se perder supera o benefício do movimento precoce, ainda mais porque a criança raramente fica rígida (p. 1436).
+
+As fraturas instáveis são raras e em geral de alta energia, com o envelope de partes moles rompido. Nelas se faz redução fechada e fios percutâneos finos (0,028 a 0,035 polegada), em menor número que no adulto, retirados em 3 a 4 semanas (p. 1436).
+
+A preferência do autor: mais de 10 graus ou rotação, redução e gesso por 4 semanas (a maioria fica estável); fio percutâneo para as instáveis ou **irredutíveis** com rotação ou mais de 10 a 15 graus.
+
+## Quando a fratura não reduz: interposição
+
+Por que uma fisária da base da falange proximal seria irredutível? Porque algo fica entre os fragmentos. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 8, seção das fraturas fisárias das falanges), mostra o exemplo típico: uma SALTER-HARRIS II desviada da falange proximal em que o fragmento distal atravessou um rasgo no **periósteo e no mecanismo extensor**, que o abraçou como uma casa de botão e impediu a redução. A regra desse livro é direta: fraturas irredutíveis exigem **redução aberta, retirada de todo tecido interposto e fixação**. O Green diz o mesmo com outras palavras: a fratura irredutível vai para redução aberta e pino.
+
+A lógica é a mesma da SEYMOUR. Quando há tecido mole no foco, insistir em manipulação fechada só traz duas consequências: a fratura não reduz, e cada nova tentativa forçada machuca a fise. Tração prolongada também não resolve, porque o tecido preso não sai com tração. E observar esperando remodelação é aceitar justamente o desvio que menos remodela (coronal e rotacional) numa fise que está aberta pelo tecido interposto.
+
+!questoes central=mao-1300
+conceito: Descolamento epifisário da falange proximal com tecido mole interposto é uma fratura irredutível: a conduta é a redução aberta com retirada do tecido interposto (periósteo, mecanismo extensor) e fixação, porque a manipulação fechada não vence a interposição e repetir tentativas lesa a fise.
+como: A USP-SP 2025 descreveu o descolamento epifisário da falange proximal com interposição e pediu a conduta mais adequada.
+armadilha: Escolher a redução fechada e o gesso (é o tratamento da fisária comum, sem interposição), a tração gradual ou a observação confiando na remodelação.
+!fim
+
+
+## Base articular e lesões epifisárias
+
+As fraturas da base da falange com extensão articular são SALTER-HARRIS III e IV (p. 1436). Com incongruência articular, instabilidade ou desvio de mais de 1 a 2 mm (o autor usa diástase de mais de 2 mm), a conduta é redução fechada ou aberta e fios lisos, para restaurar a superfície articular, a fise e o alinhamento.
+
+Elas precisam ser distinguidas da **avulsão da placa volar** da epífise, uma lesão de hiperextensão da IFP. Esta vai bem com enfaixamento (Coban) e esparadrapo com o dedo vizinho (buddy taping) e movimento precoce. Um estudo de 121 hiperextensões da IFP mostrou que o buddy taping é tão bom quanto a tala de alumínio, e que a criança se recupera melhor que o adulto (p. 1436).
+
+A fratura-luxação instável da IFP é rara na criança. Quando acontece, a via é volar em zigue-zague, com a polia elevada entre A3 e C1, fixação com fios ou parafusos e enxerto se houver impacção; imobiliza-se por 3 semanas.
+
+Os pontos críticos que o autor resume para as falanges (p. 1436): cirurgia para todas as articulares desviadas; redução fechada e pino no colo desviado; osteoclasia na chegada tardia; reconstrução da fossa na consolidação antiga.
+
+# Metacarpos {radar=confirmado}
+
+## Princípios e limites aceitáveis
+
+Os princípios são os do adulto: a fratura do metacarpo desvia com **ápice dorsal**, porque os intrínsecos, volares ao eixo, fletem o fragmento distal (p. 1436 e 1437). Angulação excessiva causa três problemas: estético (a cabeça do metacarpo some do dorso da mão), **pseudogarra** (a MF hiperestende e a IFP flete para compensar) e dor na preensão (a cabeça saliente na palma).
+
+Os limites aceitáveis do capítulo (p. 1437):
+
+| Local | Angulação aceitável |
+| --- | --- |
+| Fisárias (cabeça e colo) | Até 30 graus no plano sagital |
+| Colo | 20 a 45 graus, mais nos dedos ulnares |
+| Diáfise | 10 a 15 graus no indicador e no médio; 30 a 40 graus no anular e no mínimo |
+| Rotação | Mais de 10 graus já causa sobreposição (o raio X não mostra) |
+
+A diferença entre radiais e ulnares vem da carpometacarpal: a CMC do anular e, mais ainda, a do mínimo têm 15 a 25 graus de mobilidade em flexão e extensão, e compensam a angulação; a do indicador e a do médio são quase rígidas.
+
+## Fraturas epifisárias da cabeça
+
+As fraturas da cabeça do metacarpo na criança são raras e, quando ocorrem, são **SALTER-HARRIS III ou IV** (p. 1437), por carga axial, típica do soco. Faz sentido: o traço que entra na cabeça pela superfície articular e atravessa a fise é, por definição, um III (se sai pela fise) ou um IV (se continua pela metáfise).
+
+Desviadas, pedem redução aberta: parafuso no adolescente, fio liso na criança pequena e fio absorvível ou sutura quando a cartilagem está cominuída. A **osteonecrose** da cabeça é descrita, e o cuidado é preservar as partes moles presas aos fragmentos. A via é dorsal, entre o tendão extensor e a banda sagital ulnar; o gesso fica por 4 semanas.
+
+!questoes relacionadas=mao-0768 treino=mao-3803
+conceito: As fraturas epifisárias da cabeça do metacarpo na criança são raras e, pelo Green, do tipo SALTER-HARRIS III ou IV (carga axial); desviadas, vão para redução aberta, com risco de osteonecrose.
+como: O INTO 2023 perguntou o tipo de SALTER-HARRIS da grande maioria das fraturas da cabeça do metacarpo na criança.
+armadilha: Marcar o tipo II, que é o padrão geral das fisárias da mão (sobretudo da falange proximal), mas não das fraturas que entram pela cabeça do metacarpo.
+alerta: O gabarito do INTO 2023 marca o tipo III; o Green 7 diz "SALTER-HARRIS III ou IV" sem dizer qual predomina. O III é a leitura mais coerente com o traço que entra pela articulação e sai pela fise.
+!fim
+
+## Colo do metacarpo: a fratura do boxeador do adolescente
+
+O colo é o local de 56 a 70% das fraturas do metacarpo na criança, e o **mínimo** é o mais acometido (p. 1437 e 1438). O desvio é com ápice dorsal e, às vezes, rotação; o traço está na metáfise distal e envolve a fise com frequência. Duas articulações compensam a deformidade (a MF, que hiperestende, e a CMC, que se move), e a fise vizinha garante remodelação. Uma regra útil do capítulo: angulação de 10 a 30 graus maior que o arco de movimento da CMC é bem tolerada.
+
+Sem desvio, gesso por 3 a 4 semanas. Desviada, a redução clássica é a **manobra de JAHSS**: fletir a MF a 90 graus e empurrar a cabeça do metacarpo de volar para dorsal, usando a falange proximal como alavanca. A flexão da MF serve a dois propósitos: tensiona os colaterais da MF (o que transforma a falange numa alavanca firme presa à cabeça) e corrige a rotação, porque com os colaterais tensos a falange arrasta a cabeça junto.
+
+O capítulo aceita imobilizar com as MF em extensão, num gesso "em panqueca" por 4 semanas: é seguro na criança (que não fica rígida) e facilita o molde em três pontos. Fratura instável é fixada com pinos cruzados ou transmetacarpais; o pino intramedular em buquê é pouco usado na criança, porque o canal é estreito e a fise está no caminho.
+
+A chegada tardia é comum, e em geral nada se faz, porque a remodelação cuida. Se houver excesso de angulação ou rotação (sobretudo no indicador e no médio, que não compensam), faz-se osteoclasia percutânea (menos de 4 semanas, traço visível, dor) ou redução aberta e osteotomia. O capítulo adverte contra manipulações repetidas, que podem lesar a fise.
+
+A preferência do autor para o colo: aceitar 10, 20, 30 e 40 graus no indicador, no médio, no anular e no mínimo, respectivamente. É a mesma escada do adulto, crescente de radial para ulnar, e deve ser lembrada assim.
+
+## Diáfise e base
+
+A diáfise quebra em espiral ou transversa (p. 1438). Os metacarpos centrais são estabilizados pelos ligamentos intermetacarpais transversos e desviam pouco; os de borda e as fraturas múltiplas são mais instáveis. O tratamento é gesso por 3 a 4 semanas com radiografias seriadas. As indicações cirúrgicas são as do adulto: expostas, múltiplas, irredutíveis, instáveis, com lesão de partes moles ou neurovascular. A preferência do autor é o pino transmetacarpal ou cruzado (Fig. 41.14); nas múltiplas, parafusos (oblíqua longa) ou placas.
+
+A base responde por 13 a 20% das fraturas do metacarpo e acontece quase sempre no **mínimo** (p. 1438 e 1439). Raramente é articular, com subluxação da CMC: o chamado **BENNETT reverso** do quinto metacarpo. O esmagamento da base pode causar síndrome compartimental da mão. Trata-se com gesso por 3 a 4 semanas; a redução usa tração e pressão volar; fratura instável é fixada com pinos transmetacarpais ou no carpo.
+
+Os pontos críticos do autor para os metacarpos (p. 1439): redução aberta para a cabeça articular desviada; pino para o colo e a diáfise instáveis ou rodados; até 30 graus nas extra-articulares.
+
+# Polegar: guarda-caça pediátrico e KOZIN e WATERS {radar=oportunidade}
+
+## SALTER-HARRIS III da falange proximal: o guarda-caça da criança
+
+No adulto, o valgo forçado da MF do polegar rompe o colateral ulnar (o polegar do guarda-caça ou do esquiador, com a lesão de STENER quando a aponeurose do adutor se interpõe). Na criança, o mesmo trauma dá outra lesão: uma fratura **SALTER-HARRIS III** da base da falange proximal, com o fragmento epifisário ulnar arrancado pelo colateral (Fig. 41.15, p. 1439 e 1440).
+
+A explicação é a anatomia já vista: os colaterais da MF do polegar se inserem quase só na epífise da falange. O ligamento é mais forte que a fise; quando o valgo chega, ele não rompe, arranca o pedaço de epífise em que se prende. Por isso o capítulo chama essa fratura de equivalente pediátrico do polegar do guarda-caça, e por isso, na cirurgia, o colateral ulnar costuma estar íntegro, preso ao fragmento.
+
+Fratura desviada é articular e fisária ao mesmo tempo, e vai para cirurgia (p. 1440). A técnica do autor: via dorsal curvilínea; a aponeurose do adutor é incisada junto ao extensor; a articulação é vista pelo próprio traço, sem abrir a cápsula à parte; dois fios paralelos atravessam o fragmento até a cortical radial (um só na criança muito pequena); gesso axilopalmar incluindo o polegar por 4 a 6 semanas.
+
+## Base do metacarpo do polegar: por que até 30 graus vão bem
+
+A base do metacarpo do polegar é um local comum de fratura na criança, por queda e esporte (p. 1440 e 1441). As fraturas podem ser metafisárias, fisárias, epifisárias ou articulares, e os estudos recentes mostram as **fisárias** como as mais comuns.
+
+Duas características tornam essa região tolerante. A fise está **na base**, junto da fratura, e remodela bem. E a CMC do polegar é uma articulação em sela muito móvel, que compensa a angulação. Por isso **até 30 graus** de angulação são bem tolerados, e um gesso por 3 a 4 semanas pode bastar. A Figura 41.16 mostra um adolescente de 14 anos que chegou com três semanas de atraso e teve resultado ótimo só com gesso.
+
+## A classificação de KOZIN e WATERS
+
+KOZIN e WATERS organizaram as fraturas da base do metacarpo do polegar da criança em quatro tipos, A a D, cada um com sua conduta (p. 1440 e 1441). A chave para entendê-los é a mecânica dos músculos que agem na base do polegar: o **adutor do polegar**, que se insere mais distal (na base da falange proximal, pelo sesamoide ulnar) e puxa a diáfise para a palma, fechando a primeira comissura; e o **abdutor longo do polegar (APL)**, que se insere na base do metacarpo (epífise e metáfise) e puxa para proximal.
+
+| Tipo | Traço | Desvio | Conduta |
+| --- | --- | --- | --- |
+| A | Metafisário, entre a fise e a junção dos terços proximal e médio da diáfise; transverso ou oblíquo | Variável | Redução fechada e gesso; ótimo resultado |
+| B | SALTER-HARRIS II com fragmento de THURSTON-HOLLAND **ulnar** (medial) e ápice **radial** (lateral) | Diáfise aduzida pelo adutor e puxada para proximal pelo APL; primeira comissura fechada | Redução fechada e gesso; instável, pino na epífise ou no trapézio; aberta rara |
+| C | SALTER-HARRIS II com THURSTON-HOLLAND **radial** e ápice **ulnar** | Desvio grave possível | Redução fechada e pino; cominuição ou interposição, aberta e pino |
+| D | SALTER-HARRIS III ou IV, articular | Equivalente pediátrico do BENNETT | Redução fechada ou aberta e pino |
+
+O tipo B é o que as bancas mais cobram. Por que o fragmento de THURSTON-HOLLAND fica no lado ulnar? Porque a força que abre a fratura dobra o metacarpo com o ápice para radial: o periósteo do lado radial (convexo) rompe, e o do lado ulnar (côncavo) fica íntegro e segura um triângulo de metáfise preso à epífise. O capítulo lembra essa regra geral na p. 1444: o fragmento de THURSTON-HOLLAND fica do lado **oposto à ruptura do periósteo**, isto é, do lado em que o periósteo está íntegro. Isso orienta a manobra: o periósteo íntegro funciona como dobradiça, e reduz-se a fratura revertendo a deformidade em direção a ele.
+
+Uma vez solta, a diáfise obedece aos músculos: o adutor a puxa para a palma (aduz) e o APL, puxando a base, encurta o raio para proximal. A primeira comissura fecha. É essa deformidade que a redução precisa desfazer, com tração, abdução e pressão na base.
+
+O tipo C é o espelho do B: THURSTON-HOLLAND radial, ápice ulnar. É menos comum, costuma desviar mais e é o que mais precisa de redução aberta, porque o periósteo rompido pode se interpor (o Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 8, seção das fraturas da base do metacarpo do polegar, diz que o tipo C com mais frequência exige redução aberta para retirar o periósteo interposto).
+
+O tipo D é a forma pediátrica do BENNETT: o traço entra na articulação trapeziometacarpal e atravessa a fise. Redução por tração, pronação e pressão na base, aduzindo o raio, e fixação com pino; redução aberta quando a fechada não restaura a superfície.
+
+## A preferência do autor no polegar
+
+Redução fechada e gesso axilopalmar curto com o polegar incluído; até 30 graus no esqueleto imaturo dão ótimo resultado (p. 1441 e 1442). Instável, pinos oblíquos cruzados. Aberta pela incisão radial na junção entre a pele glabra e a não glabra, centrada na CMC, com os músculos tenares rebatidos para volar (Fig. 41.17). O autor evita fixar o primeiro metacarpo ao segundo através da comissura, para não prender o polegar em adução.
+
+# O punho da criança: ossificação do carpo {radar=confirmado}
+
+## A ordem de aparecimento dos núcleos
+
+O carpo do recém-nascido é todo cartilagem. Os núcleos de ossificação aparecem numa ordem fixa, que começa pelos ossos grandes do centro (capitato e hamato), passa pela fileira proximal do lado ulnar para o radial e termina no pisiforme. O capítulo dá as idades (p. 1444):
+
+| Osso | Idade de aparecimento do núcleo |
+| --- | --- |
+| Capitato | 6 a 8 meses |
+| Hamato | 6 a 8 meses |
+| Piramidal | 2 a 3 anos |
+| Semilunar | 4 anos |
+| Escafoide | 4 a 5 anos |
+| Trapézio e trapezoide | 5 anos |
+| Pisiforme | 6 a 8 anos (o último) |
+
+Capitato e hamato surgem juntos, entre 6 e 8 meses; o pisiforme é o último, entre 6 e 8 anos. O pisiforme é um sesamoide dentro do tendão do flexor ulnar do carpo, e ossifica tarde como os outros sesamoides. Isso tem uma consequência prática: na radiografia de uma criança de 5 anos, a ausência do pisiforme é normal, e não deve ser tomada por fratura nem por agenesia.
+
+O escafoide fica totalmente ossificado só entre 14 e 16 anos, e ossifica de **distal para proximal**. O escafoide bipartido é descrito e precisa ser distinguido da pseudartrose.
+
+Os livros variam um pouco nas idades. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 8, Fig. 8-1), dá o capitato no primeiro ano, o hamato nos primeiros meses e o pisiforme por volta do nono ou décimo ano no texto, mas 6 a 8 anos na legenda da figura; o trapezoide aparece um ano depois do trapézio. As provas, porém, seguem a sequência e as faixas do Green: capitato e hamato primeiro, pisiforme por último, por volta de 6 a 8 anos.
+
+Na mesma página, o capítulo dá os núcleos do antebraço distal: a epífise distal do **rádio** aparece no primeiro ano; a da **ulna**, por volta dos 6 anos, às vezes com dois centros, que podem imitar fratura do estiloide. A fise da ulna fecha por volta dos 16 anos nas meninas e 17 nos meninos, e a do rádio cerca de 6 meses depois.
+
+!questoes relacionadas=mao-1125 treino=mao-2251,mao-2394
+conceito: No carpo, capitato e hamato ossificam primeiro (6 a 8 meses), depois piramidal (2 a 3 anos), semilunar (4), escafoide (4 a 5), trapézio e trapezoide (5) e, por último, o pisiforme (6 a 8 anos).
+como: A PUC-SP 2021 pediu o último osso a ossificar e a idade; o simulado do SIMÃO 2022 pediu o osso que aparece mais tarde na radiografia; o do SBCM 2023, a afirmação correta sobre a ordem.
+armadilha: Marcar o escafoide como último (ele é o mais fraturado, não o último a ossificar), pôr o pisiforme logo depois do capitato, ou atrasar trapézio e trapezoide para 7 anos.
+!fim
+
+## O carpo imaturo engana a radiografia
+
+As lesões ligamentares intrínsecas do carpo são bem menos comuns na criança do que no adulto (p. 1445 e 1446), e os parâmetros radiográficos do adulto não valem no punho em crescimento. O espaço escafossemilunar, por exemplo, é naturalmente largo enquanto o escafoide não terminou de ossificar, porque a parte proximal ainda é cartilagem: o falso sinal de TERRY THOMAS. Antes de diagnosticar dissociação escafossemilunar numa criança, compara-se com o outro lado.
+
+O complexo da fibrocartilagem triangular já funciona como no adulto: cerca de 20% da carga do punho em posição neutra passa pelo lado ulnar.
+
+# Fraturas do escafoide e do carpo na criança {radar=confirmado}
+
+## Por que o escafoide da criança quebra menos e onde quebra
+
+O escafoide é o osso do carpo mais fraturado na criança, como no adulto, com pico na pré-adolescência e na adolescência (p. 1442 e 1443). Antes disso ele quebra pouco, e o motivo é a **capa cartilaginosa grossa** que o envolve: a cartilagem absorve a energia e protege o núcleo ósseo pequeno.
+
+Onde ele quebra é uma das perguntas clássicas. Como o escafoide ossifica de **distal para proximal**, na criança pequena o polo distal é o único pedaço ossificado de verdade, e por isso ele é o que quebra: a descrição clássica é polo distal mais que terço distal mais que cintura. Essa é a resposta das provas e dos livros de pediatria por décadas.
+
+O capítulo de BAE mostra que o padrão mudou. GHOLSON, em 351 fraturas do escafoide pediátrico entre 1995 e 2010, encontrou **cintura em 71%**, polo distal em 23% e polo proximal em 6% (p. 1442). O padrão infantil está ficando parecido com o do adulto, e as razões mais citadas são duas: as crianças operadas e estudadas são cada vez mais adolescentes (esporte de alta energia, estirão), e a obesidade aumenta a energia das quedas.
+
+Como lidar com isso na prova? Quando a questão pergunta o local "clássico" ou fala da criança pequena, a resposta é o polo distal, que é a leitura das bancas que já cobraram o tema. Quando a questão traz um adolescente com mecanismo esportivo, ou cita dados atuais, a cintura passa a ser a resposta defensável.
+
+## Diagnóstico
+
+Os sinais são os do adulto: dor na tabaqueira anatômica e no tubérculo do escafoide, dor à carga axial do polegar e ao teste de compressão (p. 1443 e 1444). As radiografias são AP com desvio ulnar, perfil e oblíquas.
+
+Tabaqueira dolorosa com radiografia negativa: imobilização com gesso ou tala incluindo o polegar e reavaliação em **2 a 3 semanas**; se a dor persistir, TC ou RM (Fig. 41.18). A RM imediata de rotina **não é recomendada**, porque a maioria dessas crianças não tem fratura e o exame exige sedação nas menores.
+
+## Tratamento conforme o local
+
+**Polo distal**: bem irrigado e extra-articular, consolida bem com gesso incluindo o polegar por 4 a 6 semanas (Fig. 41.20, p. 1444). É o caso em que o gesso é indiscutível.
+
+**Cintura sem desvio**: gesso, com consolidação acima de 90%, mas demorada (2 a 3 meses), porque a irrigação do escafoide é retrógrada como no adulto: entra pelo dorso distal e chega ao polo proximal por dentro do osso (p. 1444 e 1445). GELLMAN mostrou consolidação mais rápida com gesso longo nas 6 primeiras semanas (9,5 contra 12,7 semanas) e menos pseudartrose; outros estudos não acharam diferença. O parafuso percutâneo desperta entusiasmo, mas não há prova de que consolide mais rápido na criança.
+
+**Cintura desviada e polo proximal**: redução aberta e fixação, como no adulto, com fios, parafusos com cabeça ou sem cabeça de passo variável (p. 1445).
+
+A preferência do autor (p. 1446): polo distal, gesso curto com polegar por 4 a 6 semanas; cintura sem desvio **confirmada por TC**, gesso curto com polegar até consolidar, sem TC de rotina se clínica e radiografia mostram consolidação; atleta ou fratura bilateral, parafuso percutâneo dorsal. Desviada da cintura, via **volar**; polo proximal, via **dorsal**; parafuso canulado sem cabeça de passo variável.
+
+!questoes relacionadas=mao-1092 treino=mao-2389,mao-1786
+conceito: Na criança o escafoide ossifica de distal para proximal, e a descrição clássica põe o polo distal como local mais fraturado, tratado com gesso incluindo o polegar por 4 a 6 semanas; a série de GHOLSON, porém, mostrou a cintura em 71% nas crianças atuais, mais adolescentes.
+como: A PUC-SP 2020 perguntou o local mais comum; o simulado do SIMÃO 2022 pediu o local e o tratamento; o do SIMÃO 2026, em que situação o gesso é a conduta de escolha (menino de 12 anos com fratura sem desvio do terço distal).
+armadilha: Responder cintura numa questão que segue a leitura clássica, ou indicar fixação para a fratura distal sem desvio, que consolida com gesso.
+alerta: O gabarito da PUC-SP 2020 segue a descrição clássica (polo distal); o Green 7 traz os dados de GHOLSON, com a cintura em 71%, e diz que o padrão infantil está ficando parecido com o do adulto.
+!fim
+
+## Pseudartrose
+
+A pseudartrose do escafoide existe na criança, sobretudo quando o diagnóstico ou a imobilização falham (p. 1445 e 1446). Na série de GHOLSON, 29% chegaram depois de 6 semanas; as pseudartroses se concentram em adolescentes e na cintura e no polo proximal. As opções são as do adulto: gesso (historicamente), enxerto de MATTI-RUSSE, fios, parafuso e enxerto autólogo. Se houver necrose do polo proximal perto da maturidade, usa-se enxerto vascularizado pediculado do rádio distal. A consolidação viciosa em corcunda tem história natural pouco conhecida na criança.
+
+Na pseudartrose da cintura com corcunda e DISI, o autor usa enxerto tricortical do ilíaco e um fio radiossemilunar temporário para manter o semilunar em posição neutra enquanto o escafoide é corrigido (Fig. 41.21).
+
+## Os outros ossos do carpo
+
+As fraturas dos outros ossos do carpo são raras na criança, e o capítulo as resume (p. 1446 a 1448):
+
+| Osso | Padrão | Conduta |
+| --- | --- | --- |
+| Capitato | Raro, alta energia; procurar lesão dos arcos maior e menor (perilunar) | Sem desvio, gesso; desviado, fixar |
+| Piramidal | Corpo raro (arco maior); avulsão dorsal comum no adolescente | Corpo, fixar; avulsão, tala ou gesso por 3 a 4 semanas |
+| Hamato | Gancho predomina (queda); dor palmar, parestesia ulnar, dor ao fletir anular e mínimo | Incidência do túnel do carpo e TC; gesso curto 4 a 6 semanas; pseudartrose sintomática, excisão do gancho (via de GUYON ou do túnel) |
+| Pisiforme | Raro, golpe direto ou hiperextensão | Gesso 4 a 6 semanas |
+
+O gancho do hamato merece um comentário: mesmo quando evolui para pseudartrose fibrosa, o gesso costuma aliviar a dor; se a pseudartrose for sintomática, retira-se o fragmento (Fig. 41.24).
+
+# Rádio distal da criança {radar=clinico}
+
+## Por que o rádio distal remodela tanto
+
+O rádio distal responde por 20 a 35% de todas as fraturas da criança, com pico entre 10 e 14 anos, quando a metáfise fica porosa durante o estirão (p. 1442 e 1443). A incidência está aumentando, com o esporte e a obesidade. As fraturas fisárias do rádio distal estão entre as fisárias mais comuns do corpo, atrás só das falanges (o capítulo cita cerca de 20% de todas as fisárias).
+
+A fise distal do rádio responde por 70 a 80% do crescimento do rádio e por cerca de 40% do crescimento de todo o membro superior (p. 1444 e 1445). Essa fise poderosa remodela até **10 graus por ano** no plano sagital. Abaixo de 10 a 12 anos, desvios de 20 a 30 graus no plano sagital e translações de 50 a 100% podem remodelar por completo. A exceção é a de sempre: o desvio coronal acima de 10 graus pode não remodelar.
+
+## Tórus e fraturas bicorticais
+
+A fratura em **tórus** (buckle) é uma falha em compressão da cortical, sem ruptura da cortical oposta: é estável (p. 1448 e 1449). Tala ou gesso curto por 3 semanas bastam, e vários ensaios mostram que uma tala retirada pelos próprios pais em casa, sem retorno e sem radiografia, dá o mesmo resultado.
+
+A fratura **bicortical** metafisária, mesmo em baioneta, remodela bem na criança pequena. Quando precisa de redução, ela é feita sob bloqueio do hematoma, sedação ou anestesia geral. A manobra usa o **periósteo íntegro** do lado côncavo como dobradiça (Fig. 41.28, p. 1451): primeiro se **exagera a deformidade** para desencaixar as corticais, depois se traciona e se reverte o mecanismo, empurrando o fragmento distal de volta. Tração pura não funciona, porque o periósteo íntegro, tenso, mantém os fragmentos cavalgados. O gesso é moldado em três pontos e no espaço interósseo, sem flexão excessiva do punho.
+
+## Gesso curto ou longo, e o índice do gesso
+
+A posição do antebraço no gesso longo é controversa (pronação, supinação ou neutro). Dois ensaios mostraram que o gesso curto, bem moldado, é tão bom quanto o longo nas fraturas metafisárias distais, com a vantagem de menos faltas à escola (p. 1452). O que pesa mais que o comprimento é a **qualidade da redução e do molde**.
+
+A **perda tardia de redução** acontece em cerca de um terço dos casos (de 10 a 91% nas séries) (p. 1452 e 1453). Os fatores de risco são: desvio inicial grande (baioneta, translação acima de 50%, angulação acima de 30 graus), **fratura do rádio isolado**, com a ulna inteira, **ulna fraturada no mesmo nível**, redução incompleta, gesso mal moldado, atrofia muscular e regressão do edema dentro do gesso. Por isso as radiografias são semanais.
+
+O rádio isolado é o fator que mais engana. A intuição diz que fratura de um osso só é mais estável, mas acontece o contrário: a ulna íntegra funciona como uma tala lateral rígida que mantém o comprimento do antebraço, e o rádio, puxado pelo braquiorradial e pelos músculos do polegar, tende a angular em torno dela.
+
+Os índices que medem a qualidade do gesso (Fig. 41.30, p. 1453):
+
+| Índice | Como se mede | Valor de risco |
+| --- | --- | --- |
+| Índice do gesso | Largura interna do gesso no perfil dividida pela largura no AP, no nível da fratura | Acima de 0,7 |
+| Índice do gap | Soma das folgas entre pele e gesso dividida pelo diâmetro, no AP e no perfil | Soma acima de 0,15 (sensibilidade de 88%) |
+| Índice de três pontos | Folgas nos três pontos do molde | O mais sensível |
+
+O índice do gesso pede um gesso oval, achatado de dorsal para volar, como o próprio antebraço; um gesso redondo (índice perto de 1) deixa a fratura se mexer.
+
+!questoes treino=mao-2044
+conceito: Na fratura do rádio distal da criança, a perda de redução no gesso ocorre em cerca de um terço dos casos; os fatores de risco incluem o rádio fraturado isoladamente, a ulna fraturada no mesmo nível, o desvio inicial grande (translação acima de 50%, angulação acima de 30 graus), a redução incompleta e o índice do gesso acima de 0,7.
+como: O simulado do SBCM 2024 pediu, entre lado dominante e desvios iniciais abaixo dos limites, o fator de risco para perder a redução.
+armadilha: Marcar 25 graus de angulação ou 40% de translação, que estão abaixo dos limites de risco, ou o lado dominante, que não entra na lista.
+!fim
+
+## Gesso ou fio
+
+MCLAUCHLAN comparou 68 crianças: perda de redução em 21% no gesso e 0% com fio, mas resultado clínico igual (p. 1453 e 1454). MILLER estudou 34 crianças acima de 10 anos com fraturas muito desviadas: 39% de remanipulação no gesso, 38% de complicações menores com o fio, e resultado e custo iguais. Conclusão do capítulo: **não fixar de rotina**.
+
+As indicações cirúrgicas são: fraturas expostas, instáveis ou irredutíveis, **cotovelo flutuante** (fratura do antebraço distal com supracondiliana no mesmo membro), lesão de partes moles ou neurovascular que impede o gesso, e fraturas SALTER-HARRIS III, IV ou triplanares desviadas, que vão para redução aberta (p. 1454).
+
+O fio liso entra obliquamente de distal e radial para proximal e ulnar, pela metáfise **proximal à fise**; um segundo fio entre o quarto e o quinto compartimento extensor se necessário. A técnica intrafocal de KAPANDJI também serve. O fixador externo fica para lesões graves de partes moles ou cominuição. Na junção metadiafisária o fio é difícil, e no adolescente com menos de dois anos de crescimento se usa placa volar poupando a fise (Fig. 41.31). Nas fraturas com ápice volar que não reduzem, o que se interpõe é o **periósteo volar** e o **pronador quadrado**.
+
+A preferência do autor para a metafisária desviada (p. 1455): redução sob sedação e **gesso longo em rotação neutra**; radiografias com 1, 2 e 4 semanas; gesso curto na quarta semana por mais duas. Se perder a redução, nova redução com fio oblíquo poupando a fise (incisão de 1 cm, protegendo o ramo superficial do radial), gesso longo e retirada do fio em 4 semanas.
+
+## Fraturas fisárias do rádio distal
+
+A regra das fisárias é a gentileza: redução **suave**, com analgesia, **evitando tentativas múltiplas ou tardias**, que esmagam as células da fise e podem parar o crescimento (p. 1455 e 1456). Se a redução se perde tardiamente (depois de uma semana, quando a fise já começou a colar), aceita-se a posição e espera-se a remodelação; osteotomia tardia, se necessária. Desvios abaixo de 15 graus e até 1 cm de encurtamento remodelam totalmente.
+
+A **parada fisária** é rara no rádio (cerca de **4%**) e frequente na **ulna distal** desviada (cerca de **50%**) (p. 1456). A parada do rádio, com a ulna continuando a crescer, cria ulna plus: impacção ulnocarpal, lesão da fibrocartilagem triangular e instabilidade da radioulnar distal. O tratamento (Box 41.2) inclui ressecção da barra, epifisiodese da ulna, encurtamento da ulna e osteotomia do rádio.
+
+A preferência do autor para a fisária (p. 1456): redução sob sedação e gesso longo moldado; sem flexão excessiva do punho, que favorece síndrome compartimental e compressão do mediano (Fig. 41.32); aceitar a perda tardia; radiografia de controle com **9 a 12 meses** para flagrar a parada.
+
+A fise distal da ulna desviada pede intervenção se a translação passa de 50% ou a angulação de 20 graus; se não reduz, há interposição, e faz-se redução aberta e fio por 4 semanas. A fratura do **estiloide ulnar na base** desestabiliza a fibrocartilagem triangular e a radioulnar distal, e no adolescente pode ser fixada com fio e banda de tensão (Fig. 41.34).
+
+Quando a parada do rádio já causou sintomas, as metas da reconstrução são cinco (p. 1457): variância ulnar neutra; inclinação volar e radial de pelo menos 10 graus; tratar a fibrocartilagem triangular; radioulnar distal estável e congruente; e evitar a recidiva. As ferramentas são artroscopia, encurtamento da ulna na junção metadiafisária (osteotomias oblíquas paralelas), epifisiodese da ulna e osteotomia do rádio. WATERS relatou boa melhora em 30 adolescentes.
+
+As outras complicações são a consolidação viciosa (observar e osteotomizar se persistir), a pseudartrose (rara, em expostas, na neurofibromatose e na pseudartrose congênita), a sinostose (lesão da fibrocartilagem ou do estiloide, expostas; trata-se com ressecção) e as lesões neurovasculares.
+
+# Diáfise do antebraço, MONTEGGIA e GALEAZZI {radar=clinico}
+
+## O tamanho do problema
+
+A fratura da diáfise do antebraço acomete cerca de uma em cada cem crianças por ano; é a terceira fratura de osso longo mais comum da infância (depois do rádio distal e da supracondiliana), tem pico entre 12 e 14 anos, é a **fratura exposta mais comum do membro superior** e o local mais comum de **refratura** (p. 1458).
+
+O mecanismo dá pistas: fratura dos dois ossos no mesmo nível sugere flexão pura; em níveis diferentes, rotação; torção grave pode virar MONTEGGIA ou GALEAZZI. A radiografia deve mostrar o antebraço inteiro, com punho e cotovelo, e o eixo do rádio tem de passar pelo centro do capítulo em todas as incidências (p. 1459).
+
+## Os quatro padrões e a deformação plástica
+
+O capítulo resume o antebraço como "dois ossos, três níveis, quatro padrões" (p. 1459 e 1460). Os padrões são a **deformação plástica**, o **galho verde**, a **fratura completa** e a **cominutiva**.
+
+A deformação plástica, ou curvatura traumática, é típica da primeira década (Fig. 41.36, p. 1461). O osso da criança, mais poroso e elástico, recebe uma carga entre o limite elástico e o ponto de ruptura: não volta à forma original e também não quebra. Ao microscópio há linhas de deslizamento. A conduta: reduzir se a curvatura passa de 20 graus em criança acima de 4 anos, com força de até 30 kg mantida por minutos, em três pontos sobre um fulcro, sob anestesia; gesso com a borda ulnar reta e molde interósseo (o "gesso curvo para um membro reto"). Corrige-se até 85%; se não corrigir, faz-se osteoclasia com fio ou broca no ápice.
+
+O galho verde por torção tem uma regra prática (p. 1460): **ápice dorsal** significa lesão em hiperpronação, e reduz-se com **supinação**; **ápice volar** significa hipersupinação, e reduz-se com **pronação**. A "regra dos polegares" ajuda a lembrar: gira-se o antebraço como se os polegares fossem em direção ao ápice. Primeiro se reverte a rotação, depois a angulação; completar ou não a fratura é controverso.
+
+## Anatomia que decide o que se aceita
+
+O rádio tem a forma de um S, com cerca de 15 graus de ápice ulnar no colo e um arco radial de cerca de 10 graus na diáfise (p. 1462). A tuberosidade bicipital e o estiloide radial estão a 180 graus um do outro, e o mesmo vale para o estiloide ulnar e o coronoide: esses pares servem para avaliar a rotação na radiografia. A rotação normal do antebraço vai de 150 a 180 graus.
+
+A estética ruim vem da **ulna** (subcutânea e reta, qualquer curva aparece); a perda de rotação vem do **rádio** (o arco que gira em torno da ulna). A pronação perdida é compensada pela abdução do ombro; a supinação perdida não tem compensação, porque o tórax impede. Angulação acima de 10 graus já atrapalha a rotação, e quanto mais proximal a fratura, menor a tolerância. Cada grau de má rotação custa 1 a 2 graus de rotação do antebraço.
+
+A remodelação vai até 20 graus abaixo dos 8 anos; acima de 10 anos, mais de 10 graus dificilmente remodela (p. 1462 e 1463). Encurtamento de até 1 cm e translação de 100% remodelam na criança pequena, nos terços médio e distal. A regra de MEHLMAN e WALL resume os limites por nível: **20, 15 e 10 graus** para os terços distal, médio e proximal. YOUNGER mostrou que um desvio do eixo acima de 5 na retirada do gesso prediz perda de rotação.
+
+## Tratamento e indicações cirúrgicas
+
+Fraturas completas são reduzidas exagerando a deformidade, tracionando, corrigindo a rotação e revertendo a angulação, com gesso longo moldado (p. 1463 e 1464). Para o terço proximal com ápice posterior ou ulnar, o gesso pode ser em **extensão do cotovelo**, com espica do polegar e uma argola presa ao pescoço (Fig. 41.38). A rotação do gesso depende do nível: terço proximal em **supinação**; terço médio proximal ao pronador redondo também em supinação; distal ao pronador, neutro ou pronação. Radiografias semanais por 2 a 3 semanas; a perda de redução ocorre em 5 a 25% até 4 semanas e pode ser corrigida com cunha no gesso. Gesso curto na quarta semana até a sexta.
+
+As indicações cirúrgicas são: expostas, partes moles ou neurovascular, cotovelo flutuante, irredutíveis ou instáveis; a refratura é indicação relativa (p. 1465). Fios percutâneos não bastam e fixador é mal tolerado, de modo que a fixação **intramedular** é a preferida (fios de K, hastes elásticas de titânio, Rush, Steinmann): o periósteo da criança dá a estabilidade rotacional que a haste sozinha não daria. Placa fica para quem tem menos de dois anos de crescimento (meninos acima de 14, meninas acima de 12), com placas de 2,4 ou 2,7 mm ou um terço de tubo e quatro corticais de cada lado.
+
+A técnica do autor (p. 1466 e 1467, Fig. 41.40): **ulna primeiro**, porque é mais fácil e alinha o rádio; entrada no olécrano um pouco radial ao centro, pelo arco proximal da ulna; haste parando a 5 a 10 mm da fise distal. No rádio, entrada entre o primeiro e o segundo compartimento extensor (o "ponto nu" dorsorradial, protegendo o ramo superficial do radial) ou proximal ao tubérculo de LISTER; haste pré-curvada até a tuberosidade bicipital. Várias tentativas forçadas de passar a haste causam **síndrome compartimental**, e o melhor é abrir o foco pelos intervalos entre braquiorradial e flexor radial do carpo (distal) ou braquiorradial e pronador (proximal). O autor deixa as hastes para fora da pele e as tira com 4 a 6 semanas; a maioria corta sob a pele e retira com 3 a 6 meses. Na criança pequena, pode-se fixar um só osso se o outro ficar estável na radioscopia.
+
+## MONTEGGIA
+
+A fratura de MONTEGGIA é menos de 1% das fraturas do antebraço infantil, com pico entre 4 e 10 anos (p. 1468). Em 10 a 20% há déficit neurológico, em geral do **interósseo posterior**, porque a cabeça do rádio luxa para anterior e estira o nervo sobre o colo.
+
+O diagnóstico é perdido com frequência. Duas regras evitam o erro: o eixo do rádio passa pelo capítulo em qualquer incidência; e uma "luxação isolada da cabeça do rádio" deve fazer procurar uma curvatura plástica da ulna. A luxação congênita da cabeça se distingue por capítulo hipoplásico e cabeça convexa.
+
+Na MONTEGGIA infantil, o ligamento anular e o quadrado rompem, mas a membrana interóssea e a fibrocartilagem triangular ficam íntegras: por isso **reduzir a ulna reduz a cabeça do rádio**. A conduta segue o **padrão da fratura da ulna** (Tabela 41.1): deformação plástica, galho verde ou buckle, redução fechada sob anestesia geral; transversa ou oblíqua curta, redução e **haste intramedular**; oblíqua longa ou cominutiva, **placa**, mesmo com a fise aberta. No tipo I de BADO, o mais comum (cabeça anterior, ulna com ápice volar), corrige-se a ulna, empurra-se a cabeça para posterior, flete-se o cotovelo e supina-se o antebraço; gesso a 90 graus em supinação por 4 a 6 semanas. Se for preciso muita força para reduzir a cabeça, algo está interposto.
+
+## GALEAZZI
+
+A GALEAZZI (fratura do rádio distal com lesão da radioulnar distal) é rara na criança (p. 1469). Os equivalentes pediátricos são a fratura da **fise distal da ulna** ou a avulsão do estiloide. Quem desloca é o rádio. Diferente do adulto, a GALEAZZI infantil pode ser tratada sem cirurgia: com a ulna luxada para dorsal e o rádio com ápice dorsal, molde em três pontos e **supinação**; com ápice volar e ulna volar, **pronação**; gesso longo por 6 semanas. Com menos de dois anos de crescimento, faz-se redução aberta como no adulto.
+
+## Resultados, refratura e síndrome compartimental
+
+PRICE acompanhou 39 consolidações viciosas por 9,3 anos: 82% excelentes, 10% bons, 8% regulares (p. 1470). Os limites aceitáveis segundo ele: 10 graus de angulação, translação completa, perda total do arco radial e 45 graus de má rotação. O resultado piorou com angulação, encurtamento, estreitamento do espaço interósseo e fraturas proximais. Quando é preciso corrigir, faz-se osteotomia em cunha de fechamento no ápice dos dois ossos (via de HENRY volar e via ulnar), com placas e gesso por 4 mais 2 semanas.
+
+A **refratura** ocorre em 4 a 8% (cerca de 5%), mais em **meninos**, cerca de **6 meses** depois da lesão; usa-se tala de transição depois do gesso, e opera-se se o alinhamento não for aceitável (p. 1471).
+
+A **síndrome compartimental** da criança se anuncia de forma diferente do adulto: os três "A", **aumento da necessidade de analgésico**, **agitação** e **ansiedade** (p. 1471). Uma criança que pede cada vez mais remédio depois de uma redução ou de uma haste intramedular difícil deve ser examinada como suspeita de síndrome compartimental.
+
+# Fechamento {radar=fundamento}
+
+O capítulo de BAE inteiro cabe numa pergunta: esta fratura vai se corrigir sozinha? A resposta depende do plano do desvio (sagital remodela; coronal e rotacional, não), da distância até a fise (perto, sim; longe, não), da idade (pequena, sim; perto da maturidade, não) e da superfície articular (que nunca remodela). Quando a resposta é sim, gesso, mesmo longo e restritivo, porque a criança não fica rígida. Quando é não, redução fechada e fio, e redução aberta quando algo se interpõe (a matriz germinativa na SEYMOUR, o periósteo e o mecanismo extensor na fisária irredutível da falange proximal, o periósteo no tipo C de KOZIN e WATERS). E sempre com pressa, porque a janela para reduzir fechado se fecha em dias; quem chega tarde, no colo da falange, ainda tem a osteoclasia percutânea, nunca a osteotomia aberta que necrosa a cabeça.
+
+A anatomia responde às perguntas restantes: a fise das falanges está na base e a dos metacarpos no colo, menos no polegar; os colaterais presos só na epífise fazem o SALTER-HARRIS III da MF (e o guarda-caça pediátrico); o FDP preso na metáfise faz o pseudomallet; o adutor e o APL fecham a comissura no tipo B de KOZIN e WATERS; e o carpo ossifica do capitato ao pisiforme.
+
+> **Na prova:** rotação **não remodela**; fise das falanges **na base**, dos metacarpos **no colo**, polegar **na base**; SH II predomina, SH III **comum na MF** e **raro na IF**; alto risco = **articulares, SEYMOUR, colo da falange, expostas**; SEYMOUR = **exposta**, **matriz germinativa** interposta, desbridar e reduzir aberto; pseudomallet pelo **FDP**; martelo ósseo operado com **mais de 40% e subluxação volar**; AL-QATTAN **I sem desvio, II contato parcial, III sem contato**, II e III com **fio**; chegada tardia = **osteoclasia percutânea**; fisária da falange: reduzir com **mais de 10 graus ou qualquer rotação**, MF fletida e **lápis** na comissura, **extraoctave** no mínimo; irredutível com interposição = **redução aberta**; colo do metacarpo: **JAHSS**, aceitar **10, 20, 30, 40 graus**; cabeça do metacarpo: **SH III ou IV**; guarda-caça pediátrico = **SH III** da falange proximal do polegar; KOZIN e WATERS **B = THURSTON-HOLLAND ulnar**, adutor aduz e **APL** puxa para proximal, **D = BENNETT** pediátrico; carpo: **capitato e hamato 6 a 8 meses**, **pisiforme 6 a 8 anos**; escafoide clássico no **polo distal**, GHOLSON **cintura 71%**; rádio distal: **rádio isolado** e índice do gesso **acima de 0,7** perdem a redução; parada fisária **rádio 4%, ulna 50%**; antebraço: **MEHLMAN e WALL 20, 15, 10**, ulna primeiro na haste, MONTEGGIA pelo **padrão da ulna**, refratura **5%**, compartimental = **analgésico, agitação, ansiedade**.

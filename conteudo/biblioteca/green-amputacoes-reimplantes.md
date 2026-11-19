@@ -1,6 +1,6 @@
 ---
 id: green-amputacoes-reimplantes
-versao: 3
+versao: 5
 titulo: Amputações e reimplantes na mão
 especialidade: mao
 acesso: gratis
@@ -8,18 +8,18 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017)
 capitulo: Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)
 autores: James P. Higgins
-fonte: Livros conferidos localmente em 03/11/2026 e 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 42 (Replantation, págs. 1476 a 1484, lido inteiro, com a lista de referências das págs. 1484 e 1485), cap. 43 (Mangled Upper Extremity, págs. 1486 a 1490: objetivos, lesão de reperfusão, no-reflow e avaliação da perfusão do dedo), cap. 45 (págs. 1581 a 1584), cap. 47 (Toe-to-Hand Transplantation, págs. 1645 a 1668), cap. 48 (Thumb Reconstruction, págs. 1676 a 1681 e 1695 a 1705), cap. 49 (Digital Amputations, de Sanjeev Kakar, págs. 1708 a 1752, relido em 19/11/2026 para ampliar as seções de amputação) e cap. 50 (caso clínico); Campbell's Operative Orthopaedics, 15ª ed., cap. 20 (págs. 729 a 732), cap. 21 (Amputations of the Hand, págs. 748 a 778) e cap. 68 (Microsurgery, págs. 3024 a 3045, fonte da técnica microvascular, que o Green 7 deixou num capítulo só on-line); Rockwood and Green's Fractures in Adults, 10ª ed. (tabagismo). Estudos citados pelo nome conforme a lista de referências do cap. 42 do Green.
+fonte: Livros conferidos localmente em 03/11/2026 e 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 42 (Replantation, págs. 1476 a 1484, lido inteiro, com a lista de referências das págs. 1484 e 1485), cap. 43 (Mangled Upper Extremity, págs. 1486 a 1490: objetivos, lesão de reperfusão, no-reflow e avaliação da perfusão do dedo), cap. 45 (págs. 1581 a 1584), cap. 47 (Toe-to-Hand Transplantation, págs. 1645 a 1668), cap. 48 (Thumb Reconstruction, págs. 1676 a 1681 e 1695 a 1705), cap. 49 (Digital Amputations, de Sanjeev Kakar, págs. 1708 a 1752, relido em 19/11/2026 para ampliar as seções de amputação) cap. 50 (Major Limb Amputations and Prosthetics, de Diaz-Garcia e Cederna, págs. 1753 a 1762, lido inteiro em 19/11/2026 para as amputações maiores e as próteses) e cap. 38 (deficiência transversa, pág. 1346: KRUKENBERG); Campbell's Operative Orthopaedics, 15ª ed., cap. 20 (págs. 729 a 732), cap. 20 (amputações maiores do membro superior, págs. 729 a 739, para comparar) e cap. 21 (Amputations of the Hand, págs. 748 a 778, com o KRUKENBERG nas págs. 769 e 770) e cap. 68 (Microsurgery, págs. 3024 a 3045, fonte da técnica microvascular, que o Green 7 deixou num capítulo só on-line); Rockwood and Green's Fractures in Adults, 10ª ed. (tabagismo). Estudos citados pelo nome conforme a lista de referências do cap. 42 do Green.
 subtemas: Amputações e reimplantes
-resumo: Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.
+resumo: Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação; amputações maiores: trauma é a causa principal, cinco princípios, transradial 8 a 10 cm do estiloide ulnar com mais opções, 5 cm de ulna bastam, preservar o cotovelo, sem cotovelo transumeral 10 cm acima do olécrano exceto na criança (supercrescimento), MALONE 30 dias, BIDDISS 6 meses e 16 vezes, força corporal a mais prescrita, mioelétrica no transradial, híbrida nos proximais, TMR como amplificador biológico, KRUKENBERG separa rádio e ulna no cego bilateral.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo segue o capítulo 42 (Replantation, de James P. HIGGINS) do Green's Operative Hand Surgery, 7ª edição (2017), completado pelo capítulo 49 (Digital Amputations) e por trechos dos capítulos 43, 45, 47, 48 e 50, pelos capítulos 20, 21 e 68 do Campbell's Operative Orthopaedics, 15ª edição, e pelo Rockwood and Green's Fractures in Adults, 10ª edição. As páginas citadas do Green são as impressas.
+Este resumo segue o capítulo 42 (Replantation, de James P. HIGGINS) do Green's Operative Hand Surgery, 7ª edição (2017), completado pelo capítulo 49 (Digital Amputations), por trechos dos capítulos 43, 45, 47 e 48, pelo capítulo 50 (Major Limb Amputations and Prosthetics) nas amputações maiores e nas próteses, pelo capítulo 38 no KRUKENBERG, pelos capítulos 20, 21 e 68 do Campbell's Operative Orthopaedics, 15ª edição, e pelo Rockwood and Green's Fractures in Adults, 10ª edição. As páginas citadas do Green são as impressas.
 
 O capítulo 42 é curto (nove páginas de texto), mas denso, e tem uma lacuna que o aluno precisa conhecer: a técnica da anastomose microvascular propriamente dita (clamp, fio, número de pontos, ordem de soltar os clamps) não está no livro impresso. O Green 7 manda o leitor para um capítulo clássico de princípios de microcirurgia que ficou só na versão on-line (cap. 45, p. 1581). Como as provas de Cirurgia da Mão cobram esses números há duas décadas, a técnica aqui vem do capítulo 68 (Microsurgery) do Campbell, e a lesão de reperfusão e a avaliação da perfusão do dedo vêm do capítulo 43 do próprio Green (Mangled Upper Extremity).
 
-O tema tem duas metades. O **reimplante**: quem merece a tentativa, como conservar a parte, a ordem dos reparos, a microcirurgia e a vigilância. A **amputação** como tratamento: ponta do dedo, níveis, raios, polegar não reimplantado, punho. O próprio Green avisa que reimplantar pode ser **mais triunfo técnico que benefício** ao paciente (cap. 49, p. 1708), e essa frase é a melhor porta de entrada para as duas metades: o objetivo nunca é um dedo vivo, é uma mão que funcione.
+O tema tem duas metades. O **reimplante**: quem merece a tentativa, como conservar a parte, a ordem dos reparos, a microcirurgia e a vigilância. A **amputação** como tratamento: ponta do dedo, níveis, raios, polegar não reimplantado, e as amputações maiores do punho ao ombro, com as próteses, a TMR e o KRUKENBERG. O próprio Green avisa que reimplantar pode ser **mais triunfo técnico que benefício** ao paciente (cap. 49, p. 1708), e essa frase é a melhor porta de entrada para as duas metades: o objetivo nunca é um dedo vivo, é uma mão que funcione.
 
 ## As quatro ideias que explicam o resto
 
@@ -1078,46 +1078,739 @@ armadilha: Escolher a CMC do indicador ou dizer que o extensor próprio vira adu
 alerta: `mao-1493` segue o Green; o Campbell fixa em flexão para evitar hiperextensão. Gabarito mantido.
 !fim
 
-# A transferência de dedos do pé {radar=confirmado}
+# A transferência de dedos do pé: igual com igual {radar=confirmado}
 
-No Green's Operative Hand Surgery, 7ª ed. (cap. 47, p. 1654), o **hálux total** é escolhido quando o polegar foi amputado **na falange proximal ou no metacarpo**, mas é grande; o **envoltório de MORRISON** fica bonito e **não tem IF móvel**; o **hálux aparado** une as vantagens e perde 18 graus na IF. A **metatarsal dorsal primeira** domina em 70%; com **calibres iguais**, prefere-se a **dorsal**, mais fácil (p. 1653 aprox.).
+Esta parte do resumo segue o capítulo 47 do Green's Operative Hand Surgery, 7ª ed. (Toe-to-Hand Transplantation, de Fu-Chan WEI e Nidal F. ALDEEK, p. 1643 a 1672), com o complemento do capítulo 68 do Campbell's Operative Orthopaedics, 15ª ed. (Microsurgery, p. 3081 a 3090), onde o Green não trata do assunto. É o capítulo escrito pelo grupo de Chang Gung, em Taiwan, que tem a maior série do mundo, e por isso quase tudo o que a prova cobra (números, classificação, preferências técnicas) é a experiência pessoal de WEI.
 
-A **mão metacarpal** de WEI tem **tipo I** (dedos proximais ao meio da falange proximal, polegar intacto ou distal à IF) e **tipo II** (polegar proximal à IF) (p. 1649). No tipo I, repõem-se ao menos dois dedos adjacentes; no tipo II com tenar bom (IIA e IIB), polegar e dois dedos num só tempo; com tenar ruim (IIC), em etapas, com um poste protético provisório (p. 1650). Os dedos transferidos na criança crescem 60 a 100% do normal (p. 1651). Na criança, evita-se antes de 2 anos, e a **síndrome do anel de constrição** é a **indicação congênita ideal**, porque as estruturas proximais são normais (p. 1650). No aparelho extensor do dedo menor, o **tipo I** tem **banda central atenuada** (a tração não corrige o déficit) e o **tipo II**, **banda central distinta** (p. 1667).
+## Por que um dedo do pé
 
-!tabela Dedos do pé (Green, cap. 47, p. 1649 a 1668)
+Quando um dedo ou o polegar se perde, perde-se um conjunto de tecidos que não existe em nenhum outro lugar do corpo, a não ser no pé: pele glabra presa ao osso por septos fibrosos (que não escorrega na pinça), a polpa com a maior densidade de inervação do organismo, a unha que dá contraforte à polpa, articulações com cartilagem e cápsula, tendões que deslizam em polias. Os retalhos locais, o cross-finger, a osteoplástica e a prótese repõem um ou dois desses itens; o dedo do pé traz todos de uma vez, num bloco que tem artéria, veia e nervo próprios. Por isso o Green chama o método de reconstrução "igual com igual" e o considera o único meio seguro e confiável de devolver ao paciente um dedo que se move, sente e, na criança, cresce (p. 1643).
+
+A comparação com o alotransplante de mão ajuda a entender o valor: o transplante de mão de doador falecido também repõe tecidos iguais, mas cobra imunossupressão por toda a vida, com risco de infecção, tumor e rejeição. O dedo do pé é autólogo; o preço é a área doadora, e boa parte do capítulo trata justamente de como pagar o menor preço possível no pé.
+
+Para o polegar, a transferência é aceita há décadas. Para os dedos longos, foi controversa (muitos achavam que não valia sacrificar um dedo do pé por um dedo da mão), e vem ganhando espaço porque os pacientes ficaram mais informados e exigentes e porque a experiência acumulada mostrou resultados previsíveis (p. 1643).
+
+## De NICOLADONI a WEI: como o método chegou aqui
+
+A ideia é antiga. NICOLADONI, no fim do século XIX, levou um dedo do pé à mão por um pedículo, em etapas: o pé ficava preso à mão por cerca de 4 semanas até o dedo ganhar irrigação no leito novo. DAVIS foi o primeiro a somar às etapas uma anastomose com a artéria dorsal do pé. A virada veio com a microcirurgia: YANG, em 1966, fez a primeira transferência em tempo único, do segundo dedo para o polegar, e COBBETT, em 1968, a primeira do hálux para o polegar. O'BRIEN, em 1978, aplicou o método à mão congênita, e BUNCKE e ROSE, em 1979, descreveram os retalhos neurossensitivos de polpa para a reconstrução distal (p. 1643 e 1650).
+
+Daí em diante a evolução seguiu uma lógica clara: tirar do pé só o que falta na mão. Da transferência do dedo inteiro passou-se ao hálux aparado, ao envoltório, às transferências parciais, à polpa, à hemipolpa e ao enxerto ungueal vascularizado, e, na outra ponta, às combinações (segundo e terceiro juntos, terceiro e quarto, até três dedos do mesmo pé) para as mãos que perderam tudo (p. 1643 e 1665). É essa lógica que explica quase todas as escolhas técnicas do capítulo.
+
+## Quem se beneficia
+
+A indicação não sai de uma tabela; o Green fala em avaliação multifatorial: nível da amputação, número de dedos perdidos, idade, motivação (dos pais, na criança), ocupação, dominância, cobertura trabalhista e cultura. Uma amputação distal de um único dedo pode pesar mais na vida de um músico que a mão metacarpal na de outro paciente (p. 1643).
+
+O ponto mais contraintuitivo, e o mais cobrado, é o do dedo único. A amputação de **um dedo distal à IFP** é uma das **melhores indicações**, com função excelente; a de um dedo **proximal à IFP** costuma ficar melhor com a **amputação do raio** (p. 1643 e 1647). O porquê está na anatomia: distal à IFP, o dedo mantém a inserção do FDS, a IFP e os intrínsecos; o dedo do pé só precisa repor um segmento curto, que ele imita bem, e o conjunto se move com os motores próprios da mão. Proximal à IFP, o dedo do pé teria de fornecer a IFP, que é justamente a sua articulação mais pobre (pouco arco e tendência à garra), e o resultado seria um dedo curto e rígido no meio da mão, atrapalhando a preensão dos vizinhos; tirar o raio fecha a mão e dá melhor função.
+
+A idade avançada não é contraindicação absoluta, mas a demanda é menor, o risco clínico maior e a sensibilidade volta pior, porque a regeneração nervosa perde velocidade com a idade. No outro extremo, lactentes e crianças se beneficiam muito, mas abaixo de 2 anos a técnica é difícil pelo calibre dos vasos (p. 1643).
+
+As prioridades seguem a função de cada parte da mão (p. 1644). Na pinça fina, as superfícies que tocam são a face **radial do indicador e do médio** e a face **ulnar do polegar**; defeitos de polpa nessas faces valem mais que os outros. Quando vários dedos faltam, reconstroem-se **pelo menos dois dedos adjacentes**, porque um dedo isolado diante do polegar não dá estabilidade lateral nem pinça trípode. Os dedos radiais servem à manipulação fina e os ulnares à preensão de força (o texto da p. 1644 escreve "anelar e médio" para os ulnares, provável troca por anelar e mínimo; nenhuma questão séria deve depender disso).
+
+## O pé que doa
+
+O preço da transferência é pago no pé, e o capítulo é cuidadoso com ele. Três regras orientam a escolha.
+
+A primeira é poupar a marcha. O hálux participa do impulso do passo: a base da falange proximal guarda a metatarsofalângica com as inserções do flexor curto, os sesamoides e o mecanismo de molinete da fáscia plantar, que endurece o arco no fim do apoio. Por isso, quando se leva o hálux, **preserva-se pelo menos 1 cm da base da falange proximal** e a metatarsofalângica do pé (p. 1656). O segundo dedo é o doador menor preferido (tamanho, unha e pedículo convenientes); o terceiro é a alternativa quando o segundo não está disponível ou precisa ficar no pé; o quarto e o quinto não são primeira escolha.
+
+A segunda é pôr a perda maior no pé que pede menos. O pé dominante (em geral o direito) deve sofrer a menor perda: se um paciente precisa do hálux e do segundo e terceiro dedos, o direito doa o par menor e o esquerdo, o hálux (p. 1644). Quando só o par de segundo e terceiro dedos é necessário, WEI tira sempre do **pé esquerdo**, porque o direito tem mais demanda (dirigir, por exemplo), e usa o direito apenas se o esquerdo não servir (p. 1664 e 1665). As duas frases não se contradizem: o esquerdo é o padrão, e a regra do pé dominante vale quando os dois pés doam.
+
+A terceira é fechar bem. A doadora do segundo dedo e do par de dedos é fechada primariamente, sem dreno e **nunca com enxerto de pele**, que no pé de carga ulcera e dói; se o fechamento ficar difícil, desarticula-se a metatarsofalângica ou encurta-se pelo metatarso (p. 1657 e 1665). Só as polpas e o retalho do primeiro espaço aceitam enxerto de pele parcial no peito do pé, que é uma área sem carga (p. 1660 e 1661).
+
+O vaso também não é escolhido de antemão: a artéria do primeiro espaço é dorsal na maioria dos pés, e a dissecção é planejada para achar a dominante em cada caso (veja a seção da anatomia arterial). Afirmar que o sistema plantar é sempre o de escolha está errado.
+
+!questoes central=mao-1629 treino=mao-3774,mao-3777,mao-3775,mao-3773
+conceito: No planejamento, poupa-se a metatarsofalângica do hálux (pelo menos 1 cm da base da falange proximal) para manter o impulso da marcha; o segundo dedo é o doador menor preferido e a artéria dominante costuma ser a dorsal.
+como: A USP-SP 2026 pediu a afirmação correta sobre o planejamento, com distratores sobre o alotransplante, o vaso plantar "sempre" e a preferência pelo quinto dedo.
+armadilha: Achar que o alotransplante de mão substitui o método sem custo clínico, que o vaso é sempre plantar ou que o quinto e o quarto dedos vêm antes do segundo.
+alerta: O enunciado oficial escreve "metacarpo-falangeana" no pé; leia metatarsofalângica. Gabarito mantido.
+!fim
+
+## O atendimento inicial já é parte da reconstrução
+
+O reimplante continua sendo a melhor opção na amputação aguda, mas o Green pede que o dedo do pé seja discutido desde o primeiro atendimento, até antes do reimplante, sobretudo nas amputações múltiplas e nos esmagamentos e avulsões, que reimplantam mal (p. 1644). A razão é prática: o que o cirurgião do pronto-socorro descarta para fechar o coto é exatamente o que o microcirurgião vai precisar meses depois. A regra geral é **preservar comprimento** de osso, tendão e feixe neurovascular depois do desbridamento (Fig. 47.1, p. 1644).
+
+- Osso: o erro comum é encurtar para fechar com retalho local. Um coto de só 5 mm já aceita um amarrilho intraósseo. Articulações e cartilagem são mantidas com a cápsula; um coto metacarpal curto pode ser alongado com bloco ósseo não vascularizado, evitando a osteotomia transmetatarsal no pé (p. 1644 e 1645).
+- Tendões: deixar o aparelho extensor no coto e as inserções intrínsecas na falange proximal; nas amputações na MF, manter o capuz extensor. A função é melhor com a inserção do FDS presente, e os flexores deixados no lugar mantêm as polias A2 e A4, que não se refazem bem depois (p. 1645).
+- Vasos: a artéria digital ulnar é maior que a radial e será a receptora preferida; as veias preocupam menos, porque a rede dorsal é ampla (p. 1645).
+- Nervos: **não ressecar proximalmente**. O reflexo de tracionar e cortar alto para esconder o neuroma é útil na amputação definitiva, mas aqui atrapalha: a sensibilidade volta mais rápido quanto mais perto do dedo transferido estiver a neurorrafia, porque o axônio cresce cerca de 1 mm por dia (p. 1645).
+- Pele: preferir o **retalho inguinal pediculado** aos retalhos locais e regionais. Os locais gastam pele e partes moles que vão faltar, deformam e atrasam a reabilitação; o inguinal traz tecido de fora, e a pele redundante dele depois cobre a base do dedo transferido, protege o pedículo e ajuda a criar a comissura. O retalho fasciocutâneo dorsal do pé não é recomendado (morbidade); o fasciossubcutâneo com enxerto de pele, sim (p. 1645).
+
+## Primária ou secundária
+
+O Green define com simplicidade: transferência **primária** é feita com a ferida ainda aberta; **secundária**, depois do fechamento definitivo. Termos como aguda, subaguda e crônica confundem e não têm relevância (p. 1645).
+
+A primária só é possível com desbridamento adequado e lesões associadas resolvidas. Na série de YIM e WEI, 31 primárias contra 144 secundárias tiveram sobrevida praticamente igual (**96,9% e 96,5%**), sem diferença em revisão de anastomose, reexploração, complicações ou procedimentos secundários. WOO mostrou **30% menos tempo de convalescença** e mais retorno ao trabalho original com a primária, mas **satisfação estética menor**, porque o dedo é montado sobre uma ferida que ainda vai remodelar. A primária pode dar melhor recuperação sensitiva, reduz a internação e às vezes é tecnicamente mais fácil, porque os planos ainda não têm fibrose. Ela é indicada no paciente motivado, informado e em bom estado, com ferida limpa e demarcada (Fig. 47.2), e também no politraumatizado de extremidades com peças disponíveis (p. 1645).
+
+Alguns serviços preferem sempre a tardia, para o paciente entender o déficit e aceitar a doadora; WEI acha que os benefícios da imediata superam. O cuidado de leitura é o verbo: do ponto de vista funcional, a primária **pode ser** mais benéfica; o livro não diz que o resultado é superior, e alternativa que afirme superioridade ou sobrevida menor na primária está errada. Na criança com amputação não reimplantável, a primária costuma ser evitada abaixo de 2 anos (p. 1645 e 1650).
+
+!tabela Primária e secundária (Green, cap. 47, p. 1645)
+| Aspecto | Primária | Secundária |
+| --- | --- | --- |
+| definição | ferida aberta | após o fechamento definitivo |
+| sobrevida (YIM e WEI) | 96,9% | 96,5% |
+| convalescença (WOO) | 30% menor | maior |
+| estética | menos satisfatória | melhor |
+| técnica | às vezes mais fácil (sem fibrose) | planos cicatrizados |
+| indicação | motivado, informado, ferida limpa e demarcada | padrão; a criança pequena |
+!fim
+
+# O que reconstruir em cada nível {radar=clinico}
+
+## O polegar
+
+O polegar amputado na IF ainda faz o básico, mas perde a manipulação fina e a estética; se não foi reimplantado, o Green manda **oferecer sempre** o dedo do pé, mesmo nesse nível distal (p. 1646). O hálux e suas variantes (total, aparado, envoltório) dão melhor função e aparência que um dedo menor, porque a largura da polpa e da unha se parecem com as do polegar.
+
+Entre a IF e a cabeça do metacarpo, o resultado depende do nível e da musculatura tenar. Proximal à MF, a tenar está destruída e a oposição se perde; o dedo do pé então é fixado em **pronação** por osteossíntese para que a pinça trípode aconteça sem músculo oponente, ou, como faz LIN, associa-se uma oponentoplastia primária. No nível do metacarpo, o dedo do pé sozinho não basta, e levar o metatarso junto custa caro ao pé; reconstrói-se primeiro o raio por técnica osteoplástica e só depois se transfere o dedo (p. 1646). A exceção é o segundo dedo, que pode ser retirado com o metatarso e serve ao polegar amputado proximal à CMC, porque traz comprimento até o metatarso proximal (p. 1656).
+
+## Um dedo longo
+
+Aqui o Green define os níveis pela inserção dos flexores (Fig. 47.3, p. 1647). A ponta, ou amputação distal, fica **distal à inserção do FPL** no polegar e **do FDS** nos dedos; é o nível I da figura. A polpa é chamada de órgão terminal do tato: pele glabra, septos fibrosos, a maior densidade de inervação do corpo e a unha como apoio. Nada disso se reproduz com cross-finger ou retalho tenar, que trazem pele com outra textura e outra sensibilidade.
+
+!tabela O dedo longo por nível (Green, cap. 47, p. 1646 a 1648, Fig. 47.3)
+| Nível | Opções e por quê |
+| --- | --- |
+| ponta e polpa (nível I) | polpa ou hemipolpa, enxerto ungueal vascularizado, retalho onicocutâneo, envoltório, parcial de dedo menor |
+| base da falange distal ao meio da média | parcial com a IFD e os tendões longos: o nível mais gratificante (teclado, instrumento) |
+| entre a inserção do FDS e a comissura | controverso: o dedo fica curto |
+| distal ao meio da falange proximal (nível II) | segundo ou terceiro dedo total, com a IFP |
+| mais proximal | amputação do raio costuma ser melhor |
+!fim
+
+O nível mais gratificante merece explicação. Entre a base da falange distal e o meio da média, o dedo da mão ainda tem a IFP e o FDS funcionando; a transferência parcial leva a IFD do pé com os tendões flexor e extensor longos, e o paciente recupera um dedo inteiro, com unha e polpa, que digita e toca instrumento (p. 1647).
+
+## Vários dedos, sem chegar à mão metacarpal
+
+Quando vários dedos foram amputados distalmente, a prioridade é o **indicador e o médio**, que fazem a manipulação fina. Quando a amputação é proximal, o objetivo passa a ser a preensão, e reconstroem-se pelo menos dois dedos: dois dedos dão pinça trípode, gancho mais forte, estabilidade lateral e precisão (Fig. 47.4, p. 1648).
+
+A técnica depende da comissura. **Proximal à comissura**, o segundo e o terceiro dedos são levados juntos num só pedículo: a comissura vem pronta, a morbidade fica num só pé e basta um par de anastomoses. **Distal à comissura**, o par combinado deixaria aspecto de sindactilia, e o Green prefere os **dois segundos dedos**, um de cada pé, no mesmo tempo (Fig. 47.5, p. 1649). LIN descreveu o par "dividido", quando a comissura está preservada e não se quer tirar os dois segundos dedos. O guia de comprimento é a ponta de um mínimo normal: os dedos reconstruídos devem ficar uniformes e na altura certa para que o conjunto forme um ponto de pinça e um arco de preensão (p. 1648 e 1664).
+
+A cabeça do metacarpo decide o nível da retirada no pé. Com a **superfície articular íntegra**, o dedo do pé é desarticulado na metatarsofalângica e a cápsula e os ligamentos do pé refazem a MF (a "articulação composta"); com a superfície **danificada ou ausente**, a transferência é **transmetatarsal** (p. 1648 e 1649). Nas mãos com amputações em níveis variados, DEL PIÑAL propõe converter a mão numa mão "aceitável": dedo do pé onde a amputação é distal, amputação do raio onde é proximal, buscando três dedos funcionantes (p. 1649).
+
+# A mão metacarpal de WEI {radar=clinico}
+
+## O problema e a lógica da classificação
+
+A mão metacarpal é a que perdeu **todos os dedos proximalmente**, com ou sem o polegar (p. 1649). É o caso mais grave da reconstrução e o que mais se beneficia do dedo do pé, porque sem dedos não há preensão alguma. WEI organizou as reconstruções numa classificação que responde, na ordem, às perguntas que o cirurgião faz diante dessa mão. Primeiro: o polegar serve? Se está íntegro ou amputado distal à IF, ainda tem comprimento para a pinça de precisão e é **tipo I**; se foi amputado proximal à IF, é **tipo II**. Depois, no tipo I, o que existe na altura da MF (A, B, C); no tipo II, como estão o nível do polegar, a tenar e a CMC (A a D) (Tabelas 47.1 e 47.2, p. 1649 e 1650).
+
+!tabela Mão metacarpal (WEI; Green, cap. 47, Tabelas 47.1 e 47.2, p. 1649 e 1650)
+| Tipo | Definição | Reconstrução |
+| --- | --- | --- |
+| I | dedos proximais ao meio da falange proximal; polegar íntegro ou distal à IF | pelo menos dois dedos adjacentes |
+| IA | dedos distais à MF | dois segundos dedos se distal à comissura; segundo e terceiro combinados se proximal (transfalange proximal) |
+| IB | através da MF, superfície articular do metacarpo íntegra | segundo e terceiro combinados com articulação composta |
+| IC | através da MF com superfície danificada, ou transmetacarpal | segundo e terceiro combinados transmetatarsais |
+| II | dedos como no I e polegar proximal à IF | polegar e dedos |
+| IIA | polegar distal ao colo do metacarpo | hálux total ou aparado (transfalange proximal) |
+| IIB | proximal ao colo, tenar adequada | alongamento (distração ou enxerto interposto) e hálux, ou segundo dedo transmetatarsal |
+| IIC | qualquer nível, tenar inadequada | polegar num segundo tempo, depois dos dedos, com transferência para oposição |
+| IID | qualquer nível, CMC danificada | como IIA e IIB, visando um poste imóvel |
+!fim
+
+## Por que cada subtipo pede o que pede
+
+No **IA**, a MF existe e funciona; basta dar comprimento, e a escolha entre dois segundos dedos e o par combinado segue a regra da comissura. No **IB**, a MF se perdeu, mas a cabeça do metacarpo está boa; a cápsula e os ligamentos da metatarsofalângica do pé, suturados ao coto, refazem uma articulação que se move contra uma cartilagem própria. No **IC**, não há onde articular, e a transferência leva o segmento do metatarso com a própria metatarsofalângica do pé, que passa a ser a MF nova.
+
+No tipo II, a questão é a tenar. Com tenar adequada (**IIA e IIB**), o polegar e dois dedos adjacentes podem ser reconstruídos **no mesmo tempo** (Fig. 47.6, p. 1651). Com tenar inadequada (**IIC**), o polegar fica para um **segundo tempo**, depois dos dedos, com transferência tendinosa para oposição; entre as etapas usa-se um **poste protético provisório** para definir o comprimento e a posição ideais do polegar diante dos dedos novos (Fig. 47.7). Com a CMC danificada (**IID**), não há como dar mobilidade na base, e o objetivo é um poste imóvel bem posicionado (p. 1650).
+
+Na mão metacarpal bilateral tipo II, a mão dominante recebe três dedos (pinça trípode) e a não dominante dois (pinça lateral ou polpa a polpa). Quando são cinco dedos do pé, WEI usa o segundo e terceiro direitos e o hálux de um lado e o terceiro e quarto esquerdos, poupando o segundo esquerdo para o equilíbrio do pé (p. 1650; Fig. 47.8).
+
+# A criança e a mão congênita {radar=clinico}
+
+## Trauma na criança
+
+Na criança, o reimplante é sempre tentado, até no dedo único. Se não é possível, o dedo do pé está indicado **mesmo para um dedo só**, ao contrário do adulto, porque a criança tem mais anos de vida para usar o dedo, adapta melhor o córtex e o dedo transferido cresce. A transferência primária é evitada abaixo de 2 anos (p. 1650).
+
+## A mão congênita
+
+A indicação congênita **ideal** é a **síndrome da banda de constrição**. O motivo é que nela a lesão é como uma amputação intrauterina: tudo o que está proximal à banda (articulações, músculos, tendões, nervos e vasos) se formou normalmente, e o dedo do pé encontra receptores prontos. Simbraquidactilia e aplasias também são indicações, mas mais difíceis, porque as estruturas receptoras podem faltar (Fig. 47.9). A hipoplasia do polegar é controversa, e muitos acham a policização melhor. A mão adactílica é reconstruída em etapas, o polegar primeiro e depois os dedos ulnares, ou o inverso (p. 1650).
+
+LISTER operou com 6 meses a 1 ano, mas em geral espera-se por volta dos **2 anos**, quando os vasos têm calibre para anastomose segura. Na deformidade unilateral, convém operar cedo, antes que a criança fixe padrões adaptativos de uso da mão normal; na bilateral não há essa pressa (p. 1650).
+
+Na aplasia, vasos, nervos e tendões receptores são identificados **antes** de levantar o dedo, porque podem não existir, e os próprios dedos do pé podem ser anormais. A primeira metatarsal dorsal costuma ser dominante, como no adulto; vários dedos podem ser levados pelo arco plantar. A fixação poupa as fises, e tendões receptores ausentes pedem transferências tendinosas primárias (p. 1650 e 1651).
+
+## Resultados na criança
+
+O sucesso chega a 96% e a sensibilidade é boa (discriminação móvel de 5 mm na série de FOUCHER). O problema **mais comum** é a amplitude de movimento imprevisível: a IFD quase não se move ativamente, a IFP tem déficit de extensão e pode haver flexão fixa. FOUCHER, em 58 crianças e 65 dedos, registrou arco ativo médio de 38 graus e déficit de extensão de 25 graus. O dedo transferido cresce **60 a 100%** do crescimento de um dedo normal, porque a fise vai com a irrigação (p. 1651).
+
+!questoes treino=mao-2091
+conceito: A síndrome da banda de constrição é a indicação congênita ideal, porque tudo o que está proximal à banda é normal e serve de receptor.
+como: A SBCM 2024 pediu a melhor indicação congênita entre várias malformações.
+armadilha: Escolher a mão torta radial ou a hipoplasia do polegar, em que faltam estruturas e a policização costuma ser melhor.
+!fim
+
+# A anatomia arterial do primeiro espaço: 70, 20 e 10 {radar=clinico}
+
+## O mapa
+
+O pedículo de quase todas as transferências está no **primeiro espaço intermetatarsal**, onde nascem a digital lateral do hálux e a digital medial do segundo dedo. Duas artérias chegam ali. Por cima vem a **primeira metatarsal dorsal** (FDMA), continuação da artéria dorsal do pé (pediosa); por baixo vem a **primeira metatarsal plantar** (FPMA), do sistema plantar. Elas se ligam em dois pontos: na base do espaço, entre o primeiro e o segundo metatarsos, pela perfurante profunda (a comunicante proximal, por onde a dorsal do pé mergulha para fechar o arco plantar), e na altura das cabeças, pela **comunicante distal**, de onde saem as digitais (Fig. 47.11, p. 1654). Classificações clássicas, como a de GILBERT, descrevem as variações da origem da FDMA e da relação dela com o interósseo e com o ligamento intermetatarsal, e mostram que essa rede é complexa e variável (p. 1651 e 1652).
+
+Na série de WEI, a **FDMA é dominante em cerca de 70%**, a **FPMA em 20%** e as duas são **iguais em 10%**; em cerca de **20%** das pessoas a dominância é **assimétrica** entre os dois pés (Fig. 47.10, p. 1652 e 1654). A assimetria é o motivo de não se poder deduzir o pé esquerdo pelo direito.
+
+!tabela Padrões arteriais do primeiro espaço (WEI; Green, cap. 47, p. 1652 a 1654)
+| Padrão | Frequência | Conduta |
+| --- | --- | --- |
+| dorsal dominante | cerca de 70% | ligar cedo a plantar menor e isolar a FDMA |
+| plantar dominante | 20% | uma veia superficial no dorso; FPMA até o meio da diáfise; enxerto de veia se curta |
+| iguais | 10% | dissecar a FDMA, mais fácil e direta |
+| assimetria entre os pés | 20% das pessoas | não deduzir um pé pelo outro |
+!fim
+
+## Por que a dissecção é retrógrada
+
+A técnica clássica começava proximal, no dorso do pé, achava a dorsal do pé e seguia a FDMA para distal; quando a artéria era plantar dominante ou mergulhava no interósseo, a dissecção virava uma escavação. WEI inverteu o caminho. Começa-se **sempre no dorso do primeiro espaço, distalmente**, onde o ponto é constante em qualquer padrão: a junção da digital lateral do hálux com a digital medial do segundo dedo, sobre o **ligamento intermetatarsal**. Dali segue-se 2 a 3 cm para proximal e se vê qual artéria é a maior. Se a dorsal domina, a plantar menor é ligada cedo e a FDMA é isolada; ela costuma ser superficial ao interósseo, mas pode correr dentro ou abaixo dele (p. 1652 e 1653). Com **calibres semelhantes**, disseca-se a **FDMA**, mais fácil e direta (p. 1653).
+
+Se a plantar domina, basta uma veia superficial do dorso, e a FPMA é isolada até o meio da diáfise metatarsal, onde se une à dorsal do pé pela comunicante proximal. Se for preciso um pedículo mais longo, a FPMA é dividida e alongada com **enxerto de veia**: perseguir a comunicante até a dorsal do pé é tedioso e destrói o pé (p. 1653).
+
+A abordagem retrógrada tem duas vantagens que o livro destaca: serve às transferências parciais, que precisam de pedículo curto, e à criança, em que o calibre do vaso doador é o fator mais importante depois da disponibilidade do receptor. E torna **desnecessária a angiografia pré-operatória** de rotina do pé, porque o padrão é descoberto na mesa (p. 1653 e 1654).
+
+## Quando a FDMA não existe
+
+No retalho do primeiro espaço e nas polpas, se a FDMA está ausente ou é muito pequena, começa-se pelo lado **plantar** e disseca-se a FPMA de forma retrógrada; se ela ficar curta, usa-se enxerto de veia. O Green é explícito: não há necessidade de abandonar o procedimento se a FDMA não existe (p. 1660 e 1661).
+
+!questoes treino=mao-2360,mao-1770,mao-3776,mao-3779
+conceito: A primeira metatarsal dorsal, ramo da artéria dorsal do pé, domina em cerca de 70%; com calibres iguais, disseca-se a dorsal, mais fácil.
+como: O SIMÃO 2024 pediu a artéria com calibres parecidos; o SIMÃO 2026, a dominante e a origem dela.
+armadilha: Escolher a plantar porque "já se disseca o lado plantar" ou dizer que ela nasce do arco plantar na maioria.
+!fim
+
+# Hálux total, hálux aparado e envoltório {radar=clinico}
+
+## Três respostas para o mesmo problema
+
+O hálux é o dedo do pé que mais se parece com o polegar na largura da polpa e da unha, mas é maior. O capítulo mostra três formas de usá-lo, e cada uma resolve o tamanho de um jeito (p. 1654).
+
+- **Hálux total**: indicado quando o polegar foi amputado **na falange proximal ou no metacarpo**. Dá o maior arco de movimento e uma polpa larga, que faz pinça forte, mas muitas vezes fica grande demais.
+- **Envoltório (wraparound) de MORRISON**: leva só a unha e o envelope de pele do hálux, que embrulham um enxerto ósseo convencional. Fica bonito e do tamanho certo, mas **não tem IF móvel**, porque não leva articulação, e o enxerto ósseo pode reabsorver.
+- **Hálux aparado (trimmed) de WEI**: soma as vantagens. O hálux é afinado no osso e na pele, mantendo a IF. É indicado quando a diferença de tamanho é inaceitável, sobretudo se o paciente quer IF móvel. Perde-se cerca de **18 graus** na IF, sem prejuízo da pinça polpa a polpa (no caso da figura do livro, 30 graus de arco ativo ficaram preservados).
+
+!tabela Hálux para o polegar (Green, cap. 47, p. 1654 a 1656)
+| Técnica | Indicação | IF | Tamanho |
+| --- | --- | --- | --- |
+| hálux total | polegar na falange proximal ou metacarpo | móvel, maior arco | muitas vezes grande |
+| envoltório de MORRISON | polegar sem esqueleto distal, estética | sem IF móvel (enxerto ósseo) | ajustado |
+| hálux aparado de WEI | diferença de tamanho inaceitável com desejo de IF móvel | móvel, cerca de 18 graus a menos | ajustado |
+!fim
+
+## Como se apara o hálux
+
+Medem-se as circunferências do hálux e do polegar do outro lado em três pontos (eponíquio, ponto mais largo na IF e meio da falange proximal) e somam-se 2 a 3 mm, para não apertar o pedículo. Uma faixa medial de pele de 0,5 a 0,8 cm fica no pé; deixam-se 2 mm de prega ungueal, e a unha não é aparada com o leito, porque isso deforma a prega (p. 1654). Leva-se uma veia e a artéria dominante, dissecada de forma retrógrada; preservam-se os ramos do fibular profundo; a incisão plantar fica lateral à cabeça do primeiro metatarso, fora da área de carga (p. 1654 e 1655).
+
+O afinamento ósseo é feito com o "retalho periarticular": colateral, cápsula e periósteo são elevados juntos, com base plantar, e uma osteotomia longitudinal tira 4 a 6 mm da proeminência medial da articulação e 2 a 4 mm das diáfises; o retalho é suturado apertado para dar estabilidade (Fig. 47.12, p. 1655 e 1656). É esse afinamento da articulação que custa os 18 graus.
+
+No pé, preserva-se **pelo menos 1 cm da base da falange proximal**, pela razão da marcha já explicada. Depois de soltar o garrote, o dedo é **reperfundido por pelo menos 20 minutos** antes de seguir, para confirmar a circulação e deixar o espasmo ceder. A doadora é fechada primariamente, sem enxerto de pele e sem dreno. Na mão, o coto é aberto em cruz em quatro retalhos, e a artéria receptora é a digital comum (primeira escolha), a princeps pollicis ou a radial na tabaqueira (p. 1656).
+
+!questoes treino=mao-2359,mao-3770
+conceito: O hálux total serve ao polegar amputado na falange proximal ou no metacarpo; o envoltório de MORRISON não tem IF móvel; a mão metacarpal de WEI se divide pelo polegar (tipo I íntegro ou distal à IF, tipo II proximal à IF).
+como: O SIMÃO 2024 pediu a afirmação correta sobre técnica por nível.
+armadilha: Dar IF móvel ao envoltório ou levar o hálux total a uma amputação na falange distal.
+!fim
+
+
+# O segundo dedo e as transferências parciais {radar=clinico}
+
+## O segundo dedo, parcial ou total
+
+No adulto, levar o segundo dedo para o polegar é controverso (é estreito e tem poucas articulações móveis), mas para os dedos longos é bem aceito; a exceção no polegar é a amputação proximal à CMC, em que o segundo dedo com o metatarso dá o comprimento que o hálux não dá. Na criança, o segundo dedo é preferido para polegar e dedos, porque a doadora pesa menos (p. 1656). A transferência é **parcial** quando o defeito é distal à inserção do FDS (Fig. 47.13) e **total** quando é mais proximal (Fig. 47.14).
+
+FOUCHER e NORRIS usam uma abordagem só dorsal, retirando o segundo metatarso, o que permite marcha precoce, mas é mais difícil para os inexperientes e manipula mais o pedículo. WEI prefere a abordagem **combinada dorsal e plantar**: a pele plantar glabra é útil na mão, e o metatarso nem sempre precisa sair (p. 1656 e 1657).
+
+No método preferido, duas equipes trabalham ao mesmo tempo. Retalhos em "V" dorsal e plantar têm o vértice 5 a 10 mm proximal à osteotomia e as pontas no meio do primeiro e do segundo espaços; a incisão proximal faz um "S", e a plantar é vertical, fora da carga. Leva-se uma veia; a artéria dominante é achada de forma retrógrada; divide-se o ligamento transverso metatarsal. Ramos do fibular superficial só vão se houver nervo sensitivo receptor. Isolam-se o extensor longo e o curto dos dedos; a pele plantar vem com 2 a 3 mm de subcutâneo; os nervos digitais são seguidos até os comuns, com neurólise interna para ganhar comprimento, e marcados com fio 6-0. Distal à osteotomia, o dedo é esqueletizado o mínimo possível, sobretudo na parcial, em que os vasos são menores e o **vasoespasmo** é mais frequente. Reperfunde-se por 20 minutos e fecha-se primariamente, sem reparar o ligamento intermetatarsal e sem dreno; se o fechamento for difícil, desarticula-se a metatarsofalângica ou amputa-se no metatarso, e **nunca** se enxerta a doadora (p. 1657).
+
+## O envoltório do segundo dedo
+
+Para os dedos longos, WEI prefere o envoltório do **segundo dedo** ao do hálux, porque tamanho e unha combinam; ele também serve ao polegar de quem não aceita perder parte do hálux. A indicação é a perda **circunferencial** ou hemicircunferencial dorsal de pele e unha distal à porção proximal da falange média, com esqueleto, tendões e IFP íntegros. O retalho não leva tendões, mas **sempre leva a falange distal**, que evita rotação, instabilidade e reabsorção; o resto do dedo é desarticulado na metatarsofalângica. As incisões evitam cicatriz nas faces de contato: radial do indicador, do médio e do anelar, e ulnar do polegar e do mínimo (Fig. 47.15, p. 1657 e 1658).
+
+## Polpa, hemipolpa e o primeiro espaço
+
+A polpa livre é indicada nos defeitos grandes que não se cobrem com retalho local ou regional, quando a sensibilidade é essencial, em profissões especiais (artista, músico) e para substituir enxertos ou retalhos instáveis e dolorosos; serve melhor ao polegar (p. 1658). O **hálux** é preferido ao segundo dedo como doador de polpa: sensibilidade melhor (discriminação de 7 a 18 mm contra 10 a 25 mm), mais tecido e fechamento direto (p. 1659).
+
+Na **hemipolpa** lateral do hálux ou medial do segundo dedo, o retalho leva **sempre dois nervos**: o digital plantar próprio e o ramo do **fibular profundo**, que inerva também essas faces e se sobrepõe ao digital. Levar só um deixa parte da ilha insensível (p. 1659). Todas as veias superficiais das faces lateral e dorsal do hálux são dissecadas em continuidade com uma veia calibrosa, e a doadora sem fechamento recebe enxerto de pele parcial do peito do pé (p. 1660).
+
+O **retalho neurossensitivo do primeiro espaço** cobre defeitos de partes moles de um dedo com tecido fino e glabro, parecido com a palma; pode chegar a 7,3 por 14 cm, indo até as pontas do hálux e do segundo dedo, e dois dedos adjacentes podem ser cobertos por um retalho só com sindactilia temporária. A irrigação vem da **comunicante distal** entre a FDMA e a FPMA; se o desenho se estende à face lateral do hálux ou medial do segundo, incluem-se as digitais respectivas. A inervação dorsal é do **fibular profundo** (e em menor grau do superficial); se o retalho chega à polpa, incluem-se os digitais comuns plantares. A doadora recebe enxerto de pele parcial com curativo de BROWN (tie-over) (Figs. 47.16 a 47.18, p. 1659 a 1661).
+
+## O enxerto ungueal vascularizado
+
+O enxerto de unha vascularizado pega melhor que o não vascularizado. É indicado na perda da ponta com leito ungueal, depois de ressecção de tumor e na unha dolorosa ou feia, como a unha em gancho pós-traumática. Muitas vezes, porém, é mais fácil levar o segundo ou o terceiro dedo inteiro distal ao meio da falange média, porque ilhas pequenas drenam mal (p. 1661).
+
+A unha do hálux combina melhor com a do polegar, mas é pouco usada pela deformidade que deixa; a do segundo é menor e quadrada, mas parecida, e o defeito é menor. Leva-se mais da **metade da polpa medial** do segundo dedo (ou lateral do hálux) para incluir a digital própria dorsal. As veias dorsais pequenas devem estar em continuidade com uma tributária da safena. No hálux faz-se osteotomia transversa da falange distal; no segundo dedo, leva-se a falange distal inteira ou a metade dorsal depois de desarticular a IFD (preferência dos autores). MORRISON estreita a unha aparando a matriz lateral. A doadora do hálux é coberta com um cross-toe dividido em 2 semanas; a do segundo e do terceiro, por desarticulação da metatarsofalângica (Figs. 47.19 e 47.20, p. 1661 a 1663). Quando todo o segmento distal falta, o envoltório do segundo dedo é melhor que a unha isolada.
+
+## O terceiro dedo isolado
+
+O terceiro dedo entra quando o segundo não está disponível ou é inadequado, quando o segundo do mesmo pé precisa ficar porque o hálux foi doado (marcha) ou quando o tamanho do terceiro combina melhor. A irrigação vem da segunda e da terceira metatarsais dorsais e plantares, mas na prática o dedo é baseado na **terceira artéria digital plantar comum**, pequena, porém maior que as dorsais; disseca-se direto o pedículo plantar e usa-se enxerto de veia se preciso (p. 1663).
+
+# Dois e três dedos de uma vez {radar=fundamento}
+
+## O segundo e o terceiro combinados
+
+O par é a solução para dois dedos adjacentes amputados **proximal às comissuras**: devolve pinça trípode, gancho e estabilidade lateral. Comparado aos dois segundos dedos, exige um só conjunto de vasos receptores, gasta menos tempo, concentra a morbidade num pé e permite andar mais cedo. O limite é o comprimento: a função é melhor com dedos uniformes, usando a ponta de um mínimo normal como guia (Fig. 47.22, p. 1663 e 1664).
+
+Se sobram 5 a 6 mm de falange proximal na mão, a osteotomia é feita na falange proximal do pé. Se a amputação foi na MF, os dedos são retirados por desarticulação da metatarsofalângica, e a cápsula e os ligamentos montam a **articulação composta**, que deu arco ativo médio de **52 graus** (30 a 80). Desarticular preserva as cabeças e o arco metatarsal, evitando a deformidade em "tesoura" no pé. Na amputação transmetacarpal, a osteotomia é transmetatarsal; reconstruir o arco do pé com enxerto ósseo não vascularizado **não é mais recomendado** (p. 1664).
+
+Antes, WEI tirava o par do pé contralateral para os dedos radiais e do ipsilateral para os ulnares, de modo que o segundo dedo, mais longo, ficasse no centro da mão. Hoje, se só um par é necessário, tira **sempre do pé esquerdo**, e do direito só se o esquerdo não servir (por exemplo, se o hálux do mesmo pé foi usado para o polegar). As incisões não passam do meio do primeiro e do terceiro espaços. Levam-se três nervos: o digital próprio medial do segundo, o digital comum do segundo e terceiro e o digital próprio lateral do terceiro. Evita-se manipular o segundo espaço, onde ficam as comunicantes que irrigam o terceiro dedo (p. 1664 e 1665).
+
+O número que define a técnica é este: em 57 transferências, quase **20%** precisaram de reexploração por insuficiência arterial quando havia uma só artéria dominante. Por isso preservam-se a segunda e a terceira digitais plantares comuns para uma **segunda anastomose arterial**, sobretudo se a perfusão do terceiro dedo parecer duvidosa. Enxerto de pele na doadora é "inaceitável" (p. 1665).
+
+## Terceiro e quarto, e as triplas
+
+O par de terceiro e quarto é a alternativa quando o segundo precisa ficar no pé (marcha ou porque vai para o polegar) ou não está disponível. A dissecção começa no segundo espaço dorsal; o sistema plantar é mais constante aqui. Inclui-se a quarta metatarsal plantar como vaso "salva-vidas" (lifeboat), e WEI aconselha **duas anastomoses arteriais**; as plantares não são dissecadas além do meio da diáfise (p. 1665).
+
+As transferências triplas do mesmo pé (segundo, terceiro e quarto, ou terceiro, quarto e quinto) são relatos de caso para a mão metacarpal bilateral; deixam deformidade visível, sem grande prejuízo funcional (p. 1665).
+
+# No receptor: osso, tendões, nervos e vasos {radar=confirmado}
+
+## A organização e a ordem
+
+Com duas equipes, mede-se a mão antes de cortar o pé, disseca-se menos no pé e reduz-se o tempo cirúrgico e anestésico. O receptor é preparado sob garrote e lupa; o coto é aberto em cruz em quatro retalhos finos e móveis. A artéria receptora é abordada por incisão separada (ulnar na falange proximal ou na palma distal, ou na tabaqueira se for a radial, com túnel largo). Polias preservadas, aderências liberadas já no preparo e tenorrafias feitas na palma média, longe da A1 (raramente no punho). Se falta o flexor, transfere-se antes o FDS de um dedo vizinho (p. 1665 e 1666).
+
+A sequência do Green é **osso, extensor, flexor, nervos, pele provisória, artéria e veia** (p. 1666). A pele é fechada provisoriamente antes das anastomoses porque, com o dedo já perfundido e edemaciado, fechar depois aumentaria a tensão sobre o pedículo.
+
+## A fixação
+
+Usam-se amarrilho intraósseo, fios de KIRSCHNER, placas e pino ósseo intramedular. YIM e WEI usaram o **amarrilho intraósseo paralelo** em 68 transferências de 47 pacientes e tiveram **1,5%** de pseudartrose em 30 meses. As vantagens explicam a preferência: estabilidade para mobilizar cedo, angulação e rotação leves corrigíveis com órtese, técnica simples, rápida e barata, e possível num coto de 5 mm. Deixam-se 2 mm de osso entre o furo e a borda, fazem-se dois furos de 1 mm no sentido dorsopalmar e usa-se fio de aço 2-0 (28 gauge), com as pontas longe do extensor (p. 1666 e 1667). Na articulação composta, a placa volar e os colaterais do pé são suturados aos do dedo, com a placa volar sob tensão para evitar hiperextensão; é usada sobretudo no par de segundo e terceiro (p. 1667).
+
+## Os tendões e a luta contra a garra
+
+O dedo do pé tem postura natural em garra: metatarsofalângica em extensão e interfalângicas em flexão, com intrínsecos fracos. Levado à mão, ele tende a repetir essa postura. Por isso o **extensor é reparado primeiro**, com a IFP e a MF em extensão total, entrelaçando o extensor longo do pé ao extensor do dedo, e com tensão apertada; e o paciente usa **órtese noturna em extensão por pelo menos um ano** (p. 1667).
+
+O flexor longo do dedo do pé é suturado ao coto proximal do FDP. Distalmente, o FDP só entra para estabilidade na pinça de força, com o FDS íntegro; sem FDP distal, sutura-se à porção distal da inserção do FDS. Proximalmente, usa-se só o FDP, na zona 3, fora das polias. A tensão segue a cascata natural dos dedos (p. 1667).
+
+## O aparelho extensor do dedo menor: tipos I e II
+
+O déficit de extensão da IFP é o problema comum do segundo dedo transferido, e o capítulo explica por quê com um estudo do aparelho extensor dos dedos menores do pé, que mostrou dois tipos (p. 1667 e 1668).
+
+- **Tipo I**: **banda central atenuada**. Tracionar o extensor longo e o curto não corrige o déficit; ele só se corrige flexionando passivamente a metatarsofalângica ou puxando juntos os extrínsecos e os intrínsecos. Ou seja, a extensão da IFP depende das bandas laterais.
+- **Tipo II**: **banda central distinta**. A tração dos extensores corrige o déficit, com ou sem os intrínsecos.
+
+O algoritmo de LAM e colaboradores, em 9 pacientes, decide no ato: no tipo I com bandas laterais receptoras suficientes, faz-se a **centralização** das bandas laterais; com bandas insuficientes, o **STACK modificado**; no tipo II, basta o **reparo apertado dos extensores**. O arco total ficou em 53,9 graus (flexão média de 72,2), 81,1% do arco passivo prévio da IFP do pé. O Campbell (cap. 68, p. 3090) cita o algoritmo de LOH e colaboradores na mesma linha: avaliar a banda central do dedo do pé e o extensor do receptor melhora o resultado.
+
+!tabela Aparelho extensor dos dedos menores do pé (Green, cap. 47, p. 1667 e 1668)
+| Tipo | Banda central | Tração dos extensores | Conduta |
+| --- | --- | --- | --- |
+| I | atenuada | não corrige o déficit | centralização (bandas suficientes) ou STACK modificado |
+| II | distinta | corrige | reparo apertado dos extensores |
+!fim
+
+## Nervos, pele e vasos
+
+Os nervos são suturados término-terminal com náilon 10-0, em geral só os digitais próprios; se houver receptores, o fibular profundo e o superficial vão separados; com um só receptor, juntam-se vários nervos do pé com prioridade aos digitais próprios. Se os digitais da mão foram avulsionados, servem o cutâneo palmar do mediano, os dorsais do ulnar, transferências da face ulnar do médio ou do anelar e ramos do radial superficial (p. 1666 e 1668).
+
+A cobertura inadequada é causa importante de complicações. Pele redundante na junção deixa a deformidade em "**cobra**"; gordura em excesso, aspecto bulboso (p. 1668).
+
+A artéria digital **ulnar**, maior, é a receptora preferida; nas amputações proximais, as digitais comuns, se o arco está íntegro; retira-se a adventícia para evitar espasmo; se os vasos são pequenos demais, usam-se a radial na tabaqueira ou a princeps. Enxerto de veia entra quando a artéria doadora é curta, como no sistema plantar dominante. Leva-se uma veia dorsal, por incisão separada no dorso da mão. A **artéria** é anastomosada primeiro e o retorno venoso é observado por alguns minutos; retorno ruim manda reavaliar a artéria e o trajeto; perfusão duvidosa (o terceiro dedo do par) pede uma segunda artéria. Sob tensão, fecha-se parcialmente e enxerta-se; drenos finos de silicone ficam longe das anastomoses (p. 1666 e 1668).
+
+!questoes central=mao-1453
+conceito: No aparelho extensor dos dedos menores do pé, o tipo I tem banda central atenuada (a tração dos extensores não corrige o déficit da IFP) e o tipo II, banda central distinta (a tração corrige).
+como: A USP-SP 2024 pediu a correspondência entre tipo e banda central, com distratores sobre a correção e o extensor curto.
+armadilha: Inverter os tipos, achar que a tração corrige mais no tipo I ou inventar uma banda "duplicada".
+!fim
+
+# Articulações vascularizadas do pé {radar=clinico}
+
+O Green 7 não tem seção própria de transferência articular vascularizada isolada; cita os trabalhos de CHEN e WEI e de LAM na lista de referências. O capítulo 68 do Campbell (p. 3090) completa. Articulações transplantadas com o pedículo **sobrevivem e funcionam sem deteriorar**, e as **fises vascularizadas continuam crescendo**, porque a cartilagem e a placa de crescimento dependem de irrigação viva; um enxerto articular não vascularizado necrosa, colapsa e não cresce.
+
+A **metatarsofalângica do pé para a MF do dedo** dá movimento indolor, estável e funcional, com crescimento quase normal; a vantagem principal é a **durabilidade**. Por isso ela é a resposta para o jovem que perdeu a MF e a fise do metacarpo: a articulação acompanha o crescimento. A **IFP do pé para a IFP do dedo** é menos bem-sucedida: arco médio de cerca de 40 graus e déficit de extensão de cerca de 30 graus, pelo mesmo motivo do segundo dedo transferido (banda central do pé muitas vezes atenuada). Avaliar a banda central e o extensor do receptor melhora o resultado (LOH e colaboradores, 2016). É opção para problemas pós-traumáticos e **pediátricos** difíceis, com cautela; dizer que "nunca" se faz em crianças está errado (Campbell, p. 3090).
+
+A comunicação arterial distal entre as artérias digitais do segundo dedo, estudada por CHEN e colaboradores, permitiu levar **duas articulações do dedo do pé num só pedículo**, para reconstruir duas articulações vizinhas de uma vez.
+
+O Campbell também diverge do Green em dois detalhes de conduta: dá força de pinça de 40 a 80% do lado oposto (p. 3081), contra até 75% no Green, e imobiliza a mão por 3 a 4 semanas com curativo compressivo no pé (p. 3089), enquanto WEI não usa tala. São diferenças de rotina, não de fato.
+
+!questoes treino=mao-2633,mao-3771,mao-3778
+conceito: A comunicação arterial distal entre as digitais do segundo dedo permitiu levar duas articulações do dedo do pé num só pedículo; a fise vascularizada continua crescendo.
+como: O SIMÃO 2021 pediu qual transferência articular essa anatomia tornou viável.
+armadilha: Multiplicar os pedículos ou reduzir a uma articulação.
+!fim
+
+# Depois da cirurgia: vigiar, complicações e retoques {radar=clinico}
+
+## O pós-operatório de WEI
+
+O paciente fica na unidade de microcirurgia em média 5 dias. **Não se usa tala**: a palma proximal e o punho são envoltos, os dedos ficam à vista e a mão discretamente elevada. Curativo volumoso é evitado porque junta coágulos, provoca espasmo na retirada e impede a reabilitação precoce (p. 1668).
+
+A rotina é **AAS 325 mg/dia por 2 semanas**. O dextran 40 (100 mL em bolo 10 minutos antes de terminar a anastomose arterial e depois 25 mL/h por 4 a 5 dias) caiu em desuso pelas complicações sistêmicas, e a heparina pode dar hematoma; WEI não usa nenhum dos dois, salvo anastomose difícil. O antibiótico é uma cefalosporina, com gentamicina em cirurgia longa ou ferida contaminada (p. 1668 e 1669).
+
+A monitorização combina cor, turgor e enchimento capilar, temperatura de superfície comparada ao dedo vizinho e à mão oposta, Doppler e **oximetria de pulso diferencial**: onda irregular ou perdida indica **trombose arterial**; dessaturação com onda presente indica **oclusão venosa**. O pé recebe gaze com nitrofurazona e curativo leve, sem tala, e fica descoberto em 2 dias (p. 1669).
+
+## O vasoespasmo
+
+O **vasoespasmo** é provavelmente a complicação **mais comum**, sobretudo nos **três primeiros dias**. Quanto menor o vaso, maior o risco, e por isso ele é mais frequente nas transferências **parciais** para reconstrução distal. Pode atingir o pedículo, o receptor ou os dois (p. 1669).
+
+A prevenção tira os gatilhos simpáticos e mecânicos: nada de cafeína, chocolate, fumo, quarto frio ou manipulação excessiva; pressão arterial adequada, hidratação e analgesia; dissecção delicada e receptores fora da zona de lesão. O tratamento começa com aquecer, deixar a mão **abaixo do coração**, soltar pontos e aplicar lidocaína tópica a 2 a 4%. Se a circulação não volta em cerca de **1 hora**, a **reexploração é imediata**: esvaziar hematoma, adventicectomia, liberar bandas, lidocaína a 4% ou papaverina; espasmo intratável pede ressecção e enxerto de veia ou retalho venoso de fluxo contínuo; receptor em espasmo pede um vaso mais proximal e maior, com enxerto. A trombose na anastomose é sempre conferida. No par de segundo e terceiro, se o problema é de influxo, a segunda ou terceira plantar faz a segunda anastomose (p. 1669).
+
+A **trombose venosa é incomum** e costuma vir de compressão por encaixe errado ou hematoma. A maioria dos dedos se salva com a reexploração; a falha final foi de **3,5%** (p. 1669).
+
+## Quando o dedo se perde
+
+Uma nova transferência é possível, mas **não imediata**: primeiro se entendem as causas e o paciente se recupera. Se o segundo dedo foi perdido, usa-se o segundo ou o hálux contralateral; se o hálux foi perdido, o segundo contralateral, preservando a marcha. Quem recusa nova transferência pode ter o coto salvo com retalho inguinal, sobretudo se o dedo perdido era o hálux (p. 1669).
+
+Entre as outras complicações, os **problemas de cobertura e cicatrização** são provavelmente os mais comuns, com necrose de retalhos finos, sobretudo depois de retalho inguinal prévio; tendões e nervos expostos devem ser cobertos logo (p. 1669).
+
+## Os procedimentos secundários
+
+Diversos autores relatam procedimentos secundários em 20 a 70% dos casos. Na série de WEI, de 133 transferências, 19 (14,3%) precisaram de um procedimento funcional, em média aos 8,8 meses: tendão em 9,0%, partes moles em 3,8%, articulação em 2,3% e osso em 1,5%. A **tenólise** foi o mais comum (**6,8%**), seguida da **artrodese** (3,0%) e do **aprofundamento da comissura** (3,0%). A tenólise flexora dá bons resultados, e faz sentido: o flexor passa por polias e cicatrizes da mão lesada, e a aderência é a causa natural do dedo que flete bem passivamente e mal ativamente. Também entram enxertos de tendão e nervo, tenorrafias, transferências, osteotomias e capsulotomias. Na estética, a **polpoplastia** sob anestesia local afina o dedo bulboso, e a revisão de cicatriz e a zetaplastia corrigem a junção (p. 1669 a 1671).
+
+!tabela Complicações e retoques (Green, cap. 47, p. 1669 a 1671)
 | Item | Fato |
 | --- | --- |
-| hálux total | polegar na falange proximal ou metacarpo |
-| envoltório de MORRISON | sem IF móvel |
-| pedículo | dorsal dominante em 70%; calibres iguais, dorsal |
-| mão metacarpal I e II | polegar distal ou proximal à IF |
-| congênito | anel de constrição |
-| extensor I e II | banda central atenuada ou distinta |
+| complicação vascular mais comum | vasoespasmo, nos 3 primeiros dias, mais nas parciais |
+| sem circulação após 1 hora | reexploração imediata |
+| trombose venosa | incomum; falha final 3,5% |
+| demais complicações mais comuns | cobertura e cicatrização |
+| procedimento funcional (WEI) | 14,3%, em média aos 8,8 meses |
+| o mais comum | tenólise 6,8%; artrodese e comissura 3,0% cada |
+| estético | polpoplastia |
 !fim
 
-!questoes central=mao-1453 treino=mao-2359,mao-2360,mao-2091
-conceito: Hálux total na falange proximal ou metacarpo; MORRISON sem IF móvel; calibres iguais, a metatarsal dorsal primeira; tipo I com banda atenuada; anel de constrição é a indicação congênita ideal.
-como: O SIMÃO 2024 pediu a afirmação correta e a artéria; a USP-SP 2024, o aparelho extensor; a SBCM 2024, a indicação congênita.
-armadilha: Dar IF móvel ao envoltório, inverter os tipos ou indicar a mão torta radial.
+!questoes treino=mao-2601,mao-3772
+conceito: O vasoespasmo é a complicação mais comum, nos três primeiros dias e mais nas transferências parciais; sem circulação após cerca de 1 hora, reexplora-se.
+como: O SIMÃO 2022 pediu a complicação mais encontrada nos primeiros dias.
+armadilha: Escolher a trombose venosa, que é incomum, ou a rigidez, que é tardia.
 !fim
+
+# Resultados, o pé que ficou e a reabilitação {radar=fundamento}
+
+## O que o dedo devolve
+
+A sobrevida passa de **97%** (1.841 transferências entre 1985 e 2007). Na série de 1985 a 2012, com 2.083 dedos em 1.871 pacientes, o segundo dedo respondeu por 45%, o hálux por 11,5%, o par de segundo e terceiro por 10% e as outras técnicas (polpas incluídas) por 33,5%, com sucesso de **98%** (Tabela 47.3, p. 1671).
+
+A discriminação de dois pontos estática chega a 8 mm e a móvel fica entre 3 e 10 mm; a pinça de polpa e o limiar sensitivo ficam normais nos dedos reconstruídos. No hálux para o polegar, o arco médio é de 25 graus na MF e 29 na IF. No dedo do pé para dedo, o arco somado de IFP e IFD fica em 50 a 60 graus, com leve déficit de extensão da IFD comum; as transferências distais recuperam MF e IFP quase normais, porque essas articulações são da própria mão. A pinça chega a **75%** do lado oposto, e a preensão vai de cerca de 70% (segundo dedo imediato) a 90% (técnicas osteo-onicocutâneas) (p. 1671 e 1672).
+
+O hálux para o polegar não difere do reimplante de polegar, a não ser por uma IF um pouco melhor no grupo do dedo do pé; uma revisão sistemática não achou diferença entre as técnicas de hálux, com dados heterogêneos (p. 1672).
+
+O resultado mais curioso é cerebral: em cerca de **6 meses** o paciente passa a perceber o dedo transferido como dedo da mão; a ressonância funcional mostra ativação da área da mão no córtex sensitivo-motor primário, e os fenômenos de dedo fantasma melhoram ou somem (p. 1672).
+
+## O pé que ficou
+
+A deformidade é maior depois do hálux ou do par de segundo e terceiro do que depois do segundo dedo isolado; cicatriz hipertrófica e necrose parcial de pele aparecem quando os retalhos ficam finos ou tensos. Em 36 pacientes sem o segundo dedo, a carga subiu um pouco no hálux e no primeiro metatarso e caiu no terceiro, sem diferença significativa na marcha. Em 17 pacientes sem o segundo e o terceiro, aos 6 meses, velocidade, cadência, passo e apoio não mudaram; houve descarga metatarsal e mais carga no hálux e um pouco no calcanhar, como compensação. No Lower Limb Function Questionnaire, os escores foram iguais aos dos controles (p. 1670).
+
+O pé é reabilitado assim: depois da segunda semana, alguns passos apoiando só o **calcanhar**, sem tocar o antepé; pontos retirados não antes da terceira semana; marcha normal depois da quarta (p. 1671).
+
+## A reabilitação da mão
+
+A reabilitação motora tem cinco fases (p. 1670 e 1671):
+
+- Proteção (dias 1 a 3): na unidade de microcirurgia, com apoio psicológico.
+- Mobilização precoce (dia 4 à semana 4): mão cerca de 30 cm acima do coração até a segunda semana; movimento passivo de cerca de 15 graus por articulação a partir do dia 4; malha tubular e órtese entre os exercícios.
+- Movimento ativo (semanas 5 e 6): bloqueio de flexão e extensão na sexta semana, depois que os tendões cicatrizaram; compressão, ultrassom e massagem.
+- Atividades de vida diária (semanas 7 e 8).
+- Pré-profissional (da semana 8 em diante).
+
+A órtese noturna em extensão continua por pelo menos um ano, contra a garra. Grupos com outros transplantados ajudam a adesão.
+
+A reeducação sensitiva não acelera o axônio; ela usa a capacidade do córtex de reinterpretar sinais incompletos. A fase precoce começa quando o paciente percebe o diapasão de 30 Hz na ponta; a tardia trabalha forma, tamanho e textura e pode ser feita em casa. O número de corpúsculos de MEISSNER no dedo transferido se correlaciona com a discriminação de dois pontos (p. 1671).
+
+## Os seis princípios de WEI
+
+O capítulo fecha com seis princípios para um bom resultado: manejo inicial correto de todas as estruturas, planejamento, escolha da técnica, execução meticulosa, reabilitação motora e sensitiva e revisões apropriadas (p. 1672). Cada um corresponde a uma das seções acima, e a prova cobra justamente os pontos em que o raciocínio de cada etapa contraria a intuição.
+
+> **Na prova:** dedo único **distal à IFP** é ótima indicação, proximal vai para **amputação do raio**; preservar comprimento, **não ressecar o nervo** proximal e cobrir com **retalho inguinal**; primária com sobrevida igual (**96,9% e 96,5%**), **30% menos convalescença** e estética **pior**; poupar **1 cm** da base da falange proximal do hálux; par de dedos do **pé esquerdo**; mão metacarpal **I** (polegar até a IF) e **II** (polegar proximal à IF), **IB** articulação composta, **IC** transmetatarsal, **IIC** polegar depois com poste; congênito ideal = **banda de constrição**, esperar cerca de **2 anos**, crescimento **60 a 100%**; FDMA **70%**, FPMA **20%**, iguais **10%**, assimetria **20%**; dissecção **retrógrada** sobre o **ligamento intermetatarsal**, sem angiografia; calibres iguais, **dorsal**; hálux total na **falange proximal ou metacarpo**, MORRISON **sem IF móvel**, aparado perde **18 graus**; hemipolpa com **dois nervos**; extensor tipo **I atenuado** e **II distinto**; órtese em extensão por **1 ano**; amarrilho intraósseo com **1,5%** de pseudartrose; **vasoespasmo** nos 3 primeiros dias, reexplorar em **1 hora**; **tenólise 6,8%**; AAS **325 mg** por 2 semanas; sucesso **98%**; pinça **75%**; dedo percebido como dedo em **6 meses**.
+
+# Amputações maiores: quem perde o membro e os cinco princípios {radar=fundamento}
+
+## Por que o membro superior é diferente
+
+Até aqui o resumo tratou do dedo e da mão. O capítulo 50 do Green (Major Limb Amputations and Prosthetics, de Rafael J. DIAZ-GARCIA e Paul S. CEDERNA) sobe para o punho, o antebraço, o cotovelo, o braço e a cintura escapular. As amputações maiores são minoria: chegam a **25%** de todas as amputações do membro superior, porque perder dedos é muito mais comum (Green's Operative Hand Surgery, 7ª ed., cap. 50, p. 1753). Ainda assim, nos Estados Unidos de 2005 havia cerca de **41 mil** pessoas vivendo com amputação transradial, e a prevalência sobe por dois motivos que parecem bons e ruins ao mesmo tempo: o trauma e a terapia intensiva salvam pacientes que antes morriam, e a população envelhece com diabetes e doença vascular.
+
+A diferença que mais importa para a prova está na **causa**. No membro inferior, a amputação é sobretudo doença vascular e diabetes; no membro superior, a **maioria vem de trauma agudo**, e em séries escandinavas o trauma responde por até **90%** dos casos (p. 1753). Isso muda tudo: o paciente típico é jovem, trabalhador, operado na urgência, sem tempo para planejar, e com décadas de vida pela frente com a prótese. O impacto social é grande: até **um terço** muda de profissão e quase **dois terços** deixam vocações e atividades de lazer (33% e 58%, p. 1757).
+
+## Quando amputar é a melhor decisão
+
+O Green é direto: amputa-se logo quando a função do membro salvo seria **muito pior** que a de uma prótese. A tentação de salvar a qualquer custo existe, mas tentativas repetidas de reconstruir um membro com dano neurovascular irreconstruível ou esqueleto destruído podem prejudicar o paciente: mais cirurgias, mais internação, mais dor, e no fim um membro insensível e rígido que atrapalha mais do que ajuda (p. 1753). É a mesma lógica do reimplante, vista do outro lado: o objetivo é a função, não a anatomia.
+
+As outras causas têm números próprios (p. 1753):
+
+- **Queimadura elétrica**: até **26%** acabam em alguma amputação maior. A corrente segue os tecidos de menor resistência (nervo, vaso, músculo) e lesa a profundidade muito mais que a pele sugere; o músculo necrótico perto do osso explica por que tantos membros se perdem dias depois.
+- **Queimadura térmica profunda**: cerca de **3,8%**, por tecido inviável ou sepse.
+- **Infecção**: a **mucormicose** quase sempre exige amputação, e a mortalidade chega a **92%**. O fungo invade a parede dos vasos e provoca trombose e necrose em avanço; sem ressecção radical do tecido morto, o antifúngico não alcança o foco.
+- **Tumor**: radioterapia, quimioterapia e cirurgia de salvamento reduziram a amputação nas últimas quatro décadas, mas a amputação radical ainda serve para a recidiva e para o tumor grande que não se ressecaria com margem.
+
+## Os cinco princípios técnicos
+
+Qualquer que seja o nível, o Green resume a cirurgia em cinco princípios (p. 1753), e cada um tem um porquê:
+
+1. **Preservar o comprimento funcional.** Cada centímetro de osso é braço de alavanca para mover a prótese e superfície para suspendê-la. O cuidado é a palavra "funcional": comprimento demais também atrapalha, como se verá na desarticulação do punho e do cotovelo.
+2. **Cobertura durável.** O coto vai passar o dia dentro de um encaixe rígido, recebendo pressão e cisalhamento. Pele fina ou cicatriz aderida ao osso ulcera; músculo preso ao osso por miodese dá coxim estável.
+3. **Prevenir o neuroma sintomático.** Todo nervo cortado faz neuroma; o que se evita é deixá-lo onde o encaixe aperta. Por isso o nervo é dissecado e cortado proximal à osteotomia, para retrair para dentro de tecido acolchoado.
+4. **Prevenir a contratura** das articulações vizinhas. Um cotovelo que perdeu a extensão ou um ombro rígido inviabilizam a prótese, por melhor que seja o coto. O movimento começa cedo.
+5. **Protetizar cedo**, no "período de ouro". É o princípio que mais pesa no resultado e tem seção própria adiante.
+
+> **Na prova:** amputações maiores = até **25%** das do membro superior; causa principal = **trauma** (até 90% na Escandinávia), ao contrário do membro inferior; queimadura elétrica até **26%**; mucormicose com mortalidade até **92%**; cinco princípios: **comprimento, cobertura, neuroma, contratura e protetização precoce**.
 
 # Punho e antebraço {radar=confirmado}
 
-A transcárpica e a **desarticulação do punho** preservam a **radioulnar distal** e a fibrocartilagem triangular, mantendo a rotação (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1737). O Campbell (cap. 20, p. 730) diz que **só 50%** da pronação e da supinação chegam à prótese, mas valem o esforço. A prótese é mais difícil e é usada por 54% dos desarticulados, contra 94% abaixo do cotovelo (Green, p. 1737). No caso clínico do capítulo 50, a **transradial** oferece **mais opções protéticas**, com nível ideal **8 a 10 cm proximal aos estiloides**; o Campbell (p. 731 e 732) mantém dois terços do antebraço e prefere 5 cm de ulna a perder o cotovelo. Na técnica da desarticulação, retalho palmar longo e dorsal curto (2:1), estiloides arredondados para não causar necrose por pressão, nervos tracionados e cortados para retraírem, e tendões fixados ao rádio em tensão fisiológica, que podem comandar uma prótese mioelétrica ou servir a um futuro transplante (Green, p. 1737). LOUIS faz ligadura dupla dos nervos no antebraço proximal, para que o neuroma fique em continuidade sob os músculos, e o alargamento metafisário distal do rádio ajuda a suspender a prótese; os ligamentos da radioulnar distal e a fibrocartilagem triangular são protegidos. A prótese deve ser adaptada em até 30 dias; cerca de 50% a abandonam em 5 anos, e a dor fantasma passa de 50%, raramente impedindo o uso (Campbell, p. 730).
+## O nível ideal na perda da mão: uma discussão sem vencedor
 
-!tabela Punho e transradial (Green, cap. 49, p. 1737, e cap. 50; Campbell, cap. 20, p. 730 a 732)
-| Aspecto | Desarticulação | Transradial |
+Quando a mão não pode ser salva, o Green admite que o nível ideal é controverso (cap. 50, p. 1753 e 1754). A dúvida é entre desarticular o punho e cortar o antebraço, e a resposta depende do que se quer preservar e do que se aceita perder. Entender o argumento vale mais que decorar a conclusão, porque a banca pergunta os dois lados.
+
+## Desarticulação do punho: o que ganha
+
+A desarticulação do punho (e a transcárpica, um pouco mais distal) deixa o antebraço inteiro. Os ganhos são três (cap. 50, p. 1754; cap. 49, p. 1737):
+
+- **A radioulnar distal fica intacta**, e com ela a pronossupinação. O rádio continua girando em torno da ulna, e esse giro pode ser aproveitado pelo encaixe. Para isso o cirurgião protege os ligamentos da radioulnar distal e a fibrocartilagem triangular.
+- **O braço de alavanca é o mais longo possível**, o que facilita levantar e posicionar a prótese.
+- **O alargamento metafisário do rádio distal** funciona como um botão: o encaixe passa por ele e prende acima, suspendendo o dispositivo terminal sem arnês (fig. 50.2).
+
+O Campbell (cap. 20, p. 730) tempera o entusiasmo com um número que a banca cobrou: só cerca de **50%** da pronação e da supinação chegam à prótese, porque o coto gira dentro do encaixe e parte do movimento se perde no acoplamento. Ainda assim, ele considera que vale o esforço. É esse 50% que o TARO 2026 pediu.
+
+## Desarticulação do punho: o que custa
+
+O mesmo comprimento que dá alavanca cria os problemas (cap. 50, p. 1754):
+
+- **Os estiloides** radial e ulnar ficam salientes e viram pontos de pressão dentro do encaixe, lesando a pele do coto. Na técnica, eles são arredondados para não causar necrose por pressão (cap. 49, p. 1737).
+- **O membro fica comprido demais.** O dispositivo terminal mioelétrico ocupa alguns centímetros; somado a um coto que já vai até o punho, o lado protetizado fica mais longo que o normal. Além da estética, isso atrapalha alcançar a linha média: para levar a mão à boca ou ao botão da calça, o paciente compensa com abdução do ombro e retração da escápula.
+
+Por isso o Green afirma que os desarticulados do punho **abandonam a prótese mais** que os transradiais. O capítulo 49 traz o dado de uso: **54%** dos desarticulados contra **94%** abaixo do cotovelo (p. 1737). O Campbell (p. 730) acrescenta que cerca de **50%** abandonam a prótese em 5 anos e que a dor fantasma passa de **50%**, raramente impedindo o uso.
+
+Há uma exceção que mostra que não existe nível certo para todos: o **trabalhador braçal** costuma preferir a desarticulação do punho, porque usa uma prótese de força corporal durável, ganha alavanca e mantém a radioulnar distal (p. 1754). Para quem levanta peso o dia inteiro, o comprimento e a robustez valem mais que a estética e a mioelétrica.
+
+## Transradial: 8 a 10 cm, o nível das mais opções
+
+Na transradial, o nível com a **maior variedade de opções protéticas** fica **8 a 10 cm proximal ao estiloide ulnar** (p. 1754). Nesse ponto ainda sobra pronossupinação adequada e alavanca razoável para fletir o cotovelo, e abre-se espaço para qualquer dispositivo terminal sem deixar o membro comprido. É o número que a SBCM 2023 pediu. O caso clínico 50.2 do capítulo repete a mesma comparação numa isquemia da mão por cateter arterial e vasopressor: a desarticulação preserva a radioulnar distal e o máximo de rotação, mas a transradial a 8 a 10 cm dos estiloides oferece mais opções de prótese.
+
+Quanto mais proximal a transradial, menos rotação: quando se remove **metade do antebraço**, quase não sobra pronossupinação, porque a membrana interóssea e os pronadores e supinadores que restam já não movem o rádio. Mesmo assim, **pelo menos 5 cm de ulna** bastam para protetizar com sucesso (p. 1754). O Campbell (p. 731 e 732) fala em manter dois terços do antebraço quando possível, conta que a transradial responde por cerca de **40%** das amputações maiores do membro superior e, no coto muito curto, faz tenodese do bíceps na ulna para não perder a flexão do cotovelo.
+
+## A técnica transradial preferida do Green
+
+A técnica do capítulo 50 (p. 1754 e 1755, fig. 50.3) é a amputação eletiva, e cada passo responde a um dos cinco princípios:
+
+- **Retalhos volar e dorsal iguais**, em boca de peixe, para a cicatriz ficar terminal e longe das áreas de apoio.
+- **Osteotomia pelo menos 1 a 2 cm proximal** ao fim da incisão de pele, para sobrar partes moles e fechar sem tensão (na figura, em geral 8 cm do estiloide ulnar).
+- Sob garrote, **ligar as artérias radial e ulnar** e cauterizar as interósseas.
+- **Nervos dissecados e cortados proximais à osteotomia**, para o neuroma ficar dentro do músculo, longe do encaixe.
+- Músculos divididos **1 cm distal** à osteotomia, serra oscilante e lima nas bordas.
+- **Miodese em dois planos.** Primeiro, os músculos profundos são presos ao osso: isso dá cobertura durável e impede que o músculo deslize sobre a ponta, o que formaria bursa. Depois, os superficiais são suturados sobre as pontas em pares **agonista e antagonista**, em tensão fisiológica. O detalhe tem um motivo moderno: esses músculos, ancorados e com tensão, continuam contraindo de forma distinta, e essas contrações comandam a **prótese mioelétrica**.
+- Fechamento em camadas e curativo compressivo.
+
+A desarticulação do punho tem técnica própria no capítulo 49 (p. 1737): retalho palmar longo e dorsal curto (2:1), estiloides arredondados, nervos tracionados e cortados para retraírem, e tendões fixados ao rádio em tensão fisiológica, que podem comandar uma mioelétrica ou servir a um futuro transplante. LOUIS faz ligadura dupla dos nervos no antebraço proximal, para que o neuroma fique em continuidade sob os músculos.
+
+!tabela Punho e transradial (Green, cap. 49, p. 1737, e cap. 50, p. 1753 a 1755; Campbell, cap. 20, p. 730 a 732)
+| Aspecto | Desarticulação do punho | Transradial |
 | --- | --- | --- |
-| pronossupinação | 50% transmitidos | perdida |
-| prótese | difícil; uso 54% | mais opções; uso 94% |
-| nível | radiocárpico, retalho palmar 2:1 | 8 a 10 cm acima dos estiloides |
+| pronossupinação | radioulnar distal preservada; 50% chegam à prótese | menor quanto mais proximal; quase nula na metade do antebraço |
+| suspensão | alargamento metafisário do rádio | encaixe e miodese |
+| problema | estiloides salientes; membro longo demais | coto curto perde alavanca |
+| uso da prótese | 54%; abandono maior | 94%; mais opções |
+| nível | radiocárpico, retalho palmar 2:1 | 8 a 10 cm acima do estiloide ulnar; mínimo 5 cm de ulna |
+| quem prefere | trabalhador braçal (força corporal) | a maioria (mioelétrica) |
 !fim
 
-!questoes central=mao-0568 treino=mao-2263
+!questoes central=mao-0568 treino=mao-2263,mao-3814,mao-3815
 conceito: Transradial ideal 8 a 10 cm proximal aos estiloides; a desarticulação transmite 50% da pronossupinação.
 como: A SBCM 2023 pediu o nível; o TARO 2026, a porcentagem.
 armadilha: Escolher 3 a 5 cm ou 80 a 95%.
 !fim
+
+> **Na prova:** mais opções protéticas = transradial **8 a 10 cm do estiloide ulnar**; mais rotação = **desarticulação do punho** (radioulnar distal), mas só **50%** chega à prótese (Campbell); desarticulados usam menos (**54% contra 94%**); **5 cm de ulna** bastam; braçal prefere a **desarticulação** com prótese de força corporal; miodese em **dois planos**, superficiais em pares **agonista e antagonista**.
+
+# Ao redor do cotovelo: salvar a articulação ou escolher o nível {radar=clinico}
+
+## Por que o cotovelo vale quase qualquer esforço
+
+Perder o cotovelo muda a categoria da amputação (p. 1754 e 1755). Abaixo dele, o paciente flete e estende a prótese com a própria articulação, e o encaixe só precisa repor punho e mão. Acima, a prótese precisa de um **cotovelo protético**, que pesa, consome energia e é menos útil que o natural; o paciente gasta mais esforço para cada tarefa, e os **transumerais abandonam a prótese mais** que os transradiais. Por isso o Green diz que preservar o cotovelo é **alta prioridade**, mesmo à custa de reconstruções complexas como **retalhos livres** para cobrir um coto curto (p. 1754). Os 5 cm de ulna da seção anterior são a outra face da mesma regra: um coto transradial curtíssimo, com cotovelo, vale mais que qualquer nível acima.
+
+Esse é o fato que a SBCM 2025 cobrou: o melhor nível ao redor do cotovelo para usar prótese é **abaixo da articulação**. A banca usou alternativas de uma palavra (úmero distal, desarticulação, diáfise umeral, abaixo da articulação), e quem entende o argumento não erra.
+
+## Desarticulação do cotovelo: côndilos contra comprimento
+
+Se o cotovelo não pode ser salvo, a primeira ideia é desarticular, porque o úmero fica inteiro. Os **côndilos** largos fazem o que o rádio distal faz no punho: suspendem o encaixe e, por não serem redondos, **transmitem a rotação** do úmero à prótese (p. 1755).
+
+O preço é o mesmo do punho, agora maior: o braço residual fica longo, e a prótese ainda precisa de uma articulação de cotovelo abaixo dele. O resultado é **discrepância de comprimento** (o cotovelo protético fica mais baixo que o do outro lado), dificuldade de alcançar a linha média e uma assimetria visível, antiestética e limitante.
+
+## A preferência do Green: transumeral, exceto na criança
+
+Pesando os dois lados, os autores preferem a **transumeral** à desarticulação do cotovelo, porque os benefícios da desarticulação são pequenos diante dos problemas de comprimento (p. 1755). Há uma exceção, e ela é a pegadinha da questão: a **criança**. Na criança, a transumeral feita pela metáfise tem alta incidência de **supercrescimento ósseo** do coto, que pode exigir revisões, e a desarticulação evita o problema (AITKEN, citado no Green).
+
+O supercrescimento não vem da fise, como muitos supõem. É **formação óssea aposicional** na ponta do osso cortado: o osso cresce em ponta de lápis, empurra a pele por dentro, forma bursa e pode perfurar. Ele só acontece no coto **transósseo**; na desarticulação, a cartilagem articular tampa a ponta e o fenômeno não ocorre. O úmero é o osso mais acometido no membro superior (o resumo do Campbell sobre amputações detalha a capa osteocondral e por que a epifisiodese é contraindicada).
+
+## O que o Campbell diz diferente
+
+O Campbell (cap. 20, p. 730 a 735) inverte a preferência no adulto: considera a desarticulação do cotovelo **geralmente preferível** a um nível mais alto, justamente pelos côndilos, que dão suspensão e transmitem a rotação. Na criança os dois livros convergem: abaixo dos **12 anos**, o Campbell desarticula o cotovelo e, se não der, capeia o úmero com o úmero distal amputado. Para a prova, a regra é a de sempre: questão com bibliografia do Green responde transumeral no adulto e desarticulação na criança.
+
+!tabela Sem o cotovelo: Green 7 e Campbell 15
+| Ponto | Green 7 (cap. 50, p. 1755 e 1756) | Campbell 15 (cap. 20, p. 730 a 735) |
+| --- | --- | --- |
+| adulto | transumeral preferida | desarticulação geralmente preferível |
+| criança | desarticulação, pelo supercrescimento | desarticulação abaixo de 12 anos; capa do úmero distal |
+| nível transumeral | osteotomia 10 cm acima da ponta do olécrano | pelo menos 3,8 cm acima da articulação, pela trava do cotovelo |
+| osteotomia de angulação | MARQUARDT e NEFF; não é rotina | 6 cm de osso, 70 graus, placa posterior |
+!fim
+
+## A técnica transumeral
+
+A técnica do Green (p. 1755 e 1756, fig. 50.4) segue a mesma lógica da transradial, com três diferenças:
+
+- **Garrote estéril**, retalhos anterior e posterior que terminam 2 cm distais à osteotomia.
+- **Osteotomia idealmente 10 cm proximal à ponta do olécrano.** Esse número existe por causa do cotovelo protético: ele precisa de espaço abaixo do encaixe para que o cotovelo artificial fique na altura do outro. O Campbell chega à mesma ideia por outro caminho: a trava interna do cotovelo ocupa **3,8 cm**, e o osso deve ser cortado pelo menos isso acima da articulação, com plataforma giratória para repor a rotação do úmero.
+- **Ligar a artéria braquial** com sutura transfixante; **radial, mediano e ulnar** dissecados e cortados proximais à osteotomia; serra, lima e soltura do garrote.
+- **Miodese** do compartimento anterior ao posterior sobre a ponta do úmero.
+- **Dreno de sucção fechado**, ao contrário da transradial descrita: o braço tem mais massa muscular e espaço morto, e a coleção sob o retalho atrasaria a protetização.
+
+A **osteotomia de angulação** do úmero distal (MARQUARDT, NEFF) cria um degrau em que o encaixe se apoia e, com isso, dá **controle rotacional** da prótese sem depender do arnês. O Green não a faz de rotina, porque o ângulo cria um ponto de pressão; ela só entra depois de discutir com o fisiatra e o protesista, e, se planejada, a amputação é feita mais distal para compensar o comprimento gasto na angulação (p. 1756). O Campbell dá os números que a banca do TEOT usou: pelo menos **6 cm** de osso residual, corte a **70 graus** e **placa posterior**.
+
+> **Na prova:** melhor nível ao redor do cotovelo = **abaixo da articulação** (preservar o cotovelo, até com retalho livre); sem cotovelo, o Green prefere a **transumeral 10 cm acima do olécrano**, exceto na **criança**, que desarticula pelo **supercrescimento** (AITKEN); o Campbell prefere a desarticulação também no adulto; transumeral leva **dreno**; angulação de **70 graus, 6 cm, placa posterior** (Campbell), não é rotina no Green.
+
+# Ombro e interescapulotorácica {radar=fundamento}
+
+## A amputação mais radical
+
+A **interescapulotorácica** (forequarter) retira o membro inteiro com a escápula e a parte lateral da clavícula, desarticulando a cintura escapular do tórax. É a mais radical e a menos frequente das amputações do membro superior (p. 1756). Foi descrita no trauma em **1808** por Ralph CUMING; hoje é sobretudo o **último recurso no tumor maligno agressivo** do ombro, da axila ou do braço proximal. Seu uso caiu de **32%** dos casos nos anos 1970 para **5%** numa série atual, à medida que o salvamento do membro ganhou espaço. O prognóstico reflete a doença, não a cirurgia: num centro oncológico, a sobrevida foi de **42% em 1 ano** e menos de **20% em 2 anos** (12 anos de seguimento).
+
+O caso clínico 50.1 mostra o cenário típico: tumor maligno de bainha de nervo periférico induzido por radiação na axila. O tratamento de base é a ressecção com margens negativas, com radioterapia pré-operatória e quimioterapia para tumores grandes, profundos, de alto grau ou metastáticos; quando a margem exige, o caminho termina na interescapulotorácica.
+
+## Planejar o fechamento antes de cortar
+
+O problema de fechar é real: na recidiva de um tumor irradiado, a pele em volta é ruim e tensa, e não dá para subir mais. O Green planeja então um **retalho livre de filé do antebraço**, fasciocutâneo, baseado na artéria braquial: o próprio membro amputado doa a cobertura (p. 1756). Por isso, se houver filé, os vasos subclávios não são ligados, mas preservados com loops para a anastomose.
+
+## A técnica e o detalhe pensado no futuro
+
+O paciente fica em decúbito lateral. A incisão é uma elipse na base do ombro e em volta da escápula, com extensão cranial ao longo da clavícula até o esternocleidomastóideo, para controlar a subclávia proximalmente (fig. 50.6). A sequência vai de anterior para posterior (p. 1756):
+
+- **Osteotomia da clavícula** logo lateral à origem do esternocleidomastóideo, com uma Cobb protegendo os vasos por baixo.
+- **Ligadura da artéria e da veia subclávias** (ou preservação, se houver retalho livre).
+- Divisão do peitoral maior; coracobraquial, cabeça curta do bíceps e peitoral menor soltos do coracoide; ligadura da transversa do pescoço e da supraescapular.
+- No paciente com **menos de 50 anos**, os grandes ramos do plexo braquial são cortados e **implantados no peitoral maior e no serrátil anterior**. A ideia é deixar músculos reinervados que possam, no futuro, comandar uma prótese por **TMR**. É um exemplo raro de cirurgia oncológica radical que já planeja a reabilitação.
+- Por fim, a parte posterior: borda medial da escápula, romboides, serrátil anterior e grande dorsal, e fechamento sobre drenos.
+
+O Campbell (cap. 20) descreve a via posterior de LITTLEWOOD como preferida à anterior de BERGER na interescapulotorácica e, na **desarticulação do ombro**, sutura as pontas musculares dentro da glenoide e leva o **deltoide para baixo da glenoide**, para preencher o vazio da cabeça umeral; quando se pode, preservar **5 a 7 cm** de úmero proximal mantém o contorno do ombro, o que ajuda a vestir roupa e a apoiar uma prótese ou capa cosmética. A dor fantasma é mais frequente nessas amputações proximais.
+
+> **Na prova:** interescapulotorácica = **último recurso no tumor**; CUMING **1808**; uso caiu de **32% para 5%**; sobrevida **42% em 1 ano, menos de 20% em 2**; cobertura com **filé do antebraço**; abaixo de **50 anos**, implantar o plexo no **peitoral maior e serrátil** para TMR; desarticulação do ombro com **deltoide abaixo da glenoide** (Campbell).
+
+# KRUKENBERG: o antebraço que vira pinça {radar=confirmado}
+
+## O problema que a cirurgia resolve
+
+Uma prótese, mesmo excelente, não sente. O usuário enxerga o que a pinça segura e corrige a força pelo olho. Agora imagine o paciente **cego** que perdeu as **duas mãos**: sem visão e sem sensibilidade, a prótese vira uma ferramenta cega na ponta de um braço cego. A operação de KRUKENBERG, descrita pelo cirurgião alemão Hermann KRUKENBERG durante a Primeira Guerra Mundial (1917), responde exatamente a isso: em vez de substituir a mão, transforma o próprio antebraço numa **pinça com pele sensível**.
+
+O capítulo 50 do Green 7 não trata do procedimento. Ele está no capítulo 38, na deficiência transversa congênita (p. 1346), e no capítulo 21 do Campbell (p. 769 e 770, técnica 21.13).
+
+## O que se faz e por que funciona
+
+O rádio e a ulna são **separados**, e os músculos são redistribuídos para que o **rádio pince contra a ulna** (Green, cap. 38, p. 1346). O movimento das duas pontas vem de cima: as articulações radiocapitelar e radioulnar proximal funcionam como a dobradiça da pinça. SWANSON comparou o membro reconstruído a um par de **pauzinhos** de comer (Campbell, p. 769). A pele entre as pontas, deslocada no fechamento para que a cicatriz não fique na superfície de contato, conserva sensibilidade normal; é isso que diferencia a pinça de KRUKENBERG de qualquer gancho.
+
+A técnica do Campbell (p. 770) ensina a biomecânica pelo nome dos músculos:
+
+- Incisão longitudinal volar um pouco para radial, e dorsal um pouco para ulnar, com um retalho em V dorsal que vai formar a comissura entre os dois raios.
+- Os músculos são separados em dois grupos. No **raio radial** ficam os flexores e extensores radiais do punho, a metade radial do flexor superficial e do extensor comum, o braquiorradial, o palmar longo e o **pronador redondo**. No **raio ulnar**, os flexores e extensores ulnares do punho e as metades ulnares do flexor superficial e do extensor comum. Se o coto ficar volumoso, ressecam-se o pronador quadrado, o flexor profundo, o flexor longo do polegar, o abdutor longo e o extensor curto do polegar, sem tocar no pronador redondo.
+- A **membrana interóssea** é incisada em todo o comprimento junto à ulna, preservando o pedículo interósseo.
+- As pontas se afastam **6 a 12 cm**, conforme o tamanho do antebraço, e devem se tocar ao fechar; se não, osteotomiza-se o rádio ou a ulna.
+- Agora o **pronador redondo**, o supinador, o flexor radial do carpo, a metade radial do superficial e o palmar longo **aduzem** o raio radial (fecham a pinça); o braquiorradial, os extensores radiais, a metade radial do extensor comum e o bíceps o **abduzem**. Do lado ulnar, o flexor ulnar do carpo, o braquial e o ancôneo aduzem, e o extensor ulnar do carpo e o tríceps abduzem.
+- A pele é girada em volta de cada raio, com a sutura fora da face de contato; enxerto de pele onde faltar.
+- Na **criança**, a pele costuma bastar e o osso **não deve ser encurtado**, porque as fises distais ainda crescem.
+
+## Quem se beneficia
+
+A indicação é **rara** e clássica (Green, cap. 38, p. 1346): o amputado **bilateral** do antebraço distal e **cego**, porque a cirurgia dá preensão unilateral **com retorno sensitivo**. O Green admite uma segunda indicação ocasional: a criança **vidente** com deficiência abaixo do cotovelo e **antebraço longo**. O Campbell (p. 769 e 770) amplia: é útil também onde não há serviço moderno de prótese, e, segundo SWANSON, crianças com amputação congênita bilateral acham o membro reconstruído muito mais útil que uma prótese mecânica, passam a dominância para ele quando usam prótese do outro lado, e a cirurgia não impede usar prótese comum.
+
+O lado ruim é honesto nos dois livros: há **poucos dados funcionais** publicados, e a aparência do antebraço é **muito anormal** (Green, p. 1346). Por isso o vidente unilateral, que enxerga e tem a outra mão, quase nunca é candidato: para ele, a prótese resolve sem o preço estético.
+
+## As alternativas na deficiência transversa
+
+O mesmo parágrafo do Green fecha as outras portas (p. 1346). O **alongamento do antebraço** tem muitas complicações e não provou ganho funcional. O **transplante de mão** já passou de **70** casos em adultos amputados por trauma, mas é **contraindicado na criança com deficiência transversa**: ela provavelmente não formou músculos capazes de mover uma mão transplantada, funciona muito bem sem ela, e a imunossupressão por toda a vida pesa mais que o ganho possível.
+
+A banca cobra o procedimento com duas armadilhas: trocar **separar** por **fundir** o rádio e a ulna, e trocar KRUKENBERG por outros epônimos (FOUCHER, por exemplo, é o retalho dorsal do indicador, nada tem com o antebraço). Na indicação, o distrator típico é o unilateral ou o vidente.
+
+!questoes central=mao-0439 treino=mao-2591
+conceito: KRUKENBERG separa o rádio da ulna e faz o rádio pinçar contra ela, dando preensão com sensibilidade; indicação clássica no amputado bilateral do antebraço distal e cego, às vezes na criança vidente com antebraço longo.
+como: O TARO 2025 perguntou o procedimento possível na agenesia de punho e mão; outra prova pediu o correto sobre a deficiência transversa segundo o Green.
+armadilha: Marcar a fusão do rádio com a ulna ou trocar KRUKENBERG por FOUCHER; achar que o vidente unilateral é a indicação.
+!fim
+
+> **Na prova:** KRUKENBERG **separa** rádio e ulna, o rádio **pinça contra a ulna**; dá preensão **com sensibilidade**; indicação clássica = **cego com amputação bilateral** do antebraço distal (às vezes criança vidente com antebraço longo); pontas afastadas **6 a 12 cm**; **pronador redondo** é adutor do raio radial; na criança **não encurtar osso**; transplante de mão contraindicado na criança com deficiência transversa.
+
+# Reabilitação protética e o período de ouro {radar=fundamento}
+
+## Por que a prótese do membro superior é difícil
+
+A prótese do membro superior tem um limite que a do membro inferior quase não tem: ela precisa substituir uma mão, e a mão faz movimentos finos com retorno sensitivo constante. As próteses atuais têm **poucos graus de liberdade** e **quase nenhum retorno sensitivo**, de modo que tudo depende de pistas visuais (p. 1756 e 1757). O usuário olha para a pinça para saber se segurou, quanto apertou e se o objeto escorrega; isso gasta energia física e cognitiva, cansa e explica boa parte do abandono.
+
+O que mais pesa no resultado é o **nível**, porque ele define quantas funções precisam ser repostas, quanto comprimento sobra para estabilidade e controle e quais componentes servem. Entram também as comorbidades, o arco de movimento e a força do lado amputado, os objetivos do paciente e a cobertura do plano de saúde (p. 1757).
+
+## Antes e logo depois da cirurgia
+
+O ideal é começar **antes da amputação**, com o fisiatra e o protesista no planejamento e aconselhamento ao paciente (p. 1757). No trauma isso raramente é possível, mas na amputação eletiva (tumor, membro inútil depois de várias cirurgias) muda o resultado, porque o nível e a técnica podem ser escolhidos pensando na prótese.
+
+Depois da cirurgia, o roteiro tem quatro frentes: **arco de movimento cedo** (prevenir a contratura, o quarto princípio); **terapia ocupacional**, que ensina o lado não afetado a cuidar do autocuidado e usa extensões termoplásticas para tarefas com as duas mãos; **compressão graduada** para tirar o edema e moldar o coto num formato que o encaixe aceite; e **controle da dor**. A **prótese provisória** entra o quanto antes.
+
+## O período de ouro: 30 dias e 6 meses
+
+Este é o número mais cobrado do capítulo. MALONE descreveu o **"período de ouro"**: o **primeiro mês** depois da amputação. Pacientes adaptados depois de 30 dias tiveram reabilitação bem-sucedida em apenas **42%** (Green, cap. 50, p. 1758). O capítulo 49 dá a outra metade do dado: protetizados em até 30 dias chegaram a **93%** de reabilitação e **100%** de volta ao trabalho, contra 42% e 15% depois disso (p. 1747). BIDDISS acrescentou o horizonte maior: quem recebe a prótese definitiva em até **6 meses** tem **16 vezes** mais chance de usá-la a longo prazo (p. 1758).
+
+O motivo é o hábito, e não a ferida. Em poucas semanas o paciente aprende a fazer tudo com uma mão; quando a prótese chega, ela já não resolve um problema que ele sente, e vai para a gaveta. Protetizar cedo é aproveitar a janela em que a falta da mão ainda é sentida.
+
+## Por que se abandona a prótese
+
+O Green lista os motivos (p. 1758): desconforto, pouco ganho funcional, aparência, **peso**, falta de sensibilidade, bateria que dura pouco e custo. A rejeição é maior nas **próteses passivas**, e cerca de **20%** dos adultos amputados abandonam qualquer prótese. O Campbell (cap. 20, p. 730) fala em cerca de **50%** de abandono em 5 anos e repete a adaptação temporária em até 30 dias para reduzir a rejeição.
+
+> **Na prova:** período de ouro de **MALONE = 30 dias** (depois disso, **42%** de sucesso; antes, **93%** e **100%** de volta ao trabalho); prótese em até **6 meses** = **16 vezes** mais uso (BIDDISS); cerca de **20%** abandonam qualquer prótese; rejeição maior na **passiva**; o fator que mais pesa é o **nível**.
+
+# Os tipos de prótese: passiva, força corporal, mioelétrica e híbrida {radar=fundamento}
+
+## A regra que organiza tudo
+
+Quanto mais proximal a amputação, mais difícil **suspender** a prótese sem arnês e mais funções precisam ser repostas com articulações travadas ou motorizadas (p. 1758). As próteses se classificam pela **fonte de força**: passiva, força corporal, externa (mioelétrica) e híbrida.
+
+## Passiva
+
+A prótese passiva não se move por si. A mais conhecida é a **cosmética**, uma luva de silicone com aparência de mão; é leve e pode servir para estabilizar objetos. Existem também desenhos passivos para esportes e atividades específicas (p. 1758). Apesar de leve, é a que mais se abandona, porque faz pouco.
+
+## Força corporal
+
+A prótese de **força corporal** é a **mais prescrita** no membro superior (p. 1758). Um arnês preso ao ombro oposto e um cabo convertem o movimento da escápula e do úmero (protrair o ombro, fletir o braço) em abertura do gancho ou flexão do cotovelo, com travas e elásticos que fecham a pinça. Tem quatro virtudes: é **leve**, **barata** (sobretudo na transumeral), **durável** e de **pouca manutenção**. Por isso é a preferida do **trabalhador braçal** (fig. 50.7: o gancho). O custo é a aparência mecânica, com o gancho exposto, e a força de preensão limitada pelos elásticos. Como depende do movimento do ombro passado pelo cabo, ela precisa de **suspensão externa** por arnês.
+
+## Mioelétrica
+
+A **mioelétrica** tem motores e bateria no próprio membro. **Eletrodos de superfície** dentro do encaixe captam a atividade elétrica dos músculos do coto: contrair o grupo agonista abre, contrair o antagonista fecha (p. 1758 e 1759). É aqui que a miodese em pares agonista e antagonista da técnica transradial mostra o seu sentido. A preensão é maior: mais de **30 libras** de pinça, contra a força limitada dos elásticos da prótese de corpo. Cada função a mais, porém, aumenta custo, peso e manutenção; protótipos para transumeral passam de **100 mil dólares**. Mãos como a Michelangelo oferecem várias pegadas específicas (fig. 50.8).
+
+## Híbrida e a escolha por nível
+
+As tendências do Green (p. 1759) são uma questão pronta:
+
+- **Transradial**: a **mioelétrica** é a preferida da maioria, pela estética, pela força de pinça e pela suspensão anatômica no antebraço.
+- **Transumeral e desarticulação do ombro**: a **híbrida**, que mistura componentes de força corporal e motorizados (por exemplo, cotovelo por cabo e mão mioelétrica), porque nos níveis proximais não há sinais musculares suficientes e distintos para comandar tudo por eletrodo (fig. 50.9).
+- **Passiva e força corporal** servem a qualquer nível; a força corporal continua sendo a escolha do braçal.
+
+## O encaixe e a suspensão
+
+O **encaixe** é a fundação da prótese: se ele machuca ou solta, nada mais funciona. Primeiro se faz um encaixe de teste na prótese provisória; o definitivo é de **fibra de carbono e Kevlar** (p. 1759). A suspensão pode ser:
+
+- **Autossuspensa**: o encaixe íntimo segura nos relevos do coto (o alargamento do rádio distal, os côndilos do úmero) e transmite a força diretamente.
+- **Com arnês**: mais fácil de vestir, mas visível; necessária nos níveis proximais, como a transumeral, para suspender próteses pesadas, e sempre na força corporal, que usa o arnês para levar o movimento da escápula ao cabo.
+
+!tabela Escolha da prótese (Green, cap. 50, p. 1758 e 1759)
+| Tipo | Como funciona | Vantagem | Desvantagem | Quem usa |
+| --- | --- | --- | --- | --- |
+| passiva | luva de silicone, sem movimento | leve, estética | faz pouco; mais rejeitada | qualquer nível |
+| força corporal | arnês e cabo levam o movimento do ombro | leve, barata, durável | aparência mecânica, pinça fraca | a mais prescrita; braçal |
+| mioelétrica | eletrodos de superfície e motores | pinça acima de 30 libras, estética | cara, pesada, bateria | maioria dos transradiais |
+| híbrida | cabo e motor combinados | supre a falta de sinal proximal | complexa | transumeral e ombro |
+!fim
+
+> **Na prova:** mais prescrita = **força corporal** (leve, barata, durável; **braçal**); preferida no **transradial = mioelétrica**; nos proximais = **híbrida**; mioelétrica = **eletrodos de superfície** em músculos agonista e antagonista, pinça **acima de 30 libras**; encaixe de **carbono e Kevlar**; arnês obrigatório na **força corporal** e nos proximais.
+
+# TMR, RPNI e as interfaces com o nervo {radar=fundamento}
+
+## O problema: faltam sinais
+
+Os usuários são uniformemente insatisfeitos com a preensão das próteses, e a insatisfação cresce quanto mais alto o nível (p. 1759 e 1760). No transradial, os flexores e extensores do punho continuam no antebraço e dão dois sinais limpos para abrir e fechar a mão. No transumeral e na desarticulação do ombro, esses músculos foram embora com o membro; sobram o bíceps e o tríceps para comandar cotovelo, punho e mão, um de cada vez e com troca de modo. Os nervos que comandavam a mão (mediano, ulnar, radial) continuam vivos no coto, carregando o comando, mas terminam no vazio. O Green descreve três linhas de pesquisa para recuperar esses sinais: a reinervação muscular dirigida, as interfaces de nervo periférico e as interfaces do sistema nervoso central.
+
+## Reinervação muscular dirigida (TMR)
+
+A **TMR** tem DUMANIAN entre os pioneiros citados pelo Green. A ideia é transformar músculos que sobraram em **amplificadores biológicos**. O cirurgião escolhe músculos-alvo do coto (por exemplo, segmentos do peitoral maior na desarticulação do ombro, ou cabeças do bíceps e do tríceps na transumeral), corta o nervo original de cada segmento e sutura nele um dos nervos amputados (p. 1760). Meses depois, quando o paciente pensa em fechar a mão, o segmento reinervado pelo mediano contrai; o sinal elétrico desse músculo é grande o bastante para ser lido por **eletrodos de superfície** na pele, e vira o comando da mão mioelétrica.
+
+O ganho relatado é grande: eficiência **7 vezes maior** nas tarefas, **controle simultâneo** de várias articulações, comando mais natural e intuitivo (pensar em abrir a mão abre a mão) e menos treino (p. 1760). O limite é que poucos pacientes foram operados. A TMR tem ainda um efeito colateral bom, lembrado no Campbell (cap. 16 e cap. 20): dar ao nervo cortado um órgão-alvo reduz o neuroma doloroso e a dor fantasma. É a mesma lógica do neuroma estudado na mão: o neuroma é brotamento sem alvo, e a TMR dá um alvo ao brotamento. Isso explica por que o Green implanta os ramos do plexo no peitoral e no serrátil na interescapulotorácica do paciente jovem.
+
+## Interfaces de nervo periférico
+
+A **RPNI** (interface regenerativa de nervo periférico) é uma versão microscópica da TMR: as pontas nervosas, ou fascículos separados, são implantadas em pequenos **enxertos musculares livres** com um eletrodo e um isolante. O músculo reinervado amplifica o sinal, que fica estável, e o registro chega ao nível do fascículo, com mais canais de controle que a TMR (p. 1760 e 1761). O Campbell (cap. 20, p. 729) cita a RPNI também como tratamento e prevenção do neuroma.
+
+Os eletrodos diretamente no nervo têm um dilema: os **extraneurais** (em manguito, cuff) são seguros por até 3 anos em humanos, mas pouco seletivos, porque ouvem o nervo inteiro; os **intraneurais** (intrafasciculares, como a matriz de Utah, fig. 50.10) são seletivos, mas a **fibrose** progressiva, causada pelo trauma do implante, pela reação de corpo estranho e pelo micromovimento, faz perder o sinal com o tempo (p. 1761).
+
+## Sistema nervoso central e o desenho da prótese
+
+As interfaces cerebrais vão do **EEG**, de baixa resolução, à **eletrocorticografia**, melhor, mas que exige craniotomia e também perde fidelidade por fibrose; o Green acha que provavelmente servirão mais à lesão medular que ao amputado (p. 1761). No desenho, o CAD/CAM encurtou a confecção do encaixe (um método de Northwestern faz o encaixe em menos de 1 hora com cerca de 1 dólar de material), e o **motor de corrente contínua sem escovas** é o atuador padrão, com alternativas em estudo.
+
+A conclusão do capítulo é prática e volta ao começo (p. 1762): **protetizar cedo é crítico**, o atraso aumenta o abandono, e as interfaces neurais ainda precisam de estudo antes de virarem rotina.
+
+> **Na prova:** TMR = nervos amputados transferidos para **músculos-alvo** desnervados, que viram **amplificadores biológicos** lidos por eletrodos de **superfície**; eficiência **7 vezes** maior e controle **simultâneo**; útil sobretudo na **transumeral e no ombro**; reduz **neuroma e dor fantasma**; RPNI = TMR **microscópica** em enxerto muscular livre; eletrodo **cuff** seguro e pouco seletivo, **intraneural** seletivo mas perde sinal por **fibrose**.
 
 # Green e Campbell: onde os livros discordam {radar=fundamento}
 

@@ -1,6 +1,6 @@
 ---
 id: green-deformidades-dedos
-versao: 3
+versao: 4
 titulo: Deformidades dos dedos
 especialidade: mao
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed., e o HEBERT
 capitulo: Capítulo 10 · Treatment of the Stiff Finger and Hand
 autores: Robert N. Hotchkiss
-fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10 (p. 338 a 344 e o conteúdo online), cap. 5 (p. 155 a 174 e referências), cap. 31 (p. 1046), cap. 36 (p. 1238 a 1244 e 1270 a 1275, reconferidas em 17/11/2026 com a lista de referências do capítulo, p. 1285 a 1288), cap. 39 (p. 1387 a 1390) e cap. 55 (p. 1879 a 1893); Campbell's Operative Orthopaedics, 15ª ed., caps. 71 (p. 3181 a 3187), 79 (p. 3510 e 3511) e 85 (p. 3672 a 3674); HEBERT (Sizínio), 5ª ed., caps. 53 e 54. Camptodactilia: BENSON e colaboradores, J Pediatr Orthop, 1994;14(6):814-819 (referência 4 do cap. 39 do Green 7), lido em KLOC e colaboradores, Medicina (Kaunas), 2023;59(5):966 (PMC10221293).
+fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10 (p. 332 a 344 e o conteúdo on-line, reconferido em 19/11/2026), cap. 5 (p. 155 a 174 e referências), cap. 31 (p. 1046), cap. 36 (p. 1238 a 1244 e 1270 a 1275, reconferidas em 17/11/2026 com a lista de referências do capítulo, p. 1285 a 1288), cap. 39 (p. 1387 a 1390) e cap. 55 (p. 1879 a 1893); Campbell's Operative Orthopaedics, 15ª ed., caps. 71 (p. 3181 a 3187), 79 (p. 3510 e 3511) e 85 (p. 3672 a 3674); HEBERT (Sizínio), 5ª ed., caps. 53 e 54. Camptodactilia: BENSON e colaboradores, J Pediatr Orthop, 1994;14(6):814-819 (referência 4 do cap. 39 do Green 7), lido em KLOC e colaboradores, Medicina (Kaunas), 2023;59(5):966 (PMC10221293).
 subtemas: Deformidades dos dedos
-resumo: Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); BUNNELL e intrínseco plus e minus; checkrein e artéria digital transversa; braquidactilia (falange média, BELL E com metacarpos curtos, braquimetacarpia do 4º em meninas, distração 4 a 7 dias e 0,25 a 0,5 mm duas vezes ao dia); clinodactilia (mais de 10 graus, barra em C e falange delta, COONEY, VICKERS antes dos 6 anos, polegar com osteotomia primária); KIRNER (falange distal, palmar e radial, meninas, SONG, periósteo dorsal como dobradiça); camptodactilia (BENSON I a III, 80% no lactente, dois terços bilaterais, abaixo de 30 graus não operar).
+resumo: Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); rigidez pós-traumática (edema e postura, came da MF, BUNNELL positivo com a MF estendida, extensor com punho e MF fletidos, lumbrical pelo desvio ulnar e pelo gancho passivo, 87% resolvem com tala, liberação dorsal da MF com meta de 70 graus e acessório que ressalta, IFP em flexão com checkrein, artéria digital transversa e via mediolateral, extensor como fator decisivo, DIGIT WIDGET, IFP em extensão com BUNNELL depois da liberação); intrínseco plus e minus; braquidactilia (falange média, BELL E com metacarpos curtos, braquimetacarpia do 4º em meninas, distração 4 a 7 dias e 0,25 a 0,5 mm duas vezes ao dia); clinodactilia (mais de 10 graus, barra em C e falange delta, COONEY, VICKERS antes dos 6 anos, polegar com osteotomia primária); KIRNER (falange distal, palmar e radial, meninas, SONG, periósteo dorsal como dobradiça); camptodactilia (BENSON I a III, 80% no lactente, dois terços bilaterais, abaixo de 30 graus não operar).
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -19,11 +19,13 @@ Este resumo é inspirado no capítulo 10 (Treatment of the Stiff Finger and Hand
 
 Um dedo é uma corrente de três elos (MF, IFP e IFD) movida por cabos que cruzam mais de uma articulação. Quase toda deformidade dos dedos nasce do mesmo fenômeno: **um cabo falha ou encurta, e o elo vizinho paga a conta**. O terminal rompe e a IFD cai (martelo); a tensão sobra na IFP e ela hiperestende (cisne). A banda central rompe e a IFP flete; as bandas laterais escorregam para volar e a IFD hiperestende (botoeira). O intrínseco encurta e a MF flete com as IF estendidas (plus); o intrínseco paralisa e a MF hiperestende com as IF fletidas (minus, a garra). A cápsula e o checkrein encurtam e a IFP fica presa em flexão sem que o extensor tenha culpa (pseudobotoeira).
 
-A prova cobra três camadas: a anatomia (ORL, checkreins, ligamento triangular), o exame (ELSON, BOYES, BUNNELL, BOUVIER) e a conduta escalonada (tala antes de cirurgia, mobilidade passiva antes da reconstrução tendínea, a ordem das liberações).
+A prova cobra três camadas: a anatomia (ORL, checkreins, ligamento triangular, o came da MF), o exame (ELSON, BOYES, BUNNELL, BOUVIER, os testes do extensor e do lumbrical) e a conduta escalonada (tala antes de cirurgia, mobilidade passiva antes da reconstrução tendínea, a ordem das liberações).
+
+A rigidez pós-traumática, que é o assunto próprio do capítulo 10, ocupa a segunda metade da parte de adultos: por que o dedo trava, as talas, os princípios antes de operar e a liberação da MF e da IFP, em flexão e em extensão. Leia a anatomia da MF e da IFP no começo antes dessas seções; quase tudo o que se faz na sala é consequência dela.
 
 Este resumo aprofunda as deformidades. A anatomia geral e as zonas do aparelho extensor estão no resumo **Tendões extensores** da Biblioteca; a mão reumatoide como um todo (sinovite, MF, punho, polegar), no resumo **Mão reumatoide**; e a embriologia e a classificação das malformações, no resumo **Malformações congênitas**. As quatro deformidades congênitas dos dedos que o capítulo 36 do Green trata (braquidactilia, clinodactilia, KIRNER e, por empréstimo do Campbell, a camptodactilia) ficam aqui, no fim, com a profundidade do capítulo.
 
-> **Na prova:** martelo = terminal (DOYLE IVA criança, IVB 20% a 50%, IVC mais de 50% com subluxação); botoeira se instala em **2 a 3 semanas**, tala com **IFP estendida e IFD livre**; pseudobotoeira = **colaterais e placa volar**; ORL nasce **volar** (bainha) e entra **dorsal** (terminal); BUNNELL positivo = **intrínseco**; checkrein limita a **extensão** da IFP e cruza a **artéria digital transversa**.
+> **Na prova:** martelo = terminal (DOYLE IVA criança, IVB 20% a 50%, IVC mais de 50% com subluxação); botoeira se instala em **2 a 3 semanas**, tala com **IFP estendida e IFD livre**; pseudobotoeira = **colaterais e placa volar**; ORL nasce **volar** (bainha) e entra **dorsal** (terminal); BUNNELL positivo = **intrínseco** (IFP flete **menos com a MF estendida**); extensor extrínseco se testa com **punho e MF fletidos**; mais tensão em **desvio ulnar** = **lumbrical**; checkrein limita a **extensão** da IFP e cruza a **artéria digital transversa**; MF rígida em extensão: meta de **70 graus**, acessório se **ressalta**.
 
 # O equilíbrio do dedo: a anatomia que explica as deformidades {radar=confirmado}
 
@@ -66,50 +68,107 @@ como: O SIMÃO 2026 pediu origem, inserção e função; a PUC-SP 2019 perguntou
 armadilha: Inverter o lado do eixo (dorsal na IFP) ou dizer que se tensiona com a flexão; o ORL passa volar à IFP e se estica quando ela estende.
 !fim
 
+## A MF: uma articulação em came
+
+Quase tudo o que se faz num dedo rígido depende de entender por que a MF e a IFP se comportam de modo oposto quando ficam paradas. A MF é uma articulação **condilar multiaxial**: flete, estende, abduz, aduz e permite uma pequena circundução. A cápsula é frouxa. De cada lado há um **colateral próprio**, robusto (1,5 a 3 mm de espessura, 4 a 8 mm de largura, 12 a 14 mm de comprimento), que nasce na **fosseta subcapital dorsal** da cabeça do metacarpo e desce para a **base volar** da falange proximal; logo volar a ele, um **colateral acessório** em leque vai para a falange e para a placa volar (Green, cap. 10, seção de anatomia, conteúdo on-line).
+
+O detalhe que muda a clínica é a forma da cabeça do metacarpo. Ela não é uma esfera: é um **came**, mais larga e mais saliente para volar. Como os colaterais nascem dorsais ao centro de rotação, a flexão os obriga a contornar esse abaulamento volar; eles se alongam e chegam à **tensão máxima com a MF fletida**. Em extensão, o caminho é curto e eles ficam **frouxos**. A Fig. 10.1 desenha as duas situações.
+
+!figura 10.1 imagem=mao/green7-10-1.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10, Fig. 10.1, p. 339 (desenho de Elizabeth Martin). A MF em extensão (esquerda) tem pouca área de contato (vermelho), colaterais frouxos e espaço líquido intracapsular máximo (listras); em flexão total (direita), o contato é amplo, os colaterais ficam tensos pelo efeito came e quase não sobra espaço para líquido.
+!fim
+
+A figura explica três coisas de uma vez (Green, p. 339). Em **extensão**, o contato ósseo é mínimo, os colaterais estão frouxos, a articulação fica relativamente **instável** (a falange gira, abduz e aduz) e o **espaço líquido dentro da cápsula é máximo**. Em **flexão total**, o contato é máximo, os colaterais estão tensos e a articulação é muito **estável**, com espaço líquido mínimo. Daí decorrem a postura da mão inchada (o líquido empurra a MF para onde cabe mais volume, a extensão), o risco de rigidez em extensão (o colateral que passa semanas frouxo encurta e depois não deixa a MF fletir) e a regra de imobilizar a MF **fletida** (o colateral fica no comprimento máximo e não tem como encurtar).
+
+A **placa volar da MF** também tem comportamento próprio: suas fibras cruzadas **encurtam 1/3 a 1/2** do comprimento na flexão total, como uma sanfona. Ela é quem limita a hiperextensão, que varia muito entre as pessoas. A bolsa sinovial atrás dela é pequena e **não há checkrein** na MF (Green, cap. 10, seção de anatomia, conteúdo on-line).
+
+!questoes treino=mao-1709
+conceito: Na posição intrínseco plus (de segurança), a MF fica fletida porque, pelo efeito came da cabeça do metacarpo, os colaterais próprios só ficam no comprimento máximo em flexão; parados assim, não encurtam, e a MF não trava em extensão.
+como: O simulado perguntou que estrutura a flexão da MF mantém tensionada na imobilização intrínseco plus.
+armadilha: Responder placa volar ou extensor; a placa da MF encurta em flexão e o efeito protetor é sobre os colaterais.
+!fim
+
 ## A placa volar da IFP e os checkreins
 
-A IFP é um gínglimo puro. Seus **colaterais próprios** nascem no recesso da cabeça da falange proximal e entram no terço volar da média e na placa; os **acessórios** correm mais oblíquos e entram nas bordas da placa. Diferente da MF, a cabeça da proximal **não tem efeito came**: a tensão dos colaterais é **uniforme** em todo o arco (Green, conteúdo online do cap. 10).
+A IFP é um **gínglimo** puro, uma dobradiça que só flete e estende. De cada lado há duas camadas: uma superficial e fina, feita das fibras transversas e oblíquas do retinacular de LANDSMEER, e uma profunda e grossa, os **colaterais próprios**, que nascem no recesso da cabeça da falange proximal e entram no terço volar da média e na placa; os **acessórios** correm mais oblíquos e entram nas bordas da placa. Ao contrário da MF, a cabeça da proximal **não tem efeito came**: a tensão dos colaterais é praticamente **uniforme** em todo o arco (Green, cap. 10, seção de anatomia, conteúdo on-line). Por isso a IFP não tem uma posição em que os colaterais fiquem protegidos, e a posição de segurança dela é a **extensão**, que deixa a placa volar esticada.
 
-A **placa volar da IFP** tem uma porção distal fibrocartilaginosa e uma proximal membranosa. De cada lado sai uma expansão para proximal que se prende nas **margens volares da falange proximal**: são os **checkreins** (ligamentos de contenção, ou swallowtail). Eles **cruzam a artéria digital transversa** logo proximal à IFP. Como a placa da IFP **desliza** em vez de encolher na flexão, qualquer aderência dela ou qualquer contratura dos checkreins **limita a extensão da IFP**.
+A **placa volar da IFP** tem uma porção distal articular, fibrocartilaginosa e quadrangular, e uma porção proximal fina e membranosa. Das bordas proximais saem para cada lado expansões que se prendem nas **margens volares da falange proximal**: são os **checkreins** (check ligaments, swallowtail). Eles **cruzam a artéria digital transversa** logo proximal à IFP, e essa relação é o marco cirúrgico da liberação.
 
-!questoes treino=mao-2497,mao-2378
-conceito: Os checkreins são expansões proximais da placa volar da IFP presas às margens volares da falange proximal, no nível do colo, cruzando a artéria digital transversa; contraídos, limitam a extensão da IFP.
-como: O SIMÃO 2021 perguntou onde se prendem; o SIMÃO 2022, que movimento a contratura deles limita.
-armadilha: Marcar flexão: a placa volar e seus checkreins ficam na frente da articulação e só podem bloquear a extensão.
+O ponto mecânico é que a placa da IFP **não encurta** na flexão, como a da MF: ela **desliza** para proximal e distal, como uma peça de armadura, com uma bolsa grande atrás. Uma estrutura que precisa deslizar perde a função quando adere: qualquer limitação da parte proximal da placa ou contração dos checkreins **limita muito a extensão da IFP**. É também por isso que as interfalângicas hiperestendem bem menos que a MF.
+
+Na **IFD**, a placa volar funciona como inserção acessória do profundo e se prende no colo da falange média **sem expansões laterais**. Sem checkrein, a IFD consegue hiperestender. O dorso da IFD não tem ligamento próprio: o tendão terminal faz esse papel. Na face dorsal da IFP, ao contrário, a cápsula está intimamente ligada à **banda central**, cuja face profunda sofre metaplasia fibrocartilaginosa e articula com a cabeça da proximal na flexão; é a razão pela qual a cápsula dorsal e o extensor aderem juntos depois de um trauma.
+
+!tabela MF, IFP e IFD: o que cada uma tem e o que isso muda na rigidez (Green, cap. 10, p. 339 e seção de anatomia)
+| Articulação | Tipo | Colaterais | Placa volar | Consequência |
+| --- | --- | --- | --- | --- |
+| MF | condilar, multiaxial | frouxos em extensão, tensos em flexão (came) | encurta 1/3 a 1/2 na flexão, sem checkrein | trava em extensão; imobilizar fletida |
+| IFP | gínglimo | tensão uniforme no arco | desliza; checkreins nas margens da proximal | trava em flexão; imobilizar estendida |
+| IFD | gínglimo | da cabeça da média ao tubérculo volar da distal | presa ao colo da média, sem checkrein | hiperestende; dorsal só o terminal |
+!fim
+
+!questoes relacionadas=mao-1342 treino=mao-2497,mao-2378,mao-2115,mao-3797,mao-3798,mao-3799
+conceito: Os checkreins são expansões proximais da placa volar da IFP presas às margens volares da falange proximal, cruzando a artéria digital transversa; como a placa da IFP desliza em vez de encurtar, a contração deles limita a extensão; a IFD não tem checkrein e por isso hiperestende mais.
+como: A USP-SP 2025 perguntou com que estrutura o checkrein não tem continuidade; o SIMÃO 2021, onde se prende; o SIMÃO 2022, que movimento a contratura limita; o SBCM 2022, que estrutura existe na IFP e falta na IFD.
+armadilha: Marcar flexão como o movimento limitado ou pôr checkrein na MF; a placa volar fica na frente da articulação e só pode bloquear a extensão, e só a IFP tem checkrein.
 !fim
 
 # O exame que separa as causas: BUNNELL, extensor e flexor {radar=confirmado}
 
 ## Ativo, passivo e a articulação vizinha
 
-O Green (cap. 10, p. 339) organiza o exame do dedo rígido em uma lógica simples. Se **ativo e passivo são iguais e diminuídos**, a limitação é da **articulação** (cápsula ou superfície). Se **o passivo é maior que o ativo**, o problema é do **motor**: tendão aderido ou incompetente. E como os tendões cruzam várias articulações, a posição da vizinha muda o resultado:
+O exame do dedo rígido parte de uma pergunta: o que está segurando o movimento, a articulação ou o cabo que a move? O Green (cap. 10, p. 339) responde com duas comparações. A primeira é **ativo contra passivo**. Se os dois são **iguais e diminuídos**, a cápsula ou a superfície articular é o fator limitante primário; a aderência de tendão, porém, só pode ser descartada depois que a articulação estiver mobilizada, porque uma articulação que não se move esconde o tendão preso. Se o **passivo é maior que o ativo**, a unidade musculotendínea está incompetente, aderida ou as duas coisas; e a força real do motor só se avalia por completo depois de resolvida a contratura.
 
-- **extensor aderido ou curto**: com punho e MF fletidos, a flexão passiva das IF fica difícil (o extensor já foi esticado na MF e não sobra para as IF);
-- **flexor extrínseco curto**: com punho e MF estendidos, a extensão das IF diminui;
-- **intrínseco curto**: com a MF estendida, a IFP flete menos.
+A segunda comparação é a **posição da articulação vizinha**. Tendões extrínsecos e intrínsecos cruzam mais de uma articulação; um cabo curto pode parecer suficiente quando as outras articulações que ele cruza estão a favor e insuficiente quando estão contra. O raciocínio é o mesmo do teste de tenodese: posiciona-se a vizinha para **esticar** o cabo suspeito e observa-se se a articulação examinada perde movimento.
+
+- **Extensor extrínseco aderido ou curto**: com o **punho e a MF fletidos**, avalia-se a flexão passiva das IF. Normalmente ela é fácil; se o extensor estiver aderido ou tenso, ele já foi esticado no punho e na MF e não sobra comprimento para as IF fletirem (Green, p. 339).
+- **Flexor extrínseco curto**: com o **punho e a MF estendidos**, a extensão das IF fica menor que com eles fletidos (p. 339).
+- **Intrínseco curto**: com a **MF estendida**, a IFP flete menos (o teste de BUNNELL, abaixo).
+
+Essas três manobras são parecidas e a prova troca as posições entre elas. A regra que evita o erro: a articulação vizinha vai sempre na direção que **alonga** o cabo testado. O extensor passa no dorso, então se alonga com punho e MF **fletidos**; o flexor passa na frente, então se alonga com punho e MF **estendidos**; o intrínseco passa volar à MF, então se alonga com a MF **estendida**.
 
 ## O teste de BUNNELL
 
-O **teste de BUNNELL** examina o efeito da posição da MF sobre a flexão passiva da IFP (Green, p. 339). É **positivo quando a IFP flete menos com a MF estendida do que com a MF fletida**. O raciocínio é mecânico: o intrínseco passa **volar** ao eixo da MF e **dorsal** ao eixo da IFP, a mesma geometria que o Green reproduz na tenodese intrínseca com enxerto, passado volar ao eixo da MF para fletir a MF e dorsal ao eixo da IFP para estender a IFP (cap. 33, p. 1143). Estender a MF estica o intrínseco; se ele estiver curto, a banda lateral fica tensa e não deixa a IFP fletir. Fletir a MF afrouxa o intrínseco e a IFP volta a fletir.
+O **teste de tensão intrínseca de BUNNELL** examina o efeito da posição da MF sobre a flexão passiva da IFP (Green, p. 339). É **positivo quando a IFP flete menos com a MF estendida do que com a MF fletida**, e indica que algum elemento de tensão dos intrínsecos está contribuindo para a rigidez. O Green o ilustra com o desenho de SMITH (1975).
 
-O teste não separa interósseo de lumbrical. O Green sugere repetir em **desvio radial e ulnar**: tensão simétrica indica que não é só o lumbrical; tensão maior em desvio ulnar sugere componente lumbrical. Há ainda o **teste do lumbrical**: com BUNNELL normal, a flexão ativa limitada pode vir do lumbrical isolado, avaliado pelo **gancho passivo** (fletir IFP e IFD juntas), porque as fibras lumbricais são as mais volares (Green, p. 340).
+!figura 10.2 imagem=mao/green7-10-2.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 10, Fig. 10.2, p. 339 (de SMITH RJ, Instr Course Lect 1975). Teste de tensão intrínseca: em A, o examinador segura a MF estendida e a IFP quase não flete, porque o intrínseco (em verde) já foi esticado na MF; em B, com a MF fletida, o intrínseco afrouxa e a IFP flete por completo.
+!fim
+
+O raciocínio é geométrico. O tendão intrínseco passa **volar** ao eixo da MF e **dorsal** ao eixo da IFP, a mesma geometria que o Green reproduz na tenodese intrínseca com enxerto (cap. 33, p. 1143). Estender a MF afasta a origem da inserção e estica o intrínseco; se ele estiver curto, a banda lateral fica tensa sobre o dorso da IFP e não a deixa fletir. Fletir a MF aproxima as pontas, devolve folga, e a IFP volta a fletir. Note que o teste mexe na MF para avaliar a IFP: ele mede o **intrínseco**, não a cápsula da IFP (que limitaria a flexão nas duas posições da MF) nem os extrínsecos (que dependem do punho).
+
+## Interósseo ou lumbrical
+
+O BUNNELL **não separa** a tensão do interósseo isolado da tensão do interósseo somada à do lumbrical (Green, p. 340, citando COLDITZ 2002). Para afinar, o Green propõe repetir o teste com a MF em **desvio ulnar** e em **desvio radial**. Se a tensão é **simétrica**, o lumbrical não é o único envolvido. Se é **maior em desvio ulnar**, suspeita-se de componente **lumbrical**. A anatomia explica: o lumbrical entra sempre na **banda lateral radial** do dedo, depois de passar volar ao ligamento intermetacarpal transverso profundo; desviar a MF para ulnar afasta essa inserção radial e estica o lumbrical.
+
+O lumbrical tem ainda uma armadilha própria. Como suas fibras são as mais palmares do sistema intrínseco, ele pode limitar a **flexão ativa** sem produzir contratura passiva e sem positivar o BUNNELL. O teste é o **gancho passivo** (hook grip): fletir passivamente a IFP e a IFD juntas, com a MF estendida. Se o gancho é limitado e o BUNNELL é normal, há contratura **específica do lumbrical** (Green, p. 340). A lógica é a da inserção: o lumbrical termina na banda lateral, que passa sobre o dorso da IFP e da IFD até o tendão terminal; fletir as duas interfalângicas juntas leva essa inserção para o máximo de distância, e só então a falta de comprimento do lumbrical aparece. Fletir a IFP sozinha, como no BUNNELL clássico, pode não ser suficiente para revelá-la.
+
+## O roteiro em três passos
+
+O Green (p. 340) resume a avaliação em três passos que vale decorar na ordem:
+
+1. Comparar o arco **ativo e passivo** da MF e da IFP.
+2. Repetir a comparação com o **punho estendido e fletido** (extrínsecos).
+3. Comparar o ativo e o passivo da IFP com a **MF estendida e fletida** (BUNNELL), também em **desvio radial e ulnar** (lumbrical).
+
+Depois disso, antes de qualquer decisão, olha-se a **radiografia**: se há artrose pós-traumática ou desalinhamento articular, a chance de melhora com liberação de partes moles é muito pequena (p. 332), e todo o raciocínio de cápsula e tendão perde valor.
 
 !tabela Como o exame separa as causas de rigidez do dedo (Green, cap. 10, p. 339 e 340; cap. 5, p. 156)
 | Achado | Interpretação |
 | --- | --- |
 | Ativo = passivo, ambos limitados | articulação (cápsula, ligamentos, superfície) |
 | Passivo maior que ativo | tendão aderido ou incompetente |
-| IF fletem pouco com punho e MF fletidos | extensor aderido ou curto |
+| IF fletem pouco com punho e MF fletidos | extensor extrínseco aderido ou curto |
 | IF estendem pouco com punho e MF estendidos | flexor extrínseco curto |
 | IFP flete menos com MF estendida (BUNNELL) | intrínseco curto |
-| BUNNELL normal, gancho passivo limitado | lumbrical curto |
+| BUNNELL mais tenso em desvio ulnar da MF | componente lumbrical |
+| BUNNELL normal, gancho passivo limitado | lumbrical curto isolado |
 | IFD resiste à flexão com IFP estendida (BOYES) | bandas laterais e ORL retraídos (botoeira formada) |
 !fim
 
-!questoes central=mao-0066
-conceito: Se a IFP não flete passivamente com a MF estendida e flete com a MF fletida, o teste de BUNNELL é positivo e a causa é retração dos intrínsecos.
-como: O TARO 2015 trouxe o teste descrito em palavras, sem o nome, e pediu a causa (a questão aparece duplicada na lista).
-armadilha: Confundir com retração do retinacular: ela se testa na IFD com a IFP estendida (BOYES), não na IFP com a MF estendida.
+!questoes central=mao-0066 relacionadas=mao-0124,mao-1190,mao-1869
+conceito: Se a IFP não flete passivamente com a MF estendida e flete com a MF fletida, o teste de BUNNELL é positivo e a causa é tensão dos intrínsecos, que passam volares à MF e dorsais à IFP; o extensor extrínseco se testa com punho e MF fletidos, o flexor extrínseco com punho e MF estendidos.
+como: O TARO 2015 trouxe o teste descrito em palavras, sem o nome, e pediu a causa; a prova de Ortopedia e a PUC-SP 2023 pediram o mecanismo e a interpretação do BUNNELL; o ENARE 2023 o misturou a outras manobras semiológicas em verdadeiro ou falso.
+armadilha: Inverter o achado (mais flexão com a MF estendida) ou atribuí-lo à cápsula dorsal, ao extensor ou ao retinacular; a retração do retinacular se testa na IFD com a IFP estendida (BOYES).
 !fim
 
 # Dedo em martelo: DOYLE, ALBERTONI e a tala {radar=confirmado}
@@ -385,15 +444,33 @@ alerta: `mao-1201` está sem gabarito oficial; o Green (p. 1890) sustenta como e
 
 ## Edema, imobilização e fibrose
 
-O Green preserva, no conteúdo online do capítulo 10, o texto clássico de SMITH. A contratura interóssea pós-traumática vem de **edema, imobilização prolongada ou isquemia**. Hematoma e edema enchem o compartimento interósseo, presos pela fáscia dorsal e volar firme; a compressão capilar e a estase venosa aumentam a congestão; os dedos se movem pouco pela dor; um **enfaixamento compressivo ou gesso circular** piora a drenagem, e os interósseos desenvolvem contratura miostática que, quando o edema cede, vira **fibrose**.
+O Green preserva, no capítulo 10 (seção sobre a contratura intrínseca, conteúdo on-line), o texto clássico de Richard J. SMITH. A contratura dos interósseos depois do trauma vem de **edema, imobilização prolongada ou isquemia muscular**, e o mecanismo é parecido com o de uma síndrome compartimental em câmera lenta. Hematoma e edema enchem o compartimento interósseo, que é fechado pela fáscia dorsal e pela fáscia volar, ambas firmes; a pressão comprime os capilares e causa estase venosa, o que aumenta ainda mais a congestão. Os dedos se movem pouco por causa da dor, e um **enfaixamento compressivo ou gesso circular** piora a drenagem. Os interósseos parados e congestos desenvolvem uma contratura miostática; quando o edema cede, o tecido que ficou é **fibrose**.
 
-A postura resultante é o oposto da garra: **MF fletida e IF estendidas** (intrínseco plus). Na forma grave (com necrose dos interósseos), grandes objetos não cabem na palma, a preensão é fraca e a **pinça polpa a polpa é impossível**.
+A postura resultante é o oposto da garra: **MF fletida e IF estendidas** (intrínseco plus). É a soma vetorial dos intrínsecos: eles passam volares à MF (fletem) e dorsais às IF (estendem). Na forma grave, objetos grandes não cabem na palma, a preensão é fraca e a **pinça polpa a polpa é impossível**, porque a IFP e a IFD estendidas não deixam a polpa do indicador encontrar a do polegar.
 
 ## A forma tardia que só pega a IFP
 
-Meses depois de uma lesão do punho ou da mão, muitos pacientes ficam com **flexão limitada das IFP** e o cirurgião suspeita de aderência articular. Frequentemente a causa é **contratura intrínseca residual** (Green, conteúdo online do cap. 10). O mecanismo é fino: para fletir a MF, o intrínseco precisa esticar os colaterais da MF, que estão inchados e resistem; já a extensão da IFP não encontra resistência, porque os colaterais da IFP relaxam na extensão. Resultado: **MF livre, IFP em contratura em extensão, BUNNELL positivo**.
+Meses depois de uma lesão do punho ou da mão, muitos pacientes ficam com **flexão limitada das IFP**. Parece aderência articular ou sinovite, e o cirurgião tende a pensar na cápsula. Frequentemente, porém, a causa é **contratura intrínseca residual** (Green, cap. 10, seção sobre a contratura intrínseca). O mecanismo é fino e vale entender. Para que o intrínseco curto fletisse a MF, ele teria de esticar os colaterais da MF, que nessa fase estão inchados, tensos e resistentes (lembre do came: flexão da MF exige colaterais longos). Já a extensão da IFP não encontra resistência, porque os colaterais da IFP estão relaxados em extensão. O intrínseco curto age, então, onde é mais fácil: **estende a IFP** e a mantém assim. Resultado: **MF poupada, IFP em contratura em extensão e BUNNELL positivo**.
 
-Não é preciso liberar toda a aponeurose. Como só a flexão da IFP está limitada, basta a **liberação intrínseca distal**: ressecar a **banda lateral e as fibras oblíquas** no terço distal da falange proximal, preservando a **banda central, as slips laterais e as fibras transversas** (que mantêm a flexão da MF e evitam a garra). A MF fica em extensão por 3 semanas e a flexão das IF começa no dia seguinte. O Campbell (cap. 79, p. 3510 e 3511) descreve o mesmo raciocínio sob o nome de LITTLER e acrescenta a escala: **leve**, liberação distal; **moderada** (interósseos viáveis mas contraídos), **slide muscular** dos metacarpos; **grave** (necrose), **tenotomia** dos tendões interósseos (SMITH).
+Como só a flexão da IFP está limitada, não é preciso liberar toda a aponeurose. A **liberação intrínseca distal** (HARRIS e RIORDAN, 1954) resseca apenas as **fibras oblíquas e a banda lateral** no terço distal da falange proximal, por incisão dorsal mediana. Preservam-se a **banda central**, as **tiras laterais do extensor** e as **fibras transversas**. A lógica é anatômica: as fibras transversas, que arqueiam sobre a falange proximal, são as que fletem a MF; as oblíquas, que chegam à base da média, são as que estendem a IFP. Cortando só as oblíquas, a IFP ganha flexão e a MF continua fletindo com força, sem risco de garra; a extensão das IF continua garantida pela banda central e pelas tiras laterais. No pós-operatório, a MF fica em **extensão por 3 semanas** (para manter o intrínseco alongado) e a flexão ativa e passiva assistida das IF começa no **primeiro dia**. O Campbell (cap. 79, p. 3510 e 3511) descreve o mesmo raciocínio sob o nome de LITTLER e acrescenta a escala: **leve**, liberação distal; **moderada** (interósseos viáveis mas contraídos), **deslizamento muscular** a partir dos metacarpos; **grave** (necrose), **tenotomia** dos tendões interósseos (SMITH).
+
+Antes de operar, a contratura intrínseca leve pode responder ao alongamento. A posição que alonga os interósseos é a **intrínseco minus**: MF em **extensão** e IF em **flexão** (a IFP isolada ou a IFP com a IFD), usada nas talas e nos exercícios (Green, cap. 10, seção sobre o tratamento não operatório da IFP).
+
+## A forma grave, da MF e da IFP
+
+Quando o edema profundo se prolonga, os interósseos podem **necrosar** e virar cordões fibrosos (BUNNELL, 1948 e 1953). O dedo fica com a **MF fletida e as IF estendidas**, e o Green ilustra o quadro com um gesso apertado após fratura do punho. Com o tempo, a postura gera contraturas secundárias: **contraem-se a placa volar e os colaterais acessórios da MF** (que passaram meses em flexão) e os **colaterais da IFP** (que passaram meses em extensão). É por isso que, nessa fase, cortar só o tendão não basta.
+
+A correção depende do músculo. Se os interósseos estão fibróticos mas ainda **contráteis**, faz-se o **deslizamento muscular** (muscle slide), soltando a origem nos metacarpos para que o músculo desça. Se estão **necróticos**, seccionam-se os **tendões interósseos proximal à MF** (o lumbrical pode estar preservado) e soltam-se as estruturas para-articulares secundárias. O texto de SMITH insiste num ponto contraintuitivo: **não se deve temer hipercorreção nem garra**, porque a hiperextensão da MF raramente aparece depois dessa liberação.
+
+A técnica segue uma escada (Green, cap. 10, seção sobre a contratura intrínseca): incisão transversa dorsal proximal às MF; ressecção dos tendões laterais de todos os interósseos e do abdutor do mínimo no nível da MF; se a MF continua fletida, secção do **colateral acessório** na inserção na placa volar, soltura da placa da base da falange e das aderências entre placa e cabeça; fio oblíquo em extensão máxima se a MF não se mantém (conferindo antes a congruência articular); e, se a IFP não flete com a MF estendida, ressecção das bandas laterais na metade distal da falange proximal por outra incisão dorsal. A flexão da IFP começa no primeiro dia e o fio sai com cerca de 3 semanas.
+
+!tabela Contratura intrínseca: da forma leve à grave (Green, cap. 10, seção sobre a contratura intrínseca; Campbell, cap. 79)
+| Forma | Quadro | Conduta |
+| --- | --- | --- |
+| Tardia, só da IFP | MF livre, IFP sem flexão, BUNNELL positivo | alongamento em intrínseco minus; liberação intrínseca distal (fibras oblíquas e banda lateral) |
+| Moderada | interósseos contraídos, mas viáveis | deslizamento muscular a partir dos metacarpos |
+| Grave | interósseos necróticos, MF fletida e IF estendidas, contraturas secundárias | secção dos tendões interósseos proximal à MF, acessório e placa volar da MF, bandas laterais se preciso |
+!fim
 
 !questoes treino=mao-2538,mao-2365
 conceito: Contratura intrínseca pós-traumática: BUNNELL positivo e dificuldade de fechar a mão; alongamento primeiro e, se persistir, liberação intrínseca distal ressecando só as fibras oblíquas e a banda lateral.
@@ -416,57 +493,230 @@ como: A UFG 2021 perguntou o que indica a manobra de BOUVIER positiva e a incid�
 armadilha: Chamar a garra de sinal de WARTENBERG (abdução do mínimo) ou atribuir BOUVIER à paralisia dos profundos.
 !fim
 
-# Rigidez: a contratura em flexão da IFP {radar=confirmado}
+# Rigidez do dedo: edema, postura e o que vale salvar {radar=fundamento}
+
+## O capítulo e seus dois clássicos
+
+O capítulo 10 do Green, de HOTCHKISS, trata da rigidez do dedo depois de **trauma**, sobretudo da MF e da IFP: quando operar, como, quais as armadilhas e o que esperar (p. 332). Ele não substitui a prevenção, que fica nos capítulos de fratura, tendão e queimadura; entra quando a prevenção não bastou. O autor abre reconhecendo dois textos que, segundo ele, não podem ser melhorados: o de **CURTIS (1954)** sobre a capsulectomia das interfalângicas, que registrou cada paciente com minúcia e mostrou que **não existe fórmula cirúrgica** (cada dedo exige uma sequência própria, testada na sala), e o de **SMITH** sobre a tensão intrínseca, que o Green preserva no conteúdo on-line.
+
+## O edema e a postura da mão lesada
+
+A primeira resposta de quase toda lesão da mão é o **edema**: um líquido rico em proteínas e macrófagos que banha não só o tecido lesado como as estruturas vizinhas sadias (p. 332). Esse líquido tem dois efeitos. O primeiro é físico: entre tendão, bainha e cápsula, o edema e o hematoma ocupam os planos de deslizamento e limitam o movimento. O segundo é postural: a mão inchada procura a posição em que as articulações acomodam mais volume e doem menos.
+
+Para a MF, essa posição é a **extensão total**, em que o espaço intracapsular é máximo (Fig. 10.1). Para a IFP, é a **flexão**. Nas interfalângicas, a capacidade muda pouco com a posição e o efeito hidrostático do edema é menor; quem pesa mais é a tensão da pele dorsal (p. 332). A mão lesada repousa, portanto, com **MF estendida e IFP fletida**, que é exatamente a pior combinação possível: a MF fica com os colaterais frouxos (vão encurtar) e a IFP fica com a placa volar dobrada (vai aderir). Há ainda um efeito em cadeia: com a MF em extensão, os extrínsecos se desequilibram a favor da **flexão da IFP**, e sem intervenção essa postura se fixa (p. 332). A posição de segurança (MF fletida, IF estendidas) é o antídoto direto dessa sequência.
+
+## A prioridade é a flexão
+
+O Green estabelece uma hierarquia clara (p. 332): a meta que soma **mais função com mais chance de sucesso** é ganhar **flexão** da MF e da IFP. Ganhar flexão é mais provável que ganhar extensão, e é a flexão que permite segurar objetos. As contraturas fixas por tensão intrínseca, quando estabelecidas, são excelentes candidatas à cirurgia, porque a causa é localizada e a liberação é previsível.
+
+A função a preservar também muda de dedo para dedo (p. 332):
+
+- **Pinça**: um polegar **estável e bem posicionado** vale mais que amplitude extrema da IF ou da MF do polegar; algum movimento da CMC ajuda, mas não é crucial.
+- **Ponta com ponta** com o polegar exige movimento da **MF do indicador e do médio**; a IFP desses dois dedos radiais precisa de menos.
+- **Preensão de força** exige movimento **composto MF e IFP**, sobretudo nos **três dedos ulnares**.
+- **Músicos**: o pianista se adapta com pouca IFP; os instrumentos de corda exigem força e mobilidade da mão do dedilhado até a IFD.
+
+Essa lista orienta a indicação: uma IFP rígida no indicador de um trabalhador braçal pesa menos que a mesma rigidez no anular de quem precisa fechar a mão com força.
+
+# Rigidez: talas e o tratamento sem cirurgia {radar=fundamento}
 
 ## Tratar sem cortar primeiro
 
-O Green estima que **87% das contraturas de MF e IFP** se resolvem sem cirurgia, e só indica operar quando o arco ativo e passivo atinge um **platô** com resultado inaceitável (cap. 10, p. 340). Exige ainda três condições: paciente colaborador, terapeuta competente e autorização para a reabilitação; faltando uma, **não se opera**. Na IFP, a via final comum da contratura em flexão é a **placa volar e os checkreins**, que viram bandas colágenas grossas entre a placa e a proximal. A tala dinâmica é o pilar: força lenta, perpendicular à média, **pelo menos 1 hora várias vezes ao dia**; dor forte significa carga excessiva (a cicatriz está rasgando, não esticando); à noite, tala estática (conteúdo online do cap. 10).
+Carga baixa e prolongada, aplicada durante o exercício ativo e o uso funcional leve e moderado, reduz o edema e promove a mobilização. Com isso, estima-se que **87% das contraturas de MF e IFP se resolvem sem cirurgia** (WEEKS; Green, p. 340). O tratamento continua enquanto houver progresso, e a cirurgia só entra quando o arco ativo e o passivo atingem um **platô** com resultado funcionalmente inaceitável. O princípio biológico é que o colágeno da cicatriz se remodela sob tensão contínua e suave; força brusca não alonga, rasga, e o rasgo gera nova inflamação, novo edema e nova cicatriz.
 
-## A liberação passo a passo
+## Os quatro tipos de tala
 
-O maior desafio não é a placa, é o **extensor**: se ele estiver atenuado, soltar a frente não devolve a extensão ativa (Green, p. 341). As vias são a **ziguezague volar de BRUNER** ou a **mediolateral (medioaxial)**; BRUSER viu ganho de **50 graus** pela mediolateral contra **30** pela volar. Sob **anestesia local com sedação**, o paciente move o dedo e o cirurgião ajusta a liberação.
+O conteúdo on-line do capítulo (seção sobre o tratamento não operatório) descreve quatro famílias de órtese:
 
-Pela via volar, a bainha é aberta de A2 a A4 e os checkreins são procurados com um marco preciso: a **artéria digital transversa**, que passa **sob o checkrein, 3 mm proximal à articulação**. Liberam-se os checkreins **poupando a artéria**. A ordem segue a resposta: se a extensão não vem, capsulotomia da **placa volar e dos colaterais acessórios**; se ainda persiste, desinsere-se o **colateral próprio** da proximal. O autor prefere a mediolateral: secciona o **retinacular transverso**, libera o checkrein e excisa o acessório. Depois, tala de extensão noturna até 6 meses.
+!tabela As talas do dedo rígido (Green, cap. 10, seção sobre o tratamento não operatório)
+| Tipo | Como funciona | Quando usar |
+| --- | --- | --- |
+| Estática | mantém a posição; a de bloqueio limita parte do arco | repouso, noite, proteção |
+| Estática seriada | colocada no limite do arco e trocada quando o tecido acomoda | ganho progressivo com troca frequente; gesso seriado |
+| Dinâmica | tração elástica (mola ou elástico), carga que permite movimento | escolha quando o passivo responde ao alongamento manual e a inflamação cedeu |
+| Estática progressiva | como a dinâmica, mas sem movimento dentro da tala; três pontos ajustáveis | quando a dinâmica não progride; uso noturno |
+!fim
 
-!tabela Liberação da contratura em flexão da IFP (Green, p. 341 e conteúdo online do cap. 10)
+O Green mostra a tala de mola LMB, só na IFP e de uso diurno, combinada ao Joint-Jack à noite.
+
+## A MF
+
+Na MF, a tala em **flexão** diminui o espaço sinovial e aumenta a tensão da cápsula e dos colaterais, mantendo o comprimento destes. A melhor prevenção da contratura em extensão da MF é, portanto, **controle agressivo do edema, tala em flexão (às vezes até fio) e mobilização controlada**. A contratura em **flexão** da MF é bem menos comum e quase sempre **secundária a causa externa**: tensão intrínseca, aderência do extensor ou outra causa extra-articular (Green, cap. 10, seção sobre o tratamento não operatório da MF). Quando a MF já tem fibrose de colateral ou cápsula, combina-se terapia agressiva, tala dinâmica de dia e estática progressiva à noite.
+
+Os números de WEEKS dão a dimensão do conservador: **212 pacientes, 789 articulações (336 MF)**, com **82%** melhorando em 2 semanas sem outro tratamento. Os ganhos médios na MF foram de **35 graus no indicador, 40 no médio, 42 no mínimo e só 11 no anular**, o dedo que menos responde. Com as IF flexíveis, é raro que alguém cuja MF já flete até **60 graus** peça ou se beneficie da liberação; os dedos radiais toleram um pouco menos de flexão que os ulnares.
+
+## A IFP em flexão
+
+A contratura em flexão da IFP tem muitas causas possíveis, listadas por CURTIS: cicatriz volar, fáscia superficial (DUPUYTREN), contração da bainha flexora, flexor aderido ou músculo contraído, aderência do retinacular de LANDSMEER aos colaterais, contração da placa volar, colaterais aderidos com o dedo fletido e bloqueio ósseo ou exostose. A via final comum mais frequente, porém, é o **complexo da placa volar**: os checkreins viram bandas colágenas grossas entre a placa e a falange proximal (Green, cap. 10, seção sobre o tratamento não operatório da IFP).
+
+A base do tratamento é a **tala dinâmica ou o gesso seriado**. O princípio é aplicar uma força de extensão **lenta e constante, perpendicular à falange média**, reajustando a linha de tração à medida que o dedo melhora (uma força oblíqua comprime a articulação em vez de abri-la). A tala dinâmica é usada **pelo menos 1 hora, várias vezes ao dia**. A dor serve de régua: se ela encurta o tempo de uso ou exige analgésico forte, a carga está excessiva e a cicatriz está **rasgando, não alongando**. À noite usa-se tala **estática**; dinâmica à noite não, porque escorrega e causa úlcera de pressão. O tratamento costuma durar meses; o gesso seriado é trocado a cada poucos dias.
+
+Os resultados sustentam a paciência. WEEKS tratou **453 contraturas em flexão da IFP** e **87%** dispensaram outro tratamento (o arco do indicador passou de 42 para 84 graus). PROSSER, com 20 pacientes, reduziu a contratura de **39 para 21 graus** e mostrou relação significativa entre o **tempo de uso da tala** e o resultado. HUNTER, com 61 contraturas, chegou a arco final médio de **90 graus**.
+
+## A IFP em extensão
+
+A causa mais comum da contratura em extensão da IFP é a **aderência do extensor** (Green, cap. 10, seção sobre o tratamento não operatório da IFP; ver cap. 5). Também contribuem cicatriz dorsal, fibrose da cápsula dorsal, intrínsecos contraídos ou aderidos e deformidade óssea, que a radiografia mostra. Há poucos relatos de tratamento conservador. Quando há componente intrínseco, a tala alonga os interósseos na posição **intrínseco minus**: MF em extensão e IF em flexão.
+
+# Rigidez: antes de operar {radar=fundamento}
+
+## As três condições
+
+Antes de planejar a cirurgia, o Green exige três condições (p. 340): **paciente colaborador**, **terapeuta competente** e **aprovação do pagador** para a reabilitação quando ela for exigida. Faltando qualquer uma, **não se opera**. A razão é que a liberação apenas cria um arco; quem o mantém é a reabilitação das semanas seguintes. Uma liberação sem terapia é um novo trauma que cicatriza em nova contratura. A pele também precisa permitir o movimento: se ela está fina, aderida e sem mobilidade sobre a MF ou a IFP, é preciso trazer **cobertura local ou livre antes**; não adianta tenólise e capsulotomia se o envoltório não deixa o dedo mover (seção sobre a intervenção cirúrgica, conteúdo on-line).
+
+## A anestesia local com sedação
+
+A anestesia ideal para a liberação articular e a tenólise é **local com sedação venosa** (p. 340). O paciente consegue mover o dedo sem dor, e o cirurgião avalia o **movimento ativo** na sala, que é a única forma de saber se o tendão desliza depois da liberação. A sedação é titulada, mais forte no início (infiltração e incisão) e mais leve na hora do teste. O Green sugere alternar o garrote de braço e o de antebraço, por conforto e para evitar a paralisia transitória que o garrote prolongado causa. Com bloqueio ou anestesia geral, o paciente não move o dedo, e pode ser preciso uma **incisão proximal** para tracionar os tendões e simular o movimento ativo. A mistura de bupivacaína e lidocaína rende bastante tempo.
+
+## A lei dos rendimentos decrescentes
+
+O Green alerta contra o excesso (p. 340). Liberar a MF até ela ficar **instável** anula o ganho, porque a articulação instável precisa ser imobilizada ou fixada, e a imobilização devolve a rigidez. Se a MF já tem **0 a 60 graus** de flexão ativa e passiva, ressecar mais tecido arrisca desestabilizar. O fio não é necessariamente má escolha no trauma global, mas a retirada é individual e pode ser **tão cedo quanto 5 a 7 dias**. E, por fim, a experiência é insubstituível: o autor recomenda consultar colegas, qualquer que seja a idade ou o currículo do cirurgião (p. 341).
+
+## Quando a articulação está ruim
+
+Tudo o que se discute neste capítulo pressupõe cartilagem razoável. Com **artrose pós-traumática ou desalinhamento articular**, a chance de melhora com liberação capsular é **muito pequena** (Green, p. 332). A artroplastia com implante, que funciona no quadril, no joelho e no cotovelo rígidos, **não deu certo na MF e na IFP pós-traumáticas**: o ganho de movimento relatado é mínimo e a falha do implante é comum (p. 339, citando FIELD). Com articulação ruim, portanto, evita-se a liberação. A **artroplastia de distração** teve algum sucesso, mas ainda não permite uma recomendação geral (p. 339).
+
+!questoes treino=mao-2031,mao-3800
+conceito: Na rigidez pós-traumática com articulação ruim (artrose ou desalinhamento), a liberação capsular rende muito pouco; a artroplastia com implante na MF e na IFP dá ganho mínimo e falha frequente; a artroplastia de distração teve sucesso limitado, sem recomendação geral.
+como: O SBCM 2024 pediu a afirmação correta sobre o tratamento cirúrgico da rigidez dos dedos, misturando implante, distração e liberação.
+armadilha: Transferir para o dedo o sucesso da artroplastia no quadril, joelho e cotovelo rígidos.
+!fim
+
+# Rigidez: a MF que não flete {radar=confirmado}
+
+## Por que a MF trava em extensão
+
+A MF rígida típica é em **extensão**, e a explicação está no came (Fig. 10.1): a mão edemaciada repousa com a MF estendida, os colaterais ficam frouxos por semanas, encurtam, e depois não conseguem contornar o abaulamento volar da cabeça do metacarpo. A cápsula dorsal e o extensor aderido completam o bloqueio. A liberação, portanto, mira três alvos: **extensor, cápsula dorsal e colaterais**.
+
+## A técnica
+
+A via **dorsal** é a melhor, porque permite a tenólise do extensor e a capsulectomia dorsal pela mesma incisão (Green, p. 340). O extensor é dividido longitudinalmente e levantado da cápsula, e o extensor com a banda sagital são rebatidos para os lados; um descolador faz a tenólise preliminar para proximal e distal. A cápsula dorsal é aberta transversalmente e ressecada junto com as **fibras mais dorsais dos colaterais**. Não há um ângulo absoluto a buscar, mas a meta é **pelo menos 70 graus** de flexão.
+
+Se o colateral restante ainda não passa sobre os côndilos, ele é **desinserido da origem** na cabeça do metacarpo. Soltar só o lado **ulnar** pode bastar, mas muitas vezes é preciso soltar **os dois**, para que a falange não **rode** durante a flexão (p. 340): um colateral preso de um lado só funciona como eixo e torce o dedo. Em seguida, o descolador solta as aderências entre a **placa volar e a cápsula volar** (o recesso volar que a placa precisa para dobrar), e o cirurgião continua testando o arco passivo.
+
+Um sinal específico merece atenção. Se, depois de tudo isso, a MF **ressalta** (salta) ao chegar à extensão total, o responsável é o **colateral acessório** remanescente, que deve ser **seccionado** (p. 340). Faz sentido pela anatomia: o acessório nasce volar ao próprio e vai para a placa; encurtado, ele prende a placa à cabeça e faz a falange saltar quando passa pelo ponto de maior tensão. Por fim, revisa-se a excursão do extensor, com o garrote usado com parcimônia e o paciente movendo ativamente; com bloqueio ou geral, uma segunda incisão permite tracionar o extensor proximal.
+
+## O pós-operatório e o que esperar
+
+O extensor e a pele são fechados em camadas com fio 4-0 inabsorvível. O curativo é volumoso, com talas dorsal e volar mantendo a **MF a 70 graus de flexão e a IFP em extensão**, e a mão fica elevada por **24 a 36 horas**; a mobilização começa em **2 a 3 dias**, se possível (Green, p. 341). Um corticoide oral em esquema regressivo (metilprednisolona) reduz o edema e a dor no pós-operatório imediato, e o Green recomenda considerá-lo com força se o progresso estagnar.
+
+A expectativa precisa ser combinada antes: a **maioria dos pacientes não mantém o ganho visto na sala**, mesmo com reabilitação intensa (p. 341). Os casos de **trauma direto com cicatriz local extensa evoluem pior** que as sequelas de distrofia (SDRC), porque a cicatriz volta a se formar no mesmo lugar. Nas duas primeiras semanas podem ocorrer deiscência e pele sem elasticidade, que às vezes obrigam a suspender a reabilitação por alguns dias; com **10 a 12 dias** a ferida já tolera mobilização e pressão.
+
+## Como a técnica evoluiu
+
+O conteúdo on-line do capítulo guarda a história. **BUCH (1974)** fazia a via dorsal separando a banda sagital do extensor, capsulotomia, recriação da bolsa volar com descolador e desinserção dos colaterais da cabeça, fletindo a MF a 90 graus; fechava centralizando o extensor e mobilizava em 5 a 7 dias. **YOUNG, WRAY e WEEKS** modificaram: dividiam o extensor longitudinalmente e **preservavam a metade volar dos colaterais e os acessórios** (pela estabilidade), com fio transarticular a 90 graus por 2 semanas. Eles também descreveram a **via volar** (incisão longitudinal de 2 cm entre as cabeças dos metacarpos, seguindo as bandas laterais até a MF e ressecando um segmento dos colaterais), útil quando a pele dorsal é deficiente, quando é preciso tenólise flexora ou quando haverá reconstrução extensora; nos dados de WEEKS, **44%** das liberações volares ganharam mais de 50 graus ativos, contra **16%** das dorsais. **GOULD e NICHOLSON**, com 105 capsulotomias dorsais em 37 pacientes, tiveram ganho médio de **21 graus** (18 graus em fratura e esmagamento, apesar dos 90 graus obtidos na sala), ainda assim com ganho funcional significativo. A lição comum é a mesma do texto impresso: a sala mostra o máximo possível, não o resultado final.
+
+!tabela Liberação da MF rígida em extensão (Green, cap. 10, p. 340 e 341)
+| Passo | O que se faz | Por quê |
+| --- | --- | --- |
+| Via | dorsal, extensor dividido e rebatido | tenólise e capsulectomia pela mesma incisão |
+| 1 | tenólise do extensor | o extensor aderido também bloqueia a flexão |
+| 2 | capsulectomia dorsal com fibras dorsais dos colaterais | meta de pelo menos 70 graus |
+| 3 | desinserir os colaterais da cabeça, muitas vezes dos dois lados | evitar rotação na flexão |
+| 4 | soltar placa volar da cápsula volar | recriar o recesso volar |
+| 5 | seccionar o acessório se a MF ressalta na extensão | o acessório curto prende a placa |
+| Pós | MF a 70 graus, IFP estendida, mobilizar em 2 a 3 dias | fio, se houver, sai em 5 a 7 dias |
+!fim
+
+!questoes central=mao-1464 relacionadas=mao-0065 treino=mao-2188,mao-3801
+conceito: MF rígida em extensão: via dorsal, tenólise do extensor, capsulectomia dorsal com as fibras dorsais dos colaterais, desinserção dos colaterais (muitas vezes dos dois lados) e soltura da placa da cápsula volar; meta de 70 graus; acessório seccionado se a MF ressalta; pouca indicação quando já flete 60 graus; fio retirado em 5 a 7 dias.
+como: O USP-SP 2024 pediu a afirmação correta sobre a técnica na MF; o TARO 2015, o arco a partir do qual a capsulotomia não se justifica; o SBCM 2022, quando retirar o fio.
+armadilha: Fixar 45 graus como meta, suturar a cápsula dorsal, desinserir só um colateral sem checar rotação ou desinserir a placa volar da falange como passo de rotina.
+alerta: Em `mao-0065`, o Green não usa a palavra contraindicação; diz que é incomum o paciente com 60 graus de flexão da MF se beneficiar da liberação. Em `mao-2188`, o Green diz que o fio pode sair tão cedo quanto 5 a 7 dias (gabarito de 7 dias mantido).
+!fim
+
+# Rigidez: a contratura em flexão da IFP {radar=confirmado}
+
+## O extensor decide o resultado
+
+Depois de confirmar que a cartilagem está boa, o principal desafio da IFP fletida não é a placa volar: é a **integridade e a função do aparelho extensor** (Green, p. 341). Se o extensor está atenuado ou lesado, soltar só a frente da articulação devolve a extensão **passiva**, mas o paciente não a sustenta **ativamente**, e a contratura volta. Nesse caso, a cirurgia precisa planejar a liberação (inclusive do colateral, pelo lado volar) somada à **reconstrução do extensor**. É a mesma lógica da botoeira crônica fixa (cap. 5), em que a banda central estirada é o problema de base.
+
+## As vias
+
+As duas vias aceitas são a **ziguezague volar de BRUNER** e a **mediolateral** (medioaxial). A anestesia local com sedação é a preferida, porque permite testar a extensão ativa e ajustar a liberação; com bloqueio ou geral, a eficácia só se avalia com uma incisão proximal e tração dos tendões (Green, p. 341). A via volar é **tecnicamente mais fácil**, mas a **mediolateral dá resultados melhores** (Fig. 10.3, p. 342). Os números confirmam: **BRUSER (1999)**, com 45 articulações, teve ganho de **50 graus pela mediolateral contra 30 pela volar**, diferença significativa (seção sobre os resultados, conteúdo on-line). A explicação provável é que a via mediolateral não deixa cicatriz volar sobre a bainha e a placa, que é exatamente o lugar que se quer manter livre.
+
+## A preferência do autor: a via mediolateral
+
+HOTCHKISS descreve a sua técnica (p. 341; Fig. 10.3, p. 342). Sob anestesia local, faz-se uma incisão **mediolateral do meio da falange proximal ao meio da média**. O feixe neurovascular é afastado para palmar e o **retinacular transverso** é seccionado, o que expõe o colateral acessório e a placa volar. O autor prefere incisão **unilateral**, e abre o outro lado só se o colateral oposto for difícil. Solta-se o **checkrein** e excisa-se o **colateral acessório** o quanto for preciso; se a extensão ainda não vem, solta-se o **colateral próprio**. A incisão pode ser estendida para dorsal quando é preciso tenólise ou reconstrução da banda central.
+
+## A via volar e o marco da artéria
+
+Pela via volar (seção sobre a técnica volar, conteúdo on-line), a incisão de BRUNER vai da prega distal da palma à prega digitopalmar; a bainha é aberta em dobradiça lateral, da borda distal da **A2 à borda proximal da A4**, preservando as vínculas. Os checkreins são identificados por um marco preciso: a **artéria digital transversa**, que passa **sob o checkrein, cerca de 3 mm proximal à articulação**, e deve ser preservada. A sequência segue a resposta do dedo:
+
+1. liberar os **checkreins**;
+2. se a extensão não vem, liberar a cápsula do **complexo da placa volar** e os **colaterais acessórios**;
+3. se ainda persiste, desinserir o restante do **colateral próprio** da falange proximal.
+
+Ao final, testa-se a **extensão ativa**, e por isso a anestesia local faz diferença. Não há como saber antes se será preciso tenólise do **extensor**; o paciente deve ser avisado.
+
+!tabela Liberação da contratura em flexão da IFP (Green, cap. 10, p. 341 e 342 e seção sobre a técnica volar)
 | Passo | Estrutura | Observação |
 | --- | --- | --- |
-| Via | ziguezague volar (BRUNER) ou mediolateral | mediolateral deu mais ganho |
+| Via | mediolateral (preferida) ou ziguezague volar de BRUNER | mediolateral deu mais ganho (BRUSER: 50 contra 30 graus) |
+| Acesso | retinacular transverso (mediolateral) ou bainha de A2 a A4 (volar) | preservar vínculas |
 | 1 | ligamentos checkrein | achados pela artéria digital transversa, que é poupada |
 | 2 | placa volar (cápsula) e colateral acessório | se a extensão passiva não veio |
 | 3 | colateral próprio, desinserido da proximal | se a contratura persiste |
-| 4 | testar extensão ativa | avisar que pode precisar de tenólise do extensor |
+| 4 | testar extensão ativa | avisar que pode precisar de tenólise ou reconstrução do extensor |
 !fim
 
-As expectativas são modestas. CURTIS (1954) viu que **quanto mais estruturas envolvidas, pior** e que cerca de **metade** do ganho intraoperatório se mantém; GHIDELLA teve média de apenas 7,5 graus.
+## Depois da sala
 
-!questoes central=mao-0772 treino=mao-2119,mao-2121,mao-2032
-conceito: Contratura em flexão da IFP: via ziguezague volar ou mediolateral; liberam-se primeiro os checkreins (achados pela artéria digital transversa), depois a placa volar e o colateral acessório, e por último o colateral próprio.
+Antes de fechar, o garrote é desinsuflado e a hemostasia é cuidadosa: um hematoma é uma nova contratura em formação. A perfusão do dedo é vigiada, porque estirar de uma vez um feixe neurovascular que passou meses encurtado pode causar espasmo e **dedo isquêmico**; a tala fica na **máxima extensão segura** por 3 a 5 dias. O fio em extensão às vezes é usado, mas com pressão excessiva ele causa **necrose** ou supercrescimento da cartilagem na cabeça da falange proximal. Depois, talas dinâmica e estática por 3 a 4 meses ou até o platô (seção sobre a técnica volar, conteúdo on-line). Na técnica do autor, o curativo sai com **3 dias**, o movimento ativo começa com o terapeuta, duas talas (de extensão e de flexão) são alternadas e a **tala estática em extensão à noite** continua por **até 6 meses** (p. 341).
+
+## O que esperar
+
+Os resultados são modestos, e o Green os apresenta sem disfarce (seção sobre os resultados, conteúdo on-line). **CURTIS (1954)**, com 25 pacientes pela via mediolateral, capsulectomia, excisão dos colaterais, elevação da placa e fio por 5 a 7 dias, viu que **quanto mais estruturas envolvidas, pior o resultado**: só cápsula e ligamentos dão bom resultado; não se espera movimento completo, mas melhora da função; e tipicamente se mantém cerca de **metade do ganho intraoperatório**. **SPRAGUE** foi menos otimista: com capsulotomia, colaterais, placa e extensor envolvidos, o ganho foi de só 30 graus na sala, com **90% perdido** depois. **GHIDELLA**, com 68 IFP seguidas por pelo menos 24 meses, teve ganho médio de apenas **7,5 graus**; os melhores candidatos tinham **menos de 28 anos**, contratura não complicada e **flexão máxima pré-operatória menor que 43 graus**. A conclusão: liberar uma IFP muito contraída dá resultado imprevisível e só deve ser feita com cirurgião e paciente cientes disso.
+
+## O fixador externo: DIGIT WIDGET
+
+Uma alternativa é aplicar a força pelo **osso** em vez da pele (Green, p. 341; Fig. 10.4, p. 342). O **DIGIT WIDGET** (2001) é um fixador de perfil baixo, controlado pelo próprio paciente, que aplica um **torque de extensão** à IFP por meio de elásticos (não é distração), permitindo que a articulação se mova enquanto o torque age. A pele, que nas talas limita a força tolerada, deixa de ser o limite. E, como não corta nada, ele **não queima pontes** para uma reconstrução futura.
+
+O caso do capítulo (conteúdo on-line) mostra a indicação: mulher de 38 anos, reparo do profundo do mínimo com superficial íntegro, **contratura de 90 graus da IFP** aos 6 meses, sem melhora com terapia e gesso seriado; a RM mostrava a A2 íntegra e cicatriz em A1 e zona 2, e o ultrassom mostrava o profundo deslizando. Como o tendão deslizava, não havia indicação de tenólise nem de liberação: usou-se o **DIGIT WIDGET**. A contratura recidivou 48 horas depois de tirar os elásticos; a solução foi reaplicá-los e acrescentar um **bloqueio da hiperextensão da MF**, porque a MF hiperestendida aumenta o tônus dos flexores e põe os extensores intrínsecos da IFP em desvantagem mecânica. Aos 16 meses, a paciente estava sem contratura.
+
+!questoes central=mao-0772 treino=mao-2119,mao-2121,mao-2032,mao-3802
+conceito: Contratura em flexão da IFP: o resultado depende sobretudo do aparelho extensor; via ziguezague volar ou mediolateral (esta com mais ganho); liberam-se primeiro os checkreins (achados pela artéria digital transversa), depois a placa volar e o colateral acessório, e por último o colateral próprio.
 como: O SBCM 2022 perguntou o que se libera antes do colateral próprio e qual o marco dos checkreins; o INTO 2023, o conjunto de estruturas liberadas; o SBCM 2024, as vias recomendadas.
 armadilha: Começar pelo colateral próprio, usar a polia C2 como marco ou propor via dorsal para a contratura em flexão.
 !fim
 
-# Rigidez: contratura em extensão da IFP e da MF {radar=confirmado}
+# Rigidez: a contratura em extensão da IFP {radar=clinico}
 
-## A IFP que não flete
+## Por que a IFP trava em extensão
 
-**Aderências do tendão extensor são a causa mais comum de contratura em extensão** da IFP (Green, conteúdo online do cap. 10); também contribuem cicatriz dorsal, fibrose da cápsula dorsal, intrínsecos aderidos ou contraídos e bloqueio ósseo. A liberação é por via **dorsal ou dorsolateral**: dividem-se as fibras transversas do retinacular dos dois lados da banda central, faz-se a **tenólise do extensor**, excisa-se a **cápsula dorsal** e, se a flexão não vier, liberam-se as fibras dorsais e depois o restante dos **colaterais** (p. 341 e 343). Em seguida, testa-se a flexão ativa (pode faltar tenólise flexora) e o **BUNNELL** (pode faltar liberação intrínseca).
+A causa mais comum é a **aderência do extensor**, que o capítulo 5 trata em detalhe (Green, cap. 10, seção sobre o tratamento não operatório da IFP). Somam-se cicatriz dorsal, fibrose da **cápsula dorsal**, colaterais encurtados em extensão e **intrínsecos contraídos ou aderidos**, além do bloqueio ósseo, que a radiografia mostra. Como a cápsula dorsal da IFP é íntima da banda central, o extensor e a cápsula costumam aderir juntos, e a liberação trata os dois.
 
-## A MF que não flete
+## A técnica
 
-A MF tem o **efeito came**: os colaterais ficam **frouxos em extensão e tensos em flexão**, e a mão edemaciada repousa com a MF **estendida**. Por isso a MF rígida típica é em **extensão**, e a prevenção é **tala com a MF em flexão** (Green, p. 338 e conteúdo online). Com IF flexíveis, **é incomum que um paciente cuja MF flete até 60 graus peça ou se beneficie da liberação**; os dedos radiais toleram menos flexão que os ulnares.
+A liberação é feita sob anestesia local com sedação, que permite o teste voluntário e o ajuste fino, por via **dorsal curvilínea** ou **dorsolateral (mediolateral)** (Green, p. 341 e 343; Fig. 10.5). Expõe-se o extensor e dividem-se longitudinalmente as fibras transversas do retinacular dos dois lados da banda central; o extensor é levantado **sem lesar a inserção da banda central** na base da média, e faz-se a tenólise para proximal e distal, separando o tendão do osso embaixo e da pele em cima. Em seguida, excisa-se a **cápsula dorsal** e testa-se. Se a IFP não flete, soltam-se as **fibras mais dorsais dos colaterais**; se ainda não flete, o restante dos colaterais é solto da origem na falange proximal. A lógica é simétrica à da contratura em flexão: começa-se pela estrutura do lado bloqueado (dorsal) e só se avança para os colaterais se o arco não vier.
 
-A liberação da MF em extensão é **dorsal** (p. 340): divide-se o extensor, faz-se a tenólise, **excisa-se a cápsula dorsal** com as fibras dorsais dos colaterais, e o objetivo é **pelo menos 70 graus** de flexão. Se o colateral não passa sobre os côndilos, desinsere-se da cabeça do metacarpo, muitas vezes dos **dois lados** para evitar rotação; um descolador solta a **placa volar da cápsula**. A **lei dos retornos decrescentes** vale aqui: com 0 a 60 graus obtidos, tirar mais tecido arrisca instabilidade; se for preciso fio, ele pode sair **tão cedo quanto 5 a 7 dias**. O pós-operatório mantém a MF a 70 graus e começa a mobilização em 2 a 3 dias.
+## Os dois testes depois da liberação
 
-## Quando a articulação está ruim
+Com a articulação livre, faltam duas causas extrínsecas de bloqueio, e o Green manda procurar as duas (p. 343):
 
-Se há **artrose pós-traumática ou desalinhamento**, a liberação capsular rende pouco (Green, p. 338). A **artroplastia com implante** para rigidez pós-traumática de MF e IFP deu **ganho mínimo e falha frequente**, e a **artroplastia de distração** teve apenas **sucesso limitado**, sem recomendação geral (p. 339).
+- **Flexores**: testa-se a **flexão ativa**. Não há como saber antes se será preciso **tenólise flexora**, e o paciente deve ser avisado. Sem anestesia local, faz-se uma contraincisão no antebraço distal para tracionar os flexores.
+- **Intrínsecos**: faz-se o **teste de BUNNELL** na sala. Se for **positivo**, a contratura também é intrínseca e libera-se o intrínseco pela técnica de SMITH (a liberação intrínseca distal, com ressecção das fibras oblíquas e da banda lateral). Com o paciente acordado, testa-se ainda o **gancho ativo** (fletir IFP e IFD com a MF estendida), que revela graus sutis de tensão intrínseca; esses graus menores respondem a **alongamento** no pós-operatório e não exigem mais cirurgia.
 
-!questoes central=mao-1464 relacionadas=mao-0065 treino=mao-2120,mao-1939,mao-2188,mao-2031,mao-2869,mao-2902,mao-2914,mao-2921
-conceito: Contratura em extensão: causa mais comum é a aderência do extensor; na IFP e na MF, tenólise, capsulectomia dorsal e liberação dos colaterais; na MF, meta de 70 graus, fio retirado em 5 a 7 dias e pouca indicação quando já flete 60 graus; distração e implante rendem pouco.
-como: O SBCM 2022 perguntou estruturas liberadas na IFP e o tempo do fio na MF; o SIMÃO 2023, a causa mais comum; o USP-SP 2024, a técnica na MF; o TARO 2015, o arco que contraindica a capsulotomia; o SBCM 2024, artroplastia e distração.
-armadilha: Fixar 45 graus como meta, suturar a cápsula dorsal ou desinserir a placa volar na MF; acreditar que o implante resolve a rigidez pós-traumática.
-alerta: Em `mao-0065`, o Green não usa a palavra contraindicação; diz que é incomum o paciente com 60 graus de flexão da MF se beneficiar da liberação. Em `mao-2188`, o Green diz que o fio pode sair tão cedo quanto 5 a 7 dias (gabarito de 7 dias mantido).
+Esse passo explica por que a contratura em extensão pode resistir a uma liberação aparentemente completa: a articulação foi solta, mas o intrínseco curto continua puxando a IFP para extensão sempre que a MF estende.
+
+## Alternativas e resultados
+
+**INOUE (1991)** propôs um caminho menos extenso: liberar as bandas laterais dos dois lados da banda central e fletir passivamente com suavidade, rompendo as aderências do extensor e as intra-articulares; um fio de bloqueio dorsal da extensão permite flexão ativa imediata, e o fio sai com 2 semanas, seguido de tala dinâmica de flexão. Em 10 pacientes, o ganho médio foi de **47,5 graus**, sem complicação (Green, p. 343). O multicêntrico francês de **MANSAT e DELPRAT**, com 10 instituições e **246 liberações de IFP** (45% delas em extensão), teve ganho médio de flexão de **28 graus**, com o arco passando de 19 a 34 graus para 8 a 62 graus (p. 343).
+
+!tabela Liberação da contratura em extensão da IFP (Green, cap. 10, p. 341 e 343)
+| Passo | O que se faz | Observação |
+| --- | --- | --- |
+| Via | dorsal curvilínea ou mediolateral | local com sedação |
+| 1 | dividir o retinacular transverso dos dois lados da banda central e fazer a tenólise do extensor | não lesar a inserção da banda central |
+| 2 | excisar a cápsula dorsal | testar |
+| 3 | soltar as fibras dorsais dos colaterais, depois o restante | só se a flexão não vier |
+| 4 | testar a flexão ativa | pode faltar tenólise flexora |
+| 5 | BUNNELL na sala | positivo: liberar os intrínsecos (SMITH) |
+!fim
+
+!questoes treino=mao-2120,mao-1939
+conceito: A causa mais comum da contratura em extensão da IFP é a aderência do extensor; a liberação dorsal faz tenólise, capsulectomia dorsal e soltura dos colaterais; depois testam-se a flexão ativa (tenólise flexora) e o BUNNELL (liberação intrínseca).
+como: O SBCM 2022 perguntou quais estruturas se liberam na contratura em extensão; o SIMÃO 2023, a causa mais frequente.
+armadilha: Liberar a placa volar e os checkreins, que limitam a extensão e não a flexão, ou apontar a cápsula como causa mais frequente.
 !fim
 
 # Os dedos congênitos: osso, plano e fise {radar=fundamento}
@@ -540,7 +790,7 @@ Nas síndromes, o padrão do encurtamento ajuda no diagnóstico. A Tabela 36.3 (
 
 O Green (p. 1241) diz que as anomalias associadas, como sindactilia, clinodactilia e sinfalangismo, **muitas vezes atrapalham mais que o encurtamento**. Por isso o exame vai além do dedo: membro inteiro, **cintura escapular** (a falta da cabeça esternocostal do peitoral maior denuncia a POLAND, cuja braquidactilia típica é dos dedos centrais por falange média pequena), mão contralateral, pés e família (a expressão é variável). Na braquimetacarpia, duas coisas incomodam: a **cascata dos dedos quebrada**, que chama atenção quando o metacarpo é central, e a **cabeça do metacarpo curto palpável na palma**, que pode atrapalhar a preensão.
 
-!questoes treino=mao-2431,mao-2278,mao-2553,mao-2152,mao-2882,mao-2888,mao-2893,mao-2905,mao-2915,mao-2944
+!questoes treino=mao-2431,mao-2278,mao-2553,mao-2152,mao-2882,mao-2888,mao-2893,mao-2905,mao-2915,mao-2944,mao-2869,mao-2902,mao-2914,mao-2921
 conceito: Braquidactilia é dedo curto com todos os ossos presentes; o mais acometido é a falange média, última a ossificar, e depois o metacarpo; dedos mais acometidos, mínimo e indicador; braquimetacarpia isolada no 4º metacarpo de meninas; pseudo-hipoparatireoidismo encurta anular e mínimo; KELLAM põe a ELLIS-VAN CREVELD na braquidactilia com polidactilia.
 como: O SIMÃO 2022 perguntou os ossos mais encurtados; o SIMÃO 2024, o osso depois da falange média; o SIMÃO 2021, os metacarpos do pseudo-hipoparatireoidismo; o SBCM 2022, o grupo de KELLAM da ELLIS-VAN CREVELD.
 armadilha: Pôr a braquidactilia na falange proximal ou distal, ou trocar o grupo da ELLIS-VAN CREVELD (polidactilia) pelo da APERT (sindactilia).
@@ -845,8 +1095,8 @@ alerta: O limite de 60 graus de `mao-0943` não está no Green 7 nem no Campbell
 
 # Fechamento {radar=fundamento}
 
-As deformidades dos dedos se entendem por desequilíbrio. O **martelo** é o terminal; a sobra de força na banda central, com placa volar frouxa, faz o **cisne**; o tratamento é tala longa da IFD e, no crônico, **FOWLER** (cortar a banda central por baixo, preservando o triangular) ou um **ORL reconstruído**. A **botoeira** é a banda central somada à falha do suporte das bandas laterais; instala-se em **2 a 3 semanas**, diagnostica-se pelo **ELSON** e trata-se com **IFP estendida e IFD livre**; na crônica, **BURTON** gradua e **CURTIS** escalona (retinacular transverso, FOWLER distal, avanço da banda central). A **pseudobotoeira** é cápsula, colaterais e placa volar, com extensor íntegro. Na reumatoide, **NALEBUFF** separa o cisne pela mobilidade da IFP e pela radiografia, e a botoeira começa pela **sinovite que estira** a banda central. Intrínseco **plus** e **minus** são espelhos, testados por **BUNNELL** e **BOUVIER**. Na rigidez, a ordem é **checkrein, placa e acessório, colateral próprio**, com a **artéria digital transversa** como guia, e a MF raramente precisa de cirurgia se já flete 60 graus.
+As deformidades dos dedos se entendem por desequilíbrio. O **martelo** é o terminal; a sobra de força na banda central, com placa volar frouxa, faz o **cisne**; o tratamento é tala longa da IFD e, no crônico, **FOWLER** (cortar a banda central por baixo, preservando o triangular) ou um **ORL reconstruído**. A **botoeira** é a banda central somada à falha do suporte das bandas laterais; instala-se em **2 a 3 semanas**, diagnostica-se pelo **ELSON** e trata-se com **IFP estendida e IFD livre**; na crônica, **BURTON** gradua e **CURTIS** escalona (retinacular transverso, FOWLER distal, avanço da banda central). A **pseudobotoeira** é cápsula, colaterais e placa volar, com extensor íntegro. Na reumatoide, **NALEBUFF** separa o cisne pela mobilidade da IFP e pela radiografia, e a botoeira começa pela **sinovite que estira** a banda central. Intrínseco **plus** e **minus** são espelhos, testados por **BUNNELL** e **BOUVIER**. Na rigidez, o edema empurra a mão para a pior postura (MF estendida, IFP fletida), e o came da MF explica por que ela trava em extensão; 87% resolvem com tala. Na MF, liberação dorsal com meta de 70 graus, colaterais muitas vezes dos dois lados e acessório se ressalta, sem indicação se já flete 60 graus. Na IFP fletida, o extensor decide o resultado e a ordem é **checkrein, placa e acessório, colateral próprio**, com a **artéria digital transversa** como guia e a mediolateral rendendo mais; na IFP estendida, tenólise e cápsula dorsal, depois flexão ativa e BUNNELL na sala.
 
 Nas deformidades congênitas, a chave é a **fise**. A **braquidactilia** é quase sempre a **falange média**, a última a ossificar, e só se alonga o metacarpo curto central (distração) ou o dedo angulado (cunha de abertura); falange curta isolada não se opera. A **clinodactilia** é a angulação **radioulnar** acima de 10 graus da **falange média** do mínimo, causada pela **barra epifisária longitudinal**; COONEY separa só osso de osso com partes moles e o limite de **45 graus**; VICKERS resseca a barra e interpõe gordura enquanto a fise está aberta, e a osteotomia fica para a maturidade (fechamento na trapezoidal, abertura na triangular, primária no polegar). A **KIRNER** é a **falange distal** do mínimo curvada para **palmar e radial**, em meninas, com inchaço dorsal antes e unha em bico depois; a cirurgia é estética e adiada. A **camptodactilia** é a **IFP** fletida, 80% no lactente, com o flexor superficial curto como principal suspeito; abaixo de 30 graus, alongamento e órtese.
 
-> **Na prova:** DOYLE **IVA criança, IVB 20% a 50% por hiperflexão, IVC mais de 50% com subluxação**; ALBERTONI corta em **30 graus**; FOWLER secciona a **banda central** e tensiona o terminal; martelo vira **cisne**; botoeira em **2 a 3 semanas**, IFD **livre**; ORL **volar na IFP, dorsal no terminal**; pseudobotoeira = **colaterais e placa volar**; BURTON II = **fixa com bandas laterais contraídas**; CURTIS II **secciona o retinacular transverso**, IV **avança 4 a 6 mm**; AICHE = **hemibandas mediais na linha média**; NALEBUFF III = **rígida sem destruição**, IV = **artrodese**; BUNNELL positivo = **intrínseco**; checkrein limita a **extensão** e cruza a **artéria digital transversa**; braquidactilia = **falange média**, BELL **E = metacarpos curtos**; distração em **4 a 7 dias**, **0,25 a 0,5 mm duas vezes ao dia**; clinodactilia acima de **10 graus**, **falange média**, **homens**; barra ossificada cedo = **delta**; COONEY **complicada = mais de 45 graus**, **complexa = partes moles** (sindactilia); VICKERS **antes dos 6 anos**; polegar = **osteotomia primária**; KIRNER **distal, palmar e radial, meninas 2:1**, IFD **preservada**, periósteo **dorsal** como dobradiça; camptodactilia **80% infantil**, **dois terços bilaterais**, **III sindrômica**, abaixo de **30 graus** não operar.
+> **Na prova:** DOYLE **IVA criança, IVB 20% a 50% por hiperflexão, IVC mais de 50% com subluxação**; ALBERTONI corta em **30 graus**; FOWLER secciona a **banda central** e tensiona o terminal; martelo vira **cisne**; botoeira em **2 a 3 semanas**, IFD **livre**; ORL **volar na IFP, dorsal no terminal**; pseudobotoeira = **colaterais e placa volar**; BURTON II = **fixa com bandas laterais contraídas**; CURTIS II **secciona o retinacular transverso**, IV **avança 4 a 6 mm**; AICHE = **hemibandas mediais na linha média**; NALEBUFF III = **rígida sem destruição**, IV = **artrodese**; BUNNELL positivo = **intrínseco**, desvio ulnar = **lumbrical**, gancho passivo limitado com BUNNELL normal = **lumbrical isolado**; extensor extrínseco = **punho e MF fletidos**; **87%** resolvem sem cirurgia; não operar sem **paciente, terapeuta e pagador**; MF: **70 graus**, acessório se **ressalta**, fio **5 a 7 dias**, 60 graus não opera; IFP em flexão: o **extensor** decide, mediolateral **50 contra 30 graus** (BRUSER), cerca de **metade** do ganho se mantém (CURTIS); IFP em extensão: **aderência do extensor**, BUNNELL positivo depois da liberação = **liberar intrínsecos**; checkrein limita a **extensão** e cruza a **artéria digital transversa**; braquidactilia = **falange média**, BELL **E = metacarpos curtos**; distração em **4 a 7 dias**, **0,25 a 0,5 mm duas vezes ao dia**; clinodactilia acima de **10 graus**, **falange média**, **homens**; barra ossificada cedo = **delta**; COONEY **complicada = mais de 45 graus**, **complexa = partes moles** (sindactilia); VICKERS **antes dos 6 anos**; polegar = **osteotomia primária**; KIRNER **distal, palmar e radial, meninas 2:1**, IFD **preservada**, periósteo **dorsal** como dobradiça; camptodactilia **80% infantil**, **dois terços bilaterais**, **III sindrômica**, abaixo de **30 graus** não operar.
