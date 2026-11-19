@@ -1,0 +1,588 @@
+---
+id: green-reconstrucao-polegar
+versao: 1
+titulo: Reconstrução do polegar
+especialidade: mao
+acesso: gratis
+livro: Green's Operative Hand Surgery
+edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 21)
+capitulo: Capítulo 48 · Thumb Reconstruction
+autores: Wolfe, Pederson, Kozin e Cohen (editores do Green 7)
+fonte: Livros conferidos localmente em 19/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 48 (Thumb Reconstruction, p. 1674 a 1706), lido de ponta a ponta, com os pontos críticos, os casos clínicos e a lista de referências; Campbell's Operative Orthopaedics, 15ª ed., cap. 21 (Amputations of the Hand, p. 766 a 776: avanço palmar, GILLIES-MILLARD, osteoplástica de VERDAN e níveis de LISTER). Estudos citados pelo nome conforme a lista de referências do cap. 48 do Green (NAPIER, HUGUIER, NICOLADONI, GOSSET, MOBERG, LITTLER, GURDIN e PANGMAN, HASTINGS, FOUCHER, BROWN, MATEV, BIEMER e STOCK, MICHON, BUTLER, GARCIA-VELASCO).
+subtemas: Amputações e reimplantes; Retalhos e cobertura cutânea
+resumo: Mão sem polegar é uma pinça cujas pontas não se encontram (NAPIER); o polegar reconstruído precisa de sensibilidade e oposição, e a CMC móvel é o que não se pode perder; sem CMC, artrodese em 40 graus de abdução, 15 de extensão e 120 de pronação; LISTER em quatro níveis (cobertura, subtotal, total com basal, total sem basal); polpa menor que 1 cm quadrado cicatriza por segunda intenção; MOBERG bipediculado e homodigital cobre até 1,5 cm sem incisão de alívio e até 2,5 cm com ela, com MF e IF em 30 a 45 graus e enxerto de pele total; cross-finger do dorso radial da falange proximal do indicador com secção do CLELAND e divisão em 10 a 21 dias; inervado pelo radial (GAUL, MIURA) e duplamente inervado (HASTINGS, ramo dorsal do digital radial do indicador ao digital ulnar do polegar); KITE de FOUCHER pela primeira artéria metacarpal dorsal, da MF à IFP, pivô na base do primeiro e segundo metacarpais; ilha heterodigital de LITTLER do lado ulnar do médio, ou do anular sem mediano; falangização por zetaplastia simples ou de quatro retalhos (ganho de 1,5 a 2 cm) e retalho dorsal de BROWN; dedo do pé como opção ótima no nível 3; distração do metacarpal de 3 a 4 cm; osteoplástica de NICOLADONI com enxerto tricortical e ilha neurovascular; policização do coto lesado; no nível 4, policização: a MF hiperextendida vira a nova CMC.
+---
+
+# Como ler este capítulo {radar=fundamento}
+
+Este resumo segue o capítulo 48 (Thumb Reconstruction) do Green's Operative Hand Surgery, 7ª edição (2017), lido por inteiro, com os pontos críticos e os casos clínicos que acompanham o capítulo. Para dar outro ângulo aos números que as bancas mais cobram (avanço palmar, osteoplástica, níveis de LISTER), usamos também o capítulo 21 (Amputations of the Hand) do Campbell's Operative Orthopaedics, 15ª edição. As páginas citadas são as impressas.
+
+O capítulo é antigo no espírito e moderno no recado. O autor reconhece logo na abertura (p. 1674) que boa parte das técnicas criativas do século XX perdeu espaço para duas conquistas da microcirurgia: o **reimplante**, que devolve o próprio polegar, e a **transferência do dedo do pé**, que dá o substituto mais parecido. Mesmo assim, o capítulo descreve em detalhe as técnicas que não são microcirúrgicas, por três motivos que valem para o aluno: elas continuam sendo a resposta para quem não quer ou não pode receber um dedo do pé; elas resolvem com um procedimento simples problemas que não precisam de microcirurgia (a polpa, a comissura); e são justamente elas que caem nas provas.
+
+O fio condutor cabe numa frase: **o polegar serve para opor e para sentir; a reconstrução escolhe, pelo nível da perda, o que falta devolver: pele sensível, profundidade de comissura, comprimento ou a própria articulação basal**. Tudo o que vem a seguir é a aplicação dessa frase:
+
+- **O que o polegar faz** e por que a carpometacarpal (CMC) é a peça que não se pode perder.
+- **Os quatro níveis de LISTER**, que transformam uma lista de técnicas num algoritmo.
+- **O nível 1, a polpa**, com o avanço palmar de MOBERG, o cross-finger e suas variantes inervadas, o KITE e a ilha neurovascular de LITTLER. É o assunto que mais cai.
+- **O nível 2, a falangização**: zetaplastias e o retalho dorsal rotacional.
+- **O nível 3, o comprimento**: dedo do pé, distração do metacarpal, osteoplástica e policização de um dedo já lesado.
+- **O nível 4, a basal perdida**: a policização, em que a MF do dedo transferido passa a trabalhar como CMC.
+
+A transferência do dedo do pé tem capítulo próprio no Green (cap. 47) e está explicada no resumo green-amputacoes-reimplantes, na seção sobre a transferência de dedos do pé; aqui ela aparece só como a opção que serve de comparação para todas as outras. A policização da criança com polegar hipoplásico ou ausente está no resumo green-deficiencias-longitudinais.
+
+> **Na prova:** polegar = **sensibilidade + oposição**; a **CMC móvel** é indispensável, MF e IF não; sem CMC, artrodese em **40 graus de abdução, 15 de extensão e 120 de pronação**; LISTER **1 cobertura, 2 subtotal, 3 total com basal, 4 total sem basal**; polpa **menor que 1 cm quadrado: segunda intenção**; MOBERG **até 1,5 cm sem alívio e até 2,5 cm com alívio**, MF e IF em **30 a 45 graus**, enxerto de pele **total**; cross-finger do dorso **radial** da falange **proximal** do indicador, secção do **CLELAND**; KITE pela **primeira artéria metacarpal dorsal**, nervo **radial superficial**, ilha da **MF à IFP**; LITTLER do lado **ulnar do médio** (ou do anular se o mediano não funciona); zetaplastia de quatro retalhos ganha **1,5 a 2 cm**; distração dá **3 a 4 cm**; na policização a **MF vira CMC** em hiperextensão.
+
+# O que o polegar faz e o que a reconstrução precisa devolver {radar=fundamento}
+
+## A pinça cujas pontas não se encontram
+
+O capítulo abre com uma frase do anatomista John NAPIER: a mão sem polegar é, no pior caso, uma espátula animada e, no melhor, uma pinça cujas pontas não se encontram (p. 1674). A imagem é exata. Os quatro dedos longos fletem todos no mesmo plano, como as lâminas de um garfo; sem um elemento que se oponha a eles, a mão consegue enganchar e empurrar, mas não consegue segurar um objeto entre duas superfícies.
+
+Os antropólogos descreveram três "pegadas" que separam a mão humana da dos outros hominídeos, e as três dependem do polegar: a **polpa contra a lateral** do indicador (a pinça de chave), o **mandril de três pontas** (polegar, indicador e médio, como quem segura uma caneta) e o **berço de cinco pontas**, em que todos os dedos envolvem um objeto esférico (p. 1674). A perda do polegar, seja por falha de formação seja por trauma, desmonta as três. Por isso o Campbell (cap. 21, p. 771) estima que o polegar responde por **40 a 50% da função da mão**, e por isso o mesmo princípio aparece em todos os livros: diante de um paciente motivado, a reconstrução de um polegar oponível deve ser tentada sempre que possível, pelo caminho técnico que estiver ao alcance do cirurgião.
+
+## As duas exigências: sensibilidade e oposição
+
+O Green resume o polegar útil em duas palavras (p. 1675). A primeira é **sensibilidade**: o polegar tem de ser indolor e ter sensibilidade útil, ou pelo menos protetora. A segunda é **oposição**, que por sua vez depende de quatro atributos: comprimento, estabilidade, força e mobilidade.
+
+A ordem não é acidental. O autor lembra que, nos polegares reconstruídos das primeiras décadas do século XX, **a falta de sensibilidade foi a causa mais constante de desuso**. O mecanismo é simples de entender: um polegar insensível não informa ao cérebro a força da pinça nem a posição do objeto; o paciente precisa olhar para o que faz, aperta demais ou deixa cair, e com o tempo passa a usar a mão como se o polegar não existisse, fazendo a pinça entre o indicador e o médio. Um polegar curto mas sensível é usado; um polegar longo e insensível é esquecido. É por isso que a história da reconstrução, como veremos, é em grande parte a história de como levar nervo para o polegar novo.
+
+## O comprimento que importa
+
+Nem toda perda de comprimento precisa ser reconstruída. O Green (p. 1675) separa duas faixas:
+
+- Perder a **falange distal**, ou amputar logo proximal à IF, pode dispensar qualquer reconstrução: o coto ainda alcança os outros dedos e a pinça se mantém.
+- Perder o polegar na **diáfise da falange proximal ou mais proximal** deixa um coto curto demais para a pinça e para a preensão de objetos grandes.
+
+A razão está na geometria. A pinça depende de o polegar alcançar a polpa do indicador e do médio quando o primeiro metacarpal gira em oposição. Enquanto sobra comprimento suficiente para essa ponta encontrar as outras, a perda é tolerada. Quando o coto fica abaixo do nível da comissura, ele gira mas não toca nada.
+
+## A CMC é a peça que não se pode perder
+
+O movimento que torna o polegar oponível chama-se **antiposição** (o Green usa o termo para o conjunto de abdução, leve extensão e pronação do primeiro metacarpal). Esse movimento acontece quase todo na **CMC**, a articulação trapeziometacarpal, que é uma sela e permite a circundução. A conclusão do Green (p. 1675) é direta: **MF e IF normais não são obrigatórias, mas uma CMC com arco completo de circundução é indispensável**.
+
+Isso explica por que os níveis de LISTER separam a amputação total com basal preservada da amputação total com basal perdida. No primeiro caso, basta dar comprimento: a CMC ainda leva o polegar novo para a frente da palma. No segundo, além do comprimento, é preciso trazer uma articulação que faça o papel da CMC, ou aceitar um polegar fixo.
+
+Quando a CMC não pode ser recuperada, a solução é **artrodesar o polegar em quase completa abdução e oposição**: o Green dá **40 graus de abdução, 15 graus de extensão e 120 graus de pronação** do metacarpal (p. 1675). O polegar vira um "poste" sensível, imóvel, contra o qual os outros dedos fletem. Parece pouco, mas funciona, porque a pinça precisa de um anteparo bem posicionado mais do que de um anteparo móvel: são os dedos longos que se movem contra ele.
+
+## O paciente decide tanto quanto a técnica
+
+O Green insiste (p. 1675) que a escolha não sai só do nível da amputação. Pesam a idade, o sexo, a profissão, a dominância e, acima de tudo, o desejo do paciente. O exemplo do livro é bom: um joalheiro precisa de sensibilidade fina e mobilidade; um trabalhador braçal aceita perder mobilidade em troca de estabilidade e força. O mesmo nível de perda pode pedir técnicas diferentes. E o livro lembra que **a reabilitação é tão importante quanto a cirurgia**: um polegar bem reconstruído e mal reabilitado fica rígido e é abandonado.
+
+## Quatro caminhos que vieram do século XIX
+
+A história, contada no começo do capítulo (p. 1674 e 1675), não é decoração: cada técnica de hoje descende de uma de quatro ideias antigas, e entender a ideia ajuda a lembrar a técnica.
+
+1. **Falangização** (HUGUIER, 1874): não se acrescenta nada ao polegar; aprofunda-se a primeira comissura, o que torna o metacarpal e o que sobrou da falange relativamente mais longos. Daí vêm a zetaplastia, a zetaplastia de quatro retalhos, o retalho dorsal rotacional e o alongamento do metacarpo.
+2. **Retalho pediculado à distância com secção tardia** (NICOLADONI, 1897): o coto do polegar é preso a um retalho de outra parte do corpo e separado semanas depois. NICOLADONI fez isso também com o hálux, preso à mão em tempos, e é por isso que ele é considerado o precursor tanto da osteoplástica quanto da transferência do dedo do pé.
+3. **Transferência de um dedo sobre o próprio pedículo neurovascular** (GOSSET): a policização do indicador. Depois vieram as transferências do médio, do anular e do mínimo (LUKSCH e outros). GOSSET, ao fazer isso no trauma, lançou também os princípios da policização da criança com polegar ausente.
+4. **Osteoplástica**: um enxerto ósseo coberto por um tubo de pele, usada em larga escala antes da Segunda Guerra. Em 1955, MOBERG acrescentou a ilha neurovascular, levando pele sensível de outro dedo para a ponta do polegar novo, justamente para resolver o problema da sensibilidade.
+
+O ideal moderno é o "semelhante por semelhante": repor o polegar com tecido que se pareça com ele. Nesse critério, **o reimplante é a melhor reconstrução**, porque devolve o próprio polegar, e o dedo do pé vem logo depois. As demais técnicas entram quando nenhuma das duas é possível ou desejada.
+
+# Os níveis de LISTER: a pergunta que organiza tudo {radar=fundamento}
+
+## Por que classificar pelo nível
+
+Diante de dezenas de técnicas, o cirurgião precisa de uma pergunta que elimine a maioria delas. A de LISTER, preferida pelos autores do Green (p. 1675) e também adotada pelo Campbell (cap. 21, Fig. 21.30), é: **o que está faltando?** A resposta tem quatro graus, do mais distal ao mais proximal, e cada grau tem uma prioridade diferente.
+
+!tabela Níveis de LISTER para planejar a reconstrução do polegar (Green 7, cap. 48, p. 1675)
+| Nível | Perda | Prioridade da reconstrução |
+|---|---|---|
+| 1 | Comprimento aceitável, cobertura ruim (ponta e polpa); tenares e basal funcionam | Sensibilidade e pele durável |
+| 2 | Amputação subtotal, comprimento duvidoso | Escolha guiada pela necessidade que o paciente percebe: de só cobertura até a reconstrução de uma amputação total |
+| 3 | Amputação total com a articulação basal preservada | Devolver o comprimento; o motor depende dos intrínsecos restantes |
+| 4 | Amputação total com perda da articulação basal | Comprimento e uma nova basal, ou artrodese em antiposição |
+!fim
+
+## O que cada nível significa na prática
+
+No **nível 1**, o polegar tem o tamanho certo, mas a ponta está descoberta ou mal coberta. O problema é de pele: o objetivo é uma polpa durável e sensível. As técnicas são retalhos locais e regionais.
+
+No **nível 2**, a amputação passou da IF e chegou à falange proximal. O comprimento que sobrou pode ou não bastar, e o Green tem o cuidado de dizer que quem decide é a necessidade que o próprio paciente percebe. Um paciente que pinça bem e só se queixa de não abrir a mão para um copo pode precisar apenas de uma comissura mais funda; outro, que não alcança o indicador, precisa de comprimento como se a amputação fosse total.
+
+No **nível 3**, o polegar inteiro se foi, mas a CMC está lá, com seus tenares. Falta comprimento. A articulação basal ainda leva o polegar novo à oposição, e os músculos intrínsecos que restaram podem movê-lo.
+
+No **nível 4**, perdeu-se também a basal. Já não basta alongar: um tubo de pele com osso dentro, preso a um carpo sem CMC, não se opõe a nada. É preciso trazer uma articulação nova (a MF de um dedo policizado) ou fixar o polegar em oposição.
+
+## O erro mais comum ao usar a classificação
+
+O erro clássico é confundir "total" com "nível 4". O que separa o nível 3 do nível 4 não é a perda do polegar inteiro, que existe nos dois, mas o estado da **articulação basal**. Uma serra que leva o polegar na base da falange proximal ou no metacarpal, deixando a trapeziometacarpal íntegra, produz um nível 3. O mesmo vale para o nível 1: um polegar com a ponta aberta e o comprimento quase todo preservado não é "subtotal", porque o problema é só de pele.
+
+!questoes treino=mao-2598,mao-2611
+conceito: LISTER divide a perda do polegar em quatro níveis: 1 cobertura com comprimento aceitável, 2 subtotal de comprimento duvidoso, 3 total com basal preservada (prioridade: comprimento) e 4 total sem basal (comprimento e nova basal ou artrodese); dentro do nível 1, menos de 1 cm quadrado cicatriza por segunda intenção e os heterodigitais ficam para perdas maiores que 2,5 cm.
+como: O simulado do SIMÃO 2022 deu um polegar amputado na serra com a trapeziometacarpal preservada e pediu o nível e a prioridade; o do SIMÃO 2021 pediu a afirmação de acordo com o Green sobre a escolha da técnica em cada nível.
+armadilha: Chamar de nível 4 toda amputação total; o nível 4 exige a perda da basal. E aceitar que a falangização está contraindicada na amputação da parte distal da falange proximal, quando é exatamente a sua indicação.
+!fim
+
+# Nível 1: a polpa e a ponta, escolhidas pelo tamanho {radar=confirmado}
+
+## A zona de amputação compensada
+
+O Green chama a amputação na altura da IF, quando bem revisada, de **zona de amputação compensada** (p. 1676): o déficit funcional é mínimo. O coto ainda alcança os dedos, a MF e a CMC estão íntegras, e a pele palmar da falange proximal, bem inervada, vira a nova superfície de pinça. Um coto no terço distal do polegar funciona quase sem incapacidade.
+
+Daí sai uma regra prática pouco intuitiva: **quando a ponta não pode ser salva com sensibilidade e estabilidade, completar a amputação pode dar resultado igual, e mais rápido**, que insistir num retalho complicado. Mas completar a amputação não é fechar de qualquer jeito. O Green pede dois cuidados: evitar bordas "quadradas" (as orelhas de pele nos cantos do coto, que ficam salientes e doloridas) e **ressecar os nervos digitais proximalmente**, para que o neuroma inevitável fique longe da superfície de apoio, protegido por partes moles.
+
+## Primeiro o tamanho, depois o nervo
+
+A escolha da cobertura da polpa é decidida, antes de tudo, pelo **tamanho do defeito**; só depois entra o estado dos nervos digitais (p. 1676). A lógica é a mesma de toda a cirurgia reparadora: usar o procedimento mais simples que resolve. Um defeito pequeno fecha sozinho; um médio pede tecido vizinho; um grande pede tecido de outro dedo.
+
+## Menos de 1 cm quadrado: deixar cicatrizar
+
+Para defeitos **menores que 1 cm quadrado, sem osso exposto**, o Green prefere a **cicatrização por segunda intenção** (p. 1676). As alternativas aceitas são o enxerto de pele, os retalhos triangulares laterais e o V-Y palmar.
+
+Por que deixar aberto é a primeira escolha? Porque a cicatrização por segunda intenção trabalha a favor do paciente na ponta do dedo. A **contração da ferida** puxa para o centro a pele vizinha, que é pele da própria polpa, com sua sensibilidade e seus corpúsculos; a cicatriz final é muito menor que o defeito original. O resultado é uma polpa com **sensibilidade quase normal**, sem área doadora e sem cirurgia. O preço é tempo: algumas semanas de curativos. O Green descreve um curativo não aderente, com a primeira troca em 24 a 48 horas e trocas diárias depois.
+
+O **enxerto de pele** preserva o comprimento, mas tem um limite que as bancas gostam de explorar: ele **não dá uma pele durável e indolor**, nem uma boa sensibilidade a longo prazo. O enxerto não traz terminações nervosas próprias; ele é reinervado de forma incompleta a partir das bordas e do leito, e sobre um osso sem acolchoamento fica sensível ao toque e frágil.
+
+## O V-Y palmar e a prega da IF
+
+O V-Y palmar avança a pele da polpa sobre a ponta. A regra técnica do Green (p. 1676, Fig. 48.1) é que **o ápice do V não cruze a prega de flexão da IF**. A razão é a contratura: uma cicatriz longitudinal que atravessa uma prega de flexão se retrai ao longo do eixo do dedo e puxa a articulação em flexão. É o mesmo princípio que leva o cirurgião de mão a fazer incisões em zigue-zague ou médio-axiais nos dedos.
+
+## Quando o defeito ameaça função e comprimento
+
+Acima desse tamanho, três situações mudam a conduta (p. 1676): **perda de mais de 50% da polpa distal**, **tendão sem bainha** e **osso sem periósteo**. Nenhum desses leitos aceita enxerto (o enxerto precisa de leito vascularizado), e nenhum cicatriza bem por segunda intenção sem encurtar o polegar. A solução é trazer tecido com circulação própria: o avanço palmar, o cross-finger, a ilha neurovascular ou o cross-finger inervado pelo radial.
+
+A USP-SP cobrou exatamente essa situação (amputação da falange distal sem possibilidade de reimplante, querendo evitar encurtamento) e esperava os retalhos pediculados intrínsecos do polegar: MOBERG, LITTLER e KITE. O mesmo grupo de retalhos aparece numa questão de comparação, em que só uma afirmação estava certa: o MOBERG é bipediculado e dá sensibilidade comparativamente melhor.
+
+!questoes relacionadas=mao-1635,mao-1424 treino=mao-3827,mao-3829
+conceito: Na perda da polpa do polegar com osso exposto, a cobertura vem de retalhos intrínsecos com circulação própria (MOBERG, KITE, ilha de LITTLER); o MOBERG, bipediculado e homodigital, dá a melhor sensibilidade, porque leva a própria pele palmar do polegar.
+como: A USP-SP 2026 pediu os retalhos pediculados intrínsecos que evitam encurtar o coto após amputação da falange distal; a USP-SP 2024 pediu a afirmação correta sobre as opções para a polpa.
+armadilha: Achar que o cross-finger é de eleição no idoso (rigidez e dois tempos pesam contra), que o LITTLER tem morbidade mínima ou que o KITE é levantado do quarto dedo.
+!fim
+
+# O avanço palmar de MOBERG {radar=confirmado}
+
+## A ideia: trazer a própria pele do polegar
+
+O avanço palmar descrito por MOBERG resolve a perda de **mais da metade da polpa distal** com a melhor pele possível: a pele palmar do próprio polegar, que já é inervada pelos nervos digitais do polegar (p. 1676). O retalho leva consigo **os dois feixes neurovasculares**, o radial e o ulnar, e por isso é chamado de **bipediculado** e **homodigital**. Como a pele que chega à ponta continua ligada aos mesmos nervos que sempre a inervaram, o paciente sente a nova polpa como polpa do polegar, com sensibilidade quase normal e **sem necessidade de reorganização cortical**. Nenhum outro retalho da ponta do polegar faz isso tão bem, e é por isso que as bancas perguntam tanto qual retalho é bipediculado, homodigital e dá a melhor sensibilidade.
+
+O suprimento vem das **artérias digitais palmares**, radial e ulnar, que correm nos feixes junto com os nervos. Não é um retalho da radial superficial, nem do arco palmar, nem de uma das digitais isoladamente.
+
+## Por que ele funciona no polegar e não nos dedos
+
+A pele palmar não estica muito. O que permite o avanço é **fletir as articulações**: com a IF e a MF fletidas, o retalho, preso proximalmente, chega mais longe. O polegar tolera isso bem por duas razões. Primeira, a IF do polegar flete até cerca de 45 graus, o que basta para cobrir defeitos de 1 a 2 cm. Segunda, o polegar tem um **dorso com circulação própria rica**, independente das digitais palmares, de modo que levantar toda a face palmar não deixa a pele dorsal e o leito ungueal sem sangue.
+
+Nos dedos longos, a situação é outra. O dorso depende muito mais das digitais palmares, e a IFP, quando mantida em flexão para o avanço, evolui facilmente para uma contratura definitiva. Por isso o avanço palmar nos dedos é mais arriscado, e o Green (cap. 49) o reserva a situações escolhidas. No polegar, ele é o retalho de escolha da polpa.
+
+Há uma divergência entre os autores que o Green registra e que vale saber (p. 1677): alguns dizem que a flexão necessária não deixa contratura da IF; **os autores do Green dizem que deixa**, e por isso indicam, para avanços maiores que 1,5 cm, uma incisão proximal de alívio que diminui a flexão necessária.
+
+## Quanto ele cobre: os números que caem
+
+Os números variam conforme a fonte, e as bancas misturam. O Green (p. 1676 e 1677) traz:
+
+- Cobertura descrita na literatura: de pouco mais de 1 cm até "o tamanho de uma moeda de 25 centavos" (KEIM), ou até 2 cm (POSNER).
+- **Sem incisão proximal**: defeitos terminais de **até 1,5 cm**.
+- **Com incisão proximal de alívio**: **até 2,5 cm**.
+- Nos pontos críticos do capítulo: indicação padrão para defeito palmar **maior que 1 cm e menor que 2 cm** com a falange distal exposta sem periósteo; a versão com alívio, para defeito **maior que 2 cm e menor que 2,5 cm**.
+- O avanço **não deve passar de 2,5 cm**. Um defeito de 3,5 cm com tendão e osso expostos (caso clínico 48.2) já não é para MOBERG.
+
+O Campbell (cap. 21, p. 766, Fig. 21.31) desenha um avanço de 1,5 cm com enxerto de pele total da região hipotenar na base, o que bate com a faixa sem alívio do Green.
+
+!tabela MOBERG no polegar: as duas versões (Green 7, cap. 48, p. 1676 a 1679)
+| | Sem incisão proximal | Com incisão proximal de alívio |
+|---|---|---|
+| Defeito | Até 1,5 cm (pontos críticos: 1 a 2 cm) | Até 2,5 cm (pontos críticos: 2 a 2,5 cm) |
+| Incisões | Médio-axiais radial e ulnar até a prega proximal do polegar | Médio-axiais até o terço proximal da falange proximal, unidas por incisão transversa |
+| O que vira o retalho | Avanço com subcutâneo e os dois feixes | Ilha neurovascular sobre os dois feixes |
+| Área doadora | Não há | Enxerto de pele total (braço medial preferido) |
+| Flexão no fechamento | MF e IF em 30 a 45 graus | Menos flexão, que pode ser acrescentada se preciso |
+!fim
+
+## A técnica sem incisão de alívio
+
+Sob garrote, o cirurgião apara o osso exposto e faz **incisões médio-axiais radial e ulnar** até a prega de flexão proximal do polegar (p. 1677). Um detalhe que já caiu: passar pelos **ápices dorsais das pregas de flexão** facilita dissecar dorsalmente aos feixes neurovasculares, de modo que os feixes fiquem dentro do retalho. O retalho é levantado com o subcutâneo e os dois feixes e solto da bainha flexora, deslizando sobre ela. Se ainda houver tensão, as incisões podem ser estendidas para a eminência tenar. O fechamento é feito com **MF e IF fletidas de 30 a 45 graus**, suturando a borda do retalho à unha, ao leito ungueal ou à pele restante.
+
+O pós-operatório tem uma lógica de proteção e depois de recuperação da extensão: a ferida é vista em 7 a 10 dias, o polegar fica numa tala termoplástica, o movimento ativo começa com **3 semanas**, e com **3 a 4 semanas** entra uma tala dinâmica para estender a IF. A tala dinâmica existe justamente porque a flexão usada no fechamento tende a ficar.
+
+## A versão com incisão de alívio
+
+Quando o defeito passa de 1,5 cm, as incisões médio-axiais são levadas até o **terço proximal da falange proximal** e unidas por uma **incisão transversa** (p. 1677 e 1678, Fig. 48.3). Os feixes são identificados e mobilizados, o retalho é levantado de distal para proximal logo superficial à bainha flexora e passa a ser uma **ilha** que avança sobre os dois pedículos. A falha que fica na base é coberta com **enxerto de pele total**, de preferência da face medial do braço (servem também a hipotenar, a fossa antecubital e a virilha). O enxerto de pele total contrai pouco; um enxerto parcial, ou a cicatrização por segunda intenção dessa área, contrairia e puxaria o polegar em flexão, anulando o ganho. Se o avanço necessário é só um pouco maior que o do retalho sem alívio, cada incisão pode terminar numa zetaplastia sobre a tenar ou num V-Y logo proximal à prega proximal, em vez da incisão transversa.
+
+Algumas bancas chamam essa ilha de avanço com incisão transversa de retalho de O'BRIEN; o Green não usa esse nome e descreve o mesmo princípio na versão com alívio.
+
+## O que pode dar errado
+
+O Green lista os riscos (p. 1679):
+
+- **Isquemia da região ungueal**, apesar da boa circulação dorsal do polegar, sobretudo em **tabagistas**. O cuidado é não dissecar o pedículo longe demais, para não arrancar os ramos dorsais que nutrem a unha.
+- Perda de fragmentos de osso ou da unha no pós-operatório imediato.
+- **Contratura em flexão da IF**, a complicação mais lembrada nas provas.
+- Se a base do retalho fica proximal demais (incisões longas sem necessidade), o retalho perde a conexão com a circulação dorsal e aumenta o risco de sofrimento distal.
+
+O avanço palmar também serve tardiamente, para uma cobertura antiga que ficou ruim.
+
+!questoes relacionadas=mao-0613,mao-0736,mao-0478,mao-0141,mao-0244,mao-0434
+conceito: O MOBERG é um retalho de avanço palmar homodigital, bipediculado nas artérias digitais palmares radial e ulnar com seus nervos, que leva a própria pele sensível do polegar para a ponta; a versão em ilha com incisão transversa e enxerto na base é a que algumas bancas atribuem a O'BRIEN.
+como: O TARO 2008 perguntou em que consiste a técnica; o IAUPE 2025, em que vasos ele se baseia; o Einstein 2026, qual retalho é bipediculado, homodigital e dá sensibilidade superior; duas provas e o TARO 2025 mostraram a foto do retalho e pediram o nome.
+armadilha: Chamar o MOBERG de V-Y, de cross-finger ou de ilha heterodigital, ou basear o retalho numa só artéria digital ou na radial superficial.
+!fim
+
+# O cross-finger do indicador ao polegar {radar=confirmado}
+
+## Quando a polpa inteira se foi
+
+Se o defeito ocupa **toda a superfície palmar da falange distal**, o avanço palmar não chega. O Green chama o cross-finger do indicador de "esteio" das grandes perdas do terço distal do polegar (p. 1679), apesar das alternativas que surgiram: a ponta do quinto dedo, a polpa livre do pé, retalhos de avanço e rotação, o KITE, o retalho em bandeira de ISELIN, o retalho dorsal da primeira comissura e o retalho dorsoulnar de BRUNELLI.
+
+O cross-finger original foi descrito por **GURDIN e PANGMAN em 1950**, para tendão ou osso expostos na face palmar dos dedos. A ideia foi trocar os retalhos de braço cruzado, do tórax e do abdome, que obrigavam a mão a ficar presa ao corpo por semanas, por um retalho do dedo vizinho, mais perto, mais parecido e com imobilização menos incômoda. O retalho toracoepigástrico, dividido com 3 semanas (Fig. 48.4), ficou só como história.
+
+A indicação geral do cross-finger, que as bancas cobram fora do polegar, decorre dessa origem: ele é a cobertura das **lesões palmares (ventrais) dos dedos com tendão ou osso expostos**, situação em que o enxerto não pega. Ele não serve para cobrir o aparelho extensor (o retalho vem justamente do dorso), e não é a escolha no dedo infectado ou artrítico.
+
+## A técnica, passo a passo e com o porquê
+
+O Green descreve (p. 1680 e 1681):
+
+1. Faz-se um **molde de papel** do defeito e, com o polegar aduzido contra o indicador, ele é levado ao **dorso radial da falange proximal do indicador**. Por causa da rotação natural do polegar, a base do retalho fica **palmar à linha médio-axial do indicador**, com leve obliquidade.
+2. Incisam-se as bordas proximal, ulnar e distal até o paratendão, e o retalho é levantado de ulnar para radial **logo superficial ao paratendão extensor**. O paratendão fica no indicador: é ele que permite que o enxerto pegue na área doadora. Tirá-lo deixaria o tendão nu, sem leito para enxerto.
+3. Perto da base, **seccionam-se os ligamentos de CLELAND**, as fibras que prendem a pele aos lados das falanges, dorsais aos feixes. Soltá-los dá ao retalho a mobilidade que falta para chegar ao polegar. No canto radial, preservam-se as veias pequenas, que drenam o retalho.
+4. Solta-se o garrote antes de fixar, para conferir a perfusão.
+5. A área doadora recebe **enxerto de pele total** (braço medial), um pouco maior que ela e cobrindo também a ponte entre os dois dedos, no mesmo tempo. O retalho é suturado com fio 5-0 inabsorvível e o enxerto com categute simples 5-0.
+6. A tala palmar pega o polegar, o indicador, a mão e o punho, deixando os dedos ulnares livres. A troca é em 5 a 7 dias.
+7. A **divisão** é segura entre **14 e 21 dias** no texto (os pontos críticos falam em 10 a 14 dias). A ponte entre os dedos não é fechada depois da divisão: cicatriza por segunda intenção, porque fechá-la sob tensão pode garrotear o dedo. A mobilização ativa e passiva começa logo após a divisão.
+
+## Resultados e contras
+
+Em séries longas, a sensibilidade do cross-finger é satisfatória e o acolchoamento serve para uso pesado (p. 1681). Os contras são três: o **defeito feio no dorso do indicador**, que incomoda sobretudo crianças e mulheres; a **rigidez digital** ocasional, porque dois dedos ficam presos juntos por duas a três semanas; e a **contratura da primeira comissura**, pelo mesmo motivo. A rigidez é a razão pela qual o cross-finger é pior escolha no idoso, e por que algumas bancas colocam "evitar acima de 50 anos" como afirmação correta: a idade aumenta o risco de rigidez e diminui a recuperação da sensibilidade.
+
+!questoes relacionadas=mao-0293,mao-0597,mao-0904 treino=mao-3824,mao-3828
+conceito: O cross-finger leva a pele dorsal de um dedo, levantada acima do paratendão e com enxerto de pele total na área doadora no mesmo tempo, para cobrir perdas palmares com tendão ou osso expostos; para o polegar, vem do dorso radial da falange proximal do indicador, com secção do CLELAND, e é dividido em 2 a 3 semanas.
+como: O SBOT-SP perguntou a indicação (lesão volar com tendões expostos); o TARO 2013, a melhor indicação (lesões ventrais dos dedos longos); a UFG 2019, o cuidado correto (evitar acima dos 50 anos pela rigidez).
+armadilha: Achar que nas perdas dorsais se levanta um retalho volar, ou deixar o enxerto da área doadora para o segundo tempo, quando ele é feito no mesmo ato que o retalho.
+!fim
+
+# O cross-finger inervado: radial e HASTINGS {radar=fundamento}
+
+## O problema da sensibilidade com a idade
+
+O cross-finger comum não leva nervo. A pele chega ao polegar desnervada e é reinervada a partir das bordas e do leito, e esse processo depende da idade. O Green (p. 1681) é preciso: a sensibilidade protetora e a discriminação de dois pontos voltam de forma mais previsível em **menores de 20 anos**; **acima dos 40, quase metade não recupera nem a sensibilidade protetora**. Foi essa constatação que motivou as variantes inervadas, em que o retalho chega ao polegar já ligado a um nervo.
+
+WALKER mostrou que a sensibilidade final de um cross-finger do indicador ao polegar é uma mistura: parte vem do mediano, que reinerva pelas bordas do polegar, e parte do radial, que inerva o dorso do indicador de onde o retalho saiu.
+
+## O cross-finger inervado pelo radial
+
+GAUL, MIURA e BRALLIAR descreveram o retalho levado junto com um ramo do **nervo radial superficial** (p. 1682 a 1684, Fig. 48.7). Uma incisão oblíqua parte do meio da borda proximal do retalho em direção à borda dorsoulnar da primeira comissura, alguns centímetros proximal ao meio da comissura (dorsal e proximal a ela, para a cicatriz não contrair a comissura). O ramo sensitivo dorsal do radial é encontrado sobre a fáscia muscular e seguido até o retalho; é mobilizado por inteiro, para não ficar sob tensão, e os ramos pequenos que o prendem são seccionados. Ao fixar o retalho, o nervo é transposto para uma incisão médio-axial **ulnar** do polegar. O enxerto de pele total cobre a área doadora e o pedículo.
+
+O pós-operatório é o do cross-finger comum, **mais um protocolo de estímulos de pressão progressivos** para aumentar o reconhecimento cortical do retalho (p. 1684). É um ponto que a banca do SIMÃO já cobrou. A explicação está no cérebro: o retalho continua ligado a um nervo cuja representação cortical é o dorso do indicador. Quando o paciente toca a polpa do polegar reconstruído, o cérebro "lê" o toque como se fosse no dorso do indicador. A reeducação sensitiva tenta fazer o córtex reinterpretar esse sinal, o que nem sempre acontece por completo, sobretudo no adulto.
+
+Os riscos são a lesão do ramo radial por tração ou manipulação, uma sensibilidade às vezes só protetora e a **persistência da percepção no dorso do indicador**. O Green reserva o retalho para quando há dano sensitivo irreparável do polegar e nenhuma outra fonte de sensibilidade.
+
+## O cross-finger duplamente inervado de HASTINGS
+
+HASTINGS (Microsurgery, 1987) resolveu a questão cortical com uma sutura nervosa (p. 1684 e 1685, Fig. 48.8). O retalho leva os ramos terminais do radial, como no anterior, mas sem dissecá-los um a um: leva-se uma faixa de 0,5 a 1 cm de subcutâneo até a fáscia, que contém as veias e quase sempre a artéria intermetacarpal dorsal (o que permite transformar o retalho em ilha). O passo que dá o nome ao retalho acontece na MF: o **ramo dorsal do nervo digital radial do indicador**, que pertence ao território do **mediano**, é dissecado até a origem e suturado ao microscópio ao coto do **nervo digital ulnar do polegar**.
+
+Por que isso muda o resultado? Porque a distância de regeneração é curta e, principalmente, porque o nervo que passa a inervar o retalho é o próprio nervo digital do polegar. O sinal chega ao córtex pelo caminho do polegar, e o paciente **sente o retalho como polegar**, com sensibilidade mais rápida e previsível (p. 1685).
+
+O Green acrescenta um dado de anatomia útil para quem levanta esses retalhos: a artéria intermetacarpal dorsal, segundo FOUCHER, é em geral superficial à fáscia, profunda em 15% dos casos e dupla (superficial e profunda) em 10% (p. 1684).
+
+!tabela Cross-finger ao polegar e suas variantes (Green 7, cap. 48, p. 1679 a 1685)
+| Variante | Nervo do retalho | Como o cérebro lê | Uso |
+|---|---|---|---|
+| Comum (GURDIN e PANGMAN) | Nenhum; reinervação pelas bordas | Mistura de mediano e radial | Perda de toda a polpa distal |
+| Inervado pelo radial (GAUL, MIURA, BRALLIAR) | Ramo sensitivo dorsal do radial | Como dorso do indicador, até reeducação | Dano sensitivo irreparável do polegar |
+| Duplamente inervado (HASTINGS) | Radial e ramo dorsal do digital radial do indicador, suturado ao digital ulnar do polegar | Como polegar | Sensibilidade rápida e previsível |
+!fim
+
+
+# O KITE: a ilha da primeira artéria metacarpal dorsal {radar=confirmado}
+
+## De retalho em bandeira a ilha pura
+
+O retalho do dorso do indicador já existia como "bandeira" (o flag flap de ISELIN), preso por uma faixa de pele. FOUCHER, em 1979, o popularizou como **ilha pura**: só o pedículo, sem ponte de pele, o que permite ao retalho voar até o polegar como uma pipa presa pela linha. Daí o nome, **KITE** (pipa em inglês). O pedículo leva a **primeira artéria metacarpal dorsal** (FDMA, ramo da artéria radial no primeiro espaço), as veias subcutâneas e os **ramos sensitivos do nervo radial superficial** (p. 1684 a 1686).
+
+O Green o chama de **"cavalo de batalha" da cobertura inervada do polegar distal** (p. 1684). As vantagens explicam o apelido: é um tempo só, sem os dois dedos presos juntos, sem imobilização longa e sem a rigidez do cross-finger; e o retalho alcança tanto a face palmar quanto a dorsal do polegar distal. Como leva o radial superficial, é um retalho **sensitivo**, ainda que a sensibilidade venha de um nervo cuja representação cortical é o dorso do indicador, com o mesmo problema de reeducação discutido no cross-finger inervado.
+
+## O desenho e os limites
+
+A ilha é desenhada no **dorso da falange proximal do indicador** (p. 1684 e 1685):
+
+- Limite **proximal**: a **MF**.
+- Limite **distal**: a **IFP**. Passar da IFP deixaria uma cicatriz sobre a articulação, com risco de contratura e de expor o aparelho extensor.
+- O trajeto da FDMA é mapeado com **Doppler de lápis**, do lado radial da MF do indicador até o **ponto de pivô**, na junção das **bases do primeiro e do segundo metacarpais**. O comprimento entre a ilha e o pivô é o raio que define até onde o retalho alcança no polegar.
+
+## A técnica
+
+O retalho é levantado no plano areolar logo acima do paratendão extensor, de distal para proximal e de ulnar para radial (p. 1685). O cuidado máximo está na **borda radial da MF**, onde a FDMA entra na rede subcutânea do retalho: é ali que se perde o retalho. Na MF, faz-se uma incisão em gota (preferida pelos autores) ou em S; a pele é levantada no plano dérmico profundo, e o pedículo é formado incisando a fáscia do primeiro interósseo dorsal junto à borda radial do músculo e o periósteo do segundo metacarpal na borda ulnar. Assim o pedículo leva a fáscia do interósseo (onde corre a artéria), duas veias dorsais grandes, a FDMA e os ramos do radial, **sem que a artéria precise ser isolada**: dissecá-la nua aumentaria o espasmo e a lesão das pequenas veias comitantes.
+
+Solta-se o garrote e confere-se a perfusão. O retalho passa ao polegar por um túnel subcutâneo, que muitas vezes é estreito e precisa ser aberto; o desenho em gota permite fechar a pele sobre o pedículo sem tensão. A área doadora recebe enxerto de pele total do braço medial. O curativo deixa a ponta exposta para vigilância; troca e movimento em 7 a 10 dias.
+
+As complicações são o sofrimento vascular do retalho e a morbidade do indicador: rigidez, intolerância ao frio, cicatriz hipertrófica e neuroma (p. 1686, Fig. 48.9).
+
+!questoes central=mao-1143 relacionadas=mao-1172,mao-1331
+conceito: O KITE de FOUCHER é uma ilha da primeira artéria metacarpal dorsal (ramo da radial), levantada do dorso da falange proximal do indicador entre a MF e a IFP, de distal para proximal, com fáscia do interósseo, veias e ramos do radial superficial, sem isolar a artéria; é sensitivo.
+como: A PUC-SP 2021 perguntou em que artéria ele se baseia; a PUC-SP 2022 pediu a afirmação correta (retalho em ilha); a USP-SP 2025 misturou afirmações sobre retalhos intrínsecos da mão, e só a do cross-finger (pele dorsal do dedo vizinho) estava certa.
+armadilha: Basear o KITE na segunda metacarpal dorsal ou numa digital, dizer que a artéria vem da ulnar, que é levantado de proximal para distal, que o pedículo precisa ser isolado ou que o KITE de fluxo anterógrado não é sensitivo.
+!fim
+
+# A ilha neurovascular heterodigital de LITTLER {radar=confirmado}
+
+## A primeira solução para a sensibilidade
+
+A ilha neurovascular heterodigital (MOBERG e LITTLER) leva ao polegar uma ilha de pele de outro dedo, presa só ao seu feixe neurovascular, que é dissecado até a palma e girado para o polegar. Foi a resposta clássica à pergunta que dominou a reconstrução do polegar: como fazer o polegar novo sentir.
+
+Hoje ela tem **papel menor** (p. 1686), e o Green explica por quê. É tecnicamente mais difícil; **sacrifica a sensibilidade** do lado ulnar de outro dedo; e a qualidade do retorno sensitivo foi questionada (MURRAY): poucos adultos conseguem **converter a percepção** para o polegar. O paciente toca algo com a ponta do polegar e sente no médio, porque o nervo continua ligado à representação cortical do médio. É o mesmo problema do cross-finger inervado pelo radial, só que com um dedo de pinça sacrificado no lugar.
+
+## A escolha do doador depende do mediano
+
+A regra de escolha (p. 1686 e 1687) é lógica e caiu em prova:
+
+- **Mediano íntegro**: doador é o **lado ulnar do dedo médio**, que tem pedículo longo e é inervado pelo mediano.
+- **Mediano lesado**: o doador tem de ser inervado pelo ulnar, e o lado escolhido é o **lado ulnar do anular**.
+
+Em ambos os casos usa-se o **lado ulnar**, porque é o lado que **não participa da pinça**: a pinça com o polegar usa as faces radiais do indicador e do médio. O sacrifício recai sobre uma superfície que o paciente quase não usa para sentir.
+
+Antes de levantar a ilha do anular, é preciso confirmar que o dedo vai sobreviver sem a artéria digital ulnar. O feixe digital comum do quarto espaço se divide na digital ulnar do anular e na digital radial do mínimo; ao ligar a digital própria do lado radial do dedo vizinho, depende-se da outra digital para nutri-lo. Por isso a avaliação com Doppler (ou teste de ALLEN digital) é parte do planejamento.
+
+## O retalho e a técnica
+
+O Green descreve o retalho "estendido": quase toda a metade ulnar palmar do doador, da polpa até pouco antes da prega digital proximal, com pequenos "darts" nas pregas das IF e uma extensão dorsal além da linha médio-lateral (p. 1687). THOMPSON lembrou que não é preciso ir à ponta absoluta e que a ilha deve favorecer o **lado ulnar do polegar**, o lado da pinça. Variantes: suturar o nervo do retalho ao coto do digital do polegar, para melhorar a sensibilidade e diminuir o neuroma (é a mesma lógica de HASTINGS); e as duas ilhas de CHEN e NOORDHOFF para o polegar desenluvado.
+
+A dissecção começa na palma (p. 1687 e 1688, Fig. 48.10). A digital própria do lado radial do dedo vizinho é ligada **bem distal à bifurcação** (5 a 10 mm), e os nervos digitais comuns são separados intrafascicularmente até a palma média, ganhando comprimento sem lesar o ramo que vai ao dedo vizinho. Entre as incisões fica uma ponte de pele de 1 a 2 cm, e o túnel passa logo profundo à aponeurose palmar. O pedículo precisa de folga; o garrote é solto antes de fechar; a área doadora recebe enxerto total; a ponta do polegar fica exposta para vigilância; troca em 7 a 10 dias, movimento com 3 a 4 semanas.
+
+Nos pontos críticos, o Green indica a ilha para **perda extensa da polpa palmar** e para **perda da inervação terminal**, sobretudo do lado ulnar do polegar, e a considera **melhor como método secundário**. As complicações são necrose, falha do enxerto e rigidez do dedo doador.
+
+## O retalho dorsoulnar de BRUNELLI
+
+Entre as alternativas ao cross-finger, o Green mostra (Fig. 48.5, p. 1681) o retalho **dorsoulnar do polegar de BRUNELLI**: base **distal**, girado sobre a ponta, nutrido pelo fluxo retrógrado de ramos dorsais da digital ulnar do polegar. O exemplo do livro é a cobertura após a ressecção de um carcinoma espinocelular do leito ungueal. É um retalho do próprio polegar, sem sacrificar outro dedo, mas não leva sensibilidade de qualidade para a polpa.
+
+!questoes relacionadas=mao-1868
+conceito: A ilha neurovascular heterodigital de LITTLER leva pele do lado ulnar do médio (mediano íntegro) ou do anular (mediano lesado), presa ao feixe digital, para a polpa do polegar; dá sensibilidade, mas o adulto raramente converte a percepção para o polegar.
+como: O ENARE 2023 descreveu uma ilha neurovascular com pele ulnar do dedo médio para a avulsão da face palmar do polegar e pediu o nome.
+armadilha: Confundir com o retalho homodigital (MOBERG), com o V-Y lateral ou com o retalho da prega tenar.
+!fim
+
+# O nível 1 em uma tabela {radar=fundamento}
+
+O Green fecha o nível 1 com um algoritmo curto (p. 1687), que vale decorar porque organiza todas as questões de polpa:
+
+!tabela Escolha da cobertura da polpa do polegar (Green 7, cap. 48, p. 1687)
+| Defeito | Escolha | Por quê |
+|---|---|---|
+| Menor que 1 cm quadrado | Segunda intenção | Contração traz pele sensível da polpa; sem área doadora |
+| Até 2,5 cm de comprimento | Avanços palmares (MOBERG, com ou sem alívio) | Sem morbidade de doador, sem reorganização cortical |
+| Maior | Heterodigitais (cross-finger, KITE, ilha de LITTLER) | Só tecido de fora chega |
+| Perda circunferencial com esqueleto e tendões preservados | Retalhos locais e regionais | Problema de envelope, não de polpa |
+| Lesão nervosa associada | Cross-finger inervado pelo radial e ilha neurovascular | Trazer nervo; de preferência como métodos secundários |
+!fim
+
+Repare que o algoritmo segue a lógica de toda a cirurgia reparadora: primeiro o que o próprio polegar resolve, depois o que vem de perto, por fim o que vem de longe. E repare que a sensibilidade cortical piora a cada passo: a segunda intenção e o MOBERG são sentidos como polegar; o cross-finger, o KITE e a ilha, como outro lugar.
+
+# Nível 2: falangização e as zetaplastias da comissura {radar=confirmado}
+
+## O que muda depois da IF
+
+Perder osso até a IF não prejudica muito. Quando a amputação passa do **meio da falange proximal**, duas coisas se perdem (p. 1688): a **abertura da mão** para objetos grandes, porque o polegar curto já não afasta o suficiente do indicador, e a **pinça fina**. A maioria desses pacientes mantém a rotação da CMC e uma comissura razoável; o que precisam é de comprimento útil, sensibilidade, mobilidade, estabilidade e ausência de dor.
+
+## Falangizar: alongar sem acrescentar nada
+
+Para a amputação perto da **porção distal da falange proximal**, a resposta é a **falangização**: aprofundar a primeira comissura e alargar o intervalo entre o polegar e o indicador (p. 1688). Nada é acrescentado ao polegar; o que muda é o ponto de onde ele "nasce". Ao rebaixar a comissura, o primeiro metacarpal e o que restou da falange ficam relativamente mais longos, e o coto passa a funcionar como um polegar mais comprido. As ferramentas são zetaplastias, retalhos locais, regionais, à distância e livres. As mesmas técnicas tratam a contratura da comissura que pode aparecer depois de uma transferência de dedo do pé.
+
+## A zetaplastia: trocar largura por comprimento
+
+A zetaplastia transpõe dois retalhos triangulares e, com isso, **alonga a distância entre os ápices à custa de estreitar a distância entre as pontas** (p. 1689). Aplicada na comissura, o membro central do Z fica sobre a crista da comissura, que está contraída; depois da transposição, a crista ganha comprimento na direção em que a comissura precisa abrir.
+
+O ganho teórico depende do ângulo. Com os membros a **60 graus**, que é o ângulo padrão, o membro central alonga cerca de **75%**; com 45 graus, cerca de 50%; com 30 graus, cerca de 25% (Green, cap. 44, p. 1542). Ângulos maiores dão mais ganho, mas os retalhos ficam difíceis de transpor e a tensão lateral aumenta; 60 graus é o equilíbrio.
+
+O Green lista **quatro pré-requisitos** para a zetaplastia funcionar na comissura (p. 1689):
+
+1. Pelo menos **metade da falange proximal** preservada.
+2. Pele pouco cicatrizada (os retalhos precisam de pele boa para sobreviver e transpor).
+3. **Primeiro metacarpal móvel**.
+4. Contratura muscular mínima.
+
+Os dois últimos lembram que a comissura pode estar fechada por músculo, e não só por pele. Uma zetaplastia não abre uma comissura presa por um adutor fibrosado.
+
+A **zetaplastia simples** (p. 1689, Fig. 48.11) tem o membro central na crista distal da comissura, da prega digital proximal do polegar até cerca de 1 cm proximal à prega digital proximal do indicador; os membros laterais, a 60 graus e do mesmo tamanho. A combinação de um membro proximal palmar com um distal dorsal acompanha a prega intertenar. O descolamento é feito acima da fáscia, com cuidado na conexão entre a artéria radial do indicador e a princeps pollicis; incisa-se a fáscia do primeiro interósseo dorsal e divide-se a parte distal do músculo.
+
+## A zetaplastia de quatro retalhos
+
+Na **zetaplastia de quatro retalhos** (p. 1690 e 1691, Figs. 48.12 e 48.13), os membros laterais são desenhados a **90 a 120 graus** do central e depois **bissetados**, formando quatro retalhos com ângulos de 45 a 60 graus. É como fazer duas zetaplastias em série: o alongamento se soma e a comissura ganha uma forma mais suave, sem a crista em "teia" que a zetaplastia simples às vezes deixa. Pede recessão muscular pequena. A revisão é em 10 a 14 dias, com tala espaçadora da comissura.
+
+A indicação é a amputação perto do **meio da falange proximal**, e o **ganho de profundidade é de 1,5 a 2 cm** (p. 1691). A complicação é a necrose das pontas dos retalhos. O caso clínico 48.1 do Green mostra o raciocínio do nível 2 na prática: um trabalhador rural com amputação na IF fez zetaplastia de quatro retalhos para voltar logo ao trabalho, embora o padrão-ouro para comprimento fosse o dedo do pé.
+
+Uma variante que as bancas também citam é a plastia que combina duas zetaplastias opostas com um avanço central em V-Y (o "salto do sapo", jumping man ou zetaplastia de cinco retalhos), usada nas contraturas da comissura com pele um pouco mais curta.
+
+!questoes relacionadas=mao-0799
+conceito: A zetaplastia alonga o membro central à custa de estreitar a largura; com 60 graus o ganho teórico é de cerca de 75%; na comissura do polegar, a de quatro retalhos (membros a 90 a 120 graus, bissetados) aprofunda 1,5 a 2 cm e exige metade da falange proximal, pele boa, metacarpal móvel e pouca contratura muscular.
+como: O INTO 2023 perguntou o ganho de comprimento numa zetaplastia de 60 graus.
+armadilha: Marcar 50% (é o de 45 graus) ou 100%; e indicar zetaplastia numa comissura cicatrizada ou com adutor contraído, quando o caminho é o retalho dorsal rotacional.
+!fim
+
+# Retalho dorsal rotacional de BROWN e pele de fora {radar=clinico}
+
+## Quando a zetaplastia não serve
+
+Se o paciente tem pelo menos metade da falange proximal, mas a **pele da comissura está muito cicatrizada** ou existe **contratura em adução do primeiro metacarpal**, a zetaplastia não funciona: os retalhos não têm pele boa para transpor, e a pele nem é o único obstáculo. A resposta do Green é o **retalho dorsal rotacional de BROWN** (p. 1691 a 1694, Figs. 48.14 e 48.15).
+
+## A liberação em sequência
+
+O ponto central da técnica é que a comissura é aberta **camada por camada, só até onde for preciso**. A sequência é:
+
+1. Liberar a origem do **primeiro interósseo dorsal** no primeiro metacarpal (ou dividi-lo, se estiver fibrótico), protegendo a **artéria radial**, que passa entre as duas cabeças desse músculo para chegar à palma, e a princeps pollicis.
+2. Dividir as cabeças **oblíqua e transversa do adutor**.
+3. Se ainda não abrir, liberar o oponente, a cápsula da CMC e, no extremo, fazer a trapeziectomia.
+
+A abdução conseguida é mantida com **dois fios de KIRSCHNER não paralelos** entre o primeiro e o segundo metacarpais, ou com um minifixador (que pode servir também de distrator). A falha de pele que se abre é coberta por um retalho de rotação do **dorso da mão**, que pode chegar até a base do quarto metacarpal, desenhado por molde de papel; a área doadora recebe enxerto. Os fios saem em 4 a 6 semanas, depois vem uma tala de comissura, e o paciente é acompanhado por um ano, porque a tendência da comissura é voltar a fechar.
+
+## Quando o dorso também está lesado
+
+Se a pele dorsal não pode ser usada, a cobertura vem de mais longe (p. 1694 e 1695): o retalho **radial do antebraço de fluxo reverso**, o **interósseo posterior**, um retalho livre (o braquial lateral, por exemplo) ou os retalhos à distância (inguinal, peitoral e **braço cruzado**). O Green destaca o braço cruzado (Fig. 48.16): a pele mais fina está na **face medial do braço**; o retalho é feito em dois triângulos, em dois tempos separados por 2 a 3 semanas, e é útil na amputação pelo terço médio do primeiro raio.
+
+## O limite da falangização
+
+A falangização tem teto. Uma amputação subtotal no **meio da falange proximal ou mais proximal raramente ganha comprimento suficiente** só com o aprofundamento da comissura (p. 1696). Aí o raciocínio passa para o nível 3: é preciso acrescentar comprimento.
+
+# Nível 3: devolver o comprimento {radar=confirmado}
+
+## O dedo do pé é a resposta ótima
+
+Quando o polegar se foi inteiro mas a **articulação basal está preservada**, o que falta é comprimento. Para o Green (p. 1696), a opção **ótima** é a **transferência livre de um dedo do pé**, o hálux ou o segundo dedo, porque é a única que devolve num só procedimento comprimento, mobilidade articular, unha e sensibilidade de verdade, com tecido parecido com o polegar. É o "semelhante por semelhante" levado ao extremo.
+
+A transferência do dedo do pé é assunto do capítulo 47 do Green (de WEI e ALDEEK) e está explicada em detalhe no resumo green-amputacoes-reimplantes, nas seções sobre a transferência de dedos do pé (a escolha entre hálux total, hálux aparado e envoltório, a anatomia arterial do primeiro espaço, o aparelho extensor do segundo dedo e o pé que doa). Aqui ela entra como régua: todas as outras técnicas do nível 3 são o que se oferece a quem **não quer ou não pode** perder um dedo do pé, seja por estética do pé, por ser atleta, por condição vascular ou por recusa pura e simples.
+
+As alternativas do Green são três: a **distração do metacarpal**, a **osteoplástica** e a **policização de um dedo já lesado** (MICHON).
+
+!questoes relacionadas=mao-1453 treino=mao-3825,mao-3826
+conceito: No nível 3 (total com basal preservada), a transferência do dedo do pé é a opção ótima; no segundo dedo transferido, o aparelho extensor é do tipo I (banda central atenuada) ou do tipo II (banda central bem formada), o que orienta a correção da falta de extensão.
+como: A USP-SP 2024 perguntou a anatomia do aparelho extensor do segundo dedo transferido para o polegar.
+armadilha: Inverter os tipos: a banda central atenuada é a do tipo I.
+!fim
+
+# Alongamento do metacarpo por distração {radar=fundamento}
+
+## A ideia e o limite
+
+A distração usa a capacidade do osso de se formar dentro de um espaço que é aberto devagar: corta-se o primeiro metacarpal, fixa-se um distrator e afastam-se os fragmentos aos poucos, enquanto o calo se alonga e as partes moles (pele, nervos, vasos, músculos) se adaptam ao novo comprimento. É uma forma de falangização que acrescenta osso em vez de rebaixar a comissura.
+
+Ela é útil quando **sobra boa parte do primeiro metacarpal**, e em condições ótimas a distração progressiva dá com segurança **3 a 4 cm** (p. 1696). O limite não vem do osso, mas das partes moles: a pele do coto, sobretudo se cicatrizada, e o feixe neurovascular toleram um alongamento finito antes de sofrer.
+
+MATEV, que divulgou o método para o polegar traumático, está nas referências do capítulo (J Hand Surg Am, 1980), mas o Green 7 não descreve os detalhes técnicos dele (fixador, ritmo, enxerto). O ritmo de distração usado nas deficiências congênitas, de 0,25 a 0,5 mm duas vezes ao dia, está no capítulo de malformações (resumo green-deformidades-dedos).
+
+## Comprimento não é movimento
+
+Um ponto que a banca do SIMÃO já explorou: **comprimento não dá motor** (p. 1696). O polegar alongado se move com os **músculos intrínsecos que restaram**, inseridos na base da falange proximal e na região da MF. Quanto mais proximal a amputação, menos intrínsecos sobram com inserção útil, e **mais provável é que seja preciso uma transferência tendinosa** para dar oposição ao coto alongado. Afirmar que a distração "dispensa transferência tendinosa independentemente do nível" é falso.
+
+A distração também tem custo de tempo: semanas de fixador, cuidados com os pinos e, às vezes, enxerto ósseo no espaço se o calo não consolida. Ela não traz sensibilidade nova nem unha: alonga o que já existe.
+
+# A osteoplástica: enxerto, tubo e ilha {radar=clinico}
+
+## Da era de NICOLADONI à ilha neurovascular
+
+A **osteoplástica** (NICOLADONI, 1897) cria um polegar novo com um **enxerto ósseo coberto por um retalho pediculado** (p. 1696). Foi a técnica preferida na primeira metade do século XX, e seus dois problemas definem tudo o que veio depois:
+
+- **Sensibilidade ruim**: o tubo de pele vem do abdome ou da virilha, sem nervo útil. O polegar não é sentido, e é abandonado.
+- **Reabsorção do enxerto**: um enxerto ósseo não vascularizado, sem carga e mal coberto, é reabsorvido aos poucos, e o polegar encurta.
+
+As soluções vieram em duas frentes. MOBERG e LITTLER acrescentaram a **ilha neurovascular** heterodigital sobre a face palmar do polegar novo, levando sensibilidade. E o enxerto passou a ser **tricortical, extraperiosteal, da crista ilíaca**, que resiste melhor à reabsorção.
+
+A osteoplástica ainda tem lugar (p. 1696 e 1697) quando a **basal se move bem**, os dedos são normais (ou estão lesados demais para serem transferidos) e o dedo do pé ou o alongamento não servem. O Campbell (cap. 21) descreve a osteoplástica de VERDAN para a CMC funcional com metacarpal curto, e observa que a ilha neurovascular dá sensibilidade discreta, sem reorientação precisa.
+
+## As variantes
+
+- **GILLIES, o "chapéu armado"** (cocked hat; Fig. 48.17): o tecido local do dorso do coto é levantado como um capuz e cobre o enxerto, num tempo só. O Campbell (cap. 21, p. 773) descreve a versão de GILLIES-MILLARD para amputação na MF ou no côndilo do metacarpal, com tenares que estabilizam; os contras são a reabsorção do enxerto, o encurtamento e a perfuração da pele pela ponta do osso depois que o retalho contrai. Exige um coto com pele pouco cicatrizada e em quantidade suficiente.
+- **Compostos pelo radial do antebraço**: BIEMER e STOCK levaram um segmento do rádio com o retalho radial e o nervo cutâneo lateral do antebraço, girado 180 graus, num tempo só; FOUCHER acrescentou a ilha neurovascular.
+
+## A osteoplástica em dois tempos
+
+O Green descreve a técnica clássica (p. 1697 e 1698, Fig. 48.18):
+
+- **Primeiro tempo**: retalho **inguinal** (artéria circunflexa ilíaca superficial) do **mesmo lado**, com 7,5 cm de largura e pelo menos 12 cm de comprimento. O enxerto tricortical extraperiosteal da crista tem 7 a 8 mm de espessura, 5 a 6 cm de comprimento e 1,5 cm de largura, com uma haste cortical de 2 cm que entra no canal do metacarpal; a face plana e cruenta fica voltada para o indicador. LISTER dizia que o encaixe deve ser tão firme que, segurando o enxerto, se levante o braço. A ponta do retalho é desengordurada e o retalho é tubulizado, com a sutura na face palmar (onde depois vai a ilha).
+- **Divisão do pedículo**: de pouco mais de 8 dias (com pré-condicionamento isquêmico, apertando o pedículo para treinar a circulação pela base) a 4 semanas. A perfusão pode ser testada com fluoresceína ou laser Doppler; se duvidosa em 10 a 14 dias, faz-se a divisão parcial (autonomização).
+- **Segundo tempo**: ilha neurovascular estendida do **lado ulnar do médio** sobre a face palmar do enxerto. Gesso até consolidar, 6 a 8 semanas.
+
+Os contras são o custo para o médio (que perde sensibilidade de um lado), o fato de o paciente continuar sentindo o polegar novo como médio, e as complicações de cada etapa: necrose do retalho inguinal, falha da ilha, pseudartrose ou reabsorção do enxerto.
+
+## A ilha composta do radial
+
+A **ilha composta do radial do antebraço** (FOUCHER, 1984) faz tudo num tempo, com osso vascularizado (p. 1699 a 1701, Fig. 48.19). Exige artéria ulnar pérvia e arco palmar íntegro (teste de ALLEN). O retalho tem 7 a 8 por 6 a 7 cm; preservam-se os ramos da radial ao pronador quadrado e ao periósteo, que nutrem 2 a 4 cm de osso (1,5 cm de largura) da face lateral do rádio. A radial é ligada proximalmente, o retalho gira em fluxo reverso até a tabaqueira e passa sob uma ponte de pele e sobre os tendões do abdutor longo, extensor curto e extensor longo do polegar. O osso é fixado ao metacarpal com a face esponjosa voltada para o indicador, e a ilha neurovascular do médio ou do anular vai na face palmar. O antebraço recebe enxerto parcial (é o único lugar do capítulo em que o enxerto é parcial), e o gesso spica fica 6 semanas, trocado com 2.
+
+As vantagens são o tempo único e o osso vascularizado, que teoricamente não reabsorve (embora a ponta, que fica "no espaço" sem carga, ainda possa reabsorver). Os contras são o defeito estético do antebraço e a **fratura do rádio**, que se previne com osteotomias oblíquas e um enxerto em forma de canoa. O Green a chama de "o meio mais eficaz de osteoplástica". Mas **o polegar não tem movimento**: a osteoplástica, de qualquer tipo, dá um poste sensível, não um dedo articulado. As indicações hoje são poucas, porque o dedo do pé venceu: perda no metacarpal médio a proximal, com os demais dedos íntegros.
+
+O caso clínico 48.4 resume o raciocínio: avulsão na falange proximal, paciente que recusa o dedo do pé. A osteoplástica exige tecido suficiente para o GILLIES; sem esse tecido, usou-se a ilha composta radial reversa.
+
+# Policização de um dedo já lesado {radar=clinico}
+
+## Aproveitar o que não serve mais
+
+O trauma que leva o polegar muitas vezes atinge também o indicador, ou o indicador e o médio. A amputação parcial do indicador, ou de indicador e médio, deixa um coto com ótima sensibilidade e pouca função. O Green (p. 1701 a 1703, Figs. 48.20 a 48.22) propõe transpor esse coto para o lugar do polegar: é a **policização de um dedo lesado**, que MICHON e outros difundiram.
+
+O ganho é duplo. A transposição **dá comprimento** ao polegar e, ao mesmo tempo, **alarga e aprofunda a comissura**, porque o segundo metacarpal é ressecado e o espaço entre o polegar novo e o médio fica amplo. Para os autores, essas são **"talvez as mais práticas e eficientes" reconstruções do polegar**: usam partes sem função, com sensibilidade excelente e sentidas pelo cérebro como dedo da mão, não como dedo do pé. O contra é estético: o polegar fica algo bulboso.
+
+## A técnica com o coto do indicador
+
+- Incisão circular na base do indicador, perto da MF, e um V dorsal proximal ao meio do segundo metacarpal.
+- A artéria **digital radial do médio** é ligada longe da bifurcação, para que todo o fluxo da digital comum do segundo espaço vá ao indicador transposto. Os nervos digitais são separados.
+- Divide-se o ligamento intermetacarpal transverso, que prende o indicador ao médio.
+- Osteotomia oblíqua na base do segundo metacarpal (se a amputação foi na MF, resseca-se até logo proximal ao colo). Um pino ósseo tirado do próprio metacarpal ajuda a fixação.
+- O dedo é **pronado** para alinhar sua polpa com a dos outros dedos, e fixado com fios ou placa. O limite do transporte é o comprimento dos pedículos.
+
+## A técnica com o coto do médio
+
+Quando o indicador está bom e o coto é do médio, pode-se transpor o médio: ligam-se a digital ulnar do indicador e a digital radial do anular, o dedo passa por um túnel subcutâneo, o extensor longo do polegar é suturado ao extensor comum do médio, e o espaço deixado é fechado aproximando o indicador e o anular pelos ligamentos intervolares.
+
+# Nível 4: a basal perdida e a policização {radar=confirmado}
+
+## Por que a policização vence
+
+Sem a articulação basal, alongar não basta. As opções do Green (p. 1703 e 1704) são o polegar artrodesado em oposição (pela osteoplástica), a **policização** e, raramente, a transferência de um dedo lesado da outra mão. A vantagem da policização e da transferência de dedo é que **a MF hiperextendida do dedo transferido substitui a articulação basal perdida**.
+
+A explicação é anatômica. A MF de um dedo longo é uma articulação condilar que, além de fletir e estender, permite desvio lateral e alguma rotação. Quando o dedo é encurtado, girado e colocado na base do polegar com essa articulação no nível do antigo trapézio, ela passa a fazer o papel da CMC: leva o polegar novo para a frente da palma. Ela é fixada em **hiperextensão** (o metacarpal remanescente fica fletido em relação à falange), porque a MF tem muito mais flexão que extensão: posicionada assim, o arco de flexão útil vira o arco de oposição.
+
+## As novas funções de cada estrutura
+
+A policização transforma cada estrutura do dedo numa estrutura do polegar, e as bancas cobram essas equivalências:
+
+!tabela O que vira o quê na policização do indicador
+| No indicador | No polegar novo |
+|---|---|
+| MF | CMC (a nova basal), em hiperextensão |
+| IFP | MF |
+| IFD | IF |
+| Primeiro interósseo dorsal | Abdutor curto do polegar |
+| Primeiro interósseo palmar (volar) | Adutor do polegar |
+| Extensor próprio do indicador | Extensor longo do polegar |
+| Extensor comum do indicador | Abdutor longo do polegar |
+!fim
+
+O raciocínio por trás da tabela é posicional: depois de girado cerca de 120 graus e encurtado, o primeiro interósseo dorsal fica do lado radial e dorsal do polegar novo, que é a posição do abdutor; o primeiro palmar fica do lado ulnar, na posição do adutor.
+
+Na criança, a policização é feita sobre um esqueleto em crescimento, e o segundo metacarpal é ressecado de modo a tirar a **fise da cabeça**: a cabeça do metacarpal, que vira o trapézio novo, não deve continuar crescendo, ou o polegar ficaria longo demais. A artéria **digital radial do médio quase sempre precisa ser ligada** para o indicador subir com a digital comum do segundo espaço, e as **veias dorsais devem ser preservadas**, porque são a drenagem do dedo transposto. Esses detalhes estão no resumo green-deficiencias-longitudinais.
+
+## Indicador ou anular
+
+LITTLER defendia a policização do **indicador normal**: é a mais simples, dá boa função, boa sensibilidade e boa estética (p. 1703). BUTLER e GARCIA-VELASCO preferiam o **anular**, com dois argumentos: o indicador é longo demais para o lugar e é o dedo de preensão mais importante da mão, enquanto o anular é o sacrifício mínimo. A técnica, como na policização congênita, devolve a basal e os motores.
+
+## A conclusão do capítulo
+
+O Green fecha o capítulo (p. 1704 e 1705) com uma regra de três linhas que é o próprio algoritmo de LISTER: **na ponta, retalhos locais; no nível intermediário, falangização, embora o dedo do pé seja a opção mais atraente; com a basal destruída, a policização continua sendo o melhor método**. O caso clínico 48.3 acrescenta um detalhe prático para quem vai fazer um dedo do pé num coto com grande perda de partes moles no metacarpal: um retalho radial reverso do antebraço antes da transferência traz pele, artéria e veias para o receptor e simplifica o tempo microcirúrgico.
+
+!questoes relacionadas=mao-1381,mao-1493,mao-1510,mao-1562
+conceito: Na policização após amputação com perda da CMC, a MF do indicador vira a nova CMC, fixada em hiperextensão; o primeiro interósseo dorsal vira abdutor e o primeiro palmar, adutor; na criança, a ressecção do segundo metacarpal passa pela fise da cabeça.
+como: A USP-SP 2025 e a USP-SP 2024 deram amputação na CMC com reimplante perdido e pediram a articulação do indicador que faz o papel da CMC (e a posição de fixação); outra USP-SP 2024 pediu a nova função dos músculos; a USP-SP 2026 perguntou detalhes técnicos da policização.
+armadilha: Escolher a CMC do indicador como nova basal, fixar a MF em posição neutra, transformar o primeiro interósseo dorsal em adutor ou achar que a digital radial do médio raramente precisa ser ligada.
+alerta: O Green fixa a MF em hiperextensão; o Campbell (cap. 21, p. 776) descreve a técnica de FOUCHER com a cabeça fixada em flexão para evitar a hiperextensão. Os gabaritos da USP-SP seguem o Green.
+!fim
+
+# Green e Campbell: onde os números divergem {radar=fundamento}
+
+As questões de reconstrução do polegar são quase todas numéricas, e os números mudam de livro para livro e até dentro do mesmo livro. Saber de onde vem cada número evita perder pontos por um detalhe de fonte.
+
+!tabela Números do polegar que mudam conforme a fonte
+| Assunto | Green 7, cap. 48 | Outras fontes |
+|---|---|---|
+| MOBERG sem alívio | Até 1,5 cm (texto); 1 a 2 cm (pontos críticos) | Green cap. 49: 1 cm (dedos e polegar, genérico); Campbell: 1,5 cm na figura, 1 a 2 cm; KEIM: moeda de 25 centavos; POSNER: 2 cm |
+| MOBERG com alívio | Até 2,5 cm (pontos críticos: 2 a 2,5 cm) | Questão que fala em "incisão proximal" quer 2,5 cm |
+| Flexão no fechamento do MOBERG | MF e IF em 30 a 45 graus; IF do polegar flete até 45 | Bancas usam 60 graus como distrator |
+| Contratura da IF após MOBERG | Os autores dizem que ocorre | Outros autores negam |
+| Divisão do cross-finger | 14 a 21 dias no texto; 10 a 14 nos pontos críticos | Regra geral dos retalhos ao acaso: 2 a 3 semanas |
+| Distração do metacarpal | 3 a 4 cm com segurança | Questões usam 30 mm; ritmo de 0,25 a 0,5 mm duas vezes ao dia vem do capítulo de malformações |
+| Posição da MF policizada | Hiperextensão | Campbell (FOUCHER): flexão para evitar hiperextensão |
+| Enxerto da área doadora | Sempre pele total (braço medial), em MOBERG com alívio, cross-finger, KITE e ilha | Pele parcial só no antebraço da ilha composta radial |
+!fim
+
+Duas pegadinhas recorrentes merecem nota. A primeira: a flexão da IF é a condição que **permite** o MOBERG no polegar, não uma contraindicação; quem marca "não se pode fazer porque precisa fletir a IF" errou a lógica do retalho. A segunda: o enxerto de pele na polpa **não** dá boa sensibilidade a longo prazo; qualquer afirmação que diga o contrário está errada.
+
+# Fechamento {radar=fundamento}
+
+A reconstrução do polegar se decide com duas perguntas. **O que falta?** Pele, comissura, comprimento ou a própria basal (os quatro níveis de LISTER). **O que o paciente quer e aceita?** Um dedo do pé, uma cirurgia em tempos, um polegar fixo, um dedo a menos na mão. A partir delas, o algoritmo é curto: segunda intenção e MOBERG para a polpa; cross-finger, KITE e ilha quando a polpa inteira se foi ou falta nervo; zetaplastia ou retalho dorsal para aprofundar a comissura; dedo do pé, distração, osteoplástica ou policização de um coto lesado para dar comprimento; policização quando a basal se foi.
+
+Por trás de todas as técnicas está a lição que o século XX pagou caro para aprender: **um polegar que não sente não é usado**. Por isso o avanço homodigital é tão valorizado, por isso a ilha neurovascular foi inventada, por isso HASTINGS suturou o nervo do indicador ao do polegar, e por isso o dedo do pé, que traz nervo, pele de polpa e unha, venceu.
+
+> **Na prova:** NAPIER: mão sem polegar é **pinça cujas pontas não se encontram**; polegar = **sensibilidade + oposição**; **CMC móvel** indispensável; sem CMC, artrodese em **40 graus de abdução, 15 de extensão, 120 de pronação**; LISTER **1 cobertura, 2 subtotal, 3 total com basal (comprimento), 4 total sem basal (nova basal)**; IF = **zona de amputação compensada**; polpa **menor que 1 cm quadrado: segunda intenção**; V-Y sem cruzar a **prega da IF**; MOBERG **bipediculado, homodigital, digitais palmares**, **1,5 cm sem alívio e 2,5 cm com alívio**, incisões até o **terço proximal da falange proximal**, MF e IF **30 a 45 graus**, enxerto **total**, isquemia ungueal no **tabagista**; cross-finger (GURDIN e PANGMAN, 1950) do **dorso radial da falange proximal do indicador**, acima do **paratendão**, secção do **CLELAND**, divisão em **2 a 3 semanas**; acima dos 40 anos, **metade sem sensibilidade protetora**; inervado pelo **radial** com reeducação cortical; HASTINGS: **ramo dorsal do digital radial do indicador ao digital ulnar do polegar**; KITE (FOUCHER, 1979): **primeira metacarpal dorsal**, ilha da **MF à IFP**, pivô nas **bases do primeiro e segundo metacarpais**, nervo **radial superficial**; LITTLER do **lado ulnar do médio** (ou do **anular** sem mediano); zetaplastia de **60 graus ganha 75%**, de quatro retalhos aprofunda **1,5 a 2 cm**; BROWN quando a comissura está cicatrizada ou aduzida; nível 3: **dedo do pé ótimo**, distração **3 a 4 cm** (motor dos intrínsecos ou transferência), osteoplástica com **tricortical ilíaco e ilha do médio**; policização: **MF vira CMC em hiperextensão**, **primeiro interósseo dorsal vira abdutor**.
