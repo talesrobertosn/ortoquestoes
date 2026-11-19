@@ -16108,15 +16108,15 @@
   },
   {
    "id": "green-outros-mao-2",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Outros temas da mão (2): síndrome compartimental, VOLKMANN, aneurismas e trauma do cotovelo",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017)",
    "capitulo": "Capítulo 20 · Fractures of the Proximal Ulna (com os capítulos 18, 19, 21, 22, 51, 54 e 60)",
-   "resumo": "Síndrome compartimental (adulto, rádio distal e dois ossos; criança, dois ossos e cotovelo flutuante; coagulopatia contraindica medir a pressão; mão com 10 compartimentos; fasciotomia nas primeiras 8 h); neonatal com lesão sentinela no braço; VOLKMANN pela classificação de TSUGE (leve, moderada com déficit sensitivo do mediano, grave com extensores) e pseudo-VOLKMANN; aneurismas raros, falsos, traumáticos e da artéria ulnar; SECRETAN como linfedema factício; capítulo do úmero (tipo IV e DUBBERLEY); cabeça do rádio (valgo e supinação, sinal da vela, zona segura de 110 graus, necrose assintomática); círculo de HORII; MONTEGGIA (alinhar a ulna, interósseo posterior).",
+   "resumo": "Síndrome compartimental (adulto, rádio distal e dois ossos; criança, dois ossos e cotovelo flutuante; coagulopatia contraindica medir a pressão; mão com 10 compartimentos; fasciotomia nas primeiras 8 h); neonatal com lesão sentinela no braço; VOLKMANN pela classificação de TSUGE (leve, moderada com déficit sensitivo do mediano, grave com extensores) e pseudo-VOLKMANN; aneurismas raros, falsos, traumáticos e da artéria ulnar; SECRETAN como linfedema factício; capítulo do úmero (tipo IV e DUBBERLEY); cabeça do rádio (valgo e supinação, sinal da vela, zona segura de 110 graus, necrose assintomática); círculo de HORII; MONTEGGIA (alinhar a ulna, interósseo posterior); animais peçonhentos (Loxosceles com cirurgia tardia, Viperidae com soro e fasciotomia rara, escorpião, água-viva, peixes).",
    "acesso": "gratis",
-   "minutos": 39,
+   "minutos": 51,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -16199,6 +16199,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "animais-peconhentos-cobras-aranhas-escorpioes-e-",
+     "titulo": "Animais peçonhentos: cobras, aranhas, escorpiões e animais marinhos",
+     "radar": "clinico"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -16227,7 +16232,8 @@
     "mao-2355",
     "mao-2455",
     "mao-2526",
-    "mao-2417"
+    "mao-2417",
+    "mao-3841"
    ],
    "subtemas": [
     "Outros temas da mão"
