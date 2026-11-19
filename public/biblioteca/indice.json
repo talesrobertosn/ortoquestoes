@@ -10979,6 +10979,142 @@
    ]
   },
   {
+   "id": "green-anestesia-mao",
+   "versao": 1,
+   "titulo": "Anestesia em cirurgia da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 69)",
+   "capitulo": "Capítulo 1 · Anesthesia",
+   "resumo": "Regional é o padrão no membro superior; só duas contraindicações absolutas (recusa e infecção no local da punção); síndrome compartimental, lesão nervosa prévia, anticoagulação e bilateral são relativas; interescalênico bilateral contraindicado (frênico); supraclavicular com cerca de 50% de paralisia diafragmática; quanto mais proximal o bloqueio, mais ombro e menos mão: interescalênico perde o ulnar, infraclavicular não pega o ombro, axilar perde o musculocutâneo (suplemento no coracobraquial); doses máximas da Tabela 1.1 (lidocaína 8 a 11, bupivacaína e ropivacaína 2,5 a 3,5 mg/kg); Box 1.2 previne a toxicidade (evitar o vaso, epinefrina, benzodiazepínico, ultrassom para fracionar); emulsão lipídica para o colapso por bupivacaína; mediano no punho entre palmar longo e FCR, ulnar pelo lado ulnar do FCU; dedo com quatro nervos, sem anel circunferencial, epinefrina segura (CHOWDHRY, 1.111 casos); BIER com lidocaína 0,5% sem vasoconstritor, 3 mg/kg, manguito 20 a 30 minutos, bupivacaína contraindicada; garrote: acidose progressiva (pH 6,9 em 2 h, WILGIS), limite usual de 2 h e pausa de 15 min; neurapraxia temporária 3% a 8%, permanente 0,04% a 0,6%, o ultrassom não reduz.",
+   "acesso": "gratis",
+   "minutos": 62,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "geral-ou-regional-a-decisao-de-partida",
+     "titulo": "Geral ou regional: a decisão de partida",
+     "radar": "fundamento"
+    },
+    {
+     "id": "contraindicacoes",
+     "titulo": "Contraindicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "populacoes-e-indicacoes-especiais",
+     "titulo": "Populações e indicações especiais",
+     "radar": "clinico"
+    },
+    {
+     "id": "os-anestesicos-locais-e-suas-doses",
+     "titulo": "Os anestésicos locais e suas doses",
+     "radar": "confirmado"
+    },
+    {
+     "id": "toxicidade-sistemica-prevenir-e-tratar",
+     "titulo": "Toxicidade sistêmica: prevenir e tratar",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "aditivos",
+     "titulo": "Aditivos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "como-achar-o-nervo-da-parestesia-ao-ultrassom",
+     "titulo": "Como achar o nervo: da parestesia ao ultrassom",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-que-decide-o-bloqueio-o-plexo-braquial",
+     "titulo": "Anatomia que decide o bloqueio: o plexo braquial",
+     "radar": "fundamento"
+    },
+    {
+     "id": "bloqueios-do-plexo-braquial",
+     "titulo": "Bloqueios do plexo braquial",
+     "radar": "clinico"
+    },
+    {
+     "id": "bloqueios-suplementares-no-cotovelo",
+     "titulo": "Bloqueios suplementares no cotovelo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "bloqueios-no-punho",
+     "titulo": "Bloqueios no punho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "bloqueio-digital",
+     "titulo": "Bloqueio digital",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "walant-anestesia-local-com-o-paciente-acordado",
+     "titulo": "WALANT: anestesia local com o paciente acordado",
+     "radar": "fundamento"
+    },
+    {
+     "id": "bloqueio-venoso-regional-de-bier",
+     "titulo": "Bloqueio venoso regional de BIER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "garrote-tempo-pressao-e-ph",
+     "titulo": "Garrote: tempo, pressão e pH",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes",
+     "titulo": "Complicações",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1132",
+    "mao-1129",
+    "mao-1341",
+    "mao-1153",
+    "mao-0858"
+   ],
+   "treino": [
+    "mao-1994",
+    "mao-2510",
+    "mao-3651",
+    "mao-2481",
+    "mao-3642",
+    "mao-3645",
+    "mao-3649",
+    "mao-3647",
+    "mao-2061",
+    "mao-2106",
+    "mao-3646",
+    "mao-3653",
+    "mao-3648",
+    "mao-3644",
+    "mao-3643",
+    "mao-3650",
+    "mao-2361",
+    "mao-1738",
+    "mao-3652",
+    "mao-3654"
+   ],
+   "subtemas": [
+    "Anestesia em cirurgia da mão"
+   ]
+  },
+  {
    "id": "campbell15-artrose-cotovelo",
    "versao": 1,
    "titulo": "Artrose e artroplastia do cotovelo",
@@ -11389,15 +11525,15 @@
   },
   {
    "id": "green-deficiencias-longitudinais",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Deficiências longitudinais e mão torta",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12, o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 22, e o HEBERT (Ortopedia e Traumatologia, 5ª ed.), cap. 6",
    "capitulo": "Capítulo 38 · Malformations and Deformities of the Wrist and Forearm (com os capítulos 35, 36 e 37)",
-   "resumo": "BAYNE e KLUG modificada (N, 0, 1 rádio distal mais de 2 mm curto, 2 hipoplasia distal e proximal com fise, 3 fise distal ausente, 4 rádio ausente); só um terço é isolada (HOLT-ORAM, TAR com polegar presente, FANCONI com quebra cromossômica, VACTERL); nervo radial ausente abaixo do cotovelo, mediano sempre presente, artéria radial ausente; distração antes da centralização, cotovelo rígido como contraindicação, VILKKI no tipo 4, alongamento da ulna a 1 mm por dia com infecção de pinos; BLAUTH (IIIA reconstrói, IIIB, IV e V policizam); deficiência ulnar (unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia, BAYNE II parcial, COLE e MANSKE D sem polegar, anlage só com progressão, osteotomia do úmero na mão no flanco); MADELUNG (fise palmar e ulnar, VICKERS, LERI-WEILL, fisiólise e cúpula, ulna na artrose); deficiência transversa (antebraço proximal, misoprostol); luxação congênita da cabeça do rádio (47% anterior, 43% posterior, 10% lateral, 60% com outras anomalias, ressecção só no maduro com dor); sinostose radioulnar proximal (60% bilateral, 40% acima de 60 graus de pronação, CLEARY e OMER, derrotação, 85 graus); pseudartrose da ulna (70% NF, tecido fibroso, fíbula vascularizada cedo); exostose múltipla (fise ulnar distal, MASADA, grampo radial).",
+   "resumo": "BAYNE e KLUG modificada (N, 0, 1 rádio distal mais de 2 mm curto, 2 hipoplasia distal e proximal com fise, 3 fise distal ausente, 4 rádio ausente); só um terço é isolada (HOLT-ORAM, TAR com polegar presente, FANCONI com quebra cromossômica, VACTERL); nervo radial ausente abaixo do cotovelo, mediano sempre presente, artéria radial ausente; distração antes da centralização, cotovelo rígido como contraindicação, VILKKI no tipo 4, alongamento da ulna a 1 mm por dia com infecção de pinos; BLAUTH (colateral ULNAR no II, carpometacarpal decide: IIIA reconstrói e IIIB, IV e V policizam; flexor superficial do anelar na oponentoplastia; MCF em hiperextensão, um terço da força e 95% de uso na policização); polegar em gatilho da criança (adquirido, 25 a 30% bilateral, nódulo de NOTTA proximal à A1, SUGIMOTO I a IV, resolução espontânea, liberação aberta com o nervo digital radial em risco); polegar aduzido congênito (McCARROLL e MIH, MASA, órtese antes de 12 meses, extensor próprio do indicador); deficiência ulnar (unilateral, sem doença sistêmica, 90% sem dedos, 70% polegar, 30% sindactilia, BAYNE II parcial, COLE e MANSKE D sem polegar, anlage só com progressão, osteotomia do úmero na mão no flanco); MADELUNG (fise palmar e ulnar, VICKERS, LERI-WEILL, fisiólise e cúpula, ulna na artrose); deficiência transversa (antebraço proximal, misoprostol); luxação congênita da cabeça do rádio (47% anterior, 43% posterior, 10% lateral, 60% com outras anomalias, ressecção só no maduro com dor); sinostose radioulnar proximal (60% bilateral, 40% acima de 60 graus de pronação, CLEARY e OMER, derrotação, 85 graus); pseudartrose da ulna (70% NF, tecido fibroso, fíbula vascularizada cedo); exostose múltipla (fise ulnar distal, MASADA, grampo radial).",
    "acesso": "gratis",
-   "minutos": 85,
+   "minutos": 113,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11438,6 +11574,16 @@
      "id": "a-policizacao",
      "titulo": "A policização",
      "radar": "confirmado"
+    },
+    {
+     "id": "polegar-em-gatilho-da-crianca",
+     "titulo": "Polegar em gatilho da criança",
+     "radar": "confirmado"
+    },
+    {
+     "id": "polegar-aduzido-congenito-clasped-thumb",
+     "titulo": "Polegar aduzido congênito (clasped thumb)",
+     "radar": "clinico"
     },
     {
      "id": "deficiencia-ulnar-o-avesso-da-radial",
@@ -11517,6 +11663,11 @@
     "mao-1233",
     "mao-0659",
     "mao-1562",
+    "mao-1372",
+    "mao-1374",
+    "mao-0933",
+    "mao-1002",
+    "mao-0061",
     "mao-0842",
     "mao-1140",
     "mao-1009",
@@ -11544,6 +11695,30 @@
     "mao-3409",
     "mao-3405",
     "mao-1720",
+    "mao-3596",
+    "mao-3599",
+    "mao-3614",
+    "mao-3624",
+    "mao-2156",
+    "mao-2158",
+    "mao-2090",
+    "mao-2157",
+    "mao-3594",
+    "mao-3595",
+    "mao-3597",
+    "mao-3615",
+    "mao-3623",
+    "mao-3601",
+    "mao-3602",
+    "mao-3605",
+    "mao-3606",
+    "mao-3609",
+    "mao-3611",
+    "mao-3617",
+    "mao-3620",
+    "mao-3622",
+    "mao-2464",
+    "mao-2515",
     "mao-2246",
     "mao-2006",
     "mao-2160",
@@ -11602,7 +11777,9 @@
     "mao-3399"
    ],
    "subtemas": [
-    "Deficiências longitudinais e mão torta"
+    "Deficiências longitudinais e mão torta",
+    "Outras malformações congênitas",
+    "Dedo em gatilho e outras tenossinovites"
    ]
   },
   {
@@ -13210,6 +13387,147 @@
    ]
   },
   {
+   "id": "green-infeccoes-cronicas-mao",
+   "versao": 1,
+   "titulo": "Infecções crônicas da mão: hanseníase, tuberculose, micobactérias atípicas, fungos e HIV",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 3 · Chronic Infections",
+   "resumo": "Infecção crônica da mão é problema de diagnóstico: suspeitar cedo, biopsiar cedo, cultivar em três temperaturas por até 12 semanas e nunca pôr em formol a peça da microbiologia. Hanseníase é a infecção crônica mais comum da mão nos países em desenvolvimento: ulnar, mediano e radial nessa ordem, golpe triplo (infecção, imunidade, compressão), nervos frios, perda sensitiva antes da motora, quatro estágios do nervo (parasitização, inflamação, aumento, destruição), espessamento por reação imune e caseação, raspado intradérmico como padrão-ouro, lepromina que classifica e não diagnostica, garra ulnar como deformidade mais comum, descompressão que complementa o corticoide. Tuberculose e micobactérias atípicas: tenossinovite flexora é a forma mais comum, com dedo em salsicha e corpúsculos de arroz; osteomielite insidiosa na falange proximal (criança) e na falange proximal do médio e anular (adulto), com spina ventosa; M. marinum resiste à isoniazida. Fungos: esporotricose linfocutânea com itraconazol, aspergilose e mucormicose angioinvasivas no imunodeprimido, corticoide e criptococose. Pioderma gangrenoso: forma ulcerativa, perna em 70 a 80%, corticoide, cirurgia piora. HIV: unhas azuladas, baqueteamento e telangiectasia periungueal.",
+   "acesso": "gratis",
+   "minutos": 65,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "qual-e-a-infeccao-cronica-mais-comum-depende-de-",
+     "titulo": "Qual é a infecção crônica mais comum: depende de onde se olha",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-laboratorio-como-nao-perder-o-diagnostico",
+     "titulo": "O laboratório: como não perder o diagnóstico",
+     "radar": "fundamento"
+    },
+    {
+     "id": "hanseniase-por-que-o-bacilo-vai-ao-nervo",
+     "titulo": "Hanseníase: por que o bacilo vai ao nervo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hanseniase-os-quatro-estagios-do-nervo-e-o-espes",
+     "titulo": "Hanseníase: os quatro estágios do nervo e o espessamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "hanseniase-a-pele-a-classificacao-e-o-diagnostic",
+     "titulo": "Hanseníase: a pele, a classificação e o diagnóstico",
+     "radar": "clinico"
+    },
+    {
+     "id": "hanseniase-tratamento-reacoes-cirurgia-do-nervo-",
+     "titulo": "Hanseníase: tratamento, reações, cirurgia do nervo e deformidades",
+     "radar": "clinico"
+    },
+    {
+     "id": "micobacterias-tuberculose-e-atipicas-na-tenossin",
+     "titulo": "Micobactérias: tuberculose e atípicas na tenossinóvia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "micobacterias-no-osso-e-na-articulacao",
+     "titulo": "Micobactérias no osso e na articulação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "micobacterias-na-pele-m-marinum-e-ulcera-de-buru",
+     "titulo": "Micobactérias na pele: M. marinum e úlcera de BURULI",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fungos-da-unha-ao-fungo-que-mata",
+     "titulo": "Fungos: da unha ao fungo que mata",
+     "radar": "confirmado"
+    },
+    {
+     "id": "infeccoes-bacterianas-cronicas",
+     "titulo": "Infecções bacterianas crônicas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "pioderma-gangrenoso-a-doenca-que-imita-infeccao",
+     "titulo": "Pioderma gangrenoso: a doença que imita infecção",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hiv-e-as-infeccoes-virais-cronicas",
+     "titulo": "HIV e as infecções virais crônicas",
+     "radar": "clinico"
+    },
+    {
+     "id": "protozoarios-algas-parasitas-e-doencas-do-oficio",
+     "titulo": "Protozoários, algas, parasitas e doenças do ofício",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento-o-raciocinio-diante-da-mao-que-nao-cu",
+     "titulo": "Fechamento: o raciocínio diante da mão que não cura",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1188",
+    "mao-1441",
+    "mao-1283",
+    "mao-1639",
+    "mao-1439",
+    "mao-1609",
+    "mao-0809",
+    "mao-1075",
+    "mao-0822",
+    "mao-1607"
+   ],
+   "treino": [
+    "mao-3681",
+    "mao-3680",
+    "mao-3684",
+    "mao-3694",
+    "mao-3691",
+    "mao-3693",
+    "mao-3687",
+    "mao-3677",
+    "mao-3688",
+    "mao-3690",
+    "mao-2398",
+    "mao-1745",
+    "mao-3692",
+    "mao-2325",
+    "mao-3685",
+    "mao-3686",
+    "mao-3679",
+    "mao-2520",
+    "mao-2196",
+    "mao-2059",
+    "mao-3678",
+    "mao-2057",
+    "mao-2366",
+    "mao-3689",
+    "mao-3682",
+    "mao-3683",
+    "mao-3695",
+    "mao-2107",
+    "mao-1991"
+   ],
+   "subtemas": [
+    "Infecções da mão",
+    "Lesões de nervos periféricos"
+   ]
+  },
+  {
    "id": "green-infeccoes-mao",
    "versao": 1,
    "titulo": "Infecções agudas da mão",
@@ -14546,7 +14864,7 @@
   },
   {
    "id": "green-outros-mao-1",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Outros temas da mão (1): cotovelo traumático, leito ungueal, vias do rádio e anestesia local",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -14660,7 +14978,6 @@
     "mao-1100",
     "mao-0305",
     "mao-1162",
-    "mao-1364",
     "mao-1409"
    ],
    "treino": [],
@@ -14670,7 +14987,7 @@
   },
   {
    "id": "green-outros-mao-2",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Outros temas da mão (2): síndrome compartimental, VOLKMANN, aneurismas e trauma do cotovelo",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -14678,7 +14995,7 @@
    "capitulo": "Capítulo 20 · Fractures of the Proximal Ulna (com os capítulos 18, 19, 21, 22, 51, 54 e 60)",
    "resumo": "Síndrome compartimental (adulto, rádio distal e dois ossos; criança, dois ossos e cotovelo flutuante; coagulopatia contraindica medir a pressão; mão com 10 compartimentos; fasciotomia nas primeiras 8 h); neonatal com lesão sentinela no braço; VOLKMANN pela classificação de TSUGE (leve, moderada com déficit sensitivo do mediano, grave com extensores) e pseudo-VOLKMANN; aneurismas raros, falsos, traumáticos e da artéria ulnar; SECRETAN como linfedema factício; capítulo do úmero (tipo IV e DUBBERLEY); cabeça do rádio (valgo e supinação, sinal da vela, zona segura de 110 graus, necrose assintomática); círculo de HORII; MONTEGGIA (alinhar a ulna, interósseo posterior).",
    "acesso": "gratis",
-   "minutos": 42,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14771,20 +15088,6 @@
     "mao-1628"
    ],
    "treino": [
-    "mao-2335",
-    "mao-2012",
-    "mao-2011",
-    "mao-2063",
-    "mao-2265",
-    "mao-2607",
-    "mao-2336",
-    "mao-2177",
-    "mao-2062",
-    "mao-2337",
-    "mao-2500",
-    "mao-2176",
-    "mao-2457",
-    "mao-2264",
     "mao-2602",
     "mao-2056",
     "mao-2276",
@@ -15805,15 +16108,15 @@
   },
   {
    "id": "green-sindactilia-polidactilia",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Sindactilia e polidactilia",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Campbell's Operative Orthopaedics, 15ª ed., o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., e o HEBERT",
    "capitulo": "Capítulo 36 · Deformities of the Hand and Fingers",
-   "resumo": "Falha da apoptose interdigital mediada por BMP; simples, complexa (sinoníquia), complicada, completa e incompleta; 1:2.000, bilateral em 50%, meninos 2:1, família em 10 a 40%; isolada na 3ª comissura (57%) e na 4ª (27%), 1ª e 2ª nas sindrômicas; borda cedo, centrais após 18 meses; um lado do dedo por vez; comissura com retalho dorsal e sem enxerto; BUCK-GRAMCKO; web creep; APERT (UPTON, KELLAM, FGFR2), POLAND e acrossindactilia (PATTERSON 3); pós-axial (A e B, negros, AD de penetrância variável, síndrome no branco), central (anular, bilateral, sinpolidactilia, HOXD13, STELLING e TUREK), mão em espelho (duas ulnas, sem polegar, AL-QATTAN, policizar o dedo radial mais móvel), epidermólise bolhosa (pseudossindactilia, recidiva acima de 50%) e polegar (WASSEL IV, preservar o ulnar, abdutor curto com o colateral radial, BILHAUT-CLOQUET nos I e II simétricos).",
+   "resumo": "Falha da apoptose interdigital mediada por BMP; simples, complexa (sinoníquia), complicada, completa e incompleta; 1:2.000, bilateral em 50%, meninos 2:1, família em 10 a 40%; isolada na 3ª comissura (57%) e na 4ª (27%), 1ª e 2ª nas sindrômicas; borda cedo, centrais após 18 meses; um lado do dedo por vez; comissura com retalho dorsal e sem enxerto; BUCK-GRAMCKO; web creep; APERT (UPTON, KELLAM, FGFR2), POLAND e acrossindactilia (PATTERSON 3); pós-axial (A e B, negros, AD de penetrância variável, síndrome no branco), central (anular, bilateral, sinpolidactilia, HOXD13, STELLING e TUREK), mão em espelho (duas ulnas, sem polegar, AL-QATTAN, policizar o dedo radial mais móvel), epidermólise bolhosa (pseudossindactilia, recidiva acima de 50%) e polegar (WASSEL IV, preservar o ulnar, abdutor curto com o colateral radial, BILHAUT-CLOQUET nos I e II simétricos, BAEK extra-articular nos II e III, colaterais críticos nos II, IV e VI, ponte cartilaginosa que reclassifica, faceta esquecida); polegar trifalângico (AD de alta penetrância, observar a falange extra, ápice ulnar, falange grande funde a articulação de menos movimento, mão de cinco dedos policiza).",
    "acesso": "gratis",
-   "minutos": 52,
+   "minutos": 64,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15911,6 +16214,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "o-polegar-trifalangico",
+     "titulo": "O polegar trifalângico",
+     "radar": "clinico"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -15957,7 +16265,8 @@
     "mao-0976",
     "mao-1371",
     "mao-1561",
-    "mao-0416"
+    "mao-0416",
+    "mao-0458"
    ],
    "treino": [
     "mao-2471",
@@ -15991,6 +16300,8 @@
     "mao-2284",
     "mao-2001",
     "mao-2533",
+    "mao-3603",
+    "mao-3612",
     "mao-2881",
     "mao-2910",
     "mao-2925",
@@ -16010,10 +16321,208 @@
     "mao-2923",
     "mao-2950",
     "mao-2007",
-    "mao-2375"
+    "mao-3607",
+    "mao-3598",
+    "mao-3600",
+    "mao-3613",
+    "mao-3616",
+    "mao-3618",
+    "mao-3619",
+    "mao-2375",
+    "mao-3604",
+    "mao-3608",
+    "mao-3610",
+    "mao-3621"
    ],
    "subtemas": [
     "Sindactilia e polidactilia"
+   ]
+  },
+  {
+   "id": "green-sindrome-compartimental-mao",
+   "versao": 1,
+   "titulo": "Síndrome compartimental do membro superior e contratura de VOLKMANN",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 51 · Compartment Syndrome and Volkmann Ischemic Contracture",
+   "resumo": "Síndrome compartimental do membro superior pelo Green: definição (pressão acima da perfusão), estágio tardio depois de 4 h, iminente, por esforço e esmagamento (síndrome do esmagamento = repercussão sistêmica); MATSEN e o ciclo vicioso; adulto com rádio distal e dois ossos, criança com dois ossos e cotovelo flutuante, mão com injeção intravenosa, sem fratura = pensar em coagulopatia; dor desproporcional com pico em 2 a 6 h, três As da criança; limiar de 30 a 40 mm Hg ou a menos de 30 da diastólica ou da média; coagulopatia contraindica a medida; volar profundo é o primeiro e mais afetado, aberto entre FUC e FSD; mão com 10 compartimentos, começar pelo túnel do carpo estendido; fasciotomia em até 8 h do diagnóstico, profilática após reparo vascular com isquemia acima de 3 h, 24 h não contraindica; déficit neurológico como complicação mais comum; lesão sentinela do neonato no braço; VOLKMANN por TSUGE (leve, moderado com déficit sensitivo mediano maior que ulnar, grave com extensor), HOLDEN 1 e 2, teste de VOLKMANN, PAGE, deslizamento com neurólise, grácil com interósseo anterior, pseudo-VOLKMANN.",
+   "acesso": "gratis",
+   "minutos": 69,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "da-descricao-de-volkmann-aos-tipos-de-holden",
+     "titulo": "Da descrição de VOLKMANN aos tipos de HOLDEN",
+     "radar": "fundamento"
+    },
+    {
+     "id": "definicoes-aguda-iminente-por-esforco-e-esmagame",
+     "titulo": "Definições: aguda, iminente, por esforço e esmagamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "fisiopatologia-o-ciclo-vicioso-de-matsen",
+     "titulo": "Fisiopatologia: o ciclo vicioso de MATSEN",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-tem-sindrome-compartimental-no-membro-super",
+     "titulo": "Quem tem síndrome compartimental no membro superior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diagnostico-clinico-os-seis-ps-e-os-tres-as",
+     "titulo": "Diagnóstico clínico: os seis Ps e os três As",
+     "radar": "confirmado"
+    },
+    {
+     "id": "medida-da-pressao-e-metodos-nao-invasivos",
+     "titulo": "Medida da pressão e métodos não invasivos",
+     "radar": "clinico"
+    },
+    {
+     "id": "sindrome-compartimental-por-esforco",
+     "titulo": "Síndrome compartimental por esforço",
+     "radar": "fundamento"
+    },
+    {
+     "id": "compartimentos-do-braco-e-do-antebraco",
+     "titulo": "Compartimentos do braço e do antebraço",
+     "radar": "confirmado"
+    },
+    {
+     "id": "compartimentos-da-mao-e-dos-dedos",
+     "titulo": "Compartimentos da mão e dos dedos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-inicial-e-indicacao-da-fasciotomia",
+     "titulo": "Tratamento inicial e indicação da fasciotomia",
+     "radar": "clinico"
+    },
+    {
+     "id": "tecnica-da-fasciotomia-braco-antebraco-mao-e-ded",
+     "titulo": "Técnica da fasciotomia: braço, antebraço, mão e dedos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "depois-da-fasciotomia-curativo-fechamento-result",
+     "titulo": "Depois da fasciotomia: curativo, fechamento, resultados e complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sindrome-compartimental-neonatal-e-a-lesao-senti",
+     "titulo": "Síndrome compartimental neonatal e a lesão sentinela",
+     "radar": "clinico"
+    },
+    {
+     "id": "contratura-isquemica-de-volkmann-o-que-e-e-por-q",
+     "titulo": "Contratura isquêmica de VOLKMANN: o que é e por que progride",
+     "radar": "fundamento"
+    },
+    {
+     "id": "classificacao-de-tsuge",
+     "titulo": "Classificação de TSUGE",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-teste-de-volkmann-flexores-extrinsecos-e-o-efe",
+     "titulo": "O teste de VOLKMANN: flexores extrínsecos e o efeito tenodese",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-da-contratura-do-osso-ao-musculo-livr",
+     "titulo": "Tratamento da contratura: do osso ao músculo livre",
+     "radar": "clinico"
+    },
+    {
+     "id": "deslizamento-flexopronador-e-transferencias-tend",
+     "titulo": "Deslizamento flexopronador e transferências tendinosas",
+     "radar": "clinico"
+    },
+    {
+     "id": "transferencia-muscular-livre-funcional",
+     "titulo": "Transferência muscular livre funcional",
+     "radar": "clinico"
+    },
+    {
+     "id": "nervo-intrinsecos-e-o-volkmann-da-mao",
+     "titulo": "Nervo, intrínsecos e o VOLKMANN da mão",
+     "radar": "fundamento"
+    },
+    {
+     "id": "pseudo-volkmann",
+     "titulo": "Pseudo-VOLKMANN",
+     "radar": "clinico"
+    },
+    {
+     "id": "onde-o-green-7-diverge-das-outras-fontes",
+     "titulo": "Onde o Green 7 diverge das outras fontes",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0901",
+    "mao-1469",
+    "mao-0962",
+    "mao-0029",
+    "mao-1346",
+    "mao-1216",
+    "mao-1539",
+    "mao-0795",
+    "mao-1364"
+   ],
+   "treino": [
+    "mao-2335",
+    "mao-2012",
+    "mao-3659",
+    "mao-3664",
+    "mao-3675",
+    "mao-3663",
+    "mao-3674",
+    "mao-3661",
+    "mao-3655",
+    "mao-3657",
+    "mao-3669",
+    "mao-3670",
+    "mao-3656",
+    "mao-3662",
+    "mao-3666",
+    "mao-3667",
+    "mao-2011",
+    "mao-3668",
+    "mao-3672",
+    "mao-2265",
+    "mao-2063",
+    "mao-3658",
+    "mao-3676",
+    "mao-2607",
+    "mao-2336",
+    "mao-2177",
+    "mao-2062",
+    "mao-3660",
+    "mao-3673",
+    "mao-2337",
+    "mao-2500",
+    "mao-2176",
+    "mao-2457",
+    "mao-3665",
+    "mao-1990",
+    "mao-3671",
+    "mao-2264"
+   ],
+   "subtemas": [
+    "Outros temas da mão"
    ]
   },
   {
@@ -17230,7 +17739,7 @@
   },
   {
    "id": "green8-neuropatias-compressao",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Neuropatias de compressão no membro superior",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -17238,7 +17747,7 @@
    "capitulo": "Capítulo 28 · Neuropatias de compressão",
    "resumo": "Fisiopatologia (barreira hematoneural, edema, perineuro, mielina, axônio), duplo esmagamento de UPTON e McCOMAS e o reverso de LUNDBORG, HNPP e estiramento (8% venoso, 15% isquemia); testes provocativos por sítio, SPURLING, colapso ao arranhar e fibrilação como sinal precoce de desnervação; mediano proximal (ligamento de STRUTHERS, pronador, lacertus, arco do FSD, GANTZER, MARTIN-GRUBER) e interósseo anterior (PARSONAGE-TURNER, exploração aos 7 a 10 meses); canal de GUYON (zonas I, II e III, ramo dorsal, garra paradoxal, ramo profundo no hâmulo); sinais do ulnar (DUCHENNE, BOUVIER, FROMENT, WARTENBERG, PITRES-TESTUT, RICHE-CANNIEU); túnel cubital (flexão reduz a área em 55%, OSBORNE, arcada de STRUTHERS a 8 cm, McGOWAN I a III, VCM abaixo de 50 m/s, 40 m/s para conduta, epicondilectomia de 20%, OGATA, transmuscular); radial sensitivo (WARTENBERG entre BR e ERLC, pronação com flexão ulnar) e interósseo posterior (túnel radial, FROHSE do epicôndilo lateral, EIP o último, intervalo BR e ERLC); reoperações; supraescapular, quadrangular e desfiladeiro.",
    "acesso": "gratis",
-   "minutos": 72,
+   "minutos": 108,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -17301,9 +17810,24 @@
      "radar": "confirmado"
     },
     {
-     "id": "desfiladeiro-toracico",
-     "titulo": "Desfiladeiro torácico",
+     "id": "desfiladeiro-toracico-o-que-e-e-como-se-classifi",
+     "titulo": "Desfiladeiro torácico: o que é e como se classifica",
      "radar": "confirmado"
+    },
+    {
+     "id": "desfiladeiro-toracico-anatomia-dos-tres-espacos",
+     "titulo": "Desfiladeiro torácico: anatomia dos três espaços",
+     "radar": "confirmado"
+    },
+    {
+     "id": "desfiladeiro-toracico-clinica-exame-e-exames",
+     "titulo": "Desfiladeiro torácico: clínica, exame e exames",
+     "radar": "confirmado"
+    },
+    {
+     "id": "desfiladeiro-toracico-tratamento-resultados-e-re",
+     "titulo": "Desfiladeiro torácico: tratamento, resultados e recorrência",
+     "radar": "clinico"
     },
     {
      "id": "onde-as-fontes-divergem",
@@ -17380,17 +17904,18 @@
     "ombro-cotovelo-0117",
     "ombro-cotovelo-0112",
     "ombro-cotovelo-0429",
-    "mao-0034",
-    "mao-0010",
-    "mao-0248",
-    "mao-0081",
-    "mao-0425",
-    "mao-1212",
-    "mao-1546",
-    "mao-0787",
     "mao-1466",
-    "mao-1813",
+    "mao-0010",
+    "mao-0425",
+    "mao-0081",
+    "mao-0034",
+    "mao-0787",
+    "mao-1546",
     "mao-0836",
+    "mao-1212",
+    "mao-0248",
+    "mao-0932",
+    "mao-1813",
     "mao-1355"
    ],
    "treino": [
@@ -17478,11 +18003,28 @@
     "mao-2774",
     "mao-2782",
     "mao-2805",
+    "mao-3629",
+    "mao-3630",
+    "mao-3632",
+    "mao-3633",
+    "mao-3636",
+    "mao-1744",
+    "mao-3626",
+    "mao-3627",
+    "mao-3628",
+    "mao-3634",
+    "mao-3638",
+    "mao-3641",
     "mao-2227",
     "mao-2140",
-    "mao-2139",
+    "mao-3631",
+    "mao-3635",
+    "mao-3639",
     "mao-2542",
-    "mao-1744"
+    "mao-2139",
+    "mao-3625",
+    "mao-3637",
+    "mao-3640"
    ],
    "subtemas": [
     "Neuropatia ulnar e outras compressões"

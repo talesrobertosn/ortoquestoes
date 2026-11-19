@@ -1,6 +1,6 @@
 ---
 id: green-sindactilia-polidactilia
-versao: 2
+versao: 3
 titulo: Sindactilia e polidactilia
 especialidade: mao
 acesso: gratis
@@ -8,16 +8,16 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Campbell's Operative Orthopaedics, 15ª ed., o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., e o HEBERT
 capitulo: Capítulo 36 · Deformities of the Hand and Fingers
 autores: Simon P. Kay, David B. McCombe e Scott H. Kozin (cap. 36); Scott H. Kozin (cap. 37, Deformities of the Thumb)
-fonte: Livros conferidos localmente em 04/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 35 (p. 1208 a 1210), cap. 36 (p. 1217 a 1240, 1255 a 1257, 1270, 1271 e 1275), cap. 37 (p. 1304 a 1315) e cap. 38 (p. 1334); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12 (p. 308, 358 a 378 e 390 a 392); Campbell's Operative Orthopaedics, 15ª ed., cap. 85 (p. 3659 a 3671 e 3679 a 3680); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 22 (p. 943 a 949 e 956 a 959); HEBERT (Sizínio), 5ª ed., cap. 6 (Alterações congênitas no cotovelo, punho e mão de crianças). Revisão de 17/11/2026: Green 7, cap. 36, p. 1217 a 1238 relidas com a ficha do capítulo, e os estudos citados conferidos na lista de referências do próprio capítulo (p. 1285 a 1288).
+fonte: Livros conferidos localmente em 04/11/2026: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 35 (p. 1208 a 1210), cap. 36 (p. 1217 a 1240, 1255 a 1257, 1270, 1271 e 1275), cap. 37 (p. 1304 a 1315) e cap. 38 (p. 1334); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12 (p. 308, 358 a 378 e 390 a 392); Campbell's Operative Orthopaedics, 15ª ed., cap. 85 (p. 3659 a 3671 e 3679 a 3680); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 22 (p. 943 a 949 e 956 a 959); HEBERT (Sizínio), 5ª ed., cap. 6 (Alterações congênitas no cotovelo, punho e mão de crianças). Revisão de 17/11/2026: Green 7, cap. 36, p. 1217 a 1238 relidas com a ficha do capítulo, e os estudos citados conferidos na lista de referências do próprio capítulo (p. 1285 a 1288). Revisão de 18/11/2026 (versão 3): Green 7, cap. 37, p. 1304 a 1320 relidas para a duplicação e o polegar trifalângico, com o Campbell's Operative Orthopaedics, 15ª ed., cap. 85 (duplicação do polegar e polegar trifalângico).
 subtemas: Sindactilia e polidactilia
-resumo: Falha da apoptose interdigital mediada por BMP; simples, complexa (sinoníquia), complicada, completa e incompleta; 1:2.000, bilateral em 50%, meninos 2:1, família em 10 a 40%; isolada na 3ª comissura (57%) e na 4ª (27%), 1ª e 2ª nas sindrômicas; borda cedo, centrais após 18 meses; um lado do dedo por vez; comissura com retalho dorsal e sem enxerto; BUCK-GRAMCKO; web creep; APERT (UPTON, KELLAM, FGFR2), POLAND e acrossindactilia (PATTERSON 3); pós-axial (A e B, negros, AD de penetrância variável, síndrome no branco), central (anular, bilateral, sinpolidactilia, HOXD13, STELLING e TUREK), mão em espelho (duas ulnas, sem polegar, AL-QATTAN, policizar o dedo radial mais móvel), epidermólise bolhosa (pseudossindactilia, recidiva acima de 50%) e polegar (WASSEL IV, preservar o ulnar, abdutor curto com o colateral radial, BILHAUT-CLOQUET nos I e II simétricos).
+resumo: Falha da apoptose interdigital mediada por BMP; simples, complexa (sinoníquia), complicada, completa e incompleta; 1:2.000, bilateral em 50%, meninos 2:1, família em 10 a 40%; isolada na 3ª comissura (57%) e na 4ª (27%), 1ª e 2ª nas sindrômicas; borda cedo, centrais após 18 meses; um lado do dedo por vez; comissura com retalho dorsal e sem enxerto; BUCK-GRAMCKO; web creep; APERT (UPTON, KELLAM, FGFR2), POLAND e acrossindactilia (PATTERSON 3); pós-axial (A e B, negros, AD de penetrância variável, síndrome no branco), central (anular, bilateral, sinpolidactilia, HOXD13, STELLING e TUREK), mão em espelho (duas ulnas, sem polegar, AL-QATTAN, policizar o dedo radial mais móvel), epidermólise bolhosa (pseudossindactilia, recidiva acima de 50%) e polegar (WASSEL IV, preservar o ulnar, abdutor curto com o colateral radial, BILHAUT-CLOQUET nos I e II simétricos, BAEK extra-articular nos II e III, colaterais críticos nos II, IV e VI, ponte cartilaginosa que reclassifica, faceta esquecida); polegar trifalângico (AD de alta penetrância, observar a falange extra, ápice ulnar, falange grande funde a articulação de menos movimento, mão de cinco dedos policiza).
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
 Este resumo é inspirado nos capítulos 36 (Deformities of the Hand and Fingers) e 37 (Deformities of the Thumb) do Green's Operative Hand Surgery, 7ª edição (2017), lidos lado a lado com o Tachdjian's Pediatric Orthopaedics (6ª ed., cap. 12), o Campbell's Operative Orthopaedics (15ª ed., cap. 85), o Lovell and Winter's Pediatric Orthopaedics (7ª ed., cap. 22) e o HEBERT (cap. 6). O panorama das malformações (SWANSON, OMT, deficiências, sinostose, MADELUNG) está no resumo green8-malformacoes-congenitas; aqui o foco é mais fundo e mais estreito: os dedos que não se separaram e os dedos que sobraram.
 
-O capítulo 36 do Green 7 (Deformities of the Hand and Fingers, p. 1217 a 1288) é de Simon KAY, de Leeds, David McCOMBE, de Melbourne, e Scott KOZIN, da Filadélfia. Apesar do título, ele não trata de deformidades adquiridas: é um capítulo de **malformações congênitas** dos dedos. Para não repetir conteúdo, a Biblioteca o divide em três resumos. Aqui ficam a **sindactilia** (inclusive APERT, POLAND, acrossindactilia e epidermólise bolhosa), a **polidactilia** pós-axial e central, a **mão em espelho** e, do capítulo 37, a duplicação do polegar. A **braquidactilia**, a **clinodactilia** e a **KIRNER** estão em **Deformidades dos dedos**; a **banda de constrição** (os anéis), a **mão em fenda**, a **simbraquidactilia**, as **transferências do pé** e a **macrodactilia** estão em **Malformações congênitas**.
+O capítulo 36 do Green 7 (Deformities of the Hand and Fingers, p. 1217 a 1288) é de Simon KAY, de Leeds, David McCOMBE, de Melbourne, e Scott KOZIN, da Filadélfia. Apesar do título, ele não trata de deformidades adquiridas: é um capítulo de **malformações congênitas** dos dedos. Para não repetir conteúdo, a Biblioteca o divide em três resumos. Aqui ficam a **sindactilia** (inclusive APERT, POLAND, acrossindactilia e epidermólise bolhosa), a **polidactilia** pós-axial e central, a **mão em espelho** e, do capítulo 37, a duplicação do polegar e o polegar trifalângico (a hipoplasia do polegar, o polegar em gatilho e o polegar aduzido do mesmo capítulo estão em **Deficiências longitudinais e mão torta**). A **braquidactilia**, a **clinodactilia** e a **KIRNER** estão em **Deformidades dos dedos**; a **banda de constrição** (os anéis), a **mão em fenda**, a **simbraquidactilia**, as **transferências do pé** e a **macrodactilia** estão em **Malformações congênitas**.
 
 Os autores resolvem quase tudo com duas perguntas, que valem para este resumo inteiro (p. 1218, 1232 e 1254):
 
@@ -476,7 +476,9 @@ A evolução é previsível: os dedos se fletem, a pele cicatricial os une e a m
 
 **STELLING e TUREK** classificaram pelo esqueleto (Tachdjian, p. 358): **I** sem ligação esquelética; **II** ligação esquelética a uma **falange ou metacarpo alargado ou bífido**; **III** duplicação completa com metacarpo (a mais rara). O Lovell and Winter (p. 949) e o HEBERT aplicam à pós-axial (II = duplicação falangeana sobre cabeça de metacarpo única ou bífida). É o tipo **II** que a UFG 2021 descreveu.
 
-!questoes central=mao-1003 relacionadas=pediatria-0804 treino=mao-2533
+O Green (p. 1304) acrescenta que a pré-axial também é frequente em **nativos americanos** e em muitas **populações asiáticas**, e que, mesmo no branco, a duplicação do polegar costuma ser **unilateral, esporádica e sem doença sistêmica**. O contraste com a pós-axial ajuda: o dedo extra ulnar do negro é quase sempre familiar e isolado, enquanto o do branco pede busca de síndrome; no polegar, a investigação é proporcional, mais atenta quando há trifalângico (herança dominante) ou sinais de deficiência radial.
+
+!questoes central=mao-1003 relacionadas=pediatria-0804 treino=mao-2533,mao-3603,mao-3612
 conceito: Pré-axial = lado radial, predomínio em brancos; pós-axial = lado ulnar, predomínio em negros; STELLING e TUREK: I partes moles, II ligação a falange ou metacarpo alargado ou bífido, III raio completo.
 como: O SIMÃO 2021 perguntou a epidemiologia pelo Green; a UFG 2021, o tipo de TUREK do dedo articulado com metacarpo ou falange alargada.
 armadilha: Inverter lado e raça, ou dar o tipo III a qualquer dedo com osso.
@@ -580,7 +582,7 @@ O exame mostra o que vai limitar o resultado (p. 1237 e 1238): a **extensão do 
 
 O tratamento tem dois princípios (p. 1238): **reduzir a mão a quatro dedos** e **construir um polegar** com os dedos retirados, usando as "peças de reposição" (BARTON e colaboradores, J Hand Surg Br, 1986, policização verdadeira; AL-QATTAN e colaboradores, J Hand Surg Eur, 2013, reconstrução sem policização formal). Os autores **policizam o dedo radial mais móvel** e retiram os mais rígidos (SIMÃO 2020); a pele dos dedos retirados aumenta a primeira comissura, e uma transferência tendinosa reforça o motor do novo polegar. Com **oito dedos**, o mais pré-axial pode ser policizado e o mais pós-axial amputado (Figs. 36.51 e 36.52).
 
-!questoes relacionadas=mao-0665 treino=mao-2007
+!questoes relacionadas=mao-0665 treino=mao-2007,mao-3607
 conceito: Mão em espelho: duplicação simétrica com dedo central e três de cada lado, sete dedos e nenhum polegar; duas ulnas e nenhum rádio, punho com pouca extensão e cotovelo e antebraço rígidos; vem da duplicação da ZPA (sonic hedgehog); trata-se reduzindo a quatro dedos e policizando o dedo radial mais móvel.
 como: A FMRP-USP 2026 perguntou o centro de sinalização; o SIMÃO 2023, a característica que define a anomalia.
 armadilha: Dizer que o dedo mais radial é um polegar, ou ligar a mão em espelho à crista ectodérmica apical.
@@ -626,7 +628,28 @@ O Tachdjian (Box 12.5, p. 359) traz **EZAKI** (de TEMTAMY e McKUSICK): **I = WAS
 
 A UFG 2020 escolheu "no tipo II as unhas não são fundidas". Os livros não fazem disso regra: o Green (p. 1305) diz que um I ou II sutil pode ser reconhecido só pela **unha alargada**; o HEBERT, que no I geralmente há duas unhas, mas pode haver uma. As demais alternativas são falsas pelos livros (o mais comum é o IV; duplicação até o metacarpo é o VI; trifalângico é o VII).
 
-!questoes central=mao-0935 relacionadas=mao-0400,mao-0423,mao-0712,mao-1096,mao-1370,mao-1415,mao-1560,mao-0976
+## O tipo mais comum e a armadilha da palavra bífida
+
+O Green descreve o padrão mais comum com uma frase que confunde quem lê depressa: falanges proximal e distal duplicadas que dividem a articulação com uma **cabeça de metacarpo bífida**, em cerca de **50%** dos casos (p. 1304). A palavra "bífida" leva alguns cursos a responder **tipo V** (metacarpo bífido). Não é. A Tabela 37.4 marca o **IV** como o mais comum, e a descrição é a do IV: duas falanges proximais inteiras sobre uma cabeça de metacarpo larga, às vezes com duas facetas. O metacarpo do tipo V é bífido ao longo da diáfise, não só na cabeça alargada. O Campbell 15 confirma: IV em 47%, VII em 20%, II em 15%.
+
+O raciocínio que evita o erro é contar as peças separadas. No IV, a separação começa na falange proximal (as duas existem inteiras), e o metacarpo é um só, apenas largo na ponta para receber as duas bases. No V, o próprio metacarpo se divide.
+
+Sobre o tipo **menos comum**, o Green não traz frequências por tipo. Nas tabelas do Tachdjian, os tipos I e VI ficam nos últimos lugares (2 a 5%), e no artigo de WASSEL o I é o mais raro. Quando uma questão pergunta pelo menos frequente, a resposta mais defensável é o I, sabendo que a fonte não é o Green.
+
+## Os tipos discretos: a unha denuncia
+
+Os tipos I e II podem ser tão sutis que a única pista é a **placa ungueal alargada** (Fig. 37.40, p. 1304). Um polegar de aspecto quase normal, com unha mais larga que a do outro lado e às vezes um sulco central, pede radiografia: por baixo pode haver uma falange distal bífida ou duplicada. Já o tipo IV raramente passa sem diagnóstico, porque os dois componentes são visíveis desde o nascimento.
+
+## O exame e a cirurgia podem reclassificar
+
+A radiografia de um bebê mostra osso, não cartilagem, e isso tem duas consequências que o Green registra (p. 1304):
+
+- **Pouco ou nenhum movimento passivo** no ponto de bifurcação do componente menor (em geral o radial) sugere um tipo **ímpar** (I, III ou V): os dois componentes estão unidos por cartilagem na base, que a radiografia ainda não mostra.
+- Na cirurgia, uma **ponte cartilaginosa** entre os componentes muda a classificação: o **II vira I** e o **IV vira III**. A classificação final é a da peça na mão do cirurgião, não a da radiografia.
+
+As duas regras são a mesma ideia vista de dois lados: bífido significa unido, e a união pode ser cartilaginosa antes de ser óssea. O SIMÃO 2014 cobrou as duas.
+
+!questoes central=mao-0935 relacionadas=mao-0400,mao-0423,mao-0712,mao-1096,mao-1370,mao-1415,mao-1560,mao-0976 treino=mao-3598,mao-3600,mao-3613,mao-3616,mao-3618,mao-3619
 conceito: WASSEL alterna bífido (ímpar) e duplicado (par): I e II na distal, III e IV na proximal, V e VI no metacarpo, VII trifalângico; o IV é o mais comum (cerca de 50% no Green, 43 a 53% no Tachdjian, 47% no Campbell).
 como: A UFG 2019, a SBOT-SP, o TEPOP 2024, a IAUPE 2025 e a PUC-SP 2020 perguntaram o mais comum; a USP 2025, 2024 e 2026 descreveram radiografias de tipo IV e III; a UFG 2020, afirmações sobre os tipos.
 armadilha: Dar III para as duas falanges completamente duplicadas (é IV), ou IV para a distal completa com proximal parcial (é III).
@@ -637,9 +660,21 @@ alerta: Os livros não afirmam que as unhas do tipo II são sempre separadas (`m
 
 A reconstrução **alinha o eixo, estabiliza as articulações, equilibra os motores, dá uma unha sem deformidade e um tamanho suficiente**, usando o melhor de cada componente (**spare parts**); os **colaterais** são críticos nos tipos que nascem de uma articulação, **II, IV e VI** (Green, p. 1305). A época: **cerca de 1 ano**, antes da pinça (Green); **6 a 18 meses** (Tachdjian, p. 362); **12 a 18 meses**, até 5 anos (Campbell, p. 3660); **1 a 3 anos** (HEBERT). Só o polegar de **pedículo estreito** se liga cedo; a reconstrução quase nunca é uma simples amputação (Tachdjian).
 
+## Quando operar e o que prometer aos pais
+
+Um dos componentes costuma dominar, e nada é urgente. O Green opera por volta de **1 ano**, antes de a criança desenvolver a pinça entre o polegar e o indicador, para que ela aprenda a pinçar com o polegar já reconstruído (p. 1305).
+
+A conversa com os pais muda o que eles esperam. O Green prefere o termo **polegar dividido** (split thumb): nenhum dos dois componentes tem a robustez de um polegar normal, porque o material de um polegar foi repartido em dois. O resultado final será **mais fino** que o do outro lado, com comprimento parecido. A cirurgia é de **peças de reposição** (spare parts): do componente retirado aproveitam-se colateral, tendões, músculo, pele e polpa para completar o que fica.
+
+O alvo da reconstrução tem cinco itens: **eixo longitudinal**, **articulações estáveis**, **motores equilibrados**, **unha sem deformidade** e **tamanho suficiente**. Os **colaterais** são críticos nos tipos em que a duplicação nasce de uma superfície articular: **II, IV e VI** (p. 1305). É a pergunta do SIMÃO 2015: nos tipos pares, o componente retirado leva consigo um lado da articulação, e o colateral daquele lado precisa ser transferido para o componente que fica.
+
+## I e II assimétricos: retirar e transferir
+
+Se o polegar está alinhado e tem unha comum, não se opera. Se os componentes são assimétricos, retira-se o menor, **transfere-se o colateral** numa manga osteoperiosteal, centraliza-se o extensor (e o flexor, se excêntrico) e retira-se a faceta articular extra da interfalângica. Desalinhamento pede osteotomia em cunha de fechamento. Fio anterógrado, gesso por 4 a 5 semanas e órtese até 8 a 12 semanas (p. 1305 a 1307).
+
 ## O polegar ulnar e o abdutor curto
 
-Em geral o **ulnar é o dominante** (Campbell, p. 3659; HEBERT). Se os dois são iguais, **preserva-se o ulnar**, para manter o **colateral ulnar** da metacarpofalângica, que resiste à **pinça** (Green, p. 1307; Tachdjian, p. 362).
+Em geral o **ulnar é o dominante** (Campbell, p. 3659; HEBERT). Se os dois são iguais, **preserva-se o ulnar**, para manter o **colateral ulnar** da metacarpofalângica, que resiste à **pinça** (Green, p. 1307; Tachdjian, p. 362). A razão é a mesma do BLAUTH II: na pinça, o indicador empurra o polegar para radial e o lado ulnar da metacarpofalângica é tracionado; um colateral ulnar nativo vale mais que qualquer reconstrução. Do polegar retirado aproveita-se um retalho de partes moles para aumentar a polpa e a prega ungueal do que fica.
 
 O SIMÃO 2024 cobrou os músculos. O Campbell (p. 3660): os intrínsecos de inervação **ulnar** (adutor, cabeça profunda do flexor curto) inserem no **polegar ulnar**; os de inervação **mediana** (**abdutor curto**, cabeça superficial do flexor curto, oponente) no **polegar radial**. O HEBERT diz o mesmo. Daí a regra do Green (p. 1309): o **abdutor curto insere no polegar radial** e deve ser **destacado com uma manga osteoperiosteal junto com o colateral radial** e reinserido no polegar ulnar, devolvendo **estabilidade e abdução**. O Tachdjian (p. 366) reinsere o abdutor curto **sobre o reparo do colateral radial**.
 
@@ -662,22 +697,84 @@ No **WASSEL IV**, o que evita o polegar em zigue-zague (Green, p. 1308 e 1309; T
 
 A indicação: a maioria **abandonou** a técnica **ou a reserva para duplicações distais simétricas dos tipos I e II** (Green, p. 1313); **I e talvez II de tamanho quase igual, com unha conjunta** (Campbell, p. 3660); o Tachdjian a admite no III verdadeiramente bífido, com interfalângica limitada; o HEBERT diz que foi **descrita para os tipos I e II** e pode ser usada nos III, IV e V. O Lovell and Winter chama os resultados nos I e II de **decepcionantes**. Complicações: **deformidade da unha e rigidez da interfalângica** (Green), lesão fisária e polegar largo (HEBERT, Campbell). A modificação de **BAEK** é **extra-articular**, preserva uma fise e serve aos II e III simétricos com unha menor que dois terços da contralateral (Green, p. 1307).
 
+Por que o BILHAUT-CLOQUET clássico dá esses problemas? A cunha central atravessa a matriz ungueal e a superfície articular da interfalângica dos dois componentes. Juntar duas metades de unha, cada uma com sua matriz, quase sempre deixa um **sulco ou crista** na unha; juntar duas metades de superfície articular, que nunca ficam no mesmo nível, deixa uma interfalângica **rígida** e às vezes incongruente (Fig. 37.67, p. 1316). Se a cunha pega as fises, ainda soma uma parada de crescimento. A modificação de BAEK resolve o problema afastando a operação da articulação: ela é **extra-articular** e **preserva uma fise inteira**, e por isso, numa série pequena, deu unhas sem deformidade e interfalângica móvel (Fig. 37.44, p. 1307 e 1313). A indicação dela é estreita: tipos **II e III simétricos**, com unha de cada componente **menor que dois terços** da unha do polegar do outro lado. Unha maior que isso permite simplesmente retirar um componente e reconstruir o outro.
+
+Algumas séries (TONKIN e BULSTRODE) estenderam a técnica aos tipos III, IV e VII. As provas antigas, porém, aceitam a resposta clássica: duplicação **distal simétrica**, tipos **I e II**.
+
 Na USP 2026, a **on-top-plasty** era o distrator vizinho: ponta melhor de um polegar sobre a base melhor do outro (Green, p. 1310).
 
 ## Resultados
 
 Bons nos tipos **I, II e IV**, piores nos **III, V, VI** e trifalângicos; polegar **25 a 33% mais fino**; reoperação de **20 a 25%** (Green, p. 1310 e 1313). Desvio de eixo, instabilidade ou tendão desalinhado levam à **deformidade em Z**; a artrodese ou condrodese é preferida para estabilizar; a protuberância na metacarpofalângica do IV costuma ser a **faceta esquecida** (Green, p. 1315). O Campbell (p. 3660) dá angulação tardia em até **46%** e revisões de **19 a 40%**.
 
-!questoes central=mao-1371 relacionadas=mao-1561,mao-0416 treino=mao-2375
+!questoes central=mao-1371 relacionadas=mao-1561,mao-0416,mao-0458 treino=mao-2375,mao-3604,mao-3608,mao-3610,mao-3621
 conceito: BILHAUT-CLOQUET: ressecção da parte central de osso e unha das duas distais e união das metades externas num polegar só, para dois polegares pequenos e simétricos dos tipos I e II; complica com unha e rigidez. Nos III e IV preserva-se o ulnar, e o abdutor curto (que insere no radial) vai com o colateral radial para o polegar que fica.
-como: A USP 2025 e a USP 2026 pediram a descrição e o nome da técnica; o TEOT 2025, os tipos em que se indica; o SIMÃO 2024, o músculo transferido com o colateral radial.
+como: A USP 2025 e a USP 2026 pediram a descrição e o nome da técnica; o TEOT 2025 e o Einstein 2026, os tipos em que se indica; o SIMÃO 2024, o músculo transferido com o colateral radial.
 armadilha: Confundir BILHAUT-CLOQUET com a exérese do polegar radial ou com a on-top-plasty, ou transferir o adutor, que já está no polegar ulnar.
 !fim
+
+## A saliência que aparece anos depois
+
+Uma criança operada de WASSEL IV com 1 ano volta aos 4 com uma **saliência na metacarpofalângica** do polegar que ficou. A causa mais provável é a **faceta intra-articular** da cabeça do metacarpo que articulava com o componente retirado e não foi ressecada (Fig. 37.69, p. 1314). Ela cresce com a criança, faz volume e empurra a falange para um lado, alimentando a angulação. O tratamento é artrotomia, retirada da faceta e preservação e reinserção do colateral (p. 1314). É por isso que a técnica primária insiste em aparar a cabeça do metacarpo: a faceta deixada é uma deformidade adiada.
+
+A **deformidade em Z** é a versão completa do mesmo problema. Um desvio de eixo não corrigido, uma articulação instável ou um tendão que puxa fora do centro somam forças em sentidos alternados, e com o crescimento a metacarpofalângica e a interfalângica angulam em direções opostas. Para estabilizar uma articulação ruim, o Green prefere a **artrodese** ou a **condrodese** a ligamentoplastias repetidas (p. 1313 e 1314).
+
+## III, V, VI e VII
+
+No **tipo III**, como a falange proximal é bífida, a osteotomia pode preservar toda a base da falange proximal, com sua fise e seu colateral; não é preciso levantar manga (p. 1309). Nos **tipos V e VI**, somam-se a reconstrução dos intrínsecos e, muitas vezes, a abertura da primeira comissura com zetaplastia ou retalho dorsal (p. 1310). No **tipo VII**, os princípios são os mesmos, com o problema adicional do componente trifalângico, tratado na seção seguinte.
+
+# O polegar trifalângico {radar=clinico}
+
+O polegar normal tem duas falanges; o trifalângico tem três. O Green (cap. 37, p. 1315 a 1320) o trata logo depois da duplicação porque os dois se cruzam o tempo todo: o trifalângico pode vir isolado, com doença sistêmica (**HOLT-ORAM**, **anemia de FANCONI**) ou como parte de uma duplicação (o **WASSEL VII**), e aparece também com sinpolidactilia, hipoplasia do polegar e deficiência central (p. 1315).
+
+## Duas formas e uma herança
+
+O Green descreve duas formas, com intermediárias entre elas (p. 1315 a 1318):
+
+- **falange extra num polegar quase normal**: o polegar opõe, tem tenar e está no lugar certo; a falange a mais varia de tamanho e de forma (triangular, trapezoidal ou retangular). A triangular, a falange delta, é a que entorta o dedo;
+- **falange completa num dedo no plano dos outros**: é a **mão de cinco dedos**, sem polegar oponível e sem primeira comissura de verdade. Provavelmente não é um polegar com falange a mais, e sim um polegar ausente com polidactilia do indicador.
+
+As duas formas são **autossômicas dominantes**, com **expressividade variável** e **alta penetrância**; o tipo pode mudar de uma geração para outra dentro da mesma família (p. 1318). Isso pede aconselhamento genético, embora existam casos esporádicos. A biologia explica a ligação com a duplicação: as mutações na região reguladora do sonic hedgehog, que organiza o eixo radioulnar do broto, causam tanto a polidactilia pré-axial quanto o trifalângico. O Campbell lembra que a duplicação do polegar associada a trifalângico tem herança dominante típica, e o Tachdjian cita a talidomida.
+
+## O que tratar
+
+O Green lista quatro componentes (p. 1318): **comprimento e angulação**, a **articulação interfalângica extra**, a **comissura** e a **oposição**. A meta é ter um polegar funcional antes da pinça de oposição, entre **12 e 18 meses**; correções leves podem esperar, mas o plano completo deve estar feito antes da idade escolar (p. 1319).
+
+## A falange extra: observar primeiro
+
+A falange extra tem crescimento imprevisível: pode crescer e entortar o polegar, ou ficar rudimentar e não incomodar. Por isso o **tratamento inicial é a observação** (p. 1319). O SIMÃO 2010 cobrou essa conduta.
+
+Quando há angulação, ela costuma ter **ápice ulnar** (Fig. 37.75): o vértice do ângulo aponta para o lado ulnar, e a ponta do polegar desvia para o **radial**. A diferença entre ápice e desvio é a pegadinha. Uma questão que pergunta "para onde o polegar desvia" e outra que pergunta "para onde aponta o ápice" têm respostas opostas, e o SIMÃO 2018 respondeu "ulnar" sem dizer qual das duas perguntava. Desenhar o ângulo na margem da prova resolve.
+
+## Falange pequena ou falange grande
+
+A conduta muda com o tamanho da falange extra, e o porquê está na articulação (p. 1319 e 1320).
+
+- **Falange pequena, em cunha, com desvio progressivo**: pode ser **retirada** por volta de 1 ano, com reconstrução dos colaterais. Via dorsal, mangas osteoperiosteais com os colaterais, fio longitudinal, gesso por 6 semanas e órtese por mais 6; a criança evita a pinça lateral por 3 meses, para não empurrar a interfalângica para radial. O resultado pode trazer instabilidade, rigidez e pouco movimento, e o autor prefere evitar a excisão simples e deixar a falange pequena quando possível.
+- **Falange grande, em cunha, com comprimento demais**: **não se retira**, porque o buraco deixado tornaria a articulação instável. Funde-se a falange anormal com a vizinha e encurta-se o polegar no mesmo gesto: preserva-se a articulação de **mais movimento** e funde-se a de **menos**. Uma ressecção assimétrica da cunha corrige o ângulo. Fio retrógrado e gesso por 5 semanas.
+
+## A comissura e a oposição
+
+A primeira comissura estreita se abre com **zetaplastia em quatro retalhos** nos casos leves (dá contorno melhor que a de dois retalhos) e com **retalho dorsal de rotação e avanço** nos moderados (p. 1320). A falta de oposição se resolve com **oponentoplastia**, pelo flexor superficial ou pelo abdutor do dedo mínimo (p. 1320).
+
+## A mão de cinco dedos
+
+A mão de cinco dedos não tem comissura nem oposição. O tratamento é **policizar** o dedo radial não oponível, com a mesma técnica usada no polegar ausente (tipo V de BLAUTH). Há uma alternativa em dois tempos: primeiro reduzir a articulação extra e, depois, osteotomia rotacional com oponentoplastia. Se o trifalângico for também hipoplásico, retira-se e policiza-se o indicador (Fig. 37.77, p. 1320). Com sindactilia completa da primeira comissura, a separação é precoce; com deficiência central, valem os princípios da mão em fenda, incluindo o retalho de SNOW-LITTLER (p. 1320).
+
+## O trifalângico no WASSEL VII
+
+Quando o polegar duplicado tem um componente trifalângico, valem os princípios da duplicação: escolher o componente, transferir colateral, centralizar tendões. Se o componente mantido for o trifalângico, a articulação extra é tratada por **redução articular com condrodese** da articulação de **menor movimento**, no mesmo tempo ou mais tarde. A alternativa é a **on-top-plasty**, que monta o polegar com a parte distal melhor de um componente sobre a parte proximal melhor do outro (p. 1310 e 1319). A lógica é a mesma da falange grande: sacrifica-se a articulação que menos se move e preserva-se a que trabalha.
+
+A classificação de **WOOD**, que subdivide o componente trifalângico do WASSEL VII e já caiu no SIMÃO, não está no Green 7 (só aparece como referência) nem no Campbell 15, que remete ao material eletrônico. Sem fonte local conferida, este resumo não a reproduz.
+
+## O resultado
+
+Os trifalângicos ficam no grupo de **resultados menos satisfatórios** da duplicação, ao lado dos tipos III, V e VI (Green, p. 1310; Campbell 15, cap. 85). Quanto mais longe o polegar está de um polegar de duas falanges com base estável, mais o resultado depende de quantas articulações boas sobraram.
 
 # Fechamento {radar=fundamento}
 
 A **sindactilia** é a falha da **apoptose interdigital** disparada pelas **BMP** (anulada pelo FGF alterado na APERT). Classifica-se pela extensão (**completa**, **incompleta**) e pelo tecido (**simples**, **complexa** com sinoníquia, **complicada** de DOBYNS); a **acrossindactilia** é da banda, **PATTERSON 3**. Isolada: **1:2.000**, **bilateral em 50%**, **2:1**, família em **10 a 40%**, **3ª comissura (57%)**, depois **4ª (27%)**; 1ª e 2ª pesam nas sindrômicas. Época pelo **comprimento dos dedos**: borda cedo, centrais após **18 meses**. Técnica: **um lado do dedo por vez**, **dois tempos** (1ª e 3ª, depois 2ª e 4ª), **retalho dorsal sem enxerto** (BAUER, FLATT), CRONIN, **pele total**, **BUCK-GRAMCKO**; o **web creep** é a complicação tardia típica. **APERT**: FGFR2, UPTON (pá, colher, botão de rosa), primeira comissura primeiro, tudo antes dos 2 anos, KELLAM com sindactilia. **POLAND**: peitoral esternocostal ausente e sindactilia simples dos centrais curtos, pela ruptura da subclávia. A **epidermólise bolhosa** dá uma pseudossindactilia que recidiva em mais de metade dos casos.
 
-A **polidactilia** depende do lado e da raça. **Pós-axial**: negros, **AD de penetrância variável**, **A** com esqueleto e **B** pendurado; no branco, ELLIS-VAN CREVELD; B se liga ou se excisa, A se resseca transferindo colateral ulnar e abdutor do mínimo. **Central**: rara, **anular**, **bilateral**, AD, **sinpolidactilia** (HOXD13), resultados ruins; dedo extra bem formado fica. **Mão em espelho**: sete dedos sem polegar, duas ulnas, ZPA duplicada; reduzir a quatro e policizar o radial mais móvel. **Pré-axial**: branco, unilateral, esporádica; **WASSEL IV** o mais comum; preservar o **ulnar**; **abdutor curto** com o colateral radial; **BILHAUT-CLOQUET** nos I e II simétricos.
+A **polidactilia** depende do lado e da raça. **Pós-axial**: negros, **AD de penetrância variável**, **A** com esqueleto e **B** pendurado; no branco, ELLIS-VAN CREVELD; B se liga ou se excisa, A se resseca transferindo colateral ulnar e abdutor do mínimo. **Central**: rara, **anular**, **bilateral**, AD, **sinpolidactilia** (HOXD13), resultados ruins; dedo extra bem formado fica. **Mão em espelho**: sete dedos sem polegar, duas ulnas, ZPA duplicada; reduzir a quatro e policizar o radial mais móvel. **Pré-axial**: branco, unilateral, esporádica; **WASSEL IV** o mais comum; preservar o **ulnar**; **abdutor curto** com o colateral radial; **BILHAUT-CLOQUET** nos I e II simétricos, BAEK extra-articular nos II e III com unha menor que dois terços; colaterais críticos nos **II, IV e VI**; ponte cartilaginosa reclassifica **II em I** e **IV em III**; saliência tardia na MCF = **faceta esquecida**. O **trifalângico** é dominante de alta penetrância; a falange extra se **observa**, angula com **ápice ulnar**, a pequena pode sair por volta de 1 ano, a grande se funde sacrificando a articulação de **menos movimento**; a mão de cinco dedos se **policiza**.
 
-> **Na prova:** apoptose por BMP; 3ª comissura 57%, 4ª 27%; bilateral 50%, 2:1, família 10 a 40%; borda cedo, central após 18 meses; um lado por vez, dois tempos; retalho dorsal sem enxerto; BUCK-GRAMCKO; web creep; PATTERSON 3; APERT = FGFR2, primeira comissura primeiro, KELLAM com sindactilia; deficiência ulnar com sindactilia em 30%; pós-axial AD em negros, ELLIS-VAN CREVELD no branco; tipo A leva colateral ulnar e abdutor do mínimo, gesso 3 semanas; central = anular, depois médio, bilateral; sinpolidactilia sem ganho de movimento; TUREK II; espelho = duas ulnas, sem polegar, policizar o radial mais móvel; epidermólise = pele parcial, recidiva acima de 50%; WASSEL IV, III = proximal bífida; preservar o ulnar; BILHAUT-CLOQUET nos I e II simétricos.
+> **Na prova:** apoptose por BMP; 3ª comissura 57%, 4ª 27%; bilateral 50%, 2:1, família 10 a 40%; borda cedo, central após 18 meses; um lado por vez, dois tempos; retalho dorsal sem enxerto; BUCK-GRAMCKO; web creep; PATTERSON 3; APERT = FGFR2, primeira comissura primeiro, KELLAM com sindactilia; deficiência ulnar com sindactilia em 30%; pós-axial AD em negros, ELLIS-VAN CREVELD no branco; tipo A leva colateral ulnar e abdutor do mínimo, gesso 3 semanas; central = anular, depois médio, bilateral; sinpolidactilia sem ganho de movimento; TUREK II; espelho = duas ulnas, sem polegar, policizar o radial mais móvel; epidermólise = pele parcial, recidiva acima de 50%; WASSEL IV, III = proximal bífida; preservar o ulnar; BILHAUT-CLOQUET nos I e II simétricos (problemas: unha e rigidez da IF); BAEK extra-articular II e III; colaterais críticos II, IV e VI; ponte cartilaginosa: II vira I, IV vira III; faceta esquecida; trifalângico: AD, observar, ápice ulnar, fundir a articulação de menos movimento, mão de cinco dedos policiza.

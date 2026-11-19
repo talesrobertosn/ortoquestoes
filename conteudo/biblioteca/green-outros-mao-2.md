@@ -1,6 +1,6 @@
 ---
 id: green-outros-mao-2
-versao: 1
+versao: 2
 titulo: Outros temas da mão (2): síndrome compartimental, VOLKMANN, aneurismas e trauma do cotovelo
 especialidade: mao
 acesso: gratis
@@ -19,7 +19,7 @@ Este resumo reúne assuntos da prova de Cirurgia da Mão que não couberam nos o
 
 Os assuntos parecem soltos, mas a banca os cobra do mesmo jeito: **uma frase do Green virada em pergunta**. Por isso o texto insiste nas palavras exatas do livro: qual fratura, qual compartimento, quantas horas, qual tipo da classificação, qual nervo. Três blocos concentram as questões:
 
-- **Compartimento e VOLKMANN** (mais da metade das questões do bloco isquêmico): quem tem, como medir, quantos compartimentos, até quando operar, o recém-nascido, a classificação de TSUGE.
+- **Compartimento e VOLKMANN**: quem tem, como medir, quantos compartimentos, até quando operar, o recém-nascido, a classificação de TSUGE. As questões deste bloco ficam ligadas ao resumo próprio do capítulo 51 (green-sindrome-compartimental-mao), que trata o tema em profundidade; aqui fica a revisão rápida.
 - **Vasos e doença factícia**: aneurisma da artéria ulnar e doença de SECRETAN.
 - **Cotovelo e antebraço**: capítulo do úmero, cabeça do rádio, círculo de HORII, MONTEGGIA, rigidez, pseudoartrose.
 
@@ -75,12 +75,6 @@ Os números de incidência do capítulo: cerca de **1%** nas fraturas pediátric
 
 O Campbell (cap. 79, p. 3501) concorda no essencial e acrescenta uma revisão em que as fraturas responderam por 65,4% dos casos, as lesões de partes moles por 30,7% e as vasculares por 3,9%. Para a criança, o Campbell cita as fraturas **supracondilianas e do antebraço** como as mais associadas e diz que a supracondiliana com lesão neurovascular ou com cotovelo flutuante aumenta muito o risco. Não há divergência com o Green; o Green apenas é mais específico ao dizer o que mudou de "historicamente" para "hoje".
 
-!questoes treino=mao-2335,mao-2012
-conceito: Na criança, hoje, a síndrome compartimental do antebraço acompanha a fratura dos dois ossos do antebraço e a supracondiliana com rádio distal (cotovelo flutuante); no adulto, o rádio distal e os dois ossos do antebraço.
-como: O SIMÃO 2024 perguntou as fraturas da criança segundo o Green; o SIMÃO 2023, as do adulto, usando o cotovelo flutuante como distrator.
-armadilha: Trocar as listas. O cotovelo flutuante é resposta da criança, não do adulto; a supracondiliana isolada é a resposta histórica, não a atual.
-!fim
-
 # Diagnóstico clínico e medida da pressão {radar=clinico}
 
 O diagnóstico é **principalmente clínico** (Green's Operative Hand Surgery, 7ª ed., cap. 51, p. 1765 a 1767). A apresentação pode ocorrer nas primeiras horas ou vários dias depois da lesão. Os achados clássicos são os seis Ps.
@@ -123,12 +117,6 @@ Os aparelhos digitais são sensíveis ao movimento e **não substituem o exame c
 
 A forma crônica do esforço, no membro superior, foi descrita no compartimento flexor do antebraço, no ancôneo e, na mão, no adutor do polegar. A dor começa nos primeiros 30 minutos da atividade (remo, bicicleta, motocicleta, trabalho manual com preensão prolongada) e some com o repouso. O diagnóstico usa a pressão antes, durante e depois do exercício, ou a ressonância com alteração de sinal em T2; depois da fasciotomia, 90% voltam ao esporte (p. 1767, 1768 e 1772).
 
-!questoes treino=mao-2011
-conceito: As contraindicações para medir a pressão compartimental são estruturas neurovasculares em risco sob a agulha, coagulopatia e celulite difusa.
-como: O SIMÃO 2023 pediu a condição que contraindica a medida, entre doenças comuns sem relação com a punção.
-armadilha: Marcar uma comorbidade frequente só porque piora o prognóstico do paciente; a tabela do Green lista apenas o que torna a punção perigosa.
-!fim
-
 # Compartimentos do membro superior {radar=clinico}
 
 Saber o conteúdo de cada compartimento é anatomia pura, e a banca cobra com trocas de um músculo. A fonte é a Tabela 51.4 do Green's Operative Hand Surgery, 7ª ed. (cap. 51, p. 1768).
@@ -161,12 +149,6 @@ O **volar profundo** guarda o flexor profundo, o flexor longo do polegar e o pro
 ## A mão: a conta dos dez
 
 A mão tem **10 compartimentos separados** (p. 1770 e pontos críticos da p. 1772): **tenar, hipotenar, adutor do polegar, 4 interósseos dorsais e 3 interósseos volares**. A conta é 1 + 1 + 1 + 4 + 3. O Campbell chega ao mesmo número com as dissecções por injeção de HALPERN e MOCHIZUKI: três interósseos palmares e quatro dorsais, cada um envolto por uma fáscia resistente, mais adutor, tenar e hipotenar. Os dedos ficam fora da conta: não são compartimentos verdadeiros, mas precisam de dermotomia quando estão tensos.
-
-!questoes treino=mao-2063,mao-2265
-conceito: A mão tem 10 compartimentos (tenar, hipotenar, adutor, 4 interósseos dorsais e 3 volares); o volar superficial do antebraço reúne os três flexores do punho, o pronador redondo e o flexor superficial dos dedos.
-como: A SBCM 2024 perguntou quantos compartimentos considerar na mão; a SBCM 2023, a composição do compartimento volar superficial do antebraço.
-armadilha: Contar os interósseos como um compartimento só (dá 4 ou 5) ou aceitar o pronador quadrado, o braquiorradial ou o supinador entre os músculos superficiais.
-!fim
 
 # Fasciotomia: prazo, técnica e cuidados {radar=clinico}
 
@@ -210,12 +192,6 @@ Sobre a fasciotomia tardia, os autores do Green mudaram a tradição: o medo de 
 
 As feridas ficam **abertas**, sem suturas de retenção. Curativo de pressão negativa serve quando não há nervo nem artéria expostos. A troca é no centro cirúrgico em 24 a 48 horas; o fechamento primário retardado definitivo espera o edema ceder, o que pode levar 7 a 10 dias, e muitos pacientes precisam de enxerto de pele parcial. Na mão, só a incisão do túnel do carpo é candidata a fechamento retardado; as demais cicatrizam por segunda intenção. A terapia começa logo. As complicações são comuns (42% numa metanálise e 32% em outra série), e a mais frequente é o **déficit neurológico**.
 
-!questoes treino=mao-2607
-conceito: Para o Green, a fasciotomia nas primeiras 8 horas depois do diagnóstico se associa a menor risco de sequela funcional permanente; operar depois de 24 horas deixou de ser contraindicação.
-como: O SIMÃO 2022 perguntou o prazo segundo o Green, com 2, 4, 6 e 8 horas nas alternativas.
-armadilha: Responder 4 horas (limite entre estágio precoce e tardio e prazo de sequela mínima) ou 6 horas (fim do pico da dor); a frase do prazo usa 8.
-!fim
-
 # Síndrome compartimental neonatal {radar=clinico}
 
 É um quadro raro com um sinal de exame que vale a questão. O Green's Operative Hand Surgery, 7ª ed. (cap. 51, p. 1763), diz que, **além do edema do antebraço**, costuma haver uma **lesão de pele característica na face lateral proximal do braço**, conhecida como **lesão sentinela** da síndrome compartimental neonatal. A série de referência citada é a de 24 casos de RAGLAND e colaboradores.
@@ -239,13 +215,6 @@ Há, porém, diferenças de localização entre os textos, e vale conhecê-las.
 !fim
 
 O gabarito das provas de Cirurgia da Mão segue o **texto do Green**: lesão de pele no braço, com edema do antebraço. A legenda da figura do próprio Green e o Campbell apontam para o antebraço e a mão; se a pergunta citar o Campbell, a resposta muda.
-
-!questoes treino=mao-2336,mao-2177,mao-2062
-conceito: No recém-nascido, edema do antebraço com uma lesão de pele na face lateral proximal do braço (lesão sentinela) indica síndrome compartimental neonatal; tratar cedo melhora função e crescimento, mas a contratura de VOLKMANN neonatal já instalada não melhora.
-como: O SIMÃO 2024 pediu a definição da lesão sentinela; a SBCM 2022, os achados que chamam a atenção para o diagnóstico; a SBCM 2024, a afirmação correta sobre o quadro.
-armadilha: Aceitar que a contratura já instalada melhora com abordagem precoce, que o quadro é manifestação de banda amniótica ou que a mão é o segmento típico.
-alerta: Em `mao-2336`, `mao-2177` e `mao-2062` o gabarito segue o texto do Green 7ª ed. (lesão no braço). A legenda da Fig. 51.1 do mesmo capítulo fala em antebraço lateral proximal, e o Campbell 15ª ed. situa a lesão no dorso do antebraço, punho ou mão. Gabarito oficial mantido.
-!fim
 
 # Contratura isquêmica de VOLKMANN e a classificação de TSUGE {radar=clinico}
 
@@ -297,12 +266,6 @@ A preferência dos autores (p. 1776 e 1777):
 
 No deslizamento, a dissecção solta a massa flexora do epicôndilo medial, da ulna e da membrana interóssea, sempre acima do periósteo. O cuidado crítico é a **artéria interóssea comum**, ramo da ulnar, e a **interóssea posterior**, que é a irrigação dominante do compartimento extensor.
 
-!questoes treino=mao-2337,mao-2500,mao-2176,mao-2457
-conceito: TSUGE leve pega o flexor profundo do médio e do anelar sem nervo; o moderado soma flexor longo do polegar, parte do superficial e déficit sensitivo maior no mediano; o grave toma todo o flexor, parte do extensor e traz déficit neurológico grave. No moderado a tabela lista deslizamento da origem dos flexores, alongamento fracionado, encurtamento do antebraço e carpectomia proximal.
-como: O SIMÃO 2024 pediu o achado que define o tipo moderado; o SIMÃO 2021, o que caracteriza o grave; a SBCM 2022 e o SIMÃO 2022, uma opção de tratamento do moderado na tabela do Green.
-armadilha: Atribuir ao moderado a transferência muscular livre ou a reconstrução de nervo (são do grave), ou achar que o encurtamento do antebraço, por ser criticado no texto, não está na tabela.
-!fim
-
 # Pseudo-VOLKMANN {radar=clinico}
 
 Nem todo dedo que não estende depois de uma fratura do antebraço é isquemia. O Green's Operative Hand Surgery, 7ª ed. (cap. 51, pontos críticos da p. 1785), manda **distinguir a contratura de VOLKMANN da contratura de pseudo-VOLKMANN** e dá três pistas: a **história** pode favorecer um diagnóstico ou outro; os **achados de acometimento de nervo são menos prováveis** no pseudo-VOLKMANN; e a **ressonância magnética não mostra alterações isquêmicas do músculo** no pseudo-VOLKMANN. Em outras palavras, a aparência é a mesma, mas a causa não é a isquemia.
@@ -310,12 +273,6 @@ Nem todo dedo que não estende depois de uma fratura do antebraço é isquemia. 
 O Green 7ª ed. não detalha o mecanismo. Ele aparece nos livros de trauma infantil. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 10, Fig. 10-38), descreve o **encarceramento do flexor profundo dos dedos no foco de fratura da ulna** (e também do rádio): o dedo acometido, em geral indicador, médio ou anelar, sozinho ou em combinação, **não estende por completo**; o quadro raramente responde à terapia, e o tratamento é a liberação cirúrgica por uma pequena incisão sobre a ulna. O Rockwood não usa o nome pseudo-VOLKMANN. Quem usa é o trabalho de DEENEY e colaboradores, listado na bibliografia das fraturas do antebraço do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 1273.e19 aprox.), cujo título fala em pseudo-VOLKMANN por aderência do flexor profundo às fraturas da ulna em crianças.
 
 O raciocínio à beira do leito: houve dor desproporcional, compartimento tenso, gesso apertado? Há déficit sensitivo do mediano? Se a resposta é não e a limitação pega um ou dois dedos depois de uma fratura da ulna, pense em aderência mecânica; segundo o Green, a ressonância desse paciente não mostra músculo isquêmico.
-
-!questoes treino=mao-2264
-conceito: O pseudo-VOLKMANN tem a aparência da contratura de VOLKMANN sem decorrer de isquemia; nervo poupado e ressonância sem alteração isquêmica do músculo.
-como: A SBCM 2023 pediu a característica do pseudo-VOLKMANN, com esmagamento, esforço e infecção como distratores.
-armadilha: Procurar outra causa de síndrome compartimental (esmagamento, esforço, infecção); todas essas são isquêmicas, e o prefixo pseudo indica justamente a ausência de isquemia.
-!fim
 
 # Aneurismas e trombose da artéria ulnar {radar=clinico}
 
