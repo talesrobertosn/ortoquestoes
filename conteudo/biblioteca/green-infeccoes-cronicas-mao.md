@@ -182,7 +182,7 @@ Sobre a exposição (p. 104 e 107): cerca de **90% das pessoas expostas têm imu
 
 Um alerta sobre a incubação: o texto do Green imprime "2 a 7 dias" (p. 104), o que é claramente um erro tipográfico, porque a literatura dá **2 a 7 anos**. Os simulados deste site não cobram esse número.
 
-!questoes central=mao-1188,mao-2398 relacionadas=mao-1441,mao-1745 treino=mao-3681,mao-3680,mao-3684,mao-3694,mao-3691,mao-3693,mao-3687,mao-3677,mao-3688,mao-3690
+!questoes central=mao-1188 relacionadas=mao-1441 treino=mao-3681,mao-3680,mao-3684,mao-3694,mao-3691,mao-3693,mao-3687,mao-3677,mao-3688,mao-3690,mao-2398,mao-1745
 conceito: O M. leprae lesa o nervo por três mecanismos somados (infecção, reação imunológica e compressão), prefere os nervos superficiais e frios, acomete ulnar, mediano e radial nessa ordem em cerca de 70% dos casos ativos e recidivados, e a perda sensitiva vem antes da motora.
 como: A PUC-SP 2023 deu quatro afirmativas sobre os nervos na hanseníase e só a do golpe triplo estava inteira; o simulado do SIMÃO 2022 cobrou o mesmo trecho, com a incubação, os estágios e a posição do ulnar como distratores; a USP-SP 2024 e o simulado do SIMÃO 2026 pediram a ordem dos nervos e a explicação pela temperatura.
 armadilha: Trocar os 70% por 50%, dizer que o bacilo prefere as partes aquecidas, inverter a ordem sensitivo-motor ou pôr o ulnar como último tronco acometido.
@@ -222,7 +222,7 @@ O abscesso de nervo pode ser a primeira manifestação da doença, aparecer dura
 
 A conduta é escalonada (p. 113): o abscesso **indolor** pode regredir com corticoide oral; o indolor e flutuante sem déficit progressivo pode ser aspirado guiado por ultrassom; o **doloroso e flutuante que não responde**, ou o que tem **déficit progressivo**, é drenado. A técnica é delicada e tem a lógica de não piorar o nervo: **uma única epineurotomia longitudinal**, drenagem do material caseoso, **sem dissecar os fascículos** e **sem fechar o epineuro**, com dreno por 24 a 48 horas. Fístula crônica pede excisão do trajeto.
 
-!questoes central=mao-2325 relacionadas=mao-1283,mao-1639 treino=mao-3692
+!questoes central=mao-1283 relacionadas=mao-1639 treino=mao-3692,mao-2325
 conceito: O nervo passa por parasitização (normal ao exame, mas 50% com déficit), inflamação (aderido ao perineuro, não rola), aumento (espessado por caseação, 95% com déficit) e destruição (cordão fibroso); o espessamento é reação imune e caseação, não infecção inicial.
 como: O simulado do SIMÃO 2024 pediu a proporção de déficit já na fase de parasitização; a USP-SP 2025 mostrou nervos espessados numa imagem, e a USP-SP 2026 cobrou a neuropatia ulnar com ou sem espessamento.
 armadilha: Achar que o nervo normal à palpação não tem déficit, trocar 50% por 95%, ou incluir "atrofia" entre os estágios.
@@ -264,7 +264,7 @@ Dois índices saem da lâmina (p. 108): o **índice baciloscópico** conta todos
 
 A biópsia de pele deve ter a derme inteira e o subcutâneo com um nervo dérmico, e parte vai em álcool a 70% para PCR, que detecta de 10 a 100 bacilos (p. 108). A biópsia de nervo se faz num nervo **sensitivo puro** e espessado com pouco déficit (sural, ramo sensitivo do radial, supraclavicular); a PCR do nervo é positiva em 80% (p. 108). A aspiração com agulha fina (agulha 22G paralela ao nervo) achou granuloma em 25% e BAAR em 24%, sem déficit novo em 1 ano; a biópsia aberta retira 1 ou 2 fascículos, com 2 cm (p. 109). A eletroneuromiografia não é específica; a ressonância localiza abscesso ou calcificação (p. 109). E um princípio: **não se diagnostica hanseníase por exclusão nem por teste terapêutico** (p. 109).
 
-!questoes central=mao-2520 treino=mao-3685,mao-3686,mao-3679
+!questoes treino=mao-3685,mao-3686,mao-3679,mao-2520
 conceito: A manifestação mais comum e mais precoce da hanseníase é a mancha hipocrômica com sensibilidade diminuída; lesão descorada e anestésica ao mesmo tempo só existe na hanseníase. O raspado intradérmico é o padrão-ouro, e a lepromina classifica (positiva na tuberculoide) sem diagnosticar.
 como: O simulado do SIMÃO 2021 pediu a manifestação clínica mais comum e mais precoce, contra perda motora, garra e sintomas nasais.
 armadilha: Marcar a garra ulnar ou a perda de força dos intrínsecos, que são tardias; a perda motora vem depois da sensitiva.
@@ -390,7 +390,7 @@ As drogas (p. 95): tuberculose, **quatro drogas** (isoniazida, rifampicina, pira
 
 A bursite tuberculosa segue a mesma lógica: subdeltóidea, depois olécrano, depois bicipitorradial, com calcificação em um terço (p. 96).
 
-!questoes central=mao-1439,mao-2196,mao-2059
+!questoes central=mao-1439 treino=mao-2196,mao-2059
 conceito: A tenossinovite (flexora, mais que extensora) é a forma mais comum de tuberculose na mão; as micobactérias preferem a tenossinóvia à articulação, ao osso, ao subcutâneo e ao nervo; dedo em salsicha, gânglio palmar composto e túnel do carpo com corpúsculos de arroz são as apresentações típicas.
 como: A USP-SP 2024 pediu a manifestação mais comum de tuberculose na mão; o simulado do SBCM 2023, a infecção do dedo em salsicha com corpúsculos de arroz; o simulado do SBCM 2024, a estrutura que a tuberculose raramente acomete no membro superior.
 armadilha: Marcar osteomielite ou pioartrite como mais comuns; atribuir os corpúsculos de arroz só a fungos, ou achar que a tuberculose gosta de nervo (quem tem tropismo neural é o M. leprae).
@@ -441,7 +441,7 @@ A história das drogas (p. 100) mostra como a tuberculose deixou de ser cirúrgi
 
 A duração (p. 101): partes moles, 4 meses de isoniazida e rifampicina ou 6 meses de isoniazida e etambutol; **osso e articulação, 9 a 12 meses**, com quatro drogas nos 2 primeiros meses; tuberculose resistente, quatro ou mais drogas por 18 meses ou mais. O tratamento é diretamente observado (DOT), como recomenda a OMS. Toda tuberculose da mão pede **radiografia de tórax**; isolamento respiratório por 2 semanas só se houver tuberculose pulmonar ativa (p. 101). E, num tempo de anti-TNF, o M. marinum é um oportunista crescente (p. 101).
 
-!questoes central=mao-1609,mao-2057,mao-2366 treino=mao-3678
+!questoes central=mao-1609 treino=mao-3678,mao-2057,mao-2366
 conceito: A osteomielite tuberculosa da mão é insidiosa, com inchaço fusiforme pouco doloroso e sem calor; na criança, a dactilite (spina ventosa) atinge mais a falange proximal, depois média, distal e metacarpos; no adulto, dedos mais que metacarpos, médio e anular mais que os outros, e a falange proximal mais que as demais.
 como: A USP-SP 2026 pediu a afirmação correta sobre a tuberculose dos ossos da mão (início insidioso, contra quadro agudo, cura espontânea e esclerose); os simulados do SBCM 2024 e do SIMÃO 2024 pediram o osso mais acometido na criança e no adulto.
 armadilha: Descrever a tuberculose óssea como aguda e purulenta, marcar o metacarpo ou a falange distal, ou escolher o indicador no adulto.
@@ -615,7 +615,7 @@ Na mão, a lesão costuma estar no **dorso de um dedo**, na 3ª ou 4ª década (
 
 O tratamento tem quatro pontos (p. 77): **prednisona oral** (100 mg por dia), tratamento da doença de base, curativo local e, o mais importante, **evitar cirurgia**. A melhora com o corticoide é dramática em 24 horas, e a epitelização completa vem em cerca de 6 semanas, porque a derme profunda, as glândulas e os folículos, de onde a pele se regenera, estão preservados. Alternativas: dapsona, azatioprina, corticoide tópico ou intralesional. No pioderma **resistente ao corticoide** ligado à **doença de CROHN**, usam-se **ciclosporina ou infliximabe** (p. 77).
 
-!questoes central=mao-0822 relacionadas=mao-1607,mao-2107
+!questoes central=mao-0822 relacionadas=mao-1607 treino=mao-2107
 conceito: O pioderma gangrenoso é uma dermatose neutrofílica ligada à doença inflamatória intestinal (retocolite e CROHN) que imita infecção; a forma ulcerativa, de borda violácea solapada, é a mais comum; a perna é o local mais comum; o tratamento é prednisona, e a cirurgia piora pela patergia.
 como: O INTO 2026 mostrou uma lesão no dorso da mão de um paciente com retocolite ulcerativa e pediu o diagnóstico; a USP-SP 2026 cobrou a associação com a doença de CROHN; o simulado do SBCM 2022, o tratamento de primeira linha.
 armadilha: Diagnosticar infecção, melanoma ou carcinoma e propor desbridamento; achar que a mão é o local mais comum.
@@ -643,7 +643,7 @@ As **verrugas** (HPV) são 95% vulgares e só atingem a epiderme (p. 121 a 123).
 
 O **orf** (ectima contagioso) é um parapoxvírus de ovelhas e cabras (p. 123 a 125): pastores, tosquiadores e açougueiros, com surtos depois da festa do sacrifício muçulmana. Em 95% dos casos está no dedo, mão, punho ou antebraço: um nódulo com centro vermelho, anel branco-azulado e halo violáceo. Passa por seis estágios de cerca de 1 semana cada (LEAVELL) e **cura sozinho em cerca de 6 semanas**; não confere imunidade para sempre. Diferencia-se do panarício pela falta de dor e pelas gotas de líquido claro (não pus). O **nódulo do ordenhador** é igual, mas vem da vaca (p. 125).
 
-!questoes central=mao-1991
+!questoes treino=mao-1991
 conceito: No paciente com HIV, os dedos podem ter eritema indolor e telangiectasia periungueal, e as unhas podem ficar azuladas ou em baqueta de tambor; a infecção de mão incomum, grave ou que precisa de nova drenagem pede teste de HIV.
 como: O simulado do SIMÃO 2023 pediu qual condição indicam unhas azuladas e dedos em baqueta de tambor nas infecções crônicas da mão.
 armadilha: Marcar hanseníase ou tuberculose, que deformam a mão por outras vias (nervo, tenossinóvia, osso) e não pela unha.
