@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-18",
+ "geradoEm": "2026-11-19",
  "capitulos": [
   {
    "id": "ao-fixadores-externos",
@@ -15229,15 +15229,15 @@
   },
   {
    "id": "green-rizartrose-artrose-mao",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Rizartrose e artrose da mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)",
    "capitulo": "Capítulo 11 · Treatment of the Osteoarthritic Hand and Thumb",
-   "resumo": "Rizartrose: oblíquo anterior profundo (intracapsular, do tubérculo volar do trapézio à base volar ulnar do metacarpo) falha, metacarpo subluxa para dorsal e a metade volar se desgasta (trapézio 3:1); carga de 12 a 20 vezes na pinça; adução do metacarpo com hiperextensão da MCF; grind; ROBERT; EATON I a IV (2 mm e ETT); osteotomia em extensão e reconstrução de EATON e LITTLER nos I e II; trapeziectomia nos III e IV (BURTON e PELLEGRINI e WEILBY com FRC, THOMPSON com ALP); pseudartrose na osteotomia e na artrodese; dedos: BOUCHARD na IFP, HEBERDEN na IFD, erosiva mais na IFD e mais sintomática na IFP; IFP fundida de 30 a 60 graus, MCF do polegar 20 graus.",
+   "resumo": "Dedos: HEBERDEN na IFD, BOUCHARD na IFP; erosiva (PETER, 1966) em mulheres, lado radial, IFD mais acometida e IFP mais sintomática; IFP estabilizada pelo colateral (metade basta, MINAMIKAWA); MCF com efeito came; IFD fundida em extensão (parafuso pode ferir o leito ungueal do mínimo); IFP de 30 a 60 graus no texto e 40 a 55 na Fig. 11.6, ângulo dado no corte da falange proximal, banda de tensão comprimida pela flexão ativa; MCF fundida no polegar (20 graus), não nos dedos longos. Polegar: sela instável com 16 ligamentos; oblíquo anterior profundo intracapsular falha, metacarpo subluxa para dorsal e a metade palmar se gasta (trapézio 3:1); carga de 12 a 20 vezes; adução com hiperextensão da MCF; grind; túnel do carpo em 30%; ROBERT; EATON I a IV (2 mm e ETT), sem correlação com o resultado; osteotomia em extensão e EATON e LITTLER nos I e II; trapeziectomia nos III e IV (BURTON e PELLEGRINI e WEILBY com FRC, THOMPSON com ALP, KUHNS hematoma); simples igual à LRTI; pseudartrose na osteotomia e na artrodese; portais 1R e 1U.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 73,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15248,6 +15248,31 @@
      "id": "quem-tem-artrose-da-mao-e-onde-ela-aparece",
      "titulo": "Quem tem artrose da mão e onde ela aparece",
      "radar": "confirmado"
+    },
+    {
+     "id": "pequenas-articulacoes-anatomia-biomecanica-e-his",
+     "titulo": "Pequenas articulações: anatomia, biomecânica e história",
+     "radar": "fundamento"
+    },
+    {
+     "id": "dedos-quando-tratar-sem-cirurgia",
+     "titulo": "Dedos: quando tratar sem cirurgia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrodese-das-interfalangicas",
+     "titulo": "Artrodese das interfalângicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrodese-da-mcf",
+     "titulo": "Artrodese da MCF",
+     "radar": "clinico"
+    },
+    {
+     "id": "artroplastia-das-interfalangicas-e-da-mcf",
+     "titulo": "Artroplastia das interfalângicas e da MCF",
+     "radar": "clinico"
     },
     {
      "id": "anatomia-e-biomecanica-da-trapeziometacarpal",
@@ -15265,9 +15290,9 @@
      "radar": "confirmado"
     },
     {
-     "id": "tratamento-nao-operatorio",
-     "titulo": "Tratamento não operatório",
-     "radar": "confirmado"
+     "id": "tratamento-nao-operatorio-da-rizartrose",
+     "titulo": "Tratamento não operatório da rizartrose",
+     "radar": "clinico"
     },
     {
      "id": "estagios-iniciais-osteotomia-e-reconstrucao-liga",
@@ -15280,23 +15305,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "artrodese-trapeziometacarpal-implantes-e-complic",
-     "titulo": "Artrodese trapeziometacarpal, implantes e complicações",
-     "radar": "clinico"
-    },
-    {
-     "id": "a-mcf-do-polegar-e-a-artrodese-metacarpofalangic",
-     "titulo": "A MCF do polegar e a artrodese metacarpofalângica",
-     "radar": "clinico"
-    },
-    {
-     "id": "artrodese-das-interfalangicas",
-     "titulo": "Artrodese das interfalângicas",
-     "radar": "confirmado"
-    },
-    {
-     "id": "artroplastia-das-interfalangicas-e-da-mcf",
-     "titulo": "Artroplastia das interfalângicas e da MCF",
+     "id": "artrodese-trapeziometacarpal-implantes-artroscop",
+     "titulo": "Artrodese trapeziometacarpal, implantes, artroscopia e complicações",
      "radar": "clinico"
     },
     {
@@ -15309,6 +15319,10 @@
     "mao-0306",
     "mao-0495",
     "mao-0036",
+    "mao-0595",
+    "mao-1235",
+    "mao-1317",
+    "trauma-0864",
     "mao-0014",
     "mao-0048",
     "mao-0481",
@@ -15322,8 +15336,6 @@
     "mao-1071",
     "mao-0690",
     "mao-0158",
-    "mao-0595",
-    "mao-1235",
     "mao-0575",
     "mao-0082",
     "mao-0744",
@@ -15331,28 +15343,60 @@
     "mao-0826",
     "mao-0774",
     "mao-1588",
-    "mao-0639",
-    "mao-1317",
-    "trauma-0864"
+    "mao-0639"
    ],
    "treino": [
+    "mao-3474",
     "mao-2122",
+    "mao-3458",
+    "mao-3473",
+    "mao-3480",
+    "mao-1804",
+    "mao-2323",
+    "mao-3484",
+    "mao-2329",
+    "mao-2205",
+    "mao-3454",
+    "mao-3459",
+    "mao-3460",
+    "mao-3470",
+    "mao-2501",
+    "mao-1806",
+    "mao-3464",
+    "mao-3466",
+    "mao-2204",
+    "mao-2628",
+    "mao-3485",
     "mao-2033",
+    "mao-3465",
+    "mao-3476",
+    "mao-3486",
     "mao-2322",
     "mao-1963",
     "mao-1803",
+    "mao-3479",
+    "mao-3461",
+    "mao-3467",
+    "mao-3469",
     "mao-2034",
+    "mao-3471",
     "mao-1964",
+    "mao-3462",
+    "mao-3472",
+    "mao-3483",
     "mao-1965",
+    "mao-3455",
+    "mao-3457",
+    "mao-3468",
     "mao-2532",
-    "mao-2324",
-    "mao-2501",
-    "mao-1806",
-    "mao-2323",
-    "mao-1804",
-    "mao-2329",
-    "mao-2205",
-    "mao-2204"
+    "mao-3482",
+    "mao-3463",
+    "mao-3477",
+    "mao-3478",
+    "mao-3456",
+    "mao-3475",
+    "mao-3481",
+    "mao-2324"
    ],
    "subtemas": [
     "Rizartrose e artrose da mão"
