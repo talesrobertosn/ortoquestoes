@@ -91,7 +91,7 @@ armadilha: Associar a GORDON à escoliose e à camptodactilia (são da DA4) ou t
 
 O mecanismo embriológico dá a base de tudo. As articulações sinoviais se formam a partir de uma faixa de mesênquima denso, a interzona, que precisa se cavitar para virar espaço articular. Essa cavitação depende de forças mecânicas: o feto contrai os músculos, as superfícies se movem uma contra a outra, e o espaço se abre. Sem movimento, a interzona não se cavita direito, fibrosa e prende os ossos. Esse é o mesmo raciocínio do Campbell quando diz que os tecidos periarticulares são fibróticos e criam uma **anquilose fibrosa** (p. 1299). O tema da cavitação e da interzona está desenvolvido no resumo green8-malformacoes-congenitas.
 
-!questoes relacionadas=mao-3756
+!questoes treino=mao-3756
 conceito: A articulação da artrogripose nasce rígida porque a falta de movimento fetal impede a cavitação normal da interzona, que fibrosa; tendões e fáscia formados sem músculo prendem a articulação.
 como: Um simulado do SIMÃO 2019 pediu a explicação embriológica, com distratores de vias moleculares (BMP, FGF, Wnt).
 armadilha: Escolher um defeito de sinalização molecular do broto do membro, que explica deficiências e duplicações, não contraturas.
@@ -454,7 +454,7 @@ A relação com as formas da doença tem um porquê: **a CMC acompanha a posiç�
 
 Uma observação sobre as classificações vizinhas: o polegar aduzido congênito de McCARROLL, ampliado por MIH, é outra classificação, de outro capítulo, em que a forma ligada à artrogripose é o tipo III. Os simulados às vezes misturam as duas; o que importa aqui é que a do Green (Tabela 39.2) é pela posição da CMC e da MF.
 
-!questoes treino=mao-2440,mao-3817 relacionadas=mao-3605,mao-3611
+!questoes treino=mao-2440,mao-3817,mao-3605,mao-3611
 conceito: Na classificação do Green, o polegar da artrogripose é tipo 1 (CMC estendida, MF fletida, formas distais), tipo 2 (CMC fletida, MF estendida, amioplasia) ou tipo 3 (CMC e MF fletidas); A corrige passivamente, B não.
 como: O simulado do SIMÃO 2022 pediu o tipo com as duas articulações fletidas; os do SIMÃO 2012 e 2013 trouxeram a classificação de McCARROLL e MIH, em que a artrogripose é o tipo III, com o mecanismo extensor pouco alterado.
 armadilha: Trocar o tipo 1 pelo 2 (lembre que a CMC segue o punho) ou inventar um tipo 4.
@@ -553,7 +553,7 @@ A **preferência do autor** é a **Z-plastia como tratamento padrão**, com **te
 
 Os resultados são **imprevisíveis**; as famílias costumam se decepcionar e a correção se perde com o tempo; é raro piorar, salvo quando se reforça o extensor. A **complicação mais comum é a rigidez** (p. 1390). A lesão de nervo e de vaso digitais é possível, em geral por tração ao endireitar o dedo, mas é menos frequente.
 
-!questoes relacionadas=mao-0757,mao-2010,mao-2402,mao-2466 treino=mao-3821
+!questoes relacionadas=mao-0757 treino=mao-3821,mao-2010,mao-2402,mao-2466
 conceito: A camptodactilia é mais comum nas artrogriposes distais e é a condição ortopédica a que mais se associa; a radiografia não ajuda na criança pequena; Z-plastia volar sempre, tenotomia do FDS de rotina só se o FDP funciona; a complicação mais comum é a rigidez.
 como: O INTO 2023 perguntou a que condição a camptodactilia mais se associa (artrogripose); simulados do SIMÃO 2022 e 2023 repetiram a associação e pediram a afirmativa correta sobre a camptodactilia na artrogripose; o do SIMÃO 2021 levou à clinodactilia com falange em delta dupla da RUBINSTEIN-TAYBI.
 armadilha: Achar que a radiografia é útil no bebê, que as órteses não funcionam ou que não se pode transferir o FDS; e confundir a BEALS (camptodactilia, aracnodactilia) com a síndrome da clinodactilia em delta.
