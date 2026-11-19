@@ -1,6 +1,6 @@
 ---
 id: green8-neuropatias-compressao
-versao: 4
+versao: 5
 titulo: Neuropatias de compressão no membro superior
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 8ª edição (tradução), ampliado com a 7ª edição do Green's Operative Hand Surgery e o Campbell's Operative Orthopaedics, 15ª ed.
 capitulo: Capítulo 28 · Neuropatias de compressão
 autores: J. Megan M. Patterson, Christine B. Novak e Susan E. Mackinnon
-fonte: Capítulo conferido localmente em 30/10/2026 (Green 8, tradução, p. 1085 a 1124). Páginas impressas citadas a partir do cabeçalho do capítulo. Ampliado em 01/11/2026 com o Green's Operative Hand Surgery, 7ª ed., caps. 28, 29 e 31, e o Campbell's Operative Orthopaedics, 15ª ed., caps. 82, 67 e 51. Reescrito em 17/11/2026 com o Green 7, cap. 28 (Compression Neuropathies, MACKINNON e NOVAK, p. 921 a 958, inclusive a lista de referências nas p. 956 a 958), cap. 29 (p. 959 a 976), cap. 31 (p. 1046 e 1047) e cap. 21 (p. 787), citados à parte como Green 7; estudos conferidos na lista de referências do cap. 28 e, os principais, no PubMed em 17/11/2026 (PMIDs no corpo do texto). O túnel do carpo tem resumo próprio (green-tunel-carpo).
+fonte: Capítulo conferido localmente em 30/10/2026 (Green 8, tradução, p. 1085 a 1124). Páginas impressas citadas a partir do cabeçalho do capítulo. Ampliado em 01/11/2026 com o Green's Operative Hand Surgery, 7ª ed., caps. 28, 29 e 31, e o Campbell's Operative Orthopaedics, 15ª ed., caps. 82, 67 e 51. Reescrito em 17/11/2026 com o Green 7, cap. 28 (Compression Neuropathies, MACKINNON e NOVAK, p. 921 a 958, inclusive a lista de referências nas p. 956 a 958), cap. 29 (p. 959 a 976), cap. 31 (p. 1046 e 1047) e cap. 21 (p. 787), citados à parte como Green 7; estudos conferidos na lista de referências do cap. 28 e, os principais, no PubMed em 17/11/2026 (PMIDs no corpo do texto). Desfiladeiro torácico reescrito e ampliado em 18/11/2026 com o Green 7, cap. 29 (Thoracic Outlet Compression Syndrome, Scott W. WOLFE, p. 959 a 977), o Campbell 15 (caps. 39 e 63) e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32). O túnel do carpo tem resumo próprio (green-tunel-carpo).
 subtemas: Neuropatia ulnar e outras compressões
 resumo: Fisiopatologia (barreira hematoneural, edema, perineuro, mielina, axônio), duplo esmagamento de UPTON e McCOMAS e o reverso de LUNDBORG, HNPP e estiramento (8% venoso, 15% isquemia); testes provocativos por sítio, SPURLING, colapso ao arranhar e fibrilação como sinal precoce de desnervação; mediano proximal (ligamento de STRUTHERS, pronador, lacertus, arco do FSD, GANTZER, MARTIN-GRUBER) e interósseo anterior (PARSONAGE-TURNER, exploração aos 7 a 10 meses); canal de GUYON (zonas I, II e III, ramo dorsal, garra paradoxal, ramo profundo no hâmulo); sinais do ulnar (DUCHENNE, BOUVIER, FROMENT, WARTENBERG, PITRES-TESTUT, RICHE-CANNIEU); túnel cubital (flexão reduz a área em 55%, OSBORNE, arcada de STRUTHERS a 8 cm, McGOWAN I a III, VCM abaixo de 50 m/s, 40 m/s para conduta, epicondilectomia de 20%, OGATA, transmuscular); radial sensitivo (WARTENBERG entre BR e ERLC, pronação com flexão ulnar) e interósseo posterior (túnel radial, FROHSE do epicôndilo lateral, EIP o último, intervalo BR e ERLC); reoperações; supraescapular, quadrangular e desfiladeiro.
 ---
@@ -718,71 +718,369 @@ A neuropatia aparece em pelo menos **4,3%** das queixas de ombro, mais em arreme
 
 No quadrangular, a dor é mal localizada, com ponto doloroso perto da inserção do redondo menor; em geral não há perda sensitiva nem de força, e a eletromiografia pode ser normal (cap. 67, p. 3003). A arteriografia mostra a circunflexa ocluída em abdução e rotação externa e normal com o braço ao lado. BROWN separa a forma **vascular**, de arremessadores, tratada com ligadura da artéria, da **neurogênica**, por bandas fibrosas, tratada com neurólise (cap. 51, p. 2177 e 2178).
 
-!questoes central=ombro-cotovelo-0019 relacionadas=mao-0122,ombro-cotovelo-0117,ombro-cotovelo-0112,ombro-cotovelo-0429
+!questoes central=ombro-cotovelo-0019 relacionadas=mao-0122,ombro-cotovelo-0117,ombro-cotovelo-0112,ombro-cotovelo-0429 treino=mao-3629,mao-3630,mao-3632,mao-3633,mao-3636
 conceito: O supraescapular passa sob o ligamento transverso e se comprime mais na incisura supraescapular; o cisto ganglionar da espinoglenoidal, vindo de lesão labral, atrofia só o infraespinal; o quadrangular comprime o axilar e a circunflexa umeral posterior, com atrofia do redondo menor.
 como: O TARO 2021 apontou o nervo numa imagem do ombro e pediu o local mais frequente de compressão; provas de Ortopedia pediram a causa de lesão do supraescapular e o nervo comprimido numa ressonância; o TEOT 2023, a suspeita diante de O'BRIEN positivo com hipotrofia do infraespinal; o TECOC, o que o espaço quadrangular comprime.
 armadilha: Pôr o axilar na incisura ou o supraescapular no quadrangular, ou atribuir a atrofia isolada do infraespinal à incisura supraescapular.
 alerta: O Campbell 15 associa o cisto espinoglenoidal à lesão labral posterior, não à lesão SLAP nem ao teste de O'BRIEN (`ombro-cotovelo-0112`); o raciocínio do gabarito (cisto gangliônico) é o mesmo, e ele foi preservado.
 !fim
 
-# Desfiladeiro torácico {radar=confirmado}
+# Desfiladeiro torácico: o que é e como se classifica {radar=confirmado}
 
-## Quatro formas, frequências muito diferentes
+## Por que o desfiladeiro é um capítulo à parte
 
-O Green 7 (cap. 29, Thoracic Outlet Compression Syndrome, Richard MEYER, p. 959 a 961) divide o desfiladeiro em vascular e neurogênico (subclassificação atribuída a WILBOURN) e prefere chamar o neurogênico "disputado" de **eletricamente negativo**, que responde pela grande maioria dos diagnósticos.
+O desfiladeiro torácico tem capítulo próprio no Green 7 (cap. 29, Thoracic Outlet Compression Syndrome, Scott W. WOLFE, p. 959 a 977), e a primeira página já explica por que ele assusta o cirurgião de mão. No túnel do carpo ou no cubital, a eletroneuromiografia confirma a suspeita, refuta ou estadia a doença, e por isso quase não há controvérsia sobre conduta. No desfiladeiro, não existe exame elétrico definitivo: o diagnóstico é de **exclusão e de suspeita**, quase sempre só **clínico** (Green 7, cap. 29, p. 959). Como a compressão é do plexo inteiro, a síndrome pode envolver todos os nervos do membro superior, do pescoço, do ombro, do dorso alto e do tórax, e por isso **imita** qualquer outra compressão. O resultado prático aparece num número que o capítulo faz questão de citar: o paciente médio passa por **4,7 médicos** antes de alguém dar o diagnóstico.
 
-!tabela Tipos de desfiladeiro torácico (Green 7, cap. 29, p. 959 a 961)
-| Tipo | Frequência | Quadro e causa |
-| --- | --- | --- |
-| arterial | **1% a 2%** | quase sempre anomalia óssea (costela cervical, primeira costela anômala, fratura); úlceras digitais, RAYNAUD |
-| venoso | **2% a 3%** | trombose de esforço da **veia subclávia** (**PAGET-SCHROETTER**); homens jovens musculosos |
-| neurogênico verdadeiro | **1 em 1 milhão** (GILLIATT) | atrofia hipotenar e intrínseca, déficit em C8 e T1; costela cervical ou bandas |
-| neurogênico eletricamente negativo | **mais de 95%** | dormência na mão, dor no ombro e pescoço, piora posicional |
+O desconforto dos cirurgiões também tem número. Numa enquete por e-mail entre membros da sociedade americana de cirurgia da mão, **60%** disseram tratar pacientes com a síndrome, mas só **19%** operavam, e apenas 10 dos 255 que responderam faziam mais de 10 casos por ano; um terço operava junto com cirurgião vascular ou torácico, e quase **20%** nem acreditavam que a doença existisse (p. 959). O autor resume o motivo da cautela com uma imagem: a compressão acontece num "terreno caro", onde passam a **artéria e a veia subclávias**, a **pleura** e o **frênico**. Um erro técnico ali não é uma cicatriz feia; é sangramento de grande vaso, pneumotórax ou paralisia do diafragma.
+
+A mensagem final do capítulo (p. 976) é o fio condutor deste resumo: o problema de base do desfiladeiro é **compressão nervosa**, e quem entende compressão nervosa é o cirurgião de membro superior. Por isso o capítulo fica no Green, ao lado de MACKINNON, e não só nos livros de cirurgia vascular. O autor ainda lembra que serviços com muitos casos têm resultados previsivelmente melhores que cirurgiões que operam menos de 10 por ano.
+
+## Da costela de COOTE à via supraclavicular
+
+A história da síndrome é a história de uma pergunta: o que exatamente se deve tirar? O Green 7 (p. 970) conta a sequência em poucos marcos, e cada marco nasceu da falha do anterior.
+
+- **1860, COOTE**: a primeira ressecção de **costela cervical**. A causa óssea era a única visível, e a cirurgia mirava nela.
+- **1927, ADSON e COFFEY**: descrevem a manobra diagnóstica que leva o nome de ADSON e a "síndrome do escaleno anterior", com tratamento pela **escalenotomia anterior**. A ideia era que o músculo, e não o osso, apertava o feixe.
+- **1962, CLAGETT**: documenta a alta taxa de falha da escalenotomia isolada e propõe tirar a **primeira costela por via posterior**. A primeira costela é o assoalho comum dos três espaços; tirá-la abre todos de uma vez.
+- **1966, ROOS**: introduz a **via transaxilar** para ressecar a primeira costela, menos agressiva que a posterior.
+- **Anos 1980**: surge a via combinada, transaxilar com supraclavicular, para tirar a costela e os escalenos.
+
+O texto de referência histórica indicado pelo capítulo é o de SANDERS e HAUG, que divide a história em três períodos, e a monografia da Hand Clinics dedicada ao tema (p. 959). As complicações acompanham a história desde o começo: KEEN já as registrava em 1907, e a enquete de DALE na International Cardiovascular Society, em 1982, mostrou que **52%** dos cirurgiões já tinham visto lesão de plexo causada pela cirurgia, num total de 273 lesões (p. 975). Saber essa sequência ajuda a entender por que a operação de hoje junta as três peças: tirar o que é anômalo, tirar os escalenos e, quando preciso, tirar a primeira costela.
+
+## A classificação de WILBOURN e o nome novo
+
+A classificação que a banca cobra tem dois tipos básicos, **vascular** e **neurogênico**, cada um com dois subtipos (Green 7, p. 959). O vascular se divide em **arterial** e **venoso**; o neurogênico, em **verdadeiro** e **disputado**. A divisão entre verdadeiro e disputado é atribuída a **WILBOURN** (1984).
+
+O autor do capítulo propõe abandonar a palavra "disputado" e chamar essa forma de **neurogênica eletricamente negativa**. O argumento é numérico e lógico ao mesmo tempo: ela responde por **até 97%** de todos os pacientes diagnosticados e tratados, e só é "disputada" para quem exige um exame objetivo para acreditar no diagnóstico. Os outros três subtipos têm uma obstrução mecânica evidente ao fluxo ou uma condução nervosa alterada, raramente vêm misturados a ganho secundário (litígio, indenização) e têm diagnóstico direto e cirurgia relativamente bem-sucedida (p. 959).
+
+!tabela Os quatro subtipos do desfiladeiro (Green 7, cap. 29, p. 959 a 961)
+| Subtipo | Frequência | Marca clínica | Causa típica |
+| --- | --- | --- | --- |
+| **arterial** | **1% a 2%** | úlcera de polpa, RAYNAUD, claudicação, isquemia | quase sempre **anomalia óssea** (costela cervical, primeira costela anômala, fratura) |
+| **venoso** | **2% a 3%** | dor, edema e cianose súbitos; colaterais | trombose de esforço da **veia subclávia** (**PAGET-SCHROETTER**) |
+| **neurogênico verdadeiro** | raríssimo, cerca de **1 em 1 milhão** | atrofia intrínseca, preensão fraca, déficit sensitivo **C8 e T1**, ENMG alterada | costela cervical ou, mais comum, **bandas** |
+| **neurogênico eletricamente negativo** | **mais de 95%** (até 97%) | dor no ombro e pescoço, dormência na mão, piora com posição | sem achado objetivo |
 !fim
 
-A **costela cervical** existe em **0,5% a 0,6%** da população e é **bilateral em 50% a 80%** dos casos (Green 7, cap. 29, p. 963). Além da costela cervical, causam a forma arterial a **pseudartrose e a consolidação viciosa da clavícula**, a **subluxação pós-traumática da esternoclavicular** e as fraturas de costela (Green 7, cap. 29, p. 960). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 63, p. 2873), põe o desfiladeiro entre os sintomas da consolidação viciosa da clavícula. Na **PAGET-SCHROETTER**, arremessadores e nadadores estão em risco, e a **inserção hipertrofiada do subclávio** comprime especificamente a veia. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, p. 987 aprox.), acrescenta a **luxação esternoclavicular posterior não reduzida**: entre suas complicações estão o **desfiladeiro torácico tardio**, problemas vasculares tardios, comprometimento respiratório e dispneia aos esforços; os autores trataram com ressecção da clavícula medial e reconstrução pacientes com edema e descoloração do braço, sinais de **trombose de esforço**, e disfagia. A lista de complicações do capítulo (p. 1007 aprox.) inclui ainda obstrução da veia subclávia por lesão fisária SALTER-HARRIS II não reduzida. Dormência ulnar com clínica de desfiladeiro e eletrodiagnóstico negativo é **desfiladeiro até prova em contrário** (Green 7, cap. 29, p. 960 a 964).
+Dois detalhes desse quadro são pegadinha clássica. Primeiro, a forma **venosa é um pouco mais comum que a arterial**; quem decorou "vascular é rara" tende a achar que a arterial vem antes. Segundo, a forma **clássica** dos livros, a verdadeira, é a **mais rara**, enquanto a **mais comum** é justamente aquela que não tem exame que a prove.
 
-## Os três espaços
+## Forma arterial
 
-!tabela Os três espaços do desfiladeiro (Green 7, cap. 29, p. 962 a 964)
-| Espaço | Paredes | O que importa |
-| --- | --- | --- |
-| **triângulo interescalênico** | escaleno anterior, escaleno médio e primeira costela (base) | **sítio mais comum**; plexo e **artéria** entre os escalenos; a **veia** passa **à frente** do escaleno anterior |
-| **costoclavicular** | clavícula, subclávio e ligamento costocoracoide; primeira costela; borda superior da escápula | subclávio hipertrofiado comprime a **veia** |
-| **subcoracoide** | tendão do peitoral menor sob o coracoide | na abdução, efeito polia; o peitoral tenso comprime o plexo |
+A artéria subclávia se comprime entre a costela e a clavícula, ou é tracionada sobre uma costela cervical, e responde como qualquer artéria agredida repetidamente: **estenose**, depois **dilatação pós-estenótica** e **aneurisma**, com possibilidade de ulceração da íntima, trombose, oclusão e **embolia distal** (Green 7, p. 960). É por isso que o quadro aparece na ponta dos dedos: úlcera de polpa digital e fenômeno de RAYNAUD são êmbolos e baixo fluxo, e não compressão local. Há também dor e **claudicação** do braço, sobretudo em esportes com o membro em extensão e hiperabdução (arremessadores). Na maioria das vezes o quadro é **indolente**, com oclusões intermitentes, mas pode ameaçar o membro.
+
+A causa é **quase sempre óssea**: costela cervical, primeira costela anômala ou fratura antiga. O capítulo lista ainda a **pseudartrose e a consolidação viciosa da clavícula**, a **subluxação pós-traumática da esternoclavicular** e a fratura de costela (p. 960). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 63, Malunited Fractures), inclui o desfiladeiro entre os sintomas da consolidação viciosa da clavícula, ao lado da fadiga rápida e do ombro caído. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, articulação esternoclavicular), acrescenta a **luxação esternoclavicular posterior não reduzida**: entre suas complicações tardias estão o desfiladeiro torácico, problemas vasculares, dispneia aos esforços e disfagia, e os autores trataram com ressecção da clavícula medial e reconstrução pacientes com edema e descoloração do braço, sinais de **trombose de esforço**; a lista de complicações do mesmo capítulo inclui a obstrução da veia subclávia por lesão fisária SALTER-HARRIS II não reduzida. A lógica é sempre a mesma: qualquer coisa que diminua o espaço entre clavícula e primeira costela pode apertar os vasos.
+
+A radiografia oblíqua da Fig. 29.1 do Green 7 (p. 960) mostra uma costela cervical completa com marcas de "botão" na costela, num caso de forma verdadeira. Para a prova, a ligação a guardar é: **úlcera digital, RAYNAUD, claudicação = arterial = procurar osso**.
+
+## Forma venosa: PAGET-SCHROETTER
+
+A **PAGET-SCHROETTER** é a **trombose de esforço da veia subclávia** (Green 7, p. 960). Na apresentação aguda, o quadro é dramático: **dor, edema e cianose** de todo o membro depois de exercício vigoroso. Menos vezes, a trombose aparece em repouso, com o braço numa posição comprometedora, e pode haver fases de compressão intermitente antes do evento agudo.
+
+O perfil típico é o **homem jovem e musculoso** depois de esforço intenso, e **arremessadores e nadadores** estão em risco. O mecanismo explica o perfil: a veia passa **à frente do escaleno anterior**, fora do triângulo interescalênico, e é comprimida no **espaço costoclavicular**, onde o **tendão hipertrofiado do subclávio** a esmaga especificamente (p. 964). Músculo grande e braço repetidamente elevado fecham esse espaço. Estados de **hipercoagulabilidade** também predispõem.
+
+Com o tempo, o organismo abre **colaterais venosas** no ombro, no tórax e na mama (Fig. 29.2, p. 960). Na forma intermitente, as colaterais reduzem o edema e a cianose da mão, mas a plenitude acima e abaixo da clavícula pode apagar o contorno do osso. A venografia da Fig. 29.11 (p. 970) mostra trombose aguda da subclávia e da jugular interna.
+
+## Forma neurogênica verdadeira: GILLIATT
+
+É a forma com **prova objetiva** de compressão crônica: **atrofia** dos músculos intrínsecos, **preensão fraca** e **déficit sensitivo**, em geral no território de **C8 e T1**, com eletroneuromiografia alterada (Green 7, p. 960; Fig. 29.3 mostra a atrofia intrínseca da mão direita). O território sensitivo de C8 e T1 é a **borda ulnar da mão** e a **face medial do antebraço**, e é isso que separa o tronco inferior do ulnar no cotovelo: o ulnar não dá a pele do antebraço medial, que é do **cutâneo medial do antebraço**, ramo direto do fascículo medial.
+
+A causa pode ser uma anomalia óssea, como a **costela cervical** rudimentar ou completa (Fig. 29.4 e 29.5, p. 961; a Fig. 29.5 mostra até uma sinostose da primeira com a segunda costela), mas o autor observa que a maioria dos casos que viu tinha **só bandas** fibrosas comprimindo o tronco inferior (p. 960).
+
+O texto do Green 7 descreve atrofia **hipotenar**, mas a descrição clássica da literatura (a mão de **GILLIATT-SUMNER**, 1970) é de atrofia predominante dos músculos **tenares**, sobretudo do abdutor curto do polegar, com perda sensitiva **ulnar**. A combinação é estranha à primeira vista, porque o abdutor curto é inervado pelo mediano; a explicação é que suas fibras motoras vêm de **T1**, pelo tronco inferior, enquanto a pele que o mediano leva vem de C6 e C7. O capítulo 28 do Green 7 (p. 955) usa justamente essa combinação no diagnóstico diferencial das falhas do túnel cubital: perda motora maior que a sensitiva, extrínsecos normais e **atrofia tenar** apontam para o desfiladeiro neurogênico verdadeiro de GILLIATT.
+
+## Forma neurogênica eletricamente negativa
+
+É a forma da grande maioria, e o retrato é o oposto da verdadeira: muita queixa, nenhum exame alterado. Quase sempre há **dormência na mão** e **dor** no braço, na mão e sobretudo no **ombro e no pescoço**, piorando com atividade e com certas posições (Green 7, p. 960). Eletroneuromiografia, Doppler, pletismografia e radiografia são normais.
+
+Como não há exame que confirme, a maioria dos cirurgiões aceita como diagnóstico de trabalho a queixa reproduzida **só pelos testes provocativos**, sem outra explicação (p. 961). O serviço do autor usa uma regra simples e útil: **dormência no território ulnar**, com clínica sugestiva e **eletroneuromiografia negativa**, é desfiladeiro **até prova em contrário** (p. 961). A regra faz sentido porque um ulnar comprimido no cotovelo há tempo suficiente para dar sintomas costuma alterar a condução; se a condução está normal, o problema provavelmente é mais alto.
+
+## A classificação de ROOS pelo tronco
+
+ROOS (1982) propôs outra divisão, pelo segmento do plexo comprometido: tronco **superior**, tronco **inferior** e **combinado** (Green 7, p. 961). Os grupos **inferior e combinado** somam **85% a 90%** dos pacientes, o que combina com o predomínio de queixas ulnares e de antebraço medial. Os estudos elétricos **não têm valor** para enquadrar o paciente nessa classificação, que é clínica. Na prova, a armadilha é confundir as duas classificações: **WILBOURN** separa por **natureza** (vascular ou neurogênica, verdadeira ou não); **ROOS** separa por **altura no plexo**.
+
+## Quem adoece
+
+O capítulo lista cinco fatores predisponentes mais citados: **sexo, idade, ocupação, local geográfico e tipo de seguro** (Green 7, p. 962). As **mulheres** são **3,5 a 4 vezes** mais acometidas, em geral em idade produtiva. A inclinação maior da primeira costela, mais frequente na mulher, empurra o feixe para o ângulo entre o tendão do escaleno anterior e a costela (p. 963), e mamas grandes e ombros caídos aumentam a tração.
+
+A ocupação pesa muito: **posturas estáticas**, inclusive manter o braço em 45 graus de abdução, e trabalho com a **mão no nível do ombro ou acima** aumentam os sintomas. Cabeleireiros, pintores, trabalhadores da construção pesada, caixas de supermercado, telefonistas, enfermeiros e escriturários aparecem na lista. Entre 1987 e 1989 houve aumento de 100% nos registros de distúrbios por trauma cumulativo (com mudança na forma de notificar), e as queixas do ombro, incluindo o desfiladeiro, só ficavam atrás da lombar e do pescoço.
+
+A incidência na população geral é estimada em **1% a 2%**, provavelmente subdiagnosticada. Dois achados da série do autor mudam o olhar do ortopedista: **25%** dos pacientes já tinham **cirurgia prévia do ombro** do mesmo lado, e lesões do manguito e do lábio glenoidal coexistiam com sintomas neurogênicos, porque as mesmas forças que lesam o ombro lesam os escalenos e o plexo; e há cada vez mais **adolescentes** com a síndrome por esporte intenso (p. 962).
+
+!questoes central=mao-1466 relacionadas=mao-0010,mao-0425,mao-0081 treino=mao-1744,mao-3626,mao-3627,mao-3628,mao-3634,mao-3638,mao-3641
+conceito: WILBOURN divide o desfiladeiro em vascular (arterial 1% a 2%, venoso 2% a 3%) e neurogênico (verdadeiro, raríssimo, e eletricamente negativo, mais de 95%); a PAGET-SCHROETTER é a trombose de esforço da veia subclávia; a forma verdadeira tem atrofia e déficit em C8 e T1; a arterial vem quase sempre de osso, inclusive clavícula mal consolidada e esternoclavicular subluxada.
+como: A USP-SP 2024 pediu a afirmação correta sobre tipos e diagnóstico; o TARO 2019, o que se comprime na PAGET-SCHROETTER; o TECOC, a que corresponde a mão de GILLIATT-SUMNER; o TARO 2014, a luxação associada ao desfiladeiro; o simulado do SIMÃO 2026, o caso clínico da forma eletricamente negativa.
+armadilha: Achar que a forma arterial é a mais comum, que a verdadeira é a regra ou que a PAGET-SCHROETTER comprime a artéria.
+alerta: O Green 7 não usa o nome mão de GILLIATT-SUMNER (`mao-0425`) e fala em atrofia hipotenar e intrínseca (cap. 29, p. 960); a descrição clássica é de atrofia tenar com perda sensitiva ulnar, e o gabarito oficial foi preservado.
 !fim
 
-## Clínica, manobras e exames
+# Desfiladeiro torácico: anatomia dos três espaços {radar=confirmado}
 
-Parestesias em até **95%**, sobretudo no braço medial e nos dois dedos ulnares, com dor no ombro e no pescoço e cefaleia (Green 7, cap. 29, p. 964 e 965). O duplo esmagamento é comum: STC em **21% a 45%** e túnel cubital em até **10%**. O diagnóstico é feito **só pelo exame em 97%**. Os testes distais vêm **antes** dos de desfiladeiro, que sensibilizam o paciente. **ADSON, WRIGHT e HALSTEAD** são frequentemente **positivos em normais** e não são sensíveis nem específicos o bastante. O **teste de ROOS** (braços em abdução de 90 graus e rotação externa, abrindo e fechando as mãos por **3 minutos**) é considerado o **mais sensível e reprodutível**; quem tem compressão posicional tolera **1 minuto ou menos** (p. 966 a 968). O grupo de MACKINNON descreveu a avaliação desses pacientes (NOVAK, MACKINNON e PATTERSON, J Hand Surg Am 18:292-299, 1993), em referência citada no capítulo 28.
+## Anatomia variável, compressão dinâmica
 
-Nos exames (p. 968): a ENMG serve sobretudo para **afastar compressão distal**, e na forma eletricamente negativa é normal; os **potenciais evocados somatossensitivos não mostraram valor** diagnóstico (KOMANETSKY, NOVAK, MACKINNON e colaboradores, "Somatosensory evoked potentials fail to diagnose thoracic outlet syndrome", J Hand Surg Am 21:662-666, 1996); o **duplex colorido** tem 92% de sensibilidade e 95% de especificidade para o vascular, e a **angiografia** é o padrão ouro do arterial.
+A primeira lição de anatomia do capítulo é que ela **varia muito**: bandas fibrosas e variações musculares são comuns, e a compressão é **dinâmica**, mudando com o movimento do pescoço, do tórax e da cintura escapular (Green 7, p. 962). Isso explica por que a radiografia e a ressonância costumam ser normais com o braço ao lado do corpo e por que os testes são feitos com o braço elevado.
 
-## Tratamento e recorrência
+Os números das dissecções confirmam a variabilidade: em **250 cadáveres** (500 desfiladeiros) houve anomalia em **46%**, e em 40 fetos abortados, em **60%** (p. 962). Ter uma anomalia, portanto, não é estar doente; é ter um espaço que pode ficar pequeno quando outros fatores se somam (postura, músculo, trabalho com o braço elevado).
 
-No neurogênico, a fisioterapia vem primeiro: fortalecer o periescapular, **nunca os escalenos**, e gabapentina ou pregabalina; a cirurgia é para quem falhou em **3 meses**. Na **PAGET-SCHROETTER**, **trombólise precoce** e ressecção da primeira costela semanas depois (Green 7, cap. 29, p. 968 a 974). SANDERS: escalenectomia com ressecção da primeira costela deixou **99%** satisfeitos, contra **57%** da escalenotomia isolada. A recorrência verdadeira é de **5% a 25%**, em geral **4 a 6 meses** depois, sobretudo por **cicatriz em volta do plexo** ou **segmento retido da primeira costela** (p. 975 e 976):
+## As anomalias que a cirurgia encontra
 
-!tabela Recorrência por procedimento (Green 7, cap. 29, p. 975 e 976)
+A série de MAKHOUL e MACHLEDER, com **200 vias transaxilares consecutivas**, é a referência que o capítulo usa para dizer o que se encontra na mesa (Green 7, p. 962). A ordem é a que a banca cobra:
+
+!tabela Anomalias encontradas em 200 vias transaxilares (MAKHOUL e MACHLEDER; Green 7, cap. 29, p. 962)
+| Anomalia | Frequência |
+| --- | --- |
+| **escalenos** (desenvolvimento ou inserção anômalos) | **43%** |
+| **tendão do subclávio** | **19,5%** |
+| **escaleno mínimo** | **10%** |
+| **costela cervical** | **8,5%** |
+!fim
+
+O ponto que surpreende é a **costela cervical em último lugar**. Ela é a anomalia mais famosa, porque aparece na radiografia e porque foi a primeira a ser operada, mas na cirurgia o que mais se acha é **músculo**. O próprio capítulo faz uma ressalva: a via transaxilar tem exposição limitada e pode ter escondido outras anomalias, sobretudo as bandas mais altas.
+
+## Triângulo interescalênico
+
+O desfiladeiro tem **três compartimentos**, desenhados na Fig. 29.6 do Green 7 (p. 962): o **triângulo interescalênico**, o **triângulo costoclavicular** e o **espaço subcoracoide**, sob o peitoral menor. O interescalênico é o **local mais comum** de compressão (p. 963).
+
+!figura 29.6 imagem=mao/green7-29-6-w44.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 29, Fig. 29.6, p. 962. Os três espaços do desfiladeiro torácico: o interescalênico (escalenos anterior e médio sobre a primeira costela, com o plexo e a artéria entre eles e a veia à frente do escaleno anterior), o costoclavicular (entre a clavícula com o subclávio e a primeira costela) e o espaço sob o peitoral menor. Repare que a veia, em azul, nunca entra no triângulo interescalênico.
+!fim
+
+Os limites são três: **anterior, o escaleno anterior**; **posterior, o escaleno médio**; **inferior, a primeira costela** (p. 963). O conteúdo é o que decide muitas questões: **o plexo e a artéria subclávia** passam juntos entre os dois escalenos, enquanto **a veia subclávia passa à frente do escaleno anterior**, logo abaixo e lateral ao ligamento costocoracoide. Por isso a compressão interescalênica dá sintomas **neurológicos** e **arteriais**, mas **não venosos**; a veia se comprime mais adiante, no espaço costoclavicular.
+
+As origens dos escalenos são outra pergunta de anatomia pura que a SBCM passou a fazer: o **escaleno anterior** nasce dos **tubérculos anteriores** dos processos transversos de **C3 a C6**; o **escaleno médio**, dos **tubérculos posteriores** de **C2 a C7** (p. 963). Uma forma de lembrar: o anterior fica na frente (tubérculos anteriores) e é mais curto (quatro vértebras); o médio fica atrás (tubérculos posteriores) e é mais longo (seis vértebras). As raízes do plexo saem justamente no sulco entre os dois tubérculos, e é por isso que ficam entre os dois músculos.
+
+O triângulo se estreita de várias formas, e cada uma tem um mecanismo próprio (p. 963):
+
+- **Intercostalização** das inserções, em que fibras dos escalenos se cruzam: **15%** das dissecções. Feixes do escaleno médio que passam **entre os troncos** (superior e médio, ou médio e inferior) comprimem o nervo **a cada contração**.
+- A forma da base importa: base em **"V"** dá efeito de **tesoura** sobre o plexo; base em **"U"** dá efeito de **tipoia**, levantando o plexo por baixo.
+- O **escaleno mínimo** vem de **C6 e C7** e se insere na fáscia profunda **entre a artéria subclávia e o tronco inferior**. Funciona como uma **cunha**: separa as duas estruturas e empurra o tronco inferior para cima. Pode também envolver a artéria e puxá-la contra bandas pleurais, o que explica alterações de fluxo com a posição.
+- A **primeira costela muito inclinada**, mais comum na mulher, empurra o feixe para o ângulo entre o tendão do escaleno anterior e a costela.
+
+## Costela cervical e plexo pré-fixado
+
+A **costela cervical** existe em **0,5% a 0,6%** da população (5 a 6 por 1.000) e é **bilateral em 50% a 80%** dos casos (Green 7, p. 963). O fato de ser bilateral tantas vezes é útil na clínica: achou de um lado, olhe o outro, e não estranhe sintomas só de um lado com costela dos dois. O Campbell 15 (cap. 39, Pediatric Cervical Spine) lembra que a costela cervical aparece em **12% a 15%** dos pacientes com KLIPPEL-FEIL, nos quais a pesquisa da costela e do desfiladeiro faz parte da avaliação neurológica.
+
+O capítulo traz uma explicação embriológica elegante para a associação entre costela cervical e **plexo pré-fixado** (aquele que recebe mais contribuição de C4 e menos de T1): a **contribuição plena de T1** ao plexo **suprime o crescimento** da costela cervical (p. 963). Quando o plexo se desloca para cima e T1 contribui pouco, nada freia o crescimento da costela de C7. Muitas costelas são incompletas e terminam numa **banda fibrosa tensa** (o "esboço" da costela) que vai da ponta até a primeira costela ou à fáscia; essa banda não aparece na radiografia, mas comprime como a costela. A Fig. 29.4 (p. 961) mostra as três variantes: rudimentar, fundida à primeira torácica e completa.
+
+## Bandas de ROOS e POITEVIN
+
+ROOS descreveu **9 tipos** de bandas fibrosas, e POITEVIN acrescentou **mais 3** uma década depois (Fig. 29.7, p. 963). Não vale a pena decorar os doze; vale saber quais são as mais encontradas: a banda **em corda de arco** na concavidade anterior da primeira costela, a banda do **escaleno mínimo** e as **conexões fasciais entre os escalenos anterior e médio** que cruzam as raízes, oblíqua ou perpendicularmente (p. 963). Todas fazem a mesma coisa: transformam um espaço elástico num anel rígido em volta do nervo.
+
+## Espaço costoclavicular
+
+O segundo espaço tem **parede anterior** formada pela **clavícula**, pelo **músculo subclávio** e pelo **ligamento costocoracoide**; parede **posteromedial**, a **primeira costela**; e parede **posterolateral**, a **borda superior da escápula** (Green 7, p. 964). É um estreitamento **fisiológico**: quando o braço se move, a clavícula desce em direção à costela, e a mobilidade das articulações nas duas pontas (esternoclavicular e acromioclavicular) aumenta esse movimento.
+
+Dois pontos de prova moram aqui. O primeiro é a **veia**: o **tendão hipertrofiado do subclávio** a comprime especificamente, e é por isso que a **PAGET-SCHROETTER** é uma doença do espaço costoclavicular, não do interescalênico. O segundo é o **ligamento costocoracoide** (ou coracocostal), que pode ser **maior que o coracoacromial** e comprimir o plexo contra a parede torácica (Fig. 29.23, p. 974). A SBCM 2025 cobrou a parede anterior do espaço citando o Green 8 (p. 1129); o fato confere com o Green 7.
+
+## Espaço subcoracoide
+
+O terceiro espaço fica sob o **tendão do peitoral menor**, junto ao coracoide, e comprime por **três mecanismos** (Green 7, p. 964):
+
+1. na **abdução**, o feixe neurovascular se estira em volta do **coracoide**, que funciona como uma **polia**;
+2. a **rotação externa da escápula** acentua essa polia;
+3. a abdução **tensiona o peitoral menor**, cujo tendão ou ventre pode comprimir o plexo.
+
+O mecanismo explica a postura de risco: o peitoral menor encurtado de quem anda com os ombros para a frente, assunto do próximo item e do tratamento conservador, já deixa o espaço apertado antes de qualquer elevação do braço. Na cirurgia, o autor faz uma incisão infraclavicular de rotina para liberar o tendão do peitoral menor e os ligamentos coracocostais quando eles comprimem em abdução e rotação externa (p. 974).
+
+## O músculo do paciente
+
+Por fim, o capítulo lembra que o desfiladeiro não é só anatomia congênita. Os escalenos de pacientes operados têm **mais tecido conjuntivo** que o normal, o que sugere desequilíbrio muscular ou anomalia de desenvolvimento, e a postura ruim, o esforço repetitivo e a contração excêntrica reduzem força, resistência e o comprimento do sarcômero (Green 7, p. 964). É a mesma ideia que MACKINNON defende no capítulo 28: a postura com a cabeça para a frente encurta os músculos anteriores (peitoral menor, escalenos) e alonga e enfraquece os posteriores (trapézio inferior, romboides), e esse desequilíbrio fecha os três espaços ao mesmo tempo.
+
+!questoes central=mao-0034 relacionadas=mao-0787,mao-1546,mao-0836,mao-1212 treino=mao-2227,mao-2140,mao-3631,mao-3635,mao-3639
+conceito: O triângulo interescalênico (escaleno anterior à frente, médio atrás, primeira costela embaixo) é o sítio mais comum e contém o plexo e a artéria; a veia passa à frente do escaleno anterior e se comprime no costoclavicular; a costela cervical existe em 0,5% a 0,6% e é bilateral em 50% a 80%; na via transaxilar, a anomalia mais achada é a dos escalenos (43%).
+como: O TARO 2021 pediu um dos focos de compressão do plexo; a USP-SP 2026 e o INTO 2023, o local mais comum; o INTO 2026, a frequência e a bilateralidade da costela cervical; a PUC-SP 2023, a anomalia mais encontrada na série transaxilar; os simulados da SBCM, os limites do triângulo interescalênico e a passagem mais comprimida.
+armadilha: Escolher o espaço costoclavicular como o mais comum, pôr a veia subclávia entre os escalenos ou achar que a costela cervical é a anomalia mais achada na cirurgia.
+alerta: Em `mao-1212`, pelo Green 7 (cap. 29, p. 962) a resposta é a anomalia dos escalenos (43%), seguida do tendão do subclávio, do escaleno mínimo e, por último, da costela cervical.
+!fim
+
+# Desfiladeiro torácico: clínica, exame e exames {radar=confirmado}
+
+## O que o paciente conta
+
+Como quase todos os pacientes têm a forma eletricamente negativa, o diagnóstico é feito pelo **exame físico e pelas manobras provocativas**, e o capítulo é honesto: nada substitui a experiência (Green 7, p. 964). A queixa mais comum é **dor crônica e insidiosa** na cintura escapular, no pescoço e no dorso alto, somada a **parestesias** do membro.
+
+As **parestesias** aparecem em **até 95%** dos pacientes e são a queixa inicial mais comum, em geral na **face medial do braço e do antebraço** e nos **dois dedos ulnares**; território do mediano ou a mão inteira não são raros (p. 964). A dor é surda, incômoda ou latejante, há **fadiga** do membro em posições provocativas, e os sintomas aparecem ao **dirigir** e ao **pentear o cabelo** (as mulheres aprendem a abaixar a cabeça para pentear, um detalhe de anamnese que denuncia a doença). Há dor à palpação da base do pescoço, e as queixas **noturnas** são frequentes, mas diferentes das do túnel do carpo: não acordam com a mão dormente que melhora ao sacudir, e sim com o braço doendo pela posição.
+
+Dois grupos de queixa confundem. O primeiro são as **queixas vasculares vagas** (sensação de inchaço, mão fria, mudança de cor), muito comuns na forma **neurogênica**, provavelmente por envolvimento das fibras simpáticas que andam com o tronco inferior; elas não fazem da doença uma forma vascular. O segundo são as queixas à distância: **enxaqueca** é extremamente comum, e menos vezes aparecem vertigem, perda de memória, síncope, dor torácica, irritação ocular e dor ou dormência facial (p. 965). Pacientes com dor crônica, muitos médicos e nenhum diagnóstico chegam deprimidos e com raiva, e o capítulo recomenda abordagem multiprofissional, com avaliação psicológica. Narcóticos raramente são usados antes da cirurgia; tricíclicos, neurotrópicos ou benzodiazepínicos para dormir, com cautela.
+
+## Duplo esmagamento
+
+O desfiladeiro raramente vem sozinho. Há **túnel do carpo** em **21% a 45%** dos pacientes e **túnel cubital** em até **10%**; mais raramente, túnel radial, pronador ou radiculopatia cervical (Green 7, p. 965). É o **duplo esmagamento** de UPTON e McCOMAS aplicado ao plexo: o nervo comprimido no pescoço tem o transporte axonal prejudicado e fica mais vulnerável a uma compressão distal que sozinha seria subclínica.
+
+Os críticos dizem que essas associações são erros de diagnóstico, e o capítulo registra o argumento sem desprezá-lo. CARROLL e HURST obtiveram alívio com **um único procedimento** em cada caso e recomendaram **tratar primeiro a compressão distal**, que é mais simples, mais barata e mais segura (p. 965). O outro lado da moeda também é real: o desfiladeiro é a **"grande imitadora"** e muitas vezes só é lembrado depois de várias cirurgias distais sem alívio. A conduta do autor fica no meio: se a clínica da compressão distal é muito positiva, a eletroneuromiografia está alterada e o bloqueio seletivo alivia, ele libera o nervo distal **em separado**.
+
+## Exame físico: a ordem importa
+
+O exame começa com o paciente **de avental**, sem roupa da cintura para cima, sem joias e com o cabelo preso, porque a inspeção conta tanto quanto as manobras; o diagnóstico clínico em **97%** dos casos é feito só pelo exame físico (Green 7, p. 964). O capítulo usa um questionário de dor com diagrama (JORDAN, AHN e GELABERT, 2007; Fig. 29.8).
+
+Na **inspeção**, procurar cabeça projetada para a frente, mamas grandes, **sulcos do sutiã** nos ombros, pescoço inclinado, ombro caído e **assimetria escapular** (que pode ser do ombro ou de desequilíbrio muscular) (p. 965). Na **palpação**, procurar massas, plenitude e **dor supra e infraclavicular**, além de ingurgitamento e colaterais venosas. A maioria tem dor moderada a importante no **triângulo anterior do pescoço** e na região infraclavicular, e a disestesia e a dor irradiada à palpação são achados muito importantes (p. 965 e 966). Tônus e volume musculares são avaliados à palpação e contra resistência; a discriminação de dois pontos ajuda pouco.
+
+A regra de ouro do exame é a **ordem**: testar as compressões **distais antes** dos testes do desfiladeiro, de **distal para proximal** (túnel do carpo, tendinites, túnel cubital, manguito, radiculopatia), porque **depois de um teste provocativo do desfiladeiro o paciente passa a acusar sintomas em quase tudo** (p. 966). O plexo irritado sensibiliza o membro inteiro e contamina o restante do exame. Os pontos críticos resumidos no capítulo (p. 970) mostram a sequência: observação, nervos periféricos, coluna cervical e, por último, o exame do desfiladeiro (ROOS, teste de tensão do membro superior, dor no triângulo anterior, TINEL, disestesias, dor infraclavicular).
+
+## Testes provocativos
+
+Um teste é **positivo** quando **reproduz os sintomas** ou quando **diminui ou abole o pulso radial** (Green 7, p. 966).
+
+**ADSON, WRIGHT e HALSTEAD** são da literatura antiga e têm um problema grave: são **frequentemente positivos na população normal** e não são sensíveis nem específicos, sobretudo na forma neurogênica (p. 966). A razão é que eles avaliam o **pulso**, e a queda do pulso com o braço elevado e a cabeça girada acontece em muita gente saudável; quando aparece de verdade, costuma ser por **bandas do escaleno anterior em volta da subclávia**. Como o paciente típico tem a forma neurogênica, um teste centrado no pulso mede a coisa errada.
+
+!tabela Testes provocativos do desfiladeiro (Green 7, cap. 29, p. 966 e 967)
+| Teste | Como se faz | Valor |
+| --- | --- | --- |
+| **ADSON** | pulso radial com o pescoço estendido e a cabeça girada, em inspiração profunda | positivo em normais; pouco sensível e pouco específico |
+| **WRIGHT** | pulso radial com o braço em hiperabdução | positivo em normais |
+| **HALSTEAD** | pulso radial com os ombros para trás e para baixo | positivo em normais |
+| **ROOS** (EAST) | braços em abdução e rotação externa de 90 graus, abrir e fechar as mãos por **3 minutos** | para muitos, o **mais sensível e reprodutível** |
+| **tensão do membro superior** (ELVEY modificado por SANDERS) | abdução com cotovelos estendidos, depois dorsiflexão dos punhos, depois cabeça inclinada ao lado oposto | cada etapa aumenta a tensão no plexo |
+| **bloqueio dos escalenos** | lidocaína, de preferência guiada por ultrassom | melhora = muito sugestivo; sem mudança = não define |
+!fim
+
+O **teste de ROOS** tem vários nomes: teste de abdução e rotação externa a 90 graus, "stick-up test" e **elevated arm stress test (EAST)**. Os braços ficam em abdução e rotação externa, e o paciente **abre e fecha as mãos rápida e repetidamente por 3 minutos** (p. 966 e 967). É positivo se reproduz os sintomas ou se aparece **fadiga rápida**; com compressão posicional verdadeira o paciente tolera **1 minuto ou menos**. A intensidade dos sintomas indica a gravidade, como o PHALEN no punho, e o examinador também observa o pulso radial e a cor da mão. O teste funciona porque soma duas coisas: a posição fecha os três espaços ao mesmo tempo, e o exercício das mãos aumenta a demanda metabólica do nervo e do músculo, transformando uma compressão tolerável em sintoma.
+
+Um detalhe de execução que a prova já explorou: na Fig. 29.9 (p. 968), o autor recomenda o braço na altura do ombro e o **cotovelo um pouco mais estendido** do que na foto. O motivo é **afastar a compressão do ulnar no cotovelo**: com o cotovelo muito fletido, o próprio túnel cubital se fecha (a flexão reduz a área do túnel em 55%, como visto no capítulo 28) e o formigamento ulnar resultante seria lido erradamente como desfiladeiro.
+
+O **teste de tensão do membro superior** é a modificação de SANDERS do teste de ELVEY (p. 967): braços abduzidos com os cotovelos estendidos e a cabeça para a frente; depois **dorsiflexão dos punhos**; por fim, **inclinação da cabeça para o lado oposto**. Cada etapa estira mais o plexo, como o teste de LASÈGUE estira a raiz lombar. A Fig. 29.10 (p. 969) mostra os quatro tempos: dor já com a abdução ou com a extensão do punho é muito positiva, e dor com o punho estendido e a cabeça para o outro lado que **alivia ao trazer a cabeça para o lado afetado** também é.
+
+A **infiltração dos escalenos** com lidocaína, melhor guiada por ultrassom, tem valor assimétrico: se o paciente melhora, o achado é muito sugestivo e pode ser repetido; se não muda, não define nada (p. 967). Com espasmo palpável, pode-se usar anestésico de longa ação com corticoide como adjuvante da fisioterapia.
+
+## Imagem
+
+A **radiografia da coluna cervical e do tórax** entra na avaliação inicial porque **muitas costelas cervicais passam despercebidas na ressonância** (Green 7, p. 968). Na forma neurogênica, tomografia e estudos vasculares invasivos **não estão indicados**; os não invasivos podem mostrar comprometimento leve por partes moles, sem mudar a conduta.
+
+A imagem vascular segue um degrau. Sem evidência física de comprometimento vascular agudo, começa-se pelo **duplex colorido** com análise de onda, que tem **92% de sensibilidade e 95% de especificidade** para comprometimento vascular no desfiladeiro; a fotopletismografia sugere compressão arterial; depois, se a clínica justificar, angiorressonância, angiotomografia ou arteriografia (p. 968). A **arteriografia é o padrão-ouro da forma arterial**: dá a melhor anatomia e permite a **trombólise** no quadro agudo. Na suspeita arterial, olhar com atenção os **ossos** do desfiladeiro, que são a causa mais comum de compressão arterial e devem ser tratados cirurgicamente. Arteriografia e venografia mostram a compressão extrínseca, mas não a estrutura que comprime, e vêm sendo substituídas por tomografia, ressonância e ultrassom.
+
+A **ressonância do plexo** não ajuda na avaliação de rotina da forma neurogênica: a sensibilidade para "distorções" por massas é de 79%, com 10% de falso-positivo, e o achado é inespecífico (p. 968). A **ressonância da coluna cervical** serve para afastar siringomielia, esclerose múltipla e hérnia discal, e é pedida quando o SPURLING é positivo, há dor ao mover o pescoço ou a radiografia está alterada.
+
+## Eletrodiagnóstico
+
+Na forma neurogênica típica a eletroneuromiografia pode ser normal, mas mesmo assim é **recomendada na avaliação inicial**, por um motivo prático: afastar ou confirmar uma **compressão distal** (carpo, cubital), cujo tratamento pode aliviar parte das queixas (Green 7, p. 968). Os **potenciais evocados somatossensitivos não têm valor** demonstrado; o próprio grupo de MACKINNON publicou o estudo negativo (KOMANETSKY, NOVAK, MACKINNON e colaboradores, "Somatosensory evoked potentials fail to diagnose thoracic outlet syndrome", J Hand Surg Am 21:662-666, 1996).
+
+Quando a forma é verdadeira, a ordem em que os exames alteram ensina como o nervo adoece. PASSERO estudou 30 pacientes com anomalia óssea e eletroneuromiografia positiva: alterou **primeiro a EMG** (agulha), depois as **ondas F** e, por fim, os potenciais evocados; a **velocidade de condução** só alterou **tardiamente**, com atrofia grave e anomalia antiga (p. 968). Todos os que tinham achado neurológico óbvio mostravam **desnervação crônica dos intrínsecos**. Faz sentido: a compressão do tronco inferior é proximal e lesa axônios; a velocidade medida no antebraço depende das fibras que sobram, que conduzem normalmente.
+
+O achado sensitivo precoce segue a mesma lógica. MACHANIC e SANDERS encontraram queda de **amplitude do nervo cutâneo medial do antebraço** em 41 pacientes que de outro modo eram eletricamente negativos (p. 968). O cutâneo medial do antebraço nasce do **fascículo medial** (C8 e T1), logo é o primeiro sensitivo a sofrer na compressão do tronco inferior, e não passa pelo cotovelo como o ulnar, o que o torna um marcador limpo do plexo. A conclusão do autor: a amplitude do cutâneo medial do antebraço ou o potencial sensitivo distal (punho aos dedos) com compressão do tronco inferior podem ser **achados precoces** úteis, e a **EMG dos intrínsecos** talvez seja o mais precoce de todos, embora o neurologista costume desprezá-la.
+
+## O diagnóstico diferencial
+
+O diferencial é o motivo de tanto cuidado no exame. Do lado distal, o **túnel cubital** é o mais difícil de separar, porque divide com o desfiladeiro o território ulnar; as pistas são a **pele do antebraço medial** (cutâneo medial, alterada no plexo e normal no cubital), a dor no pescoço e no ombro, o TINEL e a dor supraclavicular, e a condução nervosa no cotovelo. O túnel do carpo, por sua vez, coexiste em até 45%. Do lado proximal, a **radiculopatia cervical de C8** dá o mesmo território e se separa pelo SPURLING e pela ressonância da coluna. E há os imitadores graves que o capítulo 28 lista para as falhas do cubital (p. 955) e o capítulo 29 retoma nas falhas do desfiladeiro (p. 975): **artrose glenoumeral ou cervical**, **hérnia de disco** e o **tumor de PANCOAST**, que invade o tronco inferior pelo ápice do pulmão e precisa ser lembrado em todo fumante com dor no ombro e sintomas ulnares.
+
+!questoes central=mao-0248 relacionadas=mao-0932,mao-1813,mao-1355 treino=mao-2542,mao-2139,mao-3625,mao-3637,mao-3640
+conceito: O diagnóstico é clínico em 97%; os testes distais vêm antes; ADSON, WRIGHT e HALSTEAD dão positivos em normais; o ROOS (abdução e rotação externa de 90 graus, abrir e fechar as mãos por 3 minutos) é o mais sensível e reprodutível; a ENMG é normal na forma eletricamente negativa, mas afasta compressão distal; os potenciais evocados não têm valor.
+como: Uma prova de Ortopedia pediu a manobra mais sensível e específica; a UFG 2019, o que define o ROOS positivo; o ENARE de Cirurgia da Mão 2022, o nome do teste de abrir e fechar as mãos com os braços elevados; a USP-SP 2025, a compressão cujo diferencial com o desfiladeiro é mais difícil; os simulados, por que os testes antigos perderam valor e o papel dos potenciais evocados.
+armadilha: Escolher ADSON como o teste mais confiável, achar que o ROOS mede só o pulso ou pedir potencial evocado para confirmar o diagnóstico.
+alerta: Em `mao-0932`, o gabarito oficial descreve o ROOS positivo pela palidez da mão após abdução, rotação externa e elevação a 90 graus; o Green 7 define o positivo pela reprodução dos sintomas ou pela fadiga rápida ao abrir e fechar as mãos por 3 minutos, observando também o pulso (cap. 29, p. 966 e 967), e o gabarito foi preservado. Em `mao-1813`, o enunciado fala em 1 minuto e flexão de 90 graus no plano da escápula; para o Green 7, 1 minuto é o tempo que o paciente com compressão posicional tolera. Em `mao-1355`, o Green 7 não faz a comparação nesses termos; o gabarito (túnel cubital) se apoia no território ulnar comum (cap. 29, p. 964 e 965) e no diferencial do cubital recorrente com o desfiladeiro de GILLIATT (cap. 28, p. 955).
+!fim
+
+# Desfiladeiro torácico: tratamento, resultados e recorrência {radar=clinico}
+
+## Desfiladeiro: o tratamento não operatório em quatro estágios
+
+O tratamento não operatório é, por **consenso universal**, a **primeira linha para toda forma neurogênica** (Green 7, p. 968). Ele falha mais em três situações: **obesidade**, mau **condicionamento cardiovascular** e **não adesão** ao programa multimodal (postura, atividades em casa e no trabalho). O capítulo faz uma observação que vale para a indicação cirúrgica: quem não adere ao tratamento conservador também não adere ao pós-operatório (p. 968 e 969).
+
+O programa tem **quatro estágios**, e o segundo corre junto com o primeiro (p. 969 e 970):
+
+1. **Estágio I, aliviar a dor e conter a progressão**: tratar pontos-gatilho, espasmo, tendinites e bursites. Relaxantes, antidepressivos, anti-inflamatórios e indutores do sono com moderação; a droga de **escolha** é a **gabapentina ou a pregabalina**, porque a dor é neuropática. Calor, gelo, TENS e ultrassom ajudam, mas NOVAK alerta que o excesso cria dependência. Infiltração de pontos-gatilho e dos escalenos.
+2. **Estágio II, mobilidade e postura**: alongamento, relaxamento, respiração e liberação miofascial. Aqui está a regra que mais cai: **não fortalecer os escalenos** nem massageá-los profundamente, porque músculo mais forte e mais tenso fecha ainda mais o triângulo. Entram também condicionamento cardiovascular e perda de peso, e a correção da postura com a cabeça para a frente, que gera lordose cervical compensatória, flexão torácica, rotação interna do ombro e abdução da escápula, encurtando os anteriores e alongando os posteriores: o desequilíbrio que MACKINNON e NOVAK mandam corrigir. Vale olhar até a lordose lombar e a discrepância de membros.
+3. **Estágio III, força**: fortalecimento **paraescapular** e do **core**, exceto os escalenos, com ganho de resistência e retorno à função; exercício vigoroso demais piora.
+4. **Estágio IV, casa e trabalho**: programa domiciliar e volta ao trabalho, com análise do posto e "higiene do trabalho" com pausas. Os exercícios incluem alongamento dos escalenos, protração e retração cervical, respiração diafragmática, alongamento do peitoral e circundução do ombro, 10 vezes cada, 3 vezes ao dia. Órteses de retração escapular raramente são usadas.
+
+O sucesso relatado vai de **50% a 100%**, conforme o critério (evitar cirurgia, aliviar a dor, voltar ao trabalho) (p. 970). Na série de NOVAK com o programa de quatro estágios, 44 pacientes acompanhados por 12 meses: nenhum piorou, 4 não melhoraram, 3 melhoraram completamente e 35 parcial ou quase completamente (p. 976). O resultado a longo prazo é desconhecido.
+
+## Quando operar, forma por forma
+
+A indicação muda com a forma, e é aqui que a classificação de WILBOURN deixa de ser teoria (Green 7, p. 971 e 976):
+
+!tabela Conduta por forma do desfiladeiro (Green 7, cap. 29, p. 968 a 976)
+| Forma | Conduta |
+| --- | --- |
+| **arterial** | descompressão **precoce ou urgente**, retirada da anomalia óssea e reconstrução arterial se preciso; sem êmbolos nem lesão da parede, **arteriólise** simples basta |
+| **venosa** (PAGET-SCHROETTER) | **trombólise precoce** e depois **ressecção da primeira costela**, não necessariamente no mesmo tempo; investigar coagulação; anticoagulação prolongada só com trombofilia |
+| **neurogênica verdadeira** (eletricamente positiva) | considerar a **cirurgia cedo** ou encaminhar |
+| **neurogênica eletricamente negativa** | conservador; cirurgia se falhar em **3 meses** de fisioterapia completa e não houver compressão periférica |
+!fim
+
+Na **forma venosa**, a sequência faz sentido: primeiro dissolver o trombo enquanto é recente, depois tirar a causa mecânica (a primeira costela, que forma o assoalho do espaço costoclavicular). No serviço do autor, a trombólise é imediata e a descompressão vem **algumas semanas** depois (p. 974). Depois de descomprimir, a anticoagulação longa é **desnecessária**, salvo predisposição trombótica, porque o problema era mecânico.
+
+Na **forma neurogênica eletricamente negativa**, o candidato à cirurgia é quem **não completou com sucesso 3 meses** de fisioterapia e medidas conservadoras e não tem compressão periférica a tratar antes (p. 971). A conclusão do capítulo (p. 976) acrescenta que a cirurgia é para quem tem sintomas significativos ou progressivos depois de vários meses, com cautela nos casos de indenização. O conservador é primeira linha para toda forma neurogênica, mas a forma **verdadeira**, com perda axonal documentada, não deve esperar indefinidamente: a conclusão manda considerar a cirurgia cedo nela e na vascular. Um cirurgião de membro superior experiente pode operar a forma neurogênica sem cirurgião vascular (p. 971).
+
+## As vias e o que se tira
+
+As duas vias mais usadas são a **transaxilar** e a **supraclavicular** (Green 7, p. 970). ATASOY faz a ressecção transaxilar da primeira costela seguida de escalenectomia anterior e média **transcervical**, e outros reservam essa combinação para o desfiladeiro "falhado" ou recorrente. A via supraclavicular isolada, com escalenectomia anterior e média **sem** ressecção da costela, também tem defensores, e MERLE (2013, comunicação pessoal) chega a excisar só o **escaleno médio** e as bandas, sem tirar a costela nem o escaleno anterior (p. 970).
+
+O método mais realizado hoje para a forma neurogênica tem **cinco passos** (p. 970):
+
+1. excisão ou liberação da **anatomia anômala**;
+2. ressecção da **primeira costela**, se ela comprime ou traciona o plexo;
+3. excisão dos **escalenos anterior e médio**;
+4. **neurólise** do plexo supraclavicular envolvido;
+5. eventual liberação do **tendão do peitoral menor** e do **ligamento coracocostal**.
+
+Os resultados são semelhantes entre as técnicas **desde que** se retire a costela, se dividam os escalenos e se descomprimam as anomalias. A escolha da via é preferência do cirurgião, com riscos diferentes (p. 971): a **transaxilar** tem a vantagem de não manipular plexo e vasos, mas arrisca o **intercostobraquial** e é a via com mais **lesões por tração**; a **supraclavicular** exige afastar plexo e vasos e tem lesões do **frênico** relatadas.
+
+## O método do autor passo a passo
+
+O autor usa a **via supraclavicular** para **todas** as formas neurogênicas e a maioria das vasculares (Green 7, p. 971 a 974). O consentimento lista as complicações maiores sem rodeio: morte, sangramento com reconstrução vascular, pneumotórax com dreno, piora da dor, lesão de plexo ou nervo, do **frênico** e do **gânglio estrelado**, e dormência em volta da incisão.
+
+- **Posição e anestesia**: cadeira de praia, com lupas; **sem coxins nem rotação da cabeça**, que tensionam o plexo; **sem bloqueador neuromuscular de longa ação**, para permitir estimulação dos nervos durante a cirurgia.
+- **Incisão**: 1 a 2 cm acima da clavícula, a partir da borda lateral do esternocleidomastóideo, curvando para trás (Fig. 29.12 e 29.13). Ficar medial poupa os **nervos supraclaviculares**, que são mais laterais, embora alguns sejam sacrificados. Divide-se o platisma e parte do esternocleidomastóideo, afasta-se a **jugular externa**, **divide-se o omo-hióideo** e mobiliza-se o coxim gorduroso supraclavicular, dentro do qual pode estar o **supraescapular**.
+- **Borda posterior do plexo**: **torácico longo** e **supraescapular**, além do escapular dorsal e dos grandes ramos sensitivos cervicais; o estimulador ajuda. O torácico longo é mobilizado dentro do escaleno médio, e os ramos da artéria e da veia **cervicais transversas profundas** que o prendem são ligados (Fig. 29.14).
+- **Borda anterior**: achar o **frênico**, que **raramente** está sobre o escaleno anterior como nos atlas; pode estar muito proximal cruzando medialmente, muito anterior sem tocar o músculo ou até lateral ao escaleno anterior (Fig. 29.15).
+- **Escaleno anterior**: em cirurgia primária sempre há um espaço entre ele e a artéria (Fig. 29.16). O músculo é dividido da primeira costela de **lateral para medial**, junto à artéria, devagar até a pleura (o que evita pneumotórax), e excisado o mais proximal possível. As **bandas escalenas** em volta da subclávia causam a maioria dos achados **vasculares** quando não há anomalia óssea; ao excisá-las, a artéria "infla" e o pulso melhora (Fig. 29.17).
+- **Artéria cervical transversa profunda**: quando existe, passa entre os troncos médio e inferior, prende a subclávia ao tronco inferior e pode comprimi-lo; é ligada e dividida (Fig. 29.18).
+- **Banda pleural**: uma banda espessa da parte posterior da costela ou do processo transverso comprime o tronco inferior, que pode mostrar constrição em ampulheta e neuroma em continuidade (Fig. 29.19).
+- **Escaleno médio**: incisado da costela e quase todo ressecado, poupando o torácico longo e o escapular dorsal; C8 e T1 são mobilizadas sobre o pulmão e a costela.
+- **A primeira costela**: com o braço em abdução e rotação externa, o cirurgião põe o **dedo entre a costela e a clavícula**. Se sente pressão, se há mais tensão no tronco inferior ou se C8 e T1 são muito curtas, **resseca**; se não, deixa a costela, e muitas vezes o tronco inferior até afrouxa. Alguns cirurgiões ressecam sempre. A costela cervical sai fácil por essa via, às vezes junto com parte do processo transverso de C7, mesmo sem costela cervical. A ressecção usa **microsserra**, que precisa de menos espaço e afastamento que o costótomo, com corte bem anterior à artéria e medial à faceta posterior (Fig. 29.20 e 29.21).
+- **Fechamento**: teste de vazamento de ar com pressão positiva e soro, duas vezes; dreno no ápice e outro subcutâneo; a pleura fica aberta; o coxim gorduroso é puxado de volta sobre o plexo (Fig. 29.22).
+- **Infraclavicular**: incisão de rotina medial ao coracoide, no intervalo deltopeitoral, para liberar o **peitoral menor** se ele comprime em abdução e rotação externa e incisar os **ligamentos coracocostais** (Fig. 29.23).
+- **Pós-operatório**: radiografia do tórax na recuperação, **abdução e rotação externa ativas ao acordar**, tipoia só por conforto alguns dias e depois fisioterapia (p. 974). Mobilizar cedo impede que a cicatriz prenda o plexo de novo.
+
+Na forma vascular verdadeira, a via também é supraclavicular, com divisão de tarefas: a reconstrução arterial fica com o **cirurgião vascular**, e a descompressão neural com o cirurgião de membro superior (p. 974).
+
+## Complicações
+
+O tratamento conservador tem poucas complicações, e leves; as exceções são a progressão de uma forma verdadeira ou vascular em quem recusa a cirurgia, a **piora com fortalecimento vigoroso** em vez de alongamento, a dependência de remédios e a depressão (Green 7, p. 974).
+
+As complicações cirúrgicas refletem o "terreno caro" (p. 975): lesão da **subclávia** (com exsanguinação e morte), secção do **frênico** ou do **torácico longo**, divisão do fascículo medial ou da raiz de C8, **hemotórax**, **pneumotórax**, **quilotórax** (pelo ducto torácico, à esquerda), causalgia e lesões de tração do plexo, até paralisia total. A síndrome de **HORNER** é rara, por manipulação de C8 e T1, perto do gânglio estrelado. As lesões por tração são mais comuns pela **via axilar**, em que o braço é tracionado para abrir o campo. As **disestesias** dos nervos cutâneos (intercostobraquial, cutâneos posteriores, supraclaviculares) são quase universais e em geral resolvem em 6 meses, mas a via supraclavicular deixa uma área de **dormência permanente** abaixo da clavícula.
+
+O sucesso "cirúrgico" fica em cerca de **80%** com boa seleção, com 20% insatisfeitos (p. 975). A **maior causa de falha** é o **diagnóstico errado**: KOSTIC e KULKA, em 142 cirurgias de 124 pacientes, acharam artrose glenoumeral ou cervical, hérnia de disco e tumor de PANCOAST não reconhecidos, e reoperaram 13 por ressecção inadequada da primeira costela.
+
+## Resultados
+
+Medir resultado é difícil porque não há critério padronizado de diagnóstico nem de avaliação (Green 7, p. 975). Na literatura, a cirurgia tem resultado bom a excelente em **24% a 100%**, uma amplitude que diz mais sobre a seleção dos pacientes que sobre a técnica. Com o tempo, o resultado cai: **90% ou mais** de sucesso aos 3 meses e cerca de **70%** depois de 5 anos (Fig. 29.24, p. 976).
+
+A revisão de SANDERS é a comparação mais citada (p. 976): **escalenectomia anterior e média com ressecção da primeira costela** deixou **99%** satisfeitos, contra **57%** com a **escalenotomia isolada**. Na série própria de SANDERS, porém, não houve diferença entre escalenectomia subtotal, ressecção da costela e a combinação; mesmo assim ele faz a escalenectomia "completa" e acha a combinação ligeiramente melhor. A diferença entre escalenotomia (cortar o músculo, que cicatriza e volta a apertar) e escalenectomia (tirar o músculo) é o tipo de detalhe que a prova usa.
+
+As formas **vascular e neurogênica verdadeira** têm resultados melhores que a eletricamente negativa, porque nelas a causa é objetiva e a cirurgia a remove. CHANG não achou diferença na volta ao trabalho entre a forma venosa e a neurogênica, só no tempo, e mostrou que o componente físico do SF-12 antes da cirurgia estava no nível da **insuficiência cardíaca congestiva**, normalizando só em 2 anos (p. 976): um número que ajuda a levar a sério a queixa desses pacientes. **Indenização trabalhista ou litígio** pioram o resultado; SANDERS calculou **13% a 15%** a menos de sucesso.
+
+## Recorrência e reoperação
+
+Diante de uma falha, a primeira pergunta é se houve um **intervalo sem sintomas** depois da cirurgia (Green 7, p. 975). Se o paciente nunca melhorou após uma descompressão adequada, o problema é **diagnóstico errado** ou ganho secundário, e não recorrência.
+
+A **recorrência verdadeira** ocorre em **5% a 25%**, em geral nos **primeiros 4 a 6 meses** (p. 975 e 976), o tempo de formação e retração da cicatriz. A recorrência depende da operação feita:
+
+!tabela Recorrência por procedimento (Green 7, cap. 29, p. 976)
 | Procedimento | Recorrência |
 | --- | --- |
+| escalenotomia anterior isolada (hoje rara) | a maior |
 | ressecção transaxilar isolada da primeira costela | **19%** |
 | escalenectomia anterior e média | **14%** |
 | ressecção da primeira costela com escalenotomia | **6%** (a menor) |
 !fim
 
-!questoes central=mao-0034 relacionadas=mao-0010,mao-0248,mao-0081,mao-0425,mao-1212
-conceito: O triângulo interescalênico (escalenos anterior e médio, primeira costela) é o sítio mais comum; PAGET-SCHROETTER é a trombose de esforço da veia subclávia; ROOS (3 minutos abrindo e fechando as mãos em abdução e rotação externa) é o teste mais sensível; esternoclavicular subluxada e clavícula mal consolidada causam desfiladeiro.
-como: O TARO 2021 pediu um dos focos de compressão do plexo; o TARO 2019, o que se comprime na PAGET-SCHROETTER; uma prova de Ortopedia, o autor da manobra mais sensível e específica; o TARO 2014, a luxação associada; o TECOC, a mão de GILLIATT-SUMNER.
-armadilha: Pôr a veia subclávia entre os escalenos, ou escolher ADSON como teste mais confiável.
-alerta: O Green 7 não usa o nome mão de GILLIATT-SUMNER (`mao-0425`); descreve a forma neurogênica verdadeira de GILLIATT, com atrofia intrínseca e hipotenar no território C8 e T1. O gabarito oficial foi preservado.
+A causa mais comum de recorrência é a **cicatriz em volta do plexo** ou um **segmento retido ou instável da primeira costela** (p. 976). A revisão é feita de preferência pela **via supraclavicular**, que dá o melhor acesso e permite envolver o plexo, depois da neurólise, com a gordura supraclavicular. A reoperação tem mais complicações: lesão pleural ou pneumotórax em até **62%** numa série; sucesso precoce (3 meses) de **74% a 90%**; e recorrência ou falha de até **59%** em 10 a 15 anos. O resultado é melhor quando se encontra uma **anomalia residual** (osso, periósteo, costela instável) e pior quando só há cicatriz. A simpatectomia na reoperação é recomendada, mas pouco feita.
+
+## Desfiladeiro: onde as fontes divergem
+
+!tabela Divergências no desfiladeiro torácico
+| Ponto | Outra fonte | Green 7 (cap. 29) | Como ler na prova |
+| --- | --- | --- | --- |
+| Atrofia da forma verdadeira | Literatura clássica (GILLIATT-SUMNER): predominantemente **tenar** | Atrofia **hipotenar** e intrínseca (p. 960, Fig. 29.3) | Tenar com sensibilidade ulnar = GILLIATT-SUMNER |
+| Segunda anomalia na série transaxilar | Material de curso: "seguida de costela cervical" | Escalenos 43%, **subclávio 19,5%**, escaleno mínimo 10%, costela cervical 8,5% (p. 962) | A costela cervical é a última das quatro |
+| Nervo de amplitude alterada cedo | Material de curso: ulnar | **Cutâneo medial do antebraço** ou SNAP distal; EMG dos intrínsecos talvez antes (p. 968) | Cutâneo medial do antebraço |
+| Nome do teste | Provas: "Ross" | **ROOS** (p. 966 e 967) | Mesmo teste |
+| Páginas citadas pela SBCM 2025 | Green 8 (p. 1129 e 1131) | Mesmos fatos nas p. 963 e 964 | Gabaritos conferem |
+| Conduta na forma verdadeira | Conservador como primeira linha de toda forma neurogênica (p. 968) | Conclusão: considerar cirurgia cedo na eletricamente positiva e na vascular (p. 976) | Verdadeira e vascular: operar cedo |
+| ROOS "específico" | Algumas provas: mais sensível e específico | Mais **sensível e reprodutível**; não o chama de específico (p. 966 e 967) | Aceitar o ROOS como o melhor teste |
 !fim
 
-!questoes central=mao-1546 relacionadas=mao-0787,mao-1466,mao-1813,mao-0836,mao-1355 treino=mao-2227,mao-2140,mao-2139,mao-2542,mao-1744
-conceito: O triângulo interescalênico, com a primeira costela como base, é o local mais comum; a forma neurogênica eletricamente negativa é a mais frequente, o diagnóstico é clínico e a ENMG em geral é normal; ROOS abre e fecha as mãos com os braços elevados; ADSON, WRIGHT e HALSTEAD dão positivos em normais; potenciais evocados não têm valor.
-como: A USP-SP 2026 e o INTO 2023 pediram o local mais comum; a USP-SP 2024, a afirmação correta sobre diagnóstico e tipos; o ENARE de Cirurgia da Mão 2022, o nome do teste de abrir e fechar a mão; o INTO 2026, a frequência da costela cervical; os simulados, os limites do triângulo, os potenciais evocados e o caso clínico da forma neurogênica; a USP-SP 2025, a compressão cujo diferencial com o desfiladeiro é mais difícil (túnel cubital, pelo território ulnar comum).
-armadilha: Escolher o espaço costoclavicular, dizer que o tipo arterial é o mais frequente ou que o ROOS confirma o tipo arterial.
-alerta: Em `mao-1813`, o enunciado fala em 1 minuto e flexão de 90 graus no plano da escápula; o Green 7 descreve o ROOS com abdução de 90 graus e rotação externa por 3 minutos (cap. 29, p. 966 a 968). Em `mao-1355`, o Green 7 não faz a comparação nesses termos; o gabarito (túnel cubital) se apoia no território ulnar comum (cap. 29, p. 964 e 965) e no diferencial do cubital recorrente com o desfiladeiro de GILLIATT (cap. 28, p. 955).
-!fim
+> **Na prova:** WILBOURN = **vascular** (arterial 1% a 2%, venoso 2% a 3%) e **neurogênico** (verdadeiro, 1 em 1 milhão; eletricamente negativo, **mais de 95%**, até 97%); ROOS divide por tronco, **inferior e combinado 85% a 90%**; **arterial = osso**; **PAGET-SCHROETTER = veia subclávia**, no **costoclavicular**, pelo **subclávio**, trombólise e depois primeira costela; sítio mais comum = **interescalênico** (escaleno anterior, médio, primeira costela), com **plexo e artéria**, veia **à frente** do escaleno anterior; escaleno anterior **C3 a C6** (tubérculos anteriores), médio **C2 a C7** (posteriores); escaleno mínimo = **cunha** entre artéria e tronco inferior; série transaxilar: **escalenos 43%**, costela cervical a última (8,5%); costela cervical **0,5% a 0,6%**, **bilateral 50% a 80%**, T1 pleno suprime a costela; costoclavicular = **clavícula, subclávio e ligamento costocoracoide** à frente; subcoracoide = **polia** no coracoide e peitoral menor tenso; parestesia em **95%**; carpo em **21% a 45%**, cubital até **10%**; clínico em **97%**; testes distais **antes**; ADSON, WRIGHT e HALSTEAD positivos em normais; **ROOS 3 minutos**, tolera 1 minuto ou menos, cotovelo um pouco estendido para afastar o cubital; tensão do membro superior = cotovelo estendido, punho em dorsiflexão, cabeça para o lado **oposto**; radiografia porque a ressonância perde a costela cervical; duplex **92% e 95%**; arteriografia = padrão-ouro arterial; potencial evocado **sem valor**; precoce = **cutâneo medial do antebraço** e EMG dos intrínsecos; conservador **primeiro**, gabapentina ou pregabalina, **não fortalecer escalenos**; cirurgia após **3 meses**; escalenectomia com costela **99%** contra escalenotomia **57%**; recorrência **5% a 25%** em **4 a 6 meses**, menor com costela e escalenotomia (**6%**); causa = **cicatriz** ou costela retida.
 
 # Onde as fontes divergem {radar=fundamento}
 
