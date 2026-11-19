@@ -41,9 +41,7 @@ const ehTitulo = (prova: string) => (PROVAS_TITULO_MAO as readonly string[]).inc
  * de questões aproveitáveis da prova. Quando todas passarem de 80%, esta lista pode ser esvaziada.
  */
 export const EDICOES_TITULO_EM_CONSTRUCAO: Record<string, number> = {
-  'SBCM|2007': 69, 'SBCM|2014': 94, 'SBCM|2015': 92, 'SBCM|2025': 100,
-  'SIMÃO|2008': 100, 'SIMÃO|2009': 90, 'SIMÃO|2010': 89, 'SIMÃO|2012': 71, 'SIMÃO|2013': 100, 'SIMÃO|2014': 99,
-  'SIMÃO|2015': 71, 'SIMÃO|2017': 100, 'SIMÃO|2018': 27, 'SIMÃO|2019': 100, 'SIMÃO|2020': 100,
+  // vazio desde o lote 211 (19/11/2026): todas as edições SBCM e SIMÃO passaram de 80% publicadas
 }
 const incompletasCache = new WeakMap<Indice, Set<string>>()
 /** Chaves "prova|ano" das edições do título da mão ainda abaixo de 80% (fora do ranking). */
