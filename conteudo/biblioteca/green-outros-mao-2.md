@@ -461,7 +461,7 @@ Na luxação posterolateral, a lesão das partes moles é **sequencial e previs�
 
 Alguma perda de movimento é esperada depois de uma fratura-luxação do cotovelo, e o Green (cap. 22, p. 827) especifica: **o paciente perde, tipicamente, mais extensão do que flexão**. A rigidez cresce com a energia do trauma, com a quantidade de osso heterotópico e com o atraso para iniciar o movimento. Por isso o movimento começa na primeira semana; imobilizar por mais de 3 semanas aumenta o risco de contratura em flexão persistente (p. 819). Se for preciso escolher entre estabilidade e mobilidade, a **estabilidade vem primeiro**: é mais fácil corrigir um cotovelo rígido e congruente do que um cronicamente instável.
 
-!questoes treino=mao-2420,mao-2529,mao-2356,mao-2552
+!questoes treino=mao-2420,mao-2529,mao-2356,mao-2552,ombro-cotovelo-0732,ombro-cotovelo-0733
 conceito: No círculo de HORII a lesão começa lateral e avança pela frente e por trás até o lado medial; a banda anterior do colateral medial é a última e pode ficar íntegra. Coronoide e cabeça do rádio estabilizam contra varo, valgo e rotação. Depois da fratura-luxação perde-se mais extensão.
 como: O SIMÃO 2022 pediu o sentido da progressão no círculo de HORII; o SIMÃO 2021, a estrutura que pode ficar íntegra e o movimento mais perdido; o SIMÃO 2024, a afirmação correta sobre estabilidade e coronoide.
 armadilha: Inverter o sentido (medial para lateral), dizer que a incisura troclear estabiliza no plano axial (é o sagital), ligar a subluxação à faceta anterolateral (é a anteromedial) ou achar pequeno o risco de nova luxação na tríade terrível.
@@ -498,7 +498,7 @@ Um dado epidemiológico do mesmo capítulo: a forma **anterior (BADO I) é incom
 
 A lesão posterior (BADO 2) é reconhecida há muito como entidade distinta: costuma vir com **fratura da cabeça do rádio**, ocorre com frequência na **osteoporose** e, no capítulo 22 (p. 817), é descrita na mulher idosa depois de queda de baixa energia, com cabeça do rádio fraturada em dois terços dos casos e possível lesão do colateral lateral. A fratura da ulna tem ápice posterior, e a fixação preferida é a **placa dorsal contornada**. Aqui a instabilidade ulnoumeral pode persistir mesmo depois de restaurado o osso, se a cabeça do rádio e o colateral lateral não forem tratados.
 
-!questoes treino=mao-2355,mao-2455,mao-2526,mao-2417
+!questoes treino=mao-2355,mao-2455,mao-2526,mao-2417,ombro-cotovelo-0734,ombro-cotovelo-0735
 conceito: No MONTEGGIA do adulto, o ponto-chave é restaurar de forma estável o alinhamento da ulna com placa; cabeça do rádio que não reduz significa ulna desalinhada até prova em contrário; se houver bloqueio de partes moles, o interósseo posterior pode estar aprisionado e não se corta tecido sem exposição adequada.
 como: O SIMÃO 2024 pediu a causa quase sempre responsável pela cabeça desalinhada depois da placa; o SIMÃO 2022, o cuidado antes de abrir a radiocapitelar e o nervo em risco nas luxações anterior e lateral; o SIMÃO 2021, a afirmação correta sobre a lesão no adulto.
 armadilha: Culpar o ligamento anular ou a cápsula interpostos e abrir a articulação de rotina; dizer que a forma anterior é a mais frequente no adulto.
