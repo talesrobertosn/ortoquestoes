@@ -15934,15 +15934,15 @@
   },
   {
    "id": "green-tenossinovites",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Dedo em gatilho e outras tenossinovites",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 81)",
    "capitulo": "Capítulo 56 · Tendinopathy",
-   "resumo": "Gatilho é aprisionamento mecânico na A1 (metaplasia fibrocartilaginosa, pouca inflamação), mais em mulher de 55 a 60 anos, polegar e anular nos múltiplos, pior em diabetes e AR; QUINNELL modificado por GREEN (I dor sem gatilho, II estende ativo, IIIA extensão passiva, IIIB não flete ativo, IV contratura fixa da IFP); infiltração melhor em um dedo, nodular e de curta duração; A2 e A4 são as polias essenciais e a oblíqua do polegar não se corta (corda de arco); percutânea não no polegar nem no indicador, nervo digital radial do polegar é o mais exposto; polegar em gatilho da criança é adquirido, isolado, nódulo de NOTTA no FPL, bilateral em 25% a 33%, cirurgia depois de 1 ano; gatilho de vários dedos na criança lembra HURLER; DE QUERVAIN no APL e EPB, EPB em subcompartimento separado, FINKELSTEIN e EICHHOFF, ramo sensitivo do radial; intersecção 4 cm acima do punho, APL e EPB sobre o 2º compartimento; ECU dói em supinação e desvio ulnar; tendinite calcária no FCU; pseudogota calcifica a FCCT; KANAVEL: dor sobre a bainha é o sinal mais confiável; PANG: polimicrobiana, isquemia e pus subcutâneo pioram; PARONA entre pronador quadrado e FDP.",
+   "resumo": "Duas famílias: aprisionamento (bainha até 3 vezes mais grossa, metaplasia fibrocartilaginosa, pouca inflamação) e tenossinovite proliferativa (AR, cristais, amiloide, infecção); gatilho é impacto na A1, alteração maior na polia (condrócitos e colágeno tipo III), mulher de meia-idade 2 a 6 vezes, 2,2% na vida e 10% no diabético insulinodependente, múltiplos: polegar, anular, médio, mínimo, indicador; QUINNELL modificado por GREEN (I dor sem gatilho, II estende ativo, IIIA extensão passiva, IIIB não flete ativo, IV contratura fixa da IFP); infiltração melhor em um dedo, nodular, curta duração, extrassinovial igual à intrassinovial, perda súbita de resistência ao recuar, 6 semanas até a cirurgia; A2 e A4 essenciais, oblíqua do polegar preservada; percutânea com MF hiperestendida, não no polegar nem no indicador; nervo digital radial do polegar superficial e cruzado; criança: adquirido, isolado, NOTTA proximal à A1, bilateral 25% a 33%, vários dedos lembram HURLER; DE QUERVAIN: anatomia normal em menos de 20%, EPB fino e dorsal, ausente em 5% a 7%, septo em 24% a 37%, FINKELSTEIN e EICHHOFF, teste do EPB, corticoide solúvel, abrir na margem dorsal, ramo sensitivo do radial com reparo imediato; intersecção 4 cm acima do punho, tala em 15 graus de extensão, libera o 2º sem fechar o retináculo; EPL: nutrição sinovial perto do LISTER, cirurgia urgente com transposição; ECU em supinação; FCR sobre o trapézio; calcária no FCU em homens de 40 a 60 anos, AINE; pseudogota na FCCT; amiloide beta-2-microglobulina na diálise; KANAVEL, PANG, MICHON e PARONA.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 68,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15990,8 +15990,13 @@
      "radar": "confirmado"
     },
     {
-     "id": "doenca-de-de-quervain",
-     "titulo": "Doença de DE QUERVAIN",
+     "id": "doenca-de-de-quervain-anatomia-paciente-e-exame",
+     "titulo": "Doença de DE QUERVAIN: anatomia, paciente e exame",
+     "radar": "confirmado"
+    },
+    {
+     "id": "doenca-de-de-quervain-tratamento-e-cirurgia",
+     "titulo": "Doença de DE QUERVAIN: tratamento e cirurgia",
      "radar": "confirmado"
     },
     {
@@ -16005,13 +16010,13 @@
      "radar": "clinico"
     },
     {
-     "id": "tendinite-do-ecu",
-     "titulo": "Tendinite do ECU",
+     "id": "tendinite-e-instabilidade-do-ecu",
+     "titulo": "Tendinite e instabilidade do ECU",
      "radar": "confirmado"
     },
     {
-     "id": "tendinopatias-do-fcr-e-do-fcu",
-     "titulo": "Tendinopatias do FCR e do FCU",
+     "id": "tendinopatia-do-fcr",
+     "titulo": "Tendinopatia do FCR",
      "radar": "fundamento"
     },
     {
@@ -16044,8 +16049,13 @@
     "mao-0422",
     "mao-1002",
     "mao-1596",
+    "mao-0959",
+    "mao-0264",
+    "mao-1867",
+    "mao-1610",
     "mao-0450",
     "mao-0473",
+    "mao-0265",
     "mao-0011",
     "mao-0616",
     "mao-1344",
@@ -16063,14 +16073,45 @@
    ],
    "treino": [
     "mao-2052",
+    "mao-3518",
+    "mao-3534",
+    "mao-3535",
+    "mao-3536",
+    "mao-3539",
+    "mao-3529",
+    "mao-3533",
+    "mao-3538",
+    "mao-3542",
     "mao-1793",
+    "mao-3526",
+    "mao-3531",
+    "mao-2445",
+    "mao-3521",
+    "mao-3523",
+    "mao-3540",
+    "mao-1791",
+    "mao-2608",
+    "mao-2449",
+    "mao-3524",
+    "mao-3528",
+    "mao-2357",
+    "mao-3519",
     "mao-2474",
+    "mao-3520",
+    "mao-3525",
+    "mao-3527",
+    "mao-3530",
+    "mao-3532",
     "mao-2358",
     "mao-2180",
-    "mao-2557"
+    "mao-2557",
+    "mao-3522",
+    "mao-3537",
+    "mao-3541"
    ],
    "subtemas": [
-    "Dedo em gatilho e outras tenossinovites"
+    "Dedo em gatilho e outras tenossinovites",
+    "Tenossinovite de De Quervain"
    ]
   },
   {
