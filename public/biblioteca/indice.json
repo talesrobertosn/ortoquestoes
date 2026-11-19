@@ -10733,7 +10733,7 @@
   },
   {
    "id": "green-amputacoes-reimplantes",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Amputações e reimplantes na mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -10741,7 +10741,7 @@
    "capitulo": "Capítulo 42 · Replantation (com o capítulo 49, Digital Amputations)",
    "resumo": "Três variáveis governam o reimplante: massa muscular (isquemia), nível (regeneração nervosa) e mecanismo; mais convincentes polegar, vários dedos, criança e punho a cotovelo; única contraindicação firme a instabilidade clínica; relativas zona 2 isolada, segmentar e avulsão do anelar; dedo distal ao FDS é indicação relativa; dedo tolera 6 a 12 h quente e 24 h frio (Campbell 8 h e 30 h), antebraço 2 a 3 h já necrosa (Campbell 6 h, 12 h resfriado); abaixo de 4 °C cristais; LIN sem relação entre tempo e resultado acima de 24 h; encurtar osso pelo defeito do nervo; Green faz osso, extensor, flexor, nervo e veias sob garrote e artéria depois do teste do jato, clássica osso, extensor, flexor, artéria, nervo, veia; vários dedos estrutura por estrutura; zona 1 sem veia dorsal usa veias volares ou a segunda artéria; duas veias por artéria (Campbell); enxerto venoso invertido das veias volares do antebraço, distal primeiro no Green; clamp menor que 30 g/mm², 5 a 8 pontos na artéria de 1 mm, soltar o clamp a jusante primeiro; macrorreimplante com shunt e 20 min por hora; no-reflow por neutrófilos; paroníquia dorsal confiável, leito ungueal não; calor e aspirina; pálido arterial, azulado venoso; sanguessuga e Aeromonas; 2PD 8 mm corte e 15 mm esmagamento, útil em 61% dos polegares e 54% dos dedos; ALLEN e TAMAI pela lúnula; raio do médio leva o adutor do polegar; neuroma no indicador e na avulsão; policização com a MF como nova CMC; punho transmite 50% da pronossupinação.",
    "acesso": "gratis",
-   "minutos": 104,
+   "minutos": 146,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10899,9 +10899,64 @@
      "radar": "confirmado"
     },
     {
-     "id": "a-transferencia-de-dedos-do-pe",
-     "titulo": "A transferência de dedos do pé",
+     "id": "a-transferencia-de-dedos-do-pe-igual-com-igual",
+     "titulo": "A transferência de dedos do pé: igual com igual",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-que-reconstruir-em-cada-nivel",
+     "titulo": "O que reconstruir em cada nível",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-mao-metacarpal-de-wei",
+     "titulo": "A mão metacarpal de WEI",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-crianca-e-a-mao-congenita",
+     "titulo": "A criança e a mão congênita",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-anatomia-arterial-do-primeiro-espaco-70-20-e-1",
+     "titulo": "A anatomia arterial do primeiro espaço: 70, 20 e 10",
+     "radar": "clinico"
+    },
+    {
+     "id": "halux-total-halux-aparado-e-envoltorio",
+     "titulo": "Hálux total, hálux aparado e envoltório",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-segundo-dedo-e-as-transferencias-parciais",
+     "titulo": "O segundo dedo e as transferências parciais",
+     "radar": "clinico"
+    },
+    {
+     "id": "dois-e-tres-dedos-de-uma-vez",
+     "titulo": "Dois e três dedos de uma vez",
+     "radar": "fundamento"
+    },
+    {
+     "id": "no-receptor-osso-tendoes-nervos-e-vasos",
+     "titulo": "No receptor: osso, tendões, nervos e vasos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "articulacoes-vascularizadas-do-pe",
+     "titulo": "Articulações vascularizadas do pé",
+     "radar": "clinico"
+    },
+    {
+     "id": "depois-da-cirurgia-vigiar-complicacoes-e-retoque",
+     "titulo": "Depois da cirurgia: vigiar, complicações e retoques",
+     "radar": "clinico"
+    },
+    {
+     "id": "resultados-o-pe-que-ficou-e-a-reabilitacao",
+     "titulo": "Resultados, o pé que ficou e a reabilitação",
+     "radar": "fundamento"
     },
     {
      "id": "punho-e-antebraco",
@@ -10957,6 +11012,7 @@
     "mao-1493",
     "mao-1381",
     "mao-1510",
+    "mao-1629",
     "mao-1453",
     "mao-0568"
    ],
@@ -11018,9 +11074,22 @@
     "mao-1763",
     "mao-2175",
     "mao-2369",
-    "mao-2359",
-    "mao-2360",
+    "mao-3774",
+    "mao-3777",
+    "mao-3775",
+    "mao-3773",
     "mao-2091",
+    "mao-2360",
+    "mao-1770",
+    "mao-3776",
+    "mao-3779",
+    "mao-2359",
+    "mao-3770",
+    "mao-2633",
+    "mao-3771",
+    "mao-3778",
+    "mao-2601",
+    "mao-3772",
     "mao-2263"
    ],
    "subtemas": [
