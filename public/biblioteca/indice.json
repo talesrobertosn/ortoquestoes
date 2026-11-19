@@ -11927,15 +11927,15 @@
   },
   {
    "id": "green-deformidades-dedos",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Deformidades dos dedos",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
    "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed., e o HEBERT",
    "capitulo": "Capítulo 10 · Treatment of the Stiff Finger and Hand",
-   "resumo": "Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); BUNNELL e intrínseco plus e minus; checkrein e artéria digital transversa; braquidactilia (falange média, BELL E com metacarpos curtos, braquimetacarpia do 4º em meninas, distração 4 a 7 dias e 0,25 a 0,5 mm duas vezes ao dia); clinodactilia (mais de 10 graus, barra em C e falange delta, COONEY, VICKERS antes dos 6 anos, polegar com osteotomia primária); KIRNER (falange distal, palmar e radial, meninas, SONG, periósteo dorsal como dobradiça); camptodactilia (BENSON I a III, 80% no lactente, dois terços bilaterais, abaixo de 30 graus não operar).",
+   "resumo": "Martelo (DOYLE I a IVC, ALBERTONI pela queda de 30 graus, tala da IFD 6 a 8 semanas, FOWLER no crônico); botoeira (banda central, ligamento triangular, bandas laterais volares em 2 a 3 semanas, ELSON, IFP estendida com IFD livre, BURTON, CURTIS em quatro estágios, AICHE e MATEV); pseudobotoeira (colaterais e placa volar); pescoço de cisne (frouxidão volar, ORL, tenodese do FDS, NALEBUFF I a IV); rigidez pós-traumática (edema e postura, came da MF, BUNNELL positivo com a MF estendida, extensor com punho e MF fletidos, lumbrical pelo desvio ulnar e pelo gancho passivo, 87% resolvem com tala, liberação dorsal da MF com meta de 70 graus e acessório que ressalta, IFP em flexão com checkrein, artéria digital transversa e via mediolateral, extensor como fator decisivo, DIGIT WIDGET, IFP em extensão com BUNNELL depois da liberação); intrínseco plus e minus; braquidactilia (falange média, BELL E com metacarpos curtos, braquimetacarpia do 4º em meninas, distração 4 a 7 dias e 0,25 a 0,5 mm duas vezes ao dia); clinodactilia (mais de 10 graus, barra em C e falange delta, COONEY, VICKERS antes dos 6 anos, polegar com osteotomia primária); KIRNER (falange distal, palmar e radial, meninas, SONG, periósteo dorsal como dobradiça); camptodactilia (BENSON I a III, 80% no lactente, dois terços bilaterais, abaixo de 30 graus não operar).",
    "acesso": "gratis",
-   "minutos": 62,
+   "minutos": 90,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11998,14 +11998,34 @@
      "radar": "confirmado"
     },
     {
+     "id": "rigidez-do-dedo-edema-postura-e-o-que-vale-salva",
+     "titulo": "Rigidez do dedo: edema, postura e o que vale salvar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "rigidez-talas-e-o-tratamento-sem-cirurgia",
+     "titulo": "Rigidez: talas e o tratamento sem cirurgia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "rigidez-antes-de-operar",
+     "titulo": "Rigidez: antes de operar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "rigidez-a-mf-que-nao-flete",
+     "titulo": "Rigidez: a MF que não flete",
+     "radar": "confirmado"
+    },
+    {
      "id": "rigidez-a-contratura-em-flexao-da-ifp",
      "titulo": "Rigidez: a contratura em flexão da IFP",
      "radar": "confirmado"
     },
     {
-     "id": "rigidez-contratura-em-extensao-da-ifp-e-da-mf",
-     "titulo": "Rigidez: contratura em extensão da IFP e da MF",
-     "radar": "confirmado"
+     "id": "rigidez-a-contratura-em-extensao-da-ifp",
+     "titulo": "Rigidez: a contratura em extensão da IFP",
+     "radar": "clinico"
     },
     {
      "id": "os-dedos-congenitos-osso-plano-e-fise",
@@ -12060,7 +12080,11 @@
    ],
    "questoes": [
     "mao-1052",
+    "mao-1342",
     "mao-0066",
+    "mao-0124",
+    "mao-1190",
+    "mao-1869",
     "mao-1261",
     "mao-0654",
     "mao-0909",
@@ -12076,9 +12100,9 @@
     "mao-1011",
     "mao-0952",
     "mao-1012",
-    "mao-0772",
     "mao-1464",
     "mao-0065",
+    "mao-0772",
     "mao-1423",
     "pe-tornozelo-0252",
     "mao-0757",
@@ -12086,8 +12110,13 @@
    ],
    "treino": [
     "mao-1758",
+    "mao-1709",
     "mao-2497",
     "mao-2378",
+    "mao-2115",
+    "mao-3797",
+    "mao-3798",
+    "mao-3799",
     "mao-1790",
     "mao-1789",
     "mao-1941",
@@ -12100,17 +12129,16 @@
     "mao-2408",
     "mao-2538",
     "mao-2365",
+    "mao-2031",
+    "mao-3800",
+    "mao-2188",
+    "mao-3801",
     "mao-2119",
     "mao-2121",
     "mao-2032",
+    "mao-3802",
     "mao-2120",
     "mao-1939",
-    "mao-2188",
-    "mao-2031",
-    "mao-2869",
-    "mao-2902",
-    "mao-2914",
-    "mao-2921",
     "mao-2431",
     "mao-2278",
     "mao-2553",
@@ -12121,6 +12149,10 @@
     "mao-2905",
     "mao-2915",
     "mao-2944",
+    "mao-2869",
+    "mao-2902",
+    "mao-2914",
+    "mao-2921",
     "mao-1160",
     "mao-1183",
     "mao-0929",
