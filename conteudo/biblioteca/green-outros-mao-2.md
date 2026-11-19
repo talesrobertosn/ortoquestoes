@@ -529,7 +529,7 @@ O nervo frênico aparece nos livros de Cirurgia da Mão por causa do plexo braqu
 
 Desses dados sai parte do raciocínio da questão: se o bloqueio do frênico paralisa o diafragma do mesmo lado, a laceração do nervo **não deixa normal a função do hemidiafragma ipsilateral**. O trajeto colado ao pericárdio ajuda a entender por que o gabarito aponta a sensibilidade do **pericárdio fibroso e da pleura mediastinal**, mas esse território sensitivo não está descrito em nenhum dos livros conferidos.
 
-!questoes central=mao-1628 treino=mao-3841
+!questoes central=mao-1628
 conceito: O frênico é o nervo motor do diafragma e desce sobre o pericárdio; a lesão paralisa o hemidiafragma ipsilateral e, pelo gabarito, tira a sensibilidade do pericárdio fibroso e da pleura mediastinal.
 como: A USP-SP 2026 descreveu um ferimento por arma branca com suspeita de laceração do frênico direito e pediu o achado compatível.
 armadilha: Aceitar função normal do diafragma do lado lesado; os livros conferidos sustentam a paralisia ipsilateral, mas não permitem discutir as alternativas sensitivas.
@@ -610,6 +610,13 @@ Os primeiros socorros leigos não estão no Green. Duas revisões indexadas (PAR
 - **Não fazer garrote**: o torniquete causa isquemia do membro e amputações, e a evidência recomenda evitá-lo.
 - **Não usar aparelhos de sucção**: não têm eficácia nos estudos experimentais.
 - **Imobilizar o paciente e levá-lo rápido** a um serviço que tenha soro. A bandagem com pressão e imobilização é a única técnica com efeito comprovado sobre a dispersão do veneno, mas é difícil de aplicar corretamente por leigos e pode aumentar a lesão local nos venenos que destroem tecido, como o das Viperidae; por isso a conduta se individualiza.
+
+
+!questoes treino=mao-3841
+conceito: Na picada de jararaca, o soro antibotrópico específico é a medida que muda o curso sistêmico do envenenamento, mas pouco altera a lesão local já instalada (Green 7, cap. 52, p. 1791).
+como: A SBCM 2007 cobrou a conduta no acidente por serpente; o simulado pergunta qual medida tem efeito comprovado.
+armadilha: Achar que garrote, sucção ou incisão ajudam; as revisões citadas mostram que não, e o garrote causa isquemia.
+!fim
 
 ## Síndrome compartimental após picada de cobra
 

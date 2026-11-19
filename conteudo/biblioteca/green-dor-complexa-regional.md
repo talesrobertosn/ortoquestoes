@@ -103,7 +103,7 @@ As duas classificações são independentes. Um tipo 1 pode ter DMS ou DIS, e um
 
 Porque é a parte mais objetiva do capítulo. A pegadinha mais comum é inverter as definições (tipo 1 com lesão nervosa) ou chamar a DSR de tipo 3. Outra é colocar a dor miofascial no tipo 2. E a mais sutil é dizer que o tipo 2 é a dor "que só melhora com bloqueio simpático": isso é DMS, outra classificação.
 
-!questoes central=mao-0987 relacionadas=mao-1200 treino=mao-2178,mao-3838
+!questoes central=mao-0987 relacionadas=mao-1200 treino=mao-2178,mao-3838,mao-3840
 conceito: Tipo 1 (antiga distrofia simpático-reflexa) não tem lesão nervosa identificável; tipo 2 (causalgia) tem os mesmos sinais somados a lesão de nervo nomeado identificável, mesmo sensitivo e mesmo com sinais além do território; tipo 3 reúne causas não traumáticas, como a miofascial, e é controverso.
 como: A UFG 2020 perguntou o tipo de quem tem lesão neurológica e causalgia; a PUC-SP 2023 pediu a afirmação correta sobre os tipos; o simulado do SBCM 2022 pede o que caracteriza o tipo 2; o do SBCM 2025 traz lesão do ramo superficial do radial com sinais além do território.
 armadilha: Colocar a lesão nervosa no tipo 1, chamar a DSR de tipo 3, pôr a dor miofascial no tipo 2, ou rebaixar para tipo 1 porque o nervo é só sensitivo ou porque os sinais passam do território.
