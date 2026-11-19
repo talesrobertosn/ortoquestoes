@@ -29,7 +29,7 @@ A prova cobra este tema de maneira bem previsível. Quase metade das questões g
 
 > **Na prova:** tetraplegia incompleta é a categoria mais comum; operar com **12 meses e exame estável**; **espasticidade, contratura, dor crônica e problema psicológico** contraindicam; **grau 4** é o músculo útil; ICS conta músculos **grau 4 abaixo do cotovelo**: **BR (1), ERLC (2), ERCC (3), PR (4), FRC (5), extensores dos dedos (6), ELP (7), flexores parciais (8), falta só intrínseco (9)**; prioridade **punho, pinça, preensão, abertura**; **punho nunca artrodesado**; ZANCOLLI do bíceps = **pronação**.
 
-# A lesão medular e a curva de recuperação {radar=confirmado}
+# A lesão medular e a curva de recuperação {radar=fundamento}
 
 ## Quem se machuca e como
 
@@ -43,7 +43,7 @@ Na alta hospitalar, a categoria neurológica mais comum é a **tetraplegia incom
 
 Por que a incompleta é a mais comum? Porque a coluna cervical é a mais móvel e a mais exposta a mecanismos de flexão e compressão, e porque o tratamento de urgência (estabilização precoce, controle da pressão de perfusão, transporte imobilizado) melhorou: muitas lesões que antes evoluíam para completas hoje preservam alguma função abaixo do nível. Para o cirurgião da mão, isso tem uma consequência prática: a lesão incompleta é assimétrica, irregular e cheia de surpresas, e por isso o exame músculo a músculo vale muito mais que o rótulo do nível.
 
-!questoes central=mao-2496 treino=mao-3734
+!questoes treino=mao-3734,mao-2496
 conceito: A tetraplegia incompleta é a categoria neurológica mais frequente de lesão medular (41% no Green 7; 47% no Campbell 15); a tetraplegia completa é a menos frequente (12%).
 como: O SIMÃO 2021 perguntou diretamente a categoria mais comum, com as quatro combinações de tetra ou paraplegia e completa ou incompleta.
 armadilha: Marcar paraplegia incompleta (é a segunda) ou achar que a lesão completa domina porque é a mais grave e a mais lembrada.
@@ -103,7 +103,7 @@ O Green dá o exemplo (p. 1123): um paciente com BR, ERLC, ERCC, PR e FRC com gr
 
 Um detalhe que a classificação não contempla: **o ombro e o cotovelo**. O deltoide e o bíceps (e a presença ou não do tríceps) são avaliados à parte, porque decidem a reconstrução da extensão do cotovelo, que é independente do grupo da mão.
 
-!questoes central=mao-1988,mao-2145
+!questoes treino=mao-1988,mao-2145
 conceito: O grupo 4 da ICS tem quatro músculos com força grau 4 abaixo do cotovelo: braquiorradial, extensor radial longo, extensor radial curto do carpo e pronador redondo; o flexor radial do carpo só entra no grupo 5.
 como: O SIMÃO 2023 perguntou qual músculo ainda está ativo no grupo 4 (o ERCC, entre opções mais distais); o SBCM 2022 pediu o conjunto de músculos do grupo 4.
 armadilha: Incluir o flexor radial do carpo (grupo 5) ou esquecer o braquiorradial, que está em todos os grupos a partir do 1.
@@ -131,7 +131,7 @@ Por que tanta preocupação? Porque, se o cirurgião acha que o paciente é grup
 
 Um aviso honesto: a legenda da Fig. 33.1 e o texto da p. 1124 descrevem ao contrário qual dos dois ventres é o plano e qual é o bojudo. É uma inconsistência do livro; o que importa é o sulco entre eles.
 
-!questoes central=mao-2234 treino=mao-3730
+!questoes treino=mao-3730,mao-2234
 conceito: O que faz o paciente passar do grupo 2 para o grupo 3 da ICS é o extensor radial curto do carpo alcançar grau 4; no grupo 2 só o longo é forte e o punho desvia para radial.
 como: O SBCM 2023 perguntou qual músculo, ao ganhar força funcional, muda o paciente do grupo 2 para o 3.
 armadilha: Marcar o pronador redondo, que é o músculo do grupo 4 e às vezes aparece fraco no grupo 3, ou o braquiorradial, que é o do grupo 1.
@@ -169,7 +169,7 @@ O exame não termina na força. O Green (p. 1124) pede ainda:
 
 E, por fim, a pessoa: idade, ocupação, escolaridade, apoio familiar e financeiro, personalidade e expectativas. O Campbell 15 (p. 3408) lembra que muitos tetraplégicos hesitam em operar com medo de perder o pouco que têm, e que o examinador deve observar o paciente nas atividades do dia a dia antes de decidir o que lhe daria mais independência. Três quartos dos tetraplégicos jovens dizem que a função que mais gostariam de recuperar é a das mãos, acima das pernas, da bexiga e da função sexual. Mesmo assim, das 65% a 75% de pessoas que se beneficiariam da cirurgia, só 14% chegam a ser operadas.
 
-# Quando operar e quando não operar {radar=confirmado}
+# Quando operar e quando não operar {radar=fundamento}
 
 ## Doze meses e exame estável
 
@@ -188,7 +188,7 @@ O Campbell 15 (p. 3409) diz o mesmo pelos princípios de McDOWELL, MOBERG e HOUS
 
 Por que tanta insistência no prazo? Pela curva da seção anterior: músculos continuam ganhando força até 12 meses, alguns até 24. Operar aos 6 ou 9 meses pode significar classificar como grupo 1 alguém que seria grupo 3 meses depois, ou transferir um músculo que ia se recuperar e fazer falta no lugar de origem.
 
-!questoes central=mao-1987 treino=mao-3731,mao-3736,mao-3735,mao-3738
+!questoes treino=mao-3731,mao-3736,mao-3735,mao-3738,mao-1987
 conceito: Pelo Green 7 e pelo Campbell 15, a reconstrução do membro superior do tetraplégico se faz depois que a recuperação motora estabiliza, em geral com 12 meses da lesão e exame repetido estável.
 como: O SIMÃO 2023 perguntou quanto tempo após a lesão a cirurgia deve ser feita, com quatro faixas de tempo (3 meses, 3 a 6, 6 a 9 e depois de 12).
 armadilha: Achar que operar cedo evita atrofia dos doadores; os doadores estão acima da lesão e não atrofiam, e quem muda nesse período é justamente o músculo da zona de transição.
@@ -240,7 +240,7 @@ A lógica é a da dependência. Sem extensão do punho não há tenodese, e sem 
 
 A extensão do cotovelo não entra nessa lista porque é de outro andar, mas o Green e o Campbell a tratam como prioridade alta e independente: o Campbell 15 (p. 3409) diz que a extensão do cotovelo se perde em cerca de 70% dos tetraplégicos e deve ser a **primeira função restaurada ou feita junto com outras**; o protocolo de MURPHY e CHUINARD coloca o deltoide ao tríceps **antes** do restante da reconstrução. Uma razão objetiva está no Green (p. 1127): BRYS e WATERS mostraram que a força da pinça movida pelo BR transferido subiu de 0,15 para 3,9 libras quando a extensão do cotovelo foi restaurada, porque o BR cruza o cotovelo e, sem tríceps que estabilize, sua contração só flete o cotovelo.
 
-!questoes central=mao-0817,mao-2078 treino=mao-3733,mao-3740
+!questoes central=mao-0817 treino=mao-3733,mao-3740,mao-2078
 conceito: A hierarquia funcional da mão do tetraplégico é extensão do punho, pinça lateral, preensão e, por último, abertura dos dedos; a extensão do punho vem antes de tudo porque é ela que move a tenodese.
 como: O INTO 2026 pediu a ordem completa das quatro funções; o SBCM 2024 perguntou qual movimento a cirurgia deve restaurar antes de todos os outros.
 armadilha: Trocar extensão por flexão do punho, colocar a preensão antes da pinça ou terminar a lista em "fechamento" em vez de abertura.
@@ -267,7 +267,7 @@ Uma alternativa às transferências para os grupos mais altos foi a **neuroprót
 
 Ela foi pensada para os **grupos 0 a 3**, os que não têm doadores suficientes, e passou de **250 implantes**, mas a **produção foi encerrada em 2008**; uma segunda geração, com 12 canais, ficou em pesquisa. O Campbell 15 (p. 3409) cita a mesma ideia: estimular unidades neuromusculares intactas que perderam o comando cortical, programando combinações de estímulos para obter atividade coordenada. Para a prova, guarde a condição: **só funciona com o arco reflexo íntegro**, ou seja, em músculos abaixo do metâmero lesado, não nos que estão dentro dele.
 
-# Extensão do cotovelo {radar=confirmado}
+# Extensão do cotovelo {radar=fundamento}
 
 ## Por que o cotovelo vem antes
 
@@ -275,7 +275,7 @@ O tetraplégico C5 a C6 flete o cotovelo com o bíceps e o braquial, mas não o 
 
 Duas técnicas disputam a função: o **deltoide posterior ao tríceps**, com cerca de 30 anos de uso e a marca de MOBERG, e o **bíceps ao tríceps**, cada vez mais usado e preferido pela autora.
 
-!questoes central=mao-2233 treino=mao-3737,mao-3739
+!questoes treino=mao-3737,mao-3739,mao-2233
 conceito: A restauração da extensão do cotovelo tem alta prioridade no tetraplégico: dá alcance, alívio de pressão, transferências e um antagonista ao braquiorradial transferido.
 como: O SBCM 2023 pediu a afirmação de acordo com o Green entre a pronação, as transferências de nervo, a espasticidade e a extensão do cotovelo.
 armadilha: Achar que a espasticidade intensa ajuda o resultado ou que transferências de nervo estão contraindicadas; o Green as trata como experimentais, não proibidas.
@@ -328,7 +328,7 @@ O problema crônico é o **alongamento do enxerto**: FRIDEN mediu 2,3 cm de alon
 | Problema típico | perda de força de flexão (sem impacto clínico) | alongamento do enxerto |
 | Resultado | 7 de 8 contra a gravidade (MULCAHEY) | 1 de 8 |
 
-# Pronação: o rerroteamento do bíceps de ZANCOLLI {radar=confirmado}
+# Pronação: o rerroteamento do bíceps de ZANCOLLI {radar=fundamento}
 
 ## Por que pronar importa
 
@@ -349,13 +349,13 @@ As condições são precisas (p. 1130):
 
 O último item é a armadilha prática: o mesmo bíceps não pode ser usado nas duas operações. A escolha depende de qual função faz mais falta àquele paciente.
 
-!questoes central=mao-2235,mao-2554
+!questoes treino=mao-2235,mao-2554
 conceito: O rerroteamento do bíceps de ZANCOLLI passa metade do tendão por trás do colo do rádio para transformar o bíceps de supinador em pronador; indica-se com pronação passiva presente, sem pronação ativa e bíceps grau 5 agindo como supinador deformante.
 como: O SBCM 2023 descreveu a técnica e pediu a finalidade (pronação); o SIMÃO 2021 pediu a situação em que ela está indicada.
 armadilha: Achar que corrige contratura do cotovelo ou que serve a quem tem pronação ativa ou bíceps destinado ao tríceps.
 !fim
 
-# Grupos 0 e 1: a mão quase sem doadores {radar=confirmado}
+# Grupos 0 e 1: a mão quase sem doadores {radar=fundamento}
 
 ## Grupo 0
 
@@ -376,7 +376,7 @@ Os detalhes que fazem a diferença:
 
 O pós-operatório é gesso axilopalmar com o cotovelo a 90° e o punho a 45° de extensão por 4 semanas, e órtese por mais 4.
 
-!questoes central=mao-2600 treino=mao-3732
+!questoes treino=mao-3732,mao-2600
 conceito: No grupo 1 a função mais necessária é a extensão do punho, e o único doador, o braquiorradial, vai ao extensor radial curto do carpo; a pinça lateral vem por tenodese passiva.
 como: O SIMÃO 2022 deu paciente com tetraplegia alta, 1 ano de lesão e só o BR grau 4 e pediu a função a restaurar primeiro.
 armadilha: Escolher a pinça ativa com o BR ao FLP, que é a operação dos grupos 2 e 3, quando já existe extensão do punho.
@@ -502,7 +502,7 @@ O laço serve aos grupos 3 a 8 com garra. O FDS é cortado distal à polia A2, d
 
 Ela usa um **enxerto livre** (EIP, extensor do mínimo, palmar longo ou extensor do pé) que passa **volar ao eixo da MF**, por baixo do ligamento intermetacarpal transverso, e **dorsal ao eixo da IFP**, até a banda central (Fig. 33.17, p. 1143). Assim, o enxerto imita o intrínseco: flete a MF e estende a IFP. É feita na fase extensora, depois da tenodese dos extensores; contraturas fixas da IFP precisam ser liberadas antes. Regula-se a tensão para que, com as MF estendidas, as IFP fiquem quase em extensão completa, e, com o punho estendido e as MF fletidas, as IFP possam ser fletidas passivamente sem tensão. A imobilização é com as MF em 30° de flexão e as IFP estendidas, por 4 semanas, seguida de órtese.
 
-# Transferências de nervo e o futuro {radar=confirmado}
+# Transferências de nervo e o futuro {radar=fundamento}
 
 ## O que o Green 7 diz
 
@@ -527,7 +527,7 @@ Para devolver o comando isolado do **FLP** num tetraplégico crônico em que o t
 
 O que não faz sentido é o contrário: tirar ramos de músculos que o tetraplégico **precisa** (por exemplo, o ramo da cabeça longa do tríceps num paciente que já não estende o cotovelo) ou contraindicar o braquial como doador "porque o bíceps não mantém a flexão sozinho", quando o bíceps é justamente o flexor mais forte desses pacientes.
 
-!questoes central=mao-1751,mao-2236
+!questoes treino=mao-1751,mao-2236
 conceito: Transferências de nervo usam ramos de músculos acima da lesão e dispensáveis (supinador, axilar, braquial, ramo distal do ERCC) para reinervar músculos abaixo dela, cuja unidade motora está íntegra; o Green 7 as considera promissoras, mas ainda não rotineiras.
 como: O SIMÃO 2026 pediu a afirmação correta sobre as transferências de nervo (ramos do supinador ao interósseo posterior para estender dedos e polegar); o SBCM 2023 pediu o doador para devolver comando isolado ao FLP quando o território do interósseo anterior ainda responde à estimulação (ramo distal do ERCC).
 armadilha: Achar que, abaixo da lesão medular, a transferência perde o valor depois de um ano como no nervo periférico; isso só vale para o músculo dentro do metâmero lesado.
