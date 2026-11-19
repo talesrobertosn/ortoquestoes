@@ -12198,6 +12198,128 @@
    ]
   },
   {
+   "id": "green-doencas-vasculares-mao",
+   "versao": 1,
+   "titulo": "Doenças vasculares da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 60 · Vascular Disorders of the Hand",
+   "resumo": "Arco superficial = terminação da ulnar, completo em cerca de 78% (COLEMAN e ANSON); arco profundo = terminação da radial com a princeps pollicis, completo em cerca de 98%; lesão aguda de uma só artéria raramente causa isquemia; ALLEN mostra fluxo ou ausência de fluxo por uma artéria; sinal de Doppler no punho não garante fluxo nutritivo; padrão-ouro = angiografia por subtração digital; índice digitobraquial abaixo de 0,7 = oclusão significativa; trauma aberto: vaso único pode ser ligado, reparar no jovem, veia autóloga, anastomose proximal primeiro, sem anticoagulação sistêmica, AAS 81 mg por 6 semanas; martelo hipotenar = trombose da ulnar no GUYON por lesão da íntima, isquemia embólica do anular, ponte de veia basílica até o \"Y\" da digital comum do 4º espaço (patência de cerca de 90% em 2 anos); trombose da radial sob o ELP = indicador; diabetes e insuficiência renal são hoje a causa mais comum de oclusão: ponte in situ com a cefálica da braquial à radial na tabaqueira, ou arterialização venosa sem outflow; RAYNAUD: bloqueador de cálcio no inverno, toxina botulínica 10 U por digital comum, simpatectomia periarterial para úlcera ou gangrena iminente (melhora o fluxo nutritivo, não o total), contraindicada na artéria calcificada; simpatectomia torácica = rebote, evitar; aneurismas raros, traumáticos e falsos, quase sempre na ulnar: excisar e enxertar veia invertida; hemangioma verdadeiro raro, da criança, involui; malformação venosa é a mais comum e se opera com garrote; esclerose e embolização são problemáticas na mão.",
+   "acesso": "gratis",
+   "minutos": 55,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-arterial-da-mao",
+     "titulo": "Anatomia arterial da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "iatrogenia-e-o-teste-de-allen",
+     "titulo": "Iatrogenia e o teste de ALLEN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avaliacao-do-paciente-com-isquemia",
+     "titulo": "Avaliação do paciente com isquemia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "de-hunter-a-koman-a-historia-em-um-quadro",
+     "titulo": "De HUNTER a KOMAN: a história em um quadro",
+     "radar": "fundamento"
+    },
+    {
+     "id": "trauma-arterial-aberto",
+     "titulo": "Trauma arterial aberto",
+     "radar": "clinico"
+    },
+    {
+     "id": "trauma-fechado-trombose-da-ulnar-e-o-martelo-hip",
+     "titulo": "Trauma fechado: trombose da ulnar e o martelo hipotenar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "trombose-da-arteria-radial",
+     "titulo": "Trombose da artéria radial",
+     "radar": "clinico"
+    },
+    {
+     "id": "doenca-vascular-oclusiva-diabetes-insuficiencia-",
+     "titulo": "Doença vascular oclusiva: diabetes, insuficiência renal e as pontes longas",
+     "radar": "clinico"
+    },
+    {
+     "id": "vasoespasmo-e-raynaud",
+     "titulo": "Vasoespasmo e RAYNAUD",
+     "radar": "clinico"
+    },
+    {
+     "id": "aneurismas-do-antebraco-e-da-mao",
+     "titulo": "Aneurismas do antebraço e da mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "trombose-venosa",
+     "titulo": "Trombose venosa",
+     "radar": "fundamento"
+    },
+    {
+     "id": "malformacoes-vasculares-e-hemangioma",
+     "titulo": "Malformações vasculares e hemangioma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumor-glomico",
+     "titulo": "Tumor glômico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revisao-final",
+     "titulo": "Revisão final",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1282",
+    "mao-0632",
+    "mao-1427",
+    "mao-1330",
+    "mao-1570",
+    "mao-0967",
+    "mao-0413",
+    "mao-1842",
+    "mao-1869",
+    "mao-0255",
+    "mao-0468",
+    "mao-1880",
+    "mao-1828",
+    "mao-1128",
+    "mao-0725",
+    "mao-1203",
+    "mao-0638",
+    "mao-1866"
+   ],
+   "treino": [
+    "mao-2344",
+    "mao-2371",
+    "mao-2610",
+    "mao-3811",
+    "mao-3809",
+    "mao-3812",
+    "mao-3813",
+    "mao-3810"
+   ],
+   "subtemas": [
+    "Outros temas da mão"
+   ]
+  },
+  {
    "id": "green-dupuytren",
    "versao": 3,
    "titulo": "Doença de DUPUYTREN",
