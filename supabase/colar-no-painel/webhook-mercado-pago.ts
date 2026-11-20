@@ -27,6 +27,10 @@ async function banco(caminho, init = {}) {
 }
 
 // supabase/functions/_shared/cobranca-mercado-pago.ts
+function assinaturaDoPagamento(pagamento) {
+  const id = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id ?? pagamento.point_of_interaction?.transaction_data?.subscription_id;
+  return id ? String(id) : null;
+}
 async function consultarMercadoPago(token, caminho) {
   const resposta = await fetch(`https://api.mercadopago.com/${caminho}`, {
     headers: { Authorization: `Bearer ${token}` }
@@ -36,6 +40,17 @@ async function consultarMercadoPago(token, caminho) {
 }
 var consultarFatura = (token, id) => consultarMercadoPago(token, `authorized_payments/${encodeURIComponent(id)}`);
 var consultarPagamento = (token, id) => consultarMercadoPago(token, `v1/payments/${encodeURIComponent(id)}`);
+async function buscarUltimaFaturaAprovada(token, preapprovalId) {
+  const busca = await consultarMercadoPago(
+    token,
+    `authorized_payments/search?preapproval_id=${encodeURIComponent(preapprovalId)}`
+  );
+  const faturas = (busca.results ?? []).filter(
+    (fatura) => fatura.preapproval_id === preapprovalId && fatura.payment?.id && fatura.payment.status === "approved"
+  );
+  faturas.sort((a, b) => String(b.debit_date ?? b.date_created ?? "").localeCompare(String(a.debit_date ?? a.date_created ?? "")));
+  return faturas[0] ?? null;
+}
 
 // supabase/functions/_shared/cartas.ts
 var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "pagamento_aprovado", "obrigado_tempo"];
@@ -218,7 +233,7 @@ function alteracaoDaCobranca(status, pagamento, statusAtual) {
   return null;
 }
 async function assinaturaPorExterno(idExterno) {
-  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status,id_usuario,plano,inicio_periodo,fim_periodo,ultima_cobranca_id`);
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status,id_usuario,plano,inicio_periodo,fim_periodo,ultima_cobranca_id,ultima_cobranca_em`);
   if (!resposta.ok) throw new Error("consulta_assinatura_falhou");
   const assinaturas = await resposta.json();
   return assinaturas[0] ?? null;
@@ -226,7 +241,7 @@ async function assinaturaPorExterno(idExterno) {
 async function cartaDaCobranca(status, pagamento, antes) {
   if (!antes.id_usuario) return;
   if (status === "approved") {
-    const depois = await assinaturaPorExterno(String(pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id ?? "")).catch(() => null);
+    const depois = await assinaturaPorExterno(assinaturaDoPagamento(pagamento) ?? "").catch(() => null);
     await pedirAutomaticoServidor(antes.id_usuario, "pagamento_aprovado", {
       referencia: `pg:${pagamento.id}`,
       plano: depois?.plano ?? antes.plano,
@@ -356,7 +371,7 @@ async function processarPagamento(idRecurso, idEvento) {
     await marcarEvento(idEvento, "processado");
     return cartaDoPix(resultado.status, resultado.pedido, pagamento).catch(() => void 0);
   }
-  const idAssinatura = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id;
+  const idAssinatura = assinaturaDoPagamento(pagamento);
   if (!idAssinatura) return marcarEvento(idEvento, "ignorado");
   await sincronizarPreapproval(String(idAssinatura));
   await aplicarCobranca(String(idAssinatura), pagamento, idEvento);
@@ -370,9 +385,35 @@ async function processarPagamentoAutorizado(idRecurso, idEvento) {
   await sincronizarPreapproval(fatura.preapproval_id);
   await aplicarCobranca(fatura.preapproval_id, pagamento, idEvento);
 }
+async function conciliarCobrancaDoCartao(idAssinatura, token) {
+  const fatura = await buscarUltimaFaturaAprovada(token, idAssinatura);
+  if (!fatura?.payment?.id) return "sem_cobranca";
+  const pagamento = await consultarPagamento(token, String(fatura.payment.id));
+  if (String(pagamento.id) !== String(fatura.payment.id) || pagamento.status !== "approved" || !pagamento.date_approved) return "sem_cobranca";
+  const atual = await assinaturaPorExterno(idAssinatura);
+  if (!atual) return "sem_assinatura";
+  if (atual.ultima_cobranca_id === String(pagamento.id)) return "em_dia";
+  if (atual.ultima_cobranca_em && Date.parse(atual.ultima_cobranca_em) >= Date.parse(pagamento.date_approved)) return "em_dia";
+  const alteracao = alteracaoDaCobranca("approved", pagamento, atual.status);
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idAssinatura)}`, { method: "PATCH", body: JSON.stringify(alteracao) });
+  if (!resposta.ok) throw new Error("atualizacao_cobranca_falhou");
+  await anotarMotivo(idAssinatura, "approved", pagamento.status_detail);
+  if (Date.now() - Date.parse(pagamento.date_approved) < 2 * 864e5) await cartaDaCobranca("approved", pagamento, atual).catch(() => void 0);
+  return "gravada";
+}
+var esperar = (ms) => new Promise((r) => setTimeout(r, ms));
 async function processarPreapproval(idRecurso, idEvento) {
   const statusMercadoPago = await sincronizarPreapproval(idRecurso);
   await marcarEvento(idEvento, statusMercadoPago === "pending" || statusMercadoPago === "in_process" ? "ignorado" : "processado");
+  if (statusMercadoPago !== "authorized") return;
+  const token = Deno.env.get("MERCADO_PAGO_ACCESS_TOKEN");
+  try {
+    if (await conciliarCobrancaDoCartao(idRecurso, token) === "sem_cobranca") {
+      await esperar(6e4);
+      await conciliarCobrancaDoCartao(idRecurso, token);
+    }
+  } catch {
+  }
 }
 async function processar(idRecurso, idEvento, tipo) {
   try {
@@ -384,7 +425,7 @@ async function processar(idRecurso, idEvento, tipo) {
     await marcarEvento(idEvento, "erro", erro);
   }
 }
-async function reprocessarComoAdmin(req) {
+async function exigirAdministrador(req) {
   let usuario;
   try {
     usuario = await usuarioDoPedido(req);
@@ -395,6 +436,33 @@ async function reprocessarComoAdmin(req) {
   if (!autorizacao.ok) return json({ erro: "autorizacao_indisponivel" }, 503, req);
   const administradores = await autorizacao.json();
   if (administradores.length !== 1) return json({ erro: "acesso_negado" }, 403, req);
+  return null;
+}
+async function conciliarCartoesComoAdmin(req) {
+  const recusa = await exigirAdministrador(req);
+  if (recusa) return recusa;
+  const token = Deno.env.get("MERCADO_PAGO_ACCESS_TOKEN");
+  const limite = new Date(Date.now() - 20 * 864e5).toISOString();
+  const consulta = await banco(`assinaturas?status=in.(ativa,pendente,falha_pagamento,pausada,cancelada)&or=(ultima_cobranca_em.is.null,ultima_cobranca_em.lt.${encodeURIComponent(limite)})&select=id_externo&order=atualizada_em.desc&limit=200`);
+  if (!consulta.ok) return json({ erro: "consulta_assinaturas_falhou" }, 503, req);
+  const linhas = await consulta.json();
+  const ids = [...new Set(linhas.map((l) => l.id_externo ?? "").filter((id) => /^[0-9a-f]{32}$/i.test(id)))];
+  const contagem = { gravada: 0, em_dia: 0, sem_cobranca: 0, sem_assinatura: 0, erro: 0 };
+  const fila = [...ids];
+  await Promise.all(Array.from({ length: 4 }, async () => {
+    for (let id = fila.shift(); id; id = fila.shift()) {
+      try {
+        contagem[await conciliarCobrancaDoCartao(id, token)]++;
+      } catch {
+        contagem.erro++;
+      }
+    }
+  }));
+  return json({ conferidas: ids.length, ...contagem }, 200, req);
+}
+async function reprocessarComoAdmin(req) {
+  const recusa = await exigirAdministrador(req);
+  if (recusa) return recusa;
   const pedido = await req.json().catch(() => ({}));
   if (!Number.isSafeInteger(pedido.id_evento) || Number(pedido.id_evento) <= 0) return json({ erro: "evento_invalido" }, 400, req);
   const id = Number(pedido.id_evento);
@@ -417,6 +485,7 @@ Deno.serve(async (req) => {
   if (req.method !== "POST") return json({}, 405);
   if (Deno.env.get("MERCADO_PAGO_INTEGRACAO_VALIDADA") !== "true") return json({ erro: "integracao_nao_validada" }, 503);
   if (new URL(req.url).searchParams.get("acao") === "reprocessar") return reprocessarComoAdmin(req);
+  if (new URL(req.url).searchParams.get("acao") === "conciliar_cartoes") return conciliarCartoesComoAdmin(req);
   const segredo = Deno.env.get("MERCADO_PAGO_WEBHOOK_SECRET") ?? "";
   const assinatura = req.headers.get("x-signature") ?? "", requestId = req.headers.get("x-request-id") ?? "";
   const partes = Object.fromEntries(assinatura.split(",").map((p) => p.trim().split("=", 2)));

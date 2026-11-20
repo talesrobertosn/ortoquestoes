@@ -13,7 +13,8 @@ export interface PagamentoMercadoPago {
   transaction_amount?: number
   currency_id?: string
   live_mode?: boolean
-  point_of_interaction?: { transaction_data?: { ticket_url?: string } }
+  /** Na cobrança de assinatura no cartão, o id da assinatura vem em transaction_data.subscription_id. */
+  point_of_interaction?: { type?: string; transaction_data?: { ticket_url?: string; subscription_id?: string } }
   status?: string
   /** Motivo da situação (na recusa: cc_rejected_insufficient_amount, cc_rejected_call_for_authorize…). */
   status_detail?: string
@@ -21,6 +22,18 @@ export interface PagamentoMercadoPago {
   preapproval_id?: string
   subscription_id?: string
   metadata?: { preapproval_id?: string }
+}
+
+/**
+ * De qual assinatura no cartão é este pagamento. O Mercado Pago não manda o id sempre no mesmo lugar:
+ * nas cobranças de assinatura (primeira e renovações) ele costuma vir só em
+ * point_of_interaction.transaction_data.subscription_id; sem ler ali, o aviso "payment" era ignorado e a
+ * cobrança nunca ficava gravada (20/11/2026: "Recebido" do painel em R$ 0,00 com assinatura anual paga).
+ */
+export function assinaturaDoPagamento(pagamento: PagamentoMercadoPago): string | null {
+  const id = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id
+    ?? pagamento.point_of_interaction?.transaction_data?.subscription_id
+  return id ? String(id) : null
 }
 
 export async function consultarMercadoPago<T>(token: string, caminho: string): Promise<T> {
