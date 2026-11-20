@@ -9,6 +9,7 @@ import { EVENTO_LIDOS_ADMIN, usarLidos } from '../../componentes/admin/lidos'
 import { PLANO_CORTESIA } from '../../componentes/admin/rotulos'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { indexarSinais, type SinalUsuario, type VisitaIndicacao } from '../../componentes/admin/sinais'
+import { conciliarCartoes } from '../../componentes/admin/conciliarCartoes'
 import { CINCO_MIN, recarregarConsultasAtivas, rpcInexistente, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
 import type { AssinaturaBase, CobrancaReal } from '../../componentes/admin/receita'
 import type { Parte } from '../rotas'
@@ -114,6 +115,16 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const acessosQ = usarRpc<Array<{id_usuario:string;resumo:ResumoAcesso}>>(conta,'listar_resumos_acesso_admin',{}, {ativo:COM_USUARIOS.includes(parte)||semContadores,atualizarCada:CINCO_MIN})
   const acessos = useMemo(()=>new Map((acessosQ.dados??[]).map(l=>[l.id_usuario,l.resumo])),[acessosQ.dados])
   const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: COM_COBRANCAS.includes(parte) })
+  // Cobranças do cartão que o aviso do Mercado Pago não gravou (20/11/2026): conferidas ao abrir uma tela com
+  // dinheiro, no máximo a cada 15 minutos; se alguma for gravada, as cobranças e as assinaturas são relidas.
+  const comCobrancas = COM_COBRANCAS.includes(parte)
+  const { recarregar: relerCobrancas } = cobrancasQ, { recarregar: relerAssinaturas } = assinaturasQ
+  useEffect(() => {
+    if (!conta || !comCobrancas) return
+    let vivo = true
+    void conciliarCartoes().then(r => { if (vivo && r && r.gravada > 0) void Promise.all([relerCobrancas(), relerAssinaturas()]) })
+    return () => { vivo = false }
+  }, [conta, comCobrancas, relerCobrancas, relerAssinaturas])
   const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const indicacoesQ = usarRpc<VisitaIndicacao[]>(conta, 'visitas_indicacao_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const lidosPagamentoBase = usarLidos('pagamento')

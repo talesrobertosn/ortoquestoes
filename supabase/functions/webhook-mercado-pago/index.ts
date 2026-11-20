@@ -1,5 +1,5 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
-import { consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
+import { assinaturaDoPagamento, buscarUltimaFaturaAprovada, consultarFatura, consultarPagamento, consultarMercadoPago, type PagamentoMercadoPago } from '../_shared/cobranca-mercado-pago.ts'
 import { alertarAdministradores, pedirAutomaticoServidor } from '../_shared/email.ts'
 import { sincronizarPix, type PedidoPix } from '../_shared/pix.ts'
 import { PRECOS, valoresAceitos, type IdPlano } from '../_shared/precos.ts'
@@ -47,9 +47,9 @@ function alteracaoDaCobranca(status: string, pagamento: PagamentoMercadoPago, st
   return null
 }
 
-interface AssinaturaResumo { id: string; status: string; id_usuario: string | null; plano: string | null; inicio_periodo: string | null; fim_periodo: string | null; ultima_cobranca_id: string | null }
+interface AssinaturaResumo { id: string; status: string; id_usuario: string | null; plano: string | null; inicio_periodo: string | null; fim_periodo: string | null; ultima_cobranca_id: string | null; ultima_cobranca_em?: string | null }
 async function assinaturaPorExterno(idExterno: string): Promise<AssinaturaResumo | null> {
-  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status,id_usuario,plano,inicio_periodo,fim_periodo,ultima_cobranca_id`)
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idExterno)}&select=id,status,id_usuario,plano,inicio_periodo,fim_periodo,ultima_cobranca_id,ultima_cobranca_em`)
   if (!resposta.ok) throw new Error('consulta_assinatura_falhou')
   const assinaturas = await resposta.json() as AssinaturaResumo[]
   return assinaturas[0] ?? null
@@ -65,7 +65,7 @@ async function assinaturaPorExterno(idExterno: string): Promise<AssinaturaResumo
 async function cartaDaCobranca(status: string, pagamento: PagamentoMercadoPago, antes: AssinaturaResumo) {
   if (!antes.id_usuario) return
   if (status === 'approved') {
-    const depois = await assinaturaPorExterno(String(pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id ?? '')).catch(() => null)
+    const depois = await assinaturaPorExterno(assinaturaDoPagamento(pagamento) ?? '').catch(() => null)
     await pedirAutomaticoServidor(antes.id_usuario, 'pagamento_aprovado', {
       referencia: `pg:${pagamento.id}`, plano: depois?.plano ?? antes.plano, inicio_periodo: depois?.inicio_periodo ?? antes.inicio_periodo,
       fim_periodo: depois?.fim_periodo ?? antes.fim_periodo, meio: pagamento.payment_method_id === 'pix' ? 'pix' : 'cartao',
@@ -203,7 +203,7 @@ async function processarPagamento(idRecurso: string, idEvento: string) {
     await marcarEvento(idEvento, 'processado')
     return cartaDoPix(resultado.status, resultado.pedido, pagamento).catch(() => undefined)
   }
-  const idAssinatura = pagamento.preapproval_id ?? pagamento.metadata?.preapproval_id ?? pagamento.subscription_id
+  const idAssinatura = assinaturaDoPagamento(pagamento)
   if (!idAssinatura) return marcarEvento(idEvento, 'ignorado')
   await sincronizarPreapproval(String(idAssinatura))
   await aplicarCobranca(String(idAssinatura), pagamento, idEvento)
@@ -219,9 +219,48 @@ async function processarPagamentoAutorizado(idRecurso: string, idEvento: string)
   await aplicarCobranca(fatura.preapproval_id, pagamento, idEvento)
 }
 
+/**
+ * Conciliação da cobrança do cartão (20/11/2026). Busca no Mercado Pago a última fatura aprovada da
+ * assinatura e grava ultima_cobranca_id/ultima_cobranca_em quando o banco ainda não tem essa cobrança
+ * (ou tem uma mais antiga). É o que alimenta o "Recebido" do painel, a "Última cobrança paga" da ficha
+ * e o recibo da pessoa. Não cobra nem reembolsa nada: só lê o Mercado Pago e grava o que já aconteceu.
+ * Nunca volta para uma cobrança mais antiga que a gravada.
+ */
+type ResultadoConciliacao = 'gravada' | 'em_dia' | 'sem_cobranca' | 'sem_assinatura'
+async function conciliarCobrancaDoCartao(idAssinatura: string, token: string): Promise<ResultadoConciliacao> {
+  const fatura = await buscarUltimaFaturaAprovada(token, idAssinatura)
+  if (!fatura?.payment?.id) return 'sem_cobranca'
+  const pagamento = await consultarPagamento(token, String(fatura.payment.id))
+  if (String(pagamento.id) !== String(fatura.payment.id) || pagamento.status !== 'approved' || !pagamento.date_approved) return 'sem_cobranca'
+  const atual = await assinaturaPorExterno(idAssinatura)
+  if (!atual) return 'sem_assinatura'
+  if (atual.ultima_cobranca_id === String(pagamento.id)) return 'em_dia'
+  if (atual.ultima_cobranca_em && Date.parse(atual.ultima_cobranca_em) >= Date.parse(pagamento.date_approved)) return 'em_dia'
+  const alteracao = alteracaoDaCobranca('approved', pagamento, atual.status)!
+  const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idAssinatura)}`, { method: 'PATCH', body: JSON.stringify(alteracao) })
+  if (!resposta.ok) throw new Error('atualizacao_cobranca_falhou')
+  await anotarMotivo(idAssinatura, 'approved', pagamento.status_detail)
+  // Recibo só para cobrança recente: uma cobrança antiga achada agora já não pede e-mail.
+  if (Date.now() - Date.parse(pagamento.date_approved) < 2 * 86_400_000) await cartaDaCobranca('approved', pagamento, atual).catch(() => undefined)
+  return 'gravada'
+}
+
+const esperar = (ms: number) => new Promise((r) => setTimeout(r, ms))
+
 async function processarPreapproval(idRecurso: string, idEvento: string) {
   const statusMercadoPago = await sincronizarPreapproval(idRecurso)
   await marcarEvento(idEvento, statusMercadoPago === 'pending' || statusMercadoPago === 'in_process' ? 'ignorado' : 'processado')
+  // A assinatura autorizada já tem (ou terá em instantes) a cobrança aprovada. O aviso dessa cobrança nem
+  // sempre chega ligado à assinatura, então ela é conciliada aqui também; se ainda não houver fatura
+  // aprovada, tenta de novo uma vez depois de um minuto. Falha aqui não muda o resultado do aviso.
+  if (statusMercadoPago !== 'authorized') return
+  const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
+  try {
+    if (await conciliarCobrancaDoCartao(idRecurso, token) === 'sem_cobranca') {
+      await esperar(60_000)
+      await conciliarCobrancaDoCartao(idRecurso, token)
+    }
+  } catch { /* a conciliação do painel (acao=conciliar_cartoes) cobre depois */ }
 }
 
 async function processar(idRecurso: string, idEvento: string, tipo: string) {
@@ -237,7 +276,7 @@ async function processar(idRecurso: string, idEvento: string, tipo: string) {
 
 // Esta rota administrativa não substitui a assinatura HMAC dos webhooks do
 // provedor: só reexecuta eventos já recebidos e gravados após HMAC válido.
-async function reprocessarComoAdmin(req: Request) {
+async function exigirAdministrador(req: Request): Promise<Response | null> {
   let usuario: { id: string }
   try { usuario = await usuarioDoPedido(req) }
   catch { return json({ erro: 'autenticacao_necessaria' }, 401, req) }
@@ -245,6 +284,38 @@ async function reprocessarComoAdmin(req: Request) {
   if (!autorizacao.ok) return json({ erro: 'autorizacao_indisponivel' }, 503, req)
   const administradores = await autorizacao.json() as Array<{ id_usuario: string }>
   if (administradores.length !== 1) return json({ erro: 'acesso_negado' }, 403, req)
+  return null
+}
+
+/**
+ * Conciliar as cobranças do cartão (20/11/2026), pedido pelo painel ao abrir o Agora e o Financeiro.
+ * Passa pelas assinaturas no cartão que podem ter cobrança nova sem gravação: sem nenhuma cobrança
+ * gravada, ou com a última gravada há mais de 20 dias (a renovação mais curta é mensal). Grava a
+ * primeira cobrança e as renovações que o Mercado Pago já aprovou. Só leitura no Mercado Pago.
+ */
+async function conciliarCartoesComoAdmin(req: Request) {
+  const recusa = await exigirAdministrador(req)
+  if (recusa) return recusa
+  const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
+  const limite = new Date(Date.now() - 20 * 86_400_000).toISOString()
+  const consulta = await banco(`assinaturas?status=in.(ativa,pendente,falha_pagamento,pausada,cancelada)&or=(ultima_cobranca_em.is.null,ultima_cobranca_em.lt.${encodeURIComponent(limite)})&select=id_externo&order=atualizada_em.desc&limit=200`)
+  if (!consulta.ok) return json({ erro: 'consulta_assinaturas_falhou' }, 503, req)
+  const linhas = await consulta.json() as Array<{ id_externo: string | null }>
+  // Só as recorrências do Mercado Pago (id de 32 caracteres hexadecimais); Pix e cortesias ficam de fora.
+  const ids = [...new Set(linhas.map((l) => l.id_externo ?? '').filter((id) => /^[0-9a-f]{32}$/i.test(id)))]
+  const contagem: Record<ResultadoConciliacao | 'erro', number> = { gravada: 0, em_dia: 0, sem_cobranca: 0, sem_assinatura: 0, erro: 0 }
+  const fila = [...ids]
+  await Promise.all(Array.from({ length: 4 }, async () => {
+    for (let id = fila.shift(); id; id = fila.shift()) {
+      try { contagem[await conciliarCobrancaDoCartao(id, token)]++ } catch { contagem.erro++ }
+    }
+  }))
+  return json({ conferidas: ids.length, ...contagem }, 200, req)
+}
+
+async function reprocessarComoAdmin(req: Request) {
+  const recusa = await exigirAdministrador(req)
+  if (recusa) return recusa
   const pedido = await req.json().catch(() => ({})) as { id_evento?: unknown }
   if (!Number.isSafeInteger(pedido.id_evento) || Number(pedido.id_evento) <= 0) return json({ erro: 'evento_invalido' }, 400, req)
   const id = Number(pedido.id_evento)
@@ -267,6 +338,7 @@ Deno.serve(async (req) => {
   if (req.method !== 'POST') return json({}, 405)
   if (Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') return json({ erro: 'integracao_nao_validada' }, 503)
   if (new URL(req.url).searchParams.get('acao') === 'reprocessar') return reprocessarComoAdmin(req)
+  if (new URL(req.url).searchParams.get('acao') === 'conciliar_cartoes') return conciliarCartoesComoAdmin(req)
   const segredo = Deno.env.get('MERCADO_PAGO_WEBHOOK_SECRET') ?? ''
   const assinatura = req.headers.get('x-signature') ?? '', requestId = req.headers.get('x-request-id') ?? ''
   const partes = Object.fromEntries(assinatura.split(',').map((p) => p.trim().split('=', 2)))
