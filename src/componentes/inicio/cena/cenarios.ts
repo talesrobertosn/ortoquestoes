@@ -1,5 +1,6 @@
 import type { IdLinhaGato } from '../../mascote/sprites'
 import type { IdComportamento } from '../../mascote/comportamentos'
+import { MODO_NATAL, modoNatalAtivo } from '../../../natal/modoNatal'
 
 /**
  * Os cenários do topo da página inicial (01/11/2026, pedido do Tales: "um cenário diferente para ficar trocando",
@@ -40,6 +41,12 @@ export type Cenario = {
    * se tiver `arquivo`, troca devagar a pintura pela versão nevada (`${arquivo}-${periodo}[-960].webp`).
    */
   neve?: { arquivo?: string }
+  /**
+   * Cenário de Natal (vale, sala do chalé): some do rodízio quando a chave geral do modo Natal está desligada.
+   * Cenário de inverno: entra no topo durante o modo Natal (src/natal/modoNatal.ts), quando só os de inverno rodam.
+   */
+  natal?: true
+  inverno?: true
   /** As atividades do esqueleto neste cenário (no lugar do sorteio de sempre): ex. sentado no banco, no vale de Natal. */
   repertorio?: readonly IdComportamento[]
   /** O trenzinho de montanha que atravessa o fundo do vale (pontos de começo e de fim, em pixels da pintura). */
@@ -72,7 +79,7 @@ export const CENARIOS: readonly Cenario[] = [
     coruja: [{ x: 320, y: 95 }, { x: 358, y: 96 }, { x: 342, y: 160 }, { x: 186, y: 135 }, { x: 177, y: 111 }],
   },
   {
-    id: 'neve', arquivo: 'cena-neve', particulas: 'neve', neve: {},
+    id: 'neve', arquivo: 'cena-neve', particulas: 'neve', neve: {}, inverno: true,
     gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 168, y: 170, pose: 'repouso' }, { x: 263, y: 167, pose: 'sentado' }, { x: 301, y: 176, pose: 'observando' }, { x: 226, y: 177, pose: 'repouso' }],
     coruja: [{ x: 201, y: 134 }, { x: 164, y: 154 }, { x: 356, y: 165 }, { x: 147, y: 104 }, { x: 191, y: 104 }],
   },
@@ -84,7 +91,7 @@ export const CENARIOS: readonly Cenario[] = [
   },
   {
     // A Praça do Pinheiro (10/11/2026, scripts/cenarios/inicio_praca.py): a praça de pedra da vila, com um toque de Natal.
-    id: 'praca', arquivo: 'cena-praca', particulas: 'vagalumes',
+    id: 'praca', arquivo: 'cena-praca', particulas: 'vagalumes', inverno: true,
     gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 174, y: 139, pose: 'sentado' }, { x: 262, y: 170, pose: 'repouso' }, { x: 330, y: 164, pose: 'observando' }, { x: 204, y: 174, pose: 'repouso' }],
     // O telhadinho do poço, o encosto do banco, o caixote, o presente e a pilha de lenha.
     coruja: [{ x: 166, y: 102 }, { x: 198, y: 150 }, { x: 213, y: 114 }, { x: 396, y: 150 }, { x: 308, y: 162 }],
@@ -93,7 +100,7 @@ export const CENARIOS: readonly Cenario[] = [
   {
     // Natal no Vale (12/11/2026, scripts/cenarios/inicio_vale.py): o terraço de um chalé suíço no alto do vale, com a
     // cachoeira, a prefeitura com a torre do relógio lá embaixo e o trem de montanha. Só na época do Natal; o esqueleto fica sentado no banco.
-    id: 'vale', arquivo: 'cena-vale', particulas: 'neve',
+    id: 'vale', arquivo: 'cena-vale', particulas: 'neve', natal: true, inverno: true,
     epoca: { de: [11, 10], ate: [1, 6] },
     neve: { arquivo: 'cena-vale-nevado' },
     repertorio: ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'],
@@ -105,7 +112,7 @@ export const CENARIOS: readonly Cenario[] = [
   },
   {
     // O interior do mesmo chalé: a vila do vale continua visível pela janela.
-    id: 'sala_natal', arquivo: 'cena-sala-natal', particulas: 'faiscas',
+    id: 'sala_natal', arquivo: 'cena-sala-natal', particulas: 'faiscas', natal: true, inverno: true,
     epoca: { de: [11, 10], ate: [1, 6] },
     fogo: [298, 146], mascote: { x: 333, y: 100, w: 46, h: 67 },
     repertorio: ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'],
@@ -139,8 +146,13 @@ export function naEpoca(c: Cenario, mes: number, dia: number): boolean {
 /** Os cenários do rodízio de hoje (os sem época e os que estão na época deles). */
 export function cenariosDoDia(agora = new Date(), lista: readonly Cenario[] = CENARIOS): Cenario[] {
   const { mes, diaDoMes } = horaDeBrasilia(agora)
-  const hoje = lista.filter((c) => naEpoca(c, mes, diaDoMes))
-  return hoje.length ? hoje : [...lista]
+  // Chave geral do modo Natal desligada: os cenários de Natal saem do rodízio, mesmo na época deles.
+  const base = MODO_NATAL.ligado ? lista : lista.filter((c) => !c.natal)
+  // Modo Natal no ar (1/12 a 6/1): só os cenários de inverno (vale, sala do chalé, praça do pinheiro, neve).
+  const inverno = modoNatalAtivo(agora) ? base.filter((c) => c.inverno) : []
+  if (inverno.length) return inverno
+  const hoje = base.filter((c) => naEpoca(c, mes, diaDoMes))
+  return hoje.length ? hoje : [...base]
 }
 
 /** Cada cenário fica 2 horas no topo (Tales, 12/11/2026: "a cada 2 horas um diferente, sem repetir até irem todos"). */

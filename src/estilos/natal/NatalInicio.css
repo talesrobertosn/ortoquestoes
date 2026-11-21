@@ -1,0 +1,105 @@
+/*
+ * Modo Natal na página inicial (docs/design/MODO-NATAL.md, etapa 1). Arte: scripts/natal/enfeites.py (2 px por pixel).
+ * Tudo o que acende tem a sua camada de luz pintada, que cai no que está em volta: o festão clareia o cenário embaixo
+ * dele, as lâmpadas do pisca-pisca jogam um halo e uma poça colorida na faixa de baixo, a árvore espalha luz quente
+ * na trilha e na barra, a guirlanda brilha. Animação só de opacity e transform; com "menos animação", tudo aceso e parado.
+ * As regras de páginas (barra, faixas) ficam sob [data-natal="sim"], então nada de Natal desce com o modo desligado.
+ */
+
+/* ── O festão na borda de cima do topo ── */
+.natal-festao { position: absolute; z-index: 1; top: 0; left: 0; right: 0; height: 100px; pointer-events: none;
+  background: url('/pixel/natal/festao-miolo.png') repeat-x 30px 0 / 256px 100px; image-rendering: pixelated; }
+.natal-festao__luzes { position: absolute; inset: 0; background: url('/pixel/natal/festao-luzes-a.png') repeat-x 30px 0 / 256px 100px;
+  image-rendering: pixelated; mix-blend-mode: screen; animation: natal-piscar 3.2s ease-in-out infinite; }
+.natal-festao__luzes--b { background-image: url('/pixel/natal/festao-luzes-b.png'); animation-delay: -1.6s; }
+.natal-festao__ponta { position: absolute; top: 0; left: 0; width: 60px; height: 68px; background: url('/pixel/natal/festao-ponta.png') no-repeat 0 0 / 60px 68px;
+  image-rendering: pixelated; }
+.natal-festao__ponta--dir { left: auto; right: 0; transform: scaleX(-1); }
+@keyframes natal-piscar { 0%, 38% { opacity: 1; } 55%, 85% { opacity: 0.18; } 100% { opacity: 1; } }
+
+/* O texto do topo desce um pouco para o festão não encostar na data. */
+[data-natal="sim"] .jn-heroi { padding-top: calc(clamp(1.25rem, 2.4vw, 2.25rem) + 1.9rem); }
+
+/* ── A árvore: pé na barra de atalhos, copa por cima da trilha ── */
+[data-natal="sim"] .jn-trilha { z-index: 4; }
+@media (min-width: 60.0625rem) {
+  [data-natal="sim"] .jn-trilha { grid-template-columns: auto 112px minmax(0, 1fr) auto; }
+}
+.natal-arvore { position: relative; align-self: stretch; width: 112px; pointer-events: none; }
+/* O pé desce pelo respiro de baixo da trilha até a borda da barra de atalhos (e afunda um pouco nela). */
+.natal-arvore__img { position: absolute; left: 0; bottom: calc(-1.2rem - var(--natal-vao, 1rem) - 8px); width: 112px; height: 172px;
+  background: url('/pixel/natal/arvore.png') no-repeat 0 0 / 112px 172px; image-rendering: pixelated; }
+/* A luz da árvore: atrás dela, espalhada pela trilha escura e pelo topo da barra. */
+.natal-arvore__img::before { content: ""; position: absolute; z-index: -1; left: -64px; top: -48px; width: 240px; height: 220px;
+  background: url('/pixel/natal/arvore-luz.png') no-repeat 0 0 / 240px 220px; image-rendering: pixelated; mix-blend-mode: screen;
+  animation: natal-respirar 4.5s ease-in-out infinite; }
+.natal-arvore__estrela { position: absolute; left: 30px; top: -12px; width: 52px; height: 52px;
+  background: url('/pixel/natal/arvore-estrela.png') no-repeat 0 0 / 52px 52px; image-rendering: pixelated; mix-blend-mode: screen;
+  animation: natal-respirar 2.6s ease-in-out infinite; }
+@keyframes natal-respirar { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
+@media (max-width: 60rem) {
+  /* No celular a trilha empilha: a árvore fica no canto de cima à direita, subindo um pouco para o topo, e o texto do
+     número de dias quebra antes dela. */
+  [data-natal="sim"] .jn-trilha__numero { padding-right: 72px; }
+  .natal-arvore { position: absolute; top: -1.6rem; right: 0.5rem; width: 67px; height: 103px; align-self: auto; }
+  .natal-arvore__img { bottom: auto; top: 0; transform: scale(0.6); transform-origin: 0 0; }
+}
+
+/* ── A barra de atalhos: neve em cima, guirlanda no canto, pisca-pisca embaixo ── */
+[data-natal="sim"] .jn-atalhos { position: relative; z-index: 3; margin-bottom: 1.6rem; }
+[data-natal="sim"] .jn-atalhos ul { position: relative; }
+[data-natal="sim"] .jn-atalhos ul::before { content: ""; position: absolute; left: 10px; right: 10px; top: -13px; height: 24px; pointer-events: none;
+  background: url('/pixel/natal/neve-borda.png') repeat-x 0 0 / 128px 24px; image-rendering: pixelated; }
+
+.natal-guirlanda { position: absolute; z-index: 2; top: -62px; right: -64px; width: 120px; height: 152px; pointer-events: none;
+  background: url('/pixel/natal/guirlanda.png') no-repeat 0 0 / 120px 152px; image-rendering: pixelated; }
+.natal-guirlanda::before { content: ""; position: absolute; inset: 0; background: url('/pixel/natal/guirlanda-luz.png') no-repeat 0 0 / 120px 152px;
+  image-rendering: pixelated; mix-blend-mode: screen; animation: natal-respirar 3.4s ease-in-out infinite; }
+
+.natal-pisca { position: absolute; z-index: 1; top: calc(100% - 12px); left: 0; right: 0; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr)); gap: 0.4rem; padding: 0 0.5rem; pointer-events: none; }
+.natal-pisca__barriga { position: relative; height: 36px; background: url('/pixel/natal/pisca-fio.png') no-repeat center top / 100% 36px; }
+.natal-pisca__lampada { position: absolute; left: 50%; top: 16px; width: 24px; height: 36px; margin-left: -12px;
+  background: url('/pixel/natal/lampadas.png') no-repeat -24px calc(var(--cor) * -36px) / 48px 180px; image-rendering: pixelated;
+  transform-origin: 50% 0; animation: natal-balanco 4.2s ease-in-out infinite; animation-delay: var(--atraso, 0s); }
+/* O halo em volta da lâmpada e a poça de luz colorida na superfície logo abaixo dela. */
+.natal-pisca__brilho { position: absolute; z-index: -1; left: 50%; top: 24px; width: 112px; height: 112px; margin: -56px 0 0 -56px;
+  background: url('/pixel/natal/lampadas-brilho.png') no-repeat calc(var(--cor) * -112px) 0 / 560px 112px; image-rendering: pixelated;
+  animation: natal-piscar 3.6s ease-in-out infinite; animation-delay: var(--atraso, 0s); }
+.natal-pisca__brilho::after { content: ""; position: absolute; left: 8px; top: 74px; width: 96px; height: 24px;
+  background: url('/pixel/natal/lampadas-reflexo.png') no-repeat calc(var(--cor) * -96px) 0 / 480px 24px; image-rendering: pixelated; }
+@keyframes natal-balanco { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes natal-balanco-forte { 0%, 100% { transform: rotate(-14deg); } 50% { transform: rotate(14deg); } }
+
+/* Passar o mouse (ou o foco do teclado) num atalho acende a lâmpada dele com força e ela balança. */
+.jn-atalhos:has(li:nth-child(1) .jn-atalho:is(:hover, :focus-visible)) .natal-pisca__barriga:nth-child(1),
+.jn-atalhos:has(li:nth-child(2) .jn-atalho:is(:hover, :focus-visible)) .natal-pisca__barriga:nth-child(2),
+.jn-atalhos:has(li:nth-child(3) .jn-atalho:is(:hover, :focus-visible)) .natal-pisca__barriga:nth-child(3),
+.jn-atalhos:has(li:nth-child(4) .jn-atalho:is(:hover, :focus-visible)) .natal-pisca__barriga:nth-child(4),
+.jn-atalhos:has(li:nth-child(5) .jn-atalho:is(:hover, :focus-visible)) .natal-pisca__barriga:nth-child(5),
+.jn-atalhos:has(li:nth-child(6) .jn-atalho:is(:hover, :focus-visible)) .natal-pisca__barriga:nth-child(6),
+.jn-atalhos:has(li:nth-child(7) .jn-atalho:is(:hover, :focus-visible)) .natal-pisca__barriga:nth-child(7),
+.jn-atalhos:has(li:nth-child(8) .jn-atalho:is(:hover, :focus-visible)) .natal-pisca__barriga:nth-child(8) { --aceso: 1; }
+.jn-atalhos .natal-pisca__lampada { animation-duration: calc(4.2s - var(--aceso, 0) * 3.3s); }
+.jn-atalhos .natal-pisca__brilho { animation-name: natal-piscar-pisca; transform: scale(calc(1 + var(--aceso, 0) * 0.3)); transition: transform 0.25s ease; }
+@keyframes natal-piscar-pisca { 0%, 38% { opacity: 1; } 55%, 85% { opacity: max(0.2, var(--aceso, 0)); } 100% { opacity: 1; } }
+
+/* ── Laço de presente e neve nas faixas de baixo ── */
+[data-natal="sim"] .jn-avisos .faixa-planos, [data-natal="sim"] .jn .cs-nac { position: relative; overflow: visible; }
+[data-natal="sim"] .jn-avisos .faixa-planos::after, [data-natal="sim"] .jn .cs-nac::after { content: ""; position: absolute; z-index: 2; top: -22px; left: auto; right: 18%;
+  width: 68px; height: 60px; pointer-events: none; background: url('/pixel/natal/laco.png') no-repeat 0 0 / 68px 60px; image-rendering: pixelated; }
+[data-natal="sim"] .jn .cs-nac::before { content: ""; position: absolute; z-index: 1; left: 10px; right: 10px; top: -13px; height: 24px; pointer-events: none;
+  background: url('/pixel/natal/neve-borda.png') repeat-x 0 0 / 128px 24px; image-rendering: pixelated; }
+
+/* Os enfeites que transbordam não podem criar rolagem lateral. */
+[data-natal="sim"] body { overflow-x: clip; }
+
+@media (max-width: 60rem) {
+  .natal-guirlanda { top: -44px; right: -40px; transform: scale(0.6); transform-origin: 100% 0; }
+  .natal-pisca { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.2rem; padding: 0 0.4rem; }
+  .natal-pisca__barriga:nth-child(n + 5) { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .natal-festao__luzes, .natal-arvore__img::before, .natal-arvore__estrela, .natal-guirlanda::before, .natal-pisca__lampada, .natal-pisca__brilho { animation: none; }
+}
