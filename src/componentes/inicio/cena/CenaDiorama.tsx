@@ -1,6 +1,7 @@
 import { createPortal } from 'react-dom'
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react'
 import { recurso } from '../../../config'
+import { modoNatalAtivo } from '../../../natal/modoNatal'
 import { Mascote } from '../../mascote/Mascote'
 import { folhaGato, type IdLinhaDragao, type IdLinhaGato } from '../../mascote/sprites'
 import { DURACAO_DRAGAO, DragaoPixel } from '../../mascote/DragaoPixel'
@@ -30,6 +31,8 @@ import type { Periodo } from '../../../estado/aparencia'
 export { periodoAgora, type Periodo } from '../../../estado/aparencia'
 
 /** Posição e tamanho em porcentagem do palco, a partir de pixels da arte (480 x 200). */
+/** O modo Natal (lido uma vez ao abrir o site): troca a pintura pela versão de Natal, quando o cenário tem uma. */
+const natalNoAr = modoNatalAtivo()
 const lugar = (x: number, y: number, w: number, h: number): CSSProperties => ({ left: `${(x / 480) * 100}%`, top: `${(y / 200) * 100}%`, width: `${(w / 480) * 100}%`, height: `${(h / 200) * 100}%` })
 
 /** O que fica por cima da cena: textos, a missão e a questão de amostra. Nada disso pode cobrir os mascotes ou a fala. */
@@ -717,7 +720,8 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
   const brasas = useMemo(() => Array.from({ length: 9 }, (_, i) => ({ dx: ((i * 29) % 13) - 6, t: 1.8 + (i % 4) * 0.5, d: -((i * 0.7) % 3) })), [])
   // Na pausa, a fogueira respira mais alto: uma revoada de fagulhas sobe mais longe e mais devagar.
   const fagulhas = useMemo(() => Array.from({ length: 14 }, (_, i) => ({ dx: ((i * 37) % 23) - 11, t: 2.6 + (i % 5) * 0.55, d: -((i * 0.43) % 3.4) })), [])
-  const imagem = (larg: number, arquivo = cenario.arquivo) => recurso(`pixel/inicio/${arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
+  // No modo Natal, a pintura com o Natal dentro dela (scripts/natal/cenario_*.py), quando o cenário já tem a dele.
+  const imagem = (larg: number, arquivo = natalNoAr && cenario.pinturaNatal ? cenario.pinturaNatal : cenario.arquivo) => recurso(`pixel/inicio/${arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
   // O tempo (clima.ts): igual para todos, conferido a cada meio minuto. A pintura nevada entra devagar por cima.
   const [clima, definirClima] = useState<Clima>(() => climaAgora())
   const [transicao, definirTransicao] = useState(false)
