@@ -321,7 +321,7 @@ export function Resumo() {
   const pct = dados.validas.length > 0 ? Math.round((dados.certas.length / dados.validas.length) * 100) : null
   const mediaSegundos = dados.respondidas.length > 0 ? dados.segundos / dados.respondidas.length : 0
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
-  const titulo = manchete(pct, nome)
+  const titulo = !sessao.concluidaEm && pct === null ? 'Sessão em andamento' : manchete(pct, nome)
   const emAndamento = !sessao.concluidaEm
   const fim = sessao.concluidaEm ?? Date.now()
   const usadosSimulado = Math.round((fim - sessao.criadaEm) / 1000)
@@ -442,7 +442,7 @@ export function Resumo() {
                 </div>
                 <div className="dp-numero rr-numero--erradas">
                   <dt>Erradas</dt>
-                  <dd><b>{dados.erradas.length}</b><small>{dados.falsaCerteza ? `${dados.falsaCerteza} com certeza` : dados.erradas.length ? 'nenhuma com certeza' : 'gabaritou'}</small></dd>
+                  <dd><b>{dados.erradas.length}</b><small>{dados.falsaCerteza ? `${dados.falsaCerteza} com certeza` : dados.erradas.length ? 'nenhuma com certeza' : dados.validas.length ? 'gabaritou' : 'nenhuma ainda'}</small></dd>
                 </div>
                 <div className="dp-numero">
                   <dt>{sessao.simulado && sessao.limiteSegundos ? 'Tempo de prova' : 'Tempo'}</dt>

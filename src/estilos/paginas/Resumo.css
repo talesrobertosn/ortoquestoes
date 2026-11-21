@@ -3,8 +3,10 @@
    é desta página, com o prefixo rr- (o rs- é da Biblioteca de Resumos). Estados de resultado (certa, errada) só
    como estado; a arte da biblioteca, com a coruja, só no topo. */
 
+/* .dpg.rsg (duas classes): no site publicado o CSS do Desempenho pode carregar depois deste e devolveria a coluna
+   de 13,5rem do menu lateral, que esta página não tem. */
+.dpg.rsg { grid-template-columns: minmax(0, 1fr); max-width: 70rem; margin-inline: auto; }
 .rsg {
-  grid-template-columns: minmax(0, 1fr); max-width: 70rem; margin-inline: auto;
   --rr-certa: var(--ds-bom);
   --rr-errada: var(--ds-ruim);
   --rr-aviso: var(--ds-medio);
@@ -71,11 +73,11 @@
 .rr-premios small { color: var(--dp-ardosia-2); font-size: var(--meta); }
 
 /* ---------- Avisos de origem (cronograma, diagnóstico) ---------- */
-.rr-aviso { grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-4); }
+.rsg .rr-aviso { grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-4); }
 .rr-aviso__icone, .rr-cronograma__selo { display: grid; place-items: center; width: 3.2rem; height: 3.2rem; border-radius: 14px; background: var(--dp-verde-veu); color: var(--dp-verde-forte); }
 .rr-aviso strong { color: var(--dp-ardosia); font-size: 1.1rem; }
 .rr-aviso p { margin: 0.2rem 0 0; color: var(--dp-ardosia-2); max-width: 62ch; }
-.rr-cronograma { grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: var(--e-4); }
+.rsg .rr-cronograma { grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: var(--e-4); }
 .rr-cronograma__selo b { font-family: var(--fonte-marca); font-size: 1.5rem; font-weight: 800; }
 .rr-cronograma--feita .rr-cronograma__selo { background: var(--dp-verde); color: #ffffff; }
 :root[data-tema="escuro"] .rr-cronograma--feita .rr-cronograma__selo { color: #062521; }
@@ -87,7 +89,7 @@
 .rr-cronograma__acoes { grid-column: 2; display: flex; flex-wrap: wrap; gap: 0.6rem; }
 
 /* ---------- O que fazer agora ---------- */
-.rr-agora { padding-block: var(--e-2) var(--e-4); }
+.rsg .rr-agora { padding-block: var(--e-2) var(--e-4); }
 .rr-agora .dp-passo > .dp-botao { min-width: 9.5rem; }
 
 /* ---------- Folha e tempo ---------- */
@@ -150,7 +152,7 @@
 .rr-alerta--aviso svg { color: var(--ds-medio); }
 
 /* ---------- Temas ---------- */
-.rr-temas { list-style: none; margin: 0; gap: 0; padding-block: var(--e-2); }
+.rsg .rr-temas { list-style: none; margin: 0; gap: 0; padding-block: var(--e-2); }
 .rr-tema { display: grid; grid-template-columns: minmax(0, 1fr) 4.5rem auto; align-items: center; gap: var(--e-4); padding: 0.85rem 0; }
 .rr-tema + .rr-tema { border-top: 1px solid var(--dp-linha); }
 .rr-tema__info { display: grid; gap: 0.45rem; min-width: 0; }
@@ -190,7 +192,7 @@
 
 /* ---------- Progresso ---------- */
 .rr-progresso { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--e-4); }
-.rr-marco { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: var(--e-4); color: inherit; text-decoration: none; }
+.rsg .rr-marco { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: var(--e-4); color: inherit; text-decoration: none; }
 .rr-marco--link:hover { border-color: var(--dp-verde); text-decoration: none; }
 .rr-marco__icone { display: grid; place-items: center; width: 3.4rem; height: 3.4rem; border-radius: 14px; background: var(--dp-ardosia-veu); }
 .rr-marco__icone img { image-rendering: pixelated; }
@@ -200,7 +202,7 @@
 .rr-extras { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 
 /* ---------- Simulado Nacional: só a entrega ---------- */
-.rsg--so { grid-template-columns: minmax(0, 1fr); max-width: 44rem; margin-inline: auto; }
+.dpg.rsg--so { max-width: 44rem; }
 .rr-entrega { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--e-5); align-items: center; padding: clamp(1.25rem, 3vw, 2rem); border-radius: 20px; background: var(--dp-papel); border: 1px solid var(--dp-linha); box-shadow: var(--dp-sombra); }
 .rr-entrega__coruja { --coruja-escala: 2; }
 .rr-entrega h1 { margin: 0.3rem 0 0.4rem; font-size: clamp(1.4rem, 1.1rem + 1vw, 1.85rem); font-weight: 800; }
@@ -227,8 +229,8 @@
   .rr-anel__grafico { width: min(100%, 11rem); }
   .rr-ganhos__lista { grid-template-columns: minmax(0, 1fr); }
   .rr-ganhos__lista li { grid-template-columns: 5.5rem minmax(0, 1fr); align-items: center; }
-  .rr-aviso { grid-template-columns: auto minmax(0, 1fr); }
-  .rr-aviso > .dp-botao { grid-column: 1 / -1; }
+  .rsg .rr-aviso { grid-template-columns: auto minmax(0, 1fr); }
+  .rsg .rr-aviso > .dp-botao { grid-column: 1 / -1; }
   .rr-cronograma__acoes { grid-column: 1 / -1; }
   .rr-cronograma__acoes .dp-botao { flex: 1 1 100%; white-space: normal; text-align: center; }
   .rr-folha { grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr)); gap: 0.4rem; }
