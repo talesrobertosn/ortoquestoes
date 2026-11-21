@@ -55,7 +55,7 @@ Em 16/10/2026, Tales aprovou como modelo o trio **Embarque** (feed: cartão de e
 
 Em 16/10/2026, Tales definiu o **modelo padrão** de posts (stories e feed): o lançamento da Biblioteca de Resumos, com telas reais do site editadas (MacBook e iPhone, lupas com moldura dourada e pinos numerados), cor dominante verde ou branca. Quando ele pedir "no modelo padrão", use este. Veja [o guia](marketing/instagram/estilos/MODELO-PADRAO.md).
 
-Em 18/10/2026, Tales aprovou para o arsenal o **Laboratório de patologia** (feed: lâmina na ocular, laudo com pinos) e a **Raspadinha da prova** (stories). Veja [o guia](marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).
+Em 18/10/2026, Tales aprovou para o arsenal o **Laboratório de patologia** (feed: lâmina na ocular, laudo com pinos) e a Raspadinha da prova (stories; **retirada em 03/11/2026: nunca mais sugerir nem usar**). Veja [o guia](marketing/instagram/estilos/LABORATORIO-E-RASPADINHA.md).
 
 Em 19/10/2026, Tales aprovou a **Caderneta de topografia** (feed) e o **Bingo da prova** (stories). Veja [o guia](marketing/instagram/estilos/CADERNETA-E-BINGO.md). Também pediu que os estilos sigam uma **ordem fixa de rodízio**, sem sortear nem repetir: rode `node marketing/instagram/estilos/ordem.mjs` antes de cada post ([regras](marketing/instagram/estilos/ORDEM.md)). Stories nunca levam figurinha de link (tira o alcance da página).
 
@@ -64,6 +64,8 @@ Em 13/11/2026, Tales aprovou a **Errata** (stories de aula no gabinete de revis�
 Em 18/11/2026, Tales aprovou os **Stories com alternativas** (a pedido, fora do rodízio): a questão com as alternativas escritas e uma área livre, sem caixa, para a enquete A, B, C, D; depois a resposta com um trecho do comentário e o livro, e o convite ao site gratuito. A temática se adapta a cada vez (o modelo é a tela do celular). Veja [o guia](marketing/instagram/estilos/STORIES-COM-ALTERNATIVAS.md).
 
 Em 22/10/2026, Tales aprovou a **Busca** (feed e stories: o sintoma digitado num buscador com a marca Orto Questões, a questão como resultado e a resposta no trecho em destaque). Veja [o guia](marketing/instagram/estilos/BUSCA.md).
+
+Em 17/11/2026, Tales aprovou a **Câmara escura** (stories: a radiografia revelada na sala escura, com o comentário do site em destaque no último). Veja [o guia](marketing/instagram/estilos/CAMARA-ESCURA.md).
 
 ## Telas do site
 **Antes de qualquer tarefa visual, leia [DESIGN.md](DESIGN.md) e [PRODUCT.md](PRODUCT.md)** e siga [docs/design/WORKFLOW.md](docs/design/WORKFLOW.md). Ferramentas de design (Tales, 31/10/2026: "usar sempre que possível, a ideia é você ficar especialista em design"): em todo pedido de design, use as skills de [docs/design/FERRAMENTAS.md](docs/design/FERRAMENTAS.md) (Refero para pesquisar, UI UX Pro Max para decidir, ui-styling e design-system para construir, Impeccable para revisar e polir, arte-hd2d para a arte pixel).

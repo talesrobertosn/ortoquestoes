@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Modelo: Câmara escura (stories)</title>
+<!-- Modelo aprovado em 17/11/2026: Câmara escura (stories). Guia: ../CAMARA-ESCURA.md. Original: posts/2026-11-17-camara-escura-osteoma-osteoide/.
+     Questão tumores-0194 (TEOT 2024), gabarito C.
+     node marketing/instagram/gerar.mjs marketing/instagram/estilos/camara-escura/modelo.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Placa; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: Serif; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serif; font-style: italic; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Mao; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: #f6eedb; }
+
+/* ---------- sala escura ---------- */
+.sala {
+  background:
+    radial-gradient(circle at 86% 7%, rgba(255,64,48,.55), rgba(200,30,30,.18) 18%, transparent 42%),
+    radial-gradient(ellipse at 50% 110%, rgba(140,14,20,.55), transparent 55%),
+    linear-gradient(#1a0607, #0d0304 60%, #070102);
+}
+/* grão de filme */
+.sala::before, .revelado::before {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: .22; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+/* azulejos da parede, quase invisíveis */
+.sala::after {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,90,80,.045) 0 2px, transparent 2px 120px),
+    repeating-linear-gradient(90deg, rgba(255,90,80,.045) 0 2px, transparent 2px 120px);
+  mask-image: linear-gradient(transparent, #000 30%, #000 70%, transparent);
+}
+.camada { position: absolute; inset: 0; z-index: 1; }
+
+/* luz de segurança */
+.lampada { position: absolute; right: 70px; top: 96px; width: 150px; height: 150px; z-index: 2; }
+.lampada .casco { position: absolute; inset: 0; border-radius: 26px; background: linear-gradient(#2b1112, #160707); box-shadow: 0 12px 30px rgba(0,0,0,.6), inset 0 0 0 3px #3c1a1a; }
+.lampada .vidro { position: absolute; inset: 20px; border-radius: 14px; background: radial-gradient(circle at 40% 35%, #ffb1a1, #ff3b30 40%, #b3121a 80%); box-shadow: 0 0 60px 18px rgba(255,50,40,.55), 0 0 160px 60px rgba(255,40,30,.25); }
+.lampada .vidro::after { content: 'SAFE'; position: absolute; inset: 0; display: grid; place-items: center; font: 800 30px Jakarta; letter-spacing: .14em; color: rgba(70,0,0,.55); }
+
+.marca { position: absolute; left: 70px; top: 128px; z-index: 2; display: flex; align-items: center; gap: 14px; font: 32px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 52px; height: 52px; }
+.marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.rotulo { font: 800 23px Inter; letter-spacing: .2em; text-transform: uppercase; color: #ff8f7a; }
+.rodape { position: absolute; left: 70px; right: 70px; top: 1560px; z-index: 2; display: flex; justify-content: space-between; font: 700 24px Inter; color: #b98078; letter-spacing: .02em; }
+.rodape .pag { font: 800 34px Jakarta; letter-spacing: .1em; color: #ff8f7a; }
+
+/* varal e prendedores */
+.varal { position: absolute; left: -20px; right: -20px; height: 4px; z-index: 2; background: linear-gradient(90deg, #4a2120, #8a4a42 50%, #4a2120); box-shadow: 0 3px 6px rgba(0,0,0,.6); transform: rotate(-.6deg); }
+.prendedor { position: absolute; width: 46px; height: 112px; z-index: 4; border-radius: 8px; background: linear-gradient(90deg, #6e3b2c, #a7684f 45%, #6e3b2c); box-shadow: 0 8px 14px rgba(0,0,0,.55), inset 0 0 0 2px rgba(0,0,0,.25); }
+.prendedor::before { content: ''; position: absolute; left: 50%; top: 30px; width: 54px; height: 16px; transform: translateX(-50%); border-radius: 8px; background: linear-gradient(#c9ccd1, #6c7178); box-shadow: 0 2px 4px rgba(0,0,0,.5); }
+
+/* o filme */
+.filme { position: absolute; z-index: 3; background: #050505; padding: 34px 30px; border-radius: 6px;
+  box-shadow: 0 40px 80px rgba(0,0,0,.75), 0 0 0 1px rgba(255,120,100,.25), 0 0 60px rgba(255,40,30,.18); }
+.filme::after { /* reflexo vermelho no acetato */
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: linear-gradient(115deg, rgba(255,80,60,.20), transparent 30%, transparent 70%, rgba(255,60,40,.12)); mix-blend-mode: screen; }
+.filme img { display: block; width: 100%; height: 100%; object-fit: cover; filter: contrast(1.08) brightness(1.02); }
+.filme .borda { position: absolute; left: 30px; right: 30px; font: 800 18px Jakarta; letter-spacing: .32em; color: #e6a24a; opacity: .85; white-space: nowrap; overflow: hidden; }
+.filme .borda.t { top: 8px; } .filme .borda.b { bottom: 8px; }
+.gota { position: absolute; width: 14px; height: 20px; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; background: radial-gradient(circle at 35% 30%, rgba(255,220,210,.9), rgba(255,90,70,.45) 45%, rgba(120,10,10,.2)); z-index: 4; }
+
+/* ---------- STORY 1 ---------- */
+#s1-questao .varal { top: 330px; }
+#s1-questao .filme { left: 90px; top: 344px; width: 540px; height: 1010px; transform: rotate(-1.4deg); }
+#s1-questao .p1 { left: 160px; top: 290px; transform: rotate(-3deg); }
+#s1-questao .p2 { left: 520px; top: 284px; transform: rotate(2deg); }
+.lado { position: absolute; left: 676px; right: 64px; top: 420px; z-index: 3; }
+.lado h1 { margin-top: 18px; font: 800 64px/1.0 Jakarta; letter-spacing: -.04em; }
+.lado h1 em { font-style: normal; color: #ffd27a; text-shadow: 0 0 30px rgba(255,190,90,.35); }
+.lado .linha { width: 70px; height: 4px; margin: 34px 0; border-radius: 2px; background: #ff5a48; box-shadow: 0 0 16px #ff3b30; }
+.lado p { font: 500 31px/1.38 Inter; color: #f1d9cf; }
+.lado p b { color: #fff; font-weight: 800; }
+.etiqueta { position: absolute; left: 70px; right: 70px; top: 1420px; z-index: 3; padding: 34px 40px 36px; border-radius: 10px;
+  background: linear-gradient(#f3e7d0, #e6d5b6); color: #2a1a12; transform: rotate(.5deg);
+  box-shadow: 0 24px 50px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.2); }
+.etiqueta::before { content: ''; position: absolute; left: 50%; top: -18px; width: 180px; height: 38px; transform: translateX(-50%) rotate(-2deg); background: rgba(255,240,200,.55); box-shadow: 0 2px 6px rgba(0,0,0,.25); }
+.etiqueta .topo { display: flex; justify-content: space-between; font: 800 21px Inter; letter-spacing: .18em; text-transform: uppercase; color: #8b3a2b; }
+.etiqueta p { margin-top: 14px; font: 600 35px/1.32 Jakarta; letter-spacing: -.015em; }
+.etiqueta p b { font-weight: 800; }
+.etiqueta .prazo { margin-top: 14px; font: 700 24px Jakarta; color: #8b3a2b; }
+
+.timer { margin-top: 60px; padding: 24px 26px 26px; border-radius: 18px; background: rgba(20,4,4,.7); box-shadow: inset 0 0 0 2px rgba(255,90,72,.35), 0 0 40px rgba(255,40,30,.15); }
+.timer small { display: block; font: 800 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: #ff8f7a; }
+.timer span { display: block; margin-top: 6px; font: 800 86px/1 Jakarta; letter-spacing: 0; color: #ff5a48; text-shadow: 0 0 24px rgba(255,59,48,.7); }
+.timer i { display: block; height: 10px; margin-top: 14px; border-radius: 5px; background: rgba(255,90,72,.18); overflow: hidden; }
+.timer i b { display: block; width: 62%; height: 100%; border-radius: 5px; background: linear-gradient(90deg, #b3121a, #ff5a48); box-shadow: 0 0 12px #ff3b30; }
+
+/* ---------- STORY 2 ---------- */
+#s2-alternativas .varal { top: 300px; }
+#s2-alternativas .filme { left: 70px; top: 314px; width: 330px; height: 620px; padding: 24px 20px; transform: rotate(-2deg); }
+#s2-alternativas .filme .borda { left: 20px; right: 20px; font-size: 14px; }
+#s2-alternativas .p1 { left: 210px; top: 262px; transform: rotate(-4deg); }
+.pergunta2 { position: absolute; left: 448px; right: 64px; top: 380px; z-index: 3; }
+.pergunta2 h2 { margin-top: 18px; font: 800 52px/1.04 Jakarta; letter-spacing: -.035em; }
+.pergunta2 h2 em { font-style: normal; color: #ffd27a; }
+.pergunta2 p { margin-top: 26px; font: 500 29px/1.4 Inter; color: #f1d9cf; }
+.pergunta2 p b { color: #fff; }
+
+.tira { position: absolute; left: 50px; right: 50px; top: 980px; z-index: 3; padding: 40px 0; border-radius: 8px; transform: rotate(.6deg);
+  background: linear-gradient(#2a1608, #1a0d05); box-shadow: 0 30px 60px rgba(0,0,0,.7), 0 0 0 1px rgba(230,150,70,.25); }
+.tira::before, .tira::after { content: ''; position: absolute; left: 22px; right: 22px; height: 18px;
+  background: repeating-linear-gradient(90deg, #0b0503 0 26px, transparent 26px 50px); border-radius: 3px; }
+.tira::before { top: 11px; } .tira::after { bottom: 11px; }
+.quadros { display: grid; gap: 12px; padding: 0 30px; }
+.quadro { position: relative; display: grid; grid-template-columns: 96px 1fr; align-items: center; gap: 26px; height: 100px; padding: 0 28px 0 18px; border-radius: 6px;
+  background: linear-gradient(90deg, rgba(255,170,90,.16), rgba(255,140,60,.07)); box-shadow: inset 0 0 0 2px rgba(255,170,90,.32); }
+.quadro .l { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; font: 800 62px/1 Jakarta; color: #1a0d05; background: radial-gradient(circle at 40% 35%, #ffe2a3, #f4b04a); box-shadow: 0 0 22px rgba(255,170,70,.45); }
+.quadro .t { font: 700 40px Jakarta; letter-spacing: -.02em; color: #fbe7cc; }
+.quadro .n { position: absolute; right: 18px; top: 8px; font: 800 18px Jakarta; letter-spacing: .2em; color: rgba(230,160,80,.7); }
+.instrucao { position: absolute; left: 70px; right: 70px; top: 1528px; z-index: 3; text-align: center; font: 700 29px Jakarta; color: #ffb8a8; }
+.instrucao b { font: 800 26px Inter; letter-spacing: .16em; text-transform: uppercase; color: #ffd27a; display: block; margin-bottom: 6px; }
+
+/* ---------- STORY 3: revelado ---------- */
+.gratis { position: absolute; left: 64px; right: 64px; top: 1404px; z-index: 3; }
+.g-titulo { font: 800 44px/1.05 Jakarta; letter-spacing: -.03em; color: #fff7e4; }
+.g-titulo em { font-style: normal; color: #f4cf7c; }
+.g-itens { margin-top: 18px; display: flex; gap: 12px; }
+.g-itens span { flex: 1; display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 16px; font: 700 23px/1.2 Inter; color: #e8f2ef; background: rgba(255,255,255,.07); box-shadow: inset 0 0 0 2px rgba(244,207,124,.35); }
+.g-itens b { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; font: 800 22px Jakarta; color: #0b2e2a; background: #f4cf7c; }
+.g-base { margin-top: 22px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.g-base .site { font: 800 38px Jakarta; letter-spacing: -.02em; color: #fff7e4; }
+.g-base .site small { display: block; font: 600 23px Inter; letter-spacing: 0; color: #a9c8c1; margin-bottom: 4px; }
+.g-base .botao { padding: 22px 30px; border-radius: 18px; font: 800 29px Jakarta; color: #0b2e2a; background: #f4cf7c; box-shadow: 0 10px 0 #b98d36, 0 18px 40px rgba(244,207,124,.35); white-space: nowrap; }
+.revelado {
+  background:
+    radial-gradient(ellipse at 30% 0%, rgba(255,214,140,.30), transparent 50%),
+    radial-gradient(ellipse at 100% 60%, rgba(20,101,94,.55), transparent 60%),
+    linear-gradient(#0f3f39, #0b2e2a 55%, #081d1a);
+}
+.revelado .rotulo { color: #f4cf7c; }
+.revelado .rodape { color: #8fb5ad; }
+.revelado .rodape .pag { color: #f4cf7c; }
+.interruptor { position: absolute; right: 70px; top: 118px; z-index: 2; display: flex; align-items: center; gap: 14px; font: 800 21px Inter; letter-spacing: .18em; text-transform: uppercase; color: #f4cf7c; }
+.interruptor i { width: 74px; height: 40px; border-radius: 20px; background: #f4cf7c; position: relative; box-shadow: 0 0 24px rgba(244,207,124,.6); }
+.interruptor i::after { content: ''; position: absolute; right: 5px; top: 5px; width: 30px; height: 30px; border-radius: 50%; background: #0b2e2a; }
+
+.copia { position: absolute; left: 64px; top: 250px; width: 390px; height: 680px; z-index: 3; padding: 18px 18px 64px; background: #fbf7ee; border-radius: 6px; transform: rotate(-2.2deg);
+  box-shadow: 0 34px 70px rgba(0,0,0,.6); }
+.copia .foto { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+.copia img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.copia .leg { position: absolute; left: 0; right: 0; bottom: 10px; text-align: center; font: 700 26px Jakarta; color: #3a2a1a; }
+/* marcação do espessamento cortical medial (imagem 234x462: y 43% a 75%, x 45% a 58%) */
+.marcacao { position: absolute; left: 39%; top: 41%; width: 24%; height: 36%; border: 5px solid #f4cf7c; border-radius: 50%; box-shadow: 0 0 18px rgba(244,207,124,.8), inset 0 0 14px rgba(244,207,124,.35); }
+.seta-nota { position: absolute; left: 6%; top: 82%; font: 700 24px/1 Jakarta; color: #f4cf7c; text-shadow: 0 2px 6px #000; }
+
+.veredito { position: absolute; left: 496px; right: 64px; top: 262px; z-index: 3; }
+.veredito .carimbo { display: inline-flex; align-items: center; gap: 18px; margin-top: 16px; }
+.veredito .carimbo .l { display: grid; place-items: center; width: 116px; height: 116px; border-radius: 50%; font: 800 96px/1 Jakarta; color: #0b2e2a; background: radial-gradient(circle at 40% 35%, #fff0c4, #f4cf7c 55%, #d9a94a); box-shadow: 0 0 40px rgba(244,207,124,.55); }
+.veredito h1 { margin-top: 16px; font: 800 66px/.98 Jakarta; letter-spacing: -.045em; color: #fff7e4; }
+.veredito h1 em { font-style: normal; color: #f4cf7c; }
+.porques { margin-top: 24px; display: grid; gap: 16px; }
+.porques div { display: grid; grid-template-columns: 40px 1fr; gap: 14px; font: 500 26px/1.32 Inter; color: #d9e8e3; }
+.porques div span { font: 800 34px/1 Jakarta; color: #f4cf7c; padding-top: 2px; }
+.porques b { color: #fff; font-weight: 800; }
+
+.comentario { position: absolute; left: 64px; right: 64px; top: 988px; z-index: 3; padding: 30px 40px 28px; border-radius: 28px;
+  background: linear-gradient(160deg, #fbf6ea, #f1e7d2); color: #12181a;
+  box-shadow: 0 30px 70px rgba(0,0,0,.55), 0 0 0 3px rgba(244,207,124,.85), 0 0 60px rgba(244,207,124,.28); }
+.comentario .topo { display: flex; align-items: center; justify-content: space-between; }
+.comentario .topo .rot { font: 800 21px Inter; letter-spacing: .18em; text-transform: uppercase; color: #14655e; }
+.comentario .topo .selo { font: 800 19px Inter; letter-spacing: .12em; text-transform: uppercase; color: #7a5710; background: #f4cf7c; padding: 8px 14px; border-radius: 999px; }
+.comentario blockquote { margin-top: 16px; font: italic 500 33px/1.36 Serif; color: #1d2a2a; }
+.comentario blockquote b { font-style: normal; font-weight: 700; color: #14655e; }
+.comentario .livros { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+.comentario .livros span { font: 700 21px Inter; padding: 9px 14px; border-radius: 10px; background: #fff; color: #14655e; box-shadow: inset 0 0 0 2px #cfe0dc; }
+.comentario .inclui { margin-top: 18px; font: 600 24px/1.4 Inter; color: #4a5654; }
+.comentario .inclui b { color: #12181a; }
+
+.cta { position: absolute; left: 64px; right: 64px; top: 1460px; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.cta .site { font: 800 40px Jakarta; letter-spacing: -.02em; color: #fff7e4; }
+.cta .site small { display: block; font: 600 24px Inter; letter-spacing: 0; color: #a9c8c1; margin-bottom: 4px; }
+.cta .botao { padding: 24px 34px; border-radius: 18px; font: 800 30px Jakarta; color: #0b2e2a; background: #f4cf7c; box-shadow: 0 10px 0 #b98d36, 0 18px 40px rgba(244,207,124,.35); white-space: nowrap; }
+.revelado .marca { top: 128px; left: 64px; font-size: 30px; }
+.revelado .marca svg { width: 40px; height: 40px; }
+.revelado .pagina { position: absolute; right: 64px; top: 1640px; z-index: 2; font: 800 32px Jakarta; letter-spacing: .1em; color: #f4cf7c; }
+</style></head>
+<body>
+
+<!-- símbolo da marca -->
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="simbolo" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#14655E"/><g transform="scale(.5)"><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><g fill="#F4CF7C"><path transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g></g></symbol>
+</defs></svg>
+
+<!-- ================= STORY 1: a questão ================= -->
+<section id="s1-questao" class="sala">
+  <div class="marca"><svg><use href="#simbolo"/></svg><b>Orto</b><span>Questões</span></div>
+  <div class="lampada"><div class="casco"></div><div class="vidro"></div></div>
+
+  <div class="varal"></div>
+  <div class="prendedor p1"></div><div class="prendedor p2"></div>
+  <div class="filme">
+    <div class="borda t">           SAFETY FILM  ·  TEOT 2024  ·  14A</div>
+    <img src="../../../../public/imagens/tumores/tumores-0194-1.jpeg" alt="">
+    <div class="borda b">▶ 15   ▶ 15A   ▶ 16   ▶ 16A   ▶ 17</div>
+  </div>
+  <div class="gota" style="left:300px; top:1372px"></div>
+  <div class="gota" style="left:470px; top:1360px; transform:scale(.7)"></div>
+
+  <div class="lado">
+    <div class="rotulo">Sala escura</div>
+    <h1>O que este filme está <em>revelando?</em></h1>
+    <div class="linha"></div>
+    <p>Olhe a <b>cortical</b> com calma. O detalhe que decide está no osso, e não grita.</p>
+    <div class="timer"><small>No revelador</small><span>00:15</span><i><b></b></i></div>
+  </div>
+
+  <div class="etiqueta">
+    <div class="topo"><span>TEOT 2024 · Tumores</span><span>Filme 1 de 3</span></div>
+    <p>Paciente masculino, <b>15 anos</b>, com <b>dor na coxa</b>. Com a imagem radiográfica a seguir, a principal hipótese diagnóstica é</p>
+    <div class="prazo">as alternativas saem do banho no próximo story</div>
+  </div>
+
+</section>
+
+<!-- ================= STORY 2: alternativas ================= -->
+<section id="s2-alternativas" class="sala">
+  <div class="marca"><svg><use href="#simbolo"/></svg><b>Orto</b><span>Questões</span></div>
+  <div class="lampada"><div class="casco"></div><div class="vidro"></div></div>
+
+  <div class="varal"></div>
+  <div class="prendedor p1"></div>
+  <div class="filme">
+    <div class="borda t">SAFETY FILM · TEOT 2024</div>
+    <img src="../../../../public/imagens/tumores/tumores-0194-1.jpeg" alt="">
+    <div class="borda b">▶ 15   ▶ 15A   ▶ 16</div>
+  </div>
+
+  <div class="pergunta2">
+    <div class="rotulo">Filme 2 de 3 · fixador</div>
+    <h2>Rapaz de 15 anos, dor na coxa. <em>Qual é a hipótese?</em></h2>
+    <p>Quatro negativos. <b>Só um</b> combina com a idade, com o lugar no osso e com o que a cortical está fazendo.</p>
+  </div>
+
+  <div class="tira">
+    <div class="quadros">
+      <div class="quadro"><span class="l">A</span><span class="t">osteossarcoma.</span><span class="n">01A</span></div>
+      <div class="quadro"><span class="l">B</span><span class="t">condroblastoma.</span><span class="n">02A</span></div>
+      <div class="quadro"><span class="l">C</span><span class="t">osteoma osteoide.</span><span class="n">03A</span></div>
+      <div class="quadro"><span class="l">D</span><span class="t">tumor de células gigantes.</span><span class="n">04A</span></div>
+    </div>
+  </div>
+
+  <div class="instrucao"><b>Guarde a sua letra</b>a luz acende no próximo story</div>
+
+</section>
+
+<!-- ================= STORY 3: revelado ================= -->
+<section id="s3-revelado" class="revelado">
+  <div class="interruptor"><i></i>Luz acesa</div>
+
+  <div class="copia">
+    <div class="foto">
+      <img src="../../../../public/imagens/tumores/tumores-0194-1.jpeg" alt="">
+    </div>
+    <div class="leg">cortical medial espessada</div>
+  </div>
+
+  <div class="veredito">
+    <div class="rotulo">Filme 3 de 3 · gabarito</div>
+    <div class="carimbo"><span class="l">C</span></div>
+    <h1>Osteoma <em>osteoide</em></h1>
+    <div class="porques">
+      <div><span>1</span><p><b>Rapaz de 15 anos.</b> 76% dos casos entre 5 e 24 anos, quase 3 homens para 1 mulher.</p></div>
+      <div><span>2</span><p><b>Fêmur proximal,</b> o local isolado mais comum. A dor costuma ser referida à coxa ou ao joelho.</p></div>
+      <div><span>3</span><p><b>Cortical grossa, lisa, sem destruição:</b> é a reação ao nicho, que a esclerose às vezes esconde.</p></div>
+    </div>
+  </div>
+
+  <div class="comentario">
+    <div class="topo"><span class="rot">No comentário do site</span><span class="selo">Aula completa</span></div>
+    <blockquote>“A RM é o exame que <b>engana</b>: mostra edema e espessamento sem lesão discreta. Para achar o nicho, a <b>TC</b> é o melhor exame.”</blockquote>
+    <div class="livros"><span>Dahlin's Bone Tumors</span><span>Campbell 15ª ed.</span><span>Tachdjian</span><span>Lovell and Winter</span></div>
+    <div class="inclui"><b>Por que A, B e D caem,</b> a pista que o enunciado escondeu, a tabela das três hipóteses e a figura do Campbell, com capítulo e página.</div>
+  </div>
+
+  <div class="gratis">
+    <div class="g-titulo">Treine <em>de graça</em> no Orto Questões</div>
+    <div class="g-itens">
+      <span><b>1</b>Faça questões das provas</span>
+      <span><b>2</b>Leia o resumo do tema</span>
+      <span><b>3</b>Aprenda com cada comentário</span>
+    </div>
+    <div class="g-base">
+      <div class="site"><small>Crie sua conta grátis em</small>ortoquestoes.com.br</div>
+      <div class="botao">Comece grátis agora</div>
+    </div>
+  </div>
+
+  <div class="marca"><svg><use href="#simbolo"/></svg><b>Orto</b><span>Questões</span></div>
+</section>
+
+</body></html>

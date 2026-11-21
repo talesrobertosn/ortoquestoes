@@ -42,12 +42,14 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0764 | Fratura do colo do tálus, Hawkins III: subtalar e tibiotalar (TEOT 2025) | posts/2026-10-31-casa-assombrada-talus (stories) |
 | pediatria-0525 | Fratura fisária do úmero distal no lactente, que imita luxação (TARO 2025) | posts/2026-11-01-grupo-cotovelo-lactente (feed) |
 | ombro-cotovelo-0454 | Lesão traumática do subescapular: não leva a mão às costas, reparo cirúrgico (TARO 2024) | posts/2026-11-01-grupo-cotovelo-lactente (stories) |
+| pe-tornozelo-0076 | Tálus vertical: perfis em dorsiflexão e flexão plantar máximas (TARO 2022) | posts/2026-11-03-jornal-talo-vertical (feed e stories, Jornal em HD-2D) |
 | quadril-0649 | Piriforme, o mais alto dos rotadores laterais curtos, com a figura do Netter (Simulados, anatomia do quadril) | posts/2026-11-04-museu-piriforme (stories) |
 | trauma-0695 | Sanders IIIBC: dois traços, central e medial, na faceta posterior do calcâneo (banca omitida) | posts/2026-11-12-tela-trincada-sanders (feed e stories) |
 | tumores-0394 | Metástases ósseas, mama blástica no Campbell 14 e lítica no 15 (Simulados), stories "Como escrevemos o comentário" | posts/2026-11-13-errata-metastases |
 | trauma-0263 | Ângulo glenopolar na fratura da escápula, propaganda do comentário (questão no notebook, comentário real em iPhones e notebook) | posts/2026-11-13-glenopolar (feed e stories) |
 | trauma-0179 | Fratura de BENNETT: o abdutor longo do polegar desloca a diáfise (TEOT 2022), cartaz de cinema "o cabo de guerra" | posts/2026-11-15-cartaz-bennett (stories) |
 | ombro-cotovelo-0249 | Complexo ligamentar lateral do cotovelo: ligamento colateral ulnar lateral nº 3 × ligamento anular nº 2 (TEOT 2024), serralheria da dobradiça | posts/2026-11-17-serralheria-cotovelo (stories) |
+| tumores-0194 | Osteoma osteoide do fêmur proximal: cortical medial espessada no rapaz de 15 anos (TEOT 2024) | posts/2026-11-17-camara-escura-osteoma-osteoide (stories, Câmara escura) |
 | trauma-0753 | Incidência de HEINIG da esternoclavicular: feixe horizontal tangente, chassi no ombro oposto (TEOT 2025), tela do celular (bloqueio, notificações e central de controle) com área para enquete | posts/2026-11-18-vidro-heinig (stories) |
 | tumores-0125 | Cisto ósseo aneurismático da fíbula, ENNEKING B2 (TEOT 2023), conversa do grupo com enquete | posts/2026-11-19-grupo-cisto-aneurismatico (stories) |
 | pediatria-0561 | Manobra de ALLIS na luxação anterior do quadril da criança (TEOT 2024), vidro verde-noite com enquete | posts/2026-11-20-vidro-allis (stories) |

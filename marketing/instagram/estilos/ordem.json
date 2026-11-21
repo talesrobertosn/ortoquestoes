@@ -22,9 +22,9 @@
   "stories": [
     "cinema",
     "busca",
+    "camara-escura",
     "oficina-do-encaixe",
     "mecanica-fina",
-    "raspadinha",
     "planta",
     "exame-dna",
     "bingo-da-prova",
@@ -32,5 +32,8 @@
     "radar-premium",
     "cupom-fiscal",
     "errata"
-  ]
+  ],
+  "retirados": {
+    "raspadinha": "Tales, 03/11/2026: nunca mais sugerir nem usar a Raspadinha da prova (recusada muitas vezes)."
+  }
 }

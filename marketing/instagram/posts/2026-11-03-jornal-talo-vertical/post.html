@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Diário do Plantão HD-2D · tálus vertical</title>
+<!-- Jornal em HD-2D (03/11/2026, pedido do Tales: "o 3 no estilo jornal, 2D HD bonitão, sem mascotes").
+     Questão real: pe-tornozelo-0076 (TARO 2022, gabarito A, talo vertical); comentário de public/acervo/comentarios.
+     Cenários pintados por código em pintar_cenas.py (sala de laudos no feed, banca de jornal na chuva nos stories);
+     a radiografia real da prova entra no negatoscópio e no quadro da banca. Sem desenho de anatomia.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-03-jornal-talo-vertical/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; font-style: italic; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: Jersey; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); }
+:root { --papel: #f3ecdb; --tinta: #1b1a17; --cinza: #5f5a50; --verm: #b3261e; --ouro: #f4cf7c; --ouro2: #c8a050; --creme: #f6eedb; --verde: #14655e; --noite: #0a1f1c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: var(--creme); font-family: Serif4, serif; background: #0a1214 center/cover no-repeat; }
+section.story { height: 1920px; }
+.cena { background-image: url(cena-feed.webp); }
+.cena-fundo { background-image: url(cena-feed-fundo.webp); }
+.banca { background-image: url(cena-stories.webp); }
+.banca-fundo { background-image: url(cena-stories-fundo.webp); }
+.veu { position: absolute; inset: 0; pointer-events: none; }
+
+/* ── Interface de jogo: placa de vidro escuro com filete dourado e losangos nos cantos ── */
+.placa { position: absolute; display: flex; align-items: center; gap: 14px; padding: 12px 22px; background: rgba(6, 20, 18, .78); border: 2px solid rgba(244, 207, 124, .55); box-shadow: inset 0 0 0 4px rgba(6, 20, 18, .78), inset 0 0 0 5px rgba(244, 207, 124, .22), 0 8px 24px rgba(0,0,0,.45); font: 700 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--creme); backdrop-filter: blur(4px); }
+.placa::before, .placa::after { content: ""; position: absolute; top: 50%; width: 10px; height: 10px; background: var(--ouro); transform: translateY(-50%) rotate(45deg); box-shadow: 0 0 10px rgba(244,207,124,.8); }
+.placa::before { left: -7px; } .placa::after { right: -7px; }
+.placa .n { font: 400 40px/1 Jersey; letter-spacing: .04em; color: var(--ouro); }
+.marca { display: flex; align-items: center; gap: 12px; font: 800 26px Jakarta; letter-spacing: -.01em; text-transform: none; color: var(--creme); }
+.marca svg { width: 40px; height: 40px; filter: drop-shadow(0 2px 6px rgba(0,0,0,.5)); }
+
+/* ── Cabeçalho do jornal sobre a parede ── */
+.mastro { position: absolute; left: 64px; right: 64px; text-align: center; text-shadow: 0 3px 18px rgba(0,0,0,.75); }
+.mastro .topo { display: flex; justify-content: space-between; align-items: center; font: 700 20px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: rgba(246,238,219,.85); }
+.mastro h1 { margin-top: 8px; padding: 6px 0 4px; border-top: 5px double rgba(244,207,124,.85); border-bottom: 2px solid rgba(244,207,124,.85); font: 900 104px/1 Playfair; letter-spacing: -.02em; color: var(--creme); }
+.mastro h1.p { font-size: 60px; padding: 8px 0 6px; }
+.mastro .data { display: flex; justify-content: space-between; padding: 8px 2px; border-bottom: 5px double rgba(244,207,124,.85); font: 600 18px Jakarta; letter-spacing: .12em; text-transform: uppercase; color: rgba(246,238,219,.9); }
+.mastro .data b { color: var(--ouro); font-weight: 800; }
+
+/* ── O filme no negatoscópio ── */
+.filme { position: absolute; left: 172px; top: 272px; width: 736px; height: 332px; object-fit: cover; object-position: center top; filter: contrast(1.08) brightness(1.04); box-shadow: 0 0 0 1px rgba(200,230,255,.5), 0 0 40px rgba(160,210,255,.55); }
+.rx { display: block; width: 100%; aspect-ratio: 763 / 344; object-fit: cover; object-position: center top; border: 2px solid var(--tinta); }
+.legendas { position: absolute; left: 160px; width: 760px; top: 618px; display: flex; justify-content: space-between; }
+.legendas .tag { position: static; display: flex; align-items: center; gap: 10px; }
+.legendas .tag b { font: 400 30px/1 Jersey; color: #2a1a04; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fff3c4, #f4cf7c 45%, #a8781e); }
+.rotulo-filme { position: absolute; top: 622px; font: italic 500 22px Serif4; color: rgba(220,236,255,.92); text-shadow: 0 2px 8px #000; }
+
+/* ── Página de jornal (papel) ── */
+.folha { position: absolute; padding: 34px 40px 34px; color: var(--tinta); text-align: left;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,.06) 1px, transparent 1.3px) 0 0/5px 5px,
+    linear-gradient(100deg, rgba(120,170,230,.10), transparent 35%, transparent 70%, rgba(255,170,80,.16)),
+    radial-gradient(ellipse at 60% 0%, #faf5e8, transparent 70%),
+    var(--papel);
+  box-shadow: 0 2px 0 #d8ceb6, 0 30px 60px rgba(0,0,0,.6), 0 10px 18px rgba(0,0,0,.35); }
+.folha::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,.18), transparent 18%, transparent 82%, rgba(0,0,0,.07)); }
+.chapeu { display: inline-block; font: 800 20px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--verm); }
+.manchete { font: 900 66px/1.0 Playfair; letter-spacing: -.025em; text-wrap: balance; }
+.manchete i { font-weight: 700; }
+.linha-fina { font: italic 400 29px/1.32 Serif4; color: #3a3730; text-wrap: pretty; }
+.fio { height: 0; border-top: 2px solid var(--tinta); margin: 18px 0; }
+.fio.d { border-top: 4px double var(--tinta); }
+.texto { font: 400 27px/1.42 Serif4; }
+.texto b { font-weight: 700; }
+.cedula { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; margin-top: 16px; }
+.cedula div { display: flex; align-items: center; gap: 16px; font: 600 31px Serif4; }
+.cedula i { flex: none; width: 50px; height: 50px; border: 3px solid var(--tinta); display: grid; place-items: center; font: 800 25px Jakarta; font-style: normal; }
+.box { border: 3px solid var(--tinta); padding: 16px 22px; background: rgba(255,255,255,.4); }
+.box h4 { font: 800 19px Jakarta; letter-spacing: .18em; text-transform: uppercase; }
+.carimbo { position: absolute; padding: 8px 20px; border: 6px solid var(--verm); color: var(--verm); font: 800 32px Jakarta; letter-spacing: .14em; text-transform: uppercase; transform: rotate(-9deg); opacity: .9; mix-blend-mode: multiply; }
+
+/* Classificados */
+.classif { display: grid; grid-template-columns: 1fr 1fr; border-top: 3px solid var(--tinta); border-left: 1.5px solid var(--tinta); }
+.anuncio { padding: 28px 24px 30px; border-right: 1.5px solid var(--tinta); border-bottom: 1.5px solid var(--tinta); }
+.anuncio .tipo { font: 800 17px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--cinza); }
+.anuncio h3 { margin-top: 6px; font: 900 46px/1.02 Playfair; letter-spacing: -.01em; }
+.anuncio h3 small { font: 800 21px Jakarta; letter-spacing: .06em; vertical-align: middle; margin-left: 6px; padding: 1px 9px; border: 2px solid var(--tinta); }
+.anuncio p { margin-top: 12px; font: 400 27px/1.4 Serif4; }
+.anuncio .end { display: block; margin-top: 14px; padding-top: 10px; border-top: 1.5px dashed rgba(0,0,0,.45); font: 700 22px/1.3 Jakarta; }
+
+/* Tabela final */
+.tabela { width: 100%; border-collapse: collapse; margin-top: 8px; font: 400 27px/1.32 Serif4; }
+.tabela th { font: 800 16px/1.25 Jakarta; letter-spacing: .14em; text-transform: uppercase; text-align: left; padding: 10px 12px; border-bottom: 3px solid var(--tinta); vertical-align: bottom; }
+.tabela td { padding: 22px 12px; border-bottom: 1.5px solid rgba(0,0,0,.35); vertical-align: top; }
+.tabela td:first-child { font: 900 32px/1.1 Playfair; }
+.tabela tr.certa td { background: rgba(20,101,94,.12); }
+.tabela tr.certa td:first-child { color: var(--verde); }
+
+/* Pinos dourados numerados (nos cantos do filme, nunca sobre o osso) */
+.pino { position: absolute; width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fff3c4, #f4cf7c 45%, #a8781e); border: 3px solid #3a2a0a; box-shadow: 0 0 0 3px rgba(244,207,124,.35), 0 6px 14px rgba(0,0,0,.6); font: 400 38px/1 Jersey; color: #2a1a04; }
+.tag { position: absolute; padding: 8px 16px; background: rgba(6,20,18,.85); border: 2px solid rgba(244,207,124,.6); font: 800 20px Jakarta; letter-spacing: .12em; text-transform: uppercase; color: var(--ouro); white-space: nowrap; }
+.passo { display: grid; grid-template-columns: 54px 1fr; gap: 18px; align-items: start; }
+.passo .pino { position: static; width: 50px; height: 50px; font-size: 34px; }
+
+.rodape { position: absolute; left: 64px; right: 64px; bottom: 34px; display: flex; justify-content: space-between; align-items: center; }
+
+/* ── Stories: a banca ── */
+.letreiro { position: absolute; left: 96px; top: 688px; width: 888px; height: 82px; display: grid; place-items: center; font: 900 58px/1 Playfair; letter-spacing: -.01em; color: var(--ouro); text-shadow: 0 0 18px rgba(244,207,124,.55), 0 2px 0 #3a2a0a; }
+.ceu-txt { position: absolute; left: 64px; right: 64px; text-align: center; text-shadow: 0 3px 20px rgba(0,0,0,.85), 0 1px 3px rgba(0,0,0,.9); }
+.ceu-txt h2 { font: 900 80px/1.0 Playfair; letter-spacing: -.02em; text-wrap: balance; color: var(--creme); }
+.ceu-txt h2 i { color: var(--ouro); font-weight: 800; }
+.ceu-txt p { margin-top: 22px; font: 400 33px/1.34 Serif4; color: rgba(246,238,219,.95); text-wrap: pretty; }
+.ceu-txt .selo { display: inline-flex; gap: 12px; align-items: center; margin-bottom: 26px; padding: 9px 20px; background: var(--verm); color: #fff; font: 800 22px Jakarta; letter-spacing: .2em; text-transform: uppercase; box-shadow: 0 6px 18px rgba(0,0,0,.5); }
+.no-quadro { position: absolute; left: 198px; top: 900px; width: 684px; padding: 26px 28px 28px; transform: rotate(-1deg); }
+.prendedor { position: absolute; top: -26px; width: 26px; height: 58px; border-radius: 4px; background: linear-gradient(90deg, #8a5a2a, #c8925a 40%, #8a5a2a); box-shadow: 0 4px 8px rgba(0,0,0,.5); }
+.prendedor::after { content: ""; position: absolute; left: 4px; right: 4px; top: 24px; height: 6px; background: #5a5f66; }
+.pintado { position: absolute; left: 150px; right: 150px; top: 1560px; text-align: center; font: 900 46px/1.1 Playfair; color: var(--ouro); text-shadow: 0 0 14px rgba(244,207,124,.35), 0 2px 0 #062a20; }
+.pintado small { display: block; margin-top: 6px; font: 700 21px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: rgba(246,238,219,.85); text-shadow: 0 2px 0 #062a20; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol>
+</defs></svg>
+
+<!-- ═══════════════ FEED ═══════════════ -->
+
+<!-- 1. Primeira página: o filme aceso no negatoscópio e a manchete na mesa -->
+<section id="f1-capa" class="cena">
+  <div class="veu" style="background:linear-gradient(180deg, rgba(4,10,12,.82) 0, rgba(4,10,12,.55) 150px, transparent 250px)"></div>
+  <div class="mastro" style="top:34px">
+    <div class="topo"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Edição extra</span></div>
+    <h1>Diário do Plantão</h1>
+  </div>
+  <img class="filme" src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0076-1.jpeg" alt="">
+  <div class="folha" style="left:58px;top:700px;width:720px;height:520px;transform:rotate(-1.4deg)">
+    <span class="chapeu">Pediatria · urgente</span>
+    <h2 class="manchete" style="margin-top:12px">Forçado para cima e para baixo, pé do bebê não sai do lugar</h2>
+    <div class="fio"></div>
+    <p class="linha-fina">Duas radiografias de perfil, quatro suspeitos. A banca do TARO 2022 quer o nome da deformidade.</p>
+    <div class="fio d" style="margin-top:20px"></div>
+    <p style="font:700 17px Jakarta;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza);white-space:nowrap">2 a pergunta · 3 classificados · 4 veredito · 5 para a prova</p>
+  </div>
+  <div class="placa" style="right:56px;bottom:46px"><span>Arraste</span><span class="n">1/5</span></div>
+</section>
+
+<!-- 2. A pergunta como caiu -->
+<section id="f2-questao" class="cena">
+  <div class="veu" style="background:linear-gradient(180deg, rgba(4,10,12,.85) 0, rgba(4,10,12,.5) 170px, transparent 250px)"></div>
+  <div class="mastro" style="top:34px">
+    <div class="topo"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Caderno Provas</span></div>
+    <h1 class="p">Diário do Plantão</h1>
+    <div class="data"><span>TARO 2022</span><b>Pé e tornozelo</b><span>Caiu assim</span></div>
+  </div>
+  <img class="filme" src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0076-1.jpeg" alt="">
+  <div class="legendas"><span class="tag">Dorsiflexão máxima</span><span class="tag">Flexão plantar máxima</span></div>
+  <div class="folha" style="left:52px;top:686px;width:976px;height:572px;transform:rotate(-.6deg)">
+    <span class="chapeu">A questão · TARO 2022</span>
+    <h2 style="margin-top:10px;font:700 40px/1.2 Playfair;letter-spacing:-.01em">“As radiografias em perfil do pé da criança com flexão dorsal e plantar máximas demonstradas nas imagens a seguir caracterizam a deformidade do pé”</h2>
+    <div class="fio"></div>
+    <div class="cedula">
+      <div><i>A</i>talo vertical.</div>
+      <div><i>B</i>em serpentina.</div>
+      <div><i>C</i>calcaneovalgo.</div>
+      <div><i>D</i>torto congênito.</div>
+    </div>
+    <div class="box" style="margin-top:24px;display:flex;gap:18px;align-items:center"><h4 style="flex:none">Participe</h4><p class="texto" style="font-size:25px">Comente a sua letra antes de virar a página.</p></div>
+  </div>
+  <div class="placa" style="right:56px;bottom:34px;padding:8px 18px"><span class="n">2/5</span></div>
+</section>
+
+<!-- 3. Classificados -->
+<section id="f3-classificados" class="cena-fundo">
+  <div class="veu" style="background:rgba(4,10,12,.35)"></div>
+  <div class="folha" style="left:44px;top:44px;width:992px;height:1200px;transform:rotate(.5deg)">
+    <div style="display:flex;justify-content:space-between;font:700 18px Jakarta;letter-spacing:.14em;text-transform:uppercase;color:var(--cinza)"><span>Diário do Plantão</span><span>Classificados</span></div>
+    <h2 style="margin-top:6px;padding:10px 0 6px;border-top:5px double var(--tinta);border-bottom:2px solid var(--tinta);text-align:center;font:900 72px/1 Playfair;letter-spacing:-.02em">Classificados</h2>
+    <p class="linha-fina" style="margin-top:16px;text-align:center;font-size:27px">Quatro deformidades do pé disputam a vaga. Confira onde cada uma aparece.</p>
+    <div class="classif" style="margin-top:20px">
+      <div class="anuncio"><span class="tipo">Procura-se</span><h3>Talo vertical <small>A</small></h3><p>Luxação <b>dorsal fixa</b> da talonavicular com <b>equino rígido</b> do retropé. Planta convexa, em mata-borrão.</p><span class="end">No perfil: tálus quase paralelo à tíbia</span></div>
+      <div class="anuncio"><span class="tipo">Procura-se</span><h3>Em serpentina <small>B</small></h3><p>Problema do <b>plano horizontal</b>: antepé aduzido, navicular subluxado para lateral, retropé valgo. O pé em Z.</p><span class="end">Aparece no AP, não no perfil</span></div>
+      <div class="anuncio"><span class="tipo">Procura-se</span><h3>Calcaneovalgo <small>C</small></h3><p>Dorso do pé perto da tíbia, mas o pé é <b>flexível</b> e o calcâneo está em <b>dorsiflexão</b>.</p><span class="end">No perfil: nada luxado, nada preso</span></div>
+      <div class="anuncio"><span class="tipo">Procura-se</span><h3>Torto congênito <small>D</small></h3><p>Equino com varo e adução. Tálus e calcâneo <b>paralelos</b>, talocalcâneo diminuído.</p><span class="end">No perfil em dorsiflexão: talocalcâneo perto de 0°</span></div>
+    </div>
+    <div class="box" style="margin-top:26px"><h4>Nota do editor</h4><p class="texto" style="margin-top:8px;font-size:29px">Volte às radiografias e faça a pergunta certa: <b>quando o pé é forçado, o que se mexe e o que fica preso?</b></p></div>
+  </div>
+  <div class="placa" style="right:56px;bottom:30px;padding:8px 18px"><span>O veredito na próxima</span><span class="n">3/5</span></div>
+</section>
+
+<!-- 4. O veredito -->
+<section id="f4-veredito" class="cena">
+  <div class="veu" style="background:linear-gradient(180deg, rgba(4,10,12,.85) 0, rgba(4,10,12,.5) 170px, transparent 250px)"></div>
+  <div class="mastro" style="top:34px">
+    <div class="topo"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>O veredito</span></div>
+    <h1 class="p">Diário do Plantão</h1>
+    <div class="data"><span>Resposta A</span><b>Talo vertical</b><span>TARO 2022</span></div>
+  </div>
+  <img class="filme" src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0076-1.jpeg" alt="">
+  <div class="legendas"><span class="tag"><b>1</b>Dorsiflexão máxima</span><span class="tag"><b>2</b>Flexão plantar máxima</span></div>
+  <div class="folha" style="left:52px;top:686px;width:976px;height:572px;transform:rotate(-.6deg)">
+    <span class="chapeu">Resposta A · talo vertical</span>
+    <h2 class="manchete" style="margin-top:8px;font-size:58px">Forçou e nada mudou: é o <i>tálus vertical</i></h2>
+    <div class="fio"></div>
+    <div class="passo"><span class="pino">1</span><p class="texto"><b>Dorsiflexão máxima:</b> tálus e calcâneo continuam em flexão plantar. O equino do retropé é rígido.</p></div>
+    <div class="passo" style="margin-top:14px"><span class="pino">2</span><p class="texto"><b>Flexão plantar máxima:</b> o antepé não se alinha com o tálus. O navicular luxado no dorso do colo não reduz.</p></div>
+    <p class="texto" style="margin-top:16px;padding-top:12px;border-top:1.5px dashed rgba(0,0,0,.45);font-size:24px;color:#3a3730;padding-right:250px">Se reduzisse na flexão plantar, com o resto igual, seria <b>tálus oblíquo</b>. Fonte: Tachdjian, cap. 19.</p>
+    <div class="carimbo" style="right:34px;bottom:30px;font-size:28px">Confirmado</div>
+  </div>
+  <div class="placa" style="right:56px;bottom:34px;padding:8px 18px"><span class="n">4/5</span></div>
+</section>
+
+<!-- 5. Para a prova -->
+<section id="f5-para-a-prova" class="cena-fundo">
+  <div class="veu" style="background:rgba(4,10,12,.35)"></div>
+  <div class="folha" style="left:44px;top:44px;width:992px;height:1150px;transform:rotate(-.5deg)">
+    <div style="display:flex;justify-content:space-between;font:700 18px Jakarta;letter-spacing:.14em;text-transform:uppercase;color:var(--cinza)"><span>Diário do Plantão</span><span>Para a prova</span></div>
+    <h2 style="margin-top:6px;padding:10px 0 6px;border-top:5px double var(--tinta);border-bottom:2px solid var(--tinta);text-align:center;font:900 64px/1 Playfair;letter-spacing:-.02em">O teste das duas fotos</h2>
+    <p class="linha-fina" style="margin-top:16px;font-size:27px">Perfil em flexão plantar e em dorsiflexão máximas: cada foto responde a uma pergunta.</p>
+    <table class="tabela" style="margin-top:14px">
+      <tr><th style="width:27%">Condição</th><th>Flexão plantar máxima</th><th>Dorsiflexão máxima</th><th style="width:20%">Retropé</th></tr>
+      <tr class="certa"><td>Tálus vertical</td><td>navicular não reduz</td><td>tálus e calcâneo seguem fletidos</td><td>equino rígido</td></tr>
+      <tr><td>Tálus oblíquo</td><td>navicular reduz</td><td>calcâneo em equino</td><td>equino</td></tr>
+      <tr><td>Calcaneovalgo</td><td>não há luxação</td><td>dorso do pé encosta na tíbia</td><td>dorsiflexão, flexível</td></tr>
+    </table>
+    <div class="box" style="margin-top:26px;background:rgba(20,101,94,.08);border-color:var(--verde)">
+      <h4 style="color:var(--verde)">Para guardar</h4>
+      <p style="margin-top:10px;font:700 38px/1.25 Playfair">Forçou e nada mudou: tálus vertical. Reduziu na flexão plantar: tálus oblíquo. Calcâneo para cima e pé flexível: calcaneovalgo.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:400px 1fr;gap:30px;align-items:center;margin-top:26px">
+      <img class="rx" src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0076-1.jpeg" alt="">
+      <div><p style="font:700 19px/1.5 Jakarta;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza)">Questão pe-tornozelo-0076<br>TARO 2022 · comentada no site</p>
+      <p class="texto" style="margin-top:10px;font-size:26px">Volte às duas fotos e confira: nada saiu do lugar.</p></div>
+    </div>
+  </div>
+  <div class="placa" style="left:44px;right:44px;bottom:42px;justify-content:space-between;padding:16px 28px"><span class="marca"><svg><use href="#sim"/></svg>ortoquestoes.com.br</span><span>As provas oficiais, comentadas</span><span class="n">5/5</span></div>
+</section>
+
+<!-- ═══════════════ STORIES ═══════════════ -->
+
+<!-- S1 · 7h · a pergunta -->
+<section id="s1-pergunta" class="story banca">
+  <div class="veu" style="background:linear-gradient(180deg, rgba(3,6,12,.7) 0, rgba(3,6,12,.55) 560px, transparent 690px)"></div>
+  <div class="ceu-txt" style="top:236px">
+    <span class="selo">Edição extra · TARO 2022</span>
+    <h2>O pé que <i>não sai do lugar</i></h2>
+    <p style="font-size:31px">“As radiografias em perfil do pé da criança com flexão dorsal e plantar máximas demonstradas nas imagens a seguir caracterizam a deformidade do pé”</p>
+  </div>
+  <div class="letreiro">Diário do Plantão</div>
+  <div class="folha no-quadro">
+    <span class="prendedor" style="left:90px"></span><span class="prendedor" style="right:90px"></span>
+    <img class="rx" src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0076-1.jpeg" alt="">
+    <div style="display:flex;justify-content:space-between;margin-top:8px;font:700 16px Jakarta;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza)"><span>Dorsiflexão máxima</span><span>Flexão plantar máxima</span></div>
+    <div class="cedula" style="margin-top:18px;gap:14px 20px">
+      <div style="font-size:29px"><i>A</i>talo vertical.</div>
+      <div style="font-size:29px"><i>B</i>em serpentina.</div>
+      <div style="font-size:29px"><i>C</i>calcaneovalgo.</div>
+      <div style="font-size:29px"><i>D</i>torto congênito.</div>
+    </div>
+  </div>
+  <div class="pintado">Qual é a sua letra?<small>A resposta sai no story das 18h</small></div>
+</section>
+
+<!-- S2 · 12h · o raciocínio -->
+<section id="s2-raciocinio" class="story banca">
+  <div class="veu" style="background:linear-gradient(180deg, rgba(3,6,12,.7) 0, rgba(3,6,12,.55) 560px, transparent 690px)"></div>
+  <div class="ceu-txt" style="top:250px">
+    <span class="selo">Segunda edição · a pista</span>
+    <h2>Cada foto <i>responde a uma pergunta</i></h2>
+    <p>O teste é dinâmico: forçar o pé e ver o que se mexe e o que fica preso.</p>
+  </div>
+  <div class="letreiro">Diário do Plantão</div>
+  <div class="folha no-quadro">
+    <span class="prendedor" style="left:90px"></span><span class="prendedor" style="right:90px"></span>
+    <div style="position:relative">
+      <img class="rx" src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0076-1.jpeg" alt="">
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:8px;font:700 16px Jakarta;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza)"><span>1 · Dorsiflexão máxima</span><span>2 · Flexão plantar máxima</span></div>
+    <div class="passo" style="margin-top:16px;grid-template-columns:46px 1fr"><span class="pino" style="width:44px;height:44px;font-size:30px">1</span><p class="texto" style="font-size:26px"><b>Dorsiflexão máxima:</b> o retropé sai do equino?</p></div>
+    <div class="passo" style="margin-top:10px;grid-template-columns:46px 1fr"><span class="pino" style="width:44px;height:44px;font-size:30px">2</span><p class="texto" style="font-size:26px"><b>Flexão plantar máxima:</b> o navicular volta para a cabeça do tálus?</p></div>
+  </div>
+  <div class="pintado">Duas vezes não?<small>O nome sai às 18h</small></div>
+</section>
+
+<!-- S3 · 18h · a resposta -->
+<section id="s3-resposta" class="story banca">
+  <div class="veu" style="background:linear-gradient(180deg, rgba(3,6,12,.7) 0, rgba(3,6,12,.55) 560px, transparent 690px)"></div>
+  <div class="ceu-txt" style="top:250px">
+    <span class="selo">Edição final · resposta A</span>
+    <h2>Forçou e nada mudou: <i>talo vertical</i></h2>
+    <p>Luxação dorsal fixa da talonavicular com equino rígido do retropé.</p>
+  </div>
+  <div class="letreiro">Diário do Plantão</div>
+  <div class="folha no-quadro" style="padding-bottom:40px">
+    <span class="prendedor" style="left:90px"></span><span class="prendedor" style="right:90px"></span>
+    <img class="rx" src="../../../../public/imagens/pe-tornozelo/pe-tornozelo-0076-1.jpeg" alt="" style="margin-bottom:18px">
+    <div class="passo" style="grid-template-columns:46px 1fr"><span class="pino" style="width:44px;height:44px;font-size:30px">1</span><p class="texto" style="font-size:26px"><b>Dorsiflexão máxima:</b> tálus e calcâneo seguem em flexão plantar.</p></div>
+    <div class="passo" style="margin-top:12px;grid-template-columns:46px 1fr"><span class="pino" style="width:44px;height:44px;font-size:30px">2</span><p class="texto" style="font-size:26px"><b>Flexão plantar máxima:</b> o navicular não reduz.</p></div>
+    <div class="fio"></div>
+    <p class="texto" style="font-size:24px;color:#3a3730;padding-right:220px">Se reduzisse, seria <b>tálus oblíquo</b>. Calcâneo para cima e pé flexível é <b>calcaneovalgo</b>.</p>
+    <div class="carimbo" style="right:26px;bottom:34px;font-size:26px">Resposta A</div>
+  </div>
+  <div class="pintado">ortoquestoes.com.br<small>As provas oficiais, comentadas</small></div>
+</section>
+
+</body></html>
