@@ -66,17 +66,17 @@ export const CENARIOS: readonly Cenario[] = [
     coruja: [{ x: 318, y: 137 }, { x: 212, y: 156 }, { x: 346, y: 170 }, { x: 166, y: 176 }, { x: 282, y: 184 }],
   },
   {
-    id: 'forja', arquivo: 'cena-forja', particulas: 'faiscas',
+    id: 'forja', arquivo: 'cena-forja', particulas: 'faiscas', pinturaNatal: 'cena-forja-natal',
     gato: [{ x: 204, y: 154, pose: 'fogueira' }, { x: 166, y: 166, pose: 'repouso' }, { x: 232, y: 172, pose: 'sentado' }, { x: 274, y: 166, pose: 'observando' }, { x: 316, y: 172, pose: 'repouso' }, { x: 190, y: 178, pose: 'sentado' }],
     coruja: [{ x: 172, y: 140 }, { x: 326, y: 139 }, { x: 360, y: 132 }, { x: 208, y: 184 }, { x: 300, y: 192 }],
   },
   {
-    id: 'observatorio', arquivo: 'cena-observatorio', particulas: 'estrelas',
+    id: 'observatorio', arquivo: 'cena-observatorio', particulas: 'estrelas', pinturaNatal: 'cena-observatorio-natal',
     gato: [{ x: 222, y: 162, pose: 'fogueira' }, { x: 154, y: 170, pose: 'repouso' }, { x: 264, y: 168, pose: 'sentado' }, { x: 310, y: 152, pose: 'observando' }, { x: 190, y: 176, pose: 'sentado' }, { x: 296, y: 176, pose: 'repouso' }],
     coruja: [{ x: 176, y: 104 }, { x: 200, y: 104 }, { x: 201, y: 155 }, { x: 346, y: 176 }, { x: 322, y: 198 }],
   },
   {
-    id: 'cais', arquivo: 'cena-cais', particulas: 'vagalumes',
+    id: 'cais', arquivo: 'cena-cais', particulas: 'vagalumes', pinturaNatal: 'cena-cais-natal',
     gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 176, y: 148, pose: 'repouso' }, { x: 318, y: 122, pose: 'sentado' }, { x: 330, y: 92, pose: 'observando' }, { x: 262, y: 168, pose: 'repouso' }, { x: 290, y: 172, pose: 'sentado' }],
     coruja: [{ x: 320, y: 95 }, { x: 358, y: 96 }, { x: 342, y: 160 }, { x: 186, y: 135 }, { x: 177, y: 111 }],
   },

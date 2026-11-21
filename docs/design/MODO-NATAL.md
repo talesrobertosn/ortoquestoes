@@ -135,7 +135,8 @@ número ou botão e sem criar rolagem lateral:
       (`scripts/natal/cenario_acampamento.py` → `cena-natal-*.webp`: fio de luzes da barraca ao lampião, guirlanda na
       barraca, laço no lampião, presentes nos caixotes, pinheirinho na grama). Cada cenário ganha `pinturaNatal` em
       `cenarios.ts` e o `CenaDiorama.tsx` troca a pintura com o modo no ar.
-- [ ] Etapa 3, os outros cenários (Forja, Cais, Observatório, Neve, Abrigo, Praça): continua no Codex, pelo pedido em
-      `docs/prompts/codex-natal.md`.
+- [x] Etapa 3, Forja, Cais e Observatório (pinturas aprovadas em 21/11/2026): painéis de manhã, tarde e noite, com
+      pinheiros e luz própria. Os três cenários usam `pinturaNatal` para escolher a variante no rodízio.
+- [ ] Etapa 3, os cenários restantes (Neve, Abrigo, Praça): continuam pelo pedido em `docs/prompts/codex-natal.md`.
 - [ ] Etapa 4: as conversas entre as partes (a meta do dia acende o fio, a coruja visita a guirlanda, o trenó).
 - [ ] Demais páginas.
