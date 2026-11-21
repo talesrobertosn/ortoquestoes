@@ -47,7 +47,7 @@ COMO ESCREVER (o que o Tales aprovou e pediu):
   correta e cada errada com parágrafo próprio e com a página quando o motivo vem do livro.
 - Citação literal do Green com flexibilidade: muita quando a resposta depende da letra do livro, nenhuma
   quando não acrescenta. Sem parágrafo-padrão de citação.
-- "Por que esta questão foi criada." começa com "Inspirada na questão N do SIMÃO 2023, que ...".
+- "Por que esta questão foi criada." começa com "Inspirada na questão N do simulado da prova de título de cirurgia da mão de 2023, que ..." (sem as siglas SIMÃO e SBCM no texto do site; Tales, 20/11/2026).
 - Lote sempre com PROVA ("SIMÃO" ou "SBCM") e ANO; tema e até três subtemas da taxonomia.
 - Sem travessão, sem emoji, sem itálico, sem "assinale", sem EXCETO.
 - Gabarito equilibrado (veja o acumulado na linha da prova no Resumo do PROGRESSO).
@@ -156,7 +156,7 @@ REGRAS NOVAS (valem para todo lote daqui em diante):
   provas ou anos no mesmo lote. No site isso vira o selo "Inspirada no SIMÃO 2023" e o filtro por ano,
   que vai alimentar o cronograma e os temas que mais caem da cirurgia da mão. Tema e subtemas certos
   (até três da taxonomia, todos os que a questão cobra).
-- "Por que esta questão foi criada." começa com "Inspirada na questão N do SIMÃO 2023 (ou SBCM 2024)".
+- "Por que esta questão foi criada." começa com "Inspirada na questão N do simulado da prova de título de cirurgia da mão de 2023" (ou "da prova de título de 2024"); nada de SIMÃO ou SBCM no texto do site.
 
 3. Termine o SIMÃO 2023. Depois acrescente as citações literais aos lotes do SIMÃO 2023 que já foram
    publicados sem elas, com scripts/simulados/enriquecer.py (só acrescenta texto).

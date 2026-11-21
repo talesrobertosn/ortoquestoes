@@ -229,8 +229,11 @@ O motivo de mandar o Green e os resumos é **o comentário passar autoridade**. 
    e alimenta o filtro por ano e, depois, o cronograma e os temas que mais caem da cirurgia da mão. Por isso
    tema e subtemas também precisam estar certos: até três subtemas da taxonomia, todos os que a questão
    realmente cobra.
-7. **"Por que esta questão foi criada."** diz a prova, o ano e o número: "Inspirada na questão 35 do SIMÃO 2023,
-   que cobrou ...".
+7. **"Por que esta questão foi criada."** diz a prova, o ano e o número, **sem as siglas SBCM e SIMÃO no texto do
+   site** (Tales, 20/11/2026: mais genérico). SBCM vira "prova de título"; SIMÃO vira "simulado da prova de título de
+   cirurgia da mão": "Inspirada na questão 35 do simulado da prova de título de cirurgia da mão de 2023, que cobrou
+   ..." ou "Inspirada na questão 47 da prova de título de 2024, que perguntou ...". As siglas continuam valendo nos
+   documentos internos, nos nomes de arquivo e nos lotes.
 8. **Lotes já publicados sem citação literal** (SIMÃO 2023 até onde já foi feito): ao terminar o SIMÃO 2023,
    acrescentar as citações com `scripts/simulados/enriquecer.py` (só acrescenta texto, não muda gabarito nem id).
 
