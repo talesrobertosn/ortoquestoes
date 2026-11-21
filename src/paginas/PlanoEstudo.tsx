@@ -13,7 +13,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, indiceDoPlano, marcarReservadas, opcoesComPuxado,  opcoesDe,  type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { acervoDoPlano, type AcervoPlano, cotaRevisoesDaMeta, revisoesNaMetaAtivas, entraNoPlano, calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, indiceDoPlano, marcarReservadas, opcoesComPuxado,  opcoesDe,  type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
@@ -213,6 +213,8 @@ export function PlanoEstudo() {
   const dadosHub = useMemo(() => {
     if (!indice || !plano || !calculo) return null
     const simulados = incluiSimulados(plano)
+    const recorte = indiceDoPlano(indice, plano)
+    const indiceAtivo = plano.opcoes?.acervo && plano.opcoes.acervo.em <= hojeBR() ? { ...recorte, questoes: recorte.questoes.filter((q) => entraNoPlano(q, simulados)) } : indice
     const constancia = calcularConstancia(respondidas, plano, calculo)
     const areasRevisao = calculo.fase === 'revisao' ? areasDoDiaRevisao(plano, calculo) : []
     const temas = calculo.temas.filter((t) => t.acertoEstimado !== null)
@@ -229,8 +231,8 @@ export function PlanoEstudo() {
       simulados: contagemSimulados(indice, respondidas),
       semana: resumoDaSemana(indice, respondidas, calculo),
       areasRevisao,
-      idsForte: areasRevisao.length ? idsRevisaoForte(indice, respondidas, areasRevisao.map((a) => a.slug), calculo.metaMedia) : [],
-      erros: contarErrosQueImportam(indice, respondidas),
+      idsForte: areasRevisao.length ? idsRevisaoForte(indiceAtivo, respondidas, areasRevisao.map((a) => a.slug), calculo.metaMedia) : [],
+      erros: contarErrosQueImportam(indiceAtivo, respondidas),
     }
   }, [indice, plano, calculo, respondidas, chaveRitmo, diagnosticoFeito])
 
@@ -255,23 +257,37 @@ export function PlanoEstudo() {
   /** A sessão do dia: a área principal com a mistura espalhada (as duas da lista do dia), com o que a pessoa pediu para adiantar. */
   async function comecarHoje(c: CalculoPlano | null = calculo, p: PlanoSalvo | null | undefined = plano, /** Dia curto: só as primeiras `limite` questões da sessão de hoje (o resto continua no dia). */ limite = 100) {
     if (ficticio) { convidar('comecar'); return }
-    if (!indice || !c?.hoje || !p) return
+    if (!indice || !c || (!c.hoje && !c.revisoesHoje?.some((r) => !r.feita)) || !p) return
     // Antes de escolher as questões, traz o que foi feito nos outros aparelhos:
     // sem isso, abrir o computador logo depois de estudar no MacBook montava a
     // sessão com as mesmas questões. Sem rede, segue com o que este aparelho tem.
     if (!DEMO) { definirPreparando(true); await aguardarSincronia(8000); definirPreparando(false) }
     const atuais = DEMO ? respondidas : ler<Respondidas>('respondidas', {})
-    if (!DEMO && atuais !== respondidas) { c = calcularPlano(indice, atuais, p); if (!c.hoje) return }
-    const itens = c.hoje!.itens.length ? c.hoje!.itens : [{ slug: c.hoje!.slug, n: c.hoje!.n, mistura: false }]
+    if (!DEMO && atuais !== respondidas) { c = calcularPlano(indice, atuais, p); if (!c.hoje && !c.revisoesHoje?.some((r) => !r.feita)) return }
+    const itens = c.hoje?.itens.length ? c.hoje.itens : c.hoje ? [{ slug: c.hoje.slug, n: c.hoje.n, mistura: false }] : []
     // Hoje foi puxado num dia anterior: a sessão é a que ficou guardada para ele. Senão, a de sempre,
     // sem as questões presas aos próximos dias puxados.
     const ids = c.puxados[hojeBR()] && c.dias[0]
       ? idsDaSessaoDoDia(c.dias[0], atuais).slice(0, 100)
       : idsDoDiaPlano(indiceDoPlano(indice, p), itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), { ...atuais, ...marcarReservadas(c) }, incluiSimulados(p))
-    if (limite < ids.length) ids.length = Math.max(1, limite)
-    if (!ids.length) return
-    const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
-    if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma', diaPlano: hojeBR() }))) return
+    const restantes = c.revisoesHoje?.filter((r) => !r.feita) ?? []
+    const revisoes = restantes.slice(0, limite === 10 ? cotaRevisoesDaMeta(limite) : limite)
+    const novas = ids.slice(0, limite - revisoes.length)
+    const fila = [...novas]
+    revisoes.forEach((r, i) => {
+      fila.splice(Math.floor(((i + 1) * novas.length) / (revisoes.length + 1)) + i, 0, r.id)
+    })
+    if (!fila.length) return
+    const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: revisoes.length ? 'todas' as const : 'naoRespondidas' as const, embaralhar: false, limite: fila.length }
+    const cronograma: NonNullable<EstadoSessao['cronograma']> = {
+      modalidade: 'ortopedia',
+      ...(c.revisoesHoje?.length ? {
+        meta: c.metaDiaria + c.revisoesHoje.length,
+        feitasAntes: Math.min(c.feitasHoje, c.metaDiaria) + c.revisoesHoje.filter((r) => r.feita).length,
+        revisoes: Object.fromEntries(revisoes.map(({ id, assunto, ultimoErroEm }) => [id, { assunto, ultimoErroEm }])),
+      } : {}),
+    }
+    if (!(await iniciarComAviso(filtros, fila, { origem: 'cronograma', cronograma, diaPlano: hojeBR() }))) return
     navegar('/sessao')
   }
 
@@ -305,7 +321,7 @@ export function PlanoEstudo() {
     const sessaoIds = doDia ? idsDaSessaoDoDia(doDia, atuais) : ids.filter((id) => !atuais[id])
     if (!sessaoIds.length) return
     const temas = [...new Set((doDia?.itens ?? []).map((i) => i.slug))]
-    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma', diaPlano: dia }))) return
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma', cronograma: { modalidade: 'ortopedia' }, diaPlano: dia }))) return
     navegar('/sessao')
   }
   /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
@@ -316,14 +332,21 @@ export function PlanoEstudo() {
     navegar('/sessao')
   }
 
+  function indiceParaAtividades() {
+    const base = indice!
+    if (!plano?.opcoes?.acervo || plano.opcoes.acervo.em > hojeBR()) return base
+    const recorte = indiceDoPlano(base, plano)
+    return { ...recorte, questoes: recorte.questoes.filter((q) => entraNoPlano(q, incluiSimulados(plano))) }
+  }
+
   /** Mini-simulado: 30 questões já vistas, cronometradas (1,5 min cada). */
-  async function comecarMini() {
+  async function comecarMini(marcar = true) {
     if (ficticio) { convidar('outro'); return }
     if (!indice) return
-    const ids = idsMiniSimulado(indice, respondidas)
+    const ids = idsMiniSimulado(indiceParaAtividades(), respondidas)
     if (!ids.length) return
-    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90), diaPlano: hojeBR() }))) return
-    marcarFeito('mini')
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', cronograma: { modalidade: 'ortopedia' }, simulado: true, limiteSegundos: Math.round(ids.length * 90), diaPlano: hojeBR() }))) return
+    if (marcar) marcarFeito('mini')
     navegar('/sessao')
   }
 
@@ -411,12 +434,37 @@ export function PlanoEstudo() {
     if (exemplo) { definirPlano(null); return }
     try { await chamarRpc('apagar_plano_estudo', {}); window.location.reload() } catch { definirErro('Não foi possível abandonar o cronograma agora. Confira a conexão e tente de novo.') }
   }
+  const vigencia = (() => {
+    let dia = somarDias(hojeBR(), 1)
+    for (let i = 0; i < 6 && plano?.folgas.includes(diaCivil(dia).getDay()); i++) dia = somarDias(dia, 1)
+    return dia
+  })()
+  function comAcervo(atual: PlanoSalvo, novo: AcervoPlano): OpcoesPlano {
+    return { ...atual.opcoes, acervo: { em: vigencia, anterior: acervoDoPlano(atual), novo } }
+  }
   const acoesVisao = {
     aoZerar: () => { void zerar() },
     aoAbandonar: () => { void abandonar() },
     aoRevanche: (ids: string[]) => comecarIds(ids, 'erros'),
     aoComecarCurto: (n: number) => { void comecarHoje(calculo, plano, n) },
-    aoSoTeot: (ligar: boolean) => mudarOpcao((p) => ({ ...(p.opcoes ?? {}), soTeot: ligar }), 'Não foi possível mudar para só TEOT agora. Confira a conexão e tente de novo.'),
+    previaAcervo: (novo: AcervoPlano) => {
+      if (!plano) return { data: vigencia, meta: 0, cobertura: 0, total: 0, respondidas: 0 }
+      const proximaData = inicioDaChave(vigencia)
+      const proximo = { ...plano, opcoes: comAcervo(plano, novo) }
+      const simulado = calcularPlano(indice, respondidas, proximo, proximaData)
+      const elegiveis = indiceDoPlano(indice, proximo, proximaData).questoes.filter((q) => entraNoPlano(q, novo.simulados))
+      const respondidasNoRecorte = elegiveis.filter((q) => Boolean(respondidas[q.id])).length
+      return { data: vigencia, meta: simulado.metaDiaria, cobertura: simulado.projecao.maisCaiPct, total: elegiveis.length, respondidas: respondidasNoRecorte }
+    },
+    aoAcervo: (novo: AcervoPlano) => mudarOpcao((p) => comAcervo(p, novo), 'Não foi possível salvar o acervo agora. Tente de novo.'),
+    aoDiaLeve: (dia: string) => mudarOpcao((atual) => {
+      const anteriores = atual.opcoes?.diasLevesAvulsos ?? []
+      return { ...atual.opcoes, diasLevesAvulsos: anteriores.includes(dia) ? anteriores.filter((d) => d !== dia) : [...anteriores, dia] }
+    }, 'Não foi possível ajustar esse dia. Tente de novo.'),
+    aoRevisoesNaMeta: (novo: boolean) => mudarOpcao((atual) => ({
+      ...atual.opcoes,
+      revisoesNaMeta: { em: vigencia, anterior: revisoesNaMetaAtivas(atual, hojeBR()), novo },
+    }), 'Não foi possível salvar a opção de revisões agora. Tente de novo.'),
     aoDiaErros: (dia: number | null) => mudarOpcao((p) => ({ ...(p.opcoes ?? {}), diaErros: dia }), 'Não foi possível guardar o dia dos erros agora. Confira a conexão e tente de novo.'),
   }
 
@@ -431,14 +479,15 @@ export function PlanoEstudo() {
         revisaoHoje: areasRevisao.length ? { areas: areasRevisao, n: idsForte.length } : null,
         aoRevisaoForte: () => comecarIds(idsForte, 'reta-final', areasRevisao.map((a) => a.slug)),
         errosQueImportam: erros,
-        aoErros: () => comecarIds(idsErrosQueImportam(indice, respondidas, Math.max(20, calculo.metaMedia)), 'reta-final'),
-        aoAquecimento: () => comecarIds(idsAquecimentoVespera(indice, respondidas), 'reta-final'),
+        aoSimuladoDaProva: plano.opcoes?.acervo && plano.opcoes.acervo.em <= hojeBR() && acervoDoPlano(plano).oficiais !== 'todas' ? () => comecarMini(false) : undefined,
+        aoErros: () => comecarIds(idsErrosQueImportam(indiceParaAtividades(), respondidas, Math.max(20, calculo.metaMedia)), 'reta-final'),
+        aoAquecimento: () => comecarIds(idsAquecimentoVespera(indiceParaAtividades(), respondidas), 'reta-final'),
       },
       aoDiagnostico: () => { if (ficticio) { convidar('outro'); return } marcarDiagnostico(new Date().toISOString()); comecarIds(idsDiagnostico(indice, respondidas, simulados), 'diagnostico') },
-      aoReativar: (slug: string) => comecarIds(idsReativar(indice, respondidas, slug), 'reativar', [slug]),
+      aoReativar: (slug: string) => comecarIds(idsReativar(indiceParaAtividades(), respondidas, slug), 'reativar', [slug]),
       aoTreinarFoco: async (area: AreaIncidencia, foco: Foco) => {
         if (ficticio) { convidar('outro'); return }
-        const ids = idsDoFoco(indice, area, foco)
+        const ids = idsDoFoco(indiceParaAtividades(), area, foco)
         const ordem = [...ids.filter((id) => respondidas[id]?.c === false), ...ids.filter((id) => !respondidas[id]), ...ids.filter((id) => respondidas[id] && respondidas[id].c !== false)].slice(0, 20)
         if (!ordem.length) return
         const subtemas = [area.subtema, foco.noAcervo ?? foco.nome].filter((s): s is string => !!s)
@@ -523,7 +572,7 @@ function marcasDoAparelho(feitos: FeitosDoDia, resumao: ResumaoHoje): MarcasDia 
  * que levava de volta às questões de ontem, e não havia como montar a de hoje.
  */
 export function sessaoPendente(sessao: EstadoSessao | null, agora: number = Date.now()): { feitas: number; total: number; tema: string; simulado: boolean } | null {
-  if (!sessao || sessao.concluidaEm || !sessao.origem) return null
+  if (!sessao || sessao.concluidaEm || !sessao.origem || sessao.cronograma?.modalidade.startsWith('mao-')) return null
   // Só a sessão aberta pelo próprio cronograma de TEOT/TARO (o dia, um dia puxado ou o mini-simulado) vira o
   // "Continuar" do dia (06/11/2026: uma sessão de 18 questões aberta por outra tela prendia o botão em
   // "faltam 17" de um dia de 65). As outras continuam em Questões, mas não tomam o lugar do dia.
@@ -680,10 +729,26 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
       const fresco = atual ? await obterPlano() : null
       // Trocar a escolha dos simulados muda o tamanho do acervo do plano: a contagem recomeça.
       const mudouSimulados = !!fresco && incluiSimulados(fresco) !== simulados
-      const recomecando = !fresco || recomecar || mudouSimulados
+      const recomecando = !fresco || recomecar
       const anteriores = opcoesDe(fresco)
-      const novasOpcoes: OpcoesPlano = { ...opcoes(), semanasDificeis: anteriores.semanasDificeis, ...(recomecando ? {} : { adiantados: anteriores.adiantados }) }
-      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: nomeProva, p_base: base, p_recomecar: recomecando }, simulados, novasOpcoes)
+      const campos = opcoes()
+      const novasOpcoes: OpcoesPlano = {
+        ...fresco?.opcoes,
+        diasLeves: campos.diasLeves,
+        qtdLeve: campos.qtdLeve,
+        comecarPor: campos.comecarPor,
+        dominadas: campos.dominadas,
+        provaExtra: campos.provaExtra ?? null,
+        semanasDificeis: anteriores.semanasDificeis,
+        ...(recomecar ? { adiantados: [], puxados: {} } : {}),
+      }
+      if (fresco && mudouSimulados) {
+        const atual = acervoDoPlano(fresco)
+        let em = somarDias(hojeBR(), 1)
+        while (folgas.includes(diaCivil(em).getDay())) em = somarDias(em, 1)
+        novasOpcoes.acervo = { em, anterior: atual, novo: { ...atual, simulados } }
+      }
+      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: nomeProva, p_base: base, p_recomecar: recomecando }, fresco?.incluir_simulados ?? simulados, novasOpcoes)
       if (!salvo) throw new Error('Plano não encontrado depois de salvar.')
       aoSalvar(salvo, diagnostico)
     } catch (falha) {
@@ -796,7 +861,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
             <button type="button" role="radio" aria-checked={!simulados} className="pe-intensidade" onClick={() => definirSimulados(false)}><strong>Só questões oficiais</strong><span>Os simulados seguem no treino livre.</span></button>
           </div>
           <details className="pe-form__mais"><summary>O que são os OrtoQuestões Simulados?</summary><p className="texto-2">Questões autorais do site, feitas por <strong>engenharia reversa das provas originais</strong>: o mesmo estilo, o mesmo tipo de cobrança e o mesmo nível, escritas a partir da bibliografia de referência e comentadas com a citação do livro. Não contam para os temas que mais caem, que usam só as provas oficiais.</p></details>
-          {atual && incluiSimulados(atual) !== simulados && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Trocar esta opção recomeça a contagem do cronograma a partir de hoje.</p>}
+          {atual && incluiSimulados(atual) !== simulados && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> A mudança vale a partir do próximo dia de estudo.</p>}
           {!previa && !atual && <label className="caixa"><input type="checkbox" checked={diagnostico} onChange={(e) => definirDiagnostico(e.target.checked)} /><span>Começar com o <b>diagnóstico de {TAMANHO_DIAGNOSTICO} questões</b> (uns 45 minutos): o cronograma já sabe onde você está mais fraco desde o primeiro dia.</span></label>}
           {atual && <label className="caixa"><input type="checkbox" checked={recomecar} onChange={(e) => definirRecomecar(e.target.checked)} /><span>Recomeçar a contagem hoje (zera o "à frente ou atrás do cronograma")</span></label>}
         </div>}

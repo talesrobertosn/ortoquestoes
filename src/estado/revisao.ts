@@ -2,6 +2,7 @@
 export interface RegistroQuestao {
   c: boolean | null
   q: number
+  primeiraEm?: number
   tentativas?: number
   acertos?: number
   erros?: number
@@ -39,8 +40,10 @@ export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: 
   const intervalos = INTERVALOS[confianca]
   // Registros antigos não guardavam a primeira letra; com uma tentativa só, a última é a primeira.
   const primeira = anterior ? (anterior.p ?? ((anterior.tentativas ?? 1) === 1 ? anterior.m : undefined)) : marcada
+  const primeiraEm = anterior?.primeiraEm ?? (anterior ? (anterior.tentativas ?? 1) <= (anterior.historico?.length || 1) ? anterior.historico?.[0]?.em ?? anterior.q : undefined : agora)
   return {
     c: correta, q: agora,
+    ...(primeiraEm !== undefined ? { primeiraEm } : {}),
     tentativas: (anterior?.tentativas ?? (anterior ? 1 : 0)) + 1,
     acertos: (anterior?.acertos ?? (anterior?.c === true ? 1 : 0)) + Number(correta === true),
     erros: (anterior?.erros ?? (anterior?.c === false ? 1 : 0)) + Number(correta === false),

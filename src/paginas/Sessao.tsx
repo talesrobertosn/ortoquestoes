@@ -734,7 +734,12 @@ export function Sessao() {
         <Icone nome="direita" tamanho={22} />
       </button>
       <div className="barra-sessao sx-barra nao-imprime" ref={barra}>
-        {sessao.origem === 'cronograma' && !simulado && <FaixaCronograma respondidasNaSessao={respondidas} />}
+        {sessao.origem === 'cronograma' && !sessao.cronograma?.modalidade.startsWith('mao-') && !sessao.filtros.areas?.includes('mao') && !sessao.cronograma?.revisoes && !simulado && <FaixaCronograma respondidasNaSessao={respondidas} />}
+        {sessao.cronograma?.revisoes && <div className="conteudo faixa-cronograma"><span className="faixa-cronograma__texto">Ortopedia · meta de hoje</span><b className="numerico">{Math.min(sessao.cronograma.meta ?? 0, (sessao.cronograma.feitasAntes ?? 0) + respondidas)}/{sessao.cronograma.meta}</b></div>}
+        {sessao.cronograma?.modalidade.startsWith('mao-') && <div className="conteudo faixa-cronograma">
+          <span className="faixa-cronograma__texto">Mão · {sessao.cronograma.modalidade === 'mao-titulo' ? 'Prova de título' : 'Ingresso'}</span>
+          {!simulado && Boolean(sessao.cronograma.meta) && <b className="numerico">{Math.min(sessao.cronograma.meta!, (sessao.cronograma.feitasAntes ?? 0) + respondidas)}/{sessao.cronograma.meta}</b>}
+        </div>}
         <div className={'conteudo barra-sessao__interno sx-barra__interno' + (atualRespondida ? ' barra-sessao__interno--respondida' : '')}>
           <div className="sx-barra__linha">
             <p className="sx-contador">
@@ -825,7 +830,11 @@ export function Sessao() {
       {questaoAtual && letrasAcervo === undefined && preferencias.embaralhar && !simulado && !nacional ? (
         <Carregando linhas={6} />
       ) : questaoAtual ? (
-        <><AvisoLimite estado={estadoLimite} />{sessao.respostas[questaoAtual.id]?.outroAparelho && <p className="conteudo aviso-outro-aparelho" role="note">Você já respondeu esta questão em outro aparelho. Siga para a próxima.</p>}<CartaoQuestao
+        <><AvisoLimite estado={estadoLimite} />
+          {sessao.cronograma?.revisoes?.[questaoAtual.id] && <p className="conteudo aviso-outro-aparelho">
+            <strong>Revisão</strong>{atualRespondida && <> · Você errou esta questão em {new Date(sessao.cronograma.revisoes[questaoAtual.id].ultimoErroEm).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', timeZone: 'America/Sao_Paulo' })}. Ela voltou porque {sessao.cronograma.revisoes[questaoAtual.id].assunto} é um assunto frequente.</>}
+          </p>}
+          {sessao.respostas[questaoAtual.id]?.outroAparelho && <p className="conteudo aviso-outro-aparelho" role="note">Você já respondeu esta questão em outro aparelho. Siga para a próxima.</p>}<CartaoQuestao
           recuperacaoAtiva={sessao.revisao?.recuperacaoAtiva}
           questao={questaoAtual}
           numero={posicao + 1}

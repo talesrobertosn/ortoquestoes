@@ -1,6 +1,6 @@
 import type { Indice } from './tipos'
 import { diaCivil, chaveCivil, inicioDoDia } from '../util/dia'
-import { entraNoPlano, incluiSimulados, indiceDoPlano, type PlanoSalvo, type RegistroMinimo } from './planoEstudo'
+import { entraNoPlano, incluiSimulados, indiceDoPlano, primeiraRespostaDoPlano, type PlanoSalvo, type RegistroMinimo } from './planoEstudo'
 import type { IndiceBibliotecaLeve, ResumoCapituloLeve } from '../biblioteca/tipos'
 
 /**
@@ -79,8 +79,8 @@ export interface ErrosCronograma {
  * (dados/ordemAlternativas.ts, que vale para toda questão já respondida antes).
  */
 export function errosDoCronograma(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date()): ErrosCronograma {
-  const indice = indiceDoPlano(indiceInteiro, plano)
-  const simulados = incluiSimulados(plano)
+  const indice = indiceDoPlano(indiceInteiro, plano, agora)
+  const simulados = incluiSimulados(plano, agora)
   const inicioHoje = inicioDoDia(agora)
   const hoje = diaCivil(agora)
   const limite = Math.max(Date.parse(plano.criado_em), new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - JANELA_ERROS_DIAS).getTime())
@@ -130,10 +130,11 @@ export interface Previsao {
  * divididas pelos dias de estudo da janela, projetadas sobre o que resta, pulando as folgas.
  */
 export function previsaoDeTermino(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, calculo: { restante: number; metaDiaNormal: number; inicioRetaFinal: Date }, agora: Date | number = new Date()): Previsao {
-  const indice = indiceDoPlano(indiceInteiro, plano)
-  const simulados = incluiSimulados(plano)
+  const indice = indiceDoPlano(indiceInteiro, plano, agora)
+  const simulados = incluiSimulados(plano, agora)
   const hoje = diaCivil(agora)
   const fim = inicioDoDia(agora)
+  const chaveHoje = chaveCivil(hoje)
   const criado = diaCivil(Date.parse(plano.criado_em))
   let diasEstudo = 0
   let inicio = fim
@@ -147,7 +148,7 @@ export function previsaoDeTermino(indiceInteiro: Indice, respondidas: Record<str
   if (diasEstudo) for (const q of indice.questoes) {
     if (!entraNoPlano(q, simulados)) continue
     const r = respondidas[q.id]
-    const primeira = r?.historico?.[0]?.em ?? r?.q
+    const primeira = primeiraRespostaDoPlano(r, plano, chaveHoje)
     if (primeira !== undefined && primeira >= inicio && primeira < fim) feitas++
   }
   const ritmo = diasEstudo ? Math.round((feitas / diasEstudo) * 10) / 10 : null
@@ -199,22 +200,23 @@ export function areasParaMelhorar(temas: Array<{ slug: string; nome: string; fal
 export interface DiaFeito { n: number; certas: number; validas: number; areas: Array<{ slug: string; n: number }> }
 
 /** O que foi feito em cada dia desde a criação do plano (primeiras respostas das questões do plano), para o calendário. */
-export function historicoDosDias(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo): Map<string, DiaFeito> {
-  const indice = indiceDoPlano(indiceInteiro, plano)
-  const simulados = incluiSimulados(plano)
+export function historicoDosDias(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = Date.now()): Map<string, DiaFeito> {
+  const indice = indiceDoPlano(indiceInteiro, plano, agora)
+  const simulados = incluiSimulados(plano, agora)
   const desde = diaCivil(Date.parse(plano.criado_em)).getTime()
+  const chaveHoje = chaveCivil(diaCivil(agora))
   const mapa = new Map<string, DiaFeito>()
   for (const q of indice.questoes) {
     if (!entraNoPlano(q, simulados)) continue
     const r = respondidas[q.id]
     if (!r) continue
     const primeira = r.historico?.[0]
-    const em = primeira?.em ?? r.q
+    const em = primeiraRespostaDoPlano(r, plano, chaveHoje)
     if (em === undefined || em < desde) continue
     const chave = chaveCivil(diaCivil(em))
     const dia = mapa.get(chave) ?? { n: 0, certas: 0, validas: 0, areas: [] }
     dia.n++
-    const certa = primeira ? primeira.correta : r.c
+    const certa = primeira?.em === em ? primeira.correta : r.q === em ? r.c : r.historico?.find((h) => h.em === em)?.correta ?? null
     if (certa !== null) { dia.validas++; if (certa) dia.certas++ }
     const slug = indice.temas[q.t]?.slug ?? String(q.t)
     const area = dia.areas.find((a) => a.slug === slug)

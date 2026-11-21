@@ -79,7 +79,7 @@ export function receberDocumento(estado: EstadoSync, doc: Documento, enviada?: A
 
 /** Uma tentativa no histórico de uma questão (ver estado/revisao.ts). */
 interface Tentativa { em: number; correta: boolean | null; confianca?: string }
-interface RegistroSync { c: boolean | null; q: number; tentativas?: number; acertos?: number; erros?: number; p?: string; historico?: Tentativa[]; [campo: string]: unknown }
+interface RegistroSync { c: boolean | null; q: number; primeiraEm?: number; tentativas?: number; acertos?: number; erros?: number; p?: string; historico?: Tentativa[]; [campo: string]: unknown }
 const ehRegistro = (v: unknown): v is RegistroSync => !!v && typeof v === 'object' && !Array.isArray(v) && 'q' in (v as object)
 const chaveTentativa = (t: Tentativa) => `${t.em}|${t.correta}`
 
@@ -94,15 +94,17 @@ export function juntarRespondida(a: unknown, b: unknown): unknown {
   if (!ehRegistro(a)) return ehRegistro(b) ? b : a
   if (!ehRegistro(b)) return a
   const [novo, velho] = Number(b.q) > Number(a.q) ? [b, a] : [a, b]
+  const primeiraEm = Math.min(novo.primeiraEm ?? Infinity, velho.primeiraEm ?? Infinity)
+  const base = Number.isFinite(primeiraEm) ? { ...novo, primeiraEm } : novo
   const conhecidas = new Set((novo.historico ?? []).map(chaveTentativa))
   // Registro antigo, sem histórico: a própria resposta é a única tentativa conhecida.
   const doVelho = velho.historico?.length ? velho.historico : [{ em: velho.q, correta: velho.c }]
   const extras = doVelho.filter(t => !conhecidas.has(chaveTentativa(t)) && t.em !== novo.q)
-  if (!extras.length) return novo
+  if (!extras.length) return base
   const historico = [...(novo.historico ?? [{ em: novo.q, correta: novo.c }]), ...extras].sort((x, y) => x.em - y.em).slice(-8)
   const primeiraMaisAntiga = (velho.historico?.[0]?.em ?? velho.q) < (novo.historico?.[0]?.em ?? novo.q)
   return {
-    ...novo,
+    ...base,
     tentativas: (novo.tentativas ?? 1) + extras.length,
     acertos: (novo.acertos ?? Number(novo.c === true)) + extras.filter(t => t.correta === true).length,
     erros: (novo.erros ?? Number(novo.c === false)) + extras.filter(t => t.correta === false).length,

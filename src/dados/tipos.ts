@@ -340,6 +340,12 @@ export interface EstadoSessao {
   origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar' | 'erros' | 'revisao'
   /** Sessão de um dia do cronograma de TEOT/TARO ("AAAA-MM-DD"): só ela vira o "Continuar" do botão do dia. */
   diaPlano?: string
+  cronograma?: {
+    modalidade: 'ortopedia' | 'mao-ingresso' | 'mao-titulo'
+    meta?: number
+    feitasAntes?: number
+    revisoes?: Record<string, { assunto: string; ultimoErroEm: number }>
+  }
   /** Fotografia anterior à sessão, para explicar avanços sem reconstruir tentativas antigas. */
   revisao?: {
     recuperacaoAtiva: boolean

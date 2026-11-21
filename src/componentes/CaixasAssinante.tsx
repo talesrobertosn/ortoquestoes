@@ -30,7 +30,7 @@ export function usarCronogramaHoje() {
   const { status } = usarConta()
   const sincronizado = status.pronto && status.pendentes === 0
   const [sessaoLocal] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
-  const pendente = sessaoLocal && !sessaoLocal.concluidaEm && sessaoLocal.origem === 'cronograma' && Object.keys(sessaoLocal.respostas).length < sessaoLocal.ids.length
+  const pendente = sessaoLocal && !sessaoLocal.concluidaEm && sessaoLocal.origem === 'cronograma' && !sessaoLocal.cronograma?.modalidade.startsWith('mao-') && !sessaoLocal.filtros.areas?.includes('mao') && Object.keys(sessaoLocal.respostas).length < sessaoLocal.ids.length
     ? { feitas: Object.keys(sessaoLocal.respostas).length, total: sessaoLocal.ids.length } : null
 
   const dia = usarDiaAtual()

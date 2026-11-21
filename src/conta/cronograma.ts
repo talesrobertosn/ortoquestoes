@@ -132,6 +132,14 @@ export function mostrarNovidadeSimulados(plano: PlanoSalvo | null | undefined, v
  */
 export async function trocarSimulados(copia: PlanoSalvo, incluir: boolean): Promise<PlanoSalvo | null> {
   const plano = (await obterPlano()) ?? copia
+  if (plano.opcoes?.acervo) {
+    const salvo = await salvarOpcoes((atual) => {
+      const acervo = atual.opcoes?.acervo
+      return acervo ? { ...atual.opcoes, acervo: { ...acervo, novo: { ...acervo.novo, simulados: incluir } } } : null
+    })
+    marcarAvisoSimulados()
+    return salvo
+  }
   const salvo = await salvarPlano({ p_data_prova: plano.data_prova, p_intensidade: plano.intensidade, p_folgas: plano.folgas, p_prova: plano.prova, p_base: plano.base_respondidas, p_recomecar: false }, incluir, plano.opcoes ?? undefined, { avisar: false })
   marcarAvisoSimulados()
   return salvo

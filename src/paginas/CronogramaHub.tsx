@@ -96,6 +96,7 @@ export function AvisoEsquecimento({ esquecidos, aoReativar }: { esquecidos: Esqu
 // ─── Hoje, conforme a fase ─────────────────────────────────────────────────
 
 export interface AcoesRetaFinal {
+  aoSimuladoDaProva?: () => void
   revisaoHoje: { areas: AreaIncidencia[]; n: number } | null
   aoRevisaoForte: () => void
   errosQueImportam: number

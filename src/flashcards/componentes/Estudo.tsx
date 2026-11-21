@@ -68,12 +68,12 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
   const definirSessao = useCallback((s: { titulo: string; ids: string[]; cronograma?: boolean } | null) => definirSessaoBruta(s && { ...s, chave: Date.now() + Math.random() }), [])
   // Cronograma dos flashcards (15/10/2026): a sessão de hoje é exatamente a mesma da central e da página do cronograma.
   const crono = useMemo<Cronograma | null>(() => (cartas.length < 50 ? null : calcularCronograma(migrarPlano(ler<unknown>(CHAVE_PLANO, null)), cartas, registros)), [cartas, registros])
-  const seguirCronograma = useCallback((extra = 0) => {
+  const seguirCronograma = useCallback((extra = 0, maxRevisoes?: number) => {
     if (cartas.length < 50) return
     // sempre dos registros mais novos: no fim de uma sessão, "adiantar" já sabe o que foi feito
     const agora = calcularCronograma(migrarPlano(ler<unknown>(CHAVE_PLANO, null)), cartas, ler(CHAVE_REGISTROS, {}))
-    const ids = sessaoDoCronograma(agora, extra || (agora.sessaoHoje.length ? 0 : agora.plano.ritmo))
-    if (ids.length) { tocar('abrir'); definirSessao({ titulo: agora.sessaoHoje.length && !extra ? 'Cronograma: sessão de hoje' : 'Cronograma: adiantando', ids, cronograma: true }) }
+    const ids = maxRevisoes ? agora.revisoes.slice(0, maxRevisoes) : sessaoDoCronograma(agora, extra || (agora.sessaoHoje.length ? 0 : agora.plano.ritmo))
+    if (ids.length) { tocar('abrir'); definirSessao({ titulo: maxRevisoes ? 'Cronograma: revisão curta' : agora.sessaoHoje.length && !extra ? 'Cronograma: sessão de hoje' : 'Cronograma: adiantando', ids, cronograma: true }) }
   }, [cartas, definirSessao])
   const [tamanho, definirTamanho] = useState<number | 'pendentes'>(20)
   const [tipos, definirTipos] = useState<string[]>([])
@@ -252,7 +252,7 @@ function OrigemDoAcervo({ cartas }: { cartas: Flashcard[] }) {
 }
 
 /** "Seguir cronograma" no alto da Biblioteca: a sessão de hoje em um toque. */
-function CartaoCronogramaEstudo({ c, sugerido, aoSeguir }: { c: Cronograma; sugerido: boolean; aoSeguir: (extra?: number) => void }) {
+function CartaoCronogramaEstudo({ c, sugerido, aoSeguir }: { c: Cronograma; sugerido: boolean; aoSeguir: (extra?: number, maxRevisoes?: number) => void }) {
   const hoje = c.semana[0].assuntos
   const revisoes = c.sessaoHoje.length - c.novosHoje.length
   const proximos = c.assuntos.find((a) => a.novos.length)
@@ -270,6 +270,7 @@ function CartaoCronogramaEstudo({ c, sugerido, aoSeguir }: { c: Cronograma; suge
         </p>
         {/* sem plano salvo vale o plano sugerido (o mesmo da central e de Meu cronograma): dizer isso, com o atalho para ajustar */}
         {sugerido && <p className="fc-crono-estudo__sugerido">Plano sugerido: todos os assuntos, na ordem dos que mais caem, {c.plano.ritmo} novos por dia.</p>}
+        {c.revisoes.length > 10 && <p><button type="button" className="fc-crono-estudo__ver" onClick={() => aoSeguir(0, 10)}>Revisar só 10 agora</button> · {c.revisoes.length - 10} revisões ficam na fila</p>}
         <a className="fc-crono-estudo__ver" href={href('/flashcards/cronograma')}>{sugerido ? 'Ajustar o plano' : 'Ver o cronograma'}</a>
       </div>
       {(total > 0 || c.novosRestantes > 0) && (

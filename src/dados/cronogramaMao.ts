@@ -39,6 +39,7 @@ export interface ConfigMao {
   cobertura: 'essencial' | 'completa'
   /** Segundas-feiras ("AAAA-MM-DD") das semanas difíceis: só o dia mínimo, como no cronograma de ortopedia. */
   semanasDificeis?: string[]
+  diasLevesAvulsos?: string[]
   /** Questões feitas além da meta em cada dia ("AAAA-MM-DD"): saem do próximo dia de estudo. */
   adiantados?: Record<string, number>
   criadoEm: string
@@ -194,10 +195,11 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   // dias de hoje até a véspera da prova, separando a reta final (revisão forte e modo prova)
   const diasRetaFinal = diasEntre(config.criadoEm, config.dataProva) >= 6 * 7 ? DIAS_RETA_FINAL : DIAS_MODO_PROVA
   const dificeis = new Set(config.semanasDificeis ?? [])
+  const leves = new Set(config.diasLevesAvulsos ?? [])
   const calendario: Array<{ data: string; estudo: boolean; reta: boolean; dificil: boolean }> = []
   for (let i = 0; i < Math.min(diasRestantes, 730); i++) {
     const data = somarDias(hoje, i)
-    calendario.push({ data, estudo: dias.includes(diaDaSemana(data)), reta: diasRestantes - i <= diasRetaFinal, dificil: dificeis.has(segundaDaChave(data)) })
+    calendario.push({ data, estudo: dias.includes(diaDaSemana(data)), reta: diasRestantes - i <= diasRetaFinal, dificil: dificeis.has(segundaDaChave(data)) || leves.has(data) })
   }
   const faltam = diasRestantes
   const fase: FaseMao = encerrado ? 'passou' : faltam <= 1 ? 'vespera' : faltam <= DIAS_MODO_PROVA ? 'prova' : faltam <= diasRetaFinal ? 'revisao' : 'conteudo'
@@ -367,6 +369,7 @@ export function lerConfig(v: unknown): ConfigMao | null {
     ...(Array.isArray(c.semanasDificeis) ? { semanasDificeis: c.semanasDificeis.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)).slice(-20) } : {}),
     ...(Number(c.zeradoEm) > 0 ? { zeradoEm: Number(c.zeradoEm) } : {}),
     criadoEm: /^\d{4}-\d{2}-\d{2}$/.test(c.criadoEm ?? '') ? c.criadoEm! : c.dataProva!, em: Number(c.em) || 0,
+    ...(Array.isArray(c.diasLevesAvulsos) ? { diasLevesAvulsos: c.diasLevesAvulsos.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)) } : {}),
   }
 }
 

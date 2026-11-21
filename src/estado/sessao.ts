@@ -40,6 +40,7 @@ export interface OpcoesSessao {
   origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar' | 'erros' | 'revisao'
   /** Dia do cronograma de TEOT/TARO desta sessão (ver EstadoSessao.diaPlano). */
   diaPlano?: string
+  cronograma?: EstadoSessao['cronograma']
   revisao?: EstadoSessao['revisao']
 }
 
@@ -64,6 +65,7 @@ export function novaSessao(
     ...(opcoes.origem ? { origem: opcoes.origem } : {}),
     ...(opcoes.revisao ? { revisao: opcoes.revisao } : {}),
     ...(opcoes.diaPlano ? { diaPlano: opcoes.diaPlano } : {}),
+    ...(opcoes.cronograma ? { cronograma: opcoes.cronograma } : {}),
   }
 }
 
@@ -244,7 +246,9 @@ export function reconciliarSessao(sessao: EstadoSessao | null, respondidas: Reco
     const r = respondidas[id]
     if (!r || typeof r !== 'object') continue
     const tentativas = r.historico?.length ? r.historico : [{ em: r.q, correta: r.c, confianca: r.confianca ?? 'seguro' }]
-    const ultima = [...tentativas].reverse().find((t) => t.em >= sessao.criadaEm) ?? (soNovas ? tentativas[tentativas.length - 1] : undefined)
+    const mao = sessao.cronograma?.modalidade.startsWith('mao-') ?? sessao.filtros?.areas?.includes('mao')
+    const novaNoPlano = soNovas && !mao && !sessao.cronograma?.revisoes?.[id]
+    const ultima = [...tentativas].reverse().find((t) => t.em >= sessao.criadaEm) ?? (novaNoPlano ? tentativas[tentativas.length - 1] : undefined)
     if (!ultima) continue
     respostas ??= { ...sessao.respostas }
     respostas[id] = {
