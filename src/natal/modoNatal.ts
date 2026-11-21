@@ -12,10 +12,10 @@ export const MODO_NATAL = {
   /** A chave geral. Com false, nada de Natal aparece, nem dentro do período. */
   ligado: true,
   /**
-   * No ar para todos? (Tales, 21/11/2026: os enfeites saíram do site; voltam só com a confirmação dele.) Com false, o
-   * modo Natal só aparece em quem testa com `?natal=1`; os cenários de Natal do topo seguem a época deles, como antes.
+   * No ar para todos? Com false, o modo Natal só aparece em quem testa com `?natal=1`. Cada peça nova só entra no ar
+   * depois do OK do Tales nos prints (21/11/2026: aprovada a inicial com o fio de luzes, a árvore, a guirlanda e o boneco).
    */
-  noAr: false,
+  noAr: true,
   /** [mês, dia] de começo e de fim (inclusive); vira o ano. */
   de: [11, 21] as const,
   ate: [1, 6] as const,

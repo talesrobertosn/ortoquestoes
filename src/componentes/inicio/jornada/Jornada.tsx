@@ -12,7 +12,7 @@ import type { DiaSequencia } from '../PainelSequencia'
 import { CenaDiorama } from '../cena/CenaDiorama'
 import { CorujaPixel } from '../../../biblioteca/sala/CorujaPixel'
 import { usarPeriodo } from '../../../estado/aparencia'
-import { ArvoreNatal, FestaoNatal, GuirlandaNatal, PiscaAtalhos } from '../../../natal/EnfeitesInicio'
+import { ArvoreNatal, BonecoNatal, FestaoNatal, GuirlandaNatal } from '../../../natal/EnfeitesInicio'
 
 /*
  * A página inicial em níveis (31/10/2026, "redesign premium" pedido pelo Tales).
@@ -174,7 +174,6 @@ export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
         ))}
       </ul>
       <GuirlandaNatal />
-      <PiscaAtalhos quantos={atalhos.length} />
     </nav>
   )
 }
@@ -185,6 +184,7 @@ export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
  */
 export function ConviteInstagram() {
   return (
+    <>
     <a className="jn-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me" style={{ '--cena-insta': urlCss('pixel/inicio/cena-manha-960.webp') } as CSSProperties}>
       <span className="jn-insta__texto">
         <span className="jn-insta__selo"><Icone nome="instagram" tamanho={14} /> No Instagram</span>
@@ -197,6 +197,8 @@ export function ConviteInstagram() {
         <GatoPixel estado="observando" className="jn-insta__gato" />
       </span>
     </a>
+    <BonecoNatal />
+    </>
   )
 }
 

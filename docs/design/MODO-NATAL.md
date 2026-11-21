@@ -118,13 +118,16 @@ número ou botão e sem criar rolagem lateral:
 | Prazo | Ordem sugerida: chave ligada + festão, pisca-pisca, guirlanda e árvore (primeiro impacto) → gorro e cachecol → cenários de Natal um a um → conversas entre as partes → outras páginas. |
 
 ## Andamento
-- [x] Chave única com teste (`fixtures/testar_modo_natal.mjs`).
-- [x] OK do Tales neste plano.
-- [x] Etapa 1 (inicial): festão com pisca-pisca no topo, árvore plantada na barra de atalhos, guirlanda no canto,
-      pisca-pisca com uma lâmpada por atalho (acende e balança no mouse), neve nas caixas, laço na faixa de Planos e no
-      Simulado Nacional, luz de cada peça pintada em camada própria (`scripts/natal/enfeites.py`, `src/natal/`,
-      `src/estilos/natal/NatalInicio.css`). Enquanto os cenários de Natal não ficam prontos, o topo roda só os de inverno.
-- [ ] Etapa 2: gorro no gato, cachecol na coruja e no esqueleto.
-- [ ] Etapa 3: versão de Natal de cada cenário do topo (e então o rodízio volta a ter todos).
-- [ ] Etapa 4: as conversas entre as partes (meta do dia acende o fio, neve que acumula, coruja na guirlanda, trenó).
+- [x] Chave única com teste (`fixtures/testar_modo_natal.mjs`). `MODO_NATAL.noAr` decide se o modo vai ao ar para todos.
+- [x] Etapa 1, primeira tentativa (21/11/2026): festão, árvore, guirlanda, pisca-pisca sob a barra, neve e laços. O Tales
+      achou "horrível" (exagero em cima, nada embaixo, guirlanda escondida atrás da caixa) e pediu para retirar (#1202).
+      Regra desde então: **nada de Natal sobe sem os prints e o OK dele.**
+- [x] Etapa 1 refeita e aprovada (21/11/2026): poucas peças, em zigue-zague pela página, todas na técnica das cenas
+      (`scripts/natal/`: `fio_topo.py`, `arvore.py`, `guirlanda.py`, `boneco.py`, montagem comum em `hd2d.py`):
+      fio de lâmpadas na borda do topo (a luz cai no cenário), árvore plantada na barra de atalhos (à direita),
+      guirlanda pendurada no canto esquerdo da barra, boneco de neve com caneca de chocolate quente e lanterna junto da
+      turma do cartão do Instagram.
+- [ ] Etapa 2: gorro no gato, cachecol na coruja e no esqueleto (prints antes).
+- [ ] Etapa 3: versão de Natal de cada cenário do topo.
+- [ ] Etapa 4: as conversas entre as partes (a meta do dia acende o fio, a coruja visita a guirlanda, o trenó).
 - [ ] Demais páginas.

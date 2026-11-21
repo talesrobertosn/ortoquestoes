@@ -1,6 +1,6 @@
 import type { IdLinhaGato } from '../../mascote/sprites'
 import type { IdComportamento } from '../../mascote/comportamentos'
-import { MODO_NATAL, modoNatalAtivo } from '../../../natal/modoNatal'
+import { MODO_NATAL } from '../../../natal/modoNatal'
 
 /**
  * Os cenários do topo da página inicial (01/11/2026, pedido do Tales: "um cenário diferente para ficar trocando",
@@ -43,7 +43,7 @@ export type Cenario = {
   neve?: { arquivo?: string }
   /**
    * Cenário de Natal (vale, sala do chalé): some do rodízio quando a chave geral do modo Natal está desligada.
-   * Cenário de inverno: entra no topo durante o modo Natal (src/natal/modoNatal.ts), quando só os de inverno rodam.
+   * Cenário de inverno (neve, praça, vale, sala do chalé): marca para as versões de Natal dos cenários (etapa 3).
    */
   natal?: true
   inverno?: true
@@ -148,9 +148,6 @@ export function cenariosDoDia(agora = new Date(), lista: readonly Cenario[] = CE
   const { mes, diaDoMes } = horaDeBrasilia(agora)
   // Chave geral do modo Natal desligada: os cenários de Natal saem do rodízio, mesmo na época deles.
   const base = MODO_NATAL.ligado ? lista : lista.filter((c) => !c.natal)
-  // Modo Natal no ar (1/12 a 6/1): só os cenários de inverno (vale, sala do chalé, praça do pinheiro, neve).
-  const inverno = modoNatalAtivo(agora) ? base.filter((c) => c.inverno) : []
-  if (inverno.length) return inverno
   const hoje = base.filter((c) => naEpoca(c, mes, diaDoMes))
   return hoje.length ? hoje : [...base]
 }
