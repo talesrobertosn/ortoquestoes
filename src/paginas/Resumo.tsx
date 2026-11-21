@@ -1,13 +1,16 @@
 import { ErrosAposSessao } from '../componentes/revisao/ErrosAposSessao'
+import { useCallback, useEffect, useMemo, useState, type CSSProperties, type ReactNode } from 'react'
 import { ResultadoRevisao } from '../componentes/revisao/ResultadoRevisao'
 import { letraExibida } from '../dados/ordemAlternativas'
-import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import type { EstadoSessao, Questao, Resposta } from '../dados/tipos'
 import { entregarSessaoNacional } from '../dados/entregaNacional'
 import { codigoErroSN } from '../dados/apiSimuladoNacional'
 import { esquecerEdicaoEmDestaque } from '../dados/nacionalEmDestaque'
+import { indicarResumos, type CapituloResumo, type ResumoIndicado } from '../dados/desempenho'
+import { carregarIndiceBiblioteca, carregarIndiceBibliotecaLeve } from '../biblioteca/conteudo'
+import { CorujaPixel } from '../biblioteca/sala/CorujaPixel'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Medalha } from '../componentes/Medalha'
@@ -17,6 +20,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
 import { CONQUISTAS, CONQUISTAS_SEQUENCIA, proximaConquista } from '../estado/conquistas'
+import { type Periodo, usarPeriodo } from '../estado/aparencia'
 import { IconePixel } from '../componentes/IconePixel'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { fraseAdiantado, textoPuxar } from '../dados/frasesAdiantar'
@@ -28,12 +32,24 @@ import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
 import { conviteDiarioMostradoHoje } from '../componentes/ConviteDiario'
 import { lerBloqueioDiario } from '../estado/limiteDiario'
 import { chaveCivil, hojeBR, somarDias } from '../util/dia'
-import '../estilos/componentes/EsperaPixel.css'
+import '../estilos/paginas/Desempenho.css'
 import '../estilos/paginas/Resumo.css'
+
+/*
+ * Resultado da sessão (rota /resumo), refeito do zero em 21/11/2026 (Tales: "refazer do zero, no design padrão do
+ * site, adicionando e otimizando funções"). Segue o padrão da página de Desempenho (DESIGN.md, seção "Desempenho"):
+ * a pintura da biblioteca com a coruja no topo, o painel com a mensagem e os números na mesma peça, página inteira de cima a baixo,
+ * sem menu lateral (Tales, 21/11/2026: "uma página inteira, como uma experiência"), seções por extenso com rótulo, pergunta e linha de apoio, e toda ação como botão.
+ * Nada do que havia sumiu: entrega do Simulado Nacional, resultado da revisão, ganhos (ranking, sequência de acertos,
+ * dias seguidos, emblemas, baú da meta), cronograma, diagnóstico, limite do dia, refazer erradas e incertas,
+ * confiança, temas, folha, lista com filtro, metas, CSV e impressão. Novo: o tempo de cada questão em gráfico, o
+ * resumo da Biblioteca que mais cobre os erros desta sessão (geral e por tema) e a lista em ordem de tempo.
+ */
 
 type Confianca = NonNullable<Resposta['confianca']>
 type Situacao = 'certa' | 'errada' | 'anulada' | 'pulada'
 type Filtro = 'erradas' | 'incertas' | 'todas'
+type Ordem = 'sessao' | 'tempo'
 
 interface Linha {
   numero: number
@@ -47,6 +63,7 @@ interface Linha {
 
 const ROTULO_CONFIANCA: Record<Confianca, string> = { seguro: 'Certeza', duvida: 'Dúvida', chute: 'Chute' }
 const ICONE_CONFIANCA = { seguro: 'certo', duvida: 'olho', chute: 'interrogacao' } as const
+const EXTENSO = ['zero', 'uma', 'duas', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
 
 /** "45 s", "4 min 20 s", "38 min", "1 h 05 min". */
 function duracao(segundos: number): string {
@@ -59,14 +76,16 @@ function duracao(segundos: number): string {
 
 const faixa = (p: number) => (p >= 70 ? 'bom' : p >= 50 ? 'medio' : 'baixo')
 const plural = (n: number, um: string, varios: string) => `${n.toLocaleString('pt-BR')} ${n === 1 ? um : varios}`
+/** Contagens de questões abaixo de onze por extenso, como nas cartas (docs/emails/TOM.md). */
+const questoesPorExtenso = (n: number) => `${n >= 0 && n <= 10 ? EXTENSO[n] : n.toLocaleString('pt-BR')} ${n === 1 ? 'questão' : 'questões'}`
 
-function manchete(pct: number | null, nome: string): { titulo: string; texto: string } {
+function manchete(pct: number | null, nome: string): string {
   const voce = nome ? `, ${nome}` : ''
-  if (pct === null) return { titulo: 'Sessão encerrada', texto: 'Nenhuma questão contabilizada desta vez. Que tal uma sessão curta agora?' }
-  if (pct >= 85) return { titulo: `Excelente${voce}!`, texto: 'Desempenho de quem domina o assunto. Aproveite para confirmar os acertos que vieram com dúvida.' }
-  if (pct >= 70) return { titulo: `Muito bem${voce}!`, texto: 'Resultado sólido. Revise os erros abaixo enquanto a questão ainda está fresca na memória.' }
-  if (pct >= 50) return { titulo: `Bom treino${voce}.`, texto: 'Você está no caminho. Os erros de hoje viram as revisões de amanhã — é assim que a porcentagem sobe.' }
-  return { titulo: `Sessão de aprendizado${voce}.`, texto: 'Errar aqui é o que evita errar na prova. Leia os comentários das erradas com calma e refaça em seguida.' }
+  if (pct === null) return 'Sessão encerrada'
+  if (pct >= 85) return `Excelente${voce}!`
+  if (pct >= 70) return `Muito bem${voce}!`
+  if (pct >= 50) return `Bom treino${voce}.`
+  return `Sessão de aprendizado${voce}.`
 }
 
 /**
@@ -86,14 +105,19 @@ function EntregaNacional({ sessao, aoEntregar }: { sessao: EstadoSessao; aoEntre
   }, [sessao, aoEntregar])
   useEffect(() => { enviar() }, [enviar])
   return (
-    <section className={`sn-entrega sn-entrega--${estado}`} role="status" aria-live="polite">
-      <Icone nome={estado === 'erro' ? 'alerta' : 'relogio'} tamanho={22} />
+    <section className={`rr-entrega rr-entrega--${estado}`} role="status" aria-live="polite">
+      <CorujaPixel estado={estado === 'erro' ? 'olhando' : 'voando'} className="rr-entrega__coruja" />
       <div>
-        <strong>{estado === 'erro' ? 'A entrega não chegou ao servidor' : 'Entregando o Simulado Nacional…'}</strong>
-        <span>{estado === 'erro' ? detalhe : 'Corrigindo com o gabarito da edição. Em seguida, o seu resultado.'}</span>
+        <p className="dp-rotulo"><Icone nome={estado === 'erro' ? 'alerta' : 'relogio'} tamanho={14} /> Simulado Nacional</p>
+        <h1>{estado === 'erro' ? 'A entrega não chegou ao servidor' : 'Entregando a sua prova…'}</h1>
+        <p>{estado === 'erro' ? detalhe : 'Corrigindo com o gabarito da edição. Em seguida, o seu resultado.'}</p>
+        {estado === 'erro' && (
+          <div className="rr-entrega__acoes">
+            <button type="button" className="dp-botao dp-botao--principal" onClick={enviar}><Icone nome="reiniciar" tamanho={16} /> Tentar de novo</button>
+            <a className="dp-botao" href={href('/simulado-nacional')}>Ir para o simulado</a>
+          </div>
+        )}
       </div>
-      {estado === 'erro' && <button type="button" className="botao" onClick={enviar}>Tentar de novo</button>}
-      {estado === 'erro' && <a className="botao botao--fantasma" href={href('/simulado-nacional')}>Ir para o simulado</a>}
     </section>
   )
 }
@@ -114,6 +138,33 @@ function gabaritoVisto(l: { questao?: Questao | null; ordem?: string }): string 
   return g && letraExibida(l.ordem, g)
 }
 
+function descreverLinha(l: Linha): string {
+  const incerta = l.resposta?.confianca === 'duvida' || l.resposta?.confianca === 'chute'
+  if (l.situacao === 'pulada') return 'sem resposta'
+  if (l.situacao === 'anulada') return 'anulada'
+  return `${l.situacao}, ${letraMarcada(l) ? `marcou ${letraMarcada(l)}` : 'autoavaliada'}${l.situacao === 'errada' && l.questao?.gabarito ? `, gabarito ${gabaritoVisto(l)}` : ''}${incerta ? `, ${ROTULO_CONFIANCA[l.resposta!.confianca!].toLowerCase()}` : ''}`
+}
+
+/* A cena: a biblioteca da coruja (480 x 160 pixels de arte). No celular, o recorte do meio (de x 92 a 388). */
+const ARTE = { w: 480, h: 160, movelX: 92, movelW: 296 }
+const lugar = (x: number, y: number, w: number, h: number) => ({
+  '--l': `${(x / ARTE.w) * 100}%`, '--lm': `${((x - ARTE.movelX) / ARTE.movelW) * 100}%`,
+  '--t': `${(y / ARTE.h) * 100}%`, '--w': `${(w / ARTE.w) * 100}%`, '--wm': `${(w / ARTE.movelW) * 100}%`, '--h': `${(h / ARTE.h) * 100}%`,
+}) as CSSProperties
+
+/** A coruja na mesa da biblioteca, conferindo a folha. Lê quando a sessão pede revisão; acena quando foi bem. */
+function CenaBiblioteca({ periodo, estado }: { periodo: Periodo; estado: 'lendo' | 'acenando' | 'olhando' }) {
+  const arte = (sufixo: string) => recurso(`pixel/paginas/biblioteca-${periodo}${sufixo}.webp`)
+  return (
+    <div className="ds-palco rr-palco" aria-hidden="true">
+      <img className="ds-palco__arte" src={arte('')} srcSet={`${arte('-960')} 960w, ${arte('')} 1440w`} sizes="(max-width: 76rem) 100vw, 76rem"
+        width={1440} height={480} alt="" decoding="async" fetchPriority="high" draggable={false} />
+      <span className="ds-palco__peca rr-palco__luz" style={lugar(262, 70, 50, 50)} />
+      <span className="ds-palco__peca rr-palco__coruja" style={lugar(276, 90, 44, 32)}><CorujaPixel estado={estado} /></span>
+    </div>
+  )
+}
+
 export function Resumo() {
   const { indice } = usarIndice()
   const { sessao, iniciarComAviso, finalizar, encerrar } = usarSessao()
@@ -122,6 +173,9 @@ export function Resumo() {
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
   const [filtro, definirFiltro] = useState<Filtro | null>(null)
+  const [ordem, definirOrdem] = useState<Ordem>('sessao')
+  const [capitulos, definirCapitulos] = useState<CapituloResumo[]>([])
+  const periodoArte = usarPeriodo()
 
   const ids = sessao?.ids
   useEffect(() => {
@@ -132,6 +186,13 @@ export function Resumo() {
       vivo = false
     }
   }, [indice, ids])
+
+  // Os capítulos da Biblioteca, para indicar o resumo que mais cobre os erros desta sessão.
+  useEffect(() => {
+    let vivo = true
+    void carregarIndiceBibliotecaLeve().catch(() => carregarIndiceBiblioteca()).then((i) => { if (vivo) definirCapitulos(i.capitulos as CapituloResumo[]) }).catch(() => undefined)
+    return () => { vivo = false }
+  }, [])
 
   const dados = useMemo(() => {
     if (!sessao || !questoes) return null
@@ -162,26 +223,23 @@ export function Resumo() {
     const falsaCerteza = erradas.filter((l) => (l.resposta!.confianca ?? 'seguro') === 'seguro').length
 
     const slugPorNome = new Map(indice?.temas.map((t) => [t.nome, t.slug]) ?? [])
-    const porTema = new Map<string, { certas: number; total: number; slug?: string }>()
+    const porTema = new Map<string, { certas: number; total: number; slug?: string; erradas: string[] }>()
     for (const l of validas) {
       const tema = l.questao?.tema ?? 'Sem tema'
-      const atual = porTema.get(tema) ?? { certas: 0, total: 0, slug: slugPorNome.get(tema) }
+      const atual = porTema.get(tema) ?? { certas: 0, total: 0, slug: slugPorNome.get(tema), erradas: [] }
       atual.total++
       if (l.situacao === 'certa') atual.certas++
+      else atual.erradas.push(l.id)
       porTema.set(tema, atual)
     }
 
+    // O tempo: a mediana das respondidas e a mais demorada (para o gráfico e a frase de apoio).
+    const tempos = respondidas.map((l) => l.resposta!.segundos).sort((a, b) => a - b)
+    const mediana = tempos.length ? tempos[Math.floor((tempos.length - 1) / 2)] : 0
+    const maisDemorada = respondidas.reduce<Linha | null>((m, l) => (!m || l.resposta!.segundos > m.resposta!.segundos ? l : m), null)
+
     return {
-      linhas,
-      respondidas,
-      validas,
-      certas,
-      erradas,
-      incertas,
-      acertosFrageis,
-      falsaCerteza,
-      segundos,
-      porConfianca,
+      linhas, respondidas, validas, certas, erradas, incertas, acertosFrageis, falsaCerteza, segundos, porConfianca, mediana, maisDemorada,
       porTema: [...porTema.entries()]
         .map(([nome, v]) => ({ nome, ...v }))
         .sort((a, b) => b.total - a.total || a.nome.localeCompare(b.nome, 'pt-BR')),
@@ -201,8 +259,8 @@ export function Resumo() {
   const proximoEmblema = proximaConquista(totalConta)
   const cronograma = usarCronogramaHoje()
 
-  // Fim de batalha (temporada RPG): o que esta sessão rendeu de recompensa.
-  const batalha = useMemo(() => {
+  // O que esta sessão rendeu: pontos no ranking, maior sequência de acertos e emblemas novos.
+  const ganhos = useMemo(() => {
     if (!sessao || !dados) return null
     // Questões respondidas pela primeira vez nesta sessão: são as que somam no ranking.
     const novas = sessao.ids.filter((id) => {
@@ -222,10 +280,23 @@ export function Resumo() {
     return { novas, combo, emblema, emblemaSequencia }
   }, [sessao, dados, marcadas, totalConta, streak.atual])
 
+  // Resumos da Biblioteca para os erros desta sessão: o que mais cobre no geral e o melhor de cada tema.
+  const resumos = useMemo(() => {
+    const porTema = new Map<string, ResumoIndicado>()
+    if (!indice || !capitulos.length || !dados?.erradas.length) return { geral: null as ResumoIndicado | null, porTema }
+    const [geral] = indicarResumos(capitulos, dados.erradas.map((l) => l.id), indice, 1)
+    for (const t of dados.porTema) {
+      if (!t.slug || !t.erradas.length) continue
+      const [melhor] = indicarResumos(capitulos.filter((c) => c.especialidade === t.slug), t.erradas, indice, 1)
+      if (melhor) porTema.set(t.nome, melhor)
+    }
+    return { geral: geral ?? null, porTema }
+  }, [indice, capitulos, dados])
+
   // A prova do Simulado Nacional não tem resumo local: entrega e vai ao resultado.
   if (sessao?.nacional && sessao.concluidaEm) {
     return (
-      <div className="empilha-2 rs">
+      <div className="dpg rsg rsg--so">
         <EntregaNacional sessao={sessao} aoEntregar={() => { esquecerEdicaoEmDestaque(); encerrar(); navegar('/simulado-nacional?entregue=1', true) }} />
       </div>
     )
@@ -241,30 +312,33 @@ export function Resumo() {
           </a>
         }
       >
-        <p>O resumo aparece quando você encerra uma sessão.</p>
+        <p>O resultado aparece quando você encerra uma sessão.</p>
       </Estado>
     )
   }
 
-  if (!dados) return <Carregando linhas={5} rotulo="Montando o resumo" />
+  if (!dados) return <Carregando linhas={5} rotulo="Montando o resultado" />
 
   const pct = dados.validas.length > 0 ? Math.round((dados.certas.length / dados.validas.length) * 100) : null
   const mediaSegundos = dados.respondidas.length > 0 ? dados.segundos / dados.respondidas.length : 0
   const nome = String(conta?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
-  const { titulo, texto } = manchete(pct, nome)
+  const titulo = !sessao.concluidaEm && pct === null ? 'Sessão em andamento' : manchete(pct, nome)
   const emAndamento = !sessao.concluidaEm
   const fim = sessao.concluidaEm ?? Date.now()
   const usadosSimulado = Math.round((fim - sessao.criadaEm) / 1000)
   const esgotado = !!sessao.limiteSegundos && usadosSimulado >= sessao.limiteSegundos
   const diferenca = pct !== null && mediaAnterior !== null ? pct - mediaAnterior : null
-  const perimetro = 2 * Math.PI * 52
   const puladas = dados.linhas.length - dados.respondidas.length
+  const quando = new Date(fim).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' })
+  const hora = new Date(fim).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+  const temaFraco = dados.porTema.filter((t) => t.slug && t.erradas.length >= 1).sort((a, b) => b.erradas.length - a.erradas.length || a.certas / a.total - b.certas / b.total)[0] ?? null
+  const temaForte = dados.porTema.filter((t) => t.certas >= 2 && t.certas / t.total >= 0.7).sort((a, b) => b.certas - a.certas)[0] ?? null
 
   // Filtro da lista: começa nas erradas; sem erradas, nas incertas; senão, todas.
   const filtroInicial: Filtro = dados.erradas.length ? 'erradas' : dados.incertas.length ? 'incertas' : 'todas'
   const filtroAtivo = filtro ?? filtroInicial
-  const visiveis =
-    filtroAtivo === 'erradas' ? dados.erradas : filtroAtivo === 'incertas' ? dados.incertas : dados.linhas
+  const filtradas = filtroAtivo === 'erradas' ? dados.erradas : filtroAtivo === 'incertas' ? dados.incertas : dados.linhas
+  const visiveis = ordem === 'tempo' ? [...filtradas].sort((a, b) => (b.resposta?.segundos ?? -1) - (a.resposta?.segundos ?? -1)) : filtradas
 
   async function refazer(lista: Linha[]) {
     if (lista.length === 0) return
@@ -274,7 +348,7 @@ export function Resumo() {
 
   function exportar() {
     const linhas = [
-      `Orto Questões — resumo de sessão`,
+      `Orto Questões — resultado da sessão`,
       `Filtro: ${descreverFiltros(sessao!.filtros)}`,
       `Data: ${new Date(fim).toLocaleString('pt-BR')}`,
       `Respondidas: ${dados!.respondidas.length} de ${sessao!.ids.length}`,
@@ -307,316 +381,460 @@ export function Resumo() {
     URL.revokeObjectURL(url)
   }
 
-  const mostrarBatalha = sessao.origem !== 'revisao' && !emAndamento && !sessao.nacional && pct !== null && !!batalha
+  const mostrarGanhos = sessao.origem !== 'revisao' && !emAndamento && !sessao.nacional && pct !== null && !!ganhos
   const mao = sessao.cronograma?.modalidade.startsWith('mao-') ?? sessao.filtros.areas?.includes('mao')
-  const metaCumprida = !mao && sessao.origem === 'cronograma' && !!cronograma.calculo && cronograma.calculo.metaDiaria > 0 && cronograma.calculo.feitasHoje >= cronograma.calculo.metaDiaria && !cronograma.calculo.revisoesHoje?.some((r) => !r.feita)
-  const quando = new Date(fim).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' })
-  const hora = new Date(fim).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+  const metaCumprida = !mao && sessao.origem === 'cronograma' && !!cronograma.calculo && cronograma.calculo.metaDiaria > 0 && cronograma.calculo.faltaHoje === 0 && !cronograma.calculo.revisoesHoje?.some((r) => !r.feita)
+  const estadoCoruja = pct !== null && pct >= 70 ? 'acenando' : emAndamento ? 'olhando' : 'lendo'
+  const temConfianca = dados.validas.length > 0
+
+  // Os passos de "O que fazer agora", do que mais rende para o que mantém o ritmo.
+  const passos: Array<{ titulo: string; texto: string; acao: ReactNode }> = []
+  if (emAndamento) passos.push({
+    titulo: 'Voltar à sessão', texto: `${questoesPorExtenso(puladas)} ainda sem resposta.`.replace(/^./, (c) => c.toUpperCase()),
+    acao: <a className="dp-botao dp-botao--principal" href={href('/sessao')}>Continuar <Icone nome="direita" tamanho={15} /></a>,
+  })
+  if (dados.erradas.length) passos.push({
+    titulo: `Refazer ${plural(dados.erradas.length, 'errada', 'erradas')} desta sessão`, texto: 'Na mesma ordem. Leia o comentário de cada uma antes: é quando o erro vira acerto na prova.',
+    acao: <button type="button" className={'dp-botao' + (emAndamento ? '' : ' dp-botao--principal')} onClick={() => refazer(dados.erradas)}><Icone nome="reiniciar" tamanho={15} /> Refazer agora</button>,
+  })
+  if (resumos.geral) passos.push({
+    titulo: `Ler ${resumos.geral.capitulo.titulo}`, texto: `O resumo da Biblioteca que mais cobre os erros de hoje. Leitura de ${resumos.geral.capitulo.minutos} minutos, antes de refazer.`,
+    acao: <a className="dp-botao" href={href(`/resumos/${resumos.geral.capitulo.id}`)}><Icone nome="livro" tamanho={15} /> Ler o resumo</a>,
+  })
+  if (dados.incertas.length) passos.push({
+    titulo: `Refazer ${plural(dados.incertas.length, 'com dúvida ou chute', 'com dúvida ou chute')}`, texto: dados.acertosFrageis ? 'Inclui os acertos sem certeza: uma passada rápida transforma dúvida em conhecimento firme.' : 'Confirme o que ficou incerto enquanto a questão está fresca.',
+    acao: <button type="button" className="dp-botao" onClick={() => refazer(dados.incertas)}><Icone nome="interrogacao" tamanho={15} /> Refazer</button>,
+  })
+  if (temaFraco) passos.push({
+    titulo: `Treinar ${temaFraco.nome}`, texto: 'Dez questões do tema que mais pediu revisão hoje, com o comentário logo depois de cada uma.',
+    acao: <a className="dp-botao" href={href(`/treinar?temas=${temaFraco.slug}&limite=10`)}><Icone nome="alvo" tamanho={15} /> Treinar 10</a>,
+  })
+  if (!passos.length) passos.push({
+    titulo: 'Seguir com uma sessão nova', texto: 'Sem erros nem dúvidas nesta sessão. Dez questões novas mantêm o ritmo.',
+    acao: <a className="dp-botao dp-botao--principal" href={href('/treinar?limite=10')} onClick={() => finalizar()}>Treinar 10 <Icone nome="direita" tamanho={15} /></a>,
+  })
 
   return (
-    <article className="empilha-2 rs">
-      {!emAndamento && sessao.revisao && <ResultadoRevisao sessao={sessao} registros={marcadas} />}
-      <section className="rs-heroi">
-        {mostrarBatalha && <span className="rs-tochas" aria-hidden="true"><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /></span>}
-        {mostrarBatalha && <span className="espera-pixel__guerreiro rs-guerreiro" aria-hidden="true" style={{ backgroundImage: `url(${recurso('ranking/guerreiro.png')})` }} />}
-        {mostrarBatalha && <p className="rs-batalha__grito">{pct! >= 70 ? 'Vitória!' : pct! >= 50 ? 'Boa batalha!' : 'Batalha difícil'}</p>}
-        <div className="rs-heroi__texto">
-          <p className="rs-heroi__selo">
-            <Icone nome={emAndamento ? 'relogio' : sessao.simulado ? 'bandeira' : 'certo'} tamanho={16} />
-            {emAndamento ? 'Sessão em andamento' : sessao.simulado ? 'Simulado entregue' : 'Sessão concluída'} · {quando}, {hora}
-          </p>
-          <h1>{titulo}</h1>
-          <p>{texto}</p>
-          <p className="rs-heroi__filtro">
-            <Icone nome="filtro" tamanho={14} /> {descreverFiltros(sessao.filtros)}
-          </p>
-          {diferenca !== null && (
-            <p className={`rs-comparacao rs-comparacao--${diferenca > 2 ? 'acima' : diferenca < -2 ? 'abaixo' : 'igual'}`}>
-              <Icone nome={diferenca > 2 ? 'cima' : diferenca < -2 ? 'baixo' : 'alvo'} tamanho={14} />
-              {diferenca > 2
-                ? `${diferenca} pontos acima da sua média (${mediaAnterior}%)`
-                : diferenca < -2
-                  ? `${-diferenca} pontos abaixo da sua média (${mediaAnterior}%)`
-                  : `Na sua média de ${mediaAnterior}%`}
-            </p>
-          )}
-        </div>
-        <div className="rs-anel" aria-label={pct === null ? 'Sem questões contabilizadas' : `${pct}% de acerto`}>
-          <svg viewBox="0 0 120 120" width="176" height="176" aria-hidden="true">
-            <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.14)" strokeWidth="10" />
-            {pct !== null && pct > 0 && (
-              <circle cx="60" cy="60" r="52" fill="none" stroke="#ffe3a3" strokeWidth="10" strokeLinecap="round"
-                strokeDasharray={`${(pct / 100) * perimetro} ${perimetro}`} transform="rotate(-90 60 60)" />
-            )}
-          </svg>
-          <span className="rs-anel__valor">
-            <strong>{pct === null ? '—' : `${pct}%`}</strong>
-            <small>{dados.certas.length} de {dados.validas.length} certas</small>
-          </span>
-        </div>
-        <dl className="rs-heroi__numeros">
-          <div>
-            <dt><Icone nome="certo" tamanho={14} /> Certas</dt>
-            <dd>{dados.certas.length}</dd>
-          </div>
-          <div>
-            <dt><Icone nome="errado" tamanho={14} /> Erradas</dt>
-            <dd>{dados.erradas.length}</dd>
-          </div>
-          <div>
-            <dt><Icone nome="relogio" tamanho={14} /> {sessao.simulado && sessao.limiteSegundos ? 'Tempo de prova' : 'Tempo total'}</dt>
-            <dd>
-              {sessao.simulado && sessao.limiteSegundos ? duracao(Math.min(usadosSimulado, sessao.limiteSegundos)) : duracao(dados.segundos)}
-              {sessao.simulado && sessao.limiteSegundos ? <small> de {duracao(sessao.limiteSegundos)}{esgotado ? ' · esgotado' : ''}</small> : null}
-            </dd>
-          </div>
-          <div>
-            <dt><Icone nome="raio" tamanho={14} /> Por questão</dt>
-            <dd>{duracao(mediaSegundos)}</dd>
-          </div>
-        </dl>
-      </section>
+    <article className="dpg rsg">
+      <div className="dp-conteudo">
+        {!emAndamento && sessao.revisao && <ResultadoRevisao sessao={sessao} registros={marcadas} />}
 
-      {mostrarBatalha && batalha && <section className="rs-batalha" aria-label="O que esta sessão rendeu">
-        <div className="rs-ganhos">
-          <div className="rs-ganho"><b>+{batalha.novas}</b><span>{batalha.novas === 1 ? 'ponto' : 'pontos'} no ranking</span></div>
-          <div className="rs-ganho"><b>{batalha.combo}</b><span>maior combo de acertos</span></div>
-          <div className="rs-ganho"><b><img src={recurso('ranking/chama.png')} width={18} height={18} alt="" /> {streak.atual}</b><span>{streak.atual === 1 ? 'dia seguido' : 'dias seguidos'}</span></div>
-        </div>
-        {batalha.emblema && <div className="rs-loot"><Medalha conquista={batalha.emblema} tamanho={64} /><div><span className="rs-loot__tag">Novo emblema</span><strong>{batalha.emblema.rotulo} desbloqueado</strong><small>{batalha.emblema.minimo.toLocaleString('pt-BR')} questões diferentes respondidas.</small></div></div>}
-        {batalha.emblemaSequencia && <div className="rs-loot"><Medalha conquista={batalha.emblemaSequencia} tamanho={64} /><div><span className="rs-loot__tag">Sequência</span><strong>{batalha.emblemaSequencia.rotulo}</strong><small>{batalha.emblemaSequencia.minimo} dias seguidos estudando.</small></div></div>}
-        {metaCumprida && <div className="rs-loot"><IconePixel nome="planos" tamanho={56} /><div><span className="rs-loot__tag">Baú da meta</span><strong>Meta de hoje cumprida</strong><small>{cronograma.calculo!.feitasHoje} de {cronograma.calculo!.metaDiaria} questões do cronograma.</small></div></div>}
-      </section>}
-
-      {!emAndamento && !mao && sessao.origem === 'cronograma' && cronograma.calculo && !cronograma.calculo.naRetaFinal && <FimCronograma calculo={cronograma.calculo} />}
-      {!emAndamento && mao && sessao.origem === 'cronograma' && <section className="cartao cartao__corpo">
-        <a className="botao botao--principal" href={href(sessao.cronograma ? `/cronograma-mao?prova=${sessao.cronograma.modalidade === 'mao-titulo' ? 'titulo' : 'ingresso'}` : '/cronograma-mao')}>Voltar ao cronograma da Mão</a>
-      </section>}
-      {!emAndamento && sessao.origem === 'diagnostico' && (
-        <section className="cartao cartao__corpo rs-diagnostico" aria-label="Diagnóstico concluído">
-          <div><strong>Diagnóstico concluído</strong><p className="texto-2">O cronograma já usou o seu resultado: as áreas em que você foi pior ganham mais espaço desde hoje. Veja o seu acerto por área e o mapa de risco no painel.</p></div>
-          <a className="botao botao--principal" href={href('/cronograma')}>Ver o cronograma ajustado</a>
-        </section>
-      )}
-      {!emAndamento && sessao.concluidaEm && indice && <ErrosAposSessao key={sessao.id} indice={indice} plano={cronograma.plano} sessao={sessao} registros={marcadas} />}
-      <DiaCumprido erradas={dados.erradas.length} />
-      <ConviteLimiteDoDia />
-      {/* Sessão que foi bem, sem o limite do dia na mesma tela: um convite, no máximo. */}
-      <ConviteCompartilhar ativo={!emAndamento && dados.respondidas.length >= 5 && pct !== null && pct >= 60 && !lerBloqueioDiario() && !conviteDiarioMostradoHoje()} />
-
-      <section className="rs-acoes nao-imprime" aria-label="Próximos passos">
-        {emAndamento && (
-          <a className="rs-acao rs-acao--principal" href={href('/sessao')}>
-            <span className="rs-acao__icone"><Icone nome="direita" tamanho={20} /></span>
-            <span><strong>Voltar à sessão</strong><small>{plural(puladas, 'questão ainda sem resposta', 'questões ainda sem resposta')}</small></span>
-          </a>
-        )}
-        <button type="button" className={'rs-acao' + (!emAndamento ? ' rs-acao--principal' : '')} onClick={() => refazer(dados.erradas)} disabled={dados.erradas.length === 0}>
-          <span className="rs-acao__icone"><Icone nome="reiniciar" tamanho={20} /></span>
-          <span>
-            <strong>{dados.erradas.length ? `Refazer ${plural(dados.erradas.length, 'errada', 'erradas')}` : 'Nenhuma errada'}</strong>
-            <small>{dados.erradas.length ? 'Na mesma ordem, logo depois de ler os comentários' : 'Nada para refazer nesta sessão'}</small>
-          </span>
-        </button>
-        <button type="button" className="rs-acao" onClick={() => refazer(dados.incertas)} disabled={dados.incertas.length === 0}>
-          <span className="rs-acao__icone rs-acao__icone--aviso"><Icone nome="interrogacao" tamanho={20} /></span>
-          <span>
-            <strong>{dados.incertas.length ? `Refazer ${plural(dados.incertas.length, 'com dúvida', 'com dúvida ou chute')}` : 'Sem dúvidas nem chutes'}</strong>
-            <small>{dados.incertas.length ? 'Confirme o que acertou sem ter certeza' : 'Você respondeu tudo com convicção'}</small>
-          </span>
-        </button>
-        <a className="rs-acao" href={href('/treinar')} onClick={() => finalizar()}>
-          <span className="rs-acao__icone rs-acao__icone--neutro"><Icone nome="estrela" tamanho={20} /></span>
-          <span><strong>Nova sessão</strong><small>Montar outro treino</small></span>
-        </a>
-      </section>
-
-      {dados.validas.length > 0 && (
-        <div className="rs-duas">
-          <section className="cartao cartao__corpo rs-cartao">
-            <div className="rs-cartao__cabeca">
-              <h2>Sua confiança nesta sessão</h2>
-              <p className="texto-2">Acerto separado pelo que você marcou ao responder.</p>
+        {/* ---------- Topo: a cena, a manchete, a mensagem e os números, numa peça só ---------- */}
+        <section className="dp-topo" id="rr-topo" aria-labelledby="rr-titulo">
+          <div className={`dp-topo__cena rr-cena rr-cena--${periodoArte}`}>
+            <CenaBiblioteca periodo={periodoArte} estado={estadoCoruja} />
+            <div className="dp-topo__titulo">
+              <p className="dp-rotulo dp-rotulo--claro">
+                <Icone nome={emAndamento ? 'relogio' : sessao.simulado ? 'bandeira' : 'certo'} tamanho={14} />
+                {emAndamento ? 'Sessão em andamento' : sessao.simulado ? 'Simulado entregue' : 'Sessão concluída'} · {quando}, {hora}
+              </p>
+              <h1 id="rr-titulo">{titulo}</h1>
+              <p className="rr-filtro-sessao"><Icone nome="filtro" tamanho={13} /> {descreverFiltros(sessao.filtros)}</p>
             </div>
-            <div className="dp-confianca">
-              {(['seguro', 'duvida', 'chute'] as const).map((tipo) => {
-                const grupo = dados.porConfianca[tipo]
-                const p = grupo.total ? Math.round((grupo.certas / grupo.total) * 100) : 0
+          </div>
+
+          <div className="dp-topo__painel">
+            <div className="dp-topo__mensagem">
+              <Mensagem pct={pct} certas={dados.certas.length} validas={dados.validas.length} erradas={dados.erradas.length} forte={temaForte?.nome ?? null}
+                falsaCerteza={dados.falsaCerteza} emAndamento={emAndamento} puladas={puladas} />
+              <dl className="dp-numeros">
+                <div className="dp-numero rr-numero--certas">
+                  <dt>Certas</dt>
+                  <dd><b>{dados.certas.length}</b><small>de {dados.validas.length} {dados.validas.length === 1 ? 'contabilizada' : 'contabilizadas'}</small></dd>
+                </div>
+                <div className="dp-numero rr-numero--erradas">
+                  <dt>Erradas</dt>
+                  <dd><b>{dados.erradas.length}</b><small>{dados.falsaCerteza ? `${dados.falsaCerteza} com certeza` : dados.erradas.length ? 'nenhuma com certeza' : dados.validas.length ? 'gabaritou' : 'nenhuma ainda'}</small></dd>
+                </div>
+                <div className="dp-numero">
+                  <dt>{sessao.simulado && sessao.limiteSegundos ? 'Tempo de prova' : 'Tempo'}</dt>
+                  <dd>
+                    <b>{sessao.simulado && sessao.limiteSegundos ? duracao(Math.min(usadosSimulado, sessao.limiteSegundos)) : duracao(dados.segundos)}</b>
+                    <small>{sessao.simulado && sessao.limiteSegundos ? `de ${duracao(sessao.limiteSegundos)}${esgotado ? ' · esgotado' : ''}` : `${duracao(mediaSegundos)} por questão`}</small>
+                  </dd>
+                </div>
+                <div className="dp-numero">
+                  <dt>Sua média</dt>
+                  <dd>
+                    <b>{mediaAnterior === null ? '–' : `${mediaAnterior}%`}</b>
+                    <small className={diferenca === null ? undefined : `rr-dif rr-dif--${diferenca > 2 ? 'acima' : diferenca < -2 ? 'abaixo' : 'igual'}`}>
+                      {diferenca === null ? 'Aparece depois de 10 questões' : diferenca > 2 ? `Hoje: ${diferenca} pontos acima` : diferenca < -2 ? `Hoje: ${-diferenca} pontos abaixo` : 'Hoje: na sua média'}
+                    </small>
+                  </dd>
+                </div>
+              </dl>
+              <div className="rr-topo__acoes nao-imprime">
+                {emAndamento
+                  ? <a className="dp-botao dp-botao--principal dp-botao--grande" href={href('/sessao')}>Voltar à sessão <Icone nome="direita" tamanho={18} /></a>
+                  : dados.erradas.length
+                    ? <button type="button" className="dp-botao dp-botao--principal dp-botao--grande" onClick={() => refazer(dados.erradas)}><Icone nome="reiniciar" tamanho={18} /> Refazer {plural(dados.erradas.length, 'errada', 'erradas')}</button>
+                    : <a className="dp-botao dp-botao--principal dp-botao--grande" href={href('/treinar')} onClick={() => finalizar()}><Icone nome="estrela" tamanho={18} /> Nova sessão</a>}
+                <a className="dp-botao dp-botao--grande" href="#rr-questoes" onClick={irPara('questoes')}><Icone nome="olho" tamanho={18} /> Revisar as questões</a>
+              </div>
+            </div>
+            <Anel pct={pct} certas={dados.certas.length} erradas={dados.erradas.length} validas={dados.validas.length} puladas={puladas} />
+          </div>
+
+          {mostrarGanhos && ganhos && (
+            <div className="rr-ganhos" aria-label="O que esta sessão rendeu">
+              <p className="dp-rotulo"><Icone nome="trofeu" tamanho={14} /> O que esta sessão rendeu</p>
+              <ul className="rr-ganhos__lista">
+                <li><b>+{ganhos.novas.toLocaleString('pt-BR')}</b><span>{ganhos.novas === 1 ? 'ponto' : 'pontos'} no ranking</span></li>
+                <li><b>{ganhos.combo}</b><span>{ganhos.combo === 1 ? 'acerto' : 'acertos'} em sequência, no máximo</span></li>
+                <li><b><img src={recurso('ranking/chama.png')} width={18} height={18} alt="" /> {streak.atual}</b><span>{streak.atual === 1 ? 'dia seguido' : 'dias seguidos'} estudando</span></li>
+              </ul>
+              {(ganhos.emblema || ganhos.emblemaSequencia || metaCumprida) && (
+                <ul className="rr-premios">
+                  {ganhos.emblema && <li><Medalha conquista={ganhos.emblema} tamanho={56} /><div><span className="dp-chip dp-chip--alta">Novo emblema</span><strong>{ganhos.emblema.rotulo} desbloqueado</strong><small>{ganhos.emblema.minimo.toLocaleString('pt-BR')} questões diferentes respondidas.</small></div></li>}
+                  {ganhos.emblemaSequencia && <li><Medalha conquista={ganhos.emblemaSequencia} tamanho={56} /><div><span className="dp-chip dp-chip--alta">Sequência</span><strong>{ganhos.emblemaSequencia.rotulo}</strong><small>{ganhos.emblemaSequencia.minimo} dias seguidos estudando.</small></div></li>}
+                  {metaCumprida && <li><IconePixel nome="planos" tamanho={52} /><div><span className="dp-chip dp-chip--alta">Baú da meta</span><strong>Meta de hoje cumprida</strong><small>{cronograma.calculo!.feitasHoje} de {cronograma.calculo!.metaDiaria} questões do cronograma.</small></div></li>}
+                </ul>
+              )}
+            </div>
+          )}
+        </section>
+
+        {!emAndamento && !mao && sessao.origem === 'cronograma' && cronograma.calculo && !cronograma.calculo.naRetaFinal && <FimCronograma calculo={cronograma.calculo} />}
+        {!emAndamento && mao && sessao.origem === 'cronograma' && (
+          <section className="dp-cartao rr-aviso" aria-label="Cronograma da Mão">
+            <span className="rr-aviso__icone" aria-hidden="true"><Icone nome="calendario" tamanho={22} /></span>
+            <div><strong>Cronograma da Mão</strong><p>Veja a meta e o próximo dia de estudo.</p></div>
+            <a className="dp-botao" href={href(sessao.cronograma ? `/cronograma-mao?prova=${sessao.cronograma.modalidade === 'mao-titulo' ? 'titulo' : 'ingresso'}` : '/cronograma-mao')}>Voltar ao cronograma</a>
+          </section>
+        )}
+        {!emAndamento && sessao.origem === 'diagnostico' && (
+          <section className="dp-cartao rr-aviso" aria-label="Diagnóstico concluído">
+            <span className="rr-aviso__icone" aria-hidden="true"><Icone nome="alvo" tamanho={22} /></span>
+            <div><strong>Diagnóstico concluído</strong><p>O cronograma já usou o seu resultado: as áreas em que você foi pior ganham mais espaço desde hoje. Veja o seu acerto por área e o mapa de risco no painel.</p></div>
+            <a className="dp-botao dp-botao--principal" href={href('/cronograma')}>Ver o cronograma ajustado</a>
+          </section>
+        )}
+        <DiaCumprido erradas={dados.erradas.length} />
+        <ConviteLimiteDoDia />
+        {/* Sessão que foi bem, sem o limite do dia na mesma tela: um convite, no máximo. */}
+        <ConviteCompartilhar ativo={!emAndamento && dados.respondidas.length >= 5 && pct !== null && pct >= 60 && !lerBloqueioDiario() && !conviteDiarioMostradoHoje()} />
+
+        <Secao id="agora" rotulo="O que fazer agora" icone="direita" titulo={nome ? `${nome}, seu próximo passo` : 'Seu próximo passo'} texto="Do que mais rende para o que mantém o ritmo. Um de cada vez já basta.">
+          <div className="dp-cartao rr-agora">
+            <ol className="dp-passos">
+              {passos.map((p, i) => (
+                <li className="dp-passo" key={p.titulo}>
+                  <span className="dp-passo__n" aria-hidden="true">{i + 1}</span>
+                  <div><strong>{p.titulo}</strong><span>{p.texto}</span></div>
+                  {p.acao}
+                </li>
+              ))}
+              <li className="dp-passos__fim nao-imprime">
+                <a className="dp-botao dp-botao--grande" href={href('/treinar')} onClick={() => finalizar()}><Icone nome="estrela" tamanho={17} /> Nova sessão</a>
+                {dados.erradas.length > 0 && <a className="dp-botao dp-botao--grande" href={href('/erros')}><Icone nome="livro" tamanho={17} /> Caderno de erros</a>}
+              </li>
+            </ol>
+          </div>
+          {!emAndamento && indice && <ErrosAposSessao key={sessao.id} indice={indice} plano={cronograma.plano} sessao={sessao} registros={marcadas} />}
+        </Secao>
+
+        <Secao id="folha" rotulo="Folha de respostas" icone="grafico" titulo="Como foi cada questão?" texto="Toque em um número para abrir a questão com o comentário. As barras mostram o tempo de cada uma.">
+          <div className="dp-cartao">
+            <ul className="rr-legenda" aria-label="Legenda">
+              <li><i className="rr-ponto rr-ponto--certa" /> Certa</li>
+              <li><i className="rr-ponto rr-ponto--errada" /> Errada</li>
+              {puladas > 0 && <li><i className="rr-ponto rr-ponto--pulada" /> Sem resposta</li>}
+              {dados.linhas.some((l) => l.situacao === 'anulada') && <li><i className="rr-ponto rr-ponto--anulada" /> Anulada</li>}
+              {dados.incertas.length > 0 && <li><i className="rr-ponto rr-ponto--incerta" /> Dúvida ou chute</li>}
+            </ul>
+            <ol className="rr-folha">
+              {dados.linhas.map((l) => {
+                const incerta = l.resposta?.confianca === 'duvida' || l.resposta?.confianca === 'chute'
+                const descricao = descreverLinha(l)
                 return (
-                  <div className="dp-confianca__linha" key={tipo}>
-                    <span className="dp-confianca__rotulo"><Icone nome={ICONE_CONFIANCA[tipo]} tamanho={16} /> {ROTULO_CONFIANCA[tipo]}</span>
-                    <span className="dp-confianca__trilho"><span className={`dp-faixa--${faixa(p)}`} style={{ width: `${grupo.total ? Math.max(3, p) : 0}%` }} /></span>
-                    <span className="dp-confianca__valor">
-                      <strong>{grupo.total ? `${grupo.certas}/${grupo.total}` : '–'}</strong>{' '}
-                      <small>{grupo.total ? `${p}%` : 'nenhuma'}</small>
-                    </span>
-                  </div>
+                  <li key={l.id}>
+                    <a className={`rr-casa rr-casa--${l.situacao}${incerta ? ' rr-casa--incerta' : ''}`} href={href(`/questao/${l.id}`)} title={`Questão ${l.numero}: ${descricao}`} aria-label={`Questão ${l.numero}: ${descricao}`}>
+                      {l.numero}
+                    </a>
+                  </li>
                 )
               })}
-            </div>
-            {(dados.falsaCerteza > 0 || dados.acertosFrageis > 0) && (
-              <ul className="rs-alertas">
-                {dados.falsaCerteza > 0 && (
-                  <li className="rs-alerta rs-alerta--erro">
-                    <Icone nome="alerta" tamanho={16} />
-                    <span><strong>{plural(dados.falsaCerteza, 'erro com certeza', 'erros com certeza')}.</strong> São os mais importantes: indicam um conceito aprendido errado. Leia o comentário antes de refazer.</span>
-                  </li>
-                )}
-                {dados.acertosFrageis > 0 && (
-                  <li className="rs-alerta rs-alerta--aviso">
-                    <Icone nome="olho" tamanho={16} />
-                    <span><strong>{plural(dados.acertosFrageis, 'acerto sem certeza', 'acertos sem certeza')}.</strong> Contam como certos, mas voltam mais cedo na revisão para virar conhecimento firme.</span>
-                  </li>
-                )}
-              </ul>
-            )}
-          </section>
+            </ol>
+            {dados.respondidas.length > 1 && <Tempos linhas={dados.linhas} mediana={dados.mediana} maisDemorada={dados.maisDemorada} />}
+          </div>
+        </Secao>
 
-          <section className="cartao cartao__corpo rs-cartao">
-            <div className="rs-cartao__cabeca">
-              <h2>Por tema</h2>
-              <p className="texto-2">Toque em um tema para treinar só ele.</p>
+        {temConfianca && <div className="rr-duas">
+        {(
+          <Secao id="confianca" rotulo="Confiança" icone="olho" titulo="Você sabia ou chutou?" texto="O acerto separado pelo que você marcou ao responder. Erro com certeza é o mais importante de ler.">
+            <div className="dp-cartao">
+              <div className="rr-confianca">
+                {(['seguro', 'duvida', 'chute'] as const).map((tipo) => {
+                  const grupo = dados.porConfianca[tipo]
+                  const p = grupo.total ? Math.round((grupo.certas / grupo.total) * 100) : 0
+                  return (
+                    <div className="rr-confianca__linha" key={tipo}>
+                      <span className="rr-confianca__rotulo"><Icone nome={ICONE_CONFIANCA[tipo]} tamanho={16} /> {ROTULO_CONFIANCA[tipo]}</span>
+                      <span className="rr-trilho"><span className={`rr-faixa--${faixa(p)}`} style={{ width: `${grupo.total ? Math.max(3, p) : 0}%` }} /></span>
+                      <span className="rr-confianca__valor">
+                        <b>{grupo.total ? `${grupo.certas}/${grupo.total}` : '–'}</b> <small>{grupo.total ? `${p}%` : 'nenhuma'}</small>
+                      </span>
+                    </div>
+                  )
+                })}
+              </div>
+              {(dados.falsaCerteza > 0 || dados.acertosFrageis > 0) && (
+                <ul className="rr-alertas">
+                  {dados.falsaCerteza > 0 && (
+                    <li className="rr-alerta rr-alerta--erro">
+                      <Icone nome="alerta" tamanho={18} />
+                      <span><b>{plural(dados.falsaCerteza, 'erro com certeza', 'erros com certeza')}.</b> São os mais importantes: indicam um conceito aprendido errado. Leia o comentário antes de refazer.</span>
+                    </li>
+                  )}
+                  {dados.acertosFrageis > 0 && (
+                    <li className="rr-alerta rr-alerta--aviso">
+                      <Icone nome="olho" tamanho={18} />
+                      <span><b>{plural(dados.acertosFrageis, 'acerto sem certeza', 'acertos sem certeza')}.</b> Contam como certos, mas voltam mais cedo na revisão para virar conhecimento firme.</span>
+                    </li>
+                  )}
+                </ul>
+              )}
             </div>
-            <ul className="rs-temas">
+          </Secao>
+        )}
+
+        {(
+          <Secao id="temas" rotulo="Temas" icone="mapa" titulo="Onde você foi melhor?" texto="Cada tema desta sessão, com o botão para treinar só ele e o resumo certo para os erros.">
+            <ul className="dp-cartao rr-temas">
               {dados.porTema.map((tema) => {
                 const p = Math.round((tema.certas / tema.total) * 100)
-                const conteudo = (
-                  <>
-                    <span className="rs-tema__nome">{tema.nome}</span>
-                    <span className={`rs-tema__valor dp-texto--${faixa(p)}`}>{tema.certas}/{tema.total}</span>
-                    <span className="dp-tema__trilho rs-tema__trilho"><span className={`dp-faixa--${faixa(p)}`} style={{ width: `${Math.max(3, p)}%` }} /></span>
-                  </>
-                )
+                const resumo = resumos.porTema.get(tema.nome)
                 return (
-                  <li key={tema.nome}>
-                    {tema.slug ? <a className="rs-tema" href={href(`/treinar?temas=${tema.slug}&limite=10`)}>{conteudo}</a> : <span className="rs-tema">{conteudo}</span>}
+                  <li key={tema.nome} className="rr-tema">
+                    <div className="rr-tema__info">
+                      <strong>{tema.nome}</strong>
+                      <span className="rr-trilho"><span className={`rr-faixa--${faixa(p)}`} style={{ width: `${Math.max(3, p)}%` }} /></span>
+                    </div>
+                    <span className={`rr-tema__valor rr-texto--${faixa(p)}`}><b>{tema.certas}/{tema.total}</b><small>{p}%</small></span>
+                    {(tema.slug || resumo) && (
+                      <span className="rr-tema__acoes nao-imprime">
+                        {resumo && <a className="dp-botao dp-botao--pequeno" href={href(`/resumos/${resumo.capitulo.id}`)} title={resumo.capitulo.titulo}><Icone nome="livro" tamanho={14} /> Resumo</a>}
+                        {tema.slug && <a className="dp-botao dp-botao--pequeno" href={href(`/treinar?temas=${tema.slug}&limite=10`)}><Icone nome="alvo" tamanho={14} /> Treinar</a>}
+                      </span>
+                    )}
                   </li>
                 )
               })}
             </ul>
-          </section>
-        </div>
-      )}
-
-      <section className="cartao cartao__corpo rs-cartao">
-        <div className="rs-cartao__cabeca rs-cartao__cabeca--linha">
-          <div>
-            <h2>Folha de respostas</h2>
-            <p className="texto-2">Toque em um número para abrir a questão com o comentário.</p>
-          </div>
-          <ul className="rs-legenda" aria-label="Legenda">
-            <li><i className="rs-bolinha rs-bolinha--certa" /> Certa</li>
-            <li><i className="rs-bolinha rs-bolinha--errada" /> Errada</li>
-            {puladas > 0 && <li><i className="rs-bolinha rs-bolinha--pulada" /> Sem resposta</li>}
-            {dados.incertas.length > 0 && <li><i className="rs-bolinha rs-bolinha--incerta" /> Dúvida ou chute</li>}
-          </ul>
-        </div>
-        <ol className="rs-folha">
-          {dados.linhas.map((l) => {
-            const incerta = l.resposta?.confianca === 'duvida' || l.resposta?.confianca === 'chute'
-            const descricao =
-              l.situacao === 'pulada' ? 'sem resposta'
-                : l.situacao === 'anulada' ? 'anulada'
-                  : `${l.situacao}, ${letraMarcada(l) ? `marcou ${letraMarcada(l)}` : 'autoavaliada'}${l.situacao === 'errada' && l.questao?.gabarito ? `, gabarito ${gabaritoVisto(l)}` : ''}${incerta ? `, ${ROTULO_CONFIANCA[l.resposta!.confianca!].toLowerCase()}` : ''}`
-            return (
-              <li key={l.id}>
-                <a className={`rs-casa rs-casa--${l.situacao}${incerta ? ' rs-casa--incerta' : ''}`} href={href(`/questao/${l.id}`)} title={`Questão ${l.numero}: ${descricao}`} aria-label={`Questão ${l.numero}: ${descricao}`}>
-                  {l.numero}
-                </a>
-              </li>
-            )
-          })}
-        </ol>
-      </section>
-
-      <section className="cartao cartao__corpo rs-cartao">
-        <div className="rs-cartao__cabeca rs-cartao__cabeca--linha">
-          <div>
-            <h2>Revise as questões</h2>
-            <p className="texto-2">O que você marcou, o gabarito e quanto tempo levou.</p>
-          </div>
-          <div className="ct-seg rs-filtro nao-imprime" role="group" aria-label="Mostrar">
-            {([['erradas', 'Erradas', dados.erradas.length], ['incertas', 'Incertas', dados.incertas.length], ['todas', 'Todas', dados.linhas.length]] as const).map(([valor, rotulo, n]) => (
-              <button key={valor} type="button" aria-pressed={filtroAtivo === valor} onClick={() => definirFiltro(valor)}>
-                {rotulo} <span className="rs-filtro__n">{n}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-        {visiveis.length === 0 ? (
-          <p className="rs-vazio">
-            <Icone nome={filtroAtivo === 'erradas' ? 'trofeu' : 'certo'} tamanho={20} />
-            {filtroAtivo === 'erradas' ? 'Nenhuma errada nesta sessão. Gabaritou!' : 'Você respondeu tudo com certeza.'}
-          </p>
-        ) : (
-          <ul className="rs-lista">
-            {visiveis.map((l) => {
-              const q = l.questao
-              const r = l.resposta
-              const enunciado = q?.enunciado ?? ''
-              return (
-                <li key={l.id}>
-                  <a className={`rs-item rs-item--${l.situacao}`} href={href(`/questao/${l.id}`)}>
-                    <span className="rs-item__numero">{l.numero}</span>
-                    <span className="rs-item__corpo">
-                      <span className="rs-item__meta">
-                        {q?.tema ?? 'Questão'}{q?.prova ? ` · ${rotuloProva(q.prova)}` : ''}{q?.ano ? ` ${q.ano}` : ''}
-                      </span>
-                      <span className="rs-item__enunciado">{enunciado.slice(0, 160)}{enunciado.length > 160 ? '…' : ''}</span>
-                      <span className="rs-item__chips">
-                        {l.situacao === 'pulada' ? (
-                          <span className="rs-chip">Sem resposta</span>
-                        ) : l.situacao === 'anulada' ? (
-                          <span className="rs-chip">Anulada{letraMarcada(l) ? ` · marcou ${letraMarcada(l)}` : ''}</span>
-                        ) : (
-                          <>
-                            <span className={`rs-chip rs-chip--${l.situacao}`}>
-                              <Icone nome={l.situacao === 'certa' ? 'certo' : 'errado'} tamanho={13} /> {letraMarcada(l) ? `Marcou ${letraMarcada(l)}` : l.situacao === 'certa' ? 'Acertou (autoavaliação)' : 'Errou (autoavaliação)'}
-                            </span>
-                            {l.situacao === 'errada' && q?.gabarito && <span className="rs-chip rs-chip--gabarito">Gabarito {gabaritoVisto(l)}</span>}
-                          </>
-                        )}
-                        {r?.confianca && r.confianca !== 'seguro' && (
-                          <span className="rs-chip rs-chip--aviso"><Icone nome={ICONE_CONFIANCA[r.confianca]} tamanho={13} /> {ROTULO_CONFIANCA[r.confianca]}</span>
-                        )}
-                        {r && <span className="rs-chip rs-chip--tempo"><Icone nome="relogio" tamanho={13} /> {duracao(r.segundos)}</span>}
-                      </span>
-                    </span>
-                    <span className="rs-item__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
+          </Secao>
         )}
-      </section>
 
-      <section className="rs-rodape">
-        {(streak.hojeContagem > 0 || streak.atual > 0) && (
-          <div className="rs-marco">
-            <span className="rs-marco__icone rs-marco__icone--fogo"><Icone nome="fogo" tamanho={20} /></span>
-            <span>
-              <strong>{streak.metaHojeAtingida ? `Meta de hoje batida · ${plural(streak.atual, 'dia seguido', 'dias seguidos')}` : `Faltam ${META_STREAK_DIARIA - streak.hojeContagem} para a meta de hoje`}</strong>
-              <small>{plural(streak.hojeContagem, 'questão respondida hoje', 'questões respondidas hoje')}</small>
-            </span>
+        </div>}
+
+        <Secao id="questoes" rotulo="Questões" icone="lapis" titulo="Revise as questões" texto="O que você marcou, o gabarito e quanto tempo levou. Toque para abrir com o comentário.">
+          <div className="dp-cartao">
+            <div className="rr-controles nao-imprime">
+              <div className="ds-seg" role="group" aria-label="Mostrar">
+                {([['erradas', 'Erradas', dados.erradas.length], ['incertas', 'Incertas', dados.incertas.length], ['todas', 'Todas', dados.linhas.length]] as const).map(([valor, rotulo, n]) => (
+                  <button key={valor} type="button" aria-pressed={filtroAtivo === valor} onClick={() => definirFiltro(valor)}>
+                    {rotulo} <span className="rr-contagem">{n}</span>
+                  </button>
+                ))}
+              </div>
+              <div className="ds-seg" role="group" aria-label="Ordem">
+                <button type="button" aria-pressed={ordem === 'sessao'} onClick={() => definirOrdem('sessao')}>Na ordem</button>
+                <button type="button" aria-pressed={ordem === 'tempo'} onClick={() => definirOrdem('tempo')}><Icone nome="relogio" tamanho={14} /> Mais demoradas</button>
+              </div>
+            </div>
+            {visiveis.length === 0 ? (
+              <p className="rr-vazio">
+                <Icone nome={filtroAtivo === 'erradas' ? 'trofeu' : 'certo'} tamanho={20} />
+                {filtroAtivo === 'erradas' ? 'Nenhuma errada nesta sessão. Gabaritou!' : 'Você respondeu tudo com certeza.'}
+              </p>
+            ) : (
+              <ul className="rr-lista">
+                {visiveis.map((l) => <ItemQuestao key={l.id} l={l} />)}
+              </ul>
+            )}
           </div>
-        )}
-        {proximoEmblema && (
-          <a className="rs-marco" href={href('/ranking')}>
-            <span className="rs-marco__medalha"><Medalha conquista={proximoEmblema} tamanho={40} bloqueada /></span>
-            <span>
-              <strong>Faltam {plural(proximoEmblema.minimo - totalConta, 'questão', 'questões')} para {proximoEmblema.rotulo}</strong>
-              <span className="rs-marco__trilho"><span style={{ width: `${Math.min(100, (totalConta / proximoEmblema.minimo) * 100)}%` }} /></span>
-            </span>
-          </a>
-        )}
-        <div className="rs-extras nao-imprime">
-          <a className="botao botao--fantasma" href={href('/dados')}><Icone nome="grafico" tamanho={16} /> Desempenho geral</a>
-          <button type="button" className="botao botao--fantasma" onClick={exportar}><Icone nome="baixar" tamanho={16} /> Exportar CSV</button>
-          <button type="button" className="botao botao--fantasma" onClick={() => window.print()}><Icone nome="impressora" tamanho={16} /> Imprimir</button>
-        </div>
-      </section>
+        </Secao>
+
+        <Secao id="progresso" rotulo="Seu progresso" icone="fogo" titulo="E a sua constância?" texto="A meta de hoje, o próximo emblema e o resultado guardado do seu jeito.">
+          <div className="rr-progresso">
+            {(streak.hojeContagem > 0 || streak.atual > 0) && (
+              <div className="dp-cartao rr-marco">
+                <span className="rr-marco__icone" aria-hidden="true"><img src={recurso('ranking/chama.png')} width={28} height={28} alt="" /></span>
+                <div>
+                  <strong>{streak.metaHojeAtingida ? `Meta de hoje batida · ${plural(streak.atual, 'dia seguido', 'dias seguidos')}` : `Faltam ${META_STREAK_DIARIA - streak.hojeContagem} para a meta de hoje`}</strong>
+                  <span className="ds-medidor"><span style={{ width: `${Math.min(100, (streak.hojeContagem / META_STREAK_DIARIA) * 100)}%` }} /></span>
+                  <small>{plural(streak.hojeContagem, 'questão respondida hoje', 'questões respondidas hoje')} · recorde de {plural(streak.recorde, 'dia', 'dias')}</small>
+                </div>
+              </div>
+            )}
+            {proximoEmblema && (
+              <a className="dp-cartao rr-marco rr-marco--link" href={href('/ranking')}>
+                <span className="rr-marco__icone" aria-hidden="true"><Medalha conquista={proximoEmblema} tamanho={40} bloqueada /></span>
+                <div>
+                  <strong>Faltam {plural(proximoEmblema.minimo - totalConta, 'questão', 'questões')} para {proximoEmblema.rotulo}</strong>
+                  <span className="ds-medidor"><span style={{ width: `${Math.min(100, (totalConta / proximoEmblema.minimo) * 100)}%` }} /></span>
+                  <small>{totalConta.toLocaleString('pt-BR')} de {proximoEmblema.minimo.toLocaleString('pt-BR')} questões diferentes</small>
+                </div>
+              </a>
+            )}
+          </div>
+          <div className="rr-extras nao-imprime">
+            <a className="dp-botao" href={href('/dados')}><Icone nome="grafico" tamanho={16} /> Desempenho geral</a>
+            <button type="button" className="dp-botao" onClick={exportar}><Icone nome="baixar" tamanho={16} /> Exportar CSV</button>
+            <button type="button" className="dp-botao" onClick={() => window.print()}><Icone nome="impressora" tamanho={16} /> Imprimir</button>
+          </div>
+        </Secao>
+      </div>
     </article>
+  )
+}
+
+function irPara(id: string) {
+  return (e: React.MouseEvent) => {
+    e.preventDefault()
+    const alvo = document.getElementById(`rr-${id}`)
+    if (!alvo) return
+    const reduzir = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    alvo.scrollIntoView({ behavior: reduzir ? 'auto' : 'smooth', block: 'start' })
+  }
+}
+
+/** Cabeça de seção: rótulo, a pergunta que ela responde e uma linha de apoio. */
+function Secao({ id, rotulo, icone, titulo, texto, children }: { id: string; rotulo: string; icone: Parameters<typeof Icone>[0]['nome']; titulo: string; texto: string; children: ReactNode }) {
+  return (
+    <section className="dp-secao" id={`rr-${id}`} aria-labelledby={`rr-${id}-titulo`}>
+      <header className="dp-secao__cabeca">
+        <p className="dp-rotulo"><Icone nome={icone} tamanho={14} /> {rotulo}</p>
+        <h2 id={`rr-${id}-titulo`}>{titulo}</h2>
+        <p>{texto}</p>
+      </header>
+      {children}
+    </section>
+  )
+}
+
+/** A mensagem do topo, com os números em destaque e o tom das cartas: dado real, sem número ruim em destaque. */
+function Mensagem({ pct, certas, validas, erradas, forte, falsaCerteza, emAndamento, puladas }: {
+  pct: number | null; certas: number; validas: number; erradas: number; forte: string | null; falsaCerteza: number; emAndamento: boolean; puladas: number
+}) {
+  if (emAndamento) return <p className="dp-mensagem">A sessão ainda está aberta: <b>{questoesPorExtenso(puladas)}</b> {puladas === 1 ? 'espera' : 'esperam'} resposta. O resultado abaixo já conta o que você respondeu.</p>
+  if (pct === null) return <p className="dp-mensagem">Nenhuma questão contabilizada desta vez. <b>Dez questões</b> já bastam para este resultado mostrar onde você está.</p>
+  const abertura = pct >= 85 ? <>Desempenho de quem domina o assunto: <b>{certas} de {validas}</b> certas.</>
+    : pct >= 70 ? <>Resultado sólido: <b>{certas} de {validas}</b> certas.</>
+      : pct >= 50 ? <>Você está no caminho, com <b>{certas} de {validas}</b> certas.</>
+        : <>Errar aqui é o que evita errar na prova.</>
+  return (
+    <p className="dp-mensagem">
+      {abertura}
+      {forte && <> Seu terreno mais firme hoje foi <b>{forte}</b>.</>}
+      {erradas > 0 && (falsaCerteza > 0
+        ? <> Comece pelos <b>{falsaCerteza === 1 ? 'um erro' : `${falsaCerteza} erros`} com certeza</b>: são os que mais ensinam.</>
+        : <> Os erros de hoje viram as revisões de amanhã: leia os comentários com calma e refaça.</>)}
+      {erradas === 0 && validas > 0 && <> Nenhum erro: aproveite para confirmar os acertos que vieram com dúvida.</>}
+    </p>
+  )
+}
+
+/** O anel de acerto, dividido em certas, erradas e sem resposta, com a legenda em texto. */
+function Anel({ pct, certas, erradas, validas, puladas }: { pct: number | null; certas: number; erradas: number; validas: number; puladas: number }) {
+  const total = certas + erradas + puladas
+  const r = 52
+  const c = 2 * Math.PI * r
+  const arco = (n: number) => (total ? (n / total) * c : 0)
+  const fatias = [
+    { n: certas, classe: 'rr-anel__certas' },
+    { n: erradas, classe: 'rr-anel__erradas' },
+    { n: puladas, classe: 'rr-anel__puladas' },
+  ]
+  let deslocamento = 0
+  return (
+    <div className="rr-anel">
+      <p className="dp-nota__titulo"><span className="dp-nota__icone" aria-hidden="true"><Icone nome="alvo" tamanho={16} /></span> Acerto da sessão</p>
+      <div className="rr-anel__grafico" role="img" aria-label={pct === null ? 'Sem questões contabilizadas' : `${pct}% de acerto: ${certas} certas e ${erradas} erradas${puladas ? `, ${puladas} sem resposta` : ''}`}>
+        <svg viewBox="0 0 128 128" aria-hidden="true">
+          <circle className="rr-anel__trilho" cx="64" cy="64" r={r} />
+          {fatias.map((f) => {
+            if (!f.n) return null
+            const tamanho = arco(f.n)
+            const el = <circle key={f.classe} className={f.classe} cx="64" cy="64" r={r} strokeDasharray={`${Math.max(0, tamanho - 2)} ${c}`} strokeDashoffset={-deslocamento} transform="rotate(-90 64 64)" />
+            deslocamento += tamanho
+            return el
+          })}
+        </svg>
+        <span className="rr-anel__valor"><b>{pct === null ? '–' : `${pct}%`}</b><small>{validas ? `${certas} de ${validas}` : 'sem respostas'}</small></span>
+      </div>
+      <ul className="rr-anel__legenda">
+        <li><i className="rr-ponto rr-ponto--certa" /> {plural(certas, 'certa', 'certas')}</li>
+        <li><i className="rr-ponto rr-ponto--errada" /> {plural(erradas, 'errada', 'erradas')}</li>
+        {puladas > 0 && <li><i className="rr-ponto rr-ponto--pulada" /> {plural(puladas, 'sem resposta', 'sem resposta')}</li>}
+      </ul>
+    </div>
+  )
+}
+
+/** O tempo de cada questão: uma barra por questão, na cor do resultado, com a mediana como linha de referência. */
+function Tempos({ linhas, mediana, maisDemorada }: { linhas: Linha[]; mediana: number; maisDemorada: Linha | null }) {
+  const maximo = Math.max(1, ...linhas.map((l) => l.resposta?.segundos ?? 0))
+  const lentas = linhas.filter((l) => (l.resposta?.segundos ?? 0) > Math.max(mediana * 2, 30)).length
+  return (
+    <figure className="rr-tempos">
+      <figcaption>
+        <strong>Tempo por questão</strong>
+        <span>
+          Mediana de <b>{duracao(mediana)}</b>
+          {maisDemorada && maisDemorada.resposta!.segundos > mediana && <> · a mais demorada foi a <b>{maisDemorada.numero}</b> ({duracao(maisDemorada.resposta!.segundos)})</>}
+          {lentas > 0 && <> · {lentas === 1 ? 'uma levou' : `${lentas} levaram`} mais que o dobro</>}
+        </span>
+      </figcaption>
+      <div className="rr-tempos__grafico" style={{ '--mediana': `${(mediana / maximo) * 100}%` } as CSSProperties}>
+        <span className="rr-tempos__mediana" aria-hidden="true" />
+        <ol>
+          {linhas.map((l) => (
+            <li key={l.id}>
+              <a href={href(`/questao/${l.id}`)} className={`rr-tempos__barra rr-tempos__barra--${l.situacao}`} style={{ '--altura': `${l.resposta ? Math.max(4, (l.resposta.segundos / maximo) * 100) : 0}%` } as CSSProperties}
+                title={`Questão ${l.numero}: ${l.resposta ? duracao(l.resposta.segundos) : 'sem resposta'}`} aria-label={`Questão ${l.numero}: ${l.resposta ? duracao(l.resposta.segundos) : 'sem resposta'}, ${descreverLinha(l)}`}>
+                <i />
+              </a>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </figure>
+  )
+}
+
+function ItemQuestao({ l }: { l: Linha }) {
+  const q = l.questao
+  const r = l.resposta
+  const enunciado = q?.enunciado ?? ''
+  return (
+    <li>
+      <a className={`rr-item rr-item--${l.situacao}`} href={href(`/questao/${l.id}`)}>
+        <span className="rr-item__numero">{l.numero}</span>
+        <span className="rr-item__corpo">
+          <span className="rr-item__meta">{q?.tema ?? 'Questão'}{q?.prova ? ` · ${rotuloProva(q.prova)}` : ''}{q?.ano ? ` ${q.ano}` : ''}</span>
+          <span className="rr-item__enunciado">{enunciado.slice(0, 180)}{enunciado.length > 180 ? '…' : ''}</span>
+          <span className="rr-item__chips">
+            {l.situacao === 'pulada' ? (
+              <span className="rr-chip">Sem resposta</span>
+            ) : l.situacao === 'anulada' ? (
+              <span className="rr-chip">Anulada{letraMarcada(l) ? ` · marcou ${letraMarcada(l)}` : ''}</span>
+            ) : (
+              <>
+                <span className={`rr-chip rr-chip--${l.situacao}`}>
+                  <Icone nome={l.situacao === 'certa' ? 'certo' : 'errado'} tamanho={13} /> {letraMarcada(l) ? `Marcou ${letraMarcada(l)}` : l.situacao === 'certa' ? 'Acertou (autoavaliação)' : 'Errou (autoavaliação)'}
+                </span>
+                {l.situacao === 'errada' && q?.gabarito && <span className="rr-chip rr-chip--gabarito">Gabarito {gabaritoVisto(l)}</span>}
+              </>
+            )}
+            {r?.confianca && r.confianca !== 'seguro' && (
+              <span className="rr-chip rr-chip--aviso"><Icone nome={ICONE_CONFIANCA[r.confianca]} tamanho={13} /> {ROTULO_CONFIANCA[r.confianca]}</span>
+            )}
+            {r && <span className="rr-chip"><Icone nome="relogio" tamanho={13} /> {duracao(r.segundos)}</span>}
+          </span>
+        </span>
+        <span className="rr-item__abrir" aria-hidden="true">Abrir <Icone nome="direita" tamanho={16} /></span>
+      </a>
+    </li>
   )
 }
 
@@ -627,8 +845,9 @@ export function Resumo() {
 function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usarCronogramaHoje>['calculo']> }) {
   const revisoes = calculo.revisoesHoje ?? []
   const feitasRevisao = revisoes.filter((r) => r.feita).length
+  const total = calculo.metaDiaria + revisoes.length
   const falta = calculo.faltaHoje + revisoes.length - feitasRevisao
-  const feita = calculo.metaDiaria + revisoes.length > 0 && falta === 0
+  const feita = total > 0 && falta === 0
   const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
   const amanha = calculo.amanha
   const nomesAmanha = amanha ? [...new Set(amanha.itens.map((i) => i.nome))].join(' e ') : ''
@@ -636,18 +855,26 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
   // Meta feita: o botão puxa o próximo dia de estudo direto (pedido do Tales, 19/10/2026).
   const proximo = feita ? proximoDiaParaPuxar(calculo) : null
   const puxar = proximo ? textoPuxar(proximo) : null
+  const progresso = total > 0 ? Math.max(0, (1 - falta / total) * 100) : 0
   return (
-    <section className={'rs-cronograma' + (feita ? ' rs-cronograma--feita' : '')} aria-labelledby="rs-cron-titulo">
-      <span className="rs-cronograma__selo" aria-hidden="true">{feita ? <Icone nome="certo" tamanho={28} /> : <span className="numerico">{falta}</span>}</span>
-      <h2 id="rs-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${falta} para a meta de hoje`}</h2>
-      <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{revisoes.length > 0 && <> · {feitasRevisao} de {revisoes.length} revisões</>}{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
-      <div className="rs-cronograma__proximo">
-        {fraseAdiantado(calculo) && <><b>{fraseAdiantado(calculo)}</b><br /></>}
-        {feita ? <>Pronto por hoje. Se quiser, <b>puxe as questões do próximo dia</b>: o que fizer conta para ele, e o resto continua lá. Você também pode refazer outros erros ou estudar flashcards.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
-        {amanha && <><br />{chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
+    <section className={'dp-cartao rr-cronograma' + (feita ? ' rr-cronograma--feita' : '')} aria-labelledby="rr-cron-titulo">
+      <span className="rr-cronograma__selo" aria-hidden="true">{feita ? <Icone nome="certo" tamanho={26} /> : <b>{falta}</b>}</span>
+      <div className="rr-cronograma__texto">
+        <p className="dp-rotulo"><Icone nome="calendario" tamanho={14} /> Cronograma</p>
+        <h2 id="rr-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${falta} para a meta de hoje`}</h2>
+        <span className="ds-medidor"><span style={{ width: `${progresso}%` }} /></span>
+        <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{revisoes.length > 0 && <> · {feitasRevisao} de {revisoes.length} revisões</>}{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
+        <p>
+          {fraseAdiantado(calculo) && <><b>{fraseAdiantado(calculo)}</b> </>}
+          {feita ? <>Pronto por hoje. Se quiser, <b>puxe as questões do próximo dia</b>: o que fizer conta para ele, e o resto continua lá. Você também pode refazer outros erros ou estudar flashcards.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
+          {amanha && <> {chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
+        </p>
       </div>
-      <a className={'botao botao--grande ' + (feita ? 'botao--ouro' : 'botao--principal')} href={href(proximo ? `/cronograma?puxar=${chaveCivil(proximo.data)}` : feita ? '/cronograma?adiantar=1' : '/cronograma')}>{puxar ? `${puxar.rotulo} · ${puxar.detalhe}` : feita ? 'Adiantar o próximo dia' : 'Continuar o cronograma'}</a>
-      {feita && <span className="rs-cronograma__link"><a href={href('/cronograma')}>Voltar ao cronograma</a> · <a href={href('/revisao')}>revisões (opcional)</a></span>}
+      <div className="rr-cronograma__acoes">
+        <a className="dp-botao dp-botao--principal dp-botao--grande" href={href(proximo ? `/cronograma?puxar=${chaveCivil(proximo.data)}` : feita ? '/cronograma?adiantar=1' : '/cronograma')}>{puxar ? `${puxar.rotulo} · ${puxar.detalhe}` : feita ? 'Adiantar o próximo dia' : 'Continuar o cronograma'}</a>
+        {feita && <a className="dp-botao" href={href('/cronograma')}>Voltar ao cronograma</a>}
+        {feita && <a className="dp-botao" href={href('/revisao')}>Revisões (opcional)</a>}
+      </div>
     </section>
   )
 }

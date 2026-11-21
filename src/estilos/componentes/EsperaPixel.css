@@ -18,16 +18,6 @@
 @keyframes espera-aparece { from { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .espera-pixel__guerreiro, .espera-pixel__frase::after { animation: none; } }
 
-/* Fim de sessão (cartão de missão do ModalConfirmarEmail) e botão flutuante de concluir. */
-.fim-sessao__guerreiro { margin: 0 auto; transform: scale(.8); transform-origin: center bottom; }
-.concluir-flutuante {
-  position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 6.2rem); z-index: 45; transform: translateX(-50%);
-  padding: .85rem 1.4rem; border: 0; cursor: pointer; white-space: nowrap;
-  background: #f4cf7c; color: #1b1208; font: inherit; font-weight: 800; font-size: 1.05rem;
-  box-shadow: 0 0 0 3px #1b1208, 5px 5px 0 3px rgba(0, 0, 0, .35); animation: espera-aparece .25s ease both;
-}
-.concluir-flutuante:hover { background: #ffdf95; }
-@media (min-width: 56rem) { .concluir-flutuante { bottom: 1.5rem; } }
 
 /* Jogo dos Flashcards abrindo (o pop-up ainda baixando): véu escuro por cima do site, com o guerreiro. */
 .espera-jogo { position: fixed; inset: 0; z-index: 70; display: grid; place-items: center; background: rgba(6, 5, 10, .78); --texto: #f6ead0; }

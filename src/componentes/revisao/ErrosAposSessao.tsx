@@ -59,27 +59,27 @@ export function ErrosAposSessao({ indice, plano, sessao, registros }: {
     }
   }
 
-  return <section className="rs-refaca nao-imprime" aria-labelledby="rs-refaca-titulo">
-    <header className="rs-refaca__cabeca">
-      <span className="rs-refaca__icone" aria-hidden="true"><Icone nome="reiniciar" tamanho={22} /></span>
+  return <section className="dp-cartao rr-refaca nao-imprime" aria-labelledby="rr-refaca-titulo">
+    <header className="rr-refaca__cabeca">
+      <span className="rr-refaca__icone" aria-hidden="true"><Icone nome="reiniciar" tamanho={22} /></span>
       <div>
-        <h2 id="rs-refaca-titulo">Refaça erros anteriores</h2>
+        <h3 id="rr-refaca-titulo">Refaça erros anteriores</h3>
         <p>{MECANISMO}</p>
       </div>
     </header>
     {erros.length > 0 ? <>
-      <p className="rs-refaca__fila">{erros.length === 1 ? '1 erro anterior disponível' : `${erros.length} erros anteriores disponíveis`}</p>
-      <div className="rs-refaca__opcoes" aria-label="Intensidade da revisão">
-        {opcoes.map((nivel) => <button key={nivel.id} type="button" className="rs-refaca__opcao" data-intensidade={nivel.id} disabled={abrindo}
+      <p className="rr-refaca__fila">{erros.length === 1 ? '1 erro anterior disponível' : `${erros.length} erros anteriores disponíveis`}</p>
+      <div role="group" className="rr-refaca__opcoes" aria-label="Intensidade da revisão">
+        {opcoes.map((nivel) => <button key={nivel.id} type="button" className="rr-refaca__opcao" data-intensidade={nivel.id} disabled={abrindo}
           aria-label={`Revisão ${nivel.nome.toLowerCase()}, ${nivel.quantidade} ${nivel.quantidade === 1 ? 'questão' : 'questões'}`}
           onClick={() => { void iniciar(nivel.proporcao, nivel.teto) }}>
-          <span className="rs-refaca__nivel"><strong>{nivel.nome}</strong><span className="rs-refaca__medidor" aria-hidden="true"><i /><i /><i /></span></span>
-          <span className="rs-refaca__contagem"><b>{nivel.quantidade}</b> {nivel.quantidade === 1 ? 'questão' : 'questões'}</span>
+          <span className="rr-refaca__nivel"><strong>{nivel.nome}</strong><span className="rr-refaca__medidor" aria-hidden="true"><i /><i /><i /></span></span>
+          <span className="rr-refaca__contagem"><b>{nivel.quantidade}</b> {nivel.quantidade === 1 ? 'questão' : 'questões'}</span>
           <small><Icone nome="relogio" tamanho={14} /> cerca de {formatarTempo(nivel.quantidade * minutos)}</small>
         </button>)}
       </div>
-      <footer className="rs-refaca__rodape"><small>As alternativas seguem a opção “Revisão em ordem nova” do treino.</small><a href={href('/')}>Encerrar por hoje</a></footer>
-    </> : <p className="rs-refaca__fila" role="status">Sua fila de erros anteriores está em dia.</p>}
-    {aviso && <p className="rs-refaca__fila" role="status">{aviso}</p>}
+      <footer className="rr-refaca__rodape"><small>As alternativas seguem a opção “Revisão em ordem nova” do treino.</small><a href={href('/')}>Encerrar por hoje</a></footer>
+    </> : <p className="rr-refaca__fila" role="status">Sua fila de erros anteriores está em dia.</p>}
+    {aviso && <p className="rr-refaca__fila" role="status">{aviso}</p>}
   </section>
 }
