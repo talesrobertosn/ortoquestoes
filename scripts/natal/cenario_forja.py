@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Pintura de Natal da Forja, na grade de 480 × 200 do cenário original.
 
-A coroa fica presa à cinta da chaminé, o cordão segue a viga e as brasas
-iluminam os embrulhos assentados nas lajes. Uso: python3 scripts/natal/cenario_forja.py
+A coroa fica presa à cinta da chaminé, o pinheiro em vaso repousa na
+travessa da coifa e as brasas iluminam os embrulhos nas lajes.
+Uso: python3 scripts/natal/cenario_forja.py
 """
 from __future__ import annotations
 
@@ -23,6 +24,7 @@ FITA = pal("#261a0f", "#3b2b1b", "#584228", "#755839", "#876942", "#9a7b4e", "#b
 PAPEL_VERDE = pal("#0d2426", "#142f33", "#1a4146", "#24555a", "#346765", "#477870", "#638e80")
 PAPEL_VINHO = pal("#271315", "#381c1f", "#522830", "#6d343a", "#85444a", "#a75b5c", "#bb746a")
 FERRO = pal("#16191d", "#2c3038", "#434956", "#606776", "#7d8798", "#9ba8b6", "#c7ced1")
+BRONZE = pal("#352319", "#513527", "#76523a", "#9d6b41", "#ba8d55", "#d9ad70", "#ecc687")
 PINHA = pal("#221714", "#36241a", "#4d3325", "#614632", "#755640", "#8a6647", "#a28058")
 GEADA = pal("#455355", "#5a6867", "#6f7e79", "#83918a", "#9aaa9e", "#b3c0b6", "#ccd6cf")
 VIDROS = (
@@ -124,6 +126,143 @@ def coroa(c: Camada, e: Camada) -> list[Luz]:
     c.linha(234, 63, 238, 65, VINHO[4])
     c.p(235, 63, VINHO[5])
     c.p(245, 64, VINHO[4])
+    return luzes
+
+
+def pinheiro_da_travessa(c: Camada, e: Camada) -> list[Luz]:
+    """Pinheiro em vaso de cobre rebatido, assentado na verga ao lado da tenaz."""
+    cx = 219
+    copas = Camada()
+    fibra = (forja.ruido(184, 1.45) - 0.5) * 1.35
+    # A silhueta abre em patamares. Nos intervalos aparecem o escuro das
+    # forquilhas e as pontas serrilhadas das agulhas, antes da saia seguinte.
+    for i, (x0, y0, y1, meia) in enumerate(
+        ((-1, 69, 79, 11), (0, 64, 75, 10), (0, 60, 71, 8),
+         (-1, 55, 67, 7), (0, 52, 63, 5), (-1, 49, 58, 4))
+    ):
+        centro = cx + x0
+        t = np.clip((Y - y0) / (y1 - y0), 0, 1)
+        folga = 0.18 + meia * t ** 0.85
+        asimetria = np.where(X < centro, 1.12, 0.87)
+        onda = 1.25 * np.sin((X - cx) * 1.8 + i * 1.5)
+        faixa = (Y >= y0) & (Y <= y1 + onda) & (np.abs(X - centro) <= folga * asimetria)
+        frente = (X - centro) / np.maximum(folga, 1)
+        tom = 4.15 - 1.78 * t - 0.75 * frente + fibra + forja.BAYER_HW * 0.6 + i * 0.09
+        copas.mascara(faixa, forja.tom(PINHO, tom))
+        for lado in (-1, 1):
+            for j in (1, 2, 3):
+                alcance = 1.0 if lado < 0 or i == 0 else 0.8
+                x = centro + lado * (meia * (0.35 + 0.23 * j)) * alcance
+                y = y1 - 2 + int(forja.h2(i, lado, j) > 0.47)
+                dx = lado * (1 + int(forja.h2(i, j, lado, 18) > 0.46))
+                copas.linha(x - lado, y - 1, x + dx, y + 1, PINHO[2 + (lado == -1)])
+                copas.p(x + dx, y, PINHO[4 + (lado == -1 and j == 3)])
+
+    # Sombra de apoio, vaso com boca oval, rebordo, pé baixo e costura.
+    c.ret(cx - 7, 85, 15, 1, "#37261e", 0.60)
+    c.ret(cx - 2, 75, 4, 9, forja.MADEIRA[3])
+    c.ret(cx - 1, 76, 1, 7, forja.MADEIRA[5])
+    c.bitmap(cx - 6, 78, [
+        " 3455554431  ",
+        "4532111223321",
+        "5654101344321",
+        " 54332333431 ",
+        " 34343432321 ",
+        "  354434221  ",
+        "   3222110   ",
+        "   4533321   ",
+    ], {str(i): cor for i, cor in enumerate(BRONZE)})
+    c.p(cx - 3, 81, BRONZE[6])
+    c.linha(cx - 3, 83, cx + 3, 83, BRONZE[3])
+    c.p(cx - 3, 83, BRONZE[5])
+    c.p(cx + 4, 82, BRONZE[1])
+    c.p(cx + 4, 81, BRONZE[5])
+    c.juntar(copas)
+
+    # Fios curtos em hélice, contas de vidro e uma esfera de cobre martelado.
+    for y, meia in ((60, 4), (67, 6), (74, 8)):
+        for dx in range(-meia, meia + 1):
+            t = (dx + meia) / (2 * meia)
+            yy = round(y + 2 * math.sin(math.pi * t) + t)
+            if copas.c[yy, cx + dx, 3] > 0:
+                c.p(cx + dx, yy, BRONZE[4 if (dx + y) % 4 == 0 else 2], 0.82)
+    luzes = []
+    for dx, y, tom in ((-2, 60, 0), (2, 62, 1), (-4, 67, 1), (3, 69, 0), (-6, 74, 0), (1, 75, 1), (6, 74, 0)):
+        x = cx + dx
+        vidro, luz = VIDROS[tom]
+        c.p(x, y - 1, BRONZE[3])
+        c.ret(x, y, 2, 2, vidro[2])
+        c.p(x + 1, y + 1, vidro[1])
+        c.p(x, y, vidro[6])
+        e.p(x, y, vidro[6], 0.76)
+        luzes.append((x, y, luz, 8.5, 0.68 if dx < -2 else 0.83))
+    for dx, y in ((1, 57), (-3, 74)):
+        x = cx + dx
+        c.bitmap(x - 1, y, [" 4 ", "654", "531", " 2 "], {str(i): cor for i, cor in enumerate(VINHO)})
+        c.p(x, y - 1, BRONZE[4])
+
+    # Estrela de folha batida sobre a ponteira. Só o miolo acende.
+    estrela = cx - 1
+    c.ret(estrela, 49, 1, 4, BRONZE[4])
+    c.bitmap(estrela - 4, 43, [
+        "    5    ",
+        "    6    ",
+        "   564   ",
+        "654565321",
+        "  56542  ",
+        "  65432  ",
+        " 563 431 ",
+        "45     21",
+    ], {str(i): cor for i, cor in enumerate(BRONZE)})
+    e.p(estrela, 47, "#fff1bd", 0.9)
+    e.p(estrela, 46, "#ffdf98", 0.66)
+    luzes.append((estrela, 47, "#ffce86", 13.5, 1.25))
+    return luzes
+
+
+def festao_da_travessa(c: Camada, e: Camada) -> list[Luz]:
+    """Ramos amarrados à face da verga, acima das pedras do arco."""
+    def altura(x: float) -> float:
+        t = np.clip((x - 223) / 49, 0, 1)
+        return 90.5 - 2.5 * t + 5.0 * math.sin(math.pi * t) ** 1.45
+
+    for x in range(223, 273):
+        y = altura(x)
+        c.p(x, y + 2, PINHO[0], 0.72)
+        c.p(x, y + 1, PINHO[1])
+        c.p(x, y, PINHO[2 + (x % 3 == 0)])
+        if 228 < x < 265:
+            c.p(x, y - 1, PINHO[2])
+            c.p(x, y + 2, PINHO[1 + (x % 3 == 0)], 0.78)
+    for x in range(224, 273, 2):
+        y = altura(x)
+        desvio = 1 if x > 247 else -1
+        for lado in (-1, 1):
+            dx = desvio * (1.4 + forja.h2(x, lado, 22) * 2.1)
+            dy = lado * (1.05 + forja.h2(x, lado, 23) * 2.3)
+            ramo = 3 + int(forja.h2(x, lado, 88) > 0.54)
+            c.linha(x, y, x + dx, y + dy, PINHO[ramo])
+            c.p(x + dx, y + dy, PINHO[ramo + (lado > 0 and x % 3 == 0)])
+        if x % 4 == 0:
+            c.p(x, y, PINHO[5])
+    for x in (224, 270):
+        y = round(altura(x))
+        c.p(x, y - 3, FERRO[6])
+        c.p(x, y - 2, FERRO[4])
+        c.linha(x, y - 1, x + 1, y + 1, BRONZE[2])
+        c.p(x + 1, y, BRONZE[5])
+        c.p(x + 1, y + 2, BRONZE[0])
+    for x, y in ((231, 93), (253, 95), (264, 90)):
+        c.bitmap(x - 1, y, [" 5 ", "643", " 2 "], {str(i): cor for i, cor in enumerate(VINHO)})
+
+    lacinho(c, 245, 94, VINHO)
+    luzes = []
+    for x, y, tonalidade in ((235, 96, 0), (258, 94, 1)):
+        vidro, luz = VIDROS[tonalidade]
+        c.p(x, y - 1, BRONZE[4])
+        c.bitmap(x - 1, y, [" 4 ", "652", " 1 "], {str(i): cor for i, cor in enumerate(vidro)})
+        e.p(x - 1, y + 1, vidro[6], 0.59)
+        luzes.append((x - 1, y + 1, luz, 8.0, 0.53))
     return luzes
 
 
@@ -250,7 +389,10 @@ def conferir_ancoras(*camadas: Camada) -> None:
 def montar(nome: str) -> Image.Image:
     pendentes, vidro = Camada(), Camada()
     presentes = forja.Objetos()
-    luzes = coroa(pendentes, vidro) + fio(pendentes, vidro)
+    luzes = coroa(pendentes, vidro)
+    luzes += pinheiro_da_travessa(pendentes, vidro)
+    luzes += festao_da_travessa(pendentes, vidro)
+    luzes += fio(pendentes, vidro)
     fita_fole(pendentes)
     presentes.add(163, pacote, 253, 163, 6, 4, PAPEL_VERDE, FITA)
     presentes.add(166, pacote, 242, 166, 9, 6, PAPEL_VINHO, PAPEL_VERDE)
@@ -270,9 +412,9 @@ def montar(nome: str) -> Image.Image:
 
     def objetos_natal() -> tuple[forja.Objetos, Camada, Camada, Camada]:
         obj, coifa, pend, emiss = forja.pintar_objetos()
-        # Contato da coroa com a pedra: penumbra abaixo e à esquerda dos ramos.
+        # Contato das folhagens com a pedra, abaixo e à esquerda dos ramos.
         sombra = np.roll(np.roll(pendentes.c[:, :, 3], 2, 0), -1, 1)
-        sombra *= forja.ret(215, 32, 265, 85)
+        sombra *= forja.ret(194, 32, 275, 102)
         coifa.c[:, :, :3] *= (1 - 0.31 * sombra[:, :, None])
         pend.juntar(pendentes)
         obj.cam.juntar(presentes.cam)

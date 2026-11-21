@@ -1,7 +1,7 @@
 """Observatório de Natal, na grade e na montagem do terraço original.
 
 A estrela de latão fica na cúpula da torre distante. Na frente, gelo fino nas
-ameias, um fio preso à alvenaria e cetim amarrado ao tubo da luneta.
+ameias, um pinheirinho de vaso, um fio preso à alvenaria e cetim na luneta.
 Uso: python3 scripts/natal/cenario_observatorio.py [manha tarde noite]
 """
 from __future__ import annotations
@@ -20,6 +20,9 @@ from gerar_cena_inicio import poli
 
 SAIDA = Path(__file__).resolve().parents[2] / "public" / "pixel" / "inicio"
 PINHO = pal("#101e15", "#1b3123", "#295039", "#386647", "#4a7c54", "#699968", "#8ab57f")
+VASO = pal("#302123", "#493033", "#694337", "#875a46", "#a47356", "#c49370", "#dcaf82")
+VIDRO_AZUL = pal("#162732", "#273951", "#395875", "#50748e", "#61899c", "#89aeba", "#c7d8ce")
+PATINA = pal("#232923", "#384439", "#465d4e", "#607b69", "#839789", "#a2ad8b", "#b5bb9a")
 NEVE = pal("#4b6474", "#647d8a", "#829aa7", "#a3bbc6", "#becfd4", "#d6e2e4", "#e8eef0")
 CETIM = pal("#210a16", "#3d1021", "#621728", "#832033", "#a63042", "#c64b59", "#e07577")
 COBRE = pal("#191a16", "#35332a", "#584838", "#847052", "#ac875d", "#c8a479")
@@ -29,7 +32,7 @@ VIDROS = (
     (("#622734", "#a95854", "#72303c", "#df776b", "#fac1aa"), "#ff776c"),
     (("#29504a", "#538174", "#325c55", "#81b7a3", "#caf0c9"), "#9de5c0"),
 )
-FORCA = {"manha": 0.24, "tarde": 0.53, "noite": 0.94}
+FORCA = {"manha": 0.30, "tarde": 0.55, "noite": 0.94}
 PONTAS_ESTRELA = (
     (0, -7), (1.6, -2.2), (6.6, -2.2), (2.7, 1.1), (4.3, 5.6),
     (0, 2.8), (-4.3, 5.6), (-2.7, 1.1), (-6.6, -2.2), (-1.6, -2.2),
@@ -67,7 +70,6 @@ def pintar_estrela(torres: Camada, emis: Camada, nome: str) -> None:
                       FORCA[nome] * (0.27 if i in (3, 7) else 0.54))
     torres.p(cx, cy, ESTRELA[6])
     emis.p(cx, cy, "#fff0c8", FORCA[nome] * 0.84)
-
 
 
 def pintar_neve(muro: Camada, topos: np.ndarray) -> None:
@@ -109,54 +111,108 @@ def pintar_neve(muro: Camada, topos: np.ndarray) -> None:
             topos[y, x] = True
 
 
-def pintar_ramo(muro: Camada) -> None:
-    """Pinho atado à mísula baixa. Os raminhos seguem a curva do galho."""
+def pintar_pinheiro(muro: Camada, topos: np.ndarray, emis: Camada, luzes: list, nome: str) -> None:
+    """Pinheiro de vaso apoiado na capa do parapeito, com lâmpadas entre os galhos."""
     c = Camada()
-    # Dois galhos unidos pelo nó no centro, com agulhas curtas, sobrepostas
-    # em leque. As folhas azuladas são os brotos nas pontas mais expostas.
-    for lado in (-1, 1):
-        for i in range(15):
-            x = 328 + lado * i
-            y = 134 - i * (0.24 if lado < 0 else 0.55)
-            meia = max(0.0, (1 - i / 14) * 2.8)
-            for dy in range(-math.floor(meia), math.ceil(meia) + 1):
-                tom = 2 + (dy < 0) * 2 - (dy > 1) + (h01(x, dy, 4) > 0.58)
-                c.p(x, y + dy, PINHO[tom])
-            c.p(x, y + 1, COBRE[1] if i % 3 == 0 else PINHO[2])
-            if i in (0, 14):
-                continue
-            for j in (-1, 0, 1):
-                comprimento = 1.4 + 3.1 * h01(lado, i, j, 8)
-                comprimento *= 1 - 0.56 * i / 15
-                for passo in range(1, math.ceil(comprimento) + 1):
-                    yy = y + passo * (j - (lado == 1) * 0.34)
-                    xx = x + lado * passo * (0.48 + 0.2 * (j == 0))
-                    tom = min(6, 2 + (j != 1) + (passo > 1)
-                              + int(h01(lado, i, j, passo) * 2.5))
-                    c.p(xx, yy, PINHO[tom])
-    # Sombra curta das agulhas na pedra e dois pontos de amarração.
-    sombra = np.roll(c.c[:, :, 3] > 0.5, 1, axis=0) & (muro.c[:, :, 3] > 0.9)
-    muro.c[sombra, :3] *= 0.78
-    for x, y in ((315, 129), (339, 127)):
-        c.p(x, y, COBRE[5])
-        c.p(x, y + 1, COBRE[2])
-    c.bitmap(322, 131, (
-        "45.....453..", "356...4643..", ".456.5634...", "..345631....",
-        "...456543...", "....465.43..", "...453...43.", "...43.....3.",
-        "..345.......", "..4.........",
-    ), {str(i): cor for i, cor in enumerate(CETIM)})
-    # Frutos pequenos, mais escuros que o cetim, no espaço entre os ramos.
-    for x, y in ((317, 132), (320, 133), (335, 133), (340, 128)):
-        c.p(x, y, CETIM[6])
-        c.p(x + 1, y, CETIM[4])
-        c.p(x, y + 1, CETIM[2])
+    cx = 323
+    # O pé de cobre assenta na capa. O aro retém o brilho do latão e a
+    # pátina se acumula entre os anéis gravados, como na base da luneta.
+    apoio = cena.CAPA + 1
+    for y in range(124, apoio + 1):
+        for x in range(cx - 6, cx + 9):
+            sombra = max(0.0, 1 - ((x - cx - 1.4) / 8) ** 2) * (0.28 + (y - 124) * 0.10)
+            if muro.c[y, x, 3] > 0.5:
+                muro.c[y, x, :3] *= 1 - sombra
+    for dy, raio in enumerate((4, 6, 5, 5, 4, 4, 3, 4)):
+        for dx in range(-raio, raio + 1):
+            u = dx / raio
+            tom = round(4.9 - 2 * (u - 0.32) ** 2 + (h01(dx, dy, 49) - 0.5) * 1.3)
+            tom -= (dy in (2, 6)) + (abs(dx) == raio)
+            oxidado = dy in (3, 4, 5, 6) and h01(dx // 2, dy // 2, 23) > 0.27 + abs(u) / 5
+            paleta = PATINA if oxidado else VASO
+            if dy in (1, 7):
+                paleta = cena.LATAO
+            c.p(cx + dx, 119 + dy, paleta[np.clip(tom, 0, 6)])
+            if dy <= 1:
+                topos[119 + dy, cx + dx] = True
+    c.ret(cx - 3, 119, 7, 1, VASO[0])
+    c.ret(cx - 1, 113, 3, 7, VASO[1])
+    c.ret(cx + 1, 114, 1, 5, VASO[3])
+    # A órbita do relevo se encurva no bojo, com um rebite no centro.
+    for dx, dy, tom in ((-4, 4, 3), (-3, 4, 1), (-2, 5, 3), (-1, 5, 4), (0, 5, 5),
+                         (1, 4, 6), (2, 4, 4), (3, 3, 4), (3, 5, 2)):
+        c.p(cx + dx, 119 + dy, cena.LATAO[tom], 0.8)
+
+    # Saias pendentes como as do pinheiro da Praça, começando pelos galhos
+    # mais largos. Vãos e agulhas irregulares recortam as pontas das saias.
+    saias = ((0.8, 102, 118, 10.8), (-0.8, 98, 110, 8.7), (0.5, 94, 104, 6.4), (-0.5, 89, 98, 4.1))
+    for i, (fuste, topo, base, meia) in enumerate(saias):
+        for y in range(topo, base + 1):
+            for x in range(cx - 11, cx + 12):
+                dx = x + 0.5 - cx - fuste
+                altura = (y - topo + 1) / (base - topo + 1)
+                largura = meia * altura ** 0.79
+                perfil = abs(dx) / largura
+                limite = 0.82 + h01(x, i, 4) * 0.22
+                if perfil > limite or (y == base and h01(x, i, 7) < 0.37):
+                    continue
+                if (y >= base - 2 and perfil > 0.78
+                        and not np.any(c.c[y - 1, x - 1:x + 2, 3] > 0.5)):
+                    continue
+                luz = 4.8 - 2.35 * altura + 0.72 * dx / largura - perfil ** 3
+                nervura = math.sin(0.91 * x + (y - topo) * 0.75) * 0.52
+                tom = int(luz + nervura + h01(x, y, 57) * 1.36)
+                c.p(x, y, PINHO[np.clip(tom, 0, 6)])
+                if altura < 0.49 and dx > -1:
+                    topos[y, x] = True
+        for x in range(cx - 10, cx + 12):
+            if c.c[base, x, 3] > 0.5 and h01(x, i, 5) > 0.53:
+                c.p(x, base + 1, PINHO[1 + (x > cx)])
+            elif c.c[base - 1, x, 3] > 0.5 and h01(x, i, 8) > 0.62:
+                c.p(x, base, PINHO[2])
+
+    # Pó de neve nos planos de cima. O fio segue a barriga de duas saias.
+    for x, y, w in ((324, 96, 2), (321, 103, 3), (325, 107, 4), (321, 111, 2), (326, 114, 3)):
+        for dx in range(w):
+            if c.c[y, x + dx, 3] > 0.5:
+                c.p(x + dx, y, NEVE[3 + int(h01(x, dx, y) * 2)])
+                if h01(dx, y, 3) > 0.53:
+                    c.p(x + dx, y + 1, NEVE[2])
+    for xa, xb, ya in ((319, 329, 102), (314, 333, 111)):
+        for x in range(xa, xb):
+            f = (x - xa) / (xb - xa)
+            y = round(ya + 2.9 * math.sin(math.pi * f) + 2 * f)
+            if c.c[y, x, 3] > 0.5:
+                c.p(x, y, COBRE[0] if x % 3 else COBRE[2], 0.72)
+
+    # As bolas de vidro ficam em alturas diferentes, com o reflexo do céu
+    # no alto e o dos metais próximos no lado de baixo.
+    for x, y, paleta in ((320, 103, CETIM), (330, 111, CETIM), (317, 113, VIDRO_AZUL)):
+        c.p(x, y - 2, COBRE[3])
+        c.bitmap(x - 1, y - 1, (".4.", "653", "421", ".2."),
+                 {str(i): cor for i, cor in enumerate(paleta)})
+
+    for x, y, k in ((323, 98, 0), (328, 104, 0), (320, 109, 1), (325, 114, 0), (332, 115, 2)):
+        vidro, luz = VIDROS[k]
+        c.p(x, y - 1, COBRE[2])
+        c.p(x, y, vidro[4])
+        c.p(x, y + 1, vidro[2])
+        emis.p(x, y, vidro[4], 0.73)
+        luzes.append((x, y, luz, 9, 0.41))
+
+    c.bitmap(319, 85, ("...3...", "...5...", "1256421", ".35643.", "..343..", "..1.2.."),
+             {str(i): cor for i, cor in enumerate(ESTRELA)})
+    c.p(322, 91, COBRE[4])
+    emis.p(322, 88, "#fff0c8", 0.35 + FORCA[nome] * 0.38)
+    emis.p(321, 88, "#ffcb79", FORCA[nome] * 0.44)
+    luzes.append((322, 88, "#ffcf81", 9, 0.48))
     muro.juntar(c)
 
 
 def pintar_fio(muro: Camada, emis: Camada, luzes: list) -> None:
     """O cobre trançado cruza as seteiras e para em cravos na face das ameias."""
     tramos = (
-        (313, 344, 128, 111, 7.0, ((7, 1), (16, 0), (23, 2))),
+        (313, 344, 128, 111, 7.0, ((5, 1), (16, 0), (24, 2))),
         (344, 368, 111, 111, 7.0, ((6, 0), (17, 2))),
         (368, 392, 111, 111, 8.5, ((6, 1), (17, 0))),
         (392, 416, 111, 111, 7.5, ((6, 2), (17, 1))),
@@ -228,9 +284,14 @@ def pintar_laco(obj: cena.Objetos) -> None:
         borda_sup = m & ~np.roll(m, 1, axis=0)
         pano = meio + vinco * 1.2 - borda_inf * 1.7 + borda_sup * 0.7 + cena.BAYER_HW * 0.42
         c.mascara(m, CETIM[np.clip(pano.astype(int), 0, 6)])
-    # Uma linha de ponto dourado acompanha o corte das pontas do cetim.
-    for dx, dy, tom in ((-6, 8, 2), (-3, 8, 3), (-1, 9, 3), (4, 8, 2), (5, 9, 3), (7, 7, 4)):
-        c.p(x + dx, y + dy, cena.LATAO[tom], 0.72)
+    # Pontos de ouro presos ao tecido: quentes no bordo alto da alça,
+    # mais fechados onde a fita dobra ou passa debaixo do tubo.
+    costura = ((-7, -5, 4), (-6, -5, 5), (-5, -5, 4), (-4, -4, 3),
+               (6, -5, 4), (7, -5, 5), (8, -4, 4), (8, -3, 3),
+               (-5, 7, 3), (-4, 8, 4), (-2, 8, 3), (4, 7, 3), (5, 8, 4), (6, 7, 3))
+    for dx, dy, tom in costura:
+        if c.c[y + dy, x + dx, 3] > 0.5:
+            c.p(x + dx, y + dy, cena.LATAO[tom], 0.68)
     obj.cam.juntar(c)
     tecido = c.c[:, :, 3] > 0.5
     obj.base[tecido] = 168  # o mesmo apoio e as mesmas sombras da luneta
@@ -261,7 +322,7 @@ def montar(nome: str) -> Image.Image:
     def parapeito(nome: str, periodo: dict):
         muro, topos = muro_original(nome, periodo)
         pintar_neve(muro, topos)
-        pintar_ramo(muro)
+        pintar_pinheiro(muro, topos, emis, luzes, nome)
         pintar_fio(muro, emis, luzes)
         return muro, topos
 
