@@ -61,8 +61,15 @@ FOLHAS = [
     ("esqueleto-acesso.png", 11.0),
     ("esqueleto-poses3.png", 11.0),
     ("esqueleto-poses4.png", 11.0),
+    ("esqueleto-natal.png", 11.0),
+    ("esqueleto-poses-natal.png", 11.0),
+    ("esqueleto-poses2-natal.png", 11.0),
+    ("esqueleto-poses3-natal.png", 11.0),
+    ("esqueleto-poses4-natal.png", 11.0),
     ("gato-fofo.png", 8.0),
+    ("gato-fofo-natal.png", 8.0),
     ("coruja-nova.png", 5.0),
+    ("coruja-nova-natal.png", 5.0),
 ]
 FAIXAS = np.array([0.0, 0.34, 0.67, 1.0])
 

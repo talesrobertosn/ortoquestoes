@@ -1,3 +1,4 @@
+import { modoNatalAtivo } from '../../natal/modoNatal'
 import type { CSSProperties } from 'react'
 import { urlCss } from '../../config'
 import { mapasDeLuz } from '../../componentes/mascote/luz'
@@ -15,7 +16,8 @@ const APELIDOS = { repouso: 'parada', piscando: 'parada', reagindo: 'acenando', 
 export type EstadoCoruja = (typeof LINHAS_CORUJA)[number] | keyof typeof APELIDOS
 /** Estados que tocam uma vez e param (os outros repetem). */
 const UMA_VEZ: EstadoCoruja[] = ['reagindo', 'girando', 'piando', 'pousando']
-export const SPRITE_CORUJA = 'pixel/mascote/coruja-nova.png?v=3'
+/** No modo Natal, a mesma coruja com o xale tingido de cachecol vermelho (scripts/natal/coruja_cachecol.py). */
+export const SPRITE_CORUJA = modoNatalAtivo() ? 'pixel/mascote/coruja-nova-natal.png?v=1' : 'pixel/mascote/coruja-nova.png?v=3'
 export const QUADRO_CORUJA = { w: 44, h: 32, pes: 31 }
 
 export function CorujaPixel({ estado, className = '', style }: { estado: EstadoCoruja; className?: string; style?: CSSProperties }) {

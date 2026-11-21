@@ -1,3 +1,4 @@
+import { modoNatalAtivo } from '../../natal/modoNatal'
 /**
  * As folhas de sprites do mascote em pixel art HD-2D (30/10/2026), pintadas por scripts/gerar_mascote.py.
  * Cada linha da folha é um comportamento e cada coluna um quadro; o CSS amplia com image-rendering: pixelated.
@@ -115,16 +116,24 @@ export type IdLinhaGato = (typeof LINHAS_GATO)[number]['id']
 export interface Folha { src: string; linha: number; linhas: number }
 interface Leva { src: string; ate: number }
 
+/**
+ * No modo Natal as folhas do esqueleto trocam pelas com o cachecol (scripts/gerar_mascote.py --natal): mesmas linhas e
+ * quadros, em *-natal.png. A da tela de entrar (jaleco e traje) fica como está.
+ */
+const NATAL = modoNatalAtivo()
+const natal = (src: string) => (NATAL ? src.replace(/\.png(\?v=\w+)?$/, '-natal.png?v=1') : src)
 const FOLHAS_ESQUELETO: Leva[] = [
-  { src: SPRITE_ESQUELETO.src, ate: 14 },
-  { src: '/pixel/mascote/esqueleto-poses.png', ate: 23 },
-  { src: '/pixel/mascote/esqueleto-poses2.png', ate: 30 },
+  { src: natal(SPRITE_ESQUELETO.src), ate: 14 },
+  { src: natal('/pixel/mascote/esqueleto-poses.png'), ate: 23 },
+  { src: natal('/pixel/mascote/esqueleto-poses2.png'), ate: 30 },
   { src: '/pixel/mascote/esqueleto-acesso.png', ate: LINHAS_ESQUELETO.length - 11 },
-  { src: '/pixel/mascote/esqueleto-poses3.png?v=1', ate: LINHAS_ESQUELETO.length - 5 },
-  { src: '/pixel/mascote/esqueleto-poses4.png?v=1', ate: LINHAS_ESQUELETO.length },
+  { src: natal('/pixel/mascote/esqueleto-poses3.png?v=1'), ate: LINHAS_ESQUELETO.length - 5 },
+  { src: natal('/pixel/mascote/esqueleto-poses4.png?v=1'), ate: LINHAS_ESQUELETO.length },
 ]
+/** No modo Natal o gato usa a folha com o gorro (scripts/gerar_gato_fofo.py --natal): as mesmas linhas e quadros. */
+const SRC_GATO_NATAL = '/pixel/mascote/gato-fofo-natal.png?v=1'
 const FOLHAS_GATO: Leva[] = [
-  { src: SPRITE_GATO.src, ate: LINHAS_GATO.length },
+  { src: NATAL ? SRC_GATO_NATAL : SPRITE_GATO.src, ate: LINHAS_GATO.length },
 ]
 
 function folha(indice: number, levas: Leva[]): Folha {

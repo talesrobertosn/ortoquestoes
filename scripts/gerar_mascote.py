@@ -267,6 +267,9 @@ MATS: dict[str, Mat] = {
     "capa": (Mat(rampa("#08080b", "#0f0f14", "#17171e", "#202029", "#2a2a35", "#363642", "#454552", "#585866"), hx("#050507"), rim=0.55, tex=0.05, luz_pontual=0.55)
              if os.environ.get("CAPA") == "escura" else
              Mat(rampa("#0d0716", "#170d24", "#221333", "#2f1a45", "#3e2358", "#4f2e6c", "#653e82", "#7f5798"), hx("#08040e"), rim=0.55, tex=0.05, luz_pontual=0.55)),
+    # modo Natal (docs/design/MODO-NATAL.md, etapa 2): o cachecol de tricô listrado, verde-azulado do site e creme
+    "la_verde": Mat(rampa("#021a16", "#04302a", "#08483e", "#0c6052", "#007a68", "#1a9a86", "#46b8a4", "#86d8c8"), hx("#02120f"), rim=0.35, tex=0.1),
+    "la_creme": Mat(rampa("#5a4c36", "#857258", "#b09c7a", "#d4c4a0", "#efe4c8", "#fff8e6"), hx("#2a2218"), rim=0.3, tex=0.1),
     "forro": Mat(rampa("#07040b", "#0d0812", "#150d1c", "#1e1428"), hx("#05030a"), rim=0.0, amb=0.5, kd=0.4, luz_pontual=0.4),
     # objetos
     "madeira": Mat(rampa("#1c100a", "#311c10", "#4c2e18", "#6a4322", "#8a5c30", "#a87642", "#c49358"), hx("#120a06"), rim=0.3, tex=0.1),
@@ -932,6 +935,34 @@ def sombra_chao(t: Tela, r: Rig, larg=15.0):
                 t.ponto_fx(x, y, "#0c0710", 0.42 if d < 0.45 else 0.26, sob=True)
 
 
+CACHECOL = False   # --natal: todas as poses ganham o cachecol (as folhas saem em *-natal.png; as de sempre não mudam)
+
+
+def cachecol_natal(t: Tela, r: Rig, p: Pose) -> None:
+    """O cachecol de tricô: uma volta grossa no pescoço, por cima das clavículas e por baixo do crânio, com listras
+    creme no ponto do tricô, a ponta da frente caindo sobre o peito com franja e a outra jogada por cima do ombro."""
+    q = r.tronco
+    uv = q.uv()
+    y = -26.2 - p.resp * 0.5
+    volta = capsula((-7.4, y + 0.6), (7.6, y + 0.4), 2.7, 2.5) | elipse((0.6, y + 1.2), 7.8, 2.6)
+    t.pinta(q.forma(volta), "la_verde", 7.45, R=2.4, pid="cachecol", uv=uv, semente=140)
+    for k in (-1, 0, 1):                                                     # três listras largas do tricô, na volta
+        x = k * 5.0 + 0.6
+        t.pinta(q.forma(capsula((x, y - 1.8), (x + 0.3, y + 3.2), 0.75)), "la_creme", 0, sobre="cachecol", tom=0.0, uv=uv, semente=141)
+    # a ponta da frente: cai do lado direito do peito, larga, com duas listras e a franja
+    frente = capsula((3.6, y + 2.0), (4.6, y + 11.0), 2.2, 2.0)
+    t.pinta(q.forma(frente), "la_verde", 7.5, R=1.6, pid="cachecol_ponta", uv=uv, semente=142)
+    for yy in (y + 9.0,):
+        t.pinta(q.forma(capsula((2.2, yy), (6.6, yy + 0.4), 0.7)), "la_creme", 0, sobre="cachecol_ponta", tom=0.08, uv=uv, semente=143)
+    for k in range(4):                                                       # franja
+        x = 2.8 + k * 1.1
+        t.pinta(q.forma(traco([(x, y + 12.6), (x + 0.2, y + 14.4)], 0.42)), "la_creme", 7.5, R=0.4, pid="cachecol_franja", uv=uv, semente=144)
+    # a outra ponta, jogada por cima do ombro esquerdo (atrás da volta)
+    tras = capsula((-5.6, y + 0.4), (-10.6, y + 4.2), 2.0, 1.7)
+    t.pinta(q.forma(tras), "la_verde", 7.3, R=1.4, pid="cachecol_tras", uv=uv, tom=-0.08, semente=145)
+    t.pinta(q.forma(capsula((-8.2, y + 1.4), (-9.0, y + 3.6), 0.55)), "la_creme", 0, sobre="cachecol_tras", uv=uv, semente=146)
+
+
 def esqueleto(t: Tela, p: Pose, extras=None) -> Rig:
     r = montar(p)
     t.origem = r.raiz
@@ -945,6 +976,8 @@ def esqueleto(t: Tela, p: Pose, extras=None) -> Rig:
     armadura(t, r, p, p.capa)
     if p.capa:
         capa(t, r, p)
+    if CACHECOL and not p.capa:
+        cachecol_natal(t, r, p)
     cranio(t, r, p, sob_capuz=p.capa)
     if extras:
         extras(t, r)
@@ -3914,6 +3947,28 @@ def salvar(img: Image.Image, caminho: Path, corte: int | None = None) -> None:
 
 
 def main() -> None:
+    global CACHECOL
+    if "--natal" in sys.argv:
+        # Modo Natal: as mesmas folhas do esqueleto com o cachecol, em *-natal.png.
+        CACHECOL = True
+        esq = folha_esqueleto()
+        cortes = [("esqueleto", 0, LINHAS_ANTIGAS), ("esqueleto-poses", LINHAS_ANTIGAS, LINHAS_POSES_31),
+                  ("esqueleto-poses2", LINHAS_ANTIGAS + LINHAS_POSES_31, LINHAS_POSES_2)]
+        a3 = LINHAS_ANTIGAS + LINHAS_POSES_31 + LINHAS_POSES_2
+        cortes += [("esqueleto-acesso", a3, LINHAS_ACESSO), ("esqueleto-poses3", a3 + LINHAS_ACESSO, LINHAS_POSES_3),
+                   ("esqueleto-poses4", a3 + LINHAS_ACESSO + LINHAS_POSES_3, LINHAS_POSES_4)]
+        for nome, ini, n in cortes:
+            if nome == "esqueleto-acesso":
+                continue
+            salvar(esq.crop((0, FH * ini, esq.width, FH * (ini + n))), PASTA / f"{nome}-natal.png")
+        if "--previa" in sys.argv:
+            destino = Path(sys.argv[sys.argv.index("--previa") + 1])
+            destino.mkdir(parents=True, exist_ok=True)
+            im = Image.open(PASTA / "esqueleto-natal.png").convert("RGBA")
+            fundo = Image.new("RGBA", im.size, (34, 44, 40, 255))
+            fundo.alpha_composite(im)
+            fundo.resize((im.width * 2, im.height * 2), Image.NEAREST).save(destino / "esqueleto-natal-2x.png")
+        return
     if os.environ.get("SAIDA"):
         salvar(folha_esqueleto(), Path(os.environ["SAIDA"]))
         return

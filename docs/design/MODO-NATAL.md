@@ -127,7 +127,10 @@ número ou botão e sem criar rolagem lateral:
       fio de lâmpadas na borda do topo (a luz cai no cenário), árvore plantada na barra de atalhos (à direita),
       guirlanda pendurada no canto esquerdo da barra, boneco de neve com caneca de chocolate quente e lanterna junto da
       turma do cartão do Instagram.
-- [ ] Etapa 2: gorro no gato, cachecol na coruja e no esqueleto (prints antes).
+- [x] Etapa 2 (aprovada em 21/11/2026): gorro vermelho no gato (`scripts/gerar_gato_fofo.py --natal`), o xale da
+      coruja tingido de cachecol vermelho sem mudar o traço (`scripts/natal/coruja_cachecol.py`) e cachecol de tricô
+      verde-azulado no esqueleto (`scripts/gerar_mascote.py --natal`); folhas em `*-natal.png`, com mapas de luz
+      (`scripts/sprites/luz_bichos.py`), trocadas em `sprites.ts` e `CorujaPixel.tsx` quando o modo está no ar.
 - [ ] Etapa 3: versão de Natal de cada cenário do topo.
 - [ ] Etapa 4: as conversas entre as partes (a meta do dia acende o fio, a coruja visita a guirlanda, o trenó).
 - [ ] Demais páginas.
