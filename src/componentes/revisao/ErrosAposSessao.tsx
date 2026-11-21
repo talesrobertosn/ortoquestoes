@@ -14,12 +14,13 @@ type Registros = Record<string, RegistroQuestao>
 
 const MECANISMO = 'Refazer um erro em outro dia ajuda você a testar se lembra do raciocínio. A sessão mistura assuntos e datas, e cada resposta atualiza sua próxima revisão.'
 
-export function ErrosAposSessao({ indice, plano, sessao, registros }: {
-  indice: Indice; plano: PlanoSalvo | null | undefined; sessao: EstadoSessao; registros: Registros
+export function ErrosAposSessao({ indice, plano, sessao, registros, aberto }: {
+  indice: Indice; plano: PlanoSalvo | null | undefined; sessao: EstadoSessao; registros: Registros; aberto: boolean
 }) {
   const { iniciarComAviso } = usarSessao()
   const [abrindo, definirAbrindo] = useState(false)
   const [aviso, definirAviso] = useState('')
+  const [nivel, definirNivel] = useState<'leve' | 'moderada' | 'agressiva'>('leve')
   const acervo = useMemo(() => {
     if (sessao.filtros.areas?.includes('mao')) return { ...indice, questoes: indice.questoes.filter((q) => q.ar === 'mao') }
     if (sessao.origem !== 'cronograma' || !plano) return indice
@@ -29,7 +30,9 @@ export function ErrosAposSessao({ indice, plano, sessao, registros }: {
   const excluir = useMemo(() => new Set(sessao.ids), [sessao.ids])
   const erros = useMemo(() => errosAnteriores(acervo, registros, excluir), [acervo, registros, excluir])
   const minutos = useMemo(() => minutosPorQuestao(lerHistorico()), [sessao.id])
-  const opcoes = tamanhosRevisao(erros.length)
+  const opcoes = tamanhosRevisao(erros.length).filter((opcao, posicao, todas) =>
+    todas.findIndex((outra) => outra.quantidade === opcao.quantidade) === posicao)
+  const escolhida = opcoes.find((opcao) => opcao.id === nivel) ?? opcoes[0]
 
   async function iniciar(proporcao: number, teto: number) {
     if (abrindo) return
@@ -67,19 +70,27 @@ export function ErrosAposSessao({ indice, plano, sessao, registros }: {
         <p>{MECANISMO}</p>
       </div>
     </header>
-    {erros.length > 0 ? <>
-      <p className="rr-refaca__fila">{erros.length === 1 ? '1 erro anterior disponível' : `${erros.length} erros anteriores disponíveis`}</p>
-      <div role="group" className="rr-refaca__opcoes" aria-label="Intensidade da revisão">
-        {opcoes.map((nivel) => <button key={nivel.id} type="button" className="rr-refaca__opcao" data-intensidade={nivel.id} disabled={abrindo}
-          aria-label={`Revisão ${nivel.nome.toLowerCase()}, ${nivel.quantidade} ${nivel.quantidade === 1 ? 'questão' : 'questões'}`}
-          onClick={() => { void iniciar(nivel.proporcao, nivel.teto) }}>
-          <span className="rr-refaca__nivel"><strong>{nivel.nome}</strong><span className="rr-refaca__medidor" aria-hidden="true"><i /><i /><i /></span></span>
-          <span className="rr-refaca__contagem"><b>{nivel.quantidade}</b> {nivel.quantidade === 1 ? 'questão' : 'questões'}</span>
-          <small><Icone nome="relogio" tamanho={14} /> cerca de {formatarTempo(nivel.quantidade * minutos)}</small>
-        </button>)}
+    {escolhida?.quantidade ? <details open={aberto}>
+      <summary>{erros.length === 1 ? 'Escolher revisão · 1 erro disponível' : `Escolher revisão · ${erros.length} erros disponíveis`}</summary>
+      {opcoes.length > 1 && <fieldset className="rr-refaca__opcoes">
+        <legend className="so-leitor">Intensidade da revisão de erros anteriores</legend>
+        {opcoes.map((opcao) => <label key={opcao.id} className="rr-refaca__opcao">
+          <span className="rr-refaca__nivel"><input type="radio" name="revisao-erros-anteriores" checked={escolhida.id === opcao.id}
+            onChange={() => definirNivel(opcao.id)} disabled={abrindo} /><strong>{opcao.nome}</strong></span>
+          <span className="rr-refaca__contagem"><b>{opcao.quantidade}</b> {opcao.quantidade === 1 ? 'questão' : 'questões'}</span>
+          <small><Icone nome="relogio" tamanho={14} /> cerca de {formatarTempo(opcao.quantidade * minutos)}</small>
+        </label>)}
+      </fieldset>}
+      <div className="rr-refaca__rodape">
+        <button type="button" className="dp-botao" disabled={abrindo} onClick={() => { void iniciar(escolhida.proporcao, escolhida.teto) }}>
+          <Icone nome="reiniciar" tamanho={16} />
+          {abrindo ? 'Montando revisão…' : `Revisar ${escolhida.quantidade} ${escolhida.quantidade === 1 ? 'erro anterior' : 'erros anteriores'}`}
+        </button>
+        {opcoes.length === 1 && <small>Cerca de {formatarTempo(escolhida.quantidade * minutos)}</small>}
+        <a href={href('/')}>Encerrar por hoje</a>
       </div>
-      <footer className="rr-refaca__rodape"><small>As alternativas seguem a opção “Revisão em ordem nova” do treino.</small><a href={href('/')}>Encerrar por hoje</a></footer>
-    </> : <p className="rr-refaca__fila" role="status">Sua fila de erros anteriores está em dia.</p>}
+      <p className="rr-refaca__fila">As alternativas seguem a opção “Revisão em ordem nova” do treino.</p>
+    </details> : <p className="rr-refaca__fila" role="status">Sua fila de erros anteriores está em dia.</p>}
     {aviso && <p className="rr-refaca__fila" role="status">{aviso}</p>}
   </section>
 }

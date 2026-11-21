@@ -20,6 +20,7 @@ export interface ResumoHistorico {
   concluidaEm: number
   total: number
   respondidas: number
+  contabilizadas?: number
   acertos: number
   segundos: number
   descricao: string
@@ -302,7 +303,7 @@ export function descreverFiltros(filtros: Filtros): string {
   const anos = filtros?.anos ?? []
   const assuntos = temas.length + subtemas.length
   partes.push(assuntos === 0 ? 'Todos os assuntos' : `${assuntos} assunto(s)`)
-  if (areas.length !== 1 || areas[0] !== 'base') partes.push(areas.map((a) => ROTULO_AREA[a]).join(' + '))
+  if (areas.length > 0 && (areas.length !== 1 || areas[0] !== 'base')) partes.push(areas.map((a) => ROTULO_AREA[a]).join(' + '))
   if (provas.length) partes.push(provas.join(', '))
   if (filtros?.soSimulados) partes.push('OrtoQuestões Simulados')
   if (anos.length) partes.push(anos.join(', '))
@@ -321,6 +322,7 @@ function registrarHistorico(sessao: EstadoSessao) {
     concluidaEm: sessao.concluidaEm ?? Date.now(),
     total: sessao.ids.length,
     respondidas: respostas.length,
+    contabilizadas: respostas.filter((r) => r.correta === true || r.correta === false).length,
     acertos: respostas.filter((r) => r.correta === true).length,
     segundos: respostas.reduce((soma, r) => soma + r.segundos, 0),
     descricao: sessao.nacional
