@@ -445,6 +445,13 @@ export function Sessao() {
     return { melhor, oportunidade }
   }, [sessao, simulado, questoes])
 
+  // A folha da sessão e o tempo somado, para o cartão de fim.
+  const folhaFim = useMemo(() => (sessao ? sessao.ids.map((id) => {
+    const r = sessao.respostas[id]
+    return !r ? 'pulada' as const : r.correta === null ? 'anulada' as const : r.correta ? 'certa' as const : 'errada' as const
+  }) : []), [sessao])
+  const segundosSessao = useMemo(() => (sessao ? Object.values(sessao.respostas).reduce((s, r) => s + (r.segundos || 0), 0) : 0), [sessao])
+
   // Cronômetro do simulado. O relógio corre no mundo: fechar a aba não pausa
   // a prova, e reabrir mostra o tempo que sobrou de verdade.
   const [restante, definirRestante] = useState<number | null>(() =>
@@ -1041,7 +1048,7 @@ export function Sessao() {
         <Atalhos />
       </Painel>
 
-      {fim === 'aberto' && <ModalFimSessao total={total} acertos={simulado ? null : acertosSessao} simulado={simulado} nome={nome} melhorTema={destaques.melhor} oportunidade={destaques.oportunidade} aoConcluir={concluir} aoLer={() => definirFim('lendo')} />}
+      {fim === 'aberto' && <ModalFimSessao total={total} acertos={simulado ? null : acertosSessao} simulado={simulado} nome={nome} melhorTema={destaques.melhor} oportunidade={destaques.oportunidade} folha={folhaFim} segundos={segundosSessao} aoConcluir={concluir} aoLer={() => definirFim('lendo')} />}
       {fim === 'lendo' && tudoRespondido && <BotaoConcluirFlutuante aoConcluir={concluir} simulado={simulado} />}
       <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
       <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => { definirLimiteAberto(false); if (resumoAoFechar) { definirResumoAoFechar(false); concluir() } }} />
