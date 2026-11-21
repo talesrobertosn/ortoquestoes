@@ -2,6 +2,7 @@ import { ProvedorConta } from './conta/ContextoConta'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
+import { aplicarModoNatal } from './natal/modoNatal'
 import { ErroDePagina } from './componentes/ErroDePagina'
 // CSS global: só o que várias páginas usam. O que é de uma página só mora em
 // estilos/paginas/ e é importado pela própria página, para descer junto com
@@ -27,6 +28,7 @@ capturarOrigem()
 
 const raiz = document.getElementById('raiz')
 if (raiz) {
+  aplicarModoNatal()
   createRoot(raiz).render(
     <StrictMode>
       {/* Última rede: um erro fora da área da página (cabeçalho, conta) também

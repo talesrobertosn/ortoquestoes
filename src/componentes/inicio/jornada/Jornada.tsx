@@ -12,6 +12,7 @@ import type { DiaSequencia } from '../PainelSequencia'
 import { CenaDiorama } from '../cena/CenaDiorama'
 import { CorujaPixel } from '../../../biblioteca/sala/CorujaPixel'
 import { usarPeriodo } from '../../../estado/aparencia'
+import { ArvoreNatal, FestaoNatal, GuirlandaNatal, PiscaAtalhos } from '../../../natal/EnfeitesInicio'
 
 /*
  * A página inicial em níveis (31/10/2026, "redesign premium" pedido pelo Tales).
@@ -72,6 +73,7 @@ export function HeroiJornada({ data, titulo, lide, missao, botao, depois, linhaF
   const periodo = usarPeriodo()
   return (
     <section className={`jn-heroi jn-heroi--${periodo} hd-topo--${periodo}`} aria-labelledby="jn-titulo" style={SPRITES}>
+      <FestaoNatal />
       <header className="jn-saudacao">
         <p className="jn-data">{data}</p>
         <h1 id="jn-titulo">{titulo}</h1>
@@ -115,6 +117,7 @@ export function TrilhaSequencia({ streak, dias, festa = 0 }: { streak: Streak; d
           <p className="jn-trilha__estagio"><b>{fogo.estagio.nome}</b>{proximo ? ` · ${proximo}` : ' · o estágio máximo'}</p>
         </div>
       </div>
+      <ArvoreNatal />
 
       <ol className="jn-tochas" aria-label="Esta semana, de segunda a domingo">
         {dias.map((d) => {
@@ -170,6 +173,8 @@ export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
           </li>
         ))}
       </ul>
+      <GuirlandaNatal />
+      <PiscaAtalhos quantos={atalhos.length} />
     </nav>
   )
 }
@@ -208,6 +213,7 @@ export function HeroiVitrine({ titulo, proposta, lide, cta, entrar, nota, amostr
   return (
     <>
       <section className={`jn-heroi jn-heroi--vitrine jn-heroi--${periodo} hd-topo--${periodo}`} aria-labelledby="jn-vitrine-titulo" style={SPRITES}>
+        <FestaoNatal />
         <header className="jn-saudacao jn-vitrine__texto">
           <p className="jn-data">Provas oficiais comentadas</p>
           <h1 id="jn-vitrine-titulo">{titulo}</h1>
