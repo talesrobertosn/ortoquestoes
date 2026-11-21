@@ -18,11 +18,11 @@ try{
  // A época do Natal: de 10 de novembro ao Dia de Reis, virando o ano.
  for(const [m,d,sim] of [[11,9,false],[11,10,true],[12,25,true],[1,1,true],[1,6,true],[1,7,false],[7,15,false]])assert.equal(naEpoca(vale,m,d),sim,`${d}/${m}`)
  for(const [m,d,sim] of [[11,9,false],[11,10,true],[12,25,true],[1,6,true],[1,7,false]])assert.equal(naEpoca(sala,m,d),sim,`sala ${d}/${m}`)
- for(const [data,n] of [['2026-11-09T12:00:00-03:00',7],['2026-11-20T12:00:00-03:00',9],['2026-11-21T12:00:00-03:00',4],['2026-12-01T12:00:00-03:00',4],['2027-01-06T23:59:00-03:00',4],['2027-01-07T00:01:00-03:00',7]]){
+ for(const [data,n] of [['2026-11-09T12:00:00-03:00',7],['2026-11-20T12:00:00-03:00',9],['2026-11-21T12:00:00-03:00',9],['2026-12-01T12:00:00-03:00',9],['2027-01-06T23:59:00-03:00',9],['2027-01-07T00:01:00-03:00',7]]){
   assert.equal(cenariosDoDia(new Date(data)).length,n,data)
  }
- // O modo Natal (src/natal/modoNatal.ts): de 1/12 a 6/1 o topo roda só os cenários de inverno.
- assert.deepEqual(cenariosDoDia(new Date('2026-12-24T20:00:00-03:00')).map(c=>c.id).sort(),['neve','praca','sala_natal','vale'])
+ // O modo Natal está fora do ar (Tales, 21/11/2026): o rodízio segue com todos os cenários.
+ assert.equal(cenariosDoDia(new Date('2026-12-24T20:00:00-03:00')).length,9)
  assert.equal(FAIXA_MS,2*3600000)
  // As viradas caem nas horas pares de Brasília, iguais em qualquer fuso, e o cenário vale até o último instante da faixa.
  for(const tz of ['UTC','America/Los_Angeles','Asia/Tokyo','America/Sao_Paulo']){
@@ -40,7 +40,7 @@ try{
  }
  process.env.TZ='America/Sao_Paulo'
  // Ciclos sem repetição: em cada sequência de n faixas passam os n cenários, e nunca o mesmo duas faixas seguidas.
- for(const [ini,n,ciclos] of [['2026-07-01T00:00:00-03:00',7,25],['2026-11-10T06:00:00-03:00',9,13],['2026-12-02T00:00:00-03:00',4,25]]){
+ for(const [ini,n,ciclos] of [['2026-07-01T00:00:00-03:00',7,25],['2026-11-10T06:00:00-03:00',9,13],['2026-12-02T00:00:00-03:00',9,13]]){
   const t0=faixaDoCenario(new Date(ini)).faixa
   const comeco=(Math.ceil(t0/n))*n
   let anterior=null
