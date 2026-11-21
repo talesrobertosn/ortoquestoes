@@ -79,7 +79,7 @@ A MF é, segundo o Campbell, a articulação mais importante para a função dos
 
 !questoes central=mao-0059 treino=mao-2267,mao-1969
 conceito: A mão reumatoide é bilateral, simétrica e poliarticular, com MF e punho acometidos cedo e as articulações distais mais tarde; a IFD é relativamente poupada.
-como: O TARO 2016 perguntou a característica clínica do acometimento da mão reumatoide; o simulado SBCM 2023 pediu as doenças tipicamente simétricas e poliarticulares; o simulado SIMÃO 2023 cobrou que as IFD são menos acometidas que as IFP.
+como: O TARO 2016 perguntou a característica clínica do acometimento da mão reumatoide; o simulado da prova de título de 2023 pediu as doenças tipicamente simétricas e poliarticulares; o simulado da prova de título de cirurgia da mão de 2023 cobrou que as IFD são menos acometidas que as IFP.
 armadilha: Marcar assimetria (é a psoríase), inverter a cronologia (IF cedo, MF tarde), ou aceitar que VAUGHAN-JACKSON descreveu ruptura de flexores, quando ele descreveu extensores na radioulnar distal.
 !fim
 
@@ -106,7 +106,7 @@ Para quem opera, a nota radiográfica tem um limite que o Green repete várias v
 
 !questoes treino=mao-2349
 conceito: LARSEN, DALE e EEK (1977) graduam a destruição articular por comparação com filmes-padrão, do normal ao mutilante, com o tamanho das erosões (1 mm) separando os graus iniciais.
-como: O simulado SIMÃO 2024 pediu a correspondência correta entre grau e achado.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu a correspondência correta entre grau e achado.
 armadilha: Inverter a escala (grau 0 mutilante) ou trocar os limiares de erosão entre os graus 1, 2 e 3.
 alerta: O Green 7 só cita o trabalho de LARSEN, DALE e EEK na lista de referências do capítulo 55 (ref. 62); a tabela dos graus vem da 8ª edição, e o resumo do artigo no PubMed (PMID 920239) confirma o método de filmes-padrão com nota numérica por articulação.
 !fim
@@ -204,7 +204,7 @@ O retináculo dorsal tem cerca de 3 cm de largura e forma seis compartimentos: *
 
 !questoes central=mao-1356 treino=mao-2358,mao-3491,mao-3500,mao-3503
 conceito: A tenossinovite reumatoide tem três sítios (dorso do punho, palma do punho e palma dos dedos) e pode preceder a artrite em meses; no dorso, o 4º compartimento (EDC e EIP) é o mais visível, e no lado palmar o túnel do carpo é a manifestação mais comum.
-como: A USP-SP 2025 perguntou qual síndrome tem risco cerca de 2 vezes maior na AR; o simulado SIMÃO 2024 perguntou o compartimento dorsal acometido com mais frequência.
+como: A USP-SP 2025 perguntou qual síndrome tem risco cerca de 2 vezes maior na AR; o simulado da prova de título de cirurgia da mão de 2024 perguntou o compartimento dorsal acometido com mais frequência.
 armadilha: Escolher túnel cubital ou interósseo posterior (este existe na AR, mas pela sinovite do cotovelo, e é raro), ou um compartimento radial como o mais acometido.
 alerta: O Green e o Campbell não trazem o número "2 vezes"; o Green sustenta que o túnel do carpo é a manifestação mais comum da tenossinovite flexora (p. 1850). O Green 7 também não quantifica o compartimento dorsal mais acometido; a Fig. 55.6 mostra o 4º isolado e, no caso extenso, o 1º, o 3º e o 4º (p. 1842). Os gabaritos foram mantidos.
 !fim
@@ -239,7 +239,7 @@ O detalhe que separa este túnel do carpo do idiopático é justamente esse: no 
 
 !questoes treino=mao-1807,mao-1967,mao-3504
 conceito: No túnel do carpo reumatoide, o tratamento acompanha a sinovite: quadro leve sem tenossinovite fica com órtese e terapia; tenossinovite volumosa pede liberação aberta com tenossinovectomia flexora.
-como: Os simulados SIMÃO 2026 e SIMÃO 2023 cobraram a classificação de SHINODA nos dois extremos, a conduta na tenossinovite volumosa e no quadro leve sem tenossinovite.
+como: Os simulados da prova de título de cirurgia da mão de 2026 e simulado da prova de título de cirurgia da mão de 2023 cobraram a classificação de SHINODA nos dois extremos, a conduta na tenossinovite volumosa e no quadro leve sem tenossinovite.
 armadilha: Indicar liberação endoscópica isolada na tenossinovite volumosa (não retira a sinóvia nem a espícula) ou operar o quadro leve sem tenossinovite.
 alerta: A classificação de SHINODA não está no Green 7; o artigo original (J Orthop Sci 2002;7:188-93, PMID 11956978) confirma o casamento entre grau de sinovite e técnica, e a tabela detalhada que os simulados usam é a da 8ª edição do Green.
 !fim
@@ -302,7 +302,7 @@ O **melhor teste** para separar ruptura de paralisia é o **efeito tenodese**: f
 
 !questoes treino=mao-1805,mao-2613,mao-3487,mao-3499,mao-3506,mao-3512,mao-3516
 conceito: Antes de operar uma ruptura extensora, excluir luxação da MF (a mais comum, sem extensão passiva), tendão luxado no vale (sustenta a extensão após posicionar) e paralisia do interósseo posterior (punho em desvio radial, tenodese positiva).
-como: O simulado SIMÃO 2026 descreveu punho em desvio radial com tenodese positiva e dedos que não sustentam a extensão; o SBCM 2022 perguntou a condição mais comum que simula a ruptura.
+como: O simulado da prova de título de cirurgia da mão de 2026 descreveu punho em desvio radial com tenodese positiva e dedos que não sustentam a extensão; a prova de título de 2022 perguntou a condição mais comum que simula a ruptura.
 armadilha: Diagnosticar ruptura quando a tenodese estende os dedos, ou esquecer que a luxação da MF, e não a paralisia, é o simulador mais comum.
 !fim
 
@@ -376,7 +376,7 @@ O Campbell fala em erosão da cápsula palmar sobre **osteófitos do rádio** (p
 
 !questoes central=mao-0069 relacionadas=mao-0553,mao-0252,mao-0796 treino=mao-2268,mao-2475,mao-3508
 conceito: Lesão de MANNERFELT é a ruptura do FPL por atrito numa espícula palmar do escafoide que perfura a cápsula palmar do punho; os flexores do indicador são os próximos.
-como: O TARO 2015 perguntou qual tendão rompe; uma prova de Ortopedia pediu a afirmação correta sobre a síndrome; outra prova de Ortopedia e o INTO 2023 perguntaram contra o que o FPL sofre atrito; os simulados SBCM 2023 e SIMÃO 2021 pediram o tendão que costuma romper.
+como: O TARO 2015 perguntou qual tendão rompe; uma prova de Ortopedia pediu a afirmação correta sobre a síndrome; outra prova de Ortopedia e o INTO 2023 perguntaram contra o que o FPL sofre atrito; os simulados da prova de título de 2023 e simulado da prova de título de cirurgia da mão de 2021 pediram o tendão que costuma romper.
 armadilha: Trocar pelo EPL no tubérculo de LISTER (ruptura extensora), ou marcar estiloide radial, polia A1 ou retináculo flexor.
 !fim
 
@@ -460,7 +460,7 @@ Esse colapso desequilibra os extensores, desvia os **metacarpos para radial** e,
 
 !questoes central=mao-0005 treino=mao-2432,mao-3515
 conceito: A AR começa na borda ulnar do punho; o carpo supina, sofre translocação ulnar e subluxa para palmar, enquanto os metacarpos giram para radial.
-como: O TARO 2020 perguntou para onde se deslocam os ossos do carpo depois do início na borda ulnar; o simulado SIMÃO 2022 pediu o padrão clássico de deformidade do carpo.
+como: O TARO 2020 perguntou para onde se deslocam os ossos do carpo depois do início na borda ulnar; o simulado da prova de título de cirurgia da mão de 2022 pediu o padrão clássico de deformidade do carpo.
 armadilha: Marcar pronação, ou confundir o desvio radial do carpo e dos metacarpos (que existe) com a translocação, que é ulnar e palmar.
 !fim
 
@@ -496,7 +496,7 @@ A **complicação mais frequente é a rotação dolorosa do antebraço**, pelo c
 
 !questoes treino=mao-1966,mao-3492,mao-3498
 conceito: Na excisão da ulna distal reumatoide, a ressecção é limitada (2 cm ou menos), o remanescente da fibrocartilagem é suturado ao canto dorsoulnar do rádio, o ECU volta ao dorso e a borda é chanfrada; a complicação mais frequente é a rotação dolorosa.
-como: O simulado SIMÃO 2023 pediu a afirmação correta sobre a técnica de excisão da ulna distal.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu a afirmação correta sobre a técnica de excisão da ulna distal.
 armadilha: Ressecar mais que 2 cm, suturar a fibrocartilagem ao canto palmar, ou achar que a translocação ulnar é a complicação mais comum.
 !fim
 
@@ -568,7 +568,7 @@ alerta: O Green mostra a fusão em leve desvio ulnar com os dois pinos de FELDON
 
 !questoes central=mao-0755 treino=mao-2400
 conceito: A translocação ulnar se trata com realinhamento e artrodese radiocárpica ou total; na artrodese total, a ulna distal costuma ser ressecada no mesmo tempo.
-como: O INTO 2023 perguntou que procedimento associar à artrodese total para facilitar o realinhamento do punho com translocação ulnar; o simulado SIMÃO 2022 fez a mesma pergunta segundo o Green.
+como: O INTO 2023 perguntou que procedimento associar à artrodese total para facilitar o realinhamento do punho com translocação ulnar; o simulado da prova de título de cirurgia da mão de 2022 fez a mesma pergunta segundo o Green.
 armadilha: Achar que o SAUVÉ-KAPANDJI corrige a translocação (o Green diz que não).
 alerta: O Green apoia o gabarito de `mao-0755`: na artrite reumatoide com translação ulnar do carpo, a ressecção de parte do estiloide radial entra na artrodese (cap. 12, p. 400 e 404), junto com a ressecção da ulna distal (p. 1865).
 !fim
@@ -700,7 +700,7 @@ Uma forma de lembrar: os tipos progridem do **funcional** (I, só frear a hipere
 
 !questoes treino=mao-2269
 conceito: No pescoço de cisne reumatoide, o tipo III é a IFP rígida em todas as posições da MF com espaço articular preservado; o tipo IV é a mesma rigidez com articulação destruída.
-como: O simulado SBCM 2023 perguntou o que define o tipo III.
+como: O simulado da prova de título de 2023 perguntou o que define o tipo III.
 armadilha: Chamar de tipo II a rigidez em todas as posições (no II a flexão depende da MF) ou de tipo IV a IFP rígida com radiografia boa.
 !fim
 
@@ -833,7 +833,7 @@ A forma mais fácil de entender os seis tipos é pelo **local onde a sinovite co
 
 !questoes central=mao-0142 relacionadas=mao-0398,mao-0965 treino=mao-2181,mao-2270,mao-2348,mao-3489,mao-3495,mao-3507,mao-3511,mao-3517
 conceito: No polegar reumatoide de NALEBUFF, o tipo I (botoeira) é o mais comum e o tipo III (pescoço de cisne, com CMC subluxada, fletida e aduzida, MF hiperestendida e IF fletida) é o segundo.
-como: Uma prova de Ortopedia perguntou o tipo mais comum; a SBOT-SP, o tipo do colo de cisne; a UFG 2020, a deformidade do tipo III; os simulados SBCM 2022, SBCM 2023 e SIMÃO 2024 pediram o tipo pela descrição completa, o tipo com IF fletida e a descrição correta da CMC.
+como: Uma prova de Ortopedia perguntou o tipo mais comum; a SBOT-SP, o tipo do colo de cisne; a UFG 2020, a deformidade do tipo III; os simulados da prova de título de 2022, prova de título de 2023 e simulado da prova de título de cirurgia da mão de 2024 pediram o tipo pela descrição completa, o tipo com IF fletida e a descrição correta da CMC.
 armadilha: Achar que o pescoço de cisne é o mais comum, trocar o tipo III pelo tipo II (botoeira com CMC subluxada), ou descrever a CMC do tipo III como abduzida.
 !fim
 
@@ -935,7 +935,7 @@ A artrite psoriática é uma **espondiloartropatia soronegativa**, da mesma fam�
 
 !questoes treino=mao-2053,mao-2616,mao-2627,mao-3493,mao-3494,mao-3496,mao-3497
 conceito: A artrite psoriática é assimétrica, sem nódulos, com pitting ungueal, IFD acometida, osteólise em lápis na xícara e mutilante; a deformidade digital mais comum é a flexão da IFP sem hiperextensão da IFD, e a MF enrijece em extensão.
-como: Os simulados SBCM 2024 e SBCM 2022 pediram a artrite do lápis na xícara, o diagnóstico de um caso com pitting, IFD destruída e assimetria, e a deformidade digital mais comum segundo o Green.
+como: Os simulados da prova de título de 2024 e prova de título de 2022 pediram a artrite do lápis na xícara, o diagnóstico de um caso com pitting, IFD destruída e assimetria, e a deformidade digital mais comum segundo o Green.
 armadilha: Marcar AR pela poliartrite, gota pela destruição, ou a botoeira completa (com IFD hiperestendida) como a deformidade típica.
 !fim
 
@@ -970,7 +970,7 @@ A **pseudogota** (depósito de pirofosfato de cálcio diidratado) é tratada no 
 
 !questoes treino=mao-1968
 conceito: Na pseudogota (pirofosfato de cálcio), a calcificação da fibrocartilagem triangular é o achado radiográfico típico do punho; os cristais são romboides, com birrefringência fracamente positiva.
-como: O simulado SIMÃO 2023 perguntou onde os cristais se depositam com mais frequência.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou onde os cristais se depositam com mais frequência.
 armadilha: Trocar pelos cristais em agulha com birrefringência negativa (gota) ou escolher um espaço articular sem cartilagem fibrosa.
 !fim
 
@@ -982,7 +982,7 @@ A nomenclatura atual vem da classificação da **International League of Associa
 
 !questoes treino=mao-2396
 conceito: A artrite idiopática juvenil (nome da classificação ILAR, que substituiu a "artrite reumatoide juvenil") tem como forma mais comum a oligoarticular, com até quatro articulações nos primeiros 6 meses.
-como: O simulado SIMÃO 2022 perguntou a forma mais comum.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou a forma mais comum.
 armadilha: Marcar a forma sistêmica (doença de STILL) por ser a mais lembrada, ou a poliarticular com fator reumatoide, que se parece com a AR do adulto.
 alerta: O Green 7 não descreve as formas da artrite juvenil; a classificação é a da ILAR (PETTY et al. 2004, PMID 14760812), e a frequência que o simulado cobra vem da 8ª edição do Green.
 !fim

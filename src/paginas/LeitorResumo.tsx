@@ -1,4 +1,5 @@
 import { Fragment, lazy, Suspense, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react'
+import { rotuloProva } from '../config'
 import { carregarCapitulo, carregarIndiceBiblioteca, pedacos, questoesReais, textoPuro, textosDoCapitulo } from '../biblioteca/conteudo'
 import { criarAncora, faixasDoBloco, resolverAncora, type Ancora, type AncoraResolvida } from '../biblioteca/ancoras'
 import { CORES, ehTexto, type Bloco, type Capitulo, type CorMarca, type Marca, type Preferencias, type Radar, type ResumoCapitulo } from '../biblioteca/tipos'
@@ -800,7 +801,7 @@ function rotuloQuestao(indice: Indice | null, id: string): string {
   const q = indice?.questoes.find((x) => x.id === id)
   if (!q) return id
   if (q.sim && (q.p === null || q.p === undefined)) return 'Simulado OrtoQuestões'
-  const prova = q.p !== null && q.p !== undefined ? indice!.provas[q.p] : ''
+  const prova = q.p !== null && q.p !== undefined ? rotuloProva(indice!.provas[q.p]) : ''
   return [prova, q.a].filter(Boolean).join(' ') || id
 }
 

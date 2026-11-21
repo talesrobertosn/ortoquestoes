@@ -102,7 +102,7 @@ alerta: O gabarito do TARO 2011 trata a perilunar como dissociativa; o Green 7 a
 
 !questoes treino=mao-2292,mao-1952,mao-2640,mao-2654,mao-2681,mao-2684,mao-2691
 conceito: CIND é a falha radiocárpica, mediocárpica ou combinada com os ligamentos intrafileira íntegros; o exemplo clássico é a translocação ulnar de todo o carpo.
-como: O SIMÃO 2024 pediu um exemplo de não dissociativa; o SIMÃO 2023 pediu a afirmação correta sobre a CIND.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu um exemplo de não dissociativa; o simulado da prova de título de cirurgia da mão de 2023 pediu a afirmação correta sobre a CIND.
 armadilha: Achar que CIND exige lesão do escafolunar ou do lunopiramidal.
 !fim
 
@@ -149,7 +149,7 @@ O RSC é também o motivo de duas condutas que a prova cobra. Na **estiloidectom
 
 !questoes treino=mao-2212,mao-2623,mao-2467,mao-2567,mao-2641,mao-2660
 conceito: O RSC vai do estiloide radial ao capitato passando pela cintura do escafoide como uma tipoia; o espaço de POIRIER fica na cápsula palmar, entre o RSC e o radiossemilunar longo.
-como: Os simulados do SBCM 2023 e 2022 pedem os ligamentos palmares superficiais e o que contorna o escafoide; o do SIMÃO 2021 pede qual origem a estiloidectomia excessiva compromete; outro pede a localização do POIRIER.
+como: Os simulados da prova de título de 2023 e 2022 pedem os ligamentos palmares superficiais e o que contorna o escafoide; o do simulado da prova de título de cirurgia da mão de 2021 pede qual origem a estiloidectomia excessiva compromete; outro pede a localização do POIRIER.
 armadilha: Colocar o POIRIER entre o RSC e o radiossemilunar curto, ou no dorso do punho.
 !fim
 
@@ -165,7 +165,7 @@ O antigo "ligamento radioescafossemilunar de TESTUT e KUENTZ" **não é um ligam
 
 !questoes central=mao-1305 treino=mao-2504,mao-2436,mao-2652,mao-2667
 conceito: Os ligamentos dorsais (radiocárpico dorsal e intercárpico dorsal) estabilizam as articulações intercárpicas; o radiocárpico dorsal insere-se no semilunar e no piramidal; o ligamento de TESTUT é tecido frouxo com vasos.
-como: A USP-SP 2025 perguntou a principal função dos ligamentos dorsais; os simulados do SIMÃO 2021 e 2022 pediram a inserção do radiocárpico dorsal e o que é o TESTUT.
+como: A USP-SP 2025 perguntou a principal função dos ligamentos dorsais; os simulados do simulado da prova de título de cirurgia da mão de 2021 e 2022 pediram a inserção do radiocárpico dorsal e o que é o TESTUT.
 armadilha: Achar que existe ulnocárpico dorsal ou colateral radial verdadeiro.
 !fim
 
@@ -194,7 +194,7 @@ armadilha: Responder "dorsal" para os dois ligamentos, ou "membranosa" por achar
 
 !questoes treino=mao-1955
 conceito: O septo capsuloligamentar dorsal escafolunar (DCSS) liga o SL dorsal à cápsula e ao intercárpico dorsal; é estrutura descrita depois da 7ª edição.
-como: O simulado do SIMÃO 2023 pede de qual ligamento o septo se origina.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pede de qual ligamento o septo se origina.
 armadilha: Responder radiocárpico dorsal.
 alerta: O DCSS não aparece no Green 7; o simulado foi escrito por fonte mais recente (8ª edição).
 !fim
@@ -215,7 +215,7 @@ Na **flexoextensão**, o escafoide roda mais que o semilunar porque tem **raio d
 
 !questoes treino=mao-2631,mao-2657
 conceito: O escafoide roda mais que o semilunar na flexoextensão porque tem raio de curvatura menor; o ângulo escafossemilunar cresce na flexão (média de 76°) e diminui na extensão (média de 35°).
-como: O simulado do SBCM 2024 pediu os dois valores médios do ângulo nas posições extremas.
+como: O simulado da prova de título de 2024 pediu os dois valores médios do ângulo nas posições extremas.
 armadilha: Achar que o ângulo é fixo, ou que diminui na flexão.
 !fim
 
@@ -260,7 +260,7 @@ Um detalhe bonito: os cistos sinoviais dorsais nascem com mais frequência do in
 
 !questoes treino=mao-2210
 conceito: Na superfície do rádio, a fossa do escafoide recebe cerca de 50% da carga, a do semilunar 35% e o TFCC com a ulna 15%.
-como: O simulado do SBCM 2023 pediu por onde passam os 35%.
+como: O simulado da prova de título de 2023 pediu por onde passam os 35%.
 armadilha: Marcar a fossa do escafoide ou o TFCC.
 !fim
 
@@ -283,7 +283,7 @@ Os autores dizem que os ligamentos são a primeira linha de defesa e os músculo
 
 !questoes treino=mao-2462
 conceito: ECRL e APL supinam a fileira distal e protegem o escafoide da flexão-pronação; o ECU prona e piora o gap escafolunar, mas protege o lado ulnar.
-como: O simulado do SIMÃO 2022 pediu os músculos que supinam a fileira distal.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pediu os músculos que supinam a fileira distal.
 armadilha: Incluir o ECU entre os supinadores.
 !fim
 
@@ -351,7 +351,7 @@ A luxação perilunar também pode começar do lado ulnar (p. 427 e 428). O meca
 
 !questoes treino=mao-1953
 conceito: No padrão reverso de MAYFIELD, a lesão começa pelo lunopiramidal, passa pela luxação lunocapitato com ruptura ulnocárpica e termina na dissociação escafolunar.
-como: O simulado do SIMÃO 2023 pediu quais ligamentos, ao se romperem, completam a luxação no padrão reverso.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pediu quais ligamentos, ao se romperem, completam a luxação no padrão reverso.
 armadilha: Aplicar a ordem radial (escafolunar primeiro) ao padrão reverso.
 alerta: O gabarito do simulado cita o radioescafolunar e a porção dorsal do escafolunar; o Green 7 descreve o último estágio só como dissociação escafolunar, sem detalhar as porções.
 !fim
@@ -432,7 +432,7 @@ Daí a ideia, cara a GARCIA-ELIAS, de que a dissociação crônica é uma **les�
 
 !questoes treino=mao-2384
 conceito: Na dissociação escafolunar aguda, a falha progride da porção palmar para a membranosa e depois para a dorsal; sem os estabilizadores secundários rotos, mesmo a lesão completa não desalinha de imediato.
-como: O simulado do SIMÃO 2022 pediu a ordem de falha das três porções.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pediu a ordem de falha das três porções.
 armadilha: Achar que a membrana, por ser a mais fraca, rompe primeiro; no mecanismo de MAYFIELD a ruptura caminha de palmar para dorsal.
 !fim
 
@@ -442,7 +442,7 @@ Sem o escafolunar, o carpo se desarma de modo previsível (p. 435; Fig. 13.19). 
 
 !questoes treino=mao-1779,mao-1785,mao-2291,mao-2647
 conceito: Na dissociação escafolunar estabelecida, o escafoide flete e prona apoiado no RSC, o semilunar estende com o piramidal (DISI), o ângulo SL aumenta e a fileira distal prona e translada para dorsal.
-como: Os simulados do SIMÃO 2026 e 2024 pediram a combinação de achados no perfil, a afirmação correta sobre o colapso e a posição da fileira distal.
+como: Os simulados do simulado da prova de título de cirurgia da mão de 2026 e 2024 pediram a combinação de achados no perfil, a afirmação correta sobre o colapso e a posição da fileira distal.
 armadilha: Colocar o escafoide em extensão ou a fileira distal em supinação.
 !fim
 
@@ -489,7 +489,7 @@ O teste tem **especificidade baixa**. Dá positivo em sinovite, cisto oculto e i
 
 !questoes central=mao-0521 treino=mao-2199,mao-1671
 conceito: No teste de WATSON, o punho vai de inclinação ulnar para radial com o polegar na tuberosidade do escafoide; o polo proximal subluxa para dorsal e reduz com estalido quando a pressão é retirada.
-como: O TARO 2011 perguntou a direção do movimento; o simulado do SBCM 2023 pediu o momento do estalido; outro simulado mostrou a manobra em figura.
+como: O TARO 2011 perguntou a direção do movimento; o simulado da prova de título de 2023 pediu o momento do estalido; outro simulado mostrou a manobra em figura.
 armadilha: Inverter a direção (de radial para ulnar) ou dizer que o estalido aparece no início da inclinação radial, quando o escafoide está subluxando.
 !fim
 
@@ -543,7 +543,7 @@ Lendo a tabela pela lógica: os estágios **I a III** têm o escafoide alinhado 
 conceito: GARCIA-ELIAS IV = escafoide desalinhado e redutível, semilunar alinhado, cartilagem íntegra: tenodese de três ligamentos; V = semilunar também desalinhado; VI = irredutível com cartilagem normal; VII = cartilagem lesada.
 como: A prova de Ortopedia pediu a técnica do estágio IV (tenodese triligamentar); o INTO 2023 pediu o estágio da subluxação rotatória redutível com cartilagem íntegra; a PUC-SP 2023 perguntou o que caracteriza o estágio 3; os simulados cobram cada fronteira (parcial no 1, semilunar desalinhado no 5, irredutível no 6, o que segura o semilunar no 4).
 armadilha: Indicar reparo ligamentar ou pinagem no estágio IV (o ligamento já é irreparável), ou colocar o desalinhamento do semilunar no IV.
-alerta: A questão da PUC-SP 2023 está sem gabarito no acervo; pelo Green, o estágio 3 é a lesão completa e irreparável com o escafoide ainda alinhado (forma dinâmica). A RASL, cobrada no simulado do SIMÃO 2024, é uma das duas opções que o Green 7 dá para o estágio IV, ao lado da reconstrução com tendão (p. 443).
+alerta: A questão da PUC-SP 2023 está sem gabarito no acervo; pelo Green, o estágio 3 é a lesão completa e irreparável com o escafoide ainda alinhado (forma dinâmica). A RASL, cobrada no simulado do simulado da prova de título de cirurgia da mão de 2024, é uma das duas opções que o Green 7 dá para o estágio IV, ao lado da reconstrução com tendão (p. 443).
 !fim
 
 ## A classificação artroscópica da EWAS
@@ -566,7 +566,7 @@ O que separa o V do IV é o **desalinhamento do carpo** visível na radiografia.
 
 !questoes central=mao-0830 treino=mao-2213,mao-2037,mao-2666,mao-2689,mao-2695,mao-2699
 conceito: Na EWAS, IIIA rompe a porção volar, IIIB a dorsal e IIIC as duas sem diástase; IV acrescenta gap sem desalinhamento e V, desalinhamento; propriocepção só nos tipos II e IIIA.
-como: O INTO 2026 pediu o estágio da lesão dorsal e volar sem diástase (IIIC); os simulados do SBCM 2023 e 2024 pediram a porção rota no IIIB e os tipos em que cabe propriocepção.
+como: O INTO 2026 pediu o estágio da lesão dorsal e volar sem diástase (IIIC); os simulados da prova de título de 2023 e 2024 pediram a porção rota no IIIB e os tipos em que cabe propriocepção.
 armadilha: Trocar IIIA por IIIB (volar e dorsal), ou indicar propriocepção no IIIB, em que o SL dorsal já está roto.
 !fim
 
@@ -600,7 +600,7 @@ armadilha: Marcar CORELLA, que é a ligamentoplastia artroscópica com tendão (
 
 !questoes central=mao-1520 treino=mao-1954,mao-2678,mao-2702
 conceito: Na lesão escafolunar completa aguda e reparável, o tratamento é o reparo ligamentar com fixação temporária escafolunar; a avulsão do lado do escafoide é o padrão mais frequente (42%) e pode ser reparada mesmo tardiamente.
-como: A USP-SP 2024 trouxe um caso de queda de altura com lesão escafolunar aguda e pediu a conduta; o simulado do SIMÃO 2023 pediu o tipo mais frequente de ANDERSSON.
+como: A USP-SP 2024 trouxe um caso de queda de altura com lesão escafolunar aguda e pediu a conduta; o simulado do simulado da prova de título de cirurgia da mão de 2023 pediu o tipo mais frequente de ANDERSSON.
 armadilha: Indicar tenodese ou artrodese numa lesão aguda reparável.
 !fim
 
@@ -694,9 +694,9 @@ O estágio VII é o **começo do SLAC** (p. 449): a subluxação irredutível e 
 
 !questoes treino=mao-1688,mao-2639,mao-2658,mao-2665
 conceito: No SLAC, o procedimento de WATSON é a ressecção do escafoide com artrodese dos quatro cantos; para não haver impacto dorsal rádio-capitato, a extensão do semilunar deve ser corrigida antes da fixação; a carpectomia proximal perde indicação quando o lunocapitato já degenerou.
-como: Simulados do SBCM 2014 (o que é o procedimento SLAC), do SIMÃO 2010 (complicação de fixar o semilunar estendido) e do SBCM 2025 (opções do estágio 7).
+como: Simulados da prova de título de 2014 (o que é o procedimento SLAC), do simulado da prova de título de cirurgia da mão de 2010 (complicação de fixar o semilunar estendido) e da prova de título de 2025 (opções do estágio 7).
 armadilha: Confundir o procedimento SLAC com a carpectomia, ou fixar o semilunar em DISI.
-alerta: A questão original do SBCM 2025 deu como resposta a artrodese radioescafossemilunar para o estágio 7, citando o Green 8. No Green 7, a RSL com ressecção do escafoide distal é a opção do estágio VI (cartilagem mediocárpica normal, p. 448 a 450); no VII as opções são estiloidectomia, quatro cantos (preferida dos autores), carpectomia, artroplastia e artrodese total. O simulado foi escrito pelo Green 7 e pede "uma das opções", sem a RSL entre as alternativas.
+alerta: A questão original da prova de título de 2025 deu como resposta a artrodese radioescafossemilunar para o estágio 7, citando o Green 8. No Green 7, a RSL com ressecção do escafoide distal é a opção do estágio VI (cartilagem mediocárpica normal, p. 448 a 450); no VII as opções são estiloidectomia, quatro cantos (preferida dos autores), carpectomia, artroplastia e artrodese total. O simulado foi escrito pelo Green 7 e pede "uma das opções", sem a RSL entre as alternativas.
 !fim
 
 # Dissociação lunopiramidal {radar=confirmado}
@@ -713,7 +713,7 @@ A lesão pode vir com lesões periféricas da fibrocartilagem triangular e com a
 
 !questoes treino=mao-2294
 conceito: A lesão lunopiramidal isolada vem de queda para trás com o braço em rotação externa, antebraço supinado e punho estendido em inclinação radial, com o pisiforme empurrando o piramidal para dorsal.
-como: O simulado do SIMÃO 2024 pediu o mecanismo mais comum.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 pediu o mecanismo mais comum.
 armadilha: Repetir o mecanismo escafolunar (inclinação ulnar e supinação mediocárpica).
 !fim
 
@@ -774,7 +774,7 @@ O fator mais associado é a **frouxidão ligamentar** constitucional, somada a c
 
 !questoes treino=mao-2125,mao-2661
 conceito: A CIND associa-se com mais frequência à frouxidão ligamentar.
-como: O simulado do SBCM 2022 perguntou o fator mais associado.
+como: O simulado da prova de título de 2022 perguntou o fator mais associado.
 armadilha: Marcar trauma de alta energia.
 !fim
 
@@ -816,7 +816,7 @@ O tratamento começa conservador (p. 460): órtese de **"pisiform boost"** (calh
 
 !questoes treino=mao-2124,mao-2397,mao-2211,mao-2655,mao-2656,mao-2668,mao-2679,mao-2697
 conceito: Na CIND-VISI, o grau IV de LICHTMAN é a subluxação fácil que se mantém após retirar a força; na gaveta anterior, a STT abre para palmar (sinal do bocejo); a tenodese de ECRB dos autores recria o braço ulnar do arqueado e reforça o radiocárpico dorsal.
-como: Os simulados do SBCM 2022 e 2023 e do SIMÃO 2022 pediram o grau IV, o teste em que aparece o sinal do bocejo e a indicação da tenodese de ECRB.
+como: Os simulados da prova de título de 2022 e 2023 e do simulado da prova de título de cirurgia da mão de 2022 pediram o grau IV, o teste em que aparece o sinal do bocejo e a indicação da tenodese de ECRB.
 armadilha: Confundir o grau IV com o V (ativo) ou o bocejo com a gaveta posterior.
 !fim
 
@@ -846,7 +846,7 @@ No plano coronal, a correção é a osteotomia em cunha lateral; o nivelamento r
 
 !questoes treino=mao-2208,mao-2535,mao-2642,mao-2663,mao-2664,mao-2674
 conceito: A consolidação viciosa do rádio distal em inclinação dorsal produz desalinhamento adaptativo com flexão mediocárpica compensatória; o estalido na inclinação ulnar é a subluxação dorsal recorrente do capitato; o tratamento é a osteotomia do rádio.
-como: Os simulados do SBCM 2023 e do SIMÃO 2021 pediram a causa do desalinhamento adaptativo e como o carpo compensa a inclinação dorsal.
+como: Os simulados da prova de título de 2023 e do simulado da prova de título de cirurgia da mão de 2021 pediram a causa do desalinhamento adaptativo e como o carpo compensa a inclinação dorsal.
 armadilha: Indicar reconstrução ligamentar: os ligamentos estão normais, e a falha de TALEISNIK e WATSON foi justamente a estabilização de partes moles sem corrigir o rádio.
 !fim
 
@@ -995,7 +995,7 @@ O tratamento (p. 475) começa por avaliar lesões neurovasculares e tendíneas, 
 
 !questoes treino=mao-2295,mao-2604,mao-2645,mao-2669,mao-2670,mao-2690,mao-2700
 conceito: Entre as axiais de GARCIA-ELIAS, as luxações puras, sem fratura, são o peritrapezoide-peritrapézio, o peritrapézio e o peri-hamato-peripisiforme.
-como: Os simulados do SIMÃO 2024 e 2022 pediram, sobre a figura, quais subtipos são luxações puras.
+como: Os simulados do simulado da prova de título de cirurgia da mão de 2024 e 2022 pediram, sobre a figura, quais subtipos são luxações puras.
 armadilha: Incluir o transtrapézio ou o trans-hamato, que têm fratura pelo próprio nome.
 !fim
 
@@ -1009,7 +1009,7 @@ Resultam de força localizada e não implicam desarranjo global; a coluna radial
 
 !questoes central=mao-1579 treino=mao-2617
 conceito: A luxação palmar do escafoide tipo II se associa ao desarranjo axial da articulação capitato-hamato.
-como: A USP-SP 2026 e o simulado do SBCM 2022 pediram a articulação desalinhada no tipo II.
+como: A USP-SP 2026 e o simulado da prova de título de 2022 pediram a articulação desalinhada no tipo II.
 armadilha: Marcar a STT ou o lunocapitato.
 !fim
 
@@ -1022,8 +1022,8 @@ Parte das questões de banca foi escrita com a 8ª edição do Green ou com resu
 !tabela Divergências registradas no capítulo 13 (Green 7)
 | Ponto | Outra fonte | Green 7 | Como ler na prova |
 |---|---|---|---|
-| Opção no estágio 7 de GARCIA-ELIAS | SBCM 2025 (Green 8, p. 531): artrodese radioescafossemilunar | RSL com ressecção do escafoide distal no estágio VI; no VII, estiloidectomia, quatro cantos, carpectomia, artroplastia, artrodese total (p. 448 a 450) | Se a questão citar a 8ª edição, a RSL pode ser aceita no 7 |
-| RSC no estágio II de MAYFIELD | SBCM 2025: desinserção | Estiramento intrassubstancial (p. 427); avulsão do estiloide na Fig. 13.58 (p. 470) | "Lesão do RSC" é certa nas duas leituras |
+| Opção no estágio 7 de GARCIA-ELIAS | Prova de título de 2025 (Green 8, p. 531): artrodese radioescafossemilunar | RSL com ressecção do escafoide distal no estágio VI; no VII, estiloidectomia, quatro cantos, carpectomia, artroplastia, artrodese total (p. 448 a 450) | Se a questão citar a 8ª edição, a RSL pode ser aceita no 7 |
+| RSC no estágio II de MAYFIELD | Prova de título de 2025: desinserção | Estiramento intrassubstancial (p. 427); avulsão do estiloide na Fig. 13.58 (p. 470) | "Lesão do RSC" é certa nas duas leituras |
 | Elasticidade dos extrínsecos | Curso: "mais rígidos e com mais fibras elásticas" | Mais elásticos e menos resistentes (p. 420) | Seguir o Green |
 | Porção palmar do SL | Curso: "estabilizadora rotacional"; membrana "semimembranosa" | Fibras longas e oblíquas que permitem flexoextensão (p. 422); membrana com 63 N | Termos que o Green 7 não usa |
 | Imobilização após perilunar | USP-SP 2025 (Green 8): 10 semanas | Spica 6 semanas, fios e gesso fora com 8 (p. 469) | A questão cita a 8ª edição |

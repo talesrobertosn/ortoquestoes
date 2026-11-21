@@ -105,7 +105,7 @@ Porque é a parte mais objetiva do capítulo. A pegadinha mais comum é inverter
 
 !questoes central=mao-0987 relacionadas=mao-1200 treino=mao-2178,mao-3838,mao-3840
 conceito: Tipo 1 (antiga distrofia simpático-reflexa) não tem lesão nervosa identificável; tipo 2 (causalgia) tem os mesmos sinais somados a lesão de nervo nomeado identificável, mesmo sensitivo e mesmo com sinais além do território; tipo 3 reúne causas não traumáticas, como a miofascial, e é controverso.
-como: A UFG 2020 perguntou o tipo de quem tem lesão neurológica e causalgia; a PUC-SP 2023 pediu a afirmação correta sobre os tipos; o simulado do SBCM 2022 pede o que caracteriza o tipo 2; o do SBCM 2025 traz lesão do ramo superficial do radial com sinais além do território.
+como: A UFG 2020 perguntou o tipo de quem tem lesão neurológica e causalgia; a PUC-SP 2023 pediu a afirmação correta sobre os tipos; o simulado da prova de título de 2022 pede o que caracteriza o tipo 2; o da prova de título de 2025 traz lesão do ramo superficial do radial com sinais além do território.
 armadilha: Colocar a lesão nervosa no tipo 1, chamar a DSR de tipo 3, pôr a dor miofascial no tipo 2, ou rebaixar para tipo 1 porque o nervo é só sensitivo ou porque os sinais passam do território.
 alerta: `mao-1200` (PUC-SP 2023) está sem gabarito oficial; pelo Green 7 (p. 1797, Tabela 53.1), a única afirmação correta é a D: o tipo 1 tem alterações distróficas sem lesão nervosa periférica identificável.
 !fim
@@ -160,7 +160,7 @@ O mecanismo explica por que a alodinia aparece. Normalmente, o toque leve viaja 
 
 !questoes treino=mao-1736
 conceito: Alodinia é dor por estímulo normalmente indolor (toque leve, lençol); hiperalgesia é dor exagerada a estímulo doloroso; hiperpatia é dor retardada, prolongada e espalhada além do território.
-como: O simulado do SIMÃO 2026 descreve a dor intensa quando o lençol ou a manga encosta na mão, seis semanas após fratura do rádio distal, e pede o termo da IASP.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 descreve a dor intensa quando o lençol ou a manga encosta na mão, seis semanas após fratura do rádio distal, e pede o termo da IASP.
 armadilha: Escolher hiperalgesia (o estímulo do lençol não é doloroso) ou hiperestesia (termo genérico que inclui a alodinia, mas não é o nome específico).
 !fim
 
@@ -220,7 +220,7 @@ Os mecanismos que mantêm a dor crônica, segundo o Green, são cinco: irritaç�
 
 !questoes treino=mao-2362
 conceito: Na SDRC, a sensibilização dos neurônios de amplo alcance dinâmico (WDR) no corno dorsal contribui para a descarga nociceptiva central; a ativação NMDA pelo glutamato produz potenciais duradouros.
-como: O simulado do SIMÃO 2024 pede, segundo o Green, a alteração do corno dorsal que contribui para a descarga nociceptiva central.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 pede, segundo o Green, a alteração do corno dorsal que contribui para a descarga nociceptiva central.
 armadilha: Achar que o glutamato bloqueia o NMDA (ele o ativa; a cetamina é que bloqueia) ou reduzir a SDRC a vasoconstrição cutânea.
 !fim
 
@@ -266,7 +266,7 @@ armadilha: Inverter a proporção entre os sexos ou aceitar que a doença está 
 
 !questoes treino=mao-3434
 conceito: Na fratura do rádio distal, a SDRC é mais provável com gesso apertado ou foco nociceptivo ou neuropático, sobretudo compressão do mediano, distração excessiva, instabilidade da radioulnar distal e fratura da ulna.
-como: O simulado do SIMÃO 2013 traz fratura do rádio distal em gesso com dor desproporcional, edema e rigidez dos dedos e pede o que investigar.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2013 traz fratura do rádio distal em gesso com dor desproporcional, edema e rigidez dos dedos e pede o que investigar.
 armadilha: Procurar infecção ou trombose e esquecer o nervo irritado ou comprimido, que é o foco tratável.
 !fim
 
@@ -304,7 +304,7 @@ Nenhum desses achados, sozinho, é específico: dor intensa, insônia e rigidez 
 
 !questoes treino=mao-2266
 conceito: Dor intensa, dificuldade para dormir e rigidez são inespecíficas, mas a ausência delas torna a SDRC menos provável; o sono ruim com queimação é sinal precoce de progressão.
-como: O simulado do SBCM 2023 pergunta como interpretar dor intensa, dificuldade para dormir e rigidez.
+como: O simulado da prova de título de 2023 pergunta como interpretar dor intensa, dificuldade para dormir e rigidez.
 armadilha: Chamar esses achados de patognomônicos, empurrá-los para a fase tardia ou esperar boa resposta a anti-inflamatório e opioide.
 !fim
 
@@ -348,7 +348,7 @@ O Green repete em vários pontos (p. 1797, 1804 e 1818): o diagnóstico da SDRC 
 
 !questoes treino=mao-2013,mao-3839
 conceito: O diagnóstico da SDRC é clínico (história e exame físico); não existe exame laboratorial ou de imagem obrigatório, e a cintilografia só corrobora.
-como: O simulado do SIMÃO 2023 pergunta como se estabelece o diagnóstico, com alternativas que somam à clínica radiografia e ressonância, eletroneuromiografia ou cintilografia.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pergunta como se estabelece o diagnóstico, com alternativas que somam à clínica radiografia e ressonância, eletroneuromiografia ou cintilografia.
 armadilha: Escolher "clínica com cintilografia": a fase III positiva não é pré-requisito, e a cintilografia tem baixa sensibilidade.
 !fim
 

@@ -223,7 +223,7 @@ O mecanismo é este: quando os **supinadores intracarpais (ECRL e APL)** contrae
 
 !questoes treino=mao-2462
 conceito: ECRL e APL supinam a fileira distal, levam o trapézio para dorsal, tensionam o STT e impedem o escafoide de cair em flexopronação; o ECU é o pronador e abre a diástase SL.
-como: O SIMÃO 2022 perguntou que músculos giram a fileira distal em supinação e protegem o escafoide.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou que músculos giram a fileira distal em supinação e protegem o escafoide.
 armadilha: Incluir o ECU, que é o pronador intracarpal; a alternativa certa é a única que junta ECRL e APL sem o ECU.
 alerta: O Green 7 (cap. 13, p. 424 e 426) nomeia ECRL e APL como supinadores e cita o FCR como supinador do escafoide; o FCU, presente no gabarito (`mao-2462`, B), aparece no livro como motor do dardo e estabilizador do piramidal pelo pisiforme, não como supinador. Gabarito oficial mantido.
 !fim
@@ -308,7 +308,7 @@ MAYFIELD descreveu a **instabilidade perilunar progressiva** em quatro estágios
 
 !questoes treino=mao-2289
 conceito: A luxação perilunar dorsal vem em geral de trauma indireto com hiperextensão, desvio ulnar variável e supinação intracarpal; ECRL e APL supinam a fileira distal, o ECU prona; o estágio II de MAYFIELD é a luxação perilunar e o III, a ruptura LTq.
-como: O SIMÃO 2024 misturou mecanismo, estágios de MAYFIELD e os músculos que pronam e supinam a fileira distal.
+como: O simulado da prova de título de cirurgia da mão de 2024 misturou mecanismo, estágios de MAYFIELD e os músculos que pronam e supinam a fileira distal.
 armadilha: Chamar o estágio II de ruptura LTq (é o III) ou trocar pronadores por supinadores.
 !fim
 
@@ -316,13 +316,13 @@ armadilha: Chamar o estágio II de ruptura LTq (é o III) ou trocar pronadores p
 
 Com o tempo, os estabilizadores secundários se atenuam e o carpo colapsa. O semilunar e o piramidal, livres do escafoide, **estendem sob carga**; o escafoide **flete em torno do RSC**, **prona** e se desloca para radial. Os dois ossos se separam no plano coronal e adotam deformidades **opostas**, e a **fileira distal é forçada a rodar em pronação** (Green, cap. 13, p. 435, figura 13.19). Por que o semilunar estende? KAUER atribui à forma (corno dorsal mais estreito) e à superfície radial inclinada para palmar; outros autores, ao piramidal, que o arrasta pela TqH helicoidal (p. 435). A terminologia correta, insistem os autores, é descrever cada osso: **o escafoide flete e prona, o semilunar estende**; só o semilunar está em DISI (p. 419).
 
-No perfil, o **ângulo SL fica acima dos 45 a 60 graus** habituais e vai aumentando à medida que o semilunar estende para acomodar a perda de altura da coluna radial, o que causa a **subluxação dorsal do capitato** (p. 437). Somando a pronação da fileira distal e o capitato que sobe para dorsal, chega-se à resposta do SIMÃO: a fileira distal **translada para dorsal e roda em pronação**. No PA, a diástase de mais de 5 mm (sinal de TERRY THOMAS) é diagnóstica (p. 436).
+No perfil, o **ângulo SL fica acima dos 45 a 60 graus** habituais e vai aumentando à medida que o semilunar estende para acomodar a perda de altura da coluna radial, o que causa a **subluxação dorsal do capitato** (p. 437). Somando a pronação da fileira distal e o capitato que sobe para dorsal, chega-se à resposta do simulado da prova de título de cirurgia da mão: a fileira distal **translada para dorsal e roda em pronação**. No PA, a diástase de mais de 5 mm (sinal de TERRY THOMAS) é diagnóstica (p. 436).
 
 A carga também muda: o polo proximal, subluxado para dorsorradial, passa a apoiar só na **borda dorsolateral da fossa do escafoide** (as duas colheres desalinhadas de WATSON), onde começa a artrose; a **radiolunar é poupada** porque as superfícies têm o mesmo raio de curvatura. LLUCH descreve o SLAC em **cinco estágios**: radioescafoide, escafocapitato, lunocapitato, triquetro-hamato e radiolunar (p. 435).
 
 !questoes treino=mao-1779,mao-2291
 conceito: Na dissociação SL crônica o escafoide flete e prona, o semilunar estende com o piramidal (DISI) e o ângulo SL passa do normal; a fileira distal roda em pronação e o capitato subluxa para dorsal.
-como: O SIMÃO 2026 pediu o perfil esperado na dissociação crônica; o SIMÃO 2024, a posição da fileira distal na dissociação estabelecida.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu o perfil esperado na dissociação crônica; o simulado da prova de título de cirurgia da mão de 2024, a posição da fileira distal na dissociação estabelecida.
 armadilha: Dizer que o semilunar fica neutro (ele tem tendência própria a estender) ou que a fileira distal supina, que é o que os músculos protetores tentam fazer.
 !fim
 
@@ -342,7 +342,7 @@ Fundir o escafoide ao capitato é uma alternativa à **STT** para estabilizar o 
 
 !questoes treino=mao-1784
 conceito: A artrodese escafocapitato restringe parcialmente e de forma importante a flexoextensão e o desvio radial, de modo semelhante à STT, e deixa cerca de 50% a 60% do movimento, sobretudo radiocárpico.
-como: O SIMÃO 2026 perguntou a mobilidade esperada após uma artrodese escafocapitato consolidada.
+como: O simulado da prova de título de cirurgia da mão de 2026 perguntou a mobilidade esperada após uma artrodese escafocapitato consolidada.
 armadilha: Achar que a mediocárpica ulnar compensa e o punho fica quase normal, ou que a fusão bloqueia a pronossupinação.
 !fim
 

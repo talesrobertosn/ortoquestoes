@@ -15,7 +15,7 @@ resumo: Fisiopatologia (barreira hematoneural, edema, perineuro, mielina, axôni
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 28 do Green's Operative Hand Surgery, Neuropatias de compressão, na 8ª edição (tradução), de J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON, e foi completado com o mesmo capítulo da 7ª edição (2017), escrito por MACKINNON e NOVAK, que é a edição pela qual as provas de Cirurgia da Mão (SIMÃO e título da SBCM) foram montadas. Quando o texto cita "Green 8", a página é da tradução da 8ª edição; quando cita "Green 7", a página é a impressa da 7ª. Os dois textos são da mesma escola e quase sempre dizem a mesma coisa; onde não dizem, a diferença está registrada no fim.
+Este resumo é inspirado no capítulo 28 do Green's Operative Hand Surgery, Neuropatias de compressão, na 8ª edição (tradução), de J. Megan M. PATTERSON, Christine B. NOVAK e Susan E. MACKINNON, e foi completado com o mesmo capítulo da 7ª edição (2017), escrito por MACKINNON e NOVAK, que é a edição pela qual as provas de Cirurgia da Mão (simulado da prova de título de cirurgia da mão e título da prova de título) foram montadas. Quando o texto cita "Green 8", a página é da tradução da 8ª edição; quando cita "Green 7", a página é a impressa da 7ª. Os dois textos são da mesma escola e quase sempre dizem a mesma coisa; onde não dizem, a diferença está registrada no fim.
 
 O capítulo do Green é dividido em dois resumos da Biblioteca. O **túnel do carpo** tem resumo próprio (anatomia, LANZ, ramo cutâneo palmar, testes, órtese, liberação aberta e endoscópica, revisão). Este cuida de todo o resto: **como o nervo adoece**, **como se examina o membro inteiro**, e cada compressão fora do carpo, nervo por nervo: **mediano proximal**, **canal de GUYON**, **túnel cubital**, **radial sensitivo** e **interósseo posterior**, as **reoperações** e, com outros capítulos, o **supraescapular**, o **espaço quadrangular** e o **desfiladeiro torácico**.
 
@@ -808,7 +808,7 @@ A incidência na população geral é estimada em **1% a 2%**, provavelmente sub
 
 !questoes central=mao-1466 relacionadas=mao-0010,mao-0425,mao-0081 treino=mao-1744,mao-3626,mao-3627,mao-3628,mao-3634,mao-3638,mao-3641
 conceito: WILBOURN divide o desfiladeiro em vascular (arterial 1% a 2%, venoso 2% a 3%) e neurogênico (verdadeiro, raríssimo, e eletricamente negativo, mais de 95%); a PAGET-SCHROETTER é a trombose de esforço da veia subclávia; a forma verdadeira tem atrofia e déficit em C8 e T1; a arterial vem quase sempre de osso, inclusive clavícula mal consolidada e esternoclavicular subluxada.
-como: A USP-SP 2024 pediu a afirmação correta sobre tipos e diagnóstico; o TARO 2019, o que se comprime na PAGET-SCHROETTER; o TECOC, a que corresponde a mão de GILLIATT-SUMNER; o TARO 2014, a luxação associada ao desfiladeiro; o simulado do SIMÃO 2026, o caso clínico da forma eletricamente negativa.
+como: A USP-SP 2024 pediu a afirmação correta sobre tipos e diagnóstico; o TARO 2019, o que se comprime na PAGET-SCHROETTER; o TECOC, a que corresponde a mão de GILLIATT-SUMNER; o TARO 2014, a luxação associada ao desfiladeiro; o simulado do simulado da prova de título de cirurgia da mão de 2026, o caso clínico da forma eletricamente negativa.
 armadilha: Achar que a forma arterial é a mais comum, que a verdadeira é a regra ou que a PAGET-SCHROETTER comprime a artéria.
 alerta: O Green 7 não usa o nome mão de GILLIATT-SUMNER (`mao-0425`) e fala em atrofia hipotenar e intrínseca (cap. 29, p. 960); a descrição clássica é de atrofia tenar com perda sensitiva ulnar, e o gabarito oficial foi preservado.
 !fim
@@ -846,7 +846,7 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 29, Fig. 29.6, p. 96
 
 Os limites são três: **anterior, o escaleno anterior**; **posterior, o escaleno médio**; **inferior, a primeira costela** (p. 963). O conteúdo é o que decide muitas questões: **o plexo e a artéria subclávia** passam juntos entre os dois escalenos, enquanto **a veia subclávia passa à frente do escaleno anterior**, logo abaixo e lateral ao ligamento costocoracoide. Por isso a compressão interescalênica dá sintomas **neurológicos** e **arteriais**, mas **não venosos**; a veia se comprime mais adiante, no espaço costoclavicular.
 
-As origens dos escalenos são outra pergunta de anatomia pura que a SBCM passou a fazer: o **escaleno anterior** nasce dos **tubérculos anteriores** dos processos transversos de **C3 a C6**; o **escaleno médio**, dos **tubérculos posteriores** de **C2 a C7** (p. 963). Uma forma de lembrar: o anterior fica na frente (tubérculos anteriores) e é mais curto (quatro vértebras); o médio fica atrás (tubérculos posteriores) e é mais longo (seis vértebras). As raízes do plexo saem justamente no sulco entre os dois tubérculos, e é por isso que ficam entre os dois músculos.
+As origens dos escalenos são outra pergunta de anatomia pura que a prova de título passou a fazer: o **escaleno anterior** nasce dos **tubérculos anteriores** dos processos transversos de **C3 a C6**; o **escaleno médio**, dos **tubérculos posteriores** de **C2 a C7** (p. 963). Uma forma de lembrar: o anterior fica na frente (tubérculos anteriores) e é mais curto (quatro vértebras); o médio fica atrás (tubérculos posteriores) e é mais longo (seis vértebras). As raízes do plexo saem justamente no sulco entre os dois tubérculos, e é por isso que ficam entre os dois músculos.
 
 O triângulo se estreita de várias formas, e cada uma tem um mecanismo próprio (p. 963):
 
@@ -869,7 +869,7 @@ ROOS descreveu **9 tipos** de bandas fibrosas, e POITEVIN acrescentou **mais 3**
 
 O segundo espaço tem **parede anterior** formada pela **clavícula**, pelo **músculo subclávio** e pelo **ligamento costocoracoide**; parede **posteromedial**, a **primeira costela**; e parede **posterolateral**, a **borda superior da escápula** (Green 7, p. 964). É um estreitamento **fisiológico**: quando o braço se move, a clavícula desce em direção à costela, e a mobilidade das articulações nas duas pontas (esternoclavicular e acromioclavicular) aumenta esse movimento.
 
-Dois pontos de prova moram aqui. O primeiro é a **veia**: o **tendão hipertrofiado do subclávio** a comprime especificamente, e é por isso que a **PAGET-SCHROETTER** é uma doença do espaço costoclavicular, não do interescalênico. O segundo é o **ligamento costocoracoide** (ou coracocostal), que pode ser **maior que o coracoacromial** e comprimir o plexo contra a parede torácica (Fig. 29.23, p. 974). A SBCM 2025 cobrou a parede anterior do espaço citando o Green 8 (p. 1129); o fato confere com o Green 7.
+Dois pontos de prova moram aqui. O primeiro é a **veia**: o **tendão hipertrofiado do subclávio** a comprime especificamente, e é por isso que a **PAGET-SCHROETTER** é uma doença do espaço costoclavicular, não do interescalênico. O segundo é o **ligamento costocoracoide** (ou coracocostal), que pode ser **maior que o coracoacromial** e comprimir o plexo contra a parede torácica (Fig. 29.23, p. 974). A prova de título de 2025 cobrou a parede anterior do espaço citando o Green 8 (p. 1129); o fato confere com o Green 7.
 
 ## Espaço subcoracoide
 
@@ -887,7 +887,7 @@ Por fim, o capítulo lembra que o desfiladeiro não é só anatomia congênita. 
 
 !questoes central=mao-0034 relacionadas=mao-0787,mao-1546,mao-0836,mao-1212 treino=mao-2227,mao-2140,mao-3631,mao-3635,mao-3639
 conceito: O triângulo interescalênico (escaleno anterior à frente, médio atrás, primeira costela embaixo) é o sítio mais comum e contém o plexo e a artéria; a veia passa à frente do escaleno anterior e se comprime no costoclavicular; a costela cervical existe em 0,5% a 0,6% e é bilateral em 50% a 80%; na via transaxilar, a anomalia mais achada é a dos escalenos (43%).
-como: O TARO 2021 pediu um dos focos de compressão do plexo; a USP-SP 2026 e o INTO 2023, o local mais comum; o INTO 2026, a frequência e a bilateralidade da costela cervical; a PUC-SP 2023, a anomalia mais encontrada na série transaxilar; os simulados da SBCM, os limites do triângulo interescalênico e a passagem mais comprimida.
+como: O TARO 2021 pediu um dos focos de compressão do plexo; a USP-SP 2026 e o INTO 2023, o local mais comum; o INTO 2026, a frequência e a bilateralidade da costela cervical; a PUC-SP 2023, a anomalia mais encontrada na série transaxilar; os simulados da prova de título, os limites do triângulo interescalênico e a passagem mais comprimida.
 armadilha: Escolher o espaço costoclavicular como o mais comum, pôr a veia subclávia entre os escalenos ou achar que a costela cervical é a anomalia mais achada na cirurgia.
 alerta: Em `mao-1212`, pelo Green 7 (cap. 29, p. 962) a resposta é a anomalia dos escalenos (43%), seguida do tendão do subclávio, do escaleno mínimo e, por último, da costela cervical.
 !fim
@@ -1075,7 +1075,7 @@ A causa mais comum de recorrência é a **cicatriz em volta do plexo** ou um **s
 | Segunda anomalia na série transaxilar | Material de curso: "seguida de costela cervical" | Escalenos 43%, **subclávio 19,5%**, escaleno mínimo 10%, costela cervical 8,5% (p. 962) | A costela cervical é a última das quatro |
 | Nervo de amplitude alterada cedo | Material de curso: ulnar | **Cutâneo medial do antebraço** ou SNAP distal; EMG dos intrínsecos talvez antes (p. 968) | Cutâneo medial do antebraço |
 | Nome do teste | Provas: "Ross" | **ROOS** (p. 966 e 967) | Mesmo teste |
-| Páginas citadas pela SBCM 2025 | Green 8 (p. 1129 e 1131) | Mesmos fatos nas p. 963 e 964 | Gabaritos conferem |
+| Páginas citadas pela prova de título de 2025 | Green 8 (p. 1129 e 1131) | Mesmos fatos nas p. 963 e 964 | Gabaritos conferem |
 | Conduta na forma verdadeira | Conservador como primeira linha de toda forma neurogênica (p. 968) | Conclusão: considerar cirurgia cedo na eletricamente positiva e na vascular (p. 976) | Verdadeira e vascular: operar cedo |
 | ROOS "específico" | Algumas provas: mais sensível e específico | Mais **sensível e reprodutível**; não o chama de específico (p. 966 e 967) | Aceitar o ROOS como o melhor teste |
 !fim

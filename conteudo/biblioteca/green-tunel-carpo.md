@@ -112,7 +112,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3547, Fig. 82.6), avi
 
 !questoes central=mao-1593 relacionadas=mao-0713,mao-1095,mao-1157,mao-1210 treino=mao-2468,mao-2784,mao-2809,mao-2812,mao-2823
 conceito: O ramo motor sai, na maioria, extraligamentar e distal ao retináculo, e inerva abdutor curto, oponente e cabeça superficial do flexor curto; LANZ descreve também os trajetos subligamentar (31%) e transligamentar (23%).
-como: O SIMÃO 2021 pediu o padrão mais comum de LANZ; a USP-SP 2026 misturou teto, trajetos do ramo motor e órtese; o IAUPE 2025, o músculo do ramo recorrente; a PUC-SP 2023, a frequência do padrão transligamentar.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu o padrão mais comum de LANZ; a USP-SP 2026 misturou teto, trajetos do ramo motor e órtese; o IAUPE 2025, o músculo do ramo recorrente; a PUC-SP 2023, a frequência do padrão transligamentar.
 armadilha: Marcar extraligamentar proximal, chamar o retináculo extensor de teto, escolher o adutor do polegar ou trocar os 23% do transligamentar pelos 31% do subligamentar.
 alerta: `mao-1210` está sem gabarito oficial; o Green 7 (p. 930) dá 23% para o transligamentar, o que sustenta a alternativa D.
 !fim
@@ -185,11 +185,11 @@ Na prática, os autores examinam **todos os sítios**, de distal para proximal, 
 
 ## STC e desfiladeiro torácico
 
-O capítulo 29 do Green (Thoracic Outlet Compression Syndrome, p. 964) traz o número da SBCM e do SIMÃO: os defensores do duplo esmagamento descrevem **STC em 21% a 45% dos pacientes com desfiladeiro torácico**, **túnel cubital em até 10%** e, raramente, túnel radial, pronador e radiculopatia. Os críticos acham que são **erros de diagnóstico**. Todos concordam em tratar primeiro a compressão distal, mais simples e barata; a ENMG do desfiladeiro serve para **afastar compressão distal** (p. 968), e os testes do carpo vêm **antes** das manobras do desfiladeiro, que sensibilizam o paciente e contaminam o exame (p. 966). O Campbell's Operative Orthopaedics, 15ª ed. (Box 82.1, p. 3543), lista o duplo esmagamento entre as causas neuropáticas, e o HEBERT (cap. 7) chama a STC de **síndrome compressiva mais frequente do organismo**.
+O capítulo 29 do Green (Thoracic Outlet Compression Syndrome, p. 964) traz o número da prova de título e do simulado da prova de título de cirurgia da mão: os defensores do duplo esmagamento descrevem **STC em 21% a 45% dos pacientes com desfiladeiro torácico**, **túnel cubital em até 10%** e, raramente, túnel radial, pronador e radiculopatia. Os críticos acham que são **erros de diagnóstico**. Todos concordam em tratar primeiro a compressão distal, mais simples e barata; a ENMG do desfiladeiro serve para **afastar compressão distal** (p. 968), e os testes do carpo vêm **antes** das manobras do desfiladeiro, que sensibilizam o paciente e contaminam o exame (p. 966). O Campbell's Operative Orthopaedics, 15ª ed. (Box 82.1, p. 3543), lista o duplo esmagamento entre as causas neuropáticas, e o HEBERT (cap. 7) chama a STC de **síndrome compressiva mais frequente do organismo**.
 
 !questoes central=mao-1228 treino=mao-1976,mao-2068
 conceito: No duplo esmagamento, a compressão proximal reduz o fluxo axoplasmático e deixa o nervo vulnerável distalmente; no desfiladeiro, a compressão distal mais associada é a STC (21% a 45%).
-como: O SIMÃO 2023 e a SBCM 2024 perguntaram a neuropatia distal mais associada ao desfiladeiro; a UERJ 2025 pediu a teoria e sua hipótese, a compressão mais comum e o conteúdo do túnel.
+como: O simulado da prova de título de cirurgia da mão de 2023 e a prova de título de 2024 perguntaram a neuropatia distal mais associada ao desfiladeiro; a UERJ 2025 pediu a teoria e sua hipótese, a compressão mais comum e o conteúdo do túnel.
 armadilha: Escolher o túnel cubital porque o desfiladeiro dá sintomas ulnares.
 alerta: `mao-1228` é discursiva, sem gabarito; os livros sustentam UPTON e McCOMAS com o fluxo axoplasmático (Green 7, p. 922), a STC como compressão mais comum (Green 7, p. 930; Campbell 15, p. 3542) e o conteúdo: mediano, flexor longo do polegar, quatro superficiais e quatro profundos (Green 7, p. 930).
 !fim
@@ -292,11 +292,11 @@ O **CTS-6** do Campbell (Tabela 82.1) soma história e exame; **12 pontos ou mai
 
 ## O teste de BERGER
 
-A SBCM 2024 perguntou o teste de BERGER, que nenhum dos três livros locais descreve. Pela própria alternativa correta da questão, é a **parestesia no território do mediano ao manter os dedos fletidos**, ideia que tem lógica anatômica: com os dedos fletidos, os **lumbricais**, que nascem dos tendões flexores profundos, **entram no túnel** e aumentam o seu conteúdo. É o mesmo raciocínio de "conteúdo maior" da tabela de fatores de risco.
+A prova de título de 2024 perguntou o teste de BERGER, que nenhum dos três livros locais descreve. Pela própria alternativa correta da questão, é a **parestesia no território do mediano ao manter os dedos fletidos**, ideia que tem lógica anatômica: com os dedos fletidos, os **lumbricais**, que nascem dos tendões flexores profundos, **entram no túnel** e aumentam o seu conteúdo. É o mesmo raciocínio de "conteúdo maior" da tabela de fatores de risco.
 
 !questoes central=mao-0296 relacionadas=mao-0396,mao-0656,mao-1256 treino=mao-2632
 conceito: DURKAN é a compressão direta do mediano no túnel por 30 segundos, mais sensível (87%) e mais específico (90%) que PHALEN e TINEL; entre estes, PHALEN é sensível e TINEL específico.
-como: A SBOT-SP descreveu o teste e pediu o nome, e perguntou o mais preciso na fase inicial; o TARO 2008, o de maior sensibilidade e especificidade; a SES-DF 2022 julgou o PHALEN como o mais sensível e específico; a SBCM 2024, o que é o teste de BERGER.
+como: A SBOT-SP descreveu o teste e pediu o nome, e perguntou o mais preciso na fase inicial; o TARO 2008, o de maior sensibilidade e especificidade; a SES-DF 2022 julgou o PHALEN como o mais sensível e específico; a prova de título de 2024, o que é o teste de BERGER.
 armadilha: Confundir DURKAN com TINEL ou dar ao PHALEN a melhor especificidade.
 alerta: `mao-0656` está sem gabarito; o Campbell 15 (p. 3542) sustenta DURKAN (C). Em `mao-0396`, o gabarito segue o Campbell; o Green 7 (p. 927 e 928) valoriza os limiares, como o SEMMES-WEINSTEIN, para as alterações precoces. O teste de BERGER de `mao-2632` não está nos livros locais; o gabarito se apoia no raciocínio da entrada dos lumbricais no túnel com os dedos fletidos.
 !fim
@@ -343,7 +343,7 @@ armadilha: Achar que os dois pontos são o teste precoce, ou que o TINEL é sens
 
 ## O que a condução vê e o que ela não vê
 
-O Green's Operative Hand Surgery, 7ª ed. (cap. 28, p. 928), avisa que a ENMG **não substitui o exame clínico**. A condução **avalia só as fibras grossas mielinizadas**: motoras e sensitivas de **vibração e tato leve**, **não** as finas de **dor e temperatura**. A latência mede as fibras **mais bem mielinizadas** e pode ser normal com muitas fibras doentes; as primeiras alterações da compressão crônica ocorrem nas **não mielinizadas**, que o exame não vê, e a **isquemia dinâmica** também não aparece. Por isso a dor e a parestesia iniciais escapam, e uma ENMG normal não exclui STC inicial. Esta é a resposta do SIMÃO: **fibras grossas, de sensibilidade vibratória**.
+O Green's Operative Hand Surgery, 7ª ed. (cap. 28, p. 928), avisa que a ENMG **não substitui o exame clínico**. A condução **avalia só as fibras grossas mielinizadas**: motoras e sensitivas de **vibração e tato leve**, **não** as finas de **dor e temperatura**. A latência mede as fibras **mais bem mielinizadas** e pode ser normal com muitas fibras doentes; as primeiras alterações da compressão crônica ocorrem nas **não mielinizadas**, que o exame não vê, e a **isquemia dinâmica** também não aparece. Por isso a dor e a parestesia iniciais escapam, e uma ENMG normal não exclui STC inicial. Esta é a resposta do simulado da prova de título de cirurgia da mão: **fibras grossas, de sensibilidade vibratória**.
 
 A progressão elétrica da STC segue a histológica (p. 929 e 930): na fase isquêmica, **ENMG normal**; depois, **desmielinização focal**, com **latência prolongada** através do punho; mais tarde, perda axonal, em que o **SNAP cai antes do CMAP** e, por fim, aparecem **fibrilações** e recrutamento reduzido. A desmielinização focal é o achado típico na **maioria** das STC (p. 930). Os parâmetros gerais da eletromiografia (fibrilação após 2 semanas como sinal mais precoce de desnervação, amplitude como número de axônios) estão no outro resumo do capítulo. JABLECKI e colaboradores fizeram a revisão de referência sobre a utilidade desses estudos na STC (Muscle Nerve 16:1392-1414, 1993), citada pelo Green.
 
@@ -368,7 +368,7 @@ Há divergência de ênfase. O Green (p. 930 e 935) usa a ENMG para **estadiar**
 
 !questoes treino=mao-1972
 conceito: A condução avalia só fibras grossas mielinizadas, motoras e sensitivas de vibração e tato; finas de dor e temperatura escapam.
-como: O SIMÃO 2023 perguntou quais fibras o eletrodiagnóstico avalia na STC.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou quais fibras o eletrodiagnóstico avalia na STC.
 armadilha: Escolher as fibras finas, que adoecem primeiro mas não aparecem no exame.
 !fim
 
@@ -404,7 +404,7 @@ O Campbell (Box 82.3) prevê falha do conservador com **três ou mais**: **idade
 
 !questoes central=mao-1384 relacionadas=mao-0178 treino=mao-2315,mao-2761
 conceito: A órtese da STC é noturna e em neutro, porque a pressão sobe na extensão e na flexão; a infiltração alivia por pouco tempo e prevê bom resultado cirúrgico.
-como: A USP-SP 2025 pediu posição e período; o SIMÃO 2024, a posição mais eficaz da tala noturna; o TARO 2023, o grupo com resposta mais rápida à infiltração.
+como: A USP-SP 2025 pediu posição e período; o simulado da prova de título de cirurgia da mão de 2024, a posição mais eficaz da tala noturna; o TARO 2023, o grupo com resposta mais rápida à infiltração.
 armadilha: Escolher 30 graus de extensão, a posição das órteses prontas, ou uso diurno e noturno.
 alerta: Em `mao-0178`, os livros locais não comparam a resposta à infiltração por sexo e idade; o gabarito (masculino acima de 40 anos) foi mantido sem confirmação.
 !fim
@@ -469,7 +469,7 @@ Quando entra a tenossinovectomia? O Campbell (técnica 82.2, passo 9, p. 3547): 
 
 !questoes central=mao-0863 treino=mao-2421
 conceito: Na primária não se faz neurólise, epineurotomia nem sinovectomia de rotina; a tenossinovectomia entra na AR e na suspeita de amiloidose; o ramo motor sai distal ao ligamento e é recorrente.
-como: O SIMÃO 2022 perguntou em quem fazer tenossinovectomia para biópsia; a UFG 2017 misturou cutâneo palmar, ramo motor, epineurotomia e sinovectomia.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou em quem fazer tenossinovectomia para biópsia; a UFG 2017 misturou cutâneo palmar, ramo motor, epineurotomia e sinovectomia.
 armadilha: Achar que a epineurotomia ajuda os graves ou que a sinovectomia evita recidiva.
 alerta: Em `mao-2421`, a indicação na AR e na amiloidose está no Campbell 15 (p. 3547); o Green 7 local nega a sinovectomia na primária (p. 935) e trata a amiloidose com desbridamento (cap. 56, p. 1906), sem citar biópsia; a frase do enunciado vem de outra edição. Em `mao-0863`, a alternativa A erra o lado: o cutâneo palmar é ulnar ao FRC (Green 7, p. 932).
 !fim
@@ -542,7 +542,7 @@ O capítulo 31 (p. 1026) conta a história que a prova do Einstein usou. A **pol
 
 !questoes central=mao-1014 relacionadas=mao-0472 treino=mao-2142,mao-2780
 conceito: CAMITZ alonga o palmar longo com aponeurose palmar até o abdutor curto; restaura a abdução palmar na sequela grave da STC, no mesmo tempo da liberação; COOK usou o extensor do mínimo.
-como: A SBCM 2022 perguntou a melhor indicação; a UFG 2021, a estrutura usada; o Einstein 2026, a afirmação correta sobre a história das oponentoplastias.
+como: A prova de título de 2022 perguntou a melhor indicação; a UFG 2021, a estrutura usada; o Einstein 2026, a afirmação correta sobre a história das oponentoplastias.
 armadilha: Indicar CAMITZ na lesão traumática do mediano, em que o palmar longo e a pele estão cicatrizados, ou atribuir a STEINDLER o flexor profundo do indicador.
 !fim
 
@@ -632,7 +632,7 @@ Na **gestação**, o Campbell (Box 82.1) fala em alteração do balanço hídric
 
 !questoes treino=mao-1807,mao-1967
 conceito: Na AR, tenossinovite volumosa pede liberação aberta com tenossinovectomia flexora; o quadro leve sem tenossinovite começa com órtese e medidas conservadoras.
-como: O SIMÃO 2026 usou SHINODA para perguntar a conduta na STC moderada com tenossinovite volumosa; o SIMÃO 2023, o tratamento do quadro leve sem tenossinovite.
+como: O simulado da prova de título de cirurgia da mão de 2026 usou SHINODA para perguntar a conduta na STC moderada com tenossinovite volumosa; o simulado da prova de título de cirurgia da mão de 2023, o tratamento do quadro leve sem tenossinovite.
 armadilha: Escolher a endoscopia, contraindicada quando há tenossinovectomia, ou a tenossinovectomia sem abrir o ligamento.
 alerta: A classificação de SHINODA não está nos livros locais; os gabaritos de `mao-1807` e `mao-1967` se apoiam no raciocínio do Campbell 15 (cap. 78, p. 3492; Fig. 82.1 e Box 82.5).
 !fim

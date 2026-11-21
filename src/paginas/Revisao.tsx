@@ -3,6 +3,7 @@
  * [x] calendário; [x] quatro famílias de conquistas; [x] teto e folgas; [x] escadas e atalhos;
  * [x] carregamento. Extensões: modo leve, prévia, análise, fila detalhada e recuperação ativa. */
 import { useEffect, useMemo, useState } from "react";
+import { rotuloProva } from "../config"
 import { usarIndice } from "../dados/usarIndice";
 import { usarContextoLocal } from "../estado/usarContextoLocal";
 import {
@@ -716,7 +717,7 @@ export function Revisao() {
               >
                 <option value="">Todas as provas</option>
                 {provas.map((p) => (
-                  <option key={p}>{p}</option>
+                  <option key={p} value={p}>{rotuloProva(p)}</option>
                 ))}
                 <option value="__simulados">OrtoQuestões Simulados</option>
               </select>
@@ -1185,7 +1186,7 @@ export function Revisao() {
                           {tema.nome} ·{" "}
                           {q.p === null
                             ? "OrtoQuestões Simulados"
-                            : indice.provas[q.p]}{" "}
+                            : rotuloProva(indice.provas[q.p])}{" "}
                           {q.a ?? ""}
                         </small>
                         <h3>

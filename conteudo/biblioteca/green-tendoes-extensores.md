@@ -32,7 +32,7 @@ Quem entende esses quatro pontos acerta a maioria das questões sem decorar: por
 
 ## Os blocos que a banca cobra
 
-A análise das provas oficiais deste capítulo (SBCM e SIMÃO, além de TARO, TEOT, PUC-SP, USP-SP, UFG e outras) mostra uma distribuição estável:
+A análise das provas oficiais deste capítulo (prova de título e simulado da prova de título de cirurgia da mão, além de TARO, TEOT, PUC-SP, USP-SP, UFG e outras) mostra uma distribuição estável:
 
 - **Classificações e estágios** (DOYLE do martelo, BURTON da botoeira crônica, CURTIS, RAYAN e MURRAY da banda sagital), cerca de 40% das questões.
 - **Epônimos e testes** (ELSON, BOYES, FOWLER, DOLPHIN, SNOW, AIACHE, MATEV, LANDSMEER), cerca de 25%.
@@ -176,7 +176,7 @@ Além de transmitir a extensão, as bandas sagitais **centralizam o EDC** sobre 
 
 Os tendões dos **lumbricais e interósseos** formam as **bandas laterais**, que se juntam ao aparelho no terço proximal da falange proximal (a Fig. 5.5 fala em porção proximal e média). Como passam **volares ao eixo da MF** e **dorsais ao eixo das interfalângicas**, os intrínsecos fletem a MF e estendem a IFP e a IFD ao mesmo tempo. Proximal à IFP, o EDC **trifurca**: o ramo central vira a **banda central** (tira central), que se insere na base dorsal da falange média, e os ramos laterais se unem às bandas laterais. Sobre a falange média, as bandas laterais convergem no **tendão terminal**, que se insere na base da falange distal (Green, p. 154).
 
-O **lumbrical** merece uma frase à parte. Ele nasce no tendão do flexor profundo (FDP) e se insere na banda lateral radial; por isso, além de fletir a MF e estender as IF, ele **contrai também durante a extensão do dedo** e, ao puxar a própria origem distalmente, **relaxa o FDP**, tirando o freio flexor que se oporia à extensão (Green, p. 154). WHILLIS e CHANNELL (J Anat, 1949) já descreviam essa ação. É um músculo que liga um tendão flexor a um extensor, e a questão do SIMÃO cobrou exatamente esse efeito.
+O **lumbrical** merece uma frase à parte. Ele nasce no tendão do flexor profundo (FDP) e se insere na banda lateral radial; por isso, além de fletir a MF e estender as IF, ele **contrai também durante a extensão do dedo** e, ao puxar a própria origem distalmente, **relaxa o FDP**, tirando o freio flexor que se oporia à extensão (Green, p. 154). WHILLIS e CHANNELL (J Anat, 1949) já descreviam essa ação. É um músculo que liga um tendão flexor a um extensor, e a questão do simulado da prova de título de cirurgia da mão cobrou exatamente esse efeito.
 
 A **matriz germinativa** da unha começa cerca de **1,2 mm distal** à inserção do terminal (SHUM e colaboradores, J Hand Surg Am, 2000; Green, p. 154). O número importa ao operar o martelo: um fio, uma âncora ou uma sutura transóssea colocados logo abaixo da inserção ficam a um milímetro de deixar uma unha deformada para sempre.
 
@@ -203,7 +203,7 @@ A Fig. 5.8 (p. 157) desenha isso em seis painéis, e é a figura mais importante
 | banda central rota, IFP fletida | a IFD **estende com força** | sem a âncora central, o aparelho migra proximal e a folga desaparece |
 !fim
 
-A última linha é a base do teste de ELSON, e a penúltima é a resposta da questão do SIMÃO que perguntou o que acontece com a IFD num dedo normal com a IFP fletida ao máximo.
+A última linha é a base do teste de ELSON, e a penúltima é a resposta da questão do simulado da prova de título de cirurgia da mão que perguntou o que acontece com a IFD num dedo normal com a IFP fletida ao máximo.
 
 ## Na falange média: os dois ligamentos que seguram as bandas
 
@@ -321,7 +321,7 @@ Esses números explicam três coisas de uma vez: por que o martelo deixa défici
 
 !questoes treino=mao-2446,mao-3023
 conceito: O alongamento de 1 mm do tendão terminal custa cerca de 25 graus de queda da IFD; 0,5 mm custa cerca de 10 graus.
-como: O SIMÃO 2022 perguntou o déficit produzido por 1 mm de alongamento do terminal.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou o déficit produzido por 1 mm de alongamento do terminal.
 armadilha: Confundir com os 12 graus por milímetro sobre a falange proximal, que se referem à IFP.
 !fim
 
@@ -470,7 +470,7 @@ Quem tem martelo? HALLBERG e LINDHOLM (Acta Chir Scand, 1960) descreveram o perf
 
 !questoes treino=mao-2301,mao-3007,mao-3009,mao-3013,mao-3015,mao-3018
 conceito: O martelo é mais frequente em homens, no mínimo, no anular e no médio da mão dominante; o tendíneo aparece a partir dos 11 anos, e antes disso o equivalente é a fratura transepifisária.
-como: O SIMÃO 2024 perguntou a partir de que idade o martelo tendíneo é descrito.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou a partir de que idade o martelo tendíneo é descrito.
 armadilha: Achar que o indicador é o dedo típico ou que a criança pequena faz martelo tendíneo.
 !fim
 
@@ -640,7 +640,7 @@ A manobra que separa as causas (Fig. 5.18, p. 168) é **bloquear a hiperextensã
 
 !questoes treino=mao-1941,mao-3028,mao-3034
 conceito: O pescoço de cisne secundário ao martelo exige IFP capaz de hiperestender (placa volar frouxa) e tensão extra na central pelo terminal alongado; bloquear a hiperextensão da IFP separa as causas.
-como: O SIMÃO 2023 perguntou qual deformidade pode surgir secundariamente ao martelo.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou qual deformidade pode surgir secundariamente ao martelo.
 armadilha: Responder botoeira; a botoeira vem da zona 3, e o martelo leva ao pescoço de cisne.
 !fim
 
@@ -666,7 +666,7 @@ Sobre a falange média estão as bandas laterais e o triangular. **Uma banda lat
 
 !questoes treino=mao-2410
 conceito: Na zona 2, lesão de uma banda lateral ou de até 50% do aparelho não se sutura: curativo e movimento; acima de 50%, contínua 5-0 com cross-stitch e tala da IFD por 6 semanas.
-como: O SIMÃO 2022 deu um corte que atinge só uma banda lateral e pediu a conduta.
+como: O simulado da prova de título de cirurgia da mão de 2022 deu um corte que atinge só uma banda lateral e pediu a conduta.
 armadilha: Suturar tudo com núcleo de KESSLER ou imobilizar a IFP.
 !fim
 
@@ -769,7 +769,7 @@ Os **sete princípios de BURTON** organizam a decisão (p. 172):
 
 !questoes treino=mao-1938,mao-2189,mao-2993,mao-2997,mao-3001,mao-3006,mao-3019,mao-3025
 conceito: BURTON: I flexível; II contratura fixa com bandas laterais contraídas; III fibrose articular com colaterais e placa volar contraídos; IV artrose. Todo procedimento rebalanceia, tirando tônus da IFD para a IFP.
-como: O SIMÃO 2023 e o SBCM 2023 perguntaram o estágio da botoeira com contratura fixa e retração das bandas laterais.
+como: O simulado da prova de título de cirurgia da mão de 2023 e a prova de título de 2023 perguntaram o estágio da botoeira com contratura fixa e retração das bandas laterais.
 armadilha: Trocar o II pelo III: bandas contraídas é II; fibrose de colaterais e placa volar é III; artrose é IV.
 !fim
 
@@ -971,7 +971,7 @@ A zona 9, acrescentada por DOYLE, é a dos **ventres musculares** na metade prox
 
 !questoes treino=mao-2470
 conceito: Zona 8 é a junção musculotendínea, onde a sutura segura mal; as rupturas fechadas são raras e atingem mais o EDC do médio e do anular; a zona 9 é a dos ventres, com enxerto se dois ou mais ventres têm 50% ou mais de laceração.
-como: O SIMÃO 2021 perguntou os tendões mais lesados na zona 8.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou os tendões mais lesados na zona 8.
 armadilha: Confundir a zona 8 com a 7 (retináculo) ou achar que a sutura muscular segura como a tendínea.
 !fim
 

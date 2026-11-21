@@ -17,7 +17,7 @@ resumo: Mão em mais de 80% das queimaduras graves e lesão maior para a America
 
 Este resumo nasce do capítulo 57 do Green's Operative Hand Surgery, 7ª edição (2017), escrito pelo grupo de Günter GERMANN, de Ludwigshafen e Heidelberg. A marca desse grupo aparece no texto inteiro: cada etapa vem com um algoritmo de decisão (as Figs. 57.2, 57.16 e 57.17 saem do livro "Decision making in reconstructive surgery on the upper extremity", de GERMANN, SHERMAN e LEVIN, de 1999). Isso ajuda muito o aluno, porque o capítulo não é uma lista de técnicas: é uma sequência de perguntas. Qual a profundidade? A perfusão está ameaçada? Opera ou não opera? Enxerto ou retalho? Pele ou articulação?
 
-As páginas citadas são as impressas do Green 7. Algumas questões de prova (SBCM 2025) citaram o Green 8; o conteúdo cobrado é o mesmo, e aqui ficam as páginas da 7ª edição.
+As páginas citadas são as impressas do Green 7. Algumas questões de prova (prova de título de 2025) citaram o Green 8; o conteúdo cobrado é o mesmo, e aqui ficam as páginas da 7ª edição.
 
 Uma ressalva importante antes de começar. O capítulo trata da **mão** queimada. Ele não ensina reposição volêmica, regra dos nove, lesão inalatória nem metabolismo do grande queimado. Só que as provas de cirurgia da mão (USP-SP, ENARE, FMRP) cobram tudo isso com frequência, porque o candidato vai atender a mão dentro de um paciente queimado. Por isso este resumo tem uma seção própria para o grande queimado, construída com o ATLS 11ª ed. (2025), que as bancas citam pelo nome, e com artigos abertos, sempre identificados.
 
@@ -476,7 +476,7 @@ O tratamento é a **excisão completa** da cicatriz com mobilização das articu
 
 !questoes treino=mao-2393
 conceito: A lesão térmica da mão quase sempre se limita à pele, e o problema tardio mais comum é a contratura dorsal, com MF em hiperextensão e flexão limitada; trata-se com excisão e enxerto total.
-como: O simulado do SIMÃO 2022 perguntou o problema mais comum depois da queimadura da mão.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 perguntou o problema mais comum depois da queimadura da mão.
 armadilha: Marcar a contratura palmar ou lesão de tendões, esquecendo que a palma é protegida e que as estruturas profundas costumam escapar.
 !fim
 
@@ -537,7 +537,7 @@ O raciocínio do tipo III é o mais cobrado: liberar pele e cápsula não devolv
 
 !questoes treino=mao-1737
 conceito: KURTZMAN e STERN separa a contratura em flexão do dedo em I (pele), II (cápsula palmar) e III (partes moles e articulação, IFP fixa); o tipo III tem cartilagem destruída e costuma ir para artrodese.
-como: O simulado do SIMÃO 2026 pediu o que define o tipo mais grave e o que ele exige além da liberação.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 pediu o que define o tipo mais grave e o que ele exige além da liberação.
 armadilha: Inventar um tipo IV ou parar na capsulotomia, que é a conduta do tipo II.
 !fim
 
@@ -680,7 +680,7 @@ Alguns agentes têm particularidades que a banca cobra uma a uma (p. 1950 e 1951
 - **Fenol** (limpeza, cosméticos, plásticos). Não é hidrossolúvel e é absorvido rápido: remove-se com **glicerol ou polietilenoglicol**, cobre-se com óleo e não se usa álcool. A absorção sistêmica produzia o histórico "marasmo fenólico".
 - **Cimento** (álcali: cal, óxido de cálcio, pH até 12,9). **Não dói** no início, por isso o paciente fica horas ajoelhado ou com a mão no cimento sem perceber; termina em queimadura de espessura total de cura lenta. Água e sabão.
 - **Fósforo branco**. É lipossolúvel: **óleo tópico aumenta a absorção** e deve ser evitado. Água e retirada das partículas; o **sulfato de cobre** (0,05% a 1%) serve para identificar as partículas, que escurecem.
-- **Ácido crômico**. Neutraliza-se com **solução de hipoclorito de sódio tamponada com fosfato**. É o "quadrinho do Green" que a SBCM cobrou.
+- **Ácido crômico**. Neutraliza-se com **solução de hipoclorito de sódio tamponada com fosfato**. É o "quadrinho do Green" que a prova de título cobrou.
 - **Soda cáustica e lixívia** (limpa-forno): liquefação, saponificação, desidratação; água.
 - **Ácido clorídrico** (limpa-piscina) e **muriático** (limpa-vaso): úlcera rasa com escara coagulada ou escara dura e úlcera indolente; água (o clorídrico ainda aceita óxido de magnésio e sabão).
 - **Hipoclorito de sódio** (alvejante): coagulação de proteínas; água.
@@ -702,7 +702,7 @@ O algoritmo da Fig. 57.29 continua depois da neutralização: definir a profundi
 
 !questoes treino=mao-2182,mao-2271,mao-3574
 conceito: O ácido fluorídrico causa dor desproporcional e penetra onde falta estrato córneo; depois da água, trata-se com injeção subdérmica de gluconato de cálcio a 10% ao redor da lesão, que liga o íon flúor.
-como: Os simulados da SBCM 2022 e da SBCM 2023 perguntam qual agente é tratado com gluconato de cálcio a 10%.
+como: Os simulados da prova de título de 2022 e da prova de título de 2023 perguntam qual agente é tratado com gluconato de cálcio a 10%.
 armadilha: Atribuir o gluconato ao fenol (polietilenoglicol), ao fósforo branco (água e retirada das partículas) ou ao cimento (água e sabão).
 !fim
 

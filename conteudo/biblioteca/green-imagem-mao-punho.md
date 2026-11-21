@@ -104,7 +104,7 @@ O capítulo 14 do Green (p. 500 e 501) faz uma observação que a banca transfor
 
 !questoes treino=mao-2465
 conceito: A variância ulnar aumenta na preensão e na pronação; a incidência em preensão com o antebraço pronado aumentou a variância em média 2,5 mm em pacientes com dor ulnar (Green, cap. 14, p. 500 e 501).
-como: O SIMÃO 2022 perguntou qual incidência o Green aponta como capaz de aumentar uma variância ulnar positiva, com supinação e desvio radial como distratores.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou qual incidência o Green aponta como capaz de aumentar uma variância ulnar positiva, com supinação e desvio radial como distratores.
 armadilha: Escolher a preensão em supinação: a supinação faz o contrário da pronação, e o ganho vem justamente da combinação preensão mais pronação.
 !fim
 
@@ -167,7 +167,7 @@ O Rockwood (cap. 44, seção Imaging and Other Diagnostic Studies for Carpal Fra
 
 !questoes treino=mao-2293
 conceito: No método original, divide-se a altura carpal (base do 3º metacarpo até a superfície articular do rádio, no eixo do 3º metacarpo) pelo comprimento do 3º metacarpo; normal 0,54 ± 0,03; a variante usa o comprimento do capitato (1,57 ± 0,05).
-como: O SIMÃO 2024 perguntou o que se divide pelo quê, com o inverso (metacarpo pela altura) e o capitato como distratores.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou o que se divide pelo quê, com o inverso (metacarpo pela altura) e o capitato como distratores.
 armadilha: Inverter numerador e denominador, ou confundir a variante do capitato (que é alternativa, não o método original).
 !fim
 
@@ -245,7 +245,7 @@ Quando a banca pergunta quais são as três medidas que o Green usa para dizer q
 
 !questoes treino=mao-2309
 conceito: As três medidas tradicionais do desvio do rádio distal no Green são inclinação dorsal ou volar, inclinação radial e variância ulnar; o alinhamento coronal (coronal shift) é avaliado ao lado delas (Green, cap. 15, p. 520 e 522).
-como: O SIMÃO 2024 misturou as medidas clássicas com o ângulo da lágrima e a distância AP da faceta do semilunar nas alternativas.
+como: O simulado da prova de título de cirurgia da mão de 2024 misturou as medidas clássicas com o ângulo da lágrima e a distância AP da faceta do semilunar nas alternativas.
 armadilha: Achar que o ângulo da lágrima ou a distância AP substituem as três clássicas; elas complementam, avaliando a faceta do semilunar.
 !fim
 
@@ -272,7 +272,7 @@ O Rockwood (cap. 43, seção Imaging and Other Diagnostic Studies, Radiography) 
 
 !questoes treino=mao-2459,mao-2461
 conceito: A inclinação palmar é mais bem vista no perfil da faceta, com o feixe inclinado em sentido distal-proximal para tirar o estiloide de cima da faceta do semilunar; a lágrima forma 70° com a diáfise, a distância AP é de 18 a 20 mm e contornos concêntricos entre fossa e semilunar são o normal. Na fluoroscopia, o perfil inclinado conforme a inclinação radial perfila a superfície articular.
-como: O SIMÃO 2022 cobrou o perfil inclinado como afirmativa correta contra valores errados da lágrima (50°) e da distância AP (10 mm), e, em outra questão, como tirar o estiloide de cima da fossa do semilunar na fluoroscopia (levantar a mão da mesa 20 a 30°).
+como: O simulado da prova de título de cirurgia da mão de 2022 cobrou o perfil inclinado como afirmativa correta contra valores errados da lágrima (50°) e da distância AP (10 mm), e, em outra questão, como tirar o estiloide de cima da fossa do semilunar na fluoroscopia (levantar a mão da mesa 20 a 30°).
 armadilha: Achar que contornos concêntricos indicam fratura (é o contrário: a perda da concentricidade sugere split sagital); trocar 70° por 50° ou 20 mm por 10 mm.
 alerta: Em `mao-2459`, o gabarito fala em 10 a 30°; o Green 7ª ed. (p. 520) escreve 10 a 15° (cerca de 15° na legenda da Fig. 15.7). Em `mao-2461`, o Green 7ª ed. não descreve a manobra; o Rockwood descreve o perfil com o arco em C ajustado à inclinação radial (22 a 23°), compatível com o gabarito C.
 !fim
@@ -287,7 +287,7 @@ O fragmento correspondente, o **volar-ulnar ou da lágrima**, é a **metade vola
 
 !questoes central=mao-1489 treino=mao-2041,mao-2310,mao-1958
 conceito: A lágrima, no perfil, é a projeção volar da faceta do semilunar do rádio, contraforte contra a subluxação palmar do semilunar e do carpo; o radiolunar curto nasce dessa margem anteromedial (Green, cap. 15, p. 520, e cap. 13, p. 420).
-como: A USP-SP 2024 e o SBCM 2024 pediram o que a lágrima representa (faceta do semilunar, volar, contra faceta do escafoide ou porção dorsal); o SIMÃO 2024 a deu como afirmativa correta (projeção volar e suporte mecânico nas cominutivas) contra SOONG para o extensor longo do polegar; o SIMÃO 2023 pediu a faceta e o ligamento ligado a ela.
+como: A USP-SP 2024 e a prova de título de 2024 pediram o que a lágrima representa (faceta do semilunar, volar, contra faceta do escafoide ou porção dorsal); o simulado da prova de título de cirurgia da mão de 2024 a deu como afirmativa correta (projeção volar e suporte mecânico nas cominutivas) contra SOONG para o extensor longo do polegar; o simulado da prova de título de cirurgia da mão de 2023 pediu a faceta e o ligamento ligado a ela.
 armadilha: Trocar faceta do semilunar por faceta do escafoide, volar por dorsal, ou radiolunar curto por longo (o longo nasce da margem anterolateral, como o RSC).
 alerta: Em `mao-1958`, o Green não liga o ligamento à lágrima com essas palavras; a ligação sai da origem anteromedial do radiolunar curto (p. 420), na borda volar da faceta do semilunar, o que sustenta o gabarito B. Em `mao-2310`, a ficha não traz o tratamento da fratura do estiloide (chofer) nem a conduta nas lesões radioulnares tipo II.
 !fim
@@ -303,7 +303,7 @@ O Rockwood (cap. 43, seção Imaging and Other Diagnostic Studies, Radiography) 
 
 !questoes treino=mao-2042
 conceito: O ângulo da lágrima normal é de 70°; aumenta quando o fragmento marginal volar desvia para anterior e diminui com a rotação dorsal ou a impacção (Green, cap. 15, p. 520 e Fig. 15.8; Rockwood, cap. 43).
-como: O SBCM 2024 perguntou como fica o ângulo com o fragmento da borda volar desviado para anterior: abaixo de 45 ou de 50°, entre 60 e 70°, ou acima de 70°.
+como: A prova de título de 2024 perguntou como fica o ângulo com o fragmento da borda volar desviado para anterior: abaixo de 45 ou de 50°, entre 60 e 70°, ou acima de 70°.
 armadilha: Marcar abaixo de 45° por lembrar do número do Rockwood; esse corte é o da faceta deprimida com gap e degrau, não o do fragmento volar desviado.
 !fim
 
@@ -317,7 +317,7 @@ A **profundidade da cavidade articular** é a perpendicular da linha da distânc
 
 !questoes treino=mao-1778
 conceito: Distância AP maior que a do outro lado e perda da concentricidade entre a faceta do semilunar e o semilunar indicam split da faceta do semilunar, com fragmento volar que precisa de fixação direta para evitar a subluxação volar do carpo (Green, cap. 15, p. 520, 521 e 568, e eFigura 15.1).
-como: O SIMÃO 2026 descreveu o perfil de uma fratura articular com distância AP aumentada e concavidade da faceta que não acompanha o semilunar, contra impacção isolada da fossa do escafoide, inclinação dorsal extra-articular e coronal shift.
+como: O simulado da prova de título de cirurgia da mão de 2026 descreveu o perfil de uma fratura articular com distância AP aumentada e concavidade da faceta que não acompanha o semilunar, contra impacção isolada da fossa do escafoide, inclinação dorsal extra-articular e coronal shift.
 armadilha: Escolher o coronal shift: ele é uma translação radial vista no PA, e o enunciado descreve achados do perfil.
 !fim
 
@@ -367,7 +367,7 @@ O Green (cap. 16, p. 594) dá o número: **até 25% das fraturas do escafoide n�
 
 !questoes treino=mao-2046
 conceito: Até 25% das fraturas do escafoide não aparecem nas radiografias iniciais, porque o traço só aparece quando o feixe está no seu plano; toda suspeita é imobilizada e reavaliada (Green, cap. 16, p. 594).
-como: O SBCM 2024 deu quatro tetos (10, 15, 20 e 25%) para a proporção de fraturas ocultas nas radiografias iniciais.
+como: A prova de título de 2024 deu quatro tetos (10, 15, 20 e 25%) para a proporção de fraturas ocultas nas radiografias iniciais.
 armadilha: Marcar um valor menor por achar que a fratura oculta é rara; o Green escreve até 25%, o mesmo número que dá para a perissemilunar não reconhecida.
 !fim
 
@@ -407,7 +407,7 @@ Depois da fixação, duas incidências procuram o parafuso que furou a cortical 
 
 !questoes treino=mao-2545
 conceito: Para ver o parafuso que perfurou a cortical dorsal do polo proximal, as melhores incidências são as oblíquas estudadas por KIM (trabalho intitulado vista oblíqua pronada); o PA hiperpronado perfila a margem dorsorradial (Green, cap. 16, p. 599 e 602).
-como: O SIMÃO 2021 perguntou qual incidência mostra melhor a perfuração dorsal depois da fixação volar de fratura proximal, contra PA com desvio ulnar, perfil verdadeiro e oblíqua supinada.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou qual incidência mostra melhor a perfuração dorsal depois da fixação volar de fratura proximal, contra PA com desvio ulnar, perfil verdadeiro e oblíqua supinada.
 armadilha: Escolher a oblíqua supinada porque a legenda da Fig. 16.12 do Green usa essa palavra; a pronação é que traz a cortical dorsorradial para o perfil, e o título do trabalho citado fala em oblíqua pronada.
 alerta: Em `mao-2545`, a legenda da Fig. 16.12 do Green 7ª ed. diz oblíqua supinada, enquanto o trabalho citado (KIM, 2008) trata da oblíqua pronada; o valor de 60° não aparece nos trechos lidos. Gabarito C mantido.
 !fim
@@ -432,7 +432,7 @@ Exigir **ângulo radioescafoide acima de 60°** para o IIIB melhorou a reproduti
 
 !questoes treino=mao-1781
 conceito: LICHTMAN é radiográfica e mede o colapso do semilunar e do carpo (I a IV); a RM é o exame da vascularização, e a RM com contraste avalia melhor a viabilidade do que a sem contraste (Green, cap. 16, p. 592 e 641).
-como: O SIMÃO 2026 pediu o exame em que se baseiam LICHTMAN e SCHMITT e o que cada uma avalia, contra pares de RM sem contraste, artroscopia e TC.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu o exame em que se baseiam LICHTMAN e SCHMITT e o que cada uma avalia, contra pares de RM sem contraste, artroscopia e TC.
 armadilha: Achar que LICHTMAN é por RM porque o estágio I aparece na RM; a classificação é radiográfica, e a RM entra para ver a viabilidade.
 alerta: Em `mao-1781`, o Green 7ª ed. não descreve a classificação de SCHMITT; sustenta apenas que a RM com contraste avalia melhor a viabilidade (estudo de SCHMITT e colegas, no escafoide). Gabarito C mantido.
 !fim
@@ -482,7 +482,7 @@ O Green traz uma segunda descrição, no capítulo da artrose da mão (cap. 11, 
 
 !questoes central=mao-1068 relacionadas=mao-1492 treino=mao-1698,mao-2029
 conceito: BREWERTON: MF fletida a 65°, dorso dos dedos (falanges) apoiado no filme e feixe angulado 15° de ulnar para radial; perfila a cabeça do metacarpo e mostra fraturas da cabeça e avulsões do ligamento colateral (Green, cap. 7, p. 232, e cap. 8, p. 299 e 300; Rockwood, cap. 45). Descrita originalmente para a mão reumatoide; no capítulo da artrose, o Green dá MF fletidas 45 a 60° (cap. 11, p. 346).
-como: A PUC-SP 2019 cobrou a combinação 65° de flexão e 15° de ulnar para radial; a USP-SP 2024, o apoio da falange e o sentido do feixe; outra questão, só o sentido do feixe; o SBCM 2024, a lesão difícil de ver que a incidência mostra (avulsão do colateral).
+como: A PUC-SP 2019 cobrou a combinação 65° de flexão e 15° de ulnar para radial; a USP-SP 2024, o apoio da falange e o sentido do feixe; outra questão, só o sentido do feixe; a prova de título de 2024, a lesão difícil de ver que a incidência mostra (avulsão do colateral).
 armadilha: Trocar os números (15° de flexão e 65° de feixe), inverter o sentido (de radial para ulnar) ou apoiar o metacarpo na mesa.
 !fim
 
@@ -515,7 +515,7 @@ O próprio Green faz a ressalva: o sistema ajuda a descrever, mas **nunca mostro
 
 !questoes central=mao-0677 treino=mao-2034
 conceito: EATON: II com osteófitos de até 2 mm; III com estreitamento acentuado e osteófitos acima de 2 mm; IV quando a STT também tem artrose. A incidência de ROBERT é o PA verdadeiro da CMC do polegar; RM e TC raramente são necessárias (Green, cap. 11, p. 359).
-como: O SBCM 2024 descreveu estreitamento acentuado, osteófitos de 3 mm e STT preservada; a FMRP-USP 2026 perguntou o que basta para diagnosticar e estadiar a rizartrose.
+como: A prova de título de 2024 descreveu estreitamento acentuado, osteófitos de 3 mm e STT preservada; a FMRP-USP 2026 perguntou o que basta para diagnosticar e estadiar a rizartrose.
 armadilha: Marcar IV pelo estreitamento acentuado (o IV exige a STT acometida) ou II por esquecer que o corte do osteófito é 2 mm; na FMRP, achar que TC e RM são necessárias.
 !fim
 
@@ -531,7 +531,7 @@ O Green cita a avaliação radiográfica da artrite reumatoide por filmes de ref
 
 !questoes treino=mao-2053,mao-2349
 conceito: Lápis na xícara é a imagem da artrite psoriática: osteólise com afilamento do osso proximal e proliferação na margem do osso distal (Green, cap. 55, p. 1835); LARSEN, DALE e EEK graduam a destruição articular da artrite reumatoide por filmes de referência.
-como: O SBCM 2024 perguntou de qual artrite é característica a imagem em lápis na xícara; o SIMÃO 2024 pediu a correspondência correta de um grau da escala de LARSEN.
+como: A prova de título de 2024 perguntou de qual artrite é característica a imagem em lápis na xícara; o simulado da prova de título de cirurgia da mão de 2024 pediu a correspondência correta de um grau da escala de LARSEN.
 armadilha: Responder reumatoide porque ela também colapsa os dedos; o lápis na xícara com proliferação óssea marginal é da psoriática.
 alerta: Em `mao-2349`, os livros lidos não descrevem os graus de LARSEN, DALE e EEK (o Green só traz a referência, p. 1901); gabarito D mantido sem conferência no livro.
 !fim
@@ -556,7 +556,7 @@ O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 8), descreve a mes
 
 !questoes treino=mao-2095,mao-2394
 conceito: Na sequência de ossificação do carpo, o capitato é o primeiro e o pisiforme é o último (6 a 8 anos pelo Green; 9 a 10 anos pelo texto do Rockwood and Wilkins); um núcleo ainda ausente não deve ser lido como fratura ou agenesia.
-como: O SBCM 2024 perguntou qual osso aparece por último; o SIMÃO 2022, qual aparece mais tarde e pode ser confundido com fratura ou ausência.
+como: A prova de título de 2024 perguntou qual osso aparece por último; o simulado da prova de título de cirurgia da mão de 2022, qual aparece mais tarde e pode ser confundido com fratura ou ausência.
 armadilha: Escolher o escafoide, que demora e ossifica de distal para proximal (e por isso gera o pseudo-TERRY THOMAS), mas ainda aparece antes do pisiforme.
 !fim
 

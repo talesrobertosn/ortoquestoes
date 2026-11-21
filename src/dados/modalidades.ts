@@ -81,9 +81,9 @@ export const MODALIDADES: Modalidade[] = [
     entra: (q, prova) => (q.ar === 'mao' || (q.ar === 'enare' && !!q.aa?.includes('mao'))) && q.sim !== 1 && !ehTitulo(prova),
   },
   {
-    id: 'mao-titulo', nome: 'Título de Cirurgia da Mão: SBCM e SIMÃO', curto: 'Título da Mão', grupo: 'mao', area: 'mao',
-    descricao: 'Exame de título da SBCM e o SIMÃO, o simulado do exame.',
-    origem: 'OrtoQuestões Simulados feitos por engenharia reversa da SBCM e do SIMÃO: uma questão nossa para cada questão da prova, no mesmo assunto. Não são as questões oficiais',
+    id: 'mao-titulo', nome: 'Título de Cirurgia da Mão: prova e simulado', curto: 'Título da Mão', grupo: 'mao', area: 'mao',
+    descricao: 'A prova de título de cirurgia da mão e o simulado da prova de título.',
+    origem: 'OrtoQuestões Simulados feitos por engenharia reversa da prova de título e do simulado da prova de título de cirurgia da mão: uma questão nossa para cada questão da prova, no mesmo assunto. Não são as questões oficiais',
     entra: (q, prova) => q.ar === 'mao' && ehTitulo(prova),
   },
 ]

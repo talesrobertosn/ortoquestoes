@@ -1,5 +1,5 @@
 import { useDeferredValue, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import { FLASHCARDS_NO_MENU, fraseGratis, urlCss } from '../config'
+import { FLASHCARDS_NO_MENU, fraseGratis, rotuloProva, urlCss } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
@@ -403,7 +403,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   }
 
   const selecionados = filtros.temas.length + filtros.subtemas.length
-  const nomesProva = gruposProva.filter((g) => g.provas.some((p) => filtros.provas.includes(p))).map((g) => g.rotulo)
+  const nomesProva = gruposProva.filter((g) => g.provas.some((p) => filtros.provas.includes(p))).map((g) => rotuloProva(g.rotulo))
   const anosOrdenados = [...filtros.anos].sort((a, b) => b - a)
   // O rótulo de "Mais filtros" resume o que está valendo lá dentro, para não precisar abrir para conferir.
   const resumoMais = [
@@ -776,9 +776,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                       if (!marcado && provasDoFoco && !grupo.provas.some((p) => provasDoFoco.has(p))) return null
                       return (
                         <button key={grupo.rotulo} type="button" className="tr-pilula" aria-pressed={marcado}
-                          title={grupo.rotulo === 'Ortopedia' ? 'Questões de ortopedia com a prova de origem não confirmada' : grupo.rotulo === 'SIMÃO' ? 'OrtoQuestões Simulados no padrão do SIMÃO, o simulado do exame de título de especialista em cirurgia da mão' : grupo.rotulo === 'ENARE' ? 'Prova geral que dá acesso a R4 como coluna e mão' : undefined}
+                          title={grupo.rotulo === 'Ortopedia' ? 'Questões de ortopedia com a prova de origem não confirmada' : grupo.rotulo === 'SIMÃO' ? 'OrtoQuestões Simulados no padrão do simulado da prova de título de cirurgia da mão' : grupo.rotulo === 'ENARE' ? 'Prova geral que dá acesso a R4 como coluna e mão' : undefined}
                           onClick={() => atualizar({ provas: marcado ? filtros.provas.filter((x) => !grupo.provas.includes(x)) : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))] })}>
-                          {grupo.rotulo}
+                          {rotuloProva(grupo.rotulo)}
                           <span className="numerico">{quantidade}</span>
                         </button>
                       )

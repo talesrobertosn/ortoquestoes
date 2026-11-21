@@ -20,7 +20,7 @@ import { IconePixel } from '../componentes/IconePixel'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { fraseAdiantado, textoPuxar } from '../dados/frasesAdiantar'
 import { proximoDiaParaPuxar } from '../dados/planoEstudo'
-import { recurso } from '../config'
+import { recurso, rotuloProva } from '../config'
 import { href, navegar } from '../util/rotas'
 import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
 import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
@@ -554,7 +554,7 @@ export function Resumo() {
                     <span className="rs-item__numero">{l.numero}</span>
                     <span className="rs-item__corpo">
                       <span className="rs-item__meta">
-                        {q?.tema ?? 'Questão'}{q?.prova ? ` · ${q.prova}` : ''}{q?.ano ? ` ${q.ano}` : ''}
+                        {q?.tema ?? 'Questão'}{q?.prova ? ` · ${rotuloProva(q.prova)}` : ''}{q?.ano ? ` ${q.ano}` : ''}
                       </span>
                       <span className="rs-item__enunciado">{enunciado.slice(0, 160)}{enunciado.length > 160 ? '…' : ''}</span>
                       <span className="rs-item__chips">

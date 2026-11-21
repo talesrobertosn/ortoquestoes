@@ -32,12 +32,12 @@ A segunda ideia é a da **adaptação**. A criança nasce com a malformação e 
 
 ## O que a banca cobra
 
-O SIMÃO e a SBCM tiram deste capítulo questões curtas, de abertura incompleta e alternativas de um ou dois fatos. O molde é previsível: lateralidade (bilateral e assimétrica, unilateral, bilateral), direção (anterior, posterior, lateral; palmar ou dorsal), números vizinhos (30, 50, 70, 90%; 10, 20, 30, 60%), epônimos (VICKERS, VILKKI, LERI-WEILL, CLEARY e OMER, COLE e MANSKE, MASADA) e conduta (quando operar, qual posição, o que não fazer). Os blocos deste resumo seguem a ordem do capítulo, que é também a ordem de importância para a prova:
+O simulado da prova de título de cirurgia da mão e a prova de título tiram deste capítulo questões curtas, de abertura incompleta e alternativas de um ou dois fatos. O molde é previsível: lateralidade (bilateral e assimétrica, unilateral, bilateral), direção (anterior, posterior, lateral; palmar ou dorsal), números vizinhos (30, 50, 70, 90%; 10, 20, 30, 60%), epônimos (VICKERS, VILKKI, LERI-WEILL, CLEARY e OMER, COLE e MANSKE, MASADA) e conduta (quando operar, qual posição, o que não fazer). Os blocos deste resumo seguem a ordem do capítulo, que é também a ordem de importância para a prova:
 
 - **deficiência radial**: síndromes associadas, BAYNE e KLUG, anatomia, tratamento do punho, polegar;
 - **deficiência ulnar**: números, classificações, o anlage e a mão no flanco;
 - **MADELUNG**, com o ligamento de VICKERS e o tratamento por idade e dor;
-- **luxação congênita da cabeça do rádio** e **sinostose radioulnar proximal**, as duas famílias que mais caem no SIMÃO depois da MADELUNG;
+- **luxação congênita da cabeça do rádio** e **sinostose radioulnar proximal**, as duas famílias que mais caem no simulado da prova de título de cirurgia da mão depois da MADELUNG;
 - **pseudartrose congênita da ulna** e **exostose múltipla hereditária**;
 - a **deficiência transversa**, curta;
 - o **polegar** do capítulo 37: BLAUTH (colateral ulnar, IIIA contra IIIB), policização, **polegar em gatilho** da criança (SUGIMOTO, incidência, história natural) e **polegar aduzido congênito** (McCARROLL e MIH, órtese, extensor próprio do indicador).
@@ -88,7 +88,7 @@ O capítulo 36 do Green (p. 1255) dá o critério prático. Na ausência **trans
 
 !questoes central=mao-1263 relacionadas=mao-0954 treino=mao-2086,mao-3411,mao-3368
 conceito: Pela classificação de SWANSON, a mão torta radial é falha de formação das partes, do tipo longitudinal e pré-axial; a ausência do polegar é o exemplo de deficiência longitudinal, e a simbraquidactilia é transversa.
-como: A SBOT-SP perguntou o grupo de SWANSON da mão torta radial; a UFG 2020, qual malformação é falha longitudinal pré-axial; a SBCM 2024 (simulado), qual anomalia pertence às deficiências longitudinais.
+como: A SBOT-SP perguntou o grupo de SWANSON da mão torta radial; a UFG 2020, qual malformação é falha longitudinal pré-axial; a prova de título de 2024 (simulado), qual anomalia pertence às deficiências longitudinais.
 armadilha: Marcar focomelia (intercalar) ou duplicação do polegar (grupo III) como falha longitudinal pré-axial, ou tratar a simbraquidactilia como longitudinal por causa do nome antigo "fenda atípica".
 alerta: `mao-1263` está sem gabarito na lista; os livros sustentam "falha de formação das partes" (Tachdjian, cap. 12, p. 334; HEBERT, quadro 6.1).
 !fim
@@ -142,7 +142,7 @@ O Green termina a introdução com um dado que muda a conversa com os pais: cria
 
 !questoes central=mao-0793 relacionadas=mao-1020 treino=mao-1724,mao-3372,mao-3378
 conceito: Só um terço das deficiências radiais é isolado; HOLT-ORAM é mão torta radial com defeito cardíaco septal; FANCONI é suspeita com manchas café com leite e baixa estatura e se diagnostica pelo teste de quebra cromossômica, antes da pancitopenia.
-como: O SIMÃO 2026 (simulado) perguntou a conduta diante de hemograma normal em lactente com mão torta radial bilateral; o INTO 2023, a síndrome com polegar hipoplásico, manchas café com leite e baixa estatura; a UFG 2021, a malformação associada a HOLT-ORAM.
+como: O simulado da prova de título de cirurgia da mão de 2026 (simulado) perguntou a conduta diante de hemograma normal em lactente com mão torta radial bilateral; o INTO 2023, a síndrome com polegar hipoplásico, manchas café com leite e baixa estatura; a UFG 2021, a malformação associada a HOLT-ORAM.
 armadilha: Afastar FANCONI porque o hemograma está normal (a falência medular surge por volta dos 6 anos), ou atribuir a falência medular a HOLT-ORAM, que é a síndrome do coração.
 !fim
 
@@ -205,7 +205,7 @@ Sobre a frequência, o HEBERT e o Lovell and Winter (p. 932) afirmam que o **tip
 
 !questoes central=mao-0406 relacionadas=mao-0609,mao-0790,mao-1411,mao-1549,mao-1852 treino=mao-2247,mao-2088,mao-2286,mao-2392,mao-3379,mao-3392
 conceito: BAYNE e KLUG modificada: 1, rádio distal mais de 2 mm curto; 2, hipoplasia distal e proximal, com fise distal presente; 3, fise distal ausente e proximal de hipoplasia variável (ausência parcial); 4, rádio ausente.
-como: A USP-SP 2024 e o ENARE 2023 pediram o tipo sem fise distal; a USP-SP 2026, o tipo com hipoplasia proximal e distal e fise presente; o INTO 2023 e o TARO 2007, o rádio hipoplásico; o SIMÃO 2022 e 2024 e a SBCM 2023 e 2024 (simulados), as linhas 2 e 3 da tabela; o TEOT 2025, o tipo pela radiografia.
+como: A USP-SP 2024 e o ENARE 2023 pediram o tipo sem fise distal; a USP-SP 2026, o tipo com hipoplasia proximal e distal e fise presente; o INTO 2023 e o TARO 2007, o rádio hipoplásico; o simulado da prova de título de cirurgia da mão de 2022 e 2024 e a prova de título de 2023 e 2024 (simulados), as linhas 2 e 3 da tabela; o TEOT 2025, o tipo pela radiografia.
 armadilha: Chamar de tipo 2 a "ausência parcial" (é o 3) ou de tipo 3 o rádio pequeno mas inteiro (é o 2); e esquecer que hipoplasia só da epífise distal é o tipo 1.
 alerta: `mao-0609` está sem gabarito na lista; os livros sustentam "hipoplasia total do rádio" para o tipo II (rádio em miniatura; HEBERT, Fig. 6.29). Em `mao-0406` a imagem da questão mostra a ulna única e curva, sem rádio, o que confirma o gabarito (tipo IV, ausência completa do rádio). Em `mao-1411`, `mao-1549` e `mao-1852` o gabarito segue o Green; a figura 12.73 do Tachdjian põe a ausência da placa de crescimento no tipo II.
 !fim
@@ -244,7 +244,7 @@ Dois achados do exame mudam a conduta. O **cotovelo**: na deficiência radial el
 
 !questoes central=mao-1376 treino=mao-2537,mao-3358,mao-3366,mao-3401
 conceito: Na deficiência radial faltam ou são aberrantes os extensores radiais do punho, o nervo radial costuma estar ausente abaixo do cotovelo e a artéria radial costuma faltar; o nervo mediano está sempre presente e saliente no lado radial do punho, e a artéria ulnar é normal.
-como: O SIMÃO 2021 (simulado) perguntou o achado anatômico esperado no antebraço; a USP-SP 2025, qual estrutura está sem alterações na displasia radial.
+como: O simulado da prova de título de cirurgia da mão de 2021 (simulado) perguntou o achado anatômico esperado no antebraço; a USP-SP 2025, qual estrutura está sem alterações na displasia radial.
 armadilha: Dizer que o mediano está ausente (ele é a estrutura mais proeminente do lado radial do punho) ou que a musculatura extensora e supinadora é normal.
 alerta: Em `mao-1376`, o Green não descreve a artéria ulnar; o fato que sustenta o gabarito está no Tachdjian (cap. 12, p. 341) e no Lovell and Winter (cap. 22, p. 933).
 !fim
@@ -389,7 +389,7 @@ O HEBERT descreve os mesmos tipos e cita um degrau a mais, o **IIIC** de BUCK-GR
 
 !questoes central=mao-0659 treino=mao-1720,mao-3596,mao-3599,mao-3614,mao-3624
 conceito: BLAUTH modificada por MANSKE: o tipo IIIB tem os achados do II mais anomalias extrínsecas e carpometacarpal instável, com a base do metacarpo afilada, e o tratamento é a policização; IIIA, com carpometacarpal estável, é reconstruído.
-como: O SIMÃO 2026 (simulado) deu a criança sem tenares, com metacarpofalângica instável, tendões extrínsecos anômalos e metacarpo sem a base, e pediu tipo e conduta; a FMRP-USP 2026 perguntou a indicação no tipo IIIB.
+como: O simulado da prova de título de cirurgia da mão de 2026 (simulado) deu a criança sem tenares, com metacarpofalângica instável, tendões extrínsecos anômalos e metacarpo sem a base, e pediu tipo e conduta; a FMRP-USP 2026 perguntou a indicação no tipo IIIB.
 armadilha: Indicar oponentoplastia com reconstrução do ligamento colateral ulnar no IIIB (é a conduta do II e do IIIA) ou transferência de dedo do pé no polegar flutuante.
 !fim
 
@@ -410,7 +410,7 @@ A instabilidade da metacarpofalângica ou da carpometacarpal muda o algoritmo in
 
 ## O tipo II e o colateral que importa
 
-O tipo II é o primeiro em que a criança perde função de verdade, e a banca o descreve sempre pelos mesmos três achados: tenares intrínsecos ausentes, primeira comissura estreita e **ligamento colateral ULNAR** da metacarpofalângica insuficiente (Tabela 37.2, p. 1290). A troca de ULNAR por radial é a pegadinha mais repetida da família (o SIMÃO 2020 escreveu a alternativa errada assim).
+O tipo II é o primeiro em que a criança perde função de verdade, e a banca o descreve sempre pelos mesmos três achados: tenares intrínsecos ausentes, primeira comissura estreita e **ligamento colateral ULNAR** da metacarpofalângica insuficiente (Tabela 37.2, p. 1290). A troca de ULNAR por radial é a pegadinha mais repetida da família (o simulado da prova de título de cirurgia da mão de 2020 escreveu a alternativa errada assim).
 
 Por que o ulnar? Porque é ele que segura a pinça. Quando o polegar aperta um objeto contra o indicador, a força empurra a falange proximal para o lado radial, abrindo o lado ulnar da articulação. Um colateral ulnar frouxo faz a metacarpofalângica ceder em valgo a cada pinça, e o polegar perde a firmeza justamente no gesto que define a mão humana. É o mesmo raciocínio do polegar do esquiador no adulto, só que aqui o ligamento nasceu fraco. A instabilidade pode ser **global** (ulnar e radial), e então o tratamento muda (ver adiante).
 
@@ -422,7 +422,7 @@ O tipo III acrescenta duas coisas ao II: **anomalias dos extrínsecos** (extenso
 
 A carpometacarpal é o alicerce porque todo o resto do polegar trabalha apoiado nela. Uma oponentoplastia puxa o raio para a frente; um colateral reconstruído segura a pinça; mas se a base gira solta sobre o carpo, a força de qualquer transferência se perde na base, e o polegar colapsa ao primeiro aperto. Por isso o Green fala da casa sem alicerce e registra que as tentativas heroicas de refazer a carpometacarpal tiveram resultado pior que a policização (p. 1290).
 
-O que o exame mostra é, no fundo, a decisão já tomada pela própria criança. Com a base instável, ela **ignora o polegar** e pinça **em tesoura** entre o indicador e o médio; com o uso, o indicador **prona** e a comissura entre indicador e médio **alarga** (p. 1290 e 1291). O indicador começa a se comportar como um polegar antes de qualquer cirurgia, e é isso que torna a policização tão natural nessas mãos. O SIMÃO 2014 cobrou exatamente esse comportamento num caso clínico.
+O que o exame mostra é, no fundo, a decisão já tomada pela própria criança. Com a base instável, ela **ignora o polegar** e pinça **em tesoura** entre o indicador e o médio; com o uso, o indicador **prona** e a comissura entre indicador e médio **alarga** (p. 1290 e 1291). O indicador começa a se comportar como um polegar antes de qualquer cirurgia, e é isso que torna a policização tão natural nessas mãos. O simulado da prova de título de cirurgia da mão de 2014 cobrou exatamente esse comportamento num caso clínico.
 
 A radiografia tem limite de idade: o **trapézio e a base do primeiro metacarpo só ossificam por volta dos 6 anos**. Na hipoplasia grave da carpometacarpal, a base do metacarpo **afila em ponta** e o metacarpo proximal falta (Fig. 37.3, p. 1291), mas esse sinal não aparece no III leve. Ultrassom e ressonância mostram a cartilagem; o Green, porém, considera o **exame repetido** tão confiável quanto eles. O HEBERT acrescenta o **IIIC** de BUCK-GRAMCKO, em que só resta a cabeça do metacarpo e a fronteira com o tipo IV fica tênue.
 
@@ -474,7 +474,7 @@ Quando cada peça é tratada, o resultado do tipo II e do IIIA é bom. Alguma **
 
 !questoes treino=mao-2156,mao-2158,mao-2090
 conceito: BLAUTH separa o polegar que se reconstrói (II e IIIA: comissura com zetaplastia em quatro retalhos, colateral ULNAR com a sobra do tendão, oponentoplastia com o flexor superficial do anelar ou do médio) do que se troca pelo indicador (IIIB, IV e V), e o divisor é a estabilidade da carpometacarpal.
-como: A SBCM 2022 (simulado) descreveu o polegar sem tenares, com deficiência esquelética e carpometacarpal estável e pediu o tipo; perguntou em quais tipos se policiza; a SBCM 2024 (simulado) pediu o doador preferido da oponentoplastia.
+como: A prova de título de 2022 (simulado) descreveu o polegar sem tenares, com deficiência esquelética e carpometacarpal estável e pediu o tipo; perguntou em quais tipos se policiza; a prova de título de 2024 (simulado) pediu o doador preferido da oponentoplastia.
 armadilha: Confundir a carpometacarpal (que separa IIIA de IIIB) com a metacarpofalângica (que já falha no tipo II), trocar o colateral ulnar pelo radial ou escolher o abdutor do mínimo como doador preferido.
 !fim
 
@@ -512,7 +512,7 @@ O HEBERT descreve a técnica pelos quatro princípios de BUCK-GRAMCKO, com as me
 
 !questoes central=mao-1562 relacionadas=mao-1372 treino=mao-2157,mao-3594,mao-3595,mao-3597,mao-3615,mao-3623
 conceito: Na policização, o corte distal do segundo metacarpo passa pela fise (epifisiodese); a metacarpofalângica do indicador é fixada em hiperextensão; a artéria digital radial do dedo médio é ligada de rotina; as veias dorsais são preservadas; o primeiro interósseo dorsal vira abdutor e o primeiro palmar vira adutor.
-como: A USP-SP 2026 e a USP-SP 2025 pediram a afirmação correta sobre a policização, misturando o nível da ressecção, o destino dos interósseos, a ligadura arterial e o cuidado com as veias; a SBCM 2022 (simulado), a posição da metacarpofalângica.
+como: A USP-SP 2026 e a USP-SP 2025 pediram a afirmação correta sobre a policização, misturando o nível da ressecção, o destino dos interósseos, a ligadura arterial e o cuidado com as veias; a prova de título de 2022 (simulado), a posição da metacarpofalângica.
 armadilha: Trocar os interósseos (o dorsal é abdutor, o palmar é adutor) ou achar que a ligadura da artéria do terceiro dedo é rara: ela é o passo que libera o pedículo.
 !fim
 
@@ -521,7 +521,7 @@ armadilha: Trocar os interósseos (o dorsal é abdutor, o palmar é adutor) ou a
 A lista de passos fica fácil de guardar quando se lembra o objetivo: transformar um dedo de três falanges, que se move num plano, num polegar de duas falanges e um metacarpo, que gira e se opõe. Cada articulação do indicador sobe um degrau de função (a tabela acima), e cada passo técnico resolve um problema criado por essa troca.
 
 - **Encurtar pelo metacarpo.** O indicador é longo demais para ser polegar. Retirar o metacarpo inteiro, da base até a epífise, faz da cabeça o novo trapézio. O corte distal **pela fise** é o que impede o novo polegar de continuar crescendo como metacarpo: sem essa epifisiodese, o polegar policizado fica longo com os anos, uma das complicações tardias do capítulo (Fig. 37.38, p. 1303).
-- **Hiperestender a metacarpofalângica.** A metacarpofalângica do indicador, que agora é a carpometacarpal do polegar, tem hiperextensão natural; uma carpometacarpal normal não tem. Se nada for feito, o polegar novo hiperestende na base a cada pinça. Suturar a cabeça em **hiperextensão**, pela epífise e pela cápsula dorsal, deixa a cabeça do metacarpo em flexão e bloqueia esse movimento (Fig. 37.27, p. 1299). É a posição que a SBCM 2022 (simulado) cobrou.
+- **Hiperestender a metacarpofalângica.** A metacarpofalângica do indicador, que agora é a carpometacarpal do polegar, tem hiperextensão natural; uma carpometacarpal normal não tem. Se nada for feito, o polegar novo hiperestende na base a cada pinça. Suturar a cabeça em **hiperextensão**, pela epífise e pela cápsula dorsal, deixa a cabeça do metacarpo em flexão e bloqueia esse movimento (Fig. 37.27, p. 1299). É a posição que a prova de título de 2022 (simulado) cobrou.
 - **Abdução e pronação.** O raio é posicionado com a epífise à frente da base, em **45 graus de abdução** e **100 a 120 graus de pronação**, porque a polpa do polegar precisa encontrar a polpa dos outros dedos; um indicador apenas deslocado para a borda radial faria pinça lateral, não oposição. O fio de Kirschner entra anterógrado como joystick e depois é passado retrógrado até o carpo.
 - **Não encurtar os tendões.** Os flexores e extensores ficam longos demais depois do encurtamento ósseo, mas se adaptam com o tempo. O que se faz é abrir a **polia A1** do indicador, para que os flexores frouxos não dobrem em arco.
 - **Transferir os interósseos.** O primeiro interósseo dorsal, preso à banda lateral radial, passa a abduzir o polegar (vira o abdutor curto); o primeiro interósseo palmar, na banda lateral ulnar, passa a aduzir (vira o adutor) (p. 1297; Fig. 37.32). O extensor próprio do indicador faz o papel do extensor longo, e o extensor comum, o do abdutor longo.
@@ -545,7 +545,7 @@ O polegar policizado é tão bom quanto o indicador de onde veio e a musculatura
 - A criança que já tinha um **padrão de preensão ulnar** (comum na deficiência radial) tende a mantê-lo e a ignorar o polegar novo.
 - A **mão em espelho** e a **mão de cinco dedos** têm resultados piores.
 
-Os resultados se mantêm até a vida adulta. A força fica em torno de **um terço** de um polegar normal, e cerca de **95%** dos pacientes integram o polegar às tarefas do dia (p. 1302). O polegar policizado costuma ser um pouco **mais longo e mais fino**, e as queixas de aparência giram em torno de espessura, comprimento e angulação (p. 1303). Foi esse o fato cobrado pelo SIMÃO 2019 e pela FMRP 2026 na criança com polegar IIIB.
+Os resultados se mantêm até a vida adulta. A força fica em torno de **um terço** de um polegar normal, e cerca de **95%** dos pacientes integram o polegar às tarefas do dia (p. 1302). O polegar policizado costuma ser um pouco **mais longo e mais fino**, e as queixas de aparência giram em torno de espessura, comprimento e angulação (p. 1303). Foi esse o fato cobrado pelo simulado da prova de título de cirurgia da mão de 2019 e pela FMRP 2026 na criança com polegar IIIB.
 
 ## As complicações
 
@@ -597,7 +597,7 @@ O sinal clínico obrigatório é o **nódulo de NOTTA**, o espessamento do flexo
 | IV | Rígido | a interfalângica **não estende nem passivamente**: contratura em flexão fixa |
 !fim
 
-A lógica é a de um nódulo que cresce em relação ao túnel. No I ele existe, mas passa; no II passa com esforço ativo; no III só passa empurrado pelo examinador; no IV não passa mais. Os estágios III e IV são os que o examinador reconhece pelo estalo à extensão passiva ou pela falta dela. A SBCM 2025 perguntou o estágio do polegar que não estende ativamente e estala ao ser estendido pelo examinador (III); a SBCM 2014, o mesmo fato num caso clínico.
+A lógica é a de um nódulo que cresce em relação ao túnel. No I ele existe, mas passa; no II passa com esforço ativo; no III só passa empurrado pelo examinador; no IV não passa mais. Os estágios III e IV são os que o examinador reconhece pelo estalo à extensão passiva ou pela falta dela. A prova de título de 2025 perguntou o estágio do polegar que não estende ativamente e estala ao ser estendido pelo examinador (III); a prova de título de 2014, o mesmo fato num caso clínico.
 
 ## A história natural do gatilho
 
@@ -687,11 +687,11 @@ Os objetivos da cirurgia, nos pontos críticos do Green (p. 1325), são dois: **
 
 ## Não confundir com o polegar na palma espástico
 
-O polegar na palma da **paralisia cerebral** tem outra causa (espasticidade, não falta de extensor) e outra classificação, a de **HOUSE** (Green 7, cap. 32, Tabela 32.5, p. 1107): tipo 1, adução simples do metacarpo; tipo 2, adução com flexão da metacarpofalângica; tipo 3, adução com hiperextensão ou instabilidade da metacarpofalângica; tipo 4, adução com deformidade da metacarpofalângica e da interfalângica, envolvendo o flexor longo. O SIMÃO 2019 colocou HOUSE ao lado das questões do polegar aduzido congênito; o assunto pertence às paralisias e transferências tendinosas.
+O polegar na palma da **paralisia cerebral** tem outra causa (espasticidade, não falta de extensor) e outra classificação, a de **HOUSE** (Green 7, cap. 32, Tabela 32.5, p. 1107): tipo 1, adução simples do metacarpo; tipo 2, adução com flexão da metacarpofalângica; tipo 3, adução com hiperextensão ou instabilidade da metacarpofalângica; tipo 4, adução com deformidade da metacarpofalângica e da interfalângica, envolvendo o flexor longo. O simulado da prova de título de cirurgia da mão de 2019 colocou HOUSE ao lado das questões do polegar aduzido congênito; o assunto pertence às paralisias e transferências tendinosas.
 
 !questoes treino=mao-2464,mao-2515
 conceito: Polegar aduzido congênito: McCARROLL e MIH, I flexível (extensor ausente ou hipoplásico), II complexo (contraturas, colateral, comissura e tenares), III com artrogripose ou síndrome (MASA), extensor às vezes normal; órtese primeiro, melhor antes de 12 meses; cirurgia corrige contraturas e reforça a extensão com o extensor próprio do indicador.
-como: O SIMÃO 2022 (simulado) pediu a afirmação correta sobre o diagnóstico tardio e a metacarpofalângica; o SIMÃO 2021 (simulado) descreveu o polegar rígido, com contraturas, colaterais anormais, comissura fechada e tenares anômalos, e pediu o tipo (II).
+como: O simulado da prova de título de cirurgia da mão de 2022 (simulado) pediu a afirmação correta sobre o diagnóstico tardio e a metacarpofalângica; o simulado da prova de título de cirurgia da mão de 2021 (simulado) descreveu o polegar rígido, com contraturas, colaterais anormais, comissura fechada e tenares anômalos, e pediu o tipo (II).
 armadilha: Achar que o diagnóstico se faz ao nascer (todo bebê segura o polegar até 3 a 4 meses), operar antes de tentar a órtese, dizer que o objetivo é restaurar a abdução ou confundir com o polegar espástico de HOUSE.
 !fim
 
@@ -731,7 +731,7 @@ O achado do polegar surpreende quem pensa só no lado ulnar. Na deficiência rad
 
 !questoes central=mao-0842 treino=mao-2246,mao-2006,mao-2160,mao-2422,mao-3373,mao-3410,mao-3396,mao-3406
 conceito: A deficiência ulnar é esporádica, mais vezes unilateral, sem doença sistêmica; o cotovelo é afetado na maioria, pode haver anlage; 90% das mãos têm dedos ausentes, 70% anomalia do polegar e 30% sindactilia; associa-se a deficiência fibular, deficiência focal femoral proximal, focomelia e escoliose congênita.
-como: A SBCM 2023 (simulado) e o INTO 2026 pediram a afirmação correta sobre a epidemiologia; o SIMÃO 2023 (simulado), a associação habitual; a SBCM 2022 (simulado), a anomalia que o Green manda procurar; o SIMÃO 2022 (simulado), o conjunto de anomalias musculoesqueléticas; o SIMÃO 2024 (simulado), a proporção de sindactilia.
+como: A prova de título de 2023 (simulado) e o INTO 2026 pediram a afirmação correta sobre a epidemiologia; o simulado da prova de título de cirurgia da mão de 2023 (simulado), a associação habitual; a prova de título de 2022 (simulado), a anomalia que o Green manda procurar; o simulado da prova de título de cirurgia da mão de 2022 (simulado), o conjunto de anomalias musculoesqueléticas; o simulado da prova de título de cirurgia da mão de 2024 (simulado), a proporção de sindactilia.
 armadilha: Trocar os percentuais (são 90% de dedos ausentes e 30% de sindactilia, não o inverso), pôr deficiência tibial ou lordose no lugar de fibular e escoliose, ou dizer que o cotovelo é poupado.
 alerta: Em `mao-2422`, o Tachdjian (p. 345) inclui a deficiência do raio tibial entre as associadas, mas o gabarito segue a lista do Green (p. 1334).
 !fim
@@ -893,7 +893,7 @@ O panorama do KRUKENBERG e da deficiência transversa, com a questão do TARO so
 
 # A deformidade de MADELUNG {radar=confirmado}
 
-A MADELUNG não é uma deficiência longitudinal, mas está no capítulo 38 do Green's Operative Hand Surgery, 7ª ed., e a classificação OMT a põe entre as malformações do eixo radioulnar, ao lado das deficiências radial e ulnar (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 335); o HEBERT, que segue SWANSON, a lista entre as anomalias generalizadas. É o tema deste capítulo que mais cai no SIMÃO. O panorama, com os critérios radiográficos do Tachdjian, está no resumo green8-malformacoes-congenitas; aqui o foco é o mecanismo e o tratamento por cenário, como o Green os descreve.
+A MADELUNG não é uma deficiência longitudinal, mas está no capítulo 38 do Green's Operative Hand Surgery, 7ª ed., e a classificação OMT a põe entre as malformações do eixo radioulnar, ao lado das deficiências radial e ulnar (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 335); o HEBERT, que segue SWANSON, a lista entre as anomalias generalizadas. É o tema deste capítulo que mais cai no simulado da prova de título de cirurgia da mão. O panorama, com os critérios radiográficos do Tachdjian, está no resumo green8-malformacoes-congenitas; aqui o foco é o mecanismo e o tratamento por cenário, como o Green os descreve.
 
 ## Um canto da fise que parou
 
@@ -930,7 +930,7 @@ Apesar do aspecto, o **prejuízo funcional é mínimo**, e só nos casos avança
 
 !questoes central=mao-1422 treino=mao-2245,mao-2005,mao-2087,mao-2161,mao-2427,mao-2629,mao-3376,mao-3361,mao-3381,mao-3384,mao-3389,mao-3391,mao-3397,mao-3402,mao-3407,mao-3413,mao-3360,mao-3364,mao-3369,mao-3371,mao-3375,mao-3382,mao-3387,mao-3394,mao-3400,mao-3414,mao-3362,mao-3363,mao-3385,mao-3386,mao-3395,mao-3398,mao-3403,mao-3412
 conceito: MADELUNG é distúrbio da fise palmar e ulnar do rádio distal; o ligamento de VICKERS é palmar e une o semilunar à metáfise do rádio, proximal à fise; é bilateral, aparece na adolescência, tem ulna dorsal proeminente e associa-se à discondrosteose de LERI-WEILL (SHOX); só a deformidade dolorosa e limitante pede cirurgia.
-como: A SBCM 2023 e o SIMÃO 2023 (simulados) perguntaram o que o ligamento de VICKERS une e de que lado está; a USP-SP 2024, a SBCM 2022 e o SIMÃO 2022 (simulados), a afirmação correta sobre a deformidade; a SBCM 2024 (simulados), a condição de fundo e o diagnóstico na adolescente de baixa estatura com ulna saliente.
+como: A prova de título de 2023 e o simulado da prova de título de cirurgia da mão de 2023 (simulados) perguntaram o que o ligamento de VICKERS une e de que lado está; a USP-SP 2024, a prova de título de 2022 e o simulado da prova de título de cirurgia da mão de 2022 (simulados), a afirmação correta sobre a deformidade; a prova de título de 2024 (simulados), a condição de fundo e o diagnóstico na adolescente de baixa estatura com ulna saliente.
 armadilha: Pôr o ligamento no dorso, no escafoide ou na epífise; dizer que o rádio distal fica dorsal à ulna, que a angulação é dorsal, que a doença é unilateral e da primeira infância ou que a causa é sempre traumática.
 !fim
 
@@ -965,7 +965,7 @@ A fisiólise isolada raramente basta, exceto no jovem com deformidade leve (p. 1
 
 # A luxação congênita da cabeça do rádio {radar=oportunidade}
 
-A luxação congênita da cabeça do rádio é a família que mais vezes caiu no SIMÃO depois da MADELUNG. O resumo green8-malformacoes-congenitas a trata em um parágrafo; aqui ela ganha a aula que o Green's Operative Hand Surgery, 7ª ed. (cap. 38, p. 1347 a 1350), dá a ela.
+A luxação congênita da cabeça do rádio é a família que mais vezes caiu no simulado da prova de título de cirurgia da mão depois da MADELUNG. O resumo green8-malformacoes-congenitas a trata em um parágrafo; aqui ela ganha a aula que o Green's Operative Hand Surgery, 7ª ed. (cap. 38, p. 1347 a 1350), dá a ela.
 
 ## O perfil
 
@@ -1034,7 +1034,7 @@ O resumo green8-malformacoes-congenitas traz as questões de prova sobre o tema 
 
 # A sinostose radioulnar proximal congênita {radar=oportunidade}
 
-O resumo green8-malformacoes-congenitas apresenta a sinostose pelo Tachdjian, com a classificação do próprio TACHDJIAN, e reúne as questões de prova do tema. Esta seção segue o Green's Operative Hand Surgery, 7ª ed. (cap. 38, p. 1349 a 1354), que é a fonte dos números e das condutas que o SIMÃO e a SBCM cobram.
+O resumo green8-malformacoes-congenitas apresenta a sinostose pelo Tachdjian, com a classificação do próprio TACHDJIAN, e reúne as questões de prova do tema. Esta seção segue o Green's Operative Hand Surgery, 7ª ed. (cap. 38, p. 1349 a 1354), que é a fonte dos números e das condutas que o simulado da prova de título de cirurgia da mão e a prova de título cobram.
 
 ## A falha de separação
 
@@ -1167,7 +1167,7 @@ A fíbula vascularizada tem a **maior taxa de consolidação** de qualquer trata
 
 !questoes treino=mao-2502,mao-3370,mao-3399
 conceito: A pseudartrose congênita da ulna, do terço distal ou médio, associa-se à neurofibromatose em cerca de 70% dos casos; o foco é fibroso e não neurofibroma; sem tratamento o rádio sobrecarregado arqueia e a cabeça luxa; o tratamento é a ressecção com fíbula vascularizada, cedo, com LANGENSKIÖLD contra o valgo do tornozelo.
-como: O SIMÃO 2021 (simulado) perguntou a condição mais associada à pseudartrose congênita da ulna.
+como: O simulado da prova de título de cirurgia da mão de 2021 (simulado) perguntou a condição mais associada à pseudartrose congênita da ulna.
 armadilha: Marcar malformações cardíacas por contaminação com a deficiência radial e a síndrome de HOLT-ORAM, ou achar que o defeito é ocupado por neurofibroma.
 !fim
 
@@ -1243,14 +1243,14 @@ Parte das questões de banca foi escrita com a 8ª edição do Green, com o Camp
 | Fise no tipo 2 de BAYNE | Tachdjian (Fig. 12.73): sem fise | Fise ausente define o tipo 3 (Tabela 38.2) | Seguir o Green |
 | Pseudartrose da ulna | Curso: neuromas no coto | Causa desconhecida, tecido **fibroso**, sem neurofibroma na maioria (p. 1354) | Seguir o Green |
 | Lesão de BESSEL-HAGEN | Nome usado para a deformidade do antebraço na exostose múltipla | Termo ausente; o Green descreve a parada da fise ulnar distal (p. 1358) | Reconhecer o quadro pela descrição |
-| Coalizão do carpo mais frequente | SBCM 2025 (semilunar-piramidal) | Fora do capítulo; o Green só cita a coalizão do carpo como associação da sinostose e no carpo da deficiência radial | O gabarito oficial vale como está |
+| Coalizão do carpo mais frequente | Prova de título de 2025 (semilunar-piramidal) | Fora do capítulo; o Green só cita a coalizão do carpo como associação da sinostose e no carpo da deficiência radial | O gabarito oficial vale como está |
 | Ligadura na policização | Pontos críticos do Green: "artéria digital radial ao polegar" (p. 1304) | Passo a passo: digital própria do lado radial do **médio** (p. 1295) | Seguir o passo a passo |
 | Idade da policização | HEBERT antes dos 2 anos; Lovell and Winter antes dos 18 meses; Tachdjian depois dos 2 anos | 1 a 2 anos; a idade não mudou o resultado (p. 1303) | Seguir o Green |
 | Polegar em gatilho | Campbell 15: congênito | Adquirido: nenhum caso nas triagens de recém-nascidos (p. 1320) | "Congênito" é o nome de uso; o fato é que não está presente ao nascer |
 | Polegar aduzido: classificação | Campbell 15: TSUYUGUCHI em três grupos; órtese 3 a 6 meses | McCARROLL ampliada por MIH; órtese 2 a 6 meses (p. 1324) | Os três grupos coincidem; usar o nome que a questão der |
-| FREEMAN-SHELDON e WAARDENBURG no polegar aduzido | Provas antigas do SIMÃO | Ausentes; o Green só cita artrogripose e MASA (p. 1324) | Gabarito sem fonte local |
+| FREEMAN-SHELDON e WAARDENBURG no polegar aduzido | Provas antigas do simulado da prova de título de cirurgia da mão | Ausentes; o Green só cita artrogripose e MASA (p. 1324) | Gabarito sem fonte local |
 | Transferência do pé no polegar ausente | Curso: IIIB, IV e V | Policização nesses tipos; transferência articular microcirúrgica medíocre (p. 1304) | Seguir o Green |
-| Green 8 citado pela SBCM 2025 | p. 1496, 1500, 1508, 1518, 1524 | Os mesmos fatos nas p. 1330, 1334, 1344, 1351 e 1357 | Sem conflito |
+| Green 8 citado pela prova de título de 2025 | p. 1496, 1500, 1508, 1518, 1524 | Os mesmos fatos nas p. 1330, 1334, 1344, 1351 e 1357 | Sem conflito |
 !fim
 
 # Fechamento {radar=fundamento}

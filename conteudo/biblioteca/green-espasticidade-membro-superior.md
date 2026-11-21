@@ -59,7 +59,7 @@ Vale gravar a postura como uma cadeia, do ombro para a mão, porque a banca troc
 
 !questoes relacionadas=mao-1409 treino=mao-2075
 conceito: A PC é uma lesão cerebral irreversível e não progressiva, embora a contratura, a fibrose e a atrofia progridam com o crescimento; a postura habitual do membro é rotação medial do ombro, flexão do cotovelo, pronação do antebraço, flexão do punho e dos dedos e polegar na palma.
-como: A USP-SP 2024 pediu a definição correta da lesão cerebral (irreversível e não progressiva); o simulado do SBCM 2024 pediu qual postura é a habitual entre ombro, cotovelo, antebraço e punho.
+como: A USP-SP 2024 pediu a definição correta da lesão cerebral (irreversível e não progressiva); o simulado da prova de título de 2024 pediu qual postura é a habitual entre ombro, cotovelo, antebraço e punho.
 armadilha: Chamar a lesão de progressiva porque a deformidade piora, ou escolher ombro em rotação externa, cotovelo em extensão ou punho em extensão como postura típica.
 !fim
 
@@ -97,7 +97,7 @@ armadilha: Escolher o diplégico (membro superior pouco acometido) ou qualquer f
 
 !questoes treino=mao-2074,mao-3830
 conceito: Na reconstrução da mão espástica, a extensão do punho vem primeiro, porque é a base mecânica da preensão; em seguida vem a pinça lateral, com o polegar tirado da palma.
-como: O simulado do SBCM 2024 deu a extensão do punho como primeiro degrau e perguntou a função seguinte.
+como: O simulado da prova de título de 2024 deu a extensão do punho como primeiro degrau e perguntou a função seguinte.
 armadilha: Pular para a abertura da mão ou para a função coordenada, que dependem de um punho estável e de um polegar fora da palma.
 !fim
 
@@ -185,7 +185,7 @@ Cada região do membro tem o seu achado típico, e é ele que manda na cirurgia 
 
 !questoes treino=mao-1989,mao-3831
 conceito: No MACS, o nível III manipula objetos com dificuldade e precisa de ajuda para preparar ou modificar as atividades; o IV lida só com uma seleção limitada de objetos fáceis em situação adaptada.
-como: O simulado do SIMÃO 2023 descreveu a criança que pega objetos com dificuldade e precisa de ajuda para preparar a atividade e pediu o nível.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 descreveu a criança que pega objetos com dificuldade e precisa de ajuda para preparar a atividade e pediu o nível.
 armadilha: Marcar o nível IV por causa da palavra "dificuldade", ou confundir o MACS (I a V, vida diária) com a HOUSE funcional (0 a 8).
 !fim
 
@@ -278,7 +278,7 @@ No fim do capítulo (p. 1118), um estudo multicêntrico prospectivo com hemiplé
 
 !questoes central=mao-1308 treino=mao-2615,mao-3832,mao-3835
 conceito: A toxina botulínica tipo A bloqueia a liberação pré-sináptica de acetilcolina na junção neuromuscular e enfraquece o músculo de forma temporária; é a substância biológica mais potente conhecida, e a miastenia gravis é contraindicação.
-como: A USP-SP 2025 pediu a afirmação correta sobre a toxina e o seu uso médico, com o mecanismo descrito como inibição da captação, a duração de um ano e o uso na miastenia como distratores; o simulado do SBCM 2022 pediu o mecanismo na placa motora.
+como: A USP-SP 2025 pediu a afirmação correta sobre a toxina e o seu uso médico, com o mecanismo descrito como inibição da captação, a duração de um ano e o uso na miastenia como distratores; o simulado da prova de título de 2022 pediu o mecanismo na placa motora.
 armadilha: Aceitar "inibe a captação" ou "aumenta a saída" de acetilcolina, trocar acetilcolina por dopamina, ou achar que o efeito dura um ano.
 !fim
 
@@ -375,7 +375,7 @@ O **deslizamento flexopronador** nasceu para os músculos isquêmicos da síndro
 
 !questoes treino=mao-2144
 conceito: A pronação da PC é predominantemente espástica, sobretudo do pronador redondo: começa dinâmica e passivamente corrigível e depois se fixa por contratura miostática, da membrana interóssea e das radioulnares.
-como: O simulado do SBCM 2022 pediu o tipo de deformidade do antebraço pronado da criança com PC.
+como: O simulado da prova de título de 2022 pediu o tipo de deformidade do antebraço pronado da criança com PC.
 armadilha: Chamar a deformidade de flácida, ou inverter a sequência (flácida no início, espástica depois), ou atribuir a fixação a frouxidão da membrana interóssea.
 !fim
 
@@ -448,13 +448,13 @@ Um último detalhe ligado ao punho: anos de flexão e desvio ulnar alteram a car
 
 !questoes treino=mao-2599,mao-2612
 conceito: No ZANCOLLI, o tipo III não estende os dedos ativamente em posição nenhuma do punho e recebe a transferência do FUC para o ECD; o tipo II estende só com o punho fletido mais de 20° e recebe alongamento fracionado dos flexores e reforço da extensão do punho.
-como: O simulado do SIMÃO 2022 pediu o tipo e o tratamento da criança que não estende os dedos em posição nenhuma; o do SIMÃO 2021 pediu o tratamento da criança com extensão passiva completa e sem extensão ativa com o punho neutro ou estendido.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pediu o tipo e o tratamento da criança que não estende os dedos em posição nenhuma; o do simulado da prova de título de cirurgia da mão de 2021 pediu o tratamento da criança com extensão passiva completa e sem extensão ativa com o punho neutro ou estendido.
 armadilha: Alongar os flexores quando falta motor (o alongamento não cria extensão) ou fazer só a transferência para o punho na criança que abre a mão por tenodese.
 !fim
 
 !questoes treino=mao-1747,mao-3834,mao-3836,mao-3837
 conceito: O punho é a base da função dos dedos; ao estendê-lo, os dedos precisam continuar abrindo com o punho em neutro, o que pode exigir alongar os flexores junto.
-como: O simulado do SIMÃO 2026 descreveu a criança que só estende os dedos com o punho fletido além de 20° e pediu o princípio que orienta a correção do punho.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 descreveu a criança que só estende os dedos com o punho fletido além de 20° e pediu o princípio que orienta a correção do punho.
 armadilha: Estender o punho sem alongar os flexores curtos, ou deixar o punho para o fim da reconstrução.
 !fim
 
@@ -544,7 +544,7 @@ Os autores avisam que a **recidiva é frequente** e que, nos casos difíceis, ar
 
 !questoes central=mao-1553 treino=mao-1741
 conceito: O redirecionamento do ELP exige falta de abdução e extensão ativas do polegar com o ELP ativo; é feito junto com a liberação ou o deslizamento dos intrínsecos (adutor, primeiro interósseo dorsal e tenares).
-como: A USP-SP 2026 pediu um critério de indicação do rerouting do ELP no polegar empalmado; o simulado do SIMÃO 2026 pediu o plano cirúrgico completo para metacarpo aduzido, comissura estreita e MF fletida estável, sem FLP.
+como: A USP-SP 2026 pediu um critério de indicação do rerouting do ELP no polegar empalmado; o simulado do simulado da prova de título de cirurgia da mão de 2026 pediu o plano cirúrgico completo para metacarpo aduzido, comissura estreita e MF fletida estável, sem FLP.
 armadilha: Marcar ELP ausente (sem motor não há redirecionamento), ausência de contratura em adução (os intrínsecos são sempre liberados junto) ou tratar só o extensor sem soltar os adutores.
 !fim
 

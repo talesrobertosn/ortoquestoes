@@ -57,7 +57,7 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 34, Fig. 34.2, p. 11
 
 !questoes treino=mao-2517,mao-3059
 conceito: O gânglio da raiz dorsal fica dentro do canal e do forame intervertebral; a avulsão é proximal a ele (pré-ganglionar) e a ruptura extraforaminal é distal (pós-ganglionar).
-como: O SIMÃO 2021 perguntou onde fica o gânglio sensitivo dos nervos que formam o plexo.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou onde fica o gânglio sensitivo dos nervos que formam o plexo.
 armadilha: Pôr o gânglio fora do forame, junto aos troncos, ou confundi-lo com a cadeia simpática paravertebral.
 !fim
 
@@ -315,7 +315,7 @@ Por fim, o capítulo põe a ENMG no seu lugar: TINEL que avança e potenciais na
 
 !questoes treino=mao-1986,mao-3055
 conceito: A ENMG basal se faz 3 a 4 semanas após o trauma, quando a degeneração walleriana já ocorreu, e repete-se 6 a 12 semanas depois; antes disso, o nervo distal ainda conduz e engana.
-como: O SIMÃO 2023 perguntou quando fazer os estudos eletrodiagnósticos na lesão traumática do plexo.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou quando fazer os estudos eletrodiagnósticos na lesão traumática do plexo.
 armadilha: Pedir a ENMG nos primeiros dias, quando o segmento distal ainda conduz, ou esperar 6 meses para o primeiro exame.
 !fim
 
@@ -331,7 +331,7 @@ Duas situações são contraindicações relativas pelo tempo (p. 1153 e 1154). 
 
 !questoes treino=mao-2149
 conceito: A principal contraindicação à reconstrução do plexo é um objetivo irreal ou a recusa do paciente; idade, rigidez, comorbidades e trauma craniano pesam, mas em geral não contraindicam.
-como: O SBCM 2022 perguntou o que mais contraindica operar, segundo o Green.
+como: A prova de título de 2022 perguntou o que mais contraindica operar, segundo o Green.
 armadilha: Escolher a idade, a lesão vascular ou o trauma craniano como contraindicação absoluta.
 !fim
 
@@ -412,7 +412,7 @@ A lógica é a mesma da regra das divisões: a **divisão anterior** do tronco s
 
 !questoes treino=mao-2424,mao-3043
 conceito: A divisão posterior do tronco superior leva ao fascículo posterior e ao axilar; enxertá-la busca o deltoide e a abdução do ombro, enquanto a divisão anterior busca a flexão do cotovelo.
-como: O SIMÃO 2022 perguntou o que se busca ao reconstruir a divisão posterior do tronco superior com enxerto.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou o que se busca ao reconstruir a divisão posterior do tronco superior com enxerto.
 armadilha: Trocar as divisões e esperar flexão do cotovelo da divisão posterior.
 !fim
 
@@ -440,7 +440,7 @@ As vantagens explicam por que as transferências tomaram o lugar dos enxertos em
 
 !questoes treino=mao-2498
 conceito: A transferência nervosa leva axônios motores de um doador dispensável para perto da placa motora do alvo, fora da cicatriz e sem as duas suturas do enxerto; indica-se na avulsão, em pós-ganglionares selecionadas e na reinervação de músculos livres.
-como: O SIMÃO 2021 pediu a afirmação correta sobre as neurotizações nas lesões traumáticas do plexo.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu a afirmação correta sobre as neurotizações nas lesões traumáticas do plexo.
 armadilha: Achar que transferência é a mesma coisa que neurotização muscular (implante no músculo), ou que ela exige coto proximal da raiz.
 !fim
 
@@ -503,7 +503,7 @@ A reinervação tem uma sequência própria, porque o músculo passa a obedecer 
 
 !questoes treino=mao-3075
 conceito: O toracodorsal sai do fascículo posterior com fibras de C7, C8 e às vezes C6, tem de 8 a 19 cm úteis e pode ser doador para o torácico longo, o musculocutâneo e o axilar.
-como: O SIMÃO 2021 pediu a afirmação correta sobre o toracodorsal como doador.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu a afirmação correta sobre o toracodorsal como doador.
 armadilha: Pôr o toracodorsal no fascículo lateral ou medial, ou dizer que ele vem de C5.
 !fim
 
@@ -579,7 +579,7 @@ Por que o tríceps importa tanto? Sem extensão ativa do cotovelo, o músculo qu
 
 !questoes treino=mao-1748
 conceito: Na dupla de grácil de DOI, o primeiro músculo, inervado pelo acessório, faz flexão do cotovelo e extensão dos dedos (ou do punho); o segundo, inervado pelos intercostais, faz a flexão dos dedos; outros intercostais vão ao tríceps.
-como: O SIMÃO 2026 perguntou a função e o doador de cada um dos dois músculos.
+como: O simulado da prova de título de cirurgia da mão de 2026 perguntou a função e o doador de cada um dos dois músculos.
 armadilha: Inverter os doadores, ou achar que o primeiro músculo flete os dedos.
 !fim
 
@@ -628,7 +628,7 @@ A técnica dos autores (p. 1192, Fig. 34.49) usa a posição de cadeira de praia
 
 !questoes treino=mao-2148,mao-3051,mao-3054
 conceito: A artrodese glenoumeral depende da escapulotorácica; paralisia extensa do trapézio e dos estabilizadores da escápula a contraindica, porque depois da fusão todo o movimento vem da escápula.
-como: O SBCM 2022 perguntou em que situação a fusão glenoumeral fica contraindicada na lesão completa do plexo.
+como: A prova de título de 2022 perguntou em que situação a fusão glenoumeral fica contraindicada na lesão completa do plexo.
 armadilha: Achar que a paralisia do deltoide ou do manguito contraindica a artrodese (é justamente a sua indicação).
 !fim
 
@@ -754,7 +754,7 @@ A consequência para a conduta é a mesma do adulto: a lesão pré-ganglionar s�
 
 !questoes treino=mao-1749,mao-1979,mao-2084,mao-3061,mao-3067
 conceito: No bebê, paralisia do romboide (escapular dorsal, C5), escápula alada (torácico longo), HORNER, hemidiafragma paralisado, paraespinais paralisados e pseudomeningocele indicam avulsão e mau prognóstico.
-como: O SIMÃO 2026 perguntou o nervo da escápula alada no lactente; o SIMÃO 2023, o achado ligado à lesão que ele indica; o SBCM 2024, o achado que sugere avulsão.
+como: O simulado da prova de título de cirurgia da mão de 2026 perguntou o nervo da escápula alada no lactente; o simulado da prova de título de cirurgia da mão de 2023, o achado ligado à lesão que ele indica; a prova de título de 2024, o achado que sugere avulsão.
 armadilha: Tomar o serrátil por músculo do escapular dorsal, ou o HORNER por sinal de lesão do tronco superior.
 !fim
 
@@ -965,7 +965,7 @@ A progressão conta a história do ombro: primeiro a glenoide **retroverte** (II
 
 !questoes treino=mao-2162,mao-2488,mao-3039,mao-3076
 conceito: Na classificação de WATERS, o tipo II é a retroversão sem subluxação, o III é a subluxação posterior com menos de 35% da cabeça anterior à linha da escápula, o IV é a falsa glenoide e o V é o achatamento da cabeça e da glenoide.
-como: O SBCM 2022 mostrou uma tomografia com falsa glenoide posterior; o SIMÃO 2021 perguntou em que tipo aparece a falsa glenoide.
+como: A prova de título de 2022 mostrou uma tomografia com falsa glenoide posterior; o simulado da prova de título de cirurgia da mão de 2021 perguntou em que tipo aparece a falsa glenoide.
 armadilha: Pôr a falsa glenoide no tipo III, ou o achatamento no IV.
 !fim
 

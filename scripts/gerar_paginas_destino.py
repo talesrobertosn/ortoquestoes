@@ -109,7 +109,7 @@ PAGINAS_EXTRAS = [("sobre", "Sobre o Orto Questões"),
                   # Atlas 3D (25/10/2026): páginas próprias em paginas_atlas_seo.py, para quem busca "atlas 3D" e "anatomia 3D"
                   ("atlas-3d-online", "Atlas 3D online"), ("atlas-3d", "Atlas 3D"), ("esqueleto-humano-3d", "Esqueleto humano 3D"), ("musculos-do-corpo-humano-3d", "Músculos em 3D"),
                   # Provas antigas e curso de subespecialidade (14/11/2026): páginas próprias em paginas_provas_antigas_seo.py
-                  ("provas-antigas-simao", "Provas antigas do SIMÃO"), ("provas-antigas-sbcm", "Provas antigas da SBCM"),
+                  ("provas-antigas-simao", "Provas antigas do simulado da prova de título"), ("provas-antigas-sbcm", "Provas antigas da prova de título"),
                   ("provas-antigas-r4-coluna", "Provas antigas do R4 de coluna"), ("curso-cirurgia-da-mao", "Curso de cirurgia da mão")]
 
 CRIAR_CONTA = "../#/conta?modo=criar&amp;voltar=%2Ftreinar"
@@ -418,7 +418,7 @@ def relacionados(pasta: str, extras: list[tuple[str, str, str]] | None = None) -
         "simulado-teot": "Provas no tempo, simulados autorais e Simulado Nacional.",
         "flashcards-ortopedia": "Revisão rápida por assunto, entre plantões.",
         "curso-preparatorio-teot": "Como escolher e como combinar curso e questões.",
-        "cirurgia-da-mao": "Título da SBCM, SIMÃO e provas de residência em cirurgia da mão.",
+        "cirurgia-da-mao": "Prova de título, simulado da prova de título e provas de residência em cirurgia da mão.",
     }
     itens = [(f"../{p}/", rotulo if p != "curso-ortopedia-r1" else "Estudo no R1", descricoes[p]) for p, rotulo in PAGINAS if p != pasta]
     itens += extras or []
@@ -1253,7 +1253,7 @@ def _md_negrito(texto: str) -> str:
 
 
 def quiz_html(d: dict) -> str:
-    """A questão mao-1971 (OrtoQuestões Simulado no padrão do SIMÃO) respondida na própria página, sem
+    """A questão mao-1971 (OrtoQuestões Simulado no padrão do simulado da prova de título de cirurgia da mão) respondida na própria página, sem
     JavaScript: cada alternativa abre o comentário dela, com o livro e a página. Sem a questão ou o
     comentário no acervo, o bloco some."""
     q = next((x for x in d["simulados"] if x["id"] == "mao-1971"), None)
@@ -1271,9 +1271,9 @@ def quiz_html(d: dict) -> str:
         else:
             texto, veredito = (com.get("incorretas") or {}).get(l, ""), f"Não é a {l}. A resposta é {gab}."
         resp.append(f'<div class="mao-quiz__resp mao-quiz__resp--{l}" role="status"><p class="mao-quiz__veredito">{esc(veredito)}</p>'
-                    f'<p>{_md_negrito(texto)}</p><p><a href="{link_treino("SIMÃO", area="mao")}">Treinar mais questões no padrão do SIMÃO →</a></p></div>')
+                    f'<p>{_md_negrito(texto)}</p><p><a href="{link_treino("SIMÃO", area="mao")}">Treinar mais questões no padrão do simulado da prova de título de cirurgia da mão →</a></p></div>')
     return f"""<div class="mao-quiz" data-ui>
-<p class="mao-quiz__origem">OrtoQuestões Simulado no padrão do SIMÃO</p>
+<p class="mao-quiz__origem">OrtoQuestões Simulado no padrão do simulado da prova de título de cirurgia da mão</p>
 <fieldset><legend>{esc(q["enunciado"])}</legend>{entradas}
 <div class="mao-quiz__alts">{alts}</div>
 {"".join(resp)}
@@ -1283,15 +1283,15 @@ def quiz_html(d: dict) -> str:
 
 def pagina_cirurgia_mao(d: dict) -> tuple[str, dict]:
     """Para quem procura no Google "banco de questões de cirurgia da mão", "curso
-    preparatório para a prova de cirurgia da mão", "questões do título da SBCM",
-    "SIMÃO" ou "onde estudar para a residência de cirurgia da mão" (pedido do
+    preparatório para a prova de cirurgia da mão", "questões do título",
+    "simulado da prova de título de cirurgia da mão" ou "onde estudar para a residência de cirurgia da mão" (pedido do
     Tales, 21/10/2026). Cirurgia da mão é outra especialidade, com categoria
-    própria. SBCM e SIMÃO no acervo são OrtoQuestões Simulados (autorais, no
+    própria. prova de título e simulado da prova de título de cirurgia da mão no acervo são OrtoQuestões Simulados (autorais, no
     padrão da prova); as seleções de residência são provas reais, com o nome da
     banca. Sem total de questões do acervo e sem citar curso ou concorrente."""
     pasta = "cirurgia-da-mao"
-    titulo = "Questões de Cirurgia da Mão: título SBCM, SIMÃO e residência | Orto Questões"
-    descricao = ("Banco de questões de cirurgia da mão para a prova de título da SBCM, o SIMÃO e as provas de residência "
+    titulo = "Questões de Cirurgia da Mão: prova de título, simulado e residência | Orto Questões"
+    descricao = ("Banco de questões de cirurgia da mão para a prova de título, o simulado da prova de título de cirurgia da mão e as provas de residência "
                  "(USP-SP, ENARE, INTO, UFG e outras), com comentário de cada alternativa pela bibliografia.")
     oficiais = [q for q in d["oficiais"] if eh_mao(q)]
     simulados = [q for q in d["simulados"] if eh_mao(q)]
@@ -1315,34 +1315,34 @@ def pagina_cirurgia_mao(d: dict) -> tuple[str, dict]:
 
     faq = [
         ("Onde estudar para a prova de título de cirurgia da mão?",
-         "A base é a bibliografia indicada no edital da SBCM de cada ano. Para transformar a leitura em acerto de prova, treine com "
+         "A base é a bibliografia indicada no edital da prova de título de cada ano. Para transformar a leitura em acerto de prova, treine com "
          "questões do mesmo assunto logo depois de estudar, leia o comentário de todas as alternativas e revise os erros em outro dia. "
-         "No Orto Questões há OrtoQuestões Simulados no padrão da prova de título da SBCM e do SIMÃO, além das provas de seleção "
+         "No Orto Questões há OrtoQuestões Simulados no padrão da prova de título e do simulado da prova de título de cirurgia da mão, além das provas de seleção "
          "para a residência, com comentários apoiados na bibliografia de referência da especialidade."),
         ("Existe banco de questões de cirurgia da mão?",
          "Sim. O Orto Questões tem uma categoria própria de cirurgia da mão, separada da ortopedia, com provas de seleção para a "
-         f"residência ({nomes_provas}) e OrtoQuestões Simulados no padrão do título da SBCM e do SIMÃO. Dá para treinar por prova, "
+         f"residência ({nomes_provas}) e OrtoQuestões Simulados no padrão do título e do simulado da prova de título de cirurgia da mão. Dá para treinar por prova, "
          "por ano e por assunto."),
         ("Tem curso preparatório para a prova de cirurgia da mão?",
          "O Orto Questões não é curso de videoaulas: é um banco de questões comentadas, com revisão espaçada, desempenho por assunto, "
          "simulados e cronograma. Ele serve como preparação por questões para quem estuda pela bibliografia e como complemento para "
          "quem já faz um curso."),
-        ("O que é o SIMÃO?",
-         "É o simulado do exame de título de especialista em cirurgia da mão. No Orto Questões, as questões no padrão do SIMÃO são "
+        ("O que é o simulado da prova de título?",
+         "É o simulado do exame de título de especialista em cirurgia da mão. No Orto Questões, as questões no padrão do simulado da prova de título de cirurgia da mão são "
          "OrtoQuestões Simulados: questões autorais, elaboradas a partir da bibliografia de referência, sem caráter oficial e sem "
-         "vínculo com a SBCM."),
-        ("As questões da SBCM são as da prova oficial?",
-         "Não. As questões marcadas como SBCM e SIMÃO são OrtoQuestões Simulados, escritas no padrão dessas provas a partir da "
+         "vínculo com a sociedade que organiza a prova de título."),
+        ("As questões da prova de título são as da prova oficial?",
+         "Não. As questões marcadas como prova de título e simulado são OrtoQuestões Simulados, escritas no padrão dessas provas a partir da "
          "bibliografia, para treinar o formato e os assuntos. As provas de seleção para a residência (como USP-SP, ENARE, INTO e UFG) "
          "são reais, transcritas dos cadernos, com o nome da banca, o ano e o gabarito oficial."),
         ("Quem pode usar?",
-         "Residentes de cirurgia da mão que vão prestar o título da SBCM, ortopedistas e cirurgiões que vão prestar a seleção para a "
+         "Residentes de cirurgia da mão que vão prestar o título, ortopedistas e cirurgiões que vão prestar a seleção para a "
          "residência em cirurgia da mão e cirurgiões da mão que querem revisar. Os pré-requisitos de cada seleção estão no edital "
          "de cada serviço."),
         ("Quais assuntos mais caem na prova de cirurgia da mão?",
          "Depende da prova. Nas seleções para a residência, os assuntos com mais questões no acervo são "
          + ", ".join(n.lower() if i else n for i, (n, _) in enumerate(sub_ingresso.most_common(5)))
-         + ". No padrão do título (SBCM e SIMÃO), são "
+         + ". No padrão do título (prova e simulado), são "
          + ", ".join(n.lower() for n, _ in sub_titulo.most_common(5))
          + ". As duas listas, com a contagem, estão nesta página, e o site tem o ranking completo de cada prova."),
         ("O Orto Questões é gratuito?",
@@ -1350,7 +1350,7 @@ def pagina_cirurgia_mao(d: dict) -> tuple[str, dict]:
          "como o cronograma até a prova. Os limites atuais e o que cada plano inclui estão na página de planos do site."),
     ]
     ld = ld_pagina(pasta, titulo, descricao, "Cirurgia da mão", d["data"],
-                   ["Cirurgia da mão", "Título de especialista em cirurgia da mão", "SBCM", "SIMÃO",
+                   ["Cirurgia da mão", "Título de especialista em cirurgia da mão", "prova de título", "simulado da prova de título de cirurgia da mão",
                     "Residência médica em cirurgia da mão", "Banco de questões"])
     ld[0]["audience"] = {"@type": "EducationalAudience",
                          "educationalRole": "Residentes de cirurgia da mão, ortopedistas e cirurgiões que vão prestar o título ou a residência"}
@@ -1364,31 +1364,31 @@ def pagina_cirurgia_mao(d: dict) -> tuple[str, dict]:
 <nav class="migalhas" aria-label="Você está em"><a href="../">Orto Questões</a> › Cirurgia da mão</nav>
 <h1>Questões de cirurgia da mão</h1></div>
 <div class="mao-heroi__texto">
-<p class="mao-lide">Para a prova de título da SBCM, o SIMÃO e as provas de residência em cirurgia da mão. Cada alternativa
+<p class="mao-lide">Para a prova de título, o simulado da prova de título de cirurgia da mão e as provas de residência em cirurgia da mão. Cada alternativa
 comentada pela bibliografia, com o livro e a página.</p>
 <div class="mao-acoes"><a class="mao-botao" href="{treino}">Treinar cirurgia da mão</a><a class="mao-link" href="{CRIAR_CONTA}">Criar conta grátis</a></div>
-<ul class="mao-fatos"><li><b>{len(provas)}</b> provas de seleção para a residência</li><li><b>SBCM e SIMÃO</b> no padrão do título</li><li><b>Grátis</b> para começar, sem cartão</li></ul>
+<ul class="mao-fatos"><li><b>{len(provas)}</b> provas de seleção para a residência</li><li><b>Prova e simulado</b> no padrão do título</li><li><b>Grátis</b> para começar, sem cartão</li></ul>
 </div>
 {quiz_html(d)}
 </div></div>
 <main class="env mao-corpo">""")
     corpo.append("""<section class="mao-quem"><h2>Feito para três momentos da carreira</h2>
 <div class="mao-quem__grade">
-<div><h3>Vai fazer o título</h3><p>Residentes de cirurgia da mão que se preparam para a prova de título de especialista da SBCM e para o SIMÃO, com questões no padrão das duas provas.</p></div>
+<div><h3>Vai fazer o título</h3><p>Residentes de cirurgia da mão que se preparam para a prova de título de especialista e para o simulado da prova de título de cirurgia da mão, com questões no padrão das duas provas.</p></div>
 <div><h3>Vai entrar na residência</h3><p>Ortopedistas e cirurgiões que vão prestar a seleção para a residência em cirurgia da mão, com as provas anteriores de cada serviço, com o nome real da banca.</p></div>
 <div><h3>Já opera mão</h3><p>Cirurgiões da mão que querem revisar por assunto, em blocos curtos, com o comentário de cada alternativa e a referência do livro.</p></div>
 </div></section>""")
     sim = {p: n_sim[p] for p in ("SBCM", "SIMÃO")}
-    corpo.append(f"""<section class="mao-titulo"><h2>O título: SBCM e SIMÃO</h2>
+    corpo.append(f"""<section class="mao-titulo"><h2>O título: prova e simulado</h2>
 <p class="mao-sub">Questões autorais, escritas a partir da bibliografia de referência, para treinar o formato e os assuntos das duas provas.
-Não são as provas oficiais e não têm vínculo com a SBCM.</p>
+Não são as provas oficiais e não têm vínculo com a sociedade que organiza a prova de título.</p>
 <div class="mao-titulo__grade">
-<a class="mao-campo mao-campo--vinho" href="{link_treino("SBCM", area="mao")}"><span class="mao-campo__nome">SBCM</span>
+<a class="mao-campo mao-campo--vinho" href="{link_treino("SBCM", area="mao")}"><span class="mao-campo__nome">Prova de título</span>
 <span class="mao-campo__texto">Prova de título de especialista da Sociedade Brasileira de Cirurgia da Mão.</span>
-<span class="mao-campo__pe"><span>{num(sim["SBCM"])} questões no padrão da prova</span><span class="mao-campo__ir">Treinar SBCM →</span></span></a>
-<a class="mao-campo mao-campo--ouro" href="{link_treino("SIMÃO", area="mao")}"><span class="mao-campo__nome">SIMÃO</span>
+<span class="mao-campo__pe"><span>{num(sim["SBCM"])} questões no padrão da prova</span><span class="mao-campo__ir">Treinar →</span></span></a>
+<a class="mao-campo mao-campo--ouro" href="{link_treino("SIMÃO", area="mao")}"><span class="mao-campo__nome">Simulado da prova de título</span>
 <span class="mao-campo__texto">O simulado do exame de título de especialista em cirurgia da mão.</span>
-<span class="mao-campo__pe"><span>{num(sim["SIMÃO"])} questões no padrão da prova</span><span class="mao-campo__ir">Treinar SIMÃO →</span></span></a>
+<span class="mao-campo__pe"><span>{num(sim["SIMÃO"])} questões no padrão da prova</span><span class="mao-campo__ir">Treinar →</span></span></a>
 </div></section>""")
     linhas = []
     for prova in provas:
@@ -1408,7 +1408,7 @@ só com ela, ou num ano para ver as questões daquela edição e o que caiu.</p>
     corpo.append("""<section class="mao-tela"><figure class="mao-tela__fig">
 <img src="../imagens/seo/mao-questao-computador.jpg" width="1560" height="1170" loading="lazy"
 alt="Questão de cirurgia da mão no Orto Questões: compressão do nervo ulnar na zona III do canal de Guyon, com as quatro alternativas">
-<figcaption>Uma questão no padrão do SIMÃO, como aparece no site.</figcaption></figure>
+<figcaption>Uma questão no padrão do simulado da prova de título de cirurgia da mão, como aparece no site.</figcaption></figure>
 <div class="mao-tela__texto"><h2>Como é treinar no site</h2>
 <ul class="mao-lista">
 <li><strong>Escolha a categoria Cirurgia da mão</strong> e filtre por prova, ano ou assunto.</li>
@@ -1432,13 +1432,13 @@ No site, cada ranking se atualiza sozinho quando entram questões novas e vira u
 <div class="mao-titulo__grade">
 <div><h3>Provas de ingresso (residência)</h3><ol class="mao-rank">{lista_rank(sub_ingresso)}</ol>
 <p><a class="mao-link" href="../#/temas-que-mais-caem?prova=mao-ingresso">Ranking completo do ingresso</a></p></div>
-<div><h3>Título: SBCM e SIMÃO</h3><ol class="mao-rank">{lista_rank(sub_titulo)}</ol>
-<p class="mao-sub">Contados nas questões no padrão da prova, escritas a partir de cada questão da SBCM e do SIMÃO.</p>
+<div><h3>Título: prova e simulado</h3><ol class="mao-rank">{lista_rank(sub_titulo)}</ol>
+<p class="mao-sub">Contados nas questões no padrão da prova, escritas a partir de cada questão da prova de título e do simulado da prova de título de cirurgia da mão.</p>
 <p><a class="mao-link" href="../#/temas-que-mais-caem?prova=mao-titulo">Ranking completo do título</a></p></div>
 </div>
 <p><a class="mao-botao" href="../#/cronograma-mao">Montar o cronograma de cirurgia da mão</a></p></div></section>""")
     corpo.append("""<section class="mao-estudo"><div class="mao-estudo__texto"><h2>Onde estudar para a prova</h2>
-<p>A base de qualquer preparação é a bibliografia indicada no edital da SBCM do ano, com os grandes tratados de cirurgia da mão e
+<p>A base de qualquer preparação é a bibliografia indicada no edital da prova de título do ano, com os grandes tratados de cirurgia da mão e
 microcirurgia. O que separa ler de acertar é treinar a decisão de prova: classificação, indicação, técnica e complicação, no formato das
 questões.</p>
 <ol class="mao-passos">
@@ -1457,7 +1457,7 @@ treinar no formato da prova e não esquecer o que já estudou.</p>
 <p>Aulas ajudam na primeira. Questões comentadas e revisão resolvem as outras duas. O Orto Questões não tem videoaulas: é a parte das
 questões, com cronograma até a prova, desempenho por assunto e revisão dos erros.</p>
 <p>Funciona sozinho, com a bibliografia, ou junto de um curso. As datas, os pré-requisitos e a bibliografia de cada prova estão no
-edital da SBCM e de cada serviço: confira sempre a versão do ano.</p>
+edital da prova de título e de cada serviço: confira sempre a versão do ano.</p>
 </div></section>""")
     itens_faq = "".join(f"<details><summary>{esc(p)}</summary><p>{esc(r)}</p></details>" for p, r in faq)
     corpo.append(f'<section class="mao-faq" id="perguntas"><h2>Perguntas frequentes</h2><div class="mao-faq__lista">{itens_faq}</div></section>')

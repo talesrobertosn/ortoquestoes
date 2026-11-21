@@ -313,10 +313,10 @@ comentário de cada alternativa. Faça a prova inteira no tempo ou treine por as
 {anos_links(prova, anos, ano, cont)}{viz}
 <p style="margin-top:1rem"><a href="../{PASTA}/">Todas as provas anteriores: TEOT, TARO e cirurgia da mão</a></p></section>""")
     if mao:
-        corpo.append(f"""<section><div class="aviso"><p><strong>E o título da SBCM e o SIMÃO?</strong> As provas de título não estão
+        corpo.append(f"""<section><div class="aviso"><p><strong>E a prova de título e o simulado?</strong> As provas de título não estão
 no acervo. Para treinar o formato e os assuntos delas, o site tem OrtoQuestões Simulados no padrão da
-<a href="{d.link_treino("SBCM", area="mao")}">SBCM</a> e do <a href="{d.link_treino("SIMÃO", area="mao")}">SIMÃO</a>: questões autorais,
-escritas a partir da bibliografia, sem caráter oficial e sem vínculo com a SBCM.</p></div></section>""")
+<a href="{d.link_treino("SBCM", area="mao")}">prova de título</a> e do <a href="{d.link_treino("SIMÃO", area="mao")}">simulado da prova de título</a>: questões autorais,
+escritas a partir da bibliografia, sem caráter oficial e sem vínculo com a sociedade que organiza a prova de título.</p></div></section>""")
     corpo.append(d.faq_html(faq))
     corpo.append(d.chamada(f"Faça {art} {nome} no tempo de prova",
                            "A conta é grátis. No modo estudo, o comentário aparece depois de cada questão; no modo prova, só no fim, como no dia."))
@@ -349,8 +349,8 @@ def pagina_indice(dados: dict, grupos: dict) -> tuple[str, dict]:
          "da SBOT; no site eles estão transcritos, com gabarito e comentário, e aqui cada ano mostra 10 questões comentadas de amostra."),
         ("Tem provas anteriores de cirurgia da mão?",
          "Sim, as provas de seleção para a residência em cirurgia da mão: " + ", ".join(nome_prova(p) for p in provas_mao)
-         + ". As provas de título da SBCM e o SIMÃO não estão no acervo; para elas há OrtoQuestões Simulados no padrão das provas, "
-         "autorais e sem vínculo com a SBCM."),
+         + ". A prova de título e o simulado da prova de título não estão no acervo; para elas há OrtoQuestões Simulados no padrão das provas, "
+         "autorais e sem vínculo com a sociedade que organiza a prova de título."),
         ("O gabarito é o oficial?",
          "Sim, é o da banca. Questões anuladas ficam marcadas e não contam no desempenho."),
         ("Por onde começar?",
@@ -384,9 +384,9 @@ def pagina_indice(dados: dict, grupos: dict) -> tuple[str, dict]:
     corpo.append(f"""<section id="mao"><h2>Cirurgia da mão: provas anteriores</h2>
 <p class="sub">Provas de seleção para a residência em cirurgia da mão, transcritas dos cadernos, com o nome da banca, o ano e o gabarito oficial.</p>
 <div class="familia">{blocos}</div>
-<div class="aviso" style="margin-top:1.2rem"><p><strong>Título da SBCM e SIMÃO.</strong> As provas de título não estão no acervo. Para treinar
-o formato delas, há OrtoQuestões Simulados no padrão da <a href="{d.link_treino("SBCM", area="mao")}">SBCM</a> e do
-<a href="{d.link_treino("SIMÃO", area="mao")}">SIMÃO</a>, autorais e sem vínculo com a SBCM. <a href="../cirurgia-da-mao/">Mais sobre cirurgia da mão no site</a>.</p></div>
+<div class="aviso" style="margin-top:1.2rem"><p><strong>Prova de título e simulado.</strong> As provas de título não estão no acervo. Para treinar
+o formato delas, há OrtoQuestões Simulados no padrão da <a href="{d.link_treino("SBCM", area="mao")}">prova de título</a> e do
+<a href="{d.link_treino("SIMÃO", area="mao")}">simulado da prova de título</a>, autorais e sem vínculo com a sociedade que organiza a prova de título. <a href="../cirurgia-da-mao/">Mais sobre cirurgia da mão no site</a>.</p></div>
 </section>""")
     corpo.append("""<section><h2>Como estudar com as provas anteriores</h2><div class="cartoes">
 <div class="cartao"><span class="n">1</span><h3>Comece pela mais recente</h3><p>Faça a última edição da sua prova no modo prova, no tempo. É o retrato de onde você está.</p></div>

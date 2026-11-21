@@ -23,7 +23,7 @@ O segundo fio condutor é a ideia de **alto risco**. A maioria das fraturas da m
 
 Como ler as seções. Primeiro vem o porquê (biologia, epidemiologia, anatomia da fise, dos ligamentos e dos tendões), porque é dele que nascem as respostas. Depois a mão de distal para proximal: falange distal, falanges proximal e média, metacarpos e polegar. Por fim o punho (ossificação do carpo, escafoide e outros ossos) e, mais curtos, o rádio distal e o antebraço.
 
-O que as bancas cobram. Nas provas oficiais publicadas no site, o tema aparece por quatro portas: a fratura de SEYMOUR e o que fica interposto no foco; o tipo de SALTER-HARRIS das fraturas da cabeça do metacarpo; a ordem de ossificação do carpo (com o pisiforme por último); e o local mais comum da fratura do escafoide na criança. A USP-SP 2025 levou a conduta no descolamento epifisário da falange proximal com interposição. Nas provas da Sociedade Brasileira de Cirurgia da Mão e no SIMÃO, o molde é outro: classificações curtas, sobretudo AL-QATTAN (colo da falange) e KOZIN e WATERS (base do metacarpo do polegar), com alternativas que trocam os tipos vizinhos.
+O que as bancas cobram. Nas provas oficiais publicadas no site, o tema aparece por quatro portas: a fratura de SEYMOUR e o que fica interposto no foco; o tipo de SALTER-HARRIS das fraturas da cabeça do metacarpo; a ordem de ossificação do carpo (com o pisiforme por último); e o local mais comum da fratura do escafoide na criança. A USP-SP 2025 levou a conduta no descolamento epifisário da falange proximal com interposição. Nas provas da Sociedade Brasileira de Cirurgia da Mão e no simulado da prova de título de cirurgia da mão, o molde é outro: classificações curtas, sobretudo AL-QATTAN (colo da falange) e KOZIN e WATERS (base do metacarpo do polegar), com alternativas que trocam os tipos vizinhos.
 
 > **Na prova:** remodela o desvio **no plano do movimento**, **perto da fise**, na criança **pequena**; **rotação não remodela**; fise das falanges **na base**, dos metacarpos **no colo**, menos no **polegar** (base); SEYMOUR = **fratura exposta da fise** com **matriz germinativa interposta**; AL-QATTAN **I sem desvio, II contato parcial, III sem contato**; KOZIN e WATERS **B = THURSTON-HOLLAND ulnar**; carpo: **capitato e hamato primeiro (6 a 8 meses), pisiforme por último (6 a 8 anos)**.
 
@@ -166,7 +166,7 @@ A diferença entre o pseudomallet e o martelo verdadeiro é cobrada por meio da 
 
 !questoes treino=mao-2966
 conceito: No pseudomallet (SALTER-HARRIS I da falange distal), a epífise fica com o tendão terminal e o fragmento distal é puxado para volar pelo flexor profundo, que se insere na epífise e na metáfise; daí o ápice dorsal.
-como: O simulado do SIMÃO 2012 perguntou por que a angulação tem ápice dorsal na fratura epifisária desviada da falange distal.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2012 perguntou por que a angulação tem ápice dorsal na fratura epifisária desviada da falange distal.
 armadilha: Inverter os tendões, pondo o flexor na epífise, ou trocar o profundo pelo superficial, que se insere na falange média.
 !fim
 
@@ -188,7 +188,7 @@ O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 8, seção das fra
 
 !questoes relacionadas=mao-0773,mao-1213 treino=mao-3804,mao-3806,mao-3808,mao-3807,mao-3805,mao-1694,mao-2164,mao-2252
 conceito: SEYMOUR é a fratura fisária desviada da falange distal com laceração do leito ungueal: é uma fratura exposta da fise, a matriz germinativa costuma ficar interposta no foco, e o tratamento é retirar a unha, irrigar, desbridar, extrair o tecido interposto, reduzir aberto e reparar o leito.
-como: O INTO 2023 e os simulados do SBCM 2022 e de outras bancas pediram a estrutura interposta (matriz germinativa); a PUC-SP 2023 pediu a afirmação correta sobre a conduta; o simulado do SBCM 2023 pediu o que ter em mente (fratura exposta da fise).
+como: O INTO 2023 e os simulados da prova de título de 2022 e de outras bancas pediram a estrutura interposta (matriz germinativa); a PUC-SP 2023 pediu a afirmação correta sobre a conduta; o simulado da prova de título de 2023 pediu o que ter em mente (fratura exposta da fise).
 armadilha: Marcar placa volar, tendão flexor ou extensor como o tecido interposto; achar que é fratura fechada da falange média; ou acreditar que a falta de tratamento dificilmente leva a osteomielite.
 !fim
 
@@ -198,7 +198,7 @@ A fratura SALTER-HARRIS III da borda dorsal da base da falange distal é o equiv
 
 A conduta segue a mesma lógica do adulto. Fratura pouco desviada: tala em extensão por 4 a 6 semanas. Cirurgia, na preferência do autor, quando o fragmento ocupa **mais de 40% da superfície articular** e há **subluxação volar** da IFD. A razão é mecânica: com um fragmento grande, a base da falange distal perde o apoio dorsal e escorrega para volar, e a articulação subluxada não se congruenta com tala. O tratamento é pino percutâneo (transarticular ou de bloqueio de extensão) se a redução fechada funcionar; se não, redução aberta pela via dorsal, sempre preservando o tendão terminal no fragmento.
 
-Uma nota de banca: a classificação brasileira de ALBERTONI, usada para o dedo em martelo e cobrada no SIMÃO 2015, não aparece no Green 7. As questões do Green sobre o tema giram em torno do mecanismo (tendão terminal no fragmento epifisário) e da indicação cirúrgica (mais de 40% e subluxação volar).
+Uma nota de banca: a classificação brasileira de ALBERTONI, usada para o dedo em martelo e cobrada no simulado da prova de título de cirurgia da mão de 2015, não aparece no Green 7. As questões do Green sobre o tema giram em torno do mecanismo (tendão terminal no fragmento epifisário) e da indicação cirúrgica (mais de 40% e subluxação volar).
 
 Para não confundir as três lesões fisárias da falange distal, vale um quadro:
 
@@ -448,7 +448,7 @@ Na mesma página, o capítulo dá os núcleos do antebraço distal: a epífise d
 
 !questoes relacionadas=mao-1125 treino=mao-2251,mao-2394
 conceito: No carpo, capitato e hamato ossificam primeiro (6 a 8 meses), depois piramidal (2 a 3 anos), semilunar (4), escafoide (4 a 5), trapézio e trapezoide (5) e, por último, o pisiforme (6 a 8 anos).
-como: A PUC-SP 2021 pediu o último osso a ossificar e a idade; o simulado do SIMÃO 2022 pediu o osso que aparece mais tarde na radiografia; o do SBCM 2023, a afirmação correta sobre a ordem.
+como: A PUC-SP 2021 pediu o último osso a ossificar e a idade; o simulado do simulado da prova de título de cirurgia da mão de 2022 pediu o osso que aparece mais tarde na radiografia; o da prova de título de 2023, a afirmação correta sobre a ordem.
 armadilha: Marcar o escafoide como último (ele é o mais fraturado, não o último a ossificar), pôr o pisiforme logo depois do capitato, ou atrasar trapézio e trapezoide para 7 anos.
 !fim
 
@@ -488,7 +488,7 @@ A preferência do autor (p. 1446): polo distal, gesso curto com polegar por 4 a 
 
 !questoes relacionadas=mao-1092 treino=mao-2389,mao-1786
 conceito: Na criança o escafoide ossifica de distal para proximal, e a descrição clássica põe o polo distal como local mais fraturado, tratado com gesso incluindo o polegar por 4 a 6 semanas; a série de GHOLSON, porém, mostrou a cintura em 71% nas crianças atuais, mais adolescentes.
-como: A PUC-SP 2020 perguntou o local mais comum; o simulado do SIMÃO 2022 pediu o local e o tratamento; o do SIMÃO 2026, em que situação o gesso é a conduta de escolha (menino de 12 anos com fratura sem desvio do terço distal).
+como: A PUC-SP 2020 perguntou o local mais comum; o simulado do simulado da prova de título de cirurgia da mão de 2022 pediu o local e o tratamento; o do simulado da prova de título de cirurgia da mão de 2026, em que situação o gesso é a conduta de escolha (menino de 12 anos com fratura sem desvio do terço distal).
 armadilha: Responder cintura numa questão que segue a leitura clássica, ou indicar fixação para a fratura distal sem desvio, que consolida com gesso.
 alerta: O gabarito da PUC-SP 2020 segue a descrição clássica (polo distal); o Green 7 traz os dados de GHOLSON, com a cintura em 71%, e diz que o padrão infantil está ficando parecido com o do adulto.
 !fim
@@ -546,7 +546,7 @@ O índice do gesso pede um gesso oval, achatado de dorsal para volar, como o pr�
 
 !questoes treino=mao-2044
 conceito: Na fratura do rádio distal da criança, a perda de redução no gesso ocorre em cerca de um terço dos casos; os fatores de risco incluem o rádio fraturado isoladamente, a ulna fraturada no mesmo nível, o desvio inicial grande (translação acima de 50%, angulação acima de 30 graus), a redução incompleta e o índice do gesso acima de 0,7.
-como: O simulado do SBCM 2024 pediu, entre lado dominante e desvios iniciais abaixo dos limites, o fator de risco para perder a redução.
+como: O simulado da prova de título de 2024 pediu, entre lado dominante e desvios iniciais abaixo dos limites, o fator de risco para perder a redução.
 armadilha: Marcar 25 graus de angulação ou 40% de translação, que estão abaixo dos limites de risco, ou o lado dominante, que não entra na lista.
 !fim
 

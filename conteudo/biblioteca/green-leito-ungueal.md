@@ -93,7 +93,7 @@ Esse dado conversa com o dedo em martelo (resumo green-tendoes-extensores) e com
 
 !questoes central=mao-1167 relacionadas=mao-0824 treino=mao-2203,mao-3781,mao-3787
 conceito: Perioníquio = leito (matriz germinativa proximal, até a lúnula, e matriz estéril distal), prega (teto dorsal e assoalho ventral), eponíquio (pele proximal que cobre a prega), paroníquio (lados) e hiponíquio (pele distal ao leito); a germinativa faz cerca de 90% da unha, a estéril a mantém aderida, e o hiponíquio tem a maior densidade de linfáticos da derme.
-como: A PUC-SP 2022 perguntou em que parte do perioníquio há maior densidade de linfáticos; o INTO 2026, por qual porcentagem do volume da unha a germinativa responde; um simulado do SBCM 2023 mistura o nome da pele proximal à unha com a polia e o colateral da interfalângica distal.
+como: A PUC-SP 2022 perguntou em que parte do perioníquio há maior densidade de linfáticos; o INTO 2026, por qual porcentagem do volume da unha a germinativa responde; um simulado da prova de título de 2023 mistura o nome da pele proximal à unha com a polia e o colateral da interfalângica distal.
 armadilha: Trocar hiponíquio por eponíquio (epi é proximal, hipo é distal); pôr a lúnula como limite proximal da germinativa (é o distal); achar que o leito sob a unha visível é que fabrica a unha.
 !fim
 
@@ -299,7 +299,7 @@ No **esmagamento**, a fratura é cominutiva e os fragmentos ficam presos ao leit
 
 !questoes relacionadas=mao-1026 treino=mao-2354,mao-3782
 conceito: Metade das lesões do leito tem fratura da falange distal; a do tufo e a sem desvio se estabilizam com a unha recolocada como tala (ponto em oito ajuda), e a desviada proximal à prega pede dois fios de KIRSCHNER de 0,028 polegada, porque um só não controla a rotação.
-como: A UFG 2021 perguntou o que é verdadeiro sobre as fraturas da falange distal, com a do tufo por esmagamento estável pela placa ungueal; um simulado do SIMÃO 2024 pede a frequência da fratura associada.
+como: A UFG 2021 perguntou o que é verdadeiro sobre as fraturas da falange distal, com a do tufo por esmagamento estável pela placa ungueal; um simulado do simulado da prova de título de cirurgia da mão de 2024 pede a frequência da fratura associada.
 armadilha: Chutar 30% ou 70% para a fratura associada; fixar a desviada com um fio central só; esquecer de radiografar porque "é só a unha".
 !fim
 

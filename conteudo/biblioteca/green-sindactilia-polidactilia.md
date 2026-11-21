@@ -57,7 +57,7 @@ Para a polidactilia, o Tachdjian (p. 358) dá a imagem: não é excesso de subst
 
 !questoes central=mao-0267 relacionadas=mao-0266 treino=mao-2471,mao-2953
 conceito: Os dedos nascem como condensações de mesoderma numa placa palmada; a membrana regride de distal para proximal por apoptose disparada pelas BMP; a falha dessa apoptose é a sindactilia, e na APERT o FGF alterado anula a apoptose mediada por BMP.
-como: O SIMÃO 2021 perguntou qual sinal molecular, quando falha, está ligado à sindactilia; o ENARE 2023, quais estruturas embrionárias formam os dedos.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou qual sinal molecular, quando falha, está ligado à sindactilia; o ENARE 2023, quais estruturas embrionárias formam os dedos.
 armadilha: Ligar a sindactilia à ZPA (eixo radioulnar, polidactilia em espelho) ou atribuir a separação ao FGF sozinho.
 alerta: O Green (cap. 36, p. 1217) diz que os dígitos se formam como condensações de mesoderma (alternativa A de `mao-0267`); o termo "cristas digitais" do gabarito oficial não aparece nos livros lidos, e o gabarito foi preservado.
 !fim
@@ -73,7 +73,7 @@ A classificação tem dois eixos independentes: **até onde vai a união** e **o
 - **Acrossindactilia:** pontas fundidas com **fenestrações** proximais. O Tachdjian reserva o termo à **banda congênita** (STREETER), por ser **lesão fetal traumática, não falha de formação**.
 - **Braquissindactilia:** sindactilia com dedos curtos (Campbell, p. 3667).
 
-O Green (p. 1217) lembra que **anomalias de tendões e feixes aumentam com a complexidade**. Na **simples**, as articulações são em geral normais, flexores e extensores são independentes e a anatomia neurovascular é normal, com uma exceção que muda a cirurgia: a **bifurcação da artéria e do nervo digital comum pode ficar distal** ao nível normal da comissura (Fig. 36.2). Na **complexa**, a forma mais comum de união óssea é a **fusão látero-lateral no tufo da falange distal**, em geral com **sinoníquia**, perda da prega paroniquial e matriz ungueal achatada (Fig. 36.3); a SBCM 2015 cobrou justamente que a sinoníquia com perda da prega paroniquial indica fusão óssea das distais. Na **complexa complicada**, há **falanges ou dedos acessórios** interpostos na membrana (SIMÃO 2012). E em todas há uma **fáscia anormal**: uma lâmina lateral espessa e contínua cruza o espaço da futura comissura e precisa ser dividida na cirurgia.
+O Green (p. 1217) lembra que **anomalias de tendões e feixes aumentam com a complexidade**. Na **simples**, as articulações são em geral normais, flexores e extensores são independentes e a anatomia neurovascular é normal, com uma exceção que muda a cirurgia: a **bifurcação da artéria e do nervo digital comum pode ficar distal** ao nível normal da comissura (Fig. 36.2). Na **complexa**, a forma mais comum de união óssea é a **fusão látero-lateral no tufo da falange distal**, em geral com **sinoníquia**, perda da prega paroniquial e matriz ungueal achatada (Fig. 36.3); a prova de título de 2015 cobrou justamente que a sinoníquia com perda da prega paroniquial indica fusão óssea das distais. Na **complexa complicada**, há **falanges ou dedos acessórios** interpostos na membrana (simulado da prova de título de cirurgia da mão de 2012). E em todas há uma **fáscia anormal**: uma lâmina lateral espessa e contínua cruza o espaço da futura comissura e precisa ser dividida na cirurgia.
 
 !tabela A classificação da sindactilia (Green, p. 1217 e 1232; Tachdjian, p. 369; Campbell, p. 3667)
 | Termo | Define | Pista | Exemplo |
@@ -90,7 +90,7 @@ Duas armadilhas. **Sinoníquia não é sinônimo de complexa**: o Tachdjian (p. 
 
 !questoes central=mao-1557 treino=mao-2376,mao-2883,mao-2907
 conceito: Completa ou incompleta descreve a extensão; simples, complexa ou complicada descreve o tecido; sem ponte óssea a sindactilia é simples, mesmo com sinoníquia.
-como: O SIMÃO 2024 descreveu médio e anular unidos até as unhas, sem ponte óssea; a USP 2026, a 3ª comissura unida até a ponta sem falanges acessórias nem fusão.
+como: O simulado da prova de título de cirurgia da mão de 2024 descreveu médio e anular unidos até as unhas, sem ponte óssea; a USP 2026, a 3ª comissura unida até a ponta sem falanges acessórias nem fusão.
 armadilha: Chamar de complexa toda sindactilia com unha única, ou confundir completa com complexa.
 !fim
 
@@ -98,7 +98,7 @@ armadilha: Chamar de complexa toda sindactilia com unha única, ou confundir com
 
 O Green (p. 1217) dá o pacote: isolada em cerca de **1 em 2.000**, **bilateral em 50%**, história familiar em **10 a 40%** (autossômica dominante), e a **expressividade variável com penetrância incompleta** explica o **predomínio masculino (2:1)**. Os outros livros mudam detalhes:
 
-Vale entender a frase do 2:1, que a SBCM 2014 cobrou. Numa herança autossômica dominante clássica, os dois sexos seriam igualmente afetados. O que o Green diz é que a **expressividade variável e a penetrância incompleta** fazem o mesmo genótipo aparecer em graus diferentes, ou nem aparecer, de um membro da família para outro; é isso que explica tanto o predomínio masculino quanto o fenótipo tão variável dentro da mesma família. Não é herança ligada ao X.
+Vale entender a frase do 2:1, que a prova de título de 2014 cobrou. Numa herança autossômica dominante clássica, os dois sexos seriam igualmente afetados. O que o Green diz é que a **expressividade variável e a penetrância incompleta** fazem o mesmo genótipo aparecer em graus diferentes, ou nem aparecer, de um membro da família para outro; é isso que explica tanto o predomínio masculino quanto o fenótipo tão variável dentro da mesma família. Não é herança ligada ao X.
 
 !tabela Epidemiologia da sindactilia em cada livro
 | Dado | Green (p. 1217) | Tachdjian (p. 369) | Campbell (p. 3667) | Lovell and Winter (p. 943) | HEBERT |
@@ -126,7 +126,7 @@ A ordem segura é **3ª > 4ª > 2ª > 1ª**; o HEBERT inverte a segunda e a quar
 
 !questoes central=mao-1413 relacionadas=mao-0618,mao-1378,mao-1182,mao-0884 treino=mao-2387,mao-2870,mao-2890,mao-2934
 conceito: Isolada: 1:2.000, bilateral 50%, meninos 2:1, família 10 a 40%; 3ª comissura 57%, 4ª 27%, 1ª e 2ª as menos comuns; nas sindrômicas, polegar-indicador e indicador-médio ficam relativamente mais frequentes.
-como: A USP 2024 pediu onde estão 57% das isoladas; o SIMÃO 2022 e o TARO 2008, a comissura mais acometida; a USP 2025, a epidemiologia; a PUC-SP 2022, os percentuais; a UFG 2017, o polegar e indicador nos sindrômicos.
+como: A USP 2024 pediu onde estão 57% das isoladas; o simulado da prova de título de cirurgia da mão de 2022 e o TARO 2008, a comissura mais acometida; a USP 2025, a epidemiologia; a PUC-SP 2022, os percentuais; a UFG 2017, o polegar e indicador nos sindrômicos.
 armadilha: Dar os 57% à quarta, ou aceitar 80% bilateral, 4:1 ou família em mais de 60%.
 alerta: `mao-0618` não tem gabarito oficial; os livros sustentam a terceira comissura (C).
 !fim
@@ -156,7 +156,7 @@ A sindactilia da primeira comissura prejudica a preensão e a pinça; as outras 
 
 Daí a regra: **dedos de borda cedo, centrais de comprimento parecido depois.** Esperar ajuda: a mão dobra de tamanho nos **três primeiros anos** e a cicatriz do lactente **não perdoa erro** de desenho (Tachdjian, p. 369); FLATT e GER tiveram **melhores resultados após 18 meses** (Green, p. 1218); e operar cedo aumenta a **migração distal da comissura**, risco que o Campbell (p. 3668) aceita só quando a deformidade dos dedos desiguais ameaça.
 
-De onde vem o "18 meses"? O Green (p. 1218 e 1219) lembra que a separação já foi feita no **período neonatal** (JONES e UPTON, Orthop Trans, 1992, liberação nas seis primeiras semanas de vida), na primeira infância ou adiada até a infância, e que as revisões de longo prazo de **FLATT** (The Care of Congenital Hand Anomalies, 1977) e de **GER** (capítulo de sindactilia em BUCK-GRAMCKO, Congenital Malformations of the Hand and Forearm, 1998) mostraram **resultados melhores depois dos 18 meses**. A cirurgia mais precoce é ditada pelo **desvio esquelético progressivo** (KERET e GER, J Hand Surg Am, 1987). A meta é terminar **todas as liberações até a idade escolar**. O SIMÃO 2010 usou a resposta "cerca de 2 anos" (PARDINI, pelo curso); pelo Green, o número é 18 meses para os centrais e os primeiros meses para os de borda.
+De onde vem o "18 meses"? O Green (p. 1218 e 1219) lembra que a separação já foi feita no **período neonatal** (JONES e UPTON, Orthop Trans, 1992, liberação nas seis primeiras semanas de vida), na primeira infância ou adiada até a infância, e que as revisões de longo prazo de **FLATT** (The Care of Congenital Hand Anomalies, 1977) e de **GER** (capítulo de sindactilia em BUCK-GRAMCKO, Congenital Malformations of the Hand and Forearm, 1998) mostraram **resultados melhores depois dos 18 meses**. A cirurgia mais precoce é ditada pelo **desvio esquelético progressivo** (KERET e GER, J Hand Surg Am, 1987). A meta é terminar **todas as liberações até a idade escolar**. O simulado da prova de título de cirurgia da mão de 2010 usou a resposta "cerca de 2 anos" (PARDINI, pelo curso); pelo Green, o número é 18 meses para os centrais e os primeiros meses para os de borda.
 
 !tabela A época da separação em cada livro
 | Situação | Green (p. 1218, 1219, 1232) | Tachdjian (p. 308, 369) | Campbell (p. 3667, 3668) | Lovell and Winter (p. 946) | HEBERT |
@@ -169,11 +169,11 @@ De onde vem o "18 meses"? O Green (p. 1218 e 1219) lembra que a separação já 
 
 O Lovell and Winter (p. 946) acrescenta que, **depois dos 6 meses, o risco anestésico é igual** em toda a infância e que a separação **neonatal** teve mais complicações.
 
-Como as provas cobraram: a **primeira comissura** apareceu como "6 meses" (IAUPE 2025), "3 a 6 meses" (INTO 2026) e "3 a 6 meses, pelos autores do Green" (SIMÃO 2022); em todas, a ideia é que **é a que se opera mais cedo**. A **terceira** apareceu como "18 a 24 meses" (INTO 2023), de acordo com o Green, o Campbell e o HEBERT. O **SIMÃO 2026** deu um lactente de 5 meses com sindactilia **anular-mínimo** e o anular já desviando: borda, dedos desiguais, deformidade em instalação, separar por volta dos 6 meses; os distratores aplicavam a regra da terceira comissura ou liberavam os dois lados do anular juntos. A **PUC-SP 2023** só tinha uma afirmação sustentada: **segunda ou terceira comissura entre 18 e 24 meses**.
+Como as provas cobraram: a **primeira comissura** apareceu como "6 meses" (IAUPE 2025), "3 a 6 meses" (INTO 2026) e "3 a 6 meses, pelos autores do Green" (simulado da prova de título de cirurgia da mão de 2022); em todas, a ideia é que **é a que se opera mais cedo**. A **terceira** apareceu como "18 a 24 meses" (INTO 2023), de acordo com o Green, o Campbell e o HEBERT. O **Simulado da prova de título de cirurgia da mão de 2026** deu um lactente de 5 meses com sindactilia **anular-mínimo** e o anular já desviando: borda, dedos desiguais, deformidade em instalação, separar por volta dos 6 meses; os distratores aplicavam a regra da terceira comissura ou liberavam os dois lados do anular juntos. A **PUC-SP 2023** só tinha uma afirmação sustentada: **segunda ou terceira comissura entre 18 e 24 meses**.
 
 !questoes central=mao-0750 relacionadas=mao-0813,mao-0791,mao-1198 treino=mao-2434,mao-1729,mao-2884,mao-2896,mao-2897
 conceito: Dedos desiguais (polegar-indicador, anular-mínimo) separam-se cedo, porque o mais longo deforma em flexão, desvio e rotação; dedos parecidos (2ª e 3ª) esperam: após 18 meses no Green e no Campbell, 12 a 18 no Tachdjian.
-como: O SIMÃO 2022 perguntou a idade da primeira comissura no Green; a IAUPE 2025 e o INTO 2026, a época de polegar e indicador; o SIMÃO 2026, um anular-mínimo desviando aos 5 meses; o INTO 2023, a médio-anular; a PUC-SP 2023, afirmações sobre época.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou a idade da primeira comissura no Green; a IAUPE 2025 e o INTO 2026, a época de polegar e indicador; o simulado da prova de título de cirurgia da mão de 2026, um anular-mínimo desviando aos 5 meses; o INTO 2023, a médio-anular; a PUC-SP 2023, afirmações sobre época.
 armadilha: Usar uma idade única para todas, ou esperar 18 a 24 meses numa sindactilia de borda que já desvia.
 alerta: O Green 7ª ed. diz "primeiros meses de vida", sem os 3 a 6 meses de `mao-2434` e `mao-0813`; o Tachdjian e o Campbell situam após 6 meses; para `mao-0791`, o Tachdjian prefere 12 a 18 meses. `mao-1198` não tem gabarito oficial; os livros sustentam a C.
 !fim
@@ -249,11 +249,11 @@ O Green (p. 1224 a 1227) descreve a separação com enxerto, que é o caso habit
 | depois | retirar em **3 semanas**; fisioterapia em geral desnecessária; luva compressiva até 3 meses, massagem e silicone | cicatriz madura e plana |
 !fim
 
-O registro operatório precisa dizer **qual artéria foi ligada**, porque o outro lado daquele dedo será operado meses depois. Se as duas artérias de um dedo forem perdidas, o dedo morre. Quando nenhuma artéria pode ser ligada com segurança, o Green manda **limitar a comissura ao nível da bifurcação**; o enxerto venoso existe, mas é raríssimo (p. 1221). O SIMÃO 2014 cobrou o nervo que bifurca distal (dissecção interfascicular); o SIMÃO 2017, o gesso axilopalmar com cotovelo a 90 graus por 3 semanas; o SIMÃO 2022, o comprimento do retalho em ampulheta (dois terços da falange proximal).
+O registro operatório precisa dizer **qual artéria foi ligada**, porque o outro lado daquele dedo será operado meses depois. Se as duas artérias de um dedo forem perdidas, o dedo morre. Quando nenhuma artéria pode ser ligada com segurança, o Green manda **limitar a comissura ao nível da bifurcação**; o enxerto venoso existe, mas é raríssimo (p. 1221). O simulado da prova de título de cirurgia da mão de 2014 cobrou o nervo que bifurca distal (dissecção interfascicular); o simulado da prova de título de cirurgia da mão de 2017, o gesso axilopalmar com cotovelo a 90 graus por 3 semanas; o simulado da prova de título de cirurgia da mão de 2022, o comprimento do retalho em ampulheta (dois terços da falange proximal).
 
 !questoes treino=mao-2605,mao-2924,mao-2936
 conceito: Os autores do Green, quando vão enxertar, fazem a comissura com retalho dorsal em ampulheta das cabeças dos metacarpos até dois terços da falange proximal, mais um retangular palmar; dissecam de distal para proximal, ligam a menor das digitais se ambas estão íntegras e engessam acima do cotovelo por 3 semanas.
-como: O SIMÃO 2022 perguntou até onde vai o retalho dorsal em ampulheta.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou até onde vai o retalho dorsal em ampulheta.
 armadilha: Levar o retalho só até a metade ou um terço da falange proximal, o que deixa a comissura rasa.
 !fim
 
@@ -265,7 +265,7 @@ O curativo faz parte da operação (Green, p. 1226): compressão suave nos enxer
 
 !questoes central=mao-1055 relacionadas=mao-1558 treino=mao-2243
 conceito: Um lado do dedo por vez; todas as comissuras em dois tempos (1ª e 3ª, depois 2ª e 4ª); comissura com retalho dorsal de base proximal (BAUER, FLATT) e sem enxerto; enxerto de pele total nas laterais.
-como: A PUC-SP 2019 cobrou os tempos da sindactilia de todos os espaços; a SBCM 2023, a origem do retalho de BAUER modificado por FLATT; a USP 2026, como reconstruir a comissura.
+como: A PUC-SP 2019 cobrou os tempos da sindactilia de todos os espaços; a prova de título de 2023, a origem do retalho de BAUER modificado por FLATT; a USP 2026, como reconstruir a comissura.
 armadilha: Separar comissuras consecutivas juntas, fazer três tempos, ou forrar a comissura com enxerto.
 !fim
 
@@ -299,7 +299,7 @@ O Green (p. 1223) separa:
 - **precoces:** comprometimento vascular, **infecção**, deiscência e **perda do enxerto**;
 - **tardias:** **web creep** (a comissura puxada para distal pela cicatriz), **contraturas** das interfalângicas por cicatriz palmar, **unha em bico** e **instabilidade** depois das complexas.
 
-O web creep tem quatro causas (Green, p. 1223): **cicatriz longitudinal na base do dedo**, **perda de enxerto** com cicatrização por segunda intenção, **enxerto de pele parcial** e **deiscência do retalho**. A primeira causa vem de BARABAS e PICKFORD (J Hand Surg Eur, 2014), que mostraram que o desenho ruim, com cicatriz longitudinal na base do dedo, precipita a migração. A regra de ouro do Green para evitar tudo isso é **fechar sem tensão**: se a pele não fecha, desengordura-se ou enxerta-se, nunca se força. O SIMÃO 2019 perguntou o que ajuda a prevenir o web creep, e a resposta pelo livro é o **enxerto de pele total** nos defeitos; o enxerto total não causa retração, o parcial sim. O Campbell (p. 3670) soma a idade (**antes de 18 meses**); o Tachdjian (p. 371) diz que o desenho ruim pesa muito mais que o "enxerto que não cresce", e cita **web creep significativo em 8%** numa série de 5 anos (p. 378).
+O web creep tem quatro causas (Green, p. 1223): **cicatriz longitudinal na base do dedo**, **perda de enxerto** com cicatrização por segunda intenção, **enxerto de pele parcial** e **deiscência do retalho**. A primeira causa vem de BARABAS e PICKFORD (J Hand Surg Eur, 2014), que mostraram que o desenho ruim, com cicatriz longitudinal na base do dedo, precipita a migração. A regra de ouro do Green para evitar tudo isso é **fechar sem tensão**: se a pele não fecha, desengordura-se ou enxerta-se, nunca se força. O simulado da prova de título de cirurgia da mão de 2019 perguntou o que ajuda a prevenir o web creep, e a resposta pelo livro é o **enxerto de pele total** nos defeitos; o enxerto total não causa retração, o parcial sim. O Campbell (p. 3670) soma a idade (**antes de 18 meses**); o Tachdjian (p. 371) diz que o desenho ruim pesa muito mais que o "enxerto que não cresce", e cita **web creep significativo em 8%** numa série de 5 anos (p. 378).
 
 !tabela Frequência das complicações nos livros
 | Complicação | O que dizem |
@@ -316,7 +316,7 @@ Nas complexas, deformidades rotacionais e angulares e problemas das paredes da u
 
 !questoes treino=mao-2000,mao-2940
 conceito: Precoces: vascular, infecção, deiscência, perda do enxerto; tardias: web creep (cicatriz longitudinal, perda de enxerto, pele parcial, deiscência, cirurgia antes de 18 meses), contraturas, unha em bico, instabilidade; a deformidade cicatricial é a mais comum.
-como: O SIMÃO 2023 perguntou quais complicações pós-operatórias são as mais raras.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou quais complicações pós-operatórias são as mais raras.
 armadilha: Achar que o web creep é raro: é a complicação tardia típica.
 alerta: O Campbell dá infecção em 1,6% (sustenta o gabarito), mas o Lovell and Winter (p. 949) também chama o queloide de raro; o gabarito oficial foi preservado.
 !fim
@@ -333,7 +333,7 @@ O tratamento da acrossindactilia (Green, p. 1227 e 1257) segue a gravidade:
 
 - **leves:** técnica padrão da sindactilia, incorporando ou excisando o seio;
 - **complexas:** **liberar primeiro as pontas** e reconstruir a comissura depois, para que os dedos cresçam livres;
-- **dedos não vizinhos e de comprimentos diferentes** presos pela ponta: **soltar cedo a união distal e adiar a comissura** (SBCM 2025), porque o mais longo, preso ao curto, desvia e flete com o crescimento;
+- **dedos não vizinhos e de comprimentos diferentes** presos pela ponta: **soltar cedo a união distal e adiar a comissura** (prova de título de 2025), porque o mais longo, preso ao curto, desvia e flete com o crescimento;
 - **graves:** amputar as pontas desorganizadas pode ser a melhor saída;
 - **anéis** associados: excisão com V-Y.
 
@@ -341,7 +341,7 @@ A UFG 2017 cobrou a definição da acrossindactilia; os distratores vêm do mesm
 
 !questoes central=mao-0841 relacionadas=mao-0876 treino=mao-2002,mao-2885,mao-2933
 conceito: Acrossindactilia = pontas fundidas com seio proximal, típica da banda (STREETER), bilateral em 50% e com dedos ausentes em 50%; é PATTERSON 3; a banda é deficiência transversal com estruturas proximais quase normais; dois anéis vizinhos se liberam um de cada vez.
-como: O INTO 2026 perguntou o tipo de PATTERSON da acrossindactilia da síndrome de STREETER; a UFG 2017, a definição de acrossindactilia; o SIMÃO 2023, afirmações sobre a banda.
+como: O INTO 2026 perguntou o tipo de PATTERSON da acrossindactilia da síndrome de STREETER; a UFG 2017, a definição de acrossindactilia; o simulado da prova de título de cirurgia da mão de 2023, afirmações sobre a banda.
 armadilha: Chamar a banda de deficiência longitudinal, achar que o proximal está muito alterado, ou liberar dois anéis vizinhos juntos.
 alerta: Sobre o nervo (`mao-2002`), o Green relata sucesso com descompressão e casos sem melhora por ausência do nervo distal, sem afirmar que a reconstrução supera a neurólise; o gabarito oficial foi preservado.
 !fim
@@ -366,11 +366,11 @@ A **APERT** junta **craniossinostose bicoronal**, **hipoplasia mediofacial** e *
 
 Há divergência: o Tachdjian diz que, fora o musculoesquelético, **não há outras alterações**; o HEBERT descreve deficiência mental e problemas de fala.
 
-As referências do Green para a síndrome estão na lista do capítulo: a definição clássica (FEARON e PODNER, Plast Reconstr Surg, 2013, que avaliaram um algoritmo de tratamento); a mutação localizada do **FGFR2**, alélica à da CROUZON (WILKIE, SLANEY e OLDRIDGE, Nature Genet, 1995); e o ombro e o cotovelo (ANDERSON e colaboradores, J Craniofac Surg, 1998; MURNAGHAN e colaboradores, J Pediatr Orthop, 2007). O ombro merece uma linha a mais, porque caiu no SIMÃO 2017: o desenvolvimento da glenoumeral é **assimétrico**, com **supercrescimento da tuberosidade maior** e **glenoide hipoplásica**, e o movimento do ombro **piora com o crescimento**. No cotovelo, as anomalias são sobretudo **radiocapitelares**.
+As referências do Green para a síndrome estão na lista do capítulo: a definição clássica (FEARON e PODNER, Plast Reconstr Surg, 2013, que avaliaram um algoritmo de tratamento); a mutação localizada do **FGFR2**, alélica à da CROUZON (WILKIE, SLANEY e OLDRIDGE, Nature Genet, 1995); e o ombro e o cotovelo (ANDERSON e colaboradores, J Craniofac Surg, 1998; MURNAGHAN e colaboradores, J Pediatr Orthop, 2007). O ombro merece uma linha a mais, porque caiu no simulado da prova de título de cirurgia da mão de 2017: o desenvolvimento da glenoumeral é **assimétrico**, com **supercrescimento da tuberosidade maior** e **glenoide hipoplásica**, e o movimento do ombro **piora com o crescimento**. No cotovelo, as anomalias são sobretudo **radiocapitelares**.
 
 ## A mão
 
-O Green (p. 1228): **sindactilia complexa do indicador, médio e anular**, **simples entre anular e mínimo**, primeira comissura variável agravada pela **clinodactilia radial do polegar**; interfalângicas rígidas; nas graves, a mão em **botão de rosa**; **paroníquias**; **capitato-hamato** e **sinostose 4º-5º metacarpos**, que impede o mínimo de se opor; e **gravidade da mão inversa à da face**. O Tachdjian (p. 392) acrescenta a **falange proximal do polegar em delta**, o **sinfalangismo** e o **quinto raio como o mais normal**. É a resposta do SIMÃO 2023: **fusão dos dedos centrais, com polegar e mínimo podendo estar envolvidos**.
+O Green (p. 1228): **sindactilia complexa do indicador, médio e anular**, **simples entre anular e mínimo**, primeira comissura variável agravada pela **clinodactilia radial do polegar**; interfalângicas rígidas; nas graves, a mão em **botão de rosa**; **paroníquias**; **capitato-hamato** e **sinostose 4º-5º metacarpos**, que impede o mínimo de se opor; e **gravidade da mão inversa à da face**. O Tachdjian (p. 392) acrescenta a **falange proximal do polegar em delta**, o **sinfalangismo** e o **quinto raio como o mais normal**. É a resposta do simulado da prova de título de cirurgia da mão de 2023: **fusão dos dedos centrais, com polegar e mínimo podendo estar envolvidos**.
 
 !tabela Classificação da mão de APERT (UPTON; Green, Tabela 36.1, p. 1228)
 | Tipo | Apelido | Primeira comissura | Massa central | Quarta comissura |
@@ -386,7 +386,7 @@ como: O Einstein 2026 descreveu a primeira comissura complexa completa com poss�
 armadilha: Marcar o tipo II, em que a primeira comissura é simples completa.
 !fim
 
-O HEBERT descreve os mesmos três tipos (pá, colher, casco ou "pata de vaca"); o Tachdjian só fala em pá e colher. A classificação é de UPTON ("Apert syndrome: classification and pathologic anatomy of limb anomalies", Clin Plast Surg, 1991), a partir de BLAUTH e SCHNEIDER-SICKERT. Ela usa três colunas, e é preciso lê-las juntas: no tipo **II**, a 1ª e a 4ª comissuras são as duas **simples completas** (SIMÃO 2013); no tipo **III**, a 1ª é **complexa completa**, com o polegar incorporado à massa, e a 4ª costuma vir com **sinostose do 4º e 5º metacarpos** (Einstein 2026). A **KELLAM** (Green, Tabela 36.3, p. 1240) agrupa síndromes pela braquidactilia: a APERT é **braquidactilia com sindactilia**, com CORNELIA DE LANGE; com polidactilia ficam ELLIS-VAN CREVELD e a orofaciodigital.
+O HEBERT descreve os mesmos três tipos (pá, colher, casco ou "pata de vaca"); o Tachdjian só fala em pá e colher. A classificação é de UPTON ("Apert syndrome: classification and pathologic anatomy of limb anomalies", Clin Plast Surg, 1991), a partir de BLAUTH e SCHNEIDER-SICKERT. Ela usa três colunas, e é preciso lê-las juntas: no tipo **II**, a 1ª e a 4ª comissuras são as duas **simples completas** (simulado da prova de título de cirurgia da mão de 2013); no tipo **III**, a 1ª é **complexa completa**, com o polegar incorporado à massa, e a 4ª costuma vir com **sinostose do 4º e 5º metacarpos** (Einstein 2026). A **KELLAM** (Green, Tabela 36.3, p. 1240) agrupa síndromes pela braquidactilia: a APERT é **braquidactilia com sindactilia**, com CORNELIA DE LANGE; com polidactilia ficam ELLIS-VAN CREVELD e a orofaciodigital.
 
 ## O tratamento
 
@@ -396,7 +396,7 @@ Coordenado com a equipe craniofacial; o crânio tem prioridade quando há risco 
 2. **Polegar:** **osteotomia de cunha de abertura** com enxerto, que pode vir da sinostose 4-5 (p. 1230); o HEBERT também reposiciona o **abdutor curto**.
 3. **Pontas:** no botão de rosa, soltar as uniões distais **converte a mão em pá (tipo I)** e acaba com as paroníquias (p. 1230).
 4. **Dedos** em estágios, nunca os dois lados juntos; incisão reta é aceitável nos dedos rígidos (p. 1231).
-5. **Mínimo:** liberar a sinostose 4-5 com **interposição de fáscia ou gordura**, que reduz a recidiva (SIMÃO 2019); UPTON adia até os **5 anos**, porque antes a ponte volta mais; os autores operam antes, para usar o osso da sinostose como enxerto do polegar, e aceitam alguma recidiva. Liberar também a carpometacarpal do quinto deixa o metacarpo fletir e o mínimo se opor (p. 1231).
+5. **Mínimo:** liberar a sinostose 4-5 com **interposição de fáscia ou gordura**, que reduz a recidiva (simulado da prova de título de cirurgia da mão de 2019); UPTON adia até os **5 anos**, porque antes a ponte volta mais; os autores operam antes, para usar o osso da sinostose como enxerto do polegar, e aceitam alguma recidiva. Liberar também a carpometacarpal do quinto deixa o metacarpo fletir e o mínimo se opor (p. 1231).
 
 Detalhes que mostram o pensamento dos autores (p. 1229 a 1231): a separação dos dedos costuma ser **em etapas** (VAN HEEST, HOUSE e RECKLING, J Hand Surg Am, 1997, em dois tempos), embora haja relato de **liberação dos cinco dedos em um tempo** com planejamento angiográfico (HARVEY e colaboradores, J Hand Surg Am, 2012), porque os feixes podem ser anômalos; a **tomografia 3D** mostra o esqueleto e pode ser feita junto com a imagem craniofacial (HOLTEN e colaboradores, Plast Reconstr Surg, 1997); na primeira comissura grave, o retalho dorsal de rotação e avanço vem de FERESHETIAN e UPTON (Clin Plast Surg, 1991); os autores evitam retalhos pediculados do antebraço e usam o **retalho inguinal livre** nas contraturas graves, porque os vasos da primeira comissura servem de receptores; e nos dedos rígidos em extensão aceitam **incisão reta**, sem risco de contratura das IF, com enxerto total do abdome inferior.
 
@@ -404,7 +404,7 @@ E ressecar um raio? O Green (p. 1230) admite sacrificar **um indicador muito def
 
 !questoes central=mao-1229 treino=mao-1999,mao-1995,mao-2092,mao-2943
 conceito: APERT: craniossinostose bicoronal, face hipoplásica e sindactilia complexa das mãos e dos pés (FGFR2, 10q); fusão complexa dos dedos centrais, simples na 4ª, polegar em clinodactilia radial, capitato-hamato e 4º-5º metacarpos; UPTON I pá, II colher, III botão de rosa; KELLAM: braquidactilia com sindactilia; primeira comissura primeiro, tudo antes dos 2 anos.
-como: O SIMÃO 2023 perguntou a apresentação da mão e a associação na classificação de KELLAM; a UERJ 2025, a ordem das comissuras na isolada e as alterações da APERT; a SBCM 2024, o tipo com ressecção de um raio.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou a apresentação da mão e a associação na classificação de KELLAM; a UERJ 2025, a ordem das comissuras na isolada e as alterações da APERT; a prova de título de 2024, o tipo com ressecção de um raio.
 armadilha: Dizer que a fusão é dos dedos radiais ou ulnares, ou começar pelos dedos centrais e não pela primeira comissura.
 alerta: `mao-1229` é discursiva e sem gabarito: a) 3ª, 4ª, depois 2ª e 1ª (o HEBERT põe a 2ª antes da 4ª); b) craniossinostose coronal, exoftalmo, hipoplasia maxilar, palato alto, apinhamento dentário, ombro e cotovelo displásicos, capitato-hamato e sinostose 4º-5º metacarpos. Para `mao-2092`, o Green 7ª ed. e o HEBERT não amarram a ressecção a um tipo; o gabarito oficial (tipo III) foi preservado.
 !fim
@@ -441,7 +441,7 @@ A sindactilia acompanha polidactilia, clinodactilia, braquidactilia, sinfalangis
 
 !questoes relacionadas=mao-0752 treino=mao-2284,mao-2001
 conceito: Na deficiência ulnar, 30% das mãos têm sindactilia (90% com dedos ausentes, 70% com polegar anormal); na COONEY, a clinodactilia complexa é a associada à sindactilia; na POLAND, sindactilia simples dos dedos centrais curtos.
-como: O SIMÃO 2024 perguntou a proporção de sindactilia na deficiência ulnar; o SIMÃO 2023, a deformidade associada à clinodactilia na sua classificação.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou a proporção de sindactilia na deficiência ulnar; o simulado da prova de título de cirurgia da mão de 2023, a deformidade associada à clinodactilia na sua classificação.
 armadilha: Trocar os três números da deficiência ulnar, ou associar a clinodactilia complexa à camptodactilia.
 !fim
 
@@ -480,7 +480,7 @@ O Green (p. 1304) acrescenta que a pré-axial também é frequente em **nativos 
 
 !questoes central=mao-1003 relacionadas=pediatria-0804 treino=mao-2533,mao-3603,mao-3612
 conceito: Pré-axial = lado radial, predomínio em brancos; pós-axial = lado ulnar, predomínio em negros; STELLING e TUREK: I partes moles, II ligação a falange ou metacarpo alargado ou bífido, III raio completo.
-como: O SIMÃO 2021 perguntou a epidemiologia pelo Green; a UFG 2021, o tipo de TUREK do dedo articulado com metacarpo ou falange alargada.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou a epidemiologia pelo Green; a UFG 2021, o tipo de TUREK do dedo articulado com metacarpo ou falange alargada.
 armadilha: Inverter lado e raça, ou dar o tipo III a qualquer dedo com osso.
 !fim
 
@@ -492,9 +492,9 @@ O Campbell (p. 3666) refina: o **tipo A é raro e igual nas raças**; o **tipo B
 
 **Tipo B:** ligar a base no **berçário** ou retirar com anestesia local e eletrocautério; o **nódulo residual** é a complicação mais comum (Green, p. 1233). O Tachdjian (p. 308 e 367) trata a polidactilia flutuante **nos primeiros dias**, só se o **pedículo é estreito**; o clipe faz o dedo cair em cerca de **3 semanas**; a cicatriz pode doer por **neuroma**. O Campbell (p. 3666) pesa contra a ligadura: **42% de revisão** contra nenhuma com a excisão; o HEBERT prefere a excisão elíptica (a ligadura pode levar **30 dias**).
 
-**Tipo A:** **ablação cirúrgica** com transferência do **colateral ulnar e do abdutor do mínimo** para o dedo vizinho (Green, p. 1233), por volta de 1 ano (Campbell) ou entre 12 e 24 meses (HEBERT). A técnica do Green (p. 1233 e 1234): incisão elíptica na base, estendida para proximal; tendões anômalos removidos; nervos digitais seccionados e artérias coaguladas; o **abdutor do mínimo** é transferido ao quinto dedo para restaurar a abdução, e o **colateral ulnar** vai junto para estabilizar a MF; fio absorvível e **gesso axilopalmar por 3 semanas**. Esquecer o colateral deixa o mínimo instável e desviado; esquecer o abdutor deixa o dedo sem abdução (SIMÃO 2019).
+**Tipo A:** **ablação cirúrgica** com transferência do **colateral ulnar e do abdutor do mínimo** para o dedo vizinho (Green, p. 1233), por volta de 1 ano (Campbell) ou entre 12 e 24 meses (HEBERT). A técnica do Green (p. 1233 e 1234): incisão elíptica na base, estendida para proximal; tendões anômalos removidos; nervos digitais seccionados e artérias coaguladas; o **abdutor do mínimo** é transferido ao quinto dedo para restaurar a abdução, e o **colateral ulnar** vai junto para estabilizar a MF; fio absorvível e **gesso axilopalmar por 3 semanas**. Esquecer o colateral deixa o mínimo instável e desviado; esquecer o abdutor deixa o dedo sem abdução (simulado da prova de título de cirurgia da mão de 2019).
 
-Os números de prevalência do Green (1 em 143 afro-americanos, 1 em 1.339 caucasianos) vêm de WATSON e HENNRIKUS ("Postaxial type-B polydactyly: prevalence and treatment", J Bone Joint Surg Am, 1997). O nódulo residual depois da ligadura é a complicação habitual (SIMÃO 2014), mas há relatos de complicações mais sérias com a ligadura por fio (HERAS, BARCO e COHEN, J Hand Surg Br, 1999; PATILLO e RAYAN, Hand, 2011). A classificação em A e B é de TEMTAMY e McKUSICK (The Genetics of Hand Malformations, 1978). A ELLIS-VAN CREVELD (displasia condroectodérmica) é a síndrome que a SBCM 2015 cobrou: polidactilia pós-axial com **unhas displásicas** (Fig. 36.36) numa criança branca.
+Os números de prevalência do Green (1 em 143 afro-americanos, 1 em 1.339 caucasianos) vêm de WATSON e HENNRIKUS ("Postaxial type-B polydactyly: prevalence and treatment", J Bone Joint Surg Am, 1997). O nódulo residual depois da ligadura é a complicação habitual (simulado da prova de título de cirurgia da mão de 2014), mas há relatos de complicações mais sérias com a ligadura por fio (HERAS, BARCO e COHEN, J Hand Surg Br, 1999; PATILLO e RAYAN, Hand, 2011). A classificação em A e B é de TEMTAMY e McKUSICK (The Genetics of Hand Malformations, 1978). A ELLIS-VAN CREVELD (displasia condroectodérmica) é a síndrome que a prova de título de 2015 cobrou: polidactilia pós-axial com **unhas displásicas** (Fig. 36.36) numa criança branca.
 
 Os distratores da USP vêm de outros capítulos: **policização** (hipoplasia do polegar), **BILHAUT-CLOQUET** (polegar simétrico), **WASSEL** (polegar) e herança **recessiva**.
 
@@ -508,19 +508,19 @@ armadilha: Dizer que é mais comum em caucasianos, recessiva, sindrômica no afr
 
 ## O anular
 
-A central é um dedo extra **dentro da mão** e é **incomum** perto das de borda (Green, p. 1234). A ordem: **anular, depois médio, por último indicador**. O Tachdjian (p. 359) diz o mesmo: duplicações **mais comuns do lado ulnar**, a do **indicador a mais rara**. É a questão mais repetida do tema (SIMÃO 2023, 2024 e 2026; SBCM 2022 e 2023), e a pegadinha é marcar o **médio**, o dedo "do centro".
+A central é um dedo extra **dentro da mão** e é **incomum** perto das de borda (Green, p. 1234). A ordem: **anular, depois médio, por último indicador**. O Tachdjian (p. 359) diz o mesmo: duplicações **mais comuns do lado ulnar**, a do **indicador a mais rara**. É a questão mais repetida do tema (simulado da prova de título de cirurgia da mão de 2023, 2024 e 2026; prova de título de 2022 e 2023), e a pegadinha é marcar o **médio**, o dedo "do centro".
 
-O Tachdjian (p. 359 e 360) completa: **frequentemente bilateral**, **autossômica dominante**, **muitas vezes com sindactilia**; central, sindactilia e fenda andam juntas (fenda de um lado, central do outro); **pés** acometidos. O Campbell (p. 3679): até **55% de história familiar**, bilateral, membros inferiores. O Lovell and Winter (p. 949): **mais meninas**, dedos raramente normais. O HEBERT: a **mais rara** das polidactilias, mais no sexo feminino, bilateral, e com sindactilia (**polissindactilia**) afeta a **terceira comissura**. Daí o SIMÃO 2022: **anular e bilateralidade**.
+O Tachdjian (p. 359 e 360) completa: **frequentemente bilateral**, **autossômica dominante**, **muitas vezes com sindactilia**; central, sindactilia e fenda andam juntas (fenda de um lado, central do outro); **pés** acometidos. O Campbell (p. 3679): até **55% de história familiar**, bilateral, membros inferiores. O Lovell and Winter (p. 949): **mais meninas**, dedos raramente normais. O HEBERT: a **mais rara** das polidactilias, mais no sexo feminino, bilateral, e com sindactilia (**polissindactilia**) afeta a **terceira comissura**. Daí o simulado da prova de título de cirurgia da mão de 2022: **anular e bilateralidade**.
 
 !questoes treino=mao-2280,mao-1725,mao-1996,mao-2153,mao-2242,mao-2454,mao-2912
 conceito: Na central, o anular é o mais duplicado, depois o médio e por último o indicador; é frequentemente bilateral e AD.
-como: O SIMÃO 2024, o SIMÃO 2026, o SIMÃO 2023, a SBCM 2022 e a SBCM 2023 perguntaram o dedo mais duplicado; o SIMÃO 2022, o dedo e a lateralidade.
+como: O simulado da prova de título de cirurgia da mão de 2024, o simulado da prova de título de cirurgia da mão de 2026, o simulado da prova de título de cirurgia da mão de 2023, a prova de título de 2022 e a prova de título de 2023 perguntaram o dedo mais duplicado; o simulado da prova de título de cirurgia da mão de 2022, o dedo e a lateralidade.
 armadilha: Marcar o médio por ser o do centro, ou achar que a central é unilateral.
 !fim
 
 ## A sinpolidactilia e o tratamento
 
-A central pode estar **escondida numa sindactilia**, a **sinpolidactilia**; o reconhecimento exige radiografia; a forma do **anular com sindactilia** é **familiar** e ligada ao **HOXD13** no cromossomo 2 (Green, p. 1234). A central também aparece em síndromes, como a **condrodisplasia de GREBE** (Fig. 36.40). Na ordem de frequência (anular, médio, indicador), o SIMÃO 2013 cobrou o segundo lugar: o **médio**. E a central não vive sozinha: OGINO (J Hand Surg Br, 1990) produziu em ratos, com o mesmo teratógeno, polidactilia central, sindactilia óssea e mão em fenda, e é por isso que a IFSSH modificada põe as três no grupo da **falha de indução do raio digital** (assunto do resumo **Malformações congênitas**).
+A central pode estar **escondida numa sindactilia**, a **sinpolidactilia**; o reconhecimento exige radiografia; a forma do **anular com sindactilia** é **familiar** e ligada ao **HOXD13** no cromossomo 2 (Green, p. 1234). A central também aparece em síndromes, como a **condrodisplasia de GREBE** (Fig. 36.40). Na ordem de frequência (anular, médio, indicador), o simulado da prova de título de cirurgia da mão de 2013 cobrou o segundo lugar: o **médio**. E a central não vive sozinha: OGINO (J Hand Surg Br, 1990) produziu em ratos, com o mesmo teratógeno, polidactilia central, sindactilia óssea e mão em fenda, e é por isso que a IFSSH modificada põe as três no grupo da **falha de indução do raio digital** (assunto do resumo **Malformações congênitas**).
 
 !tabela Polidactilia central: STELLING e TUREK modificada (Tachdjian, p. 360)
 | Tipo | Descrição |
@@ -535,17 +535,17 @@ O Tachdjian não dá frequências por tipo, mas chama o III de raro; como a cent
 O tratamento é um dos mais difíceis da mão congênita (Green, p. 1235 e 1236; Tachdjian, p. 366 e 367):
 
 - dedo central **completo e funcional não precisa sair**: uma mão de cinco dedos bem formados com função normal fica como está (Fig. 36.44);
-- isolado com pouco movimento: **ressecção do raio**, mantendo a abertura da mão com transposição dos raios vizinhos ou reconstrução do ligamento intermetacárpico (SIMÃO 2012);
-- sinpolidactilia: separar e reduzir o dedo escondido, com exposição ampla e combinação de ressecção e osteotomia; mas a ressecção costuma ficar **incompleta**, melhora a aparência e **não o movimento** (SIMÃO 2014), **várias cirurgias** podem ser necessárias e o resultado pode **decepcionar**; dedos com conexões complicadas podem ficar **melhor sem tratamento** do que separados em dedos rígidos e instáveis;
+- isolado com pouco movimento: **ressecção do raio**, mantendo a abertura da mão com transposição dos raios vizinhos ou reconstrução do ligamento intermetacárpico (simulado da prova de título de cirurgia da mão de 2012);
+- sinpolidactilia: separar e reduzir o dedo escondido, com exposição ampla e combinação de ressecção e osteotomia; mas a ressecção costuma ficar **incompleta**, melhora a aparência e **não o movimento** (simulado da prova de título de cirurgia da mão de 2014), **várias cirurgias** podem ser necessárias e o resultado pode **decepcionar**; dedos com conexões complicadas podem ficar **melhor sem tratamento** do que separados em dedos rígidos e instáveis;
 - central **parcial** (só um segmento duplicado): segue os **princípios da duplicação do polegar** (Fig. 36.48), retirando o componente menor e reconstruindo colateral e tendões no que fica;
 - o dedo central rígido e insensível é um **"parasita funcional"**; elementos **transversos** pedem excisão precoce (Tachdjian);
 - o Campbell (p. 3680) reconstrói **até os 6 meses**; o HEBERT diz que o resultado é **pior** que o da sindactilia simples.
 
-O caso do SIMÃO 2026 (sindactilia médio-anular bilateral com esqueleto extra e o pai com os pés acometidos) é sinpolidactilia familiar; correta: **resultados menos previsíveis, com rigidez, desvio e novas cirurgias**. ELLIS-VAN CREVELD é da pós-axial, e a ligadura só vale para o tipo B. O SIMÃO 2023 cobrou a epidemiologia: a central **se associa à sindactilia na maioria dos casos**; no Ocidente, a ulnar é mais frequente, a central é bilateral e é familiar.
+O caso do simulado da prova de título de cirurgia da mão de 2026 (sindactilia médio-anular bilateral com esqueleto extra e o pai com os pés acometidos) é sinpolidactilia familiar; correta: **resultados menos previsíveis, com rigidez, desvio e novas cirurgias**. ELLIS-VAN CREVELD é da pós-axial, e a ligadura só vale para o tipo B. O simulado da prova de título de cirurgia da mão de 2023 cobrou a epidemiologia: a central **se associa à sindactilia na maioria dos casos**; no Ocidente, a ulnar é mais frequente, a central é bilateral e é familiar.
 
 !questoes treino=mao-1730,mao-1998,mao-2419,mao-2880,mao-2909,mao-2923,mao-2950
 conceito: A central muitas vezes se esconde numa sindactilia (sinpolidactilia), familiar, AD, bilateral, com pés acometidos (HOXD13); STELLING e TUREK II é a forma habitual; o tratamento tem resultados imprevisíveis, e conexões complicadas podem ficar sem separar.
-como: O SIMÃO 2026 deu um caso de sinpolidactilia familiar bilateral; o SIMÃO 2023, a epidemiologia da central; o SIMÃO 2022, o tipo mais frequente de STELLING e TUREK.
+como: O simulado da prova de título de cirurgia da mão de 2026 deu um caso de sinpolidactilia familiar bilateral; o simulado da prova de título de cirurgia da mão de 2023, a epidemiologia da central; o simulado da prova de título de cirurgia da mão de 2022, o tipo mais frequente de STELLING e TUREK.
 armadilha: Tratar a central como a pós-axial B (ligadura) ou ligá-la a ELLIS-VAN CREVELD.
 alerta: Os livros dizem "frequentemente" associada à sindactilia, sem os 70 a 90% de `mao-1998`, e não dão a frequência de cada tipo de STELLING e TUREK (`mao-2419`); os gabaritos oficiais foram preservados.
 !fim
@@ -554,7 +554,7 @@ alerta: Os livros dizem "frequentemente" associada à sindactilia, sem os 70 a 9
 
 ## O que é
 
-A mão em espelho é rara e é a polidactilia levada ao extremo: uma **duplicação simétrica na linha média** (Green, p. 1237). O quadro típico tem um **dedo central com três dedos de cada lado**, que repetem médio, anular e mínimo em simetria de espelho (Fig. 36.49; BARTON, BUCK-GRAMCKO e EVANS, J Hand Surg Br, 1986, que descreveram a anatomia de partes moles). São **sete dedos e nenhum polegar**: é a resposta do SIMÃO 2020, e por isso o simulado do SIMÃO 2023 marca como errada a alternativa que dizia que o primeiro dedo radial é um polegar.
+A mão em espelho é rara e é a polidactilia levada ao extremo: uma **duplicação simétrica na linha média** (Green, p. 1237). O quadro típico tem um **dedo central com três dedos de cada lado**, que repetem médio, anular e mínimo em simetria de espelho (Fig. 36.49; BARTON, BUCK-GRAMCKO e EVANS, J Hand Surg Br, 1986, que descreveram a anatomia de partes moles). São **sete dedos e nenhum polegar**: é a resposta do simulado da prova de título de cirurgia da mão de 2020, e por isso o simulado do simulado da prova de título de cirurgia da mão de 2023 marca como errada a alternativa que dizia que o primeiro dedo radial é um polegar.
 
 O antebraço também é espelhado: **duas ulnas e nenhum rádio** (a **dimelia ulnar**). A ulna pré-axial costuma ser mais curta, e a mão fica em desvio radial. As partes moles são bizarras: tendões, músculos e nervos duplicados ou ausentes.
 
@@ -578,13 +578,13 @@ AL-QATTAN e colaboradores (J Hand Surg Br, 1998) propuseram que a mão em espelh
 
 ## O exame e o tratamento
 
-O exame mostra o que vai limitar o resultado (p. 1237 e 1238): a **extensão do punho é limitada**, porque os extensores do punho são deficientes; o **antebraço e o cotovelo mexem pouco**, porque duas ulnas não giram uma sobre a outra (SIMÃO 2023: duas ulnas, com punho e cotovelo rígidos). A flexão do cotovelo varia com a anatomia.
+O exame mostra o que vai limitar o resultado (p. 1237 e 1238): a **extensão do punho é limitada**, porque os extensores do punho são deficientes; o **antebraço e o cotovelo mexem pouco**, porque duas ulnas não giram uma sobre a outra (simulado da prova de título de cirurgia da mão de 2023: duas ulnas, com punho e cotovelo rígidos). A flexão do cotovelo varia com a anatomia.
 
-O tratamento tem dois princípios (p. 1238): **reduzir a mão a quatro dedos** e **construir um polegar** com os dedos retirados, usando as "peças de reposição" (BARTON e colaboradores, J Hand Surg Br, 1986, policização verdadeira; AL-QATTAN e colaboradores, J Hand Surg Eur, 2013, reconstrução sem policização formal). Os autores **policizam o dedo radial mais móvel** e retiram os mais rígidos (SIMÃO 2020); a pele dos dedos retirados aumenta a primeira comissura, e uma transferência tendinosa reforça o motor do novo polegar. Com **oito dedos**, o mais pré-axial pode ser policizado e o mais pós-axial amputado (Figs. 36.51 e 36.52).
+O tratamento tem dois princípios (p. 1238): **reduzir a mão a quatro dedos** e **construir um polegar** com os dedos retirados, usando as "peças de reposição" (BARTON e colaboradores, J Hand Surg Br, 1986, policização verdadeira; AL-QATTAN e colaboradores, J Hand Surg Eur, 2013, reconstrução sem policização formal). Os autores **policizam o dedo radial mais móvel** e retiram os mais rígidos (simulado da prova de título de cirurgia da mão de 2020); a pele dos dedos retirados aumenta a primeira comissura, e uma transferência tendinosa reforça o motor do novo polegar. Com **oito dedos**, o mais pré-axial pode ser policizado e o mais pós-axial amputado (Figs. 36.51 e 36.52).
 
 !questoes relacionadas=mao-0665 treino=mao-2007,mao-3607
 conceito: Mão em espelho: duplicação simétrica com dedo central e três de cada lado, sete dedos e nenhum polegar; duas ulnas e nenhum rádio, punho com pouca extensão e cotovelo e antebraço rígidos; vem da duplicação da ZPA (sonic hedgehog); trata-se reduzindo a quatro dedos e policizando o dedo radial mais móvel.
-como: A FMRP-USP 2026 perguntou o centro de sinalização; o SIMÃO 2023, a característica que define a anomalia.
+como: A FMRP-USP 2026 perguntou o centro de sinalização; o simulado da prova de título de cirurgia da mão de 2023, a característica que define a anomalia.
 armadilha: Dizer que o dedo mais radial é um polegar, ou ligar a mão em espelho à crista ectodérmica apical.
 !fim
 
@@ -647,7 +647,7 @@ A radiografia de um bebê mostra osso, não cartilagem, e isso tem duas consequ�
 - **Pouco ou nenhum movimento passivo** no ponto de bifurcação do componente menor (em geral o radial) sugere um tipo **ímpar** (I, III ou V): os dois componentes estão unidos por cartilagem na base, que a radiografia ainda não mostra.
 - Na cirurgia, uma **ponte cartilaginosa** entre os componentes muda a classificação: o **II vira I** e o **IV vira III**. A classificação final é a da peça na mão do cirurgião, não a da radiografia.
 
-As duas regras são a mesma ideia vista de dois lados: bífido significa unido, e a união pode ser cartilaginosa antes de ser óssea. O SIMÃO 2014 cobrou as duas.
+As duas regras são a mesma ideia vista de dois lados: bífido significa unido, e a união pode ser cartilaginosa antes de ser óssea. O simulado da prova de título de cirurgia da mão de 2014 cobrou as duas.
 
 !questoes central=mao-0935 relacionadas=mao-0400,mao-0423,mao-0712,mao-1096,mao-1370,mao-1415,mao-1560,mao-0976 treino=mao-3598,mao-3600,mao-3613,mao-3616,mao-3618,mao-3619
 conceito: WASSEL alterna bífido (ímpar) e duplicado (par): I e II na distal, III e IV na proximal, V e VI no metacarpo, VII trifalângico; o IV é o mais comum (cerca de 50% no Green, 43 a 53% no Tachdjian, 47% no Campbell).
@@ -666,7 +666,7 @@ Um dos componentes costuma dominar, e nada é urgente. O Green opera por volta d
 
 A conversa com os pais muda o que eles esperam. O Green prefere o termo **polegar dividido** (split thumb): nenhum dos dois componentes tem a robustez de um polegar normal, porque o material de um polegar foi repartido em dois. O resultado final será **mais fino** que o do outro lado, com comprimento parecido. A cirurgia é de **peças de reposição** (spare parts): do componente retirado aproveitam-se colateral, tendões, músculo, pele e polpa para completar o que fica.
 
-O alvo da reconstrução tem cinco itens: **eixo longitudinal**, **articulações estáveis**, **motores equilibrados**, **unha sem deformidade** e **tamanho suficiente**. Os **colaterais** são críticos nos tipos em que a duplicação nasce de uma superfície articular: **II, IV e VI** (p. 1305). É a pergunta do SIMÃO 2015: nos tipos pares, o componente retirado leva consigo um lado da articulação, e o colateral daquele lado precisa ser transferido para o componente que fica.
+O alvo da reconstrução tem cinco itens: **eixo longitudinal**, **articulações estáveis**, **motores equilibrados**, **unha sem deformidade** e **tamanho suficiente**. Os **colaterais** são críticos nos tipos em que a duplicação nasce de uma superfície articular: **II, IV e VI** (p. 1305). É a pergunta do simulado da prova de título de cirurgia da mão de 2015: nos tipos pares, o componente retirado leva consigo um lado da articulação, e o colateral daquele lado precisa ser transferido para o componente que fica.
 
 ## I e II assimétricos: retirar e transferir
 
@@ -676,7 +676,7 @@ Se o polegar está alinhado e tem unha comum, não se opera. Se os componentes s
 
 Em geral o **ulnar é o dominante** (Campbell, p. 3659; HEBERT). Se os dois são iguais, **preserva-se o ulnar**, para manter o **colateral ulnar** da metacarpofalângica, que resiste à **pinça** (Green, p. 1307; Tachdjian, p. 362). A razão é a mesma do BLAUTH II: na pinça, o indicador empurra o polegar para radial e o lado ulnar da metacarpofalângica é tracionado; um colateral ulnar nativo vale mais que qualquer reconstrução. Do polegar retirado aproveita-se um retalho de partes moles para aumentar a polpa e a prega ungueal do que fica.
 
-O SIMÃO 2024 cobrou os músculos. O Campbell (p. 3660): os intrínsecos de inervação **ulnar** (adutor, cabeça profunda do flexor curto) inserem no **polegar ulnar**; os de inervação **mediana** (**abdutor curto**, cabeça superficial do flexor curto, oponente) no **polegar radial**. O HEBERT diz o mesmo. Daí a regra do Green (p. 1309): o **abdutor curto insere no polegar radial** e deve ser **destacado com uma manga osteoperiosteal junto com o colateral radial** e reinserido no polegar ulnar, devolvendo **estabilidade e abdução**. O Tachdjian (p. 366) reinsere o abdutor curto **sobre o reparo do colateral radial**.
+O simulado da prova de título de cirurgia da mão de 2024 cobrou os músculos. O Campbell (p. 3660): os intrínsecos de inervação **ulnar** (adutor, cabeça profunda do flexor curto) inserem no **polegar ulnar**; os de inervação **mediana** (**abdutor curto**, cabeça superficial do flexor curto, oponente) no **polegar radial**. O HEBERT diz o mesmo. Daí a regra do Green (p. 1309): o **abdutor curto insere no polegar radial** e deve ser **destacado com uma manga osteoperiosteal junto com o colateral radial** e reinserido no polegar ulnar, devolvendo **estabilidade e abdução**. O Tachdjian (p. 366) reinsere o abdutor curto **sobre o reparo do colateral radial**.
 
 !tabela O tratamento por tipo (Green, p. 1305 a 1310; Tachdjian, p. 362 a 366)
 | Tipo | Conduta |
@@ -709,7 +709,7 @@ Bons nos tipos **I, II e IV**, piores nos **III, V, VI** e trifalângicos; poleg
 
 !questoes central=mao-1371 relacionadas=mao-1561,mao-0416,mao-0458 treino=mao-2375,mao-3604,mao-3608,mao-3610,mao-3621
 conceito: BILHAUT-CLOQUET: ressecção da parte central de osso e unha das duas distais e união das metades externas num polegar só, para dois polegares pequenos e simétricos dos tipos I e II; complica com unha e rigidez. Nos III e IV preserva-se o ulnar, e o abdutor curto (que insere no radial) vai com o colateral radial para o polegar que fica.
-como: A USP 2025 e a USP 2026 pediram a descrição e o nome da técnica; o TEOT 2025 e o Einstein 2026, os tipos em que se indica; o SIMÃO 2024, o músculo transferido com o colateral radial.
+como: A USP 2025 e a USP 2026 pediram a descrição e o nome da técnica; o TEOT 2025 e o Einstein 2026, os tipos em que se indica; o simulado da prova de título de cirurgia da mão de 2024, o músculo transferido com o colateral radial.
 armadilha: Confundir BILHAUT-CLOQUET com a exérese do polegar radial ou com a on-top-plasty, ou transferir o adutor, que já está no polegar ulnar.
 !fim
 
@@ -742,9 +742,9 @@ O Green lista quatro componentes (p. 1318): **comprimento e angulação**, a **a
 
 ## A falange extra: observar primeiro
 
-A falange extra tem crescimento imprevisível: pode crescer e entortar o polegar, ou ficar rudimentar e não incomodar. Por isso o **tratamento inicial é a observação** (p. 1319). O SIMÃO 2010 cobrou essa conduta.
+A falange extra tem crescimento imprevisível: pode crescer e entortar o polegar, ou ficar rudimentar e não incomodar. Por isso o **tratamento inicial é a observação** (p. 1319). O simulado da prova de título de cirurgia da mão de 2010 cobrou essa conduta.
 
-Quando há angulação, ela costuma ter **ápice ulnar** (Fig. 37.75): o vértice do ângulo aponta para o lado ulnar, e a ponta do polegar desvia para o **radial**. A diferença entre ápice e desvio é a pegadinha. Uma questão que pergunta "para onde o polegar desvia" e outra que pergunta "para onde aponta o ápice" têm respostas opostas, e o SIMÃO 2018 respondeu "ulnar" sem dizer qual das duas perguntava. Desenhar o ângulo na margem da prova resolve.
+Quando há angulação, ela costuma ter **ápice ulnar** (Fig. 37.75): o vértice do ângulo aponta para o lado ulnar, e a ponta do polegar desvia para o **radial**. A diferença entre ápice e desvio é a pegadinha. Uma questão que pergunta "para onde o polegar desvia" e outra que pergunta "para onde aponta o ápice" têm respostas opostas, e o simulado da prova de título de cirurgia da mão de 2018 respondeu "ulnar" sem dizer qual das duas perguntava. Desenhar o ângulo na margem da prova resolve.
 
 ## Falange pequena ou falange grande
 
@@ -765,7 +765,7 @@ A mão de cinco dedos não tem comissura nem oposição. O tratamento é **polic
 
 Quando o polegar duplicado tem um componente trifalângico, valem os princípios da duplicação: escolher o componente, transferir colateral, centralizar tendões. Se o componente mantido for o trifalângico, a articulação extra é tratada por **redução articular com condrodese** da articulação de **menor movimento**, no mesmo tempo ou mais tarde. A alternativa é a **on-top-plasty**, que monta o polegar com a parte distal melhor de um componente sobre a parte proximal melhor do outro (p. 1310 e 1319). A lógica é a mesma da falange grande: sacrifica-se a articulação que menos se move e preserva-se a que trabalha.
 
-A classificação de **WOOD**, que subdivide o componente trifalângico do WASSEL VII e já caiu no SIMÃO, não está no Green 7 (só aparece como referência) nem no Campbell 15, que remete ao material eletrônico. Sem fonte local conferida, este resumo não a reproduz.
+A classificação de **WOOD**, que subdivide o componente trifalângico do WASSEL VII e já caiu no simulado da prova de título de cirurgia da mão, não está no Green 7 (só aparece como referência) nem no Campbell 15, que remete ao material eletrônico. Sem fonte local conferida, este resumo não a reproduz.
 
 ## O resultado
 

@@ -248,7 +248,7 @@ As provas que seguem bibliografia mais nova trazem um **estágio IIIC**. LICHTMA
 
 !questoes treino=mao-2305,mao-1950
 conceito: A classificação de LICHTMAN se baseia em radiografias e RM; a versão modificada acrescenta o estágio IIIC, definido pela fratura coronal do semilunar.
-como: O SIMÃO 2024 pediu o que o IIIC tem a mais que o IIIB; o SIMÃO 2023, em que exames se baseia a classificação atualizada.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu o que o IIIC tem a mais que o IIIB; o simulado da prova de título de cirurgia da mão de 2023, em que exames se baseia a classificação atualizada.
 armadilha: Acrescentar o quadro clínico ou a ultrassonografia à base da classificação, ou escolher a rotação do escafoide, que já define o IIIB.
 alerta: O estágio IIIC não está no Green 7 nem no Campbell 15; o gabarito de `mao-2305` (fratura coronal) foi conferido na literatura indexada citada acima.
 !fim
@@ -536,7 +536,7 @@ O raciocínio que as provas esperam vem do potencial biológico: a criança reva
 
 !questoes treino=mao-2049
 conceito: Na criança, o KIENBÖCK tem grande potencial de revascularização, e o tratamento inicial é conservador, com imobilização.
-como: O simulado do SBCM 2024 pediu a melhor conduta pelo algoritmo atual de LICHTMAN quando a doença aparece na infância.
+como: O simulado da prova de título de 2024 pediu a melhor conduta pelo algoritmo atual de LICHTMAN quando a doença aparece na infância.
 armadilha: Aplicar o algoritmo do adulto (encurtar o rádio, enxerto vascularizado) a um osso que ainda remodela.
 alerta: O Green 7 e o Campbell 15 não tratam do KIENBÖCK infantil; o gabarito de `mao-2049` segue o algoritmo de LICHTMAN citado, cujo resumo no PubMed não detalha a conduta na criança.
 !fim

@@ -109,7 +109,7 @@ O erro clássico é confundir "total" com "nível 4". O que separa o nível 3 do
 
 !questoes treino=mao-2598,mao-2611
 conceito: LISTER divide a perda do polegar em quatro níveis: 1 cobertura com comprimento aceitável, 2 subtotal de comprimento duvidoso, 3 total com basal preservada (prioridade: comprimento) e 4 total sem basal (comprimento e nova basal ou artrodese); dentro do nível 1, menos de 1 cm quadrado cicatriza por segunda intenção e os heterodigitais ficam para perdas maiores que 2,5 cm.
-como: O simulado do SIMÃO 2022 deu um polegar amputado na serra com a trapeziometacarpal preservada e pediu o nível e a prioridade; o do SIMÃO 2021 pediu a afirmação de acordo com o Green sobre a escolha da técnica em cada nível.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 deu um polegar amputado na serra com a trapeziometacarpal preservada e pediu o nível e a prioridade; o do simulado da prova de título de cirurgia da mão de 2021 pediu a afirmação de acordo com o Green sobre a escolha da técnica em cada nível.
 armadilha: Chamar de nível 4 toda amputação total; o nível 4 exige a perda da basal. E aceitar que a falangização está contraindicada na amputação da parte distal da falange proximal, quando é exatamente a sua indicação.
 !fim
 
@@ -260,7 +260,7 @@ WALKER mostrou que a sensibilidade final de um cross-finger do indicador ao pole
 
 GAUL, MIURA e BRALLIAR descreveram o retalho levado junto com um ramo do **nervo radial superficial** (p. 1682 a 1684, Fig. 48.7). Uma incisão oblíqua parte do meio da borda proximal do retalho em direção à borda dorsoulnar da primeira comissura, alguns centímetros proximal ao meio da comissura (dorsal e proximal a ela, para a cicatriz não contrair a comissura). O ramo sensitivo dorsal do radial é encontrado sobre a fáscia muscular e seguido até o retalho; é mobilizado por inteiro, para não ficar sob tensão, e os ramos pequenos que o prendem são seccionados. Ao fixar o retalho, o nervo é transposto para uma incisão médio-axial **ulnar** do polegar. O enxerto de pele total cobre a área doadora e o pedículo.
 
-O pós-operatório é o do cross-finger comum, **mais um protocolo de estímulos de pressão progressivos** para aumentar o reconhecimento cortical do retalho (p. 1684). É um ponto que a banca do SIMÃO já cobrou. A explicação está no cérebro: o retalho continua ligado a um nervo cuja representação cortical é o dorso do indicador. Quando o paciente toca a polpa do polegar reconstruído, o cérebro "lê" o toque como se fosse no dorso do indicador. A reeducação sensitiva tenta fazer o córtex reinterpretar esse sinal, o que nem sempre acontece por completo, sobretudo no adulto.
+O pós-operatório é o do cross-finger comum, **mais um protocolo de estímulos de pressão progressivos** para aumentar o reconhecimento cortical do retalho (p. 1684). É um ponto que a banca do simulado da prova de título de cirurgia da mão já cobrou. A explicação está no cérebro: o retalho continua ligado a um nervo cuja representação cortical é o dorso do indicador. Quando o paciente toca a polpa do polegar reconstruído, o cérebro "lê" o toque como se fosse no dorso do indicador. A reeducação sensitiva tenta fazer o córtex reinterpretar esse sinal, o que nem sempre acontece por completo, sobretudo no adulto.
 
 Os riscos são a lesão do ramo radial por tração ou manipulação, uma sensibilidade às vezes só protetora e a **persistência da percepção no dorso do indicador**. O Green reserva o retalho para quando há dano sensitivo irreparável do polegar e nenhuma outra fonte de sensibilidade.
 
@@ -457,7 +457,7 @@ MATEV, que divulgou o método para o polegar traumático, está nas referências
 
 ## Comprimento não é movimento
 
-Um ponto que a banca do SIMÃO já explorou: **comprimento não dá motor** (p. 1696). O polegar alongado se move com os **músculos intrínsecos que restaram**, inseridos na base da falange proximal e na região da MF. Quanto mais proximal a amputação, menos intrínsecos sobram com inserção útil, e **mais provável é que seja preciso uma transferência tendinosa** para dar oposição ao coto alongado. Afirmar que a distração "dispensa transferência tendinosa independentemente do nível" é falso.
+Um ponto que a banca do simulado da prova de título de cirurgia da mão já explorou: **comprimento não dá motor** (p. 1696). O polegar alongado se move com os **músculos intrínsecos que restaram**, inseridos na base da falange proximal e na região da MF. Quanto mais proximal a amputação, menos intrínsecos sobram com inserção útil, e **mais provável é que seja preciso uma transferência tendinosa** para dar oposição ao coto alongado. Afirmar que a distração "dispensa transferência tendinosa independentemente do nível" é falso.
 
 A distração também tem custo de tempo: semanas de fixador, cuidados com os pinos e, às vezes, enxerto ósseo no espaço se o calo não consolida. Ela não traz sensibilidade nova nem unha: alonga o que já existe.
 

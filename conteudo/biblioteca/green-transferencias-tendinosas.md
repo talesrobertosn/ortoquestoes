@@ -136,7 +136,7 @@ O objetivo da cirurgia muda com o nível. Na baixa, o que se busca é a **oposi�
 
 !questoes treino=mao-1982,mao-1752
 conceito: Na lesão baixa do mediano, distal à origem do interósseo anterior, ficam paralisados APB, oponente e cabeça superficial do FPB; o pronador redondo e os flexores extrínsecos continuam funcionando, e o objetivo é a oposição.
-como: O SIMÃO 2023 pediu o músculo preservado na lesão baixa; o SIMÃO 2026 trouxe a laceração no punho e pediu o déficit e o objetivo da transferência.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu o músculo preservado na lesão baixa; o simulado da prova de título de cirurgia da mão de 2026 trouxe a laceração no punho e pediu o déficit e o objetivo da transferência.
 armadilha: Pensar que a lesão baixa é só sensitiva, ou que tira a flexão da interfalângica do polegar, que é função do FLP e só se perde na alta.
 !fim
 
@@ -152,7 +152,7 @@ O **principal músculo da oposição é o APB**; o oponente e o FPB ajudam. O ad
 
 !questoes treino=mao-2479,mao-3234,mao-3236,mao-3239
 conceito: O abdutor curto do polegar é o principal músculo da oposição; oponente e flexor curto ajudam, e por isso a oponentoplastia é, em essência, uma substituição do APB.
-como: O SIMÃO 2021 pediu o principal músculo da oposição.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu o principal músculo da oposição.
 armadilha: Marcar o oponente pelo nome; ele contribui, mas a transferência ideal reproduz a linha de tração do APB.
 !fim
 
@@ -189,7 +189,7 @@ A contratura estabelecida tem de ser corrigida antes ou durante a oponentoplasti
 
 !questoes treino=mao-2071,mao-3220
 conceito: Na paralisia completa dos intrínsecos, o polegar tende a supinação e adução, com contratura da primeira comissura, que deve ser prevenida com exercícios e órteses porque nenhuma oponentoplastia vence perda passiva.
-como: O SBCM 2024 pediu a postura do polegar que leva à contratura da comissura.
+como: A prova de título de 2024 pediu a postura do polegar que leva à contratura da comissura.
 armadilha: Responder "extensão e supinação", a postura em repouso da lesão combinada do ulnar com o mediano alto, que é outra situação.
 !fim
 
@@ -211,7 +211,7 @@ O **CAMITZ clássico não usa polia**: o palmar longo vai em linha reta do punho
 
 !questoes treino=mao-2142,mao-3231
 conceito: A oponentoplastia de CAMITZ tem a melhor indicação na sequela da compressão grave do mediano no túnel do carpo, feita junto com a liberação; restaura mais abdução palmar do que oposição, porque não passa por polia junto ao pisiforme.
-como: O SBCM 2022 pediu a melhor indicação da técnica de CAMITZ.
+como: A prova de título de 2022 pediu a melhor indicação da técnica de CAMITZ.
 armadilha: Marcar a lesão traumática do mediano no punho: o PL fica sobre o nervo e costuma estar lesado e cicatrizado, e a técnica não é recomendada no trauma do adulto.
 !fim
 
@@ -225,7 +225,7 @@ A inserção de **RIORDAN** é a que a prova cita por nome: o tendão é fixado 
 
 !questoes treino=mao-2231,mao-3219,mao-3225,mao-3244
 conceito: A fixação distal de RIORDAN passa pelo APB, pela cápsula da metacarpofalângica e pelo ELP sobre a falange proximal, para estabilizar a metacarpofalângica e limitar a flexão da interfalângica no polegar intrínseco-menos.
-como: O SBCM 2023 pediu a forma de fixação distal descrita por RIORDAN.
+como: A prova de título de 2023 pediu a forma de fixação distal descrita por RIORDAN.
 armadilha: Marcar a inserção isolada no APB, que é a usual na paralisia isolada do mediano, ou o furo ósseo, que é de BUNNELL.
 !fim
 
@@ -282,7 +282,7 @@ Os resultados são os melhores do grupo (p. 1032). BURKHALTER, CHRISTENSEN e BRO
 
 !questoes central=mao-0838 treino=mao-2072,mao-3218
 conceito: A oponentoplastia com o extensor próprio do indicador, descrita por AGUIRRE e CAPLAN, era a preferida de BURKHALTER; contorna a borda ulnar do punho, serve na paralisia alta e na baixa e não enfraquece a preensão.
-como: O INTO 2026 mostrou a imagem da transferência pela borda ulnar e pediu o epônimo; o SBCM 2024 pediu o motor da oponentoplastia preferida por BURKHALTER.
+como: O INTO 2026 mostrou a imagem da transferência pela borda ulnar e pediu o epônimo; a prova de título de 2024 pediu o motor da oponentoplastia preferida por BURKHALTER.
 armadilha: Confundir com o CAMITZ (palmar longo em linha reta, sem polia) ou com o ROYLE-THOMPSON (FDS pela polia entre retináculo e aponeurose); e lembrar que o Green não usa a expressão "oponentoplastia de BURKHALTER", só diz que ela era a preferida dele.
 !fim
 
@@ -298,7 +298,7 @@ Uma indicação própria: muitos usam o HUBER como **oponentoplastia de escolha 
 
 !questoes central=mao-0788 treino=mao-2399,mao-3240,mao-3243
 conceito: A oponentoplastia de HUBER usa o abdutor do dedo mínimo, girado 180° para proteger o pedículo, inserido no APB; aumenta o volume tenar e é a preferida de muitos na deficiência tenar congênita.
-como: O INTO 2023 e o SIMÃO 2022 pediram qual técnica usa o abdutor do dedo mínimo como motor.
+como: O INTO 2023 e o simulado da prova de título de cirurgia da mão de 2022 pediram qual técnica usa o abdutor do dedo mínimo como motor.
 armadilha: Marcar BUNNELL ou CAMITZ; e não confundir com a oponentoplastia de BURKHALTER, que usa o EIP.
 !fim
 
@@ -351,7 +351,7 @@ As complicações vêm de WOOD e ADAMS (J Hand Surg Am 9A:699-704, 1984), em 12 
 
 !questoes treino=mao-2486,mao-3246,mao-3247
 conceito: A oponentoplastia de PHALEN e MILLER usa o extensor ulnar do carpo sem enxerto livre, alongado pelo extensor curto do polegar, cuja inserção é preservada.
-como: O SIMÃO 2021 pediu o motor da técnica de PHALEN e MILLER e se havia enxerto.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu o motor da técnica de PHALEN e MILLER e se havia enxerto.
 armadilha: Marcar "com enxerto": o ECP faz o papel do enxerto; e não confundir com o ERCC, que é o motor da adutoplastia de SMITH.
 !fim
 
@@ -395,7 +395,7 @@ O **objetivo principal** é restaurar a **flexão do indicador e do polegar, al�
 
 !questoes treino=mao-2141,mao-3245
 conceito: Na paralisia alta do mediano, o objetivo principal é restaurar a flexão do indicador e do polegar, além da oposição; o médio costuma conservar flexão completa, embora fraca, pela parte do FDP que funciona.
-como: O SBCM 2022 pediu o objetivo principal das transferências na paralisia alta do mediano.
+como: A prova de título de 2022 pediu o objetivo principal das transferências na paralisia alta do mediano.
 armadilha: Incluir a flexão do médio entre as prioridades, quando ele em geral flete, ainda que fraco.
 !fim
 
@@ -431,7 +431,7 @@ O ulnar inerva os hipotênares (ADM, flexor curto e oponente do mínimo), **todo
 
 !questoes treino=mao-2229
 conceito: Lesão baixa do ulnar é a que ocorre abaixo da origem dos ramos motores para o FUC e para os FDP do anelar e do mínimo; os extrínsecos funcionam e a sensibilidade da borda ulnar se perde.
-como: O SBCM 2023 pediu o que caracteriza a lesão baixa do ulnar.
+como: A prova de título de 2023 pediu o que caracteriza a lesão baixa do ulnar.
 armadilha: Dizer que ela preserva a sensibilidade da borda ulnar: isso só ocorre em padrões específicos no punho e na mão, como a lesão distal no canal de GUYON.
 !fim
 
@@ -443,7 +443,7 @@ Essa lógica tem uma consequência de tratamento que aparece mais adiante: resta
 
 !questoes treino=mao-2508
 conceito: A garra é mais acentuada na lesão baixa do ulnar porque o FDP do anelar e do mínimo continua funcionando e flete as interfalângicas sem a oposição dos intrínsecos; na alta, ele também está paralisado.
-como: O SIMÃO 2021 pediu por que a garra é mais acentuada na lesão baixa.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu por que a garra é mais acentuada na lesão baixa.
 armadilha: Inverter o paradoxo, ou atribuir a diferença aos lumbricais do indicador e do médio, que são do mediano nos dois níveis.
 !fim
 
@@ -485,7 +485,7 @@ A manobra de BOUVIER é a que mais confunde. Ela **não serve para dizer o níve
 
 !questoes treino=mao-2318,mao-3227,mao-3228,mao-3238,mao-3241,mao-3242
 conceito: No sinal de PITRES-TESTUT, com a mão espalmada, o paciente não move o médio de um lado para o outro, porque o segundo e o terceiro interósseos dorsais estão paralisados.
-como: O SIMÃO 2024 descreveu o sinal e pediu os músculos que falham.
+como: O simulado da prova de título de cirurgia da mão de 2024 descreveu o sinal e pediu os músculos que falham.
 armadilha: Marcar os interósseos palmares (que aduzem em direção ao médio, mas não movem o próprio médio) ou os lumbricais.
 !fim
 
@@ -508,7 +508,7 @@ A escolha entre procedimento estático e dinâmico depende de uma pergunta: **qu
 - **Garra antiga**: as fibras retinaculares transversas dorsais se estiram, as bandas laterais migram para palmar do eixo da interfalângica proximal e viram flexoras, e a distal hiperestende como numa botoeira. As bandas precisam ser reconstruídas antes; transferir para uma banda lateral deslocada piora a deformidade.
 - **Flexão fixa das interfalângicas**: corrigir antes de tudo.
 
-Uma questão do SIMÃO de 2008 pedia a garra em "tipos I a IV". Essa classificação não está no Green 7; o capítulo usa no lugar dela este critério funcional, que é o que de fato orienta a conduta.
+Uma questão do simulado da prova de título de cirurgia da mão de 2008 pedia a garra em "tipos I a IV". Essa classificação não está no Green 7; o capítulo usa no lugar dela este critério funcional, que é o que de fato orienta a conduta.
 
 A avaliação do resultado não deve ser feita antes de **6 meses** (p. 1048), e a literatura é pobre: só um estudo usou teste validado, nenhum usou o DASH. BRAND propunha avaliar **seis posturas** com o punho neutro: estender tudo sem déficit e sem hiperextensão da interfalângica proximal ou flexão da distal (sinais de excesso); fletir a metacarpofalângica com as interfalângicas estendidas (posição lumbrical); o gancho; o punho cerrado; abrir a mão sem abduzir nem hiperestender a metacarpofalângica; e o movimento lumbrical isolado de cada dedo (p. 1048). Não existe técnica universalmente melhor.
 
@@ -578,7 +578,7 @@ Os resultados ensinam o limite do método (p. 1053 e 1054): **o FDS não aumenta
 
 !questoes treino=mao-2073,mao-3226
 conceito: LITTLER modificou o STILES-BUNNELL usando um só flexor superficial, em geral o do médio, dividido em quatro tiras levadas pelo canal lumbrical, palmar ao ligamento transverso, à banda lateral radial.
-como: O SBCM 2024 pediu o tendão que LITTLER costuma usar.
+como: A prova de título de 2024 pediu o tendão que LITTLER costuma usar.
 armadilha: Marcar o FDS do anelar: ele é contraindicado na paralisia ulnar alta ou com o FDP do anelar fraco, porque o dedo ficaria sem flexor.
 !fim
 
@@ -643,7 +643,7 @@ Há duas correções, e as duas usam uma tira de extensor que passa **palmar ao 
 
 !questoes central=mao-1578 treino=mao-1981,mao-2143,mao-2319
 conceito: O mínimo abduzido da paralisia ulnar (WARTENBERG) se corrige com a metade ulnar do EDM ou, na técnica de VOCHE e MERLE, com uma tira do terço central do extensor do anelar, ambas passadas palmar ao ligamento metacarpal transverso profundo.
-como: A USP-SP 2026 pediu a técnica para a abdução do mínimo (o split do extensor do mínimo); o SBCM 2022, a tira do EDM; o SIMÃO 2023 e o SIMÃO 2024, a origem da tira de VOCHE e MERLE.
+como: A USP-SP 2026 pediu a técnica para a abdução do mínimo (o split do extensor do mínimo); a prova de título de 2022, a tira do EDM; o simulado da prova de título de cirurgia da mão de 2023 e o simulado da prova de título de cirurgia da mão de 2024, a origem da tira de VOCHE e MERLE.
 armadilha: Marcar o laço de ZANCOLLI ou a tenodese de PARKES, que tratam a garra, ou a técnica de SMITH, que é adutoplastia do polegar; e não confundir a tira do anelar de VOCHE e MERLE com a metade do próprio EDM.
 !fim
 
@@ -702,7 +702,7 @@ A **ordem de inervação** dos músculos do radial, segundo ABRAMS e colaborador
 
 !questoes treino=mao-1984,mao-2230,mao-3235,mao-3237
 conceito: Os músculos do radial recebem os ramos na ordem BR, ERLC, supinador, ERCC, EDC, EUC, EDM, ALP, ELP, ECP e EIP; o BR é o primeiro a se recuperar. Acima do cotovelo, o radial corre entre o braquial e o braquiorradial.
-como: O SIMÃO 2023 pediu o primeiro músculo do antebraço a se recuperar; o SBCM 2023, o intervalo em que o radial aparece na exploração acima da flexura do cotovelo.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu o primeiro músculo do antebraço a se recuperar; a prova de título de 2023, o intervalo em que o radial aparece na exploração acima da flexura do cotovelo.
 armadilha: Marcar o ERLC, que vem logo depois do BR, ou o EDC; e procurar o nervo entre bíceps e braquial, que é o intervalo do musculocutâneo.
 !fim
 
@@ -720,7 +720,7 @@ Por que o ERCC, e não o ERLC? Porque o ERCC se insere na base do **terceiro met
 
 !questoes central=mao-1592 treino=mao-1739,mao-1983,mao-2367,mao-2453
 conceito: A tala interna de BURKHALTER é o pronador redondo para o extensor radial curto do carpo, término-lateral, feita junto com o reparo do radial ou logo depois, para dispensar a órtese e permitir que o ERCC volte a funcionar se o nervo se recuperar.
-como: A USP-SP 2026 pediu qual transferência serve como tala interna; o SIMÃO 2026, o SIMÃO 2023 e o SIMÃO 2024 repetiram com casos de reparo agudo; o SIMÃO 2022 pediu por que a sutura é término-lateral.
+como: A USP-SP 2026 pediu qual transferência serve como tala interna; o simulado da prova de título de cirurgia da mão de 2026, o simulado da prova de título de cirurgia da mão de 2023 e o simulado da prova de título de cirurgia da mão de 2024 repetiram com casos de reparo agudo; o simulado da prova de título de cirurgia da mão de 2022 pediu por que a sutura é término-lateral.
 armadilha: Marcar o PT para o ERLC, que estende com desvio radial, ou o FUC para o EDC, que restaura a extensão dos dedos, não a do punho.
 !fim
 
@@ -734,7 +734,7 @@ E não há limite de tempo para transferir (p. 1066): BRODMAN operou um paciente
 
 !questoes treino=mao-2441
 conceito: BROWN aconselhava transferir sem explorar o nervo quando o prognóstico do reparo é ruim: falha maior que 4 cm, ferida grande ou cicatriz extensa, ou perda de pele sobre o nervo.
-como: O SIMÃO 2022 trouxe paciente de 70 anos, lesão de 6 meses, falha de 5 cm e cicatriz extensa, e pediu a melhor conduta.
+como: O simulado da prova de título de cirurgia da mão de 2022 trouxe paciente de 70 anos, lesão de 6 meses, falha de 5 cm e cicatriz extensa, e pediu a melhor conduta.
 armadilha: Insistir no enxerto de sural: com falha acima de 5 cm, idade avançada e leito ruim, o resultado do enxerto é pobre, e a transferência resolve.
 !fim
 
@@ -754,7 +754,7 @@ O PT é o doador perfeito para a extensão do punho: forte (fração de tensão 
 
 !questoes treino=mao-2316,mao-2069
 conceito: O pronador redondo para o extensor radial curto do carpo é a transferência para a extensão do punho, presente em todos os conjuntos usados na paralisia radial (FUC, FRC e BOYES).
-como: O SIMÃO 2024 pediu o principal tendão para devolver a extensão do punho; o SBCM 2024, a transferência comum a todos os conjuntos.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu o principal tendão para devolver a extensão do punho; a prova de título de 2024, a transferência comum a todos os conjuntos.
 armadilha: Marcar o FRC ou o FUC, que são os motores da extensão dos dedos e variam entre os conjuntos.
 !fim
 
@@ -780,7 +780,7 @@ Um aviso sobre o BOYES: o Green 7 traz a distribuição dos FDS de duas formas. 
 
 !questoes treino=mao-1980
 conceito: A vantagem do FDS sobre o FUC para estender os dedos na paralisia radial é a maior excursão (70 mm contra 33 mm), que permite estender os dedos sem depender da flexão do punho.
-como: O SIMÃO 2023 pediu a principal vantagem de usar um flexor dos dedos em vez do FUC.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu a principal vantagem de usar um flexor dos dedos em vez do FUC.
 armadilha: Marcar a força: o FUC é o mais forte do antebraço; o que falta a ele é excursão.
 !fim
 
@@ -795,8 +795,8 @@ O conjunto passa a ser **FRC para EDC e PL para ELP**.
 
 !questoes central=mao-1533 treino=mao-2495
 conceito: Na paralisia do interósseo posterior, a extensão do punho persiste com desvio radial (o ERLC é inervado antes da divisão), por isso o PT para o ERCC é desnecessário e o FUC é desaconselhado; o FRC tem aqui a sua indicação mais forte.
-como: A USP-SP 2026 pediu a transferência desnecessária no interósseo posterior; o SIMÃO 2021, o motor que o Green desaconselha para a extensão dos dedos.
-armadilha: Marcar "todas são necessárias", como fez um curso numa questão do SIMÃO de 2014; ou escolher o FUC por ser o mais forte, o que agrava o desvio radial.
+como: A USP-SP 2026 pediu a transferência desnecessária no interósseo posterior; o simulado da prova de título de cirurgia da mão de 2021, o motor que o Green desaconselha para a extensão dos dedos.
+armadilha: Marcar "todas são necessárias", como fez um curso numa questão do simulado da prova de título de cirurgia da mão de 2014; ou escolher o FUC por ser o mais forte, o que agrava o desvio radial.
 !fim
 
 ## Técnica do FUC: incisões, tensão e o ângulo de 45 graus
@@ -811,7 +811,7 @@ A **tensão** é a parte mais difícil e exige experiência (p. 1068 e 1069). A 
 
 !questoes treino=mao-2232,mao-3222,mao-3229,mao-3233
 conceito: Na transferência do FUC para o EDC, GREEN suturava os tendões com o punho e as metacarpofalângicas em neutro e o FUC em tensão máxima; OMER entrelaçava o FUC a 45° pelos EDC, logo proximal ao retináculo dorsal.
-como: O SBCM 2023 pediu a posição do punho e das metacarpofalângicas usada por GREEN.
+como: A prova de título de 2023 pediu a posição do punho e das metacarpofalângicas usada por GREEN.
 armadilha: Marcar punho em extensão: essa é a posição do PT para o ERCC (pelo menos 45° de extensão), não a do FUC.
 !fim
 
@@ -875,6 +875,6 @@ No **radial** (p. 1076), por uma única incisão volar-radial no antebraço prox
 
 !questoes treino=mao-2443
 conceito: Na transferência de nervo para o radial, o ramo do FDS vai ao nervo do ERCC e o ramo do FRC e do PL vai ao interósseo posterior; a recuperação é mais lenta que a das transferências de tendão.
-como: O SIMÃO 2022 pediu a afirmação correta sobre as transferências nervosas no radial.
+como: O simulado da prova de título de cirurgia da mão de 2022 pediu a afirmação correta sobre as transferências nervosas no radial.
 armadilha: Achar que elas dão resultado melhor e mais rápido, ou que dispensam órtese: o músculo só volta quando o axônio chega, meses depois.
 !fim

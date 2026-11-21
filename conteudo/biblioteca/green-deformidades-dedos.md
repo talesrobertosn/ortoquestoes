@@ -64,7 +64,7 @@ Na botoeira, o ORL tem o papel inverso. Com a IFP presa em flexão, o ORL **encu
 
 !questoes central=mao-1052 treino=mao-1758
 conceito: O ORL de LANDSMEER nasce na bainha flexora, volar ao eixo da IFP, e se insere dorsalmente no tendão terminal; tensiona-se com a extensão da IFP e leva a IFD junto.
-como: O SIMÃO 2026 pediu origem, inserção e função; a PUC-SP 2019 perguntou só a inserção (dorsal, no tendão terminal).
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu origem, inserção e função; a PUC-SP 2019 perguntou só a inserção (dorsal, no tendão terminal).
 armadilha: Inverter o lado do eixo (dorsal na IFP) ou dizer que se tensiona com a flexão; o ORL passa volar à IFP e se estica quando ela estende.
 !fim
 
@@ -108,7 +108,7 @@ Na **IFD**, a placa volar funciona como inserção acessória do profundo e se p
 
 !questoes relacionadas=mao-1342 treino=mao-2497,mao-2378,mao-2115,mao-3797,mao-3798,mao-3799
 conceito: Os checkreins são expansões proximais da placa volar da IFP presas às margens volares da falange proximal, cruzando a artéria digital transversa; como a placa da IFP desliza em vez de encurtar, a contração deles limita a extensão; a IFD não tem checkrein e por isso hiperestende mais.
-como: A USP-SP 2025 perguntou com que estrutura o checkrein não tem continuidade; o SIMÃO 2021, onde se prende; o SIMÃO 2022, que movimento a contratura limita; o SBCM 2022, que estrutura existe na IFP e falta na IFD.
+como: A USP-SP 2025 perguntou com que estrutura o checkrein não tem continuidade; o simulado da prova de título de cirurgia da mão de 2021, onde se prende; o simulado da prova de título de cirurgia da mão de 2022, que movimento a contratura limita; a prova de título de 2022, que estrutura existe na IFP e falta na IFD.
 armadilha: Marcar flexão como o movimento limitado ou pôr checkrein na MF; a placa volar fica na frente da articulação e só pode bloquear a extensão, e só a IFP tem checkrein.
 !fim
 
@@ -216,7 +216,7 @@ Para as fraturas grandes, o Green expõe a controvérsia: WEHBE e SCHNEIDER trat
 
 !questoes central=mao-1261 treino=mao-1790
 conceito: DOYLE IVA é a lesão transfisária da criança; IVB, hiperflexão com 20% a 50% da superfície; IVC, hiperextensão com mais de 50% e subluxação volar. No ALBERTONI (HEBERT), o número indica a queda (1 abaixo de 30 graus, 2 acima).
-como: O SIMÃO 2026 pediu IVA e IVC; a SBOT-SP pediu o tipo de ALBERTONI para arrancamento ósseo com queda menor que 30 graus.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu IVA e IVC; a SBOT-SP pediu o tipo de ALBERTONI para arrancamento ósseo com queda menor que 30 graus.
 armadilha: Trocar IVB por IVC (o que define o IVC é mais de 50% e subluxação, por hiperextensão) ou classificar a queda abaixo de 30 graus como 2.
 alerta: `mao-1261` está sem gabarito oficial. O HEBERT só diz que AI e BI têm queda menor que 30 graus e AII e BII, maior; não escreve qual letra é a avulsão óssea. Pela sequência (C fratura articular, D epifisiólise), o arrancamento ósseo com queda menor que 30 graus corresponde a B1 (alternativa C).
 !fim
@@ -257,7 +257,7 @@ Para saber onde está o problema principal, o examinador **bloqueia a hiperexten
 
 !questoes treino=mao-1789,mao-1941
 conceito: FOWLER secciona a inserção da banda central sob o aparelho extensor, preservando o triangular; o aparelho desliza para proximal e aumenta a tensão no terminal. O martelo crônico vira cisne quando a força sobra na banda central e a placa volar da IFP deixa hiperestender.
-como: O SIMÃO 2026 pediu a estrutura seccionada e o efeito mecânico; o SIMÃO 2023 perguntou que deformidade surge secundariamente ao martelo.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu a estrutura seccionada e o efeito mecânico; o simulado da prova de título de cirurgia da mão de 2023 perguntou que deformidade surge secundariamente ao martelo.
 armadilha: Achar que FOWLER corta o terminal (isso é a tenotomia distal da botoeira) ou que o martelo dá botoeira; o martelo dá cisne.
 !fim
 
@@ -287,7 +287,7 @@ Com o tempo, o retinacular transverso **contrai** e prende as bandas embaixo; o 
 
 !questoes central=mao-0654 relacionadas=mao-0909 treino=mao-2485
 conceito: Sem tratamento, a botoeira se instala em 2 a 3 semanas: o triangular estira, as bandas laterais vão para volar, o aparelho migra proximal e a tensão aumentada nas bandas laterais e nos ORL contraídos hiperestende a IFD.
-como: O SIMÃO 2021 pediu a afirmação de acordo com o Green; o TARO 2006 (certo ou errado) atribuiu a hiperextensão da IFD à tensão aumentada nas bandas laterais; a UFG 2019 pediu a causa da hiperextensão da IFD (contratura dos ORL).
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu a afirmação de acordo com o Green; o TARO 2006 (certo ou errado) atribuiu a hiperextensão da IFD à tensão aumentada nas bandas laterais; a UFG 2019 pediu a causa da hiperextensão da IFD (contratura dos ORL).
 armadilha: Dizer que as bandas migram para dorsal (isso é o cisne) ou que o triangular não participa; o estiramento do triangular é o que deixa as bandas descerem.
 alerta: `mao-0654` está sem gabarito oficial; o Green sustenta que a tensão aumentada nas bandas laterais, pela migração proximal do aparelho, hiperestende a IFD (Certo). Em `mao-0909`, o Green (p. 1890) e o Campbell (p. 3185) atribuem a hiperextensão ao ORL encurtado junto com as bandas laterais; o gabarito oficial (contratura dos ORL) foi mantido.
 !fim
@@ -310,7 +310,7 @@ Um ponto que pegou muita gente: a tala ainda funciona **meses depois**, desde qu
 
 !questoes central=mao-0064 relacionadas=mao-0115 treino=mao-1787
 conceito: Botoeira aguda ou flexível: órtese com a IFP em extensão total e a IFD livre, com flexão ativa da IFD; vale mesmo semanas depois, se a IFP estende passivamente.
-como: O SIMÃO 2026 deu uma botoeira de 10 semanas com IFP passivamente corrigível; o TARO 2015 e o TARO 2022 perguntaram a posição da IFD na imobilização.
+como: O simulado da prova de título de cirurgia da mão de 2026 deu uma botoeira de 10 semanas com IFP passivamente corrigível; o TARO 2015 e o TARO 2022 perguntaram a posição da IFD na imobilização.
 armadilha: Imobilizar a IFD em extensão (impede o realinhamento das bandas) ou achar que a órtese só funciona nas primeiras 6 semanas.
 !fim
 
@@ -322,7 +322,7 @@ A diferença clínica é simples. Na botoeira verdadeira, a IFD está **hiperest
 
 !questoes treino=mao-1937
 conceito: Na pseudobotoeira, o aparelho extensor está íntegro e a IFP fica em flexão pela cicatriz dos colaterais e da placa volar, depois de hiperextensão ou entorse colateral.
-como: O SIMÃO 2023 perguntou que estruturas retraídas prendem a IFP.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou que estruturas retraídas prendem a IFP.
 armadilha: Marcar banda central e bandas laterais (isso é a botoeira verdadeira) ou ORL (que age na IFD).
 !fim
 
@@ -347,7 +347,7 @@ BURTON deixou **sete princípios** que o Green chama de leitura obrigatória. Os
 
 !questoes treino=mao-2189
 conceito: BURTON: I flexível; II fixa com bandas laterais contraídas; III fixa com fibrose articular e contratura de colaterais e placa volar; IV soma artrose.
-como: O SBCM 2023 descreveu deformidade fixa com retração das bandas laterais e pediu o estágio.
+como: A prova de título de 2023 descreveu deformidade fixa com retração das bandas laterais e pediu o estágio.
 armadilha: Chamar de III qualquer deformidade fixa; o III exige fibrose da articulação (colaterais e placa), não só bandas laterais curtas.
 !fim
 
@@ -368,7 +368,7 @@ O porquê dos estágios I e II é a pergunta clássica: o retinacular transverso
 
 !questoes treino=mao-2303,mao-2025,mao-2408
 conceito: CURTIS: I libera o retinacular transverso e faz tenólise; II o secciona para as bandas laterais voltarem a dorsal; III faz a tenotomia distal (FOWLER) se o déficit é de até 20 graus; IV avança a banda central 4 a 6 mm.
-como: O SIMÃO 2024 perguntou por que se libera o retinacular transverso; o SBCM 2024, o que se secciona no estágio II; o SIMÃO 2022, o que se faz no estágio IV.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou por que se libera o retinacular transverso; a prova de título de 2024, o que se secciona no estágio II; o simulado da prova de título de cirurgia da mão de 2022, o que se faz no estágio IV.
 armadilha: Achar que o retinacular é liberado para ganhar flexão da IFP; o objetivo é devolver as bandas laterais para dorsal do eixo.
 !fim
 
@@ -474,7 +474,7 @@ A técnica segue uma escada (Green, cap. 10, seção sobre a contratura intríns
 
 !questoes treino=mao-2538,mao-2365
 conceito: Contratura intrínseca pós-traumática: BUNNELL positivo e dificuldade de fechar a mão; alongamento primeiro e, se persistir, liberação intrínseca distal ressecando só as fibras oblíquas e a banda lateral.
-como: O SIMÃO 2021 pediu a conduta descrita no Green; o SIMÃO 2024 perguntou qual dedo é o mais afetado depois de trauma com muito edema.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu a conduta descrita no Green; o simulado da prova de título de cirurgia da mão de 2024 perguntou qual dedo é o mais afetado depois de trauma com muito edema.
 armadilha: Liberar toda a aponeurose intrínseca (as fibras transversas mantêm a flexão da MF) ou indicar artrodese.
 alerta: Em `mao-2365`, nenhum dos livros lidos diz qual dedo é o mais afetado; o gabarito oficial (dedo médio) foi mantido, e a única base anatômica no Green é que o médio recebe dois interósseos dorsais.
 !fim
@@ -577,7 +577,7 @@ Tudo o que se discute neste capítulo pressupõe cartilagem razoável. Com **art
 
 !questoes treino=mao-2031,mao-3800
 conceito: Na rigidez pós-traumática com articulação ruim (artrose ou desalinhamento), a liberação capsular rende muito pouco; a artroplastia com implante na MF e na IFP dá ganho mínimo e falha frequente; a artroplastia de distração teve sucesso limitado, sem recomendação geral.
-como: O SBCM 2024 pediu a afirmação correta sobre o tratamento cirúrgico da rigidez dos dedos, misturando implante, distração e liberação.
+como: A prova de título de 2024 pediu a afirmação correta sobre o tratamento cirúrgico da rigidez dos dedos, misturando implante, distração e liberação.
 armadilha: Transferir para o dedo o sucesso da artroplastia no quadril, joelho e cotovelo rígidos.
 !fim
 
@@ -619,7 +619,7 @@ O conteúdo on-line do capítulo guarda a história. **BUCH (1974)** fazia a via
 
 !questoes central=mao-1464 relacionadas=mao-0065 treino=mao-2188,mao-3801
 conceito: MF rígida em extensão: via dorsal, tenólise do extensor, capsulectomia dorsal com as fibras dorsais dos colaterais, desinserção dos colaterais (muitas vezes dos dois lados) e soltura da placa da cápsula volar; meta de 70 graus; acessório seccionado se a MF ressalta; pouca indicação quando já flete 60 graus; fio retirado em 5 a 7 dias.
-como: O USP-SP 2024 pediu a afirmação correta sobre a técnica na MF; o TARO 2015, o arco a partir do qual a capsulotomia não se justifica; o SBCM 2022, quando retirar o fio.
+como: O USP-SP 2024 pediu a afirmação correta sobre a técnica na MF; o TARO 2015, o arco a partir do qual a capsulotomia não se justifica; a prova de título de 2022, quando retirar o fio.
 armadilha: Fixar 45 graus como meta, suturar a cápsula dorsal, desinserir só um colateral sem checar rotação ou desinserir a placa volar da falange como passo de rotina.
 alerta: Em `mao-0065`, o Green não usa a palavra contraindicação; diz que é incomum o paciente com 60 graus de flexão da MF se beneficiar da liberação. Em `mao-2188`, o Green diz que o fio pode sair tão cedo quanto 5 a 7 dias (gabarito de 7 dias mantido).
 !fim
@@ -675,7 +675,7 @@ O caso do capítulo (conteúdo on-line) mostra a indicação: mulher de 38 anos,
 
 !questoes central=mao-0772 treino=mao-2119,mao-2121,mao-2032,mao-3802
 conceito: Contratura em flexão da IFP: o resultado depende sobretudo do aparelho extensor; via ziguezague volar ou mediolateral (esta com mais ganho); liberam-se primeiro os checkreins (achados pela artéria digital transversa), depois a placa volar e o colateral acessório, e por último o colateral próprio.
-como: O SBCM 2022 perguntou o que se libera antes do colateral próprio e qual o marco dos checkreins; o INTO 2023, o conjunto de estruturas liberadas; o SBCM 2024, as vias recomendadas.
+como: A prova de título de 2022 perguntou o que se libera antes do colateral próprio e qual o marco dos checkreins; o INTO 2023, o conjunto de estruturas liberadas; a prova de título de 2024, as vias recomendadas.
 armadilha: Começar pelo colateral próprio, usar a polia C2 como marco ou propor via dorsal para a contratura em flexão.
 !fim
 
@@ -715,7 +715,7 @@ Esse passo explica por que a contratura em extensão pode resistir a uma libera�
 
 !questoes treino=mao-2120,mao-1939
 conceito: A causa mais comum da contratura em extensão da IFP é a aderência do extensor; a liberação dorsal faz tenólise, capsulectomia dorsal e soltura dos colaterais; depois testam-se a flexão ativa (tenólise flexora) e o BUNNELL (liberação intrínseca).
-como: O SBCM 2022 perguntou quais estruturas se liberam na contratura em extensão; o SIMÃO 2023, a causa mais frequente.
+como: A prova de título de 2022 perguntou quais estruturas se liberam na contratura em extensão; o simulado da prova de título de cirurgia da mão de 2023, a causa mais frequente.
 armadilha: Liberar a placa volar e os checkreins, que limitam a extensão e não a flexão, ou apontar a cápsula como causa mais frequente.
 !fim
 
@@ -751,7 +751,7 @@ O Green (p. 1238 e 1239) define a braquidactilia como o **dedo curto em que todo
 - **braquibasofalangia**: falange proximal;
 - **braquimetacarpia**: metacarpo.
 
-O próprio capítulo avisa que esses termos estão em desuso, mas eles aparecem nos enunciados. A pergunta do SIMÃO 2010 era exatamente o significado de braquimesofalangia.
+O próprio capítulo avisa que esses termos estão em desuso, mas eles aparecem nos enunciados. A pergunta do simulado da prova de título de cirurgia da mão de 2010 era exatamente o significado de braquimesofalangia.
 
 ## Por que a falange média
 
@@ -778,7 +778,7 @@ A braquidactilia pode ser isolada, parte de uma anomalia complexa da mão, parte
 | outras | PITT e WILLIAMS; SUGARMAN; "smorgasbord" (A2 com D) | |
 !fim
 
-O tipo que a prova cobra é o **E**: **metacarpos curtos, falanges normais** (SIMÃO 2014). O resto da tabela serve de distrator. Uma pista para memorizar: as letras A são todas de falange média, que é a forma comum; o E é a exceção que encurta o metacarpo.
+O tipo que a prova cobra é o **E**: **metacarpos curtos, falanges normais** (simulado da prova de título de cirurgia da mão de 2014). O resto da tabela serve de distrator. Uma pista para memorizar: as letras A são todas de falange média, que é a forma comum; o E é a exceção que encurta o metacarpo.
 
 Os genes que o Green cita (p. 1239 e 1240) mostram que comprimento de dedo é coisa de sinalização: tipo **E** ligado ao gene do **glipicano 1** no cromossomo 2q (SYRROU e colaboradores, Am J Med Genet, 2002); tipo **B** ao **ROR2**, um receptor de tirosina quinase no 9q22 (SCHWABE e colaboradores, Am J Hum Genet, 2000); tipo **A1** ao **Indian hedgehog** (GAO e colaboradores, Nat Genet, 2001); tipo **C** ao **GDF-5**, com o espectro de mutações descrito por EVERMAN e colaboradores (Am J Med Genet, 2002). A deficiência da proteína morfogenética derivada da cartilagem (CDMP) explica as braquidactilias graves das condrodisplasias de GREBE e de HUNTER-THOMPSON. Todos esses trabalhos estão na lista de referências do capítulo.
 
@@ -792,7 +792,7 @@ O Green (p. 1241) diz que as anomalias associadas, como sindactilia, clinodactil
 
 !questoes treino=mao-2431,mao-2278,mao-2553,mao-2152,mao-2882,mao-2888,mao-2893,mao-2905,mao-2915,mao-2944,mao-2869,mao-2902,mao-2914,mao-2921
 conceito: Braquidactilia é dedo curto com todos os ossos presentes; o mais acometido é a falange média, última a ossificar, e depois o metacarpo; dedos mais acometidos, mínimo e indicador; braquimetacarpia isolada no 4º metacarpo de meninas; pseudo-hipoparatireoidismo encurta anular e mínimo; KELLAM põe a ELLIS-VAN CREVELD na braquidactilia com polidactilia.
-como: O SIMÃO 2022 perguntou os ossos mais encurtados; o SIMÃO 2024, o osso depois da falange média; o SIMÃO 2021, os metacarpos do pseudo-hipoparatireoidismo; o SBCM 2022, o grupo de KELLAM da ELLIS-VAN CREVELD.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou os ossos mais encurtados; o simulado da prova de título de cirurgia da mão de 2024, o osso depois da falange média; o simulado da prova de título de cirurgia da mão de 2021, os metacarpos do pseudo-hipoparatireoidismo; a prova de título de 2022, o grupo de KELLAM da ELLIS-VAN CREVELD.
 armadilha: Pôr a braquidactilia na falange proximal ou distal, ou trocar o grupo da ELLIS-VAN CREVELD (polidactilia) pelo da APERT (sindactilia).
 !fim
 
@@ -807,7 +807,7 @@ O método dos autores (p. 1243) é simples e é o que a prova pede:
 - **dedo flácido isolado**, sem função: amputação do raio;
 - **metacarpo curto**, sobretudo central: alongamento por **distração**.
 
-A lógica do enxerto trapezoidal é geométrica: ele abre o lado côncavo e, ao mesmo tempo, devolve comprimento. A cunha de fechamento é a resposta certa na clinodactilia de falange trapezoidal no esqueleto maduro (veja adiante), mas não no dedo que já é curto: a questão do SIMÃO 2019 que perguntou a correção preferida na braquidactilia angulada vive dessa troca.
+A lógica do enxerto trapezoidal é geométrica: ele abre o lado côncavo e, ao mesmo tempo, devolve comprimento. A cunha de fechamento é a resposta certa na clinodactilia de falange trapezoidal no esqueleto maduro (veja adiante), mas não no dedo que já é curto: a questão do simulado da prova de título de cirurgia da mão de 2019 que perguntou a correção preferida na braquidactilia angulada vive dessa troca.
 
 ## Alongar de uma vez ou aos poucos
 
@@ -834,7 +834,7 @@ O Green (p. 1243) dá números que caem em prova:
 | depois | às vezes enxerto secundário; terapeuta e radiografias seriadas | ganho limitado pelo osso e pelas partes moles |
 !fim
 
-O SIMÃO 2012 cobrou o início da distração com a resposta "7 dias" do curso; pelo livro, o intervalo é de **4 a 7 dias**, de modo que 5 e 7 dias cabem nele. O simulado cobra o **ritmo**, que não tem ambiguidade.
+O simulado da prova de título de cirurgia da mão de 2012 cobrou o início da distração com a resposta "7 dias" do curso; pelo livro, o intervalo é de **4 a 7 dias**, de modo que 5 e 7 dias cabem nele. O simulado cobra o **ritmo**, que não tem ambiguidade.
 
 # Clinodactilia: definição e quem tem {radar=fundamento}
 
@@ -842,7 +842,7 @@ O SIMÃO 2012 cobrou o início da distração com a resposta "7 dias" do curso; 
 
 A **clinodactilia** é a **angulação do dedo no plano radioulnar, distal à MF** (Green, p. 1270, Fig. 36.88). Duas palavras da definição eliminam distratores: **radioulnar** (não é flexão, que seria camptodactilia, nem dois planos, que seria KIRNER) e **distal à MF** (o desvio ulnar da MF da reumatoide não é clinodactilia).
 
-Uma pequena angulação, sobretudo no mínimo, é tão comum que beira o normal. Por isso o Green põe o limite: só se fala em clinodactilia acima de **10 graus**. O SIMÃO 2008 cobrou o número; o SIMÃO 2009, a criança de 4 anos com 8 graus no mínimo e sem queixa, que é uma **variação próxima do normal**.
+Uma pequena angulação, sobretudo no mínimo, é tão comum que beira o normal. Por isso o Green põe o limite: só se fala em clinodactilia acima de **10 graus**. O simulado da prova de título de cirurgia da mão de 2008 cobrou o número; o simulado da prova de título de cirurgia da mão de 2009, a criança de 4 anos com 8 graus no mínimo e sem queixa, que é uma **variação próxima do normal**.
 
 A deformidade nasce de uma falange **triangular ou trapezoidal**: a articulação interfalângica se desvia da perpendicular ao eixo do dedo porque um lado do osso cresceu menos (crescimento longitudinal **assimétrico**).
 
@@ -895,7 +895,7 @@ O Green (p. 1271) considera a de **COONEY** a mais útil (COONEY, "Camptodactyly
 | **complexa complicada** | osso e partes moles | mais de 45 graus | **polidactilia** ou **macrodactilia** |
 !fim
 
-A leitura: "simples" e "complexa" dizem **o que está envolvido** (só osso ou osso e partes moles); "complicada" diz que passou de **45 graus**. A clinodactilia de 30 graus só óssea é **simples** (SIMÃO 2012); a de 50 graus só óssea é **simples complicada** (SIMÃO 2026); a de 55 graus com polidactilia é **complexa complicada** (SIMÃO 2012); a associada à sindactilia com menos de 45 graus é **complexa** (SIMÃO 2023).
+A leitura: "simples" e "complexa" dizem **o que está envolvido** (só osso ou osso e partes moles); "complicada" diz que passou de **45 graus**. A clinodactilia de 30 graus só óssea é **simples** (simulado da prova de título de cirurgia da mão de 2012); a de 50 graus só óssea é **simples complicada** (simulado da prova de título de cirurgia da mão de 2026); a de 55 graus com polidactilia é **complexa complicada** (simulado da prova de título de cirurgia da mão de 2012); a associada à sindactilia com menos de 45 graus é **complexa** (simulado da prova de título de cirurgia da mão de 2023).
 
 # Clinodactilia: o tratamento {radar=fundamento}
 
@@ -943,11 +943,11 @@ A melhor série que o Green cita é de CAOUETTE-LABERGE e colaboradores ("Physio
 | **polegar** | **osteotomia corretiva primária**; não confiar na correção gradual da ressecção da barra |
 !fim
 
-A resposta do polegar merece atenção: a pinça não pode esperar dois anos de correção incerta, e por isso o polegar vai direto para a osteotomia (SIMÃO 2019). O resultado esperado (p. 1273): a osteotomia corrige, mas pode **enrijecer** o dedo por cicatriz e aderências; a ressecção da barra depende do **crescimento restante**.
+A resposta do polegar merece atenção: a pinça não pode esperar dois anos de correção incerta, e por isso o polegar vai direto para a osteotomia (simulado da prova de título de cirurgia da mão de 2019). O resultado esperado (p. 1273): a osteotomia corrige, mas pode **enrijecer** o dedo por cicatriz e aderências; a ressecção da barra depende do **crescimento restante**.
 
 !questoes treino=mao-1727,mao-2871,mao-2877,mao-2900,mao-2916,mao-2918,mao-2919,mao-2935,mao-2941,mao-2952
 conceito: COONEY: simples (só falange média, menos de 45 graus), simples complicada (só osso, mais de 45), complexa (osso e partes moles, menos de 45, com sindactilia), complexa complicada (mais de 45, com polidactilia ou macrodactilia); barra ossificada cedo dá falange delta; VICKERS resseca a barra e interpõe gordura antes dos 6 anos; trapezoidal madura com cunha de fechamento, triangular com abertura; polegar com osteotomia primária.
-como: O SIMÃO 2026 deu 50 graus só por deformidade óssea da falange média; as variações cobram a falange delta, a gordura e a osteotomia por tipo de falange.
+como: O simulado da prova de título de cirurgia da mão de 2026 deu 50 graus só por deformidade óssea da falange média; as variações cobram a falange delta, a gordura e a osteotomia por tipo de falange.
 armadilha: Chamar de complexa uma deformidade só óssea porque passou de 45 graus, ou indicar tala.
 !fim
 
@@ -955,7 +955,7 @@ armadilha: Chamar de complexa uma deformidade só óssea porque passou de 45 gra
 
 ## Definição
 
-A deformidade de **KIRNER** é a **curvatura palmar e radial progressiva da falange distal**, em geral do **mínimo** (Green, p. 1273). Ainda é confundida com a clinodactilia. A diferença está no osso e no plano: a clinodactilia é da **falange média** e ocorre num **só plano**, radioulnar; a KIRNER é da **falange distal** e se curva em **dois planos**, palmar e radial (SIMÃO 2009).
+A deformidade de **KIRNER** é a **curvatura palmar e radial progressiva da falange distal**, em geral do **mínimo** (Green, p. 1273). Ainda é confundida com a clinodactilia. A diferença está no osso e no plano: a clinodactilia é da **falange média** e ocorre num **só plano**, radioulnar; a KIRNER é da **falange distal** e se curva em **dois planos**, palmar e radial (simulado da prova de título de cirurgia da mão de 2009).
 
 ## Quem tem
 
@@ -972,9 +972,9 @@ Essa divisão entre familiar e esporádica é a base da classificação de **SON
 
 ## O quadro da forma tardia
 
-A forma tardia segue uma sequência que a SBCM 2024 transformou em caso clínico (p. 1274): primeiro surge um **inchaço no dorso da falange distal** de um ou dos dois mínimos, às vezes desconfortável, em geral indolor; depois, a ponta se curva para **palmar e radial**, e a unha fica em **baqueta** ou **em bico** (Fig. 36.92). Uma vez estabelecida, a deformidade é **estável**. A **mobilidade da IFD fica preservada**, porque o problema está na diáfise e na fise, não na articulação.
+A forma tardia segue uma sequência que a prova de título de 2024 transformou em caso clínico (p. 1274): primeiro surge um **inchaço no dorso da falange distal** de um ou dos dois mínimos, às vezes desconfortável, em geral indolor; depois, a ponta se curva para **palmar e radial**, e a unha fica em **baqueta** ou **em bico** (Fig. 36.92). Uma vez estabelecida, a deformidade é **estável**. A **mobilidade da IFD fica preservada**, porque o problema está na diáfise e na fise, não na articulação.
 
-Síndromes associadas: **CORNELIA DE LANGE**, **SILVER**, **TURNER** e **DOWN**. Na forma **unilateral**, o diagnóstico diferencial mais importante é o **trauma tardio** da falange distal, sobretudo a **fratura fisária com angulação palmar**, além da queimadura e do congelamento da fise (SBCM 2014).
+Síndromes associadas: **CORNELIA DE LANGE**, **SILVER**, **TURNER** e **DOWN**. Na forma **unilateral**, o diagnóstico diferencial mais importante é o **trauma tardio** da falange distal, sobretudo a **fratura fisária com angulação palmar**, além da queimadura e do congelamento da fise (prova de título de 2014).
 
 ## Por que acontece
 
@@ -991,7 +991,7 @@ O Green (p. 1274, Fig. 36.93) descreve:
 - na histologia, lise na junção entre metáfise e fise;
 - na forma madura, fise toda fundida e densidade normal.
 
-O SIMÃO 2010 deu afirmativas sem gabarito; pelo livro, a certa é a da forma esporádica em pelo menos metade dos casos, e as erradas trocavam penetrância (é incompleta), aspecto da fise (alargamento, não estreitamento) e o lado em que ela começa a fechar (dorsal, não palmar).
+O simulado da prova de título de cirurgia da mão de 2010 deu afirmativas sem gabarito; pelo livro, a certa é a da forma esporádica em pelo menos metade dos casos, e as erradas trocavam penetrância (é incompleta), aspecto da fise (alargamento, não estreitamento) e o lado em que ela começa a fechar (dorsal, não palmar).
 
 ## O tratamento
 
@@ -1002,11 +1002,11 @@ A KIRNER tem **pouco efeito funcional** (músicos e digitadores podem se queixar
 - **fise aberta**: hemiepifisiodese dorsal ou ressecção de cunha dorsal com a fise;
 - **madura**: osteotomias, seja **cunha de fechamento dorsal**, seja **duas ou três cunhas de abertura na cortical volar** para "desdobrar" a falange (Fig. 36.94, adaptada de CARSTAM e EIKEN, J Bone Joint Surg Am, 1970); a distração também foi usada (MOSER e ROSSLEIN, 1996).
 
-O método dos autores (p. 1275): tala nas fases iniciais com vigilância rigorosa; **não seccionam rotineiramente** a inserção do flexor; **adiam a cirurgia até o paciente participar da decisão**. Quando operam, fazem **duas ou três osteotomias volares, distais à inserção do flexor**, retirando a unha por incisão dorsolateral radial que preserva a prega paroniquial. O detalhe que a prova cobrou (SIMÃO 2020): incisa-se o **periósteo volar** e preserva-se o **periósteo dorsal como dobradiça**, que **protege a matriz ungueal**. Fio axial até consolidar e tala.
+O método dos autores (p. 1275): tala nas fases iniciais com vigilância rigorosa; **não seccionam rotineiramente** a inserção do flexor; **adiam a cirurgia até o paciente participar da decisão**. Quando operam, fazem **duas ou três osteotomias volares, distais à inserção do flexor**, retirando a unha por incisão dorsolateral radial que preserva a prega paroniquial. O detalhe que a prova cobrou (simulado da prova de título de cirurgia da mão de 2020): incisa-se o **periósteo volar** e preserva-se o **periósteo dorsal como dobradiça**, que **protege a matriz ungueal**. Fio axial até consolidar e tala.
 
 !questoes treino=mao-2630
 conceito: KIRNER é a curvatura palmar e radial progressiva da falange distal do mínimo, em dois planos; 0,15 a 0,25%, meninas 2:1; esporádica em pelo menos metade; SONG separa a congênita familiar que não progride da tardia esporádica do fim da infância; começa com inchaço dorsal e termina com unha em bico e IFD móvel; fise alargada e distorcida, fechando tarde e pela metade dorsal.
-como: O SBCM 2024 descreveu a menina de 11 anos com inchaço dorsal na falange distal dos dois mínimos que depois se curvou para palmar e radial.
+como: A prova de título de 2024 descreveu a menina de 11 anos com inchaço dorsal na falange distal dos dois mínimos que depois se curvou para palmar e radial.
 armadilha: Responder clinodactilia (falange média, um plano) ou camptodactilia (IFP, flexão).
 !fim
 
@@ -1030,7 +1030,7 @@ As duas deformidades vivem no mínimo, são progressivas com o crescimento e tê
 
 !questoes treino=mao-2283,mao-2001,mao-2466,mao-2395,mao-2873,mao-2875,mao-2876,mao-2891,mao-2892,mao-2894,mao-2911,mao-2920,mao-2929,mao-2949
 conceito: Clinodactilia: angulação radioulnar com suporte epifisário em "C" e falange delta; COONEY associa a forma complexa à sindactilia; delta dupla em RUBINSTEIN-TAYBI. KIRNER curva a distal do mínimo para palmar e radial.
-como: O SIMÃO 2024 deu a epífise em "C"; o SIMÃO 2023 pediu a deformidade associada na classificação; o SIMÃO 2021, a síndrome da delta dupla; o SIMÃO 2022, a direção da curva de KIRNER.
+como: O simulado da prova de título de cirurgia da mão de 2024 deu a epífise em "C"; o simulado da prova de título de cirurgia da mão de 2023 pediu a deformidade associada na classificação; o simulado da prova de título de cirurgia da mão de 2021, a síndrome da delta dupla; o simulado da prova de título de cirurgia da mão de 2022, a direção da curva de KIRNER.
 armadilha: Atribuir a epífise em "C" ao KIRNER ou dizer que KIRNER curva só para radial (são dois planos, palmar e radial).
 !fim
 
@@ -1042,9 +1042,9 @@ A camptodactilia idiopática, a forma comum do mínimo do lactente e da menina a
 
 ## Definição e epidemiologia
 
-A camptodactilia é a **contratura em flexão da IFP, não traumática** (Campbell, p. 3672). O plano é **sagital**: é o que a separa da clinodactilia (radioulnar) e da KIRNER (dois planos). Atinge **menos de 1%** da população; em muitas famílias é **autossômica dominante** forte, mas também ocorre esporadicamente. Cerca de **dois terços são bilaterais**, em geral **assimétricos** (SIMÃO 2009). O dedo típico é o **mínimo**; o polegar é poupado (KLOC, 2023). A MF tende à **hiperextensão compensatória**.
+A camptodactilia é a **contratura em flexão da IFP, não traumática** (Campbell, p. 3672). O plano é **sagital**: é o que a separa da clinodactilia (radioulnar) e da KIRNER (dois planos). Atinge **menos de 1%** da população; em muitas famílias é **autossômica dominante** forte, mas também ocorre esporadicamente. Cerca de **dois terços são bilaterais**, em geral **assimétricos** (simulado da prova de título de cirurgia da mão de 2009). O dedo típico é o **mínimo**; o polegar é poupado (KLOC, 2023). A MF tende à **hiperextensão compensatória**.
 
-Quase todas as estruturas do lado palmar do dedo já foram acusadas (Campbell, p. 3672): uma banda junto ao ligamento de LANDSMEER, inserção anômala do lumbrical no flexor superficial, cápsula da MF, expansão extensora e, sobretudo, o **flexor superficial curto**. A pista clínica é que, na criança pequena, a contratura **diminui com o punho fletido** (Fig. 85.55), porque a flexão do punho afrouxa o flexor superficial (SBCM 2014). Nos maiores, a deformidade se fixa.
+Quase todas as estruturas do lado palmar do dedo já foram acusadas (Campbell, p. 3672): uma banda junto ao ligamento de LANDSMEER, inserção anômala do lumbrical no flexor superficial, cápsula da MF, expansão extensora e, sobretudo, o **flexor superficial curto**. A pista clínica é que, na criança pequena, a contratura **diminui com o punho fletido** (Fig. 85.55), porque a flexão do punho afrouxa o flexor superficial (prova de título de 2014). Nos maiores, a deformidade se fixa.
 
 ## Os três tipos
 
@@ -1058,7 +1058,7 @@ Quase todas as estruturas do lado palmar do dedo já foram acusadas (Campbell, p
 
 As síndromes do tipo III que o Campbell lista: **trissomia 13**, oculodentodigital, orofaciodigital, **AARSKOG** e cérebro-hepatorrenal. Há ainda um subgrupo grave ao nascer, com vários dedos e sem preferência pelo mínimo, em que o problema é do extensor.
 
-A banca cobrou os três tipos várias vezes. O SIMÃO 2009 marcou "pré-adolescência" para o tipo II, pelo curso; o Campbell diz adolescência, sobretudo meninas, e KLOC situa entre 7 e 11 anos; o caso do SBCM 2015 (menina de 11 anos, sem síndrome, que começou há meses a fletir a IFP do mínimo) é o tipo II. O SIMÃO 2014 e o SIMÃO 2015 cobraram o tipo mais comum (o infantil, 80%); o SIMÃO 2020, a distribuição entre os sexos do tipo I (igual).
+A banca cobrou os três tipos várias vezes. O simulado da prova de título de cirurgia da mão de 2009 marcou "pré-adolescência" para o tipo II, pelo curso; o Campbell diz adolescência, sobretudo meninas, e KLOC situa entre 7 e 11 anos; o caso da prova de título de 2015 (menina de 11 anos, sem síndrome, que começou há meses a fletir a IFP do mínimo) é o tipo II. O simulado da prova de título de cirurgia da mão de 2014 e o simulado da prova de título de cirurgia da mão de 2015 cobraram o tipo mais comum (o infantil, 80%); o simulado da prova de título de cirurgia da mão de 2020, a distribuição entre os sexos do tipo I (igual).
 
 ## História natural
 
@@ -1066,7 +1066,7 @@ Sem tratamento, **80% pioram no estirão** (Campbell, p. 3673); KLOC aponta duas
 
 ## Tratamento: devagar e sem prometer
 
-O Campbell (p. 3673) é claro: **nenhum tratamento é previsível**. O tratamento não operatório é o melhor nas **contraturas leves, abaixo de 30 graus** (SIMÃO 2008). Os números desanimam quem quer operar: **20% melhoram sem cirurgia** e só **35% com cirurgia**, com complicações de **2 a 11%** (perda de flexão, anquilose, recidiva). O alongamento é dose-dependente: cinco minutos, vinte vezes por dia, deram melhora de 20 para 1 grau, de 39 para 12 e de 75 para 28. BENSON usou órteses estáticas 15 a 18 horas por dia (KLOC, 2023).
+O Campbell (p. 3673) é claro: **nenhum tratamento é previsível**. O tratamento não operatório é o melhor nas **contraturas leves, abaixo de 30 graus** (simulado da prova de título de cirurgia da mão de 2008). Os números desanimam quem quer operar: **20% melhoram sem cirurgia** e só **35% com cirurgia**, com complicações de **2 a 11%** (perda de flexão, anquilose, recidiva). O alongamento é dose-dependente: cinco minutos, vinte vezes por dia, deram melhora de 20 para 1 grau, de 39 para 12 e de 75 para 28. BENSON usou órteses estáticas 15 a 18 horas por dia (KLOC, 2023).
 
 Quando se opera:
 
@@ -1078,11 +1078,11 @@ Quando se opera:
 
 No capítulo 39 (p. 1387 e 1388), o Green lembra que **quase toda criança com artrogripose do membro superior tem contratura dos dedos**, e que a camptodactilia é **mais comum nas artrogriposes distais**, chegando a definir síndromes como a de **BEALS** (aracnodactilia contratural). Daí a resposta do INTO 2023: a condição mais associada à camptodactilia é a **artrogripose**.
 
-O tratamento começa com **alongamento passivo e órtese noturna**, com ganhos até cerca de **5 anos** e platô depois de 2 anos de tratamento. A **radiografia é inútil na criança pequena**; na maior, mostra **côndilos da IFP hipotróficos**, e **quanto mais hipoplasia condilar, menos a deformidade se corrige** (SIMÃO 2013). A deformidade passivamente corrigível indica côndilos melhores. Na cirurgia, a **zetaplastia volar** trata o pterígio, o **flexor superficial quase sempre é curto** (tenotomia), e ele pode ser transferido para a banda lateral se a deformidade for corrigível. Os resultados são **imprevisíveis**, e a complicação mais comum é a **rigidez**.
+O tratamento começa com **alongamento passivo e órtese noturna**, com ganhos até cerca de **5 anos** e platô depois de 2 anos de tratamento. A **radiografia é inútil na criança pequena**; na maior, mostra **côndilos da IFP hipotróficos**, e **quanto mais hipoplasia condilar, menos a deformidade se corrige** (simulado da prova de título de cirurgia da mão de 2013). A deformidade passivamente corrigível indica côndilos melhores. Na cirurgia, a **zetaplastia volar** trata o pterígio, o **flexor superficial quase sempre é curto** (tenotomia), e ele pode ser transferido para a banda lateral se a deformidade for corrigível. Os resultados são **imprevisíveis**, e a complicação mais comum é a **rigidez**.
 
 !questoes central=mao-1423 relacionadas=pe-tornozelo-0252 treino=mao-2010,mao-2402,mao-2374
 conceito: Camptodactilia: o tipo III é o sindrômico; aparece com frequência na artrogripose, sobretudo nas formas distais; radiografia inútil na criança pequena; tala ajuda; a complicação típica da cirurgia é a rigidez com perda de flexão.
-como: O SIMÃO 2023 pediu a afirmação correta sobre camptodactilia na artrogripose; o SIMÃO 2022, a condição mais associada; o USP-SP 2024, o tipo III; o SIMÃO 2024, o resultado desfavorável a avisar à família.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu a afirmação correta sobre camptodactilia na artrogripose; o simulado da prova de título de cirurgia da mão de 2022, a condição mais associada; o USP-SP 2024, o tipo III; o simulado da prova de título de cirurgia da mão de 2024, o resultado desfavorável a avisar à família.
 armadilha: Atribuir o tipo III às meninas adolescentes (isso é o tipo II) ou dizer que órteses não funcionam.
 !fim
 

@@ -41,7 +41,7 @@ A banca gira em poucos blocos, que este resumo trata em detalhe:
 
 A IFP é um gínglimo, uma dobradiça. A cabeça da falange proximal tem dois côndilos, e a base da falange média tem duas facetas côncavas separadas por uma crista que se encaixa no sulco entre os côndilos. Esse encaixe dá a estabilidade óssea; o resto vem de três estruturas de partes moles: os dois colaterais e a placa volar (p. 278).
 
-Os côndilos não são perfeitamente simétricos. Essa pequena diferença de altura e de curvatura faz a falange média girar enquanto flete: ao longo de todo o arco, a IFP ganha **até 9 graus de supinação** (p. 278). Parece detalhe de anatomista, mas explica por que um dedo fletido converge para o escafoide e por que uma consolidação viciosa rotacional pequena na falange já faz o dedo cruzar o vizinho. A banca do SIMÃO cobrou esse número.
+Os côndilos não são perfeitamente simétricos. Essa pequena diferença de altura e de curvatura faz a falange média girar enquanto flete: ao longo de todo o arco, a IFP ganha **até 9 graus de supinação** (p. 278). Parece detalhe de anatomista, mas explica por que um dedo fletido converge para o escafoide e por que uma consolidação viciosa rotacional pequena na falange já faz o dedo cruzar o vizinho. A banca do simulado da prova de título de cirurgia da mão cobrou esse número.
 
 ## Colateral próprio e colateral acessório
 
@@ -50,7 +50,7 @@ Os colaterais nascem de uma fosseta côncava na face lateral de cada côndilo da
 - **Colateral próprio** (com porções dorsal e volar): insere-se no **terço volar da base da falange média**.
 - **Colateral acessório**: insere-se na **margem lateral da placa volar**.
 
-Os dois são contínuos; não há um septo entre eles. A divisão é útil porque explica comportamentos diferentes: o próprio prende osso a osso e é o **restritor primário do desvio radial e ulnar**; o acessório suspende a placa volar como as cordas de uma rede. A questão do SIMÃO 2019 pediu onde o acessório se insere, e o distrator mais tentador é justamente "terço volar da falange média", que é a inserção do próprio.
+Os dois são contínuos; não há um septo entre eles. A divisão é útil porque explica comportamentos diferentes: o próprio prende osso a osso e é o **restritor primário do desvio radial e ulnar**; o acessório suspende a placa volar como as cordas de uma rede. A questão do simulado da prova de título de cirurgia da mão de 2019 pediu onde o acessório se insere, e o distrator mais tentador é justamente "terço volar da falange média", que é a inserção do próprio.
 
 ## A placa volar e os checkrein
 
@@ -68,7 +68,7 @@ O padrão habitual de falha também é cobrado: **os colaterais falham proximalm
 
 !questoes central=mao-1069 relacionadas=mao-0635 treino=mao-2115,mao-3557,mao-3558,mao-3559,mao-3547,mao-3567,mao-3570,mao-3555
 conceito: Na IFP, os colaterais se rompem tipicamente na origem proximal e a placa volar se solta distalmente da base da falange média; a placa tem porção distal espessa e fibrocartilaginosa e porção proximal mais fina, de onde partem os checkrein.
-como: A PUC-SP 2019 perguntou onde se rompem colaterais e placa volar, nessa ordem; o TARO 2006 afirmou, em certo ou errado, que a placa volar das interfalângicas é espessa distalmente e membranosa proximalmente (certo pelo Green, sem gabarito no material); o simulado do SBCM 2022 pergunta que estrutura a IFP tem e a IFD não.
+como: A PUC-SP 2019 perguntou onde se rompem colaterais e placa volar, nessa ordem; o TARO 2006 afirmou, em certo ou errado, que a placa volar das interfalângicas é espessa distalmente e membranosa proximalmente (certo pelo Green, sem gabarito no material); o simulado da prova de título de 2022 pergunta que estrutura a IFP tem e a IFD não.
 armadilha: Inverter os dois sítios (colateral distal, placa proximal) ou responder "na substância"; na luxação irredutível rara a placa rompe proximalmente, mas esse não é o padrão habitual.
 !fim
 
@@ -278,7 +278,7 @@ O caso clínico eletrônico do capítulo resume a indicação (p. 316): fratura-
 
 !questoes treino=mao-2116,mao-2491,mao-3548
 conceito: O hemi-hamato reconstrói a base volar da falange média com a face dorsal distal do hamato, talhada mais espessa proximalmente para recriar o contraforte; na artroplastia da placa volar, a liberação parcial dos checkrein dá comprimento para avançar a placa.
-como: Os simulados do SBCM 2022 e do SIMÃO 2021 pedem a origem do enxerto osteocondral na base cominuta e o gesto que permite avançar a placa volar numa fratura-luxação antiga.
+como: Os simulados da prova de título de 2022 e do simulado da prova de título de cirurgia da mão de 2021 pedem a origem do enxerto osteocondral na base cominuta e o gesto que permite avançar a placa volar numa fratura-luxação antiga.
 armadilha: Achar que a artroplastia da placa volar serve para defeitos grandes: acima de 40% ela falha, porque não recria o contraforte; e confundir o local doador com a base do 4º metacarpo.
 !fim
 
@@ -304,7 +304,7 @@ A preferência dos autores é a liberação aberta por via de BRUNER, liberando 
 
 !questoes treino=mao-1937
 conceito: Na pseudobotoeira, a contratura em flexão da IFP vem da retração das estruturas volares (placa volar, checkrein e colaterais), com o aparelho extensor íntegro.
-como: O simulado do SIMÃO 2023 pede quais estruturas retraídas mantêm a IFP fletida na pseudobotoeira.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pede quais estruturas retraídas mantêm a IFP fletida na pseudobotoeira.
 armadilha: Atribuir a flexão à ruptura da banda central, que define a botoeira verdadeira.
 !fim
 
@@ -405,7 +405,7 @@ armadilha: Marcar o lumbrical ou o tendão flexor, que formam o laço mas não s
 
 !questoes central=mao-1298 treino=mao-1713
 conceito: A luxação complexa da MF pode ser abordada por via dorsal (BECTON), volar ou combinada; na via volar do indicador, o feixe neurovascular radial está sob a pele, e a abertura da polia A1 desfaz o laço; na simples, flexão do punho e pressão distal e volar na base evitam convertê-la em complexa.
-como: A USP-SP 2025 mostrou imagens da luxação e deu como correta a possibilidade de via dorsal, volar ou ambas; os distratores eram o colateral radial como bloqueio, a incisão da A2 e o feixe ulnar sob risco; o simulado do SIMÃO pede a manobra de redução da simples.
+como: A USP-SP 2025 mostrou imagens da luxação e deu como correta a possibilidade de via dorsal, volar ou ambas; os distratores eram o colateral radial como bloqueio, a incisão da A2 e o feixe ulnar sob risco; o simulado do simulado da prova de título de cirurgia da mão pede a manobra de redução da simples.
 armadilha: Polia A2 no lugar da A1 e feixe ulnar no lugar do radial no indicador (no mínimo é o ulnar); e usar tração longitudinal na luxação simples.
 !fim
 
@@ -415,7 +415,7 @@ armadilha: Polia A2 no lugar da A1 e feixe ulnar no lugar do radial no indicador
 
 !questoes treino=mao-2277,mao-3554,mao-3572
 conceito: Na luxação volar da MF de um dedo de borda, a juntura tendínea pode deslizar distal e volar ao colo do metacarpo e impedir a redução; a via aberta é dorsal.
-como: O simulado do SBCM 2023 pede em que luxação a juntura intertendínea é o bloqueio.
+como: O simulado da prova de título de 2023 pede em que luxação a juntura intertendínea é o bloqueio.
 armadilha: Responder luxação dorsal complexa, cujo bloqueio é a placa volar.
 !fim
 
@@ -446,7 +446,7 @@ A manobra de destravamento: injetar 2 mL de **soro** na articulação (a lidoca�
 
 !questoes treino=mao-2029,mao-3560,mao-3546
 conceito: A incidência de BREWERTON, com as MF fletidas e o raio inclinado, mostra fraturas da cabeça do metacarpo e avulsões dos colaterais da MF que as incidências habituais escondem.
-como: O simulado do SBCM 2024 pede que lesão difícil de ver a BREWERTON ajuda a mostrar.
+como: O simulado da prova de título de 2024 pede que lesão difícil de ver a BREWERTON ajuda a mostrar.
 armadilha: Confundir com incidências para o escafoide ou para a base do polegar.
 !fim
 
@@ -538,7 +538,7 @@ CAMPBELL, em 1955, chamou de "gamekeeper's thumb" (polegar do guarda-caça) a fr
 
 !questoes treino=mao-2338
 conceito: Na ruptura completa aguda do LCU, o Green indica cirurgia (sutura ou reinserção), porque a STENER é difícil de excluir clinicamente e o reparo é o caminho mais previsível.
-como: O simulado do SIMÃO 2024 descreve um atleta com ruptura completa e pede o tratamento habitualmente recomendado.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 descreve um atleta com ruptura completa e pede o tratamento habitualmente recomendado.
 armadilha: Indicar gesso por 6 semanas para a completa, conduta da ruptura parcial.
 !fim
 
@@ -614,7 +614,7 @@ O resultado costuma deixar uma proeminência radial residual. COYLE (2003) relat
 
 !questoes treino=mao-2390
 conceito: Na ruptura completa do colateral radial da MF do polegar, a falange prona e desloca para volar em torno do colateral ulnar íntegro, com proeminência dorsorradial da cabeça do metacarpo.
-como: O simulado do SIMÃO 2022 pede como a falange tende a se posicionar quando o LCR rompe.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pede como a falange tende a se posicionar quando o LCR rompe.
 armadilha: Responder supinação, que é o desvio do LCU roto.
 !fim
 
@@ -642,7 +642,7 @@ A MF do polegar em hiperextensão crônica costuma ser frouxidão generalizada e
 
 !questoes treino=mao-2030
 conceito: Na luxação dorsal da MF do polegar que não reduz fechada, a estrutura interposta costuma ser a placa volar; menos vezes, o flexor longo do polegar laçando a cabeça.
-como: O simulado do SBCM 2024 pede a estrutura interposta na luxação complexa da MF do polegar.
+como: O simulado da prova de título de 2024 pede a estrutura interposta na luxação complexa da MF do polegar.
 armadilha: Responder a aponeurose do adutor, que pertence à lesão de STENER, não à luxação.
 !fim
 
@@ -676,7 +676,7 @@ O Green 7 usa três faixas: estável abaixo de 30%, tenuamente estável de 30 a 
 
 ## Números que o Green 7 não traz
 
-- O alongamento de 12 mm da pele dorsal para fletir a IFP 90 graus (cobrado pelo SIMÃO 2013) e o comprimento de 15 mm da placa volar (SIMÃO 2019) não aparecem no capítulo nem no resto do livro. Não use esses números como se viessem do Green.
+- O alongamento de 12 mm da pele dorsal para fletir a IFP 90 graus (cobrado pelo simulado da prova de título de cirurgia da mão de 2013) e o comprimento de 15 mm da placa volar (simulado da prova de título de cirurgia da mão de 2019) não aparecem no capítulo nem no resto do livro. Não use esses números como se viessem do Green.
 - O comprimento da placa volar em flexão e em extensão também não é dado.
 
 ## Placa volar: distal ou proximal?

@@ -101,7 +101,7 @@ O Green 7 abre a anatomia pelos três flexores extrínsecos (p. 185), e as orige
 
 !questoes central=mao-0859,mao-0963 treino=mao-2113,mao-2826,mao-2852
 conceito: O FDS tem duas cabeças (umeroulnar e radial), é inervado só pelo mediano e recebe sangue das artérias radial e ulnar; no punho, seus tendões ficam em dois andares; o FDP e o FPL formam a camada profunda do compartimento anterior.
-como: A UFG 2017 pediu a afirmação correta sobre os flexores (tendões do FDS em duas camadas no punho); a UFG 2020 perguntou em que compartimento estão os flexores dos dedos; o simulado da SBCM 2022 cobrou as cabeças, a posição dos tendões e a irrigação do FDS.
+como: A UFG 2017 pediu a afirmação correta sobre os flexores (tendões do FDS em duas camadas no punho); a UFG 2020 perguntou em que compartimento estão os flexores dos dedos; o simulado da prova de título de 2022 cobrou as cabeças, a posição dos tendões e a irrigação do FDS.
 armadilha: Dar origem no epicôndilo medial ao FDP, inervação ulnar ao FDS ou pôr a cabeça radial superficial ao pronador redondo; ela é profunda a ele.
 alerta: A UFG 2020 deu "anterior profundo" para os flexores dos dedos; pelo Green 7 (p. 185), o FDP forma a camada profunda e o FDS a intermediária do compartimento anterior, de modo que a resposta descreve sobretudo o FDP. O gabarito oficial foi preservado.
 !fim
@@ -178,7 +178,7 @@ No mínimo, a bainha costuma continuar na **bursa ulnar**, e no polegar a bainha
 
 !questoes treino=mao-2195
 conceito: A bainha do mínimo continua na bursa ulnar, que passa sob o ligamento transverso do carpo e chega ao espaço de PARONA, sobre o pronador quadrado; por isso a tenossinovite do mínimo (e a do polegar, pela bursa radial) pode alcançar o antebraço.
-como: O simulado da SBCM 2023 perguntou qual dedo tem a tenossinovite classicamente ligada à disseminação para o espaço de PARONA.
+como: O simulado da prova de título de 2023 perguntou qual dedo tem a tenossinovite classicamente ligada à disseminação para o espaço de PARONA.
 armadilha: Escolher o médio ou o anular, cujas bainhas em geral terminam na palma, sem continuar numa bursa.
 !fim
 
@@ -394,7 +394,7 @@ O Campbell traz as comparações que viram questão (p. 3145 e 3146): ZOBITZ nã
 
 !questoes central=mao-0905 treino=mao-2193,mao-1792,mao-2830,mao-2848
 conceito: A força do núcleo depende de material, calibre e número de fios que cruzam o reparo; as técnicas multifilamentares são mais fortes que as de duas passadas desde o início e continuam mais resistentes ao gap às 6 semanas.
-como: A UFG 2019 perguntou qual técnica confere maior resistência à separação dos cotos; o simulado da SBCM 2023 comparou as multifilamentares às de dois fios; o do SIMÃO 2026 pediu a estratégia de sutura para mobilização precoce.
+como: A UFG 2019 perguntou qual técnica confere maior resistência à separação dos cotos; o simulado da prova de título de 2023 comparou as multifilamentares às de dois fios; o do simulado da prova de título de cirurgia da mão de 2026 pediu a estratégia de sutura para mobilização precoce.
 armadilha: Achar que a vantagem das multifilamentares some com a cicatrização, ou que nós volumosos no foco aumentam a força (o local do nó não tem efeito independente e o volume aumenta o atrito).
 alerta: Na UFG 2019, entre KESSLER, epitendínea contínua, PULVERTAFT e MASON-ALLEN, o gabarito é PULVERTAFT, que o Green 7 (p. 208) descreve como mais forte que as suturas término-terminais; a questão compara uma junção entrelaçada com núcleos término-terminais. O gabarito oficial foi preservado.
 !fim
@@ -447,7 +447,7 @@ Para unir um tendão de **pequeno diâmetro a um de grande diâmetro**, a técni
 
 !questoes central=mao-0607,mao-0591,mao-0769,mao-0973 treino=mao-2625
 conceito: Tendões de diâmetros diferentes se unem pela trama de PULVERTAFT: o menor atravessa o maior, que termina em boca de peixe; é mais forte que as término-terminais, permite ajustar a tensão no primeiro passe e fica fora da bainha, nas zonas 3 a 5.
-como: O TARO 2007 e o TARO 2013 perguntaram a sutura para diâmetros diferentes; o INTO 2023 repetiu a pergunta com cinco epônimos; a UFG 2020 pediu a descrição correta da técnica; o simulado da SBCM 2024, a técnica e as zonas preferidas pelo Green.
+como: O TARO 2007 e o TARO 2013 perguntaram a sutura para diâmetros diferentes; o INTO 2023 repetiu a pergunta com cinco epônimos; a UFG 2020 pediu a descrição correta da técnica; o simulado da prova de título de 2024, a técnica e as zonas preferidas pelo Green.
 armadilha: Escolher KESSLER, TAJIMA ou BUNNELL, que são núcleos término-terminais para cotos de calibre semelhante, ou KLEINERT, que é reabilitação.
 alerta: O acervo não registra o gabarito oficial de `mao-0607`; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3150), e o Green 7 (p. 208) respondem PULVERTAFT.
 !fim
@@ -503,7 +503,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3156), mede de outro 
 
 !questoes central=mao-0152 treino=mao-1942
 conceito: Na zona 1, coto distal de 1 cm ou mais pede tenorrafia; coto menor, avanço e reinserção no osso; avançar o FDP mais de 1 cm causa quadriga.
-como: O TEOT 2023 perguntou quando a zona I pede sutura primária direta; o simulado do SIMÃO 2023, quando o coto indica tenorrafia.
+como: O TEOT 2023 perguntou quando a zona I pede sutura primária direta; o simulado do simulado da prova de título de cirurgia da mão de 2023, quando o coto indica tenorrafia.
 armadilha: Inverter a regra (reinserir quando o coto é longo) ou aplicá-la ao FDS, que não existe na zona 1.
 alerta: O TEOT 2023 fala em "intervalo entre os cotos do flexor profundo menor ou igual a 1 cm", leitura próxima da régua do Campbell (distância de avanço, p. 3156); o Green 7 (p. 187) mede o comprimento do coto distal. O gabarito oficial foi preservado.
 !fim
@@ -557,7 +557,7 @@ armadilha: Confundir o tipo I com o II, em que o vínculo longo segura o coto na
 
 !questoes treino=mao-1794
 conceito: Fragmento ósseo parado na A4 com o tendão separado dele e retraído é o tipo IV; fixa-se ou excisa-se o fragmento conforme o tamanho e reinsere-se o FDP.
-como: O simulado do SIMÃO 2026 trouxe um jogador de rúgbi com fragmento na A4 e coto na palma ao ultrassom.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 trouxe um jogador de rúgbi com fragmento na A4 e coto na palma ao ultrassom.
 armadilha: Chamar de tipo III só porque há fragmento na A4; no III o tendão continua preso ao osso.
 !fim
 
@@ -573,7 +573,7 @@ O Campbell diverge no dedo: recomenda o enxerto no **indicador e no médio** de 
 
 !questoes central=mao-0650 treino=mao-2472,mao-2843,mao-2855,mao-2860
 conceito: Com FDS íntegro, a maioria se adapta sem reconstruir o FDP; IFD instável pede tenodese ou artrodese, e a tenodese está indicada quando o enxerto é impossível; o enxerto pelo FDS íntegro fica para o jovem com IFD instável e flexível, sobretudo no anular e no mínimo.
-como: O TARO 2006 afirmou que, no arrancamento do FDP, a tenodese está indicada na impossibilidade de enxerto; o simulado do SIMÃO 2021 pediu o princípio que o Green destaca diante do FDP antigo com FDS funcionante.
+como: O TARO 2006 afirmou que, no arrancamento do FDP, a tenodese está indicada na impossibilidade de enxerto; o simulado do simulado da prova de título de cirurgia da mão de 2021 pediu o princípio que o Green destaca diante do FDP antigo com FDS funcionante.
 armadilha: Achar que todo FDP crônico precisa de enxerto, ou retirar o FDS íntegro para facilitar a passagem.
 alerta: O acervo não registra o gabarito oficial de `mao-0650`; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3179), sustenta a afirmação, e o Green 7 (p. 211) põe tenodese e artrodese como opções para a IFD instável.
 !fim
@@ -631,7 +631,7 @@ O prazo do FPL é generoso: o reparo direto em qualquer nível é possível até
 
 !questoes central=mao-0229 treino=mao-2388,mao-2112,mao-2837
 conceito: No corte intrassinovial do FPL, o coto proximal costuma retrair para dentro da musculatura tenar; o reparo direto é possível em qualquer nível até 3 a 6 semanas, e mais se os cotos não se afastaram.
-como: Uma prova de Ortopedia perguntou onde fica o coto proximal do FPL na zona 2; os simulados do SIMÃO 2022 e da SBCM 2022 cobraram a retração e o prazo.
+como: Uma prova de Ortopedia perguntou onde fica o coto proximal do FPL na zona 2; os simulados do simulado da prova de título de cirurgia da mão de 2022 e da prova de título de 2022 cobraram a retração e o prazo.
 armadilha: Responder espaço de PARONA ou antebraço como primeira localização; o túnel do carpo e o antebraço distal são onde se procura quando o coto passou da musculatura tenar.
 alerta: O Campbell's Operative Orthopaedics, 15ª ed. (p. 3165), descreve retração até perto do punho na zona III; o Green 7 (p. 190) põe o coto sob a musculatura tenar. O gabarito oficial foi preservado.
 !fim
@@ -648,7 +648,7 @@ O raciocínio de **DURAN** foi quantitativo. Ele calculou que **3 a 5 mm** de ex
 
 !questoes central=mao-1165 treino=mao-2192
 conceito: No protocolo original de DURAN, 3 a 5 mm de excursão do tendão bastam para impedir aderências restritivas; 6 a 9 mm seriam o máximo útil.
-como: A PUC-SP 2022 e o simulado da SBCM 2023 perguntaram a excursão de DURAN.
+como: A PUC-SP 2022 e o simulado da prova de título de 2023 perguntaram a excursão de DURAN.
 armadilha: Marcar 6 a 9 mm, que é o teto, ou 1,6 mm, que é o dado canino.
 !fim
 
@@ -662,7 +662,7 @@ O princípio do "**place and hold**" (colocar e segurar) é que a mão sã põe 
 
 !questoes treino=mao-1943
 conceito: No programa do Green, a órtese sai com 6 a 8 semanas e os exercícios isolados de força começam com 10 semanas.
-como: O simulado do SIMÃO 2023 perguntou quando iniciar força isolada no tendão reparado.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 perguntou quando iniciar força isolada no tendão reparado.
 armadilha: Marcar 6 semanas, que é quando a órtese pode sair, não quando a força começa.
 !fim
 
@@ -723,7 +723,7 @@ Uma regra de sequência: qualquer cirurgia que exija **imobilização** (pseudar
 
 !questoes central=mao-0766,mao-0978,mao-1316,mao-1479 treino=mao-2523
 conceito: A tenólise não deve ser feita antes de 4 meses do reparo, exige platô da terapia e passivo completo ou quase, e vem por último na sequência de reconstruções, porque exige mobilização imediata; resultado pior acima de 40 anos e com tenólise após 1 ano.
-como: O INTO 2023 e a UFG 2020 perguntaram o intervalo mínimo; a USP-SP 2025, a afirmação correta (não indicar com menos de 4 meses); a USP-SP 2024, qual procedimento secundário fica por último; o simulado do SIMÃO 2021, a conduta antes de pensar em tenólise.
+como: O INTO 2023 e a UFG 2020 perguntaram o intervalo mínimo; a USP-SP 2025, a afirmação correta (não indicar com menos de 4 meses); a USP-SP 2024, qual procedimento secundário fica por último; o simulado do simulado da prova de título de cirurgia da mão de 2021, a conduta antes de pensar em tenólise.
 armadilha: Marcar 3 meses (o mínimo de FETROW e do Campbell) quando a pergunta é pelo Green, ou achar que tenólise tardia (mais de 1 ano) dá melhor resultado.
 alerta: O Campbell's Operative Orthopaedics, 15ª ed. (p. 3157), aceita a partir de 3 meses; o Green 7 (p. 202) diz nunca antes de 4 meses. A USP-SP 2024 cita o Green 8 para a ordem dos procedimentos; o Green 7 (p. 200) diz o mesmo. Os gabaritos oficiais foram preservados.
 !fim
@@ -890,7 +890,7 @@ As vantagens são três: **uma só junção** no segundo tempo (a distal), porqu
 
 !questoes central=mao-0230,mao-1357 treino=mao-2111,mao-2026,mao-2430
 conceito: Na técnica de PANEVA-HOLEVICH, o FDS é suturado ao FDP na palma no primeiro tempo e, no segundo, cortado no antebraço e levado pela bainha até a falange distal; o FDS é o enxerto e o tendão fixado distalmente; na versão modificada, um bastão de silicone é colocado no primeiro tempo.
-como: Uma prova de Ortopedia e a USP-SP 2025 perguntaram o enxerto e a base da técnica; os simulados da SBCM 2022 e 2024 e do SIMÃO 2022, o tendão fixado distalmente e a afirmação correta.
+como: Uma prova de Ortopedia e a USP-SP 2025 perguntaram o enxerto e a base da técnica; os simulados da prova de título de 2022 e 2024 e do simulado da prova de título de cirurgia da mão de 2022, o tendão fixado distalmente e a afirmação correta.
 armadilha: Marcar palmar longo ou plantar, que são os enxertos do HUNTER; ou achar que o FDP é o enxerto.
 !fim
 
@@ -918,7 +918,7 @@ Sem FPL, com IF estável, o paciente pouco ativo pode não precisar de nada. Se 
 
 !questoes treino=mao-1780,mao-2828,mao-2845,mao-2846,mao-2850
 conceito: Placa volar do rádio distal que ultrapassa a linha da borda volar pode romper o FPL por atrito; quando o FPL rompe tarde, o músculo encurta e a reconstrução costuma ser a transferência do FDS do anular.
-como: O simulado do SIMÃO 2026 trouxe uma placa volar apoiada sobre a borda volar, distal à linha divisória, e pediu a conduta.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 trouxe uma placa volar apoiada sobre a borda volar, distal à linha divisória, e pediu a conduta.
 armadilha: Achar que a ausência de sintomas afasta o risco de ruptura.
 alerta: A classificação de SOONG não está no capítulo 6; o Green 7 (p. 219) só cita a ruptura do FPL depois de placa volar como indicação da transferência do FDS do anular.
 !fim
@@ -981,7 +981,7 @@ As causas (p. 225): FDP **avançado demais** na zona 1 (mais de 1 cm); **enxerto
 
 !questoes central=mao-0522,mao-0670,mao-1078 treino=mao-2370,mao-2827,mao-2840,mao-2856,mao-2867
 conceito: A quadriga é a perda de flexão dos dedos vizinhos quando um FDP fica curto ou aderido, por avanço maior que 1 cm na zona 1, enxerto curto ou tenso, ou amputação com o flexor preso; trata-se alongando, liberando ou seccionando o tendão culpado.
-como: O TARO 2010 perguntou a causa da quadriga no enxerto; a FMRP-USP 2026, quais dedos ela afeta; a PUC-SP 2019, a situação em que ocorre; o simulado do SIMÃO 2024, a situação aguda que a provoca.
+como: O TARO 2010 perguntou a causa da quadriga no enxerto; a FMRP-USP 2026, quais dedos ela afeta; a PUC-SP 2019, a situação em que ocorre; o simulado do simulado da prova de título de cirurgia da mão de 2024, a situação aguda que a provoca.
 armadilha: Achar que o enxerto longo causa quadriga (causa lumbrical plus), ou que o dedo afetado é o próprio dedo lesado; quem perde flexão são os vizinhos.
 !fim
 

@@ -25,7 +25,7 @@ O tema inteiro é uma pergunta só, feita de muitos jeitos: **o que cobre este d
 - **o lugar e a geometria**: polpa ou dorso, dedo ou polegar, perda mais palmar ou mais dorsal, superfície côncava ou convexa;
 - **o paciente**: idade, articulações rígidas, tabagismo, disponibilidade de microcirurgia, planos de reconstrução futura (enxerto de tendão, transferência de artelho).
 
-As provas de título (TARO, TEOT, SBCM, SIMÃO, ENARE de cirurgia da mão) e as de cirurgia plástica cobram quatro blocos, na ordem deste resumo:
+As provas de título (TARO, TEOT, prova de título, simulado da prova de título de cirurgia da mão, ENARE de cirurgia da mão) e as de cirurgia plástica cobram quatro blocos, na ordem deste resumo:
 
 - **Enxertos**: anatomia da pele, contração da ferida, como o enxerto pega, parcial contra total, espessura e áreas doadoras.
 - **Fisiologia dos retalhos**: ao acaso contra axial, os três tipos de axial, MATHES e NAHAI.
@@ -88,7 +88,7 @@ O Green acrescenta uma restrição que explica muitas escolhas do capítulo: o e
 
 !questoes central=mao-1163 relacionadas=mao-1170 treino=mao-2166,mao-2743
 conceito: A epiderme é cerca de 5% da espessura da pele; a pele palmar não tem estruturas pilossebáceas e concentra os corpúsculos de MEISSNER e de PACINI; no enxerto, a sensibilidade volta pela reinervação dos complexos de MERKEL, chance que cresce com a espessura.
-como: A PUC-SP 2022 pediu a porcentagem da epiderme e uma característica da pele volar; o simulado do SBCM 2022 pede qual estrutura reinervada devolve a sensibilidade ao enxerto.
+como: A PUC-SP 2022 pediu a porcentagem da epiderme e uma característica da pele volar; o simulado da prova de título de 2022 pede qual estrutura reinervada devolve a sensibilidade ao enxerto.
 armadilha: Responder MEISSNER ou PACINI para a reinervação do enxerto comum (eles só vêm com pele glabra), ou atribuir glândulas sebáceas à palma.
 !fim
 
@@ -110,7 +110,7 @@ O Campbell resume a mesma física em duas frases: **"quanto mais fino o enxerto,
 
 !questoes central=mao-1913 relacionadas=mao-1599 treino=mao-1771,mao-2704,mao-2727
 conceito: Os fibroblastos que migram para a base da ferida e se diferenciam em miofibroblastos são os responsáveis pela contração; o enxerto total, com mais derme, inibe essa diferenciação e por isso contrai menos que o parcial.
-como: O ENARE de cirurgia da mão 2025 pediu a função do miofibroblasto; a USP-SP 2026, uma característica do enxerto total (menos retração secundária); o simulado do SIMÃO 2026 cobra o comportamento dos enxertos na mão.
+como: O ENARE de cirurgia da mão de 2025 pediu a função do miofibroblasto; a USP-SP 2026, uma característica do enxerto total (menos retração secundária); o simulado do simulado da prova de título de cirurgia da mão de 2026 cobra o comportamento dos enxertos na mão.
 armadilha: Achar que o enxerto parcial, aplicado depois que a contração começou, a interrompe; STONE e MADDEN mostraram que só o enxerto imediato com imobilização compressiva tem efeito.
 !fim
 
@@ -176,7 +176,7 @@ O Green lista as vantagens do total (p. 1531): protege melhor as estruturas de b
 
 !questoes central=mao-0602 relacionadas=mao-0798,mao-0717,mao-0853,mao-1928 treino=mao-2340,mao-2017,mao-2705,mao-2742
 conceito: Comparado ao total, o parcial pega mais fácil, existe em maior quantidade, contrai mais e deixa área doadora que cicatriza por epitelização a partir dos anexos e dói mais; o total, maduro, é mais maleável e sente melhor, porque o enxerto mais espesso aumenta a chance de reinervar os complexos de MERKEL; inosculação é o crescimento de vasos do leito para os canais já existentes no enxerto.
-como: O TARO 2007 comparou parcial e total; o INTO 2023 perguntou qual estrutura responde pela sensibilidade no enxerto; o IAUPE 2025 pediu a definição de inosculação; a UFG 2017 pediu uma característica do total (maior maleabilidade); o ENARE de cirurgia da mão 2025, uma afirmação sobre o parcial (maior disponibilidade); os simulados do SIMÃO 2024 e 2023 repetem a comparação.
+como: O TARO 2007 comparou parcial e total; o INTO 2023 perguntou qual estrutura responde pela sensibilidade no enxerto; o IAUPE 2025 pediu a definição de inosculação; a UFG 2017 pediu uma característica do total (maior maleabilidade); o ENARE de cirurgia da mão de 2025, uma afirmação sobre o parcial (maior disponibilidade); os simulados do simulado da prova de título de cirurgia da mão de 2024 e 2023 repetem a comparação.
 armadilha: Achar que o parcial deixa menos sequela na doadora (é o contrário: a do total fecha em linha) ou trocar MERKEL por MEISSNER e PACINI, que não são transferidos de forma útil por enxerto comum de pele não glabra.
 alerta: A `mao-0602` está sem gabarito oficial; o Green (cap. 44, p. 1531 e 1538) sustenta que o parcial tem maior tendência à retração (alternativa C).
 !fim
@@ -195,7 +195,7 @@ A variação natural da pele explica as escolhas de doadora. BARKER mediu a pele
 
 !questoes treino=mao-2452,mao-2724,mao-2745,mao-2752,mao-2755,mao-2756
 conceito: O parcial fino (0,010 a 0,012 polegada) pega melhor e serve à ferida em que a sobrevida do enxerto está em risco, mas contrai mais; a doadora fina cicatriza mais depressa e pode ser colhida de novo; a espessura padrão é 0,015 polegada; a derme atinge a espessura máxima na quarta década.
-como: O simulado do SIMÃO 2022 pede a afirmação sobre enxertos que está de acordo com o Green.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pede a afirmação sobre enxertos que está de acordo com o Green.
 armadilha: Achar que o fino contrai menos por ser "mais delicado", ou que a derme é mais grossa no jovem.
 !fim
 
@@ -274,7 +274,7 @@ Quando olhar? Em 24 horas se há risco de hematoma ou seroma; senão, não mexer
 
 !questoes central=mao-1219 relacionadas=mao-1642,mao-1598 treino=mao-2254
 conceito: Pequeno defeito volar do dedo médio: enxerto total glabro (hipotenar), desengordurado, colhido sem epinefrina; em superfície côncava, bolster amarrado para evitar tenda e seroma; a pressão negativa pode servir de bolster e melhora a pega do enxerto.
-como: A UERJ 2023 pediu, em questão discursiva, espessura, área doadora e cuidado com a concavidade; a USP-SP 2026 cobrou pressão negativa sobre enxertos e o mecanismo de microdeformação; o simulado do SBCM 2023 pede como o enxerto deve ser fixado.
+como: A UERJ 2023 pediu, em questão discursiva, espessura, área doadora e cuidado com a concavidade; a USP-SP 2026 cobrou pressão negativa sobre enxertos e o mecanismo de microdeformação; o simulado da prova de título de 2023 pede como o enxerto deve ser fixado.
 armadilha: Escolher enxerto parcial para a face volar (contrai e sente pouco) ou achar que a pressão negativa é proibida sobre tendão exposto (o Green diz que pode até granular sobre ele, com uso prolongado).
 alerta: A `mao-1219` é discursiva e sem gabarito. A `mao-1598` cobra a microdeformação, termo que nenhum dos dois livros usa; o Green (cap. 44, p. 1536) só registra aumento de vascularização e de proliferação celular, o que é compatível com o gabarito oficial.
 !fim
@@ -287,7 +287,7 @@ O capítulo 43 chama a pressão negativa de "miofibroblasto mecânico": remove e
 
 !questoes central=mao-1326 relacionadas=mao-1301 treino=mao-2064
 conceito: A pressão negativa aumenta a vascularização e a proliferação celular, prepara o leito, granula até sobre osso e tendão e serve de bolster de enxertos; não desbrida sozinha e não substitui o desbridamento; na ferida gravemente contaminada, primeiro se desbrida.
-como: A USP-SP 2025 pediu a afirmação correta sobre a pressão subatmosférica (ela não desbrida por si) e outra sobre feridas crônicas (a microdeformação aumenta o VEGF); o simulado do SBCM 2024 pede quando o curativo fechado não deve ser usado no membro superior.
+como: A USP-SP 2025 pediu a afirmação correta sobre a pressão subatmosférica (ela não desbrida por si) e outra sobre feridas crônicas (a microdeformação aumenta o VEGF); o simulado da prova de título de 2024 pede quando o curativo fechado não deve ser usado no membro superior.
 armadilha: Achar que o vácuo dispensa o desbridamento, ou que pode ficar indefinidamente na mão sem custo em rigidez.
 alerta: O Green 7 não fala em VEGF, em instilação de poliexanida nem em microdeformação; os gabaritos oficiais da USP-SP foram mantidos, e o que o livro diz (aumento de vascularização e de proliferação celular, p. 1536) é compatível com eles.
 !fim
@@ -322,7 +322,7 @@ A **autonomização** (delay) é o truque para ir além: incisam-se as margens s
 
 !questoes central=mao-0974 relacionadas=mao-0682,mao-0680,mao-1171,mao-0857,mao-1594 treino=mao-2530,mao-2706,mao-2707,mao-2732,mao-2739
 conceito: O que separa ao acaso de axial é a vascularização: o ao acaso vive do plexo subdérmico pela base (regra de 1:1); o axial tem vaso nomeado, ignora a regra, resiste mais à infecção e cobre defeitos maiores; o inguinal é axial; cross-finger e tenar são regionais ao acaso.
-como: A UFG 2017 e 2020 e a FMRP-USP 2026 cobraram a definição dos dois padrões; a PUC-SP 2022, as vantagens do axial; a USP-SP 2026, qual retalho é regional e ao acaso; o simulado do SIMÃO 2021 pede a proporção confiável do ao acaso.
+como: A UFG 2017 e 2020 e a FMRP-USP 2026 cobraram a definição dos dois padrões; a PUC-SP 2022, as vantagens do axial; a USP-SP 2026, qual retalho é regional e ao acaso; o simulado do simulado da prova de título de cirurgia da mão de 2021 pede a proporção confiável do ao acaso.
 armadilha: Aplicar a regra de 1:1 ao axial ou achar que o cross-finger é axial por ser "de dedo" (é ao acaso, nutrido pela base).
 alerta: Na `mao-0680`, o gabarito diz que no axial a pele precisa necessariamente ir com a fáscia; o Green (cap. 44, p. 1540) só exige isso no fasciocutâneo; o axial cutâneo (inguinal) leva a pele direto, embora na dissecção se inclua a fáscia do sartório para não dobrar o vaso (p. 1565). O gabarito oficial foi mantido.
 !fim
@@ -406,7 +406,7 @@ O **peitoral maior** é tipo V: pedículo principal no **ramo peitoral do eixo t
 
 !questoes central=mao-0715 relacionadas=mao-1127,mao-1826,mao-1847,mao-1467,mao-0883,mao-0716,mao-1430 treino=mao-2381,mao-2100,mao-2708,mao-2721,mao-2722,mao-2729
 conceito: MATHES e NAHAI: I tensor da fáscia lata, II grácil, III glúteo máximo (dois dominantes), IV sartório (segmentar), V grande dorsal e peitoral maior; nos tipos I, II e V o dominante sustenta o músculo inteiro; grácil pela circunflexa femoral medial, reto pela epigástrica inferior profunda, peitoral maior pelo toracoacromial.
-como: O IAUPE 2025 pediu o tipo com dois dominantes; a PUC-SP 2021, o exemplo do tipo IV; o ENARE de cirurgia da mão 2022, a sequência dos tipos 1, 2 e 3 e o tipo do sóleo; a USP-SP 2024, uma lista de pedículos musculares e o pedículo do peitoral maior; os simulados do SIMÃO 2022 e do SBCM 2024 pedem o exemplo do tipo III e a classificação do tensor da fáscia lata.
+como: O IAUPE 2025 pediu o tipo com dois dominantes; a PUC-SP 2021, o exemplo do tipo IV; o ENARE de cirurgia da mão de 2022, a sequência dos tipos 1, 2 e 3 e o tipo do sóleo; a USP-SP 2024, uma lista de pedículos musculares e o pedículo do peitoral maior; os simulados do simulado da prova de título de cirurgia da mão de 2022 e da prova de título de 2024 pedem o exemplo do tipo III e a classificação do tensor da fáscia lata.
 armadilha: Trocar o tipo III (dois dominantes) pelo V (um dominante e segmentares) ou pôr o grande dorsal como tipo II.
 alerta: O Green não classifica o sóleo (`mao-1847`), nem dá os pedículos do gastrocnêmio lateral, do braquiorradial e do extensor curto dos dedos (`mao-1467`); confirma só os do reto e do grácil. Os gabaritos oficiais foram mantidos.
 !fim
@@ -462,7 +462,7 @@ O **romboide de LIMBERG**, descrito em 1963 (a referência do capítulo é o tex
 
 !questoes central=mao-1116 relacionadas=mao-1552,mao-0110,mao-0131,mao-0276,mao-0277,mao-0751,mao-1294,mao-0799 treino=mao-2167,mao-2260,mao-2521,mao-2709,mao-2710,mao-2711,mao-2733,mao-2734
 conceito: Zetaplastia é retalho local de transposição ao acaso para contratura longa e estreita; ângulo de 60 graus dá cerca de 75% de alongamento e muda a direção da cicatriz; faixa permitida 45 a 60 graus; a Z de quatro retalhos serve à 1ª comissura com ângulo de crista agudo; LIMBERG é um losango de 60 e 120 graus que fecha a doadora direto.
-como: A PUC-SP 2020, o INTO 2023 e a USP-SP 2026 cobraram os 75% da Z de 60 graus; o TARO 2022 (com figura) e a SBOT, a faixa de 45 a 60 graus; o ENARE R4 2023, o objetivo e a natureza da Z; o IAUPE 2025, a forma do LIMBERG; a USP-SP 2025, o retalho em pedra fundamental (keystone); os simulados do SBCM 2022 e 2023 e do SIMÃO 2021 pedem o ganho da Z, a plastia combinada da 1ª comissura e o romboide.
+como: A PUC-SP 2020, o INTO 2023 e a USP-SP 2026 cobraram os 75% da Z de 60 graus; o TARO 2022 (com figura) e a SBOT, a faixa de 45 a 60 graus; o ENARE R4 2023, o objetivo e a natureza da Z; o IAUPE 2025, a forma do LIMBERG; a USP-SP 2025, o retalho em pedra fundamental (keystone); os simulados da prova de título de 2022 e 2023 e do simulado da prova de título de cirurgia da mão de 2021 pedem o ganho da Z, a plastia combinada da 1ª comissura e o romboide.
 armadilha: Responder 50% de ganho, cortar 45 graus achando que são 60, ou tratar a Z como técnica para repor tecido perdido.
 alerta: Na `mao-0276`, o gabarito diz que o objetivo da Z numa perda de tecido do polegar é melhorar estética e função; os livros indicam a Z para contratura cicatricial (Campbell, cap. 69, p. 3108; Green, p. 1543), o que corresponderia à alternativa A. O retalho em pedra fundamental (`mao-1294`) e a plastia em "homem saltador" (`mao-2260`) não aparecem no capítulo 44 do Green 7. Gabaritos oficiais mantidos.
 !fim
@@ -566,7 +566,7 @@ A técnica: faz-se o molde e desenha-se a ilha na base do dedo, sobre o pedícul
 
 !questoes central=mao-1049 relacionadas=mao-1435,mao-0356,mao-1896 treino=mao-2714,mao-2730,mao-2736,mao-2740,mao-2750
 conceito: ATASOY (V-Y volar) cobre amputações transversas ou dorsais oblíquas e é contraindicado quando a perda palmar é maior; KUTLER é o avanço lateral duplo; perda de polpa palmar reconstrói-se melhor com a ilha homodigital de fluxo reverso, no médio e no anular, onde as digitais são codominantes.
-como: A PUC-SP 2019 pediu a contraindicação do ATASOY; a USP-SP 2024, a indicação; o CET-PR, o desenho de KUTLER; o ENARE de cirurgia da mão 2025, a melhor opção para a polpa.
+como: A PUC-SP 2019 pediu a contraindicação do ATASOY; a USP-SP 2024, a indicação; o CET-PR, o desenho de KUTLER; o ENARE de cirurgia da mão de 2025, a melhor opção para a polpa.
 armadilha: Indicar ATASOY na perda oblíqua volar, achar que KUTLER é avanço volar único, ou supor que a artéria digital do lado ulnar do médio é a maior (são codominantes).
 !fim
 
@@ -638,7 +638,7 @@ Existe também um KITE de **base distal**, sobre uma perfurante perto da base ra
 
 !questoes treino=mao-2097,mao-2253,mao-2753
 conceito: O KITE é uma ilha de base proximal sobre a 1ª metacarpiana dorsal, ramo da radial distal à tabaqueira, que corre sobre o 1º interósseo dorsal; fica sensível com ramos do radial superficial e é a primeira escolha para o dorso do polegar.
-como: Os simulados do SBCM 2024 e 2023 pedem a artéria do KITE e o nervo que o torna sensível.
+como: Os simulados da prova de título de 2024 e 2023 pedem a artéria do KITE e o nervo que o torna sensível.
 armadilha: Dizer que a artéria vem da ulnar ou do arco palmar superficial, ou que os ramos sensitivos vêm do mediano.
 !fim
 
@@ -661,7 +661,7 @@ O Green diz que todo cirurgião de mão deve conhecê-la, mas que ela tem **pouc
 
 !questoes central=mao-0478 relacionadas=mao-0141,mao-0244,mao-0434,mao-0613,mao-0736,mao-1424,mao-1635,mao-1868,mao-1172 treino=mao-1764,mao-2341,mao-2255,mao-2096,mao-2098,mao-2105,mao-2715,mao-2716,mao-2717,mao-2747,mao-2748
 conceito: MOBERG é avanço volar bipediculado (as duas artérias digitais) e homodigital, com a melhor sensibilidade da polpa do polegar, para perda palmar menor que 2/3 da polpa; é seguro no polegar porque o dorso recebe ramos da radial; nos dedos, o risco de contratura em flexão é maior; LITTLER leva pele do lado ulnar do anular em ilha neurovascular; KITE é ilha sobre a 1ª metacarpiana dorsal (da radial), levantada de distal para proximal sem isolar o pedículo.
-como: O Einstein 2026 e a USP-SP 2024 cobraram o MOBERG bipediculado; o TARO 2008 e o IAUPE 2025, o tipo e a artéria; as provas por imagem pediram o nome do retalho; a USP-SP 2026, os retalhos intrínsecos do polegar; o ENARE de cirurgia da mão 2023, a ilha de LITTLER; a PUC-SP 2022, os detalhes do KITE; os simulados do SIMÃO e do SBCM pedem a indicação, a complicação e o caráter bipediculado do MOBERG e as ilhas homodigitais do polegar.
+como: O Einstein 2026 e a USP-SP 2024 cobraram o MOBERG bipediculado; o TARO 2008 e o IAUPE 2025, o tipo e a artéria; as provas por imagem pediram o nome do retalho; a USP-SP 2026, os retalhos intrínsecos do polegar; o ENARE de cirurgia da mão de 2023, a ilha de LITTLER; a PUC-SP 2022, os detalhes do KITE; os simulados do simulado da prova de título de cirurgia da mão e da prova de título pedem a indicação, a complicação e o caráter bipediculado do MOBERG e as ilhas homodigitais do polegar.
 armadilha: Achar que o MOBERG depende de uma só artéria, que o KITE vem da ulnar ou é levantado de proximal para distal, ou que o cross-finger é o de eleição no idoso.
 alerta: A `mao-0613` está sem gabarito oficial; o Green (cap. 44, p. 1547) o descreve como retalho de avanço (alternativa C), que pode ser fechado em V-Y. O nome O'BRIEN (`mao-0434`) não aparece nos livros, que só descrevem MOBERG e as variantes. Na `mao-1868`, o enunciado usa o lado ulnar do médio; o Green descreve o lado ulnar do anular. As ilhas homodigitais dorsais do polegar de MOSCHELLA e CORDOVA e de BRUNELLI (`mao-2098`, `mao-2105`) não estão no capítulo 44 do Green 7.
 !fim
@@ -706,7 +706,7 @@ Descrito por LOVIE, DUNCAN e GLASSON como retalho livre (Br J Plast Surg, 1984),
 
 !questoes treino=mao-2331
 conceito: Na necrose por extravasamento de quimioterápico (o agente mais comum é a doxorrubicina), excisa-se amplamente todo o tecido possivelmente lesado, observa-se antes da cobertura definitiva e cobre-se com tecido robusto: o retalho ulnar do antebraço; sem ele, um livre.
-como: O simulado do SIMÃO 2024 pede o retalho preferido pelo Green depois do desbridamento.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 pede o retalho preferido pelo Green depois do desbridamento.
 armadilha: Escolher enxerto de pele sobre um leito lesado pela droga, ou o radial, quando o Green prefere o ulnar.
 !fim
 
@@ -732,7 +732,7 @@ A base anatômica foi publicada por PENTEADO, MASQUELET e CHEVREL (Surg Radiol A
 
 !questoes central=mao-0015 relacionadas=mao-0622,mao-1327,mao-0413,mao-0854,mao-0518,mao-0845,mao-1900,mao-0271,mao-1507 treino=mao-2101,mao-2718,mao-2726,mao-2737
 conceito: Interósseo posterior: pedículo entre ECU e extensor do mínimo, pivô 2 cm proximal ao estiloide ulnar; radial: exige ALLEN normal, leva pele, fáscia, tendão e osso, é inervado pelo cutâneo lateral do antebraço (musculocutâneo) e tem a crítica maior na área doadora; perda de pele no dorso da mão pede fasciocutâneo.
-como: TARO 2009 e 2019 pediram o septo da interóssea posterior; TEOT 2025 e UFG 2017, o teste de ALLEN; TARO 2011, a inervação do radial; INTO 2026, por imagem, o radial; ENARE 2025, a crítica ao radial; ENARE R4 2023, o tipo de retalho para o dorso; o simulado do SBCM 2024, os músculos que ladeiam o pedículo da interóssea posterior.
+como: TARO 2009 e 2019 pediram o septo da interóssea posterior; TEOT 2025 e UFG 2017, o teste de ALLEN; TARO 2011, a inervação do radial; INTO 2026, por imagem, o radial; ENARE 2025, a crítica ao radial; ENARE R4 2023, o tipo de retalho para o dorso; o simulado da prova de título de 2024, os músculos que ladeiam o pedículo da interóssea posterior.
 armadilha: Pôr o pedículo da interóssea posterior entre extensor dos dedos e mínimo, ou o pivô no estiloide do rádio.
 alerta: A `mao-0622` está sem gabarito; o livro sustenta a alternativa D. Na `mao-1327`, os livros não tratam dos retalhos plantares glabros do gabarito.
 !fim
@@ -786,7 +786,7 @@ Pontos críticos (p. 1568): indicações em feridas da mão e do antebraço, sob
 
 !questoes central=mao-0107 relacionadas=mao-0800,mao-0975,mao-1039,mao-1082,mao-1114 treino=mao-1769,mao-2168,mao-2169,mao-2411,mao-2754
 conceito: Inguinal: axial cutâneo pela circunflexa ilíaca superficial (96%), ramo da femoral, que sai do trígono femoral cruzando a borda medial do sartório e corre 2 cm abaixo do ligamento inguinal; incisar a fáscia do sartório; doadora fecha até 12 cm; nervo em risco, o cutâneo femoral lateral; secção em 3 semanas.
-como: TEOT 2021, INTO 2023, UFG 2020 e 2021 e PUC-SP 2019 e 2020 pediram o pedículo; os simulados do SIMÃO 2026 e 2022 e do SBCM 2022 pedem a artéria, a origem e o trajeto.
+como: TEOT 2021, INTO 2023, UFG 2020 e 2021 e PUC-SP 2019 e 2020 pediram o pedículo; os simulados do simulado da prova de título de cirurgia da mão de 2026 e 2022 e da prova de título de 2022 pedem a artéria, a origem e o trajeto.
 armadilha: Trocar pela circunflexa ilíaca profunda (crista ilíaca) ou pela epigástrica superficial, ou achar que ela sai pela borda lateral do sartório.
 alerta: Na `mao-0975`, o livro não fala em ramo "ascendente" da circunflexa ilíaca superficial.
 !fim
@@ -924,7 +924,7 @@ As questões sobre úlceras de pressão (estadiamento, desnutrição e baixo ín
 
 !questoes central=mao-1605 relacionadas=mao-1862,mao-1882,mao-1412,mao-1606,mao-1607,mao-0301,mao-1333,mao-1324
 conceito: Úlceras de pressão, pé diabético, pioderma gangrenoso e retalhos da perna são temas de cirurgia plástica geral; o que o Green 7 oferece de base é a lógica do retalho muscular transposto sobre o seu pedículo e da autonomização.
-como: A USP-SP de 2024 a 2026 e o ENARE de cirurgia da mão 2023 cobraram fatores de risco e estadiamento da úlcera de pressão, a osteomielite sacral, o retalho da coxa, o pé diabético, o pioderma gangrenoso, o gastrocnêmio e o retalho de AMARANTE; a SBOT, a indicação do gastrocnêmio medial.
+como: A USP-SP de 2024 a 2026 e o ENARE de cirurgia da mão de 2023 cobraram fatores de risco e estadiamento da úlcera de pressão, a osteomielite sacral, o retalho da coxa, o pé diabético, o pioderma gangrenoso, o gastrocnêmio e o retalho de AMARANTE; a SBOT, a indicação do gastrocnêmio medial.
 armadilha: Indicar o gastrocnêmio medial para a face lateral da tíbia proximal, ou operar um pioderma gangrenoso achando que é infecção.
 alerta: Nenhum desses temas está no capítulo 44 do Green 7; os gabaritos oficiais foram mantidos.
 !fim

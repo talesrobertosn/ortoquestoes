@@ -24,7 +24,7 @@ O cotovelo rígido é uma doença de um objetivo só: **pôr a mão no espaço**
 2. **O que está segurando?** Partes moles fora da superfície (cápsula, colaterais, OH) ou a própria superfície articular: causas **extrínsecas** contra **intrínsecas**.
 3. **Por onde entrar?** Artroscopia no caso simples; **coluna lateral** na maioria; **medial over-the-top** quando o ulnar precisa ser visto; interposição ou prótese quando a cartilagem acabou; artrodese como salvamento.
 
-As bancas (TARO, TEOT, SBCM, SBCOC) cobram a localização da OH conforme a causa, a classificação de HASTINGS e GRAHAM, a via do "procedimento da coluna", os músculos da via over-the-top, quando explorar o ulnar, o CPM e a posição da artrodese.
+As bancas (TARO, TEOT, prova de título, SBCOC) cobram a localização da OH conforme a causa, a classificação de HASTINGS e GRAHAM, a via do "procedimento da coluna", os músculos da via over-the-top, quando explorar o ulnar, o CPM e a posição da artrodese.
 
 > **Na prova:** arco funcional **30 a 130** com **50/50** de pronossupinação; operar com arco **< 100** após o conservador; OH **pós-traumática posterolateral**, **queimadura posteromedial**, **neurogênica dentro dos flexores, plano único**; coluna = **lateral**; over-the-top = **ulnar exposto e transposto**, entre **flexor ulnar do carpo e pronador**.
 
@@ -238,7 +238,7 @@ O Green's Operative Hand Surgery, 7ª ed. (cap. 21, p. 804, Tabela 21.1), reprod
 
 !questoes central=ombro-cotovelo-0386 treino=ombro-cotovelo-0666,ombro-cotovelo-0745
 conceito: Na classificação de HASTINGS e GRAHAM, a limitação parcial da pronação e da supinação, sem anquilose e sem perda da flexoextensão, é a classe IIB.
-como: O simulado SBCM 2024 pediu a classe da perda parcial da pronação e da supinação; uma prova de Ortopedia perguntou a classe da limitação da pronossupinação (a mesma questão aparece duas vezes no acervo).
+como: O simulado da prova de título de 2024 pediu a classe da perda parcial da pronação e da supinação; uma prova de Ortopedia perguntou a classe da limitação da pronossupinação (a mesma questão aparece duas vezes no acervo).
 armadilha: Marcar IIA (é a flexoextensão), IIC (exige os dois planos) ou III (só a anquilose completa, como a sinostose radioulnar fechada).
 !fim
 
@@ -374,7 +374,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39), descreve a mesma
 
 !questoes treino=ombro-cotovelo-0664,ombro-cotovelo-0673,ombro-cotovelo-0746
 conceito: A medial over-the-top de HOTCHKISS expõe, protege e transpõe o ulnar, preserva o feixe anterior do LCM e chega à cápsula anterior dividindo a massa flexopronadora entre o flexor ulnar do carpo e o pronador redondo.
-como: A SBCM 2024 perguntou o benefício da via over-the-top no cotovelo rígido; a SBCM 2022, entre quais músculos se acessa a cápsula anterior.
+como: A prova de título de 2024 perguntou o benefício da via over-the-top no cotovelo rígido; a prova de título de 2022, entre quais músculos se acessa a cápsula anterior.
 armadilha: Achar que a via medial dá bom acesso à cabeça do rádio ou à OH lateral (são as desvantagens), ou escolher o intervalo do flexor radial do carpo com os flexores dos dedos.
 !fim
 

@@ -400,7 +400,7 @@ Na ruptura completa há **fraqueza**, não perda total, de flexão e supinação
 
 !questoes treino=ombro-cotovelo-0683
 conceito: Na ruptura completa do bíceps distal o hook test é positivo (não se consegue enganchar o tendão); flexão e supinação ficam fracas, mas não abolidas, e o lacerto fibroso muitas vezes continua íntegro.
-como: A SBCM 2023 perguntou qual achado é esperado na ruptura completa do tendão distal do bíceps.
+como: A prova de título de 2023 perguntou qual achado é esperado na ruptura completa do tendão distal do bíceps.
 armadilha: Perda completa da flexão ou da supinação: o braquial e o supinador continuam funcionando; e o lacerto não se rompe sempre junto.
 !fim
 

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { rotuloProva } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import { AREAS_TREINO, FILTROS_VAZIOS, type Questao } from '../dados/tipos'
@@ -214,7 +215,7 @@ export function Favoritas() {
     const questao = porId.get(id)
     const registro = respondidas[id]
     const situacao = situacaoDe(registro)
-    const origem = questao ? [questao.prova, questao.ano].filter(Boolean).join(' · ') : ''
+    const origem = questao ? [questao.prova && rotuloProva(questao.prova), questao.ano].filter(Boolean).join(' · ') : ''
     return (
       <li className={`fv-item fv-item--${situacao}`} key={id}>
         <span className="fv-item__icone" aria-hidden="true"><Icone nome={ICONE[situacao]} tamanho={16} /></span>

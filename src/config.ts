@@ -57,6 +57,8 @@ export const NOME_PROVA: Record<string, string> = {
   'SBCM': 'prova de título',
 }
 /** Com a preposição certa: "da prova de título", "do simulado da prova de título de cirurgia da mão". */
+/** O nome da prova nas telas (filtros, chips, listas), sem as siglas: "Prova de título", "Simulado da prova de título de cirurgia da mão". */
+export const rotuloProva = (prova: string) => (prova === 'SBCM' ? 'Prova de título' : prova === 'SIMÃO' ? 'Simulado da prova de título de cirurgia da mão' : prova)
 export const daProva = (prova: string) => (prova === 'SIMÃO' ? 'do ' : 'da ') + (NOME_PROVA[prova] ?? `prova ${prova}`)
 
 /**
