@@ -47,6 +47,8 @@ export type Cenario = {
    */
   natal?: true
   inverno?: true
+  /** A versão de Natal da pintura (etapa 3 do modo Natal): prefixo dos arquivos, no lugar de `arquivo` quando o modo está no ar. */
+  pinturaNatal?: string
   /** As atividades do esqueleto neste cenário (no lugar do sorteio de sempre): ex. sentado no banco, no vale de Natal. */
   repertorio?: readonly IdComportamento[]
   /** O trenzinho de montanha que atravessa o fundo do vale (pontos de começo e de fim, em pixels da pintura). */
@@ -55,7 +57,7 @@ export type Cenario = {
 
 export const CENARIOS: readonly Cenario[] = [
   {
-    id: 'acampamento', arquivo: 'cena', particulas: 'vagalumes',
+    id: 'acampamento', arquivo: 'cena', particulas: 'vagalumes', pinturaNatal: 'cena-natal',
     gato: [
       { x: 219, y: 150, pose: 'repouso' }, { x: 176, y: 166, pose: 'sentado' }, { x: 256, y: 170, pose: 'observando' },
       { x: 300, y: 165, pose: 'fogueira' }, { x: 322, y: 150, pose: 'sentado' }, { x: 236, y: 168, pose: 'repouso' },
