@@ -48,8 +48,16 @@ export const ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
 /** O que é a prova de referência de um simulado, quando a sigla sozinha não diz (aparece na questão). */
 export const DESCRICAO_PROVA: Record<string, string> = {
   'SIMÃO': 'Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão',
-  'SBCM': 'Exame para Obtenção do Título de Especialista em Cirurgia da Mão da Sociedade Brasileira de Cirurgia da Mão',
+  'SBCM': 'Exame para Obtenção do Título de Especialista em Cirurgia da Mão',
 }
+
+/** Como a prova de referência aparece no texto da questão, sem as siglas (Tales, 20/11/2026). */
+export const NOME_PROVA: Record<string, string> = {
+  'SIMÃO': 'simulado da prova de título de cirurgia da mão',
+  'SBCM': 'prova de título',
+}
+/** Com a preposição certa: "da prova de título", "do simulado da prova de título de cirurgia da mão". */
+export const daProva = (prova: string) => (prova === 'SIMÃO' ? 'do ' : 'da ') + (NOME_PROVA[prova] ?? `prova ${prova}`)
 
 /**
  * Por enquanto, ver questões e montar sessões de treino exige conta. As páginas
