@@ -21,7 +21,7 @@ try{
  for(const [data,n] of [['2026-11-09T12:00:00-03:00',7],['2026-11-20T12:00:00-03:00',9],['2026-11-21T12:00:00-03:00',9],['2026-12-01T12:00:00-03:00',9],['2027-01-06T23:59:00-03:00',9],['2027-01-07T00:01:00-03:00',7]]){
   assert.equal(cenariosDoDia(new Date(data)).length,n,data)
  }
- // O modo Natal está fora do ar (Tales, 21/11/2026): o rodízio segue com todos os cenários.
+ // No modo Natal o rodízio segue com todos os cenários (as versões de Natal de cada um são a etapa 3).
  assert.equal(cenariosDoDia(new Date('2026-12-24T20:00:00-03:00')).length,9)
  assert.equal(FAIXA_MS,2*3600000)
  // As viradas caem nas horas pares de Brasília, iguais em qualquer fuso, e o cenário vale até o último instante da faixa.
