@@ -53,6 +53,8 @@ const PASSOS_LEITOR: PassoGuia[] = [
   { alvo: '[data-guia="lr-notas"]', titulo: 'Destaques e notas', texto: 'Selecione qualquer trecho para destacar em cinco cores ou escrever uma nota. Tudo aparece aqui e no seu caderno, em todos os aparelhos.' },
   { alvo: '[data-guia="lr-aa"]', titulo: 'Aparência', texto: 'Tema claro, sépia ou escuro, tamanho da letra, espaço entre linhas, largura e leitura em páginas.' },
   { alvo: '.lr-cobranca__lista button', titulo: 'Questões de prova no texto', texto: 'Cada chip é uma questão que já caiu (prova e ano). Ela abre ao lado da leitura; ao voltar, você está no mesmo parágrafo.' },
+  // Só em computador (teclado e mouse); no celular o passo nem aparece.
+  ...(typeof matchMedia !== 'undefined' && matchMedia('(hover: hover) and (pointer: fine)').matches ? [{ titulo: 'Atalhos do teclado', texto: 'Setas ou W A S D: ↑ W sobe e ↓ S desce o texto; no modo Páginas, ← A e → D passam a página para os lados. Espaço desce uma tela inteira. E ainda: / busca, I índice, N notas, F modo foco e ? abre esta ajuda.' }] : []),
 ]
 
 interface MarcaNoTexto { id: string; inicio: number; fim: number; cor: CorMarca; nota: boolean }
@@ -496,6 +498,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   }
 
   // ── Teclado ──
+  const alvoTecla = useRef<{ top: number; t: number } | null>(null)
   useEffect(() => {
     // Com os flashcards abertos por cima, as teclas são deles (Espaço vira o flashcard, não a página do resumo).
     if (deFundo || guia) return
@@ -504,9 +507,26 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
       if (e.metaKey || e.ctrlKey || e.altKey) return
       if (e.key === 'Escape') { if (questao) fecharQuestao(); else if (aberta || selecao) { definirAberta(null); limparSelecao() } else if (painel) definirPainel(null); else if (foco) definirFoco(false); return }
       if (questao) return
-      if (paginado && (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ')) { e.preventDefault(); mudarPagina(1) }
-      else if (paginado && (e.key === 'ArrowLeft' || e.key === 'PageUp')) { e.preventDefault(); mudarPagina(-1) }
-      else if (e.key === '/') { e.preventDefault(); definirPainel('busca') }
+      // Setas e WASD (Tales, 20/11/2026): ↑ W / ↓ S sobem e descem; em Páginas, ← A / → D (e ↑ ↓) viram a página.
+      const k = e.key.length === 1 ? e.key.toLowerCase() : e.key
+      const frente = k === 'ArrowRight' || k === 'd' || k === 'ArrowDown' || k === 's' || k === 'PageDown' || (k === ' ' && !e.shiftKey)
+      const tras = k === 'ArrowLeft' || k === 'a' || k === 'ArrowUp' || k === 'w' || k === 'PageUp' || (k === ' ' && e.shiftKey)
+      if (paginado && (frente || tras)) { e.preventDefault(); mudarPagina(frente ? 1 : -1); return }
+      const el = rolagem.current
+      if (!paginado && el && (frente || tras) && k !== 'ArrowLeft' && k !== 'ArrowRight' && k !== 'a' && k !== 'd') {
+        e.preventDefault()
+        const tela = k === ' ' || k === 'PageDown' || k === 'PageUp'
+        const passo = tela ? el.clientHeight * 0.85 : Math.max(80, el.clientHeight * 0.14)
+        const suave = !e.repeat && !matchMedia('(prefers-reduced-motion: reduce)').matches
+        // Toques seguidos somam ao destino anterior (a rolagem suave em curso não "engole" a tecla).
+        const ant = alvoTecla.current
+        const base = ant && Date.now() - ant.t < 450 ? ant.top : el.scrollTop
+        const top = Math.max(0, Math.min(el.scrollHeight - el.clientHeight, base + (frente ? passo : -passo)))
+        alvoTecla.current = { top, t: Date.now() }
+        el.scrollTo({ top, behavior: suave ? 'smooth' : 'auto' })
+        return
+      }
+      if (e.key === '/') { e.preventDefault(); definirPainel('busca') }
       else if (e.key === 'i') definirPainel((p) => p === 'indice' ? null : 'indice')
       else if (e.key === 'n') definirPainel((p) => p === 'notas' ? null : 'notas')
       else if (e.key === 'f') definirFoco((f) => !f)
