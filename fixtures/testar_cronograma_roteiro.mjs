@@ -172,6 +172,39 @@ try {
   // A sessão de erros tem tamanho máximo e começa pelos mais recentes.
   assert.deepEqual(m.idsRevanche(e, 5), e.pendentes.slice(0, 5))
 
+  // Uma preferência futura mantém a sessão e a meta de hoje idênticas às do plano antigo.
+  const legado = { ...comum, folgas: [], incluir_simulados: true }
+  const ativado = { ...legado, opcoes: { revisoesNaMeta: { em: '2026-11-11', anterior: false, novo: true } } }
+  assert.deepEqual(retrato(ativado), retrato(legado))
+  assert.equal(m.revisoesNaMetaAtivas(legado, '2026-11-11'), false)
+  assert.equal(m.revisoesNaMetaAtivas(ativado, '2026-11-11'), true)
+  assert.equal(m.cotaRevisoesDaMeta(9), 0)
+  assert.equal(m.cotaRevisoesDaMeta(30), 3)
+  assert.equal(m.cotaRevisoesDaMeta(100), 5)
+  const quarta = new Date(2026, 10, 11, 9)
+  const semRevisoes = m.calcularPlano(indice, respondidas, legado, quarta)
+  const comRevisoes = m.calcularPlano(indice, respondidas, ativado, quarta)
+  assert.ok(comRevisoes.revisoesHoje?.length > 0)
+  assert.equal(comRevisoes.metaDiaria + comRevisoes.revisoesHoje.length, semRevisoes.metaDiaria)
+  assert.equal(comRevisoes.feitas, semRevisoes.feitas)
+  assert.ok(comRevisoes.revisoesHoje.every(({ id }) => respondidas[id]?.c === false))
+  assert.equal(new Set(comRevisoes.revisoesHoje.map(({ id }) => id)).size, comRevisoes.revisoesHoje.length)
+  const semBonus = { ...legado, opcoes: { revisoesExtras: false } }
+  assert.deepEqual(m.calcularPlano(indice, respondidas, semBonus, quarta), semRevisoes, 'a chave do bônus só controla o cartão')
+  assert.equal(m.revisoesExtrasAtivas(legado), true)
+  assert.equal(m.revisoesExtrasAtivas(ativado), false, 'o modo intercalado não oferece o bônus em duplicidade')
+  assert.deepEqual(m.revisoesExtrasDoDia(indice, respondidas, legado, semRevisoes, quarta), [])
+  const cumprido = { ...semRevisoes, faltaHoje: 0 }
+  assert.deepEqual(m.revisoesExtrasDoDia(indice, respondidas, semBonus, cumprido, quarta), [])
+  const bonus = m.revisoesExtrasDoDia(indice, respondidas, legado, cumprido, quarta)
+  assert.ok(bonus.length > 0 && bonus.length <= m.cotaRevisoesDaMeta(cumprido.metaDiaria))
+  const primeiroBonus = bonus[0].id
+  const aposBonus = { ...respondidas, [primeiroBonus]: { ...respondidas[primeiroBonus], c: true, q: quarta.getTime(), historico: [...respondidas[primeiroBonus].historico, { em: quarta.getTime(), correta: true, confianca: 'seguro' }] } }
+  assert.deepEqual(m.revisoesExtrasDoDia(indice, aposBonus, legado, cumprido, quarta), bonus.slice(1))
+  const planoAposBonus = m.calcularPlano(indice, aposBonus, legado, quarta)
+  assert.equal(planoAposBonus.feitas, semRevisoes.feitas)
+  assert.equal(planoAposBonus.feitasHoje, semRevisoes.feitasHoje)
+
   // ── 5. Resumos do dia: saem dos dados da Biblioteca ──
   const biblioteca = JSON.parse(await readFile('public/biblioteca/indice.json', 'utf8'))
   const nomeSub = (id) => porId.get(id).s.map((s) => indice.subtemas[s])

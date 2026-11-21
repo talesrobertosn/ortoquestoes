@@ -71,7 +71,10 @@ export function carregarTema(slug: string): Promise<Questao[]> {
   if (!existente) {
     existente = Promise.all([buscarJson<{ questoes: Questao[] } | Questao[]>(`acervo/temas/${slug}.json`), carregarEdicoes()]).then(
       ([dados, edicoes]) => (Array.isArray(dados) ? dados : dados.questoes).map((q) => aplicarEdicao(q, edicoes.get(q.id))),
-    )
+    ).catch((erro) => {
+      if (temasCarregados.get(slug) === existente) temasCarregados.delete(slug)
+      throw erro
+    })
     temasCarregados.set(slug, existente)
   }
   return existente

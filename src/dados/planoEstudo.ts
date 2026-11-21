@@ -1,5 +1,6 @@
 import type { Indice } from './tipos'
-import { diaCivil, inicioDaChave, inicioDoDia, somarDias } from '../util/dia'
+import { diaCivil, hojeBR, inicioDaChave, inicioDoDia, somarDias } from '../util/dia'
+import { LIMITE_HISTORICO_QUESTAO } from '../estado/revisao'
 import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, type Nivel } from './incidencia'
 
 /**
@@ -39,9 +40,29 @@ export interface PlanoSalvo {
   opcoes?: OpcoesPlano | null
 }
 
+export type AjusteDia = 'leve' | 'extra'
+
+export function alternarData(datas: readonly string[] | undefined, dia: string): string[] {
+  return datas?.includes(dia) ? datas.filter((d) => d !== dia) : [...(datas ?? []), dia]
+}
+
+export type RecorteOficial = 'todas' | 'TEOT' | 'TARO'
+export interface AcervoPlano {
+  oficiais: RecorteOficial
+  simulados: boolean
+}
+
 export interface OpcoesPlano {
+  /** Alteração explícita de acervo. O plano anterior vale até a data indicada. */
+  acervo?: { em: string; anterior: AcervoPlano; novo: AcervoPlano }
+  revisoesNaMeta?: { em: string; anterior: boolean; novo: boolean }
+  /** Planos sem revisões na meta oferecem o bloco opcional por padrão. */
+  revisoesExtras?: boolean
   /** Dias da semana (0 = domingo) de plantão: dia leve, com poucas questões. */
   diasLeves?: number[]
+  diasLevesAvulsos?: string[]
+  diasExtras?: string[]
+  metaPreservada?: { em: string; n: number }
   /** Questões num dia leve. */
   qtdLeve?: number
   /** Segundas-feiras ("AAAA-MM-DD") das semanas difíceis: só o dia mínimo. */
@@ -101,7 +122,7 @@ export const TAMANHO_MINI = 30
 /** Minutos por questão quando ainda não há histórico. */
 export const MINUTOS_POR_QUESTAO = 1.5
 
-export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros' | 'zeradoEm'>> => ({
+export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros' | 'zeradoEm' | 'acervo' | 'revisoesNaMeta' | 'revisoesExtras' | 'diasLevesAvulsos' | 'diasExtras' | 'metaPreservada'>> => ({
   diasLeves: plano?.opcoes?.diasLeves ?? [],
   qtdLeve: Math.max(5, Math.min(40, plano?.opcoes?.qtdLeve ?? QTD_LEVE_PADRAO)),
   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],
@@ -113,7 +134,13 @@ export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): 
 /** "AAAA-MM-DD" de uma data local. */
 export const chaveData = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 
-export const incluiSimulados = (plano: Pick<PlanoSalvo, 'incluir_simulados'> | null | undefined) => plano?.incluir_simulados !== false
+export function acervoDoPlano(plano: Pick<PlanoSalvo, 'opcoes' | 'incluir_simulados'> | null | undefined, agora: Date | number = Date.now()): AcervoPlano {
+  const ajuste = plano?.opcoes?.acervo
+  if (ajuste) return chaveData(diaCivil(agora)) >= ajuste.em ? ajuste.novo : ajuste.anterior
+  return { oficiais: plano?.opcoes?.soTeot ? 'TEOT' : 'todas', simulados: plano?.incluir_simulados !== false }
+}
+
+export const incluiSimulados = (plano: Pick<PlanoSalvo, 'incluir_simulados' | 'opcoes'> | null | undefined, agora?: Date | number) => acervoDoPlano(plano, agora).simulados
 
 type QuestaoIndice = Indice['questoes'][number]
 /** Se a questão entra no cronograma (sem áreas à parte, cópias e anuladas; simulados conforme a escolha). */
@@ -149,10 +176,10 @@ const diasEntre = (a: Date, b: Date) => Math.round((meiaNoite(b).getTime() - mei
 export const diasAte = (data: string, agora: Date | number = Date.now()) => diasEntre(diaCivil(agora), dataLocal(data))
 
 /** Dias de estudo em [inicio, fim), sem os dias da semana de folga. */
-export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number {
+export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[], extras: ReadonlySet<string> = new Set()): number {
   let n = 0
   for (let d = meiaNoite(inicio); d < meiaNoite(fim); d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) {
-    if (!folgas.includes(d.getDay())) n++
+    if (!folgas.includes(d.getDay()) || extras.has(chaveData(d))) n++
   }
   return n
 }
@@ -165,13 +192,24 @@ export function respostasDesde<R extends { q?: number } | undefined>(respondidas
   return saida
 }
 
-export interface RegistroMinimo { c: boolean | null; q?: number; confianca?: 'seguro' | 'duvida' | 'chute'; historico?: Array<{ em: number; correta: boolean | null }> }
+export interface RegistroMinimo { primeiraEm?: number; c: boolean | null; q?: number; confianca?: 'seguro' | 'duvida' | 'chute'; historico?: Array<{ em: number; correta: boolean | null }> }
 
 /**
  * acerto: o real, a partir de 10 respostas. acertoEstimado: a partir de 3,
  * puxado para a média geral quando há poucas respostas (o diagnóstico já
  * calibra o plano sem esperar 10 por tema). Acerto marcado como chute vale meio.
  */
+/** Planos antigos mantêm a interpretação que usavam ao serem criados. */
+export function primeiraRespostaDoPlano(r: RegistroMinimo | undefined, plano: PlanoSalvo, dia: string): number | undefined {
+  if (!r) return undefined
+  const original = r.historico?.[0]?.em ?? r.q
+  if (!plano.opcoes?.acervo && !plano.opcoes?.revisoesNaMeta) return original
+  const usaDataPersistida = (plano.opcoes?.acervo && plano.opcoes.acervo.em <= dia) || revisoesNaMetaAtivas(plano, dia)
+  if (!usaDataPersistida) return original
+  const zerado = plano.opcoes?.zeradoEm
+  return zerado ? r.historico?.find((h) => h.em >= zerado)?.em ?? r.q : r.primeiraEm ?? original
+}
+
 export interface TemaPlano { slug: string; nome: string; faltam: number; acerto: number | null; acertoEstimado: number | null; respondidas: number; reforcado: boolean; incidencia: number }
 /** Um assunto dentro do tema da semana: quantas questões dele entram e quanto ele cai. */
 /** posicao: lugar do assunto no ranking da área (1 = o que mais cai); 0 fora do ranking. */
@@ -193,7 +231,54 @@ export interface DiaPlano {
   puxado?: { total: number; feitas: number } | null
 }
 export interface SemanaPlano { inicio: Date; fim: Date; diasEstudo: number; temas: Array<{ slug: string; nome: string; n: number; focos: string[]; assuntos: AssuntoSemana[]; posicaoArea: number | null; depois: string[] }>; total: number; atual: boolean }
+export interface RevisaoNoCronograma { id: string; assunto: string; ultimoErroEm: number; feita: boolean }
+
+export function revisoesNaMetaAtivas(plano: Pick<PlanoSalvo, 'opcoes'>, dia: string): boolean {
+  const ajuste = plano.opcoes?.revisoesNaMeta
+  return ajuste ? dia >= ajuste.em ? ajuste.novo : ajuste.anterior : false
+}
+
+export function cotaRevisoesDaMeta(meta: number): number {
+  return Math.min(5, Math.floor(meta / 10))
+}
+
+export function revisoesExtrasAtivas(plano: Pick<PlanoSalvo, 'opcoes'>): boolean {
+  return !plano.opcoes?.revisoesNaMeta && plano.opcoes?.revisoesExtras !== false
+}
+
+export function revisoesExtrasDoDia(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, calculo: CalculoPlano, agora: Date | number = new Date()): RevisaoNoCronograma[] {
+  if (!revisoesExtrasAtivas(plano) || calculo.naRetaFinal || calculo.provaPassou || calculo.tipoHoje !== 'estudo' || calculo.miniHoje || calculo.faltaHoje > 0) return []
+  const cota = cotaRevisoesDaMeta(calculo.metaDiaria)
+  if (!cota) return []
+  return candidatasARevisao(indiceDoPlano(indice, plano, agora), respondidas, incluiSimulados(plano, agora), hojeBR(agora))
+    .slice(0, cota)
+    .filter(({ id, feita }) => {
+      // O motor antigo data a primeira resposta pela abertura do histórico.
+      // O bônus só usa registros que vão conservar essa data ao receber a tentativa.
+      const historico = respondidas[id]?.historico?.length ?? 0
+      return !feita && historico > 0 && historico < LIMITE_HISTORICO_QUESTAO
+    })
+}
+
+/** Usa somente as tentativas anteriores a hoje para manter estável a lista de revisões ao longo do dia. */
+function candidatasARevisao(indice: Indice, respondidas: Record<string, RegistroMinimo>, simulados: boolean, dia: string): RevisaoNoCronograma[] {
+  const desde = inicioDaChave(somarDias(dia, -14))
+  const ate = inicioDaChave(somarDias(dia, -1))
+  const inicio = inicioDaChave(dia)
+  const focos = focoPorQuestao(indice)
+  return indice.questoes.flatMap((q) => {
+    const r = respondidas[q.id]
+    const foco = focos.get(q.id)
+    if (!r || !foco || foco.nivel < 3 || !entraNoPlano(q, simulados)) return []
+    const antes = r.historico?.filter((h) => h.em < inicio) ?? []
+    const ultima = antes[antes.length - 1] ?? (r.q !== undefined && r.q < inicio ? { em: r.q, correta: r.c } : null)
+    if (!ultima || ultima.correta !== false || ultima.em < desde || ultima.em >= ate) return []
+    return [{ id: q.id, assunto: foco.nome, ultimoErroEm: ultima.em, feita: (r.q ?? 0) >= inicio, nivel: foco.nivel, erros: antes.filter((h) => h.correta === false).length }]
+  }).sort((a, b) => b.nivel - a.nivel || b.erros - a.erros || a.ultimoErroEm - b.ultimoErroEm || a.id.localeCompare(b.id))
+}
+
 export interface CalculoPlano {
+  revisoesHoje?: RevisaoNoCronograma[]
   diasAteProva: number
   diasEstudoRestantes: number
   inicioRetaFinal: Date
@@ -254,12 +339,13 @@ export interface CalculoPlano {
 export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
   respondidas = respostasDesde(respondidas, plano.opcoes?.zeradoEm)
   // "Só TEOT": o motor inteiro trabalha sobre o recorte (plano antigo, sem a opção: o acervo de sempre).
-  const indice = indiceDoPlano(indiceInteiro, plano)
+  const indice = indiceDoPlano(indiceInteiro, plano, agora)
   // Hoje e o dia de criação são dias de São Paulo (src/util/dia.ts), como datas civis.
   const hoje = diaCivil(agora)
+  const chaveHoje = chaveData(hoje)
   const inicioHoje = inicioDoDia(agora)
   const prova = dataLocal(plano.data_prova)
-  const simulados = incluiSimulados(plano)
+  const simulados = incluiSimulados(plano, agora)
   const criado = diaCivil(Date.parse(plano.criado_em))
   const diasFinais = diasRetaFinal(plano.criado_em, plano.data_prova)
   const inicioRetaFinal = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - diasFinais)
@@ -279,7 +365,7 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
       const ids = unicos(lista.filter((id) => typeof id === 'string' && doPlano.has(id) && !puxadoDe.has(id)))
       if (!ids.length) continue
       for (const id of ids) puxadoDe.set(id, data.getTime())
-      if (data >= hoje && data < inicioRetaFinal && !plano.folgas.includes(data.getDay())) puxados.set(data.getTime(), { chave: k, ids })
+      if (data >= hoje && data < inicioRetaFinal && (!plano.folgas.includes(data.getDay()) || plano.opcoes?.diasExtras?.includes(k))) puxados.set(data.getTime(), { chave: k, ids })
     }
   }
 
@@ -315,7 +401,8 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
 
   // Linha de base: a guardada na criação. No recorte "só TEOT" ela é refeita pelas datas (o que já estava
   // respondido do recorte antes de o plano nascer), para ligar e desligar sem zerar nem inflar o andamento.
-  const base = indice === indiceInteiro ? plano.base_respondidas : baseDoRecorte(indice, respondidas, plano)
+  const mudouSimulados = simulados !== (plano.incluir_simulados !== false)
+  const base = indice === indiceInteiro && !mudouSimulados ? plano.base_respondidas : baseDoRecorte(indice, respondidas, plano, agora)
   const alvo = Math.max(0, Math.ceil((elegiveis - Math.min(base, elegiveis)) * COBERTURA[plano.intensidade]))
   const feitas = Math.max(0, respondidasNoAcervo - base)
   const restante = Math.max(0, alvo - feitas)
@@ -327,7 +414,7 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   for (const q of indice.questoes) {
     if (!entraNoPlano(q, simulados)) continue
     const r = respondidas[q.id]
-    const primeira = r?.historico?.[0]?.em ?? r?.q
+    const primeira = primeiraRespostaDoPlano(r, plano, chaveHoje)
     if (primeira === undefined) continue
     const dia = primeira >= inicioHoje ? hoje.getTime() : diaCivil(primeira).getTime()
     // Questão de um dia puxado, feita antes dele: conta para aquele dia, não para este.
@@ -336,10 +423,12 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   }
   const feitasHoje = primeirasPorDia.get(hoje.getTime()) ?? 0
 
-  const diasEstudoRestantes = diasDeEstudo(hoje, fimEstudo, plano.folgas)
+  const diasExtras = new Set(plano.opcoes?.diasExtras ?? [])
+  const folgaEm = (dia: Date) => plano.folgas.includes(dia.getDay()) && !diasExtras.has(chaveData(dia))
+  const diasEstudoRestantes = diasDeEstudo(hoje, fimEstudo, plano.folgas, diasExtras)
 
-  const totalDiasPlano = Math.max(1, diasDeEstudo(criado, inicioRetaFinal > criado ? inicioRetaFinal : prova, plano.folgas))
-  const decorridos = Math.min(totalDiasPlano, diasDeEstudo(criado, hoje, plano.folgas))
+  const totalDiasPlano = Math.max(1, diasDeEstudo(criado, inicioRetaFinal > criado ? inicioRetaFinal : prova, plano.folgas, diasExtras))
+  const decorridos = Math.min(totalDiasPlano, diasDeEstudo(criado, hoje, plano.folgas, diasExtras))
   const esperadoAteHoje = Math.round((alvo * decorridos) / totalDiasPlano)
   const feitasAntesDeHoje = feitas - feitasHoje
   const ritmo = esperadoAteHoje > 0 ? Math.round(((feitasAntesDeHoje - esperadoAteHoje) / esperadoAteHoje) * 100) : 0
@@ -348,9 +437,10 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   // Dias até a reta final, cada um com o seu tipo e peso na meta.
   const semanasDificeis = new Set(opcoes.semanasDificeis)
   const chaveSegunda = (d: Date) => { const s2 = new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7)); return `${s2.getFullYear()}-${String(s2.getMonth() + 1).padStart(2, '0')}-${String(s2.getDate()).padStart(2, '0')}` }
-  const tipoDe = (d: Date): TipoDia => plano.folgas.includes(d.getDay()) ? 'folga' : semanasDificeis.has(chaveSegunda(d)) ? 'dificil' : opcoes.diasLeves.includes(d.getDay()) ? 'leve' : 'estudo'
+  const avulsos = new Set(plano.opcoes?.diasLevesAvulsos ?? [])
+  const tipoDe = (d: Date): TipoDia => folgaEm(d) ? 'folga' : semanasDificeis.has(chaveSegunda(d)) ? 'dificil' : (avulsos.has(chaveData(d)) || opcoes.diasLeves.includes(d.getDay())) ? 'leve' : 'estudo'
   const diasDeEstudoCriacao: Date[] = []
-  for (let d = criado; d < fimEstudo && diasDeEstudoCriacao.length < 800; d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) if (!plano.folgas.includes(d.getDay())) diasDeEstudoCriacao.push(d)
+  for (let d = criado; d < fimEstudo && diasDeEstudoCriacao.length < 800; d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) if (!folgaEm(d)) diasDeEstudoCriacao.push(d)
   // Mini-simulado: a cada INTERVALO_MINI dias corridos desde a criação, num dia de estudo normal.
   const ehMini = (d: Date) => {
     const desde = diasEntre(criado, d)
@@ -444,9 +534,16 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   // Hoje puxado num dia anterior: a meta é o dia guardado; o que já foi feito dele vale como adiantado.
   const puxadoHoje = contaPuxado.get(hoje.getTime())
   const creditoHoje = anteriores.get(hoje.getTime()) ?? 0
-  const metaHojeSemAdiantar = hoje >= inicioRetaFinal ? 0 : puxadoHoje ? puxadoHoje.total + creditoHoje : Math.min(restante + feitasHoje, metaDoTipo(tipoHoje, miniHoje))
+  const metaDeHoje = plano.opcoes?.metaPreservada
+  const metaNormalHoje = metaDeHoje?.em === chaveHoje ? metaDeHoje.n : metaDoTipo(tipoHoje, miniHoje)
+  const metaHojeSemAdiantar = hoje >= inicioRetaFinal ? 0 : puxadoHoje ? puxadoHoje.total + creditoHoje : Math.min(restante + feitasHoje, metaNormalHoje)
   const adiantadoHoje = puxadoHoje ? creditoHoje + puxadoHoje.antes : Math.min(metaHojeSemAdiantar, creditoHoje)
-  const metaDiaria = metaHojeSemAdiantar - adiantadoHoje
+  const cargaHoje = metaHojeSemAdiantar - adiantadoHoje
+  const candidatos = revisoesNaMetaAtivas(plano, chaveHoje) && hoje < inicioRetaFinal
+    ? candidatasARevisao(indice, respondidas, simulados, chaveHoje)
+    : []
+  const revisoesHoje = tipoHoje === 'estudo' && !miniHoje && !puxadoHoje ? candidatos.slice(0, cotaRevisoesDaMeta(cargaHoje)) : []
+  const metaDiaria = cargaHoje - revisoesHoje.length
   const faltaHoje = Math.max(0, metaDiaria - feitasHoje)
   const extraHoje = hoje >= inicioRetaFinal ? 0 : Math.max(0, feitasHoje - metaDiaria)
   const adiantarPedido = hoje >= inicioRetaFinal ? 0 : registros.find((r) => r.data.getTime() === hoje.getTime())?.pedido ?? 0
@@ -533,7 +630,10 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   for (const [i, c] of calendario.entries()) {
     const conta = contaPuxado.get(c.data.getTime())
     const adiantado = i === 0 ? adiantadoHoje : Math.min(metaDoTipo(c.tipo, c.mini), creditos.get(c.data.getTime()) ?? 0)
-    const meta = i === 0 ? faltaHoje + adiantarFalta : conta ? conta.livres.length : metaDoTipo(c.tipo, c.mini) - adiantado
+    const carga = metaDoTipo(c.tipo, c.mini) - adiantado
+    const estimativaRevisao = c.tipo === 'estudo' && !c.mini && !conta && candidatos.length
+      ? Math.min(candidatos.length, cotaRevisoesDaMeta(carga)) : 0
+    const meta = i === 0 ? faltaHoje + adiantarFalta : conta ? conta.livres.length : carga - estimativaRevisao
     const itens: ItemDia[] = []
     let capacidade = meta
     // Dia puxado: primeiro as questões presas a ele, por área (a maior é a do dia; as outras, a mistura).
@@ -665,6 +765,7 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   const fase: FaseCronograma = hoje >= prova ? 'passou' : hoje >= vespera ? 'vespera' : hoje >= inicioModoProva ? 'prova' : hoje >= inicioRetaFinal ? 'revisao' : 'conteudo'
 
   return {
+    ...(revisoesHoje.length > 0 ? { revisoesHoje } : {}),
     diasAteProva: diasEntre(hoje, prova),
     diasEstudoRestantes, inicioRetaFinal, diasRetaFinal: diasFinais, inicioModoProva, vespera, fase, metaMedia, alvo, feitas, restante, metaDiaria, feitasHoje, faltaHoje,
     adiantadoHoje, extraHoje, adiantarPedido, adiantarFalta, metaHojeSemAdiantar,
@@ -710,32 +811,34 @@ export function normalizarPlano(bruto: unknown): PlanoSalvo | null {
   return plano
 }
 
-const recortes = new WeakMap<Indice, Indice>()
-/**
- * O acervo que o plano usa. No modo "só TEOT", um recorte sem as outras provas (guardado, para os
- * caches por índice continuarem valendo); senão, o próprio índice. Quem monta a sessão do dia usa o mesmo.
- */
-export function indiceDoPlano(indice: Indice, plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Indice {
-  if (!soTeot(plano)) return indice
-  let recorte = recortes.get(indice)
+const recortes = new WeakMap<Indice, Map<RecorteOficial, Indice>>()
+
+/** As questões autorais seguem a preferência de simulados, independentemente da prova oficial. */
+export function indiceDoPlano(indice: Indice, plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined, agora?: Date | number): Indice {
+  const { oficiais } = acervoDoPlano(plano, agora)
+  if (oficiais === 'todas') return indice
+  const cache = recortes.get(indice) ?? new Map<RecorteOficial, Indice>()
+  let recorte = cache.get(oficiais)
   if (!recorte) {
-    const teot = indice.provas.indexOf('TEOT')
-    recorte = { ...indice, questoes: indice.questoes.filter((q) => q.p === teot || q.sim === 1) }
-    recortes.set(indice, recorte)
+    const prova = indice.provas.indexOf(oficiais)
+    recorte = { ...indice, questoes: indice.questoes.filter((q) => q.sim === 1 || (prova >= 0 && q.p === prova)) }
+    cache.set(oficiais, recorte)
+    recortes.set(indice, cache)
   }
   return recorte
 }
 
 /** No recorte: quantas questões do plano já estavam respondidas antes de ele ser criado. */
-function baseDoRecorte(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo): number {
+function baseDoRecorte(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number): number {
   const criadoEm = Date.parse(plano.criado_em)
-  const simulados = incluiSimulados(plano)
+  const simulados = incluiSimulados(plano, agora)
+  const chaveHoje = chaveData(diaCivil(agora))
   let n = 0
   for (const q of indice.questoes) {
     if (!entraNoPlano(q, simulados)) continue
     const r = respondidas[q.id]
     if (!r) continue
-    const primeira = r.historico?.[0]?.em ?? r.q
+    const primeira = primeiraRespostaDoPlano(r, plano, chaveHoje)
     if (primeira === undefined || primeira < criadoEm) n++
   }
   return n
@@ -748,7 +851,7 @@ function baseDoRecorte(indice: Indice, respondidas: Record<string, RegistroMinim
  * (criado hoje) ou já na reta final: null.
  */
 export function balancoDiaAnterior(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date()): { data: Date; meta: number; feitas: number; faltou: number; passou: number } | null {
-  const indice = indiceDoPlano(indiceInteiro, plano)
+  const indice = indiceDoPlano(indiceInteiro, plano, agora)
   const hoje = diaCivil(agora)
   const criado = diaCivil(Date.parse(plano.criado_em))
   const prova = dataLocal(plano.data_prova)
@@ -757,10 +860,10 @@ export function balancoDiaAnterior(indiceInteiro: Indice, respondidas: Record<st
   for (let k = 1; k <= 7; k++) {
     const dia = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k)
     if (dia < criado) return null
-    if (plano.folgas.includes(dia.getDay())) continue
+    if (plano.folgas.includes(dia.getDay()) && !plano.opcoes?.diasExtras?.includes(chaveData(dia))) continue
     const chave = chaveData(dia)
     const ini = inicioDaChave(chave), fim = inicioDaChave(somarDias(chave, 1))
-    const simulados = incluiSimulados(plano)
+    const simulados = incluiSimulados(plano, agora)
     let feitas = 0
     for (const q of indice.questoes) {
       if (!entraNoPlano(q, simulados)) continue
@@ -792,7 +895,7 @@ function metaDoDiaPassado(indice: Indice, respondidas: Record<string, RegistroMi
   const ate: Record<string, RegistroMinimo> = {}
   let n = 0, soma = 0
   for (const [id, r] of Object.entries(respondidas)) {
-    const primeira = r?.historico?.[0]?.em ?? r?.q
+    const primeira = primeiraRespostaDoPlano(r, plano, chave)
     if (primeira === undefined || primeira >= fim) continue
     ate[id] = r; n++; soma = (soma + primeira) % 1e12
   }
@@ -826,7 +929,7 @@ function inferirAdiantados(indice: Indice, respondidas: Record<string, RegistroM
     if (reais.some((r) => r.em === em)) continue
     const feitas = primeirasPorDia.get(dia.getTime()) ?? 0
     if (!feitas) continue
-    const meta = plano.folgas.includes(dia.getDay()) ? 0 : metaDoDiaPassado(indice, respondidas, { ...plano, opcoes: { ...(plano.opcoes ?? {}), adiantados: conhecidos.filter((r) => r.em < em) } }, dia)
+    const meta = plano.folgas.includes(dia.getDay()) && !plano.opcoes?.diasExtras?.includes(em) ? 0 : metaDoDiaPassado(indice, respondidas, { ...plano, opcoes: { ...(plano.opcoes ?? {}), adiantados: conhecidos.filter((r) => r.em < em) } }, dia)
     if (feitas <= meta) continue
     const registro = { em, meta }
     novos.push(registro); conhecidos.push(registro)

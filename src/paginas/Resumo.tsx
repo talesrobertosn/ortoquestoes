@@ -1,3 +1,4 @@
+import { ErrosAposSessao } from '../componentes/revisao/ErrosAposSessao'
 import { useCallback, useEffect, useMemo, useState, type CSSProperties, type ReactNode } from 'react'
 import { ResultadoRevisao } from '../componentes/revisao/ResultadoRevisao'
 import { letraExibida } from '../dados/ordemAlternativas'
@@ -30,7 +31,7 @@ import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
 import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
 import { conviteDiarioMostradoHoje } from '../componentes/ConviteDiario'
 import { lerBloqueioDiario } from '../estado/limiteDiario'
-import { chaveCivil, hojeBR, somarDias } from '../util/dia'
+import { chaveCivil, FUSO_DIA, hojeBR, somarDias } from '../util/dia'
 import '../estilos/paginas/Desempenho.css'
 import '../estilos/paginas/Resumo.css'
 
@@ -71,6 +72,17 @@ function duracao(segundos: number): string {
   if (s < 600) return `${Math.floor(s / 60)} min${s % 60 ? ` ${s % 60} s` : ''}`
   if (s < 3600) return `${Math.round(s / 60)} min`
   return `${Math.floor(s / 3600)} h ${String(Math.floor((s % 3600) / 60)).padStart(2, '0')} min`
+}
+
+const segundosDe = (linha: Linha) => {
+  const segundos = linha.resposta?.segundos ?? 0
+  return Number.isFinite(segundos) ? Math.max(0, segundos) : 0
+}
+
+function campoCSV(valor: string | number): string {
+  if (typeof valor === 'number') return String(valor)
+  const texto = /^[\t\r\n]|^\s*[=+@-]/.test(valor) ? "'" + valor : valor
+  return '"' + texto.replace(/"/g, '""') + '"'
 }
 
 const faixa = (p: number) => (p >= 70 ? 'bom' : p >= 50 ? 'medio' : 'baixo')
@@ -165,26 +177,37 @@ function CenaBiblioteca({ periodo, estado }: { periodo: Periodo; estado: 'lendo'
 }
 
 export function Resumo() {
-  const { indice } = usarIndice()
-  const { sessao, iniciarComAviso, finalizar, encerrar } = usarSessao()
+  const { indice, erro: erroIndice } = usarIndice()
+  const { sessao, iniciarComAviso, encerrar } = usarSessao()
   const { sessao: conta } = usarConta()
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [marcadas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
-  const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
+  const [carregadas, definirCarregadas] = useState<{ ids: string[]; questoes: Questao[]; falhou?: boolean } | null>(null)
+  const [tentativa, tentarQuestoes] = useState(0)
   const [filtro, definirFiltro] = useState<Filtro | null>(null)
   const [ordem, definirOrdem] = useState<Ordem>('sessao')
+  const [escopoRevisao, definirEscopoRevisao] = useState<'erros' | 'acertos-incertos'>('erros')
   const [capitulos, definirCapitulos] = useState<CapituloResumo[]>([])
   const periodoArte = usarPeriodo()
 
   const ids = sessao?.ids
+  const questoes = carregadas?.ids === ids ? carregadas?.questoes : undefined
+  const falhouAoCarregar = Boolean(erroIndice || (carregadas?.ids === ids && carregadas?.falhou))
+  useEffect(() => {
+    definirFiltro(null)
+    definirOrdem('sessao')
+    definirEscopoRevisao('erros')
+  }, [sessao?.id])
   useEffect(() => {
     if (!indice || !ids) return
     let vivo = true
-    carregarQuestoes(indice, ids).then((lista) => vivo && definirQuestoes(lista))
+    carregarQuestoes(indice, ids)
+      .then((questoes) => { if (vivo) definirCarregadas({ ids, questoes, falhou: questoes.length < ids.length }) })
+      .catch(() => { if (vivo) definirCarregadas({ ids, questoes: [], falhou: true }) })
     return () => {
       vivo = false
     }
-  }, [indice, ids])
+  }, [indice, ids, tentativa])
 
   // Os capítulos da Biblioteca, para indicar o resumo que mais cobre os erros desta sessão.
   useEffect(() => {
@@ -194,8 +217,8 @@ export function Resumo() {
   }, [])
 
   const dados = useMemo(() => {
-    if (!sessao || !questoes) return null
-    const porId = new Map(questoes.map((q) => [q.id, q]))
+    if (!sessao || (!questoes && !falhouAoCarregar)) return null
+    const porId = new Map((questoes ?? []).map((q) => [q.id, q]))
     const linhas: Linha[] = sessao.ids.map((id, i) => {
       const resposta = sessao.respostas[id]
       const situacao: Situacao = !resposta ? 'pulada' : resposta.correta === null ? 'anulada' : resposta.correta ? 'certa' : 'errada'
@@ -205,7 +228,7 @@ export function Resumo() {
     const validas = respondidas.filter((l) => l.situacao === 'certa' || l.situacao === 'errada')
     const certas = validas.filter((l) => l.situacao === 'certa')
     const erradas = validas.filter((l) => l.situacao === 'errada')
-    const segundos = respondidas.reduce((soma, l) => soma + l.resposta!.segundos, 0)
+    const segundos = respondidas.reduce((soma, l) => soma + segundosDe(l), 0)
 
     const porConfianca: Record<Confianca, { certas: number; total: number }> = {
       seguro: { certas: 0, total: 0 },
@@ -218,7 +241,7 @@ export function Resumo() {
       if (l.situacao === 'certa') grupo.certas++
     }
     const incertas = validas.filter((l) => l.resposta!.confianca === 'duvida' || l.resposta!.confianca === 'chute')
-    const acertosFrageis = incertas.filter((l) => l.situacao === 'certa').length
+    const acertosIncertos = incertas.filter((l) => l.situacao === 'certa')
     const falsaCerteza = erradas.filter((l) => (l.resposta!.confianca ?? 'seguro') === 'seguro').length
 
     const slugPorNome = new Map(indice?.temas.map((t) => [t.nome, t.slug]) ?? [])
@@ -233,22 +256,23 @@ export function Resumo() {
     }
 
     // O tempo: a mediana das respondidas e a mais demorada (para o gráfico e a frase de apoio).
-    const tempos = respondidas.map((l) => l.resposta!.segundos).sort((a, b) => a - b)
-    const mediana = tempos.length ? tempos[Math.floor((tempos.length - 1) / 2)] : 0
-    const maisDemorada = respondidas.reduce<Linha | null>((m, l) => (!m || l.resposta!.segundos > m.resposta!.segundos ? l : m), null)
+    const comTempo = respondidas.filter((l) => segundosDe(l) > 0)
+    const tempos = comTempo.map(segundosDe).sort((a, b) => a - b)
+    const mediana = tempos.length ? (tempos[Math.floor((tempos.length - 1) / 2)] + tempos[Math.floor(tempos.length / 2)]) / 2 : 0
+    const maisDemorada = comTempo.reduce<Linha | null>((m, l) => (!m || segundosDe(l) > segundosDe(m) ? l : m), null)
 
     return {
-      linhas, respondidas, validas, certas, erradas, incertas, acertosFrageis, falsaCerteza, segundos, porConfianca, mediana, maisDemorada,
+      linhas, respondidas, validas, certas, erradas, incertas, acertosIncertos, falsaCerteza, segundos, porConfianca, mediana, maisDemorada, comTempo,
       porTema: [...porTema.entries()]
         .map(([nome, v]) => ({ nome, ...v }))
         .sort((a, b) => b.total - a.total || a.nome.localeCompare(b.nome, 'pt-BR')),
     }
-  }, [sessao, questoes, indice])
+  }, [sessao, questoes, indice, falhouAoCarregar])
 
   // Média das sessões anteriores, para dizer se esta foi acima ou abaixo do normal.
   const mediaAnterior = useMemo(() => {
     const anteriores = historico.filter((h) => h.id !== sessao?.id)
-    const respondidas = anteriores.reduce((n, h) => n + h.respondidas, 0)
+    const respondidas = anteriores.reduce((n, h) => n + (h.contabilizadas ?? h.respondidas), 0)
     const acertos = anteriores.reduce((n, h) => n + h.acertos, 0)
     return respondidas >= 10 ? Math.round((acertos / respondidas) * 100) : null
   }, [historico, sessao?.id])
@@ -264,7 +288,7 @@ export function Resumo() {
     // Questões respondidas pela primeira vez nesta sessão: são as que somam no ranking.
     const novas = sessao.ids.filter((id) => {
       const r = marcadas[id]
-      const primeira = r?.historico?.[0]?.em ?? r?.q
+      const primeira = r?.primeiraEm ?? ((r?.tentativas ?? 1) <= (r?.historico?.length || 1) ? r?.historico?.[0]?.em ?? r?.q : undefined)
       return !!sessao.respostas[id] && !!primeira && primeira >= sessao.criadaEm
     }).length
     let combo = 0
@@ -328,8 +352,8 @@ export function Resumo() {
   const esgotado = !!sessao.limiteSegundos && usadosSimulado >= sessao.limiteSegundos
   const diferenca = pct !== null && mediaAnterior !== null ? pct - mediaAnterior : null
   const puladas = dados.linhas.length - dados.respondidas.length
-  const quando = new Date(fim).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' })
-  const hora = new Date(fim).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+  const quando = new Date(fim).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', timeZone: FUSO_DIA })
+  const hora = new Date(fim).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: FUSO_DIA })
   const temaFraco = dados.porTema.filter((t) => t.slug && t.erradas.length >= 1).sort((a, b) => b.erradas.length - a.erradas.length || a.certas / a.total - b.certas / b.total)[0] ?? null
   const temaForte = dados.porTema.filter((t) => t.certas >= 2 && t.certas / t.total >= 0.7).sort((a, b) => b.certas - a.certas)[0] ?? null
 
@@ -337,7 +361,7 @@ export function Resumo() {
   const filtroInicial: Filtro = dados.erradas.length ? 'erradas' : dados.incertas.length ? 'incertas' : 'todas'
   const filtroAtivo = filtro ?? filtroInicial
   const filtradas = filtroAtivo === 'erradas' ? dados.erradas : filtroAtivo === 'incertas' ? dados.incertas : dados.linhas
-  const visiveis = ordem === 'tempo' ? [...filtradas].sort((a, b) => (b.resposta?.segundos ?? -1) - (a.resposta?.segundos ?? -1)) : filtradas
+  const visiveis = ordem === 'tempo' ? [...filtradas].sort((a, b) => segundosDe(b) - segundosDe(a)) : filtradas
 
   async function refazer(lista: Linha[]) {
     if (lista.length === 0) return
@@ -348,8 +372,8 @@ export function Resumo() {
   function exportar() {
     const linhas = [
       `Orto Questões — resultado da sessão`,
-      `Filtro: ${descreverFiltros(sessao!.filtros)}`,
-      `Data: ${new Date(fim).toLocaleString('pt-BR')}`,
+      campoCSV(`Filtro: ${descreverFiltros(sessao!.filtros)}`),
+      `Data: ${new Date(fim).toLocaleString('pt-BR', { timeZone: FUSO_DIA })}`,
       `Respondidas: ${dados!.respondidas.length} de ${sessao!.ids.length}`,
       `Acerto: ${pct === null ? '—' : pct + '%'}`,
       `Tempo médio: ${Math.round(mediaSegundos)}s por questão`,
@@ -365,9 +389,9 @@ export function Resumo() {
           letraMarcada(l) ?? '',
           gabaritoVisto(l) ?? '',
           l.resposta?.confianca ?? '',
-          l.resposta?.segundos ?? '',
+          l.resposta ? segundosDe(l) : '',
           { certa: 'certa', errada: 'errada', anulada: 'nao-contabilizada', pulada: 'nao-respondida' }[l.situacao],
-        ].join(';'),
+        ].map(campoCSV).join(';'),
       ),
     ].join('\n')
 
@@ -381,36 +405,15 @@ export function Resumo() {
   }
 
   const mostrarGanhos = sessao.origem !== 'revisao' && !emAndamento && !sessao.nacional && pct !== null && !!ganhos
-  const metaCumprida = sessao.origem === 'cronograma' && !!cronograma.calculo && cronograma.calculo.metaDiaria > 0 && cronograma.calculo.feitasHoje >= cronograma.calculo.metaDiaria
+  const mao = sessao.cronograma?.modalidade.startsWith('mao-') ?? sessao.filtros.areas?.includes('mao')
+  const metaCumprida = !mao && sessao.origem === 'cronograma' && !!cronograma.calculo && cronograma.calculo.metaDiaria > 0 && cronograma.calculo.faltaHoje === 0 && !cronograma.calculo.revisoesHoje?.some((r) => !r.feita)
   const estadoCoruja = pct !== null && pct >= 70 ? 'acenando' : emAndamento ? 'olhando' : 'lendo'
   const temConfianca = dados.validas.length > 0
 
-  // Os passos de "O que fazer agora", do que mais rende para o que mantém o ritmo.
-  const passos: Array<{ titulo: string; texto: string; acao: ReactNode }> = []
-  if (emAndamento) passos.push({
-    titulo: 'Voltar à sessão', texto: `${questoesPorExtenso(puladas)} ainda sem resposta.`.replace(/^./, (c) => c.toUpperCase()),
-    acao: <a className="dp-botao dp-botao--principal" href={href('/sessao')}>Continuar <Icone nome="direita" tamanho={15} /></a>,
-  })
-  if (dados.erradas.length) passos.push({
-    titulo: `Refazer ${plural(dados.erradas.length, 'errada', 'erradas')}`, texto: 'Na mesma ordem. Leia o comentário de cada uma antes: é quando o erro vira acerto na prova.',
-    acao: <button type="button" className={'dp-botao' + (emAndamento ? '' : ' dp-botao--principal')} onClick={() => refazer(dados.erradas)}><Icone nome="reiniciar" tamanho={15} /> Refazer agora</button>,
-  })
-  if (resumos.geral) passos.push({
-    titulo: `Ler ${resumos.geral.capitulo.titulo}`, texto: `O resumo da Biblioteca que mais cobre os erros de hoje. Leitura de ${resumos.geral.capitulo.minutos} minutos, antes de refazer.`,
-    acao: <a className="dp-botao" href={href(`/resumos/${resumos.geral.capitulo.id}`)}><Icone nome="livro" tamanho={15} /> Ler o resumo</a>,
-  })
-  if (dados.incertas.length) passos.push({
-    titulo: `Refazer ${plural(dados.incertas.length, 'com dúvida ou chute', 'com dúvida ou chute')}`, texto: dados.acertosFrageis ? 'Inclui os acertos sem certeza: uma passada rápida transforma dúvida em conhecimento firme.' : 'Confirme o que ficou incerto enquanto a questão está fresca.',
-    acao: <button type="button" className="dp-botao" onClick={() => refazer(dados.incertas)}><Icone nome="interrogacao" tamanho={15} /> Refazer</button>,
-  })
-  if (temaFraco) passos.push({
-    titulo: `Treinar ${temaFraco.nome}`, texto: 'Dez questões do tema que mais pediu revisão hoje, com o comentário logo depois de cada uma.',
-    acao: <a className="dp-botao" href={href(`/treinar?temas=${temaFraco.slug}&limite=10`)}><Icone nome="alvo" tamanho={15} /> Treinar 10</a>,
-  })
-  if (!passos.length) passos.push({
-    titulo: 'Seguir com uma sessão nova', texto: 'Sem erros nem dúvidas nesta sessão. Dez questões novas mantêm o ritmo.',
-    acao: <a className="dp-botao dp-botao--principal" href={href('/treinar?limite=10')} onClick={() => finalizar()}>Treinar 10 <Icone nome="direita" tamanho={15} /></a>,
-  })
+  const podeEscolherEscopo = dados.erradas.length > 0 && dados.acertosIncertos.length > 0
+  const refazerErros = dados.erradas.length > 0 && (!podeEscolherEscopo || escopoRevisao === 'erros')
+  const revisaveis = refazerErros ? dados.erradas : dados.acertosIncertos
+  const resumoPrincipal = resumos.geral?.capitulo
 
   return (
     <article className="dpg rsg">
@@ -442,7 +445,7 @@ export function Resumo() {
                 </div>
                 <div className="dp-numero rr-numero--erradas">
                   <dt>Erradas</dt>
-                  <dd><b>{dados.erradas.length}</b><small>{dados.falsaCerteza ? `${dados.falsaCerteza} com certeza` : dados.erradas.length ? 'nenhuma com certeza' : dados.validas.length ? 'gabaritou' : 'nenhuma ainda'}</small></dd>
+                  <dd><b>{dados.erradas.length}</b><small>{dados.falsaCerteza ? `${dados.falsaCerteza} com certeza` : dados.erradas.length ? 'nenhuma com certeza' : dados.validas.length ? 'sem erros nas contabilizadas' : 'nenhuma ainda'}</small></dd>
                 </div>
                 <div className="dp-numero">
                   <dt>{sessao.simulado && sessao.limiteSegundos ? 'Tempo de prova' : 'Tempo'}</dt>
@@ -464,10 +467,8 @@ export function Resumo() {
               <div className="rr-topo__acoes nao-imprime">
                 {emAndamento
                   ? <a className="dp-botao dp-botao--principal dp-botao--grande" href={href('/sessao')}>Voltar à sessão <Icone nome="direita" tamanho={18} /></a>
-                  : dados.erradas.length
-                    ? <button type="button" className="dp-botao dp-botao--principal dp-botao--grande" onClick={() => refazer(dados.erradas)}><Icone nome="reiniciar" tamanho={18} /> Refazer {plural(dados.erradas.length, 'errada', 'erradas')}</button>
-                    : <a className="dp-botao dp-botao--principal dp-botao--grande" href={href('/treinar')} onClick={() => finalizar()}><Icone nome="estrela" tamanho={18} /> Nova sessão</a>}
-                <a className="dp-botao dp-botao--grande" href="#rr-questoes" onClick={irPara('questoes')}><Icone nome="olho" tamanho={18} /> Revisar as questões</a>
+                  : <button type="button" className="dp-botao dp-botao--principal dp-botao--grande" onClick={() => irPara('agora')}>Escolher próximo passo <Icone nome="direita" tamanho={18} /></button>}
+                <button type="button" className="dp-botao dp-botao--grande" onClick={() => irPara('questoes')}><Icone nome="olho" tamanho={18} /> Ver respostas</button>
               </div>
             </div>
             <Anel pct={pct} certas={dados.certas.length} erradas={dados.erradas.length} validas={dados.validas.length} puladas={puladas} />
@@ -492,7 +493,14 @@ export function Resumo() {
           )}
         </section>
 
-        {!emAndamento && sessao.origem === 'cronograma' && cronograma.calculo && !cronograma.calculo.naRetaFinal && <FimCronograma calculo={cronograma.calculo} />}
+        {!emAndamento && !mao && sessao.origem === 'cronograma' && cronograma.calculo && !cronograma.calculo.naRetaFinal && <FimCronograma calculo={cronograma.calculo} />}
+        {!emAndamento && mao && sessao.origem === 'cronograma' && (
+          <section className="dp-cartao rr-aviso" aria-label="Cronograma da Mão">
+            <span className="rr-aviso__icone" aria-hidden="true"><Icone nome="calendario" tamanho={22} /></span>
+            <div><strong>Cronograma da Mão</strong><p>Veja a meta e o próximo dia de estudo.</p></div>
+            <a className="dp-botao" href={href(sessao.cronograma ? `/cronograma-mao?prova=${sessao.cronograma.modalidade === 'mao-titulo' ? 'titulo' : 'ingresso'}` : '/cronograma-mao')}>Voltar ao cronograma</a>
+          </section>
+        )}
         {!emAndamento && sessao.origem === 'diagnostico' && (
           <section className="dp-cartao rr-aviso" aria-label="Diagnóstico concluído">
             <span className="rr-aviso__icone" aria-hidden="true"><Icone nome="alvo" tamanho={22} /></span>
@@ -505,23 +513,41 @@ export function Resumo() {
         {/* Sessão que foi bem, sem o limite do dia na mesma tela: um convite, no máximo. */}
         <ConviteCompartilhar ativo={!emAndamento && dados.respondidas.length >= 5 && pct !== null && pct >= 60 && !lerBloqueioDiario() && !conviteDiarioMostradoHoje()} />
 
-        <Secao id="agora" rotulo="O que fazer agora" icone="direita" titulo={nome ? `${nome}, seu próximo passo` : 'Seu próximo passo'} texto="Do que mais rende para o que mantém o ritmo. Um de cada vez já basta.">
-          <div className="dp-cartao rr-agora">
-            <ol className="dp-passos">
-              {passos.map((p, i) => (
-                <li className="dp-passo" key={p.titulo}>
-                  <span className="dp-passo__n" aria-hidden="true">{i + 1}</span>
-                  <div><strong>{p.titulo}</strong><span>{p.texto}</span></div>
-                  {p.acao}
-                </li>
-              ))}
-              <li className="dp-passos__fim nao-imprime">
-                <a className="dp-botao dp-botao--grande" href={href('/treinar')} onClick={() => finalizar()}><Icone nome="estrela" tamanho={17} /> Nova sessão</a>
-                {dados.erradas.length > 0 && <a className="dp-botao dp-botao--grande" href={href('/erros')}><Icone nome="livro" tamanho={17} /> Caderno de erros</a>}
-              </li>
-            </ol>
+        {falhouAoCarregar && <div className="dp-cartao rr-detalhes-indisponiveis" role="status">
+          <p>As respostas estão salvas. Alguns enunciados e comentários estão indisponíveis.</p>
+          <button type="button" className="dp-botao" onClick={() => erroIndice || !indice?.questoes.length ? window.location.reload() : tentarQuestoes((n) => n + 1)}>Carregar detalhes novamente</button>
+        </div>}
+
+        {!emAndamento && <Secao id="agora" icone="direita" titulo="O que fazer agora" somenteTela>
+          {revisaveis.length > 0 && <div className="dp-cartao rr-revisar nao-imprime">
+            <div>
+              <h3>Questões desta sessão</h3>
+              <p>{refazerErros ? 'Volte aos erros e confira o raciocínio no comentário.' : 'Confirme os acertos que vieram com dúvida ou chute.'}</p>
+            </div>
+            {podeEscolherEscopo && <fieldset className="rr-escolhas">
+              <legend className="so-leitor">Quais questões você quer refazer?</legend>
+              <label><input type="radio" name="revisao-desta-sessao" checked={refazerErros} onChange={() => definirEscopoRevisao('erros')} /> {plural(dados.erradas.length, 'erro', 'erros')}</label>
+              <label><input type="radio" name="revisao-desta-sessao" checked={!refazerErros} onChange={() => definirEscopoRevisao('acertos-incertos')} /> {plural(dados.acertosIncertos.length, 'acerto com dúvida ou chute', 'acertos com dúvida ou chute')}</label>
+            </fieldset>}
+            <button type="button" className="dp-botao dp-botao--principal" onClick={() => { void refazer(revisaveis) }}><Icone nome="reiniciar" tamanho={16} /> Refazer {plural(revisaveis.length, 'questão', 'questões')}</button>
+          </div>}
+          {indice && <ErrosAposSessao key={sessao.id} indice={indice} plano={cronograma.plano} sessao={sessao} registros={marcadas} aberto={revisaveis.length === 0} />}
+          {(resumoPrincipal || temaFraco) && <div className="dp-cartao rr-aprofundar nao-imprime">
+            <h3>Aprofundar um tema</h3>
+            {resumoPrincipal && <div>
+              <span><strong>{resumoPrincipal.titulo}</strong><small>Resumo relacionado aos erros desta sessão · {duracao(resumoPrincipal.minutos * 60)}</small></span>
+              <a className="dp-botao" href={href(`/resumos/${resumoPrincipal.id}`)}><Icone nome="livro" tamanho={15} /> Ler resumo</a>
+            </div>}
+            {temaFraco && <div>
+              <span><strong>{temaFraco.nome}</strong><small>{plural(temaFraco.erradas.length, 'erro', 'erros')} nesta sessão</small></span>
+              <a className="dp-botao" href={href(`/treinar?temas=${temaFraco.slug}&limite=10`)}><Icone nome="alvo" tamanho={15} /> Treinar 10</a>
+            </div>}
+          </div>}
+          <div className="rr-extras nao-imprime">
+            <a className="dp-botao" href={href('/treinar')}><Icone nome="estrela" tamanho={16} /> Nova sessão</a>
+            <a className="dp-botao" href={href('/erros')}><Icone nome="livro" tamanho={16} /> Caderno de erros</a>
           </div>
-        </Secao>
+        </Secao>}
 
         <Secao id="folha" rotulo="Folha de respostas" icone="grafico" titulo="Como foi cada questão?" texto="Toque em um número para abrir a questão com o comentário. As barras mostram o tempo de cada uma.">
           <div className="dp-cartao">
@@ -545,7 +571,7 @@ export function Resumo() {
                 )
               })}
             </ol>
-            {dados.respondidas.length > 1 && <Tempos linhas={dados.linhas} mediana={dados.mediana} maisDemorada={dados.maisDemorada} />}
+            {dados.comTempo.length > 1 && <Tempos linhas={dados.linhas} mediana={dados.mediana} maisDemorada={dados.maisDemorada} />}
           </div>
         </Secao>
 
@@ -560,7 +586,7 @@ export function Resumo() {
                   return (
                     <div className="rr-confianca__linha" key={tipo}>
                       <span className="rr-confianca__rotulo"><Icone nome={ICONE_CONFIANCA[tipo]} tamanho={16} /> {ROTULO_CONFIANCA[tipo]}</span>
-                      <span className="rr-trilho"><span className={`rr-faixa--${faixa(p)}`} style={{ width: `${grupo.total ? Math.max(3, p) : 0}%` }} /></span>
+                      <span className="rr-trilho"><span className={`rr-faixa--${faixa(p)}`} style={{ width: `${p}%` }} /></span>
                       <span className="rr-confianca__valor">
                         <b>{grupo.total ? `${grupo.certas}/${grupo.total}` : '–'}</b> <small>{grupo.total ? `${p}%` : 'nenhuma'}</small>
                       </span>
@@ -568,18 +594,18 @@ export function Resumo() {
                   )
                 })}
               </div>
-              {(dados.falsaCerteza > 0 || dados.acertosFrageis > 0) && (
+              {(dados.falsaCerteza > 0 || dados.acertosIncertos.length > 0) && (
                 <ul className="rr-alertas">
                   {dados.falsaCerteza > 0 && (
                     <li className="rr-alerta rr-alerta--erro">
                       <Icone nome="alerta" tamanho={18} />
-                      <span><b>{plural(dados.falsaCerteza, 'erro com certeza', 'erros com certeza')}.</b> São os mais importantes: indicam um conceito aprendido errado. Leia o comentário antes de refazer.</span>
+                      <span><b>{plural(dados.falsaCerteza, 'erro com certeza', 'erros com certeza')}.</b> Compare seu raciocínio com o comentário ao revisar.</span>
                     </li>
                   )}
-                  {dados.acertosFrageis > 0 && (
+                  {dados.acertosIncertos.length > 0 && (
                     <li className="rr-alerta rr-alerta--aviso">
                       <Icone nome="olho" tamanho={18} />
-                      <span><b>{plural(dados.acertosFrageis, 'acerto sem certeza', 'acertos sem certeza')}.</b> Contam como certos, mas voltam mais cedo na revisão para virar conhecimento firme.</span>
+                      <span><b>{plural(dados.acertosIncertos.length, 'acerto sem certeza', 'acertos sem certeza')}.</b> Esses acertos voltam mais cedo na revisão espaçada.</span>
                     </li>
                   )}
                 </ul>
@@ -589,22 +615,24 @@ export function Resumo() {
         )}
 
         {(
-          <Secao id="temas" rotulo="Temas" icone="mapa" titulo="Onde você foi melhor?" texto="Cada tema desta sessão, com o botão para treinar só ele e o resumo certo para os erros.">
+          <Secao id="temas" rotulo="Temas" icone="mapa" titulo="Onde você foi melhor?" texto="Compare acertos e veja os materiais disponíveis por tema.">
             <ul className="dp-cartao rr-temas">
               {dados.porTema.map((tema) => {
                 const p = Math.round((tema.certas / tema.total) * 100)
                 const resumo = resumos.porTema.get(tema.nome)
+                const podeLer = resumo && (emAndamento || resumo.capitulo.id !== resumoPrincipal?.id)
+                const podeTreinar = tema.slug && (emAndamento || tema.slug !== temaFraco?.slug)
                 return (
                   <li key={tema.nome} className="rr-tema">
                     <div className="rr-tema__info">
                       <strong>{tema.nome}</strong>
-                      <span className="rr-trilho"><span className={`rr-faixa--${faixa(p)}`} style={{ width: `${Math.max(3, p)}%` }} /></span>
+                      <span className="rr-trilho"><span className={`rr-faixa--${faixa(p)}`} style={{ width: `${p}%` }} /></span>
                     </div>
                     <span className={`rr-tema__valor rr-texto--${faixa(p)}`}><b>{tema.certas}/{tema.total}</b><small>{p}%</small></span>
-                    {(tema.slug || resumo) && (
+                    {(podeTreinar || podeLer) && (
                       <span className="rr-tema__acoes nao-imprime">
-                        {resumo && <a className="dp-botao dp-botao--pequeno" href={href(`/resumos/${resumo.capitulo.id}`)} title={resumo.capitulo.titulo}><Icone nome="livro" tamanho={14} /> Resumo</a>}
-                        {tema.slug && <a className="dp-botao dp-botao--pequeno" href={href(`/treinar?temas=${tema.slug}&limite=10`)}><Icone nome="alvo" tamanho={14} /> Treinar</a>}
+                        {podeLer && <a className="dp-botao dp-botao--pequeno" href={href(`/resumos/${resumo.capitulo.id}`)} title={resumo.capitulo.titulo}><Icone nome="livro" tamanho={14} /> Resumo</a>}
+                        {podeTreinar && <a className="dp-botao dp-botao--pequeno" href={href(`/treinar?temas=${tema.slug}&limite=10`)}><Icone nome="alvo" tamanho={14} /> Treinar</a>}
                       </span>
                     )}
                   </li>
@@ -616,7 +644,7 @@ export function Resumo() {
 
         </div>}
 
-        <Secao id="questoes" rotulo="Questões" icone="lapis" titulo="Revise as questões" texto="O que você marcou, o gabarito e quanto tempo levou. Toque para abrir com o comentário.">
+        <Secao id="questoes" rotulo="Questões" icone="lapis" titulo="Suas respostas e o gabarito" texto="Filtre as questões ou ordene pelo tempo. Abra uma questão para ver o comentário completo.">
           <div className="dp-cartao">
             <div className="rr-controles nao-imprime">
               <div className="ds-seg" role="group" aria-label="Mostrar">
@@ -634,7 +662,7 @@ export function Resumo() {
             {visiveis.length === 0 ? (
               <p className="rr-vazio">
                 <Icone nome={filtroAtivo === 'erradas' ? 'trofeu' : 'certo'} tamanho={20} />
-                {filtroAtivo === 'erradas' ? 'Nenhuma errada nesta sessão. Gabaritou!' : 'Você respondeu tudo com certeza.'}
+                {filtroAtivo === 'erradas' ? 'Nenhum erro registrado nesta sessão.' : 'Nenhuma questão respondida com dúvida ou chute.'}
               </p>
             ) : (
               <ul className="rr-lista">
@@ -644,13 +672,13 @@ export function Resumo() {
           </div>
         </Secao>
 
-        <Secao id="progresso" rotulo="Seu progresso" icone="fogo" titulo="E a sua constância?" texto="A meta de hoje, o próximo emblema e o resultado guardado do seu jeito.">
+        <Secao id="progresso" rotulo="Seu progresso" icone="fogo" titulo="Constância e próximos marcos" texto="Veja o progresso da meta diária e guarde uma cópia do resultado.">
           <div className="rr-progresso">
             {(streak.hojeContagem > 0 || streak.atual > 0) && (
               <div className="dp-cartao rr-marco">
                 <span className="rr-marco__icone" aria-hidden="true"><img src={recurso('ranking/chama.png')} width={28} height={28} alt="" /></span>
                 <div>
-                  <strong>{streak.metaHojeAtingida ? `Meta de hoje batida · ${plural(streak.atual, 'dia seguido', 'dias seguidos')}` : `Faltam ${META_STREAK_DIARIA - streak.hojeContagem} para a meta de hoje`}</strong>
+                  <strong>{streak.metaHojeAtingida ? `Meta de constância cumprida · ${plural(streak.atual, 'dia seguido', 'dias seguidos')}` : `Faltam ${META_STREAK_DIARIA - streak.hojeContagem} para a meta de constância`}</strong>
                   <span className="ds-medidor"><span style={{ width: `${Math.min(100, (streak.hojeContagem / META_STREAK_DIARIA) * 100)}%` }} /></span>
                   <small>{plural(streak.hojeContagem, 'questão respondida hoje', 'questões respondidas hoje')} · recorde de {plural(streak.recorde, 'dia', 'dias')}</small>
                 </div>
@@ -668,6 +696,7 @@ export function Resumo() {
             )}
           </div>
           <div className="rr-extras nao-imprime">
+            <a className="dp-botao" href={href('/revisao')}><Icone nome="reiniciar" tamanho={16} /> Central de revisões</a>
             <a className="dp-botao" href={href('/dados')}><Icone nome="grafico" tamanho={16} /> Desempenho geral</a>
             <button type="button" className="dp-botao" onClick={exportar}><Icone nome="baixar" tamanho={16} /> Exportar CSV</button>
             <button type="button" className="dp-botao" onClick={() => window.print()}><Icone nome="impressora" tamanho={16} /> Imprimir</button>
@@ -679,23 +708,21 @@ export function Resumo() {
 }
 
 function irPara(id: string) {
-  return (e: React.MouseEvent) => {
-    e.preventDefault()
-    const alvo = document.getElementById(`rr-${id}`)
-    if (!alvo) return
-    const reduzir = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
-    alvo.scrollIntoView({ behavior: reduzir ? 'auto' : 'smooth', block: 'start' })
-  }
+  const alvo = document.getElementById(`rr-${id}`)
+  if (!alvo) return
+  const reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  alvo.querySelector<HTMLElement>('h2')?.focus({ preventScroll: true })
+  alvo.scrollIntoView({ behavior: reduzir ? 'auto' : 'smooth', block: 'start' })
 }
 
 /** Cabeça de seção: rótulo, a pergunta que ela responde e uma linha de apoio. */
-function Secao({ id, rotulo, icone, titulo, texto, children }: { id: string; rotulo: string; icone: Parameters<typeof Icone>[0]['nome']; titulo: string; texto: string; children: ReactNode }) {
+function Secao({ id, rotulo, icone, titulo, texto, somenteTela, children }: { id: string; rotulo?: string; icone: Parameters<typeof Icone>[0]['nome']; titulo: string; texto?: string; somenteTela?: boolean; children: ReactNode }) {
   return (
-    <section className="dp-secao" id={`rr-${id}`} aria-labelledby={`rr-${id}-titulo`}>
+    <section className={somenteTela ? 'dp-secao nao-imprime' : 'dp-secao'} id={`rr-${id}`} aria-labelledby={`rr-${id}-titulo`}>
       <header className="dp-secao__cabeca">
-        <p className="dp-rotulo"><Icone nome={icone} tamanho={14} /> {rotulo}</p>
-        <h2 id={`rr-${id}-titulo`}>{titulo}</h2>
-        <p>{texto}</p>
+        {rotulo && <p className="dp-rotulo"><Icone nome={icone} tamanho={14} /> {rotulo}</p>}
+        <h2 id={`rr-${id}-titulo`} tabIndex={-1}>{titulo}</h2>
+        {texto && <p>{texto}</p>}
       </header>
       {children}
     </section>
@@ -706,7 +733,7 @@ function Secao({ id, rotulo, icone, titulo, texto, children }: { id: string; rot
 function Mensagem({ pct, certas, validas, erradas, forte, falsaCerteza, emAndamento, puladas }: {
   pct: number | null; certas: number; validas: number; erradas: number; forte: string | null; falsaCerteza: number; emAndamento: boolean; puladas: number
 }) {
-  if (emAndamento) return <p className="dp-mensagem">A sessão ainda está aberta: <b>{questoesPorExtenso(puladas)}</b> {puladas === 1 ? 'espera' : 'esperam'} resposta. O resultado abaixo já conta o que você respondeu.</p>
+  if (emAndamento) return <p className="dp-mensagem">{puladas ? <>Sessão em andamento. Faltam <b>{questoesPorExtenso(puladas)}</b>.</> : 'Todas as questões foram respondidas. Volte à sessão para concluir e ver as opções de revisão.'}</p>
   if (pct === null) return <p className="dp-mensagem">Nenhuma questão contabilizada desta vez. <b>Dez questões</b> já bastam para este resultado mostrar onde você está.</p>
   const abertura = pct >= 85 ? <>Desempenho de quem domina o assunto: <b>{certas} de {validas}</b> certas.</>
     : pct >= 70 ? <>Resultado sólido: <b>{certas} de {validas}</b> certas.</>
@@ -718,22 +745,21 @@ function Mensagem({ pct, certas, validas, erradas, forte, falsaCerteza, emAndame
       {forte && <> Seu terreno mais firme hoje foi <b>{forte}</b>.</>}
       {erradas > 0 && (falsaCerteza > 0
         ? <> Comece pelos <b>{falsaCerteza === 1 ? 'um erro' : `${falsaCerteza} erros`} com certeza</b>: são os que mais ensinam.</>
-        : <> Os erros de hoje viram as revisões de amanhã: leia os comentários com calma e refaça.</>)}
-      {erradas === 0 && validas > 0 && <> Nenhum erro: aproveite para confirmar os acertos que vieram com dúvida.</>}
+        : <> Os erros desta sessão ficam disponíveis para refazer.</>)}
+      {erradas === 0 && validas > 0 && <> Nenhum erro nas questões contabilizadas.</>}
     </p>
   )
 }
 
-/** O anel de acerto, dividido em certas, erradas e sem resposta, com a legenda em texto. */
+/** O anel usa apenas as questões contabilizadas. A legenda explicita as que ficaram sem resposta. */
 function Anel({ pct, certas, erradas, validas, puladas }: { pct: number | null; certas: number; erradas: number; validas: number; puladas: number }) {
-  const total = certas + erradas + puladas
+  const total = validas
   const r = 52
   const c = 2 * Math.PI * r
   const arco = (n: number) => (total ? (n / total) * c : 0)
   const fatias = [
     { n: certas, classe: 'rr-anel__certas' },
     { n: erradas, classe: 'rr-anel__erradas' },
-    { n: puladas, classe: 'rr-anel__puladas' },
   ]
   let deslocamento = 0
   return (
@@ -750,7 +776,7 @@ function Anel({ pct, certas, erradas, validas, puladas }: { pct: number | null; 
             return el
           })}
         </svg>
-        <span className="rr-anel__valor"><b>{pct === null ? '–' : `${pct}%`}</b><small>{validas ? `${certas} de ${validas}` : 'sem respostas'}</small></span>
+        <span className="rr-anel__valor"><b>{pct === null ? '–' : `${pct}%`}</b><small>{validas ? `${certas} de ${validas}` : 'sem questões válidas'}</small></span>
       </div>
       <ul className="rr-anel__legenda">
         <li><i className="rr-ponto rr-ponto--certa" /> {plural(certas, 'certa', 'certas')}</li>
@@ -763,16 +789,16 @@ function Anel({ pct, certas, erradas, validas, puladas }: { pct: number | null; 
 
 /** O tempo de cada questão: uma barra por questão, na cor do resultado, com a mediana como linha de referência. */
 function Tempos({ linhas, mediana, maisDemorada }: { linhas: Linha[]; mediana: number; maisDemorada: Linha | null }) {
-  const maximo = Math.max(1, ...linhas.map((l) => l.resposta?.segundos ?? 0))
-  const lentas = linhas.filter((l) => (l.resposta?.segundos ?? 0) > Math.max(mediana * 2, 30)).length
+  const maximo = Math.max(1, ...linhas.map(segundosDe))
+  const lentas = linhas.filter((l) => segundosDe(l) > mediana * 2).length
   return (
     <figure className="rr-tempos">
       <figcaption>
         <strong>Tempo por questão</strong>
         <span>
           Mediana de <b>{duracao(mediana)}</b>
-          {maisDemorada && maisDemorada.resposta!.segundos > mediana && <> · a mais demorada foi a <b>{maisDemorada.numero}</b> ({duracao(maisDemorada.resposta!.segundos)})</>}
-          {lentas > 0 && <> · {lentas === 1 ? 'uma levou' : `${lentas} levaram`} mais que o dobro</>}
+          {maisDemorada && segundosDe(maisDemorada) > mediana && <> · a mais demorada foi a <b>{maisDemorada.numero}</b> ({duracao(segundosDe(maisDemorada))})</>}
+          {lentas > 0 && <> · {lentas === 1 ? 'uma levou' : `${lentas} levaram`} mais que o dobro da mediana</>}
         </span>
       </figcaption>
       <div className="rr-tempos__grafico" style={{ '--mediana': `${(mediana / maximo) * 100}%` } as CSSProperties}>
@@ -780,8 +806,8 @@ function Tempos({ linhas, mediana, maisDemorada }: { linhas: Linha[]; mediana: n
         <ol>
           {linhas.map((l) => (
             <li key={l.id}>
-              <a href={href(`/questao/${l.id}`)} className={`rr-tempos__barra rr-tempos__barra--${l.situacao}`} style={{ '--altura': `${l.resposta ? Math.max(4, (l.resposta.segundos / maximo) * 100) : 0}%` } as CSSProperties}
-                title={`Questão ${l.numero}: ${l.resposta ? duracao(l.resposta.segundos) : 'sem resposta'}`} aria-label={`Questão ${l.numero}: ${l.resposta ? duracao(l.resposta.segundos) : 'sem resposta'}, ${descreverLinha(l)}`}>
+              <a href={href(`/questao/${l.id}`)} className={`rr-tempos__barra rr-tempos__barra--${l.situacao}`} style={{ '--altura': `${segundosDe(l) > 0 ? Math.max(4, (segundosDe(l) / maximo) * 100) : 0}%` } as CSSProperties}
+                title={`Questão ${l.numero}: ${l.resposta ? duracao(segundosDe(l)) : 'sem resposta'}`} aria-label={`Questão ${l.numero}: ${l.resposta ? duracao(segundosDe(l)) : 'sem resposta'}, ${descreverLinha(l)}`}>
                 <i />
               </a>
             </li>
@@ -819,7 +845,7 @@ function ItemQuestao({ l }: { l: Linha }) {
             {r?.confianca && r.confianca !== 'seguro' && (
               <span className="rr-chip rr-chip--aviso"><Icone nome={ICONE_CONFIANCA[r.confianca]} tamanho={13} /> {ROTULO_CONFIANCA[r.confianca]}</span>
             )}
-            {r && <span className="rr-chip"><Icone nome="relogio" tamanho={13} /> {duracao(r.segundos)}</span>}
+            {r && <span className="rr-chip"><Icone nome="relogio" tamanho={13} /> {duracao(segundosDe(l))}</span>}
           </span>
         </span>
         <span className="rr-item__abrir" aria-hidden="true">Abrir <Icone nome="direita" tamanho={16} /></span>
@@ -833,7 +859,11 @@ function ItemQuestao({ l }: { l: Linha }) {
  * hoje foi feita, o que ainda falta hoje e o que vem amanhã, com um botão só.
  */
 function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usarCronogramaHoje>['calculo']> }) {
-  const feita = calculo.metaDiaria > 0 && calculo.feitasHoje >= calculo.metaDiaria
+  const revisoes = calculo.revisoesHoje ?? []
+  const feitasRevisao = revisoes.filter((r) => r.feita).length
+  const total = calculo.metaDiaria + revisoes.length
+  const falta = calculo.faltaHoje + revisoes.length - feitasRevisao
+  const feita = total > 0 && falta === 0
   const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
   const amanha = calculo.amanha
   const nomesAmanha = amanha ? [...new Set(amanha.itens.map((i) => i.nome))].join(' e ') : ''
@@ -841,25 +871,24 @@ function FimCronograma({ calculo }: { calculo: NonNullable<ReturnType<typeof usa
   // Meta feita: o botão puxa o próximo dia de estudo direto (pedido do Tales, 19/10/2026).
   const proximo = feita ? proximoDiaParaPuxar(calculo) : null
   const puxar = proximo ? textoPuxar(proximo) : null
-  const progresso = calculo.metaDiaria > 0 ? Math.min(100, (calculo.feitasHoje / calculo.metaDiaria) * 100) : 0
+  const progresso = total > 0 ? Math.max(0, (1 - falta / total) * 100) : 0
   return (
     <section className={'dp-cartao rr-cronograma' + (feita ? ' rr-cronograma--feita' : '')} aria-labelledby="rr-cron-titulo">
-      <span className="rr-cronograma__selo" aria-hidden="true">{feita ? <Icone nome="certo" tamanho={26} /> : <b>{calculo.faltaHoje}</b>}</span>
+      <span className="rr-cronograma__selo" aria-hidden="true">{feita ? <Icone nome="certo" tamanho={26} /> : <b>{falta}</b>}</span>
       <div className="rr-cronograma__texto">
         <p className="dp-rotulo"><Icone nome="calendario" tamanho={14} /> Cronograma</p>
-        <h2 id="rr-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${calculo.faltaHoje} para a meta de hoje`}</h2>
+        <h2 id="rr-cron-titulo">{feita ? 'Meta de hoje feita' : `Faltam ${falta} para a meta de hoje`}</h2>
         <span className="ds-medidor"><span style={{ width: `${progresso}%` }} /></span>
-        <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
+        <p>{Math.min(calculo.feitasHoje, calculo.metaDiaria)} de {calculo.metaDiaria} questões novas do cronograma hoje{revisoes.length > 0 && <> · {feitasRevisao} de {revisoes.length} revisões</>}{adiantando > 0 ? <>, e <b>+{adiantando} adiantadas</b></> : null}.</p>
         <p>
           {fraseAdiantado(calculo) && <><b>{fraseAdiantado(calculo)}</b> </>}
-          {feita ? <>Pronto por hoje. Se quiser, <b>puxe as questões do próximo dia</b>: o que fizer conta para ele, e o resto continua lá. Revisões e flashcards são extras.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
+          {feita ? <>Pronto por hoje. Se quiser, <b>puxe as questões do próximo dia</b>: o que fizer conta para ele, e o resto continua lá. Você também pode refazer outros erros ou estudar flashcards.</> : <>Continue de onde parou: as próximas questões já estão separadas.</>}
           {amanha && <> {chaveCivil(amanha.data) === somarDias(hojeBR(), 1) ? 'Amanhã' : `Na ${quandoAmanha}`}: {amanha.total === 0 && amanha.adiantado > 0 ? <b>livre, você já adiantou</b> : <><b>{nomesAmanha || 'mini-simulado'}</b>, {amanha.total} questões{amanha.adiantado > 0 ? ` (eram ${amanha.total + amanha.adiantado})` : ''}{amanha.mini ? ' e o mini-simulado' : ''}</>}.</>}
         </p>
       </div>
       <div className="rr-cronograma__acoes">
         <a className="dp-botao dp-botao--principal dp-botao--grande" href={href(proximo ? `/cronograma?puxar=${chaveCivil(proximo.data)}` : feita ? '/cronograma?adiantar=1' : '/cronograma')}>{puxar ? `${puxar.rotulo} · ${puxar.detalhe}` : feita ? 'Adiantar o próximo dia' : 'Continuar o cronograma'}</a>
         {feita && <a className="dp-botao" href={href('/cronograma')}>Voltar ao cronograma</a>}
-        {feita && <a className="dp-botao" href={href('/revisao')}>Revisões (opcional)</a>}
       </div>
     </section>
   )

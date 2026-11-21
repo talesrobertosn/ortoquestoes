@@ -310,7 +310,7 @@ export function App() {
   const crachaNestaVisita = useRef<string | null>(null)
   if (sessao && contasDisponiveis && proximoPasso(sessao.user.user_metadata) !== null) crachaNestaVisita.current = sessao.user.id
   const comCracha = !!sessao && crachaNestaVisita.current === sessao.user.id
-    && !['sessao', 'questao', 'admin', 'conta', 'entrar', 'termos', 'condicoes-assinatura', 'assinatura', 'simulado-nacional', 'emails'].includes(primeiroFundo ?? '')
+    && !['sessao', 'resumo', 'questao', 'admin', 'conta', 'entrar', 'termos', 'condicoes-assinatura', 'assinatura', 'simulado-nacional', 'emails'].includes(primeiroFundo ?? '')
     // Na página inicial, o crachá fica no nível do progresso (Inicio.tsx), para o cenário abrir a página.
     && (primeiroFundo ?? '') !== ''
 
@@ -340,7 +340,7 @@ export function App() {
       {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
       {/* Na página inicial, o convite do Instagram fecha a galeria (ConviteInstagram em inicio/jornada). */}
-      {!['sessao', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
+      {!['sessao', 'resumo', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
       <HospedeConfirmacao />

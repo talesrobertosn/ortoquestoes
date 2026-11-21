@@ -332,6 +332,9 @@ export function Revisao() {
     () => (indice ? focoPorQuestao(indice) : new Map()),
     [indice],
   );
+  const errosFrequentes = vencidas.filter((id) => registros[id].c === false && (focos.get(id)?.nivel ?? 0) >= 3
+    && inicioDia(registros[id].q) < hoje)
+    .sort((a, b) => (focos.get(b)?.nivel ?? 0) - (focos.get(a)?.nivel ?? 0) || registros[a].q - registros[b].q);
   const recomendados = useMemo(
     () =>
       indice
@@ -709,6 +712,9 @@ export function Revisao() {
             página.
           </p>
           <div className="rvp-filtros__campos">
+            {errosFrequentes.length > 0 && <button type="button" className="rvp-secundario" onClick={() => verSessao(errosFrequentes.slice(0, 10), "Erros que mais caem")}>
+              Erros que mais caem · {n(Math.min(10, errosFrequentes.length))}
+            </button>}
             <label>
               Prova
               <select

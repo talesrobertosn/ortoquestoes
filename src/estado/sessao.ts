@@ -20,6 +20,7 @@ export interface ResumoHistorico {
   concluidaEm: number
   total: number
   respondidas: number
+  contabilizadas?: number
   acertos: number
   segundos: number
   descricao: string
@@ -40,6 +41,7 @@ export interface OpcoesSessao {
   origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar' | 'erros' | 'revisao'
   /** Dia do cronograma de TEOT/TARO desta sessão (ver EstadoSessao.diaPlano). */
   diaPlano?: string
+  cronograma?: EstadoSessao['cronograma']
   revisao?: EstadoSessao['revisao']
 }
 
@@ -64,6 +66,7 @@ export function novaSessao(
     ...(opcoes.origem ? { origem: opcoes.origem } : {}),
     ...(opcoes.revisao ? { revisao: opcoes.revisao } : {}),
     ...(opcoes.diaPlano ? { diaPlano: opcoes.diaPlano } : {}),
+    ...(opcoes.cronograma ? { cronograma: opcoes.cronograma } : {}),
   }
 }
 
@@ -244,7 +247,9 @@ export function reconciliarSessao(sessao: EstadoSessao | null, respondidas: Reco
     const r = respondidas[id]
     if (!r || typeof r !== 'object') continue
     const tentativas = r.historico?.length ? r.historico : [{ em: r.q, correta: r.c, confianca: r.confianca ?? 'seguro' }]
-    const ultima = [...tentativas].reverse().find((t) => t.em >= sessao.criadaEm) ?? (soNovas ? tentativas[tentativas.length - 1] : undefined)
+    const mao = sessao.cronograma?.modalidade.startsWith('mao-') ?? sessao.filtros?.areas?.includes('mao')
+    const novaNoPlano = soNovas && !mao && !sessao.cronograma?.revisoes?.[id]
+    const ultima = [...tentativas].reverse().find((t) => t.em >= sessao.criadaEm) ?? (novaNoPlano ? tentativas[tentativas.length - 1] : undefined)
     if (!ultima) continue
     respostas ??= { ...sessao.respostas }
     respostas[id] = {
@@ -298,7 +303,7 @@ export function descreverFiltros(filtros: Filtros): string {
   const anos = filtros?.anos ?? []
   const assuntos = temas.length + subtemas.length
   partes.push(assuntos === 0 ? 'Todos os assuntos' : `${assuntos} assunto(s)`)
-  if (areas.length !== 1 || areas[0] !== 'base') partes.push(areas.map((a) => ROTULO_AREA[a]).join(' + '))
+  if (areas.length > 0 && (areas.length !== 1 || areas[0] !== 'base')) partes.push(areas.map((a) => ROTULO_AREA[a]).join(' + '))
   if (provas.length) partes.push(provas.join(', '))
   if (filtros?.soSimulados) partes.push('OrtoQuestões Simulados')
   if (anos.length) partes.push(anos.join(', '))
@@ -317,6 +322,7 @@ function registrarHistorico(sessao: EstadoSessao) {
     concluidaEm: sessao.concluidaEm ?? Date.now(),
     total: sessao.ids.length,
     respondidas: respostas.length,
+    contabilizadas: respostas.filter((r) => r.correta === true || r.correta === false).length,
     acertos: respostas.filter((r) => r.correta === true).length,
     segundos: respostas.reduce((soma, r) => soma + r.segundos, 0),
     descricao: sessao.nacional

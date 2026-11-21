@@ -2,6 +2,7 @@
 export interface RegistroQuestao {
   c: boolean | null
   q: number
+  primeiraEm?: number
   tentativas?: number
   acertos?: number
   erros?: number
@@ -34,13 +35,17 @@ export function revisarHoje(registro?: Partial<RegistroQuestao>, agora = Date.no
   const proxima = registro.proximaRevisao === undefined && registro.q !== undefined ? registro.q + 3 * 86400000 : registro.proximaRevisao
   return registro.c === false || (proxima != null && proxima <= agora)
 }
+export const LIMITE_HISTORICO_QUESTAO = 8
+
 export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: boolean | null, agora = Date.now(), confianca: 'seguro' | 'duvida' | 'chute' = 'seguro', marcada?: string): RegistroQuestao {
   const sequencia = correta === true ? (anterior?.sequencia ?? (anterior?.c === true ? 1 : 0)) + 1 : 0
   const intervalos = INTERVALOS[confianca]
   // Registros antigos não guardavam a primeira letra; com uma tentativa só, a última é a primeira.
   const primeira = anterior ? (anterior.p ?? ((anterior.tentativas ?? 1) === 1 ? anterior.m : undefined)) : marcada
+  const primeiraEm = anterior?.primeiraEm ?? (anterior ? (anterior.tentativas ?? 1) <= (anterior.historico?.length || 1) ? anterior.historico?.[0]?.em ?? anterior.q : undefined : agora)
   return {
     c: correta, q: agora,
+    ...(primeiraEm !== undefined ? { primeiraEm } : {}),
     tentativas: (anterior?.tentativas ?? (anterior ? 1 : 0)) + 1,
     acertos: (anterior?.acertos ?? (anterior?.c === true ? 1 : 0)) + Number(correta === true),
     erros: (anterior?.erros ?? (anterior?.c === false ? 1 : 0)) + Number(correta === false),
@@ -48,7 +53,7 @@ export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: 
     confianca,
     ...(marcada ? { m: marcada } : {}),
     ...(primeira ? { p: primeira } : {}),
-    historico: [...(anterior?.historico ?? []), { em: agora, correta, confianca }].slice(-8),
+    historico: [...(anterior?.historico ?? []), { em: agora, correta, confianca }].slice(-LIMITE_HISTORICO_QUESTAO),
     proximaRevisao: correta === null || sequencia > intervalos.length ? null : correta === false ? agora : agora + intervalos[sequencia - 1] * 86400000,
   }
 }

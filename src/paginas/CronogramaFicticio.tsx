@@ -14,13 +14,13 @@ import '../estilos/paginas/CronogramaFicticio.css'
 export type MotivoConvite = 'comecar' | 'puxar' | 'adiantar' | 'outro'
 
 /** A faixa do topo: sempre à vista, sem botão de fechar. */
-export function FaixaFicticio({ nome }: { nome: string }) {
+export function FaixaFicticio({ nome, prova, dataIlustrativa }: { nome: string; prova: string; dataIlustrativa: boolean }) {
   return (
     <aside className="cf-faixa" aria-label="Cenário fictício">
       <span className="cf-selo"><Icone nome="olho" tamanho={14} /> Cenário fictício</span>
       <p className="cf-faixa__texto">
         <strong>{nome ? `${nome}, assim` : 'Assim'} seria o seu cronograma se você assinasse.</strong>
-        <span> A data é a do TEOT; o progresso e as questões feitas são de exemplo. Explore à vontade: nada aqui mexe nas suas respostas.</span>
+        <span> {dataIlustrativa ? `Exemplo para ${prova}. A data é ilustrativa. ` : 'Exemplo para o TEOT. '}O progresso e as respostas são de exemplo.</span>
       </p>
       <a className="botao botao--ouro cf-faixa__botao" href={href('/assinatura')}>Quero o meu cronograma <Icone nome="direita" tamanho={16} /></a>
     </aside>
