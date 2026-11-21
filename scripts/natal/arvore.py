@@ -346,10 +346,11 @@ def presentes(c: Camada, e: Camada) -> list:
 
 
 def sombra_no_chao(c: Camada) -> None:
-    for x in range(CX - 34, CX + 35):
-        u = (x - CX) / 34
-        a = 0.5 * (1 - u * u)
-        c.p(x, YB + 1, "#05080a", a); c.p(x, YB + 2, "#05080a", a * 0.45)
+    """A sombra de contato no chão: mais escura colada no balde e nos presentes, abrindo e clareando para os lados."""
+    for x in range(CX - 36, CX + 37):
+        u = (x - CX) / 36
+        a = 0.62 * (1 - u * u) ** 0.8
+        c.p(x, YB + 1, "#05080a", a); c.p(x, YB + 2, "#05080a", a * 0.5); c.p(x, YB + 3, "#05080a", a * 0.22)
 
 
 # ───────────────────────────────────────────── montagem

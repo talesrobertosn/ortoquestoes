@@ -28,7 +28,9 @@
   [data-natal="sim"] .jn-trilha__meta { grid-column: 4; grid-row: 1; }
 }
 .natal-arvore { position: relative; align-self: stretch; width: 146px; pointer-events: none; }
-.natal-arvore__img { position: absolute; left: 0; bottom: calc(-2.2rem - 6px); width: 146px; height: 196px;
+/* O chão da pintura (6 px acima do pé da imagem) assenta na borda da barra de atalhos, afundando 4 px nela:
+   1.2rem do respiro de baixo da trilha + 24 px do vão até a barra + 4 + 6. */
+.natal-arvore__img { position: absolute; left: 0; bottom: calc(-1.2rem - 34px); width: 146px; height: 196px;
   background: url('/pixel/natal/arvore.png') no-repeat 0 0 / 146px 196px; image-rendering: pixelated; }
 .natal-arvore__luz { position: absolute; z-index: -1; left: -80px; top: -80px; width: 306px; height: 300px;
   background: url('/pixel/natal/arvore-luz.png') no-repeat 0 0 / 306px 300px; mix-blend-mode: screen; animation: natal-respirar 5s ease-in-out infinite; }
@@ -37,20 +39,21 @@
 .natal-arvore__estrela { position: absolute; left: 51px; top: -7px; width: 44px; height: 44px;
   background: url('/pixel/natal/arvore-estrela.png') no-repeat 0 0 / 44px 44px; mix-blend-mode: screen; animation: natal-respirar 2.4s ease-in-out infinite; }
 @media (max-width: 60rem) {
-  /* No celular a trilha empilha: a árvore fica no canto de cima à direita, menor, e o texto do número quebra antes. */
-  [data-natal="sim"] .jn-trilha__numero { padding-right: 84px; }
-  .natal-arvore { position: absolute; top: -1.6rem; right: 0.4rem; width: 73px; height: 98px; align-self: auto; }
-  .natal-arvore__img { bottom: auto; top: 0; transform: scale(0.5); transform-origin: 0 0; }
+  /* No celular a árvore também fica plantada na barra de atalhos, no canto direito, subindo pela linha da meta do dia
+     (que abre espaço à direita para ela). O vão até a barra é de 18 px; o chão da pintura afunda 4 px na borda. */
+  [data-natal="sim"] .jn-trilha__meta { grid-template-columns: minmax(0, 1fr); padding-right: 66px; }
+  .natal-arvore { position: absolute; top: auto; bottom: -26px; right: 0.3rem; width: 66px; height: 88px; align-self: auto; }
+  .natal-arvore__img { bottom: auto; top: 0; transform: scale(0.45); transform-origin: 0 0; }
 }
 
 /* ── A guirlanda pendurada no canto de cima à esquerda da barra de atalhos, por cima da caixa ── */
 [data-natal="sim"] .jn-atalhos { position: relative; z-index: 3; }
-.natal-guirlanda { position: absolute; z-index: 5; top: -46px; left: -53px; width: 106px; height: 126px; pointer-events: none;
-  background: url('/pixel/natal/guirlanda.png') no-repeat 0 0 / 106px 126px; image-rendering: pixelated; }
-.natal-guirlanda__luz { position: absolute; z-index: -1; left: -48px; top: -48px; width: 202px; height: 222px;
-  background: url('/pixel/natal/guirlanda-luz.png') no-repeat 0 0 / 202px 222px; mix-blend-mode: screen; animation: natal-respirar 3.6s ease-in-out infinite; }
+.natal-guirlanda { position: absolute; z-index: 5; top: -70px; left: -80px; width: 159px; height: 189px; pointer-events: none;
+  background: url('/pixel/natal/guirlanda.png') no-repeat 0 0 / 159px 189px; image-rendering: pixelated; }
+.natal-guirlanda__luz { position: absolute; z-index: -1; left: -72px; top: -72px; width: 303px; height: 333px;
+  background: url('/pixel/natal/guirlanda-luz.png') no-repeat 0 0 / 303px 333px; mix-blend-mode: screen; animation: natal-respirar 3.6s ease-in-out infinite; }
 @media (max-width: 60rem) {
-  .natal-guirlanda { top: -30px; left: -18px; transform: scale(0.6); transform-origin: 0 0; }
+  .natal-guirlanda { top: -42px; left: -30px; transform: scale(0.42); transform-origin: 0 0; }
 }
 
 /* ── Embaixo: o boneco de neve com a caneca e a lanterna, junto da turma do cartão do Instagram (o monte de neve passa da borda) ── */
