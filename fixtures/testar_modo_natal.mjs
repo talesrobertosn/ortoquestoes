@@ -10,6 +10,10 @@ try{
  const file=join(dir,'natal.mjs')
  await build({entryPoints:['src/natal/modoNatal.ts'],outfile:file,bundle:true,platform:'node',format:'esm',logLevel:'error'})
  const {MODO_NATAL,noPeriodoDoNatal,modoNatalAtivo}=await import(pathToFileURL(file))
+ // Fora do ar para todos (Tales, 21/11/2026): sem prévia, nada liga, nem dentro da data.
+ assert.equal(MODO_NATAL.noAr,false)
+ assert.equal(modoNatalAtivo(new Date('2026-12-25T12:00:00-03:00')),false,'fora do ar sem confirmação')
+ MODO_NATAL.noAr=true
  for(const [data,sim] of [['2026-11-20T23:59:00-03:00',false],['2026-11-21T00:00:00-03:00',true],['2026-12-25T12:00:00-03:00',true],['2027-01-06T23:59:00-03:00',true],['2027-01-07T00:00:00-03:00',false],['2027-07-01T12:00:00-03:00',false]]){
   assert.equal(noPeriodoDoNatal(new Date(data)),sim,data)
   assert.equal(modoNatalAtivo(new Date(data)),sim,`sem prévia: ${data}`)

@@ -11,6 +11,11 @@
 export const MODO_NATAL = {
   /** A chave geral. Com false, nada de Natal aparece, nem dentro do período. */
   ligado: true,
+  /**
+   * No ar para todos? (Tales, 21/11/2026: os enfeites saíram do site; voltam só com a confirmação dele.) Com false, o
+   * modo Natal só aparece em quem testa com `?natal=1`; os cenários de Natal do topo seguem a época deles, como antes.
+   */
+  noAr: false,
   /** [mês, dia] de começo e de fim (inclusive); vira o ano. */
   de: [11, 21] as const,
   ate: [1, 6] as const,
@@ -53,7 +58,7 @@ export function modoNatalAtivo(agora = new Date()): boolean {
   if (!MODO_NATAL.ligado) return false
   const f = forcado()
   if (f) return f === 'sim'
-  return noPeriodoDoNatal(agora)
+  return MODO_NATAL.noAr && noPeriodoDoNatal(agora)
 }
 
 /** Marca o `<html>` com `data-natal="sim"` quando o modo está ativo (chamado uma vez, ao abrir o site). */
