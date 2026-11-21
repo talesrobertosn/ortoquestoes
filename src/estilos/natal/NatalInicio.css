@@ -47,7 +47,8 @@
 }
 
 /* ── A guirlanda pendurada no canto de cima à esquerda da barra de atalhos, por cima da caixa ── */
-[data-natal="sim"] .jn-atalhos { position: relative; z-index: 3; }
+/* Sem z-index aqui: a barra não vira um contexto de camadas, e a guirlanda (z 5) passa por cima da trilha (z 4). */
+[data-natal="sim"] .jn-atalhos { position: relative; }
 .natal-guirlanda { position: absolute; z-index: 5; top: -70px; left: -80px; width: 159px; height: 189px; pointer-events: none;
   background: url('/pixel/natal/guirlanda.png') no-repeat 0 0 / 159px 189px; image-rendering: pixelated; }
 .natal-guirlanda__luz { position: absolute; z-index: -1; left: -72px; top: -72px; width: 303px; height: 333px;
