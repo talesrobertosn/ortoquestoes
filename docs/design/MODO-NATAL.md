@@ -131,6 +131,11 @@ número ou botão e sem criar rolagem lateral:
       coruja tingido de cachecol vermelho sem mudar o traço (`scripts/natal/coruja_cachecol.py`) e cachecol de tricô
       verde-azulado no esqueleto (`scripts/gerar_mascote.py --natal`); folhas em `*-natal.png`, com mapas de luz
       (`scripts/sprites/luz_bichos.py`), trocadas em `sprites.ts` e `CorujaPixel.tsx` quando o modo está no ar.
-- [ ] Etapa 3: versão de Natal de cada cenário do topo.
+- [x] Etapa 3, primeiro cenário (aprovado em 21/11/2026): o Acampamento com o Natal pintado dentro da cena
+      (`scripts/natal/cenario_acampamento.py` → `cena-natal-*.webp`: fio de luzes da barraca ao lampião, guirlanda na
+      barraca, laço no lampião, presentes nos caixotes, pinheirinho na grama). Cada cenário ganha `pinturaNatal` em
+      `cenarios.ts` e o `CenaDiorama.tsx` troca a pintura com o modo no ar.
+- [ ] Etapa 3, os outros cenários (Forja, Cais, Observatório, Neve, Abrigo, Praça): continua no Codex, pelo pedido em
+      `docs/prompts/codex-natal.md`.
 - [ ] Etapa 4: as conversas entre as partes (a meta do dia acende o fio, a coruja visita a guirlanda, o trenó).
 - [ ] Demais páginas.
