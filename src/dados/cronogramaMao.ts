@@ -40,6 +40,8 @@ export interface ConfigMao {
   /** Segundas-feiras ("AAAA-MM-DD") das semanas difíceis: só o dia mínimo, como no cronograma de ortopedia. */
   semanasDificeis?: string[]
   diasLevesAvulsos?: string[]
+  diasExtras?: string[]
+  metaPreservada?: { em: string; n: number }
   /** Questões feitas além da meta em cada dia ("AAAA-MM-DD"): saem do próximo dia de estudo. */
   adiantados?: Record<string, number>
   criadoEm: string
@@ -169,6 +171,8 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   const hoje = hojeBR(agora)
   const { ranking, temas: doPlano } = rankingDoPlano(indice, config.prova, config.cobertura)
   const dias = config.dias.length ? config.dias : [1, 2, 3, 4, 5]
+  const extras = new Set(config.diasExtras ?? [])
+  const estudaEm = (dia: string) => dias.includes(diaDaSemana(dia)) || extras.has(dia)
   const diasRestantes = Math.max(0, diasEntre(hoje, config.dataProva))
   const encerrado = diasRestantes <= 0
   const capacidadeDia = Math.max(5, Math.min(120, Math.round(config.minutosDia / MINUTOS_POR_QUESTAO_MAO)))
@@ -188,7 +192,7 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   const feitasHoje = temas.reduce((s, t) => s + t.ids.filter(feitoHoje).length, 0)
   // o que foi adiantado no último dia de estudo sai do próximo (e volta à conta da meta, para não descontar duas vezes)
   let anterior = somarDias(hoje, -1)
-  for (let i = 0; i < 14 && anterior >= config.criadoEm && !(config.dias.length ? config.dias : [1, 2, 3, 4, 5]).includes(diaDaSemana(anterior)); i++) anterior = somarDias(anterior, -1)
+  for (let i = 0; i < 14 && anterior >= config.criadoEm && !estudaEm(anterior); i++) anterior = somarDias(anterior, -1)
   const creditoAnterior = anterior >= config.criadoEm ? Math.max(0, Math.round(config.adiantados?.[anterior] ?? 0)) : 0
   const pendentes = total - feitas + feitasHoje + creditoAnterior
 
@@ -199,7 +203,7 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   const calendario: Array<{ data: string; estudo: boolean; reta: boolean; dificil: boolean }> = []
   for (let i = 0; i < Math.min(diasRestantes, 730); i++) {
     const data = somarDias(hoje, i)
-    calendario.push({ data, estudo: dias.includes(diaDaSemana(data)), reta: diasRestantes - i <= diasRetaFinal, dificil: dificeis.has(segundaDaChave(data)) || leves.has(data) })
+    calendario.push({ data, estudo: estudaEm(data), reta: diasRestantes - i <= diasRetaFinal, dificil: dificeis.has(segundaDaChave(data)) || leves.has(data) })
   }
   const faltam = diasRestantes
   const fase: FaseMao = encerrado ? 'passou' : faltam <= 1 ? 'vespera' : faltam <= DIAS_MODO_PROVA ? 'prova' : faltam <= diasRetaFinal ? 'revisao' : 'conteudo'
@@ -254,7 +258,7 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
     }
     else if (ehSimulado(c.data, c.estudo)) dia = { data: c.data, tipo: 'simulado', n: TAMANHO_SIMULADO, temas: [`Mini-simulado de ${TAMANHO_SIMULADO} questões`], partes: [] }
     else {
-      const metaCheia = c.dificil ? Math.min(DIA_MINIMO, metaNormal) : metaNormal
+      const metaCheia = c.data === config.metaPreservada?.em ? config.metaPreservada.n : c.dificil ? Math.min(DIA_MINIMO, metaNormal) : metaNormal
       const adiantado = Math.min(credito, metaCheia)
       credito -= adiantado
       const metaDia = metaCheia - adiantado
@@ -290,7 +294,7 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   // o que o plano previa até ontem (dias de estudo desde a criação, fora a reta final) e o que foi feito desde então
   const inicioPlano = inicioDaChave(config.criadoEm)
   let diasPassados = 0
-  for (let d = config.criadoEm; d < hoje; d = somarDias(d, 1)) if (dias.includes(diaDaSemana(d))) diasPassados++
+  for (let d = config.criadoEm; d < hoje; d = somarDias(d, 1)) if (estudaEm(d)) diasPassados++
   const noPlano = [...prioridadeDe.keys()]
   const feitasDesdeInicio = noPlano.filter((id) => (respondidas[id]?.q ?? 0) >= inicioPlano && (respondidas[id]?.q ?? 0) < inicioHoje).length
 
@@ -369,6 +373,9 @@ export function lerConfig(v: unknown): ConfigMao | null {
     ...(Array.isArray(c.semanasDificeis) ? { semanasDificeis: c.semanasDificeis.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)).slice(-20) } : {}),
     ...(Number(c.zeradoEm) > 0 ? { zeradoEm: Number(c.zeradoEm) } : {}),
     criadoEm: /^\d{4}-\d{2}-\d{2}$/.test(c.criadoEm ?? '') ? c.criadoEm! : c.dataProva!, em: Number(c.em) || 0,
+    ...(Array.isArray(c.diasExtras) ? { diasExtras: c.diasExtras.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)) } : {}),
+    ...(c.metaPreservada && /^\d{4}-\d{2}-\d{2}$/.test(c.metaPreservada.em) && Number.isFinite(c.metaPreservada.n)
+      ? { metaPreservada: { em: c.metaPreservada.em, n: Math.max(0, Math.round(c.metaPreservada.n)) } } : {}),
     ...(Array.isArray(c.diasLevesAvulsos) ? { diasLevesAvulsos: c.diasLevesAvulsos.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)) } : {}),
   }
 }

@@ -48,7 +48,7 @@ export function painelMao(p: PlanoMao, agora = Date.now()): { plano: PlanoSalvo;
   const prova = diaCivil(c.dataProva)
   const plano: PlanoSalvo = {
     data_prova: c.dataProva, intensidade: 'firme', folgas: [0, 1, 2, 3, 4, 5, 6].filter((d) => !c.dias.includes(d)),
-    prova: NOME_PROVA_MAO[c.prova], base_respondidas: 0, criado_em: new Date(inicioDaChave(c.criadoEm)).toISOString(), incluir_simulados: true, opcoes: c.semanasDificeis?.length || c.diasLevesAvulsos?.length ? { semanasDificeis: c.semanasDificeis, diasLevesAvulsos: c.diasLevesAvulsos } : null,
+    prova: NOME_PROVA_MAO[c.prova], base_respondidas: 0, criado_em: new Date(inicioDaChave(c.criadoEm)).toISOString(), incluir_simulados: true, opcoes: c.semanasDificeis?.length || c.diasLevesAvulsos?.length || c.diasExtras?.length ? { semanasDificeis: c.semanasDificeis, diasLevesAvulsos: c.diasLevesAvulsos, diasExtras: c.diasExtras } : null,
   }
   // dias de estudo até a reta final (o calendário pinta a reta final pelas datas)
   const dias = p.agenda.filter((d) => d.tipo === 'estudo' || d.tipo === 'simulado').map(diaDoPlano)

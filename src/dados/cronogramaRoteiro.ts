@@ -135,6 +135,8 @@ export function previsaoDeTermino(indiceInteiro: Indice, respondidas: Record<str
   const hoje = diaCivil(agora)
   const fim = inicioDoDia(agora)
   const chaveHoje = chaveCivil(hoje)
+  const diasExtras = new Set(plano.opcoes?.diasExtras ?? [])
+  const folgaEm = (dia: Date) => plano.folgas.includes(dia.getDay()) && !diasExtras.has(chaveCivil(dia))
   const criado = diaCivil(Date.parse(plano.criado_em))
   let diasEstudo = 0
   let inicio = fim
@@ -142,7 +144,7 @@ export function previsaoDeTermino(indiceInteiro: Indice, respondidas: Record<str
     const d = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k)
     if (d < criado) break
     inicio = Math.min(inicio, d.getTime())
-    if (!plano.folgas.includes(d.getDay())) diasEstudo++
+    if (!folgaEm(d)) diasEstudo++
   }
   let feitas = 0
   if (diasEstudo) for (const q of indice.questoes) {
@@ -157,7 +159,7 @@ export function previsaoDeTermino(indiceInteiro: Indice, respondidas: Record<str
   let faltam = Math.ceil(calculo.restante / ritmo)
   let d = hoje
   for (let guarda = 0; faltam > 0 && guarda < 1500; guarda++) {
-    if (!plano.folgas.includes(d.getDay())) faltam--
+    if (!folgaEm(d)) faltam--
     if (faltam > 0) d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)
   }
   const folga = Math.round((calculo.inicioRetaFinal.getTime() - d.getTime()) / 86_400_000) - 1

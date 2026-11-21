@@ -832,7 +832,7 @@ export function Sessao() {
       ) : questaoAtual ? (
         <><AvisoLimite estado={estadoLimite} />
           {sessao.cronograma?.revisoes?.[questaoAtual.id] && <p className="conteudo aviso-outro-aparelho">
-            <strong>Revisão</strong>{atualRespondida && <> · Você errou esta questão em {new Date(sessao.cronograma.revisoes[questaoAtual.id].ultimoErroEm).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', timeZone: 'America/Sao_Paulo' })}. Ela voltou porque {sessao.cronograma.revisoes[questaoAtual.id].assunto} é um assunto frequente.</>}
+            <strong>Revisão</strong>{atualRespondida && <> · Você errou esta questão em {new Date(sessao.cronograma.revisoes[questaoAtual.id].ultimoErroEm).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', timeZone: 'America/Sao_Paulo' })}. Ela voltou porque {sessao.cronograma.revisoes[questaoAtual.id].assunto} é um assunto frequente. {sessao.respostas[questaoAtual.id]?.correta === true ? 'Erro recuperado.' : sessao.respostas[questaoAtual.id]?.correta === false ? 'Ela pode voltar em outro dia.' : null}</>}
           </p>}
           {sessao.respostas[questaoAtual.id]?.outroAparelho && <p className="conteudo aviso-outro-aparelho" role="note">Você já respondeu esta questão em outro aparelho. Siga para a próxima.</p>}<CartaoQuestao
           recuperacaoAtiva={sessao.revisao?.recuperacaoAtiva}

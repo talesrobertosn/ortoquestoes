@@ -39,6 +39,12 @@ export interface PlanoSalvo {
   opcoes?: OpcoesPlano | null
 }
 
+export type AjusteDia = 'leve' | 'extra'
+
+export function alternarData(datas: readonly string[] | undefined, dia: string): string[] {
+  return datas?.includes(dia) ? datas.filter((d) => d !== dia) : [...(datas ?? []), dia]
+}
+
 export type RecorteOficial = 'todas' | 'TEOT' | 'TARO'
 export interface AcervoPlano {
   oficiais: RecorteOficial
@@ -52,6 +58,8 @@ export interface OpcoesPlano {
   /** Dias da semana (0 = domingo) de plantão: dia leve, com poucas questões. */
   diasLeves?: number[]
   diasLevesAvulsos?: string[]
+  diasExtras?: string[]
+  metaPreservada?: { em: string; n: number }
   /** Questões num dia leve. */
   qtdLeve?: number
   /** Segundas-feiras ("AAAA-MM-DD") das semanas difíceis: só o dia mínimo. */
@@ -111,7 +119,7 @@ export const TAMANHO_MINI = 30
 /** Minutos por questão quando ainda não há histórico. */
 export const MINUTOS_POR_QUESTAO = 1.5
 
-export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros' | 'zeradoEm' | 'acervo' | 'revisoesNaMeta' | 'diasLevesAvulsos'>> => ({
+export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros' | 'zeradoEm' | 'acervo' | 'revisoesNaMeta' | 'diasLevesAvulsos' | 'diasExtras' | 'metaPreservada'>> => ({
   diasLeves: plano?.opcoes?.diasLeves ?? [],
   qtdLeve: Math.max(5, Math.min(40, plano?.opcoes?.qtdLeve ?? QTD_LEVE_PADRAO)),
   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],
@@ -165,10 +173,10 @@ const diasEntre = (a: Date, b: Date) => Math.round((meiaNoite(b).getTime() - mei
 export const diasAte = (data: string, agora: Date | number = Date.now()) => diasEntre(diaCivil(agora), dataLocal(data))
 
 /** Dias de estudo em [inicio, fim), sem os dias da semana de folga. */
-export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number {
+export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[], extras: ReadonlySet<string> = new Set()): number {
   let n = 0
   for (let d = meiaNoite(inicio); d < meiaNoite(fim); d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) {
-    if (!folgas.includes(d.getDay())) n++
+    if (!folgas.includes(d.getDay()) || extras.has(chaveData(d))) n++
   }
   return n
 }
@@ -336,7 +344,7 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
       const ids = unicos(lista.filter((id) => typeof id === 'string' && doPlano.has(id) && !puxadoDe.has(id)))
       if (!ids.length) continue
       for (const id of ids) puxadoDe.set(id, data.getTime())
-      if (data >= hoje && data < inicioRetaFinal && !plano.folgas.includes(data.getDay())) puxados.set(data.getTime(), { chave: k, ids })
+      if (data >= hoje && data < inicioRetaFinal && (!plano.folgas.includes(data.getDay()) || plano.opcoes?.diasExtras?.includes(k))) puxados.set(data.getTime(), { chave: k, ids })
     }
   }
 
@@ -394,10 +402,12 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   }
   const feitasHoje = primeirasPorDia.get(hoje.getTime()) ?? 0
 
-  const diasEstudoRestantes = diasDeEstudo(hoje, fimEstudo, plano.folgas)
+  const diasExtras = new Set(plano.opcoes?.diasExtras ?? [])
+  const folgaEm = (dia: Date) => plano.folgas.includes(dia.getDay()) && !diasExtras.has(chaveData(dia))
+  const diasEstudoRestantes = diasDeEstudo(hoje, fimEstudo, plano.folgas, diasExtras)
 
-  const totalDiasPlano = Math.max(1, diasDeEstudo(criado, inicioRetaFinal > criado ? inicioRetaFinal : prova, plano.folgas))
-  const decorridos = Math.min(totalDiasPlano, diasDeEstudo(criado, hoje, plano.folgas))
+  const totalDiasPlano = Math.max(1, diasDeEstudo(criado, inicioRetaFinal > criado ? inicioRetaFinal : prova, plano.folgas, diasExtras))
+  const decorridos = Math.min(totalDiasPlano, diasDeEstudo(criado, hoje, plano.folgas, diasExtras))
   const esperadoAteHoje = Math.round((alvo * decorridos) / totalDiasPlano)
   const feitasAntesDeHoje = feitas - feitasHoje
   const ritmo = esperadoAteHoje > 0 ? Math.round(((feitasAntesDeHoje - esperadoAteHoje) / esperadoAteHoje) * 100) : 0
@@ -407,9 +417,9 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   const semanasDificeis = new Set(opcoes.semanasDificeis)
   const chaveSegunda = (d: Date) => { const s2 = new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7)); return `${s2.getFullYear()}-${String(s2.getMonth() + 1).padStart(2, '0')}-${String(s2.getDate()).padStart(2, '0')}` }
   const avulsos = new Set(plano.opcoes?.diasLevesAvulsos ?? [])
-  const tipoDe = (d: Date): TipoDia => plano.folgas.includes(d.getDay()) ? 'folga' : semanasDificeis.has(chaveSegunda(d)) ? 'dificil' : (avulsos.has(chaveData(d)) || opcoes.diasLeves.includes(d.getDay())) ? 'leve' : 'estudo'
+  const tipoDe = (d: Date): TipoDia => folgaEm(d) ? 'folga' : semanasDificeis.has(chaveSegunda(d)) ? 'dificil' : (avulsos.has(chaveData(d)) || opcoes.diasLeves.includes(d.getDay())) ? 'leve' : 'estudo'
   const diasDeEstudoCriacao: Date[] = []
-  for (let d = criado; d < fimEstudo && diasDeEstudoCriacao.length < 800; d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) if (!plano.folgas.includes(d.getDay())) diasDeEstudoCriacao.push(d)
+  for (let d = criado; d < fimEstudo && diasDeEstudoCriacao.length < 800; d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)) if (!folgaEm(d)) diasDeEstudoCriacao.push(d)
   // Mini-simulado: a cada INTERVALO_MINI dias corridos desde a criação, num dia de estudo normal.
   const ehMini = (d: Date) => {
     const desde = diasEntre(criado, d)
@@ -503,7 +513,9 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   // Hoje puxado num dia anterior: a meta é o dia guardado; o que já foi feito dele vale como adiantado.
   const puxadoHoje = contaPuxado.get(hoje.getTime())
   const creditoHoje = anteriores.get(hoje.getTime()) ?? 0
-  const metaHojeSemAdiantar = hoje >= inicioRetaFinal ? 0 : puxadoHoje ? puxadoHoje.total + creditoHoje : Math.min(restante + feitasHoje, metaDoTipo(tipoHoje, miniHoje))
+  const metaDeHoje = plano.opcoes?.metaPreservada
+  const metaNormalHoje = metaDeHoje?.em === chaveHoje ? metaDeHoje.n : metaDoTipo(tipoHoje, miniHoje)
+  const metaHojeSemAdiantar = hoje >= inicioRetaFinal ? 0 : puxadoHoje ? puxadoHoje.total + creditoHoje : Math.min(restante + feitasHoje, metaNormalHoje)
   const adiantadoHoje = puxadoHoje ? creditoHoje + puxadoHoje.antes : Math.min(metaHojeSemAdiantar, creditoHoje)
   const cargaHoje = metaHojeSemAdiantar - adiantadoHoje
   const candidatos = revisoesNaMetaAtivas(plano, chaveHoje) && hoje < inicioRetaFinal
@@ -827,7 +839,7 @@ export function balancoDiaAnterior(indiceInteiro: Indice, respondidas: Record<st
   for (let k = 1; k <= 7; k++) {
     const dia = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k)
     if (dia < criado) return null
-    if (plano.folgas.includes(dia.getDay())) continue
+    if (plano.folgas.includes(dia.getDay()) && !plano.opcoes?.diasExtras?.includes(chaveData(dia))) continue
     const chave = chaveData(dia)
     const ini = inicioDaChave(chave), fim = inicioDaChave(somarDias(chave, 1))
     const simulados = incluiSimulados(plano, agora)
@@ -896,7 +908,7 @@ function inferirAdiantados(indice: Indice, respondidas: Record<string, RegistroM
     if (reais.some((r) => r.em === em)) continue
     const feitas = primeirasPorDia.get(dia.getTime()) ?? 0
     if (!feitas) continue
-    const meta = plano.folgas.includes(dia.getDay()) ? 0 : metaDoDiaPassado(indice, respondidas, { ...plano, opcoes: { ...(plano.opcoes ?? {}), adiantados: conhecidos.filter((r) => r.em < em) } }, dia)
+    const meta = plano.folgas.includes(dia.getDay()) && !plano.opcoes?.diasExtras?.includes(em) ? 0 : metaDoDiaPassado(indice, respondidas, { ...plano, opcoes: { ...(plano.opcoes ?? {}), adiantados: conhecidos.filter((r) => r.em < em) } }, dia)
     if (feitas <= meta) continue
     const registro = { em, meta }
     novos.push(registro); conhecidos.push(registro)

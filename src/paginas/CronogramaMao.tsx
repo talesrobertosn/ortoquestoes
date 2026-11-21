@@ -1,3 +1,4 @@
+import { alternarData, type AjusteDia } from '../dados/planoEstudo'
 import { useEffect, useMemo, useState } from 'react'
 import { vistaDoCronograma } from '../dados/vistaCronograma'
 import { ConviteFicticio, type MotivoConvite } from './CronogramaFicticio'
@@ -242,6 +243,15 @@ function Painel({ prova, config, premium, ficticio, sessao, indice, respondidas,
   const prioridades = mao.temas.slice(0, 8)
   const ranking = href(`/temas-que-mais-caem?prova=${prova === 'titulo' ? 'mao-titulo' : 'mao-ingresso'}`)
 
+  function comDiaAvulso(dia: string, tipo: AjusteDia): ConfigMao {
+    const chave = tipo === 'leve' ? 'diasLevesAvulsos' : 'diasExtras'
+    const hoje = hojeBR()
+    const metaPreservada = config.metaPreservada?.em === hoje
+      ? config.metaPreservada
+      : { em: hoje, n: mao.metaHoje + (mao.hoje.adiantado ?? 0) }
+    return { ...config, [chave]: alternarData(config[chave], dia), metaPreservada }
+  }
+
   return <>
     {!ficticio && novasNoAcervo > 0 && <p className="cm-novas" role="status"><Icone nome="estrela" tamanho={18} /><span><strong>Entraram {num(novasNoAcervo)} {novasNoAcervo === 1 ? 'questão nova' : 'questões novas'} de cirurgia da mão no seu plano.</strong> Elas já estão no calendário. A meta normal agora é de {num(mao.metaNormal)} por dia{mediaAntes < mao.metaNormal ? ` (uma estimativa de +${num(mao.metaNormal - mediaAntes)} por dia)` : ''}.</span><button type="button" className="botao" onClick={() => definirAcervoVisto(mao.total)}>Entendi</button></p>}
     <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} hub={hub} aoAjustar={aoEditar} ficticio={ficticio ? { nome: '', aoConvidar: ficticio } : null}
@@ -250,9 +260,13 @@ function Painel({ prova, config, premium, ficticio, sessao, indice, respondidas,
         const simulado = mao.agenda.find((d) => d.data === dia)?.tipo === 'simulado'
         aoEstudar(idsDoDiaMao(mao, dia), simulado ? { dia, simulado: true } : undefined)
       }} aoAdiantar={(n) => ficticio ? ficticio('adiantar') : aoEstudar([...mao.idsHoje, ...idsParaAdiantar(mao, n)])}
-      acoes={{ aoRevanche: aoEstudar, aoDiaLeve: (dia) => {
-        const anteriores = config.diasLevesAvulsos ?? []
-        aoConfig({ ...config, diasLevesAvulsos: anteriores.includes(dia) ? anteriores.filter((d) => d !== dia) : [...anteriores, dia] })
+      acoes={{ aoRevanche: aoEstudar, ajusteDia: {
+        previa: (dia, tipo) => {
+          if (dia <= hojeBR()) return null
+          const previsto = calcularPlanoMao(indice, respondidas, comDiaAvulso(dia, tipo))
+          return { carga: previsto.agenda.find((d) => d.data === dia)?.n ?? 0, metaNormal: previsto.metaNormal, cobertura: previsto.projecaoMaisCai }
+        },
+        aplicar: (dia, tipo) => { if (dia > hojeBR()) aoConfig(comDiaAvulso(dia, tipo)) },
       }, aoDiaErros: () => undefined, aoComecarCurto: (n) => tarefaHoje.simulado ? comecar() : aoEstudar(mao.idsHoje.slice(0, n), tarefaHoje) }}
       mao={{
         cena: <CenaOficina />, indice: indiceMao, revisoesHoje: mao.revisaoHoje, novasHoje: mao.idsHoje.length - mao.revisaoHoje,

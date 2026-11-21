@@ -4,7 +4,7 @@ import { avisoVistoNaConta, marcarAvisoNaConta } from '../conta/avisosVistos'
 import type { Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
-import { balancoDiaAnterior, incluiSimulados, indiceDoPlano, proximoDiaParaPuxar, acervoDoPlano, type AcervoPlano, DIA_MINIMO, MINUTOS_POR_QUESTAO, ROTULO_INTENSIDADE, ROTULO_PASSADA, TAMANHO_MINI, TETO_ATRASO, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
+import { balancoDiaAnterior, incluiSimulados, indiceDoPlano, proximoDiaParaPuxar, acervoDoPlano, type AcervoPlano, type AjusteDia, DIA_MINIMO, MINUTOS_POR_QUESTAO, ROTULO_INTENSIDADE, ROTULO_PASSADA, TAMANHO_MINI, TETO_ATRASO, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasParaMelhorar, errosDoCronograma, historicoDosDias, idsRevanche, previsaoDeTermino, resumosDoDia, TAMANHO_REVANCHE, type DiaFeito, type ResumoDoDia } from '../dados/cronogramaRoteiro'
 import { formatarTempo } from '../dados/hubCronograma'
 import { gerarIcs } from '../dados/calendarioIcs'
@@ -52,7 +52,10 @@ function primeiroNome(nome?: unknown): string {
 
 export interface AcoesVisao {
   aoRevanche: (ids: string[]) => void
-  aoDiaLeve?: (dia: string) => void
+  ajusteDia?: {
+    previa: (dia: string, tipo: AjusteDia) => { carga: number; metaNormal: number; cobertura: number } | null
+    aplicar: (dia: string, tipo: AjusteDia) => void
+  }
   aoRevisoesNaMeta?: (ligar: boolean) => void
   aoAcervo?: (novo: AcervoPlano) => void
   previaAcervo?: (novo: AcervoPlano) => { data: string; meta: number; cobertura: number; total: number; respondidas: number }
@@ -63,6 +66,7 @@ export interface AcoesVisao {
   aoAbandonar?: () => void
   /** Dia curto: abre a sessão de hoje só com as primeiras `n` questões. */
   aoComecarCurto?: (n: number) => void
+  aoEstudarPendentes?: () => void
 }
 
 /**
@@ -199,6 +203,10 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
 
         {balanco && balanco.faltou > 0 && !folgaHoje && <p className="cg-aviso" role="note"><Icone nome="relogio" tamanho={16} /><span><strong>{hoje.getTime() - balanco.data.getTime() <= DIA ? 'Ontem' : `Na ${F_SEMANA.format(balanco.data).replace('-feira', '')}`} {balanco.feitas === 0 ? `as ${balanco.meta} questões ficaram sem fazer` : `ficaram ${plural(balanco.faltou, 'questão', 'questões')} sem fazer`}.</strong> Nada se perdeu: voltaram para a fila e foram divididas pelos dias que faltam{calculo.projecao.tetoAtivo ? `; a meta parou no teto de ${Math.round((TETO_ATRASO - 1) * 100)}% acima do planejado` : `, por isso hoje são ${calculo.metaHojeSemAdiantar}`}.</span></p>}
 
+        {calculo.provaPassou && chaveCivil(hoje) > plano.data_prova && calculo.restante > 0 && acoes?.aoEstudarPendentes && <div className="cg-linha">
+          <p className="cg-nota">Você pode continuar pelas questões pendentes do seu plano.</p>
+          <button type="button" className="cg-btn cg-btn--forte" onClick={acoes.aoEstudarPendentes}>Estudar questões pendentes</button>
+        </div>}
         {naRetaFinal && mao ? <p className="cg-nota">Reta final: a sessão de hoje traz os seus erros, os assuntos de prioridade máxima e as questões que você ainda não viu (inclusive as que entraram no acervo agora), para nenhuma ficar de fora.</p> : naRetaFinal && hub ? <RetaFinal calculo={calculo} hub={hub} minutos={minutos} /> : <div className="cg-passos">
           <div className="cg-passo cg-passo--leitura">
             <h3><b>1</b>{diaLeitura.deHoje ? 'Leia antes' : `Leitura para ${diaLeitura.data ? F_SEMANA.format(diaLeitura.data) : 'o próximo dia'}`}<small>os resumos mais próximos das questões {diaLeitura.deHoje ? 'de hoje' : 'que vêm'}</small></h3>
@@ -219,7 +227,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
       </section>
 
       {/* ── 3. O calendário: a semana, com o mês a um toque ── */}
-      <Mes ficticio={!!ficticio} mao={Boolean(mao)} plano={plano} calculo={calculo} historico={historico} biblioteca={biblioteca} indice={indicePlano} leituras={leituras} minutos={minutos} botaoHoje={Acao('cg-ir--claro')} aoPuxar={podeAdiantar ? aoPuxar : undefined} aoDiaLeve={ficticio ? undefined : acoes?.aoDiaLeve} salvando={hub?.salvandoOpcoes} />
+      <Mes ficticio={!!ficticio} mao={Boolean(mao)} plano={plano} calculo={calculo} historico={historico} biblioteca={biblioteca} indice={indicePlano} leituras={leituras} minutos={minutos} botaoHoje={Acao('cg-ir--claro')} aoPuxar={podeAdiantar ? aoPuxar : undefined} ajusteDia={ficticio ? undefined : acoes?.ajusteDia} salvando={hub?.salvandoOpcoes} />
 
       {/* ── 3b. Refaça o que errou: abaixo do calendário ── */}
       {conteudo && <section className={'cg-caixa cg-passo cg-passo--erros cg-erros-caixa' + (diaDosErrosHoje ? ' cg-passo--destaque' : '')} aria-label="Refaça o que errou">
@@ -452,7 +460,7 @@ function Previsao({ previsao: p, calculo, minutos, aoAjustar }: { previsao: Retu
         <ul className="cg-extras">
           <li><span><strong>Manter meu ritmo</strong><small>Cerca de {p.ritmo} novas por dia de estudo. Neste ritmo, terminaria em {curta(p.termina)}.</small></span></li>
           <li><span><strong>Distribuir a carga nos dias restantes</strong><small>Para fechar o conteúdo, a agenda estima {p.precisa} novas por dia normal.</small></span></li>
-          {aoAjustar && <li><span><strong>Rever os dias de estudo</strong><small>Compare o efeito de acrescentar um dia ou mudar as folgas.</small></span><button type="button" className="cg-mini" onClick={aoAjustar}>Ver ajustes</button></li>}
+          {aoAjustar && <li><span><strong>Rever os dias de estudo</strong><small>No calendário, escolha uma folga futura e simule um dia extra para ver quanto a meta muda.</small></span><button type="button" className="cg-mini" onClick={() => document.getElementById('calendario')?.scrollIntoView({ block: 'start' })}>Ver calendário</button></li>}
         </ul>
       </details>
     </>}
@@ -464,7 +472,7 @@ function Previsao({ previsao: p, calculo, minutos, aoAjustar }: { previsao: Retu
 
 interface CelulaMes { data: Date; chave: string; fora: boolean; hoje: boolean; passado: boolean; plano: DiaPlano | null; feito: DiaFeito | null; fase: 'antes' | 'conteudo' | 'revisao' | 'prova' | 'vespera' | 'dia' | 'depois'; folga: boolean }
 
-function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos, botaoHoje, aoPuxar, aoDiaLeve, salvando, ficticio, mao }: { mao: boolean; ficticio: boolean; plano: PlanoSalvo; calculo: CalculoPlano; historico: Map<string, DiaFeito>; biblioteca: ReturnType<typeof usarIndiceBiblioteca>; indice: Indice; leituras: Leituras; minutos: number; botaoHoje: ReactNode; aoPuxar?: (dia: string) => void; aoDiaLeve?: (dia: string) => void; salvando?: boolean }) {
+function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos, botaoHoje, aoPuxar, ajusteDia, salvando, ficticio, mao }: { mao: boolean; ficticio: boolean; plano: PlanoSalvo; calculo: CalculoPlano; historico: Map<string, DiaFeito>; biblioteca: ReturnType<typeof usarIndiceBiblioteca>; indice: Indice; leituras: Leituras; minutos: number; botaoHoje: ReactNode; aoPuxar?: (dia: string) => void; ajusteDia?: AcoesVisao['ajusteDia']; salvando?: boolean }) {
   const hoje = diaCivil()
   const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
@@ -487,11 +495,12 @@ function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos,
       if (vista === 'mes' && i >= 35 && data.getMonth() !== mes.getMonth()) break
       const chave = chaveCivil(data)
       const fase: CelulaMes['fase'] = data < criado ? 'antes' : data > prova ? 'depois' : data.getTime() === prova.getTime() ? 'dia' : data.getTime() === vespera.getTime() ? 'vespera' : data >= calculo.inicioModoProva ? 'prova' : data >= calculo.inicioRetaFinal ? 'revisao' : 'conteudo'
-      lista.push({ data, chave, fora: vista === 'mes' && data.getMonth() !== mes.getMonth(), hoje: data.getTime() === hoje.getTime(), passado: data < hoje, plano: doPlano.get(chave) ?? null, feito: historico.get(chave) ?? null, fase, folga: plano.folgas.includes(data.getDay()) })
+      lista.push({ data, chave, fora: vista === 'mes' && data.getMonth() !== mes.getMonth(), hoje: data.getTime() === hoje.getTime(), passado: data < hoje, plano: doPlano.get(chave) ?? null, feito: historico.get(chave) ?? null, fase, folga: plano.folgas.includes(data.getDay()) && !plano.opcoes?.diasExtras?.includes(chave) })
     }
     return lista
-  }, [vista, semana, mes, doPlano, historico]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [vista, semana, mes, doPlano, historico, plano.opcoes?.diasExtras]) // eslint-disable-line react-hooks/exhaustive-deps
   const sel = celulas.find((c) => c.chave === escolhida) ?? celulas.find((c) => c.hoje) ?? celulas.find((c) => !c.fora)!
+  const foiAjustado = plano.opcoes?.diasExtras?.includes(sel.chave) || plano.opcoes?.diasLevesAvulsos?.includes(sel.chave)
   const doMes = celulas.filter((c) => !c.fora)
   const totais = { novas: doMes.reduce((s, c) => s + (c.passado ? 0 : c.plano?.total ?? 0), 0), feitas: doMes.reduce((s, c) => s + (c.feito?.n ?? 0), 0), estudo: doMes.filter((c) => c.fase === 'conteudo' && !c.folga && !c.passado).length }
   const resumosSel = useMemo(() => (sel.plano && !sel.passado ? resumosDoDia(biblioteca, indice, sel.plano.itens.flatMap((i) => i.ids)) : []), [biblioteca, indice, sel])
@@ -544,13 +553,7 @@ function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos,
     {!(ficticio && trava) && !(naSemana && sel.hoje) && <section className={"cg-caixa cg-diasel " + (naSemana ? "cg-diasel--larga" : "cg-col-4")} aria-live="polite" aria-label="O dia escolhido">
       <p className="cg-rotulo">{sel.hoje ? 'Hoje' : sel.passado ? 'Dia que passou' : 'Dia escolhido'}</p>
       <h2 className="cg-caixa__titulo">{sel.data.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })}</h2>
-      {aoDiaLeve && sel.fase === 'conteudo' && !sel.hoje && !sel.passado && !sel.folga && !sel.plano?.puxado && !sel.plano?.mini && (
-        plano.opcoes?.diasLevesAvulsos?.includes(sel.chave) || sel.plano?.tipo === 'estudo'
-      ) && <details className="cg-linha--sep">
-        <summary>Ajustar só este dia</summary>
-        <p className="cg-nota">A carga restante será redistribuída pelos próximos dias de estudo.</p>
-        <button type="button" className="cg-mini" disabled={salvando} onClick={() => aoDiaLeve(sel.chave)}>{plano.opcoes?.diasLevesAvulsos?.includes(sel.chave) ? 'Restaurar dia normal' : 'Usar meta de dia leve'}</button>
-      </details>}
+      {ajusteDia && sel.fase === 'conteudo' && !sel.hoje && !sel.passado && !sel.plano?.puxado && (foiAjustado || (!sel.plano?.mini && (sel.folga || sel.plano?.tipo === 'estudo'))) && <AjusteDiaAgenda key={sel.chave} dia={sel} plano={plano} ajuste={ajusteDia} metaNormal={calculo.metaDiaNormal} salvando={salvando} />}
       {sel.fase === 'dia' ? <p className="cg-nota"><b>O dia da prova.</b> Sem tarefa: só a prova. Boa prova.</p>
         : sel.fase === 'vespera' ? <p className="cg-nota"><b>Véspera.</b> Aquecimento de 25 questões, frases que caem, tudo pronto e cama cedo.</p>
         : sel.fase === 'prova' ? <p className="cg-nota"><b>Modo prova.</b> Simulado cronometrado, os erros que importam e as frases que caem.</p>
@@ -569,6 +572,28 @@ function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos,
           </> : <p className="cg-nota">{sel.plano && sel.plano.adiantado > 0 ? 'Livre: você já adiantou as questões deste dia.' : 'Sem questões novas agendadas.'}</p>}
     </section>}
   </>
+}
+
+function AjusteDiaAgenda({ dia, plano, ajuste, metaNormal, salvando }: {
+  dia: CelulaMes; plano: PlanoSalvo; ajuste: NonNullable<AcoesVisao['ajusteDia']>; metaNormal: number; salvando?: boolean
+}) {
+  const extra = plano.opcoes?.diasExtras?.includes(dia.chave) ?? false
+  const leve = plano.opcoes?.diasLevesAvulsos?.includes(dia.chave) ?? false
+  const tipo = dia.folga || extra ? 'extra' : 'leve'
+  const [previa, definirPrevia] = useState<ReturnType<typeof ajuste.previa>>(null)
+  const acao = extra ? 'Restaurar folga' : dia.folga ? 'Estudar nesta folga' : leve ? 'Restaurar dia normal' : 'Transformar em dia leve'
+  return <details className="cg-linha--sep">
+    <summary>Ajustar só este dia</summary>
+    <div className="cg-pilha">
+      {previa ? <>
+        <p className="cg-nota" role="status"><strong>{dia.plano?.total ?? 0} → {previa.carga} questões neste dia.</strong> A meta de um dia normal passa de {metaNormal} para {previa.metaNormal}. Cobertura prevista da prioridade máxima: {previa.cobertura}%.</p>
+        <div className="cg-linha">
+          <button type="button" className="cg-btn cg-btn--forte" disabled={salvando} onClick={() => { ajuste.aplicar(dia.chave, tipo); definirPrevia(null) }}>Aplicar ajuste</button>
+          <button type="button" className="cg-mini" onClick={() => definirPrevia(null)}>Cancelar</button>
+        </div>
+      </> : <button type="button" className="cg-mini" disabled={salvando} onClick={() => definirPrevia(ajuste.previa(dia.chave, tipo))}>Simular: {acao.toLowerCase()}</button>}
+    </div>
+  </details>
 }
 
 // ─── Gráficos (SVG desenhado aqui; uma cor por série, texto nos tons de texto) ───

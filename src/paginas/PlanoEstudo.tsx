@@ -13,7 +13,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { acervoDoPlano, type AcervoPlano, cotaRevisoesDaMeta, revisoesNaMetaAtivas, entraNoPlano, calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, indiceDoPlano, marcarReservadas, opcoesComPuxado,  opcoesDe,  type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { acervoDoPlano, type AcervoPlano, alternarData, type AjusteDia, cotaRevisoesDaMeta, revisoesNaMetaAtivas, entraNoPlano, calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, indiceDoPlano, marcarReservadas, opcoesComPuxado,  opcoesDe,  type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
@@ -442,9 +442,25 @@ export function PlanoEstudo() {
   function comAcervo(atual: PlanoSalvo, novo: AcervoPlano): OpcoesPlano {
     return { ...atual.opcoes, acervo: { em: vigencia, anterior: acervoDoPlano(atual), novo } }
   }
+  function comDiaAvulso(atual: PlanoSalvo, dia: string, tipo: AjusteDia): OpcoesPlano {
+    const ops = atual.opcoes ?? {}
+    const chave = tipo === 'leve' ? 'diasLevesAvulsos' : 'diasExtras'
+    return {
+      ...ops,
+      [chave]: alternarData(ops[chave], dia),
+      metaPreservada: ops.metaPreservada?.em === hojeBR() ? ops.metaPreservada : { em: hojeBR(), n: calculo?.metaHojeSemAdiantar ?? 0 },
+    }
+  }
   const acoesVisao = {
     aoZerar: () => { void zerar() },
     aoAbandonar: () => { void abandonar() },
+    aoEstudarPendentes: () => {
+      if (!plano) return
+      const recorte = indiceDoPlano(indice, plano)
+      const simulados = incluiSimulados(plano)
+      const ids = recorte.questoes.filter((q) => entraNoPlano(q, simulados) && !respondidas[q.id]).slice(0, 30).map((q) => q.id)
+      void comecarIds(ids, 'reativar')
+    },
     aoRevanche: (ids: string[]) => comecarIds(ids, 'erros'),
     aoComecarCurto: (n: number) => { void comecarHoje(calculo, plano, n) },
     previaAcervo: (novo: AcervoPlano) => {
@@ -457,10 +473,16 @@ export function PlanoEstudo() {
       return { data: vigencia, meta: simulado.metaDiaria, cobertura: simulado.projecao.maisCaiPct, total: elegiveis.length, respondidas: respondidasNoRecorte }
     },
     aoAcervo: (novo: AcervoPlano) => mudarOpcao((p) => comAcervo(p, novo), 'Não foi possível salvar o acervo agora. Tente de novo.'),
-    aoDiaLeve: (dia: string) => mudarOpcao((atual) => {
-      const anteriores = atual.opcoes?.diasLevesAvulsos ?? []
-      return { ...atual.opcoes, diasLevesAvulsos: anteriores.includes(dia) ? anteriores.filter((d) => d !== dia) : [...anteriores, dia] }
-    }, 'Não foi possível ajustar esse dia. Tente de novo.'),
+    ajusteDia: {
+      previa: (dia: string, tipo: AjusteDia) => {
+        if (!plano || dia <= hojeBR()) return null
+        const previsto = calcularPlano(indice, respondidas, { ...plano, opcoes: comDiaAvulso(plano, dia, tipo) })
+        return { carga: previsto.dias.find((d) => chaveCivil(d.data) === dia)?.total ?? 0, metaNormal: previsto.metaDiaNormal, cobertura: previsto.projecao.maisCaiPct }
+      },
+      aplicar: (dia: string, tipo: AjusteDia) => {
+        if (dia > hojeBR()) void mudarOpcao((atual) => comDiaAvulso(atual, dia, tipo), 'Não foi possível ajustar esse dia. Tente de novo.')
+      },
+    },
     aoRevisoesNaMeta: (novo: boolean) => mudarOpcao((atual) => ({
       ...atual.opcoes,
       revisoesNaMeta: { em: vigencia, anterior: revisoesNaMetaAtivas(atual, hojeBR()), novo },

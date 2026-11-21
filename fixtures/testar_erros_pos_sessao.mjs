@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises'
 
 const { outputFiles } = await build({
   stdin: {
-    contents: "export * from './src/dados/errosPosSessao'\nexport * from './src/dados/planoEstudo'\nexport * from './src/estado/revisao'\nexport { focoPorQuestao } from './src/dados/incidencia'",
+    contents: "export * from './src/dados/errosPosSessao'\nexport * from './src/dados/planoEstudo'\nexport * from './src/estado/revisao'\nexport { calcularPlanoMao, configInicial } from './src/dados/cronogramaMao'\nexport { focoPorQuestao } from './src/dados/incidencia'",
     resolveDir: process.cwd(),
   },
   bundle: true, platform: 'node', format: 'esm', write: false,
@@ -63,6 +63,21 @@ const revisado = m.calcularPlano(indice, respondeu, planoMesclado, agora)
 assert.equal(revisado.revisoesHoje?.[0].feita, true)
 assert.equal(revisado.feitasHoje, 0)
 assert.equal(revisado.extraHoje, 0)
+
+const agendaOriginal = m.calcularPlano(indice, {}, plano, agora)
+const domingo = '2026-11-22'
+const agendaExtra = m.calcularPlano(indice, {}, { ...plano, opcoes: { ...plano.opcoes, diasExtras: [domingo], metaPreservada: { em: '2026-11-21', n: agendaOriginal.metaHojeSemAdiantar } } }, agora)
+assert.equal(agendaExtra.metaDiaria, agendaOriginal.metaDiaria)
+assert.equal(agendaExtra.diasEstudoRestantes, agendaOriginal.diasEstudoRestantes + 1)
+assert.ok(agendaExtra.dias[1].total > 0)
+assert.equal(agendaOriginal.dias[1].total, 0)
+
+const mao = m.configInicial('ingresso', agora)
+const maoOriginal = m.calcularPlanoMao(indice, {}, mao, agora)
+const maoExtra = m.calcularPlanoMao(indice, {}, { ...mao, diasExtras: [domingo], metaPreservada: { em: '2026-11-21', n: maoOriginal.metaHoje } }, agora)
+assert.equal(maoExtra.metaHoje, maoOriginal.metaHoje)
+assert.equal(maoExtra.diasDeEstudo, maoOriginal.diasDeEstudo + 1)
+assert.notEqual(maoExtra.agenda[1].tipo, 'folga')
 
 let registro = m.proximoRegistro(undefined, false, ontem)
 for (let i = 1; i < 12; i++) registro = m.proximoRegistro(registro, true, ontem + i * 100)
