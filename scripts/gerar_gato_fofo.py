@@ -68,7 +68,12 @@ MATS: dict[str, Mat] = {
     "papel": Mat(["#a89a86", "#cfc2ac", "#e9dfcb", "#fbf6ea", "#ffffff"], 1, 4),
     "tala": Mat(["#8e9aa6", "#bcc6cf", "#e2e8ec", "#f7fafb", "#ffffff"], 1, 4),      # atadura
     "azul": Mat(["#2d5f8a", "#3f7fb3", "#5fa3d6", "#8cc6ee"], 0, 3),                 # tala de alumínio / fita
+    "gorro": Mat(["#4a0a10", "#7a141a", "#a82024", "#d03a34", "#ee6a52", "#ff9a7c"], 1, 5),   # gorro de Natal (veludo)
+    "pelucia": Mat(["#b8aa96", "#d8ccb8", "#efe6d6", "#fbf6ec", "#ffffff"], 1, 4),             # barra e pompom do gorro
 }
+# Modo Natal (docs/design/MODO-NATAL.md, etapa 2): com --natal o gato ganha o gorro vermelho em todas as poses e a
+# folha sai em gato-fofo-natal.png (a original não muda).
+GORRO = False
 NOMES_MAT = list(MATS)
 IDX_MAT = {n: i for i, n in enumerate(NOMES_MAT)}
 _RAMPAS = [np.array([hx(c) for c in MATS[n].rampa]) for n in NOMES_MAT]
@@ -570,8 +575,8 @@ def cabeca(t: Tela, xf: Xf, olhos="aberto", olhar=(0.0, 0.0), boca="w", orelhas=
     t.pinta(elipse(xf((fx - 1.6, est.nariz_dy + 1.4)), xf.r(2.9), xf.r(2.4), achata=0.6), "creme", g, luz=luz + 0.05)
     t.pinta(elipse(xf((fx + 1.6, est.nariz_dy + 1.4)), xf.r(2.9), xf.r(2.4), achata=0.6), "creme", g, luz=luz + 0.05)
     t.pinta(elipse(xf((fx, est.nariz_dy + 2.8)), xf.r(2.2), xf.r(1.6), achata=0.5), "creme", g, luz=luz)
-    # listras: três na testa (simétricas) e duas em cada bochecha
-    for i, dx in enumerate((-2.7, 0.0, 2.7)):
+    # listras: três na testa (simétricas) e duas em cada bochecha (as da testa ficam debaixo do gorro no Natal)
+    for i, dx in enumerate(() if GORRO else (-2.7, 0.0, 2.7)):
         top = -ry * 0.95 + (0.3 if i != 1 else 0)
         comp = 3.1 if i == 1 else 2.4
         a, b = xf((fx * 0.6 + dx * 1.0, top)), xf((fx * 0.6 + dx * 0.8, top + comp))
@@ -581,6 +586,8 @@ def cabeca(t: Tela, xf: Xf, olhos="aberto", olhar=(0.0, 0.0), boca="w", orelhas=
             x0 = lado * (rx + 0.2) + fx * 0.3
             a, b = xf((x0, yy)), xf((x0 - lado * (2.2 - 0.5 * k), yy + 0.3))
             t.decal(capsula(a, b, xf.r(0.5), xf.r(0.35)))
+    if GORRO and not invertido:                                   # de barriga para cima o gorro cairia no chão
+        gorro(t, xf, g, fx, ry, luz)
     # rosto: moldes de pixel (não giram; só as posições acompanham a cabeça)
     for lado in (-1, 1):
         sep = est.olho_dx * (1.0 - 0.12 * lado * (vira + 0.35))   # 3/4: o olho de trás fica mais perto do centro
@@ -603,6 +610,25 @@ def cabeca(t: Tela, xf: Xf, olhos="aberto", olhar=(0.0, 0.0), boca="w", orelhas=
         else:
             t.molde(mb, cb[0], cb[1] + len(mb) / 2 - 0.5)
     return g
+
+
+def gorro(t: Tela, xf: Xf, g: int, fx: float, ry: float, luz: float) -> None:
+    """O gorro de Natal: cone de veludo vermelho saindo do alto da cabeça, entre as orelhas, curvado para trás e caindo
+    (o peso do pompom), a barra de pelúcia creme por cima da testa e o pompom felpudo na ponta."""
+    base = fx * 0.35
+    cone = tubo([xf((base + 0.5, -ry * 0.78)), xf((base - 0.6, -ry - 2.6)), xf((base - 3.6, -ry - 5.8)), xf((base - 7.6, -ry - 6.2)),
+                 xf((base - 10.4, -ry - 3.8))], [xf.r(6.0), xf.r(4.6), xf.r(3.2), xf.r(2.0), xf.r(1.2)])
+    # nada do veludo abaixo da barra: corta o cone na linha da barra (no sistema da cabeça, que gira com ela)
+    p0, p1 = xf((0.0, -ry * 0.74)), xf((0.0, -ry * 0.74 + 1.0))
+    cone = cone.menos(semiplano(p0, (p1[0] - p0[0], p1[1] - p0[1])))
+    t.pinta(cone, "gorro", g, luz=luz + 0.04)
+    # a dobra do veludo: uma faixa mais clara na quina de cima do cone
+    t.pinta(capsula(xf((base - 1.4, -ry - 3.6)), xf((base - 5.0, -ry - 6.4)), xf.r(0.7), xf.r(0.5)), "gorro", g, luz=luz + 0.28)
+    # barra de pelúcia: três bolotas encostadas, para o contorno ficar fofo, não reto
+    for dx in (-5.0, -1.6, 1.8, 5.0):
+        t.pinta(elipse(xf((base + dx, -ry * 0.74 + abs(dx) * 0.05)), xf.r(2.3), xf.r(1.9)), "pelucia", g, luz=luz + 0.05)
+    # pompom felpudo na ponta
+    t.pinta(circulo(xf((base - 11.2, -ry - 3.0)), xf.r(2.3)), "pelucia", g, luz=luz + 0.06)
 
 
 def _gira180(m):
@@ -1463,6 +1489,19 @@ def salvar(img: Image.Image, caminho: Path) -> None:
 
 
 def main() -> None:
+    global GORRO
+    if "--natal" in sys.argv:
+        GORRO = True
+        sheet = folha()
+        salvar(sheet, RAIZ / "public/pixel/mascote/gato-fofo-natal.png")
+        if "--previa" in sys.argv:
+            destino = Path(sys.argv[sys.argv.index("--previa") + 1])
+            destino.mkdir(parents=True, exist_ok=True)
+            for nome, cor in (("escuro", (42, 29, 20, 255)), ("claro", (251, 250, 246, 255))):
+                f = Image.new("RGBA", sheet.size, cor)
+                f.alpha_composite(sheet)
+                f.resize((sheet.width * 4, sheet.height * 4), Image.NEAREST).save(destino / f"gato-fofo-natal-4x-{nome}.png")
+        return
     sheet = folha()
     salvar(sheet, RAIZ / "public/pixel/mascote/gato-fofo.png")
     salvar(retrato().resize((128, 128), Image.NEAREST), RAIZ / "public/eventos/gato.png")
