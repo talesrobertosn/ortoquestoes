@@ -1,0 +1,126 @@
+/* Fim de sessão (refeito do zero em 21/11/2026): o cartão que abre ao responder a última questão e o botão flutuante
+   de concluir. Mesma linguagem do Desempenho (seção "Desempenho" do DESIGN.md): papel branco, o verde-azulado e o
+   azul-ardósia da SBOT, Plus Jakarta nos títulos e números, botões de verdade. A coruja bibliotecária fica em pé na
+   folha de respostas em miniatura; nada de fonte pixel para ler. */
+
+.fs-veu, .concluir-flutuante {
+  --fs-verde: #00806f;
+  --fs-verde-forte: #00685b;
+  --fs-verde-veu: #e3f1ee;
+  --fs-ardosia: #243b47;
+  --fs-ardosia-2: #4f626c;
+  --fs-linha: #dde5e7;
+  --fs-bom: #1f7a4d;
+  --fs-ruim: #b3423a;
+  --fs-neutro: #a9b6bb;
+}
+:root[data-tema="escuro"] :is(.fs-veu, .concluir-flutuante) {
+  --fs-verde: #3fbfae;
+  --fs-verde-forte: #6fd6c8;
+  --fs-verde-veu: rgba(63, 191, 174, 0.12);
+  --fs-ardosia: #e3ecef;
+  --fs-ardosia-2: #a9bac2;
+  --fs-linha: rgba(255, 255, 255, 0.1);
+  --fs-bom: #4cc59f;
+  --fs-ruim: #f07a6e;
+  --fs-neutro: #5d6d72;
+}
+
+.fs-veu {
+  position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; padding: 1rem;
+  background: rgba(14, 28, 32, 0.58); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  animation: fs-aparece 0.2s ease both;
+}
+.fs-caixa {
+  position: relative; width: min(100%, 30rem); max-height: calc(100dvh - 2rem); overflow: auto; overscroll-behavior: contain;
+  padding-bottom: 1.4rem; border-radius: 20px; background: var(--superficie); border: 1px solid var(--fs-linha);
+  box-shadow: 0 2px 4px rgba(36, 59, 71, 0.08), 0 28px 64px rgba(14, 28, 32, 0.3);
+  color: var(--fs-ardosia); text-align: center;
+  animation: fs-entra 0.32s cubic-bezier(0.2, 0.9, 0.3, 1.15) both;
+}
+:root[data-tema="escuro"] .fs-caixa { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04), 0 28px 64px rgba(0, 0, 0, 0.5); }
+
+.fs-fechar {
+  position: absolute; top: 0.75rem; right: 0.75rem; z-index: 2; display: grid; place-items: center; width: 40px; height: 40px;
+  border: 1px solid var(--fs-linha); border-radius: 10px; background: var(--superficie); color: var(--fs-ardosia-2); cursor: pointer;
+}
+.fs-fechar:hover { color: var(--fs-ardosia); border-color: var(--fs-ardosia-2); }
+
+/* A mesa: a coruja em pé sobre a folha de respostas. */
+.fs-mesa { display: grid; justify-items: center; padding: 1.6rem 1.5rem 1.4rem; background: var(--fs-verde-veu); border-bottom: 1px solid var(--fs-linha); }
+.fs-coruja { --coruja-escala: 3; position: relative; z-index: 1; margin-bottom: -10px; }
+.fs-folha {
+  list-style: none; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; width: min(100%, 22rem);
+  padding: 1rem 0.9rem 0.9rem; border-radius: 12px; background: var(--superficie); border: 1px solid var(--fs-linha);
+  box-shadow: 0 1px 2px rgba(36, 59, 71, 0.06), 0 8px 18px rgba(36, 59, 71, 0.07);
+}
+.fs-casa { width: 14px; height: 14px; border-radius: 4px; background: var(--fs-neutro); animation: fs-casa 0.3s ease both; }
+.fs-casa--certa { background: var(--fs-bom); }
+.fs-casa--errada { background: var(--fs-ruim); }
+.fs-casa--pulada { background: transparent; box-shadow: inset 0 0 0 1.5px var(--fs-neutro); }
+.fs-folha--neutra .fs-casa:not(.fs-casa--pulada) { background: var(--fs-verde); }
+.fs-folha--compacta { gap: 2px; }
+.fs-folha--compacta .fs-casa { width: 5px; height: 18px; border-radius: 2px; }
+
+.fs-rotulo {
+  display: inline-flex; align-items: center; gap: 0.4rem; margin: 1.3rem 0 0; color: var(--fs-verde-forte);
+  font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.fs-caixa h2 {
+  margin: 0.35rem 1.5rem 0; color: var(--fs-ardosia); font-family: var(--fonte-marca); font-size: clamp(1.5rem, 1.2rem + 1.2vw, 1.85rem);
+  font-weight: 800; line-height: 1.12; letter-spacing: -0.025em; text-wrap: balance;
+}
+
+.fs-numeros { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); margin: 1.1rem 1.5rem 0; border-top: 1px solid var(--fs-linha); border-bottom: 1px solid var(--fs-linha); }
+.fs-numero { display: flex; flex-direction: column-reverse; gap: 0.15rem; padding: 0.75rem 0.4rem; min-width: 0; }
+.fs-numero + .fs-numero { border-left: 1px solid var(--fs-linha); }
+.fs-numero dt { color: var(--fs-ardosia-2); font-size: 0.78rem; font-weight: 700; }
+.fs-numero dd { margin: 0; white-space: nowrap; color: var(--fs-ardosia); font-family: var(--fonte-marca); font-size: 1.55rem; font-weight: 800; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.fs-numero--destaque dd { color: var(--fs-verde-forte); }
+
+.fs-texto { margin: 1rem 1.75rem 0; color: var(--fs-ardosia); font-size: 1rem; line-height: 1.55; }
+.fs-texto p { margin: 0; text-wrap: pretty; }
+.fs-texto p + p { margin-top: 0.35rem; }
+.fs-texto b { color: var(--fs-verde-forte); font-weight: 800; overflow-wrap: anywhere; }
+
+.fs-acoes { display: grid; gap: 0.6rem; margin: 1.35rem 1.5rem 0; }
+.fs-botao {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 46px; padding: 0 1.1rem;
+  border: 1.5px solid var(--fs-verde); border-radius: 10px; background: var(--superficie); color: var(--fs-verde-forte);
+  font: inherit; font-weight: 750; font-size: 0.97rem; cursor: pointer; transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.fs-botao:hover { background: var(--fs-verde-veu); }
+.fs-botao:active { transform: translateY(1px); }
+.fs-botao--principal { min-height: 54px; background: var(--fs-verde); color: #ffffff; font-size: 1.06rem; box-shadow: 0 2px 0 var(--fs-verde-forte); }
+.fs-botao--principal:hover { background: var(--fs-verde-forte); border-color: var(--fs-verde-forte); }
+:root[data-tema="escuro"] .fs-botao--principal { color: #062521; }
+.fs-caixa :is(button):focus-visible { outline: 2px solid var(--fs-verde); outline-offset: 3px; }
+.fs-dica { margin: 0.85rem 0 0; color: var(--fs-ardosia-2); font-size: 0.78rem; }
+@media (hover: none) { .fs-dica { display: none; } }
+
+@media (max-width: 26rem) {
+  .fs-mesa { padding: 1.3rem 1rem 1.1rem; }
+  .fs-numeros { margin-inline: 1rem; }
+  .fs-numero { padding: 0.65rem 0.2rem; }
+  .fs-numero dd { font-size: 1.25rem; }
+  .fs-numero dt { font-size: 0.72rem; }
+  .fs-texto { margin-inline: 1.25rem; }
+  .fs-acoes { margin-inline: 1.1rem; }
+}
+
+/* Botão flutuante de concluir (depois de fechar o cartão para ler o último comentário). */
+.concluir-flutuante {
+  position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 6.2rem); z-index: 45; transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 0.5rem; min-height: 52px; padding: 0 1.4rem; white-space: nowrap; cursor: pointer;
+  border: 0; border-radius: 12px; background: var(--fs-verde); color: #ffffff; font: inherit; font-family: var(--fonte-marca); font-weight: 800; font-size: 1.02rem;
+  box-shadow: 0 2px 0 var(--fs-verde-forte), 0 14px 30px rgba(14, 28, 32, 0.25); animation: fs-aparece 0.25s ease both;
+}
+.concluir-flutuante:hover { background: var(--fs-verde-forte); }
+:root[data-tema="escuro"] .concluir-flutuante { color: #062521; }
+.concluir-flutuante:focus-visible { outline: 3px solid var(--fs-verde); outline-offset: 4px; }
+@media (min-width: 56rem) { .concluir-flutuante { bottom: 1.5rem; } }
+
+@keyframes fs-aparece { from { opacity: 0; } }
+@keyframes fs-entra { from { opacity: 0; transform: translateY(12px) scale(0.97); } }
+@keyframes fs-casa { from { opacity: 0; transform: scale(0.4); } }
+@media (prefers-reduced-motion: reduce) { .fs-veu, .fs-caixa, .fs-casa, .concluir-flutuante { animation: none; } }

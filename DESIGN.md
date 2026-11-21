@@ -178,6 +178,13 @@ Ideia em estudo (não aplicada): interface monocromática estilo shadcn com a ar
   Garantia, Recibos e Dúvidas. A **conta dos dias** (`ContaDias.tsx`: já tem + compra = total, em dias e meses) aparece em
   toda compra, renovação e ampliação.
 
+- **Fim de sessão e resultado (21/11/2026)**: refeitos do zero na linguagem do Desempenho. O cartão de fim
+  (`ModalFimSessao.tsx`, `FimSessao.css`) é branco, com a coruja bibliotecária em pé na folha de respostas em
+  miniatura (o guerreiro antigo saiu). O resultado (`Resumo.tsx`, `Resumo.css`, raiz `.dpg.rsg`, prefixo `rr-`) é
+  **uma página inteira, sem menu lateral** (Tales: "como uma experiência"): topo com a biblioteca e a coruja na mesa,
+  números e anel de acerto, o que a sessão rendeu, próximos passos, folha com o gráfico de tempo por questão,
+  confiança e temas lado a lado, a lista de questões (filtro e "mais demoradas") e o progresso.
+
 ## Typography
 
 - **Corpo e interface:** fonte do sistema, 17px (1.0625rem), entrelinha 1.6, coluna de leitura até 76ch.
