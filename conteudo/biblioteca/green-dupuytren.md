@@ -148,7 +148,7 @@ alerta: `mao-1189` está sem gabarito; o Green lista tabagismo, hipercolesterole
 
 !questoes treino=mao-1970,mao-2023,mao-2197
 conceito: O Green lista hipercolesterolemia, diabetes, tabagismo, álcool, epilepsia e antiepilépticos, trauma regional, trabalho manual pesado e IMC abaixo da média como associações, provavelmente não causais.
-como: O SIMÃO 2023 pediu os fatores de risco associados; o SBCM 2024, as comorbidades mais frequentes; o SBCM 2023, a associação relatada no Green.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu os fatores de risco associados; a prova de título de 2024, as comorbidades mais frequentes; a prova de título de 2023, a associação relatada no Green.
 armadilha: Incluir artrite reumatoide, queloide, esclerodermia ou obesidade entre as associações.
 !fim
 
@@ -201,7 +201,7 @@ alerta: `mao-1516` está sem gabarito; pelo Green, o critério de diátese entre
 
 !questoes treino=mao-2413
 conceito: Para o Green, o preditor mais forte da gravidade biológica, e portanto da recontratura, é o início da doença em idade mais jovem; a recidiva cai quanto mais velho o paciente no primeiro tratamento.
-como: O SIMÃO 2022 perguntou o preditor biológico mais forte de recontratura.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou o preditor biológico mais forte de recontratura.
 armadilha: Confundir com a história familiar, que é o preditor mais forte de ter a doença, não da gravidade dela.
 !fim
 
@@ -275,7 +275,7 @@ armadilha: Colocar os nódulos de GARROD na face volar ou na MF, ou confundir a 
 
 !questoes treino=mao-2345
 conceito: O diagnóstico da doença de DUPUYTREN é clínico, pela inspeção e palpação de nódulos, cordas e contraturas; o Doppler serve para localizar o feixe deslocado, não para diagnosticar.
-como: O SIMÃO 2024 perguntou como se faz adequadamente o diagnóstico.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou como se faz adequadamente o diagnóstico.
 armadilha: Achar que a ressonância, a ultrassonografia ou um marcador sérico confirmam a doença.
 !fim
 
@@ -300,7 +300,7 @@ O Campbell compara a doença à **cicatrização**: os miofibroblastos, que prod
 
 !questoes treino=mao-2546
 conceito: A diferença entre a doença de DUPUYTREN e a cicatrização normal não está no tipo de célula, e sim no tempo de vida dela: o miofibroblasto da ferida desaparece por apoptose quando o estímulo cessa, e o da doença persiste.
-como: O SIMÃO 2021 perguntou o que distingue o miofibroblasto da doença do que acontece numa ferida.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou o que distingue o miofibroblasto da doença do que acontece numa ferida.
 armadilha: Achar que a doença tem uma célula própria, inexistente na cicatrização, ou que o miofibroblasto é um processo neoplásico monoclonal.
 !fim
 
@@ -314,7 +314,7 @@ A **fáscia palmar normal tem pouco ou nenhum colágeno tipo III**; na doença h
 
 !questoes treino=mao-2368,mao-3346
 conceito: A fáscia palmar normal tem pouco ou nenhum colágeno tipo III; na doença ele aumenta de forma característica, inclusive antes da contratura.
-como: O SIMÃO 2024 perguntou qual tipo de colágeno aumenta de forma característica na fáscia doente.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou qual tipo de colágeno aumenta de forma característica na fáscia doente.
 armadilha: Marcar o colágeno tipo I (é o da fáscia normal) ou o tipo II (cartilagem).
 !fim
 
@@ -386,7 +386,7 @@ armadilha: Somar a IFD, ou deslocar as faixas em um estágio (chamar 90 a 135 de
 
 !questoes treino=mao-2484,mao-3343,mao-3345
 conceito: Com 30 graus na MF e 30 na IFP, a soma de 60 graus cai na faixa de 45 a 90 do TUBIANA; a IFD normal não muda nada, porque não entra na conta.
-como: O SIMÃO 2021 deu os graus de MF e IFP de um dedo e pediu o estágio.
+como: O simulado da prova de título de cirurgia da mão de 2021 deu os graus de MF e IFP de um dedo e pediu o estágio.
 armadilha: Classificar cada articulação separadamente ou contar a IFD.
 !fim
 
@@ -455,7 +455,7 @@ armadilha: Trocar GRAYSON por CLELAND, ou marcar o transverso superficial ou os 
 
 !questoes treino=mao-2024,mao-2624
 conceito: O GRAYSON passa volar ao feixe digital e o natatório atravessa as comissuras na base dos dedos; a banda espiral passa central e superficial ao feixe na palma distal e lateral e profunda a ele mais adiante, e é a origem do feixe em espiral.
-como: O SBCM 2024 pediu a estrutura volar ao feixe e a transversal da comissura; o SBCM 2022, a estrutura que muda de posição em relação ao feixe e dá origem à espiral.
+como: A prova de título de 2024 pediu a estrutura volar ao feixe e a transversal da comissura; a prova de título de 2022, a estrutura que muda de posição em relação ao feixe e dá origem à espiral.
 armadilha: Trocar GRAYSON por CLELAND, ou confundir a banda espiral com o ligamento transverso palmar superficial.
 !fim
 
@@ -524,7 +524,7 @@ alerta: `mao-0605` está sem gabarito; pelo Campbell, a alternativa A (banda pr�
 
 !questoes treino=mao-1809
 conceito: A corda espiral desloca o feixe digital para a linha média e para a superfície; a natatória, no plano subdérmico das comissuras, produz a contratura em adução da comissura.
-como: O SIMÃO 2026 pediu, numa só questão, a corda que desloca o feixe e a que contrai a comissura.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu, numa só questão, a corda que desloca o feixe e a que contrai a comissura.
 armadilha: Atribuir o deslocamento do feixe à corda central ou a contratura da comissura à corda lateral.
 !fim
 
@@ -560,7 +560,7 @@ A **IFP do dedo mínimo** tem **pior prognóstico e mais recidiva, independentem
 
 !questoes treino=mao-2407
 conceito: A contratura da IFP do dedo mínimo é a de pior prognóstico e maior recidiva, qualquer que seja a técnica.
-como: O SIMÃO 2022 perguntou o dedo de pior prognóstico no tratamento da IFP.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou o dedo de pior prognóstico no tratamento da IFP.
 armadilha: Marcar o anular por ser o mais acometido, ou o polegar por fazer parte da diátese.
 !fim
 
@@ -588,7 +588,7 @@ A definição recomendada é a do grupo internacional de consenso Delphi (KAN e 
 
 !questoes treino=mao-2109
 conceito: A recontratura que continua piorando além dos três primeiros meses é a progressiva, causada por corda mecanicamente importante que não foi tratada; não é recidiva verdadeira.
-como: O SBCM 2022 pediu o nome da recontratura que piora depois de três meses por doença ativa residual.
+como: A prova de título de 2022 pediu o nome da recontratura que piora depois de três meses por doença ativa residual.
 armadilha: Chamá-la de precoce (essa estaciona depois de três meses) ou de recidiva tardia (essa vem depois de um ano estável).
 !fim
 
@@ -650,7 +650,7 @@ alerta: Em `mao-0263`, o gabarito (cirurgia de liberação do tecido fibroso) ba
 
 !questoes treino=mao-1810
 conceito: A janela de oportunidade para correção completa vale sobretudo para a IFP, cuja chance de resultado excelente cai quando a contratura passa de cerca de 40 graus.
-como: O SIMÃO 2026 perguntou a articulação e a faixa de contratura em que a ideia de janela de oportunidade se aplica.
+como: O simulado da prova de título de cirurgia da mão de 2026 perguntou a articulação e a faixa de contratura em que a ideia de janela de oportunidade se aplica.
 armadilha: Escolher a MF, que corrige bem mesmo com contraturas grandes, ou usar os 15 graus de indicação do Campbell como limite da janela.
 !fim
 
@@ -825,7 +825,7 @@ No dedo, retira-se **toda a fáscia digital lateral, inclusive o CLELAND**, e no
 
 !questoes treino=mao-1808
 conceito: Na dermofasciectomia digital da recidiva, retira-se a pele palmar doente ou cicatrizada junto com toda a fáscia lateral, inclusive o CLELAND, e cobre-se a área com enxerto de pele total.
-como: O SIMÃO 2026 perguntou o que se resseca e como se cobre na dermofasciectomia digital da doença recidivada.
+como: O simulado da prova de título de cirurgia da mão de 2026 perguntou o que se resseca e como se cobre na dermofasciectomia digital da doença recidivada.
 armadilha: Preservar o CLELAND por ser poupado pela doença, ou cobrir com enxerto de pele parcial.
 !fim
 
@@ -847,7 +847,7 @@ A **artroplastia da IFP** com fasciectomia foi relatada como salvamento, mas nã
 
 !questoes treino=mao-2444
 conceito: Na IFP grave há frouxidão do extensor, rigidez capsular e retração da bainha; tração esquelética prévia seguida de fasciectomia supera a liberação única, e sem reserva de pele restam o alongamento das partes moles ou o encurtamento esquelético.
-como: O SIMÃO 2022 pediu a afirmação de acordo com o Green sobre as contraturas graves da IFP.
+como: O simulado da prova de título de cirurgia da mão de 2022 pediu a afirmação de acordo com o Green sobre as contraturas graves da IFP.
 armadilha: Indicar a osteotomia de extensão da falange média ou achar que a liberação articular isolada resolve.
 !fim
 

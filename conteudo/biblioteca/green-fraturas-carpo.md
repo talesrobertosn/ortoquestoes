@@ -114,7 +114,7 @@ Os estudos em cadáver citados no capítulo refinam o mecanismo (p. 590). Dorsif
 
 !questoes treino=mao-1949,mao-3180,mao-3212
 conceito: Na hiperextensão, a cintura do escafoide falha primeiro na face volar, por tração, e termina na dorsal, por compressão; o polo proximal fratura por subluxação dorsal, e a perilunar exige extensão, desvio ulnar e supinação intercárpica.
-como: O simulado do SIMÃO 2023 ofereceu a inversão tração e compressão e trocou supinação por pronação nas lesões ligamentares.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 ofereceu a inversão tração e compressão e trocou supinação por pronação nas lesões ligamentares.
 armadilha: Inverter o lado da tração, ou aceitar pronação intercárpica no mecanismo perilunar.
 !fim
 
@@ -186,7 +186,7 @@ O exame é sensível, mas a especificidade fica em **74 a 80%** (p. 591): muita 
 
 !questoes treino=mao-1946
 conceito: A ordem de frequência das fraturas do escafoide é cintura (70%), polo proximal (20%) e polo distal (10%).
-como: O simulado do SIMÃO 2023 pediu a ordem decrescente por região.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pediu a ordem decrescente por região.
 armadilha: Colocar o polo distal à frente do proximal, pensando na criança, em que o polo distal é o mais comum.
 !fim
 
@@ -202,7 +202,7 @@ A incidência do **lápis cerrado** (Fig. 16.8), em que o paciente aperta um lá
 
 !questoes treino=mao-2220,mao-1672,mao-3209
 conceito: A incidência do escafoide é feita com a mão fechada, a palma para baixo (antebraço pronado) e o punho em desvio ulnar, o que estende a fileira proximal e mostra a cintura inteira.
-como: O SBCM 2023 pediu a posição de mão, antebraço e punho; o outro simulado pediu o nome da incidência em AP com desvio ulnar e feixe angulado para o cotovelo.
+como: A prova de título de 2023 pediu a posição de mão, antebraço e punho; o outro simulado pediu o nome da incidência em AP com desvio ulnar e feixe angulado para o cotovelo.
 armadilha: Escolher desvio radial ou palma para cima: o desvio radial flete o escafoide e esconde o traço.
 alerta: O nome ZITER não aparece no Green 7; o gabarito de `mao-1672` vem de outra bibliografia e foi mantido.
 !fim
@@ -393,7 +393,7 @@ A artroscopia entra como auxiliar da redução e do controle do fio (p. 603). SL
 
 !questoes treino=mao-2224
 conceito: Na fixação assistida por artroscopia, a redução da cintura e do polo proximal se confere pela mediocárpica; detalhes técnicos estão no capítulo 17 do Green.
-como: O simulado do SBCM 2023 pediu o portal que mostra melhor a redução do polo proximal.
+como: O simulado da prova de título de 2023 pediu o portal que mostra melhor a redução do polo proximal.
 armadilha: Escolher um portal radiocárpico ulnar (6R, 6U), que não mostra o foco da cintura.
 alerta: O capítulo 16 não descreve portais; o gabarito de `mao-2224` (mediocarpal ulnar) segue a bibliografia do simulado.
 !fim
@@ -663,7 +663,7 @@ Quando o polo proximal está **irreconstruível ou totalmente necrótico, sem ar
 
 ## Vascularizado ou não: onde as edições divergem
 
-A pergunta "o enxerto vascularizado consolida mais que o convencional?" tem respostas diferentes conforme o livro. O Green 7 traz os números favoráveis (MERRELL: 88% contra 47% com necrose; JONES: côndilo femoral medial 100% contra 40% do rádio pediculado), mas também o declínio dos resultados da 1,2 ICSRA e a dúvida entre isquemia e estabilidade. A edição seguinte do Green, citada pela SBCM 2025 (questão original nº 63), afirma que as taxas de consolidação dos dois tipos de enxerto são semelhantes. Na prova, leia o enunciado: se ele cita um estudo (JONES, MERRELL), a resposta é a do estudo; se pede a posição geral do livro mais recente, a banca tende a ficar com a equivalência.
+A pergunta "o enxerto vascularizado consolida mais que o convencional?" tem respostas diferentes conforme o livro. O Green 7 traz os números favoráveis (MERRELL: 88% contra 47% com necrose; JONES: côndilo femoral medial 100% contra 40% do rádio pediculado), mas também o declínio dos resultados da 1,2 ICSRA e a dúvida entre isquemia e estabilidade. A edição seguinte do Green, citada pela prova de título de 2025 (questão original nº 63), afirma que as taxas de consolidação dos dois tipos de enxerto são semelhantes. Na prova, leia o enunciado: se ele cita um estudo (JONES, MERRELL), a resposta é a do estudo; se pede a posição geral do livro mais recente, a banca tende a ficar com a equivalência.
 
 # Consolidação viciosa, polo distal e salvamentos {radar=confirmado}
 
@@ -915,7 +915,7 @@ O raciocínio por polo é este (p. 638). O **fragmento dorsal pequeno** é benig
 
 !questoes treino=mao-2219,mao-3165,mao-3182,mao-3186,mao-3190,mao-3195
 conceito: Em TEISEN e HJARBAEK, I é o polo palmar, II a lasca osteocondral proximal, III o polo dorsal, IV a sagital do corpo, V a transversa do corpo e VI (do Box) a cominuta.
-como: O simulado do SBCM 2023 pediu o grupo da fratura sagital do corpo.
+como: O simulado da prova de título de 2023 pediu o grupo da fratura sagital do corpo.
 armadilha: Trocar sagital (IV) por transversa (V).
 !fim
 

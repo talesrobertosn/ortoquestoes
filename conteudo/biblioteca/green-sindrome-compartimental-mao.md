@@ -19,7 +19,7 @@ Este resumo nasce do capítulo 51 do Green's Operative Hand Surgery, 7ª ediçã
 
 A escolha do recorte é proposital. A síndrome compartimental como tema geral de trauma, com a perna, o pé e as discussões de monitorização contínua, está nos resumos do Rockwood (rockwood10-17-sindrome-compartimental e, na criança, rockwoodcriancas10-06-sindrome-compartimental). Aqui o foco é o **membro superior**, como o cirurgião da mão o enxerga: os compartimentos do braço, do antebraço e da mão contados um a um, a fasciotomia desenhada incisão por incisão, e a contratura de VOLKMANN classificada e tratada do osso ao músculo livre.
 
-As provas de Cirurgia da Mão (SBCM e SIMÃO) cobram este capítulo de um jeito muito reconhecível. O enunciado é curto, quase sempre uma frase incompleta que a alternativa termina ("a síndrome compartimental ocorre com a pressão tecidual:"), e o erro mora num detalhe trocado. Os distratores andam em escada: 10 a 20, 20 a 30, 30 a 40 mm Hg; 3 a 4, 4 a 5, 6 a 8 horas; diastólica trocada por sistólica; mediano trocado por ulnar; flexor trocado por extensor; o tipo vizinho da classificação de TSUGE. As famílias que mais se repetem são cinco:
+As provas de Cirurgia da Mão (prova de título e simulado da prova de título de cirurgia da mão) cobram este capítulo de um jeito muito reconhecível. O enunciado é curto, quase sempre uma frase incompleta que a alternativa termina ("a síndrome compartimental ocorre com a pressão tecidual:"), e o erro mora num detalhe trocado. Os distratores andam em escada: 10 a 20, 20 a 30, 30 a 40 mm Hg; 3 a 4, 4 a 5, 6 a 8 horas; diastólica trocada por sistólica; mediano trocado por ulnar; flexor trocado por extensor; o tipo vizinho da classificação de TSUGE. As famílias que mais se repetem são cinco:
 
 - **Números:** limiar de pressão, horas de isquemia, prazo da fasciotomia.
 - **Diagnóstico:** clínico, com a dor desproporcional à frente, e o que muda na criança.
@@ -184,7 +184,7 @@ O Green insiste num alerta duplo. Primeiro, a síndrome compartimental **sem fra
 
 !questoes treino=mao-2335,mao-2012,mao-3659,mao-3664,mao-3675,mao-3663,mao-3674,mao-3661,mao-3655,mao-3657,mao-3669,mao-3670 relacionadas=mao-0901
 conceito: Na criança, hoje, a síndrome compartimental do antebraço acompanha a fratura dos dois ossos e a supracondiliana com rádio distal (cotovelo flutuante); no adulto, o rádio distal e os dois ossos do antebraço, com o compartimento volar como o atingido no rádio distal.
-como: O SIMÃO 2024 perguntou as fraturas da criança segundo o Green e o SIMÃO 2023 as do adulto, usando o cotovelo flutuante como distrator; a UFG 2017 pediu o compartimento acometido na fratura do rádio distal.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou as fraturas da criança segundo o Green e o simulado da prova de título de cirurgia da mão de 2023 as do adulto, usando o cotovelo flutuante como distrator; a UFG 2017 pediu o compartimento acometido na fratura do rádio distal.
 armadilha: Trocar as listas (cotovelo flutuante é resposta da criança), responder a supracondiliana isolada (resposta histórica) ou pôr o rádio distal no compartimento dorsal ou na mão.
 !fim
 
@@ -287,7 +287,7 @@ A regra que fecha a seção é a mais importante: **em situação duvidosa, a in
 
 !questoes treino=mao-2011,mao-3668,mao-3672
 conceito: As contraindicações à medida da pressão compartimental são estruturas neurovasculares em risco, coagulopatia e celulite difusa; a fasciotomia, ao contrário, quase não tem contraindicação, e a coagulopatia é corrigida antes dela.
-como: O SIMÃO 2023 pediu a condição que contraindica a medida, entre doenças comuns sem relação com a punção.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu a condição que contraindica a medida, entre doenças comuns sem relação com a punção.
 armadilha: Marcar uma comorbidade frequente só porque piora o prognóstico, ou estender a contraindicação da medida para a fasciotomia.
 !fim
 
@@ -349,7 +349,7 @@ No braço há dois compartimentos, **anterior** (bíceps, braquial, artéria bra
 
 !questoes treino=mao-2265 relacionadas=mao-0029
 conceito: O volar superficial do antebraço reúne os três flexores do punho, o pronador redondo e o flexor superficial dos dedos; o volar profundo tem o flexor profundo, o flexor longo do polegar e o pronador quadrado, e é o primeiro e o mais afetado na síndrome compartimental.
-como: A SBCM 2023 pediu a composição do volar superficial; o TARO 2021 mostrou na imagem o pronador quadrado e pediu o nome e o compartimento.
+como: A prova de título de 2023 pediu a composição do volar superficial; o TARO 2021 mostrou na imagem o pronador quadrado e pediu o nome e o compartimento.
 armadilha: Pôr o pronador quadrado no superficial e o redondo no profundo, ou aceitar o braquiorradial e o supinador entre os volares.
 !fim
 
@@ -381,7 +381,7 @@ Lembre que na mão a causa mais associada é a **injeção intravenosa**, e que 
 
 !questoes treino=mao-2063,mao-3658,mao-3676 relacionadas=mao-1346
 conceito: A mão tem 10 compartimentos (tenar, hipotenar, adutor do polegar, 4 interósseos dorsais e 3 volares, cada interósseo isolado pela própria fáscia); raramente é preciso abrir todos, e a decisão é intraoperatória ou pela pressão.
-como: A SBCM 2024 e a USP-SP 2025 perguntaram quantos compartimentos considerar numa suspeita de síndrome compartimental da mão, com 4, 5 e 7 como distratores.
+como: A prova de título de 2024 e a USP-SP 2025 perguntaram quantos compartimentos considerar numa suspeita de síndrome compartimental da mão, com 4, 5 e 7 como distratores.
 armadilha: Contar os interósseos dorsais e os volares como um compartimento cada (dá 5) ou esquecer o adutor e as eminências; cada interósseo é uma câmara.
 !fim
 
@@ -449,7 +449,7 @@ Os casos duvidosos de síndrome iminente também são descomprimidos, desde que 
 
 !questoes treino=mao-2607
 conceito: Para o Green, a fasciotomia nas primeiras 8 horas depois do diagnóstico se associa a menor risco de sequela funcional permanente; a fasciotomia tardia, depois de 24 horas, deixou de ser contraindicação; após reparo vascular com isquemia acima de 3 horas, a fasciotomia é profilática.
-como: O SIMÃO 2022 perguntou o prazo segundo o Green, com 2, 4, 6 e 8 horas nas alternativas.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou o prazo segundo o Green, com 2, 4, 6 e 8 horas nas alternativas.
 armadilha: Responder 4 horas (limite do estágio tardio e prazo de sequela mínima) ou 6 horas (fim do pico da dor); a frase do prazo usa 8, contadas do diagnóstico.
 !fim
 
@@ -575,7 +575,7 @@ O gabarito das provas de Cirurgia da Mão segue o **texto do Green**: lesão de 
 
 !questoes treino=mao-2336,mao-2177,mao-2062,mao-3660,mao-3673
 conceito: No recém-nascido, edema do antebraço com uma lesão de pele na face lateral proximal do braço (lesão sentinela) indica síndrome compartimental neonatal; tratada cedo, melhora função e crescimento, mas a contratura de VOLKMANN neonatal já instalada não melhora com intervenção precoce.
-como: O SIMÃO 2024 pediu a definição da lesão sentinela; a SBCM 2022, os achados que chamam a atenção para o diagnóstico; a SBCM 2024, a afirmação correta sobre o quadro.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu a definição da lesão sentinela; a prova de título de 2022, os achados que chamam a atenção para o diagnóstico; a prova de título de 2024, a afirmação correta sobre o quadro.
 armadilha: Aceitar que a contratura já instalada melhora com abordagem precoce, que o quadro é banda amniótica ou que a mão é o segmento típico.
 alerta: Em `mao-2336`, `mao-2177` e `mao-2062` o gabarito segue o texto do Green 7ª ed. (lesão no braço). A legenda da Fig. 51.1 do mesmo capítulo fala em antebraço lateral proximal, e o Campbell 15ª ed. situa a lesão no dorso do antebraço, punho ou mão. Gabarito oficial mantido.
 !fim
@@ -638,7 +638,7 @@ O Campbell (Tabela 79.1, p. 3510) usa os mesmos três graus com palavras um pouc
 
 !questoes treino=mao-2337,mao-2500,mao-2176,mao-2457,mao-3665
 conceito: TSUGE leve pega o flexor profundo do médio e do anelar sem nervo; o moderado soma o flexor longo do polegar, parte do superficial e déficit sensitivo maior no mediano; o grave toma todo o flexor, parte do extensor e traz déficit neurológico grave com perda intrínseca. No moderado, a tabela lista deslizamento da origem dos flexores, alongamento fracionado, encurtamento do antebraço e carpectomia proximal.
-como: O SIMÃO 2024 pediu o achado que define o tipo moderado; o SIMÃO 2021, o que caracteriza o grave; a SBCM 2022 e o SIMÃO 2022, uma opção de tratamento do moderado na tabela do Green.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu o achado que define o tipo moderado; o simulado da prova de título de cirurgia da mão de 2021, o que caracteriza o grave; a prova de título de 2022 e o simulado da prova de título de cirurgia da mão de 2022, uma opção de tratamento do moderado na tabela do Green.
 armadilha: Atribuir ao moderado a transferência muscular livre ou a reconstrução de nervo (são do grave), achar que o encurtamento do antebraço, por ser criticado no texto, não está na tabela, ou inverter mediano e ulnar.
 !fim
 
@@ -664,7 +664,7 @@ No VOLKMANN do antebraço, o teste ajuda a classificar e a indicar. Se os dedos 
 
 !questoes central=mao-1364 treino=mao-1990,mao-3671
 conceito: O ângulo de VOLKMANN mede o encurtamento dos flexores extrínsecos dos dedos: com os dedos mantidos estendidos, leva-se o punho à extensão máxima e lê-se o ângulo com punho e dedos em extensão, em relação à borda dorsal do antebraço; a contratura extrínseca piora com o punho estendido e alivia com o punho fletido.
-como: A USP-SP 2025 perguntou em que posição se mede o ângulo de VOLKMANN na paralisia cerebral; o SIMÃO 2023 pediu a afirmação correta sobre o punho espástico, em que os flexores dos dedos contribuem para a flexão do punho e isso se avalia pelo mesmo teste.
+como: A USP-SP 2025 perguntou em que posição se mede o ângulo de VOLKMANN na paralisia cerebral; o simulado da prova de título de cirurgia da mão de 2023 pediu a afirmação correta sobre o punho espástico, em que os flexores dos dedos contribuem para a flexão do punho e isso se avalia pelo mesmo teste.
 armadilha: Medir com os dedos fletidos (relaxa os flexores e mede só o punho), usar a borda volar como referência ou atribuir a flexão do punho só ao flexor radial do carpo.
 !fim
 
@@ -799,7 +799,7 @@ O raciocínio à beira do leito: se não houve sinais de síndrome compartimenta
 
 !questoes treino=mao-2264
 conceito: O pseudo-VOLKMANN tem a aparência da contratura de VOLKMANN sem decorrer de isquemia: nervo poupado e ressonância sem alteração isquêmica do músculo; na criança, costuma ser o flexor profundo preso ao foco da fratura da ulna.
-como: A SBCM 2023 pediu a característica do pseudo-VOLKMANN, com esmagamento, esforço e infecção como distratores.
+como: A prova de título de 2023 pediu a característica do pseudo-VOLKMANN, com esmagamento, esforço e infecção como distratores.
 armadilha: Procurar outra causa de síndrome compartimental (esmagamento, esforço, infecção); todas são isquêmicas, e o prefixo pseudo indica justamente a ausência de isquemia.
 !fim
 

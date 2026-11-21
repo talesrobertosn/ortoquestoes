@@ -136,7 +136,7 @@ Uma observação para quem vai responder a questão do ALT: a Tabela o coloca en
 
 !questoes treino=mao-1765,mao-2171,mao-2021,mao-3129
 conceito: Cada retalho tem o seu vaso: lateral do braço pela colateral radial posterior (ramo da braquial profunda); escapular pelos ramos cutâneos da circunflexa escapular; primeiro espaço do pé como retalho cutâneo livre.
-como: O SIMÃO 2026 pediu a associação correta entre retalho e pedículo; a SBCM 2022, qual retalho é cutâneo livre; o SIMÃO 2023, a afirmação correta sobre a vascularização dos retalhos.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu a associação correta entre retalho e pedículo; a prova de título de 2022, qual retalho é cutâneo livre; o simulado da prova de título de cirurgia da mão de 2023, a afirmação correta sobre a vascularização dos retalhos.
 armadilha: Trocar o ramo pelo vizinho do mesmo tronco: colateral radial anterior por posterior, ramo ascendente por descendente, circunflexa femoral medial por lateral.
 !fim
 
@@ -165,7 +165,7 @@ A regra que a prova cobra: **os arterializados sobrevivem melhor que os venosos 
 
 !questoes central=mao-1584 treino=mao-2104
 conceito: No retalho venoso flow-through (arterializado tipo 2), a veia do retalho é anastomosada à artéria digital nas duas pontas, proximal e distal; os arterializados sobrevivem melhor que os de perfusão venosa pura, e o uso é para defeitos pequenos dos dedos.
-como: A USP-SP 2026 pediu a afirmação correta sobre o flow-through; o SBCM 2024 cobrou qual venoso sobrevive melhor.
+como: A USP-SP 2026 pediu a afirmação correta sobre o flow-through; a prova de título de 2024 cobrou qual venoso sobrevive melhor.
 armadilha: Descrever o tipo 1 (artéria para veia, fístula) como se fosse o flow-through, ou achar que o retalho venoso serve para qualquer tamanho de defeito.
 !fim
 
@@ -275,7 +275,7 @@ Os dois tipos de anastomose arterial microcirúrgica que o capítulo usa o tempo
 
 !questoes central=mao-1334 relacionadas=mao-1299,mao-0814 treino=mao-2377,mao-3151
 conceito: As anastomoses microcirúrgicas arteriais são término-terminal ou término-lateral; o clampe vascular protege o campo, mas lesa o endotélio e favorece a trombose se a pressão ou o tempo forem excessivos, e o clampe venoso tem pressão de fechamento menor que o arterial.
-como: A USP-SP 2025 pediu um tipo de anastomose arterial e a principal desvantagem dos clampes; o INTO 2026 mostrou uma figura de clampes e pediu o usado na veia; o SIMÃO 2024 cobrou a manobra para pequena discrepância de calibre.
+como: A USP-SP 2025 pediu um tipo de anastomose arterial e a principal desvantagem dos clampes; o INTO 2026 mostrou uma figura de clampes e pediu o usado na veia; o simulado da prova de título de cirurgia da mão de 2024 cobrou a manobra para pequena discrepância de calibre.
 armadilha: Inventar tipos de anastomose (laterolateral, em Y de ROUX) ou achar que a desvantagem do clampe é custo ou dificuldade técnica.
 alerta: A técnica de microanastomose e os clampes não estão no texto impresso do cap. 45 do Green 7 (o livro remete ao capítulo clássico on-line); estas questões cobram princípios gerais de microcirurgia.
 !fim
@@ -363,7 +363,7 @@ O teste de "ordenha" só é feito depois de um clampe a jusante, distal a um ram
 
 !questoes central=mao-1473 treino=mao-2549,mao-3127,mao-3139,mao-3140,mao-3143,mao-3149,mao-3150
 conceito: Na reexploração, a anastomose suspeita é aberta entre clampes para evitar a embolização distal do trombo; 96% das falhas aparecem em 72 h (CHEN, 1.142 retalhos), e a reexploração rápida é a melhor solução.
-como: A USP-SP 2024 pediu, citando o Green 8, o objetivo de abordar a anastomose entre clampes; o SIMÃO 2021 cobrou o prazo da série de CHEN.
+como: A USP-SP 2024 pediu, citando o Green 8, o objetivo de abordar a anastomose entre clampes; o simulado da prova de título de cirurgia da mão de 2021 cobrou o prazo da série de CHEN.
 armadilha: Achar que o clampe serve para trabalhar sem sangramento ou para manter o retalho isquêmico.
 !fim
 
@@ -411,7 +411,7 @@ Entre a saída do nervo radial e o epicôndilo, a colateral radial posterior dá
 
 A artéria vem acompanhada de **duas veias comitantes** e de dois nervos, ambos ramos do radial: o **cutâneo posterior do braço** e o **cutâneo posterior do antebraço**. Quem **inerva o retalho** é o **cutâneo posterior do braço**; o cutâneo posterior do antebraço deve ser **preservado**, porque é ele que dá a sensibilidade do antebraço, embora possa ser levado como enxerto de nervo vascularizado. Se o retalho for desenhado no território distal, já no antebraço proximal, quem o inerva é o cutâneo posterior do antebraço (p. 1586).
 
-O nome do nervo é a pegadinha de sempre. O Green 7 chama de **cutâneo posterior do braço** o nervo sensitivo do retalho (p. 1586, 1609 e Tabela 45.1). Muitos textos chamam esse ramo do radial de cutâneo lateral inferior do braço, e uma prova oficial da SBCM usou "cutâneo lateral do braço". Na dúvida, siga o nome do Green.
+O nome do nervo é a pegadinha de sempre. O Green 7 chama de **cutâneo posterior do braço** o nervo sensitivo do retalho (p. 1586, 1609 e Tabela 45.1). Muitos textos chamam esse ramo do radial de cutâneo lateral inferior do braço, e uma prova de título usou "cutâneo lateral do braço". Na dúvida, siga o nome do Green.
 
 ## A técnica do lateral do braço
 
@@ -431,7 +431,7 @@ Os pontos críticos do capítulo resumem a indicação: defeitos **menores** de 
 
 !questoes treino=mao-2019,mao-2173,mao-2256,mao-2020
 conceito: O lateral do braço é nutrido pela colateral radial posterior, ramo terminal da braquial profunda, que acompanha o nervo radial no sulco espiral até perfurar o septo intermuscular lateral distal à inserção do deltoide.
-como: O SIMÃO 2023 e a SBCM 2023 pediram a artéria do retalho; a SBCM 2022 pediu qual dos dois ramos terminais da braquial profunda o nutre; o SIMÃO 2023 cobrou o trajeto da braquial profunda com o radial.
+como: O simulado da prova de título de cirurgia da mão de 2023 e a prova de título de 2023 pediram a artéria do retalho; a prova de título de 2022 pediu qual dos dois ramos terminais da braquial profunda o nutre; o simulado da prova de título de cirurgia da mão de 2023 cobrou o trajeto da braquial profunda com o radial.
 armadilha: Marcar a colateral radial anterior, que segue com o nervo radial à frente, ou a colateral ulnar, que é do lado medial.
 !fim
 
@@ -461,7 +461,7 @@ Os pontos críticos lembram que o retalho pode levar fáscia, pele, tendão (o *
 
 !questoes central=mao-1328 treino=mao-2102,mao-3138,mao-3144
 conceito: O radial (chinês) é fasciocutâneo pela artéria radial, inervável pelos cutâneos do antebraço, e pode levar até 10 cm e 30% da secção do rádio entre as inserções do pronador redondo e do braquiorradial; o retalho osteomiofasciocutâneo corresponde ao tipo D de CORMACK e LAMBERTY.
-como: A USP-SP 2025 pediu a afirmação correta sobre o retalho antebraquial volar; o SBCM 2024 cobrou os músculos que limitam o osso e o máximo que se pode levar.
+como: A USP-SP 2025 pediu a afirmação correta sobre o retalho antebraquial volar; a prova de título de 2024 cobrou os músculos que limitam o osso e o máximo que se pode levar.
 armadilha: Dar ao radial o pedículo do lateral do braço (colateral radial posterior), ou trocar os 30% do rádio pelos 25% do úmero.
 alerta: A classificação de CORMACK e LAMBERTY dos retalhos fasciocutâneos não está no cap. 45 do Green 7; a questão a cobra como extensão do tema.
 !fim
@@ -491,7 +491,7 @@ Os pontos críticos (p. 1593): defeitos **moderados**, defeitos com perda óssea
 
 !questoes treino=mao-2170,mao-2487,mao-3131,mao-3146
 conceito: A circunflexa escapular, primeiro ramo da subescapular, passa pelo espaço triangular (tríceps longo, redondo maior, subescapular) e se divide sobre a borda lateral da escápula em ramo transverso (escapular) e descendente (paraescapular).
-como: A SBCM 2022 descreveu um retalho paralelo à borda lateral da escápula e pediu o nome e o vaso; o SIMÃO 2021 pediu em qual ramo se baseia o paraescapular.
+como: A prova de título de 2022 descreveu um retalho paralelo à borda lateral da escápula e pediu o nome e o vaso; o simulado da prova de título de cirurgia da mão de 2021 pediu em qual ramo se baseia o paraescapular.
 armadilha: Trocar os ramos (transverso no paraescapular) ou colocar a artéria no espaço quadrangular, que é do nervo axilar e da circunflexa umeral posterior.
 !fim
 
@@ -551,7 +551,7 @@ As desvantagens são a cicatriz na face lateral da coxa (pior com enxerto, o que
 
 !questoes central=mao-1176 relacionadas=mao-1630 treino=mao-2103,mao-2172,mao-3125,mao-3141,mao-3142,mao-3147,mao-3148,mao-3153,mao-3157,mao-3159
 conceito: O ALT é nutrido por perfurantes do ramo descendente da circunflexa femoral lateral (ramo da femoral profunda), 87% musculocutâneas e 13% septocutâneas (WEI, 672 retalhos), e pode ser sensitivo pelo cutâneo lateral da coxa; sem perfurante adequada, leva-se manguito de vasto lateral ou muda-se para outro retalho da região.
-como: A PUC-SP 2022 pediu a afirmação correta sobre o ALT com as porcentagens de WEI; a USP-SP 2026, o que fazer quando não há perfurante; o SBCM 2024 e a SBCM 2022 pediram o ramo que nutre as perfurantes.
+como: A PUC-SP 2022 pediu a afirmação correta sobre o ALT com as porcentagens de WEI; a USP-SP 2026, o que fazer quando não há perfurante; a prova de título de 2024 e a prova de título de 2022 pediram o ramo que nutre as perfurantes.
 armadilha: Trocar lateral por medial na circunflexa femoral, dizer que ela vem da femoral superficial, ou trocar o nervo sensitivo pelo cutâneo medial da coxa.
 alerta: O resgate pelo tensor da fáscia lata ou pelo anteromedial da coxa (USP-SP 2026) não está no Green 7; o capítulo descreve o manguito de vasto lateral e a dissecção intramuscular.
 !fim
@@ -604,9 +604,9 @@ A doadora é **sempre fechada direto**, porque um enxerto nas costas vira proble
 
 !questoes central=mao-1637 relacionadas=mao-1899 treino=mao-2257,mao-2490,mao-2022,mao-3126,mao-3132,mao-3145,mao-3155
 conceito: O grande dorsal é nutrido pela toracodorsal, continuação da subescapular depois da circunflexa escapular, com veias comitantes e o nervo toracodorsal (subescapular médio); é tipo V de MATHES e NAHAI, de pedículo longo e calibroso, e cobre bem defeitos grandes com exposição óssea.
-como: A USP-SP 2026 pediu o feixe neurovascular principal do latíssimo; o ENARE 2025 pediu o transplante mais adequado para perda cutânea com exposição óssea; a SBCM 2023, o SIMÃO 2021 e o SIMÃO 2023 cobraram a artéria e o tipo de retalho.
+como: A USP-SP 2026 pediu o feixe neurovascular principal do latíssimo; o ENARE 2025 pediu o transplante mais adequado para perda cutânea com exposição óssea; a prova de título de 2023, o simulado da prova de título de cirurgia da mão de 2021 e o simulado da prova de título de cirurgia da mão de 2023 cobraram a artéria e o tipo de retalho.
 armadilha: Trocar a toracodorsal pela toracoacromial ou pela circunflexa escapular, e o nervo toracodorsal pelo torácico longo (que é do serrátil).
-alerta: Na questão do SIMÃO 2023, o serrátil aparece irrigado pela torácica lateral; pelo Green 7 (p. 1603), as seis digitações superiores são da torácica lateral, mas as três inferiores, usadas como retalho livre, são da toracodorsal.
+alerta: Na questão do simulado da prova de título de cirurgia da mão de 2023, o serrátil aparece irrigado pela torácica lateral; pelo Green 7 (p. 1603), as seis digitações superiores são da torácica lateral, mas as três inferiores, usadas como retalho livre, são da toracodorsal.
 !fim
 
 # Serrátil anterior, reto abdominal e fáscia temporoparietal {radar=oportunidade}
@@ -637,7 +637,7 @@ A técnica tem um perigo anatômico central: não ir muito **anterior**, onde pa
 
 !questoes treino=mao-2258,mao-3136
 conceito: Os retalhos fasciais puros do Green são o radial, o lateral do braço, o escapular, o torácico dorsal, o serrátil e o temporoparietal, usados para defeitos pequenos e para envolver tendões expostos mantendo o deslizamento.
-como: A SBCM 2023 pediu qual retalho o Green inclui entre os fasciais puros.
+como: A prova de título de 2023 pediu qual retalho o Green inclui entre os fasciais puros.
 armadilha: Escolher um musculocutâneo (grande dorsal com pele) ou um cutâneo que não existe na versão fascial.
 !fim
 
@@ -691,7 +691,7 @@ Na técnica dupla de **DOI** (p. 1181 e 1182), o primeiro tempo leva um grácil 
 
 !questoes treino=mao-2435,mao-2448,mao-2499,mao-2534,mao-3158
 conceito: O grácil é tipo II de MATHES e NAHAI, com pedículo dominante (ramo da femoral profunda, a circunflexa femoral medial) dissecado entre o adutor longo e o adutor magno, e nervo da divisão anterior do obturatório entrando logo acima do pedículo; é a transferência muscular livre funcional mais usada.
-como: O SIMÃO 2022 pediu o tipo de MATHES e NAHAI e entre quais músculos fica o pedículo; o SIMÃO 2021, onde o nervo entra e a técnica da transferência para flexão do cotovelo.
+como: O simulado da prova de título de cirurgia da mão de 2022 pediu o tipo de MATHES e NAHAI e entre quais músculos fica o pedículo; o simulado da prova de título de cirurgia da mão de 2021, onde o nervo entra e a técnica da transferência para flexão do cotovelo.
 armadilha: Trocar o tipo II do grácil pelo tipo V do grande dorsal, ou colocar o pedículo entre o adutor curto e o pectíneo.
 !fim
 
@@ -731,7 +731,7 @@ O lateral do braço pode ser grosso no paciente magro ou fino no obeso, e o cap�
 
 !questoes central=mao-1477 treino=mao-1766
 conceito: Para um defeito grande, os retalhos livres de grandes dimensões são o grande dorsal, o ALT, o escapular e o paraescapular (e o omento); o lateral do braço, o primeiro espaço, o dorsal do pé e a fáscia temporal são para defeitos pequenos; o grande defeito ósseo segmentar pede a fíbula vascularizada.
-como: A USP-SP 2024 trouxe uma perna Gustilo IIIB, já desbridada, e pediu a alternativa em que todos os retalhos fossem de grandes dimensões; o SIMÃO 2026 cobrou o limiar de defeito ósseo para enxerto vascularizado e a doadora mais usada no antebraço.
+como: A USP-SP 2024 trouxe uma perna Gustilo IIIB, já desbridada, e pediu a alternativa em que todos os retalhos fossem de grandes dimensões; o simulado da prova de título de cirurgia da mão de 2026 cobrou o limiar de defeito ósseo para enxerto vascularizado e a doadora mais usada no antebraço.
 armadilha: Misturar na mesma lista um retalho de grande área com retalhos pequenos (primeiro espaço, lateral do braço, temporal).
 !fim
 

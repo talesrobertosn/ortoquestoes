@@ -95,7 +95,7 @@ Repare que os itens do meio são as quatro condições da mobilização precoce,
 
 !questoes treino=mao-3792,mao-3794,mao-2330
 conceito: O primeiro objetivo no membro superior mutilado é preservar a vida; depois vêm preservar tecido, preservar função e reconstruir a função do membro e do paciente, numa hierarquia em que cada degrau depende do anterior.
-como: O SIMÃO 2024 pediu qual dos objetivos listados pelo Green vem em primeiro lugar.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu qual dos objetivos listados pelo Green vem em primeiro lugar.
 armadilha: Marcar preservar a função ou o comprimento, que parecem a finalidade da cirurgia da mão; o trauma que mutila o membro quase sempre lesa outros sistemas, e esses têm precedência.
 !fim
 
@@ -202,7 +202,7 @@ A química da isquemia não é só teoria de prova. Ela explica três condutas d
 
 !questoes treino=mao-3266
 conceito: No no-reflow, depois de restaurado o fluxo arterial, neutrófilos se acumulam nos capilares e reduzem a perfusão de forma progressiva; o neutrófilo é a célula da lesão de reperfusão.
-como: O SIMÃO 2010 perguntou qual célula se acumula nos vasos e reduz progressivamente a perfusão no no-reflow.
+como: O simulado da prova de título de cirurgia da mão de 2010 perguntou qual célula se acumula nos vasos e reduz progressivamente a perfusão no no-reflow.
 armadilha: Marcar plaqueta ou hemácia: elas participam da trombose, mas o Green atribui o fenômeno ao acúmulo intravascular de neutrófilos, que aderem por selectinas e integrinas.
 !fim
 
@@ -262,7 +262,7 @@ O laboratório inclui hemograma com plaquetas, eletrólitos, gasometria, toxicol
 
 !questoes treino=mao-3790,mao-3791,mao-3256
 conceito: Na mão traumatizada, a perfusão se avalia pela cor, pelo turgor e pelo enchimento da pele paroniquial dorsal; o leito ungueal engana, porque o sangue estagnado é empurrado e volta mesmo sem fluxo, e a picada com agulha no anestesiado é o sinal mais confiável.
-como: O SBCM 2025 perguntou em que local a avaliação clínica da cor, do turgor e do enchimento capilar é mais confiável num dedo de perfusão duvidosa.
+como: A prova de título de 2025 perguntou em que local a avaliação clínica da cor, do turgor e do enchimento capilar é mais confiável num dedo de perfusão duvidosa.
 armadilha: Escolher o leito ungueal, o lugar onde quase todos aprendem a testar o enchimento capilar; sob a unha rígida o reenchimento é falso.
 !fim
 
@@ -590,7 +590,7 @@ A causa mais comum de trombose é **erro técnico** ou **ressecção insuficient
 
 !questoes treino=mao-2547
 conceito: O enxerto de veia usado para reconstruir artéria é invertido para que as válvulas venosas, que só deixam passar o sangue em direção ao coração, se abram no sentido do fluxo arterial.
-como: O SIMÃO 2021 perguntou por que o enxerto de safena deve ser invertido ao reconstruir uma artéria do antebraço.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou por que o enxerto de safena deve ser invertido ao reconstruir uma artéria do antebraço.
 armadilha: Atribuir a inversão ao calibre ou à espessura da parede; o motivo é a orientação das válvulas.
 !fim
 
@@ -609,7 +609,7 @@ Os autores preferem sacrificar o nervo doador para o enxerto num procedimento **
 
 !questoes treino=mao-1753
 conceito: No esmagamento grave e contaminado, o nervo com perda de segmento tem os cotos marcados e o enxerto autólogo fica para um segundo tempo próximo, com a ferida limpa e a zona de lesão do nervo delimitada (em torno de 3 a 4 semanas), sem esperar meses; conduto ou aloenxerto servem para defeitos curtos, de até 1 a 2 cm.
-como: O SIMÃO 2026 descreveu um nervo digital comum com perda de segmento, cotos marcados e leito sem condição de reconstrução, e perguntou quando programar o enxerto.
+como: O simulado da prova de título de cirurgia da mão de 2026 descreveu um nervo digital comum com perda de segmento, cotos marcados e leito sem condição de reconstrução, e perguntou quando programar o enxerto.
 armadilha: Esperar 3 meses pelo sinal de TINEL, como numa lesão em continuidade, ou enxertar em 1 a 2 semanas, antes de a zona de lesão se definir.
 !fim
 
@@ -633,7 +633,7 @@ As regras de uso (p. 1509): esponja um pouco menor que a ferida, troca a cada **
 
 !questoes relacionadas=mao-1642,mao-1598 treino=mao-2064
 conceito: A pressão negativa age como miofibroblasto mecânico, por macrodeformação (contração da ferida) e microdeformação (estímulo celular à granulação); é contraindicada fechada sobre infecção, contaminação grave ou sangramento significativo, e no membro superior não deve atrasar um retalho.
-como: O SBCM 2024 pediu em qual situação o curativo a vácuo fechado não deve ser usado no membro superior; a USP-SP 2026 cobrou o mecanismo da terapia e o significado da microdeformação.
+como: A prova de título de 2024 pediu em qual situação o curativo a vácuo fechado não deve ser usado no membro superior; a USP-SP 2026 cobrou o mecanismo da terapia e o significado da microdeformação.
 armadilha: Usar a pressão negativa como substituto universal do retalho, ou aplicá-la sobre ferida infectada ou que sangra.
 !fim
 
@@ -663,7 +663,7 @@ As áreas doadoras do parcial são coxa lateral, quadril, nádega, couro cabelud
 
 !questoes relacionadas=mao-0717,mao-0602 treino=mao-2744
 conceito: O enxerto sobrevive por embebição plasmática nas primeiras 24 a 36 horas e depois por inosculação (vasos do leito ligados a canais do enxerto) e neovascularização; o parcial pega melhor em leito marginal e o total contrai menos.
-como: O IAUPE 2025 pediu a definição de inosculação; o SIMÃO 2012, o momento e as condições para aplicar o enxerto numa ferida limpa; o TARO 2007 comparou enxerto parcial e total.
+como: O IAUPE 2025 pediu a definição de inosculação; o simulado da prova de título de cirurgia da mão de 2012, o momento e as condições para aplicar o enxerto numa ferida limpa; o TARO 2007 comparou enxerto parcial e total.
 armadilha: Inverter as fases (inosculação antes da embebição) ou atribuir ao enxerto parcial a menor contração, que é do total.
 !fim
 
@@ -683,7 +683,7 @@ As **peças de reposição** compostas também cobrem: a falange proximal de um 
 
 !questoes relacionadas=mao-0682,mao-1899 treino=mao-2411
 conceito: O retalho aleatório vive do plexo subdérmico, sem vaso dominante; o inguinal é axial, pela circunflexa ilíaca superficial, e é o cavalo de batalha pediculado da mão; o grande dorsal livre cobre bem grandes áreas com osso exposto.
-como: A FMRP-USP 2026 pediu a característica dos retalhos ao acaso; o SIMÃO 2022 perguntou a irrigação do retalho inguinal; o ENARE 2025 pediu o transplante microcirúrgico mais indicado para grande perda cutânea com osso exposto.
+como: A FMRP-USP 2026 pediu a característica dos retalhos ao acaso; o simulado da prova de título de cirurgia da mão de 2022 perguntou a irrigação do retalho inguinal; o ENARE 2025 pediu o transplante microcirúrgico mais indicado para grande perda cutânea com osso exposto.
 armadilha: Chamar de axial qualquer retalho com pedículo, ou esquecer que a ponta de um axial além do território do vaso volta a ser aleatória.
 !fim
 

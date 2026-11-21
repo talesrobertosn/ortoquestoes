@@ -28,7 +28,7 @@ Três ideias atravessam o capítulo e resolvem a maioria das questões sem decor
 A banca gira em poucos blocos, que seguem a ordem anatômica do capítulo:
 
 - **Colo do metacarpo** (o "boxer"): força deformante, angulação aceitável em cada dedo, pseudogarra, manobra de JAHSS.
-- **Classificação de WEISS e HASTINGS** das fraturas unicondilares da falange proximal, que caiu cinco vezes no SIMÃO e na SBCM, e as regras de fixação dos côndilos.
+- **Classificação de WEISS e HASTINGS** das fraturas unicondilares da falange proximal, que caiu cinco vezes no simulado da prova de título de cirurgia da mão e na prova de título, e as regras de fixação dos côndilos.
 - **Desvios das falanges e do metacarpo** (ápice volar na falange proximal, ápice dorsal no metacarpo) e as forças que os produzem.
 - **Base do polegar**: BENNETT, ROLANDO e a fratura epibasal.
 - **Parafusos interfragmentários**: comprimento do traço, número e diâmetro dos parafusos.
@@ -132,7 +132,7 @@ O capítulo acrescenta duas observações que ajudam a entender a conduta (p. 23
 
 !questoes treino=mao-1934,mao-2027,mao-2548
 conceito: Na série de McELFRESH e DOBYNS, o indicador foi o dedo mais acometido (dedo de borda com CMC imóvel) e o padrão cominutivo o mais comum.
-como: Os simulados do SIMÃO 2023, da SBCM 2024 e do SIMÃO 2021 pedem o raio mais acometido e o padrão mais frequente.
+como: Os simulados do simulado da prova de título de cirurgia da mão de 2023, da prova de título de 2024 e do simulado da prova de título de cirurgia da mão de 2021 pedem o raio mais acometido e o padrão mais frequente.
 armadilha: Marcar o quinto dedo por associação com o colo do "boxer": no colo, o quinto domina; na cabeça, é o indicador.
 !fim
 
@@ -225,7 +225,7 @@ Essas duas causas explicam também por que a redução é **fácil de obter e di
 
 !questoes treino=mao-1798
 conceito: No colo do metacarpo, a cabeça flete porque a cortical volar é cominuída pelo impacto e porque os intrínsecos cruzam a MF volares ao seu eixo de rotação; por isso a redução se perde dentro da imobilização.
-como: O simulado do SIMÃO 2026 descreve a perda de redução no gesso e pede os dois fatores.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 descreve a perda de redução no gesso e pede os dois fatores.
 armadilha: Culpar a cominuição dorsal, a tração dos extensores ou a ruptura da placa volar da MF.
 !fim
 
@@ -237,7 +237,7 @@ A deformidade que define a conduta é a **pseudogarra** (p. 235). Com a cabeça 
 
 !questoes central=mao-1312 treino=mao-2412,mao-2964
 conceito: A pseudogarra (hiperextensão da MF com flexão da IFP à extensão ativa) nasce da flexão excessiva da cabeça e do encurtamento relativo do metacarpo, que desequilibram extensores e intrínsecos; quando presente, indica redução e, se ela não se mantém, cirurgia.
-como: A USP-SP 2025 pediu a afirmação correta sobre o colo do quinto, e a correta era operar na presença de pseudogarra; o simulado do SIMÃO 2022 pede a consequência da angulação dorsal.
+como: A USP-SP 2025 pediu a afirmação correta sobre o colo do quinto, e a correta era operar na presença de pseudogarra; o simulado do simulado da prova de título de cirurgia da mão de 2022 pede a consequência da angulação dorsal.
 armadilha: Achar que a angulação, sozinha, define a cirurgia: sem pseudogarra nem mal rotação, o autor trata sem operar mesmo angulações grandes no quinto dedo.
 !fim
 
@@ -249,7 +249,7 @@ O capítulo também é honesto sobre a medida: a angulação medida na radiograf
 
 !questoes treino=mao-1799
 conceito: O quarto e o quinto metacarpos toleram mais angulação no colo porque as suas CMC têm 20 a 30° de mobilidade sagital, que compensa a flexão da cabeça; o segundo e o terceiro têm CMC quase imóveis.
-como: O simulado do SIMÃO 2026 pede quais metacarpos toleram mais e o motivo.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 pede quais metacarpos toleram mais e o motivo.
 armadilha: Atribuir a tolerância à MF (mais móvel nos dedos ulnares): a compensação vem da CMC, não da MF.
 !fim
 
@@ -333,7 +333,7 @@ No pós-operatório: intrínseco plus por 5 a 7 dias; goteira ulnar por **2 a 3 
 
 !questoes central=mao-1895 treino=mao-2333,mao-2332,mao-2972,mao-2973
 conceito: A maioria das fraturas do colo do quarto e do quinto metacarpos é tratada sem cirurgia; o que indica cirurgia é a mal rotação (sobreposição dos dedos) e a pseudogarra que não se corrige, não a angulação isolada dentro dos limites do dedo.
-como: O ENARE de Cirurgia da Mão 2025 descreveu um lutador com fratura do colo e pediu a conduta (órtese); os simulados do SIMÃO 2024 pedem qual achado isolado ainda permite tratamento conservador (60° no quinto) e qual afirmação segue o Green (rotação com sobreposição indica cirurgia).
+como: O ENARE de Cirurgia da Mão 2025 descreveu um lutador com fratura do colo e pediu a conduta (órtese); os simulados do simulado da prova de título de cirurgia da mão de 2024 pedem qual achado isolado ainda permite tratamento conservador (60° no quinto) e qual afirmação segue o Green (rotação com sobreposição indica cirurgia).
 armadilha: Indicar cirurgia por angulação de 30 a 40° no quinto dedo, ou aceitar 30° no indicador.
 !fim
 
@@ -374,7 +374,7 @@ A transversa é mais tolerada no anelar e no mínimo, pela mesma razão do colo:
 
 !questoes treino=mao-2386,mao-2493
 conceito: Na fratura transversa da diáfise do metacarpo, produzida por carga axial, o momento de flexão dos interósseos cria a angulação com ápice dorsal.
-como: Os simulados do SIMÃO 2022 e 2021 pedem a força muscular do ápice dorsal e a afirmação correta sobre as transversas.
+como: Os simulados do simulado da prova de título de cirurgia da mão de 2022 e 2021 pedem a força muscular do ápice dorsal e a afirmação correta sobre as transversas.
 armadilha: Marcar os flexores profundos ou superficiais, os lumbricais, ou inverter o ápice para palmar.
 !fim
 
@@ -402,7 +402,7 @@ E ainda há os números do **colo** (15°, 30 a 40°, 50 a 60°). A dica é ler 
 
 !questoes treino=mao-2442,mao-2965,mao-2970
 conceito: Na diáfise do segundo e do terceiro metacarpos, o Green diz que qualquer angulação merece redução, porque as suas CMC não compensam; no quarto, mais de 20°, e no quinto, mais de 30°.
-como: O simulado do SIMÃO 2022 pede quanta angulação o Green aceita no segundo e no terceiro.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pede quanta angulação o Green aceita no segundo e no terceiro.
 armadilha: Responder 10 a 15°, que é o número do colo, ou 10°, que é o limite do autor para a redução aberta.
 !fim
 
@@ -501,7 +501,7 @@ O fixador é indicado **quando a reconstituição anatômica não é viável** (
 
 !questoes treino=mao-2428,mao-2967,mao-2979,mao-2981
 conceito: O fixador externo no metacarpo é indicado quando a reconstrução anatômica não é viável (exposta cominuta, perda óssea, perda de partes moles) e para estabilizar a pseudartrose infectada depois do desbridamento.
-como: O simulado do SIMÃO 2022 pede a afirmação sobre o fixador que segue o Green.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pede a afirmação sobre o fixador que segue o Green.
 armadilha: Dizer que o fixador só serve como fixação temporária ou que é contraindicado quando não se consegue reconstrução anatômica (é o contrário).
 !fim
 
@@ -631,7 +631,7 @@ O autor está satisfeito com a **osteotomia metafisária da base** de WECKESSER 
 
 !questoes treino=mao-2198
 conceito: Na consolidação viciosa só rotacional do metacarpo, o autor prefere a osteotomia metafisária da base (WECKESSER), que corrige cerca de 18 a 19° nos dedos centrais e até 20 a 30° no mínimo, limitada pelo ligamento metacarpal transverso profundo.
-como: O simulado da SBCM 2023 pede a região da osteotomia preferida no Green.
+como: O simulado da prova de título de 2023 pede a região da osteotomia preferida no Green.
 armadilha: Marcar a osteotomia no antigo traço ou no colo; para a rotação pura, o metacarpo é cortado na base.
 !fim
 
@@ -649,7 +649,7 @@ As causas (p. 248): perda óssea, osteomielite, imobilização inadequada e fixa
 
 !questoes treino=mao-1936,mao-2955,mao-2963
 conceito: A pseudartrose não infectada do metacarpo é quase sempre atrófica e hipovascular; trata-se com ressecção do foco, enxerto ósseo e fixação interna estável, intervindo por volta dos 4 meses (JUPITER).
-como: O simulado do SIMÃO 2023 pede o tratamento recomendado na pseudartrose não infectada.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pede o tratamento recomendado na pseudartrose não infectada.
 armadilha: Escolher a sequência da pseudartrose infectada (desbridamento, culturas, antibiótico, fixação provisória) ou o fixador externo como definitivo.
 !fim
 
@@ -677,7 +677,7 @@ A fratura da falange distal é **a fratura mais comum da mão** (p. 248). Faz se
 
 !questoes treino=mao-1944,mao-2958
 conceito: A falange distal é a fratura mais comum da mão; no tufo, a lesão que importa é a da matriz ungueal e da polpa.
-como: O simulado do SIMÃO 2023 parte do hematoma subungueal drenado com retirada da unha e pede a conduta seguinte.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 parte do hematoma subungueal drenado com retirada da unha e pede a conduta seguinte.
 armadilha: Achar que o metacarpo do quinto dedo ou a falange proximal são mais frequentes que a falange distal.
 !fim
 
@@ -715,7 +715,7 @@ O tratamento que o capítulo recomenda: **irrigação e desbridamento**, **redu�
 
 !questoes central=mao-0773,mao-1213 treino=mao-2164,mao-1694,mao-2252,mao-2966,mao-2975
 conceito: Na fratura epifisária da falange distal da criança (SEYMOUR), o extensor terminal fica no fragmento epifisário e o flexor profundo no distal, com ápice dorsal; a matriz ungueal lacerada fica interposta no foco e a lâmina sai por cima da prega: é uma fratura exposta, que exige desbridamento, redução, reparo da matriz e recolocação da lâmina sob a prega.
-como: O INTO 2023 e os simulados da SBCM 2022 e do SIMÃO pedem a estrutura interposta; a PUC-SP 2023 pediu a afirmação correta sobre a lesão; o simulado da SBCM 2023 pede o que ter em mente (tratar como fratura aberta).
+como: O INTO 2023 e os simulados da prova de título de 2022 e do simulado da prova de título de cirurgia da mão pedem a estrutura interposta; a PUC-SP 2023 pediu a afirmação correta sobre a lesão; o simulado da prova de título de 2023 pede o que ter em mente (tratar como fratura aberta).
 armadilha: Marcar placa volar, colateral ou flexor profundo como estrutura interposta; ou tratar como martelo fechado só com tala.
 alerta: O Green 7 não usa o epônimo SEYMOUR; descreve a lesão como fratura epifisária da falange distal, e a interposição da matriz decorre da laceração transversa e da lâmina por cima da prega.
 !fim
@@ -774,7 +774,7 @@ Uma forma simples de fixar a sequência: os tipos I e II são traços que separa
 
 !questoes central=mao-0666,mao-1130,mao-1166 treino=mao-1708,mao-2028,mao-2954,mao-2971
 conceito: WEISS e HASTINGS: I oblíquo volar, II sagital longo, III coronal dorsal, IV coronal volar; quase todas são instáveis e exigem fixação.
-como: A FMRP-USP 2026 e a PUC-SP 2021 pediram o tipo III (coronal dorsal); a PUC-SP 2022 pediu o tipo do traço sagital longo (II); os simulados da SBCM 2024 e do acervo pedem o plano do tipo III.
+como: A FMRP-USP 2026 e a PUC-SP 2021 pediram o tipo III (coronal dorsal); a PUC-SP 2022 pediu o tipo do traço sagital longo (II); os simulados da prova de título de 2024 e do acervo pedem o plano do tipo III.
 armadilha: Trocar III e IV (dorsal e volar) ou confundir a classificação de WEISS e HASTINGS (só unicondilares da falange proximal, quatro tipos) com a classificação geral das condilares (três tipos).
 alerta: A Fig. 7.22 do Green 7 é só um desenho; a correspondência dos tipos vem do artigo original de WEISS e HASTINGS reproduzido na figura e bate com as provas e com o acervo.
 !fim
@@ -801,7 +801,7 @@ O quadro de pontos críticos (p. 250) é cobrado quase frase por frase:
 
 !questoes treino=mao-1797,mao-2957,mao-2976,mao-2980
 conceito: A fratura unicondilar desviada da falange proximal é tratada com redução e fixação, percutânea ou aberta, com dois implantes e sem desinserir o ligamento colateral do fragmento, que leva a sua vascularização.
-como: O simulado do SIMÃO 2026 descreve um goleiro com fratura unicondilar com degrau e desvio angular e pede a conduta.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 descreve um goleiro com fratura unicondilar com degrau e desvio angular e pede a conduta.
 armadilha: Tratar com tala e "observar" (são instáveis mesmo sem desvio) ou fixar com um fio só.
 !fim
 
@@ -893,7 +893,7 @@ armadilha: Culpar os lumbricais, o flexor superficial ou os flexores extrínseco
 
 !questoes central=mao-0675 treino=mao-1933,mao-1699
 conceito: As espirais e oblíquas são mais comuns na falange proximal e as transversas na falange média; na média, o Green 7 descreve a angulação como variável.
-como: A FMRP-USP 2026 e o simulado do SIMÃO 2023 pediram o traço mais frequente na falange média.
+como: A FMRP-USP 2026 e o simulado do simulado da prova de título de cirurgia da mão de 2023 pediram o traço mais frequente na falange média.
 armadilha: Marcar oblíquo ou espiral para a falange média.
 alerta: A regra clássica de que a fratura da falange média proximal à inserção do flexor superficial angula com ápice dorsal e a distal com ápice volar (cobrada no simulado mao-1699) vem de outras fontes; o Green 7 só diz que a angulação da falange média é variável.
 !fim
@@ -923,7 +923,7 @@ Quando a fratura instável não reduz ou não pode ser pinada, a redução abert
 
 ## Os acessos à falange: o que se pode cortar
 
-Os acessos são um ponto fino que a SBCM cobra (p. 257 a 259):
+Os acessos são um ponto fino que a prova de título cobra (p. 257 a 259):
 
 - PRATT (Clin Orthop, 1959): **dividir o aparelho extensor longitudinalmente** e fechar com fio de aço "pull-out". A desvantagem é a **cicatriz do aparelho dorsal** à pele e ao osso, que limita o deslizamento (p. 258).
 - POSNER (Orthop Clin North Am, 1977): incisão **médio-lateral** com **excisão de uma bandeleta lateral**, abrindo do lado para onde o fragmento distal desviou (p. 258).
@@ -997,7 +997,7 @@ Alguns detalhes técnicos que caem (p. 262 a 264):
 
 !questoes treino=mao-2334,mao-2494
 conceito: Na transversa instável e não cominuta da diáfise da falange, o autor prefere fios de KIRSCHNER (cruzados no plano coronal) e ou fio intraósseo; o intramedular é fácil e dispensa equipamento especial, mas não controla a rotação.
-como: Os simulados do SIMÃO 2024 e 2021 pedem o método que o autor usa na grande maioria das transversas da falange média e a característica do intramedular.
+como: Os simulados do simulado da prova de título de cirurgia da mão de 2024 e 2021 pedem o método que o autor usa na grande maioria das transversas da falange média e a característica do intramedular.
 armadilha: Indicar placa como primeira escolha nas falanges ou fixador externo numa transversa simples.
 !fim
 
@@ -1017,7 +1017,7 @@ armadilha: Indicar placa como primeira escolha nas falanges ou fixador externo n
 
 !questoes treino=mao-2637
 conceito: Na falange proximal, a angulação de ápice volar é a que mais custa: produz pseudogarra e déficit extensor da IFP, e no adulto 25° ou mais não corrigidos levam a perda de movimento.
-como: O simulado do SIMÃO 2023 pede os limites de angulação aceitos no tratamento não operatório da falange proximal (cerca de 10° no plano coronal e 20 a 25° no sagital).
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pede os limites de angulação aceitos no tratamento não operatório da falange proximal (cerca de 10° no plano coronal e 20 a 25° no sagital).
 armadilha: Inverter os planos: o coronal (que dá sobreposição) é o menos tolerado.
 alerta: Os números de 10° no coronal e 20 a 25° no sagital não estão no Green 7; o capítulo dá os 25° de ápice volar na base da falange proximal do adulto (p. 265) e os 25 a 30° da consolidação viciosa (p. 266).
 !fim
@@ -1112,7 +1112,7 @@ O achado mais interessante do estudo: a infecção **não se relacionou à fixa�
 
 !questoes treino=mao-2200
 conceito: Na classificação de SWANSON, a fratura exposta da mão é tipo II quando há contaminação grosseira, atraso maior que 24 horas ou doença sistêmica significativa; a infecção (14% contra 1,4%) não depende da fixação interna.
-como: O simulado da SBCM 2023 descreve uma exposta tratada mais de um dia depois e pede o tipo.
+como: O simulado da prova de título de 2023 descreve uma exposta tratada mais de um dia depois e pede o tipo.
 armadilha: Procurar tipos III ou IV: a classificação de SWANSON tem só dois tipos.
 !fim
 
@@ -1138,7 +1138,7 @@ Na **falange proximal do polegar**, a cabeça e o colo se tratam como nos dedos;
 
 !questoes treino=mao-2347,mao-2969
 conceito: Na fratura transversa da falange proximal do polegar, os intrínsecos tenares fletem o fragmento proximal e o extensor longo estende o distal (ápice volar); a redução fechada costuma ser estável, e mais de 20 a 30° no perfil é inaceitável pelo déficit de extensão da IF.
-como: O simulado do SIMÃO 2024 pede a afirmação sobre a fratura extra-articular da falange proximal do polegar que segue o Green.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 pede a afirmação sobre a fratura extra-articular da falange proximal do polegar que segue o Green.
 armadilha: Dizer que a redução costuma ser instável ou que o acesso preferido é volar (é dorsal, preservando a inserção do extensor longo).
 !fim
 

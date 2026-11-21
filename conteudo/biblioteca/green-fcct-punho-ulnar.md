@@ -24,7 +24,7 @@ No punho ulnar convivem, em poucos milímetros, uma articulação que **gira** (
 
 Uma terceira ideia, menor, decide o tratamento da fibrocartilagem: **o centro do disco não tem vasos e a periferia tem**. Lesão central se desbrida, lesão periférica se repara.
 
-A banca gira em poucos blocos, que seguem a ordem deste resumo: a anatomia da incisura e da fóvea (forma da incisura, raios, rebordos, ramos dos radioulnares), as funções e os componentes da FCT, a classificação de PALMER (de longe o bloco mais cobrado: oito questões do SIMÃO e do SBCM só sobre as letras), a luxação da ARUD e a instabilidade depois da fratura do rádio, as reconstruções, o impacto ulnocarpal e os salvamentos (DARRACH, BOWERS, SAUVÉ-KAPANDJI).
+A banca gira em poucos blocos, que seguem a ordem deste resumo: a anatomia da incisura e da fóvea (forma da incisura, raios, rebordos, ramos dos radioulnares), as funções e os componentes da FCT, a classificação de PALMER (de longe o bloco mais cobrado: oito questões do simulado da prova de título de cirurgia da mão e da prova de título só sobre as letras), a luxação da ARUD e a instabilidade depois da fratura do rádio, as reconstruções, o impacto ulnocarpal e os salvamentos (DARRACH, BOWERS, SAUVÉ-KAPANDJI).
 
 > **Na prova:** incisura **rasa**, raio **maior** que o da cabeça; forma mais comum **plana (42%)**, também a mais instável; rebordo **palmar** com lábio fibrocartilaginoso; FCT com **cinco componentes**; estabilizador primário = **radioulnares**, inserção crítica **foveal** (ligamentum subcruentum); disco vascularizado só nos **15% periféricos**; PALMER **A central, B ulnar, C distal, D radial**; perfuração degenerativa a partir da **2C**.
 
@@ -42,7 +42,7 @@ Outra ideia que o Green põe logo no início: a **ulna é a unidade estável** d
 
 !questoes treino=mao-1759,mao-2214,mao-3298,mao-3306
 conceito: A incisura sigmoide é rasa e tem raio maior (15 a 19 mm) que o da cabeça ulnar (10 mm); a articulação é pouco congruente, combina rotação com translação e depende das partes moles; no plano coronal, a relação mais frequente é paralela (55%).
-como: O SIMÃO 2026 pediu a geometria que explica rotação com translação e estabilidade de partes moles; o SBCM 2023, a inclinação coronal mais frequente.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu a geometria que explica rotação com translação e estabilidade de partes moles; a prova de título de 2023, a inclinação coronal mais frequente.
 armadilha: Achar que os raios são iguais e a estabilidade é óssea, ou que a congruência é máxima nos extremos da rotação (é em neutro).
 !fim
 
@@ -88,7 +88,7 @@ O **estiloide ulnar** continua a crista subcutânea da ulna, projeta-se **2 a 6 
 
 !questoes treino=mao-2536
 conceito: A fóvea da cabeça da ulna é a concavidade rasa na base do estiloide, no centro geométrico da cabeça, sem cartilagem e com forames vasculares; é a principal inserção dos ligamentos radioulnares e ulnocárpicos.
-como: O SIMÃO 2021 pediu a descrição da fóvea.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu a descrição da fóvea.
 armadilha: Confundir a fóvea com a ponta do estiloide ou com a incisura sigmoide, ou imaginá-la coberta de cartilagem.
 !fim
 
@@ -126,7 +126,7 @@ O **homólogo do menisco** é um tecido conjuntivo frouxo e bem vascularizado, d
 
 !questoes central=mao-1227 treino=mao-2216,mao-2126,mao-3307
 conceito: A FCT tem cinco componentes e quatro funções primárias (estender a superfície do rádio sobre a cabeça ulnar, transmitir carga pela ulnocárpica, conexão forte e flexível, sustentar o carpo ulnar); os radioulnares são os estabilizadores primários; os ulnocárpicos palmares são três, o ulnocapitato superficial aos outros dois.
-como: O SBCM 2023 pediu a função corretamente enunciada; a UERJ 2025, discursiva, componentes, estabilizador principal, funções e estabilizadores secundários; o SBCM 2022, número e disposição dos ulnocárpicos.
+como: A prova de título de 2023 pediu a função corretamente enunciada; a UERJ 2025, discursiva, componentes, estabilizador principal, funções e estabilizadores secundários; a prova de título de 2022, número e disposição dos ulnocárpicos.
 armadilha: Dizer que a FCT transmite carga pela ARUD, sustenta o carpo radial ou forma ligação rígida; contar dois ulnocárpicos.
 alerta: `mao-1227` é discursiva, sem gabarito; pelo Green (p. 480 a 482): (a) os cinco componentes, com os radioulnares (inserções foveais) como principais estabilizadores; (b) as quatro funções da tabela; (c) pronador quadrado, ECU, membrana interóssea, cápsula da ARUD e disco. Em `mao-2126`, o Green descreve o ulnocapitato como palmar aos outros dois, sem as palavras "superficial" e "profundo".
 !fim
@@ -208,7 +208,7 @@ O que se cobra é a função. A BOD dá **estabilidade dorsopalmar** à ARUD, e 
 
 !questoes treino=mao-2297,mao-3320
 conceito: Os estabilizadores secundários da ARUD são o pronador quadrado, o ECU, a membrana interóssea, a cápsula da ARUD e o disco.
-como: O SIMÃO 2024 pediu qual estrutura está entre eles, contra ligamento anular, menisco homólogo e FCU.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu qual estrutura está entre eles, contra ligamento anular, menisco homólogo e FCU.
 armadilha: Escolher o homólogo do menisco (componente da FCT, não listado como estabilizador) ou o anular (radioulnar proximal).
 !fim
 
@@ -292,7 +292,7 @@ Um achado radiográfico que cai fora do contexto de trauma: o Green (cap. 56, p.
 
 !questoes central=mao-0827 treino=mao-1968
 conceito: Na doença por pirofosfato de cálcio do punho, a calcificação da FCT é o achado radiográfico típico, inclusive na tenossinovite do túnel do carpo por pseudogota.
-como: O SIMÃO 2023 e o INTO 2026 perguntaram onde os cristais se depositam com mais frequência.
+como: O simulado da prova de título de cirurgia da mão de 2023 e o INTO 2026 perguntaram onde os cristais se depositam com mais frequência.
 armadilha: Escolher o espaço escafossemilunar ou o capuz extensor.
 alerta: O Green (p. 1906) não diz literalmente "local mais comum"; diz que as radiografias muitas vezes mostram calcificação na FCT, o que é compatível com o gabarito.
 !fim
@@ -336,7 +336,7 @@ Combinando os dois, segundo a classificação de ATZEI e LUCHETTI descrita pelo 
 
 !questoes central=mao-1447 treino=mao-1777
 conceito: Trampolim positivo com gancho negativo = lesão superficial (distal) com fóvea íntegra; gancho positivo (borda ulnar deslocada para o centro) = componente proximal solto da fóvea.
-como: A USP-SP 2024 deu trampolim positivo e gancho negativo; o SIMÃO 2026, trampolim normal, gancho positivo e ARUD instável.
+como: A USP-SP 2024 deu trampolim positivo e gancho negativo; o simulado da prova de título de cirurgia da mão de 2026, trampolim normal, gancho positivo e ARUD instável.
 armadilha: Achar que gancho positivo indica lesão distal.
 alerta: Em `mao-1777`, o Campbell (p. 3317) diz que lesão proximal ou completa dá os dois testes positivos; o trampolim normal descrito na questão não está no livro, mas a mecânica do gancho (deslocamento só com o componente proximal solto) sustenta a desinserção foveal isolada do gabarito.
 !fim
@@ -452,7 +452,7 @@ O capítulo 17 (p. 687) acrescenta duas observações. A perfuração degenerati
 
 !questoes treino=mao-2514,mao-2296,mao-3304,mao-3318
 conceito: A perfuração do disco surge na 2C; perfuração com condromalácia do semilunar ou da cabeça ulnar, sem lesão lunopiramidal, é 2C.
-como: O SIMÃO 2021 perguntou em que classe aparece a perfuração; o SIMÃO 2024, a perfuração degenerativa com condromalácia.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou em que classe aparece a perfuração; o simulado da prova de título de cirurgia da mão de 2024, a perfuração degenerativa com condromalácia.
 armadilha: Responder 2D, que exige a perfuração do lunopiramidal.
 !fim
 
@@ -478,7 +478,7 @@ O reparo funciona porque a periferia é **vascularizada** (cap. 17, p. 678). As 
 
 !questoes central=mao-0527 relacionadas=mao-0496 treino=mao-1776
 conceito: A 1B aguda começa com imobilização acima do cotovelo (4 a 6 semanas no Green, 6 no Campbell); reinserção se a dor persistir ou houver instabilidade; é a lesão periférica reparável.
-como: O TARO 2010 pediu o tratamento da 1B aguda; o SIMÃO 2026, a conduta inicial da lesão periférica com ARUD estável num tenista; o TARO 2012, o tipo em que a reinserção é indicada.
+como: O TARO 2010 pediu o tratamento da 1B aguda; o simulado da prova de título de cirurgia da mão de 2026, a conduta inicial da lesão periférica com ARUD estável num tenista; o TARO 2012, o tipo em que a reinserção é indicada.
 armadilha: Indicar sutura imediata por achar que a periferia só cicatriza com reparo precoce, ou reinserir uma 1A.
 !fim
 
@@ -504,7 +504,7 @@ O raciocínio por trás da técnica é a Figura 14.5: se a lesão é da camada p
 
 !questoes treino=mao-2223,mao-2363,mao-3294
 conceito: A sutura artroscópica transóssea de NAKAMURA reinsere a FCT na fóvea; é indicada na desinserção (ruptura) foveal, de preferência com variância neutra ou negativa.
-como: O SBCM 2023 e o SIMÃO 2024 perguntaram a lesão para a qual ela é mais indicada.
+como: A prova de título de 2023 e o simulado da prova de título de cirurgia da mão de 2024 perguntaram a lesão para a qual ela é mais indicada.
 armadilha: Indicá-la para perfuração central ou para lesão da borda radial.
 !fim
 
@@ -554,7 +554,7 @@ Uma dor profunda ao longo da membrana interóssea e na radioulnar proximal, numa
 
 !questoes treino=mao-2127,mao-2128,mao-2215,mao-3295,mao-3296,mao-3313
 conceito: A luxação dorsal, a mais comum, ocorre com hiperpronação e extensão e fica mais estável em supinação; a palmar, menos comum, fica mais estável em pronação e não exige cirurgia de rotina.
-como: O SBCM 2022 perguntou a posição na luxação dorsal e a posição de estabilidade após reduzir; o SBCM 2023, o que é verdadeiro na luxação palmar aguda.
+como: A prova de título de 2022 perguntou a posição na luxação dorsal e a posição de estabilidade após reduzir; a prova de título de 2023, o que é verdadeiro na luxação palmar aguda.
 armadilha: Inverter as posições de estabilidade ou dizer que a palmar é mais frequente.
 !fim
 
@@ -568,7 +568,7 @@ A incisura sigmoide é **subestimada na radiografia**; a tomografia a caracteriz
 
 !questoes treino=mao-2405,mao-1956,mao-3297,mao-3321,mao-3322
 conceito: Os radioulnares toleram no máximo 5 a 7 mm de encurtamento radial; as queixas residuais mais frequentes após fratura consolidada do rádio distal vêm da coluna ulnar.
-como: O SIMÃO 2022 perguntou o encurtamento tolerado; o SIMÃO 2023, a coluna das queixas residuais.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou o encurtamento tolerado; o simulado da prova de título de cirurgia da mão de 2023, a coluna das queixas residuais.
 armadilha: Escolher 2 a 3 mm (lembra o wafer) ou a coluna intermédia.
 !fim
 
@@ -614,7 +614,7 @@ A segunda classificação nasce de uma frase do Green que resume este resumo int
 
 !questoes central=mao-0871 treino=mao-2312,mao-3310
 conceito: Há duas classificações de FERNANDEZ no Green: a da fratura do rádio pelo mecanismo (I flexão, II cisalhamento como BARTON, III compressão, IV avulsão com fratura-luxação radiocárpica, V combinada de alta energia) e a das lesões da ARUD (I estável, II instável por ruptura maciça da FCT ou avulsão da base do estiloide, III articular, da incisura ou da cabeça ulnar).
-como: A UFG 2017 pediu a afirmação correta sobre a classificação pelo mecanismo; o SIMÃO 2024, o que caracteriza o tipo III das lesões da ARUD.
+como: A UFG 2017 pediu a afirmação correta sobre a classificação pelo mecanismo; o simulado da prova de título de cirurgia da mão de 2024, o que caracteriza o tipo III das lesões da ARUD.
 armadilha: Pôr o BARTON no tipo III, a fratura-luxação radiocárpica no tipo V ou indicar tratamento conservador no tipo II; na ARUD, pôr a ruptura maciça da FCT no tipo III.
 alerta: Em `mao-0871`, o Green (Figura 15.20A, p. 528) não traz a coluna de equivalentes pediátricos da tabela original de FERNANDEZ; o gabarito C (SALTER-HARRIS II corresponde ao tipo I) se sustenta por exclusão: pelo Green, BARTON é tipo II, a fratura-luxação radiocárpica é tipo IV e o cisalhamento desviado (tipo II) é cirúrgico (p. 527).
 !fim
@@ -638,7 +638,7 @@ Os sinais radiográficos mais específicos da instabilidade crônica são a **AR
 
 !questoes treino=mao-1959
 conceito: Mesmo com boa redução do rádio, o desvio coronal do fragmento articular pode instabilizar a ARUD; angulação dorsal acima de 20 a 30 graus associa-se a instabilidade palmar; perda de comprimento isolada dá mais impacto que perda de rotação; discrepância proximal dá sintomas no eixo inteiro.
-como: O SIMÃO 2023 pediu a afirmação correta sobre as instabilidades crônicas da ARUD.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu a afirmação correta sobre as instabilidades crônicas da ARUD.
 armadilha: Aceitar instabilidade dorsal pela angulação dorsal, perda de rotação pela perda de altura, ou sintomas só no punho.
 !fim
 
@@ -655,7 +655,7 @@ Sem consolidação viciosa nem artrose, a primeira opção é o **reparo tardio 
 
 !questoes central=mao-0815 treino=mao-2473,mao-3314,mao-3323
 conceito: A incisura plana é a mais propensa à instabilidade e a que responde pior ao reparo só de partes moles; é a de maior risco de falha do reparo da FCT.
-como: O SIMÃO 2021 perguntou a forma mais propensa à instabilidade; o INTO 2026, a de maior risco de falha do reparo.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou a forma mais propensa à instabilidade; o INTO 2026, a de maior risco de falha do reparo.
 armadilha: Escolher o tipo C ou S pela "forma estranha"; o problema é a falta de contraforte da plana.
 !fim
 
@@ -687,7 +687,7 @@ A reconstrução dos radioulnares é a **mais anatômica**, mas depende de uma i
 
 !questoes treino=mao-2039,mao-2550,mao-2447,mao-3311,mao-3316,mao-3317,mao-3319
 conceito: ADAMS e BERGER reconstroem a origem e a inserção anatômicas dos dois radioulnares com enxerto de tendão; HUI e LINSCHEID reconstroem os ulnocárpicos palmares com tira de base distal do FCU e servem quando a instabilidade ulnocárpica é o problema principal.
-como: O SBCM 2024 perguntou a técnica anatômica dos dois radioulnares; o SIMÃO 2021, quando as tenodeses ulnocárpicas se aplicam; o SIMÃO 2022, a tira usada por HUI e LINSCHEID.
+como: A prova de título de 2024 perguntou a técnica anatômica dos dois radioulnares; o simulado da prova de título de cirurgia da mão de 2021, quando as tenodeses ulnocárpicas se aplicam; o simulado da prova de título de cirurgia da mão de 2022, a tira usada por HUI e LINSCHEID.
 armadilha: Atribuir os dois ligamentos a SCHEKER ou a BOYES e BUNNELL; usar o ECU ou base proximal no HUI e LINSCHEID.
 !fim
 
@@ -742,7 +742,7 @@ Como a variância é dinâmica, a radiografia tem de provocá-la. O Green recome
 
 !questoes central=mao-0990 treino=mao-2465
 conceito: Perfuração central da FCT com edema ou cistos no semilunar sugere impacto ulnocarpal; a preensão com antebraço pronado é a incidência que aumenta a variância positiva (média de 2,5 mm).
-como: A UFG 2020 deu RM com perfuração central e edema do semilunar; o SIMÃO 2022 perguntou a incidência que aumenta a variância.
+como: A UFG 2020 deu RM com perfuração central e edema do semilunar; o simulado da prova de título de cirurgia da mão de 2022 perguntou a incidência que aumenta a variância.
 armadilha: Diagnosticar KIENBÖCK pelo edema do semilunar, ou escolher a preensão em supinação.
 !fim
 
@@ -815,7 +815,7 @@ A versão preferida do Green (p. 504, Figura 14.31) resseca **menos**: de 3 a 7 
 
 !questoes treino=mao-2040
 conceito: A hemirressecção-interposição de BOWERS retira a superfície articular da cabeça ulnar, mantém o estiloide, as inserções da FCT e a manga periosteal e preenche o espaço com cápsula ou tendão.
-como: O SBCM 2024 descreveu o procedimento e pediu o nome.
+como: A prova de título de 2024 descreveu o procedimento e pediu o nome.
 armadilha: Confundir com DARRACH (ressecção completa) ou SAUVÉ-KAPANDJI (artrodese com pseudartrose).
 !fim
 
@@ -848,7 +848,7 @@ Quando a ressecção falha de vez, a história é desanimadora: BIEBER, LINSCHEI
 
 !questoes central=mao-1537 treino=mao-1966
 conceito: DARRACH e SAUVÉ-KAPANDJI compartilham o risco de instabilidade do coto ulnar; o DARRACH vai pior em jovens de alta demanda, e a instabilidade cresce com a quantidade de ulna ressecada.
-como: A USP-SP 2026 perguntou a característica comum aos dois na AR; o SIMÃO 2023, a afirmação correta sobre a excisão da ulna distal na AR.
+como: A USP-SP 2026 perguntou a característica comum aos dois na AR; o simulado da prova de título de cirurgia da mão de 2023, a afirmação correta sobre a excisão da ulna distal na AR.
 armadilha: Achar que ressecar até 4 cm evita a instabilidade, ou que os dois controlam igualmente a translação ulnar.
 alerta: Em `mao-1966`, a alternativa de realocar o ECU para dorsal mesmo sem subluxação não é absurda pelo Green (p. 511), que manda considerar o reposicionamento em toda ressecção na AR; o gabarito (jovem de alta demanda não é bom candidato) é o que o livro sustenta diretamente (p. 506).
 !fim
@@ -879,7 +879,7 @@ A deformidade de MADELUNG entra neste capítulo porque é uma causa do desenvolv
 
 !questoes central=mao-0353 treino=mao-2287
 conceito: O ligamento de VICKERS prende o semilunar ao rádio proximal à fise e se relaciona à deformidade de MADELUNG; a osteotomia do rádio distal costuma aliviar a dor dorsal do punho e o encurtamento da ulna, a dor da ARUD.
-como: O CET-PR perguntou a doença ligada à estrutura de VICKERS; o SIMÃO 2024, o que se espera do tratamento de MADELUNG.
+como: O CET-PR perguntou a doença ligada à estrutura de VICKERS; o simulado da prova de título de cirurgia da mão de 2024, o que se espera do tratamento de MADELUNG.
 armadilha: Achar que a fisioterapia corrige a deformidade ou que o encurtamento da ulna nunca é indicado.
 alerta: Em `mao-0353`, o enunciado cita a FCT entre as inserções do ligamento; o Green (p. 1339) descreve só a ligação do semilunar ao rádio.
 !fim

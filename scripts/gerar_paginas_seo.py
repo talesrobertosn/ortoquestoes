@@ -277,7 +277,7 @@ def rodape(raiz: str = "../") -> str:
     · <a href="{raiz}curso-ortopedia-r1/">Estudo no R1</a>
     · <a href="{raiz}flashcards-ortopedia/">Flashcards</a>
     · <a href="{raiz}curso-preparatorio-teot/">Curso preparatório para o TEOT</a>
-    · <a href="{raiz}cirurgia-da-mao/">Questões de cirurgia da mão (SBCM, SIMÃO e residência)</a>
+    · <a href="{raiz}cirurgia-da-mao/">Questões de cirurgia da mão (prova de título, simulado e residência)</a>
     · <a href="{raiz}guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a>
     · <a href="{raiz}sobre/">Sobre o Orto Questões</a>
     · <a href="https://www.instagram.com/ortoquestoes/">@ortoquestoes</a>
@@ -292,20 +292,23 @@ def nota_simulado(questao: dict) -> str:
     """Aviso das questões com a etiqueta OrtoQuestões Simulados (vazio nas demais)."""
     if not questao.get("simulado"):
         return ""
-    prova = f" {esc(questao['prova'])}" if questao.get("prova") else ""
+    nomes = {"SBCM": "da prova de título", "SIMÃO": "do simulado da prova de título de cirurgia da mão"}
+    padrao = nomes.get(questao.get("prova") or "") or (f"da prova {esc(questao['prova'])}" if questao.get("prova") else "da prova")
     return (
         '<p class="meta"><strong>OrtoQuestões Simulados</strong>: elaborada a '
-        f"partir da bibliografia de referência e inspirada no padrão da prova{prova}. Não é questão "
+        f"partir da bibliografia de referência e inspirada no padrão {padrao}. Não é questão "
         "oficial da prova nem foi elaborada, revisada ou endossada pela instituição organizadora.</p>"
     )
 
 
 def origem_da_questao(questao: dict) -> str:
     """Prova e ano; nos simulados, deixa claro que é no padrão da prova."""
-    origem = " ".join(filter(None, [questao.get("prova"), str(questao.get("ano") or "")])).strip()
+    prova = {"SBCM": "Prova de título", "SIMÃO": "Simulado da prova de título"}.get(questao.get("prova") or "", questao.get("prova"))
+    origem = " ".join(filter(None, [prova, str(questao.get("ano") or "")])).strip()
     if questao.get("simulado"):
         if questao.get("prova") and questao.get("ano"):
-            return f"OrtoQuestões Simulados, inspirada {'na prova da' if questao['prova'] == 'SBCM' else 'no'} {origem}"
+            nome = {"SBCM": "na prova de título de", "SIMÃO": "no simulado da prova de título de cirurgia da mão de"}.get(questao["prova"])
+            return f"OrtoQuestões Simulados, inspirada {nome} {questao['ano']}" if nome else f"OrtoQuestões Simulados, inspirada no {origem}"
         return f"OrtoQuestões Simulados, padrão {origem}" if origem else "OrtoQuestões Simulados"
     return origem
 
@@ -381,7 +384,8 @@ SUFIXO_TITULO = " | Orto Questões"
 def rotulo_curto(questao: dict) -> str:
     """Origem em poucas palavras, para o título: "TEOT 2024", "simulado padrão TARO"."""
     if questao.get("simulado"):
-        return f"simulado padrão {questao['prova']}" if questao.get("prova") else "simulado"
+        nomes = {"SBCM": "simulado no padrão da prova de título", "SIMÃO": "simulado da prova de título"}
+        return nomes.get(questao.get("prova") or "") or (f"simulado padrão {questao['prova']}" if questao.get("prova") else "simulado")
     return " ".join(filter(None, [questao.get("prova"), str(questao.get("ano") or "")])).strip()
 
 

@@ -315,7 +315,7 @@ O Campbell acrescenta uma nuance que não contradiz o Green: aneurismas podem te
 
 !questoes treino=mao-2602,mao-2056,mao-2276
 conceito: Aneurismas do antebraço e da mão são raros, em geral falsos e traumáticos, e predominam na artéria ulnar; no canal de GUYON, o trauma repetido forma aneurisma quando há lesão grave da íntima com exposição da média.
-como: O SIMÃO 2022 pediu a epidemiologia segundo o Green; a SBCM 2024, a artéria mais acometida; a SBCM 2023, o tipo de lesão da parede que leva ao aneurisma.
+como: O simulado da prova de título de cirurgia da mão de 2022 pediu a epidemiologia segundo o Green; a prova de título de 2024, a artéria mais acometida; a prova de título de 2023, o tipo de lesão da parede que leva ao aneurisma.
 armadilha: Marcar a artéria radial pelo hábito da punção, chamar o aneurisma de verdadeiro e congênito, ou confundir o espessamento periadventicial (que contrai e oclui) com o mecanismo do aneurisma.
 !fim
 
@@ -331,7 +331,7 @@ O capítulo 54 também dá a distinção que a banca gosta: o **simulador finge*
 
 !questoes treino=mao-2179
 conceito: Para o Green, a doença de SECRETAN é provavelmente uma forma de linfedema factício, provocado pelo próprio paciente; tratamento sem cirurgia.
-como: A SBCM 2022 pediu a causa provável segundo o Green, com doença autoimune, alteração simpática e neoplasia como distratores.
+como: A prova de título de 2022 pediu a causa provável segundo o Green, com doença autoimune, alteração simpática e neoplasia como distratores.
 armadilha: Marcar causa reumática ou neoplásica: são justamente os diagnósticos que a ressonância deve excluir antes de firmar o factício.
 !fim
 
@@ -371,7 +371,7 @@ O próprio livro reconhece que a transposição de rotina é **muito controversa
 
 !questoes treino=mao-2353,mao-2522,mao-2352,ombro-cotovelo-0729
 conceito: Tipo IV é a fratura do capítulo que avança para medial e solta a borda lateral da tróclea; DUBBERLEY 2 é capítulo e tróclea em peça única (1, capítulo com ou sem crista lateral; 3, fragmentos separados).
-como: O SIMÃO 2024 pediu o tipo que leva a borda lateral da tróclea; o SIMÃO 2021, o tipo II de DUBBERLEY; o SIMÃO 2024, a incidência de neuropatia ulnar numa metanálise citada pelo Green.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu o tipo que leva a borda lateral da tróclea; o simulado da prova de título de cirurgia da mão de 2021, o tipo II de DUBBERLEY; o simulado da prova de título de cirurgia da mão de 2024, a incidência de neuropatia ulnar numa metanálise citada pelo Green.
 armadilha: Confundir DUBBERLEY 2 (peça única) com DUBBERLEY 3 (fragmentos separados), ou responder tipo III, que na classificação em quatro tipos é a cominutiva.
 alerta: Em `mao-2352` (gabarito cerca de 20%), o capítulo 18 do Green 7ª ed. conferido não traz a metanálise nem esse número; diz apenas que a neuropatia ulnar é comum e discute a transposição de rotina. O dado deve vir de outra edição. Gabarito oficial mantido.
 !fim
@@ -421,7 +421,7 @@ Sobre a **necrose avascular**, o livro é tranquilizador (p. 761): ela é provav
 
 !questoes treino=mao-2437,mao-2382,mao-2364,mao-2476,ombro-cotovelo-0730,ombro-cotovelo-0731,ombro-cotovelo-0737,ombro-cotovelo-0739
 conceito: Zona segura da cabeça do rádio: arco de 110 graus centrado 10 graus anterior ao ponto médio lateral, em rotação neutra. Mecanismo típico: valgo com supinação. Sinal da vela: hemartrose elevando os coxins anterior e posterior. Necrose dos fragmentos: comum e em geral assintomática.
-como: O SIMÃO 2022 pediu a descrição da zona segura e a combinação de posição do cotovelo e do antebraço no mecanismo; o SIMÃO 2024, o significado do sinal da vela; o SIMÃO 2021, a evolução da necrose avascular dos fragmentos.
+como: O simulado da prova de título de cirurgia da mão de 2022 pediu a descrição da zona segura e a combinação de posição do cotovelo e do antebraço no mecanismo; o simulado da prova de título de cirurgia da mão de 2024, o significado do sinal da vela; o simulado da prova de título de cirurgia da mão de 2021, a evolução da necrose avascular dos fragmentos.
 armadilha: Aceitar 90 ou 120 graus, o centro posterior ou o antebraço em pronação ou supinação; pôr coxins medial e lateral no sinal da vela (os coxins são anterior e posterior); esperar dor ou perda de movimento progressivas na necrose.
 !fim
 
@@ -463,7 +463,7 @@ Alguma perda de movimento é esperada depois de uma fratura-luxação do cotovel
 
 !questoes treino=mao-2420,mao-2529,mao-2356,mao-2552,ombro-cotovelo-0732,ombro-cotovelo-0733
 conceito: No círculo de HORII a lesão começa lateral e avança pela frente e por trás até o lado medial; a banda anterior do colateral medial é a última e pode ficar íntegra. Coronoide e cabeça do rádio estabilizam contra varo, valgo e rotação. Depois da fratura-luxação perde-se mais extensão.
-como: O SIMÃO 2022 pediu o sentido da progressão no círculo de HORII; o SIMÃO 2021, a estrutura que pode ficar íntegra e o movimento mais perdido; o SIMÃO 2024, a afirmação correta sobre estabilidade e coronoide.
+como: O simulado da prova de título de cirurgia da mão de 2022 pediu o sentido da progressão no círculo de HORII; o simulado da prova de título de cirurgia da mão de 2021, a estrutura que pode ficar íntegra e o movimento mais perdido; o simulado da prova de título de cirurgia da mão de 2024, a afirmação correta sobre estabilidade e coronoide.
 armadilha: Inverter o sentido (medial para lateral), dizer que a incisura troclear estabiliza no plano axial (é o sagital), ligar a subluxação à faceta anterolateral (é a anteromedial) ou achar pequeno o risco de nova luxação na tríade terrível.
 !fim
 
@@ -500,7 +500,7 @@ A lesão posterior (BADO 2) é reconhecida há muito como entidade distinta: cos
 
 !questoes treino=mao-2355,mao-2455,mao-2526,mao-2417,ombro-cotovelo-0734,ombro-cotovelo-0735
 conceito: No MONTEGGIA do adulto, o ponto-chave é restaurar de forma estável o alinhamento da ulna com placa; cabeça do rádio que não reduz significa ulna desalinhada até prova em contrário; se houver bloqueio de partes moles, o interósseo posterior pode estar aprisionado e não se corta tecido sem exposição adequada.
-como: O SIMÃO 2024 pediu a causa quase sempre responsável pela cabeça desalinhada depois da placa; o SIMÃO 2022, o cuidado antes de abrir a radiocapitelar e o nervo em risco nas luxações anterior e lateral; o SIMÃO 2021, a afirmação correta sobre a lesão no adulto.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu a causa quase sempre responsável pela cabeça desalinhada depois da placa; o simulado da prova de título de cirurgia da mão de 2022, o cuidado antes de abrir a radiocapitelar e o nervo em risco nas luxações anterior e lateral; o simulado da prova de título de cirurgia da mão de 2021, a afirmação correta sobre a lesão no adulto.
 armadilha: Culpar o ligamento anular ou a cápsula interpostos e abrir a articulação de rotina; dizer que a forma anterior é a mais frequente no adulto.
 !fim
 
@@ -614,7 +614,7 @@ Os primeiros socorros leigos não estão no Green. Duas revisões indexadas (PAR
 
 !questoes treino=mao-3841
 conceito: Na picada de jararaca, o soro antibotrópico específico é a medida que muda o curso sistêmico do envenenamento, mas pouco altera a lesão local já instalada (Green 7, cap. 52, p. 1791).
-como: A SBCM 2007 cobrou a conduta no acidente por serpente; o simulado pergunta qual medida tem efeito comprovado.
+como: A prova de título de 2007 cobrou a conduta no acidente por serpente; o simulado pergunta qual medida tem efeito comprovado.
 armadilha: Achar que garrote, sucção ou incisão ajudam; as revisões citadas mostram que não, e o garrote causa isquemia.
 !fim
 

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { rotuloProva } from '../config'
 import { Icone } from '../componentes/Icone'
 import { IconePixel } from '../componentes/IconePixel'
 import type { Indice } from '../dados/tipos'
@@ -102,12 +103,12 @@ export function RankingModalidade({ modalidade: m, indice, respondidas, aberto, 
           <h1 id="tq-mod-titulo">{TITULO[m.id]}</h1>
           <p className="tq-heroi__lead">{m.descricao}</p>
           <p>Contamos as {questoes(ranking.amostra)} {m.id === 'mao-titulo' ? 'feitas a partir de' : 'de'} {ranking.edicoes.length} {ranking.edicoes.length === 1 ? 'prova' : 'provas'}{anoMin ? ` (${anoMin === anoMax ? anoMin : `${anoMin} a ${anoMax}`})` : ''} e separamos pelo assunto principal de cada uma. O ranking se atualiza sozinho quando entram questões novas.</p>
-          {m.id === 'mao-titulo' && <p className="tq-heroi__previa"><Icone nome="alerta" tamanho={14} /><span><b>Questões no padrão da prova, não as oficiais.</b> Para cada questão da SBCM e do SIMÃO escrevemos uma nossa, no mesmo assunto. Elas mostram o que a prova cobrou; o SIMÃO é o simulado do exame, e o exame oficial é a SBCM.</span></p>}
+          {m.id === 'mao-titulo' && <p className="tq-heroi__previa"><Icone nome="alerta" tamanho={14} /><span><b>Questões no padrão da prova, não as oficiais.</b> Para cada questão da prova de título e do simulado da prova de título de cirurgia da mão escrevemos uma nossa, no mesmo assunto. Elas mostram o que a prova cobrou.</span></p>}
         </div>
         {geral.fontes.length > 1 && (
           <div className="tq-fontes" role="group" aria-label="Provas contadas">
-            <button type="button" aria-pressed={!fonte} onClick={() => definirFonte(null)}>{m.id === 'mao-titulo' ? 'SBCM e SIMÃO' : 'Todas as provas'}</button>
-            {geral.fontes.map((f) => <button key={f} type="button" aria-pressed={fonte === f} onClick={() => definirFonte(f)}>{f}</button>)}
+            <button type="button" aria-pressed={!fonte} onClick={() => definirFonte(null)}>{m.id === 'mao-titulo' ? 'Prova e simulado' : 'Todas as provas'}</button>
+            {geral.fontes.map((f) => <button key={f} type="button" aria-pressed={fonte === f} onClick={() => definirFonte(f)}>{rotuloProva(f)}</button>)}
           </div>
         )}
       </section>

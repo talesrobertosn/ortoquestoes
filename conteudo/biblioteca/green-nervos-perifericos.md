@@ -23,7 +23,7 @@ Uma ideia organiza o tema inteiro: **o nervo é um cabo de axônios que só se r
 
 A banca gira em poucos blocos, que seguem a ordem deste resumo:
 
-- **A anatomia fina do nervo**: as três bainhas e o que cada uma faz, as bandas de FONTANA, o calibre das fibras, o efeito da desmielinização, o deslizamento. É o bloco preferido do SIMÃO e do SBCM, com enunciados curtíssimos e alternativas que trocam a camada vizinha.
+- **A anatomia fina do nervo**: as três bainhas e o que cada uma faz, as bandas de FONTANA, o calibre das fibras, o efeito da desmielinização, o deslizamento. É o bloco preferido do simulado da prova de título de cirurgia da mão e da prova de título, com enunciados curtíssimos e alternativas que trocam a camada vizinha.
 - **As classificações**: SEDDON, SUNDERLAND e a menos conhecida THOMAS e HOLDORFF, que o Green usa na Tabela 30.1.
 - **A resposta à lesão**: degeneração walleriana, morte do corpo celular, estiramento.
 - **O exame**: anidrose, TINEL, bloqueio de condução contra lesão degenerativa, eletroneuromiografia.
@@ -83,7 +83,7 @@ Uma forma prática de fixar a divisão de trabalho: **compressão é com o epine
 
 !questoes central=mao-0981 treino=mao-2543,mao-3273,mao-3274,mao-3279,mao-3281,mao-3283,mao-3284,mao-3286,mao-3288,mao-3290,mao-3291
 conceito: O perineuro é o tecido conjuntivo denso e resistente que agrupa as fibras em fascículos e funciona como barreira de difusão; o endoneuro envolve cada fibra e o epineuro, o tronco.
-como: A UFG 2020 e a UFG 2021 repetiram o mesmo enunciado: o envoltório do fascículo. O simulado do SIMÃO 2021 cobrou a camada que acolchoa os fascículos e aumenta junto às articulações.
+como: A UFG 2020 e a UFG 2021 repetiram o mesmo enunciado: o envoltório do fascículo. O simulado do simulado da prova de título de cirurgia da mão de 2021 cobrou a camada que acolchoa os fascículos e aumenta junto às articulações.
 armadilha: Responder endoneuro (que envolve a fibra isolada) ou epineuro interno (que fica entre os fascículos, sem envolver cada um).
 alerta: Na `mao-2543` o gabarito aponta o epineuro interno; o Green 7 (p. 981 e 982) atribui a proteção contra compressão ao epineuro como um todo, mais abundante junto às articulações, sem separar a função entre externo e interno.
 !fim
@@ -252,7 +252,7 @@ Duas consequências práticas fecham o tema. A degeneração walleriana **gasta 
 
 !questoes central=mao-0467 relacionadas=mao-0982 treino=mao-2401,mao-3289
 conceito: A degeneração walleriana é a desintegração do axolema, do citoesqueleto e da mielina no segmento separado do corpo celular, isto é, distal à lesão; começa no grau II de SUNDERLAND, o primeiro com axônio rompido.
-como: O Einstein 2026 pediu o local e os eventos da degeneração; a UFG 2020, o grau em que ela começa; o simulado do SIMÃO 2022, o tempo até ela se completar.
+como: O Einstein 2026 pediu o local e os eventos da degeneração; a UFG 2020, o grau em que ela começa; o simulado do simulado da prova de título de cirurgia da mão de 2022, o tempo até ela se completar.
 armadilha: Achar que o grau I já degenera (é bloqueio sem perda axonal) ou trocar a desintegração do axônio pela fibrose cicatricial.
 alerta: Na `mao-0467` o gabarito oficial localiza o processo proximalmente à lesão; o Campbell (cap. 67, p. 2979.e3) chama de walleriana a degeneração distal e de retrógrada a proximal, e o Green (cap. 30, p. 984) diz que ela atinge o nervo distal e proximal. Pelo Campbell, a alternativa com "distalmente" e desintegração do axolema seria a correta. Gabarito oficial mantido. A `mao-2401` usa o prazo de 7 a 10 dias de outra edição do Green; no Green 7 a resposta motora distal cessa em cerca de 3 dias, as neurotrofinas atingem o pico em 7 dias e a limpeza se completa em 15 a 30 dias pelo Campbell.
 !fim
@@ -386,7 +386,7 @@ O Campbell (p. 2985) fecha a correspondência com SUNDERLAND: o TINEL avança no
 
 !questoes central=mao-1850 treino=mao-1977,mao-2609
 conceito: O propósito do sinal de TINEL é detectar e acompanhar a regeneração nervosa: percussão de distal para proximal produz formigamento sobre os brotos ainda não mielinizados; TINEL forte sobre a lesão logo após o trauma indica axônios rotos.
-como: O ENARE de Cirurgia da Mão 2022 misturou TINEL, PHALEN, JEANNE, WARTENBERG e FROMENT em afirmações sobre o que cada um avalia; os simulados do SIMÃO 2023 e 2021 cobraram a direção da percussão e o significado do TINEL precoce.
+como: O ENARE de Cirurgia da Mão 2022 misturou TINEL, PHALEN, JEANNE, WARTENBERG e FROMENT em afirmações sobre o que cada um avalia; os simulados do simulado da prova de título de cirurgia da mão de 2023 e 2021 cobraram a direção da percussão e o significado do TINEL precoce.
 armadilha: Aceitar que o WARTENBERG avalia sensibilidade (é a incapacidade motora de aduzir o mínimo estendido), que o FROMENT avalia o radial (é o adutor do polegar, ulnar) ou que TINEL forte precoce indica neurapraxia.
 !fim
 
@@ -488,7 +488,7 @@ O custo do atraso é concreto. OMER estimou que se perde cerca de **1% da funç�
 
 !questoes central=mao-1196 treino=mao-1753
 conceito: Lesão nervosa isolada não é emergência e pode esperar algumas horas por cirurgião e equipe adequados; com lesão vascular ou ameaça ao membro ou à vida, a abordagem é imediata; na ferida contaminada, os cotos são marcados e o reparo é programado para 3 a 6 semanas.
-como: A PUC-SP 2023 cobrou o momento de explorar e reparar e a ideia de que lesão fechada em continuidade teria mau prognóstico; o simulado do SIMÃO 2026 pediu quando enxertar o nervo de uma mão esmagada e contaminada.
+como: A PUC-SP 2023 cobrou o momento de explorar e reparar e a ideia de que lesão fechada em continuidade teria mau prognóstico; o simulado do simulado da prova de título de cirurgia da mão de 2026 pediu quando enxertar o nervo de uma mão esmagada e contaminada.
 armadilha: Esperar 3 semanas para explorar ferida aguda limpa com déficit (ela pede reparo primário), achar que neurapraxia e axonotmese têm péssimo prognóstico espontâneo ou enxertar no primeiro atendimento num leito contaminado.
 alerta: Questão sem gabarito oficial; pelo Green (cap. 30, p. 979) e pelo Campbell (cap. 67, p. 2987), a alternativa correta é a que associa a abordagem imediata à lesão vascular ou à ameaça ao membro ou à vida.
 !fim
@@ -594,7 +594,7 @@ Uma proibição explícita: **nunca usar o sural do mesmo lado para reparar uma 
 
 !questoes treino=mao-1978,mao-3276,mao-3292
 conceito: O sural nasce do tibial na fossa poplítea, recebe um ramo comunicante do fibular comum, variável mas em geral presente, e corre lateral à safena parva e ao tendão calcâneo; o cutâneo medial do antebraço, preferido do Green, rende cerca de 25 cm.
-como: O simulado do SIMÃO 2023 cobrou a relação do sural com o tendão calcâneo; os simulados do SBCM 2015 e do SIMÃO 2020, a origem do sural e o comprimento do cutâneo medial do antebraço.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 cobrou a relação do sural com o tendão calcâneo; os simulados da prova de título de 2015 e do simulado da prova de título de cirurgia da mão de 2020, a origem do sural e o comprimento do cutâneo medial do antebraço.
 armadilha: Pôr o sural medial ao tendão calcâneo, inverter tibial e fibular comum na formação ou trocar o comprimento pelo do cutâneo lateral do antebraço (cerca de 15 cm).
 !fim
 
@@ -673,7 +673,7 @@ O Green dá também o contexto clínico que justifica tanta pressa (p. 993): a l
 
 !questoes treino=mao-2070,mao-1754,mao-3275,mao-3293
 conceito: Na transferência distal para o ulnar alto, o interósseo anterior terminal (cerca de 1000 fibras motoras) vai ao ramo motor do ulnar (mais de 4000); na dupla transferência de BATTISTON e LANZETTA, o cutâneo palmar do mediano vai ao componente sensitivo; no radial, MACKINNON leva o ramo do FDS ao ERCC e o do FRC ao interósseo posterior.
-como: Os simulados do SIMÃO 2026 e do SBCM 2024 cobraram a transferência para o ulnar no braço e os ramos do mediano para o radial; os do SBCM 2014 e do SIMÃO 2020, a desproporção de fibras e a metade sensitiva da dupla transferência.
+como: Os simulados do simulado da prova de título de cirurgia da mão de 2026 e da prova de título de 2024 cobraram a transferência para o ulnar no braço e os ramos do mediano para o radial; os da prova de título de 2014 e do simulado da prova de título de cirurgia da mão de 2020, a desproporção de fibras e a metade sensitiva da dupla transferência.
 armadilha: Inverter doador e receptor na contagem de fibras, trocar FDS por FDP ou FRC por FUC, ou usar o ramo recorrente motor do mediano como doador sensitivo.
 !fim
 
@@ -818,7 +818,7 @@ Para ver o radial no braço inteiro, o capítulo de neuropatias compressivas do 
 
 !questoes central=mao-1343 treino=mao-2478,mao-2438
 conceito: O radial é o nervo principal que melhor recupera; a maioria das lesões fica distal aos ramos do tríceps; na fratura do úmero, se operar, expor o nervo; a via posterior modificada de GERWIN expõe o radial em 94% do úmero; o extensor do indicador é o último músculo a voltar.
-como: A USP-SP 2025 pediu o acesso para a abordagem mais proximal do radial; os simulados do SIMÃO 2021 e 2022 cobraram o nível habitual da lesão e o último músculo a recuperar.
+como: A USP-SP 2025 pediu o acesso para a abordagem mais proximal do radial; os simulados do simulado da prova de título de cirurgia da mão de 2021 e 2022 cobraram o nível habitual da lesão e o último músculo a recuperar.
 armadilha: Marcar a via lateral de THOMPSON (que é do antebraço), achar que o braquiorradial é o último a voltar (é o primeiro) ou que a maioria das lesões é alta.
 alerta: A `mao-1343` cita a 8ª edição; o Green 7 traz a mesma recomendação no cap. 28 (p. 953).
 !fim
@@ -859,7 +859,7 @@ Para não confundir: MARTIN-GRUBER é no **antebraço** e vai do mediano para o 
 
 !questoes central=mao-0528 relacionadas=mao-1047,mao-1621,mao-1443,mao-0683,mao-0278,mao-0874,mao-0999,mao-1481,mao-1886,mao-0539,mao-0523,mao-0916 treino=mao-1746,mao-2138,mao-3277,mao-3278,mao-3282,mao-3285
 conceito: Interósseo anterior: FLP e FDP do indicador e médio; mediano no cotovelo poupa o FUC; oposição costuma persistir; interósseo posterior estende o punho em desvio radial; ulnar baixo poupa o dorso; MARTIN-GRUBER fica no antebraço e RICHE-CANNIEU na mão.
-como: TARO, UFG, USP-SP, FMRP-USP, ENARE e Ortopedia cobraram a paralisia, o nervo e os testes; os simulados do SIMÃO 2026 e do SBCM 2022, o interósseo anterior por facada e a esclerose lateral amiotrófica imitando o túnel cubital.
+como: TARO, UFG, USP-SP, FMRP-USP, ENARE e Ortopedia cobraram a paralisia, o nervo e os testes; os simulados do simulado da prova de título de cirurgia da mão de 2026 e da prova de título de 2022, o interósseo anterior por facada e a esclerose lateral amiotrófica imitando o túnel cubital.
 armadilha: Trocar FDP por FDS, achar oponentoplastia sempre necessária, tomar FROMENT por sensitivo ou pôr RICHE-CANNIEU no antebraço.
 alerta: JEANNE e EGAWA (`mao-1886`, `mao-0539`) não estão descritos nos capítulos lidos. Gabaritos mantidos.
 !fim
@@ -938,7 +938,7 @@ A sequência de deformidades vem daí: a perda sensitiva leva a lesões repetida
 
 !questoes central=mao-1441 relacionadas=mao-1639,mao-1283 treino=mao-1745
 conceito: Na hanseníase, o membro superior é acometido em geral na ordem ulnar, mediano e radial; o bacilo prefere as regiões mais frias, por isso os troncos superficiais (ulnar no cotovelo, mediano no punho, fibular no colo da fíbula, auricular magno) espessam; a perda sensitiva precede a motora.
-como: A USP-SP 2024 pediu a ordem de acometimento; a USP-SP 2026, a manifestação neurológica mais característica na mão; a USP-SP 2025, a doença sugerida pelos nervos espessados na imagem; o simulado do SIMÃO 2026, o mecanismo da distribuição.
+como: A USP-SP 2024 pediu a ordem de acometimento; a USP-SP 2026, a manifestação neurológica mais característica na mão; a USP-SP 2025, a doença sugerida pelos nervos espessados na imagem; o simulado do simulado da prova de título de cirurgia da mão de 2026, o mecanismo da distribuição.
 armadilha: Pôr o mediano antes do ulnar, atribuir a neurite só à compressão nos túneis ou esperar perda motora antes da sensitiva.
 !fim
 
@@ -965,7 +965,7 @@ Parte das questões de banca foi escrita com outras edições do Green, com o Ca
 | Bandas de FONTANA e grau de SUNDERLAND | Curso: "FONTANA indica SUNDERLAND 4 e não 3" | O livro não liga as bandas a graus; estão no perineuro e somem sob tensão (p. 982) | Ver as bandas fala a favor de perineuro íntegro, o que contraria o grau IV |
 | O que são as bandas de FONTANA | Curso: "áreas de redundância das fibras nos fascículos" | Pregas de tensão do perineuro (p. 982); o trajeto ondulado das fibras é outro item | Seguir o Green |
 | Paralisia completa do radial sem déficit sensitivo | Curso: sobreposição do cutâneo lateral do antebraço | O cap. 30 não discute; mostra os dois nervos lado a lado no punho (Fig. 30.24, p. 1012) | Aceitar a sobreposição como explicação clínica |
-| Comprimento do "cutâneo medial" | SIMÃO 2020: cutâneo medial do braço | Cerca de 25 cm do cutâneo medial do antebraço (p. 997); o do braço só aparece como doador digital (p. 1009) | O número 25 cm é do antebraço |
+| Comprimento do "cutâneo medial" | Simulado da prova de título de cirurgia da mão de 2020: cutâneo medial do braço | Cerca de 25 cm do cutâneo medial do antebraço (p. 997); o do braço só aparece como doador digital (p. 1009) | O número 25 cm é do antebraço |
 | Grau de SUNDERLAND da axonotmese | Campbell, Tabela 73.1: graus II a IV | Campbell, Tabela 67.1: grau II | A resposta clássica é II |
 | Tipo 4 de SUNDERLAND | `mao-1145`: epineuro | Perineuro rompido, epineuro preservado (Campbell, p. 2979) | Gabarito oficial mantido |
 | Degeneração walleriana | `mao-0467`: proximal | Distal (Campbell); distal e proximal (Green, p. 984) | Gabarito oficial mantido |

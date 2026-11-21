@@ -45,7 +45,7 @@ Por que a incompleta é a mais comum? Porque a coluna cervical é a mais móvel 
 
 !questoes treino=mao-3734,mao-2496
 conceito: A tetraplegia incompleta é a categoria neurológica mais frequente de lesão medular (41% no Green 7; 47% no Campbell 15); a tetraplegia completa é a menos frequente (12%).
-como: O SIMÃO 2021 perguntou diretamente a categoria mais comum, com as quatro combinações de tetra ou paraplegia e completa ou incompleta.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou diretamente a categoria mais comum, com as quatro combinações de tetra ou paraplegia e completa ou incompleta.
 armadilha: Marcar paraplegia incompleta (é a segunda) ou achar que a lesão completa domina porque é a mais grave e a mais lembrada.
 !fim
 
@@ -105,7 +105,7 @@ Um detalhe que a classificação não contempla: **o ombro e o cotovelo**. O del
 
 !questoes treino=mao-1988,mao-2145
 conceito: O grupo 4 da ICS tem quatro músculos com força grau 4 abaixo do cotovelo: braquiorradial, extensor radial longo, extensor radial curto do carpo e pronador redondo; o flexor radial do carpo só entra no grupo 5.
-como: O SIMÃO 2023 perguntou qual músculo ainda está ativo no grupo 4 (o ERCC, entre opções mais distais); o SBCM 2022 pediu o conjunto de músculos do grupo 4.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou qual músculo ainda está ativo no grupo 4 (o ERCC, entre opções mais distais); a prova de título de 2022 pediu o conjunto de músculos do grupo 4.
 armadilha: Incluir o flexor radial do carpo (grupo 5) ou esquecer o braquiorradial, que está em todos os grupos a partir do 1.
 !fim
 
@@ -133,7 +133,7 @@ Um aviso honesto: a legenda da Fig. 33.1 e o texto da p. 1124 descrevem ao contr
 
 !questoes treino=mao-3730,mao-2234
 conceito: O que faz o paciente passar do grupo 2 para o grupo 3 da ICS é o extensor radial curto do carpo alcançar grau 4; no grupo 2 só o longo é forte e o punho desvia para radial.
-como: O SBCM 2023 perguntou qual músculo, ao ganhar força funcional, muda o paciente do grupo 2 para o 3.
+como: A prova de título de 2023 perguntou qual músculo, ao ganhar força funcional, muda o paciente do grupo 2 para o 3.
 armadilha: Marcar o pronador redondo, que é o músculo do grupo 4 e às vezes aparece fraco no grupo 3, ou o braquiorradial, que é o do grupo 1.
 !fim
 
@@ -190,9 +190,9 @@ Por que tanta insistência no prazo? Pela curva da seção anterior: músculos c
 
 !questoes treino=mao-3731,mao-3736,mao-3735,mao-3738,mao-1987
 conceito: Pelo Green 7 e pelo Campbell 15, a reconstrução do membro superior do tetraplégico se faz depois que a recuperação motora estabiliza, em geral com 12 meses da lesão e exame repetido estável.
-como: O SIMÃO 2023 perguntou quanto tempo após a lesão a cirurgia deve ser feita, com quatro faixas de tempo (3 meses, 3 a 6, 6 a 9 e depois de 12).
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou quanto tempo após a lesão a cirurgia deve ser feita, com quatro faixas de tempo (3 meses, 3 a 6, 6 a 9 e depois de 12).
 armadilha: Achar que operar cedo evita atrofia dos doadores; os doadores estão acima da lesão e não atrofiam, e quem muda nesse período é justamente o músculo da zona de transição.
-alerta: O gabarito oficial do SIMÃO 2023 (C, entre 6 e 9 meses) foi mantido, mas diverge do Green 7, que manda operar com 12 meses e exame motor estável (p. 1124, 1126 e 1127), em linha com o Campbell 15 (cap. 76, p. 3409 e 3410); pelos livros, a resposta seria a D.
+alerta: O gabarito oficial do simulado da prova de título de cirurgia da mão de 2023 (C, entre 6 e 9 meses) foi mantido, mas diverge do Green 7, que manda operar com 12 meses e exame motor estável (p. 1124, 1126 e 1127), em linha com o Campbell 15 (cap. 76, p. 3409 e 3410); pelos livros, a resposta seria a D.
 !fim
 
 ## O paciente clinicamente pronto
@@ -242,7 +242,7 @@ A extensão do cotovelo não entra nessa lista porque é de outro andar, mas o G
 
 !questoes central=mao-0817 treino=mao-3733,mao-3740,mao-2078
 conceito: A hierarquia funcional da mão do tetraplégico é extensão do punho, pinça lateral, preensão e, por último, abertura dos dedos; a extensão do punho vem antes de tudo porque é ela que move a tenodese.
-como: O INTO 2026 pediu a ordem completa das quatro funções; o SBCM 2024 perguntou qual movimento a cirurgia deve restaurar antes de todos os outros.
+como: O INTO 2026 pediu a ordem completa das quatro funções; a prova de título de 2024 perguntou qual movimento a cirurgia deve restaurar antes de todos os outros.
 armadilha: Trocar extensão por flexão do punho, colocar a preensão antes da pinça ou terminar a lista em "fechamento" em vez de abertura.
 !fim
 
@@ -277,7 +277,7 @@ Duas técnicas disputam a função: o **deltoide posterior ao tríceps**, com ce
 
 !questoes treino=mao-3737,mao-3739,mao-2233
 conceito: A restauração da extensão do cotovelo tem alta prioridade no tetraplégico: dá alcance, alívio de pressão, transferências e um antagonista ao braquiorradial transferido.
-como: O SBCM 2023 pediu a afirmação de acordo com o Green entre a pronação, as transferências de nervo, a espasticidade e a extensão do cotovelo.
+como: A prova de título de 2023 pediu a afirmação de acordo com o Green entre a pronação, as transferências de nervo, a espasticidade e a extensão do cotovelo.
 armadilha: Achar que a espasticidade intensa ajuda o resultado ou que transferências de nervo estão contraindicadas; o Green as trata como experimentais, não proibidas.
 !fim
 
@@ -351,7 +351,7 @@ O último item é a armadilha prática: o mesmo bíceps não pode ser usado nas 
 
 !questoes treino=mao-2235,mao-2554
 conceito: O rerroteamento do bíceps de ZANCOLLI passa metade do tendão por trás do colo do rádio para transformar o bíceps de supinador em pronador; indica-se com pronação passiva presente, sem pronação ativa e bíceps grau 5 agindo como supinador deformante.
-como: O SBCM 2023 descreveu a técnica e pediu a finalidade (pronação); o SIMÃO 2021 pediu a situação em que ela está indicada.
+como: A prova de título de 2023 descreveu a técnica e pediu a finalidade (pronação); o simulado da prova de título de cirurgia da mão de 2021 pediu a situação em que ela está indicada.
 armadilha: Achar que corrige contratura do cotovelo ou que serve a quem tem pronação ativa ou bíceps destinado ao tríceps.
 !fim
 
@@ -378,7 +378,7 @@ O pós-operatório é gesso axilopalmar com o cotovelo a 90° e o punho a 45° d
 
 !questoes treino=mao-3732,mao-2600
 conceito: No grupo 1 a função mais necessária é a extensão do punho, e o único doador, o braquiorradial, vai ao extensor radial curto do carpo; a pinça lateral vem por tenodese passiva.
-como: O SIMÃO 2022 deu paciente com tetraplegia alta, 1 ano de lesão e só o BR grau 4 e pediu a função a restaurar primeiro.
+como: O simulado da prova de título de cirurgia da mão de 2022 deu paciente com tetraplegia alta, 1 ano de lesão e só o BR grau 4 e pediu a função a restaurar primeiro.
 armadilha: Escolher a pinça ativa com o BR ao FLP, que é a operação dos grupos 2 e 3, quando já existe extensão do punho.
 !fim
 
@@ -529,7 +529,7 @@ O que não faz sentido é o contrário: tirar ramos de músculos que o tetraplé
 
 !questoes treino=mao-1751,mao-2236
 conceito: Transferências de nervo usam ramos de músculos acima da lesão e dispensáveis (supinador, axilar, braquial, ramo distal do ERCC) para reinervar músculos abaixo dela, cuja unidade motora está íntegra; o Green 7 as considera promissoras, mas ainda não rotineiras.
-como: O SIMÃO 2026 pediu a afirmação correta sobre as transferências de nervo (ramos do supinador ao interósseo posterior para estender dedos e polegar); o SBCM 2023 pediu o doador para devolver comando isolado ao FLP quando o território do interósseo anterior ainda responde à estimulação (ramo distal do ERCC).
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu a afirmação correta sobre as transferências de nervo (ramos do supinador ao interósseo posterior para estender dedos e polegar); a prova de título de 2023 pediu o doador para devolver comando isolado ao FLP quando o território do interósseo anterior ainda responde à estimulação (ramo distal do ERCC).
 armadilha: Achar que, abaixo da lesão medular, a transferência perde o valor depois de um ano como no nervo periférico; isso só vale para o músculo dentro do metâmero lesado.
 !fim
 

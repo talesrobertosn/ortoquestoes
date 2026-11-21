@@ -19,7 +19,7 @@ O cotovelo não tem capítulo próprio no Netter Atlas de Anatomia Ortopédica, 
 
 O que este resumo não repete. O braço (musculocutâneo no coracobraquial, radial no sulco espiral com as distâncias do úmero, arcada de STRUTHERS como lembrança) está no resumo de anatomia do ombro e do braço; o antebraço e a mão (MARTIN-GRUBER, as vias de HENRY e THOMPSON ao rádio, o interósseo anterior e o canal de GUYON) estão no resumo de anatomia da mão, do punho e do antebraço. Aqui fica o que acontece num palmo acima e num palmo abaixo da prega do cotovelo.
 
-E como cobram. O TARO e o TEOT gostam de imagem com seta (ancôneo, pronador redondo, ramo profundo do radial no corte, arcada de FROHSE); a SBCM e o SIMÃO pedem o detalhe fino (qual feixe do colateral medial é o mais forte e onde ele se insere, o que impede a instabilidade rotatória posterolateral, as partes da membrana interóssea, as origens que se fundem no epicôndilo lateral); o ENARE cobra função, nervo e raiz. Quase tudo cabe em três perguntas: **onde a estrutura se prende**, **que nervo a inerva** e **o que acontece quando ela falha**.
+E como cobram. O TARO e o TEOT gostam de imagem com seta (ancôneo, pronador redondo, ramo profundo do radial no corte, arcada de FROHSE); a prova de título e o simulado da prova de título de cirurgia da mão pedem o detalhe fino (qual feixe do colateral medial é o mais forte e onde ele se insere, o que impede a instabilidade rotatória posterolateral, as partes da membrana interóssea, as origens que se fundem no epicôndilo lateral); o ENARE cobra função, nervo e raiz. Quase tudo cabe em três perguntas: **onde a estrutura se prende**, **que nervo a inerva** e **o que acontece quando ela falha**.
 
 > **Na prova:** feixe **anterior** do colateral medial no **tubérculo sublime**; **LUCL** na **crista do supinador** contra a **IRPL**; **ancôneo e braquiorradial = radial**; **braquial** flexor principal, **bíceps** supinador principal; fossa cubital **cutâneo lateral, tendão, artéria, mediano**.
 
@@ -70,7 +70,7 @@ A irrigação também vem do Rockwood (cap. 40): um **anel pericervical** formad
 
 !questoes treino=ombro-cotovelo-0659
 conceito: Com o antebraço em rotação neutra, a zona de segurança da cabeça do rádio (110 graus pela marcação de HOTCHKISS) fica centrada cerca de 10 graus anterior à linha médio-axial lateral; é a parte que não articula com a incisura radial da ulna.
-como: O SIMÃO 2023 pediu onde fica o centro da zona de 110 graus em relação ao ponto médio da face lateral, com o antebraço neutro.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu onde fica o centro da zona de 110 graus em relação ao ponto médio da face lateral, com o antebraço neutro.
 armadilha: Escolher 10 graus posterior ou 30 graus: a zona é lateral e um pouco anterior com o antebraço neutro; posteriorizar a placa a joga na articulação radiulnar proximal.
 !fim
 
@@ -96,7 +96,7 @@ Quanto ele segura. O Campbell 52 dá os números: com o cotovelo **estendido**, 
 
 !questoes central=ombro-cotovelo-0032 treino=ombro-cotovelo-0651,ombro-cotovelo-0670
 conceito: O feixe anterior do colateral medial é o mais resistente e o principal restritor do valgo; nasce na face anteroinferior do epicôndilo medial e se insere no tubérculo sublime, na face medial do processo coronoide.
-como: A SBCM 2022 perguntou qual feixe é o mais resistente; o TARO 2016 perguntou que ligamento se insere no tubérculo sublime; o SIMÃO 2026 juntou as duas coisas, feixe e inserção distal.
+como: A prova de título de 2022 perguntou qual feixe é o mais resistente; o TARO 2016 perguntou que ligamento se insere no tubérculo sublime; o simulado da prova de título de cirurgia da mão de 2026 juntou as duas coisas, feixe e inserção distal.
 armadilha: Trocar pelo feixe posterior (que vai ao olécrano e forma o assoalho do túnel cubital), pelo transverso (que não cruza a articulação) ou pelo anular (que fica na incisura radial e abraça o colo do rádio).
 !fim
 
@@ -126,7 +126,7 @@ Uma surpresa nos números: o Campbell 52 diz que o colateral lateral contribui c
 
 !questoes treino=ombro-cotovelo-0669
 conceito: O ligamento colateral ulnar lateral (LUCL), do epicôndilo lateral à crista do supinador da ulna, é a principal estrutura contra a instabilidade rotatória posterolateral; a sua ruptura é a lesão essencial da IRPL.
-como: A SBCM 2024 perguntou a principal estrutura que impede a instabilidade rotatória posterolateral, com anular, cabeça do rádio e colateral radial como distratores.
+como: A prova de título de 2024 perguntou a principal estrutura que impede a instabilidade rotatória posterolateral, com anular, cabeça do rádio e colateral radial como distratores.
 armadilha: O nome engana: "colateral ulnar lateral" é lateral (complexo do radial), não é o colateral medial; e o colateral radial propriamente dito vai ao anular, não à ulna, e segura pouco a rotação.
 !fim
 
@@ -183,7 +183,7 @@ O jeito mais rápido de organizar os músculos do cotovelo é pelos dois epicôn
 
 !questoes central=ombro-cotovelo-0018 relacionadas=ombro-cotovelo-0216,ombro-cotovelo-0251 treino=ombro-cotovelo-0685
 conceito: No epicôndilo lateral nascem o ancôneo (radial, extensor do cotovelo, plano do acesso de KOCHER) e o extensor comum, com as origens do ERCC e do extensor dos dedos indistinguíveis; o braquiorradial, do radial, tem como função principal fletir o antebraço; o pronador redondo, do mediano, nasce no epicôndilo medial.
-como: O TARO 2021 mostrou o ancôneo com seta e perguntou o nervo; uma prova de Ortopedia perguntou a função principal do braquiorradial; a SBCM 2023 perguntou que origens não se distinguem no epicôndilo lateral; o TEOT 2024 mostrou o pronador redondo na via volar.
+como: O TARO 2021 mostrou o ancôneo com seta e perguntou o nervo; uma prova de Ortopedia perguntou a função principal do braquiorradial; a prova de título de 2023 perguntou que origens não se distinguem no epicôndilo lateral; o TEOT 2024 mostrou o pronador redondo na via volar.
 armadilha: Inervar o ancôneo pelo ulnar (ele fica perto do olécrano, mas é do radial); dar ao braquiorradial a supinação ou a pronação; trocar o pronador redondo pelo quadrado ou pelo interósseo anterior.
 !fim
 
@@ -247,7 +247,7 @@ O Rockwood and Green (cap. 39) organiza essa rede em **três arcadas**, que expl
 
 !questoes central=ombro-cotovelo-0530 treino=ombro-cotovelo-0647,ombro-cotovelo-0645
 conceito: A artéria braquial começa na borda inferior do redondo maior como continuação da axilar, corre medial ao bíceps com o mediano e termina na fossa cubital em radial e ulnar; em volta do cotovelo, três arcadas (lateral, medial e posterior) ligam os ramos colaterais aos recorrentes.
-como: O SIMÃO 2026 perguntou onde começa a braquial e a relação com o bíceps, e com que frequência ela se divide alto no braço; a PUC-SP 2023 perguntou sobre o retalho antebraquial radial.
+como: O simulado da prova de título de cirurgia da mão de 2026 perguntou onde começa a braquial e a relação com o bíceps, e com que frequência ela se divide alto no braço; a PUC-SP 2023 perguntou sobre o retalho antebraquial radial.
 armadilha: Confundir o início da braquial com o da axilar (primeira costela) ou o limite entre as partes da axilar (peitoral menor); pôr a artéria lateral ao bíceps com o musculocutâneo.
 alerta: A frequência da bifurcação alta da braquial (cerca de 15%, `ombro-cotovelo-0645`) não aparece em nenhum dos livros lidos; o gabarito oficial foi mantido. A `ombro-cotovelo-0530` está sem gabarito oficial; os livros sustentam a alternativa D (Campbell 15 cita o defeito da área doadora como objeção), contradizem a C (o Green usa o retalho sobre o olécrano) e não trazem o dado de 22% de dominância da radial.
 !fim
@@ -276,7 +276,7 @@ O **cutâneo medial do antebraço** passa **posterior ao ulnar** no epicôndilo 
 
 !questoes treino=ombro-cotovelo-0646
 conceito: Na descompressão in situ, libera-se o teto do túnel cubital, formado pelo ligamento de OSBORNE (retináculo do túnel cubital) em continuidade com a aponeurose entre as cabeças do FUC; o assoalho é o colateral medial (feixes posterior e transverso) com a cápsula.
-como: O SIMÃO 2026 pediu teto e assoalho do túnel cubital, nessa ordem.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu teto e assoalho do túnel cubital, nessa ordem.
 armadilha: Inverter teto e assoalho, ou trazer estruturas de outros túneis: lacerto fibroso (mediano), arcada de STRUTHERS (ulnar, mas 8 cm acima).
 !fim
 
@@ -332,7 +332,7 @@ A **membrana interóssea** (Green, p. 786) tem porções distal, média e proxim
 
 !questoes treino=ombro-cotovelo-0681
 conceito: Na membrana interóssea, o cordão oblíquo distal fica na porção membranosa distal, o complexo ligamentar médio tem a banda central e as bandas acessórias, e o cordão oblíquo proximal fica na superfície anterior proximal; a banda central dá 71% da rigidez longitudinal.
-como: A SBCM 2023 pediu as três estruturas na ordem distal, média (além da banda central) e proximal anterior.
+como: A prova de título de 2023 pediu as três estruturas na ordem distal, média (além da banda central) e proximal anterior.
 armadilha: Pôr a banda central ou o cordão oblíquo proximal na porção distal, ou confundir a corda oblíqua dorsal acessória com o cordão oblíquo proximal.
 !fim
 

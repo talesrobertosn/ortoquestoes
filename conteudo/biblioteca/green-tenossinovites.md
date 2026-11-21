@@ -19,7 +19,7 @@ Este resumo é inspirado no capítulo 56 (Tendinopathy, de Scott W. WOLFE) do Gr
 
 O capítulo inteiro cabe numa distinção feita logo na primeira página: existem **duas famílias de doença do tendão na mão**. A primeira, muito mais comum, é o **aprisionamento tendíneo**: um tendão quase normal que passa por um túnel fibro-ósseo que engrossou, como o dedo em gatilho e a doença de DE QUERVAIN. A segunda é a **tenossinovite verdadeira**, em que a sinóvia prolifera e invade: artrite reumatoide, gota, cristais, amiloide, infecção. A primeira se resolve abrindo o túnel; a segunda, tirando a sinóvia ou o agente que a inflama. Quase toda pergunta do capítulo fica mais fácil quando se decide primeiro em qual família ela está.
 
-As bancas cobram seis blocos, nesta ordem de frequência: a **classificação de QUINNELL modificada por GREEN** e o tratamento do gatilho (infiltração, aberta, percutânea e onde não fazer); a **doença de DE QUERVAIN** (anatomia variável do primeiro compartimento, subcompartimento do EPB, ramo sensitivo do radial); o **polegar em gatilho da criança** (adquirido, isolado, A1, nódulo de NOTTA, bilateralidade, idade da cirurgia); as **síndromes dos outros compartimentos** (intersecção, EPL, ECU, FCR); os **cristais e depósitos** (cálcio no FCU, pirofosfato na FCCT, amiloide na diálise); e, como vizinha que o site guarda aqui, a **tenossinovite piogênica dos flexores** (KANAVEL, PANG, MICHON, espaço de PARONA). No SIMÃO e no título da SBCM, os enunciados são curtos e as pegadinhas se repetem: sexo invertido, compartimento vizinho, dedo vizinho, letra da classificação deslocada, intra contra extrassinovial, proximal contra distal à A1.
+As bancas cobram seis blocos, nesta ordem de frequência: a **classificação de QUINNELL modificada por GREEN** e o tratamento do gatilho (infiltração, aberta, percutânea e onde não fazer); a **doença de DE QUERVAIN** (anatomia variável do primeiro compartimento, subcompartimento do EPB, ramo sensitivo do radial); o **polegar em gatilho da criança** (adquirido, isolado, A1, nódulo de NOTTA, bilateralidade, idade da cirurgia); as **síndromes dos outros compartimentos** (intersecção, EPL, ECU, FCR); os **cristais e depósitos** (cálcio no FCU, pirofosfato na FCCT, amiloide na diálise); e, como vizinha que o site guarda aqui, a **tenossinovite piogênica dos flexores** (KANAVEL, PANG, MICHON, espaço de PARONA). No simulado da prova de título de cirurgia da mão e no título da prova de título, os enunciados são curtos e as pegadinhas se repetem: sexo invertido, compartimento vizinho, dedo vizinho, letra da classificação deslocada, intra contra extrassinovial, proximal contra distal à A1.
 
 > **Na prova:** gatilho = **A1**, alteração maior **na polia**, **colágeno tipo III**; grau **IIIA exige extensão passiva**, **IIIB não flete ativamente**, **IV contratura fixa da IFP**; percutânea com **MF hiperestendida**, **nunca no polegar nem no indicador**; criança: **polegar, isolado, A1, NOTTA, 25% a 33% bilateral**; DE QUERVAIN: anatomia normal em **menos de 20%**, **EPB fino, dorsal, em túnel separado**, **ramo sensitivo do radial**; intersecção: **1º sobre o 2º compartimento, 4 cm acima do punho**; EPL: **zona nutrida só pelo líquido sinovial**; calcária: **FCU, homens**; KANAVEL: **dor à palpação da bainha**.
 
@@ -94,7 +94,7 @@ Os feixes digitais correm colados a cada bainha flexora, e o Green aponta um em 
 
 !questoes treino=mao-2052,mao-3518,mao-3534,mao-3535,mao-3536,mao-3539
 conceito: Na liberação do gatilho, o nervo mais exposto é o digital radial do polegar, que fica logo sob a derme na prega da MF e cruza a bainha do FPL em diagonal.
-como: A SBCM 2024 perguntou qual nervo digital corre maior risco na liberação cirúrgica do dedo em gatilho.
+como: A prova de título de 2024 perguntou qual nervo digital corre maior risco na liberação cirúrgica do dedo em gatilho.
 armadilha: Marcar o ulnar do polegar ou o radial do indicador; o nervo que cruza a bainha em diagonal, superficial na prega, é o radial do polegar.
 !fim
 
@@ -201,7 +201,7 @@ PATEL e BASSINI imobilizaram a **MF em 15 graus de flexão** e compararam com um
 
 !questoes treino=mao-1793
 conceito: A infiltração resolve mais no gatilho primário de um só dedo, em não diabético, com nódulo discreto e poucas semanas de sintomas; diabetes insulinodependente, vários dedos, AR e contratura fixa respondem pior.
-como: O SIMÃO 2026 apresentou quatro candidatos à infiltração e pediu o de melhor prognóstico: mulher de 52 anos, sem comorbidades, um dedo, três semanas.
+como: O simulado da prova de título de cirurgia da mão de 2026 apresentou quatro candidatos à infiltração e pediu o de melhor prognóstico: mulher de 52 anos, sem comorbidades, um dedo, três semanas.
 armadilha: Escolher o diabético com três dedos, o reumatoide com nódulos múltiplos ou o dedo travado sem desbloqueio há um ano (grau avançado, que pede cirurgia).
 !fim
 
@@ -374,7 +374,7 @@ Duas estruturas cercam o compartimento (p. 1918). Os **ramos do nervo radial sen
 
 !questoes central=mao-0959 treino=mao-2445,mao-3521,mao-3523,mao-3540
 conceito: O primeiro compartimento tem anatomia normal em menos de 20% dos punhos: o APL costuma ter duas ou mais tiras, o EPB é mais fino, dorsal (ulnar) e ausente em 5% a 7%, e um septo cria túnel próprio do EPB em 24% a 37% das peças.
-como: A UFG 2020 pediu a afirmação correta sobre a doença (tendões anômalos são achado comum); o SIMÃO 2022 juntou espessura da bainha, número de tiras, frequência do septo e doença psiquiátrica.
+como: A UFG 2020 pediu a afirmação correta sobre a doença (tendões anômalos são achado comum); o simulado da prova de título de cirurgia da mão de 2022 juntou espessura da bainha, número de tiras, frequência do septo e doença psiquiátrica.
 armadilha: Dizer que o APL é medial (ulnar) ao EPB, que a doença não tem predileção por sexo ou que a infiltração tem pouco efeito; na anatomia, o padrão mais comum não é uma tira de APL e duas de EPB, e sim o contrário em número de tiras.
 alerta: O Green 7 (p. 1918) dá o septo em 24% a 37% das peças anatômicas; o "cerca de 40%" do gabarito de `mao-2445` fica no limite superior desse intervalo, e a cirurgia mostra septo com frequência ainda maior.
 !fim
@@ -395,7 +395,7 @@ Os diferenciais (Green, p. 1916; Campbell, p. 3535) se organizam pelo lugar da d
 
 !questoes central=mao-0264 relacionadas=mao-1867,mao-1610 treino=mao-1791,mao-2608,mao-2449,mao-3524,mao-3528
 conceito: DE QUERVAIN é a tendinopatia do APL e do EPB no primeiro compartimento, mais comum em mulheres de meia-idade, na gravidez e no pós-parto, provocada por abdução do polegar com desvio ulnar do punho; dói 1 a 2 cm proximal ao estiloide, e o EICHHOFF (polegar fechado na mão) e o FINKELSTEIN (examinador desvia segurando o polegar) reproduzem a dor.
-como: O ENARE 2023 descreveu a puérpera com dor radial e pediu o diagnóstico; o ENARE de cirurgia da mão 2023, o datilógrafo com dor no APL e no EPB; a USP-SP 2026, o que separa DE QUERVAIN de outras dores radiais; os simulados do SIMÃO cobraram os fatores predisponentes, o movimento que provoca a doença e o nome do teste com o polegar fechado.
+como: O ENARE 2023 descreveu a puérpera com dor radial e pediu o diagnóstico; o ENARE de cirurgia da mão de 2023, o datilógrafo com dor no APL e no EPB; a USP-SP 2026, o que separa DE QUERVAIN de outras dores radiais; os simulados do simulado da prova de título de cirurgia da mão cobraram os fatores predisponentes, o movimento que provoca a doença e o nome do teste com o polegar fechado.
 armadilha: Chamar de FINKELSTEIN o teste com o polegar fechado dentro da mão (é o EICHHOFF, na nomenclatura do Green), achar que a artrose da TMC dá dor indistinguível, ou que a doença é de homens jovens sedentários.
 !fim
 
@@ -429,7 +429,7 @@ O alívio incompleto não é raro, e há uma ordem para investigar (p. 1919). Pr
 
 !questoes central=mao-0450 relacionadas=mao-0473,mao-0265 treino=mao-2357,mao-3519
 conceito: Na DE QUERVAIN, a infiltração com corticoide solúvel é o tratamento inicial de maior sucesso; na cirurgia, os ramos do nervo radial sensitivo cruzam o compartimento logo sob a pele, a bainha se abre na margem dorsal deixando retalho palmar, e o túnel separado do EPB precisa ser procurado e aberto.
-como: A Einstein 2026 perguntou o nervo em risco na liberação aberta e, na mesma prova, a afirmação correta sobre a doença (descartar e liberar o compartimento separado); o ENARE 2023 pediu o tratamento inicial do pintor com dor no APL e no EPB; o SIMÃO 2024 cobrou a lesão do ramo superficial do radial como complicação.
+como: A Einstein 2026 perguntou o nervo em risco na liberação aberta e, na mesma prova, a afirmação correta sobre a doença (descartar e liberar o compartimento separado); o ENARE 2023 pediu o tratamento inicial do pintor com dor no APL e no EPB; o simulado da prova de título de cirurgia da mão de 2024 cobrou a lesão do ramo superficial do radial como complicação.
 armadilha: Achar que a doença é rara na gravidez e no pós-parto (é o pico), que a liberação deve ser volar, que a infiltração não atrofia a pele ou que a gestante refratária deve ser operada; o retalho que fica é o palmar, e a abertura é dorsal.
 !fim
 
@@ -449,7 +449,7 @@ Nos que persistem, a cirurgia segue GRUNDBERG e REAGAN (p. 1920 e 1921): incisã
 
 !questoes central=mao-0011 relacionadas=mao-0616 treino=mao-2474,mao-3520,mao-3525,mao-3527,mao-3530,mao-3532
 conceito: Na síndrome da intersecção, o APL e o EPB (primeiro compartimento) cruzam sobre o ECRL e o ECRB (segundo compartimento) cerca de 4 cm proximal ao punho; é típica de remadores, trata-se com tala em 15 graus de extensão e, se refratária, libera-se o segundo compartimento sem fechar o retináculo.
-como: O SIMÃO 2021 descreveu um remador com crepitação 4 cm acima do punho e pediu os tendões que se cruzam; o TARO 2019 e o TARO 2008 perguntaram quais compartimentos se atritam.
+como: O simulado da prova de título de cirurgia da mão de 2021 descreveu um remador com crepitação 4 cm acima do punho e pediu os tendões que se cruzam; o TARO 2019 e o TARO 2008 perguntaram quais compartimentos se atritam.
 armadilha: Marcar o EPL sobre os extensores radiais (isso é o cruzamento distal no LISTER) ou o ramo superficial do radial; a intersecção é entre o primeiro e o segundo compartimentos.
 alerta: `mao-0616` está sem gabarito oficial; o Green (p. 1920) sustenta a alternativa C, atrito dos tendões do primeiro compartimento com os do segundo.
 !fim
@@ -478,7 +478,7 @@ Na **artrite reumatoide**, a tenossinovite é proliferativa, não estenosante. O
 
 !questoes treino=mao-2358
 conceito: Na artrite reumatoide, a tenossinovite proliferativa dorsal é indolor, volumosa, faz o tuck sign e predomina na borda ulnar, sobre o 4º, o 5º e o 6º compartimentos.
-como: O SIMÃO 2024 perguntou o compartimento extensor mais acometido pela tenossinovite reumatoide no dorso do punho.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou o compartimento extensor mais acometido pela tenossinovite reumatoide no dorso do punho.
 armadilha: Escolher o 3º (o EPL rompe no LISTER por outro mecanismo) ou dizer que não há predileção.
 alerta: O Green (p. 1904) lista juntos o 4º, o 5º e o 6º compartimentos como os mais frequentes, sem destacar o 4º isoladamente; o gabarito (quarto) está entre eles.
 !fim
@@ -544,7 +544,7 @@ O problema clínico é a confusão com infecção, que atrasa o diagnóstico (p.
 
 !questoes treino=mao-2180,mao-2557,mao-3522,mao-3537
 conceito: A tendinite calcária da mão e do punho é aguda, imita infecção, predomina em homens de 40 a 60 anos e acomete mais o FCU; trata-se com anti-inflamatório e o depósito some em semanas.
-como: A SBCM 2022 perguntou o tendão mais acometido; o SIMÃO 2021 perguntou em que tendão se concentrou a peritendinite calcificante na série de KIM e PARK.
+como: A prova de título de 2022 perguntou o tendão mais acometido; o simulado da prova de título de cirurgia da mão de 2021 perguntou em que tendão se concentrou a peritendinite calcificante na série de KIM e PARK.
 armadilha: Marcar o FCR ou o ECU; o ECU aparece numa figura do Green, mas o local mais comum é o FCU.
 alerta: A série de KIM e PARK citada em `mao-2557` não está nos livros conferidos; o Green (p. 1905) sustenta o FCU como local mais comum da tendinite calcária.
 !fim

@@ -15,7 +15,7 @@ resumo: Dor e estabilidade pesam mais que arco (PALMER: 30° de extensão, 5° d
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo nasce do capítulo 12 (Wrist Arthrodesis and Arthroplasty) do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Marco RIZZO. É um capítulo de autor que fala em primeira pessoa: descreve várias técnicas, cita os estudos dos dois lados e, no fim de cada seção, diz o que ele próprio faz. Essa estrutura importa para a prova, porque muitas questões do SIMÃO e da SBCM pedem justamente "o que o autor considera" (o passo mais importante, o método preferido, o destino de um tendão no fechamento). Para completar, entram o capítulo 13 do mesmo livro (instabilidades do carpo, de GARCIA-ELIAS e LLUCH), o capítulo 16 (carpectomia no SNAC e no KIENBÖCK), os capítulos 74 e 78 do Campbell's Operative Orthopaedics, 15ª edição (2026), e o capítulo 52 do HEBERT.
+Este resumo nasce do capítulo 12 (Wrist Arthrodesis and Arthroplasty) do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Marco RIZZO. É um capítulo de autor que fala em primeira pessoa: descreve várias técnicas, cita os estudos dos dois lados e, no fim de cada seção, diz o que ele próprio faz. Essa estrutura importa para a prova, porque muitas questões do simulado da prova de título de cirurgia da mão e da prova de título pedem justamente "o que o autor considera" (o passo mais importante, o método preferido, o destino de um tendão no fechamento). Para completar, entram o capítulo 13 do mesmo livro (instabilidades do carpo, de GARCIA-ELIAS e LLUCH), o capítulo 16 (carpectomia no SNAC e no KIENBÖCK), os capítulos 74 e 78 do Campbell's Operative Orthopaedics, 15ª edição (2026), e o capítulo 52 do HEBERT.
 
 Um aviso sobre o recorte. No site, o subtema se chama "Artrose do punho e artroscopia", mas o capítulo 12 do Green não trata de artroscopia; ela tem capítulo próprio, o 17, de William GEISSLER. As seções de artroscopia deste resumo foram reescritas e ampliadas nesta versão a partir do capítulo 17 do Green (Wrist Arthroscopy, de William B. GEISSLER, p. 652 a 694), com o capítulo 74 do Campbell como segundo olhar: montagem, portais (inclusive os da ARUD e da trapeziometacárpica), anatomia artroscópica, GEISSLER e EWAS, fibrocartilagem triangular, fraturas, cistos, salvamentos e complicações.
 
@@ -126,7 +126,7 @@ armadilha: Usar a sequência de três estágios de WATSON (em que o III é capit
 
 O HEBERT (cap. 52, quadro 52.4) traz uma "classificação de WATSON" com **estágio I** radioescafoide, **II** semilunar-capitato (e, menos frequente, STT) e **III rádio-semilunar**. É a divergência mais perigosa do tema: o Green (cap. 12, p. 377; cap. 13, p. 449) e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 74, p. 3358), dizem que a radiolunar é **notavelmente preservada**, e no LLUCH ela é só o **estágio V**. O próprio HEBERT, no parágrafo seguinte, explica que a congruência esférica do semilunar faz a radiolunar **praticamente não degenerar** e descreve as pseudartroses em três tipos (estiloide-escafoide; mais capitato-escafoide; mais capitato-semilunar), que batem com o Green. O HEBERT atribui o termo SNAC a **COONEY**.
 
-Como decidir numa questão? Pelo livro da banca. SIMÃO e SBCM usam o Green; nele, SLAC III é capitossemilunar. A divergência só faz diferença quando a alternativa diz "radiolunar" para o estágio III.
+Como decidir numa questão? Pelo livro da banca. Simulado da prova de título de cirurgia da mão e prova de título usam o Green; nele, SLAC III é capitossemilunar. A divergência só faz diferença quando a alternativa diz "radiolunar" para o estágio III.
 
 > **Na prova:** se a questão diz "SLAC III", leia **capitossemilunar**; radiolunar acometida é estágio **V de LLUCH** e contraindica quatro cantos; no SLAC II, a artrose ocupa **toda a fossa do escafoide**.
 
@@ -205,7 +205,7 @@ O pós-operatório também é ensinado pela mecânica. Depois de 5 a 6 semanas d
 
 !questoes treino=mao-1961,mao-3583
 conceito: A artrite reumatoide é a causa mais comum de artrose radiolunar isolada; a fratura em die punch da fossa do semilunar é outra causa citada.
-como: O SIMÃO 2023 perguntou a causa mais frequente, com KIENBÖCK, die punch e PREISER como distratores.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou a causa mais frequente, com KIENBÖCK, die punch e PREISER como distratores.
 armadilha: Marcar die punch, que o Green cita como causa, mas não como a mais frequente.
 !fim
 
@@ -247,7 +247,7 @@ O Green (cap. 12, p. 380) apresenta a artrodese **escafocapitato (SC)** como **a
 
 !questoes central=mao-1436 treino=mao-2207,mao-3588
 conceito: A artrodese escafocapitato é alternativa à STT e tem as mesmas indicações: subluxação rotatória do escafoide, pseudartrose do escafoide, KIENBÖCK e instabilidade mediocárpica.
-como: O SBCM 2023 pediu qual situação consta nas indicações da SC no Green; a USP-SP 2024, qual artrodese tem indicações semelhantes às da SC.
+como: A prova de título de 2023 pediu qual situação consta nas indicações da SC no Green; a USP-SP 2024, qual artrodese tem indicações semelhantes às da SC.
 armadilha: Indicar SC no SLAC II (a radioescafoide já está doente) ou confundir com quatro cantos e radioescafossemilunar, que tratam artrose estabelecida.
 !fim
 
@@ -265,7 +265,7 @@ Os números da SC (cap. 12, p. 384 e 385): **50 a 60%** do arco do lado oposto (
 
 !questoes treino=mao-1784
 conceito: Após a SC consolidada há perda parcial e importante da flexoextensão e dos desvios, semelhante à da STT, com 50 a 60% do arco preservado e o movimento restante dependente sobretudo da radiocárpica.
-como: O SIMÃO 2026 descreveu a SC consolidada e pediu a mobilidade esperada.
+como: O simulado da prova de título de cirurgia da mão de 2026 descreveu a SC consolidada e pediu a mobilidade esperada.
 armadilha: Achar que a mediocárpica ulnar compensa tudo (mobilidade normal) ou que a perda vai para a pronossupinação.
 !fim
 
@@ -285,7 +285,7 @@ Uma pegadinha clássica usa o SNAC com **polo proximal necrótico** como distrat
 
 !questoes central=mao-0512 treino=mao-2123,mao-2035,mao-3591,mao-3592
 conceito: A escafoidectomia com artrodese dos quatro cantos é indicada no SLAC ou SNAC estágios II e III e é a escolha quando a mediocárpica está artrósica, desde que a radiolunar esteja íntegra.
-como: O SBCM 2022 perguntou os estágios; o SBCM 2024, a escolha na artrose mediocárpica secundária a SNAC ou SLAC; o TARO 2011, a artrodese no estágio III de WATSON e BALLET na pseudartrose do escafoide.
+como: A prova de título de 2022 perguntou os estágios; a prova de título de 2024, a escolha na artrose mediocárpica secundária a SNAC ou SLAC; o TARO 2011, a artrodese no estágio III de WATSON e BALLET na pseudartrose do escafoide.
 armadilha: Escolher carpectomia proximal no estágio III (capitato gasto) ou STT/SC, que dependem de radioescafoide sadia.
 !fim
 
@@ -373,7 +373,7 @@ A estiloidectomia alivia o **impacto entre o estiloide e o escafoide distal desa
 
 !questoes treino=mao-2467,mao-3587
 conceito: A origem do ligamento radioescafocapitato fica na face palmar do estiloide radial; ressecção excessiva (acima de 1 cm no Green, de 4 mm no Campbell) compromete o RSC e instabiliza o carpo para ulnar.
-como: O SIMÃO 2021 perguntou qual ligamento palmar a estiloidectomia excessiva compromete.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou qual ligamento palmar a estiloidectomia excessiva compromete.
 armadilha: Marcar o radiossemilunar curto ou o de TESTUT, que ficam mais ulnares, na borda do intervalo escafossemilunar.
 !fim
 
@@ -442,7 +442,7 @@ A **3ª CMC** é o ponto fraco: com o carpo rígido, a tensão se concentra nela
 
 !questoes central=mao-1583 treino=mao-2506,mao-3586,mao-3584
 conceito: A artrodese total exige cruentar cinco articulações (radiolunar, radioescafoide, lunocapitato, escafocapitato e 3ª carpometacárpica); a pseudartrose parcial costuma aparecer na 3ª CMC e se previne decorticando os 80% dorsais dela até o esponjoso.
-como: A USP-SP 2026 perguntou quantas articulações devem ser cruentizadas; o SIMÃO 2021, a medida do Green para prevenir a pseudartrose da 3ª CMC.
+como: A USP-SP 2026 perguntou quantas articulações devem ser cruentizadas; o simulado da prova de título de cirurgia da mão de 2021, a medida do Green para prevenir a pseudartrose da 3ª CMC.
 armadilha: Contar só radiocárpica e mediocárpica (3 ou 4) ou deixar a 3ª CMC fora em todos os casos, o que obriga a retirar a placa.
 !fim
 
@@ -504,14 +504,14 @@ Duas variantes respondem a problemas mecânicos. Alguns cirurgiões fazem a **ca
 
 !questoes treino=mao-2507,mao-1962
 conceito: Na variante com carpectomia proximal prévia, fundem-se apenas o intervalo radiocapitato e a 3ª carpometacárpica; a carpectomia simplifica a fusão e evita o impacto ulnocárpico e ajuda quando o carpo está mal reduzido.
-como: O SIMÃO 2021 perguntou quais intervalos são fundidos nessa variante; o SIMÃO 2023, a afirmação correta sobre a artrodese total, com a associação de carpectomia na contratura grave em flexão ou no semilunar subluxado para volar.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou quais intervalos são fundidos nessa variante; o simulado da prova de título de cirurgia da mão de 2023, a afirmação correta sobre a artrodese total, com a associação de carpectomia na contratura grave em flexão ou no semilunar subluxado para volar.
 armadilha: Indicar artrodese total no SLAC II, dizer que as falhas se concentram na escafossemilunar ou que o túnel do carpo raramente complica.
 alerta: Em `mao-1962`, o Green (cap. 12, p. 377, 395 e 401) sustenta a carpectomia prévia para simplificar e evitar impacto e alerta que o semilunar subluxado para volar dificulta a redução, mas não traz literalmente a frase "contratura grave em flexão"; as outras três alternativas são falsas pelo livro.
 !fim
 
 !questoes treino=mao-2400
 conceito: Na AR com translocação ulnar do carpo, o Green recomenda remover parte do estiloide radial para facilitar o realinhamento do punho na artrodese total.
-como: O SIMÃO 2022 perguntou o que o Green recomenda para realinhar o punho reumatoide translocado.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou o que o Green recomenda para realinhar o punho reumatoide translocado.
 armadilha: Escolher DARRACH ou carpectomia, que resolvem outros problemas (ARUD e impacto ulnocárpico).
 !fim
 
@@ -569,7 +569,7 @@ As duas contraindicações do Green são motoras e mecânicas: sem os extensores
 
 !questoes treino=mao-2206
 conceito: Osteoporose grave (osso ruim) impede a artroplastia total; falha de artrodese parcial, necrose dos ossos do carpo e artrose pancárpica em baixa demanda são indicações.
-como: O SBCM 2023 perguntou qual condição está entre os impedimentos para a artroplastia total.
+como: A prova de título de 2023 perguntou qual condição está entre os impedimentos para a artroplastia total.
 armadilha: Marcar uma das indicações listadas nos pontos críticos do Green como se fosse contraindicação.
 alerta: O enunciado de `mao-2206` atribui a contraindicação ao Green; no capítulo 12 (p. 415), o Green lista como contraindicações a subluxação palmar extrema e a ruptura dos extensores do carpo; o osso ruim aparece no Campbell (cap. 78, p. 3498). O gabarito se sustenta pela soma dos dois livros.
 !fim
@@ -588,7 +588,7 @@ O punho artrósico não termina no carpo. Na **ARUD**, o Green (cap. 14, p. 503 
 
 !questoes treino=mao-2040,mao-3702
 conceito: A hemirressecção-interposição de BOWERS retira a superfície articular da cabeça da ulna, mantém o estiloide, as inserções da FCT e uma manga de periósteo e preenche o espaço com cápsula ou tendão.
-como: O SBCM 2024 descreveu o procedimento na artrose da ARUD e pediu o nome.
+como: A prova de título de 2024 descreveu o procedimento na artrose da ARUD e pediu o nome.
 armadilha: Confundir com DARRACH (ressecção completa da cabeça) ou SAUVÉ-KAPANDJI (artrodese com pseudartrose proximal).
 !fim
 
@@ -645,7 +645,7 @@ O **6R** e o **6U** ficam de cada lado do ECU. O 6R é portal de trabalho e de v
 
 !questoes treino=mao-2304,mao-2391,mao-3701,mao-3715,mao-3713
 conceito: O portal 3-4 fica entre o ELP (3º compartimento) e os extensores dos dedos (4º); o 4-5 fica entre os extensores dos dedos (4º) e o extensor do dedo mínimo (5º).
-como: O SIMÃO 2024 perguntou entre quais tendões fica o 3-4; o SIMÃO 2022, qual portal fica entre o extensor comum e o extensor do dedo mínimo.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou entre quais tendões fica o 3-4; o simulado da prova de título de cirurgia da mão de 2022, qual portal fica entre o extensor comum e o extensor do dedo mínimo.
 armadilha: Colocar o 3-4 entre os radiais do carpo (2º compartimento) ou trocar o 4-5 pelo 6U.
 !fim
 
@@ -658,7 +658,7 @@ alerta: `mao-1195` está sem gabarito oficial; pelo Green (cap. 17, p. 654), a r
 
 !questoes treino=mao-2132
 conceito: O 6-U, ulnar ao ECU, é usado sobretudo para a irrigação, com a cânula de líquido colocada no recesso pré-estiloide; os portais de trabalho são o 4-5 e o 6-R.
-como: O SBCM 2022 perguntou o uso mais frequente do 6-U.
+como: A prova de título de 2022 perguntou o uso mais frequente do 6-U.
 armadilha: Usá-lo para ver a porção central ou a inserção volar da FCT; do 6-U a FCT só aparece em vistas oblíquas.
 alerta: O gabarito de `mao-2132` fala em saída (vazão) do líquido; o Green (cap. 17, p. 654 e 656) diz que o 6-U é usado para a entrada do líquido e a saída é pela camisa do artroscópio; o Campbell (p. 3281) admite entrada ou saída pelos portais ulnares. A função de irrigação é a resposta.
 !fim
@@ -689,7 +689,7 @@ O **volar ulnar (VU)**, descrito por SLUTSKY, tem uma anatomia que vale entender
 
 !questoes central=mao-0292 treino=mao-1774,mao-3699,mao-3696
 conceito: O portal volar radial é feito junto ao flexor radial do carpo, lateral (radial) a ele, e entra na radiocárpica entre o radioescafocapitato e o radiossemilunar longo.
-como: Uma prova da SBOT-SP perguntou onde o portal volar pode ser feito; o SIMÃO 2026, por qual tendão ele passa e entre quais ligamentos entra.
+como: Uma prova da SBOT-SP perguntou onde o portal volar pode ser feito; o simulado da prova de título de cirurgia da mão de 2026, por qual tendão ele passa e entre quais ligamentos entra.
 armadilha: Colocar o portal medial ao FCR (risco ao mediano) ou fazê-lo passar entre os radiolunares longo e curto.
 alerta: Em `mao-1774`, a expressão "pela bainha do FCR" não está literalmente nos livros: o Green (p. 655) fixa o intervalo RSC e radiolunar longo, e o Campbell (p. 3280), a posição lateral ao FCR.
 !fim
@@ -717,7 +717,7 @@ O portal **STT** merece destaque porque responde a uma pergunta clássica: por o
 
 !questoes central=mao-1321 treino=mao-2450,mao-3700,mao-3712,mao-3708
 conceito: O portal mediocárpico radial fica cerca de 1 cm distal ao 3-4; o mediocárpico ulnar fica cerca de 1 cm distal ao 4-5, em linha com o 4º metacarpo, no cruzamento dos quatro cantos.
-como: A USP-SP 2025 trouxe afirmativas sobre a localização dos portais; o SIMÃO 2022 perguntou onde fica o mediocárpico ulnar.
+como: A USP-SP 2025 trouxe afirmativas sobre a localização dos portais; o simulado da prova de título de cirurgia da mão de 2022 perguntou onde fica o mediocárpico ulnar.
 armadilha: Colocar o MCU sobre o polo proximal do escafoide, derivá-lo do 6U ou do 6R, ou pôr o volar radial ulnar ao FCR.
 !fim
 
@@ -776,7 +776,7 @@ Seguindo para ulnar, aparecem o **escafossemilunar**, que normalmente tem aspect
 
 !questoes central=mao-1495 treino=mao-1960,mao-3706,mao-3714
 conceito: Com o artroscópio no 3-4, que entra sobre o intervalo escafossemilunar, o ligamento radioescafossemilunar (de TESTUT), estrutura vascularizada logo volar a esse intervalo, é o que as provas consideram a primeira estrutura encontrada; o RSC é o extrínseco mais radial e o radiolunar longo fica logo ulnar a ele.
-como: O SIMÃO 2023 e a USP-SP 2024 perguntaram a primeira estrutura vista com o artroscópio no 3-4.
+como: O simulado da prova de título de cirurgia da mão de 2023 e a USP-SP 2024 perguntaram a primeira estrutura vista com o artroscópio no 3-4.
 armadilha: Marcar o RSC (de WEITBRECHT, pelo enunciado) por ser o mais radial, ou os radiolunares.
 alerta: O Green (cap. 17, p. 658) descreve um exame de radial para ulnar que passa pelo estiloide, pelo RSC e pelos radiolunares antes do ligamento de TESTUT e não diz qual estrutura aparece primeiro; os gabaritos de `mao-1960` e `mao-1495` (TESTUT) não têm frase literal no livro, embora o ligamento fique bem em frente ao 3-4.
 !fim
@@ -819,7 +819,7 @@ O grau II tem uma descrição fina que a prova adora: no escafossemilunar, o esc
 
 !questoes treino=mao-2483,mao-3707,mao-3711,mao-3697,mao-3709
 conceito: No GEISSLER III há incongruência nos dois espaços e um espaço entre os ossos que admite a passagem do probe; a passagem do artroscópio de 2,7 mm (drive-through) é o grau IV.
-como: O SIMÃO 2021 perguntou o que caracteriza o grau III.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou o que caracteriza o grau III.
 armadilha: Trocar III por IV (artroscópio passa) ou por I (só hemorragia ou ligamento convexo).
 !fim
 
@@ -863,7 +863,7 @@ O tratamento segue a anatomia (cap. 13, p. 439 e 440): lesões subtotais agudas 
 
 !questoes treino=mao-2213,mao-2037
 conceito: No EWAS IIIB rompe a porção dorsal do ligamento escafossemilunar (IIIA volar, IIIC ambas); a propriocepção dos supinadores intracárpicos só serve em EWAS II e IIIA, em que o dorsal está íntegro.
-como: O SBCM 2023 perguntou qual porção está rompida no IIIB; o SBCM 2024, em quais tipos EWAS a propriocepção está indicada.
+como: A prova de título de 2023 perguntou qual porção está rompida no IIIB; a prova de título de 2024, em quais tipos EWAS a propriocepção está indicada.
 armadilha: Trocar IIIA e IIIB, ou indicar propriocepção no IIIB e IIIC, quando o dorsal já se foi.
 !fim
 
@@ -879,7 +879,7 @@ O Campbell (cap. 74, p. 3317) ensina os dois testes: com a óptica no 3-4 e o pr
 
 !questoes treino=mao-1777
 conceito: O teste do gancho que desloca a borda ulnar da FCT para o centro da articulação indica soltura do componente proximal (foveal); um disco que mantém a tensão no trampolim sugere componente distal preservado.
-como: O SIMÃO 2026 deu ARUD instável, trampolim normal e gancho positivo e pediu a lesão.
+como: O simulado da prova de título de cirurgia da mão de 2026 deu ARUD instável, trampolim normal e gancho positivo e pediu a lesão.
 armadilha: Achar que gancho positivo indica lesão distal ou perfuração central.
 alerta: Em `mao-1777`, o Campbell (p. 3317) diz que lesão proximal ou completa deixa os dois testes positivos; o trampolim normal do enunciado não está no livro, mas a mecânica do gancho sustenta a desinserção foveal isolada.
 !fim
@@ -897,7 +897,7 @@ Para a 1B, o capítulo descreve três técnicas, e a de WHIPPLE é a mais cobrad
 
 !questoes treino=mao-2223,mao-2363,mao-3704
 conceito: A sutura artroscópica transóssea de NAKAMURA é indicada na desinserção (ruptura) foveal da FCT, de preferência com variância ulnar neutra ou negativa.
-como: O SBCM 2023 e o SIMÃO 2024 perguntaram para qual lesão ela é mais indicada.
+como: A prova de título de 2023 e o simulado da prova de título de cirurgia da mão de 2024 perguntaram para qual lesão ela é mais indicada.
 armadilha: Indicá-la para perfuração central (desbridamento) ou para a borda radial.
 !fim
 
@@ -948,7 +948,7 @@ Para conferir a redução, a ótica vai à **mediocárpica**: as fraturas do **p
 
 !questoes treino=mao-2224
 conceito: Na fixação artroscópica do escafoide, a redução das fraturas do polo proximal é vista melhor pelo portal mediocárpico ulnar; as da cintura, pelo mediocárpico radial.
-como: O SBCM 2023 perguntou o portal que mostra melhor a redução do polo proximal.
+como: A prova de título de 2023 perguntou o portal que mostra melhor a redução do polo proximal.
 armadilha: Escolher o MCR (melhor para a cintura) ou um portal radiocárpico.
 !fim
 
@@ -964,7 +964,7 @@ O **cisto palmar**, segunda massa mais comum do punho, nasce do escafossemilunar
 
 !questoes treino=mao-2050,mao-3710,mao-3705
 conceito: A ressecção artroscópica do cisto dorsal tem recidiva baixa, comparável à aberta, com menos rigidez; a falsa recidiva precoce cobrada pela banca é manejada com massagem local pelo próprio paciente.
-como: O SBCM 2024 perguntou como se previne ou trata a pseudorrecidiva após a ressecção artroscópica.
+como: A prova de título de 2024 perguntou como se previne ou trata a pseudorrecidiva após a ressecção artroscópica.
 armadilha: Reoperar por via aberta ou infiltrar corticoide diante de um abaulamento precoce.
 alerta: A pseudorrecidiva e a massagem de `mao-2050` não constam no Green, no Campbell nem no HEBERT; o Green (cap. 17, p. 688) só traz a técnica, a recidiva baixa e o movimento precoce. Gabarito mantido sem fonte na biblioteca.
 !fim
@@ -985,7 +985,7 @@ Na **artrodese parcial artroscópica** (HO, 23 casos de STT, quatro cantos, capi
 
 !questoes treino=mao-2225,mao-3698
 conceito: Na quatro cantos artroscópica, o escafoide é ressecado trabalhando pelos portais mediocárpicos radial e ulnar (óptica de um, broca do outro), com o portal STT para o polo distal.
-como: O SBCM 2023 perguntou por quais portais se trabalha para ressecar o escafoide.
+como: A prova de título de 2023 perguntou por quais portais se trabalha para ressecar o escafoide.
 armadilha: Escolher portais radiocárpicos (3-4, 4-5 ou 6R), que não alcançam a mediocárpica.
 !fim
 

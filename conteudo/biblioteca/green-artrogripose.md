@@ -83,7 +83,7 @@ A **camptodactilia** aparece em quase todas as linhas da tabela, e isso não é 
 
 !questoes treino=mao-2093,mao-3816
 conceito: A artrogripose distal tipo 3 é a síndrome de GORDON, com baixa estatura e fenda palatina; a tipo 9 é a de BEALS (aracnodactilia, camptodactilia, orelha amassada e estatura alta); a tipo 2A é a FREEMAN-SHELDON (face de assobio).
-como: O simulado do SBCM 2024 deu o número (DA3) e pediu o nome e os achados, trocando os achados de uma síndrome pelos de outra.
+como: O simulado da prova de título de 2024 deu o número (DA3) e pediu o nome e os achados, trocando os achados de uma síndrome pelos de outra.
 armadilha: Associar a GORDON à escoliose e à camptodactilia (são da DA4) ou trocar o nome pela FREEMAN-SHELDON, que é a 2A.
 !fim
 
@@ -93,7 +93,7 @@ O mecanismo embriológico dá a base de tudo. As articulações sinoviais se for
 
 !questoes treino=mao-3756
 conceito: A articulação da artrogripose nasce rígida porque a falta de movimento fetal impede a cavitação normal da interzona, que fibrosa; tendões e fáscia formados sem músculo prendem a articulação.
-como: Um simulado do SIMÃO 2019 pediu a explicação embriológica, com distratores de vias moleculares (BMP, FGF, Wnt).
+como: Um simulado do simulado da prova de título de cirurgia da mão de 2019 pediu a explicação embriológica, com distratores de vias moleculares (BMP, FGF, Wnt).
 armadilha: Escolher um defeito de sinalização molecular do broto do membro, que explica deficiências e duplicações, não contraturas.
 !fim
 
@@ -140,7 +140,7 @@ Vale comparar os dois livros nos dedos. O Campbell (p. 1300) descreve os dedos "
 
 !questoes treino=mao-2248,mao-3822
 conceito: Pelo Green 7, o antebraço da amioplasia fica na maioria em neutro a leve pronação; a aparência de pronação acentuada vem da rotação interna do ombro somada ao cotovelo estendido, e a rotação do antebraço deve ser testada com o úmero fixo.
-como: O simulado do SBCM 2023 perguntou diretamente a posição do antebraço na amioplasia, com pronação acentuada, supinação acentuada e pronação leve entre as alternativas.
+como: O simulado da prova de título de 2023 perguntou diretamente a posição do antebraço na amioplasia, com pronação acentuada, supinação acentuada e pronação leve entre as alternativas.
 armadilha: Marcar pronação acentuada, a descrição antiga que confunde a rotação do ombro com a do antebraço.
 !fim
 
@@ -207,7 +207,7 @@ Depois de comer e limpar vêm, na ordem do livro, tomar banho e se vestir, prepa
 
 !questoes treino=mao-2076,mao-3818,mao-3819,mao-3820,mao-3823
 conceito: Na artrogripose, a meta do membro superior é "uma mão para comer e uma para limpar", que pode ser a mesma; comer pede flexão do cotovelo e mão virada para a boca, e a higiene pela frente pede flexão do punho, extensão do cotovelo e rotação interna do ombro.
-como: O simulado do SBCM 2024 deu a frase e pediu a condição, com tetraplegia, paralisia cerebral e sinostose radioulnar como distratores.
+como: O simulado da prova de título de 2024 deu a frase e pediu a condição, com tetraplegia, paralisia cerebral e sinostose radioulnar como distratores.
 armadilha: Marcar a tetraplegia, em que as metas são definidas pelo nível medular e pela classificação internacional, e não por essa frase.
 !fim
 
@@ -341,7 +341,7 @@ O resultado depende quase só da **qualidade do músculo**: flexão antigravitac
 
 !questoes treino=mao-2544
 conceito: Quando o músculo está presente, a transferência bipolar do grande dorsal é a melhor escolha para dar flexão ativa ao cotovelo na artrogripose; o tríceps inteiro é má opção, porque cria contratura em flexão e tira a extensão.
-como: O simulado do SIMÃO 2021 pediu a transferência preferida pelo Green, com trapézio, peitoral maior inteiro e serrátil anterior como distratores.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2021 pediu a transferência preferida pelo Green, com trapézio, peitoral maior inteiro e serrátil anterior como distratores.
 armadilha: Escolher o peitoral maior, que é possível mas custa função e estética, ou esquecer que tríceps fraco e flexão passiva menor que 90° contraindicam qualquer transferência.
 !fim
 
@@ -456,7 +456,7 @@ Uma observação sobre as classificações vizinhas: o polegar aduzido congênit
 
 !questoes treino=mao-2440,mao-3817,mao-3605,mao-3611
 conceito: Na classificação do Green, o polegar da artrogripose é tipo 1 (CMC estendida, MF fletida, formas distais), tipo 2 (CMC fletida, MF estendida, amioplasia) ou tipo 3 (CMC e MF fletidas); A corrige passivamente, B não.
-como: O simulado do SIMÃO 2022 pediu o tipo com as duas articulações fletidas; os do SIMÃO 2012 e 2013 trouxeram a classificação de McCARROLL e MIH, em que a artrogripose é o tipo III, com o mecanismo extensor pouco alterado.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pediu o tipo com as duas articulações fletidas; os do simulado da prova de título de cirurgia da mão de 2012 e 2013 trouxeram a classificação de McCARROLL e MIH, em que a artrogripose é o tipo III, com o mecanismo extensor pouco alterado.
 armadilha: Trocar o tipo 1 pelo 2 (lembre que a CMC segue o punho) ou inventar um tipo 4.
 !fim
 
@@ -482,7 +482,7 @@ O doador preferido para a extensão do polegar é o **extensor próprio do indic
 
 !questoes treino=mao-2439
 conceito: O algoritmo do polegar na artrogripose decide pela postura da CMC e da MF e pela correção passiva: fixo vai para a condrodese, corrigível para a transferência (extensor próprio do indicador), e CMC fletida para a osteotomia de reorientação.
-como: O simulado do SIMÃO 2022 pediu os elementos que o algoritmo considera, trocando a CMC pela interfalângica e a mobilidade passiva pela ativa.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pediu os elementos que o algoritmo considera, trocando a CMC pela interfalângica e a mobilidade passiva pela ativa.
 armadilha: Escolher a mobilidade ativa; o algoritmo usa a passiva, porque é ela que separa o que se corrige com tendão do que precisa de fusão.
 !fim
 
@@ -555,7 +555,7 @@ Os resultados são **imprevisíveis**; as famílias costumam se decepcionar e a 
 
 !questoes relacionadas=mao-0757 treino=mao-3821,mao-2010,mao-2402,mao-2466
 conceito: A camptodactilia é mais comum nas artrogriposes distais e é a condição ortopédica a que mais se associa; a radiografia não ajuda na criança pequena; Z-plastia volar sempre, tenotomia do FDS de rotina só se o FDP funciona; a complicação mais comum é a rigidez.
-como: O INTO 2023 perguntou a que condição a camptodactilia mais se associa (artrogripose); simulados do SIMÃO 2022 e 2023 repetiram a associação e pediram a afirmativa correta sobre a camptodactilia na artrogripose; o do SIMÃO 2021 levou à clinodactilia com falange em delta dupla da RUBINSTEIN-TAYBI.
+como: O INTO 2023 perguntou a que condição a camptodactilia mais se associa (artrogripose); simulados do simulado da prova de título de cirurgia da mão de 2022 e 2023 repetiram a associação e pediram a afirmativa correta sobre a camptodactilia na artrogripose; o do simulado da prova de título de cirurgia da mão de 2021 levou à clinodactilia com falange em delta dupla da RUBINSTEIN-TAYBI.
 armadilha: Achar que a radiografia é útil no bebê, que as órteses não funcionam ou que não se pode transferir o FDS; e confundir a BEALS (camptodactilia, aracnodactilia) com a síndrome da clinodactilia em delta.
 !fim
 

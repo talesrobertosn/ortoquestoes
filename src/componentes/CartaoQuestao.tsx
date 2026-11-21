@@ -9,7 +9,7 @@ import { ContextoConta } from '../conta/ContextoConta'
 import { primeiroNome } from './Cabecalho'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
-import { DESCRICAO_PROVA, ROTULO_SIMULADOS, daProva } from '../config'
+import { DESCRICAO_PROVA, ROTULO_SIMULADOS, daProva, rotuloProva } from '../config'
 import { FiguraAmpliavel } from './FiguraAmpliavel'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
@@ -407,7 +407,7 @@ function CartaoQuestaoExibida({
         <div className="qz-topo">
           <div className="qz-topo__info">
             {numero && total ? <h1 className="qz-numero">Questão {numero}<small> de {total}</small></h1> : <h1 className="qz-numero">Questão</h1>}
-            {!modoProva && (questao.prova || questao.ano) && <span className="qz-origem">{inspiracao ?? [questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {!modoProva && (questao.prova || questao.ano) && <span className="qz-origem">{inspiracao ?? [questao.prova && rotuloProva(questao.prova), questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.simulado && <span className="qz-origem qz-origem--simulado" title={questao.prova && DESCRICAO_PROVA[questao.prova] ? `${ROTULO_SIMULADOS} no padrão ${daProva(questao.prova)}: ${DESCRICAO_PROVA[questao.prova]}` : undefined}>{ROTULO_SIMULADOS}</span>}
             {questao.gabaritoBibliografia && <span className="qz-origem" title="A banca não divulgou o gabarito desta prova. A resposta foi definida pelo Orto Questões a partir da bibliografia.">Gabarito não oficial</span>}
             {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}
@@ -469,7 +469,7 @@ function CartaoQuestaoExibida({
 
         {(etiquetasVisiveis || (!modoProva && (questao.prova || questao.ano))) && (
           <div className={'qz-etiquetas' + (etiquetasVisiveis ? '' : ' qz-etiquetas--so-origem')}>
-            {!modoProva && (questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{inspiracao ?? [questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
+            {!modoProva && (questao.prova || questao.ano) && <span className="qz-chip qz-chip--origem">{inspiracao ?? [questao.prova && rotuloProva(questao.prova), questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.simulado && <span className="qz-chip qz-chip--origem qz-chip--simulado">{ROTULO_SIMULADOS}</span>}
             {etiquetasVisiveis && <>
               <span className="qz-chip qz-chip--tema">{questao.tema}</span>

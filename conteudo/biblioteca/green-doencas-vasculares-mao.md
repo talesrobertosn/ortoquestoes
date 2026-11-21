@@ -74,7 +74,7 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 60, Fig. 60.1, p. 20
 
 Depois de apresentar os números, o Green faz uma ressalva que vale ouro na hora de interpretar alternativas: **a experiência clínica mostra que a interrupção aguda da radial ou da ulnar é extremamente improvável de causar isquemia significativa**, seja qual for o desenho do arco (p. 2036). Na prática, os arcos "incompletos" das dissecções têm comunicações pequenas, que não aparecem na peça anatômica mas se abrem quando a pressão de um lado cai.
 
-O mesmo vale para a **dominância**. A maioria dos estudos acha a ulnar dominante; alguns acham a radial. PEDERSON considera a discussão pouco útil, justamente porque lesar uma só delas raramente causa isquemia (p. 2036). Em provas antigas, como no SIMÃO 2009, o curso usava medidas de diâmetro das artérias digitais de cada lado dos dedos para justificar a dominância; essas medidas vinham da edição anterior do Green e não estão no capítulo atual. O que a 7ª edição sustenta é só: ulnar dominante na maioria dos estudos, e pouco importa na clínica.
+O mesmo vale para a **dominância**. A maioria dos estudos acha a ulnar dominante; alguns acham a radial. PEDERSON considera a discussão pouco útil, justamente porque lesar uma só delas raramente causa isquemia (p. 2036). Em provas antigas, como no simulado da prova de título de cirurgia da mão de 2009, o curso usava medidas de diâmetro das artérias digitais de cada lado dos dedos para justificar a dominância; essas medidas vinham da edição anterior do Green e não estão no capítulo atual. O que a 7ª edição sustenta é só: ulnar dominante na maioria dos estudos, e pouco importa na clínica.
 
 A dominância volta a importar em uma situação: quando o cirurgião vai **retirar** uma artéria de propósito, como no retalho antebraquial radial (o "retalho chinês") ou na retirada da radial para a revascularização do miocárdio. Aí o arco precisa ser completo e a ulnar precisa encher a mão sozinha. Esse é o território do teste de ALLEN (seção seguinte) e do resumo de retalhos.
 
@@ -416,7 +416,7 @@ A distinção clássica (p. 2053):
 
 MERRITT sugeriu abandonar a distinção e chamar tudo apenas de RAYNAUD, e PEDERSON concorda; mas as provas continuam cobrando a diferença. A forma prática de lembrar: **doença é o RAYNAUD que é ele mesmo a doença**; **síndrome é o RAYNAUD que é sintoma de outra doença**.
 
-Em provas antigas (SBCM 2014), o curso pedia o tipo da doença de RAYNAUD na classificação de **WAKE FOREST**, uma classificação funcional das doenças vasculares da mão proposta por KOMAN; ela estava na edição anterior do Green e **não está** no capítulo da 7ª edição. O que o livro atual sustenta é apenas a separação doença x síndrome.
+Em provas antigas (prova de título de 2014), o curso pedia o tipo da doença de RAYNAUD na classificação de **WAKE FOREST**, uma classificação funcional das doenças vasculares da mão proposta por KOMAN; ela estava na edição anterior do Green e **não está** no capítulo da 7ª edição. O que o livro atual sustenta é apenas a separação doença x síndrome.
 
 ## Avaliação do paciente com RAYNAUD
 

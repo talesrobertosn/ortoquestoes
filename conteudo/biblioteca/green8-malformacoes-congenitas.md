@@ -166,7 +166,7 @@ Quanto à origem, o Green agrupa os **elementos nervosos** com o músculo e os v
 
 !questoes treino=mao-2004
 conceito: Pela Tabela 35.1 do Green, o plexo braquial aparece no 32º dia e no 37º o radial, o mediano e o ulnar chegam ao cotovelo; o Green põe os nervos, com o músculo e os vasos, entre os derivados do mesoderma somático.
-como: O SIMÃO 2023 perguntou, segundo o Green, de onde se origina o nervo mediano no broto.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou, segundo o Green, de onde se origina o nervo mediano no broto.
 armadilha: Escolher a placa lateral, que forma osso, cartilagem e tendão, ou camadas que não entram no broto, como a notocorda e o endoderma.
 alerta: A embriologia geral atribui os axônios motores ao tubo neural e os neurônios sensitivos e as células de Schwann à crista neural; a resposta "mesoderma somático" segue a Fig. 35.1 do Green, que é a fonte da banca.
 !fim
@@ -191,7 +191,7 @@ O Lovell and Winter (cap. 1, p. 10) acrescenta a ordem em que os eixos se fixam,
 
 !questoes treino=mao-1721,mao-3744,mao-3745,mao-3757
 conceito: A crista ectodérmica apical controla o eixo proximodistal pelo FGF e, quando falha, gera deficiência transversa; a ZPA controla o radioulnar pela sonic hedgehog (mão em espelho); a via Wnt controla o dorsoventral (unha-patela).
-como: O SIMÃO 2026 pediu o eixo e a anomalia ligados a um defeito da crista ectodérmica apical.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu o eixo e a anomalia ligados a um defeito da crista ectodérmica apical.
 armadilha: Associar a crista apical à mão em espelho (é da ZPA) ou à unha-patela (é da via Wnt), ou marcar proximodistal com polidactilia pré-axial.
 !fim
 
@@ -261,7 +261,7 @@ alerta: O Green situa a maioria das anomalias entre a 4ª e a 8ª semana (segund
 
 !questoes central=mao-0665 treino=mao-2003,mao-3753
 conceito: A ZPA fica no mesoderma da margem posterior (ulnar) do broto e sinaliza pela proteína sonic hedgehog; ZPA ou SHH na margem anterior produzem a mão em espelho, duplicação do lado ulnar sem polegar.
-como: A FMRP-USP 2026 perguntou o centro ligado à mão em espelho; o SIMÃO 2023, a substância que responde pelo sinal da ZPA.
+como: A FMRP-USP 2026 perguntou o centro ligado à mão em espelho; o simulado da prova de título de cirurgia da mão de 2023, a substância que responde pelo sinal da ZPA.
 armadilha: Responder FGF (é a crista apical), Lmx-1 (é a via Wnt dorsal) ou "um fator de transcrição": a SHH é uma proteína sinalizadora secretada.
 !fim
 
@@ -297,13 +297,13 @@ As **proteínas morfogenéticas ósseas** (BMP), conhecidas pelo papel na condro
 
 O raciocínio fica claro quando se pensa no papel do FGF no broto. O FGF da crista apical mantém o mesênquima embaixo dela vivo e proliferando; para que a membrana entre dois raios desapareça, a crista sobre aquele espaço precisa regredir e o sinal de sobrevivência precisa cair, deixando a BMP agir. Um FGF que sinaliza demais (o receptor ativado da APERT) mantém o mesênquima interdigital vivo e a membrana persiste.
 
-> **Divergência interna do Green, resolvida.** A Tabela 35.2 (p. 1210) lista "necrose interdigital" entre as ações da crista apical e do FGF, enquanto o texto (p. 1208 e 1209) diz que quem **dispara** a apoptose são as **BMP** e que o FGF alterado a **anula**. As duas informações se encaixam pelo mecanismo acima: o FGF controla a sobrevivência do mesênquima, e a BMP executa a morte. Para a prova: "a BMP dispara a apoptose interdigital"; se a única alternativa possível for "o FGF age na necrose interdigital", ela vem da tabela e foi aceita como correta pelo curso no SIMÃO 2009.
+> **Divergência interna do Green, resolvida.** A Tabela 35.2 (p. 1210) lista "necrose interdigital" entre as ações da crista apical e do FGF, enquanto o texto (p. 1208 e 1209) diz que quem **dispara** a apoptose são as **BMP** e que o FGF alterado a **anula**. As duas informações se encaixam pelo mecanismo acima: o FGF controla a sobrevivência do mesênquima, e a BMP executa a morte. Para a prova: "a BMP dispara a apoptose interdigital"; se a única alternativa possível for "o FGF age na necrose interdigital", ela vem da tabela e foi aceita como correta pelo curso no simulado da prova de título de cirurgia da mão de 2009.
 
 A apoptose também participa de outras etapas: a cavitação das articulações (ver a seção seguinte) e a regressão de estruturas transitórias. Quando ela falha entre dois ossos em vez de entre dois dedos, o resultado é uma **sinostose**; quando falha entre dois dedos, sindactilia. O Lovell and Winter (cap. 1, p. 15) faz a mesma ponte: falhas da morte celular programada estão por trás de algumas sindactilias e de vários distúrbios com sinostose.
 
 !questoes treino=mao-2527,mao-3751,mao-3755
 conceito: Os raios digitais aparecem unidos por membrana no 41º dia, a apoptose interdigital começa no 44º e, com 52 a 53 dias, os dedos estão totalmente separados; a BMP dispara a apoptose e o FGF alterado da APERT a anula.
-como: O SIMÃO 2021 perguntou com quantos dias os dedos estão totalmente separados.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou com quantos dias os dedos estão totalmente separados.
 armadilha: Marcar 26 dias (é o surgimento do broto) ou 70 dias (já é período fetal, com o membro completo desde a 8ª semana).
 !fim
 
@@ -319,7 +319,7 @@ A lógica do oxigênio vem da biologia da cartilagem: o condrócito é a célula
 
 !questoes treino=mao-2151,mao-3743,mao-3747,mao-3756
 conceito: O blastema condrogênico fica no centro do broto, onde a tensão de oxigênio é baixa, e forma os ossos; o blastema muscular fica na periferia, com mais oxigênio, e forma os músculos; os dois amadurecem de proximal para distal.
-como: O SBCM 2022 perguntou como se distribuem os blastemas que originam os ossos e os músculos.
+como: A prova de título de 2022 perguntou como se distribuem os blastemas que originam os ossos e os músculos.
 armadilha: Inverter as posições (condrogênico na periferia) ou dizer que a tensão de oxigênio é a mesma nas duas regiões.
 !fim
 
@@ -374,7 +374,7 @@ A família das **BMP** se expressa no membro em formação (Green, p. 1214). A *
 
 !questoes central=mao-0840 treino=mao-2346
 conceito: Os genes HOX e T-box codificam fatores de transcrição essenciais para o membro; mutações HOX causam a sinpolidactilia, a síndrome mão-pé-genital e o MADELUNG da discondrosteose de LERI-WEILL (todas autossômicas dominantes); o T-box liga-se à HOLT-ORAM (Tbx5) e à ulnar-mamária (Tbx3).
-como: O INTO 2026 perguntou o gene do MADELUNG associado à LERI-WEILL; o SIMÃO 2024 trouxe os genes HOX e T-box como a afirmativa correta entre trocas de eixo e de tempo.
+como: O INTO 2026 perguntou o gene do MADELUNG associado à LERI-WEILL; o simulado da prova de título de cirurgia da mão de 2024 trouxe os genes HOX e T-box como a afirmativa correta entre trocas de eixo e de tempo.
 armadilha: Marcar T-box para a LERI-WEILL (o T-box é da HOLT-ORAM e da ulnar-mamária) ou aceitar a crista apical no eixo radioulnar e a ZPA no proximodistal.
 alerta: O gene da LERI-WEILL é o SHOX, um gene homeobox que não pertence aos agrupamentos HOX clássicos; o Green o põe entre os defeitos HOX, e é essa a leitura do gabarito.
 !fim
@@ -554,15 +554,15 @@ Quando faltam dedos, a primeira pergunta do Green (cap. 36, p. 1254) não é qua
 | reconstrução | **repor a parte distal** (dedo do pé), que será movida pelas estruturas proximais | **repor a parte e o motor** (policização do indicador) |
 !fim
 
-O raciocínio é de engenharia: um dedo do pé transferido precisa de tendões para movê-lo, de um nervo para dar sensibilidade e de vasos para mantê-lo vivo. Na ausência transversal, tudo isso está ali, esperando um dedo. Na longitudinal, falta o motor, e transplantar só a parte daria um dedo imóvel; por isso se transfere um raio inteiro, com seus tendões e nervos, como na **policização do indicador** para a falta do polegar da deficiência radial (SIMÃO 2012).
+O raciocínio é de engenharia: um dedo do pé transferido precisa de tendões para movê-lo, de um nervo para dar sensibilidade e de vasos para mantê-lo vivo. Na ausência transversal, tudo isso está ali, esperando um dedo. Na longitudinal, falta o motor, e transplantar só a parte daria um dedo imóvel; por isso se transfere um raio inteiro, com seus tendões e nervos, como na **policização do indicador** para a falta do polegar da deficiência radial (simulado da prova de título de cirurgia da mão de 2012).
 
-As questões do SBCM 2022 e 2023 e do SIMÃO 2022 e 2026 vivem desse quadro: a **simbraquidactilia** e a **banda de constrição** são transversais; o polegar da mão torta radial, os dedos ulnares da mão torta ulnar e os raios centrais da fenda típica são longitudinais. A criança que nasceu sem dedos no nível das cabeças dos metacarpos, com punho normal e tendões, nervos e vasos presentes, tem uma deficiência **transversal**, e a reconstrução lógica é a **transferência microvascular de dedo do pé**.
+As questões da prova de título de 2022 e 2023 e do simulado da prova de título de cirurgia da mão de 2022 e 2026 vivem desse quadro: a **simbraquidactilia** e a **banda de constrição** são transversais; o polegar da mão torta radial, os dedos ulnares da mão torta ulnar e os raios centrais da fenda típica são longitudinais. A criança que nasceu sem dedos no nível das cabeças dos metacarpos, com punho normal e tendões, nervos e vasos presentes, tem uma deficiência **transversal**, e a reconstrução lógica é a **transferência microvascular de dedo do pé**.
 
 A ausência também pode ser **adquirida** na infância (p. 1260): trabalho infantil, queimadura, lesão elétrica, trombose, embolia e a púrpura da **meningococcemia**. O raciocínio de reconstrução é o mesmo.
 
 !questoes treino=mao-2903,mao-2154,mao-2241,mao-1723,mao-2603
 conceito: Ausência transversal tem estruturas proximais presentes (banda de constrição, simbraquidactilia) e se reconstrói repondo a parte distal com dedo do pé; ausência longitudinal não tem os motores (polegar da deficiência radial, dedos ulnares da deficiência ulnar, fenda típica) e pede repor parte e motor, como na policização.
-como: O SBCM 2022 perguntou qual ausência é transversal; o SBCM 2023, qual condição causa ausência transversal; o SIMÃO 2026, o menino sem dedos no nível das cabeças dos metacarpos; o SIMÃO 2022, a afirmação de acordo com o Green.
+como: A prova de título de 2022 perguntou qual ausência é transversal; a prova de título de 2023, qual condição causa ausência transversal; o simulado da prova de título de cirurgia da mão de 2026, o menino sem dedos no nível das cabeças dos metacarpos; o simulado da prova de título de cirurgia da mão de 2022, a afirmação de acordo com o Green.
 armadilha: Chamar a fenda típica de transversal, ou indicar policização numa ausência transversal com tendões e nervos presentes.
 !fim
 
@@ -589,7 +589,7 @@ A banda de constrição (sequência da ruptura amniótica, síndrome de STREETER
 | 4 | **amputação** intrauterina |
 !fim
 
-O Green avisa que a classificação **não guia o tratamento**: ela descreve, mas cada anel e cada dedo pedem decisão própria. As provas cobram os extremos: a fusão só das pontas é o **3a** (IIIA na nomenclatura da PUC-SP 2022); o túnel de pele entre dois dedos com pontas fundidas é o **tipo 3** (SIMÃO 2024); a **amputação no útero** é o **tipo 4** (SIMÃO 2024).
+O Green avisa que a classificação **não guia o tratamento**: ela descreve, mas cada anel e cada dedo pedem decisão própria. As provas cobram os extremos: a fusão só das pontas é o **3a** (IIIA na nomenclatura da PUC-SP 2022); o túnel de pele entre dois dedos com pontas fundidas é o **tipo 3** (simulado da prova de título de cirurgia da mão de 2024); a **amputação no útero** é o **tipo 4** (simulado da prova de título de cirurgia da mão de 2024).
 
 ## O tratamento da banda
 
@@ -607,7 +607,7 @@ O Green (p. 1255 a 1257) organiza por problema:
 | protuberâncias de pele no dorso | excisão com enxerto total | a zetaplastia dá resultado insatisfatório |
 !fim
 
-Por que dois anéis próximos não se liberam juntos (SIMÃO 2010)? O livro dá a regra sem explicar; o raciocínio é vascular. Cada liberação circunferencial interrompe por um tempo a drenagem venosa e linfática superficial do segmento; com dois anéis vizinhos, a ponte de pele entre eles fica sem circulação de entrada e saída, e o segmento pode sofrer. Antigamente nem um anel circunferencial se liberava em um tempo; a série de HABENICHT mostrou que um só é seguro.
+Por que dois anéis próximos não se liberam juntos (simulado da prova de título de cirurgia da mão de 2010)? O livro dá a regra sem explicar; o raciocínio é vascular. Cada liberação circunferencial interrompe por um tempo a drenagem venosa e linfática superficial do segmento; com dois anéis vizinhos, a ponte de pele entre eles fica sem circulação de entrada e saída, e o segmento pode sofrer. Antigamente nem um anel circunferencial se liberava em um tempo; a série de HABENICHT mostrou que um só é seguro.
 
 E o que fazer com os dedos que faltam? Como a banda é transversal, com tendões, nervos e vasos proximais quase normais, ela é uma das **melhores indicações de transferência de dedo do pé** (seção própria abaixo).
 
@@ -619,7 +619,7 @@ armadilha: Chamar a acrossindactilia de falha de formação.
 
 !questoes relacionadas=mao-1161 treino=mao-2928,mao-2932,mao-2951,mao-2279,mao-2281
 conceito: PATTERSON: 1 anel simples, 2 anel com deformidade distal e linfedema, 3 acrossindactilia (a pontas unidas, b comissuras distais, c sem comissura com seio proximal), 4 amputação intrauterina; a classificação descreve mas não guia o tratamento.
-como: A PUC-SP 2022 perguntou o subtipo da fusão só das pontas; o SIMÃO 2024, o tipo IV e o tipo da fusão com túnel de pele proximal.
+como: A PUC-SP 2022 perguntou o subtipo da fusão só das pontas; o simulado da prova de título de cirurgia da mão de 2024, o tipo IV e o tipo da fusão com túnel de pele proximal.
 armadilha: Dar o tipo 2 à acrossindactilia, ou o tipo 4 ao anel com linfedema.
 !fim
 
@@ -633,7 +633,7 @@ A antiga **"mão em fenda atípica"** é simbraquidactilia, e não fenda: MANSKE
 
 ## A marca: os nubbins
 
-A simbraquidactilia é **esporádica** e quase sempre **unilateral** (p. 1258). O defeito é **mesodérmico**: o esqueleto e os tecidos de suporte não se formam, mas as estruturas **ectodérmicas distais** (polpa, prega ungueal, **unha**) persistem. O resultado são os **nubbins**, cotos digitais com restos de unha, osso ou cartilagem (Fig. 36.75), a **marca** da simbraquidactilia (SIMÃO 2015). Pode acompanhar a **POLAND** (falta da cabeça esternal do peitoral maior).
+A simbraquidactilia é **esporádica** e quase sempre **unilateral** (p. 1258). O defeito é **mesodérmico**: o esqueleto e os tecidos de suporte não se formam, mas as estruturas **ectodérmicas distais** (polpa, prega ungueal, **unha**) persistem. O resultado são os **nubbins**, cotos digitais com restos de unha, osso ou cartilagem (Fig. 36.75), a **marca** da simbraquidactilia (simulado da prova de título de cirurgia da mão de 2015). Pode acompanhar a **POLAND** (falta da cabeça esternal do peitoral maior).
 
 ## As classificações da simbraquidactilia
 
@@ -651,7 +651,7 @@ BLAUTH e GEKELER (Handchirurgie, 1971) descreveram quatro tipos em espectro prog
 | 7 | amputação do antebraço | a parte distal do antebraço, em geral com dedos rudimentares no coto |
 !fim
 
-A ordem dos tipos 1 a 3 ensina a mesma lição da braquidactilia: o **primeiro osso a ficar pequeno ou a faltar é a falange média** (SIMÃO 2017), a última a ossificar.
+A ordem dos tipos 1 a 3 ensina a mesma lição da braquidactilia: o **primeiro osso a ficar pequeno ou a faltar é a falange média** (simulado da prova de título de cirurgia da mão de 2017), a última a ossificar.
 
 ## A anatomia que importa para operar
 
@@ -662,7 +662,7 @@ O Green (p. 1258 a 1260) descreve o que se encontra:
 - **flexores extrínsecos com ventre comum**, lumbricais em geral ausentes, **extensores quase normais** (extensor próprio do indicador e do mínimo independentes);
 - na forma monodáctila, tendões conjuntos; VILKKI ensina a explorar o antebraço para separar o tendão doador do ventre comum, evitando o **efeito quadriga**;
 - nos tipos mais graves (acárpico e de antebraço), não há intrínsecos úteis;
-- em **mais de 300 casos explorados**, o **nervo radial estava quase sempre presente**; mediano e ulnar eram pequenos ou ausentes, e a presença do polegar ou do quinto dedo implica a do mediano ou do ulnar correspondente (SIMÃO 2020).
+- em **mais de 300 casos explorados**, o **nervo radial estava quase sempre presente**; mediano e ulnar eram pequenos ou ausentes, e a presença do polegar ou do quinto dedo implica a do mediano ou do ulnar correspondente (simulado da prova de título de cirurgia da mão de 2020).
 
 ## O tratamento da simbraquidactilia
 
@@ -678,7 +678,7 @@ O Green (p. 1258 a 1260) descreve o que se encontra:
 
 !questoes treino=mao-2878,mao-2886,mao-2415
 conceito: Simbraquidactilia é deficiência transversal esporádica e unilateral, de defeito mesodérmico com ectoderma preservado (nubbins com unha); YAMAUCHI e TANABU contam o que falta: 1 trifalângico, 2 difalângico, 3 monofalângico, 4 afalângico, 5 ametacárpico, 6 acárpico, 7 antebraço; a falange média é a primeira a faltar; o nervo radial está quase sempre presente.
-como: O SIMÃO 2022 perguntou o tipo 4 de YAMAUCHI e TANABU.
+como: O simulado da prova de título de cirurgia da mão de 2022 perguntou o tipo 4 de YAMAUCHI e TANABU.
 armadilha: Trocar afalangia por monofalangia, ou dizer que a simbraquidactilia é deficiência longitudinal.
 !fim
 
@@ -724,7 +724,7 @@ Há muitas classificações (BARSKY, BLAUTH e FALLINER, BUCK-GRAMCKO, SANDZEN, W
 | V | **ausente** | elementos do polegar suprimidos; só restam raios ulnares |
 !fim
 
-A leitura é crescente: quanto maior o número, pior a primeira comissura. O polegar unido ao indicador é o **III** (USP 2025); o indicador suprimido com a comissura fundida à fenda é o **IV** (SBCM 2025).
+A leitura é crescente: quanto maior o número, pior a primeira comissura. O polegar unido ao indicador é o **III** (USP 2025); o indicador suprimido com a comissura fundida à fenda é o **IV** (prova de título de 2025).
 
 ## Quando e por que operar
 
@@ -770,7 +770,7 @@ A transferência **não vascularizada** de uma falange do pé tenta dar esquelet
 2. falange com o **periósteo** incluído;
 3. **reparo dos colaterais e dos tendões**.
 
-A lógica é biológica: a fise de uma falange não vascularizada só sobrevive se for transferida cedo, com o envoltório que a nutre (periósteo, cápsula e placa volar), e só cresce se for solicitada por tendões e ligamentos. Os autores do Green só oferecem a técnica **antes dos 15 meses** (SIMÃO 2021); o melhor crescimento veio com **condrodese** ao esqueleto proximal, e a **hemiartroplastia** na MF deu dedos móveis e estáveis. O receptor ideal é um raio com resto de falange proximal, tendões e bom envelope de pele, e a técnica é útil no **polegar** da simbraquidactilia monodáctila. A falta de função extrínseca é contraindicação relativa.
+A lógica é biológica: a fise de uma falange não vascularizada só sobrevive se for transferida cedo, com o envoltório que a nutre (periósteo, cápsula e placa volar), e só cresce se for solicitada por tendões e ligamentos. Os autores do Green só oferecem a técnica **antes dos 15 meses** (simulado da prova de título de cirurgia da mão de 2021); o melhor crescimento veio com **condrodese** ao esqueleto proximal, e a **hemiartroplastia** na MF deu dedos móveis e estáveis. O receptor ideal é um raio com resto de falange proximal, tendões e bom envelope de pele, e a técnica é útil no **polegar** da simbraquidactilia monodáctila. A falta de função extrínseca é contraindicação relativa.
 
 A colheita: **falange proximal do 3º ou 4º artelho**, com periósteo, placa volar e cápsula; a doadora é preenchida com enxerto cilíndrico da crista ilíaca com cartilagem apofisária, voltada para proximal, e um fio longitudinal fica 4 a 6 semanas (BOURKE e KAY, Br J Plast Surg, 2002; GARAGNANI e colaboradores, J Hand Surg Am, 2012, estudaram a morbidade da doadora). Os autores não colhem do segundo artelho se uma transferência microcirúrgica for possível no futuro. Complicações: **necrose de pele** (falange grande demais para o envelope), **ausência de crescimento** (criança mais velha, sem reparo de tendões e ligamentos, sem periósteo) e **dedo do pé instável**.
 
@@ -790,7 +790,7 @@ A transferência de dedo do pé na criança ganhou força com LISTER (Plast Reco
 
 !questoes treino=mao-2927,mao-2489
 conceito: RADOCHA: a falange do pé não vascularizada só cresce se transferida antes dos 15 meses, com periósteo e com reparo de colaterais e tendões; o dedo do pé microcirúrgico (segundo artelho) é a reconstrução das deficiências transversais, com o polegar e uma CMC estável como indicação ideal, nunca antes de 1 ano.
-como: O SIMÃO 2021 perguntou até que idade a transferência de falange deve ser feita para crescer.
+como: O simulado da prova de título de cirurgia da mão de 2021 perguntou até que idade a transferência de falange deve ser feita para crescer.
 armadilha: Aceitar idades de 2 a 10 anos para a falange livre, ou indicar dedo do pé na deficiência longitudinal sem motores.
 !fim
 
@@ -798,7 +798,7 @@ armadilha: Aceitar idades de 2 a 10 anos para a falange livre, ou indicar dedo d
 
 ## O que é e o que não é
 
-A **macrodactilia** é o dedo **desproporcionalmente grande**, presente ao nascer ou surgindo nos primeiros anos, com aumento **difuso de partes moles e esqueleto** (Green, cap. 36, p. 1275 e 1276). Os sinônimos (megalodactilia, gigantismo digital, macrodistrofia lipomatosa) aparecem nos enunciados. É incomum: **0,9% das anomalias congênitas** do membro superior na série de **FLATT** (SIMÃO 2015); o Tachdjian conta cerca de 300 casos na mão relatados desde 1824.
+A **macrodactilia** é o dedo **desproporcionalmente grande**, presente ao nascer ou surgindo nos primeiros anos, com aumento **difuso de partes moles e esqueleto** (Green, cap. 36, p. 1275 e 1276). Os sinônimos (megalodactilia, gigantismo digital, macrodistrofia lipomatosa) aparecem nos enunciados. É incomum: **0,9% das anomalias congênitas** do membro superior na série de **FLATT** (simulado da prova de título de cirurgia da mão de 2015); o Tachdjian conta cerca de 300 casos na mão relatados desde 1824.
 
 O primeiro cuidado é o que **não é** macrodactilia verdadeira: o dedo aumentado por **tumor**, **malformação vascular** ou **linfedema** (p. 1276). O diagnóstico diferencial inclui displasia fibrosa, malformações vasculares (KLIPPEL-TRÉNAUNAY-WEBER, com hemangioma cutâneo, varizes atípicas e hemi-hipertrofia), encondromatose múltipla (OLLIER), MAFFUCCI (encondromas e hemangiomas) e a síndrome de **PROTEUS** (WIEDEMANN e colaboradores, Eur J Pediatr, 1983, na lista do capítulo), com gigantismo parcial, nevos e tumores subcutâneos.
 
@@ -821,11 +821,11 @@ A classificação é de FLATT, com o tipo IV acrescentado depois (Green, Tabela 
 | **IV** | gigantismo e **hemi-hipertrofia** | rara; **todos os dedos** da mão, menos grave que I e II | intrínsecos hipertrofiados ou anômalos; **contratura em flexão**, **desvio ulnar** dos dedos e **polegar aduzido** |
 !fim
 
-A sequência I, II, III, IV segue a lógica **lipo, neuro, osso, metade do corpo**. As bancas trocam os números: neurofibromatose é o **II** (SBCM 2024); hiperostose, o **III** (SBCM 2023); hemi-hipertrofia, o **IV** (SIMÃO 2022). O gabarito oficial do SBCM 2025 marcou o tipo I para a neurofibromatose, o que não confere com o Green 7; pelo livro, o tipo I é a lipofibromatose. A diferença entre os nervos do I e do II caiu no SBCM 2015: na neurofibromatose, o nervo plexiforme tem mais **estroma fibrovascular** e aspecto **nodular**, e não fibrolipomatoso (p. 1278).
+A sequência I, II, III, IV segue a lógica **lipo, neuro, osso, metade do corpo**. As bancas trocam os números: neurofibromatose é o **II** (prova de título de 2024); hiperostose, o **III** (prova de título de 2023); hemi-hipertrofia, o **IV** (simulado da prova de título de cirurgia da mão de 2022). O gabarito oficial da prova de título de 2025 marcou o tipo I para a neurofibromatose, o que não confere com o Green 7; pelo livro, o tipo I é a lipofibromatose. A diferença entre os nervos do I e do II caiu na prova de título de 2015: na neurofibromatose, o nervo plexiforme tem mais **estroma fibrovascular** e aspecto **nodular**, e não fibrolipomatoso (p. 1278).
 
 !questoes treino=mao-2874,mao-2879,mao-2887,mao-2889,mao-2906,mao-2917,mao-2922,mao-2930,mao-2942,mao-2947,mao-2948,mao-2094,mao-2240,mao-2425,mao-2155
 conceito: FLATT: I lipofibromatose (a mais comum, nervo infiltrado até o carpo), II neurofibromatose (plexiforme, muitas vezes bilateral), III hiperostose (massas osteocondrais periarticulares sem nervo aumentado), IV hemi-hipertrofia (todos os dedos, flexão, desvio ulnar, polegar aduzido).
-como: O SBCM 2024 perguntou o tipo da neurofibromatose; o SBCM 2023, o da hiperostose; o SIMÃO 2022, o da hemi-hipertrofia; o SBCM 2022, a alteração associada na grande maioria dos casos.
+como: A prova de título de 2024 perguntou o tipo da neurofibromatose; a prova de título de 2023, o da hiperostose; o simulado da prova de título de cirurgia da mão de 2022, o da hemi-hipertrofia; a prova de título de 2022, a alteração associada na grande maioria dos casos.
 armadilha: Dar o tipo I à neurofibromatose, ou trocar o III pelo IV.
 !fim
 
@@ -833,17 +833,17 @@ armadilha: Dar o tipo I à neurofibromatose, ou trocar o III pelo IV.
 
 A forma comum é a **isolada com lipofibromatose do nervo proximal** (Fig. 36.95). O Green (p. 1276 a 1278) dá os detalhes que viram questão:
 
-- **quando:** notada **ao nascer** ou nos **três primeiros anos** (SIMÃO 2013 e 2019);
-- **evolução:** **progressiva**, quando o dedo cresce mais que os outros, ou **estática**, quando mantém a proporção com a mão desde o nascimento; há relato de duas estáticas que viraram progressivas depois de um desengorduramento. Na estática o dedo é grande desde o início e cresce na mesma proporção; na progressiva, o crescimento **supera** o dos dedos normais (USP 2025, SIMÃO 2021);
-- **lado e número:** em geral **unilateral**; **vários dedos é 2 a 3 vezes mais comum que um só** (SIMÃO 2019);
-- **qual dedo:** o **indicador** é o mais acometido, sobretudo junto com o polegar ou o médio (TARO 2020). A distribuição segue o **território de um nervo**, a macrodactilia "orientada pelo território do nervo" (SIMÃO 2012); o Tachdjian mostra a predileção pelo **mediano**, por isso o lado radial;
-- **desvio:** dedos **radiais desviam para radial**, **ulnares para ulnar**; dois dedos vizinhos **divergem** (Fig. 36.96; SIMÃO 2020). A hipótese do Green é que, com o nervo digital comum afetado, cada dedo cresce mais do lado do nervo e se afasta do vizinho, mas o próprio livro chama isso de especulação não confirmada;
-- **polegar:** **abduzido e estendido** (SIMÃO 2020);
+- **quando:** notada **ao nascer** ou nos **três primeiros anos** (simulado da prova de título de cirurgia da mão de 2013 e 2019);
+- **evolução:** **progressiva**, quando o dedo cresce mais que os outros, ou **estática**, quando mantém a proporção com a mão desde o nascimento; há relato de duas estáticas que viraram progressivas depois de um desengorduramento. Na estática o dedo é grande desde o início e cresce na mesma proporção; na progressiva, o crescimento **supera** o dos dedos normais (USP 2025, simulado da prova de título de cirurgia da mão de 2021);
+- **lado e número:** em geral **unilateral**; **vários dedos é 2 a 3 vezes mais comum que um só** (simulado da prova de título de cirurgia da mão de 2019);
+- **qual dedo:** o **indicador** é o mais acometido, sobretudo junto com o polegar ou o médio (TARO 2020). A distribuição segue o **território de um nervo**, a macrodactilia "orientada pelo território do nervo" (simulado da prova de título de cirurgia da mão de 2012); o Tachdjian mostra a predileção pelo **mediano**, por isso o lado radial;
+- **desvio:** dedos **radiais desviam para radial**, **ulnares para ulnar**; dois dedos vizinhos **divergem** (Fig. 36.96; simulado da prova de título de cirurgia da mão de 2020). A hipótese do Green é que, com o nervo digital comum afetado, cada dedo cresce mais do lado do nervo e se afasta do vizinho, mas o próprio livro chama isso de especulação não confirmada;
+- **polegar:** **abduzido e estendido** (simulado da prova de título de cirurgia da mão de 2020);
 - **crescimento:** o osso cresce e desvia até o **fechamento das fises**, mas as **partes moles podem continuar crescendo na vida adulta**; o dedo **enrijece** com o crescimento.
 
 ## Exame e imagem
 
-A radiografia (p. 1277) mostra esqueleto aumentado, **idade óssea avançada** no dedo afetado, falanges trapezoidais e, mais tarde, **artrose precoce** com osteófitos; a angiografia mostra uma artéria digital aumentada. O edema palmar por infiltração do mediano ou do ulnar pode dar **neuropatia compressiva**: o adulto com macrodactilia de polegar e indicador que passa a ter parestesia no mediano tem o **nervo infiltrado comprimido no túnel do carpo** (Fig. 36.97; SIMÃO 2014). A bainha flexora espessada pode dar **dedo em gatilho**, e há **sindactilia em 10%** (Fig. 36.98).
+A radiografia (p. 1277) mostra esqueleto aumentado, **idade óssea avançada** no dedo afetado, falanges trapezoidais e, mais tarde, **artrose precoce** com osteófitos; a angiografia mostra uma artéria digital aumentada. O edema palmar por infiltração do mediano ou do ulnar pode dar **neuropatia compressiva**: o adulto com macrodactilia de polegar e indicador que passa a ter parestesia no mediano tem o **nervo infiltrado comprimido no túnel do carpo** (Fig. 36.97; simulado da prova de título de cirurgia da mão de 2014). A bainha flexora espessada pode dar **dedo em gatilho**, e há **sindactilia em 10%** (Fig. 36.98).
 
 O exame procura o resto: na **NF1**, manchas café com leite, neurofibromas, tumores pediculados e lesões oculares; na **hiperostótica**, aumento nodular com grande perda de movimento, confirmado pela radiografia. Gigantismo mais amplo (segmentar, hemi-hipertrofia por NF ou KLIPPEL-TRÉNAUNAY, cruzado) e a macrodactilia de **todos os dedos** obrigam a examinar o membro inteiro (p. 1277 e 1278).
 
@@ -863,11 +863,11 @@ O Green (p. 1278) descreve o dedo por dentro, e cada frase já virou alternativa
 | osso | aumentado em todas as dimensões; canais largos, trabéculas irregulares, periósteo espesso |
 !fim
 
-Daí três respostas. O SIMÃO 2010 deu como certa, pelo curso, a pele espessada com **mais** glândulas sudoríparas; pelo Green, são **menos** glândulas, e as faces mais aumentadas são a **palmar e a distal**. A USP 2024 pôs como falsa a afirmação de que a face dorsal é a mais afetada. E o TARO 2006 perguntou se os tecidos aumentados são normais: não são (nervo, pele e osso são anormais), embora os **tendões** sejam.
+Daí três respostas. O simulado da prova de título de cirurgia da mão de 2010 deu como certa, pelo curso, a pele espessada com **mais** glândulas sudoríparas; pelo Green, são **menos** glândulas, e as faces mais aumentadas são a **palmar e a distal**. A USP 2024 pôs como falsa a afirmação de que a face dorsal é a mais afetada. E o TARO 2006 perguntou se os tecidos aumentados são normais: não são (nervo, pele e osso são anormais), embora os **tendões** sejam.
 
 !questoes relacionadas=mao-1385 treino=mao-2895,mao-2899,mao-2938,mao-2282,mao-2556
 conceito: Na macrodactilia, a pele é espessada com menos glândulas sudoríparas, há muita gordura com estroma fibroso, o nervo é tortuoso e fibrosado, os tendões são normais; a face palmar e a distal são as mais aumentadas; na forma progressiva o dedo cresce mais que os outros, na estática acompanha a proporção.
-como: O SIMÃO 2024 perguntou o achado histológico da pele; o SIMÃO 2021 e a USP 2025, a diferença entre progressiva e estática.
+como: O simulado da prova de título de cirurgia da mão de 2024 perguntou o achado histológico da pele; o simulado da prova de título de cirurgia da mão de 2021 e a USP 2025, a diferença entre progressiva e estática.
 armadilha: Marcar mais glândulas sudoríparas, ou dizer que na estática o dedo não fica maior.
 !fim
 
@@ -886,13 +886,13 @@ A macrodactilia é **muito difícil de tratar**: a natureza progressiva e difusa
 | **amputar** | raio de borda, transmetacárpica com **transposição** para o dedo central, substituição por dedo do pé, policização | dedo único ou crescimento incontrolável; **evitar amputar o polegar** |
 !fim
 
-O momento da epifisiodese é a pergunta mais clássica (SIMÃO 2017): quando o dedo atinge o **comprimento do dedo correspondente do genitor do mesmo sexo**. A ideia é deixar o dedo crescer até o tamanho adulto esperado e parar ali. As complicações são rigidez, osso excessivo na fise e angulação.
+O momento da epifisiodese é a pergunta mais clássica (simulado da prova de título de cirurgia da mão de 2017): quando o dedo atinge o **comprimento do dedo correspondente do genitor do mesmo sexo**. A ideia é deixar o dedo crescer até o tamanho adulto esperado e parar ali. As complicações são rigidez, osso excessivo na fise e angulação.
 
-Na hiperostótica (tipo III), retiram-se as massas osteocondrais (às vezes com parte da placa volar), mas **a recidiva é a regra**, e a artrodese fica para depois do comprimento adulto (SIMÃO 2009); implante na MF é raro. Na hemi-hipertrófica (tipo IV), liberam-se as contraturas e desengorduram-se os intrínsecos (p. 1282).
+Na hiperostótica (tipo III), retiram-se as massas osteocondrais (às vezes com parte da placa volar), mas **a recidiva é a regra**, e a artrodese fica para depois do comprimento adulto (simulado da prova de título de cirurgia da mão de 2009); implante na MF é raro. Na hemi-hipertrófica (tipo IV), liberam-se as contraturas e desengorduram-se os intrínsecos (p. 1282).
 
 ## O método dos autores: pensar na amputação cedo
 
-O ponto mais cobrado do capítulo (p. 1282 a 1285, e um dos pontos críticos da p. 1285) é a **amputação do raio**: ela vale a pena e deve ser considerada **cedo** na macrodactilia **progressiva**, **antes** de a família investir em várias cirurgias para salvar um dedo deformado e de pouca função (SIMÃO 2019, SIMÃO 2023, USP 2024 e 2026). Os pais costumam preferir preservar o dedo, e por isso a conversa precisa acontecer no começo. Num dedo central, a amputação do raio vem com transposição; no indicador, a pinça passa ao médio.
+O ponto mais cobrado do capítulo (p. 1282 a 1285, e um dos pontos críticos da p. 1285) é a **amputação do raio**: ela vale a pena e deve ser considerada **cedo** na macrodactilia **progressiva**, **antes** de a família investir em várias cirurgias para salvar um dedo deformado e de pouca função (simulado da prova de título de cirurgia da mão de 2019, simulado da prova de título de cirurgia da mão de 2023, USP 2024 e 2026). Os pais costumam preferir preservar o dedo, e por isso a conversa precisa acontecer no começo. Num dedo central, a amputação do raio vem com transposição; no indicador, a pinça passa ao médio.
 
 Quando se preserva, a sequência dos autores é:
 
@@ -911,7 +911,7 @@ alerta: O Green 7 (cap. 36, p. 1277) descreve o polegar macrodáctilo abduzido e
 
 !questoes relacionadas=mao-1565,mao-1421 treino=mao-1997,mao-1719
 conceito: Na macrodactilia progressiva, a amputação do raio deve ser considerada cedo, antes de muitas cirurgias; indica-se no dedo único acometido ou no crescimento incontrolável; evita-se amputar o polegar; nenhuma cirurgia devolve o aspecto normal.
-como: O SIMÃO 2023 e o SIMÃO 2026 (indicador progressivo, volumoso e rígido aos 7 anos) cobraram a amputação precoce do raio; a USP 2026, a indicação de amputação; a USP 2024, a afirmação correta.
+como: O simulado da prova de título de cirurgia da mão de 2023 e o simulado da prova de título de cirurgia da mão de 2026 (indicador progressivo, volumoso e rígido aos 7 anos) cobraram a amputação precoce do raio; a USP 2026, a indicação de amputação; a USP 2024, a afirmação correta.
 armadilha: Esperar que a forma progressiva estabilize sozinha, confiar só na epifisiodese, ou achar que os resultados cirúrgicos costumam ser satisfatórios.
 !fim
 

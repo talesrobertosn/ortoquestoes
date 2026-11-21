@@ -492,7 +492,7 @@ O Rockwood and Green (cap. 40) registra duas exceções. A primeira é o mecanis
 
 !questoes treino=ombro-cotovelo-0661
 conceito: A luxação do cotovelo, em geral posterolateral, ocorre por carga axial com valgo e rotação externa do antebraço (supinação) em relação ao úmero, e as lesões seguem o círculo de O'DRISCOLL de lateral (LUCL) para medial (banda anterior do colateral medial por último).
-como: O SIMÃO 2023 perguntou o mecanismo da maioria das luxações, combinando valgo ou varo com rotação interna ou externa e compressão axial.
+como: O simulado da prova de título de cirurgia da mão de 2023 perguntou o mecanismo da maioria das luxações, combinando valgo ou varo com rotação interna ou externa e compressão axial.
 armadilha: Marcar valgo com rotação interna, porque o Campbell descreve rotação interna do úmero sobre o antebraço fixo; em relação ao úmero, o antebraço roda externamente. Varo com carga axial e força posteromedial é o mecanismo menos comum, da instabilidade posteromedial.
 alerta: Os livros usam referenciais diferentes: o HEBERT (cap. 48) fala em valgo e supinação, o Rockwood and Green (cap. 40) em valgo, carga axial e força posterolateral, e o Campbell 15 (cap. 52, p. 2229) em valgo com rotação interna do úmero sobre o antebraço pronado e fixo, que equivale à rotação externa relativa do antebraço; o gabarito oficial (valgo, rotação externa e compressão axial) foi mantido.
 !fim

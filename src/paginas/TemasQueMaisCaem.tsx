@@ -101,7 +101,7 @@ const PROVAS: Array<{ id: IdModalidade | 'ortopedia'; rotulo: string; grupo: str
   { id: 'ortopedia', rotulo: 'Todas as provas', grupo: 'Ortopedia' },
   ...MODALIDADES.filter((m) => m.grupo === 'ortopedia').map((m) => ({ id: m.id, rotulo: m.curto, grupo: 'Ortopedia' })),
   { id: 'mao-ingresso', rotulo: 'Ingresso (residência)', grupo: 'Cirurgia da Mão' },
-  { id: 'mao-titulo', rotulo: 'Título: SBCM e SIMÃO', grupo: 'Cirurgia da Mão' },
+  { id: 'mao-titulo', rotulo: 'Prova de título', grupo: 'Cirurgia da Mão' },
 ]
 
 function SeletorProva({ atual, aoEscolher }: { atual: string; aoEscolher: (id: string) => void }) {

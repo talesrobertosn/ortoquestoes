@@ -184,7 +184,7 @@ Um alerta sobre a incubação: o texto do Green imprime "2 a 7 dias" (p. 104), o
 
 !questoes central=mao-1188 relacionadas=mao-1441 treino=mao-3681,mao-3680,mao-3684,mao-3694,mao-3691,mao-3693,mao-3687,mao-3677,mao-3688,mao-3690,mao-2398,mao-1745
 conceito: O M. leprae lesa o nervo por três mecanismos somados (infecção, reação imunológica e compressão), prefere os nervos superficiais e frios, acomete ulnar, mediano e radial nessa ordem em cerca de 70% dos casos ativos e recidivados, e a perda sensitiva vem antes da motora.
-como: A PUC-SP 2023 deu quatro afirmativas sobre os nervos na hanseníase e só a do golpe triplo estava inteira; o simulado do SIMÃO 2022 cobrou o mesmo trecho, com a incubação, os estágios e a posição do ulnar como distratores; a USP-SP 2024 e o simulado do SIMÃO 2026 pediram a ordem dos nervos e a explicação pela temperatura.
+como: A PUC-SP 2023 deu quatro afirmativas sobre os nervos na hanseníase e só a do golpe triplo estava inteira; o simulado do simulado da prova de título de cirurgia da mão de 2022 cobrou o mesmo trecho, com a incubação, os estágios e a posição do ulnar como distratores; a USP-SP 2024 e o simulado do simulado da prova de título de cirurgia da mão de 2026 pediram a ordem dos nervos e a explicação pela temperatura.
 armadilha: Trocar os 70% por 50%, dizer que o bacilo prefere as partes aquecidas, inverter a ordem sensitivo-motor ou pôr o ulnar como último tronco acometido.
 alerta: `mao-1188` está sem gabarito oficial; pelo Green 7 (p. 103), a única afirmativa correta é a do golpe triplo (B), porque a ordem ulnar, mediano e radial vale para 70% dos casos, não 50%, o bacilo prefere as partes frias e a perda sensitiva precede a motora.
 !fim
@@ -224,7 +224,7 @@ A conduta é escalonada (p. 113): o abscesso **indolor** pode regredir com corti
 
 !questoes central=mao-1283 relacionadas=mao-1639 treino=mao-3692,mao-2325
 conceito: O nervo passa por parasitização (normal ao exame, mas 50% com déficit), inflamação (aderido ao perineuro, não rola), aumento (espessado por caseação, 95% com déficit) e destruição (cordão fibroso); o espessamento é reação imune e caseação, não infecção inicial.
-como: O simulado do SIMÃO 2024 pediu a proporção de déficit já na fase de parasitização; a USP-SP 2025 mostrou nervos espessados numa imagem, e a USP-SP 2026 cobrou a neuropatia ulnar com ou sem espessamento.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 pediu a proporção de déficit já na fase de parasitização; a USP-SP 2025 mostrou nervos espessados numa imagem, e a USP-SP 2026 cobrou a neuropatia ulnar com ou sem espessamento.
 armadilha: Achar que o nervo normal à palpação não tem déficit, trocar 50% por 95%, ou incluir "atrofia" entre os estágios.
 !fim
 
@@ -266,7 +266,7 @@ A biópsia de pele deve ter a derme inteira e o subcutâneo com um nervo dérmic
 
 !questoes treino=mao-3685,mao-3686,mao-3679,mao-2520
 conceito: A manifestação mais comum e mais precoce da hanseníase é a mancha hipocrômica com sensibilidade diminuída; lesão descorada e anestésica ao mesmo tempo só existe na hanseníase. O raspado intradérmico é o padrão-ouro, e a lepromina classifica (positiva na tuberculoide) sem diagnosticar.
-como: O simulado do SIMÃO 2021 pediu a manifestação clínica mais comum e mais precoce, contra perda motora, garra e sintomas nasais.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2021 pediu a manifestação clínica mais comum e mais precoce, contra perda motora, garra e sintomas nasais.
 armadilha: Marcar a garra ulnar ou a perda de força dos intrínsecos, que são tardias; a perda motora vem depois da sensitiva.
 !fim
 
@@ -392,7 +392,7 @@ A bursite tuberculosa segue a mesma lógica: subdeltóidea, depois olécrano, de
 
 !questoes central=mao-1439 treino=mao-2196,mao-2059
 conceito: A tenossinovite (flexora, mais que extensora) é a forma mais comum de tuberculose na mão; as micobactérias preferem a tenossinóvia à articulação, ao osso, ao subcutâneo e ao nervo; dedo em salsicha, gânglio palmar composto e túnel do carpo com corpúsculos de arroz são as apresentações típicas.
-como: A USP-SP 2024 pediu a manifestação mais comum de tuberculose na mão; o simulado do SBCM 2023, a infecção do dedo em salsicha com corpúsculos de arroz; o simulado do SBCM 2024, a estrutura que a tuberculose raramente acomete no membro superior.
+como: A USP-SP 2024 pediu a manifestação mais comum de tuberculose na mão; o simulado da prova de título de 2023, a infecção do dedo em salsicha com corpúsculos de arroz; o simulado da prova de título de 2024, a estrutura que a tuberculose raramente acomete no membro superior.
 armadilha: Marcar osteomielite ou pioartrite como mais comuns; atribuir os corpúsculos de arroz só a fungos, ou achar que a tuberculose gosta de nervo (quem tem tropismo neural é o M. leprae).
 !fim
 
@@ -443,7 +443,7 @@ A duração (p. 101): partes moles, 4 meses de isoniazida e rifampicina ou 6 mes
 
 !questoes central=mao-1609 treino=mao-3678,mao-2057,mao-2366
 conceito: A osteomielite tuberculosa da mão é insidiosa, com inchaço fusiforme pouco doloroso e sem calor; na criança, a dactilite (spina ventosa) atinge mais a falange proximal, depois média, distal e metacarpos; no adulto, dedos mais que metacarpos, médio e anular mais que os outros, e a falange proximal mais que as demais.
-como: A USP-SP 2026 pediu a afirmação correta sobre a tuberculose dos ossos da mão (início insidioso, contra quadro agudo, cura espontânea e esclerose); os simulados do SBCM 2024 e do SIMÃO 2024 pediram o osso mais acometido na criança e no adulto.
+como: A USP-SP 2026 pediu a afirmação correta sobre a tuberculose dos ossos da mão (início insidioso, contra quadro agudo, cura espontânea e esclerose); os simulados da prova de título de 2024 e do simulado da prova de título de cirurgia da mão de 2024 pediram o osso mais acometido na criança e no adulto.
 armadilha: Descrever a tuberculose óssea como aguda e purulenta, marcar o metacarpo ou a falange distal, ou escolher o indicador no adulto.
 !fim
 
@@ -617,7 +617,7 @@ O tratamento tem quatro pontos (p. 77): **prednisona oral** (100 mg por dia), tr
 
 !questoes central=mao-0822 relacionadas=mao-1607 treino=mao-2107
 conceito: O pioderma gangrenoso é uma dermatose neutrofílica ligada à doença inflamatória intestinal (retocolite e CROHN) que imita infecção; a forma ulcerativa, de borda violácea solapada, é a mais comum; a perna é o local mais comum; o tratamento é prednisona, e a cirurgia piora pela patergia.
-como: O INTO 2026 mostrou uma lesão no dorso da mão de um paciente com retocolite ulcerativa e pediu o diagnóstico; a USP-SP 2026 cobrou a associação com a doença de CROHN; o simulado do SBCM 2022, o tratamento de primeira linha.
+como: O INTO 2026 mostrou uma lesão no dorso da mão de um paciente com retocolite ulcerativa e pediu o diagnóstico; a USP-SP 2026 cobrou a associação com a doença de CROHN; o simulado da prova de título de 2022, o tratamento de primeira linha.
 armadilha: Diagnosticar infecção, melanoma ou carcinoma e propor desbridamento; achar que a mão é o local mais comum.
 !fim
 
@@ -645,7 +645,7 @@ O **orf** (ectima contagioso) é um parapoxvírus de ovelhas e cabras (p. 123 a 
 
 !questoes treino=mao-1991
 conceito: No paciente com HIV, os dedos podem ter eritema indolor e telangiectasia periungueal, e as unhas podem ficar azuladas ou em baqueta de tambor; a infecção de mão incomum, grave ou que precisa de nova drenagem pede teste de HIV.
-como: O simulado do SIMÃO 2023 pediu qual condição indicam unhas azuladas e dedos em baqueta de tambor nas infecções crônicas da mão.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pediu qual condição indicam unhas azuladas e dedos em baqueta de tambor nas infecções crônicas da mão.
 armadilha: Marcar hanseníase ou tuberculose, que deformam a mão por outras vias (nervo, tenossinóvia, osso) e não pela unha.
 !fim
 

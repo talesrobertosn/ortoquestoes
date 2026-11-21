@@ -74,7 +74,7 @@ Rara, mas de prova. É causada por uma **toxina esfoliativa** do S. aureus que s
 
 !questoes treino=mao-2518
 conceito: A síndrome da pele escaldada estafilocócica acomete sobretudo crianças pequenas e é rara no adulto, em quem a mortalidade é alta.
-como: O simulado do SIMÃO 2021 pede a afirmação correta sobre a síndrome, com distratores sobre corticoide, dispensa de antibiótico e diagnóstico só clínico.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2021 pede a afirmação correta sobre a síndrome, com distratores sobre corticoide, dispensa de antibiótico e diagnóstico só clínico.
 armadilha: Achar que, por ser mediada por toxina, a síndrome dispensa antibiótico ou se trata com corticoide.
 !fim
 
@@ -104,7 +104,7 @@ Os anaeróbios são menos comuns na mão, mas devem ser lembrados com mais frequ
 
 !questoes central=mao-1098,mao-1501 treino=mao-2058
 conceito: Anaeróbios são raros na mão e aparecem mais no diabético; na mordida de animal pensa-se em Pasteurella, na humana em Eikenella.
-como: A PUC-SP 2020 e a USP-SP 2024 perguntaram em que paciente a infecção anaeróbia é mais provável; o SBCM 2024 inspirou o simulado que pede o germe de cada situação.
+como: A PUC-SP 2020 e a USP-SP 2024 perguntaram em que paciente a infecção anaeróbia é mais provável; a prova de título de 2024 inspirou o simulado que pede o germe de cada situação.
 armadilha: Escolher a mordedura humana ou o idoso como cenário típico do anaeróbio, ou trocar anaeróbios por fungos no diabético.
 !fim
 
@@ -126,7 +126,7 @@ Dor, calor, rubor e sensibilidade localizada fazem o diagnóstico (p. 18). Febre
 
 !questoes central=mao-0761 treino=mao-3333
 conceito: A PCR é normal em cerca de 75% das infecções da mão, e na drenagem sob garrote o membro é exsanguinado só pela elevação.
-como: O INTO 2023 pediu em que proporção a PCR fica normal; o SIMÃO 2013 inspirou o simulado sobre como exsanguinar o membro antes da drenagem.
+como: O INTO 2023 pediu em que proporção a PCR fica normal; o simulado da prova de título de cirurgia da mão de 2013 inspirou o simulado sobre como exsanguinar o membro antes da drenagem.
 armadilha: Confiar na PCR normal para afastar infecção, ou passar a faixa de ESMARCH e espremer o pus para o antebraço.
 !fim
 
@@ -192,7 +192,7 @@ A maioria das paroníquias é polimicrobiana, mas o **germe mais comum é o S. a
 
 !questoes central=mao-1185,mao-1187,mao-1332 treino=mao-2108,mao-3331
 conceito: A paroníquia aguda é a infecção mais comum da mão, nasce de pequenos traumas da prega ungueal e tem o S. aureus como germe principal.
-como: A PUC-SP 2022 e 2023 pediram a mais comum e o mecanismo; a USP-SP 2025 pediu o agente pela imagem; os simulados do SBCM 2022 e do SIMÃO 2010 pedem a origem e o nome da infecção que contorna o eponíquio (runaround).
+como: A PUC-SP 2022 e 2023 pediram a mais comum e o mecanismo; a USP-SP 2025 pediu o agente pela imagem; os simulados da prova de título de 2022 e do simulado da prova de título de cirurgia da mão de 2010 pedem a origem e o nome da infecção que contorna o eponíquio (runaround).
 armadilha: Apontar Candida como agente da forma aguda ou a via hematogênica como origem.
 !fim
 
@@ -244,11 +244,11 @@ O Green descreve uma cadeia, e é exatamente essa cadeia que as provas pedem (p.
 4. **Inflamação crônica**, fibrose e espessamento do eponíquio.
 5. **Menor vascularização** da dobra dorsal, menor resistência e novos surtos, num ciclo que se realimenta.
 
-As culturas mostram cocos gram-positivos, bastonetes gram-negativos, Candida e micobactérias (p. 24). Uma questão antiga do SIMÃO dizia que a crônica é causada "em cerca de 90%" pela Candida; o Green não dá porcentagem nenhuma e descreve a Candida como um dos invasores secundários, depois da colonização estafilocócica. O Campbell 15 (cap. 84) lista S. pyogenes, S. epidermidis, Candida e gram-negativos colônicos e vê a doença como uma dermatite de exposição colonizada, o que reforça a ideia: tratar o germe sem tirar a mão da água não resolve.
+As culturas mostram cocos gram-positivos, bastonetes gram-negativos, Candida e micobactérias (p. 24). Uma questão antiga do simulado da prova de título de cirurgia da mão dizia que a crônica é causada "em cerca de 90%" pela Candida; o Green não dá porcentagem nenhuma e descreve a Candida como um dos invasores secundários, depois da colonização estafilocócica. O Campbell 15 (cap. 84) lista S. pyogenes, S. epidermidis, Candida e gram-negativos colônicos e vê a doença como uma dermatite de exposição colonizada, o que reforça a ideia: tratar o germe sem tirar a mão da água não resolve.
 
 !questoes central=mao-0466,mao-1179 treino=mao-3328,mao-3326
 conceito: A paroníquia crônica predomina em mulheres de meia-idade que vivem com as mãos na água: colonização estafilocócica seguida de Candida e germes gram-negativos.
-como: O Einstein 2026 pediu os germes (gram-negativas e Candida); a PUC-SP 2022, o perfil do paciente; o SIMÃO 2008 e o SBCM 2015 inspiraram simulados sobre a proporção de quatro mulheres para um homem e a sequência estafilococo seguido de Candida.
+como: O Einstein 2026 pediu os germes (gram-negativas e Candida); a PUC-SP 2022, o perfil do paciente; o simulado da prova de título de cirurgia da mão de 2008 e a prova de título de 2015 inspiraram simulados sobre a proporção de quatro mulheres para um homem e a sequência estafilococo seguido de Candida.
 armadilha: Tratar a crônica como a aguda, só com antibiótico, ou colocá-la em homens jovens.
 !fim
 
@@ -268,7 +268,7 @@ No pós-operatório, o curativo sai em 48 a 72 horas, com água oxigenada a 3% e
 
 !questoes treino=mao-2060
 conceito: Na paroníquia crônica que não cede, a marsupialização retira um crescente de pele do eponíquio para deixar a prega drenar.
-como: O simulado do SBCM 2024 pede onde se faz a marsupialização.
+como: O simulado da prova de título de 2024 pede onde se faz a marsupialização.
 armadilha: Colocar a marsupialização no hiponíquio ou no leito ungueal.
 !fim
 
@@ -288,7 +288,7 @@ A **infecção apical** é uma infecção superficial da pele da parte **mais di
 
 !questoes central=mao-1226,mao-1536 treino=mao-3332
 conceito: O felon é um abscesso da polpa fechado pelos septos, com mecanismo de síndrome compartimental; a infecção apical é superficial e poupa o coxim.
-como: A UERJ 2025, discursiva, pediu a definição e a consequência do felon e a diferença para a infecção apical; a USP-SP 2026 pediu a afirmação correta; o SIMÃO 2012 inspirou o simulado sobre o nome da infecção superficial da ponta.
+como: A UERJ 2025, discursiva, pediu a definição e a consequência do felon e a diferença para a infecção apical; a USP-SP 2026 pediu a afirmação correta; o simulado da prova de título de cirurgia da mão de 2012 inspirou o simulado sobre o nome da infecção superficial da ponta.
 armadilha: Indicar a incisão em boca de peixe ou a marsupialização para o felon, ou chamar de felon a infecção que poupa o coxim.
 !fim
 
@@ -345,7 +345,7 @@ Cada sinal tem o seu porquê, e é isso que permite resolver as pegadinhas: a pr
 
 !questoes central=mao-1486 treino=mao-1734,mao-1735
 conceito: Os quatro sinais de KANAVEL são dedo semifletido, edema fusiforme, dor à palpação da bainha e dor à extensão passiva.
-como: A USP-SP 2024 pediu quais sinais pertencem ao quadro; o simulado do SIMÃO 2026 pede o caso que os reúne e outro, da mordida de gato com tenossinovite, pede a Pasteurella.
+como: A USP-SP 2024 pediu quais sinais pertencem ao quadro; o simulado do simulado da prova de título de cirurgia da mão de 2026 pede o caso que os reúne e outro, da mordida de gato com tenossinovite, pede a Pasteurella.
 armadilha: Inverter os sinais (dor à flexão, posição em extensão) ou confundir com felon, herpes ou artrite da IFP.
 !fim
 
@@ -361,7 +361,7 @@ Os autores do capítulo concluem que os sinais são úteis em conjunto, e nos po
 
 !questoes central=mao-1569 treino=mao-3330,mao-3335,mao-3341
 conceito: Qual sinal de KANAVEL é o mais útil depende da fonte: a dor à palpação da bainha para KANAVEL, o edema fusiforme na série de PANG.
-como: A USP-SP 2026 pediu o sinal mais confiável segundo KANAVEL; os simulados do SIMÃO 2009, 2014 e 2020 pedem o sinal mais presente na série de PANG, por que polegar e mínimo dão sinais discretos e a conduta na fase precoce sem pus.
+como: A USP-SP 2026 pediu o sinal mais confiável segundo KANAVEL; os simulados do simulado da prova de título de cirurgia da mão de 2009, 2014 e 2020 pedem o sinal mais presente na série de PANG, por que polegar e mínimo dão sinais discretos e a conduta na fase precoce sem pus.
 armadilha: Responder dor à extensão passiva sem olhar qual autor a questão cita, ou drenar logo o caso precoce que ainda cabe em antibiótico venoso e tala.
 !fim
 
@@ -406,7 +406,7 @@ Dois estudos definem o prognóstico ruim (p. 32). MALOON e colaboradores (J Hand
 
 !questoes treino=mao-1992
 conceito: Para PANG, infecção polimicrobiana, idade acima de 43 anos, diabetes, doença vascular e isquemia pioram o prognóstico da tenossinovite.
-como: O simulado do SIMÃO 2023 pede qual fator da lista de PANG piora o resultado.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pede qual fator da lista de PANG piora o resultado.
 armadilha: Escolher imunodeficiência ou vários dedos acometidos, que não estão entre os fatores de PANG.
 !fim
 
@@ -429,7 +429,7 @@ As variações anatômicas são muitas, descritas por SCHELDRUP (Surg Gynecol Ob
 
 !questoes treino=mao-1993,mao-3338
 conceito: A bainha do polegar segue na bursa radial e a do mínimo na ulnar, e as duas podem se comunicar pelo espaço de PARONA, dando a infecção em ferradura.
-como: O simulado do SIMÃO 2023 pede por qual espaço o polegar chega ao mínimo; o do SIMÃO 2018, a afirmação correta sobre bursas e bainhas.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 pede por qual espaço o polegar chega ao mínimo; o do simulado da prova de título de cirurgia da mão de 2018, a afirmação correta sobre bursas e bainhas.
 armadilha: Achar que a bainha do mínimo continua na bursa ulnar em quase todos, ou procurar a comunicação nos espaços tenar ou mediopalmar.
 !fim
 
@@ -445,7 +445,7 @@ Quando a bursa radial e a ulnar se ligam pelo PARONA, forma-se o **abscesso em f
 
 !questoes central=mao-1181 treino=mao-2195,mao-3327
 conceito: O espaço de PARONA fica no antebraço distal, entre o pronador quadrado e os flexores profundos, continua o espaço mediopalmar e recebe a infecção pela rotura das bursas.
-como: A PUC-SP 2022 pediu a afirmação correta sobre o espaço; o SBCM 2023 e o SIMÃO 2008 inspiraram simulados sobre o dedo ligado a ele e a continuidade com o mediopalmar.
+como: A PUC-SP 2022 pediu a afirmação correta sobre o espaço; a prova de título de 2023 e o simulado da prova de título de cirurgia da mão de 2008 inspiraram simulados sobre o dedo ligado a ele e a continuidade com o mediopalmar.
 armadilha: Colocar o espaço entre os flexores superficiais e o pronador, ou dizer que ele se comunica diretamente com as bursas.
 !fim
 
@@ -485,7 +485,7 @@ Por que o **tenar** é o mais comum? Ele recebe infecção de três bainhas (pol
 
 !questoes central=mao-0668 treino=mao-2519,mao-3337,mao-3339
 conceito: O espaço tenar é o espaço profundo mais acometido; o polegar fica abduzido e dói à adução passiva, e o hipotenar é raro e isolado das bainhas.
-como: A FMRP-USP 2026 pediu o local mais comum; os simulados do SIMÃO 2021, 2015 e 2019 pedem a posição do polegar, o comportamento do hipotenar e o espaço mais acometido após ferimento palmar.
+como: A FMRP-USP 2026 pediu o local mais comum; os simulados do simulado da prova de título de cirurgia da mão de 2021, 2015 e 2019 pedem a posição do polegar, o comportamento do hipotenar e o espaço mais acometido após ferimento palmar.
 armadilha: Responder mediopalmar como o mais comum, ou inverter a posição do polegar no abscesso tenar.
 !fim
 
@@ -626,7 +626,7 @@ A **Pasteurella multocida** é frequente nas duas espécies, **mais no gato**, e
 
 !questoes central=mao-1017,mao-1057,mao-1133 treino=mao-3336,mao-3340
 conceito: Na mordida de animal, sobretudo de gato, o germe que se cobre é a Pasteurella multocida, junto de estafilococo e estreptococo; há germes raros ligados ao hospedeiro e ao bicho.
-como: A UFG 2021 e a PUC-SP 2019 e 2021 pediram o germe principal; os simulados do SIMÃO 2015 e 2019 pedem a Capnocytophaga no esplenectomizado mordido por cão e a Francisella no gato que caça coelhos.
+como: A UFG 2021 e a PUC-SP 2019 e 2021 pediram o germe principal; os simulados do simulado da prova de título de cirurgia da mão de 2015 e 2019 pedem a Capnocytophaga no esplenectomizado mordido por cão e a Francisella no gato que caça coelhos.
 armadilha: Trocar Pasteurella por Eikenella, que é da mordida humana, ou não pensar no germe raro quando o hospedeiro ou a evolução fogem do padrão.
 !fim
 
@@ -668,7 +668,7 @@ A sanguessuga (Hirudo medicinalis) é usada para descongestionar retalhos e reim
 
 !questoes treino=mao-2385,mao-3329
 conceito: A sanguessuga medicinal carrega Aeromonas hydrophila no intestino, e a lesão do soco exige abrir a cápsula para ver a cartilagem.
-como: O simulado do SIMÃO 2022 pede o germe da sanguessuga; o do SIMÃO 2009, a conduta na ferida sobre a cabeça do metacarpo com cápsula de aspecto íntegro.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2022 pede o germe da sanguessuga; o do simulado da prova de título de cirurgia da mão de 2009, a conduta na ferida sobre a cabeça do metacarpo com cápsula de aspecto íntegro.
 armadilha: Escolher Pseudomonas para a sanguessuga, ou fechar a ferida do soco sem abrir a cápsula.
 !fim
 
@@ -707,7 +707,7 @@ As complicações incluem tenossinovite, artrite séptica, osteomielite, rigidez
 
 !questoes central=mao-0941,mao-1180 treino=mao-3334
 conceito: Na mordedura humana, o S. aureus é o germe mais cultivado, mas é preciso cobrir Eikenella corrodens, bastonete gram-negativo anaeróbio facultativo, e anaeróbios.
-como: A UFG 2019 pediu o agente mais comum; a PUC-SP 2022, um germe a considerar; o SIMÃO 2014 inspirou o simulado sobre o que é a Eikenella.
+como: A UFG 2019 pediu o agente mais comum; a PUC-SP 2022, um germe a considerar; o simulado da prova de título de cirurgia da mão de 2014 inspirou o simulado sobre o que é a Eikenella.
 armadilha: Responder Eikenella como o mais comum, ou dizê-la resistente à penicilina.
 !fim
 
@@ -739,7 +739,7 @@ A incubação é de 2 a 14 dias. Em geral **um dedo só** é acometido, mais o *
 
 !questoes central=mao-0821,mao-0763 treino=mao-2194
 conceito: O panarício herpético e a doença mão-pé-boca são virais: o herpes forma vesículas agrupadas, geralmente num único dedo, e a mão-pé-boca é causada pelo Coxsackie.
-como: O INTO 2026 pediu a suspeita pela imagem numa criança de 18 meses; o INTO 2023, o agente da mão-pé-boca; o SBCM 2023 inspirou o simulado sobre a distribuição do herpético.
+como: O INTO 2026 pediu a suspeita pela imagem numa criança de 18 meses; o INTO 2023, o agente da mão-pé-boca; a prova de título de 2023 inspirou o simulado sobre a distribuição do herpético.
 armadilha: Chamar as vesículas de impetigo e drená-las, ou achar que o herpes atinge vários dedos ao mesmo tempo.
 !fim
 
@@ -799,7 +799,7 @@ O tratamento é o **desbridamento extenso e urgente**; o primeiro desbridamento 
 
 !questoes central=mao-1313,mao-1414 treino=mao-3325
 conceito: A fasciite necrosante começa parecida com uma celulite, avança rápido pela fáscia, costuma ser polimicrobiana e mata muito; a mionecrose espontânea liga-se ao C. septicum.
-como: A USP-SP 2025 pediu a afirmação correta sobre a fasciite; a USP-SP 2024, sobre a gangrena de FOURNIER; o SBCM 2015 inspirou o simulado do clostrídio no paciente com câncer colorretal.
+como: A USP-SP 2025 pediu a afirmação correta sobre a fasciite; a USP-SP 2024, sobre a gangrena de FOURNIER; a prova de título de 2015 inspirou o simulado do clostrídio no paciente com câncer colorretal.
 armadilha: Esperar uma infecção lenta e localizada, ou apontar C. perfringens na forma espontânea.
 !fim
 
@@ -849,7 +849,7 @@ O pioderma gangrenoso merece atenção especial. Ligado à **colite ulcerativa**
 
 !questoes treino=mao-2107,mao-2383,mao-2528
 conceito: O pioderma gangrenoso imita infecção, piora com o desbridamento (patergia), avança do centro para a periferia de 1 a 2 cm por dia e se trata com corticoide.
-como: Os simulados do SBCM 2022 e do SIMÃO 2022 e 2021 pedem o tratamento de primeira linha, a forma de crescimento e a causa da piora após o desbridamento.
+como: Os simulados da prova de título de 2022 e do simulado da prova de título de cirurgia da mão de 2022 e 2021 pedem o tratamento de primeira linha, a forma de crescimento e a causa da piora após o desbridamento.
 armadilha: Desbridar e dar antibiótico à úlcera violácea que cresce, ou inverter o sentido do avanço.
 !fim
 

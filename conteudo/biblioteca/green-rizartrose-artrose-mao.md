@@ -89,7 +89,7 @@ A frase que as bancas copiam do Green é dupla: **a IFD é a articulação mais 
 
 !questoes treino=mao-2122,mao-3458
 conceito: Na osteoartrose erosiva, a IFP é a articulação mais sintomática e a IFD é a mais acometida; o lado radial é o preferido.
-como: A SBCM 2022 pediu, nessa ordem, a articulação mais sintomática e a mais acometida.
+como: A prova de título de 2022 pediu, nessa ordem, a articulação mais sintomática e a mais acometida.
 armadilha: Responder "IFD e IFD" por lembrar só da frequência, ou colocar a MCF em alguma das posições.
 !fim
 
@@ -221,7 +221,7 @@ O Campbell traz um argumento que ajuda a entender por que a IFP do indicador é 
 
 !questoes treino=mao-1804
 conceito: A artrodese da IFP é contraindicada em infecção recente e em envelope de partes moles ruim; instabilidade crônica, destruição pós-traumática e falha de artroplastia são indicações.
-como: O SIMÃO 2026 pediu em qual situação a artrodese da IFP deve ser evitada ou adiada.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu em qual situação a artrodese da IFP deve ser evitada ou adiada.
 armadilha: Achar que o trabalhador que precisa de pinça forte no indicador é contraindicação; ao contrário, o Campbell lembra que a instabilidade e a deformidade do indicador são mais bem tratadas com artrodese por causa do estresse da pinça.
 !fim
 
@@ -256,14 +256,14 @@ Como usar isso na prova: **quando a questão cita a figura, valem os números do
 
 !questoes central=mao-1317 relacionadas=trauma-0864 treino=mao-2323,mao-3484
 conceito: Na IFP, a flexão da artrodese cresce do radial para o ulnar (30 a 40 graus no indicador e no médio, 50 a 60 no anelar e no mínimo); os colaterais são liberados; a IFD é fundida em extensão ou leve flexão; banda de tensão e parafuso sem cabeça dão consolidação alta.
-como: O SIMÃO 2024 testou indicação da IFD, ângulos da IFP, colaterais e artrodese da MCF do polegar; a USP-SP 2025, posição da IFD do indicador, via da IFP, ângulo da IFP do indicador e fixação.
+como: O simulado da prova de título de cirurgia da mão de 2024 testou indicação da IFD, ângulos da IFP, colaterais e artrodese da MCF do polegar; a USP-SP 2025, posição da IFD do indicador, via da IFP, ângulo da IFP do indicador e fixação.
 armadilha: Dar 50 graus ao indicador (é o ângulo do anelar), achar que a via palmar é a padrão (é dorsal), preservar os colaterais na artrodese ou dizer que a principal indicação da IFD é o dedo em martelo crônico (é a artrose).
 alerta: Em `mao-1317`, o Campbell aceita a IFD de 0 a 20 graus conforme a preferência, o que torna a alternativa A discutível por esse livro; pelo Green (extensão completa a leve flexão) ela é falsa. O Green não afirma que parafuso ou banda "garantem maiores chances" sobre outras fixações; diz que ambos têm consolidação alta. Gabarito mantido.
 !fim
 
 !questoes treino=mao-2329,mao-2205,mao-3454,mao-3459,mao-3460,mao-3470
 conceito: A Fig. 11.6 do Green mostra a flexão progressiva das artrodeses do radial para o ulnar: MCF de 25 a 40 graus, IFP de 40 a 55 graus e IFD de 0 a 5 graus, do indicador ao mínimo; no texto, a IFP vai de 30 graus no indicador a 60 no mínimo, e o Campbell dá a MCF dos dedos em 20 a 30 graus.
-como: O SIMÃO 2024 pediu os ângulos do anelar (MCF, IFP e IFD); a SBCM 2023, os do dedo mínimo.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu os ângulos do anelar (MCF, IFP e IFD); a prova de título de 2023, os do dedo mínimo.
 armadilha: Usar o mesmo ângulo em todos os dedos ou trocar a sequência; a flexão cresce em direção ao mínimo em cada nível.
 alerta: As duas questões pedem os números da Fig. 11.6 do Green (p. 350), conferida: anelar com MCF 35, IFP 50 e IFD 5 (`mao-2329`) e mínimo com MCF 40, IFP 55 e IFD 5 (`mao-2205`), como nos gabaritos. O texto do mesmo livro dá 60 graus à IFP do mínimo no método do autor (50 a 60 na prática).
 !fim
@@ -328,7 +328,7 @@ O Campbell (p. 3486 e 3487) concorda com a consolidação semelhante e posiciona
 
 !questoes treino=mao-2501,mao-1806,mao-3464,mao-3466
 conceito: A artrodese da MCF por artrose primária é indicada sobretudo no polegar; nos dedos longos não é recomendada; no polegar, banda de tensão e parafuso de compressão têm consolidação alta e comparável, com posição de 15 a 20 graus de flexão.
-como: O SIMÃO 2021 pediu em qual dedo a artrodese da MCF é mais indicada; o SIMÃO 2026 testou indicação nos dedos longos, comparação de fixações, posição e quando evitar a artrodese no polegar.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu em qual dedo a artrodese da MCF é mais indicada; o simulado da prova de título de cirurgia da mão de 2026 testou indicação nos dedos longos, comparação de fixações, posição e quando evitar a artrodese no polegar.
 armadilha: Dizer que a artrodese é o tratamento de escolha da MCF dos dedos longos, que o polegar deve ser fundido em extensão completa (são 15 a 20 graus de flexão) ou que deve ser evitada com IF e trapeziometacarpal normais.
 !fim
 
@@ -371,7 +371,7 @@ A SRA foi desenhada para cimento, mas há versões não cimentadas. JENNINGS e L
 
 !questoes treino=mao-2204
 conceito: Na prótese de pirocarbono ou de superfície da IFP, os colaterais são preservados, mas até metade da largura de um colateral pode ser ressecada sem perder a estabilidade.
-como: A SBCM 2023 perguntou o que o Green admite sobre os colaterais na prótese de pirocarbono.
+como: A prova de título de 2023 perguntou o que o Green admite sobre os colaterais na prótese de pirocarbono.
 armadilha: Achar que o implante substitui a estabilidade (os colaterais funcionantes são pré-requisito) ou que a via palmar sempre causa instabilidade (ela exige reparo da placa palmar).
 !fim
 
@@ -444,7 +444,7 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 11, Fig. 11.16, p. 3
 
 !questoes treino=mao-2628,mao-3485
 conceito: O oblíquo anterior profundo é intracapsular, sai do tubérculo palmar do trapézio e se insere na face palmar e ulnar da base do primeiro metacarpo; é o estabilizador primário da trapeziometacarpal.
-como: O simulado SBCM 2024 descreveu a origem, a inserção e a posição intracapsular e pediu o nome do ligamento.
+como: O simulado da prova de título de 2024 descreveu a origem, a inserção e a posição intracapsular e pediu o nome do ligamento.
 armadilha: Confundir com o intermetacarpal (que liga as bases do primeiro e do segundo metacarpos) ou com o dorsorradial (dorsal); a origem no tubérculo palmar do trapézio já elimina os ligamentos dorsais.
 !fim
 
@@ -473,7 +473,7 @@ Um estudo recente complica a ideia de que o oblíquo anterior profundo é "o mai
 
 !questoes central=mao-0014 relacionadas=mao-0048,mao-0481,mao-0536 treino=mao-2033,mao-3465,mao-3476,mao-3486
 conceito: O oblíquo anterior profundo (palmar, intracapsular) é o estabilizador primário da trapeziometacarpal; ele impede a translação dorsal e ulnar, e sua falha deixa o metacarpo subluxar para dorsal.
-como: A SBCM 2024 pediu qual oblíquo é o estabilizador primário (anterior profundo); o TARO 2019 e o Einstein 2026, o ligamento cuja insuficiência produz a subluxação dorsal; o TARO 2017, o principal ligamento que se torna incompetente (palmar); uma prova de Ortopedia, o principal estabilizador cuja falência leva à degeneração.
+como: A prova de título de 2024 pediu qual oblíquo é o estabilizador primário (anterior profundo); o TARO 2019 e o Einstein 2026, o ligamento cuja insuficiência produz a subluxação dorsal; o TARO 2017, o principal ligamento que se torna incompetente (palmar); uma prova de Ortopedia, o principal estabilizador cuja falência leva à degeneração.
 armadilha: Trocar anterior por posterior, superficial por profundo, ou dorsal por palmar na direção da subluxação; e marcar "intermetacarpal" porque ele aparece nas cirurgias de suspensão.
 !fim
 
@@ -508,8 +508,8 @@ Juntando as peças: o ligamento palmar falha, o metacarpo translada para dorsal,
 
 !questoes central=mao-1513 treino=mao-2322
 conceito: A rizartrose se relaciona à atenuação do oblíquo anterior e acomete preferencialmente a porção palmar; a carga na pinça passa de 12 vezes e chega perto de 20 vezes a força aplicada.
-como: A USP-SP 2024 pediu, em lacunas, o oblíquo atenuado e a porção da base acometida; o SIMÃO 2024 misturou carga, tamanho das superfícies, natureza do ligamento e a razão de PELLEGRINI.
-armadilha: Achar que a porção dorsal se gasta porque o metacarpo subluxa para dorsal; o desgaste é palmar. No SIMÃO, o metacarpo é 34% menor (e não mais largo), o ligamento é intracapsular (e não extracapsular) e o trapézio se desgasta mais (3:1).
+como: A USP-SP 2024 pediu, em lacunas, o oblíquo atenuado e a porção da base acometida; o simulado da prova de título de cirurgia da mão de 2024 misturou carga, tamanho das superfícies, natureza do ligamento e a razão de PELLEGRINI.
+armadilha: Achar que a porção dorsal se gasta porque o metacarpo subluxa para dorsal; o desgaste é palmar. No simulado da prova de título de cirurgia da mão, o metacarpo é 34% menor (e não mais largo), o ligamento é intracapsular (e não extracapsular) e o trapézio se desgasta mais (3:1).
 !fim
 
 # O paciente com rizartrose e o exame {radar=confirmado}
@@ -526,7 +526,7 @@ O grau dessa instabilidade da MCF muda a cirurgia: quando se faz trapeziectomia,
 
 !questoes central=mao-0101 treino=mao-1963
 conceito: Na rizartrose avançada, o primeiro metacarpo fica em contratura de adução e a MCF hiperestende para compensar.
-como: O SIMÃO 2023 pediu como o polegar se apresenta no estágio avançado; o TEOT 2021, a hipermobilidade compensatória da MCF e a posição do metacarpo.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu como o polegar se apresenta no estágio avançado; o TEOT 2021, a hipermobilidade compensatória da MCF e a posição do metacarpo.
 armadilha: Marcar "hiperflexão" da MCF ou "metacarpo em abdução"; o metacarpo perde a abdução (fica aduzido) e a MCF vai para extensão, não para flexão. Também não é "déficit de adução": é excesso de adução.
 !fim
 
@@ -556,7 +556,7 @@ O teste de ELSON não tem nada a ver com a base do polegar: no capítulo de les�
 
 !questoes treino=mao-1803,mao-3479
 conceito: O teste de grind comprime axialmente o primeiro metacarpo contra o trapézio, com rotação, e reproduz dor e crepitação na artrose trapeziometacarpal.
-como: O SIMÃO 2026 descreveu a manobra e pediu o nome.
+como: O simulado da prova de título de cirurgia da mão de 2026 descreveu a manobra e pediu o nome.
 armadilha: ELSON é teste da bandeleta central; FINKELSTEIN é do DE QUERVAIN; ROBERT é incidência radiográfica, não manobra.
 alerta: O Campbell chama a manobra do DE QUERVAIN de EICHOFF; nenhum dos dois livros, nas páginas lidas, descreve o FINKELSTEIN por esse nome.
 !fim
@@ -618,7 +618,7 @@ E o estágio I se distingue dos outros por não ter estreitamento nem osteófito
 
 !questoes central=mao-0950 relacionadas=mao-0603,mao-0235 treino=mao-2034,mao-3471
 conceito: Estreitamento acentuado com osteófitos maiores que 2 mm e ETT preservada é EATON III; cistos e esclerose subcondrais entram no III na descrição detalhada.
-como: A SBCM 2024 deu um caso com osteófito de 3 mm e ETT normal; a UFG 2019, osteófitos maiores que 2 mm; o TARO 2007, destruição, cistos, esclerose e osteófito maior que 2 mm; uma prova de Ortopedia mostrou a incidência de ROBERT e pediu o estágio.
+como: A prova de título de 2024 deu um caso com osteófito de 3 mm e ETT normal; a UFG 2019, osteófitos maiores que 2 mm; o TARO 2007, destruição, cistos, esclerose e osteófito maior que 2 mm; uma prova de Ortopedia mostrou a incidência de ROBERT e pediu o estágio.
 armadilha: Achar que osteófito grande já é IV; o IV exige a escafotrapeziotrapezoidal. E não existe estágio V nem IIA.
 alerta: `mao-0603` está sem gabarito oficial; o Green (osteófito > 2 mm) e o Campbell (destruição com cistos e esclerose, osteófitos > 2 mm) sustentam o estágio III. Em `mao-0235`, a imagem não é reproduzida aqui; o gabarito (III) foi mantido.
 !fim
@@ -631,7 +631,7 @@ armadilha: Escolher "não há diminuição da fenda" (é o I) ou "diminuição a
 
 !questoes central=mao-0158 treino=mao-1964,mao-3462,mao-3472,mao-3483
 conceito: O que diferencia o estágio IV é o acometimento da articulação escafotrapeziotrapezoidal (pantrapezial), somado às alterações do III.
-como: O TEOT 2023 pediu o que distingue o IV; o SIMÃO 2023 descreveu destruição, cistos, esclerose, osteófitos maiores que 2 mm e artrose ETT e pediu o estágio.
+como: O TEOT 2023 pediu o que distingue o IV; o simulado da prova de título de cirurgia da mão de 2023 descreveu destruição, cistos, esclerose, osteófitos maiores que 2 mm e artrose ETT e pediu o estágio.
 armadilha: Osteófito maior que 2 mm e esclerose também estão no III; só a ETT separa o IV.
 !fim
 
@@ -686,7 +686,7 @@ A complicação mais comum da osteotomia, segundo o Green (p. 368), é a **pseud
 
 !questoes central=mao-0575 treino=mao-1965
 conceito: A osteotomia do primeiro metacarpo é de fechamento em extensão, feita cerca de 1 cm distal à articulação, indicada nos estágios I e II e contraindicada na hipermobilidade; sua complicação mais comum é a pseudartrose.
-como: O SIMÃO 2023 misturou indicação, complicação, direção da cunha e hipermobilidade; o TARO 2026 pediu a distância da superfície articular e o tamanho da cunha.
+como: O simulado da prova de título de cirurgia da mão de 2023 misturou indicação, complicação, direção da cunha e hipermobilidade; o TARO 2026 pediu a distância da superfície articular e o tamanho da cunha.
 armadilha: Dizer que a cunha é em flexão (é em extensão), que vai para os estágios III e IV, ou que a hipermobilidade é indicação (é contraindicação).
 alerta: Em `mao-0575`, o Green sustenta a distância de cerca de 10 mm (1 cm) da articulação, mas descreve a cunha em graus (30 graus no texto de indicações, 15 graus na técnica com o segundo corte a 2 mm), não em milímetros; nenhum dos livros traz a cunha de 5 mm. O gabarito oficial (10 mm e 5 mm) foi mantido.
 !fim
@@ -764,7 +764,7 @@ O Green (p. 363) organiza o manejo do espaço em quatro opções: **hematoma** (
 
 !questoes central=mao-0744 relacionadas=mao-0236,mao-0826 treino=mao-2532,mao-3482
 conceito: BURTON e PELLEGRINI e WEILBY usam o flexor radial do carpo; no WEILBY, metade do FRC é tecida em oito em torno do ALP, formando a alça que suspende o metacarpo depois da trapeziectomia.
-como: O IAUPE 2025 pediu o tendão de BURTON e PELLEGRINI; uma prova de Ortopedia, o enxerto do WEILBY que reconstrói o oblíquo anterior e o intermetacarpal; o SIMÃO 2021, o tendão da alça de WEILBY; o INTO 2026 mostrou a imagem da técnica e pediu o autor.
+como: O IAUPE 2025 pediu o tendão de BURTON e PELLEGRINI; uma prova de Ortopedia, o enxerto do WEILBY que reconstrói o oblíquo anterior e o intermetacarpal; o simulado da prova de título de cirurgia da mão de 2021, o tendão da alça de WEILBY; o INTO 2026 mostrou a imagem da técnica e pediu o autor.
 armadilha: Marcar o ALP no WEILBY porque ele participa da alça: o ALP é o poste em torno do qual o FRC é passado, não o enxerto. Também cai "ALP colhido inteiro", que é THOMPSON.
 alerta: Em `mao-0826`, a imagem da prova não é reproduzida aqui; o gabarito (WEILBY) foi mantido.
 !fim
@@ -880,7 +880,7 @@ Alguns dados merecem explicação. **YUAN e colaboradores** (J Hand Surg Am 34:2
 
 !questoes treino=mao-2324
 conceito: A complicação mais frequente tanto da osteotomia do primeiro metacarpo quanto da artrodese trapeziometacarpal é a pseudartrose, que mesmo assim é incomum.
-como: O SIMÃO 2024 pediu a complicação comum aos dois procedimentos.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu a complicação comum aos dois procedimentos.
 armadilha: Infecção é citada como incomum; material saliente e deformidade em Z não são as complicações que o Green destaca.
 !fim
 

@@ -21,7 +21,7 @@ Saber quem escreveu ajuda a entender o tom. ATHANASIAN é oncologista ortopédic
 
 A ideia que organiza tudo está na primeira página: na mão, **a imensa maioria das massas é benigna, e é justamente isso que torna o maligno perigoso**. O cirurgião vê cem cistos sinoviais e, no dia em que aparece o sarcoma, opera como cisto. O livro diz que em nenhuma outra área da cirurgia da mão a decisão desinformada custa tão caro, que a ressecção inadequada que permite recidiva pode condenar o paciente a um prognóstico muito pior e que **a função é secundária à sobrevida** (p. 1992). Também diz que nenhum médico pode mandar "deixar quieta" uma massa cujo diagnóstico não está estabelecido (p. 1987). Daí as três perguntas que o capítulo ensina a fazer diante de qualquer massa: o que é (diagnóstico, com biópsia bem planejada se a clínica e a imagem não bastarem), onde está (estadiamento) e com que margem sai.
 
-A banca de mão (SIMÃO e SBCM) cobra este capítulo de um jeito muito previsível. Os enunciados são curtos, quase sempre uma frase aberta ("O osteoma osteoide acomete com mais frequência:"), e as quatro alternativas são paralelas: quatro ossos, quatro décadas, quatro órgãos. Nas afirmativas, a correta costuma ser a frase literal do Green, e as erradas trocam um detalhe (lento por rápido, benigno por maligno, um nervo pelo outro, um número pelo vizinho). Os blocos que mais caem, nesta ordem, são:
+A banca de mão (simulado da prova de título de cirurgia da mão e prova de título) cobra este capítulo de um jeito muito previsível. Os enunciados são curtos, quase sempre uma frase aberta ("O osteoma osteoide acomete com mais frequência:"), e as quatro alternativas são paralelas: quatro ossos, quatro décadas, quatro órgãos. Nas afirmativas, a correta costuma ser a frase literal do Green, e as erradas trocam um detalhe (lento por rápido, benigno por maligno, um nervo pelo outro, um número pelo vizinho). Os blocos que mais caem, nesta ordem, são:
 
 - **Cistos sinoviais**: local do cisto dorsal (sobre o ligamento escafolunar), conteúdo (ácido hialurônico), epidemiologia, conduta na criança, técnica e complicação da cirurgia, cisto volar e artéria radial, bossa carpometacarpal.
 - **Encondroma**: frequência, osso mais acometido, diagnóstico radiográfico, fratura patológica, recidiva; e as encondromatoses de OLLIER e MAFFUCCI.
@@ -88,7 +88,7 @@ A Tabela 59.1 do Green sai pouco legível na edição consultada, e os estágios
 
 !questoes central=mao-0459 treino=mao-2187,mao-3107,mao-3108,mao-3117
 conceito: no ENNEKING o algarismo dá o grau e a letra dá o local: IA baixo grau intracompartimental, IB baixo grau extracompartimental, IIA alto grau (G2) intracompartimental (T1), IIB alto grau extracompartimental (T2), III qualquer um com metástase
-como: a SBCM 2022 pediu a definição do IIA; o Einstein 2026 pediu o estágio de alto grau e extracompartimental (IIB)
+como: a prova de título de 2022 pediu a definição do IIA; o Einstein 2026 pediu o estágio de alto grau e extracompartimental (IIB)
 armadilha: achar que o III é "alto grau e extracompartimental"; o III é definido só pela metástase, e o que separa A de B é a barreira anatômica, não o tamanho
 alerta: em `mao-2187` o enunciado fala em ENNEKING "modificado por STAHL"; no Green (p. 1988) STAHL aparece só como editor do livro de 1984 em que ENNEKING publicou a tabela, e a linha IB da Tabela 59.1 sai impressa com "T1" por erro tipográfico
 !fim
@@ -200,7 +200,7 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 59, Fig. 59.4, p. 19
 
 !questoes treino=mao-2380,mao-1732
 conceito: sarcoma de partes moles na falange média não permite margem ampla com excisão local; o Green indica amputação na MF ou no metacarpo e prefere a ressecção do raio por função e estética
-como: o SIMÃO 2022 perguntou o tratamento preferencial de um tumor maligno agressivo na falange média; o SIMÃO 2026 trouxe o caso de sarcoma de alto grau aderido à bainha flexora do anelar
+como: o simulado da prova de título de cirurgia da mão de 2022 perguntou o tratamento preferencial de um tumor maligno agressivo na falange média; o simulado da prova de título de cirurgia da mão de 2026 trouxe o caso de sarcoma de alto grau aderido à bainha flexora do anelar
 armadilha: escolher a excisão com 1 ou 2 cm de pele e retalho preservando tendões (margem contaminada pela bainha) ou a desarticulação na IFP (nível dentro da zona do tumor)
 alerta: o Campbell (cap. 83, p. 3568) aceita amputação transdiafisária pela falange proximal para tumor maligno da falange média; o gabarito de `mao-2380` e de `mao-1732` segue o Green (p. 1993)
 !fim
@@ -229,7 +229,7 @@ Um último dado de epidemiologia que a banca adora: **a degeneração maligna do
 
 !questoes central=mao-1538 treino=mao-1733,mao-3090
 conceito: o cisto sinovial é o tumor de partes moles mais comum da mão, predomina em mulheres da segunda à quarta década e nunca teve degeneração maligna descrita; o risco real é o sarcoma tratado como cisto
-como: a USP-SP 2026 perguntou em quantos por cento dos casos se descreve degeneração maligna; o SIMÃO 2026 pediu a afirmativa sobre os cistos que está de acordo com a bibliografia (no cisto mucoso, tratar também os osteófitos)
+como: a USP-SP 2026 perguntou em quantos por cento dos casos se descreve degeneração maligna; o simulado da prova de título de cirurgia da mão de 2026 pediu a afirmativa sobre os cistos que está de acordo com a bibliografia (no cisto mucoso, tratar também os osteófitos)
 armadilha: marcar 5% ou 10% por analogia com outras lesões benignas que malignizam raramente; o Green escreve que a degeneração maligna nunca foi relatada
 !fim
 
@@ -245,7 +245,7 @@ A peça que falta é a **comunicação valvular**. O contraste injetado na artic
 
 !questoes treino=mao-2015,mao-3110
 conceito: a mucina do cisto sinovial contém glicosamina, albumina, globulina e alta concentração de ácido hialurônico; a parede é de colágeno comprimido, sem epitélio nem sinóvia, e o ducto até a articulação funciona como válvula de mão única
-como: o SIMÃO 2023 perguntou qual substância está em alta concentração na mucina
+como: o simulado da prova de título de cirurgia da mão de 2023 perguntou qual substância está em alta concentração na mucina
 armadilha: marcar globulina, que está presente mas não é o componente característico, ou colágeno, que forma a parede e não o conteúdo
 !fim
 
@@ -273,7 +273,7 @@ Antes de operar, o livro manda **rever a radiografia**, à procura de um compone
 
 !questoes central=mao-0272 treino=mao-2326,mao-3079,mao-3099,mao-3113,mao-3114
 conceito: o cisto sinovial do punho é mais frequente no dorso (60% a 70% dos cistos), com o cisto principal sobre o ligamento escafolunar ou ligado a ele por pedículo longo
-como: o ENARE R4 2023 perguntou a localização mais comum dos cistos articulares na mão; o SIMÃO 2024 perguntou onde fica com mais frequência o cisto sinovial do punho
+como: o ENARE R4 2023 perguntou a localização mais comum dos cistos articulares na mão; o simulado da prova de título de cirurgia da mão de 2024 perguntou onde fica com mais frequência o cisto sinovial do punho
 armadilha: trocar dorsal por palmar ou escafolunar por lunopiramidal; o volar, segundo mais comum, fica sobre a borda do rádio ou o tubérculo do escafoide
 !fim
 
@@ -301,7 +301,7 @@ Daí nasce um fenômeno próprio da técnica, a **falsa recidiva** (pseudorrecid
 
 !questoes treino=mao-2050,mao-3105
 conceito: depois da ressecção artroscópica, o saco vazio pode reencher de líquido articular antes de a cápsula cicatrizar (falsa recidiva); a prevenção e o tratamento são a automassagem do local por cerca de 3 semanas
-como: a SBCM 2024 perguntou como se previne ou trata a pseudorrecidiva depois da ressecção artroscópica
+como: a prova de título de 2024 perguntou como se previne ou trata a pseudorrecidiva depois da ressecção artroscópica
 armadilha: infiltrar corticoide, imobilizar ou reoperar por via aberta um quadro que é transitório e mecânico
 alerta: a automassagem não está no cap. 59 do Green 7; vem do capítulo de artroscopia do punho do Green, citado no comentário da questão
 !fim
@@ -322,7 +322,7 @@ A técnica usa **incisão longitudinal**, extensível ao túnel do carpo ou à r
 
 !questoes treino=mao-2051,mao-2503,mao-3095
 conceito: o cisto volar do punho fica sobre a borda distal do rádio (cápsula radiocárpica) ou um pouco distal, sobre o tubérculo do escafoide (cápsula escafotrapezial), entre o flexor radial do carpo e o abdutor longo do polegar, junto da artéria radial
-como: a SBCM 2024 e o SIMÃO 2021 perguntaram onde costuma ficar o cisto volar do punho
+como: a prova de título de 2024 e o simulado da prova de título de cirurgia da mão de 2021 perguntaram onde costuma ficar o cisto volar do punho
 armadilha: levar o volar para o escafolunar (é o dorsal), para o lunopiramidal ou para dentro do túnel do carpo, onde só chegam extensões ocasionais
 !fim
 
@@ -386,7 +386,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3572), dá recidiva d
 
 !questoes treino=mao-2327,mao-3092,mao-3769
 conceito: tumor de células gigantes da bainha (tenossinovial) é o segundo tumor mais comum da mão; recidiva de 5% a 50% após excisão marginal, com três fatores de risco: artrose, localização na IFD e erosão óssea por pressão
-como: o SIMÃO 2024 pediu o achado que é fator de risco para recidiva local
+como: o simulado da prova de título de cirurgia da mão de 2024 pediu o achado que é fator de risco para recidiva local
 armadilha: marcar localização na palma, compressão do nervo digital ou tenossinovite associada, que não estão na lista do Green nem na do Campbell
 !fim
 
@@ -414,7 +414,7 @@ Na unha, o capítulo 9 do Green (p. 334 aprox.) descreve o granuloma que cresce 
 
 !questoes central=mao-1864 treino=mao-2274
 conceito: granuloma piogênico é proliferação capilar pós-trauma, friável e sangrante, tratada com nitrato de prata quando pequena; fibroma digital da infância é benigno e agressivo, surge antes de 1 ano na região das interfalângicas, pequeno e indolor, com recidiva de cerca de 60%
-como: o ENARE de Cirurgia da Mão 2023 descreveu tecido de granulação exuberante e sangrante na falange distal após ferida penetrante, tratado com nitrato de prata; a SBCM 2023 pediu a característica do fibroma digital da infância
+como: o ENARE de Cirurgia da Mão 2023 descreveu tecido de granulação exuberante e sangrante na falange distal após ferida penetrante, tratado com nitrato de prata; a prova de título de 2023 pediu a característica do fibroma digital da infância
 armadilha: no granuloma, esquecer que a lesão que persiste após cauterização pede biópsia (carcinoma espinocelular e melanoma amelanótico imitam); no fibroma, marcar "maligno pouco agressivo" ou "depois do primeiro ano"
 !fim
 
@@ -457,7 +457,7 @@ alerta: `mao-0638` está sem gabarito; pelo Green (cap. 60, p. 2056), pelo Campb
 
 !questoes central=mao-1203 treino=mao-2202,mao-3088,mao-3094,mao-3097,mao-3121
 conceito: pelo Green, o tumor glômico representa 1% a 5% dos tumores da mão, pode estar em quase qualquer lugar (o mais comum é o subungueal), pode aparecer como mancha azulada sob a unha, e ultrassom e ressonância localizam bem a forma subungueal
-como: a SBCM 2023 pediu a afirmativa compatível com o Green (área azulada visível sob a lâmina ungueal); a PUC-SP 2023 montou quatro afirmativas sobre frequência, localização, sintomas e ressonância
+como: a prova de título de 2023 pediu a afirmativa compatível com o Green (área azulada visível sob a lâmina ungueal); a PUC-SP 2023 montou quatro afirmativas sobre frequência, localização, sintomas e ressonância
 armadilha: "exclusivamente subungueal" e "obrigatoriamente sob a unha" são falsas; a sensibilidade é ao frio; a ressonância em geral é diagnóstica, embora possa ser negativa
 alerta: `mao-1203` está sem gabarito; a única afirmativa que o Green sustenta é a de 1% a 5% dos tumores das mãos (cap. 60, p. 2056), porque a alternativa dos sintomas troca frio por calor. Os livros divergem na proporção subungueal: 50% no cap. 9 do Green e 75% no Campbell
 !fim
@@ -486,7 +486,7 @@ A conduta é conservadora, e o motivo é a anatomia: a gordura está entre os fa
 
 !questoes central=mao-1551 relacionadas=mao-0754,tumores-0124 treino=mao-2185
 conceito: schwannoma é o tumor benigno de nervo mais comum do membro superior, lento, bem delimitado, excêntrico e enucleável; neurofibroma é o tumor da doença de VON RECKLINGHAUSEN, dentro dos fascículos; hamartoma lipofibromatoso acomete o nervo mediano
-como: a USP-SP 2026 pediu a afirmativa correta sobre schwannomas; o IAUPE 2025 pediu o tumor benigno de nervo ligado à doença de VON RECKLINGHAUSEN; a SBCM 2022 pediu o nervo mais acometido pelo hamartoma fibrolipomatoso
+como: a USP-SP 2026 pediu a afirmativa correta sobre schwannomas; o IAUPE 2025 pediu o tumor benigno de nervo ligado à doença de VON RECKLINGHAUSEN; a prova de título de 2022 pediu o nervo mais acometido pelo hamartoma fibrolipomatoso
 armadilha: dizer que o schwannoma tem limites mal definidos ou que exige ressecção segmentar do nervo (isso descreve o neurofibroma); marcar neurilemoma ou schwannoma, que são o mesmo tumor, na pergunta da neurofibromatose
 alerta: em `mao-1551` a alternativa "não são descritos riscos de transformação maligna" repete a frase do HEBERT, mas o Green (p. 2012) registra raros relatos, o que sustenta o gabarito. Em `mao-2185` a expressão "cabo coaxial" não aparece no Green nem no Campbell; o nervo (mediano) está nos dois
 !fim
@@ -534,7 +534,7 @@ O **sarcoma sinovial** é de **alto grau**, apesar do nome não nasce da sinóvi
 
 !questoes treino=mao-2541,mao-2016,mao-3080,mao-3100,mao-3103,mao-3118
 conceito: sarcoma sinovial é de alto grau, ocorre mais na região do carpo e raramente nos dedos, apresenta-se como massa indolor de crescimento inicial lento e mostra calcificação de partes moles em 20% a 30% das radiografias; até 25% dos que têm metástase a têm em linfonodos regionais
-como: o SIMÃO 2021 pediu a afirmativa de acordo com o Green (calcificações em 20% a 30%); o SIMÃO 2023 pediu a correta entre grau, local e ritmo de crescimento
+como: o simulado da prova de título de cirurgia da mão de 2021 pediu a afirmativa de acordo com o Green (calcificações em 20% a 30%); o simulado da prova de título de cirurgia da mão de 2023 pediu a correta entre grau, local e ritmo de crescimento
 armadilha: "baixo grau", "crescimento rápido" e "massa dolorosa nos dedos" são o contrário do texto; os 25% são de linfonodos, não de rins; tumor pequeno na mão não significa sempre prognóstico melhor
 alerta: em `mao-2016` o gabarito fala em "metacarpos e carpo"; o Green (p. 2017) diz região do carpo, com massa no dorso da mão ou na palma, e raro nos dedos
 !fim
@@ -620,7 +620,7 @@ Uma armadilha frequente: a **unilateralidade** é atribuída pelo Green ao **OLL
 
 !questoes treino=mao-2184,mao-3098,mao-3101,mao-3112
 conceito: síndrome de MAFFUCCI é encondromatose múltipla com hemangiomas (flebólitos na radiografia) e traz alto risco de sarcomas ósseos e de partes moles
-como: a SBCM 2022 perguntou que risco têm os pacientes com MAFFUCCI
+como: a prova de título de 2022 perguntou que risco têm os pacientes com MAFFUCCI
 armadilha: lembrar só do condrossarcoma; o Green fala em sarcomas de osso e também de partes moles
 !fim
 
@@ -644,7 +644,7 @@ O Dahlin (cap. 2, p. 18 e 19) descreve o que o patologista vê. NORA, DAHLIN e B
 
 !questoes treino=mao-2183,mao-2186,mao-1731,mao-3081,mao-3091,mao-3093
 conceito: na mão o osteocondroma aparece na região distal da falange proximal; as exostoses hereditárias múltiplas são autossômicas dominantes; a lesão de NORA nasce da cortical sem continuidade medular, tem cartilagem, osso e fibroblastos sem atipia com mineralização azulada, é benigna e recidiva com frequência após excisão
-como: a SBCM 2022 perguntou onde o osteocondroma se apresenta na mão e o padrão de herança da osteocondromatose múltipla; o SIMÃO 2026 trouxe o caso de massa dura de crescimento rápido na falange proximal, sem continuidade medular
+como: a prova de título de 2022 perguntou onde o osteocondroma se apresenta na mão e o padrão de herança da osteocondromatose múltipla; o simulado da prova de título de cirurgia da mão de 2026 trouxe o caso de massa dura de crescimento rápido na falange proximal, sem continuidade medular
 armadilha: chamar a lesão de NORA de osteocondroma (falta a continuidade medular) ou de osteossarcoma parosteal (não há atipia e não se indica ressecção ampla)
 alerta: a herança autossômica dominante de `mao-2186` não está no cap. 59 do Green; vem do Dahlin (cap. 2, p. 9) e do Campbell (Tabela 83.4). O detalhe histológico de `mao-1731` (osso azulado) também é do Dahlin (p. 19)
 !fim
@@ -677,7 +677,7 @@ O **osteoblastoma** é o primo maior do osteoma osteoide: raro, com **mais de 2 
 
 !questoes treino=mao-2635,mao-3082,mao-3085,mao-3111
 conceito: o osteoblastoma é raro na mão e no punho, maior que 2 cm e medular; a tomografia mostra melhor o osso (nicho, mineralização, cortical) para diagnóstico e planejamento; nos relatos de carpo, o escafoide aparece com mais frequência
-como: o SIMÃO 2023 perguntou o osso do punho mais descrito e o exame que melhor define a lesão
+como: o simulado da prova de título de cirurgia da mão de 2023 perguntou o osso do punho mais descrito e o exame que melhor define a lesão
 armadilha: escolher a ressonância, que superestima a lesão pelo edema reativo, ou o semilunar
 alerta: o Green 7 (p. 2023 e 2024) não ordena os ossos do carpo no osteoblastoma; o escafoide vem de relatos de caso citados no comentário da questão
 !fim
@@ -714,7 +714,7 @@ A **radioterapia** controla o tumor, mas a transformação maligna chega a **8,7
 
 !questoes central=mao-1468 treino=mao-2275,mao-3083,mao-3089,mao-3104,mao-3106,mao-3109,mao-3122
 conceito: na mão o cisto ósseo aneurismático acomete mais o metacarpo que as falanges; o tumor de células gigantes do osso é lítico, sem matriz, de bordas indistintas, e na mão não aceita curetagem simples: curetagem com criocirurgia e enxerto ou cimentação quando não perfurou, ressecção ampla quando perfurou
-como: a SBCM 2023 perguntou onde o cisto ósseo aneurismático aparece mais na mão; a USP-SP 2024 mostrou uma imagem e pediu diagnóstico e tratamento (tumor de células gigantes, curetagem com criocirurgia se disponível e enxertia ou cimentação)
+como: a prova de título de 2023 perguntou onde o cisto ósseo aneurismático aparece mais na mão; a USP-SP 2024 mostrou uma imagem e pediu diagnóstico e tratamento (tumor de células gigantes, curetagem com criocirurgia se disponível e enxertia ou cimentação)
 armadilha: tratar o tumor de células gigantes da mão como encondroma, com curetagem e enxerto; e trocar a criocirurgia de lugar, já que o Green também a usa no cisto ósseo aneurismático
 !fim
 
@@ -852,7 +852,7 @@ A ceratose actínica precisa ser separada da **ceratose seborreica**, a lesão g
 
 !questoes central=mao-1404 treino=mao-2014,mao-3768
 conceito: ceratose actínica é a lesão pré-maligna mais frequente da pele, áspera, escamosa e eritematosa, no dorso da mão e no antebraço do idoso exposto ao sol, e é a precursora do carcinoma espinocelular (que surge em menos de 10% dos pacientes)
-como: a USP-SP 2024 descreveu lesão descamativa e eritematosa de bordas mal definidas no dorso da mão de um paciente de 65 anos; o SIMÃO 2023 perguntou a lesão precursora do carcinoma de células escamosas
+como: a USP-SP 2024 descreveu lesão descamativa e eritematosa de bordas mal definidas no dorso da mão de um paciente de 65 anos; o simulado da prova de título de cirurgia da mão de 2023 perguntou a lesão precursora do carcinoma de células escamosas
 armadilha: marcar ceratose seborreica (gordurosa, "colada", mais no tronco) ou granuloma piogênico (vermelho, friável, sangrante); a verruga é viral e o nevo melanocítico relaciona-se ao melanoma
 !fim
 
@@ -908,7 +908,7 @@ O **perioníquio** merece atenção à parte. O capítulo 9 do Green (p. 334 e 3
 
 !questoes central=mao-1070 relacionadas=mao-1358 treino=mao-2469,mao-2451,mao-3760
 conceito: o carcinoma espinocelular é o tumor maligno de pele mais comum da mão e o mais comum do perioníquio; ali é mais frequente em homens, no polegar, ligado a radiação e papilomavírus, com alta recidiva local e baixa taxa de metástase
-como: o SIMÃO 2021 pediu o maligno de pele mais comum na mão; a PUC-SP 2019, o mais comum do perioníquio; a USP-SP 2025, a epidemiologia (acomete mais o polegar); o SIMÃO 2022, a afirmativa de acordo com o Green sobre os malignos de pele
+como: o simulado da prova de título de cirurgia da mão de 2021 pediu o maligno de pele mais comum na mão; a PUC-SP 2019, o mais comum do perioníquio; a USP-SP 2025, a epidemiologia (acomete mais o polegar); o simulado da prova de título de cirurgia da mão de 2022, a afirmativa de acordo com o Green sobre os malignos de pele
 armadilha: responder carcinoma basocelular por ser o mais comum do corpo; dizer que não há relação com o papilomavírus ou que o perioníquio é raramente acometido; e, em `mao-2451`, as três erradas trocam fatos do melanoma (in situ não se amputa, confunde-se com hematoma, o dedo mais atingido é o polegar)
 !fim
 
@@ -957,7 +957,7 @@ A classificação, de JACOBS, divide os subtipos em **circunscritos e difusos**,
 
 !questoes central=mao-1392 treino=mao-2328,mao-2054,mao-3758,mao-3762
 conceito: o carcinoma basocelular é raro na mão, nasce sem precursor, é agressivo e recorrente no local e raramente metastatiza; o nodular é o subtipo mais comum, o superficial recidiva mais, o esclerosante é raro na mão e o adenoide tem ilhas de tumor cercadas por estroma mixoide
-como: o SIMÃO 2024 perguntou como o basocelular se comporta na mão; a SBCM 2024 pediu a afirmativa correta sobre os subtipos; a USP-SP 2025 pediu a correta sobre os carcinomas não melanoma
+como: o simulado da prova de título de cirurgia da mão de 2024 perguntou como o basocelular se comporta na mão; a prova de título de 2024 pediu a afirmativa correta sobre os subtipos; a USP-SP 2025 pediu a correta sobre os carcinomas não melanoma
 armadilha: inverter os subtipos (nodular "menos frequente", superficial "recidiva pouco", esclerosante "comum na mão"); e, nos não melanoma, tomar a cirurgia de MOHS como tratamento de escolha (o Green a reserva a lesões de alto risco, recidivadas ou de margem difícil) ou o linfonodo sentinela como rotina no espinocelular
 alerta: o gabarito de `mao-1392` (risco de 30% a 50% de nova lesão em 5 anos) não foi encontrado no Green nem no Campbell; os livros sustentam apenas que as outras três alternativas estão erradas: o Green diz que o espinocelular é "muito mais comum" que o basocelular na mão, sem dar a razão de quatro a cinco vezes, e no corpo em geral o mais comum é o basocelular
 !fim
@@ -1057,7 +1057,7 @@ O **lentiginoso acral**, de 2% a 8%, está na **palma e no aparelho ungueal** e 
 
 !questoes central=mao-1408 treino=mao-2118,mao-2273,mao-3766
 conceito: disseminação superficial (70%) é o subtipo que mais nasce dentro ou junto de um nevo melanocítico; lentigo maligno é o do sol prolongado no idoso; lentiginoso acral é o da palma e da unha, sem relação com o sol, o mais comum em negros, asiáticos e hispânicos
-como: a SBCM 2022 perguntou o subtipo que surge dentro ou ao lado de um nevo; a SBCM 2023, o associado à exposição solar prolongada; a USP-SP 2024, o subtipo com predileção semelhante em caucasianos e pretos
+como: a prova de título de 2022 perguntou o subtipo que surge dentro ou ao lado de um nevo; a prova de título de 2023, o associado à exposição solar prolongada; a USP-SP 2024, o subtipo com predileção semelhante em caucasianos e pretos
 armadilha: trocar lentigo maligno (sol) por lentiginoso acral (sem sol); e achar que o nodular nasce de nevo, quando ele costuma nascer de novo
 alerta: em `mao-1408` o Green (p. 1978) não fala em predileção "semelhante" entre brancos e negros; diz que o lentiginoso acral não se relaciona ao sol e é o tipo mais comum nas populações em que o melanoma é incomum, o que sustenta o gabarito
 !fim
@@ -1086,7 +1086,7 @@ O tratamento: o melanoma subungueal **in situ** se trata com **excisão de todo 
 
 !questoes treino=mao-2117,mao-2423,mao-3767,mao-3764
 conceito: o sinal de HUTCHINSON é a extensão do pigmento da melanoníquia para a pele periungueal e levanta a suspeita de melanoma subungueal; lesão pigmentada da unha que persiste por mais de 2 meses pede biópsia formal
-como: a SBCM 2022 perguntou o que é o sinal de HUTCHINSON e o que ele sugere; o SIMÃO 2022, depois de quanto tempo de persistência se indica a biópsia
+como: a prova de título de 2022 perguntou o que é o sinal de HUTCHINSON e o que ele sugere; o simulado da prova de título de cirurgia da mão de 2022, depois de quanto tempo de persistência se indica a biópsia
 armadilha: descrever o sinal como "faixa de ponta a ponta da unha" (isso é a própria melanoníquia) ou tomá-lo por sinal de benignidade
 alerta: em `mao-2423` o gabarito (mais de 2 meses) é o do cap. 58 do Green (p. 1978); o cap. 9 do mesmo livro (p. 335) manda biopsiar a lesão que não mudou em 4 a 6 semanas
 !fim
@@ -1148,7 +1148,7 @@ Essas margens são **periféricas**. Na mão, é impossível uma margem profunda
 
 !questoes central=mao-1309 relacionadas=mao-1600 treino=mao-2525
 conceito: a margem periférica do melanoma segue a espessura de BRESLOW (1 cm até 1 mm); a biópsia incisional não piora o prognóstico e pode ser usada em lesões extensas; os melanomas das mãos têm prognóstico pior que os de outras regiões
-como: o SIMÃO 2021 perguntou a margem para melanoma de até 1 mm; a USP-SP 2025 pediu a afirmativa correta sobre biópsia, congelação, dermatoscopia e sinal de HUTCHINSON; a USP-SP 2026 pediu a correta sobre os melanomas nas mãos
+como: o simulado da prova de título de cirurgia da mão de 2021 perguntou a margem para melanoma de até 1 mm; a USP-SP 2025 pediu a afirmativa correta sobre biópsia, congelação, dermatoscopia e sinal de HUTCHINSON; a USP-SP 2026 pediu a correta sobre os melanomas nas mãos
 armadilha: dar 0,5 cm (margem do in situ) ou 2 cm (de 1 a 4 mm) ao melanoma fino; tomar o sinal de HUTCHINSON por patognomônico; dizer que o tipo mais comum na mão é o nodular ou que o local mais comum é o dorso
 alerta: em `mao-1309` o Green não discute a sensibilidade da dermatoscopia nem a congelação das lesões pigmentadas; sustenta a biópsia incisional (p. 1961) e trata HUTCHINSON como sinal de suspeita (p. 1966). Em `mao-1600` o pior prognóstico está no cap. 9 (p. 335); sobre a ulceração, o cap. 58 (p. 1980) a lista como fator independente em geral, sem dizer que vale menos na mão
 !fim

@@ -15,7 +15,7 @@ resumo: Metas ARMS (articular, radial, movimento, estabilidade); inclinação ra
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 15 do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Scott W. WOLFE. É o capítulo de fratura do rádio distal escrito por um cirurgião da mão para cirurgiões da mão, e isso muda o sotaque. O Rockwood olha a fratura como trauma de pronto-socorro, com ênfase em epidemiologia, diretrizes e ensaios; o Green olha para o punho que vai sobrar depois: a faceta do semilunar, a lágrima, o fragmento voloulnar, a articulação radioulnar distal (ARUD), os ligamentos do carpo e a consolidação viciosa que dói. A banca do SIMÃO e do título da SBCM pergunta exatamente esse sotaque.
+Este resumo é inspirado no capítulo 15 do Green's Operative Hand Surgery, 7ª edição (2017), escrito por Scott W. WOLFE. É o capítulo de fratura do rádio distal escrito por um cirurgião da mão para cirurgiões da mão, e isso muda o sotaque. O Rockwood olha a fratura como trauma de pronto-socorro, com ênfase em epidemiologia, diretrizes e ensaios; o Green olha para o punho que vai sobrar depois: a faceta do semilunar, a lágrima, o fragmento voloulnar, a articulação radioulnar distal (ARUD), os ligamentos do carpo e a consolidação viciosa que dói. A banca do simulado da prova de título de cirurgia da mão e do título da prova de título pergunta exatamente esse sotaque.
 
 Dois resumos vizinhos completam este. O **rockwood10-radio-distal** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 43) tem a epidemiologia, a classificação Universal de COONEY, as diretrizes da AAOS e os ensaios do idoso com mais detalhe. O **green-imagem-mao-punho** detalha as incidências e os valores normais do punho inteiro. Aqui o eixo é outro: entender por que o rádio distal quebra do jeito que quebra, e por que cada fragmento pede uma solução própria.
 
@@ -102,7 +102,7 @@ Saber disso tem uma utilidade cirúrgica direta: a placa volar é elevada pelo p
 
 !questoes treino=mao-2218,mao-3427
 conceito: A face palmar do rádio distal é irrigada por arcos transversos que unem a artéria radial aos ramos da interóssea anterior; a face dorsal, pelas artérias intercompartimentais 1,2 e 2,3 e pelas do quarto e quinto compartimentos.
-como: O simulado do SBCM 2023 pediu como se forma a irrigação da face palmar.
+como: O simulado da prova de título de 2023 pediu como se forma a irrigação da face palmar.
 armadilha: Atribuir a face palmar às artérias suprarretinaculares dorsais, que são as do enxerto de ZAIDEMBERG.
 !fim
 
@@ -140,7 +140,7 @@ Repare em dois detalhes que a banca adora. Primeiro: a inclinação palmar do Gr
 
 !questoes central=mao-1024 treino=mao-2309
 conceito: O Green dá 23 graus para a inclinação radial e 11 graus para a inclinação palmar; as três medidas que descrevem o desvio são a inclinação dorsal ou volar, a inclinação radial e a variância ulnar.
-como: A UFG 2021 pediu o valor da inclinação ulnar do rádio no PA (22 graus entre as alternativas); o simulado do SIMÃO 2024 pediu as três medidas radiográficas de desvio.
+como: A UFG 2021 pediu o valor da inclinação ulnar do rádio no PA (22 graus entre as alternativas); o simulado do simulado da prova de título de cirurgia da mão de 2024 pediu as três medidas radiográficas de desvio.
 armadilha: Responder 11 graus, que é a inclinação palmar do perfil, ou trocar a variância ulnar pela altura radial.
 !fim
 
@@ -150,7 +150,7 @@ No perfil comum, o estiloide radial se projeta por cima da fossa do semilunar e 
 
 !questoes treino=mao-2459,mao-2461
 conceito: O perfil da faceta inclina o feixe no sentido distal para proximal (ou levanta a mão da mesa na fluoroscopia), tira o estiloide de cima da fossa do semilunar e mostra a inclinação palmar real e a posição dos pinos subcondrais.
-como: Os simulados do SIMÃO 2022 pediram a incidência que mostra melhor a inclinação palmar e a manobra na fluoroscopia que perfila a faceta.
+como: Os simulados do simulado da prova de título de cirurgia da mão de 2022 pediram a incidência que mostra melhor a inclinação palmar e a manobra na fluoroscopia que perfila a faceta.
 armadilha: Inclinar o feixe de proximal para distal, o que aumenta a sobreposição do estiloide em vez de removê-la.
 !fim
 
@@ -162,7 +162,7 @@ O tamanho explica a dificuldade técnica: a lágrima mede só cerca de **5 mm na
 
 !questoes treino=mao-2041,mao-1958,mao-2310,mao-3420,mao-3437
 conceito: A lágrima é a projeção volar da faceta do semilunar no perfil; dela nascem os radiossemilunares, e ela funciona como contraforte contra a subluxação palmar do semilunar.
-como: O simulado do SBCM 2024 pediu o que é a lágrima; o do SIMÃO 2023, a faceta e o ligamento ligados a ela; o do SIMÃO 2024, a afirmação correta sobre a lágrima nas fraturas cominutivas.
+como: O simulado da prova de título de 2024 pediu o que é a lágrima; o do simulado da prova de título de cirurgia da mão de 2023, a faceta e o ligamento ligados a ela; o do simulado da prova de título de cirurgia da mão de 2024, a afirmação correta sobre a lágrima nas fraturas cominutivas.
 armadilha: Confundir a lágrima com a projeção do estiloide radial ou com a borda dorsal, ou ligá-la ao radioescafocapitato, que nasce da fossa do escafoide.
 !fim
 
@@ -188,7 +188,7 @@ Quando não há radiografia do outro lado, a razão entre a distância AP e o se
 
 !questoes treino=mao-1778,mao-3421,mao-3436,mao-3451
 conceito: A distância AP da faceta do semilunar maior que a do lado oposto indica divisão coronal da faceta, com fragmento volar que precisa de fixação direta para não deixar o carpo subluxar para palmar.
-como: O simulado do SIMÃO 2026 deu um jovem com distância AP aumentada e pediu a interpretação.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 deu um jovem com distância AP aumentada e pediu a interpretação.
 armadilha: Ler o aumento como simples desvio dorsal extra-articular, que muda a inclinação mas não alarga a faceta.
 !fim
 
@@ -230,7 +230,7 @@ O tipo II é a pergunta clássica: ele é intra-articular e equivale ao BARTON v
 
 !questoes treino=mao-1772,mao-3415,mao-3445
 conceito: THOMAS I é o SMITH extra-articular transverso com angulação palmar; o II é intra-articular e equivale ao BARTON volar; o III é extra-articular com traço oblíquo.
-como: O simulado do SIMÃO 2026 pediu o padrão do tipo I.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2026 pediu o padrão do tipo I.
 armadilha: Marcar o tipo I como intra-articular, que é o tipo II.
 !fim
 
@@ -312,13 +312,13 @@ Há uma divergência dentro do próprio livro que vale conhecer. O capítulo 15 
 
 !questoes treino=mao-1956,mao-3419,mao-3424,mao-3449
 conceito: A coluna medial (ulnar) é a coluna rotacional, e é dela que vêm as queixas mais frequentes de incapacidade residual depois da fratura consolidada.
-como: O simulado do SIMÃO 2023 perguntou de qual coluna vêm as queixas residuais mais comuns.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2023 perguntou de qual coluna vêm as queixas residuais mais comuns.
 armadilha: Marcar a coluna intermediária por ser a de carga; a dor e a perda de rotação que sobram são do lado ulnar.
 !fim
 
 ## FERNANDEZ: a classificação pelo mecanismo
 
-A classificação preferida do autor é a de FERNANDEZ, baseada no **mecanismo de lesão** (p. 524 a 527; Fig. 15.20A). O raciocínio que a justifica é o centro da questão do SBCM: as lesões ligamentares, as fraturas do carpo e o dano às partes moles dependem da **direção e do grau** do trauma; conhecer o mecanismo permite prever o que mais se rompeu; e a redução manual se faz aplicando a **força oposta** à que produziu a fratura (p. 524). Uma fratura por flexão se reduz invertendo a flexão; uma por cisalhamento não se reduz por tração, porque o fragmento desliza junto com o carpo; uma por compressão não se reduz por manobra nenhuma, porque o osso esmagado não tem ligamento preso a ele.
+A classificação preferida do autor é a de FERNANDEZ, baseada no **mecanismo de lesão** (p. 524 a 527; Fig. 15.20A). O raciocínio que a justifica é o centro da questão da prova de título: as lesões ligamentares, as fraturas do carpo e o dano às partes moles dependem da **direção e do grau** do trauma; conhecer o mecanismo permite prever o que mais se rompeu; e a redução manual se faz aplicando a **força oposta** à que produziu a fratura (p. 524). Uma fratura por flexão se reduz invertendo a flexão; uma por cisalhamento não se reduz por tração, porque o fragmento desliza junto com o carpo; uma por compressão não se reduz por manobra nenhuma, porque o osso esmagado não tem ligamento preso a ele.
 
 !tabela Classificação de FERNANDEZ (Green 7, cap. 15, p. 527 e 528, Fig. 15.20A)
 | Tipo | Mecanismo | O que acontece | Equivalentes | Conduta sugerida |
@@ -334,7 +334,7 @@ Três associações caem com frequência. No **tipo II**, o "CHAUFFEUR incomum" 
 
 !questoes central=mao-1503 relacionadas=mao-1260 treino=mao-1957,mao-2043,mao-2129,mao-3416,mao-3426,mao-3441,mao-3446
 conceito: FERNANDEZ classifica pelo mecanismo: I flexão, II cisalhamento (BARTON, CHAUFFEUR, com suspeita de lesão escafossemilunar), III compressão, IV avulsão com fratura-luxação radiocárpica, V combinada de alta energia.
-como: A USP-SP 2024 mostrou uma fratura por cisalhamento e pediu o tipo (II); o SBOT-SP perguntou o tipo das avulsões ligamentares dos estiloides (IV); os simulados do SIMÃO 2023, SBCM 2024 e SBCM 2022 pediram a correlação correta, o tipo da fratura-luxação radiocárpica e o tipo em que se suspeita de lesão escafossemilunar.
+como: A USP-SP 2024 mostrou uma fratura por cisalhamento e pediu o tipo (II); o SBOT-SP perguntou o tipo das avulsões ligamentares dos estiloides (IV); os simulados do simulado da prova de título de cirurgia da mão de 2023, prova de título de 2024 e prova de título de 2022 pediram a correlação correta, o tipo da fratura-luxação radiocárpica e o tipo em que se suspeita de lesão escafossemilunar.
 armadilha: Trocar o II pelo III: cisalhamento é o fragmento que desliza com o carpo; compressão é a superfície que afunda.
 alerta: `mao-1260` está sem gabarito no acervo; pelo Green 7 (p. 527), a avulsão das inserções ligamentares, com fratura-luxação radiocárpica, é o tipo IV.
 !fim
@@ -355,7 +355,7 @@ O raciocínio é anatômico. Na ponta do estiloide não há ligamento importante
 
 !questoes treino=mao-2312
 conceito: No FERNANDEZ da ARUD, o tipo III é a lesão articular cominutiva da incisura sigmoide ou da cabeça da ulna, potencialmente instável e com risco de artrose e perda de rotação.
-como: O simulado do SIMÃO 2024 pediu o que caracteriza o tipo III.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 pediu o que caracteriza o tipo III.
 armadilha: Chamar de tipo III a avulsão da base do estiloide, que é o II B, instável por perda da inserção foveal.
 !fim
 
@@ -393,7 +393,7 @@ Com **três ou mais**, considera-se cirurgia cedo (p. 530). Os estudos posterior
 
 !questoes central=mao-0584 relacionadas=mao-0684,mao-0714,mao-1106,mao-1211 treino=mao-2308,mao-2505,mao-3433
 conceito: LAFONTAINE: angulação dorsal maior que 20°, cominuição dorsal, traço articular radiocárpico, fratura da ulna e idade acima de 60; o colapso cresce de forma linear com o número de critérios, três ou mais justificam cirurgia, e a idade é o preditor mais forte nos estudos seguintes.
-como: O ENARE R4 2024 e a PUC-SP 2020 pediram o critério entre as alternativas; o IAUPE 2025, o que não pertence a ele (cominuição dorsal ou volar); a FMRP-USP 2026, o principal critério na COLLES; a PUC-SP 2023, o fator mais ligado à perda tardia; os simulados do SIMÃO 2024 e 2021 cobraram a idade e a relação linear.
+como: O ENARE R4 2024 e a PUC-SP 2020 pediram o critério entre as alternativas; o IAUPE 2025, o que não pertence a ele (cominuição dorsal ou volar); a FMRP-USP 2026, o principal critério na COLLES; a PUC-SP 2023, o fator mais ligado à perda tardia; os simulados do simulado da prova de título de cirurgia da mão de 2024 e 2021 cobraram a idade e a relação linear.
 armadilha: Aceitar qualquer critério com "volar"; a cominuição e a angulação que contam são dorsais, porque é o lado dorsal que se esmaga na queda com o punho estendido.
 alerta: `mao-1211` está sem gabarito no acervo; pelo Green 7 (p. 530), a idade é o preditor mais forte ("implacável" no estudo de MACKENNEY), e a resposta sustentada é idade maior que 60 anos.
 !fim
@@ -410,7 +410,7 @@ Duas advertências fecham a seção. A **segunda redução fechada com gesso é 
 
 !questoes treino=mao-2044
 conceito: Na criança, a fratura isolada do rádio distal, sem fratura da ulna, é fator de risco para perder a redução no gesso; o tema é do Rockwood and Wilkins e está no resumo wilkins9-08-radio-ulna-distal-crianca.
-como: O simulado do SBCM 2024 pediu o fator de risco para perda da redução na criança.
+como: O simulado da prova de título de 2024 pediu o fator de risco para perda da redução na criança.
 armadilha: Transportar para a criança os critérios do adulto (idade, cominuição dorsal); os fatores de risco infantis são outros e estão no resumo pediátrico.
 !fim
 
@@ -440,7 +440,7 @@ O **SMITH extra-articular** é geralmente instável. A deformidade dele é em fl
 
 !questoes treino=mao-2317,mao-3428,mao-3432,mao-3439,mao-3447
 conceito: Depois da redução fechada da fratura metafisária com angulação dorsal, o Green recomenda imobilizar em neutro a leve flexão, com 20 a 30 graus de inclinação ulnar e antebraço neutro; o SMITH extra-articular se imobiliza em extensão e supinação.
-como: O simulado do SIMÃO 2024 pediu a posição de imobilização da fratura metafisária com angulação dorsal.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 pediu a posição de imobilização da fratura metafisária com angulação dorsal.
 armadilha: Marcar a flexão palmar extrema com inclinação ulnar (COTTON-LODER), que comprime o mediano e enrijece os dedos.
 !fim
 
@@ -563,7 +563,7 @@ A via usada é a **porção distal da via de HENRY, entre o flexor radial do car
 
 O BR é dividido longitudinalmente por 5 a 8 cm até o estiloide; a liberação total não é necessária, mas não tem consequência relatada se for feita; o primeiro compartimento é liberado. O pronador é cortado na borda volar e rebatido para ulnar, junto com a metade volar do BR, o que dá um fechamento sólido que cobre a placa (p. 549 e 551; Figs. 15.40 e 15.44).
 
-Vale separar duas coisas que se confundem: o intervalo clássico de HENRY no antebraço é entre o **BR e o FRC**, com a artéria radial dentro dele; no rádio distal, a dissecção corre **pela bainha do FRC**, entre o tendão e a artéria. As duas descrições não se excluem, e a pergunta do SIMÃO quer saber o detalhe da bainha.
+Vale separar duas coisas que se confundem: o intervalo clássico de HENRY no antebraço é entre o **BR e o FRC**, com a artéria radial dentro dele; no rádio distal, a dissecção corre **pela bainha do FRC**, entre o tendão e a artéria. As duas descrições não se excluem, e a pergunta do simulado da prova de título de cirurgia da mão quer saber o detalhe da bainha.
 
 ## Redução
 
@@ -586,7 +586,7 @@ O raciocínio é que o lábio volar distal não tem pronador por cima: tudo o qu
 
 !questoes central=mao-0831 treino=mao-2217,mao-1780
 conceito: SOONG gradua a placa volar pela linha crítica tangente à crista volar: grau 1 é a placa 2 mm ou mais acima dela, grau 2 é a placa a menos de 3 mm da borda do lábio volar; os dois têm alta taxa de ruptura dos flexores, e com a fratura consolidada o autor recomenda retirar a placa.
-como: O INTO 2026 mostrou uma radiografia e pediu o grau (1); os simulados do SBCM 2023 e do SIMÃO 2026 cobraram o risco do grau 2 e a conduta diante da placa sobre o lábio volar.
+como: O INTO 2026 mostrou uma radiografia e pediu o grau (1); os simulados da prova de título de 2023 e do simulado da prova de título de cirurgia da mão de 2026 cobraram o risco do grau 2 e a conduta diante da placa sobre o lábio volar.
 armadilha: Achar que só o grau 2 justifica retirar a placa; o Green recomenda a retirada nos graus 1 e 2 com a fratura consolidada.
 !fim
 
@@ -657,7 +657,7 @@ A placa da coluna radial fica a 50 a 90 graus do plano da coluna intermediária.
 
 !questoes treino=mao-2311,mao-3418,mao-3422,mao-3431,mao-3435,mao-3438,mao-3440
 conceito: A placa da coluna radial fica sob os tendões do primeiro compartimento, com a ponta distal dorsal a eles e a proximal palmar, a 50 a 90 graus da placa da coluna intermediária.
-como: O simulado do SIMÃO 2024 pediu a posição ideal do implante da coluna radial em relação ao primeiro compartimento.
+como: O simulado do simulado da prova de título de cirurgia da mão de 2024 pediu a posição ideal do implante da coluna radial em relação ao primeiro compartimento.
 armadilha: Colocar a placa toda dorsal ou toda palmar aos tendões, ignorando que ela cruza o compartimento em espiral.
 !fim
 

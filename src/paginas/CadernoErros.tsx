@@ -1,4 +1,5 @@
 import { GatoDormindo } from '../componentes/CenasPixel'
+import { rotuloProva } from '../config'
 import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
@@ -265,7 +266,7 @@ export function CadernoErros() {
               Prova
               <select className="entrada" value={prova ?? ''} onChange={(e) => definirProva(e.target.value === '' ? null : Number(e.target.value))}>
                 <option value="">Todas</option>
-                {[...porProva.entries()].sort((a, b) => b[1] - a[1]).map(([p, n]) => <option key={p} value={p}>{indice.provas[p]} ({n})</option>)}
+                {[...porProva.entries()].sort((a, b) => b[1] - a[1]).map(([p, n]) => <option key={p} value={p}>{rotuloProva(indice.provas[p])} ({n})</option>)}
               </select>
             </label>
           )}
@@ -363,7 +364,7 @@ function ItemErro({ erro, questao, indice, nota }: { erro: Erro; questao?: Quest
   // Dissertativa não tem letra; registros antigos guardavam 'A' e mostravam "Você marcou A" vazio.
   const marcada = questao?.tipo === 'dissertativa' ? undefined : erro.registro.m as Letra | undefined
   const alternativa = (l?: Letra | null) => questao?.alternativas.find((a) => a.letra === l)
-  const origem = [erro.prova !== null ? indice.provas[erro.prova] : null, erro.ano].filter(Boolean).join(' · ')
+  const origem = [erro.prova !== null ? rotuloProva(indice.provas[erro.prova]) : null, erro.ano].filter(Boolean).join(' · ')
 
   useEffect(() => {
     if (!aberto || comentario !== undefined || !temaInfo) return

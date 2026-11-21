@@ -79,7 +79,7 @@ O **coto** recebe **curativo compressivo e elevação**. Evitam-se o **torniquet
 
 !questoes treino=mao-2330,mao-3253,mao-3257,mao-3264,mao-3272
 conceito: No membro mutilado a ordem é preservar a vida, o tecido, a função e só então reconstruir.
-como: O SIMÃO 2024 pediu o primeiro objetivo da lista do Green.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu o primeiro objetivo da lista do Green.
 armadilha: Escolher salvar o membro a qualquer custo.
 !fim
 
@@ -110,7 +110,7 @@ O erro clássico é aplicar ao dedo o relógio do músculo. Quando a banca pede 
 
 !questoes central=mao-0130 relacionadas=mao-1897,mao-0724 treino=mao-2350,mao-1768,mao-3248,mao-3249,mao-3259,mao-3266,mao-3268
 conceito: Dedo: 6 a 12 h quente e até 24 h frio (Green), 8 h e mais de 30 h (Campbell); músculo: 6 h sem resfriar, 12 h resfriado.
-como: O SIMÃO 2024 e o IAUPE 2025 pediram a isquemia quente do dedo; o SIMÃO 2026, um médio sem gelo há 9 h; uma prova de Ortopedia, os 30 h do dedo resfriado; o ENARE 2025, o prazo do dedo conservado.
+como: O simulado da prova de título de cirurgia da mão de 2024 e o IAUPE 2025 pediram a isquemia quente do dedo; o simulado da prova de título de cirurgia da mão de 2026, um médio sem gelo há 9 h; uma prova de Ortopedia, os 30 h do dedo resfriado; o ENARE 2025, o prazo do dedo conservado.
 armadilha: Dar ao dedo o limite de 6 h do músculo ou dizer que o dedo não tem limite.
 alerta: O gabarito de `mao-0724` (6 h) é o piso dos intervalos dos livros (6 a 12 h no Green, 8 h no Campbell). Gabarito mantido.
 !fim
@@ -182,7 +182,7 @@ Na **criança**, o Campbell (cap. 68, p. 3029 e 3030) mostra a contradição: os
 
 !questoes central=mao-0443 treino=mao-2165,mao-2509
 conceito: Mais convincentes: polegar em qualquer nível, vários dedos, criança, punho e antebraço; relativas contra: zona 2 isolada, segmentar, avulsão do anelar.
-como: A SBCM 2022 pediu o trio do Green; o Einstein 2026, a melhor indicação digital; o SIMÃO 2021, a contraindicação relativa.
+como: A prova de título de 2022 pediu o trio do Green; o Einstein 2026, a melhor indicação digital; o simulado da prova de título de cirurgia da mão de 2021, a contraindicação relativa.
 armadilha: Pôr o indicador ou a mão dominante entre as indicações fortes.
 !fim
 
@@ -254,13 +254,13 @@ O Green aceita três variações (p. 1480): fazer **todas as estruturas dorsais*
 
 !questoes central=mao-1611 treino=mao-2404
 conceito: Na parte, incisões medioaxiais radial e ulnar; em vários dedos, estrutura por estrutura.
-como: A USP-SP 2026 pediu a incisão; o SIMÃO 2022, a sequência em vários dedos.
+como: A USP-SP 2026 pediu a incisão; o simulado da prova de título de cirurgia da mão de 2022, a sequência em vários dedos.
 armadilha: Escolher BRUNER ou completar um dedo antes do próximo.
 !fim
 
 !questoes central=mao-1306 treino=mao-2018,mao-3251,mao-3262,mao-3265,mao-3269
 conceito: Sequência clássica osso, extensor, flexor, artéria, nervo, veia; o Green faz nervo e veias sob garrote e a artéria depois do teste do jato; sem veia dorsal, a segunda artéria digital drena.
-como: O SIMÃO 2023 pediu a sequência; a USP-SP 2025, o polegar de 64 anos amputado por serra há 12 h.
+como: O simulado da prova de título de cirurgia da mão de 2023 pediu a sequência; a USP-SP 2025, o polegar de 64 anos amputado por serra há 12 h.
 armadilha: Pôr a veia antes da artéria ou não reparar o nervo por causa da idade.
 alerta: A ordem de `mao-2018` é a do Campbell; o Green faz o nervo antes da artéria. Em `mao-1306`, o termo "shunt artério-venoso com enxerto" não está no texto; o princípio (artéria distal como drenagem venosa) está no Green. Gabaritos mantidos.
 !fim
@@ -401,7 +401,7 @@ Os Critical Points (p. 1484) resumem o raciocínio: avaliar rapidamente o risco 
 
 !questoes treino=mao-2351,mao-3256
 conceito: No macrorreimplante, shunt e 20 minutos de reperfusão por hora de isquemia.
-como: O SIMÃO 2024 pediu o tempo por hora.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu o tempo por hora.
 armadilha: Responder 40 ou 60 minutos.
 !fim
 
@@ -461,7 +461,7 @@ A **sanguessuga** (Hirudo medicinalis) trata a **congestão venosa**; o efeito v
 
 !questoes treino=mao-1767
 conceito: A aspirina é o antitrombótico de rotina mais usado e inibe de modo irreversível a ciclo-oxigenase.
-como: O SIMÃO 2026 pediu o agente e o mecanismo.
+como: O simulado da prova de título de cirurgia da mão de 2026 pediu o agente e o mecanismo.
 armadilha: Escolher dextrana ou heparina de baixo peso sem risco de sangramento.
 !fim
 
@@ -604,7 +604,7 @@ Mais que a zona, o que escolhe a técnica é a **geometria** do corte (p. 1709):
 
 !questoes treino=mao-2065,mao-1945,mao-2262,mao-2416
 conceito: ALLEN 1 polpa, 2 leito distal, 3 leito proximal com osso, 4 proximal à lúnula; TAMAI I até a lúnula, II até a IFD; a matriz se perde em TAMAI II e ALLEN 4.
-como: A SBCM 2024 e 2023 e o SIMÃO 2023 e 2022 pediram zonas.
+como: A prova de título de 2024 e 2023 e o simulado da prova de título de cirurgia da mão de 2023 e 2022 pediram zonas.
 armadilha: Pôr osso na zona 2 de ALLEN ou dar ao TAMAI quatro zonas.
 !fim
 
@@ -730,7 +730,7 @@ O retalho é **mais apropriado ao polegar**. No polegar, a pele volar é mais m�
 
 !questoes central=mao-0613 relacionadas=mao-0486 treino=mao-2341,mao-3717,mao-3718,mao-3719,mao-3720,mao-3721,mao-3722,mao-3723,mao-3727,mao-3728
 conceito: MOBERG é avanço volar bipediculado para a falange distal do polegar; ATASOY cobre a amputação dorsal oblíqua.
-como: O SIMÃO 2024 pediu a lesão do MOBERG; o TARO 2008, o tipo de retalho; o Einstein 2026, a geometria do ATASOY.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu a lesão do MOBERG; o TARO 2008, o tipo de retalho; o Einstein 2026, a geometria do ATASOY.
 armadilha: Chamar o MOBERG de V-Y ou de cross-finger; usar o ATASOY na perda volar.
 alerta: `mao-0613` não tem gabarito; os livros sustentam a alternativa C (avanço).
 !fim
@@ -937,7 +937,7 @@ O Campbell (cap. 21, p. 762) não transpõe o indicador sem reinserir o adutor e
 
 !questoes central=mao-0050 treino=mao-2261,mao-1763
 conceito: O raio do médio leva a origem do adutor do polegar e enfraquece a adução e a pinça de chave; perder um raio reduz a força de pronação e de supinação.
-como: A SBCM 2023 pediu por que a chave enfraquece; o TARO 2017, o movimento do polegar; o SIMÃO 2026, a pronossupinação do marceneiro.
+como: A prova de título de 2023 pediu por que a chave enfraquece; o TARO 2017, o movimento do polegar; o simulado da prova de título de cirurgia da mão de 2026, a pronossupinação do marceneiro.
 armadilha: Culpar um interósseo ou dizer que a pronossupinação não muda.
 alerta: Os números de pronação e supinação do Green são do indicador; `mao-1763` estende o mecanismo ao médio. Gabarito mantido.
 !fim
@@ -1066,7 +1066,7 @@ Com a **basal destruída**, a policização vence porque **a MF hiperextendida p
 
 !questoes treino=mao-2175,mao-2369
 conceito: Na osteoplástica, o enxerto ilíaco é coberto por retalho inguinal tubulizado; a distração dá 3 a 4 cm.
-como: A SBCM 2022 pediu o retalho; o SIMÃO 2024, o ganho da distração.
+como: A prova de título de 2022 pediu o retalho; o simulado da prova de título de cirurgia da mão de 2024, o ganho da distração.
 armadilha: Escolher grande dorsal ou dizer 5 cm.
 alerta: O Green dá 3 a 4 cm; os 3 cm de `mao-2369` são o piso. Gabarito mantido.
 !fim
@@ -1234,7 +1234,7 @@ O sucesso chega a 96% e a sensibilidade é boa (discriminação móvel de 5 mm n
 
 !questoes treino=mao-2091
 conceito: A síndrome da banda de constrição é a indicação congênita ideal, porque tudo o que está proximal à banda é normal e serve de receptor.
-como: A SBCM 2024 pediu a melhor indicação congênita entre várias malformações.
+como: A prova de título de 2024 pediu a melhor indicação congênita entre várias malformações.
 armadilha: Escolher a mão torta radial ou a hipoplasia do polegar, em que faltam estruturas e a policização costuma ser melhor.
 !fim
 
@@ -1269,7 +1269,7 @@ No retalho do primeiro espaço e nas polpas, se a FDMA está ausente ou é muito
 
 !questoes treino=mao-2360,mao-1770,mao-3776,mao-3779
 conceito: A primeira metatarsal dorsal, ramo da artéria dorsal do pé, domina em cerca de 70%; com calibres iguais, disseca-se a dorsal, mais fácil.
-como: O SIMÃO 2024 pediu a artéria com calibres parecidos; o SIMÃO 2026, a dominante e a origem dela.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu a artéria com calibres parecidos; o simulado da prova de título de cirurgia da mão de 2026, a dominante e a origem dela.
 armadilha: Escolher a plantar porque "já se disseca o lado plantar" ou dizer que ela nasce do arco plantar na maioria.
 !fim
 
@@ -1301,7 +1301,7 @@ No pé, preserva-se **pelo menos 1 cm da base da falange proximal**, pela razão
 
 !questoes treino=mao-2359,mao-3770
 conceito: O hálux total serve ao polegar amputado na falange proximal ou no metacarpo; o envoltório de MORRISON não tem IF móvel; a mão metacarpal de WEI se divide pelo polegar (tipo I íntegro ou distal à IF, tipo II proximal à IF).
-como: O SIMÃO 2024 pediu a afirmação correta sobre técnica por nível.
+como: O simulado da prova de título de cirurgia da mão de 2024 pediu a afirmação correta sobre técnica por nível.
 armadilha: Dar IF móvel ao envoltório ou levar o hálux total a uma amputação na falange distal.
 !fim
 
@@ -1416,7 +1416,7 @@ O Campbell também diverge do Green em dois detalhes de conduta: dá força de p
 
 !questoes treino=mao-2633,mao-3771,mao-3778
 conceito: A comunicação arterial distal entre as digitais do segundo dedo permitiu levar duas articulações do dedo do pé num só pedículo; a fise vascularizada continua crescendo.
-como: O SIMÃO 2021 pediu qual transferência articular essa anatomia tornou viável.
+como: O simulado da prova de título de cirurgia da mão de 2021 pediu qual transferência articular essa anatomia tornou viável.
 armadilha: Multiplicar os pedículos ou reduzir a uma articulação.
 !fim
 
@@ -1462,7 +1462,7 @@ Diversos autores relatam procedimentos secundários em 20 a 70% dos casos. Na s�
 
 !questoes treino=mao-2601,mao-3772
 conceito: O vasoespasmo é a complicação mais comum, nos três primeiros dias e mais nas transferências parciais; sem circulação após cerca de 1 hora, reexplora-se.
-como: O SIMÃO 2022 pediu a complicação mais encontrada nos primeiros dias.
+como: O simulado da prova de título de cirurgia da mão de 2022 pediu a complicação mais encontrada nos primeiros dias.
 armadilha: Escolher a trombose venosa, que é incomum, ou a rigidez, que é tardia.
 !fim
 
@@ -1564,7 +1564,7 @@ Há uma exceção que mostra que não existe nível certo para todos: o **trabal
 
 ## Transradial: 8 a 10 cm, o nível das mais opções
 
-Na transradial, o nível com a **maior variedade de opções protéticas** fica **8 a 10 cm proximal ao estiloide ulnar** (p. 1754). Nesse ponto ainda sobra pronossupinação adequada e alavanca razoável para fletir o cotovelo, e abre-se espaço para qualquer dispositivo terminal sem deixar o membro comprido. É o número que a SBCM 2023 pediu. O caso clínico 50.2 do capítulo repete a mesma comparação numa isquemia da mão por cateter arterial e vasopressor: a desarticulação preserva a radioulnar distal e o máximo de rotação, mas a transradial a 8 a 10 cm dos estiloides oferece mais opções de prótese.
+Na transradial, o nível com a **maior variedade de opções protéticas** fica **8 a 10 cm proximal ao estiloide ulnar** (p. 1754). Nesse ponto ainda sobra pronossupinação adequada e alavanca razoável para fletir o cotovelo, e abre-se espaço para qualquer dispositivo terminal sem deixar o membro comprido. É o número que a prova de título de 2023 pediu. O caso clínico 50.2 do capítulo repete a mesma comparação numa isquemia da mão por cateter arterial e vasopressor: a desarticulação preserva a radioulnar distal e o máximo de rotação, mas a transradial a 8 a 10 cm dos estiloides oferece mais opções de prótese.
 
 Quanto mais proximal a transradial, menos rotação: quando se remove **metade do antebraço**, quase não sobra pronossupinação, porque a membrana interóssea e os pronadores e supinadores que restam já não movem o rádio. Mesmo assim, **pelo menos 5 cm de ulna** bastam para protetizar com sucesso (p. 1754). O Campbell (p. 731 e 732) fala em manter dois terços do antebraço quando possível, conta que a transradial responde por cerca de **40%** das amputações maiores do membro superior e, no coto muito curto, faz tenodese do bíceps na ulna para não perder a flexão do cotovelo.
 
@@ -1595,7 +1595,7 @@ A desarticulação do punho tem técnica própria no capítulo 49 (p. 1737): ret
 
 !questoes central=mao-0568 treino=mao-2263,mao-3814,mao-3815
 conceito: Transradial ideal 8 a 10 cm proximal aos estiloides; a desarticulação transmite 50% da pronossupinação.
-como: A SBCM 2023 pediu o nível; o TARO 2026, a porcentagem.
+como: A prova de título de 2023 pediu o nível; o TARO 2026, a porcentagem.
 armadilha: Escolher 3 a 5 cm ou 80 a 95%.
 !fim
 
@@ -1607,7 +1607,7 @@ armadilha: Escolher 3 a 5 cm ou 80 a 95%.
 
 Perder o cotovelo muda a categoria da amputação (p. 1754 e 1755). Abaixo dele, o paciente flete e estende a prótese com a própria articulação, e o encaixe só precisa repor punho e mão. Acima, a prótese precisa de um **cotovelo protético**, que pesa, consome energia e é menos útil que o natural; o paciente gasta mais esforço para cada tarefa, e os **transumerais abandonam a prótese mais** que os transradiais. Por isso o Green diz que preservar o cotovelo é **alta prioridade**, mesmo à custa de reconstruções complexas como **retalhos livres** para cobrir um coto curto (p. 1754). Os 5 cm de ulna da seção anterior são a outra face da mesma regra: um coto transradial curtíssimo, com cotovelo, vale mais que qualquer nível acima.
 
-Esse é o fato que a SBCM 2025 cobrou: o melhor nível ao redor do cotovelo para usar prótese é **abaixo da articulação**. A banca usou alternativas de uma palavra (úmero distal, desarticulação, diáfise umeral, abaixo da articulação), e quem entende o argumento não erra.
+Esse é o fato que a prova de título de 2025 cobrou: o melhor nível ao redor do cotovelo para usar prótese é **abaixo da articulação**. A banca usou alternativas de uma palavra (úmero distal, desarticulação, diáfise umeral, abaixo da articulação), e quem entende o argumento não erra.
 
 ## Desarticulação do cotovelo: côndilos contra comprimento
 
@@ -1836,7 +1836,7 @@ Boa parte dos erros em questões de reimplante vem de misturar os dois livros, e
 | MOBERG (avanço) | 1 cm (cap. 49); 1,5 e 2,5 cm (cap. 48) | 1 a 2 cm (cap. 21, p. 766) |
 !fim
 
-A regra prática é simples: quando a questão cita o Green ou a SBCM com bibliografia do Green, o número é o do Green; quando a alternativa traz 8 h, 30 h, duas veias por artéria ou a sequência artéria, nervo, veia, ela está falando o Campbell, e só é a resposta se nenhuma alternativa trouxer a versão do Green.
+A regra prática é simples: quando a questão cita o Green ou a prova de título com bibliografia do Green, o número é o do Green; quando a alternativa traz 8 h, 30 h, duas veias por artéria ou a sequência artéria, nervo, veia, ela está falando o Campbell, e só é a resposta se nenhuma alternativa trouxer a versão do Green.
 
 # Fechamento {radar=fundamento}
 
