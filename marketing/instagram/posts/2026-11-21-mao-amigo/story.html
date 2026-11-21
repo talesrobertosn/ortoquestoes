@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Para o amigo da Mão (story)</title>
+<!-- Story único de propaganda (pedido do Tales, 21/11/2026): enaltecer o acervo de Cirurgia da Mão (quantidade,
+     comentários, cronograma, prova de ingresso e prova de título), sem citar SBCM nem SIMÃO, com o chamado
+     "envie para o seu amigo que estuda para Cirurgia da Mão". Vidro suave (liquid glass) sobre degradê das cores do site.
+     Números conferidos no acervo em 21/11/2026 (public/acervo/temas/mao.json, sem anuladas nem duplicadas):
+     1.572 questões das provas de ingresso, 1.536 no padrão da prova de título (OrtoQuestões Simulados), 3.108 no total,
+     todas comentadas; 32 resumos de capítulos do Green (conteudo/biblioteca/green*.md).
+     Radiografia decorativa: Green's Operative Hand Surgery, 7ª ed., Fig. 38.1A. Sem figurinha de link. -->
+<link rel="stylesheet" href="../../estilos/stories-com-alternativas/base.css">
+<style>
+section { color: #fff; }
+.fundo { position: absolute; inset: -80px; z-index: -3;
+  background:
+    radial-gradient(45% 28% at 85% 8%, rgba(244,207,124,.55) 0%, rgba(244,207,124,0) 70%),
+    radial-gradient(55% 35% at 5% 25%, #1f9584 0%, rgba(31,149,132,0) 72%),
+    radial-gradient(60% 35% at 100% 55%, #2c5d70 0%, rgba(44,93,112,0) 72%),
+    radial-gradient(70% 40% at 0% 85%, #3fae96 0%, rgba(63,174,150,0) 70%),
+    radial-gradient(60% 30% at 90% 100%, rgba(244,207,124,.35) 0%, rgba(244,207,124,0) 70%),
+    linear-gradient(170deg, #0b2a27 0%, #0f4c45 38%, #14655E 62%, #0e3a35 100%); }
+.bolha { position: absolute; border-radius: 50%; filter: blur(2px); z-index: -2;
+  background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.55), rgba(255,255,255,.08) 45%, rgba(255,255,255,0) 70%);
+  border: 1.5px solid rgba(255,255,255,.25); }
+.grao { position: absolute; inset: 0; z-index: -1; opacity: .06; mix-blend-mode: overlay;
+  background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 5px 5px; }
+.vidro { position: absolute; border-radius: 46px;
+  background: linear-gradient(150deg, rgba(255,255,255,.22), rgba(255,255,255,.07));
+  border: 1.5px solid rgba(255,255,255,.34); backdrop-filter: blur(34px) saturate(160%);
+  box-shadow: 0 40px 80px -40px rgba(0,0,0,.65), 0 1.5px 0 rgba(255,255,255,.45) inset, 0 -1px 0 rgba(255,255,255,.08) inset; }
+.vidro::before { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(80% 50% at 20% 0%, rgba(255,255,255,.22), rgba(255,255,255,0) 60%); }
+.topo { position: absolute; left: 64px; right: 64px; top: 228px; display: flex; align-items: center; gap: 18px; }
+.topo svg { width: 62px; height: 62px; border-radius: 15px; flex: none; box-shadow: 0 10px 24px -10px rgba(0,0,0,.6); }
+.topo .nome { font: 700 33px/1 Jakarta; }
+.topo .pil { margin-left: auto; padding: 13px 22px; border-radius: 999px; font: 700 21px/1 Jakarta; letter-spacing: 2.5px; text-transform: uppercase;
+  background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.3); backdrop-filter: blur(16px); }
+.rot { font: 700 23px/1 Jakarta; letter-spacing: 3.5px; text-transform: uppercase; color: #a9ecd9; }
+h1 { font: 800 92px/.98 Jakarta; letter-spacing: -3.4px; }
+h1 em { font-style: normal; color: var(--ouro); }
+.lead { font: 500 31px/1.35 Inter; color: rgba(255,255,255,.88); }
+.lead b { color: #fff; }
+.num { font: 800 66px/1 Jakarta; letter-spacing: -2px; color: #fff; }
+.num small { font-size: 34px; letter-spacing: 0; }
+.lbl { margin-top: 10px; font: 600 24px/1.3 Inter; color: rgba(255,255,255,.85); }
+.item { display: grid; grid-template-columns: 70px 1fr; gap: 20px; align-items: center; }
+.item + .item { margin-top: 22px; }
+.ic { width: 70px; height: 70px; border-radius: 22px; display: grid; place-items: center;
+  background: rgba(255,255,255,.16); border: 1.5px solid rgba(255,255,255,.28); }
+.ic svg { width: 36px; height: 36px; }
+.item b { display: block; font: 800 30px/1.15 Jakarta; }
+.item div span { display: block; margin-top: 4px; font: 400 23px/1.3 Inter; color: rgba(255,255,255,.8); }
+.foto { position: absolute; border-radius: 34px; overflow: hidden; border: 1.5px solid rgba(255,255,255,.35);
+  box-shadow: 0 30px 60px -30px rgba(0,0,0,.7); }
+.foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.foto::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,58,53,0) 55%, rgba(14,58,53,.75)); }
+.foto span { position: absolute; z-index: 2; left: 18px; right: 18px; bottom: 14px; font: 400 16px/1.25 Inter; color: rgba(255,255,255,.75); }
+.enviar { position: absolute; display: flex; align-items: center; gap: 24px; padding: 22px 26px; border-radius: 999px;
+  background: linear-gradient(170deg, #f9e2a6, #e8bf62); color: #13302c;
+  box-shadow: 0 26px 50px -24px rgba(0,0,0,.85), 0 2px 0 rgba(255,255,255,.6) inset; }
+.enviar .av { width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; background: #13302c; flex: none; }
+.enviar .av svg { width: 42px; height: 42px; }
+.enviar b { display: block; font: 800 36px/1.1 Jakarta; letter-spacing: -.6px; }
+.enviar span { display: block; margin-top: 4px; font: 600 23px/1.2 Inter; color: #3c5450; }
+.site { position: absolute; left: 0; right: 0; text-align: center; font: 800 32px/1 Jakarta; }
+.sub { position: absolute; left: 0; right: 0; text-align: center; font: 500 23px/1 Inter; color: rgba(255,255,255,.8); }
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="ladrilho" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="24" fill="#14655E"/>
+    <g fill="#F6EEDB" opacity=".55"><circle cx="30" cy="30" r="6.5"/><rect x="43" y="25.5" width="34" height="9" rx="4.5"/><circle cx="30" cy="70" r="6.5"/><rect x="43" y="65.5" width="26" height="9" rx="4.5"/></g>
+    <g fill="#F4CF7C"><circle cx="30" cy="50" r="9"/><rect x="43" y="45" width="40" height="10" rx="5"/></g>
+    <path d="M26 50.2l2.9 2.9 5.2-5.6" fill="none" stroke="#14655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-coment" viewBox="0 0 36 36"><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h24v16H16l-7 6v-6H6z"/><path d="M11 14h14M11 19h9"/></g></symbol>
+  <symbol id="i-crono" viewBox="0 0 36 36"><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="26" height="24" rx="5"/><path d="M5 14h26M12 4v6M24 4v6"/><path d="M12 22l4 4 8-8"/></g></symbol>
+  <symbol id="i-livro" viewBox="0 0 36 36"><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9c-3-2.5-8-3.3-13-2.5v21c5-.8 10 0 13 2.5 3-2.5 8-3.3 13-2.5v-21c-5-.8-10 0-13 2.5z"/><path d="M18 9v21"/></g></symbol>
+  <symbol id="i-alvo" viewBox="0 0 36 36"><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><circle cx="18" cy="18" r="13"/><circle cx="18" cy="18" r="7"/><circle cx="18" cy="18" r="2" fill="#fff"/></g></symbol>
+  <symbol id="i-envia" viewBox="0 0 42 42"><path d="M37 5L4 18l13 5 5 13z" fill="none" stroke="#F4CF7C" stroke-width="3.4" stroke-linejoin="round"/><path d="M17 23l20-18" stroke="#F4CF7C" stroke-width="3.4" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<section id="story-mao-amigo">
+  <div class="fundo"></div>
+  <div class="bolha" style="width:300px; height:300px; right:-80px; top:420px;"></div>
+  <div class="grao"></div>
+
+  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="nome">Orto Questões</span><span class="pil">Cirurgia da Mão</span></div>
+
+  <div style="position:absolute; left:64px; width:620px; top:330px;">
+    <div class="rot">Para quem estuda a Mão</div>
+    <h1 style="margin-top:18px;">Mais de <em>3.000</em> questões de Mão.</h1>
+    <p class="lead" style="margin-top:22px;"><b>Todas comentadas</b>, como uma aula, com o livro de referência.</p>
+  </div>
+  <div class="foto" style="right:56px; width:300px; height:440px; top:350px; transform:rotate(4deg);"><img src="img/mao.png" alt=""><span>Green 7ª ed., Fig. 38.1A</span></div>
+
+  <div class="vidro" style="left:48px; width:482px; top:860px; height:220px;">
+    <div style="position:absolute; left:36px; right:30px; top:36px;"><div class="num">1.572</div><div class="lbl">questões das provas de <b>ingresso</b></div><div class="lbl" style="margin-top:6px; font-weight:400; font-size:21px; color:rgba(255,255,255,.7);">USP, PUC-SP, UFG, ENARE e outras</div></div>
+  </div>
+  <div class="vidro" style="right:48px; width:482px; top:860px; height:220px;">
+    <div style="position:absolute; left:36px; right:30px; top:36px;"><div class="num">1.536</div><div class="lbl">no padrão da prova de <b>título</b></div><div class="lbl" style="margin-top:6px; font-weight:400; font-size:21px; color:rgba(255,255,255,.7);">OrtoQuestões Simulados, como na prova</div></div>
+  </div>
+
+  <div class="vidro" style="left:48px; right:48px; top:1104px; height:438px;">
+    <div style="position:absolute; left:40px; right:40px; top:38px;">
+      <div class="item"><span class="ic"><svg><use href="#i-coment"/></svg></span><div><b>Comentário que ensina</b><span>a certa e cada errada explicadas, com o Green</span></div></div>
+      <div class="item"><span class="ic"><svg><use href="#i-crono"/></svg></span><div><b>Cronograma até a sua prova</b><span>um plano para o ingresso e outro para o título</span></div></div>
+      <div class="item"><span class="ic"><svg><use href="#i-alvo"/></svg></span><div><b>Temas que mais caem</b><span>o ranking de cada prova, do que mais cai ao que menos cai</span></div></div>
+      <div class="item"><span class="ic"><svg><use href="#i-livro"/></svg></span><div><b>Resumos dos capítulos do Green</b><span>mais de 30, ligados às questões do tema</span></div></div>
+    </div>
+  </div>
+
+  <div class="enviar" style="left:48px; right:48px; top:1574px;">
+    <span class="av"><svg><use href="#i-envia"/></svg></span>
+    <div><b>Envie para o seu amigo que estuda para a Mão</b><span>e treinem juntos, de graça · ortoquestoes.com.br</span></div>
+  </div>
+</section>
+</body></html>
