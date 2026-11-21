@@ -179,3 +179,6 @@ O site, os posts e os e-mails não dizem a profissão nem a etapa do Tales: nem 
 
 ## Busca (aprovada em 22/10/2026)
 Tales aprovou o post de 22/10 "como se estivesse procurando algo no Google" para o arsenal: **Busca** (feed e stories), num buscador genérico com a marca Orto Questões, sem logotipo ou cores de outra empresa. [Guia e modelo executável](../../marketing/instagram/estilos/BUSCA.md).
+
+## Câmara escura (aprovada em 17/11/2026)
+Tales aprovou para o arsenal os stories de 17/11: **Câmara escura** (3 stories: a radiografia no varal sob a luz vermelha, as alternativas numa tira de negativo e, com a luz acesa, o gabarito com o comentário do site em destaque e "Treine grátis"). [Guia e modelo executável](../../marketing/instagram/estilos/CAMARA-ESCURA.md).

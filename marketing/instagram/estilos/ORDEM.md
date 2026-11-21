@@ -15,22 +15,22 @@ Como funciona ([ordem.json](ordem.json)):
 4. **Pedido do Tales vence a fila:** "no modelo padrão" ou um estilo citado por ele é o que vale; registre no histórico e a fila segue dali.
 5. **Modelo novo aprovado:** entra na lista, logo depois do estilo com o visual mais diferente dele (claro depois de escuro, por exemplo).
 
-Ordem atual (em 10/11/2026 entrou nos stories a **Oficina do encaixe**, logo depois da Busca, e em 13/11/2026 a **Errata**, no fim da fila; ver `ordem.json`):
+Ordem atual (em 10/11/2026 entrou nos stories a **Oficina do encaixe**, logo depois da Busca, em 13/11/2026 a **Errata**, no fim da fila, e em 17/11/2026 a **Câmara escura**, também depois da Busca; ver `ordem.json`):
 
 | Feed | Stories |
 |---|---|
 | 1. Jornal | 1. Cartaz de cinema |
 | 2. Cofre de duas chaves | 2. Busca (aprovado em 22/10/2026) |
-| 3. Busca (aprovado em 22/10/2026) | 3. Oficina do encaixe (aprovado em 10/11/2026) |
-| 4. Tabela de Snellen | 4. Mecânica fina |
-| 5. GPS do nervo | 5. Planta de engenharia |
-| 6. Caderneta de topografia | 6. Exame de DNA |
-| 7. Museu | 7. Bingo da prova |
-| 8. VAR da questão | 8. Leilão (usado em 21/10/2026; ainda sem modelo aprovado) |
-| 9. Laboratório de patologia | 9. Radar premium |
-| 10. Jogo de cartas | 10. Cupom fiscal (versão questão primeiro) |
-| 11. Embarque | 11. Errata (aprovado em 13/11/2026) |
-| 12. Ache os 3 erros |  |
+| 3. Busca (aprovado em 22/10/2026) | 3. Câmara escura (aprovada em 17/11/2026) |
+| 4. Tabela de Snellen | 4. Oficina do encaixe (aprovado em 10/11/2026) |
+| 5. GPS do nervo | 5. Mecânica fina |
+| 6. Caderneta de topografia | 6. Planta de engenharia |
+| 7. Museu | 7. Exame de DNA |
+| 8. VAR da questão | 8. Bingo da prova |
+| 9. Laboratório de patologia | 9. Leilão (usado em 21/10/2026; ainda sem modelo aprovado) |
+| 10. Jogo de cartas | 10. Radar premium |
+| 11. Embarque | 11. Cupom fiscal (versão questão primeiro) |
+| 12. Ache os 3 erros | 12. Errata (aprovado em 13/11/2026) |
 | 13. Linhas do metrô |  |
 | 14. Plantão das 3h14 |  |
 | 15. Modelo padrão |  |

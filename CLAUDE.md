@@ -65,6 +65,8 @@ Em 18/11/2026, Tales aprovou os **Stories com alternativas** (a pedido, fora do 
 
 Em 22/10/2026, Tales aprovou a **Busca** (feed e stories: o sintoma digitado num buscador com a marca Orto Questões, a questão como resultado e a resposta no trecho em destaque). Veja [o guia](marketing/instagram/estilos/BUSCA.md).
 
+Em 17/11/2026, Tales aprovou a **Câmara escura** (stories: a radiografia revelada na sala escura, com o comentário do site em destaque no último). Veja [o guia](marketing/instagram/estilos/CAMARA-ESCURA.md).
+
 ## Telas do site
 **Antes de qualquer tarefa visual, leia [DESIGN.md](DESIGN.md) e [PRODUCT.md](PRODUCT.md)** e siga [docs/design/WORKFLOW.md](docs/design/WORKFLOW.md). Ferramentas de design (Tales, 31/10/2026: "usar sempre que possível, a ideia é você ficar especialista em design"): em todo pedido de design, use as skills de [docs/design/FERRAMENTAS.md](docs/design/FERRAMENTAS.md) (Refero para pesquisar, UI UX Pro Max para decidir, ui-styling e design-system para construir, Impeccable para revisar e polir, arte-hd2d para a arte pixel).
 
