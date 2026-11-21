@@ -3,7 +3,7 @@
  * para visitantes, de 19/10/2026). Visitante e conta grátis leem o começo de cada resumo; dali em diante, a
  * paywall convida a assinar. Assinante (e cortesia, administrador) lê tudo.
  *
- * O tamanho da prévia é interno: nenhuma tela diz quanto do texto está aberto. O ponto de corte vem pronto no
+ * Desde 20/11/2026 (Tales) o leitor diz até que parte a prévia vai ("vai até a parte 2 de 13"). O ponto de corte vem pronto no
  * capítulo (`corte`, o id do último bloco aberto, calculado em scripts/biblioteca/gerar.mjs) e é o mesmo das
  * páginas públicas do Google (/resumos/<id>/), que também param ali.
  */

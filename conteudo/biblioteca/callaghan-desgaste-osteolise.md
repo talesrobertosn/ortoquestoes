@@ -5,7 +5,7 @@ titulo: Medição do desgaste, resposta biológica aos detritos e imagem da artr
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulos 18 (Clinical Wear Assessment) e 21 (Biologic Response to Wear Debris), com trechos dos capítulos 23 (Radiographic Evaluation), 25 (Magnetic Resonance Imaging) e 26 (Preoperative Medical Evaluation)
 autores: Editores John J. Callaghan, Aaron G. Rosenberg e Harry E. Rubash; capítulo 21 de Christophe Nich, Stefan Zwingenberger e Stuart B. Goodman
 fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 18, p. 268 a 275 (precisão, viés e acurácia; carga; técnicas uni e duorradiográfica, dois círculos, gabarito, RSA e TC; volume e ângulo beta; qualidade das radiografias e formatos digitais; estatística; acomodação); capítulo 21, p. 302 a 313 (osteólise e soltura, partículas de polietileno, reticulado e metal, macrófagos, citocinas, RANKL e osteoprotegerina, ALVAL e pseudotumor, fatores do paciente e extrínsecos, tratamento); capítulo 23, p. 353 a 355 (soltura, osteólise, stress shielding); capítulo 25, p. 385 a 389 (artefato metálico, soltura, osteólise, hipersensibilidade e metalose, infecção); capítulo 26, p. 399 e 400 (risco renal e metal contra metal).

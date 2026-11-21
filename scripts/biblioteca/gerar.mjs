@@ -7,7 +7,7 @@
 // exato; se um parágrafo for reescrito, o leitor reencontra o trecho pelo texto (src/biblioteca/ancoras.ts).
 import { createHash } from 'node:crypto'
 import { existsSync } from 'node:fs'
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -189,22 +189,13 @@ for (const { capitulo } of capitulos) for (const s of capitulo.secoes) s.blocos.
 })
 for (const l of Object.values(porQuestao)) l.sort((x, y) => ['central', 'relacionada', 'treino'].indexOf(x.p) - ['central', 'relacionada', 'treino'].indexOf(y.p))
 await writeFile(join(DESTINO, 'questoes.json'), JSON.stringify(porQuestao))
-// Busca do menu (16/10/2026): cada trecho dos resumos com o título da seção, para achar uma classificação
-// ou um epônimo e abrir o resumo direto nele (#/resumos/<id>?bloco=<bloco>). Baixado só quando alguém busca.
-// Desde 29/10/2026 cada capítulo leva também as palavras-chave (a linha resumo: do cabeçalho, `r`) e os
-// subtemas (`s`), que pesam mais que um trecho solto na ordem dos resultados.
-const busca = { capitulos: capitulos.map(({ capitulo: c }) => ({ id: c.id, t: c.titulo, e: c.especialidade, r: semMarcas(c.resumo ?? ''), s: (c.subtemas ?? []).join('; ') })), itens: [] }
-capitulos.forEach(({ capitulo }, ci) => {
-  for (const s of capitulo.secoes) {
-    busca.itens.push([ci, `h-${s.id}`, s.titulo, s.titulo])
-    for (const b of s.blocos) {
-      const texto = b.tipo === 'questoes' ? [b.conceito, b.como, ...(b.armadilhas ?? [])].filter(Boolean).join(' ')
-        : b.tipo === 'tabela' ? [b.titulo, ...b.cab, ...b.linhas.flat()].join(' ')
-        : b.tipo === 'figura' ? `Figura ${b.numero}. ${b.legenda}` : b.t
-      if (texto) busca.itens.push([ci, b.id, s.titulo, semMarcas(texto)])
-    }
-  }
-})
-await writeFile(join(DESTINO, 'busca.json'), JSON.stringify(busca))
+// O site baixa só o pedaço da área da questão (20/11/2026: o arquivo inteiro tinha 2 MB e descia em toda questão aberta).
+// O inteiro continua para os scripts editoriais (cobertura, fila, catálogo).
+const porArea = {}
+for (const [q, destinos] of Object.entries(porQuestao)) (porArea[q.replace(/-\d+[a-z]?$/, '')] ??= {})[q] = destinos
+await rm(join(DESTINO, 'questoes'), { recursive: true, force: true })
+await mkdir(join(DESTINO, 'questoes'), { recursive: true })
+for (const [area, mapa] of Object.entries(porArea)) await writeFile(join(DESTINO, 'questoes', `${area}.json`), JSON.stringify(mapa))
+// (20/11/2026) O busca.json (texto inteiro de todos os resumos, 21 MB) saiu: o site busca no indice.json e nada o lia.
 await writeFile(join(DESTINO, 'indice.json'), JSON.stringify({ geradoEm: new Date().toISOString().slice(0, 10), capitulos: capitulos.map((c) => c.resumo) }, null, 1))
 console.log(`Biblioteca: ${capitulos.length} capítulo(s) gravado(s) em public/biblioteca/.`)

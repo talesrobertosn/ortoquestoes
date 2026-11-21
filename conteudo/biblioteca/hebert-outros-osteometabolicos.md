@@ -4,7 +4,7 @@ versao: 1
 titulo: Outros temas de osteometabólicas: escorbuto, osteopetrose, mucopolissacaridoses e osso frágil
 especialidade: osteometabolicas
 acesso: gratis
-livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio HEBERT)
+livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e colaboradores)
 edicao: 5ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), caps. 25, 36, 38 e 39, o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), caps. 6, 8 e 10, o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 4, 25 e 32, o Campbell's Operative Orthopaedics, 15ª ed. (2026), caps. 3 e 7, o The Adult Hip (CALLAGHAN), 3ª ed. (2017), caps. 24 e 74, o Green's Operative Hand Surgery, 7ª ed. (2017), cap. 12, e o Skeletal Trauma, cap. 20
 capitulo: Capítulo 28 · Osteoporose na criança e no adulto, com o Capítulo 27 · Doenças osteometabólicas (seções Escorbuto, Mucopolissacaridoses e Osteogênese imperfeita) do mesmo livro
 autores: Roberto GUARNIERO (HEBERT, cap. 28); Akira ISHIDA, José Antonio PINTO, Francesco Camara BLUMETTI, Henrique SODRÉ e Eiffel Tsuyoshi DOBASHI (HEBERT, cap. 27); Harry K.W. KIM e Mouin G. SEIKALY (Tachdjian, cap. 38); Anthony I. RICCIO (Tachdjian, cap. 39); Andrew W. HOWARD e Benjamin A. ALMAN (Lovell, cap. 6); Derek G. HANSEN e Stuart H. RALSTON (Rockwood, cap. 4); Valerae O. LEWIS (Rockwood, cap. 25)

@@ -5,7 +5,7 @@ titulo: Imagem do quadril
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulo 23 · Radiographic Evaluation of the Hip
 autores: Michael Cooley, Debora Azevedo, William Palmer
 fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 23 (Radiographic Evaluation of the Hip, p. 341 a 366, com as Tabelas 23.1 e 23.2), cap. 24 (Radionucleotide Imaging and PET Scanning of the Hip, p. 367 a 376, com as Tabelas 24.3 e 24.5) e cap. 25 (Magnetic Resonance Imaging of the Hip, p. 377 a 392); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (p. 359 a 363, 374 a 378 e 384), cap. 3 (p. 165 e 166), cap. 4 (p. 246), cap. 52 (p. 2205 aprox.) e cap. 56 (p. 2409 aprox.); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 50 (radiografias do anel pélvico), cap. 51 (marcos radiográficos do acetábulo e arcos do teto) e cap. 53 (índice de GARDEN); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13 (p. 438 e 439 aprox.) e cap. 15 (SOUTHWICK); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., cap. 10 (radiologia, artrose e qualidade óssea).

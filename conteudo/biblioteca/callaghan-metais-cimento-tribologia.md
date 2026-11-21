@@ -5,7 +5,7 @@ titulo: Metais, cimento ósseo, tribologia e metal contra metal na artroplastia 
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulos 15 (Basic Science of Metals), 16 (Basic Science of Bone Cement), 17 (Tribology) e 20 (Metal-on-Metal Articulations), com trechos dos capítulos 1 e 12
 autores: Editores John J. Callaghan, Aaron G. Rosenberg e Harry E. Rubash; capítulo 16 de Sillesen, Malchau, Troelsen e Malchau; capítulo 17 de Markus A. Wimmer, Alfons Fischer e Robin Pourzal; capítulo 20 de Tim Band; capítulo 12 de Lewicki e Van Citters
 fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 15, p. 224 a 238 (estrutura dos metais, endurecimento, propriedades, aço, cobalto, titânio, fadiga, filme passivo, corrosão mecanicamente assistida); capítulo 16, p. 240 a 250 (cimento, técnica, hastes polidas e rugosas, interface, antibiótico, registros); capítulo 17, p. 252 a 265 (tribossistema, atrito, lubrificação, mecanismos de desgaste, entradas do quadril, pares, cone); capítulo 20, p. 289 a 301 (história do metal contra metal, fundição, geometria, lubrificação, tratamentos, BHR, registros, pseudotumor); capítulo 12, p. 172 a 174 e 181 e 182; capítulo 1, histórico do metal contra metal.

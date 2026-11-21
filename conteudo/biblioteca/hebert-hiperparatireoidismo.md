@@ -4,7 +4,7 @@ versao: 2
 titulo: Hiperparatireoidismo e osteodistrofia renal
 especialidade: osteometabolicas
 acesso: gratis
-livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio HEBERT)
+livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e colaboradores)
 edicao: 5ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), caps. 38 e 15, o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), cap. 6, o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 2, 4 e 25, o Campbell's Operative Orthopaedics, 15ª ed. (2026), caps. 7, 26, 27, 34 e 38, e o Dahlin's Bone Tumors, 6ª ed. (2010), cap. 26
 capitulo: Capítulo 27 · Doenças osteometabólicas
 autores: Akira ISHIDA, José Antonio PINTO, Francesco Camara BLUMETTI, Henrique SODRÉ e Eiffel Tsuyoshi DOBASHI (HEBERT, cap. 27); Harry K.W. KIM e Mouin G. SEIKALY (Tachdjian, cap. 38); Andrew W. HOWARD e Benjamin A. ALMAN (Lovell, cap. 6); Derek G. HANSEN e Stuart H. RALSTON (Rockwood, cap. 4)

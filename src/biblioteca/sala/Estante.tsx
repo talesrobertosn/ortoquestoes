@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type MouseEvent, type ReactNode } from 'react'
 import { corDaArea } from '../../dados/coresAreas'
 import { href } from '../../util/rotas'
-import { estadoLeitura, numeroCapitulo, tituloLombada, rotuloLivro } from '../estante'
+import { apelidoLivro, estadoLeitura, numeroCapitulo, tituloLombada, rotuloLivro } from '../estante'
 import { raridade, NOME_RARIDADE } from '../salao/segredos'
 import { Sprite } from '../salao/Sprite'
 import { PALETA_PLANTA, PLANTA } from '../salao/sprites'
@@ -264,7 +264,7 @@ function Volume({ c, leitura, fechado, comLivro, alvo, ativo, guia, aoMostrar, a
         onMouseEnter={(e) => temMouse() && aoMostrar(c, e.currentTarget, true)} onMouseLeave={aoEsconder}
         onFocus={(e) => aoMostrar(c, e.currentTarget)} onBlur={aoEsconder}>
         <span className="bb-vol__num" aria-hidden="true">{n === Number.MAX_SAFE_INTEGER ? '·' : n}</span>
-        <span className="bb-vol__titulo" aria-hidden="true">{comLivro ? <small>{rotuloLivro(c).split(' · ')[0]}</small> : null}{tituloLombada(c.titulo)}</span>
+        <span className="bb-vol__titulo" aria-hidden="true">{comLivro ? <small>{apelidoLivro(c.livro)}</small> : null}{tituloLombada(c.titulo)}</span>
         <span className={`bb-gema bb-gema--${r}`} aria-hidden="true" />
         {estado === 'andamento' && <span className="bb-vol__fita" aria-hidden="true" />}
         {estado === 'concluido' && <span className="bb-vol__selo" aria-hidden="true" />}

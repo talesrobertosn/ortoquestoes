@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { Icone } from '../../componentes/Icone'
 import { AREAS_BIBLIOTECA } from '../busca'
+import { corDaArea } from '../../dados/coresAreas'
 import { FILTROS_PADRAO, type EstadoLeitura, type FiltrosEstante, type OrdemEstante } from '../estante'
 import type { Agrupar } from './Lista'
 
@@ -24,6 +25,8 @@ interface Props {
   agrupar: Agrupar
   aoAgrupar: (a: Agrupar) => void
   relevancia: boolean
+  /** A busca da barra só quando a do topo da página não está à vista. */
+  comBusca: boolean
 }
 
 /**
@@ -36,7 +39,7 @@ export function BarraFiltros(p: Props) {
   const [painel, definirPainel] = useState(false)
   const botao = useRef<HTMLButtonElement>(null)
   const caixa = useRef<HTMLDivElement>(null)
-  const extras = (p.filtros.livro ? 1 : 0) + (p.filtros.area ? 1 : 0) + (p.filtros.ordem !== 'livro' ? 1 : 0)
+  const extras = (p.filtros.livro ? 1 : 0) + (p.filtros.ordem !== 'livro' ? 1 : 0)
   useEffect(() => {
     if (!painel) return
     const fora = (e: PointerEvent) => { if (!caixa.current?.contains(e.target as Node) && !botao.current?.contains(e.target as Node)) definirPainel(false) }
@@ -61,12 +64,12 @@ export function BarraFiltros(p: Props) {
       {/* A busca fica sempre à vista na barra (14/11/2026, Tales: "deixar a barra de pesquisa mais óbvia"): no
           computador a barra acompanha a rolagem, então dá para procurar de qualquer prateleira. */}
       <div className="bb-barra-filtros__linha">
-        <label className="bb-filtro-busca">
+        {p.comBusca && <label className="bb-filtro-busca">
           <Icone nome="busca" tamanho={18} />
           <span className="so-leitor">Buscar na biblioteca</span>
           <input type="search" value={p.filtros.q} onChange={(e) => p.mudar({ q: e.target.value })} placeholder="Buscar resumo, livro ou classificação" enterKeyHint="search" autoComplete="off" />
           {p.filtros.q && <button type="button" className="bb-filtro-busca__limpar" onClick={() => p.mudar({ q: '' })} aria-label="Limpar a busca"><Icone nome="fechar" tamanho={15} /></button>}
-        </label>
+        </label>}
         <div className="bb-modo" role="group" aria-label="Como ver a biblioteca">
           <button type="button" aria-pressed={p.modo === 'estante'} onClick={() => p.aoModo('estante')}><Icone nome="livro" tamanho={16} /> Estante</button>
           <button type="button" aria-pressed={p.modo === 'lista'} onClick={() => p.aoModo('lista')}><Icone nome="menu" tamanho={16} /> Lista</button>
@@ -92,13 +95,6 @@ export function BarraFiltros(p: Props) {
                 </div>
               </fieldset>
               <fieldset>
-                <legend>Área</legend>
-                <div className="bb-opcoes">
-                  <button type="button" aria-pressed={!p.filtros.area} onClick={() => p.mudar({ area: null })}>Todas as áreas</button>
-                  {p.areas.map((a) => <button key={a.slug} type="button" aria-pressed={p.filtros.area === a.slug} onClick={() => p.mudar({ area: p.filtros.area === a.slug ? null : a.slug })}>{AREAS_BIBLIOTECA.find((x) => x.slug === a.slug)?.nome ?? a.slug}</button>)}
-                </div>
-              </fieldset>
-              <fieldset>
                 <legend>Ordenar{p.modo === 'estante' ? <small> (na Lista; a estante segue a ordem de cada livro)</small> : null}</legend>
                 <div className="bb-opcoes">{ORDENS.map((o) => <button key={o.v} type="button" aria-pressed={p.filtros.ordem === o.v} onClick={() => p.mudar({ ordem: o.v })}>{o.nome}</button>)}</div>
               </fieldset>
@@ -113,6 +109,16 @@ export function BarraFiltros(p: Props) {
             </div>
           </>}
         </div>
+      </div>
+      {/* Áreas à vista (20/11/2026): o residente estuda por área ("hoje é joelho"), não por livro. */}
+      <div className="bb-areas" role="group" aria-label="Área">
+        <button type="button" aria-pressed={!p.filtros.area} onClick={() => p.mudar({ area: null })}>Todas as áreas</button>
+        {AREAS_BIBLIOTECA.filter((a) => p.areas.some((x) => x.slug === a.slug)).map((a) => {
+          const total = p.areas.find((x) => x.slug === a.slug)?.total ?? 0
+          return <button key={a.slug} type="button" aria-pressed={p.filtros.area === a.slug} onClick={() => p.mudar({ area: p.filtros.area === a.slug ? null : a.slug })}>
+            <i aria-hidden="true" style={{ background: corDaArea(a.slug) }} />{a.nome} <span className="numerico">{total}</span>
+          </button>
+        })}
       </div>
       <div className="bb-barra-filtros__resultado" role="status" aria-live="polite">
         <p className="bb-contagem"><b className="numerico">{p.achados}</b>{p.achados !== p.total ? <> de <span className="numerico">{p.total}</span></> : null} {p.total === 1 ? 'resumo' : 'resumos'}{p.relevancia && p.modo === 'lista' ? <span className="bb-contagem__ordem"> · mais relevantes primeiro</span> : null}</p>

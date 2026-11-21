@@ -5,7 +5,7 @@ titulo: Fraturas do quadril e do acetábulo
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulos 9 (Ilioinguinal, Extended Iliofemoral, and Combined Approaches), 77 (Proximal Femoral Fractures Treated with Arthroplasty) e 87 (Periprosthetic Fractures of the Pelvis Associated with Hip Arthroplasty), com trechos dos capítulos 1, 2, 5, 7, 23, 24, 38, 72 e 74
 autores: William A. McGann e Aaron G. Rosenberg (cap. 9); Douglas E. Padgett e Joseph B. Assini (cap. 77); Mihai H. Vioreanu, Donald S. Garbuz, Bassam A. Masri e Clive P. Duncan (cap. 87)
 fonte: Livros conferidos localmente em 04/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 9 (p. 135 a 142 aprox.), cap. 1 (p. 10 e 11), cap. 2 (p. 46 a 48), cap. 5 (p. 70), cap. 7 (p. 109 e 110), cap. 23 (p. 342 a 351), cap. 24 (p. 374 e 375), cap. 38 (p. 532 e 533), cap. 72 (p. 937 a 946), cap. 74 (p. 958 a 962), cap. 77 (p. 983 a 988) e cap. 87 (p. 1094 a 1104); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 17, 24, 50, 51, 52, 53 e 56 (cito seção, tabela e figura); Campbell's Operative Orthopaedics, 15ª ed., caps. 60 e 61 (p. 2654 a 2745); Skeletal Trauma, 5ª ed., caps. 5 e 40; AO Principles of Fracture Management, 3ª ed. (p. 764 e 780); Ortopedia e Traumatologia (HEBERT), 5ª ed. (anatomia do quadril, esporte e cap. 58).

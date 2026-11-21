@@ -5,7 +5,7 @@ titulo: História da cirurgia do quadril, biomecânica e cinemática da artropla
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulos 1 (A History of Hip Surgery), 10 (Biomechanics of Hip Reconstruction) e 11 (Kinematics of the Hip)
 autores: Editores John J. Callaghan, Aaron G. Rosenberg e Harry E. Rubash; capítulo 10 de Maureen K. Dwyer
 fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 1, p. 1 a 17 (ressecção, artrodese, osteotomia de BARTON, materiais de interposição da tabela 1.1, moldagem de SMITH-PETERSEN, bipolar de BATEMAN, GLUCK, WILES, CHARNLEY, evolução da fixação, registros); capítulo 10, p. 145 a 152 (forças in vivo, tabelas 10.1 e 10.2, modelo estático, bengala e muletas, offset e posição da cúpula, marcha antes e depois da artroplastia); capítulo 11, p. 154 a 170 (desgaste multidirecional e razão de aspecto, luxação e posições de risco, TANINO, KUNG e RIES, inclinação e anteversão).

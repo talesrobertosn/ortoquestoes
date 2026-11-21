@@ -5,7 +5,7 @@ titulo: Dor peritrocantérica e tendinopatias do quadril
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulo 43 · Soft Tissue Disorders About the Hip
 autores: Jeffrey A. Geller
 fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip, cap. 43 (p. 589 a 601, inteiro), cap. 6 (p. 92, bursite após osteotomia trocantérica), cap. 22 (p. 326 a 337, testes laterais, posteriores e de ressalto), cap. 25 (p. 381 a 383, estruturas extracapsulares e impacto isquiofemoral na RM), cap. 31 (p. 449 aprox., fisioterapia da contratura em flexão e tendinite do iliopsoas) e cap. 85 (p. 1083 a 1086, partes moles após artroplastia); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (p. 356 a 358.e1, Tabela 7.1, exame; Tabela 7.2, p. 373; p. 394 a 397, síndrome dolorosa do grande trocânter, rupturas glúteas, ressaltos, osteíte púbica e hérnia do esporte), cap. 56 (p. 2413 a 2415, impacto isquiofemoral, rupturas abdutoras e ressaltos por endoscopia), cap. 38 (p. 1414, avulsões da pelve) e cap. 53 (p. 2280, rupturas do glúteo médio: mulheres acima de 50 anos, sinais com mais de 70% de sensibilidade e especificidade; p. 2281, avulsões proximais dos isquiotibiais); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 10 (Quadril do adulto: bursite, tendinite, ressalto, TRENDELENBURG), cap. 13 (Artroscopia do quadril: dores periarticulares e endoscopia peritrocantérica) e cap. 2 (piriforme).

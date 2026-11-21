@@ -5,7 +5,7 @@ titulo: Fraturas periprotéticas do quadril
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulo 88 · Periprosthetic Fractures of the Femur Associated with Hip Arthroplasty
 autores: Johannes M. van der Merwe, Donald S. Garbuz, Clive P. Duncan e Bassam A. Masri
 fonte: Livros conferidos localmente em 04/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 88 lido por inteiro (p. 1106 a 1123), cap. 87 (Periprosthetic Fractures of the Pelvis Associated with Hip Arthroplasty, p. 1094 a 1104) e cap. 81 (alfa-defensina, p. 1042); Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 59 (Periprosthetic Fractures), partes do acetábulo e do fêmur ao redor da ATQ; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 4 (Arthroplasty of the Hip), seção de fraturas, p. 274 a 279.
