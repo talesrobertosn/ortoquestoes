@@ -660,7 +660,8 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
             <p className="lr-capa__meta"><span>~{capitulo.minutos} min de leitura</span>{idsDoCapitulo.length > 0 && <span>{idsDoCapitulo.length} questões citadas</span>}{leitura?.concluidoEm && <span className="lr-capa__ok"><Icone nome="certo" tamanho={14} /> Concluído</span>}{alvoFc && <a className="lr-capa__fc" href={href(linkFlashcards(alvoFc, capitulo.titulo))}><Icone nome="raio" tamanho={14} /> Estudar flashcards deste tema</a>}</p>
             <p className="lr-capa__dica">Selecione qualquer trecho para destacar ou anotar. Tudo fica salvo na sua conta.</p>
             {porta.fechado && porta.pedida && <p className="lr-capa__pedida"><Icone nome="cadeado" tamanho={14} /> O link que você abriu leva à parte {porta.pedida.numero}, <strong>“{porta.pedida.secao.titulo}”</strong>, que é para assinantes. Comece por aqui: o começo do resumo é aberto para todos e prepara o caminho até ela.</p>}
-            {porta.fechado && <p className="lr-capa__porta"><Icone nome="cadeado" tamanho={13} /> Você está lendo a prévia deste resumo. O texto completo é para assinantes: <a href={href('/assinatura')}>ver os planos</a>.</p>}
+            {/* Tales, 20/11/2026: a prévia diz até onde vai (antes o tamanho não era dito). */}
+            {porta.fechado && <p className="lr-capa__porta"><Icone nome="cadeado" tamanho={13} /> Você está lendo a prévia: ela vai até a parte {secoesVisiveis.length} de {capitulo.secoes.length}. O texto completo é para assinantes: <a href={href('/assinatura')}>ver os planos</a>.</p>}
           </header>
           {secoesVisiveis.map((s, i) => {
             const reais = new Set(s.blocos.flatMap((b) => b.tipo === 'questoes' ? questoesReais(b) : []))

@@ -11,8 +11,17 @@ import '../estilos/componentes/BibliotecaConvite.css'
 
 /** Questão → trecho do resumo que a ensina (public/biblioteca/questoes.json, gerado pelo script da Biblioteca). */
 interface Destino { c: string; b: string; s: string; t: string; p: 'central' | 'relacionada' | 'treino' }
-let mapa: Promise<Record<string, Destino[]>> | null = null
-const carregar = (): Promise<Record<string, Destino[]>> => (mapa ??= fetch(recurso('biblioteca/questoes.json')).then((r) => (r.ok ? r.json() as Promise<Record<string, Destino[]>> : {})).catch(() => { mapa = null; return {} }))
+// Um pedaço por área (biblioteca/questoes/<área>.json, 20/11/2026): a questão de mão baixa só o mapa da mão.
+const mapas = new Map<string, Promise<Record<string, Destino[]>>>()
+const carregar = (questao: string): Promise<Record<string, Destino[]>> => {
+  const area = questao.replace(/-\d+[a-z]?$/, '')
+  let p = mapas.get(area)
+  if (!p) {
+    p = fetch(recurso(`biblioteca/questoes/${area}.json`)).then((r) => (r.ok ? r.json() as Promise<Record<string, Destino[]>> : {})).catch(() => { mapas.delete(area); return {} })
+    mapas.set(area, p)
+  }
+  return p
+}
 
 /** Tempo da abertura do livro antes de ir para o resumo (o CSS anima em 560 ms). */
 const ABERTURA_MS = 560
@@ -44,7 +53,7 @@ export function EstudarAssunto({ questao, subtemas = [], baseResumo }: { questao
     let vivo = true
     definir(undefined)
     definirAbrindo(false)
-    carregar().then((m) => { if (vivo) definir(m[questao]?.[0] ?? null) })
+    carregar(questao).then((m) => { if (vivo) definir(m[questao]?.[0] ?? null) })
     return () => { vivo = false }
   }, [questao, ativo])
   // O livro só se mexe na tela: fora dela, a animação para (bateria e processador do celular).

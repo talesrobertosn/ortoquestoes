@@ -287,6 +287,15 @@ button.bb-obj:disabled { cursor: default; }
 .bb-modo button[aria-pressed="true"] { background: var(--superficie); color: var(--verdete); box-shadow: 0 0 0 1px var(--verdete), var(--sombra); }
 :root[data-tema="escuro"] .bb-modo button[aria-pressed="true"] { background: var(--verdete-veu); }
 .bb-progresso { display: inline-flex; flex-wrap: wrap; gap: 0.35rem; }
+/* Áreas à vista, numa faixa que corre para o lado quando não cabe. */
+.bb-areas { display: flex; gap: 0.35rem; overflow-x: auto; scrollbar-width: none; padding: 2px 0; }
+.bb-areas::-webkit-scrollbar { display: none; }
+.bb-areas button { flex: none; display: inline-flex; align-items: center; gap: 0.4rem; min-height: 32px; padding: 0 0.7rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie); color: var(--texto); font: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+.bb-areas button:hover { border-color: var(--verdete); }
+.bb-areas button i { width: 8px; height: 8px; border-radius: 50%; }
+.bb-areas button span { color: var(--texto-2); font-size: 0.72rem; }
+.bb-areas button[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); color: var(--verdete-tinta); }
+@media (max-width: 40rem) { .bb-areas { margin: 0 calc(var(--e-4) * -1); padding: 2px var(--e-4); } .bb-areas button { min-height: 40px; } }
 .bb-progresso button { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 34px; padding: 0 0.7rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie);
   color: var(--texto); font: 600 0.78rem var(--fonte-texto); cursor: pointer; }
 .bb-progresso button span { color: var(--texto-2); font-size: 0.72rem; }
@@ -390,7 +399,8 @@ button.bb-obj:disabled { cursor: default; }
 .bb-vol__titulo { flex: 1; min-height: 0; margin-top: 4px; writing-mode: vertical-rl; text-orientation: mixed; width: calc(2 * 1.12 * 0.64rem); max-width: calc(2 * 1.12 * 0.64rem); overflow: hidden;
   font: 700 0.64rem/1.12 var(--fonte-texto); text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); overflow-wrap: anywhere;
   -webkit-mask: linear-gradient(180deg, #000 86%, transparent); mask: linear-gradient(180deg, #000 86%, transparent); }
-.bb-vol__titulo small { display: block; font-size: 0.58rem; opacity: 0.85; }
+/* Na estante "Mais cobrados": o livro numa linha só (apelido curto), para o assunto caber na lombada. */
+.bb-vol__titulo small { display: block; font-size: 0.58rem; opacity: 0.85; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bb-gema { display: inline-block; width: 7px; height: 7px; transform: rotate(45deg); flex: none; box-shadow: 0 0 0 1.5px #120b06; background: #9aa5a8; }
 .bb-vol .bb-gema { margin-top: 4px; }
 .bb-gema--raro { background: #5aa6e6; }
@@ -748,3 +758,6 @@ button.bb-obj:disabled { cursor: default; }
   .bb-palco { aspect-ratio: 16 / 10; }
   .bb-palco__mundo { width: calc(100% * (1440 / 540) * (10 / 16)); }
 }
+
+/* Quem já começou a ler vê primeiro onde parou (20/11/2026): no celular, a mesa sobe para antes do salão. */
+@media (max-width: 40rem) { .bb--voltando > .bb-mesa { order: -1; } }

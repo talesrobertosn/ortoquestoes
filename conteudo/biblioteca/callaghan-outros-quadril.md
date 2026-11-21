@@ -5,7 +5,7 @@ titulo: Outros temas do quadril: avaliação pré-operatória, quadril neuromusc
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulo 26 · Preoperative Medical Evaluation
 autores: Fabio Orozco, Sergio Pulido, Alvin C. Ong
 fonte: Livros conferidos localmente em 10/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 26 (p. 394 a 403, lido por inteiro, com as Tabelas 26.1 a 26.6 e a Figura 26.1), cap. 74 (The Neuromuscular Hip, p. 955 a 958 e 961 a 962), cap. 1 (tuberculose, p. 1 e 2), cap. 2 (ligamentos e canal femoral, p. 39 a 43 aprox.), cap. 11 (ligamentos, p. 155 a 157), cap. 49 (p. 665 aprox.), cap. 61 (DORR, p. 786 e 787), cap. 73 (p. 949 e 950) e cap. 79 (artrodese, p. 1012); Campbell's Operative Orthopaedics, 15ª ed., cap. 6 (Arthrodesis of the Hip, p. 349 e 350, Box 6.1); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1 (biomecânica do osso), cap. 15 (ferimentos por arma de fogo, seção Retained Fragments) e cap. 52 (mecanismo da luxação do quadril, Fig. 52-1); Skeletal Trauma, 5ª ed., cap. 5 (p. 106 e 116), cap. 19 (p. 510 a 519 aprox.), cap. 52 (p. 1566 a 1569 e 1594) e cap. 54 (p. 1607); Ortopedia e Traumatologia (Sizínio HEBERT), 5ª ed., cap. 9.1 (DDQ, Quadro 9.1.1) e seções de artrodese do quadril; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13 (exame da DDQ).

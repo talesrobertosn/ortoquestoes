@@ -5,7 +5,7 @@ titulo: Anatomia cirúrgica do quadril e acessos da artroplastia total
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulos 2 (Gross Anatomy of the Hip), 3 (Posterior Approach), 6 (Trochanteric Approaches), 7 (Anterior Approach, Fracture Table) e 8 (Anterior Approach, Traditional Table)
 autores: Editores John J. Callaghan, Aaron G. Rosenberg e Harry E. Rubash; capítulo 2 de Ray C. Wasielewski, Sharat Kusuma e Aaron G. Rosenberg
 fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 2, p. 37 a 60 (colunas e fresagem, marcos do acetábulo, fêmur proximal e índice de DORR, quadrantes acetabulares e centro alto, vasos e nervos); capítulo 3, p. 51 a 60 (via posterior, comprimento do membro, reabilitação); capítulo 6, p. 75 a 95 (osteotomia trocantérica, fixação com fios e cabos, complicações); capítulo 7, p. 97 a 110 (via anterior em mesa de fratura, fluoroscopia, alvo da cúpula, preparo femoral, série de mais de 3.000 casos); capítulo 8, p. 111 a 135 (via anterior direta em mesa comum, erros, curva de aprendizado, complicações, desfechos).

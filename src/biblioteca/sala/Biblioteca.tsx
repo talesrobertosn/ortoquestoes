@@ -132,6 +132,16 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
     return `Este volume guarda o registro da casa: ${capitulos.length} resumos de ${obras.length} livros, ${Math.round(minutos / 60)} horas de leitura e ${questoes} questões de prova citadas. O mais longo é "${longo?.titulo}", com ~${longo?.minutos} min.`
   }, [capitulos, obras.length])
 
+  // Uma busca à vista por vez (20/11/2026): a da barra só aparece quando a do topo sai da tela.
+  const [buscaTopoVisivel, definirBuscaTopoVisivel] = useState(true)
+  useEffect(() => {
+    const el = document.querySelector('.bb-busca')
+    if (!el || typeof IntersectionObserver === 'undefined') return
+    const io = new IntersectionObserver(([e]) => definirBuscaTopoVisivel(e.isIntersecting), { rootMargin: '-64px 0px 0px 0px' })
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+
   const trocarModo = (m: Modo) => { definirModo(m); gravar(CHAVE_MODO, m) }
   const irResultados = () => document.getElementById('bb-resultados')?.scrollIntoView({ behavior: semMovimento() ? 'auto' : 'smooth', block: 'start' })
   const abrirDaBusca = (c: ResumoCapitulo) => {
@@ -147,7 +157,7 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
     s.acoes.falar('Escolha uma sugestão com as setas e Enter, ou continue digitando: a estante mostra só o que combina.')
   }
 
-  // Quem não assina lê a prévia de cada resumo (Tales, 09/11/2026: src/biblioteca/porta.ts); o tamanho dela não é dito.
+  // Quem não assina lê a prévia de cada resumo (Tales, 09/11/2026: src/biblioteca/porta.ts); o leitor diz até que parte vai.
   const porta = contasDisponiveis && !premium && !(sessao && !premiumCarregado) ? <p className="bb-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Cada resumo abre com uma prévia.</b> A leitura completa de toda a Biblioteca é para assinantes. <a href={href('/assinatura')}>Ver os planos</a></span></p> : null
   const livrosFiltro = livros.map((l) => ({ chave: l.chave, rotulo: l.rotulo, total: l.capitulos.length }))
   const areasFiltro = [...capitulos.reduce((m, c) => m.set(c.especialidade, (m.get(c.especialidade) ?? 0) + 1), new Map<string, number>())].map(([slug, total]) => ({ slug, total }))
@@ -156,7 +166,7 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
   const salaRaros = s.passagem === 'aberta' ? <SalaRaros achados={s.achados} aoVoltar={s.acoes.fecharPassagem} /> : null
 
   return (
-    <div className={`bb bb--${modo}`} style={texturas()}>
+    <div className={`bb bb--${modo}${continuar.length ? ' bb--voltando' : ''}`} style={texturas()}>
       {s.chuva > 0 && <ChuvaDeLivros key={s.chuva} />}
       {s.aviso && <Recado key={s.aviso.n} texto={s.aviso.texto} />}
       <CenaSalao salao={s} textoRaro={textoRaro} aoAbrirGuia={() => definirGuia(true)}
@@ -182,7 +192,7 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
       {!ativos && <Mesa continuar={continuar} capitulos={capitulos} destaques={destaques} premium={premium} />}
       {s.efeitos.has('cafe') && <Cafe curtos={s.curtos} />}
 
-      <BarraFiltros modo={modo} aoModo={trocarModo} filtros={filtros} mudar={mudar} limpar={limpar} livros={livrosFiltro} areas={areasFiltro}
+      <BarraFiltros modo={modo} aoModo={trocarModo} filtros={filtros} mudar={mudar} limpar={limpar} livros={livrosFiltro} areas={areasFiltro} comBusca={!buscaTopoVisivel}
         contagem={contagem} total={capitulos.length} achados={filtrados.length} agrupar={agrupar} aoAgrupar={definirAgrupar} relevancia={relevancia} />
 
       {!filtrados.length && <div className="bb-vazio" role="status">

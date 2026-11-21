@@ -5,7 +5,7 @@ titulo: Superfícies de apoio da artroplastia do quadril: polietileno e cerâmic
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulos 12 (Biomaterials Overview), 13 (Basic Science of Ceramics), 14 (Basic Science of Polyethylene) e 19 (Ceramic Articulations)
 autores: Editores John J. Callaghan, Aaron G. Rosenberg e Harry E. Rubash; capítulo 12 de Kathleen A. Lewicki e Douglas W. Van Citters; capítulo 13 de Heros, Piconi, Reinhardt, Schneider e Streicher; capítulo 14 de Ebru Oral e Orhun K. Muratoglu
 fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 12, p. 175 a 182 (polietileno, esterilização, reticulação, cerâmicas, zircônio oxidado); capítulo 13, p. 186 a 199 (ciência da alumina, do compósito de matriz de alumina, ensaios, fabricação, cone, cerâmica contra polietileno e contra cerâmica, confiabilidade e ruído); capítulo 14, p. 201 a 218 (estrutura do UHMWPE, oxidação, reticulação de primeira e segunda geração, vitamina E e novas estratégias); capítulo 19, p. 278 a 287 (classificação das cerâmicas, alumina, zircônia, compósito, Oxinium, tribologia, peças retiradas, resposta tecidual, rangido e resultados clínicos).

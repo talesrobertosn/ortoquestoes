@@ -5,7 +5,7 @@ titulo: Displasia do quadril no adulto
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulo 71 · Total Hip Arthroplasty for Developmental Hip Dysplasia
 autores: Thomas L. Bernasek, Steven T. Lyons e Brian T. Palumbo
 fonte: Livros conferidos localmente em 10/11/2026: The Adult Hip, cap. 71 (p. 920 a 937, inteiro, com as Tabelas 71.1 e 71.2 e a Figura 71.8), cap. 35 (Sequelae of Pediatric Hip Disease, p. 473 a 476, história natural), cap. 50 (p. 675, planejamento), cap. 58 (p. 757, hastes modulares) e cap. 83 (Neurovascular Injury Following Total Hip Arthroplasty, p. 1063 a 1067); o volume local do CALLAGHAN é o de artroplastia e não traz capítulo próprio de preservação do quadril no adulto jovem, por isso os ângulos e a osteotomia periacetabular vêm do Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (p. 359 a 361 e 374 a 378), e a artroplastia na displasia foi comparada com o cap. 4 do mesmo livro (p. 248 a 253 e 266) e com o cap. 32 (p. 1142); HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed., cap. 9.1 e 10.

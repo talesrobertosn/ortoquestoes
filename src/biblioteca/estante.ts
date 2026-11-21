@@ -22,7 +22,12 @@ export const normalizar = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, 
  * segundo livro ("14ª edição (2021), com o Green's Operative Hand Surgery, 7ª edição") continua na estante do livro
  * principal (pedido do Tales, 31/10/2026: o Campbell aparecia como três livros); o segundo livro fica na citação.
  */
-const edicaoSemAno = (edicao: string) => edicao.split(/,\s*com\s/i)[0].replace(/\s*\(.*?\)\s*/g, '').trim()
+// Só o número da edição do livro principal ("15ª edição (2026), com o Rockwood..." e "15ª edição, ampliado com a 14ª"
+// → "15ª edição"): antes o resto da frase virava um livro a mais no filtro (eram 22) e o "Próximo capítulo" se perdia.
+const edicaoSemAno = (edicao: string) => {
+  const n = edicao.match(/^\s*(\d+)\s*ª/)?.[1]
+  return n ? `${n}ª edição` : edicao.split(/,\s*(?:com|ampliad[oa])\s|;/i)[0].replace(/\s*\(.*?\)\s*/g, '').trim()
+}
 export const chaveLivro = (c: Pick<ResumoCapitulo, 'livro' | 'edicao'>) => `${c.livro}|${edicaoSemAno(c.edicao)}`
 
 /** "Rockwood adulto", "Rockwood infantil" ou o nome do livro sem o subtítulo. */
@@ -35,7 +40,7 @@ export function nomeCurtoLivro(livro: string): string {
 /** O nome que cabe numa lombada: "Netter", "Tachdjian", "Rockwood adulto". */
 export function apelidoLivro(livro: string): string {
   const curto = nomeCurtoLivro(livro)
-  return /^Netter/i.test(curto) ? 'Netter' : /^Tachdjian/i.test(curto) ? 'Tachdjian' : /^Campbell/i.test(curto) ? 'Campbell' : /^Green/i.test(curto) ? 'Green' : curto
+  return /^Netter/i.test(curto) ? 'Netter' : /^Tachdjian/i.test(curto) ? 'Tachdjian' : /^Campbell/i.test(curto) ? 'Campbell' : /^Green/i.test(curto) ? 'Green' : /HEBERT/i.test(livro) ? 'HEBERT' : curto
 }
 /** Uma linha sobre o livro, embaixo do nome na estante (pedido do Tales, 30/10/2026: "descrever bem na página de resumos"). */
 const SOBRE_LIVRO: Array<[RegExp, string]> = [

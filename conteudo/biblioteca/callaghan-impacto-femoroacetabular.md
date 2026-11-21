@@ -5,7 +5,7 @@ titulo: Impacto femoroacetabular, artroscopia do quadril e lesão labral
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulo 35 · Sequelae of Pediatric Hip Disease
 autores: Stuart L. Weinstein, Ryan M. Ilgenfritz
 fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip: Hip Arthroplasty Surgery (2017), sem capítulo próprio de impacto ou de artroscopia, com o tema nos caps. 2 (Gross Anatomy of the Hip, p. 37 e 42), 35 (Sequelae of Pediatric Hip Disease, p. 477 a 486), 8 (Anterior Approach, Traditional Table, p. 112 e 113), 11 (Kinematics of the Hip, p. 155 e 162 a 164 aprox.), 22 (History and Physical Examination, p. 327 a 333 aprox.), 23 (Radiographic Evaluation of the Hip, p. 355 a 357 aprox.), 25 (Magnetic Resonance Imaging of the Hip, p. 377 a 392 aprox.) e 68 (Metal on Metal Hip Resurfacing, p. 886 a 888); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (Hip Pain in the Young Adult and Hip Preservation Surgery, p. 358 a 375, com a Tabela 7.2 e a Fig. 7.27) e cap. 56 (Arthroscopy of the Lower Extremity, p. 2398 a 2415, com o Box 56.15 e as Figs. 56.62 e 56.64); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., caps. 9.8 (Artroscopia do quadril na criança e no adolescente), 10 (Quadril do adulto) e 13 (Artroscopia do quadril) e capítulo da epifisiólise; Tachdjian's Pediatric Orthopaedics, 6ª ed., caps. 14 (p. 568 e 575 a 577 aprox.), 15 (p. 595 aprox.) e 40.

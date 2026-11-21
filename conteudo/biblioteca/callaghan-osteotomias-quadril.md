@@ -5,7 +5,7 @@ titulo: Osteotomias do quadril
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulo 104 · Use of the Extended Trochanteric Osteotomy in Revision Total Hip Arthroplasty
 autores: Brett R. Levine e Darwin Chen
 fonte: Livros conferidos localmente em 04/11/2026: The Adult Hip, cap. 1 (A History of Hip Surgery, p. 5 a 13: osteotomias e indicações de BARTON), cap. 6 (Trocanteric Approaches for Primary THA, p. 75 a 90: osteotomias trocantéricas, ETO, fixação e complicações), cap. 8 (p. 112 e 113, PAO pelo acesso anterior), cap. 37 (p. 517 a 522, osteotomias na osteonecrose), cap. 74 (p. 964 e 965, poliomielite) e cap. 104 (p. 1259 a 1267, inteiro); o volume local do CALLAGHAN é o de artroplastia e não traz os capítulos de preservação, por isso as osteotomias pélvicas vêm do Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (p. 370 a 382, PAO de Berna, PAO reversa, indicações, técnica e complicações; p. 390 e 392, osteonecrose e protrusão), cap. 4 (p. 242 a 244, osteotomia trocantérica) e cap. 32 (p. 1152 a 1166, osteotomias pélvicas, Tabela 32.1, STEEL e CHIARI); do Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13 (p. 461 a 470 e 524: GANZ, esféricas, CHIARI, shelf e prancha do SALTER); e do Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 10 (osteotomias femorais na artrose e na osteonecrose) e cap. 11 (Osteotomias ao nível do quadril).

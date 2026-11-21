@@ -5,7 +5,7 @@ titulo: Exame físico do quadril
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
-edicao: Edição de 2017
+edicao: 3ª edição (2017)
 capitulo: Capítulo 22 · History and Physical Examination
 autores: Hal David Martin, Ian James Palmer, Munif Hatem
 fonte: Livros conferidos localmente em 01/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 22 (p. 319 a 338, lido por inteiro, com as Tabelas 22.1 a 22.10) e cap. 2 (abdutores, p. 45); Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (biomecânica da artroplastia, p. 192), cap. 7 (avaliação do quadril doloroso, p. 357 a 360), cap. 56 (impacto extra-articular, abdutores e ressaltos, p. 2412 a 2414), cap. 46 (LASÈGUE, p. 1785 a 1786), cap. 24 (sacroilíaca, p. 835), cap. 50 (p. 2002) e cap. 53 (p. 2254); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., cap. 10, Quadril do adulto, seção Exame físico, e os trechos de fisiatria (síndrome do piriforme) e reabilitação do quadril; Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 7 (Pelve, p. 203 e 223 aprox.) e cap. 8 (Coxa/Quadril, exame físico, p. 260 a 264 aprox.); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 50 (incidências em apoio unipodal).

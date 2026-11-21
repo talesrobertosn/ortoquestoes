@@ -18,6 +18,7 @@ export const AREAS_BIBLIOTECA: Array<{ slug: string; nome: string }> = [
   { slug: 'conceitos-basicos', nome: 'Conceitos básicos' }, { slug: 'trauma', nome: 'Trauma' }, { slug: 'quadril', nome: 'Quadril' },
   { slug: 'joelho', nome: 'Joelho' }, { slug: 'ombro-cotovelo', nome: 'Ombro e cotovelo' }, { slug: 'mao', nome: 'Mão e punho' },
   { slug: 'coluna', nome: 'Coluna' }, { slug: 'pediatria', nome: 'Ortopedia pediátrica' }, { slug: 'tumores', nome: 'Tumores' }, { slug: 'pe-tornozelo', nome: 'Pé e tornozelo' },
+  { slug: 'osteometabolicas', nome: 'Osteometabólicas' },
 ]
 export const nomeArea = (slug: string) => AREAS_BIBLIOTECA.find((a) => a.slug === slug)?.nome ?? slug
 
