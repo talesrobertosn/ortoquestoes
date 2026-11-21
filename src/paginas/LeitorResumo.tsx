@@ -51,10 +51,11 @@ const PASSOS_LEITOR: PassoGuia[] = [
   { alvo: '[data-guia="lr-busca"]', titulo: 'Buscar no capítulo', texto: 'Ache uma classificação ou um nome próprio e pule direto para o trecho.' },
   { alvo: '[data-guia="lr-marcador"]', titulo: 'Marcar página', texto: 'Guarda este lugar para reencontrar depois, sem pintar o texto. Os marcadores ficam na lista de Notas, de onde também saem.' },
   { alvo: '[data-guia="lr-notas"]', titulo: 'Destaques e notas', texto: 'Selecione qualquer trecho para destacar em cinco cores ou escrever uma nota. Tudo aparece aqui e no seu caderno, em todos os aparelhos.' },
+  { alvo: '[data-guia="lr-tela-cheia"]', titulo: 'Tela cheia', texto: 'Esconde as abas e a barra do navegador para sobrar só o resumo. Para sair, toque de novo no botão ou aperte Esc. No celular, a opção fica no menu Aa (Aparência).' },
   { alvo: '[data-guia="lr-aa"]', titulo: 'Aparência', texto: 'Tema claro, sépia ou escuro, tamanho da letra, espaço entre linhas, largura e leitura em páginas.' },
   { alvo: '.lr-cobranca__lista button', titulo: 'Questões de prova no texto', texto: 'Cada chip é uma questão que já caiu (prova e ano). Ela abre ao lado da leitura; ao voltar, você está no mesmo parágrafo.' },
   // Só em computador (teclado e mouse); no celular o passo nem aparece.
-  ...(typeof matchMedia !== 'undefined' && matchMedia('(hover: hover) and (pointer: fine)').matches ? [{ titulo: 'Atalhos do teclado', texto: 'Setas ou W A S D: ↑ W sobe e ↓ S desce o texto; no modo Páginas, ← A e → D passam a página para os lados. Espaço desce uma tela inteira. E ainda: / busca, I índice, N notas, F modo foco e ? abre esta ajuda.' }] : []),
+  ...(typeof matchMedia !== 'undefined' && matchMedia('(hover: hover) and (pointer: fine)').matches ? [{ titulo: 'Atalhos do teclado', texto: 'Setas ou W A S D: ↑ W sobe e ↓ S desce o texto; no modo Páginas, ← A e → D passam a página para os lados. Espaço desce uma tela inteira. E ainda: T tela cheia, / busca, I índice, N notas, F modo foco e ? abre esta ajuda.' }] : []),
 ]
 
 interface MarcaNoTexto { id: string; inicio: number; fim: number; cor: CorMarca; nota: boolean }
@@ -167,6 +168,24 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const [painel, definirPainel] = useState<'indice' | 'notas' | 'busca' | 'aparencia' | null>(null)
   const [questao, definirQuestao] = useState<string | null>(null)
   const [foco, definirFoco] = useState(false)
+  // Tela cheia (Tales, 20/11/2026): a página inteira, para os painéis e a questão aberta continuarem funcionando.
+  // No iPhone o Safari não deixa uma página entrar em tela cheia; lá o botão nem aparece.
+  const telaCheiaPossivel = typeof document !== 'undefined' && !!(document.fullscreenEnabled || (document as Document & { webkitFullscreenEnabled?: boolean }).webkitFullscreenEnabled)
+  const [telaCheia, definirTelaCheia] = useState(() => typeof document !== 'undefined' && !!document.fullscreenElement)
+  useEffect(() => {
+    const mudou = () => definirTelaCheia(!!(document.fullscreenElement || (document as Document & { webkitFullscreenElement?: Element }).webkitFullscreenElement))
+    document.addEventListener('fullscreenchange', mudou); document.addEventListener('webkitfullscreenchange', mudou)
+    return () => { document.removeEventListener('fullscreenchange', mudou); document.removeEventListener('webkitfullscreenchange', mudou) }
+  }, [])
+  const alternarTelaCheia = useCallback(() => {
+    const d = document as Document & { webkitExitFullscreen?: () => void }
+    const raiz = document.documentElement as HTMLElement & { webkitRequestFullscreen?: () => void }
+    if (document.fullscreenElement || (d as Document & { webkitFullscreenElement?: Element }).webkitFullscreenElement) { (document.exitFullscreen?.() ?? d.webkitExitFullscreen?.())?.catch?.(() => {}) }
+    else if (raiz.requestFullscreen) raiz.requestFullscreen({ navigationUI: 'hide' }).catch(() => {})
+    else raiz.webkitRequestFullscreen?.()
+  }, [])
+  // Ao sair do resumo, a tela cheia não fica presa nas outras páginas do site.
+  useEffect(() => () => { if (document.fullscreenElement) document.exitFullscreen().catch(() => {}) }, [])
   const [selecao, definirSelecao] = useState<Selecao | null>(null)
   const [aberta, definirAberta] = useState<{ id: string; x: number; y: number; embaixo: boolean } | null>(null)
   const [reassociar, definirReassociar] = useState<string | null>(null)
@@ -530,11 +549,12 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
       else if (e.key === 'i') definirPainel((p) => p === 'indice' ? null : 'indice')
       else if (e.key === 'n') definirPainel((p) => p === 'notas' ? null : 'notas')
       else if (e.key === 'f') definirFoco((f) => !f)
+      else if (k === 't' && telaCheiaPossivel) alternarTelaCheia()
       else if (e.key === '?') definirGuia(true)
     }
     window.addEventListener('keydown', tecla)
     return () => window.removeEventListener('keydown', tecla)
-  }, [paginado, mudarPagina, painel, questao, aberta, selecao, foco, deFundo, guia, abrirQuestao, fecharQuestao])
+  }, [paginado, mudarPagina, painel, questao, aberta, selecao, foco, deFundo, guia, abrirQuestao, fecharQuestao, telaCheiaPossivel, alternarTelaCheia])
 
   // Deslizar no modo paginado (sem atrapalhar a seleção de texto).
   const toque = useRef<{ x: number; y: number; t: number } | null>(null)
@@ -614,6 +634,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
           <button type="button" className="lr-botao" data-guia="lr-marcador" onClick={alternarMarcador} aria-pressed={!!marcadorAtual} aria-label={marcadorAtual ? 'Remover o marcador desta página' : 'Marcar esta página'} title={marcadorAtual ? 'Página marcada: toque para remover' : 'Marcar esta página para voltar depois'}><Icone nome="bandeira" tamanho={19} /><span className="lr-botao__rotulo">{marcadorAtual ? 'Marcada' : 'Marcar página'}</span></button>
           <button type="button" className="lr-botao" data-guia="lr-notas" onClick={() => definirPainel(painel === 'notas' ? null : 'notas')} aria-pressed={painel === 'notas'} aria-label={`Destaques, notas e marcadores${doCapitulo.length ? ` (${doCapitulo.length})` : ''}`} title="Destaques, notas e marcadores (n)"><Icone nome="lapis" tamanho={19} /><span className="lr-botao__rotulo">Notas</span>{doCapitulo.length > 0 && <small className="lr-botao__n numerico" aria-hidden="true">{doCapitulo.length}</small>}</button>
           <button type="button" className="lr-botao lr-botao--aa" data-guia="lr-aa" onClick={() => definirPainel(painel === 'aparencia' ? null : 'aparencia')} aria-pressed={painel === 'aparencia'} aria-label="Aparência do texto" title="Aparência: tema, letra, espaçamento e largura"><span className="lr-botao__aa" aria-hidden="true">AA</span><span className="lr-botao__rotulo">Aparência</span></button>
+          {telaCheiaPossivel && <button type="button" className="lr-botao lr-botao--tela-cheia" data-guia="lr-tela-cheia" onClick={alternarTelaCheia} aria-pressed={telaCheia} aria-label={telaCheia ? 'Sair da tela cheia' : 'Tela cheia'} title={telaCheia ? 'Sair da tela cheia (t ou Esc)' : 'Tela cheia (t)'}><Icone nome={telaCheia ? 'recolher' : 'expandir'} tamanho={19} /></button>}
           <button type="button" className="lr-botao lr-botao--foco" onClick={() => definirFoco(!foco)} aria-pressed={foco} aria-label="Modo concentração" title="Concentração: só o texto (f)"><Icone nome="olho" tamanho={19} /></button>
           <button type="button" className="lr-botao lr-botao--ajuda" onClick={() => { definirPainel(null); definirGuia(true) }} aria-label="Ajuda do leitor" title="Ajuda do leitor (?)"><Icone nome="interrogacao" tamanho={19} /></button>
         </div>
@@ -697,7 +718,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
         </div>}
         {painel === 'notas' && <PainelNotas resolvidas={resolvidas} ordem={ordem} orfas={orfas} capitulo={capitulo} aoIr={(m, r) => { const t = r.trechos[0]; if (t) irPara(t.bloco, 0, true); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null); void m }}
           aoReassociar={(idM) => { definirReassociar(idM); definirPainel(null); definirAviso({ texto: 'Selecione no texto o trecho novo e toque em "Associar aqui".' }) }} aoApagar={(idM) => { bib.apagarMarca(idM); definirAviso({ texto: 'Marcação removida.', desfazer: () => bib.restaurarMarca(idM) }) }} />}
-        {painel === 'aparencia' && <Aparencia pref={pref} aoMudar={definirPreferencias} foco={foco} aoFoco={() => definirFoco(!foco)} />}
+        {painel === 'aparencia' && <Aparencia pref={pref} aoMudar={definirPreferencias} foco={foco} aoFoco={() => definirFoco(!foco)} telaCheia={telaCheiaPossivel ? telaCheia : null} aoTelaCheia={alternarTelaCheia} />}
       </aside>}
 
       {questao && <aside className="lr-questao" role="dialog" aria-modal="true" aria-labelledby="lr-questao-titulo">
@@ -918,7 +939,7 @@ function PainelNotas({ resolvidas, ordem, orfas, capitulo, aoIr, aoReassociar, a
   )
 }
 
-function Aparencia({ pref, aoMudar, foco, aoFoco }: { pref: Preferencias; aoMudar: (m: Partial<Omit<Preferencias, 'tipo' | 'em'>>) => void; foco: boolean; aoFoco: () => void }) {
+function Aparencia({ pref, aoMudar, foco, aoFoco, telaCheia, aoTelaCheia }: { pref: Preferencias; aoMudar: (m: Partial<Omit<Preferencias, 'tipo' | 'em'>>) => void; foco: boolean; aoFoco: () => void; telaCheia: boolean | null; aoTelaCheia: () => void }) {
   return (
     <div className="lr-aparencia">
       <p className="lr-aparencia__rotulo">Tema</p>
@@ -940,9 +961,10 @@ function Aparencia({ pref, aoMudar, foco, aoFoco }: { pref: Preferencias; aoMuda
       <label className="lr-aparencia__chave"><input type="checkbox" checked={pref.justificar} onChange={(e) => aoMudar({ justificar: e.target.checked })} /> Texto justificado</label>
       <label className="lr-aparencia__chave"><input type="checkbox" checked={pref.prova} onChange={(e) => aoMudar({ prova: e.target.checked })} /> Mostrar questões e radar de prova</label>
       <label className="lr-aparencia__chave"><input type="checkbox" checked={foco} onChange={aoFoco} /> Modo concentração (só o texto)</label>
+      {telaCheia !== null && <label className="lr-aparencia__chave"><input type="checkbox" checked={telaCheia} onChange={aoTelaCheia} /> Tela cheia (some a barra do navegador)</label>}
       <p className="lr-aparencia__nota">As preferências ficam na sua conta e valem em todos os aparelhos.</p>
       <details className="lr-aparencia__atalhos"><summary>Atalhos do teclado</summary>
-        <dl><dt>i</dt><dd>índice</dd><dt>/</dt><dd>buscar</dd><dt>n</dt><dd>notas</dd><dt>f</dt><dd>concentração</dd><dt>?</dt><dd>ajuda do leitor</dd><dt>← →</dt><dd>páginas</dd><dt>Esc</dt><dd>fechar</dd></dl>
+        <dl><dt>i</dt><dd>índice</dd><dt>/</dt><dd>buscar</dd><dt>n</dt><dd>notas</dd><dt>f</dt><dd>concentração</dd><dt>t</dt><dd>tela cheia</dd><dt>?</dt><dd>ajuda do leitor</dd><dt>↑ ↓ W S</dt><dd>subir e descer</dd><dt>← → A D</dt><dd>páginas</dd><dt>Esc</dt><dd>fechar</dd></dl>
       </details>
     </div>
   )
