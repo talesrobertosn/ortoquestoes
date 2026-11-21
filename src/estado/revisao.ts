@@ -35,6 +35,8 @@ export function revisarHoje(registro?: Partial<RegistroQuestao>, agora = Date.no
   const proxima = registro.proximaRevisao === undefined && registro.q !== undefined ? registro.q + 3 * 86400000 : registro.proximaRevisao
   return registro.c === false || (proxima != null && proxima <= agora)
 }
+export const LIMITE_HISTORICO_QUESTAO = 8
+
 export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: boolean | null, agora = Date.now(), confianca: 'seguro' | 'duvida' | 'chute' = 'seguro', marcada?: string): RegistroQuestao {
   const sequencia = correta === true ? (anterior?.sequencia ?? (anterior?.c === true ? 1 : 0)) + 1 : 0
   const intervalos = INTERVALOS[confianca]
@@ -51,7 +53,7 @@ export function proximoRegistro(anterior: RegistroQuestao | undefined, correta: 
     confianca,
     ...(marcada ? { m: marcada } : {}),
     ...(primeira ? { p: primeira } : {}),
-    historico: [...(anterior?.historico ?? []), { em: agora, correta, confianca }].slice(-8),
+    historico: [...(anterior?.historico ?? []), { em: agora, correta, confianca }].slice(-LIMITE_HISTORICO_QUESTAO),
     proximaRevisao: correta === null || sequencia > intervalos.length ? null : correta === false ? agora : agora + intervalos[sequencia - 1] * 86400000,
   }
 }

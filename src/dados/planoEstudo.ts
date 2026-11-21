@@ -1,5 +1,6 @@
 import type { Indice } from './tipos'
-import { diaCivil, inicioDaChave, inicioDoDia, somarDias } from '../util/dia'
+import { diaCivil, hojeBR, inicioDaChave, inicioDoDia, somarDias } from '../util/dia'
+import { LIMITE_HISTORICO_QUESTAO } from '../estado/revisao'
 import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, type Nivel } from './incidencia'
 
 /**
@@ -55,6 +56,8 @@ export interface OpcoesPlano {
   /** Alteração explícita de acervo. O plano anterior vale até a data indicada. */
   acervo?: { em: string; anterior: AcervoPlano; novo: AcervoPlano }
   revisoesNaMeta?: { em: string; anterior: boolean; novo: boolean }
+  /** Planos sem revisões na meta oferecem o bloco opcional por padrão. */
+  revisoesExtras?: boolean
   /** Dias da semana (0 = domingo) de plantão: dia leve, com poucas questões. */
   diasLeves?: number[]
   diasLevesAvulsos?: string[]
@@ -119,7 +122,7 @@ export const TAMANHO_MINI = 30
 /** Minutos por questão quando ainda não há histórico. */
 export const MINUTOS_POR_QUESTAO = 1.5
 
-export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros' | 'zeradoEm' | 'acervo' | 'revisoesNaMeta' | 'diasLevesAvulsos' | 'diasExtras' | 'metaPreservada'>> => ({
+export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros' | 'zeradoEm' | 'acervo' | 'revisoesNaMeta' | 'revisoesExtras' | 'diasLevesAvulsos' | 'diasExtras' | 'metaPreservada'>> => ({
   diasLeves: plano?.opcoes?.diasLeves ?? [],
   qtdLeve: Math.max(5, Math.min(40, plano?.opcoes?.qtdLeve ?? QTD_LEVE_PADRAO)),
   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],
@@ -237,6 +240,24 @@ export function revisoesNaMetaAtivas(plano: Pick<PlanoSalvo, 'opcoes'>, dia: str
 
 export function cotaRevisoesDaMeta(meta: number): number {
   return Math.min(5, Math.floor(meta / 10))
+}
+
+export function revisoesExtrasAtivas(plano: Pick<PlanoSalvo, 'opcoes'>): boolean {
+  return !plano.opcoes?.revisoesNaMeta && plano.opcoes?.revisoesExtras !== false
+}
+
+export function revisoesExtrasDoDia(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, calculo: CalculoPlano, agora: Date | number = new Date()): RevisaoNoCronograma[] {
+  if (!revisoesExtrasAtivas(plano) || calculo.naRetaFinal || calculo.provaPassou || calculo.tipoHoje !== 'estudo' || calculo.miniHoje || calculo.faltaHoje > 0) return []
+  const cota = cotaRevisoesDaMeta(calculo.metaDiaria)
+  if (!cota) return []
+  return candidatasARevisao(indiceDoPlano(indice, plano, agora), respondidas, incluiSimulados(plano, agora), hojeBR(agora))
+    .slice(0, cota)
+    .filter(({ id, feita }) => {
+      // O motor antigo data a primeira resposta pela abertura do histórico.
+      // O bônus só usa registros que vão conservar essa data ao receber a tentativa.
+      const historico = respondidas[id]?.historico?.length ?? 0
+      return !feita && historico > 0 && historico < LIMITE_HISTORICO_QUESTAO
+    })
 }
 
 /** Usa somente as tentativas anteriores a hoje para manter estável a lista de revisões ao longo do dia. */

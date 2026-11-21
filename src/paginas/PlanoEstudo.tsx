@@ -13,7 +13,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { acervoDoPlano, type AcervoPlano, alternarData, type AjusteDia, cotaRevisoesDaMeta, revisoesNaMetaAtivas, entraNoPlano, calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, indiceDoPlano, marcarReservadas, opcoesComPuxado,  opcoesDe,  type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { acervoDoPlano, type AcervoPlano, alternarData, type AjusteDia, cotaRevisoesDaMeta, revisoesExtrasDoDia, revisoesNaMetaAtivas, entraNoPlano, calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, indiceDoPlano, marcarReservadas, opcoesComPuxado,  opcoesDe,  type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo, type RevisaoNoCronograma } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
@@ -332,6 +332,15 @@ export function PlanoEstudo() {
     navegar('/sessao')
   }
 
+  async function comecarRevisoesExtras(revisoes: RevisaoNoCronograma[]) {
+    if (ficticio || !revisoes.length) return
+    const ids = revisoes.map((r) => r.id)
+    const detalhes = Object.fromEntries(revisoes.map(({ id, assunto, ultimoErroEm }) => [id, { assunto, ultimoErroEm }]))
+    if (await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, {
+      origem: 'erros', cronograma: { modalidade: 'ortopedia', revisoes: detalhes },
+    })) navegar('/sessao')
+  }
+
   function indiceParaAtividades() {
     const base = indice!
     if (!plano?.opcoes?.acervo || plano.opcoes.acervo.em > hojeBR()) return base
@@ -483,10 +492,13 @@ export function PlanoEstudo() {
         if (dia > hojeBR()) void mudarOpcao((atual) => comDiaAvulso(atual, dia, tipo), 'Não foi possível ajustar esse dia. Tente de novo.')
       },
     },
-    aoRevisoesNaMeta: (novo: boolean) => mudarOpcao((atual) => ({
+    aoPermitirRevisoes: (novo: boolean) => mudarOpcao((atual) => ({
       ...atual.opcoes,
-      revisoesNaMeta: { em: vigencia, anterior: revisoesNaMetaAtivas(atual, hojeBR()), novo },
+      ...(atual.opcoes?.revisoesNaMeta
+        ? { revisoesNaMeta: { em: vigencia, anterior: revisoesNaMetaAtivas(atual, hojeBR()), novo } }
+        : { revisoesExtras: novo }),
     }), 'Não foi possível salvar a opção de revisões agora. Tente de novo.'),
+    aoRevisoesExtras: comecarRevisoesExtras,
     aoDiaErros: (dia: number | null) => mudarOpcao((p) => ({ ...(p.opcoes ?? {}), diaErros: dia }), 'Não foi possível guardar o dia dos erros agora. Confira a conexão e tente de novo.'),
   }
 
@@ -559,7 +571,7 @@ export function PlanoEstudo() {
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} acoes={acoesVisao} />
+      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} acoes={acoesVisao} revisoesExtras={revisoesExtrasDoDia(indice, respondidas, plano, calculo)} />
     </div>
   )
 }
@@ -685,6 +697,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
   const [intensidade, definirIntensidade] = useState<Intensidade>(atual?.intensidade ?? 'firme')
   const [folgas, definirFolgas] = useState<number[]>(atual?.folgas ?? [0])
   const [simulados, definirSimulados] = useState(incluiSimulados(atual))
+  const [revisoesNaMeta, definirRevisoesNaMeta] = useState(true)
   const opcoesAtuais = opcoesDe(atual)
   const [diasLeves, definirDiasLeves] = useState<number[]>(opcoesAtuais.diasLeves)
   const [qtdLeve, definirQtdLeve] = useState(opcoesAtuais.qtdLeve)
@@ -706,6 +719,8 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
   const opcoes = (): OpcoesPlano => ({
     diasLeves: diasLeves.filter((d) => !folgas.includes(d)), qtdLeve, comecarPor, dominadas,
     semanasDificeis: atual?.opcoes?.semanasDificeis ?? [],
+    ...(atual?.opcoes?.revisoesNaMeta ? { revisoesNaMeta: atual.opcoes.revisoesNaMeta } : {}),
+    ...(!atual ? { revisoesNaMeta: { em: hojeBR(), anterior: false, novo: revisoesNaMeta } } : {}),
     // O que já foi feito hoje (em qualquer aparelho) continua feito depois de editar o plano.
     ...(atual?.opcoes?.marcasDia ? { marcasDia: atual.opcoes.marcasDia } : {}),
     // Um plano recomeçado do zero continua contando só a partir do recomeço depois de editar.
@@ -719,7 +734,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
   // na hora e as simulações chegam logo depois, sem travar o toque.
   const escolhas = useMemo(() => ({ data, folgas, simulados, op: opcoes() }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [data, folgas, simulados, diasLeves, qtdLeve, comecarPor, dominadas.join(','), provaExtra.nome, provaExtra.data])
+    [data, folgas, simulados, revisoesNaMeta, diasLeves, qtdLeve, comecarPor, dominadas.join(','), provaExtra.nome, provaExtra.data, atual?.opcoes?.revisoesNaMeta])
   const adiadas = useDeferredValue(escolhas)
   const simulacoes = useMemo(() => {
     const { data: dataSimulada, folgas: f, simulados: sim, op } = adiadas
@@ -748,7 +763,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
     definirSalvando(true); definirErro('')
     try {
       // Relê o plano: outro aparelho pode ter adiantado o dia ou marcado a semana difícil.
-      const fresco = atual ? await obterPlano() : null
+      const fresco = await obterPlano()
       // Trocar a escolha dos simulados muda o tamanho do acervo do plano: a contagem recomeça.
       const mudouSimulados = !!fresco && incluiSimulados(fresco) !== simulados
       const recomecando = !fresco || recomecar
@@ -756,6 +771,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
       const campos = opcoes()
       const novasOpcoes: OpcoesPlano = {
         ...fresco?.opcoes,
+        ...(!fresco && !atual && campos.revisoesNaMeta ? { revisoesNaMeta: campos.revisoesNaMeta } : {}),
         diasLeves: campos.diasLeves,
         qtdLeve: campos.qtdLeve,
         comecarPor: campos.comecarPor,
@@ -884,6 +900,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
           </div>
           <details className="pe-form__mais"><summary>O que são os OrtoQuestões Simulados?</summary><p className="texto-2">Questões autorais do site, feitas por <strong>engenharia reversa das provas originais</strong>: o mesmo estilo, o mesmo tipo de cobrança e o mesmo nível, escritas a partir da bibliografia de referência e comentadas com a citação do livro. Não contam para os temas que mais caem, que usam só as provas oficiais.</p></details>
           {atual && incluiSimulados(atual) !== simulados && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> A mudança vale a partir do próximo dia de estudo.</p>}
+          {!atual && <label className="caixa"><input type="checkbox" checked={revisoesNaMeta} onChange={(e) => definirRevisoesNaMeta(e.target.checked)} /><span><b>Permitir pequenas revisões</b><br />Até 10% da meta, com no máximo 5 questões de assuntos frequentes que você errou em outros dias.</span></label>}
           {!previa && !atual && <label className="caixa"><input type="checkbox" checked={diagnostico} onChange={(e) => definirDiagnostico(e.target.checked)} /><span>Começar com o <b>diagnóstico de {TAMANHO_DIAGNOSTICO} questões</b> (uns 45 minutos): o cronograma já sabe onde você está mais fraco desde o primeiro dia.</span></label>}
           {atual && <label className="caixa"><input type="checkbox" checked={recomecar} onChange={(e) => definirRecomecar(e.target.checked)} /><span>Recomeçar a contagem hoje (zera o "à frente ou atrás do cronograma")</span></label>}
         </div>}
@@ -937,7 +954,7 @@ function ResultadoAoVivo({ data, prova, folgas, diasLeves, qtdLeve, simulados, i
       {data && meta !== null ? <>
         <p className="pe-ao-vivo__dias"><strong className="numerico">{dias}</strong> dias até a prova{prova ? ` (${prova})` : ''}</p>
         <dl className="pe-ao-vivo__lista">
-          <div><dt>Num dia normal</dt><dd><b className="numerico">{meta}</b> questões novas <small>≈ {formatarTempo(meta * minutos)}</small>{diferenca !== null && <em className={'pe-ao-vivo__dif' + (diferenca > 0 ? ' pe-ao-vivo__dif--mais' : '')}>{diferenca > 0 ? '+' : ''}{diferenca} por dia</em>}</dd></div>
+          <div><dt>Num dia normal</dt><dd><b className="numerico">{meta}</b> questões <small>≈ {formatarTempo(meta * minutos)}</small>{diferenca !== null && <em className={'pe-ao-vivo__dif' + (diferenca > 0 ? ' pe-ao-vivo__dif--mais' : '')}>{diferenca > 0 ? '+' : ''}{diferenca} por dia</em>}</dd></div>
           <div><dt>Semana</dt><dd><b className="numerico">{diasEstudo}</b> dias de estudo{folgas.length ? <small>folga: {folgas.map((d) => DIAS_SEMANA[d]).join(', ')}</small> : null}{diasLeves.length ? <small>dia leve ({qtdLeve}): {diasLeves.filter((d) => !folgas.includes(d)).map((d) => DIAS_SEMANA[d]).join(', ')}</small> : null}</dd></div>
           <div><dt>Ritmo</dt><dd><b>{ROTULO_INTENSIDADE[intensidade].nome}</b>{simulados ? <small>com os OrtoQuestões Simulados</small> : <small>só questões oficiais</small>}</dd></div>
         </dl>

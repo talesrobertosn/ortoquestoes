@@ -4,7 +4,7 @@ import { avisoVistoNaConta, marcarAvisoNaConta } from '../conta/avisosVistos'
 import type { Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
-import { balancoDiaAnterior, incluiSimulados, indiceDoPlano, proximoDiaParaPuxar, acervoDoPlano, type AcervoPlano, type AjusteDia, DIA_MINIMO, MINUTOS_POR_QUESTAO, ROTULO_INTENSIDADE, ROTULO_PASSADA, TAMANHO_MINI, TETO_ATRASO, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
+import { balancoDiaAnterior, incluiSimulados, indiceDoPlano, proximoDiaParaPuxar, acervoDoPlano, revisoesExtrasAtivas, type AcervoPlano, type AjusteDia, DIA_MINIMO, MINUTOS_POR_QUESTAO, ROTULO_INTENSIDADE, ROTULO_PASSADA, TAMANHO_MINI, TETO_ATRASO, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo, type RevisaoNoCronograma } from '../dados/planoEstudo'
 import { areasParaMelhorar, errosDoCronograma, historicoDosDias, idsRevanche, previsaoDeTermino, resumosDoDia, TAMANHO_REVANCHE, type DiaFeito, type ResumoDoDia } from '../dados/cronogramaRoteiro'
 import { formatarTempo } from '../dados/hubCronograma'
 import { gerarIcs } from '../dados/calendarioIcs'
@@ -56,7 +56,8 @@ export interface AcoesVisao {
     previa: (dia: string, tipo: AjusteDia) => { carga: number; metaNormal: number; cobertura: number } | null
     aplicar: (dia: string, tipo: AjusteDia) => void
   }
-  aoRevisoesNaMeta?: (ligar: boolean) => void
+  aoPermitirRevisoes?: (ligar: boolean) => void
+  aoRevisoesExtras?: (revisoes: RevisaoNoCronograma[]) => void
   aoAcervo?: (novo: AcervoPlano) => void
   previaAcervo?: (novo: AcervoPlano) => { data: string; meta: number; cobertura: number; total: number; respondidas: number }
   aoDiaErros: (dia: number | null) => void
@@ -88,7 +89,7 @@ export interface VarianteMao {
   novasHoje?: number
 }
 
-export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar, aoAdiantar, aoPuxar, pendente = null, hub = null, aoAjustar, ficticio = null, acoes, mao = null }: {
+export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar, aoAdiantar, aoPuxar, pendente = null, hub = null, aoAjustar, ficticio = null, acoes, mao = null, revisoesExtras = [] }: {
   /** Cronograma da Mão: ver VarianteMao. */
   mao?: VarianteMao | null
   plano: PlanoSalvo; calculo: CalculoPlano; indice: Indice; respondidas: Respondidas
@@ -98,6 +99,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
   hub?: HubDados | null; aoAjustar?: () => void
   ficticio?: { nome: string; aoConvidar: (motivo: MotivoConvite) => void } | null
   acoes?: AcoesVisao
+  revisoesExtras?: RevisaoNoCronograma[]
 }) {
   const { sessao: sessaoConta } = usarConta()
   const minutos = hub?.minutosQuestao ?? MINUTOS_POR_QUESTAO
@@ -216,12 +218,16 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
             <h3><b>{metaFeita ? <Icone nome="certo" tamanho={13} /> : 2}</b>{folgaHoje ? 'Sem questões hoje' : revisoesHoje.length ? `${calculo.metaDiaria} novas + ${revisoesHoje.length} para refazer` : calculo.metaDiaria > 0 ? mao ? calculo.miniHoje ? 'Mini-simulado do dia' : `${calculo.metaDiaria} questões` : `${calculo.metaDiaria} questões novas` : 'Questões de hoje'}<small>{calculo.metaDiaria > 0 ? `${feitasHoje} de ${cargaHoje} feitas · cerca de ${formatarTempo(cargaHoje * minutos)}` : calculo.adiantadoHoje > 0 ? fraseAdiantadoHoje(calculo) : 'nenhuma agendada'}</small></h3>
             {mao && !metaFeita && !calculo.miniHoje && <p className="cg-nota">{mao.novasHoje ?? 0} novas restantes{mao.revisoesHoje ? ` · ${mao.revisoesHoje} erros para refazer` : ''}</p>}
             {!metaFeita && itensDia.length > 0 && <ul className="cg-areas">{itensDia.map((i) => <li key={i.slug + String(i.mistura)} style={area(i.slug)}><b>{i.n}</b><span><strong>{i.nome}</strong>{i.mistura && <em>mistura</em>}<small>{i.assuntos.slice(0, 3).join(' · ')}{i.assuntos.length > 3 ? ` · +${i.assuntos.length - 3}` : ''}</small></span></li>)}</ul>}
-            <p className="cg-nota">{folgaHoje ? 'Dia de descanso: a meta foi espalhada pelos outros dias. Se quiser estudar, adiante o próximo dia.' : metaFeita ? 'Feito. O que vier agora sai dos próximos dias.' : revisoesHoje.length ? 'A sessão intercala erros recentes de assuntos frequentes entre as questões novas.' : mao ? 'O dia combina questões novas e erros anteriores quando há revisão disponível.' : `Só questões que você ainda não respondeu${acervoDoPlano(plano).oficiais !== 'todas' ? `, do ${acervoDoPlano(plano).oficiais}` : ''}${!mao && incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados' : ''}; o que mais cai vem primeiro.`}{calculo.miniHoje ? ` Hoje tem mini-simulado de ${TAMANHO_MINI} questões${feitos.mini ? ' (feito)' : ''}, por isso a meta é a metade.` : ''}</p>
+            <p className="cg-nota">{folgaHoje ? 'Dia de descanso: a meta foi espalhada pelos outros dias. Se quiser estudar, adiante o próximo dia.' : metaFeita ? 'Meta concluída. Se quiser, você pode adiantar questões novas dos próximos dias.' : revisoesHoje.length ? 'A sessão intercala erros recentes de assuntos frequentes entre as questões novas.' : mao ? 'O dia combina questões novas e erros anteriores quando há revisão disponível.' : `Só questões que você ainda não respondeu${acervoDoPlano(plano).oficiais !== 'todas' ? `, do ${acervoDoPlano(plano).oficiais}` : ''}${!mao && incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados' : ''}; o que mais cai vem primeiro.`}{calculo.miniHoje ? ` Hoje tem mini-simulado de ${TAMANHO_MINI} questões${feitos.mini ? ' (feito)' : ''}, por isso a meta é a metade.` : ''}</p>
             <div className="cg-linha">
               {Acao('cg-ir--claro')}
               {acoes?.aoComecarCurto && !metaFeita && !pendente && calculo.faltaHoje + revisoesPendentes > DIA_MINIMO && <button type="button" className="cg-btn" onClick={() => acoes.aoComecarCurto!(DIA_MINIMO)} title="Abre só as 10 primeiras de hoje; mantém a sequência">Pouco tempo? Só {DIA_MINIMO}</button>}
               {calculo.miniHoje && !feitos.mini && hub && botao?.aoClicar !== hub.aoMini && <button type="button" className="cg-btn" onClick={hub.aoMini}>Mini-simulado</button>}
             </div>
+            {!pendente && revisoesExtras.length > 0 && acoes?.aoRevisoesExtras && <div className="cg-linha cg-linha--sep">
+              <p className="cg-nota"><b>Revisão opcional.</b> Refaça erros de assuntos frequentes depois da meta do dia.</p>
+              <button type="button" className="cg-btn" onClick={() => acoes.aoRevisoesExtras?.(revisoesExtras)}><Icone nome="reiniciar" tamanho={15} /> Revisar {plural(revisoesExtras.length, 'questão', 'questões')}</button>
+            </div>}
           </div>
         </div>}
       </section>
@@ -750,10 +756,10 @@ function ComoFunciona({ plano, calculo, minutos, mao }: { plano: PlanoSalvo; cal
     { p: 'Folga e semana difícil?', r: <>Dia fora dos seus dias de estudo não tem meta. Na semana difícil a meta fica no mínimo de {DIA_MINIMO}, e o resto é redistribuído.</> },
   ]
   const perguntas: Array<{ p: string; r: ReactNode }> = mao ? daMao : [
-    { p: 'Quais questões eu faço hoje?', r: <>As do passo 2: <b>só questões que você ainda não respondeu</b>, na quantidade da meta{calculo.metaDiaNormal > 0 ? <> (num dia normal, {calculo.metaDiaNormal}, cerca de {formatarTempo(calculo.metaDiaNormal * minutos)})</> : null}. Cerca de 70% da área em foco, que fica uns 3 dias, e 30% de outra, para misturar; o que mais cai vem primeiro. O botão abre exatamente essas, já na ordem.</> },
+    { p: 'Quais questões eu faço hoje?', r: <>O passo 2 mostra a meta do dia{calculo.metaDiaNormal > 0 ? <> (num dia normal, {calculo.metaDiaNormal}, cerca de {formatarTempo(calculo.metaDiaNormal * minutos)})</> : null}. Das questões novas, cerca de 70% vêm da área em foco e 30% de outra, com prioridade para o que mais cai.</> },
     { p: 'E se eu não terminar o dia?', r: <>Nada se perde. O que faltou volta para a fila e é dividido pelos dias que restam, não só no dia seguinte. A meta nunca passa de <b>{teto}% acima do planejado</b>; se o atraso for maior, o que não cabe sai do fim da fila (o que menos cai) e a previsão avisa. A sessão de ontem não reabre.</> },
     { p: 'E se eu fizer a mais?', r: <>Tudo o que passar da meta sai dos próximos dias, começando pelo seguinte. Com a meta feita, o botão passa a adiantar o próximo dia, e as questões contam para ele.</> },
-    { p: 'Onde entram os erros e as revisões?', r: <><b>Erros do cronograma</b> (passo 3): o que você errou nos últimos 14 dias do plano e ainda não acertou; voltam com as alternativas em ordem nova e saem quando você acerta. <b>Revisões do dia</b>: a revisão espaçada do site inteiro. Nenhuma conta na meta.</> },
+    { p: 'Onde entram os erros e as revisões?', r: <><b>Pequenas revisões</b> trazem erros de assuntos frequentes, com limite de 5 questões. {plano.opcoes?.revisoesNaMeta ? 'Com a opção ligada, elas ocupam até 10% da meta do dia.' : 'Com a opção ligada, aparece uma revisão opcional após cumprir a meta do dia.'} <b>Erros do cronograma</b> reúne o que você errou nos últimos 14 dias do plano e ainda não acertou. <b>Revisões do dia</b> é a fila de revisão espaçada do site. Essas duas filas extras ficam fora da meta.</> },
     { p: 'O que é o mini-simulado?', r: <>A cada duas semanas, {TAMANHO_MINI} questões cronometradas do que você já viu, com os seus erros e dúvidas primeiro. Nesse dia a meta de novas cai pela metade.</> },
     ...(calculo.diasRetaFinal > 7 ? [{ p: 'Como funciona a revisão forte?', r: <>De {curta(calculo.inicioRetaFinal)} a {curta(new Date(calculo.inicioModoProva.getTime() - DIA))}. <b>Acabam as questões novas.</b> Cada dia traz duas áreas, com cerca de {calculo.metaMedia} questões que você já viu: erros, depois chutes e dúvidas, depois o que mais cai e você não vê há mais tempo.</> }] : []),
     { p: 'Como funciona o modo prova?', r: <>De {curta(calculo.inicioModoProva)} até a véspera. Menos volume. Três tarefas por dia: <b>simulado cronometrado</b> no horário e na duração da prova, <b>erros que importam</b> e <b>frases que caem</b>.</> },
@@ -787,7 +793,7 @@ function Ajustes({ plano, calculo, hub, acoes, aoAjustar, ficticio, mao }: { pla
       <h2 className="cg-caixa__titulo" id="cg-ajustes-titulo">Ajustes do plano <small>mudam na hora; o andamento continua</small></h2>
       <ul className="cg-ajustes">
         {!mao && acoes?.aoAcervo && acoes.previaAcervo && !calculo.provaPassou && <AjusteAcervo plano={plano} metaAtual={calculo.metaDiaria} ocupado={ocupado} ficticio={ficticio} aoAplicar={acoes.aoAcervo} prever={acoes.previaAcervo} />}
-        {acoes?.aoRevisoesNaMeta && conteudo && !mao && <Chave ligado={plano.opcoes?.revisoesNaMeta?.novo === true} aoMudar={acoes.aoRevisoesNaMeta} desabilitado={ocupado} titulo="Refazer erros na meta do dia" texto="Até 10% das questões do dia, com limite de 5. Vale a partir do próximo dia de estudo." />}
+        {acoes?.aoPermitirRevisoes && conteudo && !mao && <Chave ligado={plano.opcoes?.revisoesNaMeta?.novo ?? revisoesExtrasAtivas(plano)} aoMudar={acoes.aoPermitirRevisoes} desabilitado={ocupado} titulo="Permitir pequenas revisões" texto={plano.opcoes?.revisoesNaMeta ? 'Intercala erros de assuntos frequentes em até 10% da meta, com limite de 5 questões. Alterações valem a partir do próximo dia de estudo.' : 'Oferece uma revisão opcional de até 5 questões depois da meta do dia.'} />}
         {hub && conteudo && <Chave ligado={dificil} aoMudar={hub.aoSemanaDificil} desabilitado={ocupado} titulo="Semana difícil" texto={`só ${DIA_MINIMO} por dia nesta semana; o resto é redistribuído`} />}
         {acoes && conteudo && !mao && <li className="cg-ajuste"><span><strong>Dia dos erros</strong><small>o roteiro destaca os erros nesse dia</small></span>
           <select value={plano.opcoes?.diaErros ?? ''} disabled={ocupado} aria-label="Dia dos erros" onChange={(e) => acoes.aoDiaErros(e.target.value === '' ? null : Number(e.target.value))}><option value="">nenhum</option>{[1, 2, 3, 4, 5, 6, 0].map((d) => <option key={d} value={d}>{SEMANA[d]}</option>)}</select></li>}
