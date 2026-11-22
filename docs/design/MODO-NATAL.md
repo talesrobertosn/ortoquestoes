@@ -153,15 +153,16 @@ número ou botão e sem criar rolagem lateral:
       Prova, que é o cenário ativo, com coroa no sino e neve nos telhados.
 - Tales aprovou a etapa final em 22/11/2026. A galeria reúne capturas em 390 e 1440 px nos dois temas.
 
-## Próxima rodada de decoração
+## Decoração ao longo das páginas
 
-Ideia do Tales, 22/11/2026. Retomar depois da revisão dos e-mails.
+A rodada de 22/11/2026 distribui as peças entre as seções, com os controles e a leitura livres.
 
-- **Página inicial**: distribuir a decoração pelo meio e pelo fim da página, com peças apoiadas
-  nas caixas e pequenos encontros durante a rolagem. Hoje a guirlanda e o fio chamam mais atenção no topo.
-- **Treinar**: enfeitar a página de escolha de questões com luz, guirlanda ou detalhes nas bordas
-  dos filtros. A sessão de responder, o simulado em andamento e a correção seguem reservados ao estudo.
-- **Resumos e Cronograma**: reforçar a presença do Natal nas molduras e entre as seções. A Biblioteca
-  já tem decoração e o Cronograma tem um detalhe pequeno no cenário. Manter os textos livres.
-- Os enfeites podem sair das pinturas e fazer parte da página. Planejar intervenções pontuais com
-  interação, controle de movimento e acabamento no celular e nos dois temas.
+- **Página inicial**: festão na passagem para os atalhos de estudo ou para a apresentação do site e bancada
+  com presentes perto do convite do Instagram.
+- **Treinar**: festão em Começar agora, lanternas junto da abertura dos filtros e presentes no fim da montagem.
+- **Resumos**: livros à luz de velas entre a Mesa e a busca e festão ao pé da estante.
+- **Cronograma**: sinos junto ao painel de hoje e na tela de montar plano, além do festão antes de Como funciona.
+
+As cinco peças são pintadas em `scripts/natal/passagens.py`. A intensidade da luz sobe quando a peça entra
+na tela. Com menos animação, a luz fica estável. A sessão de questões, o simulado em andamento e a correção
+ficam fora dessas mudanças.

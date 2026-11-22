@@ -1,0 +1,76 @@
+/* Molduras de passagem, pintadas em scripts/natal/passagens.py. O espaço pertence
+   à peça, inclusive em tela estreita, para que as luzes nunca passem pelos controles. */
+.natal-passagem {
+  --passagem-largura: 22rem;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  grid-column: 1 / -1;
+  inline-size: 100%;
+  min-inline-size: 0;
+  overflow: hidden;
+  isolation: isolate;
+  pointer-events: none;
+}
+
+.natal-passagem__peca {
+  position: relative;
+  inline-size: min(100%, var(--passagem-largura));
+}
+
+.natal-passagem__peca img {
+  display: block;
+  inline-size: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.natal-passagem__luz {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: screen;
+  opacity: .28;
+}
+
+.natal-passagem__luz img { image-rendering: auto; }
+
+.natal-passagem[data-em-vista="true"] .natal-passagem__luz {
+  animation: natal-passagem-acender 5s ease-in-out both;
+}
+
+@keyframes natal-passagem-acender {
+  0% { opacity: .28; }
+  20%, 68% { opacity: 1; }
+  100% { opacity: .84; }
+}
+
+.natal-passagem--festao {
+  --passagem-largura: 54rem;
+  align-items: center;
+}
+
+.natal-passagem--festao .natal-passagem__peca {
+  inline-size: min(var(--passagem-largura), max(100%, 28rem));
+}
+
+.natal-passagem--compacta:not(.natal-passagem--festao) { --passagem-largura: 18.5rem; }
+.natal-passagem--compacta.natal-passagem--festao { --passagem-largura: 44rem; }
+
+.tn-rapido > .natal-passagem { margin-block: calc(-1 * var(--e-4)); }
+.tn-montagem > .natal-passagem { margin-block: calc(-1 * var(--e-2)) var(--e-2); }
+.jn-fim > .natal-passagem { margin-block-end: calc(-1 * var(--e-2)); }
+.bb > .natal-passagem { margin-block: var(--e-1); }
+.cg .natal-passagem--sinos { --passagem-largura: 25rem; }
+
+@media (max-width: 48rem) {
+  .natal-passagem:not(.natal-passagem--festao) { --passagem-largura: 18rem; }
+  .natal-passagem.natal-passagem--compacta:not(.natal-passagem--festao) { --passagem-largura: 15.5rem; }
+  .natal-passagem--festao .natal-passagem__peca { justify-self: center; }
+  .cg .natal-passagem--sinos { --passagem-largura: 20rem; }
+  .tn-rapido > .natal-passagem { margin-block: calc(-1 * var(--e-2)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .natal-passagem[data-em-vista] .natal-passagem__luz { animation: none; opacity: .84; }
+}

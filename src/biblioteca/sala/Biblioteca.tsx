@@ -1,3 +1,4 @@
+import { PassagemNatal } from '../../natal/PassagemNatal'
 import { useEffect, useMemo, useState } from 'react'
 import { Carregando, Estado } from '../../componentes/Estados'
 import { Icone } from '../../componentes/Icone'
@@ -192,6 +193,7 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
       {!ativos && <Mesa continuar={continuar} capitulos={capitulos} destaques={destaques} premium={premium} />}
       {s.efeitos.has('cafe') && <Cafe curtos={s.curtos} />}
 
+      <PassagemNatal forma="biblioteca" />
       <BarraFiltros modo={modo} aoModo={trocarModo} filtros={filtros} mudar={mudar} limpar={limpar} livros={livrosFiltro} areas={areasFiltro} comBusca={!buscaTopoVisivel}
         contagem={contagem} total={capitulos.length} achados={filtrados.length} agrupar={agrupar} aoAgrupar={definirAgrupar} relevancia={relevancia} />
 
@@ -217,6 +219,7 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
       </div>
       {modo === 'lista' && salaRaros}
 
+      <PassagemNatal forma="festao" compacta />
       <p className="bb-nota">Os resumos são texto autoral do OrtoQuestões a partir dos capítulos citados, com revisão técnica; as questões e os anos vêm do acervo do site. Figuras originais só aparecem quando há licença de reprodução.</p>
       {fichaAtual && <Inspecao key={fichaAtual.id} c={fichaAtual} selo={ficha?.selo} origem={ficha?.origem} periodo={s.periodo} papel={preferencias.tema} leitura={leituras[fichaAtual.id]} fechado={fichaAtual.acesso !== 'gratis' && !premium} indice={indice}
         destaques={marcas.filter((m) => m.capitulo === fichaAtual.id && !m.marcador).length} aoFechar={() => { definirRealce(fichaAtual.id); definirFicha(null) }} />}

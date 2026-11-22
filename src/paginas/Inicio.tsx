@@ -1,3 +1,4 @@
+import { PassagemNatal } from '../natal/PassagemNatal'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { type CSSProperties, type ReactNode, Suspense, lazy, useMemo, useRef, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
@@ -352,6 +353,7 @@ export function Inicio() {
           <div className="natal-faixa-enfeite"><FaixaPlanos /></div>
         </section>
 
+        <PassagemNatal forma="festao" />
         <section className="jn-nivel jn-explorar" aria-labelledby="jn-vitrine-explorar">
           <header className="jn-cabeca"><h2 id="jn-vitrine-explorar">Por dentro do site</h2></header>
           <div className="jn-galeria">
@@ -385,6 +387,7 @@ export function Inicio() {
           </section>
         </>}
 
+        <PassagemNatal forma="presentes" />
         <ConviteInstagram />
 
         <section className="jn-sobre" aria-labelledby="inicio-apresentacao">
@@ -605,6 +608,7 @@ export function Inicio() {
         </section>
 
         {/* ── Nível 4: explorar ── */}
+        <PassagemNatal forma="festao" />
         <section className="jn-nivel jn-explorar" aria-labelledby="jn-explorar-titulo">
           <header className="jn-cabeca">
             <h2 id="jn-explorar-titulo">Explorar</h2>
@@ -665,6 +669,7 @@ export function Inicio() {
           {/* O fim da página: a assinatura numa faixa curta e, embaixo, indicação e Instagram lado a lado. */}
           <div className="jn-fim">
             <div className="jn-quadro jn-quadro--faixa"><CartaoPlanos /></div>
+            <PassagemNatal forma="presentes" />
             <ConviteInstagram />
           </div>
         </section>
