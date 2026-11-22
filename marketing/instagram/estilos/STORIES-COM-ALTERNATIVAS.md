@@ -57,6 +57,49 @@ A temática **se adapta à questão e ao pedido**, sem repetir a mesma duas veze
 Quando o Tales não pedir uma temática, use as **cores do site** com acabamento de vidro suave e degradê de cores
 (nunca fundo branco chapado com manchas: ele achou feio) ou a tela do celular. Pixel art HD-2D só se ele pedir.
 
+## Referência aprovada: a carta de domingo com a vitrine do site (22/11/2026)
+
+O Tales aprovou ("esse ficou bem bom; lembre do caminho de como você fez, para quando eu pedir algo semelhante") o post
+`posts/2026-11-22-carta-bayne-klug/` (questão `mao-0406`, TEOT 2025). É a régua para pedidos parecidos: questão com
+enquete, resposta com o livro e um **story extra de propaganda com prints reais do site**.
+
+**O visual que ele pediu e aprovou** (depois de achar a primeira versão quadrada e difícil de ler):
+- cantos arredondados em tudo (carta 40 px, fotos e painéis 26 a 30 px, alternativas 28 px, selo arredondado);
+- letra fácil: títulos e alternativas em Plus Jakarta, texto em Inter; a letra de mão (Caveat) só no cumprimento e
+  na assinatura; nada de texto corrido em fonte decorativa;
+- carta organizada em blocos: etiqueta, cumprimento, texto curto, foto com fita, enunciado com etiqueta da prova,
+  alternativas grandes em 2 colunas; fundo em degradê verde do site com brilho dourado.
+
+**Os 3 stories:**
+1. A questão (manhã): a carta com a imagem da prova, o enunciado e as alternativas; área livre embaixo para a enquete.
+2. A resposta (13h): a certa em dourado, a figura do livro com legenda em cada painel, o trecho "Segundo o Green"
+   com a página, e uma régua visual que ensina a regra (no caso, "conte os ossos" de 1 a 4).
+3. A vitrine (19h30, "P.S."): "Cada comentário é uma miniaula", montagem com prints reais e grandes do site,
+   etiquetas das outras funções (Caderno de erros, Flashcards, Simulados) e o botão "Comece a treinar grátis",
+   com "até 20 questões comentadas por dia" (`LIMITE_GRATIS_ATUAL` em `src/config.ts`) e "Telas ilustrativas".
+
+**Os prints da vitrine (o que o Tales pediu para acertar):**
+- **Resumo:** print do leitor **no computador**, largura toda do story, mostrando o título do capítulo e o primeiro
+  parágrafo legíveis; de preferência o capítulo do mesmo tema da questão. Etiqueta "Resumos dos capítulos dos
+  principais livros".
+- **Atlas 3D:** o modelo **centralizado**, sem os painéis e menus em volta, com uma camada colorida ligada (artérias).
+- **Cronograma:** o **calendário do mês** (botão "Abrir o mês inteiro" e o mês seguinte, que vem cheio de dias com as
+  áreas coloridas), não o painel do celular.
+- **Comentário:** o comentário real num iPhone (`posts/2026-11-13-errata-metastases/img/cel-certa.png`).
+- Etiquetas nos cantos que não cobrem texto importante.
+
+**Como capturar (passo a passo que funcionou):**
+1. `npm ci --ignore-scripts` (se não houver `node_modules`), `npx vite build` e `npx vite preview --port 4175` em segundo plano.
+2. Com `PASTA=<saída>/ TEMA=claro LARGURA=1440 ALTURA=900 ESCALA=2`, rodar o
+   `posts/2026-11-22-carta-bayne-klug/capturar-telas.mjs` (conta de exemplo com cronograma montado, a partir de
+   `marketing/instagram/telas.mjs`):
+   `node capturar-telas.mjs calendario`, `CAMADA=Artérias node capturar-telas.mjs atlas` e
+   `CAP=<id do capítulo em public/biblioteca/capitulos> node capturar-telas.mjs resumo`.
+   No Atlas, fechar o tutorial com Esc (clicar no X derrubou a página).
+3. Recortar com PIL na proporção exata de cada moldura do story (resumo do título até o fim do primeiro parágrafo;
+   Atlas só o modelo; calendário a partir do título do mês) e conferir cada recorte antes de montar.
+4. Gerar, conferir no tamanho real e nomear os PNGs com o dia (`dom22-1-questao.png` etc.).
+
 ## Regras que continuam
 
 - Questão real do acervo (`node marketing/kit/questao.mjs buscar <tema> --imagem`), inédita em `publicadas.md`, com
