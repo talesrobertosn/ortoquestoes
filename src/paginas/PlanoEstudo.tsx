@@ -1,3 +1,4 @@
+import { PassagemNatal } from '../natal/PassagemNatal'
 import { DATA_TEOT } from '../dados/calendarioProvas'
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
@@ -820,6 +821,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, aoZ
           <p>{nome ? `${nome}, quatro` : 'Quatro'} perguntas e ele diz <strong>o que estudar em cada dia</strong>, começando pelo que mais cai, misturando as áreas e terminando com a <strong>reta final</strong>.{previa ? ' Veja a prévia do seu no fim.' : ''}</p>
         </div>
       </section>
+      <PassagemNatal forma="sinos" compacta inicio />
       <div className="pe-montar">
       <section className="cartao cartao__corpo pe-form pe-form--passos">
         <ol className="pe-passos" aria-label="Passos">

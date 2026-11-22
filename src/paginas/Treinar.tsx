@@ -1,3 +1,4 @@
+import { PassagemNatal } from '../natal/PassagemNatal'
 import { useDeferredValue, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { FLASHCARDS_NO_MENU, fraseGratis, rotuloProva, urlCss } from '../config'
 import { usarIndice } from '../dados/usarIndice'
@@ -572,6 +573,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
       {/* Começar agora: uma ação principal e quatro atalhos, todos de 10 questões, sem passar pelos filtros. */}
       <section className="tn-rapido" aria-labelledby="tn-rapido-titulo" style={{ '--tn-paisagem': urlCss(`pixel/inicio/${paisagem}`) } as CSSProperties}>
+        <PassagemNatal forma="festao" compacta inicio />
         <div className="tn-rapido__principal">
           <h2 className="tn-rotulo" id="tn-rapido-titulo">Começar agora</h2>
           <button type="button" className="botao cristal tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">
@@ -625,6 +627,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <h2 id="tn-montagem-titulo">Montar do seu jeito</h2>
             <p>Quatro passos, de cima para baixo. A contagem ao lado de cada opção já considera o que você escolheu antes.</p>
           </header>
+          <PassagemNatal forma="lanternas" compacta />
 
           {porArea && (
             <section className="tn-bloco" id="etapa-1" aria-labelledby="tn-prova-titulo">
@@ -847,6 +850,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               </p>
             </Estado>
           )}
+          <PassagemNatal forma="presentes" compacta />
         </div>
 
         <aside className="tn-resumo" id="tn-resumo" aria-labelledby="tn-resumo-titulo">

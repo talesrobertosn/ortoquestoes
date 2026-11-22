@@ -1,3 +1,4 @@
+import { PassagemNatal } from '../natal/PassagemNatal'
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { avisoVistoNaConta, marcarAvisoNaConta } from '../conta/avisosVistos'
@@ -193,6 +194,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
       {!calculo.provaPassou && <Estrada plano={plano} calculo={calculo} mao={!!mao} />}
     </section>
 
+    <PassagemNatal forma="sinos" inicio />
     {primeiraVisita && <p className="cg-boasvindas"><span><strong>Primeira vez aqui?</strong> Em cima, onde você está na estrada até a prova. Em <b>Hoje</b>, o que fazer, na ordem. Depois, o mês, os gráficos e o seu desempenho por área. As regras estão em <a className="cg-link" href="#como-funciona">Como funciona</a>.</span><button type="button" className="cg-btn" onClick={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }}>Entendi</button></p>}
 
     <div className="cg-grade">
@@ -321,6 +323,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
       </div>
 
       {/* ── 7. Como funciona e os ajustes ── */}
+      <PassagemNatal forma="festao" compacta />
       <ComoFunciona plano={plano} calculo={calculo} minutos={minutos} mao={!!mao} />
       <Ajustes plano={plano} calculo={calculo} hub={hub} acoes={acoes} aoAjustar={aoAjustar} ficticio={!!ficticio} mao={mao} />
     </div>
