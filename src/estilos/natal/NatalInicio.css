@@ -149,7 +149,8 @@
   16%, 80% { transform: translate(0, 0); }
 }
 @media (max-width: 60rem) {
-  .natal-corujinha-ancora { top: -60px; left: 4px; }
+  .natal-corujinha-ancora { top: -43px; left: -8px; }
+  .natal-corujinha { left: -18px; width: 36px; height: 26px; }
   .natal-arvore__toque { top: -22px; left: 24px; width: 98px; height: 98px; }
   .natal-caneca { width: 31px; height: 28px; }
 }
