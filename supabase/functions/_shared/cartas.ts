@@ -56,8 +56,9 @@ export type TipoCarta =
 
 /** Nomes informados no cronograma; nunca tratar o rótulo de seleção como nome da prova. */
 export function nomeProvaInformado(valor?: string | null): string {
-  const nome = (valor ?? '').replace(/[\r\n\t]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80)
-  return /^(outra(?: prova)?|outro|n[aã]o informad[oa]|prova)$/i.test(nome) || /[@<>]/.test(nome) || !/\p{L}/u.test(nome) ? '' : nome
+  const nome = (valor ?? '').replace(/\b(?:SBCM|SIMÃO)\b/gi, 'cirurgia da mão')
+    .replace(/[\r\n\t]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80)
+  return /^(outra(?: prova)?|outro|n[aã]o informad[oa]|prova)$/i.test(nome) || /[@<>]|https?:|www\.|ortoquestoes\.com\.br/i.test(nome) || !/\p{L}/u.test(nome) ? '' : nome
 }
 export function provaComArtigo(valor?: string | null): string {
   const nome = nomeProvaInformado(valor)
@@ -334,8 +335,9 @@ export function faixaDe(acerto: number): Faixa {
 
 /** Acerto citável (inteiro, 0 a 100) ou null se a amostra for pequena. */
 export function acertoCitavel(p: PerfilCarta): number | null {
-  const a = Number(p.acertos ?? 0), e = Number(p.erros ?? 0)
-  if (!(p.respondidas >= MINIMO_PARA_ACERTO) || a + e <= 0 || !Number.isFinite(a) || !Number.isFinite(e)) return null
+  const a = p.acertos, e = p.erros
+  if (a == null || e == null || !Number.isInteger(a) || !Number.isInteger(e) || a < 0 || e < 0) return null
+  if (!(p.respondidas >= MINIMO_PARA_ACERTO) || a + e < MINIMO_PARA_ACERTO) return null
   return Math.round((100 * a) / (a + e))
 }
 
@@ -444,7 +446,7 @@ export function escolherTipo(p: PerfilCarta, anteriores: readonly EnvioAnterior[
 export interface Fatos {
   melhorArea?: { slug: string; pct: number; total: number }
   maisEstudada?: { slug: string; total: number }
-  /** Só com 40 questões na área; nunca leva número. */
+  /** Amostra suficiente para sugerir revisão. Nunca leva número. */
   areaFraca?: { slug: string; total: number }
   horario?: 'noite' | 'madrugada' | 'manha' | 'almoco' | 'tarde'
   prova?: 'teot' | 'taro' | 'mao' | 'r4' | 'atualizacao'
@@ -489,16 +491,25 @@ export function aniversarioDe(nascimento: string | null | undefined, hoje: Date)
   return null
 }
 
-export function fatosDe(p: PerfilCarta, hoje = new Date()): Fatos {
+export function fatosDe(p: PerfilCarta, hoje = new Date(), paraProva = false): Fatos {
   const f: Fatos = {}
   const geral = acertoCitavel(p)
   const areas = (p.areas ?? []).filter((a) => AREAS[a.slug] && a.total > 0 && a.certas >= 0 && a.certas <= a.total)
   const comAcerto = areas.filter((a) => a.total >= 15).map((a) => ({ ...a, pct: Math.round((100 * a.certas) / a.total) }))
-  const melhor = [...comAcerto].sort((a, b) => b.pct - a.pct || b.total - a.total)[0]
-  if (melhor && melhor.pct >= 70) f.melhorArea = { slug: melhor.slug, pct: melhor.pct, total: melhor.total }
-  // Área a melhorar: só com 40 questões na área e distância clara do geral; nunca leva número.
-  const fraca = [...comAcerto].filter((a) => a.total >= 40).sort((a, b) => a.pct - b.pct || b.total - a.total)[0]
-  if (fraca && geral !== null && fraca.pct < 60 && fraca.pct <= geral - 10 && fraca.slug !== f.melhorArea?.slug) f.areaFraca = { slug: fraca.slug, total: fraca.total }
+    .sort((a, b) => b.pct - a.pct || b.total - a.total)
+  const [melhor, segunda] = comAcerto
+  if (melhor && (melhor.pct >= 70 || (paraProva && segunda && melhor.pct - segunda.pct >= 10))) {
+    f.melhorArea = { slug: melhor.slug, pct: melhor.pct, total: melhor.total }
+  }
+  // Na reta final, uma distância consistente entre as áreas também orienta a revisão.
+  const fraca = comAcerto.filter((a) => a.total >= (paraProva ? 15 : 40) && a.slug !== f.melhorArea?.slug)
+    .sort((a, b) => a.pct - b.pct || b.total - a.total)[0]
+  if (fraca && geral !== null) {
+    const abaixoDoGeral = fraca.pct < 60 && fraca.pct <= geral - 10 && fraca.total >= 40
+    const espacoParaMelhorar = paraProva && melhor && fraca.slug !== melhor.slug && fraca.pct < 85
+      && fraca.pct <= Math.max(geral, melhor.pct) - 10
+    if (abaixoDoGeral || espacoParaMelhorar) f.areaFraca = { slug: fraca.slug, total: fraca.total }
+  }
   const total = areas.reduce((s, a) => s + a.total, 0)
   const estudada = [...areas].sort((a, b) => b.total - a.total)[0]
   if (estudada && estudada.total >= 25 && total > 0 && estudada.total / total >= 0.35) f.maisEstudada = { slug: estudada.slug, total: estudada.total }
@@ -573,10 +584,12 @@ export interface Ctx {
   dez: boolean
   /** "260 questões" ou "os primeiros passos". */
   q: string
-  /** Acerto citável ou null (uso interno: faixa). As versões usam `pctBom`. */
+  /** Acerto citável ou null, para a faixa de desempenho. */
   pct: number | null
   /** O acerto só quando é motivo de orgulho (50% ou mais, 30 questões); null abaixo disso. Pode acompanhar sugestões de temas a revisar. */
   readonly pctBom: number | null
+  /** Na reta final ou véspera, mostra a taxa apurada mesmo abaixo de 50%. */
+  readonly pctProva: number | null
   fatos: Fatos
   hoje: Date
   diasTeot: number
@@ -626,8 +639,19 @@ export interface Ctx {
  * elogio honesto e específico; número só quando é motivo de orgulho (`mostrar` é falso quando
  * o acerto geral está abaixo de 50% ou não dá para citar); o tema a melhorar nunca leva número.
  */
-function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] {
+function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean, paraProva: boolean): string[] {
   const A = (slug: string) => AREAS[slug]
+  if (paraProva && chave === 'melhorArea' && f.melhorArea) {
+    const a = A(f.melhorArea.slug)
+    return [`Nas áreas que já dá para comparar, seu melhor resultado foi em ${a.em}. Parabéns pelo estudo nesse tema.`]
+  }
+  if (paraProva && chave === 'areaFraca' && f.areaFraca) {
+    const a = A(f.areaFraca.slug)
+    return [`Para a próxima revisão, eu daria um pouco mais de atenção ao tema de ${a.de}. Refaça algumas questões que errou e veja qual detalhe mudava a resposta.`]
+  }
+  if (paraProva && chave === 'ranking') {
+    return [`Sua posição mais recente no ranking geral foi a ${f.ranking}ª. É muito bom ver sua dedicação ao estudo.`]
+  }
   switch (chave) {
     case 'melhorArea': { const m=f.melhorArea!, a=A(m.slug); return mostrar
       ? [`Você está indo muito bem em ${a.em}. Parabéns! Continue revisando para manter esse resultado.`, `Sua melhor área é ${a.de}. Parabéns pelo estudo nesse tema!`, `Vi que ${a.de} é seu ponto forte nas questões. Continue praticando para consolidar esse resultado.`]
@@ -731,9 +755,9 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
   const hoje = op.hoje ?? new Date()
   const site = (op.site ?? SITE_PADRAO).replace(/\/*$/, '/')
   const pct = acertoCitavel(p)
-  // Abaixo de 50% (ou sem amostra), nenhum número de acerto aparece: só esforço e constância.
+  const paraProva = tipo === 'reta_final' || tipo === 'vespera_prova'
   const pctBomValor = pct !== null && pct >= 50 ? pct : null
-  const fatos = fatosDe(p, hoje)
+  const fatos = fatosDe(p, hoje, paraProva)
   const usados = new Set<string>()
   const r = Math.max(0, Math.floor(Number(p.respondidas) || 0))
   const um = <T,>(...opcoes: Array<T | null | undefined | false | ''>): T => {
@@ -749,7 +773,7 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
     if ((chave === 'maisEstudada' && usados.has('melhorArea') || chave === 'melhorArea' && usados.has('maisEstudada')) && fatos.melhorArea?.slug === fatos.maisEstudada?.slug) return null
     // Acerto positivo e tema a revisar podem coexistir (Tales, 17/11/2026).
     const comNumero = mostrarAcerto()
-    const frases = frasesDoFato(chave, fatos, comNumero)
+    const frases = frasesDoFato(chave, fatos, comNumero, paraProva)
     if (!frases.length) return null
     usados.add(chave)
     return frases[Math.floor(rnd() * frases.length)]
@@ -760,6 +784,7 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
   const ctx: Ctx = {
     p, tipo, faixa, nome: primeiroNome(p.nome), r, dez: r >= MINIMO_PARA_NUMERO, q: questoes(r), pct,
     get pctBom() { if (!mostrarAcerto()) return null; usados.add('acerto'); return pctBomValor },
+    get pctProva() { if (!paraProva || pct === null) return null; usados.add('acerto'); return pct },
     fatos, hoje, diasTeot: diasAteTeot(hoje), diasProva, nomeProva, daProva: nomeProva.replace(/^o /, 'do ').replace(/^a /, 'da '), marco, pix: op.pix, relatorio: op.relatorio, pagamento: op.pagamento, encerramento: op.encerramento, campanha: op.campanha ?? {}, usados,
     um, chance: (x) => rnd() < x,
     link: (rota) => {

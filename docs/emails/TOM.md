@@ -55,16 +55,23 @@ seu nome; não inventar profissão, experiência ou vínculo pessoal.
   pedir uma captura sem dados sensíveis de pagamento.
 - Cancelamento/reembolso: confirmar o pedido conforme o estado real, informar o período
   quando conhecido e apontar onde consultar os detalhes. Sem tentar constranger a permanência.
-- Prova: citar o nome informado no cronograma; “Outra prova” vira “a sua prova”. Depois,
-  perguntar pelo conteúdo e formato, sem presumir resultado nem determinar descanso.
+- Prova: citar o nome informado no cronograma e, na reta final, os dias que faltam. “Outra prova”
+  vira “a sua prova”. Reconhecer as questões feitas, dar uma sugestão proporcional ao desempenho
+  e desejar boa prova e sucesso. Citar melhor área, tema a revisar e posição recente no ranking
+  quando houver dados. Na véspera, a sugestão é breve e cabe no tempo restante. Depois da prova,
+  perguntar pelo conteúdo e formato, sem presumir resultado.
+- Primeiro dia: oferecer um primeiro treino com comentários e explicar como o Cronograma poupa
+  o tempo de planejar. Quem tem assinatura pode montar o próprio plano. Quem ainda não tem pode
+  conhecer a demonstração.
 - Aniversário: felicitação, sem tarefa de estudo ou venda.
 - Pagamento aprovado: confirmação e detalhes do acesso. Relato resolvido: resultado da
   revisão e alternativa quando conhecida, sem bajulação.
 
 ## Dados e frequência
 
-Não citar número de questões abaixo de dez. Acerto só com pelo menos trinta questões e
-50% ou mais. Abaixo disso, incentivo sem citar taxa nem sugerir meta percentual.
+Não citar número de questões abaixo de dez. Acerto só com pelo menos trinta questões e dados suficientes. Na reta final e na véspera, citar a
+taxa mesmo abaixo de 50%, a pedido do Tales em 22/11/2026. Interpretar o número com cuidado e
+indicar um próximo passo. Nas demais cartas, abaixo de 50%, incentivar sem citar taxa nem meta percentual.
 Tema a revisar sem porcentagem ruim; pode acompanhar a taxa positiva e o elogio à melhor área
 (pedido expresso de 17/11/2026).
 No máximo três observações de estudo além da taxa geral, todas conferíveis no histórico. Não inventar prova,

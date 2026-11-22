@@ -152,3 +152,16 @@ número ou botão e sem criar rolagem lateral:
       Desempenho, Conquistas, Indique e ganhe, Planos, Entrar e Sobre. O Cronograma recebe a pintura na Estrada até a
       Prova, que é o cenário ativo, com coroa no sino e neve nos telhados.
 - Tales aprovou a etapa final em 22/11/2026. A galeria reúne capturas em 390 e 1440 px nos dois temas.
+
+## Próxima rodada de decoração
+
+Ideia do Tales, 22/11/2026. Retomar depois da revisão dos e-mails.
+
+- **Página inicial**: distribuir a decoração pelo meio e pelo fim da página, com peças apoiadas
+  nas caixas e pequenos encontros durante a rolagem. Hoje a guirlanda e o fio chamam mais atenção no topo.
+- **Treinar**: enfeitar a página de escolha de questões com luz, guirlanda ou detalhes nas bordas
+  dos filtros. A sessão de responder, o simulado em andamento e a correção seguem reservados ao estudo.
+- **Resumos e Cronograma**: reforçar a presença do Natal nas molduras e entre as seções. A Biblioteca
+  já tem decoração e o Cronograma tem um detalhe pequeno no cenário. Manter os textos livres.
+- Os enfeites podem sair das pinturas e fazer parte da página. Planejar intervenções pontuais com
+  interação, controle de movimento e acabamento no celular e nos dois temas.
