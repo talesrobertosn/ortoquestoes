@@ -71,8 +71,52 @@ export const PLANO_2026_11: VersaoMetas = {
     m('2027-10', 84, 51, 351, 12648, 15037),
   ],
 }
+/**
+ * O plano oficial desde 22/11/2026 (Tales: "calcule melhor as metas; dia 10 de janeiro é a prova do TEOT; dia 01 de
+ * março entram os novos R1"): o mesmo modelo com o ano da residência (`PARAMETROS_PLANO` em projecao.ts). A base
+ * sobe até dezembro, cai em janeiro e fevereiro quando os R3 saem depois da prova, volta a subir de março em diante
+ * e cai de novo em janeiro de 2028. Vai até janeiro de 2028 para mostrar as duas provas.
+ * Novembro de 2026 continua com a meta do plano de 11/11: o mês em andamento não troca de alvo.
+ * Esta versão nunca muda: ajustes vão para a camada "vigente", só em meses futuros.
+ */
+export const PLANO_2026_11_22: VersaoMetas = {
+  id: 'plano-2026-11-22',
+  nome: 'Plano com o ciclo do TEOT · 22/11/2026',
+  registradaEm: '2026-11-22',
+  meses: [
+    PLANO_2026_11.meses[0],
+    m('2026-12', 88, 34, 97, 3374, 3609),
+    m('2027-01', 75, 15, 73, 2378, 2260),
+    m('2027-02', 78, 17, 74, 2392, 2717),
+    m('2027-03', 139, 37, 100, 3366, 5100),
+    m('2027-04', 127, 40, 124, 4243, 6203),
+    m('2027-05', 123, 40, 144, 4952, 6592),
+    m('2027-06', 112, 39, 160, 5505, 6596),
+    m('2027-07', 108, 42, 177, 6079, 7052),
+    m('2027-08', 110, 46, 196, 6723, 7731),
+    m('2027-09', 105, 48, 213, 7326, 8610),
+    m('2027-10', 101, 51, 223, 7784, 10751),
+    m('2027-11', 97, 55, 240, 8374, 11130),
+    m('2027-12', 80, 48, 249, 8736, 7374),
+    m('2028-01', 68, 21, 196, 6588, 4716),
+  ],
+}
+
+/**
+ * Os marcos do ano da residência que mexem nas metas (Tales, 22/11/2026). Aparecem no plano e no simulador.
+ */
+export const MARCOS_RESIDENCIA: Array<{ mes: string; titulo: string; texto: string }> = [
+  { mes: '2026-12', titulo: 'Reta final do TEOT', texto: 'O último mês dos R3 antes da prova: é o pico de assinaturas novas de mensal.' },
+  { mes: '2027-01', titulo: 'TEOT 2027 (10/01)', texto: 'Depois da prova, a maior parte dos R3 não renova. A base cai sem que seja problema do site.' },
+  { mes: '2027-02', titulo: 'O vale do ano', texto: 'Pós-prova e troca de ano. Hora de vender o anual para os R2, que serão os R3 do TEOT 2028.' },
+  { mes: '2027-03', titulo: 'Entram os R1 (01/03)', texto: 'Turma nova e os R2 viram R3. No começo nem todo R1 assina: o foco é o cadastro.' },
+  { mes: '2027-04', titulo: 'R1 acomodados', texto: 'Mês de campanha para os R1 e para os R3 que começam a estudar para o TEOT 2028.' },
+  { mes: '2027-10', titulo: 'Subida para o TEOT 2028', texto: 'Os R3 apertam o estudo; renovam também os anuais comprados em outubro e novembro de 2026.' },
+  { mes: '2028-01', titulo: 'TEOT 2028', texto: 'Nova saída dos R3, agora de uma base maior.' },
+]
+
 /** A versão que vale nas telas (faixas de metas, página Metas). */
-export const META_OFICIAL = PLANO_2026_11
+export const META_OFICIAL = PLANO_2026_11_22
 
 /** Linha da tabela metas_comerciais (camada "vigente", editável pelo painel). */
 export interface LinhaMetaBanco { versao: string; mes: string; cadastros: number; novos_pagantes: number; ativos_fim: number; receita_equivalente: number; faturamento: number }

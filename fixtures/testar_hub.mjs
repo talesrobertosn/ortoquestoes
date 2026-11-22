@@ -12,24 +12,50 @@ try {
   const m = await import(pathToFileURL(arquivo))
   const sp = iso => new Date(`${iso}-03:00`)
 
-  // O plano oficial é exatamente o modelo rodado com os parâmetros congelados (arredondado).
-  const r = m.projetarCrescimento(m.PARAMETROS_PLANO)
+  // O plano de 11/11 é exatamente o modelo rodado com os parâmetros congelados daquele dia (sem o ciclo do TEOT).
+  const r = m.projetarCrescimento(m.PARAMETROS_PLANO_11_11)
   assert.equal(r.length, 12)
   r.forEach((x, i) => {
     const p = m.PLANO_2026_11.meses[i]
     assert.equal(p.mes, x.mes)
     assert.deepEqual([p.cadastros, p.novosPagantes, p.ativosFim, p.receitaEquivalente, p.faturamento], [x.cadastros, x.novosPagantes, x.ativosFim, x.receitaEquivalente, x.faturamento].map(Math.round), `plano de ${p.mes}`)
   })
-  assert.equal(m.META_OFICIAL.id, 'plano-2026-11-11')
   assert.equal(m.META_MODERADA.id, 'moderado-2026-11', 'a versão antiga continua guardada')
   // Público finito: os cadastros caem mês a mês, menos em março (turma nova de R1).
   for (let i = 1; i < r.length; i++) if (!r[i].mes.endsWith('-03')) assert.ok(r[i].cadastros < r[i - 1].cadastros, `cadastros caem em ${r[i].mes}`)
   assert.ok(r.find(x => x.mes === '2027-03').cadastros > r.find(x => x.mes === '2027-02').cadastros, 'março sobe')
+  // Sem os campos do TEOT, nada de R3 nem de saída depois da prova.
+  assert.ok(r.every(x => x.mensaisR3 === 0 && x.saidaTeot === 0))
   // Mais marketing, mais cadastros no começo; mais Pix renovando, mais receita.
-  const forte = m.projetarCrescimento({ ...m.PARAMETROS_PLANO, marketing: 1.5 })
+  const forte = m.projetarCrescimento({ ...m.PARAMETROS_PLANO_11_11, marketing: 1.5 })
   assert.ok(forte[0].cadastros > r[0].cadastros && forte.at(-1).alcance > r.at(-1).alcance)
-  const pix = m.projetarCrescimento({ ...m.PARAMETROS_PLANO, pixRenova: 1 })
+  const pix = m.projetarCrescimento({ ...m.PARAMETROS_PLANO_11_11, pixRenova: 1 })
   assert.ok(pix.at(-1).faturamento > r.at(-1).faturamento)
+
+  // O plano oficial de 22/11 (ciclo do TEOT): o modelo com PARAMETROS_PLANO, de nov/26 a jan/28; novembro fica com a meta de 11/11.
+  assert.equal(m.META_OFICIAL.id, 'plano-2026-11-22')
+  const t = m.projetarCrescimento(m.PARAMETROS_PLANO)
+  assert.equal(t.length, 15); assert.equal(t.at(-1).mes, '2028-01')
+  assert.deepEqual(m.META_OFICIAL.meses[0], m.PLANO_2026_11.meses[0], 'o mês em andamento não troca de alvo')
+  t.forEach((x, i) => {
+    if (i === 0) return
+    const p = m.META_OFICIAL.meses[i]
+    assert.equal(p.mes, x.mes)
+    assert.deepEqual([p.cadastros, p.novosPagantes, p.ativosFim, p.receitaEquivalente, p.faturamento], [x.cadastros, x.novosPagantes, x.ativosFim, x.receitaEquivalente, x.faturamento].map(Math.round), `plano TEOT de ${p.mes}`)
+  })
+  const em = (lista, mes) => lista.find(x => x.mes === mes)
+  // Depois da prova a base cai (janeiro e fevereiro abaixo de dezembro), volta a subir com os R1 e cai de novo em jan/28.
+  assert.ok(em(t, '2027-01').ativosFim < em(t, '2026-12').ativosFim && em(t, '2027-01').saidaTeot > 0)
+  assert.ok(em(t, '2027-02').mensaisR3 < 2, 'em fevereiro os R3 que ficaram deixam de ser R3')
+  assert.ok(em(t, '2027-03').mensaisR3 > em(t, '2027-02').mensaisR3, 'em março os R2 viram R3')
+  assert.ok(em(t, '2027-12').ativosFim > em(t, '2026-12').ativosFim && em(t, '2028-01').ativosFim < em(t, '2027-12').ativosFim)
+  // Mais R3 ficando depois da prova, mais pagantes em fevereiro.
+  const ficam = m.projetarCrescimento({ ...m.PARAMETROS_PLANO, saidaPosTeot: 0.3 })
+  assert.ok(em(ficam, '2027-02').ativosFim > em(t, '2027-02').ativosFim)
+  // Piso abaixo da meta, meta abaixo da ousada.
+  const dez = c => em(m.projetarCrescimento({ ...m.PARAMETROS_PLANO, ...m.CENARIOS_PLANO.find(x => x.id === c).ajuste }), '2027-12').ativosFim
+  assert.ok(dez('piso') < dez('meta') && dez('meta') < dez('ousada'))
+  assert.equal(m.MARCOS_RESIDENCIA.length > 0 && m.MARCOS_RESIDENCIA.every(x => m.META_OFICIAL.meses.some(y => y.mes === x.mes)), true, 'cada marco cai num mês do plano')
   assert.ok(Math.abs(m.retencaoMensal({ mensaisNoPix: 0.9, pixRenova: 0.8, cartaoContinua: 0.95 }) - 0.815) < 1e-9)
 
   // Recebido por período, base por plano e retrato do mês.

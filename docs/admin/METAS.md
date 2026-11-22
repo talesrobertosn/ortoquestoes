@@ -3,8 +3,28 @@
 ## Onde fica
 Painel › Financeiro › **Metas** (`src/admin/modulos/Metas.tsx`). Faixas resumidas em Início, Crescimento e Financeiro (`metasResumo.tsx`).
 
-## Plano oficial (desde 11/11/2026)
-`META_OFICIAL = PLANO_2026_11` (`plano-2026-11-11`): o modelo de `src/admin/dados/projecao.ts` (público finito de cerca de 2.000 pessoas alcançáveis, turma nova de R1 em março, 37% dos cadastros assinando, 80% mensal nas compras novas, 90% dos mensais no Pix e 80% deles renovando) rodado com os números reais de 11/11/2026 e congelado. Novembro: 125 cadastros, 50 primeiras assinaturas, 88 pagantes e R$ 5.460 recebidos; outubro/2027: 351 pagantes e R$ 15.037. O simulador da página roda o mesmo modelo com os números de hoje. A versão moderada abaixo continua guardada, só para comparação.
+## Plano oficial (desde 22/11/2026): o ciclo do TEOT
+`META_OFICIAL = PLANO_2026_11_22` (`plano-2026-11-22`), de novembro de 2026 a janeiro de 2028. Pedido do Tales: o TEOT é em
+10/01 (depois dele os R3 param de assinar) e os R1 entram em 01/03 (mas na loucura do começo nem todos assinam).
+O modelo de `src/admin/dados/projecao.ts` ganhou campos opcionais do ano da residência (`PARAMETROS_PLANO`):
+
+- Público de cerca de 3.000 residentes e turma nova de ~1.000 R1 em março.
+- Retenção do Pix mensal medida em 22/11: 10 de 15 Pix de outubro pagaram de novo (67%; o plano usa 68%).
+- Metade dos mensais é R3 (24 de 47 em novembro). No mês da prova 80% deles não renovam; em fevereiro, 80% dos que
+  sobraram; quem fica passa a contar como os outros (R4, fellowship, título).
+- Em março, 35% dos outros mensais viram R3 (os R2 de hoje, a turma do TEOT 2028).
+- Vontade de assinar por mês do ano (`sazonalCompra`): 0,5 em janeiro, 0,55 em fevereiro, subindo de março até 1,1 em
+  novembro. Cadastros também têm estação (`sazonalCadastros`). Perto da prova (dez e jan), o R3 só compra o mensal.
+- Conversão 32%, mix 75/5/20, cartão 90% continuando, 50% dos semestrais e anuais renovando.
+
+Resultado: 97 pagantes em dez/26, o vale de 73 em jan/27, 249 em dez/27 (≈ 8% dos residentes) e 196 em jan/28;
+R$ 82 mil recebidos em 2027. **Novembro de 2026 mantém a meta do plano de 11/11**: o mês em andamento não troca de alvo.
+A página mostra também o **piso** e a **ousada** (`CENARIOS_PLANO`: marketing, conversão e renovação do Pix piores ou
+melhores) e os **marcos do ano da residência** (`MARCOS_RESIDENCIA`). O simulador ganhou os controles "R3 entre os
+mensais" e "R3 que saem depois da prova", e o gráfico de pagantes separa os mensais R3.
+
+O plano de 11/11 (`PLANO_2026_11`, parâmetros em `PARAMETROS_PLANO_11_11`) fica guardado para comparação: ele supunha
+crescimento contínuo, sem a prova (157 pagantes em jan/27 e 351 em out/27).
 
 ## Cenário moderado (05/11/2026, guardado)
 `META_MODERADA` em `src/admin/dados/metas.ts`, versão `moderado-2026-11`, registrada em 05/11/2026: 12 meses
