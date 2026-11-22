@@ -14,6 +14,8 @@ luz quente (`.claude/skills/arte-hd2d/SKILL.md`), sem copiar nenhuma delas.
 
 **Aprovado pelo Tales em 21/11/2026 ("pode começar tudo, por etapas, subindo aos poucos"). Toda peça que acende tem a sua camada de luz caindo no que está em volta (pedido dele).**
 
+**Direção do Tales em 21/11/2026:** "quanto mais natalino melhor, pode até exagerar as vezes". Os cenários podem ser mais festivos onde houver espaço para a decoração. A grade, a luz da hora, a área de leitura e os encaixes dos personagens continuam valendo. Cada pintura espera o OK nos prints antes de subir.
+
 ## O que já existe
 
 - Dois cenários de Natal no topo da inicial: o **Vale** e a **Sala do chalé**, em `src/componentes/inicio/cena/cenarios.ts`.
@@ -137,6 +139,8 @@ número ou botão e sem criar rolagem lateral:
       `cenarios.ts` e o `CenaDiorama.tsx` troca a pintura com o modo no ar.
 - [x] Etapa 3, Forja, Cais e Observatório (pinturas aprovadas em 21/11/2026): painéis de manhã, tarde e noite, com
       pinheiros e luz própria. Os três cenários usam `pinturaNatal` para escolher a variante no rodízio.
-- [ ] Etapa 3, os cenários restantes (Neve, Abrigo, Praça): continuam pelo pedido em `docs/prompts/codex-natal.md`.
+- [ ] Etapa 3, Neve: prévia local em `codex/natal-neve`, com festão aceso na cabana, pinheiro e trenó com presentes.
+      As três horas foram conferidas na inicial em 1440 e 390 px, tema claro e escuro. Aguarda o OK do Tales nos prints.
+- [ ] Etapa 3, Abrigo e Praça: seguem na ordem depois da Neve, pelo pedido em `docs/prompts/codex-natal.md`.
 - [ ] Etapa 4: as conversas entre as partes (a meta do dia acende o fio, a coruja visita a guirlanda, o trenó).
 - [ ] Demais páginas.
