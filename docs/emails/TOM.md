@@ -33,6 +33,19 @@ precisassem de justificativa.
 - Assunto de até 55 caracteres, sem emoji, ponto de exclamação ou chamada promocional.
   No máximo um link no corpo; descadastro fica no rodapé.
 
+## Quando a carta parece escrita à mão
+
+Revisão pedida pelo Tales em 22/11/2026. A carta começa pelo motivo real da conversa. Cada dado
+precisa sustentar um elogio específico ou ajudar a escolher o próximo treino. A passagem de um
+assunto ao outro liga os parágrafos, sem repetir a mesma recomendação em frases diferentes.
+As versões mudam o caminho da conversa, o exercício proposto e o encerramento.
+
+Na reta final, se Conceitos Básicos teve 43% em 53 questões, diga o que vale fazer com esse número.
+Por exemplo, separar duas questões que confundem termos parecidos, explicar com as próprias
+palavras a diferença entre os conceitos e só então ler o comentário. Na véspera, proponha um
+repasse breve de erros já conhecidos. Sem histórico suficiente, deixe uma sugestão que a pessoa
+consiga usar sem depender de um diagnóstico.
+
 ## O que retirar
 
 “Um lembrete amigo”, “uma lembrança gentil”, “uma ideia carinhosa”, “empurrãozinho”,
@@ -72,8 +85,9 @@ seu nome; não inventar profissão, experiência ou vínculo pessoal.
 Não citar número de questões abaixo de dez. Acerto só com pelo menos trinta questões e dados suficientes. Na reta final e na véspera, citar a
 taxa mesmo abaixo de 50%, a pedido do Tales em 22/11/2026. Interpretar o número com cuidado e
 indicar um próximo passo. Nas demais cartas, abaixo de 50%, incentivar sem citar taxa nem meta percentual.
-Tema a revisar sem porcentagem ruim; pode acompanhar a taxa positiva e o elogio à melhor área
-(pedido expresso de 17/11/2026).
+Na reta final e na véspera, contextualizar a taxa da área que merece atenção e a do ponto forte
+com seus respectivos volumes de questões. O percentual por área exige pelo menos quinze questões e
+acerto geral citável. Nas demais cartas, a recomendação de revisão vai sem a taxa da área.
 No máximo três observações de estudo além da taxa geral, todas conferíveis no histórico. Não inventar prova,
 benefício, prazo, preço ou dado de desempenho.
 

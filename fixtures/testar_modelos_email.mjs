@@ -12,8 +12,6 @@ import { mkdtemp, rm } from 'node:fs/promises'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 
-/** Tipos que o Tales quis com uma versão só (não sorteiam entre 5 a 7). */
-const VERSAO_UNICA = new Set(['boas_vindas_dia0'])
 const PREPARACAO_PROVA = new Set(['reta_final', 'vespera_prova'])
 
 const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-cartas-'))
@@ -160,12 +158,9 @@ try {
       }
     }
     const total = m.versoesDe(tipo, tipo === 'ativo' ? '70-80' : null).length
-    // Pedido do Tales (22/10/2026): as boas-vindas têm uma versão só, fixa.
-    const unica = VERSAO_UNICA.has(tipo)
-    if (unica) assert.equal(total, 1, `${tipo}: deve ter uma versão só`)
-    else assert.ok(total >= 5 && total <= 7, `${tipo}: ${total} versões (o plano pede de 5 a 7)`)
+    assert.ok(total >= 5 && total <= 7, `${tipo}: ${total} versões (o plano pede de 5 a 7)`)
     if (tipo !== 'ativo') assert.equal(versoes.size, total, `${tipo}: nem todas as versões saíram (${[...versoes].join(', ')})`)
-    if (!unica) assert.ok(textos.size >= 20, `${tipo}: pouca variedade (${textos.size})`)
+    assert.ok(textos.size >= 20, `${tipo}: pouca variedade (${textos.size})`)
   }
 
   // 3. Regra dos 10: quem fez menos de 10 questões nunca vê o número; `questoes` devolve "os primeiros passos".
@@ -256,7 +251,7 @@ try {
   for(const pct of [0,12,25,49]) {
     const c=gerar(rico(pct),{tipo:'ativo',semente:1})
     assert.doesNotMatch(c.corpo,/\d+%|acerto baixo|pior área/)
-    assert.match(c.corpo,/Continue|Siga|continuar/)
+    assert.match(c.corpo,/próximo treino|volte a duas questões|rever as questões|retomar uma pergunta/i)
   }
 
   // 6. Escolha automática do tipo (marcos 100, 250, 500, 1.000, 2.000; cadência no resultado).
@@ -388,7 +383,7 @@ try {
       if (d.respostas === 0) assert.ok(!/\d+ questões em/.test(e.texto), 'relatório parado com números zerados')
       if (d.respostas > 0 && d.respostas < 10) assert.ok(!/\b[1-9] quest/.test(e.texto), `relatório com número pequeno:\n${e.texto}`)
       if (d.certas / (d.certas + d.erradas || 1) < 0.5) assert.ok(!PORCENTAGEM.test(e.texto + e.assunto), `relatório com acerto baixo citou porcentagem:\n${e.texto}`)
-      if (d === relBase && /subiu 11 pontos|11 pontos acima/.test(e.texto)) historia++
+      if (d === relBase && /11 pontos percentuais a mais/.test(e.texto)) historia++
     }
   }
   assert.ok(historia >= 10, 'o relatório deixou de contar a subida do acerto')
@@ -416,43 +411,55 @@ try {
       }
     }
   }
-  // O e-mail de prova sempre cita os dados confiáveis e ajusta a recomendação à taxa real.
+  // Todas as cartas de cada etapa preservam os dados e mudam o conselho de acordo com o desempenho.
   for (const tipo of PREPARACAO_PROVA) {
-    const areas = [{ slug: 'tumores', total: 40, certas: 36 }, { slug: 'coluna', total: 25, certas: 9 }]
+    const areas = [{ slug: 'tumores', total: 40, certas: 36 }, { slug: 'conceitos-basicos', total: 25, certas: 11 }]
     const leituras = [
-      [43, /um assunto por vez/],
-      [64, /Separe os erros por assunto/],
-      [78, /uma sessão curta com temas variados/],
-      [91, /manter contato com os temas/],
+      [43, /sessões curtas|mesma dúvida mais de uma vez|tema pequeno/],
+      [64, /ficou entre duas alternativas|dificuldade se repete|erro que consiga explicar/],
+      [78, /quando os temas se misturam|qual detalhe deveria ter decidido|sessão com temas misturados/],
+      [91, /acertou com dúvida|duas alternativas parecem defensáveis|manteria contato/],
     ]
     for (const [pct, leitura] of leituras) {
-      for (let semente = 0; semente < 12; semente++) {
+      const textos = new Set(), versoes = new Set()
+      for (let semente = 0; semente < 64; semente++) {
         const perfil = rico(pct, { areas, posicaoRanking: 31, provaCronograma: 'TARO', diasParaProva: tipo === 'reta_final' ? 18 : 1 })
         const carta = gerar(perfil, { tipo, semente })
-        assert.match(carta.corpo, tipo === 'reta_final' ? /Faltam 18 dias para o TARO/ : /Amanhã é o dia de fazer o TARO/)
+        textos.add(carta.corpo); versoes.add(carta.versao)
+        assert.match(carta.corpo, tipo === 'reta_final' ? /Faltam 18 dias para o TARO/ : /Amanhã você faz o TARO/)
         assert.match(carta.corpo, /400 questões/)
-        assert.match(carta.corpo, new RegExp(`${pct}% de acertos`))
-        assert.match(carta.corpo, leitura)
-        assert.match(carta.corpo, /melhor resultado foi em tumores/)
-        assert.match(carta.corpo, /atenção ao tema de coluna/)
-        assert.match(carta.corpo, /ranking geral foi a 31ª/)
-        assert.match(carta.corpo, /boa prova|sucesso no dia da prova/)
-        assert.doesNotMatch(carta.corpo, /36%|pior área/)
+        assert.ok(carta.corpo.includes(`${pct}%`), carta.corpo)
+        assert.match(carta.corpo, tipo === 'reta_final' ? leitura : pct < 55 ? /uma dúvida que ainda cabe rever/ : pct < 70 ? /encerraria a revisão/ : /relembrar só o que ainda te faz hesitar/)
+        assert.match(carta.corpo, /tumores[^\n]+(?:90%[^\n]+40 questões|40 questões[^\n]+90%)/i)
+        assert.match(carta.corpo, /conceitos básicos[^\n]+(?:44%[^\n]+25|25 questões[^\n]+44%)/)
+        assert.match(carta.corpo, /31ª posição no ranking geral/)
+        assert.match(carta.corpo, /boa prova|boa sorte|tor[cç]|sucesso no dia da prova|prova tranquila|mostrar o que aprendeu/i)
+        assert.doesNotMatch(carta.corpo, /pior área|acerto baixo|precisa estudar mais/)
         assert.deepEqual(carta.personalizacao.sort(), ['acerto', 'melhor área', 'área a melhorar', 'posição no ranking'].sort())
       }
+      assert.equal(versoes.size, 6)
+      assert.equal(textos.size, 6, 'cada versão tem um texto próprio com os mesmos dados')
     }
-    for (const perfil of [pobre(7, { acertos: 3, erros: 4 }), pobre(40, { acertos: 4, erros: 1 }), pobre(100, { acertos: 90, erros: null })]) {
+    for (const perfil of [
+      pobre(0), pobre(7, { acertos: 3, erros: 4 }), pobre(40, { acertos: 4, erros: 1 }),
+      pobre(100, { acertos: 90, erros: null }), pobre(20, { acertos: 12, erros: 8, areas: [{slug:'tumores', total:16, certas:14}] }),
+    ]) {
       const carta = gerar(perfil, { tipo, semente: 1 })
       assert.doesNotMatch(carta.corpo, /%|melhor resultado|ranking geral/)
-      assert.match(carta.corpo, /responder mais/)
+      assert.match(carta.corpo, /primeiro treino|começou pelas questões|questões (até aqui|por aqui)/)
     }
   }
   for (const assinante of [true, false]) {
-    const carta = gerar(pobre(0, { assinante }), { tipo: 'boas_vindas_dia0', semente: 1 })
-    assert.match(carta.corpo, /explicação da resposta certa e das outras alternativas/)
-    assert.match(carta.corpo, /#\/cronograma/)
-    assert.match(carta.corpo, assinante ? /informe a data da prova/ : /Na demonstração/)
-    if (assinante) assert.doesNotMatch(carta.corpo, /permite montar e salvar um plano próprio/)
+    const voltando = new Set()
+    for (let semente = 0; semente < 48; semente++) {
+      const carta = gerar(pobre(0, { assinante }), { tipo: 'boas_vindas_dia0', semente })
+      voltando.add(carta.versao)
+      assert.match(carta.corpo, /Cronograma/)
+      assert.match(carta.corpo, /#\/(treinar|cronograma)/)
+      assert.match(carta.corpo, assinante ? /Informe a data e o tempo/ : /A demonstração/)
+      if (assinante) assert.doesNotMatch(carta.corpo, /demonstração/)
+    }
+    assert.equal(voltando.size, 6)
   }
   const CAMPANHAS = [ 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
   assert.deepEqual([...auto.TIPOS_AUTOMATICOS], ['boas_vindas_dia0', 'pagamento_aprovado', 'obrigado_tempo', ...CAMPANHAS])
@@ -498,7 +505,7 @@ try {
       assinante_parado_7: { perfis: [rico(72, { assinante: true, diasParado: 9 }), pobre(120, { nome: 'Bia', assinante: true, diasParado: 8 }), pobre(3, { nome: 'Leo', assinante: true, diasParado: 15 })], esperado: /revisão|sessão/i, link: /#\/(revisao|cronograma)/, extra: { diasFora: 9 } },
       simulado_resultado: { perfis: [rico(72), pobre(40, { nome: 'Caio' }), pobre(0)], esperado: /Simulado Nacional|simulado/, link: '#/simulado-nacional', campanhas: [{ simulado: { acertos: 41, total: 50, posicao: 12, participantes: 180 } }, { simulado: { acertos: 20, total: 50, posicao: null } }, { simulado: { acertos: 8, total: 10, posicao: 45 } }, {}] },
       vespera_prova: { perfis: [rico(72, { diasParaProva: 1 }), pobre(50, { nome: 'Lia', diasParaProva: 1, provaCronograma: 'TARO' }), pobre(0)], esperado: /amanhã/i, link: null },
-      depois_prova: { perfis: [rico(72, { diasParaProva: null }), pobre(50, { nome: 'Lia', provaCronograma: 'TARO' }), pobre(1)], esperado: /como foi|passou/i, link: null },
+      depois_prova: { perfis: [rico(72, { diasParaProva: null }), pobre(50, { nome: 'Lia', provaCronograma: 'TARO' }), pobre(1)], esperado: /como foi|tenha corrido bem|passou/i, link: null },
       aniversario: { perfis: [ANIV, pobre(50, { nome: 'Lia', nascimento: '1994-10-15' }), pobre(0, { nascimento: '1990-10-15' })], esperado: /aniversário|parabéns/i, link: null },
       um_ano: { perfis: [rico(72, { diasConta: 365 }), pobre(40, { nome: 'Caio', diasConta: 731 }), pobre(2, { diasConta: 366 })], esperado: /ano/i, link: null, campanhas: [{ anos: 1 }, { anos: 2 }, { anos: 3 }, {}] },
       indicacao_deu_certo: { perfis: [rico(72), pobre(25, { nome: 'Caio' }), pobre(0)], esperado: /20 questões/, link: '#/indicar', campanhas: [{ cortesia: true }, { cortesia: false }, {}] },

@@ -3,7 +3,7 @@
 > Gerado por `node scripts/amostras-cartas.mjs` em 2026-10-17. Pessoas e números fictícios.
 > Cada amostra é uma das versões possíveis: no painel, "Sortear outra versão" troca o texto.
 
-Todas as cartas saem só em texto, com linguagem clara e cordial (docs/emails/TOM.md): motivo da mensagem, fatos reais (até 3 observações), sugestão útil e ajuda objetiva, sem P.S. ou pressão emocional. De 3 a 12 linhas, assinatura fixa "Um abraço, / Tales, do Orto Questões", no máximo um link, nenhum preço, nenhum número de questões abaixo de 10, acerto só com 30 questões e de 50% para cima.
+Todas as cartas saem só em texto, com linguagem clara e cordial (docs/emails/TOM.md): motivo da mensagem, fatos reais (até 3 observações), sugestão útil e ajuda objetiva, sem P.S. ou pressão emocional. De 3 a 12 linhas, assinatura fixa "Um abraço, / Tales, do Orto Questões", no máximo um link, nenhum preço, nenhum número de questões abaixo de 10, acerto só com histórico suficiente. O texto abaixo preserva as amostras de outubro. As orientações atuais de porcentagens e tom, incluindo a reta final, estão em [Tom das mensagens](TOM.md).
 
 ## Quantas variações
 
