@@ -29,6 +29,10 @@ try {
   const v = m.metasVigentes(m.META_MODERADA, [{ versao: 'vigente', mes: '2027-01-01', cadastros: 120, novos_pagantes: 25, ativos_fim: 80, receita_equivalente: 2500, faturamento: 3500 }, { versao: 'outra', mes: '2027-02-01', cadastros: 1, novos_pagantes: 1, ativos_fim: 1, receita_equivalente: 1, faturamento: 1 }])
   assert.equal(v[2].cadastros, 120); assert.equal(v[2].editada, true); assert.equal(v[2].original.cadastros, 90)
   assert.equal(v[3].cadastros, 85, 'só a camada "vigente" vale'); assert.equal(m.META_MODERADA.meses[2].cadastros, 90, 'a original não muda')
+  // Edição feita antes de a versão ser registrada ajustava um plano anterior: não vale.
+  const velha = m.metasVigentes(m.META_OFICIAL, [{ versao: 'vigente', mes: '2027-01-01', cadastros: 999, novos_pagantes: 1, ativos_fim: 1, receita_equivalente: 1, faturamento: 1, editado_em: '2026-11-15T10:00:00Z' }, { versao: 'vigente', mes: '2027-02-01', cadastros: 777, novos_pagantes: 1, ativos_fim: 1, receita_equivalente: 1, faturamento: 1, editado_em: '2026-11-23T10:00:00Z' }])
+  assert.equal(velha.find(x => x.mes === '2027-01').editada, false, 'edição de antes do plano novo não esconde a meta nova')
+  assert.equal(velha.find(x => x.mes === '2027-02').cadastros, 777, 'edição feita depois vale')
 
   // 3. Períodos encadeados: renovar antes do fim soma os dias.
   const c = (dia, valor, plano, id, tipo = 'nova', meio = 'pix') => ({ em: sp(dia), valor, plano, id_usuario: id, estimada: false, tipo, meio })

@@ -49,7 +49,7 @@ export const AREAS: DefArea[] = [
   ] },
   { id: 'receita', rotulo: 'Financeiro', curto: 'Finanças', icone: 'receita', partes: [
     { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou, quanto entra por mês com quem assina hoje e quando cada plano renova.', antes: 'Ganhos receita previsão cenários' },
-    { id: 'metas', rotulo: 'Metas', pergunta: 'O plano de 12 meses feito com os números reais: objetivos do mês, semana a semana, projeção e simulador.', antes: 'Metas objetivos planejamento cenário moderado projeção plano simulador' },
+    { id: 'metas', rotulo: 'Metas', pergunta: 'O plano até a prova de 2028, com o ciclo do TEOT e os R1 de março: objetivos do mês, semana a semana, projeção e simulador.', antes: 'Metas objetivos planejamento cenário moderado projeção plano simulador TEOT piso ousada' },
     { id: 'cobrancas', rotulo: 'Extrato', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, dia a dia.', antes: 'Pagamentos cobranças' },
     { id: 'pagamentos', rotulo: 'Avisos do Mercado Pago', pergunta: 'As mensagens automáticas que o Mercado Pago manda ao site. Só as que falharam pedem você.', antes: 'Avisos de pagamento processador' },
   ] },
