@@ -247,6 +247,24 @@ try {
   assert.equal(p.dados.prontas.length, 2)
   assert.equal(envios.length, 0, 'prévia nunca envia')
   assert.equal(rodada, null, 'prévia não inicia rodada')
+  pessoas.set(A, {
+    ...perfil('Ana'), dias_parado: 1, dias_para_prova: 20, prova_cronograma: 'TARO',
+    respondidas: 155, acertos: 61, erros: 94, posicao_ranking: 22,
+    areas: [{ slug: 'tumores', total: 30, certas: 22 }, { slug: 'coluna', total: 30, certas: 8 }],
+  })
+  const previaDaProva = await chamar('preparar')
+  assert.equal(previaDaProva.status, 200)
+  const retaFinal = previaDaProva.dados.prontas.find(m => m.id_usuario === A)
+  assert.equal(retaFinal.tipo, 'reta_final')
+  assert.match(retaFinal.corpo, /Faltam 20 dias para o TARO/)
+  assert.match(retaFinal.corpo, /155 questões/)
+  assert.match(retaFinal.corpo, /39% de acertos/)
+  assert.match(retaFinal.corpo, /melhor resultado foi em tumores/)
+  assert.match(retaFinal.corpo, /atenção ao tema de coluna/)
+  assert.match(retaFinal.corpo, /ranking geral foi a 22ª/)
+  assert.equal(envios.length, 0, 'a análise na prévia não envia')
+  assert.equal(rodada, null)
+  pessoas.set(A, perfil('Ana'))
   const itens = p.dados.prontas.map((m) => ({ chave: m.chave, assunto: m.assunto, corpo: m.corpo }))
   assert.equal((await chamar('iniciar', { itens: [{ chave: 'pessoa-injetada' }] })).status, 409)
   assert.equal((await chamar('iniciar', { itens: [{ ...itens[0], corpo: 'Seu cadastro informa o serviço HUFMA.' }] })).status, 409, 'aba antiga não envia o cadastro recitado')

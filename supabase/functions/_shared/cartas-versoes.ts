@@ -18,12 +18,9 @@ const Q = (n: number) => n >= 10 ? `${N(n)} questões` : 'algumas questões'
 const dataCurta = (iso?: string | null) => iso && Number.isFinite(Date.parse(iso)) ? new Date(iso).toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit' }) : null
 const nm = (c: Ctx, texto: string, semNome = texto.charAt(0).toUpperCase()+texto.slice(1)) => c.nome ? `${c.nome}, ${texto}` : semNome
 const ajuda = (c: Ctx) => c.um('Se precisar de ajuda com o site, basta responder este e-mail.', 'Pode responder por aqui se encontrar alguma dificuldade no site.', 'Se tiver alguma dúvida para usar esse recurso, pode me chamar por aqui.')
-const prova = (c: Ctx) => {
-  const n = (c.p.provaCronograma ?? '').trim()
-  if (/^(outra(?: prova)?|outro|prova|não informad[oa])$/i.test(n)) return 'a sua prova'
-  if (n) return /^(TEOT|TEPOT|TARO|ENARE)(\b|$)/i.test(n) ? `o ${n}` : `a prova de ${n}`
-  return c.nomeProva || 'a sua prova'
-}
+const dicaCronograma = (c: Ctx) => c.p.assinante
+  ? 'No Cronograma, informe a data da prova e o tempo que tem disponível. Ele distribui as questões e as revisões da semana, para você sentar e já saber por onde começar.'
+  : 'Vale conhecer o Cronograma. Na demonstração, você vê como as questões e revisões são distribuídas pela data da prova e pelo tempo disponível. A assinatura permite montar e salvar um plano próprio.'
 const acesso = (c: Ctx) => c.um('Seu histórico de estudo e suas anotações continuam salvos na conta.', 'As questões respondidas e as revisões ficam guardadas no seu histórico.', 'Seu progresso permanece salvo para continuar de onde parou.')
 const sugestao = (c: Ctx, rota: 'treinar' | 'revisao' | 'erros') => rota === 'erros'
   ? c.um('No Caderno de erros, você pode refazer questões e consultar a explicação de cada alternativa.', 'Uma sessão no Caderno de erros permite revisar os pontos das questões anteriores.', 'Para revisar dúvidas específicas, o Caderno de erros reúne as questões e os comentários.')
@@ -35,6 +32,7 @@ const primeirosPassos = (c: Ctx): Pedaco[] => [
   c.um('Vi que você ainda não começou as questões por aqui. Que tal experimentar uma sessão?', 'Você ainda não respondeu suas primeiras questões no site. Queria te convidar a experimentar.', 'Vi que sua primeira sessão ainda está por começar. Separei uma sugestão para você experimentar o site.'),
   c.um('Escolha um assunto de que você gosta e comece por algumas questões. Acho que você vai gostar de estudar pelos comentários.', 'Comece por um tema que você quer aprender e leia as explicações depois de responder. É uma boa forma de conhecer o site.', 'Experimente algumas questões de um assunto do seu interesse. Os comentários ajudam a entender o raciocínio e a revisar o tema.'),
   c.um('Vale ler também por que as outras alternativas estão erradas; é uma parte importante do estudo.', 'Depois de responder, confira o comentário de cada alternativa e use a explicação para revisar suas dúvidas.', 'A ideia é aproveitar cada questão para aprender, consultando a explicação depois da resposta.'),
+  dicaCronograma(c),
   `Para começar: ${c.link('treinar')}`, ajuda(c),
 ]
 const incentivo = (c: Ctx): string => c.um(
@@ -46,7 +44,10 @@ const incentivo = (c: Ctx): string => c.um(
 )
 function proximoPasso(c: Ctx): Pedaco[] {
   const pct = c.pctBom
-  if (pct === null) return [incentivo(c), c.obs(1, ['maisEstudada', 'semana', 'sequencia'])]
+  if (pct === null) return [
+    incentivo(c), c.fato('areaFraca'), c.fato('ranking'),
+    c.obs(1, ['melhorArea', 'maisEstudada', 'semana', 'sequencia']),
+  ]
   const meta = pct < 90 ? Math.min(90, (Math.floor(pct / 10) + 1) * 10) : pct < 95 ? 95 : null
   return [
     c.um(`Vi que sua taxa de acerto está em ${pct}%.${meta ? ` Continue praticando para buscar os ${meta}%.` : ' Parabéns pelo resultado! Continue variando os temas para manter o estudo completo.'}`,
@@ -59,15 +60,17 @@ function proximoPasso(c: Ctx): Pedaco[] {
 }
 function estudo(tema: string, rota: 'treinar' | 'revisao' | 'erros' = 'revisao', total = 6): Versao[] {
   return Array.from({ length: total }, (_, i) => ({
-    id: `v${i+31}`, assuntos: c => [nm(c, [tema, 'vamos continuar as questões?', 'uma sugestão para seu próximo treino', 'para avançar no seu estudo', 'seus próximos temas de revisão', 'vamos praticar mais um pouco?'][i%6])],
+    id: `v${i+51}`, assuntos: c => [nm(c, [tema, 'vamos continuar as questões?', 'uma sugestão para seu próximo treino', 'para avançar no seu estudo', 'seus próximos temas de revisão', 'vamos praticar mais um pouco?'][i%6])],
     corpo: c => c.r === 0 ? primeirosPassos(c) : [
       c.um('Você já começou a resolver as questões. Tenho uma sugestão para o próximo treino.', 'Vi que você está fazendo as questões. Vamos continuar o estudo?', 'Você já começou a estudar por aqui. Queria te incentivar a continuar pelas questões e pelos comentários.'),
-      ...proximoPasso(c), sugestao(c, rota), `Para continuar: ${c.link(rota)}`, ajuda(c),
+      ...proximoPasso(c), sugestao(c, rota),
+      (c.tipo === 'comecando' || c.tipo === 'boas_vindas') && !c.fatos.cronograma ? dicaCronograma(c) : null,
+      `Para continuar: ${c.link(rota)}`, ajuda(c),
     ],
   }))
 }
 const nunca = (): Versao[] => Array.from({length:6},(_,i)=>({
-  id:`v${i+31}`, assuntos:c=>[nm(c,['vamos começar as questões?','sua primeira sessão','um tema para começar','experimente as questões comentadas','por onde começar o estudo','um convite para seu primeiro treino'][i])],
+  id:`v${i+51}`, assuntos:c=>[nm(c,['vamos começar as questões?','sua primeira sessão','um tema para começar','experimente as questões comentadas','por onde começar o estudo','um convite para seu primeiro treino'][i])],
   corpo:primeirosPassos,
 }))
 const convite = (): Versao[] => Array.from({length:6},(_,i)=>({
@@ -80,31 +83,75 @@ const convite = (): Versao[] => Array.from({length:6},(_,i)=>({
     `Para consultar os planos: ${c.link('assinatura')}`, ajuda(c),
   ],
 }))
-const boasVindas: Versao[] = [{id:'v41',assuntos:c=>[nm(c,'sua conta no Orto Questões')],corpo:c=>[
-  'Que bom ter você no Orto Questões! Sua conta já está pronta para começar.',
-  'Minha sugestão para o primeiro treino é escolher um tema e resolver algumas questões. Depois de responder, leia também a explicação das outras alternativas.',
-  'A Biblioteca de resumos ajuda a consultar o conteúdo, e a Revisão reúne as questões para retomar depois. O Cronograma está disponível para organizar as sessões pela data da prova.',
-  `Para começar pelas questões: ${c.link('treinar')}`,
-  ajuda(c),
+const boasVindas: Versao[] = [{id:'v42',assuntos:c=>[nm(c,'seu primeiro dia no Orto Questões')],corpo:c=>[
+  'Que bom ter você por aqui. Obrigado por escolher o Orto Questões para estudar.',
+  c.r === 0
+    ? 'Para o primeiro dia, escolha em Treinar um assunto que você quer aprender. Faça algumas questões e depois leia a explicação da resposta certa e das outras alternativas.'
+    : 'Você já começou a estudar por aqui. Para aproveitar esse primeiro treino, escolha uma questão que trouxe dúvida e volte ao comentário de cada alternativa.',
+  dicaCronograma(c),
+  `Para conhecer o Cronograma, abra ${c.link('cronograma')}`,
+  'Se quiser ajuda para escolher por onde começar, responda por aqui. Vai ser um prazer ajudar.',
 ]}]
-const provaVersoes = (tipo: 'reta_final'|'vespera_prova'|'depois_prova'): Versao[] => Array.from({length:6},(_,i)=>({
-  id:`v${i+21}`, assuntos:c=>[nm(c, (tipo==='depois_prova'?['sobre a sua prova','como foi o formato da prova','sua experiência na prova','conteúdo da prova','sobre os temas cobrados','comentários sobre a prova']:tipo==='vespera_prova'?['sobre a prova de amanhã','sua revisão antes da prova','para consultar suas anotações','última revisão dos temas','sua prova está chegando','anotações para a prova']:['organizar a revisão para a prova','seus próximos temas de revisão','o plano de estudo para a prova','sobre sua revisão','as próximas sessões de estudo','sua preparação para a prova'])[i])],
-  corpo:c=>tipo==='depois_prova'?[
-    `Como foi ${prova(c)}?`,
-    c.um('Gostaria de saber quais temas apareceram e como foi o formato da prova.', 'Você pode contar quais assuntos foram cobrados e como as questões foram apresentadas.', 'Sua experiência com o conteúdo e o formato ajuda a orientar as próximas revisões do acervo.'),
-    'Se puder compartilhar alguma observação sobre a prova, responda por aqui.',
-  ]:[
-    tipo==='vespera_prova'?`Amanhã é ${prova(c)}.`:`Com ${prova(c)} se aproximando, vale retomar as questões e as anotações que trouxeram dúvidas.`,
-    c.obs(1),
-    c.um('Uma opção é revisar as questões já respondidas e as anotações que você salvou.', 'Os comentários das questões anteriores e suas anotações podem orientar a próxima revisão.', 'Você pode selecionar os temas que quer revisar e consultar os comentários de cada alternativa.'),
-    `Sua revisão fica aqui: ${c.link('revisao')}`, ajuda(c),
-  ],
-}))
+
+function leituraDaRetaFinal(c: Ctx): string {
+  const pct = c.pctProva
+  if (pct === null) return c.r
+    ? 'Use as questões que trouxeram dúvidas para escolher o que revisar. Conforme você responder mais, fica mais fácil perceber em quais áreas está ganhando segurança.'
+    : 'Uma boa forma de começar é escolher um tema conhecido e resolver uma sessão curta, reservando alguns minutos para ler os comentários.'
+  if (pct < 55) return `Seu histórico mostra ${pct}% de acertos. Eu começaria com um assunto por vez. Entenda o motivo de cada erro e volte a algumas dessas questões em outra sessão para ver o que já ficou mais claro.`
+  if (pct < 70) return `Seu histórico mostra ${pct}% de acertos. Você já tem respostas em que pode se apoiar. Separe os erros por assunto e concentre a próxima revisão nas dúvidas que mais se repetem.`
+  if (pct < 85) return `Você chegou a ${pct}% de acertos nas questões. É um bom resultado. Para seguir avançando, resolva uma sessão curta com temas variados e veja quais erros continuam aparecendo.`
+  return `Você chegou a ${pct}% de acertos nas questões. Que bom ver esse resultado. Nesta reta final, vale manter contato com os temas em que está bem e usar a revisão para acertar detalhes que ainda confundem.`
+}
+
+const provaVersoes = (tipo: 'reta_final'|'vespera_prova'|'depois_prova'): Versao[] => {
+  const assuntos = tipo === 'depois_prova'
+    ? ['sobre a sua prova', 'como foi o formato da prova', 'sua experiência na prova', 'conteúdo da prova', 'sobre os temas cobrados', 'comentários sobre a prova']
+    : tipo === 'vespera_prova'
+      ? ['boa prova amanhã', 'uma última revisão para amanhã', 'sua prova é amanhã', 'o que vale rever na véspera', 'seu estudo até a prova', 'um recado para amanhã']
+      : ['seu estudo nesta reta final', 'como vai sua preparação', 'seu desempenho antes da prova', 'o que revisar nesta reta final', 'sua preparação até aqui', 'os próximos passos até a prova']
+
+  return assuntos.map((assunto, i) => ({
+    id: `v${i + (tipo === 'depois_prova' ? 21 : 51)}`,
+    assuntos: c => [nm(c, assunto)],
+    corpo: c => {
+      if (tipo === 'depois_prova') return [
+        `Como foi ${c.nomeProva}?`,
+        c.um('Gostaria de saber quais temas apareceram e como foi o formato da prova.', 'Você pode contar quais assuntos foram cobrados e como as questões foram apresentadas.', 'Sua experiência com o conteúdo e o formato ajuda a orientar as próximas revisões do acervo.'),
+        'Se puder compartilhar alguma observação sobre a prova, responda por aqui.',
+      ]
+      const dias = c.diasProva
+      const prazo = dias !== null && dias > 0
+        ? `Falta${dias === 1 ? '' : 'm'} ${N(dias)} ${dias === 1 ? 'dia' : 'dias'} para ${c.nomeProva}.`
+        : `A preparação para ${c.nomeProva} está na reta final.`
+      return [
+        tipo === 'vespera_prova' ? `Amanhã é o dia de fazer ${c.nomeProva}.` : prazo,
+        c.dez
+          ? c.um(`Você já resolveu ${c.q} no Orto Questões. Que bom que você reservou esse tempo para estudar.`,
+            `Você já fez ${c.q} por aqui. Cada sessão foi uma oportunidade de tirar dúvidas e entender melhor os temas.`,
+            `Seu estudo até aqui soma ${c.q} no Orto Questões. Parabéns por reservar esse tempo para aprender.`)
+          : c.r > 0 ? 'Você já começou pelas questões. Voltar às explicações que mais ajudaram é um jeito de aproveitar esse começo.' : null,
+        leituraDaRetaFinal(c),
+        c.fato('melhorArea'),
+        c.fato('areaFraca'),
+        c.fato('ranking'),
+        tipo === 'vespera_prova' ? 'Se for estudar hoje, escolha uma revisão breve com questões e anotações conhecidas. Vale também separar os documentos e conferir o local e o horário da prova.'
+          : c.um('Reserve uma sessão para rever suas dúvidas e outra para praticar com tempo marcado. Isso ajuda a perceber quanto tempo você precisa para ler e decidir cada resposta.',
+            'Se tiver pouco tempo em um dia, retome um erro que se repetiu e leia o comentário com calma. Na sessão seguinte, tente resolver uma questão parecida.',
+            'Distribua a revisão pelos dias que ainda faltam. Alterne os temas que pedem atenção com algumas questões de um assunto em que já está bem.'),
+        `Você encontra suas questões para revisar em ${c.link('revisao')}`,
+        c.um('Obrigado por contar com o Orto Questões nesta preparação. Desejo uma boa prova e muito sucesso.',
+          'Obrigado pela confiança ao longo deste estudo. Torço por você e desejo que tenha uma boa prova.',
+          'Foi muito bom ter você estudando com o Orto Questões. Desejo tranquilidade e sucesso no dia da prova.'),
+      ]
+    },
+  }))
+}
 const marco = (primeiro = false): Versao[] => Array.from({length:6},(_,i)=>({
-  id:`v${i+41}`, assuntos:c=>[nm(c,[primeiro?'suas primeiras questões':'parabéns pelo seu novo marco','mais um passo no seu estudo','suas questões e a próxima revisão','seu progresso nas questões','para continuar seu treino','um marco para comemorar'][i])],
+  id:`v${i+(primeiro ? 41 : 51)}`, assuntos:c=>[nm(c,[primeiro?'suas primeiras questões':'parabéns pelo seu novo marco','mais um passo no seu estudo','suas questões e a próxima revisão','seu progresso nas questões','para continuar seu treino','um marco para comemorar'][i])],
   corpo:c=>[
     primeiro?'Você concluiu suas primeiras dez questões no Orto Questões.':`Você completou ${Q(c.marco ?? 100)} no Orto Questões. Parabéns pela dedicação ao estudo!`,
-    c.obs(1,['ranking','melhorArea']),
+    ...(primeiro ? [c.obs(1, ['ranking', 'melhorArea'])] : proximoPasso(c)),
     c.um('Para aproveitar esse treino, vale voltar às questões que trouxeram dúvidas e reler os comentários.', 'A próxima sessão pode ser dedicada a refazer questões e conferir o raciocínio de cada alternativa.', 'Continue praticando e reserve uma parte do treino para revisar os conceitos das questões anteriores.'),
     `Sua revisão está aqui: ${c.link('revisao')}`, ajuda(c),
   ],
@@ -125,7 +172,7 @@ const indicar = (): Versao[] => Array.from({length:5},(_,i)=>({
 }))
 const cronograma = (pronto = false): Versao[] => Array.from({length:5},(_,i)=>({
   id:`v${i+21}`,assuntos:c=>[nm(c,[pronto?'seu cronograma está salvo':'organizar seu estudo','sobre o cronograma','suas próximas sessões','organização dos temas','consultar o plano de estudo'][i])],corpo:c=>[
-    pronto?`Seu cronograma foi salvo${c.diasProva !== null ? `, com ${c.diasProva} dias até ${prova(c)}` : ''}. As próximas sessões estão disponíveis na sua conta.`:'O Cronograma permite organizar o estudo pela data da prova e pelo tempo disponível.',
+    pronto?`Seu cronograma foi salvo${c.diasProva !== null ? `, com ${c.diasProva} dias até ${c.nomeProva}` : ''}. As próximas sessões estão disponíveis na sua conta.`:'O Cronograma permite organizar o estudo pela data da prova e pelo tempo disponível.',
     c.obs(1),
     c.um('Você pode consultar a lista de cada dia e ajustar sua disponibilidade.', 'A página mostra as sessões previstas e permite atualizar o tempo disponível.', 'Os temas e as revisões aparecem no planejamento das próximas sessões.'),
     `Para abrir o Cronograma: ${c.link('cronograma')}`, ajuda(c),

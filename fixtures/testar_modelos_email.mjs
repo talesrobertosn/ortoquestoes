@@ -1,7 +1,7 @@
 // Cartas do Tales (15/10/2026; reescritas em 17/10/2026 conforme docs/emails/PLANO.md): o motor
 // de e-mails pessoais e os automáticos em forma de carta. Confere, em milhares de sorteios de todas
-// as situações, faixas e fatos: a lista proibida de docs/emails/TOM.md; nenhuma porcentagem abaixo
-// de 50%; nenhum número de questões abaixo de 10; 6 a 12 linhas de corpo; exatamente um P.S.; no
+// as situações, faixas e fatos: a lista proibida de docs/emails/TOM.md; porcentagem abaixo
+// de 50% só na preparação para a prova com histórico suficiente; nenhum número de questões abaixo de 10; 6 a 12 linhas de corpo; exatamente um P.S.; no
 // máximo um link; nada de "undefined/null/NaN/0 questões"; assuntos com até 55 caracteres e com o
 // nome; o P.S. não repete uma ideia do corpo e duas frases seguidas não repetem a palavra forte;
 // o teto de cadência (48 h / 3 em 14 dias); os seis automáticos novos; e as dez campanhas diárias
@@ -14,6 +14,7 @@ import { pathToFileURL } from 'node:url'
 
 /** Tipos que o Tales quis com uma versão só (não sorteiam entre 5 a 7). */
 const VERSAO_UNICA = new Set(['boas_vindas_dia0'])
+const PREPARACAO_PROVA = new Set(['reta_final', 'vespera_prova'])
 
 const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-cartas-'))
 const arquivo = join(pasta, 'c.mjs')
@@ -90,11 +91,11 @@ try {
     if (semPS) assert.doesNotMatch(tudo, /lembrete amigo|sem pressa|sem compromisso|sem cobran[cç]a|sem insistência|a escolha (é|ser) sua|se preferir não renovar|se não for a hora|portas? (fica|ficam) abertas?|empurrãozinho|ideia carinhosa|P\.S\.:/i)
     tomOk(tudo, contexto)
     semRedundancia(carta.corpo, contexto)
-    // Acerto só com 30 questões e 50% ou mais. O tema a revisar não expõe nota ruim.
+    // Acerto com pelo menos 30 questões. Na preparação para a prova, pode aparecer abaixo de 50%.
     if (perfil) {
       const acerto = m.acertoCitavel(perfil)
       // O resumo do período fala do acerto do período (regra própria, conferida mais abaixo).
-      if (carta.tipo !== 'relatorio' && (acerto === null || acerto < 50)) assert.ok(!PORCENTAGEM.test(tudo), `${contexto}: citou porcentagem com acerto ${acerto}:\n${tudo}`)
+      if (carta.tipo !== 'relatorio' && (acerto === null || acerto < 50 && !PREPARACAO_PROVA.has(carta.tipo))) assert.ok(!PORCENTAGEM.test(tudo), `${contexto}: citou porcentagem com acerto ${acerto}:\n${tudo}`)
       assert.ok(carta.personalizacao.filter((p) => p !== 'acerto').length <= 3, `${contexto}: mais de 3 observações pessoais (${carta.personalizacao.join(', ')})`)
     }
     return e
@@ -415,6 +416,44 @@ try {
       }
     }
   }
+  // O e-mail de prova sempre cita os dados confiáveis e ajusta a recomendação à taxa real.
+  for (const tipo of PREPARACAO_PROVA) {
+    const areas = [{ slug: 'tumores', total: 40, certas: 36 }, { slug: 'coluna', total: 25, certas: 9 }]
+    const leituras = [
+      [43, /um assunto por vez/],
+      [64, /Separe os erros por assunto/],
+      [78, /uma sessão curta com temas variados/],
+      [91, /manter contato com os temas/],
+    ]
+    for (const [pct, leitura] of leituras) {
+      for (let semente = 0; semente < 12; semente++) {
+        const perfil = rico(pct, { areas, posicaoRanking: 31, provaCronograma: 'TARO', diasParaProva: tipo === 'reta_final' ? 18 : 1 })
+        const carta = gerar(perfil, { tipo, semente })
+        assert.match(carta.corpo, tipo === 'reta_final' ? /Faltam 18 dias para o TARO/ : /Amanhã é o dia de fazer o TARO/)
+        assert.match(carta.corpo, /400 questões/)
+        assert.match(carta.corpo, new RegExp(`${pct}% de acertos`))
+        assert.match(carta.corpo, leitura)
+        assert.match(carta.corpo, /melhor resultado foi em tumores/)
+        assert.match(carta.corpo, /atenção ao tema de coluna/)
+        assert.match(carta.corpo, /ranking geral foi a 31ª/)
+        assert.match(carta.corpo, /boa prova|sucesso no dia da prova/)
+        assert.doesNotMatch(carta.corpo, /36%|pior área/)
+        assert.deepEqual(carta.personalizacao.sort(), ['acerto', 'melhor área', 'área a melhorar', 'posição no ranking'].sort())
+      }
+    }
+    for (const perfil of [pobre(7, { acertos: 3, erros: 4 }), pobre(40, { acertos: 4, erros: 1 }), pobre(100, { acertos: 90, erros: null })]) {
+      const carta = gerar(perfil, { tipo, semente: 1 })
+      assert.doesNotMatch(carta.corpo, /%|melhor resultado|ranking geral/)
+      assert.match(carta.corpo, /responder mais/)
+    }
+  }
+  for (const assinante of [true, false]) {
+    const carta = gerar(pobre(0, { assinante }), { tipo: 'boas_vindas_dia0', semente: 1 })
+    assert.match(carta.corpo, /explicação da resposta certa e das outras alternativas/)
+    assert.match(carta.corpo, /#\/cronograma/)
+    assert.match(carta.corpo, assinante ? /informe a data da prova/ : /Na demonstração/)
+    if (assinante) assert.doesNotMatch(carta.corpo, /permite montar e salvar um plano próprio/)
+  }
   const CAMPANHAS = [ 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
   assert.deepEqual([...auto.TIPOS_AUTOMATICOS], ['boas_vindas_dia0', 'pagamento_aprovado', 'obrigado_tempo', ...CAMPANHAS])
   assert.deepEqual([...auto.CAMPANHAS_DIARIAS], CAMPANHAS)
@@ -525,7 +564,7 @@ try {
         const carta = gerar(perfil, { tipo, semente, marco: tipo === 'marco' ? 100 : undefined })
         conferir(carta, `${tipo} #${semente}`, perfil); sorteios++
         const acerto = m.acertoCitavel(perfil)
-        if (acerto !== null && acerto < 50 && tipo !== 'relatorio') { assert.ok(!PORCENTAGEM.test(carta.assunto + carta.corpo), `${carta.versao} com ${acerto}% citou porcentagem:\n${carta.corpo}`); baixos++ }
+        if (acerto !== null && acerto < 50 && tipo !== 'relatorio' && !PREPARACAO_PROVA.has(tipo)) { assert.ok(!PORCENTAGEM.test(carta.assunto + carta.corpo), `${carta.versao} com ${acerto}% citou porcentagem:\n${carta.corpo}`); baixos++ }
       }
     }
   }
@@ -557,7 +596,7 @@ try {
   for (const tipo of ['ativo', 'convite_50', 'marco', 'opiniao', 'obrigado_assinatura'])
     for (let s = 1; s <= 200; s++) semRedundancia(gerar({ ...puxaFeliz, diasParado: tipo === 'voltou' ? 15 : 0 }, { tipo, semente: s, marco: 250 }).corpo, `${tipo} puxa-feliz #${s}`)
 
-  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length - auto.CAMPANHAS_DIARIAS.length} automáticos novos e ${auto.CAMPANHAS_DIARIAS.length} campanhas diárias), ${conferidas} cartas conferidas: lista proibida do TOM, nenhuma porcentagem abaixo de 50% (${baixos} cartas), nenhum número de questões abaixo de 10, 3 a 12 linhas, sem P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias), sem fechamento retórico de pressão, nenhuma palavra forte em frases seguidas e tom em ${sorteios} sorteios.`)
+  console.log(`Cartas: ${m.FAIXAS.length} faixas e ${TODOS.length} situações (${auto.TIPOS_AUTOMATICOS.length - auto.CAMPANHAS_DIARIAS.length} automáticos novos e ${auto.CAMPANHAS_DIARIAS.length} campanhas diárias), ${conferidas} cartas conferidas: lista proibida do TOM, porcentagem abaixo de 50% só na preparação para a prova (${baixos} cartas conferidas fora dela), nenhum número de questões abaixo de 10, 3 a 12 linhas, sem P.S., um link no máximo, assunto até 55 com o nome, teto de cadência (48 h / 3 em 14 dias), sem fechamento retórico de pressão, nenhuma palavra forte em frases seguidas e tom em ${sorteios} sorteios.`)
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
