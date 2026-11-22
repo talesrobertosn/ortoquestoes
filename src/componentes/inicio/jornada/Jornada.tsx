@@ -12,7 +12,8 @@ import type { DiaSequencia } from '../PainelSequencia'
 import { CenaDiorama } from '../cena/CenaDiorama'
 import { CorujaPixel } from '../../../biblioteca/sala/CorujaPixel'
 import { usarPeriodo } from '../../../estado/aparencia'
-import { ArvoreNatal, BonecoNatal, FestaoNatal, GuirlandaNatal } from '../../../natal/EnfeitesInicio'
+import { usarNatalInicio } from '../../../natal/InteracoesInicio'
+import { ArvoreNatal, BonecoNatal, ChocolateNatal, FestaoNatal, GuirlandaNatal, LampadaAtalho, NeveAtalhos, ReflexoNatal, TrenoNatal } from '../../../natal/EnfeitesInicio'
 
 /*
  * A página inicial em níveis (31/10/2026, "redesign premium" pedido pelo Tales).
@@ -66,14 +67,16 @@ export function usarFestaDaMeta(cumprida: boolean): number {
   return festa
 }
 
-export function HeroiJornada({ data, titulo, lide, missao, botao, depois, linhaFogo, descanso, festa }: {
+export function HeroiJornada({ data, titulo, lide, missao, botao, depois, linhaFogo, descanso, festa, totalAtalhos }: {
   data: string; titulo: string; lide: ReactNode; missao: ReactNode; botao: ReactNode; depois?: ReactNode; linhaFogo: number
-  descanso?: boolean; festa?: number
+  descanso?: boolean; festa?: number; totalAtalhos: number
 }) {
   const periodo = usarPeriodo()
   return (
     <section className={`jn-heroi jn-heroi--${periodo} hd-topo--${periodo}`} aria-labelledby="jn-titulo" style={SPRITES}>
       <FestaoNatal />
+      <TrenoNatal periodo={periodo} />
+      <ReflexoNatal total={totalAtalhos} />
       <header className="jn-saudacao">
         <p className="jn-data">{data}</p>
         <h1 id="jn-titulo">{titulo}</h1>
@@ -116,6 +119,7 @@ export function TrilhaSequencia({ streak, dias, festa = 0 }: { streak: Streak; d
             : <p className="jn-trilha__dias jn-trilha__dias--zero"><span>Acenda a chama hoje</span></p>}
           <p className="jn-trilha__estagio"><b>{fogo.estagio.nome}</b>{proximo ? ` · ${proximo}` : ' · o estágio máximo'}</p>
         </div>
+        <ChocolateNatal dias={streak.atual} />
       </div>
       <ArvoreNatal />
 
@@ -156,12 +160,18 @@ export function TrilhaSequencia({ streak, dias, festa = 0 }: { streak: Streak; d
 }
 
 export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
+  const { ativo, indicar, balançar } = usarNatalInicio()
   return (
-    <nav className="jn-atalhos" aria-label="Acesso rápido" style={{ '--colunas': atalhos.length <= 6 ? 3 : 4 } as CSSProperties}>
+    <nav className={`jn-atalhos${ativo ? ' jn-atalhos--natal' : ''}`} aria-label="Acesso rápido" style={{ '--colunas': atalhos.length <= 6 ? 3 : 4 } as CSSProperties}>
       <ul>
-        {atalhos.map((a) => (
+        {atalhos.map((a, i) => (
           <li key={a.destino}>
-            <a className="jn-atalho" href={href(a.destino)}>
+            <a className="jn-atalho" href={href(a.destino)}
+              onPointerEnter={ativo ? (e) => { if (e.pointerType === 'mouse') { indicar(i); balançar(i) } } : undefined}
+              onPointerLeave={ativo ? () => indicar((anterior) => anterior === i ? null : anterior) : undefined}
+              onFocus={ativo ? () => { indicar(i); balançar(i) } : undefined}
+              onBlur={ativo ? () => indicar((anterior) => anterior === i ? null : anterior) : undefined}
+              onPointerDown={ativo ? () => balançar(i) : undefined}>
               <span className="jn-atalho__icone" aria-hidden="true">
                 <img src={recurso(`pixel/${a.icone}.png`)} width={40} height={40} alt="" loading="lazy" decoding="async" />
               </span>
@@ -170,10 +180,12 @@ export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
               {a.contador ? <b className="jn-atalho__contador numerico" aria-label={`${a.contador} para hoje`}>{a.contador > 99 ? '99+' : a.contador}</b> : null}
               {a.novo && <b className="jn-atalho__novo">Novo</b>}
             </a>
+            <LampadaAtalho indice={i} />
           </li>
         ))}
       </ul>
       <GuirlandaNatal />
+      <NeveAtalhos />
     </nav>
   )
 }
@@ -216,6 +228,7 @@ export function HeroiVitrine({ titulo, proposta, lide, cta, entrar, nota, amostr
     <>
       <section className={`jn-heroi jn-heroi--vitrine jn-heroi--${periodo} hd-topo--${periodo}`} aria-labelledby="jn-vitrine-titulo" style={SPRITES}>
         <FestaoNatal />
+        <TrenoNatal periodo={periodo} />
         <header className="jn-saudacao jn-vitrine__texto">
           <p className="jn-data">Provas oficiais comentadas</p>
           <h1 id="jn-vitrine-titulo">{titulo}</h1>

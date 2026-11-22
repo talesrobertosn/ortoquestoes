@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type CSSProperties, type PointerEvent, type ReactNode } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState, type CSSProperties, type PointerEvent, type ReactNode } from 'react'
 import { recurso } from '../../config'
 import { Icone } from '../../componentes/Icone'
 import { GatoPixel } from '../../componentes/mascote/GatoPixel'
@@ -9,6 +9,7 @@ import { ABOBORA, MORCEGO, PALETA_ABOBORA, PALETA_MORCEGO } from '../salao/sprit
 import { CorujaPixel } from './CorujaPixel'
 import { somDisponivel } from './sons'
 import type { Periodo, Salao } from './usarSalao'
+const NatalSalao = lazy(() => import('./NatalSalao'))
 
 /**
  * Pontos da pintura (scripts/gerar_cena_salao.py, 480 x 180 pixels de arte) onde moram os objetos vivos: a coruja no
@@ -109,6 +110,7 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
       <div className="bb-palco" ref={palco} onPointerMove={moverLuz} onPointerDown={moverLuz}>
        <div className="bb-palco__mundo" ref={mundo} style={{ '--e': `${escala}px`, '--px': `${px}px` } as CSSProperties}>
         <ArteSalao periodo={s.periodo} />
+        {s.estacao === 'natal' && <Suspense fallback={null}><NatalSalao periodo={s.periodo} /></Suspense>}
         <span className="bb-palco__veu" aria-hidden="true" />
 
         {/* Poeira no feixe da janela e vaga-lumes à noite (só enfeite, param com "menos movimento"). */}
@@ -145,7 +147,7 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
             </span>
           </p>}
           <button type="button" className="bb-coruja" onClick={s.acoes.tocarCoruja} aria-label="Coruja bibliotecária: uma dica" data-guia="ajuda">
-            <CorujaPixel estado={s.coruja.estado} style={{ ['--coruja-escala' as string]: px * 1.75 }} />
+            <CorujaPixel estado={s.coruja.estado} natal={s.estacao === 'natal'} style={{ ['--coruja-escala' as string]: px * 1.75 }} />
           </button>
         </div>
         <div className="bb-personagem bb-personagem--gato" style={pos(PONTOS.gato.x, PONTOS.gato.y)}>
@@ -160,7 +162,6 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
         </span>)}
         {s.estacao === 'halloween' && <span className="bb-aboboras" aria-hidden="true"><Sprite grade={ABOBORA} paleta={PALETA_ABOBORA} px={pxObj + 1} /><Sprite grade={ABOBORA} paleta={PALETA_ABOBORA} px={pxObj} /></span>}
         {s.estacao === 'halloween' && <span className="bb-morcegos" aria-hidden="true"><Sprite grade={MORCEGO} paleta={PALETA_MORCEGO} px={3} /><Sprite grade={MORCEGO} paleta={PALETA_MORCEGO} px={2} /></span>}
-        {s.estacao === 'natal' && <span className="bb-pisca" aria-hidden="true">{Array.from({ length: 18 }, (_, i) => <i key={i} />)}</span>}
        </div>
         <span className="bb-breu" aria-hidden="true" />
       </div>

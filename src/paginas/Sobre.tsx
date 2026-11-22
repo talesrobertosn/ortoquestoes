@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Icone, type NomeIcone } from '../componentes/Icone'
+import { MolduraNatal } from '../natal/MolduraNatal'
 import { primeiroNome } from '../componentes/Cabecalho'
 import { usarConta } from '../conta/ContextoConta'
 import { EXIGIR_CONTA_PARA_QUESTOES, ROTULO_SIMULADOS, fraseGratis } from '../config'
@@ -202,6 +203,7 @@ export function Sobre() {
   return (
     <article className="sb-pagina">
       <section className="sb-topo" aria-labelledby="sb-titulo">
+        <MolduraNatal publica />
         <div className="sb-topo__texto">
           <p className="tr-heroi__selo">O projeto</p>
           <h1 id="sb-titulo">{nome ? <>{nome}, este é o Orto Questões.</> : 'Questões de ortopedia comentadas como uma aula.'}</h1>

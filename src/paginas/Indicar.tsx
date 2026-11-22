@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type CSSProperties, type RefObject } from 'react'
 import { recurso, urlCss } from '../config'
+import { MolduraNatal } from '../natal/MolduraNatal'
 import { usarConta } from '../conta/ContextoConta'
 import {
   DIAS_POR_AMIGO, LIMITE_AMIGOS, QUESTOES_PARA_CONFIRMAR, guardarConviteRecebido, linkIndicacao,
@@ -462,6 +463,7 @@ export function Indicar() {
       <Margens />
       <DragaoViajante raiz={raiz} aoSoprar={chover} />
       <section data-poleiro="" className="ind-topo" aria-labelledby="ind-titulo">
+        <MolduraNatal />
         <div className="ind-topo__texto">
           <p className="ind-topo__selo"><Icone nome="presente" tamanho={13} /> Indique e ganhe</p>
           <h1 id="ind-titulo">Chame um amigo. Vocês dois ganham <em>{DIAS_POR_AMIGO} dias de tudo.</em></h1>

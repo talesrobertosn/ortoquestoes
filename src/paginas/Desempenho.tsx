@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { AtalhoFlashcards } from '../componentes/AtalhoFlashcards'
+import { MolduraNatal } from '../natal/MolduraNatal'
 import { BackupProgresso } from '../componentes/BackupProgresso'
 import { DetalhesDiaSemana, DetalhesNumeros, DetalhesProvas, usarDetalhes } from '../componentes/DesempenhoDetalhado'
 import { Medidor } from '../componentes/GraficosDesempenho'
@@ -271,6 +272,7 @@ export function DadosLocais() {
         <section className="dp-topo" id="dp-topo" aria-labelledby="dp-titulo">
           <div className={`dp-topo__cena dp-topo__cena--${periodoArte}`}>
             <CenaObservatorio periodo={periodoArte} />
+            <MolduraNatal />
             <div className="dp-topo__titulo">
               <p className="dp-rotulo dp-rotulo--claro"><Icone nome="grafico" tamanho={14} /> {exemplo ? 'Desempenho de exemplo' : 'Seu desempenho'}</p>
               <h1 id="dp-titulo">{exemplo ? `${NOME_EXEMPLO}, residente de exemplo` : nome ? `${nome}, seu desempenho` : 'Seu desempenho'}</h1>

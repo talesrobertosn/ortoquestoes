@@ -1,9 +1,12 @@
-import { useEffect, useRef } from 'react'
+import { lazy, Suspense, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { CorujaPixel } from '../biblioteca/sala/CorujaPixel'
+import { modoNatalAtivo } from '../natal/modoNatal'
 import { porExtenso } from '../util/extenso'
 import { Icone } from './Icone'
 import '../estilos/componentes/FimSessao.css'
+
+const ChocolateNatal = lazy(() => import('../natal/ChocolateNatal'))
 
 /** Como ficou cada questão, na ordem da sessão (a folha de respostas em miniatura). */
 export type SituacaoFim = 'certa' | 'errada' | 'anulada' | 'pulada'
@@ -71,6 +74,7 @@ export function ModalFimSessao({ total, acertos, simulado, nome = '', melhorTema
   const mostraResultado = !simulado && taxa !== null && taxa >= 50
   const comNome = (frase: string) => (nome ? `${nome}, ${frase.charAt(0).toLowerCase()}${frase.slice(1)}` : frase)
   const titulo = simulado ? comNome('Prova respondida.') : mostraResultado && taxa! >= 80 ? comNome('Que sessão!') : comNome('Você chegou ao fim.')
+  const natal = !simulado && modoNatalAtivo()
   const estadoCoruja = simulado ? 'olhando' : mostraResultado && taxa! >= 70 ? 'acenando' : 'lendo'
 
   const numeros: Array<{ valor: string; rotulo: string; destaque?: boolean }> = []
@@ -89,7 +93,10 @@ export function ModalFimSessao({ total, acertos, simulado, nome = '', melhorTema
         <button type="button" className="fs-fechar" onClick={aoLer} aria-label="Fechar e ler o comentário da última questão"><Icone nome="fechar" tamanho={18} /></button>
 
         <div className="fs-mesa" aria-hidden="true">
-          <CorujaPixel estado={estadoCoruja} className="fs-coruja" />
+          {natal ? <div className="fs-natal-arte">
+            <CorujaPixel estado={estadoCoruja} className="fs-coruja" natal />
+            <Suspense fallback={null}><ChocolateNatal className="fs-natal-chocolate" /></Suspense>
+          </div> : <CorujaPixel estado={estadoCoruja} className="fs-coruja" natal={false} />}
           <ol className={`fs-folha${compacta ? ' fs-folha--compacta' : ''}${mostraResultado ? '' : ' fs-folha--neutra'}`}>
             {casas.map((s, i) => <li key={i} className={`fs-casa fs-casa--${s}`} style={{ animationDelay: `${Math.min(i, 40) * 18}ms` }} />)}
           </ol>

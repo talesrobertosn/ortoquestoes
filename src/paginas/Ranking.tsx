@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
+import { MolduraNatal } from '../natal/MolduraNatal'
 import { contasDisponiveis, supabase } from '../conta/supabase'
 import { href } from '../util/rotas'
 import { recurso } from '../config'
@@ -240,6 +241,7 @@ export function Conquistas({ escolher = false }: { escolher?: boolean } = {}) {
   return <div className="cem cem--conquistas">
     {/* A galeria de troféus do castelo: a mesma escadaria do Salão dos Cem, com o contador num vidro escuro. */}
     <section className="cem-galeria" aria-labelledby="cem-galeria-t" style={{ backgroundImage: `url(${recurso('ranking/cem/escadaria-960.webp')})` }}>
+      <MolduraNatal />
       <div className="cem-galeria__texto">
         <p className="cem-heroi__rotulo">Galeria de troféus</p>
         <h1 id="cem-galeria-t">Conquistas</h1>

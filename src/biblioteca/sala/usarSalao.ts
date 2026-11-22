@@ -97,7 +97,7 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
   const cenarioDaConta = lerCenario()
   const periodo = periodoEscolhido ?? (cenarioDaConta !== 'horario' ? cenarioDaConta : temaEscuro ? 'noite' : periodoDaHora(agora.getHours()))
   useEffect(() => { if (ehMadrugada) achar('madrugada', 'Plantão? Os resumos mais curtos estão na mesa.') }, [ehMadrugada]) // eslint-disable-line react-hooks/exhaustive-deps
-  useEffect(() => { if (estacao) achar('sazonal', estacao === 'halloween' ? 'Abóboras no salão até o fim de outubro.' : 'Pisca-pisca no salão em dezembro.') }, [estacao]) // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { if (estacao) achar('sazonal', estacao === 'halloween' ? 'Abóboras no salão até o fim de outubro.' : 'O salão acendeu as luzes de Natal.') }, [estacao]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // Palavras mágicas da busca.
   const magica = palavraMagica(busca)

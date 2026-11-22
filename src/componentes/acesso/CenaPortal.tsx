@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { recurso } from '../../config'
+import { MolduraNatal } from '../../natal/MolduraNatal'
 import { EVENTO_RESPOSTA_ACESSO } from './QuestaoAcesso'
 import '../../estilos/paginas/LoginBiblioteca.css'
 import '../../estilos/paginas/BonfireResposta.css'
@@ -69,6 +70,7 @@ export function CenaPortal({ texto, children, esquerda, direita }: { texto: Reac
   return (
     <section className="pc pc--noite pc--biblioteca" aria-labelledby="ac-titulo">
       <div className={`pc-palco${animado ? ' pc-palco--animado' : ''}${pausado ? ' pc-palco--pausado' : ''}`} ref={palco} aria-hidden="true">
+        <MolduraNatal publica />
         <i className="pc-biblioteca__luz" />
         <span className={`pc-esqueleto${festa ? ' pc-esqueleto--festa' : ''}`}><i className="pc-biblioteca__mascote" style={{ backgroundImage: `url("${recurso('pixel/acesso/biblioteca/mascote.webp')}")` }} /></span>
         <i className="pc-biblioteca__bonfire" style={{ backgroundImage: `url("${recurso(`pixel/acesso/biblioteca/bonfire-${animado ? 'integrada' : 'integrada-parado'}-v4.webp`)}")` }} />

@@ -109,12 +109,6 @@ button.bb-obj:disabled { cursor: default; }
 .bb-aboboras { position: absolute; left: 6%; bottom: 3%; display: flex; align-items: flex-end; gap: 4px; }
 .bb-morcegos { position: absolute; left: 50%; top: 8%; display: flex; gap: 2rem; animation: bb-morcego 16s ease-in-out infinite; }
 @keyframes bb-morcego { 50% { transform: translate(-14px, 4px); } }
-.bb-pisca { position: absolute; left: 0; right: 0; top: 2%; display: flex; justify-content: space-around; }
-.bb-pisca i { width: 6px; height: 6px; border-radius: 50%; background: #f6d27a; box-shadow: 0 0 8px #f6d27a; animation: bb-pisca 5s ease-in-out infinite; }
-.bb-pisca i:nth-child(3n) { background: #e86a5a; box-shadow: 0 0 8px #e86a5a; animation-delay: 0.4s; }
-.bb-pisca i:nth-child(3n+1) { background: #7ed0a0; box-shadow: 0 0 8px #7ed0a0; animation-delay: 0.8s; }
-@keyframes bb-pisca { 50% { opacity: 0.3; } }
-
 /* Poeira no feixe da janela: poucas, lentas, só dentro da luz. */
 .bb-poeira { position: absolute; left: 37%; top: 22%; width: 27%; height: 72%; pointer-events: none; }
 .bb-poeira i { position: absolute; left: calc(var(--i) * 12%); top: calc(var(--i) * 9% + 6%); width: max(2px, calc(var(--e) * 0.8)); height: max(2px, calc(var(--e) * 0.8)); border-radius: 1px;
@@ -745,10 +739,10 @@ button.bb-obj:disabled { cursor: default; }
 }
 
 /* ── Calma no celular (01/11/2026, Tales: "tudo fica mexendo de maneira muito estranha, dá até tontura") ──
-   Igual à página inicial: a cena fica parada, só os bichos se mexem. Sem poeira, vaga-lumes, morcegos, piscas,
+   Igual à página inicial: a cena fica parada, só os bichos se mexem. Sem poeira, vaga-lumes, morcegos,
    chamas tremendo ou brilho pulsando; os livros não pulam ao toque (no celular não existe "passar o mouse"). */
 @media (hover: none), (max-width: 40rem) {
-  .bb-poeira, .bb-vagalumes, .bb-morcegos, .bb-pisca { display: none; }
+  .bb-poeira, .bb-vagalumes, .bb-morcegos { display: none; }
   .bb-raro:not(.bb-raro--aceso), .bb-arandela__luz, .bb-gema--lendario, .bb-vela::after, .bb-gato__zz, .bb-insp__aura, .bb-insp__fagulhas i, .bb-enfeite__chama::after, .bb-vol--alvo { animation: none !important; }
   .bb-vol, .bb-vol:hover, .bb-vol:focus-visible { transform: none; transition: none; }
   .bb-vol--ativo { transform: translateY(-5px); }
