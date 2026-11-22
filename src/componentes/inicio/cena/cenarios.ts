@@ -86,14 +86,14 @@ export const CENARIOS: readonly Cenario[] = [
     coruja: [{ x: 201, y: 134 }, { x: 164, y: 154 }, { x: 356, y: 165 }, { x: 147, y: 104 }, { x: 191, y: 104 }],
   },
   {
-    id: 'abrigo', arquivo: 'cena-abrigo', particulas: 'faiscas',
+    id: 'abrigo', arquivo: 'cena-abrigo', particulas: 'faiscas', pinturaNatal: 'cena-abrigo-natal',
     fogo: [274, 151], mascote: { x: 293, y: 103, w: 42, h: 60 }, posePadrao: 'fogueira',
     gato: [{ x: 222, y: 149, pose: 'fogueira' }, { x: 285, y: 170, pose: 'sentado' }, { x: 342, y: 169, pose: 'repouso' }],
     coruja: [{ x: 370, y: 101 }, { x: 207, y: 98 }, { x: 348, y: 132 }],
   },
   {
     // A Praça do Pinheiro (10/11/2026, scripts/cenarios/inicio_praca.py): a praça de pedra da vila, com um toque de Natal.
-    id: 'praca', arquivo: 'cena-praca', particulas: 'vagalumes', inverno: true,
+    id: 'praca', arquivo: 'cena-praca', particulas: 'vagalumes', inverno: true, pinturaNatal: 'cena-praca-natal',
     gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 174, y: 139, pose: 'sentado' }, { x: 262, y: 170, pose: 'repouso' }, { x: 330, y: 164, pose: 'observando' }, { x: 204, y: 174, pose: 'repouso' }],
     // O telhadinho do poço, o encosto do banco, o caixote, o presente e a pilha de lenha.
     coruja: [{ x: 166, y: 102 }, { x: 198, y: 150 }, { x: 213, y: 114 }, { x: 396, y: 150 }, { x: 308, y: 162 }],

@@ -103,6 +103,7 @@ try{
  for(const c of CENARIOS)for(const periodo of ['manha','tarde','noite'])for(const size of ['', '-960']){
   await access(`public/pixel/inicio/${c.arquivo}-${periodo}${size}.webp`)
   if(c.neve?.arquivo)await access(`public/pixel/inicio/${c.neve.arquivo}-${periodo}${size}.webp`)
+  if(c.pinturaNatal)await access(`public/pixel/inicio/${c.pinturaNatal}-${periodo}${size}.webp`)
  }
  await access('public/pixel/inicio/trem-vale.png')
  assert.ok(CENARIOS.find(c=>c.id==='abrigo').fogo)

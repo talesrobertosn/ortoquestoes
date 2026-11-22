@@ -37,8 +37,9 @@ O QUE JÁ ESTÁ NO AR (não refaça)
   usa essa pintura no lugar da normal.
 
 SUA TAREFA: ETAPA 3, OS OUTROS CENÁRIOS DO TOPO
-Forja, Cais e Observatório foram incorporados pelo PR #1205. A Neve também foi aprovada. Continuar pelo Abrigo
-e, depois, pela Praça. A aprovação continua individual.
+Forja, Cais, Observatório, Neve, Abrigo e Praça foram aprovados. As próximas entregas seguem as interações
+e as demais páginas de `docs/design/MODO-NATAL.md`. O Tales pediu preparar todas as prévias sem interromper
+a produção para pedir aprovações intermediárias. A publicação das novas peças espera o OK nos prints.
 Tales (21/11/2026): "quanto mais natalino melhor, pode até exagerar as vezes". Os acentos podem ser mais fortes
 onde a cena comportar, com a mesma escala, luz integrada e caixas dos personagens livres.
 
