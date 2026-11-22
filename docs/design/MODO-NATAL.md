@@ -139,8 +139,8 @@ número ou botão e sem criar rolagem lateral:
       `cenarios.ts` e o `CenaDiorama.tsx` troca a pintura com o modo no ar.
 - [x] Etapa 3, Forja, Cais e Observatório (pinturas aprovadas em 21/11/2026): painéis de manhã, tarde e noite, com
       pinheiros e luz própria. Os três cenários usam `pinturaNatal` para escolher a variante no rodízio.
-- [ ] Etapa 3, Neve: prévia local em `codex/natal-neve`, com festão aceso na cabana, pinheiro e trenó com presentes.
-      As três horas foram conferidas na inicial em 1440 e 390 px, tema claro e escuro. Aguarda o OK do Tales nos prints.
+- [x] Etapa 3, Neve (aprovada pelo Tales em 21/11/2026): festão aceso na cabana, pinheiro e trenó com presentes.
+      As três horas foram conferidas na inicial em 1440 e 390 px, tema claro e escuro.
 - [ ] Etapa 3, Abrigo e Praça: seguem na ordem depois da Neve, pelo pedido em `docs/prompts/codex-natal.md`.
 - [ ] Etapa 4: as conversas entre as partes (a meta do dia acende o fio, a coruja visita a guirlanda, o trenó).
 - [ ] Demais páginas.

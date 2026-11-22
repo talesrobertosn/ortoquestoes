@@ -37,9 +37,8 @@ O QUE JÁ ESTÁ NO AR (não refaça)
   usa essa pintura no lugar da normal.
 
 SUA TAREFA: ETAPA 3, OS OUTROS CENÁRIOS DO TOPO
-Forja, Cais e Observatório foram aprovados e incorporados pelo PR #1205. A próxima pintura é Neve,
-seguida de Abrigo e Praça. A prévia da Neve está no branch local `codex/natal-neve` e espera o OK nos prints.
-A aprovação continua individual.
+Forja, Cais e Observatório foram incorporados pelo PR #1205. A Neve também foi aprovada. Continuar pelo Abrigo
+e, depois, pela Praça. A aprovação continua individual.
 Tales (21/11/2026): "quanto mais natalino melhor, pode até exagerar as vezes". Os acentos podem ser mais fortes
 onde a cena comportar, com a mesma escala, luz integrada e caixas dos personagens livres.
 
