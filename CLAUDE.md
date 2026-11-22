@@ -61,7 +61,7 @@ Em 19/10/2026, Tales aprovou a **Caderneta de topografia** (feed) e o **Bingo da
 
 Em 13/11/2026, Tales aprovou a **Errata** (stories de aula no gabinete de revisão, para questões em que a edição do livro decide) e a variante de propaganda **Como escrevemos o comentário** (o comentário real num iPhone, do aviso em vermelho até as alternativas). Veja [o guia](marketing/instagram/estilos/ERRATA.md).
 
-Em 18/11/2026, Tales aprovou os **Stories com alternativas** (a pedido, fora do rodízio): a questão com as alternativas escritas e uma área livre, sem caixa, para a enquete A, B, C, D; depois a resposta com um trecho do comentário e o livro, e o convite ao site gratuito. A temática se adapta a cada vez (o modelo é a tela do celular). Veja [o guia](marketing/instagram/estilos/STORIES-COM-ALTERNATIVAS.md).
+Em 18/11/2026, Tales aprovou os **Stories com alternativas** (a pedido, fora do rodízio): a questão com as alternativas escritas e uma área livre, sem caixa, para a enquete A, B, C, D; depois a resposta com um trecho do comentário e o livro, e o convite ao site gratuito. A temática se adapta a cada vez (o modelo é a tela do celular). Em 22/11/2026 ele aprovou também a **carta de domingo com a vitrine do site** (3º story de propaganda com prints reais: resumo no computador, Atlas 3D centralizado, calendário do cronograma, comentário no iPhone), com o passo a passo da captura no mesmo guia. Veja [o guia](marketing/instagram/estilos/STORIES-COM-ALTERNATIVAS.md).
 
 Em 22/10/2026, Tales aprovou a **Busca** (feed e stories: o sintoma digitado num buscador com a marca Orto Questões, a questão como resultado e a resposta no trecho em destaque). Veja [o guia](marketing/instagram/estilos/BUSCA.md).
 
