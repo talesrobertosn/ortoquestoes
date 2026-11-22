@@ -1,52 +1,98 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><title>Carta de domingo — deficiência radial, BAYNE e KLUG, TEOT 2025 (stories)</title>
-<!-- Stories com alternativas (guia: estilos/STORIES-COM-ALTERNATIVAS.md), temática "carta de domingo": papel de carta
-     creme sobre a mesa verde-noite, a radiografia presa com clipe, alternativas como quadradinhos para marcar.
-     Área livre (sem caixa) para a enquete no story 1.
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Carta de domingo — BAYNE e KLUG, TEOT 2025 (stories, versão 2)</title>
+<!-- Stories com alternativas (guia: estilos/STORIES-COM-ALTERNATIVAS.md), temática "carta de domingo", refeita do zero
+     a pedido do Tales (22/11/2026): cantos arredondados, letra de leitura fácil (Plus Jakarta e Inter; a letra de mão
+     só no cumprimento e na assinatura), mais organização, e um 3º story de propaganda com telas reais do site.
      Questão real: mao-0406 (TEOT 2025), gabarito oficial D (tipo IV).
      Fontes: Green's Operative Hand Surgery, 7ª ed., cap. 38, Tabela 38.2, p. 1329 e Fig. 38.1, p. 1330;
-     Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 341. -->
+     Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 341.
+     Story 3: telas reais já capturadas (comentário: posts/2026-11-13-errata-metastases; Atlas 3D: posts/2026-10-27-atlas-3d;
+     Biblioteca: resumos-biblioteca; cronograma: marketing/kit/telas), conta de exemplo, por isso "Telas ilustrativas".
+     "Até 20 questões comentadas por dia, grátis": LIMITE_GRATIS_ATUAL = 20 em src/config.ts. -->
 <link rel="stylesheet" href="../../estilos/stories-com-alternativas/base.css">
 <style>
-section { color: #2a2420;
+section { color: #1f2a28; }
+.mesa { position: absolute; inset: -60px; z-index: -2;
   background:
-    radial-gradient(70% 45% at 50% 35%, rgba(244,207,124,.16) 0%, rgba(244,207,124,0) 70%),
-    radial-gradient(60% 40% at 0% 100%, #14655E 0%, rgba(20,101,94,0) 70%),
-    linear-gradient(175deg, #0f3631 0%, #0b2a26 60%, #0d302c 100%); }
-section::before { content: ''; position: absolute; inset: 0; z-index: -1; opacity: .08;
-  background-image: repeating-linear-gradient(100deg, rgba(255,255,255,.5) 0 1px, transparent 1px 9px); }
-.carta { position: absolute; left: 56px; right: 56px; background: #fbf6e9;
-  background-image:
-    repeating-linear-gradient(180deg, transparent 0 55px, rgba(20,101,94,.10) 55px 57px),
-    linear-gradient(90deg, transparent 88px, rgba(174,51,38,.18) 88px 90px, transparent 90px);
-  box-shadow: 0 40px 70px -30px rgba(0,0,0,.7), 0 2px 0 rgba(255,255,255,.6) inset; border-radius: 6px; }
-.carta::after { content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: 6px;
-  background: radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,0) 60%, rgba(120,90,40,.10) 100%); }
-.mao { font-family: Caveat; color: #1f4f49; }
-.serif { font-family: Source; }
-.selo { position: absolute; width: 150px; height: 180px; background: #fff; padding: 10px; transform: rotate(4deg);
-  outline: 5px dotted #fbf6e9; outline-offset: -3px;
-  box-shadow: 0 6px 14px rgba(0,0,0,.2); }
-.selo .in { width: 100%; height: 100%; background: linear-gradient(160deg, #1d8a7c, #0e4d47); display: grid; place-items: center; align-content: center; gap: 8px; color: #F6EEDB; }
-.selo svg { width: 70px; height: 70px; }
-.selo b { font: 800 17px/1 Jakarta; letter-spacing: 2px; }
-.carimbo { position: absolute; width: 190px; height: 190px; border-radius: 50%; border: 4px solid rgba(174,51,38,.55); color: rgba(174,51,38,.65);
-  display: grid; place-items: center; text-align: center; font: 800 20px/1.2 Jakarta; letter-spacing: 2px; transform: rotate(-14deg); }
-.foto { position: absolute; background: #fff; padding: 14px 14px 52px; box-shadow: 0 18px 30px -14px rgba(0,0,0,.5); }
+    radial-gradient(55% 32% at 78% 10%, rgba(244,207,124,.42) 0%, rgba(244,207,124,0) 70%),
+    radial-gradient(60% 40% at 0% 40%, #1d8a7c 0%, rgba(29,138,124,0) 72%),
+    radial-gradient(70% 40% at 100% 85%, #2b6273 0%, rgba(43,98,115,0) 70%),
+    radial-gradient(60% 35% at 10% 100%, #3fae96 0%, rgba(63,174,150,0) 72%),
+    linear-gradient(170deg, #0c302c 0%, #0f4c45 45%, #12594f 75%, #0c3530 100%); }
+.grao { position: absolute; inset: 0; z-index: -1; opacity: .06; mix-blend-mode: overlay;
+  background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 5px 5px; }
+
+/* O envelope atrás da carta */
+.envelope { position: absolute; border-radius: 34px; background: linear-gradient(160deg, #efe3c6, #dcc9a0);
+  box-shadow: 0 30px 60px -30px rgba(0,0,0,.7); overflow: hidden; }
+.envelope::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 62%;
+  background: linear-gradient(160deg, #f6ecd4, #e6d6b0); clip-path: polygon(0 0, 100% 0, 50% 100%); }
+.selo { position: absolute; width: 128px; height: 152px; border-radius: 16px; padding: 9px; background: #fffaf0;
+  box-shadow: 0 8px 18px -8px rgba(0,0,0,.5); transform: rotate(5deg); }
+.selo .in { width: 100%; height: 100%; border-radius: 10px; background: linear-gradient(160deg, #1f9584, #0e4d47);
+  display: grid; place-items: center; align-content: center; gap: 8px; color: #F6EEDB; border: 2px dashed rgba(246,238,219,.5); }
+.selo svg { width: 62px; height: 62px; }
+.selo b { font: 800 16px/1 Jakarta; letter-spacing: 1.5px; }
+
+/* A carta */
+.carta { position: absolute; left: 52px; right: 52px; border-radius: 40px; background: #fdf9ef;
+  box-shadow: 0 50px 90px -40px rgba(0,0,0,.75), 0 2px 0 #fff inset; }
+.carta::after { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(120% 70% at 50% 0%, rgba(255,255,255,0) 60%, rgba(150,120,60,.08) 100%); }
+.cab { position: absolute; left: 56px; right: 56px; top: 44px; display: flex; align-items: center; gap: 14px; }
+.cab svg { width: 46px; height: 46px; border-radius: 12px; }
+.cab .pil { padding: 10px 18px; border-radius: 999px; background: #e3f3ed; color: var(--verde); font: 800 19px/1 Jakarta; letter-spacing: 2px; text-transform: uppercase; }
+.cab .data { margin-left: auto; font: 600 23px/1 Inter; color: #7a8784; }
+.mao { font-family: Caveat; color: #14655E; }
+.txt { font: 400 31px/1.45 Inter; color: #34423f; }
+.txt b { color: #1f2a28; font-weight: 700; }
+.foto { position: absolute; border-radius: 26px; overflow: hidden; background: #000; box-shadow: 0 24px 40px -22px rgba(0,0,0,.6); }
 .foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.foto span { position: absolute; left: 16px; right: 16px; bottom: 12px; font: 400 26px/1 Caveat; color: #444; }
-.clipe { position: absolute; width: 46px; height: 120px; border: 6px solid #9aa3a3; border-radius: 24px; box-shadow: 1px 2px 3px rgba(0,0,0,.25); }
-.clipe::after { content: ''; position: absolute; left: 6px; right: 6px; top: 14px; bottom: 26px; border: 6px solid #9aa3a3; border-radius: 16px; }
-.caixas { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 30px; }
-.cx { display: flex; align-items: center; gap: 18px; font: 600 40px/1 Source; color: #2a2420; }
-.cx i { width: 46px; height: 46px; border: 3.5px solid #2a2420; border-radius: 6px; flex: none; position: relative; }
-.cx i.x::before, .cx i.x::after { content: ''; position: absolute; left: -6px; right: -6px; top: 18px; height: 5px; border-radius: 3px; background: #c0392b; transform: rotate(45deg); }
-.cx i.x::after { transform: rotate(-45deg); }
-.cx.no { opacity: .45; }
+.fita { position: absolute; width: 150px; height: 42px; border-radius: 6px; background: rgba(244,207,124,.75); transform: rotate(-8deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,.12); }
+.tag { display: inline-block; padding: 9px 16px; border-radius: 999px; background: #1f2a28; color: #fff; font: 800 19px/1 Jakarta; letter-spacing: 2px; }
+.alts { position: absolute; left: 56px; right: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.alt { display: flex; align-items: center; gap: 18px; height: 100px; padding: 0 24px; border-radius: 28px; background: #f1ebdd;
+  font: 800 38px/1 Jakarta; color: #1f2a28; box-shadow: 0 1px 0 rgba(255,255,255,.9) inset, 0 0 0 1.5px rgba(31,42,40,.06); }
+.alt .l { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: var(--verde); color: #fff; font: 800 27px/1 Jakarta; flex: none; }
+.alt.certa { background: linear-gradient(160deg, #fff4d4, #f8dfa0); }
+.alt.certa .l { background: linear-gradient(160deg, #f8dc92, #dcaa45); color: #4a3a12; }
+.alt.no { opacity: .45; }
+.assin { position: absolute; right: 56px; display: flex; align-items: center; gap: 12px; }
+.assin svg { width: 40px; height: 40px; border-radius: 10px; }
 .dica .t { color: #fff; }
-.dica .s { color: rgba(255,255,255,.8); }
-.botao { display: inline-flex; align-items: center; justify-content: center; height: 96px; padding: 0 56px; border-radius: 999px;
-  font: 800 36px/1 Jakarta; color: #fff; background: linear-gradient(170deg, #1f9584, #14655E); box-shadow: 0 18px 30px -16px rgba(0,0,0,.5); }
+.dica .s { color: rgba(255,255,255,.82); }
+.fonte { font: 400 18px/1.3 Inter; color: #7a8784; }
+.painel { position: absolute; border-radius: 28px; background: #f1ebdd; padding: 26px 30px; }
+.escala { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.escala div { border-radius: 20px; background: #fff; padding: 14px 10px; text-align: center; font: 500 20px/1.25 Inter; color: #4a5653; box-shadow: 0 0 0 1.5px rgba(31,42,40,.07); }
+.escala b { display: block; font: 800 40px/1 Jakarta; color: var(--verde); margin-bottom: 6px; }
+.escala div.on { background: linear-gradient(160deg, #fff4d4, #f8dfa0); }
+.escala div.on b { color: #8a6514; }
+.legenda3 { display: grid; grid-template-columns: 1fr 1fr 1.25fr; gap: 10px; }
+.legenda3 div { font: 500 19px/1.3 Inter; color: #4a5653; }
+.legenda3 b { display: block; font: 800 21px/1.1 Jakarta; color: #1f2a28; margin-bottom: 4px; }
+
+/* Story 3: a vitrine */
+.vidro { position: absolute; border-radius: 40px; background: linear-gradient(150deg, rgba(255,255,255,.2), rgba(255,255,255,.07));
+  border: 1.5px solid rgba(255,255,255,.32); backdrop-filter: blur(30px) saturate(150%);
+  box-shadow: 0 40px 80px -40px rgba(0,0,0,.7), 0 1.5px 0 rgba(255,255,255,.4) inset; }
+.iphone { position: absolute; border-radius: 64px; padding: 14px; background: linear-gradient(160deg, #2b3533, #0d1312);
+  box-shadow: 0 50px 90px -30px rgba(0,0,0,.8), 0 0 0 2px rgba(255,255,255,.12) inset; }
+.iphone .tela { width: 100%; height: 100%; border-radius: 52px; overflow: hidden; background: #fff; position: relative; }
+.iphone .tela img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.iphone .ilha { position: absolute; left: 50%; top: 16px; width: 120px; height: 34px; margin-left: -60px; border-radius: 20px; background: #0d1312; z-index: 2; }
+.print { position: absolute; border-radius: 30px; overflow: hidden; background: #0e3a35; border: 6px solid #fdf9ef;
+  box-shadow: 0 30px 60px -28px rgba(0,0,0,.8); }
+.print img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.print span { position: absolute; left: 14px; bottom: 14px; padding: 8px 14px; border-radius: 999px; background: rgba(253,249,239,.95); color: #1f2a28; font: 800 20px/1 Jakarta; }
+.recurso { display: flex; align-items: center; gap: 16px; font: 600 25px/1.25 Inter; color: #fff; }
+.recurso + .recurso { margin-top: 16px; }
+.recurso i { width: 46px; height: 46px; border-radius: 14px; flex: none; display: grid; place-items: center; background: rgba(244,207,124,.18); border: 1.5px solid rgba(244,207,124,.45); }
+.recurso i svg { width: 24px; height: 24px; }
+.botao { position: absolute; display: flex; align-items: center; justify-content: center; height: 108px; border-radius: 999px;
+  font: 800 40px/1 Jakarta; color: #13302c; background: linear-gradient(170deg, #f9e2a6, #e8bf62);
+  box-shadow: 0 26px 50px -24px rgba(0,0,0,.85), 0 2px 0 rgba(255,255,255,.6) inset; }
 </style></head>
 <body>
 <svg width="0" height="0" style="position:absolute"><defs>
@@ -57,28 +103,34 @@ section::before { content: ''; position: absolute; inset: 0; z-index: -1; opacit
     <path d="M26 50.2l2.9 2.9 5.2-5.6" fill="none" stroke="#14655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
   <symbol id="seta" viewBox="0 0 36 20"><path d="M4 4l14 12L32 4" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ok" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#F4CF7C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </defs></svg>
 
-<!-- ============ STORY 1 (7h ou 9h): a carta com a questão ============ -->
+<!-- ============ STORY 1 (manhã): a carta com a questão ============ -->
 <section id="s1-questao">
-  <div class="carta" style="top:220px; height:1120px;">
-    <div class="selo" style="right:40px; top:34px;"><div class="in"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><b>TEOT 2025</b></div></div>
-    <div class="carimbo" style="right:110px; top:150px;">ORTO<br>QUESTÕES<br><span style="font-size:15px;">DOMINGO</span></div>
-    <p class="mao" style="position:absolute; left:120px; top:44px; font-size:40px;">domingo, 22 de novembro</p>
-    <p class="mao" style="position:absolute; left:120px; top:118px; font-size:64px; font-weight:700;">Querido residente,</p>
-    <p class="serif" style="position:absolute; left:120px; right:330px; top:222px; font-size:31px; line-height:1.75;">hoje a carta traz uma radiografia. <b>Conte os ossos do antebraço</b> antes de responder.</p>
+  <div class="mesa"></div><div class="grao"></div>
+  <div class="envelope" style="left:520px; right:30px; top:205px; height:300px; transform:rotate(6deg);"></div>
+  <div class="selo" style="right:58px; top:178px; z-index:3;"><div class="in"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><b>TEOT 2025</b></div></div>
 
-    <div class="foto" style="left:110px; width:420px; height:470px; top:410px; transform:rotate(-2.5deg);"><img src="img/questao.png" alt=""><span>a radiografia da prova</span></div>
-    <div class="clipe" style="left:150px; top:372px; transform:rotate(-8deg);"></div>
-    <p class="serif" style="position:absolute; left:580px; right:56px; top:470px; font-size:30px; line-height:1.55;">Na radiografia apresentada a seguir, segundo <b>BAYNE e KLUG</b>, a malformação congênita é classificada como tipo:</p>
+  <div class="carta" style="top:250px; height:1090px; transform:rotate(-1deg);">
+    <div class="cab"><span class="pil">Carta de domingo</span></div>
+    <p class="mao" style="position:absolute; left:56px; top:118px; font-size:60px; font-weight:700;">Querido residente,</p>
+    <p class="txt" style="position:absolute; left:56px; right:56px; top:206px;">hoje a carta traz uma radiografia. Antes de responder, <b>conte os ossos do antebraço.</b></p>
 
-    <div class="caixas" style="position:absolute; left:120px; right:80px; top:920px;">
-      <div class="cx"><i></i>A) I.</div>
-      <div class="cx"><i></i>B) II.</div>
-      <div class="cx"><i></i>C) III.</div>
-      <div class="cx"><i></i>D) IV.</div>
+    <div class="foto" style="left:56px; width:430px; height:420px; top:336px; transform:rotate(-2deg);"><img src="img/questao.png" alt=""></div>
+    <div class="fita" style="left:200px; top:318px;"></div>
+    <div style="position:absolute; left:540px; right:56px; top:356px;">
+      <span class="tag">TEOT 2025 · MÃO</span>
+      <p class="txt" style="margin-top:20px; font-size:30px; line-height:1.42; color:#1f2a28;">Na radiografia apresentada a seguir, segundo <b>BAYNE e KLUG</b>, a malformação congênita é classificada como tipo:</p>
     </div>
-    <p class="mao" style="position:absolute; right:70px; bottom:34px; font-size:40px;">com carinho, Orto Questões</p>
+
+    <div class="alts" style="top:790px;">
+      <div class="alt"><span class="l">A</span>I.</div>
+      <div class="alt"><span class="l">B</span>II.</div>
+      <div class="alt"><span class="l">C</span>III.</div>
+      <div class="alt"><span class="l">D</span>IV.</div>
+    </div>
+    <div class="assin" style="bottom:26px;"><span class="mao" style="font-size:38px;">com carinho, Orto Questões</span><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg></div>
   </div>
 
   <div class="dica" style="top:1372px;">
@@ -88,25 +140,62 @@ section::before { content: ''; position: absolute; inset: 0; z-index: -1; opacit
   </div>
 </section>
 
-<!-- ============ STORY 2 (18h30): a carta-resposta com o livro e o convite ============ -->
+<!-- ============ STORY 2 (tarde): a carta-resposta ============ -->
 <section id="s2-resposta">
-  <div class="carta" style="top:220px; height:1350px;">
-    <div class="selo" style="right:40px; top:34px;"><div class="in"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><b>RESPOSTA</b></div></div>
-    <p class="mao" style="position:absolute; left:120px; top:44px; font-size:40px;">mais tarde, no mesmo domingo</p>
-    <p class="mao" style="position:absolute; left:120px; top:118px; font-size:60px; font-weight:700;">Querido residente,</p>
-    <p class="serif" style="position:absolute; left:120px; right:220px; top:220px; font-size:31px; line-height:1.75;">um osso só no antebraço, e ele é a ulna. O rádio não existe:</p>
-    <div class="cx" style="position:absolute; left:120px; top:336px; font-size:44px;"><i class="x"></i><span><b>D) IV</b>: ausência completa do rádio.</span></div>
+  <div class="mesa" style="transform:scaleX(-1);"></div><div class="grao"></div>
+  <div class="selo" style="right:58px; top:178px; z-index:3;"><div class="in"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><b>RESPOSTA</b></div></div>
 
-    <div class="foto" style="left:96px; right:96px; height:390px; top:430px; transform:rotate(1deg); padding-bottom:58px;"><img src="img/green-def.png" alt="" style="object-fit:cover;"><span style="font-size:24px;">Green 7ª ed., Fig. 38.1: D tipo 2 (rádio fino, mas inteiro) · E tipo 3 (só um toco) · F tipo 4</span></div>
+  <div class="carta" style="top:250px; height:1420px; transform:rotate(.6deg);">
+    <div class="cab"><span class="pil">Carta-resposta</span></div>
+    <p class="mao" style="position:absolute; left:56px; top:118px; font-size:60px; font-weight:700;">Querido residente,</p>
+    <p class="txt" style="position:absolute; left:56px; right:56px; top:206px;">o antebraço tem <b>um osso só</b>, e ele é a ulna. Não há rádio, nem um toco dele.</p>
+    <div class="alt certa" style="position:absolute; left:56px; right:56px; top:316px; height:104px; font-size:36px;"><span class="l">D</span>IV: ausência completa do rádio</div>
 
-    <p class="serif" style="position:absolute; left:120px; right:70px; top:868px; font-size:29px; line-height:1.75;">
-      <b>No Green</b>, o tipo 4 é o rádio <b>ausente distal e proximalmente</b> (7ª ed., Tabela 38.2, p. 1329). Sem o rádio distal, some <b>80% do apoio do carpo</b>, e a mão cai para o lado radial (Tachdjian, 6ª ed., cap. 12, p. 341).</p>
-    <p class="serif" style="position:absolute; left:120px; right:70px; top:1110px; font-size:28px; line-height:1.75; color:#1f4f49;">
-      Conte os ossos: rádio curto <b>= 1</b> · em miniatura <b>= 2</b> · só um toco proximal <b>= 3</b> · só a ulna <b>= 4</b>.</p>
-    <p class="mao" style="position:absolute; left:120px; right:70px; top:1228px; font-size:38px; line-height:1.1;">P.S.: o comentário inteiro, com os outros tipos, está no site. É grátis para começar.</p>
+    <div class="foto" style="left:56px; right:56px; top:452px; height:360px;"><img src="img/green-def.png" alt=""></div>
+    <div class="legenda3" style="position:absolute; left:56px; right:56px; top:828px;">
+      <div><b>D · tipo 2</b>rádio fino, mas inteiro</div>
+      <div><b>E · tipo 3</b>só um toco proximal</div>
+      <div><b>F · tipo 4</b>só a ulna, como na prova</div>
+    </div>
+    <p class="fonte" style="position:absolute; left:56px; right:56px; top:912px;">Green's Operative Hand Surgery, 7ª ed., Fig. 38.1, p. 1330</p>
+
+    <div class="painel" style="left:56px; right:56px; top:964px;">
+      <p style="font:800 22px/1 Jakarta; letter-spacing:2.5px; color:var(--verde); text-transform:uppercase;">Segundo o Green</p>
+      <p class="txt" style="margin-top:12px; font-size:28px;">O tipo 4 é o rádio <b>ausente distal e proximalmente</b> (Tabela 38.2, p. 1329). Sem o rádio distal, some <b>80% do apoio do carpo</b>, e a mão cai para o lado radial (Tachdjian, 6ª ed., p. 341).</p>
+    </div>
+
+    <p style="position:absolute; left:56px; top:1244px; font:800 22px/1 Jakarta; letter-spacing:2.5px; color:#7a8784; text-transform:uppercase;">Conte os ossos</p>
+    <div class="escala" style="position:absolute; left:56px; right:56px; top:1282px;">
+      <div><b>1</b>rádio curto</div>
+      <div><b>2</b>rádio em miniatura</div>
+      <div><b>3</b>só um toco</div>
+      <div class="on"><b>4</b>só a ulna</div>
+    </div>
   </div>
-  <div style="position:absolute; left:0; right:0; top:1600px; text-align:center;">
-    <span class="botao">Treine grátis · ortoquestoes.com.br</span>
+  <p style="position:absolute; left:0; right:0; top:1704px; text-align:center; font:600 25px/1.3 Inter; color:rgba(255,255,255,.85);">No próximo story: o que mais tem no site</p>
+</section>
+
+<!-- ============ STORY 3 (noite): a vitrine do site ============ -->
+<section id="s3-convite">
+  <div class="mesa"></div><div class="grao"></div>
+  <div style="position:absolute; left:64px; right:64px; top:236px;">
+    <p style="font:800 22px/1 Jakarta; letter-spacing:3.5px; color:#a9ecd9; text-transform:uppercase;">P.S. da carta</p>
+    <h1 style="margin-top:16px; font:800 76px/1.02 Jakarta; letter-spacing:-2.6px; color:#fff;">Cada comentário é <span style="color:var(--ouro);">uma miniaula.</span></h1>
+    <p style="margin-top:18px; font:500 29px/1.4 Inter; color:rgba(255,255,255,.88);">A certa e cada errada explicadas, com o livro e a página.</p>
+    <div style="margin-top:22px; display:flex; flex-wrap:wrap; gap:10px;"><span style="padding:10px 16px; border-radius:999px; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.28); font:700 21px/1 Jakarta; color:#fff;">Caderno de erros</span><span style="padding:10px 16px; border-radius:999px; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.28); font:700 21px/1 Jakarta; color:#fff;">Flashcards</span><span style="padding:10px 16px; border-radius:999px; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.28); font:700 21px/1 Jakarta; color:#fff;">Simulados</span><span style="padding:10px 16px; border-radius:999px; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.28); font:700 21px/1 Jakarta; color:#fff;">Temas que mais caem</span></div>
   </div>
+
+  <div class="print" style="left:40px; width:470px; height:300px; top:680px; transform:rotate(-4deg);"><img src="img/tela-atlas.png" alt=""><span>Atlas 3D</span></div>
+  <div class="print" style="left:56px; width:470px; height:300px; top:1000px; transform:rotate(3deg);"><img src="img/tela-resumos.png" alt=""><span>Resumos dos capítulos</span></div>
+  <div class="print" style="left:70px; width:430px; height:230px; top:1320px; transform:rotate(-2deg);"><img src="img/tela-cronograma.png" alt="" style="object-position:50% 12%;"><span>Cronograma até a prova</span></div>
+
+  <div class="iphone" style="left:560px; width:470px; height:860px; top:680px; transform:rotate(3deg);">
+    <div class="ilha"></div>
+    <div class="tela"><img src="img/tela-comentario.png" alt=""></div>
+  </div>
+  <div style="position:absolute; left:600px; top:1556px; padding:10px 18px; border-radius:999px; background:rgba(253,249,239,.95); font:800 20px/1 Jakarta; color:#1f2a28; transform:rotate(3deg);">O comentário de verdade</div>
+
+  <div class="botao" style="left:64px; right:64px; top:1630px;">Comece a treinar grátis</div>
+  <p style="position:absolute; left:0; right:0; top:1760px; text-align:center; font:500 22px/1.3 Inter; color:rgba(255,255,255,.8);">Até 20 questões comentadas por dia · ortoquestoes.com.br · Telas ilustrativas</p>
 </section>
 </body></html>
