@@ -1,6 +1,6 @@
-import { PassagemNatal } from '../natal/PassagemNatal'
+import { modoNatalAtivo } from '../natal/modoNatal'
 import { useDeferredValue, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import { FLASHCARDS_NO_MENU, fraseGratis, rotuloProva, urlCss } from '../config'
+import { FLASHCARDS_NO_MENU, fraseGratis, recurso, rotuloProva, urlCss } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
@@ -573,9 +573,13 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
       {/* Começar agora: uma ação principal e quatro atalhos, todos de 10 questões, sem passar pelos filtros. */}
       <section className="tn-rapido" aria-labelledby="tn-rapido-titulo" style={{ '--tn-paisagem': urlCss(`pixel/inicio/${paisagem}`) } as CSSProperties}>
-        <PassagemNatal forma="festao" compacta inicio />
         <div className="tn-rapido__principal">
-          <h2 className="tn-rotulo" id="tn-rapido-titulo">Começar agora</h2>
+          <h2 className="tn-rotulo" id="tn-rapido-titulo">
+            Começar agora
+            {modoNatalAtivo() && (
+              <img className="tn-rapido__ramo" src={recurso('pixel/natal/treinar-ramo.png')} alt="" aria-hidden="true" width={237} height={72} decoding="async" draggable={false} />
+            )}
+          </h2>
           <button type="button" className="botao cristal tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">
             <Icone nome="raio" tamanho={20} />
             <span><strong>Sessão rápida de 10</strong><small>{nomeAreaCurto}, revisões e novas intercaladas</small></span>
@@ -627,7 +631,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <h2 id="tn-montagem-titulo">Montar do seu jeito</h2>
             <p>Quatro passos, de cima para baixo. A contagem ao lado de cada opção já considera o que você escolheu antes.</p>
           </header>
-          <PassagemNatal forma="lanternas" compacta />
 
           {porArea && (
             <section className="tn-bloco" id="etapa-1" aria-labelledby="tn-prova-titulo">
@@ -850,7 +853,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               </p>
             </Estado>
           )}
-          <PassagemNatal forma="presentes" compacta />
         </div>
 
         <aside className="tn-resumo" id="tn-resumo" aria-labelledby="tn-resumo-titulo">

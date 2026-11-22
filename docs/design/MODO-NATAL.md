@@ -159,10 +159,11 @@ A rodada de 22/11/2026 distribui as peças entre as seções, com os controles e
 
 - **Página inicial**: festão na passagem para os atalhos de estudo ou para a apresentação do site e bancada
   com presentes perto do convite do Instagram.
-- **Treinar**: festão em Começar agora, lanternas junto da abertura dos filtros e presentes no fim da montagem.
+- **Treinar**: o Tales recusou a combinação de festão, lanternas e presentes em 22/11/2026. Na nova composição,
+  um ramo de pinho com fita e sino de latão marca Começar agora. A seção Montar do seu jeito fica livre de enfeites.
 - **Resumos**: livros à luz de velas entre a Mesa e a busca e festão ao pé da estante.
 - **Cronograma**: sinos junto ao painel de hoje e na tela de montar plano, além do festão antes de Como funciona.
 
-As cinco peças são pintadas em `scripts/natal/passagens.py`. A intensidade da luz sobe quando a peça entra
-na tela. Com menos animação, a luz fica estável. A sessão de questões, o simulado em andamento e a correção
-ficam fora dessas mudanças.
+As peças das outras páginas são pintadas em `scripts/natal/passagens.py`. A intensidade da luz sobe quando a peça entra
+na tela. Com menos animação, a luz fica estável. O ramo de Treinar é estático e sai de `scripts/natal/treinar.py`.
+A sessão de questões, o simulado em andamento e a correção ficam fora dessas mudanças.

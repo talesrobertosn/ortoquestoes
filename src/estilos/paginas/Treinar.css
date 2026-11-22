@@ -34,6 +34,10 @@
 :root[data-tema="escuro"] .tn-rapido { background: var(--verdete-noite); }
 :root[data-tema="escuro"] .tn-rapido::before { opacity: .24; filter: saturate(.55) brightness(.85); }
 .tn-rapido .tn-rotulo { color: var(--texto); letter-spacing: 0.12em; font-weight: 800; }
+.tn-rapido__ramo {
+  display: block; width: clamp(4.5rem, 31%, 6.5rem); height: auto; margin-inline-start: auto;
+  image-rendering: pixelated; pointer-events: none;
+}
 .tn-rapido .tn-nota { color: var(--texto); }
 .tn-rapido__principal { display: grid; align-content: start; gap: var(--e-3); }
 .botao.tn-rapido__botao { justify-content: flex-start; gap: var(--e-3); width: 100%; min-height: 60px; padding: var(--e-2) var(--e-4); text-align: left; }
