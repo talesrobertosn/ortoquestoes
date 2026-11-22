@@ -446,8 +446,8 @@ export function escolherTipo(p: PerfilCarta, anteriores: readonly EnvioAnterior[
 export interface Fatos {
   melhorArea?: { slug: string; pct: number; total: number }
   maisEstudada?: { slug: string; total: number }
-  /** Amostra suficiente para sugerir revisão. Nunca leva número. */
-  areaFraca?: { slug: string; total: number }
+  /** Amostra suficiente para sugerir revisão. A taxa por área só sai na carta de prova. */
+  areaFraca?: { slug: string; total: number; pct: number }
   horario?: 'noite' | 'madrugada' | 'manha' | 'almoco' | 'tarde'
   prova?: 'teot' | 'taro' | 'mao' | 'r4' | 'atualizacao'
   etapa?: 'r1' | 'r2' | 'r3' | 'r4' | 'mao' | 'estudante' | 'ortopedista'
@@ -498,7 +498,7 @@ export function fatosDe(p: PerfilCarta, hoje = new Date(), paraProva = false): F
   const comAcerto = areas.filter((a) => a.total >= 15).map((a) => ({ ...a, pct: Math.round((100 * a.certas) / a.total) }))
     .sort((a, b) => b.pct - a.pct || b.total - a.total)
   const [melhor, segunda] = comAcerto
-  if (melhor && (melhor.pct >= 70 || (paraProva && segunda && melhor.pct - segunda.pct >= 10))) {
+  if (melhor && (melhor.pct >= 70 || (paraProva && geral !== null && segunda && melhor.pct - segunda.pct >= 10))) {
     f.melhorArea = { slug: melhor.slug, pct: melhor.pct, total: melhor.total }
   }
   // Na reta final, uma distância consistente entre as áreas também orienta a revisão.
@@ -508,7 +508,7 @@ export function fatosDe(p: PerfilCarta, hoje = new Date(), paraProva = false): F
     const abaixoDoGeral = fraca.pct < 60 && fraca.pct <= geral - 10 && fraca.total >= 40
     const espacoParaMelhorar = paraProva && melhor && fraca.slug !== melhor.slug && fraca.pct < 85
       && fraca.pct <= Math.max(geral, melhor.pct) - 10
-    if (abaixoDoGeral || espacoParaMelhorar) f.areaFraca = { slug: fraca.slug, total: fraca.total }
+    if (abaixoDoGeral || espacoParaMelhorar) f.areaFraca = { slug: fraca.slug, total: fraca.total, pct: fraca.pct }
   }
   const total = areas.reduce((s, a) => s + a.total, 0)
   const estudada = [...areas].sort((a, b) => b.total - a.total)[0]
@@ -639,26 +639,41 @@ export interface Ctx {
  * elogio honesto e específico; número só quando é motivo de orgulho (`mostrar` é falso quando
  * o acerto geral está abaixo de 50% ou não dá para citar); o tema a melhorar nunca leva número.
  */
-function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean, paraProva: boolean): string[] {
+function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] {
   const A = (slug: string) => AREAS[slug]
-  if (paraProva && chave === 'melhorArea' && f.melhorArea) {
-    const a = A(f.melhorArea.slug)
-    return [`Nas áreas que já dá para comparar, seu melhor resultado foi em ${a.em}. Parabéns pelo estudo nesse tema.`]
-  }
-  if (paraProva && chave === 'areaFraca' && f.areaFraca) {
-    const a = A(f.areaFraca.slug)
-    return [`Para a próxima revisão, eu daria um pouco mais de atenção ao tema de ${a.de}. Refaça algumas questões que errou e veja qual detalhe mudava a resposta.`]
-  }
-  if (paraProva && chave === 'ranking') {
-    return [`Sua posição mais recente no ranking geral foi a ${f.ranking}ª. É muito bom ver sua dedicação ao estudo.`]
-  }
   switch (chave) {
-    case 'melhorArea': { const m=f.melhorArea!, a=A(m.slug); return mostrar
-      ? [`Você está indo muito bem em ${a.em}. Parabéns! Continue revisando para manter esse resultado.`, `Sua melhor área é ${a.de}. Parabéns pelo estudo nesse tema!`, `Vi que ${a.de} é seu ponto forte nas questões. Continue praticando para consolidar esse resultado.`]
-      : [`Você já vem praticando ${a.de}. Continue lendo os comentários para aprofundar o tema.`, `Que tal aproveitar a próxima sessão para continuar o estudo de ${a.de}?`] }
-    case 'maisEstudada': { const a=A(f.maisEstudada!.slug);return [`Vi que você vem praticando ${a.de}. Continue pelas questões do tema e reveja as explicações que trouxeram dúvidas.`, `Você já tem estudado ${a.de}. Que tal retomar algumas questões desse tema na próxima sessão?`, `Para continuar o que você já começou em ${a.em}, vale reler os comentários das questões anteriores.`] }
-    case 'areaFraca': { const a=A(f.areaFraca!.slug);return [`Vale dar uma atenção extra ao estudo de ${a.de} na próxima sessão. As questões comentadas podem ajudar a esclarecer os pontos que ainda trazem dúvidas.`, `Para equilibrar o estudo entre as áreas, reserve também uma sessão para ${a.de} e leia os comentários das alternativas.`, `Minha sugestão para a próxima revisão é resolver mais questões de ${a.de}, retomando as explicações das questões.`] }
-    case 'ranking':return [`Parabéns pela ${f.ranking}ª posição no ranking geral! Continue praticando e variando os temas para ampliar seu domínio das áreas.`, `Você está na ${f.ranking}ª posição do ranking geral. Parabéns! Siga fazendo as questões e revisando os temas para continuar avançando.`]
+    case 'melhorArea': {
+      const m = f.melhorArea!, a = A(m.slug)
+      return mostrar ? [
+        `Entre os temas que você praticou, um resultado se destacou em ${a.em}. Vale prestar atenção ao que funcionou na hora de estudar esse assunto.`,
+        `Seu estudo rendeu bem em ${a.em}. É um bom tema para revisitar de vez em quando e conservar o que já ficou claro.`,
+        `Também reparei no seu resultado em ${a.em}. Ali está um bom exemplo de como o estudo já está aparecendo nas respostas.`,
+      ] : [
+        `Você já tem prática em ${a.em}. Dá para retomar uma pergunta desse tema sempre que quiser organizar o próximo treino.`,
+        `Se quiser começar por um assunto familiar, já tem algumas boas perguntas para rever em ${a.em}.`,
+      ]
+    }
+    case 'maisEstudada': {
+      const a = A(f.maisEstudada!.slug)
+      return [
+        `Boa parte das suas questões foi de ${a.de}. Se quiser retomar por ali, comece pela pergunta cujo comentário mudou a forma como você pensava no assunto.`,
+        `Vi que você vem praticando ${a.de}. Pegue uma questão antiga do tema e tente explicar a resposta antes de reler o comentário.`,
+        `Em ${a.em}, já tem perguntas conhecidas para usar como ponto de partida. Uma ou duas podem bastar para lembrar o raciocínio.`,
+      ]
+    }
+    case 'areaFraca': {
+      const a = A(f.areaFraca!.slug)
+      return [
+        `Pelo que apareceu nas questões, eu daria um pouco mais de tempo a ${a.em}. Refaça um erro desse tema e diga com suas palavras o que deveria ter mudado a sua resposta.`,
+        `Para a próxima revisão, começaria por ${a.em}. Se duas alternativas pareciam certas, confira no comentário o que fazia a diferença entre elas.`,
+        `Vale separar uma sessão curta para ${a.em}. Escolha duas perguntas em que ficou em dúvida e veja se o mesmo detalhe aparece nas duas respostas.`,
+      ]
+    }
+    case 'ranking': return [
+      `Ah, e parabéns pela ${f.ranking}ª posição no ranking geral. Dá gosto ver esse reconhecimento pelo tempo que você colocou no estudo.`,
+      `Vi também sua ${f.ranking}ª posição no ranking geral. Parabéns por todo esse treino.`,
+      `Fica meu parabéns pela ${f.ranking}ª posição no ranking geral. É uma boa lembrança de quanto você já praticou por aqui.`,
+    ]
     case 'sequencia':return [`Você já está há ${dias(f.sequencia!)} seguidos estudando. Continue aproveitando cada sessão para revisar suas dúvidas.`, `Parabéns pelos ${dias(f.sequencia!)} seguidos de estudo! Siga combinando questões e leitura dos comentários.`]
     case 'flashcards':return ['Você também já experimentou os Flashcards. Uma opção é usá-los depois das questões para revisar os conceitos do tema.']
     case 'semana':return [`Você respondeu ${questoes(f.semana!)} nos últimos sete dias. Continue praticando e use os comentários para revisar as dúvidas.`, `Foram ${questoes(f.semana!)} nesta semana. Que tal usar a próxima sessão para retomar os pontos que trouxeram dúvidas?`]
@@ -773,7 +788,7 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
     if ((chave === 'maisEstudada' && usados.has('melhorArea') || chave === 'melhorArea' && usados.has('maisEstudada')) && fatos.melhorArea?.slug === fatos.maisEstudada?.slug) return null
     // Acerto positivo e tema a revisar podem coexistir (Tales, 17/11/2026).
     const comNumero = mostrarAcerto()
-    const frases = frasesDoFato(chave, fatos, comNumero, paraProva)
+    const frases = frasesDoFato(chave, fatos, comNumero)
     if (!frases.length) return null
     usados.add(chave)
     return frases[Math.floor(rnd() * frases.length)]

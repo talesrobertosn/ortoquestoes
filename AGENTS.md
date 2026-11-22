@@ -226,7 +226,9 @@ Esta instrução substitui a antiga proibição de combinar acerto e área a mel
 
 Na reta final e na véspera, reconhecer o volume de estudo, mostrar o acerto mesmo abaixo de 50%
 quando houver amostra suficiente, citar a melhor área, indicar um tema a revisar e parabenizar
-a colocação quando houver ranking recente. Variar o conselho com o desempenho e desejar boa prova.
+a colocação quando houver ranking recente. Citar o percentual e o número de questões por área
+quando houver amostra, inclusive para a área a revisar. Ligar o dado a uma ação concreta, escrever
+transições de carta e variar assunto, percurso e conselho com o desempenho. Desejar boa prova.
 Nas boas-vindas, ensinar um jeito de começar pelas questões e como o Cronograma poupa tempo.
 Os demais e-mails mantêm os seus motivos e regras de envio, no mesmo tom cordial. Ver `docs/emails/TOM.md`.
 
