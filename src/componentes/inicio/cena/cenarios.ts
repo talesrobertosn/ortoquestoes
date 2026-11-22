@@ -81,7 +81,7 @@ export const CENARIOS: readonly Cenario[] = [
     coruja: [{ x: 320, y: 95 }, { x: 358, y: 96 }, { x: 342, y: 160 }, { x: 186, y: 135 }, { x: 177, y: 111 }],
   },
   {
-    id: 'neve', arquivo: 'cena-neve', particulas: 'neve', neve: {}, inverno: true,
+    id: 'neve', arquivo: 'cena-neve', particulas: 'neve', neve: {}, inverno: true, pinturaNatal: 'cena-neve-natal',
     gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 168, y: 170, pose: 'repouso' }, { x: 263, y: 167, pose: 'sentado' }, { x: 301, y: 176, pose: 'observando' }, { x: 226, y: 177, pose: 'repouso' }],
     coruja: [{ x: 201, y: 134 }, { x: 164, y: 154 }, { x: 356, y: 165 }, { x: 147, y: 104 }, { x: 191, y: 104 }],
   },

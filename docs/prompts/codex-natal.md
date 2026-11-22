@@ -37,6 +37,11 @@ O QUE JÁ ESTÁ NO AR (não refaça)
   usa essa pintura no lugar da normal.
 
 SUA TAREFA: ETAPA 3, OS OUTROS CENÁRIOS DO TOPO
+Forja, Cais e Observatório foram incorporados pelo PR #1205. A Neve também foi aprovada. Continuar pelo Abrigo
+e, depois, pela Praça. A aprovação continua individual.
+Tales (21/11/2026): "quanto mais natalino melhor, pode até exagerar as vezes". Os acentos podem ser mais fortes
+onde a cena comportar, com a mesma escala, luz integrada e caixas dos personagens livres.
+
 Faça um cenário de cada vez, nesta ordem, com prints e OK do Tales antes de subir cada um (ou junte os que ele aprovar
 num PR só, para poupar minutos do GitHub Actions):
 1. Forja (cena-forja), 2. Cais (cena-cais), 3. Observatório (cena-observatorio), 4. Neve (cena-neve),
