@@ -71,15 +71,64 @@ export const PLANO_2026_11: VersaoMetas = {
     m('2027-10', 84, 51, 351, 12648, 15037),
   ],
 }
+/**
+ * O plano oficial desde 22/11/2026 (Tales: "calcule melhor as metas; dia 10 de janeiro é a prova do TEOT; dia 01 de
+ * março entram os novos R1"): o mesmo modelo com o ano da residência (`PARAMETROS_PLANO` em projecao.ts). A base
+ * sobe até dezembro, cai em janeiro e fevereiro quando os R3 saem depois da prova, volta a subir de março em diante
+ * e cai de novo em janeiro de 2028. Vai até janeiro de 2028 para mostrar as duas provas.
+ * Novembro de 2026 continua com a meta do plano de 11/11: o mês em andamento não troca de alvo.
+ * Esta versão nunca muda: ajustes vão para a camada "vigente", só em meses futuros.
+ */
+export const PLANO_2026_11_22: VersaoMetas = {
+  id: 'plano-2026-11-22',
+  nome: 'Plano com o ciclo do TEOT · 22/11/2026',
+  registradaEm: '2026-11-22',
+  meses: [
+    PLANO_2026_11.meses[0],
+    m('2026-12', 88, 34, 97, 3374, 3609),
+    m('2027-01', 75, 15, 73, 2378, 2260),
+    m('2027-02', 52, 11, 68, 2176, 2072),
+    m('2027-03', 106, 27, 87, 2855, 3949),
+    m('2027-04', 97, 30, 103, 3467, 4786),
+    m('2027-05', 93, 30, 118, 3967, 5042),
+    m('2027-06', 85, 29, 129, 4361, 4991),
+    m('2027-07', 82, 31, 141, 4777, 5318),
+    m('2027-08', 84, 34, 155, 5255, 5802),
+    m('2027-09', 80, 36, 167, 5695, 6535),
+    m('2027-10', 77, 38, 173, 5992, 8551),
+    m('2027-11', 74, 42, 184, 6397, 8745),
+    m('2027-12', 61, 36, 191, 6654, 5659),
+    m('2028-01', 52, 16, 151, 5033, 3632),
+  ],
+}
+
+/**
+ * Os marcos do ano da residência que mexem nas metas (Tales, 22/11/2026). Aparecem no plano e no simulador.
+ */
+export const MARCOS_RESIDENCIA: Array<{ mes: string; titulo: string; texto: string }> = [
+  { mes: '2026-12', titulo: 'Reta final do TEOT', texto: 'O último mês dos R3 antes da prova: é o pico de assinaturas novas de mensal.' },
+  { mes: '2027-01', titulo: 'TEOT 2027 (10/01)', texto: 'Depois da prova, a maior parte dos R3 não renova. A base cai sem que seja problema do site.' },
+  { mes: '2027-02', titulo: 'O vale do ano', texto: 'Pós-prova e troca de ano. Hora de vender o anual para os R2, que serão os R3 do TEOT 2028.' },
+  { mes: '2027-03', titulo: 'Entram os R1 (01/03)', texto: 'Turma nova e os R2 viram R3. No começo nem todo R1 assina: o foco é o cadastro.' },
+  { mes: '2027-04', titulo: 'R1 acomodados', texto: 'Mês de campanha para os R1 e para os R3 que começam a estudar para o TEOT 2028.' },
+  { mes: '2027-10', titulo: 'Subida para o TEOT 2028', texto: 'Os R3 apertam o estudo; renovam também os anuais comprados em outubro e novembro de 2026.' },
+  { mes: '2028-01', titulo: 'TEOT 2028', texto: 'Nova saída dos R3, agora de uma base maior.' },
+]
+
 /** A versão que vale nas telas (faixas de metas, página Metas). */
-export const META_OFICIAL = PLANO_2026_11
+export const META_OFICIAL = PLANO_2026_11_22
 
 /** Linha da tabela metas_comerciais (camada "vigente", editável pelo painel). */
-export interface LinhaMetaBanco { versao: string; mes: string; cadastros: number; novos_pagantes: number; ativos_fim: number; receita_equivalente: number; faturamento: number }
+export interface LinhaMetaBanco { versao: string; mes: string; cadastros: number; novos_pagantes: number; ativos_fim: number; receita_equivalente: number; faturamento: number; editado_em?: string | null }
 
-/** A meta que vale para cada mês: a editada (se houver) por cima da original. */
+/**
+ * A meta que vale para cada mês: a editada (se houver) por cima da original. Edições feitas antes de a versão
+ * original ser registrada ajustavam um plano anterior e não valem mais (22/11/2026: o plano com o ciclo do TEOT
+ * substitui o de 11/11; uma meta editada sobre o plano antigo não pode esconder a nova).
+ */
 export function metasVigentes(original: VersaoMetas, editadas: LinhaMetaBanco[] | null | undefined): Array<MetaMes & { editada: boolean; original: MetaMes }> {
-  const porMes = new Map((editadas ?? []).filter(l => l.versao === 'vigente').map(l => [String(l.mes).slice(0, 7), l]))
+  const valeParaEsta = (l: LinhaMetaBanco) => !l.editado_em || String(l.editado_em).slice(0, 10) >= original.registradaEm
+  const porMes = new Map((editadas ?? []).filter(l => l.versao === 'vigente' && valeParaEsta(l)).map(l => [String(l.mes).slice(0, 7), l]))
   return original.meses.map(o => {
     const e = porMes.get(o.mes)
     return e ? { mes: o.mes, cadastros: Number(e.cadastros), novosPagantes: Number(e.novos_pagantes), ativosFim: Number(e.ativos_fim), receitaEquivalente: Number(e.receita_equivalente), faturamento: Number(e.faturamento), editada: true, original: o }
