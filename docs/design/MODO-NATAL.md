@@ -141,8 +141,7 @@ número ou botão e sem criar rolagem lateral:
       pinheiros e luz própria. Os três cenários usam `pinturaNatal` para escolher a variante no rodízio.
 - [x] Etapa 3, Neve (aprovada pelo Tales em 21/11/2026): festão aceso na cabana, pinheiro e trenó com presentes.
       As três horas foram conferidas na inicial em 1440 e 390 px, tema claro e escuro.
-- [ ] Etapa 3, Abrigo das Águas e Praça do Pinheiro: prévia no branch local `codex/natal-abrigo-praca`, com as
-      pinturas ligadas ao modo Natal. O Abrigo ganhou festão no arco e meias na coluna. A Praça ganhou um varal
-      de pinho, mais enfeites no pinheiro e uma barraca de castanhas e chocolate. Aguardam o OK do Tales nos prints.
+- [x] Etapa 3, Abrigo das Águas e Praça do Pinheiro (aprovados pelo Tales): festão no arco e meias na coluna
+      no Abrigo. Varal de pinho, pinheiro iluminado e barraca de castanhas e chocolate na Praça.
 - [ ] Etapa 4: as conversas entre as partes (a meta do dia acende o fio, a coruja visita a guirlanda, o trenó).
 - [ ] Demais páginas.
