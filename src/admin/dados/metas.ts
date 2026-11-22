@@ -119,11 +119,16 @@ export const MARCOS_RESIDENCIA: Array<{ mes: string; titulo: string; texto: stri
 export const META_OFICIAL = PLANO_2026_11_22
 
 /** Linha da tabela metas_comerciais (camada "vigente", editável pelo painel). */
-export interface LinhaMetaBanco { versao: string; mes: string; cadastros: number; novos_pagantes: number; ativos_fim: number; receita_equivalente: number; faturamento: number }
+export interface LinhaMetaBanco { versao: string; mes: string; cadastros: number; novos_pagantes: number; ativos_fim: number; receita_equivalente: number; faturamento: number; editado_em?: string | null }
 
-/** A meta que vale para cada mês: a editada (se houver) por cima da original. */
+/**
+ * A meta que vale para cada mês: a editada (se houver) por cima da original. Edições feitas antes de a versão
+ * original ser registrada ajustavam um plano anterior e não valem mais (22/11/2026: o plano com o ciclo do TEOT
+ * substitui o de 11/11; uma meta editada sobre o plano antigo não pode esconder a nova).
+ */
 export function metasVigentes(original: VersaoMetas, editadas: LinhaMetaBanco[] | null | undefined): Array<MetaMes & { editada: boolean; original: MetaMes }> {
-  const porMes = new Map((editadas ?? []).filter(l => l.versao === 'vigente').map(l => [String(l.mes).slice(0, 7), l]))
+  const valeParaEsta = (l: LinhaMetaBanco) => !l.editado_em || String(l.editado_em).slice(0, 10) >= original.registradaEm
+  const porMes = new Map((editadas ?? []).filter(l => l.versao === 'vigente' && valeParaEsta(l)).map(l => [String(l.mes).slice(0, 7), l]))
   return original.meses.map(o => {
     const e = porMes.get(o.mes)
     return e ? { mes: o.mes, cadastros: Number(e.cadastros), novosPagantes: Number(e.novos_pagantes), ativosFim: Number(e.ativos_fim), receitaEquivalente: Number(e.receita_equivalente), faturamento: Number(e.faturamento), editada: true, original: o }

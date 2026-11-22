@@ -15,8 +15,9 @@ const DINHEIRO: Record<Chave, boolean> = { faturamento: true, cadastros: false, 
 const FLUXO: Record<Chave, boolean> = { faturamento: true, cadastros: true, novosPagantes: true, ativosFim: false, receitaEquivalente: false }
 
 /**
- * A meta moderada como referência permanente (Tales, 05/11/2026): uma faixa compacta no alto do Crescimento,
+ * A meta do mês como referência permanente (Tales, 05/11/2026): uma faixa compacta no alto do Crescimento,
  * do Financeiro e da página Agora, com o realizado, a meta, o esperado até hoje e a situação. Clicar abre Metas.
+ * Desde 22/11/2026 a meta vem do plano com o ciclo do TEOT (META_OFICIAL).
  */
 export function FaixaMetas({ chaves, titulo = 'Metas do mês' }: { chaves: Chave[]; titulo?: string }) {
   const p = usarPainel()

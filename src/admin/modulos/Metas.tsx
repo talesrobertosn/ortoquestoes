@@ -27,7 +27,7 @@ import './hub.css'
  *   3. Placar semana a semana (o mais importante): realizado × meta de cada semana, e quanto falta.
  *   4. O caminho do mês (acumulado × meta × projeção).
  *   5. O que esperar de cada dia da semana.
- *   6. O plano de 12 meses × o que aconteceu.
+ *   6. O plano até a prova de 2028 × o que aconteceu (com piso, meta e ousada e os marcos do ano da residência).
  *   7. Simulador do futuro: o modelo de público finito com os números de hoje.
  *   8. Tipos de receita, edição dos meses futuros e o método.
  * O plano oficial (PLANO_2026_11_22) é o modelo de projecao.ts com o ciclo do TEOT (prova em janeiro, R1 em março),
@@ -405,7 +405,7 @@ function Editor({ metas, semTabela, aoSalvar }: { metas: Array<MetaMes & { edita
     <summary>Editar metas futuras ({futuras.length} meses) e como os números são calculados</summary>
     <div className="a3-texto">
       {semTabela && <FaixaAviso tom="aviso" titulo="Edição desligada">Rode o SQL das metas (202611050100_metas_e_publico.sql) no Supabase para editar. Enquanto isso, vale a versão fixa.</FaixaAviso>}
-      <p>Os objetivos atuais vêm do plano de 22/11/2026, feito com os números reais e com o ciclo do TEOT (novembro continua com a meta do plano de 11/11, porque o mês já estava em andamento). Só meses futuros podem ser editados, para não mover o alvo depois de conhecer o resultado. A versão original <b>{META_OFICIAL.id}</b> nunca muda; a editada fica numa camada à parte e a comparação mostra as duas.</p>
+      <p>Os objetivos atuais vêm do plano de 22/11/2026, feito com os números reais e com o ciclo do TEOT (novembro continua com a meta do plano de 11/11, porque o mês já estava em andamento). Só meses futuros podem ser editados, para não mover o alvo depois de conhecer o resultado. A versão original <b>{META_OFICIAL.id}</b> nunca muda; a editada fica numa camada à parte e a comparação mostra as duas. Edições feitas antes de {META_OFICIAL.registradaEm.split('-').reverse().join('/')} ajustavam o plano anterior e deixaram de valer: edite de novo, se quiser.</p>
       <div className="a3-tabela-caixa"><table className="a3-tabela a3-tabela--compacta mt-tabela mt-editor">
         <thead><tr><th scope="col">Mês</th>{ORDEM.map(k => <th key={k} scope="col" className="num">{DEF[k].curto}</th>)}<th scope="col" /></tr></thead>
         <tbody>{futuras.map(m => <tr key={m.mes}><th scope="row">{NOME_MES(m.mes)}{m.editada && <small> editada</small>}</th>

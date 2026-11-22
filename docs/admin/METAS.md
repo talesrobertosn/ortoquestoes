@@ -31,6 +31,8 @@ crescimento contínuo, sem a prova (157 pagantes em jan/27 e 351 em out/27).
 (nov/2026 a out/2027), faturamento somado de R$ 36.403. **Esta versão nunca muda.** O SQL grava a mesma tabela em
 `metas_comerciais` (versão `moderado-2026-11`, com `on conflict do nothing`).
 
+Edições feitas antes de a versão oficial ser registrada (`editado_em` anterior a `registradaEm`) ajustavam um plano anterior e **deixam de valer** quando o plano muda; continuam no banco.
+
 Edições do administrador vão para a camada `vigente`, **só para meses futuros** (`salvar_meta_comercial_admin` recusa o
 mês atual e os passados). A tela mostra sempre a original ao lado da vigente.
 
