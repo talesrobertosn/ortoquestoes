@@ -93,6 +93,13 @@ section { color: #1f2a28; }
 .botao { position: absolute; display: flex; align-items: center; justify-content: center; height: 108px; border-radius: 999px;
   font: 800 40px/1 Jakarta; color: #13302c; background: linear-gradient(170deg, #f9e2a6, #e8bf62);
   box-shadow: 0 26px 50px -24px rgba(0,0,0,.85), 0 2px 0 rgba(255,255,255,.6) inset; }
+.print2 { position: absolute; border-radius: 30px; overflow: hidden; background: #fff; border: 1.5px solid rgba(255,255,255,.5);
+  box-shadow: 0 34px 60px -30px rgba(0,0,0,.8); }
+.print2 img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.print2 span { position: absolute; left: 16px; bottom: 16px; padding: 10px 16px; border-radius: 999px; background: rgba(14,58,53,.92); color: #fff; font: 800 21px/1 Jakarta;
+  box-shadow: 0 8px 18px -8px rgba(0,0,0,.6); }
+.selo-txt { position: absolute; padding: 10px 16px; border-radius: 999px; background: rgba(253,249,239,.95); font: 800 19px/1 Jakarta; color: #1f2a28; }
+.chip { padding: 9px 14px; border-radius: 999px; background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.28); font: 700 19px/1 Jakarta; color: #fff; }
 </style></head>
 <body>
 <svg width="0" height="0" style="position:absolute"><defs>
@@ -175,27 +182,29 @@ section { color: #1f2a28; }
   <p style="position:absolute; left:0; right:0; top:1704px; text-align:center; font:600 25px/1.3 Inter; color:rgba(255,255,255,.85);">No próximo story: o que mais tem no site</p>
 </section>
 
-<!-- ============ STORY 3 (noite): a vitrine do site ============ -->
+<!-- ============ STORY 3 (noite): a vitrine do site, com prints novos (22/11/2026) ============ -->
 <section id="s3-convite">
   <div class="mesa"></div><div class="grao"></div>
-  <div style="position:absolute; left:64px; right:64px; top:236px;">
+  <div style="position:absolute; left:56px; right:56px; top:230px;">
     <p style="font:800 22px/1 Jakarta; letter-spacing:3.5px; color:#a9ecd9; text-transform:uppercase;">P.S. da carta</p>
-    <h1 style="margin-top:16px; font:800 76px/1.02 Jakarta; letter-spacing:-2.6px; color:#fff;">Cada comentário é <span style="color:var(--ouro);">uma miniaula.</span></h1>
-    <p style="margin-top:18px; font:500 29px/1.4 Inter; color:rgba(255,255,255,.88);">A certa e cada errada explicadas, com o livro e a página.</p>
-    <div style="margin-top:22px; display:flex; flex-wrap:wrap; gap:10px;"><span style="padding:10px 16px; border-radius:999px; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.28); font:700 21px/1 Jakarta; color:#fff;">Caderno de erros</span><span style="padding:10px 16px; border-radius:999px; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.28); font:700 21px/1 Jakarta; color:#fff;">Flashcards</span><span style="padding:10px 16px; border-radius:999px; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.28); font:700 21px/1 Jakarta; color:#fff;">Simulados</span><span style="padding:10px 16px; border-radius:999px; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.28); font:700 21px/1 Jakarta; color:#fff;">Temas que mais caem</span></div>
+    <h1 style="margin-top:14px; font:800 72px/1.02 Jakarta; letter-spacing:-2.4px; color:#fff;">Cada comentário é <span style="color:var(--ouro);">uma miniaula.</span></h1>
+    <p style="margin-top:14px; font:500 27px/1.4 Inter; color:rgba(255,255,255,.88);">A certa e cada errada explicadas, com o livro e a página.</p>
   </div>
 
-  <div class="print" style="left:40px; width:470px; height:300px; top:680px; transform:rotate(-4deg);"><img src="img/tela-atlas.png" alt=""><span>Atlas 3D</span></div>
-  <div class="print" style="left:56px; width:470px; height:300px; top:1000px; transform:rotate(3deg);"><img src="img/tela-resumos.png" alt=""><span>Resumos dos capítulos</span></div>
-  <div class="print" style="left:70px; width:430px; height:230px; top:1320px; transform:rotate(-2deg);"><img src="img/tela-cronograma.png" alt="" style="object-position:50% 12%;"><span>Cronograma até a prova</span></div>
+  <div class="print2" style="left:48px; right:48px; top:500px; height:400px;"><img src="img/tela-resumo-pc.png" alt="" style="object-position:0 0;"><span style="left:auto; right:16px; top:16px; bottom:auto;">Resumos dos capítulos dos principais livros</span></div>
 
-  <div class="iphone" style="left:560px; width:470px; height:860px; top:680px; transform:rotate(3deg);">
-    <div class="ilha"></div>
-    <div class="tela"><img src="img/tela-comentario.png" alt=""></div>
+  <div class="iphone" style="left:48px; width:330px; height:640px; top:930px; padding:11px; border-radius:52px;">
+    <div class="ilha" style="top:12px; width:96px; height:28px; margin-left:-48px;"></div>
+    <div class="tela" style="border-radius:42px;"><img src="img/tela-comentario.png" alt=""></div>
   </div>
-  <div style="position:absolute; left:600px; top:1556px; padding:10px 18px; border-radius:999px; background:rgba(253,249,239,.95); font:800 20px/1 Jakarta; color:#1f2a28; transform:rotate(3deg);">O comentário de verdade</div>
+  <div class="selo-txt" style="left:70px; top:1585px;">O comentário de verdade</div>
 
-  <div class="botao" style="left:64px; right:64px; top:1630px;">Comece a treinar grátis</div>
-  <p style="position:absolute; left:0; right:0; top:1760px; text-align:center; font:500 22px/1.3 Inter; color:rgba(255,255,255,.8);">Até 20 questões comentadas por dia · ortoquestoes.com.br · Telas ilustrativas</p>
+  <div class="print2" style="left:400px; right:48px; top:930px; height:300px;"><img src="img/tela-atlas-pc.png" alt=""><span>Atlas 3D</span></div>
+  <div class="print2" style="left:400px; right:48px; top:1250px; height:320px;"><img src="img/tela-calendario.png" alt="" style="object-position:0 0;"><span style="left:auto; right:16px;">Cronograma até a prova</span></div>
+
+  <div style="position:absolute; left:400px; right:48px; top:1586px; display:flex; flex-wrap:wrap; gap:8px;"><span class="chip">Caderno de erros</span><span class="chip">Flashcards</span><span class="chip">Simulados</span></div>
+
+  <div class="botao" style="left:56px; right:56px; top:1660px; height:100px;">Comece a treinar grátis</div>
+  <p style="position:absolute; left:0; right:0; top:1776px; text-align:center; font:500 21px/1.3 Inter; color:rgba(255,255,255,.8);">Até 20 questões comentadas por dia · ortoquestoes.com.br · Telas ilustrativas</p>
 </section>
 </body></html>
