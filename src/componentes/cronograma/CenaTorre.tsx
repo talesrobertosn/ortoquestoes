@@ -1,7 +1,9 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { recurso } from '../../config'
 import { usarPeriodo } from '../../estado/aparencia'
+import { modoNatalAtivo } from '../../natal/modoNatal'
 import '../../estilos/componentes/CenaTorre.css'
+import '../../estilos/natal/NatalCronograma.css'
 
 /**
  * A estrada até o castelo da prova (10/11/2026): o cenário do topo do cronograma, pintado por
@@ -31,6 +33,12 @@ const GRAOS = [
   { x: 1060, y: 530, d: 9, a: -8 }, { x: 640, y: 450, d: 12, a: -5 },
 ]
 
+// Centros das lâmpadas de scripts/natal/cenario_cronograma.py, na grade da pintura.
+const NATAL_LUZES = [
+  { x: 402, y: 55, cor: '#ffe0a0' }, { x: 410, y: 57, cor: '#ff6a50' }, { x: 418, y: 59, cor: '#60f0b0' },
+  { x: 427, y: 59, cor: '#ffc050' }, { x: 435, y: 57, cor: '#ff6a50' }, { x: 443, y: 55, cor: '#ffe0a0' },
+]
+
 export function CenaTorre() {
   const periodo = usarPeriodo()
   const palco = useRef<HTMLDivElement>(null)
@@ -43,14 +51,20 @@ export function CenaTorre() {
     return () => io.disconnect()
   }, [])
   const img = (nome: string) => recurso(`pixel/cronograma/${nome}`)
-  const fundo = `estrada-prova-${periodo}`
+  const natal = modoNatalAtivo()
+  const prefixo = natal ? 'estrada-prova-natal' : 'estrada-prova'
+  const fundo = `${prefixo}-${periodo}`
   return (
     <div ref={palco} className={`ct-cena ct-cena--${periodo}${visivel ? '' : ' ct-cena--pausada'}`} aria-hidden="true">
       <div className="ct-cena__mundo">
         <img className="ct-cena__fundo" src={img(`${fundo}.webp`)} srcSet={`${img(`${fundo}-960.webp`)} 960w, ${img(`${fundo}.webp`)} 1440w`}
           sizes="(max-width: 46rem) 150vw, min(76rem, 100vw)" alt="" width={BASE.w} height={BASE.h} decoding="async" fetchPriority="high" draggable={false} />
-        <img className="ct-cena__sino" src={img(`estrada-prova-sino-${periodo}.png`)} alt="" width={SINO.w} height={SINO.h} decoding="async" draggable={false}
+        <img className="ct-cena__sino" src={img(`${prefixo}-sino-${periodo}.png`)} alt="" width={SINO.w} height={SINO.h} decoding="async" draggable={false}
           style={{ left: pct(SINO.x, BASE.w), top: pct(SINO.y, BASE.h), width: pct(SINO.w, BASE.w), height: pct(SINO.h, BASE.h) }} />
+        {natal && NATAL_LUZES.map((l, i) => <span key={l.x} className="ct-cena__pisca-natal" style={{
+          left: pct(l.x, BASE.w / 3), top: pct(l.y, BASE.h / 3), width: pct(7, BASE.w / 3),
+          animationDelay: `${-i * 0.72}s`, '--cor-lampada': l.cor,
+        } as CSSProperties} />)}
         {ESTANDARTES.map((e, i) => <img key={i} className="ct-cena__estandarte" src={img(`estrada-prova-estandarte-${periodo}.png`)} alt="" width={e.w} height={e.h} decoding="async" draggable={false}
           style={{ left: pct(e.x, BASE.w), top: pct(e.y, BASE.h), width: pct(e.w, BASE.w), height: pct(e.h, BASE.h), animationDelay: `${-i * 1.3}s` }} />)}
         {CHAMINES.map((c, i) => <span key={i} className="ct-cena__fumaca" style={{ left: pct(c.x, BASE.w), top: pct(c.y, BASE.h), width: pct(18 * c.e, BASE.w), animationDelay: `${-i * 2.1}s` }} />)}

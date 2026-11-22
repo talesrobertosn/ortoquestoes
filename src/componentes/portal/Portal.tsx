@@ -1,10 +1,11 @@
-import { useState, type CSSProperties } from 'react'
+import { lazy, Suspense, useState, type CSSProperties } from 'react'
 import { usarAdministrador } from '../../conta/administrador'
 import { usarConta } from '../../conta/ContextoConta'
 import { usarPremium } from '../../conta/premium'
 import { contasDisponiveis } from '../../conta/supabase'
 import { usarNacionalAbertoATodos } from '../../dados/nacionalEmDestaque'
 import { A_PARTIR_DE } from '../../dados/planos'
+import { modoNatalAtivo } from '../../natal/modoNatal'
 import { recurso } from '../../config'
 import { href } from '../../util/rotas'
 import { Icone } from '../Icone'
@@ -16,6 +17,8 @@ import { Visitantes } from './Visitantes'
 import { BordaDeFogo } from '../BordaDeFogo'
 import { FogueiraDoMenu } from './FogueiraDoMenu'
 import '../../estilos/componentes/Portal.css'
+
+const NatalMenu = lazy(() => import('./NatalMenu'))
 
 /**
  * O Portal do Aventureiro (31/10/2026): o menu do site, num pop-up claro. De cima para baixo: a busca, a jornada (a
@@ -32,6 +35,8 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
   const [digitando, definirDigitando] = useState(false)
   const conta = grupoConta({ contas: contasDisponiveis, logado: !!sessao, premium, administrador })
   const grupos = [...GRUPOS, conta]
+  const emProva = caminho === '/sessao' || caminho.startsWith('/questao/')
+  const natal = !emProva && modoNatalAtivo()
   const bloqueado = (p: Pagina) => !!p.assinante && !premium && !(nacionalAberto && p.destino === '/simulado-nacional')
   // Página atual: igual ou "filha" (sem acender dois itens: o mais específico ganha).
   const todas = [...PRINCIPAIS, ...grupos.flatMap((g) => g.itens)]
@@ -40,7 +45,8 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
 
   return (
     <>
-    <header className="pt-cabeca">
+    <header className={`pt-cabeca${natal ? ' pt-cabeca--natal' : ''}`}>
+      {natal && <Suspense fallback={null}><NatalMenu /></Suspense>}
       <div className="pt-cabeca__linha">
         <FogueiraDoMenu nome={String(sessao?.user.user_metadata?.nome ?? '')} logado={!!sessao} />
         <button type="button" className="pt-fechar" onClick={aoFechar} aria-label="Fechar o menu"><Icone nome="fechar" tamanho={20} /></button>

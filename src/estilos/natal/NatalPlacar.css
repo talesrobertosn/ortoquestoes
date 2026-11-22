@@ -1,0 +1,10 @@
+.fs-natal-arte { position: relative; pointer-events: none; }
+.fs-natal-arte .fs-coruja { margin-bottom: -10px; }
+.fs-natal-chocolate {
+  position: absolute; z-index: 2; right: -0.9rem; bottom: 0.25rem;
+  width: 2.9rem; height: auto; display: block; pointer-events: none; image-rendering: pixelated;
+}
+.rr-palco .rr-natal-chocolate {
+  display: block; pointer-events: none; image-rendering: pixelated;
+  transform: none; transition: none; animation: none;
+}

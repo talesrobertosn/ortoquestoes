@@ -21,6 +21,7 @@ import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
+import { NatalInicioProvider } from '../natal/InteracoesInicio'
 import { BarraAtalhos, ConviteInstagram, HeroiJornada, HeroiVitrine, TrilhaSequencia, usarFestaDaMeta, type Atalho } from '../componentes/inicio/jornada/Jornada'
 import { GatoPixel } from '../componentes/mascote/GatoPixel'
 import { Medalha } from '../componentes/Medalha'
@@ -307,6 +308,7 @@ export function Inicio() {
   // final. As molduras de madeira saíram; a arte fica nos quadros pintados e a leitura, na página calma.
   if (pedeConta) {
     return (
+      <NatalInicioProvider>
       <div className="ip ip--vitrine hd jn" style={CENAS_SECOES}>
         <HeroiVitrine
           titulo={cabecalhoDoDia.semNome}
@@ -323,7 +325,7 @@ export function Inicio() {
         {vazio}
         <div className="hd-avisos jn-avisos">
           <ConviteLimiteSobDemanda />
-          <ChamadaSimuladoNacional />
+          <div className="natal-faixa-enfeite natal-faixa-enfeite--simulado"><ChamadaSimuladoNacional /></div>
         </div>
 
         {/* Como o estudo funciona: uma jornada em quatro passos ligados, com os textos de sempre. */}
@@ -347,7 +349,7 @@ export function Inicio() {
               </li>
             ))}
           </ol>
-          <FaixaPlanos />
+          <div className="natal-faixa-enfeite"><FaixaPlanos /></div>
         </section>
 
         <section className="jn-nivel jn-explorar" aria-labelledby="jn-vitrine-explorar">
@@ -401,6 +403,7 @@ export function Inicio() {
           </nav>
         </section>
       </div>
+      </NatalInicioProvider>
     )
   }
 
@@ -424,6 +427,7 @@ export function Inicio() {
   const dataHoje = new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', timeZone: FUSO_DIA })
   const semDados = respondidasTotal === 0
   return (
+    <NatalInicioProvider respostas={streak.hojeContagem} meta={streak.metaHojeAtingida} festa={festa}>
     <div className="ip ip--painel hd jn" style={CENAS_SECOES}>
       {/* Vencimento do Pix: um lembrete calmo, só nos 7 dias finais (05/11/2026). */}
       <AvisoVencimento desempenho={desempenhoGeral} />
@@ -433,7 +437,7 @@ export function Inicio() {
         titulo={titulo}
         lide={calculo && !calculo.provaPassou ? <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a prova. {cabecalhoDoDia.incentivo}</> : cabecalhoDoDia.incentivo}
         linhaFogo={estagioDaSequencia(streak.atual).indice}
-        descanso={streak.metaHojeAtingida} festa={festa}
+        descanso={streak.metaHojeAtingida} festa={festa} totalAtalhos={atalhos.length}
         missao={acao ? <>
           <p className="jn-missao__selo">{acao.selo}</p>
           <h2 className="jn-missao__titulo">{acao.titulo}</h2>
@@ -460,8 +464,8 @@ export function Inicio() {
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
       <div className="hd-avisos jn-avisos">
         <ConviteLimiteSobDemanda />
-        <FaixaPlanos />
-        <ChamadaSimuladoNacional />
+        <div className="natal-faixa-enfeite"><FaixaPlanos /></div>
+        <div className="natal-faixa-enfeite natal-faixa-enfeite--simulado"><ChamadaSimuladoNacional /></div>
       </div>
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
       {vazio}
@@ -666,6 +670,7 @@ export function Inicio() {
         </section>
       </>}
     </div>
+    </NatalInicioProvider>
   )
 }
 

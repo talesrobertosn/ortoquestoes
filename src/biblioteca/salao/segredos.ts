@@ -1,3 +1,4 @@
+import { modoNatalAtivo } from '../../natal/modoNatal'
 import { ler, gravar } from '../../estado/armazenamento'
 
 /**
@@ -29,7 +30,7 @@ export const SEGREDOS: Segredo[] = [
   { id: 'relogio', nome: 'Hora de estudar', pista: 'Mexa nos ponteiros do relógio.' },
   { id: 'escada', nome: 'O livro mais alto', pista: 'Suba a escada da biblioteca.' },
   { id: 'cap404', nome: 'O capítulo 404', pista: 'Procure um capítulo que ainda não foi escrito.' },
-  { id: 'sazonal', nome: 'Visita de época', pista: 'Volte no fim de outubro ou em dezembro.' },
+  { id: 'sazonal', nome: 'Visita de época', pista: 'Volte no fim de outubro ou durante o modo Natal.' },
   { id: 'janela', nome: 'O sol anda depressa', pista: 'A janela muda com a hora. Ou com a sua insistência.' },
   { id: 'raro', nome: 'O volume que brilha', pista: 'Um livro na mesa não é um livro comum.' },
   { id: 'cranio', nome: 'Osso de estimação', pista: 'O crânio da estante sabe umas coisas.' },
@@ -74,11 +75,11 @@ const normalizar = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toL
 /** Só as palavras do dicionário: "constructor" ou "__proto__" na busca não viram palavra mágica. */
 export const palavraMagica = (busca: string) => { const p = normalizar(busca); return Object.prototype.hasOwnProperty.call(PALAVRAS, p) ? PALAVRAS[p] : null }
 
-/** Época do ano no salão: abóboras de 24 a 31 de outubro, pisca-pisca em dezembro. */
+/** O Natal segue a chave do site. As abóboras continuam no fim de outubro. */
 export function epoca(d: Date): 'halloween' | 'natal' | null {
+  if (modoNatalAtivo(d)) return 'natal'
   const m = d.getMonth() + 1, dia = d.getDate()
   if (m === 10 && dia >= 24) return 'halloween'
-  if (m === 12) return 'natal'
   return null
 }
 /** Da meia-noite às 5 h: o salão entra em plantão. */

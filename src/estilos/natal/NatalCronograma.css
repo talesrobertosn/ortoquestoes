@@ -1,0 +1,26 @@
+/* O brilho adicional repousa sobre as lâmpadas e a pedra já pintadas. */
+.ct-cena__pisca-natal {
+  position: absolute;
+  display: block;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--cor-lampada), transparent);
+  mix-blend-mode: screen;
+  opacity: 0.32;
+  animation: ct-pisca-natal 3.6s ease-in-out infinite alternate;
+}
+
+.ct-cena--manha .ct-cena__pisca-natal {
+  animation: none;
+  opacity: 0.14;
+}
+
+@keyframes ct-pisca-natal {
+  from { opacity: 0.1; }
+  to { opacity: 0.48; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ct-cena__pisca-natal { animation: none; }
+}

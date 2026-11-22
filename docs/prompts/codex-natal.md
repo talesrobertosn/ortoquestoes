@@ -47,7 +47,7 @@ Faça um cenário de cada vez, nesta ordem, com prints e OK do Tales antes de su
 num PR só, para poupar minutos do GitHub Actions):
 1. Forja (cena-forja), 2. Cais (cena-cais), 3. Observatório (cena-observatorio), 4. Neve (cena-neve),
 5. Abrigo (cena-abrigo), 6. Praça (cena-praca; ela já tem um pinheiro de Natal, então só complete com equilíbrio).
-O Vale e a Sala do chalé já são de Natal e não precisam de versão nova.
+O Vale e a Sala do chalé já eram de Natal. A pedido do Tales, a etapa final acrescenta luzes aos três fundos (Vale, Vale nevado e Sala).
 Se já existir um branch codex/natal-cenarios com algum desses pronto, continue a partir dele.
 
 Como fazer cada um (siga scripts/natal/cenario_acampamento.py como modelo):
@@ -85,3 +85,10 @@ npx vite build ; node fixtures/testar_orcamento_chunks.mjs ; npm test
 Commits com mensagem em português; atualize a seção "Andamento" de docs/design/MODO-NATAL.md a cada etapa.
 Ao terminar cada parte, responda ao Tales com o que foi feito, os prints e o que falta.
 ```
+
+## Continuação
+
+Forja, Cais e Observatório (#1205), Neve (#1207), Abrigo e Praça (#1208) foram publicados. A branch
+`codex/natal-interacoes-paginas` reúne as pinturas do chalé, as interações da inicial e as outras páginas.
+O checkpoint está na seção Andamento de `docs/design/MODO-NATAL.md`. Os prints da etapa estão em
+`Documents/OrtoQuestoes-Natal-2026/Etapa-final/Galeria.html` no Mac. Tales aprovou os prints desta etapa em 22/11/2026.

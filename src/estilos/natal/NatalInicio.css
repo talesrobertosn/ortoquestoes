@@ -84,3 +84,78 @@
   .natal-boneco__vapor { animation: none; opacity: 0.5; }
   .natal-boneco__vapor--2 { display: none; }
 }
+
+/* O fio segue a grade de atalhos, inclusive quando ela quebra em várias linhas. */
+.jn-atalhos--natal { position: relative; }
+.jn-atalhos--natal li { position: relative; padding-bottom: 18px; }
+.natal-fio-atalho { position: absolute; inset: auto 0 1px; height: 16px; pointer-events: none; }
+.natal-fio-atalho::before { content: ""; position: absolute; inset: 0 -1px auto; height: 8px;
+  border: solid #765138; border-width: 0 0 2px; border-radius: 0 0 48% 48%; }
+.natal-fio-atalho__lampada { position: absolute; left: calc(50% - 9px); top: 2px; width: 18px; height: 23px; }
+.natal-fio-atalho__vidro { display: block; width: 100%; height: 100%; opacity: .55; transform-origin: 50% 0;
+  background: url('/pixel/natal/atalhos-vidro.png') no-repeat calc(var(--casa) * -18px) 0 / 108px 23px; }
+.natal-fio-atalho__lampada[data-acesa="true"] .natal-fio-atalho__vidro { opacity: 1;
+  filter: drop-shadow(0 2px 5px rgb(var(--cor-lampada) / .9)); }
+.natal-fio-atalho__lampada[data-balanco="true"] .natal-fio-atalho__vidro { animation: natal-balanco 750ms ease-out; }
+@keyframes natal-balanco { 25% { transform: rotate(19deg); } 55% { transform: rotate(-12deg); } 80% { transform: rotate(5deg); } }
+.natal-neve-atalhos { position: absolute; top: 0; left: 2%; width: 96%; height: 12px; pointer-events: none;
+  opacity: var(--natal-neve); transform: scaleY(var(--natal-neve)); transform-origin: top;
+  background: url('/pixel/natal/geada-atalhos.png') repeat-x 0 0 / 144px 12px; }
+.natal-reflexos { display: flex; position: absolute; inset: auto 2% 0; height: 58px; pointer-events: none; z-index: 2; }
+.natal-reflexos i { flex: 1; opacity: 0; transition: opacity .26s;
+  background: radial-gradient(ellipse at 50% 105%, rgb(var(--cor-lampada) / .34), transparent 67%); }
+.natal-reflexos i[data-acesa="true"] { opacity: 1; }
+.natal-caneca { position: relative; display: block; flex: none; width: 44px; height: 35px;
+  background: url('/pixel/natal/caneca-sequencia.png') center / contain no-repeat; margin: 8px 0 0 7px; }
+.natal-caneca__vapor { position: absolute; width: 15px; height: 18px; bottom: 21px; left: 12px;
+  background: url('/pixel/natal/boneco-vapor.png') center / contain no-repeat; opacity: var(--natal-vapor);
+  animation: natal-bafo 3s ease-out infinite; }
+.natal-caneca__vapor--2 { animation-delay: -1.45s; left: 16px; }
+@keyframes natal-bafo { from { opacity: var(--natal-vapor); transform: translateY(3px); } to { opacity: 0; transform: translateY(-14px); } }
+.natal-arvore__toque { position: absolute; pointer-events: auto; top: -8px; left: 49px; width: 48px; height: 48px;
+  background: transparent; border: 0; border-radius: 50%; z-index: 3; cursor: pointer; }
+.natal-arvore__toque:focus-visible { outline: 2px solid #f1c978; }
+.natal-arvore--meta .natal-arvore__estrela { filter: drop-shadow(0 0 9px #ffe195); opacity: 1; }
+.natal-arvore__surpresa, .natal-arvore__festa { position: absolute; inset: 0; pointer-events: none; }
+.natal-arvore__festa { background: radial-gradient(ellipse at 50% 15%, #ffe5a957, transparent 67%); animation: natal-respirar 1s 2; }
+.natal-arvore__surpresa i { position: absolute; width: 4px; height: 4px; left: 50%; top: 12px; opacity: 0;
+  background: #fff3cf; box-shadow: 0 0 7px #e9d8a3; animation: natal-neve-estrela 1s var(--d) ease-out both; }
+@keyframes natal-neve-estrela { 20% { opacity: 1; } to { opacity: 0; transform: translate(var(--x), var(--y)); } }
+.natal-treno { position: absolute; z-index: -1; inset: 14% 0 auto 44%; height: 74px;
+  pointer-events: none; clip-path: inset(-24px 0 0); }
+.natal-treno i { display: block; position: absolute; left: -115px; width: 106px; height: 34px;
+  background: url('/pixel/natal/treno-noturno.png') center / contain no-repeat;
+  animation: natal-travessar 10s linear both; }
+.natal-treno[data-em-vista="false"] i { animation-play-state: paused; }
+@keyframes natal-travessar { to { transform: translate(115vw, -20px); } }
+@media (max-width: 60rem) {
+  .natal-treno { inset: clamp(13rem, 61vw, 16.2rem) 0 auto; }
+  .jn-heroi--vitrine .natal-treno { grid-row: 2 / 3; grid-column: 1 / -1; inset: 24px 0 auto; }
+  .natal-treno i { width: 77px; height: 25px; }
+}
+.natal-faixa-enfeite { display: contents; }
+[data-natal="sim"] .natal-faixa-enfeite:not(:empty) { display: block; position: relative; }
+[data-natal="sim"] .natal-faixa-enfeite:not(:empty)::after { content: ""; pointer-events: none; position: absolute; z-index: 1;
+  right: 5px; top: -5px; width: 38px; height: 26px; background: url('/pixel/natal/laco-faixa.png') center / contain no-repeat; }
+[data-natal="sim"] .natal-faixa-enfeite--simulado:not(:empty)::before { content: ""; pointer-events: none;
+  position: absolute; top: 0; left: 3%; right: 3%; z-index: 1; height: 8px; opacity: .78;
+  background: url('/pixel/natal/geada-atalhos.png') repeat-x 0 0 / 108px 9px; }
+.natal-corujinha-ancora { position: absolute; top: -86px; left: 0; pointer-events: none; z-index: 9; }
+.natal-corujinha { position: absolute; top: 0; left: -22px; width: 44px; height: 32px; z-index: 9;
+  animation: natal-visita 6.6s ease-in-out both; }
+.ip:has(.natal-corujinha) .hd-palco .hd-coruja { visibility: hidden; }
+@keyframes natal-visita {
+  0%, 100% { transform: translate(var(--origem-x), var(--origem-y)); }
+  16%, 80% { transform: translate(0, 0); }
+}
+@media (max-width: 60rem) {
+  .natal-corujinha-ancora { top: -43px; left: -8px; }
+  .natal-corujinha { left: -18px; width: 36px; height: 26px; }
+  .natal-arvore__toque { top: -22px; left: 24px; width: 98px; height: 98px; }
+  .natal-caneca { width: 31px; height: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .natal-fio-atalho__vidro, .natal-caneca__vapor, .natal-arvore__festa, .natal-arvore__surpresa i { animation: none !important; }
+  .natal-arvore__surpresa i { transform: translate(var(--x), var(--y)); opacity: 1; }
+  .natal-reflexos i { transition: none; }
+}

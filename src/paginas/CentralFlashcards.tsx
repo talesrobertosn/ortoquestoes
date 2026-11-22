@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react'
 import { Icone, type NomeIcone } from '../componentes/Icone'
+import { MolduraNatal } from '../natal/MolduraNatal'
 import { JanelaCentral } from '../componentes/JanelaCentral'
 import { urlCss } from '../config'
 import { ler } from '../estado/armazenamento'
@@ -120,7 +121,7 @@ export function CentralFlashcards() {
         <a className="botao botao--fantasma" href={href('/flashcards/desempenho')}><Icone nome="grafico" tamanho={18} /> Meu desempenho</a>
       </header>
       <section className="fcn-heroi" aria-labelledby="fcn-hoje-titulo">
-        <div className="fcn-pintura">{artes && <CenaArquivo visitantes />}<span className="fcn-local">O Arquivo da Vila <span>· seu espaço de estudo</span></span></div>
+        <div className="fcn-pintura">{artes && <><CenaArquivo visitantes /><MolduraNatal /></>}<span className="fcn-local">O Arquivo da Vila <span>· seu espaço de estudo</span></span></div>
         <div className="fcn-missao">
           <div className="fcn-missao__texto"><p className="fcn-selo">SEU PRÓXIMO PASSO</p><h2 id="fcn-hoje-titulo">{contagem.hoje ? 'Reencontre o que já estudou.' : contagem.estudados ? 'Dê espaço a um conceito novo.' : 'Comece pequeno. Volte amanhã.'}</h2>
             <p><strong>{pessoal.abertura}</strong> {pessoal.dados}</p>

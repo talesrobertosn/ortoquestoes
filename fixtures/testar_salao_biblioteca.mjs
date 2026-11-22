@@ -39,6 +39,28 @@ try {
   assert.equal(sg.epoca(new Date(2026, 9, 30)), 'halloween')
   assert.equal(sg.epoca(new Date(2026, 9, 23)), null)
   assert.equal(sg.epoca(new Date(2026, 11, 2)), 'natal')
+  assert.equal(sg.epoca(new Date('2026-11-21T12:00:00-03:00')), 'natal')
+  assert.equal(sg.epoca(new Date('2027-01-06T23:30:00-03:00')), 'natal')
+  assert.equal(sg.epoca(new Date('2027-01-07T00:30:00-03:00')), null)
+  const local = new Map()
+  const antesLocation = Object.getOwnPropertyDescriptor(globalThis, 'location')
+  const antesStorage = Object.getOwnPropertyDescriptor(globalThis, 'localStorage')
+  try {
+    Object.defineProperty(globalThis, 'localStorage', {
+      configurable: true,
+      value: { getItem: (k) => local.get(k), setItem: (k, v) => local.set(k, v), removeItem: (k) => local.delete(k) },
+    })
+    const localizacao = { search: '?natal=0', hash: '' }
+    Object.defineProperty(globalThis, 'location', { configurable: true, value: localizacao })
+    assert.equal(sg.epoca(new Date(2026, 11, 2)), null)
+    localizacao.search = '?natal=1'
+    assert.equal(sg.epoca(new Date(2026, 6, 2)), 'natal')
+  } finally {
+    if (antesLocation) Object.defineProperty(globalThis, 'location', antesLocation)
+    else delete globalThis.location
+    if (antesStorage) Object.defineProperty(globalThis, 'localStorage', antesStorage)
+    else delete globalThis.localStorage
+  }
   assert.equal(sg.madrugada(new Date(2026, 9, 30, 3)), true)
   assert.equal(sg.madrugada(new Date(2026, 9, 30, 5)), false)
   assert.equal(sg.diasAteProva(new Date(2027, 0, 9, 23), ['2027-01-10']), 1)

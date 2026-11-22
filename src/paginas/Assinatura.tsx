@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { usarConta } from '../conta/ContextoConta'
+import { MolduraNatal } from '../natal/MolduraNatal'
 import { lerRespondidas } from '../estado/sessao'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { Icone, type NomeIcone } from '../componentes/Icone'
@@ -283,6 +284,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   return (
     <div className="vd" ref={raiz}>
       {!comAcessoPago && <section className={'vd-heroi' + (pessoa && pessoa.respondidas > 0 ? ' vd-heroi--pessoa' : '')} ref={heroi} aria-labelledby="vd-titulo">
+        <MolduraNatal publica />
         <div className="vd-heroi__texto">
           <p className="tr-heroi__selo">Planos do Orto Questões</p>
           <h1 id="vd-titulo">{titulo.linha1} <em>{titulo.linha2}</em></h1>

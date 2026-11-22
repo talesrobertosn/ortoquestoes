@@ -1,5 +1,5 @@
 import { ErrosAposSessao } from '../componentes/revisao/ErrosAposSessao'
-import { useCallback, useEffect, useMemo, useState, type CSSProperties, type ReactNode } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState, type CSSProperties, type ReactNode } from 'react'
 import { ResultadoRevisao } from '../componentes/revisao/ResultadoRevisao'
 import { letraExibida } from '../dados/ordemAlternativas'
 import { usarIndice } from '../dados/usarIndice'
@@ -25,6 +25,7 @@ import { IconePixel } from '../componentes/IconePixel'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { fraseAdiantado, textoPuxar } from '../dados/frasesAdiantar'
 import { proximoDiaParaPuxar } from '../dados/planoEstudo'
+import { modoNatalAtivo } from '../natal/modoNatal'
 import { recurso, rotuloProva } from '../config'
 import { href, navegar } from '../util/rotas'
 import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
@@ -34,6 +35,8 @@ import { lerBloqueioDiario } from '../estado/limiteDiario'
 import { chaveCivil, FUSO_DIA, hojeBR, somarDias } from '../util/dia'
 import '../estilos/paginas/Desempenho.css'
 import '../estilos/paginas/Resumo.css'
+
+const ChocolateNatal = lazy(() => import('../natal/ChocolateNatal'))
 
 /*
  * Resultado da sessão (rota /resumo), refeito do zero em 21/11/2026 (Tales: "refazer do zero, no design padrão do
@@ -117,7 +120,7 @@ function EntregaNacional({ sessao, aoEntregar }: { sessao: EstadoSessao; aoEntre
   useEffect(() => { enviar() }, [enviar])
   return (
     <section className={`rr-entrega rr-entrega--${estado}`} role="status" aria-live="polite">
-      <CorujaPixel estado={estado === 'erro' ? 'olhando' : 'voando'} className="rr-entrega__coruja" />
+      <CorujaPixel estado={estado === 'erro' ? 'olhando' : 'voando'} natal={false} className="rr-entrega__coruja" />
       <div>
         <p className="dp-rotulo"><Icone nome={estado === 'erro' ? 'alerta' : 'relogio'} tamanho={14} /> Simulado Nacional</p>
         <h1>{estado === 'erro' ? 'A entrega não chegou ao servidor' : 'Entregando a sua prova…'}</h1>
@@ -164,14 +167,17 @@ const lugar = (x: number, y: number, w: number, h: number) => ({
 }) as CSSProperties
 
 /** A coruja na mesa da biblioteca, conferindo a folha. Lê quando a sessão pede revisão; acena quando foi bem. */
-function CenaBiblioteca({ periodo, estado }: { periodo: Periodo; estado: 'lendo' | 'acenando' | 'olhando' }) {
+function CenaBiblioteca({ periodo, estado, natal }: { periodo: Periodo; estado: 'lendo' | 'acenando' | 'olhando'; natal: boolean }) {
   const arte = (sufixo: string) => recurso(`pixel/paginas/biblioteca-${periodo}${sufixo}.webp`)
   return (
     <div className="ds-palco rr-palco" aria-hidden="true">
       <img className="ds-palco__arte" src={arte('')} srcSet={`${arte('-960')} 960w, ${arte('')} 1440w`} sizes="(max-width: 76rem) 100vw, 76rem"
         width={1440} height={480} alt="" decoding="async" fetchPriority="high" draggable={false} />
       <span className="ds-palco__peca rr-palco__luz" style={lugar(262, 70, 50, 50)} />
-      <span className="ds-palco__peca rr-palco__coruja" style={lugar(276, 90, 44, 32)}><CorujaPixel estado={estado} /></span>
+      {natal && <Suspense fallback={null}>
+        <ChocolateNatal className="ds-palco__peca rr-natal-chocolate" style={lugar(259, 100, 21, 25)} />
+      </Suspense>}
+      <span className="ds-palco__peca rr-palco__coruja" style={lugar(276, 90, 44, 32)}><CorujaPixel estado={estado} natal={natal} /></span>
     </div>
   )
 }
@@ -423,7 +429,7 @@ export function Resumo() {
         {/* ---------- Topo: a cena, a manchete, a mensagem e os números, numa peça só ---------- */}
         <section className="dp-topo" id="rr-topo" aria-labelledby="rr-titulo">
           <div className={`dp-topo__cena rr-cena rr-cena--${periodoArte}`}>
-            <CenaBiblioteca periodo={periodoArte} estado={estadoCoruja} />
+            <CenaBiblioteca periodo={periodoArte} estado={estadoCoruja} natal={!emAndamento && !sessao.simulado && modoNatalAtivo()} />
             <div className="dp-topo__titulo">
               <p className="dp-rotulo dp-rotulo--claro">
                 <Icone nome={emAndamento ? 'relogio' : sessao.simulado ? 'bandeira' : 'certo'} tamanho={14} />

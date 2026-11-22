@@ -104,6 +104,7 @@ try{
   await access(`public/pixel/inicio/${c.arquivo}-${periodo}${size}.webp`)
   if(c.neve?.arquivo)await access(`public/pixel/inicio/${c.neve.arquivo}-${periodo}${size}.webp`)
   if(c.pinturaNatal)await access(`public/pixel/inicio/${c.pinturaNatal}-${periodo}${size}.webp`)
+  if(c.neve?.arquivoNatal)await access(`public/pixel/inicio/${c.neve.arquivoNatal}-${periodo}${size}.webp`)
  }
  await access('public/pixel/inicio/trem-vale.png')
  assert.ok(CENARIOS.find(c=>c.id==='abrigo').fogo)

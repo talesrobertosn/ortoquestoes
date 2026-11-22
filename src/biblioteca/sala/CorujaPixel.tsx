@@ -17,15 +17,17 @@ export type EstadoCoruja = (typeof LINHAS_CORUJA)[number] | keyof typeof APELIDO
 /** Estados que tocam uma vez e param (os outros repetem). */
 const UMA_VEZ: EstadoCoruja[] = ['reagindo', 'girando', 'piando', 'pousando']
 /** No modo Natal, a mesma coruja com o xale tingido de cachecol vermelho (scripts/natal/coruja_cachecol.py). */
-export const SPRITE_CORUJA = modoNatalAtivo() ? 'pixel/mascote/coruja-nova-natal.png?v=1' : 'pixel/mascote/coruja-nova.png?v=3'
+const SPRITE = 'pixel/mascote/coruja-nova.png?v=3'
+const SPRITE_NATAL = 'pixel/mascote/coruja-nova-natal.png?v=1'
 export const QUADRO_CORUJA = { w: 44, h: 32, pes: 31 }
 
-export function CorujaPixel({ estado, className = '', style }: { estado: EstadoCoruja; className?: string; style?: CSSProperties }) {
+export function CorujaPixel({ estado, className = '', style, natal = modoNatalAtivo() }: { estado: EstadoCoruja; className?: string; style?: CSSProperties; natal?: boolean }) {
+  const sprite = natal ? SPRITE_NATAL : SPRITE
   const nome = (APELIDOS as Record<string, (typeof LINHAS_CORUJA)[number]>)[estado] ?? estado
   const linha = Math.max(0, LINHAS_CORUJA.indexOf(nome as (typeof LINHAS_CORUJA)[number]))
   return (
     <span key={estado}
       className={`coruja-pixel coruja-pixel--${nome}${UMA_VEZ.includes(estado) ? ' coruja-pixel--uma-vez' : ''} ${className}`} aria-hidden="true"
-      style={{ ...style, '--sprite': urlCss(SPRITE_CORUJA), '--linha': linha, '--linhas': LINHAS_CORUJA.length, ...mapasDeLuz(SPRITE_CORUJA) } as CSSProperties} />
+      style={{ ...style, '--sprite': urlCss(sprite), '--linha': linha, '--linhas': LINHAS_CORUJA.length, ...mapasDeLuz(sprite) } as CSSProperties} />
   )
 }

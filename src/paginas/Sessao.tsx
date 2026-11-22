@@ -1001,7 +1001,7 @@ export function Sessao() {
           onClick={() => { definirDicaDeslizar(false); definirDicaTeclado(false) }}
           aria-label={'Dica da coruja: ' + (dicaDeslizar ? 'arraste a questão para o lado para trocar de questão' : 'use as setas do teclado para trocar de questão') + '. Some sozinha em 3 segundos; toque para fechar.'}
         >
-          <span className="sx-dica-popup__retrato" aria-hidden="true"><CorujaPixel estado="acenando" /></span>
+          <span className="sx-dica-popup__retrato" aria-hidden="true"><CorujaPixel estado="acenando" natal={false} /></span>
           <span className="sx-dica-popup__fala" aria-hidden="true">
             <b className="sx-dica-popup__nome">Coruja</b>
             {dicaDeslizar ? (

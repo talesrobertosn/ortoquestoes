@@ -1,0 +1,27 @@
+/* As braçadeiras tocam o beiral. A cauda e a coroa descem pelo lado sem texto. */
+.natal-moldura {
+  position: absolute;
+  inset: 0 clamp(0.45rem, 2vw, 1.3rem) auto auto;
+  width: clamp(8.5rem, 23%, 16rem);
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 2px 1px rgba(18, 14, 9, 0.42));
+}
+
+.sb-topo { position: relative; }
+.sb-topo > .natal-moldura, .vd-heroi > .natal-moldura {
+  width: clamp(8rem, 19%, 14rem);
+}
+.pc--biblioteca .natal-moldura {
+  inset-inline-end: clamp(0.65rem, 5%, 3rem);
+  width: clamp(9rem, 21%, 16rem);
+}
+.fcn-pintura > .natal-moldura { inset-inline-end: 0.55rem; }
+
+@media (max-width: 36rem) {
+  .natal-moldura { width: 8.25rem; inset-inline-end: 0.45rem; }
+  .pc--biblioteca .natal-moldura { width: 9.5rem; }
+}

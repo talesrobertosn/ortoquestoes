@@ -9,6 +9,8 @@ import { MODO_NATAL } from '../../../natal/modoNatal'
  * em y 163, o lado esquerdo calmo para o texto. Cada cenário diz onde o gato passeia e onde a coruja pousa (sempre em
  * algo firme). As artes saem dos scripts de scripts/ (gerar_cena_inicio.py e scripts/cenarios/inicio_*.py).
  */
+export const REPERTORIO_NATAL = ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'] as const satisfies readonly IdComportamento[]
+
 export type PoseGato = 'repouso' | Extract<IdLinhaGato, 'sentado' | 'observando' | 'fogueira'>
 export type Particulas = 'vagalumes' | 'faiscas' | 'neve' | 'estrelas'
 export type Cenario = {
@@ -40,7 +42,7 @@ export type Cenario = {
    * O sistema de neve (clima.ts, 12/11/2026): o cenário que aceita neve recebe a nevasca animada quando o tempo vira, e,
    * se tiver `arquivo`, troca devagar a pintura pela versão nevada (`${arquivo}-${periodo}[-960].webp`).
    */
-  neve?: { arquivo?: string }
+  neve?: { arquivo?: string; arquivoNatal?: string }
   /**
    * Cenário de Natal (vale, sala do chalé): some do rodízio quando a chave geral do modo Natal está desligada.
    * Cenário de inverno (neve, praça, vale, sala do chalé): marca para as versões de Natal dos cenários (etapa 3).
@@ -102,10 +104,10 @@ export const CENARIOS: readonly Cenario[] = [
   {
     // Natal no Vale (12/11/2026, scripts/cenarios/inicio_vale.py): o terraço de um chalé suíço no alto do vale, com a
     // cachoeira, a prefeitura com a torre do relógio lá embaixo e o trem de montanha. Só na época do Natal; o esqueleto fica sentado no banco.
-    id: 'vale', arquivo: 'cena-vale', particulas: 'neve', natal: true, inverno: true,
+    id: 'vale', arquivo: 'cena-vale', particulas: 'neve', natal: true, inverno: true, pinturaNatal: 'cena-vale-natal',
     epoca: { de: [11, 10], ate: [1, 6] },
-    neve: { arquivo: 'cena-vale-nevado' },
-    repertorio: ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'],
+    neve: { arquivo: 'cena-vale-nevado', arquivoNatal: 'cena-vale-natal-nevado' },
+    repertorio: REPERTORIO_NATAL,
     trem: { de: [150, 104], ate: [372, 97] },
     // O cesto com a almofada xadrez, os presentes do trenó, a neve olhando o vale e a sacada do chalé.
     gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 190, y: 148, pose: 'repouso' }, { x: 332, y: 150, pose: 'sentado' }, { x: 300, y: 162, pose: 'observando' }, { x: 416, y: 104, pose: 'repouso' }],
@@ -114,10 +116,10 @@ export const CENARIOS: readonly Cenario[] = [
   },
   {
     // O interior do mesmo chalé: a vila do vale continua visível pela janela.
-    id: 'sala_natal', arquivo: 'cena-sala-natal', particulas: 'faiscas', natal: true, inverno: true,
+    id: 'sala_natal', arquivo: 'cena-sala-natal', particulas: 'faiscas', natal: true, inverno: true, pinturaNatal: 'cena-sala-natal-luzes',
     epoca: { de: [11, 10], ate: [1, 6] },
     fogo: [298, 146], mascote: { x: 333, y: 100, w: 46, h: 67 },
-    repertorio: ['natal_chocolate', 'natal_tricotar', 'natal_castanhas', 'natal_cantar', 'natal_cochilo'],
+    repertorio: REPERTORIO_NATAL,
     gato: [{ x: 378, y: 149, pose: 'repouso' }, { x: 361, y: 169, pose: 'sentado' }, { x: 426, y: 169, pose: 'observando' }],
     coruja: [{ x: 372, y: 78 }, { x: 244, y: 124 }, { x: 342, y: 77 }],
   },

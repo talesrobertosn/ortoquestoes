@@ -142,6 +142,13 @@ número ou botão e sem criar rolagem lateral:
 - [x] Etapa 3, Neve (aprovada pelo Tales em 21/11/2026): festão aceso na cabana, pinheiro e trenó com presentes.
       As três horas foram conferidas na inicial em 1440 e 390 px, tema claro e escuro.
 - [x] Etapa 3, Abrigo das Águas e Praça do Pinheiro (aprovados pelo Tales): festão no arco e meias na coluna
-      no Abrigo. Varal de pinho, pinheiro iluminado e barraca de castanhas e chocolate na Praça.
-- [ ] Etapa 4: as conversas entre as partes (a meta do dia acende o fio, a coruja visita a guirlanda, o trenó).
-- [ ] Demais páginas.
+      no Abrigo. Varal de pinho, pinheiro iluminado e barraca de castanhas e chocolate na Praça. Publicados no PR #1208.
+- [x] Vale (com e sem neve) e Sala do chalé, aprovados: mais luzes na sacada e na lareira, integradas à luz de cada
+      período. Pinturas de `scripts/natal/luzes_chale.py`.
+- [x] Etapa 4, aprovada: lâmpadas nos atalhos ligadas à meta, reflexos na cena, neve que se acumula, gato e coruja
+      interagindo com os enfeites, segredo da estrela, trenó noturno, chocolate na sequência e laços nas faixas.
+      As cinco poses do esqueleto de Natal entram no sorteio de todos os cenários.
+- [x] Demais páginas, aprovadas: Biblioteca, Menu, Resultado e aviso de fim da sessão normal, Cronograma, Flashcards,
+      Desempenho, Conquistas, Indique e ganhe, Planos, Entrar e Sobre. O Cronograma recebe a pintura na Estrada até a
+      Prova, que é o cenário ativo, com coroa no sino e neve nos telhados.
+- Tales aprovou a etapa final em 22/11/2026. A galeria reúne capturas em 390 e 1440 px nos dois temas.

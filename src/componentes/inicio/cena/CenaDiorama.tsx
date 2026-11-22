@@ -1,3 +1,4 @@
+import { usarEmVista, usarMenosMovimento, usarNatalInicio } from '../../../natal/InteracoesInicio'
 import { createPortal } from 'react-dom'
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react'
 import { recurso } from '../../../config'
@@ -11,7 +12,7 @@ import { FALAS_PAUSA_APAGADA, FALAS_PAUSA_FOGUEIRA } from '../../mascote/falas'
 import { EVENTO_AMOSTRA } from '../AmostraRespondivel'
 import { urlCss } from '../../../config'
 import { luzNoBicho, mapasDeLuz, type Luz } from '../../mascote/luz'
-import { cenarioDaHora, faixaDoCenario, type Cenario } from './cenarios'
+import { cenarioDaHora, faixaDoCenario, REPERTORIO_NATAL, type Cenario } from './cenarios'
 import { climaAgora, type Clima } from './clima'
 import { Nevasca } from './Nevasca'
 import { EVENTO_ROTEIRO, ROTEIROS, tempoDeLer, type Acao, type Bicho, type Roteiro } from './roteiros'
@@ -724,6 +725,31 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
   const imagem = (larg: number, arquivo = natalNoAr && cenario.pinturaNatal ? cenario.pinturaNatal : cenario.arquivo) => recurso(`pixel/inicio/${arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
   // O tempo (clima.ts): igual para todos, conferido a cada meio minuto. A pintura nevada entra devagar por cima.
   const [clima, definirClima] = useState<Clima>(() => climaAgora())
+  const { ativo: natal, mostrarNeve, balançar } = usarNatalInicio()
+  const natalVisivel = usarEmVista(palco, natal)
+  const natalParado = usarMenosMovimento()
+  useEffect(() => {
+    if (!natal) return
+    mostrarNeve(cenario.neve && clima.nevando ? clima.intensidade : 0)
+    return () => mostrarNeve(0)
+  }, [natal, cenario.neve, clima.nevando, clima.intensidade, mostrarNeve])
+  useEffect(() => {
+    if (!natalVisivel || natalParado) return
+    let volta = 0
+    const reagir = () => {
+      const heroi = palco.current?.closest('.ip')
+      const gato = heroi?.querySelector('.hd-gato:not(.hd-gato--fora)')
+      const lampadas = Array.from(heroi?.querySelectorAll<HTMLElement>('[data-lampada]') ?? [])
+      if (!gato || !lampadas.length || document.hidden) return
+      const meio = (el: Element) => { const r = el.getBoundingClientRect(); return r.left + r.width / 2 }
+      const perto = lampadas.reduce((a, b) => Math.abs(meio(a) - meio(gato)) <= Math.abs(meio(b) - meio(gato)) ? a : b)
+      definirGato((estado) => estado === 'tala' || estado === 'andando' ? estado : 'brincando')
+      balançar(Number(perto.dataset.lampada))
+      volta = window.setTimeout(() => definirGato((estado) => estado === 'brincando' ? poseDoPonto(agora.current.ponto) : estado), 2800)
+    }
+    const t = window.setInterval(reagir, 24000)
+    return () => { window.clearInterval(t); window.clearTimeout(volta) }
+  }, [natalVisivel, natalParado, balançar])
   const [transicao, definirTransicao] = useState(false)
   useEffect(() => {
     if (!cenario.neve) return
@@ -732,7 +758,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
     const liga = window.setTimeout(() => definirTransicao(true), 1500)
     return () => { window.clearInterval(t); window.clearTimeout(liga) }
   }, [cenario.neve])
-  const nevadoArquivo = cenario.neve?.arquivo
+  const nevadoArquivo = (natalNoAr ? cenario.neve?.arquivoNatal : undefined) ?? cenario.neve?.arquivo
   const coberto = !!nevadoArquivo && clima.coberto
   // As luzes da cena para os bichos (componentes/mascote/luz.ts): a fogueira, mais forte na pausa, e o céu da hora.
   const luzes: Luz[] = [
@@ -831,7 +857,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
           ? <Mascote key="descanso" className={classeMascote} decorativo falar={permitirFalaMascote} comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={estiloMascote} />
           : reacaoAmostra?.id === 'quadro'
             ? <Mascote key={`quadro-${reacaoAmostra.n}`} className={classeMascote} decorativo falar={permitirFalaMascote} comportamento="quadro" style={estiloMascote} />
-            : <Mascote key="dia" comportamento={cenario.posePadrao} repertorio={cenario.repertorio} className={classeMascote} decorativo falar={permitirFalaMascote} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
+            : <Mascote key="dia" comportamento={natalNoAr ? undefined : cenario.posePadrao} repertorio={natalNoAr ? REPERTORIO_NATAL : cenario.repertorio} className={classeMascote} decorativo falar={permitirFalaMascote} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
         {pausa > 0 && <span className="so-leitor" role="status">{fogoAceso ? 'Pausa na fogueira: o esqueleto senta para se aquecer e o gato ronrona.' : 'A fogueira está apagada; o esqueleto senta um instante ao lado dela.'}</span>}
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" aria-label="Falar com o gato" tabIndex={semLugar ? -1 : undefined} aria-hidden={semLugar || undefined}

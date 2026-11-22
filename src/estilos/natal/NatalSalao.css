@@ -1,0 +1,16 @@
+/* O pinho segue a cornija da pintura. A camada de luz clareia a madeira embaixo. */
+.bb-natal, .bb-natal > img {
+  position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; user-select: none;
+}
+.bb-natal > img { object-fit: fill; transform: none; transition: none; }
+.bb-natal__luz { mix-blend-mode: screen; animation: bb-natal-vidros 4.8s ease-in-out infinite; }
+.bb-salao--manha .bb-natal__luz { --bb-natal-luz: 0.58; }
+.bb-salao--tarde .bb-natal__luz { --bb-natal-luz: 0.82; }
+.bb-salao--noite .bb-natal__luz { --bb-natal-luz: 1; }
+@keyframes bb-natal-vidros {
+  0%, 100% { opacity: var(--bb-natal-luz, 1); }
+  50% { opacity: calc(var(--bb-natal-luz, 1) * 0.52); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bb-natal__luz { animation: none; opacity: var(--bb-natal-luz, 1); }
+}
