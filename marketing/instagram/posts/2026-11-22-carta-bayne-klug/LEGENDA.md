@@ -27,3 +27,9 @@ só no cumprimento e na assinatura), carta organizada em blocos, e um 3º story 
 capturas reais já existentes, com a conta de exemplo ("Telas ilustrativas"): o comentário (`posts/2026-11-13-errata-metastases`),
 o Atlas 3D (`posts/2026-10-27-atlas-3d`), a Biblioteca (`resumos-biblioteca`) e o cronograma (`marketing/kit/telas`).
 "Até 20 questões comentadas por dia": `LIMITE_GRATIS_ATUAL = 20` em `src/config.ts` (verdade com o limite ligado ou desligado).
+
+## Prints novos do story 3 (22/11/2026, pedido do Tales)
+
+Capturados com `capturar-telas.mjs` (conta de exemplo, tela de computador 1440 x 900): o resumo do Green cap. 38 aberto
+no leitor do computador (grande, para ler), o Atlas 3D centralizado com a camada de artérias e o calendário do
+cronograma (mês de dezembro, com as áreas de cada dia). O comentário no iPhone continua o mesmo.
