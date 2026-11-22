@@ -58,6 +58,13 @@ export interface ParametrosModelo {
   viramR3?: number
   /** Mês da prova (1 = janeiro). */
   mesProva?: number
+  /**
+   * Gente que deixa o público no mês seguinte ao da prova (a turma de R3 que terminou a residência). Sai do
+   * público e, na mesma proporção, das contas já cadastradas e das grátis. Sem isso, a turma nova de março
+   * só somaria e o público cresceria para sempre (Tales, 22/11/2026: "quanto mais gente se cadastra, menos
+   * gente sobra para se cadastrar").
+   */
+  turmaSaiDepoisDaProva?: number
   /** Multiplicador dos cadastros por mês do ano (índice 0 = janeiro). */
   sazonalCadastros?: number[]
   /** Multiplicador da vontade de assinar por mês do ano (índice 0 = janeiro): aplica na conversão do mês e na atrasada. */
@@ -103,6 +110,10 @@ export function projetarCrescimento(p: ParametrosModelo): MesProjetado[] {
   for (let i = 0; i < p.meses; i++) {
     const mes = somarMesChave(p.inicio, i)
     const mesAno = Number(mes.slice(5, 7))
+    if (p.turmaSaiDepoisDaProva && mesAno === mesProva % 12 + 1 && mercado > 0) {
+      const sai = Math.min(1, p.turmaSaiDepoisDaProva / mercado)
+      acumulado -= acumulado * sai; gratis -= gratis * sai; mercado -= p.turmaSaiDepoisDaProva
+    }
     if (mes.endsWith('-03')) mercado += p.turmaNovaMarco
     const restante = Math.max(0, mercado - acumulado)
     const cadastros = Math.min(restante, restante * fracao * p.marketing * (p.sazonalCadastros?.[mesAno - 1] ?? 1))
@@ -187,7 +198,9 @@ export const PARAMETROS_PLANO_11_11: ParametrosModelo = {
  * O plano oficial desde 22/11/2026 (Tales: "dia 10 de janeiro é a prova do TEOT, então os R3 não vão assinar
  * mais; dia 01 de março entram os novos R1, mas na loucura do começo nem todo mundo assina; calibre as metas").
  * Mesmo modelo, agora com o ano da residência:
- * - Público de cerca de 3.000 residentes (Tales) e uma turma nova de R1 de cerca de 1.000 em março.
+ * - Público de cerca de 3.000 residentes (Tales): em fevereiro sai a turma de ~1.000 R3 que terminou (do público,
+ *   das contas e das grátis, na mesma proporção) e em março entra uma turma nova de ~1.000 R1. Os cadastros caem
+ *   conforme o público se esgota e só se renovam com a turma nova.
  * - Retenção medida em 22/11: 10 dos 15 Pix mensais de outubro que venceram pagaram de novo (67%; o plano usa 68%).
  * - Cerca de metade dos mensais era R3 em novembro (24 de 47). 80% deles saem no mês da prova e 80% dos que
  *   sobram no mês seguinte; quem fica (R4, fellowship, título) passa a contar como os outros.
@@ -207,7 +220,7 @@ export const PARAMETROS_PLANO: ParametrosModelo = {
   conversao: 0.32, conversaoAtrasada: 0.02,
   mixMensal: 0.75, mixSemestral: 0.05, mixAnual: 0.2,
   pixRenova: 0.68, cartaoContinua: 0.9, longoRenova: 0.5,
-  fracaoR3Inicio: 0.5, saidaPosTeot: 0.8, viramR3: 0.35, mesProva: 1,
+  fracaoR3Inicio: 0.5, saidaPosTeot: 0.8, viramR3: 0.35, mesProva: 1, turmaSaiDepoisDaProva: 1000,
   //                 jan   fev   mar   abr   mai   jun   jul   ago   set   out   nov   dez
   sazonalCadastros: [0.75, 0.8, 1.05, 1, 1, 0.95, 0.95, 1, 1, 1, 1, 0.85],
   sazonalCompra: [0.5, 0.55, 0.7, 0.8, 0.8, 0.8, 0.85, 0.9, 0.95, 1, 1.1, 1.05],

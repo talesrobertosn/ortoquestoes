@@ -8,7 +8,9 @@ Painel › Financeiro › **Metas** (`src/admin/modulos/Metas.tsx`). Faixas resu
 10/01 (depois dele os R3 param de assinar) e os R1 entram em 01/03 (mas na loucura do começo nem todos assinam).
 O modelo de `src/admin/dados/projecao.ts` ganhou campos opcionais do ano da residência (`PARAMETROS_PLANO`):
 
-- Público de cerca de 3.000 residentes e turma nova de ~1.000 R1 em março.
+- Público de cerca de 3.000 residentes. Em fevereiro sai a turma de ~1.000 R3 que terminou (do público, das contas e
+  das grátis, na mesma proporção, `turmaSaiDepoisDaProva`); em março entra a turma nova de ~1.000 R1. Os cadastros caem
+  conforme o público se esgota e só se renovam com a turma nova (Tales: "quanto mais gente se cadastra, menos gente sobra").
 - Retenção do Pix mensal medida em 22/11: 10 de 15 Pix de outubro pagaram de novo (67%; o plano usa 68%).
 - Metade dos mensais é R3 (24 de 47 em novembro). No mês da prova 80% deles não renovam; em fevereiro, 80% dos que
   sobraram; quem fica passa a contar como os outros (R4, fellowship, título).
@@ -17,8 +19,8 @@ O modelo de `src/admin/dados/projecao.ts` ganhou campos opcionais do ano da resi
   novembro. Cadastros também têm estação (`sazonalCadastros`). Perto da prova (dez e jan), o R3 só compra o mensal.
 - Conversão 32%, mix 75/5/20, cartão 90% continuando, 50% dos semestrais e anuais renovando.
 
-Resultado: 97 pagantes em dez/26, o vale de 73 em jan/27, 249 em dez/27 (≈ 8% dos residentes) e 196 em jan/28;
-R$ 82 mil recebidos em 2027. **Novembro de 2026 mantém a meta do plano de 11/11**: o mês em andamento não troca de alvo.
+Resultado: 97 pagantes em dez/26, o vale de 68 em fev/27, 191 em dez/27 (≈ 6% dos residentes) e 151 em jan/28;
+R$ 64 mil recebidos em 2027. Cadastros: 108 em nov/26, 52 em fev/27, 106 em mar/27 e caindo até 61 em dez/27. **Novembro de 2026 mantém a meta do plano de 11/11**: o mês em andamento não troca de alvo.
 A página mostra também o **piso** e a **ousada** (`CENARIOS_PLANO`: marketing, conversão e renovação do Pix piores ou
 melhores) e os **marcos do ano da residência** (`MARCOS_RESIDENCIA`). O simulador ganhou os controles "R3 entre os
 mensais" e "R3 que saem depois da prova", e o gráfico de pagantes separa os mensais R3.

@@ -49,6 +49,12 @@ try {
   assert.ok(em(t, '2027-02').mensaisR3 < 2, 'em fevereiro os R3 que ficaram deixam de ser R3')
   assert.ok(em(t, '2027-03').mensaisR3 > em(t, '2027-02').mensaisR3, 'em março os R2 viram R3')
   assert.ok(em(t, '2027-12').ativosFim > em(t, '2026-12').ativosFim && em(t, '2028-01').ativosFim < em(t, '2027-12').ativosFim)
+  // Público finito com troca de turma: em fevereiro sai a turma que terminou (menos cadastros), em março entra a nova,
+  // e de abril a dezembro os cadastros caem conforme o público se esgota.
+  assert.ok(em(t, '2027-02').cadastros < em(t, '2027-01').cadastros && em(t, '2027-03').cadastros > em(t, '2027-02').cadastros)
+  for (const [a, b] of [['2027-04', '2027-05'], ['2027-05', '2027-06'], ['2027-09', '2027-10'], ['2027-10', '2027-11']]) assert.ok(em(t, b).cadastros < em(t, a).cadastros, `cadastros caem de ${a} para ${b}`)
+  const semSaida = m.projetarCrescimento({ ...m.PARAMETROS_PLANO, turmaSaiDepoisDaProva: 0 })
+  assert.ok(em(semSaida, '2027-06').cadastros > em(t, '2027-06').cadastros, 'sem a turma saindo, o público só cresceria')
   // Mais R3 ficando depois da prova, mais pagantes em fevereiro.
   const ficam = m.projetarCrescimento({ ...m.PARAMETROS_PLANO, saidaPosTeot: 0.3 })
   assert.ok(em(ficam, '2027-02').ativosFim > em(t, '2027-02').ativosFim)

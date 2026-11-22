@@ -272,7 +272,7 @@ function Cenarios() {
     return { ...c, jan: em('2027-01'), dez: em('2027-12'), ano: r.filter(x => x.mes.startsWith('2027')).reduce((s, x) => s + x.faturamento, 0) }
   }), [])
   const din = (v: number) => reais(Math.round(v)).replace(/,00$/, '')
-  return <div><div className="hb-titulo"><div><h3>Piso, meta e ousada</h3><p>O piso diz quando acender o alerta; a ousada, até onde dá para ir com marketing forte. Hoje o site tem cerca de 2,6% dos residentes pagando; a meta leva a uns 8% no fim de 2027, dentro do que cursos consolidados têm (200 a 500 alunos).</p></div></div>
+  return <div><div className="hb-titulo"><div><h3>Piso, meta e ousada</h3><p>O piso diz quando acender o alerta; a ousada, até onde dá para ir com marketing forte. Hoje o site tem cerca de 2,6% dos residentes pagando; a meta leva a uns 6% no fim de 2027, perto do que cursos consolidados têm (200 a 500 alunos). Os cadastros caem conforme o público se esgota: em fevereiro sai a turma de R3 que terminou e só a turma nova de R1, em março, renova o público.</p></div></div>
     <div className="a3-tabela-caixa"><table className="a3-tabela a3-tabela--compacta hb-tabela">
       <thead><tr><th scope="col">Cenário</th><th scope="col" className="num">Pagantes<small>jan 27 (o vale)</small></th><th scope="col" className="num">Pagantes<small>dez 27</small></th><th scope="col" className="num">Receita equivalente<small>dez 27</small></th><th scope="col" className="num">Recebido<small>em 2027</small></th></tr></thead>
       <tbody>{linhas.map(c => <tr key={c.id} className={c.id === 'meta' ? 'hb-linha-atual' : undefined}><th scope="row">{c.nome}<small>{c.explica}</small></th>
@@ -325,6 +325,7 @@ function Futuro({ taxa, todas }: { taxa: number; todas: Cobranca[] }) {
         {deslizador('Pix mensal que renova', 'Chance de um mensal no Pix pagar de novo quando o mês acaba (o cartão renova sozinho, com 95% continuando).', 'pixRenova', 0.3, 1, 0.05, pct)}
         {deslizador('R3 entre os mensais', 'Dos mensais de hoje, quantos são R3 e fazem o TEOT em janeiro. Em novembro de 2026 eram cerca de metade.', 'fracaoR3Inicio', 0, 1, 0.05, pct)}
         {deslizador('R3 que saem depois da prova', 'Dos mensais R3, quantos não renovam no mês da prova (e, dos que sobram, no mês seguinte). Quem fica estuda para R4, fellowship ou título.', 'saidaPosTeot', 0, 1, 0.05, pct)}
+        {deslizador('Turma que sai depois da prova', 'Os R3 que terminam a residência e deixam o público em fevereiro (quem já tinha conta sai na mesma proporção). Com zero, o público só cresceria.', 'turmaSaiDepoisDaProva', 0, 1500, 50, v => inteiro(v))}
         {deslizador('Turma nova de R1 em março', 'Gente nova que passa a ser alcançável quando a residência começa.', 'turmaNovaMarco', 0, 1500, 50, v => inteiro(v))}
         <div className="hb-param__acoes"><button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definir({})}>Números de hoje</button><button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" onClick={() => definir({ ...PARAMETROS_PLANO, inicio: hoje.inicio, jaCadastrados: hoje.jaCadastrados, gratisNoInicio: hoje.gratisNoInicio, mensaisNoInicio: hoje.mensaisNoInicio, longosNoInicio: hoje.longosNoInicio })}>Premissas do plano</button></div>
       </div>
