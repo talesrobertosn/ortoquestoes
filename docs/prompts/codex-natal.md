@@ -93,7 +93,8 @@ Forja, Cais e Observatório (#1205), Neve (#1207), Abrigo e Praça (#1208) foram
 O checkpoint está na seção Andamento de `docs/design/MODO-NATAL.md`. Os prints da etapa estão em
 `Documents/OrtoQuestoes-Natal-2026/Etapa-final/Galeria.html` no Mac. Tales aprovou os prints desta etapa em 22/11/2026.
 
-A decoração ao longo das páginas foi publicada no #1216. Tales recusou a composição de Treinar. A prévia
-`codex/natal-treinar` concentra a decoração num ramo pequeno em Começar agora. O novo trecho do checkpoint
-está em “Decoração ao longo das páginas” em `docs/design/MODO-NATAL.md`. As capturas estão em
-`Documents/OrtoQuestoes-Natal-2026/Treinar-refeito`. A nova arte aguarda o OK do Tales.
+A decoração ao longo das páginas foi publicada no #1216. Em Treinar, Tales gostou da versão original no
+celular e pediu uma versão mais leve no computador. A prévia `codex/natal-treinar` mantém as três peças
+na montagem de uma coluna e, em telas largas, usa um ramo pequeno em Começar agora. O checkpoint está em
+“Decoração ao longo das páginas” em `docs/design/MODO-NATAL.md`. As capturas estão em
+`Documents/OrtoQuestoes-Natal-2026/Treinar-responsivo`. A prévia aguarda o OK do Tales.

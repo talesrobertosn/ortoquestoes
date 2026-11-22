@@ -159,8 +159,9 @@ A rodada de 22/11/2026 distribui as peças entre as seções, com os controles e
 
 - **Página inicial**: festão na passagem para os atalhos de estudo ou para a apresentação do site e bancada
   com presentes perto do convite do Instagram.
-- **Treinar**: o Tales recusou a combinação de festão, lanternas e presentes em 22/11/2026. Na nova composição,
-  um ramo de pinho com fita e sino de latão marca Começar agora. A seção Montar do seu jeito fica livre de enfeites.
+- **Treinar**: o Tales gostou do festão, das lanternas e dos presentes no celular e achou o conjunto grande demais
+  no computador. Na montagem de uma coluna, ficam as três peças originais. Nas telas largas, um ramo de pinho com
+  fita e sino de latão marca Começar agora. A montagem do computador fica livre de enfeites.
 - **Resumos**: livros à luz de velas entre a Mesa e a busca e festão ao pé da estante.
 - **Cronograma**: sinos junto ao painel de hoje e na tela de montar plano, além do festão antes de Como funciona.
 

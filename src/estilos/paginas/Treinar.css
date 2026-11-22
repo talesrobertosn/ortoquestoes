@@ -247,7 +247,12 @@
 }
 @media (max-width: 52rem) {
   .tn-rapido { grid-template-columns: 1fr; gap: var(--e-4); }
+  .tn-rapido > .natal-passagem { margin-block: calc(-1 * var(--e-4)); }
+  .tn-montagem > .natal-passagem { margin-block: calc(-1 * var(--e-2)) var(--e-2); }
   .tn-rapido__atalhos { padding: var(--e-4) 0 0; border-left: 0; border-top: 1px solid var(--tn-filete); }
+}
+@media (max-width: 48rem) {
+  .tn-rapido > .natal-passagem { margin-block: calc(-1 * var(--e-2)); }
 }
 @media (max-width: 40rem) {
   .tn { gap: var(--e-4); padding-bottom: 5.5rem; }
