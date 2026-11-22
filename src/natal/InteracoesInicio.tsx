@@ -55,10 +55,13 @@ export function NatalInicioProvider({ respostas = 0, meta = false, festa = 0, ch
   const visitarGuirlanda = useCallback((palco: HTMLElement | null) => {
     const origem = palco?.querySelector('.hd-coruja:not(.hd-coruja--fora)')
     const destino = palco?.closest('.ip')?.querySelector('.natal-corujinha-ancora')
-    if (!origem || !destino || document.hidden) return
-    const a = origem.getBoundingClientRect(), b = destino.getBoundingClientRect()
-    if (a.bottom < 0 || b.top > innerHeight + 80 || a.width === 0) return
-    definirVisita({ x: a.left + a.width / 2 - (b.left + b.width / 2), y: a.top - b.top })
+    if (!palco || !destino || document.hidden) return
+    const b = destino.getBoundingClientRect()
+    const a = origem?.getBoundingClientRect()
+    const moldura = palco.getBoundingClientRect()
+    const x = a && a.width > 0 ? a.left + a.width / 2 : moldura.left + moldura.width * .72
+    const y = a && a.bottom > 0 ? a.top : Math.max(-36, moldura.bottom - 32)
+    definirVisita({ x: x - b.left, y: y - b.top })
   }, [])
   useEffect(() => {
     if (!visita) return

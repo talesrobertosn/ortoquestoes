@@ -725,7 +725,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
   const imagem = (larg: number, arquivo = natalNoAr && cenario.pinturaNatal ? cenario.pinturaNatal : cenario.arquivo) => recurso(`pixel/inicio/${arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
   // O tempo (clima.ts): igual para todos, conferido a cada meio minuto. A pintura nevada entra devagar por cima.
   const [clima, definirClima] = useState<Clima>(() => climaAgora())
-  const { ativo: natal, mostrarNeve, balançar, visitarGuirlanda } = usarNatalInicio()
+  const { ativo: natal, mostrarNeve, balançar } = usarNatalInicio()
   const natalVisivel = usarEmVista(palco, natal)
   const natalParado = usarMenosMovimento()
   useEffect(() => {
@@ -748,9 +748,8 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
       volta = window.setTimeout(() => definirGato((estado) => estado === 'brincando' ? poseDoPonto(agora.current.ponto) : estado), 2800)
     }
     const t = window.setInterval(reagir, 24000)
-    const visita = window.setInterval(() => { if (!document.hidden) visitarGuirlanda(palco.current) }, 46000)
-    return () => { window.clearInterval(t); window.clearInterval(visita); window.clearTimeout(volta) }
-  }, [natalVisivel, natalParado, balançar, visitarGuirlanda])
+    return () => { window.clearInterval(t); window.clearTimeout(volta) }
+  }, [natalVisivel, natalParado, balançar])
   const [transicao, definirTransicao] = useState(false)
   useEffect(() => {
     if (!cenario.neve) return

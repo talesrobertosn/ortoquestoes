@@ -34,15 +34,26 @@ export function FestaoNatal() {
 
 /** A guirlanda pendurada no canto de cima à esquerda da barra de atalhos, metade para fora. */
 export function GuirlandaNatal() {
-  const { visita } = usarNatalInicio()
-  if (!usarNatal()) return null
+  const natal = usarNatal()
+  const { visita, visitarGuirlanda } = usarNatalInicio()
+  const guirlanda = useRef<HTMLSpanElement>(null)
+  const emVista = usarEmVista(guirlanda, natal)
+  const reduz = usarMenosMovimento()
+  useEffect(() => {
+    if (!emVista || reduz) return
+    const t = window.setInterval(() => {
+      visitarGuirlanda(guirlanda.current?.closest('.ip')?.querySelector<HTMLElement>('.hd-palco') ?? null)
+    }, 24000)
+    return () => window.clearInterval(t)
+  }, [emVista, reduz, visitarGuirlanda])
+  if (!natal) return null
   return (
     <>
-      <span className="natal-guirlanda" aria-hidden="true">
+      <span ref={guirlanda} className="natal-guirlanda" aria-hidden="true">
         <span className="natal-guirlanda__luz" />
       </span>
       <span className="natal-corujinha-ancora" aria-hidden="true">
-        {visita && <VisitaCoruja x={visita.x} y={visita.y} />}
+        {visita && emVista && !reduz && <VisitaCoruja x={visita.x} y={visita.y} />}
       </span>
     </>
   )
