@@ -1,6 +1,5 @@
-import { PassagemNatal } from '../natal/PassagemNatal'
 import { useDeferredValue, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import { FLASHCARDS_NO_MENU, fraseGratis, rotuloProva, urlCss } from '../config'
+import { FLASHCARDS_NO_MENU, fraseGratis, recurso, rotuloProva, urlCss } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
@@ -32,6 +31,9 @@ import { confirmar, pedirTexto } from '../componentes/Confirmar'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { Painel } from '../componentes/Painel'
 import { carregarLetrasAcervo } from '../dados/letrasAcervo'
+import { PassagemNatal } from '../natal/PassagemNatal'
+import { modoNatalAtivo } from '../natal/modoNatal'
+import { usarMedia } from '../util/usarMedia'
 import '../estilos/componentes/Cristal.css'
 import '../estilos/paginas/Treinar.css'
 
@@ -99,6 +101,8 @@ const DURACOES: Array<[number, string]> = [
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const paisagem = usarPaisagemTreinar()
+  // Mesmo ponto em que Começar agora passa para uma coluna em Treinar.css.
+  const colunaUnica = usarMedia('(max-width: 52rem)')
   const cronograma = usarCronogramaHoje()
   const { indice, carregando, erro: erroIndice } = usarIndice()
   const { iniciarComAviso } = usarSessao()
@@ -554,6 +558,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     </>
   )
 
+  const natal = modoNatalAtivo()
+  const natalCompacto = natal && colunaUnica
+  const natalAmplo = natal && !colunaUnica
+
   return (
     <div className="tn treinar-pagina">
       {/* Mesa de estudo leve (Tales, 01/11/2026): sem cena no topo; o parentesco com a página inicial vem da
@@ -573,9 +581,14 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
       {/* Começar agora: uma ação principal e quatro atalhos, todos de 10 questões, sem passar pelos filtros. */}
       <section className="tn-rapido" aria-labelledby="tn-rapido-titulo" style={{ '--tn-paisagem': urlCss(`pixel/inicio/${paisagem}`) } as CSSProperties}>
-        <PassagemNatal forma="festao" compacta inicio />
+        {natalCompacto && <PassagemNatal forma="festao" compacta inicio />}
         <div className="tn-rapido__principal">
-          <h2 className="tn-rotulo" id="tn-rapido-titulo">Começar agora</h2>
+          <h2 className="tn-rotulo" id="tn-rapido-titulo">
+            Começar agora
+            {natalAmplo && (
+              <img className="tn-rapido__ramo" src={recurso('pixel/natal/treinar-ramo.png')} alt="" aria-hidden="true" width={237} height={72} decoding="async" draggable={false} />
+            )}
+          </h2>
           <button type="button" className="botao cristal tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">
             <Icone nome="raio" tamanho={20} />
             <span><strong>Sessão rápida de 10</strong><small>{nomeAreaCurto}, revisões e novas intercaladas</small></span>
@@ -627,7 +640,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <h2 id="tn-montagem-titulo">Montar do seu jeito</h2>
             <p>Quatro passos, de cima para baixo. A contagem ao lado de cada opção já considera o que você escolheu antes.</p>
           </header>
-          <PassagemNatal forma="lanternas" compacta />
+
+          {natalCompacto && <PassagemNatal forma="lanternas" compacta />}
 
           {porArea && (
             <section className="tn-bloco" id="etapa-1" aria-labelledby="tn-prova-titulo">
@@ -850,7 +864,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               </p>
             </Estado>
           )}
-          <PassagemNatal forma="presentes" compacta />
+          {natalCompacto && <PassagemNatal forma="presentes" compacta />}
         </div>
 
         <aside className="tn-resumo" id="tn-resumo" aria-labelledby="tn-resumo-titulo">

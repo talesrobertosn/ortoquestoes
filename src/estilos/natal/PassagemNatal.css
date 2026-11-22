@@ -57,8 +57,6 @@
 .natal-passagem--compacta:not(.natal-passagem--festao) { --passagem-largura: 18.5rem; }
 .natal-passagem--compacta.natal-passagem--festao { --passagem-largura: 44rem; }
 
-.tn-rapido > .natal-passagem { margin-block: calc(-1 * var(--e-4)); }
-.tn-montagem > .natal-passagem { margin-block: calc(-1 * var(--e-2)) var(--e-2); }
 .jn-fim > .natal-passagem { margin-block-end: calc(-1 * var(--e-2)); }
 .bb > .natal-passagem { margin-block: var(--e-1); }
 .cg .natal-passagem--sinos { --passagem-largura: 25rem; }
@@ -68,7 +66,6 @@
   .natal-passagem.natal-passagem--compacta:not(.natal-passagem--festao) { --passagem-largura: 15.5rem; }
   .natal-passagem--festao .natal-passagem__peca { justify-self: center; }
   .cg .natal-passagem--sinos { --passagem-largura: 20rem; }
-  .tn-rapido > .natal-passagem { margin-block: calc(-1 * var(--e-2)); }
 }
 
 @media (prefers-reduced-motion: reduce) {
