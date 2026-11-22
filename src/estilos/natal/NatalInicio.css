@@ -121,12 +121,18 @@
 .natal-arvore__surpresa i { position: absolute; width: 4px; height: 4px; left: 50%; top: 12px; opacity: 0;
   background: #fff3cf; box-shadow: 0 0 7px #e9d8a3; animation: natal-neve-estrela 1s var(--d) ease-out both; }
 @keyframes natal-neve-estrela { 20% { opacity: 1; } to { opacity: 0; transform: translate(var(--x), var(--y)); } }
-.natal-treno { position: absolute; z-index: 1; inset: 14% 0 auto; height: 74px; pointer-events: none; }
+.natal-treno { position: absolute; z-index: -1; inset: 14% 0 auto 44%; height: 74px;
+  pointer-events: none; clip-path: inset(-24px 0 0); }
 .natal-treno i { display: block; position: absolute; left: -115px; width: 106px; height: 34px;
   background: url('/pixel/natal/treno-noturno.png') center / contain no-repeat;
   animation: natal-travessar 10s linear both; }
 .natal-treno[data-em-vista="false"] i { animation-play-state: paused; }
-@keyframes natal-travessar { to { transform: translate(115vw, -32px); } }
+@keyframes natal-travessar { to { transform: translate(115vw, -20px); } }
+@media (max-width: 60rem) {
+  .natal-treno { inset: clamp(13rem, 61vw, 16.2rem) 0 auto; }
+  .jn-heroi--vitrine .natal-treno { grid-row: 2 / 3; grid-column: 1 / -1; inset: 24px 0 auto; }
+  .natal-treno i { width: 77px; height: 25px; }
+}
 .natal-faixa-enfeite { display: contents; }
 [data-natal="sim"] .natal-faixa-enfeite:not(:empty) { display: block; position: relative; }
 [data-natal="sim"] .natal-faixa-enfeite:not(:empty)::after { content: ""; pointer-events: none; position: absolute; z-index: 1;
