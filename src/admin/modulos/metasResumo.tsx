@@ -10,7 +10,8 @@ import { usarTaxaPix } from './taxaPix'
 import { inteiro, reais } from '../ui/formato'
 
 type Chave = 'faturamento' | 'cadastros' | 'novosPagantes' | 'ativosFim' | 'receitaEquivalente'
-const NOME: Record<Chave, string> = { faturamento: 'Faturamento', cadastros: 'Cadastros', novosPagantes: 'Novos pagantes', ativosFim: 'Pagantes ativos', receitaEquivalente: 'Receita equivalente' }
+/** Os mesmos nomes da página Metas, para as duas telas falarem a mesma língua (22/11/2026). */
+const NOME: Record<Chave, string> = { faturamento: 'Recebido no mês', cadastros: 'Cadastros', novosPagantes: 'Primeiras assinaturas', ativosFim: 'Pagantes ativos', receitaEquivalente: 'Receita equivalente' }
 const DINHEIRO: Record<Chave, boolean> = { faturamento: true, cadastros: false, novosPagantes: false, ativosFim: false, receitaEquivalente: true }
 const FLUXO: Record<Chave, boolean> = { faturamento: true, cadastros: true, novosPagantes: true, ativosFim: false, receitaEquivalente: false }
 
@@ -45,7 +46,8 @@ export function FaixaMetas({ chaves, titulo = 'Metas do mês' }: { chaves: Chave
       const v = real[k] as number, alvo = (meta as MetaMes)[k]
       const s = situacao(proj[k].centro, alvo)
       const esperado = FLUXO[k] ? esperadoAteHoje(alvo, proj.diasPassados, proj.diasNoMes) : null
-      const f = (n: number) => DINHEIRO[k] ? reais(n).replace(/,\d\d$/, '') : inteiro(Math.round(n))
+      // Arredonda como a página Metas (R$ 777,50 → R$ 778), em vez de cortar os centavos.
+      const f = (n: number) => DINHEIRO[k] ? reais(Math.round(n)).replace(/,00$/, '') : inteiro(Math.round(n))
       return <span key={k} className={`mt-faixa__item mt-faixa__item--${s}`} title={ROTULO_SITUACAO[s]}>
         <span>{NOME[k]}</span>
         <b>{f(v)} <small>/ {f(alvo)}</small></b>
