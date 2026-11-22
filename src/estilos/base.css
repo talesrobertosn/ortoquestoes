@@ -470,6 +470,7 @@ textarea {
 /* Variante sempre aberta: sem sombra, sem flutuar, ocupando o lugar dela. */
 .seletor--lista .seletor__painel {
   position: static;
+  z-index: auto; /* O painel em grade acompanha a página, abaixo do cabeçalho fixo. */
   box-shadow: none;
   border-color: var(--traco);
   max-height: none;
