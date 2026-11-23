@@ -8,6 +8,8 @@ do site**, de qualquer tema ou prova. Colar o bloco abaixo no Claude ou no Codex
 ```
 ORTOQUESTÕES: COMENTÁRIOS EM FORMATO DE MINIAULA (PADRÃO DO SITE)
 
+PRIMEIRO: docs/REGRAS-CONTEUDO.md (as regras em uma página, inclusive "explicar para um R1", 23/11/2026).
+
 Leia antes: AGENTS.md, docs/padrao-editorial-comentarios.md (seção "Miniaula, 22/10/2026"),
 docs/exemplos/mao-2164.json (referência aprovada do formato), docs/exemplos/mao-0853.json e
 docs/exemplos/einstein-2026-19.json, e pelo menos 3 comentários já publicados do mesmo tema.

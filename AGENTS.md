@@ -1,5 +1,7 @@
 # Instruções permanentes do OrtoQuestões
 
+Regras de conteúdo (comentário, miniaula, resumo, simulado) resumidas numa página só, a mais recente: [docs/REGRAS-CONTEUDO.md](docs/REGRAS-CONTEUDO.md). Leia-a primeiro; os documentos citados abaixo ficam para detalhe.
+
 Para qualquer arte, cenário, personagem (esqueleto, gato, coruja, cavaleiros), fala dos bichos ou tela do site, leia
 primeiro [docs/design/DIRECAO-ARTISTICA.md](docs/design/DIRECAO-ARTISTICA.md): a direção artística aprovada pelo
 dono (pipeline HD-2D, paleta, personagens, onde cada bicho aparece, o que ele recusou e como verificar antes de
