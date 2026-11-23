@@ -5,6 +5,17 @@ Diretriz de Tales Roberto, aprovada em 04/10/2026. Aplica-se a todo pedido de
 Esta é a referência editorial do projeto. Substitui limites antigos de caracteres,
 número de frases e proibições de tabelas ou listas dos prompts de enriquecimento.
 
+Resumo atualizado em uma página (23/11/2026): [REGRAS-CONTEUDO.md](REGRAS-CONTEUDO.md). Quando este documento e
+aquela página divergirem, vale a página (orientação mais recente).
+
+## Explicar para um R1 (Tales, 23/11/2026: regra permanente)
+
+Todo comentário e todo resumo é escrito como quem explica para alguém, num nível que um residente do primeiro ano
+entenda. A citação do livro com página continua em cada fato, mas o texto nunca é uma lista de fatos soltos:
+apresentar cada termo e epônimo na primeira vez; dizer o porquê (mecanismo) e o sentido clínico de cada fato
+citado; ligar ao que o aluno já sabe; seguir do básico ao detalhe; nas alternativas, explicar o raciocínio que leva
+ao erro. Teste final: um R1 que nunca viu o assunto consegue explicar de volta depois de ler?
+
 ## Professor humano, não molde (Tales, 31/10/2026)
 
 Depois da refação do quadril pelo Callaghan, em que os comentários saíram todos com o mesmo esqueleto

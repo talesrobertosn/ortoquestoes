@@ -186,6 +186,8 @@ originais já separadas por prova e ano ficam em `~/OrtoQuestoes-Biblioteca/prov
 
 ## 7. O comentário (o mais importante: pode gastar)
 
+Regras atuais em uma página: [docs/REGRAS-CONTEUDO.md](../REGRAS-CONTEUDO.md). Regra de 23/11/2026: explicar para um R1 (porquê, mecanismo e sentido clínico de cada fato citado; termos apresentados na primeira vez), sem nunca só enumerar fatos.
+
 Seguir integralmente [docs/padrao-editorial-comentarios.md](../padrao-editorial-comentarios.md) e imitar a
 profundidade de [docs/exemplos/mao-0853.json](../exemplos/mao-0853.json) e
 [docs/exemplos/einstein-2026-19.json](../exemplos/einstein-2026-19.json). Abrir um exemplo **antes** do
