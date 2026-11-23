@@ -92,7 +92,7 @@ A **história familiar positiva é o preditor isolado mais forte** da doença, e
 | contratura | menos de 1/5 dos portadores | evolução em anos, às vezes semanas |
 !fim
 
-!questoes central=mao-0515 relacionadas=mao-0026,mao-0070,mao-0274,mao-0866,mao-0103,mao-1865 treino=mao-3351,mao-3353,mao-3354
+!questoes central=mao-0515 relacionadas=mao-0026,mao-0070,mao-0274,mao-0866,mao-0103,mao-1865,mao-1924 treino=mao-3351,mao-3353,mao-3354
 conceito: A doença predomina no homem (6 a 10 vezes), branco e idoso, é rara em asiáticos e negros, muitas vezes bilateral mas raramente simétrica, e acomete sobretudo o anular e o mínimo.
 como: O TARO 2011 combinou sexo, raça e diabetes; o TARO 2018, sexo e simetria; o TARO 2015, a proporção de 10 vezes; o ENARE 2023, o grupo de homens idosos e a afirmação correta com a ordem dos dedos; o TEOT 2021, o dedo mais acometido; a UFG 2017, a raridade em asiáticos e negros.
 armadilha: Marcar padrão simétrico, igual proporção entre os sexos ou o dedo médio como mais acometido.
