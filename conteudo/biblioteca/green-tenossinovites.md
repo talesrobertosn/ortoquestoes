@@ -542,7 +542,7 @@ A tendinite calcária da mão e do punho é uma **sinovite aguda, intensamente d
 
 O problema clínico é a confusão com infecção, que atrasa o diagnóstico (p. 1906). As pistas para separar: a **falta de sinais sistêmicos**, a ausência de ferimento penetrante ou infecção prévia, um eritema **localizado** que não sobe em estrias como a celulite, episódios anteriores parecidos e a radiografia com **calcificação "fofa"** ou pequenos depósitos. O tratamento é **AINE oral por 5 a 7 dias**, que muitas vezes alivia em **24 horas**; metilprednisolona oral em esquema regressivo para quem não tolera; e tala. A aspiração ou infiltração é possível, mas raramente necessária, e a radiografia de controle mostra os depósitos pequenos **sumirem em 2 a 4 semanas**. A excisão cirúrgica é exceção, para casos crônicos com depósitos grandes; ao abrir o tendão, o material sai como **pasta de dente** (p. 1906).
 
-!questoes treino=mao-2180,mao-2557,mao-3522,mao-3537
+!questoes relacionadas=mao-0789 treino=mao-2180,mao-2557,mao-3522,mao-3537
 conceito: A tendinite calcária da mão e do punho é aguda, imita infecção, predomina em homens de 40 a 60 anos e acomete mais o FCU; trata-se com anti-inflamatório e o depósito some em semanas.
 como: A prova de título de 2022 perguntou o tendão mais acometido; o simulado da prova de título de cirurgia da mão de 2021 perguntou em que tendão se concentrou a peritendinite calcificante na série de KIM e PARK.
 armadilha: Marcar o FCR ou o ECU; o ECU aparece numa figura do Green, mas o local mais comum é o FCU.

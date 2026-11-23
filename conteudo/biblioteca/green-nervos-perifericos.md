@@ -81,7 +81,7 @@ Uma forma prática de fixar a divisão de trabalho: **compressão é com o epine
 | mesoneuro | por fora do epineuro | deslizamento e vasos segmentares | cicatriz aqui prende o nervo |
 !fim
 
-!questoes central=mao-0981 treino=mao-2543,mao-3273,mao-3274,mao-3279,mao-3281,mao-3283,mao-3284,mao-3286,mao-3288,mao-3290,mao-3291
+!questoes central=mao-0981 relacionadas=mao-1158 treino=mao-2543,mao-3273,mao-3274,mao-3279,mao-3281,mao-3283,mao-3284,mao-3286,mao-3288,mao-3290,mao-3291
 conceito: O perineuro é o tecido conjuntivo denso e resistente que agrupa as fibras em fascículos e funciona como barreira de difusão; o endoneuro envolve cada fibra e o epineuro, o tronco.
 como: A UFG 2020 e a UFG 2021 repetiram o mesmo enunciado: o envoltório do fascículo. O simulado do simulado da prova de título de cirurgia da mão de 2021 cobrou a camada que acolchoa os fascículos e aumenta junto às articulações.
 armadilha: Responder endoneuro (que envolve a fibra isolada) ou epineuro interno (que fica entre os fascículos, sem envolver cada um).
@@ -190,7 +190,7 @@ Na Tabela 67.1 o rótulo "axonotmese" aparece na linha do grau II, e é essa cor
 
 O próprio Campbell, porém, traz outra correspondência no capítulo 73 (Tabela 73.1, p. 3255, tirada de MACKINNON e DELLON): ali **axonotmese cobre os graus II, III e IV** de SUNDERLAND, neurapraxia é o grau I, neurotmese o V, e o grau VI aparece como combinação de quaisquer graus de I a V. As duas tabelas estão no mesmo livro; quando a questão pede "a" equivalência da axonotmese, a resposta clássica é o grau II (Tabela 67.1), mas a alternativa que fala em graus II a IV também tem apoio no Campbell (Tabela 73.1). Repare que a THOMAS e HOLDORFF do Green resolve a mesma ambiguidade de outro jeito: IIA é a lâmina basal preservada (o grau II), e IIB e IIC já são secções.
 
-!questoes central=mao-0100 relacionadas=mao-0257,mao-0260,mao-0889,mao-1054,mao-1145
+!questoes central=mao-0100 relacionadas=mao-0257,mao-0260,mao-0889,mao-1054,mao-1145,mao-1220
 conceito: SUNDERLAND acumula estruturas de dentro para fora: II axônio, III endoneuro com perineuro preservado, IV perineuro com epineuro preservado, V tronco inteiro.
 como: O TEOT 2022 pediu o grau com axônio, endoneuro e perineuro lesados (IV); o ENARE R4 2023 cobrou o grupo III e o grupo IV nos dois sentidos; a UFG 2017, o grau do axônio com endoneuro (III); a PUC-SP 2019 e 2021, a estrutura do grau 4.
 armadilha: Confundir a estrutura rompida com a preservada: no grau IV o perineuro está rompido e o epineuro íntegro; no III o perineuro é a camada que sobra.
@@ -250,7 +250,7 @@ Por dentro do coto distal (Green, p. 984), há uma proliferação enorme de cél
 
 Duas consequências práticas fecham o tema. A degeneração walleriana **gasta energia e não acontece em membro isquêmico**: ali o nervo simplesmente morre, e a isquemia impede ou atrasa tanto a degeneração quanto a regeneração (pp. 984 e 985). E ela é **muito menos danosa na axonotmese**, porque a lâmina basal intacta deixa o broto reencontrar rápido o coto distal, o fluxo de neurotrofinas se restabelece e menos neurônios morrem.
 
-!questoes central=mao-0467 relacionadas=mao-0982 treino=mao-2401,mao-3289
+!questoes central=mao-0467 relacionadas=mao-0982,mao-0756,mao-1048 treino=mao-2401,mao-3289
 conceito: A degeneração walleriana é a desintegração do axolema, do citoesqueleto e da mielina no segmento separado do corpo celular, isto é, distal à lesão; começa no grau II de SUNDERLAND, o primeiro com axônio rompido.
 como: O Einstein 2026 pediu o local e os eventos da degeneração; a UFG 2020, o grau em que ela começa; o simulado do simulado da prova de título de cirurgia da mão de 2022, o tempo até ela se completar.
 armadilha: Achar que o grau I já degenera (é bloqueio sem perda axonal) ou trocar a desintegração do axônio pela fibrose cicatricial.

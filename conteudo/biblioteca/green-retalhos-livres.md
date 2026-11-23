@@ -429,7 +429,7 @@ A doadora é fechada direto se o retalho tiver menos de 6 a 8 cm de largura; nos
 
 Os pontos críticos do capítulo resumem a indicação: defeitos **menores** de partes moles da mão e da **primeira comissura** (p. 1588). As armadilhas são levantar pele e fáscia **sem os vasos** e lesar o nervo radial.
 
-!questoes treino=mao-2019,mao-2173,mao-2256,mao-2020
+!questoes relacionadas=mao-1150 treino=mao-2019,mao-2173,mao-2256,mao-2020
 conceito: O lateral do braço é nutrido pela colateral radial posterior, ramo terminal da braquial profunda, que acompanha o nervo radial no sulco espiral até perfurar o septo intermuscular lateral distal à inserção do deltoide.
 como: O simulado da prova de título de cirurgia da mão de 2023 e a prova de título de 2023 pediram a artéria do retalho; a prova de título de 2022 pediu qual dos dois ramos terminais da braquial profunda o nutre; o simulado da prova de título de cirurgia da mão de 2023 cobrou o trajeto da braquial profunda com o radial.
 armadilha: Marcar a colateral radial anterior, que segue com o nervo radial à frente, ou a colateral ulnar, que é do lado medial.
@@ -521,7 +521,7 @@ O fechamento começa pela lateral, **sem descolar** as margens (mais espaço mor
 
 O **SCIP**, retalho perfurante da circunflexa ilíaca superficial, foi descrito por **KOSHIMA e colaboradores** (Plast Reconstr Surg, 2004) como evolução do inguinal (p. 1597). Pode ser afinado por desengorduramento primário, levantado como adipofascial e deixa uma doadora mínima. A desvantagem é a perfurante pequena, que exige **supermicrocirurgia**, com vasos de menos de 1 mm. Há uma perfurante semelhante na epigástrica inferior superficial (SIEA).
 
-!questoes central=mao-1451 treino=mao-3134,mao-3156
+!questoes central=mao-1451 relacionadas=mao-1174 treino=mao-3134,mao-3156
 conceito: O inguinal é nutrido pela circunflexa ilíaca superficial, mas o osso da crista ilíaca é mais bem nutrido pela circunflexa ilíaca profunda, que é o pedículo mais importante do retalho ósseo da crista.
 como: A USP-SP 2024 pediu o pedículo mais importante do retalho de crista ilíaca.
 armadilha: Marcar a circunflexa ilíaca superficial por associar a crista ao inguinal, ou as epigástricas, vizinhas no mesmo território.
@@ -602,7 +602,7 @@ O grande dorsal serve para defeitos grandes e pequenos, complexos, e para ferida
 
 A doadora é **sempre fechada direto**, porque um enxerto nas costas vira problema de enfermagem; nos defeitos grandes, usa-se uma transposição romboide do tecido frouxo da cintura (p. 1603). A complicação mais frequente é o **seroma**: o fechamento é feito sobre drenos, mantidos por **10 a 14 dias**. A perda funcional pela retirada do músculo é mínima.
 
-!questoes central=mao-1637 relacionadas=mao-1899 treino=mao-2257,mao-2490,mao-2022,mao-3126,mao-3132,mao-3145,mao-3155
+!questoes central=mao-1637 relacionadas=mao-1899,mao-1149 treino=mao-2257,mao-2490,mao-2022,mao-3126,mao-3132,mao-3145,mao-3155
 conceito: O grande dorsal é nutrido pela toracodorsal, continuação da subescapular depois da circunflexa escapular, com veias comitantes e o nervo toracodorsal (subescapular médio); é tipo V de MATHES e NAHAI, de pedículo longo e calibroso, e cobre bem defeitos grandes com exposição óssea.
 como: A USP-SP 2026 pediu o feixe neurovascular principal do latíssimo; o ENARE 2025 pediu o transplante mais adequado para perda cutânea com exposição óssea; a prova de título de 2023, o simulado da prova de título de cirurgia da mão de 2021 e o simulado da prova de título de cirurgia da mão de 2023 cobraram a artéria e o tipo de retalho.
 armadilha: Trocar a toracodorsal pela toracoacromial ou pela circunflexa escapular, e o nervo toracodorsal pelo torácico longo (que é do serrátil).
@@ -635,7 +635,7 @@ A maioria dos retalhos não passou de 13 por 9 cm. Como as fáscias superficial 
 
 A técnica tem um perigo anatômico central: não ir muito **anterior**, onde passa o ramo **frontal do nervo facial**. Os vasos temporais ficam sobre ou dentro da fáscia, e os ramos motores do facial, **abaixo** dela (p. 1605). O plano de dissecção fica entre o subcutâneo e a fáscia, mantendo os **folículos** pilosos no couro cabeludo; um plano superficial demais lesa os folículos e dá **alopecia**, a principal complicação, sobretudo em volta da incisão. A fáscia é coberta com enxerto parcial ou total. A doadora é uma das **mais discretas** de todos os retalhos livres; a hipoestesia do auriculotemporal costuma ser indolor.
 
-!questoes treino=mao-2258,mao-3136
+!questoes relacionadas=mao-1177 treino=mao-2258,mao-3136
 conceito: Os retalhos fasciais puros do Green são o radial, o lateral do braço, o escapular, o torácico dorsal, o serrátil e o temporoparietal, usados para defeitos pequenos e para envolver tendões expostos mantendo o deslizamento.
 como: A prova de título de 2023 pediu qual retalho o Green inclui entre os fasciais puros.
 armadilha: Escolher um musculocutâneo (grande dorsal com pele) ou um cutâneo que não existe na versão fascial.
@@ -689,7 +689,7 @@ O grácil é um músculo em **fita**, não peniforme, com excelente comprimento 
 
 Na técnica dupla de **DOI** (p. 1181 e 1182), o primeiro tempo leva um grácil **contralateral** reinervado pelo **acessório** para a flexão do cotovelo e a extensão dos dedos (os autores do capítulo preferem a extensão do punho); o segundo, 2 a 3 meses depois, um grácil **ipsilateral** pelos **5º e 6º intercostais** para a flexão dos dedos; o 3º e o 4º intercostais vão para o ramo do tríceps, e os sensitivos intercostais, para o fascículo medial.
 
-!questoes treino=mao-2435,mao-2448,mao-2499,mao-2534,mao-3158
+!questoes relacionadas=mao-1927 treino=mao-2435,mao-2448,mao-2499,mao-2534,mao-3158
 conceito: O grácil é tipo II de MATHES e NAHAI, com pedículo dominante (ramo da femoral profunda, a circunflexa femoral medial) dissecado entre o adutor longo e o adutor magno, e nervo da divisão anterior do obturatório entrando logo acima do pedículo; é a transferência muscular livre funcional mais usada.
 como: O simulado da prova de título de cirurgia da mão de 2022 pediu o tipo de MATHES e NAHAI e entre quais músculos fica o pedículo; o simulado da prova de título de cirurgia da mão de 2021, onde o nervo entra e a técnica da transferência para flexão do cotovelo.
 armadilha: Trocar o tipo II do grácil pelo tipo V do grande dorsal, ou colocar o pedículo entre o adutor curto e o pectíneo.

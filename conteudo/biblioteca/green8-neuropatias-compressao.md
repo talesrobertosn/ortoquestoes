@@ -227,7 +227,7 @@ O diferencial obrigatório é a **amiotrofia nevrálgica**, descrita por PARSONA
 
 O plano de SPINNER do Campbell (cap. 82, p. 3559) é parecido, com prazo mais curto: paralisia espontânea, não operatório; **sem melhora clínica ou eletromiográfica em 12 semanas**, exploração; ferida penetrante, reparo primário; lesão irreparável, transferências.
 
-!questoes treino=mao-2136,mao-2767,mao-2770,mao-2771
+!questoes relacionadas=mao-0864 treino=mao-2136,mao-2767,mao-2770,mao-2771
 conceito: Na síndrome do interósseo anterior há fraqueza do FLP e do FPD do indicador (às vezes do médio) e do pronador quadrado, com sensibilidade da pele normal; a paralisia espontânea após virose com dor intensa é PARSONAGE-TURNER.
 como: A questão de treino pede o quadro esperado na neuropatia do interósseo anterior.
 armadilha: Esperar perda sensitiva na pele do polegar.
@@ -595,7 +595,7 @@ O capítulo 21 do Green 7 (p. 787) dá a sequência completa: ERCC, supinador, e
 
 A paralisia do NIP atinge ERCC (quando inervado por ele), supinador, ECU, extensor comum, extensor do mínimo, EIP, ALP, ELP e ECP (Green 7, p. 949). As causas: trauma, instalação insidiosa, **sinovite reumatoide** proliferativa do cotovelo, mononeurite (PARSONAGE-TURNER) e iatrogenia na **reinserção do bíceps**, na **artroscopia do cotovelo** e na reconstrução da cabeça do rádio; no diferencial, **ruptura tendínea** e massa (p. 949 e 950). O sinal que a prova adora: como o **ERLC** é inervado **antes** da divisão, o paciente estende o punho, mas **desvia para radial**, porque o ECU parou (p. 950). Não há perda sensitiva, porque o NIP não inerva pele. Na compressão, o Green 8 (p. 1114) aponta como causa principal a **borda anterior ou posterior do supinador** e, menos, a origem tendínea do **ERCC**.
 
-!questoes central=mao-0519 relacionadas=mao-0072,mao-0093,mao-0309,mao-0614,mao-0498,mao-0723 treino=mao-2577,mao-2578
+!questoes central=mao-0519 relacionadas=mao-0072,mao-0093,mao-0309,mao-0614,mao-0498,mao-0723,mao-1044,mao-1230 treino=mao-2577,mao-2578,mao-2228
 conceito: O sensitivo radial se aperta entre o braquiorradial e o ERLC, e dói na pronação com flexão ulnar; o interósseo posterior se aperta no supinador, é motor e poupa a pele e o ERLC.
 como: O TARO 2011 e o TARO 2012 pediram a compressão na arcada de FROHSE e o que ela causa; o TARO 2015, o local da síndrome do túnel radial; o TEOT 2022, a força e a sensibilidade na síndrome do interósseo posterior; o TEOT 2024 e o TARO 2008, a manobra e o local do WARTENBERG.
 armadilha: Esperar perda sensitiva na síndrome do interósseo posterior, ou pôr o WARTENBERG entre os tendões do polegar.

@@ -611,7 +611,7 @@ As cirurgias de partes moles que a prova cobra (Green, p. 1869 e 1870):
 - **Transferência intrínseca cruzada.** Os intrínsecos ulnares do indicador, médio e anular são soltos e levados ao lado **radial do dedo vizinho**, transformando uma força que desvia para ulnar numa força que puxa para radial. STRAUB tecia o tendão na banda lateral; FLATT percebeu que isso causava **pescoço de cisne** (a banda lateral tensionada estende a IFP) e passou a suturá-lo no **ligamento colateral radial** do dedo vizinho, na inserção falângica. OSTER et al. (1989) viram correção duradoura; EL-GAMMAL e BLAIR (1993), perda de movimento em 5 anos.
 - **Recentralização do extensor.** Encurtar a banda sagital radial (mais simples, menos eficaz); a alça de HARRISON (1971), uma fita do extensor de 4 cm por 5 mm passada por túnel na base da falange; a técnica de ZANCOLLI; ou âncoras (Fig. 55.33). Depois, órtese em extensão e leve desvio radial por 4 a 6 semanas, e noturna por 3 meses.
 
-!questoes central=mao-0431 treino=mao-3488
+!questoes central=mao-0431 relacionadas=mao-1236 treino=mao-3488
 conceito: Para o desvio ulnar, centraliza-se o extensor e transfere-se o intrínseco ulnar para o colateral radial do dedo vizinho, na técnica de FLATT.
 como: O TARO 2025 perguntou o autor da transferência com alinhamento dos extensores e rebalanceamento dos intrínsecos.
 armadilha: Marcar SWANSON (implante de silicone) ou BUNNELL (teste de tensão intrínseca), ou dizer que FLATT fixava na banda lateral, que era a técnica de STRAUB e causava pescoço de cisne.

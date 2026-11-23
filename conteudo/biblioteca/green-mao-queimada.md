@@ -252,7 +252,7 @@ A fórmula é só o ponto de partida. O volume é ajustado hora a hora pelo **d�
 
 Por que não a frequência cardíaca, a pressão venosa central ou o débito cardíaco? A taquicardia do queimado vem também de dor, ansiedade e resposta inflamatória, e persegui-la com volume afoga o paciente. A pressão venosa central prevê mal a resposta a líquidos. O débito cardíaco é monitorização avançada, não o parâmetro clínico de rotina. Se a diurese passa da meta, a infusão deve **diminuir**.
 
-!questoes central=mao-1407 relacionadas=mao-0691,mao-0692,mao-0693
+!questoes central=mao-1407 relacionadas=mao-0691,mao-0692,mao-0693,mao-0694
 conceito: Pelo ATLS 11ª ed., o adulto com queimadura térmica começa com Ringer lactato a 500 mL/h, segue com 2 mL x kg x %SCQ e tem a infusão guiada pela diurese, com meta de 0,5 mL/kg/h; o débito urinário é o melhor parâmetro de monitorização.
 como: A USP-SP 2024 pediu o parâmetro mais efetivo para monitorizar a reposição; a FMRP 2026 pediu, em três questões seguidas, a taxa inicial, a fórmula depois do cálculo da área e a meta de diurese.
 armadilha: Trocar a meta do adulto pela da criança (1 mL/kg/h) ou da elétrica, usar 4 mL na queimadura térmica do adulto pelo ATLS, ou monitorizar pela frequência cardíaca.

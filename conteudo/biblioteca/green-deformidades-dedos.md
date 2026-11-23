@@ -1004,7 +1004,7 @@ A KIRNER tem **pouco efeito funcional** (músicos e digitadores podem se queixar
 
 O método dos autores (p. 1275): tala nas fases iniciais com vigilância rigorosa; **não seccionam rotineiramente** a inserção do flexor; **adiam a cirurgia até o paciente participar da decisão**. Quando operam, fazem **duas ou três osteotomias volares, distais à inserção do flexor**, retirando a unha por incisão dorsolateral radial que preserva a prega paroniquial. O detalhe que a prova cobrou (simulado da prova de título de cirurgia da mão de 2020): incisa-se o **periósteo volar** e preserva-se o **periósteo dorsal como dobradiça**, que **protege a matriz ungueal**. Fio axial até consolidar e tala.
 
-!questoes treino=mao-2630
+!questoes relacionadas=mao-1184 treino=mao-2630
 conceito: KIRNER é a curvatura palmar e radial progressiva da falange distal do mínimo, em dois planos; 0,15 a 0,25%, meninas 2:1; esporádica em pelo menos metade; SONG separa a congênita familiar que não progride da tardia esporádica do fim da infância; começa com inchaço dorsal e termina com unha em bico e IFD móvel; fise alargada e distorcida, fechando tarde e pela metade dorsal.
 como: A prova de título de 2024 descreveu a menina de 11 anos com inchaço dorsal na falange distal dos dois mínimos que depois se curvou para palmar e radial.
 armadilha: Responder clinodactilia (falange média, um plano) ou camptodactilia (IFP, flexão).

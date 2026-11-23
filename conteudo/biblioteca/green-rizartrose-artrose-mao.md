@@ -254,7 +254,7 @@ Como usar isso na prova: **quando a questão cita a figura, valem os números do
 | IF do polegar | Não detalhado | Não desenhada | 0 a 15 graus |
 !fim
 
-!questoes central=mao-1317 relacionadas=trauma-0864 treino=mao-2323,mao-3484
+!questoes central=mao-1317 relacionadas=trauma-0864,mao-1058 treino=mao-2323,mao-3484
 conceito: Na IFP, a flexão da artrodese cresce do radial para o ulnar (30 a 40 graus no indicador e no médio, 50 a 60 no anelar e no mínimo); os colaterais são liberados; a IFD é fundida em extensão ou leve flexão; banda de tensão e parafuso sem cabeça dão consolidação alta.
 como: O simulado da prova de título de cirurgia da mão de 2024 testou indicação da IFD, ângulos da IFP, colaterais e artrodese da MCF do polegar; a USP-SP 2025, posição da IFD do indicador, via da IFP, ângulo da IFP do indicador e fixação.
 armadilha: Dar 50 graus ao indicador (é o ângulo do anelar), achar que a via palmar é a padrão (é dorsal), preservar os colaterais na artrodese ou dizer que a principal indicação da IFD é o dedo em martelo crônico (é a artrose).

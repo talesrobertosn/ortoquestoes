@@ -271,7 +271,7 @@ Por que o escafolunar? A porção dorsal do ligamento escafolunar é a parte mai
 
 Antes de operar, o livro manda **rever a radiografia**, à procura de um componente intraósseo do cisto no escafoide ou no semilunar (p. 2002).
 
-!questoes central=mao-0272 treino=mao-2326,mao-3079,mao-3099,mao-3113,mao-3114
+!questoes central=mao-0272 relacionadas=mao-0958 treino=mao-2326,mao-3079,mao-3099,mao-3113,mao-3114
 conceito: o cisto sinovial do punho é mais frequente no dorso (60% a 70% dos cistos), com o cisto principal sobre o ligamento escafolunar ou ligado a ele por pedículo longo
 como: o ENARE R4 2023 perguntou a localização mais comum dos cistos articulares na mão; o simulado da prova de título de cirurgia da mão de 2024 perguntou onde fica com mais frequência o cisto sinovial do punho
 armadilha: trocar dorsal por palmar ou escafolunar por lunopiramidal; o volar, segundo mais comum, fica sobre a borda do rádio ou o tubérculo do escafoide
@@ -354,7 +354,7 @@ A radiografia comum esconde a bossa, porque os esporões ficam sobrepostos aos o
 
 O tratamento começa sem cirurgia: **tala, anti-inflamatório e infiltração de corticoide guiada por ultrassom**, e o paciente deve ser avisado de que os sintomas podem persistir mesmo depois de operar. Na cirurgia, a incisão é transversa ou oblíqua; o extensor comum e o extensor próprio do indicador são afastados para ulnar, o cisto (se houver) sai com as inserções capsulares, e os osteófitos são retirados por uma **incisão longitudinal separada sobre cada articulação**, até a cartilagem normal; cápsula, periósteo e fibras dos extensores radiais do carpo são reaproximados, e o punho fica em gesso ou tala por 4 a 6 semanas. A complicação mais comum é a **persistência da massa**, e a dor continua se sobrar alguma superfície anormal em contato (p. 2007). É por isso que, quando a ressonância mostra o cisto apoiado sobre uma bossa, a remoção do cisto sozinha não basta: a **ostectomia** faz parte obrigatória da cirurgia.
 
-!questoes central=mao-1521 treino=mao-3116,mao-3120,mao-3124
+!questoes central=mao-1521 relacionadas=mao-0672 treino=mao-3116,mao-3120,mao-3124
 conceito: massa dorsal dolorosa do punho com esporão na base do 2º e do 3º metacarpo e cisto associado é bossa carpometacarpal; a cirurgia deve retirar o cisto e também os osteófitos (ostectomia), porque a complicação mais comum é a persistência da massa e a dor continua se sobrar superfície anormal
 como: a USP-SP 2024 mostrou um corte sagital de ressonância e pediu o tempo obrigatório do tratamento cirúrgico
 armadilha: tratar como cisto dorsal comum (capsulotomia radiocárpica, inspeção mediocárpica) ou como cisto oculto (neurectomia do interósseo posterior)
@@ -675,7 +675,7 @@ O tratamento é a **retirada do nicho**, por curetagem ou em bloco; nicho incomp
 
 O **osteoblastoma** é o primo maior do osteoma osteoide: raro, com **mais de 2 cm**, produtor de osteoide e osso imaturo (p. 2023 e 2024). O local preferido no corpo são os elementos posteriores da coluna; na mão e no punho é raro (MOSHER e PECKHAM descreveram um caso no metacarpo, J Hand Surg Am, 1978; ref. 146). A histologia é parecida com a do osteoma osteoide, e a separação se faz pelo tamanho e pela posição: o osteoblastoma tem **centro medular**, enquanto o osteoma osteoide pode ser cortical, medular ou subperiosteal. É preciso diferenciá-lo do **osteossarcoma**. A recidiva é de **20% a 30%** depois de curetagem e enxerto, e a lesão recidivada ou destrutiva pede excisão marginal ou ampla.
 
-!questoes treino=mao-2635,mao-3082,mao-3085,mao-3111
+!questoes relacionadas=mao-0735,mao-0850 treino=mao-2635,mao-3082,mao-3085,mao-3111
 conceito: o osteoblastoma é raro na mão e no punho, maior que 2 cm e medular; a tomografia mostra melhor o osso (nicho, mineralização, cortical) para diagnóstico e planejamento; nos relatos de carpo, o escafoide aparece com mais frequência
 como: o simulado da prova de título de cirurgia da mão de 2023 perguntou o osso do punho mais descrito e o exame que melhor define a lesão
 armadilha: escolher a ressonância, que superestima a lesão pelo edema reativo, ou o semilunar
@@ -712,7 +712,7 @@ A conduta de ATHANASIAN é tratar o tumor de células gigantes da mão e do punh
 
 A **radioterapia** controla o tumor, mas a transformação maligna chega a **8,7%** e costuma ser fatal; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3584), fala em sarcoma de irradiação em 20% e a considera ineficaz. A quimioterapia convencional é ineficaz; o **denosumabe**, anticorpo contra o RANKL que as células estromais usam para recrutar as células gigantes osteoclásticas, tem papel na metástase pulmonar e na lesão irressecável (LEWIN e THOMAS, Drugs Today, 2013; ref. 117). O seguimento dura **10 anos**.
 
-!questoes central=mao-1468 treino=mao-2275,mao-3083,mao-3089,mao-3104,mao-3106,mao-3109,mao-3122
+!questoes central=mao-1468 relacionadas=mao-0899,mao-1121 treino=mao-2275,mao-3083,mao-3089,mao-3104,mao-3106,mao-3109,mao-3122
 conceito: na mão o cisto ósseo aneurismático acomete mais o metacarpo que as falanges; o tumor de células gigantes do osso é lítico, sem matriz, de bordas indistintas, e na mão não aceita curetagem simples: curetagem com criocirurgia e enxerto ou cimentação quando não perfurou, ressecção ampla quando perfurou
 como: a prova de título de 2023 perguntou onde o cisto ósseo aneurismático aparece mais na mão; a USP-SP 2024 mostrou uma imagem e pediu diagnóstico e tratamento (tumor de células gigantes, curetagem com criocirurgia se disponível e enxertia ou cimentação)
 armadilha: tratar o tumor de células gigantes da mão como encondroma, com curetagem e enxerto; e trocar a criocirurgia de lugar, já que o Green também a usa no cisto ósseo aneurismático

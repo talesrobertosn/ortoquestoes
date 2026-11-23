@@ -561,7 +561,7 @@ Na colheita (p. 1179 e 1180, Fig. 34.34), o **ramo do obturatório** entra oblí
 
 No braço, o músculo é fixado no acrômio e na clavícula com âncoras; a anastomose arterial vai a um ramo da **toracoacromial**, e a venosa, à cefálica; a isquemia deve durar menos de 1 hora; e a neurorrafia é feita o mais perto possível do músculo (p. 1180).
 
-!questoes central=mao-0839 treino=mao-2081,mao-2516
+!questoes central=mao-0839 relacionadas=mao-0926 treino=mao-2081,mao-2516
 conceito: O pedículo do gracilis, ramo da femoral profunda, corre entre o adutor longo (anterior) e o adutor magno (posterior).
 como: O INTO 2026 pediu entre quais músculos se disseca o pedículo na transferência muscular livre do adulto.
 armadilha: Escolher adutor curto ou sartório; o gracilis cobre o intervalo adutor longo e magno.

@@ -128,7 +128,7 @@ A hérnia **C5-C6** comprime **C6**. O Campbell (Box 45.3, p. 1748 e 1749) dá f
 
 Isso explica três questões clássicas. Paresia do **bíceps e dos extensores radiais do carpo** com o **reflexo estilorradial** diminuído é C6. **Déficit na face lateral do antebraço** com reflexo braquiorradial alterado é C6. **Dor irradiada para a face lateral do antebraço, primeiro e segundo dedos**, com braquiorradial diminuído, aponta a hérnia **C5-C6**.
 
-!questoes central=coluna-0039 relacionadas=coluna-0073,coluna-0456,coluna-0100
+!questoes central=coluna-0039 relacionadas=coluna-0073,coluna-0456,coluna-0100,mao-1253
 conceito: C6 é a raiz do polegar e do indicador, da face lateral do antebraço, dos extensores radiais do carpo e do reflexo braquiorradial (estilorradial); a hérnia que a comprime é a C5-C6.
 como: O TARO 2015 descreveu paresia do bíceps e dos extensores radiais do carpo com estilorradial diminuído; uma prova de Ortopedia, déficit na face lateral do antebraço com braquiorradial alterado; o R4 de Coluna de Joinville 2010 pediu o disco a partir da dor no primeiro e segundo dedos; outra prova mostrou o dermátomo assinalado numa figura.
 armadilha: Responder C5 por causa do bíceps (que é C5 e C6), ou responder C6-C7 no disco, esquecendo que na cervical o disco comprime a raiz de número maior.
@@ -322,7 +322,7 @@ As hérnias altas (L2-L3, L3-L4) pegam raízes do **femoral**, que passa **à fr
 | VALSALVA | prender a respiração e fazer força | reproduz a piora da dor discal com esforço, tosse e espirro |
 !fim
 
-!questoes central=coluna-0082
+!questoes central=coluna-0082 relacionadas=mao-1252
 conceito: Na elevação da perna estendida, a faixa de 35 a 70 graus é a que traciona as raízes; quando o teste é feito com os dois membros juntos, a pelve e a coluna lombar passam a se mover e a dor que aparece acima de 70 graus aponta a coluna lombar (articular), não a raiz.
 como: Uma prova de Ortopedia perguntou em que ângulo, na elevação bilateral dos membros inferiores, a dor sugere lesão da coluna lombar.
 armadilha: Marcar 35 a 70 graus, que é a resposta do teste unilateral para compressão radicular.

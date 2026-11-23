@@ -592,7 +592,7 @@ A classificação de CIERNY e MADER (Contemp Orthop, 1985) foi feita para os oss
 
 A ordem dos tipos é pegadinha frequente: **1 é medular, 2 é superficial** (e não o contrário). O tipo 4 é o osso instável, como a pseudartrose infectada. PCR e VHS servem para acompanhar a resposta, e as duas sobem nas primeiras 48 horas depois da cirurgia (p. 45).
 
-!questoes central=mao-1325,mao-1519
+!questoes central=mao-1325,mao-1519 relacionadas=mao-1084
 conceito: Na osteomielite crônica, o S. aureus se esconde dentro do osteoblasto e no biofilme, e a classificação de CIERNY e MADER combina tipo anatômico e hospedeiro.
 como: A USP-SP 2025 pediu a afirmação correta sobre a fisiopatologia; a USP-SP 2024 pediu as classificações de MATHES e NAHAI e de CIERNY e MADER num caso de pseudartrose infectada.
 armadilha: Achar que o biofilme exige menos antibiótico, ou classificar como localizada a osteomielite difusa com instabilidade.
@@ -705,7 +705,7 @@ Essa distinção entre "mais comum" e "mais associado" explica as questões que 
 
 As complicações incluem tenossinovite, artrite séptica, osteomielite, rigidez e dor crônica; há relatos de choque tóxico e de mortes (p. 50).
 
-!questoes central=mao-0941,mao-1180 treino=mao-3334
+!questoes central=mao-0941,mao-1180 relacionadas=mao-0820 treino=mao-3334,mao-3324
 conceito: Na mordedura humana, o S. aureus é o germe mais cultivado, mas é preciso cobrir Eikenella corrodens, bastonete gram-negativo anaeróbio facultativo, e anaeróbios.
 como: A UFG 2019 pediu o agente mais comum; a PUC-SP 2022, um germe a considerar; o simulado da prova de título de cirurgia da mão de 2014 inspirou o simulado sobre o que é a Eikenella.
 armadilha: Responder Eikenella como o mais comum, ou dizê-la resistente à penicilina.

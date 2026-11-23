@@ -203,7 +203,7 @@ Fonte: Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12, Fig. 12.73, 
 
 Sobre a frequência, o HEBERT e o Lovell and Winter (p. 932) afirmam que o **tipo IV é o mais comum**, e o Tachdjian (p. 345) diz o mesmo com outras palavras: a ausência total do rádio é a manifestação mais comum da deficiência radial. O HEBERT cita ainda um **tipo V**, acrescentado depois, para os casos em que o defeito sobe até o cotovelo e o ombro; o Tachdjian (p. 346) comenta a mesma ideia ao propor que quase toda "focomelia" do membro superior é, na verdade, o extremo proximal de uma deficiência longitudinal radial ou ulnar. O Green não dá frequência por tipo.
 
-!questoes central=mao-0406 relacionadas=mao-0609,mao-0790,mao-1411,mao-1549,mao-1852 treino=mao-2247,mao-2088,mao-2286,mao-2392,mao-3379,mao-3392
+!questoes central=mao-0406 relacionadas=mao-0609,mao-0790,mao-1411,mao-1549,mao-1852,mao-0471 treino=mao-2247,mao-2088,mao-2286,mao-2392,mao-3379,mao-3392
 conceito: BAYNE e KLUG modificada: 1, rádio distal mais de 2 mm curto; 2, hipoplasia distal e proximal, com fise distal presente; 3, fise distal ausente e proximal de hipoplasia variável (ausência parcial); 4, rádio ausente.
 como: A USP-SP 2024 e o ENARE 2023 pediram o tipo sem fise distal; a USP-SP 2026, o tipo com hipoplasia proximal e distal e fise presente; o INTO 2023 e o TARO 2007, o rádio hipoplásico; o simulado da prova de título de cirurgia da mão de 2022 e 2024 e a prova de título de 2023 e 2024 (simulados), as linhas 2 e 3 da tabela; o TEOT 2025, o tipo pela radiografia.
 armadilha: Chamar de tipo 2 a "ausência parcial" (é o 3) ou de tipo 3 o rádio pequeno mas inteiro (é o 2); e esquecer que hipoplasia só da epífise distal é o tipo 1.
@@ -328,7 +328,7 @@ Há duas contraindicações que o Green destaca, e as duas têm o mesmo raciocí
 
 O HEBERT soma o paciente unilateral já adaptado e as doenças hematológicas ou cardíacas que tornam a anestesia arriscada.
 
-!questoes central=mao-1377 relacionadas=mao-1556,mao-1233 treino=mao-3408,mao-3409,mao-3405
+!questoes central=mao-1377 relacionadas=mao-1556,mao-1233,mao-0456 treino=mao-3408,mao-3409,mao-3405
 conceito: Tipos 0, 1 e 2 leve ficam com alongamento e tala; alongamento do rádio é opção no tipo 2 grave; centralização nos tipos 3 e 4, facilitada pela distração prévia com fixador externo uniplanar ou circunferencial; VILKKI é do tipo 4; cotovelo rígido em extensão contraindica.
 como: A USP-SP 2025 pediu a afirmação correta sobre o tratamento por tipo; a USP-SP 2026, o procedimento que alonga as partes moles antes da centralização; a PUC-SP 2022, em questão discursiva com imagem, o diagnóstico, a classificação, as síndromes, os objetivos e as etapas cirúrgicas.
 armadilha: Indicar alongamento do rádio no tipo 4 (não há rádio), VILKKI no tipo 2 ou na mão torta ulnar, ou dizer que a distração prévia impede a centralização.
@@ -387,7 +387,7 @@ A reconstrução dos tipos II e IIIA trata cada peça que falta (Green, p. 1292 
 
 O HEBERT descreve os mesmos tipos e cita um degrau a mais, o **IIIC** de BUCK-GRAMCKO, em que só a cabeça do primeiro metacarpo existe, difícil de separar do tipo IV.
 
-!questoes central=mao-0659 treino=mao-1720,mao-3596,mao-3599,mao-3614,mao-3624
+!questoes central=mao-0659 relacionadas=mao-0470,mao-0934 treino=mao-1720,mao-3596,mao-3599,mao-3614,mao-3624
 conceito: BLAUTH modificada por MANSKE: o tipo IIIB tem os achados do II mais anomalias extrínsecas e carpometacarpal instável, com a base do metacarpo afilada, e o tratamento é a policização; IIIA, com carpometacarpal estável, é reconstruído.
 como: O simulado da prova de título de cirurgia da mão de 2026 (simulado) deu a criança sem tenares, com metacarpofalângica instável, tendões extrínsecos anômalos e metacarpo sem a base, e pediu tipo e conduta; a FMRP-USP 2026 perguntou a indicação no tipo IIIB.
 armadilha: Indicar oponentoplastia com reconstrução do ligamento colateral ulnar no IIIB (é a conduta do II e do IIIA) ou transferência de dedo do pé no polegar flutuante.
@@ -1165,7 +1165,7 @@ O Green recomenda **desbridamento e fíbula vascularizada**, **cedo, antes de a 
 
 A fíbula vascularizada tem a **maior taxa de consolidação** de qualquer tratamento, fora o osso único, e preserva movimento (p. 1357). Mas não é o fim da história: SUZUKI acompanhou 3 pacientes por 5 a 8 anos e viu, em 2, **arqueamento anterior da ulna com luxação anterior da cabeça do rádio**, e em 1, encurtamento; por isso as crianças seguem com radiografias, e nenhum estudo acompanhou até a maturidade. Na perna doadora, o **valgo progressivo do tornozelo**, a fraqueza, a dor e a alteração sensitiva são as complicações. Os pontos críticos do capítulo resumem: arqueamento anterior da ulna com luxação anterior da cabeça, instabilidade da radioulnar distal e instabilidade em valgo do tornozelo.
 
-!questoes treino=mao-2502,mao-3370,mao-3399
+!questoes relacionadas=mao-0843 treino=mao-2502,mao-3370,mao-3399,mao-2285
 conceito: A pseudartrose congênita da ulna, do terço distal ou médio, associa-se à neurofibromatose em cerca de 70% dos casos; o foco é fibroso e não neurofibroma; sem tratamento o rádio sobrecarregado arqueia e a cabeça luxa; o tratamento é a ressecção com fíbula vascularizada, cedo, com LANGENSKIÖLD contra o valgo do tornozelo.
 como: O simulado da prova de título de cirurgia da mão de 2021 (simulado) perguntou a condição mais associada à pseudartrose congênita da ulna.
 armadilha: Marcar malformações cardíacas por contaminação com a deficiência radial e a síndrome de HOLT-ORAM, ou achar que o defeito é ocupado por neurofibroma.

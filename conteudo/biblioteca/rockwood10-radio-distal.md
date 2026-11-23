@@ -286,7 +286,7 @@ Uma fratura **II C** é extra-articular, desviada e **irredutível**: por defini
 
 Nenhuma classificação resiste bem ao teste de confiabilidade. ANDERSEN comparou FRYKMAN, MELONE, MAYO e AO: só a **AO** teve confiabilidade inter e intraobservador, e **só nos três tipos A, B e C**; nos subtipos, nenhuma (Rockwood, cap. 43, seção Reliability of Classification Systems). A conclusão do Rockwood é que nenhuma classificação ajuda de fato a decidir o tratamento; servem para descrever e pesquisar (seção Reliability of Classification Systems).
 
-!questoes central=mao-1234 relacionadas=trauma-1105
+!questoes central=mao-1234 relacionadas=trauma-1105,mao-1248
 conceito: Universal de COONEY: I e II extra-articulares, III e IV intra-articulares; II A redutível estável, II B redutível instável, II C irredutível; a irredutível pede redução aberta e placa.
 como: O ENARE R4 2025 deu uma idosa com fratura extra-articular tipo II C e pediu o tratamento; o TEOT 2022 perguntou em quantos tipos a classificação IDEAL divide as fraturas.
 armadilha: Tratar uma fratura irredutível com gesso ou com redução fechada e pinos só porque a paciente é idosa.
@@ -431,7 +431,7 @@ O **EPL** é o tendão **mais rompido**, tanto no tratamento operatório quanto 
 
 Entre os **flexores**, o mais rompido com placa volar é o **FPL** (57% dos casos numa revisão, seguido do flexor profundo do indicador, 15%), em média 9 meses depois e até 10 anos (Green, p. 576). A causa é a placa **distal à linha divisória** ou travada antes de o rádio estar reduzido a ela (Rockwood, cap. 43, seção Tendon Injuries). SOONG gradua o risco no perfil: **grau 1**, material 2 mm ou mais acima da linha crítica volar; **grau 2**, a menos de 3 mm da borda volar (a legenda da figura diz 2 mm). Os dois rompem mais, e o Green retira a placa após a consolidação (p. 550 e 576).
 
-!questoes central=mao-0989 relacionadas=trauma-0895,trauma-0551,mao-0831
+!questoes central=mao-0989 relacionadas=trauma-0895,trauma-0551,mao-0831,mao-0685
 conceito: O EPL (terceiro compartimento, em volta do LISTER) é o tendão mais rompido; com placa volar distal à linha divisória, o flexor mais rompido é o FPL; SOONG 1 e 2 indicam placa além da linha crítica.
 como: A UFG 2020 perguntou o tendão mais rompido; o TARO 2010, o compartimento extensor com mais tenossinovite; a SBOT-SP, o flexor rompido com placa volar; o INTO 2026, o grau de SOONG numa imagem.
 armadilha: Marcar o FPL quando a pergunta é geral (é o EPL) ou o FCR quando a pergunta é sobre placa volar.

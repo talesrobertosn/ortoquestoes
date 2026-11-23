@@ -707,7 +707,7 @@ Na USP 2026, a **on-top-plasty** era o distrator vizinho: ponta melhor de um pol
 
 Bons nos tipos **I, II e IV**, piores nos **III, V, VI** e trifalângicos; polegar **25 a 33% mais fino**; reoperação de **20 a 25%** (Green, p. 1310 e 1313). Desvio de eixo, instabilidade ou tendão desalinhado levam à **deformidade em Z**; a artrodese ou condrodese é preferida para estabilizar; a protuberância na metacarpofalângica do IV costuma ser a **faceta esquecida** (Green, p. 1315). O Campbell (p. 3660) dá angulação tardia em até **46%** e revisões de **19 a 40%**.
 
-!questoes central=mao-1371 relacionadas=mao-1561,mao-0416,mao-0458 treino=mao-2375,mao-3604,mao-3608,mao-3610,mao-3621
+!questoes central=mao-1371 relacionadas=mao-1561,mao-0416,mao-0458,mao-0875 treino=mao-2375,mao-3604,mao-3608,mao-3610,mao-3621
 conceito: BILHAUT-CLOQUET: ressecção da parte central de osso e unha das duas distais e união das metades externas num polegar só, para dois polegares pequenos e simétricos dos tipos I e II; complica com unha e rigidez. Nos III e IV preserva-se o ulnar, e o abdutor curto (que insere no radial) vai com o colateral radial para o polegar que fica.
 como: A USP 2025 e a USP 2026 pediram a descrição e o nome da técnica; o TEOT 2025 e o Einstein 2026, os tipos em que se indica; o simulado da prova de título de cirurgia da mão de 2024, o músculo transferido com o colateral radial.
 armadilha: Confundir BILHAUT-CLOQUET com a exérese do polegar radial ou com a on-top-plasty, ou transferir o adutor, que já está no polegar ulnar.

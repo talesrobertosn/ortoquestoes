@@ -244,7 +244,7 @@ O ulnar é o dono dos intrínsecos, e cada sinal epônimo é a falta de um intr�
 | Cruzar os dedos | não cruza o médio sobre o indicador | 1º interósseo palmar e 2º dorsal | nenhum |
 !fim
 
-!questoes central=mao-0151 relacionadas=mao-0044,mao-0939,mao-0952,mao-1485,mao-0539
+!questoes central=mao-0151 relacionadas=mao-0044,mao-0939,mao-0952,mao-1485,mao-0539 treino=mao-2511
 conceito: FROMENT: sem o adutor do polegar (e o primeiro interósseo dorsal), o paciente prende o papel com o flexor longo do polegar e flete a IF; DUCHENNE é a garra do anular e do mínimo; WARTENBERG é o mínimo que não aduz contra o anular; PITRES-TESTUT testa o segundo e o terceiro interósseos dorsais movendo o médio de um lado a outro.
 como: A SBOT-SP e o TEOT 2023 perguntaram com que músculo o paciente prende o papel e por quê; o TARO 2017, quais músculos o FROMENT avalia; a UFG 2019, o nome da incapacidade de aduzir o mínimo e da garra do quarto e quinto dedos; a USP-SP 2024, um músculo testado no PITRES-TESTUT; a Ortopedia mostrou a imagem do teste do médio sobre a mesa e pediu o nome e os interósseos avaliados.
 armadilha: Responder que o FROMENT avalia o flexor curto ou o oponente, chamar a garra de BOUVIER ou WARTENBERG, ou pôr os interósseos palmares no movimento lateral do médio.

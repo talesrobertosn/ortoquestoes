@@ -244,7 +244,7 @@ Como os vínculos chegam por dorsal, a face **palmar** dos tendões nas zonas 1 
 
 O Campbell mostra que a irrigação é **segmentar** (Fig. 71.11): cada segmento depende de um vínculo dorsal, e suturas intratendíneas pioram a microcirculação. O **FPL não tem vínculo** e pode ser avançado sem perder irrigação (p. 3166).
 
-!questoes central=mao-0320,mao-0861 treino=mao-2592,mao-2831,mao-2838,mao-2857
+!questoes central=mao-0320,mao-0861 relacionadas=mao-1034 treino=mao-2592,mao-2831,mao-2838,mao-2857
 conceito: Os vínculos curtos são mesos triangulares junto às inserções; o longo do FDS nasce do assoalho na falange proximal e o longo do FDP nasce do FDS na IFP; os vasos entram por dorsal, e a face palmar é a menos irrigada.
 como: Uma prova de Ortopedia mostrou o vínculo curto do superficial numa imagem; a UFG 2017 perguntou a característica da nutrição na zona II (face dorsal mais vascularizada); o simulado pediu a afirmação correta sobre a anatomia da bainha.
 armadilha: Trocar a origem dos vínculos longos (o do profundo nasce do superficial, não do assoalho) ou achar que os vínculos entram pela face ventral.

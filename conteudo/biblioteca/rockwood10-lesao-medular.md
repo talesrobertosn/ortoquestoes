@@ -232,7 +232,7 @@ A fronteira C/D é a **força 3**: vencer a gravidade em toda a amplitude. A esc
 | E | normal | normal em quem teve déficit | função normal |
 !fim
 
-!questoes central=coluna-0292 relacionadas=coluna-0371,coluna-0375 treino=coluna-0510
+!questoes central=coluna-0292 relacionadas=coluna-0371,coluna-0375 treino=coluna-0510,mao-2077
 conceito: Sensibilidade preservada em S4-S5 sem motricidade abaixo do nível é ASIA B; motricidade abaixo com a maioria dos músculos-chave abaixo de grau 3 é C; qualquer preservação abaixo do nível torna a lesão incompleta.
 como: O ENARE R4 2024 descreveu jovem com fratura lombar, sensibilidade preservada e motor ausente abaixo do nível, com sensibilidade em S4 e S5; a SES-DF 2024, no capotamento, pediu a ASIA do paciente que move o membro inferior esquerdo com força grau II em todos os grupos e se a lesão é completa ou incompleta.
 armadilha: Chamar de A quem só tem sensibilidade sacral, ou de D quem move o membro mas sem vencer a gravidade (grau II fica abaixo do corte do grau 3).
@@ -396,7 +396,7 @@ O prognóstico é **bom** se a compressão e a instabilidade forem tratadas ciru
 | dor e temperatura | espinotalâmico lateral | lado oposto |
 !fim
 
-!questoes central=coluna-0032 relacionadas=coluna-0043
+!questoes central=coluna-0032 relacionadas=coluna-0043,mao-1255
 conceito: Na BROWN-SÉQUARD o déficit motor e proprioceptivo é ipsilateral e a perda de dor e temperatura é contralateral.
 como: O TARO 2014 e o TARO 2016 deram quatro combinações de lado para motor, propriocepção, dor e temperatura.
 armadilha: Inverter os lados ou pôr a temperatura junto do motor; propriocepção anda com o motor (ipsilateral), temperatura anda com a dor (contralateral).

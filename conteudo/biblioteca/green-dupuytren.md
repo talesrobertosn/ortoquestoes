@@ -92,7 +92,7 @@ A **história familiar positiva é o preditor isolado mais forte** da doença, e
 | contratura | menos de 1/5 dos portadores | evolução em anos, às vezes semanas |
 !fim
 
-!questoes central=mao-0515 relacionadas=mao-0026,mao-0070,mao-0274,mao-0866,mao-0103,mao-1865 treino=mao-3351,mao-3353,mao-3354
+!questoes central=mao-0515 relacionadas=mao-0026,mao-0070,mao-0274,mao-0866,mao-0103,mao-1865,mao-1924 treino=mao-3351,mao-3353,mao-3354
 conceito: A doença predomina no homem (6 a 10 vezes), branco e idoso, é rara em asiáticos e negros, muitas vezes bilateral mas raramente simétrica, e acomete sobretudo o anular e o mínimo.
 como: O TARO 2011 combinou sexo, raça e diabetes; o TARO 2018, sexo e simetria; o TARO 2015, a proporção de 10 vezes; o ENARE 2023, o grupo de homens idosos e a afirmação correta com a ordem dos dedos; o TEOT 2021, o dedo mais acometido; a UFG 2017, a raridade em asiáticos e negros.
 armadilha: Marcar padrão simétrico, igual proporção entre os sexos ou o dedo médio como mais acometido.
@@ -447,7 +447,7 @@ A lógica é a de um escudo: quando o dedo estende, quem sofre a tração é o t
 
 Há uma consequência cirúrgica curiosa. Como o CLELAND quase não adoece, a fasciectomia comum o preserva; mas na **dermofasciectomia digital** o autor retira toda a fáscia lateral, **inclusive o CLELAND**, porque a meta ali é substituir a unidade inteira de partes moles (p. 143).
 
-!questoes central=mao-1547 relacionadas=mao-1284 treino=mao-3342,mao-3357
+!questoes central=mao-1547 relacionadas=mao-1284,mao-1232 treino=mao-3342,mao-3357,mao-1756
 conceito: GRAYSON é palmar ao feixe, CLELAND é dorsal; o natatório une os dedos na comissura e continua com o GRAYSON; CLELAND, transverso superficial e septos de LEGUEU e JUVARA são poupados por stress shielding, enquanto GRAYSON adoece com frequência.
 como: A USP-SP 2026 pediu a identificação de três elementos da fáscia digital numa figura; a USP-SP 2025 perguntou, pelo conceito de stress shielding, qual estrutura costuma ser acometida.
 armadilha: Trocar GRAYSON por CLELAND, ou marcar o transverso superficial ou os septos de LEGUEU e JUVARA como estruturas frequentemente doentes.

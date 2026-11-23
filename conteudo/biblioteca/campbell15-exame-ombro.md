@@ -184,7 +184,7 @@ O braço é **fletido a 90 graus** e o ombro é **rodado internamente com força
 
 A banca brasileira gosta de um teste que **não aparece** nos capítulos lidos do Campbell 15 nem no Netter: o de **YOCUM**. Pelo enunciado do TARO 2019, ele é feito com a **mão no ombro oposto** e a **elevação ativa do cotovelo**. O parente mais próximo no Campbell é o **GERBER subcoracoide**, que também usa adução cruzada do braço fletido para levar a tuberosidade contra o arco, mas é passivo e mira o coracoide. Na prova, guarde a descrição do enunciado e não confunda com o **bear hug** (mão no ombro oposto, mas o examinador tenta afastar a mão com rotação externa, para testar o subescapular).
 
-!questoes central=ombro-cotovelo-0015 relacionadas=ombro-cotovelo-0013
+!questoes central=ombro-cotovelo-0015 relacionadas=ombro-cotovelo-0013,mao-1254
 conceito: NEER é o teste passivo: o examinador eleva o braço em flexão anterior forçada com a escápula fixa e o tubérculo maior bate no acrômio; a dor que some com 10 mL de lidocaína subacromial confirma o impacto. HAWKINS acrescenta rotação interna a 90 graus.
 como: O TARO 2018 pediu o teste de mobilização passiva do manguito (NEER); o TARO 2019 pediu a técnica do teste de YOCUM (mão no ombro oposto e elevação ativa do cotovelo).
 armadilha: Marcar SPEED, YOCUM ou O'BRIEN como "passivos" (todos pedem contração do paciente), ou confundir o YOCUM com a adução ativa ou com o bear hug.

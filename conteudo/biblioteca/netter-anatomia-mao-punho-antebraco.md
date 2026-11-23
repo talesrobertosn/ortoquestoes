@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-mao-punho-antebraco
-versao: 5
+versao: 6
 titulo: Anatomia da mão, do punho e do antebraço
 especialidade: mao
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatom
 edicao: 2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Green's Operative Hand Surgery, 7ª edição (2017)
 capitulo: Capítulo 5 · Antebraço e Capítulo 6 · Mão
 autores: Jon C. Thompson (ilustrações de Frank H. Netter)
-fonte: Livro conferido localmente em 29/10/2026 (tradução brasileira, 2012, e original em inglês, 2009), capítulos 5 e 6. Páginas citadas só quando confirmadas pelo índice remissivo ou pelo texto. Ampliado em 31/10/2026 com o Campbell's Operative Orthopaedics, 15ª ed., caps. 1 (vias de acesso), 67 (nervos), 71 (tendões flexores) e 74 (colunas do carpo), o Green's Operative Hand Surgery, 7ª ed., caps. 12, 13, 15, 18, 28, 30, 31, 35, 41 e 59, e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (embriologia).
+fonte: Livro conferido localmente em 29/10/2026 (tradução brasileira, 2012, e original em inglês, 2009), capítulos 5 e 6. Páginas citadas só quando confirmadas pelo índice remissivo ou pelo texto. Ampliado em 31/10/2026 com o Campbell's Operative Orthopaedics, 15ª ed., caps. 1 (vias de acesso), 67 (nervos), 71 (tendões flexores) e 74 (colunas do carpo), o Green's Operative Hand Surgery, 7ª ed., caps. 12, 13, 15, 18, 28, 30, 31, 35, 41 e 59, e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (embriologia). Versão 6 (23/11/2026): a anatomia da mão fechada pelo Netter, com cinco pranchas do atlas (túneis do punho, camada profunda posterior do antebraço, inervação cutânea, anatomia de superfície e espaços da mão) e o Green, 7ª ed., caps. 1, 2, 28, 31, 41, 44, 51 e 60: pregas da palma e linha de KAPLAN, eminência tenar e oposição, nervos cutâneos e veias, artérias interósseas, zonas do canal de GUYON, ramos do interósseo posterior, epífises dos metacarpais e limites do espaço de PARONA.
 subtemas: Anatomia da mão e punho
-resumo: Ossificação do carpo e colunas de NAVARRO, gota de lágrima e bossa; MARTIN-GRUBER (quatro tipos), RICHE-CANNIEU e os sinais do ulnar; vias de THOMPSON, HENRY, BOYD e do punho; nutrição e cicatrização do tendão flexor, efeito quadriga; camadas do nervo; rotação do membro na sétima semana; mediano e interósseo anterior (FPD 2 e 3, FLP, pronador quadrado), radial, interósseo posterior e FROHSE, ulnar e GUYON; compartimentos extensores I a VI e compartimento móvel; lumbricais (1 e 2 mediano e unipenados, 3 e 4 ulnar e bipenados), DAB e PAD; túnel do carpo (nove tendões, ramo recorrente 50/30/20), ligamentos do punho e espaço de POIRIER; arcos palmares (superficial ulnar, profundo radial, principal do polegar), escafoide 75% dorsal; aparelho extensor, polias A2 e A4, vínculos, efeito came; espaços tenar, mediopalmar e de PARONA.
+resumo: Ossificação do carpo e colunas de NAVARRO, gota de lágrima e bossa; MARTIN-GRUBER (quatro tipos), RICHE-CANNIEU e os sinais do ulnar; vias de THOMPSON, HENRY, BOYD e do punho; nutrição e cicatrização do tendão flexor, efeito quadriga; camadas do nervo; rotação do membro na sétima semana; mediano e interósseo anterior (FPD 2 e 3, FLP, pronador quadrado), radial, interósseo posterior e FROHSE, ulnar e GUYON; compartimentos extensores I a VI e compartimento móvel; lumbricais (1 e 2 mediano e unipenados, 3 e 4 ulnar e bipenados), DAB e PAD; túnel do carpo (nove tendões, ramo recorrente 50/30/20), ligamentos do punho e espaço de POIRIER; arcos palmares (superficial ulnar, profundo radial, principal do polegar), escafoide 75% dorsal; aparelho extensor, polias A2 e A4, vínculos, efeito came; espaços tenar, mediopalmar e de PARONA. Versão 6: prega palmar distal sobre as MF dos dedos ulnares e linha de KAPLAN (borda radial do médio = ramo motor); flexor curto do polegar com dois nervos, adutor fora da oposição; cutâneos lateral, medial e posterior, basílica ulnar; interóssea comum da ulnar; GUYON em três zonas, STRUTHERS e OSBORNE; ramo lateral do interósseo posterior para o polegar; epífise dupla no primeiro e no segundo metacarpais.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -62,16 +62,48 @@ A superfície articular do rádio tem duas facetas (escafoide e semilunar) separ
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 59, Fig. 59.34, p. 2007. Dorso da mão com a incisão (tracejada) para retirar a bossa, centrada nas bases do segundo (M2) e do terceiro (M3) metacarpais: o extensor radial longo do carpo (ECRL) chega à base de M2 e o extensor radial curto (ECRB), à base de M3, sobre o trapezoide (T) e o capitato (C).
 !fim
 
-!questoes central=mao-0588 relacionadas=mao-0492,mao-0251,mao-0300,mao-0242,mao-0617 treino=mao-1270,mao-1271
+**Os metacarpais da criança e a linha que não é fratura.** Cada metacarpal tem uma só fise verdadeira, e ela não fica no mesmo lugar em todos. Do segundo ao quinto, a epífise é **distal**, na cabeça; no polegar, ela é **proximal**, na base, como numa falange, porque o metacarpo do polegar se comporta como a falange proximal que o polegar não tem. Pelo Green's Operative Hand Surgery, 7ª edição (cap. 41, pp. 1427 e 1428), a epífise dos metacarpais do indicador ao mínimo aparece entre **12 e 27 meses**, a do polegar só entre **24 e 36 meses**, e todas fecham entre 14 e 16 anos. Na ponta oposta à fise verdadeira pode surgir uma fenda que imita uma segunda fise: é a **pseudoepífise**, na cabeça do primeiro metacarpal e na base do segundo, que aparece cedo, não contribui para o crescimento e costuma se fundir até os 7 anos. Quando ali se forma um segundo centro de ossificação de verdade, fala-se em **epífise dupla**, descrita sobretudo nos metacarpais do **polegar e do indicador**, os mesmos dois raios. Saber disso tem um motivo prático só, e ele é importante: na radiografia da mão da criança, essas linhas são lidas como fratura por quem não as conhece (p. 1428).
+
+!questoes central=mao-0588 relacionadas=mao-0492,mao-0251,mao-0300,mao-0242,mao-0617,mao-1458 treino=mao-1270,mao-1271
 conceito: O carpo ossifica do centro para fora, capitato e hamato primeiro (6 a 8 meses), escafoide aos 4 a 5 anos e pisiforme por último; a coluna central de NAVARRO, como a banca cobra, é semilunar, capitato e hamato; a gota de lágrima é o contraforte palmar do semilunar no rádio distal.
-como: O TARO 2012 e o TARO 2013 perguntaram a coluna central de NAVARRO; a Ortopedia e a SBOT-SP, os primeiros núcleos do carpo e a idade do escafoide; a Ortopedia, a largura da gota de lágrima; o TARO 2008, a bossa carpometacarpal.
+como: O TARO 2012 e o TARO 2013 perguntaram a coluna central de NAVARRO; a Ortopedia e a SBOT-SP, os primeiros núcleos do carpo e a idade do escafoide; a Ortopedia, a largura da gota de lágrima; o TARO 2008, a bossa carpometacarpal; a USP-SP 2024, em quais metacarpais a epífise dupla é mais frequente.
 armadilha: Achar que o escafoide, por ser o mais famoso, ossifica primeiro, ou pôr o piramidal na coluna central.
 alerta: A coluna central de NAVARRO aparece com conteúdos diferentes: as bancas (TARO 2012 e 2013) incluem o hamato; o Campbell 15 descreve semilunar e capitato. A Ortopedia (`mao-0242`) dá 5 mm de largura para a gota de lágrima, o mesmo número do Green (cap. 15, p. 520), que mede a maior largura em 5 mm; os 3 mm do Green são a projeção palmar, outra medida. O TARO 2008 (`mao-0617`) está sem gabarito oficial; os livros lidos descrevem a bossa como osteófito da base da segunda ou terceira carpometacarpal, onde se inserem os extensores radiais do carpo.
+!fim
+
+# A superfície da mão: pregas e a linha cardinal de KAPLAN {radar=oportunidade}
+
+Antes de qualquer incisão na palma, o cirurgião desenha a mão com a caneta. A pele não mostra os nervos nem os arcos, mas mostra as pregas, e as pregas não estão onde estão por acaso: cada uma é uma dobradiça da pele, formada onde ela precisa dobrar sobre uma articulação ou sobre um grupo de articulações que trabalham juntas. Por isso servem de mapa para o que está embaixo.
+
+!figura 6A imagem=mao/netter-ao-6-topografia.jpeg
+Fonte: Netter Atlas de Anatomia Ortopédica, 2ª ed. (tradução brasileira), cap. 6 (Mão), Anatomia topográfica. Na vista anterior, as pregas da palma (longitudinal radial, palmar proximal e palmar distal), as pregas dos dedos e as eminências tenar e hipotenar; na vista posterior, a tabaqueira anatômica, os tendões extensores e o local de cada articulação marcado na pele.
+!fim
+
+Na prancha de anatomia topográfica do Netter (cap. 6), olhe primeiro para as três pregas grandes da palma. A **prega longitudinal radial**, a prega tenar, contorna a eminência tenar e marca o limite do que se move com o polegar. A **prega palmar proximal** nasce no lado radial, perto da tenar, cruza a palma para o lado ulnar, e o Netter a dá como o **local aproximado do arco palmar superficial**. A **prega palmar distal** nasce no lado ulnar e corre sobre as **metacarpofalângicas do médio, do anular e do mínimo**: é a prega que se forma quando essas três articulações fletem juntas, e o Netter a dá como o **local das metacarpofalângicas na palma**. O erro comum é procurar as metacarpofalângicas na prega da base dos dedos; essa prega fica sobre a base da falange proximal, bem distal à articulação, porque a pele das comissuras cobre o começo dos dedos. Daí duas consequências práticas: a polia A1, que fica sobre a metacarpofalângica, é aberta perto da prega palmar distal nos dedos ulnares; e o Green faz o bloqueio transmetacarpal na altura dessa prega, cerca de 1 cm proximal à articulação (cap. 1, p. 9).
+
+**A linha cardinal de KAPLAN.** As pregas não resolvem o centro da palma, onde ficam o ramo motor do mediano e o arco superficial. Para isso existe a linha que KAPLAN descreveu em 1953: ela parte do ápice da primeira comissura, entre o polegar abduzido e o indicador, e cruza a palma em direção ao lado ulnar, paralela à prega palmar proximal. O ponto final varia entre os autores; CAETANO e colaboradores encontraram quatro definições e adotaram a que termina 2 cm distal ao pisiforme, admitindo que não há consenso (Revista Brasileira de Ortopedia, 2024, PMC11193595). A linha sozinha é uma faixa; os marcos aparecem quando ela é cruzada por verticais que descem dos dedos:
+
+!tabela Os cruzamentos da linha cardinal de KAPLAN (TOZELLO e colaboradores, Acta Ortopédica Brasileira, 2023, PMC10399985)
+| Vertical que cruza a linha | O que o ponto marca |
+| --- | --- |
+| borda radial do dedo médio | saída do ramo motor (recorrente) do mediano para os tenares |
+| borda ulnar do anular | hâmulo do hamato e ramo profundo do nervo ulnar |
+| a própria linha, no trajeto | referência do arco palmar superficial, que fica distal a ela |
+!fim
+
+O Netter localiza o arco superficial "na linha de KAPLAN" (cap. 6, Artérias), e KAUR e colaboradores mostraram que a distância entre o arco e a linha varia de uma mão para outra (Cureus, 2023, PMC10027112). Na liberação do túnel do carpo, o ponto do ramo motor mostra onde não aprofundar a dissecção do lado radial, e o arco superficial é o limite distal da abertura do ligamento transverso. São marcos de orientação: os próprios estudos anatômicos lembram que a mão de cada paciente manda.
+
+!questoes treino=mao-2619,mao-2638
+conceito: A prega palmar distal corre sobre as metacarpofalângicas do médio, do anular e do mínimo, e a proximal marca de modo aproximado o arco palmar superficial; na linha cardinal de KAPLAN, o cruzamento com a borda radial do médio marca o ramo motor do mediano, e o cruzamento com a borda ulnar do anular, o hâmulo do hamato e o ramo profundo do ulnar.
+como: Os simulados inspirados na prova de título de 2024 pediram a prega que se forma ao fletir as metacarpofalângicas dos três dedos ulnares e a estrutura marcada pelo cruzamento da linha de KAPLAN com a borda radial do médio.
+armadilha: Pôr as metacarpofalângicas na prega da base dos dedos, ou achar que o cruzamento com a borda radial do médio marca o arco superficial ou um nervo digital.
 !fim
 
 # Os nervos do antebraço e da mão {radar=confirmado}
 
 **O mediano.** Entra no antebraço sob a aponeurose do bíceps e passa **entre as duas cabeças do pronador redondo**, sob o arco do flexor superficial e entre o flexor profundo e o flexor longo do polegar, até o túnel do carpo. No antebraço inerva **pronador redondo, flexor radial do carpo, palmar longo e flexor superficial dos dedos**. O ramo cutâneo palmar sai cerca de **5 cm** antes do punho, por fora do túnel. O ramo **interósseo anterior** sai alto, corre na membrana interóssea entre o flexor longo do polegar e o profundo e inerva o **flexor profundo do indicador e do médio**, o **flexor longo do polegar** e o **pronador quadrado**; é motor, com sensibilidade só da cápsula palmar do punho (cap. 5, p. 170). Na mão, o ramo recorrente motor inerva **abdutor curto, oponente e a cabeça superficial do flexor curto do polegar**, e os lumbricais **1 e 2**; o resto é sensitivo para três dedos e meio.
+
+**Por que o mediano passa entre as cabeças do pronador redondo.** O mediano nasce da união de duas raízes, uma do fascículo **lateral** e outra do **medial** (Green, cap. 28, p. 936); o fascículo posterior, o dos extensores, não entra na história dele. No braço corre junto da artéria braquial e, na fossa cubital, fica **medial** a ela e ao tendão do bíceps. Passa sob a aponeurose bicipital e mergulha **entre a cabeça umeral e a cabeça ulnar do pronador redondo**, enquanto a artéria ulnar passa por baixo da cabeça ulnar (Netter, cap. 5, Nervos e Artérias). Os dois ventres do pronador e o arco do flexor superficial, logo adiante, são os pontos de aperto da síndrome do pronador. E a lista do que o mediano inerva tem exceções que derrubam qualquer frase com "todos": o **flexor ulnar do carpo** e a metade do **flexor profundo** que vai ao anular e ao mínimo são do ulnar; e o **pronador quadrado**, embora seja do mediano, recebe o nervo pelo **interósseo anterior**, que corre sobre a membrana interóssea com a artéria interóssea anterior, entre o flexor longo do polegar e o flexor profundo, e termina nele (cap. 5, Nervos).
 
 !figura 67.20 imagem=mao/campbell15-67-20-w22.jpeg
 Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 67, Fig. 67.20, p. 3010. Trajeto e ramos do mediano: nenhum ramo no braço; no antebraço, pronador redondo, flexor radial do carpo, palmar longo, flexor superficial, flexor longo do polegar, metade do flexor profundo e pronador quadrado; na mão, oponente, abdutor curto, flexor curto do polegar e primeiro e segundo lumbricais.
@@ -111,6 +143,18 @@ A ordem dos ramos do profundo segue o caminho dele pela palma, de ulnar para rad
 Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 73, Fig. 73.16, p. 3267 (modificada de BOYD, 1955). O ramo profundo do ulnar atravessa a palma de ulnar para radial e solta os ramos dos hipotenares, dos lumbricais e dos espaços IV, III e II e o do adutor do polegar; o ramo terminal vai ao primeiro interósseo. A tabela ao lado traz os meses até a recuperação do primeiro interósseo dorsal depois do reparo em dez pacientes.
 !fim
 
+**Os dois grupos de ramos do interósseo posterior.** Ao sair pela borda distal do supinador, o interósseo posterior se abre em leque. O Netter o mostra seguindo **ao longo da membrana interóssea, sob o extensor dos dedos e entre o abdutor longo e o extensor longo do polegar** (cap. 5, Nervos), e a distribuição tem a lógica das camadas que o Green descreve (cap. 28, p. 951). Um grupo de ramos sobe logo para a **camada superficial**, a que nasce do epicôndilo lateral: extensor ulnar do carpo, extensor dos dedos e extensor do mínimo. O outro desce sobre a membrana com a artéria interóssea posterior e inerva a **camada profunda**, os quatro músculos que cruzam o antebraço distal para o polegar e o indicador: abdutor longo, extensor longo e **extensor curto do polegar** e, por último, o extensor do indicador. O Green chama os dois de ramo superficial e ramo profundo; muitos textos de anatomia, e as provas, chamam o primeiro de **ramo medial** (curto, recorrente) e o segundo de **ramo lateral** (longo, descendente), porque ele segue pelo lado radial, rumo ao polegar. ELGAFY e colaboradores descreveram esse ramo lateral suprindo os extensores do polegar (Clin Orthop Relat Res, 2000, PMID 10906882). O nome muda conforme o autor; o raciocínio não: o que vai ao polegar e ao indicador é o ramo que desce, o mais longo, o lateral.
+
+!figura 5A imagem=mao/netter-ao-5-extensores-profundos.jpeg
+Fonte: Netter Atlas de Anatomia Ortopédica, 2ª ed. (tradução brasileira), cap. 5 (Antebraço), Músculos, camada profunda posterior. Com o extensor dos dedos, o do mínimo e o ulnar do carpo cortados, veja o ramo profundo do radial entrando no supinador e o interósseo posterior saindo pela borda distal, com a artéria interóssea posterior, para descer entre os quatro profundos: abdutor longo, extensor curto e extensor longo do polegar e extensor do indicador; à direita, o extensor radial longo e o curto, que vão ao segundo compartimento.
+!fim
+
+!questoes relacionadas=mao-0937,mao-1022
+conceito: Ao sair do supinador, o interósseo posterior dá um grupo de ramos para a camada superficial (extensor dos dedos, do mínimo e ulnar do carpo), chamado medial ou curto, e um ramo que desce sobre a membrana para a camada profunda (abdutor longo, extensores longo e curto do polegar e extensor do indicador), chamado lateral ou longo.
+como: A UFG 2019 e a UFG 2021 perguntaram, com as mesmas alternativas, qual ramo do interósseo posterior inerva o extensor curto do polegar.
+armadilha: Escolher o ramo medial por associar o nome "curto" ao extensor curto, ou procurar no Green os nomes medial e lateral (ele usa superficial e profundo).
+!fim
+
 !tabela Quem inerva o quê (Netter Atlas de Anatomia Ortopédica, caps. 5 e 6)
 | Nervo | Antebraço | Mão |
 | --- | --- | --- |
@@ -124,11 +168,25 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 73, Fig. 73.16, 
 
 Os pontos de compressão que o livro marca: no mediano, aponeurose do bíceps, cabeças do pronador redondo, arco do FSD e túnel do carpo; no radial, o tendão do braquiorradial (superficial), HENRY, ERCC, FROHSE e a borda distal do supinador; no ulnar, túnel cubital, cabeças do FUC e GUYON.
 
-!questoes central=mao-0497 relacionadas=mao-0344,mao-0170,mao-0165,mao-0403,mao-0315,mao-0533,mao-0535,mao-0627,mao-0097,ombro-cotovelo-0116,mao-0173,ombro-cotovelo-0247,mao-1457,mao-1311 treino=mao-2561,mao-2562,mao-2566,mao-2571,mao-1264,mao-1272,mao-1274,mao-1275,mao-1278,mao-1279
+!questoes central=mao-0497 relacionadas=mao-0344,mao-0170,mao-0165,mao-0403,mao-0315,mao-0533,mao-0535,mao-0627,mao-0097,ombro-cotovelo-0116,mao-0173,ombro-cotovelo-0247,mao-1457,mao-1311,mao-0949 treino=mao-2561,mao-2562,mao-2566,mao-2571,mao-1264,mao-1272,mao-1274,mao-1275,mao-1278,mao-1279,mao-2429
 conceito: No antebraço, tudo o que é anterior é do mediano, menos o FUC e o FPD do anular e do mínimo; o interósseo anterior é motor puro (FPD 2 e 3, FLP, pronador quadrado); o radial inerva o braquiorradial e o ERLC antes de virar interósseo posterior; na mão, o ulnar fica com quase todos os intrínsecos.
-como: O TARO 2012 perguntou os flexores afetados na síndrome do interósseo anterior, e duas imagens da Ortopedia mostraram o interósseo anterior e pediram a fraqueza do flexor profundo do indicador e do médio; o CET-PR, o nervo do pronador redondo; o TARO 2021 e a Ortopedia, músculos do ulnar; TEOT 2023, TARO 2021 e as imagens da SBOT-SP e da Ortopedia pediram o nervo de músculos apontados; a Ortopedia mostrou a arcada de FROHSE.
+como: O TARO 2012 perguntou os flexores afetados na síndrome do interósseo anterior, e duas imagens da Ortopedia mostraram o interósseo anterior e pediram a fraqueza do flexor profundo do indicador e do médio; o CET-PR, o nervo do pronador redondo; o TARO 2021 e a Ortopedia, músculos do ulnar; TEOT 2023, TARO 2021 e as imagens da SBOT-SP e da Ortopedia pediram o nervo de músculos apontados; a Ortopedia mostrou a arcada de FROHSE; a UFG 2019, o nervo do pronador quadrado; o simulado da prova de título de cirurgia da mão de 2022, a afirmação certa sobre o trajeto do mediano.
 armadilha: Pôr o flexor ulnar do carpo no mediano, ou esperar perda sensitiva cutânea nas lesões dos interósseos.
 alerta: O TARO 2009 (`mao-0627`) está sem gabarito oficial: pergunta o músculo preservado na lesão do ramo profundo no supinador. O Netter lista o extensor radial curto entre os músculos do interósseo posterior; o Green (cap. 31, p. 1064) diz que em 58% ele recebe o ramo do superficial do radial e então escapa da lesão no supinador, mas mostra na Fig. 31.33 um paciente com o curto paralisado. O braquiorradial e o extensor radial longo, inervados antes da divisão, são os que ficam preservados com certeza.
+!fim
+
+**A pele do antebraço e do dorso da mão: três nervos e duas veias.** No antebraço, nenhum dos grandes nervos mistos dá pele: o Netter marca "nenhum" território sensitivo para o mediano, o ulnar e o interósseo posterior ali (cap. 5, Nervos). A pele é de três nervos só sensitivos. A face **lateral** é do **cutâneo lateral do antebraço**, a continuação do **musculocutâneo**, que, depois de inervar o coracobraquial, o bíceps e o braquial, **sai entre o bíceps e o braquial**, lateral ao tendão do bíceps, e corre no subcutâneo sobre o braquiorradial. A face **medial** é do **cutâneo medial do antebraço**, que sai direto do fascículo medial (C8 e T1) e desce no subcutâneo à frente do epicôndilo medial. A faixa **posterior** é do **cutâneo posterior do antebraço**, ramo do **radial** dado ainda no braço. Na mão, o dorso ulnar passa ao **ramo dorsal do ulnar** e o dorso radial, ao **ramo superficial do radial** (cap. 6, Nervos).
+
+!figura 5B imagem=mao/netter-ao-5-inervacao-cutanea.jpeg
+Fonte: Netter Atlas de Anatomia Ortopédica, 2ª ed. (tradução brasileira), cap. 5 (Antebraço), Nervos. À esquerda, os territórios cutâneos nas vistas anterior e posterior: a face lateral pelo cutâneo lateral do antebraço (musculocutâneo), a medial pelo cutâneo medial do antebraço e a faixa posterior pelo cutâneo posterior do antebraço (radial). À direita, o ulnar no antebraço, com o ramo dorsal saindo acima do punho e a divisão em superficial e profundo no punho.
+!fim
+
+As veias seguem a mesma divisão de lados. A mão recebe o sangue pela palma, mas drena pelo dorso: o Green lembra que a maior parte da drenagem começa no dorso dos dedos e da mão e segue para as veias **cefálica e basílica** do antebraço (cap. 60, p. 2036). A **cefálica** sobe pelo lado radial; a **basílica** nasce do lado **ulnar** do dorso, perto da borda do mínimo, e sobe pela face medial acompanhada do cutâneo medial do antebraço, tão de perto que o Green usa a percussão ao longo da basílica para achar o neuroma desse nervo depois da cirurgia do túnel cubital (cap. 28, p. 955). Numa dissecção do dorso do punho, a veia grossa que sobe do lado do mínimo é a basílica, e o nervo fino que desce pela face posterior do antebraço é o cutâneo posterior, do radial.
+
+!questoes relacionadas=mao-0534 treino=mao-1974
+conceito: A pele do antebraço é de três nervos sensitivos: cutâneo lateral (fim do musculocutâneo, que sai entre o bíceps e o braquial), cutâneo medial (fascículo medial) e cutâneo posterior (radial); a mão drena pelo dorso para a cefálica, radial, e para a basílica, ulnar.
+como: A Ortopedia mostrou uma dissecção do dorso da mão e pediu a veia e o nervo do lado ulnar; o simulado da prova de título de cirurgia da mão de 2023 perguntou que nervo o cutâneo lateral do antebraço continua e entre quais músculos ele surge.
+armadilha: Trocar a basílica pela cefálica, ou pôr o cutâneo lateral do antebraço como ramo do radial ou do mediano.
 !fim
 
 # Anomalias de inervação e o exame do ulnar {radar=confirmado}
@@ -169,9 +227,9 @@ O jeito de não confundir é pelo andar: **MARTIN-GRUBER** fica no **antebraço 
 
 **O paradoxo do ulnar.** A garra da lesão **baixa** (no punho) é **mais intensa** que a da lesão **alta**, porque na lesão alta o flexor profundo do anular e do mínimo também para, e não há quem flexione as interfalângicas. Só a lesão no túnel cubital ou acima tira o **flexor ulnar do carpo** e o **flexor profundo do anular e do mínimo**. O **ramo dorsal** do ulnar, sensitivo, sai no antebraço distal e perfura a fáscia **6 a 8 cm** antes do punho (Green); o Netter dá 4 a 5 cm. Por isso a lesão no canal de GUYON poupa a sensibilidade do dorso ulnar da mão, e a lesão proximal a tira.
 
-!questoes central=mao-0415 relacionadas=mao-0550,mao-1483 treino=mao-1718
+!questoes central=mao-0415 relacionadas=mao-0550,mao-1483,mao-0453,mao-0894,mao-0895,mao-0942,mao-0984 treino=mao-1718,mao-1757,mao-1762
 conceito: MARTIN-GRUBER é motora, no antebraço proximal, do mediano ou do interósseo anterior para o ulnar, em cerca de 15 a 17%, tipo I em 60%; RICHE-CANNIEU é na palma, entre os ramos motores do ulnar e do mediano; o lumbrical do anular tem dupla inervação em metade das mãos; a garra baixa do ulnar é pior que a alta.
-como: O TEOT 2025 mostrou um esquema numerado e pediu entre quais estruturas fica MARTIN-GRUBER; a SBOT-SP perguntou onde ocorrem as conexões de RICHE-CANNIEU.
+como: O TEOT 2025 mostrou um esquema numerado e pediu entre quais estruturas fica MARTIN-GRUBER; a SBOT-SP perguntou onde ocorrem as conexões de RICHE-CANNIEU; o Einstein 2026, a frequência e o sentido das fibras em cada tipo de MARTIN-GRUBER; a UFG 2017, em quantas mãos o primeiro interósseo dorsal é do mediano e do radial; os simulados de 2026, a anastomose de RICHE-CANNIEU com tenares funcionando depois da secção do mediano e a dupla inervação do lumbrical do anular em cerca de metade dos membros.
 armadilha: Pôr RICHE-CANNIEU no antebraço, ou MARTIN-GRUBER entre radial e ulnar.
 !fim
 
@@ -200,9 +258,11 @@ No antebraço, Thompson divide os músculos em **anterior** (superficial: pronad
 
 As origens do grupo móvel não são iguais, e a prova gosta da diferença. O Green's Operative Hand Surgery, 7ª edição (cap. 18, p. 698), mostra que o **braquiorradial** e o **extensor radial longo do carpo** nascem da **crista supracondiliana lateral** do úmero, enquanto o **extensor radial curto do carpo** sai do **epicôndilo lateral**, na massa extensora comum, junto com o extensor dos dedos, o extensor ulnar do carpo e a parte proximal do ancôneo, logo atrás da origem do complexo ligamentar lateral, com o qual se mistura.
 
-!questoes central=mao-0394 relacionadas=mao-0104,mao-0027,mao-0049,mao-0410,mao-0094,mao-0171,mao-0570,mao-0029,mao-0167,ombro-cotovelo-0320,mao-0408,mao-0317,ombro-cotovelo-0129,mao-0818,mao-1524 treino=mao-2559,mao-2563,mao-1265,mao-1266,mao-1267,mao-1268,mao-1269,mao-1273,mao-1277,mao-1280,mao-1281
+**Lendo o dorso do antebraço numa figura.** As provas mostram a face posterior com números, e a identificação sai de três regras, que a prancha da camada profunda, na seção dos nervos, deixa ver. Primeiro, o grupo **móvel** fica na borda radial e termina nos metacarpais: o extensor radial **longo** do carpo, o mais lateral e de ventre mais alto, vai à base do **segundo** metacarpal; o **curto**, logo medial e por baixo dele, à base do **terceiro** (Netter, cap. 5, Músculos). Segundo, os quatro **profundos** aparecem no terço distal, saindo de baixo do extensor dos dedos: o **abdutor longo** e o **extensor curto do polegar** cruzam por cima dos extensores radiais rumo ao primeiro compartimento, o abdutor mais proximal e mais volumoso; o **extensor longo do polegar** nasce mais medial, na ulna, e vai ao terceiro; o **extensor do indicador** é o mais distal e o mais ulnar dos quatro, e o seu tendão corre no quarto compartimento, do lado ulnar do tendão comum do indicador. Terceiro, siga cada ventre até o túnel do retináculo: o número do compartimento confirma o músculo.
+
+!questoes central=mao-0394 relacionadas=mao-0104,mao-0027,mao-0049,mao-0410,mao-0094,mao-0171,mao-0570,mao-0029,mao-0167,ombro-cotovelo-0320,mao-0408,mao-0317,ombro-cotovelo-0129,mao-0818,mao-1524,mao-1304 treino=mao-2559,mao-2563,mao-1265,mao-1266,mao-1267,mao-1268,mao-1269,mao-1273,mao-1277,mao-1280,mao-1281
 conceito: Seis compartimentos dorsais, com o ELP sozinho no III, contornando LISTER; o compartimento móvel do antebraço é braquiorradial, ERLC e ERCC, liberado pela incisão dorsal.
-como: A SBOT-SP pediu em que compartimentos ficam o ERCC, o EI, o ED e o EDM; o TEOT 2021 mostrou o segundo compartimento; o TARO 2018 cobrou o coxim móvel e o TARO 2017, o intervalo da via de HENRY; TARO 2021, TARO 2024, TARO 2025 e TEOT 2025 pediram em imagens os pronadores, o flexor ulnar do carpo e a camada de cada um; a Ortopedia, a origem do supinador e do pronador quadrado e os músculos do dorso do antebraço.
+como: A SBOT-SP pediu em que compartimentos ficam o ERCC, o EI, o ED e o EDM; o TEOT 2021 mostrou o segundo compartimento; o TARO 2018 cobrou o coxim móvel e o TARO 2017, o intervalo da via de HENRY; TARO 2021, TARO 2024, TARO 2025 e TEOT 2025 pediram em imagens os pronadores, o flexor ulnar do carpo e a camada de cada um; a Ortopedia, a origem do supinador e do pronador quadrado e os músculos do dorso do antebraço; a USP-SP 2025 numerou o extensor radial longo, o abdutor longo do polegar e o extensor do indicador numa figura do dorso.
 armadilha: Pôr os extensores radiais no primeiro compartimento, ou o extensor longo do polegar junto do extensor dos dedos.
 !fim
 
@@ -263,6 +323,32 @@ armadilha: Confundir os lumbricais bipenados (3 e 4) com os interósseos dorsais
 alerta: O gabarito do TARO 2014 (`mao-0084`) é estabilização da MF e extensão da IFP; o Netter's Concise descreve a ação dos lumbricais como flexão da MF e extensão da IFP. Guarde a letra da banca e saiba que o livro fala em flexão.
 !fim
 
+# A eminência tenar, a oposição e o adutor {radar=confirmado}
+
+O polegar vale sozinho boa parte da função da mão, e quase tudo que ele faz de fino depende de quatro músculos curtos: os três da **eminência tenar** (abdutor curto, oponente e flexor curto do polegar) e o **adutor do polegar**, mais fundo. O Netter separa isso em compartimentos ao descrever as fasciotomias da mão (cap. 6): o **tenar**, com o abdutor curto, o flexor curto e o oponente, e o **compartimento adutor**, só com o adutor. A separação não é só de lugar; é de nervo e de função.
+
+**Quem inerva cada um, e por que um deles tem dois donos.** O ramo recorrente motor do mediano sai na borda distal do ligamento transverso e entra na eminência pelo lado radial; o ramo profundo do ulnar chega pelo lado ulnar, depois de cruzar a palma com o arco profundo. O Netter (cap. 6, Nervos) dá a divisão: o mediano inerva o **abdutor curto**, o **oponente** e a **cabeça superficial do flexor curto**; o ulnar inerva o **adutor** e a **cabeça profunda do flexor curto**. O flexor curto é, portanto, o músculo do polegar com os dois nervos, uma cabeça de cada. Na mão real a fronteira é ainda mais borrada. O Green (cap. 31, p. 1026) reúne os números: ZANCOLLI e COZZI acharam dupla inervação na cabeça superficial em 30% e na profunda em 79%; o mediano supre abdutor curto, oponente e cabeça superficial em 63% das mãos; e o flexor curto continua funcionando em **73%** das lesões completas do mediano. É por isso que tanta gente com o mediano cortado no punho ainda opõe.
+
+!tabela Os músculos curtos do polegar (Netter, cap. 6; Green's Operative Hand Surgery, 7ª ed., cap. 31, p. 1026)
+| Músculo | Nervo | O que faz |
+| --- | --- | --- |
+| abdutor curto | mediano (ramo recorrente) | o principal músculo da oposição |
+| oponente | mediano | ajuda a oposição, roda o metacarpo |
+| flexor curto, cabeça superficial | mediano | flexão da MF, ajuda a oposição |
+| flexor curto, cabeça profunda | ulnar (ramo profundo) | flexão da MF |
+| adutor | ulnar (ramo profundo) | adução, pinça lateral, retroposição |
+!fim
+
+**O que é oposição.** Não é um movimento só. O Green define (p. 1026): oposição é a combinação de **abdução, flexão e pronação** na trapeziometacárpica, a articulação em sela que deixa o metacarpo do polegar girar; o movimento contrário, a **retroposição**, junta **adução, extensão e supinação**. O **abdutor curto** é o principal músculo da oposição, ajudado pelo oponente e pelo flexor curto. O **adutor** trabalha do outro lado: com os extensores extrínsecos, faz a retroposição, e por isso **não participa da oposição**, mesmo que ele também aproxime o polegar da palma. A função própria dele é a **pinça lateral**, a de segurar uma chave, e ela é do **ulnar**; sem o adutor, o paciente compensa com o flexor longo do polegar e dobra a interfalângica ao pinçar uma folha, o sinal de FROMENT da seção das anomalias.
+
+**A hipotenar** é o espelho do lado ulnar: abdutor, flexor curto e oponente do dedo mínimo, todos do ramo profundo do ulnar, mais o palmar curto, o único músculo do ramo superficial (Netter, cap. 6, Nervos).
+
+!questoes relacionadas=mao-0819,mao-0892,mao-0997,mao-1064
+conceito: O flexor curto do polegar tem a cabeça superficial do mediano e a profunda do ulnar; o adutor é do ulnar e faz pinça lateral e retroposição, sem participar da oposição, que é abdução, flexão e pronação feitas pelo abdutor curto, pelo oponente e pelo flexor curto.
+como: O INTO 2026 perguntou o músculo do polegar inervado pelo ulnar e pelo mediano; a UFG 2017, o músculo que não participa da oposição; a UFG 2020, o nervo do adutor; a PUC-SP 2019, o nervo da cabeça superficial do flexor curto.
+armadilha: Responder o oponente como o músculo de dupla inervação, ou pôr o adutor na oposição só porque ele leva o polegar em direção à palma.
+!fim
+
 # Túnel do carpo, canal de GUYON e os ligamentos do punho {radar=confirmado}
 
 **O túnel do carpo** (cap. 5, p. 152 a 156): teto = **ligamento carpal transverso** (preso no pisiforme e no hâmulo do hamato, medialmente, e no escafoide e no trapézio, lateralmente); assoalho = ossos centrais do carpo; é mais estreito no **hâmulo do hamato**. Contém **nove tendões** (quatro FSD, quatro FPD e o FLP) e o **mediano**. O ramo recorrente motor sai **distal** ao ligamento em **50%**, **sob** ele em **30%** e **através** dele em **20%**. Artéria mediana persistente ou músculo aberrante também podem causar a síndrome.
@@ -271,7 +357,21 @@ alerta: O gabarito do TARO 2014 (`mao-0084`) é estabilização da MF e extensã
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 28, Fig. 28.5, p. 931. Variações do ramo motor do mediano (LANZ), com o ligamento transverso em verde e os tenares em vermelho: A, o padrão mais comum, extraligamentar e recorrente; B, subligamentar; C, transligamentar; D, ramo saindo da borda ulnar do mediano; E, ramo por cima do ligamento.
 !fim
 
-**O canal de GUYON**: assoalho = ligamento carpal transverso; teto = ligamento carpal palmar; paredes = pisiforme e hâmulo do hamato; contém **nervo e artéria ulnares**, sob o ligamento piso-hamato. Consolidação viciosa e cistos podem comprimir.
+**O canal de GUYON** é o túnel ulnar do punho, e a prancha do Netter (cap. 5, Túneis) mostra por que ele é diferente do túnel do carpo: fica **por cima** do ligamento carpal transverso, que é o seu **assoalho**, e embaixo do **ligamento carpal palmar**, o **teto**; o **pisiforme** é a parede medial e o **hâmulo do hamato**, a lateral. Dentro passam o **nervo e a artéria ulnares**, sob o ligamento piso-hamato, e nenhum tendão. Ali o nervo se divide. O ramo **superficial** é sensitivo, inerva só o palmar curto e segue para a pele do mínimo e da metade ulnar do anular. O ramo **profundo** é motor, passa sob o arco fibroso dos hipotenares, **contorna o hâmulo do hamato** e mergulha com o arco palmar profundo até o primeiro interósseo dorsal: é o ramo mais profundo do canal, e o Green avisa que, ao abrir o canal, só 1 ou 2 mm dele ficam visíveis antes de desaparecer em profundidade (cap. 28, p. 940).
+
+!figura 5C imagem=mao/netter-ao-5-tuneis.jpeg
+Fonte: Netter Atlas de Anatomia Ortopédica, 2ª ed. (tradução brasileira), cap. 5 (Antebraço), Túneis. Em cima, o túnel do carpo com o mediano, o ramo cutâneo palmar e o ramo para os tenares, e o corte com o ulnar fora do túnel. Embaixo, o túnel ulnar em corte (teto no ligamento carpal palmar, assoalho no transverso, pisiforme e hâmulo nas paredes) e as três zonas: I antes da bifurcação (motora e sensitiva), II no ramo profundo que contorna o hâmulo (motora) e III no ramo superficial (sensitiva).
+!fim
+
+**As três zonas.** Na prancha, o canal está dividido em três zonas, e o exame localiza a lesão por elas. A **zona I**, proximal à bifurcação, tem o nervo misto, e a compressão ali dá déficit **motor e sensitivo**; a **zona II** é o ramo profundo, só **motor**; a **zona III** é o ramo superficial, só **sensitiva**. O Green completa (cap. 28, p. 939): fraqueza só dos intrínsecos, sem queixa sensitiva, aponta a **zona II**; e alteração na pele do dorso ulnar da mão só aparece em compressão **acima** do punho, porque o ramo dorsal sai alguns centímetros antes do canal. A compressão no GUYON não é idiopática: o Netter cita a fratura consolidada viciosamente e as massas, como o cisto sinovial, e o Green insiste nas lesões que ocupam espaço, pedindo imagem além da eletroneuromiografia, sobretudo quando a paralisia é só motora (p. 939).
+
+**Para não misturar com o cotovelo.** Os outros pontos de aperto do ulnar ficam bem acima e têm nomes que a prova embaralha. A **arcada de STRUTHERS** é uma faixa da **fáscia braquial profunda**, presa ao septo intermuscular medial, que cobre o nervo cerca de **8 cm** acima do epicôndilo medial (Green, cap. 28, p. 941), presente em cerca de 70% das pessoas (cap. 18); é fáscia, não banda osteofibrosa, e não se confunde com o **ligamento** de STRUTHERS, que comprime o mediano. O **ligamento arqueado de OSBORNE** é o **teto do túnel cubital**, a faixa entre as duas cabeças do flexor ulnar do carpo, e não uma estrutura distal ao canal (p. 941).
+
+!questoes relacionadas=mao-0865
+conceito: O canal de GUYON tem o ligamento carpal transverso como assoalho e o carpal palmar como teto, entre o pisiforme e o hâmulo; o ramo profundo, motor, é o mais profundo e contorna o hâmulo; zona I mista, II motora, III sensitiva; STRUTHERS é fáscia braquial a cerca de 8 cm do epicôndilo, e OSBORNE é o teto do túnel cubital.
+como: A UFG 2017 juntou numa questão a arcada de STRUTHERS, o ligamento de OSBORNE, a causa da compressão no GUYON e a posição do ramo motor depois do canal.
+armadilha: Chamar a compressão no GUYON de idiopática (quase sempre há cisto, fratura ou lesão vascular), chamar a arcada de STRUTHERS de osteofibrosa, ou pôr o ligamento de OSBORNE distal ao túnel cubital.
+!fim
 
 **Os ligamentos do punho.** Os **palmares são mais fortes**, quase todos intracapsulares. O **radioescafocapitato** é o fulcro em que o escafoide roda; o **radiossemilunar curto** impede a luxação em hiperextensão; o **radiocarpal dorsal** é o principal estabilizador dorsal. O **espaço de POIRIER**, entre o radioescafocapitato e o ulnocapitato, distalmente, e o radiossemilunar longo, proximalmente, é o ponto fraco por onde passa a **luxação perissemilunar**. No **escafossemilunar**, as fibras **dorsais** são as mais fortes (DISI); no **semilunar-piramidal**, as **palmares** (VISI). Não há colateral ulnar verdadeiro; o EUC e a bainha fazem esse papel. A fileira proximal, sem músculos, é o segmento intercalado.
 
@@ -290,6 +390,8 @@ alerta: O TARO 2006 (`mao-0634`) está sem gabarito oficial: afirma que os profu
 
 A **radial** passa **sobre o pronador redondo**, **lateral ao flexor radial do carpo** (onde se toma o pulso), curva-se para o dorso **sob o ALP e o ECP**, na tabaqueira, atravessa o **primeiro interósseo dorsal** e termina como **arco palmar profundo**. O **ramo dorsal** para o escafoide supre cerca de **75%**, a parte **proximal**; o palmar, **25%**, a distal (cap. 5, Artérias). A **ulnar** passa **sob a cabeça ulnar do pronador redondo**, ao lado do nervo, entra no **GUYON** e termina como **arco palmar superficial**.
 
+**As artérias interósseas.** Logo abaixo do cotovelo, a ulnar, o ramo mais calibroso da braquial, dá a **artéria interóssea comum**, um tronco curto que o Netter lista entre os ramos da ulnar, e não da radial (cap. 5, Artérias). O Green descreve o que ela faz no antebraço proximal: cruza o flexor profundo dos dedos e se divide nas **interósseas anterior e posterior** (cap. 51, p. 1777). A **anterior** desce na **face anterior da membrana interóssea**, entre o **flexor longo do polegar e o flexor profundo**, com o nervo interósseo anterior, até o pronador quadrado (Netter, cap. 5, Nervos). A **posterior** atravessa a membrana para o dorso cerca de **6 cm abaixo do epicôndilo lateral**, aparece logo distal à borda do supinador e desce entre os extensores superficiais e os profundos, com o nervo interósseo posterior (Green, cap. 44, p. 1558). Perto do punho, cerca de 2 cm acima do estiloide da ulna, as duas se ligam por uma anastomose (p. 1560), e é ela que mantém vivo o retalho interósseo posterior de fluxo reverso. A radial, por sua vez, dá a recorrente radial (a arcada de HENRY, que cruza o ramo profundo do radial), ramos musculares e, no punho, os ramos carpais.
+
 !tabela Os arcos palmares (cap. 6, p. 212)
 | | Superficial | Profundo |
 | --- | --- | --- |
@@ -306,10 +408,10 @@ Os dois são codominantes em um terço das pessoas. O **teste de ALLEN** diz se 
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 60, Fig. 60.1, p. 2037. Os arcos palmares superficial (A) e profundo (B), com as artérias que os completam e a frequência de cada padrão: o superficial tem fluxo colateral adequado em 78,5% das mãos, e o profundo é quase sempre completo (97%).
 !fim
 
-!questoes central=mao-0314 relacionadas=mao-0632,mao-0319,mao-0420,mao-0518,mao-0255,mao-1330,mao-1427,mao-1570 treino=mao-2564,mao-2572,mao-1276,mao-1665,mao-1666,mao-1667
+!questoes central=mao-0314 relacionadas=mao-0632,mao-0319,mao-0420,mao-0518,mao-0255,mao-1330,mao-1427,mao-1570,mao-1023 treino=mao-2564,mao-2572,mao-1276,mao-1665,mao-1666,mao-1667,mao-1755
 conceito: Cada arco leva o nome da artéria que o termina: superficial = ulnar, distal, dominante em dois terços; profundo = radial, proximal, completo em 98%, com a principal do polegar; a radial dá 75% do sangue do escafoide pelo ramo dorsal.
-como: O TEOT 2024 e a Ortopedia pediram artérias do polegar e do indicador em imagens; o TEOT 2025, uma artéria do antebraço; o TARO 2011 cobrou a inervação do retalho antebraquial radial; o TARO 2006 afirmou que o arco superficial é formado principalmente pela radial.
-armadilha: Achar que o arco superficial é da radial, ou que o ALLEN mostra o arco dominante.
+como: O TEOT 2024 e a Ortopedia pediram artérias do polegar e do indicador em imagens; o TEOT 2025, uma artéria do antebraço; o TARO 2011 cobrou a inervação do retalho antebraquial radial; o TARO 2006 afirmou que o arco superficial é formado principalmente pela radial; a UFG 2021 perguntou de que artéria a interóssea comum é ramo direto, e o simulado da prova de título de cirurgia da mão de 2026, a origem e o trajeto da interóssea anterior.
+armadilha: Achar que o arco superficial é da radial, que o ALLEN mostra o arco dominante, ou que a interóssea comum nasce da radial.
 alerta: O TARO 2006 (`mao-0632`) está sem gabarito oficial; pelo Netter, a afirmação é falsa, porque o arco superficial é a continuação da artéria ulnar.
 !fim
 
@@ -378,9 +480,15 @@ armadilha: Achar que os vínculos irrigam o tendão de forma contínua, sem zona
 
 Três espaços **potenciais** (cap. 6, p. 214): **tenar**, entre os flexores e o **adutor do polegar**; **mediopalmar**, entre os flexores e os **metacarpais**; **PARONA**, entre os flexores e o **pronador quadrado**, no punho. A **bolsa radial** é a extensão da bainha do **FLP**; a **ulnar** comunica-se com a bainha do **mínimo**; as duas se encontram no espaço de PARONA, o caminho do **abscesso em ferradura**. Na ponta do dedo, a polpa com septos é a sede do panarício; as pregas da unha, da paroníquia; a matriz germinativa, sob o eponíquio, precisa estar íntegra para a unha crescer, cerca de 1 mm por semana. Os ligamentos de **GRAYSON** (palmar) e **CLELAND** (dorsal) estabilizam a pele e o feixe neurovascular do dedo e entram na doença de DUPUYTREN (p. 194).
 
-!questoes relacionadas=mao-0225 treino=mao-2570,mao-1668
+**O espaço de PARONA, com os limites.** É o espaço profundo do antebraço distal, logo acima do punho. O Green o põe **entre a fáscia do pronador quadrado**, atrás, e a **bainha dos tendões do flexor profundo**, na frente (cap. 2, p. 33), com o flexor longo do polegar do lado radial. A bolsa ulnar, que no mínimo costuma continuar a bainha digital, e a bolsa radial, continuação da bainha do flexor longo do polegar, sobem até um pouco acima do ligamento transverso (p. 29); a radial termina 1 a 2 cm acima da borda proximal dele (p. 33). As duas ficam lado a lado sobre o PARONA, e, quando o pus rompe uma delas, o espaço vira o corredor que leva a infecção do polegar ao mínimo, ou ao contrário: é o **abscesso em ferradura**, com dor e edema no outro dedo de borda e na face volar do antebraço distal. As comunicações entre as bainhas variam em cerca de 15% das pessoas, e por isso a tenossinovite de um dedo pede o exame da palma, do punho e de todos os dedos (p. 33).
+
+!figura 6B imagem=mao/netter-ao-6-espacos.jpeg
+Fonte: Netter Atlas de Anatomia Ortopédica, 2ª ed. (tradução brasileira), cap. 6 (Mão), Outras estruturas. Em cima, siga a bainha do flexor longo do polegar continuando como bolsa radial e a do mínimo como bolsa ulnar até o punho, onde as duas se encontram sobre o espaço de PARONA. Embaixo, no corte da palma, o septo que separa o espaço tenar, sobre o adutor do polegar, do espaço mediopalmar, sobre os metacarpais e os interósseos.
+!fim
+
+!questoes relacionadas=mao-0225 treino=mao-2570,mao-1668,mao-1760
 conceito: Tenar com o adutor, mediopalmar com os metacarpais, PARONA com o pronador quadrado, onde as bolsas radial e ulnar se encontram e o pus faz a ferradura.
-como: A Ortopedia cobrou a anatomia do espaço de PARONA.
+como: A Ortopedia cobrou a anatomia do espaço de PARONA; o simulado da prova de título de cirurgia da mão de 2026, o espaço por onde a tenossinovite do flexor longo do polegar chega ao mínimo e os seus limites.
 armadilha: Pôr o espaço de PARONA no meio do antebraço, entre o flexor superficial e o profundo.
 !fim
 
@@ -426,3 +534,5 @@ armadilha: Trocar o sentido (o superior roda lateral, o inferior medial) ou pôr
 > **Na prova:** **mediano** = anterior (menos FUC e FPD 4 e 5) e tenar; **interósseo anterior** = FPD 2 e 3, FLP, PQ, **sem pele**; **radial** = BR e ERLC antes da divisão, **FROHSE**, interósseo posterior = extensores; **ulnar** = FUC, FPD 4 e 5, **GUYON**, quase todos os intrínsecos; compartimentos **I** ALP/ECP, **II** radiais, **III** ELP/LISTER, **IV** ED/EI, **V** EDM, **VI** EUC; móvel = **BR, ERLC, ERCC**; lumbricais **3 e 4 bipenados** e ulnares; **DAB/PAD**; túnel do carpo = **9 tendões**, ramo recorrente **50/30/20**; POIRIER = perissemilunar; arco **superficial ulnar** (2/3, 80%), **profundo radial** (98%, principal do polegar); escafoide **75% dorsal**; **A2 e A4**; MF tensa em **flexão**; PARONA = **pronador quadrado**.
 
 > **Na prova, o que a versão 2 acrescenta:** carpo ossifica **capitato e hamato** (6 a 8 meses) primeiro, **escafoide** aos 4 a 5 anos, **pisiforme** por último; coluna central de NAVARRO na banca = **semilunar, capitato e hamato**; gota de lágrima = contraforte do semilunar, **70 graus**; **MARTIN-GRUBER** = antebraço, mediano ou interósseo anterior para ulnar, **17%**, tipo I em 60%; **RICHE-CANNIEU** = palma; lumbrical do anular duplo em **50%**; FROMENT, WARTENBERG, PITRES-TESTUT; garra **baixa pior** que alta; THOMPSON = **ED e ERCC**, interósseo posterior no supinador; HENRY = **BR e FRC**, ramo sensitivo sob o BR, ligar a **recorrente radial**; tendão flexor isquêmico sob **A2 e A4**, cicatrização **48 a 72 h, 5 dias a 4 semanas, até 3,5 meses**; **perineuro** resiste à tração, **epineuro** é 60 a 85% do corte; membro superior roda **90 graus lateral na sétima semana**.
+
+> **Na prova, o que a versão 6 acrescenta:** prega palmar **distal** = MF do médio, anular e mínimo; KAPLAN com a borda **radial do médio** = **ramo motor**, com a borda ulnar do anular = **hâmulo** e ramo profundo do ulnar; **flexor curto** do polegar = superficial **mediano**, profunda **ulnar**; **adutor** = ulnar, **fora da oposição** (abdução, flexão e pronação); cutâneo lateral do antebraço = fim do **musculocutâneo**, entre **bíceps e braquial**; **basílica** = ulnar; **interóssea comum** = ramo da **ulnar**; interóssea anterior entre **FLP e FPD**; GUYON zona **I mista, II motora, III sensitiva**; STRUTHERS = fáscia a **8 cm**; OSBORNE = teto do túnel cubital; extensor curto do polegar = ramo **lateral** do interósseo posterior; epífise dupla = metacarpais do **polegar e do indicador**; PARONA = entre a fáscia do **pronador quadrado** e a bainha do **FPD**.

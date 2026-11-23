@@ -191,7 +191,7 @@ Este é o ponto que mais cai do tema, e o Campbell (cap. 46, p. 1815) o organiza
 
 **Hérnia contra estenose.** A claudicação neurogênica é a marca da **estenose do canal lombar**, não da hérnia de disco. A hérnia extrusa, a foraminal e a extraforaminal dão radiculopatia de uma raiz, com dor que segue o dermátomo; a obstrução arterial dá claudicação vascular. A palavra "claudicação neurogênica" num enunciado aponta para o canal estreito.
 
-!questoes central=coluna-0006 relacionadas=coluna-0013,coluna-0327,coluna-0440
+!questoes central=coluna-0006 relacionadas=coluna-0013,coluna-0327,coluna-0440,mao-1251
 conceito: A claudicação neurogênica aparece numa distância variável, alivia sentado ou com o tronco fletido (pode levar 20 minutos), é mais tolerada subindo ladeira, pedalando ou empurrando um carrinho, piora na esteira e tem teste da bicicleta negativo; a vascular tem distância fixa, alivia parando em pé e piora subindo e pedalando.
 como: O TARO 2020 perguntou a distância e a posição de alívio; o TARO 2018, a característica da estenose central (menor desconforto em aclives); o TARO 2008, em que situação a claudicação aparece; a prova de R4 de Coluna de Joinville 2010, a causa da claudicação neurogênica.
 armadilha: Achar que a distância neurogênica é fixa, que alivia em pé, que o teste da bicicleta é positivo ou que a dor vai de distal para proximal; todas essas são da vascular.
