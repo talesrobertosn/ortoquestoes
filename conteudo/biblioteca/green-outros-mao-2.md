@@ -365,7 +365,7 @@ Como o fragmento capitelar quase não tem partes moles inseridas, a necrose avas
 
 ## Nervo ulnar depois da fixação
 
-O Green (cap. 18, p. 752 e 753) afirma que os sintomas do nervo ulnar são **comuns** depois das fraturas do úmero distal. As causas são três: lesão pelos fragmentos, manipulação e afastamento na cirurgia, e fibrose em volta do nervo na região do epicôndilo medial e do túnel cubital. Os autores identificam o nervo cedo, protegem-no com um dreno de PENROSE suturado (não pinçado) e, ao final, fazem a **transposição subcutânea anterior** na maioria das fraturas; fraturas isoladas do capítulo, do côndilo lateral e as operadas pelo intervalo de KOCHER dispensam a transposição.
+O Green (cap. 18, p. 729 e 730) afirma que os sintomas do nervo ulnar são **comuns** depois das fraturas do úmero distal. As causas são três: lesão pelos fragmentos, manipulação e afastamento na cirurgia, e fibrose em volta do nervo na região do epicôndilo medial e do túnel cubital. Os autores identificam o nervo cedo, protegem-no com um dreno de PENROSE suturado (não pinçado) e, ao final, fazem a **transposição subcutânea anterior** na maioria das fraturas; fraturas isoladas do capítulo, do côndilo lateral e as operadas pelo intervalo de KOCHER dispensam a transposição. A metanálise de SHEARIN e colaboradores (Hand Clin, 2018; PMID 29169602) dá a dimensão: neuropatia ulnar em cerca de 19% dos casos depois da fixação.
 
 O próprio livro reconhece que a transposição de rotina é **muito controversa**: WANG não encontrou neuropatia em 20 pacientes transpostos, mas DOORNBERG observou que problemas do nervo ulnar são raros no seguimento longo. Quando a neuropatia se instala, neurólise e transposição anterior ajudam, mas a função do nervo não parece voltar ao normal.
 
@@ -373,7 +373,6 @@ O próprio livro reconhece que a transposição de rotina é **muito controversa
 conceito: Tipo IV é a fratura do capítulo que avança para medial e solta a borda lateral da tróclea; DUBBERLEY 2 é capítulo e tróclea em peça única (1, capítulo com ou sem crista lateral; 3, fragmentos separados).
 como: O simulado da prova de título de cirurgia da mão de 2024 pediu o tipo que leva a borda lateral da tróclea; o simulado da prova de título de cirurgia da mão de 2021, o tipo II de DUBBERLEY; o simulado da prova de título de cirurgia da mão de 2024, a incidência de neuropatia ulnar numa metanálise citada pelo Green.
 armadilha: Confundir DUBBERLEY 2 (peça única) com DUBBERLEY 3 (fragmentos separados), ou responder tipo III, que na classificação em quatro tipos é a cominutiva.
-alerta: Em `mao-2352` (gabarito cerca de 20%), o capítulo 18 do Green 7ª ed. conferido não traz a metanálise nem esse número; diz apenas que a neuropatia ulnar é comum e discute a transposição de rotina. O dado deve vir de outra edição. Gabarito oficial mantido.
 !fim
 
 # Cabeça do rádio: mecanismo, imagem, zona segura e necrose {radar=clinico}
