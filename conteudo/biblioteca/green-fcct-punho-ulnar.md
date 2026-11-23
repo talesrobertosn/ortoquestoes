@@ -124,7 +124,7 @@ O papel dos ulnocárpicos na estabilidade da ARUD é **controverso**, diz o Gree
 
 O **homólogo do menisco** é um tecido conjuntivo frouxo e bem vascularizado, de provável origem sinovial, que ocupa o espaço entre a cápsula ulnar, o disco e o piramidal. Tem inserção constante no piramidal e, às vezes, mais ampla, até a base do quinto metacarpo. Na artroscopia, ele pode esconder o ligamento lunopiramidal e atrapalhar a visão (p. 482, Figura 14.6). Repare que ele é componente da FCT, mas o Green **não o lista entre os estabilizadores secundários** da ARUD: é uma armadilha clássica.
 
-!questoes central=mao-1227 treino=mao-2216,mao-2126,mao-3307
+!questoes central=mao-1227 relacionadas=mao-1105 treino=mao-2216,mao-2126,mao-3307
 conceito: A FCT tem cinco componentes e quatro funções primárias (estender a superfície do rádio sobre a cabeça ulnar, transmitir carga pela ulnocárpica, conexão forte e flexível, sustentar o carpo ulnar); os radioulnares são os estabilizadores primários; os ulnocárpicos palmares são três, o ulnocapitato superficial aos outros dois.
 como: A prova de título de 2023 pediu a função corretamente enunciada; a UERJ 2025, discursiva, componentes, estabilizador principal, funções e estabilizadores secundários; a prova de título de 2022, número e disposição dos ulnocárpicos.
 armadilha: Dizer que a FCT transmite carga pela ARUD, sustenta o carpo radial ou forma ligação rígida; contar dois ulnocárpicos.

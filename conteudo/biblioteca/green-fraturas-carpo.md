@@ -953,7 +953,7 @@ O capítulo faz um aviso prático (p. 649). A artrose radioescafoide e do estilo
 | Se a revascularização falhar ou for impossível | Escafoidectomia com artrodese mediocárpica ou carpectomia proximal |
 !fim
 
-!questoes central=mao-0742 treino=mao-3183
+!questoes central=mao-0742 relacionadas=mao-0897 treino=mao-3183
 conceito: A doença de PREISER é a osteonecrose do escafoide sem fratura; KALAINOV separa o tipo 1 (osso inteiro, que colapsa) do tipo 2 (parcial); causas são colagenoses, corticoide, trauma repetitivo e idiopática; pode ocorrer em crianças e não tem tratamento padronizado.
 como: O IAUPE 2025 pediu a alteração que caracteriza a doença, entre necrose do escafoide, luxação do semilunar, fratura oblíqua do escafoide, artrose radiocárpica e lesão escafolunar.
 armadilha: Confundir com o KIENBÖCK, que é a necrose do semilunar, ou escolher a fratura, que é justamente o que a doença de PREISER não é.

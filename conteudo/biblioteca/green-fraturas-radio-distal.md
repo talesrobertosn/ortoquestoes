@@ -332,7 +332,7 @@ A classificação preferida do autor é a de FERNANDEZ, baseada no **mecanismo d
 
 Três associações caem com frequência. No **tipo II**, o "CHAUFFEUR incomum" deve levantar a suspeita de lesão escafossemilunar (p. 528). No **tipo IV**, a pergunta é a fratura-luxação radiocárpica, e o fragmento pode ser do estiloide radial ou do estiloide ulnar, porque é a avulsão de ligamento que define o tipo. No **tipo V**, o enunciado costuma listar vários mecanismos juntos e lesão diafisária.
 
-!questoes central=mao-1503 relacionadas=mao-1260 treino=mao-1957,mao-2043,mao-2129,mao-3416,mao-3426,mao-3441,mao-3446
+!questoes central=mao-1503 relacionadas=mao-1260,mao-1247 treino=mao-1957,mao-2043,mao-2129,mao-3416,mao-3426,mao-3441,mao-3446
 conceito: FERNANDEZ classifica pelo mecanismo: I flexão, II cisalhamento (BARTON, CHAUFFEUR, com suspeita de lesão escafossemilunar), III compressão, IV avulsão com fratura-luxação radiocárpica, V combinada de alta energia.
 como: A USP-SP 2024 mostrou uma fratura por cisalhamento e pediu o tipo (II); o SBOT-SP perguntou o tipo das avulsões ligamentares dos estiloides (IV); os simulados do simulado da prova de título de cirurgia da mão de 2023, prova de título de 2024 e prova de título de 2022 pediram a correlação correta, o tipo da fratura-luxação radiocárpica e o tipo em que se suspeita de lesão escafossemilunar.
 armadilha: Trocar o II pelo III: cisalhamento é o fragmento que desliza com o carpo; compressão é a superfície que afunda.
@@ -391,7 +391,7 @@ LAFONTAINE, HARDY e DELINCE (Injury, 1989) descreveram cinco parâmetros que, na
 
 Com **três ou mais**, considera-se cirurgia cedo (p. 530). Os estudos posteriores confirmaram como mais importantes a **idade**, a **perda de comprimento radial** e a **angulação dorsal inicial** (p. 530). O que não é critério é a pegadinha: cominuição **volar**, angulação **volar**, lesão do CFCT, idade **abaixo** de 60.
 
-!questoes central=mao-0584 relacionadas=mao-0684,mao-0714,mao-1106,mao-1211 treino=mao-2308,mao-2505,mao-3433
+!questoes central=mao-0584 relacionadas=mao-0684,mao-0714,mao-1106,mao-1211,mao-1245 treino=mao-2308,mao-2505,mao-3433
 conceito: LAFONTAINE: angulação dorsal maior que 20°, cominuição dorsal, traço articular radiocárpico, fratura da ulna e idade acima de 60; o colapso cresce de forma linear com o número de critérios, três ou mais justificam cirurgia, e a idade é o preditor mais forte nos estudos seguintes.
 como: O ENARE R4 2024 e a PUC-SP 2020 pediram o critério entre as alternativas; o IAUPE 2025, o que não pertence a ele (cominuição dorsal ou volar); a FMRP-USP 2026, o principal critério na COLLES; a PUC-SP 2023, o fator mais ligado à perda tardia; os simulados do simulado da prova de título de cirurgia da mão de 2024 e 2021 cobraram a idade e a relação linear.
 armadilha: Aceitar qualquer critério com "volar"; a cominuição e a angulação que contam são dorsais, porque é o lado dorsal que se esmaga na queda com o punho estendido.

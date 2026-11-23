@@ -255,7 +255,7 @@ armadilha: Pôr a circunflexa da escápula no espaço quadrangular, ou a cefáli
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 34, Fig. 34.1, p. 1147. Plexo braquial de C5 a T1, de raízes a ramos: o dorsal da escápula sai de C5 e o torácico longo das raízes C5 a C7, atrás do plexo; o supraescapular e o nervo do subclávio saem do tronco superior; USS, TD e LSS (subescapular superior, toracodorsal e subescapular inferior) saem do fascículo posterior antes do axilar e do radial.
 !fim
 
-!questoes central=ombro-cotovelo-0085 relacionadas=ombro-cotovelo-0002,ombro-cotovelo-0068,ombro-cotovelo-0263,ombro-cotovelo-0254,ombro-cotovelo-0362,ombro-cotovelo-0564,ombro-cotovelo-0437,ombro-cotovelo-0359,ombro-cotovelo-0388,mao-0879 treino=ombro-cotovelo-0697,ombro-cotovelo-0700,ombro-cotovelo-0701
+!questoes central=ombro-cotovelo-0085 relacionadas=ombro-cotovelo-0002,ombro-cotovelo-0068,ombro-cotovelo-0263,ombro-cotovelo-0254,ombro-cotovelo-0362,ombro-cotovelo-0564,ombro-cotovelo-0437,ombro-cotovelo-0359,ombro-cotovelo-0388,mao-0879,mao-0922,mao-0983,mao-1007,mao-1018 treino=ombro-cotovelo-0697,ombro-cotovelo-0700,ombro-cotovelo-0701
 conceito: Do fascículo posterior saem o axilar, o radial, o toracodorsal e os subescapulares; do medial, o ulnar; o torácico longo e o dorsal da escápula saem das raízes; o axilar se lesa na luxação.
 como: Uma prova de Ortopedia pediu os fascículos do axilar e do ulnar; o TARO 2020, a lesão nervosa da luxação anterior; as imagens do TEOT, do TARO e do TECOC pedem o grande dorsal com o toracodorsal, o nervo do serrátil, o axilar, o musculocutâneo e os nervos do plexo; o TARO 2007, o músculo poupado na compressão do radial na bifurcação.
 armadilha: Pôr o redondo maior no toracodorsal ou no axilar, ou o serrátil no dorsal da escápula.
@@ -295,7 +295,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.113, p
 | supraclaviculares | ramo medial a 2,7 cm da esternoclavicular; lateral a 1,9 cm da acromioclavicular |
 !fim
 
-!questoes central=ombro-cotovelo-0542 relacionadas=ombro-cotovelo-0072,ombro-cotovelo-0456,ombro-cotovelo-0323,mao-0574
+!questoes central=ombro-cotovelo-0542 relacionadas=ombro-cotovelo-0072,ombro-cotovelo-0456,ombro-cotovelo-0323,mao-0574,mao-1042
 conceito: O axilar cruza o deltoide cerca de 5 cm abaixo do acrômio e 3,5 cm abaixo do tubérculo maior; o musculocutâneo perfura o coracobraquial e termina como cutâneo lateral do antebraço; o radial perfura o septo lateral na junção do terço médio com o distal, é lesado em 12% das fraturas da diáfise e se recupera sozinho em 91%.
 como: O ENARE R4 2025 perguntou o trajeto do axilar nas vias do úmero proximal; o TARO 2022, o dermátomo do ramo sensitivo do musculocutâneo; o TARO 2024, o mediano numa imagem; o TARO 2025, o lacertus fibrosus.
 armadilha: Dividir o deltoide além de 5 cm, ou achar que o musculocutâneo dá sensibilidade ao braço.

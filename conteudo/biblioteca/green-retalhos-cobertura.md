@@ -86,7 +86,7 @@ Daí a conclusão que a prova cobra: **nenhum enxerto comum reconstitui a pele p
 
 O Green acrescenta uma restrição que explica muitas escolhas do capítulo: o enxerto palmar **não traz subcutâneo vascularizado** para cobrir tendões e nervos. Por isso, na palma, o enxerto é um "compromisso", em geral indicado só para liberar contratura em áreas que não exigem sensibilidade fina (p. 1529).
 
-!questoes central=mao-1163 relacionadas=mao-1170 treino=mao-2166,mao-2743
+!questoes central=mao-1163 relacionadas=mao-1170 treino=mao-2166,mao-2743,mao-2099
 conceito: A epiderme é cerca de 5% da espessura da pele; a pele palmar não tem estruturas pilossebáceas e concentra os corpúsculos de MEISSNER e de PACINI; no enxerto, a sensibilidade volta pela reinervação dos complexos de MERKEL, chance que cresce com a espessura.
 como: A PUC-SP 2022 pediu a porcentagem da epiderme e uma característica da pele volar; o simulado da prova de título de 2022 pede qual estrutura reinervada devolve a sensibilidade ao enxerto.
 armadilha: Responder MEISSNER ou PACINI para a reinervação do enxerto comum (eles só vêm com pele glabra), ou atribuir glândulas sebáceas à palma.
@@ -730,7 +730,7 @@ A base anatômica foi publicada por PENTEADO, MASQUELET e CHEVREL (Surg Radiol A
 | interósseo posterior | entre ECU e extensor do mínimo; entra no dorso 6 cm distal ao epicôndilo | 2 cm proximal ao estiloide ulnar | variações em 24%; necrose parcial frequente; ramo motor do ECU |
 !fim
 
-!questoes central=mao-0015 relacionadas=mao-0622,mao-1327,mao-0413,mao-0854,mao-0518,mao-0845,mao-1900,mao-0271,mao-1507 treino=mao-2101,mao-2718,mao-2726,mao-2737
+!questoes central=mao-0015 relacionadas=mao-0622,mao-1327,mao-0413,mao-0854,mao-0518,mao-0845,mao-1900,mao-0271,mao-1507 treino=mao-2101,mao-2718,mao-2726,mao-2737,mao-1761
 conceito: Interósseo posterior: pedículo entre ECU e extensor do mínimo, pivô 2 cm proximal ao estiloide ulnar; radial: exige ALLEN normal, leva pele, fáscia, tendão e osso, é inervado pelo cutâneo lateral do antebraço (musculocutâneo) e tem a crítica maior na área doadora; perda de pele no dorso da mão pede fasciocutâneo.
 como: TARO 2009 e 2019 pediram o septo da interóssea posterior; TEOT 2025 e UFG 2017, o teste de ALLEN; TARO 2011, a inervação do radial; INTO 2026, por imagem, o radial; ENARE 2025, a crítica ao radial; ENARE R4 2023, o tipo de retalho para o dorso; o simulado da prova de título de 2024, os músculos que ladeiam o pedículo da interóssea posterior.
 armadilha: Pôr o pedículo da interóssea posterior entre extensor dos dedos e mínimo, ou o pivô no estiloide do rádio.

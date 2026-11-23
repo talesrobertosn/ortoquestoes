@@ -447,7 +447,7 @@ A lógica é a de um escudo: quando o dedo estende, quem sofre a tração é o t
 
 Há uma consequência cirúrgica curiosa. Como o CLELAND quase não adoece, a fasciectomia comum o preserva; mas na **dermofasciectomia digital** o autor retira toda a fáscia lateral, **inclusive o CLELAND**, porque a meta ali é substituir a unidade inteira de partes moles (p. 143).
 
-!questoes central=mao-1547 relacionadas=mao-1284 treino=mao-3342,mao-3357
+!questoes central=mao-1547 relacionadas=mao-1284,mao-1232 treino=mao-3342,mao-3357,mao-1756
 conceito: GRAYSON é palmar ao feixe, CLELAND é dorsal; o natatório une os dedos na comissura e continua com o GRAYSON; CLELAND, transverso superficial e septos de LEGUEU e JUVARA são poupados por stress shielding, enquanto GRAYSON adoece com frequência.
 como: A USP-SP 2026 pediu a identificação de três elementos da fáscia digital numa figura; a USP-SP 2025 perguntou, pelo conceito de stress shielding, qual estrutura costuma ser acometida.
 armadilha: Trocar GRAYSON por CLELAND, ou marcar o transverso superficial ou os septos de LEGUEU e JUVARA como estruturas frequentemente doentes.

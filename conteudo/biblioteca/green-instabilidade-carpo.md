@@ -147,7 +147,7 @@ Entre o RSC e o radiossemilunar **longo** existe um sulco natural sem ligamento,
 
 O RSC é também o motivo de duas condutas que a prova cobra. Na **estiloidectomia radial**, ressecar osso demais desinsere a origem do RSC e cria instabilidade (p. 449); e na **fratura do estiloide radial** associada à luxação, o fragmento contém a origem do RS e do RSC, e por isso deve ser **reduzido e fixado, nunca ressecado** (p. 469 e 473).
 
-!questoes treino=mao-2212,mao-2623,mao-2467,mao-2567,mao-2641,mao-2660
+!questoes relacionadas=mao-0269 treino=mao-2212,mao-2623,mao-2467,mao-2567,mao-2641,mao-2660,mao-2288
 conceito: O RSC vai do estiloide radial ao capitato passando pela cintura do escafoide como uma tipoia; o espaço de POIRIER fica na cápsula palmar, entre o RSC e o radiossemilunar longo.
 como: Os simulados da prova de título de 2023 e 2022 pedem os ligamentos palmares superficiais e o que contorna o escafoide; o do simulado da prova de título de cirurgia da mão de 2021 pede qual origem a estiloidectomia excessiva compromete; outro pede a localização do POIRIER.
 armadilha: Colocar o POIRIER entre o RSC e o radiossemilunar curto, ou no dorso do punho.

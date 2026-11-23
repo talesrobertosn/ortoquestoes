@@ -691,7 +691,7 @@ Quando o garrote é solto, esse sangue ácido e carregado de CO2 volta à circul
 
 O campo exangue tem um papel no tratamento das feridas graves e contaminadas: sem sangue escorrendo, as estruturas nobres (nervos, vasos, tendões) e o tecido contaminado ficam visíveis, e o desbridamento pode ser feito com precisão e sem lesar o que deve ser preservado. A viabilidade de músculo e pele, porém, é confirmada pelo **sangramento** e pela cor, o que exige **soltar o garrote** antes de terminar. As duas coisas não se contradizem: o garrote serve para ver e identificar; a soltura serve para confirmar.
 
-!questoes central=mao-0858
+!questoes central=mao-0858 relacionadas=mao-0579
 conceito: No desbridamento das feridas graves e contaminadas, o garrote dá o campo exangue que permite identificar com clareza as estruturas e o tecido comprometido; a viabilidade final é confirmada soltando o garrote e vendo o sangramento.
 como: A UFG 2017 pôs o desbridamento com torniquete ao lado de afirmações sobre desbridamento parcimonioso, excisão antes do reparo arterial e cobertura nas primeiras 24 horas.
 armadilha: Marcar o desbridamento parcimonioso: na ferida contaminada, o desbridamento é radical, e o tecido morto deixado para trás é a principal causa de infecção.

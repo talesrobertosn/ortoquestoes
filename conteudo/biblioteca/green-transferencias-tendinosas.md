@@ -314,7 +314,7 @@ Resultados (p. 1034): FOUCHER e colaboradores (J Hand Surg Br 16B:56-60, 1991), 
 
 Um detalhe histórico que virou questão: **o que se chama de CAMITZ foi descrito primeiro por BUNNELL**, que já sugeria uma polia perto do pisiforme para dar tração oblíqua e oposição (p. 1034). MACDOUGAL propôs uma janela no retináculo. E se o FPB superficial for inervado pelo ulnar, ele dá a pronação, e o CAMITZ padrão produz boa oposição.
 
-!questoes central=mao-0749 treino=mao-3223,mao-3224,mao-3232
+!questoes central=mao-0749 relacionadas=mao-1110 treino=mao-3223,mao-3224,mao-3232
 conceito: A técnica de CAMITZ transfere o palmar longo, alongado com uma faixa de aponeurose palmar, à inserção do APB, em geral junto com a liberação do túnel do carpo.
 como: O IAUPE 2025 pediu o tendão transferido na cirurgia de CAMITZ.
 armadilha: Marcar o FRC (usado por NEY e no radial) ou o ELP (MENNEN, RILEY); o PL é curto e só chega ao polegar porque leva a aponeurose em continuidade.
@@ -483,7 +483,7 @@ O sinal de PITRES-TESTUT merece um comentário: além de presente ou ausente, o 
 
 A manobra de BOUVIER é a que mais confunde. Ela **não serve para dizer o nível da lesão**; serve para avaliar se o aparelho extensor está íntegro, e é por isso que ela decide o tratamento da garra, como se vê na seção seguinte.
 
-!questoes treino=mao-2318,mao-3227,mao-3228,mao-3238,mao-3241,mao-3242
+!questoes relacionadas=mao-1111 treino=mao-2318,mao-3227,mao-3228,mao-3238,mao-3241,mao-3242
 conceito: No sinal de PITRES-TESTUT, com a mão espalmada, o paciente não move o médio de um lado para o outro, porque o segundo e o terceiro interósseos dorsais estão paralisados.
 como: O simulado da prova de título de cirurgia da mão de 2024 descreveu o sinal e pediu os músculos que falham.
 armadilha: Marcar os interósseos palmares (que aduzem em direção ao médio, mas não movem o próprio médio) ou os lumbricais.
@@ -641,7 +641,7 @@ Há duas correções, e as duas usam uma tira de extensor que passa **palmar ao 
 - **EDM dividido**: a **metade ulnar do EDM** é solta do capuz, passa pelo quarto espaço intermetacarpal, palmar ao ligamento transverso, e é fixada **na inserção do colateral radial da metacarpofalângica na falange proximal**, se não houver garra; se houver garra, num **retalho de base radial da bainha logo distal à A1** (Fig. 31.31 mostra A1 ou A2), para fletir a metacarpofalângica também. Tensão com o punho neutro e a metacarpofalângica a 20°; 4 semanas.
 - **VOCHE e MERLE** (J Hand Surg Br 20:49-52, 1995): uma tira de 3 a 4 cm, de base proximal, do **terço central do extensor do anelar** (a junctura e a tira medial do EDC do anelar), passada palmar ao ligamento transverso, até o colateral radial da metacarpofalângica do mínimo ou o capuz radial. Uma tira curta demais afrouxa o extensor do anelar. A tensão é ajustada para que o mínimo não abduza com os dedos estendidos e flita 20° menos que o anelar.
 
-!questoes central=mao-1578 treino=mao-1981,mao-2143,mao-2319
+!questoes central=mao-1578 relacionadas=mao-1013 treino=mao-1981,mao-2143,mao-2319
 conceito: O mínimo abduzido da paralisia ulnar (WARTENBERG) se corrige com a metade ulnar do EDM ou, na técnica de VOCHE e MERLE, com uma tira do terço central do extensor do anelar, ambas passadas palmar ao ligamento metacarpal transverso profundo.
 como: A USP-SP 2026 pediu a técnica para a abdução do mínimo (o split do extensor do mínimo); a prova de título de 2022, a tira do EDM; o simulado da prova de título de cirurgia da mão de 2023 e o simulado da prova de título de cirurgia da mão de 2024, a origem da tira de VOCHE e MERLE.
 armadilha: Marcar o laço de ZANCOLLI ou a tenodese de PARKES, que tratam a garra, ou a técnica de SMITH, que é adutoplastia do polegar; e não confundir a tira do anelar de VOCHE e MERLE com a metade do próprio EDM.

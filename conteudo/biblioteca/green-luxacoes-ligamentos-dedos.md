@@ -276,7 +276,7 @@ Indicações: fratura-luxação instável aguda ou crônica com impactação ou 
 
 O caso clínico eletrônico do capítulo resume a indicação (p. 316): fratura-luxação com 6 semanas e fragmentos pequenos impactados vai para hemi-hamato, e o mecanismo foi compressão axial com desvio lateral, que a radiografia subestimou.
 
-!questoes treino=mao-2116,mao-2491,mao-3548
+!questoes relacionadas=mao-0995 treino=mao-2116,mao-2491,mao-3548
 conceito: O hemi-hamato reconstrói a base volar da falange média com a face dorsal distal do hamato, talhada mais espessa proximalmente para recriar o contraforte; na artroplastia da placa volar, a liberação parcial dos checkrein dá comprimento para avançar a placa.
 como: Os simulados da prova de título de 2022 e do simulado da prova de título de cirurgia da mão de 2021 pedem a origem do enxerto osteocondral na base cominuta e o gesto que permite avançar a placa volar numa fratura-luxação antiga.
 armadilha: Achar que a artroplastia da placa volar serve para defeitos grandes: acima de 40% ela falha, porque não recria o contraforte; e confundir o local doador com a base do 4º metacarpo.

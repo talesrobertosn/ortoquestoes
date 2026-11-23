@@ -57,7 +57,7 @@ Daí a distinção que organiza a classificação OMT: **malformação** é erro
 
 Na prática, essa janela responde a uma pergunta frequente de gestantes: a exposição a um medicamento na 14ª semana, por exemplo, já não tem como causar uma falha de formação da mão, porque o membro está completo desde a 8ª semana. O raciocínio inverso também vale: quando há malformações em vários membros, o momento da agressão provavelmente foi o começo da janela, e um teratógeno passa a ser suspeito.
 
-!questoes central=mao-1564 relacionadas=mao-0955,mao-1419 treino=mao-1728,mao-3742,mao-3746,mao-3752
+!questoes central=mao-1564 relacionadas=mao-0955,mao-1419,mao-1186 treino=mao-1728,mao-3742,mao-3746,mao-3752,mao-2085,mao-2456
 conceito: O broto do membro superior aparece por volta do 26º dia após a fertilização (4ª semana), a embriogênese termina com 8 semanas, e a maioria das anomalias congênitas do membro superior ocorre entre a 4ª e a 8ª semana; o broto é o mesoderma crescendo para dentro do ectoderma.
 como: A USP-SP 2026 pediu a afirmativa correta sobre a embriogênese (janela de 4 a 8 semanas); a UFG 2020 pediu o dia em que surge o broto (26); a USP-SP 2024 trouxe o broto aos 26 dias como a correta, entre afirmativas que trocavam o sentido do crescimento e os eixos.
 armadilha: Marcar 8 a 12 semanas (já é período fetal), dizer que o membro se forma de distal para proximal ou que o broto é o ectoderma crescendo sobre o mesoderma.
@@ -1030,7 +1030,7 @@ alerta: O Tachdjian lista também a deficiência femoral e a tibial, o que aprox
 
 **A luxação congênita da cabeça do rádio** (Green, p. 1350) costuma ser **bilateral**, anterior ou posterior; a cabeça é ovoide e o capítulo, hipoplásico. Raramente atrapalha na infância; a redução aberta com reconstrução do ligamento anular falha com frequência. No adolescente ou no adulto com dor, a **ressecção da cabeça** alivia.
 
-!questoes central=mao-0307 relacionadas=mao-0024,mao-0297,mao-0352,pediatria-0736 treino=mao-2587
+!questoes central=mao-0307 relacionadas=mao-0024,mao-0297,mao-0352,pediatria-0736,mao-1388 treino=mao-2587,mao-1722,mao-2008,mao-2009,mao-2089,mao-2159,mao-2244,mao-2540
 conceito: A ressecção não devolve a rotação; a osteotomia derrotatória muda a posição e se indica acima de 60 graus de pronação com limitação; a complicação clássica é a síndrome compartimental; TACHDJIAN I é sem cabeça e III é fibrosa.
 como: O TEOT 2024 perguntou o tratamento da sinostose unilateral em neutro; o TARO 2018, a complicação da derrotação de 90 graus; o CET-PR e a SBOT-SP, a classificação de TACHDJIAN.
 armadilha: Indicar a ressecção da sinostose para devolver a rotação, ou operar o antebraço em neutro.
@@ -1052,7 +1052,7 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 38, Fig. 38.23, p. 1
 
 **O tratamento.** Deformidade indolor não precisa de cirurgia. No imaturo com deformidade progressiva, **fisiólise** (LANGENSKIÖLD, com interposição de gordura) **com liberação do ligamento de VICKERS**; o Green 8ª ed. diz que isso reduz a dor e corrige gradualmente. Mas a fisiólise sozinha raramente basta, porque a lesão é periférica e as pacientes chegam no fim do crescimento (muitas meninas terminam por volta dos 13 anos). No adolescente com deformidade estabelecida, **osteotomia**: o Tachdjian prefere a liberação do VICKERS com **osteotomia em cúpula** da metáfise por **via anterior** (a via dorsal não alcança o ligamento), fixação com pinos e gesso longo por 6 semanas; o Green cita também a osteotomia em cunha de fechamento dorsal e o **encurtamento da ulna** para a dor da radioulnar distal (indicado, segundo critérios citados pelo Tachdjian, com variância ulnar acima de 5 mm, subsidência acima de 4 mm e deslocamento palmar acima de 22 mm). A meta é a variância neutra ou levemente negativa. A recidiva é mais comum nos mais novos e depois da fisiólise; deixar o VICKERS sem liberar explica parte das correções incompletas.
 
-!questoes central=mao-0339 relacionadas=mao-0083,mao-0047,mao-0489,mao-0643 treino=mao-2588
+!questoes central=mao-0339 relacionadas=mao-0083,mao-0047,mao-0489,mao-0643,mao-0687,mao-0953,mao-1097,mao-1563 treino=mao-2588,mao-1726
 conceito: O ligamento espessado é o de VICKERS, palmar e proximal à fise; a deformidade é bilateral, quatro vezes mais em meninas e reconhecida na adolescência; o tratamento junta a liberação do VICKERS à fisiólise ou à osteotomia em cúpula.
 como: O TARO 2024 e o TARO 2014 perguntaram o ligamento e a doença; o TARO 2017, o sexo e a lateralidade; o TARO 2012, a idade do reconhecimento; o TARO 2006, o sexo e a limitação do movimento.
 armadilha: Achar que a deformidade aparece ao nascimento ou que o ligamento é dorsal.

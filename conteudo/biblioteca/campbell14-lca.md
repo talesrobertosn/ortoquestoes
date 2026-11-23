@@ -45,7 +45,7 @@ Pense no LCA como duas cordas presas em pontos diferentes do fêmur. Quando o jo
 
 **O LCA e a rotação.** Os cruzados funcionam como eixos em torno dos quais ocorre a rotação. A rotação externa da tíbia desenrola os cruzados, e a rotação interna os enrola um em volta do outro, sob forte tensão; nos colaterais acontece o oposto (p. 2209 e 2210). É por isso que a rotação interna da tíbia tensiona o LCA, e que o mecanismo clássico de lesão envolve a tíbia rodando em relação ao fêmur.
 
-!questoes central=joelho-0209 relacionadas=joelho-0253,joelho-0298 treino=joelho-0383
+!questoes central=joelho-0209 relacionadas=joelho-0253,joelho-0298,mao-1258 treino=joelho-0383
 conceito: A banda anteromedial fica tensa em flexão e a posterolateral em extensão (freia a hiperextensão); o LCA dá 85% da resistência à gaveta a 90 graus, tem tensão mínima entre 30 e 40 graus e é irrigado sobretudo pela genicular média.
 como: O TARO 2012 perguntou a artéria; outra banca e o TARO 2006 perguntaram qual banda fica tensa em flexão e qual em extensão.
 armadilha: Inverter as bandas, dizendo que a anteromedial fica tensa em extensão.
