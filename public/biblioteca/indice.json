@@ -22695,15 +22695,15 @@
   },
   {
    "id": "netter-anatomia-mao-punho-antebraco",
-   "versao": 5,
+   "versao": 6,
    "titulo": "Anatomia da mão, do punho e do antebraço",
    "especialidade": "mao",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
    "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Green's Operative Hand Surgery, 7ª edição (2017)",
    "capitulo": "Capítulo 5 · Antebraço e Capítulo 6 · Mão",
-   "resumo": "Ossificação do carpo e colunas de NAVARRO, gota de lágrima e bossa; MARTIN-GRUBER (quatro tipos), RICHE-CANNIEU e os sinais do ulnar; vias de THOMPSON, HENRY, BOYD e do punho; nutrição e cicatrização do tendão flexor, efeito quadriga; camadas do nervo; rotação do membro na sétima semana; mediano e interósseo anterior (FPD 2 e 3, FLP, pronador quadrado), radial, interósseo posterior e FROHSE, ulnar e GUYON; compartimentos extensores I a VI e compartimento móvel; lumbricais (1 e 2 mediano e unipenados, 3 e 4 ulnar e bipenados), DAB e PAD; túnel do carpo (nove tendões, ramo recorrente 50/30/20), ligamentos do punho e espaço de POIRIER; arcos palmares (superficial ulnar, profundo radial, principal do polegar), escafoide 75% dorsal; aparelho extensor, polias A2 e A4, vínculos, efeito came; espaços tenar, mediopalmar e de PARONA.",
+   "resumo": "Ossificação do carpo e colunas de NAVARRO, gota de lágrima e bossa; MARTIN-GRUBER (quatro tipos), RICHE-CANNIEU e os sinais do ulnar; vias de THOMPSON, HENRY, BOYD e do punho; nutrição e cicatrização do tendão flexor, efeito quadriga; camadas do nervo; rotação do membro na sétima semana; mediano e interósseo anterior (FPD 2 e 3, FLP, pronador quadrado), radial, interósseo posterior e FROHSE, ulnar e GUYON; compartimentos extensores I a VI e compartimento móvel; lumbricais (1 e 2 mediano e unipenados, 3 e 4 ulnar e bipenados), DAB e PAD; túnel do carpo (nove tendões, ramo recorrente 50/30/20), ligamentos do punho e espaço de POIRIER; arcos palmares (superficial ulnar, profundo radial, principal do polegar), escafoide 75% dorsal; aparelho extensor, polias A2 e A4, vínculos, efeito came; espaços tenar, mediopalmar e de PARONA. Versão 6: prega palmar distal sobre as MF dos dedos ulnares e linha de KAPLAN (borda radial do médio = ramo motor); flexor curto do polegar com dois nervos, adutor fora da oposição; cutâneos lateral, medial e posterior, basílica ulnar; interóssea comum da ulnar; GUYON em três zonas, STRUTHERS e OSBORNE; ramo lateral do interósseo posterior para o polegar; epífise dupla no primeiro e no segundo metacarpais.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 51,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -22714,6 +22714,11 @@
      "id": "os-ossos-carpo-colunas-e-o-radio-distal",
      "titulo": "Os ossos: carpo, colunas e o rádio distal",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-superficie-da-mao-pregas-e-a-linha-cardinal-de",
+     "titulo": "A superfície da mão: pregas e a linha cardinal de KAPLAN",
+     "radar": "oportunidade"
     },
     {
      "id": "os-nervos-do-antebraco-e-da-mao",
@@ -22738,6 +22743,11 @@
     {
      "id": "os-intrinsecos-lumbricais-e-interosseos",
      "titulo": "Os intrínsecos: lumbricais e interósseos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-eminencia-tenar-a-oposicao-e-o-adutor",
+     "titulo": "A eminência tenar, a oposição e o adutor",
      "radar": "confirmado"
     },
     {
@@ -22788,6 +22798,9 @@
     "mao-0300",
     "mao-0242",
     "mao-0617",
+    "mao-1458",
+    "mao-0937",
+    "mao-1022",
     "mao-0497",
     "mao-0344",
     "mao-0170",
@@ -22803,9 +22816,13 @@
     "ombro-cotovelo-0247",
     "mao-1457",
     "mao-1311",
+    "mao-0949",
+    "mao-0534",
     "mao-0415",
     "mao-0550",
     "mao-1483",
+    "mao-0453",
+    "mao-0894",
     "mao-0394",
     "mao-0104",
     "mao-0027",
@@ -22822,6 +22839,7 @@
     "ombro-cotovelo-0129",
     "mao-0818",
     "mao-1524",
+    "mao-1304",
     "ombro-cotovelo-0120",
     "mao-0172",
     "mao-0316",
@@ -22838,6 +22856,11 @@
     "mao-0540",
     "mao-0877",
     "mao-1474",
+    "mao-0819",
+    "mao-0892",
+    "mao-0997",
+    "mao-1064",
+    "mao-0865",
     "mao-0181",
     "mao-0577",
     "mao-0238",
@@ -22853,6 +22876,7 @@
     "mao-1330",
     "mao-1427",
     "mao-1570",
+    "mao-1023",
     "mao-0109",
     "mao-0066",
     "mao-0320",
@@ -22868,6 +22892,8 @@
    "treino": [
     "mao-1270",
     "mao-1271",
+    "mao-2619",
+    "mao-2638",
     "mao-2561",
     "mao-2562",
     "mao-2566",
@@ -22878,7 +22904,11 @@
     "mao-1275",
     "mao-1278",
     "mao-1279",
+    "mao-2429",
+    "mao-1974",
     "mao-1718",
+    "mao-1757",
+    "mao-1762",
     "mao-2559",
     "mao-2563",
     "mao-1265",
@@ -22917,6 +22947,7 @@
     "mao-1665",
     "mao-1666",
     "mao-1667",
+    "mao-1755",
     "mao-2568",
     "mao-2569",
     "mao-2573",
@@ -22926,7 +22957,8 @@
     "mao-1661",
     "mao-1662",
     "mao-2570",
-    "mao-1668"
+    "mao-1668",
+    "mao-1760"
    ],
    "subtemas": [
     "Anatomia da mão e punho"
