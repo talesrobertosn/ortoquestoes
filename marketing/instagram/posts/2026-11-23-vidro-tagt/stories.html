@@ -1,59 +1,85 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><title>Vidro claro em degradê — TAGT, TEOT 2024 (stories)</title>
-<!-- Stories com alternativas (guia: estilos/STORIES-COM-ALTERNATIVAS.md), versão genérica clara: degradê creme,
-     menta e verde-azulado do site, cartões de vidro. Área livre (sem caixa) para a enquete A/B/C/D no story 1.
+<html lang="pt-BR"><head><meta charset="utf-8"><title>A régua da TAGT — TEOT 2024 (stories, versão 2)</title>
+<!-- Stories com alternativas (guia: estilos/STORIES-COM-ALTERNATIVAS.md), refeitos em 23/11/2026 no padrão aprovado na
+     carta de domingo: cartões de cantos arredondados, Plus Jakarta e Inter, blocos organizados, e um 3º story com a
+     vitrine do site (prints reais). Temática leve: a régua milimetrada, porque a questão é sobre medir.
      Questão real: joelho-0143 (TEOT 2024), gabarito oficial A (TAGT).
-     Fontes: Campbell's Operative Orthopaedics, 15ª ed., cap. 52, p. 2195 a 2202, Tabela 52.2 e Fig. 52.6 (p. 2198). -->
+     Fontes: Campbell's Operative Orthopaedics, 15ª ed., cap. 52, p. 2195 a 2202, Tabela 52.2 e Fig. 52.6 (p. 2198).
+     Story 3: resumo campbell15-instabilidade-femoropatelar, seção "Imagem: TT-TG" (capturado em 23/11/2026 com a conta
+     de exemplo); Atlas 3D, calendário e comentário reaproveitados de posts/2026-11-22-carta-bayne-klug/img. -->
 <link rel="stylesheet" href="../../estilos/stories-com-alternativas/base.css">
 <style>
-section { color: #183330; }
-.fundo { position: absolute; inset: -60px; z-index: -2;
+section { color: #1f2a28; }
+.mesa { position: absolute; inset: -60px; z-index: -2;
   background:
-    radial-gradient(60% 30% at 90% 4%, rgba(244,207,124,.45) 0%, rgba(244,207,124,0) 70%),
-    radial-gradient(70% 40% at 0% 45%, #bfe8da 0%, rgba(191,232,218,0) 70%),
-    radial-gradient(80% 40% at 100% 80%, #3fae96 0%, rgba(63,174,150,0) 72%),
-    radial-gradient(70% 35% at 10% 100%, #1d8a7c 0%, rgba(29,138,124,0) 72%),
-    linear-gradient(180deg, #fbf7ec 0%, #e3f4ec 35%, #a7dccb 70%, #4fae98 100%); }
-.grao { position: absolute; inset: 0; z-index: -1; opacity: .05;
-  background-image: radial-gradient(#0b3b35 1px, transparent 1px); background-size: 6px 6px; }
-.topo { position: absolute; left: 64px; right: 64px; top: 228px; display: flex; align-items: center; gap: 18px; }
-.topo svg { width: 62px; height: 62px; border-radius: 15px; flex: none; box-shadow: 0 10px 22px -10px rgba(20,101,94,.6); }
-.topo .nome { font: 700 33px/1 Jakarta; color: var(--verde); }
-.topo .pil { margin-left: auto; padding: 13px 22px; border-radius: 999px; font: 700 22px/1 Jakarta; letter-spacing: 2.5px; text-transform: uppercase; color: var(--verde);
-  background: rgba(255,255,255,.65); border: 1.5px solid #fff; box-shadow: 0 10px 22px -14px rgba(20,101,94,.6); }
-.rot { font: 700 23px/1 Jakarta; letter-spacing: 3.5px; text-transform: uppercase; color: var(--verde2); }
-h1 { font: 800 66px/1.02 Jakarta; letter-spacing: -2.2px; color: var(--ardosia); }
+    radial-gradient(55% 32% at 82% 8%, rgba(244,207,124,.40) 0%, rgba(244,207,124,0) 70%),
+    radial-gradient(60% 40% at 0% 40%, #1d8a7c 0%, rgba(29,138,124,0) 72%),
+    radial-gradient(70% 40% at 100% 85%, #2b6273 0%, rgba(43,98,115,0) 70%),
+    radial-gradient(60% 35% at 10% 100%, #3fae96 0%, rgba(63,174,150,0) 72%),
+    linear-gradient(170deg, #0c302c 0%, #0f4c45 45%, #12594f 75%, #0c3530 100%); }
+.grao { position: absolute; inset: 0; z-index: -1; opacity: .06; mix-blend-mode: overlay;
+  background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 5px 5px; }
+.topo { position: absolute; left: 56px; right: 56px; top: 222px; display: flex; align-items: center; gap: 14px; color: #fff; }
+.topo svg { width: 52px; height: 52px; border-radius: 13px; }
+.topo b { font: 700 29px/1 Jakarta; }
+.topo .pil { margin-left: auto; padding: 11px 18px; border-radius: 999px; font: 800 19px/1 Jakarta; letter-spacing: 2px; text-transform: uppercase;
+  background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.3); }
+.cartao { position: absolute; left: 44px; right: 44px; border-radius: 40px; background: #fdf9ef; overflow: hidden;
+  box-shadow: 0 50px 90px -40px rgba(0,0,0,.75), 0 2px 0 #fff inset; }
+/* régua milimetrada no topo do cartão */
+.regua-topo { position: absolute; left: 0; right: 0; top: 0; height: 46px; background: #f4d98f;
+  background-image:
+    repeating-linear-gradient(90deg, rgba(74,58,18,.55) 0 2px, transparent 2px 10px),
+    repeating-linear-gradient(90deg, rgba(74,58,18,.75) 0 2px, transparent 2px 50px),
+    repeating-linear-gradient(90deg, rgba(74,58,18,.9) 0 3px, transparent 3px 100px);
+  background-size: 100% 14px, 100% 24px, 100% 34px; background-repeat: no-repeat; }
+.rot { font: 800 20px/1 Jakarta; letter-spacing: 2.5px; text-transform: uppercase; color: var(--verde2); }
+h1 { font: 800 60px/1.04 Jakarta; letter-spacing: -2px; color: #1f2a28; }
 h1 em { font-style: normal; color: var(--verde2); }
-.vidro { position: absolute; border-radius: 44px;
-  background: linear-gradient(150deg, rgba(255,255,255,.82), rgba(255,255,255,.5));
-  border: 1.5px solid #fff; backdrop-filter: blur(28px) saturate(160%);
-  box-shadow: 0 34px 70px -34px rgba(14,77,71,.55), 0 2px 0 #fff inset; }
-.placa { position: absolute; background: #0b0b0b; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(0,0,0,.6); }
-.placa img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.enun { font: 400 29px/1.4 Inter; color: #3d5552; }
-.fonte { font: 400 18px/1.3 Inter; color: #6b7d7a; }
-.alts { position: absolute; left: 48px; right: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.alt { display: flex; align-items: center; gap: 18px; height: 112px; padding: 0 22px; border-radius: 32px;
-  background: rgba(255,255,255,.88); color: #183330; font: 700 31px/1.15 Jakarta; letter-spacing: -.4px;
-  box-shadow: 0 18px 36px -22px rgba(14,77,71,.7), 0 2px 0 #fff inset; }
-.alt .l { width: 56px; height: 56px; flex: none; border-radius: 50%; display: grid; place-items: center; font: 800 26px/1 Jakarta; color: #fff; background: var(--verde); }
-.alt.certa { background: linear-gradient(160deg, #fff6dc, #fbe6b0); }
+.txt { font: 400 29px/1.45 Inter; color: #34423f; }
+.txt b { color: #1f2a28; font-weight: 700; }
+.foto { position: absolute; border-radius: 26px; overflow: hidden; background: #000; box-shadow: 0 24px 40px -22px rgba(0,0,0,.6); }
+.foto img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.tag { display: inline-block; padding: 9px 16px; border-radius: 999px; background: #1f2a28; color: #fff; font: 800 18px/1 Jakarta; letter-spacing: 2px; }
+.alts { position: absolute; left: 44px; right: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.alt { display: flex; align-items: center; gap: 16px; min-height: 96px; padding: 12px 20px; border-radius: 28px; background: #f1ebdd;
+  font: 800 30px/1.15 Jakarta; color: #1f2a28; box-shadow: 0 1px 0 rgba(255,255,255,.9) inset, 0 0 0 1.5px rgba(31,42,40,.06); }
+.alt .l { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: var(--verde); color: #fff; font: 800 25px/1 Jakarta; flex: none; }
+.alt.certa { background: linear-gradient(160deg, #fff4d4, #f8dfa0); }
 .alt.certa .l { background: linear-gradient(160deg, #f8dc92, #dcaa45); color: #4a3a12; }
-.dica .t { color: #0E2E2A; }
-.dica .s { color: #fff; }
-.cita { font: 400 30px/1.45 Source; color: #183330; }
-.cita b { font-weight: 700; color: var(--verde); }
-.passo { display: grid; grid-template-columns: 74px 1fr; gap: 14px; align-items: start; font: 400 26px/1.35 Inter; color: #2c4440; }
-.passo + .passo { margin-top: 12px; }
-.passo b.k { display: grid; place-items: center; height: 44px; border-radius: 12px; background: #e3f3ed; color: var(--verde); font: 800 21px/1 Jakarta; }
-.regua { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.regua div { border-radius: 20px; padding: 16px 18px; background: rgba(20,101,94,.08); font: 400 23px/1.3 Inter; color: #2c4440; }
-.regua b { display: block; font: 800 34px/1 Jakarta; color: var(--ardosia); margin-bottom: 6px; }
-.botao { position: absolute; display: flex; align-items: center; justify-content: center; height: 108px; border-radius: 999px;
-  font: 800 40px/1 Jakarta; color: #fff; background: linear-gradient(170deg, #1f9584, #14655E);
-  box-shadow: 0 24px 44px -22px rgba(14,77,71,.9), 0 2px 0 rgba(255,255,255,.35) inset; }
-.site { position: absolute; left: 0; right: 0; text-align: center; font: 800 34px/1 Jakarta; color: #fff; }
-.sub { position: absolute; left: 0; right: 0; text-align: center; font: 500 24px/1 Inter; color: #fff; }
+.dica .t { color: #fff; }
+.dica .s { color: rgba(255,255,255,.82); }
+.fonte { font: 400 18px/1.3 Inter; color: #7a8784; }
+.mapa { display: grid; gap: 10px; }
+.mapa div { display: grid; grid-template-columns: 120px 1fr; gap: 14px; align-items: center; font: 500 23px/1.3 Inter; color: #34423f; }
+.mapa i { font-style: normal; text-align: center; padding: 9px 0; border-radius: 14px; background: #e3f3ed; color: var(--verde); font: 800 20px/1 Jakarta; }
+.mapa b { color: #1f2a28; }
+.painel { position: absolute; border-radius: 28px; background: #f1ebdd; padding: 24px 28px; }
+/* a régua de 0 a 25 mm */
+.escala { position: relative; height: 104px; margin-top: 20px; }
+.escala .faixa { position: absolute; top: 34px; height: 30px; border-radius: 8px; }
+.escala .tick { position: absolute; top: 70px; font: 700 19px/1 Jakarta; color: #7a8784; transform: translateX(-50%); }
+.escala .marca { position: absolute; top: 6px; width: 6px; height: 64px; border-radius: 3px; background: #1f2a28; transform: translateX(-50%); }
+.escala .marca span { position: absolute; top: -2px; left: 12px; white-space: nowrap; padding: 6px 12px; border-radius: 999px; background: #1f2a28; color: #fff; font: 800 19px/1 Jakarta; }
+.escala .leg { position: absolute; top: 98px; font: 500 18px/1.2 Inter; color: #4a5653; }
+.nao { display: grid; gap: 12px; }
+.nao div { display: grid; grid-template-columns: 50px 1fr; gap: 14px; align-items: start; font: 400 23px/1.38 Inter; color: #34423f; }
+.nao i { font-style: normal; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: rgba(31,42,40,.08); color: #4a5653; font: 800 20px/1 Jakarta; }
+.nao b { color: #1f2a28; }
+
+/* Story 3: a vitrine */
+.print2 { position: absolute; border-radius: 30px; overflow: hidden; background: #fff; border: 1.5px solid rgba(255,255,255,.5); box-shadow: 0 34px 60px -30px rgba(0,0,0,.8); }
+.print2 img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.print2 span { position: absolute; left: 16px; bottom: 16px; padding: 10px 16px; border-radius: 999px; background: rgba(14,58,53,.92); color: #fff; font: 800 21px/1 Jakarta; box-shadow: 0 8px 18px -8px rgba(0,0,0,.6); }
+.iphone { position: absolute; border-radius: 52px; padding: 11px; background: linear-gradient(160deg, #2b3533, #0d1312); box-shadow: 0 50px 90px -30px rgba(0,0,0,.8), 0 0 0 2px rgba(255,255,255,.12) inset; }
+.iphone .tela { width: 100%; height: 100%; border-radius: 36px; overflow: hidden; background: #fff; }
+.iphone .tela img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.iphone .ilha { position: absolute; left: 50%; top: 12px; width: 96px; height: 28px; margin-left: -48px; border-radius: 20px; background: #0d1312; z-index: 2; }
+.selo-txt { position: absolute; padding: 10px 16px; border-radius: 999px; background: rgba(253,249,239,.95); font: 800 19px/1 Jakarta; color: #1f2a28; }
+.chip { padding: 9px 14px; border-radius: 999px; background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.28); font: 700 19px/1 Jakarta; color: #fff; }
+.botao { position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 999px;
+  font: 800 40px/1 Jakarta; color: #13302c; background: linear-gradient(170deg, #f9e2a6, #e8bf62);
+  box-shadow: 0 26px 50px -24px rgba(0,0,0,.85), 0 2px 0 rgba(255,255,255,.6) inset; }
 </style></head>
 <body>
 <svg width="0" height="0" style="position:absolute"><defs>
@@ -63,71 +89,109 @@ h1 em { font-style: normal; color: var(--verde2); }
     <g fill="#F4CF7C"><circle cx="30" cy="50" r="9"/><rect x="43" y="45" width="40" height="10" rx="5"/></g>
     <path d="M26 50.2l2.9 2.9 5.2-5.6" fill="none" stroke="#14655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
-  <symbol id="seta" viewBox="0 0 36 20"><path d="M4 4l14 12L32 4" fill="none" stroke="#0E2E2A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="seta" viewBox="0 0 36 20"><path d="M4 4l14 12L32 4" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </defs></svg>
 
-<!-- ============ STORY 1 (7h): a questão ============ -->
+<!-- ============ STORY 1 (manhã): a questão ============ -->
 <section id="s1-questao">
-  <div class="fundo"></div><div class="grao"></div>
-  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="nome">Orto Questões</span><span class="pil">TEOT 2024</span></div>
+  <div class="mesa"></div><div class="grao"></div>
+  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><b>Orto Questões</b><span class="pil">TEOT 2024</span></div>
 
-  <div class="vidro" style="left:48px; right:48px; top:318px; height:800px;">
-    <div style="position:absolute; left:46px; right:46px; top:40px;">
+  <div class="cartao" style="top:300px; height:1040px;">
+    <div class="regua-topo"></div>
+    <div style="position:absolute; left:44px; right:44px; top:80px;">
       <div class="rot">Joelho · instabilidade femoropatelar</div>
-      <h1 style="margin-top:16px; font-size:58px;">O que essa TC <em>está medindo?</em></h1>
-      <p class="enun" style="margin-top:14px;">A sobreposição de imagens de tomografia computadorizada de joelho visualizada a seguir indica a aferição</p>
+      <h1 style="margin-top:14px;">O que essa TC <em>está medindo?</em></h1>
     </div>
-    <div class="placa" style="left:190px; right:190px; top:300px; height:470px;"><img src="img/questao.png" alt=""></div>
+    <div class="foto" style="left:44px; width:470px; height:452px; top:252px;"><img src="img/questao.png" alt=""></div>
+    <div style="position:absolute; left:546px; right:44px; top:262px;">
+      <span class="tag">TEOT 2024</span>
+      <p class="txt" style="margin-top:18px; font-size:28px; line-height:1.45; color:#1f2a28;">A sobreposição de imagens de tomografia computadorizada de joelho visualizada a seguir indica a aferição</p>
+      <p class="txt" style="margin-top:18px; font-size:24px; color:#5a6965;">Repare nas <b>linhas 1 a 4</b> e no que aparece por transparência.</p>
+    </div>
+    <div class="alts" style="top:736px;">
+      <div class="alt"><span class="l">A</span>da TAGT.</div>
+      <div class="alt"><span class="l">B</span>da altura patelar.</div>
+      <div class="alt"><span class="l">C</span>da displasia troclear.</div>
+      <div class="alt" style="font-size:26px;"><span class="l">D</span>do ângulo de inclinação patelar.</div>
+    </div>
   </div>
 
-  <div class="alts" style="top:1136px;">
-    <div class="alt"><span class="l">A</span>da TAGT.</div>
-    <div class="alt"><span class="l">B</span>da altura patelar.</div>
-    <div class="alt"><span class="l">C</span>da displasia troclear.</div>
-    <div class="alt" style="font-size:27px;"><span class="l">D</span>do ângulo de inclinação patelar.</div>
-  </div>
-
-  <div class="dica" style="top:1390px;">
+  <div class="dica" style="top:1372px;">
     <div class="t">Vote na sua letra</div>
+    <div class="s">a resposta sai no próximo story</div>
     <svg viewBox="0 0 36 20"><use href="#seta"/></svg>
   </div>
 </section>
 
-<!-- ============ STORY 2 (18h30): resposta, livro e convite ============ -->
+<!-- ============ STORY 2 (13h): a resposta ============ -->
 <section id="s2-resposta">
-  <div class="fundo" style="transform:scaleX(-1);"></div><div class="grao"></div>
-  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><span class="nome">Orto Questões</span><span class="pil">Resposta</span></div>
+  <div class="mesa" style="transform:scaleX(-1);"></div><div class="grao"></div>
+  <div class="topo"><svg viewBox="0 0 100 100"><use href="#ladrilho"/></svg><b>Orto Questões</b><span class="pil">Resposta</span></div>
 
-  <div style="position:absolute; left:64px; right:64px; top:330px;">
-    <div class="rot">TEOT 2024 · gabarito</div>
-    <h1 style="margin-top:16px;">Ela mede<br>a <em>TAGT.</em></h1>
-  </div>
-  <div class="alt certa" style="position:absolute; right:64px; width:330px; top:410px;"><span class="l">A</span>da TAGT.</div>
+  <div class="cartao" style="top:300px; height:1300px;">
+    <div class="regua-topo"></div>
+    <div class="alt certa" style="position:absolute; left:44px; right:44px; top:80px; font-size:36px;"><span class="l">A</span>da TAGT: a distância TT-TG</div>
 
-  <div class="vidro" style="left:48px; right:48px; top:590px; height:640px;">
-    <div class="placa" style="left:36px; width:390px; top:36px; height:420px;"><img src="img/campbell.png" alt="" style="object-fit:cover;"></div>
-    <p class="fonte" style="position:absolute; left:36px; width:390px; top:466px;">Campbell 15ª ed., Fig. 52.6, p. 2198</p>
-    <div style="position:absolute; left:456px; right:36px; top:40px;">
-      <div class="rot">Segundo o Campbell</div>
-      <div style="margin-top:16px;">
-        <div class="passo"><b class="k">AB</b><span>linha nos <b>côndilos posteriores</b></span></div>
-        <div class="passo"><b class="k">CD</b><span>perpendicular pelo <b>fundo do sulco</b> troclear</span></div>
-        <div class="passo"><b class="k">EF</b><span>perpendicular pela <b>tuberosidade</b> da tíbia</span></div>
-        <div class="passo"><b class="k">GH</b><span>a distância entre elas, em mm, é a <b>TT-TG</b></span></div>
+    <div class="foto" style="left:44px; width:452px; height:330px; top:208px;"><img src="img/questao.png" alt=""></div>
+    <div class="foto" style="right:44px; width:452px; height:330px; top:208px;"><img src="img/campbell.png" alt="" style="object-fit:cover;"></div>
+    <p class="fonte" style="position:absolute; left:44px; top:548px;">A prova</p>
+    <p class="fonte" style="position:absolute; right:44px; top:548px;">Campbell 15ª ed., Fig. 52.6, p. 2198</p>
+
+    <div class="mapa" style="position:absolute; left:44px; right:44px; top:588px;">
+      <div><i>1 · AB</i><span>linha nos <b>côndilos femorais posteriores</b></span></div>
+      <div><i>2 · CD</i><span>perpendicular pelo <b>fundo do sulco troclear</b></span></div>
+      <div><i>3 · EF</i><span>perpendicular pela <b>tuberosidade da tíbia</b></span></div>
+      <div><i>4 · GH</i><span>a distância entre elas: <b>16 mm na prova</b></span></div>
+    </div>
+
+    <div class="painel" style="left:44px; right:44px; top:800px;">
+      <div class="rot" style="color:#8a6514;">Segundo o Campbell</div>
+      <div class="escala">
+        <div class="faixa" style="left:0; width:60%; background:#cfe9df;"></div>
+        <div class="faixa" style="left:60%; width:20%; background:#f8dfa0;"></div>
+        <div class="faixa" style="left:80%; width:20%; background:#f1b8a8;"></div>
+        <div class="tick" style="left:0%;">0</div><div class="tick" style="left:60%;">15</div><div class="tick" style="left:80%;">20</div><div class="tick" style="left:100%; transform:translateX(-100%);">25</div>
+        <div class="marca" style="left:64%;"><span>prova: 16 mm</span></div>
       </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px 22px; font:500 21px/1.3 Inter; color:#34423f;">
+        <span><b style="color:#8a6514;">15 a 20 mm</b>: alto se a tróclea for displásica</span>
+        <span><b style="color:#b0533e;">acima de 20 mm</b>: mau alinhamento</span>
+      </div>
+      <p class="fonte" style="margin-top:10px;">Campbell 15ª ed., Tabela 52.2 e p. 2199 e 2202 · milímetros</p>
     </div>
-    <p class="cita" style="position:absolute; left:36px; right:36px; top:530px; font-size:27px;">Na prova, as linhas 1, 2 e 3 fazem o papel de AB, CD e EF, e o segmento 4 marca <b>16 mm</b>.</p>
+
+    <div class="nao" style="position:absolute; left:44px; right:44px; top:1112px;">
+      <div><i>B</i><span><b>Altura patelar</b> se mede no perfil (INSALL-SALVATI, CATON-DESCHAMPS).</span></div>
+      <div><i>C</i><span><b>Displasia troclear</b>: perfil (cruzamento, bump) e ângulo do sulco.</span></div>
+      <div><i>D</i><span><b>Inclinação patelar</b> é um ângulo num corte só, não distância.</span></div>
+    </div>
+  </div>
+  <p style="position:absolute; left:0; right:0; top:1632px; text-align:center; font:600 25px/1.3 Inter; color:rgba(255,255,255,.85);">No próximo story: o que mais tem no site</p>
+</section>
+
+<!-- ============ STORY 3 (noite): a vitrine do site ============ -->
+<section id="s3-convite">
+  <div class="mesa"></div><div class="grao"></div>
+  <div style="position:absolute; left:56px; right:56px; top:228px;">
+    <p style="font:800 22px/1 Jakarta; letter-spacing:3.5px; color:#a9ecd9; text-transform:uppercase;">Para ir além da questão</p>
+    <h1 style="margin-top:14px; font-size:70px; letter-spacing:-2.4px; color:#fff;">Cada comentário é <span style="color:var(--ouro);">uma miniaula.</span></h1>
+    <p style="margin-top:12px; font:500 27px/1.4 Inter; color:rgba(255,255,255,.88);">E o resumo do capítulo mostra o que já caiu.</p>
   </div>
 
-  <div class="vidro" style="left:48px; right:48px; top:1252px; height:150px; border-radius:38px;">
-    <div class="regua" style="position:absolute; left:20px; right:20px; top:20px;">
-      <div><b>&gt; 20 mm</b>mau alinhamento (Tabela 52.2)</div>
-      <div><b>&gt; 15 mm</b>se a tróclea for displásica (p. 2202)</div>
-    </div>
+  <div class="print2" style="left:44px; right:44px; top:470px; height:560px;"><img src="img/tela-resumo-ttg.png" alt="" style="object-position:0 0;"><span style="left:auto; right:16px; top:16px; bottom:auto;">Resumo: a TT-TG</span></div>
+  <div class="iphone" style="left:44px; width:300px; height:560px; top:1056px; border-radius:46px; padding:10px;">
+    <div class="ilha"></div>
+    <div class="tela"><img src="img/tela-comentario.png" alt=""></div>
   </div>
+  <div class="selo-txt" style="left:52px; top:1630px; font-size:17px;">O comentário de verdade</div>
 
-  <div class="botao" style="left:150px; right:150px; top:1440px;">Treine grátis</div>
-  <div class="site" style="top:1574px;">ortoquestoes.com.br</div>
-  <div class="sub" style="top:1622px;">o comentário inteiro está lá · o caminho está no perfil</div>
+  <div class="print2" style="left:368px; right:44px; top:1056px; height:268px;"><img src="img/tela-atlas-pc.png" alt=""><span>Atlas 3D</span></div>
+  <div class="print2" style="left:368px; right:44px; top:1344px; height:272px;"><img src="img/tela-calendario.png" alt="" style="object-position:0 0;"><span style="left:auto; right:16px;">Cronograma até a prova</span></div>
+
+  <div style="position:absolute; left:368px; right:44px; top:1636px; display:flex; flex-wrap:wrap; gap:8px;"><span class="chip">Caderno de erros</span><span class="chip">Flashcards</span><span class="chip">Simulados</span></div>
+
+  <div class="botao" style="left:56px; right:56px; top:1700px; height:90px; font-size:38px;">Comece a treinar grátis</div>
+  <p style="position:absolute; left:0; right:0; top:1800px; text-align:center; font:500 20px/1.3 Inter; color:rgba(255,255,255,.8);">Até 20 questões comentadas por dia · ortoquestoes.com.br · Telas ilustrativas</p>
 </section>
 </body></html>
