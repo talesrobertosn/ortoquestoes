@@ -378,7 +378,7 @@ Para a amputação perto da **porção distal da falange proximal**, a resposta 
 
 A zetaplastia transpõe dois retalhos triangulares e, com isso, **alonga a distância entre os ápices à custa de estreitar a distância entre as pontas** (p. 1689). Aplicada na comissura, o membro central do Z fica sobre a crista da comissura, que está contraída; depois da transposição, a crista ganha comprimento na direção em que a comissura precisa abrir.
 
-O ganho teórico depende do ângulo. Com os membros a **60 graus**, que é o ângulo padrão, o membro central alonga cerca de **75%**; com 45 graus, cerca de 50%; com 30 graus, cerca de 25% (Green, cap. 44, p. 1542). Ângulos maiores dão mais ganho, mas os retalhos ficam difíceis de transpor e a tensão lateral aumenta; 60 graus é o equilíbrio.
+O ganho teórico depende do ângulo. Com os membros a **60 graus**, que é o ângulo padrão, o membro central alonga em teoria cerca de **75%** (Green, cap. 44, p. 1542); ângulos menores alongam menos, e o erro mais comum, avisa o Green, é cortar a 45 graus achando que são 60, por isso ele recomenda medir com transferidor. Ângulos maiores dão mais ganho, mas os retalhos ficam difíceis de transpor e a tensão lateral aumenta; 60 graus é o equilíbrio.
 
 O Green lista **quatro pré-requisitos** para a zetaplastia funcionar na comissura (p. 1689):
 
@@ -402,7 +402,7 @@ Uma variante que as bancas também citam é a plastia que combina duas zetaplast
 !questoes relacionadas=mao-0799
 conceito: A zetaplastia alonga o membro central à custa de estreitar a largura; com 60 graus o ganho teórico é de cerca de 75%; na comissura do polegar, a de quatro retalhos (membros a 90 a 120 graus, bissetados) aprofunda 1,5 a 2 cm e exige metade da falange proximal, pele boa, metacarpal móvel e pouca contratura muscular.
 como: O INTO 2023 perguntou o ganho de comprimento numa zetaplastia de 60 graus.
-armadilha: Marcar 50% (é o de 45 graus) ou 100%; e indicar zetaplastia numa comissura cicatrizada ou com adutor contraído, quando o caminho é o retalho dorsal rotacional.
+armadilha: Marcar um ganho diferente de cerca de 75% para a zetaplastia de 60 graus; e indicar zetaplastia numa comissura cicatrizada ou com adutor contraído, quando o caminho é o retalho dorsal rotacional.
 !fim
 
 # Retalho dorsal rotacional de BROWN e pele de fora {radar=clinico}
