@@ -72,7 +72,7 @@ alerta: A altura da cabeça acima do tubérculo maior (8 a 10 mm, `ombro-cotovel
 
 O **intervalo rotador** é o triângulo entre a borda anterior do supraespinal e a borda superior do subescapular, com o glenoumeral superior, o coracoumeral, o bíceps e a cápsula anterossuperior; fechá-lo diminui o sinal do sulco. A **polia do bíceps** é formada pelo glenoumeral superior, pelo coracoumeral e pelo subescapular. A **esternoclavicular** é a única articulação verdadeira entre o membro superior e o esqueleto axial.
 
-!questoes central=ombro-cotovelo-0044 treino=ombro-cotovelo-0699,ombro-cotovelo-0702
+!questoes central=ombro-cotovelo-0044 treino=ombro-cotovelo-0699,ombro-cotovelo-0702,ombro-cotovelo-0761
 conceito: O glenoumeral inferior é a rede principal: a banda anterior segura a translação anterior em abdução e rotação externa, a posterior segura a posterior em rotação interna; não há ligamentos posteriores ou superiores verdadeiros.
 como: O TARO 2015 perguntou o estabilizador primário da translação anteroposterior.
 armadilha: Escolher a cápsula ou o lábio, que ajudam, mas não são o estabilizador ligamentar primário.
@@ -116,7 +116,7 @@ Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 33, Fig. 
 
 **Mais detalhes da glenoumeral.** O **glenoumeral médio** resiste à translação anteroposterior em 45 graus de abdução. O **complexo de BUFORD** é um glenoumeral médio em cordão com ausência do lábio anterossuperior, uma variação que não se deve reinserir como se fosse lesão. A banda anterior do glenoumeral inferior nasce na glenoide às **3 horas**; a posterior, às **9 horas**.
 
-!questoes central=ombro-cotovelo-0262 relacionadas=ombro-cotovelo-0135,ombro-cotovelo-0255,ombro-cotovelo-0250,ombro-cotovelo-0537,ombro-cotovelo-0401
+!questoes central=ombro-cotovelo-0262 relacionadas=ombro-cotovelo-0135,ombro-cotovelo-0255,ombro-cotovelo-0250,ombro-cotovelo-0537,ombro-cotovelo-0401 treino=ombro-cotovelo-0762,ombro-cotovelo-0767
 conceito: Conoide é posteromedial (tubérculo conoide) e resiste à carga vertical; trapezoide é anterolateral (linha trapezoidea) e resiste à carga axial; costoclavicular é o mais forte da esternoclavicular no Netter (capsular no Rockwood e no HEBERT), e o posterior é mais forte que o anterior; supraescapular passa sob o ligamento transverso e a artéria por cima; NEER IIa é medial ao conoide; o complexo suspensório superior de GOSS é o anel de glenoide, coracoide, coracoclaviculares, clavícula lateral, acromioclavicular e acrômio.
 como: A Ortopedia e o TEOT 2024 pediram em imagens o conoide, o trapezoide, o interclavicular e a inserção do conoide na clavícula; o ENARE R4 2025, a localização da fratura do tipo IIa; o TECOC, o complexo suspensor superior do ombro.
 armadilha: Trocar o conoide (medial, posterior) pelo trapezoide (lateral, anterior), ou pôr o nervo supraescapular acima do ligamento transverso.
@@ -176,7 +176,7 @@ armadilha: Trocar o redondo maior pelo grande dorsal nas imagens, ou pôr a cabe
 
 **O plexo, em números** (Netter). Cinco raízes (C5 a T1), três troncos, seis divisões e três fascículos. As raízes saem entre os escalenos anterior e médio; raízes e troncos são **supraclaviculares**; as divisões ficam atrás da clavícula (as anteriores para os flexores, as posteriores para os extensores); fascículos e ramos são **infraclaviculares** e levam o nome da posição em relação à artéria axilar. No plexo **pré-fixado** há grande contribuição de C4 e nenhuma de T1; no **pós-fixado**, nenhuma de C5 e contribuição de T2. A paralisia de ERB é C5 e C6. O exame das raízes no ombro: supraclavicular C4, axilar C5, axila T2.
 
-!questoes relacionadas=ombro-cotovelo-0315
+!questoes relacionadas=ombro-cotovelo-0315 treino=ombro-cotovelo-0748,ombro-cotovelo-0751,ombro-cotovelo-0752,ombro-cotovelo-0753,ombro-cotovelo-0756,ombro-cotovelo-0765
 conceito: Trapézio (acessório) dá escápula alada lateral e serrátil (torácico longo) a medial; peitoral maior tem parte clavicular do peitoral lateral e esternal do medial; de lateral para medial no sulco: peitoral maior, grande dorsal e redondo maior; cabeça longa do bíceps no tubérculo supraglenoidal.
 como: O TARO 2025 perguntou onde o peitoral maior costuma romper.
 armadilha: Achar que o peitoral lateral fica lateral ao medial, ou trocar as escápulas aladas.
@@ -202,7 +202,7 @@ armadilha: Achar que o peitoral lateral fica lateral ao medial, ou trocar as esc
 Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.109, p. 99. Face posterior do ombro: o nervo supraescapular cruza a incisura no alto da escápula para o supraespinal e o infraespinal; o nervo axilar sai abaixo do redondo menor, dá o ramo do redondo menor e entra no deltoide; o radial desce mais abaixo, ao longo do tríceps.
 !fim
 
-!questoes central=ombro-cotovelo-0462 relacionadas=ombro-cotovelo-0429,ombro-cotovelo-0485,ombro-cotovelo-0113,ombro-cotovelo-0061 treino=ombro-cotovelo-0696
+!questoes central=ombro-cotovelo-0462 relacionadas=ombro-cotovelo-0429,ombro-cotovelo-0485,ombro-cotovelo-0113,ombro-cotovelo-0061 treino=ombro-cotovelo-0696,ombro-cotovelo-0749,ombro-cotovelo-0759
 conceito: Quatro lados (o úmero é o quarto) = quadrangular, com o axilar e a circunflexa posterior; o triangular leva a circunflexa da escápula, e o intervalo triangular, o radial com a profunda do braço.
 como: O TARO 2013 e o TARO 2008 perguntaram o que passa pelo espaço quadrangular; o TECOC, as estruturas da síndrome do espaço quadrangular; as provas mostram os espaços em imagens.
 armadilha: Pôr o radial ou a artéria profunda do braço no espaço quadrangular.
@@ -234,7 +234,7 @@ Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 36, Fig. 
 
 **A veia cefálica** corre no **sulco deltopeitoral**, com os ramos deltóideos da toracoacromial; na via deltopeitoral, é afastada medialmente ou ligada.
 
-!questoes central=ombro-cotovelo-0128 treino=ombro-cotovelo-0636,ombro-cotovelo-0640
+!questoes central=ombro-cotovelo-0128 treino=ombro-cotovelo-0636,ombro-cotovelo-0640,ombro-cotovelo-0754
 conceito: Peitoral menor divide a axilar em três partes com 1, 2 e 3 ramos; a terceira dá a subescapular e as duas circunflexas; a circunflexa posterior passa com o axilar pelo espaço quadrangular; a anterior, pela arqueada, é o suprimento principal da cabeça pelo Netter.
 como: O TEOT 2023 apontou numa imagem a circunflexa posterior; a Ortopedia, as estruturas do espaço quadrangular.
 armadilha: Pôr a circunflexa da escápula no espaço quadrangular, ou a cefálica no sulco bicipital.
@@ -255,7 +255,7 @@ armadilha: Pôr a circunflexa da escápula no espaço quadrangular, ou a cefáli
 Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 34, Fig. 34.1, p. 1147. Plexo braquial de C5 a T1, de raízes a ramos: o dorsal da escápula sai de C5 e o torácico longo das raízes C5 a C7, atrás do plexo; o supraescapular e o nervo do subclávio saem do tronco superior; USS, TD e LSS (subescapular superior, toracodorsal e subescapular inferior) saem do fascículo posterior antes do axilar e do radial.
 !fim
 
-!questoes central=ombro-cotovelo-0085 relacionadas=ombro-cotovelo-0002,ombro-cotovelo-0068,ombro-cotovelo-0263,ombro-cotovelo-0254,ombro-cotovelo-0362,ombro-cotovelo-0564,ombro-cotovelo-0437,ombro-cotovelo-0359,ombro-cotovelo-0388,mao-0879,mao-0922,mao-0983,mao-1007,mao-1018 treino=ombro-cotovelo-0697,ombro-cotovelo-0700,ombro-cotovelo-0701,ombro-cotovelo-0641
+!questoes central=ombro-cotovelo-0085 relacionadas=ombro-cotovelo-0002,ombro-cotovelo-0068,ombro-cotovelo-0263,ombro-cotovelo-0254,ombro-cotovelo-0362,ombro-cotovelo-0564,ombro-cotovelo-0437,ombro-cotovelo-0359,ombro-cotovelo-0388,mao-0879,mao-0922,mao-0983,mao-1007,mao-1018 treino=ombro-cotovelo-0697,ombro-cotovelo-0700,ombro-cotovelo-0701,ombro-cotovelo-0641,ombro-cotovelo-0750,ombro-cotovelo-0755,ombro-cotovelo-0757,ombro-cotovelo-0758
 conceito: Do fascículo posterior saem o axilar, o radial, o toracodorsal e os subescapulares; do medial, o ulnar; o torácico longo e o dorsal da escápula saem das raízes; o axilar se lesa na luxação.
 como: Uma prova de Ortopedia pediu os fascículos do axilar e do ulnar; o TARO 2020, a lesão nervosa da luxação anterior; as imagens do TEOT, do TARO e do TECOC pedem o grande dorsal com o toracodorsal, o nervo do serrátil, o axilar, o musculocutâneo e os nervos do plexo; o TARO 2007, o músculo poupado na compressão do radial na bifurcação.
 armadilha: Pôr o redondo maior no toracodorsal ou no axilar, ou o serrátil no dorsal da escápula.
@@ -295,7 +295,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.113, p
 | supraclaviculares | ramo medial a 2,7 cm da esternoclavicular; lateral a 1,9 cm da acromioclavicular |
 !fim
 
-!questoes central=ombro-cotovelo-0542 relacionadas=ombro-cotovelo-0072,ombro-cotovelo-0456,ombro-cotovelo-0323,mao-0574,mao-1042 treino=ombro-cotovelo-0632,ombro-cotovelo-0637,ombro-cotovelo-0638,ombro-cotovelo-0642
+!questoes central=ombro-cotovelo-0542 relacionadas=ombro-cotovelo-0072,ombro-cotovelo-0456,ombro-cotovelo-0323,mao-0574,mao-1042 treino=ombro-cotovelo-0632,ombro-cotovelo-0637,ombro-cotovelo-0638,ombro-cotovelo-0642,ombro-cotovelo-0764
 conceito: O axilar cruza o deltoide cerca de 5 cm abaixo do acrômio e 3,5 cm abaixo do tubérculo maior; o musculocutâneo perfura o coracobraquial e termina como cutâneo lateral do antebraço; o radial perfura o septo lateral na junção do terço médio com o distal, é lesado em 12% das fraturas da diáfise e se recupera sozinho em 91%.
 como: O ENARE R4 2025 perguntou o trajeto do axilar nas vias do úmero proximal; o TARO 2022, o dermátomo do ramo sensitivo do musculocutâneo; o TARO 2024, o mediano numa imagem; o TARO 2025, o lacertus fibrosus.
 armadilha: Dividir o deltoide além de 5 cm, ou achar que o musculocutâneo dá sensibilidade ao braço.
@@ -328,7 +328,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.100, p
 | NEVIASER | posterior à acromioclavicular, no sulco supraespinal | manguito; vê a glenoide anterior |
 !fim
 
-!questoes central=ombro-cotovelo-0131 relacionadas=ombro-cotovelo-0133,ombro-cotovelo-0554
+!questoes central=ombro-cotovelo-0131 relacionadas=ombro-cotovelo-0133,ombro-cotovelo-0554 treino=ombro-cotovelo-0760,ombro-cotovelo-0763,ombro-cotovelo-0766
 conceito: Deltopeitoral entre deltoide e peitoral maior, com a cefálica e o musculocutâneo em risco; divisão do deltoide até 3,8 a 5 cm; JUDET entre infraespinal e redondo menor; no úmero, dividir o braquial protege o radial pela metade lateral, e as vias posteriores giram em torno das cabeças do tríceps e do radial.
 como: A Ortopedia mostrou a via posterior do braço e o peitoral maior numa imagem; o CET-PR perguntou para que foi descrito o portal de NEVIASER.
 armadilha: Afastar o deltoide abaixo do redondo menor no JUDET, ou retrair com força o tendão conjunto.

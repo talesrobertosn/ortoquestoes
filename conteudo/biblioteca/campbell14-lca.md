@@ -45,7 +45,7 @@ Pense no LCA como duas cordas presas em pontos diferentes do fêmur. Quando o jo
 
 **O LCA e a rotação.** Os cruzados funcionam como eixos em torno dos quais ocorre a rotação. A rotação externa da tíbia desenrola os cruzados, e a rotação interna os enrola um em volta do outro, sob forte tensão; nos colaterais acontece o oposto (p. 2209 e 2210). É por isso que a rotação interna da tíbia tensiona o LCA, e que o mecanismo clássico de lesão envolve a tíbia rodando em relação ao fêmur.
 
-!questoes central=joelho-0209 relacionadas=joelho-0253,joelho-0298,mao-1258 treino=joelho-0383
+!questoes central=joelho-0209 relacionadas=joelho-0253,joelho-0298,mao-1258 treino=joelho-0383,joelho-0394,joelho-0395
 conceito: A banda anteromedial fica tensa em flexão e a posterolateral em extensão (freia a hiperextensão); o LCA dá 85% da resistência à gaveta a 90 graus, tem tensão mínima entre 30 e 40 graus e é irrigado sobretudo pela genicular média.
 como: O TARO 2012 perguntou a artéria; outra banca e o TARO 2006 perguntaram qual banda fica tensa em flexão e qual em extensão.
 armadilha: Inverter as bandas, dizendo que a anteromedial fica tensa em extensão.
@@ -81,7 +81,7 @@ alerta: A `joelho-0298` está sem gabarito oficial; a resposta provável segue o
 | Dial test | rotação externa a 30 e 90 graus | canto posterolateral, não LCA |
 !fim
 
-!questoes central=joelho-0249 relacionadas=joelho-0193,joelho-0250 treino=joelho-0384,joelho-0317
+!questoes central=joelho-0249 relacionadas=joelho-0193,joelho-0250 treino=joelho-0384,joelho-0317,joelho-0396,joelho-0397
 conceito: A lesão do LCA vem de desaceleração, salto ou mudança de direção sem contato, com estalo e hemartrose em poucas horas (mais de 70% de chance); LACHMAN, gaveta anterior e pivot shift são os testes do LCA; o pivot exige paciente relaxado e LCM íntegro.
 como: O SBOT-SP pediu as três manobras do LCA; a TEPOP 2024 perguntou a lesão combinada mais comum no jovem; o SBOT-SP perguntou a tríade de O'DONOGHUE.
 armadilha: Incluir o dial test (canto posterolateral) ou o McMURRAY (menisco) entre as manobras do LCA.
@@ -327,7 +327,7 @@ armadilha: Responder semimembranáceo: ele não faz parte da pata de ganso; inse
 | Armazenamento | fresco: até 24 dias; congelado: 3 a 5 anos; criopreservado: até 10 anos; liofilizado: 3 a 5 anos em temperatura ambiente |
 !fim
 
-!questoes central=joelho-0130
+!questoes central=joelho-0130 treino=joelho-0398
 conceito: O aloenxerto tem melhor efeito cosmético, cirurgia mais curta, menos morbidade e preserva o mecanismo extensor, mas falha de 2 a 5 vezes mais que o autoenxerto em atletas e jovens (55% abaixo de 25 anos numa série); fica de preferência para o paciente mais velho, de menor demanda, ou para a revisão.
 como: O SBOT-SP pediu a afirmação falsa sobre o aloenxerto, misturando as três vantagens clássicas com "maior sucesso em atletas".
 armadilha: Marcar "preserva o mecanismo extensor" como falsa: é vantagem real, porque nada é tirado do tendão patelar do paciente.
@@ -454,7 +454,7 @@ As falhas vão de **10% a 25%**, conforme a definição; a instabilidade recorre
 
 **Revisão.** Antes de revisar, descobre-se a causa; a TC ou, de preferência, a ressonância mostra a posição e o **alargamento dos túneis**. Reaproveitar o patelar do mesmo joelho não é recomendado; a equipe do Campbell usa o patelar contralateral ou o quadricipital com bloco; os isquiotibiais, mais finos, podem não encher o túnel antigo e oscilar como um **limpador de para-brisa**; os aloenxertos mais usados são o patelar e o tendão do calcâneo com osso. Faz-se em **dois tempos** quando falta movimento (5 graus de extensão ou 20 de flexão) sem instabilidade, ou quando há defeito ósseo grande: HARNER enxerta antes o túnel **maior que 15 mm** (p. 2092 e 2093). Primárias têm 90% a 95% de sucesso; revisões, **65% a 75%** (p. 2094).
 
-!questoes central=joelho-0276 relacionadas=joelho-0171
+!questoes central=joelho-0276 relacionadas=joelho-0171 treino=joelho-0399
 conceito: As complicações pós-operatórias mais comuns são o déficit de extensão e a dor anterior persistente; a dor patelofemoral se relaciona à contratura em flexão persistente ou à fraqueza do quadríceps.
 como: O TARO 2013 pediu a relação de causa e efeito no pós-operatório; o CET-PR perguntou, além da perda de movimento, a complicação mais comum com o enxerto patelar.
 armadilha: Escolher a instabilidade residual ou a infecção: são bem menos frequentes que a dor anterior.
