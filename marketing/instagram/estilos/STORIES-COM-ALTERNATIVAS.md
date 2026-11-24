@@ -118,11 +118,12 @@ enquete, resposta com o livro e um **story extra de propaganda com prints reais 
 - Sem emoji, sem IA, sem número total de questões, sem figurinha de link, sem desenho de anatomia.
 - O que importa entre 250 e 1580 px de altura (o topo e a barra de resposta do Instagram cobrem as pontas).
 
-## Black Friday 2026 (Tales, 24/11/2026)
+## Dia 27/11/2026 (Tales, 24/11/2026, versão final)
 
-Não há promoção de Black Friday (o Tales desistiu da oferta de R$ 19,90 em 24/11). Nenhum post com cara de Black
-Friday. Quando o assunto vier, a frase é: "não temos preço de Black Friday, mas temos o preço mais baixo do mercado",
-com os preços do site (`src/dados/planos.ts`) e sem citar nome nem preço de outros cursos.
+No dia 27 só propaganda, sem questão: plano anual por **R$ 239 no ano**, só nesse dia (o Tales configura o preço no
+site). Mensagem: o preço mais baixo do mercado, sem citar nome nem preço de outros cursos. Peças em
+`posts/2026-11-27-propaganda-anual/`. Fora desse dia, a frase segura é "não temos promoção no momento, mas garanto o
+preço mais baixo do mercado".
 
 ## Conferência antes de entregar
 
