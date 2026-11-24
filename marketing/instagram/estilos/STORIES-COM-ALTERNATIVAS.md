@@ -118,12 +118,12 @@ enquete, resposta com o livro e um **story extra de propaganda com prints reais 
 - Sem emoji, sem IA, sem número total de questões, sem figurinha de link, sem desenho de anatomia.
 - O que importa entre 250 e 1580 px de altura (o topo e a barra de resposta do Instagram cobrem as pontas).
 
-## Dia 27/11/2026 (Tales, 24/11/2026, versão final)
+## Preço e propaganda (Tales, 24/11/2026, versão final)
 
-No dia 27 só propaganda, sem questão: plano anual por **R$ 239 no ano**, só nesse dia (o Tales configura o preço no
-site). Mensagem: o preço mais baixo do mercado, sem citar nome nem preço de outros cursos. Peças em
-`posts/2026-11-27-propaganda-anual/`. Fora desse dia, a frase segura é "não temos promoção no momento, mas garanto o
-preço mais baixo do mercado".
+Não há promoção de Black Friday. No dia 27/11/2026 só propaganda com o preço normal (anual R$ 29,90 por mês, R$ 358,80
+no ano), em tom apelativo e dentro da lei: nunca chamar de promoção ou desconto o preço de sempre; comparação genérica e
+comprovável, sem nome ("cursos preparatórios para a prova de título passam de R$ 6 mil"); total junto da parcela; nunca
+preço por dia. Peças em `posts/2026-11-27-propaganda-preco/`.
 
 ## Conferência antes de entregar
 
