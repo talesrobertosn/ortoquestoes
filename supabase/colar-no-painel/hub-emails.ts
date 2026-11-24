@@ -1780,7 +1780,13 @@ function campanhaDados(t, d) {
 }
 async function preparar(variar, incluirCartao = false) {
   const hoje = /* @__PURE__ */ new Date(), dia = diaSP(hoje), avisos = [];
-  const pessoas = await rpc("hub_pessoas");
+  const [pessoas, catalogo] = await Promise.all([
+    rpc("hub_pessoas"),
+    fetch(`${site()}biblioteca/indice.json`).then(async (resposta) => {
+      if (!resposta.ok) return null;
+      return await resposta.json();
+    }).catch(() => null)
+  ]);
   if (pessoas.length > 2e3)
     throw new Error(
       "Mais de 2.000 pessoas: ampliar a pagina\xE7\xE3o antes de preparar a rodada; nenhuma sele\xE7\xE3o parcial ser\xE1 enviada."
@@ -1796,12 +1802,10 @@ async function preparar(variar, incluirCartao = false) {
     }
   }
   try {
-    const r = await fetch(`${site()}biblioteca/indice.json`);
-    if (!r.ok) throw new Error("catalogo_indisponivel");
-    const indice = await r.json();
-    if (indice.capitulos?.length)
+    if (!catalogo) throw new Error("catalogo_indisponivel");
+    if (catalogo.capitulos?.length)
       await rpc("registrar_catalogo_biblioteca", {
-        p_capitulos: indice.capitulos.map(({ id, titulo, especialidade }) => ({ id, titulo, especialidade }))
+        p_capitulos: catalogo.capitulos.map(({ id, titulo, especialidade }) => ({ id, titulo, especialidade }))
       });
   } catch {
     avisos.push("N\xE3o foi poss\xEDvel atualizar as novidades da Biblioteca. Confira esse grupo antes de enviar.");
@@ -1993,19 +1997,27 @@ async function preparar(variar, incluirCartao = false) {
   if (enfileiradas.length > 2e3) throw new Error("Fila di\xE1ria excedeu o limite de consulta");
   const incluidos = new Set(enfileiradas.map((x) => x.id_usuario));
   for (const m of candidatas) if (incluidos.has(m.id_usuario)) m.bloqueio = "J\xE1 inclu\xEDdo nos envios de hoje";
-  return { dia, opcoes: candidatas, ...selecionarHub(candidatas), avisos: [...new Set(avisos)], consultadas: perfis.size };
+  return { dia, opcoes: candidatas, avisos: [...new Set(avisos)], consultadas: perfis.size };
 }
-async function estado(rodadaId) {
-  const dia = diaSP(), rodadas = await ler(
-    "email_rodadas?order=dia.desc&limit=14"
-  );
-  const rodada = rodadaId ? rodadas.find((r) => r.id === rodadaId) ?? null : rodadas.find((r) => r.dia === dia) ?? null;
-  const fila = rodada ? await ler(`email_fila?rodada=eq.${rodada.id}&order=atualizado_em.asc&limit=2000`) : [];
+async function estado(rodadaId, compacto = false) {
+  const dia = diaSP();
+  const obterRodadas = async () => {
+    const rodadas2 = await ler(
+      compacto ? `email_rodadas?dia=eq.${dia}&select=id,dia,status,criado_em` : "email_rodadas?order=dia.desc&limit=14"
+    );
+    const rodada = rodadas2.find((r) => rodadaId ? r.id === rodadaId : r.dia === dia) ?? null;
+    const fila = rodada ? await ler(`email_fila?rodada=eq.${rodada.id}&order=atualizado_em.asc&limit=2000`) : [];
+    return { rodadas: rodadas2, rodada, fila };
+  };
   const inicio = (/* @__PURE__ */ new Date(`${dia}T00:00:00-03:00`)).toISOString();
-  const automaticos = await ler(
-    `emails_enviados?origem=eq.automatico&enviado_em=gte.${inicio}&select=id,assunto,status,enviado_em,modelo&order=enviado_em.desc&limit=100`
-  );
-  return { dia, rodada, fila, rodadas, automaticos, worker_ativo: await rpc("hub_worker_ativo") };
+  const [rodadas, automaticos, worker_ativo] = await Promise.all([
+    obterRodadas(),
+    ler(
+      `emails_enviados?origem=eq.automatico&enviado_em=gte.${inicio}&select=id,assunto,status,enviado_em,modelo&order=enviado_em.desc&limit=${compacto ? 3 : 100}`
+    ),
+    rpc("hub_worker_ativo")
+  ]);
+  return { dia, ...rodadas, automaticos, worker_ativo };
 }
 async function aindaPertinente(m) {
   if (TIPOS_APOSENTADOS.includes(m.tipo)) return false;
@@ -2115,16 +2127,14 @@ Deno.serve(async (req) => {
     const adm = await ler(`administradores?id_usuario=eq.${u.id}&select=id_usuario`);
     if (!adm.length) return json({ erro: "acesso_negado" }, 403, req);
     if (p.acao === "estado") {
-      const atual = await estado(p.rodada);
+      const atual = await estado(p.rodada, p.compacto === true && !p.rodada);
       if (p.versao !== 2 && atual.fila.some((x) => x.mensagem.tipo === "cartao_recusado")) return json({ erro: "Atualize a p\xE1gina para ver os novos cen\xE1rios de e-mail." }, 409, req);
       return json(atual, 200, req);
     }
-    if (p.acao === "preparar")
-      return json(
-        await preparar(p.chave ? { chave: p.chave, semente: Number(p.semente) || Date.now() } : void 0, p.versao === 2),
-        200,
-        req
-      );
+    if (p.acao === "preparar") {
+      const previa = await preparar(p.chave ? { chave: p.chave, semente: Number(p.semente) || Date.now() } : void 0, p.versao === 2);
+      return json(p.compacto === true ? previa : { ...previa, ...selecionarHub(previa.opcoes) }, 200, req);
+    }
     if (p.acao === "iniciar") {
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
       if (!await rpc("hub_worker_ativo"))
