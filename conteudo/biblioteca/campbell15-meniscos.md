@@ -113,7 +113,7 @@ Note o cruzamento que as bancas exploram: **o lateral perde menos área e ganha 
 
 **Estabilidade** (p. 1997). Com ligamentos íntegros, retirar o menisco aumenta pouco a frouxidão; com insuficiência ligamentar, o aumento é muito exagerado. No joelho **sem LCA**, a **meniscectomia medial aumenta a translação tibial em 58% a 90 graus**, enquanto a lateral não altera a translação anteroposterior primária; o efeito cresce com o **slope tibial**.
 
-!questoes central=joelho-0012 relacionadas=joelho-0258,joelho-0070
+!questoes central=joelho-0012 relacionadas=joelho-0258,joelho-0070 treino=joelho-0441
 conceito: Meniscectomia medial reduz a área de contato em 50 a 70% e aumenta o estresse em 100%; a lateral reduz a área em 40 a 50% e aumenta o estresse em 200 a 300%, porque o platô lateral é convexo.
 como: O TARO 2018 pediu o aumento da força de contato após meniscectomia total medial e lateral; uma prova de Ortopedia, o aumento do estresse femorotibial; outra prova de Ortopedia comparou área e estresse entre meniscectomia lateral e medial.
 armadilha: Inverter os lados, ou achar que o lateral, por ganhar mais estresse, também perde mais área.
@@ -140,7 +140,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1998), resume o mecan
 
 **Fatores predisponentes** (p. 1998): menisco com **formação cística periférica** ou já menos móvel por lesão ou doença; **discoide lateral**; degeneração com a idade; eixos mecânicos anormais e rupturas ligamentares; **frouxidão congênita** e musculatura deficiente, sobretudo do **quadríceps**.
 
-!questoes central=joelho-0079 relacionadas=joelho-0311
+!questoes central=joelho-0079 relacionadas=joelho-0311 treino=joelho-0445
 conceito: Rotação interna do fêmur sobre a tíbia em flexão empurra o corno posterior do medial para o centro, e a extensão súbita o rasga longitudinalmente; no LCA agudo, porém, o lateral é o mais lesado, e o medial predomina nas lesões tardias.
 como: Uma prova de Ortopedia perguntou o menisco e o tipo de lesão produzidos pela rotação interna do fêmur em flexão; o TARO 2006 pôs em certo ou errado que o LCA agudo se associa mais à lesão periférica longitudinal do medial.
 armadilha: Responder radial (que é do lateral e da junção dos terços anterior e médio) ou achar que o medial predomina também no LCA agudo.
@@ -223,7 +223,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2000.e1), trata essas
 
 A RM detecta raiz e rampa, mas com **sensibilidade menor** que para as demais lesões (cap. 50, p. 2003); o capítulo 56 (p. 2352) diz que **rips e rampas escapam à RM em até 50%** e **raízes em 70%**. Daí a regra: procurá-las na artroscopia mesmo com RM negativa, e muitos defendem o **portal posteromedial** de rotina na artroscopia do LCA para não perder a rampa.
 
-!questoes central=trauma-1032 relacionadas=joelho-0170,joelho-0180,trauma-1068
+!questoes central=trauma-1032 relacionadas=joelho-0170,joelho-0180,trauma-1068 treino=joelho-0442
 conceito: Rampa é a separação longitudinal da junção meniscocapsular do corno posterior do medial, quase sempre com LCA, pouco vista na RM; o edema ósseo posteromedial da tíbia é seu sinal secundário (72%).
 como: O TARO 2025 pediu a definição de lesão em rampa; o CET-PR, o nome da lesão meniscocapsular do corno posterior medial que envolve o meniscotibial; o TEOT 2025, o significado do edema ósseo posteromedial da tíbia na RM de um LCA.
 armadilha: Confundir com a raiz (radial junto à inserção) ou com a LMORT (lateral); atribuir o edema posteromedial à própria lesão do LCA, quando o livro o descreve como sinal secundário de rampa.
@@ -278,7 +278,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2016), explica: na **
 
 Por isso, no joelho agudo, o **LACHMAN** (15 a 20 graus) é o teste preferido: grau 1 com **1 a 5 mm**, grau 2 com **6 a 10 mm**, grau 3 com **mais de 10 mm** (p. 2016). Na gaveta (p. 2014), a **rotação interna de 30 graus** pode tensionar o LCP e **apagar** uma gaveta positiva.
 
-!questoes central=trauma-1070 relacionadas=joelho-0297
+!questoes central=trauma-1070 relacionadas=joelho-0297 treino=joelho-0440
 conceito: A 90 graus o corno posterior do menisco medial, preso à tíbia, bate no côndilo convexo e trava a gaveta (efeito trava de porta); estender o joelho, como no LACHMAN, anula esse efeito.
 como: O TEOT 2023 perguntou como diminuir a ação do menisco medial como restritor na gaveta anterior; o TARO 2009, que estrutura causa o efeito trava de porta na flexão do joelho agudo.
 armadilha: Fletir mais o joelho ou rodar a tíbia medialmente (o que aperta o LCP e também apaga a gaveta); atribuir o efeito ao coto do LCA ou ao poplíteo.
@@ -365,7 +365,7 @@ O capítulo 56 (p. 2345 e 2346) acrescenta: cicatrizam melhor a borda **menor qu
 
 **Raiz** (cap. 50, p. 2006; cap. 56, p. 2352 e 2353). O reparo **transósseo** normaliza estabilidade e pressão de contato; indica-se no paciente **ativo, sem artrose significativa (OUTERBRIDGE 3 ou 4)**, sem estreitamento nem desalinhamento, em geral **abaixo de 50 anos**; **transtibial e âncora são equivalentes**. A **meniscectomia parcial não interrompe a artrose** na raiz posterior degenerativa; obesidade, tabagismo e **extrusão de 3 mm ou mais** pioram o resultado.
 
-!questoes central=joelho-0071
+!questoes central=joelho-0071 treino=joelho-0444
 conceito: Cicatrizam melhor as lesões agudas, periféricas (zona vascular), longitudinais e reparadas junto com a reconstrução do LCA (90%); radiais, horizontais e complexas entram na zona avascular e cicatrizam menos.
 como: Uma prova de Ortopedia perguntou o trio de situações ideais para a cicatrização do reparo meniscal.
 armadilha: Incluir a lesão radial entre as condições ideais; ela rompe as fibras circunferenciais e alcança a zona branca.
@@ -437,7 +437,7 @@ As teorias do Box 50.2 (p. 2009) são trauma com degeneração mucoide, degenera
 
 **Tratamento** (p. 2009). Em geral **cirúrgico**, porque injeções e anti-inflamatórios dão alívio temporário: **meniscectomia parcial artroscópica com descompressão do cisto**, muitas vezes passando o shaver pela **fenda da clivagem horizontal** até o cisto; carga total imediata. A excisão aberta fica para o cisto com menisco quase normal; o capítulo 56 (p. 2345) lembra que o cisto que não descomprime pode ser **aspirado por via percutânea**.
 
-!questoes central=trauma-1079 relacionadas=joelho-0190
+!questoes central=trauma-1079 relacionadas=joelho-0190 treino=joelho-0443
 conceito: O cisto parameniscal é mais lateral, palpável anterior e proximal à cabeça da fíbula e anterior ao LCL, proeminente em extensão e que some na flexão (sinal de PISANI), associado a ruptura horizontal.
 como: O TARO 2021 perguntou o menisco e a posição mais frequentes do cisto em relação ao colateral; o TEOT 2025, o que indica o sinal de PISANI.
 armadilha: Pôr o cisto posterior ao LCL ou confundir o PISANI com cisto de BAKER ou com o estalido do discoide.
@@ -473,7 +473,7 @@ O Tachdjian (p. 2015 e 2016) faz **meniscectomia parcial central preservando 5 a
 
 **Divergência entre os livros.** No tipo WRISBERG, o Campbell 50 mantém a **meniscectomia total**, enquanto o Campbell 56 e o Tachdjian preferem **reparar ou estabilizar** a periferia quando o tecido é bom; na borda, o Campbell fala em **6 a 8 mm** e o Tachdjian em **5 a 7 mm**.
 
-!questoes central=joelho-0299
+!questoes central=joelho-0299 treino=joelho-0446
 conceito: O discoide completo ou incompleto, com inserção posterior, costuma ser silencioso até se romper, quando dá dor, estalido e derrame; o tipo WRISBERG, sem inserção tibial posterior, estala mesmo sem ruptura nem trauma.
 como: O TARO 2006 pôs em certo ou errado que, no menisco discoide lateral, ressalto e dor surgem após a ruptura.
 armadilha: Esquecer o tipo WRISBERG, que estala sem rasgar, ou achar que todo discoide precisa de cirurgia.

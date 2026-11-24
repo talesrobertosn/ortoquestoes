@@ -98,7 +98,7 @@ Essa é a frase mais rentável do capítulo. O Campbell (cap. 52, p. 2194) escre
 
 Daí duas consequências. Primeiro, a **patela alta** é perigosa porque **engata a tróclea mais tarde na flexão** (Tachdjian, p. 2034) e prolonga a faixa em que só as partes moles seguram. Segundo, o **teste de apreensão** é feito a **20 a 30 graus**, exatamente onde as partes moles ainda mandam e a tróclea ainda não protege.
 
-!questoes central=trauma-1042
+!questoes central=trauma-1042 treino=joelho-0449
 conceito: O VMO e o MPFL estabilizam a patela entre 0 e 20 graus de flexão; a partir de 30 graus a tróclea óssea assume.
 como: O TARO 2024 perguntou em que faixa de flexão o VMO e o MPFL atuam predominantemente (0 a 20, 30 a 50, 70 a 90 ou acima de 90 graus).
 armadilha: Escolher 30 a 50 graus, que é a faixa em que a patela já está contida pelo osso.
@@ -136,7 +136,7 @@ armadilha: Responder "na flexão", quando a tróclea já contém a patela e a ro
 
 O Campbell (cap. 52, p. 2194) é direto: **genu valgo** e **deformidades rotacionais por anteversão femoral ou torção tibial externa** aumentam o ângulo Q e produzem força em valgo sobre a patela. O Tachdjian (p. 2034) diz que a combinação de **anteversão femoral, valgo e posição externa (lateral) da tuberosidade** se reflete no ângulo Q, e o cap. 8 do Campbell (p. 421) acrescenta que qualquer condição que aumente o Q aumenta a força de deslocamento lateral. O inverso (varo, retroversão, tuberosidade medializada) diminui o ângulo.
 
-!questoes relacionadas=joelho-0341
+!questoes relacionadas=joelho-0341 treino=joelho-0452
 conceito: Valgo do joelho, anteversão femoral aumentada e tuberosidade da tíbia lateralizada aumentam o ângulo Q; varo, retroversão e medialização o diminuem.
 como: A SBOT-SP pediu o trio de fatores que aumentam o ângulo Q.
 armadilha: Misturar um fator que aumenta com outro que diminui (valgo com medialização da tuberosidade, varo com anteversão).
@@ -284,7 +284,7 @@ O raciocínio para não decorar: o **cruzamento** está em todos; o **esporão**
 
 A classificação muda a conduta. O Campbell (p. 2199) indica a **reconstrução do MPFL e/ou do MQTFL** quando o alinhamento é normal e a displasia é **DEJOUR A ou B**; a **trocleoplastia** fica para a displasia de alto grau, com **tróclea convexa** (p. 2198).
 
-!questoes central=joelho-0010
+!questoes central=joelho-0010 treino=joelho-0447
 conceito: DEJOUR tipo B: sinal do cruzamento com esporão supratroclear e tróclea plana.
 como: O TARO 2019 descreveu esporão supratroclear com tróclea plana e pediu o tipo de DEJOUR.
 armadilha: Marcar o D, que também tem esporão, mas acrescenta assimetria e o penhasco; ou o A, que é só tróclea rasa.
@@ -342,7 +342,7 @@ armadilha: Confundir com o ângulo de inclinação patelar, que também usa a li
 
 A lógica do "15 com displasia" está no Campbell (p. 2202): **quando há displasia troclear, menos mau alinhamento é tolerado**, e um TT-TG de apenas 15 mm pode exigir realinhamento, porque a tróclea rasa não segura nem um vetor moderado. O Campbell também avisa que a medida é **maior na TC que na RM** no mesmo paciente (p. 2197), por isso o Tachdjian usa 20 mm na TC e 18 mm na RM.
 
-!questoes central=trauma-1059 relacionadas=joelho-0081
+!questoes central=trauma-1059 relacionadas=joelho-0081 treino=joelho-0448
 conceito: Sem displasia troclear, a osteotomia de realinhamento distal da tuberosidade é indicada com TT-TG de 20 mm ou mais.
 como: O TEOT 2024 perguntou o TT-TG que indica realinhamento distal no adulto sem displasia troclear; uma prova de Ortopedia mostrou a TC e pediu o valor de TAGT que indica a osteotomia da TAT.
 armadilha: Marcar 15 mm, que é o corte para a tróclea displásica, ou 25 mm, que não aparece nos livros.
@@ -421,7 +421,7 @@ O Campbell (cap. 52, p. 2199) descreve os enxertos (autógenos ou alógenos, de 
 
 O marco radiográfico é o **ponto de SCHÖTTLE**. No perfil verdadeiro do fêmur distal, traça-se a **linha da cortical posterior** do fêmur; duas perpendiculares a ela passam pelo **ponto de contato do côndilo medial com a cortical posterior** e pelo **ponto mais posterior da linha de BLUMENSAAT** (Campbell, Fig. 52.9, p. 2202). O Tachdjian (p. 2038) coloca o ponto **logo anterior à junção da linha cortical posterior com a perpendicular que passa pelo ponto posterior da linha de BLUMENSAAT**. O SIZÍNIO (cap. 16, Reconstrução do ligamento femoropatelar medial) dá os milímetros: **1 mm anterior à linha cortical posterior**, **2,5 mm distal à origem posterior do côndilo medial** e **proximal ao ponto posterior da linha de BLUMENSAAT**. Resumo para a prova: **anterior à cortical posterior, na altura do fim posterior de BLUMENSAAT**.
 
-!questoes central=joelho-0145 relacionadas=joelho-0192
+!questoes central=joelho-0145 relacionadas=joelho-0192 treino=joelho-0450
 conceito: O ponto de SCHÖTTLE, no perfil verdadeiro, fica logo anterior à linha da cortical posterior do fêmur, na altura do ponto mais posterior da linha de BLUMENSAAT, e guia o túnel femoral do MPFL.
 como: O TEOT 2024 mostrou os pontos de referência radiográficos e perguntou qual ligamento se reconstrói com eles; o TEPOP 2024 perguntou onde fica o ponto de SCHÖTTLE em relação à linha de BLUMENSAAT e às bordas do fêmur.
 armadilha: Associar os marcos ao colateral tibial ou ao oblíquo posterior, que também se inserem no lado medial, ou colocar o ponto em relação à borda anterior do fêmur.
@@ -463,7 +463,7 @@ O critério que decide entre as duas é a **localização da lesão condral**. L
 
 A banca às vezes põe ao lado delas duas osteotomias antigas. A de **MAQUET** é o avanço anterior puro da tuberosidade, para a artrose femoropatelar, sem medializar (Campbell 15, cap. 50, Técnica 50.30, p. 2131). A de **HAUSER**, transferência da tuberosidade da tíbia usada na luxação recidivante antes das técnicas atuais, não aparece nos livros locais; o seguimento de HAMPSON e HILL (J Bone Joint Surg Br 1975;57-B(2):209-213; PMID 1141287), com joelhos revistos 10 a 25 anos depois da cirurgia, concluiu que ela impedia nova luxação, mas não a artrose: **30 de 42 joelhos (70%)** tinham artrose e 75% tinham dor na revisão.
 
-!questoes central=trauma-1067
+!questoes central=trauma-1067 treino=joelho-0451,joelho-0453
 conceito: TT-TG acima de 20 mm com lesão condral grau III ou IV pede a osteotomia de FULKERSON: o corte oblíquo medializa a tuberosidade e a anterioriza, descarregando a cartilagem.
 como: O TARO 2022 deu TA-GT acima de 20 mm com lesão condral III e IV e ofereceu MAQUET, HAUSER, FULKERSON e ELMSLIE-TRILLAT.
 armadilha: ELMSLIE-TRILLAT: medializa, mas não anterioriza; fica para a cartilagem preservada (grau 2 ou menos).
