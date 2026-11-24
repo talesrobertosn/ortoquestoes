@@ -1,6 +1,6 @@
 ---
 id: green8-malformacoes-congenitas
-versao: 7
+versao: 8
 titulo: Malformações congênitas da mão e do antebraço
 especialidade: mao
 acesso: gratis
@@ -432,6 +432,22 @@ A falha de diferenciação merece uma linha a mais, porque é a categoria que a 
 conceito: Na classificação embriológica da IFSSH (SWANSON), falha de diferenciação reúne partes formadas que não se separaram: sindactilia e sinostose no esqueleto e nos dedos, e, nas partes moles, alterações como a ausência de extensores; mão torta radial é falha de formação, e mão em espelho é duplicação.
 como: O ENARE Cirurgia da Mão 2022 pediu o par que só tem falha de diferenciação (sinostose e sindactilia); o ENARE 2023, a categoria da ausência de extensores (falha de diferenciação das partes moles).
 armadilha: Pôr a mão torta radial em falha de diferenciação (é falha de formação longitudinal) ou a mão em espelho (é duplicação); classificar a ausência de extensores como falha de formação.
+!fim
+
+## A coalizão do carpo: a falha de separação que ninguém vê
+
+A coalizão do carpo é o exemplo mais discreto de falha de diferenciação. O carpo do embrião começa como um bloco de cartilagem; as interzonas do punho e do carpo aparecem por volta do 52º dia (Green, Tabela 35.1), e a cavitação dentro delas abre as articulações que separam um osso do outro. Se a cavitação não acontece entre dois ossos vizinhos, eles ossificam como uma peça só. É o mesmo mecanismo da sinostose radioulnar proximal explicado na seção da interzona, só que em escala menor e, quase sempre, sem nenhuma consequência funcional.
+
+**A mais comum é a semilunopiramidal**, e por larga margem. Na maior série pediátrica, com 20.929 crianças radiografadas, ela respondeu por 69,2% das coalizões, e a capitato-hamato veio em segundo, com 17,2% (PRUSZCZYNSKI e colaboradores, J Pediatr Orthop, 2016; PMID 26398433). A explicação da ordem está na anatomia: o semilunar e o piramidal são vizinhos na mesma fileira proximal e se movem quase juntos, de modo que uma ponte entre eles rouba pouco movimento e não chama atenção. A ancestralidade pesa: a prevalência é bem maior em descendentes de africanos, a população em que MINNAAR descreveu a fusão semilunopiramidal em 1952 (J Bone Joint Surg Br; PMID 12999869).
+
+**Isolada contra sindrômica** é a distinção que dá sentido aos números. A semilunopiramidal costuma ser achado isolado de radiografia, num adolescente que bateu o punho. A capitato-hamato concentra as crianças com displasia ou outras deformidades: o Green a descreve como frequente na mão de APERT, junto com a sinostose do quarto e quinto metacarpos que impede a oposição do mínimo (cap. 36, p. 1228), e cita a coalizão do carpo entre as anomalias associadas à sinostose radioulnar proximal (cap. 38, p. 1350). Quem encontra uma capitato-hamato, portanto, examina o resto do membro.
+
+**Quando dói.** Quase nunca. Quando dói, a dor vem da coalizão incompleta, em que a carga se concentra na ponte parcial; o Green lembra que a fratura de uma coalizão semilunopiramidal incompleta imita a instabilidade lunopiramidal na radiografia (cap. 13, p. 452) e põe a coalizão parcial dolorosa entre as indicações da artrodese lunopiramidal (cap. 12, p. 387). Antes de operar, tenta-se o tratamento conservador.
+
+!questoes relacionadas=mao-0806
+conceito: Coalizão do carpo é falha de cavitação entre dois ossos do carpo; a mais comum é a semilunopiramidal (cerca de 70%), a segunda é a capitato-hamato, que se associa a síndromes como a APERT.
+como: O INTO 2026 pediu a fusão congênita mais comum do carpo, com a capitato-hamato entre as alternativas para pegar quem lembrou da APERT.
+armadilha: Marcar a capitato-hamato por lembrar da APERT: ela é frequente nas formas sindrômicas, mas é a segunda no total.
 !fim
 
 # A sindactilia {radar=confirmado}

@@ -1,6 +1,6 @@
 ---
 id: green-mao-reumatoide
-versao: 3
+versao: 4
 titulo: Mão reumatoide
 especialidade: mao
 acesso: gratis
@@ -957,6 +957,15 @@ As indicações cirúrgicas mais comuns são **insuficiência vascular com úlce
 - **Isquemia:** simpatectomia digital periarterial (FLATT, 1980) e a "arteriólise descompressiva" de JONES; as úlceras podem voltar em 2 anos. Comissura: liberar o adutor, enxerto de pele, às vezes ressecar o trapézio (p. 1841).
 
 O Campbell concorda no essencial: artrodese na IFP e ressecção na MF (p. 3449).
+
+**Por que a IFP flete e a MF estende, e não o contrário.** Na artrite reumatoide, quem deforma é a sinóvia: ela distende cápsula e ligamentos por dentro, e a articulação cede para onde as forças a empurram, daí o desvio ulnar com subluxação palmar da MF. Na esclerodermia, a articulação está sã por dentro; quem deforma é a pele, que vira uma luva fibrosa e curta. O dorso da IFP é o ponto onde a pele precisa esticar mais para o dedo estender e onde o aparelho extensor é mais fino, preso entre o osso e uma pele que não cede; ele afina, perde a força e a IFP vai caindo em flexão (Green, p. 1839). Com os dedos dobrados, o paciente só consegue abrir a mão hiperestendendo a MF, e é essa compensação que, com o tempo, retrai os colaterais e fixa a MF em extensão. O desenho final é o ziguezague: **MF em hiperextensão, IFP em flexão**. O padrão inverso (MF fletida e subluxada com IFP hiperestendida, como na reumatoide) existe, mas o Green o chama de infrequente (p. 1839). E a primeira comissura, pelo mesmo encurtamento da pele e do adutor, fecha: o polegar fica preso em adução, nunca em abdução (p. 1839 e 1840).
+
+!questoes relacionadas=mao-1217
+conceito: Na esclerodermia, a fibrose da pele leva à contratura em flexão da IFP, e a MF hiperestende para compensar; o desvio ulnar com subluxação da MF é da artrite reumatoide, e a primeira comissura contrai em adução.
+como: A PUC-SP 2023 pediu a deformidade típica da esclerose sistêmica entre padrões das doenças reumáticas, com o padrão inverso (MF fletida e IFP hiperestendida) como pegadinha.
+armadilha: Marcar o padrão da reumatoide, ou o inverso que o Green descreve como infrequente; ou achar que a comissura contrai em abdução.
+alerta: `mao-1217` não tem gabarito oficial publicado; a resposta provável (contratura em flexão da IFP com hiperextensão compensatória da MF) segue o Green 7 (cap. 55, p. 1839).
+!fim
 
 ## Nódulos reumatoides
 

@@ -11833,7 +11833,7 @@
   },
   {
    "id": "green-cirurgia-plastica-geral",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Cirurgia plástica geral para o cirurgião da mão",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -15833,7 +15833,7 @@
   },
   {
    "id": "green-mao-reumatoide",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Mão reumatoide",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -15841,7 +15841,7 @@
    "capitulo": "Capítulo 55 · Rheumatoid Arthritis and Other Connective Tissue Diseases",
    "resumo": "A sinóvia que estira, invade e destrói; mão bilateral e simétrica; prioridades da dor, punho e polegar antes dos dedos, MF antes da IFP e dos extensores; tenossinovite dorsal indolor e tenossinovectomia após 4 a 6 meses; rupturas extensoras do mínimo para o indicador (VAUGHAN-JACKSON), três simuladores e o teste da tenodese; EPL com transferência do EIP; FPL na espícula do escafoide (MANNERFELT); caput ulnae, supinação do carpo, translocação ulnar e desvio radial dos metacarpos; DARRACH limitado e chanfrado, SAUVÉ-KAPANDJI, artrodese radioescafossemilunar e total com pinos de STEINMANN; desvio ulnar e luxação palmar da MF, FLATT e SWANSON; pescoço de cisne de NALEBUFF I a IV; botoeira que nasce na IFP; polegar de NALEBUFF I a VI; lúpus redutível, psoríase assimétrica, esclerodermia em flexão da IFP.",
    "acesso": "gratis",
-   "minutos": 84,
+   "minutos": 85,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15948,7 +15948,8 @@
     "mao-0965",
     "mao-0500",
     "mao-0350",
-    "mao-0848"
+    "mao-0848",
+    "mao-1217"
    ],
    "treino": [
     "mao-2267",
@@ -19383,7 +19384,7 @@
   },
   {
    "id": "green8-malformacoes-congenitas",
-   "versao": 7,
+   "versao": 8,
    "titulo": "Malformações congênitas da mão e do antebraço",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -19391,7 +19392,7 @@
    "capitulo": "Capítulos 35 a 38 · Mão pediátrica, com o Tachdjian (caps. 12, 21 e 35)",
    "resumo": "Embriologia (broto aos 26 dias, janela de 4 a 8 semanas, marcos da Tabela 35.1, placa lateral e mesoderma somático, vaso marginal e nervos, AER e FGF, ZPA e sonic hedgehog, AL-QATTAN, Wnt7a, Lmx-1 e Engrailed-1, apoptose por BMP e APERT, blastemas e interzonas, artrogripose, HOX e T-box, CDMP) e classificações (SWANSON, OMT, FRANTZ e O'RAHILLY); sindactilia (3ª comissura, quando separar, APERT e UPTON); banda de constrição (PATTERSON); duplicação do polegar (WASSEL IV, EZAKI, BILHAUT-CLOQUET); polegar trifalângico e em gatilho; braquidactilia, clinodactilia, KIRNER e camptodactilia em panorama; ausência de dedos transversal e longitudinal; banda de constrição (PATTERSON, um anel de cada vez); simbraquidactilia (nubbins, YAMAUCHI e TANABU, nervo radial presente); mão em fenda (MANSKE e HALIKIS pela primeira comissura, fenda em V contra U, SNOW-LITTLER); transferência de falange (RADOCHA, antes dos 15 meses) e de dedo do pé (segundo artelho, CMC estável); macrodactilia (FLATT I a IV, indicador, divergência, palmar e distal, epifisiodese no comprimento do genitor, amputação do raio cedo); deficiência radial (mediano, BAYNE, cotovelo rígido contraindica centralizar); deficiência ulnar; sinostose radioulnar (TACHDJIAN, CLEARY e OMER, osteotomia acima de 60 graus de pronação); MADELUNG (VICKERS, adolescência, meninas); deficiência transversal e KRUKENBERG; SPRENGEL e vizinhas.",
    "acesso": "gratis",
-   "minutos": 95,
+   "minutos": 97,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -19553,6 +19554,7 @@
     "mao-0491",
     "mao-1812",
     "mao-1853",
+    "mao-0806",
     "mao-0073",
     "mao-0009",
     "mao-0424",

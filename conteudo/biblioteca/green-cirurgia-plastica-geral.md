@@ -1,6 +1,6 @@
 ---
 id: green-cirurgia-plastica-geral
-versao: 1
+versao: 2
 titulo: Cirurgia plástica geral para o cirurgião da mão
 especialidade: mao
 acesso: gratis
@@ -56,7 +56,7 @@ E o corpúsculo de KRAUSE? Ele não aparece no Green. A revisão de COBO e colab
 conceito: Na associação clássica de corpúsculo e função, KRAUSE corresponde ao frio; o Green 7 reorganiza os receptores da pele glabra por adaptação, com MEISSNER e PACINI de adaptação rápida e MERKEL e RUFFINI de adaptação lenta.
 como: O ENARE de 2022 pediu o par correto entre corpúsculo e função, com PACINI ligado ao tato, RUFFINI à pressão, MERKEL ao calor e MEISSNER ao frio como distratores.
 armadilha: Ler RUFFINI e pressão como certo porque o Green põe RUFFINI entre os receptores de toque estático; a banca seguiu a tabela clássica, em que só KRAUSE e frio fecham.
-alerta: Pelo Green 7 (cap. 28, p. 927), MERKEL e RUFFINI respondem ao toque estático, que é testado pelo limiar de pressão, o que deixa a alternativa de RUFFINI e pressão defensável; a revisão de COBO (2021) registra KRAUSE como receptor de frio só na visão antiga. O gabarito oficial (`mao-1825`, KRAUSE e frio) foi mantido.
+alerta: O gabarito oficial de `mao-1825` (KRAUSE e frio) segue a tabela clássica de receptores e foi mantido. Duas ressalvas: pelo Green 7 (cap. 28, p. 927), MERKEL e RUFFINI respondem ao toque estático, que se testa pelo limiar de pressão, o que deixa defensável a alternativa de RUFFINI e pressão; e a revisão de COBO (2021, PMID 33435193) registra KRAUSE como receptor de frio só na visão antiga. Nenhuma fonte lida derruba a alternativa A.
 !fim
 
 ## Por que a estria aparece: a rede elástica
@@ -120,7 +120,7 @@ E o retalho microcirúrgico? Um estudo do registro americano NSQIP de 2010 a 202
 conceito: Depois da amputação maior, o diabético tem mortalidade em 5 anos de cerca de metade a quatro quintos; ITB abaixo de 0,9 já é doença arterial, a cultura correta é de tecido profundo e o diabetes não contraindica o retalho microcirúrgico.
 como: A USP-SP de 2025 deu quatro afirmativas sobre o pé diabético (retalho, mortalidade, ITB e swab) e pediu a correta.
 armadilha: Aceitar o swab pela facilidade de coleta ou achar que ITB de 0,7 permite cicatrização normal.
-alerta: A revisão lida (THORUD 2016) dá 52% a 80% de mortalidade em 5 anos após amputação maior; a faixa de 39% a 80% do enunciado (`mao-1307`) não apareceu nas fontes abertas, mas a afirmativa segue a única correta.
+alerta: A revisão de THORUD (2016, PMID 26898398) dá 52% a 80% de mortalidade em 5 anos após amputação maior; os cerca de 40% são da úlcera do pé diabético (JUPITER 2016, PMID 25601358). A faixa de 39% a 80% de `mao-1307` parece juntar os dois números, mas a afirmativa segue a única correta.
 !fim
 
 ## A ferida que o paciente provoca
@@ -171,7 +171,7 @@ O tratamento segue a fase. Na fase inflamatória, doxiciclina e isotretinoína (
 conceito: Rinofima é a rosácea em fase avançada, mais comum em homens e da quinta à sétima década; o tecido fibrótico da forma grave não regride com antibiótico e retinoide e se trata com decorticação cirúrgica.
 como: O ENARE de 2022 pediu a afirmativa incorreta sobre rinofima, que propunha o tratamento clínico como eleição na forma severa.
 armadilha: Achar que isotretinoína resolve a forma grave; ela ajuda na fase inflamatória e recidiva.
-alerta: A revisão lida (CHAUHAN 2020) situa a rinofima da quinta à sétima década, não na quarta e quinta como diz uma das afirmativas tidas como verdadeiras em `mao-1829`; o gabarito não muda, porque a afirmativa do tratamento clínico é a claramente errada.
+alerta: A revisão de CHAUHAN (2020, PMID 32848439) sustenta o gabarito de `mao-1829` (a rinofima grave é cirúrgica, não clínica), mas situa a doença da quinta à sétima década, não na quarta e quinta como diz uma das afirmativas tidas como verdadeiras.
 !fim
 
 ## Cútis marmorata telangiectásica congênita
@@ -182,7 +182,7 @@ A cútis marmorata telangiectásica congênita (CMTC) é uma **malformação cap
 conceito: A CMTC é malformação capilar congênita com padrão marmóreo que persiste mesmo em temperatura normal, predomina nos membros inferiores, tende a melhorar com o tempo e se associa sobretudo a assimetria corporal.
 como: O ENARE de 2022 pediu a afirmativa correta sobre a CMTC, com piora na adolescência, predomínio na face e nos membros superiores e hipoplasia arterial como distratores.
 armadilha: Achar que a lesão piora com a idade ou que prefere a face e os braços.
-alerta: A revisão de BUI (2019) encontrou leve predomínio feminino (1,2:1), o que deixa a afirmativa sobre mulheres de `mao-1827` tecnicamente verdadeira; a mesma revisão não confirma que o desenho fica mais forte com frio ou choro. O gabarito oficial foi mantido.
+alerta: Em `mao-1827`, a afirmativa sobre predomínio em mulheres não se sustenta como regra: KIENAST e HOEGER (2009, PMID 19196300) tiveram 13 meninos e 14 meninas, e BUI (2019), proporção quase igual (1,2:1). A frase do gabarito (marmorização em temperatura normal, mais forte no frio ou no choro) não foi achada com essas palavras; ela segue a única compatível com as séries lidas. O gabarito oficial foi mantido.
 !fim
 
 # Microcirurgia: o ponto, o fio e o risco de trombose {radar=confirmado}
@@ -204,7 +204,7 @@ O capítulo de LECLÈRE descreve a mesma lógica com os dois primeiros pontos en
 
 ## A que distância da borda entra a agulha
 
-A agulha entra perpendicular à parede, de fora para dentro de um lado e de dentro para fora do outro, com a pinça fazendo contrapressão dentro da luz. A distância entre o furo e a borda é o detalhe que a prova pergunta. O Campbell 15 diz que a agulha passa a uma distância da borda **um pouco maior que a espessura da parede** (cap. 68, Fig. 68.2D). Modelos de treino em artéria de rato descrevem profundidade de **uma a duas vezes a espessura da parede** (XIAO, Sci Rep 2021, PMID 33649423, PMC7921418). A lógica é de equilíbrio: perto demais, o ponto rasga a borda fina; longe demais, sobra parede dobrada para dentro da luz, o que vira degrau, turbulência e trombo. Na veia, cuja parede é mais fina, esse cuidado é ainda maior, e o calibre diferente entre os cotos (até cerca de 1:1,5) se compensa esticando o menor e espaçando os pontos (LECLÈRE).
+A agulha entra perpendicular à parede, de fora para dentro de um lado e de dentro para fora do outro, com a pinça fazendo contrapressão dentro da luz. A distância entre o furo e a borda é o detalhe que a prova pergunta. O Campbell 15 diz que a agulha passa a uma distância da borda **um pouco maior que a espessura da parede** (cap. 68, Fig. 68.2D), com a mesma frase que já estava na 13ª edição (cap. 63, p. 3228, Fig. 63-2D). Modelos de treino em artéria de rato descrevem profundidade de **uma a duas vezes a espessura da parede** (XIAO, Sci Rep 2021, PMID 33649423, PMC7921418). A lógica é de equilíbrio: perto demais, o ponto rasga a borda fina; longe demais, sobra parede dobrada para dentro da luz, o que vira degrau, turbulência e trombo. Na veia, cuja parede é mais fina, esse cuidado é ainda maior, e o calibre diferente entre os cotos (até cerca de 1:1,5) se compensa esticando o menor e espaçando os pontos (LECLÈRE).
 
 ## O fio e a agulha
 
@@ -245,7 +245,7 @@ Por que isso cai numa prova de microcirurgia? KIM, LEE e MUN (Plast Reconstr Sur
 conceito: A microanastomose usa pontos separados de espessura total, com os dois primeiros a cerca de 120 graus, fio de 10-0 com cerca de 25 µm em agulha de cerca de 75 µm e furo um pouco além da espessura da parede; no CAPRINI pesam mais a cirurgia ou fratura de quadril recente (5), a idade de 75 anos ou mais e a síndrome antifosfolípide (3 cada).
 como: O INTO de 2023 pediu a distância do ponto de entrada da agulha numa anastomose venosa em múltiplos da espessura da parede; a USP-SP de 2024 pediu a combinação de fatores com mais pontos no CAPRINI, citando KIM, LEE e MUN (2015); o simulado da prova de título de cirurgia da mão de 2021 perguntou o diâmetro do fio de 10-0 e da agulha.
 armadilha: Inverter fio e agulha (a agulha é a mais grossa) ou somar no CAPRINI fatores que não pontuam, como hipertensão, hipotireoidismo e idade até 40 anos.
-alerta: Para `mao-0760`, o gabarito oficial é de duas a três vezes a espessura da parede; o Campbell 15 (cap. 68, Fig. 68.2D) fala em distância um pouco maior que a espessura, e modelos de treino abertos (XIAO 2021) em uma a duas vezes. O gabarito foi mantido. Em `mao-1478`, os itens IMC acima de 40 e cirurgia de coluna são da versão revisada do escore, não da de 2005; a alternativa segue a de maior soma.
+alerta: Para `mao-0760`, o gabarito oficial é de duas a três vezes a espessura da parede; o Campbell, com a mesma frase na 13ª ed. (cap. 63, p. 3228, Fig. 63-2D) e na 15ª ed. (cap. 68, Fig. 68.2D), fala em distância um pouco maior que a espessura, e modelos de treino abertos (XIAO 2021) em uma a duas vezes; nenhuma fonte lida dá duas a três vezes. O gabarito foi mantido. Em `mao-1478`, os itens IMC acima de 40 e cirurgia de coluna são da versão revisada do escore, mas mesmo pela versão de 2005 a alternativa D é a de maior soma (idade acima de 75 anos e anticorpos antifosfolípides valem 3 pontos cada).
 !fim
 
 # Reimplantes da cabeça: couro cabeludo e orelha {radar=confirmado}
@@ -287,7 +287,7 @@ O retalho de ABBE transfere um bloco de **espessura total do lábio inferior par
 conceito: O ABBE leva um bloco de espessura total do lábio inferior ao superior pela artéria labial, em dois tempos, para reparar perda ou aumentar o lábio superior; o ORTICOCHEA gira e avança três ou quatro retalhos grandes de couro cabeludo com galeotomias para fechar defeitos médios e grandes.
 como: O ENARE de 2025 pediu a afirmativa correta sobre o ABBE; o ENARE de 2023 deu uma avulsão parcial de couro cabeludo tratada com ORTICOCHEA e pediu a porcentagem do crânio que o retalho consegue fechar.
 armadilha: Achar que o ABBE é de tempo único ou que repara o lábio inferior (ele usa o inferior como doador).
-alerta: A porcentagem do crânio fechada pelo retalho de ORTICOCHEA (`mao-1877`, gabarito de 30%) não foi encontrada nas fontes abertas lidas, que medem o defeito em centímetros quadrados; o gabarito oficial foi mantido.
+alerta: A porcentagem do crânio fechada pelo retalho de ORTICOCHEA (`mao-1877`, gabarito de 30%) não foi encontrada em nenhuma fonte lida, nem nos livros locais nem nas revisões abertas, que medem o defeito em centímetros quadrados; o gabarito oficial foi mantido sem fonte que o confirme ou derrube.
 !fim
 
 # A orelha: TANZER, criptotia e a reconstrução da microtia {radar=confirmado}
@@ -325,7 +325,7 @@ Na técnica de NAGATA, o pericôndrio do sítio doador é preservado e a sobra d
 conceito: Na classificação de TANZER, a microtia sem atresia é a IIb e a criptotia é a IVb, com o polo superior da orelha enterrado sob a pele temporal; a reconstrução com cartilagem costal começa na idade escolar, quando há cartilagem e tórax suficientes, e depende de um envelope vascularizado em volta do arcabouço.
 como: O ENARE de 2022 pediu a classe de TANZER da microtia sem atresia; o ENARE de 2025 fez três perguntas sobre a orelha: o que é criptotia, a idade ideal para iniciar a reconstrução e o papel do neopericôndrio.
 armadilha: Trocar IIa por IIb (a letra a é a que tem atresia) e confundir criptotia com orelha constrita em taça, que é a IVa.
-alerta: As fontes abertas lidas dão a idade de NAGATA como 10 anos e 60 cm de perímetro torácico e o consenso internacional como 6 a 9 anos, sem o número exato do gabarito de `mao-1929` (após 7 anos), que é compatível com a faixa do consenso; o termo neopericôndrio de `mao-1931` não aparece nas fontes lidas, que só descrevem o pericôndrio preservado e o envelope vascularizado. Os gabaritos oficiais foram mantidos.
+alerta: O gabarito de `mao-1929` (após 7 anos) tem apoio na revisão de OLSHINKA (Semin Plast Surg 2017, PMID 28798549), que recomenda reconstruir entre 7 e 10 anos; as escolas variam (BRENT por volta dos 6, NAGATA aos 10 com 60 cm de perímetro torácico). O termo neopericôndrio de `mao-1931` não aparece nas fontes lidas (BALUCH 2014, PMID 25152646, fala em bolso pericondral); a ideia de um envoltório vivo sobre o molde é correta, e o gabarito oficial foi mantido.
 !fim
 
 # Anatomia da face: artérias, SMAS, nervo facial e mastigação {radar=confirmado}
@@ -385,7 +385,7 @@ O enxerto de gordura repõe volume, não tira pele: no idoso com excesso de pele
 conceito: A borda orbitária reabsorve com a idade no superomedial e no inferolateral; o deep plane disseca sob o SMAS pelos espaços pré-zigomático e pré-massetéricos; a MRD1 normal é de 4 a 5 mm e cai com a gravidade da ptose, e a função do levantador normal é de 12 a 17 mm; a complicação mais grave do lipoenxerto é a embolia, rara.
 como: O ENARE de 2022 pediu a afirmativa correta sobre a avaliação da blefaroplastia e outra sobre lipoenxertia; o ENARE de 2023 perguntou as áreas de reabsorção da órbita; o ENARE de 2025 pediu a característica do lifting deep plane.
 armadilha: Achar que a MRD1 perto de zero é ptose leve, que a função do levantador normal é de 6 a 8 mm, ou que o deep plane protege mais o nervo facial.
-alerta: O EyeWiki dá MRD1 normal de 4 a 5 mm, e a alternativa considerada correta em `mao-1836` diz 3 a 5 mm; ela continua a única correta.
+alerta: O EyeWiki dá MRD1 normal de 4 a 5 mm, e a alternativa considerada correta em `mao-1836` diz 3 a 5 mm; nenhuma outra fonte lida fixou o limite inferior, e ela continua a única correta.
 !fim
 
 # Paralisia facial: reinervar cedo, separar os comandos {radar=confirmado}
@@ -428,7 +428,7 @@ O nariz do paciente de origem asiática costuma ter dorso baixo, ponta bulbosa e
 conceito: O spreader graft abre a válvula interna e se faz preferencialmente com cartilagem septal, reta e rígida; o strut columelar fixo aumenta a projeção da ponta; a ressecção cefálica deve deixar pelo menos 5 a 6 mm de crus lateral; a facial dá a labial superior e termina na angular; pronasal é o ponto mais anterior da ponta; no aumento asiático com implante, desvio e contratura são as complicações mais frequentes.
 como: O ENARE de 2023 perguntou sobre enxertos e anatomia na terceira rinoplastia, os marcos antropométricos da simulação 3D e a complicação mais comum do implante no nariz asiático; o ENARE de 2022 pediu a anatomia nasal correta; a FMRP-USP de 2026 perguntou a melhor doadora para o spreader graft.
 armadilha: Dizer que o spreader não serve na insuficiência da válvula interna (é a indicação dele), pôr a angular e a labial superior como ramos da oftálmica, ou exigir 10 mm de crus lateral.
-alerta: A regra de que o enxerto columelar fixo aumenta e o flutuante só mantém a projeção (`mao-1883`) não aparece com essas palavras nas fontes abertas lidas, que apoiam a lógica; em `mao-1879`, os dados agrupados lidos (KOOK 2023) põem a contratura (34,8%) um pouco acima do desvio (30,1%), enquanto o gabarito oficial é o desvio. Os gabaritos foram mantidos.
+alerta: A regra de que o enxerto columelar fixo aumenta e o flutuante só mantém a projeção (`mao-1883`) não aparece com essas palavras nas fontes lidas, que apoiam a lógica (o flutuante ganha pouco e se desloca; o fixo é mais estável); em `mao-1879`, os dados agrupados de KOOK (2023, PMID 36728206) põem a contratura (34,8%) um pouco acima do desvio (30,1%), enquanto o gabarito oficial é o desvio, e nenhuma outra fonte lida dá a ordem. Os gabaritos foram mantidos.
 !fim
 
 # Fraturas da face: LE FORT, nariz e a criança {radar=confirmado}
@@ -484,7 +484,7 @@ A fístula oronasal é uma comunicação persistente entre a boca e o nariz depo
 conceito: TREACHER COLLINS junta hipoplasia de zigoma e mandíbula, fendas palpebrais antimongoloides e coloboma inferior, atinge osso e partes moles e é quase sempre mutação nova; PIERRE ROBIN é a sequência micrognatia, glossoptose e obstrução da via aérea; CARPENTER é a craniossinostose autossômica recessiva; a fístula oronasal é a complicação tardia mais comum da palatoplastia.
 como: O ENARE de 2022 descreveu uma criança com obliquidade antimongoloide e coloboma e um recém-nascido com glossoptose e estridor e pediu o diagnóstico, e perguntou a afirmativa correta sobre TREACHER COLLINS; o ENARE de 2025 pediu a craniossinostose recessiva e a complicação tardia da palatoplastia.
 armadilha: Achar que TREACHER COLLINS poupa as partes moles ou sempre tem história familiar, ou marcar o refluxo nasal, que é sintoma da fístula.
-alerta: Na afirmativa considerada correta de `mao-1846`, mandíbula hipoplásica e palato alto estão nas fontes lidas, mas a maxila estreita e pouco projetada não aparece com essas palavras (CHANG cita altura maxilar anterior normal); o gabarito foi mantido porque as outras afirmativas são falsas.
+alerta: Em `mao-1846`, o GeneReviews (BARBOSA, PMID 20301704) descreve hipoplasia simétrica do zigoma, da maxila e da mandíbula, o que sustenta a afirmativa considerada correta; o palato alto e estreito não aparece com essas palavras. O gabarito foi mantido.
 !fim
 
 # Mama I: anatomia, ptose, mama tuberosa e ginecomastia {radar=confirmado}
@@ -531,7 +531,7 @@ Não existe grau 4. A técnica é escolhida pela pele porque a lipoaspiração t
 conceito: REGNAULT, a classificação de ptose mais usada, põe a papila no sulco no grau 1, abaixo do sulco e acima do contorno no grau 2 e abaixo do sulco no ponto mais baixo da mama no grau 3; a papila é inervada pelo 4º intercostal e irrigada por torácica interna, torácica lateral e intercostais; SIMON 3 é aumento acentuado com grande excesso de pele; a mama tuberosa tem sulco alto, polo inferior hipoplásico e GROLLEAU em três tipos.
 como: A FMRP-USP de 2026 pediu o nome da classificação de ptose e o grau da papila 3 cm abaixo do sulco no contorno inferior; o ENARE de 2022 pediu a definição correta dos graus de REGNAULT, a anatomia da mama, o grau de SIMON e a afirmativa incorreta sobre mama tuberosa; o ENARE de 2023 deu a aréola abaixo do sulco e do contorno da glândula.
 armadilha: Marcar BAKER, que é contratura capsular, ou achar que a papila 3 cm abaixo do sulco é grau 2; o que define o grau 3 é estar no ponto mais baixo do contorno.
-alerta: Em `mao-1819`, a revisão lida (LOZITO 2022) cita a herniação areolar como característica da mama tuberosa sem graduar a frequência, o que torna discutível a escolha dela como a incorreta; o gabarito oficial foi mantido. Em `mao-1833`, as fontes sustentam as três origens arteriais, mas não a frase exata sobre o plexo subdérmico da papila.
+alerta: Em `mao-1819`, a herniação areolar é descrita como característica da mama tuberosa (LOZITO 2022; VAN DURME 2024, PMID 39555168), e nenhuma fonte lida gradua a frequência dela, o que torna discutível escolhê-la como a incorreta; o gabarito oficial foi mantido. Em `mao-1833`, as fontes sustentam as três origens arteriais, mas não a frase exata sobre o plexo subdérmico da papila.
 !fim
 
 # Mama II: aumento, redução e o linfoma do implante {radar=confirmado}
@@ -569,7 +569,7 @@ O linfoma anaplásico de grandes células associado ao implante mamário é um l
 conceito: O BIA-ALCL se apresenta como seroma tardio, se diagnostica com CD30 no líquido e na cápsula, exige estadiamento com PET-CT e se trata com retirada do implante e de toda a cápsula, sem remoção profilática; na periareolar, o custo é atravessar ductos e mexer na sensibilidade; BAKER II é palpável e não visível; o T invertido tira pele entre a aréola e o sulco.
 como: O ENARE de 2023 pediu a afirmativa incorreta sobre o BIA-ALCL, que dispensava o estadiamento; o ENARE de 2022 pediu as afirmativas corretas sobre aumento mamário e sobre redutora.
 armadilha: Ler BAKER II como implante visível (isso é o III) ou atribuir a hipertrofia mamária a estrogênio alto.
-alerta: Em `mao-1834`, a fonte aberta lida (MERETSKY 2024) diz que a periareolar pode afetar a sensibilidade e deixar cicatriz, sem falar em ductos nem comparar o risco sensitivo; o gabarito oficial foi mantido.
+alerta: Em `mao-1834`, o gabarito tem apoio parcial: TULIMAT (2026, PMID 41709017) encontrou, nas coortes grandes, risco cerca de três vezes maior de hipoestesia com a via periareolar, embora estudos prospectivos menores (MOFID 2006, PMID 16651938) não vejam diferença; a secção de ductos não foi conferida em fonte primária. O gabarito oficial foi mantido.
 !fim
 
 # Mama III: câncer, BI-RADS e reconstrução com o grande dorsal {radar=confirmado}
@@ -610,7 +610,7 @@ Por isso o que o inviabiliza é perder o músculo ou o pedículo. A **toracotomi
 conceito: BI-RADS 0 pede exame adicional e 3 pede controle em 6 meses; o risco de câncer de mama segue a exposição estrogênica e só 5% a 10% é hereditário; PAGET é a lesão eczematosa da papila sobre carcinoma ductal; tumor de 2 cm não contraindica a conservadora; o grande dorsal (TANSINI, 1906) vive da toracodorsal, e a toracotomia que cortou o músculo é a contraindicação clássica.
 como: O ENARE de 2022 e o de 2023 perguntaram a categoria BI-RADS do controle semestral e a conduta no BI-RADS 0, os fatores de risco do câncer de mama, o tipo histológico eczematoso da papila, a exceção entre as contraindicações da conservadora, o nome do retalho de grande dorsal na história da reconstrução e a principal contraindicação do grande dorsal.
 armadilha: Achar que BI-RADS 0 é exame normal, que metade dos cânceres é hereditária, ou que radioterapia prévia contraindica o grande dorsal.
-alerta: Em `mao-1885`, a lesão do pedículo toracodorsal também aparece como contraindicação nas fontes lidas, e o termo toracotomia posteroanterior não aparece (a descrita é a posterolateral); o gabarito oficial foi mantido.
+alerta: Em `mao-1885`, a toracotomia prévia que seccionou o grande dorsal é a contraindicação que tira o retalho de jogo, e o Green 7 manda conferir cicatrizes de toracotomia, mastectomia e esvaziamento axilar (cap. 44, p. 1563); mas o termo toracotomia posteroanterior não aparece nas fontes (a descrita é a posterolateral), e a lesão do pedículo toracodorsal é contraindicação relativa, porque o músculo pode viver pelo ramo do serrátil. O gabarito oficial foi mantido.
 !fim
 
 # Contorno corporal: abdome, lipoaspiração e braço {radar=confirmado}
