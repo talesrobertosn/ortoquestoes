@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { chamarRpc, ErroRpc } from '../servicos/supabase'
-import { gravar, ler } from '../estado/armazenamento'
+import { gravar, ler, usuarioLocal } from '../estado/armazenamento'
 import { hojeBR, somarDias } from '../util/dia'
 import { normalizarPlano, incluiSimulados, opcoesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
 import { opcoesComMarcas, type MarcasDia } from './marcasDia'
@@ -22,12 +22,15 @@ export const marcarAvisoSimulados = () => gravar(CHAVE_AVISO, true)
 
 const funcaoInexistente = (falha: unknown) => falha instanceof ErroRpc && falha.status === 404
 
-/** A última cópia do plano lida ou gravada nesta aba (undefined: ainda não se sabe). */
-let planoConhecido: PlanoSalvo | null | undefined
-let leituraParaConquistas = false
+/** A última cópia do plano lida ou gravada nesta aba, com a conta dona dela. */
+let planoConhecido: { dono: ReturnType<typeof usuarioLocal>; plano: PlanoSalvo | null } | undefined
+/** Conta da leitura do plano pedida pelas conquistas que ainda está em andamento. */
+let leituraParaConquistas: ReturnType<typeof usuarioLocal> | undefined
+/** O plano conhecido da conta atual (undefined: ainda não se sabe). Troca de conta descarta o da anterior. */
+const planoDaConta = () => planoConhecido && planoConhecido.dono === usuarioLocal() ? planoConhecido.plano : undefined
 
 function anunciar(plano: PlanoSalvo | null) {
-  planoConhecido = plano
+  planoConhecido = { dono: usuarioLocal(), plano }
   window.dispatchEvent(new CustomEvent<PlanoSalvo | null>(EVENTO_PLANO, { detail: plano }))
 }
 
@@ -44,6 +47,7 @@ const marcarGravacao = () => { ultimaGravacao = ++pedidos }
 
 export async function obterPlano(): Promise<PlanoSalvo | null> {
   const numero = ++pedidos
+  const dono = usuarioLocal()
   const [linha] = await chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {})
   // Linha guardada em qualquer formato antigo: conferida, sem perder nada (normalizarPlano).
   const bruto = normalizarPlano(linha)
@@ -52,7 +56,8 @@ export async function obterPlano(): Promise<PlanoSalvo | null> {
     incluir_simulados: typeof bruto.incluir_simulados === 'boolean' ? bruto.incluir_simulados : ler<boolean>(CHAVE, true),
     opcoes: bruto.opcoes && typeof bruto.opcoes === 'object' ? bruto.opcoes : {},
   }
-  if (numero > ultimoAnunciado && numero > ultimaGravacao) {
+  // Resposta de uma conta que já saiu não é anunciada para a conta nova.
+  if (numero > ultimoAnunciado && numero > ultimaGravacao && usuarioLocal() === dono) {
     ultimoAnunciado = numero
     anunciar(plano)
   }
@@ -104,18 +109,33 @@ export function usarPlanoSalvo(ativo: boolean) {
  * Devolve null enquanto não se sabe: a conquista espera em vez de premiar errado.
  */
 export function usarDiasExtrasPlano(temPlano: boolean): readonly string[] | null {
-  const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(planoConhecido)
+  const [, redesenhar] = useState(0)
   useEffect(() => {
-    const aoAnunciar = (e: Event) => definirPlano((e as CustomEvent<PlanoSalvo | null>).detail)
-    window.addEventListener(EVENTO_PLANO, aoAnunciar)
-    if (planoConhecido !== undefined) definirPlano(planoConhecido)
-    else if (temPlano && !leituraParaConquistas) {
-      leituraParaConquistas = true
-      obterPlano().catch(() => { leituraParaConquistas = false })
+    const aoAnunciar = () => redesenhar((v) => v + 1)
+    // Falhou (rede, servidor)? Tenta de novo ao voltar a conexão, o foco ou a aba, e a cada 5 minutos.
+    const tentar = () => {
+      if (!temPlano || planoDaConta() !== undefined || document.visibilityState === 'hidden') return
+      const dono = usuarioLocal()
+      if (leituraParaConquistas === dono) return
+      leituraParaConquistas = dono
+      obterPlano().catch(() => undefined).finally(() => { if (leituraParaConquistas === dono) leituraParaConquistas = undefined })
     }
-    return () => window.removeEventListener(EVENTO_PLANO, aoAnunciar)
+    window.addEventListener(EVENTO_PLANO, aoAnunciar)
+    window.addEventListener('focus', tentar)
+    window.addEventListener('online', tentar)
+    document.addEventListener('visibilitychange', tentar)
+    const intervalo = window.setInterval(tentar, 5 * 60_000)
+    tentar()
+    return () => {
+      window.removeEventListener(EVENTO_PLANO, aoAnunciar)
+      window.removeEventListener('focus', tentar)
+      window.removeEventListener('online', tentar)
+      document.removeEventListener('visibilitychange', tentar)
+      window.clearInterval(intervalo)
+    }
   }, [temPlano])
   if (!temPlano) return []
+  const plano = planoDaConta()
   if (plano === undefined) return null
   return plano?.opcoes?.diasExtras ?? []
 }
