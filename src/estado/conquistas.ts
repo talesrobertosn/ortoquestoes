@@ -826,6 +826,8 @@ export interface Extras {
   grupos?: ReadonlyMap<string, readonly GrupoProva[]>
   acervo?: DadosAcervo
   servidor?: FeitosServidor | null
+  /** Dias extras do plano do Cronograma (folgas trocadas por estudo); null enquanto não lidos. */
+  diasExtras?: readonly string[] | null
   /** Dias de folga do ritmo de revisão (não quebram a constância). */
   folgasRevisao?: readonly number[]
   /** Métricas dos Flashcards (src/flashcards/conquistas.ts). */
@@ -863,7 +865,7 @@ function maiorSeguidos<T>(lista: readonly T[], ok: (x: T) => boolean): number {
 }
 
 /** Métricas que vêm do servidor (RPC meus_feitos); zero enquanto não houver dados. */
-function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) {
+function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string, diasExtras: readonly string[] | null | undefined) {
   const zero = { pontual: 0, filaZerada: 0, cronograma: 0, cronogramaCompleto: 0, nacionalSeguidas: 0, nacionalElite: 0, nacionalCampeao: 0,
     arenaCampeao: 0, arenaPodio: 0, arenaReinado: 0, indicadosAssinantes: 0, indicados30: 0, relatosResolvidos: 0, comentariosAvaliados: 0, contraCorrente: 0,
     cronogramaDias: 0, semanaPerfeita: 0 }
@@ -906,7 +908,8 @@ function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) 
     filaZerada: maiorSequencia(f.dias?.fila_zerada ?? []),
     cronograma: maiorSequencia(metas, folgas),
     cronogramaDias: new Set(metas).size,
-    semanaPerfeita: semanasPerfeitas(metas, folgas, hoje),
+    // Sem os dias extras do plano (ainda não lidos), não se sabe quais folgas viraram estudo: espera.
+    semanaPerfeita: diasExtras ? semanasPerfeitas(metas, folgas, hoje, diasExtras) : 0,
     cronogramaCompleto,
     nacionalSeguidas: maiorSeguidos(f.simulado_edicoes ?? [], (e) => participou.has(e)),
     nacionalElite: contam.some((p) => p.posicao <= Math.max(1, Math.floor(p.classificados / 10))) ? 1 : 0,
@@ -925,15 +928,17 @@ function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) 
  * Semanas perfeitas do Cronograma: semanas já encerradas (segunda a domingo) em que todos os
  * dias que não são folga do plano tiveram a meta cumprida. A semana corrente ainda não conta.
  */
-export function semanasPerfeitas(metas: readonly string[], folgas: readonly number[], hoje: string): number {
+export function semanasPerfeitas(metas: readonly string[], folgas: readonly number[], hoje: string, diasExtras: readonly string[] = []): number {
   const feitos = new Set(metas.map(numeroDia))
+  // Folga trocada por dia de estudo (plano.opcoes.diasExtras) volta a exigir a meta, como no Cronograma.
+  const extras = new Set(diasExtras.map(numeroDia))
   const semanaAtual = Math.floor((numeroDia(hoje) + 3) / 7)
   const semanas = new Set([...feitos].map((d) => Math.floor((d + 3) / 7)))
   let perfeitas = 0
   for (const s of semanas) {
     if (s >= semanaAtual) continue
     let ok = true
-    for (let d = s * 7 - 3; ok && d < s * 7 + 4; d++) if (!folgas.includes(diaDaSemana(d)) && !feitos.has(d)) ok = false
+    for (let d = s * 7 - 3; ok && d < s * 7 + 4; d++) if ((!folgas.includes(diaDaSemana(d)) || extras.has(d)) && !feitos.has(d)) ok = false
     if (ok) perfeitas++
   }
   return perfeitas
@@ -1002,8 +1007,6 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
       if (registro.c === true && acervo.imagem.has(id)) imagem++
       if (registro.c === true && acervo.simuladoMao?.has(id)) simuladosMao++
       if (registro.c === true && acervo.teot?.has(id)) teot++
-      if (acervo.regionais?.has(id)) bancas++
-      if (acervo.validas?.has(id)) validas++
       for (const s of acervo.subtemas.get(id) ?? []) {
         const a = porAssunto.get(s) ?? { r: 0, c: 0 }
         a.r++
@@ -1014,6 +1017,9 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
       if (prova && registro.c === true) porProvaAno.set(prova, (porProvaAno.get(prova) ?? 0) + 1)
       if (prova) porProvaAno.set(`${prova}#r`, (porProvaAno.get(`${prova}#r`) ?? 0) + 1)
     }
+    // Respondida conta mesmo sem gabarito (c: null): o "Zerou" e as provas regionais medem questões, não acertos.
+    if (acervo?.regionais?.has(id)) bancas++
+    if (acervo?.validas?.has(id)) validas++
     const lista = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c ?? null, confianca: registro.confianca }] : []
     for (const evento of lista) {
       eventos.push({ em: evento.em, correta: evento.correta, tema, confianca: evento.confianca })
@@ -1189,7 +1195,7 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     chefeTeot,
     newGamePlus,
     platina: 0,
-    ...metricasDoServidor(extras.servidor, chaveDia(agora)),
+    ...metricasDoServidor(extras.servidor, chaveDia(agora), extras.diasExtras),
     acertosTema: 0,
     porTema,
     seguidosTema,

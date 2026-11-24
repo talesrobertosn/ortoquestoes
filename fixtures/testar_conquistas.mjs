@@ -102,6 +102,7 @@ try {
   for (let i = 0; i < 40; i++) tri[`mao-${i}`] = reg([i === 35 ? errado(base + i * MIN) : certo(base + i * MIN)])
   tri['trauma-1'] = reg([certo(base + 50 * MIN)])
   tri['trauma-2'] = reg([errado(base + 51 * MIN)])
+  tri['tumores-1'] = { c: null, q: base + 52 * MIN, historico: [{ em: base + 52 * MIN, correta: null }] } // sem gabarito
   const ids = Object.keys(tri)
   const grupos = new Map(ids.filter((id) => id.startsWith('mao')).map((id) => [id, ['mao']]))
   const acervoTri = { imagem: new Set(), subtemas: new Map(), prova: new Map(), totalProva: new Map(), totalTema: new Map(), anuladas: new Set(),
@@ -125,7 +126,10 @@ try {
   assert.equal(m.semanasPerfeitas(metas, [0], '2026-11-23'), 1)
   assert.equal(m.semanasPerfeitas(metas, [], '2026-11-23'), 0, 'sem folga, o domingo faltou')
   assert.equal(m.semanasPerfeitas(metas, [0], '2026-11-05'), 0, 'a semana corrente ainda não fechou')
-  const mcr = m.calcularMetricas({}, [], { servidor: { plano: { folgas: [0], criado_em: '2026-11-01T12:00:00Z', data_prova: '2027-01-10' }, dias: { meta_cronograma: metas } } }, new Date(2026, 10, 23, 12).getTime())
+  assert.equal(m.semanasPerfeitas(metas, [0], '2026-11-23', ['2026-11-08']), 0, 'domingo trocado por estudo exige a meta')
+  const servidorCr = { plano: { folgas: [0], criado_em: '2026-11-01T12:00:00Z', data_prova: '2027-01-10' }, dias: { meta_cronograma: metas } }
+  assert.equal(m.calcularMetricas({}, [], { servidor: servidorCr }, new Date(2026, 10, 23, 12).getTime()).semanaPerfeita, 0, 'sem o plano lido, espera')
+  const mcr = m.calcularMetricas({}, [], { diasExtras: [], servidor: { plano: { folgas: [0], criado_em: '2026-11-01T12:00:00Z', data_prova: '2027-01-10' }, dias: { meta_cronograma: metas } } }, new Date(2026, 10, 23, 12).getTime())
   assert.equal(mcr.cronogramaDias, 8)
   assert.equal(mcr.semanaPerfeita, 1)
 

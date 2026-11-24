@@ -4,6 +4,7 @@ import { ler, usuarioLocal } from './armazenamento'
 import { useEffect, useMemo } from 'react'
 import { calcularMetricas, completarMetricas, desbloqueado, EMBLEMAS, PROVAS_REGIONAIS, type DadosAcervo, type GrupoProva, type Metricas } from './conquistas'
 import { registrarConquistas, usarFeitos } from '../conta/feitos'
+import { usarDiasExtrasPlano } from '../conta/cronograma'
 import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
 import { calcularStreak, type Streak } from './streak'
@@ -72,6 +73,7 @@ export function usarConquistas({ comLendarios = false }: { comLendarios?: boolea
   const grupos = useMemo(() => gruposDoIndice(indice), [indice])
   const acervo = useMemo(() => dadosDoAcervo(indice), [indice])
   const servidor = usarFeitos()
+  const diasExtras = usarDiasExtrasPlano(!!servidor?.plano)
   const { ritmo } = usarRitmoRevisao()
   const folgas = ritmo.folgas.join(',')
   const flashcards = usarMetricasFlashcards(comLendarios)
@@ -83,7 +85,7 @@ export function usarConquistas({ comLendarios = false }: { comLendarios?: boolea
   const resultado = useMemo(() => {
     const favoritas = ler<string[]>('favoritos', []).length
     const quantidadeNotas = Object.values(notas).filter((t) => String(t ?? '').trim()).length
-    const base = calcularMetricas(contexto.respondidas, historico, { favoritas, notas: quantidadeNotas, grupos, acervo, servidor, flashcards, biblioteca, folgasRevisao: folgas ? folgas.split(',').map(Number) : [] })
+    const base = calcularMetricas(contexto.respondidas, historico, { favoritas, notas: quantidadeNotas, grupos, acervo, servidor, flashcards, biblioteca, diasExtras, folgasRevisao: folgas ? folgas.split(',').map(Number) : [] })
     const metricas = completarMetricas({ ...base, travadas: new Set(servidor?.conquistas ?? []) })
     return {
       metricas,
@@ -91,7 +93,7 @@ export function usarConquistas({ comLendarios = false }: { comLendarios?: boolea
       conquistadas: EMBLEMAS.filter((e) => desbloqueado(e, metricas)).length,
       total: EMBLEMAS.length,
     }
-  }, [contexto.respondidas, contexto.favoritos, historico, notas, grupos, acervo, servidor, flashcards, biblioteca, folgas])
+  }, [contexto.respondidas, contexto.favoritos, historico, notas, grupos, acervo, servidor, flashcards, biblioteca, folgas, diasExtras])
   // Trava no servidor o que acabou de ser conquistado (a sequência de dias não trava: ela se perde de propósito).
   useEffect(() => {
     if (!servidor || !acervo) return

@@ -22,7 +22,12 @@ export const marcarAvisoSimulados = () => gravar(CHAVE_AVISO, true)
 
 const funcaoInexistente = (falha: unknown) => falha instanceof ErroRpc && falha.status === 404
 
+/** A última cópia do plano lida ou gravada nesta aba (undefined: ainda não se sabe). */
+let planoConhecido: PlanoSalvo | null | undefined
+let leituraParaConquistas = false
+
 function anunciar(plano: PlanoSalvo | null) {
+  planoConhecido = plano
   window.dispatchEvent(new CustomEvent<PlanoSalvo | null>(EVENTO_PLANO, { detail: plano }))
 }
 
@@ -91,6 +96,28 @@ export function usarPlanoSalvo(ativo: boolean) {
     }
   }, [ativo])
   return { plano, definirPlano, falhou }
+}
+
+/**
+ * Dias extras do plano (folgas trocadas por dia de estudo), para a Semana perfeita.
+ * Usa a cópia que as telas já leram; se nenhuma leu ainda, pede o plano uma vez por aba.
+ * Devolve null enquanto não se sabe: a conquista espera em vez de premiar errado.
+ */
+export function usarDiasExtrasPlano(temPlano: boolean): readonly string[] | null {
+  const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(planoConhecido)
+  useEffect(() => {
+    const aoAnunciar = (e: Event) => definirPlano((e as CustomEvent<PlanoSalvo | null>).detail)
+    window.addEventListener(EVENTO_PLANO, aoAnunciar)
+    if (planoConhecido !== undefined) definirPlano(planoConhecido)
+    else if (temPlano && !leituraParaConquistas) {
+      leituraParaConquistas = true
+      obterPlano().catch(() => { leituraParaConquistas = false })
+    }
+    return () => window.removeEventListener(EVENTO_PLANO, aoAnunciar)
+  }, [temPlano])
+  if (!temPlano) return []
+  if (plano === undefined) return null
+  return plano?.opcoes?.diasExtras ?? []
 }
 
 export interface DadosPlano {
