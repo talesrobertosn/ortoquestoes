@@ -150,7 +150,7 @@ O canto posterolateral resiste a três coisas: **varo**, **rotação externa da 
 - **Translação posterior:** o cruzado posterior domina, mas o canto ajuda. A 90°, cortar só o cruzado posterior dá **5 a 11 mm** de frouxidão; cortar o cruzado e o canto, **15 a 21 mm**. Uma insuficiência **grau 3** do cruzado posterior só aparece **se o canto também estiver lesado**.
 - **Translação anterior:** o canto não é restritor primário, mas vira restrição importante no joelho **sem cruzado anterior**, sobretudo em extensão.
 
-!questoes central=trauma-1040,joelho-0208
+!questoes central=trauma-1040,joelho-0208 treino=joelho-0408
 conceito: O tendão do poplíteo é, com o colateral fibular, o restritor primário da rotação externa; o popliteofibular é o estabilizador estático contra varo, rotação externa e translação posterior.
 como: O TARO 2024 perguntou o que o poplíteo restringe mais; o TARO 2012 pediu a estrutura estática do canto que segura forças posteriores, varo e rotação lateral, com o tendão do poplíteo (dinâmico) como distrator.
 armadilha: Rotação interna: o poplíteo roda a tíbia para dentro como músculo, mas como estabilizador do canto ele segura a rotação externa.
@@ -212,7 +212,7 @@ Nasce na face **lateral do côndilo femoral medial** e se insere numa fossa trap
 
 No fêmur, a inserção é semicircular, entre 12 e 4 horas no joelho direito (12 e 8 no esquerdo), com uma **crista bifurcada medial** separando os feixes.
 
-!questoes central=joelho-0174,joelho-0047
+!questoes central=joelho-0174,joelho-0047 treino=joelho-0401,joelho-0407
 conceito: O feixe anterolateral é o mais espesso do cruzado posterior; na reconstrução em duplo feixe, o anterolateral é tensionado a 90° de flexão e o posteromedial em extensão completa.
 como: O SBOT-SP pediu o feixe mais espesso, misturando os nomes dos feixes do cruzado anterior; o TEOT 2022 pediu os feixes e a posição do joelho na fixação.
 armadilha: Anteromedial e posterolateral: são os feixes do cruzado anterior.
@@ -245,7 +245,7 @@ armadilha: Sóleo: não entra no defeito capsular que o capítulo descreve, que 
 
 O cruzado posterior dá a maior parte da restrição à translação posterior em todos os ângulos e **95%** dela entre 30° e 90°. É restritor **secundário** do varo (só aumenta o varo se o canto também estiver cortado), do valgo e das rotações: cortar só o cruzado posterior aumenta **levemente** a rotação externa a **30° e a 90°** e a rotação interna a 90°. O aumento grande da rotação externa, máximo a 90°, é o da lesão **combinada** do cruzado posterior com o canto posterolateral, base do teste do dial. Um detalhe que a prova pode usar: num estudo em cadáver, o **ligamento poplíteo oblíquo** foi o principal restritor ligamentar da **hiperextensão**; cortá-lo aumentou a hiperextensão tanto quanto, ou mais que, cortar os dois cruzados juntos. A ordem entre os cruzados está no Campbell 15 (cap. 50, p. 2095): o posterior só freia a hiperextensão **depois da ruptura do cruzado anterior**.
 
-!questoes relacionadas=joelho-0186,joelho-0228 treino=joelho-0358
+!questoes relacionadas=joelho-0186,joelho-0228 treino=joelho-0358,joelho-0409
 conceito: Na hiperextensão, o cruzado posterior é restritor secundário: pelo Campbell 15 (cap. 50, p. 2095), ele só passa a segurar a hiperextensão depois da ruptura do cruzado anterior; o Rockwood destaca o ligamento poplíteo oblíquo, expansão do semimembranáceo, como o principal restritor ligamentar.
 como: O TEOT 2025 perguntou quando o cruzado posterior passa a segurar a hiperextensão; o gabarito oficial, depois da ruptura do cruzado anterior, é o que diz o Campbell 15 (cap. 50, p. 2095), que também lhe dá 89% da resistência à translação posterior.
 !fim
@@ -258,7 +258,7 @@ Fora da luxação, o Campbell 15 (cap. 50, p. 2095) descreve os dois mecanismos 
 
 A **artéria poplítea fica a 7 a 10 mm** da face posterior do cruzado posterior: é ela que corre risco ao perfurar o túnel tibial. Para expor a inserção tibial (reparo de avulsão ou reconstrução **inlay**), a via limitada de **Burks e Schaffer** usa o intervalo entre a **cabeça medial do gastrocnêmio e o semimembranáceo**; o gastrocnêmio medial, afastado lateralmente, protege o feixe neurovascular. Ficam em risco a **artéria genicular média** (muitas vezes ligada) e o ramo motor do nervo tibial para o gastrocnêmio medial.
 
-!questoes central=trauma-1080
+!questoes central=trauma-1080 treino=joelho-0400,joelho-0404,joelho-0406,joelho-0402,joelho-0403
 conceito: Na reconstrução inlay do cruzado posterior, a tíbia posterior é exposta entre a cabeça medial do gastrocnêmio e o semimembranáceo.
 como: O TARO 2021 deu quatro pares de músculos mediais; só um deles é o intervalo de Burks e Schaffer.
 armadilha: Semitendíneo e grácil: são tendões da pata de ganso, anteriores e superficiais ao campo.
@@ -280,7 +280,7 @@ O Campbell 15 lista as complicações na Tabela 50.7 (cap. 50, p. 2109), em sequ
 
 > Na prova: o problema mais comum depois de reconstruir o cruzado posterior é a **frouxidão posterior residual**.
 
-!questoes central=joelho-0027,joelho-0269,trauma-1048 relacionadas=joelho-0013,joelho-0288 treino=trauma-1628
+!questoes central=joelho-0027,joelho-0269,trauma-1048 relacionadas=joelho-0013,joelho-0288 treino=trauma-1628,joelho-0405
 conceito: A reconstrução do cruzado posterior restaura bem menos a gaveta posterior do que a do cruzado anterior restaura o Lachman; a frouxidão posterior residual é o problema mais comum.
 como: O TARO cobrou a mesma ideia em 2013, 2016 e 2023, com perda de flexão, dor, lesão nervosa e instabilidade posterolateral como distratores.
 armadilha: Perda de flexão: a rigidez existe, mas, quando a instabilidade residual está entre as alternativas, é ela que a banca considera a mais comum.

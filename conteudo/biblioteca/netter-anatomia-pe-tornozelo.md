@@ -36,7 +36,7 @@ A anatomia do pé e do tornozelo nas provas é quase toda de **imagem**: um tend
 - No posterior profundo: **tibial posterior** no meio (membrana interóssea), **flexor longo dos dedos** medial (nasce da tíbia), **flexor longo do hálux** lateral (nasce da fíbula).
 - **Extensor curto dos dedos e extensor curto do hálux:** os ventres do dorso do pé, ambos na face dorsal do calcâneo, sobre o seio do tarso; inervados pelo ramo lateral do **fibular profundo**.
 
-!questoes central=pe-tornozelo-0120 relacionadas=pe-tornozelo-0187,pe-tornozelo-0188,pe-tornozelo-0062,pe-tornozelo-0023,pe-tornozelo-0185,pe-tornozelo-0232,pe-tornozelo-0318,pe-tornozelo-0123,pe-tornozelo-0118,pe-tornozelo-0191 treino=pe-tornozelo-0425
+!questoes central=pe-tornozelo-0120 relacionadas=pe-tornozelo-0187,pe-tornozelo-0188,pe-tornozelo-0062,pe-tornozelo-0023,pe-tornozelo-0185,pe-tornozelo-0232,pe-tornozelo-0318,pe-tornozelo-0123,pe-tornozelo-0118,pe-tornozelo-0191 treino=pe-tornozelo-0425,pe-tornozelo-0434
 conceito: Cada compartimento tem o seu nervo: anterior, fibular profundo; lateral, fibular superficial; posteriores, tibial.
 como: O TEOT 2023 mostrou o compartimento lateral; provas de Ortopedia, o TARO e o TEOT mostram em imagem o extensor curto dos dedos, os flexores longos, o sóleo, os fibulares e os músculos da planta.
 armadilha: Pôr o fibular profundo no compartimento lateral ou confundir o extensor curto (dorso) com o longo (perna).
@@ -48,7 +48,7 @@ armadilha: Pôr o fibular profundo no compartimento lateral ou confundir o exten
 - O **nervo tibial** passa **entre o flexor longo dos dedos e o flexor longo do hálux** e se divide nos plantares medial e lateral.
 - O **flexor longo do hálux** passa no **sulco do processo posterior do tálus** e **sob o sustentáculo**.
 
-!questoes central=pe-tornozelo-0184 relacionadas=pe-tornozelo-0116,pe-tornozelo-0124,pe-tornozelo-0303,pe-tornozelo-0236,pe-tornozelo-0281,pe-tornozelo-0117 treino=pe-tornozelo-0430
+!questoes central=pe-tornozelo-0184 relacionadas=pe-tornozelo-0116,pe-tornozelo-0124,pe-tornozelo-0303,pe-tornozelo-0236,pe-tornozelo-0281,pe-tornozelo-0117 treino=pe-tornozelo-0430,pe-tornozelo-0431
 conceito: O flexor longo do hálux é o tendão mais posterior, no sulco do tálus e sob o sustentáculo; o nervo tibial passa entre os dois flexores longos.
 como: O TEOT 2024 mostrou o tendão na via medial; o TEOT 2023, o tendão e o sustentáculo; provas de Ortopedia, o nervo tibial e os plantares; o TARO 2026 e o TEOT 2025, os tendões do retropé.
 armadilha: Trocar o flexor longo do hálux pelo tibial posterior, que é o mais anterior.
@@ -63,7 +63,7 @@ armadilha: Trocar o flexor longo do hálux pelo tibial posterior, que é o mais 
 - **Fibular profundo** no tornozelo: **entre o extensor longo do hálux e o tibial anterior**. **Fibular superficial:** dorso do pé, acima do maléolo lateral.
 - **Sural:** face **posterolateral**, entre o maléolo lateral e o tendão calcâneo, com a safena parva; ramo calcâneo lateral; S1.
 
-!questoes central=pe-tornozelo-0122 relacionadas=pe-tornozelo-0283,pe-tornozelo-0233,pe-tornozelo-0183,pe-tornozelo-0317,pe-tornozelo-0028 treino=pe-tornozelo-0429
+!questoes central=pe-tornozelo-0122 relacionadas=pe-tornozelo-0283,pe-tornozelo-0233,pe-tornozelo-0183,pe-tornozelo-0317,pe-tornozelo-0028 treino=pe-tornozelo-0429,pe-tornozelo-0435
 conceito: Fibular curto no 5º metatarso; fibular longo pelo cuboide até o 1º metatarso; tibial posterior no navicular; sural na face posterolateral.
 como: Provas de Ortopedia e o TEOT 2025 perguntaram as inserções em imagem; o TEOT 2024, o sural; o TARO 2024, o ramo sensitivo do fibular; o TARO 2021, os interósseos do segundo dedo.
 armadilha: Trocar a inserção do fibular curto pela do tibial posterior.
@@ -76,7 +76,7 @@ armadilha: Trocar a inserção do fibular curto pela do tibial posterior.
 - **Talocalcaneano interósseo:** suporte primário da **subtalar**, estabilizador no **seio do tarso**.
 - Na luxação subtalar, o **extensor curto dos dedos** (medial) ou o **tibial posterior** (lateral) podem bloquear a redução.
 
-!questoes central=pe-tornozelo-0096 relacionadas=pe-tornozelo-0073,pe-tornozelo-0189 treino=pe-tornozelo-0428
+!questoes central=pe-tornozelo-0096 relacionadas=pe-tornozelo-0073,pe-tornozelo-0189 treino=pe-tornozelo-0428,pe-tornozelo-0446
 conceito: O sangue do tálus entra pelo colo e chega ao corpo de forma retrógrada; o interósseo é o suporte da subtalar.
 como: Uma prova de Ortopedia perguntou a origem das artérias do canal e do seio do tarso; o TARO 2022 e outra prova mostraram os ligamentos do seio do tarso.
 armadilha: Achar que o sangue do tálus entra pelo corpo.
@@ -155,7 +155,7 @@ Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 63, Fig. 
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 88, p. 3846), acrescenta que o **gastrocnêmio** flete o tornozelo melhor com o **joelho estendido** e o **sóleo** com o **joelho fletido**, e que o **plantar** é o enxerto autógeno preferido para reconstruir o tibial anterior.
 
-!questoes relacionadas=joelho-0150
+!questoes relacionadas=joelho-0150 treino=pe-tornozelo-0432,pe-tornozelo-0433,pe-tornozelo-0436,pe-tornozelo-0440,pe-tornozelo-0441,pe-tornozelo-0442
 conceito: O flexor longo dos dedos nasce da tíbia posterior e, no tornozelo, fica imediatamente anterior à artéria tibial posterior; o poplíteo nasce dentro da articulação, no côndilo lateral do fêmur, e vai à tíbia posterior proximal.
 como: Provas de Ortopedia mostraram com uma seta o flexor longo dos dedos e o poplíteo.
 armadilha: Trocar o flexor longo dos dedos (tíbia) pelo flexor longo do hálux (fíbula), ou o poplíteo pela cabeça do gastrocnêmio.
@@ -184,7 +184,7 @@ armadilha: Trocar o flexor longo dos dedos (tíbia) pelo flexor longo do hálux 
 
 **O bloqueio do tornozelo** (Netter) usa cinco pontos: fibular superficial em botão anterolateral; **fibular profundo** com a agulha **entre o tibial anterior e o extensor longo do hálux**, até o osso, aspirando (artéria tibial anterior); safeno anterior ao maléolo medial; **tibial posterior à artéria tibial posterior**, anterior ao flexor longo do hálux; sural entre o maléolo lateral e o tendão do calcâneo. O dorso tem **três cutâneos**: dois do fibular superficial e um do sural.
 
-!questoes central=joelho-0185 relacionadas=joelho-0147
+!questoes central=joelho-0185 relacionadas=joelho-0147 treino=pe-tornozelo-0438,pe-tornozelo-0443
 conceito: O fibular profundo acompanha a artéria tibial anterior, passa sob o retináculo inferior e se divide em motor (extensores curtos) e sensitivo (1º espaço); o fibular superficial fura a fáscia 10 a 12 cm acima do maléolo, conforme o livro, e vira os cutâneos dorsais medial e intermédio.
 como: Provas de Ortopedia mostraram em figura o fibular profundo e o superficial; o TARO 2024 pediu o ramo sensitivo do fibular superficial numa prancha.
 armadilha: Dar ao fibular superficial função motora no pé, ou chamar de profundo o ramo cutâneo do dorso.
@@ -242,7 +242,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.20, p.
 | posterolateral | sural e safena parva | portal e via posterolaterais |
 !fim
 
-!questoes relacionadas=pe-tornozelo-0116
+!questoes relacionadas=pe-tornozelo-0116 treino=pe-tornozelo-0437,pe-tornozelo-0450
 conceito: Atrás do maléolo medial, o flexor longo dos dedos é o segundo tendão, entre o tibial posterior e o feixe, imediatamente anterior à artéria tibial posterior.
 como: O TEOT 2023 assinalou o tendão do flexor longo dos dedos no tornozelo medial.
 armadilha: Marcar o tibial posterior (colado ao maléolo) ou o flexor longo do hálux (atrás do nervo).
@@ -308,7 +308,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 94, Fig. 94.2, p
 
 **LISFRANC e CHOPART.** Não há ligamento entre as bases do 1º e do 2º metatarsais; o **ligamento de LISFRANC**, do cuneiforme medial à base do 2º, é o maior da região, com feixes dorsal, interósseo e plantar, e os **plantares são mais fortes**, o que explica as luxações dorsais (Rockwood, cap. 68). A transversa do tarso fica **paralela e flexível em eversão** e **rígida em inversão**. A **placa plantar** é a sustentação primária da metatarsofalângica (turf toe); o neuroma de **MORTON** fica entre o 2º e o 3º metatarsais no Netter (mulheres 5:1) e mais no 3º espaço no Campbell (8:1).
 
-!questoes central=pe-tornozelo-0295 relacionadas=pe-tornozelo-0337
+!questoes central=pe-tornozelo-0295 relacionadas=pe-tornozelo-0337 treino=pe-tornozelo-0444
 conceito: O componente mais forte do deltoide é o tibiotalar posterior profundo; nos laterais, o talofibular anterior é o mais fraco e o posterior o mais forte; na sindesmose, o tibiofibular posterior é o mais forte (Campbell).
 como: O TARO 2014 perguntou o componente mais forte do deltoide; o TARO 2008, o que o procedimento não anatômico limita na instabilidade lateral crônica.
 armadilha: Marcar a tibiocalcânea, que o Netter chama de mais forte só no plano superficial.
@@ -364,7 +364,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 89, Fig. 89.3, p
 
 **Os compartimentos.** Classicamente eram quatro; **MANOLI e WEBER** descreveram **nove**, adotados pelo Netter e pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17): medial, lateral, central superficial, **calcâneo** (central profundo), adutor e quatro interósseos. O **calcâneo**, com o **quadrado plantar** e o feixe tibial posterior, **comunica-se com o posterior profundo da perna**; a barreira entre ele e o central superficial cede a **10 mmHg**. O Rockwood registra a descompressão possível por **duas incisões dorsais de 1 cm**.
 
-!questoes relacionadas=pe-tornozelo-0318
+!questoes relacionadas=pe-tornozelo-0318 treino=pe-tornozelo-0439,pe-tornozelo-0447
 conceito: O extensor curto dos dedos é o ventre do dorso do pé, nasce na face dorsal do calcâneo e é inervado pelo ramo lateral do fibular profundo.
 como: O TARO 2024 assinalou o músculo numa prancha do dorso do pé.
 armadilha: Confundir o ventre curto do dorso com o extensor longo dos dedos, cujo ventre fica na perna.
@@ -388,7 +388,7 @@ O Netter atribui o freio excêntrico da dorsiflexão ao **gastrocnêmio**, na fa
 
 **O pé cavo.** O Netter o explica por desequilíbrio no pé imaturo: **tibial anterior fraco**, **fibular longo e tibial posterior fortes**; excluir **CHARCOT-MARIE-TOOTH**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 92, p. 4039), dá os dois pares: o **fibular longo** vence o **tibial anterior** fraco (1º metatarsal fletido) e o **tibial posterior** vence o **fibular curto** fraco (varo do retropé); a correção leva o **fibular longo para o curto** e o **tibial posterior para o dorso** (cap. 92).
 
-!questoes central=pe-tornozelo-0351 relacionadas=pe-tornozelo-0362,pe-tornozelo-0342
+!questoes central=pe-tornozelo-0351 relacionadas=pe-tornozelo-0362,pe-tornozelo-0342 treino=pe-tornozelo-0445
 conceito: Na batida do calcanhar, o tibial anterior contrai excentricamente; no pé plano, o gastrocnêmio contrai excentricamente para frear a dorsiflexão (Netter); no cavo varo de CHARCOT-MARIE-TOOTH, fraquejam o tibial anterior e o fibular curto.
 como: O TARO 2006 cobrou a ação excêntrica do tibial anterior no início do apoio e a do sóleo no médio apoio; o TARO 2008, o músculo fraco no pé cavo varo.
 armadilha: Chamar de concêntrica a contração que freia um movimento, ou pôr a fraqueza no fibular longo, que no cavo está preservado.
@@ -499,7 +499,7 @@ O **primeiro ramo do plantar lateral** é comprimido **entre a borda lateral do 
 
 O **plantar medial** nasce no túnel como divisão anterior do tibial e é comprimido no **nó de HENRY**, onde cruza superficial ao flexor longo dos dedos e ao flexor longo do hálux: é o **pé do corredor** (jogger's foot), com dor no arco medial irradiando aos **três dedos mediais**, piorada por valgo excessivo e órtese rígida no arco (Campbell, p. 4031 e 4032). Cirurgia só depois do conservador.
 
-!questoes central=pe-tornozelo-0424
+!questoes central=pe-tornozelo-0424 treino=pe-tornozelo-0449
 conceito: Falhado o conservador, o túnel do tarso é tratado pela descompressão do tibial e dos ramos (abrir o retináculo dos flexores e a aponeurose do abdutor do hálux, com neurólise); o HEBERT atribui a BAXTER a cirurgia de descompressão do nervo e dos ramos, e o Campbell dá a BAXTER, PFEFFER e WATSON a liberação do primeiro ramo do plantar lateral.
 como: O ENARE de pré-requisito em Cirurgia da Mão de 2023 pediu a técnica para o túnel do tarso após falha do conservador, misturando epônimos de outras regiões: Chevron, MCCASH, PULVERTAFT e ROLAND.
 armadilha: Os distratores são técnicas reais de outro lugar: Chevron é osteotomia do hálux valgo (Campbell, cap. 87), MCCASH é a palma deixada aberta no DUPUYTREN (cap. 80, p. 3526) e PULVERTAFT é o entrelaçamento de tendões (cap. 35, p. 1260); ROLAND não aparece como técnica nos livros, e o nome parecido, ROLANDO, é fratura da base do 1º metacarpal (cap. 72, p. 3201).
@@ -530,7 +530,7 @@ A eletrofisiologia pode confirmar: fibrilações, ondas positivas e potencial mo
 | Resultado | sem causa, cerca de 25% sem alívio | 80% a 100% bons |
 !fim
 
-!questoes central=pe-tornozelo-0175
+!questoes central=pe-tornozelo-0175 treino=pe-tornozelo-0448
 conceito: A síndrome do túnel do tarso anterior é a compressão do nervo fibular profundo sob o retináculo extensor inferior, com dor no dorso, hipoestesia do 1º espaço e, raramente, atrofia do extensor curto dos dedos.
 como: Uma prova da SBOT-SP perguntou qual nervo a síndrome acomete, com o fibular superficial, o "tibial anterior" e o "tibial posterior" como distratores.
 armadilha: Marcar tibial posterior pensando no túnel do tarso clássico, que é do nervo tibial atrás do maléolo medial, ou fibular superficial, que é comprimido onde fura a fáscia no terço distal da perna e não sob o retináculo.

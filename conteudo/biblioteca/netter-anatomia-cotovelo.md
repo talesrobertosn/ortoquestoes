@@ -68,7 +68,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed., trata o assunto em dois ca
 
 A irrigação também vem do Rockwood (cap. 40): um **anel pericervical** formado por ramos da **recorrente radial** e da **ulnar**, um ramo da **interóssea** para o colo e a **nutrícia** por dentro. Placa larga e dissecção circunferencial do colo ameaçam esse anel.
 
-!questoes treino=ombro-cotovelo-0659
+!questoes treino=ombro-cotovelo-0659,ombro-cotovelo-0769,ombro-cotovelo-0773,ombro-cotovelo-0775
 conceito: Com o antebraço em rotação neutra, a zona de segurança da cabeça do rádio (110 graus pela marcação de HOTCHKISS) fica centrada cerca de 10 graus anterior à linha médio-axial lateral; é a parte que não articula com a incisura radial da ulna.
 como: O simulado da prova de título de cirurgia da mão de 2023 pediu onde fica o centro da zona de 110 graus em relação ao ponto médio da face lateral, com o antebraço neutro.
 armadilha: Escolher 10 graus posterior ou 30 graus: a zona é lateral e um pouco anterior com o antebraço neutro; posteriorizar a placa a joga na articulação radiulnar proximal.
@@ -94,7 +94,7 @@ O complexo colateral medial (o Netter chama de **colateral ulnar**, LCU) tem **t
 
 Quanto ele segura. O Campbell 52 dá os números: com o cotovelo **estendido**, o valgo é dividido **igualmente** entre o colateral ulnar, a **cápsula anterior** e a **articulação**; a **90 graus**, o colateral ulnar responde por **55%**, com o feixe anterior como estabilizador primário. A falência atritiva do feixe anterior no arremessador é, de longe, a forma mais comum de instabilidade recorrente do cotovelo, porque na aceleração do arremesso o ligamento recebe forças próximas do seu limite de ruptura.
 
-!questoes central=ombro-cotovelo-0032 treino=ombro-cotovelo-0651,ombro-cotovelo-0670
+!questoes central=ombro-cotovelo-0032 treino=ombro-cotovelo-0651,ombro-cotovelo-0670,ombro-cotovelo-0776
 conceito: O feixe anterior do colateral medial é o mais resistente e o principal restritor do valgo; nasce na face anteroinferior do epicôndilo medial e se insere no tubérculo sublime, na face medial do processo coronoide.
 como: A prova de título de 2022 perguntou qual feixe é o mais resistente; o TARO 2016 perguntou que ligamento se insere no tubérculo sublime; o simulado da prova de título de cirurgia da mão de 2026 juntou as duas coisas, feixe e inserção distal.
 armadilha: Trocar pelo feixe posterior (que vai ao olécrano e forma o assoalho do túnel cubital), pelo transverso (que não cruza a articulação) ou pelo anular (que fica na incisura radial e abraça o colo do rádio).
@@ -124,7 +124,7 @@ Uma surpresa nos números: o Campbell 52 diz que o colateral lateral contribui c
 
 **Como a IRPL aparece no exame.** O Netter (p. 126) descreve o **pivot shift** do cotovelo: paciente com o cotovelo supinado e estendido, ombro fletido acima da cabeça, aplica-se carga axial em supinação com valgo enquanto se flete o cotovelo; o teste é positivo se houver apreensão, subluxação palpável da cabeça do rádio ou a pele afundando sobre ela.
 
-!questoes treino=ombro-cotovelo-0669
+!questoes treino=ombro-cotovelo-0669,ombro-cotovelo-0770,ombro-cotovelo-0777
 conceito: O ligamento colateral ulnar lateral (LUCL), do epicôndilo lateral à crista do supinador da ulna, é a principal estrutura contra a instabilidade rotatória posterolateral; a sua ruptura é a lesão essencial da IRPL.
 como: A prova de título de 2024 perguntou a principal estrutura que impede a instabilidade rotatória posterolateral, com anular, cabeça do rádio e colateral radial como distratores.
 armadilha: O nome engana: "colateral ulnar lateral" é lateral (complexo do radial), não é o colateral medial; e o colateral radial propriamente dito vai ao anular, não à ulna, e segura pouco a rotação.
@@ -181,7 +181,7 @@ O jeito mais rápido de organizar os músculos do cotovelo é pelos dois epicôn
 | ERCC | epicôndilo lateral (fundido ao ED) | base do 3º metacarpal | radial ou interósseo posterior | extensão do punho |
 !fim
 
-!questoes central=ombro-cotovelo-0018 relacionadas=ombro-cotovelo-0216,ombro-cotovelo-0251,ombro-cotovelo-0256 treino=ombro-cotovelo-0685
+!questoes central=ombro-cotovelo-0018 relacionadas=ombro-cotovelo-0216,ombro-cotovelo-0251,ombro-cotovelo-0256 treino=ombro-cotovelo-0685,ombro-cotovelo-0768,ombro-cotovelo-0772,ombro-cotovelo-0780
 conceito: No epicôndilo lateral nascem o ancôneo (radial, extensor do cotovelo, plano do acesso de KOCHER) e o extensor comum, com as origens do ERCC e do extensor dos dedos indistinguíveis; o braquiorradial, do radial, tem como função principal fletir o antebraço; o pronador redondo, do mediano, nasce no epicôndilo medial.
 como: O TARO 2021 mostrou o ancôneo com seta e perguntou o nervo; uma prova de Ortopedia perguntou a função principal do braquiorradial; a prova de título de 2023 perguntou que origens não se distinguem no epicôndilo lateral; o TEOT 2024 mostrou o pronador redondo na via volar.
 armadilha: Inervar o ancôneo pelo ulnar (ele fica perto do olécrano, mas é do radial); dar ao braquiorradial a supinação ou a pronação; trocar o pronador redondo pelo quadrado ou pelo interósseo anterior.
@@ -255,7 +255,7 @@ O Rockwood and Green (cap. 39) organiza essa rede em **três arcadas**, que expl
 
 **A artéria radial no antebraço e o retalho chinês.** A radial corre sobre o pronador redondo, sob o braquiorradial, e no punho fica entre o FRC e o braquiorradial (Rockwood, cap. 42). O Campbell 15 (cap. 70, p. 3131) descreve o **retalho antebraquial radial**: a radial irriga a pele distal, palmar e lateral do antebraço (cerca de 16 por 8 cm), o retalho é fino, pode ser fasciocutâneo pediculado, osteocutâneo com um pedaço do rádio ou livre, e é sensível pelo musculocutâneo; a **desvantagem** citada é o **defeito na área doadora** e o sacrifício da radial, e o **teste de ALLEN** é obrigatório antes. O Green (cap. 24, pp. 859 e 860) usa o retalho radial em ilha justamente para cobrir defeitos **sobre o olécrano**. O HEBERT (cap. 53) chama-o de **retalho chinês** e o indica sobretudo para a primeira comissura.
 
-!questoes central=ombro-cotovelo-0530 treino=ombro-cotovelo-0647,ombro-cotovelo-0645,ombro-cotovelo-0644
+!questoes central=ombro-cotovelo-0530 treino=ombro-cotovelo-0647,ombro-cotovelo-0645,ombro-cotovelo-0644,ombro-cotovelo-0786
 conceito: A artéria braquial começa na borda inferior do redondo maior como continuação da axilar, corre medial ao bíceps com o mediano e termina na fossa cubital em radial e ulnar; em volta do cotovelo, três arcadas (lateral, medial e posterior) ligam os ramos colaterais aos recorrentes.
 como: O simulado da prova de título de cirurgia da mão de 2026 perguntou onde começa a braquial e a relação com o bíceps, e com que frequência ela se divide alto no braço; a PUC-SP 2023 perguntou sobre o retalho antebraquial radial.
 armadilha: Confundir o início da braquial com o da axilar (primeira costela) ou o limite entre as partes da axilar (peitoral menor); pôr a artéria lateral ao bíceps com o musculocutâneo.
@@ -284,7 +284,7 @@ alerta: A frequência da bifurcação alta da braquial (cerca de 15%, `ombro-cot
 
 O **cutâneo medial do antebraço** passa **posterior ao ulnar** no epicôndilo ou acima dele em **90%** (Green, p. 941), e é o nervo que a incisão medial mais lesa.
 
-!questoes treino=ombro-cotovelo-0646,ombro-cotovelo-0643
+!questoes treino=ombro-cotovelo-0646,ombro-cotovelo-0643,ombro-cotovelo-0771,ombro-cotovelo-0774,ombro-cotovelo-0783,ombro-cotovelo-0787
 conceito: Na descompressão in situ, libera-se o teto do túnel cubital, formado pelo ligamento de OSBORNE (retináculo do túnel cubital) em continuidade com a aponeurose entre as cabeças do FUC; o assoalho é o colateral medial (feixes posterior e transverso) com a cápsula.
 como: O simulado da prova de título de cirurgia da mão de 2026 pediu teto e assoalho do túnel cubital, nessa ordem.
 armadilha: Inverter teto e assoalho, ou trazer estruturas de outros túneis: lacerto fibroso (mediano), arcada de STRUTHERS (ulnar, mas 8 cm acima).
@@ -322,7 +322,7 @@ alerta: Os livros lidos dão a ordem dos ramos (pronador redondo primeiro) mas n
 | rádio proximal | NIP cruza 5 a 6 cm abaixo da radiocapitelar | risco na via ao rádio proximal |
 !fim
 
-!questoes central=mao-0535
+!questoes central=mao-0535 treino=ombro-cotovelo-0778,ombro-cotovelo-0779,ombro-cotovelo-0784
 conceito: A arcada de FROHSE é a borda fibrosa proximal do supinador, por onde o ramo profundo do radial entra no músculo e vira interósseo posterior; é o principal ponto de compressão do NIP.
 como: Uma prova de Ortopedia mostrou o cotovelo com a letra "b" sobre a borda do supinador e pediu o nome, com lacerto fibroso, arcada de STRUTHERS e processo supracondilar nas outras alternativas.
 armadilha: Cada estrutura tem o seu nervo: lacerto fibroso e processo supracondilar comprimem o mediano; arcada de STRUTHERS, o ulnar; FROHSE, o interósseo posterior.
@@ -354,7 +354,7 @@ A pergunta de toda via é a mesma: entre que músculos eu entro, que nervos iner
 
 **KAPLAN e os outros laterais.** A Tabela 1.1 do Campbell lista **KOCHER entre EUC e ancôneo**, CADENAT entre ERCC e ERLC, **KAPLAN entre ERCC e EUC** (como está impresso) e KEY-CONWELL entre braquiorradial e ERLC. Na via global, o mesmo capítulo usa o intervalo de KAPLAN como o espaço **entre o extensor dos dedos e os radiais**, seguido até o NIP na arcada de FROHSE. O que vale para a prova: o KAPLAN é **mais anterior** que o KOCHER e chega mais perto do NIP, por isso exige pronação.
 
-!questoes relacionadas=ombro-cotovelo-0175,ombro-cotovelo-0122,ombro-cotovelo-0188
+!questoes relacionadas=ombro-cotovelo-0175,ombro-cotovelo-0122,ombro-cotovelo-0188 treino=ombro-cotovelo-0781,ombro-cotovelo-0782
 conceito: Na Tabela 1.1 do Campbell 15 (cap. 1, p. 110), a via lateral de KAPLAN passa entre o extensor radial curto do carpo e o extensor ulnar do carpo; KOCHER fica entre o EUC e o ancôneo, CADENAT entre ERCC e ERLC e KEY-CONWELL entre braquiorradial e ERLC.
 como: O TARO 2023 perguntou entre que músculos se faz a via lateral de KAPLAN, oferecendo os intervalos de KOCHER (EUC e ancôneo), de KEY-CONWELL (ERLC e braquiorradial) e de CADENAT (ERCC e ERLC) como distratores.
 armadilha: Marcar EUC e ancôneo, que é o KOCHER, o intervalo lateral mais conhecido; o KAPLAN é mais anterior.
@@ -428,7 +428,7 @@ O **anteromedial** fica **2 cm distal e 2 cm anterior** ao epicôndilo medial, a
 | ulnar distal (Green) | 3 a 4 cm distal à radiocapitelar posterior, lateral à ulna | não citado | ver (ou atacar) o capítulo posterior |
 !fim
 
-!questoes central=ombro-cotovelo-0568 relacionadas=ombro-cotovelo-0521
+!questoes central=ombro-cotovelo-0568 relacionadas=ombro-cotovelo-0521 treino=ombro-cotovelo-0785
 conceito: O lateral direto é centrado no ponto fraco; o anterolateral distal é o mais próximo do radial (7,2 contra 13,7 mm do proximal); o anteromedial fica 2 cm distal e 2 cm anterior ao epicôndilo medial.
 como: A SBOT-SP pediu a afirmação correta sobre os portais; o INTO 2026 pediu só a posição do anteromedial.
 armadilha: Achar o distal mais seguro que o proximal, pôr o anteromedial posterior ao epicôndilo (território do ulnar) ou a só 1 cm dele.

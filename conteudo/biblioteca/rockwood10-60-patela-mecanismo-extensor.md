@@ -248,7 +248,7 @@ Incidência anual de **5,8 por 100.000**, **29 por 100.000 entre 10 e 17 anos**.
 
 Operar o primeiro episódio para evitar recidiva é controverso: houve melhor resultado no curto e médio prazo em alguns estudos, sem diferença no longo prazo. Indicações relativas: lesão osteocondral, fragmento livre, ruptura palpável do complexo LPFM, VMO e adutor, avulsão grande ou ruptura completa do LPFM na RM, subluxação na incidência de MERCHANT e falha precoce com nova luxação; considerar o atleta de alto nível e quem tem fatores predisponentes (**displasia troclear, patela alta e TT-TG aumentado**). Os autores: redução fechada, imobilização em extensão por cerca de **2 semanas**, carga conforme a dor, RM se hemartrose grande ou fratura osteocondral na radiografia, depois órtese estabilizadora e fortalecimento do VMO.
 
-!questoes central=trauma-1020,joelho-0232,joelho-0057 relacionadas=joelho-0284,joelho-0219,joelho-0033,trauma-1050 treino=trauma-1650
+!questoes central=trauma-1020,joelho-0232,joelho-0057 relacionadas=joelho-0284,joelho-0219,joelho-0033,trauma-1050 treino=trauma-1650,joelho-0391,joelho-0392
 conceito: Na luxação lateral, a fratura osteocondral típica é na borda inferomedial da patela, e a RM mostra contusão do côndilo femoral lateral e da faceta medial; hemartrose grande pede RM, e a fratura osteocondral grande desviada é indicação cirúrgica.
 como: O TARO 2026 pediu a borda da patela com a lesão osteocondral (inferior e medial). Uma prova sem ano cobrou a contusão na RM (côndilo lateral e faceta patelar medial); o TEOT 2022, a fratura osteocondral do adolescente na luxação patelar. O TARO 2007 (sem gabarito) perguntou a indicação cirúrgica aguda, com a fratura osteocondral entre as opções.
 armadilha: Côndilo femoral medial: a contusão é do côndilo lateral, que a faceta medial atinge ao voltar.
@@ -293,7 +293,7 @@ armadilha: Bilateral mais comum no tendão patelar: a bilateral é mais do quadr
 
 AP e perfil em toda suspeita; a radiografia é o meio mais custo-efetivo para a ruptura do patelar. No **patelar roto**, o quadríceps puxa a patela sem oposição: **patela alta**, acima da linha de BLUMENSAAT no perfil a 30 graus; fragmentos sugerem avulsão. No **quadricipital roto**: obliteração da sombra do tendão, massa suprapatelar, calcificações suprapatelares e **patela deslocada para baixo**; num estudo, 17 de 18 rupturas tinham ao menos três desses sinais. A **ultrassonografia** de alta resolução diagnostica rupturas completas e parciais, agudas e crônicas; a **RM** é eficaz, mas cara, e fica para as parciais, subagudas ou crônicas.
 
-!questoes treino=trauma-1652
+!questoes treino=trauma-1652,joelho-0389
 conceito: Ruptura do patelar: patela alta, acima da linha de BLUMENSAAT; ruptura do quadricipital: patela baixa, perda da sombra do tendão, massa e calcificações suprapatelares.
 !fim
 
@@ -307,7 +307,7 @@ A cirurgia virou padrão desde o fim do século 19 (QUENU). Sem cirurgia, só a 
 
 Avulsão do polo superior: desbridar o coto, duas suturas inabsorvíveis número 5 em **KRACKOW** (quatro ramos), calha no polo superior, **três túneis de 2 mm** longitudinais de superior para inferior, ramos centrais pelo túnel do meio, nós no polo inferior **sem amarrar sobre o tendão patelar** (um ramo passa por trás dele), amarrados **em extensão completa**; reparar o retináculo e testar de 0 a 90 graus. Âncoras de 4,75 mm sem nó são alternativa, com resistência igual em cadáver e incisão menor. No idoso a ruptura costuma ser transversa, na **junção osteotendínea**; no jovem, no **meio do tendão** ou na **junção musculotendínea**. Um estudo em cadáver achou uma **zona hipovascular a 1 a 2 cm do polo superior da patela**, onde ocorrem as rupturas espontâneas, e a lesão muitas vezes se estende pelo tendão do vasto intermédio, um pouco acima da ruptura do reto femoral (Campbell, cap. 53, p. 2277). Ruptura no meio do tendão: sutura término-terminal; se frágil, **retalho triangular de espessura parcial** da face anterior do tendão proximal (2 polegadas de base, 3 de lado) rebatido sobre o reparo, ou enxerto. Reparos frágeis, mais comuns no quadríceps, ficam 4 a 6 semanas em gesso cilíndrico com carga.
 
-!questoes relacionadas=trauma-1034,joelho-0011
+!questoes relacionadas=trauma-1034,joelho-0011 treino=joelho-0390
 conceito: O reparo do quadricipital agudo é transósseo, com KRACKOW e três túneis, amarrado em extensão; o retalho de espessura parcial rebatido reforça a sutura frágil do meio do tendão.
 como: O TARO 2018 e o TARO 2025 perguntaram onde fica a zona hipovascular do tendão quadricipital em que ocorre a maioria das rupturas espontâneas (1 a 2 cm do polo superior da patela). O capítulo 60 não traz esse dado; ele está no Campbell (cap. 53, p. 2277), num estudo em cadáver.
 !fim
@@ -320,7 +320,7 @@ Técnica dos autores: incisão do meio da patela à tuberosidade; desbridar; rep
 
 **Pós-operatório:** órtese travada em extensão; flexão a partir de 2 semanas, de 0 a 45 graus, avançando 20 graus a cada 2 semanas, abaixo de 90 graus até 6 semanas; carga imediata com muletas por pelo menos 6 semanas; extensão ativa liberada em 6 semanas. Esporte competitivo só com **4 a 6 meses**, depois de recuperar a força isocinética. Os resultados vão de 70% a 100% de bons e excelentes; a configuração da ruptura e a técnica não mudam o resultado, o tempo sim.
 
-!questoes central=joelho-0259,joelho-0210,joelho-0173 relacionadas=joelho-0280 treino=trauma-1653
+!questoes central=joelho-0259,joelho-0210,joelho-0173 relacionadas=joelho-0280 treino=trauma-1653,joelho-0393
 conceito: O tendão patelar rompe mais na inserção no polo inferior, como avulsão; repara-se por túneis transósseos com nós no polo superior, e a cerclagem de proteção, 1 cm atrás da tuberosidade, é apertada a 30 graus de flexão e testada a 90.
 como: O TARO 2012 perguntou onde a ruptura é mais frequente (polo inferior da patela); o TARO 2009, a porção (proximal, com avulsão óssea). Uma prova sem ano pediu o ângulo de tensionamento da cerclagem de proteção (30 graus). O TARO 2007 (sem gabarito) perguntou o reforço na ruptura proximal.
 armadilha: 90 graus: é o ângulo do teste do reparo e o da cerclagem da patelectomia parcial, não o da cerclagem do tendão patelar.
@@ -333,7 +333,7 @@ alerta: No TARO 2009 (joelho-0259), o gabarito foi a porção proximal "com avul
 
 **Patelar:** o quadríceps sem oposição contrai o mecanismo. Descreveram-se **tração pré-operatória** com pino de STEINMANN na patela (5 libras, de 4 dias a 2 semanas), reforço com semitendíneo (com a patela abaixada até 1 polegada da superfície articular da tíbia, ou pela técnica de FRIEDMAN com âncora na tíbia lateral), aloenxerto e a reconstrução tardia de **ECKER** com semitendíneo e grácil, usando o INSALL-SALVATI para a altura e gesso por 6 semanas. Não há séries grandes; os resultados são inferiores aos do reparo agudo. O crônico é protegido por mais tempo: gesso cilíndrico com carga por 6 semanas, depois órtese de 0 a 45 graus, avançando 20 a 30 graus a cada 2 semanas.
 
-!questoes central=joelho-0030,trauma-1074,joelho-0254 relacionadas=trauma-1058 treino=trauma-1654
+!questoes central=joelho-0030,trauma-1074,joelho-0254 relacionadas=trauma-1058 treino=trauma-1654,joelho-0388
 conceito: Ruptura do quadricipital com mais de 2 semanas retrai até 5 cm; se os cotos não se aproximam, alongamento com V invertido de espessura total (CODIVILLA); o retalho de espessura parcial rebatido (o que a banca chama de SCUDERI) só reforça.
 como: O TARO 2016 pediu o nome da técnica de alongamento com retalho em V invertido (CODIVILLA, contra ECKER, SCUDERI e MANDELBAUM); o TEOT 2023 mostrou a técnica em imagem na lesão crônica do quadricipital. O TARO 2008 perguntou o que a técnica de SCUDERI usa (retalho proximal invertido do quadríceps). O TEOT 2024 cobrou a técnica de MANDELBAUM no patelar crônico, que o capítulo não descreve.
 armadilha: SCUDERI como alongamento: o retalho de espessura parcial reforça a sutura; quem alonga é o V invertido de espessura total de CODIVILLA.

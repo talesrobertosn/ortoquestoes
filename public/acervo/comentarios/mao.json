@@ -65410,5 +65410,316 @@
   ],
   "geradoEm": "2026-11-19",
   "conferido": false
+ },
+ "mao-3864": {
+  "conceito": "O dorso do punho é atravessado por doze tendões extensores, e eles não passam soltos: o **retináculo dos extensores**, uma faixa fibrosa grossa, manda septos até o rádio e a ulna e forma **seis túneis fibro-ósseos**, os compartimentos dorsais. Eles são numerados de **radial para ulnar**, de I a VI, e quem sabe a ordem identifica qualquer tendão num corte transversal.\n\n### Como achar cada túnel num corte\n\nComece pelos ossos. Na face dorsal do rádio há uma saliência, o **tubérculo de LISTER**, o \"farol do punho\". Contando de radial para ulnar: dois tendões no I, dois no II, um tendão sozinho logo ulnar ao tubérculo (o III), um feixe de quatro ou cinco tendões juntos (o IV), **um tendão sozinho entre o rádio e a ulna (o V)** e, por fim, um tendão no sulco da própria cabeça da ulna (o VI).\n\n### O que passa em cada compartimento\n\nPelo Netter Atlas de Anatomia Ortopédica (cap. 5) e pelo Green's Operative Hand Surgery, 7ª edição (cap. 5, Fig. 5.2, p. 153): I, abdutor longo e extensor curto do polegar; II, extensores radiais longo e curto do carpo; III, extensor longo do polegar, que contorna o tubérculo de LISTER; IV, extensor dos dedos e extensor do indicador; **V, extensor do dedo mínimo**; VI, extensor ulnar do carpo.\n\nO quinto compartimento é um túnel de um tendão só, entre o rádio e a ulna, e tem sentido clínico: na artrite reumatoide, o tendão do extensor do mínimo pode romper ali, a ruptura de JACKSON-VAUGHN. Vale lembrar também que o extensor do indicador e o do mínimo correm do lado ulnar dos tendões comuns do mesmo dedo, o que ajuda a reconhecê-los na cirurgia.\n\nA tabela completa e a figura do Green estão no resumo de Anatomia da mão, do punho e do antebraço, seção Compartimentos extensores e os compartimentos do antebraço.\n\n**Por que esta questão foi criada.** O TEOT 2021 mostrou o dorso do punho e pediu o conteúdo do segundo compartimento; aqui a mesma lógica vai ao quinto, o compartimento que mais se troca com o sexto.",
+  "correta": "**A: extensor do dedo mínimo.** É o único tendão do quinto compartimento, que fica entre o rádio e a ulna, sobre a articulação radioulnar distal; na artrite reumatoide pode romper ali (JACKSON-VAUGHN).",
+  "incorretas": {
+   "B": "**Extensor ulnar do carpo** é o tendão do sexto compartimento, mais ulnar, no sulco da própria cabeça da ulna, onde pode estalar sobre o estiloide. Num corte, é o tendão apoiado na ulna, não o que fica entre os dois ossos.",
+   "C": "**Extensor longo do polegar** ocupa o terceiro compartimento, sozinho, logo ulnar ao tubérculo de LISTER, que ele contorna; fica sobre o rádio, longe da radioulnar distal.",
+   "D": "**Extensor do indicador** corre no quarto compartimento junto com os tendões do extensor dos dedos, no feixe de quatro ou cinco tendões sobre o rádio, e não num túnel próprio."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Túneis e Músculos",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 5, Fig. 5.2, p. 153",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3865": {
+  "conceito": "A regra que todo residente aprende primeiro é \"a face anterior do antebraço é do mediano\". Ela vale para quase tudo, e as duas exceções são exatamente o que a prova pergunta.\n\n### A regra e as exceções\n\nO Netter Atlas de Anatomia Ortopédica (cap. 5, Nervos) dá ao **mediano** o pronador redondo, o flexor radial do carpo, o palmar longo e o flexor superficial dos dedos; ao seu ramo **interósseo anterior**, o flexor profundo do indicador e do médio, o flexor longo do polegar e o pronador quadrado. Sobram dois músculos anteriores que não são do mediano: o **flexor ulnar do carpo** e a metade do **flexor profundo** que vai ao anular e ao mínimo. Os dois são do **ulnar**.\n\n### Por que o flexor ulnar do carpo é do ulnar\n\nA explicação é o caminho do nervo. O ulnar passa atrás do epicôndilo medial, no túnel cubital, e entra no antebraço **entre as duas cabeças do flexor ulnar do carpo**, a umeral e a ulnar. Ele literalmente atravessa o músculo e o inerva nesse ponto. Depois desce sob o ventre do flexor ulnar, sobre o flexor profundo, até o canal de GUYON.\n\nO sentido clínico está no nível da lesão. Só a lesão do ulnar **no cotovelo ou acima** tira o flexor ulnar do carpo e o flexor profundo do anular e do mínimo; a lesão no punho os poupa. Por isso o flexor ulnar do carpo é um dos três músculos que se testam com segurança no exame do ulnar, ao lado do abdutor do dedo mínimo e do primeiro interósseo dorsal: o tendão dele se vê e se palpa junto ao pisiforme quando o punho flete contra resistência.\n\nA tabela \"quem inerva o quê\" está no resumo de Anatomia da mão, do punho e do antebraço, seção Os nervos do antebraço e da mão.\n\n**Por que esta questão foi criada.** O TEOT 2025 apontou o flexor ulnar do carpo numa imagem e o TEOT 2023 pediu o nervo de um músculo assinalado; esta questão junta as duas coisas no músculo que mais derruba a regra do mediano.",
+  "correta": "**B: ulnar.** O nervo ulnar entra no antebraço entre as duas cabeças do flexor ulnar do carpo e o inerva ali; é uma das duas exceções à regra de que a face anterior é do mediano.",
+  "incorretas": {
+   "A": "**Mediano** inerva quase toda a face anterior (pronador redondo, flexor radial do carpo, palmar longo, flexor superficial), e é por isso que atrai o chute; mas o flexor ulnar do carpo é a exceção.",
+   "C": "**Interósseo anterior** é motor puro e só inerva o flexor profundo do indicador e do médio, o flexor longo do polegar e o pronador quadrado, todos na camada profunda.",
+   "D": "**Radial** cuida da face posterior e do grupo móvel (braquiorradial e extensores radiais); não tem músculo na face anterior do antebraço."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Nervos",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3866": {
+  "conceito": "O plexo braquial termina, na axila, em três **fascículos** (ou cordões), nomeados pela posição em relação à artéria axilar: **lateral**, **medial** e **posterior**. Cada nervo do membro superior nasce de um deles, e o mediano é o único grande nervo que nasce de dois.\n\n### A letra M da axila\n\nO fascículo lateral dá o musculocutâneo e uma raiz para o mediano; o fascículo medial dá o ulnar, o cutâneo medial do antebraço (C8 e T1) e a outra raiz do mediano. O Green's Operative Hand Surgery, 7ª edição (cap. 28, p. 936), descreve o mediano assim, da união de uma raiz do fascículo **lateral** com uma do **medial**.\n\n### Por que o posterior fica de fora\n\nO fascículo posterior é o dos **extensores**: dá o axilar e o radial, que inervam o deltoide, o tríceps e toda a face posterior do antebraço. O mediano é um nervo da face flexora, e a origem dele combina com isso. Guardar a lógica ajuda mais que decorar: fascículo posterior, músculos de trás; fascículos lateral e medial, músculos da frente.\n\nDepois de formado, o mediano desce no braço junto da artéria braquial, fica medial a ela na fossa cubital e entra no antebraço entre as duas cabeças do pronador redondo.\n\nO trajeto do mediano, da axila ao túnel do carpo, está no resumo de Anatomia da mão, do punho e do antebraço, seção Os nervos do antebraço e da mão.\n\n**Por que esta questão foi criada.** O TEOT 2023 pediu o nervo de um músculo assinalado; a prova de anatomia costuma subir um degrau e perguntar de onde o nervo vem no plexo, e esta questão treina esse passo.",
+  "correta": "**C: lateral e medial.** O mediano nasce da união de uma raiz do fascículo lateral com uma do medial; o posterior, o dos extensores, não participa.",
+  "incorretas": {
+   "A": "**Lateral e posterior** mistura o fascículo do musculocutâneo com o dos extensores; o posterior dá o axilar e o radial e não manda raiz ao mediano.",
+   "B": "**Medial e posterior** acerta a raiz medial e erra a segunda: o fascículo posterior é o do radial.",
+   "D": "**Lateral, medial e posterior** soma os três fascículos; nenhum nervo terminal do plexo recebe dos três, e o posterior não entra na formação do mediano."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 936",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Nervos",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3867": {
+  "conceito": "O túnel do carpo é um canal osteofibroso na face palmar do punho, e entender as paredes ajuda a contar o conteúdo.\n\n### As paredes\n\nO Netter Atlas de Anatomia Ortopédica (cap. 5, Túneis) descreve o **teto** como o **ligamento carpal transverso**, preso do lado ulnar no pisiforme e no hâmulo do hamato e do lado radial no escafoide e no trapézio; o **assoalho** são os ossos do carpo, que formam uma calha côncava. O ponto mais estreito fica na altura do **hâmulo do hamato**.\n\n### O conteúdo: nove tendões e um nervo\n\nPassam pelo túnel **quatro tendões do flexor superficial dos dedos**, **quatro do flexor profundo dos dedos** e o **flexor longo do polegar**: **nove tendões**. Junto deles, o **nervo mediano**, a estrutura mais superficial do conteúdo, logo abaixo do ligamento.\n\nNão entram na conta dois tendões vizinhos que costumam ser somados por engano: o **palmar longo**, que corre por cima do ligamento, e o **flexor radial do carpo**, logo lateral. O Netter, ao descrever a infiltração do túnel, situa o mediano abaixo do palmar longo e imediatamente medial ao flexor radial do carpo. O **nervo ulnar** e a artéria ulnar também ficam fora, no canal de GUYON, mais superficial e ulnar.\n\n### Por que isso importa\n\nQualquer coisa que aumente o volume dentro de um canal de paredes rígidas comprime o mediano, a estrutura mais macia. A tenossinovite dos nove tendões é a causa mais comum da síndrome do túnel do carpo; o Netter lembra também a artéria mediana persistente e os músculos aberrantes. E, na liberação, o ramo recorrente motor do mediano pode sair distal ao ligamento (50%), sob ele (30%) ou através dele (20%), o que manda abrir o ligamento pelo lado ulnar.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Túnel do carpo, canal de GUYON e os ligamentos do punho.\n\n**Por que esta questão foi criada.** O TARO 2024 mostrou um corte transversal do punho e pediu um tendão flexor dentro do túnel; saber quantos e quais tendões estão ali é o primeiro passo para ler esse corte.",
+  "correta": "**D: nove.** Quatro do flexor superficial, quatro do flexor profundo e o flexor longo do polegar, sob o ligamento carpal transverso, com o mediano por cima deles.",
+  "incorretas": {
+   "A": "**Seis** não corresponde a nenhuma contagem do túnel; é o número de compartimentos extensores do dorso, o que pode causar a confusão.",
+   "B": "**Sete** esquece dois tendões; costuma sair de quem conta só um tendão por dedo e o do polegar.",
+   "C": "**Oito** conta os quatro superficiais e os quatro profundos e esquece o flexor longo do polegar, o mais radial e profundo do túnel."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Túneis",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3868": {
+  "conceito": "A palma tem **espaços potenciais**: planos de tecido frouxo que, normalmente, não existem como cavidade, mas se abrem quando o pus entra. Saber os limites de cada um explica por onde a infecção se espalha e onde drenar.\n\n### Os três espaços\n\nO Netter Atlas de Anatomia Ortopédica (cap. 6) descreve três. O **espaço tenar** fica entre os tendões flexores, na frente, e o **músculo adutor do polegar**, atrás; o **espaço mediopalmar** fica entre os flexores e os **metacarpais** (com os interósseos); e o **espaço de PARONA** fica no punho, entre os flexores e o **pronador quadrado**. Um septo que vai da fáscia palmar ao terceiro metacarpal separa o tenar do mediopalmar.\n\n### Por que o adutor é o fundo do espaço tenar\n\nO adutor do polegar é o músculo mais profundo do lado radial da palma: a cabeça transversa nasce do terceiro metacarpal e corre transversal até a base da falange proximal do polegar. Ele forma um assoalho largo, e é sobre ele que o espaço tenar se abre; no corte da palma do Netter, o septo separa esse espaço, sobre o adutor, do mediopalmar, sobre os metacarpais e os interósseos.\n\nO **oponente** e os outros músculos da eminência tenar ficam no **compartimento tenar**, que é outra coisa: um compartimento muscular, fechado pela fáscia, que importa na síndrome compartimental da mão, e não um espaço de infecção.\n\nA figura do Netter com o septo entre os espaços está no resumo de Anatomia da mão, do punho e do antebraço, seção Os espaços da mão e a ponta do dedo.\n\n**Por que esta questão foi criada.** O TEOT 2024 pôs o adutor do polegar entre as alternativas de um músculo apontado na palma; esta questão usa o mesmo músculo como referência de profundidade, para o espaço tenar.",
+  "correta": "**A: adutor do polegar.** O espaço tenar é o plano entre os flexores e o adutor, o músculo mais profundo do lado radial da palma; o septo da palma o separa do mediopalmar.",
+  "incorretas": {
+   "B": "**Oponente do polegar** está dentro do compartimento muscular tenar, mais superficial e lateral; não é o fundo do espaço profundo.",
+   "C": "**Pronador quadrado** é o fundo do espaço de PARONA, no punho, onde as bolsas radial e ulnar se encontram; não fica na palma.",
+   "D": "**Interósseo palmar** está entre os metacarpais e forma, com eles, o fundo do espaço mediopalmar, do outro lado do septo."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão), Outras estruturas",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3869": {
+  "conceito": "Os tendões flexores dos dedos correm dentro de uma bainha reforçada por **polias**, faixas fibrosas que os seguram junto ao osso. Sem elas, o tendão se afastaria das falanges ao contrair, como a corda de um arco, e perderia força e amplitude.\n\n### A regra das polias\n\nSão **cinco anulares** (A1 a A5), de fibras transversais e espessas, e três ou quatro **cruciformes** (C1 a C3), finas, de fibras em X, que deixam a bainha dobrar sem enrugar. Pelo Netter Atlas de Anatomia Ortopédica (cap. 6) e pelo Green's Operative Hand Surgery, 7ª edição (cap. 6, Fig. 6.4, p. 186), as anulares seguem um padrão fácil de guardar: as **ímpares ficam sobre as articulações** (A1 na metacarpofalângica, **A3 na interfalângica proximal**, A5 na interfalângica distal) e as **pares ficam sobre as diáfises** (A2 na falange proximal, A4 na falange média). As cruciformes ficam nos intervalos: C1 entre a A2 e a A3, C2 entre a A3 e a A4, C3 entre a A4 e a A5.\n\n### Por que as polias das articulações são pequenas\n\nSobre uma articulação, a bainha precisa dobrar a cada flexão. Por isso a A3 é curta e fina, e a parte que segura o tendão contra a corda de arco fica com as polias das diáfises, a **A2** e a **A4**, as que o reparo do tendão flexor manda preservar. A A1, sobre a metacarpofalângica, é a polia do dedo em gatilho, aberta na liberação; a A3 entra na história do tendão flexor porque, junto da interfalângica proximal, o vínculo longo do profundo sai do superficial.\n\n### Onde isso cai na prova\n\nAs provas mostram a bainha de perfil e pedem a polia apontada, ou perguntam onde fica cada uma. Saber a regra ímpar na articulação, par na diáfise resolve as duas formas. Está no resumo de Anatomia da mão, do punho e do antebraço, seção Aparelho extensor, polias e as articulações dos dedos.\n\n**Por que esta questão foi criada.** O TEOT 2021 apontou com uma seta uma estrutura do dedo e pediu o nome; aqui o mesmo raciocínio de localização vai para a bainha flexora, com a polia que fica sobre a interfalângica proximal.",
+  "correta": "**B: A3.** As anulares ímpares ficam sobre as articulações: A1 na metacarpofalângica, A3 na interfalângica proximal e A5 na distal.",
+  "incorretas": {
+   "A": "**A2** é a anular larga sobre a diáfise da falange proximal, a mais importante contra a corda de arco; fica proximal à interfalângica proximal.",
+   "C": "**A4** fica sobre o meio da falange média, distal à interfalângica proximal; com a A2, é a polia que não se pode sacrificar.",
+   "D": "**C1** é cruciforme, fina e em X, no intervalo entre a A2 e a A3; a pergunta pede uma anular."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão), Outras estruturas",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6, Fig. 6.4, p. 186",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3870": {
+  "conceito": "Os dois extensores radiais do carpo parecem gêmeos: correm lado a lado, passam juntos no segundo compartimento dorsal e estendem o punho com desvio radial. Mas não nascem no mesmo lugar, e essa diferença é cobrada.\n\n### As duas origens\n\nO Green's Operative Hand Surgery, 7ª edição (cap. 18, p. 698), mostra que o **braquiorradial** e o **extensor radial longo do carpo** nascem da **crista supracondiliana lateral** do úmero, acima do cotovelo, enquanto o **extensor radial curto do carpo** sai do **epicôndilo lateral**, na massa extensora comum, junto com o extensor dos dedos, o extensor ulnar do carpo e parte do ancôneo. A origem do curto se mistura com o complexo ligamentar lateral do cotovelo, logo à frente dele.\n\n### Por que essa diferença importa\n\nA origem do extensor radial curto no epicôndilo é a sede da **epicondilite lateral**: a lesão degenerativa começa na face profunda do tendão de origem do curto. É por isso que a cirurgia da epicondilite procura o curto, sob o longo, e não o longo. Na outra ponta, o longo vai à base do **segundo** metacarpal e o curto à base do **terceiro**, onde fica a bossa carpometacarpal.\n\nOs dois, com o braquiorradial, formam o **compartimento móvel** do antebraço, liberado pela incisão dorsal na fasciotomia. O curto é ainda o limite radial da via de THOMPSON, que entra entre ele e o extensor dos dedos.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Compartimentos extensores e os compartimentos do antebraço.\n\n**Por que esta questão foi criada.** O TEOT 2025 mostrou o extensor radial curto do carpo numa figura e pediu o nome; aqui se pergunta a origem, que é o que separa o curto do longo.",
+  "correta": "**C: epicôndilo lateral.** O extensor radial curto do carpo sai da massa extensora comum no epicôndilo lateral, sede da epicondilite; o longo nasce acima, na crista supracondiliana.",
+  "incorretas": {
+   "A": "**Crista supracondiliana lateral** é a origem do braquiorradial e do extensor radial longo do carpo, mais proximais; é a pegadinha clássica de trocar o longo pelo curto.",
+   "B": "**Face posterior da ulna** dá origem aos músculos profundos do dorso, como o extensor longo do polegar e o extensor do indicador, não aos extensores radiais.",
+   "D": "**Epicôndilo medial** é a origem da massa flexora e pronadora (pronador redondo, flexor radial do carpo, palmar longo, flexor ulnar do carpo), do outro lado do cotovelo."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 18, p. 698",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Músculos",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3871": {
+  "conceito": "O punho tem dois túneis palmares, um ao lado do outro e em andares diferentes: o **túnel do carpo**, radial e profundo, e o **canal de GUYON**, ulnar e mais superficial. A peça que liga os dois é o **ligamento carpal transverso**, que é o teto de um e o assoalho do outro, e é exatamente aí que a prova tenta confundir.\n\n### As paredes do canal de GUYON\n\nPela prancha de túneis do Netter Atlas de Anatomia Ortopédica (cap. 5): **teto**, o **ligamento carpal palmar**, uma faixa da fáscia do antebraço que se espessa sobre o punho; **assoalho**, o ligamento carpal transverso; **parede medial**, o pisiforme; **parede lateral**, o hâmulo do hamato. Dentro passam o nervo e a artéria ulnares, e nenhum tendão. O ligamento piso-hamato fica no fundo, entre os dois ossos, e o ramo profundo do nervo passa sob o arco dos hipotenares logo adiante.\n\n### Como imaginar o corte\n\nNum corte transversal na altura do pisiforme, o ligamento carpal transverso é uma faixa reta que sai do pisiforme e do hâmulo e corre para o lado radial, até o escafoide e o trapézio. Embaixo dela, do lado radial, ficam os nove tendões flexores e o mediano. Por cima dela, do lado ulnar, entre o pisiforme e o hâmulo, ficam o nervo e a artéria ulnares, cobertos por uma segunda faixa, mais fina: o carpal palmar.\n\n### Por que importa\n\nNa liberação do canal de GUYON, o cirurgião abre o teto, o carpal palmar, e acha o nervo; o Green's Operative Hand Surgery, 7ª edição (cap. 28, p. 940), lembra que o ramo profundo fica visível só 1 a 2 mm antes de mergulhar. Já na liberação do túnel do carpo, o que se abre é o transverso, e o nervo ulnar fica protegido por fora e por cima dele.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Túnel do carpo, canal de GUYON e os ligamentos do punho.\n\n**Por que esta questão foi criada.** O TARO 2023 pediu a localização do ligamento carpal transverso numa radiografia; esta questão põe o transverso e o carpal palmar lado a lado, para separar o teto do GUYON do teto do túnel do carpo.",
+  "correta": "**D: ligamento carpal palmar.** É o teto do canal de GUYON, a faixa que cobre o nervo e a artéria ulnares por cima do ligamento carpal transverso, entre o pisiforme e o hâmulo.",
+  "incorretas": {
+   "A": "**Ligamento carpal transverso** é o assoalho do canal de GUYON e o teto do túnel do carpo; fica abaixo do nervo ulnar, não por cima.",
+   "B": "**Ligamento piso-hamato** liga o pisiforme ao hâmulo no fundo do canal, abaixo do nervo; é a referência do ramo profundo, não o teto.",
+   "C": "**Retináculo dos extensores** fica no dorso do punho e forma os seis compartimentos extensores; não tem relação com os túneis palmares."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Túneis",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 940",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3872": {
+  "conceito": "O nervo ulnar chega ao punho misto, com fibras motoras e sensitivas, e se divide dentro do canal de GUYON. Por isso o canal é dividido em **três zonas**, e cada uma dá um quadro clínico diferente.\n\n### As três zonas\n\nPela prancha de túneis do Netter Atlas de Anatomia Ortopédica (cap. 5):\n\n| Zona | Onde | O que tem | Quadro |\n| --- | --- | --- | --- |\n| I | proximal à bifurcação | tronco misto | motor e sensitivo |\n| II | em volta do ramo profundo, que contorna o hâmulo | ramo profundo | só motor |\n| III | em volta do ramo superficial | ramo superficial | só sensitivo |\n\nO **ramo profundo** é motor: passa sob o arco dos hipotenares, contorna o hâmulo do hamato e cruza a palma com o arco palmar profundo, inervando hipotenares, interósseos, lumbricais do anular e do mínimo, adutor do polegar e a cabeça profunda do flexor curto. O **ramo superficial** é sensitivo para o mínimo e a metade ulnar do anular, e só inerva um músculo, o palmar curto.\n\n### Como usar na clínica\n\nO Green's Operative Hand Surgery, 7ª edição (cap. 28, p. 939), dá a chave: **fraqueza só dos intrínsecos, sem queixa sensitiva**, aponta a zona II. E a pele do dorso ulnar da mão nunca se altera numa lesão do canal, porque o ramo dorsal sai alguns centímetros acima do punho; se ela está alterada, a lesão é mais alta. O livro insiste que a compressão no GUYON quase sempre tem causa, como cisto, fratura consolidada viciosamente ou lesão vascular, e pede imagem, sobretudo quando a paralisia é só motora.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Túnel do carpo, canal de GUYON e os ligamentos do punho.\n\n**Por que esta questão foi criada.** O TARO 2023 cobrou o ligamento transverso, o assoalho do canal; esta questão segue para o conteúdo do canal, a divisão em zonas que localiza a lesão.",
+  "correta": "**A: ramo profundo, motor.** A zona II envolve o ramo profundo que contorna o hâmulo do hamato; a compressão ali dá fraqueza dos intrínsecos sem perda sensitiva.",
+  "incorretas": {
+   "B": "**Ramo superficial, sensitivo** é a zona III: compressão ali tira a sensibilidade do mínimo e da metade ulnar do anular sem fraqueza (só o palmar curto é inervado por esse ramo).",
+   "C": "**Tronco misto, antes da divisão** é a zona I, proximal à bifurcação; a compressão ali dá déficit motor e sensitivo juntos.",
+   "D": "**Ramo dorsal, sensitivo** não passa no canal: sai do ulnar alguns centímetros acima do punho e vai à pele do dorso ulnar da mão."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Túneis",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 939",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3873": {
+  "conceito": "Toda via de acesso boa usa um **intervalo internervoso**: um plano entre dois músculos inervados por nervos diferentes, que pode ser aberto sem desnervar nenhum dos dois. A via volar de HENRY ao rádio distal é o exemplo clássico, e é a via da placa volar na fratura do rádio distal.\n\n### O intervalo\n\nO Campbell's Operative Orthopaedics, 15ª edição (cap. 1, técnica 1.119, pp. 121 e 123), descreve a incisão sobre o intervalo entre o **braquiorradial**, inervado pelo **radial**, e o **flexor radial do carpo**, inervado pelo **mediano**. Como disse KOCHER, ele fica na fronteira entre territórios de nervos diferentes. A face anterior da metade distal do rádio é larga, plana e lisa, um leito melhor para placa que a face dorsal convexa.\n\n### O que se encontra e o que se protege\n\nO cuidado principal é achar e proteger o **ramo sensitivo do radial**, que corre sob o braquiorradial. A **artéria radial** fica no intervalo, logo lateral ao flexor radial do carpo, e é afastada para ulnar com ele. No fundo aparecem o flexor superficial, o **flexor longo do polegar** e o **pronador quadrado**, que são descolados do rádio, subperiostal, e rebatidos para ulnar.\n\nNo antebraço proximal, a mesma via segue a borda medial do braquiorradial, e o outro lado do intervalo passa a ser o pronador redondo; por isso a troca entre os dois aparece nas alternativas. No terço distal, o vizinho do braquiorradial é o flexor radial do carpo.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção As vias de acesso ao antebraço e ao punho.\n\n**Por que esta questão foi criada.** O TARO 2017 pediu o plano intermuscular da via de HENRY na região anterior e proximal do antebraço; esta questão leva a mesma via para a metade distal do rádio, onde o vizinho muda.",
+  "correta": "**B: flexor radial do carpo.** O intervalo distal de HENRY fica entre o braquiorradial (radial) e o flexor radial do carpo (mediano), com a artéria radial entre eles e o ramo sensitivo do radial sob o braquiorradial.",
+  "incorretas": {
+   "A": "**Pronador redondo** é o vizinho do braquiorradial na parte proximal da via de HENRY, no terço proximal; distalmente ele já se inseriu no meio do rádio e sai do caminho.",
+   "C": "**Palmar longo** fica medial ao flexor radial do carpo, sobre o mediano; abrir ao lado dele é o caminho da via volar do punho, não da via ao rádio.",
+   "D": "**Flexor ulnar do carpo** está na borda ulnar do antebraço, longe do rádio; é referência das vias sobre a ulna e o nervo ulnar."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1, técnica 1.119, pp. 121 e 123",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3874": {
+  "conceito": "Na parte proximal do antebraço, a via de HENRY segue a borda medial do braquiorradial com o antebraço supinado. Logo abaixo da fáscia, um leque de vasos cruza o campo de lateral para medial, e a técnica manda tratá-lo antes de seguir.\n\n### O vaso e o motivo\n\nO Campbell's Operative Orthopaedics, 15ª edição (cap. 1, técnica 1.118, p. 121), manda ligar logo a **artéria e a veia recorrentes radiais**. A recorrente radial nasce da artéria radial logo abaixo do cotovelo e sobe para a anastomose em volta da articulação, cruzando o intervalo da via. Se for cortada sem ligar, retrai, continua sangrando e forma um hematoma no compartimento anterior; o aumento de pressão pode levar à **contratura isquêmica de VOLKMANN**, a necrose dos flexores do antebraço.\n\n### A outra razão para conhecer a recorrente radial\n\nEla é a **arcada de HENRY**, um dos pontos de compressão do ramo profundo do radial: o nervo passa sob esse leque de vasos antes de chegar à borda do extensor radial curto e à arcada de FROHSE. Depois de ligada a recorrente, o supinador aparece; com o antebraço supinado, ele é desinserido e rebatido para radial, levando o nervo que corre dentro dele.\n\n### Onde ficam as outras artérias\n\nA recorrente ulnar sobe pela face medial, longe do intervalo; a interóssea comum nasce da ulnar e logo se divide em anterior e posterior, em profundidade; a interóssea posterior aparece no dorso, distal ao supinador, e é a que se encontra na via de THOMPSON.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção As vias de acesso ao antebraço e ao punho.\n\n**Por que esta questão foi criada.** O TEOT 2025 apontou uma artéria recorrente do antebraço numa figura; esta questão pergunta qual delas a via de HENRY manda ligar e por quê.",
+  "correta": "**C: recorrente radial.** Nasce da radial logo abaixo do cotovelo e cruza a via de HENRY; cortada sem ligar, retrai e sangra, e o hematoma pode causar a contratura de VOLKMANN.",
+  "incorretas": {
+   "A": "**Recorrente ulnar** sobe pela face medial do cotovelo, ao lado do epicôndilo medial, fora do intervalo da via de HENRY.",
+   "B": "**Interóssea posterior** aparece no dorso do antebraço, saindo da borda distal do supinador com o nervo interósseo posterior; é a artéria da via de THOMPSON.",
+   "D": "**Interóssea comum** nasce da ulnar, em profundidade, e logo se divide em anterior e posterior; não cruza o plano superficial da via."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1, técnica 1.118, p. 121",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3875": {
+  "conceito": "O aparelho extensor do dedo é um sistema de cordas: o tendão extensor e os tendões dos intrínsecos se juntam numa rede que estende três articulações. Os ligamentos pequenos dessa rede são os que mantêm cada corda do lado certo do eixo de cada articulação.\n\n### O desenho do aparelho\n\nO tendão extensor é abraçado, na metacarpofalângica, pela **banda sagital**, que faz um laço em volta da base da falange proximal. Sobre a falange proximal ele se divide: o **feixe central** segue reto até a base da falange média, e as **bandas laterais** passam pelos lados da interfalângica proximal, um pouco dorsais ao eixo dela, e convergem sobre a falange média para formar o **tendão terminal**, na base da falange distal. Entre as duas bandas laterais, sobre o dorso da falange média, há uma lâmina de fibras transversais em forma de triângulo: o **ligamento triangular**.\n\n### Quem segura as bandas de cada lado\n\nPelo Netter Atlas de Anatomia Ortopédica (cap. 6, Aparelho intrínseco): o **triangular** liga as bandas laterais por dorsal e **impede que elas escorreguem para palmar**; o **retinacular transverso**, nas bordas da interfalângica proximal, faz o oposto e impede a subluxação **dorsal**; o **retinacular oblíquo** vai da face volar da interfalângica proximal ao tendão terminal e estende a distal quando a proximal estende.\n\n### A importância clínica\n\nNa deformidade em **botoeira**, o feixe central rompe sobre a interfalângica proximal, e o triangular cede junto. Sem ele, as bandas laterais caem para palmar ao eixo da interfalângica proximal, passam a fleti-la e, tensas, hiperestendem a distal. A figura do Green, com o triangular e os retinaculares, está no resumo de Anatomia da mão, do punho e do antebraço, seção Aparelho extensor, polias e as articulações dos dedos.\n\n**Por que esta questão foi criada.** O TEOT 2021 apontou com uma seta a banda lateral do aparelho extensor; esta questão pergunta a peça que segura as bandas laterais no dorso, a que falha na botoeira.",
+  "correta": "**D: ligamento triangular.** É a lâmina transversal entre as bandas laterais sobre a falange média; impede que elas caiam para palmar e cede junto com o feixe central na botoeira.",
+  "incorretas": {
+   "A": "**Ligamento retinacular transverso** fica nas bordas da interfalângica proximal e segura as bandas contra a subluxação dorsal; é o oposto do que se pergunta.",
+   "B": "**Ligamento retinacular oblíquo** corre pela face lateral, da bainha flexora na interfalângica proximal até o tendão terminal; coordena a extensão da distal, sem prender as bandas por dorsal.",
+   "C": "**Feixe central** é a faixa longitudinal que estende a interfalângica proximal na base da falange média; a ruptura dele inicia a botoeira, mas quem segura as bandas é o triangular."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão), Aparelho intrínseco",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 5, Fig. 5.5, p. 155",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3876": {
+  "conceito": "Os lumbricais são músculos pequenos e estranhos: são os únicos do corpo que **nascem no tendão do próprio antagonista**, o flexor profundo dos dedos, e terminam no aparelho extensor. Entender o trajeto deles explica de uma vez a inserção e a ação.\n\n### Origem, trajeto e inserção\n\nPelo Netter Atlas de Anatomia Ortopédica (cap. 6; Netter's Concise, p. 208), cada lumbrical nasce do tendão do flexor profundo na palma, corre para distal pelo **lado radial** do dedo, passa **palmar** ao ligamento metacarpal transverso profundo e entra na **banda lateral radial** do aparelho extensor. Os dois radiais nascem de um tendão só (unipenados, do mediano); os dois ulnares, de dois tendões vizinhos (bipenados, do ulnar).\n\n### Por que a inserção explica a ação\n\nO lumbrical cruza a metacarpofalângica **palmar ao eixo** dela, e por isso a **flete**. Depois, entrando na banda lateral, ele passa **dorsal ao eixo** das interfalângicas e as **estende**, puxando o aparelho extensor. Uma inserção no osso, na base de uma falange, faria o músculo agir só numa articulação; é por terminar na banda lateral que ele age em três.\n\nO TARO 2014 cobrou essa ação, e o gabarito da banca fala em estabilização da metacarpofalângica; o Netter descreve flexão. A diferença é de palavra, não de anatomia: o músculo passa palmar ao eixo dessa articulação.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Os intrínsecos: lumbricais e interósseos.\n\n**Por que esta questão foi criada.** O TEOT 2023 e o TEOT 2025 apontaram o lumbrical numa imagem; esta questão pergunta onde ele termina, o dado que dá sentido à ação.",
+  "correta": "**A: banda lateral radial.** O lumbrical corre pelo lado radial do dedo, palmar ao ligamento metacarpal transverso profundo, e entra na banda lateral radial do aparelho extensor.",
+  "incorretas": {
+   "B": "**Banda lateral ulnar** recebe os interósseos do lado ulnar, não o lumbrical, que sempre passa pelo lado radial do dedo.",
+   "C": "**Base da falange média** é a inserção do feixe central do extensor (por dorsal) e do flexor superficial (por palmar); o lumbrical não chega ao osso.",
+   "D": "**Base da falange proximal** recebe a inserção óssea de parte dos interósseos dorsais; o lumbrical não tem inserção óssea."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão), Músculos (Netter's Concise, p. 208)",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3877": {
+  "conceito": "O escafoide é quase todo coberto por cartilagem, e os vasos só entram por poucas janelas. Isso faz dele o osso do carpo com mais risco de pseudartrose e de necrose depois da fratura.\n\n### De onde vem o sangue\n\nPelo Netter Atlas de Anatomia Ortopédica (cap. 5, Artérias), a **artéria radial** irriga o escafoide por dois ramos. O **ramo dorsal** entra pela crista dorsal, na cintura, e corre por dentro do osso para **proximal**: supre cerca de **75%** do escafoide, toda a parte proximal. O **ramo palmar** entra pelo tubérculo e supre cerca de **25%**, a parte distal.\n\n### Por que isso importa\n\nO polo proximal não tem entrada própria de vasos: recebe sangue de forma **retrógrada**, de distal para proximal, por dentro do osso. Uma fratura da cintura ou do polo proximal corta esse caminho, e o fragmento proximal fica sem irrigação. É por isso que, quanto mais proximal a fratura, pior a irrigação do fragmento proximal.\n\nA radial chega ao escafoide depois de passar pela **tabaqueira anatômica**, sob o abdutor longo e o extensor curto do polegar, no assoalho formado pelo próprio escafoide. O Netter lembra que a dor à palpação da tabaqueira pode indicar fratura do escafoide, justamente porque o osso forma o assoalho dela.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Os vasos: arcos palmares e a artéria radial.\n\n**Por que esta questão foi criada.** O TEOT 2024 cobrou ramos da artéria radial na mão; esta questão sobe para o punho, no ramo que decide o prognóstico da fratura do escafoide.",
+  "correta": "**B: 75% do osso, a parte proximal.** O ramo dorsal entra na cintura e irriga o polo proximal de forma retrógrada; a fratura proximal corta esse fluxo.",
+  "incorretas": {
+   "A": "**25% do osso, a parte distal** é a parte do ramo palmar da radial, que entra pelo tubérculo; é o pedaço menor e o de melhor prognóstico.",
+   "C": "**50% do osso, a cintura** não corresponde à divisão descrita; a cintura é a porta de entrada do ramo dorsal, não um território próprio.",
+   "D": "**25% do osso, a parte proximal** inverte a proporção: o polo proximal depende do ramo dorsal, que supre a maior parte do osso."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Artérias",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3878": {
+  "conceito": "Depois da lesão do radial (na fratura da diáfise do úmero, por exemplo), os músculos voltam a funcionar numa ordem previsível: o nervo regenera de proximal para distal, e cada músculo se recupera quando os axônios chegam ao ramo dele. Quem conhece a ordem acompanha a recuperação no consultório.\n\n### A ordem de ABRAMS\n\nO Green's Operative Hand Surgery, 7ª edição (cap. 31, Tabela 31.9, p. 1064), traz a sequência de ABRAMS: braquiorradial, extensor radial longo do carpo, supinador, extensor radial curto do carpo, extensor dos dedos, extensor ulnar do carpo, extensor do dedo mínimo, abdutor longo do polegar, extensor longo do polegar, extensor curto do polegar e, por **último**, o **extensor do indicador**.\n\n### A lógica da sequência\n\nOs dois primeiros recebem ramo do radial **antes** da divisão, no cotovelo; os outros, do interósseo posterior. Depois do supinador, o interósseo posterior dá primeiro os ramos da **camada superficial** (extensor dos dedos, do mínimo, ulnar do carpo) e só então desce sobre a membrana interóssea para a **camada profunda**, de proximal para distal: abdutor longo, extensores do polegar e, mais distal e mais ulnar de todos, o extensor do indicador. O ventre dele é o último da camada profunda, no terço distal da ulna.\n\n### O sentido clínico\n\nNa recuperação, o retorno do braquiorradial é o primeiro sinal de que o nervo está regenerando; o retorno da extensão isolada do indicador é o último. O próprio Green avisa que ABRAMS achou a ordem variável, e por isso ela vale como padrão geral, não como regra para cada paciente.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Os nervos do antebraço e da mão.\n\n**Por que esta questão foi criada.** O TARO 2009 perguntou o músculo preservado na lesão do ramo profundo no supinador, um raciocínio de ordem de ramos; esta questão cobra a outra ponta da mesma lista.",
+  "correta": "**C: extensor do indicador.** É o último da sequência de ABRAMS: o músculo mais distal da camada profunda, inervado no fim do trajeto do interósseo posterior.",
+  "incorretas": {
+   "A": "**Extensor longo do polegar** é o nono da lista, antes do extensor curto do polegar e do extensor do indicador.",
+   "B": "**Abdutor longo do polegar** é o primeiro músculo da camada profunda a receber ramo (oitavo na lista), por ter o ventre mais proximal entre os quatro profundos.",
+   "D": "**Extensor do dedo mínimo** pertence à camada superficial, inervada antes da profunda; é o sétimo da sequência."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, Tabela 31.9, p. 1064",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3879": {
+  "conceito": "A anastomose de MARTIN-GRUBER é uma conexão **motora** entre o mediano e o ulnar no **antebraço proximal**. Ela não é rara: aparece em 15 a 17% das pessoas, e explica achados que, sem ela, não fazem sentido no exame.\n\n### De onde sai o ramo\n\nO Green's Operative Hand Surgery, 7ª edição (cap. 28, p. 936), dá a frequência de cerca de 15% e acrescenta que, em **metade** dos casos, o ramo comunicante sai do **interósseo anterior**; na outra metade, do tronco do mediano. O ramo cruza o antebraço proximal, por trás dos flexores, e se junta ao ulnar. No capítulo de nervos (cap. 31, p. 1046), o mesmo livro dá 17% e os quatro tipos: no **tipo I**, o mais comum (60%), fibras do mediano descem com o ulnar para inervar intrínsecos \"do mediano\"; no **tipo II** (35%), para intrínsecos \"do ulnar\", sobretudo o primeiro interósseo dorsal.\n\n### O que muda na clínica\n\nO Campbell's Operative Orthopaedics, 15ª edição (cap. 67, p. 3007), descreve o efeito: quando o ulnar é seccionado **acima** da anastomose, os intrínsecos podem continuar funcionando, porque as fibras que os inervam desceram pelo mediano e só passaram para o ulnar no meio do antebraço. Uma lesão alta do ulnar com intrínsecos preservados não é lesão parcial: é MARTIN-GRUBER.\n\nPara não confundir: MARTIN-GRUBER fica no **antebraço**; RICHE-CANNIEU, na **palma**, entre os ramos motores do ulnar e do mediano.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Anomalias de inervação e o exame do ulnar.\n\n**Por que esta questão foi criada.** O TEOT 2025 mostrou um esquema numerado e pediu entre quais estruturas fica a anastomose de MARTIN-GRUBER; esta questão pergunta o ramo que, na metade dos casos, dá origem à conexão.",
+  "correta": "**D: interósseo anterior.** O Green descreve que metade dos ramos comunicantes de MARTIN-GRUBER sai do interósseo anterior e a outra metade do tronco do mediano, no antebraço proximal.",
+  "incorretas": {
+   "A": "**Ramo cutâneo palmar** é sensitivo, sai do mediano cerca de 5 cm acima do punho e vai à pele da palma; não leva fibras motoras ao ulnar.",
+   "B": "**Ramo recorrente motor** sai do mediano na mão, junto ao ligamento carpal transverso; conexões entre ramos motores na palma são a anastomose de RICHE-CANNIEU.",
+   "C": "**Radial profundo** não participa: MARTIN-GRUBER liga o mediano ao ulnar, e trocar um deles pelo radial é a pegadinha comum."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 936; cap. 31, p. 1046",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67, p. 3007",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3880": {
+  "conceito": "O ramo profundo do nervo ulnar é o nervo dos intrínsecos. Ele nasce no canal de GUYON, contorna o hâmulo do hamato e atravessa a palma de **ulnar para radial**, junto com o arco palmar profundo, soltando ramos pelo caminho. A ordem desses ramos segue o próprio trajeto.\n\n### A ordem dos ramos\n\nNo esquema de BOYD reproduzido no Campbell's Operative Orthopaedics, 15ª edição (cap. 73, Fig. 73.16, p. 3267), saem primeiro os ramos dos **hipotenares**, ainda no lado ulnar; depois, os dos **lumbricais** do anular e do mínimo e dos interósseos dos espaços IV, III e II; em seguida o do **adutor do polegar**; e o **último**, na ponta do nervo, é o do **primeiro interósseo dorsal**.\n\n### Por que testar o primeiro interósseo dorsal\n\nNa regeneração, os axônios crescem de proximal para distal e chegam por último ao músculo mais distal do trajeto. Quando o primeiro interósseo dorsal volta a contrair, todo o ramo profundo regenerou. O livro usa a contração voluntária dele para medir a recuperação depois do reparo. E ele tem outra vantagem: o ventre fica no dorso da primeira comissura, onde se vê e se palpa, e é um dos três músculos que se testam com segurança no exame do ulnar (com o flexor ulnar do carpo e o abdutor do dedo mínimo).\n\n### A pegadinha\n\nMuitos pensam que o adutor do polegar é o último, porque fica do lado radial e \"fecha\" a palma. Ele é o penúltimo: o ramo do primeiro interósseo dorsal continua um pouco além.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Os nervos do antebraço e da mão.\n\n**Por que esta questão foi criada.** O TEOT 2024 apontou o primeiro interósseo dorsal numa imagem e pediu o nome; esta questão pergunta por que ele é o músculo que o cirurgião observa depois de reparar o ramo profundo.",
+  "correta": "**A: primeiro interósseo dorsal.** É o ramo terminal do ramo profundo do ulnar, depois do adutor; o retorno da contração dele mostra que todo o ramo regenerou.",
+  "incorretas": {
+   "B": "**Adutor do polegar** recebe o penúltimo ramo; parece o último por ficar do lado radial da palma, mas o nervo segue adiante até o primeiro interósseo dorsal.",
+   "C": "**Terceiro lumbrical** recebe ramo no meio do trajeto, logo depois dos hipotenares, junto com os interósseos dos espaços ulnares.",
+   "D": "**Abdutor do dedo mínimo** é um dos primeiros: os ramos dos hipotenares saem logo que o ramo profundo deixa o canal de GUYON."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73, Fig. 73.16, p. 3267",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3881": {
+  "conceito": "O extensor radial curto do carpo é o músculo de inervação mais variável do antebraço, e a variação muda o que se espera numa lesão do interósseo posterior.\n\n### O que dizem os livros\n\nO Netter Atlas de Anatomia Ortopédica (cap. 5, Nervos) lista o extensor radial curto entre os músculos do **interósseo posterior**, com o supinador e os extensores. O Green's Operative Hand Surgery, 7ª edição (cap. 31, p. 1064), mostra que, **na maioria dos membros, 58%**, o curto recebe o nervo do **ramo superficial** do radial, e não do interósseo posterior. Os dois descrevem a mesma anatomia em níveis diferentes de detalhe: o ramo do curto sai perto da divisão do radial, e o tronco de onde ele sai varia.\n\n### Por que isso importa\n\nNa lesão do interósseo posterior **dentro do supinador** (na arcada de FROHSE, por exemplo), o paciente perde a extensão dos dedos e do polegar, mas mantém a extensão do punho, porque o extensor radial longo, inervado antes da divisão, continua funcionando. Se o curto também for do ramo superficial, ele escapa da lesão. O punho então estende com **desvio radial**, porque o extensor ulnar do carpo, que é do interósseo posterior, está paralisado. O mesmo Green mostra, na Fig. 31.33, um paciente com o curto paralisado, o que lembra que a variação vai para os dois lados.\n\n### Os outros nervos\n\nO **braquiorradial** e o **extensor radial longo** são do tronco do radial, ainda no cotovelo; o **musculocutâneo** não tem músculo no antebraço, só dá a pele lateral.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Os nervos do antebraço e da mão.\n\n**Por que esta questão foi criada.** O TARO 2009 perguntou o músculo preservado na lesão do ramo profundo no supinador e ficou sem gabarito oficial justamente por essa variação; esta questão cobra o dado que explica a dúvida.",
+  "correta": "**B: ramo superficial do radial.** Pelo Green, em 58% dos membros o extensor radial curto recebe o ramo do superficial, e por isso pode escapar da lesão do interósseo posterior no supinador.",
+  "incorretas": {
+   "A": "**Interósseo posterior** é a resposta das listas clássicas, como a do Netter, e acontece numa parte dos membros; mas não é o padrão mais frequente medido no Green.",
+   "C": "**Tronco do radial, no braço** inerva o braquiorradial e o extensor radial longo, antes da divisão no cotovelo; o curto recebe o ramo depois.",
+   "D": "**Musculocutâneo** termina como cutâneo lateral do antebraço, só sensitivo; não inerva músculo do antebraço."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, p. 1064",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Nervos",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3882": {
+  "conceito": "O hâmulo do hamato é o gancho ósseo que se projeta para palmar no lado ulnar do carpo. Ele é uma das paredes do canal de GUYON e o ponto em que o nervo ulnar muda de direção, e por isso a fratura dele é uma lesão de nervo em potencial.\n\n### O trajeto do ramo profundo\n\nNo canal de GUYON, o nervo ulnar se divide. Pela prancha de túneis do Netter Atlas de Anatomia Ortopédica (cap. 5), o **ramo superficial**, sensitivo, segue reto para o mínimo e a metade ulnar do anular, e só inerva o palmar curto. O **ramo profundo**, motor, faz uma curva para o lado radial, passa sob o arco dos hipotenares e **contorna o hâmulo do hamato**, colado a ele, para mergulhar na palma com o arco palmar profundo. O Green's Operative Hand Surgery, 7ª edição (cap. 28, p. 940), lembra que, ao abrir o canal, só 1 ou 2 mm desse ramo ficam visíveis antes de ele sumir em profundidade, rente ao osso.\n\n### Por que a fratura do hâmulo ameaça esse ramo\n\nO ramo profundo é a estrutura que fica encostada no gancho. A fratura, a consolidação viciosa ou o cisto nessa região o comprimem, e o quadro é de **paralisia só motora**, a da zona II do canal: fraqueza dos intrínsecos, com hipotenares, interósseos, lumbricais ulnares e adutor do polegar, e sensibilidade normal. O Green (p. 939) insiste que a compressão no GUYON quase sempre tem causa estrutural e pede imagem, sobretudo quando a paralisia é só motora.\n\nNa superfície, a linha de KAPLAN cruzada pela borda ulnar do anular marca o hâmulo e o ramo profundo, o ponto onde não se aprofunda a dissecção às cegas.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção Túnel do carpo, canal de GUYON e os ligamentos do punho.\n\n**Por que esta questão foi criada.** O TEOT 2023 apontou um nervo em risco numa via de acesso e pediu o nome; esta questão faz o mesmo raciocínio no punho, com o ramo do ulnar que contorna o hâmulo.",
+  "correta": "**C: ramo profundo do nervo ulnar.** É o ramo motor que contorna o hâmulo do hamato, rente ao osso; a fratura do hâmulo o comprime e dá fraqueza dos intrínsecos sem perda sensitiva.",
+  "incorretas": {
+   "A": "**Ramo superficial do nervo ulnar** segue reto para distal e para o mínimo, mais superficial e ulnar, longe do gancho; é sensitivo e só inerva o palmar curto.",
+   "B": "**Ramo dorsal do nervo ulnar** sai do tronco alguns centímetros acima do punho e contorna a ulna para o dorso da mão; nem passa pelo canal de GUYON.",
+   "D": "**Ramo recorrente do mediano** sai do mediano na borda distal do ligamento carpal transverso, do lado radial, rumo à eminência tenar; fica longe do hâmulo."
+  },
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço), Túneis",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 939 e 940",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "mao-3883": {
+  "conceito": "A tabela clássica diz que a eminência tenar é do mediano, e que a secção dele no punho tira a oposição. Na prática, muita gente com o mediano cortado ainda opõe o polegar, e a explicação está num músculo de dois nervos.\n\n### O flexor curto do polegar\n\nO Netter Atlas de Anatomia Ortopédica (cap. 6, Nervos) divide a eminência tenar assim: o mediano, pelo ramo recorrente, inerva o **abdutor curto**, o **oponente** e a **cabeça superficial do flexor curto**; o ulnar, pelo ramo profundo, inerva a **cabeça profunda do flexor curto** (e o adutor, que não é tenar). O flexor curto é, portanto, o músculo tenar com dois nervos.\n\n### Os números\n\nO Green's Operative Hand Surgery, 7ª edição (cap. 31, p. 1026), reúne os estudos: ZANCOLLI e COZZI acharam dupla inervação na cabeça superficial em 30% e na profunda em 79%; o mediano supre sozinho o abdutor curto, o oponente e a cabeça superficial em apenas 63% das mãos; e o **flexor curto continua funcionando em 73%** das lesões completas do mediano. Com ele ativo, o paciente ainda faz parte da oposição, que é a soma de abdução, flexão e pronação na trapeziometacárpica.\n\n### O que examinar\n\nPor isso, para julgar o mediano, o músculo que importa é o **abdutor curto**, o principal da oposição; o flexor curto preservado não quer dizer que o mediano está íntegro.\n\nEstá no resumo de Anatomia da mão, do punho e do antebraço, seção A eminência tenar, a oposição e o adutor.\n\n**Por que esta questão foi criada.** O TEOT 2024 pôs o adutor e o abdutor do polegar entre as alternativas de um músculo apontado; esta questão vai ao músculo tenar que sobrevive à lesão do mediano e confunde o exame.",
+  "correta": "**D: flexor curto do polegar.** A cabeça profunda é do ulnar e há dupla inervação frequente; o Green registra o músculo funcionando em 73% das secções completas do mediano.",
+  "incorretas": {
+   "A": "**Abdutor curto do polegar** é o músculo tenar mais fiel ao mediano e o principal da oposição; é o que mais se perde na lesão.",
+   "B": "**Oponente do polegar** é do ramo recorrente do mediano na maioria das mãos e costuma paralisar com ele; não é o que mais escapa.",
+   "C": "**Primeiro lumbrical** é do mediano e paralisa na secção no punho; além disso, não pertence à eminência tenar, fica na palma, no tendão do flexor profundo do indicador."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, p. 1026",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão), Nervos",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
  }
 }
