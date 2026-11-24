@@ -177,7 +177,7 @@ armadilha: Pôr o tronco do nervo femoral ou a veia safena magna dentro do canal
 Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.67, p. 53. Quadril em vista anterior: o nervo cutâneo femoral lateral desce logo abaixo da espinha ilíaca anterossuperior, por baixo do ligamento inguinal, e se divide sobre a região da via anterior, perto do ramo ascendente da circunflexa femoral lateral.
 !fim
 
-!questoes central=quadril-0071 relacionadas=quadril-0014,quadril-0048,quadril-0640 treino=quadril-0717,quadril-0718,quadril-0719
+!questoes central=quadril-0071 relacionadas=quadril-0014,quadril-0048,quadril-0640 treino=quadril-0717,quadril-0718,quadril-0719,quadril-0743,quadril-0744,quadril-0745,quadril-0746,quadril-0747,quadril-0748,quadril-0750,quadril-0752
 conceito: Via anterior = cutâneo femoral lateral; lateral direta = divide o glúteo médio sem osteotomia, com o glúteo superior em risco; posterior = ciático e circunflexa medial sob o quadrado femoral.
 como: Uma prova de Ortopedia perguntou o que é verdadeiro sobre as vias (risco do cutâneo femoral lateral no acesso anterior); o TARO 2021, o vaso a preservar no acesso posterior; o TARO 2022 mostrou uma via em figuras; o TEOT 2025, a via em que se identifica a corona mortis.
 armadilha: Dizer que a via de HARDINGE exige osteotomia do trocânter ou que o acesso posterior previne a osteonecrose. Nas figuras do TARO 2022, as fatias retangulares do trocânter levantadas para a frente e para trás são a via de HAY descrita por MCLAUCHLAN, não HARDINGE nem MCFARLAND.
@@ -301,7 +301,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.66, p.
 
 Na nádega, de cima para baixo: **piriforme, gêmeo superior, obturador interno, gêmeo inferior, quadrado femoral**. Cada gêmeo leva o nervo do vizinho: o superior, o do **obturador interno** (L5 a S2); o inferior, o do **quadrado** (L4 a S1). A ficha aponta uma diferença de redação: o Netter chama esse ramo de "nervo para o quadrado femoral", e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 66), descreve um ramo "para o quadrado femoral e o gêmeo inferior" que também leva fibras sensitivas à cápsula; não há conflito anatômico, e fico com o Campbell, mais específico. O **teste de TRENDELENBURG**: em apoio monopodal, se a pelve do lado elevado cai, falham o glúteo médio ou o glúteo superior.
 
-!questoes relacionadas=quadril-0083
+!questoes relacionadas=quadril-0083 treino=quadril-0733,quadril-0736,quadril-0737,quadril-0739,quadril-0742
 conceito: O gêmeo superior nasce na espinha isquiática, vai à face medial do trocânter e recebe o nervo do obturador interno; fica entre o piriforme e o obturador interno.
 como: O TEOT 2023 apontou o gêmeo superior numa dissecção da região glútea.
 armadilha: Contar a sequência a partir do quadrado femoral e cair no gêmeo inferior.
@@ -326,7 +326,7 @@ O Netter Atlas de Anatomia Ortopédica (cap. 8) completa os compartimentos com a
 
 O isquiático desce **profundo aos isquiotibiais e superficial ao adutor magno** e divide-se na **parte distal da coxa**; a pele posterior é do **cutâneo femoral posterior**. A coxa tem **três septos** (lateral, medial e posterior) e **três compartimentos**; o **septo vastoadutor** cobre a entrada dos vasos no hiato. A **fasciotomia** usa **duas incisões**: a **lateral libera o anterior e o posterior**, a **medial libera o medial**. Sob o ligamento inguinal, o Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 75), separa pela **fáscia iliopectínea** a **lacuna dos músculos** (iliopsoas, **nervo femoral** e **cutâneo femoral lateral**) da **lacuna dos vasos** (vasos ilíacos externos e linfáticos).
 
-!questoes central=trauma-0419 relacionadas=joelho-0154
+!questoes central=trauma-0419 relacionadas=joelho-0154 treino=quadril-0734,quadril-0735,quadril-0740,quadril-0741,quadril-0749,quadril-0751
 conceito: Três compartimentos (anterior, medial e posterior) e três septos; a fasciotomia lateral libera anterior e posterior, a medial libera o medial; sartório e quadríceps são do femoral, e o pectíneo é do femoral, com ramo também da divisão anterior do obturatório no Campbell.
 como: O TARO 2023 perguntou os compartimentos da coxa; uma prova de Ortopedia apontou em imagem um músculo do femoral.
 armadilha: Inventar um compartimento lateral ou dar o sartório ao obturatório; no pectíneo, se a questão pede um só nervo, a resposta é o femoral.
@@ -391,7 +391,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 67, Fig. 67.23, 
 | proteção do isquiático | quadril estendido e **joelho fletido pelo menos 45 graus** |
 !fim
 
-!questoes relacionadas=quadril-0193
+!questoes relacionadas=quadril-0193 treino=quadril-0738
 conceito: O glúteo superior (L4 a S1) inerva médio, mínimo e tensor; o ramo inferior vai ao tensor e é o lesado no lateral direto; a zona segura para dividir o glúteo médio é de 5 cm acima do trocânter.
 como: O TARO 2012 perguntou qual ramo do glúteo superior inerva o glúteo médio.
 armadilha: Dar o glúteo médio ao glúteo inferior, que é só do glúteo máximo.
