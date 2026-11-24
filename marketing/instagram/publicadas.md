@@ -59,7 +59,7 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | quadril-0126 | Fratura periprotética VANCOUVER B2 (TEOT 2024), ficha do ambulatório de prótese com enquete | posts/2026-11-24-ficha-vancouver (stories) |
 | pediatria-0330 | Tíbia arqueada no recém-nascido: NF1 e pseudoartrose congênita (TEOT 2025), berçário com enquete | posts/2026-11-25-bercario-nf1 (stories) |
 | mao-3660 | VOLKMANN do antebraço, TSUGE moderado (SBCM 2025), teatro de marionetes com enquete | posts/2026-11-26-marionete-volkmann (stories) |
-| trauma-0757 | Coronoide, O'DRISCOLL tipo II (TEOT 2025), vitrine de Black Friday com enquete e stories da promoção do anual a R$ 19,90 | posts/2026-11-27-vitrine-coronoide (stories) |
+| trauma-0757 | Coronoide, O'DRISCOLL tipo II (TEOT 2025), museu do cotovelo com enquete; story 3 sem Black Friday, com o preço do site | posts/2026-11-27-museu-coronoide (stories) |
 | pe-tornozelo-0179 | Insuficiência do tibial posterior, incongruência talonavicular lateral (TEOT 2024), trilha do arco com enquete | posts/2026-11-28-trilha-tibial-posterior (stories) |
 | coluna-0220 | Escoliose congênita: barra unilateral com hemivértebra contralateral (TEOT 2025), torre de blocos com enquete | posts/2026-11-29-blocos-hemivertebra (stories) |
 | tumores-0021 | Metástases: rim e tireoide líticas, próstata blástica (TARO 2018), carrossel Novembro Azul | posts/2026-11-29-novembro-azul (feed) |
