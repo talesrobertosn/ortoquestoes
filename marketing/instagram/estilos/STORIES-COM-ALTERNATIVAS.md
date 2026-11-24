@@ -102,6 +102,12 @@ enquete, resposta com o livro e um **story extra de propaganda com prints reais 
 
 ## Regras que continuam
 
+- **Nunca citar horário** (Tales, 23/11/2026): a questão sobe de manhã e a resposta sobe "à tardezinha", junto com a
+  propaganda, sem hora marcada. Nada de "a resposta chega às 12h"; use "a resposta chega mais tarde" ou "volte à tarde".
+  **Regra do story 3** (Tales, 23/11/2026): todo story 3 leva **sempre um print de um trecho do resumo** do mesmo tema;
+  pode somar 1 ou 2 prints de outras páginas (Cronograma, Caderno de erros, Atlas 3D...), recortados com as bordas
+  arredondadas, 2 ou 3 imagens no story. Também cabe um recorte e um recorte de comentário de outra questão da mesma área que cite o livro (TEOT de preferência).
+
 - Questão real do acervo (`node marketing/kit/questao.mjs buscar <tema> --imagem`), inédita em `publicadas.md`, com
   enunciado, alternativas e gabarito iguais ao acervo. A busca do modelo: TEOT de 2023 a 2025, com imagem, quatro
   alternativas curtas e comentário citando um livro.
@@ -111,6 +117,13 @@ enquete, resposta com o livro e um **story extra de propaganda com prints reais 
   mesma do Rockwood…, Fig. 32-13A").
 - Sem emoji, sem IA, sem número total de questões, sem figurinha de link, sem desenho de anatomia.
 - O que importa entre 250 e 1580 px de altura (o topo e a barra de resposta do Instagram cobrem as pontas).
+
+## Black Friday 2026 (Tales, 23/11/2026)
+
+Promoção única do ano, só em 27/11/2026 até meia-noite: **plano anual a R$ 19,90 por mês** (só o anual). Motivo: ano
+de lançamento; "sinceramente, isso não vai acontecer nem no ano que vem". É o preço mais barato que já existiu. O Tales
+configura o preço no site; os stories só anunciam. Fora dessa data, a frase segura é "não temos promoção no momento,
+mas garanto o preço mais baixo do mercado", sem citar nome nem preço de outros cursos.
 
 ## Conferência antes de entregar
 
