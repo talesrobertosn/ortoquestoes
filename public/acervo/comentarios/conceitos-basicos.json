@@ -6975,5 +6975,228 @@
   ],
   "geradoEm": "2026-11-23",
   "conferido": false
+ },
+ "conceitos-basicos-0430": {
+  "conceito": "Na suspeita de osteomielite hematogênica aguda (OHA), pedem-se quase sempre dois marcadores de inflamação, a **velocidade de hemossedimentação** (VHS) e a **proteína C reativa** (PCR). Eles parecem dizer a mesma coisa, mas medem fenômenos diferentes, e é por isso que se comportam de modo tão distinto ao longo do tratamento.\n\n### O que a VHS mede de fato\n\nA VHS é a velocidade com que as hemácias caem num tubo de plasma, em milímetros por hora. Elas caem mais rápido quando se empilham, e o que as faz empilhar são proteínas grandes do plasma que neutralizam a carga negativa da sua superfície. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 954), é direto: a concentração sérica de **fibrinogênio**, um reagente de fase aguda liberado pelo fígado em várias condições inflamatórias, é o **determinante mais importante da VHS**.\n\n### Por que isso explica a lentidão\n\nO fibrinogênio sobe aos poucos e demora a cair. Por isso a VHS sobe **gradualmente**, tem pico em **3 a 5 dias**, pode continuar subindo enquanto a criança já melhora e só normaliza cerca de **3 semanas** depois do início do tratamento (Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 790). O Campbell acrescenta onde ela engana: **neonato, doença falciforme, uso de corticoide e sintomas de menos de 48 horas**. O uso que sobra para ela é a **decisão de suspender o antibiótico**, quando a inflamação já se apagou.\n\n### E a cadeia acima do fibrinogênio\n\nA **interleucina-6** é o principal estímulo para o fígado produzir as proteínas de fase aguda, entre elas a PCR e o próprio fibrinogênio (Tachdjian, p. 954). Ela está um degrau acima: dispara a síntese, mas não é o que faz as hemácias sedimentarem. A PCR, por sua vez, é outro reagente de fase aguda, medido à parte, rápido e de meia-vida curta.\n\nIsso está no resumo de Osteomielite e artrite séptica na criança, seção Laboratório: hemograma, VHS, PCR e culturas.\n\n**Por que esta questão foi criada.** O TARO 2008 perguntou qual citocina se relaciona com o aumento da PCR (interleucina-6), e o TARO 2007 comparou VHS e PCR. Esta questão cobra a outra ponta da mesma cadeia: o que determina a VHS.",
+  "correta": "**B: fibrinogênio.** O Tachdjian (cap. 23, p. 954) nomeia o fibrinogênio, proteína de fase aguda hepática, como o determinante mais importante da VHS; é ele que faz as hemácias se empilharem e sedimentarem mais rápido, e a sua cinética lenta explica a VHS lenta.",
+  "incorretas": {
+   "A": "**interleucina-6** é a distratora perigosa, porque está na mesma cadeia: é o principal estímulo hepático para produzir PCR e fibrinogênio (Tachdjian, p. 954). Mas ela age um passo antes; o que altera a sedimentação das hemácias é a proteína produzida, não a citocina. A interleucina-6 foi a resposta do TARO 2008, que perguntava sobre a PCR.",
+   "C": "**proteína C reativa** é outro marcador, medido separadamente, que sobe 1000 vezes em 6 horas e normaliza em cerca de 7 dias (Tachdjian, p. 954). Não é ela que determina a VHS; por isso as duas curvas se separam no tratamento.",
+   "D": "**albumina** não é citada pelo Tachdjian como determinante da VHS; o livro nomeia o fibrinogênio. Na OHA não há papel para a albumina nesse raciocínio."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 954",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 790",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0431": {
+  "conceito": "A **proteína C reativa** (PCR) é uma proteína do fígado que recebeu esse nome porque reage com o **polissacarídeo C do pneumococo**. Ela funciona como opsonina (marca bactérias para serem fagocitadas) e ativa a via clássica do complemento; o principal estímulo para produzi-la é a **interleucina-6** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 954).\n\n### Uma curva rápida para os dois lados\n\nO que torna a PCR útil é a velocidade. Ela sobe **1000 vezes em 6 horas**, chega ao pico em **36 a 50 horas** e tem **meia-vida de cerca de 24 horas**. Com meia-vida curta, assim que o estímulo inflamatório cessa, o nível cai pela metade a cada dia; com tratamento eficaz, a PCR **normaliza em cerca de 7 dias** (p. 954). A VHS, que depende do fibrinogênio, faz o contrário: pico em 3 a 5 dias e normalização em cerca de 3 semanas (Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 790).\n\n### O sentido clínico\n\nPor isso cada exame tem a sua função. A PCR é o marcador para **seguir a resposta** nos primeiros dias, medida a cada 2 ou 3 dias: se no **terceiro dia** ela estiver acima de **1,5 vez** o valor da admissão, a chance de infecção combinada de osso e articulação é **6,5 vezes** maior, e vale procurar o foco que não foi drenado (p. 954). A VHS, lenta, serve para decidir o **fim do antibiótico**; o autor só suspende o oral com VHS abaixo de 15 mm/h e, se em 12 semanas ela não cai, pede RM em busca de causa cirúrgica (p. 967).\n\nIsso está no resumo de Osteomielite e artrite séptica na criança, seção Laboratório: hemograma, VHS, PCR e culturas.\n\n**Por que esta questão foi criada.** O TARO 2007 perguntou o que a VHS faz em comparação com a PCR (é menos sensível e normaliza mais tarde). Esta questão cobra o mesmo contraste pelo número: o tempo de normalização da PCR.",
+  "correta": "**A: 1 semana.** Com meia-vida de cerca de 24 horas, a PCR cai rapidamente quando a infecção é controlada e normaliza em cerca de 7 dias de tratamento eficaz (Tachdjian, cap. 23, p. 954).",
+  "incorretas": {
+   "B": "**3 semanas** é o tempo da VHS, não da PCR (Campbell, cap. 22, p. 790). É a distratora perigosa porque os dois marcadores costumam ser pedidos juntos; quem troca as curvas usa a VHS para seguir os primeiros dias e se assusta com um número que ainda sobe com a criança melhorando.",
+   "C": "**6 semanas** é uma ordem de grandeza de duração de antibiótico (a recomendação clássica fala em 4 a 8 semanas, Tachdjian, p. 967), não de normalização da PCR.",
+   "D": "**3 meses** lembra as 12 semanas em que, sem queda da VHS, o autor pede RM em busca de causa cirúrgica (p. 967). Uma PCR alta por tanto tempo já indicaria falha do tratamento."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 954 e 967",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 790",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0432": {
+  "conceito": "A radiografia é o primeiro exame de imagem na criança com dor óssea e febre, mas o que ela mostra nos primeiros dias não é o osso, e sim o que está em volta dele.\n\n### O que aparece primeiro\n\nO Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 946), ensina que o **edema de partes moles profundas** é a **primeira manifestação radiográfica** da infecção musculoesquelética. A inflamação na metáfise aumenta a pressão, o exsudato sai pelos canais da cortical e infiltra os planos musculares junto ao osso; na radiografia, os planos de gordura entre os músculos ficam apagados ou deslocados. Para enxergar isso, é preciso olhar com contraste ajustado para partes moles, e não só para o osso (a Fig. 23.4 do livro mostra o edema sobre a fíbula distal, confirmado depois pela RM).\n\n### Por que o osso demora\n\nO osso só muda quando já perdeu **30% a 50%** da sua densidade. Isso leva **10 a 14 dias** no Tachdjian e **10 a 21 dias** no Campbell's Operative Orthopaedics, 15ª ed. (cap. 22, p. 792). Rarefação, lise, reação periosteal e, mais tarde, sequestro são, portanto, sinais tardios.\n\n### O sentido clínico\n\nDuas consequências práticas. Primeiro, **radiografia normal não afasta osteomielite** na primeira semana; o maior valor do exame inicial é **excluir tumor e fratura**. Segundo, o diagnóstico precoce vem da clínica, da punção e, quando preciso, da RM, que é o exame mais sensível. O livro conta a armadilha da criança engessada por suspeita de fratura com radiografia negativa, que volta 10 a 14 dias depois com osteomielite avançada (p. 946).\n\nIsso está no resumo de Osteomielite e artrite séptica na criança, seção Imagem: da radiografia à RM.\n\n**Por que esta questão foi criada.** O TARO 2024 perguntou quando a osteólise fica visível e com quanta perda óssea. Esta questão cobra o vizinho que a prova ainda não pediu: o que a radiografia mostra antes da osteólise.",
+  "correta": "**D: o edema de partes moles.** O Tachdjian (cap. 23, p. 946) diz que o edema das partes moles profundas é a primeira manifestação radiográfica da infecção musculoesquelética; o osso só se altera depois de 10 a 14 dias.",
+  "incorretas": {
+   "A": "**a reação periosteal fina** é um sinal de osso, que exige o pus já descolando o periósteo e tempo para formar osso novo; aparece depois do edema de partes moles. É a distratora perigosa, porque é o sinal que o residente mais associa a osteomielite.",
+   "B": "**a rarefação metafisária** só aparece com perda de 30% a 50% da densidade óssea, em 10 a 14 dias (Tachdjian) ou 10 a 21 dias (Campbell, cap. 22, p. 792). Foi exatamente o que o TARO 2024 cobrou.",
+   "C": "**o sequestro cortical** é osso morto separado do vivo, marca da osteomielite crônica, e não da fase aguda."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 946",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 792",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0433": {
+  "conceito": "A criança com **doença falciforme** tem mais osteomielite que as outras, e por mais de um motivo: **asplenia funcional** (o baço infartado não filtra bactérias encapsuladas), **infartos teciduais frequentes**, que deixam osso morto à espera de semeadura, e **opsonização deficiente** de antígenos polissacarídeos (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 995). Os microinfartos da parede intestinal abrem a porta para a **Salmonella**, que nessa população supera o S. aureus na razão de **2,2:1**.\n\n### O problema: duas doenças com a mesma cara\n\nO infarto ósseo da crise vaso-oclusiva também dói, incha e pode dar febre. O Tachdjian (p. 996) dá o número que orienta a conduta: a criança falciforme tem cerca de **50 vezes mais chance de estar em crise vaso-oclusiva do que de ter infecção**, e há poucos achados clínicos ou exames que separem as duas.\n\n### Como isso vira conduta\n\nPor causa dessa proporção, o livro trata primeiro como crise: **hidratação, analgesia e oxigênio, sem antibiótico**. Se não houver melhora em **24 a 48 horas**, os focos suspeitos são **aspirados** e começa-se antibiótico empírico que cubra **S. aureus e Salmonella** (ceftriaxona, na Tabela 23.2, p. 966). Mau aspecto geral, febre acima de 38,2 °C, dor e edema pedem aspiração precoce. Na imagem, uma coleção subperiosteal maior que 10 mm ao ultrassom e o realce medular geográfico na RM falam a favor de infecção; o infarto tem realce em orla fina (p. 996).\n\nIsso está no resumo de Osteomielite e artrite séptica na criança, seção Formas especiais: CRMO, GARRÉ, falciforme, pé e pelve.\n\n**Por que esta questão foi criada.** O TARO 2023 e o TEOT 2025 perguntaram a que doença a osteomielite por Salmonella se associa e onde ela se instala. Esta questão cobra o passo anterior, o que a prova ainda não pediu: por que, nessa criança, a primeira hipótese é a crise e não a infecção.",
+  "correta": "**C: 50 vezes mais provável.** O Tachdjian (cap. 23, p. 996) diz que o paciente falciforme tem cerca de 50 vezes mais chance de estar em crise vaso-oclusiva do que infectado; por isso trata-se a crise e só se aspira se não houver melhora em 24 a 48 horas.",
+  "incorretas": {
+   "A": "**2 vezes mais provável** confunde com a razão de 2,2:1 da Salmonella sobre o S. aureus na osteomielite do falciforme (p. 995). É a distratora perigosa: o número existe no mesmo parágrafo, mas compara germes, não crise com infecção.",
+   "B": "**5 vezes mais provável** subestima muito a proporção; com ela, a conduta seria aspirar quase toda criança na primeira consulta, o que o livro não recomenda.",
+   "D": "**com a mesma probabilidade** ignora justamente o dado que justifica tratar primeiro a crise; se as duas fossem igualmente prováveis, o antibiótico empírico imediato seria a regra."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 995 e 996",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0434": {
+  "conceito": "A maioria das osteomielites hematogênicas agudas da criança cura só com antibiótico. A pergunta que divide os livros é quando operar, e a resposta passa pelo que o antibiótico não alcança: o **pus coletado**.\n\n### As duas indicações do Campbell\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 808), resume em duas: **abscesso que exige drenagem** e **falha em melhorar** com antibiótico adequado. As duas são, no fundo, a mesma coisa: se a criança com o antibiótico certo não responde em **24 a 48 horas**, a explicação mais provável é um **abscesso oculto**, subperiosteal ou intraósseo, que deve ser procurado e drenado. O pus é um espaço sem circulação, cheio de bactérias e restos de neutrófilos, onde o antibiótico do sangue chega mal.\n\n### A abordagem do Tachdjian\n\nO Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 967), admite a divergência e descreve a abordagem medida: operar com **abscesso subperiosteal ou intraósseo**, **cavidade lítica metafisária** ou **resposta limitada** ao antibiótico; alguns operam cedo o fêmur proximal pelo risco de artrite e necrose. O exame para achar o abscesso é a **RM**, que tem sensibilidade de até 98% e mostra a coleção com realce em anel no gadolínio (p. 952).\n\n### Por que o tempo importa\n\nA complicação mais temida, a **necrose avascular** do fêmur e do úmero proximais, liga-se ao **reconhecimento tardio (mais de 5 dias)** e à descompressão inadequada do quadril e do ombro (p. 967 e 968). Esperar mais dias com o mesmo antibiótico, sem procurar o foco, é deixar o pus sob pressão.\n\nIsso está no resumo de Osteomielite e artrite séptica na criança, seção A cirurgia na OHA e as complicações.\n\n**Por que esta questão foi criada.** O TARO 2015 perguntou em que idade a osteomielite do fêmur proximal mais evolui para osteonecrose da epífise. Esta questão cobra a conduta que previne essa sequela, ainda não cobrada pela banca: procurar e drenar o abscesso quando o antibiótico falha.",
+  "correta": "**B: procurar abscesso oculto.** Para o Campbell (cap. 23, p. 808), sem resposta em 24 a 48 horas ao antibiótico adequado, procura-se abscesso oculto; abscesso e falha do tratamento clínico são as duas indicações de cirurgia.",
+  "incorretas": {
+   "A": "**associar vancomicina ao esquema** parte da ideia de que o problema é o germe resistente, quando o enunciado diz que o antibiótico é adequado. O Tachdjian (p. 956) ainda lembra que a vancomicina é menos eficaz no osso, pela baixa captação e por não alcançar germe intracelular. É a distratora perigosa, porque trocar antibiótico parece uma ação, mas adia a drenagem.",
+   "C": "**prolongar a via venosa** decide a duração do tratamento, não resolve a falha; o pus coletado continua sem antibiótico eficaz dentro dele.",
+   "D": "**repetir a radiografia simples** não ajuda nessa fase: o osso só se altera em 10 a 14 dias. Para achar o abscesso, o exame é a RM (Tachdjian, p. 952)."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 808",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 952, 956 e 967",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0435": {
+  "conceito": "O **MRSA comunitário** é o S. aureus resistente à meticilina que surgiu fora do hospital, em crianças sem fatores de risco. A resistência vem do gene **mecA**, que codifica uma proteína ligadora de penicilina alterada e anula todos os betalactâmicos, inclusive as cefalosporinas (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 955). Ele dá mais abscessos operados e mais trombose venosa profunda que o S. aureus sensível.\n\n### O que ainda funciona\n\nO MRSA comunitário segue sensível a **clindamicina, sulfametoxazol-trimetoprima, rifampicina e gentamicina**; em **6% a 25%** das cepas há resistência **induzível** à clindamicina, detectada pelo teste de difusão com discos de clindamicina e eritromicina (p. 955 e 956). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 22, p. 797), lista clindamicina e vancomicina para o MRSA.\n\n### Por que a vancomicina fica atrás no osso\n\nA vancomicina mata o MRSA no tubo de ensaio, mas o Tachdjian (p. 956) explica que ela é **menos eficaz** que os antibióticos mais usados na osteomielite por dois motivos farmacológicos: **captação óssea limitada** e **incapacidade de alcançar germes intracelulares** (o S. aureus pode sobreviver dentro de células do hospedeiro). Num osso infectado, o que importa é a concentração do antibiótico no tecido onde a bactéria está, não só no sangue.\n\n### Na prática\n\nEm comunidades com MRSA, o Tachdjian começa a criança pequena com **clindamicina e ceftriaxona** e, na transição oral com cultura negativa, usa **sulfametoxazol-trimetoprima**, que cobre MRSA e Kingella (p. 957). A vancomicina fica para a criança grave ou com resistência à clindamicina, junto com o infectologista.\n\nIsso está no resumo de Osteomielite e artrite séptica na criança, seção O antibiótico na OHA.\n\n**Por que esta questão foi criada.** O TARO 2014 perguntou o agente causal mais comum da osteomielite no usuário de drogas intravenosas. Esta questão cobra o vizinho que a prova ainda não pediu: por que o antibiótico mais lembrado contra o estafilococo resistente rende menos no osso.",
+  "correta": "**D: penetra pouco no osso.** O Tachdjian (cap. 23, p. 956) atribui a menor eficácia da vancomicina na osteomielite à captação óssea limitada e à incapacidade de alcançar germes intracelulares.",
+  "incorretas": {
+   "A": "**não cobre o MRSA** é falso: a vancomicina é um dos antibióticos listados para o MRSA (Campbell, cap. 22, p. 797). O problema é chegar ao osso, não o espectro.",
+   "B": "**é inativada pelo pus** não é o motivo que o livro dá; o Tachdjian fala em captação óssea limitada e em não alcançar o germe intracelular.",
+   "C": "**tem resistência induzível** é a característica da clindamicina, presente em 6% a 25% das cepas de MRSA comunitário e detectada pelo teste com disco de eritromicina (p. 955 e 956). É a distratora perigosa, porque troca os dois antibióticos do MRSA."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 955 a 957",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 797",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0436": {
+  "conceito": "A artrite séptica é tratada como urgência por um motivo biológico: a cartilagem começa a ser destruída antes de qualquer sinal na radiografia. Para entender, é preciso lembrar do que ela é feita. A cartilagem articular é uma rede de **colágeno** preenchida por **proteoglicanos**, moléculas que atraem água e dão à cartilagem a capacidade de resistir à compressão. Sem proteoglicano, o colágeno fica exposto e a cartilagem perde a função mecânica.\n\n### Quem destrói\n\nQuando a bactéria entra na articulação, macrófagos, polimorfonucleares e células sinoviais liberam **IL-1beta, IL-6, TNF-alfa, imunoglobulina G e enzimas lisossomais** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 975). Essa cascata tira as subunidades de proteoglicano da matriz, e a perda pode ser grave já em **2 a 5 dias**, sem degeneração visível.\n\n### O número do coelho\n\nO modelo experimental no joelho de coelho com S. aureus dá a cronologia: **30% do proteoglicano perdido em 48 horas**, **50% em 5 dias** e **80% em 3 semanas**; o **colágeno só começa a cair na terceira semana** (28%). A ordem importa: primeiro some a substância fundamental, depois o arcabouço de colágeno. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 825), conta o mesmo pelo trabalho de PERRY: a depleção começa por volta de 2 dias, a destruição fica aparente em 4 a 6 dias e a cartilagem como um todo está destruída por volta de 4 semanas.\n\n### O sentido clínico\n\nPor isso a artrite séptica é drenada assim que diagnosticada, e por isso o Campbell (p. 821) chama o diagnóstico precoce de fator mais crítico: 25% a 50% dos pacientes terminam com perda irreversível da função articular.\n\nIsso está no resumo de Artrite séptica na criança e no adulto, seção Como a cartilagem morre.\n\n**Por que esta questão foi criada.** O TARO 2008 cobrou a fisiopatologia da artrite séptica hematogênica (membrana basal dos capilares, papel dos linfócitos e dos fibroblastos). Esta questão cobra o número que transforma essa fisiopatologia em urgência: quanto da matriz se perde em dois dias.",
+  "correta": "**A: 30%.** No modelo do coelho descrito pelo Tachdjian (cap. 23, p. 975), o S. aureus remove 30% do proteoglicano em 48 horas, 50% em 5 dias e 80% em 3 semanas.",
+  "incorretas": {
+   "B": "**50%** é a perda em 5 dias, não em 48 horas. É a distratora perigosa porque pertence à mesma série; quem decora só o meio da curva erra o tempo.",
+   "C": "**65%** não aparece na série do livro; está entre os 50% do quinto dia e os 80% da terceira semana.",
+   "D": "**80%** é a perda em 3 semanas, quando o colágeno também começa a cair (28%)."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 975",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 821 e 825",
+   "Resumo OrtoQuestões: Artrite séptica na criança e no adulto"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0437": {
+  "conceito": "A osteomielite metafisária da criança chega à articulação por dois caminhos, e vale separá-los porque a prova cobra os dois.\n\n### O caminho anatômico: a metáfise dentro da cápsula\n\nEm algumas articulações, a **cápsula se insere abaixo da fise**, e a metáfise fica banhada pelo líquido sinovial. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, Fig. 23.23, p. 975), nomeia esses lugares: **rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais**. Nelas, a osteomielite rompe para a articulação em **qualquer idade**.\n\n### O caminho vascular: o vaso que cruza a fise\n\nO segundo caminho depende da idade. Até cerca de **18 meses**, vasos atravessam a fise e ligam metáfise e epífise; a infecção metafisária invade a epífise e a articulação, com risco de osteonecrose (Tachdjian, p. 963 e 964). Depois que o núcleo secundário se forma, as circulações se separam e a fise vira barreira.\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 821, com a Fig. 24.1 na p. 823), precisa onde esse vaso existe: nos menores de 18 meses há **artéria transfisária no quadril, no ombro, no cotovelo e no tornozelo, mas não no joelho**.\n\n### Por que isso importa\n\nO dado explica um paradoxo. O **joelho** é a articulação mais acometida pela artrite séptica da criança (31%, Tachdjian, p. 975), mas a sua infecção é em geral semeadura direta da sinóvia: o joelho não tem metáfise intracapsular nem artéria transfisária, e tende a confinar a osteomielite metafisária. O **quadril do lactente**, ao contrário, reúne os dois caminhos, e é por isso o pior cenário.\n\nIsso está no resumo de Artrite séptica na criança e no adulto, seção Por onde a infecção chega à articulação.\n\n**Por que esta questão foi criada.** O TEOT 2025 perguntou em que metáfise a osteomielite se associa à pioartrite depois dos 18 meses (a fíbula distal), e a SBOT-SP pediu o trio de fises intra-articulares. Esta questão cobra o outro caminho, o vascular, pela exceção que a prova ainda não pediu: o joelho.",
+  "correta": "**C: joelho.** O Campbell (cap. 24, p. 821 e Fig. 24.1, p. 823) descreve a artéria transfisária, nos menores de 18 meses, no quadril, no ombro, no cotovelo e no tornozelo, mas não no joelho.",
+  "incorretas": {
+   "A": "**quadril** tem a artéria transfisária e, além disso, a metáfise proximal do fêmur é intracapsular; é por isso o lugar onde osteomielite e artrite séptica mais andam juntas no lactente, com osteonecrose da cabeça femoral.",
+   "B": "**ombro** tem o vaso transfisário no lactente e a metáfise proximal do úmero é intracapsular; a pioartrite do ombro na criança vem muitas vezes da osteomielite dessa metáfise.",
+   "D": "**tornozelo** está na lista do Campbell. É a distratora perigosa, porque o residente lembra que a tíbia distal e a fíbula distal são metáfises intracapsulares e pode achar que a exceção é outra."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 821 e 823",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 963 a 975",
+   "Resumo OrtoQuestões: Artrite séptica na criança e no adulto"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0438": {
+  "conceito": "A punção articular é o exame que decide a monoartrite aguda. O líquido vai imediatamente para **Gram, cultura, celularidade e pesquisa de cristais** (Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 821 e 826), e cada um desses exames responde a uma pergunta diferente.\n\n### O diferencial que mais engana\n\nPara o Campbell (cap. 24, p. 822), o principal diagnóstico diferencial da artrite séptica é a **artrite por cristais**. Os dois quadros se parecem: dor intensa, derrame, calor e às vezes febre. O líquido também se parece. Na Tabela 22.1 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 22, p. 931), a gota tem líquido turvo, com 10.000 a 14.000 leucócitos e 60% a 70% de polimorfonucleares; a piogênica tem cerca de 60.000 leucócitos e 90% de polimorfonucleares, glicose baixa e bactérias.\n\n### A regra: os dois podem coexistir\n\nO ponto que o Campbell destaca é que **o cristal no líquido não exclui a infecção**, porque as duas doenças podem coexistir na mesma articulação. Uma articulação já doente, com artrose ou depósito de cristais, é justamente uma das mais suscetíveis à artrite séptica (p. 821). Achar urato ou pirofosfato não autoriza ignorar o Gram, a celularidade e a cultura.\n\n### O sentido clínico\n\nNa prática, o cristal entra como mais um dado, não como diagnóstico que fecha o caso. Se a celularidade é muito alta, o Gram mostra bactéria ou a clínica é de sepse, trata-se como artrite séptica, com drenagem e antibiótico, até que a cultura diga o contrário.\n\nIsso está no resumo de Artrite séptica na criança e no adulto, seção O líquido sinovial: celularidade, glicose e proteína.\n\n**Por que esta questão foi criada.** O TEOT 2022 perguntou como estão a glicose e a proteína no líquido sinovial da artrite séptica. Esta questão cobra o outro item do mesmo exame, a pesquisa de cristais, e a armadilha que a prova ainda não pediu.",
+  "correta": "**B: não exclui infecção associada.** O Campbell (cap. 24, p. 822) aponta a artrite por cristais como principal diferencial e lembra que a presença de cristais não exclui a infecção, porque as duas podem coexistir.",
+  "incorretas": {
+   "A": "**confirma a gota como única causa** é o raciocínio que o livro manda evitar. É a distratora perigosa: o cristal é real, mas a infecção pode estar junto, e a articulação já doente é mais suscetível.",
+   "C": "**basta para tratar como gota** é o erro prático mais grave: tratar só a crise de cristais deixaria sem drenagem e sem antibiótico uma infecção que pode coexistir. O Gram, a celularidade e a cultura, padrão de referência para identificar o germe (Campbell, cap. 24, p. 821), continuam decidindo.",
+   "D": "**contraindica a artrotomia** não tem base: se a celularidade, o Gram ou a clínica indicarem infecção, a drenagem é feita mesmo com cristais no líquido."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 822",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 22, Tabela 22.1, p. 930 e 931",
+   "Resumo OrtoQuestões: Artrite séptica na criança e no adulto"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0439": {
+  "conceito": "A criança que chega mancando ou sem apoiar a perna, com o quadril doloroso, pode ter **sinovite transitória**, que melhora sozinha, ou **artrite séptica**, que destrói a cartilagem em dias. Separar as duas é o maior desafio diagnóstico do tema (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 976).\n\n### O modelo de KOCHER\n\nKOCHER e colaboradores identificaram **quatro preditores independentes**: **febre** com temperatura oral acima de **38,5 °C**, **não apoio** do membro, **VHS acima de 40 mm/h** e **leucócitos acima de 12.000**. Isolados, nenhum separa as duas doenças; somados, dão probabilidades crescentes de artrite séptica: 0,2% sem nenhum, 3% com um, 40% com dois, 93,1% com três e 99,6% com quatro (93% na validação prospectiva).\n\n### Os limites e o que sobrou\n\nFora da instituição original, o modelo rendeu menos. LUHMANN achou só **59%** de artrite séptica com os quatro preditores e recomendou ultrassom e artrocentese como complementos. Construindo sobre esses trabalhos, outros grupos encontraram que a **febre (oral acima de 38,5 °C) foi o melhor preditor** de artrite séptica (p. 976). Faz sentido biológico: a sinovite transitória costuma dar febre baixa ou nenhuma, enquanto a infecção bacteriana provoca resposta sistêmica.\n\n### O sentido clínico\n\nO Tachdjian conclui que os preditores clínicos perdem desempenho em populações novas e recomenda **limiar baixo para internar e puncionar**. A criança febril com quadril irritável é a que mais merece ultrassom e aspiração.\n\nIsso está no resumo de Artrite séptica na criança e no adulto, seção KOCHER: separando a sinovite transitória.\n\n**Por que esta questão foi criada.** O TARO 2019, o TEOT 2021 e o TARO 2023 pediram qual achado é critério de KOCHER e qual é o corte da VHS. Esta questão cobra o passo seguinte, que a prova ainda não pediu: qual dos quatro pesa mais sozinho.",
+  "correta": "**A: a febre acima de 38,5 °C.** O Tachdjian (cap. 23, p. 976) registra que outros grupos, depois de KOCHER e de LUHMANN, encontraram a febre (temperatura oral acima de 38,5 °C) como o melhor preditor de artrite séptica.",
+  "incorretas": {
+   "B": "**a recusa de apoio** é um dos quatro preditores e é o achado mais visível na criança que anda, mas também aparece na sinovite transitória, que pode levar a criança a recusar andar. É a distratora perigosa, por ser o sinal mais lembrado.",
+   "C": "**a VHS acima de 40 mm/h** é preditor de KOCHER, mas sobe devagar e pode estar normal nas primeiras 48 horas; não é o melhor isolado.",
+   "D": "**a leucocitose acima de 12.000** é preditor, mas o hemograma é o exame mais fraco do conjunto: na osteomielite, só 25% a 35% chegam com leucocitose (Tachdjian, p. 953)."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 976",
+   "Resumo OrtoQuestões: Artrite séptica na criança e no adulto"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0440": {
+  "conceito": "Depois de KOCHER, vários grupos tentaram criar regras de predição para o quadril irritável da criança. Os livros trazem três, e a prova costuma misturar os seus itens.\n\n### Três modelos, três listas\n\n- **KOCHER** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 976): febre oral acima de 38,5 °C, não apoio, VHS acima de 40 mm/h e leucócitos acima de 12.000. Com os quatro, 99,6% no estudo original.\n- **JUNG** (Tachdjian, p. 954; Campbell's Operative Orthopaedics, 15ª ed., cap. 22, Tabela 22.7, p. 790): cinco itens, temperatura acima de 37 °C, VHS acima de 20 mm/h, PCR acima de 1 mg/dL, leucócitos acima de 11.000 e espaço articular do quadril aumentado mais de 2 mm. Com os cinco, 99,1%.\n- **SINGHAL** (Campbell, cap. 24, Tabela 24.5, p. 821 e 824): só dois, **PCR acima de 20 mg/L** e **incapacidade de apoiar**. Com os dois, **74%**; sem nenhum, **menos de 1%**.\n\n### Por que a PCR entrou\n\nO KOCHER original não tinha PCR. A PCR é o marcador mais rápido da inflamação aguda: sobe em horas, ao contrário da VHS, que leva dias (Tachdjian, p. 954). O modelo de SINGHAL troca a VHS e a leucocitose por ela e fica mais simples. O ganho maior é o **valor negativo**: a criança que apoia e tem PCR normal quase nunca tem artrite séptica.\n\n### O sentido clínico\n\nNenhum modelo substitui a punção quando a suspeita persiste. Eles servem para escolher quem precisa de ultrassom e aspiração com urgência e quem pode ser observado.\n\nIsso está no resumo de Artrite séptica na criança e no adulto, seção Laboratório: o que cada exame diz.\n\n**Por que esta questão foi criada.** O TARO 2019 ofereceu a PCR de 40 mg/L como falso critério de KOCHER, e o TARO 2016 cobrou a probabilidade com dois preditores. Esta questão cobra o modelo vizinho em que a PCR é, de fato, preditor, para o aluno não misturar as listas.",
+  "correta": "**D: a PCR acima de 20 mg/L.** Na Tabela 24.5 do Campbell (cap. 24, p. 824), o modelo de SINGHAL usa só a PCR acima de 20 mg/L e a incapacidade de apoiar; com os dois, 74% de artrite séptica, e sem nenhum, menos de 1%.",
+  "incorretas": {
+   "A": "**a VHS acima de 40 mm/h** é preditor de KOCHER, não de SINGHAL. É a distratora perigosa, porque o aluno que só conhece KOCHER encaixa a VHS em qualquer modelo.",
+   "B": "**a febre acima de 38,5 °C** é preditor de KOCHER e o melhor isolado segundo outros grupos (Tachdjian, p. 976), mas não entra no modelo de SINGHAL.",
+   "C": "**a leucocitose acima de 12.000** é o quarto preditor de KOCHER; JUNG usa 11.000. SINGHAL dispensou o hemograma."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, Tabela 24.5, p. 821 e 824",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22, Tabela 22.7, p. 790",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 954 e 976",
+   "Resumo OrtoQuestões: Artrite séptica na criança e no adulto"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0441": {
+  "conceito": "O quadril do lactente é o pior cenário da artrite séptica. A cabeça femoral ainda é quase toda cartilagem, depende de vasos que correm dentro da cápsula e, até cerca de 18 meses, a metáfise e a epífise se comunicam por vasos que cruzam a fise (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 966). O Tachdjian justifica por isso a aspiração e o desbridamento precoces em toda artrite séptica do início da infância.\n\n### Por que o quadril luxa\n\nO pus enche a cápsula, aumenta a pressão e a distende. Num quadril pequeno, de cabeça ainda cartilaginosa, a cápsula distendida e a pressão empurram a cabeça para fora. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 831), alerta que o quadril séptico **não diagnosticado** no lactente pode **luxar**.\n\n### O que fazer depois da drenagem\n\nO mesmo livro diz que, drenado, o quadril do lactente deve ser **mantido em abdução** para reduzir o risco de luxação; depois da artrotomia, imobiliza-se em gesso com **abdução moderada** (p. 831 a 833). Em abdução, a cabeça femoral fica apontada para o fundo do acetábulo e centrada, a posição de maior estabilidade. A via de drenagem preferida na criança pequena é a **anterior**, que poupa a irrigação da cabeça e também reduz a luxação pós-operatória (p. 831).\n\n### A posição da sequela\n\nVale contrastar: o quadril que evolui mal, com luxação e necrose ou anquilose, fica em **flexão, adução e rotação interna**. A posição que se evita no tratamento é exatamente a da sequela.\n\nIsso está no resumo de Artrite séptica na criança e no adulto, seção Drenagem: quando, como e por qual via.\n\n**Por que esta questão foi criada.** O TARO 2025 descreveu um bebê de dois meses com quadril séptico e pediu diagnóstico e conduta (drenagem e antibiótico), e o TEOT 2023 pediu a via de acesso. Esta questão cobra o passo seguinte, ainda não cobrado: como manter o quadril depois de drenado.",
+  "correta": "**B: abdução.** O Campbell (cap. 24, p. 831 a 833) manda manter o quadril do lactente em abdução após a drenagem, com gesso em abdução moderada, para reduzir o risco de luxação.",
+  "incorretas": {
+   "A": "**adução** é a posição que favorece a saída da cabeça femoral; é a posição da sequela, não a do tratamento. É a distratora perigosa, porque o aluno pode confundir com a posição de conforto.",
+   "C": "**rotação interna** faz parte da atitude do quadril luxado ou anquilosado depois da infecção, junto com a flexão e a adução.",
+   "D": "**flexão e adução** reproduz a posição de anquilose e de luxação com necrose descrita como sequela do quadril séptico; mantê-la seria favorecer o desfecho que se quer evitar."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 831 a 833",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 966",
+   "Resumo OrtoQuestões: Artrite séptica na criança e no adulto"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0442": {
+  "conceito": "Entender a sequência de células na sinóvia infectada ajuda a ler o líquido puncionado e a responder questões de fisiopatologia.\n\n### Como a bactéria chega e fica\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 825), dá as razões de a sinóvia ser um alvo fácil: o **S. aureus tem receptores de colágeno**, os **capilares sinoviais não têm membrana basal limitante** (a bactéria passa entre as células endoteliais) e os **fibroblastos sinoviais inibem a fagocitose**.\n\n### A fase aguda: polimorfonucleares\n\nLogo depois da chegada da bactéria, a sinóvia fica hiperêmica e se enche de **polimorfonucleares** (neutrófilos). É por isso que o líquido da artrite séptica tem muitas células com predomínio de neutrófilos, acima de 50.000/mm3 no Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 976). São esses neutrófilos, junto com os macrófagos e as células sinoviais, que liberam citocinas e enzimas que degradam a matriz (p. 975).\n\n### A fase tardia: mononucleares e linfócitos\n\nSó por volta de **3 semanas** os **mononucleares e linfócitos** passam a predominar (Campbell, p. 825). Eles não são espectadores: na resposta imune tardia, linfócitos T estimulados por toxinas como a enterotoxina estafilocócica também degradam a substância fundamental e expõem o colágeno às colagenases. Coincide com o momento em que, no modelo do coelho, o colágeno começa a cair (Tachdjian, p. 975).\n\n### O sentido clínico\n\nUm líquido agudo com predomínio de linfócitos deve fazer pensar em outra coisa (tuberculose, artrite inflamatória), não numa artrite piogênica de poucos dias.\n\nIsso está no resumo de Artrite séptica na criança e no adulto, seção Como a cartilagem morre.\n\n**Por que esta questão foi criada.** O TARO 2008 perguntou, entre outras afirmações, se o infiltrado inicial da artrite séptica hematogênica é pobre em mononucleares. Esta questão cobra o mesmo fato pelo número: quando a troca de células acontece.",
+  "correta": "**C: 3 semanas.** O Campbell (cap. 24, p. 825) descreve a sinóvia inicialmente cheia de polimorfonucleares, com predomínio de mononucleares e linfócitos só por volta de 3 semanas.",
+  "incorretas": {
+   "A": "**48 horas** é o tempo em que começa a depleção da substância fundamental (PERRY, Campbell, p. 825) e em que o coelho perde 30% do proteoglicano; nessa fase, a sinóvia ainda é dominada por neutrófilos. É a distratora perigosa, por ser o número mais lembrado do tema.",
+   "B": "**1 semana** cai na fase em que a destruição da cartilagem fica aparente (4 a 6 dias, Campbell), ainda com predomínio de polimorfonucleares.",
+   "D": "**6 semanas** passa do ponto: a troca de células já ocorreu por volta de 3 semanas, e com cerca de 4 semanas uma artrite não tratada já destruiu a cartilagem (Campbell, p. 825). O número lembra a duração de antibiótico de 4 a 6 semanas para estafilococo no Campbell (p. 826 e 827), não a cronologia da sinóvia."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 825",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 975",
+   "Resumo OrtoQuestões: Artrite séptica na criança e no adulto"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
+ },
+ "conceitos-basicos-0443": {
+  "conceito": "As sequelas da artrite séptica do quadril são graves e definitivas: **artrose precoce, osteonecrose do fêmur proximal, sinovite, artrofibrose, rigidez e infecção persistente** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 978). O que as previne é o tempo.\n\n### O relógio\n\nO Tachdjian aponta o **atraso do tratamento** como o fator isolado mais importante: não houve resultado insatisfatório quando o tratamento começou com **menos de 3 dias** de sintomas; os maus resultados se concentraram depois de **5 dias** e quando havia **osteomielite associada do fêmur proximal**. CHOI, citado pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 838.e2), estudou lactentes e achou como fatores de mau prognóstico a infecção **antes de 22 semanas de vida**, a **prematuridade** e os sintomas por **mais de 4 dias**, com o atraso diagnóstico como o principal.\n\n### Por que o tempo manda\n\nA explicação está na biologia: o proteoglicano começa a se perder em 48 horas, e o pus sob pressão na cápsula comprime os vasos da epífise, que correm dentro da articulação. Quanto mais dias, mais matriz perdida e maior o risco de necrose da cabeça femoral. O Tachdjian (p. 977) observa que a intervenção em até **4 dias** dá bom resultado e que o atraso traz loculações de fibrina, pannus e reoperação.\n\n### O sentido clínico\n\nDaí a pressa em toda a cadeia: suspeitar na criança que não apoia, puncionar antes do antibiótico, drenar sem esperar a cultura. Gram ou cultura negativos não são motivo para adiar, porque a cultura só é positiva em 30% a 70% (p. 976).\n\nIsso está no resumo de Artrite séptica na criança e no adulto, seção Complicações e sequelas do quadril.\n\n**Por que esta questão foi criada.** O TARO 2025 cobrou o diagnóstico e a drenagem do quadril séptico do lactente, e o TEOT 2023 a via de acesso. Esta questão cobra o porquê da urgência, que a prova ainda não pediu: o fator que mais pesa no resultado.",
+  "correta": "**A: o atraso do tratamento.** O Tachdjian (cap. 23, p. 978) aponta o atraso como o fator isolado mais importante: nenhum mau resultado com menos de 3 dias de sintomas e maus resultados acima de 5 dias.",
+  "incorretas": {
+   "B": "**a idade acima de 5 anos** inverte o risco: quem vai pior é o lactente, sobretudo o infectado antes de 22 semanas e o prematuro (CHOI, Campbell, p. 838.e2). É a distratora perigosa, porque o aluno pode associar idade maior a doença mais avançada.",
+   "C": "**a cultura negativa** é comum, já que a cultura do líquido só é positiva em 30% a 70% (Tachdjian, p. 976), e não aparece entre os fatores de mau prognóstico; o germe que não cresce, como a Kingella, costuma até dar quadro mais brando.",
+   "D": "**a via de drenagem** importa (a anterior protege a irrigação da cabeça no quadril da criança), mas o livro não a coloca como fator isolado de mau resultado; aspiração seriada, artroscopia e artrotomia curam quando feitas a tempo."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 976 a 978",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 838.e2",
+   "Resumo OrtoQuestões: Artrite séptica na criança e no adulto"
+  ],
+  "geradoEm": "2026-11-24",
+  "conferido": false
  }
 }

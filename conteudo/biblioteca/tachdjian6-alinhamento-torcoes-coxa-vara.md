@@ -39,7 +39,7 @@ O recém-nascido tem **10 a 15 graus de varo**. As medidas do ângulo tibiofemor
 
 **O valgo fisiológico** não pede radiografia, a não ser que haja **baixa estatura**, história de **trauma, infecção ou doença metabólica óssea**, ou **assimetria importante**. Uma anteversão femoral aumentada pode imitar o valgo. Depois dos 8 anos, o valgo idiopático excessivo, com alteração de marcha, dor, mau alinhamento patelar ou queixa estética importante, pode ser corrigido por **crescimento guiado** (hemiepifisiodese), que exige alguns anos de crescimento restante.
 
-!questoes central=pediatria-0112 relacionadas=pediatria-0264,pediatria-0498 treino=pediatria-1399
+!questoes central=pediatria-0112 relacionadas=pediatria-0264,pediatria-0498 treino=pediatria-1399,pediatria-1512
 conceito: Varo máximo entre 6 e 12 meses, neutro entre 18 e 24, valgo máximo entre 2 e 4 anos, valgo do adulto (5 a 7 graus) por volta dos 8; radiografia só com baixa estatura, assimetria, trauma, infecção ou doença metabólica.
 como: O TEOT 2021 pediu a idade do valgo fisiológico máximo (4 anos); a SBOT-SP, a faixa de idade (2 a 4 anos).
 armadilha: Confundir o valgo máximo dos 4 anos com o alinhamento definitivo dos 8, ou pedir radiografia para todo valgo simétrico da idade.
@@ -229,7 +229,7 @@ armadilha: Hipercorrigir em valgo como na forma infantil, ou esquecer o varo do 
 
 **Retrações que mudam a marcha.** Duas contraturas de partes moles rodam o membro para fora. O **trato iliotibial** retraído (o exemplo do Tachdjian é a poliomielite) passa à frente e por fora do quadril e por fora do joelho: puxa o quadril em **flexão, abdução e rotação externa**, abduz a tíbia sobre o fêmur como a corda de um arco (**geno valgo**) e, junto com a cabeça curta do bíceps, roda a tíbia e a fíbula para fora (**torção tibial externa**), podendo chegar à subluxação posterolateral do joelho; a retração leve se trata com alongamento, nos passos do teste de OBER, e a fixa, com as fasciotomias de OBER e YOUNT (Tachdjian, cap. 33, p. 1591 e 1592). O **tríceps sural** encurtado da criança espástica (diplegia, quadriplegia) obriga o calcâneo a rodar para fora sob o tálus para o pé apoiar no chão; a cabeça do tálus cai, o pé fica **planovalgo** e a marcha vira **em rotação externa**, muitas vezes com o joelho rodado para dentro pela anteversão (Lovell and Winter, cap. 27, p. 1264).
 
-!questoes central=pediatria-0440 relacionadas=pediatria-0776,pediatria-0778,pediatria-0311,pediatria-0349,pediatria-0200,pediatria-0073,pediatria-0788 treino=pediatria-1404,pediatria-1405
+!questoes central=pediatria-0440 relacionadas=pediatria-0776,pediatria-0778,pediatria-0311,pediatria-0349,pediatria-0200,pediatria-0073,pediatria-0788 treino=pediatria-1404,pediatria-1405,pediatria-1513,pediatria-1514
 conceito: Anteversão de 40 graus no lactente a 16 no adulto, com rotação interna excessiva e externa pequena no exame em decúbito ventral; a tíbia roda lateralmente com o crescimento (bimaleolar de 5 a 15 graus); quase tudo melhora sozinho, e órteses não ajudam.
 como: O TARO pediu a anteversão aos 6 meses com a rotação da tíbia, a anteversão ao nascer e aos 16 anos e o sentido da rotação lateral do quadril com a idade; a SBOT-SP, o ângulo coxa-pé aos 2 e 8 anos; o TEPOP 2024, o ângulo de progressão do pé de 1 a 4 anos; o TARO 2023 mostrou o teste do ângulo coxa-pé; o TARO 2015 associou a rotação interna da perna ao pé torto.
 armadilha: Achar que a anteversão aumenta com a idade, prescrever DENIS BROWNE para torção tibial ou indicar osteotomia proximal da tíbia.

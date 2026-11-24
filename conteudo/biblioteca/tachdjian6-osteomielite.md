@@ -153,7 +153,7 @@ armadilha: Achar que o corte de idade é único: TARO e TEOT usam 18 meses (Tach
 
 **A Kingella.** O aspirado vai em **frasco de hemocultura aeróbio**, que dilui os inibidores; semeada no centro cirúrgico, a amostra sólida foi positiva em 5 de 6, contra 1 de 6 pelo laboratório. O PCR molecular complementa, mas a **cultura continua essencial** (Tachdjian, p. 957).
 
-!questoes central=conceitos-basicos-0292 relacionadas=conceitos-basicos-0284,conceitos-basicos-0285
+!questoes central=conceitos-basicos-0292 relacionadas=conceitos-basicos-0284,conceitos-basicos-0285 treino=conceitos-basicos-0430,conceitos-basicos-0431
 conceito: A VHS depende do fibrinogênio, sobe devagar, normaliza em semanas e não é confiável no neonato e no falciforme; a PCR, estimulada pela IL-6, sobe em 6 horas, tem pico em 2 dias, meia-vida de 24 horas e normaliza em cerca de 1 semana, e por isso segue melhor a resposta.
 como: O TARO 2006, 2007 e 2008 cobraram em sequência a VHS não confiável no neonato e no falciforme, a comparação entre VHS e PCR e o mecanismo da subida da PCR.
 armadilha: Usar a VHS para seguir a melhora dos primeiros dias, ou atribuir a PCR ao fibrinogênio, que é o determinante da VHS.
@@ -193,7 +193,7 @@ alerta: Na `joelho-0327`, o Tachdjian sustenta a punção antes do antibiótico;
 | RM | o mais poderoso | sensibilidade 98%, especificidade 75% |
 !fim
 
-!questoes central=conceitos-basicos-0171
+!questoes central=conceitos-basicos-0171 treino=conceitos-basicos-0432,conceitos-basicos-0434,conceitos-basicos-0435
 conceito: A radiografia só mostra destruição óssea após perda de 30% a 50% da matriz; o Campbell, cap. 22, dá 10 a 21 dias de infecção, e o Tachdjian, 10 a 14 dias.
 como: O TARO 2024 aplicou a regra às infecções pós-operatórias com material de síntese, pedindo quando a osteólise aparece e com quanta perda óssea.
 armadilha: Esperar osteólise na primeira semana ou trocar o percentual por 10% a 20%.
@@ -432,7 +432,7 @@ alerta: Nenhum livro lido liga com todas as letras o tipo I à fresagem; o Rockw
 
 **Retalhos na tíbia.** **Gastrocnêmio no terço proximal, sóleo no médio, retalho livre no distal**; MASQUELET, haste de cimento e ILIZAROV estão na seção do tratamento da crônica do adulto (Campbell, p. 815 a 817).
 
-!questoes central=conceitos-basicos-0045 relacionadas=conceitos-basicos-0064,conceitos-basicos-0058,conceitos-basicos-0093,conceitos-basicos-0194
+!questoes central=conceitos-basicos-0045 relacionadas=conceitos-basicos-0064,conceitos-basicos-0058,conceitos-basicos-0093,conceitos-basicos-0194 treino=conceitos-basicos-0433
 conceito: O antibiótico no PMMA precisa ser termoestável (tobramicina, gentamicina, vancomicina) para resistir à cura exotérmica; o glicocálice protege a bactéria aderida ao implante e ao cimento esgotado.
 como: O TARO 2016 pediu a propriedade do antibiótico no cimento; a SBOT-SP, a matriz do biofilme maduro; o TARO 2014, os agentes da infecção precoce; a prova de Ombro e Cotovelo, os critérios sugestivo e confirmatório de infecção da osteossíntese.
 armadilha: Escolher o antibiótico pelo espectro e esquecer a estabilidade ao calor.

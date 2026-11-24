@@ -60,7 +60,7 @@ A **patela** é o **maior sesamoide**, com **faceta lateral maior** e **medial m
 | cabeça da fíbula | bíceps, LCF, popliteofibular, arqueado, fabelofibular | colo com o nervo fibular |
 !fim
 
-!questoes central=joelho-0212 treino=joelho-0343
+!questoes central=joelho-0212 treino=joelho-0343,joelho-0438
 conceito: O platô medial é côncavo e o lateral é convexo e mais alto (Rockwood, cap. 62); no lado medial o fêmur é uma roda no plano, no lateral uma roda sobre cúpula, por isso a estabilidade depende de ligamentos e meniscos.
 como: O TARO 2012 comparou o platô lateral com o medial pedindo altura e curvatura.
 armadilha: Inverter a curvatura e marcar o lateral como côncavo, pensando no menisco lateral, que cria a concavidade sobre o platô convexo.
@@ -117,7 +117,7 @@ Os eixos explicam a osteotomia. No joelho varo com artrose medial, a osteotomia 
 Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 10, Fig. 10.13, p. 501. Cálculo da cunha da osteotomia tibial alta: em A, o ângulo do ápice é a correção desejada, e a altura da base cresce com a largura da tíbia; em B, o cálculo levado ao osso, com o corte transverso cerca de 2 cm abaixo da linha articular e a cunha de base lateral.
 !fim
 
-!questoes central=joelho-0252
+!questoes central=joelho-0252 treino=joelho-0430
 conceito: Na osteotomia tibial alta de COVENTRY para o joelho varo, o eixo anatômico deve ficar hipercorrigido a pelo menos 8 graus de valgo, cerca de 10 graus, porque a subcorreção é causa de falha.
 como: O TARO 2009 perguntou o valgo mínimo da correção segundo COVENTRY; a mesma questão aparece duas vezes no acervo.
 armadilha: Marcar 5 a 7 graus, que é o valgo fisiológico, e esquecer que a osteotomia precisa de hipercorreção.
@@ -228,7 +228,7 @@ A figura do platô visto de cima, com as áreas de fixação pintadas, é uma pe
 Fonte: Skeletal Trauma: Basic Science, Management, and Reconstruction, 5ª ed. (2015), cap. 61, Fig. 61-4, p. 1908. Platô tibial visto de cima, com a frente no alto: inserções do menisco medial (MM, na frente e atrás), do LCA, do menisco lateral (LM) e do LCP na borda posterior; na periferia, os colaterais, o bíceps e o semimembranáceo; em verde, a parte do platô lateral que o menisco não cobre.
 !fim
 
-!questoes central=joelho-0240 treino=joelho-0351
+!questoes central=joelho-0240 treino=joelho-0351,joelho-0422,joelho-0433
 conceito: Na vista superior do platô, o LCP é a fixação mais posterior, abaixo da linha articular; o LCA e a raiz anterior do menisco lateral ficam lado a lado à frente da eminência; as raízes do medial são as mais anterior e a mais posterior entre os meniscos.
 como: A prova mostrou a vista superior da tíbia com duas setas e pediu as estruturas que se inserem em cada área.
 armadilha: Confundir a área do LCP com a do corno posterior do menisco medial, que fica logo à frente dele, ou a do LCA com a do corno anterior do menisco medial.
@@ -265,7 +265,7 @@ Por isso o canto dá estabilidade estática e dinâmica mesmo com o joelho fleti
 Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.1, p. 1984. Lado medial do joelho: o ligamento capsular medial dividido em terço anterior, terço médio (o colateral tibial profundo) e terço posterior, rotulado como ligamento oblíquo posterior; o semimembranáceo chega por trás, e as setas 1 a 5 marcam as suas cinco expansões.
 !fim
 
-!questoes central=joelho-0094 relacionadas=joelho-0260
+!questoes central=joelho-0094 relacionadas=joelho-0260 treino=joelho-0429
 conceito: O ligamento oblíquo posterior é, na descrição de HUGHSTON, um espessamento do ligamento capsular medial, do tubérculo do adutor à tíbia posterior e à cápsula; não é inserção do semimembranáceo nem um dos meniscofemorais.
 como: A mesma afirmação sobre o oblíquo posterior aparece duas vezes no acervo, com WRISBERG e HUMPHREY como distratores.
 armadilha: Marcar "uma das inserções do semimembranáceo": o semimembranáceo tensiona o LOP e o ligamento poplíteo oblíquo é a sua expansão, mas o LOP é estrutura capsular própria.
@@ -293,7 +293,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.2, p
 
 A inserção do semimembranáceo na tíbia é **posteromedial**, no sulco da face posterior do côndilo medial, e é o que a figura com a área pintada pergunta. Semitendíneo e semimembranáceo nascem do **túber isquiático** e são inervados pela porção tibial do isquiático; o semitendíneo vai à pata de ganso e é usado nas reconstruções do LCA (Netter, cap. 8).
 
-!questoes central=trauma-1061 relacionadas=joelho-0169,trauma-1023,trauma-1026,quadril-0130
+!questoes central=trauma-1061 relacionadas=joelho-0169,trauma-1023,trauma-1026,quadril-0130 treino=joelho-0439
 conceito: O semimembranáceo nasce no túber isquiático, insere-se na face posteromedial do côndilo medial da tíbia e tem cinco expansões, a primeira das quais é o ligamento poplíteo oblíquo, que cruza a cápsula posterior até o lado lateral.
 como: O TARO 2022 apontou a primeira expansão na vista posterior; o TARO 2026 pintou a inserção na tíbia e mostrou semitendíneo e semimembranáceo numeradas na vista posterior; o CET-PR e outra prova mostraram o tendão e o ventre muscular na coxa.
 armadilha: Na `trauma-1061`, marcar o oblíquo posterior (que é capsular, medial) ou o ligamento arqueado (que é do canto posterolateral e vem do poplíteo) no lugar do poplíteo oblíquo.
@@ -306,7 +306,7 @@ O mesmo canto é a porta de entrada das fraturas posteromediais do platô. O Cam
 
 Não confundir com a via de **BANKS e LAUFMAN**, em prono, que usa o intervalo entre o **semitendíneo** e a cabeça medial do gastrocnêmio.
 
-!questoes central=joelho-0061
+!questoes central=joelho-0061 treino=joelho-0434,joelho-0435
 conceito: A via posteromedial de GALLA e LOBENHOFFER, descrita por FAKLER, entra entre o complexo do semimembranáceo, afastado medialmente, e a cabeça medial do gastrocnêmio, afastada lateralmente, sem dissecar o feixe poplíteo.
 como: O TEOT 2021 mostrou a figura com os afastadores e perguntou o intervalo de dissecção.
 armadilha: Marcar semitendíneo e gastrocnêmio medial, que é o intervalo de BANKS e LAUFMAN em prono, ou grácil e semitendíneo, que são tendões vizinhos da pata de ganso.
@@ -339,7 +339,7 @@ O **trato iliotibial** insere-se no **tubérculo de GERDY**, na face anterolater
 
 O **bíceps femoral** é o único isquiotibial lateral, flexor do joelho que **roda a tíbia externamente**. A cabeça longa nasce do túber isquiático (porção tibial do isquiático); a **cabeça curta** nasce da **linha áspera e da linha supracondilar lateral** e é inervada pela **porção fibular** (Netter, cap. 8). As duas terminam na **cabeça da fíbula**, lateral ao LCF, e a borda distal do braço capsular da cabeça curta é o **ligamento fabelofibular** (Campbell).
 
-!questoes central=joelho-0089 relacionadas=joelho-0114,quadril-0081,joelho-0184
+!questoes central=joelho-0089 relacionadas=joelho-0114,quadril-0081,joelho-0184 treino=joelho-0424,joelho-0428
 conceito: O trato iliotibial insere-se no tubérculo de GERDY, no côndilo lateral da tíbia; o bíceps femoral, nas duas cabeças, termina na cabeça da fíbula, e a cabeça curta nasce na linha áspera, com inervação fibular.
 como: Uma prova reuniu GERDY, eixos, pata de ganso e WRISBERG numa só questão; outras mostraram o trato e o bíceps na coxa e perguntaram a inserção; o TEOT 2025 apontou a cabeça curta na face lateral.
 armadilha: Na `joelho-0089`, a pata de ganso é sartório, grácil e semitendíneo (sem o semimembranáceo), os eixos divergem cerca de 6 graus e o WRISBERG ancora o menisco lateral; nas figuras, confundir o trato (que vai a GERDY) com o bíceps (que vai à fíbula).
@@ -359,7 +359,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.4, p
 
 A função tem duas faces que a prova opõe. Como **músculo**, é o **rotador medial da tíbia** no início da flexão, quem **destrava** o joelho. Como **estabilizador**, segura a **rotação externa da tíbia**: o Netter o chama de **restritor primário da rotação lateral do joelho**, que resiste também ao varo e à translação posterior. Quem roda para dentro é quem impede de rodar para fora. O **popliteofibular**, da junção musculotendínea à cabeça da fíbula, é o **restritor estático primário da rotação lateral** (Netter); a sua divisão posterior é a reconstruída.
 
-!questoes central=joelho-0342 relacionadas=trauma-1040
+!questoes central=joelho-0342 relacionadas=trauma-1040 treino=joelho-0425,joelho-0427
 conceito: O canto posterolateral tem como estruturas mais consistentes o LCF, o tendão poplíteo e o ligamento popliteofibular; o tendão poplíteo é o restritor primário da rotação externa da tíbia, além de resistir ao varo e à translação posterior.
 como: A SBOT-SP pediu o trio do canto posterolateral misturando LCP e ligamento poplíteo oblíquo; o TARO 2024 perguntou em qual restrição o tendão poplíteo tem maior importância.
 armadilha: Incluir o ligamento poplíteo oblíquo (expansão do semimembranáceo, posteromedial) ou o LCP no canto; na `trauma-1040`, marcar rotação interna porque o músculo poplíteo é rotador interno.
@@ -420,7 +420,7 @@ O Netter (cap. 8) dá as tabelas de músculos da coxa que a prova usa nas figura
 
 O **reto femoral** é o único do quadríceps que cruza o quadril: nasce na **espinha ilíaca anteroinferior**, de onde pode ser arrancado, e na figura anterior é o ventre central da coxa. O **sartório** nasce na **anterossuperior** e cruza em diagonal até a **pata de ganso**, que é a inserção conjunta de **sartório, grácil e semitendíneo** na face medial proximal da tíbia; são flexores do joelho com efeito rotatório interno secundário e protegem contra o valgo (Campbell, cap. 50, p. 1984).
 
-!questoes central=quadril-0085 relacionadas=joelho-0154,joelho-0113,quadril-0137
+!questoes central=quadril-0085 relacionadas=joelho-0154,joelho-0113,quadril-0137 treino=joelho-0420,joelho-0426
 conceito: O reto femoral nasce na espinha ilíaca anteroinferior; todo o compartimento anterior da coxa é inervado pelo femoral; sartório, grácil e semitendíneo formam a pata de ganso na face medial proximal da tíbia.
 como: As provas apontaram o reto femoral e um músculo do quadríceps pedindo origem e nervo, a área da pata de ganso na tíbia e um isquiotibial medial.
 armadilha: Trocar as espinhas (anterossuperior é do sartório), marcar obturatório para um músculo anterior ou incluir o semimembranáceo na pata de ganso.
@@ -450,7 +450,7 @@ Os músculos que a prova aponta ao redor do joelho (Netter):
 - **Sóleo**: cabeça da fíbula e linha do sóleo.
 - **Tibial posterior**: tíbia, fíbula e membrana interóssea, no compartimento profundo; **flexão plantar e inversão**; ruptura leva ao pé plano adquirido.
 
-!questoes central=joelho-0104 relacionadas=joelho-0111,joelho-0153,joelho-0238
+!questoes central=joelho-0104 relacionadas=joelho-0111,joelho-0153,joelho-0238 treino=joelho-0421,joelho-0423
 conceito: O plantar nasce na linha supracondilar lateral; a fabela está no tendão da cabeça lateral do gastrocnêmio; o compartimento anterior (tibial anterior) é do fibular profundo; o tibial posterior, no centro do compartimento profundo, faz flexão plantar e inversão.
 como: O TEOT 2023 apontou o pequeno ventre na fossa poplítea; outra prova mostrou a fabela na radiografia; outras pediram o nervo de um músculo anterior da perna e a função do músculo profundo no corte transversal.
 armadilha: Chamar o plantar de sóleo ou poplíteo; colocar a fabela no gastrocnêmio medial ou no poplíteo; trocar fibular profundo por superficial; marcar eversão para o tibial posterior.
@@ -487,7 +487,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.3, p
 | sural | medial + lateral | subcutâneo posterolateral | nenhum | posterolateral distal e região lateral do calcanhar |
 !fim
 
-!questoes central=joelho-0243 relacionadas=joelho-0147,joelho-0185,joelho-0215
+!questoes central=joelho-0243 relacionadas=joelho-0147,joelho-0185,joelho-0215 treino=joelho-0432
 conceito: Na face lateral do joelho, o cutâneo sural lateral é ramo superficial do fibular comum; o fibular profundo vai ao compartimento anterior com a artéria tibial anterior sobre a membrana interóssea; o fibular superficial desce no compartimento lateral.
 como: A prova numerou dois nervos na face lateral do joelho; o TEOT 2024 e o TEOT 2025 apontaram nervos na perna lateral e anterior; o TARO 2012 perguntou em que compartimentos ficam o fibular profundo e o sural.
 armadilha: Confundir o fibular profundo, junto à artéria e à membrana, com o superficial, que é mais lateral e superficial; inventar um "fibular recorrente" como tronco nervoso; colocar o sural no compartimento posterior profundo.
@@ -504,7 +504,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.44, p.
 
 Para reconhecer o nervo, vale eliminar os vizinhos pelo território. O **tibial** é profundo e posterior, entre as cabeças do gastrocnêmio, e o seu ramo de pele, o cutâneo sural medial, desce pela panturrilha. Os ramos cutâneos anteriores do **femoral** descem pela frente da coxa, de cima para baixo, e não surgem de trás do sartório na altura da interlinha. O **obturatório** é o nervo dos adutores, na face medial da coxa. Só o safeno chega ao joelho por trás do sartório e manda um ramo transversal para a frente, abaixo da patela. Quando esse ramo é cortado, o paciente fica com uma área dormente lateral à cicatriz ou com um neuroma doloroso.
 
-!questoes central=joelho-0106
+!questoes central=joelho-0106 treino=joelho-0436
 conceito: O ramo infrapatelar sai do safeno no lado medial do joelho, depois que o nervo perfura a fáscia entre o sartório e o grácil, cruza para a frente abaixo da patela e inerva a pele anteromedial; é a estrutura em risco em toda via anteromedial.
 como: O TEOT 2023 mostrou o desenho de uma incisão anteromedial com um nervo ramificado abaixo da patela e perguntou de que nervo ele é ramo, entre tibial, safeno, obturatório e cutâneo femoral anterior.
 armadilha: Marcar o cutâneo femoral anterior por o nervo estar na frente do joelho; o ramo vem de trás e de medial, do safeno, e não de cima.
@@ -534,7 +534,7 @@ A descendente do joelho tem mais detalhe no capítulo de enxertos vascularizados
 Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.58, p. 45. Circulação colateral do joelho vista por trás: a poplítea, no centro, solta as geniculares superiores medial e lateral acima dos côndilos, a genicular média para dentro da cápsula e as geniculares inferiores medial e lateral abaixo da interlinha; o nervo tibial desce ao lado e o fibular comum segue o bíceps.
 !fim
 
-!questoes central=joelho-0187
+!questoes central=joelho-0187 treino=joelho-0431,joelho-0437
 conceito: A genicular superior medial sai da poplítea e contorna o fêmur logo acima do côndilo medial, por baixo dos isquiotibiais; a descendente do joelho vem da femoral no canal dos adutores, mais anterior e proximal.
 como: O TEOT 2025 apontou a artéria na face medial do joelho.
 armadilha: Marcar a genicular descendente, que vem de cima e corre com o safeno, ou ramos da coxa proximal como a femoral profunda e a circunflexa femoral medial.

@@ -60,7 +60,7 @@ As provas também usam o **tubérculo carotídeo**, ou de CHASSAIGNAC, o tubérc
 
 **O desenvolvimento.** No atlas, os três centros de ossificação se fundem: os arcos posteriores costumam se unir aos 3 anos, e as **sincondroses neurocentrais**, que ligam os arcos neurais ao corpo, fecham aos 7 anos (Campbell, cap. 43, p. 1957). Na coluna inteira, as sincondroses entre o corpo e o arco fecham em idades diferentes conforme a região, o que é cobrado em prova.
 
-!questoes central=coluna-0085 relacionadas=coluna-0067,coluna-0163,coluna-0010,coluna-0099,coluna-0169,coluna-0206 treino=coluna-0401
+!questoes central=coluna-0085 relacionadas=coluna-0067,coluna-0163,coluna-0010,coluna-0099,coluna-0169,coluna-0206 treino=coluna-0401,coluna-0607
 conceito: 33 vértebras e 24 segmentos móveis; a cricoide e o tubérculo carotídeo marcam C6, a tireoide C4-C5 e o hioide C3; a linha de prumo de C7 cai sobre o sacro, atrás do promontório; L4 a S1 fazem cerca de 2/3 da lordose.
 como: Uma prova de Ortopedia perguntou o tubérculo carotídeo e o equilíbrio sagital, que o Campbell define pela linha de prumo de C7 sobre ou atrás do sacro; o TEOT 2024, a contribuição de L4-L5 e L5-S1 para a lordose; o TARO 2019, a sincondrose que fecha por último; outras, a pars, o processo unciforme e o pedículo em figuras.
 alerta: Os livros lidos não trazem a porcentagem da lordose feita por L4-L5 e L5-S1 (`coluna-0163`), o tubérculo carotídeo (`coluna-0085`) nem a região em que a sincondrose entre corpo e arco fecha por último (`coluna-0010`); os gabaritos oficiais foram preservados.
@@ -93,7 +93,7 @@ alerta: Os livros lidos não trazem a porcentagem da lordose feita por L4-L5 e L
 
 **O forame intervertebral.** Limites: em cima e embaixo, os **pedículos**; na frente, o **corpo vertebral e o disco** (e o unco, na cervical); atrás, a **faceta articular e a cápsula**. Osteófitos, discos, facetas hipertrofiadas e o ligamento amarelo podem estreitá-lo (Netter, cap. 2).
 
-!questoes central=coluna-0209 relacionadas=coluna-0208,coluna-0192,coluna-0216,coluna-0222,coluna-0286 treino=coluna-0492,coluna-0496,coluna-0497,coluna-0498,coluna-0499
+!questoes central=coluna-0209 relacionadas=coluna-0208,coluna-0192,coluna-0216,coluna-0222,coluna-0286 treino=coluna-0492,coluna-0496,coluna-0497,coluna-0498,coluna-0499,coluna-0608,coluna-0612,coluna-0615,coluna-0616
 conceito: A orientação das facetas define o movimento (sagital na lombar = flexão e extensão); o disco é avascular e se nutre por difusão das placas; anel com colágeno I por fora e II por dentro; tectória continua o LLP, alares vão do dente aos côndilos; o forame tem pedículos em cima e embaixo, corpo e disco na frente, facetas atrás.
 como: O SBOT-SP perguntou a nutrição do disco e a causa da mobilidade lombar; o CET-PR, o TEOT 2025 e o TARO 2026, ligamentos em figuras.
 !fim
@@ -127,7 +127,7 @@ O Netter liga os tratos às síndromes: o corticoespinal lateral é a via motora
 
 **A anatomia lombar das raízes.** No forame lombar, a raiz costuma ficar no terço superior; por isso **é mais perigoso perfurar o pedículo para medial ou para inferior** do que para lateral ou superior (Campbell, cap. 37, p. 1645).
 
-!questoes central=coluna-0098 relacionadas=coluna-0097,coluna-0272,coluna-0233,coluna-0264 treino=coluna-0502,coluna-0503,coluna-0504,coluna-0567
+!questoes central=coluna-0098 relacionadas=coluna-0097,coluna-0272,coluna-0233,coluna-0264 treino=coluna-0502,coluna-0503,coluna-0504,coluna-0567,coluna-0609,coluna-0610,coluna-0611,coluna-0613,coluna-0614,coluna-0617,coluna-0620
 conceito: O cone fica em L1-L2 no adulto; o espinotalâmico lateral leva dor e temperatura; a raiz ventral é motora e a dorsal sensitiva; C2 a C7 saem acima do pedículo, C8 entre C7 e T1, o resto abaixo; o sinuvertebral inerva o disco e o LLP, o ramo dorsal medial inerva as facetas.
 como: O TEOT 2023 pediu a raiz de L5 e o nervo sinuvertebral em figuras; outras provas, o ramo das facetas, um trato numa figura (TARO 2025) e o nervo femoral.
 !fim
@@ -144,7 +144,7 @@ como: O TEOT 2023 pediu a raiz de L5 e o nervo sinuvertebral em figuras; outras 
 
 **O que segura o parafuso.** A resistência do parafuso pedicular depende sobretudo da **qualidade do osso**: no osteoporótico, a densidade mineral baixa é o que mais faz o parafuso soltar. Na fixação lombar, o enxerto e a técnica escolhidos dependem da doença, da biomecânica e da consolidação esperada (Campbell, cap. 39, p. 1756).
 
-!questoes central=coluna-0075 treino=coluna-0568,coluna-0571
+!questoes central=coluna-0075 treino=coluna-0568,coluna-0571,coluna-0619,coluna-0626
 conceito: Na cervical, a cortical lateral do pedículo, que protege a artéria vertebral, é a mais fina, e o risco é maior de C3 a C6; o pedículo torácico mais estreito é T5, e a direção é quase sagital de T4 a L4; a fixação do parafuso depende sobretudo da densidade do osso.
 como: Uma prova de Ortopedia perguntou de que depende a força de fixação do parafuso no corpo vertebral.
 alerta: O capítulo lido não discute a densidade mineral como determinante da fixação do parafuso (`coluna-0075`); o gabarito oficial foi preservado.
@@ -172,7 +172,7 @@ alerta: O capítulo lido não discute a densidade mineral como determinante da f
 
 **As regras do Campbell na via anterior.** Ligar as segmentares só se necessário; ligá-las perto da aorta, e não perto do forame; de um lado só, quando possível; e limitar a dissecção no forame a um nível (p. 1647).
 
-!questoes central=coluna-0262 relacionadas=coluna-0027,coluna-0101 treino=coluna-0505,coluna-0506,coluna-0564
+!questoes central=coluna-0262 relacionadas=coluna-0027,coluna-0101 treino=coluna-0505,coluna-0506,coluna-0564,coluna-0618,coluna-0624,coluna-0625
 conceito: A ADAMKIEWICZ fica à esquerda entre T9 e T11 em 80% e conflui para a espinal anterior, que irriga os 2/3 anteriores da medula; a zona crítica é T4 a T9; preservar a ADAMKIEWICZ não garante a irrigação.
 como: O TARO 2010 e o TARO 2017 perguntaram o nível e o lado da ADAMKIEWICZ; uma prova de Ortopedia, a artéria espinal anterior numa figura.
 !fim
@@ -204,7 +204,7 @@ como: O TARO 2010 e o TARO 2017 perguntaram o nível e o lado da ADAMKIEWICZ; um
 
 **Até onde a via chega.** Raramente, em pescoços longos e finos, a via chega a C2-C3, quando uma linha pelo disco C2-C3 passa abaixo do ângulo da mandíbula na radiografia (Fig. 37.13, p. 1654).
 
-!questoes central=coluna-0281 treino=coluna-0400,coluna-0482,coluna-0500,coluna-0501,coluna-0507,coluna-0570
+!questoes central=coluna-0281 treino=coluna-0400,coluna-0482,coluna-0500,coluna-0501,coluna-0507,coluna-0570,coluna-0621,coluna-0622
 conceito: A via anterior cervical clássica vai pela esquerda (laríngeo recorrente mais protegido, vantagem que o Campbell 15 diz não confirmada), medial à bainha carótica (carótida, jugular e vago), com o longus colli descolado para lateral até as uncovertebrais; a fáscia pré-vertebral recobre o longus colli e o LLA; o frênico é C3 a C5.
 como: O TARO 2026 mostrou o longus colli numa figura; o SES-DF 2022 e 2024, o lado da incisão e um músculo numa figura.
 !fim
@@ -221,7 +221,7 @@ A técnica de DARLING, com esternotomia parcial e incisão cervical pela esquerd
 
 **A coluna torácica.** As vias anteriores servem para descomprimir a medula quando a compressão é anterior, documentada por imagem, em lesões traumáticas, tumorais, inflamatórias, degenerativas e congênitas (p. 1647 e 1648). Os pioneiros perceberam, na tuberculose, que a laminectomia não aliviava a compressão anterior e ainda tirava estabilidade, piorando a cifose (p. 1647).
 
-!questoes central=coluna-0167 treino=coluna-0369,coluna-0569
+!questoes central=coluna-0167 treino=coluna-0369,coluna-0569,coluna-0623
 conceito: Três vias para a transição cervicotorácica: cervical anterior baixa (até T1, critério de CHO), transtorácica alta (C6 a T4) e transesternal (C4 a T4); pela esquerda, cuidado com o ducto torácico.
 como: Uma prova de Ortopedia perguntou até que vértebra chega a via transesternal; o SES-DF 2024, o nível de uma lesão numa imagem.
 !fim

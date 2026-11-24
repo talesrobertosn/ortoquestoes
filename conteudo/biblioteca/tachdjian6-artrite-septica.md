@@ -53,13 +53,13 @@ Juntando as duas portas, a pergunta "em criança maior de 18 meses, onde a osteo
 | Inoculação direta | Ferimento penetrante, injeção, cirurgia, punção da artéria femoral no recém-nascido | Germe ligado à exposição; parte é iatrogênica |
 !fim
 
-!questoes central=conceitos-basicos-0250 relacionadas=conceitos-basicos-0187
+!questoes central=conceitos-basicos-0250 relacionadas=conceitos-basicos-0187 treino=conceitos-basicos-0437
 conceito: As metáfises intra-articulares são as do úmero proximal, rádio proximal, fêmur proximal, tíbia e fíbula distais; nelas a osteomielite descomprime na articulação mesmo depois dos 18 meses, quando o vaso transfisário já fechou.
 como: A SBOT-SP pediu o trio de fises cujas infecções levam à artrite séptica (úmero proximal, rádio proximal e fíbula distal); o TEOT 2025 pediu a metáfise que associa pioartrite e osteomielite na criança maior de 18 meses, entre rádio distal, fíbula distal, fêmur distal e tíbia proximal.
 armadilha: Trocar proximal por distal (úmero distal, rádio distal e fíbula proximal são extracapsulares) ou escolher o fêmur distal e a tíbia proximal pensando no joelho, que é a articulação mais acometida mas não tem metáfise intracapsular.
 !fim
 
-!questoes central=pediatria-0678 relacionadas=pediatria-0897,pediatria-0799
+!questoes central=pediatria-0678 relacionadas=pediatria-0897,pediatria-0799 treino=conceitos-basicos-0436,conceitos-basicos-0442
 conceito: No ombro e no quadril a cápsula cobre a metáfise, e a osteomielite do úmero proximal ou do colo femoral drena para a articulação em qualquer idade; abaixo de 18 a 24 meses o vaso transfisário soma uma segunda via, e osteomielite e artrite séptica andam juntas.
 como: O TARO 2013 perguntou de onde vem a pioartrite do ombro na criança (osteomielite da metáfise proximal do úmero); a SES-DF 2022 pediu certo ou errado para a artrite séptica associada à osteomielite antes dos 2 anos; o TARO 2006 atribuiu aos vasos que cruzam a fise a artrite séptica do quadril secundária à osteomielite do colo.
 armadilha: Explicar toda pioartrite secundária pelo vaso transfisário: depois dos 18 meses a fise é barreira, e o que mantém a comunicação é a metáfise intracapsular.
@@ -261,7 +261,7 @@ O lactente é o pior cenário porque reúne as duas portas (metáfise intra-arti
 
 Na imagem, o que aparece cedo é o líquido. O ultrassom mostra o derrame, e a radiografia pode mostrar o **aumento do espaço articular** e o **afastamento lateral da epífise com a linha de SHENTON quebrada**, sinais iniciais de pressão intra-articular alta (Sizínio, cap. 26). No lactente com esse quadro não há espaço para observação: é artrite séptica, com **drenagem cirúrgica e antibiótico**.
 
-!questoes central=pediatria-0381
+!questoes central=pediatria-0381 treino=conceitos-basicos-0438,conceitos-basicos-0440
 conceito: No lactente, sobretudo egresso de UTI neonatal, febre, irritabilidade, pseudoparalisia e quadril em flexão e rotação externa com derrame e espaço articular alargado são artrite séptica até prova em contrário, e o tratamento é drenagem cirúrgica com antibiótico.
 como: O TARO 2025 apresentou um bebê de dois meses com alta recente da UTI neonatal, pseudoparalisia, derrame no ultrassom e aumento do espaço articular na radiografia, e pediu diagnóstico e tratamento.
 armadilha: Rotular de sinovite transitória (doença de criança de 4 a 10 anos, sem febre alta nem toxemia) ou tratar só com antibiótico e observação, deixando o pus sob pressão na cápsula.
@@ -329,7 +329,7 @@ A Tabela 22.1 (p. 931) põe isso em números e compara com as outras artrites:
 
 Note que a tuberculosa também consome glicose e eleva a proteína; o que a separa da piogênica é a celularidade menor (cerca de **20.000**, com média de 60% de PMN no capítulo 23, p. 981), o curso insidioso e o germe. E a gota pode ter muitas células; daí a regra do Campbell (p. 822): o principal diferencial da artrite séptica é a **artrite por cristais**, e **cristal no líquido não exclui infecção**, porque as duas podem coexistir.
 
-!questoes central=conceitos-basicos-0066
+!questoes central=conceitos-basicos-0066 treino=conceitos-basicos-0439
 conceito: Na artrite séptica, a glicose do líquido sinovial cai mais que em qualquer outra condição (diferença de 30 a 50 mg/100 mL para o sangue) e a proteína sobe para perto da sérica (cerca de 4,2 contra 1,8 g/100 mL), porque a sinóvia inflamada fica permeável.
 como: O TEOT 2022 pediu as características do líquido sinovial na artrite séptica, combinando glicose e proteína elevadas ou diminuídas.
 armadilha: Achar que o líquido infectado tem glicose alta por causa da inflamação; é o contrário, bactérias e neutrófilos consomem a glicose.
@@ -480,7 +480,7 @@ O ponto de punção é anatômico e cai em prova. No **joelho**, articulação s
 | Tornozelo | 2,5 cm proximal e 1,3 cm anterior ao maléolo lateral, lateral ao fibular terceiro |
 !fim
 
-!questoes central=conceitos-basicos-0169
+!questoes central=conceitos-basicos-0169 treino=conceitos-basicos-0441
 conceito: O joelho séptico é puncionado pelo lado lateral, na altura do polo superior da patela, atravessando o retináculo lateral.
 como: O TARO 2024 pediu o lado (lateral ou medial) e a altura (polo superior ou inferior da patela) da punção diagnóstica.
 armadilha: Trocar o lado ou a altura; a referência do livro é lateral e no polo superior da patela.
@@ -507,7 +507,7 @@ alerta: A alternativa C fala em Gram positivo em apenas 30%; o Lovell (p. 383) d
 
 O Campbell (p. 831) prefere a **via anterior** na criança pequena por três razões: **poupa a irrigação principal da cabeça femoral**, **reduz a luxação** pós-operatória e tem **reparos mais claros**. No adulto, a **posterior** (OBER) dá drenagem pendente, protegendo o **quadrado femoral**, que leva os vasos da cabeça (p. 832). O Sizínio usa a anterior de SMITH-PETERSEN (cap. 26) e diz que outros preferem a posterolateral ou a medial (cap. 9.7). Depois, o lactente fica em gesso com **abdução moderada** (Campbell, p. 833); o Sizínio usa tração em abdução de **45°** por 5 a 7 dias.
 
-!questoes central=conceitos-basicos-0096
+!questoes central=conceitos-basicos-0096 treino=conceitos-basicos-0443
 conceito: Na criança, o quadril séptico é drenado de preferência pela via anterior, que poupa a irrigação da cabeça femoral, reduz a luxação e tem reparos evidentes; no adulto, a posterior.
 como: O TEOT 2023 pediu a via preferida para tratar cirurgicamente a artrite séptica do quadril da criança.
 armadilha: Escolher a posterior por dar drenagem pendente: ela é a preferência do adulto, não da criança pequena.

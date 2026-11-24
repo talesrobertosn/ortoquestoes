@@ -164,7 +164,7 @@ A idade ideal é outra divergência entre os livros. O Tachdjian diz que a cirur
 
 A **paralisia do plexo braquial** é a complicação mais grave, com taxas de 0% a 12,5% (C cap. 33, p. 1174 e 1175). O Lovell and Winter explica o mecanismo (o plexo é comprimido entre a clavícula e a primeira costela quando a escápula desce) e dá a idade de risco: a lesão é **mais comum a partir dos 7 anos** e relativamente incomum aos 3 ou 4 anos; operar depois dos 8 anos tem o maior risco neurológico, e a osteotomia ou morcelação da clavícula fica reservada para os maiores de 8 anos e os menores com deformidade muito grave (cap. 22, p. 914). A prevenção é a clavícula: o Campbell recomenda, **acima dos 8 anos**, uma **osteotomia de 2 cm no terço médio da clavícula** antes da ressecção escapular, para descomprimir o plexo e a primeira costela; em crianças menores com deformidade grave, uma osteotomia de ressecção de 1 cm; e a morcelação da clavícula (dividir o osso a 2 cm de cada ponta, picar e devolver ao tubo periosteal) quando há risco de compressão neurovascular (p. 1177).
 
-!questoes central=pediatria-0190 relacionadas=pediatria-0054,pediatria-0501
+!questoes central=pediatria-0190 relacionadas=pediatria-0054,pediatria-0501 treino=pediatria-1521,pediatria-1522
 conceito: O WOODWARD solta a origem do trapézio e dos romboides nos processos espinhosos e a reinsere mais distalmente, ressecando o omovertebral por via extraperiosteal; acima de 8 anos acrescenta-se osteotomia de 2 cm no terço médio da clavícula.
 como: O TARO 2023 perguntou o que o WOODWARD transfere e para onde; o TARO 2017, o plano de ressecção do omovertebral e a idade; o TARO 2026, a idade da osteotomia da clavícula.
 armadilha: Trocar origem por inserção ou distal por proximal; marcar ressecção subperiosteal (essa é do MEARS).
@@ -196,7 +196,7 @@ No lactente, a queixa é uma saliência firme e indolor no terço médio; na cri
 
 O Campbell desaconselha a ressecção isolada, que deixa pontas dolorosas, embora abaixo dos 6 anos a ressecção preservando o tubo periosteal funcione (cap. 33, p. 1182).
 
-!questoes central=pediatria-0279 relacionadas=pediatria-0017,pediatria-0002
+!questoes central=pediatria-0279 relacionadas=pediatria-0017,pediatria-0002 treino=pediatria-1523
 conceito: A pseudartrose congênita da clavícula é do terço médio, quase sempre do lado direito e mais comum em meninas, explicada pela subclávia direita mais alta.
 como: O TARO 2024 e o TARO 2019 perguntaram o sexo e o lado; o TARO 2020, o lado e o terço.
 armadilha: Marcar terço lateral (é onde fica a fratura ou a disostose) ou o lado esquerdo, que só aparece com dextrocardia.
@@ -232,7 +232,7 @@ As associações também dividem os livros. O Lovell and Winter diz que a luxaç
 
 O Campbell é taxativo: a cabeça luxada congênita **não deve ser reduzida**, nem fechada nem aberta, por causa das adaptações das partes moles e da falta de superfícies articulares normais. A maioria não precisa de tratamento. Se a dor persistir na vida adulta, ressecam-se cabeça e colo do rádio, **depois do fim do crescimento**, sabendo que a mobilidade pode não melhorar (cap. 33, p. 1183). Os outros livros são menos taxativos. O Lovell and Winter considera razoável, em centros especializados, a redução aberta com reconstrução do ligamento anular no lactente com menos de 1 a 2 anos; na criança que chega mais tarde, a ressecção da cabeça só se indica com dor, perda de movimento ou restrição progressivas, em qualquer idade, e a complicação mais comum é a "reformação" da cabeça pelo crescimento do colo (cap. 22, p. 924 e 925). O HEBERT descreve, para o sintomático, redução aberta com encurtamento do rádio e reconstrução do ligamento anular, e diz que nos maiores a ressecção parece não melhorar dor e mobilidade (cap. 6). Os quatro concordam no essencial: a redução incruenta fracassa, e a luxação assintomática se observa.
 
-!questoes central=pediatria-0091 relacionadas=pediatria-0280,pediatria-0047,pediatria-0061,pediatria-0014
+!questoes central=pediatria-0091 relacionadas=pediatria-0280,pediatria-0047,pediatria-0061,pediatria-0014 treino=pediatria-1524,pediatria-1525
 conceito: A luxação congênita da cabeça do rádio é habitualmente posterior e bilateral; a cabeça é arredondada, sem a concavidade articular e, segundo o Campbell, menor que o normal; não se reduz.
 como: O TEOT 2022 perguntou a direção mais frequente; o TARO 2024, a direção e o tamanho da cabeça; o TARO 2017, os desvios mais comuns; o TARO 2016, a direção e a limitação; o TARO 2019, a lateralidade e as associações.
 armadilha: Marcar anterior (os livros tratam a anterior como provável traumática antiga) ou cabeça de tamanho normal.
@@ -272,7 +272,7 @@ Os dois livros desestimulam a cirurgia. O Campbell lembra que a maioria não pre
 
 A questão do TEOT 2024 testa exatamente esse raciocínio: um paciente com sinostose **unilateral** e antebraço em **posição neutra** já está na posição que a osteotomia buscaria; não há o que corrigir, e o tratamento é **não cirúrgico**.
 
-!questoes central=pediatria-0494 relacionadas=pediatria-0060,mao-0307,pediatria-0446
+!questoes central=pediatria-0494 relacionadas=pediatria-0060,mao-0307,pediatria-0446 treino=pediatria-1526
 conceito: A sinostose radioulnar congênita é proximal, fixa em pronação (a separação ocorre com o antebraço fetal pronado, antes da rotação lateral do membro), bilateral em 80%; operar só com pronação acima de 60° e queixa funcional.
 como: O TARO 2026 pediu a posição e o local mais frequentes; o TARO 2016, se é isolada e bilateral; o TEOT 2024, o tratamento do caso unilateral em posição neutra; uma prova de Ortopedia, o momento embriológico da falha.
 armadilha: Marcar supinação, terço distal ou ressecção da sinostose com interposição, que não devolve a rotação.
@@ -344,7 +344,7 @@ Há sempre déficit de pele: o perímetro de dois dedos juntos é menor que a so
 
 No pé, a lógica é outra: o Tachdjian diz que a sindactilia dos dedos do pé não dá problema funcional, é só estética e **não exige tratamento**; o espaço mais comum é o do segundo e terceiro dedos, seguido do quarto e quinto (cap. 19, p. 779 e 780).
 
-!questoes central=pediatria-0117
+!questoes central=pediatria-0117 treino=pediatria-1527
 conceito: Sindactilias de dedos de borda (anelar-mínimo, polegar-indicador) são operadas mais cedo, entre 6 e 12 meses, porque a diferença de comprimento causa deformidade angular; as centrais esperam até 12 a 18 meses.
 como: O TARO 2022 perguntou qual sindactilia deve ser operada mais cedo e por quê.
 armadilha: Escolher III e IV (a mais comum, que espera) ou "para evitar recorrência" (a pressa evita a deformidade angular; a recidiva da comissura é até maior quando se opera cedo).
@@ -414,7 +414,7 @@ O Tachdjian's Pediatric Orthopaedics define a DFFP como fêmur mais curto com de
 
 O aspecto clínico é característico: coxa muito curta, **quadril em flexão, abdução e rotação externa**, joelho com contratura em flexão e pé na altura do joelho contralateral. Os **abdutores e extensores do quadril existem, mas estão encurtados e não funcionam direito** pela anatomia anormal do fêmur proximal; o joelho fica na virilha como segmento intercalar instável (T cap. 21, p. 885). A associação mais importante é a **hemimelia fibular ipsilateral, em cerca de 45%**, com tíbia curta e pé em equinovalgo (p. 886); o Campbell's Operative Orthopaedics, 15ª ed., cita a hemimelia fibular e a agenesia dos cruzados como as associações mais comuns e uma incidência de 1 em 50.000 (cap. 31, p. 1092). O Lovell and Winter's Pediatric Orthopaedics, 7ª ed., dá um número maior para a deficiência fibular, **70% a 80%**, a ponto de o pé valgo da hemimelia ser "quase parte" da DFFP; acrescenta que cerca de 50% têm anomalias em outros membros, que a DFFP é **bilateral em 15%** e que o **joelho é sempre instável** no plano anteroposterior, da frouxidão leve à ausência dos cruzados (cap. 30, p. 1562). A diferença entre os 45% do Tachdjian e os 70% a 80% do Lovell and Winter vale para a prova: as duas fontes concordam que a hemimelia fibular é a associação mais importante.
 
-!questoes central=pediatria-0328 relacionadas=pediatria-0323,pediatria-0453
+!questoes central=pediatria-0328 relacionadas=pediatria-0323,pediatria-0453 treino=pediatria-1528
 conceito: Na DFFP os abdutores e extensores do quadril estão presentes, mas encurtados e sem função; a hemimelia fibular ipsilateral acompanha em cerca de 45%; no AITKEN B há cabeça e acetábulo, sem continuidade óssea com a diáfise.
 como: O TEOT 2025 perguntou quais músculos têm a função alterada; a SBOT-SP, a doença associada e o tipo de AITKEN numa imagem.
 armadilha: Marcar adutores e flexores (a coxa fica fletida e abduzida justamente porque abdutores e extensores não seguram) ou hemimelia tibial.
@@ -439,7 +439,7 @@ As associações valem pontos: a luxação **bilateral** é quase sempre sindrô
 
 O tratamento começa logo, com manipulação suave e gesso, evitando a flexão "em dobradiça" que deixa a tíbia anteriorizada e as manipulações forçadas, que fraturam; com 30° de flexão, uma ou duas manipulações chegam a 90° (T cap. 18, p. 632). Sem resposta, cirurgia a partir dos 6 meses e de preferência até 1 ano; os autores do Tachdjian preferem o **encurtamento femoral** à quadricepsplastia em V-Y, que deixa fraqueza e fibrose, e associam capsulorrafia posterior e reconstrução do LCA nas síndromes de frouxidão (p. 632 e 633). Com quadril e joelho luxados, o Campbell aconselha corrigir **o joelho primeiro** (cap. 31, p. 1080).
 
-!questoes central=pediatria-0025 relacionadas=pediatria-0358,pediatria-0169
+!questoes central=pediatria-0025 relacionadas=pediatria-0358,pediatria-0169 treino=pediatria-1529
 conceito: Na luxação congênita do joelho o joelho está em hiperextensão com fibrose e encurtamento do quadríceps; quadril ipsilateral luxado em 70% e pé torto em 50%.
 como: O TARO 2018 perguntou a posição e o músculo; o TEPOP 2024, as luxações associadas.
 armadilha: Marcar frouxidão do quadríceps ou fibrose dos isquiotibiais; ou associar ao pé talo vertical em vez do pé torto.
@@ -469,7 +469,7 @@ A histologia é o que o TARO 2017 cobrou: em vez de neurofibroma, quase todos os
 
 A classificação de CRAWFORD vai do tipo I (não displásico, encurvamento com esclerose medular, pode nunca fraturar) ao IV (pseudartrose franca com pontas afiladas em "bala chupada"); uma forma mais simples separa presença ou não de fratura e fratura antes ou depois dos 4 anos (T cap. 18, p. 666). O tratamento segue dois princípios: manter o alinhamento e manter **fixação intramedular** permanente; ressecam-se a pseudartrose e o hamartoma periosteal, encurta-se, fixa-se com haste e enxerta-se osso autógeno (p. 666 a 669). Se tudo falha, a desarticulação do tornozelo (SYME ou BOYD) é preferível à amputação pela pseudartrose, porque evita o sobrecrescimento da tíbia (p. 677). A pseudartrose isolada da fíbula acomete o quarto distal e ocorre quase só na NF1 (p. 679 e 680).
 
-!questoes central=pediatria-0046 relacionadas=pediatria-0110,pediatria-0053
+!questoes central=pediatria-0046 relacionadas=pediatria-0110,pediatria-0053 treino=pediatria-1530
 conceito: A deformidade da pseudartrose congênita da tíbia é anterolateral e se associa à NF1; a alteração histológica é tecido fibroso espessado no periósteo, não neurofibroma.
 como: O TARO 2017 perguntou a deformidade angular e a histologia; o TEOT 2021, o desvio na NF1.
 armadilha: Trocar anterolateral por posteromedial ou escolher neurofibroma na medular.

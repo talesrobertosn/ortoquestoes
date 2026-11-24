@@ -312,7 +312,7 @@ armadilha: Espiral com fíbula intacta: é a A1.1; a B2.1 é cunha.
 
 A **OTA-OFC** pontua de 1 a 3 cinco atributos (**pele, músculo, artéria, contaminação e perda óssea**), com confiabilidade moderada a excelente e melhor previsão de complicações e amputação; soma **acima de 10** sugere pouca chance de salvar o membro, ainda sem confirmação prospectiva. Toda exposta, de qualquer grau, tem mais infecção, pseudartrose, consolidação viciosa e reoperação que a fechada.
 
-!questoes central=trauma-0139 relacionadas=trauma-0723,trauma-1212 treino=trauma-1711
+!questoes central=trauma-0139 relacionadas=trauma-0723,trauma-1212 treino=trauma-1711,trauma-1737,trauma-1740
 conceito: Lesão arterial isolada com pé bem perfundido não é IIIC; a fratura segmentar de alta energia é IIIA qualquer que seja o tamanho da ferida.
 como: O TARO 2015 classificou uma fratura com exposição de 3 cm e lesão isolada da artéria tibial anterior (tipo II, contra IIIA, IIIB e IIIC).
 armadilha: IIIC: exige reparo para revascularizar, não apenas lesão arterial.
@@ -387,7 +387,7 @@ A face anteromedial sem cobertura muscular faz da exposta da diáfise da tíbia 
 
 **Fechar ou não, e quando voltar.** O capítulo 63 não detalha o fechamento; o capítulo 16 do Rockwood (seção Primary Closure of Wounds, Tabela 16-16) mostra que o **fechamento primário direto** é seguro em casos escolhidos, decidido só depois da excisão da ferida e da redução da fratura: bordas viáveis e sangrantes, aproximação sem tensão e esqueleto estável. RAJASEKARAN fechou de imediato 32% das expostas tipo III com critérios estritos, com só 3% de infecção profunda. O comprimento da ferida não diz se ela fecha; o esmagamento e a alta energia (GHOIS de 10 ou mais) pedem cautela, porque a zona de lesão se revela nas 48 horas seguintes. A regra é **"na dúvida, não feche"**, com nova revisão em **48 a 72 horas** (alta energia ou explosão, desbridamento inicial insatisfatório, contaminação grave, desenluvamento, chegada tardia, sinal de infecção). O Campbell 15 (cap. 58, p. 2526 e 2528) manda repetir o desbridamento em **24 a 72 horas** quando necessário; a política dos autores é repetir na maioria das expostas **GUSTILO III** e em toda ferida duvidosa, a cada **48 horas** até a ferida ficar limpa. O fechamento precoce diminui infecção, consolidação viciosa e pseudartrose, mas não se fecha ferida que não ficou cirurgicamente limpa nem pele sob tensão.
 
-!questoes central=trauma-1216
+!questoes central=trauma-1216 treino=trauma-1738,trauma-1739
 conceito: A limpeza da ferida, com desbridamento do tecido desvitalizado e irrigação com soro, é etapa obrigatória e consensual do tratamento inicial de toda exposta; o que ainda se discute são os detalhes, como o prazo (a regra das 6 horas não é obrigatória), os aditivos da irrigação e o momento do fechamento (Campbell 15, cap. 58, p. 2526 a 2528).
 como: A SES-DF 2022 (R4 Coluna) montou o caso de uma exposta proximal da tíbia por alta energia, com ferida maior que 10 cm, e pediu certo ou errado sobre o consenso da limpeza exaustiva como parte inicial do tratamento. Certo.
 armadilha: Confundir o consenso sobre fazer a limpeza com consenso sobre a técnica: a regra das 6 horas, os aditivos da irrigação e a hora de fechar não são ponto pacífico, mas desbridar e irrigar é.

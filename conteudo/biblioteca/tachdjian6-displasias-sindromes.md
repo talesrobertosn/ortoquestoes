@@ -127,7 +127,7 @@ WYNNE-DAVIES encontrou o estreitamento interpedicular de L1 a L5 em 69% dos acon
 
 **Geno varo e tíbia vara** são mais comuns que valgo, atribuídos ao sobrecrescimento relativo da fíbula; a artrose do joelho é rara, então a cirurgia fica para varo sintomático ou inaceitável. **Órteses não funcionam** e já causaram paralisia fibular. A epifisiodese proximal da fíbula entre 7 e 10 anos é imprevisível; o tratamento habitual é a osteotomia proximal da tíbia e da fíbula, corrigindo pelo osso e não pela frouxidão do ligamento colateral medial (p. 1761 e 1763). O alongamento ganha 7 a 15 cm por procedimento, com 39% de complicações e pé caído em até um terço (p. 1763 a 1765). O hormônio de crescimento segue investigacional.
 
-!questoes central=pediatria-0337
+!questoes central=pediatria-0337 treino=pediatria-1516
 conceito: Na acondroplasia falha a ossificação endocondral da fise; a epífise e a ossificação intramembranosa e periosteal são poupadas; a cifose toracolombar do lactente é tratada com órtese, não com gesso, e o encurtamento é proximal.
 como: O TEPOP 2024 deu quatro afirmações sobre a acondroplasia (menisco discoide, cartilagem articular e ossificação, simetria proximal, cifose com gesso) e pediu a correta.
 armadilha: Marcar a cifose como tratada com gesso seriado, ou dizer que o segmento proximal é pouco afetado, quando a acondroplasia é justamente rizomélica.
@@ -351,7 +351,7 @@ As vértebras são ovoides no lactente e se **achatam** com o tempo (**platispon
 | Fígado e baço | sem hepatoesplenomegalia |
 !fim
 
-!questoes central=pediatria-0118 relacionadas=pediatria-0155,pediatria-0335,pediatria-0365,pediatria-0765,pediatria-0808
+!questoes central=pediatria-0118 relacionadas=pediatria-0155,pediatria-0335,pediatria-0365,pediatria-0765,pediatria-0808 treino=pediatria-1515
 conceito: MORQUIO tem cognição normal e hiperfrouxidão; é a MPS do queratan sulfato urinário, da platispondilia grave e da hipoplasia ou ausência do odontoide.
 como: O TARO 2022 combinou cognição e frouxidão; uma prova de Ortopedia, a MPS com frouxidão; o TEOT 2025, o queratan sulfato urinário; o TEPOP 2024, a hipoplasia do odontoide; o TARO 2008, a platispondilia grave; o TARO 2006, se a inteligência é normal.
 armadilha: Aplicar à MORQUIO a rigidez articular e o retardo da HURLER, ou atribuir o odontoide hipoplásico à HUNTER ou à SANFILIPPO.
@@ -378,7 +378,7 @@ Instabilidade C1-C2 não traumática não é exclusividade da DOWN: o Tachdjian 
 
 **Quadril e joelho.** O quadril luxa em cerca de **5%**, entre **2 e 10 anos**, de forma recorrente e indolor, por frouxidão. Também ocorrem necrose e **epifisiólise**; diante de epifisiólise numa criança com DOWN, é imperativo **avaliar a tireoide**, pela associação frequente com **hipotireoidismo** (p. 1868 e 1869). O Campbell (cap. 38) lista DOWN e hipotireoidismo entre as causas de epifisiólise atípica (p. 1427 e 1428). Instabilidade da patela, pé plano e hálux valgo completam o quadro.
 
-!questoes central=pediatria-0373 relacionadas=pediatria-0760,pediatria-0835
+!questoes central=pediatria-0373 relacionadas=pediatria-0760,pediatria-0835 treino=pediatria-1520
 conceito: Na DOWN a hipermobilidade C1-C2 aparece em cerca de 10% a 15% (14,6% na maior série; 10% a 20% no Campbell); epifisiólise na DOWN obriga a pesquisar hipotireoidismo.
 como: O TEPOP 2024 perguntou a frequência da instabilidade atlanto-odontoide; o TARO 2008, a endocrinopatia ligada à epifisiólise na DOWN; o TARO 2006, as condições com instabilidade C1-C2 na criança.
 armadilha: Marcar 30% ou 50% por confundir com a faixa de hipermobilidade occipitoatlantal, que chega a 71% em alguns métodos.
@@ -430,7 +430,7 @@ A **KLIPPEL-TRÉNAUNAY** é a tríade **nevo vinho do Porto, varizes e hipertrof
 | KLIPPEL-TRÉNAUNAY | vinho do Porto | hipertrofia do membro, sindactilia | varizes, tromboflebite |
 !fim
 
-!questoes central=pediatria-0505 relacionadas=pediatria-0442,pediatria-0374
+!questoes central=pediatria-0505 relacionadas=pediatria-0442,pediatria-0374 treino=pediatria-1518
 conceito: Proteus = macrodactilia e hemi-hipertrofia; café com leite também em McCUNE-ALBRIGHT e JAFFE-CAMPANACCI; KLIPPEL-TRÉNAUNAY soma sindactilia e tromboflebite ao longo do tempo.
 como: O ENARE R4 2024 perguntou a anormalidade da Proteus; uma prova de Ortopedia, as outras doenças com café com leite; o TEPOP 2024, as alterações ortopédicas e não ortopédicas da KLIPPEL-TRÉNAUNAY.
 armadilha: Marcar nódulos de LISCH na Proteus ou MAFFUCCI entre as doenças com manchas café com leite.
@@ -454,7 +454,7 @@ A **KLIPPEL-FEIL** é a falha de segmentação da coluna cervical. A tríade cl�
 | Costela cervical | - | 12% a 15% |
 !fim
 
-!questoes central=pediatria-0090
+!questoes central=pediatria-0090 treino=pediatria-1519
 conceito: Implantação baixa do cabelo, pescoço curto e limitação do movimento cervical formam a tríade de KLIPPEL-FEIL.
 como: O TEOT 2022 deu a tríade e pediu o diagnóstico entre neurofibromatose, LARSEN, displasia cervical familiar e KLIPPEL-FEIL.
 armadilha: Marcar LARSEN pela cifose cervical; LARSEN se reconhece pelas luxações múltiplas e pela face.
@@ -475,7 +475,7 @@ A **DUCHENNE** é a distrofia mais comum, 1 em 3.500 meninos, **ligada ao X rece
 | OBER | decúbito lateral, quadril estendido e aduzido | contratura do trato iliotibial (abdução > 30°) |
 !fim
 
-!questoes central=pediatria-0019 relacionadas=pediatria-0050,pediatria-0445
+!questoes central=pediatria-0019 relacionadas=pediatria-0050,pediatria-0445 treino=pediatria-1517
 conceito: Na DUCHENNE a fraqueza começa nos extensores do quadril, e o equino tira a dorsiflexão do tornozelo; GOWERS mostra a fraqueza proximal do membro inferior e MERYON a da cintura escapular.
 como: O TARO 2019 perguntou a perda de força que leva a criança a parar de andar; o TARO 2017, o sinal da fraqueza de quadríceps e glúteo máximo; uma prova de Ortopedia mostrou a imagem do sinal.
 armadilha: Escolher flexão do quadril ou flexão plantar; o tríceps sural é pseudo-hipertrófico e encurta, quem falta é a extensão do quadril e a dorsiflexão.
