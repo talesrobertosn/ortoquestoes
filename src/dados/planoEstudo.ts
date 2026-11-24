@@ -1129,11 +1129,11 @@ export function idsParaPuxar(calculo: Pick<CalculoPlano, 'dias' | 'puxados'>, di
 }
 
 /** Até quantos dias para trás o registro de um dia puxado fica guardado (o bastante para refazer a conta dos dias recentes). */
-export const DIAS_GUARDAR_PUXADO = 30
+export const DIAS_GUARDAR_PUXADO = 7
 
 /**
  * As opções com o dia puxado, ou null se nada muda (dia já puxado, de hoje ou sem questões).
- * Os registros de dias que passaram há mais de 30 dias saem.
+ * Os registros de dias que passaram há mais de uma semana saem.
  */
 export function opcoesComPuxado(plano: Pick<PlanoSalvo, 'opcoes'>, dia: string, ids: string[], hoje: string): OpcoesPlano | null {
   const atuais = plano.opcoes?.puxados ?? {}

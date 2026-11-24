@@ -151,7 +151,7 @@ try {
   assert.equal(m.textoAdiantadoDia(diaDe(base, D20)), null)
 
   // ── 7. Registro pequeno, que se limpa ──
-  const velho = m.opcoesComPuxado(plano({ puxados: { '2026-09-01': ['x'], [D20]: ids20 } }), D21, ids21, HOJE)
+  const velho = m.opcoesComPuxado(plano({ puxados: { '2026-10-01': ['x'], [D20]: ids20 } }), D21, ids21, HOJE)
   assert.deepEqual(Object.keys(velho.puxados).sort(), [D20, D21], 'dias que já passaram saem do registro')
   // Folga ou reta final não se puxam; registro de um dia que já passou não pesa no plano.
   assert.equal(m.idsParaPuxar(base, '2026-10-25').length, 0, 'domingo de folga não tem o que puxar')
