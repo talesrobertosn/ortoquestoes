@@ -181,7 +181,7 @@ O jeito mais rápido de organizar os músculos do cotovelo é pelos dois epicôn
 | ERCC | epicôndilo lateral (fundido ao ED) | base do 3º metacarpal | radial ou interósseo posterior | extensão do punho |
 !fim
 
-!questoes central=ombro-cotovelo-0018 relacionadas=ombro-cotovelo-0216,ombro-cotovelo-0251 treino=ombro-cotovelo-0685
+!questoes central=ombro-cotovelo-0018 relacionadas=ombro-cotovelo-0216,ombro-cotovelo-0251,ombro-cotovelo-0256 treino=ombro-cotovelo-0685
 conceito: No epicôndilo lateral nascem o ancôneo (radial, extensor do cotovelo, plano do acesso de KOCHER) e o extensor comum, com as origens do ERCC e do extensor dos dedos indistinguíveis; o braquiorradial, do radial, tem como função principal fletir o antebraço; o pronador redondo, do mediano, nasce no epicôndilo medial.
 como: O TARO 2021 mostrou o ancôneo com seta e perguntou o nervo; uma prova de Ortopedia perguntou a função principal do braquiorradial; a prova de título de 2023 perguntou que origens não se distinguem no epicôndilo lateral; o TEOT 2024 mostrou o pronador redondo na via volar.
 armadilha: Inervar o ancôneo pelo ulnar (ele fica perto do olécrano, mas é do radial); dar ao braquiorradial a supinação ou a pronação; trocar o pronador redondo pelo quadrado ou pelo interósseo anterior.
@@ -344,7 +344,7 @@ A pergunta de toda via é a mesma: entre que músculos eu entro, que nervos iner
 
 **KAPLAN e os outros laterais.** A Tabela 1.1 do Campbell lista **KOCHER entre EUC e ancôneo**, CADENAT entre ERCC e ERLC, **KAPLAN entre ERCC e EUC** (como está impresso) e KEY-CONWELL entre braquiorradial e ERLC. Na via global, o mesmo capítulo usa o intervalo de KAPLAN como o espaço **entre o extensor dos dedos e os radiais**, seguido até o NIP na arcada de FROHSE. O que vale para a prova: o KAPLAN é **mais anterior** que o KOCHER e chega mais perto do NIP, por isso exige pronação.
 
-!questoes relacionadas=ombro-cotovelo-0175,ombro-cotovelo-0122
+!questoes relacionadas=ombro-cotovelo-0175,ombro-cotovelo-0122,ombro-cotovelo-0188
 conceito: Na Tabela 1.1 do Campbell 15 (cap. 1, p. 110), a via lateral de KAPLAN passa entre o extensor radial curto do carpo e o extensor ulnar do carpo; KOCHER fica entre o EUC e o ancôneo, CADENAT entre ERCC e ERLC e KEY-CONWELL entre braquiorradial e ERLC.
 como: O TARO 2023 perguntou entre que músculos se faz a via lateral de KAPLAN, oferecendo os intervalos de KOCHER (EUC e ancôneo), de KEY-CONWELL (ERLC e braquiorradial) e de CADENAT (ERCC e ERLC) como distratores.
 armadilha: Marcar EUC e ancôneo, que é o KOCHER, o intervalo lateral mais conhecido; o KAPLAN é mais anterior.
