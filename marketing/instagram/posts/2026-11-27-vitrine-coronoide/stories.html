@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Vitrine de Black Friday: coronoide e promoção (stories)</title>
+<!-- Stories com alternativas (estilos/STORIES-COM-ALTERNATIVAS.md), semana de 24 a 30/11/2026, sexta 27/11 (Black Friday).
+     Questão real: trauma-0757 (TEOT 2025), gabarito oficial C (II). Comentário com conferido: false.
+     Fonte do comentário: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40.
+     Stories 3 a 5: promoção do plano anual (R$ 19,90 por mês; 12 x 19,90 = R$ 238,80). Prints reais de ../2026-11-24-semana/capturar.mjs e dos outros dias. -->
+<link rel="stylesheet" href="../../estilos/stories-com-alternativas/base.css">
+<link rel="stylesheet" href="../2026-11-24-semana/semana.css">
+<style>
+.fundo { background: radial-gradient(60% 28% at 80% 6%, rgba(244,207,124,.30), rgba(244,207,124,0) 70%),
+  radial-gradient(70% 30% at 0% 96%, rgba(220,170,69,.20), rgba(220,170,69,0) 70%), linear-gradient(175deg, #0a0a0a 0%, #14110a 55%, #0a0a0a 100%); }
+.grade { background-image: linear-gradient(rgba(244,207,124,.7) 2px, transparent 2px), linear-gradient(90deg, rgba(244,207,124,.7) 2px, transparent 2px); opacity:.06; }
+.ouro { color: var(--ouro); }
+.letreiro { position:absolute; left:56px; right:56px; display:flex; align-items:center; justify-content:space-between; padding:14px 28px; background:#17120a;
+  border: 4px solid var(--ouro2); font: 400 54px/1 Jersey; letter-spacing:5px; color: var(--ouro); }
+.letreiro i { width:16px; height:16px; background: var(--ouro); display:inline-block; box-shadow: 0 0 14px var(--ouro); }
+.vitrine { position:absolute; left:56px; right:56px; background: linear-gradient(160deg,#2a2112,#0f0c06); padding:18px; border: 4px solid var(--ouro2); box-shadow: 0 0 60px -10px rgba(244,207,124,.35); }
+.vitrine .vidro { background:#000; display:grid; place-items:center; padding:14px; }
+.vitrine img { display:block; width:100%; height:auto; }
+.tag { position:relative; display:flex; align-items:center; gap:18px; min-height:104px; padding:14px 24px 14px 64px; background: linear-gradient(160deg,#f6e3a9,#dcaa45); color:#1b1405;
+  font:800 34px/1.15 Jakarta; clip-path: polygon(36px 0, 100% 0, 100% 100%, 36px 100%, 0 50%); }
+.tag::before { content:''; position:absolute; left:26px; top:50%; width:16px; height:16px; margin-top:-8px; border-radius:50%; background:#0e0b05; }
+.tag .l { width:56px; height:56px; border-radius:50%; display:grid; place-items:center; background:#0e0b05; color: var(--ouro); font:800 27px/1 Jakarta; flex:none; }
+.tag.certa { background: linear-gradient(160deg,#fff7d8,#f4cf7c); box-shadow:0 0 0 6px #fff; }
+.leve { position:absolute; left:56px; right:56px; text-align:center; font:400 46px/1 Jersey; letter-spacing:4px; color:#0e0b05; background: var(--ouro); padding:12px 0; }
+.dica .t, .dica .s { color: var(--ouro); }
+.card { position:absolute; left:56px; right:56px; display:grid; grid-template-columns:130px 1fr; gap:22px; align-items:center; padding:22px 28px; border:3px solid rgba(244,207,124,.55); background:rgba(244,207,124,.07); }
+.card.alvo { background: linear-gradient(160deg,#fff4cf,#f1c967); border-color:#fff; }
+.card .n { font:400 100px/.9 Jersey; color: var(--ouro); text-align:center; }
+.card.alvo .n { color:#1b1405; }
+.card .h { font:800 34px/1.1 Jakarta; color:#fff; } .card.alvo .h { color:#1b1405; }
+.card .d { margin-top:8px; font:500 26px/1.32 Inter; color:rgba(255,255,255,.85); } .card.alvo .d { color:#3a2e0d; }
+.card .lugar { color: var(--ouro); } .card.alvo .lugar { color:#7a4f00; }
+.ern { display:flex; gap:14px; font:400 25px/1.38 Inter; color:rgba(255,255,255,.85); }
+.ern + .ern { margin-top:12px; }
+.ern b.l { flex:none; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:#2a2415; color: var(--ouro); font:800 20px/1 Jakarta; }
+.print2 { border-color: rgba(244,207,124,.6); }
+.etq { background: var(--ouro); color:#1b1405; }
+.botao { background: linear-gradient(170deg,#fbe9b5,#e8bf62); }
+.chip { background: rgba(244,207,124,.12); border-color: rgba(244,207,124,.5); color: var(--ouro); }
+.rodape { color: rgba(244,207,124,.85); }
+.preco { position:absolute; left:56px; right:56px; text-align:center; }
+.preco .a { font:400 46px/1 Jersey; letter-spacing:4px; color: var(--ouro); }
+.preco .v { font:800 190px/1 Jakarta; letter-spacing:-8px; color:#fff; }
+.preco .v small { font:800 48px/1 Jakarta; letter-spacing:0; color: var(--ouro); }
+.sel { position:absolute; padding:12px 22px; background: var(--ouro); color:#1b1405; font:400 44px/1 Jersey; letter-spacing:3px; transform:rotate(-4deg); box-shadow:0 14px 30px -12px rgba(0,0,0,.8); }
+</style></head>
+<body>
+
+<!-- ============ STORY 1 (manhã): a vitrine ============ -->
+<section id="sex27-1-questao">
+  <div class="fundo"></div><div class="grade"></div>
+  <div class="letreiro" style="top:190px;"><i></i><span>BLACK FRIDAY</span><i></i></div>
+  <p style="position:absolute; left:56px; right:56px; top:292px; text-align:center; font:700 24px/1 Jakarta; letter-spacing:4px; text-transform:uppercase; color:rgba(244,207,124,.85);">Vitrine do coronoide · TEOT 2025</p>
+  <div class="vitrine" style="top:340px; left:140px; right:140px;"><div class="vidro"><img src="img/questao.jpeg" alt=""></div></div>
+  <p style="position:absolute; left:56px; right:56px; top:800px; font:700 36px/1.32 Jakarta; color:#fff;">A fratura do processo coronoide demonstrada nas imagens a seguir pode ser classificada de acordo com O’DRISCOLL, como tipo:</p>
+  <div class="leve" style="top:985px;">LEVE OS 3 TIPOS. QUAL ESTÁ NA VITRINE?</div>
+  <div class="alts2" style="position:absolute; left:56px; right:56px; top:1075px;">
+    <div class="tag"><span class="l">A</span>I, subtipo 1.</div>
+    <div class="tag"><span class="l">B</span>I, subtipo 2.</div>
+    <div class="tag"><span class="l">C</span>II.</div>
+    <div class="tag"><span class="l">D</span>III.</div>
+  </div>
+  <div class="dica" style="top:1350px;">
+    <div class="t">Vote na sua letra</div>
+    <div class="s">a resposta chega mais tarde</div>
+    <svg viewBox="0 0 36 20"><path d="M4 4l14 12L32 4" fill="none" stroke="#F4CF7C" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</section>
+
+<!-- ============ STORY 2 (tarde): a etiqueta certa ============ -->
+<section id="sex27-2-resposta">
+  <div class="fundo"></div><div class="grade"></div>
+  <div class="letreiro" style="top:190px;"><i></i><span>OS 3 TIPOS DE O’DRISCOLL</span><i></i></div>
+  <div class="tag certa" style="position:absolute; left:62px; right:62px; top:306px; min-height:96px;"><span class="l">C</span>II: faceta anteromedial</div>
+  <p style="position:absolute; left:56px; right:56px; top:424px; text-align:center; font:400 40px/1 Jersey; letter-spacing:3px; color:var(--ouro);">O’DRISCOLL = LUGAR. REGAN-MORREY = ALTURA.</p>
+
+  <div class="card" style="top:500px;"><div class="n">I</div><div><div class="h">Ponta <span class="lugar">(no alto)</span></div><div class="d">Subtipo 1 até 2 mm; subtipo 2 acima de 2 mm, menor que 50% da altura. Associada à <b>tríade terrível</b>.</div></div></div>
+  <div class="card alvo" style="top:700px;"><div class="n">II</div><div><div class="h">Faceta anteromedial <span class="lugar">(borda medial)</span></div><div class="d">Associada à <b>instabilidade rotatória posteromedial em varo</b>, com cabeça do rádio inteira. É a da prova.</div></div></div>
+  <div class="card" style="top:900px;"><div class="n">III</div><div><div class="h">Base <span class="lugar">(junção com a ulna)</span></div><div class="d">O traço atravessa o corpo do processo; o subtipo 2 soma fratura transolecraniana. Vem com fratura-luxação do olécrano.</div></div></div>
+
+  <div style="position:absolute; left:56px; right:56px; top:1160px;">
+    <div class="ern"><b class="l">A</b><span><b class="ouro">I, subtipo 1:</b> lasca de ponta até 2 mm; aqui a ponta não é o problema.</span></div>
+    <div class="ern"><b class="l">B</b><span><b class="ouro">I, subtipo 2:</b> ainda é ponta, só maior. Medir altura é Regan-Morrey.</span></div>
+    <div class="ern"><b class="l">D</b><span><b class="ouro">III:</b> base e incisura estão preservadas; só a borda medial se soltou.</span></div>
+  </div>
+  <p class="rodape" style="top:1500px; font-size:23px; padding:0 56px;">Segundo o Rockwood and Green’s Fractures in Adults, 10ª ed., cap. 40.</p>
+  <p class="rodape" style="top:1580px; font-size:25px;">No próximo story: a promoção de hoje</p>
+</section>
+
+<!-- ============ STORY 3: a oferta + resumo ============ -->
+<section id="sex27-3-oferta">
+  <div class="fundo"></div><div class="grade"></div>
+  <div class="sel" style="left:56px; top:200px;">SÓ HOJE, 27/11, ATÉ MEIA-NOITE</div>
+  <h1 style="position:absolute; left:56px; right:56px; top:310px; font:800 80px/1.04 Jakarta; letter-spacing:-2.4px; color:#fff;">Plano anual<br><span class="ouro">R$ 19,90 por mês.</span></h1>
+  <p style="position:absolute; left:56px; right:56px; top:530px; font:600 30px/1.3 Inter; color:rgba(255,255,255,.88);">A nossa Black Friday: o preço mais barato que já existiu.</p>
+
+  <div class="print2" style="left:48px; right:48px; top:650px; height:612px;"><img src="img/resumo-trecho.png" alt=""></div>
+  <span class="etq" style="right:70px; top:670px;">Resumo do Rockwood 10, cap. 40</span>
+
+  <div class="iphone" style="left:48px; width:340px; height:520px; top:1320px;"><div class="ilha"></div><div class="tela"><img src="img/cel-comentario.png" alt=""></div></div>
+  <span class="etq" style="left:420px; top:1715px;">Comentário com o livro</span>
+  <div style="position:absolute; left:420px; right:48px; top:1330px;">
+    <p style="font:400 40px/1 Jersey; letter-spacing:3px; color:var(--ouro);">O QUE VOCÊ LEVA</p>
+    <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:12px;">
+      <span class="chip" style="font-size:24px; padding:12px 18px;">Resumos dos temas</span>
+      <span class="chip" style="font-size:24px; padding:12px 18px;">Comentários com o livro</span>
+      <span class="chip" style="font-size:24px; padding:12px 18px;">Questões de prova</span>
+    </div>
+  </div>
+  <div class="botao" style="left:420px; right:48px; top:1580px; height:100px; font-size:30px;">Só o anual entra</div>
+  <p class="rodape" style="top:1850px;">Telas ilustrativas</p>
+</section>
+
+<!-- ============ STORY 4: o que leva ============ -->
+<section id="sex27-4-leva">
+  <div class="fundo" style="transform:scaleX(-1);"></div><div class="grade"></div>
+  <div class="letreiro" style="top:190px;"><i></i><span>NA SUA SACOLA</span><i></i></div>
+  <h1 style="position:absolute; left:56px; right:56px; top:310px; font:800 62px/1.06 Jakarta; letter-spacing:-2px; color:#fff;">Treino, plano e revisão<br><span class="ouro">no mesmo lugar.</span></h1>
+
+  <div class="print2" style="left:48px; width:500px; top:520px; height:300px;"><img src="img/calendario.png" alt=""></div>
+  <span class="etq" style="left:64px; top:834px; padding:8px 14px; font-size:19px;">Cronograma</span>
+  <div class="print2" style="left:572px; right:48px; top:520px; height:300px;"><img src="img/atlas.png" alt="" style="object-position:50% 20%;"></div>
+  <span class="etq" style="left:588px; top:834px; padding:8px 14px; font-size:19px;">Atlas 3D</span>
+  <div class="print2" style="left:48px; right:48px; top:880px; height:360px;"><img src="img/erros.png" alt=""></div>
+  <span class="etq" style="right:64px; top:896px;">Caderno de erros</span>
+  <div class="print2" style="left:48px; right:48px; top:1290px; height:306px;"><img src="img/simulado.png" alt=""></div>
+  <span class="etq" style="right:64px; top:1306px;">Simulados</span>
+  <p class="rodape" style="top:1700px; font-size:25px;">Só o plano anual, só hoje, até meia-noite</p>
+  <p class="rodape" style="top:1850px;">Telas ilustrativas</p>
+</section>
+
+<!-- ============ STORY 5: fecho ============ -->
+<section id="sex27-5-fecho">
+  <div class="fundo"></div><div class="grade"></div>
+  <div class="sel" style="left:56px; top:240px;">ATÉ MEIA-NOITE</div>
+  <div class="preco" style="top:420px;"><div class="a">PLANO ANUAL</div><div class="v">19,90<small>&nbsp;por mês</small></div>
+    <p style="margin-top:12px; font:700 38px/1.2 Jakarta; color:var(--ouro);">R$ 238,80 no ano</p></div>
+  <p style="position:absolute; left:80px; right:80px; top:800px; text-align:center; font:600 36px/1.38 Inter; color:#fff;">É a única promoção do ano e o preço mais barato que já existiu. O motivo é ser o ano de lançamento. Sinceramente, isso não vai acontecer nem no ano que vem.</p>
+  <div class="botao" style="left:120px; right:120px; top:1230px; height:110px; font-size:38px;">O caminho está no nosso perfil</div>
+  <p style="position:absolute; left:0; right:0; top:1390px; text-align:center; font:800 40px/1 Jakarta; color:var(--ouro);">ortoquestoes.com.br</p>
+  <p class="rodape" style="top:1480px;">Só o plano anual entra na promoção</p>
+</section>
+</body></html>
