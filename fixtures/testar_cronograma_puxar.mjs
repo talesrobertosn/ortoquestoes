@@ -135,6 +135,13 @@ try {
   assert.equal(diaDe(c6, D21).adiantado, 10, 'o extra de hoje sai do dia 21')
   coerente(c6, 'extra com dia puxado')
 
+  // O dia 20 já passou e sua reserva ainda precisa ser considerada ao distribuir o extra do dia 19.
+  const planoComExtra = plano({ ...op20, adiantados: [{ em: HOJE, meta: c6.metaDiaria }] })
+  const noDia21 = m.calcularPlano(indice, r6, planoComExtra, sp(D21, 9))
+  // A meta normal pode variar uma questão no recálculo que ocorre na virada.
+  assert.ok(noDia21.adiantadoHoje >= 9 && noDia21.adiantadoHoje <= 10,
+    `o dia 21 preserva o crédito, com até uma questão de arredondamento (recebeu ${noDia21.adiantadoHoje})`)
+
   // As palavras dos botões: "Puxar as questões de amanhã (terça, 20/10)", "Continuar terça, 20/10 · faltam 69".
   assert.equal(m.diaCurto(prox.data), 'terça, 20/10')
   assert.deepEqual(m.textoPuxar(prox, sp(HOJE, 15)), { rotulo: 'Puxar as questões de amanhã (terça, 20/10)', detalhe: `${prox.total} questões` })

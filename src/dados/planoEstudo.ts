@@ -356,6 +356,7 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
   // Dias puxados: cada questão presa ao seu dia (puxadoDe, também dos dias que já passaram, para
   // não contar como "a mais" no dia em que foi feita) e os que ainda valem (de hoje até a reta final).
   const puxadoDe = new Map<string, number>()
+  const tamanhoPuxado = new Map<number, number>()
   const puxados = new Map<number, { chave: string; ids: string[] }>()
   const brutos = Object.entries(plano.opcoes?.puxados ?? {}).filter(([k, ids]) => /^\d{4}-\d{2}-\d{2}$/.test(k) && Array.isArray(ids)).sort(([a], [b]) => a.localeCompare(b))
   if (brutos.length) {
@@ -365,7 +366,9 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
       const ids = unicos(lista.filter((id) => typeof id === 'string' && doPlano.has(id) && !puxadoDe.has(id)))
       if (!ids.length) continue
       for (const id of ids) puxadoDe.set(id, data.getTime())
-      if (data >= hoje && data < inicioRetaFinal && (!plano.folgas.includes(data.getDay()) || plano.opcoes?.diasExtras?.includes(k))) puxados.set(data.getTime(), { chave: k, ids })
+      if (data >= inicioRetaFinal || (plano.folgas.includes(data.getDay()) && !plano.opcoes?.diasExtras?.includes(k))) continue
+      tamanhoPuxado.set(data.getTime(), ids.length)
+      if (data >= hoje) puxados.set(data.getTime(), { chave: k, ids })
     }
   }
 
@@ -513,9 +516,9 @@ export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string,
     for (const r of lista) {
       let resto = r.data.getTime() === hoje.getTime() ? deHoje : Math.max(0, (primeirasPorDia.get(r.data.getTime()) ?? 0) - r.meta)
       for (let d = proximo(r.data); resto > 0 && d < fimEstudo; d = proximo(d)) {
-        // Dia puxado: só recebe o que falta para a meta normal dele (se ela subiu depois de puxar).
-        const pux = contaPuxado.get(d.getTime())
-        const teto = pux ? Math.max(0, metaBase(d) - pux.total) : metaBase(d)
+        // Preserve a carga reservada também depois que o dia passa, para que ele
+        // não absorva créditos que o plano já tinha distribuído aos dias seguintes.
+        const teto = Math.max(0, metaBase(d) - (tamanhoPuxado.get(d.getTime()) ?? 0))
         const livre = Math.max(0, teto - (mapa.get(d.getTime()) ?? 0))
         const t = Math.min(resto, livre)
         if (t) { mapa.set(d.getTime(), (mapa.get(d.getTime()) ?? 0) + t); resto -= t }

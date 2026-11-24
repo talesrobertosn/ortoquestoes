@@ -299,19 +299,26 @@ export function PlanoEstudo() {
    */
   async function puxarDia(dia: string) {
     if (ficticio) { convidar('puxar'); return }
-    if (!indice || !calculo || !plano) return
+    if (!indice || !calculo || !plano || salvandoOpcoes) return
     const ids = idsParaPuxar(calculo, dia)
     if (!ids.length) return
     let novo = plano
-    const opcoes = opcoesComPuxado(plano, dia, ids, hojeBR())
+    const hoje = hojeBR()
+    const opcoes = opcoesComPuxado(plano, dia, ids, hoje)
     if (opcoes) {
       novo = { ...plano, opcoes }
-      definirPlano(novo)
-      if (!DEMO) {
+      if (DEMO) definirPlano(novo)
+      else {
         // Grava antes de abrir a sessão: o fim da sessão e os outros aparelhos já contam as respostas para o dia certo.
         definirSalvandoOpcoes(true); definirErro('')
-        try { const salvo = await salvarOpcoes((atual) => opcoesComPuxado(atual, dia, ids, hojeBR())); if (salvo) novo = salvo }
-        catch { definirPlano(plano); definirErro('Não foi possível guardar as questões desse dia agora. Confira a conexão e tente de novo.'); return }
+        try {
+          const salvo = await salvarOpcoes((atual) => opcoesComPuxado(atual, dia, ids, hoje))
+          if (!salvo?.opcoes?.puxados?.[dia]?.length) throw new Error('dia_nao_guardado')
+          novo = salvo
+        } catch {
+          definirErro('Não foi possível guardar as questões desse dia agora. Tente de novo.')
+          return
+        }
         finally { definirSalvandoOpcoes(false) }
       }
     }
@@ -366,15 +373,27 @@ export function PlanoEstudo() {
    */
   async function adiantar(n: number) {
     if (ficticio) { convidar('adiantar'); return }
-    if (!indice || !calculo || !plano) return
+    if (!indice || !calculo || !plano || salvandoOpcoes) return
     const pedido = Math.max(calculo.extraHoje, calculo.adiantarPedido) + n
-    const opcoes = opcoesComAdiantamento(plano, calculo, pedido)
-    const novo = opcoes ? { ...plano, opcoes } : plano
-    definirPlano(novo)
-    if (calculo.faltaHoje === 0) comecarHoje(calcularPlano(indice, respondidas, novo), novo)
-    if (DEMO || !opcoes) return
-    definirSalvandoOpcoes(true); definirErro('')
-    try { await guardarAdiantamento(calculo, pedido) } catch { definirPlano(plano); definirErro('Não foi possível salvar o adiantamento agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
+    const agora = Date.now()
+    const opcoes = opcoesComAdiantamento(plano, calculo, pedido, agora)
+    if (!opcoes) return
+    let novo: PlanoSalvo = { ...plano, opcoes }
+    if (DEMO) definirPlano(novo)
+    else {
+      definirSalvandoOpcoes(true); definirErro('')
+      try {
+        const salvo = await guardarAdiantamento(calculo, pedido, agora)
+        if (!salvo) throw new Error('plano_inexistente')
+        novo = salvo
+      } catch {
+        definirErro('Não foi possível salvar o adiantamento agora. Tente de novo.')
+        return
+      } finally {
+        definirSalvandoOpcoes(false)
+      }
+    }
+    if (calculo.faltaHoje === 0) await comecarHoje(calcularPlano(indice, respondidas, novo), novo)
   }
 
   /** Cancela o que foi pedido e ainda não foi feito (o que já foi feito a mais continua valendo). */
