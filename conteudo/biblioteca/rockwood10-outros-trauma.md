@@ -58,7 +58,7 @@ Por que perpendicular ao traço? Porque a parte da força que não é perpendicu
 
 Aqui os livros se completam, e a diferença é cobrada. O AO Principles of Fracture Management, 3ª ed. (cap. 3.2.1, p. 183), diz que o parafuso é mais eficiente **perpendicular ao plano da fratura** ou, quando há carga ao longo do eixo do osso, **em inclinação a meio caminho** entre a perpendicular ao plano da fratura e a perpendicular ao eixo longo. O Skeletal Trauma, 5ª ed. (cap. 8, p. 236), explica o porquê: como o traço raramente é paralelo ao eixo do osso, a posição perfeita do parafuso de tração raramente é perpendicular ao eixo do osso; o parafuso perpendicular ao eixo resiste melhor ao cisalhamento da carga axial, mas quase nunca dá compressão pura. Na fratura transversa, pôr o parafuso perpendicular ao plano é quase impossível, e a compressão passa a ser feita pela placa (p. 262).
 
-!questoes central=trauma-1157
+!questoes central=trauma-1157 treino=trauma-1745
 conceito: A maior compressão interfragmentária vem do parafuso perpendicular ao traço de fratura; perpendicular à diáfise ele apenas resiste melhor ao cisalhamento axial.
 como: O TARO 2006, em certo ou errado, afirmou que a maior força de compressão é obtida com o parafuso perpendicular à diáfise.
 armadilha: Trocar o referencial. Perpendicular ao traço comprime; perpendicular ao eixo segura a carga axial; a bissetriz do AO concilia os dois.
@@ -116,7 +116,7 @@ O mesmo capítulo traz o outro extremo. Os esforços para reduzir o micromovimen
 
 Os outros livros repetem os dois extremos. O capítulo 1 do Rockwood (seção Biomechanical Evaluation of Fixation Constructs, Outcome Parameters) diz que a rigidez deficiente de fixadores externos ou hastes leva à pseudartrose hipertrófica, e que a rigidez excessiva de placas bloqueadas suprime a consolidação. O Skeletal Trauma, 5ª ed. (cap. 65, p. 2165), resume: fixador flexível demais dá consolidação viciosa, pseudartrose e problemas na interface entre pino e osso; rígido demais dá pouco calo e pseudartrose; "em geral, maior estabilidade é desejável". O Campbell's Operative Orthopaedics, 15ª ed. (cap. 64, Tabela 64.2), lista entre as causas mecânicas de pseudartrose tanto a fixação insuficiente quanto a fixação rígida demais.
 
-!questoes central=trauma-1135
+!questoes central=trauma-1135 treino=trauma-1746
 conceito: Com fixador externo, a consolidação depende de uma janela de movimento: instabilidade e cisalhamento dão tecido fibroso e pseudartrose hipertrófica; rigidez excessiva inibe o calo.
 como: O TARO 2008 perguntou a que o retardo de consolidação na fixação externa de ossos longos está mais frequentemente associado: afrouxamento dos pinos, excesso de rigidez, infecção ou instabilidade.
 armadilha: Tratar rigidez e instabilidade como se uma excluísse a outra; os livros descrevem as duas como causas mecânicas.
@@ -180,7 +180,7 @@ No quadril, a dúvida costuma ser se o projétil entrou na articulação. O Camp
 | exceções | ulna e tíbia, articulação contaminada, espingarda de perto | nenhuma: sempre exposta |
 !fim
 
-!questoes central=trauma-1184 relacionadas=trauma-1186,trauma-0993
+!questoes central=trauma-1184 relacionadas=trauma-1186,trauma-0993 treino=trauma-1742
 conceito: Baixa velocidade: sem desbridamento formal, cuidado local e antibiótico curto, fratura tratada como fechada. Alta velocidade: tratada como exposta, com desbridamento e ferida deixada aberta. No quadril, a penetração do projétil na articulação é mais bem detectada pela aspiração seguida de artrografia (Campbell 15, cap. 58, p. 2520).
 como: O TARO 2006, em certo ou errado, afirmou que a limpeza dos planos profundos é obrigatória no fêmur atingido por projétil de baixa energia, e que a lesão de alta velocidade à queima-roupa deve receber lavagem, desbridamento, fixação provisória e fechamento de pele.
 armadilha: Na segunda afirmativa, quase tudo está certo (lavar, desbridar, fixar provisoriamente, adiar a síntese definitiva); o erro está no fechamento da pele.
@@ -195,7 +195,7 @@ O mesmo capítulo (p. 671) descreve os dois métodos clássicos. A **guilhotina*
 
 Hoje os autores usam, nesses cotos, o fechamento assistido a vácuo, reaplicado a cada 48 horas até o fechamento.
 
-!questoes central=trauma-1185
+!questoes central=trauma-1185 treino=trauma-1743
 conceito: A amputação aberta com retalhos invertidos é feita no nível definitivo e fecha secundariamente em 10 a 14 dias; a circular (guilhotina) exige revisão mais proximal ou tração cutânea.
 como: O TARO 2006, em certo ou errado, afirmou que a amputação aberta circular é preferível à de retalho cutâneo invertido por favorecer o fechamento secundário.
 armadilha: A justificativa da frase pertence à técnica oposta.
@@ -217,7 +217,7 @@ Na avaliação primária do politraumatizado, a escala de coma de GLASGOW mede o
 | 1 | nenhuma | nenhuma | nenhuma |
 !fim
 
-!questoes central=trauma-1164
+!questoes central=trauma-1164 treino=trauma-1744
 conceito: A escala de GLASGOW soma abertura ocular (1 a 4), resposta verbal (1 a 5) e resposta motora (1 a 6), de 3 a 15; 8 ou menos é lesão grave.
 como: O TARO 2006, em certo ou errado, afirmou que a escala usa a abertura dos olhos, a resposta motora e a resposta verbal.
 armadilha: Incluir pupilas ou padrão respiratório, que não fazem parte da escala, ou esquecer que o mínimo é 3 e não zero.
@@ -262,7 +262,7 @@ O sinal do trocanter menor entra nos critérios de fratura iminente. A diretriz 
 
 O capítulo relativiza: sensibilidade de 91% e especificidade de 35%, com risco superestimado. No colo femoral metastático fraturado, o tratamento é a prótese cimentada, porque a fixação interna falha com a progressão da doença.
 
-!questoes central=tumores-0136 relacionadas=tumores-0264 treino=trauma-1235
+!questoes central=tumores-0136 relacionadas=tumores-0264 treino=trauma-1235,trauma-1741
 conceito: No adulto, a avulsão isolada do trocanter menor é metástase até prova em contrário e anuncia fratura iminente do colo; a fratura em banana é a transversa por trauma mínimo em osso patológico.
 como: O TARO 2023 perguntou qual avulsão isolada levanta suspeita de metástase oculta; uma questão de simulado, o que a fratura isolada do trocanter menor no idoso deve ser considerada; o TARO 2025, a definição da fratura em banana.
 armadilha: Aceitar a simples avulsão pelo iliopsoas, a fratura por estresse ou a insuficiência osteoporótica como explicação no idoso; e descrever a banana como segmentar ou de alta energia.
@@ -447,7 +447,7 @@ As recomendações do capítulo são práticas. Diante de fratura do tubérculo 
 
 O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36), enquadra essas lesões no tipo C da classificação AO (fraturas articulares, do colo anatômico), em que o subgrupo C3 é o do colo anatômico com luxação glenoumeral; a fratura do colo anatômico em duas partes é raríssima, 0,3% das fraturas do úmero proximal; e as fraturas-luxações estão entre as situações em que a cirurgia é considerada.
 
-!questoes central=trauma-1176
+!questoes central=trauma-1176 treino=trauma-1748
 conceito: Na luxação do ombro com fratura sem desvio do colo, a manipulação fechada pode deslocar a cabeça e levar à necrose; a fratura do colo vista antes da redução pede redução aberta e fixação.
 como: O TARO 2006, em certo ou errado, afirmou que a fratura sem desvio do colo anatômico associada à luxação deve ser fixada profilaticamente antes da redução, pois isso previne a necrose avascular da cabeça.
 armadilha: A palavra "previne". Fixar antes de reduzir evita o deslocamento iatrogênico, mas nenhum livro promete eliminar a necrose em uma fratura do colo anatômico.
@@ -470,7 +470,7 @@ A explicação mecânica está na página 2016 do mesmo capítulo. Na gaveta ant
 
 O **pivot shift** tem outro papel: reproduz o movimento patológico do joelho sem o cruzado anterior e é mais fácil de obter na lesão crônica ou no paciente anestesiado com lesão aguda. A medida instrumentada completa o quadro: com deslocamento anterior manual máximo, a diferença entre os lados é menor que 3 mm em 95% dos joelhos normais e de 3 mm ou mais em 90% dos joelhos com lesão aguda. O HEBERT é menos otimista no joelho agudo: entre pacientes com hemartrose e lesão comprovada por artroscopia, só 26% tinham gaveta anterior e 40% tinham LACHMAN, contra os 95% de sensibilidade do Campbell; por isso recomenda repetir o exame quatro ou cinco dias depois do trauma.
 
-!questoes central=trauma-1054
+!questoes central=trauma-1054 treino=trauma-1747
 conceito: O LACHMAN, em quase extensão (15 a 20 graus no Campbell, 30 graus no HEBERT), é o teste mais sensível para a lesão do ligamento cruzado anterior (95% no Campbell), porque anula o calço do corno posterior dos meniscos e a defesa dos isquiotibiais.
 como: O TEOT 2024 perguntou qual é o teste mais sensível para avaliar a suficiência do cruzado anterior: pivot shift, LACHMAN, gaveta anterior ou contração ativa do quadríceps.
 armadilha: Marcar o pivot shift, que reproduz a instabilidade funcional mas é difícil de obter no paciente acordado; a contração ativa do quadríceps, feita a 90 graus de flexão, é teste da deficiência do cruzado posterior (Campbell, cap. 50, Fig. 50.46).
