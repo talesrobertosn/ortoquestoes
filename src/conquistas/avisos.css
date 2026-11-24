@@ -106,6 +106,8 @@
 .nc--ouro { --nc-acento: #f4cf7c; }
 .nc--esmeralda { --nc-acento: #91dcc1; }
 .nc--lendario { --nc-acento: #d8b4f0; }
+.nc--mitico { --nc-acento: #ffb26b; }
+.nc--ganha.nc--mitico .nc__arte::before { background: conic-gradient(from 0deg, #ff7a4538, #ffd36b30, #7ee0c32e, #8fb8ff2e, #d59bff33, #ff7a4538); border-radius: 50%; inset: -6px; filter: blur(6px); }
 .nc--ganha { --nc-ouro: var(--nc-acento); border-color: var(--nc-acento); }
 .nc[data-cenario="flashcards"].nc--perto { --nc-fundo: #172d33; }
 .nc[data-cenario="biblioteca"].nc--perto { --nc-fundo: #29352d; }

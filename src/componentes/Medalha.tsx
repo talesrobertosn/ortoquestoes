@@ -9,6 +9,7 @@ const METAIS: Record<NivelMedalha, [string, string, string]> = {
   ouro: ['#fff1c2', '#e8b34f', '#a8761a'],
   esmeralda: ['#bff0e2', '#2f9c86', '#0f4f49'],
   lendario: ['#f1dcff', '#9b5de5', '#4b1d7a'],
+  mitico: ['#fff3c4', '#ff7a45', '#8a1238'],
 }
 
 /**
@@ -35,7 +36,7 @@ export function Medalha({ conquista, tamanho = 48, bloqueada = false, titulo }: 
   const [claro, meio, escuro] = METAIS[conquista.nivel]
   const texto = conquista.curto
   const fonte = texto.length >= 4 ? 10.5 : texto.length === 3 ? 12.5 : 15
-  const escuroTexto = conquista.nivel === 'esmeralda' || conquista.nivel === 'lendario'
+  const escuroTexto = conquista.nivel === 'esmeralda' || conquista.nivel === 'lendario' || conquista.nivel === 'mitico'
   return (
     <svg className={'medalha' + (bloqueada ? ' medalha--bloqueada' : '')} width={tamanho} height={tamanho * 56 / 48} viewBox="0 0 48 56" role="img" aria-label={titulo ?? conquista.rotulo}>
       {titulo && <title>{titulo}</title>}

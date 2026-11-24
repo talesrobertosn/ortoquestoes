@@ -105,6 +105,21 @@
 .inv-item--tem.inv-item--lendario {
   box-shadow: inset 0 0 0 1px rgba(155, 93, 229, 0.6), 0 0 18px rgba(155, 93, 229, 0.25), var(--sombra-media);
 }
+/* Mítico (23/11/2026): moldura prismática que gira devagar e um halo de brasa. */
+.inv-item--mitico .inv-item__arte::before {
+  content: ''; position: absolute; inset: -0.35rem; border-radius: 50%; z-index: -1;
+  background: radial-gradient(circle, rgba(255, 178, 107, 0.35), transparent 68%);
+}
+.inv-item--tem.inv-item--mitico {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--superficie), var(--superficie)) padding-box,
+    conic-gradient(from var(--inv-mitico-giro, 0deg), #ff7a45, #ffd36b, #7ee0c3, #8fb8ff, #d59bff, #ff7a45) border-box;
+  box-shadow: 0 0 22px rgba(255, 122, 69, 0.28), var(--sombra-media);
+  animation: inv-mitico-giro 8s linear infinite;
+}
+@property --inv-mitico-giro { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@keyframes inv-mitico-giro { to { --inv-mitico-giro: 360deg; } }
+@media (prefers-reduced-motion: reduce) { .inv-item--tem.inv-item--mitico { animation: none; } }
 .inv-item__ok { color: var(--acerto); font-size: 0.75rem; font-weight: 700; }
 .inv-item__progresso { display: grid; gap: 0.2rem; width: 100%; }
 .inv-item__barra { height: 0.35rem; border-radius: 999px; background: var(--traco); overflow: hidden; }
