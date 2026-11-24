@@ -1,6 +1,6 @@
 ---
 id: callaghan-metais-cimento-tribologia
-versao: 2
+versao: 3
 titulo: Metais, cimento ósseo, tribologia e metal contra metal na artroplastia do quadril
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e c
 edicao: 3ª edição (2017)
 capitulo: Capítulos 15 (Basic Science of Metals), 16 (Basic Science of Bone Cement), 17 (Tribology) e 20 (Metal-on-Metal Articulations), com trechos dos capítulos 1 e 12
 autores: Editores John J. Callaghan, Aaron G. Rosenberg e Harry E. Rubash; capítulo 16 de Sillesen, Malchau, Troelsen e Malchau; capítulo 17 de Markus A. Wimmer, Alfons Fischer e Robin Pourzal; capítulo 20 de Tim Band; capítulo 12 de Lewicki e Van Citters
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 15, p. 224 a 238 (estrutura dos metais, endurecimento, propriedades, aço, cobalto, titânio, fadiga, filme passivo, corrosão mecanicamente assistida); capítulo 16, p. 240 a 250 (cimento, técnica, hastes polidas e rugosas, interface, antibiótico, registros); capítulo 17, p. 252 a 265 (tribossistema, atrito, lubrificação, mecanismos de desgaste, entradas do quadril, pares, cone); capítulo 20, p. 289 a 301 (história do metal contra metal, fundição, geometria, lubrificação, tratamentos, BHR, registros, pseudotumor); capítulo 12, p. 172 a 174 e 181 e 182; capítulo 1, histórico do metal contra metal.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 15, p. 224 a 238 (estrutura dos metais, endurecimento, propriedades, aço, cobalto, titânio, fadiga, filme passivo, corrosão mecanicamente assistida); capítulo 16, p. 240 a 250 (cimento, técnica, hastes polidas e rugosas, interface, antibiótico, registros); capítulo 17, p. 252 a 265 (tribossistema, atrito, lubrificação, mecanismos de desgaste, entradas do quadril, pares, cone); capítulo 20, p. 289 a 301 (história do metal contra metal, fundição, geometria, lubrificação, tratamentos, BHR, registros, pseudotumor); capítulo 12, p. 172 a 174 e 181 e 182; capítulo 1, histórico do metal contra metal. Versão 3 (24/11/2026): trincas nos locais de fixação do revestimento poroso pelo Campbell's Operative Orthopaedics, 13ª ed., cap. 3, p. 176.
 subtemas: Artroplastia total: componentes e fixação; Soltura, osteólise e revisão
 resumo: Estruturas cristalinas (CFC no 316L, CCC no titânio beta, HC no titânio alfa e no cobalto) e endurecimento por bloqueio das discordâncias (intersticial, trabalho a frio do 316L, grão fino, precipitação); escoamento a 0,2%; módulo pouco sensível a defeitos; fadiga de alto ciclo gasta na iniciação, 2 a 5 milhões de ciclos por ano; Ti-6Al-4V bimodal abaixo de cerca de 930 °C, módulo metade do cobalto, sensível ao entalhe; titânio puro (graus pelo oxigênio, alfa-case, só revestimento); cobalto encrua e é difícil de usinar; filme passivo de 2 a 10 nm; corrosão por fretting no cone com pH abaixo de 1; Co-Cr como fundido (M23C6, carbono até 0,35%), homogeneização abaixo e solubilização acima da eutética, HIP e forjado; PMMA é rejunte, pó pré-polimerizado contra retração e calor; 2 a 3 mm de esponjoso, pistola retrógrada, pressão acima de 5 kPa no acetábulo; haste polida (force-closed) contra pré-revestida (24% de soltura em 8 anos); retração do cimento a vácuo para a haste; antibiótico hidrofílico pela lei de Fick; registros a favor do cimento acima de 60 a 65 anos; tribossistema, 90% do atrito vira calor, regimes de lubrificação, quatro mecanismos de desgaste, fluência não é desgaste; tropeço de 8 vezes o peso; Archard e 43% da variância; faixa no modo 2 de McKELLOP; camada nanocristalina e tribofilme no metal contra metal; McKEE, RING e a geometria polar; BHR, ASR e pseudotumor por carga na borda; cobaltismo acima de 60 µg/L.
 ---
@@ -69,6 +69,7 @@ Fonte: The Adult Hip (Callaghan), 2017, Figura 15.2. Estruturas cristalinas: cú
 !questoes treino=quadril-0468,quadril-0470
 conceito: CFC: aço 316L. CCC: titânio beta. HC: titânio alfa e cobalto-cromo (abaixo de cerca de 400 °C). Deformação plástica é movimento de discordâncias, e todo endurecimento as bloqueia: solutos intersticiais (mais efetivos que os substitucionais), trabalho a frio (mais resistência, menos ductilidade; usado no 316L), grão menor (mais contornos, mais resistência), precipitação (carbonetos). Ti-6Al-4V bimodal: deformação abaixo da beta transus, cerca de 930 °C.
 como: Os simulados mostram a figura das três estruturas cristalinas e pedem a associação com as ligas, e perguntam o princípio comum dos mecanismos de endurecimento.
+armadilha: Achar que cada mecanismo de endurecimento age de um jeito próprio, quando todos bloqueiam as discordâncias, ou dar ao titânio alfa a estrutura cúbica.
 !fim
 
 # As propriedades mecânicas e a fadiga {radar=fundamento}
@@ -91,7 +92,7 @@ como: Os simulados mostram a figura das três estruturas cristalinas e pedem a a
 
 O capítulo 17 dá outro número de atividade: 6.048 passos por dia, cerca de 1,1 milhão de ciclos de marcha por ano. As duas fontes concordam no que importa: é alto ciclo, muito acima de 10 mil.
 
-**Quem resiste mais.** Na tabela 15.8, o **Ti-6Al-4V bimodal** tem a **maior resistência à fadiga** entre as ligas relatadas; as microestruturas beta, com grãos alfa aciculares, têm menos. O aço 316L fica na parte de baixo da tabela; o capítulo 12 dá cerca de 310 MPa para o cobalto fundido e 500 a 700 MPa para o titânio. Mas esses números são de corpos de prova lisos e polidos: o **titânio é sensível ao entalhe**, e um risco ou uma mudança brusca de geometria (como a junção do revestimento poroso numa região de alta tensão) acelera muito a falha.
+**Quem resiste mais.** Na tabela 15.8, o **Ti-6Al-4V bimodal** tem a **maior resistência à fadiga** entre as ligas relatadas; as microestruturas beta, com grãos alfa aciculares, têm menos. O aço 316L fica na parte de baixo da tabela; o capítulo 12 dá cerca de 310 MPa para o cobalto fundido e 500 a 700 MPa para o titânio. Mas esses números são de corpos de prova lisos e polidos: o **titânio é sensível ao entalhe**, e um risco ou uma mudança brusca de geometria (como a junção do revestimento poroso numa região de alta tensão) acelera muito a falha. O Campbell's Operative Orthopaedics, 13ª ed. (cap. 3, p. 176), tira a consequência prática: por ser mais sensível ao entalhe que o cromo-cobalto, o titânio tende a iniciar trincas em defeitos metalúrgicos e **nos locais de fixação do revestimento poroso**; por isso, na haste de titânio, a superfície porosa fica restrita às partes proximais mais volumosas e longe das áreas de tração, como a **borda lateral** da haste. É o mesmo raciocínio da fadiga: a trinca nasce onde a superfície tem um degrau, e a borda lateral é a face tracionada da haste que flete sob carga.
 
 !figura 15.4 imagem=quadril/quadril-0467-1.jpeg
 Fonte: The Adult Hip (Callaghan), 2017, Figura 15.4. Curva de WÖHLER: tensão cíclica contra o logaritmo dos ciclos até a falha.
@@ -100,6 +101,7 @@ Fonte: The Adult Hip (Callaghan), 2017, Figura 15.4. Curva de WÖHLER: tensão c
 !questoes treino=quadril-0467,quadril-0475
 conceito: Módulo = rigidez, pouco sensível às discordâncias; escoamento a 0,2% de deformação permanente; ductilidade = alongamento. Rigidez da haste = rigidez flexural (EI); fenda distal reduz a rigidez e o stress shielding. Fadiga de alto ciclo a partir de cerca de 10^4 ciclos; o quadril sofre 2 a 5 milhões por ano; resistência a 10^7 ciclos de 0,3 a 0,5 da resistência máxima; quase toda a vida é iniciação da trinca. Ti-6Al-4V bimodal tem a maior resistência à fadiga, mas é sensível ao entalhe.
 como: Os simulados mostram a curva de WÖHLER e pedem os números do alto ciclo, e pedem a afirmativa falsa sobre as propriedades mecânicas (a armadilha é dizer que o módulo depende das discordâncias).
+armadilha: Dizer que o módulo de elasticidade cai com as discordâncias ou que a vida em fadiga se gasta propagando a trinca, e não iniciando-a.
 !fim
 
 # As ligas: história, aço inoxidável e cobalto {radar=fundamento}
@@ -126,6 +128,7 @@ A artroplastia moderna se apoia em parte em WILES, que fez uma prótese total de
 !questoes treino=quadril-0469,quadril-0473,quadril-0442
 conceito: Co-Cr-Mo veio da odontologia (Vitallium) e só depois foi adaptado à aeronáutica (1941); aço 18-8 de 1926 precisou de 2 a 3% de molibdênio; titânio veio da aeronáutica. Aço 316L: CFC, baixo carbono, para curta duração; poucas próteses nos Estados Unidos. Cobalto: F-1537 difere da F-75 só no nitrogênio; CFC acima e HC abaixo de 400 °C; fundido tem grãos grandes e é menos resistente que o forjado; encrua rápido, resiste ao desgaste e é difícil de usinar. Titânio: baixa densidade e boa fadiga, mas sensível ao entalhe e à corrosão em fresta.
 como: Os simulados pedem a origem de cada liga e as propriedades do cobalto e do titânio, e invertem a história (aeronáutica antes da odontologia) e as normas (carbono em vez de nitrogênio).
+armadilha: Inverter a história (o cobalto-cromo veio da odontologia antes da aeronáutica) ou achar que as normas do cobalto diferem no carbono, e não no nitrogênio.
 !fim
 
 # O titânio {radar=fundamento}
@@ -143,6 +146,7 @@ Outras ligas: Ti-6Al-7Nb na Europa; ligas de **zircônio** (Zr-2,5Nb, base do Ox
 !questoes relacionadas=quadril-0483 treino=quadril-0471,quadril-0472
 conceito: Titânio puro: monofásico HC, quatro graus que diferem no oxigênio (escoamento de 150 a 480 MPa), alfa-case com oxigênio demais (menos fadiga), não tem resistência para hastes, é usado como revestimento poroso. Ti-6Al-4V: bimodal alfa mais beta, deformado abaixo da beta transus (cerca de 930 °C); acima, vira acicular e perde fadiga; módulo cerca de metade do cobalto; sensível ao entalhe.
 como: Os simulados pedem a microestrutura e o processamento do Ti-6Al-4V e o que diferencia os graus do titânio puro.
+armadilha: Usar titânio puro em haste (falta resistência) ou achar que deformar o Ti-6Al-4V acima da beta transus melhora a fadiga, quando o deixa acicular e mais fraco.
 !fim
 
 # O filme passivo e a corrosão mecanicamente assistida {radar=fundamento}
@@ -163,6 +167,7 @@ como: Os simulados pedem a microestrutura e o processamento do Ti-6Al-4V e o que
 !questoes treino=quadril-0474,quadril-0558
 conceito: Filme passivo de 2 a 10 nm, dinâmico, barreira cinética; Cr2O3 no aço e no cobalto, TiO2 no titânio. Passivação em ácido nítrico tem benefício comprovado no 316L, pouca evidência no titânio e no cobalto. A MAC atinge todas as ligas, sobretudo no cone; o pH na fresta pode cair abaixo de 1. No cone, 4 kN de impacto bastam; encaixe ruim gera fretting, o filme se rompe e não se refaz por completo, e vem a corrosão em fresta.
 como: Os simulados trocam nanômetros por micrômetros, atribuem a passivação ao titânio e restringem a corrosão do cone a um único material, e perguntam o mecanismo da articulação secundária.
+armadilha: Medir o filme passivo em micrômetros, dizer que a passivação em ácido nítrico tem benefício provado no titânio ou restringir a corrosão do cone a uma só liga.
 !fim
 
 # O cobalto-cromo fundido e os seus tratamentos {radar=fundamento}
@@ -195,6 +200,7 @@ A armadilha clássica é trocar as temperaturas: a **homogeneização fica abaix
 !questoes treino=quadril-0578,quadril-0579
 conceito: Como fundido: dendrítico, carbonetos interdendríticos M23C6 descontínuos, segregação, microporosidade; carbono máximo de 0,35% evita a rede contínua nos contornos; menor fadiga (fraturas da haste de RING), mas baixo desgaste. Homogeneização a 1.170 °C abaixo da eutética (não funde os carbonetos); solubilização a 1.240 °C acima; os dois refinam os carbonetos em até 50%. HIP elimina a microporosidade. Forjado: mais fadiga e carbono abaixo de 0,05%.
 como: Os simulados pedem o carboneto predominante, o teor de carbono e a temperatura de cada tratamento, e trocam acima e abaixo da eutética.
+armadilha: Pôr a homogeneização acima da eutética (é abaixo, a 1.170 °C) ou achar que o fundido tem mais fadiga que o forjado.
 !fim
 
 # O cimento ósseo: o material {radar=fundamento}
@@ -221,6 +227,7 @@ Ao misturar, o **líquido** polimeriza e o pó quase não muda quimicamente. Por
 !questoes treino=quadril-0443,quadril-0541
 conceito: PMMA é rejunte, sem adesão própria. Pó: PMMA polimerizado, peróxido de benzoíla e radiopacificador. Líquido: monômero MMA com estabilizador e acelerador. O MMA pré-polimerizado no pó limita a retração e reduz o calor. A reação é exotérmica; manto espesso pode necrosar o osso. Porosidade, excesso de radiopacificante ou de antibiótico e proporção errada reduzem a resistência.
 como: Os simulados perguntam a composição de cada parte, o motivo do pó pré-polimerizado e os fatores que enfraquecem o cimento, com as alternativas trocando o que está no pó e no líquido.
+armadilha: Achar que o cimento cola no osso (é rejunte) ou trocar os componentes do pó e do líquido, pondo o peróxido de benzoíla no monômero.
 !fim
 
 # A técnica de cimentação no fêmur e no acetábulo {radar=fundamento}
@@ -257,6 +264,7 @@ armadilha: Marcar o tromboembolismo pulmonar: o que a gordura e o sangue causam 
 !questoes relacionadas=quadril-0016 treino=quadril-0542,quadril-0549
 conceito: Fêmur: preservar 2 a 3 mm de esponjoso forte (fresar agressivo reduz o cisalhamento), lavagem pulsátil, restritor, cimento a vácuo retrógrado pela pistola e pressurização (o restritor não a dispensa). Acetábulo: orifícios de ancoragem, lavagem, pressão contínua acima de 5 kPa (impede o sangue de laminar), pressurizar antes de pôr a cúpula; flange não gera pressão maior de forma consistente.
 como: Os simulados pedem o detalhe técnico correto de cada etapa e oferecem as técnicas da primeira geração como alternativas.
+armadilha: Fresar até a cortical, confiar no restritor sem pressurizar ou achar que a flange da cúpula sempre aumenta a pressão no acetábulo.
 !fim
 
 # Haste polida contra haste rugosa {radar=fundamento}
@@ -282,6 +290,7 @@ A subsidência da haste polida **não é falha**: é o mecanismo previsto, com r
 !questoes treino=quadril-0543,quadril-0544
 conceito: Haste polida (force-closed): subside alguns milímetros até o equilíbrio de forças e comprime o cimento radialmente; não é falha. Haste rugosa ou pré-revestida (shape-closed): ligação rígida, boa a curto prazo, mas pré-revestidas com 24% de soltura em 8 anos; Exeter polida com 85,8% a 93,5% em 27 anos. Colar: benefício controverso.
 como: Os simulados pedem o mecanismo da haste polida e os resultados de longo prazo, invertendo qual desenho se saiu melhor.
+armadilha: Ler a descida de alguns milímetros da haste polida como soltura, ou achar que a haste rugosa pré-revestida se saiu melhor no longo prazo.
 !fim
 
 # A interface: retração e porosidade {radar=fundamento}
@@ -302,6 +311,7 @@ Fonte: The Adult Hip (Callaghan), 2017, Figura 16.12. Retração do cimento a v�
 !questoes treino=quadril-0545,quadril-0546
 conceito: O cimento a vácuo retrai até cerca de 10%, nos primeiros 4 a 10 minutos, afastando-se da cortical em direção à haste, o que permite revascularizar a interface; retrai mais que o manual. Manual: poros pequenos e uniformes; vácuo: sem microporos, mas com poros grandes. Microporos iniciam e também param trincas. Porosidade na interface reduz o cisalhamento. Pré-aquecer a haste reduz poros, mas aumenta a temperatura no osso e o risco de necrose.
 como: Os simulados mostram a figura da retração e pedem a direção e o tempo, e pedem a afirmativa falsa sobre porosidade e pré-aquecimento.
+armadilha: Achar que o cimento retrai em direção à cortical, ou que pré-aquecer a haste é inofensivo para o osso.
 !fim
 
 # Antibiótico no cimento e o que dizem os registros {radar=fundamento}
@@ -319,6 +329,7 @@ como: Os simulados mostram a figura da retração e pedem a direção e o tempo,
 !questoes treino=quadril-0547,quadril-0548
 conceito: Eluição pela lei de Fick, por difusão em massa, máxima nos primeiros minutos. Antibiótico ideal: hidrofílico, resistente ao calor, sem efeito no MMA, bactericida. Mais antibiótico piora a mecânica. Estudo sueco: gentamicina reduziu a infecção sem aumentar a soltura. Registros: acima de 60 a 65 anos, revisão significativamente menor com o cimentado; Suécia teve o menor aumento do não cimentado.
 como: Os simulados pedem a cinética da eluição e as propriedades do antibiótico, e aplicam os dados dos registros a um caso de paciente idosa.
+armadilha: Achar que mais antibiótico no cimento só traz vantagem, ou que a eluição é constante ao longo de semanas, quando é máxima nos primeiros minutos.
 !fim
 
 # O tribossistema e o atrito {radar=fundamento}
@@ -343,6 +354,7 @@ como: Os simulados pedem a cinética da eluição e as propriedades do antibiót
 !questoes treino=quadril-0550,quadril-0551,quadril-0322
 conceito: Atrito e desgaste não são propriedades do material, e sim do tribossistema (corpo, contracorpo, meio interfacial, ambiente). O contato ocorre na área real dos picos. Os detritos são muitas vezes mais prejudiciais que a mudança dimensional. Pelo menos 90% da energia do atrito vira calor; a temperatura média depende da força normal, e a de pico, da velocidade, por milissegundos. A cerâmica tem o menor ângulo de molhamento e lubrifica melhor.
 como: Os simulados pedem a definição de tribossistema, o destino da energia do atrito e a relação entre molhabilidade e lubrificação.
+armadilha: Tratar atrito e desgaste como propriedades fixas do material, ou achar que a maior parte da energia do atrito vira desgaste, e não calor.
 !fim
 
 # A lubrificação e os mecanismos de desgaste {radar=fundamento}
@@ -388,6 +400,7 @@ Fonte: The Adult Hip (Callaghan), 2017, Figura 20.15. Curva de STRIBECK: lubrifi
 !questoes treino=quadril-0552,quadril-0553,quadril-0581
 conceito: Quanto maior a espessura específica do filme, menores o atrito e o desgaste. Limítrofe: contato dos sólidos; misto; elastoidrodinâmico; hidrodinâmico: separação total. Metal contra polietileno em regime misto ou limítrofe; duro contra duro em EHD e misto, e acima de 28 mm pode chegar ao filme completo. A lubrificação mista é provavelmente a mais frequente in vivo. Fluência e corrosão não são desgaste. Quatro mecanismos: abrasão e fadiga (mecânicos), adesão e triboquímica (mecânico e químico); adesão em metais dúcteis contra si mesmos.
 como: Os simulados mostram o gráfico de λ e a curva de STRIBECK e pedem o regime de cada par, e pedem a afirmativa falsa sobre definições de desgaste (a armadilha é chamar a fluência de desgaste).
+armadilha: Chamar fluência ou corrosão de desgaste, ou pôr o metal contra polietileno em lubrificação hidrodinâmica completa.
 !fim
 
 # As entradas do sistema: atividade, forças e ARCHARD {radar=fundamento}
@@ -419,6 +432,7 @@ Fonte: The Adult Hip (Callaghan), 2017, Figura 17.5. Desgaste do polietileno con
 !questoes treino=quadril-0556,quadril-0557,quadril-0582
 conceito: Pacientes ficam sentados 44,3% do tempo e caminham 10,2%; cerca de 6.000 passos por dia, 1,1 milhão de ciclos por ano. Forças: andar 2,4, escada 2,5 e 2,6, corrida 5,5 e tropeço até 8 vezes o peso. ARCHARD: volume proporcional à carga vezes a distância; momentos vezes arco explicaram 43% da variância em 13 pacientes com a mesma prótese. No metal contra metal, V = k × L × x ÷ 3p, com p = dureza do material mais macio.
 como: Os simulados pedem os números de atividade e de força, a leitura do gráfico de ARCHARD e o significado de cada letra da equação.
+armadilha: Superestimar o tempo de caminhada (é cerca de 10% do dia) ou trocar, na equação de ARCHARD, a dureza do material mais macio pela do mais duro.
 !fim
 
 # Os mecanismos em cada par {radar=fundamento}
@@ -446,6 +460,7 @@ O problema clínico do metal contra metal é, sobretudo, de **desenho** das cabe
 !questoes treino=quadril-0554,quadril-0555
 conceito: Modos de McKELLOP: 1 pretendido, 2 articular contra não articular (microsseparação e borda), 3 terceiro corpo, 4 não articulares (impacto do colo). Cerâmica contra cerâmica: fadiga superficial leve e polimento, sem adesão; faixa de desgaste pelo modo 2; ciclos térmicos ameaçam mais a zircônia. Metal contra metal funcionante: sem adesão nas McKEE-FARRAR, fadiga superficial leve, camada nanocristalina explica partículas de cerca de 50 nm, tribofilme benéfico.
 como: Os simulados pedem o mecanismo dominante de cada par, com alternativas que atribuem adesão ou abrasão de três corpos aos pares duros.
+armadilha: Atribuir adesão ou abrasão de três corpos como mecanismo principal dos pares duros, ou achar que a faixa de desgaste da cerâmica vem do modo 1.
 !fim
 
 # O metal contra metal: história e geometria {radar=fundamento}
@@ -481,6 +496,7 @@ Fonte: The Adult Hip (Callaghan), 2017, Figura 20.14. Folga radial e ângulo de 
 !questoes treino=quadril-0577,quadril-0580,quadril-0348
 conceito: WILES 1938 (aço contra aço); SMITH-PETERSEN 1939 (molde de cobalto-cromo, recapeamento sem ressecção); McKEE, primeiro uso de cobalto-cromo em total metal contra metal, cimentado, cúpula "sputnik"; RING não cimentado, haste rosqueada no ílio. Metal contra metal: desgaste de cerca de 0,004 mm/ano, cabeça grande, mais arco, íons sistêmicos, reações de partes moles; não surgiu nos anos 1990. Geometria polar (cabeça com raio menor) arrasta fluido; equatorial aumenta atrito; folga radial é a diferença entre os raios.
 como: Os simulados pedem quem fez o quê, a geometria ideal na figura de repouso e movimento, e a afirmativa falsa entre as características do metal contra metal.
+armadilha: Dizer que o metal contra metal surgiu nos anos 1990, ou preferir a geometria equatorial, que aumenta o atrito.
 !fim
 
 # O recapeamento, os registros e as reações ao metal {radar=fundamento}
@@ -517,6 +533,7 @@ como: Os simulados pedem quem fez o quê, a geometria ideal na figura de repouso
 !questoes treino=quadril-0583,quadril-0584,quadril-0585,quadril-0447
 conceito: BHR: como fundido de alto carbono, polar, fêmur cimentado com cimento de baixa viscosidade e acetábulo não cimentado com hidroxiapatita; 96% sem revisão aos 14 anos em 3.205. Registro australiano 2013: total metal contra metal 18,6% em 12 anos, recapeamento 11,2%, BHR 7,1% em 10; 6 de 10 recapeamentos acima do limite do NICE. ASR: microestrutura mista, folga de cerca de 100 µm e ângulo subtendido reduzido juntos. Pseudotumor: maioria com carga na borda por inclinação e versão; não é exclusivo; sem aumento de câncer. Cobaltismo acima de 60 µg/L; pseudotumor mais em mulheres e componentes pequenos; revisão não normaliza os íons de imediato.
 como: Os simulados pedem o desenho do BHR, os números do registro, a explicação do ASR, o caso de pseudotumor com cúpula vertical e os efeitos sistêmicos do cobalto.
+armadilha: Explicar a falha do ASR por um fator só, ou achar o pseudotumor exclusivo do metal contra metal e ligado a câncer.
 !fim
 
 # Revisão rápida {radar=fundamento}

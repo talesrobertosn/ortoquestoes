@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-marcha
-versao: 2
+versao: 3
 titulo: Marcha na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021)
 capitulo: Capítulo 5 · Gait Analysis
 autores: John A. HERRING (editor)
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 5 (p. 61 a 68), cap. 6 (p. 69 a 72), cap. 3 (p. 34), cap. 4 (p. 53 e 54), cap. 17 (p. 625 e 626), cap. 18 (p. 663 e 664, aprox.), cap. 20 (p. 808), cap. 31 (p. 1422 a 1435 e 1457) e cap. 35 (p. 1709 e 1710); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 4 (p. 92 e 116), cap. 16 (p. 591), cap. 23 (p. 991), cap. 27 (p. 1262 e 1264) e cap. 28 (p. 1360); Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (p. 191 e 192), cap. 7 (p. 358.e1), cap. 35 (análise de marcha e joelho rígido) e cap. 38 (p. 1358); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 1 (Marcha normal e patológica), cap. 9.1, cap. 10, cap. 14 e cap. 21.5 (páginas, citadas pelo capítulo).
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 5 (p. 61 a 68), cap. 6 (p. 69 a 72), cap. 3 (p. 34), cap. 4 (p. 53 e 54), cap. 17 (p. 625 e 626), cap. 18 (p. 663 e 664), cap. 20 (p. 808), cap. 31 (p. 1422 a 1435 e 1457) e cap. 35 (p. 1709 e 1710); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 4 (p. 92 e 116), cap. 16 (p. 591), cap. 23 (p. 991), cap. 27 (p. 1262 e 1264) e cap. 28 (p. 1360); Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (p. 191 e 192), cap. 35 (análise de marcha e joelho rígido) e cap. 38 (p. 1358); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 1 (Marcha normal e patológica), cap. 9.1, cap. 10, cap. 14 e cap. 21.5 (páginas, citadas pelo capítulo). Versão 3 (24/11/2026): elevação ativa da perna estendida (cerca de 2 vezes o peso) conferida no Campbell's Operative Orthopaedics, 13ª ed., cap. 6, p. 347; páginas 663 e 664 do Tachdjian (cap. 18) conferidas.
 subtemas: Marcha na criança
 resumo: Apoio 60% e balanço 40%, com duplo apoio nos 10% iniciais e finais e apoio simples nos 40% centrais; passo é calcanhar a calcanhar dos dois pés, passada é do mesmo pé ao mesmo pé; centro de gravidade anterior a S2, mais baixo no duplo apoio e mais alto no médio apoio; seis determinantes de SAUNDERS; flexão máxima do joelho (60°) no balanço inicial; ângulo de progressão do pé 10 a 15° externo; abdutores cerca de 2,5 vezes o peso; padrão adulto aos 7 anos; antálgica com apoio curto, TRENDELENBURG com tronco sobre o quadril afetado, DUCHENNE com hiperlordose, bamboleio e mais duplo apoio; agachamento do diplégico; anteversão femoral com patela medial no apoio; discrepância acima de 2 cm (3,7%) gera assimetria.
 ---
@@ -255,18 +255,18 @@ A **pedobarografia** mede pressões plantares com placas de muitos sensores, div
 
 A biomecânica do apoio monopodálico é a balança de PAUWELS. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 4, Applied Biomechanics, p. 191 e 192), explica: como a razão entre o braço de alavanca do peso corporal e o dos abdutores é de cerca de **2,5:1**, **a força dos abdutores precisa ser cerca de 2,5 vezes o peso corporal** para manter a pelve nivelada em apoio unipodal. A carga sobre a cabeça femoral no apoio é a soma das forças dos abdutores e do peso, **cerca de 3 vezes o peso corporal**, e **a carga na elevação da perna estendida é estimada como cerca da mesma**. No quadril artrósico, a razão pode chegar a 4:1; aproximá-la de 1:1 reduz a carga total em cerca de 30%.
 
-O Campbell traz ainda os valores de contato: calculados entre **3,5 e 5 vezes** o peso na marcha e até **6 vezes** no apoio simples; medidos em próteses instrumentadas, mais baixos, **2,6 a 3 vezes**; e ao **levantar, correr ou saltar, a carga pode equivaler a 10 vezes o peso**. No capítulo de quadril do adulto jovem (cap. 7, p. 358.e1), a elevação ativa da perna estendida, usada como teste de gravidade da dor no quadril, aparece como cerca de **2 vezes o peso**, pela força de reação articular gerada pelos flexores do quadril. Os dois números do mesmo livro não se contradizem: o cap. 4 compara a elevação com a carga do apoio (cerca de 3 vezes), e o cap. 7 dá a estimativa clínica de cerca de 2 vezes; nos dois casos, a manobra carrega o quadril, não o descarrega.
+O Campbell traz ainda os valores de contato: calculados entre **3,5 e 5 vezes** o peso na marcha e até **6 vezes** no apoio simples; medidos em próteses instrumentadas, mais baixos, **2,6 a 3 vezes**; e ao **levantar, correr ou saltar, a carga pode equivaler a 10 vezes o peso**. No capítulo de dor no quadril do adulto jovem, a 13ª edição do Campbell (cap. 6, p. 347) usa a elevação ativa da perna estendida como teste clínico e diz que ela produz uma força de cerca de **2 vezes o peso**, pela força de reação articular gerada pelos flexores do quadril; por ser reprodutível no mesmo paciente, a dor nessa manobra ajuda a localizar o problema na articulação. Os dois números não se contradizem: o cap. 4 da 15ª edição compara a elevação com a carga do apoio (cerca de 3 vezes), e o cap. 6 da 13ª dá a estimativa clínica de cerca de 2 vezes; nos dois casos, a manobra carrega o quadril, não o descarrega.
 
 A Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed. (cap. 10), usa braço de 3:1 e força quase 3 vezes o peso; com abdutores fracos ou dor, o paciente leva o centro de gravidade para o quadril afetado e encurta o braço do peso.
 
-!tabela Forças sobre o quadril (Campbell 15, cap. 4, p. 191 e 192, e cap. 7, p. 358.e1; SIZÍNIO, cap. 10)
+!tabela Forças sobre o quadril (Campbell 15, cap. 4, p. 191 e 192; Campbell 13, cap. 6, p. 347; SIZÍNIO, cap. 10)
 | Situação | Valor | Fonte |
 | --- | --- | --- |
 | força dos abdutores no apoio unipodal | cerca de 2,5 vezes o peso (braços 2,5:1) | Campbell |
 | força dos abdutores | quase 3 vezes o peso (braços 3:1) | SIZÍNIO |
 | carga na cabeça femoral no apoio | cerca de 3 vezes o peso | Campbell |
 | elevação da perna estendida | cerca da mesma carga do apoio | Campbell, cap. 4 |
-| elevação ativa da perna estendida (teste clínico) | cerca de 2 vezes o peso | Campbell, cap. 7 |
+| elevação ativa da perna estendida (teste clínico) | cerca de 2 vezes o peso | Campbell 13, cap. 6, p. 347 |
 | contato calculado na marcha | 3,5 a 5 vezes; até 6 no apoio simples | Campbell |
 | contato medido em prótese | 2,6 a 3 vezes | Campbell |
 | levantar, correr, saltar | até 10 vezes o peso | Campbell |
@@ -287,7 +287,7 @@ A marcha muda à medida que o sistema nervoso amadurece, em sentido **cefalocaud
 
 Os marcos de idade são cobrados: **padrão adulto de cinética aos 5 anos** (cap. 5, p. 66); **padrão de velocidade estável aos 5 anos** e **padrão adulto de marcha por volta dos 7 anos** (cap. 6, p. 72). O consumo e o custo de oxigênio durante a marcha são **maiores abaixo de 12 anos** que nos adolescentes (cap. 5, p. 62).
 
-O ângulo de progressão do pé também muda com a idade, porque depende da torção tibial e da anteversão femoral, que se remodelam. O recém-nascido costuma andar (quando sustentado) com os pés para fora, pela contratura em rotação externa do quadril; o intoeing por torção tibial interna só aparece por volta dos 12 meses, quando a criança fica de pé e essa contratura se resolve (Tachdjian, cap. 18, p. 664, aprox.). **Até os 7 anos, a tíbia é o principal determinante do ângulo de progressão; depois dos 7, o fêmur passa a pesar mais** (cap. 18, p. 663, aprox.). Daí a faixa normal larga nos primeiros anos. O Lovell and Winter (cap. 4, p. 92) dá o número: o ângulo de progressão do pé, entre o eixo do pé (bissetriz do calcanhar ao centro da cabeça do segundo metatarso) e uma linha reta no chão, **varia de 15° internos a 25° externos entre 1 e 4 anos**. Valores dentro de 2 desvios padrão da média são **variações rotacionais**; fora disso, **deformidades torcionais**.
+O ângulo de progressão do pé também muda com a idade, porque depende da torção tibial e da anteversão femoral, que se remodelam. O recém-nascido costuma andar (quando sustentado) com os pés para fora, pela contratura em rotação externa do quadril; o intoeing por torção tibial interna só aparece por volta dos 12 meses, quando a criança fica de pé e essa contratura se resolve (Tachdjian, cap. 18, p. 663 e 664). **Até os 7 anos, a tíbia é o principal determinante do ângulo de progressão; depois dos 7, o fêmur passa a pesar mais** (cap. 18, p. 663). Daí a faixa normal larga nos primeiros anos. O Lovell and Winter (cap. 4, p. 92) dá o número: o ângulo de progressão do pé, entre o eixo do pé (bissetriz do calcanhar ao centro da cabeça do segundo metatarso) e uma linha reta no chão, **varia de 15° internos a 25° externos entre 1 e 4 anos**. Valores dentro de 2 desvios padrão da média são **variações rotacionais**; fora disso, **deformidades torcionais**.
 
 !tabela Marcha por idade (Tachdjian, cap. 5, p. 62 e 66; cap. 6, p. 71 e 72; cap. 18, p. 663 e 664)
 | Idade | Características |
@@ -464,7 +464,7 @@ A anteversão é de cerca de **40° no lactente e 16° no adulto** (Tachdjian, c
 
 ## Torção tibial
 
-A torção tibial é a **causa mais comum de intoeing e outtoeing até 7 anos** (Tachdjian, cap. 18, p. 663, aprox.). A torção lateral aumenta de cerca de **5° ao nascer para 15° na maturidade**. Órteses e barras de DENIS BROWNE são ineficazes e podem criar valgo ou rotação nas articulações. A **torção tibial lateral persistente** aparece em prematuros mantidos em prono e na **síndrome do mau alinhamento torcional** (anteversão femoral com torção tibial externa), com dor e instabilidade patelofemoral. Osteotomia, supramaleolar, só aos 8 anos ou mais e com mais de **15° de progressão interna ou 30° externa** (p. 664, aprox.).
+A torção tibial é a **causa mais comum de intoeing e outtoeing até 7 anos** (Tachdjian, cap. 18, p. 663). A torção lateral aumenta de cerca de **5° ao nascer para 15° na maturidade**. Órteses e barras de DENIS BROWNE são ineficazes e podem criar valgo ou rotação nas articulações (p. 664). A **torção tibial lateral persistente** aparece em prematuros mantidos em prono e na **síndrome do mau alinhamento torcional** (anteversão femoral com torção tibial externa), com dor e instabilidade patelofemoral. Osteotomia, supramaleolar, só aos 8 anos ou mais e com mais de **15° de progressão interna ou 30° externa** (p. 664).
 
 O outtoeing patológico tem outra companhia no Lovell and Winter (cap. 27, p. 1264, Fig. 27-3): o **pé planovalgo grave associado à torção tibial externa**, que pode ser secundário a **coalizão tarsal**, mas também aparece no adolescente com pé plano rígido sem coalizão; não se sabe se a rotação externa é adaptação ao pé rígido ou consequência da falta de flexibilidade. Órtese de suporte medial alivia os sintomas, mas não muda a rotação. A tríade **retrotorção femoral, torção tibial externa e planovalgo**, sobretudo no adolescente grande, dá uma marcha com os pés muito para fora. O mesmo trecho manda pensar em **epifisiólise** quando o outtoeing é assimétrico ou recente, e lembra a coxa vara como causa. Na paralisia cerebral, o pé valgo abduzido somado à torção tibial externa e à anteversão femoral forma o mau alinhamento torcional.
 
