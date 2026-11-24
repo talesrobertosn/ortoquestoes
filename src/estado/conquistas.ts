@@ -19,7 +19,8 @@ import { ATRASO_RESGATE_DIAS, REVISOES_DIA_SEQUENCIA, resumoRevisoes, sequenciaR
 import { FC_REVISOES_DIA, METRICAS_FLASHCARDS_VAZIAS, type MetricasFlashcards } from '../flashcards/conquistas'
 import { CONCLUIR_MINIMO_S, METRICAS_BIBLIOTECA_VAZIAS, type MetricasBiblioteca } from '../biblioteca/conquistas'
 
-export type NivelMedalha = 'bronze' | 'prata' | 'ouro' | 'esmeralda' | 'lendario'
+/** Mítico (23/11/2026): acima do lendário, para marcos que quase ninguém alcança. Fica fora da Platina. */
+export type NivelMedalha = 'bronze' | 'prata' | 'ouro' | 'esmeralda' | 'lendario' | 'mitico'
 
 export interface Conquista {
   /** Identificador estável: nome do arquivo da arte e valor gravado na vitrine. */
@@ -32,11 +33,11 @@ export interface Conquista {
 }
 
 export type FamiliaId =
-  | 'questoes' | 'sequencia' | 'dias' | 'acertos' | 'dominadas' | 'temas' | 'sessoes'
-  | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'mestre' | 'especialista' | 'aproveitamento'
+  | 'questoes' | 'sequencia' | 'fogueiraRecorde' | 'labareda' | 'dias' | 'acertos' | 'dominadas' | 'temas' | 'sessoes'
+  | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'mestre' | 'especialista' | 'mao' | 'simuladosMao' | 'teot' | 'bancas' | 'aproveitamento'
   | 'resistencia' | 'colecao' | 'anotacoes' | 'pseudartrose' | 'imagem' | 'certeza' | 'provas' | 'assuntos'
   | 'horaDeOuro' | 'calibrado' | 'contraCorrente' | 'completo' | 'notaDeCorte' | 'curva' | 'runSemDano' | 'chefes'
-  | 'pontual' | 'filaZerada' | 'cronograma' | 'nacional' | 'arena' | 'indicacao' | 'revisor' | 'editorial'
+  | 'pontual' | 'filaZerada' | 'cronograma' | 'cronogramaDias' | 'semanaPerfeita' | 'nacional' | 'arena' | 'indicacao' | 'revisor' | 'editorial'
   | 'revisoes' | 'constancia' | 'resgate'
   | 'fcProfundezas' | 'fcMestreRevisao' | 'fcEspecialista' | 'fcBestiario' | 'fcSemErrar' | 'fcLendarios' | 'fcDragoes'
   | 'bibMarcas' | 'bibNotas' | 'bibAbertos' | 'bibConcluidos' | 'bibTempo' | 'bibDias'
@@ -59,6 +60,8 @@ const n = (v: number) => v.toLocaleString('pt-BR')
 export const FAMILIAS: readonly Familia[] = [
   { id: 'questoes', titulo: 'Questões respondidas', unidade: (v) => `${n(v)} questões` },
   { id: 'sequencia', titulo: 'Sequência atual', unidade: (v) => `${v} dias seguidos` },
+  { id: 'fogueiraRecorde', titulo: 'Fogueira recorde', unidade: (v) => `${v} dias na maior sequência` },
+  { id: 'labareda', titulo: 'Labareda', unidade: (v) => `${v} ${v === 1 ? 'dia' : 'dias seguidos'} com ${LABAREDA_QUESTOES} questões` },
   { id: 'dias', titulo: 'Dias de estudo', unidade: (v) => `${v} dias com estudo` },
   { id: 'acertos', titulo: 'Acertos', unidade: (v) => `${n(v)} acertos` },
   { id: 'dominadas', titulo: 'Domínio', unidade: (v) => `${n(v)} dominadas` },
@@ -70,6 +73,10 @@ export const FAMILIAS: readonly Familia[] = [
   { id: 'gabarito', titulo: 'Gabarito', unidade: (v) => `${v} ${v === 1 ? 'sessão perfeita' : 'sessões perfeitas'}` },
   { id: 'mestre', titulo: 'Mestres de tema', unidade: (v) => `${v} acertos no tema` },
   { id: 'especialista', titulo: 'Especialistas por prova', unidade: (v) => `${n(v)} questões da prova` },
+  { id: 'mao', titulo: 'Cirurgia da mão', unidade: (v) => `${n(v)} questões de mão` },
+  { id: 'simuladosMao', titulo: 'Simulados da mão', unidade: (v) => `${n(v)} acertos nos simulados da mão` },
+  { id: 'teot', titulo: 'Prova teórica do TEOT', unidade: (v) => `${n(v)} acertos no TEOT` },
+  { id: 'bancas', titulo: 'Provas pelo Brasil', unidade: (v) => `${n(v)} questões das provas regionais` },
   { id: 'aproveitamento', titulo: 'Aproveitamento', unidade: (v) => `${v}% de acerto` },
   { id: 'resistencia', titulo: 'Resistência', unidade: (v) => `${v} questões numa sessão` },
   { id: 'colecao', titulo: 'Coleção', unidade: (v) => `${v} favoritas` },
@@ -90,6 +97,8 @@ export const FAMILIAS: readonly Familia[] = [
   { id: 'pontual', titulo: 'Questão do Dia', unidade: (v) => `${v} dias seguidos` },
   { id: 'filaZerada', titulo: 'Fila zerada', unidade: (v) => `${v} dias seguidos` },
   { id: 'cronograma', titulo: 'Cronograma', unidade: (v) => `${v} dias de meta seguidos` },
+  { id: 'cronogramaDias', titulo: 'Fiel ao cronograma', unidade: (v) => `${v} ${v === 1 ? 'dia' : 'dias'} com a meta cumprida` },
+  { id: 'semanaPerfeita', titulo: 'Semana perfeita', unidade: (v) => `${v} ${v === 1 ? 'semana perfeita' : 'semanas perfeitas'}` },
   { id: 'nacional', titulo: 'Simulado Nacional', unidade: (v) => `${v} edições seguidas` },
   { id: 'arena', titulo: 'Arena semanal', unidade: (v) => `${v} semanas seguidas` },
   { id: 'indicacao', titulo: 'Indicação', unidade: (v) => `${v} amigos` },
@@ -160,6 +169,16 @@ export const SEM_MORRER_ACERTO = 0.85
 /** Simulado Nacional: elite (10% melhores) e campeão só valem em edições com pelo menos tantos classificados. */
 export const NACIONAL_MINIMO_CLASSIFICADOS = 20
 
+/** Labareda: dias seguidos com pelo menos esta quantidade de questões. */
+export const LABAREDA_QUESTOES = 50
+/** Mão de cirurgião (secreta): acertos seguidos em questões do tema mão e punho. */
+export const MAO_SEGUIDOS = 30
+/**
+ * Provas regionais ("Provas pelo Brasil"): as de residência e de sociedades estaduais.
+ * Ficam de fora as nacionais (TEOT, TARO, ENARE, títulos de subespecialidade e simulados).
+ */
+export const PROVAS_REGIONAIS: ReadonlySet<string> = new Set(['USP-SP', 'SBOT-SP', 'UFG', 'PUC-SP', 'CET-PR', 'INTO', 'Einstein', 'FMRP-USP', 'IAUPE', 'UERJ', 'R4 Coluna SES-DF', 'R4 Coluna Joinville'])
+
 /** Grupos de prova dos emblemas de especialista (sufixo do id). */
 export type GrupoProva = 'teot' | 'taro' | 'mao' | 'coluna' | 'enare' | 'tecoc' | 'quadril'
 
@@ -179,16 +198,38 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['questoes-2000', 2000, 'Preceptor', '2k', 'ouro', 'Responda 2.000 questões diferentes.'],
     ['questoes-3000', 3000, 'Chefe de serviço', '3k', 'esmeralda', 'Responda 3.000 questões diferentes.'],
     ['questoes-4000', 4000, 'Lenda do Orto Questões', '4k', 'lendario', 'Responda 4.000 questões diferentes.'],
+    ['questoes-5000', 5000, 'Livre-docente', '5k', 'lendario', 'Responda 5.000 questões diferentes.'],
+    ['questoes-6000', 6000, 'Catedrático', '6k', 'lendario', 'Responda 6.000 questões diferentes.'],
+    ['questoes-7000', 7000, 'Professor titular', '7k', 'mitico', 'Responda 7.000 questões diferentes.'],
+    ['questoes-8000', 8000, 'Patrono da ortopedia', '8k', 'mitico', 'Responda 8.000 questões diferentes.'],
+    ['questoes-9000', 9000, 'Guardião do acervo', '9k', 'mitico', 'Responda 9.000 questões diferentes.'],
   ]),
   ...familia('sequencia', 'sequencia', [
     ['sequencia-3', 3, 'Aquecendo', '3d', 'bronze', `Estude ${META_STREAK_DIARIA} questões por dia, 3 dias seguidos.`],
     ['sequencia-7', 7, 'Semana firme', '7d', 'bronze', `Estude ${META_STREAK_DIARIA} questões por dia, 7 dias seguidos.`],
     ['sequencia-14', 14, 'Quinzena sem folga', '14d', 'prata', `Estude ${META_STREAK_DIARIA} questões por dia, 14 dias seguidos.`],
+    ['sequencia-21', 21, 'Três semanas acesas', '21d', 'prata', `Estude ${META_STREAK_DIARIA} questões por dia, 21 dias seguidos.`],
     ['sequencia-30', 30, 'Mês de ferro', '30d', 'prata', `Estude ${META_STREAK_DIARIA} questões por dia, 30 dias seguidos.`],
     ['sequencia-60', 60, 'Bimestre blindado', '60d', 'ouro', `Estude ${META_STREAK_DIARIA} questões por dia, 60 dias seguidos.`],
     ['sequencia-100', 100, 'Cem dias', '100d', 'ouro', `Estude ${META_STREAK_DIARIA} questões por dia, 100 dias seguidos.`],
+    ['sequencia-150', 150, 'Pira do castelo', '150d', 'ouro', `Estude ${META_STREAK_DIARIA} questões por dia, 150 dias seguidos.`],
     ['sequencia-200', 200, 'Inquebrável', '200d', 'esmeralda', `Estude ${META_STREAK_DIARIA} questões por dia, 200 dias seguidos.`],
+    ['sequencia-250', 250, 'Coroa de chamas', '250d', 'esmeralda', `Estude ${META_STREAK_DIARIA} questões por dia, 250 dias seguidos.`],
     ['sequencia-365', 365, 'Um ano sem faltar', '365', 'lendario', `Estude ${META_STREAK_DIARIA} questões por dia, 365 dias seguidos.`],
+    ['sequencia-500', 500, 'Sol que não se põe', '500', 'mitico', `Estude ${META_STREAK_DIARIA} questões por dia, 500 dias seguidos.`],
+    ['sequencia-730', 730, 'Chama imortal', '730', 'mitico', `Estude ${META_STREAK_DIARIA} questões por dia, 730 dias seguidos: dois anos sem apagar.`],
+  ]),
+  ...familia('fogueiraRecorde', 'fogueiraRecorde', [
+    ['recorde-30', 30, 'Brasa guardada', '30', 'prata', `Faça uma sequência de 30 dias seguidos com ${META_STREAK_DIARIA} questões por dia. Este fica para sempre, mesmo se a fogueira apagar.`],
+    ['recorde-100', 100, 'Braseiro do castelo', '100', 'ouro', 'Chegue a uma sequência de 100 dias seguidos, em qualquer época. O recorde não se perde.'],
+    ['recorde-200', 200, 'Fornalha do dragão', '200', 'esmeralda', 'Chegue a uma sequência de 200 dias seguidos, em qualquer época.'],
+    ['recorde-365', 365, 'Fogo eterno', '365', 'lendario', 'Chegue a uma sequência de 365 dias seguidos, em qualquer época.'],
+  ]),
+  ...familia('labareda', 'labareda', [
+    ['labareda-3', 3, 'Labareda', '3d', 'prata', `Responda ${LABAREDA_QUESTOES} questões por dia, 3 dias seguidos.`],
+    ['labareda-7', 7, 'Incêndio', '7d', 'ouro', `Responda ${LABAREDA_QUESTOES} questões por dia, 7 dias seguidos.`],
+    ['labareda-14', 14, 'Forja acesa', '14d', 'esmeralda', `Responda ${LABAREDA_QUESTOES} questões por dia, 14 dias seguidos.`],
+    ['labareda-30', 30, 'Sopro de dragão', '30d', 'lendario', `Responda ${LABAREDA_QUESTOES} questões por dia, 30 dias seguidos.`],
   ]),
   ...familia('dias', 'dias', [
     ['dias-3', 3, 'Recém-chegado', '3', 'bronze', 'Estude em 3 dias diferentes, seguidos ou não.'],
@@ -206,6 +247,7 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['acertos-1000', 1000, 'Diagnóstico certeiro', '1k', 'ouro', 'Acerte 1.000 questões.'],
     ['acertos-2500', 2500, 'Oráculo da ortopedia', '2,5k', 'esmeralda', 'Acerte 2.500 questões.'],
     ['acertos-4000', 4000, 'Lenda viva', '4k', 'lendario', 'Acerte 4.000 questões.'],
+    ['acertos-6000', 6000, 'Escudo dos deuses', '6k', 'mitico', 'Acerte 6.000 questões.'],
   ]),
   ...familia('dominadas', 'dominadas', [
     ['dominadas-10', 10, 'Fixou', '10', 'bronze', 'Domine 10 questões, acertando também nas revisões.'],
@@ -271,6 +313,29 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['especialista-enare', 100, 'R4 do ENARE', 'R4', 'ouro', 'Responda 100 questões do R4 do ENARE.'],
     ['especialista-tecoc', 100, 'Especialista em ombro e cotovelo', 'Omb', 'ouro', 'Responda 100 questões da prova de título de ombro e cotovelo.'],
     ['especialista-quadril', 150, 'Especialista em quadril', 'Qua', 'esmeralda', 'Responda 150 questões do Fellowship Quadril.'],
+  ]),
+  ...familia('mao', 'mao', [
+    ['mao-750', 750, 'Manopla de aço', '750', 'ouro', 'Responda 750 questões diferentes de cirurgia da mão (simulados da mão, ENARE e o tema mão e punho).'],
+    ['mao-1500', 1500, 'Manopla de esmeralda', '1,5k', 'esmeralda', 'Responda 1.500 questões diferentes de cirurgia da mão.'],
+    ['mao-3000', 3000, 'Mão do rei', '3k', 'lendario', 'Responda 3.000 questões diferentes de cirurgia da mão.'],
+  ]),
+  ...familia('simuladosMao', 'simuladosMao', [
+    ['simulados-mao-150', 150, 'Aprendiz da mão', '150', 'prata', 'Acerte 150 questões dos OrtoQuestões Simulados da mão.'],
+    ['simulados-mao-500', 500, 'Escudeiro da mão', '500', 'ouro', 'Acerte 500 questões dos OrtoQuestões Simulados da mão.'],
+    ['simulados-mao-1000', 1000, 'Cavaleiro da mão', '1k', 'esmeralda', 'Acerte 1.000 questões dos OrtoQuestões Simulados da mão.'],
+    ['simulados-mao-1600', 1600, 'Paladino da mão', '1,6k', 'lendario', 'Acerte 1.600 questões dos OrtoQuestões Simulados da mão.'],
+  ]),
+  ...familia('teot', 'teot', [
+    ['teot-100', 100, 'Candidato ao título', '100', 'prata', 'Acerte 100 questões da prova teórica do TEOT.'],
+    ['teot-250', 250, 'Teórico de carteirinha', '250', 'ouro', 'Acerte 250 questões do TEOT.'],
+    ['teot-400', 400, 'Sábio do título', '400', 'esmeralda', 'Acerte 400 questões do TEOT.'],
+    ['teot-520', 520, 'Arquimago do TEOT', '520', 'lendario', 'Acerte 520 questões do TEOT: quase a prova teórica inteira de todos os anos.'],
+  ]),
+  ...familia('bancas', 'bancas', [
+    ['bancas-150', 150, 'Viajante', '150', 'prata', 'Responda 150 questões das provas regionais (USP, SBOT-SP, UFG, PUC-SP, INTO, CET-PR e outras).'],
+    ['bancas-400', 400, 'Desbravador', '400', 'ouro', 'Responda 400 questões das provas regionais.'],
+    ['bancas-800', 800, 'Bandeirante', '800', 'esmeralda', 'Responda 800 questões das provas regionais.'],
+    ['bancas-1300', 1300, 'Senhor dos mapas', '1,3k', 'lendario', 'Responda 1.300 questões das provas regionais: praticamente todas as bancas do país.'],
   ]),
   ...familia('aproveitamento', 'aproveitamento', [
     ['aproveitamento-60', 60, 'Consistente', '60%', 'prata', `Mantenha 60% de acerto na primeira tentativa, com pelo menos ${APROVEITAMENTO_MINIMO} questões respondidas.`],
@@ -363,7 +428,10 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['chefe-new-game', 1, 'New Game+', 'NG+', 'lendario', 'Domine todas as questões de um tema inteiro.'],
   ]),
   ...familia('chefes', 'platina', [
-    ['chefe-platina', 1, 'Platina', 'PT', 'lendario', 'Conquiste todos os outros emblemas de questões que não são secretos (a sequência de dias, os de Flashcards e os dos Resumos não entram).'],
+    ['chefe-platina', 1, 'Platina', 'PT', 'lendario', 'Conquiste todos os outros emblemas de questões que não são secretos (a sequência de dias, os míticos, os de Flashcards e os dos Resumos não entram).'],
+  ]),
+  ...familia('chefes', 'zerou', [
+    ['chefe-zerou', 1, 'Zerou o Orto Questões', '100%', 'mitico', 'Responda todas as questões do acervo (as anuladas não contam). Quando chegarem questões novas, o emblema conquistado continua seu.'],
   ]),
   ...familia('pontual', 'pontual', [
     ['pontual-30', 30, 'Pontual', '30', 'ouro', 'Responda a Questão do Dia 30 dias seguidos.'],
@@ -381,6 +449,19 @@ export const EMBLEMAS: readonly Emblema[] = [
   ]),
   ...familia('cronograma', 'cronogramaCompleto', [
     ['cronograma-completo', 1, 'Do início ao fim', 'fim', 'lendario', 'Cumpra a meta do Cronograma em todos os dias de estudo, do dia em que montou o plano até a reta final da prova.'],
+  ]),
+  ...familia('cronogramaDias', 'cronogramaDias', [
+    ['cronograma-dias-15', 15, 'Bússola na mão', '15', 'bronze', 'Cumpra a meta do Cronograma em 15 dias, seguidos ou não.'],
+    ['cronograma-dias-45', 45, 'Rumo certo', '45', 'prata', 'Cumpra a meta do Cronograma em 45 dias.'],
+    ['cronograma-dias-90', 90, 'Navegador', '90', 'ouro', 'Cumpra a meta do Cronograma em 90 dias.'],
+    ['cronograma-dias-180', 180, 'Cartógrafo real', '180', 'esmeralda', 'Cumpra a meta do Cronograma em 180 dias.'],
+    ['cronograma-dias-300', 300, 'Estrela do norte', '300', 'lendario', 'Cumpra a meta do Cronograma em 300 dias.'],
+  ]),
+  ...familia('semanaPerfeita', 'semanaPerfeita', [
+    ['semana-perfeita-2', 2, 'Semana redonda', '2', 'prata', 'Feche 2 semanas (segunda a domingo) com a meta do Cronograma cumprida em todos os dias de estudo. As folgas do plano não contam.'],
+    ['semana-perfeita-8', 8, 'Velas acesas', '8', 'ouro', 'Feche 8 semanas com a meta do Cronograma cumprida em todos os dias de estudo.'],
+    ['semana-perfeita-20', 20, 'Sete velas', '20', 'esmeralda', 'Feche 20 semanas perfeitas no Cronograma.'],
+    ['semana-perfeita-40', 40, 'Relojoeiro do reino', '40', 'lendario', 'Feche 40 semanas perfeitas no Cronograma.'],
   ]),
   ...familia('nacional', 'nacionalSeguidas', [
     ['nacional-3', 3, 'Presença confirmada', '3', 'ouro', 'Entregue no tempo 3 edições seguidas do Simulado Nacional.'],
@@ -493,11 +574,17 @@ export const EMBLEMAS: readonly Emblema[] = [
   ...familia('bibAbertos', 'bibAbertos', [
     ['bib-abertos-1', 1, 'Primeira página', '1', 'bronze', 'Abra o seu primeiro resumo na Biblioteca.'],
     ['bib-abertos-5', 5, 'Frequentador da biblioteca', '5', 'prata', 'Abra 5 resumos diferentes da Biblioteca.'],
+    ['bib-abertos-25', 25, 'Explorador de estantes', '25', 'ouro', 'Abra 25 resumos diferentes da Biblioteca.'],
+    ['bib-abertos-75', 75, 'Leitor voraz', '75', 'esmeralda', 'Abra 75 resumos diferentes da Biblioteca.'],
+    ['bib-abertos-150', 150, 'Senhor das estantes', '150', 'lendario', 'Abra 150 resumos diferentes da Biblioteca.'],
   ]),
   ...familia('bibConcluidos', 'bibConcluidos', [
     ['bib-concluidos-1', 1, 'Capítulo vencido', '1', 'prata', `Leia um resumo até o fim, com pelo menos ${CONCLUIR_MINIMO_S / 60} minutos de leitura nele.`],
     ['bib-concluidos-3', 3, 'Estante em ordem', '3', 'ouro', `Leia 3 resumos diferentes até o fim, com pelo menos ${CONCLUIR_MINIMO_S / 60} minutos de leitura em cada.`],
     ['bib-concluidos-7', 7, 'Prateleira completa', '7', 'esmeralda', `Leia 7 resumos diferentes até o fim, com pelo menos ${CONCLUIR_MINIMO_S / 60} minutos de leitura em cada.`],
+    ['bib-concluidos-20', 20, 'Estante do mestre', '20', 'esmeralda', `Leia 20 resumos diferentes até o fim, com pelo menos ${CONCLUIR_MINIMO_S / 60} minutos de leitura em cada.`],
+    ['bib-concluidos-50', 50, 'Torre dos tomos', '50', 'lendario', 'Leia 50 resumos diferentes até o fim.'],
+    ['bib-concluidos-120', 120, 'Biblioteca de Alexandria', '120', 'mitico', 'Leia 120 resumos diferentes até o fim.'],
   ]),
   ...familia('bibTempo', 'bibMinutos', [
     ['bib-tempo-30', 30, 'Meia hora de estudo', '30m', 'bronze', 'Leia os resumos por 30 minutos. Só conta o tempo com o leitor aberto e você lendo.'],
@@ -527,6 +614,9 @@ export const EMBLEMAS: readonly Emblema[] = [
   ], true),
   ...familia('secretas', 'vespera', [
     ['secreta-vespera', 1, 'Véspera', 'D-1', 'esmeralda', `Na véspera da prova teórica do TEOT, conclua uma sessão de ${VESPERA_QUESTOES} questões com ${VESPERA_ACERTO * 100}% de acerto.`],
+  ], true),
+  ...familia('secretas', 'maoDeOuro', [
+    ['secreta-mao-de-ouro', 30, 'Mãos de ouro', 'M', 'esmeralda', `Acerte ${MAO_SEGUIDOS} questões de mão e punho seguidas, sem errar nenhuma no meio.`],
   ], true),
   ...familia('secretas', 'wolff', [
     ['secreta-wolff', 6, 'Lei de Wolff', 'W', 'esmeralda', `Estude 6 semanas seguidas, cada uma com mais questões que a anterior, começando com pelo menos ${WOLFF_PRIMEIRA_SEMANA}.`],
@@ -664,6 +754,26 @@ export interface Metricas {
   bibMinutos: number
   bibDias: number
   bibCoruja: number
+  /** Maior sequência de dias (a fogueira) já feita: não se perde quando a fogueira apaga. */
+  fogueiraRecorde: number
+  /** Maior sequência de dias com LABAREDA_QUESTOES questões ou mais. */
+  labareda: number
+  /** Questões diferentes de cirurgia da mão (grupo de prova "mao"). */
+  mao: number
+  /** Acertos nas questões dos OrtoQuestões Simulados da mão. */
+  simuladosMao: number
+  /** Acertos nas questões do TEOT. */
+  teot: number
+  /** Questões diferentes das provas regionais (PROVAS_REGIONAIS). */
+  bancas: number
+  /** Dias com a meta do Cronograma cumprida (servidor). */
+  cronogramaDias: number
+  /** Semanas encerradas com a meta cumprida em todos os dias de estudo (servidor). */
+  semanaPerfeita: number
+  /** Respondeu todas as questões válidas do acervo. */
+  zerou: number
+  /** Secreta: maior sequência de acertos no tema mão e punho. */
+  maoDeOuro: number
   /** Emblemas já conquistados e travados no servidor: não se perdem. */
   travadas?: ReadonlySet<string>
   /** Porcentagem de acerto na primeira tentativa (0 enquanto houver menos de APROVEITAMENTO_MINIMO questões). */
@@ -700,6 +810,14 @@ export interface DadosAcervo {
   /** Questões de cada tema (sem anuladas e cópias), para o New Game+. */
   totalTema?: ReadonlyMap<string, number>
   anuladas?: ReadonlySet<string>
+  /** Questões válidas (sem anuladas e cópias), para o "Zerou". */
+  validas?: ReadonlySet<string>
+  /** Questões dos OrtoQuestões Simulados da mão. */
+  simuladoMao?: ReadonlySet<string>
+  /** Questões do TEOT. */
+  teot?: ReadonlySet<string>
+  /** Questões das provas regionais. */
+  regionais?: ReadonlySet<string>
 }
 export interface Extras {
   favoritas?: number
@@ -747,7 +865,8 @@ function maiorSeguidos<T>(lista: readonly T[], ok: (x: T) => boolean): number {
 /** Métricas que vêm do servidor (RPC meus_feitos); zero enquanto não houver dados. */
 function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) {
   const zero = { pontual: 0, filaZerada: 0, cronograma: 0, cronogramaCompleto: 0, nacionalSeguidas: 0, nacionalElite: 0, nacionalCampeao: 0,
-    arenaCampeao: 0, arenaPodio: 0, arenaReinado: 0, indicadosAssinantes: 0, indicados30: 0, relatosResolvidos: 0, comentariosAvaliados: 0, contraCorrente: 0 }
+    arenaCampeao: 0, arenaPodio: 0, arenaReinado: 0, indicadosAssinantes: 0, indicados30: 0, relatosResolvidos: 0, comentariosAvaliados: 0, contraCorrente: 0,
+    cronogramaDias: 0, semanaPerfeita: 0 }
   if (!f) return zero
   const folgas = f.plano?.folgas ?? []
   const metas = f.dias?.meta_cronograma ?? []
@@ -786,6 +905,8 @@ function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) 
     pontual: maiorSequencia(f.dias?.questao_do_dia ?? []),
     filaZerada: maiorSequencia(f.dias?.fila_zerada ?? []),
     cronograma: maiorSequencia(metas, folgas),
+    cronogramaDias: new Set(metas).size,
+    semanaPerfeita: semanasPerfeitas(metas, folgas, hoje),
     cronogramaCompleto,
     nacionalSeguidas: maiorSeguidos(f.simulado_edicoes ?? [], (e) => participou.has(e)),
     nacionalElite: contam.some((p) => p.posicao <= Math.max(1, Math.floor(p.classificados / 10))) ? 1 : 0,
@@ -799,6 +920,23 @@ function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) 
     comentariosAvaliados: Number(f.comentarios_avaliados) || 0,
     contraCorrente: Number(f.contra_corrente) || 0,
   }
+}
+/**
+ * Semanas perfeitas do Cronograma: semanas já encerradas (segunda a domingo) em que todos os
+ * dias que não são folga do plano tiveram a meta cumprida. A semana corrente ainda não conta.
+ */
+export function semanasPerfeitas(metas: readonly string[], folgas: readonly number[], hoje: string): number {
+  const feitos = new Set(metas.map(numeroDia))
+  const semanaAtual = Math.floor((numeroDia(hoje) + 3) / 7)
+  const semanas = new Set([...feitos].map((d) => Math.floor((d + 3) / 7)))
+  let perfeitas = 0
+  for (const s of semanas) {
+    if (s >= semanaAtual) continue
+    let ok = true
+    for (let d = s * 7 - 3; ok && d < s * 7 + 4; d++) if (!folgas.includes(diaDaSemana(d)) && !feitos.has(d)) ok = false
+    if (ok) perfeitas++
+  }
+  return perfeitas
 }
 /** Semana (segunda a domingo) dos dias de São Paulo, contada desde 1970. */
 function semanaDe(em: number) {
@@ -828,7 +966,7 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
   const porDia = new Map<string, number>()
   const eventos: Array<{ em: number; correta: boolean | null; tema: string; confianca?: string }> = []
   const acervo = extras.acervo
-  let pseudartrose = 0, imagem = 0
+  let pseudartrose = 0, imagem = 0, simuladosMao = 0, teot = 0, bancas = 0, validas = 0
   const porAssunto = new Map<number, { r: number; c: number }>()
   const porProvaAno = new Map<string, number>()
   const primeirasTema = new Map<string, { n: number; c: number }>()
@@ -862,6 +1000,10 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     if ((registro.erros ?? 0) >= PSEUDARTROSE_ERROS && dominada(registro)) pseudartrose++
     if (acervo && registro.c !== null && registro.c !== undefined) {
       if (registro.c === true && acervo.imagem.has(id)) imagem++
+      if (registro.c === true && acervo.simuladoMao?.has(id)) simuladosMao++
+      if (registro.c === true && acervo.teot?.has(id)) teot++
+      if (acervo.regionais?.has(id)) bancas++
+      if (acervo.validas?.has(id)) validas++
       for (const s of acervo.subtemas.get(id) ?? []) {
         const a = porAssunto.get(s) ?? { r: 0, c: 0 }
         a.r++
@@ -928,6 +1070,7 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     if (e.correta) d.c++
     diaStats.set(k, d)
   }
+  const labareda = maiorSequencia([...porDia].filter(([, q]) => q >= LABAREDA_QUESTOES).map(([k]) => k))
   const runSemDano = maiorSequencia([...diaStats].filter(([, d]) => d.n >= META_STREAK_DIARIA && d.c >= RUN_ACERTO * d.n).map(([k]) => k))
   // Curva de aprendizado: primeiras e últimas questões respondidas pela primeira vez.
   primeirasNoTempo.sort((a, b) => a.em - b.em)
@@ -983,6 +1126,7 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     }
   }
   const revisao = resumoRevisoes(respondidas)
+  const fogueira = calcularStreak(respondidas, agora)
   return {
     revisoes: revisao.total,
     constancia: sequenciaRevisao(revisao.porDia, { diasZerados: extras.servidor?.dias?.fila_zerada ?? [], folgas: extras.folgasRevisao ?? [] }, agora).maior,
@@ -994,7 +1138,16 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     ...extras.biblioteca,
     questoes: Object.keys(respondidas).length,
     // A sequência vale enquanto está viva: perdeu, o emblema some e recomeça do zero.
-    sequencia: calcularStreak(respondidas, agora).atual,
+    sequencia: fogueira.atual,
+    // O recorde fica: é a maior fogueira já acesa.
+    fogueiraRecorde: fogueira.recorde,
+    labareda,
+    mao: porProva.mao ?? 0,
+    simuladosMao,
+    teot,
+    bancas,
+    zerou: acervo?.validas?.size && validas >= acervo.validas.size ? 1 : 0,
+    maoDeOuro: seguidosTema.mao ?? 0,
     dias: porDia.size,
     acertos,
     dominadas: dominadasTotal,
@@ -1060,8 +1213,8 @@ export function valorDe(emblema: Emblema, metricas: Metricas): number {
 export const desbloqueado = (emblema: Emblema, metricas: Metricas): boolean =>
   (emblema.familia !== 'sequencia' && !!metricas.travadas?.has(emblema.id)) || valorDe(emblema, metricas) >= emblema.minimo
 
-/** Entra na Platina: tudo o que não é secreto, menos a sequência (que pode se perder) e a própria Platina. */
-const contaParaPlatina = (e: Emblema) => !e.secreta && e.familia !== 'sequencia' && !ehFamiliaFlashcards(e.familia) && !ehFamiliaBiblioteca(e.familia) && e.id !== 'chefe-platina'
+/** Entra na Platina: tudo o que não é secreto nem mítico, menos a sequência (que pode se perder) e a própria Platina. */
+const contaParaPlatina = (e: Emblema) => !e.secreta && e.nivel !== 'mitico' && e.familia !== 'sequencia' && !ehFamiliaFlashcards(e.familia) && !ehFamiliaBiblioteca(e.familia) && e.id !== 'chefe-platina'
 /** Famílias dos Flashcards (produto à parte, em beta): ficam fora da Platina. */
 export const ehFamiliaFlashcards = (f: FamiliaId) => f.startsWith('fc')
 /** Famílias da Biblioteca de Resumos (em beta, 16/10/2026): também ficam fora da Platina. */
@@ -1073,7 +1226,7 @@ export function completarMetricas(metricas: Metricas): Metricas {
 }
 
 /** Famílias de contagem simples, em que "faltam N" se lê sem explicação (página inicial, "Quase lá"). */
-const FAMILIAS_QUASE_LA: ReadonlySet<FamiliaId> = new Set(['questoes', 'sequencia', 'dias', 'acertos', 'dominadas', 'sessoes', 'redencao', 'revisoes', 'imagem', 'constancia', 'colecao', 'anotacoes', 'bibMarcas', 'bibConcluidos', 'bibDias'])
+const FAMILIAS_QUASE_LA: ReadonlySet<FamiliaId> = new Set(['questoes', 'sequencia', 'dias', 'acertos', 'dominadas', 'sessoes', 'redencao', 'revisoes', 'imagem', 'constancia', 'colecao', 'anotacoes', 'bibMarcas', 'bibConcluidos', 'bibDias', 'mao', 'simuladosMao', 'teot', 'bancas', 'cronogramaDias'])
 
 export interface QuaseLa { emblema: Emblema; valor: number; falta: number; fracao: number; texto: string }
 

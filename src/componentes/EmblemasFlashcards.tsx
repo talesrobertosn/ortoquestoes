@@ -2,7 +2,7 @@ import { EMBLEMAS, emblemaPorId, ehFamiliaFlashcards, podeIrParaVitrine, VITRINE
 import { Dica } from './Inventario'
 import { Medalha } from './Medalha'
 
-const PESO: Record<NivelMedalha, number> = { bronze: 1, prata: 2, ouro: 3, esmeralda: 4, lendario: 5 }
+const PESO: Record<NivelMedalha, number> = { bronze: 1, prata: 2, ouro: 3, esmeralda: 4, lendario: 5, mitico: 6 }
 const ORDEM = new Map(EMBLEMAS.map((e, i) => [e.id, i]))
 
 /** O emblema de Flashcards mais alto entre os conquistados (nível e, no empate, o mais adiante na família). */

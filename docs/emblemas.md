@@ -155,6 +155,39 @@ Leitura ativa: aba visível, leitor aberto e alguém mexendo nele (rolar, tocar,
 (`src/biblioteca/tempoLeitura.ts`). Ideias que ficaram para depois: ler as "Frases que caem" e ler o
 resumo antes das questões do dia.
 
+## Feitos em 23/11/2026: marcos de 9 mil questões, fogo, cronograma, mão, TEOT e bancas
+
+Pedido do Tales: o acervo passou de 9.700 questões (a régua parava em 4 mil) e já há quem tenha feito
+5 mil. Mais emblemas de fogueira, de quem segue bem o Cronograma, de leitura dos resumos, de cirurgia
+da mão (simulados da mão), da prova teórica e das provas regionais, chamativos de propósito.
+
+**Nível novo: Mítico** (`mitico`), acima do lendário: brasa carmim e ouro, com aura prismática na arte
+(`aura_prisma`), moldura que gira devagar no inventário (`.inv-item--mitico`, parada com movimento
+reduzido) e halo de arco-íris na comemoração. **Fica fora da Platina**: a Platina não muda de alvo
+cada vez que o acervo cresce. Usar só para marcos que quase ninguém alcança.
+
+| Família | Níveis | Regra | Arte |
+|---|---|---|---|
+| Questões (novos) | 5k e 6k lendário; 7k, 8k e 9k mítico | Questões diferentes | Medalha com "5K"…"9K": louros, coroa, asas, sol e gemas a cada mil |
+| Acertos (novo) | 6k mítico | Acertos | Escudo com asas e sol |
+| Chefões: Zerou o Orto Questões | mítico | Todas as questões válidas do acervo respondidas (anuladas e cópias fora); travado, não se perde quando chegam questões novas | Coroa prismática na almofada |
+| Sequência (novos) | 21 prata, 150 ouro, 250 esmeralda, 500 e 730 mítico | Dias seguidos com a meta diária | Tochas cruzadas, pira, coroa de chamas, sol de chamas, cálice da chama imortal |
+| Fogueira recorde | 30, 100, 200, 365 | A maior sequência já feita (`calcularStreak().recorde`): fica mesmo se a fogueira apagar | Braseiro de ferro (pedestal, asas, coroa) |
+| Labareda | 3, 7, 14, 30 dias | Dias seguidos com 50+ questões | Lareira com 1, 2 e 3 chamas; chifres de dragão no lendário |
+| Fiel ao cronograma | 15, 45, 90, 180, 300 | Dias com a meta do Cronograma cumprida, seguidos ou não (servidor) | Bússola |
+| Semana perfeita | 2, 8, 20, 40 | Semanas encerradas (segunda a domingo) com a meta em todos os dias que não são folga (servidor; `semanasPerfeitas`) | Sete velas acesas |
+| Resumos abertos (novos) | 25 ouro, 75 esmeralda, 150 lendário | Resumos diferentes abertos (258 no acervo) | Tomo no atril, páginas voando, runas |
+| Resumos concluídos (novos) | 20 esmeralda, 50 lendário, 120 mítico | Lidos até o fim | Estante, torre de tomos, Biblioteca de Alexandria |
+| Cirurgia da mão | 750, 1.500, 3.000 | Questões diferentes do grupo de prova `mao` (simulados da mão, ENARE mão, tema mão) | Manopla de armadura |
+| Simulados da mão | 150, 500, 1.000, 1.600 | Acertos nas questões dos OrtoQuestões Simulados da mão (`sim` e área mão) | Escudo do cavaleiro com a manopla |
+| Prova teórica do TEOT | 100, 250, 400, 520 | Acertos em questões do TEOT (570 no acervo) | Tomo do título com lacre |
+| Provas pelo Brasil | 150, 400, 800, 1.300 | Questões das provas regionais (`PROVAS_REGIONAIS`: USP-SP, SBOT-SP, UFG, PUC-SP, CET-PR, INTO, Einstein, FMRP-USP, IAUPE, UERJ, R4 Coluna) | Mapa com bandeirinhas fincadas |
+| Secreta: Mãos de ouro | esmeralda | 30 acertos seguidos no tema mão e punho | Manopla dourada com raios |
+
+Nos textos, nunca as siglas das provas de mão: "Simulados da mão". Quando o acervo crescer, criar
+níveis acima (sem endurecer os atuais); `PROVAS_REGIONAIS` recebe as bancas regionais novas.
+Nada disso precisa de SQL: as métricas do Cronograma vêm de `meus_feitos` (já existente).
+
 ## Banco de ideias (brainstorm, ainda não decidido)
 
 **Aproveitamento**

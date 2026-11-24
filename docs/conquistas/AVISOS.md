@@ -59,6 +59,6 @@ Testes devem usar métricas verdadeiras e interfaces isoladas do Supabase. Não 
 
 ## Verificações desta entrega
 
-- Motor: cobertura dinâmica dos 229 emblemas/55 famílias existentes, PNGs e registros de arte, perfil por família, segredos, importação silenciosa, agrupamento, novas metas, metas distantes, teto, pausa, retorno entre contextos, valores reconferidos e reinício.
+- Motor: cobertura dinâmica de todos os emblemas e famílias (280/63 em 23/11/2026, com o nível mítico), PNGs e registros de arte, perfil por família, segredos, importação silenciosa, agrupamento, novas metas, metas distantes, teto, pausa, retorno entre contextos, valores reconferidos e reinício.
 - Navegador com Supabase simulado: resposta pela UI aos 47/50, comemoração aos 50, link para a medalha exata, reload, meta de 900/1.000, preferência desligada, origem validada de andar, Conselho editorial confirmado, troca de conta sem recarregar, galeria por cenário, 320–1920 px, título longo, temas claro/escuro e movimento reduzido.
 - Nenhuma conta real ou medalha de produção foi alterada para produzir os testes e capturas. A integração usa as APIs e condições já existentes; não requer nova migração SQL.

@@ -8,7 +8,7 @@ import type { MetaProxima } from './motorAvisos'
 import './avisos.css'
 
 export type AvisoConquista = { tipo: 'ganha'; emblema: Emblema; outras: number } | { tipo: 'perto'; emblema: Emblema; meta: MetaProxima }
-const METAIS = { bronze: 'Bronze', prata: 'Prata', ouro: 'Ouro', esmeralda: 'Esmeralda', lendario: 'Lendário' }
+const METAIS = { bronze: 'Bronze', prata: 'Prata', ouro: 'Ouro', esmeralda: 'Esmeralda', lendario: 'Lendário', mitico: 'Mítico' }
 
 /** Mesmo componente no site e nas prévias: a expectativa nunca reutiliza a medalha da comemoração. */
 export function CartaoConquista({ aviso, fechar, saindo = false }: { aviso: AvisoConquista; fechar: () => void; saindo?: boolean }) {

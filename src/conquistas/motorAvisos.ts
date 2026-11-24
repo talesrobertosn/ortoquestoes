@@ -13,7 +13,7 @@ export interface EstadoAvisos {
   metas: { contexto: string; ids: string[]; em: number; atividades: number }
 }
 export interface MetaProxima { emblema: Emblema; valor: number; falta: number; texto: string; distante: boolean }
-export const PESO_NIVEL: Record<NivelMedalha, number> = { bronze: 1, prata: 2, ouro: 3, esmeralda: 4, lendario: 5 }
+export const PESO_NIVEL: Record<NivelMedalha, number> = { bronze: 1, prata: 2, ouro: 3, esmeralda: 4, lendario: 5, mitico: 6 }
 
 export function estadoInicial(geracao = 0): EstadoAvisos {
   return { conhecidas: [], pendentes: [], geracao, metasPorContexto: {}, metas: { contexto: '', ids: [], em: 0, atividades: 0 } }

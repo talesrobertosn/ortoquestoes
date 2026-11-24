@@ -1771,15 +1771,428 @@ FORMAS.update({
 })
 
 
+# ================= Emblemas novos (23/11/2026): marcos de 5 a 9 mil, fogo, cronograma, mão, TEOT, bancas =================
+# Pedido do Tales: o acervo passou de 9 mil questões e há quem já tenha feito 5 mil. Nível novo
+# "mítico" (acima do lendário): brasa carmim e ouro, com aura prismática. Mesmo RPG medieval.
+METAIS["mitico"] = ["#2b0610", "#8a1238", "#e0475a", "#ffb26b", "#fff3c4"]
+CHAMAS["mitico"] = ["#e11d48", "#fbbf24", "#fffbeb"]
+RUNA["mitico"] = "#fff3c4"
+PRISMA = ["#ff7a45", "#ffd36b", "#7ee0c3", "#8fb8ff", "#d59bff", "#ff8ad0"]
+FERRO = ["#111418", "#2f353b", "#4b535b", "#7a848d", "#c3cad1"]
+DIGITOS.update({
+    "1": ["010", "110", "010", "010", "111"], "2": ["111", "001", "111", "100", "111"], "3": ["111", "001", "111", "001", "111"],
+    "4": ["101", "101", "111", "001", "001"], "5": ["111", "100", "111", "001", "111"], "K": ["101", "110", "100", "110", "101"],
+})
+
+
+def aura_prisma(t: Tela) -> None:
+    """Aura do mítico: o contorno de fora troca de cor conforme o ângulo, como um arco-íris."""
+    cheio = {(x, y) for y in range(N) for x in range(N) if t.px[y][x] is not None}
+    for raio, alfa in ((1, 190), (2, 90)):
+        borda = set()
+        for (x, y) in cheio:
+            for dx in range(-raio, raio + 1):
+                for dy in range(-raio, raio + 1):
+                    v = (x + dx, y + dy)
+                    if v not in cheio and 0 <= v[0] < N and 0 <= v[1] < N and abs(dx) + abs(dy) <= raio + 1:
+                        borda.add(v)
+        for (x, y) in borda:
+            if t.px[y][x] is None:
+                ang = (math.degrees(math.atan2(y + 0.5 - 16, x + 0.5 - 16)) + 360) % 360
+                t.ponto(x, y, hexa(PRISMA[int(ang // 60) % 6], alfa))
+        cheio |= borda
+
+
+def raios_sol(t: Tela, cx: float, cy: float, r0: float, r1: float, n: int, cores: tuple[str, str]) -> None:
+    for i in range(n):
+        a = 2 * math.pi * i / n - math.pi / 2
+        t.pintar(linha(cx + math.cos(a) * r0, cy + math.sin(a) * r0, cx + math.cos(a) * r1, cy + math.sin(a) * r1, 1.2 if i % 2 == 0 else 0.6), cores[i % 2])
+
+
+def asas(t: Tela, rampa: list[str], cy: float = 17, escala: float = 1.0) -> None:
+    asa = poligono([(12, cy), (12 - 11 * escala, cy - 9 * escala), (12 - 9.5 * escala, cy - 4 * escala), (12 - 12 * escala, cy - 2 * escala),
+                    (12 - 8 * escala, cy + 2 * escala), (12 - 10 * escala, cy + 5 * escala), (12 - 3 * escala, cy + 6 * escala), (12, cy + 4)])
+    t.camada(asa, rampa)
+    t.camada({(N - 1 - x, y) for (x, y) in asa}, rampa)
+    for k in range(3):
+        y = cy - 4 + k * 3.5
+        t.pintar(linha(12 - 9 * escala, y - 1, 11, y + 1, 0.5), rampa[1])
+        t.pintar(linha(19 + 9 * escala, y - 1, 20, y + 1, 0.5), rampa[1])
+
+
+def coroa_pequena(t: Tela, cx: float, y: float, rampa: list[str], larg: float = 9, joia: str = "#d33a3a") -> None:
+    m = larg / 2
+    t.camada(poligono([(cx - m, y + 5), (cx - m, y), (cx - m / 2, y + 2.5), (cx, y - 1), (cx + m / 2, y + 2.5), (cx + m, y), (cx + m, y + 5)]), rampa)
+    t.pintar(circulo(cx, y + 3.2, 1.1), joia)
+
+
+def marco_grande(t: Tela, nivel: str, degrau: int) -> None:
+    """Questões de 5 a 9 mil: a medalha que ganha louros, coroa, asas, sol e gemas a cada mil."""
+    k = max(0, degrau - 8)
+    if k >= 3:
+        raios_sol(t, 16, 18, 9, 15.5, 16, ("#ffd36b", "#ff7a45"))
+    if k >= 2:
+        asas(t, METAIS["ouro"] if k == 2 else ["#2b0610", "#b45309", "#fbbf24", "#fde68a", "#fffbeb"], 18, 1.05)
+    fita = ("#7b3fa0", "#b3423a", "#c2417a", "#1f7a4d", "#2b5fa8")[k]
+    escura = _hex(misturar(hexa(fita), hexa("#000000"), 0.45))
+    t.camada(poligono([(9, 1), (13, 1), (16, 10), (12, 10)]), [escura, escura, fita, fita, fita])
+    t.camada(poligono([(19, 1), (23, 1), (20, 10), (16, 10)]), [escura, escura, fita, fita, fita])
+    if k <= 1:
+        louros(t, 16, 19, 11.5)
+    t.camada(circulo(16, 19, 9.5), METAIS[nivel])
+    t.camada(circulo(16, 19, 6.8), METAIS[nivel], contorno=False)
+    t.pintar(circulo(16, 19, 6.8) - circulo(16, 19, 6.0), METAIS[nivel][1])
+    texto_pixel(t, f"{5 + k}K", 13, 17, "#fff8e6")
+    if k >= 1:
+        coroa_pequena(t, 16, 5.5, METAIS["ouro"], 10, ("#d33a3a", "#2b5fa8", "#1f7a4d", "#7b3fa0")[k - 1])
+    if k >= 4:
+        for i, (x, y) in enumerate(((5, 26), (27, 26), (16, 30), (3, 13), (29, 13))):
+            t.camada(circulo(x, y, 1.6), ["#1c0633", PRISMA[i], PRISMA[i], "#ffffff", "#ffffff"])
+    t.brilho(12, 15)
+
+
+def escudo_mitico(t: Tela, nivel: str, degrau: int) -> None:
+    """Acertos 6 mil: o escudo com asas e sol por trás."""
+    raios_sol(t, 16, 16, 8, 15.5, 14, ("#ffd36b", "#ff7a45"))
+    asas(t, METAIS["ouro"], 14, 0.9)
+    forma = poligono([(7, 5), (25, 5), (25, 14), (22.5, 21), (16, 27.5), (9.5, 21), (7, 14)])
+    t.camada(forma, METAIS[nivel])
+    t.camada(poligono([(10, 8), (22, 8), (22, 14), (20, 19), (16, 23.5), (12, 19), (10, 14)]), ["#0b3a35", "#14655e", "#1f7a6d", "#2b9583", "#7fd3c2"], contorno=False)
+    t.camada(linha(12, 14.5, 15, 18, 2.0) | linha(15, 18, 20.5, 11, 2.0), ["#0d3b1f", "#e8f7ee", "#ffffff", "#ffffff", "#ffffff"], contorno=False)
+    coroa_pequena(t, 16, 0.5, METAIS["ouro"], 9, "#8fb8ff")
+
+
+# ---- fogueira: sequências novas ----
+def tocha_em(t: Tela, nivel: str, x0: float, y0: float, x1: float, y1: float) -> None:
+    t.camada(linha(x0, y0, x1, y1, 2.2), MADEIRA)
+    t.camada(circulo(x1, y1, 2.3), METAIS[nivel])
+    chama_livre(t, nivel, x1, y1 - 1, 9, 7)
+
+
+def seq_tochas_cruzadas(t: Tela, nivel: str, degrau: int) -> None:
+    t.camada(poligono([(9, 22), (23, 22), (26, 30), (6, 30)]), PEDRA)
+    t.pintar(retangulo(8, 25, 24, 25), PEDRA[1])
+    tocha_em(t, nivel, 23, 28, 10, 13)
+    tocha_em(t, nivel, 9, 28, 22, 13)
+    t.camada(poligono([(13, 22), (16, 18.5), (19, 22), (16, 25.5)]), METAIS["ouro"])
+
+
+def seq_pira(t: Tela, nivel: str, degrau: int) -> None:
+    t.camada(retangulo(9, 26, 22, 30), PEDRA)
+    t.camada(retangulo(11, 19, 20, 26), PEDRA)
+    for x in (11, 15, 19):
+        t.pintar(retangulo(x, 22, x, 22), PEDRA[1])
+    t.camada(poligono([(5, 14), (27, 14), (23, 20), (9, 20)]), METAIS[nivel])
+    t.pintar(retangulo(7, 15, 25, 15), METAIS[nivel][4])
+    for x in (8, 13, 18, 23):
+        t.camada(circulo(x + 0.5, 17.5, 1.1), VERMELHO, contorno=False)
+    chama_livre(t, nivel, 16, 15, 14, 18)
+    for (x, y) in ((6, 5), (26, 7), (21, 2)):
+        t.camada(circulo(x, y, 1.0), LAVA, contorno=False)
+
+
+def seq_coroa_chamas(t: Tela, nivel: str, degrau: int) -> None:
+    for cx, h in ((7, 10), (16, 15), (25, 10)):
+        chama_livre(t, nivel, cx, 18, h, 7)
+    corpo = poligono([(4, 14), (10, 20), (16, 12), (22, 20), (28, 14), (26, 28), (6, 28)])
+    t.camada(corpo, METAIS["ouro"])
+    t.camada(retangulo(6, 24, 26, 28), METAIS["ouro"])
+    for i, x in enumerate((10, 16, 22)):
+        t.camada(circulo(x + 0.5, 26, 1.6), [METAIS["esmeralda"], AZUL, VERMELHO][i % 3][:1] + [METAIS["esmeralda"], AZUL, VERMELHO][i % 3][1:], contorno=False)
+    t.brilho(12, 19)
+
+
+def seq_sol(t: Tela, nivel: str, degrau: int) -> None:
+    """500 dias: o sol que não se põe, com raios de chama."""
+    externa, meio, nucleo = CHAMAS[nivel]
+    for i in range(12):
+        a = 2 * math.pi * i / 12
+        cx, cy = 16 + math.cos(a) * 11, 16 + math.sin(a) * 11
+        ponta = (16 + math.cos(a) * 15.5, 16 + math.sin(a) * 15.5)
+        lado = (math.cos(a + math.pi / 2) * 2.4, math.sin(a + math.pi / 2) * 2.4)
+        t.camada(poligono([(cx + lado[0], cy + lado[1]), ponta, (cx - lado[0], cy - lado[1])]), [externa, externa, meio, nucleo, nucleo], contorno=False)
+    t.camada(circulo(16, 16, 10.5), METAIS[nivel])
+    t.camada(circulo(16, 16, 7.5), ["#7a1d0c", "#e2491d", "#fbbf24", "#fde68a", "#fffbeb"], contorno=False)
+    chama_livre(t, nivel, 16, 21, 11, 9)
+    texto_pixel(t, "500", 10, 23, "#fff3c4") if False else None
+    t.brilho(12, 11)
+
+
+def seq_imortal(t: Tela, nivel: str, degrau: int) -> None:
+    """730 dias: o cálice com a chama de três cores que nunca apagou, entre asas."""
+    asas(t, METAIS["mitico"], 15, 1.0)
+    t.camada(poligono([(9, 14), (23, 14), (21, 20), (17.5, 22), (14.5, 22), (11, 20)]), METAIS["ouro"])
+    t.camada(retangulo(14, 22, 17, 26) | poligono([(9, 30), (23, 30), (20, 26), (12, 26)]), METAIS["ouro"])
+    for (x, c) in ((12, "#8fb8ff"), (16, "#e0475a"), (20, "#7ee0c3")):
+        t.camada(circulo(x + 0.5, 17, 1.3), [c, c, c, "#ffffff", "#ffffff"], contorno=False)
+    chama_livre(t, "lendario", 16, 14, 13, 13)
+    chama_livre(t, "mitico", 16, 14, 10, 9)
+    chama_livre(t, "esmeralda", 16, 14, 5, 4)
+    t.pintar(retangulo(10, 14, 22, 14), "#fff4cf")
+
+
+# ---- fogueira recorde: o braseiro de ferro, cada vez mais nobre ----
+def braseiro(t: Tela, nivel: str, degrau: int) -> None:
+    if degrau >= 2:
+        asas(t, METAIS[nivel], 19, 0.85)
+    t.camada(linha(10, 22, 7, 30, 1.6) | linha(22, 22, 25, 30, 1.6) | linha(16, 22, 16, 30, 1.6), FERRO)
+    if degrau >= 1:
+        t.camada(retangulo(5, 29, 27, 31), PEDRA)
+    chama_livre(t, nivel, 16, 15, 9 + degrau * 2, 12 + degrau)
+    t.camada(poligono([(5, 14), (27, 14), (24, 21), (19, 23), (13, 23), (8, 21)]), METAIS[nivel])
+    t.pintar(retangulo(6, 15, 26, 15), METAIS[nivel][4])
+    for x in (9, 13, 17, 21):
+        t.pintar(retangulo(x, 18, x + 1, 19), METAIS[nivel][1])
+    t.camada(circulo(16, 18.5, 1.8), VERMELHO if degrau < 3 else ["#1c0633", "#8448cf", "#b98cf0", "#f3e6ff", "#ffffff"])
+    if degrau >= 3:
+        coroa_pequena(t, 16, 1, METAIS["ouro"], 8, "#7ee0c3")
+
+
+# ---- labareda: a lareira de pedra com uma, duas, três chamas; no topo, os chifres do dragão ----
+def lareira(t: Tela, nivel: str, degrau: int) -> None:
+    arco = retangulo(3, 6, 28, 30) - (circulo(16, 15, 9) | retangulo(7, 15, 24, 28))
+    t.camada(arco, PEDRA)
+    for (x, y) in ((5, 10), (26, 12), (5, 20), (26, 22), (9, 7), (22, 7)):
+        t.pintar(retangulo(x - 1, y, x + 1, y), PEDRA[1])
+    t.pintar(circulo(16, 15, 9) & retangulo(7, 6, 24, 15) | retangulo(7, 15, 24, 28), "#1a0f0a")
+    t.camada(retangulo(8, 25, 23, 27), MADEIRA)
+    chamas = [(16, 14, 11)] if degrau == 0 else [(12.5, 12, 8), (19.5, 12, 8)] if degrau == 1 else [(11, 10, 7), (16, 15, 9), (21, 10, 7)]
+    for (cx, h, l) in chamas:
+        chama_livre(t, nivel, cx, 25, h, l)
+    t.camada(retangulo(2, 4, 29, 6), METAIS[nivel])
+    if degrau >= 3:
+        for lado in (-1, 1):
+            t.camada(poligono([(16 + lado * 8, 4), (16 + lado * 13, -1), (16 + lado * 11, 4)]), METAIS["lendario"])
+        t.camada(circulo(16, 3, 2), ["#3b0a05", "#9a1c0c", "#e2491d", "#fb923c", "#fde68a"])
+
+
+# ---- cronograma: bússola e as sete velas ----
+def bussola(t: Tela, nivel: str, degrau: int) -> None:
+    if degrau >= 4:
+        t.camada(estrela_forma(16, 3.2, 3.2, 1.2), ["#3d2804", "#fff4cf", "#ffffff", "#ffffff", "#ffffff"])
+    t.camada(circulo(16, 17, 13), METAIS[nivel])
+    t.camada(circulo(16, 17, 10.5), PERGAMINHO, contorno=False)
+    if degrau >= 1:
+        for i in range(16):
+            a = 2 * math.pi * i / 16
+            t.ponto(int(16 + math.cos(a) * 9.5), int(17 + math.sin(a) * 9.5), hexa(PERGAMINHO[0]))
+    if degrau >= 2:
+        diag = poligono([(16, 17), (22, 11), (17.5, 17.5)]) | poligono([(16, 17), (10, 23), (14.5, 16.5)]) | poligono([(16, 17), (22, 23), (16.5, 18.5)]) | poligono([(16, 17), (10, 11), (15.5, 15.5)])
+        t.pintar(diag, METAIS[nivel][1])
+    t.camada(poligono([(16, 7.5), (18, 16), (16, 17), (14, 16)]), VERMELHO, contorno=False)
+    t.camada(poligono([(16, 26.5), (18, 18), (16, 17), (14, 18)]), FERRO, contorno=False)
+    t.pintar(poligono([(6.5, 17), (15, 15.5), (15, 18.5)]) | poligono([(25.5, 17), (17, 15.5), (17, 18.5)]), PERGAMINHO[0])
+    t.camada(circulo(16, 17, 1.6), METAIS["ouro"], contorno=False)
+    t.camada(retangulo(14, 2 if degrau < 4 else 5, 17, 4 if degrau < 4 else 6), METAIS[nivel])
+    if degrau >= 3:
+        for (x, y) in ((3, 17), (29, 17), (16, 30)):
+            t.camada(circulo(x, y, 1.5), METAIS["esmeralda"] if nivel != "lendario" else ["#1c0633", "#8448cf", "#b98cf0", "#f3e6ff", "#ffffff"])
+    t.brilho(10, 12)
+
+
+def sete_velas(t: Tela, nivel: str, degrau: int) -> None:
+    alturas = [9, 11, 13, 15, 13, 11, 9]
+    t.camada(retangulo(2, 25, 29, 27), METAIS[nivel])
+    t.camada(poligono([(8, 27), (24, 27), (21, 31), (11, 31)]), METAIS[nivel])
+    for i, h in enumerate(alturas):
+        x = 3 + i * 4
+        t.camada(retangulo(x, 25 - h, x + 2, 24), CREME)
+        t.pintar(retangulo(x, 25 - h, x + 2, 25 - h), "#fff3d6")
+        chama_livre(t, nivel, x + 1.5, 25 - h, 5 + (1 if degrau >= 2 else 0), 3.6)
+    if degrau >= 1:
+        for x in (4, 16, 28):
+            t.camada(circulo(x, 26, 1.1), VERMELHO if degrau < 3 else ["#1c0633", "#8448cf", "#b98cf0", "#f3e6ff", "#ffffff"], contorno=False)
+    if degrau >= 3:
+        t.camada(circulo(16, 3, 2.6), METAIS["ouro"])
+        t.pintar(linha(16, 3, 16, 1.5, 0.4) | linha(16, 3, 17.3, 3, 0.4), "#3d2804")
+
+
+# ---- biblioteca: os níveis novos dos abertos e dos concluídos ----
+def bib_abertos_grande(t: Tela, nivel: str, degrau: int) -> None:
+    """25, 75 e 150 resumos abertos: o tomo no atril, as páginas voando e as runas acesas."""
+    k = degrau - 2
+    t.camada(poligono([(13, 22), (19, 22), (21, 30), (11, 30)]), MADEIRA)
+    t.camada(poligono([(3, 15), (16, 18), (29, 15), (27, 24), (16, 26), (5, 24)]), VERDE_TOMO)
+    t.camada(poligono([(5, 13), (15.5, 15.5), (15.5, 23.5), (6, 21.5)]), CREME)
+    t.camada(poligono([(16.5, 15.5), (27, 13), (26, 21.5), (16.5, 23.5)]), CREME)
+    for j in range(3):
+        y = 17 + j * 2
+        t.pintar(linha(7, y - 1, 14, y + 0.4, 0.5), "#b39465")
+        t.pintar(linha(18, y + 0.4, 25, y - 1, 0.5), "#b39465")
+    folhas = [(7, 6), (23, 4)] if k == 0 else [(6, 7), (14, 3), (24, 5)] if k == 1 else [(4, 8), (10, 3), (20, 2), (27, 7)]
+    for i, (x, y) in enumerate(folhas):
+        t.camada(poligono([(x, y), (x + 4, y - 1), (x + 5, y + 3), (x + 1, y + 4)]), CREME)
+    if k >= 1:
+        t.camada(circulo(16, 10, 2.5), METAIS[nivel])
+    if k >= 2:
+        runas(t, nivel, [(9, 12), (23, 11), (16, 6)])
+    fita_marcador(t, 15, 24, 30, VERMELHO)
+
+
+def bib_estante(t: Tela, nivel: str, degrau: int) -> None:
+    """20, 50 e 120 resumos concluídos: estante cheia, torre de tomos e a grande biblioteca."""
+    k = degrau - 3
+    prateleiras = 2 + k if k < 2 else 3
+    topo = 30 - prateleiras * 8
+    if k == 2:
+        t.camada(poligono([(2, 8), (16, 0), (30, 8)]), METAIS[nivel])
+        t.camada(retangulo(2, 8, 4, 30) | retangulo(27, 8, 29, 30), PEDRA)
+    x0, x1 = (5, 26) if k == 2 else (4, 27)
+    t.camada(retangulo(x0, topo, x1, 30), MADEIRA)
+    for p in range(prateleiras):
+        base = 29 - p * 8
+        t.pintar(retangulo(x0 + 1, base - 6, x1 - 1, base), "#2a1608")
+        x = x0 + 1
+        i = p * 3
+        while x + 2 <= x1 - 1:
+            larg = 2 if (i % 3) else 3
+            h = (6, 5, 6, 4, 5)[i % 5]
+            t.camada(retangulo(x, base - h + 1, min(x + larg - 1, x1 - 1), base), LOMBADAS[i % len(LOMBADAS)], contorno=False)
+            t.ponto(x, base - h + 2, hexa("#e2ad45"))
+            x += larg
+            i += 1
+        t.pintar(retangulo(x0, base + 1 if base + 1 <= 30 else 30, x1, base + 1 if base + 1 <= 30 else 30), MADEIRA[3])
+    if k >= 1:
+        t.camada(estrela_forma(16, topo - 3, 3.2, 1.3), METAIS["ouro"])
+    t.brilho(x0 + 2, topo + 2)
+
+
+# ---- mão: a manopla de armadura ----
+def manopla(t: Tela, nivel: str, degrau: int, cx: float = 16, cy: float = 0, escala: float = 1.0) -> None:
+    def p(x: float, y: float) -> tuple[float, float]:
+        return (cx + (x - 16) * escala, cy + y * escala)
+    rampa = METAIS[nivel]
+    t.camada(poligono([p(10, 24), p(22, 24), p(23, 31), p(9, 31)]), rampa)
+    t.camada(poligono([p(9, 14), p(23, 14), p(24, 21), p(22, 25), p(10, 25), p(8, 20)]), rampa)
+    for i, (x, topo) in enumerate(((10, 6), (13.5, 3.5), (17, 3), (20.5, 5))):
+        t.camada(poligono([p(x - 1.5, 15), p(x - 1.5, topo + 1), p(x, topo), p(x + 1.5, topo + 1), p(x + 1.5, 15)]), rampa)
+        for y in (topo + 3, topo + 6, topo + 9):
+            if y < 14:
+                t.pintar(linha(*p(x - 1.2, y), *p(x + 1.2, y), 0.4), rampa[1])
+    t.camada(poligono([p(8, 19), p(4, 13), p(5, 11), p(9, 15)]), rampa)
+    t.pintar(linha(*p(10, 26.5), *p(22, 26.5), 0.5), rampa[4])
+    t.pintar(linha(*p(10, 29), *p(22, 29), 0.5), rampa[1])
+
+
+def mao_manopla(t: Tela, nivel: str, degrau: int) -> None:
+    if degrau >= 2:
+        raios_sol(t, 16, 14, 9, 15, 12, ("#fde68a", "#f5cd6b"))
+    manopla(t, nivel, degrau)
+    joia = [VERMELHO, METAIS["esmeralda"], ["#1c0633", "#8448cf", "#b98cf0", "#f3e6ff", "#ffffff"]][min(degrau, 2)]
+    t.camada(circulo(16, 19.5, 2.2), joia)
+    if degrau >= 2:
+        coroa_pequena(t, 16, 26, METAIS["ouro"], 8, "#7ee0c3") if False else runas(t, nivel, [(5, 6), (27, 9)])
+    t.brilho(11, 16)
+
+
+def mao_de_ouro(t: Tela, nivel: str, degrau: int) -> None:
+    raios_sol(t, 16, 14, 8, 15.5, 16, ("#fde68a", "#fbbf24"))
+    manopla(t, "ouro", 0)
+    t.camada(circulo(16, 19.5, 2.2), METAIS["esmeralda"])
+    t.brilho(12, 8)
+    t.brilho(22, 12)
+
+
+def escudo_mao(t: Tela, nivel: str, degrau: int) -> None:
+    """Simulados da mão: o escudo do cavaleiro com a manopla; espada, asas e coroa a cada nível."""
+    if degrau >= 2:
+        asas(t, METAIS[nivel], 14, 0.95)
+    if degrau >= 1:
+        t.camada(linha(5, 28, 27, 4, 1.8), METAIS["prata"])
+        t.camada(linha(8, 21, 12, 25, 1.6), METAIS["ouro"])
+    forma = poligono([(6, 6), (26, 6), (26, 16), (23, 23), (16, 30), (9, 23), (6, 16)])
+    t.camada(forma, METAIS[nivel])
+    t.camada(poligono([(9, 9), (23, 9), (23, 16), (20.5, 21.5), (16, 26.5), (11.5, 21.5), (9, 16)]), ["#2a0d08", "#5e1d12", "#8a2f1c", "#b4513a", "#e08b6f"], contorno=False)
+    manopla(t, "prata" if nivel != "prata" else "ouro", 0, 16, 7.5, 0.55)
+    if degrau >= 3:
+        coroa_pequena(t, 16, 0, METAIS["ouro"], 10, "#7ee0c3")
+
+
+# ---- TEOT: o tomo do título com o lacre ----
+def tomo_titulo(t: Tela, nivel: str, degrau: int) -> None:
+    if degrau >= 3:
+        raios_sol(t, 16, 15, 9, 15.5, 12, ("#e9c8ff", "#b98cf0"))
+    t.camada(poligono([(5, 9), (25, 6), (27, 26), (7, 29)]), ["#1a0b2e", "#3b1d6e", "#5b2fa0", "#7c4dc4", "#c4a7f0"] if degrau >= 2 else COURO)
+    t.camada(poligono([(25, 6), (28, 8), (29.5, 27.5), (27, 26)]), CREME)
+    for (x, y) in ((6, 10), (24, 7), (8, 27), (26, 25)):
+        t.camada(retangulo(x - 1, y - 1, x + 1, y + 1), METAIS[nivel], contorno=False)
+    t.pintar(linha(8, 12, 24, 9.5, 0.6) | linha(9.5, 25, 25, 23, 0.6), METAIS[nivel][3])
+    t.camada(circulo(16.5, 17.5, 4.5), VERMELHO)
+    t.pintar(retangulo(15, 15, 18, 15) | retangulo(16, 15, 17, 20), "#ffd2c9")
+    t.camada(poligono([(14, 21), (13, 27), (15, 25.5), (16, 28), (17, 21)]), VERMELHO)
+    if degrau >= 1:
+        t.camada(retangulo(1, 22, 3, 29), CREME)
+        chama_livre(t, "ouro", 2, 22, 5, 3)
+    if degrau >= 2:
+        t.camada(linha(22, 2, 28, 0, 1.2) | linha(22, 2, 25, 6, 0.8), PERGAMINHO)
+    if degrau >= 3:
+        runas(t, nivel, [(3, 4), (29, 30)])
+
+
+# ---- bancas: o mapa com as bandeirinhas fincadas ----
+def mapa_bandeiras(t: Tela, nivel: str, degrau: int) -> None:
+    t.camada(poligono([(2, 7), (11, 5), (21, 8), (30, 6), (30, 27), (21, 29), (11, 26), (2, 28)]), PERGAMINHO)
+    t.pintar(linha(11, 5.5, 11, 25.5, 0.5) | linha(21, 8.5, 21, 28.5, 0.5), PERGAMINHO[1])
+    terra = poligono([(9, 10), (19, 9), (25, 13), (23, 20), (18, 24), (14, 22), (10, 17)])
+    t.camada(terra, ["#173d12", "#2f6b22", "#4f9a35", "#86c95a", "#d4f5b0"], contorno=False)
+    rota = [(5, 23), (9, 20), (12, 21), (15, 17), (19, 16), (22, 12), (26, 10)]
+    for (a, b) in zip(rota, rota[1:]):
+        for s in range(0, 4, 2):
+            x = a[0] + (b[0] - a[0]) * s / 4
+            y = a[1] + (b[1] - a[1]) * s / 4
+            t.ponto(int(x), int(y), hexa("#7a2e1c"))
+    cores = ["#d33a3a", "#2b5fa8", "#c9952f", "#7b3fa0", "#1f7a4d"]
+    pontos = [(5, 23), (15, 17), (26, 10), (11, 13), (21, 21)][: 2 + degrau]
+    for i, (x, y) in enumerate(pontos):
+        t.pintar(linha(x, y, x, y - 7, 0.5), "#3a2410")
+        t.camada(poligono([(x + 0.5, y - 7), (x + 5, y - 5.5), (x + 0.5, y - 4)]), [cores[i], cores[i], cores[i], "#ffffff", "#ffffff"])
+    t.camada(circulo(5, 23, 1.2), METAIS[nivel], contorno=False)
+    if degrau >= 3:
+        t.camada(estrela_forma(27, 25, 3, 1.2), METAIS["ouro"])
+
+
+# ---- Zerou o Orto Questões: a coroa prismática na almofada ----
+def zerou(t: Tela, nivel: str, degrau: int) -> None:
+    raios_sol(t, 16, 15, 10, 15.5, 16, ("#ffd36b", "#ff8ad0"))
+    t.camada(poligono([(3, 24), (8, 21), (24, 21), (29, 24), (26, 29), (6, 29)]), VERMELHO)
+    for (x, y) in ((4, 27), (28, 27)):
+        t.camada(circulo(x, y, 1.3), METAIS["ouro"], contorno=False)
+    corpo = poligono([(5, 9), (10, 15), (16, 5), (22, 15), (27, 9), (25, 22), (7, 22)])
+    t.camada(corpo, METAIS["ouro"])
+    t.camada(retangulo(7, 19, 25, 22), METAIS["ouro"])
+    for (x, y) in ((5, 8), (16, 4), (27, 8)):
+        t.camada(circulo(x + 0.5, y + 0.5, 1.8), ["#1c0633", "#fff3c4", "#ffffff", "#ffffff", "#ffffff"])
+    for i, x in enumerate((9, 13, 16, 19, 23)):
+        t.camada(circulo(x + 0.5, 20.5, 1.2), [PRISMA[i], PRISMA[i], PRISMA[i], "#ffffff", "#ffffff"], contorno=False)
+    t.camada(circulo(16, 14, 2.4), ["#1c0633", "#8448cf", "#d59bff", "#f3e6ff", "#ffffff"])
+    t.brilho(11, 12)
+
+
+FORMAS.update({
+    "questoes-5000": marco_grande, "questoes-6000": marco_grande, "questoes-7000": marco_grande,
+    "questoes-8000": marco_grande, "questoes-9000": marco_grande, "acertos-6000": escudo_mitico,
+    "sequencia-21": seq_tochas_cruzadas, "sequencia-150": seq_pira, "sequencia-250": seq_coroa_chamas,
+    "sequencia-500": seq_sol, "sequencia-730": seq_imortal,
+    "fogueiraRecorde": braseiro, "labareda": lareira, "cronogramaDias": bussola, "semanaPerfeita": sete_velas,
+    "bib-abertos-25": bib_abertos_grande, "bib-abertos-75": bib_abertos_grande, "bib-abertos-150": bib_abertos_grande,
+    "bib-concluidos-20": bib_estante, "bib-concluidos-50": bib_estante, "bib-concluidos-120": bib_estante,
+    "mao": mao_manopla, "simuladosMao": escudo_mao, "teot": tomo_titulo, "bancas": mapa_bandeiras,
+    "chefe-zerou": zerou, "secreta-mao-de-ouro": mao_de_ouro,
+})
+
+
+
 def desenhar(id_: str, familia: str, nivel: str, degrau: int) -> Tela:
     t = Tela()
     FORMAS.get(id_, FORMAS.get(familia, medalha))(t, nivel, degrau)
-    if nivel in ("ouro", "esmeralda", "lendario"):
+    if nivel in ("ouro", "esmeralda", "lendario", "mitico"):
         t.brilho(27, 4, "#fff4cf")
-    if nivel in ("esmeralda", "lendario"):
-        t.brilho(4, 26, "#d2fbef" if nivel == "esmeralda" else "#f3e6ff")
+    if nivel in ("esmeralda", "lendario", "mitico"):
+        t.brilho(4, 26, {"esmeralda": "#d2fbef", "lendario": "#f3e6ff"}.get(nivel, "#fff3c4"))
     if nivel == "lendario":
         t.aura("#b98cf0")
+    if nivel == "mitico":
+        aura_prisma(t)
     return t
 
 

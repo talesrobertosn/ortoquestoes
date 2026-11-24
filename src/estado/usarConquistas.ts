@@ -2,7 +2,7 @@ import { usarContextoLocal } from './usarContextoLocal'
 import { lerHistorico } from './sessao'
 import { ler, usuarioLocal } from './armazenamento'
 import { useEffect, useMemo } from 'react'
-import { calcularMetricas, completarMetricas, desbloqueado, EMBLEMAS, type DadosAcervo, type GrupoProva, type Metricas } from './conquistas'
+import { calcularMetricas, completarMetricas, desbloqueado, EMBLEMAS, PROVAS_REGIONAIS, type DadosAcervo, type GrupoProva, type Metricas } from './conquistas'
 import { registrarConquistas, usarFeitos } from '../conta/feitos'
 import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
@@ -42,20 +42,27 @@ function dadosDoAcervo(indice: Indice | null): DadosAcervo | undefined {
   const totalProva = new Map<string, number>()
   const totalTema = new Map<string, number>()
   const anuladas = new Set<string>()
+  const validas = new Set<string>()
+  const simuladoMao = new Set<string>()
+  const teot = new Set<string>()
+  const regionais = new Set<string>()
   for (const q of indice.questoes) {
     if (q.dup) continue
     if (q.an) anuladas.add(q.id)
-    else { const tema = q.id.replace(/-\d+$/, ''); totalTema.set(tema, (totalTema.get(tema) ?? 0) + 1) }
+    else { const tema = q.id.replace(/-\d+$/, ''); totalTema.set(tema, (totalTema.get(tema) ?? 0) + 1); validas.add(q.id) }
     if (q.img) imagem.add(q.id)
     if (q.s.length) subtemas.set(q.id, q.s)
     const nome = q.p === null ? '' : indice.provas[q.p] ?? ''
+    if (q.sim && q.ar === 'mao') simuladoMao.add(q.id)
+    if (nome === 'TEOT') teot.add(q.id)
+    if (PROVAS_REGIONAIS.has(nome)) regionais.add(q.id)
     if ((nome === 'TEOT' || nome === 'TARO') && q.a && !q.an) {
       const chave = `${nome} ${q.a}`
       prova.set(q.id, chave)
       totalProva.set(chave, (totalProva.get(chave) ?? 0) + 1)
     }
   }
-  return { imagem, subtemas, prova, totalProva, totalTema, anuladas }
+  return { imagem, subtemas, prova, totalProva, totalTema, anuladas, validas, simuladoMao, teot, regionais }
 }
 
 /** `comLendarios`: só a página de Conquistas carrega o acervo dos flashcards para contar os lendários. */

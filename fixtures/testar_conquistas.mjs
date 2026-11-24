@@ -88,6 +88,47 @@ try {
   for (let d = 0; d < 3; d++) for (let i = 0; i < 20; i++) run[`ombro-${q++}`] = reg([i < 15 ? certo(base + d * 24 * 60 * MIN + i * MIN) : errado(base + d * 24 * 60 * MIN + i * MIN)])
   assert.equal(m.calcularMetricas(run, [], {}).runSemDano, 3)
 
+  // Labareda: dias seguidos com 50 questões; o recorde da fogueira fica depois que ela apaga.
+  const lab = {}
+  q = 0
+  for (let d = 0; d < 4; d++) for (let i = 0; i < (d === 2 ? 49 : 50); i++) lab[`joelho-${q++}`] = reg([certo(base + d * 24 * 60 * MIN + i * MIN)])
+  const mlab = m.calcularMetricas(lab, [], {}, base + 30 * 24 * 60 * MIN)
+  assert.equal(mlab.labareda, 2, 'o dia com 49 quebra a labareda')
+  assert.equal(mlab.sequencia, 0, 'a fogueira apagou')
+  assert.equal(mlab.fogueiraRecorde, 4, 'o recorde continua')
+
+  // Trilhas: mão (grupo de prova), simulados da mão, TEOT, provas regionais, Zerou e a secreta da mão.
+  const tri = {}
+  for (let i = 0; i < 40; i++) tri[`mao-${i}`] = reg([i === 35 ? errado(base + i * MIN) : certo(base + i * MIN)])
+  tri['trauma-1'] = reg([certo(base + 50 * MIN)])
+  tri['trauma-2'] = reg([errado(base + 51 * MIN)])
+  const ids = Object.keys(tri)
+  const grupos = new Map(ids.filter((id) => id.startsWith('mao')).map((id) => [id, ['mao']]))
+  const acervoTri = { imagem: new Set(), subtemas: new Map(), prova: new Map(), totalProva: new Map(), totalTema: new Map(), anuladas: new Set(),
+    validas: new Set(ids), simuladoMao: new Set(ids.filter((id) => id.startsWith('mao'))), teot: new Set(['trauma-1', 'trauma-2']), regionais: new Set(['trauma-2']) }
+  let mtri = m.calcularMetricas(tri, [], { grupos, acervo: acervoTri })
+  assert.equal(mtri.mao, 40)
+  assert.equal(mtri.simuladosMao, 39)
+  assert.equal(mtri.teot, 1, 'TEOT conta acertos')
+  assert.equal(mtri.bancas, 1, 'provas regionais contam questões respondidas')
+  assert.equal(mtri.zerou, 1)
+  assert.equal(mtri.maoDeOuro, 35)
+  mtri = m.calcularMetricas(tri, [], { grupos, acervo: { ...acervoTri, validas: new Set([...ids, 'pe-9']) } })
+  assert.equal(mtri.zerou, 0, 'falta uma questão do acervo')
+  // O mítico fica fora da Platina.
+  assert.ok(m.EMBLEMAS.some((e) => e.nivel === 'mitico'))
+
+  // Cronograma: semanas perfeitas (domingo de folga não precisa de meta) e dias com meta.
+  const metas = []
+  for (let d = 0; d < 6; d++) metas.push(`2026-11-${String(2 + d).padStart(2, "0")}`) // seg 2 a sáb 7
+  metas.push('2026-11-09', '2026-11-10')
+  assert.equal(m.semanasPerfeitas(metas, [0], '2026-11-23'), 1)
+  assert.equal(m.semanasPerfeitas(metas, [], '2026-11-23'), 0, 'sem folga, o domingo faltou')
+  assert.equal(m.semanasPerfeitas(metas, [0], '2026-11-05'), 0, 'a semana corrente ainda não fechou')
+  const mcr = m.calcularMetricas({}, [], { servidor: { plano: { folgas: [0], criado_em: '2026-11-01T12:00:00Z', data_prova: '2027-01-10' }, dias: { meta_cronograma: metas } } }, new Date(2026, 10, 23, 12).getTime())
+  assert.equal(mcr.cronogramaDias, 8)
+  assert.equal(mcr.semanaPerfeita, 1)
+
   // Curva de aprendizado: 1.000 primeiras respostas, 50% nas primeiras 500 e 70% nas últimas.
   const cur = {}
   for (let i = 0; i < 1000; i++) cur[`tumores-${i}`] = reg([(i < 500 ? i % 2 === 0 : i % 10 < 7) ? certo(base + i * MIN) : errado(base + i * MIN)])

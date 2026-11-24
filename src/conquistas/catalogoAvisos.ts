@@ -10,6 +10,11 @@ const perfil = (cenario: CenarioConquista, acompanhar = false): PerfilAviso => (
 /** Nova família exige triagem explícita; novos emblemas da família entram automaticamente. */
 export const PERFIS_AVISOS = {
   questoes: perfil('questoes', true), sequencia: perfil('cronograma'), dias: perfil('cronograma'),
+  // Recorde e sequências não prometem "faltam N": o melhor passado não é a sequência atual.
+  fogueiraRecorde: perfil('cronograma'), labareda: perfil('cronograma'),
+  mao: perfil('questoes', true), simuladosMao: perfil('questoes', true), teot: perfil('questoes', true), bancas: perfil('questoes', true),
+  // Contagens do servidor: comemoram, mas a meta do dia é confirmada fora da sessão.
+  cronogramaDias: perfil('cronograma'), semanaPerfeita: perfil('cronograma'),
   acertos: perfil('questoes', true), dominadas: perfil('revisao', true), temas: perfil('questoes', true),
   sessoes: perfil('questoes'), maratona: perfil('questoes'), precisao: perfil('questoes'),
   redencao: perfil('revisao', true), gabarito: perfil('questoes'), mestre: perfil('questoes'),
@@ -55,6 +60,8 @@ export function unidadeRestante(e: Emblema, n: number): string {
     resgate: ['revisão atrasada resgatada', 'revisões atrasadas resgatadas'],
     pseudartrose: ['erro antigo dominado', 'erros antigos dominados'], imagem: ['acerto com imagem', 'acertos com imagem'],
     especialista: ['questão dessa prova', 'questões dessa prova'],
+    mao: ['questão de mão', 'questões de mão'], simuladosMao: ['acerto nos simulados da mão', 'acertos nos simulados da mão'],
+    teot: ['acerto no TEOT', 'acertos no TEOT'], bancas: ['questão das provas regionais', 'questões das provas regionais'],
     colecao: ['favorita', 'favoritas'], anotacoes: ['anotação', 'anotações'],
     editorial: ['comentário avaliado', 'comentários avaliados'],
     bibMarcas: ['marcação', 'marcações'], bibNotas: ['nota na margem', 'notas na margem'],
