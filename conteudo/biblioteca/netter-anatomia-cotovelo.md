@@ -221,7 +221,7 @@ A fossa cubital é o triângulo anterior do cotovelo, e a prova quer a ordem das
 | teto | aponeurose bicipital | pode comprimir o mediano (Netter, p. 121) |
 !fim
 
-!questoes central=ombro-cotovelo-0324
+!questoes central=ombro-cotovelo-0324 treino=ombro-cotovelo-0635
 conceito: De lateral para medial, a fossa cubital contém o nervo cutâneo lateral do antebraço, o tendão do bíceps, a artéria braquial e o nervo mediano; o assoalho é o braquial e o teto, a aponeurose bicipital.
 como: O TARO 2012 deu quatro sequências e pediu a correta de lateral para medial.
 armadilha: Inverter artéria e mediano (o nervo é o mais medial) ou pôr o cutâneo lateral medial ao tendão.
@@ -245,7 +245,7 @@ O Rockwood and Green (cap. 39) organiza essa rede em **três arcadas**, que expl
 
 **A artéria radial no antebraço e o retalho chinês.** A radial corre sobre o pronador redondo, sob o braquiorradial, e no punho fica entre o FRC e o braquiorradial (Rockwood, cap. 42). O Campbell 15 (cap. 70, p. 3131) descreve o **retalho antebraquial radial**: a radial irriga a pele distal, palmar e lateral do antebraço (cerca de 16 por 8 cm), o retalho é fino, pode ser fasciocutâneo pediculado, osteocutâneo com um pedaço do rádio ou livre, e é sensível pelo musculocutâneo; a **desvantagem** citada é o **defeito na área doadora** e o sacrifício da radial, e o **teste de ALLEN** é obrigatório antes. O Green (cap. 24, pp. 859 e 860) usa o retalho radial em ilha justamente para cobrir defeitos **sobre o olécrano**. O HEBERT (cap. 53) chama-o de **retalho chinês** e o indica sobretudo para a primeira comissura.
 
-!questoes central=ombro-cotovelo-0530 treino=ombro-cotovelo-0647,ombro-cotovelo-0645
+!questoes central=ombro-cotovelo-0530 treino=ombro-cotovelo-0647,ombro-cotovelo-0645,ombro-cotovelo-0644
 conceito: A artéria braquial começa na borda inferior do redondo maior como continuação da axilar, corre medial ao bíceps com o mediano e termina na fossa cubital em radial e ulnar; em volta do cotovelo, três arcadas (lateral, medial e posterior) ligam os ramos colaterais aos recorrentes.
 como: O simulado da prova de título de cirurgia da mão de 2026 perguntou onde começa a braquial e a relação com o bíceps, e com que frequência ela se divide alto no braço; a PUC-SP 2023 perguntou sobre o retalho antebraquial radial.
 armadilha: Confundir o início da braquial com o da axilar (primeira costela) ou o limite entre as partes da axilar (peitoral menor); pôr a artéria lateral ao bíceps com o musculocutâneo.
@@ -274,7 +274,7 @@ alerta: A frequência da bifurcação alta da braquial (cerca de 15%, `ombro-cot
 
 O **cutâneo medial do antebraço** passa **posterior ao ulnar** no epicôndilo ou acima dele em **90%** (Green, p. 941), e é o nervo que a incisão medial mais lesa.
 
-!questoes treino=ombro-cotovelo-0646
+!questoes treino=ombro-cotovelo-0646,ombro-cotovelo-0643
 conceito: Na descompressão in situ, libera-se o teto do túnel cubital, formado pelo ligamento de OSBORNE (retináculo do túnel cubital) em continuidade com a aponeurose entre as cabeças do FUC; o assoalho é o colateral medial (feixes posterior e transverso) com a cápsula.
 como: O simulado da prova de título de cirurgia da mão de 2026 pediu teto e assoalho do túnel cubital, nessa ordem.
 armadilha: Inverter teto e assoalho, ou trazer estruturas de outros túneis: lacerto fibroso (mediano), arcada de STRUTHERS (ulnar, mas 8 cm acima).

@@ -153,7 +153,7 @@ MEHNE e MATTA partem do modelo de JUPITER e dividem em **intra-articular** (bico
 | 13C3 | Articular e metafisária fragmentadas | Olecranotomia; ATC no idoso irreparável |
 !fim
 
-!questoes central=trauma-0109 relacionadas=trauma-1012
+!questoes central=trauma-0109 relacionadas=trauma-1012 treino=ombro-cotovelo-0676,ombro-cotovelo-0677
 conceito: Na AO 13, A é extra-articular, B é parcial articular (B1 coluna lateral, B2 coluna medial, B3 cisalhamento do capítulo, da tróclea ou de ambos) e C é articular completa; a fratura do capítulo é B3.
 como: O TARO 2016 perguntou como a AO classifica a fratura do capítulo (B3); o ENARE R4 2024 descreveu uma fratura extra-articular de traço simples em espiral em jovem de 22 anos e pediu o código AO (13A2.1).
 armadilha: Achar que toda fratura do capítulo, por ser "lateral", é B1. A figura 39-3 chama o B1.1 de "capítulo", mas é o traço sagital da coluna lateral que passa pelo capítulo (MILCH I); o cisalhamento coronal do capítulo, a fratura do capítulo das provas, é B3.1. Na extra-articular, marcar B ou C só porque a fratura é perto da articulação.
