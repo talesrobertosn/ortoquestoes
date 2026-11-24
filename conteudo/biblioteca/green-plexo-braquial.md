@@ -206,7 +206,7 @@ Três leituras desta tabela caem com frequência. Primeira: **no adulto, o padr�
 
 O capítulo do adulto não descreve a atitude do cotovelo e do antebraço no KLUMPKE, ao contrário do que alguns materiais de prova sugerem.
 
-!questoes central=mao-1587 relacionadas=mao-0268,mao-1383 treino=mao-1740,mao-3052,mao-3057,mao-3069
+!questoes central=mao-1587 relacionadas=mao-0268,mao-1383,ombro-cotovelo-0528 treino=mao-1740,mao-3052,mao-3057,mao-3069
 conceito: No adulto, a lesão total é a mais comum, seguida de C5-C7; 75% têm lesões associadas e 20% lesão vascular; no total, C5 costuma ser pós-ganglionar e as outras pré-ganglionares; C5-C6 tira abdução, flexão do cotovelo e supinação com mão normal.
 como: A USP-SP 2026 pediu a afirmação correta sobre frequência e associações; o ENARE R4 2023 descreveu motociclista com "asa de gaivota", sem flexão do cotovelo e supinação e com anestesia lateral do braço; a USP-SP 2025, um diagnóstico diferencial.
 armadilha: Inverter os números (75% vasculares e 20% com trauma craniano) ou dizer que no total C5-C6 são pré-ganglionares e C7-T1 pós-ganglionares.

@@ -50,7 +50,7 @@ O HEBERT (5ª ed.) dá outra ordem de frequência. No cap. 48 (cotovelo do adult
 Classificação de Bado: tipo I com luxação anterior da cabeça e ulna angulada para a frente; tipo II com luxação posterior e ulna angulada para trás; tipo III com luxação lateral ou anterolateral e fratura da metáfise da ulna; tipo IV com luxação anterior e fratura do rádio e da ulna.
 !fim
 
-!questoes central=trauma-1094,trauma-0128,trauma-0158,trauma-0696,ombro-cotovelo-0519,ombro-cotovelo-0526 relacionadas=trauma-0044,trauma-0804,ombro-cotovelo-0510 treino=trauma-1431,trauma-1432,trauma-1433
+!questoes central=trauma-1094,trauma-0128,trauma-0158,trauma-0696,ombro-cotovelo-0519,ombro-cotovelo-0526 relacionadas=trauma-0044,trauma-0804,ombro-cotovelo-0510 treino=trauma-1431,trauma-1432,trauma-1433,ombro-cotovelo-0652
 conceito: Bado classifica a Monteggia pela direção da cabeça do rádio, que acompanha o ápice da ulna; o tipo I é o da criança e o tipo II, com até 80%, o do adulto.
 como: O TARO pergunta o tipo do adulto (2013) e o tipo da luxação posterior (2014, 2015); o CET-PR juntou criança e adulto (I e II); FMRP-USP e UFG pediram a direção de cada tipo (I anterior, III lateral).
 armadilha: Tipo IV como "lateral": no IV a cabeça vai para a frente, e o que muda é a fratura do rádio junto.

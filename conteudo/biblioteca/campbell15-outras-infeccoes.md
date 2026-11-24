@@ -1,6 +1,6 @@
 ---
 id: campbell15-outras-infeccoes
-versao: 4
+versao: 5
 titulo: Artrite séptica, tuberculose e outras infecções osteoarticulares
 especialidade: conceitos-basicos
 acesso: gratis
@@ -54,7 +54,7 @@ Na osteomielite, quando a bactéria ganha o espaço extravascular, macrófagos e
 conceito: As metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais) deixam a osteomielite romper para a articulação; na osteomielite, a prostaglandina E está 30 vezes maior e participa da reabsorção.
 como: A SBOT-SP pediu o trio de fises articulares que levam à artrite séptica; o TARO 2006 afirmou que a lesão inicial da osteomielite decorre da prostaglandina E que estimula os osteoclastos.
 armadilha: Trocar proximal por distal: úmero distal, rádio distal e fíbula proximal são extra-articulares.
-alerta: `conceitos-basicos-0299` não tem gabarito oficial; o Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 964, sustenta "Certo" com ressalva (prostaglandina E 30 vezes maior e ibuprofeno impedindo reabsorção e sequestro em ratos), sem chamar a prostaglandina de causa única da lesão inicial.
+alerta: `conceitos-basicos-0299` não tem gabarito oficial; a resposta provável é Errado, a da bibliografia da prova: o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 12, p. 371), começa a lesão pela multiplicação bacteriana na metáfise e põe a prostaglandina E2 como estímulo de reabsorção adicional. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 964), dá mais peso à prostaglandina E (30 vezes maior; ibuprofeno impediu reabsorção e sequestro em ratos) e poderia sustentar "Certo" com ressalva, mas também não a chama de causa da lesão inicial.
 !fim
 
 # Quem adoece e qual germe esperar {radar=confirmado}

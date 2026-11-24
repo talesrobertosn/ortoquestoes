@@ -1,6 +1,6 @@
 ---
 id: dahlin-condroblastoma
-versao: 2
+versao: 3
 titulo: Condroblastoma (e o fibroma condromixoide)
 especialidade: tumores
 acesso: gratis
@@ -347,9 +347,9 @@ O outro lado do tumor é a superfície articular, e aqui os livros parecem dizer
 A conciliação: abrir a articulação para enxergar é aceitável (o Lovell and Winter recomenda), mas a curetagem não deve perfurar a cartilagem sem necessidade; quando o tumor já a alcança, a prioridade continua sendo retirar todo o tumor, e a superfície se sustenta com enxerto. O Tachdjian (p. 1032) registra ainda a **ablação por radiofrequência** em 13 pacientes, com alívio em 12 e **colapso da superfície articular** no outro, um aviso de que o osso subcondral fino é o ponto frágil.
 
 !questoes central=tumores-0347
-conceito: O condroblastoma é tumor benigno epifisário que progride e pode invadir a articulação, e a curetagem (estendida, com adjuvantes e enxerto ou cimento) é o tratamento de escolha.
+conceito: O condroblastoma é tumor benigno epifisário tratado por curetagem estendida (com adjuvantes e enxerto ou cimento); pode chegar à cartilagem e, raramente, à articulação, mas a invasão articular é exceção, não a evolução típica.
 como: O TARO 2006 deu uma afirmação para julgar certo ou errado: tumor benigno da região epifisária que evolui com invasão da articulação, com curetagem como tratamento indicado.
-armadilha: Julgar errado por achar que tumor benigno não invade a articulação, ou por achar que a invasão articular obrigaria à ressecção ampla.
+armadilha: Julgar a frase inteira pela metade certa (curetagem) e aceitar "evolui com invasão da articulação" como regra.
 alerta: A questão `tumores-0347` não tem gabarito oficial; o gabarito pela bibliografia da prova é Errado e a resposta provável o segue, mas o Lovell and Winter, 7ª ed. (cap. 13, p. 445), sustentaria "Certo" ("progridem e invadem a articulação", curetagem como tratamento de escolha). O Dahlin (cap. 4) não fala em invasão articular e o Campbell (cap. 28, p. 958) diz que a extensão para partes moles é extremamente rara, de modo que "evolui com invasão" descreve a tendência, não a regra, o que apoia o Errado da bibliografia.
 !fim
 

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-politrauma
-versao: 2
+versao: 3
 titulo: Politrauma e controle de danos
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 14 · Management of the Multiply Injured Patient
 autores: Tejal S. Brahmbhatt e Heather A. Vallier
-fonte: Livros conferidos localmente em 03/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14 inteiro (Management of the Multiply Injured Patient), cap. 18 (MESS, Tabela 18-4), cap. 50 (Injuries Associated With Pelvic Ring Injuries, Signs and Symptoms, Initial Management e Deep Venous Thrombosis/Pulmonary Embolism Prophylaxis), cap. 51 (Mechanisms of Injury e Injuries Associated With Acetabular Fractures), cap. 52 (Injuries Associated With Hip Dislocations) e cap. 26 (Trauma-Induced Coagulopathy); AO Principles of Fracture Management, 3ª ed., cap. 4.1 (pp. 311 a 326); Skeletal Trauma, 5ª ed., caps. 9 e 11 (pp. 291 a 302 e 315 a 326); Campbell's Operative Orthopaedics, 15ª ed., caps. 48, 58, 59 e 61; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 74.
+fonte: Livros conferidos localmente em 03/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14 inteiro (Management of the Multiply Injured Patient), cap. 16 (Classification and Initial Management of Open Fractures, seção Antibiotics and Tetanus Prophylaxis), cap. 18 (MESS, Tabela 18-4), cap. 50 (Injuries Associated With Pelvic Ring Injuries, Signs and Symptoms, Initial Management e Deep Venous Thrombosis/Pulmonary Embolism Prophylaxis), cap. 51 (Mechanisms of Injury e Injuries Associated With Acetabular Fractures), cap. 52 (Injuries Associated With Hip Dislocations) e cap. 26 (Trauma-Induced Coagulopathy); AO Principles of Fracture Management, 3ª ed., cap. 4.1 (pp. 311 a 326); Skeletal Trauma, 5ª ed., caps. 9 e 11 (pp. 291 a 302 e 315 a 326); Campbell's Operative Orthopaedics, 15ª ed., caps. 48, 58, 59 e 61; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 74.
 subtemas: Politrauma e controle de danos
 resumo: ABCDE e mortalidade trimodal (precoce: hematoma epidural, hemopneumotórax, sangramento de extremidades); tríade letal (hipotermia, acidose, coagulopatia); SIRS (T > 38 ou < 36, FC > 90, FR > 20 ou PaCO2 < 32, leucócitos > 12.000 ou < 4.000 ou > 10% de jovens) e IL-6 como marcador; primeiro e segundo golpes; ISS (soma dos quadrados de três regiões, até 75) e NISS; estável, borderline, instável e in extremis; lactato como guia (EAC: pH ≥ 7,25, BE ≥ -5,5, lactato < 4 em 36 h); janela do 5º ao 10º dia; PIC ≤ 20 e PPC > 70; pelve: cinta nos trocânteres, tamponamento só com pelve estabilizada, arteriografia pelo extravasamento na TC; MESS ≥ 7.
 ---
@@ -300,6 +300,7 @@ E a tração? O Skeletal Trauma (cap. 11, p. 320) aceita a **tração esqueléti
 
 !questoes central=trauma-1171
 conceito: A tração esquelética é aceitável como estabilização temporária no politraumatizado instável, como ponte para o fixador ou a fixação definitiva; o que se condena é a tração prolongada como tratamento definitivo.
+como: O TARO 2006 afirmou, para julgar certo ou errado, que a tração transesquelética é forma inaceitável de tratar a fratura proximal da tíbia no politraumatizado.
 armadilha: Confundir a tração como ponte temporária, que os livros aceitam, com a tração como tratamento definitivo, que a banca considerou inaceitável.
 armadilha: Generalizar a crítica à tração prolongada e concluir que qualquer tração é inaceitável.
 alerta: A questão `trauma-1171` está sem gabarito oficial no acervo; o gabarito da bibliografia da banca (Skeletal Trauma, 2ª ed., p. 2180) marca Certo, lendo a tração como tratamento definitivo, e o site segue essa resposta. Skeletal Trauma (cap. 11, p. 320), Rockwood (cap. 14) e Campbell (cap. 59) aceitam a tração esquelética como medida temporária, ponte para a fixação.
@@ -483,6 +484,26 @@ armadilha: Achar que o filtro de cava é a primeira linha, que o Doppler rotinei
 ## A exposta no paciente grave
 
 O Rockwood (cap. 14, Open Fractures) trata a exposta como **emergência cirúrgica**: **cefazolina 2 g a cada 8 h** (clindamicina na alergia), gentamicina na alta energia, **penicilina** na contaminação por solo, tétano; fixação **provisória** quando há contaminação maciça, ferida que não fecha ou paciente crítico, e definitiva com a cobertura. O AO Principles of Fracture Management, 3ª ed. (cap. 4.1, p. 312) acrescenta que o tecido morto é **fonte de mediadores pró-inflamatórios**, e o desbridamento precoce remove essa fonte.
+
+## O antibiótico da exposta: tratamento, não profilaxia
+
+Na cirurgia limpa, o antibiótico é **profilático**: entra antes da incisão para que nenhuma bactéria se instale num campo que ainda está estéril. A fratura exposta é outra situação. O osso já conversou com o meio externo no momento do trauma, e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 16, Classification and Initial Management of Open Fractures, seção Antibiotics and Tetanus Prophylaxis), tira daí a conclusão que as bancas cobram: **o antibiótico deve ser considerado terapêutico, e não profilático, porque toda fratura exposta está contaminada em algum grau**. A palavra muda o raciocínio: não se espera infecção para tratar, trata-se a contaminação que já existe antes que ela vire infecção.
+
+O mesmo trecho dá o tempo e a escolha:
+
+- **quando:** o mais cedo possível, de preferência ainda no atendimento pré-hospitalar e, no máximo, **na sala de emergência**, logo depois de cobrir e imobilizar o membro;
+- **GUSTILO I e II:** cobertura para **gram-positivos**, com **cefalosporina de primeira geração (cefazolina)**; clindamicina na alergia verdadeira;
+- **GUSTILO III:** cobertura mais ampla, com **aminoglicosídeo (gentamicina)** somado à cefalosporina; a **cefalosporina de terceira geração** aparece só como alternativa nesse grupo;
+- **contaminação orgânica** (fezes, ambiente rural, risco de clostrídio): acrescentar **penicilina**.
+
+Por que primeira geração no tipo I? O germe que mais preocupa na ferida pequena e limpa é o da pele, o **S. aureus**, e a cefazolina cobre bem os gram-positivos; a terceira geração amplia para gram-negativos à custa de cobertura pior do estafilococo, o que só faz sentido na lesão grave e suja. O capítulo também lista o que **não** fazer: manter o antibiótico de forma prolongada, mantê-lo por causa de dreno ou até a ferida secar, usá-lo para prevenir infecção do trajeto dos pinos e, principalmente, **usá-lo como substituto do desbridamento**. A duração é controversa: num estudo caso-controle, 1 dia não infectou mais que 2 a 5 dias, e num ensaio randomizado 1 dia de antibiótico pós-operatório não foi pior que 5; a infecção acompanha o tamanho da lesão de partes moles, não a duração do antibiótico.
+
+!questoes relacionadas=trauma-0762
+conceito: Na fratura exposta, o antibiótico é terapêutico, não profilático, porque toda exposta está contaminada; começa no pré-hospitalar ou na sala de emergência, com cefalosporina de primeira geração nos tipos I e II, gentamicina somada no tipo III e penicilina na contaminação orgânica.
+como: O TEOT 2025 perguntou, na exposta GUSTILO I, a geração da cefalosporina e se o uso é terapêutico ou profilático.
+armadilha: Chamar de profilático o antibiótico da exposta, como na cirurgia limpa, ou subir para a terceira geração já no tipo I.
+alerta: A questão `trauma-0762` foi anulada pela banca; o Rockwood (cap. 16, seção Antibiotics and Tetanus Prophylaxis) sustenta a combinação primeira geração e uso terapêutico.
+!fim
 
 ## Vaso: fixar antes de reparar
 

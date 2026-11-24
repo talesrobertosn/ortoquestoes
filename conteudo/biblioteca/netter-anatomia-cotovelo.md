@@ -181,7 +181,7 @@ O jeito mais rápido de organizar os músculos do cotovelo é pelos dois epicôn
 | ERCC | epicôndilo lateral (fundido ao ED) | base do 3º metacarpal | radial ou interósseo posterior | extensão do punho |
 !fim
 
-!questoes central=ombro-cotovelo-0018 relacionadas=ombro-cotovelo-0216,ombro-cotovelo-0251 treino=ombro-cotovelo-0685
+!questoes central=ombro-cotovelo-0018 relacionadas=ombro-cotovelo-0216,ombro-cotovelo-0251,ombro-cotovelo-0256 treino=ombro-cotovelo-0685
 conceito: No epicôndilo lateral nascem o ancôneo (radial, extensor do cotovelo, plano do acesso de KOCHER) e o extensor comum, com as origens do ERCC e do extensor dos dedos indistinguíveis; o braquiorradial, do radial, tem como função principal fletir o antebraço; o pronador redondo, do mediano, nasce no epicôndilo medial.
 como: O TARO 2021 mostrou o ancôneo com seta e perguntou o nervo; uma prova de Ortopedia perguntou a função principal do braquiorradial; a prova de título de 2023 perguntou que origens não se distinguem no epicôndilo lateral; o TEOT 2024 mostrou o pronador redondo na via volar.
 armadilha: Inervar o ancôneo pelo ulnar (ele fica perto do olécrano, mas é do radial); dar ao braquiorradial a supinação ou a pronação; trocar o pronador redondo pelo quadrado ou pelo interósseo anterior.
@@ -221,7 +221,7 @@ A fossa cubital é o triângulo anterior do cotovelo, e a prova quer a ordem das
 | teto | aponeurose bicipital | pode comprimir o mediano (Netter, p. 121) |
 !fim
 
-!questoes central=ombro-cotovelo-0324
+!questoes central=ombro-cotovelo-0324 treino=ombro-cotovelo-0635
 conceito: De lateral para medial, a fossa cubital contém o nervo cutâneo lateral do antebraço, o tendão do bíceps, a artéria braquial e o nervo mediano; o assoalho é o braquial e o teto, a aponeurose bicipital.
 como: O TARO 2012 deu quatro sequências e pediu a correta de lateral para medial.
 armadilha: Inverter artéria e mediano (o nervo é o mais medial) ou pôr o cutâneo lateral medial ao tendão.
@@ -245,7 +245,7 @@ O Rockwood and Green (cap. 39) organiza essa rede em **três arcadas**, que expl
 
 **A artéria radial no antebraço e o retalho chinês.** A radial corre sobre o pronador redondo, sob o braquiorradial, e no punho fica entre o FRC e o braquiorradial (Rockwood, cap. 42). O Campbell 15 (cap. 70, p. 3131) descreve o **retalho antebraquial radial**: a radial irriga a pele distal, palmar e lateral do antebraço (cerca de 16 por 8 cm), o retalho é fino, pode ser fasciocutâneo pediculado, osteocutâneo com um pedaço do rádio ou livre, e é sensível pelo musculocutâneo; a **desvantagem** citada é o **defeito na área doadora** e o sacrifício da radial, e o **teste de ALLEN** é obrigatório antes. O Green (cap. 24, pp. 859 e 860) usa o retalho radial em ilha justamente para cobrir defeitos **sobre o olécrano**. O HEBERT (cap. 53) chama-o de **retalho chinês** e o indica sobretudo para a primeira comissura.
 
-!questoes central=ombro-cotovelo-0530 treino=ombro-cotovelo-0647,ombro-cotovelo-0645
+!questoes central=ombro-cotovelo-0530 treino=ombro-cotovelo-0647,ombro-cotovelo-0645,ombro-cotovelo-0644
 conceito: A artéria braquial começa na borda inferior do redondo maior como continuação da axilar, corre medial ao bíceps com o mediano e termina na fossa cubital em radial e ulnar; em volta do cotovelo, três arcadas (lateral, medial e posterior) ligam os ramos colaterais aos recorrentes.
 como: O simulado da prova de título de cirurgia da mão de 2026 perguntou onde começa a braquial e a relação com o bíceps, e com que frequência ela se divide alto no braço; a PUC-SP 2023 perguntou sobre o retalho antebraquial radial.
 armadilha: Confundir o início da braquial com o da axilar (primeira costela) ou o limite entre as partes da axilar (peitoral menor); pôr a artéria lateral ao bíceps com o musculocutâneo.
@@ -274,7 +274,7 @@ alerta: A frequência da bifurcação alta da braquial (cerca de 15%, `ombro-cot
 
 O **cutâneo medial do antebraço** passa **posterior ao ulnar** no epicôndilo ou acima dele em **90%** (Green, p. 941), e é o nervo que a incisão medial mais lesa.
 
-!questoes treino=ombro-cotovelo-0646
+!questoes treino=ombro-cotovelo-0646,ombro-cotovelo-0643
 conceito: Na descompressão in situ, libera-se o teto do túnel cubital, formado pelo ligamento de OSBORNE (retináculo do túnel cubital) em continuidade com a aponeurose entre as cabeças do FUC; o assoalho é o colateral medial (feixes posterior e transverso) com a cápsula.
 como: O simulado da prova de título de cirurgia da mão de 2026 pediu teto e assoalho do túnel cubital, nessa ordem.
 armadilha: Inverter teto e assoalho, ou trazer estruturas de outros túneis: lacerto fibroso (mediano), arcada de STRUTHERS (ulnar, mas 8 cm acima).
@@ -344,7 +344,7 @@ A pergunta de toda via é a mesma: entre que músculos eu entro, que nervos iner
 
 **KAPLAN e os outros laterais.** A Tabela 1.1 do Campbell lista **KOCHER entre EUC e ancôneo**, CADENAT entre ERCC e ERLC, **KAPLAN entre ERCC e EUC** (como está impresso) e KEY-CONWELL entre braquiorradial e ERLC. Na via global, o mesmo capítulo usa o intervalo de KAPLAN como o espaço **entre o extensor dos dedos e os radiais**, seguido até o NIP na arcada de FROHSE. O que vale para a prova: o KAPLAN é **mais anterior** que o KOCHER e chega mais perto do NIP, por isso exige pronação.
 
-!questoes relacionadas=ombro-cotovelo-0175,ombro-cotovelo-0122
+!questoes relacionadas=ombro-cotovelo-0175,ombro-cotovelo-0122,ombro-cotovelo-0188
 conceito: Na Tabela 1.1 do Campbell 15 (cap. 1, p. 110), a via lateral de KAPLAN passa entre o extensor radial curto do carpo e o extensor ulnar do carpo; KOCHER fica entre o EUC e o ancôneo, CADENAT entre ERCC e ERLC e KEY-CONWELL entre braquiorradial e ERLC.
 como: O TARO 2023 perguntou entre que músculos se faz a via lateral de KAPLAN, oferecendo os intervalos de KOCHER (EUC e ancôneo), de KEY-CONWELL (ERLC e braquiorradial) e de CADENAT (ERCC e ERLC) como distratores.
 armadilha: Marcar EUC e ancôneo, que é o KOCHER, o intervalo lateral mais conhecido; o KAPLAN é mais anterior.

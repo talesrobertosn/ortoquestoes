@@ -486,7 +486,7 @@ alerta: Em `pediatria-0445`, o gabarito oficial (C, MERYON) corresponde à manob
 
 A **FSH** é **autossômica dominante** (4q35), 1 em 20.000, com sintomas na segunda década. Começa na face (sem rugas, sorriso transverso, não fecha os olhos com força, não assobia) e na cintura escapular: a fraqueza maior é do **trapézio, romboides e levantador da escápula**. O **deltoide permanece forte**, mas não abduz porque a escápula gira e se descola (**escápula alada**). Os membros inferiores costumam ser poupados, a CK é normal, e o tratamento é a **artrodese escapulotorácica** (KETENJIAN), com a escápula em 15° a 20° de rotação externa (Tachdjian, p. 1723 a 1725). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 37), exige deltoide com força pelo menos grau 4 para a artrodese (p. 1337).
 
-!questoes central=mao-0548
+!questoes central=mao-0548 relacionadas=ombro-cotovelo-0399
 conceito: Na facioescapuloumeral o deltoide continua forte; trapézio, romboides e levantador da escápula enfraquecem.
 como: O TEOT 2022 perguntou o músculo com função preservada.
 armadilha: Achar que a abdução perdida vem do deltoide; vem da escápula instável.

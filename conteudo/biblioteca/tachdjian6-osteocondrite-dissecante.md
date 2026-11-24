@@ -450,7 +450,7 @@ O Campbell (cap. 34, p. 1209 e 1210) dá uma classificação: **Ia** íntegra e 
 | tratamento | tranquilizar, restringir, anti-inflamatório | conservador se pequena e estável; cirurgia se instável |
 !fim
 
-!questoes relacionadas=ombro-cotovelo-0483
+!questoes relacionadas=ombro-cotovelo-0483,ombro-cotovelo-0405
 conceito: Sem corpo livre, a OCD do capítulo estável (Ia) vai para repouso com órtese articulada; a cirurgia é indicada por sintomas persistentes, corpo livre sintomático, fratura da cartilagem e deslocamento do fragmento (Campbell 15, cap. 34, p. 1209 e 1210).
 como: O TARO 2008 pediu a principal indicação de cirurgia, com perda de movimento, instabilidade em valgo e hipertrofia da cabeça do rádio como distratores.
 armadilha: Operar pela perda de extensão ou pela cabeça do rádio aumentada; o que separa o conservador da cirurgia é o corpo livre e a instabilidade do fragmento.
