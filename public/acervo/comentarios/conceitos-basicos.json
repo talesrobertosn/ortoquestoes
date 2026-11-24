@@ -6834,5 +6834,146 @@
   ],
   "geradoEm": "2026-10-30",
   "conferido": false
+ },
+ "conceitos-basicos-0421": {
+  "conceito": "A infecção em volta de uma prótese nem sempre é evidente. Faltava uma definição comum, e um grupo da **Musculoskeletal Infection Society** (MSIS), com um consenso internacional, criou critérios para quadril e joelho que o Campbell's Operative Orthopaedics, 15ª ed., reproduz (cap. 8, Tabela 8.2, p. 453).\n\n### Primeiro os critérios maiores\n\nDois achados bastam sozinhos, porque não têm outra explicação: **duas culturas positivas do mesmo organismo** e **fístula** comunicando com a articulação ou expondo a prótese. Basta um deles para dizer que o joelho está infectado.\n\n### Depois a soma dos menores\n\nSem critério maior, somam-se pontos dos critérios menores, cada um com seu peso: PCR sérica elevada ou D-dímero (2 pontos), VHS elevada (1), leucócitos sinoviais altos, esterase leucocitária ou alfa-defensina positiva (3), porcentagem alta de polimorfonucleares (2), cultura única positiva (2), histologia positiva (3) e purulência intraoperatória (3). A leitura final é em três faixas: **6 pontos ou mais, infectado**; **3 a 5, inconclusivo**; **menos de 3, não infectado** (p. 453).\n\nO desenho em pontos existe porque nenhum desses exames é específico isoladamente. PCR e VHS sobem com qualquer inflamação; uma cultura única pode ser contaminante; a purulência pode aparecer em metalose. Só a soma de vários sinais concordantes dá segurança. Por isso os exames que mais apontam para infecção (líquido sinovial, histologia, pus) valem 3, e o menos específico (VHS) vale 1.\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção Como se define.\n\n**Por que esta questão foi criada.** O TEOT 2025 perguntou qual achado é critério maior do MSIS, entre fístula, alfa-defensina, purulência e cultura única. Esta questão cobra a outra metade da tabela: o corte da soma dos critérios menores.",
+  "correta": "**C: 6 ou mais.** Na Tabela 8.2 do Campbell (cap. 8, p. 453), 6 pontos ou mais definem infecção; 3 a 5 é inconclusivo e menos de 3, não infectado.",
+  "incorretas": {
+   "A": "**3 ou mais** é o início da faixa inconclusiva, não o diagnóstico. É a distratora perigosa porque 3 aparece duas vezes na tabela: é também o peso dos critérios mais fortes.",
+   "B": "**4 ou mais** ainda está dentro da faixa de 3 a 5, em que o resultado é inconclusivo e pede mais investigação.",
+   "D": "**10 ou mais** confunde a soma com o corte de 10 mg/L da PCR no quadro crônico, ou com os 10.000 leucócitos do agudo; não é limiar de pontos."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8, Tabela 8.2, p. 453",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 4, p. 284",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "conceitos-basicos-0422": {
+  "conceito": "Na prótese infectada, o que decide a conduta é o **tempo** de infecção, mais do que o germe ou a radiografia. A classificação de TSUKAYAMA, usada pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 4, p. 283 a 285), separa quatro situações: **pós-operatória precoce** (primeiro mês), **hematogênica aguda** (início súbito numa prótese que funcionava bem, com foco à distância), **crônica tardia** (depois de 1 mês, com início insidioso) e **culturas intraoperatórias positivas** numa revisão julgada asséptica.\n\n### Por que o tempo manda\n\nA explicação é o **biofilme**. Nas primeiras semanas, ele ainda é imaturo, e um desbridamento cuidadoso com troca do polietileno consegue removê-lo; por isso a retenção da prótese é aceita na infecção precoce (menos de 4 semanas) ou na hematogênica aguda, com componentes fixos. Na **crônica tardia**, o biofilme já está organizado sobre o metal e o cimento e só sai com o implante. O capítulo 8 é taxativo: nesse grupo, o desbridamento com retenção foi **universalmente malsucedido** e não deve ser tentado (p. 452). O fato de os componentes estarem fixos não muda isso; a fixação mecânica não diz nada sobre o biofilme.\n\n### O que fazer, então\n\nA **revisão em dois tempos** é a opção mais usada: retirar a prótese, desbridar, colocar espaçador com antibiótico (3,6 g de tobramicina e 3 g de vancomicina por 40 g de cimento), dar antibiótico intravenoso por **6 semanas** e reimplantar, com sucesso de 89% a 100% (p. 455). A revisão em um tempo, a artrodese e a supressão ficam para situações específicas.\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção Tempo e conduta.\n\n**Por que esta questão foi criada.** O TARO 2022 pediu o melhor tratamento da infecção aguda (desbridamento com troca do polietileno), e o TARO 2025 o papel do S. aureus nessa retenção. Aqui o caso é o oposto no tempo, a crônica tardia, em que a resposta da prova anterior vira o erro.",
+  "correta": "**D: revisão em dois tempos.** Na infecção crônica tardia, o biofilme maduro só sai com o implante; retirar, usar espaçador com antibiótico por 6 semanas e reimplantar é a opção mais usada (Campbell, cap. 8, p. 452 a 455).",
+  "incorretas": {
+   "A": "**Desbridamento com troca do polietileno** é a conduta da infecção aguda, precoce ou hematogênica, com prótese fixa. Na crônica tardia foi universalmente malsucedido (p. 452). É a distratora perigosa porque os componentes fixos do enunciado lembram a indicação dela.",
+   "B": "**Supressão com antibiótico oral** é reservada à prótese que não pode ser retirada, com germe pouco virulento sensível a droga oral, em paciente sem condição de cirurgia maior (p. 452). Não erradica a infecção.",
+   "C": "**Lavagem artroscópica seriada** não alcança o biofilme preso ao metal e ao cimento; serve à artrite séptica do joelho nativo, não à prótese com infecção crônica."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 452 a 455",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 4, p. 283 a 285",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "conceitos-basicos-0423": {
+  "conceito": "O **biofilme** é uma comunidade de bactérias presa a uma superfície e envolta por uma matriz que elas mesmas produzem. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29), descreve as etapas: a bactéria **adere** ao osso ou ao implante por proteínas de superfície; **prolifera** e secreta uma matriz polissacarídea relativamente impermeável; e fica envolta por **glicocálice**, uma camada de muco que a protege das defesas. Até 65% das infecções ortopédicas são causadas por germes produtores de biofilme, como estafilococos, Pseudomonas e Propionibacterium.\n\n### O que o biofilme muda\n\nDentro dessa matriz, as bactérias ficam em crescimento lento, com pouco acesso a nutrientes e a antibióticos. O Rockwood estima que sejam até **800 vezes menos sensíveis** ao antibiótico que as bactérias livres (planctônicas), e que possam ficar quiescentes por anos antes de reativar. As defesas do hospedeiro também não penetram o biofilme. Por isso a infecção de implante não se resolve só com antibiótico, e por isso o antibiograma, feito com bactérias livres, pode prometer mais do que o tratamento entrega.\n\n### A ligação com a conduta na prótese\n\nNas primeiras semanas, o biofilme ainda é imaturo, e o desbridamento com troca do polietileno consegue removê-lo; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 8, p. 452), aceita a retenção nesse período. Na infecção crônica, ele está organizado sobre o metal e o cimento, e nenhuma lavagem o retira: a retenção foi universalmente malsucedida. A virulência pesa no mesmo sentido, e o S. aureus é contraindicação relativa à retenção mesmo na fase aguda (p. 454).\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção A biologia do biofilme.\n\n**Por que esta questão foi criada.** O TEOT 2022 perguntou o que se deposita na maturação do biofilme (a matriz exopolissacarídea). Esta questão leva o mesmo conceito para a clínica: por que esse biofilme maduro obriga a retirar a prótese.",
+  "correta": "**A: pelo biofilme maduro no implante.** Maduro, ele protege as bactérias das defesas e do antibiótico e só sai com o implante (Rockwood, cap. 29; Campbell, cap. 8, p. 452).",
+  "incorretas": {
+   "B": "**A resistência à meticilina do germe** piora o prognóstico, mas a retenção falha na fase crônica mesmo com germe sensível. É a distratora perigosa porque o S. aureus aparece como contraindicação relativa à retenção.",
+   "C": "**O desgaste do polietileno** é causa de soltura e osteólise a longo prazo; a troca do polietileno faz parte do desbridamento, mas não explica a persistência da infecção.",
+   "D": "**A soltura asséptica associada** contradiz o enunciado: a falha descrita é da retenção numa prótese infectada, e a soltura, quando existe, é consequência, não causa."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, seção do biofilme",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 452 e 454",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "conceitos-basicos-0424": {
+  "conceito": "Encontrar o germe é o que permite escolher o antibiótico, e na infecção de implante isso é difícil. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29), registra que a cultura é negativa em até **32%** dos casos, em parte porque as bactérias presas ao biofilme não passam para a amostra.\n\n### Por que várias amostras profundas\n\nO Rockwood recomenda colher **de três a cinco amostras de tecido profundo**, em **número ímpar**, de pontos diferentes junto ao implante. O motivo é estatístico. Uma cultura isolada positiva pode ser contaminação da pele ou do manuseio; o mesmo germe crescendo em **duas ou mais** amostras profundas é critério confirmatório tanto na infecção relacionada à fratura quanto na periprotética (critério maior do MSIS). Colher várias aumenta a chance de achar o germe e permite separar o patógeno do contaminante; o número ímpar evita o empate.\n\n### O que não serve\n\nO **swab de fístula** não serve, porque o trajeto está colonizado por germes da pele que não representam a infecção profunda. Para aumentar o rendimento, o implante retirado pode ir para **sonicação**: em recipiente fechado, passa por vórtex e ultrassom, que desalojam as bactérias aderidas, e o líquido é cultivado. Na série de TRAMPUZ, a sensibilidade subiu de 60,8% com a cultura convencional do tecido para 78,5%, com especificidade de 98,8%.\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção Os germes e a cultura.\n\n**Por que esta questão foi criada.** O TEOT 2024 perguntou o nome do método que desaloja os microrganismos do implante (a sonicação). Esta questão cobra o passo vizinho do mesmo parágrafo: quantas e quais amostras de tecido o cirurgião deve colher.",
+  "correta": "**B: três a cinco amostras profundas.** O Rockwood (cap. 29) pede de três a cinco amostras de tecido profundo, em número ímpar; o mesmo germe em duas delas confirma a infecção.",
+  "incorretas": {
+   "A": "**Um swab do trajeto da fístula** recolhe a flora da pele que coloniza o trajeto e não representa o germe profundo; o Rockwood diz que não serve.",
+   "C": "**Uma amostra do líquido articular** é útil antes da cirurgia, para contagem de células e cultura, mas uma amostra única não separa contaminante de patógeno. É a distratora perigosa porque a punção é o exame inicial correto.",
+   "D": "**Duas amostras do tecido superficial** falham duas vezes: são poucas e vêm de onde está a contaminação, não de junto do implante."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, seções da cultura e da sonicação",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "conceitos-basicos-0425": {
+  "conceito": "A **artrite séptica gonocócica** é a forma que mais destoa do resto da artrite séptica, e por isso a prova gosta dela. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 825), afirma que a **Neisseria gonorrhoeae** causa cerca de **75%** da artrite séptica em adultos jovens saudáveis e sexualmente ativos, embora menos de 3% dos infectados pelo gonococo desenvolvam artrite.\n\n### Um quadro diferente\n\nA infecção gonocócica disseminada costuma ser **poliarticular** ou migratória, com tenossinovite e um **rash papular** ou pustuloso nas extremidades. A cultura do líquido articular é muitas vezes negativa; a pista vem de culturas de faringe, uretra ou colo e da PCR no líquido. O germe é muito sensível ao antibiótico e destrói pouco a cartilagem, ao contrário do S. aureus, que tira 30% do proteoglicano em 48 horas.\n\n### Por que não drenar\n\nO tratamento da artrite séptica se apoia em três pilares: drenar, dar antibiótico e mobilizar (p. 825 e 826). A drenagem imediata é indicada na artrite **não gonocócica**. Na gonocócica, o **prognóstico é bom só com antibiótico**, e a drenagem cirúrgica geralmente é desnecessária. O Campbell também classifica a Neisseria entre os germes que respondem rápido e aceitam curso curto de antibiótico, de menos de 2 semanas (p. 826), ao contrário dos estafilococos e gram-negativos, que pedem 4 a 6 semanas. Punções de alívio podem ser feitas quando o derrame é grande, mas o centro do tratamento é o antibiótico.\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção O germe pelo hospedeiro e pela exposição.\n\n**Por que esta questão foi criada.** O TARO 2009 perguntou o agente mais comum da artrite piogênica no adulto jovem. Aqui o germe já vem no enunciado, e a prova passa a cobrar o que ele muda na conduta.",
+  "correta": "**C: antibiótico sem drenagem.** A artrite gonocócica tem bom prognóstico só com antibiótico, e a drenagem cirúrgica raramente é necessária (Campbell, cap. 24, p. 825).",
+  "incorretas": {
+   "A": "**Artrotomia de urgência** é a conduta da artrite séptica não gonocócica com pus espesso ou loculado; aplicada ao gonococo, seria cirurgia sem benefício.",
+   "B": "**Lavagem artroscópica imediata** é o tratamento preferido do joelho séptico do adulto por S. aureus e outros germes piogênicos (p. 827 e 829). É a distratora perigosa porque é a resposta certa para quase todo joelho séptico, menos este.",
+   "D": "**Punções seriadas sem antibiótico** deixam de lado o único tratamento indispensável; a punção pode aliviar o derrame, mas o germe só é eliminado pelo antibiótico."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 825 e 826",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "conceitos-basicos-0426": {
+  "conceito": "O **joelho** é a articulação mais acometida pela artrite séptica (Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 829), o que faz dele a articulação em que o cirurgião mais drena. A punção diagnóstica é lateral, na altura do polo superior da patela, onde a bolsa suprapatelar é ampla e não há estruturas nobres no caminho.\n\n### O tratamento padrão\n\nNo adulto, a **drenagem artroscópica é o tratamento preferido**: lava toda a articulação, permite desbridar a sinóvia e repetir se preciso, e se associou a menos reinfecção, menos redesbridamentos e função melhor que a artrotomia (p. 827 e 829). Mas a artroscopia lava o que está dentro da cápsula; quando o pus rompe para trás e forma um **abscesso poplíteo**, ele precisa ser drenado por fora.\n\n### Por que não pela linha média posterior\n\nNa fossa poplítea, a **artéria e a veia poplíteas** e o nervo tibial correm justamente no centro, logo atrás da cápsula. Uma incisão **posterior mediana** levaria o cirurgião, e o pus, direto sobre os vasos: risco de lesão durante a dissecção e de infecção da parede arterial, com trombose ou ruptura. Por isso o Campbell manda drenar o abscesso poplíteo pelas **incisões de HENDERSON**, posteromedial e posterolateral, que entram pelos lados da fossa, longe do feixe neurovascular, e afirma que a **via posterior mediana nunca se usa** (p. 829). Na posterolateral, o cuidado é com o nervo fibular, que corre junto ao bíceps femoral.\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção Joelho.\n\n**Por que esta questão foi criada.** O TARO 2025 cobrou, na brucelose, a articulação mais acometida, tendo o joelho como distrator por ser a articulação séptica mais comum. Esta questão aproveita esse fato vizinho e cobra a técnica de drenagem do próprio joelho, que a prova ainda não pediu.",
+  "correta": "**D: posterior mediana.** Ela passa sobre a artéria e a veia poplíteas; o Campbell drena o abscesso poplíteo pelas incisões de HENDERSON e diz que a via posterior mediana nunca se usa (cap. 24, p. 829).",
+  "incorretas": {
+   "A": "**Posteromedial** é uma das incisões de HENDERSON, que entram pela lateral da fossa poplítea e ficam longe do feixe neurovascular central. É via indicada, não proibida.",
+   "B": "**Posterolateral** é a outra incisão de HENDERSON; exige cuidado com o nervo fibular junto ao bíceps femoral, mas é segura e indicada. É a distratora perigosa para quem lembra do nervo e esquece dos vasos.",
+   "C": "**Artroscópica anterior** é o tratamento preferido do joelho séptico do adulto; não alcança o abscesso fora da cápsula, mas não é contraindicada."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 829",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "conceitos-basicos-0427": {
+  "conceito": "A **doença de Lyme** é a infecção pela espiroqueta **Borrelia burgdorferi**, transmitida pela picada do carrapato do gênero Ixodes. É endêmica no hemisfério norte e entra na prova como diagnóstico diferencial da artrite séptica do joelho.\n\n### Como ela se apresenta\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 25, p. 859 e 860), descreve a sequência. A lesão de pele inicial, o **eritema migratório**, aparece em cerca de **80%** dos pacientes, uma mancha vermelha que se expande ao redor da picada. Sem tratamento, cerca de **60%** evoluem com **artrite intermitente e migratória**, sobretudo no **joelho**: a articulação fica quente e muito inchada, mas, ao contrário da artrite séptica bacteriana, é **pouco dolorosa**. O líquido sinovial ajuda a separar as duas: na Lyme a contagem fica em geral **abaixo de 50.000 leucócitos**, enquanto o corte clássico da artrite séptica está acima disso.\n\n### Por que reconhecer\n\nO joelho grande e pouco doloroso, em surtos, sem febre alta, numa pessoa que esteve em área de carrapato, muda a conduta: não é caso de drenagem, e sim de antibiótico. O tratamento é **doxiciclina oral por 30 a 60 dias**, que não se usa **abaixo de 8 anos** pela pigmentação dos dentes (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 958).\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção Doença de Lyme.\n\n**Por que esta questão foi criada.** O TARO 2025 perguntou a articulação mais acometida pela artrite da brucelose, cuja resposta é o quadril, com o joelho como distrator. Esta questão usa o mesmo formato para outra infecção específica, a doença de Lyme, em que a resposta é justamente o joelho.",
+  "correta": "**B: o joelho.** A artrite da doença de Lyme é intermitente e migratória e acomete sobretudo o joelho, que fica quente e inchado, mas pouco doloroso (Campbell, cap. 25, p. 859 e 860).",
+  "incorretas": {
+   "A": "**O quadril** é a articulação mais acometida pela artrite da brucelose na série citada pelo Tachdjian (53%). É a distratora perigosa para quem decorou a questão da brucelose do TARO 2025 e transfere a resposta.",
+   "C": "**O tornozelo** é acometido em várias artrites infecciosas, mas não é o local típico da Lyme.",
+   "D": "**O punho** séptico quase sempre segue trauma penetrante (Campbell, cap. 24, p. 837); não é o padrão da Lyme."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 25, p. 859 e 860",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 958",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "conceitos-basicos-0428": {
+  "conceito": "A **brucelose**, também chamada de febre ondulante, é uma **zoonose**: uma doença de animais que passa ao homem. O agente principal é o cocobacilo gram-negativo **Brucella melitensis**, que vive em cabras, gado, porcos, cães e ovelhas (Campbell's Operative Orthopaedics, 15ª ed., cap. 25, p. 856).\n\n### Como o homem se infecta\n\nQuase toda infecção vem do contato com animais. O modo principal é **ingerir leite ou derivados não pasteurizados**, como queijo fresco; o risco também é maior em quem lida com animais ou com o germe: agricultores, veterinários, açougueiros e laboratoristas (p. 856). São mais de 500.000 casos por ano no mundo. Por isso a pergunta de exposição na anamnese é decisiva: queijo artesanal, viagem a área rural, profissão.\n\n### O que ela faz no esqueleto\n\nA apresentação mais comum é **febre com acometimento osteoarticular**. Aqui os livros divergem. O Campbell diz que o local osteoarticular mais provável é o **esqueleto axial**: sacroileíte, espondilite e espondilodiscite. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 959 e 960), com a série do Kuwait, mostra que a forma osteoarticular foi sobretudo **artrite** (79,8%), com o **quadril** à frente (53%), seguido do joelho (36%). A tabela de agentes do Campbell (cap. 24, p. 822) associa a Brucella à sacroileíte monoarticular, de novo com o laticínio não pasteurizado como pista. O tratamento é longo, com duas ou três drogas por cerca de 6 semanas, para reduzir a recidiva.\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção Brucelose: o quadril de um livro e a coluna do outro.\n\n**Por que esta questão foi criada.** O TARO 2025 perguntou a articulação mais acometida pela artrite da brucelose. Esta questão cobra a outra associação que a prova costuma usar nas infecções específicas: a exposição que leva a cada germe.",
+  "correta": "**C: o leite não pasteurizado.** A brucelose é uma zoonose, e o modo principal de contágio é ingerir leite ou derivados não pasteurizados (Campbell, cap. 25, p. 856).",
+  "incorretas": {
+   "A": "**A picada de carrapato** transmite a Borrelia da doença de Lyme, outra infecção que dá artrite e cai no mesmo capítulo. É a distratora perigosa por ser outra zoonose ligada ao campo.",
+   "B": "**A água contaminada de aquário** é a pista do Mycobacterium marinum, que acomete dedos e punho e cresce a 30 a 33 graus.",
+   "D": "**A mordedura de gato** leva à Pasteurella multocida e à Capnocytophaga, com infecção da mão, do punho e das bainhas tendíneas."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 25, p. 856",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 959 e 960",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
+ },
+ "conceitos-basicos-0429": {
+  "conceito": "A contagem de leucócitos no líquido sinovial é um dos exames mais úteis na suspeita de infecção de prótese, mas o número que define \"alto\" muda conforme a **fase** da infecção e o tipo de articulação, nativa ou protética.\n\n### Por que o corte muda com a fase\n\nLogo depois da cirurgia, o joelho operado já está inflamado: sangue, trauma cirúrgico e reação ao implante elevam as células do líquido mesmo sem infecção. Um corte baixo daria muitos falsos positivos. Por isso, no consenso internacional reproduzido pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 8, Tabela 8.2, p. 453; cap. 4, p. 284), o critério menor de leucócitos sinoviais vale **10.000 células/µL na infecção aguda** e **3.000 na crônica**. Na fase crônica, a inflamação cirúrgica já passou, e um número bem menor já aponta infecção. O mesmo vale para a PCR sérica: 100 mg/L no agudo e 10 no crônico. Esse critério vale 3 pontos na soma do MSIS, em que 6 ou mais definem infecção.\n\n### Não confundir com a articulação nativa\n\nOs 50.000 a 80.000 leucócitos são os cortes clássicos da **artrite séptica do joelho sem prótese** (Campbell, cap. 24, p. 822; cap. 22, p. 790). A prótese muda tudo: a infecção periprotética se faz com contagens muito mais baixas, porque o biofilme gera uma inflamação menos intensa e porque o implante já reduz a capacidade de defesa local. Outra linha de estudos chegou a cortes ainda menores no joelho crônico, como 1.100 células com mais de 64% de neutrófilos (GHANEM, citado em The Adult Hip, 3ª ed., cap. 81, p. 1041), números que o Campbell não traz.\n\nIsso está no resumo de Artrite séptica, tuberculose e outras infecções osteoarticulares, seção Como se define.\n\n**Por que esta questão foi criada.** O TARO 2023 pediu os cortes de leucócitos sinoviais do critério menor para joelho e quadril. Esta questão cobra o mesmo critério pela outra variável que muda o número: a fase aguda contra a crônica.",
+  "correta": "**A: 10.000 células/µL.** Na fase aguda, o critério menor de leucócitos sinoviais é 10.000 células/µL; na crônica, 3.000 (Campbell, cap. 8, Tabela 8.2, p. 453).",
+  "incorretas": {
+   "B": "**3.000 células/µL** é o corte da infecção crônica. É a distratora perigosa: o número está certo, mas para a outra fase, quando a inflamação da cirurgia já não confunde.",
+   "C": "**50.000 células/µL** é o corte clássico da artrite séptica do joelho nativo (Campbell, cap. 24, p. 822); na prótese, esperar por esse número deixaria passar a maioria das infecções.",
+   "D": "**80.000 células/µL** é o corte que o capítulo 22 do Campbell usa para a artrite séptica nativa, com mais de 75% de neutrófilos (p. 790); também não se aplica à prótese."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8, Tabela 8.2, p. 453",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 4, p. 284",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-23",
+  "conferido": false
  }
 }

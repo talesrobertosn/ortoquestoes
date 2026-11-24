@@ -54,7 +54,7 @@ Repare no que **não** é contraindicação absoluta e cai como distrator: a **p
 
 O livro reforça a **otimização**: vitamina D, síndrome metabólica, albumina, neutropenia, superobesidade e IMC abaixo de 20 são fatores modificáveis, e **adiar a ATJ por até 8 meses** para corrigi-los não piora o resultado (AAOS) (p. 418).
 
-!questoes central=joelho-0036 relacionadas=joelho-0039,joelho-0272
+!questoes central=joelho-0036 relacionadas=joelho-0039,joelho-0272 treino=joelho-0412
 conceito: As contraindicações absolutas da ATJ são sepse atual ou recente, foco infeccioso remoto, mecanismo extensor descontínuo ou gravemente disfuncional, recurvato por fraqueza neuromuscular e artrodese indolor funcionante.
 como: O TARO 2015 pediu a contraindicação absoluta entre patela baixa, obesidade mórbida, osteotomia prévia e recurvato por fraqueza; o TARO 2014, entre neuropatia, patelectomia, aterosclerose e disfunção grave do extensor; o TARO 2013, entre recurvato por fraqueza, osteomielite prévia, psoríase e falta de condição anestésica.
 armadilha: Marcar artropatia neuropática, patelectomia prévia, psoríase ou falta de condição clínica, que o Campbell trata como contraindicações relativas.
@@ -90,7 +90,7 @@ O capítulo 2 do Campbell's Operative Orthopaedics, 15ª ed. (p. 136 e 137), rep
 | reiniciar | ferida cicatrizada, pontos retirados, sem secreção nem infecção, em geral por volta de 14 dias |
 !fim
 
-!questoes central=conceitos-basicos-0278
+!questoes central=conceitos-basicos-0278 treino=joelho-0417
 conceito: Na artroplastia eletiva de quadril ou joelho, metotrexato, leflunomida e hidroxicloroquina continuam; biológicos como o adalimumabe são suspensos e a cirurgia é marcada no fim do ciclo.
 como: O TARO 2024 pediu, entre leflunomida, metotrexato, adalimumabe e hidroxicloroquina, a droga que deve ser suspensa.
 armadilha: Suspender o metotrexato por medo de infecção; pela diretriz citada no Campbell ele é mantido.
@@ -171,7 +171,7 @@ Os limites angulares da UKA não são iguais nos livros. O Campbell contraindica
 
 Com isso, um paciente de 50 anos com artrose medial e **25° de varo** não serve para UKA (passa dos 10°) nem para osteotomia (a correção passaria dos 20° que o capítulo 10 aceita); sobra a ATJ. A seleção clássica da UKA é a de KOZINN e SCOTT (1989): **LCA íntegro, artrose de um compartimento, deformidade passivamente corrigível e peso razoável** (p. 446). Se o joelho exige liberação extensa de partes moles para corrigir, a deformidade é grande demais para a UKA (p. 446).
 
-!questoes central=joelho-0020
+!questoes central=joelho-0020 treino=joelho-0418
 conceito: Varo de 25° ultrapassa o limite da UKA (10° de varo) e o da osteotomia tibial (correção acima de 20°), então a indicação é a ATJ.
 como: O TARO 2017 pediu a conduta para artrose medial aos 50 anos com varo de 25° entre ATJ, osteotomia de adição medial, UKA medial e osteotomia femoral de subtração.
 armadilha: Escolher a osteotomia pela idade sem olhar o tamanho da deformidade.
@@ -212,7 +212,7 @@ Na técnica padrão, o LCM profundo é elevado até o canto posteromedial e a t�
 
 Para o **valgo fixo**, o capítulo 1 descreve o **KEBLISH modificado**, lateral, com camadas retinaculares fechadas "expandidas" (p. 32); o capítulo 8 faz o valgo pelo parapatelar medial com liberações laterais (p. 438).
 
-!questoes relacionadas=joelho-0248
+!questoes relacionadas=joelho-0248 treino=joelho-0414
 conceito: O subvasto preserva a vascularização da patela poupando o ramo articular intramuscular da artéria genicular descendente.
 como: O TEOT 2022 e a SBOT-SP perguntaram, com o mesmo enunciado, que artéria o subvasto poupa entre retinacular superior, genicular descendente, ramo safeno e genicular superior medial.
 armadilha: Marcar a genicular superior medial ou o ramo safeno; a artéria que o capítulo 1 dá como poupada pelo subvasto é a genicular descendente, por seu ramo articular intramuscular.
@@ -283,7 +283,7 @@ A rotação femoral, portanto, mexe em **duas coisas**: o **equilíbrio do espa�
 
 Conhecer todas é obrigatório, porque deformidade ou cirurgia prévia apagam marcos; o gap é o preferido na plataforma móvel (p. 432).
 
-!questoes central=joelho-0035 relacionadas=trauma-1027,trauma-1076
+!questoes central=joelho-0035 relacionadas=trauma-1027,trauma-1076 treino=joelho-0410,joelho-0411
 conceito: O corte posterior do fêmur é feito em 3° de rotação externa (lateral) em relação aos côndilos posteriores, o que o deixa paralelo ao eixo transepicondilar; a rotação certa equilibra o espaço de flexão e o trilhamento patelar.
 como: O TARO 2015 pediu o grau e o sentido do corte posterior; o TARO 2025, a relação com o transepicondilar; o TEOT 2023, o que a rotação equilibra.
 armadilha: Confundir a rotação em relação aos côndilos posteriores (3° externos) com a em relação ao epicondilar (paralela), ou dizer que a rotação mexe no espaço de extensão e no ângulo Q.
@@ -353,7 +353,7 @@ Técnicas 8.4 e 8.5 (p. 437): liberar o LCM profundo até o canto posteromedial 
 
 O valgo é comum na **artrite reumatoide** e no **côndilo lateral hipoplásico** (p. 438). Na técnica 8.6: poupar o envelope medial, já frouxo; se só a **extensão** aperta, soltar o **trato iliotibial** (o livro prefere pie-crusting); o **canto posterolateral** antes do LCL; o **poplíteo** abre a flexão e deve ser mantido se não estiver tenso; depois cápsula posterior e gastrocnêmio lateral. Sem equilíbrio, **avançar o LCM** no epicôndilo medial ou, se a flexão lateral passar da **altura de salto** do poste, usar **CCK** (p. 438 e 439).
 
-!questoes central=joelho-0287
+!questoes central=joelho-0287 treino=joelho-0413
 conceito: No joelho valgo, o balanço é feito liberando as estruturas laterais contraídas (trato iliotibial, canto posterolateral, poplíteo e LCL), e não retensionando-as.
 como: O TARO 2008 perguntou como se obtém o balanço no valgo entre retensionar ou liberar o trato iliotibial, o poplíteo e o LCL, retensionar o LCM ou liberar o LCM.
 armadilha: Liberar o LCM, que é o lado frouxo no valgo e, se algo, precisa ser avançado.
@@ -390,7 +390,7 @@ Os defeitos vêm de deformidade angular, hipoplasia condilar, osteonecrose, trau
 
 O tratamento segue o tamanho e a contenção (p. 441 a 443): **menos de 5 mm, cimento**; contido, **enxerto esponjoso impactado**; não contido maior, **enxerto estrutural, cunhas metálicas modulares ou parafusos dentro do cimento**. O enxerto periférico da tíbia (WINDSOR, INSALL e SCULCO) aplaina o defeito, fixa um bloco do osso ressecado com pinos ou parafusos e recorta a superfície (p. 441 e 442). **Hastes** protegem enxertos periféricos. **Cones porosos e luvas** metafisárias criam um apoio onde o implante é cimentado, e são usados sobretudo em revisão, inclusive nos defeitos AORI IIB e III (p. 443 e 469). O HEBERT (cap. 17) prefere enxerto impactado nos defeitos contidos ou menores (AORI I e II) e, no AORI III, metal trabeculado metafisário ou enxerto estrutural homólogo.
 
-!questoes central=joelho-0251
+!questoes central=joelho-0251 treino=joelho-0416
 conceito: Na classificação de RAND, o tipo II é o defeito metafisário extenso com borda cortical íntegra; o I é focal e o III atinge a cortical.
 como: O TARO 2016 perguntou o tipo de RAND do defeito metafisário extenso com cortical íntegra.
 armadilha: Marcar III por ser "extenso"; o III exige perda cortical.
@@ -443,7 +443,7 @@ alerta: Questão sem gabarito oficial no banco; o Campbell 15 (p. 448) sustenta 
 
 Não é contraindicação. Os escores foram **maiores com PS**, e o CR teve **instabilidade AP**: sem patela, o **sistema de quatro barras** (tendões quadricipital e patelar e os cruzados) perde o braço de momento e o tendão patelar puxa a tíbia para trás. O alívio é bom, embora inferior ao do joelho com patela (p. 448 e 449).
 
-!questoes central=joelho-0302
+!questoes central=joelho-0302 treino=joelho-0419
 conceito: A ATJ não é contraindicada após patelectomia; o resultado é bom, com preferência pela prótese PS pela instabilidade AP do CR.
 como: O TARO 2006 afirmou, para certo ou errado, que a ATJ está contraindicada no patelectomizado.
 armadilha: Confundir patelectomia com descontinuidade do mecanismo extensor, que é a contraindicação absoluta.
@@ -573,7 +573,7 @@ O **clunk patelar** é típico da **PS**: nódulo fibroso no tendão quadricipit
 
 A **lesão arterial** é rara (0,03% a 0,2%), mas 25% terminam em amputação (p. 459). A **paralisia fibular** (menos de 1% a quase 2%) ocorre sobretudo na **correção de deformidades fixas combinadas de valgo e flexão**, comuns na artrite reumatoide: o nervo, lateral e posterior, é estirado nas duas direções. Outros fatores: epidural, laminectomia prévia, garrote acima de 90 minutos, IMC alto e a **deformidade em valgo** por si só (p. 459). Numa revisão de mais de 383 mil ATJ primárias do estado de Nova York, a incidência foi de 0,12%, e o **valgo** e a **cirurgia prévia da coluna** foram os fatores mais comuns (p. 459). Conduta: **afrouxar o curativo e fletir o joelho**; na prevenção, imobilizar em alguma flexão (p. 439 e 459).
 
-!questoes central=joelho-0183 relacionadas=joelho-0292
+!questoes central=joelho-0183 relacionadas=joelho-0292 treino=joelho-0415
 conceito: A paralisia do nervo fibular após ATJ se relaciona à correção da deformidade fixa combinada de valgo e flexão; tratar soltando o curativo e fletindo o joelho.
 como: O TEOT 2025 e o TARO 2009 perguntaram a deformidade combinada mais associada à paralisia fibular.
 armadilha: Marcar varo e flexão; no varo o lado lateral não é alongado.

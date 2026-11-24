@@ -99,7 +99,7 @@ No **idoso não gonocócico**, S. aureus responde por cerca de metade dos casos 
 | Lúpus com hipoesplenismo, poliarticular | Gonococo, Proteus, Salmonella | Asplenia funcional |
 !fim
 
-!questoes central=conceitos-basicos-0288
+!questoes central=conceitos-basicos-0288 treino=conceitos-basicos-0425,conceitos-basicos-0426
 conceito: S. aureus lidera em todas as idades, mas o gonococo responde por cerca de 75% da artrite séptica do adulto jovem saudável e sexualmente ativo (Campbell, p. 825).
 como: O TARO 2009 perguntou o agente mais comum da artrite piogênica do adulto jovem, entre Pseudomonas, Hib, S. aureus e gonococo.
 armadilha: Responder S. aureus por reflexo: a palavra "adulto jovem" puxa o gonococo; Hib é do lactente não vacinado e Pseudomonas, do usuário de droga injetável e do pé puntiforme.
@@ -285,7 +285,7 @@ Aqui os livros divergem, e a prova escolheu um lado. O Campbell afirma que, na l
 
 O Campbell insiste em **diferenciar a espondilodiscite brucelar da tuberculosa**, parecidas na RM, porque o antibiótico é outro. O Tachdjian (cap. 23, p. 985) dá uma pista de nível: a espondilite brucelar acomete mais as **vértebras lombares**, e a tuberculosa, mais os **níveis torácicos**.
 
-!questoes central=conceitos-basicos-0201
+!questoes central=conceitos-basicos-0201 treino=conceitos-basicos-0427,conceitos-basicos-0428
 conceito: Na série de brucelose citada pelo Tachdjian, a artrite é a forma osteoarticular dominante e o quadril é a articulação mais acometida (53%).
 como: O TARO 2025 perguntou a artrite mais comum da brucelose, entre joelho, punho, quadril e tornozelo.
 armadilha: Marcar joelho por ser a articulação séptica mais comum em geral; na brucelose o quadril lidera, e o Campbell nem fala de artrite periférica, mas de sacroileíte e espondilite.
@@ -431,7 +431,7 @@ O Rockwood descreve as etapas. Primeiro, a **adesão** da bactéria à superfíc
 
 O Campbell, 15ª ed., conta a mesma história com a figura de GRISTINA (cap. 58, p. 2524): à medida que a infecção progride, a colonização ocorre dentro de um **biofilme exopolissacarídeo protetor**, especialmente abundante no **fragmento ósseo desvitalizado**, que serve de substrato passivo; as defesas do hospedeiro **não penetram o biofilme**; a inflamação forma abscesso, fístula e, às vezes, extrusão do sequestro. No capítulo 4 (p. 282), a elaboração de **glicocálice por Staphylococcus e Pseudomonas é marcador de virulência**, e no capítulo 23 as esferas de PMMA, depois de liberarem todo o antibiótico, viram corpo estranho colonizável por bactérias formadoras de glicocálice. Por isso irrigação com soro não "dissolve" biofilme: o Campbell (cap. 22) só vê vantagem pequena de lavados antibiofilme sobre o soro.
 
-!questoes relacionadas=conceitos-basicos-0064,conceitos-basicos-0275,quadril-0010
+!questoes relacionadas=conceitos-basicos-0064,conceitos-basicos-0275,quadril-0010 treino=conceitos-basicos-0423
 conceito: O biofilme amadurece pela deposição de matriz exopolissacarídea (glicocálice) sobre o osso desvitalizado e o implante, forma-se em horas na fratura exposta, adere ao osso e ao implante e resiste ao antibiótico e às defesas.
 como: O TEOT 2022 e a SBOT-SP perguntaram a substância depositada na maturação do biofilme na infecção pós-osteossíntese; o ENARE R4 2024 pediu a afirmação correta sobre biofilme nas infecções pós-artroplastia.
 armadilha: Fibronectina e fibrinogênio são moléculas do hospedeiro a que a bactéria adere, não a matriz que ela secreta; e o biofilme adere também ao osso, é resistente ao cisalhamento e não sai com irrigação.
@@ -474,7 +474,7 @@ O **S. aureus** domina a osteomielite (**30% a 60%**); os **coagulase-negativos*
 
 Para buscar o germe preso ao implante existe a **sonicação**: o implante retirado vai em recipiente sólido, passa por vórtex e ultrassom, que **desaloja os microrganismos aderentes**, e o líquido resultante é cultivado (Rockwood, p. 852). Na série de TRAMPUZ, a sensibilidade subiu de 60,8% (cultura convencional do tecido) para **78,5%**, com especificidade de 98,8%, sobretudo nas polimicrobianas, e o germe sai viável para antibiograma. O Rockwood recomenda de três a cinco amostras profundas, em número ímpar; swab de fístula não serve.
 
-!questoes central=conceitos-basicos-0148
+!questoes central=conceitos-basicos-0148 treino=conceitos-basicos-0424
 conceito: Sonicação é o processo que desaloja os microrganismos aderidos ao implante retirado e aumenta a sensibilidade da cultura (78,5% contra 60,8%).
 como: O TEOT 2024 perguntou o nome do método que desaloja microrganismos dos implantes para aumentar a sensibilidade das culturas.
 armadilha: Confundir com PCR, que detecta DNA (inclusive de bactérias mortas) e não desaloja nada.
@@ -510,7 +510,7 @@ O raciocínio é o da FRI: fístula e duas culturas iguais são inequívocas; cu
 
 Nesta edição, o texto do capítulo 8 (p. 452) fala em 70% de PMN no agudo e 90% no crônico, enquanto a tabela do capítulo 4 (p. 284) inverte (90% agudo, 70% crônico); o capítulo 8 também cita, na punção, mais de 3.000 células/mm3 com 70% ou mais de PMN como sugestivo de infecção (p. 451). Nenhum dos capítulos do Campbell traz os cortes de 1.100 células para o joelho e 3.000 para o quadril. Eles vêm de outra linha de estudos, que The Adult Hip, 3ª ed., resume. No capítulo 81 (p. 1041), MASON achou, no joelho protético, mais de 2.500 células com pelo menos 60% de PMN (sensibilidade de 98% e especificidade de 95%); GHANEM definiu o corte ótimo de **1.100 células com mais de 64% de neutrófilos**; e a diretriz da AAOS chama de "altamente sugestivo" mais de 1.700 células (faixa de 1.100 a 3.000) ou mais de 65% de neutrófilos. No mesmo capítulo, SPANGEHL viu todos os quadris infectados com PCR acima de 10 mg/L ou VHS acima de 30 mm/h. No capítulo 93 (p. 1163), específico do quadril, SCHINSKY chegou a cortes ótimos de mais de 4.200 células e mais de 80% de neutrófilos, e, com VHS e PCR elevadas, a **mais de 3.000 células e 80% de neutrófilos**; o livro observa que a contagem é bem estudada no joelho e pouco no quadril. A Tabela 93.1 (p. 1161) repete os dois critérios maiores da MSIS: fístula comunicando com a prótese e o mesmo patógeno em duas amostras.
 
-!questoes relacionadas=joelho-0191
+!questoes relacionadas=joelho-0191 treino=conceitos-basicos-0421,conceitos-basicos-0429
 conceito: Os critérios maiores da MSIS são fístula comunicando com a articulação ou a prótese e duas culturas positivas do mesmo organismo; alfa-defensina, purulência e cultura única são menores.
 como: O TEOT 2025 perguntou o critério maior de infecção após artroplastia do joelho entre fístula, alfa-defensina, purulência e uma cultura positiva.
 armadilha: Marcar purulência intraoperatória ou uma cultura positiva, que são critérios menores.
@@ -538,7 +538,7 @@ A classificação de TSUKAYAMA separa quatro situações (Campbell, cap. 4): **i
 
 O **desbridamento com retenção da prótese** é limitado a um pequeno grupo: infecção **precoce** (menos de 4 semanas) ou **hematogênica aguda** com **componentes bem fixos**; na crônica tardia ele foi universalmente malsucedido e não deve ser tentado (Campbell, cap. 8, p. 452). O biofilme explica a regra: nas primeiras semanas ele ainda é imaturo e o desbridamento com troca do polietileno consegue removê-lo; depois, ele se organiza sobre o metal e só sai com o implante. Por isso a virulência do germe pesa: **a infecção por S. aureus é contraindicação relativa ao desbridamento com retenção** (p. 454). O livro pede antibiótico IV por 6 semanas e **troca do polietileno**; no quadril, o duplo DAIR chegou a 94% nas primárias (cap. 4).
 
-!questoes central=conceitos-basicos-0200
+!questoes central=conceitos-basicos-0200 treino=conceitos-basicos-0422
 conceito: Na infecção aguda da artroplastia do joelho, a cultura positiva para S. aureus é contraindicação relativa ao desbridamento com retenção da prótese (Campbell, cap. 8, p. 454).
 como: O TARO 2025 perguntou o significado do S. aureus na infecção aguda pós-artroplastia do joelho.
 armadilha: Tratar como contraindicação absoluta, ou como contraindicação à revisão em dois tempos, que é justamente a saída quando a retenção falha.
