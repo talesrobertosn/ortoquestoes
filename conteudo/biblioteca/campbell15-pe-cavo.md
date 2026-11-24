@@ -1,6 +1,6 @@
 ---
 id: campbell15-pe-cavo
-versao: 1
+versao: 2
 titulo: Pé cavo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (caps. 19 e 34)
 capitulo: Capítulo 92 · Neurogenic Disorders (seção Cavus Foot)
 autores: Carson M. RIDER
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (Cavus Foot, p. 4037 a 4059, com as e-páginas 4042.e1 e 4051.e1); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (Pes Cavus, p. 755 a 767, e coalizão tarsal, p. 749 aprox.) e cap. 34 (CHARCOT-MARIE-TOOTH, p. 1680 a 1686).
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (Cavus Foot, p. 4037 a 4059, com as e-páginas 4042.e1 e 4051.e1); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (Pes Cavus, p. 755 a 767, e coalizão tarsal, p. 749) e cap. 34 (CHARCOT-MARIE-TOOTH, p. 1680 a 1686).
 subtemas: Pé cavo
 resumo: Pé cavo é arco longitudinal alto com equino do antepé (1º raio em flexão plantar e pronado) e retropé varo (cavovaro, o mais comum) ou em calcâneo (calcaneocavo, da paralisia do tríceps sural); dois terços têm causa neurológica e a mais comum é CHARCOT-MARIE-TOOTH (tibial anterior e fibular curto fracos, fibular longo e tibial posterior fortes, intrínsecos contraídos); exame neurológico e da coluna obrigatórios, RM se a causa não aparece; COLEMAN testa a flexibilidade do retropé (corrigiu = tratar só o antepé); MEARY normal 0° e aumentado, HIBBS normal acima de 150° e diminuído, KITE perto de zero = varo, calcaneal pitch normal 18° a 32°; tratamento: liberação plantar sempre, fibular longo para curto, tibial posterior para o dorso, JONES, osteotomia dorsal do 1º metatarso, DWYER no varo rígido, COLE, JAPAS e JAHSS no mediopé e tríplice artrodese como último recurso.
 ---
@@ -101,7 +101,7 @@ Os dois livros concordam: **CMT é a doença neuromuscular mais comum que causa 
 
 O **pé torto** residual ou recidivado frequentemente tem cavo (Tachdjian, p. 756). Entre as causas pós-traumáticas, a **síndrome compartimental** posterior profunda pode dar um cavovaro com garra que aparece meses depois e progride (Campbell, p. 4040); consolidações viciosas do calcâneo e do colo do tálus, esmagamentos, queimaduras, lesão do ciático por injeção e **lacerações dos fibulares** completam a lista (Campbell, p. 4040; Tachdjian, p. 756).
 
-Por fim, há o grupo em que a investigação completa não acha causa: o **idiopático** do Campbell, atribuído ao desequilíbrio entre extrínsecos e intrínsecos (p. 4040 e 4041), e, no Tachdjian, o subgrupo presente desde o lactente, chamado de **cavo congênito** (p. 756). Sobre a coalizão tarsal, o Tachdjian registra só que o **cavovaro** aparece ocasionalmente em pacientes com coalizão (p. 749 aprox.).
+Por fim, há o grupo em que a investigação completa não acha causa: o **idiopático** do Campbell, atribuído ao desequilíbrio entre extrínsecos e intrínsecos (p. 4040 e 4041), e, no Tachdjian, o subgrupo presente desde o lactente, chamado de **cavo congênito** (p. 756). Sobre a coalizão tarsal, o Tachdjian registra só que o **cavovaro** aparece ocasionalmente em pacientes com coalizão (p. 749).
 
 !tabela Causas de pé cavo por grupo (Campbell 15ª ed., cap. 92, p. 4038 a 4041; Tachdjian, 6ª ed., cap. 19, p. 749 e 755 a 756)
 | Grupo | Exemplos | Comportamento |
@@ -122,7 +122,7 @@ Por fim, há o grupo em que a investigação completa não acha causa: o **idiop
 conceito: A etiologia do pé cavo é neurológica em dois terços dos casos e a doença neuromuscular mais comum é CHARCOT-MARIE-TOOTH; casos sem causa desde o lactente são chamados de congênitos.
 como: A SBOT-SP perguntou a principal etiologia neuromuscular; o ENARE R4 2023 pediu uma etiologia congênita de pé cavo, com coalizão tarsal como resposta.
 armadilha: Escolher poliomielite ou paralisia cerebral como a principal, ou marcar tumor medular e hidrocefalia como congênitos.
-alerta: Em `pe-tornozelo-0154` o gabarito é coalizão tarsal; o Tachdjian (p. 749 aprox.) só diz que o cavovaro aparece ocasionalmente em pacientes com coalizão, e chama de congênito o subgrupo de cavo sem causa presente desde o lactente (p. 756). O livro não lista a coalizão como etiologia congênita do cavo.
+alerta: Em `pe-tornozelo-0154` o gabarito é coalizão tarsal; o Tachdjian (p. 749) só diz que o cavovaro aparece ocasionalmente em pacientes com coalizão, e chama de congênito o subgrupo de cavo sem causa presente desde o lactente (p. 756). O livro não lista a coalizão como etiologia congênita do cavo.
 !fim
 
 # CHARCOT-MARIE-TOOTH: quem vence e quem perde {radar=confirmado}

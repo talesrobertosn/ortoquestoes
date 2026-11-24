@@ -1,6 +1,6 @@
 ---
 id: campbell15-rigidez-cotovelo
-versao: 3
+versao: 4
 titulo: Rigidez do cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -36,7 +36,7 @@ O cotovelo tem **três articulações** na mesma cápsula: a **ulnoumeral**, gí
 
 O fim do movimento normal é ósseo: olécrano na fossa olecraniana na extensão, coronoide e cabeça do rádio nas fossas coronoide e radial na flexão. Por isso a liberação sempre **limpa as fossas**: com a fossa olecraniana cheia de fibrose, osteófito ou OH, a extensão para antes do fim, mesmo sem cápsula.
 
-!tabela Restrições ao movimento e o que muda na rigidez (Campbell 15, cap. 15, Box 15.1, p. 645 aprox.)
+!tabela Restrições ao movimento e o que muda na rigidez (Campbell 15, cap. 15, Box 15.1)
 | Restrição | Estrutura | Na rigidez |
 |---|---|---|
 | Geometria articular | Tróclea, capítulo, incisura troclear | Incongruência após fratura articular (intrínseca) |
@@ -71,7 +71,7 @@ O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 845 a 847), conta a orige
 
 ## Indicação cirúrgica
 
-O Campbell (cap. 51, p. 2185) manda tratar primeiro com **fisioterapia e talas**, buscando 30 a 130, e considerar a cirurgia quando o **arco de flexão fica abaixo de 100 graus após o tratamento não operatório**, **especialmente** com **contratura em flexão maior que 45 graus**. O Green (p. 847) usa outro par: **perda de 40 graus de extensão** ou **menos de 105 graus de flexão**; não se opera só pela aparência, e extensão completa nunca é garantida. A mensagem comum: **o que indica a cirurgia é a perda funcional depois de esgotado o conservador**, e a referência é o arco abaixo de 100 graus. Quanto ao momento, a maioria **não melhora depois de 4 a 6 meses** da lesão, e por volta de 6 meses a cirurgia pode ser considerada (Green, p. 845 aprox.).
+O Campbell (cap. 51, p. 2185) manda tratar primeiro com **fisioterapia e talas**, buscando 30 a 130, e considerar a cirurgia quando o **arco de flexão fica abaixo de 100 graus após o tratamento não operatório**, **especialmente** com **contratura em flexão maior que 45 graus**. O Green (p. 847) usa outro par: **perda de 40 graus de extensão** ou **menos de 105 graus de flexão**; não se opera só pela aparência, e extensão completa nunca é garantida. A mensagem comum: **o que indica a cirurgia é a perda funcional depois de esgotado o conservador**, e a referência é o arco abaixo de 100 graus. Quanto ao momento, a maioria **não melhora depois de 4 a 6 meses** da lesão, e por volta de 6 meses a cirurgia pode ser considerada (Green, p. 845).
 
 !questoes central=ombro-cotovelo-0491
 conceito: O Campbell indica liberação quando o arco de flexoextensão fica abaixo de 100 graus depois do tratamento não operatório, sobretudo com contratura em flexão acima de 45 graus.
@@ -137,7 +137,7 @@ O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 844 a 848), avalia causa,
 
 ## O conservador
 
-Os três livros começam pelo **não operatório**. O Campbell (cap. 51, p. 2185) usa **fisioterapia e talas**; no capítulo 57 (p. 2503 aprox.), na artrofibrose leve, **fisioterapia agressiva e órteses** podem bastar. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39), cita a **tala estática progressiva** supervisionada como eficaz e, no capítulo 40, para a rigidez após fratura da cabeça do rádio (causa mais comum: **contratura capsular**), soma a **turnbuckle**.
+Os três livros começam pelo **não operatório**. O Campbell (cap. 51, p. 2185) usa **fisioterapia e talas**; no capítulo 57, na artrofibrose leve, **fisioterapia agressiva e órteses** podem bastar. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39), cita a **tala estática progressiva** supervisionada como eficaz e, no capítulo 40, para a rigidez após fratura da cabeça do rádio (causa mais comum: **contratura capsular**), soma a **turnbuckle**.
 
 O Green (p. 857) explica a física. A **tala dinâmica** aplica **torque constante**, dói e tem baixa adesão. A **estática progressiva** aplica um **deslocamento incremental** e deixa o tecido sofrer **relaxamento de tensão**, "como um alongamento de ILIZAROV". A **turnbuckle** (GREEN e MCCOY) serve para contraturas em flexão de **25 a 40 graus**. Princípio: a tala **raramente aumenta** o arco obtido na sala de cirurgia; ela **mantém** o ganho.
 
@@ -283,9 +283,9 @@ O ganho é de **50 a 70 graus**, igual entre as causas; a **anquilose ganha mais
 
 # BROOKER: a OH do quadril {radar=fundamento}
 
-Fora do cotovelo, a classificação muda de lógica: a de BROOKER (Campbell, cap. 4, p. 265 aprox.; HEBERT, cap. 10) é **radiográfica**, pela distância entre as massas ósseas, e não funcional como HASTINGS e GRAHAM. A calcificação aparece na **3ª a 4ª semana**, mas a OH só **amadurece em 1 a 2 anos**; a maioria é **assintomática**, e dor e perda de movimento surgem nos **graus III e IV**. Fatores de risco (Campbell): **OH prévia**, **osteoartrite hipertrófica**, **espondilite anquilosante**, **DISH**, PAGET, **sexo masculino** e etnia afro-americana; o HEBERT soma **TCE, coma, FORESTIER** e **dissecção extensa** e descreve três formas: massa **intramuscular** (trauma de repetição), massa **contígua ao periósteo** (hematoma subperiosteal) e ossificação **periarticular** na cápsula e nos planos fasciais.
+Fora do cotovelo, a classificação muda de lógica: a de BROOKER (Campbell, cap. 4; HEBERT, cap. 10) é **radiográfica**, pela distância entre as massas ósseas, e não funcional como HASTINGS e GRAHAM. A calcificação aparece na **3ª a 4ª semana**, mas a OH só **amadurece em 1 a 2 anos**; a maioria é **assintomática**, e dor e perda de movimento surgem nos **graus III e IV**. Fatores de risco (Campbell): **OH prévia**, **osteoartrite hipertrófica**, **espondilite anquilosante**, **DISH**, PAGET, **sexo masculino** e etnia afro-americana; o HEBERT soma **TCE, coma, FORESTIER** e **dissecção extensa** e descreve três formas: massa **intramuscular** (trauma de repetição), massa **contígua ao periósteo** (hematoma subperiosteal) e ossificação **periarticular** na cápsula e nos planos fasciais.
 
-!tabela Classificação de BROOKER (Campbell 15, cap. 4, p. 265 aprox.; HEBERT, cap. 10)
+!tabela Classificação de BROOKER (Campbell 15, cap. 4; HEBERT, cap. 10)
 | Grau | Descrição |
 |---|---|
 | I | Ilhas de osso nas partes moles |
@@ -329,7 +329,7 @@ alerta: Questão sem gabarito oficial no acervo. O Campbell (cap. 51, p. 2185 e 
 
 # Liberação artroscópica {radar=fundamento}
 
-O Campbell's Operative Orthopaedics, 15ª ed., aborda a contratura **primeiro por artroscopia** (cap. 51, p. 2186), com bons ganhos e **baixa recidiva**. No capítulo 57 (p. 2503 aprox.), lembra que na **artrofibrose** a distensão e os marcos ficam prejudicados e é preciso estar pronto para **converter**. O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 849), é mais restritivo: a artroscopia funciona no **jovem atleta** com **corpos livres** ou hiperextensão e contratura **mínima**; no **pós-traumático**, a cápsula de **0,5 a 1 cm** aderida ao úmero não sai e põe **ulnar, mediano e radial em risco**; e HOTCHKISS **não a faz se o ulnar precisa ser transposto** ou se há **osteófitos grandes no canto posteromedial** (assoalho do túnel cubital); ele viu dois ulnares desbridados por shaver. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39), dá papel limitado à artroscopia após fixação do úmero distal, porque os implantes exigem retirada aberta.
+O Campbell's Operative Orthopaedics, 15ª ed., aborda a contratura **primeiro por artroscopia** (cap. 51, p. 2186), com bons ganhos e **baixa recidiva**. No capítulo 57, lembra que na **artrofibrose** a distensão e os marcos ficam prejudicados e é preciso estar pronto para **converter**. O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 849), é mais restritivo: a artroscopia funciona no **jovem atleta** com **corpos livres** ou hiperextensão e contratura **mínima**; no **pós-traumático**, a cápsula de **0,5 a 1 cm** aderida ao úmero não sai e põe **ulnar, mediano e radial em risco**; e HOTCHKISS **não a faz se o ulnar precisa ser transposto** ou se há **osteófitos grandes no canto posteromedial** (assoalho do túnel cubital); ele viu dois ulnares desbridados por shaver. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39), dá papel limitado à artroscopia após fixação do úmero distal, porque os implantes exigem retirada aberta.
 
 Na técnica de PHILLIPS e STRASBURGER (Campbell, cap. 57, p. 2504), distende-se pelo **soft spot** (triângulo cabeça do rádio, epicôndilo lateral, ponta do olécrano); recria-se a **fossa coronoide** e resseca-se a ponta do coronoide; descola-se a cápsula cerca de **2,5 cm** do úmero, com o braquial protegendo o **mediano**; faz-se uma **capsulotomia anterior de 1 cm, de medial para lateral**, sem ir distal (**radial**); no compartimento posterior, **nada de shaver perto do ulnar**; resseca-se a ponta do olécrano e alarga-se a fossa; imobiliza-se em **extensão máxima**. Ao ressecar o osteófito da ponta do olécrano, **no máximo 2 a 3 mm** de osso, para não sobrecarregar o colateral ulnar (p. 2502).
 
@@ -380,11 +380,11 @@ armadilha: Achar que a via medial dá bom acesso à cabeça do rádio ou à OH l
 
 # O nervo ulnar na cirurgia da rigidez {radar=confirmado}
 
-O ulnar passa **atrás do eixo de flexão**. Num cotovelo que pouco fletia, ele se acomoda encurtado e cicatrizado; quando a liberação devolve de uma vez 40 ou 50 graus de flexão, ele é **estirado** sobre o epicôndilo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2186), chama de complicação própria da liberação a **neurite ulnar tardia**: **11%** após liberação artroscópica, **mais comum nas contraturas graves**; recomenda **descompressão e/ou transposição profilática**, sobretudo com **contratura em flexão acentuada**. No capítulo 57 (p. 2503 aprox.), o estudo de BLONNA (235 liberações) mostra que **60%** das neurites foram de forma **rápida** na primeira semana, tratadas com **transposição urgente**, e que os fatores de risco são **OH**, **neuropatia prévia** e **arco pré-operatório menor que 100 graus**. O capítulo 15 (p. 646) descomprime o ulnar com **sintomas prévios** ou **flexão menor que 90 graus**.
+O ulnar passa **atrás do eixo de flexão**. Num cotovelo que pouco fletia, ele se acomoda encurtado e cicatrizado; quando a liberação devolve de uma vez 40 ou 50 graus de flexão, ele é **estirado** sobre o epicôndilo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2186), chama de complicação própria da liberação a **neurite ulnar tardia**: **11%** após liberação artroscópica, **mais comum nas contraturas graves**; recomenda **descompressão e/ou transposição profilática**, sobretudo com **contratura em flexão acentuada**. No capítulo 57, o estudo de BLONNA (235 liberações) mostra que **60%** das neurites foram de forma **rápida** na primeira semana, tratadas com **transposição urgente**, e que os fatores de risco são **OH**, **neuropatia prévia** e **arco pré-operatório menor que 100 graus**. O capítulo 15 (p. 646) descomprime o ulnar com **sintomas prévios** ou **flexão menor que 90 graus**.
 
 O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 844 e 847), diz que **a maioria dos pacientes com perda de flexão precisa de transposição**; na rigidez **moderada** prevê liberação e transposição do ulnar, e na **grave (menos de 30 graus de arco total)**, **dissecção e proteção de todos os nervos**. Cerca de **10%** têm disfunção ulnar depois da liberação, a maioria transitória (p. 859).
 
-!tabela Quando explorar ou transpor o ulnar (Campbell 15, cap. 15, p. 646, cap. 51, p. 2186, cap. 57, p. 2503 aprox.; Green 7, cap. 24, p. 844 a 849)
+!tabela Quando explorar ou transpor o ulnar (Campbell 15, cap. 15, p. 646, cap. 51, p. 2186, cap. 57; Green 7, cap. 24, p. 844 a 849)
 | Situação | Conduta |
 |---|---|
 | Sintomas ulnares prévios | Descompressão; transposição se tenso ou subluxando |
@@ -407,9 +407,9 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2186), diz que o **CP
 
 O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 853 e 857 a 858), usa CPM em **toda liberação aberta sem fixador**, mas como **posicionamento passivo lento e intermitente**: leva à **extensão máxima e para 20 a 30 minutos**, depois à **flexão máxima e para de novo**, para manter os extremos desde o início. **Ciclar rápido não traz vantagem e pode aumentar o edema**. Antes, 12 a 18 horas de repouso, gelo e elevação; **dreno de sucção** contra hematoma; **dexametasona 8 mg IV** de 8 em 8 horas por 48 horas contra o edema. A primeira tala vai na posição de **maior desafio**, em geral a **extensão**; o arco **raramente melhora** além do obtido na sala; mede-se e registra-se a flexoextensão e a **supinação e pronação** alcançadas; o implante só sai no fim. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39), também usa **CPM e talas estáticas progressivas**. A lógica comum: o inimigo das primeiras semanas é o **edema e o hematoma**, que reenrijecem a cápsula; o CPM lento mantém o arco enquanto o edema regride.
 
-E a rotação? O arco funcional inclui **50 de pronação e 50 de supinação** (Campbell, cap. 51, p. 2184), e a OH que limita a pronossupinação é indicação de excisão (p. 2188). Os protocolos de liberação e de excisão **não imobilizam a rotação**. O único caso dos livros em que a rotação é bloqueada é a **interposição**: 90 graus de flexão por **10 a 14 dias para impedir a rotação** (cap. 15, p. 651 aprox.).
+E a rotação? O arco funcional inclui **50 de pronação e 50 de supinação** (Campbell, cap. 51, p. 2184), e a OH que limita a pronossupinação é indicação de excisão (p. 2188). Os protocolos de liberação e de excisão **não imobilizam a rotação**. O único caso dos livros em que a rotação é bloqueada é a **interposição**: 90 graus de flexão por **10 a 14 dias para impedir a rotação** (cap. 15).
 
-!tabela Pós-operatório nos três livros (Campbell 15, cap. 51, p. 2186, cap. 15, p. 651 aprox.; Green 7, cap. 24, p. 853 a 858; Rockwood and Green 10, cap. 39)
+!tabela Pós-operatório nos três livros (Campbell 15, cap. 51, p. 2186, cap. 15; Green 7, cap. 24, p. 853 a 858; Rockwood and Green 10, cap. 39)
 | Elemento | Campbell 15 | Green 7 | Rockwood and Green 10 |
 |---|---|---|---|
 | Tala imediata | Extensão completa | Extensão máxima | Estática progressiva |
@@ -430,13 +430,13 @@ alerta: Nenhum livro diz literalmente que o CPM serve para "diminuir a formaçã
 
 ## Artroplastia de desbridamento e OUTERBRIDGE-KASHIWAGI
 
-Quando a rigidez vem da **artrose primária** (osteófitos no coronoide e no olécrano que se chocam nos extremos do arco), a cirurgia é um **desbridamento**: retirar osteófitos e corpos livres e recriar as fossas. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 15, p. 645 e 646 aprox.), indica o desbridamento para **jovens de alta demanda** que não aceitariam as restrições de carga da prótese total e para artrose grave; pode ser artroscópico ou aberto. As vias são a **coluna lateral** (técnica 15.1) e a **medial de WADA** (técnica 15.2), que permite descomprimir o ulnar e retirar os osteófitos da **borda medial** do coronoide e do olécrano.
+Quando a rigidez vem da **artrose primária** (osteófitos no coronoide e no olécrano que se chocam nos extremos do arco), a cirurgia é um **desbridamento**: retirar osteófitos e corpos livres e recriar as fossas. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 15), indica o desbridamento para **jovens de alta demanda** que não aceitariam as restrições de carga da prótese total e para artrose grave; pode ser artroscópico ou aberto. As vias são a **coluna lateral** (técnica 15.1) e a **medial de WADA** (técnica 15.2), que permite descomprimir o ulnar e retirar os osteófitos da **borda medial** do coronoide e do olécrano.
 
 O procedimento de **OUTERBRIDGE-KASHIWAGI** é a **trepanação transumeral**: abre-se um orifício na **fossa olecraniana**, de trás para a frente, para retirar osteófitos e corpos livres do compartimento anterior sem precisar de uma via anterior. O Green's Operative Hand Surgery, 7ª ed., cita o procedimento duas vezes: no capítulo 24 (p. 849), HOTCHKISS diz que **não o usa mais** para a artrose primária, preferindo a via over-the-top ou a artroscopia; no capítulo 26 (p. 894), lembra que a fossa olecraniana pode ser **fenestrada por artroscopia**, como no procedimento de OUTERBRIDGE-KASHIWAGI, o que cria um **portal extra para ver o compartimento anterior**.
 
 ## Interposição
 
-O Campbell (cap. 15, p. 647 a 651 aprox.) define a **artroplastia de interposição** como tratamento da **artrose terminal** em quem tem **contraindicação a implante**. A indicação principal é **dor incapacitante no jovem ativo** que quer evitar as restrições da prótese, quase sempre por artrose **pós-traumática ou inflamatória**. Exige partes moles o mais normais possível, musculatura do antebraço em bom estado, estoque ósseo e cápsula e ligamentos preservados; **instabilidade não é boa indicação**, porque a interposição não dá estabilidade; infecção prévia pede cautela. A técnica molda o úmero distal, resseca a cabeça do rádio e cobre as superfícies com **aloenxerto de tendão calcâneo** (ou matriz dérmica, ou fáscia lata), mantendo **90 graus de flexão** por 10 a 14 dias; o máximo de força e movimento vem em até 2 anos.
+O Campbell (cap. 15) define a **artroplastia de interposição** como tratamento da **artrose terminal** em quem tem **contraindicação a implante**. A indicação principal é **dor incapacitante no jovem ativo** que quer evitar as restrições da prótese, quase sempre por artrose **pós-traumática ou inflamatória**. Exige partes moles o mais normais possível, musculatura do antebraço em bom estado, estoque ósseo e cápsula e ligamentos preservados; **instabilidade não é boa indicação**, porque a interposição não dá estabilidade; infecção prévia pede cautela. A técnica molda o úmero distal, resseca a cabeça do rádio e cobre as superfícies com **aloenxerto de tendão calcâneo** (ou matriz dérmica, ou fáscia lata), mantendo **90 graus de flexão** por 10 a 14 dias; o máximo de força e movimento vem em até 2 anos.
 
 O prognóstico é **reservado**: só **29%** de 45 pacientes bons ou excelentes aos 6 anos; complicações acumuladas de **38,4%** (41,2% na pós-traumática e 11,7% na inflamatória) e reoperação de **23,5%**; as complicações mais comuns, em ordem, são **infecção, neuropatia e instabilidade**; a inflamatória melhora mais. O Green (p. 847 e 856) concorda: no jovem com incongruência grave, a interposição é **imprevisível**, e HOTCHKISS raramente a faz após trauma.
 
@@ -453,11 +453,11 @@ O prognóstico é **reservado**: só **29%** de 45 pacientes bons ou excelentes 
 
 # Artrodese do cotovelo {radar=confirmado}
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 15, p. 662 e 663 aprox.), trata a artrodese como **salvamento**: é tecnicamente difícil pela anatomia e pelo **longo braço de alavanca** do membro, e a perda de movimento causa incapacidade importante para o autocuidado; prótese, interposição ou até ressecção costumam dar função melhor. As indicações (Box 15.4) são **infecção** (a tuberculose foi historicamente a principal), **prótese que falhou**, **artrose pós-traumática**, artrites sem condição de artroplastia e **fraturas articulares muito cominutas**, sobretudo em **trabalhadores braçais** e no **trauma de guerra**. Pode ser preciso ressecar a cabeça do rádio para preservar a pronossupinação.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 15), trata a artrodese como **salvamento**: é tecnicamente difícil pela anatomia e pelo **longo braço de alavanca** do membro, e a perda de movimento causa incapacidade importante para o autocuidado; prótese, interposição ou até ressecção costumam dar função melhor. As indicações (Box 15.4) são **infecção** (a tuberculose foi historicamente a principal), **prótese que falhou**, **artrose pós-traumática**, artrites sem condição de artroplastia e **fraturas articulares muito cominutas**, sobretudo em **trabalhadores braçais** e no **trauma de guerra**. Pode ser preciso ressecar a cabeça do rádio para preservar a pronossupinação.
 
 A posição é a pergunta clássica. Para a artrodese **unilateral**, **90 a 100 graus de flexão** dão a **preensão mais forte**, em coerência com a biomecânica (força máxima de flexão a 90 graus). Não existe posição ideal para todos: depende do trabalho, do autocuidado e do outro braço, e recomenda-se **simular com gesso ou tala**. A artrodese **bilateral** raramente é indicada; se for, um cotovelo fica em **110 a 120 graus** (para alcançar a **boca**) e o outro em **45 a 65 graus** (para a **higiene**). A fixação usa placa AO dobrada a 90 graus com compressão (ou técnicas históricas de STAPLES e da AO com fixador externo).
 
-!tabela Posição da artrodese do cotovelo (Campbell 15, cap. 15, p. 663 aprox.)
+!tabela Posição da artrodese do cotovelo (Campbell 15, cap. 15)
 | Situação | Posição | Função preservada |
 |---|---|---|
 | Unilateral | 90 a 100 graus de flexão | Preensão mais forte |
@@ -499,7 +499,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2186), relata ganho m
 
 - **Rigidez recorrente precoce ("gelling"):** em cerca de **25%** dos casos de HOTCHKISS, geralmente perda da flexão; o sinal de alarme é **não atingir 105 a 110 graus de flexão entre a 2ª e a 3ª semana**, em geral por dor do tríceps distal; trata-se com **manipulação fechada sob bloqueio** (Green, p. 859).
 - **Nervo ulnar:** cerca de **10%** de disfunção após liberação, a maioria transitória (Green); neurite tardia em **11%** (Campbell). **Radial e interósseo posterior** correm risco na via lateral.
-- **OH recorrente:** rara com a mobilização precoce; mais comum nas lesões do SNC (Campbell, p. 2189 aprox.).
+- **OH recorrente:** rara com a mobilização precoce; mais comum nas lesões do SNC (Campbell).
 - **Ferida e partes moles:** queimados e contraturas antigas podem necrosar a pele sobre o olécrano ao ganhar flexão; prever a cobertura e fazer o **retalho antes** da liberação (gracilis livre ou antebraquial radial em ilha).
 - **Infecção:** do trajeto dos pinos do fixador (vermelhidão em cerca de 60%, antibiótico oral) e, mais grave, articular, sobretudo após **distração com interposição** em osso mal vascularizado.
 

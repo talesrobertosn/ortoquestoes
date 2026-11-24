@@ -1,6 +1,6 @@
 ---
 id: callaghan-outros-quadril
-versao: 2
+versao: 3
 titulo: Outros temas do quadril: avaliação pré-operatória, quadril neuromuscular, cápsula e luxação, artrodese
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e c
 edicao: 3ª edição (2017)
 capitulo: Capítulo 26 · Preoperative Medical Evaluation
 autores: Fabio Orozco, Sergio Pulido, Alvin C. Ong
-fonte: Livros conferidos localmente em 10/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 26 (p. 394 a 403, lido por inteiro, com as Tabelas 26.1 a 26.6 e a Figura 26.1), cap. 74 (The Neuromuscular Hip, p. 955 a 958 e 961 a 962), cap. 1 (tuberculose, p. 1 e 2), cap. 2 (ligamentos e canal femoral, p. 39 a 43 aprox.), cap. 11 (ligamentos, p. 155 a 157), cap. 49 (p. 665 aprox.), cap. 61 (DORR, p. 786 e 787), cap. 73 (p. 949 e 950) e cap. 79 (artrodese, p. 1012); Campbell's Operative Orthopaedics, 15ª ed., cap. 6 (Arthrodesis of the Hip, p. 349 e 350, Box 6.1); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1 (biomecânica do osso), cap. 15 (ferimentos por arma de fogo, seção Retained Fragments) e cap. 52 (mecanismo da luxação do quadril, Fig. 52-1); Skeletal Trauma, 5ª ed., cap. 5 (p. 106 e 116), cap. 19 (p. 510 a 519 aprox.), cap. 52 (p. 1566 a 1569 e 1594) e cap. 54 (p. 1607); Ortopedia e Traumatologia (Sizínio HEBERT), 5ª ed., cap. 9.1 (DDQ, Quadro 9.1.1) e seções de artrodese do quadril; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13 (exame da DDQ).
+fonte: Livros conferidos localmente em 10/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 26 (p. 394 a 403, lido por inteiro, com as Tabelas 26.1 a 26.6 e a Figura 26.1), cap. 74 (The Neuromuscular Hip, p. 955 a 958 e 961 a 962), cap. 1 (tuberculose, p. 1 e 2), cap. 2 (ligamentos e canal femoral), cap. 11 (ligamentos, p. 155 a 157), cap. 49, cap. 61 (DORR, p. 786 e 787), cap. 73 (p. 949 e 950) e cap. 79 (artrodese, p. 1012); Campbell's Operative Orthopaedics, 15ª ed., cap. 6 (Arthrodesis of the Hip, p. 349 e 350, Box 6.1); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1 (biomecânica do osso), cap. 15 (ferimentos por arma de fogo, seção Retained Fragments) e cap. 52 (mecanismo da luxação do quadril, Fig. 52-1); Skeletal Trauma, 5ª ed., cap. 5 (p. 106 e 116), cap. 19, cap. 52 (p. 1566 a 1569 e 1594) e cap. 54 (p. 1607); Ortopedia e Traumatologia (Sizínio HEBERT), 5ª ed., cap. 9.1 (DDQ, Quadro 9.1.1) e seções de artrodese do quadril; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13 (exame da DDQ).
 subtemas: Outros temas do quadril
 resumo: Pré-operatório da artroplastia segundo CALLAGHAN: cirurgia ortopédica é de risco cardíaco intermediário e pulmonar baixo; 4 MET = subir dois lances de escada, e capacidade igual ou menor que 4 MET pede investigação; quatro condições cardíacas ativas (coronária instável, insuficiência cardíaca descompensada, arritmia significativa como MOBITZ II, valvopatia grave); estenose aórtica grave se corrige antes; infarto espera 6 semanas com teste de estresse; balão 14 dias, stent metálico 30 a 45 dias, farmacológico mais de 365 dias, sempre com aspirina; raqui ou peridural reduz pneumonia em 39% e depressão respiratória em 59%; diabético tipo I com 100 a 150 mg/dL por 7 dias; até 40% dos reumatoides internados com subluxação entre C1 e C2. Quadril neuromuscular: flexores e adutores vencem abdutores e extensores, com coxa valga, anteversão e obliquidade pélvica. Tuberculose: prótese só após 10 anos de quiescência. Luxação pura em flexão, adução e rotação medial; transferências tendinosas só após 1 ano; projétil intra-articular sai pelo chumbo; artrodese sobrecarrega mais a coluna lombar que o joelho.
 ---
@@ -369,9 +369,9 @@ armadilha: Ler semanas onde o livro escreve meses, aceitar "metade" da tuberculo
 
 ## Os três ligamentos
 
-A cápsula do quadril é reforçada por três ligamentos longitudinais e pelas fibras anulares da zona orbicular. O The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., descreve-os duas vezes: no capítulo 2 (p. 42 e 43 aprox.), com olhar cirúrgico, e no capítulo 11 (p. 155 a 157), com dados de secção em cadáver.
+A cápsula do quadril é reforçada por três ligamentos longitudinais e pelas fibras anulares da zona orbicular. O The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., descreve-os duas vezes: no capítulo 2, com olhar cirúrgico, e no capítulo 11 (p. 155 a 157), com dados de secção em cadáver.
 
-!tabela Ligamentos capsulares do quadril (The Adult Hip, cap. 2, p. 42 e 43 aprox., e cap. 11, p. 155 a 157)
+!tabela Ligamentos capsulares do quadril (The Adult Hip, cap. 2 e cap. 11, p. 155 a 157)
 | Ligamento | Trajeto | O que restringe |
 | --- | --- | --- |
 | Iliofemoral (Y de BIGELOW) | da espinha ilíaca anteroinferior à linha intertrocantérica, em Y invertido | tenso na extensão completa, freia a extensão além do neutro (hiperextensão); também rotação externa, adução e translação anterior; é o mais forte (cerca de 350 N até a falha) e o principal estabilizador estático em pé |
@@ -379,7 +379,7 @@ A cápsula do quadril é reforçada por três ligamentos longitudinais e pelas f
 | Isquiofemoral | da borda isquiática do acetábulo, em espiral, até o trocânter maior e a zona orbicular | aperta na extensão e afrouxa na flexão; principal freio da rotação interna; bandas superiores ajudam contra a adução em flexão |
 !fim
 
-As fibras são torcidas, e a **extensão enrola e aperta os três ligamentos** como um parafuso. Por isso a extensão completa é a posição de **máxima estabilidade** da articulação. Curiosamente, não é a de melhor contato: o maior contato articular acontece em **flexão, abdução e rotação externa**, posição em que os ligamentos estão frouxos. E o quadril corre maior risco de luxação traumática quando está **fletido e aduzido**, nem congruente nem travado pelos ligamentos (cap. 2, p. 43 aprox.).
+As fibras são torcidas, e a **extensão enrola e aperta os três ligamentos** como um parafuso. Por isso a extensão completa é a posição de **máxima estabilidade** da articulação. Curiosamente, não é a de melhor contato: o maior contato articular acontece em **flexão, abdução e rotação externa**, posição em que os ligamentos estão frouxos. E o quadril corre maior risco de luxação traumática quando está **fletido e aduzido**, nem congruente nem travado pelos ligamentos (cap. 2).
 
 Na prática da prótese: o iliofemoral contraturado deixa o quadril em flexão e rotação interna e pode pedir liberação; o pubofemoral é liberado para corrigir a contratura em adução.
 
@@ -399,7 +399,7 @@ O acetábulo só é esférico no domo de carga, e a cabeça femoral é esférica
 
 O número cobrado vem do **Skeletal Trauma, 5ª ed.** (cap. 54, p. 1607): **aproximadamente 70% de toda a superfície articular da cabeça femoral participa da transferência de carga**. A consequência clínica é direta: uma fratura da cabeça femoral retira parte dessa área, o pico de compressão sobre o que restou sobe, a matriz da cartilagem se rompe e a artrose pós-traumática se instala.
 
-Para referência, a amplitude normal segundo o The Adult Hip (cap. 2, p. 43 aprox.): flexão de 120 graus, extensão de 30, abdução de 45 a 50, adução de 20 a 30, rotação interna de 35 e externa de 45. A marcha no plano pede pelo menos 30 graus de flexão, 10 de hiperextensão e 5 de abdução, adução e rotações.
+Para referência, a amplitude normal segundo o The Adult Hip (cap. 2): flexão de 120 graus, extensão de 30, abdução de 45 a 50, adução de 20 a 30, rotação interna de 35 e externa de 45. A marcha no plano pede pelo menos 30 graus de flexão, 10 de hiperextensão e 5 de abdução, adução e rotações.
 
 !questoes central=quadril-0493 relacionadas=quadril-0492
 conceito: Os três ligamentos capsulares apertam na extensão; o iliofemoral é o principal freio da hiperextensão, o pubofemoral limita abdução e rotação externa e, no Skeletal Trauma, é descrito como freio da extensão patológica; o isquiofemoral freia a rotação interna. Cerca de 70% da superfície articular da cabeça femoral participa da transferência de carga.
@@ -414,7 +414,7 @@ Com a idade, a cortical do fêmur afina. A intuição diria que o osso encolhe j
 
 O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, seção de biomecânica do osso), descreve a diáfise como um cilindro oco e afirma que, à medida que a pessoa envelhece, **o diâmetro da diáfise femoral aumenta e a espessura da cortical diminui**. O Skeletal Trauma, 5ª ed. (cap. 5, p. 106), diz o mesmo com outras palavras: os fêmures **se expandem no diâmetro periosteal enquanto a espessura cortical diminui**, nos dois sexos, no colo e na diáfise.
 
-O mecanismo é a soma de dois processos em superfícies diferentes. Na superfície interna, a **reabsorção endosteal** alarga o canal. Na externa, a **aposição periosteal** acrescenta osso. Como a reabsorção de dentro é maior que a aposição de fora, o saldo é uma parede mais fina em um tubo mais largo. O The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (cap. 2, p. 39 e 40 aprox.), registra o lado endosteal: a **expansão endosteal do istmo com a idade** produz o fêmur em **chaminé**, enquanto o fêmur jovem tem forma de trompete ou de taça de champanhe.
+O mecanismo é a soma de dois processos em superfícies diferentes. Na superfície interna, a **reabsorção endosteal** alarga o canal. Na externa, a **aposição periosteal** acrescenta osso. Como a reabsorção de dentro é maior que a aposição de fora, o saldo é uma parede mais fina em um tubo mais largo. O The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (cap. 2), registra o lado endosteal: a **expansão endosteal do istmo com a idade** produz o fêmur em **chaminé**, enquanto o fêmur jovem tem forma de trompete ou de taça de champanhe.
 
 Por que isso importa? Pela mecânica do tubo. A rigidez em flexão depende do **momento de inércia**, que cresce com uma potência alta do raio. O Rockwood escreve que a rigidez de um osso tubular aumenta com a terceira potência do raio quando o diâmetro externo cresce; o Skeletal Trauma (cap. 5, p. 116) fala em quarta potência do raio para o momento de inércia de uma estrutura tubular. Os dois chegam à mesma conclusão: material colocado longe do eixo rende muito mais. Assim, o alargamento compensa em parte a perda de espessura e de qualidade do osso, e o Rockwood afirma que esse ganho basta para proteger o idoso da fratura diafisária osteoporótica do fêmur. A vértebra não tem essa saída: o afinamento trabecular não pode ser compensado por mudança de forma, e as fraturas por compressão aparecem.
 
@@ -479,7 +479,7 @@ alerta: As duas questões estão sem gabarito oficial. Em `quadril-0482`, o Rock
 
 A regra geral dos ferimentos por arma de fogo de baixa energia é deixar o projétil onde está. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 15, seção Retained Fragments), diz que os fragmentos retidos são em geral benignos e podem permanecer, desde que não estejam em local que cause dor (palma da mão, planta do pé, região periarticular) e desde que **não sejam intra-articulares, pela preocupação com a intoxicação por chumbo**. A figura que ilustra o trecho (Fig. 15-15) é justamente um fragmento retido no quadril.
 
-O Skeletal Trauma, 5ª ed. (cap. 19, p. 510 a 519 aprox.), explica o porquê. Dentro da articulação, o **líquido sinovial dissolve o chumbo** (o trabalho clássico citado é o de LEONARD, de 1969). O metal dissolvido se deposita na sinóvia e produz três problemas:
+O Skeletal Trauma, 5ª ed. (cap. 19), explica o porquê. Dentro da articulação, o **líquido sinovial dissolve o chumbo** (o trabalho clássico citado é o de LEONARD, de 1969). O metal dissolvido se deposita na sinóvia e produz três problemas:
 
 - **sinovite e fibrose periarticular**;
 - **efeito tóxico sobre a cartilagem**, com artropatia pelo chumbo;
@@ -523,7 +523,7 @@ Portanto, a afirmativa "o joelho ipsilateral é o segmento com mais sobrecarga e
 
 Os outros livros falam do mesmo trio, com ênfases diferentes:
 
-- o The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., diz que 78% dos pacientes ficam satisfeitos, mas que a longo prazo **até 60%** têm dor lombar, no joelho ipsilateral e no quadril contralateral, sem ordenar os três (cap. 49, p. 665 aprox.); no capítulo sobre a conversão para prótese (cap. 73, p. 949 e 950), lista primeiro a lombalgia incapacitante, depois a artrose do quadril contralateral e do joelho ipsilateral, e reserva a conversão para a dor incapacitante; o melhor candidato à fusão seria o trabalhador braçal com menos de 30 a 35 anos e doença isolada (cap. 79, p. 1012);
+- o The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., diz que 78% dos pacientes ficam satisfeitos, mas que a longo prazo **até 60%** têm dor lombar, no joelho ipsilateral e no quadril contralateral, sem ordenar os três (cap. 49); no capítulo sobre a conversão para prótese (cap. 73, p. 949 e 950), lista primeiro a lombalgia incapacitante, depois a artrose do quadril contralateral e do joelho ipsilateral, e reserva a conversão para a dor incapacitante; o melhor candidato à fusão seria o trabalhador braçal com menos de 30 a 35 anos e doença isolada (cap. 79, p. 1012);
 - o Ortopedia e Traumatologia de HEBERT, 5ª ed., ao tratar das sequelas da displasia, escreve que com o tempo a artrodese traz lombalgia, rotação pélvica, instabilidade e artrose no joelho ipsilateral e no quadril contralateral, e que ela é contraindicada nos casos bilaterais; já na seção de artrodese do quadril do adulto, o mesmo livro chama de "falsa impressão" a ideia de que a fusão causa deterioração incapacitante da coluna e dos joelhos, e defende que o procedimento seja reconsiderado diante das falhas da prótese no jovem.
 
 Ou seja: Campbell e CALLAGHAN tratam a sobrecarga vizinha como fato estabelecido e quantificado; HEBERT, na seção do adulto, relativiza a gravidade. Nenhum deles põe o joelho à frente da coluna.

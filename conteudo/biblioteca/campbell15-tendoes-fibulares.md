@@ -1,6 +1,6 @@
 ---
 id: campbell15-tendoes-fibulares
-versao: 2
+versao: 3
 titulo: Tendões fibulares e outras tendinopatias do pé e tornozelo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -52,7 +52,7 @@ armadilha: Marcar "irreversível com inflamação" porque o paciente tem dor; a 
 
 Antes de qualquer doença, a prova quer que o candidato saiba ler uma ressonância ou uma peça anatômica. O HEBERT dá a divisão da perna em quatro compartimentos, que é a melhor forma de lembrar quem passa por onde (capítulo das fraturas da tíbia): o **anterior** contém o tibial anterior, o extensor longo dos dedos, o extensor longo do hálux e o **fibular terceiro**; o **lateral** contém os **fibulares longo e curto**; o **posterior superficial**, o gastrocnêmio e o sóleo; o **posterior profundo**, o tibial posterior, o flexor longo dos dedos e o **flexor longo do hálux**.
 
-Repare na pegadinha do nome: o **fibular terceiro não é do compartimento lateral**. Ele mora no compartimento anterior, é um tendão extensor e se insere na **base dorsal do 5º metatarso**, como o Campbell's Operative Orthopaedics, 15ª ed. (cap. 94), lista entre as estruturas que se palpam na dor do tornozelo (p. 4136). No mesmo capítulo, o portal artroscópico anterolateral é feito logo **lateral ao tendão do fibular terceiro**, atento ao nervo fibular superficial (p. 4161, aprox.).
+Repare na pegadinha do nome: o **fibular terceiro não é do compartimento lateral**. Ele mora no compartimento anterior, é um tendão extensor e se insere na **base dorsal do 5º metatarso**, como o Campbell's Operative Orthopaedics, 15ª ed. (cap. 94), lista entre as estruturas que se palpam na dor do tornozelo (p. 4136). No mesmo capítulo, o portal artroscópico anterolateral é feito logo **lateral ao tendão do fibular terceiro**, atento ao nervo fibular superficial (cap. 94).
 
 ## O canto lateral: retromaleolar e inframaleolar
 
@@ -103,7 +103,7 @@ O acesso posterolateral é uma aplicação direta do mapa anterior. O Campbell's
 
 O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 65), dá a razão do intervalo ser seguro: ele é **internervoso**. Os fibulares são inervados pelo **nervo fibular superficial** e são retraídos lateralmente; o flexor longo do hálux é inervado pelo **nervo tibial** e é elevado e retraído medialmente. A incisão fica entre a borda posterior do maléolo lateral e a borda lateral do tendão calcâneo, e a dissecção romba na gordura protege o **nervo sural**. Esse é o mesmo plano profundo usado no acesso posteromedial, porque o flexor longo do hálux protege o feixe tibial posterior medial a ele.
 
-O mesmo intervalo aparece no capítulo 88, na colheita do flexor longo do hálux para reforçar o tendão calcâneo: abre-se um plano logo profundo ao calcâneo e se desenvolve o intervalo entre o flexor longo do hálux e os fibulares, **ficando no flexor ou lateral a ele** para não alcançar o feixe neurovascular (p. 3851). Na via de CHOI, em J, o intervalo é o mesmo, e o flexor longo do hálux e o tendão calcâneo são afastados juntos para medial (p. 17, aprox.).
+O mesmo intervalo aparece no capítulo 88, na colheita do flexor longo do hálux para reforçar o tendão calcâneo: abre-se um plano logo profundo ao calcâneo e se desenvolve o intervalo entre o flexor longo do hálux e os fibulares, **ficando no flexor ou lateral a ele** para não alcançar o feixe neurovascular (p. 3851). Na via de CHOI, em J, o intervalo é o mesmo, e o flexor longo do hálux e o tendão calcâneo são afastados juntos para medial (cap. 1).
 
 !questoes central=pe-tornozelo-0060
 conceito: O plano profundo do acesso posterolateral do tornozelo fica entre os fibulares (nervo fibular superficial) e o flexor longo do hálux (nervo tibial).
@@ -218,7 +218,7 @@ O capítulo 53 agrupa as cirurgias em **cinco tipos** (p. 2292), e o capítulo 8
 | Redirecionamento | Tendões passados sob o ligamento calcaneofibular | Útil na ausência congênita do retináculo |
 !fim
 
-Um alerta do capítulo 88 que conecta este tema à entorse: na técnica de SOBEL e BOHNE, a incisão pode ser prolongada para reparar o **talofibular anterior** e o **calcaneofibular**, porque **deixar de reconhecer a instabilidade lateral concomitante leva à frouxidão recorrente e a nova lesão dos fibulares** (p. 3866). O capítulo 94 diz o mesmo pelo outro lado: depois de um reparo ligamentar, a dor residual pode vir de uma **rotura longitudinal do curto negligenciada**, e essas lesões devem ser procuradas em **toda cirurgia de instabilidade** (p. 4151, aprox.).
+Um alerta do capítulo 88 que conecta este tema à entorse: na técnica de SOBEL e BOHNE, a incisão pode ser prolongada para reparar o **talofibular anterior** e o **calcaneofibular**, porque **deixar de reconhecer a instabilidade lateral concomitante leva à frouxidão recorrente e a nova lesão dos fibulares** (p. 3866). O capítulo 94 diz o mesmo pelo outro lado: depois de um reparo ligamentar, a dor residual pode vir de uma **rotura longitudinal do curto negligenciada**, e essas lesões devem ser procuradas em **toda cirurgia de instabilidade** (cap. 94).
 
 # Rotura longitudinal do fibular curto e lesões combinadas {radar=oportunidade}
 

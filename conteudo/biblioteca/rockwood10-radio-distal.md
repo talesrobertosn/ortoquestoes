@@ -1,6 +1,6 @@
 ---
 id: rockwood10-radio-distal
-versao: 3
+versao: 4
 titulo: Fratura do rádio distal no adulto
 especialidade: trauma
 acesso: gratis
@@ -49,7 +49,7 @@ A história costuma ser simples. O exame procura duas urgências: a **ferida** (
 
 O Rockwood define o rádio distal da metáfise ao estiloide. A **face dorsal é convexa**, cheia de sulcos para os extensores, e o ponto mais saliente é o **tubérculo de LISTER**, polia em volta da qual o **EPL** muda de direção. A **face volar é côncava e lisa**, recebe os ligamentos cárpicos volares e é coberta pelo **pronador quadrado**, que se insere na borda radial; é a superfície "fácil" para placa (seção Pathoanatomy and Applied Anatomy). O **braquiorradial** é a **única inserção tendínea** no rádio distal, no lado radial, e age como **força deformante**, puxando o estiloide e encurtando o rádio (seção Pathoanatomy and Applied Anatomy).
 
-Visto de frente para a articulação, o rádio distal é um triângulo com **base na incisura sigmoide** e **ápice no estiloide radial**, com duas facetas côncavas: a do **semilunar** (ulnar) e a do **escafoide** (radial). A faceta do semilunar projeta-se cerca de **3 mm para volar**; essa orientação a expõe ao cisalhamento e torna o fragmento difícil de fixar (seção Pathoanatomy and Applied Anatomy). O Green conta três concavidades: fossa do escafoide, fossa do semilunar e incisura sigmoide, que articula com a cabeça da ulna (Green, p. 518 aprox.).
+Visto de frente para a articulação, o rádio distal é um triângulo com **base na incisura sigmoide** e **ápice no estiloide radial**, com duas facetas côncavas: a do **semilunar** (ulnar) e a do **escafoide** (radial). A faceta do semilunar projeta-se cerca de **3 mm para volar**; essa orientação a expõe ao cisalhamento e torna o fragmento difícil de fixar (seção Pathoanatomy and Applied Anatomy). O Green conta três concavidades: fossa do escafoide, fossa do semilunar e incisura sigmoide, que articula com a cabeça da ulna (Green, p. 519).
 
 A ARUD é a articulação da cabeça da ulna com a incisura sigmoide: o **rádio gira em volta de uma ulna quase parada**, e o estabilizador mais importante é o **complexo da fibrocartilagem triangular (CFCT)** (Rockwood, cap. 43, seção Pathoanatomy and Applied Anatomy). O SIZÍNIO lembra que os ligamentos volares que nascem no rádio (radioescafocapitato, radiossemilunopiramidal e radioescafossemilunar de TESTUT) são os **mais resistentes do punho**, e que o CFCT vai da borda ulnar do rádio à base do estiloide ulnar (cap. 51).
 
@@ -108,7 +108,7 @@ O **ângulo da gota de lágrima** é medido no perfil, entre o eixo longitudinal
 
 - numa fratura **extra-articular com rotação dorsal**, o ângulo **diminui**;
 - numa **impacção que divide a faceta do semilunar**, o semilunar afunda na metáfise e roda a gota, e o ângulo também cai; o Rockwood cita que um ângulo **menor que 45 graus** se associa a degrau e afastamento articular na tomografia, avaliando a congruência da **faceta do semilunar** (seção Radiography);
-- numa **fratura marginal volar desviada** (BARTON volar), a figura do Green mostra o ângulo **aumentado**, que volta ao normal depois da fixação (Fig. 15.8, p. 521 aprox.).
+- numa **fratura marginal volar desviada** (BARTON volar), a figura do Green mostra o ângulo **aumentado**, que volta ao normal depois da fixação (Fig. 15.8, p. 520).
 
 A **distância anteroposterior** é medida no perfil, entre os ápices das bordas dorsal e volar da faceta do semilunar: média de **19 mm** no Rockwood (seção Radiography), **20 mm em homens e 18 mm em mulheres** no Green, que recomenda comparar com o outro lado; o aumento dessa distância se correlacionou com artrose em 81 pacientes seguidos por 9 anos (p. 520). A **profundidade da cavidade articular** aumentada em mais de **2 mm** aumenta a pressão de contato e reduz a flexoextensão (Green, p. 520). No PA, a borda dorsal normalmente aparece **3 a 5 mm** distal à borda volar (Rockwood, cap. 43, seção Radiography; Green, p. 522).
 
@@ -154,7 +154,7 @@ A TC ajuda a planejar: extensão articular, cominuição, depressão, **die-punc
 
 O Rockwood é direto: as lesões associadas mais comuns são as dos **ligamentos interósseos** e do **CFCT**. Outras são lesão condral, fraturas do carpo, lesões neurovasculares e de partes moles (seção Injuries Associated).
 
-!tabela Lesões associadas à fratura do rádio distal (Rockwood, cap. 43, seção Injuries Associated; Green, p. 575 aprox.)
+!tabela Lesões associadas à fratura do rádio distal (Rockwood, cap. 43, seção Injuries Associated; Green, p. 575)
 | Lesão | Frequência nos livros | Comentário |
 |---|---|---|
 | CFCT | 39% a 82% (Rockwood); 13% a 60% por imagem ou inspeção cirúrgica (Green, cap. 14, p. 487) | Mais comum que a lesão interóssea; a maioria são avulsões periféricas junto com fratura do estiloide ulnar |
@@ -173,7 +173,7 @@ O CFCT lesado é mais frequente que a lesão interóssea, mas a maior parte são
 
 Os ligamentos interósseos lesados são graduados na artroscopia por GEISSLER, de 1 (só atenuação e hemorragia) a 4 (instabilidade grosseira). O teste de estresse cárpico modificado, com tração que acentua as linhas de GILULA, teve sensibilidade de **78%** e especificidade de **72%** e ajuda a afastar lesões de grau 3 e 4 (Rockwood, cap. 43, seção Injuries Associated). O impacto dessas lesões no resultado é incerto e o tratamento fica a critério do cirurgião (seção Injuries Associated).
 
-O Green aponta os padrões de maior risco para lesão ligamentar: a **fratura-luxação radiocarpal** e o **estiloide radial muito desviado** cujo traço entra na crista entre as fossas do escafoide e do semilunar (p. 575 aprox.). É exatamente o território da **fratura do CHAUFFEUR**: a legenda do Green diz que ela é **notória** por lesões dos ligamentos intercárpicos e radiocárpicos extrínsecos, e o algoritmo de FERNANDEZ do mesmo capítulo manda, diante de um CHAUFFEUR, **suspeitar de lesão do ligamento interósseo escafossemilunar** (p. 525 aprox. e 528). Lesões completas em jovens ativos pedem tratamento operatório agressivo, com reparo aberto do escafossemilunar após fixar o rádio (p. 575 aprox.). O SIZÍNIO descreve o **teste de deslocamento axial do escafoide** de FERNANDEZ, visto na radiografia sob tração durante a redução: o degrau escafossemilunar pode aparecer só depois da tração ou do fixador (cap. 51).
+O Green aponta os padrões de maior risco para lesão ligamentar: a **fratura-luxação radiocarpal** e o **estiloide radial muito desviado** cujo traço entra na crista entre as fossas do escafoide e do semilunar (p. 575). É exatamente o território da **fratura do CHAUFFEUR**: a legenda do Green diz que ela é **notória** por lesões dos ligamentos intercárpicos e radiocárpicos extrínsecos, e o algoritmo de FERNANDEZ do mesmo capítulo manda, diante de um CHAUFFEUR, **suspeitar de lesão do ligamento interósseo escafossemilunar** (p. 528). Lesões completas em jovens ativos pedem tratamento operatório agressivo, com reparo aberto do escafossemilunar após fixar o rádio (p. 575). O SIZÍNIO descreve o **teste de deslocamento axial do escafoide** de FERNANDEZ, visto na radiografia sob tração durante a redução: o degrau escafossemilunar pode aparecer só depois da tração ou do fixador (cap. 51).
 
 !questoes central=trauma-0209 relacionadas=mao-1001,trauma-0276
 conceito: A lesão associada mais frequente é a do CFCT (39% a 82%), mais que a dos ligamentos interósseos; no CHAUFFEUR (estiloide radial, AO B1) a suspeita é de lesão do ligamento escafossemilunar.
@@ -184,7 +184,7 @@ alerta: Em `trauma-0276`, nenhum dos livros lidos liga a variância ulnar positi
 
 ## Nervo mediano
 
-A **síndrome do túnel do carpo aguda** é a lesão associada mais **urgente**. Entre as fraturas do membro superior, o rádio distal é a de maior risco para síndrome aguda e crônica, mais nas lesões de alta energia. A diferença que decide a conduta: a síndrome aguda tem **dor e sintomas progressivos** e exige **liberação urgente**; a **contusão do mediano** dá uma dormência **constante** que melhora com o tempo e pode ser observada (Rockwood, cap. 43, seções Injuries Associated e Nerve Injury). O Green dá o roteiro: documentar a discriminação de dois pontos e a força tenar antes de tratar; reduzir; se a redução se mantém, os sintomas melhoram em **24 a 48 horas**; se pioram ou não melhoram, ou se a redução não se mantém, fazer redução sob anestesia, **liberação do túnel do carpo** e fixação. Não há dados para liberar o túnel de rotina em quem não tinha sintomas antes da cirurgia (p. 575 aprox.).
+A **síndrome do túnel do carpo aguda** é a lesão associada mais **urgente**. Entre as fraturas do membro superior, o rádio distal é a de maior risco para síndrome aguda e crônica, mais nas lesões de alta energia. A diferença que decide a conduta: a síndrome aguda tem **dor e sintomas progressivos** e exige **liberação urgente**; a **contusão do mediano** dá uma dormência **constante** que melhora com o tempo e pode ser observada (Rockwood, cap. 43, seções Injuries Associated e Nerve Injury). O Green dá o roteiro: documentar a discriminação de dois pontos e a força tenar antes de tratar; reduzir; se a redução se mantém, os sintomas melhoram em **24 a 48 horas**; se pioram ou não melhoram, ou se a redução não se mantém, fazer redução sob anestesia, **liberação do túnel do carpo** e fixação. Não há dados para liberar o túnel de rotina em quem não tinha sintomas antes da cirurgia (p. 575).
 
 # Epônimos e classificações {radar=confirmado}
 
@@ -203,7 +203,7 @@ Os epônimos dão uma ideia geral do padrão, mas pouco ajudam a decidir tratame
 | Die-punch | Depressão da fossa do semilunar, com migração proximal do semilunar | FERNANDEZ III; AO C1 a C2 no Green |
 !fim
 
-O nome CHAUFFEUR vem do coice da manivela dos primeiros automóveis, que atingia o motorista ao dar a partida (Rockwood, cap. 43, seção Common Eponyms). O Rockwood não usa o nome HUTCHINSON; quem o traz é o SIZÍNIO, na lista de epônimos, para a fratura da apófise do processo estiloide do rádio (cap. 51). O Green mostra a classificação de THOMAS para o SMITH: tipo I extra-articular com angulação palmar; tipo II intra-articular com desvio volar e proximal do fragmento junto com o carpo, que é essencialmente um **BARTON volar**; tipo III extra-articular com traço mais oblíquo (p. 525 aprox.).
+O nome CHAUFFEUR vem do coice da manivela dos primeiros automóveis, que atingia o motorista ao dar a partida (Rockwood, cap. 43, seção Common Eponyms). O Rockwood não usa o nome HUTCHINSON; quem o traz é o SIZÍNIO, na lista de epônimos, para a fratura da apófise do processo estiloide do rádio (cap. 51). O Green mostra a classificação de THOMAS para o SMITH: tipo I extra-articular com angulação palmar; tipo II intra-articular com desvio volar e proximal do fragmento junto com o carpo, que é essencialmente um **BARTON volar**; tipo III extra-articular com traço mais oblíquo.
 
 ## AO/OTA 23
 
@@ -263,10 +263,10 @@ alerta: `mao-1260` está sem gabarito: pelos dois livros, a avulsão ligamentar 
 
 ## FRYKMAN, MELONE, GARTLAND e WERLEY, MAYO, MEDOFF
 
-- **FRYKMAN** (1967): separa extra e intra-articulares (radiocarpal e radioulnar) e a presença de fratura da ulna; não considera cominuição, encurtamento nem desvio (Rockwood, cap. 43, seção Historical Classification Systems). Na figura do Green, os tipos ímpares (**I, III, V, VII**) não têm fratura da ulna, os tipos **III a VIII** são articulares e o número maior significa pior prognóstico (p. 524 aprox.). O SIZÍNIO a chama de a mais difundida, mas sem valor prognóstico prático (cap. 51).
+- **FRYKMAN** (1967): separa extra e intra-articulares (radiocarpal e radioulnar) e a presença de fratura da ulna; não considera cominuição, encurtamento nem desvio (Rockwood, cap. 43, seção Historical Classification Systems). Na figura do Green, os tipos ímpares (**I, III, V, VII**) não têm fratura da ulna, os tipos **III a VIII** são articulares e o número maior significa pior prognóstico. O SIZÍNIO a chama de a mais difundida, mas sem valor prognóstico prático (cap. 51).
 - **MELONE** (1984): só articulares, **quatro partes**: diáfise, estiloide radial, fragmento **dorsomedial** e **palmar medial**. Os dois mediais formam o **complexo medial**, preso por ligamentos fortes ao carpo e ao estiloide ulnar; sua ruptura favorece a fixação cirúrgica (Rockwood, cap. 43, seção Historical Classification Systems).
 - **GARTLAND e WERLEY** (1951): três grupos de COLLES: 1 extra-articular simples; 2 cominutiva com componente articular sem desvio; 3 cominutiva articular desviada (Rockwood, cap. 43, seção Historical Classification Systems).
-- **MAYO:** localização e complexidade conforme envolvimento radioescafoide, radiossemilunar ou ambos; tipo 1 extra-articular e 2 a 4 articulares, divididas por redutíveis ou não (Rockwood, cap. 43, seção Current Classification Systems; Green, p. 524 aprox.).
+- **MAYO:** localização e complexidade conforme envolvimento radioescafoide, radiossemilunar ou ambos; tipo 1 extra-articular e 2 a 4 articulares, divididas por redutíveis ou não (Rockwood, cap. 43, seção Current Classification Systems).
 - **MEDOFF** (fragmento-específica): cinco fragmentos: estiloide radial, parede dorsal, articular impactado, **canto dorsoulnar (die-punch)** e **borda volar** (Green, p. 524).
 
 ## Universal (COONEY) e o problema da confiabilidade
@@ -377,7 +377,7 @@ armadilha: Trocar KAPANDJI (intrafocal) por RAYHACK (transulnares múltiplos), D
 
 # Placa volar bloqueada e a via de HENRY {radar=confirmado}
 
-A placa volar bloqueada é a fixação interna mais usada: trata COLLES extra-articular instável, cisalhamento volar, várias articulares completas e, com parafusos de ângulo variável, a faceta do semilunar; serve também para osteotomia da consolidação viciosa (Rockwood, cap. 43, seção Open Reduction and Internal Fixation Through a Volar Approach). O Green explica a lógica: a cortical volar pouco cominuída guia a redução, o **pronador quadrado separa a placa dos flexores**, e o ângulo fixo com pinos subcondrais segura o fragmento distal e reduz a necessidade de enxerto (p. 549 aprox.).
+A placa volar bloqueada é a fixação interna mais usada: trata COLLES extra-articular instável, cisalhamento volar, várias articulares completas e, com parafusos de ângulo variável, a faceta do semilunar; serve também para osteotomia da consolidação viciosa (Rockwood, cap. 43, seção Open Reduction and Internal Fixation Through a Volar Approach). O Green explica a lógica: a cortical volar pouco cominuída guia a redução, o **pronador quadrado separa a placa dos flexores**, e o ângulo fixo com pinos subcondrais segura o fragmento distal e reduz a necessidade de enxerto (p. 549).
 
 A via é a **HENRY modificada** (trans-FCR): incisão sobre o **flexor radial do carpo (FCR)** e intervalo **entre a artéria radial e o FCR**. A bainha do FCR é aberta pelo **lado radial**, para ficar longe do **ramo cutâneo palmar do nervo mediano**; o FCR e o **FPL** vão para ulnar, abrindo o espaço de PARONA; o pronador quadrado é levantado em L; o braquiorradial pode ser liberado para soltar o estiloide (Rockwood, cap. 43, seção Open Reduction and Internal Fixation Through a Volar Approach; Green, p. 549). Na borda radial ficam a **artéria radial** e, mais superficial, o **ramo sensitivo do radial**, que também é a estrutura ameaçada pelos fios provisórios no estiloide (o Rockwood os passa por uma agulha 16 G para proteger o nervo e a artéria, seção Open Reduction and Internal Fixation Through a Volar Approach). Afastadores autoestáticos pontiagudos ameaçam o mediano e a artéria radial (seção Open Reduction and Internal Fixation Through a Volar Approach).
 

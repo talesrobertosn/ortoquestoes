@@ -1,6 +1,6 @@
 ---
 id: campbell15-escoliose-congenita-neuromuscular
-versao: 1
+versao: 2
 titulo: Escoliose congênita e neuromuscular
 especialidade: coluna
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 40 · Scoliosis
 autores: Keith J. Orland e Jeffrey R. Sawyer
-fonte: Livros conferidos localmente em 04/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (seções Neuromuscular Scoliosis, p. 1591 a 1604.e2, e Congenital Scoliosis, p. 1605 a 1618); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Congenital Spinal Deformities, p. 176 a 185) e cap. 35 (DUCHENNE, p. 1713 a 1719); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 18 (Congenital Scoliosis, p. 698 a 731), cap. 14 (paralisia cerebral, p. 540 a 548), cap. 15 (mielomeningocele, p. 564 a 567) e cap. 16 (DUCHENNE, p. 594 a 597).e) sem número no cabeçalho foram inferidas pelo deslocamento e vão marcadas como aproximadas.
+fonte: Livros conferidos localmente em 04/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (seções Neuromuscular Scoliosis, p. 1591 a 1604.e2, e Congenital Scoliosis, p. 1605 a 1618); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Congenital Spinal Deformities, p. 176 a 185) e cap. 35 (DUCHENNE, p. 1713 a 1719); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 18 (Congenital Scoliosis, p. 698 a 731), cap. 14 (paralisia cerebral, p. 540 a 548), cap. 15 (mielomeningocele, p. 564 a 567) e cap. 16 (DUCHENNE, p. 594 a 597).
 subtemas: Escoliose congênita e neuromuscular
 resumo: Congênita: falha de formação (cunha, hemivértebra totalmente segmentada, semissegmentada, não segmentada, encarcerada) e de segmentação (bloco, barra unilateral); pior prognóstico = barra unilateral com hemivértebra contralateral (MCMASTER), depois barra isolada, duas hemivértebras do mesmo lado, hemivértebra única e bloco; progride nos primeiros anos e no estirão; associações neuroaxiais (RM de todo o neuroeixo), cardíacas e genitourinárias; colete não controla a curva congênita; artrodese in situ, hemiepifisiodese convexa (menos de 5 anos, curva menor que 50°, falha de formação), ressecção da hemivértebra (lombossacra, menos de 5 anos) e hastes de crescimento. Neuromuscular: curvas longas em C com obliquidade pélvica, progressão mesmo após a maturidade, colete só adia, fusão de T2 à pelve; DUCHENNE operada cedo, com curva pequena (20 a 30°) e CVF acima de 30% a 40%; AME com CVF abaixo de 20% de alto risco; complicações pulmonares e infecção, mais na mielomeningocele e na paralisia cerebral.
 ---
@@ -333,7 +333,7 @@ A grande decisão é fundir ou não até o sacro e a pelve. O Campbell dá o cri
 - **Pode poupar o sacro**: paciente que **anda** e precisa do movimento lombossacro, **sem obliquidade pélvica importante** e com **L5 horizontal**.
 - **Precisa ir ao sacro ou à pelve**: obliquidade espinopélvica **fixa** nas radiografias de inclinação ou de tração, com **mais de 10 a 15° de inclinação de L4 ou L5** em relação à linha que une as cristas ilíacas. A maioria desses pacientes é **não deambuladora** com obliquidade fixa.
 
-Antes, é preciso saber de onde vem a obliquidade (Campbell, Fig. 40.98, p. 1593): se ela **some com abdução ou adução dos quadris**, a causa é **contratura entre pelve e fêmur**; se **persiste**, há **deformidade espinopélvica fixa**. Na radiografia em decúbito com quadris estendidos, adução de um lado e abdução do outro **simulam obliquidade**; fazer com os quadris relaxados (p. 1600.e2, aprox.). O método de **MALONEY** foi o mais confiável para medir (p. 1594). Na pelve insensível, manter a **lordose lombar** distribui o peso e reduz escaras (p. 1592). A fixação pélvica (GALVESTON, haste unitária, parafusos ilíacos, **S2-alar-ilíacos**) falha em **29%**; o Campbell recomenda parafusos em **L5 e S1 mais dois ilíacos** (p. 1595, aprox.).
+Antes, é preciso saber de onde vem a obliquidade (Campbell, Fig. 40.98, p. 1593): se ela **some com abdução ou adução dos quadris**, a causa é **contratura entre pelve e fêmur**; se **persiste**, há **deformidade espinopélvica fixa**. Na radiografia em decúbito com quadris estendidos, adução de um lado e abdução do outro **simulam obliquidade**; fazer com os quadris relaxados (cap. 40). O método de **MALONEY** foi o mais confiável para medir (p. 1594). Na pelve insensível, manter a **lordose lombar** distribui o peso e reduz escaras (p. 1592). A fixação pélvica (GALVESTON, haste unitária, parafusos ilíacos, **S2-alar-ilíacos**) falha em **29%**; o Campbell recomenda parafusos em **L5 e S1 mais dois ilíacos** (cap. 40).
 
 ## Via posterior ou anterior e posterior
 
@@ -343,29 +343,29 @@ A maioria das deformidades neuromusculares é tratada hoje **só por via posteri
 
 ## O paciente é frágil
 
-A **mortalidade é maior** nos neuromusculares, e a avaliação **neurológica, pulmonar, cardíaca e nutricional** é obrigatória (Campbell, p. 1592). Os números: complicações de **44% a 80%**, mortalidade de **0% a 7%**, complicações pulmonares maiores em **21%**, ferida em **9%** (p. 1593, aprox.).
+A **mortalidade é maior** nos neuromusculares, e a avaliação **neurológica, pulmonar, cardíaca e nutricional** é obrigatória (Campbell, p. 1592). Os números: complicações de **44% a 80%**, mortalidade de **0% a 7%**, complicações pulmonares maiores em **21%**, ferida em **9%** (cap. 40).
 
-- **Pulmão**: **capacidade vital menor que 30%** do previsto prevê **suporte respiratório** pós-operatório; com a mesma capacidade e **sem tosse voluntária**, **traqueostomia** (Campbell, p. 1593, aprox.).
-- **Nutrição**: **albumina menor que 35 g/L** e **linfócitos menores que 1,5** aumentam complicações (p. 1593, aprox.).
+- **Pulmão**: **capacidade vital menor que 30%** do previsto prevê **suporte respiratório** pós-operatório; com a mesma capacidade e **sem tosse voluntária**, **traqueostomia** (Campbell, cap. 40).
+- **Nutrição**: **albumina menor que 35 g/L** e **linfócitos menores que 1,5** aumentam complicações (cap. 40).
 - **Coração**: DUCHENNE e FRIEDREICH têm acometimento cardíaco.
-- **Convulsões**: o **ácido valproico** aumenta o sangramento por defeito de **função plaquetária**, que os exames de rotina não pegam; pode ser preciso trocá-lo (Campbell, p. 1593, aprox.; LW, cap. 14, p. 548).
+- **Convulsões**: o **ácido valproico** aumenta o sangramento por defeito de **função plaquetária**, que os exames de rotina não pegam; pode ser preciso trocá-lo (Campbell, cap. 40; LW, cap. 14, p. 548).
 - **Marcha**: quem anda de forma marginal **pode não voltar a andar** depois da cirurgia (Campbell, p. 1592).
 
-Na sala, a morte é **mais frequente pela deterioração pulmonar pós-operatória** que pela anestesia; o sangramento é maior que na idiopática e o **ácido tranexâmico** ajuda; a monitorização medular é possível em **80%** (Campbell, p. 1595, aprox.). No pós-operatório, as **complicações pulmonares são as mais prováveis**; o **ADH** sobe e causa **oligúria**, e repor líquido demais causa **sobrecarga**; a **infecção** é **mais frequente na mielomeningocele e na paralisia cerebral**, com o **trato urinário** como fonte importante (p. 1595, aprox.).
+Na sala, a morte é **mais frequente pela deterioração pulmonar pós-operatória** que pela anestesia; o sangramento é maior que na idiopática e o **ácido tranexâmico** ajuda; a monitorização medular é possível em **80%** (Campbell, cap. 40). No pós-operatório, as **complicações pulmonares são as mais prováveis**; o **ADH** sobe e causa **oligúria**, e repor líquido demais causa **sobrecarga**; a **infecção** é **mais frequente na mielomeningocele e na paralisia cerebral**, com o **trato urinário** como fonte importante (cap. 40).
 
 # Paralisia cerebral {radar=clinico}
 
 ## Quem desenvolve
 
-A deformidade neuromuscular **mais comum** é a da paralisia cerebral, e o risco acompanha a gravidade: **espasticidade grave e quadriplegia** têm o maior risco (Campbell, p. 1600 e 1600.e1, aprox.). O **GMFCS** (ver o resumo de paralisia cerebral) organiza o risco: níveis **I e II quase sem risco**; níveis **IV e V com cerca de 50%** de deformidade moderada a grave. O LW fala em deformidade em **cerca de dois terços** das crianças no nível V, e diz que curvas em deambuladores são raras e do tipo idiopático (cap. 14, p. 540).
+A deformidade neuromuscular **mais comum** é a da paralisia cerebral, e o risco acompanha a gravidade: **espasticidade grave e quadriplegia** têm o maior risco (Campbell, cap. 40). O **GMFCS** (ver o resumo de paralisia cerebral) organiza o risco: níveis **I e II quase sem risco**; níveis **IV e V com cerca de 50%** de deformidade moderada a grave. O LW fala em deformidade em **cerca de dois terços** das crianças no nível V, e diz que curvas em deambuladores são raras e do tipo idiopático (cap. 14, p. 540).
 
 ## Como a curva se comporta
 
-As curvas da PC são **longas, em C**, aparecem **mais cedo** (a partir de **6 a 8 anos**), **progridem mais e mais rápido** que as idiopáticas, podem ser **convexas à esquerda** e podem **continuar progredindo após a maturidade se passarem de 40°**; a progressão acelera quando a curva chega a **40 a 50°** e no estirão (LW, p. 541). A maior progressão está nos **não deambuladores com curvas toracolombares ou lombares**: **0,8° por ano** abaixo de 50° e **1,4° por ano** acima de 50° na maturidade (Campbell, p. 1600.e1, aprox.; LW, p. 541). O LW nota que disfunção da derivação ventricular também acelera a curva.
+As curvas da PC são **longas, em C**, aparecem **mais cedo** (a partir de **6 a 8 anos**), **progridem mais e mais rápido** que as idiopáticas, podem ser **convexas à esquerda** e podem **continuar progredindo após a maturidade se passarem de 40°**; a progressão acelera quando a curva chega a **40 a 50°** e no estirão (LW, p. 541). A maior progressão está nos **não deambuladores com curvas toracolombares ou lombares**: **0,8° por ano** abaixo de 50° e **1,4° por ano** acima de 50° na maturidade (Campbell, cap. 40; LW, p. 541). O LW nota que disfunção da derivação ventricular também acelera a curva.
 
-LONSTEIN e AKBARNIA dividiram as curvas em dois grupos (Campbell, p. 1600.e1, aprox.), e o grupo decide a cirurgia:
+LONSTEIN e AKBARNIA dividiram as curvas em dois grupos (Campbell, cap. 40), e o grupo decide a cirurgia:
 
-!tabela Grupos de LONSTEIN e AKBARNIA na paralisia cerebral (Campbell 15, cap. 40, p. 1600.e1 e 1600.e2, aprox.)
+!tabela Grupos de LONSTEIN e AKBARNIA na paralisia cerebral (Campbell 15, cap. 40)
 | Grupo | Frequência | Curva | Paciente | Fusão |
 | --- | --- | --- | --- | --- |
 | I | 40% | dupla, torácica e lombar, parecida com a idiopática, pouca obliquidade | deambulador, vive em casa | posterior; raramente até o sacro |
@@ -376,25 +376,25 @@ LONSTEIN e AKBARNIA dividiram as curvas em dois grupos (Campbell, p. 1600.e1, ap
 
 Curva pequena, observar; progressão ou mais de **30°** em criança em crescimento que anda ou senta, tratar; no maduro, cirurgia a partir de **50°** (Campbell, p. 1600). Cadeira adaptada melhora o sentar mas **não freia a progressão**; fisioterapia e toxina botulínica **não funcionam** (LW, p. 541); o colete, no GMFCS V, no máximo retarda (p. 548).
 
-A cirurgia é uma **fusão posterior longa** com parafusos pediculares, **fixação pélvica preferida**, começando **acima de T4, em geral T2** (Campbell, p. 1600). O LW vai à pelve com obliquidade acima de **10 a 15°** sentado, e muitos fundem à pelve **todo GMFCS V** (p. 548). As complicações chegam a **81%**, com **infecção em 15% a 19%** (Campbell, p. 1600), mas a satisfação de pacientes e cuidadores é alta (p. 1600.e1, aprox.).
+A cirurgia é uma **fusão posterior longa** com parafusos pediculares, **fixação pélvica preferida**, começando **acima de T4, em geral T2** (Campbell, p. 1600). O LW vai à pelve com obliquidade acima de **10 a 15°** sentado, e muitos fundem à pelve **todo GMFCS V** (p. 548). As complicações chegam a **81%**, com **infecção em 15% a 19%** (Campbell, p. 1600), mas a satisfação de pacientes e cuidadores é alta (cap. 40).
 
 # DUCHENNE: o momento certo {radar=clinico}
 
 ## A doença e a curva
 
-A distrofia muscular de DUCHENNE é **recessiva ligada ao X** (gene da distrofina, Xp21.2); a criança **perde a marcha entre 10 e 14 anos** e morre de causa **pulmonar ou cardíaca** na **segunda ou terceira década** (Campbell, p. 1604 e 1604.e1, aprox.). A escoliose aparece na maioria **depois que o paciente vai para a cadeira de rodas**, é **progressiva** e **não é controlada por colete** nem por cadeira adaptada. As curvas são **longas, toracolombares, com obliquidade pélvica**, com cifose toracolombar frequente, e sem tratamento muitas passam de **90°** (Campbell, p. 1604; Tachdjian, cap. 35, p. 1716). O LW estima **cerca de 95%** com escoliose progressiva sem tratamento, e 25% dos mais velhos ainda deambuladores com curva leve; prolongar a marcha com liberações de contraturas retarda a curva (cap. 16, p. 594).
+A distrofia muscular de DUCHENNE é **recessiva ligada ao X** (gene da distrofina, Xp21.2); a criança **perde a marcha entre 10 e 14 anos** e morre de causa **pulmonar ou cardíaca** na **segunda ou terceira década** (Campbell, cap. 40). A escoliose aparece na maioria **depois que o paciente vai para a cadeira de rodas**, é **progressiva** e **não é controlada por colete** nem por cadeira adaptada. As curvas são **longas, toracolombares, com obliquidade pélvica**, com cifose toracolombar frequente, e sem tratamento muitas passam de **90°** (Campbell, p. 1604; Tachdjian, cap. 35, p. 1716). O LW estima **cerca de 95%** com escoliose progressiva sem tratamento, e 25% dos mais velhos ainda deambuladores com curva leve; prolongar a marcha com liberações de contraturas retarda a curva (cap. 16, p. 594).
 
-O **corticoide** mudou a história natural: escoliose em **mais de 90% sem** e **10% a 20% com** (Campbell, p. 1604.e1, aprox.); com deflazacorte, **16% contra 90%**, e só **20%** dos tratados precisaram de cirurgia contra **92%** (Tachdjian, p. 1713 e 1716).
+O **corticoide** mudou a história natural: escoliose em **mais de 90% sem** e **10% a 20% com** (Campbell, cap. 40); com deflazacorte, **16% contra 90%**, e só **20%** dos tratados precisaram de cirurgia contra **92%** (Tachdjian, p. 1713 e 1716).
 
 ## Por que o pulmão manda no relógio
 
-A CVF cai cerca de **4% ao ano depois dos 12 anos** (Campbell, p. 1604) e **mais 4% a cada 10° de escoliose** (Tachdjian, p. 1716; LW, p. 596); atinge o **pico quando a criança deixa de ficar em pé** e estabiliza em cerca de **25%** (LW, p. 596 e 597). Ao começar a cadeira em tempo integral, ainda está em **50% a 70%** (Campbell, p. 1604.e1, aprox.). Esperar a curva crescer é deixar a CVF cair: abaixo de **35%**, a cirurgia traz problemas pulmonares importantes (Campbell, p. 1604); abaixo de **30%**, pneumonia e insuficiência respiratória (LW, p. 596). Daí a regra contraintuitiva para quem vem da idiopática: **operar cedo, com curva pequena e flexível**.
+A CVF cai cerca de **4% ao ano depois dos 12 anos** (Campbell, p. 1604) e **mais 4% a cada 10° de escoliose** (Tachdjian, p. 1716; LW, p. 596); atinge o **pico quando a criança deixa de ficar em pé** e estabiliza em cerca de **25%** (LW, p. 596 e 597). Ao começar a cadeira em tempo integral, ainda está em **50% a 70%** (Campbell, cap. 40). Esperar a curva crescer é deixar a CVF cair: abaixo de **35%**, a cirurgia traz problemas pulmonares importantes (Campbell, p. 1604); abaixo de **30%**, pneumonia e insuficiência respiratória (LW, p. 596). Daí a regra contraintuitiva para quem vem da idiopática: **operar cedo, com curva pequena e flexível**.
 
 ## As indicações nos três livros
 
 Os números variam, e a prova pode citar qualquer combinação:
 
-!tabela Quando operar a escoliose da DUCHENNE (Campbell 15, cap. 40, p. 1604 e 1604.e1, aprox.; Tachdjian, cap. 35, p. 1716 e 1717; LW, cap. 16, p. 594 e 596)
+!tabela Quando operar a escoliose da DUCHENNE (Campbell 15, cap. 40; Tachdjian, cap. 35, p. 1716 e 1717; LW, cap. 16, p. 594 e 596)
 | Critério | Campbell 15 | Tachdjian 6ª | Lovell and Winter 7ª |
 | --- | --- | --- | --- |
 | Curva | mais de 30°; muitos fundem com 20° ou menos ao entrar na cadeira | 30° no não deambulador; MUBARAK: mais de 20° | mais de 20° |
@@ -410,13 +410,13 @@ O Campbell condensa a indicação ideal assim: cirurgia **nos primeiros anos de 
 
 A fusão vai de **T2** (contra a cifose juncional) **à pelve**; em **curvas menores sem obliquidade fixa**, pode parar em **L5** (Campbell, p. 1604). O Campbell vai à pelve com obliquidade fixa acima de **15°**; o Tachdjian aceita L5 com inclinação de L5 menor que **15°**, mas lembra que a maioria já tem obliquidade e é fundida à pelve (p. 1717); o LW, com MUBARAK, vai à **pelve** se a curva passa de **40°** ou a obliquidade de **10°** (p. 596). As armadilhas: **sangramento maior** (músculo fibrótico, **perda da vasoconstrição** sem distrofina, plaquetas), com benefício do **ácido tranexâmico**; coração fraco que impede a **anestesia hipotensiva**; **hipertermia maligna** (evitar **succinilcolina e inalatórios**); e a perda da capacidade de **se alimentar sozinho**, porque o tronco rígido não se debruça mais sobre a mesa (Campbell, p. 1604; Tachdjian, p. 1718 e 1719).
 
-A fusão **preserva o sentar, previne a dor, libera os braços e melhora a imagem corporal** (Campbell, p. 1604). O efeito sobre o pulmão e a sobrevida é controverso: o Campbell diz que a **taxa de queda da CVF não muda**, mas cita mortalidade quase **três vezes menor** nos operados e sobrevida mediana de **14 anos e 2 meses** após a cirurgia (p. 1604 e 1604.e1, aprox.); o Tachdjian diz que **a maioria não achou diferença**, citando VELASCO e GALASKO como exceções (p. 1718). Resposta segura: **melhora certa da qualidade de vida; ganho de sobrevida discutido**.
+A fusão **preserva o sentar, previne a dor, libera os braços e melhora a imagem corporal** (Campbell, p. 1604). O efeito sobre o pulmão e a sobrevida é controverso: o Campbell diz que a **taxa de queda da CVF não muda**, mas cita mortalidade quase **três vezes menor** nos operados e sobrevida mediana de **14 anos e 2 meses** após a cirurgia (cap. 40); o Tachdjian diz que **a maioria não achou diferença**, citando VELASCO e GALASKO como exceções (p. 1718). Resposta segura: **melhora certa da qualidade de vida; ganho de sobrevida discutido**.
 
 # Atrofia muscular espinhal {radar=clinico}
 
 A AME é **autossômica recessiva**, com atrofia das **células do corno anterior** da medula e às vezes dos núcleos bulbares (Campbell, p. 1602). Os tipos (detalhados no resumo de artrogripose e doenças neuromusculares) são a base do prognóstico:
 
-!tabela Tipos de AME e a coluna (Campbell 15, cap. 40, Tabela 40.8, p. 1603 e 1603.e1, aprox.)
+!tabela Tipos de AME e a coluna (Campbell 15, cap. 40, Tabela 40.8)
 | Tipo | Nome | Início e marco | Prognóstico |
 | --- | --- | --- | --- |
 | 1 | WERDNIG-HOFFMANN, infantil aguda | primeiros 6 meses; a forma mais grave | progressiva; a maioria morre nos primeiros 2 a 3 anos |
@@ -425,9 +425,9 @@ A AME é **autossômica recessiva**, com atrofia das **células do corno anterio
 | 4 | do adulto | adolescência ou adulto jovem | não detalhado |
 !fim
 
-A escoliose aparece em **90%**, é a típica neuromuscular (**C longa, toracolombar em 80%** e torácica em 20%), surge **entre 6 e 8 anos** e acelera **quando a criança vai para a cadeira**; quanto mais grave a doença, mais progressiva a curva (Campbell, p. 1603 e 1603.e1, aprox.). A criança tem fasciculações da língua, inteligência normal e coração poupado; a morte costuma ser **pulmonar**.
+A escoliose aparece em **90%**, é a típica neuromuscular (**C longa, toracolombar em 80%** e torácica em 20%), surge **entre 6 e 8 anos** e acelera **quando a criança vai para a cadeira**; quanto mais grave a doença, mais progressiva a curva (Campbell, cap. 40). A criança tem fasciculações da língua, inteligência normal e coração poupado; a morte costuma ser **pulmonar**.
 
-O **TLSO só para sentar** pode ser usado a partir de **20° sentado** no imaturo, mas **deformidade torácica pelo colete** é contraindicação (p. 1603.e1, aprox.). Na criança pequena com curva grave, as **hastes de crescimento** (de preferência **magnéticas**) são a opção até a fusão; muitos precisam de **fusão ao sacro** (p. 1603). Quem usa **nusinersen** intratecal precisa de uma **janela de laminectomia** sem enxerto para continuar as injeções. As complicações chegam a **45%**, e **CVF menor que 20%** do previsto significa **grande risco de morte pós-operatória**; depois da fusão, transferências, rolar e higiene podem piorar, porque o tronco fraco não se dobra mais para compensar (p. 1603 e 1603.e1, aprox.).
+O **TLSO só para sentar** pode ser usado a partir de **20° sentado** no imaturo, mas **deformidade torácica pelo colete** é contraindicação (cap. 40). Na criança pequena com curva grave, as **hastes de crescimento** (de preferência **magnéticas**) são a opção até a fusão; muitos precisam de **fusão ao sacro** (p. 1603). Quem usa **nusinersen** intratecal precisa de uma **janela de laminectomia** sem enxerto para continuar as injeções. As complicações chegam a **45%**, e **CVF menor que 20%** do previsto significa **grande risco de morte pós-operatória**; depois da fusão, transferências, rolar e higiene podem piorar, porque o tronco fraco não se dobra mais para compensar (cap. 40).
 
 # Mielomeningocele {radar=clinico}
 
@@ -439,7 +439,7 @@ A curva é **longa, em C**, com a convexidade em geral **oposta à pelve elevada
 
 Algumas doenças têm uma particularidade que vale guardar, porque a prova gosta do detalhe que foge da regra:
 
-!tabela Particularidades das outras escolioses neuromusculares (Campbell 15, cap. 40, p. 1601 a 1604.e1, aprox.)
+!tabela Particularidades das outras escolioses neuromusculares (Campbell 15, cap. 40)
 | Doença | Padrão e frequência | Detalhe que cai |
 | --- | --- | --- |
 | FRIEDREICH | dupla torácica e lombar (57%); neuromuscular típica só 14%; 49% progridem | menos de 40° observar, mais de 60° operar; cardiomiopatia, cardiologia obrigatória; T2 ao sacro, pelve só com obliquidade |

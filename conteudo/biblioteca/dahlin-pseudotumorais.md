@@ -1,6 +1,6 @@
 ---
 id: dahlin-pseudotumorais
-versao: 1
+versao: 2
 titulo: Outras lesões pseudotumorais
 especialidade: tumores
 acesso: gratis
@@ -41,7 +41,7 @@ O Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed. (cap. 29, de JESUS-GARCI
 
 ## Por que a imagem engana
 
-O Dahlin fecha o capítulo com uma seção curta, "radiografias enganosas" (p. 377, aprox.), que resume a armadilha: as radiografias quase sempre mostram a lesão e indicam se é benigna ou maligna, mas às vezes enganam. **Infecção simula neoplasia; processo benigno imita doença maligna**; raramente a radiografia sugere uma doença que não existe. E a ressonância **pode ser sensível demais**, mostrando alteração onde não há doença, sobretudo em volta dos tumores, onde o **edema** parece extensão tumoral.
+O Dahlin fecha o capítulo com uma seção curta, "radiografias enganosas" (p. 377), que resume a armadilha: as radiografias quase sempre mostram a lesão e indicam se é benigna ou maligna, mas às vezes enganam. **Infecção simula neoplasia; processo benigno imita doença maligna**; raramente a radiografia sugere uma doença que não existe. E a ressonância **pode ser sensível demais**, mostrando alteração onde não há doença, sobretudo em volta dos tumores, onde o **edema** parece extensão tumoral.
 
 Esse aviso reaparece em cada seção: na miosite ossificante a RM mostra lesão mal definida e permeativa por causa do edema (p. 347); na fratura de estresse a RM mostra "anormalidades perturbadoras" na medula e nas partes moles (p. 350); na osteoporose transitória a cintilografia capta e sugere malignidade (p. 368).
 
@@ -339,7 +339,7 @@ armadilha: Escolher a transversa de alta energia: o que define a banana é o tra
 
 ## O trocânter menor isolado no adulto
 
-O mesmo raciocínio vale para a avulsão. O Rockwood and Green (cap. 54) diz que a fratura isolada do trocânter menor, com a inserção do iliopsoas, é **incomum** e deve ser **considerada patológica até prova em contrário**. No cap. 25, coloca a **avulsão isolada do trocânter menor** e a lesão cortical no adulto **abaixo do cotovelo ou do joelho** entre os achados **altamente sugestivos de metástase**, com risco de fratura do colo; e o critério clássico de fixação profilática inclui **destruição cortical maior que 50%, lesão maior que 2,5 cm, avulsão patológica do trocânter menor e dor persistente apesar da radioterapia**. O Dahlin ilustra (Fig. 26.2, p. 307, aprox.) uma **metástase de mama** subtrocantérica com **destruição do trocânter menor**.
+O mesmo raciocínio vale para a avulsão. O Rockwood and Green (cap. 54) diz que a fratura isolada do trocânter menor, com a inserção do iliopsoas, é **incomum** e deve ser **considerada patológica até prova em contrário**. No cap. 25, coloca a **avulsão isolada do trocânter menor** e a lesão cortical no adulto **abaixo do cotovelo ou do joelho** entre os achados **altamente sugestivos de metástase**, com risco de fratura do colo; e o critério clássico de fixação profilática inclui **destruição cortical maior que 50%, lesão maior que 2,5 cm, avulsão patológica do trocânter menor e dor persistente apesar da radioterapia**. O Dahlin ilustra (Fig. 26.2, p. 307) uma **metástase de mama** subtrocantérica com **destruição do trocânter menor**.
 
 O raciocínio fisiológico: no adolescente, a apófise ainda aberta é o ponto fraco, e a avulsão é traumática (Dahlin, p. 352, avulsões em jovens ativos); no adulto, sem fise, **a tração do iliopsoas não arranca o trocânter menor de um osso sadio**.
 

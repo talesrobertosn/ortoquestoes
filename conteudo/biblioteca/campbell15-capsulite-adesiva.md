@@ -1,6 +1,6 @@
 ---
 id: campbell15-capsulite-adesiva
-versao: 2
+versao: 3
 titulo: Capsulite adesiva (ombro congelado)
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -261,7 +261,7 @@ O SIZÍNIO HEBERT descreve a limitação de **elevação, rotação interna, rot
 
 ## Ativo contra passivo
 
-O Netter Atlas de Anatomia Ortopédica, 2ª ed., resume o exame em uma linha (cap. 3): na **ruptura do manguito**, a ADM **ativa** está diminuída e a **passiva** está normal; na **capsulite adesiva**, a ADM **ativa e passiva** estão **diminuídas**. A regra serve para quase toda questão de diagnóstico diferencial. O Campbell mostra a ponte entre os dois quadros: no paciente com lesão do manguito, a ADM passiva fica cheia **até que a dor limite tanto o movimento ativo que se instale uma capsulite** (cap. 51, p. 2163 aprox.).
+O Netter Atlas de Anatomia Ortopédica, 2ª ed., resume o exame em uma linha (cap. 3): na **ruptura do manguito**, a ADM **ativa** está diminuída e a **passiva** está normal; na **capsulite adesiva**, a ADM **ativa e passiva** estão **diminuídas**. A regra serve para quase toda questão de diagnóstico diferencial. O Campbell mostra a ponte entre os dois quadros: no paciente com lesão do manguito, a ADM passiva fica cheia **até que a dor limite tanto o movimento ativo que se instale uma capsulite** (cap. 51).
 
 Os testes de impacto não ajudam a separar as doenças: o teste de **NEER** dói no impacto, mas também na **capsulite**, na artrose, na tendinite calcária e em lesões ósseas (cap. 51, p. 2147). E a **capsulite inicial** aparece na lista de dilemas diagnósticos do impacto, junto da artrose acromioclavicular e glenoumeral, da instabilidade sutil e da fibromialgia (cap. 51, p. 2160).
 

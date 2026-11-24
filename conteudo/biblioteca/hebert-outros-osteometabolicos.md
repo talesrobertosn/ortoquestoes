@@ -1,6 +1,6 @@
 ---
 id: hebert-outros-osteometabolicos
-versao: 1
+versao: 2
 titulo: Outros temas de osteometabólicas: escorbuto, osteopetrose, mucopolissacaridoses e osso frágil
 especialidade: osteometabolicas
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e c
 edicao: 5ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), caps. 25, 36, 38 e 39, o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), caps. 6, 8 e 10, o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 4, 25 e 32, o Campbell's Operative Orthopaedics, 15ª ed. (2026), caps. 3 e 7, o The Adult Hip (CALLAGHAN), 3ª ed. (2017), caps. 24 e 74, o Green's Operative Hand Surgery, 7ª ed. (2017), cap. 12, e o Skeletal Trauma, cap. 20
 capitulo: Capítulo 28 · Osteoporose na criança e no adulto, com o Capítulo 27 · Doenças osteometabólicas (seções Escorbuto, Mucopolissacaridoses e Osteogênese imperfeita) do mesmo livro
 autores: Roberto GUARNIERO (HEBERT, cap. 28); Akira ISHIDA, José Antonio PINTO, Francesco Camara BLUMETTI, Henrique SODRÉ e Eiffel Tsuyoshi DOBASHI (HEBERT, cap. 27); Harry K.W. KIM e Mouin G. SEIKALY (Tachdjian, cap. 38); Anthony I. RICCIO (Tachdjian, cap. 39); Andrew W. HOWARD e Benjamin A. ALMAN (Lovell, cap. 6); Derek G. HANSEN e Stuart H. RALSTON (Rockwood, cap. 4); Valerae O. LEWIS (Rockwood, cap. 25)
-fonte: Livros conferidos localmente em 10/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 28 (definição, Tabela 28.1) e cap. 27 (escorbuto, mucopolissacaridoses, osteogênese imperfeita), além de trechos dos caps. 4, 10 e 29; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, p. 1942 a 1945 (escorbuto e colágeno da osteogênese imperfeita), cap. 36, p. 1799 a 1803 (osteopetrose) e 1819 a 1831 (mucopolissacaridoses), cap. 39, p. 1988 a 1990 (anemia falciforme) e cap. 25, p. 1013 a 1016 (displasia fibrosa); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6, p. 141 e 164 a 167, cap. 8, p. 254 a 256, e cap. 10, p. 322 e 323; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 4, p. aprox. 87 a 89 e 105 a 107, cap. 25, p. aprox. 765, e cap. 32 (seção Osteolysis of the Distal Clavicle); Campbell's Operative Orthopaedics, 15ª ed., cap. 3, p. 166, e cap. 7, p. 393 e 394; The Adult Hip, cap. 24, p. 374 aprox., e cap. 74, p. 963 e 964; Green's Operative Hand Surgery, 7ª ed., cap. 12, p. 401 e 402; Skeletal Trauma, cap. 20, p. 533.
+fonte: Livros conferidos localmente em 10/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 28 (definição, Tabela 28.1) e cap. 27 (escorbuto, mucopolissacaridoses, osteogênese imperfeita), além de trechos dos caps. 4, 10 e 29; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, p. 1942 a 1945 (escorbuto e colágeno da osteogênese imperfeita), cap. 36, p. 1799 a 1803 (osteopetrose) e 1819 a 1831 (mucopolissacaridoses), cap. 39, p. 1988 a 1990 (anemia falciforme) e cap. 25, p. 1013 a 1016 (displasia fibrosa); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6, p. 141 e 164 a 167, cap. 8, p. 254 a 256, e cap. 10, p. 322 e 323; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 4, cap. 25, e cap. 32 (seção Osteolysis of the Distal Clavicle); Campbell's Operative Orthopaedics, 15ª ed., cap. 3, p. 166, e cap. 7, p. 393 e 394; The Adult Hip, cap. 24, e cap. 74, p. 963 e 964; Green's Operative Hand Surgery, 7ª ed., cap. 12, p. 401 e 402; Skeletal Trauma, cap. 20, p. 533.
 subtemas: Outros temas osteometabólicos
 resumo: Osteoclasto (monócito, borda em escova, lacuna de HOWSHIP, RANKL) é a célula da reabsorção; osteoporose = reabsorção maior que formação (pós-menopausa com osteoclasto ativo, senil com formação baixa); escorbuto = ossos longos, linha densa metafisária de FRANKEL, esporão de PELKEN, hematoma subperiosteal e pseudoparalisia; osteogênese imperfeita = colágeno tipo I em mais de 90%, SILLENCE I leve com esclera azul; osteopetrose maligna = autossômica recessiva, pancitopenia e cegueira, transplante de medula; MORQUIO é a mucopolissacaridose da frouxidão; falciforme rarefaz a coluna; displasia fibrosa = vidro fosco; osteogênese imperfeita, displasia fibrosa poliostótica e osteopetrose são causas não corrigíveis de fratura patológica; CHARCOT do quadril fragmenta a cabeça; osteólise pós-traumática na clavícula distal e no púbis.
 ---
@@ -29,15 +29,15 @@ A prova cobra frases curtas e literais: **onde** a radiografia do escorbuto apar
 
 O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 6, p. 141), abre o capítulo metabólico dizendo que a densidade óssea é regulada por **osteoblastos, osteócitos e osteoclastos**. As duas primeiras são a mesma linhagem em fases diferentes; a terceira vem de outro lugar.
 
-O **osteoblasto** nasce de uma **célula estromal pluripotente** (a célula-tronco mesenquimal, vizinha do pericito dos vasos). Deposita **osteoide**, a matriz ainda não mineralizada, e produz **fosfatase alcalina**, a enzima que serve de marcador da sua atividade. Quando fica cercado pela matriz que ele mesmo fez, torna-se **osteócito**: uma célula quiescente, distante das vizinhas, que conversa com elas por **longos prolongamentos citoplasmáticos**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, p. aprox. 87), completa: o osteócito é o **sensor de carga mecânica** do osso e produz a **esclerostina**, que freia a formação estimulada pela via Wnt.
+O **osteoblasto** nasce de uma **célula estromal pluripotente** (a célula-tronco mesenquimal, vizinha do pericito dos vasos). Deposita **osteoide**, a matriz ainda não mineralizada, e produz **fosfatase alcalina**, a enzima que serve de marcador da sua atividade. Quando fica cercado pela matriz que ele mesmo fez, torna-se **osteócito**: uma célula quiescente, distante das vizinhas, que conversa com elas por **longos prolongamentos citoplasmáticos**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), completa: o osteócito é o **sensor de carga mecânica** do osso e produz a **esclerostina**, que freia a formação estimulada pela via Wnt.
 
-O **osteoclasto** vem dos **monócitos circulantes**. O Lovell (cap. 10, p. 328 aprox.) o define como **uma forma especializada de macrófago**, do mesmo precursor. O Rockwood descreve o passo a passo: os precursores são atraídos ao local, **fundem-se** numa célula **multinucleada**, que cria uma **zona de selamento** sobre a superfície óssea e despeja, pela **borda em escova** (ruffled border), **ácido clorídrico e enzimas proteolíticas** no espaço fechado embaixo dela, a **lacuna de HOWSHIP**. A enzima mais importante é a **catepsina K**, que degrada o colágeno. Depois de **10 a 12 dias** o osteoclasto morre por apoptose (fase de reversão) e os osteoblastos preenchem a cavidade.
+O **osteoclasto** vem dos **monócitos circulantes**. O Lovell (cap. 10, p. 328) o define como **uma forma especializada de macrófago**, do mesmo precursor. O Rockwood descreve o passo a passo: os precursores são atraídos ao local, **fundem-se** numa célula **multinucleada**, que cria uma **zona de selamento** sobre a superfície óssea e despeja, pela **borda em escova** (ruffled border), **ácido clorídrico e enzimas proteolíticas** no espaço fechado embaixo dela, a **lacuna de HOWSHIP**. A enzima mais importante é a **catepsina K**, que degrada o colágeno. Depois de **10 a 12 dias** o osteoclasto morre por apoptose (fase de reversão) e os osteoblastos preenchem a cavidade.
 
 ## Quem manda no osteoclasto
 
 O osteoclasto não decide sozinho. O Lovell (p. 141, Fig. 6-1) explica que o **PTH não age diretamente nele**: o sinal passa pelo osteócito e pelo osteoblasto, que expressam **RANKL**. O RANKL se liga ao receptor **RANK** do pré-osteoclasto e o faz amadurecer. A **osteoprotegerina (OPG)** é um receptor chamariz que captura o RANKL e desliga o processo. O equilíbrio RANKL e OPG define quantos osteoclastos existem, e é ele que o **denosumabe** (anticorpo contra o RANKL) desloca. O Rockwood acrescenta o **M-CSF** do estroma e os **fatores de acoplamento**: o **TGF-beta** guardado na matriz é liberado pela própria reabsorção e chama o osteoblasto, de modo que, no adulto, onde se reabsorve também se forma. Cerca de **10% do esqueleto adulto** está em remodelação a cada momento.
 
-!tabela As células do osso (Lovell and Winter, cap. 6, p. 141; Rockwood Adults, cap. 4, p. aprox. 87)
+!tabela As células do osso (Lovell and Winter, cap. 6, p. 141; Rockwood Adults, cap. 4)
 | Célula | Origem | O que faz | Marca |
 |---|---|---|---|
 | Osteoblasto | Célula estromal mesenquimal | Deposita osteoide; expressa RANKL e OPG | Fosfatase alcalina |
@@ -67,9 +67,9 @@ alerta: O Lovell and Winter (cap. 6, p. 141) afirma que osteoblastos e osteócit
 
 O HEBERT (cap. 28) define a osteoporose como doença metabólica com **perda gradual de massa e deterioração da microarquitetura**, e a separa da osteomalácia: na osteoporose há **diminuição absoluta da massa óssea**, com osso de composição normal; na osteomalácia há **osteoide que não mineraliza**. Pela densitometria, **osteopenia** é a perda de 1 a 2,5 desvios-padrão e **osteoporose** é a perda maior que 2,5; com fratura, é grave. Os exames de sangue são **normais**.
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, seção Pathophysiology, p. aprox. 89), dá a frase que resolve a questão de certo ou errado: em termos mecanísticos, a massa óssea baixa ocorre porque **a quantidade de osso removida pela atividade osteoclástica é maior que a depositada pela atividade osteoblástica**. A osteoporose pode nascer da perda da idade e da menopausa, de um **pico de massa óssea baixo** ou das duas coisas; a genética explica **70% a 85%** da variância da massa. No hipogonadismo do adulto, o livro fala em **desacoplamento** entre reabsorção e formação: as duas deixam de andar juntas. No uso de corticoide, o mecanismo dominante é do lado da formação: **apoptose de osteoblastos e osteócitos**, somada a menor absorção intestinal e maior perda renal de cálcio.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, seção Pathophysiology), dá a frase que resolve a questão de certo ou errado: em termos mecanísticos, a massa óssea baixa ocorre porque **a quantidade de osso removida pela atividade osteoclástica é maior que a depositada pela atividade osteoblástica**. A osteoporose pode nascer da perda da idade e da menopausa, de um **pico de massa óssea baixo** ou das duas coisas; a genética explica **70% a 85%** da variância da massa. No hipogonadismo do adulto, o livro fala em **desacoplamento** entre reabsorção e formação: as duas deixam de andar juntas. No uso de corticoide, o mecanismo dominante é do lado da formação: **apoptose de osteoblastos e osteócitos**, somada a menor absorção intestinal e maior perda renal de cálcio.
 
-Por que a vértebra sofre primeiro? Porque o osso **trabecular** tem muito mais superfície que o cortical e é remodelado mais depressa (Rockwood, p. aprox. 87). Quando o turnover sobe, a perda aparece antes onde há trabécula: corpo vertebral, rádio distal.
+Por que a vértebra sofre primeiro? Porque o osso **trabecular** tem muito mais superfície que o cortical e é remodelado mais depressa (Rockwood). Quando o turnover sobe, a perda aparece antes onde há trabécula: corpo vertebral, rádio distal.
 
 ## Os dois tipos da osteoporose primária
 
@@ -96,7 +96,7 @@ O PTH diminuído do tipo I é consequência: o osso despeja cálcio, a paratireo
 conceito: Na osteoporose o osso removido pelo osteoclasto supera o depositado pelo osteoblasto; a forma pós-menopausa tem atividade osteoclástica aumentada e a senil tem formação diminuída.
 como: O TARO 2006 pediu certo ou errado para a frase de que na osteoporose há tanto aumento da atividade osteoclástica quanto diminuição da osteoblástica.
 armadilha: Achar que osteoporose é só excesso de reabsorção; o corticoide e a idade agem principalmente derrubando a formação.
-alerta: Questão sem gabarito oficial em `osteometabolicas-0090`; o Rockwood (cap. 4, p. aprox. 89) e a Tabela 28.1 do HEBERT sustentam Certo, lembrando que cada mecanismo predomina em um tipo (osteoclasto no tipo I, formação baixa no tipo II).
+alerta: Questão sem gabarito oficial em `osteometabolicas-0090`; o Rockwood (cap. 4) e a Tabela 28.1 do HEBERT sustentam Certo, lembrando que cada mecanismo predomina em um tipo (osteoclasto no tipo I, formação baixa no tipo II).
 !fim
 
 > **Na prova:** osteoporose = **massa absoluta menor com exames normais**; tipo I = **osteoclasto ativo, trabecular, rápida**; tipo II = **formação baixa, cortical e trabecular, lenta, PTH alto**.
@@ -178,11 +178,11 @@ O **colágeno tipo II** é o da cartilagem hialina; o **tipo III** acompanha vas
 
 ## Quantos casos são do colágeno I
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, p. aprox. 106), afirma que **mais de 90% dos casos** são causados por mutações em **COL1A1 e COL1A2**. O Tachdjian (p. 1945) diz que **mais de 85%** se associam a mutações dominantes em COL1A1, COL1A2 e IFITM5 e que o defeito fundamental em **cerca de 90%** dos pacientes é a redução do colágeno tipo 1 normal ou a sua troca por um colágeno mutante. Os dois números convivem: o de 90% é o que a banca usa. O HEBERT registra os tipos V, VI e VII, com fenótipo parecido e **sem envolvimento do colágeno tipo I**, e mais de 20 genes já descritos.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), afirma que **mais de 90% dos casos** são causados por mutações em **COL1A1 e COL1A2**. O Tachdjian (p. 1945) diz que **mais de 85%** se associam a mutações dominantes em COL1A1, COL1A2 e IFITM5 e que o defeito fundamental em **cerca de 90%** dos pacientes é a redução do colágeno tipo 1 normal ou a sua troca por um colágeno mutante. Os dois números convivem: o de 90% é o que a banca usa. O HEBERT registra os tipos V, VI e VII, com fenótipo parecido e **sem envolvimento do colágeno tipo I**, e mais de 20 genes já descritos.
 
 O tipo de mutação explica a gravidade. No **defeito quantitativo**, um códon de parada silencia um alelo, a célula produz **metade do colágeno, mas colágeno normal**: é a forma leve, o **SILLENCE I**. No **defeito qualitativo**, a cadeia mutante entra na hélice e a estraga: são os tipos II, III e IV (Tachdjian, p. 1945; Rockwood).
 
-!tabela Classificação de SILLENCE como o HEBERT a apresenta (HEBERT, cap. 27; Rockwood Adults, cap. 4, p. aprox. 106)
+!tabela Classificação de SILLENCE como o HEBERT a apresenta (HEBERT, cap. 27; Rockwood Adults, cap. 4)
 | Tipo | Gravidade | Escleras | Fraturas | Herança no HEBERT |
 |---|---|---|---|---|
 | I | Leve | Azuis | Após o nascimento, maioria na idade pré-escolar | Autossômica dominante |
@@ -210,13 +210,13 @@ A osteopetrose, descrita por ALBERS-SCHÖNBERG em 1904, é a **falha do osteocla
 
 Três consequências saem do mesmo defeito. A **cavidade medular é obliterada**, e a medula não tem onde fazer sangue: pancitopenia e hematopoese extramedular com hepatoesplenomegalia. Os **forames do crânio não se alargam**, e os nervos cranianos são comprimidos: cegueira, surdez, paralisia facial. A **metáfise não é afunilada**, e fica larga, em clava.
 
-Os genes confirmam que o problema é a máquina de acidificar do osteoclasto: **TCIRG1**, uma subunidade da **bomba de prótons**, em 50% a 60% das formas malignas; **CLCN7**, o **canal de cloro**, na forma dominante tipo II e na intermediária; e a **anidrase carbônica II** na forma com **acidose tubular renal** e calcificações cerebrais (Tachdjian, p. 1800). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, p. aprox. 107), separa as formas **ricas em osteoclastos** (a célula existe e não funciona) das **pobres em osteoclastos** (a célula não se diferencia, por mutação de RANK ou RANKL).
+Os genes confirmam que o problema é a máquina de acidificar do osteoclasto: **TCIRG1**, uma subunidade da **bomba de prótons**, em 50% a 60% das formas malignas; **CLCN7**, o **canal de cloro**, na forma dominante tipo II e na intermediária; e a **anidrase carbônica II** na forma com **acidose tubular renal** e calcificações cerebrais (Tachdjian, p. 1800). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), separa as formas **ricas em osteoclastos** (a célula existe e não funciona) das **pobres em osteoclastos** (a célula não se diferencia, por mutação de RANK ou RANKL).
 
 ## As formas e a herança
 
 A frase que a banca copiou está no Tachdjian (p. 1800): **a osteopetrose maligna é transmitida como traço autossômico recessivo, os dois subtipos da forma tarda são herdados de modo autossômico dominante e a forma intermediária é autossômica recessiva**. Cada alternativa errada da questão inverte uma dessas três afirmações ou põe a cegueira na forma benigna.
 
-!tabela Formas clínicas da osteopetrose (Tachdjian, cap. 36, p. 1799 e 1800; Lovell and Winter, cap. 6, p. 164 a 166; Rockwood Adults, cap. 4, p. aprox. 107)
+!tabela Formas clínicas da osteopetrose (Tachdjian, cap. 36, p. 1799 e 1800; Lovell and Winter, cap. 6, p. 164 a 166; Rockwood Adults, cap. 4)
 | Forma | Herança | Início | Quadro | Evolução |
 |---|---|---|---|---|
 | Maligna (infantil, congênita) | Autossômica recessiva | Nascimento ou lactente | Pancitopenia, sangramento, hepatoesplenomegalia, cegueira e surdez por compressão de nervos cranianos, hidrocefalia, fraturas | Letal cedo sem transplante de medula |
@@ -271,7 +271,7 @@ A radiografia é parecida em todas, e os dois livros pediátricos concordam que 
 
 O HEBERT escreve a frase da prova: o depósito de mucopolissacarídeos nas estruturas periarticulares expressa-se pela **rigidez articular, exceto na MPS IV, em que predomina a frouxidão ligamentar**. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 8, p. 254), explica a rigidez pelo depósito na cápsula e pela perda da congruência articular, mais evidente nas mãos (a mão em garra de HURLER, SCHEIE e HUNTER, com túnel do carpo e dedo em gatilho). E descreve a exceção (p. 256): todos os pacientes com MPS IV são **anões de tronco curto com frouxidão ligamentar, profunda no tipo IVA**, e o joelho valgo é agravado por ela.
 
-A **síndrome de MORQUIO** (MORQUIO-BRAILSFORD) é a deficiência de **N-acetilgalactosamina-6-sulfatase** (tipo A) ou de **beta-galactosidase** (tipo B), com excreção de **queratam sulfato**. Aparece por volta dos 2 anos. A **inteligência é normal**, ao contrário das outras (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 36, p. 1831). O esqueleto é o mais afetado de todos: **platispondilia** com nanismo de tronco, cifose toracolombar, tórax com esterno protruso, **joelhos valgos**, pés planos e frouxidão sobretudo **nos punhos e nas pequenas articulações**. O risco que mata é cervical: **hipoplasia do odontoide com instabilidade atlantoaxial e mielopatia**, que muitas vezes exige artrodese cervical alta. O Tachdjian (cap. 8, p. 128 aprox.) recomenda radiografia dinâmica a cada um ou dois anos nas MPS.
+A **síndrome de MORQUIO** (MORQUIO-BRAILSFORD) é a deficiência de **N-acetilgalactosamina-6-sulfatase** (tipo A) ou de **beta-galactosidase** (tipo B), com excreção de **queratam sulfato**. Aparece por volta dos 2 anos. A **inteligência é normal**, ao contrário das outras (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 36, p. 1831). O esqueleto é o mais afetado de todos: **platispondilia** com nanismo de tronco, cifose toracolombar, tórax com esterno protruso, **joelhos valgos**, pés planos e frouxidão sobretudo **nos punhos e nas pequenas articulações**. O risco que mata é cervical: **hipoplasia do odontoide com instabilidade atlantoaxial e mielopatia**, que muitas vezes exige artrodese cervical alta. O Tachdjian (cap. 8, p. 128) recomenda radiografia dinâmica a cada um ou dois anos nas MPS.
 
 !tabela Mucopolissacaridoses de interesse ortopédico (HEBERT, cap. 27; Lovell and Winter, cap. 8, p. 254 a 256; Tachdjian, cap. 36, p. 1819 a 1831)
 | Tipo | Enzima | Urina | Herança | Articulações | Inteligência | Pista |
@@ -343,7 +343,7 @@ alerta: O Tachdjian (cap. 39, p. 1990) e o Lovell (cap. 10, p. 322) descrevem a 
 
 ## O que é
 
-A displasia fibrosa é uma lesão benigna e **não hereditária** em que **tecido fibro-ósseo** ocupa e expande a cavidade medular de um ou mais ossos. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1013), a explica como **falha da maturação do osso imaturo para osso lamelar**; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, p. aprox. 105), dá a causa molecular: mutação **somática ativadora do gene GNAS1**, que codifica a **proteína Gs-alfa**. Essa proteína transmite o sinal de vários receptores (do PTH, do hormônio estimulante dos melanócitos, das gonadotrofinas, do TSH), e a mutação imita o receptor permanentemente ligado. Isso explica de uma vez o osso, a pele e as glândulas.
+A displasia fibrosa é uma lesão benigna e **não hereditária** em que **tecido fibro-ósseo** ocupa e expande a cavidade medular de um ou mais ossos. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1013), a explica como **falha da maturação do osso imaturo para osso lamelar**; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), dá a causa molecular: mutação **somática ativadora do gene GNAS1**, que codifica a **proteína Gs-alfa**. Essa proteína transmite o sinal de vários receptores (do PTH, do hormônio estimulante dos melanócitos, das gonadotrofinas, do TSH), e a mutação imita o receptor permanentemente ligado. Isso explica de uma vez o osso, a pele e as glândulas.
 
 !tabela Formas da displasia fibrosa (Tachdjian, cap. 25, p. 1013 e 1014)
 | Forma | Extensão | Particularidade |
@@ -357,7 +357,7 @@ As **manchas café com leite** têm borda irregular, a "costa do Maine", diferen
 
 ## A imagem
 
-Nos ossos longos a lesão começa na **metáfise ou na diáfise** e raramente toca a epífise. A densidade depende de quanto osso imaturo o tecido produziu. Quando a lesão afina a cortical e substitui a maior parte do osso, surge o aspecto **característico em vidro fosco**: uma opacidade homogênea, esfumada, sem trabéculas visíveis, que o Tachdjian (p. 1014) considera **quase patognomônica** quando extensa. O Rockwood a descreve como lesão **predominantemente osteolítica com expansão do osso**. O HEBERT (cap. 29) usa as mesmas palavras, aspecto nebuloso em vidro fosco, e o emprega como diferencial: a displasia fibrosa **não tem trabeculações**. O Lovell and Winter (cap. 13, p. 450 aprox.) acrescenta que o vidro fosco **se funde com a cortical afilada**, sem limite nítido. No fêmur proximal, microfraturas repetidas levam ao varo progressivo em **cajado de pastor**.
+Nos ossos longos a lesão começa na **metáfise ou na diáfise** e raramente toca a epífise. A densidade depende de quanto osso imaturo o tecido produziu. Quando a lesão afina a cortical e substitui a maior parte do osso, surge o aspecto **característico em vidro fosco**: uma opacidade homogênea, esfumada, sem trabéculas visíveis, que o Tachdjian (p. 1014) considera **quase patognomônica** quando extensa. O Rockwood a descreve como lesão **predominantemente osteolítica com expansão do osso**. O HEBERT (cap. 29) usa as mesmas palavras, aspecto nebuloso em vidro fosco, e o emprega como diferencial: a displasia fibrosa **não tem trabeculações**. O Lovell and Winter (cap. 13, p. 450) acrescenta que o vidro fosco **se funde com a cortical afilada**, sem limite nítido. No fêmur proximal, microfraturas repetidas levam ao varo progressivo em **cajado de pastor**.
 
 Os distratores clássicos são sinais de outras doenças: **trabeculado grosseiro com cortical espessa** é a doença de PAGET; **metáfise em frasco de ERLENMEYER** é a osteopetrose (e outras displasias de modelagem); **pseudofraturas** em costelas e pelve são a osteomalácia.
 
@@ -377,9 +377,9 @@ armadilha: Trocar pelos sinais de PAGET (trabeculado grosseiro), osteopetrose (E
 
 ## A primeira pergunta
 
-Fratura patológica é a que ocorre com **carga fisiológica em osso anormal**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, p. aprox. 765), propõe que, diante de uma fratura patológica **não relacionada a câncer**, o primeiro passo seja estabelecer o diagnóstico de base e separá-lo em **corrigível** ou **não corrigível**. A divisão segue a natureza da doença: as **sistêmicas e metabólicas** podem ser revertidas com tratamento clínico; as **genéticas ou hereditárias** não.
+Fratura patológica é a que ocorre com **carga fisiológica em osso anormal**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25), propõe que, diante de uma fratura patológica **não relacionada a câncer**, o primeiro passo seja estabelecer o diagnóstico de base e separá-lo em **corrigível** ou **não corrigível**. A divisão segue a natureza da doença: as **sistêmicas e metabólicas** podem ser revertidas com tratamento clínico; as **genéticas ou hereditárias** não.
 
-!tabela Doença esquelética não neoplásica e fratura patológica (Rockwood Adults, cap. 25, p. aprox. 765)
+!tabela Doença esquelética não neoplásica e fratura patológica (Rockwood Adults, cap. 25)
 | Grupo | Doenças | Conduta |
 |---|---|---|
 | Corrigíveis (sistêmicas e metabólicas) | Osteodistrofia renal, hiperparatireoidismo, osteomalácia, osteoporose por desuso | Tratar a doença de base junto com a fratura, em geral com equipe multidisciplinar |
@@ -402,7 +402,7 @@ armadilha: Aceitar uma alternativa que tenha PAGET e osteopetrose (corretas) jun
 
 ## O que é
 
-É uma osteopenia dolorosa, **autolimitada e de causa incerta**, da cabeça e do colo do fêmur. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 3, p. 166), cita as hipóteses isquêmica, hormonal e de estresse. O quadro é de dor de início rápido, em geral **unilateral** (mais à esquerda, segundo o The Adult Hip, cap. 24, p. 374 aprox.), com recuperação espontânea em **2 a 6 meses**. Alguns pacientes têm depois o quadril oposto ou outra articulação vizinha acometidos, o que liga a doença à **osteoporose migratória regional**; o The Adult Hip dá 30% de acometimento contralateral.
+É uma osteopenia dolorosa, **autolimitada e de causa incerta**, da cabeça e do colo do fêmur. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 3, p. 166), cita as hipóteses isquêmica, hormonal e de estresse. O quadro é de dor de início rápido, em geral **unilateral** (mais à esquerda, segundo o The Adult Hip, cap. 24), com recuperação espontânea em **2 a 6 meses**. Alguns pacientes têm depois o quadril oposto ou outra articulação vizinha acometidos, o que liga a doença à **osteoporose migratória regional**; o The Adult Hip dá 30% de acometimento contralateral.
 
 ## Quem tem: a divergência com o gabarito
 
@@ -412,7 +412,7 @@ O Campbell escreve que o processo foi **descrito inicialmente em gestantes no te
 
 A radiografia inicial pode ser **normal** ou mostrar **osteopenia difusa da cabeça com espaço articular preservado**. A ressonância mostra **edema difuso** da cabeça, que se estende até a região intertrocantérica: sinal baixo em T1 e alto em T2, mais nítido com supressão de gordura, o **padrão de edema da medula óssea**. O que falta é a **lesão focal** da osteonecrose. Se a radiografia inicial for normal, repeti-la em **6 a 8 semanas** deve mostrar a osteopenia e confirmar o diagnóstico (Campbell). A cintilografia tem captação intensa e homogênea de toda a cabeça.
 
-!tabela Osteoporose transitória e osteonecrose da cabeça femoral (Campbell, cap. 3, p. 166; The Adult Hip, cap. 24, p. 374 aprox.)
+!tabela Osteoporose transitória e osteonecrose da cabeça femoral (Campbell, cap. 3, p. 166; The Adult Hip, cap. 24)
 | Característica | Osteoporose transitória | Osteonecrose |
 |---|---|---|
 | Curso | Autolimitado, resolve em até 6 meses | Progressivo |

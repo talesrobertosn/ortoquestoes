@@ -1,6 +1,6 @@
 ---
 id: campbell15-pe-plano-adulto
-versao: 1
+versao: 2
 titulo: Pé plano adquirido do adulto e disfunção do tibial posterior
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed.
 capitulo: Capítulo 90 · Arthritis of the Foot (seção Hindfoot: subtalar, talonavicular e triple arthrodesis), com o Capítulo 88 · Disorders of the Tendons and Fascia and Adolescent and Adult Acquired Flatfoot Deformity (seção Disorders of the Posterior Tibial Tendon and Adult Acquired Flatfoot Deformity)
 autores: David R. RICHARDSON (cap. 90); Benjamin J. GREAR (cap. 88)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 90, p. 3982 a 3984 e 3988 a 3990 (artrose do retropé, artrodese subtalar, talonavicular e tríplice); cap. 88, p. 3811 a 3836 (Tabela 88.1 de JOHNSON e STROM com BLUMAN e MYERSON, Tabela 88.2 do consenso PCFD da AOFAS, exame, imagem, técnicas 88.1 a 88.10, navicular acessório); cap. 92, p. 4057 aprox. (ângulo de MÉARY); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 21.2 (Lesões tendíneas, seção do tibial posterior), cap. 20.4 (Pé plano: sinal dos muitos dedos, ângulos radiográficos, KOUTSOGIANNIS, EVANS) e cap. 21.4 (ângulo de MÉARY).
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 90, p. 3982 a 3984 e 3988 a 3990 (artrose do retropé, artrodese subtalar, talonavicular e tríplice); cap. 88, p. 3811 a 3836 (Tabela 88.1 de JOHNSON e STROM com BLUMAN e MYERSON, Tabela 88.2 do consenso PCFD da AOFAS, exame, imagem, técnicas 88.1 a 88.10, navicular acessório); cap. 92 (ângulo de MÉARY); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 21.2 (Lesões tendíneas, seção do tibial posterior), cap. 20.4 (Pé plano: sinal dos muitos dedos, ângulos radiográficos, KOUTSOGIANNIS, EVANS) e cap. 21.4 (ângulo de MÉARY).
 subtemas: Pé plano adquirido do adulto
 resumo: Colapso peritalar por disfunção do tibial posterior com valgo do retropé, abdução do mediopé e pronação do antepé; muitos dedos pela pronação e abdução; JOHNSON e STROM com I tenossinovite, II flexível sem elevação unipodal e compensação pelo tibial anterior (BLUMAN IIA menos e IIB mais de 30% da cabeça do tálus descoberta), III rígido com tríplice, IV de MYERSON com valgo do tornozelo; PCFD da AOFAS flexível ou rígido com classes A a E; MÉARY entre tálus e 1º metatarso, talocalcâneo AP acima de 40 graus, incongruência talonavicular lateral no IIB; no flexível, flexor longo dos dedos com osteotomia medializante ou EVANS (descobertura acima de 40%) e COTTON flexionando plantarmente o 1º metatarso.
 ---
@@ -231,7 +231,7 @@ O HEBERT (cap. 21.2) pede **frente e perfil com apoio e axial posterior do calc�
 
 ## O ângulo de MÉARY
 
-O ângulo de MÉARY é o **ângulo entre o eixo longitudinal do tálus e o eixo longitudinal do 1º metatarso**, medido no **perfil com carga**. O HEBERT (cap. 21.4, pé cavo) dá o **valor normal de 0 grau**; no capítulo de pé plano (20.4), a mesma linha é chamada de **linha de MÉARY-TOMENO** (ou de SHADE), a linha anatômica normal que passa pelo eixo do tálus e do 1º metatarso. O Campbell (cap. 92, p. 4057 aprox.) chama o mesmo parâmetro de **ângulo talo-1º metatarso (de MÉARY)** no perfil com carga. É o mesmo "talo-1º metatarso lateral" que o capítulo 88 lista entre os parâmetros da PCFD, com normal de 0 a 10 graus. No pé plano, o eixo do tálus aponta para baixo do eixo do 1º metatarso (vértice plantar); no cavo, para cima.
+O ângulo de MÉARY é o **ângulo entre o eixo longitudinal do tálus e o eixo longitudinal do 1º metatarso**, medido no **perfil com carga**. O HEBERT (cap. 21.4, pé cavo) dá o **valor normal de 0 grau**; no capítulo de pé plano (20.4), a mesma linha é chamada de **linha de MÉARY-TOMENO** (ou de SHADE), a linha anatômica normal que passa pelo eixo do tálus e do 1º metatarso. O Campbell (cap. 92) chama o mesmo parâmetro de **ângulo talo-1º metatarso (de MÉARY)** no perfil com carga. É o mesmo "talo-1º metatarso lateral" que o capítulo 88 lista entre os parâmetros da PCFD, com normal de 0 a 10 graus. No pé plano, o eixo do tálus aponta para baixo do eixo do 1º metatarso (vértice plantar); no cavo, para cima.
 
 !questoes central=pe-tornozelo-0054
 conceito: O ângulo de MÉARY, no perfil com carga, é formado pelos eixos longitudinais do tálus e do 1º metatarso, normal perto de 0 grau.

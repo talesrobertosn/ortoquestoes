@@ -1,6 +1,6 @@
 ---
 id: callaghan-fraturas-quadril-acetabulo
-versao: 1
+versao: 2
 titulo: Fraturas do quadril e do acetábulo
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e c
 edicao: 3ª edição (2017)
 capitulo: Capítulos 9 (Ilioinguinal, Extended Iliofemoral, and Combined Approaches), 77 (Proximal Femoral Fractures Treated with Arthroplasty) e 87 (Periprosthetic Fractures of the Pelvis Associated with Hip Arthroplasty), com trechos dos capítulos 1, 2, 5, 7, 23, 24, 38, 72 e 74
 autores: William A. McGann e Aaron G. Rosenberg (cap. 9); Douglas E. Padgett e Joseph B. Assini (cap. 77); Mihai H. Vioreanu, Donald S. Garbuz, Bassam A. Masri e Clive P. Duncan (cap. 87)
-fonte: Livros conferidos localmente em 04/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 9 (p. 135 a 142 aprox.), cap. 1 (p. 10 e 11), cap. 2 (p. 46 a 48), cap. 5 (p. 70), cap. 7 (p. 109 e 110), cap. 23 (p. 342 a 351), cap. 24 (p. 374 e 375), cap. 38 (p. 532 e 533), cap. 72 (p. 937 a 946), cap. 74 (p. 958 a 962), cap. 77 (p. 983 a 988) e cap. 87 (p. 1094 a 1104); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 17, 24, 50, 51, 52, 53 e 56 (cito seção, tabela e figura); Campbell's Operative Orthopaedics, 15ª ed., caps. 60 e 61 (p. 2654 a 2745); Skeletal Trauma, 5ª ed., caps. 5 e 40; AO Principles of Fracture Management, 3ª ed. (p. 764 e 780); Ortopedia e Traumatologia (HEBERT), 5ª ed. (anatomia do quadril, esporte e cap. 58).
+fonte: Livros conferidos localmente em 04/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 9 (p. 136 e 141), cap. 1 (p. 10 e 11), cap. 2 (p. 46 a 48), cap. 5 (p. 70), cap. 7 (p. 109 e 110), cap. 23 (p. 342 a 351), cap. 24 (p. 374 e 375), cap. 38 (p. 532 e 533), cap. 72 (p. 937 a 946), cap. 74 (p. 958 a 962), cap. 77 (p. 983 a 988) e cap. 87 (p. 1094 a 1104); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 17, 24, 50, 51, 52, 53 e 56 (cito seção, tabela e figura); Campbell's Operative Orthopaedics, 15ª ed., caps. 60 e 61 (p. 2654 a 2745); Skeletal Trauma, 5ª ed., caps. 5 e 40; AO Principles of Fracture Management, 3ª ed. (p. 764 e 780); Ortopedia e Traumatologia (HEBERT), 5ª ed. (anatomia do quadril, esporte e cap. 58).
 subtemas: Fraturas do quadril e do acetábulo
 resumo: Ilioinguinal sem acesso à articulação (só com fratura), iliofemoral estendida de LETOURNEL (1975) internervosa com joelho fletido, combinadas para evitar ossificação e desvascularização; tenotomia posterior a 1,5 cm do trocanter (circunflexa medial); lágrima dissociada da ilioisquiática = superfície quadrilátera; JUDET oblíqua anterior = coluna anterior e rebordo posterior; duas colunas é a associada mais comum (23%); arcos de VRAHAS 45/25/70; GARDEN 160 no AP e 180 no perfil, LOWELL em S; PAUWELS compressão melhor que cisalhamento; JOHANSSON furou o prego de SMITH-PETERSEN; estresse em tensão (superior) opera, compressão (inferior) poupa carga; ASBMR transversa lateral sem cominuição; PIPKIN; tipo F do sistema unificado é fratura após hemiartroplastia; PARKINSON: pneumonia, haste cimentada, adutores; coxa com três compartimentos.
 ---
@@ -35,7 +35,7 @@ A coluna anterior, nessa descrição, é a **metade anterior da asa ilíaca**, c
 
 No The Adult Hip (CALLAGHAN), cap. 2 (p. 47 e 48), os vasos e o nervo glúteos superiores **saem pela parte superior da incisura isquiática, acima do piriforme**, são relativamente fixos, ficam mais próximos da coluna posterior e chegam a **2 mm do osso** no ponto da incisura. O Rockwood (cap. 51, seção de lesões associadas) completa: uma espícula da coluna posterior desviada na incisura pode lacerar a glútea superior e causar choque, tratável por embolização. Lesão nervosa aparece em **até 30%** das fraturas do acetábulo; o **ciático** é o mais comum, em geral parcial, e a divisão fibular tem o pior prognóstico.
 
-A **corona mortis** é o outro vaso que a banca adora. O Rockwood (cap. 51, Fig. 51-52) separa duas coisas: as pequenas anastomoses comuns entre os sistemas obturatório e ilíaco externo e a corona mortis verdadeira, que é a **origem anômala da artéria obturatória a partir do sistema ilíaco externo**. Ela deve ser procurada na janela média da ilioinguinal antes de afastar os vasos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 61, p. 2710), na via de STOPPA modificada, define a corona como anastomose da obturatória com a ilíaca externa ou com a epigástrica inferior e manda ligá-la. O CALLAGHAN (cap. 9, p. 137 aprox.) diz que a anastomose entre ilíaca externa e obturatória **geralmente** existe e corre sobre o ramo, e que, quando a obturatória nasce só da ilíaca externa, o ramo deve ser preservado. Nenhum dos três livros dá uma porcentagem.
+A **corona mortis** é o outro vaso que a banca adora. O Rockwood (cap. 51, Fig. 51-52) separa duas coisas: as pequenas anastomoses comuns entre os sistemas obturatório e ilíaco externo e a corona mortis verdadeira, que é a **origem anômala da artéria obturatória a partir do sistema ilíaco externo**. Ela deve ser procurada na janela média da ilioinguinal antes de afastar os vasos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 61, p. 2710), na via de STOPPA modificada, define a corona como anastomose da obturatória com a ilíaca externa ou com a epigástrica inferior e manda ligá-la. O CALLAGHAN (cap. 9, p. 136) diz que a anastomose entre ilíaca externa e obturatória **geralmente** existe e corre sobre o ramo, e que, quando a obturatória nasce só da ilíaca externa, o ramo deve ser preservado. Nenhum dos três livros dá uma porcentagem.
 
 !tabela Colunas do acetábulo e o que corre perto delas (Rockwood 10, cap. 51; CALLAGHAN, cap. 2, p. 47 e 48; cap. 9, p. 137)
 | Estrutura | O que é | Por que importa |
@@ -65,7 +65,7 @@ O raciocínio que a banca cobra está na lágrima. A **linha ilioisquiática** n
 
 Na fratura isolada da coluna posterior, a ilioisquiática se desloca e a iliopectínea fica íntegra; a ilioisquiática também se afasta da lágrima. Na transversa infratectal, ao contrário, a ilioisquiática mantém a relação normal com a lágrima, porque o traço passa abaixo do teto e não separa o pedaço da quadrilátera que forma as duas linhas (Rockwood, cap. 51, Fig. 51-19 e 51-26).
 
-No CALLAGHAN (cap. 72, p. 944 aprox.), a ruptura da **linha de KÖHLER** na pós-traumática avisa que uma cúpula hemisférica sozinha pode não fixar.
+No CALLAGHAN (cap. 72, p. 944), a ruptura da **linha de KÖHLER** na pós-traumática avisa que uma cúpula hemisférica sozinha pode não fixar.
 
 ## JUDET: qual oblíqua mostra o quê
 
@@ -173,7 +173,7 @@ Decúbito dorsal com o lado elevado 0 a 30 graus e **sonda de FOLEY** para desco
 
 A peça-chave é a **fáscia iliopectínea**, continuação da fáscia do iliopsoas junto ao nervo femoral: ela é a porta da pelve falsa para a verdadeira e separa o **compartimento muscular** do **vascular**. Depois dela, a pelve é trabalhada entre **três envelopes móveis**: iliopsoas com nervo femoral, bainha dos vasos ilíacos externos e cordão espermático. **Flexão e rotação externa do quadril relaxam o iliopsoas**. Afastar os vasos para lateral e o cordão para medial expõe o ramo superior; afastar o cordão para lateral expõe a sínfise (p. 136).
 
-Na legenda da Fig. 9.6 (p. 141 aprox.), o capítulo avisa que a extensão anterior (soltar sartório, ligamento inguinal e cabeça direta do reto) **desvasculariza o osso** e pode não estar indicada em fratura. É o mesmo princípio que aparece nas combinadas.
+Na legenda da Fig. 9.6 (p. 141), o capítulo avisa que a extensão anterior (soltar sartório, ligamento inguinal e cabeça direta do reto) **desvasculariza o osso** e pode não estar indicada em fratura. É o mesmo princípio que aparece nas combinadas.
 
 !questoes treino=quadril-0413
 conceito: A ilioinguinal expõe a face interna do ílio e a sacroilíaca, a superfície quadrilátera até a espinha isquiática, o forame obturado, a coluna anterior até o ramo e a sínfise; não abre a articulação se o acetábulo estiver íntegro.
@@ -199,7 +199,7 @@ armadilha: Atribuí-la a SMITH-PETERSEN, dizer que mostra diretamente a fossa il
 
 ## Combinadas: a resposta ao preço das extensíveis
 
-A última seção do cap. 9 (p. 141 e 142 aprox.) é curta e muito cobrada. As abordagens combinadas dão acesso ao quadril e ao acetábulo, às colunas anterior e posterior, quando a fratura é cominutiva; a **indicação principal é o acesso simultâneo às duas colunas**. As extensíveis também dão esse acesso, mas **desnudam partes moles do osso**, o que leva a **ossificação heterotópica e desvascularização**. Por isso as combinadas foram **popularizadas como alternativa às extensíveis** (iliofemoral estendida e trirradiada).
+A última seção do cap. 9 (p. 141) é curta e muito cobrada. As abordagens combinadas dão acesso ao quadril e ao acetábulo, às colunas anterior e posterior, quando a fratura é cominutiva; a **indicação principal é o acesso simultâneo às duas colunas**. As extensíveis também dão esse acesso, mas **desnudam partes moles do osso**, o que leva a **ossificação heterotópica e desvascularização**. Por isso as combinadas foram **popularizadas como alternativa às extensíveis** (iliofemoral estendida e trirradiada).
 
 O cap. 72 (p. 944 e 945) repete o argumento na artroplastia pós-traumática.
 

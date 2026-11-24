@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-escoliose-idiopatica
-versao: 2
+versao: 3
 titulo: Escoliose idiopática
 especialidade: coluna
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021)
 capitulo: Capítulo 9 · Scoliosis
 autores: B. Stephens RICHARDS, Daniel J. SUCATO e Charles E. JOHNSTON
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), pp. 132 a 176 (idiopática do adolescente, instrumentação posterior e anterior, juvenil) e pp. 191 a 219 (escoliose de início precoce, infantil, MEHTA, gesso, tração, hastes de crescimento); Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis, de Keith J. ORLAND e Jeffrey R. SAWYER), pp. 1524 a 1582 (infantil, juvenil, adolescente, técnica e complicações) e abertura da escoliose neuromuscular (p. 1592 aprox.). Tabelas conferidas no livro.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), pp. 132 a 176 (idiopática do adolescente, instrumentação posterior e anterior, juvenil) e pp. 191 a 219 (escoliose de início precoce, infantil, MEHTA, gesso, tração, hastes de crescimento); Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis, de Keith J. ORLAND e Jeffrey R. SAWYER), pp. 1524 a 1582 (infantil, juvenil, adolescente, técnica e complicações) e abertura da escoliose neuromuscular (cap. 40). Tabelas conferidas no livro.
 subtemas: Escoliose idiopática
 resumo: Escoliose acima de 10 graus, rotação dos corpos para a convexidade e hipocifose torácica; AIS típica torácica direita, infantil de meninos e torácica esquerda (70% a 90% resolvem; RVAD de MEHTA acima de 20 graus ou costela em fase 2 progridem); fechamento da trirradiada perto do pico de crescimento, antes do RISSER 1 e da menarca; LONSTEIN e CARLSON (RISSER 0 a 1: 22% e 68%; RISSER 2 a 4: 1,6% e 23%); progridem mais meninas, imaturos, curvas torácicas, duplas e maiores; colete de 25 a 45 graus em RISSER 0 a 2 (TLSO só com ápice em T7 ou abaixo), cirurgia acima de 45 a 50; COBB pelas placas superior e inferior das vértebras terminais; NASH-MOE mede rotação; LENKE com tipo, modificador lombar pela CSVL e sagital T5-T12 (hipercifótico acima de 40); parafuso pedicular corrige melhor no plano coronal e axial.
 ---
@@ -73,13 +73,13 @@ alerta: Em `coluna-0184` o gabarito oficial é D ("idiopática do adulto"), mas 
 
 # Prevalência, etiologia e a anatomia da curva {radar=confirmado}
 
-A escoliose pequena é comum e a grande é rara. Pelo Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 132), curvas de pelo menos 10 graus aparecem em **1,5% a 3%** dos adolescentes, as acima de 20 graus em 0,3% a 0,5% e as acima de 30 graus em 0,2% a 0,3%. A proporção entre os sexos muda com o tamanho da curva, e é aí que está o ensinamento: nas curvas de 6 a 10 graus a razão menina:menino é **1:1**; entre 11 e 20 graus, 1,4:1; acima de 21 graus sem necessidade de tratamento, 5,4:1; nas curvas que exigem tratamento, **7,2:1**. Ou seja, meninos e meninas têm escoliose pequena na mesma proporção, mas **são as meninas que progridem**. O Campbell's Operative Orthopaedics, 15ª ed. (Tabela 40.2, p. 1538 aprox.) dá números parecidos e acrescenta que menos de 10% das crianças com curva de 10 graus ou mais precisarão de tratamento.
+A escoliose pequena é comum e a grande é rara. Pelo Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 132), curvas de pelo menos 10 graus aparecem em **1,5% a 3%** dos adolescentes, as acima de 20 graus em 0,3% a 0,5% e as acima de 30 graus em 0,2% a 0,3%. A proporção entre os sexos muda com o tamanho da curva, e é aí que está o ensinamento: nas curvas de 6 a 10 graus a razão menina:menino é **1:1**; entre 11 e 20 graus, 1,4:1; acima de 21 graus sem necessidade de tratamento, 5,4:1; nas curvas que exigem tratamento, **7,2:1**. Ou seja, meninos e meninas têm escoliose pequena na mesma proporção, mas **são as meninas que progridem**. O Campbell's Operative Orthopaedics, 15ª ed. (Tabela 40.2) dá números parecidos e acrescenta que menos de 10% das crianças com curva de 10 graus ou mais precisarão de tratamento.
 
 A causa continua desconhecida e é provavelmente **multifatorial** (Tachdjian, pp. 137 e 138): disfunção neurológica (vestibular, proprioceptiva, potenciais somatossensitivos assimétricos), melatonina (sem confirmação em humanos), tecido conjuntivo, calmodulina plaquetária elevada nas curvas progressivas e, sobretudo, genética (6,9% a 11,1% dos parentes de primeiro grau, concordância maior em gêmeos monozigóticos, locus LBX1). O crescimento influencia a deformidade, mas não a causa. O Campbell 15 (p. 1540) leva isso à anamnese: a escoliose é **três vezes** mais frequente quando os pais têm e **sete vezes** quando um irmão tem.
 
 A anatomia da curva explica o exame físico. Os **corpos vertebrais rodam para a convexidade** e os **processos espinhosos para a concavidade**, com rotação máxima no ápice (Tachdjian, p. 138). A vértebra fica em cunha, mais alta do lado convexo, e os pedículos côncavos ficam mais curtos e finos, detalhe que volta na cirurgia. As costelas convexas vão para trás e formam a **giba costal**; as côncavas vão para frente, e a capacidade do hemitórax convexo diminui. Na curva torácica direita, a aorta fica mais lateral e posterior, à esquerda do corpo vertebral (p. 139).
 
-No plano sagital, a escoliose idiopática é **hipocifótica**: o segmento escoliótico perde a cifose e o ápice chega a ser lordótico na radiografia (p. 141). O Campbell 15 (p. 1537 aprox.) repete que a maioria das curvas idiopáticas é lordótica ou hipocifótica na região torácica e sugere que isso pode ter papel na própria etiologia. Junte com a direção típica e você tem a fotografia da AIS: **curva torácica de convexidade direita, com cifose torácica diminuída**. O Tachdjian (p. 140) é explícito: normalmente a convexidade das curvas torácicas da AIS é para a direita, e a curva torácica **esquerda** é mais comum nos pacientes com **siringomielia**.
+No plano sagital, a escoliose idiopática é **hipocifótica**: o segmento escoliótico perde a cifose e o ápice chega a ser lordótico na radiografia (p. 141). O Campbell 15 (cap. 40) repete que a maioria das curvas idiopáticas é lordótica ou hipocifótica na região torácica e sugere que isso pode ter papel na própria etiologia. Junte com a direção típica e você tem a fotografia da AIS: **curva torácica de convexidade direita, com cifose torácica diminuída**. O Tachdjian (p. 140) é explícito: normalmente a convexidade das curvas torácicas da AIS é para a direita, e a curva torácica **esquerda** é mais comum nos pacientes com **siringomielia**.
 
 !questoes central=coluna-0178
 conceito: Na AIS a curva torácica típica tem convexidade à direita e cifose torácica diminuída; a lordose do ápice é parte da deformidade tridimensional.
@@ -93,13 +93,13 @@ O adolescente raramente procura o médico por dor; chega pela aparência: ombro 
 
 O exame procura na pele hemangiomas, tufos e covinhas lombossacras (medula presa, diastematomielia), palpa os espinhosos, confere o nível das cristas ilíacas (discrepância de membros se corrige com blocos) e compara ombros, escápulas, flancos e o espaço entre braço e tronco (p. 140).
 
-O melhor teste clínico é o de **ADAMS**: o paciente flete o tronco até a coluna ficar horizontal, com joelhos estendidos, pés juntos, braços pendentes e palmas opostas; o examinador olha por trás (Tachdjian, p. 141; Campbell's Operative Orthopaedics, 15ª ed., p. 1540 aprox.). Como os corpos vertebrais giram para a convexidade e levam as costelas consigo, **a giba aparece do lado convexo**: giba costal no tórax, volume paravertebral na região lombar. Daí a regra prática que as bancas cobram ao contrário: **giba torácica à direita significa curva torácica de convexidade direita**.
+O melhor teste clínico é o de **ADAMS**: o paciente flete o tronco até a coluna ficar horizontal, com joelhos estendidos, pés juntos, braços pendentes e palmas opostas; o examinador olha por trás (Tachdjian, p. 141; Campbell's Operative Orthopaedics, 15ª ed., cap. 40). Como os corpos vertebrais giram para a convexidade e levam as costelas consigo, **a giba aparece do lado convexo**: giba costal no tórax, volume paravertebral na região lombar. Daí a regra prática que as bancas cobram ao contrário: **giba torácica à direita significa curva torácica de convexidade direita**.
 
-O escoliômetro de BUNNELL mede a rotação do tronco no ápice da giba; o encaminhamento passou de 5 para **7 graus** (detecção de 95% das curvas que precisam de colete), mantendo 5 graus nos obesos (Tachdjian, p. 137). Pelo Campbell 15 (p. 1540 aprox.), 7 graus correspondem a uma curva de 15 a 20 graus.
+O escoliômetro de BUNNELL mede a rotação do tronco no ápice da giba; o encaminhamento passou de 5 para **7 graus** (detecção de 95% das curvas que precisam de colete), mantendo 5 graus nos obesos (Tachdjian, p. 137). Pelo Campbell 15 (cap. 40), 7 graus correspondem a uma curva de 15 a 20 graus.
 
 O prumo de C7 não deve se afastar mais de 1 a 2 cm da prega glútea (p. 141), e os **reflexos abdominais superficiais** assimétricos indicam investigação de siringomielia (p. 143).
 
-!tabela Sinais de alerta que pedem ressonância do neuroeixo (Tachdjian, cap. 9, pp. 140, 141, 146 e 160; Campbell 15, cap. 40, p. 1543 aprox.)
+!tabela Sinais de alerta que pedem ressonância do neuroeixo (Tachdjian, cap. 9, pp. 140, 141, 146 e 160; Campbell 15, cap. 40)
 | Sinal | Por que preocupa |
 |---|---|
 | Curva torácica esquerda | A AIS típica é torácica direita; a esquerda é mais comum com siringe |
@@ -111,7 +111,7 @@ O prumo de C7 não deve se afastar mais de 1 a 2 cm da prega glútea (p. 141), e
 | Curva acima de 70 graus | Não aumenta a chance de anomalia medular (não é indicação isolada) |
 !fim
 
-O Tachdjian (p. 146) não pede ressonância pré-operatória de rotina na AIS típica com exame normal; o Campbell 15 (pp. 1543 e 1548 aprox.) estima anomalia neurológica em cerca de 10% e inclui a ressonância do neuroeixo no preparo cirúrgico de rotina.
+O Tachdjian (p. 146) não pede ressonância pré-operatória de rotina na AIS típica com exame normal; o Campbell 15 (cap. 40) estima anomalia neurológica em cerca de 10% e inclui a ressonância do neuroeixo no preparo cirúrgico de rotina.
 
 !questoes central=coluna-0469
 conceito: No teste de ADAMS a giba aparece do lado convexo da curva, porque os corpos vertebrais giram para a convexidade e levam as costelas para trás.
@@ -121,7 +121,7 @@ armadilha: Achar que a giba fica no lado côncavo, onde os espinhosos apontam.
 
 ## Idiopática ou neuromuscular
 
-O contraste com a escoliose neuromuscular ajuda a fixar o perfil da idiopática. Pelo Campbell 15 (p. 1592 aprox.), as curvas neuromusculares começam mais cedo, uma proporção maior é progressiva, e mesmo curvas pequenas podem progredir depois da maturidade. Muitas são **longas, em C, incluindo o sacro**, e a **obliquidade pélvica é comum**, muitas vezes com subluxação ou luxação do quadril. Esses pacientes toleram menos o colete, que muitas vezes é ineficaz, sangram mais na cirurgia, têm osso pior e precisam de fusões longas, frequentemente até a pelve. A idiopática é o oposto: curva mais curta, pelve nivelada, colete eficaz no imaturo e progressão que, em geral, desacelera com o fim do crescimento.
+O contraste com a escoliose neuromuscular ajuda a fixar o perfil da idiopática. Pelo Campbell 15 (cap. 40), as curvas neuromusculares começam mais cedo, uma proporção maior é progressiva, e mesmo curvas pequenas podem progredir depois da maturidade. Muitas são **longas, em C, incluindo o sacro**, e a **obliquidade pélvica é comum**, muitas vezes com subluxação ou luxação do quadril. Esses pacientes toleram menos o colete, que muitas vezes é ineficaz, sangram mais na cirurgia, têm osso pior e precisam de fusões longas, frequentemente até a pelve. A idiopática é o oposto: curva mais curta, pelve nivelada, colete eficaz no imaturo e progressão que, em geral, desacelera com o fim do crescimento.
 
 !questoes central=coluna-0080
 conceito: A escoliose neuromuscular difere da idiopática pela obliquidade pélvica frequente, curvas longas em C, pior tolerância ao colete e progressão mesmo após a maturidade.
@@ -133,16 +133,16 @@ armadilha: Achar que a neuromuscular tem curva mais curta, tolera melhor a órte
 
 O estudo inicial é a radiografia em pé, posteroanterior e perfil, em cassete longo; a posteroanterior poupa as mamas, e no seguimento basta ela (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 143). O intervalo depende da maturidade: uma menina de 11 anos, pré-menarca, RISSER 0, com 25 graus volta em **4 meses**; uma moça de 14 anos, dois anos após a menarca, RISSER 4, com 30 graus, em **1 ano** (p. 144). Radiografias em inclinação e sob tração ficam para o planejamento cirúrgico.
 
-O método de **COBB** é o padrão para medir a curva (Tachdjian, p. 144; Campbell's Operative Orthopaedics, 15ª ed., p. 1543 aprox.). Primeiro se escolhem as vértebras terminais, que são as **mais inclinadas para dentro da concavidade**. Depois se traçam perpendiculares à **placa superior da vértebra terminal superior** e à **placa inferior da vértebra terminal inferior**; o ângulo entre elas é o COBB. Se houver uma segunda curva abaixo, a vértebra terminal inferior da primeira passa a ser a superior da segunda, usando a mesma linha. Se as placas estiverem encobertas, o Campbell permite usar os pedículos. A variabilidade é grande: 7,2 graus em média entre observadores, 6,3 se as vértebras terminais forem pré-selecionadas (Tachdjian), 5 a 7 graus pelo Campbell; para ter 95% de certeza de mudança real seriam necessários 10 graus. Por isso a progressão é definida como aumento de **5 graus ou mais**, idealmente confirmado em mais de uma consulta.
+O método de **COBB** é o padrão para medir a curva (Tachdjian, p. 144; Campbell's Operative Orthopaedics, 15ª ed., cap. 40). Primeiro se escolhem as vértebras terminais, que são as **mais inclinadas para dentro da concavidade**. Depois se traçam perpendiculares à **placa superior da vértebra terminal superior** e à **placa inferior da vértebra terminal inferior**; o ângulo entre elas é o COBB. Se houver uma segunda curva abaixo, a vértebra terminal inferior da primeira passa a ser a superior da segunda, usando a mesma linha. Se as placas estiverem encobertas, o Campbell permite usar os pedículos. A variabilidade é grande: 7,2 graus em média entre observadores, 6,3 se as vértebras terminais forem pré-selecionadas (Tachdjian), 5 a 7 graus pelo Campbell; para ter 95% de certeza de mudança real seriam necessários 10 graus. Por isso a progressão é definida como aumento de **5 graus ou mais**, idealmente confirmado em mais de uma consulta.
 
 !questoes central=coluna-0491 relacionadas=coluna-0109
 conceito: O COBB usa a placa superior da vértebra terminal superior e a placa inferior da vértebra terminal inferior; a rotação vertebral na radiografia simples se mede pelo método de NASH-MOE, pela posição do pedículo convexo.
 como: A SBOT-SP perguntou as referências para traçar o ângulo de COBB; o TARO 2023, o que o método de NASH-MOE avalia.
 armadilha: Inverter as placas (inferior da superior e superior da inferior) ou achar que NASH-MOE mede perfil sagital ou modificador lombar.
-alerta: A `coluna-0491` está sem gabarito oficial; pelo Tachdjian (p. 144) e pelo Campbell 15 (p. 1543 aprox.), a resposta é a alternativa B (superfície superior da vértebra terminal superior e superfície inferior da vértebra terminal inferior).
+alerta: A `coluna-0491` está sem gabarito oficial; pelo Tachdjian (p. 144) e pelo Campbell 15 (cap. 40), a resposta é a alternativa B (superfície superior da vértebra terminal superior e superfície inferior da vértebra terminal inferior).
 !fim
 
-A rotação vertebral tem dois métodos clássicos em radiografia simples: o de PERDRIOLLE e o de **NASH-MOE** (Tachdjian, p. 145). O Campbell 15 (p. 1543 aprox.) descreve o segundo como o mais usado: com os pedículos equidistantes das bordas do corpo, a rotação é zero; à medida que o pedículo **convexo** migra para o centro, a rotação sobe até o grau IV, quando ele passa da linha média. Usa-se o pedículo convexo porque o côncavo some cedo. O Tachdjian observa que os dois métodos estão em desuso porque os sistemas digitais não trazem ferramentas para eles e que o EOS mede a rotação apical com reconstrução tridimensional.
+A rotação vertebral tem dois métodos clássicos em radiografia simples: o de PERDRIOLLE e o de **NASH-MOE** (Tachdjian, p. 145). O Campbell 15 (cap. 40) descreve o segundo como o mais usado: com os pedículos equidistantes das bordas do corpo, a rotação é zero; à medida que o pedículo **convexo** migra para o centro, a rotação sobe até o grau IV, quando ele passa da linha média. Usa-se o pedículo convexo porque o côncavo some cedo. O Tachdjian observa que os dois métodos estão em desuso porque os sistemas digitais não trazem ferramentas para eles e que o EOS mede a rotação apical com reconstrução tridimensional.
 
 No equilíbrio coronal, a distância entre C7 e o centro da pelve acima de **2 cm** indica descompensação (Tachdjian, p. 145). No perfil, o Tachdjian considera normal a cifose torácica de 20 a 45 graus; o Campbell 15 (p. 1544) cita 30 a 40 graus em adolescentes e lembra que a lordose lombar deve medir 20 a 30 graus a mais que a cifose.
 
@@ -191,9 +191,9 @@ armadilha: Usar o 68% (que é do RISSER 0 a 1) para um RISSER III, que pertence 
 alerta: A `coluna-0342` está sem gabarito oficial; pela Tabela 9.1 do Tachdjian (p. 135), uma curva de 20 a 29 graus com RISSER 2 a 4 progride em 23%, então a afirmação é errada.
 !fim
 
-O Campbell's Operative Orthopaedics, 15ª ed. (Box 40.2, p. 1538 aprox.), resume os fatores numa lista curta que a prova transforma em alternativas: **meninas mais que meninos, pré-menarca, RISSER 0, curvas duplas mais que simples, curvas torácicas mais que lombares e curvas maiores**. A progressão costuma ocorrer no estirão, que nas meninas vem antes da menarca. O risco estimado é de cerca de 20% para uma curva de 20 graus e de 90% para uma de 50 graus. A melhora espontânea é rara (3%, quase sempre em curvas menores que 11 graus).
+O Campbell's Operative Orthopaedics, 15ª ed. (Box 40.2), resume os fatores numa lista curta que a prova transforma em alternativas: **meninas mais que meninos, pré-menarca, RISSER 0, curvas duplas mais que simples, curvas torácicas mais que lombares e curvas maiores**. A progressão costuma ocorrer no estirão, que nas meninas vem antes da menarca. O risco estimado é de cerca de 20% para uma curva de 20 graus e de 90% para uma de 50 graus. A melhora espontânea é rara (3%, quase sempre em curvas menores que 11 graus).
 
-!tabela Fatores de progressão antes e depois da maturidade (Campbell 15, cap. 40, Box 40.2, p. 1538 aprox., e Tabela 40.3, p. 1540; Tachdjian, cap. 9, pp. 134 e 135)
+!tabela Fatores de progressão antes e depois da maturidade (Campbell 15, cap. 40, Box 40.2 e Tabela 40.3, p. 1540; Tachdjian, cap. 9, pp. 134 e 135)
 | Fase | Fatores que aumentam o risco |
 |---|---|
 | Durante o crescimento | Sexo feminino; pré-menarca; RISSER 0 (e 1); curvas duplas; curvas torácicas; curvas maiores; PHV ainda por vir |
@@ -211,13 +211,13 @@ armadilha: Marcar RISSER II ou RISSER maior (que significam mais maturidade e me
 
 Depois da maturidade a progressão desacelera, mas não zera. Pelo Tachdjian (pp. 134 e 135), curvas menores que **30 graus** raramente progridem; torácicas de 50 a 75 graus progridem cerca de 0,73 grau por ano; torácicas acima de 50 a 60 podem reduzir a função pulmonar e lombares acima de 50 levam a artrose. A mortalidade da AIS é igual à da população, e a dor lombar crônica, comum, não se relaciona com o tamanho nem com o local da curva.
 
-O pulmão merece um parágrafo à parte porque os livros divergem nos números. O Tachdjian (p. 140) diz que o comprometimento pulmonar clinicamente significativo em geral só aparece quando a curva se aproxima de **80 a 100 graus**, quando a capacidade vital cai abaixo de 45% ou quando uma lordose torácica acima de 20 graus estreita o diâmetro anteroposterior do tórax; doença obstrutiva aparece em um terço dos pacientes. O Campbell 15 (p. 1539 aprox.) afirma que a queda da capacidade vital acompanha a gravidade e é vista nas curvas torácicas acima de 100 graus, mas cita um estudo com 19% dos pacientes pré-operatórios com função abaixo de 65% do previsto, correlacionada com a curva torácica e com a hipocifose e observada em curvas de **70 a 80 graus**; a morte por cor pulmonale se associa às curvas acima de 100 graus.
+O pulmão merece um parágrafo à parte porque os livros divergem nos números. O Tachdjian (p. 140) diz que o comprometimento pulmonar clinicamente significativo em geral só aparece quando a curva se aproxima de **80 a 100 graus**, quando a capacidade vital cai abaixo de 45% ou quando uma lordose torácica acima de 20 graus estreita o diâmetro anteroposterior do tórax; doença obstrutiva aparece em um terço dos pacientes. O Campbell 15 (cap. 40) afirma que a queda da capacidade vital acompanha a gravidade e é vista nas curvas torácicas acima de 100 graus, mas cita um estudo com 19% dos pacientes pré-operatórios com função abaixo de 65% do previsto, correlacionada com a curva torácica e com a hipocifose e observada em curvas de **70 a 80 graus**; a morte por cor pulmonale se associa às curvas acima de 100 graus.
 
 !questoes central=coluna-0194
 conceito: O comprometimento pulmonar da AIS depende da magnitude da curva torácica e da hipocifose; o Campbell 15 o descreve a partir de curvas de 70 a 80 graus, e o Tachdjian a partir de 80 a 100 graus.
 como: O CET-PR perguntou a partir de quantos graus surge comprometimento pulmonar clinicamente significativo.
 armadilha: Marcar 90 ou 110 graus, números das curvas com queda grave de capacidade vital e risco de cor pulmonale.
-alerta: O gabarito oficial (70 graus) tem apoio no Campbell 15 (p. 1539 aprox.), que relata função pulmonar reduzida em curvas de 70 a 80 graus; o Tachdjian (p. 140) fala em 80 a 100 graus.
+alerta: O gabarito oficial (70 graus) tem apoio no Campbell 15 (cap. 40), que relata função pulmonar reduzida em curvas de 70 a 80 graus; o Tachdjian (p. 140) fala em 80 a 100 graus.
 !fim
 
 # Tratamento não operatório: observar ou usar colete {radar=confirmado}
@@ -232,7 +232,7 @@ A maioria dos adolescentes com escoliose idiopática não precisa de tratamento 
 | Maior que 45 graus | Cirurgia | Cirurgia | Cirurgia (quando passa de 50 graus) |
 !fim
 
-Na observação, um RISSER 0 pré-menarca com 15 a 24 graus é revisto a cada **4 meses**, e o colete começa se a curva progredir; RISSER 3 ou mais pode espaçar para 6 meses (Tachdjian, p. 147). O Campbell's Operative Orthopaedics, 15ª ed. (p. 1547 aprox.), recomenda acompanhar as curvas de 30 a 40 graus dos pacientes maduros com radiografia anual por 2 a 3 anos e depois a cada 5 anos.
+Na observação, um RISSER 0 pré-menarca com 15 a 24 graus é revisto a cada **4 meses**, e o colete começa se a curva progredir; RISSER 3 ou mais pode espaçar para 6 meses (Tachdjian, p. 147). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 40), recomenda acompanhar as curvas de 30 a 40 graus dos pacientes maduros com radiografia anual por 2 a 3 anos e depois a cada 5 anos.
 
 !questoes central=coluna-0024
 conceito: Paciente madura (dois anos após a menarca) com curva de 35 graus não tem indicação de colete nem de cirurgia; observa-se com radiografias seriadas porque curvas acima de 30 graus ainda podem progredir na vida adulta.
@@ -244,11 +244,11 @@ armadilha: Dar alta (a curva acima de 30 graus pode progredir) ou prescrever col
 
 O colete existe para impedir que a curva piore enquanto a criança cresce; ele não corrige de forma duradoura. Pelo Tachdjian (p. 147), está indicado nos adolescentes em crescimento (**RISSER 0, 1 ou 2**) com curvas de **25 a 45 graus** na primeira avaliação, ou nos muito imaturos (RISSER 0 com trirradiada aberta) que documentam progressão acima de 5 graus em curvas de 15 a 25. Adolescentes RISSER 2 ou menos com 30 a 45 graus devem começar o colete já na primeira consulta, e os muito imaturos (RISSER 0 e pré-menarca), a partir de 25 graus (p. 146). Os critérios ideais da SRS (2005) para estudos de colete, repetidos pelos dois livros, são: idade de 10 anos ou mais, RISSER 0 a 2, curva primária de 25 a 40 graus, sem tratamento prévio e, se menina, pré-menarca ou menos de 1 ano de menarca.
 
-O detalhe anatômico que vira questão: os coletes de perfil baixo (TLSO, axilares) só funcionam se o **ápice da curva estiver em T7 ou abaixo** (Tachdjian, p. 147; Campbell 15, p. 1547 aprox.). Felizmente é o caso da maioria das AIS. Curvas torácicas altas ou cervicotorácicas respondem mal à órtese.
+O detalhe anatômico que vira questão: os coletes de perfil baixo (TLSO, axilares) só funcionam se o **ápice da curva estiver em T7 ou abaixo** (Tachdjian, p. 147; Campbell 15, cap. 40). Felizmente é o caso da maioria das AIS. Curvas torácicas altas ou cervicotorácicas respondem mal à órtese.
 
 As contraindicações (Tachdjian, p. 148): curvas acima de 45 graus no adolescente em crescimento (exceto os muito imaturos com cerca de 50 graus antes do PHV, para adiar a cirurgia), intolerância emocional, hipocifose torácica extrema e maturidade (**RISSER 4 ou 5 e, nas meninas, dois anos após a menarca**); são relativas a curva torácica alta e o sexo masculino. Nas meninas, o colete sai de uma vez 18 a 24 meses após a menarca, com RISSER 4 e sem ganho de altura (p. 150).
 
-!tabela Os coletes que aparecem na prova (Tachdjian, cap. 9, pp. 147 a 150; Campbell 15, cap. 40, p. 1547 aprox.)
+!tabela Os coletes que aparecem na prova (Tachdjian, cap. 9, pp. 147 a 150; Campbell 15, cap. 40)
 | Colete | O que saber |
 |---|---|
 | MILWAUKEE (1946) | Original, com anel cervical; hoje histórico pelo Tachdjian; ainda usado em formas modificadas na escoliose de início precoce |
@@ -269,7 +269,7 @@ As evidências vêm de estudos com sensor térmico (Tachdjian, pp. 148 e 149). N
 
 ## Exercícios, SCHROTH e o que não funciona
 
-A estimulação elétrica, usada nos anos 1980, não altera a história natural e foi abandonada (Tachdjian, p. 150). Sobre exercícios, o Tachdjian diz que só há evidência modesta de que fisioterapia controle ou melhore a escoliose, e que na Europa é comum usar exercícios e biofeedback (técnica de SCHROTH e outras) para potencializar o colete, com relato de benefício em alguns centros norte-americanos. O Campbell 15 (p. 1547 aprox.) diz que fisioterapia, manipulação e estimulação elétrica isoladas não têm evidência científica, e que as duas técnicas não operatórias aceitas são a observação e o colete, muitas vezes associados à fisioterapia baseada em SCHROTH. Nenhum dos dois livros descreve uma "classificação de SCHROTH".
+A estimulação elétrica, usada nos anos 1980, não altera a história natural e foi abandonada (Tachdjian, p. 150). Sobre exercícios, o Tachdjian diz que só há evidência modesta de que fisioterapia controle ou melhore a escoliose, e que na Europa é comum usar exercícios e biofeedback (técnica de SCHROTH e outras) para potencializar o colete, com relato de benefício em alguns centros norte-americanos. O Campbell 15 (cap. 40) diz que fisioterapia, manipulação e estimulação elétrica isoladas não têm evidência científica, e que as duas técnicas não operatórias aceitas são a observação e o colete, muitas vezes associados à fisioterapia baseada em SCHROTH. Nenhum dos dois livros descreve uma "classificação de SCHROTH".
 
 !questoes central=coluna-0473 relacionadas=coluna-0317
 conceito: A conduta se decide pela gravidade da curva, sua localização e padrão, e pela maturidade (crescimento restante); o colete serve ao imaturo (RISSER 0 a 2) com 25 a 45 graus e é contraindicado no RISSER 4 ou 5.
@@ -282,7 +282,7 @@ alerta: A `coluna-0317` está sem gabarito oficial; pelo Tachdjian (Tabela 9.2, 
 conceito: O Tachdjian e o Campbell 15 citam a técnica de SCHROTH como fisioterapia associada ao colete, mas não descrevem uma classificação de SCHROTH.
 como: O TARO 2026 perguntou o que a classificação de SCHROTH considera no planejamento terapêutico.
 armadilha: Confundir a técnica de exercícios com uma classificação radiográfica.
-alerta: Os livros lidos não descrevem a classificação de SCHROTH; o gabarito oficial (valor angular pelo COBB) foi mantido sem apoio nas fontes, que só citam SCHROTH como fisioterapia associada ao colete (Tachdjian, p. 150; Campbell 15, p. 1547 aprox.).
+alerta: Os livros lidos não descrevem a classificação de SCHROTH; o gabarito oficial (valor angular pelo COBB) foi mantido sem apoio nas fontes, que só citam SCHROTH como fisioterapia associada ao colete (Tachdjian, p. 150; Campbell 15, cap. 40).
 !fim
 
 # Indicação cirúrgica {radar=confirmado}
@@ -373,7 +373,7 @@ A história explica as vantagens de hoje (Tachdjian's Pediatric Orthopaedics, 6�
 
 Os **parafusos pediculares** mudaram o tratamento (Tachdjian, pp. 165 e 166). SUK relatou em 1995 o uso rotineiro de parafusos torácicos, com correção coronal de **72%** contra 55% dos ganchos e 66% das montagens híbridas. A explicação mecânica: os parafusos permitem mais pontos de fixação, pegam as **três colunas** da vértebra (o que dá mais força às manobras), viabilizam liberações maiores (osteotomias de PONTE ou SMITH-PETERSEN, ressecção de costelas, ressecção de coluna vertebral) e várias técnicas de correção (rotação da haste, distração e compressão segmentares, moldagem in situ). A maior vantagem talvez seja a **correção axial**: a rotação vertebral direta (DVR) corrigiu 42,5% da rotação apical contra 2,4% sem ela, e pode dispensar a toracoplastia (p. 166).
 
-!tabela Parafusos pediculares torácicos: vantagens e desvantagens (Campbell 15, cap. 40, Box 40.4 e Tabela 40.6, pp. 1556 e 1557 aprox.; Tachdjian, cap. 9, pp. 165 a 168)
+!tabela Parafusos pediculares torácicos: vantagens e desvantagens (Campbell 15, cap. 40, Box 40.4 e Tabela 40.6; Tachdjian, cap. 9, pp. 165 a 168)
 | Vantagens | Desvantagens |
 |---|---|
 | Ficam fora do canal (ganchos laminares ficam dentro) | Custo maior do implante e do número de parafusos |
@@ -397,7 +397,7 @@ A monitorização com potenciais somatossensitivos e motores é padrão; os moto
 
 ## Toracoplastia e via anterior
 
-A toracoplastia caiu de uso com a derrotação por parafusos e piora a função pulmonar nos primeiros meses (Tachdjian, p. 160; Campbell 15, p. 1581 aprox.). A via anterior, antes preferida nas curvas Lenke 5, perdeu espaço para a posterior com parafusos (Tachdjian, pp. 157 e 173; Campbell 15, p. 1582).
+A toracoplastia caiu de uso com a derrotação por parafusos e piora a função pulmonar nos primeiros meses (Tachdjian, p. 160; Campbell 15, cap. 40). A via anterior, antes preferida nas curvas Lenke 5, perdeu espaço para a posterior com parafusos (Tachdjian, pp. 157 e 173; Campbell 15, p. 1582).
 
 # Complicações e o fenômeno do virabrequim {radar=clinico}
 
@@ -413,7 +413,7 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (pp. 172 e 173), lista infecção,
 | Crankshaft | Crescimento anterior após fusão posterior no muito imaturo |
 !fim
 
-O **fenômeno do virabrequim** (crankshaft), nomeado por DUBOUSSET, acontece quando uma criança com muito crescimento pela frente recebe só fusão posterior: a coluna anterior continua crescendo e gira em torno da massa de fusão, como um virabrequim de motor, aumentando a curva, a rotação e a giba (Tachdjian, p. 160). Sinais radiográficos: aumento de mais de 10 graus no COBB, na rotação apical e na diferença do ângulo costovertebral. A prevenção passa por avaliar o crescimento restante, considerar a fusão anterior associada nas meninas que ainda não chegaram ao PHV, pré-menarca, com trirradiada aberta, e usar parafusos pediculares. O Campbell 15 (p. 1581 aprox.) acrescenta que a fixação de três colunas pelos parafusos pode dispensar a fusão combinada: numa série de 46 pacientes com parafusos, nenhum teve crankshaft em 3 anos.
+O **fenômeno do virabrequim** (crankshaft), nomeado por DUBOUSSET, acontece quando uma criança com muito crescimento pela frente recebe só fusão posterior: a coluna anterior continua crescendo e gira em torno da massa de fusão, como um virabrequim de motor, aumentando a curva, a rotação e a giba (Tachdjian, p. 160). Sinais radiográficos: aumento de mais de 10 graus no COBB, na rotação apical e na diferença do ângulo costovertebral. A prevenção passa por avaliar o crescimento restante, considerar a fusão anterior associada nas meninas que ainda não chegaram ao PHV, pré-menarca, com trirradiada aberta, e usar parafusos pediculares. O Campbell 15 (cap. 40) acrescenta que a fixação de três colunas pelos parafusos pode dispensar a fusão combinada: numa série de 46 pacientes com parafusos, nenhum teve crankshaft em 3 anos.
 
 # Escoliose idiopática juvenil {radar=confirmado}
 

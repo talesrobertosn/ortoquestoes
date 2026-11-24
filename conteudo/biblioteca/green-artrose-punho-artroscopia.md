@@ -1,6 +1,6 @@
 ---
 id: green-artrose-punho-artroscopia
-versao: 4
+versao: 5
 titulo: Artrose do punho e artroscopia
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), caps. 74, 78 e 57, e o HEBERT (Ortopedia e Traumatologia, 5ª ed.), cap. 52
 capitulo: Capítulo 12 · Wrist Arthrodesis and Arthroplasty
 autores: Marco Rizzo
-fonte: Livros conferidos localmente em 04/11/2026 e revistos em 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 12 (Wrist Arthrodesis and Arthroplasty, de Marco RIZZO, p. 373 a 416, relido seção por seção para esta versão), cap. 17 (Wrist Arthroscopy, de William B. GEISSLER, p. 652 a 694, com a eTable 17.1 e as Tabelas 17.1 a 17.3, relido para a versão 4 em 19/11/2026), cap. 13 (Wrist Instabilities, Misalignments, and Dislocations, de Marc GARCIA-ELIAS e Alberto LLUCH, p. 435, 438 a 440 e 447 a 450, com a Tabela 13.4), cap. 14 (p. 503 e 504), cap. 16 (p. 621 a 623 aprox. e 646) e cap. 55 (p. 1865 e 1866 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (Wrist Disorders, p. 3278 a 3282, 3294 a 3298, 3304, 3317, 3319, 3339 a 3341, 3354 a 3358, com o Box 74.1), cap. 78 (Arthritic Hand, p. 3494 e 3498) e cap. 57 (que remete a artroscopia do punho ao cap. 74); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 52 (Traumatismos dos ossos do carpo, quadro 52.4). A artroscopia não faz parte do capítulo 12; as seções de artroscopia vêm do capítulo 17 do Green e do capítulo 74 do Campbell, como na versão anterior.
+fonte: Livros conferidos localmente em 04/11/2026 e revistos em 18/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 12 (Wrist Arthrodesis and Arthroplasty, de Marco RIZZO, p. 373 a 416, relido seção por seção para esta versão), cap. 17 (Wrist Arthroscopy, de William B. GEISSLER, p. 652 a 694, com a eTable 17.1 e as Tabelas 17.1 a 17.3, relido para a versão 4 em 19/11/2026), cap. 13 (Wrist Instabilities, Misalignments, and Dislocations, de Marc GARCIA-ELIAS e Alberto LLUCH, p. 435, 438 a 440 e 447 a 450, com a Tabela 13.4), cap. 14 (p. 503 e 504), cap. 16 (p. 621 a 623 e 646) e cap. 55 (p. 1865 e 1866); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (Wrist Disorders, p. 3278 a 3282, 3294 a 3298, 3304, 3317, 3319, 3339 a 3341, 3354 a 3358, com o Box 74.1), cap. 78 (Arthritic Hand, p. 3494 e 3498) e cap. 57 (que remete a artroscopia do punho ao cap. 74); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 52 (Traumatismos dos ossos do carpo, quadro 52.4). A artroscopia não faz parte do capítulo 12; as seções de artroscopia vêm do capítulo 17 do Green e do capítulo 74 do Campbell, como na versão anterior.
 subtemas: Artrose do punho e artroscopia
 resumo: Dor e estabilidade pesam mais que arco (PALMER: 30° de extensão, 5° de flexão, 10° de desvio radial e 15° de ulnar bastam); artrose primária do punho é incomum e mora na STT; SLAC de WATSON começa no estiloide e poupa a radiolunar; LLUCH: I radioescafoide, II escafocapitato, III lunocapitato, IV piramidal-hamato, V radiolunar; AR é a causa mais comum de artrose radiolunar isolada; escafocapitato e STT têm indicações e perda de movimento parecidas, escafoide a 40 a 50°; escafossemilunar tem pseudartrose de 50 a 85%; escafoidectomia com quatro cantos no SLAC ou SNAC II e III, contraindicada pela fossa do semilunar doente, com o semilunar reduzido como passo mais importante; carpectomia proximal exige capitato e fossa do semilunar sãos; artrodese total com placa do rádio ao 3º metacarpo, cinco articulações, pseudartrose parcial na 3ª CMC (decorticar 80% dorsais ou retirar a placa), ELP deixado superficial ao retináculo, túnel do carpo até 10,5% com 67% de liberação; pino de STEINMANN de MILLENDER e NALEBUFF viola a 3ª MCF; prótese só em baixa demanda; 3-4 é o portal de visão, 4-5 o de trabalho, 6-U de irrigação, mediocárpicos 1 cm distais; GEISSLER III admite o probe, IV o artroscópio; EWAS IIIB rompe o SL dorsal.
 ---
@@ -306,7 +306,7 @@ Outros detalhes cobrados (p. 392 a 395):
 | Item | Escafoidectomia + quatro cantos | Carpectomia proximal |
 |---|---|---|
 | Pré-requisito | Radiolunar íntegra | Cabeça do capitato e fossa do semilunar íntegras |
-| Estágios | SLAC ou SNAC II e III (Green p. 395) | SNAC II ou III sem artrose capitossemilunar (Green p. 623 aprox.) |
+| Estágios | SLAC ou SNAC II e III (Green p. 395) | SNAC II ou III sem artrose capitossemilunar (Green p. 623) |
 | Idade | Preferida abaixo de 45 anos (Green) ou para jovens e trabalho pesado (Campbell) | Acima de 40 anos (Green cap. 16) ou de 35 a 40 anos (Campbell) |
 | Movimento | 50 a 60% do arco; NEUBRECH 62% flexoextensão e 68% desvios | 50 a 60% do arco; WALL arco total de 68° |
 | Preensão | Quase 90% (NEUBRECH); 65% em WAGNER | 70 a 80%; 54% em WAGNER |
@@ -327,7 +327,7 @@ O Green (p. 394 e 395) discute a capitossemilunar isolada: em teoria, ela não d
 
 A carpectomia retira **escafoide, semilunar e piramidal** e cria uma nova articulação entre a **cabeça do capitato e a fossa do semilunar** do rádio (Green, cap. 13, p. 450). Mecanicamente, transforma uma articulação composta de duas fileiras em uma **bola e soquete com superfícies que não combinam**: a cabeça do capitato tem raio menor que a fossa do semilunar, e o contato fica concentrado numa área pequena. O punho só tolera essa incongruência se houver **boa cartilagem na cabeça do capitato e na fossa do semilunar**. As vantagens sobre a artrodese mediocárpica são reais: **sem imobilização longa, sem risco de pseudartrose**, e conversão possível para artrodese ou artroplastia se falhar.
 
-O capítulo 16 (p. 623 aprox.) define o candidato ideal: paciente de **baixa demanda, acima de 40 anos**, com **SNAC II ou III sem ou com mínima artrose capitossemilunar** (pode ter alteração escafocapitato); trabalhador braçal costuma ficar de fora. Na técnica, o **RSC** precisa ser preservado, porque o outro grande ligamento palmar (o radiolunar longo, ou radiolunopiramidal) sai junto com a fileira, e é o RSC que impede a **translocação ulnar** do capitato na fossa depois da cirurgia.
+O capítulo 16 (p. 623) define o candidato ideal: paciente de **baixa demanda, acima de 40 anos**, com **SNAC II ou III sem ou com mínima artrose capitossemilunar** (pode ter alteração escafocapitato); trabalhador braçal costuma ficar de fora. Na técnica, o **RSC** precisa ser preservado, porque o outro grande ligamento palmar (o radiolunar longo, ou radiolunopiramidal) sai junto com a fileira, e é o RSC que impede a **translocação ulnar** do capitato na fossa depois da cirurgia.
 
 ## Por que ela perde a indicação no estágio III
 
@@ -342,7 +342,7 @@ alerta: Em `mao-0993`, o gabarito (carpectomia) é a única opção de salvament
 
 ## Resultados de longo prazo
 
-A degeneração radiocapitato, muitas vezes assintomática, aparece em cerca de **um terço** após 10 anos; na série de WALL, o sucesso em 20 anos foi de **65%**, e os 35% de falha foram para artrodese radiocárpica em média **11 anos** depois (cap. 13, p. 450; cap. 16, p. 623 aprox.). É o preço da incongruência: a cartilagem do capitato aguenta bem por uma década e depois começa a ceder, sobretudo no paciente jovem e ativo. Por isso a idade de corte: **35 anos** no capítulo 13, **40 anos** nos capítulos 12 e 16; o Campbell (p. 3296) diz **35 a 40 anos**, mas cita WAGNER (abaixo de 45 anos), com **mais movimento e menos complicações** na carpectomia e **mais força e melhor DASH** na quatro cantos.
+A degeneração radiocapitato, muitas vezes assintomática, aparece em cerca de **um terço** após 10 anos; na série de WALL, o sucesso em 20 anos foi de **65%**, e os 35% de falha foram para artrodese radiocárpica em média **11 anos** depois (cap. 13, p. 450; cap. 16, p. 623). É o preço da incongruência: a cartilagem do capitato aguenta bem por uma década e depois começa a ceder, sobretudo no paciente jovem e ativo. Por isso a idade de corte: **35 anos** no capítulo 13, **40 anos** nos capítulos 12 e 16; o Campbell (p. 3296) diz **35 a 40 anos**, mas cita WAGNER (abaixo de 45 anos), com **mais movimento e menos complicações** na carpectomia e **mais força e melhor DASH** na quatro cantos.
 
 ## Carpectomia no KIENBÖCK
 
@@ -409,7 +409,7 @@ A posição é o fato mais cobrado, e o Campbell (cap. 74, p. 3340) a define: a 
 | Campbell, cap. 74, p. 3340 | 10 a 20° de extensão, 3º metacarpo alinhado ao rádio | Regra geral, força máxima de preensão |
 | Campbell, cap. 78, p. 3494 | 10 a 30° de extensão; posição controversa | Reumatoide; bilateral: um em extensão e outro em flexão, pela higiene |
 | Green, cap. 12, p. 398 | Leve extensão dada pela placa pré-contornada | Placa dorsal |
-| Green, cap. 55, p. 1865 aprox. | Neutro, metacarpo alinhado ao rádio | Pino único de MILLENDER e NALEBUFF na AR; ajuste só de 5 a 10° |
+| Green, cap. 55, p. 1865 | Neutro, metacarpo alinhado ao rádio | Pino único de MILLENDER e NALEBUFF na AR; ajuste só de 5 a 10° |
 | Green, cap. 12, p. 401 | Pino retrógrado pelo 2º espaço intermetacárpico deixa leve desvio ulnar | Mecanicamente vantajoso |
 !fim
 
@@ -488,7 +488,7 @@ alerta: Em `mao-1500`, o gabarito dá a faixa de 3,5 a 10,5%; o Green (cap. 12, 
 
 ## Pino intramedular e o punho reumatoide
 
-A técnica de **CLAYTON**, popularizada por **MILLENDER e NALEBUFF**, usa um **pino de STEINMANN introduzido pela diáfise do 3º metacarpo até o rádio**, simples e eficaz na **AR com osso ruim** (Green, cap. 12, p. 401). O preço é anatômico: para entrar no canal do 3º metacarpo pela cabeça, o pino **viola a 3ª metacarpofalângica**, que talvez precise de artroplastia depois. Outros problemas: é difícil embutir o pino, e **se a 3ª CMC não consolidar, o pino solta e migra para distal**. Por isso alguns o passam **retrógrado pelo carpo, saindo no 2º espaço intermetacárpico**, e depois anterógrado no rádio, o que poupa a MCF e deixa **leve desvio ulnar, mecanicamente vantajoso**. FELDON usa **dois pinos finos** pelo 2º e 3º espaços, com estabilidade rotacional (cap. 55, p. 1865 aprox.). O kit de WRIGHTINGTON traz pinos de ponta cortante e um embutidor.
+A técnica de **CLAYTON**, popularizada por **MILLENDER e NALEBUFF**, usa um **pino de STEINMANN introduzido pela diáfise do 3º metacarpo até o rádio**, simples e eficaz na **AR com osso ruim** (Green, cap. 12, p. 401). O preço é anatômico: para entrar no canal do 3º metacarpo pela cabeça, o pino **viola a 3ª metacarpofalângica**, que talvez precise de artroplastia depois. Outros problemas: é difícil embutir o pino, e **se a 3ª CMC não consolidar, o pino solta e migra para distal**. Por isso alguns o passam **retrógrado pelo carpo, saindo no 2º espaço intermetacárpico**, e depois anterógrado no rádio, o que poupa a MCF e deixa **leve desvio ulnar, mecanicamente vantajoso**. FELDON usa **dois pinos finos** pelo 2º e 3º espaços, com estabilidade rotacional (cap. 55, p. 1865). O kit de WRIGHTINGTON traz pinos de ponta cortante e um embutidor.
 
 Os pontos críticos da técnica (p. 402 a 404): **reduzir a subluxação volar do semilunar e ressecar a "prateleira" anterior** do rádio, senão o mediano é comprimido (Figura 12.44); usar um pino, ou dois se houver perda óssea, e um fio extra ou grampo contra a rotação; aproveitar o carpo morselizado e a cabeça da ulna como enxerto; embutir o pino além do istmo do 3º metacarpo. O resultado: **consolidação de 98,5%**, força em **72%** do normal (com platô em um ano), uso pleno em 10 semanas e adaptação em 6 meses.
 

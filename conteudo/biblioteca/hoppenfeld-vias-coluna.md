@@ -1,6 +1,6 @@
 ---
 id: hoppenfeld-vias-coluna
-versao: 1
+versao: 2
 titulo: Vias de acesso à coluna
 especialidade: coluna
 acesso: gratis
@@ -179,7 +179,7 @@ Aqui os livros contam histórias diferentes, e vale entender por quê.
 
 O **Campbell 15ª, capítulo 44** (p. 1708), escrito sobre as vias de acesso, diz que **a complicação mais frequente do acesso anterior é a paralisia de corda vocal por lesão do laríngeo recorrente**, e o resumo do capítulo (p. 1717) repete que esta é a complicação mais frequente da via pela direita.
 
-O **Campbell 15ª, capítulo 45** (p. 1753 aprox.), que trata da doença degenerativa e da fusão anterior (ACDF), diz que a **disfagia é uma das complicações pós-operatórias mais comuns** da fusão anterior, com quase **90%** de ocorrência num estudo retrospectivo, mas que a disfagia que dura **mais de 3 meses é rara (menos de 1%)**. A rouquidão também é comum e, na maioria, se resolve rápido.
+O **Campbell 15ª, capítulo 45**, que trata da doença degenerativa e da fusão anterior (ACDF), diz que a **disfagia é uma das complicações pós-operatórias mais comuns** da fusão anterior, com quase **90%** de ocorrência num estudo retrospectivo, mas que a disfagia que dura **mais de 3 meses é rara (menos de 1%)**. A rouquidão também é comum e, na maioria, se resolve rápido.
 
 O **Rockwood and Green's, 10ª ed., capítulo 48**, é o mais direto: **a complicação mais comum após cirurgia cervical anterior é a disfagia**, presente em até **50%** dos casos, subclínica na maioria. A paralisia do laríngeo recorrente, que se manifesta como disfonia, varia de **2% a 30%**, conforme se conte a disfonia clínica ou a paralisia verdadeira da corda; o risco aumenta **abaixo de C5** e nas **revisões**.
 

@@ -1,6 +1,6 @@
 ---
 id: callaghan-exame-quadril
-versao: 2
+versao: 3
 titulo: Exame físico do quadril
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e c
 edicao: 3ª edição (2017)
 capitulo: Capítulo 22 · History and Physical Examination
 autores: Hal David Martin, Ian James Palmer, Munif Hatem
-fonte: Livros conferidos localmente em 01/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 22 (p. 319 a 338, lido por inteiro, com as Tabelas 22.1 a 22.10) e cap. 2 (abdutores, p. 45); Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (biomecânica da artroplastia, p. 192), cap. 7 (avaliação do quadril doloroso, p. 357 a 360), cap. 56 (impacto extra-articular, abdutores e ressaltos, p. 2412 a 2414), cap. 46 (LASÈGUE, p. 1785 a 1786), cap. 24 (sacroilíaca, p. 835), cap. 50 (p. 2002) e cap. 53 (p. 2254); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., cap. 10, Quadril do adulto, seção Exame físico, e os trechos de fisiatria (síndrome do piriforme) e reabilitação do quadril; Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 7 (Pelve, p. 203 e 223 aprox.) e cap. 8 (Coxa/Quadril, exame físico, p. 260 a 264 aprox.); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 50 (incidências em apoio unipodal).
+fonte: Livros conferidos localmente em 01/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 22 (p. 319 a 338, lido por inteiro, com as Tabelas 22.1 a 22.10) e cap. 2 (abdutores, p. 45); Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (biomecânica da artroplastia, p. 192), cap. 7 (avaliação do quadril doloroso, p. 357 a 360), cap. 56 (impacto extra-articular, abdutores e ressaltos, p. 2412 a 2414), cap. 46 (LASÈGUE, p. 1785 a 1786), cap. 24 (sacroilíaca, p. 835), cap. 50 (p. 2002) e cap. 53 (p. 2254); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., cap. 10, Quadril do adulto, seção Exame físico, e os trechos de fisiatria (síndrome do piriforme) e reabilitação do quadril; Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 7 (Pelve) e cap. 8 (Coxa/Quadril, exame físico); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 50 (incidências em apoio unipodal).
 subtemas: Exame físico do quadril
 resumo: Exame em cinco camadas (osteocondral, capsulolabral, musculotendínea, neurovascular e cadeia cinemática; FREIBERG e PACE são os autores dos testes neurovasculares) na ordem em pé, sentado, supino, lateral e prono; sinal do C = dor intra-articular; TRENDELENBURG (apoio unipodal por 6 segundos, lado normal primeiro, desvio > 2 cm, pelve cai do lado oposto ao glúteo médio insuficiente; força abdutora cerca de 2,5 vezes o peso); rotação interna sentado normal de 20 a 35 graus, a primeira a se perder; THOMAS = contratura em flexão; FABER/PATRICK = quadril versus sacroilíaca; STINCHFIELD = patologia articular; FADIR (flexão, adução e rotação interna) = impacto anterior; DEXRIT = impacto superior e posterior e instabilidade anteroinferior; OBER = trato iliotibial (extensão) e glúteo médio (neutro); piriforme ativo em abdução e rotação externa contra resistência, passivo em adução e rotação interna; CRAIG = anteversão; ELY = reto femoral; LUDLOFF = iliopsoas e trocânter menor.
 ---
@@ -87,9 +87,9 @@ Alguns pontos da história apontam para fora do quadril, e é isso que a prova e
 
 Também se perguntam lesões antigas, doença do quadril na infância, doença do joelho do mesmo lado, história sugestiva de artrite inflamatória e fatores de risco para osteonecrose (álcool, tabaco, corticoide). A limitação do movimento do quadril gera problemas secundários na lombar, na sacroilíaca e nas estruturas musculotendíneas da pube e da virilha: é a cadeia cinemática aparecendo já na anamnese (p. 320).
 
-O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 8, p. 258 aprox.), e o Campbell resumem a localização:
+O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 8), e o Campbell resumem a localização:
 
-!tabela Pistas da localização da dor (Netter, cap. 8, p. 258 aprox.; Campbell's Operative Orthopaedics, 15ª ed., cap. 7, Tabela 7.1, p. 357)
+!tabela Pistas da localização da dor (Netter, cap. 8; Campbell's Operative Orthopaedics, 15ª ed., cap. 7, Tabela 7.1, p. 357)
 | Onde dói | O que considerar |
 | --- | --- |
 | virilha, dor profunda e mal definida (sinal do C) | patologia intra-articular (acetábulo e articulação) |
@@ -178,7 +178,7 @@ O **pisca pélvico** (pelvic wink) é uma **rotação axial excessiva em direç�
 
 No apoio, o peso é sustentado por uma perna, com os glúteos máximo, médio e mínimo fornecendo a maior parte da força. Um ponto crítico: a **força de reação máxima do solo ocorre no contato do calcanhar, com 30 graus de flexão do quadril** (p. 326), não no desprendimento dos dedos. A fase de apoio encurtada sugere doença neuromuscular, trauma ou discrepância.
 
-!tabela Padrões de marcha e o que sugerem (The Adult Hip, cap. 22, Tabela 22.4, p. 324 e 326; Netter, cap. 8, p. 260 aprox.)
+!tabela Padrões de marcha e o que sugerem (The Adult Hip, cap. 22, Tabela 22.4, p. 324 e 326; Netter, cap. 8)
 | Padrão | Como se vê | O que sugere |
 | --- | --- | --- |
 | progressão do pé interna | pé apontando para dentro | anteversão femoral aumentada, torções |
@@ -191,7 +191,7 @@ No apoio, o peso é sustentado por uma perna, com os glúteos máximo, médio e 
 | passada longa dolorosa | segura a nádega lateral ao ísquio; alívio com passadas curtas | impacto isquiofemoral |
 !fim
 
-A **marcha abdutora deficiente** (TRENDELENBURG ou abductor lurch) é um apoio desequilibrado por fraqueza dos abdutores ou por quebra da propriocepção, e aparece de duas formas que podem coexistir: a **pelve desliza para fora** (o quadril "cai para fora" no lado afetado) ou o **peso passa por cima da perna aduzida** (o tronco se joga "por cima" do quadril afetado) (p. 326). O Netter (cap. 8, p. 260 aprox.) descreve a mesma coisa como inclinação lateral sobre o lado que suporta o peso, por fraqueza do glúteo médio.
+A **marcha abdutora deficiente** (TRENDELENBURG ou abductor lurch) é um apoio desequilibrado por fraqueza dos abdutores ou por quebra da propriocepção, e aparece de duas formas que podem coexistir: a **pelve desliza para fora** (o quadril "cai para fora" no lado afetado) ou o **peso passa por cima da perna aduzida** (o tronco se joga "por cima" do quadril afetado) (p. 326). O Netter (cap. 8) descreve a mesma coisa como inclinação lateral sobre o lado que suporta o peso, por fraqueza do glúteo médio.
 
 No **impacto isquiofemoral**, o paciente sente dor e **segura o quadril durante a passada longa**, mas anda sem dor com **passadas curtas** (p. 326). O mecanismo é simples: a passada longa leva o quadril de trás à extensão terminal, que aproxima o trocânter menor do ísquio. O Campbell (cap. 56, p. 2413) confirma: o teste da passada longa reproduz a dor com o quadril totalmente estendido, e o paciente segura a nádega lateral ao ísquio.
 
@@ -213,7 +213,7 @@ O mesmo capítulo calcula a força necessária: pela fórmula do corpo livre, a 
 
 A regra que derruba candidatos: **o teste examina o quadril que está apoiado no chão**, e o sinal positivo é a **queda da pelve do lado oposto**, o da perna levantada.
 
-O Ortopedia e Traumatologia de HEBERT, 5ª ed. (cap. 10), descreve: paciente em pé, examinador atrás, com os polegares nas espinhas ilíacas posterossuperiores para estimar a obliquidade; pede-se que o paciente **eleve o membro contralateral ao quadril examinado**. Se o glúteo médio do lado que sustenta o peso é normal, ele se contrai e a pelve fica nivelada; se a **pelve contralateral cai**, há insuficiência do glúteo médio. O Netter (cap. 7, p. 223 aprox.) diz o mesmo ao contrário: a pelve do lado flexionado **deve elevar-se**; se cair, há disfunção do abdutor ou do glúteo médio, inervado pelo **nervo glúteo superior**. O Campbell (cap. 7, Fig. 7.2, p. 358) fala da "hemipelve afetada" que cede, mas o critério numérico do texto é claro: positivo quando a pelve **cai mais de 2 cm** no apoio unipodal **sobre o membro testado** (p. 358.e1).
+O Ortopedia e Traumatologia de HEBERT, 5ª ed. (cap. 10), descreve: paciente em pé, examinador atrás, com os polegares nas espinhas ilíacas posterossuperiores para estimar a obliquidade; pede-se que o paciente **eleve o membro contralateral ao quadril examinado**. Se o glúteo médio do lado que sustenta o peso é normal, ele se contrai e a pelve fica nivelada; se a **pelve contralateral cai**, há insuficiência do glúteo médio. O Netter (cap. 7) diz o mesmo ao contrário: a pelve do lado flexionado **deve elevar-se**; se cair, há disfunção do abdutor ou do glúteo médio, inervado pelo **nervo glúteo superior**. O Campbell (cap. 7, Fig. 7.2, p. 358) fala da "hemipelve afetada" que cede, mas o critério numérico do texto é claro: positivo quando a pelve **cai mais de 2 cm** no apoio unipodal **sobre o membro testado** (p. 358.e1).
 
 Na prática: glúteo médio esquerdo insuficiente se testa com **carga monopodal à esquerda**, e o achado é o **abaixamento da pelve à direita**.
 
@@ -234,7 +234,7 @@ O capítulo 22 do The Adult Hip (p. 327) chama a manobra de **teste da fase de a
 | The Adult Hip, cap. 22, p. 327 | bilateral, lado normal primeiro, 6 segundos | desvio > 2 cm para o lado de apoio; inclinação do tronco anotada |
 | Campbell, cap. 7, p. 358.e1 | apoio unipodal sobre o membro testado | pelve cai > 2 cm |
 | HEBERT, cap. 10 | em pé, polegares nas EIPS, eleva o membro contralateral | pelve contralateral cai = insuficiência do glúteo médio do lado de apoio |
-| Netter, cap. 7, p. 223 aprox. | em pé, levantar uma perna | pelve do lado flexionado deve subir; se cai, disfunção abdutora (nervo glúteo superior) |
+| Netter, cap. 7 | em pé, levantar uma perna | pelve do lado flexionado deve subir; se cai, disfunção abdutora (nervo glúteo superior) |
 !fim
 
 ## A lesão dos abdutores e a fadiga
@@ -274,7 +274,7 @@ São necessários pelo menos **10 graus de rotação interna no médio apoio**; 
 
 O Campbell (cap. 7, p. 358.e1) acrescenta que, na sinovite de qualquer causa, **rotação interna e abdução** são as mais afetadas.
 
-!tabela Amplitude normal do quadril em graus (The Adult Hip, Tabela 22.6, p. 329; HEBERT, cap. 10; Netter, cap. 8, p. 261 aprox.)
+!tabela Amplitude normal do quadril em graus (The Adult Hip, Tabela 22.6, p. 329; HEBERT, cap. 10; Netter, cap. 8)
 | Movimento | The Adult Hip (normal; anormal) | HEBERT | Netter |
 | --- | --- | --- | --- |
 | rotação interna sentado | 20 a 35; < 20 | 25 a 45 | 30 |
@@ -307,7 +307,7 @@ O teste de THOMAS é o teste da **contratura em flexão do quadril**, e os quatr
 
 - **The Adult Hip** (p. 330 e 331): o paciente segura a perna contralateral em flexão total, o que dá o "ponto zero" da pelve e da lombar; o quadril examinado é estendido em direção à mesa; **contratura = a coxa não alcança a mesa**. Falso-negativo em **hiperfrouxidão ou doença do conjuntivo** (corrige-se o ponto zero com contração abdominal) e com **hiperlordose lombar**. A Tabela 22.7 associa o teste a contratura do flexor (**psoas**), neuropatia femoral, patologia intra-articular e causa abdominal.
 - **Campbell** (cap. 7, p. 358.e1) e **HEBERT** (cap. 10): flexionam-se os dois quadris até retificar a lombar (mão entre a coluna e a mesa) e estende-se o examinado; o HEBERT mede o ângulo entre a diáfise e a mesa e chama a manobra de **específica** para contraturas em flexão.
-- **Netter** (cap. 8, p. 263 aprox.): joelho ao peito; se a **coxa oposta se levanta da mesa**, há contratura em flexão.
+- **Netter** (cap. 8): joelho ao peito; se a **coxa oposta se levanta da mesa**, há contratura em flexão.
 
 O mecanismo do teste é o da lordose: em pé, o paciente com contratura em flexão esconde o problema hiperestendendo a lombar. Quando o outro quadril é fletido e a lordose desaparece, a compensação acaba e a contratura aparece como coxa que não desce.
 
@@ -319,7 +319,7 @@ O HEBERT descreve as duas fases: com o pé sobre o joelho oposto, a dor indica p
 
 ## STINCHFIELD: a perna estendida contra resistência
 
-O **STINCHFIELD** é a **elevação da perna estendida contra resistência**. Pelo The Adult Hip (p. 332), o paciente eleva ativamente a perna com o joelho estendido, de **10 a 45 graus**, e o examinador empurra para baixo, distal ao joelho; positivo se reproduz a queixa, dor ou fraqueza. Ele avalia a força do flexor e do psoas e serve para impacto do psoas, tendinite e **irritação intra-articular, porque o psoas comprime o lábio** ao contrair. O HEBERT diz que a manobra promove uma **carga seletiva na articulação**, e dor na virilha ou na face anterior e proximal da coxa indica **patologia articular do quadril**. O Campbell (cap. 7, p. 358.e1) dá o critério: dor com flexão resistida **além de 30 a 45 graus**, detectando graus sutis de patologia intra-articular. O Netter (cap. 8, p. 263 aprox.) resume: suspender a perna estendida contra resistência, dor = patologia do quadril.
+O **STINCHFIELD** é a **elevação da perna estendida contra resistência**. Pelo The Adult Hip (p. 332), o paciente eleva ativamente a perna com o joelho estendido, de **10 a 45 graus**, e o examinador empurra para baixo, distal ao joelho; positivo se reproduz a queixa, dor ou fraqueza. Ele avalia a força do flexor e do psoas e serve para impacto do psoas, tendinite e **irritação intra-articular, porque o psoas comprime o lábio** ao contrair. O HEBERT diz que a manobra promove uma **carga seletiva na articulação**, e dor na virilha ou na face anterior e proximal da coxa indica **patologia articular do quadril**. O Campbell (cap. 7, p. 358.e1) dá o critério: dor com flexão resistida **além de 30 a 45 graus**, detectando graus sutis de patologia intra-articular. O Netter (cap. 8) resume: suspender a perna estendida contra resistência, dor = patologia do quadril.
 
 Para a pergunta "qual teste certifica uma patologia articular do quadril", o STINCHFIELD é a resposta. Os distratores costumam ser testes de outras articulações: o **THESSALY**, feito em apoio unipodal com o joelho a 20 graus, procura lesão **meniscal** (Campbell, cap. 50, p. 2002); o **THOMPSON** (aperto da panturrilha de SIMMONDS) procura a **ruptura do tendão do calcâneo** (Campbell, cap. 53, p. 2254); o **OBER** mede contratura lateral do quadril, não doença articular.
 
@@ -360,7 +360,7 @@ A lógica é geométrica: flexão com adução e rotação interna aproxima o co
 | FABER ou abdução pura | flexão, abdução e rotação externa | impacto lateral ou posterior (protrusão); sacroilíaca |
 !fim
 
-O **FADIR** do Campbell (cap. 7, p. 358.e1) leva o quadril a **90 graus de flexão, adução além da linha média e rotação interna máxima**; dor indica impacto anterior, e esses quadris têm rotação interna limitada, por isso a comparação com o outro lado é decisiva. O HEBERT descreve o teste do impingement como rotação interna forçada a 90 graus, e o teste da apreensão como rotação externa forçada em extensão (instabilidade anterior ou lesão labral). O Netter (cap. 8, p. 263 aprox.) confirma: supino, flexão, adução e rotação medial, dor = impacto femoroacetabular. O Campbell (cap. 56, p. 2412) lembra ainda o impacto subespinhal, que dói na flexão profunda ou na flexão com rotação interna.
+O **FADIR** do Campbell (cap. 7, p. 358.e1) leva o quadril a **90 graus de flexão, adução além da linha média e rotação interna máxima**; dor indica impacto anterior, e esses quadris têm rotação interna limitada, por isso a comparação com o outro lado é decisiva. O HEBERT descreve o teste do impingement como rotação interna forçada a 90 graus, e o teste da apreensão como rotação externa forçada em extensão (instabilidade anterior ou lesão labral). O Netter (cap. 8) confirma: supino, flexão, adução e rotação medial, dor = impacto femoroacetabular. O Campbell (cap. 56, p. 2412) lembra ainda o impacto subespinhal, que dói na flexão profunda ou na flexão com rotação interna.
 
 No **DIRI** e no **DEXRIT**, o paciente segura a perna boa em flexão além de 90 graus (ponto zero, sem lordose) e o examinador faz um arco amplo; o DEXRIT, em **abdução e rotação externa**, é positivo também na hipoplasia anteroinferior, na lesão do ligamento redondo e na frouxidão capsular (p. 331). O **FADDIR** em decúbito lateral testa a inclinação pélvica dinâmica; o supino elimina a lordose (p. 333).
 
@@ -408,7 +408,7 @@ O teste de OBER é feito em **decúbito lateral** sobre o lado não examinado. O
 | The Adult Hip, p. 332 e 333 | adução em flexão, joelho estendido, ombro rodado para a mesa | glúteo máximo |
 | HEBERT, cap. 10 | membro em extensão fica abduzido | abdutores (médio, mínimo, tensor e banda iliotibial) |
 | HEBERT, cap. 10 | continua positivo com o joelho fletido | glúteo médio e mínimo |
-| Netter, cap. 8, p. 263 aprox. | quadril estendido e aduzido, fica em abdução | trato iliotibial |
+| Netter, cap. 8 | quadril estendido e aduzido, fica em abdução | trato iliotibial |
 !fim
 
 O raciocínio que une os quatro: o **trato iliotibial** (com o tensor) é posterior ao eixo de flexão quando o quadril está estendido e cruza o joelho, então ele é tensionado com o **quadril estendido e o joelho estendido**; o **glúteo médio** não cruza o joelho, então ele persiste quando o joelho é fletido; o **glúteo máximo** se estica com o quadril em **flexão**. Na restrição, o The Adult Hip gradua 3+ acima da linha do tronco, 2+ na linha média e 1+ abaixo, e pede posição padronizada do joelho, que muda o resultado (p. 333). O Campbell (cap. 56, p. 2414) lembra que o OBER, levando o quadril de flexão para extensão, pode reproduzir o **ressalto externo**.
@@ -437,14 +437,14 @@ A dor glútea profunda é a camada neurovascular, e o capítulo 22 a investiga a
 
 ## O piriforme: anatomia e mecanismo
 
-O piriforme é um músculo não postural, **primariamente rotador lateral** do quadril; a síndrome pode começar com uma contração brusca contra uma rotação medial rápida, como na corrida, e o sintoma mais comum é a **compressão do nervo isquiático** com dor irradiada para a sacroilíaca, a nádega, a região posterior do quadril e a coxa (HEBERT, capítulo de fisiatria). O Netter (cap. 7, p. 204 aprox.) explica a vulnerabilidade: o isquiático sai abaixo do piriforme pelo forame isquiático maior e, como variação, pode sair **acima ou através** dele.
+O piriforme é um músculo não postural, **primariamente rotador lateral** do quadril; a síndrome pode começar com uma contração brusca contra uma rotação medial rápida, como na corrida, e o sintoma mais comum é a **compressão do nervo isquiático** com dor irradiada para a sacroilíaca, a nádega, a região posterior do quadril e a coxa (HEBERT, capítulo de fisiatria). O Netter (cap. 7) explica a vulnerabilidade: o isquiático sai abaixo do piriforme pelo forame isquiático maior e, como variação, pode sair **acima ou através** dele.
 
 Daí as duas formas de provocar o nervo: **esticar** o piriforme (movimento oposto à sua ação: **adução e rotação interna**, passivas) ou **contraí-lo** contra resistência (sua ação: **abdução e rotação externa**, ativas). O CALLAGHAN atribui a família neurovascular a **FREIBERG e PACE**; os livros conferidos não descrevem a técnica original de cada um, mas descrevem exatamente as duas manobras.
 
 - **Estiramento do piriforme sentado** (The Adult Hip, p. 329): joelho estendido, quadril a 90 graus, levado **passivamente em adução e rotação interna**, palpando 1 cm lateral ao ísquio e na incisura isquiática; positivo = dor posterior no piriforme ou nos rotadores externos, indicando envolvimento do isquiático.
 - **Teste ativo do piriforme** (p. 334 e 335): decúbito lateral; o paciente empurra o calcanhar contra a mesa, **abduz e roda externamente contra resistência**, enquanto o examinador palpa o piriforme; a contração do piriforme e do obturador interno com os gêmeos comprime o nervo.
 - Os dois são mantidos por **20 segundos**; juntos têm **sensibilidade de 0,91 e especificidade de 0,80** (p. 329).
-- O Netter (cap. 8, p. 264 aprox.) descreve o teste do piriforme em decúbito lateral com **adução do quadril**: dor no quadril ou na pelve indica síndrome do piriforme comprimindo o isquiático. O HEBERT faz o alongamento terapêutico em **adução com a coxa flexionada**.
+- O Netter (cap. 8) descreve o teste do piriforme em decúbito lateral com **adução do quadril**: dor no quadril ou na pelve indica síndrome do piriforme comprimindo o isquiático. O HEBERT faz o alongamento terapêutico em **adução com a coxa flexionada**.
 
 !questoes central=quadril-0334 relacionadas=quadril-0065 treino=quadril-0601
 conceito: O estiramento do piriforme é passivo: quadril a 90 graus, joelho estendido, adução e rotação interna, palpando lateral ao ísquio; mantém-se 20 segundos e avalia a camada neurovascular (isquiático); dor medial ao ísquio é pudendo, superolateral é glúteo profundo.
@@ -467,13 +467,13 @@ O **teste de impacto isquiofemoral** é feito em decúbito contralateral, com ex
 # Decúbito ventral: CRAIG e ELY {radar=fundamento}
 
 - **Teste de anteversão femoral (CRAIG)** (The Adult Hip, p. 336): prono, joelho a 90 graus; o examinador roda a perna palpando o trocânter maior até que ele fique **mais lateral** (cabeça centrada no acetábulo); a anteversão é o ângulo entre o eixo da tíbia e a vertical; normal de **10 a 20 graus**; ajuda a identificar retroversão e funciona melhor em não obesos.
-- **Teste de contratura do reto femoral (ELY)** (p. 336): prono, flexão do joelho em direção ao glúteo; **elevação da pelve ou restrição da flexão do joelho** indica contratura do reto femoral. O Netter (cap. 8, p. 264 aprox.) diz: se o quadril flete enquanto o joelho é fletido, há encurtamento do reto. O reto cruza o quadril e o joelho, por isso a flexão do joelho o estica e, se ele é curto, puxa a pelve.
+- **Teste de contratura do reto femoral (ELY)** (p. 336): prono, flexão do joelho em direção ao glúteo; **elevação da pelve ou restrição da flexão do joelho** indica contratura do reto femoral. O Netter (cap. 8) diz: se o quadril flete enquanto o joelho é fletido, há encurtamento do reto. O reto cruza o quadril e o joelho, por isso a flexão do joelho o estica e, se ele é curto, puxa a pelve.
 - **Hiperextensão lombar ativa**: afasta a coluna como causa.
 - O Netter acrescenta o **90-90** (mais de 20 graus de flexão residual do joelho = isquiotibiais curtos) e o comprimento da EIAS ao maléolo medial (diferença maior que 1 cm é positiva).
 
 # Iliopsoas e reto femoral: LUDLOFF e as avulsões {radar=confirmado}
 
-O **iliopsoas** (ilíaco e psoas) insere-se no **trocânter menor**, e o **reto femoral** nasce da **espinha ilíaca anteroinferior**, local de fratura por avulsão (Netter, cap. 7, p. 203 aprox.). O Campbell (cap. 7, p. 358.e1) lembra que dor à palpação do reto femoral e do adutor longo indica estiramentos ou avulsões.
+O **iliopsoas** (ilíaco e psoas) insere-se no **trocânter menor**, e o **reto femoral** nasce da **espinha ilíaca anteroinferior**, local de fratura por avulsão (Netter, cap. 7). O Campbell (cap. 7, p. 358.e1) lembra que dor à palpação do reto femoral e do adutor longo indica estiramentos ou avulsões.
 
 O teste de LUDLOFF, que as provas atribuem à lesão do iliopsoas e à avulsão do trocânter menor, não é descrito em nenhum dos livros conferidos; neles, LUDLOFF aparece como a **via medial** do quadril. O raciocínio anatômico, porém, é direto: o iliopsoas é o flexor que trabalha quando a coxa precisa subir **contra resistência**, e um teste que isole o iliopsoas pede flexão resistida do quadril. Já o **BRAGARD** e a avulsão da espinha anteroinferior pertencem a outro músculo, o reto femoral. O STINCHFIELD, que também é flexão resistida, avalia o psoas e a irritação intra-articular (The Adult Hip, p. 332).
 
@@ -487,7 +487,7 @@ alerta: Os livros conferidos não descrevem o teste de LUDLOFF nem o BRAGARD; os
 # Ressaltos {radar=clinico}
 
 - **Ressalto interno** (psoas): fan test (circundução), que diminui com contração abdominal; flexão, abdução e rotação externa seguidas de extensão levam o psoas sobre a **eminência iliopectínea** (The Adult Hip, p. 337); "thunk" grave, **variante normal comum** (Campbell, cap. 7, p. 358.e1).
-- **Ressalto externo** (trato iliotibial sobre o trocânter): hula hoop em pé ou **teste da bicicleta** em decúbito lateral (The Adult Hip, p. 337); flexão e extensão com o trato tensionado (Campbell, cap. 7). O Netter (cap. 8, p. 261 aprox.) associa o ressalto palpável do trocânter maior ao trato iliotibial e o do trocânter menor ao psoas.
+- **Ressalto externo** (trato iliotibial sobre o trocânter): hula hoop em pé ou **teste da bicicleta** em decúbito lateral (The Adult Hip, p. 337); flexão e extensão com o trato tensionado (Campbell, cap. 7). O Netter (cap. 8) associa o ressalto palpável do trocânter maior ao trato iliotibial e o do trocânter menor ao psoas.
 - Estalidos reprodutíveis durante a amplitude sugerem **lesão labral** (Campbell, cap. 7, p. 358.e1).
 
 # Quadril ou coluna: a lombociatalgia que não fecha {radar=confirmado}

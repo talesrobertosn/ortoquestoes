@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-perthes
-versao: 2
+versao: 3
 titulo: Doença de Legg-Calvé-Perthes
 especialidade: pediatria
 acesso: gratis
@@ -87,9 +87,9 @@ A hereditariedade pesa pouco (p. 529 e 530). Em gêmeos não selecionados, só u
 
 ## Como o sangue chega à cabeça e onde falta
 
-O raciocínio vascular explica a idade e o sexo. O suprimento principal da epífise vem do **segmento lateral do anel arterial extracapsular**, ramo terminal da **artéria circunflexa femoral medial**, que vira a **artéria cervical ascendente lateral** depois de atravessar a cápsula na fossa trocantérica posterior (p. 531, aprox.). Entre o trocânter e a cápsula ela passa por um **canal estreito, mais apertado antes dos 8 anos**. O anel intracapsular é **incompleto mais vezes nos meninos**. Praticamente **nenhum vaso cruza a fise**, e o ligamento redondo contribui com pouco sangue. Uma cabeça que depende de um único pedículo que passa por um desfiladeiro é uma cabeça vulnerável.
+O raciocínio vascular explica a idade e o sexo. O suprimento principal da epífise vem do **segmento lateral do anel arterial extracapsular**, ramo terminal da **artéria circunflexa femoral medial**, que vira a **artéria cervical ascendente lateral** depois de atravessar a cápsula na fossa trocantérica posterior (p. 531). Entre o trocânter e a cápsula ela passa por um **canal estreito, mais apertado antes dos 8 anos**. O anel intracapsular é **incompleto mais vezes nos meninos**. Praticamente **nenhum vaso cruza a fise**, e o ligamento redondo contribui com pouco sangue. Uma cabeça que depende de um único pedículo que passa por um desfiladeiro é uma cabeça vulnerável.
 
-Os estudos angiográficos mostraram **obstrução das artérias capsulares superiores** nos primeiros meses e revascularização depois; ATSUMI encontrou interrupção das **artérias epifisárias laterais** na entrada da cápsula em 19 de 28 quadris, e o fluxo podia ser ocluído por **abdução com rotação interna** (p. 532, aprox.). Do lado venoso há **pressão aumentada no colo e congestão metafisária**. Hemoglobinopatias (falciforme, talassemia), leucemia mieloide crônica, linfoma, púrpura trombocitopênica e hemofilia causam necrose da cabeça e entram no diagnóstico diferencial.
+Os estudos angiográficos mostraram **obstrução das artérias capsulares superiores** nos primeiros meses e revascularização depois; ATSUMI encontrou interrupção das **artérias epifisárias laterais** na entrada da cápsula em 19 de 28 quadris, e o fluxo podia ser ocluído por **abdução com rotação interna** (p. 532). Do lado venoso há **pressão aumentada no colo e congestão metafisária**. Hemoglobinopatias (falciforme, talassemia), leucemia mieloide crônica, linfoma, púrpura trombocitopênica e hemofilia causam necrose da cabeça e entram no diagnóstico diferencial.
 
 ## Um infarto ou dois
 

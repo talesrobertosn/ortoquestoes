@@ -1,6 +1,6 @@
 ---
 id: campbell15-exame-ombro
-versao: 2
+versao: 3
 titulo: Exame físico do ombro
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Netter Atlas de Anatomia Ortopédica, 2ª edição
 capitulo: Capítulo 52 · Recurrent Dislocations (testes de instabilidade), com os capítulos 51 · Shoulder and Elbow Injuries, 53 · Traumatic Disorders, 57 · Arthroscopy of the Upper Extremity e 14 · Open Reconstructive Procedures of the Shoulder
 autores: Frederick M. Azar, Thomas W. (Quin) Throckmorton, and Joseph D. Lamplot (cap. 51); Joseph D. Lamplot and Tyler J. Brolin (cap. 52)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (anatomia, apresentação e exame, p. 2144 a 2156; tipos e estágios do impacto, p. 2157.e1 a 2158; tratamento, p. 2160 e 2164), cap. 52 (BEIGHTON, p. 2195 aprox.; história, exame e radiografias da instabilidade do ombro, p. 2206 a 2213, com a Tabela 52.5), cap. 53 (instabilidade do bíceps, p. 2295), cap. 57 (lábio e SNYDER, p. 2429 a 2430; indicações de estabilização, p. 2441 aprox.; subescapular, p. 2477; acromioclavicular, p. 2480 aprox.) e cap. 14 (transferências e escápula alada, p. 632 a 638); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3, Ombro (ligamentos glenoumerais, p. 86; exame físico, p. 90 a 93; páginas conferidas no índice remissivo do atlas).
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (anatomia, apresentação e exame, p. 2144 a 2156; tipos e estágios do impacto, p. 2157.e1 a 2158; tratamento, p. 2160 e 2164), cap. 52 (BEIGHTON; história, exame e radiografias da instabilidade do ombro, p. 2206 a 2213, com a Tabela 52.5), cap. 53 (instabilidade do bíceps, p. 2295), cap. 57 (lábio e SNYDER, p. 2429 a 2430; indicações de estabilização; subescapular, p. 2477; acromioclavicular) e cap. 14 (transferências e escápula alada, p. 632 a 638); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3, Ombro (ligamentos glenoumerais, p. 86; exame físico, p. 90 a 93; páginas conferidas no índice remissivo do atlas).
 subtemas: Exame físico do ombro
 resumo: NEER (elevação passiva forçada, dor com anestésico que some) e HAWKINS (flexão 90 e rotação interna) provocam impacto; JOBE (90 graus, 30 de flexão, polegar para baixo) testa o supraespinal; PATTE (corneteiro) o redondo menor; drop sign e atraso em rotação externa o infraespinal; lift-off, belly-press, bear hug e atraso em rotação interna o subescapular (específicos, pouco sensíveis); O'BRIEN dói na primeira fase e alivia na segunda (dentro = lábio/SLAP, em cima = acromioclavicular); YERGASON (supinação resistida) e SPEED avaliam a cabeça longa do bíceps; apreensão e relocação de JOBE para instabilidade anterior; sulco a 0 grau = intervalo rotador, a 45 graus = glenoumeral inferior; GAGEY acima de 20 graus de diferença e BEIGHTON para hiperfrouxidão; adução cruzada para a acromioclavicular; ADSON para o desfiladeiro torácico.
 ---
@@ -415,7 +415,7 @@ O corte não é igual em todo o livro. No capítulo 52, o texto diz que **5 ou m
 
 O R4 SES-DF 2022 montou um caso clássico: jovem de 22 anos, luxação traumática no skate com necessidade de redução, **apreensão e relocação positivas**, **gaveta e sulco negativos**, e ressonância com HILL-SACHS, BANKART e SLAP II. O exame conta a história: os testes da lesão traumática anterior (apreensão, relocação) são positivos, e os de frouxidão (sulco, gaveta) negativos, ou seja, é um TUBS e não um AMBRII.
 
-A lesão de HILL-SACHS é a **fratura por impacção da face posterolateral da cabeça umeral**, produzida quando a cabeça luxada bate contra a borda da glenoide; ela causa instabilidade quando **engata** na borda em **90 graus de abdução e rotação externa** (cap. 52, p. 2207 aprox.). Defeitos umerais de **35% a 40%** e glenoidais de apenas **13%** já reduzem a estabilidade. A lesão de BANKART é a mais observada nas recidivas, mas não é a "lesão essencial": a frouxidão capsular, congênita ou por deformação plástica, também causa instabilidade.
+A lesão de HILL-SACHS é a **fratura por impacção da face posterolateral da cabeça umeral**, produzida quando a cabeça luxada bate contra a borda da glenoide; ela causa instabilidade quando **engata** na borda em **90 graus de abdução e rotação externa** (cap. 52). Defeitos umerais de **35% a 40%** e glenoidais de apenas **13%** já reduzem a estabilidade. A lesão de BANKART é a mais observada nas recidivas, mas não é a "lesão essencial": a frouxidão capsular, congênita ou por deformação plástica, também causa instabilidade.
 
 O risco de falha do reparo artroscópico é medido pelo **ISIS** (BALG e BOILEAU), cujo resultado afeta os desfechos do BANKART.
 
@@ -431,7 +431,7 @@ O risco de falha do reparo artroscópico é medido pelo **ISIS** (BALG e BOILEAU
 | total máximo | 10 |
 !fim
 
-O atleta de contato soma pontos no ISIS e, no capítulo 57 (p. 2441 aprox.), está entre os de alto risco em quem se indica estabilização já no primeiro episódio; nele, qualquer HILL-SACHS apreciável recebe **remplissage** junto com o BANKART, exceto no ombro dominante do arremessador.
+O atleta de contato soma pontos no ISIS e, no capítulo 57, está entre os de alto risco em quem se indica estabilização já no primeiro episódio; nele, qualquer HILL-SACHS apreciável recebe **remplissage** junto com o BANKART, exceto no ombro dominante do arremessador.
 
 !questoes central=ombro-cotovelo-0544 relacionadas=ombro-cotovelo-0548,ombro-cotovelo-0547,ombro-cotovelo-0546
 conceito: Apreensão e relocação positivas com sulco e gaveta negativos indicam instabilidade traumática sem hiperfrouxidão; frouxidão (sulco, GAGEY, BEIGHTON) é sinal de exame e pode existir sem instabilidade; HILL-SACHS é impacção posterolateral da cabeça; esporte de contato pontua no ISIS e aumenta o risco de falha do reparo artroscópico.
@@ -451,7 +451,7 @@ alerta: O gabarito oficial da `ombro-cotovelo-0330` (glenoumeral inferior a 0 gr
 
 # Acromioclavicular, escápula e desfiladeiro torácico {radar=confirmado}
 
-**A acromioclavicular.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 57, p. 2480 aprox.), define a artrose AC sintomática pela **dor à palpação** e pela dor nas manobras provocativas de **adução cruzada** e **rotação interna nas costas**; a infiltração com lidocaína a 1% sem adrenalina que alivia **80% a 100%** da dor prediz bom resultado cirúrgico. No Netter (cap. 3, Ombro, p. 93), a **adução com os braços cruzados** à frente do corpo que dói na AC indica lesão ou artrose dela. O O'BRIEN com dor em cima do ombro também aponta a AC, e a AC contamina os testes de impacto (HAWKINS positivo em 94% das artroses AC). PAXINOS não aparece nos capítulos lidos.
+**A acromioclavicular.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 57), define a artrose AC sintomática pela **dor à palpação** e pela dor nas manobras provocativas de **adução cruzada** e **rotação interna nas costas**; a infiltração com lidocaína a 1% sem adrenalina que alivia **80% a 100%** da dor prediz bom resultado cirúrgico. No Netter (cap. 3, Ombro, p. 93), a **adução com os braços cruzados** à frente do corpo que dói na AC indica lesão ou artrose dela. O O'BRIEN com dor em cima do ombro também aponta a AC, e a AC contamina os testes de impacto (HAWKINS positivo em 94% das artroses AC). PAXINOS não aparece nos capítulos lidos.
 
 !tabela Acurácia dos testes para impacto, estudo de PARK (Campbell 15, cap. 51, Tabela 51.2)
 | Teste | Sensibilidade | Especificidade | Acurácia |

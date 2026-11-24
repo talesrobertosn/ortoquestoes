@@ -1,6 +1,6 @@
 ---
 id: callaghan-imagem-quadril
-versao: 1
+versao: 2
 titulo: Imagem do quadril
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e c
 edicao: 3ª edição (2017)
 capitulo: Capítulo 23 · Radiographic Evaluation of the Hip
 autores: Michael Cooley, Debora Azevedo, William Palmer
-fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 23 (Radiographic Evaluation of the Hip, p. 341 a 366, com as Tabelas 23.1 e 23.2), cap. 24 (Radionucleotide Imaging and PET Scanning of the Hip, p. 367 a 376, com as Tabelas 24.3 e 24.5) e cap. 25 (Magnetic Resonance Imaging of the Hip, p. 377 a 392); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (p. 359 a 363, 374 a 378 e 384), cap. 3 (p. 165 e 166), cap. 4 (p. 246), cap. 52 (p. 2205 aprox.) e cap. 56 (p. 2409 aprox.); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 50 (radiografias do anel pélvico), cap. 51 (marcos radiográficos do acetábulo e arcos do teto) e cap. 53 (índice de GARDEN); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13 (p. 438 e 439 aprox.) e cap. 15 (SOUTHWICK); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., cap. 10 (radiologia, artrose e qualidade óssea).
+fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 23 (Radiographic Evaluation of the Hip, p. 341 a 366, com as Tabelas 23.1 e 23.2), cap. 24 (Radionucleotide Imaging and PET Scanning of the Hip, p. 367 a 376, com as Tabelas 24.3 e 24.5) e cap. 25 (Magnetic Resonance Imaging of the Hip, p. 377 a 392); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (p. 359 a 363, 374 a 378 e 384), cap. 3 (p. 165 e 166), cap. 4 (p. 246), cap. 52 e cap. 56; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 50 (radiografias do anel pélvico), cap. 51 (marcos radiográficos do acetábulo e arcos do teto) e cap. 53 (índice de GARDEN); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13 (p. 438 e 439) e cap. 15 (SOUTHWICK); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., cap. 10 (radiologia, artrose e qualidade óssea).
 subtemas: Imagem do quadril
 resumo: AP com rotação interna de 15 graus (erro mais comum = rotação externa); Dunn em rotação neutra, 20 de abdução e 45 ou 90 de flexão; falso perfil de LEQUESNE a 65 graus; inlet e outlet com feixe caudal e cranial (outlet = desvio vertical); JUDET: oblíqua obturatriz (anterior) = coluna anterior e rebordo posterior, ilíaca (posterior) = coluna posterior e rebordo anterior; lágrima e linha ilioisquiática superpostas, dissociação = superfície quadrilátera; WIBERG menor que 20 displasia e maior que 40 sobrecobertura; TÖNNIS maior que 10 displasia; alfa maior que 55 = came; cruzamento + parede posterior + espinha isquiática = retroversão verdadeira; protrusão além da linha ilioisquiática (OTTO, mulheres, bilateral); KELLGREN-LAWRENCE 0 a 4 e TÖNNIS 0 a 3 (osteotomia periacetabular só em TÖNNIS 0 ou 1); RM sem contraste para fratura oculta e necrose (dupla linha), osteoporose transitória com edema difuso; cintilografia fotopênica em 7 a 10 dias; RM com metal a 1,5 T, banda larga e inversão-recuperação.
 ---
@@ -35,7 +35,7 @@ O AP da bacia é centrado **entre o umbigo e a pube**; o do quadril, no ligament
 
 ## Quando o AP de bacia é "verdadeiro"
 
-Os sinais de versão e de cobertura dependem de um AP sem rotação nem inclinação. O Campbell (cap. 7, p. 359) pede **asas ilíacas e forames obturatórios simétricos** e **ponta do cóccix 1 a 3 cm acima da sínfise**; no capítulo 56 (p. 2409 aprox.), o cóccix aponta para a sínfise a **1 a 2 cm**. O CALLAGHAN insiste que centralização e angulação craniocaudal evitam sinais falsos (cap. 23, p. 356 e 357).
+Os sinais de versão e de cobertura dependem de um AP sem rotação nem inclinação. O Campbell (cap. 7, p. 359) pede **asas ilíacas e forames obturatórios simétricos** e **ponta do cóccix 1 a 3 cm acima da sínfise**; no capítulo 56, o cóccix aponta para a sínfise a **1 a 2 cm**. O CALLAGHAN insiste que centralização e angulação craniocaudal evitam sinais falsos (cap. 23, p. 356 e 357).
 
 ## Os perfis: rã, cross-table e DUNN
 
@@ -45,7 +45,7 @@ O Campbell (cap. 7, p. 361) dá os mesmos números para o DUNN modificado de 45 
 
 ## O falso perfil de LEQUESNE
 
-O falso perfil é um perfil do acetábulo: pelve **rodada 65 graus** a partir do AP (Campbell, cap. 7, p. 361), com o **pé paralelo ao chassi** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13, p. 439 aprox.). Nele se mede o **ângulo centro-borda anterior de LEQUESNE**, que avalia a cobertura anterior, e se vê o estreitamento **posterior** do espaço articular que as outras incidências não mostram (Campbell, p. 362).
+O falso perfil é um perfil do acetábulo: pelve **rodada 65 graus** a partir do AP (Campbell, cap. 7, p. 361), com o **pé paralelo ao chassi** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 13, p. 439). Nele se mede o **ângulo centro-borda anterior de LEQUESNE**, que avalia a cobertura anterior, e se vê o estreitamento **posterior** do espaço articular que as outras incidências não mostram (Campbell, p. 362).
 
 !tabela Incidências de rotina do quadril (The Adult Hip, cap. 23, p. 341 a 343; Campbell, cap. 7, p. 361; Tachdjian, cap. 13)
 | Incidência | Posição | O que mostra melhor |
@@ -147,9 +147,9 @@ O centro-borda responde a uma pergunta simples: quanto do teto passa por cima da
 
 O Campbell (cap. 7, p. 359 e 360) dá a régua usada no planejamento da preservação: **menos de 20 graus é displasia**, **20 a 24 é limítrofe** (no texto de displasia, p. 374, "20 a 25") e **mais de 40 é sobrecobertura**. A linha horizontal de referência liga os centros das cabeças ou a base das lágrimas; a vertical é perpendicular a ela; e a linha oblíqua vai até a borda lateral do **sourcil**, o osso subcondral denso do teto. O osso que fica lateral ao sourcil não entra na medida, porque não suporta carga. O HEBERT (cap. 10) é mais conservador: valores **inferiores a 25 graus** podem indicar cobertura inadequada.
 
-O corte importa: no Campbell, quadris com LCE **menor que 16 graus** tiveram artrose importante até os 65 anos (p. 375), e cada grau abaixo de **28** aumentou em **14%** o risco de artrose numa coorte de mulheres (p. 375.e1). O mesmo livro (cap. 52, p. 2205 aprox.) lista o **ângulo de SHARP maior que 42 graus** entre os sinais de displasia.
+O corte importa: no Campbell, quadris com LCE **menor que 16 graus** tiveram artrose importante até os 65 anos (p. 375), e cada grau abaixo de **28** aumentou em **14%** o risco de artrose numa coorte de mulheres (p. 375.e1). O mesmo livro (cap. 52) lista o **ângulo de SHARP maior que 42 graus** entre os sinais de displasia.
 
-Na criança, o Tachdjian (cap. 13, p. 439 aprox.) considera normal o centro-borda **maior que 19 graus** dos 6 aos 13 anos e **maior que 25** a partir dos 14.
+Na criança, o Tachdjian (cap. 13, p. 438 e 439) considera normal o centro-borda **maior que 19 graus** dos 6 aos 13 anos e **maior que 25** a partir dos 14.
 
 ## O ângulo de TÖNNIS: a inclinação do sourcil
 
@@ -159,11 +159,11 @@ Não confunda o **ângulo** de TÖNNIS com o **grau** de TÖNNIS de artrose (0 a
 
 ## Índice acetabular, SHARP e a criança
 
-Na criança, a obliquidade do teto se mede pelo **índice acetabular**, entre a linha de HILGENREINER e a superfície acetabular: **27,5 graus** no recém-nascido, **20 aos 2 anos**, com **30 graus** como limite superior do normal; o índice do sourcil é normalmente **menor que 15** (Tachdjian, cap. 13, p. 438 aprox.). O HEBERT dá, para o adulto normal, índice de extrusão da cabeça de **cerca de 25%**.
+Na criança, a obliquidade do teto se mede pelo **índice acetabular**, entre a linha de HILGENREINER e a superfície acetabular: **27,5 graus** no recém-nascido, **20 aos 2 anos**, com **30 graus** como limite superior do normal; o índice do sourcil é normalmente **menor que 15** (Tachdjian, cap. 13, p. 438). O HEBERT dá, para o adulto normal, índice de extrusão da cabeça de **cerca de 25%**.
 
 ## A linha de SHENTON
 
-O arco de SHENTON é a continuidade entre o **colo femoral medial** e a **borda inferior do ramo púbico superior** (The Adult Hip, cap. 23, p. 359). O Tachdjian (cap. 13, p. 438 aprox.) o traça do trocânter menor, subindo pelo colo, até a margem interna do púbis. No quadril normal o arco é contínuo; ele **se quebra** quando a cabeça sobe, porque o colo fica acima da linha que vem do púbis. Por isso o CALLAGHAN diz que ele é útil nos casos **avançados** de displasia, e o Campbell (p. 375) liga a ruptura do SHENTON à **subluxação superior** da cabeça e do centro do quadril. Um centro-borda baixo com SHENTON íntegro é displasia sem subluxação; SHENTON rompido já é subluxação.
+O arco de SHENTON é a continuidade entre o **colo femoral medial** e a **borda inferior do ramo púbico superior** (The Adult Hip, cap. 23, p. 359). O Tachdjian (cap. 13, p. 438) o traça do trocânter menor, subindo pelo colo, até a margem interna do púbis. No quadril normal o arco é contínuo; ele **se quebra** quando a cabeça sobe, porque o colo fica acima da linha que vem do púbis. Por isso o CALLAGHAN diz que ele é útil nos casos **avançados** de displasia, e o Campbell (p. 375) liga a ruptura do SHENTON à **subluxação superior** da cabeça e do centro do quadril. Um centro-borda baixo com SHENTON íntegro é displasia sem subluxação; SHENTON rompido já é subluxação.
 
 ## O quadro do adulto displásico
 
@@ -191,7 +191,7 @@ alerta: Na SES-DF 2024 (`quadril-0523`), o enunciado chama de "índice acetabula
 
 # Profundidade: coxa profunda, protrusão e pelve de OTTO {radar=confirmado}
 
-A profundidade do acetábulo se lê em relação à **linha ilioisquiática** (de KÖHLER). O HEBERT (cap. 10) separa os dois graus: **coxa profunda** quando o **fundo da fossa acetabular** toca a linha ilioisquiática ou fica medial a ela; **protrusão acetabular** quando a **face medial da cabeça femoral** passa medialmente a essa linha. O Campbell diz o mesmo com palavras próprias, mas varia o marco da coxa profunda: no capítulo 7 é a fossa que se estende medial à ilioisquiática (p. 362 e 363); no capítulo 56, a lágrima acetabular medial à ilioisquiática (p. 2409 aprox.).
+A profundidade do acetábulo se lê em relação à **linha ilioisquiática** (de KÖHLER). O HEBERT (cap. 10) separa os dois graus: **coxa profunda** quando o **fundo da fossa acetabular** toca a linha ilioisquiática ou fica medial a ela; **protrusão acetabular** quando a **face medial da cabeça femoral** passa medialmente a essa linha. O Campbell diz o mesmo com palavras próprias, mas varia o marco da coxa profunda: no capítulo 7 é a fossa que se estende medial à ilioisquiática (p. 362 e 363); no capítulo 56, a lágrima acetabular medial à ilioisquiática.
 
 A coxa profunda indica sobrecobertura e pode ser **variante normal, sobretudo em mulheres**; a protrusão indica profundidade excessiva com possível impacto em pinça, frequente na artropatia inflamatória e na síndrome de MARFAN, mas também idiopática (Campbell, cap. 7, p. 362).
 
@@ -217,7 +217,7 @@ O cruzamento sozinho tem duas explicações (Campbell, cap. 7, p. 360):
 - **sobrecobertura anterior isolada**: o rebordo anterior é proeminente, mas a parede posterior está no lugar;
 - **retroversão de todo o acetábulo**: o rebordo anterior é proeminente e a parede posterior é deficiente.
 
-Para separar, olha-se a parede posterior. O **sinal da parede posterior** está presente quando o **centro da cabeça fica lateral ao rebordo posterior**, isto é, a parede posterior passa medial ao centro (Campbell, p. 360). O HEBERT descreve o normal: a parede posterior passa mais ou menos pelo centro da cabeça. Somado ao cruzamento, o sinal da parede posterior indica retroversão. O terceiro sinal é a **espinha isquiática proeminente** no lado examinado, num AP bem rodado e posicionado: como o hemipelve inteiro está girado, a espinha se projeta para dentro da pelve. **Cruzamento + parede posterior + espinha isquiática = retroversão de todo o acetábulo**, com deficiência posterior, que o Campbell trata com osteotomia periacetabular (p. 367 aprox.). A distinção é crucial porque o tratamento da sobrecobertura anterior isolada é outro (p. 360).
+Para separar, olha-se a parede posterior. O **sinal da parede posterior** está presente quando o **centro da cabeça fica lateral ao rebordo posterior**, isto é, a parede posterior passa medial ao centro (Campbell, p. 360). O HEBERT descreve o normal: a parede posterior passa mais ou menos pelo centro da cabeça. Somado ao cruzamento, o sinal da parede posterior indica retroversão. O terceiro sinal é a **espinha isquiática proeminente** no lado examinado, num AP bem rodado e posicionado: como o hemipelve inteiro está girado, a espinha se projeta para dentro da pelve. **Cruzamento + parede posterior + espinha isquiática = retroversão de todo o acetábulo**, com deficiência posterior, que o Campbell trata com osteotomia periacetabular. A distinção é crucial porque o tratamento da sobrecobertura anterior isolada é outro (p. 360).
 
 ## O os acetabuli
 

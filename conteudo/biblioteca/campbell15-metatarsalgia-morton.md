@@ -1,6 +1,6 @@
 ---
 id: campbell15-metatarsalgia-morton
-versao: 3
+versao: 4
 titulo: Metatarsalgia e neuroma de MORTON
 especialidade: pe-tornozelo
 acesso: gratis
@@ -222,7 +222,7 @@ Com **sinovite e pouca deformidade**, uma única infiltração intra-articular d
 
 O algoritmo cirúrgico segue a gravidade. **Sinovite crônica sem instabilidade**: alongamento do extensor longo, capsulotomia dorsal e sinovectomia, ressecando um neuroma do segundo espaço se houver dor neurítica. **Subluxação acima de 50%**: acrescentar estabilização. O **reparo da placa por via dorsal** é o preferido dos autores (80% bons a excelentes), com o ponto em **colchoeiro horizontal**, mais resistente que o luggage-tag.
 
-A **WEIL** corrige o que muitas vezes é o problema de base (o comprimento) e expõe a placa, mas **não se deve encurtar demais**, porque isso tira a tensão do reparo; tirar uma fatia e restaurar quase todo o comprimento basta (p. 3882). Na técnica de COUGHLIN, a cabeça recua cerca de 10 mm para expor a placa e é reduzida encurtando só **1 a 2 mm**, com o dedo em **15° de flexão plantar** (p. 3883). Associar avanço da placa à WEIL, mesmo sem ruptura evidente, deu escores melhores. A **transferência flexor-extensor** serve à luxação grave com pouca placa; para o **dedo cruzado**, o extensor curto passado sob o ligamento intermetatarsal ou o flexor longo. As **osteotomias distais percutâneas** servem aos graus 0 a I redutíveis, com menos complicações (2,9% de metatarsalgia), mas **não ao grau III rígido** (p. 3884 a 3885 aprox.). E o aviso do livro: em cirurgia dos dedos menores, **o aconselhamento sobre expectativas é obrigatório**.
+A **WEIL** corrige o que muitas vezes é o problema de base (o comprimento) e expõe a placa, mas **não se deve encurtar demais**, porque isso tira a tensão do reparo; tirar uma fatia e restaurar quase todo o comprimento basta (p. 3882). Na técnica de COUGHLIN, a cabeça recua cerca de 10 mm para expor a placa e é reduzida encurtando só **1 a 2 mm**, com o dedo em **15° de flexão plantar** (p. 3883). Associar avanço da placa à WEIL, mesmo sem ruptura evidente, deu escores melhores. A **transferência flexor-extensor** serve à luxação grave com pouca placa; para o **dedo cruzado**, o extensor curto passado sob o ligamento intermetatarsal ou o flexor longo. As **osteotomias distais percutâneas** servem aos graus 0 a I redutíveis, com menos complicações (2,9% de metatarsalgia), mas **não ao grau III rígido**. E o aviso do livro: em cirurgia dos dedos menores, **o aconselhamento sobre expectativas é obrigatório**.
 
 No **desvio axial** (p. 3885), o medial é o do dedo cruzado e o valgo do segundo dedo acompanha o hálux valgo; **deixar o dedo menor sem correção pode fazer o hálux valgo recidivar**. O extensor curto sob o ligamento metatarsal transverso corrige o varo, mas **exige ligamento intermetatarsal competente**, e o encurtamento do metatarso impede essa transferência; KLINGE modificou a WEIL para deslocar a cabeça no plano coronal.
 
@@ -428,7 +428,7 @@ O ponto técnico central é o **nível de secção**. Há **ramos plantares do d
 
 O ligamento intermetatarsal divide os autores. Na **via dorsal de AMIS**, a **liberação completa do ligamento é essencial**, com cuidado com o lumbrical abaixo dele; na **via plantar**, o ligamento fica dorsal ao neuroma e **incisá-lo é desnecessário**; GAUTHIER fez **neurólise epineural** com liberação do ligamento, e 28% não melhoraram o suficiente. O Campbell conclui que a **divisão do ligamento é controversa** (não se sabe se deixa um metatarso "caído" ou abre o antepé) e **não usa a endoscopia** por falta de evidência.
 
-!tabela Neurectomia interdigital: via dorsal e via plantar (Campbell's Operative Orthopaedics, 15ª ed., cap. 92, p. 4035 a 4037 aprox.)
+!tabela Neurectomia interdigital: via dorsal e via plantar (Campbell's Operative Orthopaedics, 15ª ed., cap. 92)
 | Ponto | Via dorsal (AMIS) | Via plantar |
 |---|---|---|
 | Incisão | Dorsal, 3 a 4 cm proximal ao espaço, medial aos extensores | Plantar longitudinal, 3 a 4 cm a partir do espaço |

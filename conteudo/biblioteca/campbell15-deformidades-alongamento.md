@@ -1,6 +1,6 @@
 ---
 id: campbell15-deformidades-alongamento
-versao: 2
+versao: 3
 titulo: Deformidades ósseas e alongamento
 especialidade: conceitos-basicos
 acesso: gratis
@@ -234,7 +234,7 @@ Na imagem (p. 1102 e 1103), a **ortorradiografia** em pé mostra o alinhamento c
 
 Toda previsão parte dos dados de ANDERSON, GREEN e MESSNER. O Tachdjian (p. 815) resume: **71% do crescimento do fêmur ocorre no distal e 57% do crescimento da tíbia no proximal**; entre 6 e 9 anos o fêmur cresce cerca de **2,0 cm/ano** e a tíbia **1,6 cm/ano**; o estirão vem depois dos 9 anos (pico entre 10 e 12 nas meninas e 12 e 14 nos meninos) e o crescimento dura cerca de 2 anos depois dele. A variação é enorme: uma menina de idade óssea 10 anos e 3 meses tem mediana de 4,1 cm restantes no fêmur distal, mas os extremos vão de 2,2 a 7,2 cm (p. 816). Usar a idade óssea em vez da cronológica **não muda a média, mas estreita a variação**.
 
-O Lovell and Winter (p. 1342, aprox.) cita os mesmos números de ANDERSON como 71% femoral distal e **51%** tibial proximal, uma divergência de transcrição em relação aos 57% do Tachdjian e aos 0,57 da fórmula do Campbell; o valor que entra nas contas do multiplicador é **0,57**.
+O Lovell and Winter (p. 1342) cita os mesmos números de ANDERSON como 71% femoral distal e **51%** tibial proximal, uma divergência de transcrição em relação aos 57% do Tachdjian e aos 0,57 da fórmula do Campbell; o valor que entra nas contas do multiplicador é **0,57**.
 
 ## Os métodos
 
