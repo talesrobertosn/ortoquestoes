@@ -125,7 +125,7 @@ try {
     semRefs++
     if (semRefs === 1) assert.equal(m.reordenarComentario({ ...com, correta: '**Correta: C (x).** ' + com.correta }, 'DCBA', undefined).letrasDaProva, true, 'editado para citar "Correta: C": avisa')
   }
-  assert.ok(semRefs > 300, `comentários sem letra conferidos: ${semRefs}`) // cai à medida que as miniaulas passam a citar a letra conferida
+  assert.ok(semRefs > 200, `comentários sem letra conferidos: ${semRefs}`) // cai à medida que as miniaulas passam a citar a letra conferida
 
   // ---- Toda questão que embaralha cita letras só onde o letras.json conferiu (nenhuma "C é a correta" solta)
   const solta = /\*\*(?:Correta|Provável correta)\s*:\s*\**[A-E](?![\w-])/
