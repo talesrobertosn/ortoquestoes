@@ -241,8 +241,8 @@ export function opcoesComAdiantamento(plano: PlanoSalvo, calculo: Pick<CalculoPl
 }
 
 /** Grava o registro de hoje se mudou, sobre o plano atual do servidor. Uma falha sobe para quem chamou. */
-export async function guardarAdiantamento(calculo: Parameters<typeof opcoesComAdiantamento>[1], pedido?: number): Promise<PlanoSalvo | null> {
-  return salvarOpcoes((atual) => opcoesComAdiantamento(atual, calculo, pedido))
+export async function guardarAdiantamento(calculo: Parameters<typeof opcoesComAdiantamento>[1], pedido?: number, agora = Date.now()): Promise<PlanoSalvo | null> {
+  return salvarOpcoes((atual) => opcoesComAdiantamento(atual, calculo, pedido, agora))
 }
 
 /**

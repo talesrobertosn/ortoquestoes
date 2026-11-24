@@ -135,6 +135,13 @@ try {
   assert.equal(diaDe(c6, D21).adiantado, 10, 'o extra de hoje sai do dia 21')
   coerente(c6, 'extra com dia puxado')
 
+  // O dia 20 já passou e sua reserva ainda precisa ser considerada ao distribuir o extra do dia 19.
+  const planoComExtra = plano({ ...op20, adiantados: [{ em: HOJE, meta: c6.metaDiaria }] })
+  const noDia21 = m.calcularPlano(indice, r6, planoComExtra, sp(D21, 9))
+  // A meta normal pode variar uma questão no recálculo que ocorre na virada.
+  assert.ok(noDia21.adiantadoHoje >= 9 && noDia21.adiantadoHoje <= 10,
+    `o dia 21 preserva o crédito, com até uma questão de arredondamento (recebeu ${noDia21.adiantadoHoje})`)
+
   // As palavras dos botões: "Puxar as questões de amanhã (terça, 20/10)", "Continuar terça, 20/10 · faltam 69".
   assert.equal(m.diaCurto(prox.data), 'terça, 20/10')
   assert.deepEqual(m.textoPuxar(prox, sp(HOJE, 15)), { rotulo: 'Puxar as questões de amanhã (terça, 20/10)', detalhe: `${prox.total} questões` })
@@ -144,7 +151,7 @@ try {
   assert.equal(m.textoAdiantadoDia(diaDe(base, D20)), null)
 
   // ── 7. Registro pequeno, que se limpa ──
-  const velho = m.opcoesComPuxado(plano({ puxados: { '2026-10-01': ['x'], [D20]: ids20 } }), D21, ids21, HOJE)
+  const velho = m.opcoesComPuxado(plano({ puxados: { '2026-09-01': ['x'], [D20]: ids20 } }), D21, ids21, HOJE)
   assert.deepEqual(Object.keys(velho.puxados).sort(), [D20, D21], 'dias que já passaram saem do registro')
   // Folga ou reta final não se puxam; registro de um dia que já passou não pesa no plano.
   assert.equal(m.idsParaPuxar(base, '2026-10-25').length, 0, 'domingo de folga não tem o que puxar')
