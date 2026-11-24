@@ -76,7 +76,7 @@ export function PainelAdmin({ consulta }: { consulta: URLSearchParams }) {
   if (!sessao) return <div className="a3"><div style={{ maxWidth: 420, margin: '15vh auto', padding: 24 }}>
     <Estado icone="trava" titulo="Painel do administrador" texto="Entre na sua conta para continuar. Só contas na lista de administradores conseguem abrir." acao={<a className="a3-botao" href={href('/conta')}>Entrar</a>} />
   </div></div>
-  return <ProvedorPainel parte={estado.parte}><Casca estado={estado} /></ProvedorPainel>
+  return <ProvedorPainel key={sessao.user.id} parte={estado.parte}><Casca estado={estado} /></ProvedorPainel>
 }
 
 function Casca({ estado }: { estado: EstadoUrl }) {

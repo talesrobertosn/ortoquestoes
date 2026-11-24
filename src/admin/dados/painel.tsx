@@ -37,7 +37,7 @@ export interface LinhaAssinatura extends AssinaturaBase {
 
 const MIGRACAO = '202609290100_painel_admin.sql'
 /** Partes que mostram a lista de pessoas (ou abrem fichas a partir dela). */
-const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'financeiro', 'crescimento', 'metas', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
+const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'financeiro', 'crescimento', 'metas', 'assinaturas', 'cobrancas', 'pagamentos']
 const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'metas', 'cobrancas', 'crescimento', 'assinaturas']
 /** Intervalo da lista de pessoas nas telas ao vivo. */
 const AO_VIVO: Parte[] = ['comando', 'agora', 'usuarios']
@@ -95,8 +95,11 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const eventosQ = usarRpc<EventoPagamento[]>(conta, 'listar_eventos_pagamento_admin')
   const decisoesPagamentoQ = usarRpc<Array<{ id_evento: number; decisao: string }>>(conta, 'listar_decisoes_eventos_admin', {}, { ativo: !!eventosQ.dados?.some(e => e.status_processamento === 'erro') })
   const decisoesPagamento = useMemo(() => { const m = new Map<number,string>(); for (const d of decisoesPagamentoQ.dados ?? []) if (!m.has(d.id_evento)) m.set(d.id_evento,d.decisao); return m }, [decisoesPagamentoQ.dados])
-  const resumoQ = usarRpc<ResumoAdmin[]>(conta, 'resumo_admin', {}, { atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const contadoresQ = usarContadoresAdmin(conta)
+  const precisaResumo = parte === 'comando' || parte === 'agora' || parte === 'pendencias' || !!contadoresQ.erro || !!contadoresQ.dados?.derivado
+  const resumoQ = usarRpc<ResumoAdmin[]>(conta, 'resumo_admin', {}, {
+    ativo: precisaResumo, atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined,
+  })
   useEffect(() => {
     const aoLer = (e: Event) => {
       const d = (e as CustomEvent<{ tipo: string; persistido: boolean }>).detail

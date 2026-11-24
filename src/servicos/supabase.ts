@@ -108,13 +108,13 @@ function repararAcentos(texto?: string): string | undefined {
  * do painel levam mais que isso, e desistir antes fazia a tela recarregar a lista com o
  * servidor ainda mandando (o nome continuava lá, com o botão de enviar de novo).
  */
-export async function chamarFuncao<T>(nome: string, corpo: Record<string, unknown>, { prazoMs = 20_000 }: { prazoMs?: number } = {}): Promise<T> {
+export async function chamarFuncao<T>(nome: string, corpo: Record<string, unknown>, { prazoMs = 20_000, sinal }: Pick<OpcoesRpc, 'prazoMs' | 'sinal'> = {}): Promise<T> {
   if (!clienteConta) throw new Error('Servidor não configurado.')
   const token = await garantirToken()
   if (!token) throw new Error('Entre na sua conta para continuar.')
   const resposta = await buscarComPrazo(`${url}/functions/v1/${nome}`, {
     method: 'POST', headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify(corpo),
-  }, prazoMs)
+  }, prazoMs, sinal)
   const dados = await resposta.json().catch(() => ({})) as T & { erro?: string }
   if (!resposta.ok) throw new Error(repararAcentos(dados.erro) ?? 'Não foi possível concluir a operação.')
   return dados

@@ -90,7 +90,7 @@ const POR_VEZ = 12
  * 2. Pessoas: UMA lista com abas (online agora, assinantes hoje, viram os planos hoje, bateram o limite, estudaram hoje,
  *    cadastros hoje, assinantes que não entraram, viram os planos em 30 dias). Clicar num número abre a aba certa.
  * 3. Pede ação e a linha do dia; 4. as tabelas do dia.
- * A lista de pessoas se atualiza a cada 3 minutos e o resto a cada 5; o botão Atualizar busca na hora.
+ * A lista de pessoas se atualiza a cada 5 minutos; o botão Atualizar busca na hora.
  */
 export default function Inicio() {
   const p = usarPainel()
@@ -160,13 +160,18 @@ export default function Inicio() {
   const semSinais = !p.sinaisQ.dados
   const termo = normalizar(busca.trim())
   const comFiltro = vista === 'online' || vista === 'entraram'
-  const daVista = g ? g.listas[vista].filter(u => (!comFiltro || filtro === 'todos' || (filtro === 'nao' ? g.tipoDe(u) !== 'assinante' : g.tipoDe(u) === filtro)) && combina([u.nome, u.email, perfilNaLista(u).etapa, ...perfilNaLista(u).objetivos], termo)) : []
+  const daVista = useMemo(() => g ? g.listas[vista].filter(u => {
+    if (comFiltro && filtro !== 'todos' && (filtro === 'nao' ? g.tipoDe(u) === 'assinante' : g.tipoDe(u) !== filtro)) return false
+    if (!termo) return true
+    const perfil = perfilNaLista(u)
+    return combina([u.nome, u.email, perfil.etapa, ...perfil.objetivos], termo)
+  }) : [], [g, vista, filtro, comFiltro, termo])
   const vistos = daVista.slice(0, limiteLista)
 
   /** Abre uma lista a partir de um número do topo e rola até ela. */
   const abrir = (v: Vista, f: Filtro = 'todos') => {
     definirVista(v); definirFiltro(f); definirBusca('')
-    requestAnimationFrame(() => document.getElementById('a3-pessoas')?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+    document.getElementById('a3-pessoas')?.scrollIntoView({ block: 'start' })
   }
   const ativo = (v: Vista, f: Filtro = 'todos') => vista === v && ((v !== 'online' && v !== 'entraram') || filtro === f)
   const n = (v: Vista) => g ? g.listas[v].length : null
@@ -293,7 +298,7 @@ export default function Inicio() {
     </section>
 
     <div id="a3-listas" className="a3-ancora"><Listas quadro={quadro} /></div>
-    <p className="a3-mudo a3-pequeno">Online é quem deu sinal nos últimos 5 minutos. A lista de pessoas se atualiza sozinha a cada 3 minutos e o resto a cada 5; o botão Atualizar, lá em cima, busca na hora.</p>
+    <p className="a3-mudo a3-pequeno">Online é quem deu sinal nos últimos 5 minutos. A lista de pessoas se atualiza sozinha a cada 5 minutos; o botão Atualizar, lá em cima, busca na hora.</p>
   </div>
 }
 
