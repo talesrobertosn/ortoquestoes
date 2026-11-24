@@ -38,6 +38,7 @@ export default function Explorador() {
   const totais = useMemo(() => { if (!usuarios) return null; const s = somarAcertos(usuarios); return { respondidas: usuarios.reduce((a, u) => a + u.respondidas, 0), real: acertoReal(s), revisao: acertoAposRevisao(s) } }, [usuarios])
   const visiveis = useMemo(() => (usuarios ?? []).filter(u => {
     if (!passaFiltro(u, filtro, p.sinais)) return false
+    if (!termo) return true
     const perfil = perfilNaLista(u)
     return combina([u.nome, u.email, perfil.etapa, ...perfil.objetivos, u.servico, servicoConhecido(u.servico, u.uf), u.cidade, p.sinais.get(u.id_usuario)?.locais_trabalho], termo)
   }), [usuarios, filtro, p.sinais, termo])

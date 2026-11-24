@@ -1,12 +1,15 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { chamarFuncao } from '../../servicos/supabase'
+import { usarConsulta } from '../../componentes/admin/usarRpc'
 import { TIPOS } from '../../componentes/admin/modelosEmail'
 import {
   CENARIOS_HUB,
+  diaSP,
   selecionarHub,
   type CenarioHub,
   type MensagemHub,
 } from '../../../supabase/functions/_shared/hub-regras'
+import { usarPainel } from '../dados/painel'
 import { usarNav } from '../nav'
 import { Icone } from '../ui/Icone'
 import { combina, dataHora, diaDaSerie, haQuanto, iniciais, normalizar } from '../ui/formato'
@@ -31,19 +34,18 @@ interface EstadoHub {
   dia: string
   rodada: Rodada | null
   fila: Item[]
-  rodadas: Rodada[]
   automaticos: Array<{ id: number; assunto: string; status: string; enviado_em: string }>
 }
 interface Preparo {
   dia: string
-  prontas: MensagemHub[]
-  adiadas: MensagemHub[]
+  prontas?: MensagemHub[]
+  adiadas?: MensagemHub[]
   opcoes?: MensagemHub[]
   avisos: string[]
   consultadas: number
 }
-const pedir = <T,>(acao: string, extra: Record<string, unknown> = {}) =>
-  chamarFuncao<T>('hub-emails', { acao, versao: 2, ...extra }, { prazoMs: 120_000 })
+const pedir = <T,>(acao: string, extra: Record<string, unknown> = {}, sinal?: AbortSignal) =>
+  chamarFuncao<T>('hub-emails', { acao, versao: 2, ...extra }, { prazoMs: 120_000, sinal })
 const NOMES: Record<string, string> = {
   pendente: 'Na fila',
   processando: 'Processando',
@@ -58,9 +60,13 @@ const GRUPOS = [...new Set(CENARIOS_HUB.map((c) => c.grupo))]
 
 export default function HubEmails() {
   const nav = usarNav()
+  const { conta } = usarPainel()
+  const dia = diaSP()
+  const preparoQ = usarConsulta<Preparo>(conta ? `${conta}:hub:preparo:${dia}` : null,
+    sinal => pedir<Preparo>('preparar', { compacto: true }, sinal))
+  const { dados: preparo, recarregar: relerPreparo } = preparoQ
   const [estado, setEstado] = useState<EstadoHub | null>(null)
-  const [preparo, setPreparo] = useState<Preparo | null>(null)
-  const [erro, setErro] = useState(''),
+  const [erroAcao, setErro] = useState(''),
     [ocupado, setOcupado] = useState('')
   const [busca, setBusca] = useState(''),
     [filtro, setFiltro] = useState<CenarioHub | 'todos'>('todos')
@@ -71,62 +77,61 @@ export default function HubEmails() {
   const [mostrarSemLiberados, setMostrarSemLiberados] = useState(false)
   const dialog = useRef<HTMLDialogElement>(null),
     montado = useRef(true),
-    carregando = useRef(false)
+    leituraEstado = useRef<{ promessa: Promise<void>; sinal?: AbortSignal } | null>(null)
   const listaRef = useRef<HTMLElement>(null)
-  const carregar = useCallback(async () => {
-    if (carregando.current) return
-    carregando.current = true
-    setOcupado('preparar')
-    try {
-      const e = await pedir<EstadoHub>('estado')
-      const p = await pedir<Preparo>('preparar')
-      if (!montado.current) return
-      setEstado(e)
-      setPreparo(p)
-      setErro('')
-      try {
-        setPuladas(
-          new Set<string>(
-            (JSON.parse(localStorage.getItem(`oq:hub:puladas:${p.dia}`) ?? '[]') as string[]).map(
-              (chave) => chave.split(':')[0],
-            ),
-          ),
-        )
-      } catch {
-        /* sem armazenamento */
-      }
-    } catch (e) {
-      if (montado.current) setErro(erroDe(e))
-    } finally {
-      carregando.current = false
-      if (montado.current) setOcupado('')
-    }
+  const carregarEstado = useCallback((sinal?: AbortSignal) => {
+    const atual = leituraEstado.current
+    if (atual && !atual.sinal?.aborted) return atual.promessa
+    const promessa = pedir<EstadoHub>('estado', { compacto: true }, sinal)
+      .then(e => {
+        if (montado.current && !sinal?.aborted) setEstado(e)
+      })
+      .catch(e => {
+        if (montado.current && !sinal?.aborted) setErro(erroDe(e))
+      })
+      .finally(() => {
+        if (leituraEstado.current?.promessa === promessa) leituraEstado.current = null
+      })
+    leituraEstado.current = { promessa, sinal }
+    return promessa
   }, [])
+  const carregar = useCallback(async () => {
+    setErro('')
+    await Promise.all([carregarEstado(), relerPreparo()])
+  }, [carregarEstado, relerPreparo])
   useEffect(() => {
+    const controle = new AbortController()
     montado.current = true
-    void carregar()
+    void carregarEstado(controle.signal)
     return () => {
       montado.current = false
+      controle.abort()
     }
-  }, [carregar])
+  }, [carregarEstado, dia])
   useEffect(() => {
     const atualizar = () => void carregar()
     window.addEventListener('oq:hub:atualizar', atualizar)
     return () => window.removeEventListener('oq:hub:atualizar', atualizar)
   }, [carregar])
   useEffect(() => {
-    if (!estado?.rodada || estado.rodada.status === 'concluida') return
+    if (!estado?.rodada || estado.rodada.status === 'concluida' || ocupado) return
+    const controle = new AbortController()
     const id = setInterval(() => {
-      void pedir<EstadoHub>('estado')
-        .then((e) => {
-          if (montado.current) setEstado(e)
-        })
-        .catch((e) => {
-          if (montado.current) setErro(erroDe(e))
-        })
+      if (document.visibilityState === 'visible') void carregarEstado(controle.signal)
     }, 5000)
-    return () => clearInterval(id)
-  }, [estado?.rodada?.id, estado?.rodada?.status])
+    return () => {
+      clearInterval(id)
+      controle.abort()
+    }
+  }, [estado?.rodada?.id, estado?.rodada?.status, ocupado, carregarEstado])
+  useEffect(() => {
+    try {
+      const chaves = JSON.parse(localStorage.getItem(`oq:hub:puladas:${dia}`) ?? '[]') as string[]
+      setPuladas(new Set(chaves.map(chave => chave.split(':')[0])))
+    } catch {
+      setPuladas(new Set())
+    }
+  }, [dia])
   useEffect(() => {
     if (aberta && !dialog.current?.open) dialog.current?.showModal()
     if (!aberta && dialog.current?.open) dialog.current?.close()
@@ -136,19 +141,22 @@ export default function HubEmails() {
     () => new Set(estado?.fila.map((x) => x.mensagem.id_usuario) ?? []),
     [estado?.fila],
   )
-  const opcoes = (preparo?.opcoes ?? [...(preparo?.prontas ?? []), ...(preparo?.adiadas ?? [])]).filter(
-    (m) => !incluidosHoje.has(m.id_usuario),
-  )
-  const selecoes = useMemo(
-    () => new Map(CENARIOS_HUB.map((c) => [c.id, selecionarHub(opcoes, c.id)])),
-    [preparo, incluidosHoje],
-  )
-  const selecao = filtro === 'todos' ? selecionarHub(opcoes) : selecoes.get(filtro)!
+  const { geral, selecoes } = useMemo(() => {
+    const opcoes = (preparo?.opcoes ?? [...(preparo?.prontas ?? []), ...(preparo?.adiadas ?? [])])
+      .filter(m => !incluidosHoje.has(m.id_usuario))
+    return {
+      geral: selecionarHub(opcoes),
+      selecoes: new Map(CENARIOS_HUB.map(c => [c.id, selecionarHub(opcoes, c.id)])),
+    }
+  }, [preparo, incluidosHoje])
+  const selecao = filtro === 'todos' ? geral : selecoes.get(filtro)!
   const prontas = selecao.prontas
-  const lista = prontas.filter((m) =>
-    combina([m.nome, m.email, m.motivo, (TIPOS[m.tipo]?.rotulo ?? 'Acompanhamento'), m.assunto], normalizar(busca)),
-  )
-  const geral = selecionarHub(opcoes)
+  const lista = useMemo(() => {
+    const termo = normalizar(busca)
+    return termo ? prontas.filter(m =>
+      combina([m.nome, m.email, m.motivo, TIPOS[m.tipo]?.rotulo ?? 'Acompanhamento', m.assunto], termo),
+    ) : prontas
+  }, [prontas, busca])
   const total = geral.prontas.filter((m) => !puladas.has(m.id_usuario)).length
   const totalSelecionado = prontas.filter((m) => !puladas.has(m.id_usuario)).length
   const rodada = estado?.rodada
@@ -157,7 +165,9 @@ export default function HubEmails() {
   const falhas = estado?.fila.filter((x) => ['falhou', 'incerto'].includes(x.status)).length ?? 0
   const texto = (m: MensagemHub) => edicoes[m.chave] ?? { assunto: m.assunto, corpo: m.corpo }
   const enviadaParaFila = (m: MensagemHub) => estado?.fila.some((x) => x.mensagem.chave === m.chave) ?? false
-  const podeEnviar = !!preparo && !ocupado && !erro && estado?.worker_ativo !== false
+  const erro = erroAcao || (preparoQ.erro ? erroDe(preparoQ.erro) : '')
+  const preparando = preparoQ.carregando
+  const podeEnviar = preparo?.dia === dia && estado?.dia === dia && estado.worker_ativo && !preparando && !ocupado && !erro
   const tituloSelecao =
     filtro === 'todos' ? 'Todos os cenários' : CENARIOS_HUB.find((c) => c.id === filtro)!.titulo
   function pular(m: MensagemHub) {
@@ -177,6 +187,14 @@ export default function HubEmails() {
     setBusca('')
     setMostrarAdiadas(false)
     listaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+  async function atualizarSelecao() {
+    setOcupado('atualizar')
+    try {
+      await carregar()
+    } finally {
+      setOcupado('')
+    }
   }
   async function iniciar(cenario?: CenarioHub) {
     if (!podeEnviar || !preparo) return
@@ -221,7 +239,7 @@ export default function HubEmails() {
         chave: aberta.chave,
         semente: Math.floor(Math.random() * 2 ** 31),
       })
-      const m = (p.opcoes ?? p.prontas).find((x) => x.chave === aberta.chave)
+      const m = (p.opcoes ?? p.prontas ?? []).find((x) => x.chave === aberta.chave)
       if (!m || m.bloqueio) throw new Error('A situação mudou. Atualize a seleção.')
       setEdicoes((e) => ({ ...e, [m.chave]: { assunto: m.assunto, corpo: m.corpo } }))
       setAberta(m)
@@ -290,10 +308,10 @@ export default function HubEmails() {
           </button>
           <button
             className="a3-botao a3-botao--contorno"
-            disabled={!!ocupado}
-            onClick={() => void carregar()}
+            disabled={!!ocupado || preparando}
+            onClick={() => void atualizarSelecao()}
           >
-            {ocupado === 'preparar' ? 'Atualizando…' : 'Atualizar pessoas e regras'}
+            {preparando || ocupado === 'atualizar' ? 'Atualizando…' : 'Atualizar pessoas e regras'}
           </button>
           <small>Envia apenas para quem está liberado. Quem foi pulado fica de fora.</small>
         </div>

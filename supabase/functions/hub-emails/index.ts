@@ -78,7 +78,13 @@ async function preparar(variar?: { chave: string; semente: number }, incluirCart
   const hoje = new Date(),
     dia = diaSP(hoje),
     avisos: string[] = []
-  const pessoas = await rpc<Array<{ id_usuario: string; dados: DadosCartaBanco }>>('hub_pessoas')
+  const [pessoas, catalogo] = await Promise.all([
+    rpc<Array<{ id_usuario: string; dados: DadosCartaBanco }>>('hub_pessoas'),
+    fetch(`${site()}biblioteca/indice.json`).then(async (resposta) => {
+      if (!resposta.ok) return null
+      return await resposta.json() as { capitulos?: Array<{ id: string; titulo: string; especialidade: string }> }
+    }).catch(() => null),
+  ])
   if (pessoas.length > 2000)
     throw new Error(
       'Mais de 2.000 pessoas: ampliar a paginação antes de preparar a rodada; nenhuma seleção parcial será enviada.',
@@ -95,12 +101,10 @@ async function preparar(variar?: { chave: string; semente: number }, incluirCart
   }
   // Atualiza somente os metadados de publicação da biblioteca; não cria rodada nem envia.
   try {
-    const r = await fetch(`${site()}biblioteca/indice.json`)
-    if (!r.ok) throw new Error('catalogo_indisponivel')
-    const indice = (await r.json()) as { capitulos?: Array<{ id: string; titulo: string; especialidade: string }> }
-    if (indice.capitulos?.length)
+    if (!catalogo) throw new Error('catalogo_indisponivel')
+    if (catalogo.capitulos?.length)
       await rpc('registrar_catalogo_biblioteca', {
-        p_capitulos: indice.capitulos.map(({ id, titulo, especialidade }) => ({ id, titulo, especialidade })),
+        p_capitulos: catalogo.capitulos.map(({ id, titulo, especialidade }) => ({ id, titulo, especialidade })),
       })
   } catch {
     avisos.push('Não foi possível atualizar as novidades da Biblioteca. Confira esse grupo antes de enviar.')
@@ -316,25 +320,30 @@ async function preparar(variar?: { chave: string; semente: number }, incluirCart
   if (enfileiradas.length > 2000) throw new Error('Fila diária excedeu o limite de consulta')
   const incluidos = new Set(enfileiradas.map(x => x.id_usuario))
   for (const m of candidatas) if (incluidos.has(m.id_usuario)) m.bloqueio = 'Já incluído nos envios de hoje'
-  return { dia, opcoes: candidatas, ...selecionarHub(candidatas), avisos: [...new Set(avisos)], consultadas: perfis.size }
+  return { dia, opcoes: candidatas, avisos: [...new Set(avisos)], consultadas: perfis.size }
 }
 
-async function estado(rodadaId?: string) {
-  const dia = diaSP(),
-    rodadas = await ler<Array<{ id: string; dia: string; status: string; criado_em: string; resumo: unknown }>>(
-      'email_rodadas?order=dia.desc&limit=14',
+async function estado(rodadaId?: string, compacto = false) {
+  const dia = diaSP()
+  const obterRodadas = async () => {
+    const rodadas = await ler<Array<{ id: string; dia: string; status: string; criado_em: string; resumo?: unknown }>>(
+      compacto ? `email_rodadas?dia=eq.${dia}&select=id,dia,status,criado_em` : 'email_rodadas?order=dia.desc&limit=14',
     )
-  const rodada = rodadaId
-    ? (rodadas.find((r) => r.id === rodadaId) ?? null)
-    : (rodadas.find((r) => r.dia === dia) ?? null)
-  const fila = rodada
-    ? await ler<ItemFila[]>(`email_fila?rodada=eq.${rodada.id}&order=atualizado_em.asc&limit=2000`)
-    : []
+    const rodada = rodadas.find((r) => rodadaId ? r.id === rodadaId : r.dia === dia) ?? null
+    const fila = rodada
+      ? await ler<ItemFila[]>(`email_fila?rodada=eq.${rodada.id}&order=atualizado_em.asc&limit=2000`)
+      : []
+    return { rodadas, rodada, fila }
+  }
   const inicio = new Date(`${dia}T00:00:00-03:00`).toISOString()
-  const automaticos = await ler<Array<Record<string, unknown>>>(
-    `emails_enviados?origem=eq.automatico&enviado_em=gte.${inicio}&select=id,assunto,status,enviado_em,modelo&order=enviado_em.desc&limit=100`,
-  )
-  return { dia, rodada, fila, rodadas, automaticos, worker_ativo: await rpc<boolean>('hub_worker_ativo') }
+  const [rodadas, automaticos, worker_ativo] = await Promise.all([
+    obterRodadas(),
+    ler<Array<Record<string, unknown>>>(
+      `emails_enviados?origem=eq.automatico&enviado_em=gte.${inicio}&select=id,assunto,status,enviado_em,modelo&order=enviado_em.desc&limit=${compacto ? 3 : 100}`,
+    ),
+    rpc<boolean>('hub_worker_ativo'),
+  ])
+  return { dia, ...rodadas, automaticos, worker_ativo }
 }
 
 async function aindaPertinente(m: MensagemHub): Promise<boolean> {
@@ -452,6 +461,7 @@ Deno.serve(async (req) => {
     const p = (await req.json()) as {
       acao?: string
       versao?: number
+      compacto?: boolean
       cenario?: unknown
       chave?: string
       semente?: number
@@ -474,16 +484,14 @@ Deno.serve(async (req) => {
     const adm = await ler<unknown[]>(`administradores?id_usuario=eq.${u.id}&select=id_usuario`)
     if (!adm.length) return json({ erro: 'acesso_negado' }, 403, req)
     if (p.acao === 'estado') {
-      const atual = await estado(p.rodada)
+      const atual = await estado(p.rodada, p.compacto === true && !p.rodada)
       if (p.versao !== 2 && atual.fila.some(x => x.mensagem.tipo === 'cartao_recusado')) return json({ erro: 'Atualize a página para ver os novos cenários de e-mail.' }, 409, req)
       return json(atual, 200, req)
     }
-    if (p.acao === 'preparar')
-      return json(
-        await preparar(p.chave ? { chave: p.chave, semente: Number(p.semente) || Date.now() } : undefined, p.versao === 2),
-        200,
-        req,
-      )
+    if (p.acao === 'preparar') {
+      const previa = await preparar(p.chave ? { chave: p.chave, semente: Number(p.semente) || Date.now() } : undefined, p.versao === 2)
+      return json(p.compacto === true ? previa : { ...previa, ...selecionarHub(previa.opcoes) }, 200, req)
+    }
     if (p.acao === 'iniciar') {
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
       if (!(await rpc<boolean>('hub_worker_ativo')))
