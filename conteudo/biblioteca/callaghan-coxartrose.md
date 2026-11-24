@@ -1,6 +1,6 @@
 ---
 id: callaghan-coxartrose
-versao: 1
+versao: 2
 titulo: Coxartrose
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e c
 edicao: 3ª ed. (2017)
 capitulo: Capítulo 41 · Arthritis and Inflammatory Conditions of the Hip
 autores: Javad Mortazavi, Javad Parvizi
-fonte: Livros conferidos localmente em 04/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 41 (Hip Osteoarthritis, p. 568 a 573, inteiro), cap. 23 (p. 358 a 360, sequelas da infância e degeneração), cap. 24 (p. 375, artrite precoce), cap. 25 (p. 378 e 379, RM quantitativa da cartilagem), cap. 49 (p. 663 a 670, indicações e contraindicações da ATQ), caps. 67 e 68 (p. 873 a 876 e 886 e 887, artroplastia de superfície), cap. 72 (p. 938 e 939, artrose pós-traumática), cap. 75 (p. 970 e 971, protrusão) e cap. 79 (p. 1012 e 1013, artrodese); Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (p. 212, 213 e 245 a 247), cap. 6 (p. 349 e 350) e cap. 7 (p. 361, 362, 365 a 373 aprox. e 392 e 393); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 10 (coxartrose, osteotomias, artroplastia e artrodese) e cap. 9.7 (sequelas da artrite séptica).
+fonte: Livros conferidos localmente em 04/11/2026: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed., cap. 41 (Hip Osteoarthritis, p. 568 a 573, inteiro), cap. 23 (p. 358 a 360, sequelas da infância e degeneração), cap. 24 (p. 375, artrite precoce), cap. 25 (p. 378 e 379, RM quantitativa da cartilagem), cap. 49 (p. 663 a 670, indicações e contraindicações da ATQ), caps. 67 e 68 (p. 873 a 876 e 886 e 887, artroplastia de superfície), cap. 72 (p. 938 e 939, artrose pós-traumática), cap. 75 (p. 970 e 971, protrusão) e cap. 79 (p. 1012 e 1013, artrodese); Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (p. 212, 213 e 245 a 247), cap. 6 (p. 349 e 350) e cap. 7 (p. 361, 362, 392 e 393); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 10 (coxartrose, osteotomias, artroplastia e artrodese) e cap. 9.7 (sequelas da artrite séptica).
 subtemas: Coxartrose
 resumo: Coxartrose é a falência do órgão articular por desequilíbrio entre protetores e carga; primária (idiopática, com componente genético) ou secundária a DDQ, PERTHES, epifisiólise, IFA, necrose, trauma e PAGET; mais prevalente em homens no quadril; dor na virilha que piora com a rotação, perda precoce da rotação interna, deformidade em flexão, adução e rotação externa; radiografia com estreitamento, esclerose, osteófitos e cistos, cabeça migrando superolateralmente (medial na inflamatória e na protrusão); TÖNNIS 2 fecha a janela da preservação; bengala tira 20% a 30% da carga; valgizante medializa o centro de rotação e exige flexão de 60 a 70°; artrodese em 20 a 30° de flexão, adução neutra a leve e rotação externa leve; ATQ é o tratamento mais eficaz, com falha menor que 1% ao ano.
 ---
@@ -42,7 +42,7 @@ A prevalência depende de como se define a doença. O CALLAGHAN (cap. 41, p. 569
 | Artrose sintomática até os 85 anos | uma em cada quatro pessoas, sem efeito de raça, sexo ou IMC | |
 !fim
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 7, p. 365 aprox. e 392) dá outro número que costuma cair: o **risco de artrose do quadril ao longo da vida é de 8%**. A prevalência sobe com a idade porque o condrócito envelhecido responde menos aos fatores de crescimento e repara menos a matriz, e a cartilagem afina.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 7, p. 392) dá outro número que costuma cair: o **risco de artrose do quadril ao longo da vida é de 8%**. A prevalência sobe com a idade porque o condrócito envelhecido responde menos aos fatores de crescimento e repara menos a matriz, e a cartilagem afina.
 
 ## Primária e secundária
 
@@ -60,7 +60,7 @@ A divisão clássica é etiológica. Pelo CALLAGHAN (cap. 41, p. 569), a **artro
 
 ## A discordância que a prova não mostra
 
-O gabarito clássico considera a **forma primária a causa mais frequente**. O Campbell (cap. 7, p. 392 e 393) lê diferente: a artrose do quadril é **quase sempre desencadeada por uma deformidade anatômica que pode ser sutil e ficar assintomática por décadas**, e o CALLAGHAN (cap. 41, p. 571) diz que **anormalidades sutis levam ao impacto e à artrose secundária**. Muito do que se rotulava como idiopático tinha um came, uma retroversão ou uma displasia leve: **20% dos quadris operados por artrose tinham retroversão, contra 5% dos assintomáticos**, e o **acetábulo profundo teve risco relativo de 2,4** em Copenhagen (Campbell, cap. 7, p. 365 aprox.). O mesmo livro freia o exagero: **o came radiográfico nem sempre leva à artrose**.
+O gabarito clássico considera a **forma primária a causa mais frequente**. O Campbell (cap. 7, p. 392 e 393) lê diferente: a artrose do quadril é **quase sempre desencadeada por uma deformidade anatômica que pode ser sutil e ficar assintomática por décadas**, e o CALLAGHAN (cap. 41, p. 571) diz que **anormalidades sutis levam ao impacto e à artrose secundária**. Muito do que se rotulava como idiopático tinha um came, uma retroversão ou uma displasia leve: **20% dos quadris operados por artrose tinham retroversão, contra 5% dos assintomáticos**, e o **acetábulo profundo teve risco relativo de 2,4** em Copenhagen (Campbell, cap. 7). O mesmo livro freia o exagero: **o came radiográfico nem sempre leva à artrose**.
 
 !questoes central=quadril-0204
 conceito: Classicamente a artrose do quadril é dividida em primária (idiopática, sem lesão ou deformidade prévia, com predisposição genética) e secundária (DDQ, PERTHES, epifisiólise, trauma, PAGET); o gabarito clássico considera a primária a mais frequente.
@@ -317,7 +317,7 @@ O HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 10) divide a cirurgia em proc
 
 ## A cirurgia do impacto e o espaço residual
 
-O Campbell (cap. 7, p. 365 a 373 aprox.) mostra que a artrose já instalada é o principal inimigo da preservação: um **espaço residual acima de 2 mm** prediz bom resultado; **TÖNNIS 2**, **delaminação** e **idade** pioram a luxação cirúrgica; e na **artroscopia** a conversão em ATQ cresce com **sexo masculino, mais de 40 anos, microfratura, espaço menor que 2 mm e TÖNNIS 2 ou 3**. A refixação do lábio supera o desbridamento, mas **não muda a progressão da artrose**.
+O Campbell (cap. 7) mostra que a artrose já instalada é o principal inimigo da preservação: um **espaço residual acima de 2 mm** prediz bom resultado; **TÖNNIS 2**, **delaminação** e **idade** pioram a luxação cirúrgica; e na **artroscopia** a conversão em ATQ cresce com **sexo masculino, mais de 40 anos, microfratura, espaço menor que 2 mm e TÖNNIS 2 ou 3**. A refixação do lábio supera o desbridamento, mas **não muda a progressão da artrose**.
 
 O CALLAGHAN (cap. 41, p. 573) fecha o assunto da cartilagem: **não há tratamento eficaz de regeneração** na artrose, e o **transplante de condrócitos** e a **condroplastia por abrasão**, que podem servir na lesão localizada, **não têm eficácia comprovada** na artrose.
 

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-58-femur-distal
-versao: 4
+versao: 5
 titulo: Fratura do fêmur distal
 especialidade: trauma
 acesso: gratis
@@ -381,7 +381,7 @@ O sentido dos parafusos na HOFFA é o mesmo nos dois livros; o Campbell só deta
 
 O capítulo de artroplastia do joelho do Campbell's Operative Orthopaedics, 15ª ed. (cap. 8), completa o que o Rockwood and Green resume. Sobre o **entalhe da cortical anterior**, os dados divergem: um estudo biomecânico com revisão da literatura associou **30,5%** das periprotéticas supracondilianas a fêmur entalhado e mostrou menor carga de falha em flexão e torção; uma série de **1.089** artroplastias, com 30% de entalhe, teve só duas fraturas, **ambas sem entalhe** (p. 460). O Rockwood and Green lista o entalhe como fator de risco; o Campbell mostra que a associação é discutida.
 
-!tabela Classificação de RORABECK (Campbell, cap. 8, p. 461 aprox.)
+!tabela Classificação de RORABECK (Campbell, cap. 8)
 | Tipo | Fratura | Prótese |
 | --- | --- | --- |
 | I | sem desvio | estável |

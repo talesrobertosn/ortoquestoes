@@ -1,6 +1,6 @@
 ---
 id: campbell15-outras-infeccoes
-versao: 5
+versao: 6
 titulo: Artrite séptica, tuberculose e outras infecções osteoarticulares
 especialidade: conceitos-basicos
 acesso: gratis
@@ -215,7 +215,7 @@ O esqueleto aparece em **10% a 20%** dos casos de tuberculose. Cerca de **50%** 
 
 Os **leucócitos costumam ser normais** e a VHS pode estar normal (Campbell, p. 842); o teste cutâneo tem 20% a 30% de falso-negativo; a marca do diagnóstico é o **bacilo álcool-ácido resistente** em tecido ou fluido, com culturas do disco positivas em 60% a 80% (Box 25.1, p. 843).
 
-!tabela Sensibilidade dos exames na tuberculose da coluna (Campbell, Tabela 25.2, p. 845 aprox.)
+!tabela Sensibilidade dos exames na tuberculose da coluna (Campbell, Tabela 25.2)
 | Exame | Sensibilidade | Comentário |
 |---|---|---|
 | Radiografia | 15% | Alterações só após 30% de destruição |
@@ -236,7 +236,7 @@ Na radiografia da articulação, as erosões periarticulares são quase líticas
 
 A coluna é o local ósseo mais comum (**30% a 50%**), sobretudo no idoso, mas também na criança e no adulto jovem de países em desenvolvimento (Campbell, cap. 25, p. 842). A lesão ativa costuma ocupar **um segmento: dois corpos vertebrais e o disco** entre eles. A forma **paradiscal anterior**, em cerca de 80%, progride por **dissecção subligamentar sob o ligamento longitudinal anterior** até as vértebras vizinhas; a forma central é mais difícil de diagnosticar e imita tumor. O resultado tardio é o colapso segmentar em cunha anterior com **giba**, a doença de POTT. Os elementos posteriores raramente são os únicos acometidos. Os abscessos paravertebrais podem fistulizar para a pele e descer por planos até a **fossa poplítea**.
 
-O contraste com a espondilodiscite piogênica é a chave radiográfica. Na tuberculose há **relativa preservação do espaço discal** (p. 843); o capítulo 49 do Campbell (p. 1946 aprox.) reforça que a doença avança pelo ligamento longitudinal anterior, **poupa o disco e salta níveis**, o que a distingue da espondilodiscite. Na criança, a apresentação costuma ser tardia, com destruição, cifose e paraparesia; PCR acelera o diagnóstico em relação às 4 a 6 semanas da cultura. A brucelose e a actinomicose também imitam a tuberculose vertebral, mas a actinomicose em geral **não acomete o disco** e preserva a altura do corpo (cap. 25, p. 858).
+O contraste com a espondilodiscite piogênica é a chave radiográfica. Na tuberculose há **relativa preservação do espaço discal** (p. 843); o capítulo 49 do Campbell reforça que a doença avança pelo ligamento longitudinal anterior, **poupa o disco e salta níveis**, o que a distingue da espondilodiscite. Na criança, a apresentação costuma ser tardia, com destruição, cifose e paraparesia; PCR acelera o diagnóstico em relação às 4 a 6 semanas da cultura. A brucelose e a actinomicose também imitam a tuberculose vertebral, mas a actinomicose em geral **não acomete o disco** e preserva a altura do corpo (cap. 25, p. 858).
 
 # Tuberculose articulação por articulação {radar=confirmado}
 
@@ -248,11 +248,11 @@ Os princípios cirúrgicos do Campbell (p. 844) são quatro: **desbridamento amp
 
 ## Membro inferior
 
-No **pé**, calcâneo e tálus isolados se curetam; com vários ossos no adulto, amputa-se (p. 845 aprox.). O **tornozelo** costuma terminar em artrodese. No **joelho**, a radiografia normal prediz resposta à quimioterapia (p. 850 e 851). No **quadril**, cerca de **50%** têm radiografia normal e respondem bem; o comprometimento extenso indica **artrodese** (p. 851 e 852).
+No **pé**, calcâneo e tálus isolados se curetam; com vários ossos no adulto, amputa-se. O **tornozelo** costuma terminar em artrodese. No **joelho**, a radiografia normal prediz resposta à quimioterapia (p. 850 e 851). No **quadril**, cerca de **50%** têm radiografia normal e respondem bem; o comprometimento extenso indica **artrodese** (p. 851 e 852).
 
 ## Membro superior
 
-No **ombro**, uma extremidade da **clavícula** costuma estar infectada; doença precoce restrita à sinóvia se trata com quimioterapia e repouso (p. 853 aprox.). No **punho**, a tenossinovite flexora e extensora pode causar **túnel do carpo** (p. 854). Na **mão**, o capítulo 84 do Campbell (p. 3621 e 3622) descreve a tenossinovite como a apresentação mais comum, com aspecto de "gânglio" palmar e **corpos riziformes** de necrose caseosa contendo bacilos vivos.
+No **ombro**, uma extremidade da **clavícula** costuma estar infectada; doença precoce restrita à sinóvia se trata com quimioterapia e repouso. No **punho**, a tenossinovite flexora e extensora pode causar **túnel do carpo** (p. 854). Na **mão**, o capítulo 84 do Campbell (p. 3621 e 3622) descreve a tenossinovite como a apresentação mais comum, com aspecto de "gânglio" palmar e **corpos riziformes** de necrose caseosa contendo bacilos vivos.
 
 O **cotovelo** é o fato mais cobrado: a tuberculose é **mais frequente nele que nas outras articulações do membro superior**, embora responda por só **5%** dos casos ósseos, e o segmento mais típico é o **proximal da ulna (olécrano)**, com **contratura em flexão** (p. 853 e 854). Responde em geral a repouso e quimioterapia; no adulto com doença extensa, a **excisão** deixa menos incapacidade que a artrodese.
 
@@ -341,9 +341,9 @@ alerta: `conceitos-basicos-0298` não tem gabarito oficial e nenhum livro local 
 
 ## Doença falciforme e Salmonella
 
-A criança com doença falciforme adoece mais de osteomielite e artrite séptica por três razões: **asplenia funcional**, **infartos teciduais repetidos** e **opsonização deficiente** de antígenos polissacarídeos pela ativação falha do complemento (Tachdjian, p. 994). A **Salmonella** é mais comum que o S. aureus na osteomielite desses pacientes, na razão de **2,2:1**; a porta de entrada provável é a **parede intestinal**, onde microinfartos deixam o germe chegar à circulação. O Campbell's Operative Orthopaedics, 15ª ed., registra a associação nos capítulos 22 (Salmonella e pneumococo na anemia falciforme, p. 783) e 23, cuja Tabela 23.1 (p. 807 aprox.) anota ao lado da Salmonella: **doença falciforme, comprometimento diafisário**. É o detalhe que separa as alternativas da prova: hemoglobinopatia, e não diabetes; **diáfise**, e não metáfise, ao contrário da osteomielite hematogênica comum.
+A criança com doença falciforme adoece mais de osteomielite e artrite séptica por três razões: **asplenia funcional**, **infartos teciduais repetidos** e **opsonização deficiente** de antígenos polissacarídeos pela ativação falha do complemento (Tachdjian, p. 994). A **Salmonella** é mais comum que o S. aureus na osteomielite desses pacientes, na razão de **2,2:1**; a porta de entrada provável é a **parede intestinal**, onde microinfartos deixam o germe chegar à circulação. O Campbell's Operative Orthopaedics, 15ª ed., registra a associação nos capítulos 22 (Salmonella e pneumococo na anemia falciforme, p. 783) e 23, cuja Tabela 23.1 anota ao lado da Salmonella: **doença falciforme, comprometimento diafisário**. É o detalhe que separa as alternativas da prova: hemoglobinopatia, e não diabetes; **diáfise**, e não metáfise, ao contrário da osteomielite hematogênica comum.
 
-Como o falciforme tem cerca de **50 vezes mais chance de estar em crise que infectado**, o Tachdjian (p. 996 aprox.) trata primeiro como crise por 24 a 48 horas; sem melhora, aspira os focos e cobre **S. aureus e Salmonella**. Coleção subperiosteal acima de 10 mm no ultrassom e realce geográfico na RM sugerem osteomielite, e não infarto.
+Como o falciforme tem cerca de **50 vezes mais chance de estar em crise que infectado**, o Tachdjian (p. 996) trata primeiro como crise por 24 a 48 horas; sem melhora, aspira os focos e cobre **S. aureus e Salmonella**. Coleção subperiosteal acima de 10 mm no ultrassom e realce geográfico na RM sugerem osteomielite, e não infarto.
 
 !questoes central=conceitos-basicos-0115 relacionadas=conceitos-basicos-0304
 conceito: A osteomielite por Salmonella associa-se às hemoglobinopatias (doença falciforme) e tem comprometimento predominantemente diafisário (Campbell, Tabela 23.1).
@@ -353,7 +353,7 @@ armadilha: Marcar metafisário por associação automática com a osteomielite h
 
 ## HIV e doença granulomatosa crônica
 
-Na criança com HIV, a **artrite séptica é a infecção musculoesquelética mais prevalente**, com espectro amplo de germes e tuberculose até 500 vezes mais comum (Tachdjian, p. 996 aprox.). Na **doença granulomatosa crônica**, os fagócitos não matam bactérias e fungos **catalase-positivos**; Aspergillus responde por 41% das infecções e a osteomielite ocorre em 24% dos registrados.
+Na criança com HIV, a **artrite séptica é a infecção musculoesquelética mais prevalente**, com espectro amplo de germes e tuberculose até 500 vezes mais comum (Tachdjian, p. 996). Na **doença granulomatosa crônica**, os fagócitos não matam bactérias e fungos **catalase-positivos**; Aspergillus responde por 41% das infecções e a osteomielite ocorre em 24% dos registrados.
 
 **HIV e prótese.** Muitos hemofílicos com artropatia se contaminaram com o HIV pelos concentrados de fator, e a **complicação mais comum** da artroplastia total do joelho nesses pacientes é a **infecção**, com taxas relatadas de **30%**; a artroplastia do joelho no HIV positivo, com ou sem hemofilia, tem alta taxa de complicação, e uma revisão achou infecção em **7,7%** com HIV contra **3,3%** sem HIV, com sobrevida parecida. Antes de operar, o infectologista deve atestar **carga viral baixa e CD4 adequado** (Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 450). No quadril do hemofílico, a infecção hematogênica tardia preocupa mais quando o paciente exposto ao HIV pelo fator evolui para AIDS; ENAYATOLLAHI relatou infecção em 10,98% dos que tinham HIV e hemofilia contra 2,28% dos que tinham só HIV (cap. 4, p. 263). O Skeletal Trauma (cap. 22, p. 574) lembra que os estudos, muitos em artroplastia, divergem sobre o risco de infecção do sítio cirúrgico no HIV, e que no trauma ortopédico o **CD4 abaixo de 300 células/µL** se associou a mais infecção pós-operatória.
 
@@ -365,7 +365,7 @@ armadilha: Marcar hemorragia por causa da hemofilia: o livro lista a hemorragia 
 
 # A coluna do adulto: endocardite como fonte {radar=confirmado}
 
-Na espondilodiscite piogênica do adulto, o capítulo 49 do Campbell (p. 1945 aprox.) aponta o **S. aureus** como o germe mais comum, com gram-negativos e outros gram-positivos frequentes; **usuários de droga injetável** têm mais **Pseudomonas aeruginosa**; e as infecções por **enterococos e estreptococos se associam à endocardite como fonte primária**. A bactéria pode vir do trato urinário, respiratório, de partes moles ou de outro foco, e a disseminação arterial semeia o **platô vertebral**, região muito vascularizada e de fluxo lento, onde os germes se depositam. 
+Na espondilodiscite piogênica do adulto, o capítulo 49 do Campbell aponta o **S. aureus** como o germe mais comum, com gram-negativos e outros gram-positivos frequentes; **usuários de droga injetável** têm mais **Pseudomonas aeruginosa**; e as infecções por **enterococos e estreptococos se associam à endocardite como fonte primária**. A bactéria pode vir do trato urinário, respiratório, de partes moles ou de outro foco, e a disseminação arterial semeia o **platô vertebral**, região muito vascularizada e de fluxo lento, onde os germes se depositam. 
 Leia o germe como pista do foco: enterococo ou estreptococo na vértebra, pense em endocardite.
 
 !questoes central=coluna-0157
@@ -378,11 +378,11 @@ armadilha: Escolher o trato urinário porque o enterococo é germe urinário; o 
 
 ## Germes da mão
 
-Na mão, o germe mais isolado é o **S. aureus**, e o **MRSA comunitário** virou a causa mais comum com cultura positiva nos Estados Unidos (Campbell's Operative Orthopaedics, 15ª ed., cap. 84, p. 3605 aprox.); a exposição sugere o resto (Pasteurella no cão e no gato, Eikenella na mordedura humana, Aeromonas na água doce).
+Na mão, o germe mais isolado é o **S. aureus**, e o **MRSA comunitário** virou a causa mais comum com cultura positiva nos Estados Unidos (Campbell's Operative Orthopaedics, 15ª ed., cap. 84); a exposição sugere o resto (Pasteurella no cão e no gato, Eikenella na mordedura humana, Aeromonas na água doce).
 
 ## Paroníquia aguda, crônica e panarício
 
-A **paroníquia** aguda nasce de bactérias na dobra ungueal (eponíquio); em três séries, 25% foram anaeróbios, 25% aeróbios e 50% mistos (p. 3607 aprox.). O panarício herpético (herpes simplex 1 ou 2), mais comum em profissionais de saúde, forma vesículas claras, resolve em 3 a 4 semanas e **não deve ser operado**.
+A **paroníquia** aguda nasce de bactérias na dobra ungueal (eponíquio); em três séries, 25% foram anaeróbios, 25% aeróbios e 50% mistos. O panarício herpético (herpes simplex 1 ou 2), mais comum em profissionais de saúde, forma vesículas claras, resolve em 3 a 4 semanas e **não deve ser operado**.
 
 A **paroníquia crônica** é outra doença: aparece em quem fica muito tempo **com as mãos na água**, com eponíquio espessado e proeminente. As culturas trazem **S. pyogenes, S. epidermidis, Candida albicans, bactérias gram-negativas colônicas** ou mistura delas (p. 3608). Como melhora com antifúngico oral (terbinafina, itraconazol) e corticoide ou tacrolimo tópico, o livro a vê mais como **dermatite de exposição** colonizada; se evitar o irritante e o tratamento tópico falharem, faz-se a **marsupialização eponiquial** (BEDNAR e LANE, com a técnica de KEYSER e EATON).
 
@@ -394,7 +394,7 @@ armadilha: Trocar Candida por Aspergillus, ou gram-negativas por gram-positivas,
 
 ## Mordeduras
 
-A mordedura humana mais grave é o **soco** contra o dente, na **metacarpofalângica do terceiro e do quarto dedos** (Campbell, cap. 84, p. 3617 aprox.): quando o dedo estende, o tendão lacerado desliza e **fecha a articulação** num ambiente anaeróbio. Por isso **toda pequena laceração sobre a MF é mordedura até prova em contrário**. A mordedura de **gato**, puntiforme, internou 30% numa série (p. 3618).
+A mordedura humana mais grave é o **soco** contra o dente, na **metacarpofalângica do terceiro e do quarto dedos** (Campbell, cap. 84): quando o dedo estende, o tendão lacerado desliza e **fecha a articulação** num ambiente anaeróbio. Por isso **toda pequena laceração sobre a MF é mordedura até prova em contrário**. A mordedura de **gato**, puntiforme, internou 30% numa série (p. 3618).
 
 !tabela Mordeduras e inoculações na mão e no pé (Campbell, cap. 84, p. 3605 a 3618; Tachdjian, p. 994)
 | Exposição | Germe típico | Detalhe |
@@ -429,7 +429,7 @@ O osso sadio resiste à infecção, mas o S. aureus tem três armas para vencê-
 
 O Rockwood descreve as etapas. Primeiro, a **adesão** da bactéria à superfície do osso ou do implante por adesinas da parede (os componentes de superfície que reconhecem moléculas da matriz). Depois, a **proliferação**, com secreção de uma matriz polissacarídeo-proteica relativamente impermeável; por fim, as bactérias ficam envoltas por **glicocálice**, uma camada de muco que as protege das defesas. Em biofilmes polimicrobianos, as colônias se comunicam por **quorum sensing**. A consequência prática é brutal: organismos em biofilme são até **800 vezes menos sensíveis** ao antibiótico que os planctônicos e podem ficar quiescentes por anos antes de reativar. O AO Principles of Fracture Management, 3ª ed. (cap. 5.3), dá outro número: a falta de nutrientes e o acúmulo de resíduos no biofilme põem os germes em fase estacionária, de crescimento lento ou nulo, que os torna até **1.000 vezes mais resistentes** à maioria dos antimicrobianos; como o antibiograma é feito com bactérias planctônicas em crescimento, a boa sensibilidade no laboratório convive com o mau resultado clínico. São, portanto, dois números: **800 vezes no Rockwood e 1.000 vezes no AO**. E o tempo é curto: **na fratura exposta, o biofilme pode se formar em horas**, porque osso desvitalizado e partes moles lesadas favorecem os patógenos. O AO (cap. 5.3) descreve a mesma "corrida pela superfície": proteínas do hospedeiro como fibronectina e laminina recobrem o implante e favorecem a aderência, as bactérias aderidas passam a produzir um **glicocálice de exopolissacarídeos** e, depois de algumas horas, já se comportam como um organismo multicelular; na sua figura da patogenia, elas aderem ao implante e mudam para o modo de biofilme **em até 1 hora**.
 
-O Campbell, 15ª ed., conta a mesma história com a figura de GRISTINA (cap. 58, p. 2524): à medida que a infecção progride, a colonização ocorre dentro de um **biofilme exopolissacarídeo protetor**, especialmente abundante no **fragmento ósseo desvitalizado**, que serve de substrato passivo; as defesas do hospedeiro **não penetram o biofilme**; a inflamação forma abscesso, fístula e, às vezes, extrusão do sequestro. No capítulo 4 (p. 282), a elaboração de **glicocálice por Staphylococcus e Pseudomonas é marcador de virulência**, e no capítulo 23 (p. 814 aprox.) as esferas de PMMA, depois de liberarem todo o antibiótico, viram corpo estranho colonizável por bactérias formadoras de glicocálice. Por isso irrigação com soro não "dissolve" biofilme: o Campbell (cap. 22, p. 786 aprox.) só vê vantagem pequena de lavados antibiofilme sobre o soro.
+O Campbell, 15ª ed., conta a mesma história com a figura de GRISTINA (cap. 58, p. 2524): à medida que a infecção progride, a colonização ocorre dentro de um **biofilme exopolissacarídeo protetor**, especialmente abundante no **fragmento ósseo desvitalizado**, que serve de substrato passivo; as defesas do hospedeiro **não penetram o biofilme**; a inflamação forma abscesso, fístula e, às vezes, extrusão do sequestro. No capítulo 4 (p. 282), a elaboração de **glicocálice por Staphylococcus e Pseudomonas é marcador de virulência**, e no capítulo 23 as esferas de PMMA, depois de liberarem todo o antibiótico, viram corpo estranho colonizável por bactérias formadoras de glicocálice. Por isso irrigação com soro não "dissolve" biofilme: o Campbell (cap. 22) só vê vantagem pequena de lavados antibiofilme sobre o soro.
 
 !questoes relacionadas=conceitos-basicos-0064,conceitos-basicos-0275,quadril-0010
 conceito: O biofilme amadurece pela deposição de matriz exopolissacarídea (glicocálice) sobre o osso desvitalizado e o implante, forma-se em horas na fratura exposta, adere ao osso e ao implante e resiste ao antibiótico e às defesas.
@@ -442,9 +442,9 @@ alerta: O Rockwood and Green's Fractures in Adults, 10ª ed., p. 841, descreve a
 
 ## Quando a infecção está confirmada
 
-Para a infecção relacionada à fratura (FRI), um grupo internacional dividiu os achados em **confirmatórios** (se presente, a infecção existe) e **sugestivos** (exigem investigação) (Rockwood and Green's Fractures in Adults, 10ª ed., p. 835 e 837 aprox.).
+Para a infecção relacionada à fratura (FRI), um grupo internacional dividiu os achados em **confirmatórios** (se presente, a infecção existe) e **sugestivos** (exigem investigação) (Rockwood and Green's Fractures in Adults, 10ª ed.).
 
-!tabela Critérios de infecção relacionada à fratura do grupo internacional (Rockwood and Green's Fractures in Adults, 10ª ed., Tabela 29-2, p. 837 aprox.)
+!tabela Critérios de infecção relacionada à fratura do grupo internacional (Rockwood and Green's Fractures in Adults, 10ª ed., Tabela 29-2)
 | Tipo | Critério |
 |---|---|
 | Confirmatório | Fístula, seio ou deiscência comunicando com o osso ou o implante |
@@ -470,7 +470,7 @@ alerta: Pela Tabela 29-2 do Rockwood and Green's Fractures in Adults, 10ª ed., 
 
 ## Os germes e a cultura
 
-O **S. aureus** domina a osteomielite (**30% a 60%**); os **coagulase-negativos** aparecem em 25% das pós-traumáticas e o **S. epidermidis** lidera na periprotética (Rockwood, p. 842). Nas fraturas expostas, o Campbell (cap. 58, p. 2525 aprox.) aponta **gram-negativos e MRSA** como os mais comuns. A cultura é negativa em até **32%**, em parte porque não alcança bactérias dentro do biofilme.
+O **S. aureus** domina a osteomielite (**30% a 60%**); os **coagulase-negativos** aparecem em 25% das pós-traumáticas e o **S. epidermidis** lidera na periprotética (Rockwood, p. 842). Nas fraturas expostas, o Campbell (cap. 58) aponta **gram-negativos e MRSA** como os mais comuns. A cultura é negativa em até **32%**, em parte porque não alcança bactérias dentro do biofilme.
 
 Para buscar o germe preso ao implante existe a **sonicação**: o implante retirado vai em recipiente sólido, passa por vórtex e ultrassom, que **desaloja os microrganismos aderentes**, e o líquido resultante é cultivado (Rockwood, p. 852). Na série de TRAMPUZ, a sensibilidade subiu de 60,8% (cultura convencional do tecido) para **78,5%**, com especificidade de 98,8%, sobretudo nas polimicrobianas, e o germe sai viável para antibiograma. O Rockwood recomenda de três a cinco amostras profundas, em número ímpar; swab de fístula não serve.
 
@@ -485,14 +485,14 @@ alerta: O Campbell's Operative Orthopaedics, 15ª ed., não descreve a sonicaç�
 conceito: Na infecção de fratura, S. aureus é o líder, e nas expostas os germes mais comuns são gram-negativos e MRSA (Campbell, cap. 58).
 como: O TARO 2014 perguntou os agentes da infecção pós-osteossíntese precoce, combinando S. aureus ou coagulase-negativo com estreptococo ou bacilos gram-negativos.
 armadilha: Escolher coagulase-negativo, que é o germe típico da infecção tardia, indolente, de implante e de prótese.
-alerta: O AO Principles of Fracture Management, 3ª ed. (cap. 5.3, Tabela 5.3-1), separa as infecções após osteossíntese pelo início (precoce, até 2 semanas; tardia, da 3ª à 10ª semana; crônica, depois de 10 semanas) e aponta na precoce germes virulentos, S. aureus e bacilos gram-negativos, e na tardia os de baixa virulência, como coagulase-negativos e Propionibacterium acnes; o gabarito (S. aureus e bacilos gram-negativos) é coerente também com o Campbell's Operative Orthopaedics, 15ª ed., p. 2525 aprox., e com o Rockwood and Green's Fractures in Adults, 10ª ed., p. 842.
+alerta: O AO Principles of Fracture Management, 3ª ed. (cap. 5.3, Tabela 5.3-1), separa as infecções após osteossíntese pelo início (precoce, até 2 semanas; tardia, da 3ª à 10ª semana; crônica, depois de 10 semanas) e aponta na precoce germes virulentos, S. aureus e bacilos gram-negativos, e na tardia os de baixa virulência, como coagulase-negativos e Propionibacterium acnes; o gabarito (S. aureus e bacilos gram-negativos) é coerente também com o Campbell's Operative Orthopaedics, 15ª ed., e com o Rockwood and Green's Fractures in Adults, 10ª ed., p. 842.
 !fim
 
 # Infecção periprotética: MSIS, TSUKAYAMA e retenção {radar=confirmado}
 
 ## Como se define
 
-Pela falta de uma definição padrão, um grupo da **Musculoskeletal Infection Society (MSIS)** e um consenso internacional criaram critérios para quadril e joelho (Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 451). Há dois **critérios maiores**, e basta um: **duas culturas positivas do mesmo organismo** ou **fístula comunicando com a articulação ou expondo a prótese** (Tabela 8.2, p. 453 aprox.). Os critérios menores somam pontos: PCR ou D-dímero, VHS, leucócitos sinoviais ou esterase leucocitária ou alfa-defensina, porcentagem de PMN, cultura única, histologia positiva e purulência intraoperatória. A soma pré e intraoperatória de **6 ou mais** define infecção, **3 a 5** é inconclusivo e **menos de 3**, não infectado.
+Pela falta de uma definição padrão, um grupo da **Musculoskeletal Infection Society (MSIS)** e um consenso internacional criaram critérios para quadril e joelho (Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 451). Há dois **critérios maiores**, e basta um: **duas culturas positivas do mesmo organismo** ou **fístula comunicando com a articulação ou expondo a prótese** (Tabela 8.2). Os critérios menores somam pontos: PCR ou D-dímero, VHS, leucócitos sinoviais ou esterase leucocitária ou alfa-defensina, porcentagem de PMN, cultura única, histologia positiva e purulência intraoperatória. A soma pré e intraoperatória de **6 ou mais** define infecção, **3 a 5** é inconclusivo e **menos de 3**, não infectado.
 
 O raciocínio é o da FRI: fístula e duas culturas iguais são inequívocas; cultura isolada, alfa-defensina e purulência são menores.
 
@@ -525,7 +525,7 @@ alerta: O Campbell's Operative Orthopaedics, 15ª ed. (cap. 4, p. 284; cap. 8, p
 
 ## Tempo e conduta
 
-A classificação de TSUKAYAMA separa quatro situações (Campbell, cap. 4, p. 283 aprox.): **infecção pós-operatória precoce** (primeiro mês), **crônica tardia** (depois de 1 mês, início insidioso), **hematogênica aguda** (depois de 1 mês, início agudo numa prótese que funcionava bem, com foco à distância) e **culturas intraoperatórias positivas** numa revisão julgada asséptica. TRAMPUZ e ZIMMERLI estenderam a precoce até 3 meses.
+A classificação de TSUKAYAMA separa quatro situações (Campbell, cap. 4): **infecção pós-operatória precoce** (primeiro mês), **crônica tardia** (depois de 1 mês, início insidioso), **hematogênica aguda** (depois de 1 mês, início agudo numa prótese que funcionava bem, com foco à distância) e **culturas intraoperatórias positivas** numa revisão julgada asséptica. TRAMPUZ e ZIMMERLI estenderam a precoce até 3 meses.
 
 !tabela TSUKAYAMA e a conduta na prótese infectada (Campbell, cap. 4, p. 283 a 285; cap. 8, p. 452 e 454)
 | Tipo | Definição | Conduta típica |
@@ -536,7 +536,7 @@ A classificação de TSUKAYAMA separa quatro situações (Campbell, cap. 4, p. 2
 | Culturas intraoperatórias positivas | Revisão julgada asséptica | Antibiótico dirigido |
 !fim
 
-O **desbridamento com retenção da prótese** é limitado a um pequeno grupo: infecção **precoce** (menos de 4 semanas) ou **hematogênica aguda** com **componentes bem fixos**; na crônica tardia ele foi universalmente malsucedido e não deve ser tentado (Campbell, cap. 8, p. 452). O biofilme explica a regra: nas primeiras semanas ele ainda é imaturo e o desbridamento com troca do polietileno consegue removê-lo; depois, ele se organiza sobre o metal e só sai com o implante. Por isso a virulência do germe pesa: **a infecção por S. aureus é contraindicação relativa ao desbridamento com retenção** (p. 454). O livro pede antibiótico IV por 6 semanas e **troca do polietileno**; no quadril, o duplo DAIR chegou a 94% nas primárias (cap. 4, p. 285 aprox.).
+O **desbridamento com retenção da prótese** é limitado a um pequeno grupo: infecção **precoce** (menos de 4 semanas) ou **hematogênica aguda** com **componentes bem fixos**; na crônica tardia ele foi universalmente malsucedido e não deve ser tentado (Campbell, cap. 8, p. 452). O biofilme explica a regra: nas primeiras semanas ele ainda é imaturo e o desbridamento com troca do polietileno consegue removê-lo; depois, ele se organiza sobre o metal e só sai com o implante. Por isso a virulência do germe pesa: **a infecção por S. aureus é contraindicação relativa ao desbridamento com retenção** (p. 454). O livro pede antibiótico IV por 6 semanas e **troca do polietileno**; no quadril, o duplo DAIR chegou a 94% nas primárias (cap. 4).
 
 !questoes central=conceitos-basicos-0200
 conceito: Na infecção aguda da artroplastia do joelho, a cultura positiva para S. aureus é contraindicação relativa ao desbridamento com retenção da prótese (Campbell, cap. 8, p. 454).
@@ -550,7 +550,7 @@ Tudo o que veio antes neste resumo tem um germe por trás. A **osteomielite crô
 
 ## O que é e quem tem
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 973), atribui a descrição a **GIEDION, em 1972**, e coloca o pico de início aos **10 anos**, com predomínio feminino de **1,7:1 a 4:1**. O Campbell (p. 818) dá o mesmo pico, **4:1** para as meninas e incidência anual de **1 a 4 por milhão**, talvez subestimada. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 12, p. 413), dá **cerca de 70% de meninas** e define a doença pelo curso: exacerbações e remissões espontâneas por **pelo menos 6 meses**; sem lesões múltiplas ou recidiva, sugere o nome **osteomielite crônica não bacteriana**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 853 aprox.), lembra que há **início na idade adulta**.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 973), atribui a descrição a **GIEDION, em 1972**, e coloca o pico de início aos **10 anos**, com predomínio feminino de **1,7:1 a 4:1**. O Campbell (p. 818) dá o mesmo pico, **4:1** para as meninas e incidência anual de **1 a 4 por milhão**, talvez subestimada. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 12, p. 413), dá **cerca de 70% de meninas** e define a doença pelo curso: exacerbações e remissões espontâneas por **pelo menos 6 meses**; sem lesões múltiplas ou recidiva, sugere o nome **osteomielite crônica não bacteriana**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29), lembra que há **início na idade adulta**.
 
 A doença anda com a pele e o intestino. O Tachdjian (p. 973) lista **pustulose palmoplantar**, artrite crônica, psoríase, doença inflamatória intestinal, pioderma gangrenoso, SWEET e acne grave, com **FR em 8% e HLA-B27 em 11%**; duas síndromes genéticas com CRMO (MAJEED e deficiência do antagonista do receptor de IL-1) apontam a **IL-1**. No Lovell and Winter (p. 413), JANSSON achou doença autoimune em **20%** dos pacientes, **FAN elevado em 30%** e doença autoimune em **40% das famílias**.
 
@@ -578,7 +578,7 @@ armadilha: As alternativas erradas misturam um local verdadeiro com pelve, coste
 
 São episódios de **dor, vermelhidão e aumento de volume** de início insidioso, que regridem sozinhos, com pouca limitação (Tachdjian, p. 973). No Lovell and Winter (p. 413), a dor local vem muitas vezes com **febre**, e no começo a CRMO é indistinguível da osteomielite bacteriana. O laboratório é parecido nos livros: **leucócitos normais** (ou pouco elevados no Campbell), **VHS e PCR altas** e **culturas de osso e sangue negativas**.
 
-A radiografia mostra lucências metafisárias **excêntricas e mal delimitadas junto à fise**, que podem cruzar para a epífise, e **esclerose na cura**; nos ossos tubulares pequenos e chatos aparece reação periosteal precoce, que imita leucemia, EWING e granuloma eosinofílico (Lovell and Winter, p. 413 e 414). O Campbell (p. 818) acrescenta lesões predominantemente líticas, muitas vezes **bilaterais e simétricas**, e a **RM em STIR**, inclusive de corpo inteiro, que ajuda a excluir infecção piogênica. A **cintilografia** é o exame que prova a multifocalidade, porque acha lesões assintomáticas antes da radiografia (Tachdjian, p. 974; Lovell and Winter, p. 414). O Rockwood (p. 853 aprox.) chama a **esclerose marginal** de traço típico.
+A radiografia mostra lucências metafisárias **excêntricas e mal delimitadas junto à fise**, que podem cruzar para a epífise, e **esclerose na cura**; nos ossos tubulares pequenos e chatos aparece reação periosteal precoce, que imita leucemia, EWING e granuloma eosinofílico (Lovell and Winter, p. 413 e 414). O Campbell (p. 818) acrescenta lesões predominantemente líticas, muitas vezes **bilaterais e simétricas**, e a **RM em STIR**, inclusive de corpo inteiro, que ajuda a excluir infecção piogênica. A **cintilografia** é o exame que prova a multifocalidade, porque acha lesões assintomáticas antes da radiografia (Tachdjian, p. 974; Lovell and Winter, p. 414). O Rockwood chama a **esclerose marginal** de traço típico.
 
 ## Biópsia estéril e critérios: diagnóstico de exclusão
 

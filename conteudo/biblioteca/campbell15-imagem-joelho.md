@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-joelho
-versao: 2
+versao: 3
 titulo: Imagem do joelho
 especialidade: joelho
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª edição (2025), o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o HEBERT, Ortopedia e Traumatologia, 5ª edição
 capitulo: Capítulo 10 · Knee Preservation Surgery (radiografia da artrose, eixo e calcificações para-articulares), lido com os capítulos de imagem avançada, lesões do joelho e luxações do mesmo livro
 autores: Joseph D. Lamplot (capítulo 10)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 10 (PELLEGRINI-STIEDA, BAKER, artrose e osteotomia, p. 486 a 501), cap. 3 (RM, p. 153 a 166), cap. 50 (radiografias, estresse, menisco, LCA e LCP, p. 1983 a 2104 aprox.), cap. 52 (instabilidade patelar, Tabelas 52.2 e 52.3, p. 2194 a 2203), caps. 59 e 65 (patela, p. 2941); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 15 e 16 (altura patelar, axiais, ROSENBERG, AHLBACK, DEJOUR, TAGT, kissing bones, osteotomia); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 60, 61 e 62 (altura patelar no trauma, sinal arqueado, SEGOND, meniscofemorais, SEGOND reversa); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (p. 2012 a 2021). HEBERT e Rockwood local.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 10 (PELLEGRINI-STIEDA, BAKER, artrose e osteotomia, p. 486 a 501), cap. 3 (RM, p. 153 a 166), cap. 50 (radiografias, estresse, menisco, LCA e LCP), cap. 52 (instabilidade patelar, Tabelas 52.2 e 52.3, p. 2194 a 2203), caps. 59 e 65 (patela, p. 2941); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 15 e 16 (altura patelar, axiais, ROSENBERG, AHLBACK, DEJOUR, TAGT, kissing bones, osteotomia); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 60, 61 e 62 (altura patelar no trauma, sinal arqueado, SEGOND, meniscofemorais, SEGOND reversa); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (p. 2012 a 2021). HEBERT e Rockwood local.
 subtemas: Imagem do joelho
 resumo: ROSENBERG (45 graus com carga, PA, 10 graus podal); MERCHANT e LAURIN; radiografia não confirma menisco, exclui o que imita; RM detecta mas não prevê o reparo; água escura em T1 e clara em T2; HUMPHRY anterior e WRISBERG posterior ao LCP; hiato do poplíteo; SEGOND = LCA, arqueado = canto posterolateral; contusões do LCA e da luxação patelar; varo 2,7 mm = LCL isolado; INSALL-SALVATI > 1,2; cruzamento = displasia troclear; TA-GT > 20 mm; AHLBACK III com platô posterior intacto.
 ---
@@ -29,7 +29,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 3, p. 153 e 154), lembra que
 
 O spin-eco gera imagens **ponderadas em T1, em densidade de prótons e em T2**, escolhendo-se o tempo de repetição (TR) e o tempo de eco (TE). A regra que cai está no texto (p. 154): **a gordura tem sinal alto em T1, e o líquido tem sinal alto em T2**; **osso cortical, tendões e ligamentos são escuros em todas as sequências**. Daí sai a resposta sobre a água: **baixo sinal em T1 e alto sinal em T2**. O mesmo capítulo mostra isso na prática: na osteoporose transitória, o edema da medula é **escuro em T1**, contra a gordura clara, e **claro em T2**, ainda mais com supressão de gordura (p. 166).
 
-A supressão de gordura (química, **STIR** ou **DIXON**) existe porque no spin-eco rápido a gordura continua clara em T2 e esconde o edema; essas sequências são chamadas de **sensíveis a líquido** e são as do trauma e dos tumores (p. 154). Quanto à segurança (p. 155 aprox.), **implantes ortopédicos internos são seguros** (titânio gera menos artefato que aço); clipes de aneurisma, corpos estranhos metálicos intraoculares e marca-passos antigos são contraindicações absolutas; o gadolínio não é nefrotóxico, mas na insuficiência renal grave associa-se à **fibrose sistêmica nefrogênica**.
+A supressão de gordura (química, **STIR** ou **DIXON**) existe porque no spin-eco rápido a gordura continua clara em T2 e esconde o edema; essas sequências são chamadas de **sensíveis a líquido** e são as do trauma e dos tumores (p. 154). Quanto à segurança (cap. 3), **implantes ortopédicos internos são seguros** (titânio gera menos artefato que aço); clipes de aneurisma, corpos estranhos metálicos intraoculares e marca-passos antigos são contraindicações absolutas; o gadolínio não é nefrotóxico, mas na insuficiência renal grave associa-se à **fibrose sistêmica nefrogênica**.
 
 !tabela O sinal dos tecidos na ressonância (Campbell 15, cap. 3, p. 154 e 166)
 | Tecido | T1 | T2 |
@@ -88,7 +88,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2002), é direto: **r
 
 ## O que a ressonância promete e o que não promete
 
-Para o Campbell (cap. 50, p. 2002), a ressonância é o **cavalo de batalha** da imagem avançada no joelho: **sensibilidade de 92% e especificidade de 90% para o menisco medial**, **80% e 95% para o lateral**; o capítulo 3 (p. 160) diz que ambas costumam passar de 90%. As lesões de **raiz** e de **rampa** têm sensibilidade menor e devem ser procuradas na artroscopia mesmo com ressonância negativa. E vem a frase que vira questão (p. 2003 aprox.): **a ressonância parece eficiente em detectar rupturas meniscais, mas não demonstrou eficácia em prever a reparabilidade**. Quem decide se a sutura vai cicatrizar é a zona vascular, o tipo, a cronicidade e o tamanho, avaliados na artroscopia. O mesmo trecho diz que a **artrotomografia** substitui a ressonância contraindicada e que a artrografia simples **não tem mais utilidade clínica**.
+Para o Campbell (cap. 50, p. 2002), a ressonância é o **cavalo de batalha** da imagem avançada no joelho: **sensibilidade de 92% e especificidade de 90% para o menisco medial**, **80% e 95% para o lateral**; o capítulo 3 (p. 160) diz que ambas costumam passar de 90%. As lesões de **raiz** e de **rampa** têm sensibilidade menor e devem ser procuradas na artroscopia mesmo com ressonância negativa. E vem a frase que vira questão (cap. 50): **a ressonância parece eficiente em detectar rupturas meniscais, mas não demonstrou eficácia em prever a reparabilidade**. Quem decide se a sutura vai cicatrizar é a zona vascular, o tipo, a cronicidade e o tamanho, avaliados na artroscopia. O mesmo trecho diz que a **artrotomografia** substitui a ressonância contraindicada e que a artrografia simples **não tem mais utilidade clínica**.
 
 ## A semiologia do menisco na ressonância
 
@@ -99,9 +99,9 @@ O capítulo 3 do Campbell (p. 159 e 160) ensina a técnica e a leitura:
 - Sinal que **não comunica** com a superfície é **degeneração mucoide**, invisível na artroscopia; sinal que **chega à superfície é ruptura**, desde que em mais de uma imagem ou com distorção.
 - Menisco no lugar **pequeno ou truncado** sugere **fragmento deslocado** (alça de balde), procurado no coronal.
 
-As rupturas **radiais da raiz posterior do menisco medial** são comuns e incapacitantes no idoso e são **mais bem vistas nos coronais posteriores** (p. 160): na figura do livro, um **defeito cheio de líquido** no corno posterior junto à raiz. Elas permitem a **extrusão** do menisco e associam-se a **fratura subcondral por insuficiência** no compartimento medial. O capítulo 50 (p. 2000 aprox.) completa: a ruptura da raiz posterior **lateral** é aguda e acompanha o LCA; a da raiz **medial** é degenerativa, da meia-idade. A **rampa** é diferente: ruptura **longitudinal na junção meniscocapsular** do corno posterior medial, associada ao LCA, vista na ressonância em menos da metade dos casos, com **contusão tibial posteromedial** como sinal secundário em 72%.
+As rupturas **radiais da raiz posterior do menisco medial** são comuns e incapacitantes no idoso e são **mais bem vistas nos coronais posteriores** (p. 160): na figura do livro, um **defeito cheio de líquido** no corno posterior junto à raiz. Elas permitem a **extrusão** do menisco e associam-se a **fratura subcondral por insuficiência** no compartimento medial. O capítulo 50 completa: a ruptura da raiz posterior **lateral** é aguda e acompanha o LCA; a da raiz **medial** é degenerativa, da meia-idade. A **rampa** é diferente: ruptura **longitudinal na junção meniscocapsular** do corno posterior medial, associada ao LCA, vista na ressonância em menos da metade dos casos, com **contusão tibial posteromedial** como sinal secundário em 72%.
 
-!tabela A ressonância do menisco: achados e armadilhas (Campbell 15, cap. 3, p. 159 a 162; cap. 50, p. 2000 a 2003 aprox.)
+!tabela A ressonância do menisco: achados e armadilhas (Campbell 15, cap. 3, p. 159 a 162; cap. 50)
 | Achado | Significado |
 | --- | --- |
 | Sinal que não toca a superfície | degeneração mucoide |
@@ -132,15 +132,15 @@ armadilha: Chamar de alça de balde, que desloca um fragmento para o intercôndi
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1996), descreve o menisco lateral preso posteriormente ao **côndilo femoral medial** pelo ligamento de **HUMPHRY** e/ou de **WRISBERG**, de presença variável, chamados na figura (Fig. 50.25, p. 1997) de meniscofemoral **anterior** e **posterior**. Quem diz qual é qual é o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61): **ao menos um existe em 93% dos joelhos; HUMPHRY passa à frente do LCP, WRISBERG passa atrás**. Ambos ligam o **corno posterior do menisco lateral** ao intercôndilo e são restritores secundários da translação posterior.
 
-No sagital, o raciocínio é topográfico: o LCP é a faixa escura, curva e grossa no intercôndilo posterior; **uma faixa menor à frente dele, rumo ao corno posterior lateral, é HUMPHRY; atrás dele, WRISBERG**. O intermeniscal fica na frente, entre os cornos anteriores, e o LCA corre paralelo ao teto do intercôndilo. Dois detalhes do Campbell mostram por que isso importa: na cirurgia do LCP isolado (p. 2104 aprox.), o HUMPHRY intacto **pode ser confundido com um LCP intacto**; e na ressonância (cap. 3, p. 161 aprox.), **meniscofemorais e transverso podem simular ruptura vertical**.
+No sagital, o raciocínio é topográfico: o LCP é a faixa escura, curva e grossa no intercôndilo posterior; **uma faixa menor à frente dele, rumo ao corno posterior lateral, é HUMPHRY; atrás dele, WRISBERG**. O intermeniscal fica na frente, entre os cornos anteriores, e o LCA corre paralelo ao teto do intercôndilo. Dois detalhes do Campbell mostram por que isso importa: na cirurgia do LCP isolado (cap. 50), o HUMPHRY intacto **pode ser confundido com um LCP intacto**; e na ressonância (cap. 3), **meniscofemorais e transverso podem simular ruptura vertical**.
 
 ## O tendão do poplíteo
 
-O Campbell (cap. 50, p. 1996) descreve o **tendão do poplíteo separando a periferia posterolateral do menisco lateral da cápsula e do colateral fibular**. O Rockwood and Green (cap. 61) completa: ele passa pelo **hiato poplíteo**, torna-se intra-articular e se insere no côndilo femoral lateral **anterior e distal à origem do colateral fibular**; das suas fibras nasce o popliteofibular. Na ressonância, isso vira a armadilha clássica (Campbell, cap. 3, p. 161 aprox.): **reconhecer o hiato do poplíteo evita o diagnóstico falso de ruptura do corno posterior do menisco lateral**. A faixa escura oblíqua atrás do corno posterior lateral, com líquido entre ela e o menisco, é o tendão; o colateral fibular fica mais lateral, indo à cabeça da fíbula.
+O Campbell (cap. 50, p. 1996) descreve o **tendão do poplíteo separando a periferia posterolateral do menisco lateral da cápsula e do colateral fibular**. O Rockwood and Green (cap. 61) completa: ele passa pelo **hiato poplíteo**, torna-se intra-articular e se insere no côndilo femoral lateral **anterior e distal à origem do colateral fibular**; das suas fibras nasce o popliteofibular. Na ressonância, isso vira a armadilha clássica (Campbell, cap. 3): **reconhecer o hiato do poplíteo evita o diagnóstico falso de ruptura do corno posterior do menisco lateral**. A faixa escura oblíqua atrás do corno posterior lateral, com líquido entre ela e o menisco, é o tendão; o colateral fibular fica mais lateral, indo à cabeça da fíbula.
 
 ## A fabela
 
-O Campbell (cap. 50, p. 1983 a 1987 aprox.) situa a fabela no canto posterolateral: o **ligamento poplíteo oblíquo** corre em direção à **inserção da cabeça lateral do gastrocnêmio** e prende-se lateralmente à fabela; o **fabelofibular** vai da fabela à cabeça da fíbula; a figura do livro desenha a fabela junto à cabeça lateral do gastrocnêmio. O Rockwood and Green (cap. 61) diz que ela é **óssea em 10% a 20% dos joelhos**. No perfil, o ossículo pequeno e corticado **atrás do côndilo femoral lateral** é a fabela, no tendão da **cabeça lateral do gastrocnêmio**; não confundir com corpo livre, SEGOND (planalto lateral, no AP) ou PELLEGRINI-STIEDA (côndilo medial, no AP).
+O Campbell (cap. 50) situa a fabela no canto posterolateral: o **ligamento poplíteo oblíquo** corre em direção à **inserção da cabeça lateral do gastrocnêmio** e prende-se lateralmente à fabela; o **fabelofibular** vai da fabela à cabeça da fíbula; a figura do livro desenha a fabela junto à cabeça lateral do gastrocnêmio. O Rockwood and Green (cap. 61) diz que ela é **óssea em 10% a 20% dos joelhos**. No perfil, o ossículo pequeno e corticado **atrás do côndilo femoral lateral** é a fabela, no tendão da **cabeça lateral do gastrocnêmio**; não confundir com corpo livre, SEGOND (planalto lateral, no AP) ou PELLEGRINI-STIEDA (côndilo medial, no AP).
 
 !tabela Estruturas apontadas nas figuras (Campbell 15, caps. 3 e 50; Rockwood and Green 10ª, cap. 61)
 | Estrutura | Onde | Como reconhecer |
@@ -181,7 +181,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2022), parte de um fa
 
 ## SEGOND, SEGOND reversa e arqueado
 
-No lado lateral, um pequeno fragmento da borda do **planalto tibial lateral** é a **fratura de SEGOND**, o **sinal capsular lateral**, que o Campbell (p. 2022 e 2065) chama de **patognomônica de lesão do LCA**. A origem é discutida: o Campbell (p. 1984 aprox.) a atribui ao **ligamento anterolateral (ALL) ou ao trato iliotibial**, não ao bíceps; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), ao **componente meniscotibial da cápsula lateral**, citando também o ALL. A cadeia para a prova: **lasca lateral do planalto no AP = cápsula anterolateral arrancada pela rotação interna = LCA roto**.
+No lado lateral, um pequeno fragmento da borda do **planalto tibial lateral** é a **fratura de SEGOND**, o **sinal capsular lateral**, que o Campbell (p. 2022 e 2065) chama de **patognomônica de lesão do LCA**. A origem é discutida: o Campbell (cap. 50) a atribui ao **ligamento anterolateral (ALL) ou ao trato iliotibial**, não ao bíceps; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), ao **componente meniscotibial da cápsula lateral**, citando também o ALL. A cadeia para a prova: **lasca lateral do planalto no AP = cápsula anterolateral arrancada pela rotação interna = LCA roto**.
 
 O Rockwood and Green (cap. 62) lista, entre as fraturas da borda do planalto **virtualmente patognomônicas de lesão dos cruzados**, a **SEGOND**, a **SEGOND reversa** (o espelho medial), as da borda anteromedial e as da inserção do semimembranoso. O livro não diz, no trecho lido, qual cruzado acompanha a reversa; a associação clássica que a prova cobra é com o **LCP**.
 
@@ -191,7 +191,7 @@ O **sinal arqueado**, segundo o Rockwood and Green (cap. 61), é uma **linha luc
 
 O Campbell (cap. 50, p. 2023 e 2065) descreve ainda a **impactação deprimida do côndilo femoral lateral no sulco terminal**, o **sinal do entalhe femoral lateral**, associado ao LCA: no pivô, o côndilo subluxa e bate na borda posterior do planalto lateral, no mesmo lugar onde a ressonância mostra a contusão.
 
-No lado medial, o Campbell (cap. 10, p. 486) descreve a **calcificação do ligamento colateral tibial**, a **doença de PELLEGRINI-STIEDA**, relacionada a **trauma** (entorse ou ruptura do colateral tibial). O depósito pode regredir sozinho; a infiltração com anestésico e corticoide alivia e pode curar; a excisão fica para a falha. Bursas sob o colateral tibial podem calcificar e imitá-la (p. 488 aprox.). Na radiografia, ela fica **junto ao côndilo femoral medial**: lado oposto à SEGOND, e no fêmur.
+No lado medial, o Campbell (cap. 10, p. 486) descreve a **calcificação do ligamento colateral tibial**, a **doença de PELLEGRINI-STIEDA**, relacionada a **trauma** (entorse ou ruptura do colateral tibial). O depósito pode regredir sozinho; a infiltração com anestésico e corticoide alivia e pode curar; a excisão fica para a falha. Bursas sob o colateral tibial podem calcificar e imitá-la (cap. 10). Na radiografia, ela fica **junto ao côndilo femoral medial**: lado oposto à SEGOND, e no fêmur.
 
 !tabela Sinais radiográficos e a lesão que cada um denuncia (Campbell 15, caps. 10 e 50; Rockwood and Green 10ª, caps. 61 e 62)
 | Sinal | Onde | Lesão associada |
@@ -231,9 +231,9 @@ O Campbell (cap. 50, p. 2065) dá o número que cai: **contusões ósseas aparec
 
 ## LCP, colaterais, mecanismo extensor e cisto poplíteo
 
-O LCP normal é **homogeneamente escuro, curvo e de espessura uniforme**; descontinuidade ou líquido indicam ruptura (cap. 3, p. 162). Por ser mais vertical e central, é mais fácil de captar; a ressonância é **mais confiável para o LCP que para o LCA**, com acurácia **perto de 100%** (cap. 50, p. 2098). O **LCM**, no coronal, é uma banda fina colada ao menisco medial: edema ao redor nas lesões leves, espessamento ou descontinuidade nas graves, que a ressonância gradua com menos precisão (cap. 3, p. 162). No **mecanismo extensor**, a ruptura completa mostra falha com líquido; a parcial, espessamento com edema; a tendinite, espessamento com baixo sinal preservado (p. 163 aprox.). Na **osteocondrite**, líquido em T2 ao redor do fragmento indica instabilidade (p. 164).
+O LCP normal é **homogeneamente escuro, curvo e de espessura uniforme**; descontinuidade ou líquido indicam ruptura (cap. 3, p. 162). Por ser mais vertical e central, é mais fácil de captar; a ressonância é **mais confiável para o LCP que para o LCA**, com acurácia **perto de 100%** (cap. 50, p. 2098). O **LCM**, no coronal, é uma banda fina colada ao menisco medial: edema ao redor nas lesões leves, espessamento ou descontinuidade nas graves, que a ressonância gradua com menos precisão (cap. 3, p. 162). No **mecanismo extensor**, a ruptura completa mostra falha com líquido; a parcial, espessamento com edema; a tendinite, espessamento com baixo sinal preservado (cap. 3). Na **osteocondrite**, líquido em T2 ao redor do fragmento indica instabilidade (p. 164).
 
-O **cisto de BAKER** fica no lado medial da fossa poplítea; o que confirma é o **colo comunicando com a articulação entre a cabeça medial do gastrocnêmio e o semimembranoso**, o que evita confundi-lo com aneurisma ou tumor; roto, simula tromboflebite (cap. 3, p. 163 aprox.). O Campbell (cap. 10, p. 489 aprox.) explica que ele é, quase sempre, uma **bursa distendida**.
+O **cisto de BAKER** fica no lado medial da fossa poplítea; o que confirma é o **colo comunicando com a articulação entre a cabeça medial do gastrocnêmio e o semimembranoso**, o que evita confundi-lo com aneurisma ou tumor; roto, simula tromboflebite (cap. 3). O Campbell (cap. 10) explica que ele é, quase sempre, uma **bursa distendida**.
 
 !tabela Sinais de ruptura do LCA (Campbell 15, cap. 3, p. 162; cap. 50, p. 2022 a 2066)
 | Tipo | Sinal |
@@ -255,7 +255,7 @@ alerta: Questão sem gabarito oficial no acervo; o Campbell's Operative Orthopae
 
 # Radiografias de estresse {radar=confirmado}
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2023), diz que o estresse **raramente é necessário no agudo** com bom exame físico, mas ajuda na **instabilidade sutil crônica** e na **revisão do LCA**, porque a frouxidão lateral contribui para a falha do enxerto. Os limiares em varo estão no texto: **lesão isolada do LCL quando a abertura lateral aumenta cerca de 2,7 mm; lesão grau III do canto posterolateral quando aumenta cerca de 4 mm**. Uma abertura de 3 mm fica na faixa do **LCL isolado**. O raciocínio é anatômico: o colateral fibular é o **estabilizador estático primário contra o varo entre 0 e 30 graus** (p. 1988 aprox.); o compartimento só abre mais quando poplíteo, popliteofibular e cápsula também se rompem.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2023), diz que o estresse **raramente é necessário no agudo** com bom exame físico, mas ajuda na **instabilidade sutil crônica** e na **revisão do LCA**, porque a frouxidão lateral contribui para a falha do enxerto. Os limiares em varo estão no texto: **lesão isolada do LCL quando a abertura lateral aumenta cerca de 2,7 mm; lesão grau III do canto posterolateral quando aumenta cerca de 4 mm**. Uma abertura de 3 mm fica na faixa do **LCL isolado**. O raciocínio é anatômico: o colateral fibular é o **estabilizador estático primário contra o varo entre 0 e 30 graus** (cap. 50); o compartimento só abre mais quando poplíteo, popliteofibular e cápsula também se rompem.
 
 Para o LCP (p. 2098), o estresse com **89 N** posterior e perfil a **70 graus** é superior ao artrômetro; **8 mm ou mais de translação posterior indicam ruptura completa**; o estresse **ajoelhado** a 90 graus compara os dois lados. Com a ressonância disponível, os autores quase só usam o estresse no **LCP crônico que parece cicatrizado** na ressonância (p. 2066).
 
@@ -281,7 +281,7 @@ armadilha: Achar que qualquer abertura em varo envolve o poplíteo ou todo o can
 
 ## Por que medir
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52, p. 2194 aprox.), explica: até 20 graus de flexão, a patela é segura pelo LPFM e pelo vasto medial oblíquo; a partir de 30 graus, pela tróclea óssea. Na **patela alta**, ela demora a entrar na tróclea e fica mais tempo dependendo só das partes moles; por isso a alta predispõe à instabilidade.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52), explica: até 20 graus de flexão, a patela é segura pelo LPFM e pelo vasto medial oblíquo; a partir de 30 graus, pela tróclea óssea. Na **patela alta**, ela demora a entrar na tróclea e fica mais tempo dependendo só das partes moles; por isso a alta predispõe à instabilidade.
 
 ## BLUMENSAAT e os atalhos
 
@@ -357,7 +357,7 @@ alerta: Questão sem gabarito oficial no acervo; o Campbell's Operative Orthopae
 
 # A luxação da patela na imagem {radar=confirmado}
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52, p. 2194 aprox.), descreve a lesão da luxação lateral: ruptura do **LPFM** e defeito condral na **faceta medial da patela e/ou no côndilo femoral lateral**. O capítulo 3 (p. 164) mostra o padrão no axial com supressão de gordura: **edema sob a faceta medial da patela e na face lateral do côndilo femoral lateral**, com **nível hematócrito** no derrame, que indica **luxação lateral recente**. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 16), dá o nome: **kissing bones**, edema da parte medial da patela e da parte lateral do côndilo femoral lateral pela **colisão durante a redução**.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52), descreve a lesão da luxação lateral: ruptura do **LPFM** e defeito condral na **faceta medial da patela e/ou no côndilo femoral lateral**. O capítulo 3 (p. 164) mostra o padrão no axial com supressão de gordura: **edema sob a faceta medial da patela e na face lateral do côndilo femoral lateral**, com **nível hematócrito** no derrame, que indica **luxação lateral recente**. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 16), dá o nome: **kissing bones**, edema da parte medial da patela e da parte lateral do côndilo femoral lateral pela **colisão durante a redução**.
 
 O mecanismo resolve sem decorar: a patela sai para fora e, ao voltar, a **faceta medial** bate na **borda lateral do côndilo femoral lateral**. Lados opostos de cada osso. No LCA, as contusões ficam no **compartimento tibiofemoral lateral**; os dois padrões dividem o côndilo femoral lateral, em lugares diferentes.
 
@@ -385,7 +385,7 @@ A classificação de **KELLGREN-LAWRENCE** gradua de **0 (nenhuma) a 4 (grave)**
 
 ## A deformidade e a frouxidão lateral
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 10, p. 499), afirma que **a deformidade mais comum na artrose é o varo**, que concentra carga no lado medial. Quando o medial perde altura, o eixo passa para dentro, as estruturas laterais são estiradas a cada passo e afrouxam: na fase de apoio, a **fenda lateral abre**. O Campbell (cap. 50, p. 2048 aprox.) descreve a forma completa, o **triplo varo de NOYES**: **varo ósseo, instabilidade em varo de partes moles e impulso lateral (thrust) no apoio**; nesses joelhos, reconstruções de partes moles isoladas falham, e a osteotomia valgizante vem antes ou junto. O **duplo varo** é o degrau anterior: ao varo ósseo soma-se a **abertura lateral por afrouxamento**.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 10, p. 499), afirma que **a deformidade mais comum na artrose é o varo**, que concentra carga no lado medial. Quando o medial perde altura, o eixo passa para dentro, as estruturas laterais são estiradas a cada passo e afrouxam: na fase de apoio, a **fenda lateral abre**. O Campbell (cap. 50) descreve a forma completa, o **triplo varo de NOYES**: **varo ósseo, instabilidade em varo de partes moles e impulso lateral (thrust) no apoio**; nesses joelhos, reconstruções de partes moles isoladas falham, e a osteotomia valgizante vem antes ou junto. O **duplo varo** é o degrau anterior: ao varo ósseo soma-se a **abertura lateral por afrouxamento**.
 
 ## A osteotomia lida na radiografia
 
@@ -421,7 +421,7 @@ armadilha: Escolher a unicompartimental, que o HEBERT reserva para LCA íntegro 
 
 # A criança e o adolescente {radar=clinico}
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40, p. 2021), pede na suspeita de lesão ligamentar **AP, perfil, túnel e axial**, olhando primeiro as **fises**; procura **avulsão da espinha tibial**, fraturas fisárias e avulsões dos colaterais. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2022), lembra que na criança **a avulsão das eminências é mais comum que a ruptura do cruzado**. A ressonância (Campbell, cap. 3, p. 164 aprox.) mostra a **fratura fisária oculta** (SALTER-HARRIS II com edema em T2) e a **barra fisária** no gradiente-eco.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40, p. 2021), pede na suspeita de lesão ligamentar **AP, perfil, túnel e axial**, olhando primeiro as **fises**; procura **avulsão da espinha tibial**, fraturas fisárias e avulsões dos colaterais. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2022), lembra que na criança **a avulsão das eminências é mais comum que a ruptura do cruzado**. A ressonância (Campbell, cap. 3) mostra a **fratura fisária oculta** (SALTER-HARRIS II com edema em T2) e a **barra fisária** no gradiente-eco.
 
 No **menisco discoide**, o Tachdjian (p. 2014) lista **espaço lateral alargado** (melhor com os dois joelhos no mesmo filme), **côndilo lateral achatado**, **planalto lateral em taça** e **cabeça da fíbula alta**; a ressonância é diagnóstica, mas nem sempre mostra a instabilidade. O Campbell (cap. 3, p. 162) dá o critério: **gravata-borboleta lateral em mais de três sagitais contíguos**. Na patela, o Tachdjian (p. 2012) descreve o **SINDING-LARSEN-JOHANSSON** (ossículo no polo inferior) e a **bipartida**, bilateral em 25%; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 60), lembra que a bipartida é **superolateral, de bordas lisas e corticadas**, e que a radiografia do outro lado confirma.
 

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-54-transtrocanterica
-versao: 5
+versao: 6
 titulo: Fratura transtrocantérica
 especialidade: trauma
 acesso: gratis
@@ -280,7 +280,7 @@ conceito: O algoritmo inteiro cabe em três linhas: A1 com DHS, A2 e A3 com hast
 
 O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54), conta a história em uma linha: **Boyd e Evans** propuseram classificações em **1949**, e **MÜLLER** trouxe a AO em **1990**. Os subgrupos da AO (cada grupo dividido em mais três) não mudam o tratamento e variam demais entre observadores; o que fica são os três grupos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60), detalha a de **BOYD e GRIFFIN**, que ainda aparece em prova como pano de fundo, e chama a AO/OTA de **"provavelmente a mais útil"**, porque permite comparar resultados entre estudos.
 
-!tabela BOYD e GRIFFIN, 1949 (Campbell's Operative Orthopaedics, 15ª ed., cap. 60, pág. 2665 aprox. e 2666)
+!tabela BOYD e GRIFFIN, 1949 (Campbell's Operative Orthopaedics, 15ª ed., cap. 60)
 | Tipo | O que mostra | Leitura prática |
 | --- | --- | --- |
 | 1 | Traço ao longo da linha intertrocantérica | Duas partes, a mais simples |
@@ -309,7 +309,7 @@ A basocervical (31B2.1) corre ao longo da linha intertrocantérica e se confunde
 
 O resumo já mostrou por que a parede lateral é o batente da fixação. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60), traz os números que dão peso a essa ideia, e eles explicam por que o DHS virou implante de fratura estável.
 
-!tabela Parede lateral: o que os estudos mediram (Campbell's Operative Orthopaedics, 15ª ed., cap. 60, pág. 2670 aprox. e 2673 aprox.; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, seção Trochanteric Fractures With Loss of Lateral Support)
+!tabela Parede lateral: o que os estudos mediram (Campbell's Operative Orthopaedics, 15ª ed., cap. 60; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, seção Trochanteric Fractures With Loss of Lateral Support)
 | Achado | Número |
 | --- | --- |
 | Segunda cirurgia em 6 meses quando a parede lateral estava fraturada (A3 ou fratura iatrogênica em A1 e A2) com DHS | 22% |

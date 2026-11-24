@@ -1,6 +1,6 @@
 ---
 id: green-kienbock
-versao: 2
+versao: 3
 titulo: Doença de KIENBÖCK
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017)
 capitulo: Capítulo 16 · Fractures of the Carpal Bones
 autores: Steve K. Lee
-fonte: Livros conferidos localmente em 01/11/2026 e revistos em 17/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 16 (p. 637 a 647, irrigação do semilunar e osteonecrose de KIENBÖCK, com a lista de referências do capítulo, p. 649 a 652), cap. 17 (p. 691 e 692, classificação artroscópica), cap. 13 (p. 464) e cap. 12 (p. 380 a 389, artrodeses intercárpicas); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (p. 3308 a 3314, fraturas do semilunar e doença de KIENBÖCK, e p. 3293 aprox., PREISER); Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 358); Rockwood and Wilkins' Fractures in Children, 10ª ed.; LICHTMAN, LESLEY e SIMMONS (J Hand Surg Eur, 2010; PMID 20621943), SCHMITT e KALB (Handchir Mikrochir Plast Chir, 2010; PMID 20552545) e o relato de ROCHA (J Orthop Case Rep, 2025; PMID 41281835), conferidos no PubMed em 17/11/2026. As fraturas agudas do semilunar (TEISEN e HJARBAEK), a doença de PREISER e a necrose do capitato estão no resumo green-fraturas-carpo.
+fonte: Livros conferidos localmente em 01/11/2026 e revistos em 17/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 16 (p. 637 a 647, irrigação do semilunar e osteonecrose de KIENBÖCK, com a lista de referências do capítulo, p. 649 a 652), cap. 17 (p. 691 e 692, classificação artroscópica), cap. 13 (p. 464) e cap. 12 (p. 380 a 389, artrodeses intercárpicas); Campbell's Operative Orthopaedics, 15ª ed., cap. 74 (p. 3308 a 3314, fraturas do semilunar e doença de KIENBÖCK; PREISER); Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 358); Rockwood and Wilkins' Fractures in Children, 10ª ed.; LICHTMAN, LESLEY e SIMMONS (J Hand Surg Eur, 2010; PMID 20621943), SCHMITT e KALB (Handchir Mikrochir Plast Chir, 2010; PMID 20552545) e o relato de ROCHA (J Orthop Case Rep, 2025; PMID 41281835), conferidos no PubMed em 17/11/2026. As fraturas agudas do semilunar (TEISEN e HJARBAEK), a doença de PREISER e a necrose do capitato estão no resumo green-fraturas-carpo.
 subtemas: Doença de Kienböck
 resumo: Homem de 15 a 40 anos, punho dominante, trabalhador manual; padrão vascular em I (vaso único) é o de maior risco; ulna minus em 78% (HULTÉN), mas a relação é controversa; RM com T1 baixo em todo o semilunar; LICHTMAN I RM, II esclerose sem colapso, IIIA colapso com carpo alinhado, IIIB capitato migrado e escafoide fletido (rotação fixa, ângulo radioescafoide maior que 60°), IV artrose; BAIN e BEGG conta superfícies articulares não funcionais; ulna minus sem colapso = encurtar o rádio 2 a 3 mm; ulna neutra = encurtamento do capitato de ALMQUIST, cunha radial ou revascularização (4ª e 5ª ACE); IIIB = carpectomia proximal, STT ou escafocapitato; IV = artrodese do punho ou carpectomia; preferência do autor: salvável com ulna negativa = encurtar o rádio com neurectomia do interósseo posterior, salvável com ulna neutra ou positiva = enxerto da 4ª e 5ª ACE.
 ---

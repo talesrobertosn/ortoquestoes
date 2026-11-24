@@ -1,6 +1,6 @@
 ---
 id: campbell15-osteocondral-talus
-versao: 2
+versao: 3
 titulo: Lesões osteocondrais do tálus
 especialidade: pe-tornozelo
 acesso: gratis
@@ -241,7 +241,7 @@ A RM vê a cartilagem, o edema e o líquido. Por isso as classificações de RM 
 Três detalhes que diferenciam as classificações e costumam ser cobrados:
 
 - **ANDERSON** é a que começa no **edema medular** com radiografia negativa e cintilografia positiva, e divide o estágio 2 em **2a (cisto subcondral)** e **2b (separação incompleta)**.
-- **HEPPLE** é a que começa na **lesão só da cartilagem** e termina no **estágio 5, cisto subcondral**; o 2 se divide pela presença (2a) ou ausência (2b) de edema ósseo. O capítulo 3 do Campbell (p. 157, aprox.) acrescenta que na classificação de HEPPLE a estabilidade é inferida pela cartilagem sobrejacente e pela interface óssea, e que a TC complementa a RM quando se suspeitam avulsões ósseas ou calcificações intra-articulares.
+- **HEPPLE** é a que começa na **lesão só da cartilagem** e termina no **estágio 5, cisto subcondral**; o 2 se divide pela presença (2a) ou ausência (2b) de edema ósseo. O capítulo 3 do Campbell acrescenta que na classificação de HEPPLE a estabilidade é inferida pela cartilagem sobrejacente e pela interface óssea, e que a TC complementa a RM quando se suspeitam avulsões ósseas ou calcificações intra-articulares.
 - **DIPAOLA** é a que usa o **sinal atrás do fragmento**: halo de baixo sinal (2) é tecido fibroso, que prende; alto sinal (3) é líquido, que solta.
 
 ## As classificações artroscópicas
@@ -283,7 +283,7 @@ Os outros fatores que aparecem nos livros completam o quadro:
 - **Cisto subcondral e ombro do tálus:** entram no algoritmo de STEELE (cap. 55, p. 2320).
 - **Lesão aguda ou crônica:** no III e IV agudos, o fragmento muitas vezes pode ser refixado (cap. 94, p. 4164).
 
-Sexo, genética e índice de massa corporal não aparecem no Campbell como fatores de decisão. O Tachdjian cita **sexo feminino e índice de massa corporal elevado como preditores de pior resultado** na criança operada (p. 2042, aprox.), o que é diferente de serem critérios para escolher o tratamento.
+Sexo, genética e índice de massa corporal não aparecem no Campbell como fatores de decisão. O Tachdjian cita **sexo feminino e índice de massa corporal elevado como preditores de pior resultado** na criança operada, o que é diferente de serem critérios para escolher o tratamento.
 
 ## O algoritmo pelo tamanho
 
@@ -406,7 +406,7 @@ alerta: O Campbell (cap. 94, p. 4164) e o HEBERT põem o estágio II no tratamen
 
 No **estágio III e IV agudos**, o fragmento muitas vezes pode ser **refixado com parafusos ou pinos permanentes ou absorvíveis** (Campbell, cap. 94, p. 4164). A Fig. 94.53 mostra uma lesão medial grande numa fratura bimaleolar presa com pino absorvível e cicatrizada meses depois. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 66), descreve o mesmo para as fraturas do tálus: fragmentos osteocondrais são fixados com **parafusos sem cabeça ou pinos de poli-L-lactídeo (PLLA)**, e a Fig. 66-23 mostra uma fratura osteocondral da cúpula medial estabilizada com pinos absorvíveis.
 
-O Tachdjian dá o critério: o estágio III com **fibrilação mínima da cartilagem** é tratado como o II, mas o fragmento deve ser **estabilizado com fixação interna** (fios de KIRSCHNER retrógrados temporários, pinos absorvíveis, parafusos de compressão sem cabeça), com 6 a 8 semanas sem carga (p. 2042, aprox.). No **III crônico com cartilagem esgarçada**, ele prefere **excisar e perfurar ou abradir o leito**, desbridando até osso sangrante e até a periferia de cartilagem boa.
+O Tachdjian dá o critério: o estágio III com **fibrilação mínima da cartilagem** é tratado como o II, mas o fragmento deve ser **estabilizado com fixação interna** (fios de KIRSCHNER retrógrados temporários, pinos absorvíveis, parafusos de compressão sem cabeça), com 6 a 8 semanas sem carga. No **III crônico com cartilagem esgarçada**, ele prefere **excisar e perfurar ou abradir o leito**, desbridando até osso sangrante e até a periferia de cartilagem boa.
 
 Para lesões grandes, o fragmento pode ser recolocado com pinos e enxerto, como no joelho, **desde que tenha osso esponjoso subcondral viável** (cap. 94, p. 4168). É tecnicamente difícil, e a não união pode obrigar a retirar os pinos e o fragmento. O capítulo 38 (Fig. 38.193, p. 1478) mostra um fragmento lateral grande fixado com pino retrógrado, com osteotomia do maléolo lateral para exposição.
 
@@ -425,7 +425,7 @@ Para as lesões grandes, o Campbell descreve o preenchimento com **matriz de car
 - **OATS** (transplante osteocondral autólogo ou alógeno): **um único cilindro** de osso com cartilagem.
 - **Mosaicoplastia:** retirada e transplante de **vários cilindros menores**.
 
-A mosaicoplastia pode ser feita para defeitos **maiores que 10 mm**, com cilindros do **joelho ipsilateral** entregues por formões tubulares; bons a excelentes resultados em até **94%** (cap. 94, p. 4169, aprox.). A dificuldade é reproduzir uma superfície lisa com os cilindros. LATT e colaboradores mostraram que o **enxerto elevado aumenta a pressão de contato**: o ideal é deixar o máximo rente, e um leve rebaixamento é melhor que elevação. O HEBERT indica a mosaicoplastia no **adolescente com fises fechadas e lesões maiores que 15 mm**.
+A mosaicoplastia pode ser feita para defeitos **maiores que 10 mm**, com cilindros do **joelho ipsilateral** entregues por formões tubulares; bons a excelentes resultados em até **94%** (cap. 94). A dificuldade é reproduzir uma superfície lisa com os cilindros. LATT e colaboradores mostraram que o **enxerto elevado aumenta a pressão de contato**: o ideal é deixar o máximo rente, e um leve rebaixamento é melhor que elevação. O HEBERT indica a mosaicoplastia no **adolescente com fises fechadas e lesões maiores que 15 mm**.
 
 ## A técnica de HANGODY
 
@@ -450,13 +450,13 @@ A técnica 94.12 (HANGODY e colaboradores) tem números que podem cair:
 
 Para lesões **muito grandes (maiores que 12 mm)**, muitas vezes é preciso um **"mega-OATS" com aloenxerto fresco de tálus** (cap. 94, p. 4168). O aloenxerto de tálus tem uma vantagem clara: **evita a morbidade da retirada** do fêmur ou do tálus do próprio paciente. Em geral se usa o tálus do mesmo lado, para casar a forma. O aloenxerto fresco é colhido em até **24 horas após o óbito**, testado para doenças e esterilidade e deve ser implantado idealmente em **1 semana**; não há evidência clara de que o fresco seja superior ao fresco-congelado, que é processado e mantido refrigerado.
 
-O capítulo 55 (p. 2321, aprox.) mostra o outro lado: o aloenxerto em lesões grandes melhora a função e **adia ou até evita a artrodese ou a artroplastia**, mas a falha clínica foi de **13%**, a reoperação de **25%** e a revisão de **9%**. A mosaicoplastia e a microfratura com ou sem plasma rico em plaquetas têm bons resultados de médio prazo; a mosaicoplastia pode ser preferida quando o controle da dor importa.
+O capítulo 55 mostra o outro lado: o aloenxerto em lesões grandes melhora a função e **adia ou até evita a artrodese ou a artroplastia**, mas a falha clínica foi de **13%**, a reoperação de **25%** e a revisão de **9%**. A mosaicoplastia e a microfratura com ou sem plasma rico em plaquetas têm bons resultados de médio prazo; a mosaicoplastia pode ser preferida quando o controle da dor importa.
 
 O capítulo 11 do Campbell lembra que o fracasso da cirurgia da lesão osteocondral é uma das situações da artroplastia do tornozelo: as taxas de revisão e reoperação dos procedimentos de salvamento após falha do aloenxerto osteocondral são maiores que as da artrodese e da artroplastia primárias, mas o aloenxerto pode servir de **procedimento intermediário no paciente jovem**.
 
 ## Condrócitos
 
-O **transplante de condrócitos autólogos** é mais usado no joelho, mas há bons resultados no tornozelo **até 5 anos** de seguimento, e existe técnica artroscópica (cap. 94, p. 4169, aprox.). No **MACI**, os condrócitos cultivados ficam numa **matriz biológica que é ao mesmo tempo veículo e arcabouço** do reparo; os estudos ainda são limitados. Para lesões grandes, há a técnica **"sanduíche"**: enxerto esponjoso no defeito e os condrócitos entre dois retalhos de periósteo. O Tachdjian reserva enxerto osteocondral e condrócitos para **lesões recalcitrantes**, por causa da morbidade do sítio doador e da osteotomia maleolar muitas vezes necessária (p. 2042, aprox.).
+O **transplante de condrócitos autólogos** é mais usado no joelho, mas há bons resultados no tornozelo **até 5 anos** de seguimento, e existe técnica artroscópica (cap. 94). No **MACI**, os condrócitos cultivados ficam numa **matriz biológica que é ao mesmo tempo veículo e arcabouço** do reparo; os estudos ainda são limitados. Para lesões grandes, há a técnica **"sanduíche"**: enxerto esponjoso no defeito e os condrócitos entre dois retalhos de periósteo. O Tachdjian reserva enxerto osteocondral e condrócitos para **lesões recalcitrantes**, por causa da morbidade do sítio doador e da osteotomia maleolar muitas vezes necessária.
 
 # Vias de acesso: como chegar à lesão {radar=confirmado}
 
@@ -489,7 +489,7 @@ A via de **GATELLIER e CHASTANG** (1924) é uma via **posterolateral transfibula
 
 A técnica explica a anatomia: incisão ao longo da borda posterior da fíbula, tendões fibulares deslocados para a frente, membrana interóssea e ligamentos tibiofibulares anterior e posterior divididos, e **os ligamentos calcaneofibular e talofibulares preservados como dobradiça** para virar a fíbula lateralmente. No fechamento, um parafuso de sindesmose com **sobreperfuração da fíbula** e o tornozelo em **dorsiflexão** (a cúpula é mais larga na frente); sem sobreperfuração, a sindesmose e a pinça alargam e a tibiotalar degenera. Na criança, cuidado com a **fise distal da fíbula** ao virar o osso. É pouco usada hoje pela agressão às partes moles.
 
-A alternativa moderna para lesões laterais extensas é a via anterolateral de **TOCHIGI, AMENDOLA, MUIR e SALTZMAN**: uma osteotomia da tíbia anterolateral que inclui o ligamento tibiofibular anterior, com fragmento de pelo menos 1 cm², recolocado com parafuso esponjoso de 4 mm e arruela (cap. 1, p. 19, aprox.). Ela substitui a osteotomia do maléolo lateral e expõe **tudo menos o quarto posterior** do tálus lateral. Na técnica de HANGODY, a osteotomia do maléolo lateral é rara, reservada às lesões posterolaterais (cap. 94, p. 4169).
+A alternativa moderna para lesões laterais extensas é a via anterolateral de **TOCHIGI, AMENDOLA, MUIR e SALTZMAN**: uma osteotomia da tíbia anterolateral que inclui o ligamento tibiofibular anterior, com fragmento de pelo menos 1 cm², recolocado com parafuso esponjoso de 4 mm e arruela (cap. 1). Ela substitui a osteotomia do maléolo lateral e expõe **tudo menos o quarto posterior** do tálus lateral. Na técnica de HANGODY, a osteotomia do maléolo lateral é rara, reservada às lesões posterolaterais (cap. 94, p. 4169).
 
 !questoes central=pe-tornozelo-0085
 conceito: GATELLIER e CHASTANG é uma via posterolateral transfibular (fíbula virada lateralmente sobre a dobradiça dos ligamentos calcaneofibular e talofibulares), usada para fraturas do maléolo posterior e para a osteocondrite dissecante da parte lateral da cúpula do tálus.
@@ -517,7 +517,7 @@ O Tachdjian é mais cauteloso: a maioria não está unida aos 6 meses, um terço
 
 ## A lesão que acompanha a fratura
 
-Lesões osteocondrais aparecem em **26% das fraturas WEBER B, 24% das WEBER C e 20% das fraturas isoladas do maléolo medial** (CHAN e colaboradores); DA CUNHA achou lesão condral em **78%** e da cúpula do tálus em **43%** das fraturas agudas (cap. 55, p. 2321, aprox.). Quando a lesão vem com a fratura, o acesso costuma ser fácil (cap. 94, eBook), e o fragmento agudo pode ser refixado.
+Lesões osteocondrais aparecem em **26% das fraturas WEBER B, 24% das WEBER C e 20% das fraturas isoladas do maléolo medial** (CHAN e colaboradores); DA CUNHA achou lesão condral em **78%** e da cúpula do tálus em **43%** das fraturas agudas (cap. 55). Quando a lesão vem com a fratura, o acesso costuma ser fácil (cap. 94, eBook), e o fragmento agudo pode ser refixado.
 
 # O nome na prova: osteocondrite da cúpula talar e a doença de KAPPIS {radar=confirmado}
 

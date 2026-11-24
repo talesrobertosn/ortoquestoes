@@ -1,6 +1,6 @@
 ---
 id: green-amputacoes-reimplantes
-versao: 5
+versao: 6
 titulo: Amputações e reimplantes na mão
 especialidade: mao
 acesso: gratis
@@ -1053,7 +1053,7 @@ A perda do polegar vale **40 a 50%** da mão; reconstrói-se sensibilidade, esta
 
 O Green's Operative Hand Surgery, 7ª ed. (cap. 48, p. 1696), escolhe pelo nível. Com a **basal preservada**, o dedo do pé é a escolha ótima; a **distração** do metacarpal dá **3 a 4 cm** (MATEV está nas referências); a **osteoplástica** cobre um enxerto ósseo com retalho pediculado (NICOLADONI, 1897). Na versão em dois tempos, um **retalho inguinal** pela circunflexa ilíaca superficial é **tubulizado** sobre um enxerto **tricortical da crista ilíaca**, e depois uma ilha neurovascular do médio dá sensibilidade (p. 1696 e 1697). O enxerto mede 7 a 8 mm de espessura, 5 a 6 cm de comprimento e 1,5 cm de largura; o retalho tem pelo menos 7,5 por 12 cm; a divisão vai de pouco mais de 8 dias a 4 semanas. Os problemas históricos da osteoplástica eram a falta de sensibilidade e a **reabsorção do enxerto**; MOBERG e LITTLER resolveram a primeira com a ilha neurovascular. Variantes são o retalho de GILLIES em "chapéu armado" e a ilha radial composta, com rádio vascularizado num só tempo. Quando o indicador ou o médio também foram amputados, a transposição do **coto lesado** para o polegar é, para o Green, a mais prática das reconstruções: usa partes sem função e com ótima sensibilidade e ainda aprofunda a comissura (p. 1700 a 1703).
 
-Com a **basal destruída**, a policização vence porque **a MF hiperextendida pode substituir a articulação basal** (Green, cap. 48, p. 1703 aprox.): a **MF do indicador vira a nova CMC**. O Campbell (cap. 21, p. 776) descreve a técnica de FOUCHER: a cabeça é **fixada em flexão para evitar hiperextensão** da nova CMC; o **primeiro interósseo dorsal** e o extensor próprio do indicador dão **abdução**; o segundo interósseo palmar e o adutor dão adução; BUCK-GRAMCKO gira o dedo 160 graus, terminando em 120. A divergência entre hiperextensão e flexão é a que a prova cobra.
+Com a **basal destruída**, a policização vence porque **a MF hiperextendida pode substituir a articulação basal** (Green, cap. 48, p. 1703): a **MF do indicador vira a nova CMC**. O Campbell (cap. 21, p. 776) descreve a técnica de FOUCHER: a cabeça é **fixada em flexão para evitar hiperextensão** da nova CMC; o **primeiro interósseo dorsal** e o extensor próprio do indicador dão **abdução**; o segundo interósseo palmar e o adutor dão adução; BUCK-GRAMCKO gira o dedo 160 graus, terminando em 120. A divergência entre hiperextensão e flexão é a que a prova cobra.
 
 !tabela Reconstrução do polegar por nível (Green, cap. 48, p. 1695 a 1705; Campbell, cap. 21, p. 766 e 771 a 776)
 | Nível | Opções |

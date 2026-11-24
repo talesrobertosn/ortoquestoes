@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-deficiencias-membros
-versao: 3
+versao: 4
 titulo: Deficiências dos membros na criança
 especialidade: pediatria
 acesso: gratis
@@ -137,10 +137,10 @@ Para entender por que existem deficiências transversais, longitudinais, pré-ax
 
 O mesmo raciocínio explica os quadros "por segmento": quando falha o Shox2, a displasia é rizomélica; quando falha o Shox, mesomélica; quando falham os dois, aparece a **focomelia**. A perda de FGF numa área que não depende de SHH tira as estruturas radiais, e é assim que o livro explica a **deficiência radial** (p. 874).
 
-**O relógio.** Às 6 semanas as extremidades já são placas de mão e pé com raios digitais. Na 7ª semana o membro superior **gira 90° para lateral** (o polegar vai para fora) e o inferior **gira 90° para medial** (o hálux vai para dentro). Na 8ª semana todos os segmentos estão completos, e às 12 semanas todos os ossos longos têm centro de ossificação (p. 873 e 874). O período sensível tem pico na **5ª e 6ª semanas**: as grandes deficiências do membro superior nascem por volta do **28º dia**, as do inferior no **31º**, e as distais nos dias 35 e 37 (p. 880, aprox.).
+**O relógio.** Às 6 semanas as extremidades já são placas de mão e pé com raios digitais. Na 7ª semana o membro superior **gira 90° para lateral** (o polegar vai para fora) e o inferior **gira 90° para medial** (o hálux vai para dentro). Na 8ª semana todos os segmentos estão completos, e às 12 semanas todos os ossos longos têm centro de ossificação (p. 873 e 874). O período sensível tem pico na **5ª e 6ª semanas**: as grandes deficiências do membro superior nascem por volta do **28º dia**, as do inferior no **31º**, e as distais nos dias 35 e 37 (p. 880).
 
 **Malformação não é deformação.** A malformação é um erro na formação, que só pode ocorrer nesse período inicial. A deformação é uma força externa sobre uma estrutura já formada e pode surgir em qualquer fase da gestação; a **banda amniótica** é o exemplo clássico de deformação, e o livro estima que a síndrome ocorra por volta da 6ª semana (p. 880 e 881).
-**Causa e recorrência.** Na maioria das deficiências a causa é desconhecida e o padrão é esporádico. A recorrência da mesma anomalia em irmãos fica em **1% a 3%**, pouco acima da população geral. A **talidomida** é o único medicamento ligado a um grande número de deficiências; há um relato de hemimelia fibular com deficiência femoral após tentativa de aborto com misoprostol (p. 880, aprox.).
+**Causa e recorrência.** Na maioria das deficiências a causa é desconhecida e o padrão é esporádico. A recorrência da mesma anomalia em irmãos fica em **1% a 3%**, pouco acima da população geral. A **talidomida** é o único medicamento ligado a um grande número de deficiências; há um relato de hemimelia fibular com deficiência femoral após tentativa de aborto com misoprostol (p. 880).
 
 **A nomenclatura internacional.** O sistema ISO/ISPO (1991) chama tudo de transversal ou longitudinal, porque seus autores entendem que **não existem deficiências intercalares verdadeiras**, apenas graus de deficiência longitudinal. A precisão anatômica é ótima, mas os nomes ficaram tão longos que o uso clínico não pegou (p. 876 e 877). No FRANTZ e O'RAHILLY, o termo paraxial é o antigo longitudinal. No glossário, **pré-axial** é o lado do rádio e da tíbia, **pós-axial** o da ulna e da fíbula, e **hemimelia** é a ausência de um dos ossos pareados (Box 21.2, p. 878).
 
@@ -163,7 +163,7 @@ Antes de pensar no osso, o Tachdjian (cap. 21) pede que se examinem **sistema cr
 
 **A hemimelia tibial é exceção.** Entre as deficiências do membro inferior, é uma das poucas com padrão hereditário frequente (p. 882), e a tíbia ausente com polidactilia, autossômica dominante, também traz cardiopatia (Box 21.4).
 
-**A família e a criança.** A criança com deficiência congênita **não sente perda** e não precisa de período de adaptação; o grau da deficiência não se associa a depressão, ansiedade ou problemas de comportamento na infância, embora possa afetar a autoestima do adolescente (p. 883). O livro recomenda que a família conheça outras crianças já tratadas antes de decidir entre alongar e amputar, e lembra o estudo do Texas Scottish Rite Hospital: **metade** dos pacientes alongados teve piora do estado mental, muitas vezes com depressão, e em cerca de **20%** o resultado foi comprometido por um fator psicológico (p. 879, aprox.). Um menino com amelia dos dois membros superiores e DFFP à direita, que usa o pé como mão, é o exemplo do livro de quem **nunca deve receber cirurgia ablativa** (Fig. 21.11, p. 884).
+**A família e a criança.** A criança com deficiência congênita **não sente perda** e não precisa de período de adaptação; o grau da deficiência não se associa a depressão, ansiedade ou problemas de comportamento na infância, embora possa afetar a autoestima do adolescente (p. 883). O livro recomenda que a família conheça outras crianças já tratadas antes de decidir entre alongar e amputar, e lembra o estudo do Texas Scottish Rite Hospital: **metade** dos pacientes alongados teve piora do estado mental, muitas vezes com depressão, e em cerca de **20%** o resultado foi comprometido por um fator psicológico (p. 879). Um menino com amelia dos dois membros superiores e DFFP à direita, que usa o pé como mão, é o exemplo do livro de quem **nunca deve receber cirurgia ablativa** (Fig. 21.11, p. 884).
 
 # DFFP: as outras classificações e a radiografia do AITKEN {radar=confirmado}
 

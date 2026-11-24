@@ -1,6 +1,6 @@
 ---
 id: hebert-biomecanica-pe
-versao: 2
+versao: 3
 titulo: Biomecânica e marcha do pé e tornozelo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e c
 edicao: 5ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 3, 11, 12, 17, 31, 55, 88, 89, 90, 93 e 94), o Rockwood and Green's Fractures in Adults, 10ª ed. (caps. 65 e 68) e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (caps. 5 e 19)
 capitulo: Capítulo 1 · Marcha normal e patológica, com os Capítulos 20.4 · Pé plano, 21.1 · Talalgias, 21.2 · Lesões tendíneas e 69 · Fraturas e lesões do tornozelo no adulto do mesmo livro e os Capítulos 11 · Total Ankle Arthroplasty, 12 · Ankle Arthrodesis, 88 · Disorders of the Tendons and Fascia e 94 · Sports Injuries of the Ankle do Campbell's Operative Orthopaedics, 15ª ed.
 autores: Francesco Camara BLUMETTI, Marcelo Hideki FUJINO, Mauro César de MORAIS FILHO e Daniella Lins NEVES (HEBERT, cap. 1); Rogério Carneiro BITAR e José Vicente PANSINI (HEBERT, cap. 69); Antônio Egydio de CARVALHO JR., Marta IMAMURA e Décio Cerqueira de MORAES FILHO (HEBERT, caps. 21.1 e 21.2); Paulo Daw Wen SU, Chang Chia PO e Akel N. A. JUNIOR (HEBERT, cap. 20.4); G. Andrew MURPHY (Campbell, cap. 11); Clayton C. BETTIN (Campbell, cap. 12); Benjamin J. GREAR (Campbell, cap. 88); David R. RICHARDSON (Campbell, caps. 17 e 94)
-fonte: Livros conferidos localmente em 03/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), cap. 1 (pré-requisitos, contração muscular, ciclo de marcha e eventos, cinemática e cinética do tornozelo, do joelho, do quadril, da pelve e do pé), cap. 20.4 (teorias do arco, testes de JACK, da ponta dos pés e de SILFVERSKIÖLD), cap. 21.1 (fáscia plantar, teste de HICKS, coxim), cap. 21.2 (cargas no tendão calcâneo) e cap. 69 (anatomia e biomecânica do tornozelo); Campbell's Operative Orthopaedics, 15ª ed., cap. 11 (p. 514 aprox.), cap. 12 (p. 557 e 561 aprox.), cap. 17 (p. 696 e 697 aprox.), cap. 3 (fig. 3.54), cap. 31 (p. 1066), cap. 55 (fig. 55.11, p. 2317 aprox.), cap. 88 (p. 3814, 3839 a 3842 aprox., 3870 e 3872), cap. 89 (p. 3893 aprox.), cap. 90 (p. 3982 e 3983 aprox.), cap. 93 (p. 4064 e 4089 aprox.) e cap. 94 (p. 4135, 4136, 4138, 4140, 4142 e 4160); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 65 (Ankle Fractures) e 68 (Midfoot and Forefoot); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 5 (p. 61 a 66) e cap. 19 (p. 747 a 749).
+fonte: Livros conferidos localmente em 03/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), cap. 1 (pré-requisitos, contração muscular, ciclo de marcha e eventos, cinemática e cinética do tornozelo, do joelho, do quadril, da pelve e do pé), cap. 20.4 (teorias do arco, testes de JACK, da ponta dos pés e de SILFVERSKIÖLD), cap. 21.1 (fáscia plantar, teste de HICKS, coxim), cap. 21.2 (cargas no tendão calcâneo) e cap. 69 (anatomia e biomecânica do tornozelo); Campbell's Operative Orthopaedics, 15ª ed., cap. 11, cap. 12, cap. 17, cap. 3 (fig. 3.54), cap. 31 (p. 1066), cap. 55 (fig. 55.11), cap. 88 (p. 3814, 3870 e 3872), cap. 89, cap. 90, cap. 93 e cap. 94 (p. 4135, 4136, 4138, 4140, 4142 e 4160); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 65 (Ankle Fractures) e 68 (Midfoot and Forefoot); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 5 (p. 61 a 66) e cap. 19 (p. 747 a 749).
 subtemas: Biomecânica e marcha
 resumo: Apoio 60% e balanço 40%, com duplo apoio nos 10% iniciais e finais; três rolamentos do tornozelo com fulcro no calcâneo (flexão plantar de cerca de 7°, tibial anterior excêntrico), no tornozelo (dorsiflexão até cerca de 10° em 40% do ciclo, sóleo excêntrico) e nas cabeças metatarsais (gastrocnêmio concêntrico, o maior propulsor); a marcha usa 10 a 12° de dorsiflexão e 20° de flexão plantar; eixo de INMAN pelas pontas dos maléolos, tálus em tronco de cone, estável em dorsiflexão; tornozelo carrega 5,5 vezes o peso; 1 mm de desvio lateral do tálus tira 42% da área de contato; BASSETT impacta na dorsiflexão; instabilidade subtalar no BRODEN em inversão; retropé neutro no contato, valgo no médio apoio e varo no apoio terminal, travando CHOPART para a impulsão; tibial posterior intertrava o mediopé; fáscia plantar e molinete de HICKS.
 ---
@@ -159,13 +159,13 @@ O Tachdjian (cap. 5, p. 63 e 66) lembra que no balanço a principal contração 
 
 O Tachdjian (cap. 5, p. 66) acrescenta duas observações gerais: há **mais atividade muscular no apoio do que no balanço**, porque no apoio os músculos da perna e do pé precisam estabilizar o pé plantígrado, e no balanço o membro é levado pela inércia gerada pelo gastrocsóleo e pelos flexores do quadril no apoio terminal. O HEBERT lembra que, na eletromiografia, a **intensidade do sinal não guarda relação com a força muscular**: o exame diz quando o músculo está ativo, não quanto ele é forte.
 
-Os músculos intrínsecos do pé também têm um horário. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3893 aprox.), relata estudo eletromiográfico em que **não houve atividade dos intrínsecos nos primeiros 35% do ciclo**, nem em ortostase quieta; os interósseos, por passarem plantar ao eixo da metatarsofalangiana, são flexores dessa articulação. O dado é usado para mostrar que o dedo em martelo, que piora em pé, não se explica por perda dos intrínsecos.
+Os músculos intrínsecos do pé também têm um horário. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89), relata estudo eletromiográfico em que **não houve atividade dos intrínsecos nos primeiros 35% do ciclo**, nem em ortostase quieta; os interósseos, por passarem plantar ao eixo da metatarsofalangiana, são flexores dessa articulação. O dado é usado para mostrar que o dedo em martelo, que piora em pé, não se explica por perda dos intrínsecos.
 
 # Quanto o tornozelo precisa mexer {radar=confirmado}
 
 ## O tornozelo como dobradiça
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 12, p. 557 aprox.), descreve o tornozelo como **sobretudo uma dobradiça**, ainda que o eixo de rotação mude continuamente ao longo do arco de movimento. O tálus fica dentro de uma pinça bem definida (maléolo medial, plafond congruente e maléolo lateral). E dá o número que explica por que a artrodese do tornozelo é bem tolerada: **a marcha normal requer apenas 10 a 12° de extensão do tornozelo (dorsiflexão) e 20° de flexão (flexão plantar)**. A perda de algum movimento, portanto, não é crítica, ao contrário do quadril e do joelho, em que perdas modestas incapacitam.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 12), descreve o tornozelo como **sobretudo uma dobradiça**, ainda que o eixo de rotação mude continuamente ao longo do arco de movimento. O tálus fica dentro de uma pinça bem definida (maléolo medial, plafond congruente e maléolo lateral). E dá o número que explica por que a artrodese do tornozelo é bem tolerada: **a marcha normal requer apenas 10 a 12° de extensão do tornozelo (dorsiflexão) e 20° de flexão (flexão plantar)**. A perda de algum movimento, portanto, não é crítica, ao contrário do quadril e do joelho, em que perdas modestas incapacitam.
 
 Esse número coincide com a cinemática do HEBERT (cap. 1): o pico de dorsiflexão na marcha é de cerca de 10° (apoio terminal) e o pico de flexão plantar é de cerca de 20° (balanço inicial). Os dois livros, por caminhos diferentes, chegam ao mesmo arco funcional de aproximadamente 30°.
 
@@ -175,7 +175,7 @@ O Campbell completa com a compensação: o movimento sagital que a marcha exige 
 conceito: A marcha normal usa apenas 10 a 12° de dorsiflexão e 20° de flexão plantar; o pico de flexão plantar, cerca de 20°, ocorre no balanço inicial.
 como: A SBOT-SP perguntou quantos graus de flexão o tornozelo precisa para as atividades cotidianas, oferecendo 0, 5, 20 e 40°.
 armadilha: Escolher 40°, que se aproxima da amplitude máxima passiva, em vez da amplitude funcional usada na marcha.
-alerta: O Campbell (cap. 12, p. 557 aprox.) dá os 20° de flexão para a marcha normal; nenhum dos livros consultados traz o valor específico para correr ou subir escadas, citado no enunciado. Gabarito oficial (20°) mantido.
+alerta: O Campbell (cap. 12) dá os 20° de flexão para a marcha normal; nenhum dos livros consultados traz o valor específico para correr ou subir escadas, citado no enunciado. Gabarito oficial (20°) mantido.
 !fim
 
 # Tornozelo: a pinça, o tálus em tronco de cone e o eixo oblíquo {radar=confirmado}
@@ -190,7 +190,7 @@ A segunda consequência é a **rotação acoplada**: como a cúpula é um cone c
 
 ## O eixo de INMAN
 
-O Campbell (cap. 12, p. 561 aprox.), ao descrever a artroplastia de distração, define o **eixo do tornozelo (eixo de INMAN)** como a **linha que une as pontas dos maléolos medial e lateral**, e manda alinhar as dobradiças do fixador sobre ele para que a distração seja uniforme ao longo do arco. No capítulo do pé torto (cap. 31, p. 1066), o mesmo livro mostra a obliquidade desse eixo no plano transverso: no pé plantígrado, o eixo longo do pé deve ficar perpendicular ao **eixo bimaleolar**, não ao eixo do joelho, o que **geralmente exige 20 a 30° de rotação externa do pé**. Em outras palavras, o eixo bimaleolar é rodado externamente em relação ao joelho, porque o maléolo lateral fica atrás do medial.
+O Campbell (cap. 12), ao descrever a artroplastia de distração, define o **eixo do tornozelo (eixo de INMAN)** como a **linha que une as pontas dos maléolos medial e lateral**, e manda alinhar as dobradiças do fixador sobre ele para que a distração seja uniforme ao longo do arco. No capítulo do pé torto (cap. 31, p. 1066), o mesmo livro mostra a obliquidade desse eixo no plano transverso: no pé plantígrado, o eixo longo do pé deve ficar perpendicular ao **eixo bimaleolar**, não ao eixo do joelho, o que **geralmente exige 20 a 30° de rotação externa do pé**. Em outras palavras, o eixo bimaleolar é rodado externamente em relação ao joelho, porque o maléolo lateral fica atrás do medial.
 
 O raciocínio que a prova cobra junta essas peças. Uma dobradiça perfeitamente transversa (perpendicular ao eixo longo do pé e horizontal) produziria só flexão e extensão. O eixo do tornozelo, porém, é **oblíquo**: passa pelas pontas dos maléolos, com o lateral mais posterior e mais baixo, e corre sobre um tálus cônico cujo lado lateral é maior. Girar o pé em torno de um eixo inclinado assim acopla um movimento no plano transverso ao movimento sagital: **na dorsiflexão o pé roda para fora; na flexão plantar, roda para dentro**. É a obliquidade do eixo (e não um eixo transverso) que explica a rotação interna do pé em flexão plantar.
 
@@ -205,7 +205,7 @@ alerta: Os livros consultados dão as peças do raciocínio (eixo de INMAN pelas
 
 ## O tornozelo carrega mais que o joelho com menos área
 
-O Campbell (cap. 11, p. 514 aprox.) explica por que a artroplastia do tornozelo demorou a alcançar os resultados do quadril e do joelho, e as três razões são biomecânica pura:
+O Campbell (cap. 11) explica por que a artroplastia do tornozelo demorou a alcançar os resultados do quadril e do joelho, e as três razões são biomecânica pura:
 
 1. o tornozelo tem **área de contato significativamente menor** que o quadril e o joelho;
 2. o tornozelo recebe **5,5 vezes o peso corporal na deambulação normal**, contra **3 vezes no joelho**;
@@ -213,7 +213,7 @@ O Campbell (cap. 11, p. 514 aprox.) explica por que a artroplastia do tornozelo 
 
 A combinação é perversa: mais carga, menos área e cartilagem mais fina. O que salva o tornozelo é a congruência (HEBERT, cap. 69: congruente em todas as posições). Por isso qualquer perda de congruência, como se verá na próxima seção, tem efeito desproporcional.
 
-!tabela Cargas no pé e no tornozelo, em múltiplos do peso corporal (Campbell 15, cap. 11, p. 514 aprox.; HEBERT, caps. 21.1 e 21.2; Campbell 15, cap. 94, p. 4136)
+!tabela Cargas no pé e no tornozelo, em múltiplos do peso corporal (Campbell 15, cap. 11; HEBERT, caps. 21.1 e 21.2; Campbell 15, cap. 94, p. 4136)
 | Estrutura | Carga | Situação | Fonte |
 |---|---|---|---|
 | Tornozelo (tibiotalar) | 5,5 vezes | Deambulação normal | Campbell, cap. 11 |
@@ -229,7 +229,7 @@ O coxim plantar merece uma frase. O HEBERT (cap. 21.1) o define como estrutura e
 conceito: O tornozelo recebe cerca de 5 vezes (5,5 vezes no Campbell) o peso corporal na marcha normal, com área de contato menor e cartilagem mais fina que o joelho.
 como: O TARO 2023 perguntou a carga suportada pelo tornozelo na marcha normal, com alternativas de meio, uma, duas e cinco vezes o peso.
 armadilha: Pensar que o tornozelo, por estar "embaixo de tudo", recebe só o peso corporal; a carga articular soma o peso à força muscular do tríceps.
-alerta: O Campbell (cap. 11, p. 514 aprox.) traz 5,5 vezes o peso corporal; o gabarito (D, cinco vezes) é a alternativa mais próxima.
+alerta: O Campbell (cap. 11) traz 5,5 vezes o peso corporal; o gabarito (D, cinco vezes) é a alternativa mais próxima.
 !fim
 
 # Congruência: 1 milímetro e 42% {radar=confirmado}
@@ -304,7 +304,7 @@ armadilha: Escolher a inversão, por associar todo problema anterolateral à ent
 
 O Tachdjian (cap. 19, p. 749) descreve a subtalar como **três facetas em dois compartimentos**: **anterior e média** no compartimento anterior, **posterior** no posterior, separados pelo **ligamento interósseo talocalcâneo**. O Campbell (cap. 94, p. 4136) divide seus estabilizadores em intrínsecos e extrínsecos; o calcaneofibular, por cruzar a faceta posterior, é ligamento do tornozelo e da subtalar, e por isso a entorse em inversão pode lesar as duas.
 
-O Campbell (cap. 88, p. 3839 aprox.) acrescenta: **a posição relaxada da subtalar é o valgo**, a de menor tensão no interósseo. Quando a subtalar dói, os fibulares evertem o retropé por reflexo para descomprimi-la, e a posição se fixa: **o espasmo fibular é consequência, não causa**.
+O Campbell (cap. 88) acrescenta: **a posição relaxada da subtalar é o valgo**, a de menor tensão no interósseo. Quando a subtalar dói, os fibulares evertem o retropé por reflexo para descomprimi-la, e a posição se fixa: **o espasmo fibular é consequência, não causa**.
 
 ## Instabilidade subtalar e a incidência de BRODEN
 
@@ -324,7 +324,7 @@ armadilha: Escolher o estresse gravitacional em rotação externa, que serve par
 
 A coalizão mostra o que acontece quando a subtalar não se move (Tachdjian, cap. 19, p. 748 e 749): o pé não se acomoda ao terreno irregular e transfere força à tibiotársica, com **entorses de repetição**, **pé em rotação externa** e rigidez; **na ponta dos pés o retropé não inverte**; andar na borda lateral é impossível; o **bico talar** seria tração pelo movimento anormal do tornozelo; e, na coalizão congênita, o tornozelo vira **bola e soquete** para fazer inversão e eversão.
 
-Quanto à localização, os livros apontam para a **faceta média**: o Campbell (cap. 88, p. 3842) usa o **HARRIS e BEATH para a coalizão da faceta média**, descreve a perda da subtalar média no perfil e o **duplo maléolo medial**, e suas figuras (fig. 88.14 e 88.45; cap. 3, fig. 3.54) são de faceta média; o Tachdjian (p. 749) descreve a ponte **através da subtalar medial** no HARRIS. Ressalva: o Tachdjian (p. 747) lista talocalcânea e talonavicular como as mais comuns, e o Campbell (p. 3839 aprox.) diz que, fora calcaneonavicular e talocalcânea, as sintomáticas são raríssimas.
+Quanto à localização, os livros apontam para a **faceta média**: o Campbell (cap. 88, p. 3842) usa o **HARRIS e BEATH para a coalizão da faceta média**, descreve a perda da subtalar média no perfil e o **duplo maléolo medial**, e suas figuras (fig. 88.14 e 88.45; cap. 3, fig. 3.54) são de faceta média; o Tachdjian (p. 749) descreve a ponte **através da subtalar medial** no HARRIS. Ressalva: o Tachdjian (p. 747) lista talocalcânea e talonavicular como as mais comuns, e o Campbell (cap. 88) diz que, fora calcaneonavicular e talocalcânea, as sintomáticas são raríssimas.
 
 !questoes central=pe-tornozelo-0327
 conceito: A coalizão talocalcânea típica é a da faceta média (sustentáculo), vista no HARRIS e BEATH e palpável como duplo maléolo medial; sem movimento subtalar, o retropé não inverte na ponta dos pés.
@@ -337,7 +337,7 @@ alerta: Questão sem gabarito oficial na base. Os livros sustentam a faceta méd
 
 ## O que é CHOPART
 
-O Rockwood adulto (cap. 68) define o mediopé como a região entre a linha de CHOPART e a linha de LISFRANC. A **articulação de CHOPART**, também chamada **mediotársica ou articulação transversa do tarso**, compreende a **calcaneocuboide** e a **talocalcaneonavicular**. Os dois cirurgiões franceses descreveram essas linhas originalmente como **linhas de amputação**, não de reconstrução. O Campbell (cap. 17, p. 696 aprox.) usa a mesma definição ao descrever a amputação de CHOPART, feita **nas articulações transversas do tarso** (calcaneocuboide e talonavicular).
+O Rockwood adulto (cap. 68) define o mediopé como a região entre a linha de CHOPART e a linha de LISFRANC. A **articulação de CHOPART**, também chamada **mediotársica ou articulação transversa do tarso**, compreende a **calcaneocuboide** e a **talocalcaneonavicular**. Os dois cirurgiões franceses descreveram essas linhas originalmente como **linhas de amputação**, não de reconstrução. O Campbell (cap. 17) usa a mesma definição ao descrever a amputação de CHOPART, feita **nas articulações transversas do tarso** (calcaneocuboide e talonavicular).
 
 ## Neutro, valgo, varo: a sequência do retropé no apoio
 
@@ -371,7 +371,7 @@ alerta: O gabarito oficial (D: contração excêntrica do tibial posterior e inv
 
 O Rockwood adulto (cap. 68) classifica as articulações pela importância funcional: a **talonavicular é essencial**, a **calcaneocuboide não**. O navicular sustenta a coluna medial e recebe a maior parte da carga do tarso.
 
-O Campbell confirma pelo lado clínico. A **artrodese talonavicular reduz significativamente o movimento de todo o complexo das três articulações** (subtalar, talonavicular e calcaneocuboide), e por isso é reservada às fraturas graves (cap. 93, p. 4089 aprox.). Na artrodese do retropé, deixam-se **5 a 10° de valgo** e evita-se fixar a talonavicular com o antepé supinado (cap. 90, p. 3983 aprox.). E, nas doenças do retropé, o movimento subtalar é o mais afetado (cap. 90, p. 3982).
+O Campbell confirma pelo lado clínico. A **artrodese talonavicular reduz significativamente o movimento de todo o complexo das três articulações** (subtalar, talonavicular e calcaneocuboide), e por isso é reservada às fraturas graves (cap. 93). Na artrodese do retropé, deixam-se **5 a 10° de valgo** e evita-se fixar a talonavicular com o antepé supinado (cap. 90). E, nas doenças do retropé, o movimento subtalar é o mais afetado (cap. 90, p. 3982).
 
 !tabela Articulações do pé pela importância funcional (Rockwood adulto, cap. 68)
 | Grupo | Articulações |
@@ -384,7 +384,7 @@ O Campbell confirma pelo lado clínico. A **artrodese talonavicular reduz signif
 
 ## A amputação de CHOPART como prova do conceito
 
-A amputação de CHOPART (Campbell, cap. 17, p. 696 e 697 aprox.) prova o conceito: proximal ao transmetatarsal, a marcha perde **suporte e impulsão**, e o coto tende ao **equino**, porque perde os dorsiflexores e mantém o tendão calcâneo sem antagonista. Daí a **tenectomia do calcâneo** (2 a 3 cm), a **transferência do tibial anterior e dos extensores para o colo do tálus**, a imobilização em leve dorsiflexão e o sapato em mata-borrão, que substitui o rolamento perdido.
+A amputação de CHOPART (Campbell, cap. 17) prova o conceito: proximal ao transmetatarsal, a marcha perde **suporte e impulsão**, e o coto tende ao **equino**, porque perde os dorsiflexores e mantém o tendão calcâneo sem antagonista. Daí a **tenectomia do calcâneo** (2 a 3 cm), a **transferência do tibial anterior e dos extensores para o colo do tálus**, a imobilização em leve dorsiflexão e o sapato em mata-borrão, que substitui o rolamento perdido.
 
 # Fáscia plantar e o mecanismo de molinete {radar=clinico}
 

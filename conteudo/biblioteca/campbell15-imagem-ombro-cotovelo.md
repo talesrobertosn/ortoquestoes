@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-ombro-cotovelo
-versao: 2
+versao: 4
 titulo: Imagem do ombro e cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª edição (2025), e o Rockwood and Wilkins' Fractures in Children, 10ª edição
 capitulo: Capítulo 3 · Advanced Imaging in Orthopaedics, com os capítulos 13 · Shoulder Arthroplasty, 51 · Shoulder and Elbow Injuries, 52 · Recurrent Dislocations, 53 · Traumatic Disorders, 57 · Arthroscopy of the Upper Extremity e 65 · Acute Dislocations
 autores: Dexter H. Witte III (capítulo 3)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 3 (RM do ombro e do cotovelo, p. 170 a 174), cap. 13 (radiografia da artrose e da artropatia do manguito, WALCH, p. 595 a 609 aprox.), cap. 15 (ângulo de carregamento, p. 643 aprox.), cap. 38 (coxim gorduroso, p. 1366), cap. 51 (radiografias, Tabelas 51.3 e 51.4, RM, artrografia e ultrassonografia, p. 2155 a 2157), cap. 52 (radiografias da instabilidade, GARTH, WEST POINT, STRYKER, TC e RM, p. 2205 a 2211; linha umeral anterior, p. 2240), cap. 53 (bíceps distal e posição FABS, p. 2286), cap. 57 (glenoid track, HAGL, tipos de lesão labral e ELLMAN, p. 2440 a 2459 aprox.), cap. 62 (série do úmero proximal, p. 2773 aprox.) e cap. 65 (ROCKWOOD e ZANCA, p. 2947 a 2950); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 7 (coxim gorduroso), 32 (acromioclavicular e esternoclavicular: ZANCA, axilar, STRYKER, HEINIG, HOBBS, serendipity), 33 (escápula), 35 (instabilidade glenoumeral: radiografias, RM, artro-RM, ABER, TC e perda óssea), 36 (úmero proximal: série de trauma, VELPEAU, CODMAN, TC e osteopenia), 39 (úmero distal e capítulo), 40 (luxação e cabeça do rádio), sem páginas impressas no arquivo local; Rockwood and Wilkins' Fractures in Children, 10ª ed., caps. 12 e 13 (linhas e ângulos do cotovelo), sem páginas impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 3 (RM do ombro e do cotovelo, p. 170 a 174), cap. 13 (radiografia da artrose e da artropatia do manguito, WALCH), cap. 15 (ângulo de carregamento), cap. 38 (coxim gorduroso, p. 1366), cap. 51 (radiografias, Tabelas 51.3 e 51.4, RM, artrografia e ultrassonografia, p. 2155 a 2157), cap. 52 (radiografias da instabilidade, GARTH, WEST POINT, STRYKER, TC e RM, p. 2205 a 2211; linha umeral anterior, p. 2240), cap. 53 (bíceps distal e posição FABS, p. 2286), cap. 57 (glenoid track, HAGL, tipos de lesão labral e ELLMAN), cap. 62 (série do úmero proximal) e cap. 65 (ROCKWOOD e ZANCA, p. 2947 a 2950); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 7 (coxim gorduroso), 32 (acromioclavicular e esternoclavicular: ZANCA, axilar, STRYKER, HEINIG, HOBBS, serendipity), 33 (escápula), 35 (instabilidade glenoumeral: radiografias, RM, artro-RM, ABER, TC e perda óssea), 36 (úmero proximal: série de trauma, VELPEAU, CODMAN, TC e osteopenia), 39 (úmero distal e capítulo), 40 (luxação e cabeça do rádio), sem páginas impressas no arquivo local; Rockwood and Wilkins' Fractures in Children, 10ª ed., caps. 12 e 13 (linhas e ângulos do cotovelo), sem páginas impressas. Versão 3 (24/11/2026): seção do ângulo mágico com o Campbell's Operative Orthopaedics, 13ª ed., cap. 2 (p. 151), ERICKSON 1991 (PMID 1924777) e TIMINS 1995 (PMID 7785568), conferidos no PubMed.
 subtemas: Imagem do ombro e cotovelo
-resumo: Série do ombro (AP, GRASHEY a 30 graus, Y a 60 graus, axilar; VELPEAU sem abdução; luxação posterior perdida em 73% sem axilar ou Y); STRYKER (10 graus cefálico) para HILL-SACHS e coracoide; WEST POINT (prono, 25 e 25 graus) para o BANKART ósseo; GARTH 45 graus caudal; ZANCA e axilar (tipo IV) na acromioclavicular; HEINIG e TC na esternoclavicular; sourcil, intervalo < 7 e < 5 mm, HAMADA, barba de bode e subluxação posterior; TC para osteopenia e perda óssea; RM axial para o lábio anterior, coronal oblíquo para o manguito; ELLMAN; coxins, linhas do cotovelo e FABS.
+resumo: Série do ombro (AP, GRASHEY a 30 graus, Y a 60 graus, axilar; VELPEAU sem abdução; luxação posterior perdida em 73% sem axilar ou Y); STRYKER (10 graus cefálico) para HILL-SACHS e coracoide; WEST POINT (prono, 25 e 25 graus) para o BANKART ósseo; GARTH 45 graus caudal; ZANCA e axilar (tipo IV) na acromioclavicular; HEINIG e TC na esternoclavicular; sourcil, intervalo < 7 e < 5 mm, HAMADA, barba de bode e subluxação posterior; TC para osteopenia e perda óssea; RM axial para o lábio anterior, coronal oblíquo para o manguito; ELLMAN; coxins, linhas do cotovelo e FABS; ângulo mágico do supraespinal (some no T2).
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -344,6 +344,31 @@ O capítulo 3 é o mais didático sobre a leitura do manguito. A sequência idea
 Três regras de leitura evitam excesso de diagnóstico. **Tendinose** é o sinal anormal que **não atinge a intensidade do líquido** em T2. Como T1 e gradiente têm artefatos dentro dos tendões, **não se diagnostica ruptura sem foco de sinal de líquido em T2** ou ausência do tendão. E no **manguito operado**, focos irregulares de T2 aparecem normalmente no tendão em cicatrização (tecido de granulação); só o defeito grande, cheio de líquido, com retração, indica falha, e a artro-RM ajuda nessa situação. A RM tem **sensibilidade maior que 90%** para ruptura completa e **maior que 85%** para parcial; a **supressão de gordura** em T2 melhora a detecção das parciais. No impacto, que é diagnóstico **clínico**, a RM pode mostrar esporões, acrômio em gancho e tendinose.
 
 O Campbell (cap. 51) acrescenta a leitura cirúrgica. A RM é hoje o exame mais usado para o manguito e mostra o tamanho da ruptura e o estado dos músculos. A **infiltração gordurosa** é graduada por GOUTALLIER (0 a 4), e os autores não reparam tendões com **grau 4** (mais gordura que músculo no sagital T1); no grau 3 o risco de nova ruptura é maior. O **sinal da tangente** completa: se o ventre do supraespinal **não ultrapassa** a linha entre o topo do coracoide e o da espinha da escápula, no corte sagital mais lateral em que ambos tocam o corpo, a chance de cicatrização após o reparo é baixa. A RM sem contraste também tem alta acurácia na **capsulite adesiva**, sobretudo pelo hipersinal do **recesso axilar**. Desvantagem: muitos falsos-positivos, sempre a correlacionar com a clínica.
+
+## O ângulo mágico: o tendão normal que brilha
+
+A regra "não diagnosticar ruptura sem líquido em T2" tem um motivo físico, e ele tem nome. O Campbell's Operative Orthopaedics, 13ª ed. (cap. 2, p. 151), escreve que artefatos dentro dos tendões são frequentes nas sequências ponderadas em T1 e em gradiente; o mais conhecido deles é o **ângulo mágico**.
+
+Para entender, é preciso lembrar por que o tendão é escuro. Suas fibras de colágeno são paralelas e muito organizadas, e a água presa entre elas perde o sinal quase de imediato: o T2 do tendão é curtíssimo. Quando o tempo de eco (TE) da sequência é mais longo que esse T2, o aparelho "chega tarde" e o tendão aparece preto. Essa perda rápida de sinal, porém, depende do ângulo das fibras com o campo magnético principal. ERICKSON e colaboradores (Radiology, 1991, PMID 1924777) posicionaram tendões de voluntários de 0 a 90 graus em relação ao campo: o sinal foi **máximo a 55 graus**, moderado a 45 e a 65, e ausente a 0 e a 90 graus, e só apareceu nas sequências de **TE curto**. A 55 graus o tendão demora mais a perder o sinal, e uma sequência de TE curto (T1, densidade de prótons, gradiente) consegue captá-lo; no **T2 de TE longo** o sinal já se foi e o tendão volta a ficar escuro.
+
+O supraespinal é o lugar clássico porque se curva sobre a cabeça do úmero perto da inserção, e um trecho de suas fibras passa justamente pelos 55 graus no coronal oblíquo. TIMINS e colaboradores (AJR, 1995, PMID 7785568) mostraram isso no ombro normal: o foco de hipersinal na parte distal do supraespinal mudou de comprimento e de posição quando a orientação do tendão no aparelho foi alterada, em voluntários e em peças de cadáver, e os autores avisaram que o achado pode ser lido como lesão nas sequências de TR e TE curtos. O mesmo artefato engana em outros tendões curvos: a Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed. (capítulo do pé, seção do os peroneum), cita o "efeito do ângulo mágico" no trajeto curvo do fibular longo como causa de falsas interpretações na RM.
+
+!tabela Ângulo mágico ou lesão do supraespinal (Campbell 13, cap. 2, p. 151; ERICKSON 1991; TIMINS 1995)
+| Pista | Ângulo mágico | Tendinose ou ruptura |
+| --- | --- | --- |
+| sequência em que aparece | só nas de TE curto (T1, DP, gradiente) | persiste no T2 de TE longo |
+| T2 | o sinal some, o tendão volta a ficar escuro | tendinose: sinal aumentado, menor que o do líquido; ruptura: sinal de líquido |
+| forma do tendão | espessura e contorno normais | tendão espesso, afilado ou descontínuo |
+| posição do braço | o foco muda de lugar com a orientação | não muda com a posição |
+!fim
+
+A leitura prática fica simples: hipersinal no supraespinal que aparece no DP com supressão de gordura e **desaparece no T2**, num tendão de forma normal, é artefato de orientação, e não lesão. Por isso o Campbell insiste em confirmar a ruptura com foco de sinal de líquido em T2 ou com a ausência do tendão.
+
+!questoes relacionadas=ombro-cotovelo-0214
+conceito: O ângulo mágico é o hipersinal de um tendão normal cujas fibras ficam a cerca de 55 graus do campo magnético; aparece só nas sequências de TE curto (T1, DP, gradiente) e some no T2; no ombro, ocorre no supraespinal distal, onde o tendão se curva sobre a cabeça do úmero.
+como: O TECOC mostrou uma RM do supraespinal normal com hipersinal no DP com supressão de gordura que desaparecia no T2 e pediu o nome do achado.
+armadilha: Chamar o artefato de cabo rotador (uma banda real, escura, perpendicular às fibras) ou de tendinopatia; a pista que decide é o sinal sumir no T2 num tendão de forma normal.
+!fim
 
 ## A lesão parcial e a classificação de ELLMAN
 

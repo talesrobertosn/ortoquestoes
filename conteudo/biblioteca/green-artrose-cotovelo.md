@@ -1,6 +1,6 @@
 ---
 id: campbell15-artrose-cotovelo
-versao: 1
+versao: 2
 titulo: Artrose e artroplastia do cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 15, e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 39)
 capitulo: Capítulo 27 · Total Elbow Arthroplasty
 autores: Mark S. Cohen e Neal C. Chen
-fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 27 (Total Elbow Arthroplasty, p. 905 a 919, lido por inteiro), cap. 24 (Treatment of the Stiff Elbow, p. 847 a 849), cap. 26 (Elbow Arthroscopy, p. 887 e 893 a 896) e cap. 23 (p. 837 e 838 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 15 (Reconstructive Procedures of the Elbow, p. 643 a 664, com o Box 15.2, o Box 15.3 e a Tabela 15.1) e cap. 52 (p. 2230 e 2231); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 39 (Hematologic Disorders, Box 39.1 e 39.2, p. 1978 e 1979); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., capítulo de fraturas e lesões do cotovelo do adulto (pág. extraído).
+fonte: Livros conferidos localmente em 03/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 27 (Total Elbow Arthroplasty, p. 905 a 919, lido por inteiro), cap. 24 (Treatment of the Stiff Elbow, p. 847 a 849), cap. 26 (Elbow Arthroscopy, p. 887 e 893 a 896) e cap. 23 (p. 837 e 838); Campbell's Operative Orthopaedics, 15ª ed., cap. 15 (Reconstructive Procedures of the Elbow, p. 643 a 664, com o Box 15.2, o Box 15.3 e a Tabela 15.1) e cap. 52 (p. 2230 e 2231); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 39 (Hematologic Disorders, Box 39.1 e 39.2, p. 1978 e 1979); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., capítulo de fraturas e lesões do cotovelo do adulto (pág. extraído).
 subtemas: Artrose e artroplastia do cotovelo
 resumo: Artrose primária do homem de meia-idade com osteófitos no coronoide e no olécrano, estreitamento radiocapitelar comum e centro umeroulnar poupado (desbridamento, não prótese); sobrecarga em valgo e extensão com osteófito posteromedial; AR em quatro estágios, com o estágio IV como melhor indicação e os melhores resultados da prótese, mas mais infecção; ARNOLD e HILGARTNER III alarga a incisura troclear; prótese total na fratura cominutiva do idoso sem fixação estável para mobilização precoce; contraindicações (infecção, neuropática, anquilose do ombro ipsilateral, partes moles ruins); semiconstrita (COONRAD-MORREY) solta, não constrita luxa; complicações mais frequentes neurite ulnar e insuficiência do tríceps; tríceps geralmente exige cirurgia; infecção média de 3%.
 ---
@@ -41,7 +41,7 @@ O ponto mais cobrado da biomecânica é a cabeça do rádio (Campbell, p. 645). 
 
 ## O paciente
 
-O Green's Operative Hand Surgery, 7ª ed. (cap. 27, p. 907), desenha um retrato preciso: a artrose primária do cotovelo acomete indivíduos de **meia-idade e idosos**, sobretudo **homens a partir da quinta década**, é **rara em mulheres**, atinge quase sempre o **lado dominante** e muitos relatam uma **vida inteira de carga pesada**. O capítulo 24 do mesmo livro (HOTCHKISS, p. 847 e 849 aprox.) repete o perfil: homens de meia-idade, de 45 a 55 anos.
+O Green's Operative Hand Surgery, 7ª ed. (cap. 27, p. 907), desenha um retrato preciso: a artrose primária do cotovelo acomete indivíduos de **meia-idade e idosos**, sobretudo **homens a partir da quinta década**, é **rara em mulheres**, atinge quase sempre o **lado dominante** e muitos relatam uma **vida inteira de carga pesada**. O capítulo 24 do mesmo livro (HOTCHKISS, p. 847 e 849) repete o perfil: homens de meia-idade, de 45 a 55 anos.
 
 A queixa típica é **dor nos extremos do movimento**, com perda da **flexão e da extensão terminais**. A rotação do antebraço é menos afetada. Bloqueios intermitentes sugerem **corpos livres**. A lógica é mecânica: os osteófitos crescem nas pontas e nas fossas, e o choque só acontece no fim do arco.
 
@@ -79,7 +79,7 @@ O tratamento começa com **modificação de atividade, anti-inflamatório, infil
 
 O arremessador produz um tipo particular de artrose. A cada lançamento, o cotovelo recebe **valgo** enquanto **estende**: o lado medial é tracionado (colateral medial), o lateral é comprimido (radiocapitelar) e, atrás, a ponta do olécrano é empurrada contra a **parede medial da fossa olecraniana**. O resultado é o **impacto posteromedial** e a formação de **osteófitos posteromediais do olécrano**.
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52, p. 2230 e 2231), descreve o **teste da sobrecarga em valgo e extensão**: mantém-se o valgo enquanto se estende passivamente o cotovelo a partir de 30 graus; a **dor posteromedial no olécrano** aparece quando a instabilidade subaguda ou crônica causou **impacto posteromedial**. O mesmo capítulo associa a instabilidade medial a três achados: **condromalácia da radiocapitelar**, **sinovite da cápsula medial** e **osteófitos posteromediais do olécrano**, que podem ser retirados por artroscopia. O Green's Operative Hand Surgery, 7ª ed. (cap. 23, p. 837 e 838 aprox.) acrescenta que alguns cirurgiões fazem artroscopia antes da reconstrução do colateral ulnar justamente para retirar esses osteófitos, e que o osteófito posteromedial pode ser sintomático na insuficiência do colateral medial.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52, p. 2230 e 2231), descreve o **teste da sobrecarga em valgo e extensão**: mantém-se o valgo enquanto se estende passivamente o cotovelo a partir de 30 graus; a **dor posteromedial no olécrano** aparece quando a instabilidade subaguda ou crônica causou **impacto posteromedial**. O mesmo capítulo associa a instabilidade medial a três achados: **condromalácia da radiocapitelar**, **sinovite da cápsula medial** e **osteófitos posteromediais do olécrano**, que podem ser retirados por artroscopia. O Green's Operative Hand Surgery, 7ª ed. (cap. 23, p. 837 e 838) acrescenta que alguns cirurgiões fazem artroscopia antes da reconstrução do colateral ulnar justamente para retirar esses osteófitos, e que o osteófito posteromedial pode ser sintomático na insuficiência do colateral medial.
 
 Há uma consequência cirúrgica direta: o canto posteromedial é o **assoalho do túnel cubital**. HOTCHKISS (cap. 24, p. 849) não faz artroscopia quando há **grandes osteófitos no canto posteromedial**, porque o ulnar está ali, e prefere a via medial que expõe o nervo.
 
@@ -192,7 +192,7 @@ As **indicações** são falha do conservador, **umeroulnar relativamente preser
 
 ## Os nervos na capsulotomia anterior
 
-A liberação da cápsula anterior é a etapa perigosa. O **nervo radial** fica adjacente à cápsula **anterolateral** no nível do capítulo medial, e o **mediano** corre risco do lado anteromedial; quanto **mais proximal** a capsulotomia, mais segura (Green, cap. 26, p. 894). O ponto mais fino está na página 887 aprox.: proximalmente há músculo entre o **interósseo posterior** e a cápsula, mas **no nível do colo do rádio o nervo pode tocar a cápsula**, e a ressecção capsular ali deve ser **evitada ou feita com extremo cuidado**, porque o nervo pode estar aderido. A figura 26.9 mostra um bastão afastando o **interósseo posterior** enquanto o resector retira a cápsula anterior. O ulnar fica logo superficial à cápsula **posteromedial**, e é o nervo de risco da goteira posteromedial, não da cápsula anterior.
+A liberação da cápsula anterior é a etapa perigosa. O **nervo radial** fica adjacente à cápsula **anterolateral** no nível do capítulo medial, e o **mediano** corre risco do lado anteromedial; quanto **mais proximal** a capsulotomia, mais segura (Green, cap. 26, p. 894). O ponto mais fino está na página 887: proximalmente há músculo entre o **interósseo posterior** e a cápsula, mas **no nível do colo do rádio o nervo pode tocar a cápsula**, e a ressecção capsular ali deve ser **evitada ou feita com extremo cuidado**, porque o nervo pode estar aderido. A figura 26.9 mostra um bastão afastando o **interósseo posterior** enquanto o resector retira a cápsula anterior. O ulnar fica logo superficial à cápsula **posteromedial**, e é o nervo de risco da goteira posteromedial, não da cápsula anterior.
 
 !questoes central=ombro-cotovelo-0432
 conceito: Na liberação artroscópica da cápsula anterior, o interósseo posterior, ramo do radial que pode aderir à cápsula no nível do colo do rádio, é o nervo de maior risco; o ulnar é o risco da goteira posteromedial.
@@ -202,7 +202,7 @@ armadilha: Marcar o ulnar, que é o nervo mais lesado na artroscopia como um tod
 
 ## Pós-operatório e resultados
 
-!tabela Desbridamento artroscópico por compartimento (Green 7, cap. 26, p. 887 aprox. e 893 a 896)
+!tabela Desbridamento artroscópico por compartimento (Green 7, cap. 26, p. 887 e 893 a 896)
 | Compartimento | O que retirar | Nervo ou estrutura em risco |
 |---|---|---|
 | Posterior (fossa olecraniana) | Crista transversa de osteófitos; ponta do olécrano; fenestração se preciso | Fenestração cria portal para o anterior |

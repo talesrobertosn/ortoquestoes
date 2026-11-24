@@ -1,6 +1,6 @@
 ---
 id: campbell15-estenose-lombar
-versao: 1
+versao: 2
 titulo: Estenose do canal lombar
 especialidade: coluna
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 47 · Adult Spinal Deformity (seção Degenerative Scoliosis), com a seção Stenosis of the Thoracic and Lumbar Spine do Capítulo 46 · Degenerative Disorders of the Thoracic and Lumbar Spine
 autores: Chad E. CAMPION (cap. 47); Kirk M. THOMPSON (cap. 46)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1774 (raízes no recesso lateral), seção Stenosis of the Thoracic and Lumbar Spine (p. 1812 a 1823, Tabelas 46.5 e 46.6, Boxes 46.5 e 46.6, Técnicas 46.15 e 46.16) e seção Degenerative Spondylolisthesis (p. 1823, 1824 e 1838 a 1842); cap. 47, p. 1851, 1852 e 1858 a 1860 (escoliose degenerativa, Box 47.3); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (estenose do canal vertebral e deformidade do adulto); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 11 (acondroplasia, p. 267 aprox.).
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1774 (raízes no recesso lateral), seção Stenosis of the Thoracic and Lumbar Spine (p. 1812 a 1823, Tabelas 46.5 e 46.6, Boxes 46.5 e 46.6, Técnicas 46.15 e 46.16) e seção Degenerative Spondylolisthesis (p. 1823, 1824 e 1838 a 1842); cap. 47, p. 1851, 1852 e 1858 a 1860 (escoliose degenerativa, Box 47.3); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (estenose do canal vertebral e deformidade do adulto); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 11 (acondroplasia, p. 267).
 subtemas: Estenose do canal lombar
 resumo: Cascata degenerativa de KIRKALDY-WILLIS com hipertrofia do processo articular superior e do ligamento amarelo; zonas de LEE (entrada = recesso lateral da borda medial do processo articular superior à borda medial do pedículo, média = forame, saída); artrose facetária como causa principal do recesso lateral; congênita usualmente central; L4-L5 mais acometido e raiz L5; central bilateral e não dermatômica, recesso lateral dermatômico; claudicação neurogênica com distância variável, alívio sentado ou fletido, melhor subindo ladeira e pedalando, pior na esteira, contra a vascular de distância fixa e alívio em pé; elevação da perna estendida geralmente normal; saco dural de 100 mm² ou menos; conservador primeiro; descompressão como escolha e fusão se instabilidade, listese, escoliose ou ressecção facetária extensa; na escoliose degenerativa a flexão muitas vezes não alivia.
 ---
@@ -120,7 +120,7 @@ Nas formas adquiridas, o processo se localiza sobretudo nas **facetas e no ligam
 
 **A congênita é rara e central.** As formas congênitas, como a acondroplasia e a espondilolistese displásica, são **muito menos comuns**. O Campbell é direto: **a estenose congênita costuma ser central** e é evidente nos exames de imagem. A idiopática estreita o **diâmetro anteroposterior** por causa de **pedículos curtos**, e o paciente é normal em todo o resto. Na **acondroplasia**, o canal se estreita nos **dois planos**: no anteroposterior, pelos pedículos curtos, e no lateral, pela **distância interpedicular diminuída**, além das outras características da doença (p. 1814).
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 11, p. 267 aprox.), completa a acondroplasia. Os problemas de coluna mais comuns são a **estenose occipitocervical com malformação de ARNOLD-CHIARI na infância** e a **estenose por pedículos curtos e canal lombar pequeno na adolescência tardia e no adulto**. Cerca de 30% das crianças acondroplásicas têm cifose toracolombar, e um terço delas (10% do total) tem cifose progressiva. E um alerta para quem descomprime: se a estenose for tratada por laminectomia, **há 100% de certeza de que a cifose vai progredir**, sobretudo no esqueleto imaturo. Na pseudoacondroplasia, ao contrário, não há estenose, e por isso não aparecem problemas tardios de claudicação neurogênica.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 11, p. 267), completa a acondroplasia. Os problemas de coluna mais comuns são a **estenose occipitocervical com malformação de ARNOLD-CHIARI na infância** e a **estenose por pedículos curtos e canal lombar pequeno na adolescência tardia e no adulto**. Cerca de 30% das crianças acondroplásicas têm cifose toracolombar, e um terço delas (10% do total) tem cifose progressiva. E um alerta para quem descomprime: se a estenose for tratada por laminectomia, **há 100% de certeza de que a cifose vai progredir**, sobretudo no esqueleto imaturo. Na pseudoacondroplasia, ao contrário, não há estenose, e por isso não aparecem problemas tardios de claudicação neurogênica.
 
 **PAGET e fluorose.** Ambas podem dar estenose central ou lateral. A doença de PAGET tem uma particularidade que cai: é **uma forma de estenose que responde bem ao tratamento clínico com calcitonina** (p. 1814). PAGET e fluorose entram no grupo metabólico, e não no congênito.
 

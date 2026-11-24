@@ -1,6 +1,6 @@
 ---
 id: campbell15-biomecanica-ombro-cotovelo
-versao: 2
+versao: 3
 titulo: Biomecânica do ombro e do cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), o Green's Operative Hand Surgery, 7ª ed. (2017), e o HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017)
 capitulo: Capítulo 13 · Shoulder Arthroplasty (seções Anatomy and Biomechanics, Prosthesis Design e Complications of Reverse Total Shoulder Arthroplasty), com os Capítulos 15 · Reconstructive Procedures of the Elbow, 51 · Shoulder and Elbow Injuries e 52 · Recurrent Dislocations do mesmo livro
 autores: Thomas W. (Quin) Throckmorton e Tyler J. Brolin
-fonte: Livros conferidos localmente em 04/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 13 (anatomia, biomecânica e desenho da prótese, p. 589 a 592 e 591.e1; reversa, p. 594 e 595 aprox.; notching, instabilidade e fratura do acrômio, p. 621 e 622 aprox.), cap. 15 (anatomia e biomecânica do cotovelo, p. 643 a 645), cap. 51 (anatomia e biomecânica do ombro, p. 2144 e 2145; contraturas do cotovelo, p. 2184) e cap. 52 (anatomia funcional do ombro, p. 2206, 2207 e 2207.e1; cotovelo, p. 2228 a 2230); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1 (Biomechanics of Fractures and Fracture Fixation, seção Upper Extremity, com a Tabela 1-4), cap. 35 (Glenohumeral Instability, seção Pathoanatomy and Applied Anatomy), cap. 40 (Simple Elbow Dislocation), cap. 41 (cabeça do rádio) e cap. 42 (arco de rotação); Green's Operative Hand Surgery, 7ª ed., cap. 18 (p. 727), cap. 19 (p. 736 a 740) e cap. 21 (p. 826 aprox.); HEBERT, 5ª ed., caps. 4 (Ombro e cotovelo), 47, 48 (Traumatismos do cotovelo no adulto), 54 e 76.
+fonte: Livros conferidos localmente em 04/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 13 (anatomia, biomecânica e desenho da prótese, p. 589 a 592 e 591.e1; reversa; notching, instabilidade e fratura do acrômio), cap. 15 (anatomia e biomecânica do cotovelo, p. 643 a 645), cap. 51 (anatomia e biomecânica do ombro, p. 2144 e 2145; contraturas do cotovelo, p. 2184) e cap. 52 (anatomia funcional do ombro, p. 2206, 2207 e 2207.e1; cotovelo, p. 2228 a 2230); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1 (Biomechanics of Fractures and Fracture Fixation, seção Upper Extremity, com a Tabela 1-4), cap. 35 (Glenohumeral Instability, seção Pathoanatomy and Applied Anatomy), cap. 40 (Simple Elbow Dislocation), cap. 41 (cabeça do rádio) e cap. 42 (arco de rotação); Green's Operative Hand Surgery, 7ª ed., cap. 18 (p. 727), cap. 19 (p. 736 a 740) e cap. 21 (p. 795); HEBERT, 5ª ed., caps. 4 (Ombro e cotovelo), 47, 48 (Traumatismos do cotovelo no adulto), 54 e 76.
 subtemas: Biomecânica do ombro e cotovelo
 resumo: Ritmo de 2 glenoumeral para 1 escapulotorácico, examinado comparativo e pelas costas; lábio que dobra a profundidade, pressão negativa e concavidade-compressão; glenoumeral superior em adução, médio a 45 graus, inferior (o mais importante) a partir de 45 graus e em abdução com rotação externa; pares de força; reversa de GRAMMONT medializa o centro e alonga o deltoide; cotovelo com 40% umeroulnar e 60% radiocapitelar em extensão, flexão mais forte a 90 graus, arco funcional de MORREY (30 a 130, 50 e 50) e luxação por valgo, rotação externa e carga axial.
 ---
@@ -264,11 +264,11 @@ O Rockwood and Green (cap. 1, Biomechanics of Fractures and Fracture Fixation, d
 
 ## O problema que ela resolve
 
-No ombro sem manguito, o par coronal se desfaz: o deltoide puxa a cabeça para cima, não há fulcro, e o braço não eleva. O Campbell (cap. 13, p. 594 e 595 aprox.) resume a biomecânica da reversa numa frase: ela **recruta o deltoide para restaurar o movimento ativo num ombro com manguito deficiente**. A ideia de GRAMMONT, no início dos anos 1990 (p. 589), foi inverter as superfícies: uma **esfera metálica fixa na glenoide** (a glenosfera) e um **polietileno côncavo com haste no úmero**, num implante **semiconstrito**. A esfera fixa cria o fulcro que o manguito não dá mais.
+No ombro sem manguito, o par coronal se desfaz: o deltoide puxa a cabeça para cima, não há fulcro, e o braço não eleva. O Campbell (cap. 13) resume a biomecânica da reversa numa frase: ela **recruta o deltoide para restaurar o movimento ativo num ombro com manguito deficiente**. A ideia de GRAMMONT, no início dos anos 1990 (p. 589), foi inverter as superfícies: uma **esfera metálica fixa na glenoide** (a glenosfera) e um **polietileno côncavo com haste no úmero**, num implante **semiconstrito**. A esfera fixa cria o fulcro que o manguito não dá mais.
 
 ## Medializar e alongar
 
-**Todos os desenhos de reversa medializam o centro de rotação em algum grau e, em geral, alongam o deltoide para aumentar o braço de alavanca na elevação anterior** (Campbell, cap. 13, p. 595 aprox.). O raciocínio mecânico:
+**Todos os desenhos de reversa medializam o centro de rotação em algum grau e, em geral, alongam o deltoide para aumentar o braço de alavanca na elevação anterior** (Campbell, cap. 13). O raciocínio mecânico:
 
 - **Centro de rotação medial**: a distância entre o centro e a linha de ação do deltoide aumenta, então o mesmo músculo gera **mais torque** de elevação.
 - O desenho original de GRAMMONT pôs o centro **na face da glenoide** e usou um ângulo colo-diáfise **valgo de 155 graus** no componente umeral, para dar ao deltoide uma **tração vertical retilínea**.
@@ -277,9 +277,9 @@ Esse desenho reduziu a soltura em relação às próteses constritas anteriores 
 
 ## Lateralizar para corrigir
 
-A resposta foram os componentes **"lateralizados"**, ou melhor, **menos medializados**, com o centro de rotação lateral à face da glenoide (Campbell, cap. 13, p. 595 aprox.). Isso pode ser feito pela **glenosfera** ou por **enxerto ósseo** (construção úmero medial e glenoide lateral) ou pelo **componente umeral** (úmero lateral e glenoide medial). Os efeitos:
+A resposta foram os componentes **"lateralizados"**, ou melhor, **menos medializados**, com o centro de rotação lateral à face da glenoide (Campbell, cap. 13). Isso pode ser feito pela **glenosfera** ou por **enxerto ósseo** (construção úmero medial e glenoide lateral) ou pelo **componente umeral** (úmero lateral e glenoide medial). Os efeitos:
 
-!tabela Reversa de GRAMMONT e reversa lateralizada (Campbell 15, cap. 13, p. 595 e 621 aprox.)
+!tabela Reversa de GRAMMONT e reversa lateralizada (Campbell 15, cap. 13)
 | Aspecto | GRAMMONT (centro medial, 155 graus) | Lateralizada ou haste vara (135 graus) |
 | --- | --- | --- |
 | centro de rotação | na face da glenoide | lateral à face da glenoide |
@@ -293,7 +293,7 @@ A resposta foram os componentes **"lateralizados"**, ou melhor, **menos medializ
 
 ## As complicações que a mecânica explica
 
-O Campbell (cap. 13, p. 621 e 622 aprox.) liga cada complicação típica da reversa à sua biomecânica:
+O Campbell (cap. 13) liga cada complicação típica da reversa à sua biomecânica:
 
 - **Notching**: relatado em **10% a 96%**; é uma reação osteolítica ao **impacto do polietileno, sobretudo em adução e rotação externa**. NEROT classificou em graus de 0 (sem notch) a 4 (soltura da glenoide); em geral estabiliza no **grau 2** por volta de **12 meses**, mas piora o resultado. Os dois fatores mais importantes para evitá-lo são a **base posicionada baixa** e a **inclinação inferior** (cerca de 10 a 15 graus); haste vara de 135 graus, glenosfera lateralizada e um colo da escápula longo também protegem.
 - **Instabilidade**: cerca de **5%**, sobretudo em **extensão e adução**. As **forças musculares** são o principal determinante da estabilidade; subescapular irreparável aumenta a luxação nas próteses de GRAMMONT.
@@ -447,7 +447,7 @@ O arco normal do cotovelo vai de **0 a cerca de 150 graus** de flexão (Campbell
 | --- | --- | --- |
 | Campbell 15, cap. 51 (p. 2184) | 30 a 130 graus, com 50 de pronação e 50 de supinação | contraturas do cotovelo |
 | Green 7, cap. 18 (p. 727) | arco de cerca de 100 graus (30 a 130) e rotação de 50 de supinação a 50 de pronação | resultados das fraturas do úmero distal |
-| Green 7, cap. 21 (p. 826 aprox.) | MORREY definiu o arco funcional de rotação como 50 de supinação e 50 de pronação | eixo do antebraço |
+| Green 7, cap. 21 (p. 795) | MORREY definiu o arco funcional de rotação como 50 de supinação e 50 de pronação | eixo do antebraço |
 | HEBERT, cap. 48 | MORREY: 30 a 130, e 50 tanto em pronação quanto em supinação | anatomia do cotovelo |
 | HEBERT, cap. 54 | menos de 30 de extensão a 130 de flexão, 50 de pronação e supinação | reabilitação |
 | Rockwood and Green 10, cap. 42 | 50 de pronação a 50 de supinação como arco mínimo, hoje considerado pequeno para algumas tarefas | fraturas do antebraço |

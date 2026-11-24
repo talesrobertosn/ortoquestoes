@@ -1,6 +1,6 @@
 ---
 id: hebert-pubalgia
-versao: 1
+versao: 2
 titulo: Pubalgia e osteíte púbica
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e c
 edicao: 5ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 7), o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 24), The Adult Hip (CALLAGHAN, 2017, caps. 2, 22 e 25) e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40)
 capitulo: Capítulo 76 · Reabilitação das lesões do esporte
 autores: Maria Stella PECCIN, André Kenzo SAITO e Aline Mizusaki IMOTO (HEBERT, cap. 76); P. David F. GUSMÃO, Marcus Vinicius CRESTANI e João Lopo MADUREIRA JÚNIOR (HEBERT, cap. 13); James L. GUYTON (Campbell, cap. 7); Brandon R. HULL, John M. YINGLING e David C. TEAGUE (Rockwood and Green, cap. 24); Hal David MARTIN, Ian James PALMER e Munif HATEM (CALLAGHAN, cap. 22)
-fonte: Livros conferidos localmente em 04/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), cap. 76 (seções Osteíte púbica, Lesão muscular, Quadro 76.1 e Fratura por estresse) e cap. 13 (Artroscopia do quadril: sinal do C, Quadro 13.1 e dores periarticulares secundárias ao impacto); Campbell's Operative Orthopaedics, 15ª ed., cap. 7, Tabela 7.1 e Campbell's Concepts, p. 357 a 358.e1, e seções Internal Snapping Hip, Osteitis Pubis e Sports Hernia (Athletic Pubalgia), p. 395 a 397; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 24, Tabelas 24-1 e 24-2 e seções Pelvic and Sacral Stress Fractures e Femoral Neck, p. 749 a 756; The Adult Hip (CALLAGHAN), 2017, cap. 2 (adutores e trígono femoral, p. 44 a 46), cap. 22 (exame supino, p. 328 a 330) e cap. 25 (estruturas extracapsulares na RM, p. 381 e 382 aprox.); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40, Box 40.3.
+fonte: Livros conferidos localmente em 04/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), cap. 76 (seções Osteíte púbica, Lesão muscular, Quadro 76.1 e Fratura por estresse) e cap. 13 (Artroscopia do quadril: sinal do C, Quadro 13.1 e dores periarticulares secundárias ao impacto); Campbell's Operative Orthopaedics, 15ª ed., cap. 7, Tabela 7.1 e Campbell's Concepts, p. 357 a 358.e1, e seções Internal Snapping Hip, Osteitis Pubis e Sports Hernia (Athletic Pubalgia), p. 395 a 397; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 24, Tabelas 24-1 e 24-2 e seções Pelvic and Sacral Stress Fractures e Femoral Neck, p. 749 a 756; The Adult Hip (CALLAGHAN), 2017, cap. 2 (adutores e trígono femoral, p. 44 a 46), cap. 22 (exame supino, p. 328 a 330) e cap. 25 (estruturas extracapsulares na RM); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40, Box 40.3.
 subtemas: Pubalgia e osteíte púbica
 resumo: A sínfise púbica é o fulcro da pelve anterior, puxada pelo reto abdominal de cima e pelos adutores de baixo; a pubalgia começa com mais frequência no adutor longo, por arrancada e mudança de direção; a radiografia da osteíte púbica mostra alargamento da sínfise, margens borradas e cisto junto ao disco; na RM, edema medular, sinal da fenda (ruptura da cápsula ligamentar que envolve o disco fibrocartilaginoso) e tendinose do reto abdominal e do adutor longo; hérnia do esporte é deficiência da parede posterior do canal inguinal; tratamento conservador com fortalecimento ativo de abdome e adutores, cirurgia só no caso recalcitrante.
 ---
@@ -42,7 +42,7 @@ Os livros conferidos não usam o termo "aponeurose comum" para a continuidade en
 
 A sínfise púbica tem um **disco fibrocartilaginoso** no centro, envolvido por uma **cápsula ligamentar** (Campbell, cap. 7, p. 397). Essa anatomia, aparentemente escolar, é a chave de duas questões: o **cisto** da osteíte púbica aparece no corpo do púbis **adjacente ao disco**, e o **sinal da fenda** da RM nasce da **ruptura da cápsula ligamentar que envolve o disco**. Quem guarda a imagem "disco no meio, cápsula em volta, tendões por fora" resolve as perguntas de imagem sem decorar.
 
-Pelo CALLAGHAN (The Adult Hip, 2017, cap. 2, p. 31 aprox.), a pelve se forma a partir de três centros primários (ílio, ísquio e púbis), com centros secundários que incluem a própria **sínfise púbica**; esses secundários se fundem entre os **20 e os 22 anos**. A informação ajuda a entender por que, no adolescente, a dor ao redor do púbis pode ser apofisária, e no adulto jovem, articular ou tendínea.
+Pelo CALLAGHAN (The Adult Hip, 2017, cap. 2), a pelve se forma a partir de três centros primários (ílio, ísquio e púbis), com centros secundários que incluem a própria **sínfise púbica**; esses secundários se fundem entre os **20 e os 22 anos**. A informação ajuda a entender por que, no adolescente, a dor ao redor do púbis pode ser apofisária, e no adulto jovem, articular ou tendínea.
 
 ## Os adutores
 
@@ -52,7 +52,7 @@ Há ainda duas funções secundárias que pesam no exame. O pectíneo, os adutor
 
 ## O trígono femoral e a vizinhança vascular
 
-O mesmo capítulo do CALLAGHAN (p. 46 aprox.) define o **trígono femoral**: limite proximal no **ligamento inguinal**, medial no **adutor longo**, lateral no **sartório**; o assoalho é formado por ilíaco, psoas, **pectíneo** e **adutor curto**. A artéria femoral profunda passa entre o pectíneo e o adutor longo e, depois, entre o adutor longo e o curto. O **ligamento pubofemoral**, espessamento inferomedial da cápsula do quadril que nasce da porção púbica do rebordo e do ramo superior, fica **tenso em extensão e abdução** (p. 44 aprox.). O adutor longo, portanto, é a borda medial do trígono, o tendão que o examinador encontra ao palpar a virilha, e o que os livros mais associam à pubalgia.
+O mesmo capítulo do CALLAGHAN define o **trígono femoral**: limite proximal no **ligamento inguinal**, medial no **adutor longo**, lateral no **sartório**; o assoalho é formado por ilíaco, psoas, **pectíneo** e **adutor curto**. A artéria femoral profunda passa entre o pectíneo e o adutor longo e, depois, entre o adutor longo e o curto. O **ligamento pubofemoral**, espessamento inferomedial da cápsula do quadril que nasce da porção púbica do rebordo e do ramo superior, fica **tenso em extensão e abdução**. O adutor longo, portanto, é a borda medial do trígono, o tendão que o examinador encontra ao palpar a virilha, e o que os livros mais associam à pubalgia.
 
 !tabela Os músculos que puxam o púbis (CALLAGHAN, cap. 2; Campbell 15, cap. 7)
 | Músculo | Origem | Inserção | Por que importa na pubalgia |
@@ -223,7 +223,7 @@ Na **cintilografia óssea**, a sínfise mostra **captação aumentada** (Campbel
 
 A RM mostra **edema da medula óssea** no púbis (Campbell, cap. 7, p. 397). O livro faz uma ressalva que toda banca deveria cobrar: **alguns atletas assintomáticos também têm edema medular no púbis**. O achado, sozinho, não fecha o diagnóstico; ele precisa casar com a clínica. É o mesmo princípio que vale para o edema de estresse em outros ossos: a sobrecarga do atleta deixa marca na medula antes de doer.
 
-O CALLAGHAN (cap. 25, p. 381 e 382 aprox.) reforça o papel da RM na dor inespecífica da virilha: além da patologia intra-articular, ela avalia ao mesmo tempo as estruturas extracapsulares (ossos, músculos e tendões, bursas e estruturas neurovasculares), e entre as entidades comumente encontradas cita **lesões dos abdutores, bursite trocantérica, pubalgia atlética e fraturas por estresse da pelve**. A capacidade de diferenciar, sem invasão, dor intra-articular de extra-articular é o que orienta a estratégia de tratamento.
+O CALLAGHAN (cap. 25) reforça o papel da RM na dor inespecífica da virilha: além da patologia intra-articular, ela avalia ao mesmo tempo as estruturas extracapsulares (ossos, músculos e tendões, bursas e estruturas neurovasculares), e entre as entidades comumente encontradas cita **lesões dos abdutores, bursite trocantérica, pubalgia atlética e fraturas por estresse da pelve**. A capacidade de diferenciar, sem invasão, dor intra-articular de extra-articular é o que orienta a estratégia de tratamento.
 
 ## O sinal da fenda
 

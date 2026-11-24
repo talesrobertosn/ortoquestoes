@@ -1,6 +1,6 @@
 ---
 id: campbell15-exame-neurologico
-versao: 1
+versao: 2
 titulo: Exame neurológico e radiculopatias
 especialidade: coluna
 acesso: gratis

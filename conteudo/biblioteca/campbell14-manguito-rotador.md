@@ -1,6 +1,6 @@
 ---
 id: campbell14-manguito-rotador
-versao: 4
+versao: 5
 titulo: Manguito rotador: exame, roturas e tratamento
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021), ampliado com a 15ª edição (2026)
 capitulo: Capítulo 46 · Shoulder and Elbow Injuries, com os capítulos 52 · Arthroscopy of the Upper Extremity e 12 · Shoulder and Elbow Arthroplasty
 autores: Robert H. Miller III, Frederick M. Azar e Thomas W. Throckmorton (cap. 46)
-fonte: Livro conferido localmente em 30/10/2026, caps. 46, 52 e 12. As referências citam capítulo, seção, quadro e figura. Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (pp. 2144 a 2176), cap. 57 (reparo artroscópico) e caps. 13 e 14 (artropatia e transferências). Ampliado em 04/11/2026 com o impacto subacromial e a acromioplastia: Campbell 15, cap. 51 (pp. 2147, 2148 e 2157.e1 a 2162), cap. 57 (pp. 2456 a 2459 e 2480 a 2483) e cap. 14 (p. 629); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32 (anatomia, biomecânica e imagem da acromioclavicular); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 4 e 5; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29 (p. 1182); Skeletal Trauma, 5ª ed., cap. 48 (p. 1408).
+fonte: Livro conferido localmente em 30/10/2026, caps. 46, 52 e 12. As referências citam capítulo, seção, quadro e figura. Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (pp. 2144 a 2176), cap. 57 (reparo artroscópico) e caps. 13 e 14 (artropatia e transferências). Ampliado em 04/11/2026 com o impacto subacromial e a acromioplastia: Campbell 15, cap. 51 (pp. 2147, 2148 e 2157.e1 a 2162), cap. 57 (pp. 2456 a 2459 e 2480 a 2483) e cap. 14 (p. 629); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32 (anatomia, biomecânica e imagem da acromioclavicular); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 4 e 5; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29 (p. 1182); Skeletal Trauma, 5ª ed., cap. 48 (p. 1408). Versão 5 (24/11/2026): o colágeno da cicatriz do tendão e o dilema da mobilização precoce pelo Rockwood and Green's Fractures in Adults, 10ª ed., cap. 2.
 subtemas: Lesões do manguito rotador; Tendinite calcária; Lesão do subescapular; Impacto subacromial e acromioplastia
 resumo: Campbell 15: pegada de cada tendão, cinco camadas, cabo; acurácia dos testes (PARK), lags, subescapular; HAMADA, acrômio, ângulo crítico de 35 graus, GOUTALLIER e sinal da tangente; estágios de NEER; KEENER, 3 semanas e 4 meses, Box 51.5, DERWIN; fileiras, TRANTALIS, convergência, reabilitação; LAFOSSE; trapézio inferior e reconstrução capsular superior; SARKAR e UHTHOFF. Anatomia (pares de forças, bainha do bíceps, cabo e crescente, arco coracoacromial); exame (NEER, HAWKINS, JOBE, PATTE, sinais de atraso, lift-off, belly-press, bear hug); impactos externo, subcoracoide e interno; COFIELD, GOUTALLIER e ELLMAN; história natural e tratamento inicial; parciais acima e abaixo de 50%; transferências (grande dorsal de GERBER, peitoral maior) e reparo parcial; nervo supraescapular a 1,8 cm; tecido da vírgula e subescapular; tendinite calcária; prótese reversa; os acromiale, acromioplastia aberta e artroscópica e a acromioclavicular.
 ---
@@ -374,6 +374,8 @@ alerta: O TECOC (`ombro-cotovelo-0182`) usa 40 graus; o Campbell 15 dá 35 graus
 
 !questoes treino=ombro-cotovelo-0689
 conceito: Rotura completa pode ter função normal; idoso ou pouco ativo começa pelo tratamento não operatório, e sintomas há mais de 6 meses pioram o resultado.
+como: O simulado pergunta, no idoso pouco ativo com rotura do manguito, qual fator piora o resultado do tratamento não operatório.
+armadilha: Marcar a rotura completa ou a idade, quando o fator que pesa é a duração dos sintomas acima de 6 meses; rotura completa pode ter função normal.
 !fim
 
 # História natural, indicações e o que piora o resultado {radar=confirmado}
@@ -432,11 +434,13 @@ armadilha: Achar que retração de 1,5 cm já piora o resultado (o limite é 2,5
 
 **A reabilitação.** Tipoia com almofada por **6 semanas**; o reparo é mais fraco por volta da **3ª semana** e, nos 3 primeiros meses, mais fraco que no dia da cirurgia. Esperar 6 semanas para a fisioterapia nas roturas médias e grandes **não aumentou a rigidez** em 1 ano e **reduziu a rerruptura**; nos **diabéticos**, que enrijecem com facilidade, a fisioterapia começa cedo. Isometria em rotação externa em 6 semanas, ativo em 12, fortalecimento depois de 10 a 12. O PRP não mostrou benefício clínico consistente.
 
+**O tecido que se forma no reparo.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, Bone, Cartilage, and Tendon Healing, seção do tendão), ajuda a entender por que esse começo é frágil. O tendão normal é feito sobretudo de colágeno **tipo I** (65% a 80% do peso seco), em fibras grossas e alinhadas; o **tipo III** é mais fino, menos organizado e **menos resistente à tração**, e aparece justamente nos locais de rotura. Quando o tendão é reinserido no osso, a entese normal, com seu gradiente de fibrocartilagem, não se refaz: forma-se um calo desorganizado na interface, mais rígido que o tecido nativo. O mesmo capítulo resume o dilema da reabilitação: o movimento precoce costuma favorecer a cicatrização intrínseca e limitar aderências, mas **no manguito retardar a mobilização parece prevenir novas roturas**, o que bate com a prática do Campbell de esperar 6 semanas nas roturas médias e grandes.
+
 !questoes central=ombro-cotovelo-0208 relacionadas=ombro-cotovelo-0418
-conceito: Fileira simples cobre metade da pegada e a dupla quase toda; nas grandes e maciças a dupla cicatriza melhor; superconstrição rompe a junção musculotendínea (TRANTALIS 2); convergência de margens nas roturas em U e L; tipoia por 6 semanas, e esperar 6 semanas pela fisioterapia reduz a rerruptura sem aumentar a rigidez.
+conceito: Fileira simples cobre metade da pegada e a dupla quase toda; nas grandes e maciças a dupla cicatriza melhor; superconstrição rompe a junção musculotendínea (TRANTALIS 2); convergência de margens nas roturas em U e L; tipoia por 6 semanas, e esperar 6 semanas pela fisioterapia reduz a rerruptura sem aumentar a rigidez; a cicatriz jovem é de colágeno tipo III, fino e fraco, que só com o tempo dá lugar ao tipo I.
 como: O TECOC perguntou o colágeno da mobilização precoce e o exercício passivo que mais ativa o supraespinal.
 armadilha: Mobilizar além de 1,8 cm da glenoide, ou achar que a dupla fileira é sempre melhor nas roturas pequenas.
-alerta: O tipo de colágeno depositado com a mobilização precoce (`ombro-cotovelo-0208`) e a ativação do supraespinal nos exercícios passivos (`ombro-cotovelo-0418`) não aparecem no Campbell 15; os gabaritos oficiais foram mantidos.
+alerta: O Campbell 15 não fala do tipo de colágeno; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2), descreve o tipo III como o colágeno fino e desorganizado das áreas de rotura, mas nenhum livro do acervo liga diretamente a mobilização precoce ao tipo III (`ombro-cotovelo-0208`). A ativação do supraespinal nos exercícios passivos (`ombro-cotovelo-0418`) também não aparece nos livros lidos. Gabaritos oficiais mantidos.
 !fim
 
 # Roturas irreparáveis e transferências {radar=confirmado}

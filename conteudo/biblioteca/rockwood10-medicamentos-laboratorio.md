@@ -1,6 +1,6 @@
 ---
 id: rockwood10-medicamentos-laboratorio
-versao: 2
+versao: 3
 titulo: Medicamentos e exames laboratoriais
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 2, 4, 22, 46 e 49) e o Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed. (caps. 16, 26, 28 e 56)
 capitulo: Capítulo 26 · Venous Thromboembolism in Patients With Skeletal Trauma
 autores: Prism S. Schneider
-fonte: Livros conferidos localmente em 03/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 26 (p. aprox. 791 a 807), cap. 2 (p. aprox. 50 a 60), cap. 3 (p. aprox. 71), cap. 4 (p. aprox. 86 a 104), cap. 14 (p. aprox. 503), cap. 28 (p. aprox. 827 e 828), cap. 29 (p. aprox. 837 e 855) e cap. 53, páginas inferidas pelo índice remissivo; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 2 (p. 132 a 137), cap. 4 (p. 214, 283 e 284), cap. 22 (p. 783 a 790), caps. 25, 46 e 49; Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 16, 26, 28 e 56.
+fonte: Livros conferidos localmente em 03/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 26, cap. 2, cap. 3, cap. 4, cap. 14, cap. 28, cap. 29 e cap. 53; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 2 (p. 132 a 137), cap. 4 (p. 214, 283 e 284), cap. 22 (p. 783 a 790), caps. 25, 46 e 49; Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 16, 26, 28 e 56.
 subtemas: Medicamentos e exames laboratoriais
 resumo: Ácido tranexâmico é antifibrinolítico que inibe a ativação do plasminogênio; heparina ativa a antitrombina (TTPa, osteoporose, TIH) e é revertida pela protamina, parcial na enoxaparina; varfarina bloqueia II, VII, IX e X (vitamina K); clopidogrel tem meia-vida de 8 h e 5 a 7 dias de recuperação plaquetária; opioide, não AINE, associou-se à pseudartrose; PRP tem ao menos 4 vezes as plaquetas; osteoclasto vem da célula-tronco hematopoética; denosumabe é anti-RANKL e romosozumabe antiesclerostina; VHS normaliza em 3 semanas e PCR em 1; infecção periprotética pelo ICM com 6 pontos; biológico suspende e DMARD segue.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo nasce do capítulo 26 (Venous Thromboembolism in Patients With Skeletal Trauma) do Rockwood and Green's Fractures in Adults, 10ª ed. (2025), e reúne em volta dele tudo o que as provas chamam de "conceitos básicos de medicamentos e exames": a farmacologia da coagulação, a analgesia, os fármacos que mexem no osso e os exames de sangue e de líquido sinovial que o ortopedista pede todos os dias. As páginas do Rockwood vêm marcadas como aproximadas, inferidas pelo índice remissivo. As do Campbell's Operative Orthopaedics, 15ª ed., e do Sizínio Hebert, 5ª ed., são citadas quando conferidas.
+Este resumo nasce do capítulo 26 (Venous Thromboembolism in Patients With Skeletal Trauma) do Rockwood and Green's Fractures in Adults, 10ª ed. (2025), e reúne em volta dele tudo o que as provas chamam de "conceitos básicos de medicamentos e exames": a farmacologia da coagulação, a analgesia, os fármacos que mexem no osso e os exames de sangue e de líquido sinovial que o ortopedista pede todos os dias. O Rockwood é citado por capítulo. As páginas do Campbell's Operative Orthopaedics, 15ª ed., e do Sizínio Hebert, 5ª ed., são citadas quando conferidas.
 
 O ponto de partida é uma ideia simples: **todo remédio do perioperatório age num ponto preciso de uma cadeia**. O ácido tranexâmico age no plasminogênio; a heparina, na antitrombina; a varfarina, no fígado que fabrica fatores; a aspirina e o clopidogrel, na plaqueta; o denosumabe, no RANKL; o romosozumabe, na esclerostina. Quem sabe onde cada um encosta responde quase todas as questões sem decorar, porque o antídoto, o exame que monitoriza e o efeito colateral saem do mecanismo.
 
@@ -27,11 +27,11 @@ A segunda metade é de laboratório: **VHS e PCR** como cronômetros da infecç�
 
 ## Por que o trauma coagula demais
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 26, p. aprox. 791 e 792), abre o capítulo com a **tríade de VIRCHOW**: **estase venosa** (gesso, carga protegida), **lesão endotelial** (trauma, múltiplas lesões, a própria cirurgia) e **hipercoagulabilidade** (fatores pró-coagulantes aumentados, fibrinólise prejudicada). O politraumatizado reúne os três. O tromboembolismo venoso (TEV) é a **terceira causa de morte hospitalar no trauma**, e a embolia pulmonar responde por **12% das mortes após trauma maior**. No estudo clássico de GEERTS (1994), sem profilaxia, **58%** dos traumatizados graves tiveram trombose venosa profunda (TVP) na venografia, e **69%** dos que tinham fratura de membro inferior.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 26), abre o capítulo com a **tríade de VIRCHOW**: **estase venosa** (gesso, carga protegida), **lesão endotelial** (trauma, múltiplas lesões, a própria cirurgia) e **hipercoagulabilidade** (fatores pró-coagulantes aumentados, fibrinólise prejudicada). O politraumatizado reúne os três. O tromboembolismo venoso (TEV) é a **terceira causa de morte hospitalar no trauma**, e a embolia pulmonar responde por **12% das mortes após trauma maior**. No estudo clássico de GEERTS (1994), sem profilaxia, **58%** dos traumatizados graves tiveram trombose venosa profunda (TVP) na venografia, e **69%** dos que tinham fratura de membro inferior.
 
 ## A cascata clássica e os exames que a medem
 
-O modelo da cascata (1964) descreve duas entradas. A **via extrínseca**, dependente do **fator tecidual**, e a **via intrínseca**, de ativação por contato, que convergem para formar fibrina. O laboratório traduz o desenho: o **tempo de tromboplastina parcial ativada (TTPa) mede a via intrínseca**, e o **tempo de protrombina (TP) mede a extrínseca** (p. aprox. 792).
+O modelo da cascata (1964) descreve duas entradas. A **via extrínseca**, dependente do **fator tecidual**, e a **via intrínseca**, de ativação por contato, que convergem para formar fibrina. O laboratório traduz o desenho: o **tempo de tromboplastina parcial ativada (TTPa) mede a via intrínseca**, e o **tempo de protrombina (TP) mede a extrínseca**.
 
 A hemostasia **primária** começa quando a lesão expõe a matriz às plaquetas e o **fator tecidual ao fator VII plasmático**. A **secundária** tem como via fisiológica principal a do **fator tecidual**: o **fator VII** se liga ao fator tecidual e forma o complexo **VIIa-FT**, que gera pequenas quantidades de **IXa e Xa**; o **Xa com o Va** converte protrombina em **trombina**. O inibidor da via do fator tecidual (TFPI) freia o VIIa-FT. Na superfície da plaqueta, a **tenase intrínseca (IXa:VIIIa)** e a **protrombinase (Xa:Va)** multiplicam a trombina.
 
@@ -45,7 +45,7 @@ O modelo celular descreve três fases sobrepostas: **iniciação** (via extríns
 
 Depois da lesão, a **antitrombina** (antes chamada antitrombina III), que inibe trombina e Xa, **cai**; e ela é justamente **o alvo da heparina de baixo peso molecular**. Menos antitrombina significa mais TVP e menor resposta à enoxaparina. O **PAI-1** (inibidor do ativador do plasminogênio tipo 1) sobe com a lesão endotelial, reduz o t-PA e "desliga" a fibrinólise (fibrinolysis shutdown).
 
-!tabela Onde cada fármaco age (Rockwood cap. 26, p. aprox. 794 a 800; Campbell cap. 2, Tabelas 2.1 e 2.2)
+!tabela Onde cada fármaco age (Rockwood cap. 26; Campbell cap. 2, Tabelas 2.1 e 2.2)
 | Fármaco | Alvo | Exame que mede | Reversão citada |
 |---|---|---|---|
 | Ácido tranexâmico | Plasminogênio (impede virar plasmina) | Fibrinólise no TEG | Não se aplica |
@@ -72,13 +72,13 @@ Como raciocinar diante de um distúrbio hemorrágico desconhecido: se o defeito 
 
 ## O mecanismo em uma frase
 
-O Rockwood (cap. 26, p. aprox. 794) define: o ácido tranexâmico (TXA) é um **derivado sintético do aminoácido lisina** que funciona como **agente antifibrinolítico** e **inibidor competitivo da ativação do plasminogênio em plasmina**, impedindo a degradação da fibrina. Não forma coágulo novo: **protege o que já se formou**. Por isso ele reduz perda sanguínea e necessidade de transfusão no trauma, e num ensaio de **9.535 pacientes** de cirurgia não cardíaca reduziu sangramento com taxa de eventos cardiovasculares (TEV incluído) **muito semelhante** à do placebo.
+O Rockwood (cap. 26) define: o ácido tranexâmico (TXA) é um **derivado sintético do aminoácido lisina** que funciona como **agente antifibrinolítico** e **inibidor competitivo da ativação do plasminogênio em plasmina**, impedindo a degradação da fibrina. Não forma coágulo novo: **protege o que já se formou**. Por isso ele reduz perda sanguínea e necessidade de transfusão no trauma, e num ensaio de **9.535 pacientes** de cirurgia não cardíaca reduziu sangramento com taxa de eventos cardiovasculares (TEV incluído) **muito semelhante** à do placebo.
 
 Vale decompor as palavras que a prova embaralha. **Fibrinolítico** é o que dissolve fibrina (o t-PA e a alteplase, por exemplo, que o Campbell lista entre os trombolíticos); **antifibrinolítico** é o contrário. O plasminogênio vira **plasmina** pela ação dos ativadores (o t-PA, que o PAI-1 reduz no trauma); a plasmina degrada a fibrina, e um dos produtos dessa degradação é o **D-dímero**. O TXA **inibe** essa ativação. Então ele é antifibrinolítico **e** inibidor da ativação do plasminogênio, nunca "promotor".
 
 ## Onde aparece na prática
 
-- **Trauma grave:** no Rockwood (cap. 14, p. aprox. 503), o tromboelastograma mostra fibrinólise excessiva quando a amplitude cai 30 minutos depois do máximo; aí entram **ácido tranexâmico ou ácido aminocaproico**. O prolongamento do tempo R aponta falta de fatores (plasma); o atraso de K e o ângulo alfa apontam falta de fibrinogênio (crioprecipitado). A transfusão maciça segue a razão **1:1:1** (plasma, plaquetas, hemácias).
+- **Trauma grave:** no Rockwood (cap. 14), o tromboelastograma mostra fibrinólise excessiva quando a amplitude cai 30 minutos depois do máximo; aí entram **ácido tranexâmico ou ácido aminocaproico**. O prolongamento do tempo R aponta falta de fatores (plasma); o atraso de K e o ângulo alfa apontam falta de fibrinogênio (crioprecipitado). A transfusão maciça segue a razão **1:1:1** (plasma, plaquetas, hemácias).
 - **Artroplastia do ombro:** o TXA é dado **antes da incisão** e pode ser injetado localmente quando o intravenoso é contraindicado; não houve diferença de perda ou de complicações entre tópico e venoso (Rockwood, cap. 36).
 - **Dose:** o Campbell's Operative Orthopaedics, 15ª ed. (cap. 2, Tabela 2.1, p. 135), dá **1 g IV em 10 a 20 minutos**, sem passar de 100 mg/min, com possibilidade de nova dose de 1 g se o sangramento persistir; doses totais altas (**50 mg/kg ou mais**) podem aumentar o risco de **convulsões**, e pode exigir ajuste renal. O ácido aminocaproico entra com 4 a 5 g de ataque e 1 g/h (máximo de 30 g/dia).
 
@@ -94,7 +94,7 @@ As duas versões da questão (TARO 2020 e SBOT-SP) diferem só na última altern
 
 ## Heparina não fracionada
 
-O Rockwood (cap. 26, p. aprox. 799) conta que a heparina foi descoberta por MCLEAN em **1916**. Ela **se liga à antitrombina e a ativa**, e também se liga à trombina; inibe **o Xa e a trombina (IIa)**, por isso tem **início de ação mais rápido** que a HBPM, que inibe diretamente só o Xa. Além de impedir a fibrina, bloqueia a ativação de plaquetas pela trombina e dos fatores V e VIII. O efeito é medido pelo **TTPa**; o índice terapêutico é **estreito**, o que exige anti-Xa ou TTPa seriados. A meia-vida é de cerca de **1 a 2 horas** (o Campbell, cap. 46, dá de 23 minutos a 2,48 horas), e a infusão precisa ser contínua ou frequente.
+O Rockwood (cap. 26) conta que a heparina foi descoberta por MCLEAN em **1916**. Ela **se liga à antitrombina e a ativa**, e também se liga à trombina; inibe **o Xa e a trombina (IIa)**, por isso tem **início de ação mais rápido** que a HBPM, que inibe diretamente só o Xa. Além de impedir a fibrina, bloqueia a ativação de plaquetas pela trombina e dos fatores V e VIII. O efeito é medido pelo **TTPa**; o índice terapêutico é **estreito**, o que exige anti-Xa ou TTPa seriados. A meia-vida é de cerca de **1 a 2 horas** (o Campbell, cap. 46, dá de 23 minutos a 2,48 horas), e a infusão precisa ser contínua ou frequente.
 
 Os efeitos adversos são a parte mais cobrada: **sangramento**, **osteoporose e fraturas**, **hiperaldosteronismo** e a **trombocitopenia induzida pela heparina (TIH)**, fenômeno **pró-trombótico** em que anticorpos ativam plaquetas e derrubam a contagem para **menos de 50%**. Diante de sangramento: **suspender e considerar protamina**.
 
@@ -106,13 +106,13 @@ Um detalhe fisiopatológico fecha o raciocínio da seção anterior: como o trau
 
 ## Fondaparinux
 
-**Pentassacarídeo sintético**, inibidor **indireto** do Xa dependente da antitrombina, com estrutura semelhante à da heparina. Subcutâneo, uma vez ao dia, meia-vida de cerca de **17 horas** (17 a 21 no Campbell). Excretado pelo rim: **contraindicado com clearance abaixo de 30** e usado com cautela entre 30 e 50. Diferente das heparinas, **não causa osteopenia nem TIH**, porque não age sobre osteoclasto ou osteoblasto e não ativa plaquetas. Na fratura do quadril, deu **8,3%** de TEV contra **19,1%** da enoxaparina (Rockwood, p. aprox. 800).
+**Pentassacarídeo sintético**, inibidor **indireto** do Xa dependente da antitrombina, com estrutura semelhante à da heparina. Subcutâneo, uma vez ao dia, meia-vida de cerca de **17 horas** (17 a 21 no Campbell). Excretado pelo rim: **contraindicado com clearance abaixo de 30** e usado com cautela entre 30 e 50. Diferente das heparinas, **não causa osteopenia nem TIH**, porque não age sobre osteoclasto ou osteoblasto e não ativa plaquetas. Na fratura do quadril, deu **8,3%** de TEV contra **19,1%** da enoxaparina (Rockwood).
 
 ## A protamina e os números da reversão
 
 O Campbell (cap. 2, Tabela 2.1, p. 134) dá a receita. Para a **heparina não fracionada**, **1 mg de protamina neutraliza 100 unidades**, calculando sobre a heparina das últimas 3 horas e reduzindo a dose conforme o tempo (1,0 mg por 100 U se menos de 30 minutos; 0,5 mg entre 30 e 120; 0,25 mg depois de 120). Para a **enoxaparina**, **1 mg de protamina para cada 1 mg** dado nas últimas 8 horas, mas a protamina **não reverte a HBPM tão bem** quanto reverte a HNF; passadas **12 horas**, pode nem ser necessária, e com sangramento ativo e anti-Xa acima de **0,2 UI/mL** considera-se reverter, com segunda dose de 0,5 mg por mg se preciso. Nunca mais de **50 mg** por dose (dose alta tem efeito **anticoagulante** paradoxal), infusão lenta, no máximo 5 mg/min, porque a injeção rápida causa **hipotensão grave e anafilaxia**; início em 5 a 15 minutos.
 
-!tabela Heparinas e fondaparinux (Rockwood cap. 26, p. aprox. 799 e 800; Campbell cap. 2, p. 133 e 134)
+!tabela Heparinas e fondaparinux (Rockwood cap. 26; Campbell cap. 2, p. 133 e 134)
 | Item | HNF | HBPM | Fondaparinux |
 |---|---|---|---|
 | Alvo | Xa e IIa via antitrombina | Xa via antitrombina | Xa via antitrombina |
@@ -134,7 +134,7 @@ armadilha: Escolher vitamina K, que é o antídoto da varfarina, ou o fator VIIa
 
 ## Varfarina
 
-A varfarina é o antagonista da vitamina K mais usado. O Rockwood (cap. 26, p. aprox. 800) resume: **bloqueia a gama-carboxilação dos fatores II, VII, IX e X e das proteínas C e S**, tem meia-vida de **20 a 60 horas**, exige **INR** seriado, e é revertida com **vitamina K e concentrado de complexo protrombínico**. Duas armadilhas fisiológicas: no **início** do tratamento há efeito **pró-coagulante paradoxal**, porque as proteínas C e S (anticoagulantes naturais) caem primeiro; e, após fratura do quadril, ela foi **menos eficaz que a HBPM** e teve mais eventos adversos (OR 1,18).
+A varfarina é o antagonista da vitamina K mais usado. O Rockwood (cap. 26) resume: **bloqueia a gama-carboxilação dos fatores II, VII, IX e X e das proteínas C e S**, tem meia-vida de **20 a 60 horas**, exige **INR** seriado, e é revertida com **vitamina K e concentrado de complexo protrombínico**. Duas armadilhas fisiológicas: no **início** do tratamento há efeito **pró-coagulante paradoxal**, porque as proteínas C e S (anticoagulantes naturais) caem primeiro; e, após fratura do quadril, ela foi **menos eficaz que a HBPM** e teve mais eventos adversos (OR 1,18).
 
 O Campbell (cap. 2, Tabela 2.1, p. 134) detalha a reversão. Sangramento ativo com qualquer INR: suspender e dar **vitamina K 5 a 10 mg IV**; sangramento grave: **10 mg IV mais complexo protrombínico (Kcentra 1.500 U, preferido) ou plasma (10 a 30 mL/kg)**. A vitamina K age em cerca de **24 horas por via oral e 12 horas IV**; o plasma demora 2 a 6 horas e exige grande volume. INR entre 5 e 9 sem sangramento: omitir uma ou duas doses. Para operar com INR entre 1,5 e 2,5 em menos de 24 horas: 0,5 a 1 mg IV. O Kcentra contém traços de heparina e não deve ser usado em quem teve TIH nos últimos 100 dias.
 
@@ -162,7 +162,7 @@ O Campbell dá números próprios: dabigatrana **12 a 17 h**, revertida por **id
 
 ## Aspirina
 
-Para o Rockwood (cap. 26, p. aprox. 798), a aspirina é um **AINE** que inibe a **ciclo-oxigenase de forma irreversível**, mais a COX-1 que a COX-2, e bloqueia a agregação dependente de **tromboxano A2** durante toda a vida da plaqueta afetada, de **7 a 10 dias**. **Aumenta o tempo de sangramento** sem alterar os demais testes. A irreversibilidade explica a recuperação lenta: o efeito dura a vida da plaqueta atingida, e a função só volta com plaquetas novas.
+Para o Rockwood (cap. 26), a aspirina é um **AINE** que inibe a **ciclo-oxigenase de forma irreversível**, mais a COX-1 que a COX-2, e bloqueia a agregação dependente de **tromboxano A2** durante toda a vida da plaqueta afetada, de **7 a 10 dias**. **Aumenta o tempo de sangramento** sem alterar os demais testes. A irreversibilidade explica a recuperação lenta: o efeito dura a vida da plaqueta atingida, e a função só volta com plaquetas novas.
 
 Como tromboprofilaxia, ganhou espaço na artroplastia e agora no trauma. No ensaio **PEP** (13.356 fraturas de quadril; 160 mg/dia por 35 dias), a aspirina reduziu a embolia pulmonar em **43%** e a TVP em **29%**, com **24% a mais de sangramento** e sem aumento de complicações de ferida. No **PREVENT CLOT** (12.211 pacientes com fraturas de membros ou pelve), **aspirina 81 mg de 12 em 12 horas foi não inferior à enoxaparina 30 mg de 12 em 12 horas** para mortalidade em 90 dias, com embolia de **1,49%** nos dois braços.
 
@@ -196,7 +196,7 @@ armadilha: Confundir a meia-vida curta da droga com a duração do efeito, ou tr
 
 ## Quem tem risco
 
-A Tabela 26-1 do Rockwood (p. aprox. 796) separa fatores do paciente e do trauma. Do paciente: **idade**, **IMC acima de 30**, câncer, TEV prévio ou familiar, **gestação e puerpério até 12 semanas**, **trombofilias** (proteína C ou S, **fator V de LEIDEN**), tipo sanguíneo não O; e, pelo tratamento, **estrogênio**, quimioterapia e **corticoide sistêmico por mais de 3 meses**. Do trauma: **ISS acima de 10**, fratura de **pelve, quadril ou membro inferior**, lesão raquimedular, TCE, trauma torácico, choque, coagulopatia, **4 ou mais unidades de sangue em 24 horas**, hipotermia, cateter venoso central, ventilação por mais de 3 dias, **anestesia acima de 30 minutos**, imobilização, **artroplastia por fratura do quadril** e **atraso acima de 24 horas** na cirurgia do quadril.
+A Tabela 26-1 do Rockwood separa fatores do paciente e do trauma. Do paciente: **idade**, **IMC acima de 30**, câncer, TEV prévio ou familiar, **gestação e puerpério até 12 semanas**, **trombofilias** (proteína C ou S, **fator V de LEIDEN**), tipo sanguíneo não O; e, pelo tratamento, **estrogênio**, quimioterapia e **corticoide sistêmico por mais de 3 meses**. Do trauma: **ISS acima de 10**, fratura de **pelve, quadril ou membro inferior**, lesão raquimedular, TCE, trauma torácico, choque, coagulopatia, **4 ou mais unidades de sangue em 24 horas**, hipotermia, cateter venoso central, ventilação por mais de 3 dias, **anestesia acima de 30 minutos**, imobilização, **artroplastia por fratura do quadril** e **atraso acima de 24 horas** na cirurgia do quadril.
 
 ## Escores
 
@@ -204,7 +204,7 @@ O Rockwood prefere o **TESS** (Trauma Embolic Scoring System): **7 ou mais** é 
 
 ## Quando começar e por quanto tempo
 
-!tabela Profilaxia: início, duração e situações especiais (Rockwood cap. 26, p. aprox. 801 a 805; Campbell cap. 2, p. 132)
+!tabela Profilaxia: início, duração e situações especiais (Rockwood cap. 26; Campbell cap. 2, p. 132)
 | Situação | Recomendação |
 |---|---|
 | Cirurgia atrasará mais de 12 h | Iniciar farmacológica; suspender HBPM 12 h antes |
@@ -225,7 +225,7 @@ O Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed. (cap. 56, Fraturas do acet
 
 # Diagnóstico do tromboembolismo {radar=fundamento}
 
-O Rockwood (cap. 26, p. aprox. 806 e 807) lembra que a TVP é **dois terços** dos TEV, **90%** no membro inferior. O exame clínico engana no membro operado: dor, edema, eritema, sinal de HOMANS, taquicardia ou febre sem causa; o sinal de maior valor preditivo é o **aumento da panturrilha acima de 2 cm** em relação ao outro lado (razão de verossimilhança 1,8). Sem tratamento, cerca de **50%** das TVP proximais sintomáticas embolizam em 3 meses.
+O Rockwood (cap. 26) lembra que a TVP é **dois terços** dos TEV, **90%** no membro inferior. O exame clínico engana no membro operado: dor, edema, eritema, sinal de HOMANS, taquicardia ou febre sem causa; o sinal de maior valor preditivo é o **aumento da panturrilha acima de 2 cm** em relação ao outro lado (razão de verossimilhança 1,8). Sem tratamento, cerca de **50%** das TVP proximais sintomáticas embolizam em 3 meses.
 
 O **D-dímero** é o fragmento que a plasmina solta da fibrina ligada. É **muito sensível (acima de 95%) e pouco específico (cerca de 40%)**; a especificidade despenca com trauma, cirurgia recente, hemorragia, hepatopatia, gestação, câncer e idade. Por isso **só vale negativo**: escore de WELLS baixo com D-dímero negativo exclui TVP. No trauma, WELLS de risco moderado ou alto teve sensibilidade de 67%, especificidade de 90% e **valor preditivo negativo de 99%**. É o mesmo D-dímero que o ICM 2018 aproveita como critério menor de infecção periprotética, com outro ponto de corte.
 
@@ -242,7 +242,7 @@ alerta: Sem gabarito oficial; a resposta provável (A, certo) é a da bibliograf
 
 ## O que o Rockwood ensina sobre mecanismos
 
-O capítulo 28 do Rockwood (p. aprox. 827 e 828) resume as classes. O **paracetamol** é um dos analgésicos mais usados e também antipirético; **o mecanismo é desconhecido**, e ele é seguro em adultos e crianças, exceto em algumas hepatopatias. A **aspirina** é um salicilato que **inibe a ciclo-oxigenase**: daí o efeito antiplaquetário, analgésico, antipirético e anti-inflamatório. Os **AINEs** (naproxeno, ibuprofeno, meloxicam) agem **nas mesmas vias**. Os **opioides** atuam nos receptores **mu, delta e kappa** do encéfalo, medula e nociceptores periféricos, e no sistema de **recompensa mesolímbico**, que libera dopamina; em alguns pacientes causam **hiperalgesia**. A **gabapentina** bloqueia canais de cálcio. Os relaxantes musculares agem centralmente, por mecanismo desconhecido.
+O capítulo 28 do Rockwood resume as classes. O **paracetamol** é um dos analgésicos mais usados e também antipirético; **o mecanismo é desconhecido**, e ele é seguro em adultos e crianças, exceto em algumas hepatopatias. A **aspirina** é um salicilato que **inibe a ciclo-oxigenase**: daí o efeito antiplaquetário, analgésico, antipirético e anti-inflamatório. Os **AINEs** (naproxeno, ibuprofeno, meloxicam) agem **nas mesmas vias**. Os **opioides** atuam nos receptores **mu, delta e kappa** do encéfalo, medula e nociceptores periféricos, e no sistema de **recompensa mesolímbico**, que libera dopamina; em alguns pacientes causam **hiperalgesia**. A **gabapentina** bloqueia canais de cálcio. Os relaxantes musculares agem centralmente, por mecanismo desconhecido.
 
 No uso, o cetorolaco intravenoso controla bem a dor musculoesquelética e, segundo a literatura recente citada, **não aumentou a pseudartrose**; os AINEs **não aumentaram de forma significativa o sangramento pós-operatório**, e o sangramento digestivo do cetorolaco é só um pouco maior que o da morfina.
 
@@ -272,11 +272,11 @@ alerta: Nenhum dos livros conferidos descreve o mecanismo da dipirona; o gabarit
 
 ## A coorte de 300 mil fraturas
 
-A dúvida histórica era se o anti-inflamatório atrapalha o calo. O Rockwood (cap. 2, p. aprox. 54 e 55) traz o dado que virou questão: **numa coorte de mais de 300.000 fraturas, quem tomava AINE não teve mais chance de pseudartrose; quem tomava opioide, ou opioide com AINE, teve.** Se os AINEs prejudicam, experimentos sugerem que seria por reduzir o **TGF-beta**. O capítulo 28 repete o tom: o risco de pseudartrose com AINE é menor do que se temia, sobretudo em uso curto e precoce; o **opioide** pode ter efeito deletério no osso (demonstrado em ratos, ainda não de forma robusta em humanos), além do custo de abuso e dependência.
+A dúvida histórica era se o anti-inflamatório atrapalha o calo. O Rockwood (cap. 2) traz o dado que virou questão: **numa coorte de mais de 300.000 fraturas, quem tomava AINE não teve mais chance de pseudartrose; quem tomava opioide, ou opioide com AINE, teve.** Se os AINEs prejudicam, experimentos sugerem que seria por reduzir o **TGF-beta**. O capítulo 28 repete o tom: o risco de pseudartrose com AINE é menor do que se temia, sobretudo em uso curto e precoce; o **opioide** pode ter efeito deletério no osso (demonstrado em ratos, ainda não de forma robusta em humanos), além do custo de abuso e dependência.
 
 ## Antirreabsortivos e anabólicos no calo
 
-O raciocínio teórico diria que bloquear o osteoclasto atrasa a remodelação do calo, mas os ensaios não confirmam: bisfosfonato precoce não atrapalhou a união na fratura transtrocanteriana (cap. 2), o alendronato em até 14 dias no rádio distal e o zoledronato do **HORIZON** em qualquer momento após a fratura do quadril também não (cap. 4, p. aprox. 94), e a ASBMR libera o bisfosfonato ainda na internação. A **teriparatida** falhou no quadril (talvez útil na atípica e na pseudartrose), e o **romosozumabe** foi negativo em dois ensaios (tíbia e quadril).
+O raciocínio teórico diria que bloquear o osteoclasto atrasa a remodelação do calo, mas os ensaios não confirmam: bisfosfonato precoce não atrapalhou a união na fratura transtrocanteriana (cap. 2), o alendronato em até 14 dias no rádio distal e o zoledronato do **HORIZON** em qualquer momento após a fratura do quadril também não (cap. 4), e a ASBMR libera o bisfosfonato ainda na internação. A **teriparatida** falhou no quadril (talvez útil na atípica e na pseudartrose), e o **romosozumabe** foi negativo em dois ensaios (tíbia e quadril).
 
 !tabela Fármacos e consolidação (Rockwood caps. 2, 4 e 28)
 | Fármaco | Efeito descrito |
@@ -299,7 +299,7 @@ armadilha: Responder AINE por reflexo, ou bifosfonato precoce, que nos ensaios n
 
 ## Plasma rico em plaquetas
 
-O Rockwood (cap. 2, p. aprox. 60) define o **PRP** como produto autólogo de plasma com concentração de plaquetas maior que a do sangue total, **tipicamente pelo menos quatro vezes a basal**, rico em fatores de crescimento (FGF, TGF-beta e outros). O capítulo 3 (p. aprox. 71) acrescenta números que parecem contradizer, mas completam: a contagem normal vai de **150.000 a 450.000 plaquetas/µL**; para **regeneração óssea**, a concentração eficaz é de **2 a 6 vezes, idealmente 5**, porque **menos não tem efeito e mais prejudica** o osso. O capítulo 30 (pseudartrose) descreve o PRP como a camada entre o plasma claro e as hemácias, com **300% a 600%** de plaquetas. A preparação mais usada é a rica em leucócitos (LR-PRP). Para a fratura, o Rockwood conclui que faltam ensaios de qualidade para recomendar o uso rotineiro.
+O Rockwood (cap. 2) define o **PRP** como produto autólogo de plasma com concentração de plaquetas maior que a do sangue total, **tipicamente pelo menos quatro vezes a basal**, rico em fatores de crescimento (FGF, TGF-beta e outros). O capítulo 3 acrescenta números que parecem contradizer, mas completam: a contagem normal vai de **150.000 a 450.000 plaquetas/µL**; para **regeneração óssea**, a concentração eficaz é de **2 a 6 vezes, idealmente 5**, porque **menos não tem efeito e mais prejudica** o osso. O capítulo 30 (pseudartrose) descreve o PRP como a camada entre o plasma claro e as hemácias, com **300% a 600%** de plaquetas. A preparação mais usada é a rica em leucócitos (LR-PRP). Para a fratura, o Rockwood conclui que faltam ensaios de qualidade para recomendar o uso rotineiro.
 
 !questoes treino=conceitos-basicos-0357
 conceito: O PRP tem concentração de plaquetas tipicamente de pelo menos 4 vezes a do sangue total; para o osso, o ideal descrito é cerca de 5 vezes, com faixa eficaz de 2 a 6.
@@ -311,9 +311,9 @@ armadilha: Achar que mais é melhor: acima da faixa eficaz a concentração prej
 
 ## De onde vem cada célula
 
-O Rockwood (cap. 2, p. aprox. 50) é direto: **os osteoclastos derivam de células-tronco hematopoéticas**, reabsorvem osso em fossetas da superfície chamadas **lacunas de HOWSHIP** e se acoplam aos osteoblastos na fase de remodelação. Os **osteoblastos** derivam das **células-tronco mesenquimais** (estroma da medula), do periósteo, do endósteo e de progenitores circulantes, e secretam colágeno tipo 1, osteocalcina e sialoproteína óssea.
+O Rockwood (cap. 2) é direto: **os osteoclastos derivam de células-tronco hematopoéticas**, reabsorvem osso em fossetas da superfície chamadas **lacunas de HOWSHIP** e se acoplam aos osteoblastos na fase de remodelação. Os **osteoblastos** derivam das **células-tronco mesenquimais** (estroma da medula), do periósteo, do endósteo e de progenitores circulantes, e secretam colágeno tipo 1, osteocalcina e sialoproteína óssea.
 
-O capítulo 4 (p. aprox. 86 e 87) descreve a máquina. Precursores de osteoclasto chegam pelo sangue, **fundem-se** em células **multinucleadas**, selam a superfície e secretam **ácido clorídrico e enzimas** sob a **borda pregueada**; a **catepsina K** degrada o colágeno. Depois de **10 a 12 dias**, sofrem **apoptose** (fase de reversão), e os osteoblastos preenchem a lacuna. Parte dos osteoblastos fica presa na matriz e vira **osteócito**, a célula mais abundante do osso, que sente a carga e libera **prostaglandinas, óxido nítrico, RANKL e esclerostina**, além do **FGF23**, hormônio que regula o fosfato.
+O capítulo 4 descreve a máquina. Precursores de osteoclasto chegam pelo sangue, **fundem-se** em células **multinucleadas**, selam a superfície e secretam **ácido clorídrico e enzimas** sob a **borda pregueada**; a **catepsina K** degrada o colágeno. Depois de **10 a 12 dias**, sofrem **apoptose** (fase de reversão), e os osteoblastos preenchem a lacuna. Parte dos osteoblastos fica presa na matriz e vira **osteócito**, a célula mais abundante do osso, que sente a carga e libera **prostaglandinas, óxido nítrico, RANKL e esclerostina**, além do **FGF23**, hormônio que regula o fosfato.
 
 ## RANKL, osteoprotegerina e Wnt
 
@@ -329,7 +329,7 @@ armadilha: Marcar células-tronco mesenquimais, que originam o osteoblasto, e n�
 
 ## Os fármacos, pelo alvo
 
-!tabela Fármacos com efeito no osso (Rockwood cap. 4, p. aprox. 92 a 94; cap. 2; cap. 26)
+!tabela Fármacos com efeito no osso (Rockwood cap. 4; cap. 2; cap. 26)
 | Fármaco | Alvo ou mecanismo | Dose e cuidados |
 |---|---|---|
 | Alendronato | Análogo do pirofosfato; inibe o osteoclasto | 70 mg/semana, em jejum, em pé, 100 mL de água |
@@ -349,7 +349,7 @@ O **denosumabe** é anticorpo monoclonal totalmente humanizado **contra o RANKL*
 
 O **romosozumabe** é anticorpo monoclonal que **neutraliza a esclerostina**: **aumenta a formação e reduz a reabsorção** ao mesmo tempo. A **teriparatida** é o **fragmento 1-34 do PTH**: dada de modo intermitente, estimula mais a formação que a reabsorção; o osteossarcoma visto em animais não se confirmou em 14 anos de vigilância humana.
 
-Os **glicocorticoides** são o fármaco que o ortopedista mais encontra como causa de osteoporose secundária: o risco depende da dose e do tempo; os mecanismos são **menos absorção intestinal de cálcio, mais perda renal e apoptose de osteoblastos e osteócitos**; o corticoide inalado pesa pouco, exceto em dose alta (Rockwood, cap. 4, p. aprox. 90). A mesma lista inclui excesso de tiroxina, benzodiazepínicos, inibidores seletivos da recaptação de serotonina e anticonvulsivantes. O Sizínio Hebert (cap. 28, Osteoporose) manda perguntar na história por **corticoides, anticonvulsivantes, medicamentos para a tireoide, antiácidos e heparina**. Os detalhes de densitometria, FRAX e fratura atípica estão no resumo rockwood10-osteoporose.
+Os **glicocorticoides** são o fármaco que o ortopedista mais encontra como causa de osteoporose secundária: o risco depende da dose e do tempo; os mecanismos são **menos absorção intestinal de cálcio, mais perda renal e apoptose de osteoblastos e osteócitos**; o corticoide inalado pesa pouco, exceto em dose alta (Rockwood, cap. 4). A mesma lista inclui excesso de tiroxina, benzodiazepínicos, inibidores seletivos da recaptação de serotonina e anticonvulsivantes. O Sizínio Hebert (cap. 28, Osteoporose) manda perguntar na história por **corticoides, anticonvulsivantes, medicamentos para a tireoide, antiácidos e heparina**. Os detalhes de densitometria, FRAX e fratura atípica estão no resumo rockwood10-osteoporose.
 
 !questoes treino=conceitos-basicos-0342
 conceito: Denosumabe é anticorpo anti-RANKL (antirreabsortivo); romosozumabe é anticorpo antiesclerostina, que aumenta a formação e reduz a reabsorção.
@@ -361,11 +361,11 @@ armadilha: Inverter a ordem, ou pôr a osteoprotegerina como alvo, quando ela é
 
 ## O que cada marcador conta
 
-A **fosfatase alcalina (FA)** é a enzima da mineralização: degrada o **pirofosfato**, inibidor natural da mineralização (Rockwood, cap. 4, p. aprox. 87). Sobe quando há muita formação óssea, seja por cura de osteomalácia, seja por Paget ou por osteíte fibrosa. O **PTH** aumenta a reabsorção tubular de cálcio, a excreção renal de fosfato e a produção renal de **1,25(OH)2D**; a vitamina D se forma na pele com luz ultravioleta (ou vem da dieta), é hidroxilada no **fígado em 25(OH)D** (a forma que se dosa para avaliar estoque) e no **rim em 1,25(OH)2D** (a forma ativa, que absorve cálcio e fosfato no intestino). O **FGF23**, dos osteócitos, aumenta a perda renal de fosfato e inibe a 1,25(OH)2D.
+A **fosfatase alcalina (FA)** é a enzima da mineralização: degrada o **pirofosfato**, inibidor natural da mineralização (Rockwood, cap. 4). Sobe quando há muita formação óssea, seja por cura de osteomalácia, seja por Paget ou por osteíte fibrosa. O **PTH** aumenta a reabsorção tubular de cálcio, a excreção renal de fosfato e a produção renal de **1,25(OH)2D**; a vitamina D se forma na pele com luz ultravioleta (ou vem da dieta), é hidroxilada no **fígado em 25(OH)D** (a forma que se dosa para avaliar estoque) e no **rim em 1,25(OH)2D** (a forma ativa, que absorve cálcio e fosfato no intestino). O **FGF23**, dos osteócitos, aumenta a perda renal de fosfato e inibe a 1,25(OH)2D.
 
-Na investigação da **osteoporose secundária**, o Rockwood (cap. 4, p. aprox. 91) pede: testosterona e gonadotrofinas no homem, **cálcio sérico** (hiperparatireoidismo primário), T4 e TSH, anticorpo antitransglutaminase (doença celíaca), imunoglobulinas e proteína de BENCE-JONES (mieloma), e funções renal e hepática. Os marcadores de remodelação (CTX e NTX de reabsorção; PINP de formação) **não diagnosticam osteoporose**; servem para entender a fisiopatologia.
+Na investigação da **osteoporose secundária**, o Rockwood (cap. 4) pede: testosterona e gonadotrofinas no homem, **cálcio sérico** (hiperparatireoidismo primário), T4 e TSH, anticorpo antitransglutaminase (doença celíaca), imunoglobulinas e proteína de BENCE-JONES (mieloma), e funções renal e hepática. Os marcadores de remodelação (CTX e NTX de reabsorção; PINP de formação) **não diagnosticam osteoporose**; servem para entender a fisiopatologia.
 
-!tabela Padrão laboratorial das doenças osteometabólicas (Rockwood cap. 4, p. aprox. 101 a 104)
+!tabela Padrão laboratorial das doenças osteometabólicas (Rockwood cap. 4)
 | Doença | Cálcio | Fosfato | FA | PTH | 25(OH)D |
 |---|---|---|---|---|---|
 | Osteoporose primária | Normal | Normal | Normal | Normal | Normal |
@@ -389,7 +389,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 22, p. 790), é o texto que 
 
 Na prática, a diferença de ritmo define o uso: a PCR, que sobe e cai em dias, serve para dizer **se o tratamento está funcionando agora**; a VHS, que leva semanas, serve para confirmar que o processo se apagou, e por isso o Hebert a usa como critério de cura.
 
-O Sizínio Hebert (cap. 26, osteomielite hematogênica aguda) dá a VHS elevada **desde o início**, em geral **acima de 15 mm na primeira hora**, e usa a sua **normalização como critério laboratorial de cura**; a hemocultura é positiva em metade dos casos. O Rockwood (cap. 29, p. aprox. 855) usa os mesmos cortes do Campbell (PCR acima de 10 mg/L, VHS acima de 30 mm/h), lembra que variam entre laboratórios, idade, sexo e comorbidades, e que **PCR e VHS persistentemente normais tornam a osteomielite improvável**, exceto no diabético ou com fístula.
+O Sizínio Hebert (cap. 26, osteomielite hematogênica aguda) dá a VHS elevada **desde o início**, em geral **acima de 15 mm na primeira hora**, e usa a sua **normalização como critério laboratorial de cura**; a hemocultura é positiva em metade dos casos. O Rockwood (cap. 29) usa os mesmos cortes do Campbell (PCR acima de 10 mg/L, VHS acima de 30 mm/h), lembra que variam entre laboratórios, idade, sexo e comorbidades, e que **PCR e VHS persistentemente normais tornam a osteomielite improvável**, exceto no diabético ou com fístula.
 
 Na **coluna**, o Campbell (cap. 49) chama a PCR de **marcador mais sensível**: elevação além de **4 a 7 dias** de pós-operatório, ou segunda subida, indica infecção. Os números de neonatos e crianças, KOCHER e a artrite séptica estão no resumo tachdjian6-osteomielite.
 
@@ -416,7 +416,7 @@ armadilha: Inverter a ordem: a PCR é a rápida, a VHS é a lenta.
 
 ## Como o diagnóstico é montado
 
-O Rockwood (cap. 29, p. aprox. 837) define infecção periprotética como a que envolve a prótese e os tecidos adjacentes e, citando PARVIZI, diz que o diagnóstico exige **um critério maior ou escore de 6 ou mais** no pré ou no intraoperatório.
+O Rockwood (cap. 29) define infecção periprotética como a que envolve a prótese e os tecidos adjacentes e, citando PARVIZI, diz que o diagnóstico exige **um critério maior ou escore de 6 ou mais** no pré ou no intraoperatório.
 
 O Campbell (cap. 4, Box 4.5, p. 284) traz o **ICM 2018**. Os **critérios maiores** (basta um): **duas culturas positivas do mesmo organismo** por método padrão, ou **fístula comunicando com a articulação ou expondo a prótese**. Os **menores** somam pontos, e os cortes mudam entre infecção aguda e crônica.
 
@@ -522,7 +522,7 @@ No pós-operatório, a anemia exige hemoglobina **precoce**; transfunde-se cedo 
 
 ## No politraumatizado sangrando
 
-O capítulo 14 do Rockwood (p. aprox. 503) parte da **tríade letal**: **hipotermia, acidose e coagulopatia**, que se alimentam entre si. A ressuscitação guiada por TEG e ROTEM melhora o uso de hemoderivados; a **transfusão maciça** segue **1:1:1 (plasma, plaquetas e hemácias)**, repondo fatores junto com volume; a fibrinólise excessiva pede **ácido tranexâmico**. O Campbell (cap. 2) indica **crioprecipitado 10 unidades** quando o fibrinogênio cai, com nova dosagem em 60 minutos e repetição se continuar abaixo de **150 mg/dL**; o TXA entra se o crioprecipitado não estiver disponível.
+O capítulo 14 do Rockwood parte da **tríade letal**: **hipotermia, acidose e coagulopatia**, que se alimentam entre si. A ressuscitação guiada por TEG e ROTEM melhora o uso de hemoderivados; a **transfusão maciça** segue **1:1:1 (plasma, plaquetas e hemácias)**, repondo fatores junto com volume; a fibrinólise excessiva pede **ácido tranexâmico**. O Campbell (cap. 2) indica **crioprecipitado 10 unidades** quando o fibrinogênio cai, com nova dosagem em 60 minutos e repetição se continuar abaixo de **150 mg/dL**; o TXA entra se o crioprecipitado não estiver disponível.
 
 # Fechamento {radar=fundamento}
 

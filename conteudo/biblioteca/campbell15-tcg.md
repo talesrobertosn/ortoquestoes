@@ -1,6 +1,6 @@
 ---
 id: campbell15-tcg
-versao: 2
+versao: 3
 titulo: Tumor de células gigantes
 especialidade: tumores
 acesso: gratis
@@ -45,7 +45,7 @@ A alternativa "acomete mais homens" está errada em qualquer um dos livros. Repa
 
 O TCG é **tipicamente solitário**; **1% a 2%** dos casos se apresentam com lesões multicêntricas, sincrônicas ou metacrônicas, e não se sabe se isso representa vários tumores primários ou disseminação de um só (Campbell, p. 952). O SIZÍNIO (cap. 29) também a chama de rara. A alternativa "ocorre como lesões multicêntricas" descreve a exceção, não a regra.
 
-!tabela Perfil epidemiológico do TCG (Campbell 15, cap. 28, p. 952 e 953; cap. 26, p. 867 e 868; cap. 49, p. 1955 e 1963 aprox.; SIZÍNIO 5, cap. 29)
+!tabela Perfil epidemiológico do TCG (Campbell 15, cap. 28, p. 952 e 953; cap. 26, p. 867 e 868; cap. 49; SIZÍNIO 5, cap. 29)
 | Aspecto | O que os livros dizem | O detalhe que cai |
 | --- | --- | --- |
 | frequência | 5% das neoplasias ósseas (Mayo Clinic); 4% a 5% dos primários | 10% é distrator; 10% é o teto da transformação maligna |
@@ -450,7 +450,7 @@ O SIZÍNIO (cap. 29) é o mais duro: radioterapia só em lesões avançadas com 
 
 Para o Campbell (cap. 28, p. 954), a embolização entra com a radioterapia nas lesões inoperáveis da coluna e da pelve; o capítulo 49 (p. 1957, 1963 e 1964) recomenda a **embolização seletiva** no TCG da coluna, inclusive **pré-operatória**, com cuidado para identificar a **artéria de ADAMKIEWICZ** (em geral à esquerda, de T10 a T12), cuja oclusão já causou paralisia. O SIZÍNIO (cap. 29) a indica para tumores muito vascularizados ou inabordáveis e após falhas de ressecção; o alívio da dor é eficaz mas **temporário**, porque os vasos recanalizam, e por isso a embolização é muito mais uma técnica **pré-operatória** do que um tratamento.
 
-!tabela Denosumabe no TCG (Campbell 15, cap. 28, p. 954; cap. 49, p. 1955 e 1957 aprox.)
+!tabela Denosumabe no TCG (Campbell 15, cap. 28, p. 954; cap. 49)
 | Aspecto | O que o Campbell diz |
 | --- | --- |
 | natureza | anticorpo monoclonal totalmente humano |
@@ -501,7 +501,7 @@ Nos dois tipos, o **osteossarcoma é o subtipo histológico mais comum**. A clí
 
 A dupla que as bancas usam, portanto, é **transformação em torno de 10%** e **metástase pulmonar em poucos por cento (cerca de 3%)**. Uma alternativa com metástase de 0,1% a 0,4% subestima o risco; uma com 25% de transformação o superestima.
 
-!tabela Os números do TCG em cada livro (Campbell 15, cap. 26, p. 873; cap. 28, p. 952 e 954; cap. 49, p. 1955 e 1963 aprox.; SIZÍNIO 5, cap. 29)
+!tabela Os números do TCG em cada livro (Campbell 15, cap. 26, p. 873; cap. 28, p. 952 e 954; cap. 49; SIZÍNIO 5, cap. 29)
 | Número | Campbell cap. 28 | Campbell cap. 26 e 49 | SIZÍNIO |
 | --- | --- | --- | --- |
 | metástase pulmonar | cerca de 3% | 1% a 5% (estágio 3); 1% a 11% (coluna) | 2% a 3% |

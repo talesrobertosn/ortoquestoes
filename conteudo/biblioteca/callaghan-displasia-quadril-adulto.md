@@ -1,6 +1,6 @@
 ---
 id: callaghan-displasia-quadril-adulto
-versao: 1
+versao: 2
 titulo: Displasia do quadril no adulto
 especialidade: quadril
 acesso: gratis

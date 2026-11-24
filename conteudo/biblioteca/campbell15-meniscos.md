@@ -1,6 +1,6 @@
 ---
 id: campbell15-meniscos
-versao: 1
+versao: 2
 titulo: Lesões meniscais
 especialidade: joelho
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40)
 capitulo: Capítulo 50 · Knee Injuries (seção Menisci), com o Capítulo 56 · Arthroscopy of the Lower Extremity (cirurgia artroscópica do menisco)
 autores: David L. Bernholt and Frederick M. Azar
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulo 50, seção Menisci lida por inteiro (p. 1994 a 2011, com a página eletrônica 2000.e1), mais o exame do LCA (p. 2014 a 2016), a lesão meniscal associada ao LCA (p. 2066 aprox.) e os ligamentos meniscofemorais (p. 2098 aprox.); capítulo 56, cirurgia artroscópica do menisco (p. 2336 a 2355); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 40, menisco discoide (p. 2013 a 2016) e lesões meniscais na criança (p. 2028 e 2029).
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulo 50, seção Menisci lida por inteiro (p. 1994 a 2011, com a página eletrônica 2000.e1), mais o exame do LCA (p. 2014 a 2016), a lesão meniscal associada ao LCA e os ligamentos meniscofemorais; capítulo 56, cirurgia artroscópica do menisco (p. 2336 a 2355); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 40, menisco discoide (p. 2013 a 2016) e lesões meniscais na criança (p. 2028 e 2029).
 subtemas: Lesões meniscais
 resumo: Fibras circunferenciais e tensão em aro (corte radial ou raiz equivale a meniscectomia); penetração vascular de 10 a 30% no medial e 10 a 25% no lateral; meniscectomia medial +100% e lateral +200 a 300% de estresse; rotação em flexão seguida de extensão, corno posterior, longitudinal; rampa com edema posteromedial da tíbia; McMURRAY, APLEY, THESSALY e efeito trava de porta; reparo agudo, periférico, longitudinal e com LCA; outside-in anterior, inside-out médio, all-inside posterior; cisto lateral anterior ao LCL (PISANI); discoide de WATANABE; aloenxerto.
 ---
@@ -46,7 +46,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1994), descreve menis
 
 **O movimento** (p. 1996): na flexo-extensão os meniscos seguem a **tíbia**; na rotação, o **fêmur**. O medial se **distorce** (inserções seguem a tíbia, o corpo segue o fêmur) e **rasga na rotação**; o lateral, puxado pelo poplíteo e pelos meniscofemorais, acompanha o côndilo e se lesa menos.
 
-**Os meniscofemorais** (p. 2098 aprox.) somam cerca de **22% da área do LCP**, e a evidência biomecânica sugere que sejam **restritores secundários da translação posterior da tíbia**; o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40, p. 2028), lembra que **estabilizam o corno posterior do lateral**.
+**Os meniscofemorais** somam cerca de **22% da área do LCP**, e a evidência biomecânica sugere que sejam **restritores secundários da translação posterior da tíbia**; o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40, p. 2028), lembra que **estabilizam o corno posterior do lateral**.
 
 !questoes central=trauma-1060
 conceito: HUMPHRY e WRISBERG vão do corno posterior do menisco lateral ao côndilo femoral medial, à frente e atrás do LCP, e funcionam como restritores secundários da translação posterior da tíbia.
@@ -136,7 +136,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1998), resume o mecan
 
 **Com o LCA** (p. 1998 e 2000.e1), no mecanismo de pivot shift: no medial, lesões verticais da **junção meniscocapsular do corno posterior**, perto da raiz, a **lesão em rampa**; no lateral, **avulsão aguda da raiz posterior** ou **ruptura radial oblíqua do lateral (LMORT)**. A raiz lateral posterior apareceu em **6,6%** dos LCA agudos numa grande coorte.
 
-**Na seção do LCA** (p. 2066 aprox.), o livro dá a proporção que a prova cobra: **lesões meniscais acompanham 50 a 70% das lesões agudas do LCA**; **no evento inicial, o lateral é mais lesado que o medial**; **as lesões tardias são sobretudo do medial**, por sua fixação firme à cápsula e por ele passar a segurar a tíbia no joelho instável. O capítulo 50 (p. 2003) completa: **tratar o LCA de forma não operatória ou tardia aumenta o risco de lesão do medial**.
+**Na seção do LCA**, o livro dá a proporção que a prova cobra: **lesões meniscais acompanham 50 a 70% das lesões agudas do LCA**; **no evento inicial, o lateral é mais lesado que o medial**; **as lesões tardias são sobretudo do medial**, por sua fixação firme à cápsula e por ele passar a segurar a tíbia no joelho instável. O capítulo 50 (p. 2003) completa: **tratar o LCA de forma não operatória ou tardia aumenta o risco de lesão do medial**.
 
 **Fatores predisponentes** (p. 1998): menisco com **formação cística periférica** ou já menos móvel por lesão ou doença; **discoide lateral**; degeneração com a idade; eixos mecânicos anormais e rupturas ligamentares; **frouxidão congênita** e musculatura deficiente, sobretudo do **quadríceps**.
 
@@ -221,7 +221,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2000.e1), trata essas
 | indicação de reparo | jovem, lesão traumática, cartilagem excelente; em geral abaixo de 50 anos |
 !fim
 
-A RM detecta raiz e rampa, mas com **sensibilidade menor** que para as demais lesões (cap. 50, p. 2003); o capítulo 56 (p. 2352) diz que **rips e rampas escapam à RM em até 50%** e **raízes em 70%**. Daí a regra: procurá-las na artroscopia mesmo com RM negativa, e muitos defendem o **portal posteromedial** de rotina na artroscopia do LCA para não perder a rampa (p. 2335 aprox.).
+A RM detecta raiz e rampa, mas com **sensibilidade menor** que para as demais lesões (cap. 50, p. 2003); o capítulo 56 (p. 2352) diz que **rips e rampas escapam à RM em até 50%** e **raízes em 70%**. Daí a regra: procurá-las na artroscopia mesmo com RM negativa, e muitos defendem o **portal posteromedial** de rotina na artroscopia do LCA para não perder a rampa.
 
 !questoes central=trauma-1032 relacionadas=joelho-0170,joelho-0180,trauma-1068
 conceito: Rampa é a separação longitudinal da junção meniscocapsular do corno posterior do medial, quase sempre com LCA, pouco vista na RM; o edema ósseo posteromedial da tíbia é seu sinal secundário (72%).

@@ -1,6 +1,6 @@
 ---
 id: callaghan-impacto-femoroacetabular
-versao: 3
+versao: 4
 titulo: Impacto femoroacetabular, artroscopia do quadril e lesão labral
 especialidade: quadril
 acesso: gratis
@@ -8,7 +8,7 @@ livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e c
 edicao: 3ª edição (2017)
 capitulo: Capítulo 35 · Sequelae of Pediatric Hip Disease
 autores: Stuart L. Weinstein, Ryan M. Ilgenfritz
-fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip: Hip Arthroplasty Surgery (2017), sem capítulo próprio de impacto ou de artroscopia, com o tema nos caps. 2 (Gross Anatomy of the Hip, p. 37 e 42), 35 (Sequelae of Pediatric Hip Disease, p. 477 a 486), 8 (Anterior Approach, Traditional Table, p. 112 e 113), 11 (Kinematics of the Hip, p. 155 e 162 a 164 aprox.), 22 (History and Physical Examination, p. 327 a 333 aprox.), 23 (Radiographic Evaluation of the Hip, p. 355 a 357 aprox.), 25 (Magnetic Resonance Imaging of the Hip, p. 377 a 392 aprox.) e 68 (Metal on Metal Hip Resurfacing, p. 886 a 888); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (Hip Pain in the Young Adult and Hip Preservation Surgery, p. 358 a 375, com a Tabela 7.2 e a Fig. 7.27) e cap. 56 (Arthroscopy of the Lower Extremity, p. 2398 a 2415, com o Box 56.15 e as Figs. 56.62 e 56.64); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., caps. 9.8 (Artroscopia do quadril na criança e no adolescente), 10 (Quadril do adulto) e 13 (Artroscopia do quadril) e capítulo da epifisiólise; Tachdjian's Pediatric Orthopaedics, 6ª ed., caps. 14 (p. 568 e 575 a 577 aprox.), 15 (p. 595 aprox.) e 40.
+fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip: Hip Arthroplasty Surgery (2017), sem capítulo próprio de impacto ou de artroscopia, com o tema nos caps. 2 (Gross Anatomy of the Hip, p. 37 e 42), 35 (Sequelae of Pediatric Hip Disease, p. 477 a 486), 8 (Anterior Approach, Traditional Table, p. 112 e 113), 11 (Kinematics of the Hip, p. 157 e 163), 22 (History and Physical Examination, p. 328 e 331), 23 (Radiographic Evaluation of the Hip, p. 357), 25 (Magnetic Resonance Imaging of the Hip, p. 378, 391 e 392) e 68 (Metal on Metal Hip Resurfacing, p. 886 a 888); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (Hip Pain in the Young Adult and Hip Preservation Surgery, p. 358 a 375, com a Tabela 7.2 e a Fig. 7.27) e cap. 56 (Arthroscopy of the Lower Extremity, p. 2398 a 2415, com o Box 56.15 e as Figs. 56.62 e 56.64); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., caps. 9.8 (Artroscopia do quadril na criança e no adolescente), 10 (Quadril do adulto) e 13 (Artroscopia do quadril) e capítulo da epifisiólise; Tachdjian's Pediatric Orthopaedics, 6ª ed., caps. 14 (p. 568 e 575 a 577), 15 (p. 595) e 40.
 subtemas: Impacto femoroacetabular; Artroscopia do quadril e lesão labral
 resumo: Came (fêmur, homem jovem atleta, flexão com rotação interna, junção condrolabral, delaminação anterossuperior) x pincer (acetábulo, mulher, coxa profunda, protrusão ou retroversão, lábio esmagado, contragolpe posteroinferior); FADIR e DIRI anterior, FABER posterior, McCARTHY dinâmico; cóccix 1 a 2 cm acima da sínfise; alfa acima de 55; cruzamento + parede posterior + espinha isquiática = retroversão verdadeira (periacetabular reversa); extra-articular posterior = anteversão aumentada e rotação externa diminuída; artro-RM padrão-ouro do lábio; GANZ preserva o ramo profundo da circunflexa medial; mau prognóstico: TÖNNIS 2, espaço menor que 2 mm, idade acima de 40; artroscopia: anterolateral primeiro (glúteo superior), anterior pelo sartório e reto femoral (cutâneo femoral lateral, lesado se medializado), posterolateral (ciático); neuropraxia de tração é a complicação mais relatada; lesão labral anterior, 3 horas = anterior nos dois lados; reparo melhor que desbridamento.
 ---
@@ -54,8 +54,8 @@ O came é **mais comum em homens jovens atletas** (Campbell, cap. 7, p. 364), e 
 
 A ligação que a banca gosta: **epifisiólise e PERTHES deixam um fêmur com came**.
 
-- **Epifisiólise.** O escorregamento é **posteromedial**, fixado in situ **sem reduzir**; a deformidade residual dá **impacto secundário** (The Adult Hip, cap. 25, p. 383), porque **o offset diminui e a metáfise entra na articulação em flexão** (Tachdjian, cap. 15, p. 595 aprox.). O HEBERT fala em **CAM mesmo nos desvios moderados**, correção pela **luxação cirúrgica com osteotomia do colo** e **parafuso proximal demais como causa de impacto**. No cap. 35 do The Adult Hip (p. 484 e 485 aprox.), MURRAY achou deformidade em "tilt" em **40% de 200 artroses ditas primárias** e STULBERG, o **pistol grip em 40%** dos operados de prótese; RESNICK atribuiu a deformidade à remodelação.
-- **PERTHES.** A **coxa magna com a parte anterior descoberta** bate em flexão perto de 90 graus, com abrasão da cartilagem e depois lesão labral; **o pincer não é o tipo primário**, mas a retroversão acetabular é comum (Tachdjian, cap. 14, p. 568 e 575 aprox.). O cap. 11 do The Adult Hip explica por que demora: as deformidades da infância **passam despercebidas até a vida adulta**.
+- **Epifisiólise.** O escorregamento é **posteromedial**, fixado in situ **sem reduzir**; a deformidade residual dá **impacto secundário** (The Adult Hip, cap. 25, p. 383), porque **o offset diminui e a metáfise entra na articulação em flexão** (Tachdjian, cap. 15, p. 595). O HEBERT fala em **CAM mesmo nos desvios moderados**, correção pela **luxação cirúrgica com osteotomia do colo** e **parafuso proximal demais como causa de impacto**. No cap. 35 do The Adult Hip (p. 484), MURRAY achou deformidade em "tilt" em **40% de 200 artroses ditas primárias** e STULBERG, o **pistol grip em 40%** dos operados de prótese; RESNICK atribuiu a deformidade à remodelação.
+- **PERTHES.** A **coxa magna com a parte anterior descoberta** bate em flexão perto de 90 graus, com abrasão da cartilagem e depois lesão labral; **o pincer não é o tipo primário**, mas a retroversão acetabular é comum (Tachdjian, cap. 14, p. 568 e 575). O cap. 11 do The Adult Hip explica por que demora: as deformidades da infância **passam despercebidas até a vida adulta**.
 - **Displasia e recapeamento.** Came em **10% a 40% das displasias sintomáticas** (Campbell, cap. 7, p. 375); no cap. 68 do The Adult Hip (p. 886 e 887), o candidato ideal ao recapeamento **frequentemente tem came**, com alfa de cerca de **70 graus** no caso descrito.
 
 !questoes treino=quadril-0240
@@ -66,7 +66,7 @@ armadilha: Dor de início agudo após trauma ou mulher de meia-idade como grupo 
 
 # O came: a cabeça que entra onde não cabe {radar=confirmado}
 
-O Campbell (cap. 7, p. 364) descreve **junção anterossuperior proeminente ou colo com offset diminuído**; em **flexão com rotação interna**, a parte não esférica **gira para dentro do acetábulo**. O The Adult Hip (cap. 11, p. 162 e 163 aprox.) dá a cinemática: o contorno extra **contrai o arco de movimento**, a junção impacta o lábio e depois o rebordo, e o osso reage com **cistos, esclerose e microfraturas**.
+O Campbell (cap. 7, p. 364) descreve **junção anterossuperior proeminente ou colo com offset diminuído**; em **flexão com rotação interna**, a parte não esférica **gira para dentro do acetábulo**. O The Adult Hip (cap. 11, p. 163) dá a cinemática: o contorno extra **contrai o arco de movimento**, a junção impacta o lábio e depois o rebordo, e o osso reage com **cistos, esclerose e microfraturas**.
 
 O ponto mais cobrado é a sequência (Campbell, p. 364): **ruptura na base do lábio, na junção labrocondral**; a cartilagem é **comprimida pela cabeça de raio maior** e **se delamina do osso subcondral a partir do rebordo**; **o lábio é relativamente poupado**. O The Adult Hip (cap. 25, p. 382) vê o mesmo na RM: **cisalhamento na junção condrolabral** e **delaminação na margem lateral do teto anterossuperior**. O HEBERT (cap. 13) dá o relógio, **11 a 2 horas**, e gradua a cartilagem pela ICRS: **bolha, separação condrolabral, bolso** (delaminação ainda estável, que pode ser colada), **flap** (instável) e **defeito**. O came entra como uma espátula por baixo de um azulejo.
 
@@ -97,7 +97,7 @@ O acetábulo ósseo cobre só **170 graus** da cabeça; o lábio completa a cobe
 
 A vascularização vem de fora. O Campbell (cap. 56, p. 2404) diz que o acetábulo é irrigado pelas **artérias obturatória, glútea superior e glútea inferior** e que **a periferia do lábio é mais vascularizada que a região articular**; o HEBERT, que o lábio é **avascular nos dois terços profundos**, e por isso o reparo exige **leito de osso sangrante**. É a lógica do menisco: a parte colada à cápsula cicatriza; a de dentro, não.
 
-A função é de **gaxeta** (The Adult Hip, cap. 11, p. 155 e 163 aprox.): veda a articulação e cria **pressão negativa**; sob carga, a pressão do líquido distribui a força. Sem o selo, o líquido vaza e a **tensão de contato sobe até 90%**, com o **pico na borda lateral**. O Campbell (p. 2405) mede o estrago: **dano articular em 73%** dos quadris com lesão labral, quase sempre **perto dela**.
+A função é de **gaxeta** (The Adult Hip, cap. 11, p. 157 e 163): veda a articulação e cria **pressão negativa**; sob carga, a pressão do líquido distribui a força. Sem o selo, o líquido vaza e a **tensão de contato sobe até 90%**, com o **pico na borda lateral**. O Campbell (p. 2405) mede o estrago: **dano articular em 73%** dos quadris com lesão labral, quase sempre **perto dela**.
 
 !tabela O lábio em números (The Adult Hip, caps. 2, 11 e 25; Campbell, cap. 56, p. 2404 e 2405; HEBERT, cap. 13)
 | Fato | Valor |
@@ -137,7 +137,7 @@ A ruptura é **anterior** ou anterossuperior: as lesões **afetam mais a parte a
 
 ## Clínica e imagem
 
-O Campbell (p. 2405) descreve **dor na virilha e sintomas mecânicos**, o **sinal do C** de BYRD, dor posicional ao **sentar, dirigir, calçar e cruzar as pernas** e pouca dor na marcha no plano; o HEBERT soma **cliques, estalidos e bloqueio**. No exame, o The Adult Hip (cap. 22, p. 327 e 331 aprox.) atribui a avaliação **capsulolabral a McCARTHY e PHILIPPON**: McCARTHY descreveu a **avaliação dinâmica da congruência femoroacetabular e de sua relação com o lábio**.
+O Campbell (p. 2405) descreve **dor na virilha e sintomas mecânicos**, o **sinal do C** de BYRD, dor posicional ao **sentar, dirigir, calçar e cruzar as pernas** e pouca dor na marcha no plano; o HEBERT soma **cliques, estalidos e bloqueio**. No exame, o The Adult Hip (cap. 22, p. 331) atribui a avaliação **capsulolabral a McCARTHY e PHILIPPON**: McCARTHY descreveu a **avaliação dinâmica da congruência femoroacetabular e de sua relação com o lábio**.
 
 !questoes central=quadril-0514
 conceito: O teste de McCARTHY avalia dinamicamente a congruência femoroacetabular e a relação com o lábio; positivo, sugere lesão labral.
@@ -169,11 +169,11 @@ alerta: `quadril-0500` (TARO 2006) está sem gabarito oficial; The Adult Hip (ca
 
 # Clínica e exame do impacto {radar=confirmado}
 
-O Campbell (cap. 56, p. 2408) descreve **dor na virilha de início insidioso**, pior com **exercício**, ao **sentar, dirigir, calçar meias e sapatos**, palpação que **não reproduz a dor** e **rotação interna diminuída**. O HEBERT (cap. 13) acrescenta a dor ao **levantar após muito tempo sentado**, em torção e escadas; o The Adult Hip (cap. 22, p. 327 aprox.) lembra que **a perda da rotação interna é um dos primeiros sinais intra-articulares**, medida sentado.
+O Campbell (cap. 56, p. 2408) descreve **dor na virilha de início insidioso**, pior com **exercício**, ao **sentar, dirigir, calçar meias e sapatos**, palpação que **não reproduz a dor** e **rotação interna diminuída**. O HEBERT (cap. 13) acrescenta a dor ao **levantar após muito tempo sentado**, em torção e escadas; o The Adult Hip (cap. 22, p. 328) lembra que **a perda da rotação interna é um dos primeiros sinais intra-articulares**, medida sentado.
 
 Todo teste de impacto leva o quadril à posição em que o colo encontra a borda:
 
-- **FADIR (GANZ)**: **90 graus de flexão, adução além da linha média, rotação interna máxima** = **impacto anterior** (Campbell, cap. 7, p. 358.e1; The Adult Hip, cap. 22, p. 331 aprox.).
+- **FADIR (GANZ)**: **90 graus de flexão, adução além da linha média, rotação interna máxima** = **impacto anterior** (Campbell, cap. 7, p. 358.e1; The Adult Hip, cap. 22, p. 331).
 - **DIRI**: membro sadio fletido (zera a pelve), o examinado percorre **um arco de adução e rotação interna** em 90 graus ou mais: FADIR dinâmico.
 - **DEXRIT**: arco de **abdução e rotação externa**: impacto **superolateral e posterior** e **instabilidade anteroinferior**.
 - **Rebordo posterior**: perna pendente em **extensão, abdução e rotação externa**: **impacto posterior ou instabilidade anterior**.
@@ -182,7 +182,7 @@ Todo teste de impacto leva o quadril à posição em que o colo encontra a borda
 
 Regra: **flexão + adução + rotação interna = frente**; **abdução ou extensão + rotação externa = trás**. A **infiltração anestésica**, segundo BYRD, **prediz causa intra-articular com 90% de acurácia** (Campbell, cap. 7, p. 358); resposta incompleta sugere impacto **extra-articular**.
 
-!tabela Testes de congruência (The Adult Hip, cap. 22, p. 331 a 333 aprox.; Campbell, cap. 7, p. 358.e1, e cap. 56, p. 2408)
+!tabela Testes de congruência (The Adult Hip, cap. 22, p. 331; Campbell, cap. 7, p. 358.e1, e cap. 56, p. 2408)
 | Teste | Manobra | Sugere |
 | --- | --- | --- |
 | FADIR (GANZ) | flexão a 90, adução, rotação interna | impacto anterior, lesão labral anterior |
@@ -229,7 +229,7 @@ armadilha: Confundir com o subespinal, que vem com retrotorção e rotação ext
 
 # A radiografia do acetábulo {radar=confirmado}
 
-Inclinação e rotação **fabricam ou apagam a retroversão**. O Campbell (cap. 7, p. 359) pede **asas e forames simétricos** e **cóccix 1 a 3 cm acima da sínfise**; o cap. 56 (p. 2409 aprox.), **cóccix apontando para a sínfise, a 1 a 2 cm**; o The Adult Hip (cap. 23, p. 357 aprox.), centragem e angulação craniocaudal corretas. A divergência é do mesmo livro: **1 a 2 cm** no capítulo de artroscopia, **1 a 3 cm** no de preservação.
+Inclinação e rotação **fabricam ou apagam a retroversão**. O Campbell (cap. 7, p. 359) pede **asas e forames simétricos** e **cóccix 1 a 3 cm acima da sínfise**; o cap. 56, **cóccix apontando para a sínfise, a 1 a 2 cm**; o The Adult Hip (cap. 23, p. 357), centragem e angulação craniocaudal corretas. A divergência é do mesmo livro: **1 a 2 cm** no capítulo de artroscopia, **1 a 3 cm** no de preservação.
 
 !questoes central=quadril-0064
 conceito: No AP de bacia para impacto, o cóccix aponta para a sínfise e fica 1 a 2 cm acima (Campbell, cap. 56); o cap. 7 aceita 1 a 3 cm.
@@ -247,7 +247,7 @@ O Campbell (cap. 7, p. 360) ensina o raciocínio da retroversão:
 - **Parede posterior** medial ao centro da cabeça = cobertura posterior deficiente.
 - **Espinha isquiática** proeminente num AP bem posicionado = retroversão.
 
-**Cruzamento + parede posterior + espinha isquiática = retroversão de todo o acetábulo**, tratada com **periacetabular**; o **cruzamento isolado** pode ser só retroversão do rebordo anterossuperior, tratada com **recorte** (p. 366). Recortar a frente de um acetábulo sem parede posterior criaria instabilidade. O The Adult Hip (cap. 23, p. 357 aprox.) diz que **o os acetabuli tem as implicações do acetábulo retrovertido**: num homem de 47 anos, causa **retroversão adquirida com cruzamento**.
+**Cruzamento + parede posterior + espinha isquiática = retroversão de todo o acetábulo**, tratada com **periacetabular**; o **cruzamento isolado** pode ser só retroversão do rebordo anterossuperior, tratada com **recorte** (p. 366). Recortar a frente de um acetábulo sem parede posterior criaria instabilidade. O The Adult Hip (cap. 23, p. 357) diz que **o os acetabuli tem as implicações do acetábulo retrovertido**: num homem de 47 anos, causa **retroversão adquirida com cruzamento**.
 
 !tabela Sinais acetabulares do pincer (Campbell, cap. 7, p. 359 a 362 e 365; The Adult Hip, cap. 23; HEBERT, caps. 10 e 13)
 | Sinal | Como se vê | Significado |
@@ -268,9 +268,9 @@ armadilha: Tomar o cruzamento isolado como retroversão total ou lê-lo no DUNN 
 
 # A radiografia do fêmur: alfa e offset {radar=confirmado}
 
-O came é **anterolateral** e se esconde no AP, onde aparece no máximo como **achatamento lateral da junção (tilt ou pistol grip)**; é **mais bem visto no cross-table e no DUNN modificado** (45 graus de flexão, 20 de abdução, rotação neutra) e quantificado pelo **alfa** e pela **razão de offset** (Campbell, cap. 7, p. 361 e 362). O HEBERT (cap. 10) usa o **gabarito de MOSES** (epífise **mais de 2 mm** fora do círculo = anesférica). Sinais indiretos: **esclerose e cistos na junção anterolateral** e **fosseta de herniação** (The Adult Hip, cap. 23, p. 356 aprox.).
+O came é **anterolateral** e se esconde no AP, onde aparece no máximo como **achatamento lateral da junção (tilt ou pistol grip)**; é **mais bem visto no cross-table e no DUNN modificado** (45 graus de flexão, 20 de abdução, rotação neutra) e quantificado pelo **alfa** e pela **razão de offset** (Campbell, cap. 7, p. 361 e 362). O HEBERT (cap. 10) usa o **gabarito de MOSES** (epífise **mais de 2 mm** fora do círculo = anesférica). Sinais indiretos: **esclerose e cistos na junção anterolateral** e **fosseta de herniação** (The Adult Hip, cap. 23, p. 357).
 
-O **alfa** liga o centro do colo ao centro da cabeça e o centro da cabeça ao ponto em que **o contorno sai do círculo**; quanto mais cedo sai, maior o ângulo. Foi descrito **na RM axial** (HEBERT). Os cortes divergem: **acima de 50** (Campbell, cap. 56, p. 2411 aprox.), **acima de 55** (HEBERT, cap. 10), **acima de 55 a 60** (Campbell, cap. 7, p. 361). O corte das provas é **55 graus**; alfa não mede pincer. O **offset** se mede no **cross-table com 10 graus de rotação interna**, entre as tangentes anteriores do colo e da cabeça, e dividido pelo diâmetro dá a **razão de offset**.
+O **alfa** liga o centro do colo ao centro da cabeça e o centro da cabeça ao ponto em que **o contorno sai do círculo**; quanto mais cedo sai, maior o ângulo. Foi descrito **na RM axial** (HEBERT). Os cortes divergem: **acima de 50** (Campbell, cap. 56), **acima de 55** (HEBERT, cap. 10), **acima de 55 a 60** (Campbell, cap. 7, p. 361). O corte das provas é **55 graus**; alfa não mede pincer. O **offset** se mede no **cross-table com 10 graus de rotação interna**, entre as tangentes anteriores do colo e da cabeça, e dividido pelo diâmetro dá a **razão de offset**.
 
 !questoes central=quadril-0075 treino=quadril-0326
 conceito: O alfa marca onde a cabeça deixa de ser esférica na junção anterior; acima de 55 graus sugere came (HEBERT; Campbell, cap. 7, aceita 55 a 60); o cap. 56 usa 50.
@@ -280,7 +280,7 @@ armadilha: Marcar 65 (é o corte do risco de artrose) ou associar o alfa ao pinc
 
 # TC, RM e artro-RM no impacto {radar=confirmado}
 
-A **TC**, pela radiação, fica no jovem **para as deformidades que serão corrigidas**; as reconstruções **2D e 3D** mostram colo e rebordo para o planejamento (The Adult Hip, cap. 23, p. 357), e o Campbell (cap. 7, p. 363 e 365) usa a **TC 3D para guiar a ressecção**. Na **RM**, o **axial oblíquo** mostra **diretamente a junção cabeça-colo anterior** (The Adult Hip, cap. 25, p. 378 aprox.), mas **sinais de impacto nem sempre se correlacionam com dor** (p. 382). Na artro-RM do came, o contraste pode correr **por baixo da cartilagem delaminada**; **lesão labral sem deformidade óssea é incomum** (Campbell, p. 364; 87% a 90% de anormalidade óssea no cap. 11 do The Adult Hip); pior prognóstico com **cisto do rebordo, 60 graus de cartilagem envolvida e osteófito central em dente de sabre** (p. 365).
+A **TC**, pela radiação, fica no jovem **para as deformidades que serão corrigidas**; as reconstruções **2D e 3D** mostram colo e rebordo para o planejamento (The Adult Hip, cap. 23, p. 357), e o Campbell (cap. 7, p. 363 e 365) usa a **TC 3D para guiar a ressecção**. Na **RM**, o **axial oblíquo** mostra **diretamente a junção cabeça-colo anterior** (The Adult Hip, cap. 25, p. 378), mas **sinais de impacto nem sempre se correlacionam com dor** (p. 382). Na artro-RM do came, o contraste pode correr **por baixo da cartilagem delaminada**; **lesão labral sem deformidade óssea é incomum** (Campbell, p. 364; 87% a 90% de anormalidade óssea no cap. 11 do The Adult Hip); pior prognóstico com **cisto do rebordo, 60 graus de cartilagem envolvida e osteófito central em dente de sabre** (p. 365).
 
 !questoes central=quadril-0036 treino=quadril-0622
 conceito: A forma óssea do came aparece no perfil e no DUNN e é mapeada pela TC com reconstrução 3D para guiar a ressecção; RM e artro-RM servem a lábio e cartilagem, e o axial oblíquo mostra a junção anterior.
@@ -483,7 +483,7 @@ Quando todo o acetábulo está retrovertido, sobra parede anterior e falta poste
 
 # Depois da cirurgia {radar=clinico}
 
-O The Adult Hip (cap. 25, p. 391 e 392 aprox.) descreve a RM após a osteoplastia: o normal é o desbridamento anterossuperior e, **muitas vezes, um pequeno defeito no ligamento iliofemoral**; as complicações são **fratura de estresse do colo, instabilidade e deficiência do iliofemoral**. Os outros livros explicam cada uma: o toque e a proibição do degrau previnem a **fratura** (Campbell, cap. 7, p. 370; HEBERT); a **instabilidade** vem da capsulotomia com recorte na displasia limítrofe e da hiper-ressecção, por isso a cápsula é reparada (Campbell, caps. 7 e 56).
+O The Adult Hip (cap. 25, p. 391 e 392) descreve a RM após a osteoplastia: o normal é o desbridamento anterossuperior e, **muitas vezes, um pequeno defeito no ligamento iliofemoral**; as complicações são **fratura de estresse do colo, instabilidade e deficiência do iliofemoral**. Os outros livros explicam cada uma: o toque e a proibição do degrau previnem a **fratura** (Campbell, cap. 7, p. 370; HEBERT); a **instabilidade** vem da capsulotomia com recorte na displasia limítrofe e da hiper-ressecção, por isso a cápsula é reparada (Campbell, caps. 7 e 56).
 
 !questoes treino=quadril-0630
 conceito: Após a osteoplastia, um pequeno defeito no iliofemoral pode ser normal; as complicações são fratura de estresse do colo, instabilidade e deficiência do iliofemoral; o isquiofemoral (trocânter menor contra ísquio) foi descrito em 1977 e o impacto da EIAI segue a avulsão do reto femoral.

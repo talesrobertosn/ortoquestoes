@@ -1,6 +1,6 @@
 ---
 id: green-outros-mao-1
-versao: 2
+versao: 3
 titulo: Outros temas da mão (1): cotovelo traumático, leito ungueal, vias do rádio e anestesia local
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017)
 capitulo: Capítulo 19 · Fractures of the Radial Head (com os capítulos 1, 4, 9, 11, 14, 17, 18, 20, 21, 22, 32, 38, 43, 57 e 60)
 autores: Graham J.W. King
-fonte: Livros conferidos localmente em 10/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 19 (p. 734 a 745), cap. 18 (p. 701 a 704 e 728), cap. 20 (p. 774), cap. 21 (p. 789 a 792), cap. 22 (p. 815 a 821), cap. 14 (p. 492), cap. 1 (p. 4 e 11, Tabela 1.1), cap. 4 (p. 128 e 129 aprox.), cap. 9 (p. 318 a 322), cap. 11 (p. 360), cap. 17 (p. 654 a 656), cap. 32 (p. 1080, 1084 e 1085), cap. 38 (p. 1339, 1340 e 1359), cap. 43 (p. 1492 e 1493), cap. 57 (p. 1927 a 1929) e cap. 60 (p. 2038 e 2044); Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (p. 120 a 123), cap. 54 (p. 2638), cap. 62 (p. 2800 a 2806), cap. 69 (p. 3101 e 3102), cap. 72 (p. 3198 e 3204), cap. 75 (p. 3360) e cap. 85 (p. 3641); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (p. 354 e 355); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (fratura exposta do antebraço.
+fonte: Livros conferidos localmente em 10/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 19 (p. 734 a 745), cap. 18 (p. 701 a 704 e 728), cap. 20 (p. 774), cap. 21 (p. 789 a 792), cap. 22 (p. 815 a 821), cap. 14 (p. 492), cap. 1 (p. 4 e 11, Tabela 1.1), cap. 4 (p. 128 e 129), cap. 9 (p. 318 a 322), cap. 11 (p. 360), cap. 17 (p. 654 a 656), cap. 32 (p. 1080, 1084 e 1085), cap. 38 (p. 1339, 1340 e 1359), cap. 43 (p. 1492 e 1493), cap. 57 (p. 1927 a 1929) e cap. 60 (p. 2038 e 2044); Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (p. 120 a 123), cap. 54 (p. 2638), cap. 62 (p. 2800 a 2806), cap. 69 (p. 3101 e 3102), cap. 72 (p. 3198 e 3204), cap. 75 (p. 3360) e cap. 85 (p. 3641); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (p. 354 e 355); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (fratura exposta do antebraço.
 subtemas: Outros temas da mão
 resumo: MEHNE e MATTA classificam o úmero distal por colunas e achados cirúrgicos; capítulo tipo III é a cominutiva; pseudoartrose do úmero distal é metadiafisária; aspiração do cotovelo no triângulo epicôndilo lateral, cabeça do rádio e ponta do olécrano; MASON II é marginal com desvio; tríade terrível se repara de dentro para fora (coronoide, cabeça do rádio, ligamento colateral lateral); faceta anteromedial do coronoide é do varo posteromedial nos livros; GALEAZZI instável quanto mais distal (até 7,5 cm); HENRY entre braquiorradial e flexor radial do carpo, em supinação; AMA: polegar 40%, indicador e médio 20%, anular e mínimo 10%; matriz germinativa faz 90% da unha; portal 3-4 é o primeiro; lidocaína 8 a 11 mg/kg; queimadura de 2º grau superficial tem bolha e dói; aneurisma da mão é traumático; VICKERS liga semilunar à metáfise do rádio; MASADA tipo 1 é o mais comum; paralisia cerebral é irreversível e não progressiva.
 ---
@@ -403,7 +403,7 @@ armadilha: Transpor para a mão a etiologia aterosclerótica dos aneurismas da a
 
 # Doença de DUPUYTREN: condições associadas {radar=confirmado}
 
-O tema tem resumo próprio na Biblioteca; aqui fica só o fato que a prova pediu. O Green's Operative Hand Surgery, 7ª ed. (cap. 4, p. 128 e 129 aprox.), lista as comorbidades associadas à doença: **hipercolesterolemia, diabetes, tabagismo, consumo excessivo de álcool, epilepsia, uso de antiepilépticos, trauma regional, trabalho manual pesado crônico e índice de massa corporal abaixo da média**.
+O tema tem resumo próprio na Biblioteca; aqui fica só o fato que a prova pediu. O Green's Operative Hand Surgery, 7ª ed. (cap. 4, p. 128 e 129), lista as comorbidades associadas à doença: **hipercolesterolemia, diabetes, tabagismo, consumo excessivo de álcool, epilepsia, uso de antiepilépticos, trauma regional, trabalho manual pesado crônico e índice de massa corporal abaixo da média**.
 
 O próprio capítulo relativiza a lista. A literatura "está longe de ser clara", há relatos de **ausência** de associação para cada um desses fatores, e pode existir um viés de falsa associação: a doença tem mais chance de ser diagnosticada em quem vai mais ao médico por outros motivos. O componente mais sólido é o familiar: ter um irmão afetado triplica o risco, e a história nos dois pais antecipa a idade de início.
 

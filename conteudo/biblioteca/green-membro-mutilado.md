@@ -1,6 +1,6 @@
 ---
 id: green-membro-mutilado
-versao: 1
+versao: 2
 titulo: O membro superior mutilado
 especialidade: mao
 acesso: gratis

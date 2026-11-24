@@ -1,6 +1,6 @@
 ---
 id: green-outros-mao-2
-versao: 3
+versao: 4
 titulo: Outros temas da mão (2): síndrome compartimental, VOLKMANN, aneurismas e trauma do cotovelo
 especialidade: mao
 acesso: gratis
@@ -171,7 +171,7 @@ A frase do livro é direta: a fasciotomia **nas primeiras 8 horas depois do diag
 | Fasciotomia tardia | Mais de 24 h já não é contraindicação; bons resultados em crianças até 72 h | Green 7ª ed., p. 1769 |
 | Músculo: déficit e perda irreversível | 2 a 4 h e 4 a 12 h | Campbell 15ª ed., cap. 79, p. 3501 |
 | Nervo: função anormal e perda irreversível | 30 min e 12 a 24 h | Campbell 15ª ed., p. 3502 |
-| Função normal em 68% | Fasciotomia até 12 h do início | Campbell 15ª ed., cap. 79, p. 3505 aprox. |
+| Função normal em 68% | Fasciotomia até 12 h do início | Campbell 15ª ed., cap. 79 |
 !fim
 
 Os dois livros não se contradizem, mas medem coisas diferentes: o Green conta **8 horas a partir do diagnóstico**; o Campbell cita um estudo com **12 horas a partir do início** da síndrome. Em pergunta que diga "segundo o Green", a resposta é 8.
@@ -222,7 +222,7 @@ O gabarito das provas de Cirurgia da Mão segue o **texto do Green**: lesão de 
 
 A contratura de VOLKMANN é o **resultado final da isquemia prolongada**, com necrose irreversível (Green's Operative Hand Surgery, 7ª ed., cap. 51, p. 1772 e 1773). O quadro é o oposto da fase aguda: **não há dor**, há deformidade e disfunção. O músculo morto vira fibrose e encurta; o nervo sofre três vezes, pelo trauma inicial, pela isquemia e pela fibrose em volta. A deformidade das articulações distais progride por semanas a meses. Na **criança**, se não tratada, progride **até a maturidade esquelética**, porque o músculo isquêmico não acompanha o crescimento, e o membro fica mais curto mesmo com tratamento, pelo dano às fises.
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 79, p. 3508 aprox.), descreve a postura clássica: **cotovelo fletido, antebraço pronado, punho fletido, polegar aduzido, metacarpofalângicas estendidas e dedos fletidos**.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 79), descreve a postura clássica: **cotovelo fletido, antebraço pronado, punho fletido, polegar aduzido, metacarpofalângicas estendidas e dedos fletidos**.
 
 ## TSUGE: três tipos pela extensão do músculo
 
@@ -270,7 +270,7 @@ No deslizamento, a dissecção solta a massa flexora do epicôndilo medial, da u
 
 Nem todo dedo que não estende depois de uma fratura do antebraço é isquemia. O Green's Operative Hand Surgery, 7ª ed. (cap. 51, pontos críticos da p. 1785), manda **distinguir a contratura de VOLKMANN da contratura de pseudo-VOLKMANN** e dá três pistas: a **história** pode favorecer um diagnóstico ou outro; os **achados de acometimento de nervo são menos prováveis** no pseudo-VOLKMANN; e a **ressonância magnética não mostra alterações isquêmicas do músculo** no pseudo-VOLKMANN. Em outras palavras, a aparência é a mesma, mas a causa não é a isquemia.
 
-O Green 7ª ed. não detalha o mecanismo. Ele aparece nos livros de trauma infantil. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 10, Fig. 10-38), descreve o **encarceramento do flexor profundo dos dedos no foco de fratura da ulna** (e também do rádio): o dedo acometido, em geral indicador, médio ou anelar, sozinho ou em combinação, **não estende por completo**; o quadro raramente responde à terapia, e o tratamento é a liberação cirúrgica por uma pequena incisão sobre a ulna. O Rockwood não usa o nome pseudo-VOLKMANN. Quem usa é o trabalho de DEENEY e colaboradores, listado na bibliografia das fraturas do antebraço do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 1273.e19 aprox.), cujo título fala em pseudo-VOLKMANN por aderência do flexor profundo às fraturas da ulna em crianças.
+O Green 7ª ed. não detalha o mecanismo. Ele aparece nos livros de trauma infantil. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 10, Fig. 10-38), descreve o **encarceramento do flexor profundo dos dedos no foco de fratura da ulna** (e também do rádio): o dedo acometido, em geral indicador, médio ou anelar, sozinho ou em combinação, **não estende por completo**; o quadro raramente responde à terapia, e o tratamento é a liberação cirúrgica por uma pequena incisão sobre a ulna. O Rockwood não usa o nome pseudo-VOLKMANN. Quem usa é o trabalho de DEENEY e colaboradores, listado na bibliografia das fraturas do antebraço do Tachdjian's Pediatric Orthopaedics, 6ª ed., cujo título fala em pseudo-VOLKMANN por aderência do flexor profundo às fraturas da ulna em crianças.
 
 O raciocínio à beira do leito: houve dor desproporcional, compartimento tenso, gesso apertado? Há déficit sensitivo do mediano? Se a resposta é não e a limitação pega um ou dois dedos depois de uma fratura da ulna, pense em aderência mecânica; segundo o Green, a ressonância desse paciente não mostra músculo isquêmico.
 
@@ -512,7 +512,7 @@ O antebraço funciona como uma articulação, e a placa de compressão com redu�
 - **Placas pequenas e pouco rígidas**, como as de um terço tubular, refraturam menos depois da retirada, mas têm mais pseudoartrose e consolidação viciosa.
 - A maioria das pseudoartroses do antebraço é **atrófica ou oligotrófica**; a hipertrófica é mais comum depois de tratamento conservador ou de haste intramedular e pode ser tratada só com placa de compressão.
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 42, p. 1621 aprox.), diz o mesmo com mais detalhe: depois de placa e parafusos, a taxa de pseudoartrose fica entre **0 e 10%**, e a causa é **biomecânica inadequada, biologia inadequada ou as duas**. Do lado mecânico: fenda no foco por princípios de fixação mal seguidos, implante sem estabilidade suficiente (o movimento excessivo numa fratura simples leva à pseudoartrose), placa curta ou mal posicionada. Do lado biológico: alta energia, fratura exposta, cominuição grave e desperiostização excessiva. Cerca de **um terço das pseudoartroses** ocorre com **infecção profunda**. A história natural da fratura do antebraço bem fixada é consolidar.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 42), diz o mesmo com mais detalhe: depois de placa e parafusos, a taxa de pseudoartrose fica entre **0 e 10%**, e a causa é **biomecânica inadequada, biologia inadequada ou as duas**. Do lado mecânico: fenda no foco por princípios de fixação mal seguidos, implante sem estabilidade suficiente (o movimento excessivo numa fratura simples leva à pseudoartrose), placa curta ou mal posicionada. Do lado biológico: alta energia, fratura exposta, cominuição grave e desperiostização excessiva. Cerca de **um terço das pseudoartroses** ocorre com **infecção profunda**. A história natural da fratura do antebraço bem fixada é consolidar.
 
 Com isso as alternativas se resolvem pelo raciocínio: fratura transversa simples com compressão rígida é o cenário ideal; a troca de DCP por LCP não muda a consolidação; a mobilização precoce depois de fixação estável é o objetivo do método. O fator de risco é a **instabilidade mecânica por fixação inadequada**, sobretudo na fratura cominutiva.
 

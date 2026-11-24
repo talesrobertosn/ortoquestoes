@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-epifisiolise
-versao: 2
+versao: 3
 titulo: Epifisiólise proximal do fêmur
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38
 capitulo: Capítulo 15 · Slipped Capital Femoral Epiphysis
 autores: David Podeszwa
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 15, p. 581 a 605 e pranchas 15.2 e 15.3 (p. 611 e 612); Campbell's Operative Orthopaedics, 15ª ed., cap. 38 (David D. SPENCE e Benjamin W. SHEFFER), p. 1427 a 1439, com a eTécnica das p. 1435.e1 a 1435.e3, e o trecho de epifisiólise do cap. 4 (artroplastia do quadril, p. 253 aprox.).
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 15, p. 581 a 605 e pranchas 15.2 e 15.3 (p. 611 e 612); Campbell's Operative Orthopaedics, 15ª ed., cap. 38 (David D. SPENCE e Benjamin W. SHEFFER), p. 1427 a 1439, com a eTécnica das p. 1435.e1 a 1435.e3, e o trecho de epifisiólise do cap. 4 (artroplastia do quadril).
 subtemas: Epifisiólise proximal do fêmur
 resumo: Adolescente obeso no estirão (meninos 12 a 15, meninas 11 a 13), colo que sobe e vai para anterior enquanto a epífise fica posterior e inferior; retroversão do colo, fise mais inclinada e colo-diáfise diminuído; hipotireoidismo, deficiência de GH, insuficiência renal e radioterapia pélvica; LODER pelo apoio (instável não anda nem com muletas, necrose até 47%), SOUTHWICK pelo ângulo cabeça-diáfise (leve abaixo de 30°, moderado 30 a 60°, grave acima de 60°); KLEIN e TRETHOWAN, STEEL e SCHAM no AP; parafuso canulado único central perpendicular à fise, evitando o quadrante anterossuperior; PARSCH, DUNN modificado com retalho retinacular posterior, SOUTHWICK intertrocantérica para crônicos de 30 a 70°; profilaxia contralateral com triradiada aberta e endocrinopatia; necrose prevista pela instabilidade, condrólise com espaço de 3 mm ou menos, impacto femoroacetabular do tipo came como sequela.
 ---
