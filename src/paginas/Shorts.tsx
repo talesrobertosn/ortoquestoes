@@ -76,7 +76,6 @@ export function Shorts() {
   const [auto, definirAuto] = useState<{ chave: string; desde: number } | null>(null)
   const [estouro, definirEstouro] = useState<{ chave: string; x: number; y: number; n: number } | null>(null)
   const abertura = useRef(Date.now())
-  const desdeRevisao = useRef(0)
   const inicioSlide = useRef(Date.now())
   const feed = useRef<HTMLDivElement>(null)
   const pronto = useRef(false)
@@ -123,12 +122,13 @@ export function Shorts() {
     const noFeed = new Set(lista.flatMap((s) => (s.tipo === 'questao' ? [s.item.id] : [])))
     for (let i = 0; i < n; i++) {
       const qs = lista.filter((s): s is Extract<Slide, { tipo: 'questao' }> => s.tipo === 'questao')
+      // Shorts desde a última revisão, contados na própria lista (sem estado guardado fora dela).
+      const ultima = qs.map((x) => !!x.revisao).lastIndexOf(true)
       const r = sortear({
         itens, historico: historico.current, ajustes: a, noFeed, anterior: qs[qs.length - 1]?.item ?? null,
-        posicao: qs.length, desdeRevisao: desdeRevisao.current, agora: Date.now(), sorte: Math.random,
+        posicao: qs.length, desdeRevisao: ultima < 0 ? qs.length : qs.length - 1 - ultima, agora: Date.now(), sorte: Math.random,
       })
       if (!r) break
-      desdeRevisao.current = r.revisao ? 0 : desdeRevisao.current + 1
       noFeed.add(r.item.id)
       lista.push({ chave: novaChave(), tipo: 'questao', item: r.item, revisao: r.revisao })
     }
@@ -523,7 +523,7 @@ function SlideQuestao(p: PropsSlide) {
           <div className="sh-corpo">
             {!q ? <div className="sh-carregando-q"><i /><i /><i /></div> : <>
               <div className="sh-meta">
-                <span className="sh-prova">{[q.prova, q.ano].filter(Boolean).join(' ') || 'Questão'}</span>
+                {(q.prova || q.ano) && <span className="sh-prova">{[q.prova, q.ano].filter(Boolean).join(' ')}</span>}
                 <span>{temaCurto(q.tema)}</span>
               </div>
               {revisao && (

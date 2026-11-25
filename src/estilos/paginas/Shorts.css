@@ -96,7 +96,7 @@
 .sh-resultado-icone svg { width: 22px; height: 22px; }
 .sh-resultado h3 { margin: 0; font: 800 1.1875rem/1.2 var(--f-marca); letter-spacing: -.02em; }
 .sh-resultado p { margin: 1px 0 0; font-size: .875rem; color: var(--ardosia-sh); }
-.sh-resultado-seq { margin-left: auto; display: flex; align-items: center; gap: 4px; padding: 5px 10px; border-radius: 999px; background: #fbf3df; color: var(--ouro-texto); font: 800 .8125rem var(--f-marca); }
+.sh-resultado-seq { white-space: nowrap; flex: 0 0 auto; margin-left: auto; display: flex; align-items: center; gap: 4px; padding: 5px 10px; border-radius: 999px; background: #fbf3df; color: var(--ouro-texto); font: 800 .8125rem var(--f-marca); }
 :root[data-tema="escuro"] .sh-resultado-seq { background: #2e2717; }
 .sh-resultado-seq svg { width: 15px; height: 15px; color: #e2963a; }
 
