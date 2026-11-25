@@ -50,7 +50,9 @@ try {
   assert.deepEqual(m.AREAS.map(a => a.rotulo), ['Agora', 'Pessoas', 'Crescimento', 'Assinantes', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
   const partes = m.AREAS.flatMap(a => a.partes.map(p => p.id))
   assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas áreas')
-  assert.equal(partes.length, 18)
+  // Conteúdo › Shorts (25/11/2026) entrou como item próprio.
+  assert.equal(partes.length, 19)
+  assert.equal(m.areaDe('shorts'), 'estudo')
   // Ajustes › Uso do Supabase (03/11/2026): item próprio, com endereço que volta igual.
   assert.deepEqual(m.defArea('configuracoes').partes.map(p => p.id), ['ajustes', 'exportar', 'supabase'])
   assert.equal(m.areaDe('supabase'), 'configuracoes')

@@ -14,6 +14,8 @@ export interface RegistroQuestao {
   /** Letra marcada na primeira vez. Alimenta "como a turma respondeu" (primeira resposta de cada pessoa). */
   p?: string
   historico?: Array<{ em: number; correta: boolean | null; confianca: 'seguro' | 'duvida' | 'chute' }>
+  /** Respondida só nos Shorts: conta no desempenho, mas não entra na fila da Revisão (os Shorts têm a revisão escondida). */
+  sh?: 1
 }
 /**
  * Toda escada tem quatro degraus: a questão volta em cada um deles e sai da
@@ -31,7 +33,7 @@ export function dominada(registro?: Partial<RegistroQuestao>): boolean {
   return (registro.sequencia ?? 0) > INTERVALOS[registro.confianca ?? 'seguro'].length
 }
 export function revisarHoje(registro?: Partial<RegistroQuestao>, agora = Date.now()): boolean {
-  if (!registro || registro.c === null || dominada(registro)) return false
+  if (!registro || registro.c === null || registro.sh || dominada(registro)) return false
   const proxima = registro.proximaRevisao === undefined && registro.q !== undefined ? registro.q + 3 * 86400000 : registro.proximaRevisao
   return registro.c === false || (proxima != null && proxima <= agora)
 }

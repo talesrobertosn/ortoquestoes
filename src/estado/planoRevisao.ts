@@ -36,7 +36,7 @@ const diaSeguinte = (dia: number) => inicioDoDiaSeguinte(dia)
 
 /** Mesma regra de revisarHoje: registros antigos sem data voltam 3 dias depois da resposta. */
 export function vencimentoDe(r: Partial<RegistroQuestao> & { c: boolean | null }): number | null {
-  if (r.c === null || dominada(r)) return null
+  if (r.c === null || r.sh || dominada(r)) return null
   if (r.proximaRevisao === undefined) return r.q !== undefined ? (r.c === false ? r.q : r.q + 3 * DIA) : null
   return r.proximaRevisao
 }

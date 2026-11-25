@@ -93,6 +93,17 @@ duvidosa ("imagem A", "tipo C") fica sempre na ordem da prova. `aplicar_comentar
 script sozinhos; se mudar comentário por outro caminho, rode `python3 scripts/letras_alternativas.py`.
 Para a questão poder embaralhar, prefira citar a alternativa como "alternativa C" ou "Correta: C (texto)".
 
+## Shorts (desde 25/11/2026)
+
+Questões em pé, uma por tela, como os Shorts do YouTube (pedido do Tales). Página `#/shorts` (`src/paginas/Shorts.tsx`),
+portas em `src/shorts/Vitrine.tsx` (prateleira da Início, cartão em pé do Treinar, quadradinho do menu "Continue sua
+jornada") e o item Shorts na barra de baixo do celular. Sorteio e revisão escondida em `src/shorts/sorteio.ts` (teste
+`fixtures/testar_shorts.mjs`): imagem com mais chance (meta de ~60%, sem roteiro fixo, só a primeira é sempre com imagem)
+e volta surpresa em 3 a 7 dias. Índice leve gerado por `scripts/gerar_shorts.py` (roda no deploy). Servidor em
+`supabase/migrations/20261125220000_shorts.sql`: cota grátis de 5 por dia (`configuracao_comercial.limite_diario_shorts`),
+histórico, corações (que gravam nota 10 na avaliação do comentário) e o painel (Conteúdo › Shorts), com a lista de quem está vendo agora (`20261125233000_shorts_pessoas.sql`). Sem conta, a pessoa vê as questões, mas responder pede a conta. A resposta nos Shorts
+conta no desempenho com a marca `sh` em `respondidas` e fica fora da fila da Revisão.
+
 ## Flashcards (Torneio de Flashcards, desde 12/10/2026)
 
 Projeto de vários dias, feito com Claude e com ChatGPT. Antes de mexer em qualquer coisa de

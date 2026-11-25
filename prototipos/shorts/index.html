@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR" data-tema="claro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shorts · protótipo · Orto Questões</title>
+<link rel="icon" href="arte/favicon.svg">
+<link rel="stylesheet" href="shorts.css?v=4">
+</head>
+<body>
+
+<!-- ====================== PÁGINA INICIAL (prévia) ====================== -->
+<div class="site" id="site">
+  <header class="topo">
+    <a class="marca" href="#"><img src="arte/favicon.svg" alt="" width="32" height="32"><span>Orto Questões</span></a>
+    <nav class="topo-nav" aria-label="Principal">
+      <a href="#" aria-current="page">Início</a><a href="#treinar">Treinar</a><a href="#">Revisão</a><a href="#">Desempenho</a>
+    </nav>
+    <span class="topo-avatar" aria-hidden="true">R1</span>
+  </header>
+
+  <main class="pagina">
+    <section class="cena" aria-label="Boas-vindas">
+      <img class="cena-arte" src="arte/cena-cais-tarde-960.webp" alt="">
+      <div class="cena-texto">
+        <p class="rotulo rotulo--claro">Quarta, 25 de novembro</p>
+        <h1>Boa tarde. Bora fazer umas questões?</h1>
+        <p class="cena-missao">Missão de hoje: <strong>20 questões</strong> · faltam <strong>14</strong></p>
+      </div>
+    </section>
+
+    <!-- Prateleira dos Shorts -->
+    <section class="prateleira" aria-labelledby="t-shorts">
+      <div class="prateleira-cabeca">
+        <div>
+          <p class="rotulo"><span class="selo-novo">Novo</span> Questões rápidas</p>
+          <h2 id="t-shorts" class="titulo-shorts">
+            <svg class="ic-shorts" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="3.2" /><path d="M10.2 8.6v6.8l5.6-3.4z" /></svg>
+            Shorts
+          </h2>
+          <p class="prateleira-apoio">Uma questão por tela. Responda com um toque e deslize para a próxima.</p>
+        </div>
+        <div class="prateleira-acoes">
+          <button class="botao botao--contorno botao--p" data-acao="config-home" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ajuste"/></svg>TEOT · TARO
+          </button>
+          <button class="botao botao--p" data-acao="abrir" data-indice="0" type="button">Assistir<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-play"/></svg></button>
+        </div>
+      </div>
+      <div class="trilho-moldura">
+        <button class="trilho-seta trilho-seta--esq" data-acao="trilho" data-dir="-1" aria-label="Voltar"><svg viewBox="0 0 24 24"><use href="#i-esq"/></svg></button>
+        <div class="trilho" id="trilho" tabindex="0" aria-label="Shorts disponíveis"></div>
+        <button class="trilho-seta trilho-seta--dir" data-acao="trilho" data-dir="1" aria-label="Avançar"><svg viewBox="0 0 24 24"><use href="#i-dir"/></svg></button>
+      </div>
+    </section>
+
+    <!-- Página Treinar: o retângulo em pé -->
+    <section class="treinar" id="treinar" aria-labelledby="t-treinar">
+      <p class="rotulo">Prévia da página Treinar</p>
+      <h2 id="t-treinar" class="titulo-secao">Como você quer treinar hoje?</h2>
+      <div class="treinar-grade">
+        <button class="vertical" data-acao="abrir" data-indice="0" type="button" id="vertical"></button>
+        <div class="treinar-lista">
+          <div class="opcao">
+            <div><strong>Sessão por tema</strong><span>Escolha o assunto, a prova e o número de questões.</span></div>
+            <span class="botao botao--p">Montar</span>
+          </div>
+          <div class="opcao">
+            <div><strong>Simulado de prova</strong><span>100 questões no tempo do TEOT, com o resultado comentado.</span></div>
+            <span class="botao botao--contorno botao--p">Começar</span>
+          </div>
+          <div class="opcao">
+            <div><strong>Caderno de erros</strong><span>Só as questões que você errou, na ordem da revisão.</span></div>
+            <span class="botao botao--contorno botao--p">Abrir</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Painel do protótipo (não faz parte do site) -->
+<aside class="proto" aria-label="Controles do protótipo">
+  <span class="proto-titulo">Protótipo</span>
+  <div class="proto-seg" role="radiogroup" aria-label="Ver como">
+    <button data-perfil="visitante" role="radio">Visitante</button>
+    <button data-perfil="gratis" role="radio">Grátis</button>
+    <button data-perfil="assinante" role="radio">Assinante</button>
+  </div>
+  <button class="proto-tema" data-acao="tema" aria-label="Trocar claro e escuro"><svg viewBox="0 0 24 24"><use href="#i-lua"/></svg></button>
+</aside>
+
+<!-- ====================== PLAYER ====================== -->
+<div class="pl" id="pl" role="dialog" aria-modal="true" aria-label="Shorts" hidden>
+  <div class="pl-fundo"></div>
+  <div class="pl-feed" id="feed"></div>
+
+  <div class="pl-topo">
+    <button class="pl-x" data-acao="fechar" aria-label="Fechar os Shorts"><svg viewBox="0 0 24 24"><use href="#i-x"/></svg></button>
+    <div class="pl-progresso" id="progresso"></div>
+    <button class="pl-icone" data-acao="config" aria-label="Configurar os Shorts"><svg viewBox="0 0 24 24"><use href="#i-ajuste"/></svg></button>
+  </div>
+  <button class="pl-x-canto" data-acao="fechar" aria-label="Fechar os Shorts"><svg viewBox="0 0 24 24"><use href="#i-x"/></svg></button>
+  <div class="pl-setas">
+    <button data-acao="anterior" aria-label="Questão anterior"><svg viewBox="0 0 24 24"><use href="#i-cima"/></svg></button>
+    <button data-acao="proxima" aria-label="Próxima questão"><svg viewBox="0 0 24 24"><use href="#i-baixo"/></svg></button>
+  </div>
+
+  <!-- Configurar -->
+  <div class="folha-config" id="config" hidden>
+    <div class="folha-config-caixa" role="dialog" aria-labelledby="t-config">
+      <span class="alca" aria-hidden="true"></span>
+      <h3 id="t-config">Seus Shorts</h3>
+      <p class="config-apoio">O que entra no sorteio. Fica salvo na sua conta.</p>
+      <p class="config-rotulo">Provas</p>
+      <div class="chips" data-grupo="prova">
+        <button class="chip-sel" aria-pressed="true">TEOT</button><button class="chip-sel" aria-pressed="true">TARO</button><button class="chip-sel" aria-pressed="false">Cirurgia da Mão</button>
+      </div>
+      <p class="config-rotulo">Regiões</p>
+      <div class="chips" data-grupo="regiao">
+        <button class="chip-sel" aria-pressed="true">Todas</button><button class="chip-sel" aria-pressed="false">Joelho</button><button class="chip-sel" aria-pressed="false">Quadril</button><button class="chip-sel" aria-pressed="false">Ombro e cotovelo</button><button class="chip-sel" aria-pressed="false">Mão</button><button class="chip-sel" aria-pressed="false">Coluna</button><button class="chip-sel" aria-pressed="false">Pé e tornozelo</button><button class="chip-sel" aria-pressed="false">Pediatria</button><button class="chip-sel" aria-pressed="false">Trauma</button><button class="chip-sel" aria-pressed="false">Tumores</button>
+      </div>
+      <div class="chaves">
+        <label class="chave"><span><strong>Só com imagem</strong><small>Raio-X, ressonância, fotos e figuras</small></span><input type="checkbox"><i></i></label>
+        <label class="chave"><span><strong>Só inéditas</strong><small>Questões que você ainda não fez</small></span><input type="checkbox" checked><i></i></label>
+        <label class="chave"><span><strong>Revanche das erradas</strong><small>Uma que você errou a cada cinco</small></span><input type="checkbox" checked><i></i></label>
+      </div>
+      <button class="botao botao--largo" data-acao="config-ok">Aplicar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Ampliar imagem -->
+<div class="zoom" id="zoom" hidden>
+  <button class="pl-x zoom-x" data-acao="zoom-fechar" aria-label="Fechar a imagem"><svg viewBox="0 0 24 24"><use href="#i-x"/></svg></button>
+  <div class="zoom-area" id="zoom-area"><img id="zoom-img" alt=""></div>
+  <p class="zoom-dica">Toque para aproximar</p>
+</div>
+
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<!-- Ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-coracao" viewBox="0 0 24 24"><path d="M12 20.3s-7.6-4.6-9.2-9.4C1.6 7.2 3.9 4 7.3 4c2 0 3.6 1.1 4.7 2.7C13.1 5.1 14.7 4 16.7 4c3.4 0 5.7 3.2 4.5 6.9-1.6 4.8-9.2 9.4-9.2 9.4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-coracao-cheio" viewBox="0 0 24 24"><path d="M12 20.3s-7.6-4.6-9.2-9.4C1.6 7.2 3.9 4 7.3 4c2 0 3.6 1.1 4.7 2.7C13.1 5.1 14.7 4 16.7 4c3.4 0 5.7 3.2 4.5 6.9-1.6 4.8-9.2 9.4-9.2 9.4z" fill="currentColor"/></symbol>
+  <symbol id="i-balao" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8a2.5 2.5 0 01-2.5 2.5H10l-4.6 3.8c-.4.3-.9 0-.9-.4V16A2.5 2.5 0 014 13.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 8.5h8M8 12h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-enviar" viewBox="0 0 24 24"><path d="M13.5 4.5l7 6.8-7 6.7v-3.9C8.6 14 5.6 15.6 3.5 19.5 4.2 13.7 7.4 9.6 13.5 8.6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-salvar" viewBox="0 0 24 24"><path d="M6.5 3.5h11a1 1 0 011 1v16l-6.5-4.3-6.5 4.3v-16a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-salvar-cheio" viewBox="0 0 24 24"><path d="M6.5 3.5h11a1 1 0 011 1v16l-6.5-4.3-6.5 4.3v-16a1 1 0 011-1z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bandeira" viewBox="0 0 24 24"><path d="M5.5 21V4m0 0h11.2l-2 4.2 2 4.3H5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ajuste" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.2v13.6c0 .8.9 1.3 1.6.8l10.3-6.8c.6-.4.6-1.2 0-1.6L9.6 4.4C8.9 3.9 8 4.4 8 5.2z" fill="currentColor"/></symbol>
+  <symbol id="i-cima" viewBox="0 0 24 24"><path d="M6 14.5l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-baixo" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-esq" viewBox="0 0 24 24"><path d="M14.5 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-dir" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-visto" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cadeado" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V8a3.5 3.5 0 017 0v2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-lupa" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 15l5 5M8 10.5h5M10.5 8v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-lua" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chama" viewBox="0 0 24 24"><path d="M12 21c-3.9 0-6.5-2.6-6.5-6.2 0-3.5 2.6-5.3 3.6-8.8 2.3 1.3 3 3.4 3 5.1 1-.6 1.8-1.8 2-3.3 2.4 2 4.4 4.3 4.4 7.1 0 3.5-2.7 6.1-6.5 6.1z" fill="currentColor"/></symbol>
+  <symbol id="i-livro" viewBox="0 0 24 24"><path d="M4 5.5C6.5 4.3 9.3 4.3 12 6c2.7-1.7 5.5-1.7 8-.5v13c-2.5-1.2-5.3-1.2-8 .5-2.7-1.7-5.5-1.7-8-.5z M12 6v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+</svg>
+
+<script src="dados.js?v=4"></script>
+<script src="shorts.js?v=4"></script>
+</body>
+</html>

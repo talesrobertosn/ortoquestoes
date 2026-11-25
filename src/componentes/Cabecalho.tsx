@@ -1,3 +1,4 @@
+import { guardarVolta } from '../shorts/volta'
 import { useEffect, useState } from 'react'
 import { contasDisponiveis } from '../conta/supabase'
 import { usarConta } from '../conta/ContextoConta'
@@ -22,10 +23,13 @@ const LINKS: Destino[] = [
   { destino: '/dados', rotulo: 'Desempenho', icone: 'grafico' },
   { destino: '/ranking', rotulo: 'Ranking', icone: 'trofeu', secundario: true, classe: 'ranking' },
 ]
-/** Barra de baixo: Início, Treinar, Resumos, Cronograma, Ranking, Desempenho e o Menu (os Flashcards ficam no Menu). */
+/**
+ * Barra de baixo: Início, Treinar, Shorts, Resumos, Cronograma, Desempenho e o Menu. Os Shorts entraram no lugar do
+ * Ranking em 25/11/2026 (pedido do Tales: "no menu embaixo, para ficar mais visível"); o Ranking segue no topo e no Menu.
+ */
 const LINKS_CELULAR: Destino[] = [
   { destino: '/', rotulo: 'Início', icone: 'mapa' },
-  LINKS[0], LINKS[1], LINKS[2], LINKS[4], LINKS[3],
+  LINKS[0], { destino: '/shorts', rotulo: 'Shorts', icone: 'shorts', classe: 'shorts' }, LINKS[1], LINKS[2], LINKS[3],
 ]
 
 /** Primeiro nome do cadastro, como nos e-mails: vazio quando não parece um nome. */
@@ -120,7 +124,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
     </header>
     <nav className="navegacao-mobile nao-imprime" aria-label="Navegação móvel">
       {LINKS_CELULAR.map((link) => (
-        <a key={link.destino} className={link.classe ? `navegacao-mobile__${link.classe}` : undefined} href={href(link.destino)} aria-current={atual(link.destino)}>
+        <a key={link.destino} className={link.classe ? `navegacao-mobile__${link.classe}` : undefined} href={href(link.destino)} aria-current={atual(link.destino)} onClick={link.destino === '/shorts' ? guardarVolta : undefined}>
           <span className="navegacao-mobile__icone" aria-hidden="true">
             <Icone nome={link.icone} tamanho={21} />
             {link.beta && <i className="selo-beta selo-beta--ponto" />}

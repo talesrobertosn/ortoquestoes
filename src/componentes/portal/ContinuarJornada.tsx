@@ -12,6 +12,7 @@ import { usarContextoLocal } from '../../estado/usarContextoLocal'
 import { href } from '../../util/rotas'
 import { Icone } from '../Icone'
 import { IconePixel } from './IconePixel'
+import { QuadradoShorts } from '../../shorts/Vitrine'
 
 /**
  * Continue sua jornada (31/10/2026; painel desde 10/11/2026, pedido do Tales: "um pequeno hub, um painel"). No alto, o
@@ -53,6 +54,7 @@ export function ContinuarJornada({ premium, aoIr }: { premium: boolean; aoIr: ()
   return (
     <section className="pt-jornada" aria-labelledby="pt-jornada-titulo">
       <h3 id="pt-jornada-titulo" className="pt-rotulo">Continue sua jornada</h3>
+      <div className="pt-jornada-topo">
       {pendente ? (
         <a className="pt-sessao" href={href('/sessao')} onClick={aoIr} aria-label={`Continuar de onde parei: ${pendente.feitas} de ${pendente.total} questões respondidas, ${pctSessao}%`}>
           <span className="pt-sessao__moldura" aria-hidden="true"><IconePixel nome="treinar" tamanho={64} className="pt-sessao__icone" /></span>
@@ -78,6 +80,9 @@ export function ContinuarJornada({ premium, aoIr }: { premium: boolean; aoIr: ()
           <span className="pt-sessao__acao">Treinar <Icone nome="direita" tamanho={16} /></span>
         </a>
       )}
+      {/* Shorts (25/11/2026, pedido do Tales): o quadradinho ao lado da sessão. */}
+      <QuadradoShorts aoIr={aoIr} />
+      </div>
 
       <ul className="pt-painel">
         <li>{premium && plano ? (
