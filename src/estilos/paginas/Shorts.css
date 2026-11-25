@@ -373,3 +373,7 @@ a.sh-botao { text-decoration: none; }
   .sh-acao > span:not(.sh-acao-bola):not(.sh-n) { display: none; }
   .sh-acao--pular { display: none; }
 }
+
+/* Botão de ouvir o som de acerto, nos ajustes */
+.sh-ouvir { display: inline-flex; margin-top: 6px; padding: 3px 12px; border-radius: 999px; border: 1px solid var(--traco-forte); background: var(--sup); color: var(--verdete); font: 700 .8125rem var(--f-texto); cursor: pointer; }
+.sh-ouvir:hover { background: var(--verdete-veu); }

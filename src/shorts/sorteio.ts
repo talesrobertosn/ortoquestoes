@@ -33,11 +33,13 @@ export interface AjustesShorts {
   soIneditas: boolean
   revanche: boolean
   passarSozinha: boolean
+  /** Sininho baixinho ao acertar (26/11/2026). */
+  som: boolean
 }
 
 export const AJUSTES_PADRAO: AjustesShorts = {
   teot: true, taro: true, mao: false, outras: false,
-  soImagem: false, soIneditas: false, revanche: true, passarSozinha: true,
+  soImagem: false, soIneditas: false, revanche: true, passarSozinha: true, som: true,
 }
 
 /** A última resposta de uma questão nos Shorts. */
