@@ -66,66 +66,66 @@ export function Calendario({ pagamentos, todas, assinaturas, taxa, escolher }: {
     <div className="hb-titulo"><div><span className="hb-kicker">Calendário</span><h2 id="fi-calendario">Quem paga em cada dia</h2>
       <p>Mensais no cartão e no Pix, semestrais e anuais, no dia em que vencem. Os dias que já passaram mostram o que entrou de verdade; os próximos, quem deve pagar (o Pix pela porcentagem escolhida). Toque num dia para ver as pessoas.</p></div></div>
 
-    <div className="cal">
-      <div className="cal__topo">
-        <div className="cal__meses" role="tablist" aria-label="Mês">{meses.map((k, i) => <button key={k} type="button" role="tab" aria-selected={mesI === i} onClick={() => { definirMesI(i); definirDia(i === 0 ? hoje : `${k}-01`) }}>
+    <div className="cal-fin">
+      <div className="cal-fin__topo">
+        <div className="cal-fin__meses" role="tablist" aria-label="Mês">{meses.map((k, i) => <button key={k} type="button" role="tab" aria-selected={mesI === i} onClick={() => { definirMesI(i); definirDia(i === 0 ? hoje : `${k}-01`) }}>
           <span>{i === 0 ? 'Este mês' : 'Mês que vem'}</span><b>{NOME_MES(k).replace(/ de \d{4}$/, '')}</b></button>)}</div>
-        <div className="cal__cenario" role="group" aria-label="Quantos do Pix pagam de novo">
+        <div className="cal-fin__cenario" role="group" aria-label="Quantos do Pix pagam de novo">
           <span>Pix pagando de novo:</span>
           {CENARIOS.map(c => <button key={c.nome} type="button" aria-pressed={Math.abs(c.taxa - taxa) < 0.001} onClick={() => escolher(c.taxa)}>{c.nome === 'Pessimista' ? `Pessimista ${Math.round(c.taxa * 100)}%` : c.nome === 'Metade' ? '50%' : c.nome === 'Todos' ? '100%' : c.nome}</button>)}
         </div>
       </div>
 
-      <div className="cal__placar">
-        {mesI === 0 && <div className="cal__placar-item cal__placar-item--pago"><span>Já entrou</span><b>{reais(recebido)}</b><small>até hoje</small></div>}
-        <div className="cal__placar-item"><span>Cartão agendado</span><b>{reais(certo)}</b><small>{inteiro(doMes.filter(i => !i.pago && i.meio === 'cartao').length)} cobranças {mesI === 0 ? 'até o fim do mês' : 'no mês'}</small></div>
-        <div className="cal__placar-item cal__placar-item--pix"><span>Pix, se todos pagarem</span><b>{reais(pixTodos)}</b><small>{inteiro(doMes.filter(i => !i.pago && i.meio === 'pix').length)} vencimentos</small></div>
-        <div className="cal__placar-item cal__placar-item--total"><span>Total com {Math.round(taxa * 100)}% do Pix</span><b>{reais(soma(doMes, valorEsperado))}</b><small>se todos: {reais(recebido + certo + pixTodos)}</small></div>
+      <div className="cal-fin__placar">
+        {mesI === 0 && <div className="cal-fin__placar-item cal-fin__placar-item--pago"><span>Já entrou</span><b>{reais(recebido)}</b><small>até hoje</small></div>}
+        <div className="cal-fin__placar-item"><span>Cartão agendado</span><b>{reais(certo)}</b><small>{inteiro(doMes.filter(i => !i.pago && i.meio === 'cartao').length)} cobranças {mesI === 0 ? 'até o fim do mês' : 'no mês'}</small></div>
+        <div className="cal-fin__placar-item cal-fin__placar-item--pix"><span>Pix, se todos pagarem</span><b>{reais(pixTodos)}</b><small>{inteiro(doMes.filter(i => !i.pago && i.meio === 'pix').length)} vencimentos</small></div>
+        <div className="cal-fin__placar-item cal-fin__placar-item--total"><span>Total com {Math.round(taxa * 100)}% do Pix</span><b>{reais(soma(doMes, valorEsperado))}</b><small>se todos: {reais(recebido + certo + pixTodos)}</small></div>
       </div>
 
-      <ul className="cal__legenda">
-        {(['mensal-cartao', 'mensal-pix', 'semestral', 'anual'] as Tipo[]).map(t => <li key={t}><i className={`cal__ficha cal__ficha--${t}`} aria-hidden="true" />{ROTULO[t]} <b>{porTipo(t).length}</b></li>)}
-        <li><i className="cal__ficha cal__ficha--pago" aria-hidden="true" />Já pago</li>
+      <ul className="cal-fin__legenda">
+        {(['mensal-cartao', 'mensal-pix', 'semestral', 'anual'] as Tipo[]).map(t => <li key={t}><i className={`cal-fin__ficha cal-fin__ficha--${t}`} aria-hidden="true" />{ROTULO[t]} <b>{porTipo(t).length}</b></li>)}
+        <li><i className="cal-fin__ficha cal-fin__ficha--pago" aria-hidden="true" />Já pago</li>
       </ul>
 
-      <div className="cal__grade" role="grid" aria-label={`Pagamentos de ${NOME_MES(chave)}`}>
-        {SEMANA.map(s => <span key={s} className="cal__semana" role="columnheader">{s}</span>)}
-        {Array.from({ length: primeiroSemana }, (_, i) => <span key={`v${i}`} className="cal__vazio" aria-hidden="true" />)}
+      <div className="cal-fin__grade" role="grid" aria-label={`Pagamentos de ${NOME_MES(chave)}`}>
+        {SEMANA.map(s => <span key={s} className="cal-fin__semana" role="columnheader">{s}</span>)}
+        {Array.from({ length: primeiroSemana }, (_, i) => <span key={`v${i}`} className="cal-fin__vazio" aria-hidden="true" />)}
         {diasDoMes.map(d => {
           const itens = porDia.get(d) ?? []
           const total = soma(itens, valorEsperado)
           const passou = d < hoje, ehHoje = d === hoje
           const intensidade = total / maxDia
           return <button key={d} type="button" role="gridcell" aria-selected={dSel === d}
-            className={'cal__dia' + (ehHoje ? ' hoje' : '') + (passou ? ' passou' : '') + (itens.length ? ' tem' : '')}
+            className={'cal-fin__dia' + (ehHoje ? ' hoje' : '') + (passou ? ' passou' : '') + (itens.length ? ' tem' : '')}
             style={itens.length ? { '--forca': `${Math.round(8 + intensidade * 30)}%` } as React.CSSProperties : undefined}
             aria-label={`${Number(d.slice(8))} de ${NOME_MES(chave)}: ${itens.length ? `${itens.length} pagamentos, ${reais(total)}` : 'nenhum pagamento'}`}
             onClick={() => definirDia(d)}>
-            <span className="cal__num">{Number(d.slice(8))}{ehHoje && <em>hoje</em>}</span>
+            <span className="cal-fin__num">{Number(d.slice(8))}{ehHoje && <em>hoje</em>}</span>
             {itens.length > 0 && <>
-              <span className="cal__fichas">{itens.slice(0, 4).map((it, k) => <i key={k} className={`cal__ficha cal__ficha--${it.pago ? 'pago' : it.tipo}`} title={`${it.nome} · ${ROTULO[it.tipo]}`}>{iniciais(it.nome)}</i>)}{itens.length > 4 && <i className="cal__ficha cal__ficha--mais">+{itens.length - 4}</i>}</span>
-              <span className="cal__valor">{reais(total).replace(/,00$/, '')}</span>
+              <span className="cal-fin__fichas">{itens.slice(0, 4).map((it, k) => <i key={k} className={`cal-fin__ficha cal-fin__ficha--${it.pago ? 'pago' : it.tipo}`} title={`${it.nome} · ${ROTULO[it.tipo]}`}>{iniciais(it.nome)}</i>)}{itens.length > 4 && <i className="cal-fin__ficha cal-fin__ficha--mais">+{itens.length - 4}</i>}</span>
+              <span className="cal-fin__valor">{reais(total).replace(/,00$/, '')}</span>
             </>}
           </button>
         })}
       </div>
 
-      <div className="cal__dia-aberto" aria-live="polite">
+      <div className="cal-fin__dia-aberto" aria-live="polite">
         {!dSel ? <p className="a3-mudo">Toque num dia para ver quem paga.</p> : <>
           <h3>{new Date(`${dSel}T12:00:00Z`).toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long', timeZone: 'UTC' })}
             <small>{itensSel.length ? `${itensSel.length} ${itensSel.length === 1 ? 'pagamento' : 'pagamentos'} · ${reais(soma(itensSel, valorEsperado))}${itensSel.some(i => !i.pago && i.meio === 'pix') ? ` (com ${Math.round(taxa * 100)}% do Pix)` : ''}` : 'ninguém paga neste dia'}</small></h3>
-          {itensSel.length > 0 && <ul className="cal__pessoas">{itensSel.map((it, k) => <li key={k} className={`cal__pessoa cal__pessoa--${it.pago ? 'pago' : it.tipo}`}>
-            <span className="cal__avatar">{iniciais(it.nome)}</span>
-            <span className="cal__pessoa-texto"><b>{it.nome}</b><small>{ROTULO[it.tipo]}{it.plano !== 'mensal' ? ` · ${rotuloPlano(it.plano)}` : ''}</small></span>
-            <span className="cal__estado">{it.pago ? <><Icone nome="certo" tamanho={14} />Pago</> : it.meio === 'cartao' ? 'Renova sozinho' : 'Pix: precisa pagar de novo'}</span>
-            <b className="cal__pessoa-valor">{reais(it.valor)}</b>
-            <button type="button" className="cal__ficha-btn" onClick={() => nav.abrirPessoa(it.id)}>Ficha</button>
+          {itensSel.length > 0 && <ul className="cal-fin__pessoas">{itensSel.map((it, k) => <li key={k} className={`cal-fin__pessoa cal-fin__pessoa--${it.pago ? 'pago' : it.tipo}`}>
+            <span className="cal-fin__avatar">{iniciais(it.nome)}</span>
+            <span className="cal-fin__pessoa-texto"><b>{it.nome}</b><small>{ROTULO[it.tipo]}{it.plano !== 'mensal' ? ` · ${rotuloPlano(it.plano)}` : ''}</small></span>
+            <span className="cal-fin__estado">{it.pago ? <><Icone nome="certo" tamanho={14} />Pago</> : it.meio === 'cartao' ? 'Renova sozinho' : 'Pix: precisa pagar de novo'}</span>
+            <b className="cal-fin__pessoa-valor">{reais(it.valor)}</b>
+            <button type="button" className="cal-fin__ficha-btn" onClick={() => nav.abrirPessoa(it.id)}>Ficha</button>
           </li>)}</ul>}
         </>}
       </div>
 
-      {proximos.length > 0 && <div className="cal__proximos">
-        <span className="cal__proximos-titulo">Próximos dias com pagamento</span>
+      {proximos.length > 0 && <div className="cal-fin__proximos">
+        <span className="cal-fin__proximos-titulo">Próximos dias com pagamento</span>
         <ol>{proximos.map(d => { const it = porDia.get(d) ?? []; const dias = Math.round((new Date(`${d}T12:00:00Z`).getTime() - new Date(`${hoje}T12:00:00Z`).getTime()) / DIA_MS); return <li key={d}>
           <button type="button" onClick={() => { definirMesI(meses.indexOf(d.slice(0, 7)) < 0 ? 0 : meses.indexOf(d.slice(0, 7))); definirDia(d) }}>
             <b>{dias === 0 ? 'Hoje' : dias === 1 ? 'Amanhã' : `${d.slice(8, 10)}/${d.slice(5, 7)}`}</b>
