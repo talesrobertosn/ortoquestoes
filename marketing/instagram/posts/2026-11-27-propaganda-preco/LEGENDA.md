@@ -13,7 +13,7 @@ do Tales / R$ 358,80; guardar prints públicos com data), total do ano junto da 
 |---|---|---|
 | 1 | `sex27-1-conta.png` | Quanto custa se preparar para a prova de título? Barras: outras preparações, em média 25 vezes mais, x Orto Questões R$ 358,80 no ano; "R$ 29,90 por mês no anual. E não é promoção." |
 | 2 | `sex27-2-cabe.png` | O que cabe nos R$ 29,90: resumo, comentário no iPhone, Cronograma, Atlas 3D, Caderno de erros e Simulados |
-| 3 | `sex27-3-fecho.png` | Preço de lançamento: é o nosso preço normal; R$ 29,90/mês, R$ 358,80 no ano; comece grátis; "o caminho está no nosso perfil" |
+| 3 | `sex27-3-fecho.png` | Preço de inauguração: é o nosso preço normal; R$ 29,90/mês, R$ 358,80 no ano; comece grátis; "o caminho está no nosso perfil" |
 
 ## Conferência
 
