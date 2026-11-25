@@ -118,6 +118,16 @@ async function assinaturaDoUsuario(idUsuario, acao) {
   const [assinatura] = await resposta.json();
   return assinatura ?? null;
 }
+async function ehAdministrador(id) {
+  const r = await banco(`administradores?id_usuario=eq.${encodeURIComponent(id)}&select=id_usuario`);
+  return r.ok && (await r.json()).length > 0;
+}
+async function assinaturaPorId(idUsuario, idAssinatura) {
+  const resposta = await banco(`assinaturas?id=eq.${encodeURIComponent(idAssinatura)}&id_usuario=eq.${encodeURIComponent(idUsuario)}&limit=1&select=id,id_externo,status,ultima_cobranca_id,ultima_cobranca_em,plano,inicio_periodo,fim_periodo`);
+  if (!resposta.ok) throw new Error("consulta_assinatura_falhou");
+  const [assinatura] = await resposta.json();
+  return assinatura ?? null;
+}
 async function atualizarAssinatura(id, alteracao) {
   const resposta = await banco(`assinaturas?id=eq.${encodeURIComponent(id)}`, {
     method: "PATCH",
@@ -159,11 +169,19 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: cors(req) });
   if (req.method !== "POST") return json({ erro: "metodo_invalido" }, 405, req);
   try {
-    const usuario = await usuarioDoPedido(req);
-    const { acao } = await req.json();
+    const quemPede = await usuarioDoPedido(req);
+    const corpo = await req.json();
+    const { acao } = corpo;
     if (!acao || !["cancelar", "reembolsar", "sincronizar_cobranca"].includes(acao)) return json({ erro: "acao_invalida" }, 400, req);
     if (Deno.env.get("MERCADO_PAGO_INTEGRACAO_VALIDADA") !== "true") return json({ erro: "integracao_nao_validada" }, 503, req);
-    const assinatura = await assinaturaDoUsuario(usuario.id, acao);
+    const forcado = corpo.id_usuario !== void 0 || corpo.id_assinatura !== void 0;
+    const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    if (forcado) {
+      if (acao !== "reembolsar" || !uuid.test(String(corpo.id_usuario)) || !uuid.test(String(corpo.id_assinatura))) return json({ erro: "pedido_invalido" }, 400, req);
+      if (!await ehAdministrador(quemPede.id)) return json({ erro: "acesso_negado" }, 403, req);
+    }
+    const usuario = forcado ? { id: String(corpo.id_usuario) } : quemPede;
+    const assinatura = forcado ? await assinaturaPorId(usuario.id, String(corpo.id_assinatura)) : await assinaturaDoUsuario(usuario.id, acao);
     if (!assinatura) return json({ erro: "assinatura_nao_encontrada" }, 404, req);
     const token = Deno.env.get("MERCADO_PAGO_ACCESS_TOKEN");
     if (acao === "sincronizar_cobranca") {
@@ -172,10 +190,11 @@ Deno.serve(async (req) => {
     }
     const obrigado = (reembolso, fimEm) => pedirAutomaticoServidor(usuario.id, "obrigado_tempo", { referencia: `fim:${assinatura.id}`, reembolso, fim_periodo: fimEm }).catch(() => void 0);
     if (acao === "reembolsar") {
-      if (assinatura.status !== "ativa" && assinatura.status !== "cancelada") return json({ erro: "assinatura_nao_reembolsavel" }, 409, req);
+      const reembolsaveis = forcado ? ["ativa", "cancelada", "falha_pagamento", "pausada"] : ["ativa", "cancelada"];
+      if (!reembolsaveis.includes(assinatura.status)) return json({ erro: "assinatura_nao_reembolsavel" }, 409, req);
       if (!assinatura.ultima_cobranca_id || !assinatura.ultima_cobranca_em) return json({ erro: "cobranca_aprovada_nao_encontrada" }, 409, req);
       const idade = Date.now() - new Date(assinatura.ultima_cobranca_em).getTime();
-      if (!Number.isFinite(idade) || idade < 0 || idade > 10 * 864e5) return json({ erro: "prazo_de_garantia_encerrado" }, 409, req);
+      if (!forcado && (!Number.isFinite(idade) || idade < 0 || idade > 10 * 864e5)) return json({ erro: "prazo_de_garantia_encerrado" }, 409, req);
       const pagamento = await consultarPagamento(token, assinatura.ultima_cobranca_id);
       if (assinatura.id_externo.startsWith("pix:") && (pagamento.external_reference !== assinatura.id_externo || pagamento.payment_method_id !== "pix")) {
         return json({ erro: "pagamento_pix_divergente" }, 409, req);
