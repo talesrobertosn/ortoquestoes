@@ -464,10 +464,10 @@ export function Inicio() {
 
       {/* ── Nível 2: a sequência (o chão do acampamento) e o acesso rápido ── */}
       <TrilhaSequencia streak={streak} dias={diasSequencia} festa={festa} />
+      {/* Shorts (25/11/2026; subiu em 26/11 a pedido do Tales): a prateleira logo abaixo da arte, em cima das caixinhas. */}
+      <div className="jn-nivel jn-shorts"><PrateleiraShorts /></div>
       <BarraAtalhos atalhos={atalhos} />
 
-      {/* Shorts (25/11/2026): a prateleira das questões em pé, logo depois do acesso rápido. */}
-      <div className="jn-nivel jn-shorts"><PrateleiraShorts /></div>
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
       <div className="hd-avisos jn-avisos">

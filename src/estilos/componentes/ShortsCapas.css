@@ -124,12 +124,14 @@ body.sh-travado { overflow: hidden; }
   .sh-quadrado-play { position: static; flex: 0 0 auto; }
 }
 
-/* Treinar: o cartão em pé com a explicação ao lado */
-.tn-shorts { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 24px; align-items: center; margin-top: 24px; padding: 20px; border-radius: 20px; background: var(--superficie); border: 1px solid var(--traco); }
-.tn-shorts__texto h2 { margin: 0 0 8px; font: 800 1.6rem/1.15 var(--f-marca); letter-spacing: -.03em; color: var(--texto); text-wrap: balance; }
-.tn-shorts__texto p { margin: 0 0 12px; color: var(--ardosia-sh); max-width: 52ch; }
-.tn-shorts__texto ul { margin: 0 0 18px; padding-left: 1.1rem; color: var(--texto); display: grid; gap: 4px; }
-@media (max-width: 760px) {
-  .tn-shorts { grid-template-columns: 1fr; padding: 14px; }
-  .tn-shorts__cartao .sh-vertical { aspect-ratio: 4 / 5; }
-}
+
+/* Cabeçalho compacto da prateleira (26/11/2026) */
+.sh-prateleira { gap: 10px; }
+.sh-prateleira-cabeca { display: flex; align-items: center; justify-content: flex-start; gap: 6px 12px; flex-wrap: nowrap; min-width: 0; }
+.sh-prateleira-cabeca h2 { flex: 0 0 auto; gap: 7px; font-size: 1.25rem; letter-spacing: -.02em; }
+.sh-prateleira-cabeca h2 .sh-selo-novo { font-size: .625rem; padding: 2px 7px; font-family: var(--f-texto); letter-spacing: .08em; text-transform: uppercase; }
+.sh-prateleira-apoio { margin: 0; flex: 1 1 auto; min-width: 0; font-size: .875rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sh-prateleira-ver { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 4px; border: 0; background: none; padding: 6px 2px; color: var(--verdete); font: 700 .875rem var(--f-texto); cursor: pointer; }
+.sh-prateleira-ver svg { width: 14px; height: 14px; }
+.sh-prateleira-ver:hover { text-decoration: underline; }
+@media (max-width: 480px) { .sh-prateleira-apoio { display: none; } .sh-prateleira-cabeca { justify-content: space-between; } }

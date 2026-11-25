@@ -41,6 +41,15 @@ interface Feito { letra: Letra; certo: boolean; ms: number }
 type EstadoGaveta = 'fechada' | 'espiar' | 'aberta'
 
 const ARTE_TEORIA = 'pixel/inicio/cena-observatorio-noite-960.webp'
+/** Artes HD-2D do site para as questões sem imagem (sem as cenas de Natal); a mesma questão sempre ganha a mesma. */
+const ARTES = ['cena-abrigo-manha', 'cena-abrigo-tarde', 'cena-abrigo-noite', 'cena-cais-manha', 'cena-cais-tarde', 'cena-cais-noite',
+  'cena-forja-manha', 'cena-forja-tarde', 'cena-forja-noite', 'cena-manha', 'cena-tarde', 'cena-noite', 'cena-observatorio-manha',
+  'cena-observatorio-tarde', 'cena-observatorio-noite', 'secao-biblioteca', 'secao-torre', 'secao-correio']
+function artePara(id: string) {
+  let h = 0
+  for (const c of id) h = (h * 31 + c.charCodeAt(0)) >>> 0
+  return `pixel/inicio/${ARTES[h % ARTES.length]}-960.webp`
+}
 const PASSAR_EM = 5000
 let contador = 0
 const novaChave = () => `s${++contador}`
@@ -515,7 +524,7 @@ function SlideQuestao(p: PropsSlide) {
             </div>
           ) : (
             <div className="sh-midia sh-midia--texto" ref={midia} onClick={tocarMidia}>
-              <img className="sh-midia-arte" src={recurso(ARTE_TEORIA)} alt="" />
+              <img className="sh-midia-arte" src={recurso(artePara(slide.item.id))} alt="" />
               <div className="sh-tipo"><small><IconeSh nome="livro" /> Questão de teoria</small><strong>{q ? temaCurto(q.tema) : ''}</strong></div>
             </div>
           )}
@@ -590,7 +599,7 @@ function Gaveta(p: PropsSlide & { questao: Questao; feito: Feito }) {
   const ref = useRef<HTMLDivElement>(null)
   const corpo = useRef<HTMLDivElement>(null)
   const arrasto = useRef<{ y0: number; t0: number; base: number; mexeu: boolean } | null>(null)
-  const pos: Record<EstadoGaveta, number> = { aberta: 0, espiar: 0.45, fechada: 1 }
+  const pos: Record<EstadoGaveta, number> = { aberta: 0, espiar: 0.3, fechada: 1 }
   const g = p.gaveta
   const gabarito = q.gabarito ? letraExibida(ordem, q.gabarito) : ''
   const marcada = letraExibida(ordem, feito.letra)
@@ -640,11 +649,15 @@ function Gaveta(p: PropsSlide & { questao: Questao; feito: Feito }) {
 
   const prox = p.proxima
   const qp = p.questaoProxima
-  const miniatura = qp ? (qp.imagens[0] ? urlImagem(qp.imagens[0].arquivo) : recurso(ARTE_TEORIA)) : null
+  const miniatura = qp ? (qp.imagens[0] ? urlImagem(qp.imagens[0].arquivo) : recurso(artePara(qp.id))) : null
 
   return (
     <div ref={ref} className="sh-gaveta" data-estado={g} aria-label="Comentário" onPointerDownCapture={p.aoPausar}>
       <div className="sh-gaveta-cabeca" onPointerDown={baixo} onPointerMove={mover} onPointerUp={soltar} onPointerCancel={soltar}>
+        <button type="button" className="sh-gaveta-subir" aria-label={g === 'aberta' ? 'Baixar o comentário' : 'Subir o comentário'}
+          onPointerDown={(e) => e.stopPropagation()} onClick={() => p.aoGaveta(g === 'aberta' ? 'espiar' : 'aberta')}>
+          <IconeSh nome={g === 'aberta' ? 'baixo' : 'cima'} />
+        </button>
         <span className="sh-alca" />
         <div className={`sh-resultado ${feito.certo ? 'sh-resultado--certo' : 'sh-resultado--errado'}`}>
           <span className="sh-resultado-icone"><IconeSh nome={feito.certo ? 'visto' : 'x'} /></span>

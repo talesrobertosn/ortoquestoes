@@ -17,20 +17,12 @@
 /* A data e o título descem um pouco para as lâmpadas não encostarem neles. */
 [data-natal="sim"] .jn-heroi { padding-top: calc(clamp(1.25rem, 2.4vw, 2.25rem) + 1.6rem); }
 
-/* ── No meio: a árvore (pé na barra de atalhos, copa por cima da trilha) ── */
-[data-natal="sim"] .jn-trilha { z-index: 4; }
-@media (min-width: 60.0625rem) {
-  /* A árvore ganha uma coluna entre as tochas e a meta do dia: fica do lado direito, longe do cartão da missão. */
-  [data-natal="sim"] .jn-trilha { grid-template-columns: auto minmax(0, 1fr) 146px auto; }
-  [data-natal="sim"] .jn-trilha__numero { grid-column: 1; grid-row: 1; }
-  [data-natal="sim"] .jn-tochas { grid-column: 2; grid-row: 1; }
-  [data-natal="sim"] .natal-arvore { grid-column: 3; grid-row: 1; }
-  [data-natal="sim"] .jn-trilha__meta { grid-column: 4; grid-row: 1; }
-}
-.natal-arvore { position: relative; align-self: stretch; width: 146px; pointer-events: none; }
-/* O chão da pintura (6 px acima do pé da imagem) assenta na borda da barra de atalhos, afundando 4 px nela:
-   1.2rem do respiro de baixo da trilha + 24 px do vão até a barra + 4 + 6. */
-.natal-arvore__img { position: absolute; left: 0; bottom: calc(-1.2rem - 34px); width: 146px; height: 196px;
+/* ── No meio: a árvore em pé em cima da barra de atalhos, no canto direito ──
+   Desde 26/11/2026 os Shorts ficam entre a trilha e a barra (pedido do Tales), e a árvore desceu junto com a barra:
+   o pé assenta na borda de cima dela e a copa sobe no espaço que a barra abre em cima no modo Natal. */
+.natal-arvore { position: absolute; z-index: 4; right: 56px; top: -186px; width: 146px; height: 196px; pointer-events: none; }
+[data-natal="sim"] .jn-atalhos { margin-top: 150px !important; }
+.natal-arvore__img { position: absolute; left: 0; top: 0; width: 146px; height: 196px;
   background: url('/pixel/natal/arvore.png') no-repeat 0 0 / 146px 196px; image-rendering: pixelated; }
 .natal-arvore__luz { position: absolute; z-index: -1; left: -80px; top: -80px; width: 306px; height: 300px;
   background: url('/pixel/natal/arvore-luz.png') no-repeat 0 0 / 306px 300px; mix-blend-mode: screen; animation: natal-respirar 5s ease-in-out infinite; }
@@ -39,11 +31,10 @@
 .natal-arvore__estrela { position: absolute; left: 51px; top: -7px; width: 44px; height: 44px;
   background: url('/pixel/natal/arvore-estrela.png') no-repeat 0 0 / 44px 44px; mix-blend-mode: screen; animation: natal-respirar 2.4s ease-in-out infinite; }
 @media (max-width: 60rem) {
-  /* No celular a árvore também fica plantada na barra de atalhos, no canto direito, subindo pela linha da meta do dia
-     (que abre espaço à direita para ela). O vão até a barra é de 18 px; o chão da pintura afunda 4 px na borda. */
-  [data-natal="sim"] .jn-trilha__meta { grid-template-columns: minmax(0, 1fr); padding-right: 66px; }
-  .natal-arvore { position: absolute; top: auto; bottom: -26px; right: 0.3rem; width: 66px; height: 88px; align-self: auto; }
-  .natal-arvore__img { bottom: auto; top: 0; transform: scale(0.45); transform-origin: 0 0; }
+  /* No celular a árvore fica pequena, em pé na barra, no canto direito. */
+  [data-natal="sim"] .jn-atalhos { margin-top: 84px !important; }
+  .natal-arvore { right: 0.6rem; top: -84px; width: 66px; height: 88px; }
+  .natal-arvore__img { transform: scale(0.45); transform-origin: 0 0; }
 }
 
 /* ── A guirlanda pendurada no canto de cima à esquerda da barra de atalhos, por cima da caixa ── */

@@ -60,15 +60,11 @@ export function PrateleiraShorts() {
   const rolar = (d: number) => trilho.current?.scrollBy({ left: d * 420, behavior: 'smooth' })
   return (
     <section className="sh-prateleira" aria-labelledby="sh-prateleira-titulo">
+      {/* Cabeçalho numa linha só (Tales, 26/11/2026): as capas clicáveis são a primeira coisa que chama o olho. */}
       <div className="sh-prateleira-cabeca">
-        <div>
-          <p className="sh-rotulo"><span className="sh-selo-novo">Novo</span> Questões rápidas</p>
-          <h2 id="sh-prateleira-titulo"><SimboloShorts tamanho={30} /> Shorts</h2>
-          <p className="sh-prateleira-apoio">Uma questão por tela. Responda com um toque e deslize para a próxima.</p>
-        </div>
-        <div className="sh-prateleira-acoes">
-          <button type="button" className="sh-botao sh-botao--p" onClick={() => abrirShorts(capas?.[0]?.id ?? null)}>Assistir <IconeSh nome="play" /></button>
-        </div>
+        <h2 id="sh-prateleira-titulo"><SimboloShorts tamanho={22} /> Shorts <span className="sh-selo-novo">Novo</span></h2>
+        <p className="sh-prateleira-apoio">Questões rápidas: toque e deslize</p>
+        <button type="button" className="sh-prateleira-ver" onClick={() => abrirShorts(capas?.[0]?.id ?? null)}>Assistir <IconeSh nome="play" /></button>
       </div>
       <div className="sh-trilho-moldura">
         <button type="button" className="sh-trilho-seta sh-trilho-seta--esq" onClick={() => rolar(-1)} aria-label="Voltar"><IconeSh nome="esq" /></button>
