@@ -123,7 +123,9 @@ enquete, resposta com o livro e um **story extra de propaganda com prints reais 
 Não há promoção de Black Friday. No dia 27/11/2026 só propaganda com o preço normal (anual R$ 29,90 por mês, R$ 358,80
 no ano), em tom apelativo e dentro da lei: nunca chamar de promoção ou desconto o preço de sempre; comparação genérica e
 comprovável, sem nome ("cursos preparatórios para a prova de título passam de R$ 6 mil"); total junto da parcela; nunca
-preço por dia. Peças em `posts/2026-11-27-propaganda-preco/`.
+preço por dia. Peças em `posts/2026-11-27-propaganda-preco/`. Sem superlativo absoluto ("o mais barato do mercado"):
+usar "bem abaixo do mercado" e "preço de lançamento", com a nota "Comparação com valores públicos de cursos
+preparatórios"; nada que sugira que outros cursos enganam (nada de "desconto inventado").
 
 ## Conferência antes de entregar
 
