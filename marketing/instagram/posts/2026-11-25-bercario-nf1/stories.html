@@ -31,6 +31,20 @@
 .op { font-size: 31px; min-height: 90px; }
 .pino { position: absolute; width: 30px; height: 84px; z-index: 4; background: linear-gradient(90deg, #e9d9ab 0 50%, #cdb77b 50%); border-radius: 6px; box-shadow: 0 6px 10px -4px rgba(0,0,0,.6); }
 .varal { position: absolute; left: -20px; right: -20px; height: 12px; background: repeating-linear-gradient(90deg, #d8b25e 0 14px, #a8843a 14px 20px); z-index: 3; }
+.preco-card { position:absolute; left:48px; right:48px; padding:30px 36px 28px; border-radius:36px; background:linear-gradient(165deg,#fdf9ef,#f6eedb);
+  border:4px solid var(--ouro); box-shadow:0 40px 70px -34px rgba(0,0,0,.85), 10px 10px 0 rgba(10,36,32,.55); }
+.preco-card .k { font:400 36px/1 Jersey; letter-spacing:3px; color:#14655E; }
+.preco-card .f { margin-top:10px; font:600 30px/1.3 Inter; color:#34423f; }
+.preco-card .f b { color:#1f2a28; font-weight:800; }
+.linha-preco { margin-top:14px; display:flex; align-items:center; gap:28px; }
+.linha-preco .valor { font:800 128px/1 Jakarta; letter-spacing:-5px; color:#14655E; white-space:nowrap; }
+.linha-preco .r { font:800 44px/1 Jakarta; letter-spacing:-1px; vertical-align:62px; margin-right:8px; color:#a8741a; }
+.linha-preco .m { font:800 38px/1 Jakarta; letter-spacing:-1px; color:#a8741a; margin-left:6px; }
+.linha-preco .det { padding-left:24px; border-left:4px solid rgba(20,101,94,.25); font:500 28px/1.35 Inter; color:#4d5b58; }
+.linha-preco .det b { font:800 30px/1.2 Jakarta; color:#1f2a28; }
+.compara { margin-top:18px; display:flex; align-items:center; gap:16px; padding:14px 18px; border-radius:20px; background:#14655E; font:500 26px/1.25 Inter; color:#fff; }
+.compara .sel { flex:none; padding:8px 12px; background:var(--ouro); color:#1b1405; font:400 28px/1 Jersey; letter-spacing:2px; }
+.compara b { color:var(--ouro); }
 </style></head>
 <body>
 
@@ -93,24 +107,28 @@
   <div class="fundo"></div><div class="grade"></div>
   <div style="position:absolute; left:56px; right:56px; top:210px;">
     <p style="font:400 40px/1 Jersey; letter-spacing:3px; color:#a9ecd9;">DO BERÇO AO LIVRO</p>
-    <h1 style="margin-top:12px; font:800 62px/1.05 Jakarta; letter-spacing:-2px; color:#fff;">Estude no resumo,<br><span style="color:var(--ouro);">refaça no caderno.</span></h1>
+    <h1 style="margin-top:12px; font:800 62px/1.05 Jakarta; letter-spacing:-2px; color:#fff;">Estude no resumo,<br><span style="color:var(--ouro);">confira no livro.</span></h1>
   </div>
   <div class="varal" style="top:440px;"></div>
 
-  <div class="iphone" style="left:44px; width:318px; height:620px; top:510px; transform:rotate(-3deg);"><div class="ilha"></div><div class="tela"><img src="img/cel-comentario.png" alt=""></div></div>
-  <span class="pino" style="left:176px; top:424px;"></span>
-  <span class="etq clara" style="left:60px; top:1160px;">Comentário com o livro</span>
+  <div class="iphone" style="left:44px; width:300px; height:540px; top:500px; transform:rotate(-3deg);"><div class="ilha"></div><div class="tela"><img src="img/cel-comentario.png" alt=""></div></div>
+  <span class="pino" style="left:168px; top:424px;"></span>
+  <span class="etq clara" style="left:60px; top:1056px;">Comentário com o livro</span>
 
-  <div class="print2" style="left:380px; right:44px; top:520px; height:620px; transform:rotate(1.6deg);"><img src="img/resumo-trecho.png" alt=""></div>
+  <div class="print2" style="left:368px; right:44px; top:510px; height:520px; transform:rotate(1.6deg);"><img src="img/resumo-trecho.png" alt=""></div>
   <span class="pino" style="left:960px; top:424px;"></span>
-  <span class="etq" style="right:60px; top:1160px;">Resumo do Campbell 15, cap. 31</span>
+  <span class="etq" style="right:60px; top:1056px;">Resumo do Campbell 15, cap. 31</span>
 
-  <div class="print2" style="left:48px; right:48px; top:1250px; height:340px; border: 4px solid var(--ouro); border-radius: 34px;"><img src="img/print-erros.png" alt="" style="object-position:0 20%;"></div>
-  <span class="etq" style="left:70px; top:1222px; background:linear-gradient(170deg,#f9e2a6,#e8bf62); color:#13302c; font-size:25px; padding:12px 20px;">Destaque do dia: Caderno de erros</span>
-  <div style="position:absolute; left:48px; right:48px; top:1614px; display:flex; gap:10px;">
-    <span class="chip">Todo erro vira revisão</span><span class="chip">Refaça os 10 mais recentes</span><span class="chip">Imprima</span>
+  <div class="preco-card" style="top:1130px;">
+    <p class="k">SEM BLACK FRIDAY POR AQUI</p>
+    <p class="f">Não temos promoção de Black Friday.<br><b>Aproveite o nosso preço de lançamento.</b></p>
+    <div class="linha-preco">
+      <div class="valor"><span class="r">R$</span>29,90<span class="m">/mês</span></div>
+      <div class="det"><b>plano anual</b><br>R$ 358,80 no ano</div>
+    </div>
+    <div class="compara"><span class="sel">BEM ABAIXO DO MERCADO</span><span>Cursos preparatórios costumam passar de <b>R$ 6 mil</b>.</span></div>
   </div>
-  <div class="botao" style="left:48px; right:48px; top:1690px; height:88px; font-size:36px;">Treine grátis</div>
-  <p class="rodape" style="top:1812px; font-size:20px;">Até 20 questões comentadas por dia · ortoquestoes.com.br · Telas ilustrativas</p>
+  <p class="rodape" style="top:1620px; font-size:20px;">Comparação com valores públicos de cursos preparatórios · Telas ilustrativas</p>
+  <p class="rodape" style="top:1660px; font-size:22px;">ortoquestoes.com.br</p>
 </section>
 </body></html>
