@@ -9,7 +9,7 @@ capturadas no próprio site com a conta de exemplo (`capturar.mjs`; `telas/` fic
 | Imagem | O que é | Quando |
 |---|---|---|
 | `png/feed-1.png` a `png/feed-4.png` | Capa (três celulares, "Questão em pé. Deslize. Mais uma."); onde encontrar (prateleira, menu de baixo, Faça Shorts); como funciona (toque, porquê, coração); revisão surpresa e fecho | Manhã, 7h às 8h |
-| `png/story-1.png`, `png/story-2.png` | Treino rápido em pé; como abrir (menu de baixo e menu do site) | Noite, os dois juntos |
+| `png/story-1.png` a `png/story-3.png` | Treino rápido em pé; como abrir (menu de baixo e menu do site); a página inicial grande no computador, com as capas lado a lado | Noite, os três juntos |
 
 ## Legenda do feed
 
