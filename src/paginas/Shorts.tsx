@@ -20,6 +20,7 @@ import {
   totalCoracoes, type SaldoShorts,
 } from '../shorts/dados'
 import { IconeSh, SimboloShorts } from '../shorts/Icones'
+import { tocarAcerto } from '../shorts/som'
 import { registrar, sortear, textoRevisao, type AjustesShorts, type Historico, type ItemShort, type RespostaShort } from '../shorts/sorteio'
 import { href, navegar, usarRota } from '../util/rotas'
 import '../estilos/componentes/ShortsCapas.css'
@@ -255,6 +256,7 @@ export function Shorts() {
     if (ordem && q.gabarito) registrarExibida(q.id, letraExibida(ordem, q.gabarito))
     definirFeitos((f) => ({ ...f, [s.chave]: { letra: original, certo, ms } }))
     definirSeq((n) => (certo ? n + 1 : 0))
+    if (certo && ajustes.som) tocarAcerto({ sequencia: seq + 1, fixou: !!s.revisao })
     try { navigator.vibrate?.(certo ? 14 : [18, 60, 18]) } catch { /* sem vibração */ }
 
     const indiceSlide = slides.findIndex((x) => x.chave === s.chave)
@@ -280,7 +282,7 @@ export function Shorts() {
     }
     setTimeout(() => definirGavetas((g) => ({ ...g, [s.chave]: g[s.chave] && g[s.chave] !== 'fechada' ? g[s.chave] : 'espiar' })), certo ? 650 : 900)
     if (certo && ajustes.passarSozinha) definirAuto({ chave: s.chave, desde: Date.now() + 650 })
-  }, [questoes, feitos, logado, saldo, ordens, slides, avisar, ajustes.passarSozinha, assinanteLocal])
+  }, [questoes, feitos, logado, saldo, ordens, slides, avisar, ajustes.passarSozinha, ajustes.som, seq, assinanteLocal])
 
   /* ---------- coração ---------- */
   const coracao = useCallback((id: string, ligar?: boolean, onde?: { x: number; y: number; chave: string }) => {
@@ -821,6 +823,7 @@ function Ajustes({ inicial, aoFechar, aoAplicar }: { inicial: AjustesShorts; aoF
   const provas: Array<[keyof AjustesShorts, string]> = [['teot', 'TEOT'], ['taro', 'TARO'], ['mao', 'Cirurgia da Mão'], ['outras', 'Outras provas']]
   const chaves: Array<[keyof AjustesShorts, string, string]> = [
     ['passarSozinha', 'Passar sozinha ao acertar', 'A próxima vem em 5 segundos; tocar no comentário pausa'],
+    ['som', 'Som ao acertar', 'Um sininho baixinho, só quando você acerta'],
     ['soImagem', 'Só com imagem', 'Raio-X, ressonância, fotos e figuras'],
     ['soIneditas', 'Só inéditas', 'Questões que você ainda não fez nos Shorts'],
     ['revanche', 'Revisão surpresa', 'Às vezes uma questão volta, de 3 a 7 dias depois'],
@@ -835,7 +838,9 @@ function Ajustes({ inicial, aoFechar, aoAplicar }: { inicial: AjustesShorts; aoF
         <div className="sh-chips">{provas.map(([k, r]) => <button key={k} type="button" className="sh-chip-sel" aria-pressed={!!a[k]} onClick={() => troca(k)}>{r}</button>)}</div>
         <div className="sh-chaves">
           {chaves.map(([k, t, d]) => (
-            <label key={k} className="sh-chave"><span><strong>{t}</strong><small>{d}</small></span><input type="checkbox" checked={!!a[k]} onChange={() => troca(k)} /><i /></label>
+            <label key={k} className="sh-chave"><span><strong>{t}</strong><small>{d}</small>
+              {k === 'som' && <button type="button" className="sh-ouvir" onClick={(e) => { e.preventDefault(); tocarAcerto({ sequencia: 5 }) }}>Ouvir</button>}
+            </span><input type="checkbox" checked={!!a[k]} onChange={() => troca(k)} /><i /></label>
           ))}
         </div>
         <button type="button" className="sh-botao sh-botao--largo" onClick={() => aoAplicar(a)}>Aplicar</button>
