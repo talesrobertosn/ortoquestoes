@@ -23,6 +23,19 @@ async function assinaturaDoUsuario(idUsuario: string, acao: 'cancelar' | 'reembo
   return assinatura ?? null
 }
 
+async function ehAdministrador(id: string) {
+  const r = await banco(`administradores?id_usuario=eq.${encodeURIComponent(id)}&select=id_usuario`)
+  return r.ok && (await r.json() as unknown[]).length > 0
+}
+
+/** Reembolso forçado pelo painel (Tales, 25/11/2026): a assinatura indicada, da pessoa indicada. */
+async function assinaturaPorId(idUsuario: string, idAssinatura: string) {
+  const resposta = await banco(`assinaturas?id=eq.${encodeURIComponent(idAssinatura)}&id_usuario=eq.${encodeURIComponent(idUsuario)}&limit=1&select=id,id_externo,status,ultima_cobranca_id,ultima_cobranca_em,plano,inicio_periodo,fim_periodo`)
+  if (!resposta.ok) throw new Error('consulta_assinatura_falhou')
+  const [assinatura] = await resposta.json() as Assinatura[]
+  return assinatura ?? null
+}
+
 async function atualizarAssinatura(id: string, alteracao: Record<string, unknown>) {
   const resposta = await banco(`assinaturas?id=eq.${encodeURIComponent(id)}`, {
     method: 'PATCH', body: JSON.stringify({ ...alteracao, atualizada_em: new Date().toISOString() }),
@@ -73,11 +86,20 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const usuario = await usuarioDoPedido(req)
-    const { acao } = await req.json() as { acao?: 'cancelar' | 'reembolsar' | 'sincronizar_cobranca' }
+    const quemPede = await usuarioDoPedido(req)
+    const corpo = await req.json() as { acao?: 'cancelar' | 'reembolsar' | 'sincronizar_cobranca'; id_usuario?: string; id_assinatura?: string }
+    const { acao } = corpo
     if (!acao || !['cancelar', 'reembolsar', 'sincronizar_cobranca'].includes(acao)) return json({ erro: 'acao_invalida' }, 400, req)
     if (Deno.env.get('MERCADO_PAGO_INTEGRACAO_VALIDADA') !== 'true') return json({ erro: 'integracao_nao_validada' }, 503, req)
-    const assinatura = await assinaturaDoUsuario(usuario.id, acao)
+    // Pedido do painel do administrador: reembolso de outra pessoa, em qualquer prazo.
+    const forcado = corpo.id_usuario !== undefined || corpo.id_assinatura !== undefined
+    const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
+    if (forcado) {
+      if (acao !== 'reembolsar' || !uuid.test(String(corpo.id_usuario)) || !uuid.test(String(corpo.id_assinatura))) return json({ erro: 'pedido_invalido' }, 400, req)
+      if (!await ehAdministrador(quemPede.id)) return json({ erro: 'acesso_negado' }, 403, req)
+    }
+    const usuario = forcado ? { id: String(corpo.id_usuario) } : quemPede
+    const assinatura = forcado ? await assinaturaPorId(usuario.id, String(corpo.id_assinatura)) : await assinaturaDoUsuario(usuario.id, acao)
     if (!assinatura) return json({ erro: 'assinatura_nao_encontrada' }, 404, req)
     const token = Deno.env.get('MERCADO_PAGO_ACCESS_TOKEN')!
 
@@ -91,11 +113,12 @@ Deno.serve(async (req) => {
       pedirAutomaticoServidor(usuario.id, 'obrigado_tempo', { referencia: `fim:${assinatura.id}`, reembolso, fim_periodo: fimEm }).catch(() => undefined)
 
     if (acao === 'reembolsar') {
-      if (assinatura.status !== 'ativa' && assinatura.status !== 'cancelada') return json({ erro: 'assinatura_nao_reembolsavel' }, 409, req)
+      const reembolsaveis = forcado ? ['ativa', 'cancelada', 'falha_pagamento', 'pausada'] : ['ativa', 'cancelada']
+      if (!reembolsaveis.includes(assinatura.status)) return json({ erro: 'assinatura_nao_reembolsavel' }, 409, req)
       if (!assinatura.ultima_cobranca_id || !assinatura.ultima_cobranca_em) return json({ erro: 'cobranca_aprovada_nao_encontrada' }, 409, req)
       const idade = Date.now() - new Date(assinatura.ultima_cobranca_em).getTime()
       // O site anuncia 7 dias; aceitamos até 10 para ninguém perder o prazo por horas (Tales, 25/11/2026).
-      if (!Number.isFinite(idade) || idade < 0 || idade > 10 * 864e5) return json({ erro: 'prazo_de_garantia_encerrado' }, 409, req)
+      if (!forcado && (!Number.isFinite(idade) || idade < 0 || idade > 10 * 864e5)) return json({ erro: 'prazo_de_garantia_encerrado' }, 409, req)
       const pagamento = await consultarPagamento(token, assinatura.ultima_cobranca_id)
       if (assinatura.id_externo.startsWith('pix:') && (pagamento.external_reference !== assinatura.id_externo || pagamento.payment_method_id !== 'pix')) {
         return json({ erro: 'pagamento_pix_divergente' }, 409, req)

@@ -172,7 +172,9 @@ for trecho in (
 
 for trecho in (
     "acao === 'sincronizar_cobranca'",
-    "assinatura.status !== 'ativa' && assinatura.status !== 'cancelada'",
+    "forcado ? ['ativa', 'cancelada', 'falha_pagamento', 'pausada'] : ['ativa', 'cancelada']",
+    "if (!await ehAdministrador(quemPede.id)) return json({ erro: 'acesso_negado' }, 403, req)",
+    "if (!forcado && (!Number.isFinite(idade) || idade < 0 || idade > 10 * 864e5))",
     "!['approved', 'refunded'].includes(String(pagamento.status))",
     "assinatura.status !== 'cancelada'",
     "preapproval.status !== 'cancelled'",

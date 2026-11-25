@@ -3,7 +3,7 @@ import { excluirConta } from '../../conta/exclusao'
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { lerLocais, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { usarIndice } from '../../dados/usarIndice'
-import { chamarRpc } from '../../servicos/supabase'
+import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { PLANOS, STATUS_EVENTO, TIPOS_EVENTO, acertoAposRevisao, acertoPorTentativa, acertoReal, nomeErro, porcentagem, rotuloOrigem, rotuloPagina } from '../../componentes/admin/formatos'
 import { perfilDaFicha, type EnvioHistorico } from '../../componentes/admin/modelosEmail'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, linkDoEvento, linkMercadoPago, reprocessarEvento, type EventoPagamento } from '../../componentes/admin/pagamentos'
@@ -362,6 +362,7 @@ function AbaAssinatura({ idUsuario, email, aoCarta }: { idUsuario: string; email
   const [dados, definirDados] = useState<AssinaturaDoUsuario | null>(null)
   const [erro, definirErro] = useState<{ texto: string; ausente: boolean } | null>(null)
   const [reprocessando, definirReprocessando] = useState<number | null>(null)
+  const [reembolsando, definirReembolsando] = useState<string | null>(null)
   const ler = useCallback(() => chamarRpc<AssinaturaDoUsuario>('assinatura_usuario_admin', { p_usuario: idUsuario }), [idUsuario])
   const carregar = useCallback(async () => {
     try { definirDados(await ler()); definirErro(null) }
@@ -375,6 +376,20 @@ function AbaAssinatura({ idUsuario, email, aoCarta }: { idUsuario: string; email
     const r = await reprocessarEvento(e.id, async () => (await ler()).eventos.find(x => x.id === e.id) ?? null)
     avisoRapido(r.texto, r.ok ? 'ok' : 'erro')
     await carregar(); definirReprocessando(null)
+  }
+  /** Reembolso forçado (Tales, 25/11/2026): a qualquer momento, sem o prazo da garantia. */
+  async function reembolsar(a: AssinaturaDoUsuario['assinaturas'][number]) {
+    if (reembolsando !== null) return
+    const valor = a.valor !== null ? reais(Number(a.valor)) : 'a última cobrança'
+    if (!(await confirmar({ titulo: 'Reembolsar e encerrar esta assinatura?', texto: `O Mercado Pago devolve ${valor} (cobrança de ${a.ultima_cobranca_em ? dataHora(a.ultima_cobranca_em) : '—'}) e o acesso pago termina agora. O histórico da pessoa fica salvo. Não dá para desfazer.`, sim: 'Reembolsar agora' }))) return
+    definirReembolsando(a.id)
+    try {
+      await chamarFuncao('gerenciar-plano', { acao: 'reembolsar', id_usuario: idUsuario, id_assinatura: a.id }, { prazoMs: 45_000 })
+      avisoRapido('Reembolso confirmado pelo Mercado Pago. Assinatura encerrada.', 'ok')
+    } catch (f) {
+      avisoRapido(`Reembolso não confirmado: ${f instanceof Error ? f.message : 'erro inesperado'}. Confira no Mercado Pago antes de tentar de novo.`, 'erro')
+    }
+    await carregar(); definirReembolsando(null)
   }
   if (erro) return erro.ausente ? <Faixa>{erro.texto}</Faixa> : <Estado tipo="erro" titulo="A assinatura não carregou" texto={erro.texto} acao={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => void carregar()}>Tentar de novo</button>} />
   if (!dados) return <Carregando linhas={6} />
@@ -411,6 +426,9 @@ function AbaAssinatura({ idUsuario, email, aoCarta }: { idUsuario: string; email
             <span className="a3-mudo a3-pequeno" style={{ fontFamily: 'var(--a3-mono)' }}>{a.meio === 'cartao' ? `assinatura ${a.id_externo ?? '—'}` : `pedido ${a.id_externo?.slice(4) ?? '—'}`}{a.ultima_cobranca_id ? ` · pagamento ${a.ultima_cobranca_id}` : ''} · atualizada {dataHora(a.atualizada_em)}</span>
           </details>
           {linkMercadoPago(a.ultima_cobranca_id) && <a className="a3-link" href={linkMercadoPago(a.ultima_cobranca_id)!} target="_blank" rel="noopener noreferrer">Ver o último pagamento no Mercado Pago <Icone nome="externo" tamanho={13} /></a>}
+          {a.ultima_cobranca_id && ['ativa', 'cancelada', 'falha_pagamento', 'pausada'].includes(a.status) && <div>
+            <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" disabled={reembolsando !== null} onClick={() => void reembolsar(a)}>{reembolsando === a.id ? 'Reembolsando…' : 'Reembolsar e encerrar'}</button>
+          </div>}
         </div>
       })}</div>}
     </Bloco>
