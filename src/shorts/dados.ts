@@ -48,8 +48,11 @@ export function carregarCapas(): Promise<CapaShort[]> {
   return capas
 }
 
-/** Capas do dia para a prateleira: sorteio estável no dia, com as provas do padrão (TEOT e TARO) primeiro. */
-export function capasDoDia(lista: CapaShort[], n: number, semente = new Date().toISOString().slice(0, 10)): CapaShort[] {
+/**
+ * Capas para a prateleira: um sorteio novo a cada vez que a página abre, como no YouTube (Tales, 26/11/2026), com as
+ * provas do padrão (TEOT e TARO) e as ainda não vistas na frente e temas variados.
+ */
+export function capasDoDia(lista: CapaShort[], n: number, semente = String(Math.random())): CapaShort[] {
   let h = 2166136261
   for (const c of semente) h = Math.imul(h ^ c.charCodeAt(0), 16777619) >>> 0
   const hist = ler<Historico>(CHAVE_HISTORICO, {})

@@ -6,13 +6,14 @@
 .sh-pl[hidden] { display: none; }
 .sh-pl-fundo { position: absolute; inset: 0; background: var(--pl-fundo); }
 @media (min-width: 761px) {
-  .sh-pl { --alt: calc(100dvh - 40px); --col: min(450px, calc((100dvh - 40px) * 9 / 16)); }
+  /* No computador a coluna fica menor que a tela (Tales, 26/11/2026: "responsivo até demais"). */
+  .sh-pl { --alt: min(calc(100dvh - 120px), 800px); --col: min(430px, calc(var(--alt) * 9 / 16)); }
   .sh-pl-fundo { background: radial-gradient(120% 80% at 50% 0%, #10221f 0%, #050c0b 60%); }
 }
 .sh-pl-feed { position: absolute; inset: 0; overflow-y: auto; scroll-snap-type: y mandatory; overscroll-behavior: contain; scrollbar-width: none; }
 .sh-pl-feed::-webkit-scrollbar { display: none; }
 
-.sh-tela { position: relative; height: 100dvh; scroll-snap-align: start; scroll-snap-stop: always; display: grid; place-items: center; }
+.sh-tela { position: relative; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: grid; place-items: center; }
 .sh-palco { position: relative; width: var(--col); height: var(--alt); }
 .sh-coluna { position: absolute; inset: 0; overflow: hidden; background: var(--pl-sup); display: flex; flex-direction: column; }
 @media (min-width: 761px) { .sh-coluna { border-radius: var(--r-cartao); box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 30px 80px rgba(0,0,0,.55); } }
@@ -83,7 +84,7 @@
 
 /* ---------- Gaveta do comentário ---------- */
 .sh-gaveta { position: absolute; left: 0; right: 0; bottom: 0; z-index: 5; height: 92%; display: flex; flex-direction: column; border-radius: 18px 18px 0 0; background: var(--sup); color: var(--texto); box-shadow: 0 -18px 50px rgba(0,0,0,.45); transform: translateY(100%); transition: transform .42s var(--ease); touch-action: pan-y; }
-.sh-gaveta[data-estado="espiar"] { transform: translateY(45%); }
+.sh-gaveta[data-estado="espiar"] { transform: translateY(30%); }
 .sh-gaveta[data-estado="aberta"] { transform: translateY(0); }
 .sh-gaveta.sh-arrastando { transition: none; }
 .sh-gaveta-cabeca { flex: 0 0 auto; padding: 8px 18px 12px; cursor: grab; border-bottom: 1px solid var(--traco); touch-action: none; }
@@ -136,7 +137,7 @@
 .sh-regua-legenda { display: flex; justify-content: space-between; margin-top: 6px; font-size: .75rem; color: var(--ardosia-sh); }
 
 .sh-gaveta-pe { position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 18px calc(14px + env(safe-area-inset-bottom)); background: linear-gradient(180deg, transparent, var(--sup) 30%); display: flex; gap: 10px; }
-.sh-gaveta[data-estado="espiar"] .sh-gaveta-pe { bottom: 45%; }
+.sh-gaveta[data-estado="espiar"] .sh-gaveta-pe { bottom: 30%; }
 .sh-proxima { flex: 1; min-width: 0; height: 52px; border: 0; border-radius: var(--r-c); background: var(--verdete); color: #fff; display: flex; align-items: center; gap: 12px; padding: 0 8px 0 16px; font-weight: 700; font-size: 1rem; text-align: left; box-shadow: 0 8px 20px -8px rgba(20,101,94,.6); }
 :root[data-tema="escuro"] .sh-proxima { color: #0b1514; }
 .sh-proxima:hover { background: var(--verdete-tinta); }
@@ -289,8 +290,8 @@
 .sh-coruja--asas { background-position-y: -256px; }
 .sh-coruja--aceno { background-position-y: -768px; animation-duration: 1.1s; }
 @keyframes sh-k-coruja-quadros { to { background-position-x: -880px; } }
-.sh-midia--texto .sh-midia-arte { opacity: .8; }
-.sh-midia--texto::after { background: linear-gradient(180deg, rgba(5,12,11,.55) 0, rgba(5,12,11,0) 35%, rgba(15,27,25,.55) 70%, var(--pl-sup) 100%); }
+.sh-midia--texto .sh-midia-arte { opacity: 1; object-position: 50% 62%; }
+.sh-midia--texto::after { background: linear-gradient(180deg, rgba(5,12,11,.5) 0, rgba(5,12,11,0) 22%, rgba(5,12,11,0) 55%, rgba(15,27,25,.7) 82%, var(--pl-sup) 100%); }
 
 /* ---------- Site: peças que o protótipo não tinha ---------- */
 @keyframes sh-k-entra { from { opacity: 0; transform: scale(.97); } }
@@ -342,3 +343,33 @@ a.sh-botao { text-decoration: none; }
 .sh-convite-continuar { margin-top: 12px; border: 0; background: none; color: var(--pl-apagado); font-weight: 650; font-size: .875rem; text-decoration: underline; text-underline-offset: 3px; }
 .sh-pilula--botao { border: 0; color: #fff; font: inherit; font-weight: 700; cursor: pointer; gap: 6px; }
 .sh-pilula--botao:hover { background: rgba(5,12,11,.75); }
+
+/* ---------- 26/11/2026: ajustes do Tales ---------- */
+/* No computador, o topo e o X acompanham a coluna menor, centralizada. */
+@media (min-width: 761px) {
+  .sh-pl-topo { top: calc((100dvh - var(--alt)) / 2); }
+}
+/* A gaveta abre mais alta e ganha uma seta grande para subir com um toque. */
+.sh-gaveta-subir { position: absolute; left: 50%; top: -26px; width: 52px; height: 52px; margin-left: -26px; border: 0; border-radius: 999px; display: grid; place-items: center;
+  background: var(--ouro); color: var(--tinta-pixel); box-shadow: 0 0 0 5px var(--sup), 0 8px 18px rgba(0,0,0,.35); z-index: 2; touch-action: manipulation; }
+.sh-gaveta-subir svg { width: 28px; height: 28px; }
+.sh-gaveta[data-estado="espiar"] .sh-gaveta-subir svg { animation: sh-k-sobe-seta 1.4s ease-in-out 3; }
+@keyframes sh-k-sobe-seta { 50% { transform: translateY(-4px); } }
+.sh-gaveta-cabeca { position: relative; padding-top: 30px; }
+.sh-gaveta-cabeca .sh-alca { display: none; }
+/* Próxima sempre à vista depois de responder, flutuando no pé da tela (antes podia ficar escondida). */
+.sh-proxima-corpo { position: absolute; left: 16px; right: 16px; bottom: calc(14px + env(safe-area-inset-bottom)); z-index: 4; width: auto; margin: 0; box-shadow: 0 10px 26px rgba(0,0,0,.45); }
+.sh-tela.sh-respondida .sh-corpo { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+/* Celulares baixos: imagem um pouco menor para as alternativas caberem. */
+@media (max-height: 700px) and (max-width: 760px) {
+  .sh-midia { min-height: 24%; }
+  .sh-midia img { padding-top: 56px; }
+  .sh-enunciado { font-size: .9375rem; }
+  .sh-alt { min-height: 44px; padding: 7px 10px 7px 7px; font-size: .875rem; }
+  .sh-alt-letra { flex-basis: 28px; height: 28px; }
+  .sh-acao-bola { width: 40px; height: 40px; }
+  /* Coluna de botões curta: sem rótulos e sem o Pular (deslizar já pula). */
+  .sh-acoes { gap: 8px; }
+  .sh-acao > span:not(.sh-acao-bola):not(.sh-n) { display: none; }
+  .sh-acao--pular { display: none; }
+}

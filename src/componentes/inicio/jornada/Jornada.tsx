@@ -121,7 +121,6 @@ export function TrilhaSequencia({ streak, dias, festa = 0 }: { streak: Streak; d
         </div>
         <ChocolateNatal dias={streak.atual} />
       </div>
-      <ArvoreNatal />
 
       <ol className="jn-tochas" aria-label="Esta semana, de segunda a domingo">
         {dias.map((d) => {
@@ -185,6 +184,7 @@ export function BarraAtalhos({ atalhos }: { atalhos: Atalho[] }) {
         ))}
       </ul>
       <GuirlandaNatal />
+      <ArvoreNatal />
       <NeveAtalhos />
     </nav>
   )

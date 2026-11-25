@@ -1,4 +1,4 @@
-import { LIMITE_HISTORICO_QUESTAO, proximoRegistro, type RegistroQuestao } from './revisao'
+import { proximoRegistro, type RegistroQuestao } from './revisao'
 import { useCallback } from 'react'
 import type { EstadoSessao, Filtros, Letra, Resposta } from '../dados/tipos'
 import { ROTULO_AREA } from '../dados/tipos'
@@ -217,25 +217,16 @@ export function registrarResposta(id: string, correta: boolean | null, confianca
 }
 
 /**
- * Resposta dada nos Shorts (25/11/2026). Conta no desempenho, mas não mexe na fila da Revisão: questão nova
- * ganha um registro marcado (sh), que a revisão ignora; questão que a pessoa já estuda no site só ganha a
- * tentativa no histórico, sem mudar quando ela volta. Responder de novo numa sessão normal tira a marca.
+ * Resposta dada nos Shorts (25/11/2026). Conta no desempenho, mas não mexe na fila da Revisão nem no ranking:
+ * questão nova ganha um registro marcado (sh), que a revisão e o ranking ignoram. Questão que a pessoa já estuda
+ * no site fica como está (os Shorts têm o próprio histórico, com a revisão escondida). Responder de novo numa
+ * sessão normal tira a marca.
  */
 export function registrarRespostaShort(id: string, correta: boolean, escolhida: Letra) {
   const mapa = ler<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
   const anterior = mapa[id]
-  const agora = Date.now()
-  if (!anterior || anterior.sh) {
-    mapa[id] = { ...proximoRegistro(anterior, correta, agora, 'seguro', escolhida), sh: 1 }
-  } else {
-    mapa[id] = {
-      ...anterior,
-      tentativas: (anterior.tentativas ?? 1) + 1,
-      acertos: (anterior.acertos ?? (anterior.c === true ? 1 : 0)) + Number(correta),
-      erros: (anterior.erros ?? (anterior.c === false ? 1 : 0)) + Number(!correta),
-      historico: [...(anterior.historico ?? []), { em: agora, correta, confianca: 'seguro' as const }].slice(-LIMITE_HISTORICO_QUESTAO),
-    }
-  }
+  if (anterior && !anterior.sh) return
+  mapa[id] = { ...proximoRegistro(anterior, correta, Date.now(), 'seguro', escolhida), sh: 1 }
   gravar(CHAVE_RESPONDIDAS, mapa)
 }
 
