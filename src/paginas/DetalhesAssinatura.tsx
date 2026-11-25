@@ -271,7 +271,9 @@ export function DetalhesAssinatura() {
           texto="Até 7 dias depois de cada cobrança, o reembolso integral é um botão. Depois disso, desligar a renovação mantém o acesso até o fim do período pago.">
           <div className="dp-cartao asn-garantia">
             {a.garantia && a.fimGarantia ? <>
-              <p>A garantia da última cobrança ({dataBr(estado?.ultima_cobranca_em)}) vale até <b>{dataBr(a.fimGarantia)}</b>, daqui a <b>{dias(diasEntre(agora, a.fimGarantia))}</b>. Se o Mercado Pago confirmar o reembolso, esta assinatura termina, o acesso volta ao gratuito e o seu histórico continua salvo.</p>
+              <p>{a.fimGarantia > agora
+                ? <>A garantia da última cobrança ({dataBr(estado?.ultima_cobranca_em)}) vale até <b>{dataBr(a.fimGarantia)}</b>, daqui a <b>{dias(diasEntre(agora, a.fimGarantia))}</b>.</>
+                : <>Você ainda pode pedir o reembolso integral da última cobrança ({dataBr(estado?.ultima_cobranca_em)}).</>} Se o Mercado Pago confirmar o reembolso, esta assinatura termina, o acesso volta ao gratuito e o seu histórico continua salvo.</p>
               <button className="dp-botao asn-botao-inicio asn-botao-alerta" type="button" disabled={processando} onClick={() => { definirAcaoPendente('reembolsar'); definirMensagem('') }}>Desistir e solicitar reembolso integral</button>
             </> : <p>{estado?.ultima_cobranca_em && a.fimGarantia
               ? <>A garantia da última cobrança ({dataBr(estado.ultima_cobranca_em)}) terminou em <b>{dataBr(a.fimGarantia)}</b>. A próxima cobrança, se houver, ganha uma garantia nova de 7 dias.</>

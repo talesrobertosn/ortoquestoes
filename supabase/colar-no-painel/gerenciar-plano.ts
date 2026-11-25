@@ -175,7 +175,7 @@ Deno.serve(async (req) => {
       if (assinatura.status !== "ativa" && assinatura.status !== "cancelada") return json({ erro: "assinatura_nao_reembolsavel" }, 409, req);
       if (!assinatura.ultima_cobranca_id || !assinatura.ultima_cobranca_em) return json({ erro: "cobranca_aprovada_nao_encontrada" }, 409, req);
       const idade = Date.now() - new Date(assinatura.ultima_cobranca_em).getTime();
-      if (!Number.isFinite(idade) || idade < 0 || idade > 7 * 864e5) return json({ erro: "prazo_de_garantia_encerrado" }, 409, req);
+      if (!Number.isFinite(idade) || idade < 0 || idade > 10 * 864e5) return json({ erro: "prazo_de_garantia_encerrado" }, 409, req);
       const pagamento = await consultarPagamento(token, assinatura.ultima_cobranca_id);
       if (assinatura.id_externo.startsWith("pix:") && (pagamento.external_reference !== assinatura.id_externo || pagamento.payment_method_id !== "pix")) {
         return json({ erro: "pagamento_pix_divergente" }, 409, req);

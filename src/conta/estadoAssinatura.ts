@@ -66,7 +66,11 @@ export function usarEstadoAssinatura(sessao: Session | null) {
   /** Fim do acesso pago (no Pix, somando renovações já pagas). */
   const fimAcesso = fimPix ?? (Number.isFinite(fimMs) ? fimMs : null)
   const idadeCobranca = agora - new Date(estado?.ultima_cobranca_em ?? '').getTime()
-  const garantia = (ativo || status === 'cancelada') && Number.isFinite(idadeCobranca) && idadeCobranca >= 0 && idadeCobranca <= 7 * 864e5
+  // Garantia (Tales, 25/11/2026): o site fala em 7 dias, mas o botão de reembolso fica
+  // disponível por 10 dias depois da cobrança, para ninguém perder o prazo por horas.
+  // A Edge Function gerenciar-plano aceita o mesmo prazo de 10 dias.
+  const garantia = (ativo || status === 'cancelada') && Number.isFinite(idadeCobranca) && idadeCobranca >= 0 && idadeCobranca <= 10 * 864e5
+  /** Fim dos 7 dias anunciados (é a data mostrada; a tolerância de 10 dias não aparece). */
   const fimGarantia = estado?.ultima_cobranca_em ? Date.parse(estado.ultima_cobranca_em) + 7 * 864e5 : null
 
   return {
