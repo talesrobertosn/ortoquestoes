@@ -21,6 +21,7 @@ import { ConviteLimiteSobDemanda } from '../componentes/ConviteLimiteSobDemanda'
 import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
+import { PrateleiraShorts } from '../shorts/Vitrine'
 import type { DiaSequencia } from '../componentes/inicio/PainelSequencia'
 import { NatalInicioProvider } from '../natal/InteracoesInicio'
 import { BarraAtalhos, ConviteInstagram, HeroiJornada, HeroiVitrine, TrilhaSequencia, usarFestaDaMeta, type Atalho } from '../componentes/inicio/jornada/Jornada'
@@ -324,6 +325,7 @@ export function Inicio() {
         <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
         {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
         {vazio}
+        <div className="jn-nivel jn-shorts"><PrateleiraShorts /></div>
         <div className="hd-avisos jn-avisos">
           <ConviteLimiteSobDemanda />
           <div className="natal-faixa-enfeite natal-faixa-enfeite--simulado"><ChamadaSimuladoNacional /></div>
@@ -463,6 +465,9 @@ export function Inicio() {
       {/* ── Nível 2: a sequência (o chão do acampamento) e o acesso rápido ── */}
       <TrilhaSequencia streak={streak} dias={diasSequencia} festa={festa} />
       <BarraAtalhos atalhos={atalhos} />
+
+      {/* Shorts (25/11/2026): a prateleira das questões em pé, logo depois do acesso rápido. */}
+      <div className="jn-nivel jn-shorts"><PrateleiraShorts /></div>
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
       <div className="hd-avisos jn-avisos">

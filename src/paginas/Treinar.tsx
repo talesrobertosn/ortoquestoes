@@ -1,3 +1,5 @@
+import { CartaoShortsVertical } from '../shorts/Vitrine'
+import { abrirShorts } from '../shorts/dados'
 import { useDeferredValue, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { FLASHCARDS_NO_MENU, fraseGratis, recurso, rotuloProva, urlCss } from '../config'
 import { usarIndice } from '../dados/usarIndice'
@@ -609,6 +611,22 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Shorts (25/11/2026): o retângulo em pé, como os Shorts do YouTube, para o treino de bolso. */}
+      <section className="tn-shorts" aria-labelledby="tn-shorts-titulo">
+        <div className="tn-shorts__cartao"><CartaoShortsVertical /></div>
+        <div className="tn-shorts__texto">
+          <p className="tn-rotulo">Novo</p>
+          <h2 id="tn-shorts-titulo">Shorts: uma questão por tela</h2>
+          <p>Para o intervalo entre uma cirurgia e outra, a fila do banco ou o avião. Toque na resposta, leia o porquê e deslize para a próxima.</p>
+          <ul>
+            <li>Mais questões com imagem: raio-X, ressonância e fotos clínicas</li>
+            <li>De vez em quando uma questão volta, de surpresa, para você fixar</li>
+            <li>Cada resposta conta no seu desempenho</li>
+          </ul>
+          <button type="button" className="botao botao--principal" onClick={() => abrirShorts()}>Abrir os Shorts</button>
         </div>
       </section>
 

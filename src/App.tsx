@@ -34,6 +34,7 @@ const Treinar = lazy(() => carregadores.Treinar().then(({ Treinar }) => ({ defau
 const Sessao = lazy(() => carregadores.Sessao().then(({ Sessao }) => ({ default: Sessao })))
 const Resumo = lazy(() => carregadores.Resumo().then(({ Resumo }) => ({ default: Resumo })))
 const QuestaoDireta = lazy(() => carregadores.QuestaoDireta().then(({ QuestaoDireta }) => ({ default: QuestaoDireta })))
+const Shorts = lazy(() => carregadores.Shorts().then(({ Shorts }) => ({ default: Shorts })))
 const Contato = lazy(() => carregadores.Apoio().then(({ Contato }) => ({ default: Contato })))
 const DadosLocais = lazy(() => carregadores.Apoio().then(({ DadosLocais }) => ({ default: DadosLocais })))
 const NaoEncontrada = lazy(() => carregadores.Apoio().then(({ NaoEncontrada }) => ({ default: NaoEncontrada })))
@@ -72,6 +73,7 @@ const TITULOS: Record<string, string> = {
   // Igual ao <title> do index.html: o Google lê o título depois do JavaScript.
   '/': 'Orto Questões (OrtoQuestões): banco de questões de ortopedia, TEOT e TARO',
   '/treinar': 'Montar sessão | Orto Questões',
+  '/shorts': 'Shorts | Orto Questões',
   '/sessao': 'Respondendo | Orto Questões',
   '/resumo': 'Resumo da sessão | Orto Questões',
   '/sobre': 'O projeto | Orto Questões (OrtoQuestões): questões de ortopedia comentadas',
@@ -135,6 +137,9 @@ function paginaDaRota(rota: Rota): ReactNode {
       break
     case 'questao':
       pagina = segundo ? <QuestaoDireta id={segundo} /> : <NaoEncontrada />
+      break
+    case 'shorts':
+      pagina = <Shorts />
       break
     // Duas rotas para a mesma página: "sobre" é o endereço antigo, que
     // continua valendo, e "projeto" é como o site passou a chamá-la.
@@ -340,7 +345,7 @@ export function App() {
       {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
       {/* Na página inicial, o convite do Instagram fecha a galeria (ConviteInstagram em inicio/jornada). */}
-      {!['sessao', 'resumo', 'questao', 'admin'].includes(primeiroFundo ?? '') && <Rodape comInstagram={primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
+      {!['sessao', 'resumo', 'questao', 'admin', 'shorts'].includes(primeiroFundo ?? '') && <Rodape comInstagram={primeiroFundo === 'projeto' || primeiroFundo === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
       <HospedeConfirmacao />

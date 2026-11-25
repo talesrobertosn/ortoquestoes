@@ -6,6 +6,7 @@ export const CAMINHOS: Record<string, string> = {
   estrela:
     'M12 3.5l2.6 5.5 5.9.8-4.3 4.2 1 6-5.2-2.8L6.8 20l1-6L3.5 9.8l5.9-.8z',
   mapa: 'M4 5h6v6H4zM14 5h6v6h-6zM4 13h6v6H4zM14 13h6v6h-6z',
+  shorts: 'M8 2.8h8a2.5 2.5 0 0 1 2.5 2.5v13.4a2.5 2.5 0 0 1-2.5 2.5H8a2.5 2.5 0 0 1-2.5-2.5V5.3A2.5 2.5 0 0 1 8 2.8zM10.5 9v6l4.8-3z',
   fechar: 'M6 6l12 12M18 6L6 18',
   esquerda: 'M14.5 5.5 8 12l6.5 6.5',
   direita: 'M9.5 5.5 16 12l-6.5 6.5',

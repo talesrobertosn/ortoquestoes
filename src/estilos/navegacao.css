@@ -204,6 +204,8 @@
     transform: scale(0.86); transition-duration: 0.08s;
   }
   .navegacao-mobile__ranking .navegacao-mobile__icone { color: #c9952f; }
+  /* Shorts (25/11/2026): o ladrilho em pé no verde da marca, para chamar o olho na barra. */
+  .navegacao-mobile__shorts .navegacao-mobile__icone { color: var(--verdete); }
   /* Menu com o mesmo contorno fino do topo, em volta do ícone. */
   .navegacao-mobile__menu { color: var(--verdete); }
   .navegacao-mobile__menu .navegacao-mobile__icone {
