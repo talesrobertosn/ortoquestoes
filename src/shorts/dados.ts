@@ -11,7 +11,6 @@ import { AJUSTES_PADRAO, lerIndice, type AjustesShorts, type GrupoShort, type Hi
 export const CHAVE_HISTORICO = 'shorts:historico'
 export const CHAVE_AJUSTES = 'shorts:ajustes'
 export const CHAVE_CORACOES = 'shorts:coracoes'
-export const CHAVE_VISITANTE = 'shorts:visitante'
 export { CHAVE_VOLTA } from './volta'
 
 /** Abre os Shorts guardando a página de volta. */
@@ -19,8 +18,6 @@ export function abrirShorts(id?: string | null) {
   guardarVolta()
   location.hash = '#/shorts' + (id ? '/' + id : '')
 }
-/** Sem conta, a pessoa faz um Short; a conta grátis libera mais. */
-export const LIMITE_VISITANTE = 1
 /** Cota grátis padrão (o servidor manda o valor real, configurável no painel). */
 export const LIMITE_GRATIS_SHORTS = 5
 
@@ -119,13 +116,6 @@ export async function enviarResposta(id: string, certo: boolean, revisao: boolea
   return saldoDe(l)
 }
 
-/** Visitante sem conta: quantos Shorts fez hoje neste aparelho. */
-export function feitasVisitante(): number {
-  const v = ler<{ dia: string; n: number } | null>(CHAVE_VISITANTE, null)
-  return v && v.dia === new Date().toDateString() ? v.n : 0
-}
-export function somarVisitante() { gravar(CHAVE_VISITANTE, { dia: new Date().toDateString(), n: feitasVisitante() + 1 }) }
-
 export function lerCoracoes(): string[] { return ler<string[]>(CHAVE_CORACOES, []) }
 export async function alternarCoracao(id: string, ligar: boolean): Promise<number | null> {
   const atual = new Set(lerCoracoes())
@@ -158,9 +148,10 @@ export function anotarVista(id: string, pulou: boolean) {
   if (pulou) puladas.push(id)
   envio ??= setTimeout(enviarVistas, 15_000)
 }
-export function enviarVistas() {
+/** Manda as vistas pendentes; com `sinal`, manda mesmo vazio (é o aviso de que a pessoa está nos Shorts agora). */
+export function enviarVistas(sinal = false) {
   if (envio) { clearTimeout(envio); envio = null }
-  if (!vistas.length && !puladas.length) return
+  if (!sinal && !vistas.length && !puladas.length) return
   const v = vistas.splice(0, 100), p = puladas.splice(0, 100)
   chamarRpc('registrar_vistas_shorts', { p_vistas: v, p_puladas: p }, { keepalive: true }).catch(() => undefined)
 }

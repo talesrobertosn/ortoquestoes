@@ -3,9 +3,9 @@ import { usarRpc } from '../../componentes/admin/usarRpc'
 import { href } from '../../util/rotas'
 import { usarPainel } from '../dados/painel'
 import { defParte } from '../rotas'
-import { inteiro } from '../ui/formato'
+import { haQuanto, inteiro } from '../ui/formato'
 import { Ranking, SerieTempo } from '../ui/graficos'
-import { Cabeca, Carregando, Estado, Metrica, Painel } from '../ui/kit'
+import { Cabeca, Carregando, Estado, Metrica, Painel, Selo } from '../ui/kit'
 
 interface Dia { dia: string; respostas: number; pessoas: number; acertos: number; assinantes: number }
 interface Questao { id: string; coracoes: number; respostas: number; acertos: number; vistas: number; puladas: number }
@@ -17,7 +17,11 @@ interface DadosShorts {
   questoes: Questao[]
   puladas: Array<{ id: string; vistas: number; puladas: number }>
 }
+interface Pessoa { id_usuario: string; usuario: string | null; primeira_em: string; visto_em: string; vistas: number; hoje: number; total: number; acertos: number; revisoes: number; ilimitado: boolean }
 const MIGRACAO = '20261125220000_shorts.sql'
+const MIGRACAO_PESSOAS = '20261125233000_shorts_pessoas.sql'
+/** Vendo agora: sinal dos últimos 2 minutos (o aparelho avisa a cada minuto com a tela à vista). */
+const AGORA_MS = 2 * 60_000
 const pct = (a: number, b: number) => (b ? `${Math.round((a / b) * 100)}%` : '—')
 const curtaData = (d: string) => d.slice(8, 10) + '/' + d.slice(5, 7)
 
@@ -25,6 +29,7 @@ const curtaData = (d: string) => d.slice(8, 10) + '/' + d.slice(5, 7)
 export default function ShortsAdmin() {
   const p = usarPainel()
   const q = usarRpc<DadosShorts>(p.conta, 'shorts_painel_admin')
+  const pessoas = usarRpc<Pessoa[]>(p.conta, 'shorts_pessoas_admin')
   const parte = defParte('shorts')
   if (q.erro) return <Estado tipo="erro" titulo="Os números dos Shorts não carregaram" texto={erroDoPainel(q.erro, MIGRACAO)} />
   const d = q.dados
@@ -40,6 +45,7 @@ export default function ShortsAdmin() {
       <Metrica rotulo="Revisões surpresa" valor={inteiro(d.totais.revisoes)} qualidade="confirmado" nota="questões que voltaram de 3 a 7 dias depois" />
       <Metrica rotulo="Corações" valor={inteiro(d.totais.coracoes)} qualidade="confirmado" nota="cada coração também vale nota 10" />
     </div></section>
+    <PessoasShorts dados={pessoas.dados} erro={pessoas.erro} />
     <Painel titulo="Últimos 30 dias" descricao="Shorts respondidos e pessoas por dia (dia de São Paulo)">
       {dias.length ? <SerieTempo descricao="Shorts e pessoas por dia"
         rotulos={dias.map((x) => ({ longo: x.dia, curto: curtaData(x.dia) }))}
@@ -61,4 +67,29 @@ export default function ShortsAdmin() {
         <tbody>{d.questoes.map((x) => <tr key={x.id}><td>{link(x.id)}</td><td className="num">{inteiro(x.coracoes)}</td><td className="num">{inteiro(x.respostas)}</td><td className="num">{pct(x.acertos, x.respostas)}</td><td className="num">{inteiro(x.vistas)}</td><td className="num">{pct(x.puladas, x.vistas)}</td></tr>)}</tbody></table>
     </Painel>
   </div>
+}
+
+/** Quem usa os Shorts: vendo agora no topo, depois do mais recente ao mais antigo. */
+function PessoasShorts({ dados, erro }: { dados: Pessoa[] | null | undefined; erro: unknown }) {
+  if (erro) return <Painel titulo="Quem está nos Shorts"><p className="a3-mudo">{erroDoPainel(erro, MIGRACAO_PESSOAS)}</p></Painel>
+  if (!dados) return <Painel titulo="Quem está nos Shorts"><p className="a3-mudo">Carregando…</p></Painel>
+  const agora = Date.now()
+  const vendo = dados.filter((x) => agora - Date.parse(x.visto_em) < AGORA_MS)
+  const hoje = dados.filter((x) => x.hoje > 0)
+  return <Painel titulo="Quem está nos Shorts" descricao={`${inteiro(vendo.length)} vendo agora · ${inteiro(hoje.length)} responderam hoje · ${inteiro(dados.length)} já usaram`}>
+    {dados.length === 0 ? <p className="a3-mudo">Ninguém com conta abriu os Shorts ainda. Quem está sem conta só olha e não aparece aqui.</p> :
+      <table className="a3-tabela"><thead><tr><th>Pessoa</th><th>Situação</th><th>Hoje</th><th>Total</th><th>Acerto</th><th>Vistas</th><th>Primeira vez</th></tr></thead>
+        <tbody>{dados.map((x) => {
+          const ativo = agora - Date.parse(x.visto_em) < AGORA_MS
+          return <tr key={x.id_usuario}>
+            <td>{x.usuario ?? 'sem e-mail'} {x.ilimitado && <Selo contorno>Sem limite</Selo>}</td>
+            <td>{ativo ? <Selo tom="ok" solido>Vendo agora</Selo> : <span className="a3-mudo">{haQuanto(x.visto_em)}</span>}</td>
+            <td className="num">{inteiro(x.hoje)}</td>
+            <td className="num">{inteiro(x.total)}</td>
+            <td className="num">{pct(x.acertos, x.total)}</td>
+            <td className="num">{inteiro(x.vistas)}</td>
+            <td className="a3-mudo">{haQuanto(x.primeira_em)}</td>
+          </tr>
+        })}</tbody></table>}
+  </Painel>
 }

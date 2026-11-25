@@ -329,3 +329,16 @@ a.sh-botao { text-decoration: none; }
 .sh-zoom-dica-texto { position: absolute; bottom: 20px; left: 0; right: 0; margin: 0; text-align: center; color: rgba(255,255,255,.6); font-size: .8125rem; font-weight: 600; pointer-events: none; }
 .sh-pilula svg { width: 16px; height: 16px; }
 .sh-muro-conteudo .sh-botao + .sh-botao { margin-top: 10px; }
+
+/* Convite para criar a conta: sem conta a questão aparece inteira, e responder abre este convite (25/11/2026). */
+.sh-convite { position: absolute; inset: 0; z-index: 25; display: flex; align-items: flex-end; justify-content: center; background: rgba(0,0,0,.55); animation: sh-k-aparece .2s; }
+.sh-convite-caixa { position: relative; width: min(100%, 460px); max-height: 92dvh; overflow: auto; padding: 18px 22px calc(22px + env(safe-area-inset-bottom)); border-radius: 22px 22px 0 0; text-align: center; color: var(--pl-texto);
+  background: radial-gradient(120% 80% at 50% 0%, #163a35 0%, #0a1a18 70%); box-shadow: inset 0 1px 0 rgba(244,207,124,.35), 0 -20px 50px rgba(0,0,0,.5); animation: sh-k-sobe .32s var(--ease); }
+@media (min-width: 761px) { .sh-convite { align-items: center; } .sh-convite-caixa { border-radius: var(--r-cartao); } }
+.sh-convite-caixa h2 { margin: 0; font: 800 1.6rem/1.12 var(--f-marca); letter-spacing: -.03em; text-wrap: balance; }
+.sh-convite-x { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; }
+.sh-convite-caixa .sh-botao { height: 52px; font-size: 1rem; }
+.sh-convite-caixa .sh-botao + .sh-botao { margin-top: 10px; }
+.sh-convite-continuar { margin-top: 12px; border: 0; background: none; color: var(--pl-apagado); font-weight: 650; font-size: .875rem; text-decoration: underline; text-underline-offset: 3px; }
+.sh-pilula--botao { border: 0; color: #fff; font: inherit; font-weight: 700; cursor: pointer; gap: 6px; }
+.sh-pilula--botao:hover { background: rgba(5,12,11,.75); }

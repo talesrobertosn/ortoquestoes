@@ -15,9 +15,9 @@ import { usarIndice } from '../dados/usarIndice'
 import { lerUltimaExibida, registrarExibida } from '../estado/ordemExibida'
 import { lerRespondidas, registrarRespostaShort, usarFavoritos } from '../estado/sessao'
 import {
-  CHAVE_VOLTA, LIMITE_VISITANTE, alternarCoracao, anotarVista, carregarIndiceShorts, carregarTotaisCoracoes, definirTotalCoracoes, enviarResposta,
-  enviarVistas, feitasVisitante, gravarAjustes, gravarHistorico, lerAjustes, lerCoracoes, lerHistorico, lerSaldo, sincronizarHistorico,
-  somarVisitante, totalCoracoes, type SaldoShorts,
+  CHAVE_VOLTA, alternarCoracao, anotarVista, carregarIndiceShorts, carregarTotaisCoracoes, definirTotalCoracoes, enviarResposta,
+  enviarVistas, gravarAjustes, gravarHistorico, lerAjustes, lerCoracoes, lerHistorico, lerSaldo, sincronizarHistorico,
+  totalCoracoes, type SaldoShorts,
 } from '../shorts/dados'
 import { IconeSh, SimboloShorts } from '../shorts/Icones'
 import { registrar, sortear, textoRevisao, type AjustesShorts, type Historico, type ItemShort, type RespostaShort } from '../shorts/sorteio'
@@ -35,7 +35,6 @@ import '../estilos/paginas/Shorts.css'
 type Slide =
   | { chave: string; tipo: 'questao'; item: ItemShort; revisao: RespostaShort | null }
   | { chave: string; tipo: 'limite' }
-  | { chave: string; tipo: 'conta' }
   | { chave: string; tipo: 'bloco'; ids: string[] }
 
 interface Feito { letra: Letra; certo: boolean; ms: number }
@@ -71,6 +70,8 @@ export function Shorts() {
   const [, definirVersaoTotais] = useState(0)
   const [configAberta, definirConfigAberta] = useState(false)
   const [zoom, definirZoom] = useState<string | null>(null)
+  /** Convite para criar a conta (sem conta não se responde): o id da questão para voltar a ela. */
+  const [convite, definirConvite] = useState<string | null | undefined>(undefined)
   const [aviso, definirAviso] = useState<string | null>(null)
   const [auto, definirAuto] = useState<{ chave: string; desde: number } | null>(null)
   const [estouro, definirEstouro] = useState<{ chave: string; x: number; y: number; n: number } | null>(null)
@@ -93,6 +94,14 @@ export function Shorts() {
     document.title = 'Shorts | Orto Questões'
     return () => { document.body.classList.remove('sh-travado'); enviarVistas() }
   }, [])
+
+  /* ---------- o painel sabe quem está nos Shorts: um sinal ao abrir e a cada minuto com a tela à vista ---------- */
+  useEffect(() => {
+    if (!logado) return
+    enviarVistas(true)
+    const t = setInterval(() => { if (document.visibilityState === 'visible') enviarVistas(true) }, 60_000)
+    return () => clearInterval(t)
+  }, [logado])
 
   /* ---------- índice, histórico e saldo ---------- */
   useEffect(() => { carregarIndiceShorts().then(definirItens).catch(() => definirFalhou(true)) }, [])
@@ -129,7 +138,6 @@ export function Shorts() {
   useEffect(() => {
     if (!itens || !sincronizado || pronto.current) return
     pronto.current = true
-    if (!logado && feitasVisitante() >= LIMITE_VISITANTE) { definirSlides([{ chave: novaChave(), tipo: 'conta' }]); return }
     if (saldo && !saldo.ilimitado && saldo.feitas >= saldo.limite) { definirSlides([{ chave: novaChave(), tipo: 'limite' }]); return }
     const inicial = idInicial ? itens.find((q) => q.id === idInicial) : null
     const base: Slide[] = inicial ? [{ chave: novaChave(), tipo: 'questao', item: inicial, revisao: null }] : []
@@ -137,7 +145,7 @@ export function Shorts() {
   }, [itens, sincronizado, saldo, logado, idInicial, proximas, ajustes])
 
   // Mantém sempre três questões à frente.
-  const bloqueado = slides.some((s) => s.tipo === 'limite' || s.tipo === 'conta')
+  const bloqueado = slides.some((s) => s.tipo === 'limite')
   useEffect(() => {
     if (!pronto.current || bloqueado || !slides.length) return
     if (slides.length - 1 - atual < 3) definirSlides((s) => proximas(s, 3, ajustes))
@@ -225,7 +233,8 @@ export function Shorts() {
   const responder = useCallback((s: Extract<Slide, { tipo: 'questao' }>, exibida: Letra) => {
     const q = questoes[s.item.id]
     if (!q || feitos[s.chave]) return
-    if (!logado && feitasVisitante() >= LIMITE_VISITANTE) { avisar('Crie sua conta grátis para continuar'); return }
+    // Sem conta, a pessoa vê as questões à vontade, mas responder pede a conta (Tales, 25/11/2026).
+    if (!logado) { definirConvite(q.id); return }
     if (saldo && !saldo.ilimitado && saldo.feitas >= saldo.limite) { avisar('Seus Shorts grátis de hoje acabaram'); return }
     const ordem = ordens[s.chave] ?? null
     const original = letraGuardada(ordem, exibida) as Letra
@@ -245,10 +254,7 @@ export function Shorts() {
       return i < 0 ? lista : [...lista.slice(0, i + 1), fim]
     })
     const nestaAbertura = Object.keys(feitos).length + 1
-    if (!logado) {
-      somarVisitante()
-      if (feitasVisitante() >= LIMITE_VISITANTE) cortar({ chave: novaChave(), tipo: 'conta' })
-    } else {
+    {
       if (saldo && !saldo.ilimitado && saldo.feitas + 1 >= saldo.limite) cortar({ chave: novaChave(), tipo: 'limite' })
       if (saldo) definirSaldo({ ...saldo, feitas: saldo.feitas + 1 })
       enviarResposta(q.id, certo, !!s.revisao, h[q.id].voltaEm, ms / 1000).then((novo) => {
@@ -269,7 +275,7 @@ export function Shorts() {
 
   /* ---------- coração ---------- */
   const coracao = useCallback((id: string, ligar?: boolean, onde?: { x: number; y: number; chave: string }) => {
-    if (!logado) { avisar('Entre na sua conta para dar coração'); return }
+    if (!logado) { definirConvite(id); return }
     const tinha = meusCoracoes.has(id)
     const novo = ligar ?? !tinha
     if (novo === tinha) { if (onde && novo) definirEstouro({ ...onde, n: Date.now() }); return }
@@ -310,6 +316,7 @@ export function Shorts() {
     function tecla(e: KeyboardEvent) {
       if (zoom) { if (e.key === 'Escape') definirZoom(null); return }
       if (configAberta) { if (e.key === 'Escape') definirConfigAberta(false); return }
+      if (convite !== undefined) { if (e.key === 'Escape') definirConvite(undefined); return }
       if ((e.target as HTMLElement)?.closest?.('textarea, input')) return
       const s = slides[atual]
       const k = e.key.toLowerCase()
@@ -322,13 +329,13 @@ export function Shorts() {
     }
     window.addEventListener('keydown', tecla)
     return () => window.removeEventListener('keydown', tecla)
-  }, [zoom, configAberta, slides, atual, feitos, ir, fechar, responder, coracao])
+  }, [zoom, configAberta, convite, slides, atual, feitos, ir, fechar, responder, coracao])
 
   /* ---------- placar ---------- */
   const listaFeitos = Object.values(feitos)
   const acertos = listaFeitos.filter((f) => f.certo).length
-  const limiteMostrado = logado ? (saldo && !saldo.ilimitado ? saldo.limite : null) : LIMITE_VISITANTE
-  const feitasHoje = logado ? (saldo?.feitas ?? listaFeitos.length) : feitasVisitante()
+  const limiteMostrado = logado && saldo && !saldo.ilimitado ? saldo.limite : null
+  const feitasHoje = saldo?.feitas ?? listaFeitos.length
 
   const nomeTema = useCallback((slug: string) => (indice as Indice | null)?.temas.find((t) => t.slug === slug)?.nome ?? '', [indice])
 
@@ -359,7 +366,6 @@ export function Shorts() {
             return <MuroLimite key={s.chave} indice={i} acertos={acertos} feitas={listaFeitos.length} limite={saldo?.limite ?? 5} coracoes={meusCoracoes.size}
               ms={listaFeitos.length ? listaFeitos.reduce((a, f) => a + f.ms, 0) / listaFeitos.length : 0} liberaEm={saldo?.liberaEm ?? null} />
           }
-          if (s.tipo === 'conta') return <MuroConta key={s.chave} indice={i} />
           return <FimDeBloco key={s.chave} indice={i} ids={s.ids} feitos={feitos} slides={slides} nomeTema={nomeTema} aoContinuar={() => ir(1)} />
         })}
       </div>
@@ -367,7 +373,13 @@ export function Shorts() {
       <div className="sh-pl-topo">
         <button type="button" className="sh-pl-x" onClick={fechar} aria-label="Fechar os Shorts"><IconeSh nome="x" /></button>
         <div className="sh-pl-progresso">
-          {limiteMostrado !== null && !ilimitado ? (
+          {!logado ? (
+            <div className="sh-prog-assinante">
+              <button type="button" className="sh-pilula sh-pilula--botao" onClick={() => definirConvite(slides[atual]?.tipo === 'questao' ? (slides[atual] as Extract<Slide, { tipo: 'questao' }>).item.id : null)}>
+                <SimboloShorts tamanho={16} />Crie a conta para responder
+              </button>
+            </div>
+          ) : limiteMostrado !== null && !ilimitado ? (
             <>
               <div className="sh-segmentos">{Array.from({ length: limiteMostrado }, (_, i) => {
                 const f = listaFeitos[i - Math.max(0, feitasHoje - listaFeitos.length)]
@@ -392,6 +404,7 @@ export function Shorts() {
         <button type="button" onClick={() => ir(1)} disabled={atual >= slides.length - 1} aria-label="Próxima questão"><IconeSh nome="baixo" /></button>
       </div>
 
+      {convite !== undefined && <ConviteConta id={convite} aoFechar={() => definirConvite(undefined)} />}
       {configAberta && <Ajustes inicial={ajustes} aoFechar={() => definirConfigAberta(false)} aoAplicar={aplicarAjustes} />}
       {zoom && (
         <div className="sh-zoom" role="dialog" aria-label="Imagem ampliada">
@@ -735,26 +748,26 @@ function MuroLimite({ indice, acertos, feitas, limite, coracoes, ms, liberaEm }:
   )
 }
 
-function MuroConta({ indice }: { indice: number }) {
-  const voltar = encodeURIComponent('/shorts')
+/** Sem conta: a questão aparece inteira, mas responder abre este convite (e volta para a mesma questão depois). */
+function ConviteConta({ id, aoFechar }: { id: string | null; aoFechar: () => void }) {
+  const voltar = encodeURIComponent(id ? `/shorts/${id}` : '/shorts')
   return (
-    <section className="sh-tela sh-muro" data-indice={indice}>
-      <div className="sh-palco"><div className="sh-coluna">
-        <span className="sh-muro-fundo" style={{ backgroundImage: `url("${recurso(ARTE_TEORIA)}")` }} />
-        <div className="sh-muro-conteudo">
-          <span className="sh-coruja sh-coruja--aceno" aria-hidden="true" />
-          <h2>Gostou? Tem mais Shorts hoje, de graça</h2>
-          <p className="sh-muro-apoio">Crie sua conta em um minuto para continuar deslizando. Não pede cartão.</p>
-          <ul className="sh-muro-lista">
-            <li><IconeSh nome="visto" />Shorts grátis todo dia</li>
-            <li><IconeSh nome="visto" />Seus acertos e erros no desempenho</li>
-            <li><IconeSh nome="visto" />Comentário completo de cada questão</li>
-          </ul>
-          <a className="sh-botao sh-botao--ouro sh-botao--largo" href={href(`/conta?modo=criar&voltar=${voltar}`)}>Criar conta grátis</a>
-          <a className="sh-botao sh-botao--fantasma sh-botao--largo" href={href(`/conta?voltar=${voltar}`)}>Já tenho conta, entrar</a>
-        </div>
-      </div></div>
-    </section>
+    <div className="sh-convite" onClick={(e) => { if (e.target === e.currentTarget) aoFechar() }}>
+      <div className="sh-convite-caixa" role="dialog" aria-modal="true" aria-labelledby="sh-convite-titulo">
+        <button type="button" className="sh-pl-x sh-convite-x" onClick={aoFechar} aria-label="Fechar o convite"><IconeSh nome="x" /></button>
+        <span className="sh-coruja sh-coruja--aceno" aria-hidden="true" />
+        <h2 id="sh-convite-titulo">Crie sua conta para responder</h2>
+        <p className="sh-muro-apoio">Leva um minuto e não pede cartão. Depois você volta direto para esta questão.</p>
+        <ul className="sh-muro-lista">
+          <li><IconeSh nome="visto" />Shorts grátis todo dia</li>
+          <li><IconeSh nome="visto" />O porquê de cada alternativa, logo depois de responder</li>
+          <li><IconeSh nome="visto" />Seus acertos e erros no desempenho</li>
+        </ul>
+        <a className="sh-botao sh-botao--ouro sh-botao--largo" href={href(`/conta?modo=criar&voltar=${voltar}`)}>Criar conta grátis</a>
+        <a className="sh-botao sh-botao--fantasma sh-botao--largo" href={href(`/conta?voltar=${voltar}`)}>Já tenho conta, entrar</a>
+        <button type="button" className="sh-convite-continuar" onClick={aoFechar}>Continuar só olhando</button>
+      </div>
+    </div>
   )
 }
 

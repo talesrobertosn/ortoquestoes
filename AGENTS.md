@@ -101,7 +101,7 @@ jornada") e o item Shorts na barra de baixo do celular. Sorteio e revisão escon
 `fixtures/testar_shorts.mjs`): imagem com mais chance (meta de ~60%, sem roteiro fixo, só a primeira é sempre com imagem)
 e volta surpresa em 3 a 7 dias. Índice leve gerado por `scripts/gerar_shorts.py` (roda no deploy). Servidor em
 `supabase/migrations/20261125220000_shorts.sql`: cota grátis de 5 por dia (`configuracao_comercial.limite_diario_shorts`),
-histórico, corações (que gravam nota 10 na avaliação do comentário) e o painel (Conteúdo › Shorts). A resposta nos Shorts
+histórico, corações (que gravam nota 10 na avaliação do comentário) e o painel (Conteúdo › Shorts), com a lista de quem está vendo agora (`20261125233000_shorts_pessoas.sql`). Sem conta, a pessoa vê as questões, mas responder pede a conta. A resposta nos Shorts
 conta no desempenho com a marca `sh` em `respondidas` e fica fora da fila da Revisão.
 
 ## Flashcards (Torneio de Flashcards, desde 12/10/2026)

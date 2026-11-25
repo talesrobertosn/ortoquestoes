@@ -83,7 +83,7 @@ export function PrateleiraShorts() {
 
 function textoCota(assinante: boolean, logado: boolean) {
   if (assinante) return <><b>Sem limite</b> na sua assinatura</>
-  if (!logado) return <><b>1 grátis</b>, sem cadastro</>
+  if (!logado) return <><b>Veja grátis</b> · responda com a conta</>
   return <><b>{LIMITE_GRATIS_SHORTS} grátis</b> por dia</>
 }
 
