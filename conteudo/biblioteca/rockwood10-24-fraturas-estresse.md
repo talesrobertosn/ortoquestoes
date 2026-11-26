@@ -255,7 +255,7 @@ A dor aparece **só durante a atividade**, de **início insidioso**, sem trauma 
 Cintilografia de uma remadora de 20 anos com dor torácica baixa à esquerda: fratura por estresse da sexta costela na linha axilar média.
 !fim
 
-!questoes central=trauma-1084 relacionadas=conceitos-basicos-0087,quadril-0156 treino=trauma-1241,trauma-1242
+!questoes central=trauma-1084 relacionadas=conceitos-basicos-0087,quadril-0156 treino=trauma-1241,trauma-1242,trauma-1798,trauma-1799,trauma-1800
 conceito: Na fratura por estresse, a cintilografia é positiva, focal, nas três fases; a canelite capta de forma linear e difusa só na fase tardia. A RM é o exame mais sensível e específico; a radiografia é tardia e pouco sensível.
 como: O TARO 2018 pediu o padrão da cintilografia na fratura por estresse da tíbia (focal nas 3 fases, contra focal só na tardia e difuso). Uma prova sem ano cobrou o que cada fase do tecnécio mostra; o TARO 2024 pôs a fratura por estresse do fêmur proximal como distrator numa idosa com dor lateral e testes de rotação externa e abdução resistidas (síndrome dolorosa do grande trocânter).
 armadilha: Focal só na fase tardia: esse padrão tardio é o da periostite; e ela é difusa, não focal.

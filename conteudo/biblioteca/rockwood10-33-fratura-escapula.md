@@ -498,7 +498,7 @@ alerta: No TARO 2009 (trauma-1144), sem gabarito registrado: o capítulo não co
 - **Tomografia:** é hoje o **exame padrão**. Os cortes axiais avaliam a fossa e mostram fraturas sem desvio do coracoide e do acrômio; as reconstruções 2D coronais, a superfície articular (sobretudo na base do coracoide); a **3D** define o padrão, com **subtração** de costelas, clavícula e úmero. Vista **posterior** para o corpo e a espinha, **anterior** para o colo (diferencia anatômico de cirúrgico), e **lateral com subtração da cabeça do úmero** para a glenoide.
 - Ressonância e ultrassom: só excepcionalmente, para partes moles.
 
-!questoes relacionadas=ombro-cotovelo-0045 treino=trauma-1307,trauma-1308
+!questoes relacionadas=ombro-cotovelo-0045 treino=trauma-1307,trauma-1308,trauma-1772
 conceito: Neer I (AP verdadeira) mede o ângulo glenopolar; Neer II (perfil em Y) mede angulação e translação da borda lateral; a tomografia com reconstrução 3D e subtração é o padrão.
 como: O TARO 2015 perguntou a posição normal da cabeça do úmero no perfil da escápula (central). O capítulo usa o perfil para as fraturas do corpo e não descreve a leitura da cabeça, mas a incidência é a mesma.
 !fim

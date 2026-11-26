@@ -219,7 +219,7 @@ As fraturas-luxações não cabem nas classificações acima e precisam ser iden
 
 O tipo V perde os dois sistemas estabilizadores ao mesmo tempo (colaterais e cruzados) e é o mais instável. A eminência fraturada, mais comum no tipo V, prevê pior amplitude de movimento aos 6 e 12 meses e recuperação mais lenta (KONDA). O tipo II se diferencia do SCHATZKER IV porque o traço atravessa a espinha até o compartimento oposto e o côndilo fraturado continua alinhado com o fêmur.
 
-!questoes central=trauma-0558 treino=trauma-1671
+!questoes central=trauma-0558 treino=trauma-1671,trauma-1801
 conceito: HOHL e MOORE: I coronal, II côndilo inteiro, III avulsão da borda (30% neurovascular), IV compressão da borda, V quatro partes (cerca de 50% neurovascular).
 como: O SBOT-SP pediu o tipo numa gravura (avulsão da borda, tipo III); a gêmea leva a pergunta de risco vascular do TARO 2013 para essa classificação.
 armadilha: Tipo II com 50%: os 50% são de lesão do colateral oposto; o neurovascular do tipo II é 12%.
@@ -373,7 +373,7 @@ Ao elevar o fragmento, sobra um vazio (figura 62-31): as trabéculas foram compa
 
 A regra técnica: com cimento de fosfato de cálcio, **os parafusos vão antes do cimento**, para não quebrar o material endurecido; enxerto autólogo ou homólogo deve ser **bem impactado** sob o fragmento. Na tabela de armadilhas, contra o recalque: parafusos de jangada perto da superfície, colocados antes do preenchimento se possível, e preenchimento adequado.
 
-!questoes treino=trauma-1678
+!questoes treino=trauma-1678,trauma-1816
 conceito: O fosfato de cálcio é mais rígido à compressão que o osso esponjoso, mas quebradiço depois de endurecer; os parafusos de jangada vão antes do cimento.
 como: Ainda não caiu no planalto; a banca carimba a propriedade de cada enxerto e substituto nas questões de conceitos básicos.
 armadilha: Cimento como osteoindutor: os substitutos de fosfato de cálcio são osteocondutores.

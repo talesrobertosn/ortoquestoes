@@ -226,7 +226,7 @@ No tipo III, os livros divergem no detalhe. O Rockwood (figura 64-6) descreve im
 Classificação de RÜEDI e ALLGÖWER: tipo I, fratura de clivagem sem desvio importante; tipo II, desvio importante da superfície articular sem cominuição; tipo III, impacção e cominuição da superfície articular.
 !fim
 
-!questoes central=trauma-1193 treino=trauma-1697
+!questoes central=trauma-1193 treino=trauma-1697,trauma-1817
 conceito: Na classificação de RÜEDI e ALLGÖWER, o tipo III (impacção e cominuição articular) é o de pior prognóstico; o II tem desvio sem cominuição.
 como: O TARO 2009 deu os tipos I a IV (sem tipo IV na classificação); a questão está sem gabarito oficial no acervo, e o capítulo sustenta o tipo III.
 armadilha: Tipo IV: não existe; a classificação tem três tipos.

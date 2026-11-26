@@ -235,7 +235,7 @@ ROCKWOOD ampliou, a partir de TOSSY (1963), a classificação mais aceita, pela 
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 65, p. 2947 e 2948), mede pela espessura: II com a clavícula acima do acrômio **menos que a sua espessura**, III com **pelo menos uma espessura** e desinserção do deltoide distal, V com deltoide e trapézio soltos da **metade distal** e **100% a 300%**. O Sizínio repete III com 25 a 100% e V com 100 a 300%.
 
-!questoes central=ombro-cotovelo-0540
+!questoes central=ombro-cotovelo-0540 treino=trauma-1777
 conceito: No tipo III de ROCKWOOD, AC e CC estão rotos, a clavícula fica acima do acrômio com espaço CC 25 a 100% maior e o ombro caído é redutível (teste do encolher); o V passa de 100% e é irredutível.
 como: O ENARE R4 2025 descreveu um judoca com ombro caído, clavícula proeminente mas redutível e desvio superior de 80% (tipo III).
 armadilha: Ler "80%" como subluxação do tipo II (menor que 50% da largura, com CC normal) ou pensar no V pela aparência; a redutibilidade e o desvio abaixo de 100% fecham o III.

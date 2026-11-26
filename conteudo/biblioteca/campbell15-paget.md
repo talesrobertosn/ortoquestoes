@@ -203,7 +203,7 @@ A mesma lista do Campbell ajuda a ler as alternativas da questão do TEOT: **flu
 - **Vértebra de marfim**: o Dahlin's Bone Tumors, 6ª ed. (cap. 26), escreve que, às vezes, o corpo vertebral fica **completamente esclerosado**, produzindo **vértebra de marfim**, cujo diferencial inclui **metástase de carcinoma, linfoma maligno e PAGET**; a pista para o PAGET é o **aumento característico do osso** (p. 364).
 - **Fase lítica vertebral**: o Dahlin mostra um corpo vertebral em fase lítica que "parece ter desaparecido" e que não sugere PAGET de forma alguma (p. 366); é por isso que a fase lítica é a que mais engana.
 
-!questoes central=tumores-0126
+!questoes central=tumores-0126 treino=osteometabolicas-0134
 conceito: O Campbell (cap. 46) escreve que o PAGET é uma forma de estenose espinal que responde bem ao tratamento clínico com calcitonina, porque a compressão vem do osso vertebral aumentado e ativo, comandado pelo osteoclasto.
 como: TEOT 2023 colocou o PAGET entre outras causas de estenose adquirida da mesma lista do Campbell (fluorose, pseudogota e DISH).
 armadilha: Marcar fluorose, que o Campbell cita junto com o PAGET como causa de estenose central ou lateral; só o PAGET tem a resposta à calcitonina descrita.
@@ -326,7 +326,7 @@ A comparação está na literatura médica aberta. A hiperfosfatasia idiopática
 
 As outras alternativas se afastam pelo mecanismo: a **osteomalácia** e o **raquitismo** são defeitos de **mineralização** (Rockwood, cap. 4); a **osteogênese imperfeita** é um defeito de colágeno com osso fino e frágil.
 
-!questoes central=tumores-0314
+!questoes central=tumores-0314 treino=osteometabolicas-0135
 conceito: A hiperfosfatasia idiopática (PAGET juvenil) é uma osteopatia recessiva de remodelação acelerada e fosfatase alcalina muito alta, por falta de osteoprotegerina, que compartilha o fenótipo do PAGET (WHYTE 2002; RALSTON 2008); o Tachdjian a lista como osteoectasia com hiperfosfatasia.
 como: TARO 2026 ofereceu osteomalácia, PAGET, raquitismo nutricional e osteogênese imperfeita.
 armadilha: Marcar osteomalácia ou raquitismo por causa da fosfatase alcalina alta; nesses o defeito é de mineralização, e não de remodelação acelerada.

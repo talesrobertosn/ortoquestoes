@@ -86,7 +86,7 @@ Nenhum exame isolado confirma a AR: o diagnóstico junta clínica, laboratório 
 
 Os livros de ortopedia conferidos não trazem a **classe funcional** da AR; o Campbell (cap. 15, p. 661) só cita a "AR classe IV" como fator de risco de infecção na prótese de cotovelo. A definição vem dos critérios revisados do American College of Rheumatology de 1991 (HOCHBERG et al., Arthritis Rheum 1992;35:498, PMID 1575785), que separam três tipos de atividade: **autocuidado** (vestir, comer, tomar banho, higiene, ir ao banheiro), **profissional** e **lazer**. **Classe I**: faz todas. **Classe II**: faz autocuidado e trabalho, limitada no lazer. **Classe III**: faz o autocuidado, mas é limitada no trabalho e no lazer. **Classe IV**: limitada até no autocuidado. O paciente que ainda se cuida sozinho, mas executa pouca atividade além disso, é classe III.
 
-!questoes central=osteometabolicas-0078 relacionadas=osteometabolicas-0008
+!questoes central=osteometabolicas-0078 relacionadas=osteometabolicas-0008 treino=osteometabolicas-0132,osteometabolicas-0133
 conceito: A AR exige 4 de 7 critérios: rigidez matinal, artrite de 3 ou mais áreas, artrite das articulações da mão, simetria, nódulos, FR positivo e erosões radiográficas de mão e punho.
 como: O TARO 2013 pediu qual item é critério diagnóstico (a artrite das articulações da mão), contra rigidez noturna, assimetria e duas articulações; o TARO 2016 cobrou a classe funcional do paciente limitado que executa pouca atividade diária (classe III).
 armadilha: Trocar rigidez matinal por noturna, aceitar acometimento assimétrico ou contar 2 articulações em vez de 3 ou mais áreas.
@@ -274,7 +274,7 @@ Há uma nuance que vale conhecer para não estranhar a imagem do trauma. Ao fala
 
 O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 2.4), não descreve o padrão de ossificação, mas mostra a consequência cirúrgica de um disco que continua sendo disco. A osteotomia de **SMITH-PETERSEN** (1945) foi criada para a espondilite anquilosante: uma **cunha de fechamento posterior** que alonga a coluna anterior pela **distração do disco**, com **10 a 15° de lordose por nível** (cada milímetro de correção rende 1°), e que **só pode ser feita com discos móveis**. A de PONTE (1984, para o SCHEUERMANN) só encurta atrás e dá 5 a 10° por nível; a **subtração pedicular** encurta as três colunas, corrige 30 a 40° por nível e equivale a três SMITH-PETERSEN.
 
-!questoes central=coluna-0012
+!questoes central=coluna-0012 treino=osteometabolicas-0131
 conceito: Na espondilite anquilosante ossificam o ânulo fibroso, as facetas articulares, os ligamentos interespinhosos e supraespinhosos e o ligamento amarelo; o disco e o ligamento longitudinal anterior são poupados (Campbell, cap. 45, p. 1769; cap. 46, p. 1847).
 como: O TARO 2018 perguntou o que o processo de ossificação poupa, entre ânulo fibroso, faceta articular, ligamento interespinhoso e ligamento longitudinal anterior.
 armadilha: Achar que a ponte da coluna em bambu é o ligamento longitudinal anterior ossificado; a ponte é o ânulo ossificado na margem do corpo (osteófito em ponte marginal), e as três outras alternativas ossificam.
@@ -347,7 +347,7 @@ A lógica é o contrário da AR: a AR começa nas MF e no punho; a psoriásica g
 
 Na criança, o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 22, p. 939 e 940), exige artrite por **pelo menos 6 semanas** com a erupção típica ou, sem ela, **dois** de: **dactilite, pitting ou onicólise, psoríase em parente de primeiro grau**. A **história familiar é positiva em 40%**, é **ligeiramente mais comum em meninas**, a **dactilite** (dedo em salsicha) vem da inflamação da bainha dos flexores e a **uveíte** costuma ser silenciosa.
 
-!questoes central=osteometabolicas-0066 relacionadas=osteometabolicas-0073
+!questoes central=osteometabolicas-0066 relacionadas=osteometabolicas-0073 treino=osteometabolicas-0130
 conceito: A erosão dos tufos terminais das falanges distais (acro-osteólise) é sinal radiográfico da artrite psoriásica, junto com o afilamento das falanges, o lápis na xícara, a anquilose de pequenas articulações isoladas, a predileção pelas IF e a preservação das MF.
 como: Uma prova de Ortopedia e o TARO 2010 perguntaram, com o mesmo enunciado, de qual artrite as erosões das tuberosidades das falanges distais são características, contra reumatoide, lúpica e gotosa.
 armadilha: Marcar reumatoide por associar erosão a AR; a AR erode a margem articular e começa nas MF, e o lúpus deforma sem erodir.

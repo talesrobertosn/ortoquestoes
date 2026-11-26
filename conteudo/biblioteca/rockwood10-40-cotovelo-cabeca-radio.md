@@ -192,7 +192,7 @@ A maioria vem de queda com a mão espalmada, de baixa energia; esporte e acident
 - **Subluxação rotatória posterolateral:** a cabeça escorrega contra o capítulo e cisalha a sua **parte anterior** (fratura articular parcial), com ruptura do **colateral lateral**.
 - **Carga axial:** a cabeça impacta no capítulo; com mais energia, fratura o **coronoide** ou rompe a **membrana interóssea** e a **radioulnar distal** (lesão de Essex-Lopresti).
 
-!questoes central=trauma-0268 relacionadas=trauma-0690,trauma-0805
+!questoes central=trauma-0268 relacionadas=trauma-0690,trauma-0805 treino=trauma-1773,trauma-1781
 conceito: A carga em valgo comprime a cabeça do rádio contra o capítulo e pode romper o colateral medial; o cisalhamento posterolateral fratura a parte anterior da cabeça.
 como: Questões do TECOC e do TARO 2025 pediram o quadrante das fraturas parciais (anterolateral). O capítulo dá o quadrante com esse nome na seção do coronoide (classificação de O'DRISCOLL): na tríade terrível, o mecanismo de instabilidade rotatória posterolateral cisalha a parte anterolateral da cabeça do rádio e a ponta do coronoide durante a luxação. Na seção da cabeça do rádio, o mesmo raciocínio aparece como cisalhamento da porção anterior na subluxação posterolateral.
 armadilha: "O exame da pronossupinação não importa": é o contrário, o bloqueio da rotação é a principal indicação cirúrgica.
@@ -320,7 +320,7 @@ armadilha: Material de síntese saliente: é causa mecânica possível, menos co
 
 Na fase aguda, fixa-se ou troca-se a cabeça e prende-se temporariamente a radioulnar distal com fios, com ou sem reconstrução da membrana ou reparo da fibrocartilagem triangular. Depois de uma ressecção, 2 a 3 mm de migração proximal são esperados; muito mais que isso indica as estruturas distais rotas. O capítulo lamenta que **a maioria dos pacientes chega tarde**, depois de a cabeça do rádio já ter sido ressecada. Na **lesão crônica**, as opções são antebraço de um osso só, **prótese da cabeça com encurtamento da ulna** (imediato ou em segundo tempo) ou reconstrução da membrana com prótese. O capítulo 41 do mesmo Rockwood chama de **tratamento ideal** da Essex-Lopresti crônica a **troca da cabeça do rádio com encurtamento da ulna**, imediato ou em segundo tempo, ou com reconstrução da membrana interóssea.
 
-!questoes central=trauma-0271,trauma-0819,trauma-0028,trauma-0431,trauma-0106 relacionadas=ombro-cotovelo-0474 treino=trauma-1419,ombro-cotovelo-0680
+!questoes central=trauma-0271,trauma-0819,trauma-0028,trauma-0431,trauma-0106 relacionadas=ombro-cotovelo-0474 treino=trauma-1419,ombro-cotovelo-0680,trauma-1782
 conceito: Essex-Lopresti é a fratura da cabeça do rádio com lesão da membrana interóssea e da radioulnar distal; a pista clínica é a dor no punho, e a crônica se trata com prótese da cabeça e encurtamento da ulna.
 como: O TARO pergunta a definição quase todo ano com distratores parecidos (Monteggia, Galeazzi, radioulnar proximal); em 2023 pediu o sinal clínico e em 2017, a conduta na crônica.
 armadilha: Fratura da ulna com luxação da cabeça do rádio: é Monteggia.
@@ -478,7 +478,7 @@ O olécrano fratura por **trauma direto**; as fraturas-luxações vêm de queda 
 
 Cada tipo é subdividido em **A, sem cominuição**, e **B, com cominuição**. O tipo I costuma ser tratado sem cirurgia; II e III, com cirurgia. As **cominutivas (B) vão melhor com placa**; as sem cominuição (A) aceitam banda de tensão.
 
-!questoes central=trauma-0862,trauma-0759,trauma-0879 relacionadas=trauma-0450 treino=ombro-cotovelo-0665
+!questoes central=trauma-0862,trauma-0759,trauma-0879 relacionadas=trauma-0450 treino=ombro-cotovelo-0665,trauma-1783
 conceito: A classificação de Mayo do olécrano usa desvio, estabilidade umeroulnar e cominuição; o tipo IIB (desviado, estável, cominutivo) se trata com placa.
 como: O TARO 2011 pediu os três critérios; TEOT 2025 e TARO 2010 pediram o tratamento do 2B, com a banda de tensão como armadilha.
 armadilha: Banda de tensão no 2B: a banda precisa de traço simples para comprimir; com cominuição, ela encurta e desaba a incisura.

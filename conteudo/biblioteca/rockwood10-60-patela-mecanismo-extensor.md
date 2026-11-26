@@ -88,7 +88,7 @@ A competência do mecanismo extensor se testa com a **elevação da perna estend
 
 A tomografia é a outra via para a mesma pergunta. O capítulo de imagem do Rockwood (cap. 7) diz que a TC identifica artrotomia traumática e fratura exposta com **acurácia excelente**, pelo **ar intra-articular**, e que vem sendo usada cada vez mais no lugar do teste salino: na série de KONDA, com 37 pacientes que fizeram os dois exames, a TC teve **100%** de sensibilidade e especificidade, contra **92%** do teste de carga salina. O Campbell (cap. 59, p. 2620) mantém o teste salino para a dúvida e avisa que ele pode falhar nas artrotomias muito pequenas.
 
-!questoes central=trauma-0069,trauma-0240 treino=trauma-1643,trauma-1645,trauma-1234
+!questoes central=trauma-0069,trauma-0240 treino=trauma-1643,trauma-1645,trauma-1234,trauma-1804
 conceito: Pouco derrame com defeito palpável indica ruptura retinacular; a extensão ativa testa os retináculos, e a dor da hemartrose se contorna com punção e anestésico; ferida sobre a patela pede teste de carga salina com 150 mL.
 como: O TARO 2021 perguntou o que sugere a ausência de derrame significativo com defeito ósseo palpável (lesão retinacular, contra ligamento patelar, tendão quadricipital e colateral fibular). O TARO 2022 pediu a conduta diante de ferida que pode ser fratura exposta oculta: aspirar o derrame e injetar soro para ver a saída pelo ferimento, contra exploração no pronto-socorro, contraste e tomografia.
 armadilha: Tomografia para ver a comunicação com o meio externo: a conduta que o capítulo 60 descreve é o teste de carga salina, à beira do leito. A TC com ar intra-articular não está errada em si: o Rockwood (cap. 7) dá a ela acurácia excelente (100% contra 92% do teste salino na série de KONDA).
@@ -132,7 +132,7 @@ Os outros livros dão números diferentes para a bilateralidade e para a frequê
 
 Outras situações próprias: a **fratura em manga** (sleeve) do esqueleto imaturo, avulsão do polo distal com grande parte da cartilagem articular; a **fratura osteocondral** do fêmur ou da patela, na estrelada de alta energia ou na luxação, que a radiografia pode não mostrar (RM com sequências de cartilagem); e a **fratura após retirada de enxerto osso-tendão-osso** para o LCA, de 0,2% numa série de mais de 1.700 reconstruções, em geral por queda ou reabilitação agressiva no pós-operatório, com fixação rígida recomendada mesmo com pouco desvio.
 
-!questoes central=trauma-0661,trauma-0570 treino=trauma-1646
+!questoes central=trauma-0661,trauma-0570 treino=trauma-1646,trauma-1803
 conceito: Patela bipartida: cerca de 8%, quase sempre bilateral, fragmento superolateral corticalizado, sem dor e com extensor íntegro; radiografia contralateral confirma.
 como: O TARO 2024 pediu o que ajuda no diagnóstico diferencial (radiografia contralateral, por ser bilateral e superolateral, contra superomedial e tomografia por ser unilateral). O TEOT 2024 mostrou a radiografia de um homem de 32 anos com trauma direto, pouca dor e extensor íntegro, com a bipartida como diagnóstico diferencial mais provável.
 armadilha: Superomedial: o fragmento é superolateral.

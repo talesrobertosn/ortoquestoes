@@ -69,7 +69,7 @@ armadilha: Valores intermediários (40%, 60%, 80%): o estudo citado mostrou 100%
 
 A **angiotomografia** virou o exame de triagem: o contraste entra por uma veia do braço, a radiação é **um quarto** da arteriografia convencional e a sensibilidade e a especificidade ficam perto de 100%. A desvantagem é o contraste: se o paciente já recebeu contraste em tomografias de abdome e pelve, costuma-se esperar **4 a 6 horas**. A **arteriografia convencional**, antigo padrão-ouro, tem sensibilidade de 95%, especificidade de 93% e 5% a 7% de falso-positivos; é invasiva e cara, e hoje é usada sobretudo na sala pelo cirurgião vascular. Muitas lesões não ocluem a artéria: **lesões da íntima** são comuns, podem ser benignas e se acompanham com exames clínicos seriados.
 
-!questoes central=trauma-0802 treino=trauma-1620
+!questoes central=trauma-0802 treino=trauma-1620,trauma-1807
 conceito: A lesão da poplítea na luxação anterior é por tração (estiramento da artéria fixa); na posterior, por compressão direta da tíbia.
 como: O TARO 2025 perguntou em que direção de luxação a lesão da poplítea é mais comum, com as quatro direções como alternativas.
 armadilha: Luxação posterior: a compressão direta pela tíbia também lesa a artéria, mas o Campbell 15 (cap. 50, p. 2110) diz que a lesão da poplítea é especialmente comum na luxação anterior, pelo estiramento da artéria fixa; foi o gabarito oficial do TARO 2025.
@@ -134,7 +134,7 @@ Completam o canto o **ligamento fabelofibular** (borda distal do braço capsular
 Anatomia posterolateral do joelho: colateral lateral, ligamento popliteofibular, tendão do poplíteo e cabeça lateral do gastrocnêmio.
 !fim
 
-!questoes relacionadas=joelho-0342,joelho-0294 treino=joelho-0355
+!questoes relacionadas=joelho-0342,joelho-0294 treino=joelho-0355,trauma-1806
 conceito: As estruturas-chave do canto posterolateral são o colateral fibular (lateral), o tendão do poplíteo e o ligamento popliteofibular.
 como: O SBOT-SP pediu os constituintes do canto misturando o cruzado posterior e o poplíteo oblíquo (que é posterior e vem do semimembranáceo); o TARO 2009 pediu as estruturas mais importantes a reconstruir, atribuindo a lista a Warren. O acervo não registra gabarito oficial dessas duas provas; o capítulo do Rockwood dá exatamente o trio colateral fibular, poplíteo e popliteofibular, sem citar Warren. O nome vem do Campbell 15 (cap. 50): WARREN e colaboradores batizaram o ligamento popliteofibular (p. 1989), e o livro recomenda, no agudo e no crônico, reparar ou reconstruir o colateral lateral, o tendão do poplíteo com sua inserção e o popliteofibular (p. 2061), com a técnica de VELTRI e WARREN na Fig. 50.91 (p. 2063).
 armadilha: Ligamento poplíteo oblíquo: é uma expansão do semimembranáceo na cápsula posterior, não do canto posterolateral.
@@ -300,7 +300,7 @@ Três sinais pequenos valem muito:
 - **Sinal arqueado:** uma linha lucente na **cabeça da fíbula** no AP, que é uma **fratura-avulsão da cabeça da fíbula**. Quando presente, é **patognomônico de lesão do canto posterolateral** (em geral a avulsão do complexo arqueado; o colateral fibular e o bíceps podem estar juntos).
 - **Fratura de Segond:** avulsão ligada ao **ligamento anterolateral** e à cápsula anterolateral (componente meniscotibial). Numa série, 48 de 49 joelhos luxados tinham lesão do anterolateral na ressonância, mas o capítulo pede cautela antes de reconstruí-lo nesses pacientes.
 
-!questoes central=trauma-0225 relacionadas=joelho-0021,trauma-1047
+!questoes central=trauma-0225 relacionadas=joelho-0021,trauma-1047 treino=trauma-1805
 conceito: O sinal arqueado é a avulsão da cabeça da fíbula e indica lesão do canto posterolateral; a fratura de Segond é a avulsão anterolateral ligada ao ligamento anterolateral, estrutura extracapsular.
 como: O TARO 2022 pediu o que o sinal arqueado indica; o TARO 2017 pediu onde fica a avulsão de Segond (margem lateral da tíbia) e o TARO 2023, se o anterolateral é intra ou extra-articular e em que faixa de flexão age. O capítulo confirma que o anterolateral é extracapsular, mas não dá a faixa de flexão.
 armadilha: Lesão do colateral medial: o sinal arqueado é lateral, na fíbula.
@@ -425,7 +425,7 @@ O complexo colateral medial tem três componentes que se fundem: o **colateral m
 - **Oblíquo posterior:** estrutura separada, atrás do superficial, que nasce perto do tubérculo dos adutores e se abre em leque com três braços (central, o maior, que reforça a cápsula posteromedial; capsular; e superficial).
 - **Semimembranáceo:** tem várias inserções, entre elas uma expansão para o oblíquo posterior e outra que forma o **ligamento poplíteo oblíquo**.
 
-!questoes central=joelho-0271 relacionadas=joelho-0094,joelho-0260 treino=joelho-0354
+!questoes central=joelho-0271 relacionadas=joelho-0094,joelho-0260 treino=joelho-0354,trauma-1808
 conceito: A divisão proximal do colateral medial superficial é o estabilizador estático primário do valgo em todos os ângulos; o profundo é secundário e o oblíquo posterior segura a rotação interna.
 como: O TARO 2013 pôs o oblíquo posterior e as duas porções do colateral profundo ao lado do superficial. Duas questões da prova de Ortopedia pediram a natureza do oblíquo posterior, oferecendo os meniscofemorais (Wrisberg, Humphrey) e o semimembranáceo como distratores.
 armadilha: Porções do colateral profundo: são estabilizadores secundários do valgo.

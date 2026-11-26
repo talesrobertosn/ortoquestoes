@@ -41,7 +41,7 @@ Como as fraturas do terço distal têm **alta taxa de retardo e de pseudartrose*
 
 > Na prova: no tipo II, o **fragmento medial fica sem ligamento** e sobe. IIA: os dois ligamentos estão no fragmento distal (traço medial ao conoide). IIB: o conoide está roto.
 
-!questoes central=trauma-1086,ombro-cotovelo-0537,trauma-0127 relacionadas=trauma-1121 treino=trauma-1356
+!questoes central=trauma-1086,ombro-cotovelo-0537,trauma-0127 relacionadas=trauma-1121 treino=trauma-1356,trauma-1776
 conceito: Na fratura do terço distal tipo IIA, conoide e trapezoide ficam presos ao fragmento distal, porque o traço passa medial ao conoide; no IIB, o conoide se rompe e o trapezoide segue preso ao fragmento distal.
 como: O TARO 2011 e o ENARE R4 2025 pediram a posição do traço no "grupo II, tipo IIA, de Allman" (medial ao conoide); o TARO 2016 pediu o ligamento roto no IIB "de Craig" (conoide). O TARO 2007 (sem gabarito oficial registrado no acervo) trocou as definições de IIA e IIB e chamou o tipo III de luxação acromioclavicular; pelo capítulo, só a definição do tipo I (ligamentos íntegros, no fragmento proximal) está certa.
 armadilha: Lateral ao conoide ou medial ao trapezoide: descreve o traço entre os ligamentos, que é o IIB.

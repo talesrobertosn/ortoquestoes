@@ -166,7 +166,7 @@ Descrita em 1961, avalia o **AP** e compara as **trabéculas compressivas da cab
 
 A concordância entre observadores para os quatro tipos é ruim (22% num estudo), mas é boa para separar **não desviadas (I e II)** de **desviadas (III e IV)**, e é essa divisão que a clínica usa.
 
-!questoes central=trauma-0334,trauma-0727 relacionadas=quadril-0508 treino=trauma-1542
+!questoes central=trauma-0334,trauma-0727 relacionadas=quadril-0508 treino=trauma-1542,trauma-1754
 conceito: Garden III é completa, parcialmente desviada, com a cabeça em varo e trabéculas desalinhadas com o acetábulo.
 como: A banca cobra o detalhe que separa o III do IV: no III a cabeça ainda presa vai para varo e o trabeculado não acompanha o acetábulo; no IV a cabeça solta realinha o trabeculado. A alternativa correta fala em varo e extensão; os livros sustentam o varo, e o Campbell 15 (cap. 60, p. 2651) lembra que GARDEN não considera a angulação nem o desvio no plano sagital, de modo que o que decide a questão é o varo no AP.
 armadilha: Achar que o Garden I é impactado em varo: é em valgo.
@@ -209,7 +209,7 @@ como: Treine com o simulado. Este é um conceito novo no capítulo (fundamentado
 
 São só 2% a 3% das fraturas do quadril (o Campbell 15, cap. 60, p. 2665, cita estimativas de apenas 1,6%). Pela localização e pelo comportamento após a fixação, os autores as tratam como **extracapsulares**, com **parafuso deslizante (DHS)**.
 
-!questoes treino=trauma-1553
+!questoes treino=trauma-1553,trauma-1755
 conceito: Basocervical: comporta-se como extracapsular e é fixada com parafuso deslizante.
 !fim
 

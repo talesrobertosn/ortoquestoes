@@ -58,7 +58,7 @@ Peça **radiografia AP da pelve (com os dois quadris) e perfil do quadril**. O A
 
 Se a dúvida persistir com boas radiografias, faça um **AP centrado no quadril com 10° de rotação interna**. Se ainda houver dúvida, a **ressonância** é o melhor exame para a fratura oculta; sem ela, **tomografia sem contraste**. Elas também mostram fraturas incompletas do trocânter, contusões ósseas e lesões de partes moles. Uma incidência com **tração** ajuda a ver lesão patológica, o traço e o estado da parede lateral.
 
-!questoes treino=trauma-1575
+!questoes treino=trauma-1575,trauma-1765
 conceito: Radiografias inconclusivas: AP do quadril em 10° de rotação interna; persistindo a dúvida, ressonância.
 !fim
 
@@ -103,7 +103,7 @@ Nomes como pertrocantérica e intertrocantérica têm definições variadas; o c
 - **31A2, multifragmentária**: o traço principal passa pelos trocânteres e a parede lateral está essencialmente íntegra, mas o **trocânter menor se solta** e pode haver fragmentos do trocânter maior: três ou quatro partes. **Instável**. É o tipo **mais frequente**.
 - **31A3, traço reverso ou transverso**: o traço vai do trocânter menor até a **cortical lateral**, rompendo a parede lateral. Também há uma forma em cunha, com cominuição tipo A2 mais a extensão lateral. Comporta-se como subtrocantérica; pode passar despercebida na radiografia e ficar clara na mesa de tração, com radioscopia ou tomografia.
 
-!questoes central=trauma-0544 relacionadas=trauma-0887 treino=trauma-1568,trauma-1569
+!questoes central=trauma-0544 relacionadas=trauma-0887 treino=trauma-1568,trauma-1569,trauma-1756
 conceito: AO 31A1 simples e estável, 31A2 multifragmentária, 31A3 de traço reverso ou transverso com parede lateral rompida.
 como: A banca mostra o desenho e pede o código, ou usa outra classificação (como a de TRONZO, em que o tipo V é o traço invertido, equivalente à AO 31-A3 segundo o HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 58) para chegar ao mesmo ponto: traço reverso pede haste cefalomedular.
 !fim
@@ -112,7 +112,7 @@ como: A banca mostra o desenho e pede o código, ou usa outra classificação (c
 
 A **parede lateral** é a cortical lateral do fêmur abaixo do trocânter maior, por onde entra o parafuso cefálico. Ela funciona como **batente**: quando o parafuso desliza e a fratura impacta, a parede segura o fragmento proximal. Sem ela (A3, ou parede que se quebra durante a cirurgia), os **adutores medializam a diáfise**: menos contato entre os fragmentos, consolidação mais lenta, mais complicações e **perda do offset femoral**, que piora a função. Medialização acima de **50%** se associou a pior recuperação funcional, e acima de **5 mm**, a mais dor pós-operatória. Numa série de A3, a medialização média foi de 10% com o parafuso deslizante e 2% com a haste.
 
-!questoes central=trauma-0216,trauma-0331,trauma-0749 treino=trauma-1577
+!questoes central=trauma-0216,trauma-0331,trauma-0749 treino=trauma-1577,trauma-1766
 conceito: Parede lateral insuficiente: o fêmur medializa e o offset diminui; a espessura da parede lateral é o maior preditor da fratura dela.
 como: Três provas recentes de TEOT cobraram a parede lateral por ângulos diferentes: a consequência (medialização com diminuição do offset), o maior preditor de fratura da parede durante o DHS (a espessura dela) e como medir essa espessura. A medida usada na questão de 2025 (a partir de um ponto 3 cm abaixo do tubérculo inominado, a 135°, até o traço) não está neste capítulo do Rockwood and Green; vem do Campbell's Operative Orthopaedics, 15ª ed., cap. 60, explicada na seção "Traço reverso e parede lateral em números".
 armadilha: "Medialização com aumento do offset": o offset diminui quando o fêmur vai para dentro.

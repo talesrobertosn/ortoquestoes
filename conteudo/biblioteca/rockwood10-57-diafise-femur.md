@@ -46,7 +46,7 @@ Idade, comorbidades e lesões associadas tiveram, cada uma, associação indepen
 
 **A pele.** A maioria das exposições é **anterior ou lateral**, mas uma ferida pequena posterior ou medial não pode passar: examine o membro inteiro, tirando roupa e curativos. Ferida perto do foco é exposta até prova em contrário.
 
-!questoes central=trauma-1053,trauma-0937,trauma-1096,trauma-0261 treino=trauma-1655,trauma-1668
+!questoes central=trauma-1053,trauma-0937,trauma-1096,trauma-0261 treino=trauma-1655,trauma-1668,trauma-1770
 conceito: Tíbia e fíbula são os ossos mais associados, seguidos de perto por costelas e esterno; o pulmão é o órgão mais lesado; no joelho, a lesão mais comum é a parcial do LCA, examinada depois da fixação; a exposição costuma ser anterior ou lateral.
 como: O TARO 2023 e uma prova da SBOT-SP pediram as fraturas mais associadas (tíbia e fíbula, depois esterno e costelas); o TARO 2013, a lesão do joelho mais comum (LCA parcial); uma prova sem ano, o lado da exposição (anterior ou lateral).
 armadilha: Fêmur distal ou tornozelo como segunda fratura associada: a segunda é costela e esterno (19,1%), quase empatada com a tíbia (20,5%).
@@ -116,7 +116,7 @@ A coxa tem três compartimentos, separados pelos septos medial, lateral e poster
 
 A **femoral profunda** dá as circunflexas medial e lateral (colo e cabeça) e **perfurantes** a cada cerca de 3 cm ao longo da diáfise, que aparecem na via lateral e precisam ser ligadas ou cauterizadas. A femoral passa pelo **hiato dos adutores** no terço distal, do lado medial, e vira poplítea. A **artéria nutrícia** principal nasce da profunda e entra pela linha áspera (às vezes há duas); por isso não se desperiostiza a linha áspera. O fluxo normal na cortical é **centrífugo** (do canal para fora); quando a fratura, a fresagem ou a haste rompem a circulação medular, as **periosteais** assumem e o fluxo se **inverte**, revascularizando a cortical interna.
 
-!questoes relacionadas=trauma-0295,pediatria-0619 treino=trauma-1631,conceitos-basicos-0369
+!questoes relacionadas=trauma-0295,pediatria-0619 treino=trauma-1631,conceitos-basicos-0369,trauma-1769
 conceito: Encurtamento por isquiotibiais e quadríceps; proximal em flexão, abdução e rotação externa; distal medializado pelos adutores e estendido (ápice posterior) pelos gastrocnêmios.
 como: Uma prova sem ano perguntou o músculo da angulação de ápice posterior na supracondiliana (gastrocnêmio); o TARO 2017, o desvio do fragmento proximal na criança (flexão, abdução e rotação lateral), o mesmo do adulto.
 armadilha: Adução do fragmento proximal: os glúteos o abduzem; quem aduz é o grupo dos adutores, que age sobre a diáfise distal.

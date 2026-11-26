@@ -177,7 +177,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 34, p. 1220.e1), lembra as a
 
 No ligado ao X, porém, **os sintomas sistêmicos são mínimos** e, segundo o HEBERT, **não há hipotonia nem fraqueza**: o cálcio é normal, e é a hipocalcemia que dá o quadro neuromuscular.
 
-!questoes central=osteometabolicas-0088 relacionadas=osteometabolicas-0055
+!questoes central=osteometabolicas-0088 relacionadas=osteometabolicas-0055 treino=osteometabolicas-0123
 conceito: O raquitismo espessa as grandes articulações (punhos, cotovelos, joelhos), encurta os ossos longos e pode dar cifoescoliose; também cursa com fraqueza muscular proximal, genuvaro ou valgo e rosário, e sua causa nutricional principal é a falta de vitamina D.
 como: O TARO 2006 deu como certa ou errada a afirmação de que alargamento das grandes articulações, baixa estatura e cifoescoliose são manifestações do raquitismo; o TEPOP 2024 pediu a afirmação correta sobre o raquitismo, com alternativas sobre a causa do nutricional, a fise na radiografia, os sinais clínicos e o crescimento longitudinal.
 armadilha: Achar que a fise do raquitismo fica estreita (ela fica alargada e indistinta) ou que o crescimento longitudinal aumenta (ele diminui).

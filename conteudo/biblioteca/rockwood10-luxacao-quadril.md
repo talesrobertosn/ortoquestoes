@@ -104,7 +104,7 @@ A classificação de BRUMBACK (adiante) amarra essas lesões à direção: o tip
 | Indentação ou transcondral > 4 mm | Anterior (BRUMBACK 4A e 4B) | Depressão superolateral ou cisalhamento osteocartilaginoso | Mais artrose (Campbell) |
 !fim
 
-!questoes central=trauma-0765 relacionadas=trauma-0197,trauma-0170
+!questoes central=trauma-0765 relacionadas=trauma-0197,trauma-0170 treino=trauma-1752
 conceito: A impacção (indentação) da cabeça é a lesão característica da luxação anterior, mais comum que o cisalhamento nessa direção e de maior risco de necrose, porque atinge a zona de entrada dos vasos da circunflexa medial; na posterior, a lesão típica da cabeça é o cisalhamento.
 como: O TEOT 2025 perguntou em qual luxação a impactação é mais comum e com que risco de necrose (anterior, maior risco); o TEOT 2022, a lesão mais frequente da anterior que predispõe à necrose (impacção); o TARO 2014, a luxação a que a indentação raramente se associa (posterior).
 armadilha: Atribuir a impacção à luxação posterior, ou responder avulsão porque o livro diz que a avulsão é a mais comum na anterior: a avulsão pequena na fóvea não aumenta a necrose; quem aumenta é a impacção.
@@ -246,7 +246,7 @@ O tipo V de EPSTEIN foi subdividido por PIPKIN em quatro tipos (Fig. 52-8). A re
 | IV | Tipo I, II ou III com fratura do acetábulo | Tratamento ditado pelo acetábulo; luxação cirúrgica |
 !fim
 
-!questoes central=trauma-0029
+!questoes central=trauma-0029 treino=trauma-1753,trauma-1757
 conceito: PIPKIN IV é qualquer fratura da cabeça (tipo I, II ou III) associada a fratura do acetábulo; o III é a associação com o colo.
 como: O TARO 2019 perguntou o tipo de PIPKIN da fratura da cabeça com fratura do acetábulo (IV).
 armadilha: Responder III, que é a combinação com o colo femoral.

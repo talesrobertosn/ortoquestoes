@@ -207,7 +207,7 @@ O Campbell (cap. 49, p. 1949) lista os sinais da tuberculose cervical, que vêm 
 | Neurologia | tardia, oscilante; 30% em países pobres | mais ligada a abscesso epidural |
 !fim
 
-!questoes central=osteometabolicas-0027
+!questoes central=osteometabolicas-0027 treino=osteometabolicas-0127
 conceito: O mal de POTT tem sintomas generalizados (mal-estar, emagrecimento, sudorese noturna, febre baixa) e progressão indolente; a dor progressiva é tardia.
 como: Provas de Ortopedia perguntaram a combinação de sintomas e evolução, com quatro cruzamentos entre agudo ou generalizado e indolente ou rápido (a questão aparece duas vezes no acervo).
 armadilha: Marcar progressão rápida pensando na forma miliar, que é outra entidade, ou sintomas agudos, que descrevem a infecção piogênica.
@@ -389,7 +389,7 @@ Clinicamente (Tachdjian, p. 978 e 979), o início é **insidioso** e a artrite �
 
 O Tachdjian (p. 979 e 980) explica a radiografia: primeiro, **atrofia óssea regional**, partes moles e distensão capsular; a descalcificação se estende **3 a 5 cm**; epífise íntegra **não tranquiliza** na criança pequena. O Campbell (cap. 25, p. 843) acrescenta que as erosões periarticulares podem imitar **malignidade** e a osteopenia, a **artrite juvenil**.
 
-!questoes central=osteometabolicas-0038 relacionadas=osteometabolicas-0017
+!questoes central=osteometabolicas-0038 relacionadas=osteometabolicas-0017 treino=osteometabolicas-0128
 conceito: No esqueleto apendicular, a tuberculose acomete mais as grandes articulações de carga do membro inferior: quadril e joelho.
 como: O TEOT 2024 perguntou as articulações apendiculares mais acometidas; o TEOT 2022, as articulações mais acometidas na tuberculose, com pares que misturavam ombro, tornozelo e cotovelo.
 armadilha: Escolher tornozelo e joelho ou ombro e quadril; o tornozelo e o membro superior são menos frequentes.
@@ -425,7 +425,7 @@ como: O TARO 2026 perguntou a articulação do membro superior mais acometida, c
 armadilha: Escolher o ombro por ser articulação grande ou o punho por causa da tenossinovite.
 !fim
 
-!questoes central=osteometabolicas-0070 relacionadas=osteometabolicas-0030,osteometabolicas-0067
+!questoes central=osteometabolicas-0070 relacionadas=osteometabolicas-0030,osteometabolicas-0067 treino=osteometabolicas-0129
 conceito: No cotovelo, a tuberculose acomete tipicamente a ulna proximal (olécrano) e deixa contratura em flexão, ou seja, perda da extensão.
 como: A SBOT-SP perguntou o local mais afetado do cotovelo (côndilos do úmero, rádio proximal ou ulna proximal); o TEOT 2023, a estrutura mais acometida (tróclea, capítulo, olécrano ou cabeça do rádio); uma prova de Ortopedia, o osso e o movimento mais limitado.
 armadilha: Escolher o capítulo ou o côndilo lateral pela figura do livro, ou a flexão como movimento perdido; a contratura em flexão bloqueia a extensão.
