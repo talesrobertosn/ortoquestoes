@@ -59,14 +59,23 @@ export function capasDoDia(lista: CapaShort[], n: number, semente = String(Math.
   const pontua = (c: CapaShort) => {
     let x = h
     for (const ch of c.id) x = Math.imul(x ^ ch.charCodeAt(0), 16777619) >>> 0
-    return (c.grupo <= 1 ? 0 : 0.5) + (hist[c.id] ? 1 : 0) + (x % 1000) / 2000
+    // TEOT, TARO e OrtoQuestões Simulados (com imagem) na frente, com o mesmo peso (Tales, 26/11/2026).
+    return (c.grupo <= 1 || c.grupo === 4 ? 0 : 0.5) + (hist[c.id] ? 1 : 0) + (x % 1000) / 2000
   }
+  const ordem = [...lista].filter((c) => c.grupo !== 2).sort((a, b) => pontua(a) - pontua(b))
   const escolhidas: CapaShort[] = []
   const temas = new Set<string>()
-  for (const c of [...lista].filter((c) => c.grupo !== 2).sort((a, b) => pontua(a) - pontua(b))) {
+  for (const c of ordem) {
     if (temas.has(c.tema) && temas.size < 8) continue
     escolhidas.push(c); temas.add(c.tema)
     if (escolhidas.length >= n) break
+  }
+  // Na prateleira (6 capas ou mais), pelo menos duas dos OrtoQuestões Simulados, intercaladas.
+  if (n >= 6) {
+    const faltam = 2 - escolhidas.filter((c) => c.grupo === 4).length
+    const extras = ordem.filter((c) => c.grupo === 4 && !escolhidas.includes(c)).slice(0, Math.max(0, faltam))
+    extras.forEach((c, i) => { escolhidas.splice(Math.min(escolhidas.length, 2 + i * 3), 0, c) })
+    escolhidas.length = Math.min(escolhidas.length, n)
   }
   return escolhidas
 }
