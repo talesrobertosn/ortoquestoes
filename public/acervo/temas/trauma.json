@@ -39716,8 +39716,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Corredora de 22 anos refere dor na perna durante os treinos. A ressonância magnética mostra edema ósseo na tíbia, sem traço de fratura. Pela classificação de Kaeding-Miller, a lesão é grau",
-      "imagens": [],
+      "enunciado": "Corredora de 22 anos refere dor na perna esquerda durante os treinos. A ressonância magnética abaixo mostra edema ósseo na tíbia esquerda, sem traço de fratura. Pela classificação de Kaeding-Miller, a lesão é grau",
+      "imagens": [
+        {
+          "arquivo": "trauma/rwa10-24-5a.jpeg",
+          "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 24, Fig. 24-5A. RM coronal ponderada em T2 das duas pernas de uma corredora: foco de aumento de sinal na medular da tíbia esquerda (seta), sem traço de fratura.",
+          "largura": 772,
+          "altura": 600
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -51958,8 +51965,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Na radiografia AP do quadril normal, a linha ilioisquiática e a lágrima radiográfica (gota de lágrima de KÖHLER) aparecem superpostas porque ambas resultam",
-      "imagens": [],
+      "enunciado": "Na radiografia AP do quadril normal abaixo, a linha ilioisquiática e a lágrima radiográfica (gota de lágrima de KÖHLER) aparecem superpostas porque ambas resultam",
+      "imagens": [
+        {
+          "arquivo": "trauma/greenspan6-8-18.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 8, Figura 8.18. Radiografia AP do quadril normal (A) e o esquema das mesmas linhas (B): a, iliopectínea; b, ilioisquiática; c, lágrima; d, teto do acetábulo; e, margem anterior; f, margem posterior do acetábulo.",
+          "largura": 1390,
+          "altura": 725
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
