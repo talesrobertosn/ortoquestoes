@@ -21,6 +21,9 @@ try {
   assert.ok(aptas.every((q) => q.grupo !== 2), 'Mão fica de fora por padrão')
   assert.ok(aptas.filter((q) => q.grupo === 3).every((q) => q.imagem), 'outras provas entram só com imagem')
   assert.ok(s.aptas(itens, { ...s.AJUSTES_PADRAO, mao: true }).some((q) => q.grupo === 2), 'Mão entra quando ligada')
+  assert.ok(itens.filter((q) => q.grupo === 4).every((q) => q.imagem), 'OrtoQuestões Simulados só com imagem no índice')
+  assert.ok(aptas.some((q) => q.grupo === 4), 'Simulados com imagem entram por padrão')
+  assert.ok(s.aptas(itens, { ...s.AJUSTES_PADRAO, simulados: false }).every((q) => q.grupo !== 4), 'Simulados saem quando desligados')
   assert.ok(s.aptas(itens, { ...s.AJUSTES_PADRAO, soImagem: true }).every((q) => q.imagem), 'só com imagem')
 
   // Peso da imagem: mira ~60% sem roteiro fixo.
