@@ -56346,8 +56346,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Na fratura do processo lateral do tálus, o tratamento cirúrgico é indicado quando há desvio da subtalar ou fragmento maior que",
-      "imagens": [],
+      "enunciado": "Na fratura do processo lateral do tálus (ressonância abaixo), o tratamento cirúrgico é indicado quando há desvio da subtalar ou fragmento maior que",
+      "imagens": [
+        {
+          "arquivo": "trauma/greenspan6-4-105.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 4, Figura 4.105. Ressonância coronal ponderada em T2 do tornozelo de um homem jovem com dor aguda após um acidente de snowboard: a seta aponta a fratura do processo lateral do tálus, com edema da medula óssea em volta.",
+          "largura": 769,
+          "altura": 1042
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
