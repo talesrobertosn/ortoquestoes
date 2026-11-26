@@ -8,7 +8,7 @@ import { PLANOS, STATUS_EVENTO, TIPOS_EVENTO, acertoAposRevisao, acertoPorTentat
 import { perfilDaFicha, type EnvioHistorico } from '../../componentes/admin/modelosEmail'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, linkDoEvento, linkMercadoPago, reprocessarEvento, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { CORTESIA_ADMIN, STATUS_PIX, motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
-import { diasDesde, indicacaoEmDestaque, planosEmDestaque } from '../../componentes/admin/sinais'
+import { diasDesde, indicacaoEmDestaque, planosEmDestaque, shortsEmDestaque, textoShorts } from '../../componentes/admin/sinais'
 import { CINCO_MIN, UM_MIN, rpcInexistente, usarRpc } from '../../componentes/admin/usarRpc'
 import { usarPainel } from '../dados/painel'
 import { estaOnline, nomeDe, type LinhaUsuario } from '../dados/pessoas'
@@ -78,6 +78,8 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
   const { conta, sinais } = usarPainel()
   const indicacao = sinais.get(u.id_usuario)?.indicacao_ultima
   const indicacaoRecente = indicacaoEmDestaque(indicacao)
+  const sinalPessoa = sinais.get(u.id_usuario)
+  const shortsRecente = shortsEmDestaque(sinalPessoa?.shorts_ultima)
   const { indice } = usarIndice()
   const args = useMemo(() => ({ p_id: u.id_usuario }), [u.id_usuario])
   const detalheQ = usarRpc<Detalhe>(conta, 'detalhe_usuario_admin', args)
@@ -137,6 +139,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
     <span style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
       <Selo tom={u.plano_vigente || cortesiaVale || u.administrador ? 'ok' : undefined}>{plano}{cortesiaVale && detalhe?.cortesia?.ate ? ` até ${data(detalhe.cortesia.ate)}` : ''}</Selo>
       {indicacaoRecente && <span className="a3-tag a3-tag--indicacao">Viu Indique e ganhe em 24 h · {haQuanto(indicacao)}</span>}
+      {shortsRecente && sinalPessoa && <span className="a3-tag a3-tag--shorts">{textoShorts(sinalPessoa, haQuanto)}</span>}
       {viuPlanos && <Selo tom={planosRecente && !u.plano_vigente ? 'aviso' : undefined}>Viu os planos {diasPlanos === 0 ? 'hoje' : diasPlanos === 1 ? 'ontem' : `há ${diasPlanos} dias`}{planos!.vezes > 1 ? ` · ${planos!.vezes}×` : ''}</Selo>}
       {(planos?.condicoes_vezes ?? 0) > 0 && <Selo tom="aviso">Abriu as condições</Selo>}
       {usaFlashcards && <Selo>Usa flashcards</Selo>}
@@ -165,7 +168,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
   }, [detalhe ? 1 : 0, definirAba]) // eslint-disable-line react-hooks/exhaustive-deps
   const temp = !u.plano_vigente && !u.administrador ? temperatura(u, { planos_ultima: planos?.ultima ?? null, planos_vezes: planos?.vezes ?? 0 } as never, diaSP(new Date()), null) : null
 
-  return <Gaveta aberta aoFechar={aoFechar} titulo={nomeDe(u)} subtitulo={subtitulo} topo={topo} largura={960} indicacao={indicacaoRecente} destaque={planosRecente && !u.plano_vigente && !u.administrador}>
+  return <Gaveta aberta aoFechar={aoFechar} titulo={nomeDe(u)} subtitulo={subtitulo} topo={topo} largura={960} indicacao={indicacaoRecente} shorts={shortsRecente} destaque={planosRecente && !u.plano_vigente && !u.administrador}>
     <nav className="fx-indice" aria-label="Partes da ficha">
       {ABAS.map(([id, r]) => <button key={id} type="button" aria-current={aba === id ? 'true' : undefined} onClick={() => irPara(id)}>{r}</button>)}
     </nav>

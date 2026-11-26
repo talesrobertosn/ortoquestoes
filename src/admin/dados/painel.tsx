@@ -8,7 +8,7 @@ import { erroDoPainel } from '../../componentes/admin/formatos'
 import { EVENTO_LIDOS_ADMIN, usarLidos } from '../../componentes/admin/lidos'
 import { PLANO_CORTESIA } from '../../componentes/admin/rotulos'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, type EventoPagamento } from '../../componentes/admin/pagamentos'
-import { indexarSinais, type SinalUsuario, type VisitaIndicacao } from '../../componentes/admin/sinais'
+import { indexarSinais, type SinalUsuario, type VisitaIndicacao, type VisitaShorts } from '../../componentes/admin/sinais'
 import { conciliarCartoes } from '../../componentes/admin/conciliarCartoes'
 import { CINCO_MIN, recarregarConsultasAtivas, rpcInexistente, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
 import type { AssinaturaBase, CobrancaReal } from '../../componentes/admin/receita'
@@ -130,6 +130,8 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   }, [conta, comCobrancas, relerCobrancas, relerAssinaturas])
   const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const indicacoesQ = usarRpc<VisitaIndicacao[]>(conta, 'visitas_indicacao_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
+  // Quem usou os Shorts nas últimas 12 h (rosa). Sem o SQL, a consulta falha e ninguém fica rosa.
+  const shortsQ = usarRpc<VisitaShorts[]>(conta, 'visitas_shorts_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const lidosPagamentoBase = usarLidos('pagamento')
   const lidosPagamento = useMemo(() => ({ ...lidosPagamentoBase, lidos: pagamentosResolvidos(lidosPagamentoBase.lidos, decisoesPagamento) }), [lidosPagamentoBase.lidos, lidosPagamentoBase.marcar, decisoesPagamento])
   // Cortesias valendo (parte 37): no painel contam como assinantes, com o selo "Cortesia" (Tales, 02/11/2026).
@@ -154,7 +156,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const usuariosReais = useMemo(() => usuarios?.filter(u => !u.administrador && !contaDeTeste({ nome: u.nome, usuario: u.email }) && !foraPublico.has(u.id_usuario)) ?? null, [usuarios, foraPublico])
   const assinaturas = assinaturasQ.dados ?? null
   const reais = useMemo(() => assinaturas?.filter(a => !foraDosNumeros(a)) ?? null, [assinaturas])
-  const sinais = useMemo(() => indexarSinais(Array.isArray(sinaisQ.dados) ? sinaisQ.dados : [], Array.isArray(indicacoesQ.dados) ? indicacoesQ.dados : []), [sinaisQ.dados, indicacoesQ.dados])
+  const sinais = useMemo(() => indexarSinais(Array.isArray(sinaisQ.dados) ? sinaisQ.dados : [], Array.isArray(indicacoesQ.dados) ? indicacoesQ.dados : [], Array.isArray(shortsQ.dados) ? shortsQ.dados : []), [sinaisQ.dados, indicacoesQ.dados, shortsQ.dados])
   const eventos = eventosQ.dados ?? null
 
   // Pendências: a RPC leve dá o número; com a triagem aberta vale o que ela acabou de contar (o mais recente ganha).
