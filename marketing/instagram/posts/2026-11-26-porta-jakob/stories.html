@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><title>A porta de JAKOB: côndilo lateral, TEOT 2022 (stories didáticos)</title>
-<!-- Quinta 26/11/2026. Pedido do Tales (26/11): questão do TEOT com imagem, a tag TEOT bem marcada, didática para R1,
-     pouco texto e mais SVG, sem área de enquete; o último story com os preços (sem promoção).
+<html lang="pt-BR"><head><meta charset="utf-8"><title>JAKOB do zero: côndilo lateral, TEOT 2022 (stories didáticos)</title>
+<!-- Quinta 26/11/2026, terceira versão (Tales, 26/11): mostrar como caiu no TEOT, com as alternativas A a D; explicar do
+     zero (o que é, para que serve a classificação, a classificação) e depois aplicar; o terceiro story também explica e
+     leva os preços embaixo, sem promoção. Selo TEOT bem marcado. Sem área de enquete, sem horário, conteúdo entre y=250 e y=1580.
      Questão real: pediatria-0697 (TEOT 2022), gabarito C (estágio III de JAKOB). Comentário com conferido: false.
-     Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17 (a imagem da prova é a do painel F da Fig. 17-6).
-     A porta é metáfora com blocos abstratos (parede, porta, dobradiça): nenhum desenho de anatomia; a única anatomia é a radiografia.
-     Preços: src/dados/planos.ts. Sem horário. Conteúdo entre y=250 e y=1580. -->
+     Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17 (a imagem da prova é o painel F da Fig. 17-6).
+     Preços: src/dados/planos.ts. Nenhum desenho de anatomia: só a radiografia da prova. -->
 <link rel="stylesheet" href="../../estilos/stories-com-alternativas/base.css">
 <link rel="stylesheet" href="../2026-11-24-semana/semana.css">
 <style>
@@ -14,183 +14,139 @@
 .teot .t small { font-size: 52px; letter-spacing: 2px; margin-left: 10px; color: #7a560c; }
 .teot .s { font: 400 34px/1.08 Jersey; letter-spacing: 3px; color: #a9ecd9; }
 .teot .s b { font-weight: 400; color: #fff; }
-.h1 { position: absolute; left: 70px; right: 70px; font: 800 62px/1.05 Jakarta; letter-spacing: -2.2px; color: #fff; }
-.h1 .o { color: var(--ouro); }
-.rx { position: absolute; background: #000; padding: 10px; box-shadow: 0 0 0 4px var(--ouro), 14px 14px 0 #0a2420; }
+.card { position: absolute; left: 70px; right: 70px; background: #fdf9ef; box-shadow: 10px 10px 0 #0a2420; padding: 28px 32px; display: flex; flex-direction: column; }
+.enun { font: 700 31px/1.3 Jakarta; letter-spacing: -.3px; color: #1f2a28; }
+.rx { background: #000; padding: 8px; box-shadow: 0 0 0 3px #dcaa45; position: relative; }
 .rx img { display: block; width: 100%; }
-.rx svg { position: absolute; inset: 10px; }
-.legenda { position: absolute; left: 70px; right: 70px; text-align: center; font: 400 19px/1.3 Inter; color: rgba(255,255,255,.7); }
-.perg { position: absolute; left: 70px; right: 70px; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.perg > div { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: #fdf9ef; box-shadow: 8px 8px 0 #0a2420; }
-.perg svg { flex: none; width: 96px; height: 72px; }
-.perg p { font: 400 36px/1 Jersey; letter-spacing: 2px; color: var(--verde); }
-.perg p span { display: block; margin-top: 6px; font: 600 20px/1.2 Inter; letter-spacing: 0; color: #55625f; }
-.chave { position: absolute; left: 70px; right: 70px; text-align: center; font: 700 30px/1 Jakarta; color: #fff; }
-.chave b { color: var(--ouro); }
-/* story 2 */
-.est { position: absolute; left: 70px; right: 70px; height: 238px; display: grid; grid-template-columns: 380px 1fr; gap: 26px; align-items: center; padding: 14px 26px 14px 14px; background: #fdf9ef; box-shadow: 8px 8px 0 #0a2420; }
-.est svg { width: 380px; height: 210px; display: block; background: #e3f3ed; }
-.est .n { display: flex; align-items: center; gap: 16px; font: 400 46px/1 Jersey; letter-spacing: 2px; color: #1f2a28; text-transform: uppercase; }
-.est .n b { width: 66px; height: 66px; display: grid; place-items: center; background: var(--verde); color: #f9e2a6; font: 800 32px/1 Jakarta; letter-spacing: 0; }
-.est p { margin-top: 10px; font: 500 23px/1.3 Inter; color: #34423f; }
-.est p b { font-weight: 800; color: #1f2a28; }
-.est.sel { background: linear-gradient(160deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 6px #dcaa45, 8px 8px 0 #0a2420; }
-.est.sel svg { background: #fff8e4; }
-.est.sel .n b { background: #b5452f; color: #fff; }
-.est .tag { position: absolute; right: -6px; top: -22px; padding: 8px 16px; background: #b5452f; color: #fff; font: 400 28px/1 Jersey; letter-spacing: 2px; box-shadow: 4px 4px 0 #0a2420; }
-.resp { position: absolute; left: 70px; right: 70px; display: flex; align-items: center; gap: 24px; padding: 20px 26px; background: #0a2420; border: 3px solid var(--ouro); }
-.resp .g { flex: none; width: 92px; height: 92px; display: grid; place-items: center; background: var(--ouro); color: #13302c; font: 800 56px/1 Jakarta; }
-.resp p { font: 700 30px/1.2 Jakarta; color: #fff; }
-.resp p span { display: block; margin-top: 6px; font: 500 22px/1.3 Inter; color: #cfe9e1; }
-/* planos */
-.gratis { position: absolute; left: 70px; right: 70px; display: grid; grid-template-columns: 96px 1fr; gap: 22px; align-items: center;
-  padding: 26px 30px; background: #fdf9ef; box-shadow: 10px 10px 0 #0a2420; }
-.gratis img { width: 96px; height: 96px; }
-.gratis .a { font: 400 34px/1 Jersey; letter-spacing: 3px; color: var(--verde); }
-.gratis .h { margin-top: 6px; font: 800 44px/1.05 Jakarta; letter-spacing: -1px; color: #1f2a28; }
-.gratis .d { margin-top: 6px; font: 500 23px/1.3 Inter; color: #55625f; }
-.planos { position: absolute; left: 70px; right: 70px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: end; }
-.plano { background: #fdf9ef; padding: 24px 14px 22px; text-align: center; box-shadow: 8px 8px 0 #0a2420; }
-.plano .nm { font: 400 40px/1 Jersey; letter-spacing: 3px; color: var(--verde); }
-.plano .v { margin-top: 16px; font: 800 64px/1 Jakarta; letter-spacing: -2.5px; color: #1f2a28; white-space: nowrap; }
-.plano .v .r { font-size: 27px; letter-spacing: 0; vertical-align: 27px; margin-right: 4px; color: #55625f; }
-.plano .m { margin-top: 4px; font: 700 23px/1 Jakarta; color: #55625f; }
-.plano .t { margin-top: 14px; padding-top: 12px; border-top: 2px dashed #d6ccb6; font: 500 20px/1.3 Inter; color: #55625f; }
-.plano .t b { color: #1f2a28; }
-.plano.top { padding-top: 70px; position: relative; background: linear-gradient(170deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 5px #a8802a inset, 8px 8px 0 #0a2420; }
-.plano.top .nm { color: #7a560c; }
-.plano .tag { position: absolute; left: 12px; right: 12px; top: 14px; padding: 8px 0; background: #14655e; color: #f9e2a6; font: 400 25px/1 Jersey; letter-spacing: 2px; }
-.inclui { position: absolute; left: 70px; right: 70px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-.inclui span { padding: 10px 17px; border-radius: 999px; background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.3); font: 700 22px/1 Jakarta; color: #fff; }
-.secao { position: absolute; left: 70px; right: 70px; display: flex; align-items: center; gap: 16px; font: 400 38px/1 Jersey; letter-spacing: 3px; color: #a9ecd9; }
-.secao::before, .secao::after { content: ''; flex: 1; height: 4px; background: repeating-linear-gradient(90deg, rgba(169,236,217,.55) 0 12px, transparent 12px 20px); }
-.rot2 { font: 400 32px/1 Jersey; letter-spacing: 3px; color: #a9ecd9; }
-.txt2 { margin-top: 10px; font: 400 26px/1.38 Inter; color: #e9f4f0; }
-.txt2 b { font-weight: 700; color: #fff; }
-.txt2 .nb { display: inline-grid; place-items: center; width: 36px; height: 36px; background: var(--ouro); color: #13302c; font: 800 22px/1 Jakarta; vertical-align: 2px; }
-.caixa2 { position: absolute; left: 70px; right: 70px; padding: 26px 30px; background: #fdf9ef; box-shadow: 10px 10px 0 #0a2420; }
-.caixa2 .q { display: grid; grid-template-columns: 52px 1fr; gap: 18px; margin-top: 18px; }
-.caixa2 .q > b { width: 52px; height: 52px; display: grid; place-items: center; background: var(--verde); color: #f9e2a6; font: 800 28px/1 Jakarta; }
-.caixa2 .q p { font: 400 24px/1.36 Inter; color: #4d5b58; }
-.caixa2 .q p span { display: block; margin-bottom: 4px; font: 800 29px/1.15 Jakarta; letter-spacing: -.4px; color: #1f2a28; }
-.caixa2 .fim { margin-top: 22px; padding: 18px 22px; background: linear-gradient(160deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 4px #dcaa45; font: 500 22px/1.35 Inter; color: #34423f; }
-.caixa2 .fim span { display: block; margin-bottom: 6px; font: 400 44px/1 Jersey; letter-spacing: 2px; color: #b5452f; }
-.tab { position: absolute; left: 70px; right: 70px; background: #fdf9ef; box-shadow: 10px 10px 0 #0a2420; padding: 12px 22px 18px; }
-.tab .cab, .tab .lin { display: grid; grid-template-columns: 92px 200px 200px 1fr; gap: 14px; align-items: center; }
-.tab .cab span { font: 400 24px/1.05 Jersey; letter-spacing: 1.5px; color: var(--verde); text-align: center; padding: 10px 0; }
-.tab .lin { padding: 14px 0; border-top: 2px dashed #d6ccb6; }
-.tab .lin .e { width: 76px; height: 76px; display: grid; place-items: center; background: var(--verde); color: #f9e2a6; font: 800 34px/1 Jakarta; }
-.tab .lin i { font-style: normal; justify-self: center; width: 130px; padding: 12px 0; text-align: center; font: 400 36px/1 Jersey; letter-spacing: 2px; }
+.fonte2 { font: 400 17px/1.3 Inter; color: #7a8784; }
+.alts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.alt { display: flex; align-items: center; gap: 18px; padding: 14px 18px; background: #f1ebdd; }
+.alt .l { flex: none; width: 60px; height: 60px; display: grid; place-items: center; background: var(--verde); color: #f9e2a6; font: 800 30px/1 Jakarta; }
+.alt .x { font: 800 40px/1 Jakarta; color: #1f2a28; }
+.rot { font: 400 32px/1 Jersey; letter-spacing: 3px; color: var(--verde); display: flex; align-items: center; gap: 14px; }
+.rot b { width: 46px; height: 46px; display: grid; place-items: center; background: var(--ouro); color: #13302c; font: 800 24px/1 Jakarta; letter-spacing: 0; }
+.txt { margin-top: 10px; font: 400 27px/1.4 Inter; color: #34423f; }
+.txt b { font-weight: 700; color: #1f2a28; }
+.sep { height: 0; border-top: 2px dashed #d6ccb6; margin: 22px 0; }
+.tab .cab, .tab .lin { display: grid; grid-template-columns: 80px 150px 150px 1fr; gap: 14px; align-items: center; }
+.tab .cab span { font: 400 21px/1.05 Jersey; letter-spacing: 1.2px; color: var(--verde); text-align: center; }
+.tab .lin { padding: 12px 0; border-top: 2px dashed #d6ccb6; }
+.tab .cab { padding-bottom: 10px; }
+.tab .e { width: 64px; height: 64px; display: grid; place-items: center; background: var(--verde); color: #f9e2a6; font: 800 28px/1 Jakarta; }
+.tab i { font-style: normal; justify-self: center; width: 110px; padding: 10px 0; text-align: center; font: 400 32px/1 Jersey; letter-spacing: 2px; }
 .tab i.nao { background: #e6ded0; color: #6b6555; }
 .tab i.sim { background: #b5452f; color: #fff; }
-.tab .lin p { font: 400 21px/1.32 Inter; color: #34423f; }
+.tab .lin p { font: 400 22px/1.3 Inter; color: #34423f; }
 .tab .lin p b { font-weight: 700; color: #1f2a28; }
-.tab .lin.sel { margin: 0 -22px; padding: 14px 22px; background: linear-gradient(160deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 4px #dcaa45; border-top: 0; }
-.tab .lin.sel .e { background: #b5452f; color: #fff; }
+.passo { display: grid; grid-template-columns: 52px 1fr; gap: 16px; }
+.passo + .passo { margin-top: 14px; }
+.passo > b { width: 52px; height: 52px; display: grid; place-items: center; background: var(--verde); color: #f9e2a6; font: 800 26px/1 Jakarta; }
+.passo p { font: 400 23px/1.36 Inter; color: #4d5b58; }
+.passo p span { display: block; margin-bottom: 3px; font: 800 28px/1.15 Jakarta; color: #1f2a28; }
+.passo p span em { font-style: normal; color: #b5452f; }
+.veredito .v { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: center; padding: 9px 0; }
+.veredito .v + .v { border-top: 2px dashed #d6ccb6; }
+.veredito .l { width: 52px; height: 52px; display: grid; place-items: center; background: #e6ded0; color: #6b6555; font: 800 26px/1 Jakarta; }
+.veredito p { font: 400 22px/1.3 Inter; color: #4d5b58; }
+.veredito p b { font-weight: 800; color: #1f2a28; }
+.veredito .v.ok { margin: 0 -14px; padding: 9px 14px; background: linear-gradient(160deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 4px #dcaa45; border-top: 0; }
+.veredito .v.ok .l { background: #b5452f; color: #fff; }
+.veredito .v.ok + .v { border-top: 0; }
+/* preços compactos */
+.precos { position: absolute; left: 70px; right: 70px; }
+.precos .topo { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 22px; background: #0a2420; border: 3px solid var(--ouro); }
+.precos .topo p { font: 400 34px/1 Jersey; letter-spacing: 2px; color: var(--ouro); }
+.precos .topo span { font: 600 22px/1.25 Inter; color: #fff; text-align: right; }
+.precos .topo span b { color: var(--ouro); }
+.precos .tres { margin-top: 14px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.precos .pl { background: #fdf9ef; text-align: center; padding: 14px 8px 12px; box-shadow: 6px 6px 0 #0a2420; }
+.precos .pl .nm { font: 400 30px/1 Jersey; letter-spacing: 2px; color: var(--verde); }
+.precos .pl .v { margin-top: 8px; font: 800 46px/1 Jakarta; letter-spacing: -1.8px; color: #1f2a28; white-space: nowrap; }
+.precos .pl .v small { font-size: 21px; letter-spacing: 0; color: #55625f; }
+.precos .pl .t { margin-top: 6px; font: 500 18px/1.25 Inter; color: #55625f; }
+.precos .pl.top { background: linear-gradient(170deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 4px #a8802a inset, 6px 6px 0 #0a2420; }
+.precos .pl.top .nm { color: #7a560c; }
+.precos .fim { margin-top: 16px; display: flex; align-items: center; justify-content: space-between; }
+.precos .fim .b { padding: 16px 26px; border-radius: 999px; background: linear-gradient(170deg, #f9e2a6, #e8bf62); font: 800 27px/1 Jakarta; color: #13302c; }
+.precos .fim .u { font: 800 30px/1 Jakarta; color: var(--ouro); }
+.precos .nota { margin-top: 10px; text-align: center; font: 400 17px/1.3 Inter; color: rgba(255,255,255,.75); }
 </style></head>
 <body>
-<svg width="0" height="0" style="position:absolute">
-  <defs>
-    <pattern id="tijolo" width="30" height="20" patternUnits="userSpaceOnUse"><rect width="30" height="20" fill="#7f8c88"/><path d="M0 0h30M0 10h30M0 20h30M15 0v10M0 10v10M30 10v10" stroke="#5f6b68" stroke-width="2"/></pattern>
-    <pattern id="tabua" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#e8bf62"/><path d="M8 0v16" stroke="#c99a3c" stroke-width="2"/></pattern>
-    <marker id="ponta" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b5452f"/></marker>
-  </defs>
-</svg>
 
-<!-- ============ STORY 1: o caso, em palavras simples ============ -->
-<section id="qui26-1-caso">
+<!-- ============ STORY 1: como caiu no TEOT ============ -->
+<section id="qui26-1-questao">
   <div class="fundo"></div><div class="grade"></div>
-  <div class="teot"><div class="t">TEOT<small>2022</small></div><p class="s"><b>PROVA DE TÍTULO</b><br>ORTOPEDIA PEDIÁTRICA</p></div>
-  <h1 class="h1" style="top:405px; font-size:56px;">Menina de 6 anos, queda,<br>cotovelo inchado.<br><span class="o">Qual é o estágio de JAKOB?</span></h1>
-
-  <div class="rx" style="left:70px; width:470px; top:640px;">
-    <img src="img/questao.jpeg" alt="">
-    <svg viewBox="0 0 450 442" width="450" height="442">
-      <ellipse cx="110" cy="157" rx="90" ry="86" fill="none" stroke="#F4CF7C" stroke-width="5" stroke-dasharray="14 9"/>
-      <rect x="18" y="16" width="44" height="44" fill="#F4CF7C"/><text x="40" y="51" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="32" fill="#13302c">1</text>
-    </svg>
+  <div class="teot"><div class="t">TEOT<small>2022</small></div><p class="s"><b>COMO CAIU</b><br>NA PROVA DE TÍTULO</p></div>
+  <div class="card" style="top:400px; height:1160px;">
+    <p class="enun">Paciente de 6 anos, sexo feminino, queda com edema e dor no cotovelo. De acordo com a classificação de JAKOB, esta fratura é do estágio</p>
+    <div style="display:flex; justify-content:center; margin-top:22px;">
+      <div class="rx" style="width:650px;"><img src="img/questao.jpeg" alt=""></div>
+    </div>
+    <p class="fonte2" style="margin-top:8px; text-align:center;">Imagem da prova (a mesma do Rockwood and Wilkins' Fractures in Children, 10ª ed., fig. 17-6F)</p>
+    <div class="alts" style="margin-top:auto;">
+      <div class="alt"><span class="l">A</span><span class="x">I</span></div>
+      <div class="alt"><span class="l">B</span><span class="x">II</span></div>
+      <div class="alt"><span class="l">C</span><span class="x">III</span></div>
+      <div class="alt"><span class="l">D</span><span class="x">IV</span></div>
+    </div>
   </div>
-  <div style="position:absolute; left:570px; right:70px; top:640px;">
-    <p class="rot2">O QUE É</p>
-    <p class="txt2">Fratura do <b>côndilo lateral do úmero</b>: o lado de fora do cotovelo se solta como um bloco.</p>
-    <p class="rot2" style="margin-top:22px;">O QUE OLHAR</p>
-    <p class="txt2"><b class="nb">1</b> é o fragmento: uma lasca de osso e o núcleo do capítulo, que saíram juntos.</p>
-    <p class="txt2" style="margin-top:14px;">Muito do cotovelo da criança ainda é cartilagem e <b>não aparece no raio X</b>. Por isso olhamos para onde foi o fragmento.</p>
-  </div>
-  <p class="legenda" style="top:1120px; left:70px; right:auto; width:470px; text-align:left;">Imagem da prova, a mesma do Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17, fig. 17-6F.</p>
-
-  <div class="caixa2" style="top:1210px;">
-    <p class="rot2" style="color:var(--verde);">JAKOB FAZ SÓ DUAS PERGUNTAS</p>
-    <div class="q"><b>1</b><p><span>O traço atravessou a articulação?</span>Ou parou antes, deixando a cartilagem do outro lado inteira, segurando o fragmento no lugar?</p></div>
-    <div class="q"><b>2</b><p><span>O fragmento girou?</span>Ou só se afastou, continuando de frente para o osso de onde saiu?</p></div>
-  </div>
-  <p class="rodape" style="top:1590px; font-size:25px;">No próximo story: as respostas viram o estágio</p>
+  <p class="rodape" style="top:1596px; font-size:25px;">Não sabe JAKOB? O próximo story explica do zero.</p>
 </section>
 
-<!-- ============ STORY 2: a tabela de JAKOB ============ -->
-<section id="qui26-2-jakob">
+<!-- ============ STORY 2: do zero ============ -->
+<section id="qui26-2-entenda">
   <div class="fundo" style="transform:scaleX(-1);"></div><div class="grade"></div>
-  <div class="teot"><div class="t">TEOT<small>2022</small></div><p class="s"><b>JAKOB</b><br>EM SIM E NÃO</p></div>
-  <h1 class="h1" style="top:420px; font-size:56px;">Duas respostas,<br><span class="o">três estágios.</span></h1>
-
-  <div class="tab" style="top:590px;">
-    <div class="cab"><span></span><span>ATRAVESSOU A<br>ARTICULAÇÃO?</span><span>O FRAGMENTO<br>GIROU?</span></div>
-    <div class="lin"><b class="e">I</b><i class="nao">NÃO</i><i class="nao">NÃO</i>
-      <p>A cartilagem do outro lado segura o fragmento: <b>quase sem desvio</b>.</p></div>
-    <div class="lin"><b class="e">II</b><i class="sim">SIM</i><i class="nao">NÃO</i>
-      <p>Solto, o fragmento <b>se afasta, mas continua de frente</b>.</p></div>
-    <div class="lin sel"><b class="e">III</b><i class="sim">SIM</i><i class="sim">SIM</i>
-      <p>Fragmento <b>totalmente fora do lugar e virado</b>.</p></div>
+  <div class="teot"><div class="t">TEOT<small>2022</small></div><p class="s"><b>JAKOB</b><br>DO ZERO</p></div>
+  <div class="card" style="top:400px; height:1160px;">
+    <p class="rot"><b>1</b>QUE FRATURA É ESSA</p>
+    <p class="txt">Fratura do <b>côndilo lateral do úmero</b>, comum em crianças. Um pedaço do lado de fora do cotovelo se solta, e o traço pode chegar até a articulação.</p>
+    <div class="sep"></div>
+    <p class="rot"><b>2</b>PARA QUE SERVE A CLASSIFICAÇÃO</p>
+    <p class="txt">Para saber se o pedaço está <b>preso ou solto</b>, e isso decide o tratamento. O preso pode ir para o gesso, com raio X de controle. O solto precisa ser <b>reposto no lugar e fixado</b>.</p>
+    <div class="sep"></div>
+    <p class="rot"><b>3</b>COMO ELA FUNCIONA</p>
+    <p class="txt">JAKOB faz só duas perguntas. <b>O traço atravessou a articulação?</b> Se não, a cartilagem que sobrou segura o pedaço, como uma dobradiça. <b>O pedaço girou?</b></p>
+    <div class="tab" style="margin-top:18px;">
+      <div class="cab"><span></span><span>ATRAVESSOU A<br>ARTICULAÇÃO?</span><span>O PEDAÇO<br>GIROU?</span><span style="text-align:left;">O QUE ISSO QUER DIZER</span></div>
+      <div class="lin"><b class="e">I</b><i class="nao">NÃO</i><i class="nao">NÃO</i><p>Preso pela cartilagem: <b>quase sem desvio</b>.</p></div>
+      <div class="lin"><b class="e">II</b><i class="sim">SIM</i><i class="nao">NÃO</i><p>Solto: <b>afasta, mas continua de frente</b>.</p></div>
+      <div class="lin"><b class="e">III</b><i class="sim">SIM</i><i class="sim">SIM</i><p>Solto e <b>virado</b>, longe do lugar.</p></div>
+    </div>
+    <p class="fonte2" style="margin-top:auto; text-align:center;">Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17.</p>
   </div>
-
-  <div class="caixa2" style="top:1070px;">
-    <p class="rot2" style="color:var(--verde);">NA RADIOGRAFIA DA PROVA</p>
-    <div class="q"><b>1</b><p><span>Atravessou? SIM.</span>O fragmento está longe do úmero; isso só acontece quando a articulação foi rompida.</p></div>
-    <div class="q"><b>2</b><p><span>Girou? SIM.</span>O núcleo do capítulo está virado em relação ao osso de onde saiu.</p></div>
-    <div class="fim"><span>SIM + SIM = ESTÁGIO III</span>Gabarito oficial: C. Atenção: não existe estágio IV, JAKOB vai de I a III.</div>
-  </div>
-  <p class="legenda" style="top:1530px;">Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17.</p>
+  <p class="rodape" style="top:1596px; font-size:25px;">No próximo story: aplicando na radiografia da prova</p>
 </section>
 
-<!-- ============ STORY 3: comece já ============ -->
-<section id="qui26-3-planos">
+<!-- ============ STORY 3: aplicando + preços ============ -->
+<section id="qui26-3-aplique">
   <div class="fundo"></div><div class="grade"></div>
-  <div class="teot"><div class="t">TEOT<small>2027</small></div><p class="s"><b>COMECE JÁ</b><br>10 DE JANEIRO</p></div>
-  <h1 class="h1" style="top:420px; font-size:60px;">Treine para o TEOT<br><span class="o">do seu jeito.</span></h1>
-
-  <div class="gratis pixbox" style="top:600px;">
-    <img class="px" src="img/treinar.png" alt="">
-    <div><p class="a">TREINO GRATUITO</p><p class="h">20 questões por dia</p><p class="d">comentadas, com o livro citado, sem pagar nada</p></div>
-  </div>
-
-  <p class="secao" style="top:852px;">OU O PLANO COMPLETO</p>
-
-  <div class="planos" style="top:920px;">
-    <div class="plano pixbox">
-      <p class="nm">MENSAL</p>
-      <p class="v"><span class="r">R$</span>39,90</p><p class="m">por mês</p>
-      <p class="t"><b>R$ 39,90</b><br>por 1 mês</p>
+  <div class="teot"><div class="t">TEOT<small>2022</small></div><p class="s"><b>AGORA</b><br>APLIQUE NA PROVA</p></div>
+  <div class="card" style="top:400px; height:740px;">
+    <p class="rot"><b>4</b>AS DUAS PERGUNTAS NA RADIOGRAFIA</p>
+    <div style="margin-top:18px; display:grid; grid-template-columns:1fr 290px; gap:22px; align-items:start;"><div>
+      <div class="passo"><b>1</b><p><span>Atravessou a articulação? <em>SIM.</em></span>O pedaço está longe do úmero: não há cartilagem segurando.</p></div>
+      <div class="passo"><b>2</b><p><span>O pedaço girou? <em>SIM.</em></span>O núcleo do capítulo está virado em relação ao úmero.</p></div>
     </div>
-    <div class="plano pixbox">
-      <p class="nm">SEMESTRAL</p>
-      <p class="v"><span class="r">R$</span>34,90</p><p class="m">por mês</p>
-      <p class="t"><b>R$ 209,40</b><br>a cada 6 meses</p>
+      <div class="rx" style="width:290px;"><img src="img/questao.jpeg" alt="">
+        <svg viewBox="0 0 274 269" style="position:absolute; inset:8px;" width="274" height="269"><ellipse cx="66" cy="95" rx="54" ry="52" fill="none" stroke="#F4CF7C" stroke-width="4" stroke-dasharray="10 6"/><rect x="150" y="12" width="112" height="34" fill="#F4CF7C"/><text x="206" y="37" text-anchor="middle" font-family="Jersey" font-size="24" fill="#13302c">O PEDAÇO</text><path d="M150 40 L112 70" stroke="#F4CF7C" stroke-width="3"/></svg></div>
     </div>
-    <div class="plano top pixbox">
-      <p class="tag">MENOR VALOR POR MÊS</p>
-      <p class="nm">ANUAL</p>
-      <p class="v"><span class="r">R$</span>29,90</p><p class="m">por mês</p>
-      <p class="t"><b>R$ 358,80</b><br>por ano</p>
+    <div class="veredito" style="margin-top:20px;">
+      <div class="v"><span class="l">A</span><p><b>I</b>: seria o pedaço preso, quase no lugar.</p></div>
+      <div class="v"><span class="l">B</span><p><b>II</b>: solto, mas sem girar. Aqui ele girou.</p></div>
+      <div class="v ok"><span class="l">C</span><p><b>III: sim + sim. Gabarito oficial.</b></p></div>
+      <div class="v"><span class="l">D</span><p><b>IV</b>: não existe. JAKOB vai de I a III.</p></div>
     </div>
   </div>
 
-  <div class="inclui" style="top:1286px;">
-    <span>Questões de TEOT, TARO e SBCM</span><span>Resumos com o livro</span><span>Cronograma até a prova</span>
-    <span>Flashcards</span><span>Simulados</span><span>Caderno de erros</span>
+  <div class="precos" style="top:1178px;">
+    <div class="topo"><p>COMECE JÁ</p><span><b>Grátis:</b> 20 questões comentadas por dia<br>ou o plano completo:</span></div>
+    <div class="tres">
+      <div class="pl"><p class="nm">MENSAL</p><p class="v">39,90<small> /mês</small></p><p class="t">R$ 39,90 por 1 mês</p></div>
+      <div class="pl"><p class="nm">SEMESTRAL</p><p class="v">34,90<small> /mês</small></p><p class="t">R$ 209,40 a cada 6 meses</p></div>
+      <div class="pl top"><p class="nm">ANUAL</p><p class="v">29,90<small> /mês</small></p><p class="t">R$ 358,80 por ano</p></div>
+    </div>
+    <div class="fim"><span class="b">O caminho está no nosso perfil</span><span class="u">ortoquestoes.com.br</span></div>
+    <p class="nota">Valores em reais. Semestral e anual pagos de uma vez; o valor por mês é o equivalente.</p>
   </div>
-
-  <div class="botao" style="left:110px; right:110px; top:1420px; height:100px; font-size:38px;">O caminho está no nosso perfil</div>
-  <p style="position:absolute; left:0; right:0; top:1540px; text-align:center; font:800 38px/1 Jakarta; color:var(--ouro);">ortoquestoes.com.br</p>
-  <p class="rodape" style="top:1600px; font-size:19px;">Semestral e anual pagos de uma vez; o valor por mês é o equivalente.</p>
 </section>
 </body></html>
