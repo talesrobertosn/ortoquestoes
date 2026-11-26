@@ -53,5 +53,18 @@ try {
     assert.ok(n >= minimo && n <= maximo, `dia com 3 áreas: ${n} simulados fora de ${minimo}..${maximo}`)
     assert.equal(m.idsDoDiaPlano(indice, itens, {}, false).filter((id) => sim.has(id)).length, 0)
   }
+  // Simulados com imagem na frente (Tales, 26/11/2026): quando o dia tem simulado e há simulado com
+  // imagem livre, pelo menos um deles entra, e no máximo metade da cota (arredondada para cima).
+  const comImg = new Set(indice.questoes.filter((q) => q.sim === 1 && q.img === 1).map((q) => q.id))
+  assert.ok(comImg.size > 0, 'o acervo não tem simulado com imagem')
+  for (const tema of indice.temas) {
+    for (let rep = 0; rep < 10; rep++) {
+      const ids = m.idsDoDia(indice, tema.slug, {}, 40, true)
+      const sims = ids.filter((id) => sim.has(id))
+      if (!sims.length) continue
+      const img = sims.filter((id) => comImg.has(id)).length
+      assert.ok(img >= 1, `${tema.slug}: dia com simulados e nenhum com imagem`)
+    }
+  }
   console.log(`Cronograma com simulados: ${casos} sessões, em torno de 1 a cada 5 oficiais e simulados espalhados.`)
 } finally { await rm(pasta, { recursive: true, force: true }) }

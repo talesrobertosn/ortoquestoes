@@ -1022,14 +1022,22 @@ export function idsDoDia(indice: Indice, slug: string, respondidas: Record<strin
   // Oficiais e simulados em filas separadas: a quantidade de simulados é controlada
   // (entre o mínimo e o máximo) e eles entram espalhados, não acumulados no fim.
   const oficiais = ordemDoTema(indice, livres.filter((q) => q.sim !== 1).map((q) => q.id))
-  const doTema = embaralhar(livres.filter((q) => q.sim === 1).map((q) => q.id), sortear)
-  const outros = embaralhar(indice.questoes.filter((q) => q.sim === 1 && q.t !== tema && entraNoPlano(q, true) && !respondidas[q.id]).map((q) => q.id), sortear)
+  // Simulados com imagem (radiologia e outros) ganham a frente na cota do dia (Tales, 26/11/2026):
+  // até metade dos simulados do dia vem deles, espalhados ao longo do cronograma inteiro.
+  const comImagem = new Set<string>()
+  const doTemaQ = livres.filter((q) => q.sim === 1)
+  const outrosQ = indice.questoes.filter((q) => q.sim === 1 && q.t !== tema && entraNoPlano(q, true) && !respondidas[q.id])
+  for (const q of [...doTemaQ, ...outrosQ]) if (q.img === 1) comImagem.add(q.id)
+  const doTema = embaralhar(doTemaQ.map((q) => q.id), sortear)
+  const outros = embaralhar(outrosQ.map((q) => q.id), sortear)
   const { minimo, maximo } = faixaSimulados(n)
   // Alvo: um número sorteado dentro da faixa (ou a parte desta área no alvo do dia, em
   // idsDoDiaPlano). O alvo pode vir de outras áreas; se faltar oficial, só os simulados
   // do próprio tema completam (antes vinham de qualquer área e a sessão enchia de simulados).
   const alvo = Math.min(n, alvoSimulados ?? minimo + Math.floor(sortear() * (maximo - minimo + 1)))
-  const daCota = [...doTema, ...outros].slice(0, alvo)
+  const fila = [...doTema, ...outros]
+  const primeiras = fila.filter((id) => comImagem.has(id)).slice(0, Math.ceil(alvo / 2))
+  const daCota = [...primeiras, ...fila.filter((id) => !primeiras.includes(id))].slice(0, alvo)
   const extras = doTema.filter((id) => !daCota.includes(id)).slice(0, Math.max(0, n - alvo - oficiais.length))
   const sims = [...daCota, ...extras]
   const base = oficiais.slice(0, n - sims.length)
