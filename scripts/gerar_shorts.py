@@ -4,7 +4,8 @@
 sem baixar os arquivos de tema inteiros.
 
 - public/acervo/shorts.json: {"v", "temas", "q": [[id, tema, grupo, imagem, tamanho], ...]}
-  grupo: 0 TEOT, 1 TARO, 2 Cirurgia da Mão, 3 outras provas; imagem: 1 ou 0; tamanho: letras do
+  grupo: 0 TEOT, 1 TARO, 2 Cirurgia da Mão, 3 outras provas, 4 OrtoQuestões Simulados (só as com imagem);
+  imagem: 1 ou 0; tamanho: letras do
   enunciado com as alternativas.
 - public/acervo/shorts-capas.json: as questões com imagem, com o arquivo, as medidas e o começo do
   enunciado, para os cartões da página inicial e do Treinar (nunca o subtema, que às vezes entrega
@@ -51,14 +52,21 @@ def principal() -> int:
             letras = {a.get("letra") for a in q.get("alternativas", [])}
             if q.get("gabarito") not in letras or len(letras) < 2:
                 continue
-            grupo = GRUPOS.get(str(q.get("prova")), 3)
             imagens = q.get("imagens") or []
+            if q.get("simulado") and not q.get("prova"):
+                # OrtoQuestões Simulados (questões autorais): nos Shorts, só as com imagem (Tales, 26/11/2026).
+                if not imagens:
+                    continue
+                grupo = 4
+            else:
+                grupo = GRUPOS.get(str(q.get("prova")), 3)
             tamanho = len(q.get("enunciado", "")) + sum(len(a.get("texto", "")) for a in q["alternativas"])
             linhas.append([q["id"], t, grupo, 1 if imagens else 0, tamanho])
             if imagens:
                 im = imagens[0]
+                prova = "Simulados" if grupo == 4 else str(q.get("prova") or "")
                 capas.append([q["id"], t, grupo, im["arquivo"], im.get("largura") or 0, im.get("altura") or 0,
-                              str(q.get("prova") or ""), q.get("ano") or 0, trecho(q.get("enunciado", ""))])
+                              prova, q.get("ano") or 0, trecho(q.get("enunciado", ""))])
 
     def gravar(nome: str, conteudo: dict) -> Path:
         caminho = DIR_ACERVO / nome

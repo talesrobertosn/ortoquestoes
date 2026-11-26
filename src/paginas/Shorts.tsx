@@ -534,7 +534,8 @@ function SlideQuestao(p: PropsSlide) {
           <div className="sh-corpo">
             {!q ? <div className="sh-carregando-q"><i /><i /><i /></div> : <>
               <div className="sh-meta">
-                {(q.prova || q.ano) && <span className="sh-prova">{[q.prova, q.ano].filter(Boolean).join(' ')}</span>}
+                {q.prova || q.ano ? <span className="sh-prova">{[q.prova, q.ano].filter(Boolean).join(' ')}</span>
+                  : q.simulado ? <span className="sh-prova">OrtoQuestões Simulados</span> : null}
                 <span>{temaCurto(q.tema)}</span>
               </div>
               {revisao && (
@@ -820,7 +821,7 @@ function FimDeBloco({ indice, ids, feitos, slides, nomeTema, aoContinuar }: { in
 function Ajustes({ inicial, aoFechar, aoAplicar }: { inicial: AjustesShorts; aoFechar: () => void; aoAplicar: (a: AjustesShorts) => void }) {
   const [a, definir] = useState(inicial)
   const troca = (k: keyof AjustesShorts) => definir((x) => ({ ...x, [k]: !x[k] }))
-  const provas: Array<[keyof AjustesShorts, string]> = [['teot', 'TEOT'], ['taro', 'TARO'], ['mao', 'Cirurgia da Mão'], ['outras', 'Outras provas']]
+  const provas: Array<[keyof AjustesShorts, string]> = [['teot', 'TEOT'], ['taro', 'TARO'], ['simulados', 'OrtoQuestões Simulados'], ['mao', 'Cirurgia da Mão'], ['outras', 'Outras provas']]
   const chaves: Array<[keyof AjustesShorts, string, string]> = [
     ['passarSozinha', 'Passar sozinha ao acertar', 'A próxima vem em 5 segundos; tocar no comentário pausa'],
     ['som', 'Som ao acertar', 'Um sininho baixinho, só quando você acerta'],
@@ -833,7 +834,7 @@ function Ajustes({ inicial, aoFechar, aoAplicar }: { inicial: AjustesShorts; aoF
       <div className="sh-folha-config-caixa" role="dialog" aria-labelledby="sh-t-config">
         <span className="sh-alca" aria-hidden="true" />
         <h3 id="sh-t-config">Seus Shorts</h3>
-        <p className="sh-config-apoio">O que entra no sorteio. Com TEOT e TARO, entram também as questões com imagem das outras provas de ortopedia geral.</p>
+        <p className="sh-config-apoio">O que entra no sorteio. Dos OrtoQuestões Simulados, só as questões com imagem. Com TEOT e TARO, entram também as questões com imagem das outras provas de ortopedia geral.</p>
         <p className="sh-config-rotulo">Provas</p>
         <div className="sh-chips">{provas.map(([k, r]) => <button key={k} type="button" className="sh-chip-sel" aria-pressed={!!a[k]} onClick={() => troca(k)}>{r}</button>)}</div>
         <div className="sh-chaves">

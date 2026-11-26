@@ -11,8 +11,8 @@
 
 export const DIA = 86_400_000
 
-/** 0 TEOT, 1 TARO, 2 Cirurgia da Mão, 3 outras provas (scripts/gerar_shorts.py). */
-export type GrupoShort = 0 | 1 | 2 | 3
+/** 0 TEOT, 1 TARO, 2 Cirurgia da Mão, 3 outras provas, 4 OrtoQuestões Simulados com imagem (scripts/gerar_shorts.py). */
+export type GrupoShort = 0 | 1 | 2 | 3 | 4
 
 export interface ItemShort {
   id: string
@@ -29,6 +29,8 @@ export interface AjustesShorts {
   taro: boolean
   mao: boolean
   outras: boolean
+  /** OrtoQuestões Simulados: só as questões com imagem (26/11/2026). */
+  simulados: boolean
   soImagem: boolean
   soIneditas: boolean
   revanche: boolean
@@ -38,7 +40,7 @@ export interface AjustesShorts {
 }
 
 export const AJUSTES_PADRAO: AjustesShorts = {
-  teot: true, taro: true, mao: false, outras: false,
+  teot: true, taro: true, mao: false, outras: false, simulados: true,
   soImagem: false, soIneditas: false, revanche: true, passarSozinha: true, som: true,
 }
 
@@ -73,10 +75,11 @@ export function lerIndice(json: { temas: string[]; q: [string, number, number, n
  * Cirurgia da Mão só entram com a Mão ligada.
  */
 export function aptas(itens: ItemShort[], a: AjustesShorts): ItemShort[] {
-  const grupos = [a.teot, a.taro, a.mao, a.outras]
+  const grupos = [a.teot, a.taro, a.mao, a.outras, a.simulados ?? true]
   const nenhum = !grupos.some(Boolean)
   return itens.filter((q) => {
     if (a.soImagem && !q.imagem) return false
+    if (q.grupo === 4) return q.imagem && (nenhum || grupos[4])
     if (nenhum || grupos[q.grupo]) return true
     return q.grupo === 3 && q.imagem && (a.teot || a.taro)
   })
