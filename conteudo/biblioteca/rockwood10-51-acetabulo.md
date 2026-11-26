@@ -79,7 +79,7 @@ Como a lágrima e a linha ilioisquiática nascem, em parte, da mesma superfície
 Linhas radiográficas do acetábulo. A, AP: 1, iliopectínea; 2, ilioisquiática; 3, lágrima; 4, teto; 5, borda anterior; 6, borda posterior. B, oblíqua ilíaca: borda posterior do osso inominado e borda anterior do acetábulo. C, oblíqua obturatriz: linha iliopectínea e borda posterior.
 !fim
 
-!questoes central=quadril-0053,quadril-0035 relacionadas=quadril-0510 treino=trauma-1516
+!questoes central=quadril-0053,quadril-0035 relacionadas=quadril-0510 treino=trauma-1516,trauma-1762
 conceito: A lágrima e a linha ilioisquiática se superpõem porque ambas vêm da superfície quadrilátera; dissociadas, indicam fratura dessa superfície ou rotação da hemipelve. Na lágrima, o ramo lateral é a fossa acetabular e a parte inferior da parede anterior; o medial, o canal obturatório e a superfície quadrilátera.
 como: O TARO 2015 pediu o que sugere a dissociação entre a coluna posterior (linha ilioisquiática) e a lágrima de KÖHLER (superfície quadrilátera, contra parede posterior e transversas infra e transtectal), e o ENARE R4 2025 repetiu o raciocínio num caso de queda de laje. O TARO 2014 perguntou a que corresponde a parte medial da lágrima.
 armadilha: Fratura transversa: desloca a ilioisquiática, mas leva junto a lágrima; no AP da transversa, as duas costumam manter a relação normal.
@@ -131,7 +131,7 @@ A TC 3D ajuda a entender o padrão e a planejar pinças e manobras, mas não sub
 Orientação dos traços na tomografia axial: A, fratura de uma ou ambas as colunas; B, fratura transversa; C, parede anterior; D, parede posterior.
 !fim
 
-!questoes central=trauma-0563 treino=trauma-1515
+!questoes central=trauma-0563 treino=trauma-1515,trauma-1751
 conceito: No corte axial, o traço da fratura transversa corre no sentido anteroposterior; o da fratura de coluna corre de lado a lado, separando a frente da parte de trás do acetábulo; os das paredes destacam só a borda.
 como: O TEOT 2024 mostrou um corte axial com dois planos de traço e pediu, em par, a orientação de cada um (transversa e coluna, contra as combinações com parede).
 armadilha: Inverter os planos: a coluna separa frente e trás, por isso o traço dela é transversal ao eixo anteroposterior; o da transversa segue esse eixo.
@@ -179,7 +179,7 @@ A **transversa é elementar** apesar de atravessar as duas colunas: é um único
 Classificação de LETOURNEL: as cinco fraturas elementares e as cinco associadas.
 !fim
 
-!questoes central=trauma-0282,quadril-0335,trauma-0672 treino=trauma-1521
+!questoes central=trauma-0282,quadril-0335,trauma-0672 treino=trauma-1521,trauma-1763
 conceito: A fratura do acetábulo mais comum é a da parede posterior (cerca de 25%); entre as associadas, a de ambas as colunas (23%); a transversa responde por 5% a 19% e é elementar.
 como: Uma prova de Ortopedia sem ano perguntou onde as fraturas do acetábulo mais ocorrem (parede posterior). O TARO 2013 pediu o tipo complexo mais frequente segundo LETOURNEL (dupla coluna, contra T, transversa com parede posterior e anterior com hemitransversa). O TARO 2024 juntou em par a frequência e o grupo da transversa.
 armadilha: Transversa com parede posterior como a associada mais comum: é frequente (cerca de 20%), mas ambas as colunas vem antes (23%).
@@ -224,7 +224,7 @@ O **sinal do esporão** é **patognomônico** da fratura de ambas as colunas: é
 Fratura de ambas as colunas: no AP e, melhor, na oblíqua obturatriz, o sinal do esporão (parte caudal do ílio intacto); na ilíaca, a perda do contorno da incisura isquiática pelo desvio da coluna posterior.
 !fim
 
-!questoes central=trauma-1297,trauma-0038 treino=trauma-1519,trauma-1523
+!questoes central=trauma-1297,trauma-0038 treino=trauma-1519,trauma-1523,trauma-1764
 conceito: O sinal do esporão é a parte caudal do ílio intacto, patognomônica de ambas as colunas e mais bem vista na oblíqua obturatriz; a congruência secundária existe porque o lábio íntegro mantém os fragmentos agrupados em volta da cabeça que medializou.
 como: Uma prova do SBOT-SP, sem ano e sem gabarito no acervo, juntou em par o tipo de fratura do esporão e a incidência (dupla coluna e obturatriz é o que o capítulo sustenta). O TARO 2019 perguntou a estrutura cuja integridade explica a congruência secundária (lábio, contra ligamento redondo, transverso e iliofemoral).
 armadilha: Esporão melhor visto na alar: a ilíaca mostra a coluna posterior e as saídas na asa; o esporão aparece melhor na obturatriz.

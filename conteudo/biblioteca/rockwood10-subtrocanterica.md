@@ -421,7 +421,7 @@ Duas observações finas da Tabela 56-1 e do texto: **o medicamento não faz par
 
 Na atípica incompleta, então, o que se vê é uma lesão **só da cortical lateral**, sobre uma área de **espessamento local**, às vezes com a linha negra transversa. As alternativas erradas costumam inverter o critério: traço acima do trocânter menor (fora da localização), cominuição (o critério pede ausência) e adelgaçamento da cortical (o critério pede espessamento).
 
-!questoes central=trauma-0701
+!questoes central=trauma-0701 treino=trauma-1767,trauma-1768
 conceito: Na atípica, o traço é transverso, nasce na cortical lateral com espessamento focal (às vezes com a linha negra), sem cominuição; a incompleta acomete só a cortical lateral.
 como: O CET-PR perguntou o que se observa na radiografia do fêmur com fratura atípica.
 armadilha: Escolher adelgaçamento da cortical (o critério é espessamento), cominuição (o critério é ausência) ou traço acima do trocânter menor.

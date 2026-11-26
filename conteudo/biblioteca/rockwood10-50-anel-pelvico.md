@@ -103,7 +103,7 @@ O capítulo chama atenção para dois pontos novos. A CL é um grupo **heterogê
 Compressão lateral tipo I: fratura por impacção da asa do sacro e fratura do ramo superior em rotação interna, com o exame sob estresse e a correção por fixador de distração.
 !fim
 
-!questoes central=trauma-0853,trauma-1120 relacionadas=quadril-0536
+!questoes central=trauma-0853,trauma-1120 relacionadas=quadril-0536 treino=trauma-1759
 conceito: A compressão lateral fecha a pelve e impacta o córtex anterior da asa do sacro (CL I); quando a força chega à sacroilíaca pela asa do ilíaco, forma o crescente (CL II).
 como: O TARO 2011 perguntou a que mecanismo se relaciona a fratura anterior da asa do sacro (compressão lateral, contra CAP, cisalhamento e compressão axial). O TARO 2007 pediu o mecanismo e o estágio da fratura em crescente da asa do ilíaco. O R4 de Coluna da SES-DF 2022 deu uma diástase da sínfise maior que 3 cm e pediu para julgar se o mecanismo foi compressão lateral (errado: diástase é abertura, é CAP).
 armadilha: Impacção do sacro na CAP: a CAP abre a pelve e rompe os sacroilíacos anteriores; não comprime a asa.
@@ -133,7 +133,7 @@ CAP II: abertura da sacroilíaca direita na tomografia e mais de 5,7 cm de alarg
 CAP III: luxação completa da sacroilíaca esquerda.
 !fim
 
-!questoes central=trauma-0718 relacionadas=quadril-0539 treino=trauma-1496
+!questoes central=trauma-0718 relacionadas=quadril-0539 treino=trauma-1496,trauma-1760
 conceito: CAP II: sínfise aberta mais de 2,5 cm, sacroilíacos anteriores, sacroespinhoso e sacrotuberoso rotos, e os sacroilíacos posteriores íntegros como dobradiça; é instável na rotação e estável na vertical.
 como: A SBOT-SP perguntou o que caracteriza a CAP II, com a fratura sacral do lado do impacto (CL), o desvio vertical (CV) e a diástase de até 2,5 cm (CAP I) como distratores. O R4 de Coluna da SES-DF 2022 pediu para julgar se o critério de estabilização é a abertura da sínfise maior que 2,5 cm ou a lesão das vias urinárias associada.
 armadilha: Diástase de até 2,5 cm: é a CAP I, tratada sem cirurgia.
@@ -173,7 +173,7 @@ alerta: No TARO 2022 (trauma-0243) o gabarito é o processo transverso de L5, e 
 
 O tipo A é tratado sem cirurgia; o B, conforme a rotação; o C quase sempre precisa de fixação posterior. As lesões **tipo C** têm os piores resultados, sobretudo pelas **lesões neurológicas** associadas, e a maior mortalidade.
 
-!questoes central=trauma-0001 relacionadas=quadril-0537,trauma-1150
+!questoes central=trauma-0001 relacionadas=quadril-0537,trauma-1150 treino=trauma-1750
 conceito: TILE B1 é o livro aberto: instável na rotação e estável na vertical; o manejo inicial fecha o livro com rotação interna e adução dos membros e a cinta nos trocânteres.
 como: O TARO 2020 perguntou em que posição dos membros se faz a redução inicial da TILE B1 (rotação interna e adução), com flexão, abdução e a combinação rotação interna com abdução como distratores. O R4 de Coluna da SES-DF 2022 pediu para julgar se o livro aberto é parcialmente instável por manter a estabilidade vertical (certo). O TARO 2009 perguntou o dispositivo ideal de fixação provisória na TILE C com instabilidade hemodinâmica.
 armadilha: Abdução: abre ainda mais o livro; a adução e a rotação interna aproximam as hemipelves.
@@ -453,7 +453,7 @@ O que o capítulo diz sobre o uso:
 
 As antigas calças pneumáticas antichoque (MAST, PASG) caíram em desuso: davam síndrome compartimental e necrose de pele e impediam o acesso ao abdome.
 
-!questoes central=trauma-0001 treino=trauma-1502
+!questoes central=trauma-0001 treino=trauma-1502,trauma-1761
 conceito: A cinta ou o lençol vão centrados nos trocânteres maiores, com adução e rotação interna dos membros, para fechar o livro aberto e reduzir o volume pélvico.
 como: O TARO 2020 perguntou a posição dos membros na redução inicial da TILE B1 (rotação interna e adução).
 armadilha: Cinta nas cristas ilíacas ou na cintura: fica alta e não fecha a pelve.

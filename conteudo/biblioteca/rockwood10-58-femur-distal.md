@@ -93,7 +93,7 @@ Cerca de **5% a 10%** das fraturas do fêmur distal são expostas. A ferida é *
 
 O **joelho flutuante** (fêmur e tíbia do mesmo lado) cai como tema próprio; o capítulo 58 só menciona as fraturas ipsilaterais da tíbia como comuns.
 
-!questoes relacionadas=trauma-1181,trauma-0115,trauma-0199,trauma-0748 treino=trauma-1634
+!questoes relacionadas=trauma-1181,trauma-0115,trauma-0199,trauma-0748 treino=trauma-1634,trauma-1758,trauma-1771
 conceito: Exposta em 5% a 10%, com ferida anterior acima da patela e lesão do aparelho extensor; IIIB e IIIC vão para fixador externo transarticular e fixação tardia.
 como: O TARO 2006 afirmou, em certo ou errado, que a exposição óssea é mais comum na região posteromedial da coxa (sem gabarito no acervo). As questões de joelho flutuante (TARO 2016, TEOT 2022, TEOT 2025) usam outro livro e outros números: cerca de 60% de exposta, nervo fibular na tração e pior evolução com exposta da tíbia e lesão intra-articular.
 armadilha: Ferida posteromedial ou na fossa poplítea: a ferida é anterior, sobre o quadríceps.
