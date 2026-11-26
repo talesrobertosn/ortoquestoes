@@ -45,7 +45,7 @@ LIVROS = {
     "hoppenfeld-pt": "Hoppenfeld Vias de Acesso",
     "green7": "OPERATIVE HAND SURGERY, 7th",
     "adulthip": "The Adult Hip",
-    "greenspan": "RADIOLOGIA ORTOPEDICA",
+    "greenspan": "Greenspan_Radiologia_Ortopedica",
     "tarcisio": "EXAME FISICO EM ORTOPEDIA",
     "pardini": "PARDINI - VOL 01",
     "ao": "AO_Principles_of_Fracture",

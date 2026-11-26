@@ -64,7 +64,7 @@ O mesmo capítulo avisa que os autores **não pedem de rotina** WEST POINT nem S
 | axilar de CODMAN | inclinado para frente como no pendular; braço afasta por gravidade | fratura aguda do úmero proximal, bem tolerado |
 !fim
 
-!questoes central=ombro-cotovelo-0549
+!questoes central=ombro-cotovelo-0549 treino=ombro-cotovelo-0792
 conceito: A série padrão do úmero proximal inclui o AP verdadeiro da escápula (GRASHEY), o perfil em Y e o axilar, além do AP do ombro; STRYKER e WEST POINT são incidências especiais.
 como: A CET-PR perguntou qual incidência faz parte da série radiográfica padrão da fratura do úmero proximal.
 armadilha: Escolher STRYKER ou WEST POINT, que são incidências especiais para HILL-SACHS e BANKART, e não fazem parte da série de trauma; "Rockwood view" não existe.
@@ -90,14 +90,14 @@ O **VELPEAU** é o axilar de quem não tira o braço do corpo. O Campbell (cap. 
 
 O ponto que a banca explora é simples: em luxação aguda, **sem conseguir mexer o ombro**, a direção é dada pelo **VELPEAU** (ou pelo Y). O STRYKER exige o braço elevado acima da cabeça, a apical oblíqua mostra a borda e a cabeça mas não é a escolha do livro para esse fim, e o "AP verdadeiro" continua sendo um plano frontal.
 
-!questoes central=ombro-cotovelo-0487
+!questoes central=ombro-cotovelo-0487 treino=ombro-cotovelo-0799
 conceito: Quando o ombro não pode ser mobilizado, a direção da luxação é definida pelo VELPEAU (axilar sem abduzir) ou pelo perfil em Y, nunca só pelo AP.
 como: O TARO 2009 perguntou qual incidência define o sentido da luxação na impossibilidade de movimentar a articulação.
 armadilha: Marcar o AP verdadeiro, que não resolve o plano anteroposterior, ou o STRYKER, que exige elevar o braço.
 alerta: A `ombro-cotovelo-0487` está sem gabarito oficial; o Campbell 15 (cap. 52) e o Rockwood 10 (caps. 35 e 36) sustentam o VELPEAU (alternativa B).
 !fim
 
-!questoes central=ombro-cotovelo-0045
+!questoes central=ombro-cotovelo-0045 treino=ombro-cotovelo-0791
 conceito: O perfil em Y é o perfil verdadeiro da escápula; a glenoide está no centro do Y e é a referência da cabeça: anterior na luxação anterior, posterior na posterior, central no ombro normal.
 como: O TARO 2015 perguntou a posição da cabeça do úmero em relação ao centro do Y.
 armadilha: Responder "anterior" por pensar na luxação mais comum; a pergunta é sobre o ombro sem luxação.
@@ -315,7 +315,7 @@ Por que medir? BURKHART relatou **recidiva de 67%** após BANKART artroscópico 
 | conduta | glenoide > 25% (cerca de 6 mm): BANKART-BRISTOW-LATARJET; < 25% fora do trilho: BANKART + remplissage |
 !fim
 
-!questoes central=ombro-cotovelo-0093
+!questoes central=ombro-cotovelo-0093 treino=ombro-cotovelo-0788,ombro-cotovelo-0790,ombro-cotovelo-0793,ombro-cotovelo-0796
 conceito: A TC da fratura do úmero proximal mostra o grau de osteopenia, a impacção e a cominuição; o axilar é feito com o braço abduzido, a série de trauma tem quatro incidências e o GRASHEY é perpendicular ao plano da escápula.
 como: Prova de Ortopedia reuniu quatro afirmações sobre a imagem do ombro e pediu a correta.
 armadilha: Cada distrator inverte um fato da técnica: "aduzido no axilar" (é abduzido), "duas incidências" (são quatro no Rockwood) e "GRASHEY não perpendicular" (ele é justamente perpendicular à escápula).
@@ -364,7 +364,7 @@ O supraespinal é o lugar clássico porque se curva sobre a cabeça do úmero pe
 
 A leitura prática fica simples: hipersinal no supraespinal que aparece no DP com supressão de gordura e **desaparece no T2**, num tendão de forma normal, é artefato de orientação, e não lesão. Por isso o Campbell insiste em confirmar a ruptura com foco de sinal de líquido em T2 ou com a ausência do tendão.
 
-!questoes relacionadas=ombro-cotovelo-0214
+!questoes relacionadas=ombro-cotovelo-0214 treino=ombro-cotovelo-0789
 conceito: O ângulo mágico é o hipersinal de um tendão normal cujas fibras ficam a cerca de 55 graus do campo magnético; aparece só nas sequências de TE curto (T1, DP, gradiente) e some no T2; no ombro, ocorre no supraespinal distal, onde o tendão se curva sobre a cabeça do úmero.
 como: O TECOC mostrou uma RM do supraespinal normal com hipersinal no DP com supressão de gordura que desaparecia no T2 e pediu o nome do achado.
 armadilha: Chamar o artefato de cabo rotador (uma banda real, escura, perpendicular às fibras) ou de tendinopatia; a pista que decide é o sinal sumir no T2 num tendão de forma normal.
@@ -391,7 +391,7 @@ como: O TARO 2025 mostrou um coronal oblíquo em T1 com seta na borda superior d
 armadilha: Confundir com o ligamento coracoacromial, que fica acima do supraespinal sob o acrômio, ou com o recesso axilar, que é inferior.
 !fim
 
-!questoes central=ombro-cotovelo-0557
+!questoes central=ombro-cotovelo-0557 treino=ombro-cotovelo-0794,ombro-cotovelo-0797
 conceito: ELLMAN: parcial articular (A), bursal (B) ou intratendínea (C); grau 1 até 3 mm, 2 de 3 a 6 mm, 3 acima de 6 mm.
 como: A CET-PR mostrou o esquema de uma lesão parcial do manguito e pediu o grau de ELLMAN.
 armadilha: Procurar um grau IV, que não existe na classificação reproduzida pelo Campbell.
@@ -434,7 +434,7 @@ O lábio tem anatomia variável, e os ligamentos glenoumerais vizinhos criam arm
 
 Dois detalhes práticos aparecem nos dois livros. Na **luxação aguda**, o derrame (sangue) já distende a articulação, e a RM dos primeiros dias **dispensa a artro-RM** (Campbell, cap. 52; Rockwood, cap. 35). Na HAGL aguda, a artro-RM pode até **encobrir** o local exato da lesão. A artro-RM também mostra a cápsula redundante da instabilidade multidirecional, e o Rockwood associa displasia glenoidal, retroversão aumentada e maior área capsular às lesões labrais posteriores. O Campbell (cap. 51) cita ALEXEEV: o lábio **posterior** estava envolvido em **74%** das cirurgias, as lesões isoladas de BANKART eram raras e o diagnóstico pré-operatório estava correto em apenas **30%**.
 
-!questoes central=ombro-cotovelo-0560
+!questoes central=ombro-cotovelo-0560 treino=ombro-cotovelo-0795,ombro-cotovelo-0798
 conceito: O lábio anterior é mais bem avaliado no plano axial; o coronal oblíquo é o plano do manguito, o lábio superior (SLAP) aparece no axial ou no coronal, e o sagital oblíquo é o dos músculos.
 como: O TEOT 2025 perguntou o plano da RM que melhor avalia a lesão labral anterior na instabilidade anterior.
 armadilha: Marcar o coronal oblíquo por ser o plano "padrão" do ombro; ele é o padrão do manguito, não do lábio anterior.
@@ -492,7 +492,7 @@ O Campbell (cap. 3) resume a RM do cotovelo: avalia os tendões do **bíceps e d
 
 Para o **bíceps distal**, o Campbell (cap. 53) diz que a RM distingue ruptura completa de parcial e mostra tendinose, tenossinovite, hematoma e contusão do braquial. Para obter uma imagem **longitudinal verdadeira** do tendão, recomenda a posição **FABS**: **flexão** do cotovelo a 90 graus, **abdução** do ombro a 180 graus e **supinação** do antebraço. O ultrassom é mais rápido e barato, mas depende muito do examinador.
 
-!questoes central=ombro-cotovelo-0370
+!questoes central=ombro-cotovelo-0370 treino=ombro-cotovelo-0800,ombro-cotovelo-0801,ombro-cotovelo-0802,ombro-cotovelo-0803,ombro-cotovelo-0804
 conceito: FABS (flexão do cotovelo a 90 graus, abdução do ombro a 180 graus, supinação) dá a imagem longitudinal verdadeira do bíceps distal na RM.
 como: Prova de Ortopedia perguntou o posicionamento recomendado para lesões parciais do bíceps distal na RM.
 armadilha: Escolher ABER, que é a posição do ombro para o ligamento glenoumeral inferior.

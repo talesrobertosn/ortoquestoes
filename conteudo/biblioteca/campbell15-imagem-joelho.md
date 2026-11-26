@@ -114,13 +114,13 @@ As rupturas **radiais da raiz posterior do menisco medial** são comuns e incapa
 | Sinal difuso no idoso, menisco operado | falso-positivo; especificidade menor |
 !fim
 
-!questoes central=joelho-0330 relacionadas=joelho-0331
+!questoes central=joelho-0330 relacionadas=joelho-0331 treino=joelho-0454,joelho-0456,joelho-0457,joelho-0464
 conceito: Radiografias não confirmam a ruptura meniscal, mas excluem corpos livres e osteocondrite; a ressonância detecta a ruptura, mas não demonstrou eficácia em prever se ela é reparável.
 como: A SES-DF 2022 usou o caso do lutador com bloqueios e pediu o julgamento de um item sobre a radiografia e outro sobre a ressonância detectar e prever o reparo.
 armadilha: Aceitar o item da ressonância porque a primeira metade está certa; prever a reparabilidade é o que o Campbell nega.
 !fim
 
-!questoes central=joelho-0149 relacionadas=joelho-0059
+!questoes central=joelho-0149 relacionadas=joelho-0059 treino=joelho-0455,joelho-0458
 conceito: A ruptura da raiz posterior do menisco medial aparece como defeito com líquido no corno posterior, melhor vista nos coronais posteriores, e permite a extrusão.
 como: Uma prova de Ortopedia mostrou coronal, sagital e axial e pediu o tipo de lesão entre raiz, vertical, rampa e alça de balde.
 armadilha: Chamar de alça de balde, que desloca um fragmento para o intercôndilo, ou de rampa, que é longitudinal na junção meniscocapsular.
@@ -166,7 +166,7 @@ como: O TEOT 2023 mostrou cortes do canto posterolateral com a seta na faixa esc
 armadilha: Chamar o tendão de menisco roto ou de colateral lateral, que vai à cabeça da fíbula por fora.
 !fim
 
-!questoes central=joelho-0111
+!questoes central=joelho-0111 treino=joelho-0461,joelho-0470
 conceito: A fabela é o ossículo atrás do côndilo femoral lateral, no tendão da cabeça lateral do gastrocnêmio, ossificado em 10% a 20% dos joelhos.
 como: Uma prova de Ortopedia mostrou o perfil com a seta no ossículo posterior e perguntou em que tendão ele fica.
 armadilha: Escolher a cabeça medial do gastrocnêmio ou o poplíteo; a fabela é posterolateral.
@@ -212,7 +212,7 @@ como: O TEOT 2025 mostrou o AP com a seta na lasca lateral e deu como alternativ
 armadilha: Confundir com o arqueado, na cabeça da fíbula, ou com o PELLEGRINI-STIEDA, medial e no fêmur.
 !fim
 
-!questoes central=joelho-0226
+!questoes central=joelho-0226 treino=joelho-0459,joelho-0460,joelho-0469
 conceito: A SEGOND reversa é a avulsão da borda medial do planalto, uma das fraturas que denunciam lesão dos cruzados; a associação cobrada é com o LCP.
 como: O TARO 2010 perguntou com que lesão a SEGOND reversa tem alta associação.
 armadilha: Responder LCA por analogia com a SEGOND clássica.
@@ -246,7 +246,7 @@ O **cisto de BAKER** fica no lado medial da fossa poplítea; o que confirma é o
 | Radiográfico | SEGOND, entalhe femoral lateral, avulsão da eminência |
 !fim
 
-!questoes central=joelho-0282
+!questoes central=joelho-0282 treino=joelho-0466,joelho-0467,joelho-0468
 conceito: Na lesão aguda do LCA, a ressonância mostra contusão óssea em cerca de 80%, sobretudo no côndilo femoral lateral e no planalto tibial lateral.
 como: O TARO 2007 perguntou o achado frequente e característico da lesão aguda do LCA na ressonância.
 armadilha: Escolher o menisco medial, das lesões tardias, ou a contusão do planalto medial.
@@ -363,7 +363,7 @@ O mecanismo resolve sem decorar: a patela sai para fora e, ao voltar, a **faceta
 
 O Campbell (cap. 65, p. 2941) descreve as **luxações intra-articulares da patela** como raras e de dois tipos. **A mais comum é horizontal, com desinserção do tendão do quadríceps, e a superfície articular da patela voltada para a superfície articular da tíbia.** Na outra, o polo inferior se solta do tendão patelar e a superfície articular fica voltada para **proximal**. Ambas costumam exigir **redução aberta**. O mesmo capítulo dá a referência da origem femoral do LPFM no perfil: logo à frente da **interseção da cortical posterior do fêmur com a linha de BLUMENSAAT**.
 
-!questoes central=joelho-0232
+!questoes central=joelho-0232 treino=joelho-0462,joelho-0463
 conceito: Na luxação lateral da patela, a ressonância mostra edema da faceta medial da patela e da face lateral do côndilo femoral lateral (kissing bones).
 como: Uma prova de Ortopedia perguntou as contusões típicas na ressonância depois da luxação traumática lateral da patela.
 armadilha: Inverter os lados e escolher a faceta lateral da patela ou o côndilo medial.
@@ -413,7 +413,7 @@ armadilha: Aceitar que a deformidade comum é o valgo ou que a osteotomia valgiz
 alerta: O Campbell descreve o triplo varo de NOYES sem detalhar o duplo varo; a abertura lateral por afrouxamento de `joelho-0335` é coerente com essa descrição, e o gabarito (Certo) é mantido.
 !fim
 
-!questoes central=joelho-0318
+!questoes central=joelho-0318 treino=joelho-0465
 conceito: Mulher de 50 anos, artrose medial AHLBACK III e varo de 8 graus é candidata à osteotomia valgizante; LCA lesado e varo acima de 7 graus afastam a unicompartimental.
 como: O ENARE 2022 apresentou a paciente com LCA não tratado, artrose medial e varo de 8 graus e pediu o tratamento mais indicado.
 armadilha: Escolher a unicompartimental, que o HEBERT reserva para LCA íntegro e varo menor que 7 graus.
