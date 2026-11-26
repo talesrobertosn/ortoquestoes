@@ -170,7 +170,7 @@ Nenhum dos quatro livros lidos lista "critérios maiores e menores" do mieloma. 
 
 A questão do TARO 2026 oferece hipercalcemia, infecções recorrentes, problemas neurológicos e perda de peso. Os livros não trazem a lista de critérios, mas trazem o peso de cada achado. A **hipercalcemia** é consequência direta da destruição óssea, presente em **20% a 50%** (Dahlin, p. 193) e listada pelo Campbell entre os problemas do diagnóstico (p. 986). Perda de peso e déficit neurológico aparecem no Dahlin, mas são inespecíficos; infecções recorrentes não aparecem no texto lido.
 
-!questoes central=tumores-0312
+!questoes central=tumores-0312 treino=tumores-0437
 conceito: A hipercalcemia é consequência direta da destruição óssea do mieloma (20% a 50% dos pacientes); o Campbell confirma o diagnóstico por pelo menos 10% de plasmócitos anormais, lesões líticas e gamopatia monoclonal.
 como: O TARO 2026 pediu o que faz parte dos critérios maiores do diagnóstico, entre hipercalcemia, infecções recorrentes, problemas neurológicos e perda de peso inexplicada.
 armadilha: Escolher perda de peso ou sintomas neurológicos porque aparecem no quadro clínico: são manifestações frequentes, mas inespecíficas, e não definem a doença.
@@ -281,7 +281,7 @@ O Campbell (cap. 29, p. 987) repete a monoclonalidade kappa ou lambda contra a p
 | Amiloide da hemodiálise | Amiloide no osso | História de diálise prolongada |
 !fim
 
-!questoes central=tumores-0009 relacionadas=tumores-0294
+!questoes central=tumores-0009 relacionadas=tumores-0294 treino=tumores-0438
 conceito: O mieloma é tumor de células redondas: lençóis de plasmócitos de núcleo excêntrico, cromatina em roda de carroça ou mostrador de relógio, halo perinuclear e pouca substância intercelular, com amiloide em cerca de 10%, que no osso quase sempre significa mieloma.
 como: O TARO 2020 pediu o tipo celular (redondas ou fusiformes) e a produção ou não de amiloide; uma prova de Ortopedia mostrou quatro lâminas e pediu a do homem de 61 anos com lesão lítica do fêmur e diagnóstico de mieloma.
 armadilha: Marcar "redondas sem amiloide" porque o amiloide é minoria: a questão pede a característica, e o amiloide é o produto típico do mieloma; ou confundir com células fusiformes, que são as dos sarcomas.

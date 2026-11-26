@@ -96,7 +96,7 @@ alerta: O Campbell descreve o plexo de BATSON e a lesão distal do pulmão, mas 
 
 **No osteossarcoma, o mesmo raciocínio.** No estadiamento do osteossarcoma, pede-se cintilografia para procurar metástases ósseas e radiografia e **tomografia do tórax para as metástases pulmonares**, porque **os pulmões são o local mais comum de metástase**; cerca de 15% têm metástases pulmonares detectáveis ao diagnóstico (Campbell, cap. 27, p. 1009 e 1012). A extensão local do tumor é avaliada pela ressonância.
 
-!questoes central=tumores-0021 relacionadas=tumores-0192,tumores-0078,tumores-0341 treino=tumores-0394,tumores-0374,tumores-0375
+!questoes central=tumores-0021 relacionadas=tumores-0192,tumores-0078,tumores-0341 treino=tumores-0394,tumores-0374,tumores-0375,tumores-0440
 conceito: A próstata dá lesão tipicamente blástica e a mama tipicamente lítica (ambas podem dar os três padrões), rim e tireoide líticas puras, pulmão mista; a metástase destrói a cortical com pouca reação periosteal; a tomografia é o melhor exame para o nicho do osteoma osteoide e para as metástases pulmonares; a cintilografia falha no mieloma e em alguns rins.
 como: O TARO 2018 pediu o padrão de rim, tireoide e próstata; o TEOT 2024, as bordas e a reação periosteal; o TEOT 2021, o exame para o osteoma osteoide e a metástase pulmonar; o TARO 2009, a avaliação do osteossarcoma.
 armadilha: Chamar a metástase de mama de tipicamente blástica (no Campbell 15 ela é tipicamente lítica, e a blástica típica é a próstata) ou a de rim de blástica.
@@ -267,7 +267,7 @@ armadilha: Indicar ressecção ampla para a metástase isolada de mama ou próst
 
 **Osteoporose ou metástase?** Na tomografia, a fratura osteoporótica não destrói a cortical, acomete o corpo de forma homogênea e não tem massa de partes moles (Campbell, p. 1946). O Rockwood diz que a substituição completa do segmento vertebral, várias lesões no corpo, o acometimento do pedículo e o disco intacto tornam a metástase o diagnóstico mais provável (cap. 25).
 
-!questoes central=tumores-0243 relacionadas=tumores-0095,tumores-0101 treino=tumores-0384
+!questoes central=tumores-0243 relacionadas=tumores-0095,tumores-0101 treino=tumores-0384,tumores-0439
 conceito: A coluna é o local mais comum de metástase esquelética; a região torácica recebe 60%, a lombar 25% e a cervical 10% (Campbell 15; 70% e 20% na 14ª); o corpo vertebral é o local mais comum na vértebra; a laminectomia tem pouco valor na compressão anterior, e a descompressão anterior é a mais útil.
 como: O SBOT-SP perguntou o local da vértebra; outra banca, a região da coluna e a relação entre a mama e a coluna lombar.
 armadilha: Escolher os elementos posteriores: eles são o território das lesões benignas.

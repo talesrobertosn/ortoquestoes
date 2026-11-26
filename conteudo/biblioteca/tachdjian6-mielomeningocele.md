@@ -191,7 +191,7 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 32, p. 1540), diz que a comp
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, p. 1281 e 1282), detalha o mecanismo e a lista que a prova usa. O bulbo desloca para o canal cervical pelo forame magno e os **nervos cranianos baixos** sofrem: paresia ou paralisia das cordas vocais, dificuldade para mamar, chorar e respirar, às vezes de forma episódica, o que dificulta o diagnóstico. Na infância, os sintomas são **nistagmo, estridor, disfagia e reflexo de tosse deprimido**; pode haver fraqueza **espástica** dos membros superiores. A derivação ventriculoperitoneal muitas vezes resolve os sintomas do tronco, e a descompressão da fossa posterior só é indicada se a derivação não resolver.
 
-!questoes central=pediatria-0430
+!questoes central=pediatria-0430 treino=pediatria-1541
 conceito: A CHIARI II sintomática comprime o tronco e os nervos cranianos baixos: nistagmo, estridor, disfagia, tosse fraca, apneia e espasticidade dos membros superiores; a derivação costuma resolver.
 como: O TARO 2010 perguntou o sinal característico da malformação sintomática.
 armadilha: Escolher taquipneia (o problema é estridor e apneia) ou hipertonia, que é dos membros superiores e não o sinal típico pedido.

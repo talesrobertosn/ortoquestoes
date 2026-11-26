@@ -40719,8 +40719,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Na fratura supracondiliana com cominuição da coluna medial e perfil com alinhamento aceitável, o achado no AP e a conduta são, respectivamente,",
-      "imagens": [],
+      "enunciado": "Na fratura supracondiliana com cominuição da coluna medial e perfil com alinhamento aceitável, o achado no AP (veja o ângulo traçado na figura abaixo) e a conduta são, respectivamente,",
+      "imagens": [
+        {
+          "arquivo": "pediatria/rwc10-14-11.jpeg",
+          "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 14, Figura 14-11. Esquema do cotovelo da criança em AP com o traçado do ângulo de BAUMANN: entre a linha perpendicular ao eixo longo da diáfise do úmero (tracejada horizontal) e a linha da fise do côndilo lateral (tracejada inclinada).",
+          "largura": 1254,
+          "altura": 1334
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -46889,8 +46896,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Criança de 7 anos com dor vaga na virilha e hiperostose na junção isquiopúbica, sem febre. O diagnóstico mais provável é",
-      "imagens": [],
+      "enunciado": "Criança de 7 anos com dor vaga na virilha e hiperostose na junção isquiopúbica, com aspecto semelhante ao da radiografia abaixo, sem febre. O diagnóstico mais provável é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/rwc10-23-17.jpeg",
+          "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23, Figura 23-17. Radiografia da pelve de uma criança de 9 anos, sem sintomas: a junção entre o ísquio e o púbis, no ramo inferior abaixo do forame obturado, aparece abaulada e mais densa.",
+          "largura": 1215,
+          "altura": 660
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -47741,8 +47755,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Fratura através de fibroma não ossificante na tíbia aos 11 anos. A conduta é",
-      "imagens": [],
+      "enunciado": "Fratura através de fibroma não ossificante na tíbia aos 11 anos, com aspecto semelhante ao da radiografia abaixo. A conduta é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/greenspan6-19-11.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 19, Figura 19.11. Radiografia da tíbia distal de um menino de 10 anos: lesão radiotransparente ovalada, excêntrica, com borda esclerótica fina, na metáfise medial, e um traço de fratura que parte dela e sobe pela diáfise.",
+          "largura": 773,
+          "altura": 1114
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -56717,8 +56738,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Na deformidade angular após fratura fisária, sem área de parada e com linha de crescimento assimétrica que não converge para a fise, o tratamento é",
-      "imagens": [],
+      "enunciado": "Na deformidade angular após fratura fisária, sem área de parada e com linha de crescimento assimétrica que não converge para a fise, como no caso das radiografias abaixo, o tratamento é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/rwc10-2-19ab.jpeg",
+          "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 2, Figura 2-19 A e B. Criança com fratura da diáfise do fêmur e fratura SALTER-HARRIS IV da fise distal do mesmo lado, fixadas: em A, o fêmur consolidado, com parafusos acima e abaixo da fise distal; em B, a radiografia dos membros inferiores com valgo do fêmur distal, em que a distância entre os parafusos aumentou de forma desigual.",
+          "largura": 734,
+          "altura": 842
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -57120,8 +57148,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Na coxa vara do desenvolvimento, o ângulo de HILGENREINER-epifisário de prognóstico indeterminado fica",
-      "imagens": [],
+      "enunciado": "Na coxa vara do desenvolvimento, o ângulo de HILGENREINER-epifisário (figura abaixo) de prognóstico indeterminado fica",
+      "imagens": [
+        {
+          "arquivo": "pediatria/lw7-26-6a.jpeg",
+          "legenda": "Fonte: Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), cap. 26, Fig. 26-6 A, p. 1226. Como se traça o ângulo de HILGENREINER-epifisário no quadril da criança: a linha horizontal é a de HILGENREINER, a tracejada acompanha a fise femoral proximal, e a seta curva marca o ângulo entre as duas.",
+          "largura": 967,
+          "altura": 893
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -62602,6 +62637,1172 @@
         "arquivo": "Tachdjian's Pediatric Orthopaedics, 6ª ed.; Campbell's Operative Orthopaedics, 15ª ed.; Lovell and Winter's Pediatric Orthopaedics, 7ª ed.",
         "pagina": 677,
         "numeroOriginal": 19
+      }
+    },
+    {
+      "id": "pediatria-1531",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Ossificação e crescimento"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "No osso longo da criança, a formação do córtex da diáfise e o aumento da largura do osso acontecem por",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ossificação intramembranosa periosteal."
+        },
+        {
+          "letra": "B",
+          "texto": "ossificação endocondral da placa de crescimento."
+        },
+        {
+          "letra": "C",
+          "texto": "ossificação endocondral da acrófise."
+        },
+        {
+          "letra": "D",
+          "texto": "calcificação da cartilagem de reserva."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 1
+      }
+    },
+    {
+      "id": "pediatria-1532",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Lesões fisárias"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "No esquema de uma lesão da extremidade distal do fêmur da criança, o traço em vermelho corresponde à fratura de SALTER-HARRIS do",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1532-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 4, Figura 4.32.",
+          "largura": 600,
+          "altura": 573
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "tipo II."
+        },
+        {
+          "letra": "B",
+          "texto": "tipo III."
+        },
+        {
+          "letra": "C",
+          "texto": "tipo IV."
+        },
+        {
+          "letra": "D",
+          "texto": "tipo V."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 2
+      }
+    },
+    {
+      "id": "pediatria-1533",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Maus-tratos"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Lactente com edema do joelho e história incerta. A radiografia em perfil mostra as lesões apontadas pelas setas. O achado que favoreceria a osteogênese imperfeita, e não os maus-tratos, é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1533-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 4, Figura 4.43.",
+          "largura": 600,
+          "altura": 955
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fraturas em estágios diferentes de consolidação."
+        },
+        {
+          "letra": "B",
+          "texto": "ossos vormianos no crânio."
+        },
+        {
+          "letra": "C",
+          "texto": "fraturas posteriores de costelas."
+        },
+        {
+          "letra": "D",
+          "texto": "fratura do acrômio."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 3
+      }
+    },
+    {
+      "id": "pediatria-1534",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Radiografia AP do cotovelo normal de uma menina de 6 anos e meio. Se, depois de uma fratura nessa idade, surgir um núcleo ossificado dentro da articulação, na posição da tróclea, ele deve ser lido como",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1534-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 6, Figura 6.9.",
+          "largura": 600,
+          "altura": 1192
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "núcleo normal da tróclea."
+        },
+        {
+          "letra": "B",
+          "texto": "fragmento do côndilo lateral."
+        },
+        {
+          "letra": "C",
+          "texto": "núcleo do olécrano desviado."
+        },
+        {
+          "letra": "D",
+          "texto": "epicôndilo medial encarcerado."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 4
+      }
+    },
+    {
+      "id": "pediatria-1535",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas supracondilianas do úmero"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menino de 4 anos com dor no cotovelo após queda. No perfil, o úmero distal perdeu o contorno em taco de hóquei e a linha umeral anterior passa à frente do capítulo. O padrão indica fratura supracondiliana",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1535-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 6, Figura 6.11.",
+          "largura": 600,
+          "altura": 770
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "com desvio em extensão."
+        },
+        {
+          "letra": "B",
+          "texto": "com desvio em flexão."
+        },
+        {
+          "letra": "C",
+          "texto": "sem desvio, só com derrame."
+        },
+        {
+          "letra": "D",
+          "texto": "intercondiliana em T."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 5
+      }
+    },
+    {
+      "id": "pediatria-1536",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas supracondilianas do úmero"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Criança com dor no cotovelo após queda. Na radiografia em perfil, a seta curva aponta a estrutura mostrada. Sem traço de fratura visível em outras incidências, a conduta é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1536-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 6, Figura 6.13.",
+          "largura": 600,
+          "altura": 501
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "liberar, pois sem traço não há fratura."
+        },
+        {
+          "letra": "B",
+          "texto": "tratar como fratura, mesmo sem traço."
+        },
+        {
+          "letra": "C",
+          "texto": "repetir a radiografia sem imobilizar."
+        },
+        {
+          "letra": "D",
+          "texto": "pedir artrografia antes de imobilizar."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 6
+      }
+    },
+    {
+      "id": "pediatria-1537",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Osteocondroses"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Adolescente com dor e edema sobre a tuberosidade da tíbia. Na RM sagital ponderada em T1, o achado apontado pela seta é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1537-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.52.",
+          "largura": 600,
+          "altura": 681
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "um centro de ossificação acessório normal."
+        },
+        {
+          "letra": "B",
+          "texto": "a fragmentação do polo inferior da patela."
+        },
+        {
+          "letra": "C",
+          "texto": "a perda da gordura do V infrapatelar."
+        },
+        {
+          "letra": "D",
+          "texto": "a ruptura do ligamento cruzado anterior."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 7
+      }
+    },
+    {
+      "id": "pediatria-1538",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do tornozelo na criança"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Adolescente de 13 anos torce o tornozelo jogando basquete. O corte tomográfico mostra um traço vertical na epífise distal da tíbia que encontra a fise só na parte lateral. A fratura ocorre nessa região porque",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1538-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 10, Figura 10.45.",
+          "largura": 600,
+          "altura": 560
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o deltoide arranca a borda medial da epífise."
+        },
+        {
+          "letra": "B",
+          "texto": "a fíbula comprime a borda lateral da tíbia."
+        },
+        {
+          "letra": "C",
+          "texto": "a fise da fíbula fecha antes da tibial."
+        },
+        {
+          "letra": "D",
+          "texto": "a fise tibial distal fecha de medial para lateral."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 8
+      }
+    },
+    {
+      "id": "pediatria-1539",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do tornozelo na criança"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Adolescente com fratura do tornozelo: no AP há traço vertical na epífise e horizontal na fise lateral. Na TC sagital reformatada, o traço oblíquo que sobe da fise até o córtex posterior da metáfise é o componente",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1539-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 10, Figura 10.55.",
+          "largura": 600,
+          "altura": 647
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "coronal, visto no perfil."
+        },
+        {
+          "letra": "B",
+          "texto": "sagital, visto no AP."
+        },
+        {
+          "letra": "C",
+          "texto": "axial, visto na fise."
+        },
+        {
+          "letra": "D",
+          "texto": "transverso, visto na diáfise."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 9
+      }
+    },
+    {
+      "id": "pediatria-1540",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Displasia do desenvolvimento do quadril"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Ultrassonografia coronal, por via lateral, do quadril de um recém-nascido normal. A estrutura marcada pela letra B é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1540-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 31, Figura 31.17.",
+          "largura": 600,
+          "altura": 582
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a cabeça femoral cartilaginosa."
+        },
+        {
+          "letra": "B",
+          "texto": "o lábio acetabular cartilaginoso."
+        },
+        {
+          "letra": "C",
+          "texto": "o acetábulo ósseo."
+        },
+        {
+          "letra": "D",
+          "texto": "a cartilagem trirradiada."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 10
+      }
+    },
+    {
+      "id": "pediatria-1541",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Mielomeningocele"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Recém-nascido com depressão cutânea sobre o sacro. Na RM sagital ponderada em T2, a seta aponta",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1541-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 31, Figura 31.19.",
+          "largura": 600,
+          "altura": 1362
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a terminação normal do cone medular."
+        },
+        {
+          "letra": "B",
+          "texto": "o cone medular baixo, ancorado."
+        },
+        {
+          "letra": "C",
+          "texto": "um lipoma do filum terminal."
+        },
+        {
+          "letra": "D",
+          "texto": "uma meningocele sacral."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 11
+      }
+    },
+    {
+      "id": "pediatria-1542",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Displasia do desenvolvimento do quadril"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Esquema da pelve de um lactente com os quadris em abdução de 45 graus e rotação interna. A linha traçada pelo eixo da diáfise femoral e o que ela mostra são",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1542-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.10.",
+          "largura": 600,
+          "altura": 450
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "PERKIN; displasia sem luxação."
+        },
+        {
+          "letra": "B",
+          "texto": "SHENTON; quadril reduzido."
+        },
+        {
+          "letra": "C",
+          "texto": "HILGENREINER; subluxação."
+        },
+        {
+          "letra": "D",
+          "texto": "ANDRÉN-VON ROSEN; luxação."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 12
+      }
+    },
+    {
+      "id": "pediatria-1543",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Displasia do desenvolvimento do quadril"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Lactente de 5 meses com displasia do quadril e subluxação lateral. Na RM coronal ponderada em T1, a seta aponta",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1543-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.20.",
+          "largura": 600,
+          "altura": 867
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o lábio evertido e hipertrofiado."
+        },
+        {
+          "letra": "B",
+          "texto": "o pulvinar hipertrofiado."
+        },
+        {
+          "letra": "C",
+          "texto": "o ligamento transverso do acetábulo."
+        },
+        {
+          "letra": "D",
+          "texto": "o tendão do iliopsoas interposto."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 13
+      }
+    },
+    {
+      "id": "pediatria-1544",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Doença de Legg-Calvé-Perthes"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menina de 7 anos com claudicação. Na incidência em pernas de rã, a seta aponta uma linha radiotransparente subcondral na cabeça femoral. O achado",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1544-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.29.",
+          "largura": 600,
+          "altura": 785
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "é tardio e marca a reossificação."
+        },
+        {
+          "letra": "B",
+          "texto": "é a fise normal vista de perfil."
+        },
+        {
+          "letra": "C",
+          "texto": "é precoce e pode aparecer só na rã."
+        },
+        {
+          "letra": "D",
+          "texto": "indica deslizamento da epífise."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 14
+      }
+    },
+    {
+      "id": "pediatria-1545",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Doença de Legg-Calvé-Perthes"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menina de 7 anos com doença de LEGG-CALVÉ-PERTHES. O defeito radiotransparente em V apontado pela seta, na borda lateral da epífise, é o sinal de",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1545-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.34.",
+          "largura": 600,
+          "altura": 804
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "CATTERALL, do grupo 1."
+        },
+        {
+          "letra": "B",
+          "texto": "GAGE, de cabeça em risco."
+        },
+        {
+          "letra": "C",
+          "texto": "WALDENSTRÖM, da fase inicial."
+        },
+        {
+          "letra": "D",
+          "texto": "CAPENER, de deslizamento."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 15
+      }
+    },
+    {
+      "id": "pediatria-1546",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Epifisiólise proximal do fêmur"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menina de 12 anos com dor no quadril esquerdo. No AP da pelve, a estrutura apontada pela seta aberta no quadril direito, que falta do lado doente, é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1546-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.36.",
+          "largura": 670,
+          "altura": 430
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a lágrima do acetábulo."
+        },
+        {
+          "letra": "B",
+          "texto": "a linha de KLEIN normal."
+        },
+        {
+          "letra": "C",
+          "texto": "o arco de SHENTON."
+        },
+        {
+          "letra": "D",
+          "texto": "o triângulo de CAPENER."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 16
+      }
+    },
+    {
+      "id": "pediatria-1547",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Epifisiólise proximal do fêmur"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menina de 13 anos com dor no quadril esquerdo; a incidência em pernas de rã mostra desvio medial da epífise. Na RM sagital em densidade de prótons, a seta aponta",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1547-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.41.",
+          "largura": 600,
+          "altura": 662
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o desvio posterior da epífise."
+        },
+        {
+          "letra": "B",
+          "texto": "o desvio anterior da epífise."
+        },
+        {
+          "letra": "C",
+          "texto": "um derrame articular volumoso."
+        },
+        {
+          "letra": "D",
+          "texto": "uma fratura do colo femoral."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 17
+      }
+    },
+    {
+      "id": "pediatria-1548",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Genuvaro, genuvalgo e torções"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menino de 3 anos com pernas arqueadas. Radiografia dos membros inferiores com carga. O diagnóstico mais provável é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1548-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.50.",
+          "largura": 610,
+          "altura": 865
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "tíbia vara de BLOUNT."
+        },
+        {
+          "letra": "B",
+          "texto": "raquitismo carencial."
+        },
+        {
+          "letra": "C",
+          "texto": "arqueamento fisiológico."
+        },
+        {
+          "letra": "D",
+          "texto": "acondroplasia."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 18
+      }
+    },
+    {
+      "id": "pediatria-1549",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Pé torto congênito"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menino de 2 anos. Na radiografia dorsoplantar com carga, os eixos do tálus e do calcâneo correm quase paralelos e o antepé está aduzido. Os achados correspondem a",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1549-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.55.",
+          "largura": 600,
+          "altura": 723
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ângulo de KITE acima de 40 graus e retropé valgo."
+        },
+        {
+          "letra": "B",
+          "texto": "ângulo de KITE abaixo de 20 graus e retropé varo."
+        },
+        {
+          "letra": "C",
+          "texto": "ângulo talo-primeiro metatarso negativo e antepé abduzido."
+        },
+        {
+          "letra": "D",
+          "texto": "ângulo de KITE normal e equino isolado."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 19
+      }
+    },
+    {
+      "id": "pediatria-1550",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Outras deformidades do pé na criança"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menino de 2 anos com pé em cadeira de balanço. No perfil, o tálus está vertical e o calcâneo em equino. A incidência que define se a luxação talonavicular é redutível é o perfil com",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1550-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.58.",
+          "largura": 630,
+          "altura": 390
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "dorsiflexão forçada."
+        },
+        {
+          "letra": "B",
+          "texto": "carga em ortostase."
+        },
+        {
+          "letra": "C",
+          "texto": "rotação interna de 45 graus."
+        },
+        {
+          "letra": "D",
+          "texto": "flexão plantar forçada."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 20
+      }
+    },
+    {
+      "id": "pediatria-1551",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Outras deformidades do pé na criança"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Paciente com dor no mediopé após longos períodos em pé e espasmo dos fibulares. Na incidência lateral, o achado apontado pelas setas sugere coalizão",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1551-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 32, Figura 32.62.",
+          "largura": 810,
+          "altura": 625
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "calcaneonavicular."
+        },
+        {
+          "letra": "B",
+          "texto": "talocalcânea da faceta média."
+        },
+        {
+          "letra": "C",
+          "texto": "talonavicular."
+        },
+        {
+          "letra": "D",
+          "texto": "calcaneocuboide."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 21
+      }
+    },
+    {
+      "id": "pediatria-1552",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Osteogênese imperfeita"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menino de 12 anos com fraturas de repetição e haste intramedular na tíbia. As áreas radiotransparentes irregulares, de bordas escleróticas, nas extremidades dos ossos longos, são chamadas de",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1552-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 33, Figura 33.27.",
+          "largura": 600,
+          "altura": 1196
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osso dentro de osso."
+        },
+        {
+          "letra": "B",
+          "texto": "faixas metafisárias densas."
+        },
+        {
+          "letra": "C",
+          "texto": "calcificações em pipoca."
+        },
+        {
+          "letra": "D",
+          "texto": "estriações metafisárias lineares."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 22
+      }
+    },
+    {
+      "id": "pediatria-1553",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Displasias esqueléticas e síndromes"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menino de 2 anos com baixa estatura de membros curtos. Na radiografia AP da coluna toracolombar, o achado típico da doença é",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-1553-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 33, Figura 33.32.",
+          "largura": 600,
+          "altura": 955
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "aumento caudal da distância interpedicular."
+        },
+        {
+          "letra": "B",
+          "texto": "redução caudal da distância interpedicular."
+        },
+        {
+          "letra": "C",
+          "texto": "vértebras com aspecto em sanduíche."
+        },
+        {
+          "letra": "D",
+          "texto": "corpos vertebrais com forma de gancho."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 23
       }
     }
   ]

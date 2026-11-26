@@ -132,7 +132,7 @@ A escoliose dolorosa tem diferencial: o osteoblastoma também mora nos elementos
 | ablação | cuidado com medula e raízes; série de 24 com 79% de sucesso e deformidade persistente em 3 de 7 (Tachdjian) |
 !fim
 
-!questoes central=tumores-0204 relacionadas=tumores-0098
+!questoes central=tumores-0204 relacionadas=tumores-0098 treino=tumores-0411,tumores-0412
 conceito: O osteoma osteoide dos elementos posteriores da coluna causa escoliose dolorosa por espasmo paravertebral, com a concavidade voltada para o lado da lesão, que costuma desaparecer depois que o nicho é retirado; fora isso, a lesão predomina em meninos de 5 a 24 anos, em fêmur e tíbia, e a ablação por radiofrequência é guiada por TC.
 como: O TARO 2024 perguntou a causa mais comum de escoliose dolorosa no adolescente, com espondilodiscite, neurofibromatose e dismetria como distratores; uma prova de Ortopedia pediu a afirmação correta e trouxe primeira década, pelve e coluna lombar e radiofrequência guiada por ultrassom como erradas.
 armadilha: Escolher a espondilodiscite pela dor, ou aceitar "pelve e coluna lombar" (perfil do osteoblastoma) e "guiada por ultrassom" (a guia é a TC).
@@ -181,7 +181,7 @@ A RM vê a reação em volta do nicho, e é isso que engana. A Fig. 9.4 do Dahli
 | laboratório | normal (Lovell and Winter) | separa do processo infeccioso (Tachdjian) |
 !fim
 
-!questoes central=tumores-0194
+!questoes central=tumores-0194 treino=tumores-0413
 conceito: Adolescente do sexo masculino com dor na coxa e radiografia de espessamento cortical com pequeno nicho lucente no fêmur é osteoma osteoide até prova em contrário; o fêmur proximal é o local isolado mais comum, a esclerose é reativa e a TC confirma o nicho.
 como: O TEOT 2024 mostrou a radiografia de um rapaz de 15 anos com dor na coxa e pediu a principal hipótese, com osteossarcoma, condroblastoma e tumor de células gigantes como distratores.
 armadilha: Ler a reação periosteal espessa e a esclerose como tumor agressivo (osteossarcoma) ou pensar em lesão epifisária (condroblastoma) ou de fise fechada (tumor de células gigantes).
@@ -307,7 +307,7 @@ Quando o nicho não aparece, a série de SIM (Dahlin, p. 110) ensina humildade: 
 | cirurgia aberta (Tachdjian) | histologia duvidosa, nervo a menos de 1,5 cm, falhas repetidas | diagnóstico e remoção | localizar o nicho (tetraciclina, isótopo, TC) |
 !fim
 
-!questoes central=tumores-0351
+!questoes central=tumores-0351 treino=tumores-0414
 conceito: No osteoma osteoide, basta retirar ou destruir o nicho inteiro; a esclerose é reação reversível e regride sozinha, e a ressecção em bloco raramente é indicada nos ossos longos porque aumenta o risco de fratura pós-operatória.
 como: O TARO 2006 pôs em certo ou errado que se recomenda ressecção em bloco envolvendo o nicho e o tecido esclerótico circundante.
 armadilha: Achar que a esclerose faz parte do tumor e precisa sair com margem; ela desaparece depois que o nicho é retirado.

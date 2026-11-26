@@ -97,7 +97,7 @@ Tratamento: até 2 mm, gesso inguinopodálico com joelho a 30 graus e pé neutro
 
 Um alerta de imagem: **fendas** na parte lateral da epífise tibial podem simular TILLAUX, e na medial, SH III; tratá-las como fratura é excesso, e atribuir a elas uma irregularidade dolorosa é falta (Fig. 30-23).
 
-!questoes central=pediatria-0543,pediatria-0546,pediatria-0568,pediatria-0842 relacionadas=pediatria-0686,pediatria-0905,pediatria-0615 treino=pediatria-1153,pediatria-1164
+!questoes central=pediatria-0543,pediatria-0546,pediatria-0568,pediatria-0842 relacionadas=pediatria-0686,pediatria-0905,pediatria-0615 treino=pediatria-1153,pediatria-1164,pediatria-1538
 conceito: TILLAUX: SH III anterolateral, por rotação externa e tração do tibiofibular anteroinferior; incidência da pinça; acima de 2 mm, reduzir em rotação interna e fixar com parafuso epifisário.
 como: TARO 2024 e 2023 perguntaram o tipo e a localização (III, anterolateral); TARO 2022 e TEOT 2021, o mecanismo (rotação externa, tibiofibular anterior); TARO 2013, o tipo; CET-PR, o fragmento (anterolateral).
 armadilha: Talofibular no lugar de tibiofibular, rotação interna como mecanismo, posterolateral ou SH IV.
@@ -116,7 +116,7 @@ Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 30, Fi
 
 Tratamento: até 2 mm (ou extra-articular), gesso longo com joelho a 30 a 40 graus, pé em **rotação interna** no lateral e em **eversão** no medial, tomografia e controle em 7 dias. Acima de 2 mm (65% na série de KÄRRHOLM): redução fechada em **rotação interna** (lateral) ou **abdução** (medial); se não reduzir, aberta pela via **anterolateral** (lateral) ou **anteromedial** (medial), parafusos poupando a fise. Nas de três partes, fixa-se primeiro o fragmento SH II à metáfise e depois o SH III a ele. A consolidação viciosa costuma vir do triplanar mal reduzido ou imobilizado só abaixo do joelho.
 
-!questoes central=pediatria-0588,pediatria-0662,pediatria-0867,pediatria-0517 relacionadas=pediatria-0637,pediatria-0820,pediatria-0928 treino=pediatria-1155,pediatria-1465
+!questoes central=pediatria-0588,pediatria-0662,pediatria-0867,pediatria-0517 relacionadas=pediatria-0637,pediatria-0820,pediatria-0928 treino=pediatria-1155,pediatria-1465,pediatria-1539
 conceito: Triplanar: SH III no AP e SH II no perfil; rotação externa; acima de 2 mm reduzir em rotação interna (lateral), via anterolateral; medial em abdução, via anteromedial; na fratura da diáfise da tíbia, radiografar o tornozelo.
 como: TARO 2021 perguntou o tipo no perfil (II); TARO 2012, ENARE 2025 e ENARE 2024, o par AP e perfil (III e II); TARO 2019, a via do triplanar em duas partes (anterolateral).
 armadilha: Inverter AP e perfil.

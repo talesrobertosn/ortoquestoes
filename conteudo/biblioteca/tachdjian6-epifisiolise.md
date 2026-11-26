@@ -275,7 +275,7 @@ No instável (p. 586), o paciente relata **dor súbita, intensa, tipo fratura**,
 
 O paciente com condrólise (p. 587) tem dor mais contínua e mais limitação nas atividades. O quadril fica em rotação externa em repouso, com **contratura em flexão** e **restrição global**, e a dor aparece **em todo o arco**, não só nos extremos.
 
-!questoes central=pediatria-0136
+!questoes central=pediatria-0136 treino=pediatria-1546,pediatria-1547
 conceito: O deslizamento estável produz claudicação, limitação do arco do quadril (sobretudo da rotação interna) e pode produzir marcha de TRENDELENBURG; o membro anda e roda em rotação externa, nunca interna.
 como: Uma prova de Ortopedia combinou claudicação, limitação de movimento, marcha com rotação interna e TRENDELENBURG em quatro trios.
 armadilha: Todas as alternativas erradas contêm marcha com rotação interna; o membro vai em rotação externa e perde justamente a rotação interna.

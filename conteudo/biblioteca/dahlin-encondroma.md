@@ -110,7 +110,7 @@ Dentro da mão, a ordem é **falange proximal, depois falange média e metacarpo
 
 Há divergência só no segundo lugar: na série de SASSOON, a falange média (27) passa o metacarpo (24); no texto do Green, o metacarpo vem antes. O primeiro lugar é unânime, e a falange distal é a menos frequente dos tubulares da mão.
 
-!questoes central=tumores-0094
+!questoes central=tumores-0094 treino=tumores-0409
 conceito: Na mão, o encondroma é mais visto na falange proximal (40 de 102 lesões na série de SASSOON), sobretudo na metáfise proximal; seguem falange média e metacarpo, e a falange distal é a menos comum.
 como: Uma prova de Ortopedia perguntou onde o encondroma da mão é mais visto, com metacarpo, rádio distal, falange distal e falange proximal.
 armadilha: Marcar o metacarpo, que é sede frequente mas fica atrás, ou o rádio distal, que não é osso da mão.
@@ -329,7 +329,7 @@ O Tachdjian dá a explicação histológica: as lesões podem ser **altamente ce
 
 Cada alternativa errada contraria os livros: a mão é sede frequente (Tachdjian, Dahlin, Green); o defeito não se restringe aos ossos longos, porque acomete tubulares curtos e chatos (Campbell, cap. 27, p. 928; Dahlin, p. 26); e a associação com hemangiomas (MAFFUCCI) não dificulta a malignização, o risco é igual ou maior.
 
-!questoes central=tumores-0258
+!questoes central=tumores-0258 treino=tumores-0419
 conceito: No OLLIER, encondromatose múltipla não hereditária e predominantemente unilateral, a malignização é rara na criança; o risco de condrossarcoma (~25% até os 40 anos) é do adulto, e o MAFFUCCI tem risco igual ou maior.
 como: O TEPOP 2024 perguntou o correto sobre o OLLIER, misturando malignização na criança, frequência na mão, restrição aos ossos longos e risco no MAFFUCCI.
 armadilha: Achar que a mão é poupada ou que o defeito é só dos ossos longos, ou inverter o risco do MAFFUCCI, que é maior, não menor.

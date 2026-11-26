@@ -96,7 +96,7 @@ Na pele, o contorno da mancha ajuda a separar as síndromes. O Lovell and Winter
 | JAFFE-CAMPANACCI | **múltiplos fibromas não ossificantes** | **café com leite** (costa da Califórnia, borda lisa) |
 !fim
 
-!questoes central=tumores-0084 relacionadas=tumores-0310,tumores-0111,tumores-0031,tumores-0248
+!questoes central=tumores-0084 relacionadas=tumores-0310,tumores-0111,tumores-0031,tumores-0248 treino=tumores-0422
 conceito: McCUNE-ALBRIGHT é displasia fibrosa poliostótica com pigmentação cutânea (café com leite) e distúrbio endócrino; MAZABRAUD é displasia fibrosa poliostótica com mixomas intramusculares.
 como: O TARO 2022 pediu a síndrome da tríade poliostótica, endocrinopatia e pigmentação; o TARO 2026 pediu o terceiro componente do McCUNE-ALBRIGHT; uma prova de Ortopedia misturou os nomes com lesão mono ou poliostótica, mixomas e anemia; o TARO 2021 e o TEOT 2025 pediram a associação com mixomas intramusculares.
 armadilha: Trocar os nomes (mixoma no McCUNE-ALBRIGHT, pigmentação no MAZABRAUD), pôr a lesão como monostótica ou trocar a displasia fibrosa por fibromas não ossificantes, que pertencem ao JAFFE-CAMPANACCI.
@@ -172,7 +172,7 @@ O Rockwood diz textualmente o que a banca pergunta: **embora as fraturas consoli
 
 O Tachdjian (p. 1016) diz algo compatível, com outra ênfase: as fraturas patológicas ocorrem após **trauma leve**, costumam ser **pouco desviadas** e **consolidam em ritmo normal**; **retardo de consolidação e pseudartrose não são problema**, mas a **deformidade progressiva** pode causar incapacidade grave. Os dois livros concordam que a fratura não deixa de consolidar; o Rockwood diz "rápido", o Tachdjian diz "em ritmo normal", e o Rockwood é o único que fala do calo endosteal pobre, que é a chave da questão.
 
-!questoes central=tumores-0011
+!questoes central=tumores-0011 treino=tumores-0423
 conceito: Na fratura patológica da criança com displasia fibrosa, a consolidação é rápida, com calo endosteal pobre e calo periosteal normal; o problema não é a pseudartrose, é a deformidade progressiva.
 como: O TARO 2019 combinou velocidade de consolidação (lenta ou rápida) com qualidade do calo endosteal (normal ou pobre).
 armadilha: Achar que osso displásico consolida devagar, ou que o calo endosteal é normal porque a fratura cola.
@@ -510,7 +510,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 933), define o **desm
 
 A localização decide o diagnóstico: irregularidade **posteromedial** no fêmur distal do adolescente é desmoide cortical e não se biopsia.
 
-!questoes central=tumores-0074
+!questoes central=tumores-0074 treino=tumores-0421
 conceito: O desmoide cortical é uma irregularidade da face posteromedial da metáfise distal do fêmur, em meninos de 10 a 15 anos, ligada à tração do adutor magno; vê-se em oblíqua com rotação externa e se trata com observação, sem biópsia.
 como: O TEOT 2022 cruzou posterolateral ou posteromedial com metáfise distal do fêmur ou proximal da tíbia.
 armadilha: Escolher posterolateral (lado do bíceps e da cabeça lateral do gastrocnêmio) ou a tíbia proximal, esquecendo que o músculo responsável é o adutor magno.

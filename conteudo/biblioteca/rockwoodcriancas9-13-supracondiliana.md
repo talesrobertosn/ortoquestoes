@@ -82,7 +82,7 @@ A **paralisia do interósseo anterior** tira a flexão longa do polegar e a prof
 - **Exceção: fratura irredutível com déficit nervoso.** Aí a redução aberta é indicada, para garantir que o nervo não está preso. O nervo preso no calo pode aparecer como um furo no osso (**sinal de METEV**).
 - Mesmo a fratura pouco desviada pode ter lesão nervosa (um caso de paralisia do radial numa fratura levemente angulada): o exame completo antes do tratamento vale para todos.
 
-!questoes central=trauma-1221
+!questoes central=trauma-1221 treino=pediatria-1535,pediatria-1536
 conceito: A lesão nervosa da supracondiliana fechada é quase sempre neuropraxia e é observada; explora-se se não houver recuperação em 3 a 6 meses ou se a fratura for irredutível com déficit.
 como: A prova R4 da SES-DF de 2022, num caso de Gartland III, julgou certo que não há indicação de exploração imediata da lesão neurológica porque a maioria é neuropraxia.
 armadilha: Explorar o nervo de rotina na redução: o capítulo reserva a exploração para a falta de recuperação ou para a fratura irredutível com déficit.

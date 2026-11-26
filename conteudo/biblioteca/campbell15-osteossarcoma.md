@@ -132,7 +132,7 @@ O Tachdjian (p. 1052) lembra que o tumor pode ser **radiotransparente e diafisá
 | condrossarcoma no adolescente | biópsia só com cartilagem | quase sempre é osteossarcoma condroblástico |
 !fim
 
-!questoes central=tumores-0326
+!questoes central=tumores-0326 treino=tumores-0408,tumores-0428,tumores-0429
 conceito: O calo exuberante de uma fratura por fadiga é um dos imitadores benignos do osteossarcoma, e a metáfise proximal da tíbia é ao mesmo tempo local clássico de fratura por estresse e um dos dois locais mais comuns do osteossarcoma.
 como: O TARO 2013 perguntou qual diagnóstico diferencial a fratura por estresse da metáfise proximal da tíbia exige, entre osteossarcoma, condroblastoma, condrossarcoma e granuloma eosinofílico.
 armadilha: Pensar no condroblastoma, que é epifisário, ou no condrossarcoma, que é muito incomum na faixa etária da fratura por fadiga.
@@ -285,7 +285,7 @@ A confusão clássica: no ENNEKING, a letra B significa extracompartimental; no 
 
 Na biópsia, feita **depois** de toda a avaliação e de preferência pelo cirurgião da cirurgia definitiva, o **trajeto é contaminado** e será ressecado em bloco: incisão **longitudinal**, por **um só compartimento**, longe dos feixes, dreno em linha (Campbell, cap. 26, p. 875). O Tachdjian (p. 1055) diz que hoje a **biópsia por agulha guiada** é mais usada que a aberta no osteossarcoma.
 
-!questoes central=tumores-0020
+!questoes central=tumores-0020 treino=tumores-0431
 conceito: Pelo ENNEKING, alto grau é II, extracompartimental é B e metástase é III; o osteossarcoma central de alto grau que rompeu o compartimento, sem metástase, é IIB.
 como: O TARO 2018 perguntou a classificação de ENNEKING de um osteossarcoma central e extracompartimental.
 armadilha: Usar a letra B do AJCC (mais de 8 cm) no lugar da do ENNEKING, ou classificar o osteossarcoma convencional como estádio I por esquecer que ele é de alto grau.
@@ -335,7 +335,7 @@ O Campbell (p. 972) chama o osteossarcoma de alto grau de superfície de **o tip
 | quimioterapia | não (cirurgia ampla) | controversa | como o alto grau |
 !fim
 
-!questoes central=tumores-0104 relacionadas=tumores-0015
+!questoes central=tumores-0104 relacionadas=tumores-0015 treino=tumores-0430
 conceito: O parosteal é o osteossarcoma de baixo grau que se apresenta como massa ossificada lobulada na face posterior do fêmur distal; o periosteal, de grau intermediário, prefere as diáfises do fêmur e da tíbia.
 como: Uma prova de Ortopedia perguntou o subtipo com massa ossificada lobulada no aspecto posterior do fêmur distal; o TARO 2019, a localização mais frequente do parosteal e do periosteal, respectivamente.
 armadilha: Trocar parosteal por periosteal pela semelhança dos nomes, ou colocar o periosteal na metáfise, que é o local do convencional.

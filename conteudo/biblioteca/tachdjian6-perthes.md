@@ -271,7 +271,7 @@ O raciocínio do diferencial bilateral é o mais cobrado (Tachdjian, p. 561 a 56
 | variante normal | entalhe da fóvea | não é necrose |
 !fim
 
-!questoes central=pediatria-0192
+!questoes central=pediatria-0192 treino=pediatria-1545
 conceito: Em criança pequena com alterações bilaterais, pensar em displasia de MEYER: meninos menores de 4 anos, frequentemente bilateral, ossificação irregular sem fragmentação nem deformação.
 como: O TARO 2023 perguntou o diferencial do PERTHES bilateral em crianças de baixa idade.
 armadilha: Escolher artrogripose, síndrome unha-patela ou raquitismo hipofosfatêmico; nenhuma das três está no Box 14.6 do Tachdjian (p. 561) nem na Tabela 24-6 do Lovell and Winter (p. 1138), que traz a displasia de MEYER para menores de 4 anos; o diferencial bilateral da criança maior é a displasia epifisária múltipla (e o hipotireoidismo).
@@ -315,7 +315,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (p. 1186.e1, eTabela 34.2), descre
 
 O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 24, p. 1130), faz a ponte com CATTERALL: o grupo **A** (menos da metade da cabeça) corresponde aos **grupos I e II de CATTERALL**, e o grupo **B** (mais da metade) aos **grupos III e IV**. O que separa A de B, diz o livro, é a **presença ou ausência de uma coluna lateral viável** da epífise; a coluna lateral intacta (CATTERALL II, SALTER-THOMPSON A) pode proteger a epífise do colapso e da deformidade, e é logo em seguida que o livro apresenta a classificação do pilar lateral de HERRING (p. 1130).
 
-!questoes central=pediatria-0683
+!questoes central=pediatria-0683 treino=pediatria-1544
 conceito: A fratura subcondral corre sobre o osso morto; sua extensão mostra a extensão da necrose, base da classificação de SALTER-THOMPSON (A menor e B maior que metade da cabeça).
 como: O TARO 2013 perguntou o que a fratura subcondral demonstra.
 armadilha: Achar que ela indica necessidade de cirurgia por si só ou evolução para artrose; ela mede extensão, e o prognóstico vem da extensão.

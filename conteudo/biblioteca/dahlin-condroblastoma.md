@@ -88,7 +88,7 @@ Na pelve, o Dahlin (p. 43) aponta uma tendência notável: os condroblastomas p�
 
 O Lovell and Winter (p. 444) amarra tudo numa hierarquia que a prova copiou. A lesão nasce no **centro de ossificação secundário**. **Na criança, o condroblastoma é a lesão neoplásica mais comum do centro de ossificação secundário**; no adulto, só o TCG o acomete com mais frequência. E há um alerta: na criança, **a condição mais comum que produz lesão no centro de ossificação secundário é a osteomielite**, que não é neoplasia. A palavra "neoplásica" no enunciado é o que tira a infecção da disputa.
 
-!questoes central=tumores-0335
+!questoes central=tumores-0335 treino=tumores-0418
 conceito: Na criança, o condroblastoma é a lesão neoplásica mais comum do centro de ossificação secundário (Lovell and Winter, p. 444); no adulto, só o TCG o acomete mais, e a osteomielite é a condição não neoplásica mais comum nesse local.
 como: O TARO 2008 perguntou a lesão neoplásica que mais frequentemente acomete o centro de ossificação secundário de osso longo da criança, contra osteocondroma, fibroma condromixoide e encondroma.
 armadilha: Escolher o fibroma condromixoide, irmão histológico do condroblastoma, mas metafisário, ou o encondroma e o osteocondroma, que nascem da cartilagem da placa e moram na metáfise.
@@ -418,7 +418,7 @@ O Tachdjian (p. 1032) acrescenta um traço de imagem e uma razão para operar: n
 | Lovell and Winter | menos de 2% | radiografia ou TC de tórax | continua benigno com implantes pulmonares |
 !fim
 
-!questoes central=tumores-0113
+!questoes central=tumores-0113 treino=tumores-0420
 conceito: O condroblastoma é tumor benigno da segunda década, com predomínio masculino (2:1), que pode dar metástase pulmonar benigna em cerca de 1% dos casos (Campbell; menos de 2% no Lovell and Winter).
 como: Uma prova de Ortopedia perguntou o correto sobre o condroblastoma, entre sexta década, metástase pulmonar em 1%, predomínio feminino e tumor maligno de baixa letalidade.
 armadilha: Achar que metástase pulmonar faz do tumor um maligno de baixa letalidade; o Dahlin chama esses casos de "quase malignos" e não reconhece condroblastoma maligno na Mayo.

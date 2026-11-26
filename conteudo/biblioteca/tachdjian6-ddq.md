@@ -135,7 +135,7 @@ No Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 427 a 429), a borda 
 
 **História natural** (p. 430 e 431). BARLOW achou instabilidade em 1 de 60 quadris: **60% normalizaram em 1 semana e 88% em 2 meses**. A **subluxação sempre leva a doença degenerativa sintomática**: a grave na 2ª década, a moderada na 3ª e 4ª, a leve na 5ª e 6ª. A **luxação completa** dói muito mais tarde ou nunca, exceto com **falso acetábulo bem formado**, a forma que mais dói (o Campbell, p. 1165, concorda). Inclinação acetabular **acima de 15°** torna a subluxação inevitável. Metade dos não tratados tem dor; **20% a 50%** das artroses do quadril vêm de displasia residual; a unilateral dá **valgo do joelho ipsilateral** e a bilateral, lombalgia por **hiperlordose**.
 
-!questoes central=pediatria-0860
+!questoes central=pediatria-0860 treino=pediatria-1543
 conceito: O obstáculo mais importante à redução do quadril luxado é a cápsula inferior em ampulheta, estreitada pelo iliopsoas; pulvinar, ligamento redondo, transverso e limbo são secundários.
 como: O ENARE R4 2025 descreveu uma criança de 12 meses com GALEAZZI positivo e redução incruenta frustrada e pediu a principal estrutura interposta na artrotomia.
 armadilha: Escolher o psoas ou o ligamento redondo, que contribuem, mas não são o bloqueio principal.
@@ -189,7 +189,7 @@ O **IIc é o mais importante de identificar**, porque é pré-luxante; o II inte
 | Campbell | encaminhar com exame positivo ao nascer ou com 2 semanas; ultrassom com 6 semanas se houver risco e exame normal |
 !fim
 
-!questoes relacionadas=pediatria-0795
+!questoes relacionadas=pediatria-0795 treino=pediatria-1540
 conceito: No GRAF, III é alfa < 43° com beta > 77° e lábio evertido; IV é o quadril luxado, com ângulos não mensuráveis; IIc é o pré-luxante.
 como: O TARO 2006 pôs em certo ou errado que luxação, teto deficiente e lábio evertido correspondem ao tipo IV.
 armadilha: Chamar de IV todo lábio evertido; IId e III também o têm.
@@ -235,7 +235,7 @@ O **falso perfil de LEQUESNE** (paciente a **65°** do feixe) mostra a displasia
 
 WARD mostrou baixa confiabilidade do SEVERIN. Na **artrografia** normal, o lábio é um **espinho** (thorn sign) sobre a cabeça; o Tachdjian punciona por via **subadutora**, cerca de 2 cm distal à origem do adutor longo, apontando para a esternoclavicular contralateral (p. 441 e 442). No gesso, o Campbell confirma a redução com TC (especificidade **96%**) ou RM (**100%**), ambas com sensibilidade de 100% (p. 1140).
 
-!questoes central=pediatria-0878 relacionadas=pediatria-0763
+!questoes central=pediatria-0878 relacionadas=pediatria-0763 treino=pediatria-1542
 conceito: A partir de 4 a 6 meses, com o núcleo ossificando, o exame é a radiografia AP da bacia; o índice acetabular cai de 27,5° no RN para cerca de 20° aos 2 anos, e o centro-borda normal passa de 19° dos 6 aos 13 anos.
 como: O R4 Coluna SES-DF 2024 pediu o exame de confirmação numa menina de 6 meses nascida em pélvica; o TARO 2008, o centro-borda esperado com índice acetabular de 40°.
 armadilha: Pedir ultrassom ou RM aos 6 meses, ou usar o centro-borda abaixo dos 5 anos.

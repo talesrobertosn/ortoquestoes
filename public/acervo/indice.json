@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-11-25T23:39:33-03:00",
-  "total": 10048,
+  "geradoEm": "2026-11-26T06:24:02-03:00",
+  "total": 10109,
   "temas": [
     {
       "slug": "mao",
@@ -49,13 +49,13 @@
       "slug": "pediatria",
       "nome": "Ortopedia pediátrica",
       "arquivo": "temas/pediatria.json",
-      "total": 1392
+      "total": 1415
     },
     {
       "slug": "tumores",
       "nome": "Tumores ósseos e de partes moles",
       "arquivo": "temas/tumores.json",
-      "total": 317
+      "total": 355
     },
     {
       "slug": "conceitos-basicos",
@@ -102106,7 +102106,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
@@ -129909,7 +129909,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
@@ -147013,7 +147013,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
@@ -149299,7 +149299,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
@@ -149619,7 +149619,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
@@ -152953,7 +152953,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
@@ -153104,7 +153104,7 @@
       "p": null,
       "a": null,
       "d": null,
-      "img": 0,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
@@ -155104,6 +155104,374 @@
       "a": null,
       "d": null,
       "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1531",
+      "t": 7,
+      "s": [
+        219
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1532",
+      "t": 7,
+      "s": [
+        230
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1533",
+      "t": 7,
+      "s": [
+        208
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1534",
+      "t": 7,
+      "s": [
+        231
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1535",
+      "t": 7,
+      "s": [
+        240
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1536",
+      "t": 7,
+      "s": [
+        240
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1537",
+      "t": 7,
+      "s": [
+        210
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1538",
+      "t": 7,
+      "s": [
+        235
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1539",
+      "t": 7,
+      "s": [
+        235
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1540",
+      "t": 7,
+      "s": [
+        204
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1541",
+      "t": 7,
+      "s": [
+        205
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1542",
+      "t": 7,
+      "s": [
+        204
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1543",
+      "t": 7,
+      "s": [
+        204
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1544",
+      "t": 7,
+      "s": [
+        212
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1545",
+      "t": 7,
+      "s": [
+        212
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1546",
+      "t": 7,
+      "s": [
+        203
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1547",
+      "t": 7,
+      "s": [
+        203
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1548",
+      "t": 7,
+      "s": [
+        206
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1549",
+      "t": 7,
+      "s": [
+        200
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1550",
+      "t": 7,
+      "s": [
+        224
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1551",
+      "t": 7,
+      "s": [
+        224
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1552",
+      "t": 7,
+      "s": [
+        207
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "pediatria-1553",
+      "t": 7,
+      "s": [
+        213
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,
@@ -160188,6 +160556,614 @@
       "a": null,
       "d": null,
       "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0407",
+      "t": 8,
+      "s": [
+        259
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0408",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0409",
+      "t": 8,
+      "s": [
+        264
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0410",
+      "t": 8,
+      "s": [
+        245
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0411",
+      "t": 8,
+      "s": [
+        265
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0412",
+      "t": 8,
+      "s": [
+        265
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0413",
+      "t": 8,
+      "s": [
+        265
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0414",
+      "t": 8,
+      "s": [
+        267
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0415",
+      "t": 8,
+      "s": [
+        244
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0416",
+      "t": 8,
+      "s": [
+        245
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0417",
+      "t": 8,
+      "s": [
+        266
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0418",
+      "t": 8,
+      "s": [
+        257
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0419",
+      "t": 8,
+      "s": [
+        264
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0420",
+      "t": 8,
+      "s": [
+        261
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0421",
+      "t": 8,
+      "s": [
+        263
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0422",
+      "t": 8,
+      "s": [
+        252
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0423",
+      "t": 8,
+      "s": [
+        249
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0424",
+      "t": 8,
+      "s": [
+        253
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0425",
+      "t": 8,
+      "s": [
+        254
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0426",
+      "t": 8,
+      "s": [
+        246
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0427",
+      "t": 8,
+      "s": [
+        251
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0428",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0429",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0430",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0431",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0432",
+      "t": 8,
+      "s": [
+        245
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0433",
+      "t": 8,
+      "s": [
+        244
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0434",
+      "t": 8,
+      "s": [
+        244
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0435",
+      "t": 8,
+      "s": [
+        259
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0436",
+      "t": 8,
+      "s": [
+        259
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0437",
+      "t": 8,
+      "s": [
+        250
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0438",
+      "t": 8,
+      "s": [
+        250
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0439",
+      "t": 8,
+      "s": [
+        258
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0440",
+      "t": 8,
+      "s": [
+        258
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0441",
+      "t": 8,
+      "s": [
+        262
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0442",
+      "t": 8,
+      "s": [
+        255
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0443",
+      "t": 8,
+      "s": [
+        245
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0444",
+      "t": 8,
+      "s": [
+        255
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
       "an": 0,
       "c": 1,
       "cia": 1,

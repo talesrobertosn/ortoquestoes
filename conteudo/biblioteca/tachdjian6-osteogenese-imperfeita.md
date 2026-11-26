@@ -270,7 +270,7 @@ A surdez costuma começar na **adolescência ou na vida adulta**. Está presente
 
 Pacientes com tipo III, sobretudo, queixam-se de **sudorese excessiva**, atribuída a um estado hipermetabólico de repouso, com intolerância ao calor, dificuldade em tolerar órteses e constipação crônica. Daí a possível suscetibilidade a **hipertermia maligna** na anestesia (febre, acidose, arritmia), para a qual cirurgião e anestesista devem estar prontos (p. 1949).
 
-!questoes central=pediatria-0419 relacionadas=pediatria-0900
+!questoes central=pediatria-0419 relacionadas=pediatria-0900 treino=pediatria-1552
 conceito: O tipo IB é autossômico dominante, com esclera azulada, defeito do colágeno tipo I e dentinogênese imperfeita; o tipo III tem dentinogênese imperfeita, escleras azuladas que clareiam com a idade e sobrevida que vai além do período perinatal.
 como: O TARO 2011 perguntou o que caracteriza o tipo IB (colágeno I, dentinogênese anormal, dominante); o R4 Coluna SES-DF 2022 pediu o julgamento de uma frase sobre o tipo III (compatível com a vida, dentinogênese, escleras que se opacificam).
 armadilha: Associar a letra B a dentes normais (é o contrário: B é dentinogênese) ou trocar o colágeno I pelo II; no item do tipo III, achar que ele é letal como o II.

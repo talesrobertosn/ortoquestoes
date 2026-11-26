@@ -248,7 +248,7 @@ Os livros divergem quanto ao peso da CML. O Rockwood and Wilkins a mantém quase
 
 Dois diagnósticos diferenciais locais merecem lugar. A **avulsão do periósteo** forma osso novo em 2 a 3 semanas e pode ser confundida com **osteomielite**; essa formação atrasa na desnutrição e no raquitismo. E as **variantes metafisárias normais** aparecem na tíbia proximal, fêmur distal, fíbula proximal e rádio e ulna distais: um **bico ósseo medial** no úmero ou na tíbia proximal, em geral **bilateral**, e uma irregularidade cortical medial da tíbia proximal em **4%** dos lactentes, bilateral em 25%.
 
-!questoes relacionadas=pediatria-0478
+!questoes relacionadas=pediatria-0478 treino=pediatria-1533
 conceito: Fratura de canto no tornozelo do lactente é lesão metafisária clássica: aro de metáfise arrancado pela esponjosa primária por tração ou sacudida, altamente específica de maus-tratos.
 como: Questão com imagem (sem banca) mostrou a lesão de canto e ofereceu entorse, Salter-Harris II e linhas de LOOSER; resposta: corner fracture associada a maus-tratos.
 armadilha: Chamar de Salter-Harris II ou de raquitismo uma linha que fica no lado metafisário da zona de calcificação provisória.

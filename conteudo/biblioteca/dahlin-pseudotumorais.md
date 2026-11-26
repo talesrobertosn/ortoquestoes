@@ -101,7 +101,7 @@ No tema pseudotumoral, isso é central. Captam: a ilhota óssea (Dahlin, p. 372:
 
 O raciocínio que a banca quer: **para dizer até onde a lesão vai, RM; para ver o osso cortical, a calcificação e o nicho, TC**. E, nos pseudotumores, **a TC frequentemente desfaz o engano que a RM criou** (miosite, fratura de insuficiência do sacro, ilhota óssea).
 
-!questoes central=tumores-0343
+!questoes central=tumores-0343 treino=tumores-0410,tumores-0432
 conceito: A RM delimita a extensão da lesão no osso e nas partes moles e suas relações anatômicas melhor que a TC; a TC fica para cortical, nicho, calcificação e erosão endosteal; a sensibilidade da RM pode superestimar a lesão pelo edema.
 como: O TARO 2006 afirmou, em formato certo ou errado, que a RM tem vantagens sobre a TC na delimitação das lesões tumorais ósseas.
 armadilha: Achar que a TC, por mostrar melhor o osso, também delimita melhor a extensão do tumor; a extensão medular e de partes moles é campo da RM.
@@ -343,7 +343,7 @@ O mesmo raciocínio vale para a avulsão. O Rockwood and Green (cap. 54) diz que
 
 O raciocínio fisiológico: no adolescente, a apófise ainda aberta é o ponto fraco, e a avulsão é traumática (Dahlin, p. 352, avulsões em jovens ativos); no adulto, sem fise, **a tração do iliopsoas não arranca o trocânter menor de um osso sadio**.
 
-!questoes central=tumores-0136
+!questoes central=tumores-0136 treino=tumores-0416
 conceito: A avulsão isolada do trocânter menor no adulto deve ser considerada patológica até prova em contrário e sugere metástase oculta, com risco de fratura do colo femoral.
 como: A SBOT-SP perguntou qual avulsão isolada deve levantar suspeita de metástase oculta, entre trocânter maior, trocânter menor e tubérculos do úmero.
 armadilha: Escolher o trocânter maior ou um tubérculo do úmero; o sinal clássico é o trocânter menor, arrancado pelo iliopsoas num osso enfraquecido.
@@ -479,7 +479,7 @@ O Campbell (cap. 30, p. 1011) define a condromatose sinovial como doença **prol
 
 O Tachdjian (cap. 25, p. 1043 e 1044) diverge na natureza: descreve focos **metaplásicos** de cartilagem na íntima sinovial, mas chama a doença de **"neoplasia benigna"**, porque a citogenética sugere **proliferação clonal** (o trauma seria estímulo à metaplasia); dá idade **acima de 40 anos**, **2 homens para 1 mulher**, joelho, tornozelo e quadril, e condrossarcoma em **2,5%** (4 de 155). O Dahlin (cap. 27, p. 381) lembra que ela aparece até na articulação temporomandibular.
 
-!questoes central=tumores-0002
+!questoes central=tumores-0002 treino=tumores-0443
 conceito: A condromatose sinovial é metaplasia cartilaginosa da sinóvia, monoarticular, mais comum no joelho (70%) do adulto (3ª a 5ª décadas), com corpos livres.
 como: O TARO 2020 cruzou neoplasia ou metaplasia com joelho do adulto ou da criança.
 armadilha: Marcar neoplasia (o Tachdjian a chama de neoplasia benigna clonal, mas o Campbell e o gabarito ficam com metaplasia) ou criança.

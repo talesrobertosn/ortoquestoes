@@ -184,7 +184,7 @@ O mecanismo é a velocidade: destruição rápida não dá tempo para o osso viz
 | Conduta | Biópsia muitas vezes necessária | Observação se o diagnóstico está firmado |
 !fim
 
-!questoes central=tumores-0045
+!questoes central=tumores-0045 treino=tumores-0427
 conceito: Na fase inicial a HCL é lítica, permeativa e roída de traça, com erosão cortical e reação periosteal lamelar, e imita o sarcoma de EWING e a osteomielite (Lovell, cap. 10, p. 330; Tachdjian, p. 1039; Campbell, p. 965); só depois a borda se define em saca-bocado.
 como: TARO 2016 perguntou com que tumor se parece a radiografia da fase inicial, com plasmocitoma, condrossarcoma e tumor de células gigantes como distratores.
 armadilha: Plasmocitoma, condrossarcoma e tumor de células gigantes não aparecem nas listas de imitação da HCL em nenhum dos livros; a dupla que os quatro repetem é EWING e osteomielite, porque na criança as três têm dor, febre, VHS alta e lesão permeativa diafisária.
