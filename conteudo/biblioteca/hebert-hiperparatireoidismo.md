@@ -161,7 +161,7 @@ O HEBERT completa o diferencial: com **hipercalciúria e PTH elevado**, lembrar 
 
 A hipercalcemia da imobilização, que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 34, p. 1220.e1), teme no pós-operatório de quem toma vitamina D em dose alta (por isso a suspende 3 semanas antes), nasce do osso parado, não da paratireoide.
 
-!questoes treino=osteometabolicas-0114
+!questoes treino=osteometabolicas-0114,osteometabolicas-0125
 conceito: A dosagem de cálcio e creatinina urinários no hiperparatireoidismo primário serve para excluir a hipercalcemia hipocalciúrica familiar, que tem hipercalcemia com PTH normal ou alto mas calciúria muito reduzida.
 como: Um OrtoQuestões Simulado perguntou o que a dosagem do cálcio e da creatinina urinários exclui na investigação do primário.
 armadilha: Pensar em osteodistrofia renal (que se reconhece pela creatinina sérica e pelo fosfato alto) ou em hipercalcemia por imobilização, que não imita o primário no PTH.
@@ -208,7 +208,7 @@ O HEBERT (cap. 29) acrescenta o **desaparecimento da lâmina dura dos dentes**, 
 
 Os livros divergem no endereço: o HEBERT escreve erosões subperiosteais "nas falanges distais"; o Lovell, **margem radial das falanges médias**; o Rockwood mostra as duas. Se a alternativa pedir o local clássico, é a margem radial da falange média do segundo e terceiro dedos.
 
-!questoes treino=osteometabolicas-0113
+!questoes treino=osteometabolicas-0113,osteometabolicas-0126
 conceito: Reabsorção subperiosteal da falange média e do tufo da falange distal numa mulher acima dos 50 anos com cálculo renal e poliúria é hiperparatireoidismo primário: hipercalcemia com hipofosfatemia.
 como: Um OrtoQuestões Simulado mostrou a radiografia do dedo da Figura 4-8 do Rockwood, ao lado do normal, e pediu o perfil laboratorial esperado.
 armadilha: Pensar em osteodistrofia renal por causa do rim (ali o fosfato é alto e o cálcio baixo); cálculo e poliúria são da hipercalcemia, não da insuficiência renal.
@@ -333,7 +333,7 @@ O Tachdjian dá o espectro: com filtração glomerular abaixo de **45 mL/min/1,7
 
 O HEBERT (cap. 27, laboratório do raquitismo) dá a regra das exceções: a **fosfatase alcalina está aumentada em todas as formas** de raquitismo; o **fósforo tende a estar reduzido em todos os tipos, exceto na osteodistrofia renal, em que está aumentado**; o **PTH está aumentado em todos**, exceto nas formas hipofosfatêmicas. O Tachdjian (cap. 38, p. 1971) detalha: **ureia e creatinina altas; fosfato, fosfatase alcalina e PTH elevados; cálcio quase sempre baixo**; albumina baixa; **acidose**; vitamina D diminuída. Na Tabela 38.4 do mesmo livro, reproduzida no resumo de Raquitismo e osteomalácia, a osteodistrofia renal tem cálcio normal ou baixo, **fosfato alto**, fosfatase alcalina alta, **PTH muito alto**, 25(OH)D normal e **1,25 muito baixa**. A biópsia óssea pode ser necessária para o diagnóstico preciso e para guiar o tratamento.
 
-!questoes central=osteometabolicas-0005 relacionadas=osteometabolicas-0031
+!questoes central=osteometabolicas-0005 relacionadas=osteometabolicas-0031 treino=osteometabolicas-0124
 conceito: Na osteodistrofia renal o rim não elimina fosfato: o fosfato sobe, liga o cálcio e derruba o cálcio iônico, e a falta de 1,25 tira ainda mais cálcio; o PTH sobe muito (hiperparatireoidismo secundário). É a única forma de raquitismo com fosfato alto.
 como: O TARO 2018 perguntou os níveis de fosfato e PTH na osteodistrofia renal; a SBOT-SP e o TEOT 2023 fizeram a mesma pergunta, com o mesmo enunciado, para o raquitismo por osteodistrofia renal.
 armadilha: Repetir o padrão das outras formas de raquitismo (fosfato baixo), ou achar que o PTH fica normal ou baixo porque falta vitamina D ativa; ele sobe justamente por causa disso.

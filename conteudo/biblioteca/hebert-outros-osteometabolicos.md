@@ -92,7 +92,7 @@ O HEBERT (cap. 28, Tabela 28.1) separa a primária em **pós-menopausa (tipo I)*
 
 O PTH diminuído do tipo I é consequência: o osso despeja cálcio, a paratireoide descansa e a calciúria sobe. No tipo II o caminho é o inverso: menos vitamina D ativa e menos absorção intestinal elevam o PTH (hiperparatireoidismo secundário da senilidade), tema do resumo de **Hiperparatireoidismo e osteodistrofia renal**. As secundárias que o HEBERT lista são hiperparatireoidismo, diabetes melito, corticoide, menopausa cirúrgica, tumores da medula e mieloma. O tratamento farmacológico está no resumo de **Osteoporose: diagnóstico e tratamento**.
 
-!questoes central=osteometabolicas-0090
+!questoes central=osteometabolicas-0090 treino=osteometabolicas-0136
 conceito: Na osteoporose o osso removido pelo osteoclasto supera o depositado pelo osteoblasto; a forma pós-menopausa tem atividade osteoclástica aumentada e a senil tem formação diminuída.
 como: O TARO 2006 pediu certo ou errado para a frase de que na osteoporose há tanto aumento da atividade osteoclástica quanto diminuição da osteoblástica.
 armadilha: Achar que osteoporose é só excesso de reabsorção; o corticoide e a idade agem principalmente derrubando a formação.

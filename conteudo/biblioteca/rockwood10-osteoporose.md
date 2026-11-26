@@ -221,7 +221,7 @@ alerta: O Rockwood (cap. 4, seção Osteoporosis, Pathophysiology) fala em perda
 
 A **doença renal crônica** está entre as comorbidades secundárias da fratura de quadril (Rockwood, cap. 53, Tabela 53-1), e o mesmo capítulo diz que, embora a perda de massa do colo seja quase sempre osteoporose, **a osteomalacia e a osteodistrofia renal também tornam o colo femoral mais suscetível à fratura**, só que são menos prevalentes. O cap. 4 acrescenta a consequência terapêutica: **o zoledronato exige TFG acima de 35 mL/min**, e o **denosumabe**, que não é eliminado pelo rim, pode ser usado na insuficiência renal, com cuidado pela hipocalcemia.
 
-!questoes central=osteometabolicas-0019
+!questoes central=osteometabolicas-0019 treino=osteometabolicas-0121
 conceito: A doença renal crônica é causa secundária de fragilidade; a osteodistrofia renal, como a osteomalacia, torna o colo femoral mais suscetível à fratura.
 como: O TEOT 2022 perguntou em qual local o paciente com insuficiência renal crônica e osteoporose tem maior incidência de fratura (colo do fêmur).
 armadilha: Responder coluna lombar por associar osteoporose a fratura vertebral, esquecendo que o enunciado é a doença renal.
@@ -256,7 +256,7 @@ No homem, a regra é a da NOF: **acima de 50 anos com fratura**, e fratura por t
 
 Cuidado com o anti-hipertensivo: o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54, Tabela 54-1), o põe entre os **fatores de risco de queda**, ao lado de tranquilizantes, álcool, múltiplas medicações, distúrbios de marcha e equilíbrio e alterações visuais. Ele aumenta a chance de cair, e não entra em nenhuma das listas de indicação de densitometria da tabela acima.
 
-!questoes central=osteometabolicas-0079
+!questoes central=osteometabolicas-0079 treino=osteometabolicas-0122
 conceito: A fratura por fragilidade acima de 50 anos indica densitometria em homens e mulheres (NOF e modelo FLS); rotina em todo homem só a partir de 70 anos.
 como: O TARO 2013 perguntou a partir de que idade e em que situação o homem deve ser investigado por densitometria (acima de 50 anos, com fratura por trauma leve).
 armadilha: Escolher o rastreamento de rotina aos 60 anos, que a NOF reserva para homens acima de 70, ou tratar raça negra como fator de risco.
