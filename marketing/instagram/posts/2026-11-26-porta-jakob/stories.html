@@ -64,6 +64,29 @@
 .inclui span { padding: 10px 17px; border-radius: 999px; background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.3); font: 700 22px/1 Jakarta; color: #fff; }
 .secao { position: absolute; left: 70px; right: 70px; display: flex; align-items: center; gap: 16px; font: 400 38px/1 Jersey; letter-spacing: 3px; color: #a9ecd9; }
 .secao::before, .secao::after { content: ''; flex: 1; height: 4px; background: repeating-linear-gradient(90deg, rgba(169,236,217,.55) 0 12px, transparent 12px 20px); }
+.rot2 { font: 400 32px/1 Jersey; letter-spacing: 3px; color: #a9ecd9; }
+.txt2 { margin-top: 10px; font: 400 26px/1.38 Inter; color: #e9f4f0; }
+.txt2 b { font-weight: 700; color: #fff; }
+.txt2 .nb { display: inline-grid; place-items: center; width: 36px; height: 36px; background: var(--ouro); color: #13302c; font: 800 22px/1 Jakarta; vertical-align: 2px; }
+.caixa2 { position: absolute; left: 70px; right: 70px; padding: 26px 30px; background: #fdf9ef; box-shadow: 10px 10px 0 #0a2420; }
+.caixa2 .q { display: grid; grid-template-columns: 52px 1fr; gap: 18px; margin-top: 18px; }
+.caixa2 .q > b { width: 52px; height: 52px; display: grid; place-items: center; background: var(--verde); color: #f9e2a6; font: 800 28px/1 Jakarta; }
+.caixa2 .q p { font: 400 24px/1.36 Inter; color: #4d5b58; }
+.caixa2 .q p span { display: block; margin-bottom: 4px; font: 800 29px/1.15 Jakarta; letter-spacing: -.4px; color: #1f2a28; }
+.caixa2 .fim { margin-top: 22px; padding: 18px 22px; background: linear-gradient(160deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 4px #dcaa45; font: 500 22px/1.35 Inter; color: #34423f; }
+.caixa2 .fim span { display: block; margin-bottom: 6px; font: 400 44px/1 Jersey; letter-spacing: 2px; color: #b5452f; }
+.tab { position: absolute; left: 70px; right: 70px; background: #fdf9ef; box-shadow: 10px 10px 0 #0a2420; padding: 12px 22px 18px; }
+.tab .cab, .tab .lin { display: grid; grid-template-columns: 92px 200px 200px 1fr; gap: 14px; align-items: center; }
+.tab .cab span { font: 400 24px/1.05 Jersey; letter-spacing: 1.5px; color: var(--verde); text-align: center; padding: 10px 0; }
+.tab .lin { padding: 14px 0; border-top: 2px dashed #d6ccb6; }
+.tab .lin .e { width: 76px; height: 76px; display: grid; place-items: center; background: var(--verde); color: #f9e2a6; font: 800 34px/1 Jakarta; }
+.tab .lin i { font-style: normal; justify-self: center; width: 130px; padding: 12px 0; text-align: center; font: 400 36px/1 Jersey; letter-spacing: 2px; }
+.tab i.nao { background: #e6ded0; color: #6b6555; }
+.tab i.sim { background: #b5452f; color: #fff; }
+.tab .lin p { font: 400 21px/1.32 Inter; color: #34423f; }
+.tab .lin p b { font-weight: 700; color: #1f2a28; }
+.tab .lin.sel { margin: 0 -22px; padding: 14px 22px; background: linear-gradient(160deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 4px #dcaa45; border-top: 0; }
+.tab .lin.sel .e { background: #b5452f; color: #fff; }
 </style></head>
 <body>
 <svg width="0" height="0" style="position:absolute">
@@ -74,78 +97,59 @@
   </defs>
 </svg>
 
-<!-- ============ STORY 1: o caso ============ -->
+<!-- ============ STORY 1: o caso, em palavras simples ============ -->
 <section id="qui26-1-caso">
   <div class="fundo"></div><div class="grade"></div>
   <div class="teot"><div class="t">TEOT<small>2022</small></div><p class="s"><b>PROVA DE TÍTULO</b><br>ORTOPEDIA PEDIÁTRICA</p></div>
-  <h1 class="h1" style="top:420px;">Menina de 6 anos, queda,<br>cotovelo inchado.<br><span class="o">Qual é o estágio de JAKOB?</span></h1>
+  <h1 class="h1" style="top:405px; font-size:56px;">Menina de 6 anos, queda,<br>cotovelo inchado.<br><span class="o">Qual é o estágio de JAKOB?</span></h1>
 
-  <div class="rx" style="left:190px; width:700px; top:660px;">
+  <div class="rx" style="left:70px; width:470px; top:640px;">
     <img src="img/questao.jpeg" alt="">
-    <svg viewBox="0 0 680 668" width="680" height="668">
-      <ellipse cx="168" cy="236" rx="132" ry="128" fill="none" stroke="#F4CF7C" stroke-width="5" stroke-dasharray="16 10"/>
-      <path d="M296 150 L380 96" stroke="#F4CF7C" stroke-width="5"/>
-      <rect x="378" y="62" width="230" height="62" fill="#F4CF7C"/>
-      <text x="493" y="105" text-anchor="middle" font-family="Jersey" font-size="40" letter-spacing="2" fill="#13302c">O FRAGMENTO</text>
+    <svg viewBox="0 0 450 442" width="450" height="442">
+      <ellipse cx="110" cy="157" rx="90" ry="86" fill="none" stroke="#F4CF7C" stroke-width="5" stroke-dasharray="14 9"/>
+      <rect x="18" y="16" width="44" height="44" fill="#F4CF7C"/><text x="40" y="51" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="32" fill="#13302c">1</text>
     </svg>
   </div>
-  <p class="legenda" style="top:1352px;">Imagem da prova, a mesma do Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17, fig. 17-6F.</p>
-
-  <p class="chave" style="top:1404px;">JAKOB só faz <b>duas perguntas</b>:</p>
-  <div class="perg" style="top:1452px;">
-    <div>
-      <svg viewBox="0 0 96 72"><rect x="4" y="12" width="36" height="48" fill="url(#tijolo)"/><rect x="56" y="12" width="36" height="48" fill="url(#tabua)"/><path d="M48 4v64" stroke="#b5452f" stroke-width="5" stroke-dasharray="7 5"/></svg>
-      <p>ROMPEU A ARTICULAÇÃO?<span>o traço atravessou tudo</span></p>
-    </div>
-    <div>
-      <svg viewBox="0 0 96 72"><rect x="4" y="12" width="30" height="48" fill="url(#tijolo)"/><rect x="50" y="20" width="30" height="40" fill="url(#tabua)" transform="rotate(35 65 40)"/><path d="M48 10 A 30 30 0 0 1 90 30" fill="none" stroke="#b5452f" stroke-width="5" marker-end="url(#ponta)"/></svg>
-      <p>O FRAGMENTO GIROU?<span>olhe se ele está virado</span></p>
-    </div>
+  <div style="position:absolute; left:570px; right:70px; top:640px;">
+    <p class="rot2">O QUE É</p>
+    <p class="txt2">Fratura do <b>côndilo lateral do úmero</b>: o lado de fora do cotovelo se solta como um bloco.</p>
+    <p class="rot2" style="margin-top:22px;">O QUE OLHAR</p>
+    <p class="txt2"><b class="nb">1</b> é o fragmento: uma lasca de osso e o núcleo do capítulo, que saíram juntos.</p>
+    <p class="txt2" style="margin-top:14px;">Muito do cotovelo da criança ainda é cartilagem e <b>não aparece no raio X</b>. Por isso olhamos para onde foi o fragmento.</p>
   </div>
+  <p class="legenda" style="top:1120px; left:70px; right:auto; width:470px; text-align:left;">Imagem da prova, a mesma do Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17, fig. 17-6F.</p>
+
+  <div class="caixa2" style="top:1210px;">
+    <p class="rot2" style="color:var(--verde);">JAKOB FAZ SÓ DUAS PERGUNTAS</p>
+    <div class="q"><b>1</b><p><span>O traço atravessou a articulação?</span>Ou parou antes, deixando a cartilagem do outro lado inteira, segurando o fragmento no lugar?</p></div>
+    <div class="q"><b>2</b><p><span>O fragmento girou?</span>Ou só se afastou, continuando de frente para o osso de onde saiu?</p></div>
+  </div>
+  <p class="rodape" style="top:1590px; font-size:25px;">No próximo story: as respostas viram o estágio</p>
 </section>
 
-<!-- ============ STORY 2: a porta de JAKOB ============ -->
+<!-- ============ STORY 2: a tabela de JAKOB ============ -->
 <section id="qui26-2-jakob">
   <div class="fundo" style="transform:scaleX(-1);"></div><div class="grade"></div>
-  <div class="teot"><div class="t">TEOT<small>2022</small></div><p class="s"><b>A PORTA</b><br>DE JAKOB</p></div>
-  <h1 class="h1" style="top:420px; font-size:58px;">Pense numa porta:<br><span class="o">quanto ela saiu do batente?</span></h1>
+  <div class="teot"><div class="t">TEOT<small>2022</small></div><p class="s"><b>JAKOB</b><br>EM SIM E NÃO</p></div>
+  <h1 class="h1" style="top:420px; font-size:56px;">Duas respostas,<br><span class="o">três estágios.</span></h1>
 
-  <!-- I -->
-  <div class="est" style="top:590px;">
-    <svg viewBox="0 0 380 210">
-      <rect x="30" y="25" width="150" height="160" fill="url(#tijolo)"/>
-      <rect x="183" y="25" width="120" height="160" fill="url(#tabua)" stroke="#a8802a" stroke-width="3"/>
-      <circle cx="303" cy="185" r="13" fill="#14655e" stroke="#0a2420" stroke-width="3"/>
-    </svg>
-    <div><p class="n"><b>I</b>encostada</p><p>A dobradiça segura: <b>articulação íntegra</b>, quase sem desvio.</p></div>
-  </div>
-  <!-- II -->
-  <div class="est" style="top:850px;">
-    <svg viewBox="0 0 380 210">
-      <rect x="20" y="25" width="150" height="160" fill="url(#tijolo)"/>
-      <rect x="232" y="25" width="120" height="160" fill="url(#tabua)" stroke="#a8802a" stroke-width="3"/>
-      <path d="M182 105h38" stroke="#b5452f" stroke-width="5" marker-start="url(#ponta)" marker-end="url(#ponta)"/>
-      <circle cx="170" cy="185" r="13" fill="none" stroke="#b5452f" stroke-width="3" stroke-dasharray="5 4"/>
-    </svg>
-    <div><p class="n"><b>II</b>aberta</p><p>A dobradiça rompeu: <b>a articulação foi atravessada</b>. Afasta, mas fica reta.</p></div>
-  </div>
-  <!-- III -->
-  <div class="est sel" style="top:1110px;">
-    <span class="tag">A DA PROVA</span>
-    <svg viewBox="0 0 380 210">
-      <rect x="20" y="25" width="150" height="160" fill="url(#tijolo)"/>
-      <rect x="230" y="62" width="120" height="100" fill="url(#tabua)" stroke="#a8802a" stroke-width="3" transform="rotate(62 290 112)"/>
-      <path d="M210 40 A 80 80 0 0 1 350 52" fill="none" stroke="#b5452f" stroke-width="6" marker-end="url(#ponta)"/>
-      <circle cx="170" cy="185" r="13" fill="none" stroke="#b5452f" stroke-width="3" stroke-dasharray="5 4"/>
-    </svg>
-    <div><p class="n"><b>III</b>arrancada</p><p>Fora do lugar e <b>girada</b>. A rotação é o que separa o III do II.</p></div>
+  <div class="tab" style="top:590px;">
+    <div class="cab"><span></span><span>ATRAVESSOU A<br>ARTICULAÇÃO?</span><span>O FRAGMENTO<br>GIROU?</span></div>
+    <div class="lin"><b class="e">I</b><i class="nao">NÃO</i><i class="nao">NÃO</i>
+      <p>A cartilagem do outro lado segura o fragmento: <b>quase sem desvio</b>.</p></div>
+    <div class="lin"><b class="e">II</b><i class="sim">SIM</i><i class="nao">NÃO</i>
+      <p>Solto, o fragmento <b>se afasta, mas continua de frente</b>.</p></div>
+    <div class="lin sel"><b class="e">III</b><i class="sim">SIM</i><i class="sim">SIM</i>
+      <p>Fragmento <b>totalmente fora do lugar e virado</b>.</p></div>
   </div>
 
-  <div class="resp" style="top:1376px;">
-    <div class="g">III</div>
-    <p>Na radiografia, o fragmento está longe e virado.<span>Gabarito oficial: C. E o estágio IV não existe: JAKOB vai de I a III.</span></p>
+  <div class="caixa2" style="top:1070px;">
+    <p class="rot2" style="color:var(--verde);">NA RADIOGRAFIA DA PROVA</p>
+    <div class="q"><b>1</b><p><span>Atravessou? SIM.</span>O fragmento está longe do úmero; isso só acontece quando a articulação foi rompida.</p></div>
+    <div class="q"><b>2</b><p><span>Girou? SIM.</span>O núcleo do capítulo está virado em relação ao osso de onde saiu.</p></div>
+    <div class="fim"><span>SIM + SIM = ESTÁGIO III</span>Gabarito oficial: C. Atenção: não existe estágio IV, JAKOB vai de I a III.</div>
   </div>
-  <p class="legenda" style="top:1548px;">Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17. A porta é só uma metáfora.</p>
+  <p class="legenda" style="top:1530px;">Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 17.</p>
 </section>
 
 <!-- ============ STORY 3: comece já ============ -->
