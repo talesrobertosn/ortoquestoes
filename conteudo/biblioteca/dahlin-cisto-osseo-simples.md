@@ -106,7 +106,7 @@ Aqui está a pergunta preferida das bancas. O Campbell (p. 937) diz, numa frase 
 
 Uma curiosidade: a Tabela 13-2 do Lovell and Winter (p. 432) põe o "cisto ósseo" entre as lesões **diafisárias**, mas o texto do mesmo capítulo (p. 454 e 456) diz que ele envolve mais a **metáfise** e só migra para a diáfise quando a epífise "cresce para longe". Na prova, a resposta esperada é a metáfise.
 
-!questoes central=tumores-0121 relacionadas=tumores-0048,tumores-0119
+!questoes central=tumores-0121 relacionadas=tumores-0048,tumores-0119 treino=tumores-0424
 conceito: Na criança, o cisto simples ocupa a metáfise do úmero e do fêmur proximais; no adulto, o Campbell 15 aponta o ilíaco e o calcâneo como as localizações mais comuns.
 como: O TEOT 2023 e o TARO 2016 perguntaram os ossos mais acometidos no adulto; uma prova de Ortopedia mostrou a imagem de um cisto e pediu, além do calcâneo, a outra localização mais comum no adulto.
 armadilha: Responder úmero e fêmur proximais, que são os locais da criança; a pergunta pede o adulto.
@@ -444,7 +444,7 @@ O diferencial mais perigoso é o **osteossarcoma telangiectásico**. O Campbell 
 | CAPANNA | agressivo | sem casca, borda endosteal mal definida |
 !fim
 
-!questoes central=tumores-0327
+!questoes central=tumores-0327 treino=tumores-0425
 conceito: Lesão lítica insuflante, excêntrica na metáfise, de crescimento rápido e aspecto em favo de mel ou bolhoso num jovem é cisto ósseo aneurismático.
 como: O TARO 2007 descreveu a lesão na metáfise distal do fêmur e ofereceu tumor de células gigantes, fibroma condromixoide, cisto aneurismático e condroblastoma.
 armadilha: Marcar tumor de células gigantes pelo aspecto insuflante; ele é epifisário e do adulto de 20 a 40 anos, e o condroblastoma também é epifisário (Campbell 15, cap. 26, p. 869.e1, e Tabela 28.1, p. 953).

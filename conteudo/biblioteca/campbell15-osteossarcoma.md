@@ -132,7 +132,7 @@ O Tachdjian (p. 1052) lembra que o tumor pode ser **radiotransparente e diafisá
 | condrossarcoma no adolescente | biópsia só com cartilagem | quase sempre é osteossarcoma condroblástico |
 !fim
 
-!questoes central=tumores-0326
+!questoes central=tumores-0326 treino=tumores-0408
 conceito: O calo exuberante de uma fratura por fadiga é um dos imitadores benignos do osteossarcoma, e a metáfise proximal da tíbia é ao mesmo tempo local clássico de fratura por estresse e um dos dois locais mais comuns do osteossarcoma.
 como: O TARO 2013 perguntou qual diagnóstico diferencial a fratura por estresse da metáfise proximal da tíbia exige, entre osteossarcoma, condroblastoma, condrossarcoma e granuloma eosinofílico.
 armadilha: Pensar no condroblastoma, que é epifisário, ou no condrossarcoma, que é muito incomum na faixa etária da fratura por fadiga.

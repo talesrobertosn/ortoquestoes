@@ -86,7 +86,7 @@ O Tachdjian (p. 1020) é explícito: osteocondromas **raramente se desenvolvem n
 | crânio e mandíbula | não acometidos na Mayo (Dahlin, p. 10) |
 !fim
 
-!questoes central=tumores-0344
+!questoes central=tumores-0344 treino=tumores-0417
 conceito: O osteocondroma ocorre em ossos de ossificação endocondral, quase sempre na metáfise de ossos longos, e raramente nos ossos do carpo e do tarso, apesar de serem pré-formados em cartilagem, embora possa acometer as falanges.
 como: O TARO 2006 afirmou, em certo ou errado, que o osteocondroma raramente ocorre nos ossos carpais ou tarsais, apesar de esses ossos serem pré-formados de cartilagem.
 armadilha: Achar que todo osso pré-formado em cartilagem tem a mesma chance de ter osteocondroma; o que importa é a fise metafisária, que carpo e tarso não têm.

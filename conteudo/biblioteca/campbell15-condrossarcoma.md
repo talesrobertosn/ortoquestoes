@@ -268,7 +268,7 @@ Os condromas são **lesões benignas de cartilagem hialina**, comuns, em todas a
 
 O capítulo da mão do Campbell (cap. 83, p. 3580 e 3581) diz que os encondromas são os **tumores ósseos primários mais comuns e mais destrutivos da mão**, e que o local mais comum é a **metáfise proximal da falange proximal**, onde a lesão é excêntrica e expansiva. O SIZÍNIO HEBERT (cap. 7) confirma a ordem: **falange proximal** a mais acometida, seguida pela **falange média** e pelos **metacarpais**; raro no carpo; mais frequente na segunda e terceira décadas, sem predileção por sexo. A falange distal é localização pouco comum, mostrada como exceção numa figura do mesmo capítulo. O Tachdjian (cap. 25, p. 1027) dá a proporção: **quase 50%** dos encondromas solitários estão na mão, sobretudo nas falanges; o pico de apresentação é por volta dos **35 anos**.
 
-!questoes central=tumores-0094
+!questoes central=tumores-0094 treino=tumores-0415
 conceito: Na mão, o encondroma predomina na falange proximal, sobretudo na metáfise proximal, seguida pela falange média e pelos metacarpais.
 como: Uma prova de Ortopedia perguntou em que osso da mão o encondroma é mais visto, oferecendo metacarpo, rádio distal, falange distal e falange proximal.
 armadilha: Marcar o metacarpo, que é sede frequente mas fica atrás das falanges, ou a falange distal, que é rara.

@@ -193,7 +193,7 @@ A classificação radiográfica foi proposta por **GLEDHILL** (quatro tipos) e a
 | conduta correta | cultura e patologia de todo material; citologia na sala | drenar EWING como osteomielite piora o prognóstico |
 !fim
 
-!questoes central=tumores-0211
+!questoes central=tumores-0211 treino=tumores-0407
 conceito: Na classificação de ROBERTS da osteomielite subaguda, o tipo IV é a lesão diafisária com reação periosteal em casca de cebola que simula o sarcoma de EWING.
 como: O CET-PR perguntou qual tipo de ROBERTS tem o EWING como diagnóstico diferencial.
 armadilha: Marcar o tipo II (que imita osteossarcoma) ou o III (que imita osteoide osteoma) por confundir metáfise com diáfise.

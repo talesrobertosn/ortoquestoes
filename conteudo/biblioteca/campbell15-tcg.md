@@ -106,7 +106,7 @@ armadilha: Marcar condroblastoma, que é epifisário mas do esqueleto imaturo, o
 alerta: A questão `tumores-0339` está sem gabarito no banco; o Campbell (cap. 26, p. 868 e 869.e1) sustenta a alternativa D, tumor de células gigantes, para a lesão epifisária do esqueleto maduro.
 !fim
 
-!questoes central=tumores-0085
+!questoes central=tumores-0085 treino=tumores-0426
 conceito: O rádio distal é o terceiro local mais frequente do TCG e aquele em que o tumor tende a ter comportamento mais agressivo, o que pode justificar ressecção primária e reconstrução com fíbula proximal.
 como: O TARO 2022 perguntou em que extremidade distal a evolução do TCG é mais agressiva: tíbia, rádio, fêmur ou úmero.
 armadilha: Marcar o fêmur distal, que é o local mais comum, confundindo frequência com agressividade.
