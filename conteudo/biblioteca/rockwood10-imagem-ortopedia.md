@@ -1,6 +1,6 @@
 ---
 id: rockwood10-imagem-ortopedia
-versao: 1
+versao: 2
 titulo: Imagem em ortopedia
 especialidade: conceitos-basicos
 acesso: gratis
@@ -216,6 +216,13 @@ Os tecidos densos e ordenados (cortical, tendão, ligamento, menisco, labro) tê
 | tumor de partes moles inespecífico | igual ao músculo | mais claro que músculo e gordura | regra para a maioria das massas |
 !fim
 
+Veja a regra aplicada num joelho normal (GREENSPAN, cap. 2, Figura 2.38). No T1 (A), a medula gordurosa do fêmur e da tíbia e a gordura de HOFFA são brancas, e tendão patelar, ligamentos e meniscos são pretos. Na densidade de prótons com saturação de gordura (C), a mesma medula fica cinza-escura, e o que brilha passa a ser o líquido e a cartilagem; o tendão e os ligamentos continuam pretos nas três.
+
+!figura 2.38 imagem=conceitos-basicos/greenspan6-2-38-abc.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 2, Figura 2.38. RM sagital do mesmo joelho em três sequências: T1 (A), gradiente-eco ponderado em T2* (B) e densidade de prótons com saturação de gordura (C).
+!fim
+
+
 ## Músculo e cartilagem
 
 A questão que pede o sinal de músculo, cartilagem e tendão em T1 espera **intermediário, intermediário e hipossinal**. O tendão escuro está explícito no Campbell. O músculo intermediário em T1 aparece de modo indireto: a massa de partes moles típica é **isointensa ao músculo em T1** e mais clara que músculo e gordura em T2 (Campbell, p. 177), o que coloca o músculo no meio da escala, entre a gordura clara e a cortical preta. A cartilagem hialina articular também ocupa a faixa intermediária; o The Adult Hip estuda-a com sequências FSE de ponderação intermediária e descreve a degeneração como **hipersinal** com perda da estratificação normal em camadas, e o Campbell lembra que a cartilagem articular e a fisária brilham na maioria das técnicas de gradiente-eco. O labro, por ser fibrocartilagem com pouca água móvel, é **escuro** nas sequências convencionais: triangular, homogeneamente hipointenso e colado à borda acetabular; uma rotura aparece como hipersinal focal na base ou na substância.
@@ -225,6 +232,13 @@ A questão que pede o sinal de músculo, cartilagem e tendão em T1 espera **int
 A contusão óssea (edema medular) corresponde, na histologia, a **microfraturas trabeculares, edema e hemorragia** na medula gordurosa. Em T1, o edema é escuro (água num fundo de gordura clara); em T2 com supressão e no STIR, é claro. ROEMER e BOHNDORF encontraram alterações medulares em quase três quartos das lesões agudas do joelho, 69% no compartimento lateral; dois anos depois, só 14% persistiam, sem artrose nem necrose. Moral do Rockwood: **edema não é fratura**, e tratar edema trocantérico como fratura leva a fixação desnecessária.
 
 O traço de fratura aparece como **linha de baixo sinal** em DP ou T2, contornada pela medula gordurosa clara, e é bem visto também no STIR, que ainda mostra o edema ao redor. No T1, o traço pode se perder no meio do edema, porque os dois são escuros. Mesmo assim, no quadril, IWATA encontrou o **T1 coronal com sensibilidade de 100%**, contra 84% do T2 sozinho, e um protocolo abreviado com **STIR coronal e T1 coronal** tem alta sensibilidade e especificidade para fratura, necrose avascular e lesão muscular no paciente com dor no quadril e radiografia normal.
+
+A contusão do côndilo femoral medial mostra a inversão de sinal na prática (GREENSPAN, cap. 2, Figura 2.39): em T1 (A), é uma mancha cinza-escura mal definida dentro da medula branca; na inversão-recuperação (B), com a gordura apagada, o fundo fica preto e o edema acende. Repare que não há linha de fratura: é edema, e não fratura.
+
+!figura 2.39 imagem=conceitos-basicos/greenspan6-2-39.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 2, Figura 2.39. Contusão óssea do côndilo femoral medial (setas): área de sinal baixo em T1 (A) que se torna sinal alto na sequência de inversão-recuperação com a gordura suprimida (B).
+!fim
+
 
 !questoes central=conceitos-basicos-0172 relacionadas=conceitos-basicos-0234 treino=conceitos-basicos-0444,conceitos-basicos-0445,conceitos-basicos-0457
 conceito: Água tem T1 e T2 longos: escura em T1 e clara em T2; gordura clara em T1; cortical, tendão e ligamento escuros em todas; em T1, músculo e cartilagem ficam na faixa intermediária e o tendão é hipossinal.
@@ -266,6 +280,13 @@ O contraste da RM é feito de íons de **gadolínio presos a macromoléculas** c
 
 A **artrografia por RM direta** injeta gadolínio diluído na articulação e distende a cápsula (manguito parcial ou total, labro, ligamentos, menisco operado, lesão osteocondral); a **indireta** dá gadolínio na veia e espera com exercício leve, sem distender a cápsula.
 
+O que o gadolínio acrescenta fica claro num abscesso (GREENSPAN, cap. 24, Figura 24.14). Em T2 (A), a coleção é só uma mancha clara, que poderia ser edema ou fleimão. No T1 após gadolínio (B), o pus não realça e fica escuro, enquanto a parede de tecido de granulação, muito vascularizada, brilha em anel: **realce periférico com centro sem realce é coleção**.
+
+!figura 24.14 imagem=conceitos-basicos/greenspan6-24-14.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 24, Figura 24.14. Abscesso de partes moles no dorso do pé de um diabético: coleção hiperintensa em T2 (A) e, no T1 após gadolínio venoso (B), centro escuro sem realce com parede que realça (setas).
+!fim
+
+
 ## O que pode e o que não pode entrar no magneto
 
 !tabela Segurança na RM (Campbell, cap. 3, quadro Campbell's Concepts, p. 155; Rockwood, cap. 7, seções Magnetic Resonance Imaging e MRI Safety)
@@ -285,6 +306,13 @@ Há uma divergência que merece atenção. O Campbell coloca o **fixador externo
 ## Metal e artefato
 
 O artefato depende do volume, da orientação e do material: o **titânio produz muito menos artefato que o aço inoxidável** (Campbell, p. 155; Rockwood, Fig. 7-9). Com metal, o Rockwood recomenda **1,5 T em vez de 3 T** (a inomogeneidade dobra a 3 T), **spin-eco rápido** em vez de gradiente-eco, **STIR** em vez de saturação química e aumento da largura de banda do receptor (cerca de 60% menos artefato).
+
+O artefato de suscetibilidade tem um aspecto típico (GREENSPAN, cap. 5, Figura 5.102 A): em volta da âncora metálica na cabeça do úmero (seta), um buraco preto sem sinal, maior que o implante, com borda clara de sinal deslocado. Tudo o que estiver dentro desse buraco não pode ser avaliado, e é por isso que se escolhem titânio, spin-eco rápido e STIR.
+
+!figura 5.102 imagem=conceitos-basicos/greenspan6-5-102.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 5, Figura 5.102. Artrorressonância do ombro em T1 com saturação de gordura depois de reparo do manguito: vazio de sinal com borda brilhante na cabeça do úmero, artefato de suscetibilidade de uma âncora de sutura (seta).
+!fim
+
 
 # Ultrassonografia {radar=fundamento}
 
@@ -348,6 +376,13 @@ Os livros diferem um pouco nos tempos (o Rockwood põe a segunda fase nos 5 minu
 ## Lendo o padrão das fases
 
 O Tachdjian (cap. 23, p. 948) dá a chave de leitura na infecção. **Osteomielite**: captação focal aumentada nas **três fases**. **Celulite, abscesso de partes moles ou piomiosite**: captação difusa nas duas primeiras e pouca ou nenhuma na tardia. **Artrite séptica**: difícil, com falso-positivos de 32% e falso-negativos de 30%. A osteomielite pode ser **fria** em cerca de 8% dos casos, quando a pressão intraóssea comprime a microcirculação; esses pacientes estão mais graves, e o valor preditivo positivo da cintilografia fria chegou a 100%. A sensibilidade relatada para osteomielite varia de 54% a 100%, a especificidade de 70% a 90%, e magnificação, colimador pinhole e SPECT elevam a acurácia acima de 90%.
+
+O padrão da celulite está na sequência das três fases (GREENSPAN, cap. 24, Figura 24.9): na primeira (A), mais traçador nos vasos da perna direita; na segunda (B), uma mancha intensa nas partes moles do tornozelo; na terceira (C), duas horas depois, o traçador saiu e o osso não capta. Se a terceira fase também mostrasse foco no osso, o padrão seria de osteomielite.
+
+!figura 24.9 imagem=conceitos-basicos/greenspan6-24-9.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 24, Figura 24.9. Cintilografia óssea de três fases das pernas e tornozelos numa celulite do tornozelo direito: fluxo aumentado (A), pool sanguíneo com captação nas partes moles (B) e fase tardia sem captação óssea (C).
+!fim
+
 
 Na **fratura**, a cintilografia é positiva em **80% em 24 horas e 95% em 72 horas** (MATIN); 90% normalizam em 2 anos. Quando há vários focos, as fases precoces separam o agudo do crônico: a **hiperemia resolve em 4 a 8 semanas**. A fratura por insuficiência do sacro dá o desenho em H, o **sinal de HONDA**.
 

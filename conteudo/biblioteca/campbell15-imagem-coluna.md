@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-coluna
-versao: 1
+versao: 2
 titulo: Imagem da coluna
 especialidade: coluna
 acesso: gratis
@@ -125,6 +125,19 @@ O HEBERT (cap. 2.4) estima que **39%** das lombalgias crônicas sejam discogêni
 
 O jeito de não esquecer é pensar no que cada tecido faz com o sinal: água e edema acendem o T2 (MODIC I), gordura acende o T1 (MODIC II), e osso esclerótico apaga tudo (MODIC III). A discografia, para o HEBERT, reproduz a dor do nível certo e mostra a ruptura anular pelo extravasamento de contraste, mas é invasiva e pode acelerar a degeneração do disco saudável puncionado. Nenhuma questão da lista cobrou MODIC diretamente, mas o raciocínio é o mesmo da infecção (edema em T2) e do tumor (medula substituída em T1), que caem logo adiante.
 
+Os dois tipos mais comuns são fáceis de reconhecer lado a lado. No MODIC I (GREENSPAN, cap. 13, Figura 13.42), a faixa de medula colada aos platôs de um disco degenerado é escura em T1 (A) e clara em STIR (B): é água, como em qualquer edema.
+
+!figura 13.42 imagem=coluna/greenspan6-13-42.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 13, Figura 13.42. MODIC tipo I nos platôs vizinhos a um disco degenerado (setas): sinal baixo em T1 (A) e alto em STIR (B).
+!fim
+
+No MODIC II (GREENSPAN, cap. 13, Figura 13.43), as mesmas faixas junto aos platôs ficam claras em T1 (A) e claras ou intermediárias em T2 (B): é gordura. Na infecção do disco, ao contrário, o próprio disco fica claro em T2 e os contornos dos platôs se apagam, o que ajuda a não confundir MODIC I com discite.
+
+!figura 13.43 imagem=coluna/greenspan6-13-43.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 13, Figura 13.43. MODIC tipo II em vários níveis lombares (setas): áreas de conversão em medula amarela junto aos platôs, claras em T1 (A) e claras a intermediárias em T2 (B).
+!fim
+
+
 # Escoliose: COBB, rotação, maturidade e LENKE {radar=confirmado}
 
 ## Como tirar a radiografia
@@ -134,6 +147,13 @@ No Campbell's Operative Orthopaedics, 15ª ed. (cap. 40, p. 1541), a escoliose d
 ## O ângulo de COBB
 
 O método de COBB, padronizado pela SRS, tem três passos: achar a **vértebra terminal superior**, achar a **vértebra terminal inferior** e traçar perpendiculares à **superfície superior da terminal superior** e à **superfície inferior da terminal inferior**. A vértebra terminal é a **mais inclinada para a concavidade**; se o platô não aparece, usam-se os pedículos. A variação entre medidas é de **5 a 7 graus**, e por isso **progressão** é aumento de **5 graus ou mais** em duas ou mais consultas. A lógica é medir a curva inteira: as linhas pegam as bordas externas do arco, a de cima da primeira vértebra e a de baixo da última. O Rockwood and Green's Fractures in Adults, 10ª ed. (caps. 48 e 49), usa o mesmo princípio para a cifose de uma fratura: platô superior da vértebra acima e platô inferior da vértebra abaixo da lesão.
+
+O desenho do método (GREENSPAN, cap. 33, Figura 33.8) mostra por que as faces são essas: a tangente de cima passa pela face superior da vértebra terminal superior, a de baixo pela face inferior da terminal inferior, e as duas abraçam a curva inteira. As perpendiculares a elas (ângulo b) existem só para o cruzamento caber no filme; o valor é o mesmo do ângulo a.
+
+!figura 33.8 imagem=coluna/greenspan6-33-8.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 33, Figura 33.8. Método de COBB: tangentes à face superior da vértebra terminal superior e à face inferior da vértebra terminal inferior (ângulo a) e as perpendiculares a elas (ângulo b), que dão o mesmo valor.
+!fim
+
 
 !questoes central=coluna-0491
 conceito: COBB usa a superfície superior da vértebra terminal superior e a superfície inferior da vértebra terminal inferior; a terminal é a mais inclinada para a concavidade.
@@ -145,6 +165,13 @@ alerta: A `coluna-0491` está sem gabarito oficial. Pelo Campbell 15 (cap. 40), 
 ## Rotação: NASH e MOE
 
 A rotação vertebral na radiografia mede-se pelo método de **NASH e MOE**: com os pedículos **equidistantes** das bordas do corpo, a rotação é **zero**; os graus sobem até o **IV**, quando o pedículo passa do **centro do corpo**. O corpo é dividido em seis segmentos, e usa-se o **pedículo convexo**, porque o côncavo some cedo na rotação (cap. 40, p. 1543). Outras medidas são a giba costal no perfil e a razão entre o corpo apical e a costela; o EOS reconstrói a rotação em três dimensões sem a radiação da TC.
+
+Na Figura 33.12 do GREENSPAN (cap. 33), acompanhe o pedículo que caminha para o centro: no normal, os dois ficam nas faixas externas; no grau I, o pedículo do lado côncavo começa a sumir; no II, sumiu; no III, o pedículo convexo está no centro; no IV, passou da linha média.
+
+!figura 33.12 imagem=coluna/greenspan6-33-12.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 33, Figura 33.12. Método de NASH e MOE: o corpo vertebral dividido em seis partes e o pedículo do lado convexo migrando para o centro conforme a rotação aumenta, do normal ao grau IV (pedículo além da linha média).
+!fim
+
 
 ## Maturidade: RISSER, trirradiada, SANDERS e o pico de crescimento
 
@@ -333,6 +360,13 @@ O Campbell (cap. 39, p. 1506 e 1507) diz que a profusão de medidas reflete a di
 !fim
 
 O próprio Campbell diverge no RANAWAT entre os capítulos 39 e 45, e o capítulo 45 acha o REDLUND-JOHNELL melhor para a invaginação na artrite reumatoide.
+
+Veja os dois pontos da CHAMBERLAIN no desenho (GREENSPAN, cap. 11, Figura 11.4): a linha sai da borda posterior do palato duro e termina no opístio, a borda posterior do forame magno, e a ponta do dente não deve passar mais de 3 mm acima dela. A McGREGOR parte do mesmo palato, mas desce até o ponto mais baixo da curva do occipital, por isso fica um pouco abaixo e é mais fácil de traçar.
+
+!figura 11.4 imagem=coluna/greenspan6-11-4.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 11, Figura 11.4. Linha de CHAMBERLAIN no perfil do crânio: da borda posterior do palato duro à borda posterior do forame magno (opístio), com a ponta do dente do áxis logo abaixo.
+!fim
+
 
 !questoes central=coluna-0295
 conceito: CHAMBERLAIN vai da borda posterior do palato duro à borda posterior do forame magno; McGREGOR vai ao ponto mais caudal do occipital; McRAE une basio e opístio.
