@@ -11,6 +11,9 @@ export interface SinalUsuario {
   planos_ultima: string | null
   /** Última visita a Indique e ganhe, consultada no histórico das últimas 24 h. */
   indicacao_ultima?: string | null
+  /** Último uso dos Shorts nas últimas 12 h e quantos respondeu hoje (visitas_shorts_admin). */
+  shorts_ultima?: string | null
+  shorts_hoje?: number
   /** Última abertura das Condições da Assinatura (passo antes do checkout). */
   condicoes_ultima: string | null
   flashcards_unicos: number
@@ -66,14 +69,37 @@ export function indicacaoEmDestaque(ultima: string | null | undefined, agora = D
 }
 
 export interface VisitaIndicacao { id_usuario: string; indicacao_ultima: string }
+export interface VisitaShorts { id_usuario: string; shorts_ultima: string; shorts_hoje: number }
 
-export function indexarSinais(lista: SinalUsuario[] | null | undefined, indicacoes: VisitaIndicacao[] = []): Map<string, SinalUsuario> {
+/** Quem usou os Shorts fica rosa no painel por 12 horas (Tales, 26/11/2026), contadas do último uso. */
+export const SHORTS_DESTAQUE_MS = 12 * 3_600_000
+export function shortsEmDestaque(ultima: string | null | undefined, agora = Date.now()): boolean {
+  const t = ultima ? new Date(ultima).getTime() : NaN
+  return Number.isFinite(t) && t <= agora + 60_000 && agora - t < SHORTS_DESTAQUE_MS
+}
+/** Texto do selo rosa: "Usou os Shorts · há 2 h · 7 hoje". */
+export function textoShorts(s: Pick<SinalUsuario, 'shorts_ultima' | 'shorts_hoje'>, haQuanto: (v: string | null | undefined) => string): string {
+  return `Usou os Shorts · ${haQuanto(s.shorts_ultima)}${s.shorts_hoje ? ` · ${s.shorts_hoje} hoje` : ''}`
+}
+
+const SINAL_VAZIO = (id: string): SinalUsuario => ({ id_usuario: id, planos_vezes: 0, planos_ultima: null, condicoes_ultima: null, flashcards_unicos: 0, flashcards_7d: 0, flashcards_ultima: null, cripta_andar: null, locais_trabalho: null })
+
+export function indexarSinais(lista: SinalUsuario[] | null | undefined, indicacoes: VisitaIndicacao[] = [], shorts: VisitaShorts[] = []): Map<string, SinalUsuario> {
   const mapa = new Map((lista ?? []).map((s) => [s.id_usuario, { ...s }]))
   for (const visita of indicacoes) {
-    const sinal = mapa.get(visita.id_usuario) ?? { id_usuario: visita.id_usuario, planos_vezes: 0, planos_ultima: null, condicoes_ultima: null, flashcards_unicos: 0, flashcards_7d: 0, flashcards_ultima: null, cripta_andar: null, locais_trabalho: null }
+    const sinal = mapa.get(visita.id_usuario) ?? SINAL_VAZIO(visita.id_usuario)
     mapa.set(visita.id_usuario, { ...sinal, indicacao_ultima: visita.indicacao_ultima })
   }
+  for (const uso of shorts) {
+    const sinal = mapa.get(uso.id_usuario) ?? SINAL_VAZIO(uso.id_usuario)
+    mapa.set(uso.id_usuario, { ...sinal, shorts_ultima: uso.shorts_ultima, shorts_hoje: uso.shorts_hoje })
+  }
   return mapa
+}
+
+/** Classe da linha da pessoa: rosa (Shorts) por cima do azul (Indique e ganhe). */
+export function classeSinais(s: Pick<SinalUsuario, 'indicacao_ultima' | 'shorts_ultima'> | null | undefined, agora = Date.now()): string {
+  return [indicacaoEmDestaque(s?.indicacao_ultima, agora) ? 'a3-indicacao' : '', shortsEmDestaque(s?.shorts_ultima, agora) ? 'a3-shorts' : ''].filter(Boolean).join(' ')
 }
 
 /**
