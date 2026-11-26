@@ -50,7 +50,7 @@ O exame avalia a massa, o segmento e os **linfonodos de drenagem**. A radiografi
 
 A biópsia vem **depois** da imagem, porque altera o exame, e o que ela decide é a **margem**: marginal no benigno, ampla no maligno (Campbell, p. 1004 e 1005). A maioria dos benignos é tratada por **observação ou ressecção marginal**; benignos **localmente agressivos**, como o desmoide, podem pedir ressecção ampla ou tratamento multimodal. Na mão, o capítulo 83 (p. 3567 e 3568) lembra que **cada raio e cada metacarpo são compartimentos**, que o benigno vai para **biópsia excisional** pela pseudocápsula e que o maligno exige **excisão ampla com 2 cm de tecido livre**, com amputação um nível acima da falange acometida. As regras da biópsia e das margens no sarcoma estão na seção própria, adiante.
 
-!questoes central=tumores-0123
+!questoes central=tumores-0123 treino=tumores-0444
 conceito: Nas partes moles a dor não separa benigno de maligno, mas dor irradiada no território do nervo e TINEL positivo são próprios dos tumores da bainha nervosa, isto é, da linhagem neurogênica.
 como: O TEOT 2023 perguntou em qual linhagem a dor é mais frequente na propedêutica dos tumores de partes moles.
 armadilha: Levar para as partes moles a regra do osso (dor = malignidade) ou escolher a linhagem adipocítica, cujo lipoma é tipicamente indolor.
@@ -142,7 +142,7 @@ Os números de risco divergem: o Campbell (cap. 30) fala em **5%** dos pacientes
 
 Os sinais de alerta de malignidade num tumor de bainha nervosa estão listados no Campbell (p. 1010): **aumento de tamanho, padrão de realce periférico, edema perilesional, alteração cística e captação aumentada no PET-FDG**. Na mão, o schwannoma que **não se separa do nervo** ou está **aderido** às estruturas vizinhas pede outro diagnóstico e biópsia incisional (cap. 83, p. 3580).
 
-!questoes central=tumores-0056 relacionadas=tumores-0332
+!questoes central=tumores-0056 relacionadas=tumores-0332 treino=tumores-0442
 conceito: O neurofibroma pode sofrer transformação maligna em MPNST, também chamado schwannoma maligno ou neurofibrossarcoma; na NF1 os neurofibromas são frequentes e múltiplos, e o neurilemoma é raro.
 como: O TARO 2014 perguntou em que o neurofibroma pode se transformar; o TARO 2008, a frequência do neurilemoma e do neurofibroma na doença de VON RECKLINGHAUSEN.
 armadilha: Escolher fibrossarcoma ou dermatofibrossarcoma por causa do radical "fibro", ou achar que o schwannoma é a lesão típica da NF1.

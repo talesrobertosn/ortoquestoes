@@ -193,7 +193,7 @@ A classificação radiográfica foi proposta por **GLEDHILL** (quatro tipos) e a
 | conduta correta | cultura e patologia de todo material; citologia na sala | drenar EWING como osteomielite piora o prognóstico |
 !fim
 
-!questoes central=tumores-0211 treino=tumores-0407
+!questoes central=tumores-0211 treino=tumores-0407,tumores-0435
 conceito: Na classificação de ROBERTS da osteomielite subaguda, o tipo IV é a lesão diafisária com reação periosteal em casca de cebola que simula o sarcoma de EWING.
 como: O CET-PR perguntou qual tipo de ROBERTS tem o EWING como diagnóstico diferencial.
 armadilha: Marcar o tipo II (que imita osteossarcoma) ou o III (que imita osteoide osteoma) por confundir metáfise com diáfise.
@@ -557,7 +557,7 @@ Como no osteossarcoma, a **resposta histológica à quimioterapia neoadjuvante**
 | recidiva | no primeiro ano | após longo intervalo |
 !fim
 
-!questoes central=tumores-0122 relacionadas=tumores-0263,tumores-0284,tumores-0330
+!questoes central=tumores-0122 relacionadas=tumores-0263,tumores-0284,tumores-0330 treino=tumores-0436
 conceito: No EWING, o pior fator é a metástase; também pioram o prognóstico tumor grande e central, febre, anemia, leucocitose, VHS e LDH elevadas, idade acima de 12 a 15 anos, sexo masculino e baixa resposta à quimioterapia; grau histológico (todos são de alto grau) e tipo de translocação não têm valor.
 como: O TEOT 2023 deu como certa a idade maior que 15 anos contra grau histológico, LDH baixa e t(11;22); o TARO 2025 perguntou sexo e idade (masculino e mais velhos); o TARO 2010 deu como certa a presença de febre e anemia; o TARO 2007 perguntou entre raça negra, sexo feminino, translocação 11;22 e baixa resposta à quimioterapia neoadjuvante.
 armadilha: Marcar grau histológico (todo EWING é de alto grau), LDH baixa (é a alta que piora), translocação (presente em quase todos), sexo feminino ou idade abaixo de 10 anos (inversões do Campbell) e raça negra (dado epidemiológico, não prognóstico).

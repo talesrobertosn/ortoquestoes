@@ -268,7 +268,7 @@ Os condromas são **lesões benignas de cartilagem hialina**, comuns, em todas a
 
 O capítulo da mão do Campbell (cap. 83, p. 3580 e 3581) diz que os encondromas são os **tumores ósseos primários mais comuns e mais destrutivos da mão**, e que o local mais comum é a **metáfise proximal da falange proximal**, onde a lesão é excêntrica e expansiva. O SIZÍNIO HEBERT (cap. 7) confirma a ordem: **falange proximal** a mais acometida, seguida pela **falange média** e pelos **metacarpais**; raro no carpo; mais frequente na segunda e terceira décadas, sem predileção por sexo. A falange distal é localização pouco comum, mostrada como exceção numa figura do mesmo capítulo. O Tachdjian (cap. 25, p. 1027) dá a proporção: **quase 50%** dos encondromas solitários estão na mão, sobretudo nas falanges; o pico de apresentação é por volta dos **35 anos**.
 
-!questoes central=tumores-0094 treino=tumores-0415
+!questoes central=tumores-0094 treino=tumores-0415,tumores-0433
 conceito: Na mão, o encondroma predomina na falange proximal, sobretudo na metáfise proximal, seguida pela falange média e pelos metacarpais.
 como: Uma prova de Ortopedia perguntou em que osso da mão o encondroma é mais visto, oferecendo metacarpo, rádio distal, falange distal e falange proximal.
 armadilha: Marcar o metacarpo, que é sede frequente mas fica atrás das falanges, ou a falange distal, que é rara.
@@ -361,7 +361,7 @@ No sistema de ENNEKING (Campbell, cap. 26, p. 873 e 874), o grau entra diretamen
 
 O Tachdjian (cap. 26, p. 1071 e 1072) dá o conceito que resolve a pergunta da criança. Como o condrossarcoma verdadeiro quase não existe na infância, o diagnóstico de condrossarcoma de alto grau em congelação ou em biópsia de adolescente deve levantar a suspeita de **osteossarcoma condroblástico**. Na maioria dos casos, o "condrossarcoma de alto grau" da criança **é na verdade um osteossarcoma condroblástico**, e isso fica evidente quando a peça inteira é examinada e aparece o osso neoplásico. Os autores recomendam **quimioterapia adjuvante, como em qualquer osteossarcoma**. É a regra do Campbell aplicada à idade: osteoide maligno muda o nome. O Dahlin chega à mesma conclusão pelos números: na Mayo Clinic, o raro condrossarcoma da infância tem o **mesmo prognóstico** do adulto, e os relatos de pior prognóstico na criança provavelmente refletem a inclusão de **osteossarcomas condroblásticos** nas séries (cap. 6, p. 89; também p. 61). Quanto ao "condroblastoma maligno", o Dahlin (cap. 4, p. 41) registra que **não há nenhum exemplo nos arquivos da Mayo Clinic**; os condroblastomas agressivos ou com metástase são citologicamente iguais aos benignos.
 
-!questoes central=tumores-0291
+!questoes central=tumores-0291 treino=tumores-0434
 conceito: Condrossarcoma de alto grau na infância é quase sempre osteossarcoma condroblástico; o osteoide maligno, visto na peça inteira, muda o diagnóstico e indica quimioterapia.
 como: O TARO 2010 perguntou o principal diagnóstico diferencial do condrossarcoma de alto grau diagnosticado na infância.
 armadilha: Marcar condroblastoma maligno, fibrossarcoma congênito ou rabdomiossarcoma, que não fabricam matriz cartilaginosa com osteoide.

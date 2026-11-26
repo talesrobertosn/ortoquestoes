@@ -189,7 +189,7 @@ Na coluna cervical, torácica e lombar, o tumor dá sintomas por **compressão d
 | Todos | Meses a anos de sintomas antes do diagnóstico | Crescimento lento e indolente | Metástase na apresentação |
 !fim
 
-!questoes central=tumores-0034
+!questoes central=tumores-0034 treino=tumores-0441
 conceito: No cordoma sacrococcígeo a dor é quase constante e a queixa inicial mais comum é a dor lombar baixa (Campbell, cap. 29, p. 981); a massa é pré-sacral, palpada ao toque retal, e o déficit neurológico é tardio.
 como: O TARO 2021 pediu a manifestação clínica inicial mais frequente do cordoma sacrococcígeo entre ciatalgia, massa palpável, retenção urinária e dor lombar baixa.
 armadilha: Ciatalgia e distúrbio esfincteriano são comuns na evolução (Campbell), mas sinais neurológicos são tardios (Dahlin, p. 249; HEBERT); a massa existe em quase todos, mas é anterior e só aparece ao toque retal, não como queixa inicial.
