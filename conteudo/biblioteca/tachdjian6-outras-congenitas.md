@@ -272,7 +272,7 @@ Os dois livros desestimulam a cirurgia. O Campbell lembra que a maioria não pre
 
 A questão do TEOT 2024 testa exatamente esse raciocínio: um paciente com sinostose **unilateral** e antebraço em **posição neutra** já está na posição que a osteotomia buscaria; não há o que corrigir, e o tratamento é **não cirúrgico**.
 
-!questoes central=pediatria-0494 relacionadas=pediatria-0060,mao-0307,pediatria-0446 treino=pediatria-1526
+!questoes central=pediatria-0494 relacionadas=pediatria-0060,mao-0307,pediatria-0446,pediatria-0780,pediatria-0838 treino=pediatria-1526
 conceito: A sinostose radioulnar congênita é proximal, fixa em pronação (a separação ocorre com o antebraço fetal pronado, antes da rotação lateral do membro), bilateral em 80%; operar só com pronação acima de 60° e queixa funcional.
 como: O TARO 2026 pediu a posição e o local mais frequentes; o TARO 2016, se é isolada e bilateral; o TEOT 2024, o tratamento do caso unilateral em posição neutra; uma prova de Ortopedia, o momento embriológico da falha.
 armadilha: Marcar supinação, terço distal ou ressecção da sinostose com interposição, que não devolve a rotação.
