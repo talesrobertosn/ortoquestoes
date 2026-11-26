@@ -30398,7 +30398,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na radiografia de seguimento de uma haste femoral cimentada, segundo o Campbell, sugere soltura do componente femoral:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "quadril/campbell13-3-130.jpeg",
+          "legenda": "Fonte: Campbell's Operative Orthopaedics, 13ª ed. (2017), cap. 3, Fig. 3-130, p. 267. Zonas em torno do manto de cimento: no fêmur (A), as sete zonas de GRUEN, numeradas de 1 a 7 ao redor da haste; no acetábulo (B), as três zonas de DELEE e CHARNLEY.",
+          "largura": 750,
+          "altura": 624
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",

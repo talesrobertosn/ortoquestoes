@@ -26650,8 +26650,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Paciente com siringomielia cervical tem um ombro destruído, indolor e instável, com muitos fragmentos na radiografia. Segundo o Campbell, o tratamento cirúrgico desse ombro",
-      "imagens": [],
+      "enunciado": "Paciente com siringomielia cervical tem um ombro destruído, indolor e instável, com muitos fragmentos na radiografia, como a abaixo. Segundo o Campbell, o tratamento cirúrgico desse ombro",
+      "imagens": [
+        {
+          "arquivo": "ombro-cotovelo/greenspan6-13-54.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 13, Figura 13.54. Radiografia AP do ombro de uma mulher de 59 anos com siringomielia: destruição da articulação glenoumeral, restos ósseos ao redor e subluxação da cabeça do úmero.",
+          "largura": 624,
+          "altura": 1094
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
