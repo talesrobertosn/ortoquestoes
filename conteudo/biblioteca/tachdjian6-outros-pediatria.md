@@ -103,7 +103,7 @@ Nenhuma classificação se impôs, mas três nomes aparecem nos livros e podem a
 
 O **tálus oblíquo** é a forma intermediária. No Tachdjian (p. 741 e 743), há mata-borrão e equino do retropé, mas o navicular reduz quando o antepé é fletido plantarmente. O autor do capítulo do Lovell and Winter (p. 1458 e 1460) é crítico do termo: diz que não há definição de consenso nem literatura primária, propõe abandoná-lo e tratar tudo como um contínuo de gravidade e rigidez do tálus vertical, que só não inclui o pé plano flexível com tendão calcâneo curto de HARRIS e BEATH. O HEBERT registra que muitos autores o consideram um subtipo leve de tálus vertical, de bom prognóstico. As três leituras são compatíveis: é o mesmo desenho anatômico com a talonavicular redutível.
 
-!questoes central=pediatria-1069
+!questoes central=pediatria-1069 treino=pediatria-1550
 conceito: "Pé em sapato persa" é o tálus vertical congênito de planta convexa e rígida; o HEBERT reserva o termo para a apresentação clássica nos pés talo verticais paralíticos.
 como: O ENARE de Cirurgia da Mão de 2023 perguntou a que deformidade clássica o termo se refere, com pé metatarso varo, pé torto paralítico, pé talo vertical paralítico, pé aduto varo sindrômico e pé torto adquirido entre as opções.
 armadilha: Marcar pé torto congênito paralítico por causa da palavra "paralítico"; o sapato persa é a planta convexa do mata-borrão, o oposto do pé torto.
@@ -143,7 +143,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31, p. 1068) é direto: o pe
 
 O ângulo de KITE é o ângulo talocalcâneo, medido no anteroposterior e no perfil. No tálus vertical ele abre nas duas, e o HEBERT (cap. 20.5) explica o porquê de cada incidência: **está aumentado no anteroposterior, por causa da posição equinovalga do calcâneo (o calcâneo roda para lateral e se afasta do tálus), e está aumentado no perfil, porque o equino do calcâneo se soma à verticalização do tálus.** O mesmo trecho dá dois números fáceis de guardar: o ângulo tálus-horizontal aproxima-se de 90 graus e o tibiotalar de 180 graus. Entre as medidas de KATZ citadas pelo HEBERT estão ainda o tibiocalcâneo e o tálus-primeiro metatarsal, este aumentado pela quebra de continuidade entre retropé e antepé. O Tachdjian confirma o sentido da alteração sem usar o epônimo: "ângulo talocalcâneo aumentado" no perfil (p. 742) e ângulo entre os eixos do tálus e do calcâneo "acentuadamente aumentado" na anatomia (p. 741). O Lovell and Winter e o Campbell não medem o ângulo talocalcâneo nessa doença.
 
-!questoes central=pediatria-0715
+!questoes central=pediatria-0715 treino=pediatria-1551
 conceito: No tálus vertical, o ângulo talocalcâneo (KITE) está aumentado no anteroposterior, pelo equinovalgo do calcâneo, e aumentado no perfil, pelo equino do calcâneo somado à verticalização do tálus.
 como: A SBOT-SP perguntou como fica o ângulo de KITE nas incidências anteroposterior e perfil, respectivamente, com as quatro combinações de aumentado e diminuído.
 armadilha: Raciocinar que, se tálus e calcâneo estão os dois em equino, eles ficam paralelos e o ângulo diminui no perfil; o tálus está muito mais vertical que o calcâneo, e o ângulo abre.

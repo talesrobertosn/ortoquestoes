@@ -39,7 +39,7 @@ O recém-nascido tem **10 a 15 graus de varo**. As medidas do ângulo tibiofemor
 
 **O valgo fisiológico** não pede radiografia, a não ser que haja **baixa estatura**, história de **trauma, infecção ou doença metabólica óssea**, ou **assimetria importante**. Uma anteversão femoral aumentada pode imitar o valgo. Depois dos 8 anos, o valgo idiopático excessivo, com alteração de marcha, dor, mau alinhamento patelar ou queixa estética importante, pode ser corrigido por **crescimento guiado** (hemiepifisiodese), que exige alguns anos de crescimento restante.
 
-!questoes central=pediatria-0112 relacionadas=pediatria-0264,pediatria-0498 treino=pediatria-1399,pediatria-1512
+!questoes central=pediatria-0112 relacionadas=pediatria-0264,pediatria-0498 treino=pediatria-1399,pediatria-1512,pediatria-1548
 conceito: Varo máximo entre 6 e 12 meses, neutro entre 18 e 24, valgo máximo entre 2 e 4 anos, valgo do adulto (5 a 7 graus) por volta dos 8; radiografia só com baixa estatura, assimetria, trauma, infecção ou doença metabólica.
 como: O TEOT 2021 pediu a idade do valgo fisiológico máximo (4 anos); a SBOT-SP, a faixa de idade (2 a 4 anos).
 armadilha: Confundir o valgo máximo dos 4 anos com o alinhamento definitivo dos 8, ou pedir radiografia para todo valgo simétrico da idade.

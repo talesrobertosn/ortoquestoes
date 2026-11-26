@@ -66,7 +66,7 @@ SALTER e HARRIS reuniram cinco tipos (Fig. 2-10): os tipos I, II e III vêm de P
 
 **PETERSON** (Fig. 2-16) incorpora os tipos I a IV de SALTER-HARRIS como **II a V** e acrescenta o **I**, fratura transversa da **metáfise** que se estende até a fise, em geral **benigna** (Fig. 2-17, rádio distal), e o **VI**, **perda parcial da fise** (e muitas vezes da superfície articular), típica do **cortador de grama** e da abrasão no asfalto, com lesão de partes moles e neurovascular.
 
-!questoes central=pediatria-0909 relacionadas=pediatria-1066,pediatria-0922,pediatria-0607,pediatria-0559,pediatria-0826 treino=pediatria-1392,pediatria-1395
+!questoes central=pediatria-0909 relacionadas=pediatria-1066,pediatria-0922,pediatria-0607,pediatria-0559,pediatria-0826 treino=pediatria-1392,pediatria-1395,pediatria-1532
 conceito: SALTER-HARRIS I fica na fise, II leva o THURSTON-HOLLAND, III e IV cruzam a articulação e pedem redução anatômica, V é a compressão; PETERSON acrescenta o I metafisário benigno e o VI com perda da fise.
 como: O CET-PR cobrou as características de cada tipo (o III desviado pede redução aberta anatômica); o ENARE 2022 e 2023 cobraram a classificação; o TARO 2016 pediu o PETERSON VI (exposta com perda de parte da fise); o TEOT 2024, o tipo VI de RANG.
 armadilha: Pôr o THURSTON-HOLLAND na epífise, ou o tipo I na zona germinativa.
@@ -202,7 +202,7 @@ Toda a fise que o resto deste resumo descreve nasce de um processo só: a cartil
 
 **Controle hormonal.** O Tachdjian (cap. 20, p. 814) cita o **hormônio do crescimento** como o principal regulador central: a deficiência dá baixa estatura proporcionada, o excesso no esqueleto imaturo dá gigantismo, e a ação se faz por **fatores de crescimento semelhantes à insulina** produzidos no fígado e nos próprios condrócitos da fise. Os **fatores de crescimento de fibroblastos** são mitogênicos para os condrócitos, e um defeito no **receptor 3 do FGF** causa a **acondroplasia**.
 
-!questoes central=pediatria-0057 relacionadas=pediatria-0663
+!questoes central=pediatria-0057 relacionadas=pediatria-0663 treino=pediatria-1531
 conceito: A ossificação dos ossos longos começa por volta da 8ª semana (fêmur com ossificação endocondral já na 8ª semana) e na 12ª há centros em todos; na base da fise os condrócitos sofrem apoptose ou viram osteoblastos e formam a esponjosa primária.
 como: O TARO 2017 perguntou em que semanas de gestação o fêmur e a tíbia começam a ossificar (7ª e 8ª); o TARO 2012, o que caracteriza a camada de calcificação provisória (produção de matriz, hipertrofia, matriz de ossificação e apoptose).
 armadilha: Confundir o aparecimento dos centros primários (embrionário) com o dos secundários das epífises, que em boa parte surgem depois do nascimento.

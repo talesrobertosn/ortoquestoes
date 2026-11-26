@@ -264,7 +264,7 @@ Em **1912**, ISELIN descreveu uma **epifisite de tração da base do quinto meta
 | tratamento | gelo, AINE, gesso nos graves; sem fixação | gesso de marcha por 4 semanas |
 !fim
 
-!questoes central=pediatria-0512
+!questoes central=pediatria-0512 treino=pediatria-1537
 conceito: ISELIN é a epifisite de tração da base do 5º metatarso, na inserção do fibular curto, do adolescente jovem (por volta de 10 anos nas meninas e 12 nos meninos), vista na oblíqua.
 como: O ENARE R4 2024 descreveu uma menina de 12 anos com dor na borda lateral do pé e base do 5º metatarso proeminente e sensível e pediu o nome entre ISELIN, KÖHLER, WOJTYS, FREIBERG e TAKAHARA.
 armadilha: Cair em TAKAHARA, autor dos critérios de estabilidade da osteocondrite dissecante do capítulo, e não uma doença do pé.

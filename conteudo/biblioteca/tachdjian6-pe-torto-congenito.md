@@ -192,7 +192,7 @@ Quando a prova pergunta o maior obstáculo à redução do complexo talocalcaneo
 | Cavo | Fáscia plantar, contraturas talonaviculares e subtalares mediais |
 !fim
 
-!questoes central=pediatria-0465 relacionadas=pediatria-0939,pediatria-0740
+!questoes central=pediatria-0465 relacionadas=pediatria-0939,pediatria-0740 treino=pediatria-1549
 conceito: As forças deformantes do pé torto são o tibial posterior, o flexor longo do hálux, o flexor longo dos dedos (nó de HENRY) e o tríceps; os músculos são atróficos e encurtados e os ligamentos e bainhas, espessados; o ligamento tibionavicular prende o navicular ao maléolo medial e precisa ser liberado por inteiro, e o tibial posterior abre a lista do Campbell do que resiste à talonavicular.
 como: A SBOT-SP perguntou os músculos que mais contribuem para a deformidade e o estado de músculos e ligamentos; o TARO 2007 perguntou o maior obstáculo à redução do complexo talocalcaneonavicular.
 armadilha: Incluir o fibular longo, o fibular curto ou o tibial anterior entre as forças deformantes do recém-nascido; dizer que os músculos estão hipertrofiados.

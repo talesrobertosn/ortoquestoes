@@ -76,7 +76,7 @@ A pergunta do ENARE 2024 pediu, numa lista, a única doença **autossômica rece
 | Facioescapuloumeral | AD | 4q35 |
 !fim
 
-!questoes central=pediatria-0503
+!questoes central=pediatria-0503 treino=pediatria-1553
 conceito: MORQUIO é autossômica recessiva; acondroplasia, NF1 e SED congênita são autossômicas dominantes.
 como: O ENARE R4 2024 pediu, numa lista com acondroplasia, osteogênese imperfeita, NF1 e displasia espondiloepifisária, a doença de herança autossômica recessiva.
 armadilha: Achar que a acondroplasia é recessiva porque a maioria dos pais é normal; os pais são normais porque 90% dos casos são mutação nova de um gene dominante.
