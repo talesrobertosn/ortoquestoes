@@ -243,7 +243,7 @@ O processo posterior quebra por **compressão axial em flexão plantar extrema**
 
 Nas fraturas dos processos posterior e lateral, o capítulo indica **6 semanas sem carga** seguidas de carga protegida e movimento.
 
-!questoes central=trauma-0036,trauma-0202 relacionadas=pediatria-0626,trauma-0538,pe-tornozelo-0176 treino=trauma-1613,trauma-1614
+!questoes central=trauma-0036,trauma-0202 relacionadas=pediatria-0626,trauma-0538,pe-tornozelo-0176 treino=trauma-1613,trauma-1614,trauma-1819
 conceito: A fratura do snowboarder é a do processo lateral, por carga axial com dorsiflexão e eversão; opera-se o fragmento maior que 1 cm ou com desvio da subtalar. O processo posterior quebra em flexão plantar extrema, e o flexor longo do hálux passa entre os seus tubérculos.
 como: O TARO 2019 pediu a localização da fratura do snowboarder (processo lateral, contra colo, processo medial e posterior); o TEOT 2022, o mecanismo (dorsiflexão e rotação lateral com carga axial e eversão). O TEOT 2024 perguntou o osso acessório que mais causa sintoma no pé da criança, com o os trigonum como distrator.
 armadilha: Inversão: a frase principal do capítulo é eversão do retropé com dorsiflexão; a inversão aparece só num segundo estudo de cadáver.
@@ -316,7 +316,7 @@ A estabilidade da subtalar vem da arquitetura (a cabeça no acetábulo do pé) e
 
 **Resultados.** Rigidez é comum, artrose terminal é rara nas estáveis (PERUGIA: 1 artrodese em 45). Pior com exposição e fraturas periarticulares; a energia importa mais que a direção. **Necrose de 0% a 10% nas fechadas e até 50% nas expostas.** Nas de alta energia, BIBBO encontrou **89%** de artrose radiográfica em 5 anos.
 
-!questoes relacionadas=pe-tornozelo-0022 treino=trauma-1617
+!questoes relacionadas=pe-tornozelo-0022 treino=trauma-1617,trauma-1815
 conceito: A luxação medial é a mais frequente (cerca de 75%) e de menor energia; a lateral, de alta energia, é bloqueada pelo tendão tibial posterior.
 como: Não há questão de TEOT ou TARO sobre a luxação subtalar no acervo. O TARO 2021 cobrou a vizinhança: a lesão do talofibular anterior com o talocalcâneo interósseo muda a mobilidade subtalar.
 !fim
@@ -377,7 +377,7 @@ Dois cuidados com o **BÖHLER**: ele só cai quando a faceta inteira afunda e se
 
 Na **TC**, o corte **coronal** é o que mais informa sobre a faceta posterior, o sustentáculo e a tuberosidade; o axial mostra a calcaneocubóidea e o sagital, a depressão e a rotação da faceta. A reconstrução 3D não melhorou a avaliação em relação à 2D. O Campbell acrescenta que a TC axial em janela de partes moles mostra a **luxação dos fibulares** e a posição do **flexor longo do hálux**.
 
-!questoes central=trauma-0897
+!questoes central=trauma-0897 treino=trauma-1812
 conceito: A axial de HARRIS mostra a perda de altura, o aumento da largura, a rotação do fragmento sustentacular e a angulação da tuberosidade; BRODEN mostra a faceta posterior; o perfil mede BÖHLER e GISSANE.
 como: Uma prova sem ano descreveu exatamente essas quatro funções e pediu o nome da incidência (HARRIS), com as outras incidências do retropé como distratores.
 armadilha: BRODEN: é a incidência da faceta posterior da subtalar, não da largura e do varo.
@@ -400,7 +400,7 @@ armadilha: BRODEN: é a incidência da faceta posterior da subtalar, não da lar
 
 Quanto mais **medial** o traço, mais difícil reduzir pelo lado lateral. A classificação é **prognóstica**: em 108 fraturas seguidas por 10 a 20 anos, o tipo III teve **6,5 vezes mais artrose subtalar avançada** que o II, e a fusão subtalar foi necessária em menos de 20% dos II contra **47,4%** dos III; a presença da **linha C** (IIIAC e IIIBC) previu prognóstico pior. A concordância entre observadores é baixa (kappa 0,22 sem subtipos e 0,18 com eles). O Campbell resume a conduta: tipo I fechado, II e III redução aberta conforme o paciente, IV conservador ou cirúrgico, pensando em técnica minimamente invasiva para refazer a arquitetura ou em artrodese primária.
 
-!questoes central=trauma-0857,trauma-0571 relacionadas=trauma-0695
+!questoes central=trauma-0857,trauma-0571 relacionadas=trauma-0695 treino=trauma-1813
 conceito: SANDERS é classificação de TC da faceta posterior, lida no corte coronal da parte mais larga da faceta; o número romano dá os fragmentos e as letras A, B, C a posição dos traços de lateral para medial.
 como: O TARO 2011 perguntou o plano da TC em que SANDERS se baseia (coronal); o TEOT 2024 juntou faceta e plano (faceta posterior, corte coronal). Uma prova do CET-PR mostrou uma TC e pediu o grau (IIIBC: três fragmentos, traços nas posições B e C, a mais medial).
 armadilha: Corte axial ou sagital: o sagital mostra depressão e rotação, mas a classificação é lida no coronal.
@@ -416,7 +416,7 @@ No calcâneo, a pele decide o momento e a via da cirurgia. Segundo o Rockwood an
 - **Síndrome compartimental do pé:** **10% a 50%** nas fraturas de alta energia; o sintoma mais constante é a **dor intensa** desproporcional; a sequela é a **garra dos dedos**. O diagnóstico é clínico, e a fasciotomia do pé continua controversa. O Campbell aponta o **SANDERS IV** como o melhor preditor de síndrome compartimental.
 - **Exposta:** até **10%**; a ferida mais comum é a **transversa medial** (a espícula sustentacular furando a pele por dentro, para o Campbell). Infecção profunda **até 39%** (Campbell); em média 2,8 cirurgias e amputação abaixo do joelho em **5% a 8%** (Rockwood).
 
-!questoes central=trauma-0102
+!questoes central=trauma-0102 treino=trauma-1820
 conceito: Na língua com grande desvio, o tríceps sural puxa a tuberosidade contra a pele posterior, que necrosa em até 21% sem redução de emergência.
 como: O TARO 2017 perguntou a complicação precoce mais frequente da língua com grande desvio (necrose da pele posterior), com síndrome compartimental e lesões nervosas como distratores.
 armadilha: Síndrome compartimental: existe na fratura de alta energia, mas a complicação típica da língua desviada é a pele posterior.

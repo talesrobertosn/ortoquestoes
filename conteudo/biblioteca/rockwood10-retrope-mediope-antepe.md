@@ -385,7 +385,7 @@ AP, oblíqua (em **30 graus de rotação interna**) e perfil verdadeiro, e a rad
 
 Uma regra ajuda a memorizar: cada incidência confere uma coluna. O **AP** mostra a coluna medial e a do meio (1º com cuneiforme medial; **2º com cuneiforme intermédio**, pela borda medial); a **oblíqua** abre a coluna lateral e mostra o **4º com o cuboide**, sempre pela **borda medial** dos dois (Rockwood, seções Signs and Symptoms and Imaging of Cuboid Fractures e Signs and Symptoms and Imaging of Tarsometatarsal Joint Injuries). Depois da redução, os mesmos alinhamentos servem de parâmetro de controle.
 
-!questoes central=trauma-0888
+!questoes central=trauma-0888 treino=trauma-1821
 conceito: Na oblíqua do pé, a borda medial do 4º metatarso deve alinhar com a borda medial do cuboide; no AP, a borda medial do 2º alinha com a do cuneiforme intermédio; 1 mm de desalinhamento é patológico.
 como: O TARO 2010 perguntou o parâmetro de redução do LISFRANC visto na oblíqua.
 armadilha: Marcar o 2º com o cuneiforme medial (o par certo do AP é 2º com cuneiforme intermédio) ou usar a borda lateral do cuboide com o 5º.
@@ -538,7 +538,7 @@ Uma terceira divisão, que já caiu em prova, é a de **DeLEE**, registrada no S
 
 A sequência é fácil de fixar andando de proximal para distal: **avulsão (zona 1), JONES (zona 2), estresse (zona 3)**. O que separa a zona 2 da 3 não é só o ponto, é a história: a JONES é **aguda**, sem pródromos, na junção metáfise-diáfise que inclui a articulação entre o 4º e o 5º; a de estresse vem de **carga cíclica**, com **pródromos**, nos 1,5 cm proximais da diáfise, já distal a essa articulação (Rockwood, seção Classification of Fifth Metatarsal Fractures; Campbell, p. 4120). Não existe zona IV nessa divisão.
 
-!questoes central=trauma-0172
+!questoes central=trauma-0172 treino=trauma-1814
 conceito: Nas fraturas proximais do 5º metatarso, a zona I é a avulsão da tuberosidade, a zona II é a JONES aguda na junção metáfise-diáfise e a zona III é a fratura de estresse dos 1,5 cm proximais da diáfise.
 como: A prova perguntou as zonas da JONES e da fratura por estresse, respectivamente (II e III); o mesmo enunciado caiu no TEOT 2021.
 armadilha: Chamar a avulsão da tuberosidade (zona I) de JONES ou inventar uma zona IV.

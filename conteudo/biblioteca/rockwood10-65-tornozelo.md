@@ -71,7 +71,7 @@ Com o pé supinado, o tálus roda para fora dentro do encaixe, afasta a tíbia d
 
 Às vezes a lesão medial do estágio IV passa pelos dois: rompe o **deltoide profundo** (preso ao colículo posterior, que fica inteiro) e depois atravessa o osso, deixando uma fratura do **colículo anterior**. Esse detalhe volta adiante: fixar o colículo anterior não devolve a competência do deltoide profundo. Na SER IV a fíbula oblíqua aceita **parafuso de tração com placa de neutralização** ou haste; o maléolo medial oblíquo vai com parafuso perpendicular ao traço; a sindesmose é testada e, se instável, fixada.
 
-!questoes central=trauma-0186 relacionadas=trauma-0716,pe-tornozelo-0331,pe-tornozelo-0368 treino=trauma-1683
+!questoes central=trauma-0186 relacionadas=trauma-0716,pe-tornozelo-0331,pe-tornozelo-0368 treino=trauma-1683,trauma-1809,trauma-1810
 conceito: Na SER, a sequência é tibiofibular anteroinferior, fíbula oblíqua no nível da sindesmose, tibiofibular posteroinferior ou maléolo posterior e, no estágio IV, deltoide ou maléolo medial; o tornozelo fica instável no IV, que é uma fratura WEBER B.
 como: O TEOT 2022 classificou uma fratura em imagem por LAUGE-HANSEN e DANIS-WEBER (supinação-rotação externa do 4º estágio e tipo B trans-sindesmal). O CET-PR mostrou uma SER II. O TARO 2007 pediu a ordem das lesões e o TARO 2006, o primeiro elemento a falhar (o tibiofibular anterior); os dois estão sem gabarito no acervo, e o capítulo sustenta a sequência que começa pela sindesmose anterior e termina no deltoide.
 armadilha: Supinação-rotação interna: não é uma das quatro classes de LAUGE-HANSEN, que combinam a posição do pé com adução, abdução ou rotação externa; o capítulo cita a rotação interna entre as forças possíveis, mas nenhuma classe a usa.
@@ -110,7 +110,7 @@ Na pronação-rotação externa, o lado medial falha primeiro (estágio I: fratu
 
 O tratamento da fíbula depende da altura: no **terço distal**, placa (para a fíbula não angular), com ou sem parafuso de sindesmose; **acima disso**, o mais comum é usar só os **parafusos de sindesmose**, sem fixar a fíbula. A fratura proximal **não precisa de fixação**, e explorá-la arrisca o **nervo fibular comum**. O maléolo medial vai com parafuso.
 
-!questoes central=trauma-0009 treino=trauma-1686
+!questoes central=trauma-0009 treino=trauma-1686,trauma-1811
 conceito: A fratura de MAISONNEUVE é a variante clássica da pronação-rotação externa: fíbula proximal com lesão medial e da sindesmose; a fíbula proximal não se fixa, e a sindesmose sim.
 como: O TARO 2020 pediu o mecanismo de trauma da fratura de MAISONNEUVE, com os quatro mecanismos de LAUGE-HANSEN como alternativas.
 armadilha: Supinação-rotação externa: também é rotacional, mas a fíbula quebra no nível da sindesmose, com espícula posterior.
@@ -289,7 +289,7 @@ O problema é a fratura com **encaixe alinhado** na primeira radiografia: SER II
 Radiografia sob estresse gravitacional: decúbito lateral sobre o lado do tornozelo lesado, com perna, tornozelo e pé pendentes da mesa, obtendo a mortalha; a posição aplica uma força de rotação externa, como no estresse manual.
 !fim
 
-!questoes central=trauma-0300 relacionadas=pe-tornozelo-0348 treino=trauma-1690
+!questoes central=trauma-0300 relacionadas=pe-tornozelo-0348 treino=trauma-1690,trauma-1818
 conceito: A radiografia de estresse do tornozelo é feita com a articulação em neutro e rotação externa do antepé; a flexão plantar cria falso alargamento do espaço claro medial.
 como: Uma prova de Ortopedia sem ano perguntou a posição das radiografias de instabilidade (neutro e rotação externa do antepé), contra rotação interna e flexão plantar (a mesma questão aparece duas vezes no acervo). O TARO 2009 perguntou a posição do estresse para o deltoide combinando pronação ou supinação com rotação medial ou lateral; está sem gabarito, e o capítulo descreve rotação externa (lateral) com o tornozelo em neutro, sem falar em pronação ou supinação.
 armadilha: Flexão plantar e rotação externa: a rotação está certa, mas a flexão plantar simula instabilidade.
