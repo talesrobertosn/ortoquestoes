@@ -7,7 +7,7 @@ import { quadroDoDia } from '../../componentes/admin/agora'
 import { diaSP } from '../../componentes/admin/estudoHoje'
 import { acertoReal, registrarTitulosResumos } from '../../componentes/admin/formatos'
 import { CORTESIA_ADMIN, PLANO_CORTESIA, rotuloPlano } from '../../componentes/admin/rotulos'
-import { indicacaoEmDestaque, planosEmDestaque, viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
+import { classeSinais, indicacaoEmDestaque, planosEmDestaque, shortsEmDestaque, textoShorts, viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
 import { usarRpc } from '../../componentes/admin/usarRpc'
 import { serieLimpa, usarFunil, usarSerie } from '../dados/consultas'
 import { Comparacoes, Destaques, Graficos, Termometro } from './central'
@@ -322,7 +322,7 @@ export function LinhaOnline({ u, tipo, hoje, limite, assinatura }: { assinatura?
   const p = usarPainel()
   const nav = usarNav()
   const s = p.sinais.get(u.id_usuario)
-  return <li className={tipo + (indicacaoEmDestaque(s?.indicacao_ultima) ? ' a3-indicacao' : '')}>
+  return <li className={[tipo, classeSinais(s)].filter(Boolean).join(' ')}>
     <button type="button" className="a3-pessoa-linha" onClick={() => nav.abrirPessoa(u.id_usuario)}>
       <span className="a3-avatar">{iniciais(u.nome ?? u.email)}<i className="a3-ponto a3-ponto--vivo" /></span>
       <span className="a3-pessoa-linha__texto">
@@ -336,6 +336,7 @@ export function LinhaOnline({ u, tipo, hoje, limite, assinatura }: { assinatura?
         <span className="a3-pessoa-linha__faz"><Faz u={u} /></span>
         <span className="a3-pessoa-linha__meta">
           {indicacaoEmDestaque(s?.indicacao_ultima) && <span className="a3-tag a3-tag--indicacao" title={s?.indicacao_ultima ? `Última visita: ${new Date(s.indicacao_ultima).toLocaleString('pt-BR')}` : undefined}>Viu Indique e ganhe em 24 h · {haQuanto(s?.indicacao_ultima)}</span>}
+          {s && shortsEmDestaque(s.shorts_ultima) && <span className="a3-tag a3-tag--shorts">{textoShorts(s, haQuanto)}</span>}
           {tipo !== 'assinante' && !u.administrador && <Limite u={u} limite={limite} />}
           {tipo === 'gratis' && !u.administrador && viuPlanos(s) && <span>viu os planos {haQuanto(s?.planos_ultima)}</span>}
           {tipo !== 'assinante' && <span>conta {haQuanto(u.criado_em)}</span>}
@@ -358,7 +359,7 @@ export function LinhaFora({ u, tipo, hoje, assinatura }: { assinatura?: Assinatu
   const nav = usarNav()
   const s = p.sinais.get(u.id_usuario)
   const sinal = ultimoSinal(u)
-  return <li className={tipo + (indicacaoEmDestaque(s?.indicacao_ultima) ? ' a3-indicacao' : '')}>
+  return <li className={[tipo, classeSinais(s)].filter(Boolean).join(' ')}>
     <button type="button" className="a3-pessoa-linha" onClick={() => nav.abrirPessoa(u.id_usuario)}>
       <span className="a3-avatar">{iniciais(u.nome ?? u.email)}</span>
       <span className="a3-pessoa-linha__texto">
@@ -366,6 +367,7 @@ export function LinhaFora({ u, tipo, hoje, assinatura }: { assinatura?: Assinatu
           : <b className={`a3-tag a3-tag--${tipo === 'assinante' ? 'assinante' : tipo === 'lead' ? 'lead' : 'suave'}`}>{tipo === 'assinante' ? rotuloAssinante(u.plano_vigente) : ROTULO_TIPO[tipo]}</b>}</ResumoPessoa>
         <span className="a3-pessoa-linha__meta">
           {indicacaoEmDestaque(s?.indicacao_ultima) && <span className="a3-tag a3-tag--indicacao" title={s?.indicacao_ultima ? `Última visita: ${new Date(s.indicacao_ultima).toLocaleString('pt-BR')}` : undefined}>Viu Indique e ganhe em 24 h · {haQuanto(s?.indicacao_ultima)}</span>}
+          {s && shortsEmDestaque(s.shorts_ultima) && <span className="a3-tag a3-tag--shorts">{textoShorts(s, haQuanto)}</span>}
           <span>{sinal ? `última vez ${haQuanto(sinal)}` : 'nunca entrou'}</span>
           {viuPlanos(s) && <span>viu os planos {tipo === 'lead' ? quandoPlanos(s?.planos_ultima, hoje) : haQuanto(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'} em 30 dias</span>}
         </span>

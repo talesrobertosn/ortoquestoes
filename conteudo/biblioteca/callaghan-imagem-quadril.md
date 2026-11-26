@@ -1,6 +1,6 @@
 ---
 id: callaghan-imagem-quadril
-versao: 3
+versao: 4
 titulo: Imagem do quadril
 especialidade: quadril
 acesso: gratis
@@ -265,6 +265,8 @@ Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017)
 
 O HEBERT (cap. 10) divide as trabéculas do fêmur proximal em compressão primária e secundária, tensão primária e secundária e trabeculado intertrocantérico, e define o **triângulo de WARD** como a **área radiolucente entre a compressão primária, a compressão secundária e a tensão primária**. O **índice de SINGH** gradua a osteoporose pelo sumiço das trabéculas, que começa pela tensão: grau 6 normal; grau 5 com o triângulo de WARD em destaque; graus 4 e 3 com a tensão primária reduzida, contínua no 4 e interrompida no 3; graus 2 e 1 só com compressão. **Grau 3 ou menos indica osteoporose**.
 
+O Rockwood adulto (10ª ed., cap. 54, seção de anatomia aplicada das fraturas trocantéricas) completa o desenho com a peça cortical. Fora do triângulo de WARD, a arcada de osso esponjoso que vem da cabeça deixa de ser maciça e vira um tubo, que dá origem ao canal medular. A placa forte de osso na face **posteromedial** desse tubo é o que a literatura inglesa chama de **calcar femoral**, e foi descrita primeiro como **arco de ADAMS**. Por isso, num desenho das trabéculas, a radiolucência entre os feixes é o WARD e o reforço cortical posteromedial do colo é o ADAMS. O mesmo capítulo lembra o sentido clínico: é a região mais atingida quando a fratura trocantérica tem cominuição posteromedial, e com a idade a cortical afina, o osso se alarga e as trabéculas de tensão e compressão somem.
+
 ## O índice de alinhamento de GARDEN
 
 As mesmas trabéculas servem para julgar a redução da fratura do colo. O Rockwood (cap. 53) descreve o índice de GARDEN: no AP, o ângulo entre o eixo central do **sistema trabecular medial da cabeça** e a **cortical medial** do fêmur deve ser de **160 graus**; no perfil, o eixo trabecular central da cabeça fica alinhado com o colo, **180 graus**. GARDEN teve bons resultados entre **155 e 180 graus** em qualquer incidência; fora disso, aumentam a falha da fixação e a necrose.
@@ -277,7 +279,7 @@ O Tachdjian (cap. 15) descreve o método de SOUTHWICK: o ângulo cabeça-diáfis
 conceito: O triângulo de WARD é a área radiolucente entre os trabeculados de compressão primária, compressão secundária e tensão primária do colo; o índice de GARDEN espera 160 graus no AP e 180 no perfil (bom entre 155 e 180); o alfa maior que 55 a 60 graus indica came; SOUTHWICK usa 145 graus como ângulo cabeça-diáfise normal no AP.
 como: O TARO 2023 mostrou o desenho das trabéculas do fêmur proximal e pediu as estruturas A e B (triângulo de WARD e arco de ADAMS). O ENARE R4 2024 pediu o ângulo normal do índice de GARDEN (160 graus no AP). O Fellowship cobrou os valores do ângulo cervicodiafisário, do alfa e do offset e os valores de referência de SOUTHWICK.
 armadilha: Confundir o triângulo de WARD (radiolucência entre trabéculas) com o arco cortical medial do colo, e dar 135 ou 125 graus (ângulo cervicodiafisário) para o índice de GARDEN no AP.
-alerta: O arco de ADAMS (`trauma-0439`) não é descrito nos livros conferidos; o HEBERT só define o triângulo de WARD. Nos simulados, o offset menor que 8 mm, a razão menor que 0,17, o alfa de 62 a 63 graus "segundo CALLAGHAN" e o cervicodiafisário de 120 a 140 (`quadril-0307`) não aparecem nos capítulos lidos, que dão alfa maior que 55 a 60 (Campbell) e definem o offset sem valor de corte; o valor de 10 graus no perfil de SOUTHWICK (`quadril-0324`) também não está no Tachdjian, que só dá os 145 do AP.
+alerta: O arco de ADAMS (`trauma-0439`) não está no HEBERT, que só define o triângulo de WARD; quem o nomeia é o Rockwood adulto (10ª ed., cap. 54), como o nome original do calcar femoral. Nos simulados, o offset menor que 8 mm, a razão menor que 0,17, o alfa de 62 a 63 graus "segundo CALLAGHAN" e o cervicodiafisário de 120 a 140 (`quadril-0307`) não aparecem nos capítulos lidos, que dão alfa maior que 55 a 60 (Campbell) e definem o offset sem valor de corte; o valor de 10 graus no perfil de SOUTHWICK (`quadril-0324`) também não está no Tachdjian, que só dá os 145 do AP.
 !fim
 
 # Artrose: KELLGREN-LAWRENCE, TÖNNIS e a janela da osteotomia {radar=confirmado}

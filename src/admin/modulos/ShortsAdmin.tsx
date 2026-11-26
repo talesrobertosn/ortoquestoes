@@ -75,15 +75,16 @@ function PessoasShorts({ dados, erro }: { dados: Pessoa[] | null | undefined; er
   if (!dados) return <Painel titulo="Quem está nos Shorts"><p className="a3-mudo">Carregando…</p></Painel>
   const agora = Date.now()
   const vendo = dados.filter((x) => agora - Date.parse(x.visto_em) < AGORA_MS)
+  const doze = dados.filter((x) => agora - Date.parse(x.visto_em) < 12 * 3_600_000)
   const hoje = dados.filter((x) => x.hoje > 0)
-  return <Painel titulo="Quem está nos Shorts" descricao={`${inteiro(vendo.length)} vendo agora · ${inteiro(hoje.length)} responderam hoje · ${inteiro(dados.length)} já usaram`}>
+  return <Painel titulo="Quem está nos Shorts" descricao={`${inteiro(vendo.length)} vendo agora · ${inteiro(doze.length)} nas últimas 12 h (rosa nas listas de pessoas) · ${inteiro(hoje.length)} responderam hoje · ${inteiro(dados.length)} já usaram`}>
     {dados.length === 0 ? <p className="a3-mudo">Ninguém com conta abriu os Shorts ainda. Quem está sem conta só olha e não aparece aqui.</p> :
       <table className="a3-tabela"><thead><tr><th>Pessoa</th><th>Situação</th><th>Hoje</th><th>Total</th><th>Acerto</th><th>Vistas</th><th>Primeira vez</th></tr></thead>
         <tbody>{dados.map((x) => {
           const ativo = agora - Date.parse(x.visto_em) < AGORA_MS
           return <tr key={x.id_usuario}>
             <td>{x.usuario ?? 'sem e-mail'} {x.ilimitado && <Selo contorno>Sem limite</Selo>}</td>
-            <td>{ativo ? <Selo tom="ok" solido>Vendo agora</Selo> : <span className="a3-mudo">{haQuanto(x.visto_em)}</span>}</td>
+            <td>{ativo ? <Selo tom="ok" solido>Vendo agora</Selo> : agora - Date.parse(x.visto_em) < 12 * 3_600_000 ? <span className="a3-tag a3-tag--shorts">{haQuanto(x.visto_em)}</span> : <span className="a3-mudo">{haQuanto(x.visto_em)}</span>}</td>
             <td className="num">{inteiro(x.hoje)}</td>
             <td className="num">{inteiro(x.total)}</td>
             <td className="num">{pct(x.acertos, x.total)}</td>

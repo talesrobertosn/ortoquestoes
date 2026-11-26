@@ -34,11 +34,13 @@ function usarPrisao(aberta: boolean, aoFechar: () => void) {
 const raiz = () => document.getElementById('a3-camadas') ?? document.body
 
 /** Gaveta lateral: ficha de pessoa, detalhe de cobrança, revisão de envio. No celular, tela cheia. */
-export function Gaveta({ aberta, aoFechar, titulo, subtitulo, topo, children, largura, destaque, indicacao }: {
+export function Gaveta({ aberta, aoFechar, titulo, subtitulo, topo, children, largura, destaque, indicacao, shorts }: {
   aberta: boolean; aoFechar: () => void; titulo: ReactNode; subtitulo?: ReactNode; topo?: ReactNode; children: ReactNode; largura?: number
   /** Cabeça amarelada (quem abriu os planos nas últimas 24 horas). */
   destaque?: boolean
   indicacao?: boolean
+  /** Usou os Shorts nas últimas 12 h: cabeçalho rosa. */
+  shorts?: boolean
 }) {
   const caixa = usarPrisao(aberta, aoFechar)
   const id = useId()
@@ -46,7 +48,7 @@ export function Gaveta({ aberta, aoFechar, titulo, subtitulo, topo, children, la
   return createPortal(<>
     <div className="a3-veu" onClick={aoFechar} aria-hidden="true" />
     <div ref={caixa} className="a3-gaveta" role="dialog" aria-modal="true" aria-labelledby={id} style={largura ? { width: `min(${largura}px, calc(100vw - 16px))` } : undefined}>
-      <header className={`a3-gaveta__cabeca${destaque ? ' a3-gaveta__cabeca--destaque' : ''}${indicacao ? ' a3-indicacao' : ''}`}>
+      <header className={`a3-gaveta__cabeca${destaque ? ' a3-gaveta__cabeca--destaque' : ''}${indicacao ? ' a3-indicacao' : ''}${shorts ? ' a3-shorts' : ''}`}>
         {topo}
         <div style={{ flex: 1, minWidth: 0, display: 'grid', gap: 3 }}>
           <h2 id={id} className="a3-titulo-2" style={{ overflowWrap: 'anywhere' }}>{titulo}</h2>

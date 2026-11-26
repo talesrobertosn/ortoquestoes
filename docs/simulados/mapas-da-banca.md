@@ -1446,7 +1446,7 @@ antebraço", nos temas trauma, ombro-cotovelo, mão e pediatria. Nenhuma questã
 | Monteggia, sinostose | Maior incidência no tipo IV | TARO 2013 trauma-1090 |
 | Monteggia, falha | Subluxação radial após osteossíntese = redução não anatômica da ulna | TARO 2012 ombro-cotovelo-0325 |
 | Monteggia crônica | BELL-TAWSE reconstrói o anular com tríceps | TARO 2011 trauma-0868; TEOT 2023 trauma-0332 |
-| Galeazzi, mecanismo | Antebraço pronado e punho estendido | TARO 2010 trauma-0311 (três cópias) |
+| Galeazzi, mecanismo | Antebraço pronado e punho estendido | TARO 2010 trauma-0893 (três cópias) |
 | Galeazzi, mecanismo fino | Ápice volar = supinação com punho estendido | TARO 2023 trauma-0437 |
 | Galeazzi, RUD instável | Encurtamento do rádio > 5 mm e traço até 7,5 cm da articulação | TARO 2022 trauma-0231; repertório TARO 2020 trauma-1110 e TARO 2007 trauma-1115 (sem chave) |
 | Galeazzi, tratamento | Redução cruenta e placa de compressão | TARO 2011 trauma-0858 |

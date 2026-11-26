@@ -1105,3 +1105,11 @@ li.a3-indicacao .a3-pessoa-linha .a3-avatar { background: var(--cor-indicacao-ve
   #a3-pessoas .a3-numeros-pessoa { display: flex; flex-wrap: wrap; width: 100%; }
   #a3-pessoas .a3-numeros-pessoa > span { flex: 1; min-width: 52px; }
 }
+
+/* Usou os Shorts nas últimas 12 h: rosa (Tales, 26/11/2026). Vem depois do azul do Indique e ganhe e ganha dele. */
+.a3 { --cor-shorts: #c0407e; --cor-shorts-veu: #fdeef5; --cor-shorts-texto: #9b2c63; }
+:root[data-tema="escuro"] .a3 { --cor-shorts: #f39cc6; --cor-shorts-veu: #3a1d2c; --cor-shorts-texto: #fbc4de; }
+.a3-pessoas-lista > li.a3-shorts, .a3-tabela tbody tr.a3-shorts, .a3-tabela tbody tr.a3-shorts:hover,
+.a3-gaveta__cabeca.a3-shorts { --c: var(--cor-shorts); background: var(--cor-shorts-veu); }
+.a3-tag--shorts { background: var(--cor-shorts-veu); color: var(--cor-shorts-texto); box-shadow: inset 0 0 0 1px var(--cor-shorts); }
+li.a3-shorts .a3-pessoa-linha .a3-avatar { background: var(--cor-shorts-veu); color: var(--cor-shorts-texto); box-shadow: inset 0 0 0 1.5px var(--cor-shorts); }
