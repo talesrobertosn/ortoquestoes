@@ -19,6 +19,10 @@ const normal = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLower
 const subtemasExistentes = new Set(questoes.flatMap((q) => q.subtemas || []))
 const textoDe = new Map(questoes.map((q) => [q.id, ' ' + normal([q.enunciado, ...(q.alternativas || []).map((a) => a.texto)].join(' ')) + ' ']))
 
+// Duplicata escondida (duplicataDe) não aparece: no lugar dela entra a questão mantida, uma vez só.
+const mantidaDe = new Map(questoes.filter((q) => q.duplicataDe).map((q) => [q.id, q.duplicataDe]))
+const semDuplicatas = (ids) => [...new Set(ids.map((id) => mantidaDe.get(id) || id))]
+
 const saida = {}
 const avisos = []
 for (const f of fichas) {
@@ -32,7 +36,7 @@ for (const f of fichas) {
   })
   const l = questoes.filter((q) => (q.subtemas || []).some((s) => lesoes.has(s))).map((q) => q.id)
   const a = questoes.filter((q) => (q.subtemas || []).some((s) => anat.has(s)) && termos.some((re) => re.test(textoDe.get(q.id)))).map((q) => q.id)
-  saida[f.chave] = { l, a }
+  saida[f.chave] = { l: semDuplicatas(l), a: semDuplicatas(a) }
 }
 writeFileSync(join(RAIZ, 'public/atlas3d/v1/questoes.json'), JSON.stringify(saida))
 for (const [k, v] of Object.entries(saida)) console.log(k.padEnd(18), 'lesões', String(v.l.length).padStart(4), '· anatomia', String(v.a.length).padStart(4))
