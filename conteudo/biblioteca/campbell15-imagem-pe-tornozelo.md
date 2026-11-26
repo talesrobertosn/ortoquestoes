@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-pe-tornozelo
-versao: 2
+versao: 3
 titulo: Imagem do pé e tornozelo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -193,6 +193,12 @@ A subtalar tem três facetas: anterior e média no compartimento anterior, poste
 ## Barra calcaneonavicular
 
 A **oblíqua em pé, a 45° de lateral para medial**, é a **melhor incidência** para a coalizão calcaneonavicular. A barra aparece como ponte óssea sólida entre o processo anterior do calcâneo e o navicular, ou como linha radiolucente irregular na junção (barra fibrosa ou cartilaginosa). O diagnóstico é **corroborado no perfil**, que mostra o **processo anterior do calcâneo alongado: o nariz de tamanduá** (anteater's nose). Como uma segunda coalizão no mesmo pé é frequente, todo paciente com barra calcaneonavicular na radiografia deve fazer **TC do complexo subtalar** para afastar outra.
+
+No perfil do GREENSPAN (cap. 32, Figura 32.62), as setas mostram o **nariz de tamanduá**: o processo anterior do calcâneo se alonga para a frente e para cima até quase tocar o navicular.
+
+!figura 32.62 imagem=pe-tornozelo/greenspan6-32-62.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 32, Figura 32.62. Perfil do pé com o sinal do nariz de tamanduá (setas): processo anterior do calcâneo alongado em direção ao navicular na coalizão calcaneonavicular.
+!fim
 
 ## Barra talocalcânea
 
@@ -393,6 +399,12 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 65), separa a SER 2 e
 
 O Campbell (cap. 94, p. 4138) confirma: **radiografias em estresse de rotação externa diagnosticam a incompetência do deltoide nas fraturas fibulares supinação-eversão com a pinça reduzida**. O HEBERT (cap. 69) dá os parâmetros do AP: **espaço claro medial menor que 4 mm**, espaço livre tibiofibular de 4 a 5 mm, sobreposição tibiofibular maior que 6 mm, ângulo talocrural de 83 ± 4°; descreve o teste da gravidade com o membro em rotação externa e, nas figuras do intraoperatório, chama o teste de estresse de **pronação e rotação externa**.
 
+Quando a dúvida é o próprio deltoide, a RM mostra o ligamento. No GREENSPAN (cap. 10, Figura 10.67), o deltoide normal é uma faixa escura de fibras listradas (D); roto, ele perde a faixa e vira sinal claro de líquido na inserção tibial (A, seta branca) ou nas fibras profundas (B e C), muitas vezes com contusão do tálus medial.
+
+!figura 10.67 imagem=pe-tornozelo/greenspan6-10-67.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 10, Figura 10.67. RM do ligamento deltoide: ruptura da inserção tibial no coronal T2 (seta branca) com lesão condral do tálus (seta preta) (A); ruptura parcial das fibras profundas (B); ruptura das fibras profundas com contusão do tálus no axial (C); deltoide normal, escuro, para comparação (D).
+!fim
+
 !questoes central=pe-tornozelo-0348 treino=pe-tornozelo-0457
 conceito: A lesão do deltoide com fratura do maléolo lateral (supinação-rotação externa) é revelada pelo estresse em rotação externa, com tornozelo neutro, abrindo o espaço claro medial acima de 4 mm.
 como: O TARO 2009 perguntou em que posição se faz a radiografia sob estresse para detectar lesão do deltoide na fratura do maléolo lateral.
@@ -405,6 +417,12 @@ alerta: Questão sem gabarito oficial. O Campbell (cap. 59, p. 2572) descreve o 
 A anatomia explica os testes (Campbell, cap. 94, p. 4135 a 4136): o **talofibular anterior** é o mais fraco e o mais lesado; o **calcaneofibular** é o **único extracapsular**; o **talofibular posterior** é o mais forte; o **deltoide profundo** é a principal restrição à translação lateral do tálus.
 
 No **estresse em inversão**, se os ligamentos laterais estão completamente rotos, o tálus inclina; a inversão é melhor aplicada com o tornozelo em **flexão plantar**. No serviço do Campbell (p. 4138), estressam-se os dois lados, e **mais de 10° de inclinação acima do lado normal** indicam lesão lateral significativa. A **gaveta anterior** indica lesão do talofibular anterior; o **sinal do sulco** acompanha a ruptura. O livro avisa que essas radiografias **não precisam ser rotineiras**, porque a maioria das lesões instáveis é tratada funcionalmente.
+
+O GREENSPAN (cap. 10, Figura 10.10) mostra como se mede: no AP sob estresse em inversão, traça-se uma linha no teto da tíbia e outra na cúpula do tálus; o ângulo entre elas é a inclinação talar (20 graus no desenho), sempre comparada com o outro tornozelo.
+
+!figura 10.10 imagem=pe-tornozelo/greenspan6-10-10.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 10, Figura 10.10. AP do tornozelo sob estresse em inversão (B) e esquema da medida: a inclinação talar é o ângulo entre o teto tibial e a cúpula do tálus (20 graus no desenho).
+!fim
 
 !tabela Inclinação talar no estresse em inversão (Campbell 15, cap. 94, p. 4138)
 | Inclinação do tálus | Ligamentos rotos |
@@ -462,6 +480,12 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 91, Tab. 91.4, p. 4011), apr
 
 O HEBERT (cap. 21.7) descreve o estágio I como a fase aguda, desenvolvimento-fragmentação, com **edema, calor e rubor** e depois **fragmentação do osso subcondral, fratura periarticular, subluxação ou luxação** na radiografia; o estágio **0**, acrescentado depois, é o paciente com clínica aguda **sem alteração radiográfica**, em que **a RM é o único exame** capaz de confirmar. A classificação anatômica de BRODSKY vai de 1 (tarsometatarsal, 60% dos casos) a 2 (Chopart e subtalar), 3A (tornozelo), 3B (calcâneo), 4 (mais de um local) e 5 (antepé). O Campbell lembra que alguns autores preferem uma classificação por RM ou PET-TC, que pega alterações mais cedo.
 
+O GREENSPAN (cap. 13, Figura 13.53) mostra o tornozelo de Charcot de uma diabética: no AP (A) e no perfil (B), a articulação está desorganizada, com fragmentação, restos ósseos, esclerose e perda do encaixe, num quadro que parece infecção ou tumor, mas é neuropático.
+
+!figura 13.53 imagem=pe-tornozelo/greenspan6-13-53.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 13, Figura 13.53. Radiografias AP (A) e perfil (B) do tornozelo de uma paciente com diabetes de longa data: articulação neuropática (Charcot), com destruição, fragmentos ósseos e perda da congruência.
+!fim
+
 !questoes central=pe-tornozelo-0099 treino=pe-tornozelo-0460
 conceito: EICHENHOLTZ 1 (fragmentação) = destruição óssea, subluxação ou luxação na radiografia com edema, calor e eritema; o 0 tem a mesma clínica sem alteração radiográfica.
 como: Uma prova de Ortopedia descreveu destruição óssea na radiografia com edema, calor e eritema e pediu o estágio.
@@ -487,6 +511,12 @@ O Campbell (cap. 91, p. 3999.e1 a 4000) discute a dúvida mais difícil do pé d
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 94, p. 4162 a 4163), lembra que quase **metade** das lesões osteocondrais do tálus passa despercebida no pronto-socorro como entorse; derrame persistente, sinovite tardia e travamento 4 a 5 semanas depois pedem imagem. As **oblíquas e o perfil em flexão plantar, sem sobreposição da tíbia**, mostram a lesão melhor que as incidências padrão. Se a suspeita persiste, cintilografia; se positiva, **TC com cortes de 2 mm axiais e coronais** para tamanho, local e cistos; a **RM** identifica o estágio I de BERNDT e HARTY e mostra a cartilagem. As lesões **mediais** são mais **posteriores, profundas e em taça** (inversão, flexão plantar e rotação lateral da tíbia sobre o tálus); as **laterais** são **anteriores, rasas e em bolacha**, mais deslocadas (inversão com dorsiflexão forte).
 
 Na consolidação viciosa do calcâneo, o Campbell (cap. 63) lembra que a radiografia mostra **perda do BÖHLER, alargamento do calcanhar, incongruência subtalar e varo**; a BRODEN informa a subtalar, mas **a TC é o exame mais preciso** para alinhamento e congruência. No mesmo raciocínio, o Campbell (cap. 93, p. 4084) pede, na artrodese subtalar com bloco, radiografia intraoperatória para restaurar o **talocalcâneo lateral, normalmente de 25 a 45°**.
+
+**Ruptura do tendão do calcâneo.** O GREENSPAN (cap. 10) a chama de lesão de partes moles mais comum do pé. A suspeita é clínica; a radiografia lateral com técnica de partes moles pode mostrar perda da definição do tendão e edema, e a confirmação vem da ultrassonografia ou da RM. Na RM (Figura 10.79), o tendão normal é uma faixa escura contínua; roto, ele mostra uma **falha preenchida por sinal claro** de edema e hematoma, com as pontas afastadas (no paciente B, um hiato de 3 cm). A tendinopatia, precursora da ruptura, aparece como espessamento fusiforme do tendão acima da inserção.
+
+!figura 10.79 imagem=pe-tornozelo/greenspan6-10-79.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 10, Figura 10.79. RM com ruptura completa do tendão do calcâneo: sagital T1 junto à junção musculotendínea (A), sagital STIR com hiato de 3 cm e edema (B), sagital em inversão-recuperação (C) e axial T2 (D); setas na falha.
+!fim
 
 # Fechamento {radar=fundamento}
 

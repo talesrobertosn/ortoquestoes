@@ -1,6 +1,6 @@
 ---
 id: green-imagem-mao-punho
-versao: 3
+versao: 4
 titulo: Imagem da mão e do punho
 especialidade: mao
 acesso: gratis
@@ -114,6 +114,12 @@ armadilha: Escolher a preensão em supinação: a supinação faz o contrário d
 
 No PA normal, o Green (cap. 13, p. 428) descreve três curvas lisas, os **arcos de GILULA**: o **contorno proximal da fileira proximal** (arco 1), o **contorno distal da fileira proximal** (arco 2) e o **contorno proximal da fileira distal**, isto é, do capitato e do hamato (arco 3). **Qualquer degrau indica anormalidade no ponto onde o arco se quebra.** O Rockwood (cap. 44, seção Imaging and Other Diagnostic Studies for Carpal Fractures and Dislocations, Radiographs) acrescenta que o arco quebrado é diagnóstico de fratura e/ou instabilidade, sobretudo das **fratura-luxações perissemilunares**, e que, na dissociação lunopiramidal, **pode não haver gap, mas há quebra do arco da fileira proximal**. O Green (cap. 16, p. 604) dá o número: a luxação perissemilunar é perdida pelos primeiros atendentes em **até 25%** dos casos.
 
+O GREENSPAN (cap. 7, Figura 7.85) traz o PA normal e o desenho dos três arcos: o I passa na borda proximal do escafoide, do semilunar e do piramidal; o II, na borda distal dessa fileira; o III, na borda proximal do capitato e do hamato. Treine o olho no normal: as três curvas são lisas e paralelas.
+
+!figura 7.85 imagem=mao/greenspan6-7-85.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 7, Figura 7.85. PA normal do punho e esquema dos três arcos do carpo (GILULA): arco I na borda proximal da fileira proximal, arco II na borda distal dela e arco III na borda proximal do capitato e do hamato.
+!fim
+
 ## Espaços: 2 mm e simetria
 
 Ossos que articulam normalmente têm **superfícies paralelas separadas por 2 mm ou menos**; **qualquer sobreposição** entre ossos bem perfilados sugere anormalidade intercarpal (Green, cap. 13, p. 428). O complemento é tão importante quanto a regra: a diástase **só é sinal de lesão se for assimétrica**, e as **radiografias do punho contralateral são obrigatórias** na investigação ligamentar. O Rockwood (cap. 44) gradua o espaço: normal até 2 mm, **suspeita de lesão acima de 3 mm** e **frequentemente diagnóstico acima de 5 mm**.
@@ -147,6 +153,12 @@ O alerta vem junto: **os valores normais são muito variados, a reprodutibilidad
 - **Ângulo radiolunar (RL)**: mostra a inclinação dorsal ou palmar do semilunar; normal **0 ± 15°**.
 
 O Rockwood (cap. 44, Tabela 44-4) usa cortes mais definidos: SL normal **45°** (30 a 60°), **DISI acima de 60°**, **VISI abaixo de 30°**, **acima de 80° diagnóstico**; LC e RL normais abaixo de 15°, e **acima de 15 a 20° sugerem instabilidade**. O DISI aparece na dissociação SL e na fratura desviada ou pseudartrose do escafoide; a VISI, na dissociação lunopiramidal. O capítulo 16 do Green (p. 590) define DISI do mesmo jeito: **SL acima de 60° e LC acima de 15°**.
+
+O desenho do GREENSPAN (cap. 7, Figura 7.102) mostra como traçar e ler os ângulos: o escafossemilunar normal entre 30 e 60 graus (A) e o capitatossemilunar entre 0 e 30 (B); na DISI o semilunar inclina para dorsal e o SL passa de 60 (C); na VISI o semilunar inclina para palmar, o SL cai abaixo de 30 e o capitatossemilunar passa de 30 (D).
+
+!figura 7.102 imagem=mao/greenspan6-7-102.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 7, Figura 7.102. Esquema dos eixos no perfil do punho: ângulo escafossemilunar normal de 30 a 60 graus (A) e capitatossemilunar de 0 a 30 (B); DISI com SL acima de 60 (C) e VISI com SL abaixo de 30 e capitatossemilunar acima de 30 (D).
+!fim
 
 O HEBERT (cap. 52) dá outra faixa para o ângulo SL normal: **45 a 70°**. É uma divergência real que a banca pode explorar: um ângulo de 65° é normal para o HEBERT e já sugere DISI para o Rockwood e para a definição do capítulo 16 do Green.
 
@@ -185,6 +197,12 @@ A ruptura SL isolada **não desalinha o carpo de imediato**; quando falham tamb�
 
 O sinal de **TERRY THOMAS**, batizado por FRANKEL por causa do diastema dentário do comediante inglês, é o **espaço SL anormalmente largo comparado com o contralateral** (Green, cap. 13, p. 436). Mede-se **no meio da faceta ulnar plana do escafoide**; **gap unilateral acima de 5 mm é diagnóstico** de dissociação SL. Sem trauma claro e com diástase evidente, pense em **gap constitucional, em geral bilateral**, com ou sem frouxidão, e em artrite reumatoide, gota e doença por depósito de pirofosfato de cálcio. A radiografia comparativa é crítica; o próprio livro mostra um caso em que só um dos dois punhos cerrados alargou (Fig. 13.22). Na criança, o escafoide ainda incompleto produz o **pseudo-TERRY THOMAS** (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 8).
 
+No PA do GREENSPAN (cap. 7, Figura 7.86), compare o espaço entre escafoide e semilunar com os outros espaços do carpo: ele está claramente mais largo que os demais, que medem 1 a 2 mm.
+
+!figura 7.86 imagem=mao/greenspan6-7-86.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 7, Figura 7.86. PA do punho com sinal de TERRY THOMAS: espaço escafossemilunar anormalmente largo na dissociação escafossemilunar.
+!fim
+
 ## O anel cortical: o escafoide fletido
 
 Quando o escafoide colapsa em flexão, ele fica **encurtado no PA** e a **tuberosidade aparece de frente, como um círculo denso sobre os dois terços distais** do osso: o **sinal do anel** (Green, cap. 13, p. 436). O livro faz duas ressalvas que viram pegadinha: o anel está presente **sempre que o escafoide está fletido, qualquer que seja a causa**, e por isso **nem sempre indica dissociação SL** (escafoide e semilunar podem estar fletidos juntos com ligamentos íntegros, como na VISI). O HEBERT descreve o mesmo sinal como a imagem da tuberosidade do escafoide verticalizado.
@@ -220,6 +238,12 @@ Quando rompem os estabilizadores intrínsecos e extrínsecos, aparece a VISI est
 - **Alargamento SL paradoxal**, comum na LTq, sem ruptura SL (carga sobre as fibras palmares SL, mais longas).
 - **Degrau LTq em desvio ulnar** (o piramidal sobe) e, com colapso, **índice de altura carpal diminuído**.
 - No perfil, VISI; o **eixo do piramidal fica dorsal** ao do semilunar na dissociação LTq e palmar na CIND-VISI (Fig. 13.42).
+
+O GREENSPAN (cap. 7, Figura 7.103) mostra uma VISI medida no perfil: o ângulo escafossemilunar caiu para 18 graus e o capitatossemilunar subiu para 58, num paciente com ruptura escafossemilunar e lunopiramidal na RM. É o desenho D da Figura 7.102 numa radiografia real.
+
+!figura 7.103 imagem=mao/greenspan6-7-103.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 7, Figura 7.103. Perfil do punho com VISI e os eixos traçados: ângulo escafossemilunar de 18 graus e capitatossemilunar de 58 graus.
+!fim
 
 No exame clínico, o **ballottement de REAGAN** e o **shear test de KLEINMAN** (p. 451 e 452).
 

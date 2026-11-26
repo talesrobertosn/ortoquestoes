@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-ombro-cotovelo
-versao: 4
+versao: 5
 titulo: Imagem do ombro e cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -239,9 +239,21 @@ armadilha: Marcar serendipity por ser a mais famosa da esternoclavicular, ou STR
 
 O **outlet** é um perfil da escápula com o tubo **angulado 10 graus** (Campbell, Tabela 51.3) e serve para a patologia acromial e subacromial. Nele o acrômio aparece **plano, curvo ou em gancho**. O Campbell (cap. 51) é cuidadoso: há **associação** entre o acrômio em gancho e a doença do manguito, mas **não causalidade** demonstrada, e pequenas variações na técnica alteram a forma aparente do acrômio. A utilidade é cirúrgica: planejar a acromioplastia e conferir a ressecção comparando as radiografias antes e depois.
 
+O GREENSPAN (cap. 5, Figura 5.16) mostra os três tipos no outlet: a face inferior do acrômio é reta no tipo I (A), acompanha a cabeça numa curva no tipo II (B) e termina num gancho anterior que desce sobre o manguito no tipo III (C).
+
+!figura 5.16 imagem=ombro-cotovelo/greenspan6-5-16.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 5, Figura 5.16. Incidência do outlet (desfiladeiro do supraespinal) com os três tipos de acrômio: plano (A), curvo (B) e em gancho (C).
+!fim
+
 ## Os sinais do manguito crônico
 
 Na radiografia simples, o Campbell (cap. 51) lista os achados que sugerem doença crônica do manguito: **exostoses**, **cistos ou esclerose do tubérculo maior** e **esclerose subacromial**, que o livro chama de **sinal do sourcil** (a "sobrancelha" desenhada sob o acrômio). Calcificação no manguito indica **tendinite calcária**. O dado numérico mais cobrado é o **intervalo acromioumeral**: a **migração superior da cabeça** com intervalo **menor que 7 mm** sugere ruptura do manguito; **menor que 5 mm**, ruptura **maciça**. O mecanismo é intuitivo: sem o supraespinal e o infraespinal deprimindo a cabeça, o deltoide a puxa para cima até ela encostar no acrômio.
+
+O GREENSPAN (cap. 5, Figura 5.62) junta o AP e um desenho do que procurar: **erosão da face inferior do acrômio, intervalo acromioumeral estreitado e achatamento do tubérculo maior**, os três sinais da ruptura crônica.
+
+!figura 5.62 imagem=ombro-cotovelo/greenspan6-5-62.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 5, Figura 5.62. AP do ombro com ruptura crônica do manguito e desenho correspondente: erosões na face inferior do acrômio, intervalo acromioumeral estreitado e achatamento do tubérculo maior.
+!fim
 
 A evolução desse processo está na classificação de HAMADA, modificação da de WALCH, reproduzida pelo Campbell (Tabela 51.4).
 
@@ -341,6 +353,12 @@ Na imagem da questão do TARO 2025, o corte é um **coronal oblíquo ponderado e
 
 O capítulo 3 é o mais didático sobre a leitura do manguito. A sequência ideal é o **coronal oblíquo spin-echo ponderado em T2**, com o úmero em rotação neutra a externa. Os tendões normais do supraespinal, infraespinal e redondo menor mantêm **sinal baixo** em todas as sequências. A ruptura aparece como **sinal alto em T2**, que corresponde a **líquido** dentro do tendão. Se o líquido atravessa toda a espessura, a ruptura é **completa**; se sobram fibras íntegras na face **articular**, na **bursal** ou em ambas, é **parcial**. Nas rupturas grandes e crônicas, o manguito pode estar tão atrofiado que não se identifica, o líquido comunica a articulação com a bursa e a cabeça **migra para cima**. Retração e atrofia indicam **mau resultado cirúrgico**.
 
+No GREENSPAN (cap. 5, Figura 5.66), a ruptura completa aparece como descrito: no coronal (A), o líquido claro atravessa todo o tendão e liga a articulação à bursa subacromial-subdeltóidea; no corte oblíquo de outro caso (B), a seta mostra o defeito grande do manguito.
+
+!figura 5.66 imagem=ombro-cotovelo/greenspan6-5-66.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 5, Figura 5.66. RM coronal em T2* com ruptura completa do manguito e líquido comunicando a articulação com a bursa subacromial-subdeltóidea (A); corte oblíquo com ruptura grande do manguito (seta) (B).
+!fim
+
 Três regras de leitura evitam excesso de diagnóstico. **Tendinose** é o sinal anormal que **não atinge a intensidade do líquido** em T2. Como T1 e gradiente têm artefatos dentro dos tendões, **não se diagnostica ruptura sem foco de sinal de líquido em T2** ou ausência do tendão. E no **manguito operado**, focos irregulares de T2 aparecem normalmente no tendão em cicatrização (tecido de granulação); só o defeito grande, cheio de líquido, com retração, indica falha, e a artro-RM ajuda nessa situação. A RM tem **sensibilidade maior que 90%** para ruptura completa e **maior que 85%** para parcial; a **supressão de gordura** em T2 melhora a detecção das parciais. No impacto, que é diagnóstico **clínico**, a RM pode mostrar esporões, acrômio em gancho e tendinose.
 
 O Campbell (cap. 51) acrescenta a leitura cirúrgica. A RM é hoje o exame mais usado para o manguito e mostra o tamanho da ruptura e o estado dos músculos. A **infiltração gordurosa** é graduada por GOUTALLIER (0 a 4), e os autores não reparam tendões com **grau 4** (mais gordura que músculo no sagital T1); no grau 3 o risco de nova ruptura é maior. O **sinal da tangente** completa: se o ventre do supraespinal **não ultrapassa** a linha entre o topo do coracoide e o da espinha da escápula, no corte sagital mais lateral em que ambos tocam o corpo, a chance de cicatrização após o reparo é baixa. A RM sem contraste também tem alta acurácia na **capsulite adesiva**, sobretudo pelo hipersinal do **recesso axilar**. Desvantagem: muitos falsos-positivos, sempre a correlacionar com a clínica.
@@ -403,6 +421,12 @@ armadilha: Procurar um grau IV, que não existe na classificação reproduzida p
 
 O Campbell (cap. 52) define a **lesão de BANKART** como o descolamento do lábio da metade anterior da borda da glenoide junto com a cápsula e o periósteo da face anterior do colo da escápula; é a lesão mais observada na instabilidade recorrente, mas não a "essencial", porque a frouxidão capsular também causa instabilidade. O Rockwood (cap. 35) descreve o espectro: lesão do lábio (BANKART), **BANKART ósseo** (fratura da borda), **HILL-SACHS** (impacção posterior da cabeça), fraturas do coracoide e dos tubérculos nas lesões de maior energia, e a **HAGL**, avulsão dos ligamentos glenoumerais **do lado umeral**. Na luxação posterior surgem o BANKART e o HILL-SACHS reversos.
 
+Na RM axial do GREENSPAN (cap. 5, Figura 5.56), o lábio anteroinferior, que deveria ser um triângulo escuro colado à borda da glenoide, está descolado dela (seta curta), e a seta longa mostra o ligamento glenoumeral inferior roto: é o BANKART de partes moles, que a radiografia não vê.
+
+!figura 5.56 imagem=ombro-cotovelo/greenspan6-5-56.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 5, Figura 5.56. RM axial em densidade de prótons com lesão de BANKART de partes moles: lábio anteroinferior descolado da glenoide (seta curta) e ruptura do ligamento glenoumeral inferior (seta longa).
+!fim
+
 O Campbell (cap. 57) desenha seis padrões do lado da glenoide: BANKART, BANKART ósseo, **ALPSA** (avulsão do lábio anterior em manga periosteal), **GAGL** (avulsão glenoidal do ligamento glenoumeral), **GLAD** (glenoid labral articular disruption) e GAGL juvenil. No ALPSA, o lábio com o periósteo desliza e cicatriza **medialmente no colo** da glenoide, e precisa ser mobilizado na cirurgia (Rockwood, cap. 35); NEVIASER relatou resultados inferiores no tratamento do ALPSA em jovens. WOLF encontrou a HAGL em **9,3%** dos instáveis. O Campbell pede **RM na fase aguda ou artro-RM na subaguda**, e lembra o nervo axilar junto à cápsula lesada na HAGL anterior. O GLAD, no texto dos livros conferidos, aparece **só como nome** na figura, sem definição.
 
 !tabela Lesões capsulolabrais e onde procurá-las (Campbell 15, caps. 52 e 57; Rockwood 10, cap. 35)
@@ -460,6 +484,12 @@ A **artrografia** convencional documenta a ruptura completa pelo **extravasament
 No adulto, o Rockwood (caps. 39 e 40) pede **AP e perfil**, com **oblíquas** na luxação para afastar fraturas associadas; radiografias feitas dentro de gesso escondem o traço e devem ser repetidas, e a tração sob analgesia ajuda quando o encurtamento distorce a imagem. Na **cabeça do rádio**, a fratura sem desvio pode ser apenas suspeitada pelos **coxins gordurosos anterior e posterior** elevados pela hemartrose, e a **incidência radiocapitelar** (de GREENSPAN) põe a cabeça de perfil. A TC 3D ajuda nas fraturas articulares do úmero distal, na escolha da via e na decisão entre fixar e substituir no idoso.
 
 Os **coxins** ficam entre a cápsula e a sinovial. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 13), explica a anatomia: o **posterior** fica **todo dentro da fossa do olécrano** com o cotovelo fletido, e por isso normalmente não aparece; o **anterior** se estende para fora da fossa coronoide. O derrame empurra os coxins para fora. Daí a regra do Campbell (cap. 38): na criança, o **coxim posterior visível** deve ser presumido **fratura supracondiliana tipo I**; o Rockwood (cap. 7) o chama de sinal de lesão oculta. Na fratura do **colo do rádio**, extracapsular em grande parte, o sinal pode ser **negativo**.
+
+O GREENSPAN (cap. 6, Figura 6.13) mostra os dois coxins elevados no perfil: o anterior levantado da fossa coronoide (seta) e o posterior visível atrás do úmero (seta curva), com a fratura sutil da cabeça do rádio quase escondida (seta aberta). É o padrão de quem deve procurar a fratura mesmo sem ver o traço.
+
+!figura 6.13 imagem=ombro-cotovelo/greenspan6-6-13.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 6, Figura 6.13. Perfil do cotovelo com sinal do coxim gorduroso positivo: coxim anterior (seta) e posterior (seta curva) elevados pela hemartrose, e fratura sutil da cabeça do rádio (seta aberta).
+!fim
 
 !tabela Linhas e ângulos do cotovelo (Rockwood and Wilkins 10, caps. 12 e 13; Rockwood 10, cap. 39; Campbell 15, cap. 15)
 | Medida | Incidência | Normal e significado |
