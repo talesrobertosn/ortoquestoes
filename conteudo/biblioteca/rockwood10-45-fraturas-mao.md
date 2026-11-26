@@ -80,7 +80,7 @@ O deslocamento na fratura de Bennett é conduzido principalmente pelo abdutor lo
 
 A Rolando é a versão de **maior energia**: o traço é em **Y ou T**, a fratura é **articular completa** (nenhuma parte da superfície continua presa à diáfise) e há mais cominuição. A força deformante principal continua sendo o **abdutor longo do polegar**.
 
-!questoes central=mao-0741,mao-0910 relacionadas=trauma-0177,mao-0872 treino=mao-1717
+!questoes central=mao-0741,mao-0910 relacionadas=trauma-0177,mao-0872 treino=mao-1717,trauma-1790
 conceito: A Rolando é a fratura intra-articular cominutiva da base do primeiro metacarpo, em Y ou T, sem continuidade entre a superfície articular e a diáfise.
 como: IAUPE 2025 e UFG 2019 pediram a definição; a UFG pôs como distratores a diáfise em abdução e o fragmento medial "instável" da Bennett.
 armadilha: "Na Bennett, a diáfise se desloca em abdução": ela aduz, pelo adutor do polegar.
@@ -102,7 +102,7 @@ Fora as sem desvio e sem subluxação, todas são cirúrgicas. O objetivo, nas p
 
 A via aberta é a de **Wagner**: volar, na borda radial do polegar, na transição entre a pele glabra e a não glabra, curvando pela prega tenar até o flexor radial do carpo. Protegem-se o **ramo superficial do nervo radial**, o **cutâneo lateral do antebraço** e o **cutâneo palmar**, e a musculatura tenar é elevada do periósteo. Os parafusos costumam ir do dorso do metacarpo ao fragmento volar. Uma revisão sistemática citada no capítulo não mostrou vantagem da redução aberta sobre a fixação percutânea na Bennett (cirurgia de 71,9 contra 30,2 minutos, mais falha de fixação na aberta e mais infecção nos fios). Se vier artrose, a artroplastia da CMC resolve bem.
 
-!questoes relacionadas=trauma-0730
+!questoes relacionadas=trauma-0730 treino=trauma-1791
 conceito: Na fratura de Bennett com fragmento pequeno, a redução fechada com fios do primeiro ao segundo metacarpo e ao trapézio funciona bem; fragmentos maiores que 20% a 25% vão para parafuso de tração.
 alerta: O SBOT-SP (trauma-0730) atribuiu a WAGNER a técnica de redução fechada e fixação percutânea com fio, e o Campbell 15 confirma (cap. 72, Técnica 72.1, Fig. 72.9, p. 3198): na técnica de WAGNER, com tração, abdução, pronação e extensão do polegar, um fio de Kirschner atravessa a base do metacarpo e a articulação até o trapézio, seguido de tala gessada com a IF livre. No Rockwood, o nome de WAGNER aparece na **via de acesso** volar à CMC; o Campbell usa o nome nos dois sentidos (a técnica percutânea e a via "tipo Wagner" para a redução aberta).
 !fim

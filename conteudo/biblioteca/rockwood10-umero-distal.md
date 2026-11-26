@@ -101,7 +101,7 @@ O **nervo ulnar** perfura o septo intermuscular medial no terço médio do braç
 | Nervo radial | Perfura o septo lateral cerca de 10 cm proximal ao epicôndilo lateral |
 !fim
 
-!questoes central=trauma-0903 relacionadas=trauma-0682
+!questoes central=trauma-0903 relacionadas=trauma-0682 treino=trauma-1780
 conceito: No plano coronal a coluna lateral diverge cerca de 20° da diáfise e a medial cerca de 45°; com o cotovelo estendido sob carga axial, cerca de 40% da carga vai pela ulnoumeral e 60% pela radiocapitelar.
 como: Uma prova de Ortopedia pediu a angulação das colunas lateral e medial, nessa ordem (20° e 45°); a prova de título da SBCOC mostrou uma figura e pediu a carga nas faces ulnar e radial (40% e 60%).
 armadilha: Inverter a ordem pedida no enunciado (45° e 20°) ou confundir com a curva sagital de 35 a 40° da coluna lateral; na carga, achar que a ulna, por ser a articulação em dobradiça, recebe mais peso.

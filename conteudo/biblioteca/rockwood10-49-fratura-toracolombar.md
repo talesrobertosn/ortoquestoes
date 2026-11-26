@@ -392,7 +392,7 @@ A **complicação neurológica é rara, 0,1%**, mas pode ser grave e exigir desc
 
 > Na prova: o cimento **vaza em até 90%**, vai **mais para o disco**, e a lesão neurológica é de **0,1%**.
 
-!questoes central=trauma-0754,trauma-0807 treino=coluna-0554
+!questoes central=trauma-0754,trauma-0807 treino=coluna-0554,trauma-1796
 conceito: Na cimentação vertebral o extravasamento ocorre em até 9 de cada 10 pacientes, mais para o espaço discal (45%), e a complicação neurológica é de 0,1%.
 como: O TEOT 2025 cruzou duas taxas (10% ou 90% de extravasamento, 0,1% ou 10% de complicação neurológica) nas quatro combinações. O TARO 2025 perguntou a direção mais frequente do vazamento, com epidural, pré-vertebral e paravertebral como distratores.
 armadilha: "10% de extravasamento": subestima um evento que, procurado na tomografia, é quase a regra.
@@ -605,7 +605,7 @@ A **tipo C** é a falha das três colunas com **translação ou rotação**, por
 
 A conduta é **cirúrgica, qualquer que seja a neurologia**, começando **por trás**: redução aberta e artrodese posterior com **instrumentação de vários níveis**, porque a lesão é muito instável, exige uma montagem multissegmentar que a via anterior típica não alcança, e a correção multiplanar é muito mais fácil pela via extensível posterior. O capítulo não fixa quantos níveis; a regra de pelo menos dois acima e dois abaixo é a que ele dá para a explosão com osso ruim, coluna torácica ou transição e cominuição grave; na coluna anquilosada, o texto fala em dois a três níveis acima e abaixo. O realinhamento costuma descomprimir o canal indiretamente; a tomografia pós-operatória decide se falta reconstrução anterior. A via anterior isolada falha nessa lesão. O **prognóstico depende da neurologia da chegada**.
 
-!questoes treino=coluna-0553
+!questoes treino=coluna-0553,trauma-1797
 conceito: Na fratura-luxação toracolombar (AO C), a conduta é redução e fixação posterior multissegmentar, mesmo sem déficit neurológico.
 !fim
 

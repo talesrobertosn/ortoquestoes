@@ -58,7 +58,7 @@ As forças musculares explicam o desvio de cada parte, e a prova cobra isso com 
 
 > Na prova: em três partes, **a cabeça segue o tubérculo que ficou preso a ela**. O tubérculo que sobrou é o que gira a cabeça.
 
-!questoes central=trauma-0057,trauma-0924,trauma-1152,trauma-1118 treino=ombro-cotovelo-0600,ombro-cotovelo-0601
+!questoes central=trauma-0057,trauma-0924,trauma-1152,trauma-1118 treino=ombro-cotovelo-0600,ombro-cotovelo-0601,trauma-1779
 conceito: O tubérculo menor desvia para medial pelo subescapular; na três partes com o tubérculo maior solto, o subescapular gira a cabeça em rotação interna; no colo cirúrgico, o peitoral maior desloca a diáfise para anterior e medial.
 como: O TARO 2018 pediu o desvio do tubérculo menor trocando direção e músculo (infraespinal ou subescapular); o SBOT-SP e o TARO 2009 pediram a rotação da cabeça na três partes do tubérculo maior, fresca ou consolidada; o TARO 2007 perguntou o músculo que angula o colo cirúrgico (estas duas últimas sem gabarito oficial registrado no acervo; pelo capítulo, rotação medial e peitoral maior).
 armadilha: Rotação interna pelo peitoral maior: o peitoral age na diáfise, não na cabeça.
@@ -521,7 +521,7 @@ São **equivalentes ósseos de uma lesão do manguito**. O tubérculo maior isol
 
 O tubérculo menor isolado é a avulsão do **subescapular** através do osso, com ou sem **luxação posterior**: mais de 1 cm causa impacto em rotação interna e fraqueza do subescapular. Diferente da ruptura do tendão, o fragmento costuma consolidar, só que desviado.
 
-!questoes central=trauma-0686
+!questoes central=trauma-0686 treino=trauma-1778
 conceito: A fratura isolada do tubérculo maior, na maioria das vezes, não precisa de cirurgia; opera-se com mais de 1 cm de desvio ou mais de 20% de sobreposição, com suturas, aberto ou por artroscopia.
 como: O TECOC juntou três afirmações falsas sobre a técnica (não pode por artroscopia, não pode por deltopeitoral, reduz fácil de forma fechada) com a verdadeira.
 armadilha: "Não pode ser operada por artroscopia": o capítulo cita a fixação com suturas por artroscopia.

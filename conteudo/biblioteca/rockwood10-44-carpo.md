@@ -107,7 +107,7 @@ São quatro incidências: **PA neutra, perfil verdadeiro, oblíqua radial a 45°
 
 O **desalinhamento do carpo** (DISI e VISI) é visto no **perfil neutro**. Barton listou três armadilhas da leitura: a linha escura da borda dorsal do rádio sobre o escafoide, a linha branca da tuberosidade e a crista dorsal que parece dobrada na semissupinada.
 
-!questoes central=trauma-0994,trauma-0167 relacionadas=mao-1259 treino=mao-1672
+!questoes central=trauma-0994,trauma-0167 relacionadas=mao-1259 treino=mao-1672,trauma-1775
 conceito: A incidência de Ziter é um AP em desvio ulnar com o tubo angulado 20° para o cotovelo; o desvio do carpo na fratura do escafoide é avaliado no perfil.
 como: O TARO 2026 mostrou a fotografia do posicionamento com a radiografia e pediu o autor; o TARO 2014 perguntou em que incidência se identifica o desvio carpal (lateral). A questão do SBOT-SP sobre Ziter não tem gabarito no acervo; o livro diz que ela ajuda no diagnóstico da fratura do escafoide.
 armadilha: STECHER e Schneck: outras incidências especiais do escafoide que não são descritas nesse capítulo (a de STECHER, PA com o feixe angulado 20° da vertical de distal para proximal, está no Skeletal Trauma, cap. 43, p. 1218); a fotografia com desvio ulnar e tubo angulado para o cotovelo é a de Ziter.
@@ -510,7 +510,7 @@ Na radiografia: **quebra dos arcos de Gilula** na PA, **semilunar triangular** (
 
 > Na prova: **16% a 25% das luxações perilunares passam despercebidas** no primeiro atendimento (cerca de um quarto), sobretudo as de pequeno arco, sem fratura evidente. A faixa vem do Green 7 (cap. 13, p. 472); o Rockwood só avisa que a luxação perilunar pode passar despercebida e que os arcos de Gilula ajudam a achá-la.
 
-!questoes central=mao-0239,mao-1074 relacionadas=mao-1169
+!questoes central=mao-0239,mao-1074 relacionadas=mao-1169 treino=trauma-1789
 conceito: Cerca de um quarto das luxações perilunares não é diagnosticado no primeiro atendimento; a forma mais comum de instabilidade complexa é a fratura-luxação transescafoperilunar.
 como: A prova de Ortopedia pediu a porcentagem de luxações perdidas (25%); a PUC-SP 2019, o tipo mais comum de dissociação complexa; a PUC-SP 2022, o percentual de associação com fratura do escafoide (mao-1169: cerca de **60%**, número do Green 7, cap. 13, p. 470, para as perilunares com fratura desviada do escafoide, quase sempre no terço médio; o Rockwood diz que as fraturas-luxações são duas vezes mais comuns que as luxações puras).
 armadilha: Luxação perilunar pura: é a de pequeno arco, a metade menos comum.
@@ -528,7 +528,7 @@ O tratamento sem cirurgia e a intervenção tardia **dão resultado ruim**. A re
 
 Na técnica dos autores, a via é **dorsal** (centrada no 3º metacarpo, ulnar a Lister); soma-se a **via volar** (túnel do carpo estendido) quando a redução não sai por trás ou há sintomas do mediano, e ali se fecha o **rasgo transversal no espaço de Poirier**. O semilunar é a base: fica **colinear com o rádio e o capitato**, fixado com fio radiolunar; a redução segue em **sentido inverso ao de Mayfield**, começando pelo lunopiramidal. Os fios ficam sob a pele por **8 a 12 semanas**.
 
-!questoes central=mao-0499 relacionadas=mao-0624,mao-1349 treino=mao-1691,mao-1692
+!questoes central=mao-0499 relacionadas=mao-0624,mao-1349 treino=mao-1691,mao-1692,trauma-1788
 conceito: A luxação perilunar se reduz de imediato sob anestesia adequada (Tavernier) e se estabiliza com fios ou reparo; sintomas do mediano que não melhoram com a redução pedem exploração e descompressão.
 como: O TARO 2012 pediu o tratamento da lesão de pequeno arco aguda e redutível (pinagem percutânea). O TARO 2009 pediu a manobra de redução do estágio IV; essa prova não tem gabarito no acervo, e no livro a sequência é flexão da fileira distal para encaixar o capitato e depois extensão, com o semilunar empurrado para dorsal. A USP-SP 2025 pediu, pelo Green, o tempo para tirar fios e imobilização (10 semanas).
 alerta: No TARO 2012 (mao-0499), o gabarito foi a pinagem percutânea na lesão de pequeno arco aguda e redutível. O Rockwood recomenda os fios percutâneos depois da redução fechada em casos como a **PLIND**, mas avisa que **a maioria das perilunares é irredutível ou instável** e vai para redução aberta com reparo dos ligamentos (preferência dos autores). A pinagem fechada fica para a lesão que reduziu bem.

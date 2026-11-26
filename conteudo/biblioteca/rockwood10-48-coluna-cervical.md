@@ -232,7 +232,7 @@ A classificação de **ANDERSON e D'ALONZO** continua a mais aceita. É só desc
 Classificação de ANDERSON e D'ALONZO das fraturas do odontoide: tipo I, pequena avulsão da ponta do dente; tipo II, pela "cintura" do processo odontoide; tipo III, pelo osso esponjoso do corpo de C2.
 !fim
 
-!questoes central=trauma-0162,trauma-0123 relacionadas=trauma-0026,coluna-0463,coluna-0467,coluna-0468
+!questoes central=trauma-0162,trauma-0123 relacionadas=trauma-0026,coluna-0463,coluna-0467,coluna-0468 treino=trauma-1794
 conceito: Na classificação de ANDERSON e D'ALONZO, o tipo I é a avulsão da ponta, o II passa pela cintura do dente e o III entra no corpo de C2; o tipo II é o que mais evolui para pseudartrose.
 como: O TARO 2014 e o TARO 2016 repetiram a mesma pergunta: o tipo mais comum e que cursa com pseudartrose em 36% (gabarito: II). O TARO 2019 pediu o ligamento que avulsiona no tipo I e a sua frequência (alar, 1%). A SES-DF 2022 deu um idoso com tipo II e julgou itens: que o II ocorre acima do transverso por avulsão do apical ou do alar (errado, isso é o tipo I), que é a fratura cervical mais comum depois dos 70 anos (certo) e que o envolvimento neurológico varia de 2% a 27% (certo).
 armadilha: Tipo III como o que mais pseudartrosa: é o contrário; o III, em osso esponjoso do corpo, consolida bem.
@@ -330,7 +330,7 @@ O Campbell 15 (cap. 48, p. 1886) vai além: dá os mesmos 6,9 mm e a correção 
 Ressonância axial ponderada em T2 no nível do anel de C1, mostrando o ligamento transverso íntegro entre as massas laterais, passando atrás do processo odontoide.
 !fim
 
-!questoes central=trauma-0079,trauma-0221,coluna-0162,trauma-1200 relacionadas=coluna-0322,coluna-0164,coluna-0436 treino=coluna-0523
+!questoes central=trauma-0079,trauma-0221,coluna-0162,trauma-1200 relacionadas=coluna-0322,coluna-0164,coluna-0436 treino=coluna-0523,trauma-1793
 conceito: Na fratura de JEFFERSON, a soma do deslocamento das massas laterais de C1 sobre C2 acima de 6,9 mm (regra de SPENCE) indica ruptura do ligamento transverso e fratura instável.
 como: O TARO 2021 pediu o valor (6,9 mm) e o TEOT 2021 deu 7 mm e pediu o ligamento (transverso); o TEOT 2024 perguntou para que serve a regra de SPENCE (ligamento transverso na fratura de C1); o ENARE 2025 deu 7,5 mm e pediu o ligamento lesado. O TEOT 2024 também mostrou o ligamento numa figura. A prova de Joinville de 2010 deu 8 mm numa fratura isolada de C1 e pediu a conduta (gabarito: halo-colete).
 armadilha: Ligamento alar: limita a rotação e a translação além de 5 mm; na fratura de JEFFERSON costuma ficar íntegro, porque o dente não se desloca em relação ao forame magno.
@@ -656,7 +656,7 @@ Hoje a tomografia substitui as radiografias de rastreio nos centros de trauma, m
 Linhas e medidas da radiografia em perfil: espinolaminar, corporal posterior e corporal anterior devem ser contínuas; as facetas aparecem como paralelogramos empilhados; partes moles pré-vertebrais maiores que 6 mm em C2 e 22 mm em C6 sugerem fortemente lesão subjacente.
 !fim
 
-!questoes treino=coluna-0516
+!questoes treino=coluna-0516,trauma-1792
 conceito: Partes moles pré-vertebrais com mais de 6 mm em C2 ou mais de 22 mm em C6 sugerem lesão subjacente; o sinal é muito específico, mas pouco sensível (65%).
 !fim
 
@@ -710,7 +710,7 @@ conceito: Na fratura do côndilo occipital, o tipo III de ANDERSON e MONTESANO �
 
 A **translação** é uma das causas mais comuns de estreitamento do canal no trauma cervical: o osso e o arco podem estar inteiros, mas a posição relativa das vértebras estreita o canal, e a tomografia axial **subestima** o problema, que aparece nas reconstruções sagitais. Em estudo biomecânico, cortar disco e ligamentos longitudinais aumentou a translação anterior em 33% sob flexão; ressecar também as facetas levou a 140%, o equivalente a ocluir o canal. A **luxação unilateral** vem de energia menor, costuma ficar **estável na posição luxada**, sem ruptura completa do complexo posterior, e por isso pode precisar de **mais peso** para reduzir. A **bilateral** traz pior recuperação neurológica.
 
-!questoes relacionadas=coluna-0354 treino=coluna-0518
+!questoes relacionadas=coluna-0354 treino=coluna-0518,trauma-1795
 conceito: A luxação facetária bilateral subaxial resulta de distração-flexão, com translação de cerca de 50% do corpo; a unilateral, de menor energia, pode ficar estável na posição luxada e precisar de mais peso para reduzir.
 como: O TARO 2006 afirmou que a luxação bifacetária de C3 a C7 vem de distração-flexão com subluxação anterior de cerca de 50%; o acervo não registra o gabarito, mas o capítulo descreve exatamente isso no estágio 3 de distração-flexão.
 !fim

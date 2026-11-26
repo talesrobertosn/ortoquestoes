@@ -94,7 +94,7 @@ A confusão mais comum da prova é entre **altura radial** e **variância ulnar*
 
 A inclinação radial do PA é chamada de "inclinação ulnar" em várias provas e no SIZÍNIO, porque a superfície articular desce em direção ao lado ulnar. É o mesmo número: **cerca de 22 a 23 graus**.
 
-!questoes relacionadas=trauma-0931,mao-1024
+!questoes relacionadas=trauma-0931,mao-1024 treino=trauma-1774
 conceito: Altura (comprimento) radial no PA vai da perpendicular na ponta do estiloide radial à perpendicular na superfície articular da cabeça da ulna, cerca de 11 a 12 mm; a inclinação radial (chamada de ulnar) mede cerca de 22 a 23 graus.
 como: O TARO 2019 e a SBOT-SP perguntaram, com o mesmo enunciado, os pontos de referência do comprimento radial; a UFG 2021 pediu a inclinação ulnar na posição de frente.
 armadilha: Usar a superfície articular do rádio (isso é a variância ulnar) ou a ponta do estiloide da ulna; e confundir 22 graus com os 11 graus da inclinação volar.
@@ -175,7 +175,7 @@ Os ligamentos interósseos lesados são graduados na artroscopia por GEISSLER, d
 
 O Green aponta os padrões de maior risco para lesão ligamentar: a **fratura-luxação radiocarpal** e o **estiloide radial muito desviado** cujo traço entra na crista entre as fossas do escafoide e do semilunar (p. 575). É exatamente o território da **fratura do CHAUFFEUR**: a legenda do Green diz que ela é **notória** por lesões dos ligamentos intercárpicos e radiocárpicos extrínsecos, e o algoritmo de FERNANDEZ do mesmo capítulo manda, diante de um CHAUFFEUR, **suspeitar de lesão do ligamento interósseo escafossemilunar** (p. 528). Lesões completas em jovens ativos pedem tratamento operatório agressivo, com reparo aberto do escafossemilunar após fixar o rádio (p. 575). O SIZÍNIO descreve o **teste de deslocamento axial do escafoide** de FERNANDEZ, visto na radiografia sob tração durante a redução: o degrau escafossemilunar pode aparecer só depois da tração ou do fixador (cap. 51).
 
-!questoes central=trauma-0209 relacionadas=mao-1001,trauma-0276
+!questoes central=trauma-0209 relacionadas=mao-1001,trauma-0276 treino=trauma-1787
 conceito: A lesão associada mais frequente é a do CFCT (39% a 82%), mais que a dos ligamentos interósseos; no CHAUFFEUR (estiloide radial, AO B1) a suspeita é de lesão do ligamento escafossemilunar.
 como: O TEOT 2021 perguntou a lesão associada mais frequente; a UFG 2020, a lesão associada ao CHAUFFEUR; uma prova de Ortopedia, a dissociação sugerida pela variância ulnar positiva.
 armadilha: Marcar lesão condral, neurovascular ou fratura do carpo como a mais comum; no CHAUFFEUR, marcar fratura do estiloide ulnar ou do escafoide.
@@ -254,7 +254,7 @@ FERNANDEZ também classifica a lesão da ARUD que acompanha a fratura (Green, p.
 | III potencialmente instável | Fratura articular da incisura sigmoide ou da cabeça da ulna | Redução anatômica e fixação; ressecção ou artroplastia tardias se dolorosa |
 !fim
 
-!questoes central=trauma-0479 relacionadas=mao-1260,trauma-0729,mao-1503
+!questoes central=trauma-0479 relacionadas=mao-1260,trauma-0729,mao-1503 treino=trauma-1786
 conceito: FERNANDEZ classifica pelo mecanismo: I flexão extra-articular, II cisalhamento, III compressão articular, IV avulsão ligamentar (inclusive estiloides na fratura-luxação radiocarpal), V combinada de alta energia.
 como: O ENARE R4 2023 perguntou o que representa o tipo 4; a SBOT-SP, o tipo das avulsões dos estiloides e, com figuras, o tipo desenhado; a USP-SP 2024, o tipo de uma radiografia.
 armadilha: Trocar II e III: no Green, II é cisalhamento e III compressão; no SIZÍNIO a numeração é invertida.
