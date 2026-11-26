@@ -58,7 +58,7 @@ O falso perfil é um perfil do acetábulo: pelve **rodada 65 graus** a partir do
 | Falso perfil | pelve a 65 graus, pé paralelo ao chassi | cobertura anterior (LEQUESNE) e espaço articular posterior |
 !fim
 
-!questoes treino=quadril-0604
+!questoes treino=quadril-0604,quadril-0755,quadril-0756,quadril-0759
 conceito: Sem trauma, o AP do quadril é feito com rotação interna de cerca de 15 graus, que compensa a anteversão e alonga o colo; o erro de posição mais comum é a rotação externa, em que o trocânter maior cobre o colo e o menor aparece de perfil; o DUNN usa rotação neutra, 20 graus de abdução e 45 ou 90 de flexão; na suspeita de fratura, o perfil é o cross-table.
 como: O Fellowship de Quadril pediu a afirmação certa sobre a técnica das radiografias de rotina segundo CALLAGHAN, trocando o efeito da rotação externa, os números do DUNN e o perfil indicado na fratura.
 armadilha: Atribuir à rotação externa o alongamento do colo (é a interna), inverter flexão e abdução do DUNN ou indicar o perfil de rã, que exige flexão, abdução e rotação externa, no paciente com fratura.
@@ -92,7 +92,7 @@ Como cada oblíqua pega regiões dos **dois** acetábulos, as duas são necessá
 | Oblíqua ilíaca (posterior, alar) | hemipelve inclinada 45 graus para longe do feixe; cóccix sobre a cabeça contralateral | asa do ilíaco, incisuras, borda posterior do inominado (coluna posterior), rebordo anterior |
 !fim
 
-!questoes central=quadril-0516 relacionadas=quadril-0122,quadril-0535 treino=quadril-0605
+!questoes central=quadril-0516 relacionadas=quadril-0122,quadril-0535 treino=quadril-0605,quadril-0753,quadril-0754
 conceito: O outlet (feixe cranial) é a incidência do desvio vertical da hemipelve, e o inlet (feixe caudal), a do desvio rotacional; nas duas muda o feixe, não o paciente. Nas oblíquas de JUDET, a ilíaca mostra a coluna posterior (borda posterior do inominado) e o rebordo anterior; a obturatriz mostra a coluna anterior e o rebordo posterior; são necessárias as duas.
 como: O ENARE R4 2025 pediu a incidência que mais contribui para o diagnóstico do desvio vertical (outlet, contra inlet, AP, perfil do sacro e oblíqua). Uma prova da SBOT-SP, sem ano, perguntou o que se vê na oblíqua do ilíaco (borda posterior do osso inominado). A SES-DF 2022 julgou que inlet e outlet completam o AP e são fáceis de fazer sem mobilizar o paciente. O Fellowship pediu a anatomia das oblíquas segundo CALLAGHAN.
 armadilha: Inlet para desvio vertical (ele mostra rotação); oblíqua ilíaca mostrando a borda posterior do acetábulo (ela mostra o rebordo anterior; a borda posterior que aparece é a do osso inominado); achar que uma oblíqua só basta para os dois lados.
@@ -234,7 +234,7 @@ O CALLAGHAN (cap. 23, p. 357) acrescenta que o **os acetabuli** tem as mesmas im
 | Os acetabuli anterossuperior | ossículo no rebordo | retroversão adquirida, mesmas implicações da pinça |
 !fim
 
-!questoes central=quadril-0175 treino=quadril-0611
+!questoes central=quadril-0175 treino=quadril-0611,quadril-0761
 conceito: O cruzamento sozinho pode ser sobrecobertura anterior; acompanhado do sinal da parede posterior e da espinha isquiática proeminente, indica retroversão verdadeira de todo o acetábulo; o os acetabuli pode causar retroversão adquirida com cruzamento.
 como: A SBOT-SP, sem ano, mostrou um AP do quadril com o sinal radiográfico e pediu o que ele indica (retroversão verdadeira, contra sobrecobertura posterior, sobrecobertura anterior isolada e retroversão global). O Fellowship mostrou um os acetabuli e pediu a afirmação certa segundo CALLAGHAN.
 armadilha: Dizer que o cruzamento se avalia no DUNN (é no AP verdadeiro) ou que é a sobreposição do rebordo posterior sobre o anterior (é o anterior que cruza o posterior).
@@ -317,7 +317,7 @@ As fraturas de estresse têm dois mecanismos (The Adult Hip, cap. 23, p. 350). *
 
 Na luxação, **90% são posteriores**, com o quadril fletido (o joelho no painel); a cabeça vai para trás e para cima, e o fêmur fica em **adução e rotação interna**. A cabeça posterior fica **mais perto do detector** e parece **menor** que a do outro lado (p. 351). A anterior ocorre em abdução e rotação externa: na **obturatória** a coxa fica em **flexão** e a cabeça sobre o forame; na **ilíaca**, em **extensão e rotação externa**, com o trocânter menor de perfil. Numa incidência só as duas se parecem: são necessárias **pelo menos duas** incidências.
 
-!questoes central=quadril-0525 treino=quadril-0607,quadril-0608,quadril-0609
+!questoes central=quadril-0525 treino=quadril-0607,quadril-0608,quadril-0609,quadril-0760,quadril-0762,quadril-0765
 conceito: Idosa com dor, encurtamento e rotação externa: primeiro radiografia da bacia; radiografia negativa com suspeita alta, RM sem contraste em protocolo curto (coronal T1 e coronal sensível a líquido). Fadiga = estresse anormal em osso normal (córtex medial do colo basicervical); insuficiência = estresse normal em osso osteoporótico. Na luxação posterior a cabeça parece menor e o fêmur fica em adução e rotação interna.
 como: A SES-DF 2024 mostrou fotos de uma idosa com o membro encurtado e rodado e pediu a conduta para confirmar o diagnóstico (radiografia panorâmica de bacia, contra RM lombar e testes neurológicos). O Fellowship cobrou a RM na fratura oculta, os locais das fraturas de estresse e os sinais radiográficos da luxação segundo CALLAGHAN.
 armadilha: Pedir cintilografia imediata (ela leva dias) ou TC como mais sensível para a fratura trabecular oculta; inverter fadiga e insuficiência; pôr a fratura do bisfosfonato na face medial.
@@ -376,7 +376,7 @@ O **MDP-tecnécio-99m** adere por quimioadsorção à superfície das trabécula
 
 O **gálio-67** é lido junto com o MDP: é **positivo** para infecção quando a distribuição é congruente e o gálio é **mais intenso** que o MDP, ou quando é incongruente com o gálio **excedendo** o osso (p. 367 e 368). Os **leucócitos com índio-111** localizam infecção **relativamente nova**: o preparado é sobretudo **neutrofílico**, enquanto a prótese infectada, subaguda ou crônica, tem infiltrado de **monócitos e linfócitos**; combinado com medula de enxofre coloidal, é considerado o padrão, mas exige **pelo menos 2 dias** (p. 371). A **FDG-PET** não depende da migração celular, sofre menos com antibiótico e tem área sob a curva sumária de **0,96** na metanálise (p. 376). A variação entre estudos vem da **falta de critérios uniformes**; há captação inespecífica ao redor da cabeça e do colo por meses, e o **sítio e o padrão importam mais que a intensidade**: a captação na **interface osso-prótese da haste** é a mais compatível com infecção (p. 372 a 374).
 
-!questoes treino=quadril-0613,quadril-0614,quadril-0617,quadril-0618
+!questoes treino=quadril-0613,quadril-0614,quadril-0617,quadril-0618,quadril-0757,quadril-0758,quadril-0763,quadril-0764
 conceito: Gálio positivo = mais intenso que o MDP (congruente) ou excedendo o osso (incongruente); fluoreto-18F vira fluorapatita e leva 90 minutos; leucócitos marcados são neutrofílicos e lentos; na FDG-PET o sítio vale mais que a intensidade, e a interface osso-prótese da haste sugere infecção.
 como: O Fellowship pediu, segundo CALLAGHAN, a interpretação do gálio, os traçadores ósseos, o diagrama de captação da PET e as técnicas na artroplastia dolorosa.
 armadilha: Atribuir ao MDP a conversão em fluorapatita, valorizar a captação no colo protético ou dizer que a PET sofre mais com antibiótico.

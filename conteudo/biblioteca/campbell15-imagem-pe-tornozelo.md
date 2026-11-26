@@ -86,7 +86,7 @@ O Campbell (cap. 88, p. 3814 a 3815), no adulto com deformidade progressiva do p
 | flexão plantar do tálus | perfil | 26,5 ± 5,3° (Tachdjian) | aumentada com Aquiles curto |
 !fim
 
-!questoes central=pe-tornozelo-0101 relacionadas=pe-tornozelo-0277
+!questoes central=pe-tornozelo-0101 relacionadas=pe-tornozelo-0277 treino=pe-tornozelo-0451,pe-tornozelo-0452,pe-tornozelo-0453,pe-tornozelo-0454,pe-tornozelo-0455,pe-tornozelo-0456,pe-tornozelo-0458,pe-tornozelo-0462,pe-tornozelo-0463,pe-tornozelo-0464
 conceito: No plano valgo o talocalcâneo (KITE) abre acima do normal (20 a 40° no AP, 35 a 50° no perfil), o pitch cai abaixo de 15 a 25° e a linha de MEARY quebra para plantar.
 como: Uma prova de Ortopedia pediu o achado do pé plano e marcou o talocalcâneo acima de 40° no AP; o TARO 2010 pediu o valor do ângulo de GIANNESTRAS no pé plano e marcou menor que 60°.
 armadilha: Achar que o talocalcâneo lateral cai abaixo de 35° no plano (ele sobe) ou que o pitch passa de 25° (ele cai).
@@ -335,7 +335,7 @@ como: O ENARE R4 2024 pediu a afirmativa correta sobre a avaliação radiográfi
 armadilha: Dizer que o BÖHLER acima de 40° indica colapso (ele diminui), pôr o BÖHLER na oblíqua (é no perfil) ou dizer que o GISSANE diminui na fratura (ele aumenta).
 !fim
 
-!questoes central=pe-tornozelo-0328
+!questoes central=pe-tornozelo-0328 treino=pe-tornozelo-0461
 conceito: O BÖHLER e o GISSANE só mudam quando toda a faceta posterior afunda separada do sustentáculo; se o traço divide a faceta em metades e só a lateral afunda, há dupla densidade com ângulos normais.
 como: O TARO 2007 perguntou em que metade e em que faceta o afundamento deixa os ângulos de GISSANE e BÖHLER normais no perfil.
 armadilha: Escolher a metade medial (presa ao sustentáculo, que não afunda) ou a faceta anterior.
@@ -393,7 +393,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 65), separa a SER 2 e
 
 O Campbell (cap. 94, p. 4138) confirma: **radiografias em estresse de rotação externa diagnosticam a incompetência do deltoide nas fraturas fibulares supinação-eversão com a pinça reduzida**. O HEBERT (cap. 69) dá os parâmetros do AP: **espaço claro medial menor que 4 mm**, espaço livre tibiofibular de 4 a 5 mm, sobreposição tibiofibular maior que 6 mm, ângulo talocrural de 83 ± 4°; descreve o teste da gravidade com o membro em rotação externa e, nas figuras do intraoperatório, chama o teste de estresse de **pronação e rotação externa**.
 
-!questoes central=pe-tornozelo-0348
+!questoes central=pe-tornozelo-0348 treino=pe-tornozelo-0457
 conceito: A lesão do deltoide com fratura do maléolo lateral (supinação-rotação externa) é revelada pelo estresse em rotação externa, com tornozelo neutro, abrindo o espaço claro medial acima de 4 mm.
 como: O TARO 2009 perguntou em que posição se faz a radiografia sob estresse para detectar lesão do deltoide na fratura do maléolo lateral.
 armadilha: Fazer o estresse em rotação medial, ou em flexão plantar, que simula desvio porque o tálus é mais estreito atrás.
@@ -421,7 +421,7 @@ A instabilidade subtalar é difícil de separar da do tornozelo, e o Campbell (c
 
 Na mesma página, o estresse da pinça e da **sindesmose** é feito de preferência pelo **método gravitacional** (semilateral, lado lesado para baixo, terço distal da perna solto), que dá estresse em rotação externa. A ultrassonografia, estática e dinâmica, tem alta acurácia na instabilidade lateral crônica, mas depende do operador e enxerga mal lesões profundas como as osteocondrais. A RM mostra a ruptura do ligamento tibiofibular anterior na lesão sindesmótica (Fig. 94.9).
 
-!questoes central=pe-tornozelo-0177
+!questoes central=pe-tornozelo-0177 treino=pe-tornozelo-0459
 conceito: A instabilidade subtalar é demonstrada por radiografias de estresse subtalar, como a BRODEN em estresse de inversão, além do estresse talar habitual.
 como: O TEOT 2024 perguntou qual incidência demonstra a insuficiência ligamentar da subtalar.
 armadilha: Escolher o estresse em rotação externa gravitacional, que testa deltoide e sindesmose, ou o perfil com gaveta, que testa o tornozelo.
@@ -462,7 +462,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 91, Tab. 91.4, p. 4011), apr
 
 O HEBERT (cap. 21.7) descreve o estágio I como a fase aguda, desenvolvimento-fragmentação, com **edema, calor e rubor** e depois **fragmentação do osso subcondral, fratura periarticular, subluxação ou luxação** na radiografia; o estágio **0**, acrescentado depois, é o paciente com clínica aguda **sem alteração radiográfica**, em que **a RM é o único exame** capaz de confirmar. A classificação anatômica de BRODSKY vai de 1 (tarsometatarsal, 60% dos casos) a 2 (Chopart e subtalar), 3A (tornozelo), 3B (calcâneo), 4 (mais de um local) e 5 (antepé). O Campbell lembra que alguns autores preferem uma classificação por RM ou PET-TC, que pega alterações mais cedo.
 
-!questoes central=pe-tornozelo-0099
+!questoes central=pe-tornozelo-0099 treino=pe-tornozelo-0460
 conceito: EICHENHOLTZ 1 (fragmentação) = destruição óssea, subluxação ou luxação na radiografia com edema, calor e eritema; o 0 tem a mesma clínica sem alteração radiográfica.
 como: Uma prova de Ortopedia descreveu destruição óssea na radiografia com edema, calor e eritema e pediu o estágio.
 armadilha: Escolher o 0 porque a clínica é aguda: o 0 não tem destruição na radiografia.
