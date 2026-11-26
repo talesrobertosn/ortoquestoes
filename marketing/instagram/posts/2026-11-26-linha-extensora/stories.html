@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Linha Extensora: zonas dos extensores como mapa de metrô, TARO 2016 (stories)</title>
+<!-- Quinta 26/11/2026 (dia da SBCM). Pedido do Tales (26/11): outra questão, didática para R1, com pouco texto e mais SVG,
+     sem área de enquete; o último story com os preços (sem promoção). Substitui o 2026-11-26-marionete-volkmann.
+     Questão real: mao-0058 (TARO 2016), gabarito C (zona V). Comentário com conferido: false.
+     Fonte: Green's Operative Hand Surgery, 7ª ed., cap. 5, p. 158 (fig. 5.9) e p. 174.
+     O mapa é abstrato (linha de metrô): estações = articulações, trilhos = ossos. Nenhum desenho de anatomia.
+     Preços: src/dados/planos.ts. Sem horário. Conteúdo entre y=250 e y=1580. -->
+<link rel="stylesheet" href="../../estilos/stories-com-alternativas/base.css">
+<link rel="stylesheet" href="../2026-11-24-semana/semana.css">
+<style>
+.placa { position: absolute; display: inline-flex; align-items: center; gap: 16px; padding: 14px 26px 14px 16px; background: #0a2420;
+  border: 3px solid rgba(255,255,255,.16); box-shadow: 0 18px 40px -20px rgba(0,0,0,.9); font: 400 38px/1 Jersey; letter-spacing: 3px; color: #fff; white-space: nowrap; }
+.placa .bola { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; background: var(--ouro); color: #13302c; font: 800 28px/1 Jakarta; letter-spacing: 0; }
+.placa .sep { color: rgba(255,255,255,.4); }
+.h1 { position: absolute; left: 70px; right: 70px; font: 800 70px/1.04 Jakarta; letter-spacing: -2.4px; color: #fff; }
+.h1 .o { color: var(--ouro); }
+.mapa { position: absolute; left: 0; width: 1080px; }
+.mapa text { font-family: Inter; }
+.j { font-family: Jersey !important; letter-spacing: 2px; }
+.k { font-family: Jakarta !important; font-weight: 800; }
+.dica2 { position: absolute; left: 70px; right: 70px; display: flex; align-items: center; gap: 22px; padding: 22px 28px; background: #fdf9ef; box-shadow: 10px 10px 0 #0a2420; }
+.dica2 .ic { flex: none; width: 74px; height: 74px; border-radius: 50%; display: grid; place-items: center; background: var(--ouro); font: 800 42px/1 Jakarta; color: #13302c; }
+.dica2 p { font: 700 34px/1.18 Jakarta; letter-spacing: -.5px; color: #1f2a28; }
+.dica2 p span { color: var(--verde); }
+.cuidado { position: absolute; left: 70px; right: 70px; padding: 10px; background: repeating-linear-gradient(135deg, #f4cf7c 0 22px, #13302c 22px 44px); }
+.cuidado .in { display: flex; align-items: center; gap: 20px; padding: 18px 24px; background: #fdf9ef; }
+.cuidado .x { flex: none; font: 400 40px/1 Jersey; letter-spacing: 2px; color: #b5452f; }
+.cuidado p { font: 600 27px/1.25 Inter; color: #1f2a28; }
+.cuidado p b { font-weight: 800; }
+/* planos */
+.gratis { position: absolute; left: 70px; right: 70px; display: grid; grid-template-columns: 96px 1fr; gap: 22px; align-items: center;
+  padding: 26px 30px; background: #fdf9ef; box-shadow: 10px 10px 0 #0a2420; }
+.gratis img { width: 96px; height: 96px; }
+.gratis .a { font: 400 34px/1 Jersey; letter-spacing: 3px; color: var(--verde); }
+.gratis .h { margin-top: 6px; font: 800 44px/1.05 Jakarta; letter-spacing: -1px; color: #1f2a28; }
+.gratis .d { margin-top: 6px; font: 500 23px/1.3 Inter; color: #55625f; }
+.planos { position: absolute; left: 70px; right: 70px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: end; }
+.plano { background: #fdf9ef; padding: 24px 14px 22px; text-align: center; box-shadow: 8px 8px 0 #0a2420; }
+.plano .nm { font: 400 40px/1 Jersey; letter-spacing: 3px; color: var(--verde); }
+.plano .v { margin-top: 16px; font: 800 64px/1 Jakarta; letter-spacing: -2.5px; color: #1f2a28; white-space: nowrap; }
+.plano .v .r { font-size: 27px; letter-spacing: 0; vertical-align: 27px; margin-right: 4px; color: #55625f; }
+.plano .m { margin-top: 4px; font: 700 23px/1 Jakarta; color: #55625f; }
+.plano .t { margin-top: 14px; padding-top: 12px; border-top: 2px dashed #d6ccb6; font: 500 20px/1.3 Inter; color: #55625f; }
+.plano .t b { color: #1f2a28; }
+.plano.top { padding-top: 70px; position: relative; background: linear-gradient(170deg, #fff4d4, #f8dfa0); box-shadow: 0 0 0 5px #a8802a inset, 8px 8px 0 #0a2420; }
+.plano.top .nm { color: #7a560c; }
+.plano .tag { position: absolute; left: 12px; right: 12px; top: 14px; padding: 8px 0; background: #14655e; color: #f9e2a6; font: 400 25px/1 Jersey; letter-spacing: 2px; }
+.inclui { position: absolute; left: 70px; right: 70px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.inclui span { padding: 10px 17px; border-radius: 999px; background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.3); font: 700 22px/1 Jakarta; color: #fff; }
+.secao { position: absolute; left: 70px; right: 70px; display: flex; align-items: center; gap: 16px; font: 400 38px/1 Jersey; letter-spacing: 3px; color: #a9ecd9; }
+.secao::before, .secao::after { content: ''; flex: 1; height: 4px; background: repeating-linear-gradient(90deg, rgba(169,236,217,.55) 0 12px, transparent 12px 20px); }
+</style></head>
+<body>
+
+<!-- ============ STORY 1: a pergunta no mapa ============ -->
+<section id="qui26-1-mapa">
+  <div class="fundo"></div><div class="grade"></div>
+  <div class="placa" style="left:70px; top:256px;"><span class="bola">E</span>LINHA EXTENSORA <span class="sep">·</span> TARO 2016</div>
+  <h1 class="h1" style="top:370px;">Corte do extensor<br>na MF do dedo médio.<br><span class="o">Qual é a zona?</span></h1>
+
+  <svg class="mapa" style="top:630px;" width="1080" height="770" viewBox="0 0 1080 830">
+    <defs>
+      <radialGradient id="brilho"><stop offset="0" stop-color="#F4CF7C" stop-opacity=".55"/><stop offset="1" stop-color="#F4CF7C" stop-opacity="0"/></radialGradient>
+    </defs>
+    <!-- trilho -->
+    <rect x="166" y="28" width="28" height="588" rx="14" fill="#F4CF7C"/>
+    <line x1="180" y1="640" x2="180" y2="790" stroke="#F4CF7C" stroke-opacity=".35" stroke-width="28" stroke-dasharray="26 18"/>
+    <!-- ponta do dedo -->
+    <rect x="130" y="14" width="100" height="22" rx="11" fill="#fdf9ef"/>
+    <text x="260" y="36" class="j" font-size="34" fill="#a9ecd9">PONTA DO DEDO</text>
+
+    <!-- IFD: zona I -->
+    <circle cx="180" cy="140" r="38" fill="#fdf9ef" stroke="#0a2420" stroke-width="10"/>
+    <text x="180" y="156" text-anchor="middle" class="k" font-size="44" fill="#13302c">I</text>
+    <text x="260" y="140" class="j" font-size="62" fill="#fff">IFD</text>
+    <text x="262" y="174" font-size="25" fill="#cfe9e1">articulação</text>
+    <!-- trilho II -->
+    <rect x="150" y="226" width="60" height="44" rx="22" fill="#14655e" stroke="#a9ecd9" stroke-width="3"/>
+    <text x="180" y="258" text-anchor="middle" class="k" font-size="27" fill="#fff">II</text>
+    <text x="260" y="258" font-size="26" fill="#a9ecd9">osso</text>
+
+    <!-- IFP: zona III -->
+    <circle cx="180" cy="356" r="38" fill="#fdf9ef" stroke="#0a2420" stroke-width="10"/>
+    <text x="180" y="372" text-anchor="middle" class="k" font-size="40" fill="#13302c">III</text>
+    <text x="260" y="356" class="j" font-size="62" fill="#fff">IFP</text>
+    <text x="262" y="390" font-size="25" fill="#cfe9e1">articulação</text>
+    <!-- trilho IV -->
+    <rect x="150" y="444" width="60" height="44" rx="22" fill="#14655e" stroke="#a9ecd9" stroke-width="3"/>
+    <text x="180" y="476" text-anchor="middle" class="k" font-size="27" fill="#fff">IV</text>
+    <text x="260" y="476" font-size="26" fill="#a9ecd9">osso</text>
+
+    <!-- MF: a pergunta -->
+    <circle cx="180" cy="600" r="120" fill="url(#brilho)"/>
+    <circle cx="180" cy="600" r="74" fill="none" stroke="#F4CF7C" stroke-width="3" stroke-dasharray="8 10"/>
+    <circle cx="180" cy="600" r="52" fill="#F4CF7C" stroke="#0a2420" stroke-width="10"/>
+    <text x="180" y="621" text-anchor="middle" class="k" font-size="60" fill="#13302c">?</text>
+    <text x="290" y="600" class="j" font-size="78" fill="#F4CF7C">MF</text>
+    <text x="292" y="640" font-size="27" font-weight="700" fill="#fff">o corte é aqui</text>
+    <!-- marca do corte -->
+    <g transform="translate(600 590) rotate(-8)">
+      <rect x="0" y="0" width="300" height="72" fill="#b5452f"/>
+      <text x="150" y="50" text-anchor="middle" class="j" font-size="40" fill="#fff">PRÓXIMA ESTAÇÃO</text>
+    </g>
+
+    <!-- punho, apagado -->
+    <circle cx="180" cy="790" r="30" fill="#0E2E2A" stroke="#F4CF7C" stroke-opacity=".4" stroke-width="8"/>
+    <text x="260" y="802" class="j" font-size="40" fill="#fff" fill-opacity=".4">PUNHO</text>
+  </svg>
+
+  <div class="dica2" style="top:1428px;"><div class="ic">!</div><p>Conte da ponta.<br><span>Estação tem número ímpar.</span></p></div>
+  <p class="rodape" style="top:1590px; font-size:25px;">No próximo story: o mapa completo</p>
+</section>
+
+<!-- ============ STORY 2: o mapa completo ============ -->
+<section id="qui26-2-zona-v">
+  <div class="fundo" style="transform:scaleX(-1);"></div><div class="grade"></div>
+  <div class="placa" style="left:70px; top:256px;"><span class="bola">E</span>LINHA EXTENSORA <span class="sep">·</span> MAPA COMPLETO</div>
+  <h1 class="h1" style="top:370px;">Desça na <span class="o">zona V.</span></h1>
+  <!-- 1, 3, 5 -->
+  <svg class="mapa" style="top:470px;" width="1080" height="150" viewBox="0 0 1080 150">
+    <g>
+      <circle cx="130" cy="75" r="46" fill="#fdf9ef"/><text x="130" y="91" text-anchor="middle" class="k" font-size="40" fill="#13302c">I</text>
+      <text x="130" y="146" text-anchor="middle" class="j" font-size="32" fill="#cfe9e1">IFD</text>
+      <path d="M196 75h120" stroke="#F4CF7C" stroke-width="8" stroke-dasharray="14 10"/><path d="M316 61l20 14-20 14z" fill="#F4CF7C"/>
+      <circle cx="420" cy="75" r="46" fill="#fdf9ef"/><text x="420" y="89" text-anchor="middle" class="k" font-size="36" fill="#13302c">III</text>
+      <text x="420" y="146" text-anchor="middle" class="j" font-size="32" fill="#cfe9e1">IFP</text>
+      <path d="M486 75h120" stroke="#F4CF7C" stroke-width="8" stroke-dasharray="14 10"/><path d="M606 61l20 14-20 14z" fill="#F4CF7C"/>
+      <circle cx="720" cy="75" r="60" fill="url(#brilho2)"/>
+      <circle cx="720" cy="75" r="50" fill="#F4CF7C" stroke="#0a2420" stroke-width="8"/><text x="720" y="91" text-anchor="middle" class="k" font-size="44" fill="#13302c">V</text>
+      <text x="720" y="146" text-anchor="middle" class="j" font-size="32" fill="#F4CF7C">MF</text>
+      <text x="830" y="70" class="j" font-size="40" fill="#fff">1, 3, 5:</text>
+      <text x="830" y="106" class="j" font-size="40" fill="#F4CF7C">só ímpar</text>
+    </g>
+    <defs><radialGradient id="brilho2"><stop offset="0" stop-color="#F4CF7C" stop-opacity=".6"/><stop offset="1" stop-color="#F4CF7C" stop-opacity="0"/></radialGradient></defs>
+  </svg>
+
+  <svg class="mapa" style="top:660px;" width="1080" height="760" viewBox="0 0 1080 760">
+    <rect x="70" y="360" width="940" height="120" fill="#F4CF7C" fill-opacity=".14" stroke="#F4CF7C" stroke-opacity=".5" stroke-width="2"/>
+    <rect x="166" y="20" width="28" height="700" rx="14" fill="#F4CF7C"/>
+    <g>
+      <circle cx="180" cy="40" r="34" fill="#fdf9ef" stroke="#0a2420" stroke-width="9"/><text x="180" y="53" text-anchor="middle" class="k" font-size="38" fill="#13302c">I</text>
+      <text x="250" y="54" class="j" font-size="46" fill="#fff">IFD</text><text x="361" y="51" font-size="25" fill="#cfe9e1">dedo em martelo</text>
+<rect x="154" y="116" width="52" height="38" rx="19" fill="#14655e" stroke="#a9ecd9" stroke-width="3"/><text x="180" y="143" text-anchor="middle" class="k" font-size="23" fill="#fff">II</text>
+      <text x="250" y="144" font-size="25" fill="#a9ecd9">falange média</text>
+<circle cx="180" cy="230" r="34" fill="#fdf9ef" stroke="#0a2420" stroke-width="9"/><text x="180" y="243" text-anchor="middle" class="k" font-size="32" fill="#13302c">III</text>
+      <text x="250" y="244" class="j" font-size="46" fill="#fff">IFP</text><text x="361" y="241" font-size="25" fill="#cfe9e1">botoeira</text>
+<rect x="154" y="306" width="52" height="38" rx="19" fill="#14655e" stroke="#a9ecd9" stroke-width="3"/><text x="180" y="333" text-anchor="middle" class="k" font-size="23" fill="#fff">IV</text>
+      <text x="250" y="334" font-size="25" fill="#a9ecd9">falange proximal</text>
+<circle cx="180" cy="420" r="46" fill="#F4CF7C" stroke="#0a2420" stroke-width="10"/><text x="180" y="437" text-anchor="middle" class="k" font-size="46" fill="#13302c">V</text>
+      <text x="250" y="440" class="j" font-size="62" fill="#F4CF7C">MF</text><text x="360" y="414" font-size="25" font-weight="700" fill="#fff">bandas sagitais</text><text x="360" y="446" font-size="25" font-weight="700" fill="#fff">e mordida humana</text>
+<rect x="154" y="496" width="52" height="38" rx="19" fill="#14655e" stroke="#a9ecd9" stroke-width="3"/><text x="180" y="523" text-anchor="middle" class="k" font-size="23" fill="#fff">VI</text>
+      <text x="250" y="524" font-size="25" fill="#a9ecd9">dorso da mão · juncturae tendinum</text>
+<circle cx="180" cy="610" r="34" fill="#fdf9ef" stroke="#0a2420" stroke-width="9"/><text x="180" y="623" text-anchor="middle" class="k" font-size="28" fill="#13302c">VII</text>
+      <text x="250" y="624" class="j" font-size="46" fill="#fff">PUNHO</text><text x="415" y="621" font-size="25" fill="#cfe9e1">retináculo dorsal</text>
+<rect x="148" y="686" width="64" height="38" rx="19" fill="#14655e" stroke="#a9ecd9" stroke-width="3"/><text x="180" y="713" text-anchor="middle" class="k" font-size="23" fill="#fff">VIII</text>
+      <text x="250" y="714" font-size="25" fill="#a9ecd9">antebraço</text>
+    </g>
+    <!-- legenda -->
+    <g transform="translate(700 70)">
+      <circle cx="22" cy="0" r="18" fill="#fdf9ef" stroke="#0a2420" stroke-width="6"/><text x="54" y="9" font-size="24" fill="#fff" font-weight="700">articulação: ímpar</text>
+      <rect x="2" y="40" width="40" height="28" rx="14" fill="#14655e" stroke="#a9ecd9" stroke-width="3"/><text x="54" y="63" font-size="24" fill="#fff" font-weight="700">osso: par</text>
+    </g>
+  </svg>
+
+  <div class="cuidado" style="top:1440px;"><div class="in"><span class="x">CUIDADO</span><p>Contou do punho? <b>Desceu na VI</b>,<br>uma estação antes da certa.</p></div></div>
+  <p class="rodape" style="top:1610px; font-size:19px;">Gabarito oficial: C (zona V). Green's Operative Hand Surgery, 7ª ed., cap. 5, p. 158 (fig. 5.9) e p. 174.</p>
+</section>
+
+<!-- ============ STORY 3: comece já ============ -->
+<section id="qui26-3-planos">
+  <div class="fundo"></div><div class="grade"></div>
+  <div class="placa" style="left:70px; top:256px;"><span class="bola">E</span>PRÓXIMA ESTAÇÃO <span class="sep">·</span> COMECE JÁ</div>
+  <h1 class="h1" style="top:370px; font-size:64px;">Treine a mão<br><span class="o">do seu jeito.</span></h1>
+
+  <div class="gratis pixbox" style="top:560px;">
+    <img class="px" src="img/treinar.png" alt="">
+    <div><p class="a">TREINO GRATUITO</p><p class="h">20 questões por dia</p><p class="d">comentadas, com o livro citado, sem pagar nada</p></div>
+  </div>
+
+  <p class="secao" style="top:812px;">OU O PLANO COMPLETO</p>
+
+  <div class="planos" style="top:880px;">
+    <div class="plano pixbox">
+      <p class="nm">MENSAL</p>
+      <p class="v"><span class="r">R$</span>39,90</p><p class="m">por mês</p>
+      <p class="t"><b>R$ 39,90</b><br>por 1 mês</p>
+    </div>
+    <div class="plano pixbox">
+      <p class="nm">SEMESTRAL</p>
+      <p class="v"><span class="r">R$</span>34,90</p><p class="m">por mês</p>
+      <p class="t"><b>R$ 209,40</b><br>a cada 6 meses</p>
+    </div>
+    <div class="plano top pixbox">
+      <p class="tag">MENOR VALOR POR MÊS</p>
+      <p class="nm">ANUAL</p>
+      <p class="v"><span class="r">R$</span>29,90</p><p class="m">por mês</p>
+      <p class="t"><b>R$ 358,80</b><br>por ano</p>
+    </div>
+  </div>
+
+  <div class="inclui" style="top:1250px;">
+    <span>Questões de TEOT, TARO e SBCM</span><span>Resumos com o livro</span><span>Trilha da Cirurgia da Mão</span>
+    <span>Flashcards</span><span>Simulados</span><span>Caderno de erros</span>
+  </div>
+
+  <div class="botao" style="left:110px; right:110px; top:1400px; height:104px; font-size:38px;">O caminho está no nosso perfil</div>
+  <p style="position:absolute; left:0; right:0; top:1530px; text-align:center; font:800 40px/1 Jakarta; color:var(--ouro);">ortoquestoes.com.br</p>
+  <p class="rodape" style="top:1596px; font-size:19px;">Semestral e anual pagos de uma vez; o valor por mês é o equivalente.</p>
+</section>
+</body></html>
