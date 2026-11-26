@@ -1,6 +1,6 @@
 ---
 id: campbell15-imagem-joelho
-versao: 3
+versao: 4
 titulo: Imagem do joelho
 especialidade: joelho
 acesso: gratis
@@ -99,6 +99,12 @@ O capítulo 3 do Campbell (p. 159 e 160) ensina a técnica e a leitura:
 - Sinal que **não comunica** com a superfície é **degeneração mucoide**, invisível na artroscopia; sinal que **chega à superfície é ruptura**, desde que em mais de uma imagem ou com distorção.
 - Menisco no lugar **pequeno ou truncado** sugere **fragmento deslocado** (alça de balde), procurado no coronal.
 
+O GREENSPAN (cap. 9, Figura 9.73) mostra a regra da superfície em três sequências: em T1 (A), em T2 (B) e na artro-RM com supressão de gordura (C), o sinal claro dentro do menisco medial **encosta na superfície articular** (seta), e por isso é ruptura, não degeneração.
+
+!figura 9.73 imagem=joelho/greenspan6-9-73.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 9, Figura 9.73. RM sagital do menisco medial em T1 (A), T2 (B) e artro-RM com supressão de gordura (C): o sinal alto intrameniscal chega à superfície articular (setas), critério de ruptura.
+!fim
+
 As rupturas **radiais da raiz posterior do menisco medial** são comuns e incapacitantes no idoso e são **mais bem vistas nos coronais posteriores** (p. 160): na figura do livro, um **defeito cheio de líquido** no corno posterior junto à raiz. Elas permitem a **extrusão** do menisco e associam-se a **fratura subcondral por insuficiência** no compartimento medial. O capítulo 50 completa: a ruptura da raiz posterior **lateral** é aguda e acompanha o LCA; a da raiz **medial** é degenerativa, da meia-idade. A **rampa** é diferente: ruptura **longitudinal na junção meniscocapsular** do corno posterior medial, associada ao LCA, vista na ressonância em menos da metade dos casos, com **contusão tibial posteromedial** como sinal secundário em 72%.
 
 !tabela A ressonância do menisco: achados e armadilhas (Campbell 15, cap. 3, p. 159 a 162; cap. 50)
@@ -114,13 +120,13 @@ As rupturas **radiais da raiz posterior do menisco medial** são comuns e incapa
 | Sinal difuso no idoso, menisco operado | falso-positivo; especificidade menor |
 !fim
 
-!questoes central=joelho-0330 relacionadas=joelho-0331
+!questoes central=joelho-0330 relacionadas=joelho-0331 treino=joelho-0454,joelho-0456,joelho-0457,joelho-0464
 conceito: Radiografias não confirmam a ruptura meniscal, mas excluem corpos livres e osteocondrite; a ressonância detecta a ruptura, mas não demonstrou eficácia em prever se ela é reparável.
 como: A SES-DF 2022 usou o caso do lutador com bloqueios e pediu o julgamento de um item sobre a radiografia e outro sobre a ressonância detectar e prever o reparo.
 armadilha: Aceitar o item da ressonância porque a primeira metade está certa; prever a reparabilidade é o que o Campbell nega.
 !fim
 
-!questoes central=joelho-0149 relacionadas=joelho-0059
+!questoes central=joelho-0149 relacionadas=joelho-0059 treino=joelho-0455,joelho-0458
 conceito: A ruptura da raiz posterior do menisco medial aparece como defeito com líquido no corno posterior, melhor vista nos coronais posteriores, e permite a extrusão.
 como: Uma prova de Ortopedia mostrou coronal, sagital e axial e pediu o tipo de lesão entre raiz, vertical, rampa e alça de balde.
 armadilha: Chamar de alça de balde, que desloca um fragmento para o intercôndilo, ou de rampa, que é longitudinal na junção meniscocapsular.
@@ -166,7 +172,7 @@ como: O TEOT 2023 mostrou cortes do canto posterolateral com a seta na faixa esc
 armadilha: Chamar o tendão de menisco roto ou de colateral lateral, que vai à cabeça da fíbula por fora.
 !fim
 
-!questoes central=joelho-0111
+!questoes central=joelho-0111 treino=joelho-0461,joelho-0470
 conceito: A fabela é o ossículo atrás do côndilo femoral lateral, no tendão da cabeça lateral do gastrocnêmio, ossificado em 10% a 20% dos joelhos.
 como: Uma prova de Ortopedia mostrou o perfil com a seta no ossículo posterior e perguntou em que tendão ele fica.
 armadilha: Escolher a cabeça medial do gastrocnêmio ou o poplíteo; a fabela é posterolateral.
@@ -183,6 +189,12 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2022), parte de um fa
 
 No lado lateral, um pequeno fragmento da borda do **planalto tibial lateral** é a **fratura de SEGOND**, o **sinal capsular lateral**, que o Campbell (p. 2022 e 2065) chama de **patognomônica de lesão do LCA**. A origem é discutida: o Campbell (cap. 50) a atribui ao **ligamento anterolateral (ALL) ou ao trato iliotibial**, não ao bíceps; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), ao **componente meniscotibial da cápsula lateral**, citando também o ALL. A cadeia para a prova: **lasca lateral do planalto no AP = cápsula anterolateral arrancada pela rotação interna = LCA roto**.
 
+O GREENSPAN (cap. 9, Figura 9.37) mostra a cadeia inteira num paciente: no AP (A), a lasca óssea fina arrancada da borda lateral da tíbia, logo abaixo da interlinha (seta); na RM sagital do mesmo joelho (B), o LCA roto.
+
+!figura 9.37 imagem=joelho/greenspan6-9-37.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 9, Figura 9.37. Fratura de SEGOND: fragmento ósseo arrancado da borda lateral do planalto tibial no AP (seta) (A) e, na RM sagital com supressão de gordura do mesmo joelho, ruptura do LCA (B).
+!fim
+
 O Rockwood and Green (cap. 62) lista, entre as fraturas da borda do planalto **virtualmente patognomônicas de lesão dos cruzados**, a **SEGOND**, a **SEGOND reversa** (o espelho medial), as da borda anteromedial e as da inserção do semimembranoso. O livro não diz, no trecho lido, qual cruzado acompanha a reversa; a associação clássica que a prova cobra é com o **LCP**.
 
 O **sinal arqueado**, segundo o Rockwood and Green (cap. 61), é uma **linha lucente através da cabeça da fíbula**, vista no AP, que indica **avulsão da cabeça da fíbula** e é **patognomônica de lesão do canto posterolateral**; o fragmento é arrancado pela **divisão posterior do popliteofibular**, e o colateral fibular e o bíceps podem estar envolvidos. A diferença com a SEGOND é de **endereço**: planalto tibial lateral (LCA) contra cabeça da fíbula (canto posterolateral).
@@ -192,6 +204,12 @@ O **sinal arqueado**, segundo o Rockwood and Green (cap. 61), é uma **linha luc
 O Campbell (cap. 50, p. 2023 e 2065) descreve ainda a **impactação deprimida do côndilo femoral lateral no sulco terminal**, o **sinal do entalhe femoral lateral**, associado ao LCA: no pivô, o côndilo subluxa e bate na borda posterior do planalto lateral, no mesmo lugar onde a ressonância mostra a contusão.
 
 No lado medial, o Campbell (cap. 10, p. 486) descreve a **calcificação do ligamento colateral tibial**, a **doença de PELLEGRINI-STIEDA**, relacionada a **trauma** (entorse ou ruptura do colateral tibial). O depósito pode regredir sozinho; a infiltração com anestésico e corticoide alivia e pode curar; a excisão fica para a falha. Bursas sob o colateral tibial podem calcificar e imitá-la (cap. 10). Na radiografia, ela fica **junto ao côndilo femoral medial**: lado oposto à SEGOND, e no fêmur.
+
+Na incidência em túnel do GREENSPAN (cap. 9, Figura 9.85), a seta aponta a calcificação alongada colada à borda do côndilo femoral medial, na origem do colateral medial, três anos depois da ruptura.
+
+!figura 9.85 imagem=joelho/greenspan6-9-85.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 9, Figura 9.85. Incidência em túnel do joelho com a lesão de PELLEGRINI-STIEDA: calcificação e ossificação junto ao côndilo femoral medial, na inserção femoral do colateral medial (seta).
+!fim
 
 !tabela Sinais radiográficos e a lesão que cada um denuncia (Campbell 15, caps. 10 e 50; Rockwood and Green 10ª, caps. 61 e 62)
 | Sinal | Onde | Lesão associada |
@@ -212,7 +230,7 @@ como: O TEOT 2025 mostrou o AP com a seta na lasca lateral e deu como alternativ
 armadilha: Confundir com o arqueado, na cabeça da fíbula, ou com o PELLEGRINI-STIEDA, medial e no fêmur.
 !fim
 
-!questoes central=joelho-0226
+!questoes central=joelho-0226 treino=joelho-0459,joelho-0460,joelho-0469
 conceito: A SEGOND reversa é a avulsão da borda medial do planalto, uma das fraturas que denunciam lesão dos cruzados; a associação cobrada é com o LCP.
 como: O TARO 2010 perguntou com que lesão a SEGOND reversa tem alta associação.
 armadilha: Responder LCA por analogia com a SEGOND clássica.
@@ -233,6 +251,12 @@ O Campbell (cap. 50, p. 2065) dá o número que cai: **contusões ósseas aparec
 
 O LCP normal é **homogeneamente escuro, curvo e de espessura uniforme**; descontinuidade ou líquido indicam ruptura (cap. 3, p. 162). Por ser mais vertical e central, é mais fácil de captar; a ressonância é **mais confiável para o LCP que para o LCA**, com acurácia **perto de 100%** (cap. 50, p. 2098). O **LCM**, no coronal, é uma banda fina colada ao menisco medial: edema ao redor nas lesões leves, espessamento ou descontinuidade nas graves, que a ressonância gradua com menos precisão (cap. 3, p. 162). No **mecanismo extensor**, a ruptura completa mostra falha com líquido; a parcial, espessamento com edema; a tendinite, espessamento com baixo sinal preservado (cap. 3). Na **osteocondrite**, líquido em T2 ao redor do fragmento indica instabilidade (p. 164).
 
+Compare com a ruptura no GREENSPAN (cap. 9, Figura 9.94): no sagital T2, a parte distal do LCP perde o contorno escuro e vira uma área de sinal misto com edema e hematoma (seta); as pontas de seta mostram os meniscofemorais presos nas fibras rotas.
+
+!figura 9.94 imagem=joelho/greenspan6-9-94.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 9, Figura 9.94. RM sagital T2 com ruptura completa das fibras distais do LCP (seta), com edema e hematoma; os ligamentos meniscofemorais ficam presos nas fibras rotas (pontas de seta).
+!fim
+
 O **cisto de BAKER** fica no lado medial da fossa poplítea; o que confirma é o **colo comunicando com a articulação entre a cabeça medial do gastrocnêmio e o semimembranoso**, o que evita confundi-lo com aneurisma ou tumor; roto, simula tromboflebite (cap. 3). O Campbell (cap. 10) explica que ele é, quase sempre, uma **bursa distendida**.
 
 !tabela Sinais de ruptura do LCA (Campbell 15, cap. 3, p. 162; cap. 50, p. 2022 a 2066)
@@ -246,7 +270,7 @@ O **cisto de BAKER** fica no lado medial da fossa poplítea; o que confirma é o
 | Radiográfico | SEGOND, entalhe femoral lateral, avulsão da eminência |
 !fim
 
-!questoes central=joelho-0282
+!questoes central=joelho-0282 treino=joelho-0466,joelho-0467,joelho-0468
 conceito: Na lesão aguda do LCA, a ressonância mostra contusão óssea em cerca de 80%, sobretudo no côndilo femoral lateral e no planalto tibial lateral.
 como: O TARO 2007 perguntou o achado frequente e característico da lesão aguda do LCA na ressonância.
 armadilha: Escolher o menisco medial, das lesões tardias, ou a contusão do planalto medial.
@@ -363,7 +387,7 @@ O mecanismo resolve sem decorar: a patela sai para fora e, ao voltar, a **faceta
 
 O Campbell (cap. 65, p. 2941) descreve as **luxações intra-articulares da patela** como raras e de dois tipos. **A mais comum é horizontal, com desinserção do tendão do quadríceps, e a superfície articular da patela voltada para a superfície articular da tíbia.** Na outra, o polo inferior se solta do tendão patelar e a superfície articular fica voltada para **proximal**. Ambas costumam exigir **redução aberta**. O mesmo capítulo dá a referência da origem femoral do LPFM no perfil: logo à frente da **interseção da cortical posterior do fêmur com a linha de BLUMENSAAT**.
 
-!questoes central=joelho-0232
+!questoes central=joelho-0232 treino=joelho-0462,joelho-0463
 conceito: Na luxação lateral da patela, a ressonância mostra edema da faceta medial da patela e da face lateral do côndilo femoral lateral (kissing bones).
 como: Uma prova de Ortopedia perguntou as contusões típicas na ressonância depois da luxação traumática lateral da patela.
 armadilha: Inverter os lados e escolher a faceta lateral da patela ou o côndilo medial.
@@ -413,7 +437,7 @@ armadilha: Aceitar que a deformidade comum é o valgo ou que a osteotomia valgiz
 alerta: O Campbell descreve o triplo varo de NOYES sem detalhar o duplo varo; a abertura lateral por afrouxamento de `joelho-0335` é coerente com essa descrição, e o gabarito (Certo) é mantido.
 !fim
 
-!questoes central=joelho-0318
+!questoes central=joelho-0318 treino=joelho-0465
 conceito: Mulher de 50 anos, artrose medial AHLBACK III e varo de 8 graus é candidata à osteotomia valgizante; LCA lesado e varo acima de 7 graus afastam a unicompartimental.
 como: O ENARE 2022 apresentou a paciente com LCA não tratado, artrose medial e varo de 8 graus e pediu o tratamento mais indicado.
 armadilha: Escolher a unicompartimental, que o HEBERT reserva para LCA íntegro e varo menor que 7 graus.

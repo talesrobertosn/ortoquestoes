@@ -1,6 +1,6 @@
 ---
 id: green-imagem-mao-punho
-versao: 3
+versao: 4
 titulo: Imagem da mão e do punho
 especialidade: mao
 acesso: gratis
@@ -84,7 +84,7 @@ Quando as quatro incidências não confirmam a suspeita, o Green (cap. 13, p. 42
 
 Por que inclinar 10° de ulnar para radial? A articulação SL não é paralela ao feixe no PA comum; inclinando o tubo, o feixe entra tangente à faceta ulnar plana do escafoide e o espaço aparece por inteiro, sem sobreposição. O capítulo 16 (p. 592) chama a clenched-pencil de **a melhor para o alargamento SL dinâmico**, e o capítulo 12 (p. 374) lembra que o **AP com preensão** magnifica o colapso carpal e a diástase SL.
 
-!questoes central=mao-1454
+!questoes central=mao-1454 treino=mao-3889
 conceito: O PA com 10° de inclinação do tubo de ulnar para radial é a incidência ideal para o intervalo SL; o gap é medido no meio da articulação e comparado com o outro lado (Green, cap. 13, p. 429).
 como: A USP-SP 2024 deu a frase com três lacunas (graus, origem e destino da inclinação) e cobrou 10, ulnar e radial.
 armadilha: Inverter o sentido (de radial para ulnar) ou trocar 10 por 20 graus, valor que aparece em outras incidências (oblíqua a 20° de pronação).
@@ -102,7 +102,7 @@ Para a lesão dinâmica, o Green (cap. 13, p. 430 a 432) usa a **série de movim
 
 O capítulo 14 do Green (p. 500 e 501) faz uma observação que a banca transformou em questão. A variância ulnar **aumenta fisiologicamente cerca de 2 mm na preensão forte, sobretudo com o antebraço pronado**. Na pronação o rádio cruza a ulna e encurta relativamente; na preensão, os músculos comprimem o rádio contra o carpo. Por isso, no paciente com dor ulnar, o PA de rotina pode subestimar o impacto, e o livro recomenda incidências de estresse: **em pronação, em preensão ou em pronação combinada com preensão**. Em 22 pacientes com dor ulnar, a **preensão pronada aumentou a variância em média 2,5 mm**.
 
-!questoes treino=mao-2465
+!questoes treino=mao-2465,mao-3884
 conceito: A variância ulnar aumenta na preensão e na pronação; a incidência em preensão com o antebraço pronado aumentou a variância em média 2,5 mm em pacientes com dor ulnar (Green, cap. 14, p. 500 e 501).
 como: O simulado da prova de título de cirurgia da mão de 2022 perguntou qual incidência o Green aponta como capaz de aumentar uma variância ulnar positiva, com supinação e desvio radial como distratores.
 armadilha: Escolher a preensão em supinação: a supinação faz o contrário da pronação, e o ganho vem justamente da combinação preensão mais pronação.
@@ -113,6 +113,12 @@ armadilha: Escolher a preensão em supinação: a supinação faz o contrário d
 ## Os arcos de GILULA
 
 No PA normal, o Green (cap. 13, p. 428) descreve três curvas lisas, os **arcos de GILULA**: o **contorno proximal da fileira proximal** (arco 1), o **contorno distal da fileira proximal** (arco 2) e o **contorno proximal da fileira distal**, isto é, do capitato e do hamato (arco 3). **Qualquer degrau indica anormalidade no ponto onde o arco se quebra.** O Rockwood (cap. 44, seção Imaging and Other Diagnostic Studies for Carpal Fractures and Dislocations, Radiographs) acrescenta que o arco quebrado é diagnóstico de fratura e/ou instabilidade, sobretudo das **fratura-luxações perissemilunares**, e que, na dissociação lunopiramidal, **pode não haver gap, mas há quebra do arco da fileira proximal**. O Green (cap. 16, p. 604) dá o número: a luxação perissemilunar é perdida pelos primeiros atendentes em **até 25%** dos casos.
+
+O GREENSPAN (cap. 7, Figura 7.85) traz o PA normal e o desenho dos três arcos: o I passa na borda proximal do escafoide, do semilunar e do piramidal; o II, na borda distal dessa fileira; o III, na borda proximal do capitato e do hamato. Treine o olho no normal: as três curvas são lisas e paralelas.
+
+!figura 7.85 imagem=mao/greenspan6-7-85.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 7, Figura 7.85. PA normal do punho e esquema dos três arcos do carpo (GILULA): arco I na borda proximal da fileira proximal, arco II na borda distal dela e arco III na borda proximal do capitato e do hamato.
+!fim
 
 ## Espaços: 2 mm e simetria
 
@@ -148,6 +154,12 @@ O alerta vem junto: **os valores normais são muito variados, a reprodutibilidad
 
 O Rockwood (cap. 44, Tabela 44-4) usa cortes mais definidos: SL normal **45°** (30 a 60°), **DISI acima de 60°**, **VISI abaixo de 30°**, **acima de 80° diagnóstico**; LC e RL normais abaixo de 15°, e **acima de 15 a 20° sugerem instabilidade**. O DISI aparece na dissociação SL e na fratura desviada ou pseudartrose do escafoide; a VISI, na dissociação lunopiramidal. O capítulo 16 do Green (p. 590) define DISI do mesmo jeito: **SL acima de 60° e LC acima de 15°**.
 
+O desenho do GREENSPAN (cap. 7, Figura 7.102) mostra como traçar e ler os ângulos: o escafossemilunar normal entre 30 e 60 graus (A) e o capitatossemilunar entre 0 e 30 (B); na DISI o semilunar inclina para dorsal e o SL passa de 60 (C); na VISI o semilunar inclina para palmar, o SL cai abaixo de 30 e o capitatossemilunar passa de 30 (D).
+
+!figura 7.102 imagem=mao/greenspan6-7-102.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 7, Figura 7.102. Esquema dos eixos no perfil do punho: ângulo escafossemilunar normal de 30 a 60 graus (A) e capitatossemilunar de 0 a 30 (B); DISI com SL acima de 60 (C) e VISI com SL abaixo de 30 e capitatossemilunar acima de 30 (D).
+!fim
+
 O HEBERT (cap. 52) dá outra faixa para o ângulo SL normal: **45 a 70°**. É uma divergência real que a banca pode explorar: um ângulo de 65° é normal para o HEBERT e já sugere DISI para o Rockwood e para a definição do capítulo 16 do Green.
 
 !tabela Ângulos do perfil: o que cada livro chama de normal (Green's Operative Hand Surgery, 7ª ed., cap. 13, p. 430, e cap. 16, p. 590; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 44, Tabela 44-4; HEBERT, cap. 52)
@@ -165,7 +177,7 @@ A altura carpal é a **distância entre a base do 3º metacarpo e a superfície 
 
 O Rockwood (cap. 44, seção Imaging and Other Diagnostic Studies for Carpal Fractures and Dislocations, Radiographs) expressa o mesmo índice em porcentagem: normal **50% (45 a 60%)**, e **abaixo de 45% indica colapso**; cita valores por sexo e diz que o índice tem **pouco valor diagnóstico para instabilidade**. A diferença entre 0,54 e 0,50 vem das séries, não do método.
 
-!questoes treino=mao-2293
+!questoes treino=mao-2293,mao-3895
 conceito: No método original, divide-se a altura carpal (base do 3º metacarpo até a superfície articular do rádio, no eixo do 3º metacarpo) pelo comprimento do 3º metacarpo; normal 0,54 ± 0,03; a variante usa o comprimento do capitato (1,57 ± 0,05).
 como: O simulado da prova de título de cirurgia da mão de 2024 perguntou o que se divide pelo quê, com o inverso (metacarpo pela altura) e o capitato como distratores.
 armadilha: Inverter numerador e denominador, ou confundir a variante do capitato (que é alternativa, não o método original).
@@ -185,6 +197,12 @@ A ruptura SL isolada **não desalinha o carpo de imediato**; quando falham tamb�
 
 O sinal de **TERRY THOMAS**, batizado por FRANKEL por causa do diastema dentário do comediante inglês, é o **espaço SL anormalmente largo comparado com o contralateral** (Green, cap. 13, p. 436). Mede-se **no meio da faceta ulnar plana do escafoide**; **gap unilateral acima de 5 mm é diagnóstico** de dissociação SL. Sem trauma claro e com diástase evidente, pense em **gap constitucional, em geral bilateral**, com ou sem frouxidão, e em artrite reumatoide, gota e doença por depósito de pirofosfato de cálcio. A radiografia comparativa é crítica; o próprio livro mostra um caso em que só um dos dois punhos cerrados alargou (Fig. 13.22). Na criança, o escafoide ainda incompleto produz o **pseudo-TERRY THOMAS** (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 8).
 
+No PA do GREENSPAN (cap. 7, Figura 7.86), compare o espaço entre escafoide e semilunar com os outros espaços do carpo: ele está claramente mais largo que os demais, que medem 1 a 2 mm.
+
+!figura 7.86 imagem=mao/greenspan6-7-86.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 7, Figura 7.86. PA do punho com sinal de TERRY THOMAS: espaço escafossemilunar anormalmente largo na dissociação escafossemilunar.
+!fim
+
 ## O anel cortical: o escafoide fletido
 
 Quando o escafoide colapsa em flexão, ele fica **encurtado no PA** e a **tuberosidade aparece de frente, como um círculo denso sobre os dois terços distais** do osso: o **sinal do anel** (Green, cap. 13, p. 436). O livro faz duas ressalvas que viram pegadinha: o anel está presente **sempre que o escafoide está fletido, qualquer que seja a causa**, e por isso **nem sempre indica dissociação SL** (escafoide e semilunar podem estar fletidos juntos com ligamentos íntegros, como na VISI). O HEBERT descreve o mesmo sinal como a imagem da tuberosidade do escafoide verticalizado.
@@ -197,7 +215,7 @@ No perfil, o escafoide fica mais perpendicular ao rádio enquanto o semilunar fi
 
 Inconclusivos história, exame e radiografias, entram **RM, artrotomografia ou artroscopia diagnóstica** (Green, cap. 13, p. 437). Até **30% das fraturas do rádio distal** têm lesão ligamentar do carpo (GEISSLER, p. 435), e a lesão parcial costuma ter radiografia normal.
 
-!questoes central=mao-0615 relacionadas=mao-1041
+!questoes central=mao-0615 relacionadas=mao-1041 treino=mao-3893
 conceito: Ângulo SL normal 30 a 60° (média 47°); DISI acima de 60° pelo Rockwood e pelo capítulo 16 do Green; acima de 80° indica ruptura; LC e RL normais até cerca de 15°, e acima de 15 a 20° sugerem instabilidade.
 como: O TARO 2008 pediu o ângulo que confirma a instabilidade escafolunar (LC acima de 20° ou de 10°, SL acima de 45° ou de 60°); a UFG 2021 pediu os sinais radiográficos de instabilidade SL e deu como correta a angulação LC ou RL acima de 20°, contra gap de 2 mm, escafoide alongado e semilunar quadrangular.
 armadilha: Na UFG, gap de 2 mm é o normal (até 2 mm), o escafoide da dissociação fica encurtado (não alongado) e o semilunar normal já é trapezoidal; no TARO, 45° é o ângulo SL normal médio.
@@ -220,6 +238,12 @@ Quando rompem os estabilizadores intrínsecos e extrínsecos, aparece a VISI est
 - **Alargamento SL paradoxal**, comum na LTq, sem ruptura SL (carga sobre as fibras palmares SL, mais longas).
 - **Degrau LTq em desvio ulnar** (o piramidal sobe) e, com colapso, **índice de altura carpal diminuído**.
 - No perfil, VISI; o **eixo do piramidal fica dorsal** ao do semilunar na dissociação LTq e palmar na CIND-VISI (Fig. 13.42).
+
+O GREENSPAN (cap. 7, Figura 7.103) mostra uma VISI medida no perfil: o ângulo escafossemilunar caiu para 18 graus e o capitatossemilunar subiu para 58, num paciente com ruptura escafossemilunar e lunopiramidal na RM. É o desenho D da Figura 7.102 numa radiografia real.
+
+!figura 7.103 imagem=mao/greenspan6-7-103.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 7, Figura 7.103. Perfil do punho com VISI e os eixos traçados: ângulo escafossemilunar de 18 graus e capitatossemilunar de 58 graus.
+!fim
 
 No exame clínico, o **ballottement de REAGAN** e o **shear test de KLEINMAN** (p. 451 e 452).
 
@@ -388,7 +412,7 @@ O HEBERT (cap. 52) dá números mais otimistas: cintilografia com **sensibilidad
 | TC | cortes de 1 mm no eixo longo; consolidação e pseudartrose | VPN 96,8%, VPP 100% | desvio, humpback, consolidação |
 !fim
 
-!questoes central=mao-0599
+!questoes central=mao-0599 treino=mao-3887,mao-3888
 conceito: A RM é o melhor exame para a fratura oculta do escafoide (Green: sensibilidade de 90 a 100%, especificidade de 90%; HEBERT: 100% e 100%), superior à cintilografia, que é sensível mas pouco específica.
 como: O TARO 2007 perguntou o exame padrão-ouro para a fratura oculta do escafoide entre radiografia, ultrassonografia, TC e RM.
 armadilha: Escolher a TC porque é o exame do osso e da consolidação; para achar a fratura que a radiografia não mostrou, o melhor é a RM.
@@ -430,7 +454,7 @@ A classificação de LICHTMAN (Green, cap. 16, p. 641, Tabela 16.7) é a régua 
 
 Exigir **ângulo radioescafoide acima de 60°** para o IIIB melhorou a reprodutibilidade, e esse ângulo previu mau resultado das cirurgias que salvam o semilunar (p. 641). O autor usa a **radiografia** para estadiar, a **RM** para a vascularização (sinal parcial pode ser impacto ulnocarpal) e a cartilagem, e a **TC** para a morfologia do semilunar. O Green não descreve a classificação de SCHMITT; o nome SCHMITT aparece no capítulo como autor do estudo que mostrou a superioridade da RM com contraste para a viabilidade (do escafoide, p. 592).
 
-!questoes treino=mao-1781
+!questoes treino=mao-1781,mao-3886
 conceito: LICHTMAN é radiográfica e mede o colapso do semilunar e do carpo (I a IV); a RM é o exame da vascularização, e a RM com contraste avalia melhor a viabilidade do que a sem contraste (Green, cap. 16, p. 592 e 641).
 como: O simulado da prova de título de cirurgia da mão de 2026 pediu o exame em que se baseiam LICHTMAN e SCHMITT e o que cada uma avalia, contra pares de RM sem contraste, artroscopia e TC.
 armadilha: Achar que LICHTMAN é por RM porque o estágio I aparece na RM; a classificação é radiográfica, e a RM entra para ver a viabilidade.
@@ -463,7 +487,7 @@ O Campbell (cap. 3) completa: a TC tem **resolução espacial melhor que a RM**,
 | Artroscopia | padrão-ouro para ligamentos intercarpais; trata no mesmo ato | invasiva |
 !fim
 
-!questoes central=mao-1848 relacionadas=mao-1624
+!questoes central=mao-1848 relacionadas=mao-1624 treino=mao-3885,mao-3890,mao-3891,mao-3892,mao-3894
 conceito: A TC expõe à radiação ionizante, mas é excelente para fraturas complexas ou mal vistas; o ultrassom é em tempo real; a RM tem contraindicações (marca-passo antigo, clipes) e é a melhor para partes moles; identificar modalidade, plano e ponderação vem antes de qualquer diagnóstico na imagem.
 como: A ENARE 2022 pediu a afirmativa correta sobre os exames da mão e do punho; a USP-SP 2026 mostrou uma imagem da mão e pediu modalidade, sequência e plano (RM ponderada em T1, plano coronal).
 armadilha: Dizer que o ultrassom não avalia em tempo real (é justamente sua vantagem), indicar RM no marca-passo e nos clipes, ou chamar de axial um corte que mostra os dedos ao longo do comprimento (é coronal).

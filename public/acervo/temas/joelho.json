@@ -18982,7 +18982,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "No mesmo paciente com instabilidade patelar, a distância TT-TG medida na ressonância magnética, em relação à tomografia, tende a ser",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "joelho/campbell13-47-11.jpeg",
+          "legenda": "Fonte: Campbell's Operative Orthopaedics, 13ª ed. (2017), cap. 47, Fig. 47-11, p. 2352. Medida da distância TT-TG em cortes axiais de tomografia superpostos: sobre a linha tangente aos côndilos posteriores (AB), uma perpendicular passa pelo fundo do sulco troclear (CD) e outra pela inserção do tendão patelar na tuberosidade da tíbia (EF); a distância entre elas (GH), em milímetros, é o TT-TG.",
+          "largura": 677,
+          "altura": 726
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -19233,6 +19240,873 @@
         "arquivo": "Campbell's Operative Orthopaedics, 15ª ed.; Tachdjian's Pediatric Orthopaedics, 6ª ed.",
         "pagina": 2202,
         "numeroOriginal": 14
+      }
+    },
+    {
+      "id": "joelho-0454",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Jovem de 24 anos com bloqueio do joelho após entorse. Na RM sagital ponderada em T2 com supressão de gordura, a estrutura indicada pela seta curva é",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0454-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.76.",
+          "largura": 600,
+          "altura": 766
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o ligamento meniscofemoral de HUMPHRY."
+        },
+        {
+          "letra": "B",
+          "texto": "o fragmento deslocado do menisco medial."
+        },
+        {
+          "letra": "C",
+          "texto": "o coto do ligamento cruzado anterior."
+        },
+        {
+          "letra": "D",
+          "texto": "o ligamento meniscofemoral de WRISBERG."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 1
+      }
+    },
+    {
+      "id": "joelho-0455",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 30 anos sem bloqueio articular; o menisco medial mostra duas gravatas-borboleta nos cortes sagitais periféricos. Na RM sagital, a estrutura apontada pela seta, à frente do LCP, corresponde ao",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0455-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.14.",
+          "largura": 600,
+          "altura": 663
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fragmento de ruptura em alça de balde."
+        },
+        {
+          "letra": "B",
+          "texto": "corpo livre osteocondral intra-articular."
+        },
+        {
+          "letra": "C",
+          "texto": "ligamento meniscofemoral de WRISBERG."
+        },
+        {
+          "letra": "D",
+          "texto": "ligamento meniscofemoral de HUMPHRY."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 2
+      }
+    },
+    {
+      "id": "joelho-0456",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Mulher de 18 anos com estalido forte ao fletir e estender o joelho. Na RM coronal ponderada em T2 com supressão de gordura, o achado entre as setas é",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0456-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.81.",
+          "largura": 600,
+          "altura": 592
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "menisco lateral discoide."
+        },
+        {
+          "letra": "B",
+          "texto": "ruptura em alça de balde."
+        },
+        {
+          "letra": "C",
+          "texto": "cisto parameniscal lateral."
+        },
+        {
+          "letra": "D",
+          "texto": "ruptura horizontal do menisco."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 3
+      }
+    },
+    {
+      "id": "joelho-0457",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na RM sagital do corno posterior do menisco medial de um homem de 45 anos, o sinal apontado pela seta é classificado como",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0457-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.74.",
+          "largura": 600,
+          "altura": 532
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "tipo I, foco globular arredondado."
+        },
+        {
+          "letra": "B",
+          "texto": "tipo II, foco linear intrassubstancial."
+        },
+        {
+          "letra": "C",
+          "texto": "tipo III, ruptura que toca a superfície."
+        },
+        {
+          "letra": "D",
+          "texto": "tipo IV, ruptura complexa e fragmentada."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 4
+      }
+    },
+    {
+      "id": "joelho-0458",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na artrografia com duplo contraste do menisco lateral normal, a faixa de contraste que separa a periferia do corno posterior da cápsula articular corresponde a",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0458-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.10.",
+          "largura": 600,
+          "altura": 503
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ruptura periférica do corno posterior."
+        },
+        {
+          "letra": "B",
+          "texto": "desinserção meniscocapsular traumática."
+        },
+        {
+          "letra": "C",
+          "texto": "cisto parameniscal comunicante."
+        },
+        {
+          "letra": "D",
+          "texto": "hiato do tendão do poplíteo."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 5
+      }
+    },
+    {
+      "id": "joelho-0459",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Jogador de 26 anos com entorse em rotação, estalo e derrame imediato. Na RM sagital ponderada em T2 com supressão de gordura, além do LCA roto (seta), as áreas claras no côndilo femoral e no platô tibial representam",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0459-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.93.",
+          "largura": 600,
+          "altura": 742
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "contusão óssea por impacto."
+        },
+        {
+          "letra": "B",
+          "texto": "osteonecrose espontânea."
+        },
+        {
+          "letra": "C",
+          "texto": "fratura osteocondral desviada."
+        },
+        {
+          "letra": "D",
+          "texto": "osteocondrite dissecante."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 6
+      }
+    },
+    {
+      "id": "joelho-0460",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na RM sagital ponderada em T2 de um atleta com entorse do joelho, a ponta de seta mostra fibras escuras retilíneas íntegras. A estrutura indicada pela seta é",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0460-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.92.",
+          "largura": 600,
+          "altura": 578
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o feixe anteromedial do LCA roto."
+        },
+        {
+          "letra": "B",
+          "texto": "o ligamento meniscofemoral anterior."
+        },
+        {
+          "letra": "C",
+          "texto": "o feixe posterolateral do LCA roto."
+        },
+        {
+          "letra": "D",
+          "texto": "um fragmento em alça de balde."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 7
+      }
+    },
+    {
+      "id": "joelho-0461",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 35 anos com trauma em valgo e rotação externa do joelho fletido. A RM axial em STIR mostra avulsão óssea na borda anteromedial do platô tibial (seta). O achado e a lesão ligamentar associada são, respectivamente,",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0461-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.38.",
+          "largura": 600,
+          "altura": 514
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "SEGOND e ligamento cruzado anterior."
+        },
+        {
+          "letra": "B",
+          "texto": "SEGOND invertida e cruzado posterior."
+        },
+        {
+          "letra": "C",
+          "texto": "SEGOND invertida e cruzado anterior."
+        },
+        {
+          "letra": "D",
+          "texto": "PELLEGRINI-STIEDA e colateral medial."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 8
+      }
+    },
+    {
+      "id": "joelho-0462",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Mulher de 22 anos com entorse em rotação, derrame volumoso e radiografias normais. A RM axial em densidade de prótons com supressão de gordura mostra o foco indicado pela seta e edema no côndilo femoral lateral. O diagnóstico é",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0462-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.45.",
+          "largura": 600,
+          "altura": 660
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "condromalácia da faceta medial."
+        },
+        {
+          "letra": "B",
+          "texto": "fratura osteocondral do côndilo."
+        },
+        {
+          "letra": "C",
+          "texto": "contusão por ruptura do LCA."
+        },
+        {
+          "letra": "D",
+          "texto": "luxação lateral transitória da patela."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 9
+      }
+    },
+    {
+      "id": "joelho-0463",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "RM axial ponderada em T2 com supressão de gordura de uma mulher de 38 anos após luxação lateral transitória da patela. As pontas de seta, junto à borda medial da patela, indicam a ruptura do",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0463-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.44.",
+          "largura": 600,
+          "altura": 684
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "retináculo medial, no componente patelofemoral medial."
+        },
+        {
+          "letra": "B",
+          "texto": "retináculo lateral, no componente patelofemoral lateral."
+        },
+        {
+          "letra": "C",
+          "texto": "ligamento patelar, na inserção do polo inferior."
+        },
+        {
+          "letra": "D",
+          "texto": "cápsula posterolateral, junto ao tendão do poplíteo."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 10
+      }
+    },
+    {
+      "id": "joelho-0464",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 63 anos com dor súbita no joelho, sem trauma relevante. RM coronal em densidade de prótons com supressão de gordura: seta no côndilo femoral medial e ponta de seta no platô medial. O diagnóstico é",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0464-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.68.",
+          "largura": 600,
+          "altura": 493
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osteocondrite dissecante do adulto."
+        },
+        {
+          "letra": "B",
+          "texto": "fratura osteocondral traumática."
+        },
+        {
+          "letra": "C",
+          "texto": "fratura de insuficiência subcondral."
+        },
+        {
+          "letra": "D",
+          "texto": "contusão óssea por ruptura do LCA."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 11
+      }
+    },
+    {
+      "id": "joelho-0465",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menino de 11 anos com dor no joelho. Na incidência em túnel, a seta cheia marca lesão no côndilo medial. O contorno irregular indicado pela seta vazada, na área de carga do côndilo lateral, corresponde a",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0465-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.58.",
+          "largura": 600,
+          "altura": 517
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osteocondrite dissecante in situ."
+        },
+        {
+          "letra": "B",
+          "texto": "fratura osteocondral do côndilo."
+        },
+        {
+          "letra": "C",
+          "texto": "variação da ossificação epifisária."
+        },
+        {
+          "letra": "D",
+          "texto": "osteonecrose espontânea do joelho."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 12
+      }
+    },
+    {
+      "id": "joelho-0466",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 23 anos com osteocondrite dissecante do côndilo femoral medial. Na RM em densidade de prótons com supressão de gordura, a faixa clara apontada pela seta, entre o fragmento e o côndilo, indica",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0466-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.64.",
+          "largura": 600,
+          "altura": 846
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osso viável, com fragmento estável."
+        },
+        {
+          "letra": "B",
+          "texto": "cartilagem íntegra sobre a lesão."
+        },
+        {
+          "letra": "C",
+          "texto": "edema reativo sem valor mecânico."
+        },
+        {
+          "letra": "D",
+          "texto": "líquido na interface, fragmento instável."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 13
+      }
+    },
+    {
+      "id": "joelho-0467",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Jogador de 20 anos com dor medial após estresse em valgo, sem instabilidade. A RM coronal em gradiente (GRE) mostra o ligamento colateral medial com a faixa clara ao longo das fibras superficiais. A lesão é de grau",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0467-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.86.",
+          "largura": 600,
+          "altura": 1242
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "2, com até metade das fibras rotas."
+        },
+        {
+          "letra": "B",
+          "texto": "1, com líquido ao redor das fibras."
+        },
+        {
+          "letra": "C",
+          "texto": "3, com perda da continuidade."
+        },
+        {
+          "letra": "D",
+          "texto": "3, com ligamento espesso e ondulado."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 14
+      }
+    },
+    {
+      "id": "joelho-0468",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 23 anos com trauma esportivo grave do joelho. Na RM coronal posterior em densidade de prótons com supressão de gordura, a seta preta, no lado lateral, indica a ruptura do",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0468-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.88.",
+          "largura": 600,
+          "altura": 574
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "tendão do músculo poplíteo."
+        },
+        {
+          "letra": "B",
+          "texto": "trato iliotibial distal."
+        },
+        {
+          "letra": "C",
+          "texto": "ligamento colateral lateral."
+        },
+        {
+          "letra": "D",
+          "texto": "ligamento popliteofibular."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 15
+      }
+    },
+    {
+      "id": "joelho-0469",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Mulher de 29 anos, oito meses após reconstrução do LCA, com dor ao estender o joelho. Na RM sagital em densidade de prótons, a lesão nodular hipointensa indicada pela seta é",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0469-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.109.",
+          "largura": 600,
+          "altura": 691
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "artrofibrose anterior focal."
+        },
+        {
+          "letra": "B",
+          "texto": "ruptura recidivante do enxerto."
+        },
+        {
+          "letra": "C",
+          "texto": "cisto no túnel tibial."
+        },
+        {
+          "letra": "D",
+          "texto": "corpo livre osteocondral."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 16
+      }
+    },
+    {
+      "id": "joelho-0470",
+      "tema": "Joelho",
+      "subtemas": [
+        "Imagem do joelho"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Mulher de 38 anos atropelada, com derrame volumoso; AP e perfil convencionais não mostram traço de fratura. Na radiografia em perfil com o feixe horizontal, o nível na bolsa suprapatelar indica",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0470-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 9, Figura 9.28.",
+          "largura": 600,
+          "altura": 595
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "derrame articular simples."
+        },
+        {
+          "letra": "B",
+          "texto": "fratura intra-articular oculta."
+        },
+        {
+          "letra": "C",
+          "texto": "ruptura do tendão do quadríceps."
+        },
+        {
+          "letra": "D",
+          "texto": "bursite pré-patelar traumática."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 17
       }
     }
   ]

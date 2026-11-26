@@ -1,6 +1,6 @@
 ---
 id: rockwood10-imagem-ortopedia
-versao: 1
+versao: 2
 titulo: Imagem em ortopedia
 especialidade: conceitos-basicos
 acesso: gratis
@@ -183,7 +183,7 @@ A DP não é nem T1 nem T2: o contraste vem da diferença de densidade de próto
 
 Campo magnético se mede em tesla (1 T = 10.000 gauss; a Terra tem cerca de 0,5 gauss). Baixo campo é 0,2 a 0,3 T para o Rockwood e 0,3 a 0,7 T para o Campbell; a imagem ortopédica ideal fica entre **1,5 e 3 T**. Campo mais forte dá mais sinal e exame mais curto, e as **bobinas de superfície** aumentam a relação sinal e ruído.
 
-!questoes central=conceitos-basicos-0276
+!questoes central=conceitos-basicos-0276 treino=conceitos-basicos-0446,conceitos-basicos-0447,conceitos-basicos-0449,conceitos-basicos-0451,conceitos-basicos-0452,conceitos-basicos-0453,conceitos-basicos-0458,conceitos-basicos-0459,conceitos-basicos-0460,conceitos-basicos-0461
 conceito: T1 usa TR e TE curtos, T2 usa TR e TE longos; a cortical óssea, pobre em água e gordura, é escura em todas as ponderações; edema é escuro em T1 e claro em T2; fibrocartilagem é escura nas sequências convencionais.
 como: O ENARE R4 2024 pediu a afirmação correta entre trocas de TR e TE das ponderações e o comportamento do osso, do edema medular e da fibrocartilagem em T1 e T2.
 armadilha: Inverter os tempos (T2 com TR e TE curtos), dizer que o edema brilha em T1 ou que a fibrocartilagem fica clara em T2; o osso da alternativa correta é a cortical, porque a medular gordurosa é clara em T1.
@@ -216,6 +216,13 @@ Os tecidos densos e ordenados (cortical, tendão, ligamento, menisco, labro) tê
 | tumor de partes moles inespecífico | igual ao músculo | mais claro que músculo e gordura | regra para a maioria das massas |
 !fim
 
+Veja a regra aplicada num joelho normal (GREENSPAN, cap. 2, Figura 2.38). No T1 (A), a medula gordurosa do fêmur e da tíbia e a gordura de HOFFA são brancas, e tendão patelar, ligamentos e meniscos são pretos. Na densidade de prótons com saturação de gordura (C), a mesma medula fica cinza-escura, e o que brilha passa a ser o líquido e a cartilagem; o tendão e os ligamentos continuam pretos nas três.
+
+!figura 2.38 imagem=conceitos-basicos/greenspan6-2-38-abc.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 2, Figura 2.38. RM sagital do mesmo joelho em três sequências: T1 (A), gradiente-eco ponderado em T2* (B) e densidade de prótons com saturação de gordura (C).
+!fim
+
+
 ## Músculo e cartilagem
 
 A questão que pede o sinal de músculo, cartilagem e tendão em T1 espera **intermediário, intermediário e hipossinal**. O tendão escuro está explícito no Campbell. O músculo intermediário em T1 aparece de modo indireto: a massa de partes moles típica é **isointensa ao músculo em T1** e mais clara que músculo e gordura em T2 (Campbell, p. 177), o que coloca o músculo no meio da escala, entre a gordura clara e a cortical preta. A cartilagem hialina articular também ocupa a faixa intermediária; o The Adult Hip estuda-a com sequências FSE de ponderação intermediária e descreve a degeneração como **hipersinal** com perda da estratificação normal em camadas, e o Campbell lembra que a cartilagem articular e a fisária brilham na maioria das técnicas de gradiente-eco. O labro, por ser fibrocartilagem com pouca água móvel, é **escuro** nas sequências convencionais: triangular, homogeneamente hipointenso e colado à borda acetabular; uma rotura aparece como hipersinal focal na base ou na substância.
@@ -226,7 +233,14 @@ A contusão óssea (edema medular) corresponde, na histologia, a **microfraturas
 
 O traço de fratura aparece como **linha de baixo sinal** em DP ou T2, contornada pela medula gordurosa clara, e é bem visto também no STIR, que ainda mostra o edema ao redor. No T1, o traço pode se perder no meio do edema, porque os dois são escuros. Mesmo assim, no quadril, IWATA encontrou o **T1 coronal com sensibilidade de 100%**, contra 84% do T2 sozinho, e um protocolo abreviado com **STIR coronal e T1 coronal** tem alta sensibilidade e especificidade para fratura, necrose avascular e lesão muscular no paciente com dor no quadril e radiografia normal.
 
-!questoes central=conceitos-basicos-0172 relacionadas=conceitos-basicos-0234
+A contusão do côndilo femoral medial mostra a inversão de sinal na prática (GREENSPAN, cap. 2, Figura 2.39): em T1 (A), é uma mancha cinza-escura mal definida dentro da medula branca; na inversão-recuperação (B), com a gordura apagada, o fundo fica preto e o edema acende. Repare que não há linha de fratura: é edema, e não fratura.
+
+!figura 2.39 imagem=conceitos-basicos/greenspan6-2-39.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 2, Figura 2.39. Contusão óssea do côndilo femoral medial (setas): área de sinal baixo em T1 (A) que se torna sinal alto na sequência de inversão-recuperação com a gordura suprimida (B).
+!fim
+
+
+!questoes central=conceitos-basicos-0172 relacionadas=conceitos-basicos-0234 treino=conceitos-basicos-0444,conceitos-basicos-0445,conceitos-basicos-0457
 conceito: Água tem T1 e T2 longos: escura em T1 e clara em T2; gordura clara em T1; cortical, tendão e ligamento escuros em todas; em T1, músculo e cartilagem ficam na faixa intermediária e o tendão é hipossinal.
 como: O TARO 2024 perguntou o sinal da água nas duas ponderações mais usadas; uma prova de Ortopedia pediu, em T1, o sinal de músculo, cartilagem e tendão normais, nessa ordem.
 armadilha: Achar que a água é clara em T1 porque é clara no T2, ou dar hipersinal à cartilagem em T1 (ela brilha no gradiente-eco e quando degenera).
@@ -266,6 +280,13 @@ O contraste da RM é feito de íons de **gadolínio presos a macromoléculas** c
 
 A **artrografia por RM direta** injeta gadolínio diluído na articulação e distende a cápsula (manguito parcial ou total, labro, ligamentos, menisco operado, lesão osteocondral); a **indireta** dá gadolínio na veia e espera com exercício leve, sem distender a cápsula.
 
+O que o gadolínio acrescenta fica claro num abscesso (GREENSPAN, cap. 24, Figura 24.14). Em T2 (A), a coleção é só uma mancha clara, que poderia ser edema ou fleimão. No T1 após gadolínio (B), o pus não realça e fica escuro, enquanto a parede de tecido de granulação, muito vascularizada, brilha em anel: **realce periférico com centro sem realce é coleção**.
+
+!figura 24.14 imagem=conceitos-basicos/greenspan6-24-14.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 24, Figura 24.14. Abscesso de partes moles no dorso do pé de um diabético: coleção hiperintensa em T2 (A) e, no T1 após gadolínio venoso (B), centro escuro sem realce com parede que realça (setas).
+!fim
+
+
 ## O que pode e o que não pode entrar no magneto
 
 !tabela Segurança na RM (Campbell, cap. 3, quadro Campbell's Concepts, p. 155; Rockwood, cap. 7, seções Magnetic Resonance Imaging e MRI Safety)
@@ -285,6 +306,13 @@ Há uma divergência que merece atenção. O Campbell coloca o **fixador externo
 ## Metal e artefato
 
 O artefato depende do volume, da orientação e do material: o **titânio produz muito menos artefato que o aço inoxidável** (Campbell, p. 155; Rockwood, Fig. 7-9). Com metal, o Rockwood recomenda **1,5 T em vez de 3 T** (a inomogeneidade dobra a 3 T), **spin-eco rápido** em vez de gradiente-eco, **STIR** em vez de saturação química e aumento da largura de banda do receptor (cerca de 60% menos artefato).
+
+O artefato de suscetibilidade tem um aspecto típico (GREENSPAN, cap. 5, Figura 5.102 A): em volta da âncora metálica na cabeça do úmero (seta), um buraco preto sem sinal, maior que o implante, com borda clara de sinal deslocado. Tudo o que estiver dentro desse buraco não pode ser avaliado, e é por isso que se escolhem titânio, spin-eco rápido e STIR.
+
+!figura 5.102 imagem=conceitos-basicos/greenspan6-5-102.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 5, Figura 5.102. Artrorressonância do ombro em T1 com saturação de gordura depois de reparo do manguito: vazio de sinal com borda brilhante na cabeça do úmero, artefato de suscetibilidade de uma âncora de sutura (seta).
+!fim
+
 
 # Ultrassonografia {radar=fundamento}
 
@@ -349,11 +377,18 @@ Os livros diferem um pouco nos tempos (o Rockwood põe a segunda fase nos 5 minu
 
 O Tachdjian (cap. 23, p. 948) dá a chave de leitura na infecção. **Osteomielite**: captação focal aumentada nas **três fases**. **Celulite, abscesso de partes moles ou piomiosite**: captação difusa nas duas primeiras e pouca ou nenhuma na tardia. **Artrite séptica**: difícil, com falso-positivos de 32% e falso-negativos de 30%. A osteomielite pode ser **fria** em cerca de 8% dos casos, quando a pressão intraóssea comprime a microcirculação; esses pacientes estão mais graves, e o valor preditivo positivo da cintilografia fria chegou a 100%. A sensibilidade relatada para osteomielite varia de 54% a 100%, a especificidade de 70% a 90%, e magnificação, colimador pinhole e SPECT elevam a acurácia acima de 90%.
 
+O padrão da celulite está na sequência das três fases (GREENSPAN, cap. 24, Figura 24.9): na primeira (A), mais traçador nos vasos da perna direita; na segunda (B), uma mancha intensa nas partes moles do tornozelo; na terceira (C), duas horas depois, o traçador saiu e o osso não capta. Se a terceira fase também mostrasse foco no osso, o padrão seria de osteomielite.
+
+!figura 24.9 imagem=conceitos-basicos/greenspan6-24-9.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 24, Figura 24.9. Cintilografia óssea de três fases das pernas e tornozelos numa celulite do tornozelo direito: fluxo aumentado (A), pool sanguíneo com captação nas partes moles (B) e fase tardia sem captação óssea (C).
+!fim
+
+
 Na **fratura**, a cintilografia é positiva em **80% em 24 horas e 95% em 72 horas** (MATIN); 90% normalizam em 2 anos. Quando há vários focos, as fases precoces separam o agudo do crônico: a **hiperemia resolve em 4 a 8 semanas**. A fratura por insuficiência do sacro dá o desenho em H, o **sinal de HONDA**.
 
 Na **necrose avascular da cabeça femoral** (The Adult Hip, cap. 24, p. 368 a 370), a área **fotopênica** aparece 7 a 10 dias após a isquemia e depois vira hipercaptação pela revascularização; o **sinal da rosquinha** (centro frio com halo quente) é a fase intermediária. A RM tem sensibilidade perto de 100%, contra 81% a 90% da cintilografia.
 
-!questoes central=conceitos-basicos-0087
+!questoes central=conceitos-basicos-0087 treino=conceitos-basicos-0448
 conceito: Primeira fase é o fluxo (angiograma radionuclídeo), segunda é o pool sanguíneo ou fase tecidual, terceira é a tardia, feita horas depois, quando o difosfonato já se fixou e mostra a atividade osteoblástica.
 como: Uma prova de Ortopedia pediu a afirmação correta sobre a cintilografia com tecnécio, misturando a fase de fluxo com a de distribuição tecidual e a de equilíbrio com o angiograma.
 armadilha: Chamar a fase de equilíbrio de "angiograma" (é a primeira), dar à fase de fluxo a distribuição extracelular (é a segunda) ou dizer que três fases tornam o exame específico.
@@ -385,7 +420,7 @@ O Rockwood resume numa frase: atividade do gálio **maior que** a da cintilograf
 
 O HEBERT, 5ª ed. (cap. 21.7, pé diabético), é mais cético e diverge. Para ele, a cintilografia com tecnécio de três ou quatro fases tem sensibilidade de 91% mas especificidade de **54%**, menor até que a da radiografia (74%); por isso uma cintilografia negativa praticamente exclui osteomielite, e ela mostra o diagnóstico cerca de 2 semanas antes da radiografia. Mas o **acréscimo do gálio "não melhora muito" a especificidade**: o uso sequencial de tecnécio e gálio tem acurácia de apenas **70%** para infecção. Os leucócitos marcados com índio-111 melhoram a especificidade, de 78% a 96%, com resultados conflitantes, e a RM tem sensibilidade de cerca de 100% e especificidade de 81%. O Rockwood e o The Adult Hip ensinam o mecanismo e o critério; o HEBERT lembra que, no pé diabético, o ganho é modesto.
 
-!questoes central=conceitos-basicos-0116 relacionadas=conceitos-basicos-0305
+!questoes central=conceitos-basicos-0116 relacionadas=conceitos-basicos-0305 treino=conceitos-basicos-0450,conceitos-basicos-0454,conceitos-basicos-0455,conceitos-basicos-0456
 conceito: O gálio-67 liga-se à transferrina, acumula onde há fluxo e permeabilidade, é captado por leucócitos e preso pela lactoferrina dos neutrófilos; no estudo combinado, gálio mais intenso que o MDP (ou em outra distribuição) é osteomielite.
 como: O TARO 2023 perguntou quando o estudo combinado MDP e gálio é positivo; o TARO 2006 afirmou que o gálio é mais específico na infecção osteoarticular por ser captado por granulócitos e bactérias.
 armadilha: Achar que MDP negativo com gálio positivo, ou o inverso, "confirma" o diagnóstico; o critério é a intensidade relativa, gálio maior que osso. E repetir que o gálio é muito específico sem lembrar que, no pé diabético, a soma tecnécio e gálio tem acurácia de só 70% (HEBERT).

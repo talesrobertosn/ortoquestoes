@@ -19079,8 +19079,15 @@
       "simulado": true,
       "ano": null,
       "dificuldade": null,
-      "enunciado": "Na radiografia em perfil da coluna cervical após trauma, sugerem lesão subjacente partes moles pré-vertebrais com espessura maior que, respectivamente, na altura de C2 e de C6,",
-      "imagens": [],
+      "enunciado": "Na radiografia em perfil da coluna cervical após trauma (figura abaixo), sugerem lesão subjacente partes moles pré-vertebrais com espessura maior que, respectivamente, na altura de C2 (E) e de C6 (F),",
+      "imagens": [
+        {
+          "arquivo": "coluna/rwa10-48-7.jpeg",
+          "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Figura 48-7. Radiografia em perfil da coluna cervical com as linhas espinolaminar (A), posterior dos corpos (B) e anterior dos corpos (C), as facetas superpostas em paralelogramo (D) e os dois pontos em que se mede a sombra de partes moles pré-vertebral: na altura do corpo de C2 (E) e na do corpo de C6 (F).",
+          "largura": 900,
+          "altura": 1529
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -19405,7 +19412,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na fratura de JEFFERSON, a soma do deslocamento das massas laterais de C1 em relação às de C2, na incidência transoral, acima da qual se infere ruptura do ligamento transverso é de cerca de",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "coluna/greenspan6-11-25.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 11, Figura 11.25. Radiografia transoral (boca aberta) de um homem de 19 anos com fratura de JEFFERSON: as setas marcam as bordas das massas laterais de C1, deslocadas para fora em relação às de C2 dos dois lados.",
+          "largura": 747,
+          "altura": 714
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -19916,7 +19930,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na radiografia da fratura toracolombar, a combinação associada a lesão instável é perda de altura do corpo vertebral, cifose e translação maiores que, respectivamente,",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "coluna/rwa10-49-8.jpeg",
+          "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 49, Figura 49-8. Como medir a deformidade da fratura toracolombar no perfil: a cifose pelo ângulo de COBB entre o platô superior da vértebra de cima (T12) e o platô inferior da de baixo (L2), nas linhas tracejadas; a perda de altura, comparando as margens anterior (A) e posterior (B) do corpo fraturado com a média das vértebras vizinhas, pelas fórmulas do pé da figura.",
+          "largura": 1146,
+          "altura": 1464
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -23061,7 +23082,14 @@
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na radiografia panorâmica da escoliose, a coluna é considerada descompensada no plano coronal quando a distância de C7 ao centro da pelve passa de",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "coluna/tach6-9-17.jpeg",
+          "legenda": "Fonte: Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9, Fig. 9.17, p. 145. Equilíbrio coronal: o prumo que desce do processo espinhoso de C7 (x) é comparado com a linha do centro do sacro; a distância horizontal entre os dois mede quanto o tronco está deslocado sobre a pelve.",
+          "largura": 636,
+          "altura": 1062
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -24065,6 +24093,771 @@
         "arquivo": "Campbell14_cap37_vias_coluna.pdf",
         "pagina": 1645,
         "numeroOriginal": 20
+      }
+    },
+    {
+      "id": "coluna-0627",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na radiografia anteroposterior focalizada da coluna lombar, o contorno das faces inferiores de L3 e L4 forma o arco de CUPIDO. O desaparecimento desse contorno sugere",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0627-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.52.",
+          "largura": 600,
+          "altura": 658
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fratura por compressão do corpo."
+        },
+        {
+          "letra": "B",
+          "texto": "espondilólise da parte interarticular."
+        },
+        {
+          "letra": "C",
+          "texto": "hérnia discal posterior."
+        },
+        {
+          "letra": "D",
+          "texto": "vértebra limbo anterior."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 1
+      }
+    },
+    {
+      "id": "coluna-0628",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 28 anos com lombalgia. A radiografia oblíqua mostra uma fenda no pescoço do cão escocês de L4. A estrutura interrompida é",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0628-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.84.",
+          "largura": 600,
+          "altura": 664
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o processo articular superior."
+        },
+        {
+          "letra": "B",
+          "texto": "o pedículo vertebral."
+        },
+        {
+          "letra": "C",
+          "texto": "a parte interarticular."
+        },
+        {
+          "letra": "D",
+          "texto": "o processo transverso."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 2
+      }
+    },
+    {
+      "id": "coluna-0629",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Jovem com lombalgia. A radiografia anteroposterior da junção lombossacra mostra densidades curvilíneas sobre o sacro (setas). O achado indica",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0629-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.86.",
+          "largura": 600,
+          "altura": 618
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "vértebra de transição lombossacra."
+        },
+        {
+          "letra": "B",
+          "texto": "espondilolistese grave de L5 sobre S1."
+        },
+        {
+          "letra": "C",
+          "texto": "fratura transversa do sacro."
+        },
+        {
+          "letra": "D",
+          "texto": "fusão óssea bilateral das sacroilíacas."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 3
+      }
+    },
+    {
+      "id": "coluna-0630",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Mulher de 64 anos com deslizamento de L4 sobre L5 no perfil. No esquema, as linhas tracejadas marcam a face dorsal dos processos espinhosos, com ressalto abaixo da vértebra deslizada. O diagnóstico é",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0630-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.82.",
+          "largura": 600,
+          "altura": 558
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "espondilolistese ístmica."
+        },
+        {
+          "letra": "B",
+          "texto": "espondilólise sem deslizamento."
+        },
+        {
+          "letra": "C",
+          "texto": "fratura-luxação por cisalhamento."
+        },
+        {
+          "letra": "D",
+          "texto": "espondilolistese degenerativa."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 4
+      }
+    },
+    {
+      "id": "coluna-0631",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Mulher de 36 anos em colisão de carro usando só o cinto abdominal. A TC sagital reformatada mostra traço horizontal em L2 (setas), do corpo ao processo espinhoso. O mecanismo é",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0631-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.72.",
+          "largura": 600,
+          "altura": 867
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "flexão e distração sobre o cinto."
+        },
+        {
+          "letra": "B",
+          "texto": "compressão axial com explosão do corpo."
+        },
+        {
+          "letra": "C",
+          "texto": "hiperextensão com cisalhamento."
+        },
+        {
+          "letra": "D",
+          "texto": "flexão lateral com rotação."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 5
+      }
+    },
+    {
+      "id": "coluna-0632",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem após queda de altura. Na RM sagital ponderada em T2, a vértebra acima de L1 está achatada e sua parede posterior indenta a face ventral do saco dural. Trata-se de fratura",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0632-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.68.",
+          "largura": 600,
+          "altura": 580
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "por compressão, da coluna anterior."
+        },
+        {
+          "letra": "B",
+          "texto": "de CHANCE, das colunas média e posterior."
+        },
+        {
+          "letra": "C",
+          "texto": "explosiva, das colunas anterior e média."
+        },
+        {
+          "letra": "D",
+          "texto": "fratura-luxação, das três colunas."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 6
+      }
+    },
+    {
+      "id": "coluna-0633",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Mulher de 48 anos caiu de uma escada. Na radiografia anteroposterior da coluna torácica, com perda de altura de T8, as setas laterais indicam",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0633-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.62.",
+          "largura": 600,
+          "altura": 813
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "aumento da distância interpedicular."
+        },
+        {
+          "letra": "B",
+          "texto": "fratura dos processos transversos."
+        },
+        {
+          "letra": "C",
+          "texto": "osteófitos marginais anteriores."
+        },
+        {
+          "letra": "D",
+          "texto": "abaulamento da linha paraespinal."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 7
+      }
+    },
+    {
+      "id": "coluna-0634",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Mulher de 39 anos com dor radicular; a radiografia mostra fragmento triangular no canto anterior de um corpo lombar. Na RM sagital, a seta aberta indica",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0634-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.92.",
+          "largura": 600,
+          "altura": 583
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fratura aguda por avulsão do canto."
+        },
+        {
+          "letra": "B",
+          "texto": "hérnia discal intravertebral anterior."
+        },
+        {
+          "letra": "C",
+          "texto": "nódulo de SCHMORL central."
+        },
+        {
+          "letra": "D",
+          "texto": "espondilodiscite com destruição do canto."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 8
+      }
+    },
+    {
+      "id": "coluna-0635",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menina de 5 anos fez radiografia lateral da coluna lombar após queda leve. As pequenas densidades nos cantos dos corpos vertebrais correspondem a",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0635-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.93.",
+          "largura": 600,
+          "altura": 983
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ossificação normal da apófise do anel."
+        },
+        {
+          "letra": "B",
+          "texto": "vértebras limbo em vários níveis."
+        },
+        {
+          "letra": "C",
+          "texto": "fraturas por avulsão dos cantos anteriores."
+        },
+        {
+          "letra": "D",
+          "texto": "nódulos de SCHMORL nos cantos anteriores."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 9
+      }
+    },
+    {
+      "id": "coluna-0636",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 28 anos com lombalgia há meses. A RM sagital lombar mostra nódulos intravertebrais em todos os cinco corpos, platôs irregulares e discos estreitados. O diagnóstico é",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0636-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.97.",
+          "largura": 600,
+          "altura": 1202
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osteoporose com nódulos de SCHMORL."
+        },
+        {
+          "letra": "B",
+          "texto": "vértebras limbo em vários níveis."
+        },
+        {
+          "letra": "C",
+          "texto": "doença de SCHEUERMANN lombar."
+        },
+        {
+          "letra": "D",
+          "texto": "fraturas explosivas em vários níveis."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 10
+      }
+    },
+    {
+      "id": "coluna-0637",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 59 anos com lombalgia. Na RM sagital ponderada em T2, a seta em L4-L5 mostra material discal",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0637-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.104.",
+          "largura": 600,
+          "altura": 741
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "migrado e livre no canal raquiano."
+        },
+        {
+          "letra": "B",
+          "texto": "herniado para dentro do corpo."
+        },
+        {
+          "letra": "C",
+          "texto": "herniado à frente, sob o ligamento anterior."
+        },
+        {
+          "letra": "D",
+          "texto": "contido sob o ligamento posterior."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 11
+      }
+    },
+    {
+      "id": "coluna-0638",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 62 anos bateu o rosto no para-brisa num acidente de carro. O perfil cervical mostra traço nos pedículos de C2 (setas) e subluxação de C2-C3. O mecanismo é",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0638-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.32.",
+          "largura": 600,
+          "altura": 1065
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "flexão com rotação."
+        },
+        {
+          "letra": "B",
+          "texto": "hiperextensão com distração."
+        },
+        {
+          "letra": "C",
+          "texto": "compressão axial no vértice da cabeça."
+        },
+        {
+          "letra": "D",
+          "texto": "flexão com distração."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 12
+      }
+    },
+    {
+      "id": "coluna-0639",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 37 anos caiu e hiperestendeu o pescoço. O perfil mostra fragmento triangular anteroinferior em C3, sem subluxação, com as linhas vertebral posterior e espinolaminar contínuas. A lesão é",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0639-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.40.",
+          "largura": 600,
+          "altura": 777
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "gota de lágrima por extensão, estável."
+        },
+        {
+          "letra": "B",
+          "texto": "gota de lágrima por flexão, instável."
+        },
+        {
+          "letra": "C",
+          "texto": "explosiva com retropulsão, instável."
+        },
+        {
+          "letra": "D",
+          "texto": "avulsão do processo espinhoso, estável."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 13
+      }
+    },
+    {
+      "id": "coluna-0640",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 53 anos com paraplegia aguda após acidente. Na RM sagital ponderada em T2 da coluna cervical, a seta indica",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0640-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.48.",
+          "largura": 600,
+          "altura": 576
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "hérnia discal extrusa posterior."
+        },
+        {
+          "letra": "B",
+          "texto": "contusão intramedular da medula."
+        },
+        {
+          "letra": "C",
+          "texto": "hematoma epidural posterior."
+        },
+        {
+          "letra": "D",
+          "texto": "hipertrofia do ligamento amarelo."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 14
+      }
+    },
+    {
+      "id": "coluna-0641",
+      "tema": "Coluna",
+      "subtemas": [
+        "Imagem da coluna"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Homem de 63 anos com dor cervical três semanas após acidente; a TC mostrou gota de lágrima em C2. Na RM sagital ponderada em T2 (à esquerda), as setas indicam",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0641-1.jpeg",
+          "legenda": "Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), capítulo 11, Figura 11.40.",
+          "largura": 790,
+          "altura": 550
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "hematoma epidural ventral."
+        },
+        {
+          "letra": "B",
+          "texto": "edema de partes moles pré-vertebrais."
+        },
+        {
+          "letra": "C",
+          "texto": "ruptura do ligamento longitudinal posterior."
+        },
+        {
+          "letra": "D",
+          "texto": "fragmento discal extruso."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Greenspan_Radiologia_Ortopedica_6ed.pdf",
+        "pagina": null,
+        "numeroOriginal": 15
       }
     }
   ]

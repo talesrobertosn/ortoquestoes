@@ -1301,7 +1301,7 @@
   },
   {
    "id": "callaghan-imagem-quadril",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Imagem do quadril",
    "especialidade": "quadril",
    "livro": "The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)",
@@ -1309,7 +1309,7 @@
    "capitulo": "Capítulo 23 · Radiographic Evaluation of the Hip",
    "resumo": "AP com rotação interna de 15 graus (erro mais comum = rotação externa); Dunn em rotação neutra, 20 de abdução e 45 ou 90 de flexão; falso perfil de LEQUESNE a 65 graus; inlet e outlet com feixe caudal e cranial (outlet = desvio vertical); JUDET: oblíqua obturatriz (anterior) = coluna anterior e rebordo posterior, ilíaca (posterior) = coluna posterior e rebordo anterior; lágrima e linha ilioisquiática superpostas, dissociação = superfície quadrilátera; WIBERG menor que 20 displasia e maior que 40 sobrecobertura; TÖNNIS maior que 10 displasia; alfa maior que 55 = came; cruzamento + parede posterior + espinha isquiática = retroversão verdadeira; protrusão além da linha ilioisquiática (OTTO, mulheres, bilateral); KELLGREN-LAWRENCE 0 a 4 e TÖNNIS 0 a 3 (osteotomia periacetabular só em TÖNNIS 0 ou 1); RM sem contraste para fratura oculta e necrose (dupla linha), osteoporose transitória com edema difuso; cintilografia fotopênica em 7 a 10 dias; RM com metal a 1,5 T, banda larga e inversão-recuperação.",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -1419,17 +1419,26 @@
    ],
    "treino": [
     "quadril-0604",
+    "quadril-0755",
+    "quadril-0756",
+    "quadril-0759",
     "quadril-0605",
+    "quadril-0753",
+    "quadril-0754",
     "quadril-0270",
     "quadril-0305",
     "quadril-0306",
     "quadril-0612",
     "quadril-0611",
+    "quadril-0761",
     "quadril-0307",
     "quadril-0324",
     "quadril-0607",
     "quadril-0608",
     "quadril-0609",
+    "quadril-0760",
+    "quadril-0762",
+    "quadril-0765",
     "quadril-0615",
     "quadril-0616",
     "quadril-0619",
@@ -1438,6 +1447,10 @@
     "quadril-0614",
     "quadril-0617",
     "quadril-0618",
+    "quadril-0757",
+    "quadril-0758",
+    "quadril-0763",
+    "quadril-0764",
     "quadril-0622",
     "quadril-0623",
     "quadril-0624",
@@ -6382,7 +6395,7 @@
   },
   {
    "id": "campbell15-imagem-coluna",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Imagem da coluna",
    "especialidade": "coluna",
    "livro": "Campbell's Operative Orthopaedics",
@@ -6390,7 +6403,7 @@
    "capitulo": "Capítulo 43 · Anatomy of the Spine, com os capítulos 38, 39, 40, 41, 42, 45, 46, 47, 48 e 49",
    "resumo": "COBB nas faces superior da terminal superior e inferior da terminal inferior; NASH e MOE pelo pedículo convexo; RISSER 0 a 5, com a trirradiada fechando depois do pico de crescimento e antes do RISSER 1; LENKE com bending, modificador lombar pela CSVL e sagital de 10 a 40 graus; PI fixa (52 ± 10 graus) = PT + SS, PT acima de 20 graus é retroversão compensatória e TPA = T1SPI + PT; MEYERDING III = 50% a 75%; CHAMBERLAIN do palato ao opístio, McGREGOR com 4,5 mm, WACKENHEIM tangente ao dente, POWERS acima de 1, HARRIS abaixo de 12 mm, ADI até 3 mm no adulto e até 4 a 5 mm na criança; SWISCHUK separa a pseudossubluxação de C2-C3; SCIWORA com radiografia normal e déficit medular; canadense manda imagem aos 65 anos; partes moles acima de 6 mm em C2 e 22 mm em C6; subaxial instável com mais de 11 graus ou 3,5 mm; BIFFL I com antitrombótico e nova imagem em 7 a 10 dias; toracolombar instável com 50%, 30 graus e 2,5 mm; interpedicular alargada na explosão; RM com MODIC I a III, tuberculose poupando o disco e metástase com pedículo tomado e disco íntegro.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6492,14 +6505,29 @@
     "coluna-0379"
    ],
    "treino": [
+    "coluna-0634",
+    "coluna-0635",
+    "coluna-0637",
+    "coluna-0636",
+    "coluna-0630",
+    "coluna-0628",
+    "coluna-0629",
     "coluna-0515",
     "coluna-0519",
+    "coluna-0638",
     "coluna-0511",
     "coluna-0517",
     "coluna-0516",
+    "coluna-0639",
+    "coluna-0640",
+    "coluna-0641",
     "coluna-0514",
     "coluna-0534",
-    "coluna-0535"
+    "coluna-0535",
+    "coluna-0627",
+    "coluna-0631",
+    "coluna-0632",
+    "coluna-0633"
    ],
    "subtemas": [
     "Imagem da coluna"
@@ -6507,7 +6535,7 @@
   },
   {
    "id": "campbell15-imagem-joelho",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Imagem do joelho",
    "especialidade": "joelho",
    "livro": "Campbell's Operative Orthopaedics",
@@ -6515,7 +6543,7 @@
    "capitulo": "Capítulo 10 · Knee Preservation Surgery (radiografia da artrose, eixo e calcificações para-articulares), lido com os capítulos de imagem avançada, lesões do joelho e luxações do mesmo livro",
    "resumo": "ROSENBERG (45 graus com carga, PA, 10 graus podal); MERCHANT e LAURIN; radiografia não confirma menisco, exclui o que imita; RM detecta mas não prevê o reparo; água escura em T1 e clara em T2; HUMPHRY anterior e WRISBERG posterior ao LCP; hiato do poplíteo; SEGOND = LCA, arqueado = canto posterolateral; contusões do LCA e da luxação patelar; varo 2,7 mm = LCL isolado; INSALL-SALVATI > 1,2; cruzamento = displasia troclear; TA-GT > 20 mm; AHLBACK III com platô posterior intacto.",
    "acesso": "gratis",
-   "minutos": 33,
+   "minutos": 34,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6616,14 +6644,32 @@
     "joelho-0338",
     "joelho-0318"
    ],
-   "treino": [],
+   "treino": [
+    "joelho-0454",
+    "joelho-0456",
+    "joelho-0457",
+    "joelho-0464",
+    "joelho-0455",
+    "joelho-0458",
+    "joelho-0461",
+    "joelho-0470",
+    "joelho-0459",
+    "joelho-0460",
+    "joelho-0469",
+    "joelho-0466",
+    "joelho-0467",
+    "joelho-0468",
+    "joelho-0462",
+    "joelho-0463",
+    "joelho-0465"
+   ],
    "subtemas": [
     "Imagem do joelho"
    ]
   },
   {
    "id": "campbell15-imagem-ombro-cotovelo",
-   "versao": 4,
+   "versao": 5,
    "titulo": "Imagem do ombro e cotovelo",
    "especialidade": "ombro-cotovelo",
    "livro": "Campbell's Operative Orthopaedics",
@@ -6631,7 +6677,7 @@
    "capitulo": "Capítulo 3 · Advanced Imaging in Orthopaedics, com os capítulos 13 · Shoulder Arthroplasty, 51 · Shoulder and Elbow Injuries, 52 · Recurrent Dislocations, 53 · Traumatic Disorders, 57 · Arthroscopy of the Upper Extremity e 65 · Acute Dislocations",
    "resumo": "Série do ombro (AP, GRASHEY a 30 graus, Y a 60 graus, axilar; VELPEAU sem abdução; luxação posterior perdida em 73% sem axilar ou Y); STRYKER (10 graus cefálico) para HILL-SACHS e coracoide; WEST POINT (prono, 25 e 25 graus) para o BANKART ósseo; GARTH 45 graus caudal; ZANCA e axilar (tipo IV) na acromioclavicular; HEINIG e TC na esternoclavicular; sourcil, intervalo < 7 e < 5 mm, HAMADA, barba de bode e subluxação posterior; TC para osteopenia e perda óssea; RM axial para o lábio anterior, coronal oblíquo para o manguito; ELLMAN; coxins, linhas do cotovelo e FABS; ângulo mágico do supraespinal (some no T2).",
    "acesso": "gratis",
-   "minutos": 39,
+   "minutos": 41,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6727,14 +6773,32 @@
     "ombro-cotovelo-0520",
     "ombro-cotovelo-0370"
    ],
-   "treino": [],
+   "treino": [
+    "ombro-cotovelo-0792",
+    "ombro-cotovelo-0799",
+    "ombro-cotovelo-0791",
+    "ombro-cotovelo-0788",
+    "ombro-cotovelo-0790",
+    "ombro-cotovelo-0793",
+    "ombro-cotovelo-0796",
+    "ombro-cotovelo-0789",
+    "ombro-cotovelo-0794",
+    "ombro-cotovelo-0797",
+    "ombro-cotovelo-0795",
+    "ombro-cotovelo-0798",
+    "ombro-cotovelo-0800",
+    "ombro-cotovelo-0801",
+    "ombro-cotovelo-0802",
+    "ombro-cotovelo-0803",
+    "ombro-cotovelo-0804"
+   ],
    "subtemas": [
     "Imagem do ombro e cotovelo"
    ]
   },
   {
    "id": "campbell15-imagem-pe-tornozelo",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Imagem do pé e tornozelo",
    "especialidade": "pe-tornozelo",
    "livro": "Campbell's Operative Orthopaedics",
@@ -6742,7 +6806,7 @@
    "capitulo": "Capítulo 93 · Fractures and Dislocations of the Foot",
    "resumo": "Radiografia do pé sempre com carga; KITE (talocalcâneo) aumenta no plano valgo (AP 20 a 40°) e tende a zero no cavo e no pé torto (varo, paralelismo); MEARY é tálus com primeiro metatarso no perfil, normal 0°; pitch 15 a 25° (SIZÍNIO) ou 18 a 32° (Campbell); hálux normal até 15° e intermetatarsal até 9°; calcâneo com cinco incidências (perfil, HARRIS, AP, oblíqua e BRODEN em rotação interna de 40° com raio cefálico de 10 a 15°), BÖHLER 20 a 40° que cai e GISSANE 120 a 140° que sobe, BÖHLER normal com faceta dividida (dupla densidade); CANALE com pé pronado 15° e tubo a 75°; sinal de HAWKINS em 6 a 8 semanas exclui necrose; estresse do deltoide em supinação e rotação externa; BRODEN em inversão para a subtalar; nariz de tamanduá no perfil e oblíqua a 45° na coalizão calcaneonavicular; tálus vertical não reduz em flexão plantar; EICHENHOLTZ 1 = destruição com edema e calor.",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6833,7 +6897,22 @@
     "pe-tornozelo-0177",
     "pe-tornozelo-0099"
    ],
-   "treino": [],
+   "treino": [
+    "pe-tornozelo-0451",
+    "pe-tornozelo-0452",
+    "pe-tornozelo-0453",
+    "pe-tornozelo-0454",
+    "pe-tornozelo-0455",
+    "pe-tornozelo-0456",
+    "pe-tornozelo-0458",
+    "pe-tornozelo-0462",
+    "pe-tornozelo-0463",
+    "pe-tornozelo-0464",
+    "pe-tornozelo-0461",
+    "pe-tornozelo-0457",
+    "pe-tornozelo-0459",
+    "pe-tornozelo-0460"
+   ],
    "subtemas": [
     "Imagem do pé e tornozelo"
    ]
@@ -14536,7 +14615,7 @@
   },
   {
    "id": "green-imagem-mao-punho",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Imagem da mão e do punho",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
@@ -14544,7 +14623,7 @@
    "capitulo": "Capítulo 15 · Distal Radius Fractures (com os capítulos 7, 8, 11, 12, 13, 14, 16, 41 e 55)",
    "resumo": "PA com 10° de ulnar para radial para o SL; GILULA; TERRY THOMAS > 5 mm; SL 30 a 60°, > 80° = ruptura; LC e RL 0 ± 15°; altura carpal ÷ 3º metacarpo = 0,54; gaivota na LTq; inclinação radial 23°, palmar 11°; lágrima = projeção volar da faceta do semilunar, 70°; distância AP 18 a 20 mm; preensão pronada aumenta a variância; 25% das fraturas do escafoide ocultas, RM é o melhor exame; BREWERTON a 65° e 15° de ulnar para radial; ROBERT e EATON; pisiforme ossifica por último.",
    "acesso": "gratis",
-   "minutos": 46,
+   "minutos": 47,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14652,8 +14731,12 @@
     "mao-0677"
    ],
    "treino": [
+    "mao-3889",
     "mao-2465",
+    "mao-3884",
     "mao-2293",
+    "mao-3895",
+    "mao-3893",
     "mao-2309",
     "mao-2459",
     "mao-2461",
@@ -14663,8 +14746,16 @@
     "mao-2042",
     "mao-1778",
     "mao-2046",
+    "mao-3887",
+    "mao-3888",
     "mao-2545",
     "mao-1781",
+    "mao-3886",
+    "mao-3885",
+    "mao-3890",
+    "mao-3891",
+    "mao-3892",
+    "mao-3894",
     "mao-1698",
     "mao-2029",
     "mao-2034",
@@ -28365,7 +28456,7 @@
   },
   {
    "id": "rockwood10-imagem-ortopedia",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Imagem em ortopedia",
    "especialidade": "conceitos-basicos",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -28373,7 +28464,7 @@
    "capitulo": "Capítulo 7 · Imaging Considerations in Orthopaedic Trauma",
    "resumo": "Resolução espacial (radiografia > TC > RM > medicina nuclear) e de contraste (RM); gray x sievert, determinístico x estocástico, ALARA; incidências do quadril e da pelve; RM (T1 com TR e TE curtos, T2 com TR e TE longos; água escura em T1 e clara em T2; cortical, tendão e ligamento escuros em todas; STIR x saturação química; contraindicações; gadolínio); ultrassonografia; cintilografia com 99mTc-MDP em três fases (fluxo, pool, tardia osteoblástica), gálio-67 (positivo quando supera o MDP), leucócitos com coloide, FDG-PET; DEXA; exame de escolha por situação.",
    "acesso": "gratis",
-   "minutos": 37,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -28459,7 +28550,26 @@
     "conceitos-basicos-0116",
     "conceitos-basicos-0305"
    ],
-   "treino": [],
+   "treino": [
+    "conceitos-basicos-0446",
+    "conceitos-basicos-0447",
+    "conceitos-basicos-0449",
+    "conceitos-basicos-0451",
+    "conceitos-basicos-0452",
+    "conceitos-basicos-0453",
+    "conceitos-basicos-0458",
+    "conceitos-basicos-0459",
+    "conceitos-basicos-0460",
+    "conceitos-basicos-0461",
+    "conceitos-basicos-0444",
+    "conceitos-basicos-0445",
+    "conceitos-basicos-0457",
+    "conceitos-basicos-0448",
+    "conceitos-basicos-0450",
+    "conceitos-basicos-0454",
+    "conceitos-basicos-0455",
+    "conceitos-basicos-0456"
+   ],
    "subtemas": [
     "Imagem em ortopedia"
    ]

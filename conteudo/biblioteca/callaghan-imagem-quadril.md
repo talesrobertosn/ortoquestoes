@@ -1,6 +1,6 @@
 ---
 id: callaghan-imagem-quadril
-versao: 2
+versao: 3
 titulo: Imagem do quadril
 especialidade: quadril
 acesso: gratis
@@ -58,7 +58,7 @@ O falso perfil é um perfil do acetábulo: pelve **rodada 65 graus** a partir do
 | Falso perfil | pelve a 65 graus, pé paralelo ao chassi | cobertura anterior (LEQUESNE) e espaço articular posterior |
 !fim
 
-!questoes treino=quadril-0604
+!questoes treino=quadril-0604,quadril-0755,quadril-0756,quadril-0759
 conceito: Sem trauma, o AP do quadril é feito com rotação interna de cerca de 15 graus, que compensa a anteversão e alonga o colo; o erro de posição mais comum é a rotação externa, em que o trocânter maior cobre o colo e o menor aparece de perfil; o DUNN usa rotação neutra, 20 graus de abdução e 45 ou 90 de flexão; na suspeita de fratura, o perfil é o cross-table.
 como: O Fellowship de Quadril pediu a afirmação certa sobre a técnica das radiografias de rotina segundo CALLAGHAN, trocando o efeito da rotação externa, os números do DUNN e o perfil indicado na fratura.
 armadilha: Atribuir à rotação externa o alongamento do colo (é a interna), inverter flexão e abdução do DUNN ou indicar o perfil de rã, que exige flexão, abdução e rotação externa, no paciente com fratura.
@@ -92,7 +92,7 @@ Como cada oblíqua pega regiões dos **dois** acetábulos, as duas são necessá
 | Oblíqua ilíaca (posterior, alar) | hemipelve inclinada 45 graus para longe do feixe; cóccix sobre a cabeça contralateral | asa do ilíaco, incisuras, borda posterior do inominado (coluna posterior), rebordo anterior |
 !fim
 
-!questoes central=quadril-0516 relacionadas=quadril-0122,quadril-0535 treino=quadril-0605
+!questoes central=quadril-0516 relacionadas=quadril-0122,quadril-0535 treino=quadril-0605,quadril-0753,quadril-0754
 conceito: O outlet (feixe cranial) é a incidência do desvio vertical da hemipelve, e o inlet (feixe caudal), a do desvio rotacional; nas duas muda o feixe, não o paciente. Nas oblíquas de JUDET, a ilíaca mostra a coluna posterior (borda posterior do inominado) e o rebordo anterior; a obturatriz mostra a coluna anterior e o rebordo posterior; são necessárias as duas.
 como: O ENARE R4 2025 pediu a incidência que mais contribui para o diagnóstico do desvio vertical (outlet, contra inlet, AP, perfil do sacro e oblíqua). Uma prova da SBOT-SP, sem ano, perguntou o que se vê na oblíqua do ilíaco (borda posterior do osso inominado). A SES-DF 2022 julgou que inlet e outlet completam o AP e são fáceis de fazer sem mobilizar o paciente. O Fellowship pediu a anatomia das oblíquas segundo CALLAGHAN.
 armadilha: Inlet para desvio vertical (ele mostra rotação); oblíqua ilíaca mostrando a borda posterior do acetábulo (ela mostra o rebordo anterior; a borda posterior que aparece é a do osso inominado); achar que uma oblíqua só basta para os dois lados.
@@ -210,6 +210,12 @@ alerta: Em `quadril-0178`, o Campbell (cap. 4, p. 246) cita artrite reumatoide e
 
 No AP de bacia, o rebordo anterior normal corre **medial** ao posterior e os dois convergem no **canto superolateral** (Campbell, cap. 7, p. 360; HEBERT). Se o contorno anterior **cruza o posterior abaixo** desse canto, há o **sinal do cruzamento** (figura de oito): a parte alta do rebordo anterior está lateral demais. O CALLAGHAN (cap. 23, p. 356 e 357) o chama de achado **relativamente específico** no AP otimizado. Inclinação e rotação produzem cruzamentos falsos, e a **espinha ilíaca anteroinferior** proeminente pode simular o sinal com versão normal (Campbell).
 
+O GREENSPAN (cap. 13, Figura 13.12) desenha o sinal no próprio AP: siga a linha amarela (rebordo posterior) e a vermelha (rebordo anterior). No quadril retrovertido (A), a anterior cruza a posterior antes do canto superolateral, e a posterior fica medial a ela no alto; no normal (B), as duas só se encontram lá em cima, com a posterior sempre lateral.
+
+!figura 13.12 imagem=quadril/greenspan6-13-12.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 13, Figura 13.12. AP do quadril com o contorno dos rebordos acetabulares traçado: em A, o anterior (vermelho) cruza o posterior (amarelo), o sinal do cruzamento da retroversão no impacto tipo pinça; em B, quadril normal sem cruzamento.
+!fim
+
 ## O que separa a sobrecobertura anterior da retroversão verdadeira
 
 O cruzamento sozinho tem duas explicações (Campbell, cap. 7, p. 360):
@@ -234,7 +240,7 @@ O CALLAGHAN (cap. 23, p. 357) acrescenta que o **os acetabuli** tem as mesmas im
 | Os acetabuli anterossuperior | ossículo no rebordo | retroversão adquirida, mesmas implicações da pinça |
 !fim
 
-!questoes central=quadril-0175 treino=quadril-0611
+!questoes central=quadril-0175 treino=quadril-0611,quadril-0761
 conceito: O cruzamento sozinho pode ser sobrecobertura anterior; acompanhado do sinal da parede posterior e da espinha isquiática proeminente, indica retroversão verdadeira de todo o acetábulo; o os acetabuli pode causar retroversão adquirida com cruzamento.
 como: A SBOT-SP, sem ano, mostrou um AP do quadril com o sinal radiográfico e pediu o que ele indica (retroversão verdadeira, contra sobrecobertura posterior, sobrecobertura anterior isolada e retroversão global). O Fellowship mostrou um os acetabuli e pediu a afirmação certa segundo CALLAGHAN.
 armadilha: Dizer que o cruzamento se avalia no DUNN (é no AP verdadeiro) ou que é a sobreposição do rebordo posterior sobre o anterior (é o anterior que cruza o posterior).
@@ -248,6 +254,12 @@ alerta: A imagem de `quadril-0175` tem baixa resolução; pelo gabarito, o sinal
 No impacto do tipo **came**, a junção cabeça-colo tem um contorno **anterolateral** anormal, uma saliência que entra no acetábulo durante a flexão (The Adult Hip, cap. 23, p. 355 e 356). DDQ e LEGG-CALVÉ-PERTHES predispõem; a epifisiólise oculta também, porque o escorregamento posteromedial da epífise deixa o colo anterior proeminente (p. 359). A esfericidade e o offset se avaliam no **perfil e no DUNN**, e o DUNN padronizado serve para medir o **ângulo alfa** e mostrar a **fosseta de herniação sinovial**. No AP, o came aparece como achatamento da junção lateral, a deformidade em **cabo de pistola** (pistol grip) (Campbell, cap. 7, p. 362).
 
 O **ângulo alfa** é o ângulo entre o eixo do colo (do centro do colo ao centro da cabeça) e a linha do centro da cabeça ao ponto da junção anterior em que o contorno deixa de ser esférico (Campbell, p. 361). O Campbell considera **maior que 55 a 60 graus** compatível com came; o HEBERT, **maior que 55**, lembrando que o ângulo foi descrito na RM axial e extrapolado para a radiografia. O **offset cabeça-colo anterior** é a distância entre duas paralelas ao eixo do colo, uma tangente à face anterior do colo e outra à da cabeça, no cross-table com 10 graus de rotação interna; a **razão de offset** divide essa distância pelo diâmetro da cabeça (Campbell, p. 361). Quanto menor o offset, mais a cabeça se confunde com o colo e mais provável o impacto. A esfericidade pode ser medida pelo gabarito de MOSES: a epífise que passa **mais de 2 mm** além do círculo é anesférica, e ela deve ser julgada no AP e no perfil, porque pode ser esférica num e não no outro (HEBERT).
+
+Na artro-RM radial, o GREENSPAN (cap. 13, Figura 13.11) mostra o came e o estrago que ele faz: olhe a saliência óssea na transição cabeça-colo (A), a lesão fibro-óssea nesse mesmo ponto (B) e, nos outros pacientes, a ruptura do lábio anterossuperior (C) e a delaminação labral (D). A seta aponta sempre para a região anterossuperior, onde a junção proeminente entra no acetábulo na flexão.
+
+!figura 13.11 imagem=quadril/greenspan6-13-11.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 13, Figura 13.11. Artro-RM radial no impacto tipo came: abaulamento ósseo da junção cabeça-colo (A), lesão fibro-óssea anterossuperior (B), ruptura do lábio anterossuperior (C) e delaminação labral (D), sempre na seta.
+!fim
 
 ## As trabéculas do colo: WARD e SINGH
 
@@ -275,6 +287,12 @@ alerta: O arco de ADAMS (`trauma-0439`) não é descrito nos livros conferidos; 
 Os sinais da artrose do quadril são **estreitamento do espaço articular, cistos subcondrais, esclerose subcondral e osteófitos** (The Adult Hip, cap. 23, p. 360). O HEBERT (cap. 10) explica a sequência: o estreitamento costuma começar na porção **inferomedial** e depois envolve toda a articulação; a esclerose aparece onde a cartilagem afinou; os cistos, nas áreas de maior estresse; e o primeiro osteófito a se formar é o **inferomedial**.
 
 A direção da migração da cabeça diferencia as causas. Na **artrose avançada**, a cabeça migra **superolateralmente**; na **artrite inflamatória** e em parte das artroses secundárias, migra **medialmente**, produzindo coxa profunda ou protrusão (The Adult Hip, cap. 23, p. 360). A artrite reumatoide mostra osteoporose difusa, **perda simétrica e bilateral** da cartilagem e coxa profunda sem os outros sinais degenerativos; erosões são raras e marginais (fossa acetabular, junção cabeça-colo). As espondiloartropatias soronegativas começam igual, com perda difusa e coxa profunda; erosões, cistos e esclerose só chegam com a artrose secundária.
+
+O GREENSPAN (cap. 13, Figura 13.4) põe as três direções lado a lado: em A, a cabeça sobe e vai para fora (superolateral, a da artrose primária), com um cisto acetabular na seta; em B, migra para dentro (medial); em C, sobe no eixo do colo (axial), o padrão que faz pensar em artrite inflamatória, embora nesse caso a biópsia tenha mostrado artrose.
+
+!figura 13.4 imagem=quadril/greenspan6-13-4.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 13, Figura 13.4. Três padrões de migração da cabeça femoral na radiografia AP: superolateral, o mais comum na artrose, com cisto acetabular (seta) (A); medial (B); e axial, o padrão que lembra artrite inflamatória (C).
+!fim
 
 ## As duas classificações
 
@@ -317,7 +335,7 @@ As fraturas de estresse têm dois mecanismos (The Adult Hip, cap. 23, p. 350). *
 
 Na luxação, **90% são posteriores**, com o quadril fletido (o joelho no painel); a cabeça vai para trás e para cima, e o fêmur fica em **adução e rotação interna**. A cabeça posterior fica **mais perto do detector** e parece **menor** que a do outro lado (p. 351). A anterior ocorre em abdução e rotação externa: na **obturatória** a coxa fica em **flexão** e a cabeça sobre o forame; na **ilíaca**, em **extensão e rotação externa**, com o trocânter menor de perfil. Numa incidência só as duas se parecem: são necessárias **pelo menos duas** incidências.
 
-!questoes central=quadril-0525 treino=quadril-0607,quadril-0608,quadril-0609
+!questoes central=quadril-0525 treino=quadril-0607,quadril-0608,quadril-0609,quadril-0760,quadril-0762,quadril-0765
 conceito: Idosa com dor, encurtamento e rotação externa: primeiro radiografia da bacia; radiografia negativa com suspeita alta, RM sem contraste em protocolo curto (coronal T1 e coronal sensível a líquido). Fadiga = estresse anormal em osso normal (córtex medial do colo basicervical); insuficiência = estresse normal em osso osteoporótico. Na luxação posterior a cabeça parece menor e o fêmur fica em adução e rotação interna.
 como: A SES-DF 2024 mostrou fotos de uma idosa com o membro encurtado e rodado e pediu a conduta para confirmar o diagnóstico (radiografia panorâmica de bacia, contra RM lombar e testes neurológicos). O Fellowship cobrou a RM na fratura oculta, os locais das fraturas de estresse e os sinais radiográficos da luxação segundo CALLAGHAN.
 armadilha: Pedir cintilografia imediata (ela leva dias) ou TC como mais sensível para a fratura trabecular oculta; inverter fadiga e insuficiência; pôr a fratura do bisfosfonato na face medial.
@@ -341,9 +359,21 @@ O CALLAGHAN (cap. 23, p. 357 e 358) usa a classificação de **STEINBERG**: no e
 | 6 | degeneração avançada |
 !fim
 
+O estágio 3, a lucência subcondral, é o **sinal do crescente**: uma linha radiotransparente fina logo abaixo do osso subcondral, que marca o colapso da trabécula necrótica e se vê melhor no perfil de rã, como mostra a seta do GREENSPAN (cap. 4, Figura 4.61), numa mulher 5 semanas após luxação do quadril.
+
+!figura 4.61 imagem=quadril/greenspan6-4-61.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 4, Figura 4.61. Perfil em perna de rã com o sinal do crescente (seta): linha lucente subcondral na cabeça femoral, osteonecrose cinco semanas após luxação traumática do quadril.
+!fim
+
 ## RM: dupla linha e ângulo necrótico
 
 O Campbell (cap. 3, p. 165 e 166) descreve a imagem clássica: em T1, uma região geográfica de sinal anormal dentro da gordura da cabeça, contornada por uma faixa de baixo sinal; em T2, uma margem brilhante por dentro dessa faixa, o **sinal da dupla linha**, **essencialmente diagnóstico de osteonecrose**, que começa na região anterossuperior. O tamanho da lesão prediz o colapso: pelo método de KERBOUL modificado na RM, o **ângulo necrótico combinado** (coronal mais sagital) **menor que 190 graus** não colapsou em 5 anos, e **maior que 240** colapsou em todas as cabeças (Campbell, cap. 7, p. 384).
+
+Veja a dupla linha no GREENSPAN (cap. 4, Figura 4.64): em T1 (A), uma linha serpiginosa escura contorna a área necrótica na cabeça; no STIR (B), aparece por dentro dela uma linha brilhante. As duas juntas, escura por fora e clara por dentro, são o sinal da dupla linha.
+
+!figura 4.64 imagem=quadril/greenspan6-4-64.jpeg
+Fonte: GREENSPAN, Radiologia Ortopédica: uma abordagem prática, 6ª ed. (2017), cap. 4, Figura 4.64. RM coronal da osteonecrose da cabeça femoral: em T1 (A), linha serpiginosa de baixo sinal contornando a necrose (setas); em STIR (B), linha de baixo sinal ao lado de uma de alto sinal, o sinal da dupla linha.
+!fim
 
 ## Cintilografia: o tempo da fotopenia
 
@@ -376,7 +406,7 @@ O **MDP-tecnécio-99m** adere por quimioadsorção à superfície das trabécula
 
 O **gálio-67** é lido junto com o MDP: é **positivo** para infecção quando a distribuição é congruente e o gálio é **mais intenso** que o MDP, ou quando é incongruente com o gálio **excedendo** o osso (p. 367 e 368). Os **leucócitos com índio-111** localizam infecção **relativamente nova**: o preparado é sobretudo **neutrofílico**, enquanto a prótese infectada, subaguda ou crônica, tem infiltrado de **monócitos e linfócitos**; combinado com medula de enxofre coloidal, é considerado o padrão, mas exige **pelo menos 2 dias** (p. 371). A **FDG-PET** não depende da migração celular, sofre menos com antibiótico e tem área sob a curva sumária de **0,96** na metanálise (p. 376). A variação entre estudos vem da **falta de critérios uniformes**; há captação inespecífica ao redor da cabeça e do colo por meses, e o **sítio e o padrão importam mais que a intensidade**: a captação na **interface osso-prótese da haste** é a mais compatível com infecção (p. 372 a 374).
 
-!questoes treino=quadril-0613,quadril-0614,quadril-0617,quadril-0618
+!questoes treino=quadril-0613,quadril-0614,quadril-0617,quadril-0618,quadril-0757,quadril-0758,quadril-0763,quadril-0764
 conceito: Gálio positivo = mais intenso que o MDP (congruente) ou excedendo o osso (incongruente); fluoreto-18F vira fluorapatita e leva 90 minutos; leucócitos marcados são neutrofílicos e lentos; na FDG-PET o sítio vale mais que a intensidade, e a interface osso-prótese da haste sugere infecção.
 como: O Fellowship pediu, segundo CALLAGHAN, a interpretação do gálio, os traçadores ósseos, o diagrama de captação da PET e as técnicas na artroplastia dolorosa.
 armadilha: Atribuir ao MDP a conversão em fluorapatita, valorizar a captação no colo protético ou dizer que a PET sofre mais com antibiótico.
