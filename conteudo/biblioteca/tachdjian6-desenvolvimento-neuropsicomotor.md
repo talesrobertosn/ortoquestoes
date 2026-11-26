@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-desenvolvimento-neuropsicomotor
-versao: 2
+versao: 3
 titulo: Desenvolvimento neuropsicomotor
 especialidade: pediatria
 acesso: gratis
@@ -230,13 +230,13 @@ O Lovell and Winter's (cap. 1, p. 22 e 23) lembra que conjuntivo, cartilagem e o
 
 O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 1, p. 11 e 12), explica o giro que o Tachdjian só enuncia. No período embrionário os quatro membros são parecidos, de **eixos paralelos**, com a **borda pré-axial voltada para a cabeça** e a pós-axial para a cauda: polegar e hálux são pré-axiais, e rádio e tíbia, ulna e fíbula são ossos homólogos, na mesma posição do broto. Depois, o membro superior roda **90° para lateral** e o inferior **90° para medial**; no antebraço os flexores ficam mediais e os extensores laterais, e na perna os **extensores ficam ventrais** e os flexores dorsais. A Fig. 1-13 (p. 12) mostra a sequência: aos **48 dias** as placas da mão e do pé se olham; aos **51 dias** os **cotovelos estão dobrados para lateral**; aos **54 dias** as plantas dos pés se olham; ao fim, a rotação lateral dos braços e medial das pernas deixa os cotovelos voltados para a cauda e os **joelhos voltados para a cabeça**, o que no corpo em pé é para a frente. Há uma diferença de calendário entre os livros: o LW escreve que a rotação ocorre no período fetal, e o Tachdjian (cap. 21, p. 874) a põe na 7ª semana, completa na 8ª.
 
-A consequência para a prova é de geometria. Se a face extensora do joelho precisa rodar 90° para medial para chegar à frente, antes do giro ela olhava para **lateral**, do mesmo jeito que o cotovelo dobrado para fora aos 51 dias. A **patela** mora nessa face extensora, dentro do aparelho extensor; logo, antes da rotação, estava **lateral**. Anterior é o ponto de chegada, e medial é só o sentido do movimento. O mesmo giro explica por que a superfície ventral original fica posterior na perna madura e anterior no braço (LW, legenda da Fig. 1-12, p. 11) e por que o hálux, pré-axial, termina do lado de dentro.
+A consequência para a prova é de geometria. Se a face extensora do joelho precisa rodar 90° para medial para chegar à frente, antes do giro ela olhava para **lateral**, do mesmo jeito que o cotovelo dobrado para fora aos 51 dias. A **patela** mora nessa face extensora, dentro do aparelho extensor; logo, antes da rotação, estava **lateral**. O Tachdjian confirma essa leitura pelo avesso, no capítulo do joelho (cap. 18, p. 635): ao explicar a **luxação congênita da patela**, conta que STANISAVLJEVIC e colaboradores, em 1976, notaram que as estruturas da coxa situadas lateralmente rodam para dentro no primeiro trimestre e propuseram que a luxação congênita é a falha dessa rotação, que deixa a patela **deslocada para lateral**, apoiada no côndilo femoral lateral. Ou seja, a patela que não completou o giro fica onde começou: do lado de fora. Anterior é o ponto de chegada, e medial é só o sentido do movimento. O mesmo giro explica por que a superfície ventral original fica posterior na perna madura e anterior no braço (LW, legenda da Fig. 1-12, p. 11) e por que o hálux, pré-axial, termina do lado de dentro.
 
 !questoes central=pediatria-0198
 conceito: O membro inferior roda 90° para medial no fim do período embrionário e leva os extensores e o joelho para a frente; antes do giro, a face extensora, onde fica a patela, olhava para lateral.
 como: O TARO 2023 perguntou, com as quatro direções como alternativas, onde fica a patela antes da rotação axial dos membros inferiores.
 armadilha: Marcar medial, trocando o sentido do giro pelo ponto de partida, ou anterior, que é a posição depois da rotação.
-alerta: Na `pediatria-0198`, o LW e o Tachdjian descrevem a rotação medial de 90° do membro inferior e os extensores da perna terminando ventrais, sem citar a patela pelo nome; a posição lateral é a dedução direta desse giro e coincide com o gabarito oficial (A), que foi mantido.
+alerta: Na `pediatria-0198`, o LW e o Tachdjian (cap. 21) descrevem a rotação medial de 90° do membro inferior sem citar a patela; quem a cita é o Tachdjian no cap. 18 (p. 635), pela hipótese de STANISAVLJEVIC: a falha da rotação deixa a patela lateral. Isso apoia o gabarito oficial (A), que foi mantido.
 !fim
 
 # Os centros secundários do membro superior e o cotovelo {radar=confirmado}

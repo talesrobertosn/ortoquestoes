@@ -47,7 +47,7 @@ def principal() -> int:
             temas.append(slug)
         t = temas.index(slug)
         for q in dados.get("questoes", []):
-            if q.get("anulada") or q.get("dup") or q["id"] not in comentados:
+            if q.get("anulada") or q.get("duplicataDe") or q["id"] not in comentados:
                 continue
             letras = {a.get("letra") for a in q.get("alternativas", [])}
             if q.get("gabarito") not in letras or len(letras) < 2:
