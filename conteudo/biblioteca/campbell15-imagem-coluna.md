@@ -65,7 +65,7 @@ O Campbell (cap. 46, p. 1773 e 1776) começa com um alerta: **76%** dos controle
 
 A correlação entre dor e vários achados radiográficos é **insignificante**: lordose, **vértebra de transição**, estreitamento discal, **vácuo discal** e esporões em garra. Espondilólise, listese e escoliose do adulto têm alguma relação com dor, mas também aparecem em quem não sente nada. Os **nódulos de SCHMORL** são **muito comuns em adolescentes sem SCHEUERMANN** (cap. 41, p. 1630). Por isso, um item que diga que quem tem lombalgia mostra espinha bífida, transição e SCHMORL na mesma frequência que a população assintomática está de acordo com os livros.
 
-!questoes central=coluna-0344
+!questoes central=coluna-0344 treino=coluna-0634,coluna-0635
 conceito: Vértebra de transição, vácuo, estreitamento discal e nódulos de SCHMORL aparecem em sintomáticos e assintomáticos; 76% dos assintomáticos têm alguma anormalidade de imagem.
 como: O TARO 2006 pôs em certo ou errado que lombálgicos e assintomáticos têm incidência semelhante de espinha bífida, vértebra de transição e nódulos de SCHMORL.
 armadilha: Tratar achado radiográfico comum como causa da dor.
@@ -95,7 +95,7 @@ alerta: A `coluna-0344` está sem gabarito oficial. O Campbell 15 (cap. 46, p. 1
 
 O mesmo raciocínio aparece em prova de forma direta: a instabilidade lombar tem quadro clínico e **pode ser confirmada por radiografias dinâmicas** em flexão e extensão. O Campbell repete a ideia na listese degenerativa (cap. 46, p. 1824): perfil em flexão e extensão, sentado ou em pé, identifica o componente dinâmico depois que a listese foi vista.
 
-!questoes central=coluna-0479
+!questoes central=coluna-0479 treino=coluna-0637
 conceito: Radiografias em flexão e extensão revelam instabilidade segmentar lombar; translação de 4 mm ou mais ou rotação acima de 10 a 15 graus indicam instabilidade, e a flexão lombar só é válida sentado.
 como: O R4 Coluna SES-DF 2022 pôs em certo ou errado que a instabilidade lombar tem sinais clínicos e pode ser confirmada por radiografias dinâmicas, num caso de hérnia de S1.
 armadilha: Confundir com o trauma cervical agudo, em que a flexão e extensão não são recomendadas.
@@ -215,7 +215,7 @@ Dois diagnósticos diferenciais são de imagem. A **cifose postural** é flexív
 | cirurgia | progressiva > 70 graus e dor refratária; déficit = urgência | dor, rigidez, > 70 a 75 graus, progressão, estética | > 80 graus com deformidade estética importante |
 !fim
 
-!questoes central=coluna-0403 relacionadas=coluna-0405
+!questoes central=coluna-0403 relacionadas=coluna-0405 treino=coluna-0636
 conceito: Os critérios radiográficos (acunhamento acima de 5 graus em três vértebras adjacentes no ápice) são atribuídos a SORENSEN; a cirurgia fica para cifose grande (70 a 75 graus ou mais) com dor refratária, e o déficit neurológico pede cirurgia.
 como: O R4 Coluna SES-DF 2024 perguntou quem descreveu os critérios radiológicos de SCHEUERMANN e, no mesmo caso, a cifose que indica cirurgia com dor refratária e déficit.
 armadilha: Atribuir os critérios ao próprio SCHEUERMANN ou a SCHMORL, que deu nome ao nódulo, não ao critério.
@@ -257,7 +257,7 @@ A relação geométrica que permite conferir qualquer figura é **PI = PT + SS**
 
 Na classificação SRS-SCHWAB, o tipo coronal (T, L, D ou N, pelo limite de 30 graus) recebe três modificadores sagitais: PI − LL, SVA e PT. No coronal, desalinhamento acima de 4 cm piora a qualidade de vida, mas pesa menos que o sagital.
 
-!questoes central=coluna-0283 relacionadas=coluna-0111,coluna-0074
+!questoes central=coluna-0283 relacionadas=coluna-0111,coluna-0074 treino=coluna-0630
 conceito: A incidência pélvica sai da perpendicular ao platô sacral até o eixo bicoxofemoral e é fixa; a inclinação sacral é o ângulo do platô com a horizontal; o ângulo pélvico de T1 une o centro de T1, o eixo bicoxofemoral e o centro de S1 e vale T1SPI + PT.
 como: O TARO 2026 mostrou os ângulos alfa e beta numa radiografia em perfil e pediu os nomes; o TARO 2023, o método de medida desenhado na espondilolistese; uma prova de Ortopedia, o ângulo da figura apontado pela seta.
 armadilha: Trocar incidência por inclinação pélvica, que usa a vertical e muda com a postura, ou chamar o TPA de balanço sagital.
@@ -294,7 +294,7 @@ A **degenerativa** é a mais comum de todas (cap. 46, p. 1824 e 1825): a perda d
 - **MEYERDING:** razão entre o quanto L5 escorregou e o diâmetro AP do topo de S1; no capítulo 46, pelo canto posteroinferior da vértebra de cima em quartos do platô de baixo. Um grau III é deslizamento entre 50% e 75%; 60% é o exemplo típico.
 - **Ângulo de deslizamento:** cifose lombossacral; acima de **55 graus** prevê progressão. A **inclinação sacral** normal fica abaixo de 30 graus e diminui à medida que o sacro verticaliza. PI aumentada acompanha o grau do deslizamento; no alto grau, a pelve **equilibrada** tem SS alta e PT baixo, e a **desequilibrada** tem sacro vertical, SS baixa e PT alto (p. 1670).
 
-!questoes central=coluna-0365 relacionadas=coluna-0390,coluna-0489,coluna-0359
+!questoes central=coluna-0365 relacionadas=coluna-0390,coluna-0489,coluna-0359 treino=coluna-0628,coluna-0629
 conceito: MEYERDING III é deslizamento de 50% a 75%; WILTSE separa displásico (arco íntegro, maior risco neural e de progressão), ístmico (pars), degenerativo (L4-L5, idoso, sem lise), traumático, patológico e iatrogênico.
 como: O ENARE R4 2025 pediu o deslizamento de um grau III e o tipo de WILTSE com mais risco neurológico; o R4 Coluna SES-DF 2024 mostrou radiografias de listese degenerativa de L3 sobre L4 num homem de 60 anos; o TEOT 2025, a figura de um tipo ístmico.
 armadilha: Dar o ístmico como o mais perigoso para a raiz ou confundir o grau III com 40% (grau II).
@@ -353,7 +353,7 @@ A TC é feita em supino, sem carga, e pode não mostrar a instabilidade; por iss
 
 O **côndilo occipital** fratura mais do que se via antes da TC multidetectores; a TC é o exame de escolha (Rockwood, cap. 48). ANDERSON e MONTESANO: **I** impacção cominuta, **II** extensão de fratura da base do crânio e **III** avulsão medial pelo **ligamento alar**, potencialmente instável. Os autores do Rockwood confiam mais na **membrana tectória** (o LLP rebatizado no clivo) vista em T2 sagital: se rota, há dissociação occipitocervical oculta e indicação de **artrodese occipitocervical**; íntegra, colar ou órtese por 8 a 12 semanas.
 
-!questoes central=coluna-0065 treino=coluna-0515,coluna-0519
+!questoes central=coluna-0065 treino=coluna-0515,coluna-0519,coluna-0638
 conceito: BAI e BDI devem ser menores que 12 mm; o ADI do adulto vai até 3 mm; a avulsão do côndilo pelo alar é ANDERSON e MONTESANO III, e a ruptura da membrana tectória na RM indica artrodese occipitocervical.
 como: Uma questão mostrou a medida do basio na radiografia em perfil e pediu o limite; uma prova de Ortopedia, o ADI normal do adulto; outra, o tipo da avulsão do côndilo e o achado de RM que, para o Rockwood, leva à artrodese.
 armadilha: Usar 3 mm ou 6 mm para o BDI, ou aplicar o limite pediátrico de 5 mm no adulto.
@@ -425,7 +425,7 @@ A **flexão e extensão** no agudo **não** é recomendada: o movimento é insuf
 | odontoide | desvio > 2 mm, angulação > 15 graus | pior consolidação; cirurgia abaixo de 80 anos |
 !fim
 
-!questoes treino=coluna-0517,coluna-0516
+!questoes treino=coluna-0517,coluna-0516,coluna-0639,coluna-0640,coluna-0641
 conceito: Na subaxial, cifose acima de 11 graus pelo platô e translação acima de 3,5 mm sugerem lesão do complexo posterior e instabilidade; partes moles acima de 6 mm em C2 e 22 mm em C6 sugerem lesão.
 como: Uma questão pediu os limites de cifose e translação na fratura por compressão subaxial; outra, a espessura das partes moles em C2 e C6.
 armadilha: Inverter os valores de C2 e C6 ou usar os números toracolombares (30 graus, 2,5 mm).
@@ -448,7 +448,7 @@ alerta: Na `coluna-0360`, o gabarito oficial (traço de anteroinferior para post
 
 O Rockwood (cap. 49) avalia no AP e no perfil o alinhamento, a rotação, a translação, as três colunas de DENIS, a perda de altura e as distâncias **interpedicular** e **interespinhosa**. **Interpedicular alargada** indica **explosão**: no exemplo do livro, 28 mm no nível fraturado contra 22 mm no vizinho, com explosão completa de T12. **Interespinhoso aumentado** indica lesão da banda de tensão posterior (flexão-distração). Perda só anterior é compressão; quando a cortical posterior (coluna média) também quebra, é explosão. A combinação de **perda de altura acima de 50%, cifose acima de 30 graus e translação de 2,5 mm** indica lesão instável. A TC (99% de sensibilidade) é a triagem, e a coluna inteira deve ser estudada no politrauma, porque até 20% têm fratura não contígua; a RM vê melhor o complexo posterior, mas tende a superestimar a instabilidade.
 
-!questoes treino=coluna-0534,coluna-0535
+!questoes treino=coluna-0534,coluna-0535,coluna-0627,coluna-0631,coluna-0632,coluna-0633
 conceito: Perda de altura acima de 50%, cifose acima de 30 graus e translação de 2,5 mm indicam instabilidade; distância interpedicular alargada no AP indica explosão com envolvimento da parede posterior.
 como: Uma questão pediu os três limites de instabilidade na radiografia; outra mostrou 22 mm no nível acima e 28 mm no nível fraturado.
 armadilha: Ler a interpedicular alargada como flexão-distração, que alarga o interespinhoso.
