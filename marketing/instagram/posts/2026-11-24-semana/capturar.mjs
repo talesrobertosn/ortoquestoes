@@ -65,7 +65,6 @@ const P = 'marketing/instagram/posts/'
 const dias = [
   ['2026-11-24-ficha-vancouver', 'callaghan-fraturas-periproteticas-quadril', 'quadril-0135'],
   ['2026-11-25-bercario-nf1', 'campbell15-pseudartrose-congenita-tibia', 'pediatria-0248'],
-  ['2026-11-26-marionete-volkmann', 'green-sindrome-compartimental-mao', 'mao-0415'],
   ['2026-11-27-propaganda-preco', 'rockwood10-40-cotovelo-cabeca-radio', 'ombro-cotovelo-0255'],
   ['2026-11-28-trilha-tibial-posterior', 'campbell15-pe-plano-adulto', 'pe-tornozelo-0185'],
   ['2026-11-29-blocos-hemivertebra', 'campbell15-escoliose-congenita-neuromuscular', 'coluna-0489'],
@@ -105,7 +104,7 @@ if (passo === 'tudo' || passo === 'comentarios') {
 }
 if (passo === 'tudo' || passo === 'paginas') {
   const ctx = await contexto(false); const p = await ctx.newPage()
-  const paginas = [['2026-11-25-bercario-nf1', 'erros'], ['2026-11-26-marionete-volkmann', 'cronograma-mao'], ['2026-11-26-marionete-volkmann', 'flashcards'],
+  const paginas = [['2026-11-25-bercario-nf1', 'erros'], 
     ['2026-11-27-propaganda-preco', 'assinatura'], ['2026-11-28-trilha-tibial-posterior', 'simulado-nacional'], ['2026-11-28-trilha-tibial-posterior', 'progresso'], ['2026-11-24-ficha-vancouver', 'resumos']]
   for (const [pasta, rota] of paginas) {
     await p.goto(`${BASE}#/${rota}`); await p.waitForTimeout(4500); await p.addStyleTag({ content: ESCONDER })
