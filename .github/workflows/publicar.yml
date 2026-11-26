@@ -64,6 +64,9 @@ jobs:
         # Quais questões embaralham na revisão e onde o comentário cita a alternativa pela
         # letra (scripts/letras_alternativas.py): sempre de acordo com os comentários publicados.
         run: python3 scripts/letras_alternativas.py
+      - name: Atualizar o índice dos Shorts
+        # Uma linha por questão apta ao feed dos Shorts e as capas das questões com imagem (scripts/gerar_shorts.py).
+        run: python3 scripts/gerar_shorts.py
       - name: Gerar páginas públicas e sitemap
         # Uma página estática por questão e por assunto, os guias, as páginas de
         # destino (banco de questões, TEOT, curso preparatório, provas, R1, simulados,

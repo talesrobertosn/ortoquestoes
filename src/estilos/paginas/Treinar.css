@@ -17,28 +17,26 @@
 .tn-cabeca__links a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 32px; color: var(--verdete); font-size: var(--corpo-menor); font-weight: 650; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--verdete) 35%, transparent); text-underline-offset: 3px; }
 .tn-cabeca__links a:hover { text-decoration-color: currentColor; }
 
-/* ---------- Começar agora: clareira suave, sem competir com os controles ---------- */
+/* ---------- Topo (26/11/2026): sessão rápida à esquerda, Shorts em pé à direita ---------- */
+.tn-topo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, 19rem); gap: var(--e-5); align-items: stretch; }
+.tn-shorts { display: flex; min-width: 0; }
+.tn-shorts .sh-vertical { aspect-ratio: auto; height: 100%; min-height: 26rem; }
+
+/* ---------- Começar agora: a arte HD-2D nítida numa moldura, os controles embaixo ---------- */
 .tn-rapido {
-  display: grid; grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr); gap: var(--e-5);
   --tn-filete: color-mix(in srgb, var(--verdete) 20%, var(--traco));
-  position: relative; isolation: isolate; overflow: hidden;
-  padding: var(--e-5); border: 1px solid var(--tn-filete); border-radius: var(--mundo-raio);
+  position: relative; display: grid; grid-template-rows: auto 1fr; overflow: hidden; min-width: 0;
+  border: 1px solid var(--tn-filete); border-radius: var(--mundo-raio);
   background: var(--superficie); color: var(--texto); box-shadow: var(--sombra);
 }
-.tn-rapido::before {
-  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
-  background-image: var(--tn-paisagem); background-size: cover; background-position: center 62%;
-  image-rendering: pixelated; opacity: .32; filter: saturate(.6) contrast(.85);
-}
-.tn-rapido > * { position: relative; z-index: 1; }
-:root[data-tema="escuro"] .tn-rapido { background: var(--verdete-noite); }
-:root[data-tema="escuro"] .tn-rapido::before { opacity: .24; filter: saturate(.55) brightness(.85); }
-.tn-rapido .tn-rotulo { color: var(--texto); letter-spacing: 0.12em; font-weight: 800; }
-.tn-rapido__ramo {
-  display: block; width: clamp(4.5rem, 31%, 6.5rem); height: auto; margin-inline-start: auto;
-  image-rendering: pixelated; pointer-events: none;
-}
-.tn-rapido .tn-nota { color: var(--texto); }
+.tn-rapido__cena { position: relative; aspect-ratio: 16 / 5; min-height: 10rem; overflow: hidden; background: var(--verdete-noite); }
+.tn-rapido__cena img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; image-rendering: pixelated; }
+.tn-rapido__vidro { position: absolute; left: var(--e-5); bottom: var(--e-4); display: grid; gap: 2px; padding: var(--e-3) var(--e-4);
+  border-radius: var(--raio-cartao); background: rgba(9,20,18,.72); color: #fff; box-shadow: inset 0 0 0 1px rgba(240,196,106,.35); }
+.tn-rapido__rotulo { margin: 0; font-size: var(--meta); font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--mundo-ouro, #f0c46a); }
+.tn-rapido__vidro h2 { margin: 0; font: 800 clamp(1.25rem, 1rem + 1vw, 1.6rem)/1.1 var(--fonte-marca); letter-spacing: -.03em; color: #fff; }
+.tn-rapido__corpo { display: grid; grid-template-columns: minmax(15rem, 20rem) minmax(0, 1fr); gap: var(--e-5); padding: var(--e-5); align-items: start; }
+.tn-rapido .tn-nota { color: var(--texto-2); }
 .tn-rapido__principal { display: grid; align-content: start; gap: var(--e-3); }
 .botao.tn-rapido__botao { justify-content: flex-start; gap: var(--e-3); width: 100%; min-height: 60px; padding: var(--e-2) var(--e-4); text-align: left; }
 .tn-rapido__botao > svg { flex: none; }
@@ -246,8 +244,10 @@
   .tn-resumo { position: static; }
 }
 @media (max-width: 52rem) {
-  .tn-rapido { grid-template-columns: 1fr; gap: var(--e-4); }
-  .tn-rapido > .natal-passagem { margin-block: calc(-1 * var(--e-4)); }
+  .tn-topo { grid-template-columns: 1fr; gap: var(--e-4); }
+  .tn-shorts .sh-vertical { min-height: 0; aspect-ratio: 5 / 4; }
+  .tn-shorts .sh-vertical-texto { display: none; }
+  .tn-rapido__corpo { grid-template-columns: 1fr; gap: var(--e-4); }
   .tn-montagem > .natal-passagem { margin-block: calc(-1 * var(--e-2)) var(--e-2); }
   .tn-rapido__atalhos { padding: var(--e-4) 0 0; border-left: 0; border-top: 1px solid var(--tn-filete); }
 }
@@ -260,7 +260,9 @@
   .tn-cabeca__frase { font-size: var(--corpo-menor); }
   .tn-cabeca__links a { font-size: var(--meta); }
   .tn-cabeca__links a + a { display: none; } /* flashcards já está na barra de baixo */
-  .tn-rapido { padding: var(--e-4); }
+  .tn-rapido__corpo { padding: var(--e-4); }
+  .tn-rapido__vidro { left: var(--e-3); bottom: var(--e-3); }
+  .tn-rapido__cena { aspect-ratio: 16 / 7; min-height: 0; }
   .tn-rapido__atalhos ul { gap: 6px; }
   .tn-atalho { grid-template-columns: minmax(0, 1fr) auto; gap: var(--e-2); min-height: 52px; padding: 6px var(--e-3); }
   .tn-atalho > svg { display: none; }

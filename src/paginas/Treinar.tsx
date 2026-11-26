@@ -1,5 +1,6 @@
-import { useDeferredValue, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import { FLASHCARDS_NO_MENU, fraseGratis, recurso, rotuloProva, urlCss } from '../config'
+import { CartaoShortsVertical } from '../shorts/Vitrine'
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { FLASHCARDS_NO_MENU, fraseGratis, recurso, rotuloProva } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
@@ -560,7 +561,6 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   const natal = modoNatalAtivo()
   const natalCompacto = natal && colunaUnica
-  const natalAmplo = natal && !colunaUnica
 
   return (
     <div className="tn treinar-pagina">
@@ -579,38 +579,47 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </p>
       </header>
 
-      {/* Começar agora: uma ação principal e quatro atalhos, todos de 10 questões, sem passar pelos filtros. */}
-      <section className="tn-rapido" aria-labelledby="tn-rapido-titulo" style={{ '--tn-paisagem': urlCss(`pixel/inicio/${paisagem}`) } as CSSProperties}>
-        {natalCompacto && <PassagemNatal forma="festao" compacta inicio />}
-        <div className="tn-rapido__principal">
-          <h2 className="tn-rotulo" id="tn-rapido-titulo">
-            Começar agora
-            {natalAmplo && (
-              <img className="tn-rapido__ramo" src={recurso('pixel/natal/treinar-ramo.png')} alt="" aria-hidden="true" width={237} height={72} decoding="async" draggable={false} />
-            )}
-          </h2>
-          <button type="button" className="botao cristal tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">
-            <Icone nome="raio" tamanho={20} />
-            <span><strong>Sessão rápida de 10</strong><small>{nomeAreaCurto}, revisões e novas intercaladas</small></span>
-          </button>
-          <p className="tn-nota" id="tn-rapido-nota">Usa só a prova escolhida abaixo; assunto, situação e os outros filtros ficam de fora.</p>
-        </div>
-        <div className="tn-rapido__atalhos" role="group" aria-labelledby="tn-atalhos-titulo">
-          <p className="tn-rapido__atalhos-titulo" id="tn-atalhos-titulo">Ou 10 de um recorte</p>
-          <ul>
-            {rapidas.map((r) => (
-              <li key={r.titulo}>
-                <button type="button" className="tn-atalho" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}
-                  aria-label={`${r.titulo}: ${r.quantidade === 0 ? 'nenhuma questão agora' : `começar 10 de ${r.quantidade.toLocaleString('pt-BR')} ${r.dica}`}`}>
-                  <Icone nome={r.icone} tamanho={18} />
-                  <span className="tn-atalho__nome">{r.titulo}<small>{r.quantidade === 0 ? 'nenhuma agora' : r.dica}</small></span>
-                  <b className="tn-num tn-atalho__n">{r.quantidade.toLocaleString('pt-BR')}</b>
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      {/* Começar agora (refeito em 26/11/2026, pedido do Tales): à esquerda a sessão rápida, com a arte HD-2D
+          nítida numa moldura (antes ficava esmaecida no fundo) e os quatro recortes; à direita os Shorts em pé. */}
+      <div className="tn-topo">
+        <section className="tn-rapido" aria-labelledby="tn-rapido-titulo">
+          {natalCompacto && <PassagemNatal forma="festao" compacta inicio />}
+          <div className="tn-rapido__cena">
+            <img src={recurso(`pixel/inicio/${paisagem}`)} alt="" aria-hidden="true" decoding="async" draggable={false} />
+            <div className="tn-rapido__vidro">
+              <p className="tn-rapido__rotulo">Começar agora</p>
+              <h2 id="tn-rapido-titulo">Dez questões, um toque</h2>
+            </div>
+          </div>
+          <div className="tn-rapido__corpo">
+            <div className="tn-rapido__principal">
+              <button type="button" className="botao cristal tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">
+                <Icone nome="raio" tamanho={20} />
+                <span><strong>Sessão rápida de 10</strong><small>{nomeAreaCurto}, revisões e novas intercaladas</small></span>
+              </button>
+              <p className="tn-nota" id="tn-rapido-nota">Usa só a prova escolhida abaixo; assunto, situação e os outros filtros ficam de fora.</p>
+            </div>
+            <div className="tn-rapido__atalhos" role="group" aria-labelledby="tn-atalhos-titulo">
+              <p className="tn-rapido__atalhos-titulo" id="tn-atalhos-titulo">Ou 10 de um recorte</p>
+              <ul>
+                {rapidas.map((r) => (
+                  <li key={r.titulo}>
+                    <button type="button" className="tn-atalho" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}
+                      aria-label={`${r.titulo}: ${r.quantidade === 0 ? 'nenhuma questão agora' : `começar 10 de ${r.quantidade.toLocaleString('pt-BR')} ${r.dica}`}`}>
+                      <Icone nome={r.icone} tamanho={18} />
+                      <span className="tn-atalho__nome">{r.titulo}<small>{r.quantidade === 0 ? 'nenhuma agora' : r.dica}</small></span>
+                      <b className="tn-num tn-atalho__n">{r.quantidade.toLocaleString('pt-BR')}</b>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+        <aside className="tn-shorts" aria-label="Shorts: questões rápidas">
+          <CartaoShortsVertical />
+        </aside>
+      </div>
 
       {salvos.length > 0 && (
         <section className="tn-salvos" aria-labelledby="tn-salvos-titulo">

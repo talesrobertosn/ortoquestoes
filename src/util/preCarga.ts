@@ -23,6 +23,7 @@ export const carregadores = {
   Sessao: () => import('../paginas/Sessao'),
   Resumo: () => import('../paginas/Resumo'),
   QuestaoDireta: () => import('../paginas/QuestaoDireta'),
+  Shorts: () => import('../paginas/Shorts'),
   Apoio: () => import('../paginas/Apoio'),
   Favoritas: () => import('../paginas/Favoritas'),
   Bichos: () => import('../paginas/Bichos'),
@@ -55,7 +56,7 @@ type Pagina = keyof typeof carregadores
 
 /** Primeiro trecho do endereço → página (o mesmo mapa do App). */
 const PAGINA_DA_ROTA: Record<string, Pagina> = {
-  '': 'Inicio', treinar: 'Treinar', sessao: 'Sessao', resumo: 'Resumo', questao: 'QuestaoDireta',
+  '': 'Inicio', treinar: 'Treinar', sessao: 'Sessao', resumo: 'Resumo', questao: 'QuestaoDireta', shorts: 'Shorts',
   sobre: 'Apoio', projeto: 'Apoio', contato: 'Apoio', dados: 'Apoio',
   favoritas: 'Favoritas', bichos: 'Bichos', erros: 'CadernoErros', progresso: 'Progresso', revisao: 'Revisao',
   ranking: 'Ranking', conquistas: 'Ranking', termos: 'Termos', 'condicoes-assinatura': 'CondicoesAssinatura', 'direitos-autorais': 'DireitosAutorais',
@@ -70,8 +71,8 @@ const PAGINA_DA_ROTA: Record<string, Pagina> = {
  * fica ocioso. Curto de propósito: cada item é código que a pessoa talvez nem use.
  */
 const PROVAVEIS: Record<string, Pagina[]> = {
-  '': ['Treinar', 'Sessao', 'Resumo'],
-  treinar: ['Sessao', 'Resumo'],
+  '': ['Treinar', 'Sessao', 'Shorts'],
+  treinar: ['Sessao', 'Shorts'],
   sessao: ['Resumo'],
   resumo: ['Treinar', 'Sessao'],
   revisao: ['Sessao', 'Resumo'],

@@ -216,6 +216,20 @@ export function registrarResposta(id: string, correta: boolean | null, confianca
   registrarRespondida(id, correta, confianca, escolhida)
 }
 
+/**
+ * Resposta dada nos Shorts (25/11/2026). Conta no desempenho, mas não mexe na fila da Revisão nem no ranking:
+ * questão nova ganha um registro marcado (sh), que a revisão e o ranking ignoram. Questão que a pessoa já estuda
+ * no site fica como está (os Shorts têm o próprio histórico, com a revisão escondida). Responder de novo numa
+ * sessão normal tira a marca.
+ */
+export function registrarRespostaShort(id: string, correta: boolean, escolhida: Letra) {
+  const mapa = ler<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
+  const anterior = mapa[id]
+  if (anterior && !anterior.sh) return
+  mapa[id] = { ...proximoRegistro(anterior, correta, Date.now(), 'seguro', escolhida), sh: 1 }
+  gravar(CHAVE_RESPONDIDAS, mapa)
+}
+
 function registrarRespondida(id: string, correta: boolean | null, confianca: 'seguro' | 'duvida' | 'chute', escolhida?: Letra | null) {
   const mapa = ler<Record<string, RegistroQuestao>>(CHAVE_RESPONDIDAS, {})
   mapa[id] = proximoRegistro(mapa[id], correta, Date.now(), confianca, escolhida ?? undefined)

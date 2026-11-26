@@ -12,7 +12,7 @@ export type Area = 'comando' | 'pessoas' | 'crescimento' | 'assinantes' | 'estud
 export type Parte =
   | 'comando' | 'agora' | 'pendencias'
   | 'usuarios' | 'crescimento'
-  | 'conteudo' | 'questoes' | 'simulados' | 'opinioes'
+  | 'conteudo' | 'questoes' | 'simulados' | 'opinioes' | 'shorts'
   | 'financeiro' | 'metas' | 'assinaturas' | 'cobrancas' | 'pagamentos'
   | 'prontas' | 'lembretes' | 'cartas' | 'envios' | 'todas'
   | 'ajustes' | 'aviso' | 'exportar' | 'supabase'
@@ -58,6 +58,7 @@ export const AREAS: DefArea[] = [
     { id: 'questoes', rotulo: 'Editar questões', pergunta: 'Corrigir enunciado, alternativas, gabarito, comentário ou imagem de uma questão.' },
     { id: 'simulados', rotulo: 'Simulados', pergunta: 'Calendário, montagem, publicação e acompanhamento das edições.' },
     { id: 'opinioes', rotulo: 'Opiniões dos flashcards', pergunta: 'O que as pessoas dizem do som, do visual, do desempenho e do conteúdo.' },
+    { id: 'shorts', rotulo: 'Shorts', pergunta: 'Quanto se usa, quem bate no limite grátis e quais questões ganham coração ou são puladas.' },
   ] },
   { id: 'comunicacao', rotulo: 'E-mails', curto: 'E-mails', icone: 'carta', partes: [
     { id: 'prontas', rotulo: 'Hoje', pergunta: 'Uma rodada diária, uma mensagem por pessoa, com todas as regras conferidas no servidor.', antes: 'Central hub e-mails lembretes cartas prontas' },

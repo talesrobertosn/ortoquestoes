@@ -8,6 +8,7 @@
 set -euo pipefail
 export PYTHONUTF8=1
 python3 scripts/gerar_indice.py >/dev/null 2>&1 || python scripts/gerar_indice.py >/dev/null
+python3 scripts/gerar_shorts.py >/dev/null 2>&1 || python scripts/gerar_shorts.py >/dev/null
 node scripts/biblioteca/gerar.mjs | tail -1
 (python3 scripts/gerar_amostras_inicio.py || python scripts/gerar_amostras_inicio.py) >/dev/null
 (python3 scripts/validar_acervo.py || python scripts/validar_acervo.py) | tail -1
