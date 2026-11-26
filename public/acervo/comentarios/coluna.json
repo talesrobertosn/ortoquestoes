@@ -2932,7 +2932,7 @@
   "conferido": false
  },
  "coluna-0182": {
-  "conceito": "### A escoliose idiopática não dói\nEssa frase transforma a dor numa **bandeira vermelha**, o sinal de alerta que obriga a procurar uma causa por trás da curva. Diante de escoliose **dolorosa** no adolescente, a causa mais comum é o ==osteoma osteoide== (e, menos, o osteoblastoma, o primo maior e mais agressivo dele), nos **elementos posteriores** (pedículos, lâminas, facetas e processos, o arco atrás do corpo vertebral).\n\n### O mecanismo\n**Espasmo antálgico** assimétrico: os músculos paravertebrais do lado do nicho se contraem e puxam a coluna para esse lado, e por isso a lesão fica na **concavidade** da curva (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25, p. 1034).\n\n### Pistas\n- **Dor noturna** que melhora muito com anti-inflamatório: o nicho produz prostaglandinas, que sensibilizam as fibras de dor, e o anti-inflamatório bloqueia a enzima que as fabrica.\n- Curva de instalação **rápida**, **rígida**, sem rotação vertebral proporcional, porque é uma curva de músculo contraído, e não de vértebras que cresceram tortas e giraram como na idiopática.\n\n### Diagnóstico\n- **Tomografia** com cortes finos mostra o **nicho** (menos de 1,5 cm).\n- A radiografia costuma não vê-lo; a ressonância mostra edema que pode confundir.\n\n### Tratamento\nTratada cedo (ablação, a destruição do nicho por calor com agulha guiada por tomografia, ou ressecção), a curva **regride**. Tratada tarde, estrutura-se: a inclinação mantida numa coluna que cresce passa a deformar as vértebras.\n\n### Outros diferenciais de escoliose dolorosa\nInfecção, cisto aneurismático (lesão expansiva cheia de sangue), **tumor medular**, siringomielia (cavidade de líquido na medula), hérnia de disco.\n\n> **Na prova:** escoliose dolorosa no adolescente é ==osteoma osteoide== até prova em contrário.",
+  "conceito": "### A escoliose idiopática não dói\nEssa frase transforma a dor numa **bandeira vermelha**, o sinal de alerta que obriga a procurar uma causa por trás da curva. Diante de escoliose **dolorosa** no adolescente, a causa mais comum é o ==osteoma osteoide== (e, menos, o osteoblastoma, o primo maior e mais agressivo dele), nos **elementos posteriores** (pedículos, lâminas, facetas e processos, o arco atrás do corpo vertebral).\n\n### O mecanismo\n**Espasmo antálgico** assimétrico: os músculos paravertebrais do lado do nicho se contraem e puxam a coluna para esse lado, e por isso a lesão fica na **concavidade** da curva (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25, p. 1034).\n\n### Pistas\n- **Dor noturna** que melhora muito com anti-inflamatório: o nicho produz prostaglandinas, que sensibilizam as fibras de dor, e o anti-inflamatório bloqueia a enzima que as fabrica.\n- Curva de instalação **rápida**, **rígida**, sem rotação vertebral proporcional, porque é uma curva de músculo contraído, e não de vértebras que cresceram tortas e giraram como na idiopática.\n\n### Diagnóstico\n- **Tomografia** com cortes finos mostra o **nicho** (menos de 1,5 cm).\n- A radiografia costuma não vê-lo; a ressonância mostra edema que pode confundir.\n\nA Fig. 9.5 do Dahlin's Bone Tumors, 6ª ed. (cap. 9, p. 107), mostra por que a tomografia é o exame. Na radiografia de frente da coluna torácica baixa (A), procure a lesão: não há nada que chame a atenção. No corte axial da tomografia na altura de T10 (B), o achado aparece: um pequeno círculo escuro, de menos de 1 cm, no pedículo esquerdo, com um ponto branco de calcificação no centro e osso mais denso em volta. É o nicho, no arco posterior, ao lado da musculatura paravertebral que entra em espasmo.\n\n### Tratamento\nTratada cedo (ablação, a destruição do nicho por calor com agulha guiada por tomografia, ou ressecção), a curva **regride**. Tratada tarde, estrutura-se: a inclinação mantida numa coluna que cresce passa a deformar as vértebras.\n\n### Outros diferenciais de escoliose dolorosa\nInfecção, cisto aneurismático (lesão expansiva cheia de sangue), **tumor medular**, siringomielia (cavidade de líquido na medula), hérnia de disco.\n\n> **Na prova:** escoliose dolorosa no adolescente é ==osteoma osteoide== até prova em contrário.",
   "correta": "**Osteoma osteoide.**\n- É a causa mais comum de escoliose dolorosa no adolescente.",
   "incorretas": {
    "A": "**Outro quadro.**\n- A espondilodiscite (infecção do disco e das vértebras vizinhas) dá dor e rigidez, mas com febre, provas inflamatórias altas e destruição do disco.",
@@ -2940,9 +2940,18 @@
    "D": "**Compensatória e indolor.**\n- A dismetria (diferença de comprimento entre os membros inferiores) dá escoliose flexível, que corrige ao sentar ou ao igualar os membros, porque a curva só compensa a pelve inclinada."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 44"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 44",
+   "Dahlin's Bone Tumors, 6ª ed. (2010), cap. 9 (osteoma osteoide), Fig. 9.5, p. 107"
   ],
-  "geradoEm": "2026-09-23",
+  "imagens": [
+   {
+    "arquivo": "tumores/dahlin6-9-5-ta051.jpeg",
+    "legenda": "Fonte: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 9, Fig. 9.5, p. 107. Osteoma osteoide da coluna torácica baixa: a radiografia de frente (A) quase nada mostra; a tomografia axial na altura de T10 (B) mostra lesão lítica de menos de 1 cm no pedículo esquerdo, com foco grande de calcificação central e esclerose medular em volta.",
+    "largura": 1600,
+    "altura": 985
+   }
+  ],
+  "geradoEm": "2026-11-26",
   "conferido": false
  },
  "coluna-0184": {
