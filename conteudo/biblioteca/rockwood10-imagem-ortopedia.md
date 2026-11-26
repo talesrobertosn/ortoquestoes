@@ -183,7 +183,7 @@ A DP não é nem T1 nem T2: o contraste vem da diferença de densidade de próto
 
 Campo magnético se mede em tesla (1 T = 10.000 gauss; a Terra tem cerca de 0,5 gauss). Baixo campo é 0,2 a 0,3 T para o Rockwood e 0,3 a 0,7 T para o Campbell; a imagem ortopédica ideal fica entre **1,5 e 3 T**. Campo mais forte dá mais sinal e exame mais curto, e as **bobinas de superfície** aumentam a relação sinal e ruído.
 
-!questoes central=conceitos-basicos-0276
+!questoes central=conceitos-basicos-0276 treino=conceitos-basicos-0446,conceitos-basicos-0447,conceitos-basicos-0449,conceitos-basicos-0451,conceitos-basicos-0452,conceitos-basicos-0453,conceitos-basicos-0458,conceitos-basicos-0459,conceitos-basicos-0460,conceitos-basicos-0461
 conceito: T1 usa TR e TE curtos, T2 usa TR e TE longos; a cortical óssea, pobre em água e gordura, é escura em todas as ponderações; edema é escuro em T1 e claro em T2; fibrocartilagem é escura nas sequências convencionais.
 como: O ENARE R4 2024 pediu a afirmação correta entre trocas de TR e TE das ponderações e o comportamento do osso, do edema medular e da fibrocartilagem em T1 e T2.
 armadilha: Inverter os tempos (T2 com TR e TE curtos), dizer que o edema brilha em T1 ou que a fibrocartilagem fica clara em T2; o osso da alternativa correta é a cortical, porque a medular gordurosa é clara em T1.
@@ -226,7 +226,7 @@ A contusão óssea (edema medular) corresponde, na histologia, a **microfraturas
 
 O traço de fratura aparece como **linha de baixo sinal** em DP ou T2, contornada pela medula gordurosa clara, e é bem visto também no STIR, que ainda mostra o edema ao redor. No T1, o traço pode se perder no meio do edema, porque os dois são escuros. Mesmo assim, no quadril, IWATA encontrou o **T1 coronal com sensibilidade de 100%**, contra 84% do T2 sozinho, e um protocolo abreviado com **STIR coronal e T1 coronal** tem alta sensibilidade e especificidade para fratura, necrose avascular e lesão muscular no paciente com dor no quadril e radiografia normal.
 
-!questoes central=conceitos-basicos-0172 relacionadas=conceitos-basicos-0234
+!questoes central=conceitos-basicos-0172 relacionadas=conceitos-basicos-0234 treino=conceitos-basicos-0444,conceitos-basicos-0445,conceitos-basicos-0457
 conceito: Água tem T1 e T2 longos: escura em T1 e clara em T2; gordura clara em T1; cortical, tendão e ligamento escuros em todas; em T1, músculo e cartilagem ficam na faixa intermediária e o tendão é hipossinal.
 como: O TARO 2024 perguntou o sinal da água nas duas ponderações mais usadas; uma prova de Ortopedia pediu, em T1, o sinal de músculo, cartilagem e tendão normais, nessa ordem.
 armadilha: Achar que a água é clara em T1 porque é clara no T2, ou dar hipersinal à cartilagem em T1 (ela brilha no gradiente-eco e quando degenera).
@@ -353,7 +353,7 @@ Na **fratura**, a cintilografia é positiva em **80% em 24 horas e 95% em 72 hor
 
 Na **necrose avascular da cabeça femoral** (The Adult Hip, cap. 24, p. 368 a 370), a área **fotopênica** aparece 7 a 10 dias após a isquemia e depois vira hipercaptação pela revascularização; o **sinal da rosquinha** (centro frio com halo quente) é a fase intermediária. A RM tem sensibilidade perto de 100%, contra 81% a 90% da cintilografia.
 
-!questoes central=conceitos-basicos-0087
+!questoes central=conceitos-basicos-0087 treino=conceitos-basicos-0448
 conceito: Primeira fase é o fluxo (angiograma radionuclídeo), segunda é o pool sanguíneo ou fase tecidual, terceira é a tardia, feita horas depois, quando o difosfonato já se fixou e mostra a atividade osteoblástica.
 como: Uma prova de Ortopedia pediu a afirmação correta sobre a cintilografia com tecnécio, misturando a fase de fluxo com a de distribuição tecidual e a de equilíbrio com o angiograma.
 armadilha: Chamar a fase de equilíbrio de "angiograma" (é a primeira), dar à fase de fluxo a distribuição extracelular (é a segunda) ou dizer que três fases tornam o exame específico.
@@ -385,7 +385,7 @@ O Rockwood resume numa frase: atividade do gálio **maior que** a da cintilograf
 
 O HEBERT, 5ª ed. (cap. 21.7, pé diabético), é mais cético e diverge. Para ele, a cintilografia com tecnécio de três ou quatro fases tem sensibilidade de 91% mas especificidade de **54%**, menor até que a da radiografia (74%); por isso uma cintilografia negativa praticamente exclui osteomielite, e ela mostra o diagnóstico cerca de 2 semanas antes da radiografia. Mas o **acréscimo do gálio "não melhora muito" a especificidade**: o uso sequencial de tecnécio e gálio tem acurácia de apenas **70%** para infecção. Os leucócitos marcados com índio-111 melhoram a especificidade, de 78% a 96%, com resultados conflitantes, e a RM tem sensibilidade de cerca de 100% e especificidade de 81%. O Rockwood e o The Adult Hip ensinam o mecanismo e o critério; o HEBERT lembra que, no pé diabético, o ganho é modesto.
 
-!questoes central=conceitos-basicos-0116 relacionadas=conceitos-basicos-0305
+!questoes central=conceitos-basicos-0116 relacionadas=conceitos-basicos-0305 treino=conceitos-basicos-0450,conceitos-basicos-0454,conceitos-basicos-0455,conceitos-basicos-0456
 conceito: O gálio-67 liga-se à transferrina, acumula onde há fluxo e permeabilidade, é captado por leucócitos e preso pela lactoferrina dos neutrófilos; no estudo combinado, gálio mais intenso que o MDP (ou em outra distribuição) é osteomielite.
 como: O TARO 2023 perguntou quando o estudo combinado MDP e gálio é positivo; o TARO 2006 afirmou que o gálio é mais específico na infecção osteoarticular por ser captado por granulócitos e bactérias.
 armadilha: Achar que MDP negativo com gálio positivo, ou o inverso, "confirma" o diagnóstico; o critério é a intensidade relativa, gálio maior que osso. E repetir que o gálio é muito específico sem lembrar que, no pé diabético, a soma tecnécio e gálio tem acurácia de só 70% (HEBERT).
