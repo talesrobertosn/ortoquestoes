@@ -58,7 +58,7 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | joelho-0143 | TT-TG (TAGT) na TC superposta (TEOT 2024), vidro claro com enquete | posts/2026-11-23-vidro-tagt (stories) |
 | quadril-0126 | Fratura periprotética VANCOUVER B2 (TEOT 2024), ficha do ambulatório de prótese com enquete | posts/2026-11-24-ficha-vancouver (stories) |
 | pediatria-0330 | Tíbia arqueada no recém-nascido: NF1 e pseudoartrose congênita (TEOT 2025), berçário com enquete | posts/2026-11-25-bercario-nf1 (stories) |
-| mao-0058 | Zona extensora da MF é a V (TARO 2016), mapa de metrô Linha Extensora, stories didáticos sem enquete | posts/2026-11-26-linha-extensora (stories) |
+| pediatria-0697 | Côndilo lateral, JAKOB estágio III (TEOT 2022), a porta de JAKOB, stories didáticos sem enquete | posts/2026-11-26-porta-jakob (stories) |
 | pe-tornozelo-0179 | Insuficiência do tibial posterior, incongruência talonavicular lateral (TEOT 2024), trilha do arco com enquete | posts/2026-11-28-trilha-tibial-posterior (stories) |
 | coluna-0220 | Escoliose congênita: barra unilateral com hemivértebra contralateral (TEOT 2025), torre de blocos com enquete | posts/2026-11-29-blocos-hemivertebra (stories) |
 | ombro-cotovelo-0449 | Bíceps distal por via única: nervo cutâneo lateral do antebraço (TARO 2026), folha de calendário com enquete | posts/2026-11-30-calendario-biceps (stories) |
