@@ -71,7 +71,7 @@ CENAS = [
          "Treine em *ortoquestoes.com.br*"),
     ]),
 ]
-TEMPO = 1.17  # aceleração final sem mudar o tom (a voz é pausada; o vídeo precisa caber em ~45 s)
+TEMPO = 1.15  # aceleração final sem mudar o tom (a voz é pausada; o vídeo precisa caber em ~45 s)
 
 
 def pausa_depois(txt: str) -> float:
@@ -91,6 +91,32 @@ def aparar(a: np.ndarray, sr: int, limiar: float = 0.02, folga: float = 0.04) ->
     if not len(idx):
         return a
     return a[max(0, idx[0] - int(folga * sr)):min(len(a), idx[-1] + int(folga * 3 * sr))]
+
+
+def encurtar_silencios(a: np.ndarray, sr: int, maximo: float = 0.16) -> np.ndarray:
+    """Pausas internas longas (a voz respira demais) viram no máximo `maximo` segundos."""
+    jan = int(0.01 * sr)
+    env = np.convolve(np.abs(a), np.ones(jan) / jan, "same")
+    quieto = env < 0.025 * max(np.abs(a).max(), 1e-6)
+    out, i, n = [], 0, len(a)
+    while i < n:
+        if quieto[i]:
+            j = i
+            while j < n and quieto[j]:
+                j += 1
+            seg = a[i:j]
+            if len(seg) > maximo * sr:
+                m = int(maximo * sr / 2)
+                seg = np.concatenate([seg[:m] * np.linspace(1, 0, m), seg[-m:] * np.linspace(0, 1, m)])
+            out.append(seg)
+            i = j
+        else:
+            j = i
+            while j < n and not quieto[j]:
+                j += 1
+            out.append(a[i:j])
+            i = j
+    return np.concatenate(out).astype(np.float32)
 
 
 def locucao(a: np.ndarray, sr: int) -> np.ndarray:
@@ -140,6 +166,7 @@ def main() -> None:
             cache = os.path.join(SAIDA, "frases", f"{chave}.wav")
             if os.path.exists(cache):
                 w, _ = sf.read(cache, dtype="float32")
+                w = encurtar_silencios(w, sr)
                 inicios.append(round(t, 3))
                 p = pausa_depois(fala) if j < len(frases) - 1 else 0.0
                 partes += [w, np.zeros(int(p * sr), np.float32)]
@@ -165,6 +192,7 @@ def main() -> None:
             w = melhor[1]
             os.makedirs(os.path.dirname(cache), exist_ok=True)
             sf.write(cache, w, sr)
+            w = encurtar_silencios(w, sr)
             inicios.append(round(t, 3))
             p = pausa_depois(fala) if j < len(frases) - 1 else 0.0
             partes += [w, np.zeros(int(p * sr), np.float32)]

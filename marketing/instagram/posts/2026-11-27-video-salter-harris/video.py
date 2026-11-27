@@ -30,7 +30,7 @@ LW, LH = 1080, 1920
 FILME_X, FILME_Y = 25 * ESC, 161 * ESC          # canto do filme no vídeo
 LEAD = 0.3                                      # silêncio antes da primeira fala
 GAP = 0.16                                       # respiro entre cenas
-CAUDA = 2.6                                      # tempo extra do cartão final
+CAUDA = 2.0                                      # tempo extra do cartão final
 
 CREME = (246, 238, 219)
 OURO = (244, 207, 124)
