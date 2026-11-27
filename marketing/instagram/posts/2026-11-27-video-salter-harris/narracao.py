@@ -2,7 +2,7 @@
 
 Cada cena é uma lista de frases (fala, legenda). Cada frase é gerada à parte, com velocidade levemente variada e pausa
 natural depois (vírgula curta, ponto médio, reticências longa); as frases de ênfase saem um pouco mais devagar. A voz é
-a edresson do Piper (locutor brasileiro; a do Kokoro soava portuguesa de Portugal, Tales 27/11/2026), e o áudio recebe
+a cadu do Piper (adulta e grave; a do Kokoro soava portuguesa de Portugal e a edresson, infantil, Tales 27/11/2026), e o áudio recebe
 um tratamento leve de locução (corta graves embolados, dá presença, compressão suave e uma sala pequena).
 
 Grava audio/cena-NN.wav e audio/tempos.json (duração de cada cena e o início de cada frase, para as legendas).
@@ -18,7 +18,7 @@ import numpy as np
 import soundfile as sf
 from scipy.signal import butter, lfilter
 
-MODELO = sys.argv[1] if len(sys.argv) > 1 else "/tmp/claude-0/piper"
+MODELO = sys.argv[1] if len(sys.argv) > 1 else "/tmp/claude-0/sherpa/vits-piper-pt_BR-cadu-medium/pt_BR-cadu-medium.onnx"
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SAIDA = os.path.join(AQUI, "audio")
 
@@ -74,8 +74,8 @@ CENAS = [
     ]),
 ]
 
-VELOCIDADE = 1.42
-TEMPO = 1.17  # aceleração final sem mudar o tom
+VELOCIDADE = 1.38
+TEMPO = 1.06  # aceleração final sem mudar o tom
 # frases de ênfase (saem um pouco mais devagar)
 ENFASE = {"Na criança... quem paga é a fise.", "só meses depois,", "quando o osso para de crescer.",
           "redução anatômica.", "e nenhum traço aparece."}
@@ -127,18 +127,19 @@ def locucao(a: np.ndarray, sr: int) -> np.ndarray:
 
 
 def sintetizador():
-    """Voz masculina brasileira do Piper (edresson, treinada com locutor brasileiro; release oficial rhasspy/piper v0.0.2)."""
+    """Voz masculina brasileira do Piper, "cadu" (qualidade média, 22 kHz, grave: F0 perto de 120 Hz, tom de professor).
+    Modelo: vits-piper-pt_BR-cadu-medium, das releases tts-models do k2-fsa/sherpa-onnx no GitHub."""
     import wave
     import io
 
     from piper import PiperVoice, SynthesisConfig
 
-    voz = PiperVoice.load(os.path.join(MODELO, "pt-br-edresson-low.onnx"))
+    voz = PiperVoice.load(MODELO)
 
     def falar(texto: str, vel: float):
         buf = io.BytesIO()
         with wave.open(buf, "wb") as w:
-            voz.synthesize_wav(texto, w, syn_config=SynthesisConfig(length_scale=1 / vel, noise_scale=0.6, noise_w_scale=0.75))
+            voz.synthesize_wav(texto, w, syn_config=SynthesisConfig(length_scale=1 / vel, noise_scale=0.667, noise_w_scale=0.8))
         buf.seek(0)
         with wave.open(buf) as w:
             sr = w.getframerate()
@@ -176,7 +177,7 @@ def main() -> None:
         tempos.append({"cena": cid, "seg": round(len(audio) / sr, 3), "inicios": inicios,
                        "legendas": [leg for _f, leg in frases]})
         print(cid, round(len(audio) / sr, 2))
-    json.dump({"sr": sr, "voz": "piper pt-br edresson", "cenas": tempos}, open(f"{SAIDA}/tempos.json", "w"),
+    json.dump({"sr": sr, "voz": "piper pt_BR cadu medium", "cenas": tempos}, open(f"{SAIDA}/tempos.json", "w"),
               ensure_ascii=False, indent=1)
     print("total", round(sum(t["seg"] for t in tempos), 2))
 
