@@ -35,8 +35,8 @@ CENAS = [
     ]),
     ("fise", [
         ("A fise é cartilagem: o ponto fraco do osso da criança.", "A fise é *cartilagem*: o ponto fraco do osso."),
-        ("Sálter e Rárris dividiram essas lesões em cinco tipos.", "Salter e Harris: *cinco tipos*."),
-        ("E dá pra decorar com uma palavra só: sálter.", "Decora uma palavra: *SALTR*."),
+        ("Sálter e Rárris: cinco tipos.", "Salter e Harris: *cinco tipos*."),
+        ("Decora numa palavra só: sálter.", "Decora uma palavra: *SALTR*."),
     ]),
     ("s", [
         ("Ésse, de strêit: passa reto pela fise.", "*S*traight: passa *reto* pela fise."),
@@ -71,7 +71,7 @@ CENAS = [
          "Treine em *ortoquestoes.com.br*"),
     ]),
 ]
-TEMPO = 1.04  # leve aceleração final, sem mudar o tom
+TEMPO = 1.17  # aceleração final sem mudar o tom (a voz é pausada; o vídeo precisa caber em ~45 s)
 
 
 def pausa_depois(txt: str) -> float:
@@ -134,6 +134,18 @@ def main() -> None:
     for i, (cid, frases) in enumerate(CENAS):
         partes, inicios, t = [], [], 0.0
         for j, (fala, _leg) in enumerate(frases):
+            import hashlib
+
+            chave = hashlib.md5((fala + "|" + REF).encode()).hexdigest()[:12]
+            cache = os.path.join(SAIDA, "frases", f"{chave}.wav")
+            if os.path.exists(cache):
+                w, _ = sf.read(cache, dtype="float32")
+                inicios.append(round(t, 3))
+                p = pausa_depois(fala) if j < len(frases) - 1 else 0.0
+                partes += [w, np.zeros(int(p * sr), np.float32)]
+                t += len(w) / sr + p
+                print(f"  {cid}/{j} (guardada)", flush=True)
+                continue
             melhor = None
             for tentativa in range(4):
                 w = tts.generate(fala, language_id="pt", audio_prompt_path=REF, exaggeration=0.55, cfg_weight=0.5,
@@ -151,6 +163,8 @@ def main() -> None:
                 if nota <= 0.25:
                     break
             w = melhor[1]
+            os.makedirs(os.path.dirname(cache), exist_ok=True)
+            sf.write(cache, w, sr)
             inicios.append(round(t, 3))
             p = pausa_depois(fala) if j < len(frases) - 1 else 0.0
             partes += [w, np.zeros(int(p * sr), np.float32)]
