@@ -73,7 +73,7 @@ CENAS = [
          "Treine em *ortoquestoes.com.br*"),
     ]),
 ]
-TEMPO = 1.15  # aceleração final sem mudar o tom (a voz é pausada; o vídeo precisa caber em ~45 s)
+TEMPO = 1.32  # aceleração final sem mudar o tom (a voz é pausada; o vídeo precisa caber em ~45 s)
 
 
 def pausa_depois(txt: str) -> float:
@@ -95,7 +95,7 @@ def aparar(a: np.ndarray, sr: int, limiar: float = 0.02, folga: float = 0.04) ->
     return a[max(0, idx[0] - int(folga * sr)):min(len(a), idx[-1] + int(folga * 3 * sr))]
 
 
-def encurtar_silencios(a: np.ndarray, sr: int, maximo: float = 0.16) -> np.ndarray:
+def encurtar_silencios(a: np.ndarray, sr: int, maximo: float = 0.11) -> np.ndarray:
     """Pausas internas longas (a voz respira demais) viram no máximo `maximo` segundos."""
     jan = int(0.01 * sr)
     env = np.convolve(np.abs(a), np.ones(jan) / jan, "same")
