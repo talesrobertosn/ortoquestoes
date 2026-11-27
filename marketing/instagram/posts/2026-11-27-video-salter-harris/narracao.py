@@ -1,9 +1,9 @@
-"""Narração do vídeo Salter-Harris: voz masculina sintética local (Kokoro pt-br), "humanizada".
+"""Narração do vídeo Salter-Harris: voz masculina brasileira sintética local (Piper, edresson), "humanizada".
 
 Cada cena é uma lista de frases (fala, legenda). Cada frase é gerada à parte, com velocidade levemente variada e pausa
 natural depois (vírgula curta, ponto médio, reticências longa); as frases de ênfase saem um pouco mais devagar. A voz é
-uma mistura de pm_alex com um pouco de pm_santa (mais grave e calorosa), e o áudio recebe um tratamento leve de
-locução (corta graves embolados, dá presença, compressão suave e uma sala pequena).
+a edresson do Piper (locutor brasileiro; a do Kokoro soava portuguesa de Portugal, Tales 27/11/2026), e o áudio recebe
+um tratamento leve de locução (corta graves embolados, dá presença, compressão suave e uma sala pequena).
 
 Grava audio/cena-NN.wav e audio/tempos.json (duração de cada cena e o início de cada frase, para as legendas).
 
@@ -11,14 +11,14 @@ Grava audio/cena-NN.wav e audio/tempos.json (duração de cada cena e o início 
 """
 import json
 import os
+import subprocess
 import sys
 
 import numpy as np
 import soundfile as sf
-from kokoro_onnx import Kokoro
 from scipy.signal import butter, lfilter
 
-MODELO = sys.argv[1] if len(sys.argv) > 1 else "/tmp/claude-0/tts"
+MODELO = sys.argv[1] if len(sys.argv) > 1 else "/tmp/claude-0/piper"
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SAIDA = os.path.join(AQUI, "audio")
 
@@ -74,7 +74,8 @@ CENAS = [
     ]),
 ]
 
-VELOCIDADE = 1.3
+VELOCIDADE = 1.42
+TEMPO = 1.17  # aceleração final sem mudar o tom
 # frases de ênfase (saem um pouco mais devagar)
 ENFASE = {"Na criança... quem paga é a fise.", "só meses depois,", "quando o osso para de crescer.",
           "redução anatômica.", "e nenhum traço aparece."}
@@ -121,22 +122,43 @@ def locucao(a: np.ndarray, sr: int) -> np.ndarray:
     ir = rng.normal(0, 1, n) * np.exp(-np.arange(n) / (0.04 * sr))
     ir /= np.abs(ir).sum()
     sala = np.convolve(a, ir)[: len(a)]
-    a = a * 0.93 + sala * 0.9
+    a = a * 0.95 + sala * 0.5
     return (a / (np.abs(a).max() + 1e-9) * 0.9).astype(np.float32)
 
 
+def sintetizador():
+    """Voz masculina brasileira do Piper (edresson, treinada com locutor brasileiro; release oficial rhasspy/piper v0.0.2)."""
+    import wave
+    import io
+
+    from piper import PiperVoice, SynthesisConfig
+
+    voz = PiperVoice.load(os.path.join(MODELO, "pt-br-edresson-low.onnx"))
+
+    def falar(texto: str, vel: float):
+        buf = io.BytesIO()
+        with wave.open(buf, "wb") as w:
+            voz.synthesize_wav(texto, w, syn_config=SynthesisConfig(length_scale=1 / vel, noise_scale=0.6, noise_w_scale=0.75))
+        buf.seek(0)
+        with wave.open(buf) as w:
+            sr = w.getframerate()
+            a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+        return a, sr
+
+    return falar
+
+
 def main() -> None:
-    k = Kokoro(f"{MODELO}/kokoro.onnx", f"{MODELO}/voices.bin")
-    voz = k.get_voice_style("pm_alex") * 0.75 + k.get_voice_style("pm_santa") * 0.25
+    falar = sintetizador()
     os.makedirs(SAIDA, exist_ok=True)
     rng = np.random.default_rng(11)
     tempos = []
-    sr = 24000
+    sr = 16000
     for i, (cid, frases) in enumerate(CENAS):
         partes, inicios, t = [], [], 0.0
         for j, (fala, _leg) in enumerate(frases):
             vel = VELOCIDADE * (0.92 if fala in ENFASE else 1.0) * (1 + rng.uniform(-0.035, 0.035))
-            a, sr = k.create(fala, voice=voz, speed=vel, lang="pt-br")
+            a, sr = falar(fala, vel)
             a = aparar(a, sr)
             inicios.append(round(t, 3))
             p = pausa_depois(fala) if j < len(frases) - 1 else 0.0
@@ -144,11 +166,17 @@ def main() -> None:
             partes.append(np.zeros(int(p * sr), np.float32))
             t += len(a) / sr + p
         audio = locucao(np.concatenate(partes), sr)
-        sf.write(f"{SAIDA}/cena-{i:02d}.wav", audio, sr)
+        # acelera sem mudar o tom (atempo do ffmpeg): a voz do Piper é lenta mesmo com length_scale baixo
+        tmp = f"{SAIDA}/tmp.wav"
+        sf.write(tmp, audio, sr)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-af", f"atempo={TEMPO}", f"{SAIDA}/cena-{i:02d}.wav"], check=True)
+        os.remove(tmp)
+        audio, sr = sf.read(f"{SAIDA}/cena-{i:02d}.wav", dtype="float32")
+        inicios = [round(x / TEMPO, 3) for x in inicios]
         tempos.append({"cena": cid, "seg": round(len(audio) / sr, 3), "inicios": inicios,
                        "legendas": [leg for _f, leg in frases]})
         print(cid, round(len(audio) / sr, 2))
-    json.dump({"sr": sr, "voz": "pm_alex 75% + pm_santa 25%", "cenas": tempos}, open(f"{SAIDA}/tempos.json", "w"),
+    json.dump({"sr": sr, "voz": "piper pt-br edresson", "cenas": tempos}, open(f"{SAIDA}/tempos.json", "w"),
               ensure_ascii=False, indent=1)
     print("total", round(sum(t["seg"] for t in tempos), 2))
 
