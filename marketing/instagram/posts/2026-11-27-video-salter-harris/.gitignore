@@ -1,0 +1,7 @@
+# pesados ou regeneráveis: o vídeo sai de narracao.py + cena.py + video.py
+*.mp4
+audio/
+arte/fundo.npy
+previa/
+__pycache__/
+arte/teste-filme.png
