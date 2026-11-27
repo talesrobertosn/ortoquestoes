@@ -1,13 +1,13 @@
 # Vídeo: Salter-Harris em 40 segundos (27/11/2026)
 
-Reels/TikTok vertical (1080 x 1920, 30 fps, cerca de 42 s), com começo, meio e fim. O gancho compara a mesma queda no adulto e na criança. O meio ensina os cinco tipos com o mnemônico SALTR, e o fim traz a virada: o tipo V só aparece meses depois. Toda a arte é pixel art pintada por código: uma sala de laudos à noite, a radiografia no negatoscópio e o mascote apontando. A voz é sintética e roda aqui mesmo (Kokoro, voz `pf_dora`, pt-br).
+Reels/TikTok vertical (1080 x 1920, 30 fps, cerca de 50 s), com começo, meio e fim. O gancho compara a mesma queda no adulto e na criança. O meio ensina os cinco tipos com o mnemônico SALTR, e o fim traz a virada: o tipo V só aparece meses depois. Toda a arte é pixel art pintada por código: uma sala de laudos à noite, a radiografia no negatoscópio e o mascote apontando. A narração usa uma voz masculina sintética local (Kokoro pt-br, 75% `pm_alex` e 25% `pm_santa`), gerada frase por frase com pausas naturais e tratamento de locução. Embaixo de cada letra do SALTR, a palavra em inglês e o significado vão ficando escritos. Uma placa fixa mostra o site o vídeo inteiro ("Treine para o TEOT, o TARO e a Cirurgia da Mão" e www.ortoquestoes.com.br). Por baixo da voz toca uma música original animada, em estilo chiptune (`musica.py`), bem baixa e com ducking.
 
 ## Como gerar
 
 Precisa de `pip install kokoro-onnx soundfile scipy fonttools brotli`, do modelo Kokoro v1.0 (os arquivos `kokoro-v1.0.onnx` e `voices-v1.0.bin`, das releases do kokoro-onnx no GitHub) e das fontes Jersey 10, Pixelify Sans e Plus Jakarta Sans (esta convertida de `src/marca/plus-jakarta-sans.woff2`) na pasta `FONTES`.
 
 ```
-python3 narracao.py /caminho/do/modelo pf_dora   # audio/cena-NN.wav e tempos.json
+python3 narracao.py /caminho/do/modelo         # audio/cena-NN.wav e tempos.json (frases e tempos)
 python3 cena.py                                  # cenário iluminado (arte/fundo.npy)
 python3 video.py                                 # salter-harris.mp4
 python3 video.py --quadros 3.5 20                # só prévias em PNG
@@ -35,7 +35,7 @@ Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 2, figs. 2-10
 >
 > Salva para o próximo plantão de pediatria. Qual tipo você mais vê no PS?
 >
-> Mais questões assim no Orto Questões, grátis com a conta. O caminho está no perfil @ortoquestoes.
+> Treine para o TEOT, o TARO e a Cirurgia da Mão em www.ortoquestoes.com.br (grátis com a conta; o caminho está no perfil @ortoquestoes).
 >
 > #ortopedia #residenciamedica #teot #taro #ortopediapediatrica
 

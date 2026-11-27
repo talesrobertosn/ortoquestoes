@@ -21,8 +21,8 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 # Geometria (pixels da arte pequena)
 CAIXA = (12, 146, 302, 384)       # negatoscópio: moldura inteira (x0, y0, x1, y1)
 FILME = (20, 155, 294, 376)       # área de luz/filme dentro da moldura
-PLACA = (78, 44, 282, 98)         # placa de madeira do título
-LADRILHOS_Y = (106, 140)          # faixa dos ladrilhos S A L T R
+PLACA = (84, 28, 276, 72)         # placa de madeira do título
+LADRILHOS_Y = (76, 140)          # faixa dos ladrilhos S A L T R
 MESA_Y = 404                      # tampo da mesa
 JANELA = (6, 14, 54, 118)
 ABAJUR = (330, 364)               # ponto da lâmpada do abajur
@@ -491,6 +491,33 @@ def estante_esquerda() -> Camada:
     return c
 
 
+PLACA_SITE = (10, 474, 350, 514)   # placa fixa do site, abaixo das legendas
+
+
+def placa_site() -> Camada:
+    """Placa de madeira escura com filete de ouro e rebites: o endereço do site fica nela o vídeo inteiro."""
+    c = Camada()
+    x0, y0, x1, y1 = PLACA_SITE
+    m = (XX >= x0) & (XX < x1) & (YY >= y0) & (YY < y1)
+    m &= ~(((XX - x0) + (YY - y0) < 3) | ((x1 - 1 - XX) + (YY - y0) < 3) | ((XX - x0) + (y1 - 1 - YY) < 3) | ((x1 - 1 - XX) + (y1 - 1 - YY) < 3))
+    veio = ruido(71, 2.5, W, H) * 0.6 + ruido(72, 16, W, H) * 0.4
+    tom = 0.3 + (veio - 0.5) * 0.4 + np.sin(YY * 1.1 + veio * 6) * 0.05
+    c.pintar(m, rampa(["#0d0604", "#170b06", "#21110a", "#2e180d"], quantizar(np.clip(tom, 0, 1), 4, 0.6)))
+    fil = m & ~((XX >= x0 + 4) & (XX < x1 - 4) & (YY >= y0 + 4) & (YY < y1 - 4)) & ((XX >= x0 + 3) & (XX < x1 - 3) & (YY >= y0 + 3) & (YY < y1 - 3))
+    c.pintar(fil, OURO[3])
+    c.pintar(fil & ((YY == y0 + 3) | (XX == x0 + 3)), OURO[4])
+    c.pintar(fil & ((YY == y1 - 4) | (XX == x1 - 4)), OURO[1])
+    for (lx, ly) in ((x0 + 3, y0 + 3), (x1 - 4, y0 + 3), (x0 + 3, y1 - 4), (x1 - 4, y1 - 4)):
+        lo = (np.abs(XX - lx) + np.abs(YY - ly)) <= 3
+        c.pintar(lo, OURO[3])
+        c.pintar(lo & ((XX - lx) + (YY - ly) < -1), OURO[5])
+    c.pintar(m & (YY == y0), "#5a3a22")
+    c.pintar(m & (YY >= y1 - 2), "#050201")
+    # sombra projetada embaixo
+    c.pintar((XX >= x0 + 2) & (XX < x1 + 2) & (YY >= y1) & (YY < y1 + 3), "#000000", 0.55)
+    return c
+
+
 def tapete_chao() -> Camada:
     c = Camada()
     y = MESA_Y + 64
@@ -565,7 +592,7 @@ def montar() -> dict:
     est_big = desfocar(ampliar(cam_est.c), 2.2)
     fundo_big = sobre(fundo_big, est_big)
     meio = np.zeros((H, W, 4), dtype=np.float32)
-    for cam in (cam_chao, cam_mesa, cam_obj):
+    for cam in (cam_chao, cam_mesa, cam_obj, placa_site()):
         meio = sobre(meio, cam.c)
     meio_big = ampliar(meio)
     # chão e frente da mesa levemente desfocados (primeiro plano)

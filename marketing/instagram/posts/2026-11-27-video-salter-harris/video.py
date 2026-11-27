@@ -29,8 +29,8 @@ FPS = 30
 LW, LH = 1080, 1920
 FILME_X, FILME_Y = 25 * ESC, 161 * ESC          # canto do filme no vídeo
 LEAD = 0.3                                      # silêncio antes da primeira fala
-GAP = 0.22                                       # respiro entre cenas
-CAUDA = 1.6                                      # tempo extra do cartão final
+GAP = 0.16                                       # respiro entre cenas
+CAUDA = 1.5                                      # tempo extra do cartão final
 
 CREME = (246, 238, 219)
 OURO = (244, 207, 124)
@@ -46,7 +46,7 @@ LEGENDAS = {
     "t": ["*T* de Through:", "atravessa *tudo*.", "III e IV são *articulares*:", "*redução anatômica*."],
     "r": ["*R* de cRush:", "a fise é *esmagada*", "e *nenhum traço* aparece."],
     "virada": ["Por isso o *tipo V*", "quase nunca é visto no dia.", "Aparece *meses depois*,", "quando o osso *para de crescer*."],
-    "fim": ["Salva pro próximo *plantão*.", "Mais questões no *Orto Questões*."],
+    "fim": ["Salva pro próximo *plantão*.", "Treine para o *TEOT*, o *TARO* e a *Cirurgia da Mão*", "em *ortoquestoes.com.br*"],
 }
 TITULOS = {"gancho": "ADULTO x CRIANÇA", "virada": "MESES DEPOIS", "fim": "ORTO QUESTÕES"}
 TIPOS = {"s": 0, "a": 1, "l": 2, "t": 3, "r": 4}
@@ -55,6 +55,7 @@ ROMANOS = ["I", "II", "III", "IV", "V"]
 
 # ------------------------------------------------------------------ tempo
 def roteiro() -> list[dict]:
+    """Tempo de cada cena e de cada frase (vem de audio/tempos.json, gravado por narracao.py)."""
     tempos = json.load(open(os.path.join(AQUI, "audio", "tempos.json")))
     t = LEAD
     cenas = []
@@ -62,15 +63,8 @@ def roteiro() -> list[dict]:
         dur = c["seg"] + GAP
         if c["cena"] == "fim":
             dur += CAUDA
-        txts = LEGENDAS[c["cena"]]
-        pesos = [len(x.replace("*", "")) + 6 for x in txts]
-        tot = sum(pesos)
-        ini = []
-        acc = 0.0
-        for p in pesos:
-            ini.append(acc / tot * c["seg"])
-            acc += p
-        cenas.append({"id": c["cena"], "i": i, "t0": t, "dur": dur, "fala": c["seg"], "chunks": ini})
+        LEGENDAS[c["cena"]] = c["legendas"]
+        cenas.append({"id": c["cena"], "i": i, "t0": t, "dur": dur, "fala": c["seg"], "chunks": c["inicios"]})
         t += dur
     return cenas
 
@@ -292,6 +286,23 @@ def ladrilho_img(estado: str) -> np.ndarray:
 
 
 LAD_IMGS = {}
+LAD_CY = 92  # centro dos ladrilhos (arte pequena)
+SIGNIFICADOS = [("Straight", "reto"), ("Above", "acima"), ("Lower", "abaixo"), ("Through", "através"), ("cRush", "esmaga")]
+
+
+def desenhar_significados(img, alfas: list[float], ativo: int | None) -> None:
+    """Embaixo de cada letra: a palavra em inglês e o que ela quer dizer; uma vez explicada, fica até o fim."""
+    for i, (ing, pt) in enumerate(SIGNIFICADOS):
+        a = alfas[i]
+        if a <= 0:
+            continue
+        cx = (180 + (i - 2) * 52) * ESC
+        y = (LAD_CY + 19) * ESC
+        cor1 = OURO if ativo == i else (226, 200, 140)
+        t1 = texto_img(ing, "jakarta", 30, cor1, 800, 4, (6, 8, 8))
+        t2 = texto_img(pt, "jakarta", 34, CREME, 800, 4, (6, 8, 8))
+        colar(img, t1, int(cx - t1.shape[1] / 2), int(y - 20), a)  # topo fixo: as linhas ficam alinhadas
+        colar(img, t2, int(cx - t2.shape[1] / 2), int(y + 16), a)
 
 
 def desenhar_ladrilhos(img, n_visiveis: float, ativo: int | None, feitos: int, tl_pop: list[float], tempo: float) -> None:
@@ -302,8 +313,8 @@ def desenhar_ladrilhos(img, n_visiveis: float, ativo: int | None, feitos: int, t
         vis = suave((n_visiveis - i) * 1.0)
         if vis <= 0:
             continue
-        cx = (180 + (i - 2) * 44) * ESC
-        cy = 122 * ESC
+        cx = (180 + (i - 2) * 52) * ESC
+        cy = LAD_CY * ESC
         estado = "ativo" if ativo == i else ("feito" if i < feitos or (ativo is None and feitos >= 5) else "apagado")
         if ativo is None and feitos == 0:
             estado = "feito"
@@ -512,7 +523,7 @@ def cartao_final(img, a: float) -> None:
     colar_centro(img, lad, LW / 2, 700, a)
     colar_centro(img, texto_img("Orto Questões", "jersey", 150, CREME, None, 0, sombra=6), LW / 2, 860, a)
     colar_centro(img, texto_img("Questões de prova, comentadas.", "jakarta", 44, CREME, 600), LW / 2, 960, a)
-    colar_centro(img, texto_img("@ortoquestoes", "jakarta", 56, OURO, 800), LW / 2, 1040, a)
+    colar_centro(img, texto_img("www.ortoquestoes.com.br", "jakarta", 60, OURO, 800), LW / 2, 1045, a)
     colar_centro(img, texto_img("Fonte: Rockwood and Wilkins' Fractures in Children,", "jakarta", 30, (190, 196, 190), 500), LW / 2, 1130, a)
     colar_centro(img, texto_img("10ª ed., cap. 2, figs. 2-10 a 2-15", "jakarta", 30, (190, 196, 190), 500), LW / 2, 1172, a)
 
@@ -555,7 +566,7 @@ class Montador:
             chave = "duplo-gancho" if desliz < 0.3 else f"duplo-gancho-desliz:{round(desliz)}"
             rgb, ossos = filme_cache(chave)
         elif cid == "virada":
-            k = 16.0 * suave((tl - c["chunks"][2] + 0.1) / 1.2)
+            k = 16.0 * suave((tl - c["chunks"][1] + 0.1) / 1.2)
             rgb, ossos = filme_cache(f"virada:{round(k)}")
         else:
             desl = 0
@@ -634,7 +645,7 @@ class Montador:
             a, b = ossos
             rotulo_topo(img, "LADO BOM", 66, 14, 1.0)
             rotulo_topo(img, "LADO LESADO", 198, 14, 1.0)
-            k = 16.0 * suave((tl - c["chunks"][2] + 0.1) / 1.2)
+            k = 16.0 * suave((tl - c["chunks"][1] + 0.1) / 1.2)
             if k > 0.5:
                 # linha tracejada do comprimento esperado e a diferença
                 ya_bom = a.pt(0, float(a.ya(0)))[1]
@@ -646,8 +657,8 @@ class Montador:
                 y2 = int(FILME_Y + ya_mau * ESC)
                 img[y2:y_px, xb - 2:xb + 2] = hexa("#ff7860")
                 img[y2 - 2:y2 + 2, xb - 12:xb + 12] = hexa("#ff7860")
-                rotulo(img, "parou de crescer", 132 + 6, 34, 198, float(b.pt(0, float(b.yp(0)))[1]), suave((tl - c["chunks"][3]) / 0.3), cor=(255, 200, 180), tam=34)
-            if tl < c["chunks"][2]:
+                rotulo(img, "parou de crescer", 132 + 6, 34, 198, float(b.pt(0, float(b.yp(0)))[1]), suave((tl - c["chunks"][2]) / 0.3), cor=(255, 200, 180), tam=34)
+            if tl < c["chunks"][1]:
                 rotulo(img, "no dia: normal", 132 + 10, 34, 198, float(b.pt(0, float(b.yp(0)))[1]), suave((tl - 0.3) / 0.3), tam=34)
         elif cid == "fim":
             o = ossos[0]
@@ -658,7 +669,7 @@ class Montador:
         else:
             titulo = "SALTER-HARRIS"
         timg = texto_img(titulo, "jersey", 112 if len(titulo) <= 13 else 92, OURO, None, 0, sombra=6)
-        colar_centro(img, timg, LW / 2, 71 * ESC)
+        colar_centro(img, timg, LW / 2, (cena.PLACA[1] + cena.PLACA[3]) / 2 * ESC)
 
         # ---------------- ladrilhos SALTR
         if cid == "fise":
@@ -666,9 +677,12 @@ class Montador:
             if n > 0:
                 desenhar_ladrilhos(img, n, None, 0, [], t)
         elif cid in TIPOS:
-            desenhar_ladrilhos(img, 5, TIPOS[cid], TIPOS[cid], [], t)
+            i_at = TIPOS[cid]
+            desenhar_ladrilhos(img, 5, i_at, i_at, [], t)
+            desenhar_significados(img, [1.0 if j < i_at else (suave((tl - 0.25) / 0.35) if j == i_at else 0.0) for j in range(5)], i_at)
         elif cid in ("virada", "fim"):
             desenhar_ladrilhos(img, 5, 4 if cid == "virada" else None, 5, [], t)
+            desenhar_significados(img, [1.0] * 5, None)
 
         # ---------------- mascote
         anim = "raiox" if cid in ("gancho", "virada") else ("comemorando" if cid == "fim" else "orientando")
@@ -682,7 +696,10 @@ class Montador:
 
         # ---------------- cartão final (por cima, sem grão)
         if cid == "fim":
-            cartao_final(img, suave((tl - c["chunks"][1] - 0.2) / 0.5))
+            cartao_final(img, suave((tl - c["chunks"][1]) / 0.5))
+
+        # ---------------- placa fixa do site (o vídeo inteiro)
+        placa_site_texto(img)
 
         # ---------------- legenda
         ch = chunk_em(c, tl)
@@ -690,7 +707,7 @@ class Montador:
             leg = legenda_img(LEGENDAS[cid][ch])
             t_ch = tl - c["chunks"][ch]
             esc = 1.0 + 0.08 * (1 - suave(t_ch / 0.12))
-            y_leg = 1405 if cid != "fim" else 1405
+            y_leg = 1335
             colar_centro(img, leg, LW / 2, y_leg, 1.0 if tl < c["fala"] + 0.25 or cid == "fim" else max(0, 1 - (tl - c["fala"] - 0.25) / 0.1), esc)
         return np.clip(img, 0, 1)
 
@@ -708,6 +725,13 @@ class Montador:
         g = self.graos[int(t * FPS / 2) % len(self.graos)]
         img = img + np.repeat(np.repeat(g, 3, 0), 3, 1)[..., None]
         return img
+
+
+def placa_site_texto(img):
+    x0, y0, x1, y1 = [v * ESC for v in cena.PLACA_SITE]
+    cy = (y0 + y1) / 2
+    colar_centro(img, texto_img("Treine para o TEOT, o TARO e a Cirurgia da Mão", "jakarta", 36, CREME, 700, 4, (8, 5, 3)), LW / 2, cy - 27)
+    colar_centro(img, texto_img("www.ortoquestoes.com.br", "jakarta", 54, OURO, 800, 4, (8, 5, 3)), LW / 2, cy + 22)
 
 
 def rotulo_topo(img, txt, fcx, fy, alfa):
@@ -738,6 +762,8 @@ def trilha(m: Montador) -> np.ndarray:
         x = x / (np.abs(x).max() + 1e-6) * 0.86
         i0 = int(c["t0"] * sr)
         mix[i0:i0 + len(x)] += x[: max(0, n - i0)]
+
+    voz = mix.copy()
 
     def tom(freq, dur, vol, ataque=0.005, decai=6.0, harm=(1, 2, 3)):
         tt = np.arange(int(dur * sr)) / sr
@@ -778,16 +804,21 @@ def trilha(m: Montador) -> np.ndarray:
             por(tom(196, 0.5, 0.12, 0.003, 9, (1, 2)), c["t0"] + c["chunks"][1] + 0.1)
             por(tom(185, 0.6, 0.14, 0.003, 7, (1, 2, 4)), c["t0"] + c["chunks"][2])
         if cid == "virada":
-            por(tom(98, 1.4, 0.10, 0.2, 1.8, (1, 2)), c["t0"] + c["chunks"][2])
+            por(tom(98, 1.4, 0.10, 0.2, 1.8, (1, 2)), c["t0"] + c["chunks"][1])
         if cid == "fim":
             for k, f in enumerate((523.25, 659.25, 783.99, 1046.5)):
                 por(tom(f, 1.2, 0.07, 0.004, 3.5), c["t0"] + c["chunks"][1] + 0.2 + k * 0.09)
-    # tapete musical muito baixo: dois senos desafinados com tremolo lento (dá corpo sem brigar com a voz)
-    tt = np.arange(n) / sr
-    pad = (np.sin(2 * np.pi * 110 * tt) + 0.7 * np.sin(2 * np.pi * 164.8 * tt + 1) + 0.5 * np.sin(2 * np.pi * 220.6 * tt)) \
-        * (0.5 + 0.5 * np.sin(2 * np.pi * 0.17 * tt)) * 0.012
-    fade = np.minimum(1, tt / 1.5) * np.minimum(1, (m.total - tt).clip(0) / 1.5)
-    mix += (pad * fade).astype(np.float32)
+    # música de fundo animada (musica.py), bem baixa, abaixando ainda mais enquanto a voz fala (sidechain)
+    from musica import musica
+
+    mus = musica(m.total)
+    mus = np.pad(mus, (0, max(0, n - len(mus))))[:n]
+    env = np.abs(voz)
+    k = int(0.03 * sr)
+    env = np.convolve(env, np.ones(k) / k, "same")
+    env = np.convolve((env > 0.02).astype(np.float32), np.ones(int(0.25 * sr)) / int(0.25 * sr), "same")
+    duck = 1 - 0.5 * np.clip(env, 0, 1)
+    mix += (mus * 0.11 * duck).astype(np.float32)
     mix = mix[: int(m.total * sr)]
     pico = np.abs(mix).max()
     if pico > 0.98:
