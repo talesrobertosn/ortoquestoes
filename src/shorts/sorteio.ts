@@ -11,8 +11,11 @@
 
 export const DIA = 86_400_000
 
-/** 0 TEOT, 1 TARO, 2 Cirurgia da Mão, 3 outras provas, 4 OrtoQuestões Simulados com imagem (scripts/gerar_shorts.py). */
-export type GrupoShort = 0 | 1 | 2 | 3 | 4
+/**
+ * 0 TEOT, 1 TARO, 2 Cirurgia da Mão, 3 outras provas, 4 OrtoQuestões Simulados de TEOT e TARO (com imagem),
+ * 5 Simulados Fellowship Quadril, 6 Simulados SIMÃO, 7 Simulados SBCM (scripts/gerar_shorts.py).
+ */
+export type GrupoShort = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
 
 export interface ItemShort {
   id: string
@@ -29,8 +32,12 @@ export interface AjustesShorts {
   taro: boolean
   mao: boolean
   outras: boolean
-  /** OrtoQuestões Simulados: só as questões com imagem (26/11/2026). */
+  /** OrtoQuestões Simulados de TEOT e TARO: só as questões com imagem (26/11/2026). */
   simulados: boolean
+  /** Simulados de especialidade, cada um à parte (Tales, 27/11/2026). */
+  simQuadril: boolean
+  simSimao: boolean
+  simSbcm: boolean
   soImagem: boolean
   soIneditas: boolean
   revanche: boolean
@@ -40,7 +47,7 @@ export interface AjustesShorts {
 }
 
 export const AJUSTES_PADRAO: AjustesShorts = {
-  teot: true, taro: true, mao: false, outras: false, simulados: true,
+  teot: true, taro: true, mao: false, outras: false, simulados: true, simQuadril: false, simSimao: false, simSbcm: false,
   soImagem: false, soIneditas: false, revanche: true, passarSozinha: true, som: true,
 }
 
@@ -72,10 +79,10 @@ export function lerIndice(json: { temas: string[]; q: [string, number, number, n
 /**
  * As questões que podem entrar no feed com estes ajustes. Com TEOT e TARO, as questões com imagem das
  * outras provas de ortopedia geral também entram (são poucas imagens no TEOT e no TARO); as de
- * Cirurgia da Mão só entram com a Mão ligada.
+ * Cirurgia da Mão e os simulados de especialidade (Fellowship Quadril, SIMÃO, SBCM) só entram com o próprio botão.
  */
 export function aptas(itens: ItemShort[], a: AjustesShorts): ItemShort[] {
-  const grupos = [a.teot, a.taro, a.mao, a.outras, a.simulados ?? true]
+  const grupos = [a.teot, a.taro, a.mao, a.outras, a.simulados ?? true, !!a.simQuadril, !!a.simSimao, !!a.simSbcm]
   const nenhum = !grupos.some(Boolean)
   return itens.filter((q) => {
     if (a.soImagem && !q.imagem) return false

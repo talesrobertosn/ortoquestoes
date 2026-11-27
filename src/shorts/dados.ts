@@ -62,7 +62,8 @@ export function capasDoDia(lista: CapaShort[], n: number, semente = String(Math.
     // TEOT, TARO e OrtoQuestões Simulados (com imagem) na frente, com o mesmo peso (Tales, 26/11/2026).
     return (c.grupo <= 1 || c.grupo === 4 ? 0 : 0.5) + (hist[c.id] ? 1 : 0) + (x % 1000) / 2000
   }
-  const ordem = [...lista].filter((c) => c.grupo !== 2).sort((a, b) => pontua(a) - pontua(b))
+  // Mão e simulados de especialidade (5 a 7) ficam fora da prateleira (27/11/2026).
+  const ordem = [...lista].filter((c) => c.grupo !== 2 && c.grupo < 5).sort((a, b) => pontua(a) - pontua(b))
   const escolhidas: CapaShort[] = []
   const temas = new Set<string>()
   for (const c of ordem) {

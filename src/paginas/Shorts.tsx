@@ -20,7 +20,7 @@ import {
   totalCoracoes, type SaldoShorts,
 } from '../shorts/dados'
 import { IconeSh, SimboloShorts } from '../shorts/Icones'
-import { tocarAcerto } from '../shorts/som'
+import { tocarAcerto, tocarErro } from '../shorts/som'
 import { registrar, sortear, textoRevisao, type AjustesShorts, type Historico, type ItemShort, type RespostaShort } from '../shorts/sorteio'
 import { href, navegar, usarRota } from '../util/rotas'
 import '../estilos/componentes/ShortsCapas.css'
@@ -256,7 +256,7 @@ export function Shorts() {
     if (ordem && q.gabarito) registrarExibida(q.id, letraExibida(ordem, q.gabarito))
     definirFeitos((f) => ({ ...f, [s.chave]: { letra: original, certo, ms } }))
     definirSeq((n) => (certo ? n + 1 : 0))
-    if (certo && ajustes.som) tocarAcerto({ sequencia: seq + 1, fixou: !!s.revisao })
+    if (ajustes.som) { if (certo) tocarAcerto({ sequencia: seq + 1, fixou: !!s.revisao }); else tocarErro() }
     try { navigator.vibrate?.(certo ? 14 : [18, 60, 18]) } catch { /* sem vibração */ }
 
     const indiceSlide = slides.findIndex((x) => x.chave === s.chave)
@@ -534,8 +534,8 @@ function SlideQuestao(p: PropsSlide) {
           <div className="sh-corpo">
             {!q ? <div className="sh-carregando-q"><i /><i /><i /></div> : <>
               <div className="sh-meta">
-                {q.prova || q.ano ? <span className="sh-prova">{[q.prova, q.ano].filter(Boolean).join(' ')}</span>
-                  : q.simulado ? <span className="sh-prova">OrtoQuestões Simulados</span> : null}
+                {q.simulado ? <span className="sh-prova">{q.prova ? `Simulados ${q.prova}` : 'OrtoQuestões Simulados'}</span>
+                  : q.prova || q.ano ? <span className="sh-prova">{[q.prova, q.ano].filter(Boolean).join(' ')}</span> : null}
                 <span>{temaCurto(q.tema)}</span>
               </div>
               {revisao && (
@@ -821,10 +821,11 @@ function FimDeBloco({ indice, ids, feitos, slides, nomeTema, aoContinuar }: { in
 function Ajustes({ inicial, aoFechar, aoAplicar }: { inicial: AjustesShorts; aoFechar: () => void; aoAplicar: (a: AjustesShorts) => void }) {
   const [a, definir] = useState(inicial)
   const troca = (k: keyof AjustesShorts) => definir((x) => ({ ...x, [k]: !x[k] }))
-  const provas: Array<[keyof AjustesShorts, string]> = [['teot', 'TEOT'], ['taro', 'TARO'], ['simulados', 'OrtoQuestões Simulados'], ['mao', 'Cirurgia da Mão'], ['outras', 'Outras provas']]
+  const provas: Array<[keyof AjustesShorts, string]> = [['teot', 'TEOT'], ['taro', 'TARO'], ['simulados', 'OrtoQuestões Simulados'], ['mao', 'Cirurgia da Mão'], ['outras', 'Outras provas'],
+    ['simQuadril', 'Simulados Fellowship Quadril'], ['simSimao', 'Simulados SIMÃO'], ['simSbcm', 'Simulados SBCM']]
   const chaves: Array<[keyof AjustesShorts, string, string]> = [
     ['passarSozinha', 'Passar sozinha ao acertar', 'A próxima vem em 5 segundos; tocar no comentário pausa'],
-    ['som', 'Som ao acertar', 'Um sininho baixinho, só quando você acerta'],
+    ['som', 'Sons', 'Um sininho quando você acerta e um toque curtinho quando erra'],
     ['soImagem', 'Só com imagem', 'Raio-X, ressonância, fotos e figuras'],
     ['soIneditas', 'Só inéditas', 'Questões que você ainda não fez nos Shorts'],
     ['revanche', 'Revisão surpresa', 'Às vezes uma questão volta, de 3 a 7 dias depois'],
@@ -834,13 +835,13 @@ function Ajustes({ inicial, aoFechar, aoAplicar }: { inicial: AjustesShorts; aoF
       <div className="sh-folha-config-caixa" role="dialog" aria-labelledby="sh-t-config">
         <span className="sh-alca" aria-hidden="true" />
         <h3 id="sh-t-config">Seus Shorts</h3>
-        <p className="sh-config-apoio">O que entra no sorteio. Dos OrtoQuestões Simulados, só as questões com imagem. Com TEOT e TARO, entram também as questões com imagem das outras provas de ortopedia geral.</p>
+        <p className="sh-config-apoio">O que entra no sorteio. OrtoQuestões Simulados são os de TEOT e TARO, só com imagem; os de Fellowship Quadril, SIMÃO e SBCM têm botão próprio. Com TEOT e TARO, entram também as questões com imagem das outras provas de ortopedia geral.</p>
         <p className="sh-config-rotulo">Provas</p>
         <div className="sh-chips">{provas.map(([k, r]) => <button key={k} type="button" className="sh-chip-sel" aria-pressed={!!a[k]} onClick={() => troca(k)}>{r}</button>)}</div>
         <div className="sh-chaves">
           {chaves.map(([k, t, d]) => (
             <label key={k} className="sh-chave"><span><strong>{t}</strong><small>{d}</small>
-              {k === 'som' && <button type="button" className="sh-ouvir" onClick={(e) => { e.preventDefault(); tocarAcerto({ sequencia: 5 }) }}>Ouvir</button>}
+              {k === 'som' && <button type="button" className="sh-ouvir" onClick={(e) => { e.preventDefault(); tocarAcerto({ sequencia: 5 }); setTimeout(tocarErro, 1900) }}>Ouvir</button>}
             </span><input type="checkbox" checked={!!a[k]} onChange={() => troca(k)} /><i /></label>
           ))}
         </div>
