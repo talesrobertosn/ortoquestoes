@@ -4,7 +4,9 @@
 sem baixar os arquivos de tema inteiros.
 
 - public/acervo/shorts.json: {"v", "temas", "q": [[id, tema, grupo, imagem, tamanho], ...]}
-  grupo: 0 TEOT, 1 TARO, 2 Cirurgia da Mão, 3 outras provas, 4 OrtoQuestões Simulados (só as com imagem);
+  grupo: 0 TEOT, 1 TARO, 2 Cirurgia da Mão (provas de verdade: SBCM, SIMÃO, ENARE e as seleções de mão),
+  3 outras provas, 4 OrtoQuestões Simulados de TEOT e TARO (só as com imagem), 5 OrtoQuestões Simulados Fellowship
+  Quadril, 6 OrtoQuestões Simulados SIMÃO, 7 OrtoQuestões Simulados SBCM (27/11/2026);
   imagem: 1 ou 0; tamanho: letras do
   enunciado com as alternativas.
 - public/acervo/shorts-capas.json: as questões com imagem, com o arquivo, as medidas e o começo do
@@ -23,7 +25,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from comum import DIR_ACERVO, DIR_COMENTARIOS, DIR_TEMAS  # noqa: E402
 
-GRUPOS = {"TEOT": 0, "TARO": 1, "SBCM": 2, "ENARE Cirurgia da Mão": 2}
+GRUPOS = {"TEOT": 0, "TARO": 1, "SBCM": 2, "SIMÃO": 2, "ENARE Cirurgia da Mão": 2}
+# Simulados de especialidade, cada um com o seu botão nos ajustes (Tales, 27/11/2026).
+GRUPOS_SIMULADOS = {"Fellowship Quadril": 5, "SIMÃO": 6, "SBCM": 7}
+ROTULOS = {4: "Simulados", 5: "Simulados Fellowship Quadril", 6: "Simulados SIMÃO", 7: "Simulados SBCM"}
 
 
 def trecho(texto: str, limite: int = 110) -> str:
@@ -58,13 +63,18 @@ def principal() -> int:
                 if not imagens:
                     continue
                 grupo = 4
+            elif q.get("simulado"):
+                grupo = GRUPOS_SIMULADOS.get(str(q.get("prova")), 3)
+            elif q.get("area") == "cirurgia-mao":
+                # Seleções de Cirurgia da Mão (USP-SP, UFG, PUC-SP, INTO...): ficam com a Mão, nunca com TEOT e TARO.
+                grupo = 2
             else:
                 grupo = GRUPOS.get(str(q.get("prova")), 3)
             tamanho = len(q.get("enunciado", "")) + sum(len(a.get("texto", "")) for a in q["alternativas"])
             linhas.append([q["id"], t, grupo, 1 if imagens else 0, tamanho])
             if imagens:
                 im = imagens[0]
-                prova = "Simulados" if grupo == 4 else str(q.get("prova") or "")
+                prova = ROTULOS.get(grupo) or str(q.get("prova") or "")
                 capas.append([q["id"], t, grupo, im["arquivo"], im.get("largura") or 0, im.get("altura") or 0,
                               prova, q.get("ano") or 0, trecho(q.get("enunciado", ""))])
 

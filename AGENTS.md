@@ -104,6 +104,12 @@ e volta surpresa em 3 a 7 dias. Índice leve gerado por `scripts/gerar_shorts.py
 histórico, corações (que gravam nota 10 na avaliação do comentário) e o painel (Conteúdo › Shorts), com a lista de quem está vendo agora (`20261125233000_shorts_pessoas.sql`). Sem conta, a pessoa vê as questões, mas responder pede a conta. A resposta nos Shorts
 conta no desempenho com a marca `sh` em `respondidas` e fica fora da fila da Revisão.
 
+Atualização de 27/11/2026 (Tales): grupos do índice separados. OrtoQuestões Simulados (grupo 4) são só os de TEOT e
+TARO, com imagem; Simulados Fellowship Quadril (5), SIMÃO (6) e SBCM (7) têm botão próprio, desligado por padrão; as
+provas SIMÃO e as seleções de Cirurgia da Mão (`area: cirurgia-mao`) vão para o grupo 2 (Mão) e nunca entram pelo
+"outras provas com imagem" de TEOT e TARO. Sons em `src/shorts/som.ts`: baú no acerto e "tóin-tóin" curto no erro;
+no celular pede a sessão "playback" e destrava dentro do toque (o "ambient" antigo deixava o iPhone mudo no silencioso).
+
 ## Flashcards (Torneio de Flashcards, desde 12/10/2026)
 
 Projeto de vários dias, feito com Claude e com ChatGPT. Antes de mexer em qualquer coisa de

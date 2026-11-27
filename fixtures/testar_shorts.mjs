@@ -25,6 +25,15 @@ try {
   assert.ok(aptas.some((q) => q.grupo === 4), 'Simulados com imagem entram por padrão')
   assert.ok(s.aptas(itens, { ...s.AJUSTES_PADRAO, simulados: false }).every((q) => q.grupo !== 4), 'Simulados saem quando desligados')
   assert.ok(s.aptas(itens, { ...s.AJUSTES_PADRAO, soImagem: true }).every((q) => q.imagem), 'só com imagem')
+  // Simulados de especialidade e seleções de mão separados (27/11/2026): nada disso entra com TEOT e TARO.
+  assert.ok(aptas.every((q) => q.grupo < 5), 'Fellowship Quadril, SIMÃO e SBCM ficam de fora por padrão')
+  for (const [k, g] of [['simQuadril', 5], ['simSimao', 6], ['simSbcm', 7]]) {
+    const so = s.aptas(itens, { ...s.AJUSTES_PADRAO, teot: false, taro: false, simulados: false, [k]: true })
+    assert.ok(so.length > 0 && so.every((q) => q.grupo === g), `${k} sozinho traz só o próprio simulado`)
+  }
+  const capasIdx = JSON.parse(await readFile('public/acervo/shorts-capas.json', 'utf8'))
+  const capasMao = new Set(capasIdx.q.filter((c) => /SIMÃO|SBCM|Fellowship/.test(c[6])).map((c) => c[0]))
+  assert.ok(aptas.every((q) => !capasMao.has(q.id)), 'nenhuma capa de SIMÃO, SBCM ou Fellowship no padrão')
 
   // Peso da imagem: mira ~60% sem roteiro fixo.
   assert.equal(s.pesoImagem(0, 10), 1)
