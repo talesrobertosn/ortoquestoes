@@ -1,16 +1,19 @@
-"""Narração do vídeo Salter-Harris: voz masculina brasileira sintética local (Piper, edresson), "humanizada".
+"""Narração do vídeo Salter-Harris com voz de professor (Tales, 27/11/2026: "faça uma voz boa").
 
-Cada cena é uma lista de frases (fala, legenda). Cada frase é gerada à parte, com velocidade levemente variada e pausa
-natural depois (vírgula curta, ponto médio, reticências longa); as frases de ênfase saem um pouco mais devagar. A voz é
-a cadu do Piper (adulta e grave; a do Kokoro soava portuguesa de Portugal e a edresson, infantil, Tales 27/11/2026), e o áudio recebe
-um tratamento leve de locução (corta graves embolados, dá presença, compressão suave e uma sala pequena).
+Motor: Chatterbox Multilingual (Resemble AI, licença MIT, uso comercial permitido), que fala português imitando uma
+voz de referência. A referência é um locutor brasileiro adulto do Common Voice da Mozilla (domínio público, CC0),
+escolhido por medida (ruído de fundo, faixa do microfone e tom grave com boa variação de entonação): falante
+c13a453087ed, mineiro, 30 e poucos anos. As vozes anteriores (Kokoro, Piper edresson e cadu) foram recusadas.
 
-Grava audio/cena-NN.wav e audio/tempos.json (duração de cada cena e o início de cada frase, para as legendas).
+Cada frase é gerada à parte e conferida por um reconhecedor de fala (Whisper small): se sair embolada, é refeita (até
+4 tentativas, fica a melhor). Pausas naturais entre as frases; leve tratamento de locução.
 
-    python3 narracao.py [pasta_do_modelo]
+    python3 narracao.py [referencia.wav]
+Grava audio/cena-NN.wav e audio/tempos.json (início de cada frase e a legenda correspondente).
 """
 import json
 import os
+import re
 import subprocess
 import sys
 
@@ -18,11 +21,12 @@ import numpy as np
 import soundfile as sf
 from scipy.signal import butter, lfilter
 
-MODELO = sys.argv[1] if len(sys.argv) > 1 else "/tmp/claude-0/sherpa/vits-piper-pt_BR-cadu-medium/pt_BR-cadu-medium.onnx"
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SAIDA = os.path.join(AQUI, "audio")
+REF = sys.argv[1] if len(sys.argv) > 1 else "/tmp/claude-0/cv/ref-c13a453087ed.wav"
 
-# (cena, [(fala com grafia fonética, legenda na tela; *palavra* = destaque em ouro)])
+# (cena, [(fala, legenda na tela; *palavra* = destaque em ouro)]). Na fala, palavras em inglês vão escritas como se
+# pronunciam em português, para o modelo acertar.
 CENAS = [
     ("gancho", [
         ("Olha isso: mesma queda, mesmo punho.", "Mesma queda, mesmo punho."),
@@ -30,155 +34,140 @@ CENAS = [
         ("Na criança... quem paga é a fise.", "Na *criança*, quem paga é a *fise*."),
     ]),
     ("fise", [
-        ("A placa de crescimento é cartilagem,", "A placa de crescimento é *cartilagem*,"),
-        ("mais fraca que o osso e que o ligamento.", "mais fraca que o osso e o ligamento."),
-        ("Sálter e Rárris: cinco tipos.", "Salter e Harris: *cinco tipos*."),
-        ("Decora numa palavra: sálter!", "Decora: *SALTR*."),
+        ("A fise é cartilagem: o ponto fraco do osso da criança.", "A fise é *cartilagem*: o ponto fraco do osso."),
+        ("Sálter e Rárris dividiram essas lesões em cinco tipos.", "Salter e Harris: *cinco tipos*."),
+        ("E dá pra decorar com uma palavra só: sálter.", "Decora uma palavra: *SALTR*."),
     ]),
     ("s", [
-        ("Ésse, de strêit: reto.", "*S* de Straight: *reto*."),
-        ("Passa reto pela fise,", "passa *reto* pela fise,"),
-        ("e o raio-x pode vir quase normal.", "e o raio-x pode vir *quase normal*."),
+        ("Ésse, de strêit: passa reto pela fise.", "*S*traight: passa *reto* pela fise."),
+        ("E o raio-x pode vir quase normal.", "O raio-x pode vir *quase normal*."),
     ]),
     ("a", [
-        ("A, de abâv: acima.", "*A* de Above: *acima*."),
-        ("Sobe pela metáfise", "sobe pela *metáfise*"),
-        ("e leva junto o Térston Rólan.", "e leva o *Thurston-Holland*."),
-        ("É o mais comum.", "É o *mais comum*."),
+        ("A, de abâv: sobe pela metáfise", "*A*bove: sobe pela *metáfise*"),
+        ("e leva junto o fragmento de Térston Rólan.", "e leva o *Thurston-Holland*."),
+        ("É o tipo mais comum.", "É o tipo *mais comum*."),
     ]),
     ("l", [
-        ("Éle, de lôuer: abaixo.", "*L* de Lower: *abaixo*."),
-        ("Desce pela epífise", "desce pela *epífise*"),
+        ("Éle, de lôuer: desce pela epífise", "*L*ower: desce pela *epífise*"),
         ("e entra na articulação.", "e entra na *articulação*."),
     ]),
     ("t", [
-        ("Tê, de thrú: através.", "*T* de Through: *através*."),
-        ("Atravessa tudo.", "atravessa *tudo*."),
-        ("Três e quatro são articulares:", "III e IV são *articulares*:"),
-        ("redução anatômica.", "*redução anatômica*."),
+        ("Tê, de thrú: atravessa tudo.", "*T*hrough: atravessa *tudo*."),
+        ("Os tipos três e quatro são articulares:", "III e IV são *articulares*:"),
+        ("pedem redução anatômica.", "*redução anatômica*."),
     ]),
     ("r", [
-        ("Érre, de crâsh: esmagar.", "*R* de cRush: *esmagar*."),
-        ("A fise é esmagada,", "a fise é *esmagada*"),
+        ("Érre, de crâsh: a fise é esmagada", "c*R*ush: a fise é *esmagada*"),
         ("e nenhum traço aparece.", "e *nenhum traço* aparece."),
     ]),
     ("virada", [
-        ("Por isso o tipo cinco quase nunca aparece no dia:", "O *tipo V* quase nunca aparece no dia:"),
-        ("só meses depois,", "só *meses depois*,"),
+        ("Por isso, o tipo cinco quase nunca aparece no dia.", "O *tipo V* quase nunca aparece no dia."),
+        ("Só meses depois,", "Só *meses depois*,"),
         ("quando o osso para de crescer.", "quando o osso *para de crescer*."),
     ]),
     ("fim", [
-        ("Salva pro próximo plantão!", "Salva pro próximo *plantão*."),
-        ("Treina pro Teót, Táro, e Cirurgia da Mão:", "Treine para o *TEOT*, o *TARO* e a *Cirurgia da Mão*"),
-        ("em ortoquestões ponto com ponto bê érre.", "em *ortoquestoes.com.br*"),
+        ("Salva pra revisar no próximo plantão.", "Salva para o próximo *plantão*."),
+        ("E treina pro Teót, pro Táro e pra Cirurgia da Mão, no ortoquestões ponto com ponto bê érre.",
+         "Treine em *ortoquestoes.com.br*"),
     ]),
 ]
-
-VELOCIDADE = 1.38
-TEMPO = 1.06  # aceleração final sem mudar o tom
-# frases de ênfase (saem um pouco mais devagar)
-ENFASE = {"Na criança... quem paga é a fise.", "só meses depois,", "quando o osso para de crescer.",
-          "redução anatômica.", "e nenhum traço aparece."}
+TEMPO = 1.04  # leve aceleração final, sem mudar o tom
 
 
 def pausa_depois(txt: str) -> float:
     t = txt.rstrip()
     if t.endswith("...") or t.endswith("!"):
-        return 0.34
+        return 0.30
     if t.endswith(".") or t.endswith(":"):
-        return 0.22
+        return 0.20
     if t.endswith(","):
-        return 0.10
-    return 0.06
+        return 0.08
+    return 0.04
 
 
-def aparar(a: np.ndarray, sr: int, limiar: float = 0.012, folga: float = 0.03) -> np.ndarray:
-    """Corta o silêncio das pontas de cada frase (a pausa entre frases é controlada por pausa_depois)."""
+def aparar(a: np.ndarray, sr: int, limiar: float = 0.02, folga: float = 0.04) -> np.ndarray:
     env = np.convolve(np.abs(a), np.ones(int(0.01 * sr)) / int(0.01 * sr), "same")
-    idx = np.where(env > limiar)[0]
+    idx = np.where(env > limiar * max(np.abs(a).max(), 1e-6))[0]
     if not len(idx):
         return a
-    i0 = max(0, idx[0] - int(folga * sr))
-    i1 = min(len(a), idx[-1] + int(folga * 2 * sr))
-    return a[i0:i1]
+    return a[max(0, idx[0] - int(folga * sr)):min(len(a), idx[-1] + int(folga * 3 * sr))]
 
 
 def locucao(a: np.ndarray, sr: int) -> np.ndarray:
-    """Tratamento de locução: passa-alta, presença, compressão suave e uma sala pequena."""
-    b, c = butter(2, 85 / (sr / 2), "high")
+    """Passa-alta, um pouco de presença e compressão suave (sem sala: a referência já tem ambiente)."""
+    b, c = butter(2, 75 / (sr / 2), "high")
     a = lfilter(b, c, a)
-    # presença (~3 kHz) e um pouco de corpo (~180 Hz), somando bandas filtradas
-    b, c = butter(2, [2200 / (sr / 2), 4500 / (sr / 2)], "band")
-    a = a + 0.18 * lfilter(b, c, a)
-    b, c = butter(2, [140 / (sr / 2), 260 / (sr / 2)], "band")
+    b, c = butter(2, [2500 / (sr / 2), 5000 / (sr / 2)], "band")
     a = a + 0.12 * lfilter(b, c, a)
-    # compressão suave (envelope)
     env = np.convolve(np.abs(a), np.ones(int(0.01 * sr)) / int(0.01 * sr), "same")
-    ganho = 1 / (1 + np.maximum(0, env - 0.12) * 2.2)
-    a = a * ganho
-    # sala pequena: resposta de ruído com decaimento rápido, bem baixa
-    rng = np.random.default_rng(1)
-    n = int(0.18 * sr)
-    ir = rng.normal(0, 1, n) * np.exp(-np.arange(n) / (0.04 * sr))
-    ir /= np.abs(ir).sum()
-    sala = np.convolve(a, ir)[: len(a)]
-    a = a * 0.95 + sala * 0.5
+    a = a / (1 + np.maximum(0, env / (env.max() + 1e-9) - 0.35) * 1.5)
     return (a / (np.abs(a).max() + 1e-9) * 0.9).astype(np.float32)
 
 
-def sintetizador():
-    """Voz masculina brasileira do Piper, "cadu" (qualidade média, 22 kHz, grave: F0 perto de 120 Hz, tom de professor).
-    Modelo: vits-piper-pt_BR-cadu-medium, das releases tts-models do k2-fsa/sherpa-onnx no GitHub."""
-    import wave
-    import io
+def normalizar(s: str) -> list:
+    return re.sub(r"[^a-zà-ú ]", " ", s.lower()).split()
 
-    from piper import PiperVoice, SynthesisConfig
 
-    voz = PiperVoice.load(MODELO)
-
-    def falar(texto: str, vel: float):
-        buf = io.BytesIO()
-        with wave.open(buf, "wb") as w:
-            voz.synthesize_wav(texto, w, syn_config=SynthesisConfig(length_scale=1 / vel, noise_scale=0.667, noise_w_scale=0.8))
-        buf.seek(0)
-        with wave.open(buf) as w:
-            sr = w.getframerate()
-            a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
-        return a, sr
-
-    return falar
+def wer(ref: str, hip: str) -> float:
+    a, b = normalizar(ref), normalizar(hip)
+    d = np.zeros((len(a) + 1, len(b) + 1))
+    d[:, 0] = range(len(a) + 1)
+    d[0, :] = range(len(b) + 1)
+    for i in range(1, len(a) + 1):
+        for j in range(1, len(b) + 1):
+            d[i, j] = min(d[i - 1, j] + 1, d[i, j - 1] + 1, d[i - 1, j - 1] + (a[i - 1] != b[j - 1]))
+    return d[-1, -1] / max(len(a), 1)
 
 
 def main() -> None:
-    falar = sintetizador()
+    import torch
+    from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+    from transformers import pipeline
+
+    torch.set_num_threads(os.cpu_count() or 4)
+    torch.manual_seed(7)
+    tts = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+    asr = pipeline("automatic-speech-recognition", model="openai/whisper-small", device="cpu")
+    sr = tts.sr
     os.makedirs(SAIDA, exist_ok=True)
-    rng = np.random.default_rng(11)
     tempos = []
-    sr = 16000
     for i, (cid, frases) in enumerate(CENAS):
         partes, inicios, t = [], [], 0.0
         for j, (fala, _leg) in enumerate(frases):
-            vel = VELOCIDADE * (0.92 if fala in ENFASE else 1.0) * (1 + rng.uniform(-0.035, 0.035))
-            a, sr = falar(fala, vel)
-            a = aparar(a, sr)
+            melhor = None
+            for tentativa in range(4):
+                w = tts.generate(fala, language_id="pt", audio_prompt_path=REF, exaggeration=0.55, cfg_weight=0.5,
+                                 temperature=0.75).squeeze().numpy().astype(np.float32)
+                w = aparar(w, sr)
+                txt = asr({"raw": w, "sampling_rate": sr},
+                          generate_kwargs={"language": "portuguese", "task": "transcribe"})["text"]
+                # palavras técnicas e em inglês escritas "à brasileira" erram no reconhecedor; vale o conjunto
+                e = wer(fala, txt)
+                dur_ok = 0.045 * len(fala) < len(w) / sr < 0.13 * len(fala) + 0.8  # sem cortes nem arrasto
+                nota = e + (0 if dur_ok else 1)
+                print(f"  {cid}/{j} tentativa {tentativa}: erro {e:.2f} dur {len(w)/sr:.1f}s | {txt.strip()}", flush=True)
+                if melhor is None or nota < melhor[0]:
+                    melhor = (nota, w)
+                if nota <= 0.25:
+                    break
+            w = melhor[1]
             inicios.append(round(t, 3))
             p = pausa_depois(fala) if j < len(frases) - 1 else 0.0
-            partes.append(a)
-            partes.append(np.zeros(int(p * sr), np.float32))
-            t += len(a) / sr + p
+            partes += [w, np.zeros(int(p * sr), np.float32)]
+            t += len(w) / sr + p
         audio = locucao(np.concatenate(partes), sr)
-        # acelera sem mudar o tom (atempo do ffmpeg): a voz do Piper é lenta mesmo com length_scale baixo
+        caminho = f"{SAIDA}/cena-{i:02d}.wav"
         tmp = f"{SAIDA}/tmp.wav"
         sf.write(tmp, audio, sr)
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-af", f"atempo={TEMPO}", f"{SAIDA}/cena-{i:02d}.wav"], check=True)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-af", f"atempo={TEMPO}", caminho], check=True)
         os.remove(tmp)
-        audio, sr = sf.read(f"{SAIDA}/cena-{i:02d}.wav", dtype="float32")
+        audio, _ = sf.read(caminho, dtype="float32")
         inicios = [round(x / TEMPO, 3) for x in inicios]
         tempos.append({"cena": cid, "seg": round(len(audio) / sr, 3), "inicios": inicios,
                        "legendas": [leg for _f, leg in frases]})
-        print(cid, round(len(audio) / sr, 2))
-    json.dump({"sr": sr, "voz": "piper pt_BR cadu medium", "cenas": tempos}, open(f"{SAIDA}/tempos.json", "w"),
-              ensure_ascii=False, indent=1)
+        print(cid, round(len(audio) / sr, 2), flush=True)
+    json.dump({"sr": sr, "voz": "chatterbox multilingual + referência Common Voice c13a453087ed", "cenas": tempos},
+              open(f"{SAIDA}/tempos.json", "w"), ensure_ascii=False, indent=1)
     print("total", round(sum(t["seg"] for t in tempos), 2))
 
 

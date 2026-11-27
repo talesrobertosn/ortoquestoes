@@ -48,7 +48,7 @@ LEGENDAS = {
     "virada": ["O *tipo V* quase nunca aparece no dia:", "só *meses depois*,", "quando o osso *para de crescer*."],
     "fim": ["Salva para o próximo *plantão*.", "Treine em *ortoquestoes.com.br*"],
 }
-SEM_VOZ = True  # Tales, 27/11/2026: as vozes sintéticas não ficaram boas; o vídeo conta a história em texto + música
+SEM_VOZ = False  # com narração (Chatterbox + locutor brasileiro, narracao.py); True = só texto e música
 MINIMO = {"gancho": 4.4, "fise": 5.4, "s": 3.6, "a": 4.4, "l": 3.6, "t": 4.4, "r": 3.6, "virada": 5.6, "fim": 2.6}
 TITULOS = {"gancho": "ADULTO x CRIANÇA", "virada": "MESES DEPOIS", "fim": "ORTO QUESTÕES"}
 TIPOS = {"s": 0, "a": 1, "l": 2, "t": 3, "r": 4}
@@ -63,7 +63,8 @@ def roteiro() -> list[dict]:
         t = LEAD
         cenas = []
         for i, c in enumerate(tempos["cenas"]):
-            dur = c["seg"] + GAP + (CAUDA if c["cena"] == "fim" else 0)
+            # a animação de cada tipo precisa de ~3 s mesmo se a fala for curta
+            dur = max(c["seg"] + GAP, MINIMO[c["cena"]] * 0.8) + (CAUDA if c["cena"] == "fim" else 0)
             LEGENDAS[c["cena"]] = c["legendas"]
             cenas.append({"id": c["cena"], "i": i, "t0": t, "dur": dur, "fala": c["seg"], "chunks": c["inicios"]})
             t += dur
