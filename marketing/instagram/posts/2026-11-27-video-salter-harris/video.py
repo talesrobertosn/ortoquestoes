@@ -30,7 +30,7 @@ LW, LH = 1080, 1920
 FILME_X, FILME_Y = 25 * ESC, 161 * ESC          # canto do filme no vídeo
 LEAD = 0.3                                      # silêncio antes da primeira fala
 GAP = 0.16                                       # respiro entre cenas
-CAUDA = 1.5                                      # tempo extra do cartão final
+CAUDA = 2.6                                      # tempo extra do cartão final
 
 CREME = (246, 238, 219)
 OURO = (244, 207, 124)
@@ -39,15 +39,17 @@ VERMELHO = (255, 120, 96)
 # ------------------------------------------------------------------ roteiro: legendas (o que se lê) por cena
 LEGENDAS = {
     "gancho": ["Mesma queda, mesmo punho.", "No *adulto*, quebra o osso.", "Na *criança*, quem paga é a *fise*."],
-    "fise": ["A placa de crescimento é *cartilagem*:", "mais fraca que o osso e o ligamento.", "Salter e Harris: *cinco tipos*.", "Decora: *SALTR*."],
-    "s": ["*S* de Straight:", "passa *reto* pela fise.", "O raio-x pode vir *quase normal*."],
-    "a": ["*A* de Above:", "sobe pela *metáfise*", "e leva o *Thurston-Holland*.", "É o *mais comum*."],
-    "l": ["*L* de Lower:", "desce pela *epífise*", "e entra na *articulação*."],
-    "t": ["*T* de Through:", "atravessa *tudo*.", "III e IV são *articulares*:", "*redução anatômica*."],
-    "r": ["*R* de cRush:", "a fise é *esmagada*", "e *nenhum traço* aparece."],
-    "virada": ["Por isso o *tipo V*", "quase nunca é visto no dia.", "Aparece *meses depois*,", "quando o osso *para de crescer*."],
-    "fim": ["Salva pro próximo *plantão*.", "Treine para o *TEOT*, o *TARO* e a *Cirurgia da Mão*", "em *ortoquestoes.com.br*"],
+    "fise": ["A fise é *cartilagem*: o ponto fraco do osso.", "Salter e Harris: *cinco tipos*.", "Decora uma palavra: *SALTR*."],
+    "s": ["*S*traight: passa *reto* pela fise.", "O raio-x pode vir *quase normal*."],
+    "a": ["*A*bove: sobe pela *metáfise*", "e leva o *Thurston-Holland*.", "É o tipo *mais comum*."],
+    "l": ["*L*ower: desce pela *epífise*", "e entra na *articulação*."],
+    "t": ["*T*hrough: atravessa *tudo*.", "III e IV são *articulares*:", "*redução anatômica*."],
+    "r": ["c*R*ush: a fise é *esmagada*", "e *nenhum traço* aparece."],
+    "virada": ["O *tipo V* quase nunca aparece no dia:", "só *meses depois*,", "quando o osso *para de crescer*."],
+    "fim": ["Salva para o próximo *plantão*.", "Treine em *ortoquestoes.com.br*"],
 }
+SEM_VOZ = True  # Tales, 27/11/2026: as vozes sintéticas não ficaram boas; o vídeo conta a história em texto + música
+MINIMO = {"gancho": 4.4, "fise": 5.4, "s": 3.6, "a": 4.4, "l": 3.6, "t": 4.4, "r": 3.6, "virada": 5.6, "fim": 2.6}
 TITULOS = {"gancho": "ADULTO x CRIANÇA", "virada": "MESES DEPOIS", "fim": "ORTO QUESTÕES"}
 TIPOS = {"s": 0, "a": 1, "l": 2, "t": 3, "r": 4}
 ROMANOS = ["I", "II", "III", "IV", "V"]
@@ -55,16 +57,32 @@ ROMANOS = ["I", "II", "III", "IV", "V"]
 
 # ------------------------------------------------------------------ tempo
 def roteiro() -> list[dict]:
-    """Tempo de cada cena e de cada frase (vem de audio/tempos.json, gravado por narracao.py)."""
-    tempos = json.load(open(os.path.join(AQUI, "audio", "tempos.json")))
-    t = LEAD
+    """Tempo de cada cena e de cada legenda. Sem voz: pelo tempo de leitura de cada frase."""
+    if not SEM_VOZ:
+        tempos = json.load(open(os.path.join(AQUI, "audio", "tempos.json")))
+        t = LEAD
+        cenas = []
+        for i, c in enumerate(tempos["cenas"]):
+            dur = c["seg"] + GAP + (CAUDA if c["cena"] == "fim" else 0)
+            LEGENDAS[c["cena"]] = c["legendas"]
+            cenas.append({"id": c["cena"], "i": i, "t0": t, "dur": dur, "fala": c["seg"], "chunks": c["inicios"]})
+            t += dur
+        return cenas
+    t = 0.0
     cenas = []
-    for i, c in enumerate(tempos["cenas"]):
-        dur = c["seg"] + GAP
-        if c["cena"] == "fim":
-            dur += CAUDA
-        LEGENDAS[c["cena"]] = c["legendas"]
-        cenas.append({"id": c["cena"], "i": i, "t0": t, "dur": dur, "fala": c["seg"], "chunks": c["inicios"]})
+    for i, (cid, frases) in enumerate(LEGENDAS.items()):
+        inicios, acc = [], 0.0
+        for f in frases:
+            inicios.append(round(acc, 3))
+            n = len(f.replace("*", ""))
+            acc += min(2.5, max(1.3, 0.5 + n * 0.048))
+        fala = max(acc, MINIMO[cid])
+        # se a cena precisa de mais tempo para a animação, espalha a sobra entre as frases
+        if fala > acc:
+            esc = fala / acc
+            inicios = [round(x * esc, 3) for x in inicios]
+        dur = fala + (CAUDA if cid == "fim" else 0)
+        cenas.append({"id": cid, "i": i, "t0": t, "dur": dur, "fala": fala, "chunks": inicios})
         t += dur
     return cenas
 
@@ -522,10 +540,11 @@ def cartao_final(img, a: float) -> None:
     lad = ladrilho_marca()
     colar_centro(img, lad, LW / 2, 700, a)
     colar_centro(img, texto_img("Orto Questões", "jersey", 150, CREME, None, 0, sombra=6), LW / 2, 860, a)
-    colar_centro(img, texto_img("Questões de prova, comentadas.", "jakarta", 44, CREME, 600), LW / 2, 960, a)
-    colar_centro(img, texto_img("www.ortoquestoes.com.br", "jakarta", 60, OURO, 800), LW / 2, 1045, a)
-    colar_centro(img, texto_img("Fonte: Rockwood and Wilkins' Fractures in Children,", "jakarta", 30, (190, 196, 190), 500), LW / 2, 1130, a)
-    colar_centro(img, texto_img("10ª ed., cap. 2, figs. 2-10 a 2-15", "jakarta", 30, (190, 196, 190), 500), LW / 2, 1172, a)
+    colar_centro(img, texto_img("Treine para o TEOT, o TARO", "jakarta", 46, CREME, 700), LW / 2, 950, a)
+    colar_centro(img, texto_img("e a Cirurgia da Mão", "jakarta", 46, CREME, 700), LW / 2, 1004, a)
+    colar_centro(img, texto_img("www.ortoquestoes.com.br", "jakarta", 64, OURO, 800), LW / 2, 1080, a)
+    colar_centro(img, texto_img("Fonte: Rockwood and Wilkins' Fractures in Children,", "jakarta", 30, (190, 196, 190), 500), LW / 2, 1160, a)
+    colar_centro(img, texto_img("10ª ed., cap. 2, figs. 2-10 a 2-15", "jakarta", 30, (190, 196, 190), 500), LW / 2, 1200, a)
 
 
 # ------------------------------------------------------------------ montagem de um quadro
@@ -535,6 +554,7 @@ class Montador:
         if not os.path.exists(caminho):
             cena.main()
         self.fundo = np.load(caminho).astype(np.float32)
+        self.placa = np.load(os.path.join(AQUI, "arte", "placa-site.npy")).astype(np.float32)
         self.cenas = roteiro()
         self.total = self.cenas[-1]["t0"] + self.cenas[-1]["dur"]
         yy, xx = np.mgrid[0:LH, 0:LW].astype(np.float32)
@@ -620,13 +640,13 @@ class Montador:
             if cid == "s":
                 rotulo(img, "só na fise", 6, 104, 76, float(o.yp(-56)) - 1, fade(1.2))
             elif cid == "a":
-                rotulo(img, "Thurston-Holland", 4, 70, 89, 109, fade(c["chunks"][2]))
+                rotulo(img, "Thurston-Holland", 4, 70, 89, 109, fade(c["chunks"][1]))
                 rotulo(img, "metáfise", 140 + 64, 66, 160, 90, fade(c["chunks"][1]), tam=34) if False else None
             elif cid == "l":
-                rotulo(img, "articulação", 176, 186, 142, 156, fade(c["chunks"][2]))
+                rotulo(img, "articulação", 176, 186, 142, 156, fade(c["chunks"][1]))
             elif cid == "t":
-                rotulo(img, "atravessa tudo", 4, 70, 106, 96, fade(c["chunks"][1]))
-                rotulo(img, "articular", 190, 186, 140, 155, fade(c["chunks"][2]))
+                rotulo(img, "atravessa tudo", 4, 70, 106, 96, fade(1.1))
+                rotulo(img, "articular", 190, 186, 140, 155, fade(c["chunks"][1]))
             elif cid == "r":
                 # a fise é esmagada: setas apertando e a faixa pulsando em vermelho, sem traço
                 aperto = suave((tl - 0.4) / 0.4)
@@ -637,7 +657,7 @@ class Montador:
                 pf = amostrar(caminho_fise(o, -56, 56))
                 if tl > 0.5:
                     aplicar_traco(img, mascara_traco(pf, 1.0), "#ffd0c4", "#ff7860", 0.5 + 0.6 * ciclo, "#ff5a40")
-                rotulo(img, "raio-x: normal", 150, 186, 160, 124, fade(c["chunks"][2]))
+                rotulo(img, "raio-x: normal", 150, 186, 160, 124, fade(c["chunks"][1]))
             # fonte, discreta, no pé do filme
             colar(img, texto_img("Rockwood Crianças, 10ª ed., cap. 2", "jakarta", 26, (200, 214, 214), 600, 4, (5, 8, 10)),
                   FILME_X + FW * ESC - 520, FILME_Y + FH * ESC - 48, 0.85)
@@ -673,7 +693,7 @@ class Montador:
 
         # ---------------- ladrilhos SALTR
         if cid == "fise":
-            n = (tl - c["chunks"][3]) / 0.14 if tl > c["chunks"][3] else 0
+            n = (tl - c["chunks"][-1]) / 0.14 if tl > c["chunks"][-1] else 0
             if n > 0:
                 desenhar_ladrilhos(img, n, None, 0, [], t)
         elif cid in TIPOS:
@@ -696,10 +716,16 @@ class Montador:
 
         # ---------------- cartão final (por cima, sem grão)
         if cid == "fim":
-            cartao_final(img, suave((tl - c["chunks"][1]) / 0.5))
+            cartao_final(img, suave((tl - c["chunks"][1] - 0.3) / 0.5))
 
         # ---------------- placa fixa do site (o vídeo inteiro)
-        placa_site_texto(img)
+        if cid == "gancho":
+            a_placa = suave(tl / 0.3) * (1 - suave((tl - c["dur"] + 0.35) / 0.35))
+        elif cid == "fim":
+            a_placa = suave(tl / 0.35) * (1 - suave((tl - c["chunks"][1] - 0.3) / 0.4))
+        else:
+            a_placa = 0.0
+        placa_site(img, self.placa, a_placa)
 
         # ---------------- legenda
         ch = chunk_em(c, tl)
@@ -727,11 +753,23 @@ class Montador:
         return img
 
 
-def placa_site_texto(img):
+def placa_site(img, placa: np.ndarray, alfa: float) -> None:
+    """Placa do site, só no começo e no fim: o ladrilho da marca, a chamada e o endereço em ouro."""
+    if alfa <= 0:
+        return
     x0, y0, x1, y1 = [v * ESC for v in cena.PLACA_SITE]
+    colar(img, placa, 0, 0, alfa)
     cy = (y0 + y1) / 2
-    colar_centro(img, texto_img("Treine para o TEOT, o TARO e a Cirurgia da Mão", "jakarta", 36, CREME, 700, 4, (8, 5, 3)), LW / 2, cy - 27)
-    colar_centro(img, texto_img("www.ortoquestoes.com.br", "jakarta", 54, OURO, 800, 4, (8, 5, 3)), LW / 2, cy + 22)
+    lad = ladrilho_marca()
+    lad = np.asarray(Image.fromarray((lad * 255).astype(np.uint8)).resize((88, 88), Image.NEAREST)).astype(np.float32) / 255
+    t1 = texto_img("Treine para o TEOT, o TARO e a Cirurgia da Mão", "jakarta", 32, CREME, 700, 4, (8, 5, 3))
+    t2 = texto_img("www.ortoquestoes.com.br", "jakarta", 56, OURO, 800, 4, (8, 5, 3))
+    larg = 88 + 26 + max(t1.shape[1], t2.shape[1])
+    xl = int(LW / 2 - larg / 2)
+    colar(img, lad, xl, int(cy - 44), alfa)
+    xt = xl + 88 + 26
+    colar(img, t1, xt, int(cy - 50), alfa)
+    colar(img, t2, xt - 6, int(cy - 12), alfa)
 
 
 def rotulo_topo(img, txt, fcx, fy, alfa):
@@ -753,7 +791,7 @@ def trilha(m: Montador) -> np.ndarray:
     sr = 48000
     n = int(m.total * sr) + sr
     mix = np.zeros(n, np.float32)
-    for c in m.cenas:
+    for c in (m.cenas if not SEM_VOZ else []):
         a, sr0 = sf.read(os.path.join(AQUI, "audio", f"cena-{c['i']:02d}.wav"), dtype="float32")
         if a.ndim > 1:
             a = a.mean(1)
@@ -799,7 +837,7 @@ def trilha(m: Montador) -> np.ndarray:
                     por(tom(70, 0.25, 0.22, 0.002, 14, (1, 2)), c["t0"] + 0.45 + k * 0.31)  # baques do esmagamento
         if cid == "fise":
             for k in range(5):
-                por(tom([523.25, 587.33, 659.25, 783.99, 880.0][k], 0.45, 0.08, 0.003, 8), c["t0"] + c["chunks"][3] + k * 0.14)
+                por(tom([523.25, 587.33, 659.25, 783.99, 880.0][k], 0.45, 0.08, 0.003, 8), c["t0"] + c["chunks"][-1] + k * 0.14)
         if cid == "gancho":
             por(tom(196, 0.5, 0.12, 0.003, 9, (1, 2)), c["t0"] + c["chunks"][1] + 0.1)
             por(tom(185, 0.6, 0.14, 0.003, 7, (1, 2, 4)), c["t0"] + c["chunks"][2])
@@ -818,7 +856,7 @@ def trilha(m: Montador) -> np.ndarray:
     env = np.convolve(env, np.ones(k) / k, "same")
     env = np.convolve((env > 0.02).astype(np.float32), np.ones(int(0.25 * sr)) / int(0.25 * sr), "same")
     duck = 1 - 0.5 * np.clip(env, 0, 1)
-    mix += (mus * 0.11 * duck).astype(np.float32)
+    mix += (mus * (0.34 if SEM_VOZ else 0.11) * duck).astype(np.float32)
     mix = mix[: int(m.total * sr)]
     pico = np.abs(mix).max()
     if pico > 0.98:

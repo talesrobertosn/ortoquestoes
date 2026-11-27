@@ -592,7 +592,7 @@ def montar() -> dict:
     est_big = desfocar(ampliar(cam_est.c), 2.2)
     fundo_big = sobre(fundo_big, est_big)
     meio = np.zeros((H, W, 4), dtype=np.float32)
-    for cam in (cam_chao, cam_mesa, cam_obj, placa_site()):
+    for cam in (cam_chao, cam_mesa, cam_obj):
         meio = sobre(meio, cam.c)
     meio_big = ampliar(meio)
     # chão e frente da mesa levemente desfocados (primeiro plano)
@@ -656,6 +656,10 @@ def main() -> None:
     os.makedirs(os.path.join(AQUI, "arte"), exist_ok=True)
     r = montar()
     np.save(os.path.join(AQUI, "arte", "fundo.npy"), r["rgb"].astype(np.float16))
+    # placa do site como camada à parte (aparece só no começo e no fim do vídeo), com a luz quente do abajur
+    pl = ampliar(placa_site().c)
+    pl[..., :3] *= hexa("#ffe2bc") * 1.05
+    np.save(os.path.join(AQUI, "arte", "placa-site.npy"), pl.astype(np.float16))
     final = bloom_tonemap(r["rgb"].copy())
     Image.fromarray((final * 255).astype(np.uint8)).save(os.path.join(AQUI, "arte", "previa-fundo.png"))
     print("ok")
