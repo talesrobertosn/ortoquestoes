@@ -168,7 +168,7 @@ def ladrilhos(img, visiveis, ativo, feitos, t):
         V.colar_centro(img, V.texto_img(ROMANO[tp], "jersey", 84, cor), cx, cy - 4 + (1 - vis) * -40, vis)
         if estado != "apagado":
             for j, linha in enumerate(SIGNIF[tp].split("\n")):
-                s = V.texto_img(linha, "jakarta", 25, CREME if estado == "feito" else OURO, 800, 4, (6, 8, 8))
+                s = V.texto_img(linha, "jakarta", 25, (46, 54, 56) if estado == "feito" else (150, 98, 20), 800)
                 V.colar(img, s, int(cx - s.shape[1] / 2), int((92 + 17) * ESC + j * 30), vis)
 
 
@@ -267,11 +267,12 @@ def cartao_final(img, a):
 # ------------------------------------------------------------------ quadro
 class Montador:
     def __init__(self):
-        caminho = os.path.join(SH, "arte", "fundo.npy")
-        if not os.path.exists(caminho):
-            cena.main()
-        self.fundo = np.load(caminho).astype(np.float32)
-        self.placa = np.load(os.path.join(SH, "arte", "placa-site.npy")).astype(np.float32)
+        # cenário próprio da série (sala de laudos de dia, ../cenario.py), diferente do gabinete do Salter-Harris
+        serie = os.path.join(AQUI, "..", "arte")
+        if not os.path.exists(os.path.join(serie, "fundo.npy")):
+            subprocess.run([sys.executable, os.path.join(AQUI, "..", "cenario.py")], check=True)
+        self.fundo = np.load(os.path.join(serie, "fundo.npy")).astype(np.float32)
+        self.placa = np.load(os.path.join(serie, "placa-site.npy")).astype(np.float32)
         self.cenas = roteiro()
         self.total = self.cenas[-1]["t0"] + self.cenas[-1]["dur"]
         yy, xx = np.mgrid[0:LH, 0:LW].astype(np.float32)
@@ -319,8 +320,8 @@ class Montador:
 
         # placa do título: nome da série pequeno e a classificação grande
         x0, y0, x1, y1 = [v * ESC for v in cena.PLACA]
-        V.colar_centro(img, V.texto_img("CLASSIFICAÇÕES ORTOPÉDICAS · EP. 1", "jakarta", 26, CREME, 800), LW / 2, y0 + 34)
-        V.colar_centro(img, V.texto_img("SCHATZKER", "jersey", 92, OURO, None, 0, sombra=5), LW / 2, y0 + 88)
+        V.colar_centro(img, V.texto_img("CLASSIFICAÇÕES ORTOPÉDICAS · EP. 1", "jakarta", 26, (20, 101, 94), 800), LW / 2, y0 + 30)
+        V.colar_centro(img, V.texto_img("SCHATZKER", "jersey", 96, (14, 46, 42)), LW / 2, y0 + 82)
 
         # ladrilhos I a VI: entram no macete e ficam
         if cid == "macete":
