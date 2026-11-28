@@ -23,7 +23,7 @@ from narracao import aparar, encurtar_silencios, locucao, pausa_depois, wer  # n
 REF = os.path.join(AQUI, "..", "voz-referencia.wav")
 SAIDA = os.path.join(AQUI, "audio")
 EXAGERO, CFG, TEMPERATURA = 0.85, 0.3, 0.8
-TEMPO = 1.28  # mais rápido e dinâmico (Tales, 28/11/2026)
+TEMPO = 1.45  # mais rápido e dinâmico: o vídeo cabe em ~55 s (Tales, 28/11/2026)
 
 # (cena, [(fala, legenda)]); "[respira]" no começo da fala põe uma respiração antes
 CENAS = [
@@ -132,9 +132,9 @@ def main() -> None:
                         break
                 w = melhor[1]
                 sf.write(cache, w, sr)
-            w = encurtar_silencios(w, sr)
+            w = encurtar_silencios(w, sr, 0.08)
             inicios.append(round(t, 3))
-            p = pausa_depois(fala) * 0.8 if j < len(frases) - 1 else 0.0
+            p = pausa_depois(fala) * 0.6 if j < len(frases) - 1 else 0.0
             partes += [w, np.zeros(int(p * sr), np.float32)]
             t += len(w) / sr + p
         audio = locucao(np.concatenate(partes), sr)

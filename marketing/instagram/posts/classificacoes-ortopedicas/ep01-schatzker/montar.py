@@ -34,7 +34,7 @@ import carta as K  # noqa: E402
 import planalto as P  # noqa: E402
 
 FPS, LW, LH = 30, 1080, 1920
-LEAD, GAP, CAUDA = 1.6, 0.14, 2.2
+LEAD, GAP, CAUDA = 1.3, 0.1, 1.7
 CREME, OURO = V.CREME, V.OURO
 TIPOS = ["i", "ii", "iii", "iv", "v", "vi"]
 ROMANO = {"i": "I", "ii": "II", "iii": "III", "iv": "IV", "v": "V", "vi": "VI"}
@@ -72,7 +72,7 @@ def suave(x):
 def roteiro():
     tempos = json.load(open(os.environ.get("TEMPOS", os.path.join(AQUI, "audio", "tempos.json"))))
     t, cenas = LEAD, []
-    minimo = {t_: 3.4 for t_ in TIPOS} | {"macete": 6.0, "chamada": 5.5}
+    minimo = {t_: 3.1 for t_ in TIPOS} | {"macete": 5.5, "chamada": 5.0}
     for i, c in enumerate(tempos["cenas"]):
         dur = max(c["seg"] + GAP, minimo.get(c["cena"], 0)) + (CAUDA if c["cena"] == "fim" else 0)
         cenas.append({"id": c["cena"], "i": i, "t0": t, "dur": dur, "fala": c["seg"], "chunks": c["inicios"],
