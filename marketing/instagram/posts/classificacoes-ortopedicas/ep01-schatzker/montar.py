@@ -268,29 +268,40 @@ class Palco:
         return self.frente[..., :3] * a + img * (1 - a)
 
 
-def mago(img, t, faiscar=0.0):
-    nome, linha = MAGO
+CORUJA = ("coruja-nova.png", 44, 32, 5)   # folha, largura e altura do quadro, quadros por linha
+LINHAS_CORUJA = ["parada", "andando", "voando", "pousando", "lendo", "dormindo", "acenando", "olhando"]
+CORUJA_ESC = 7
+
+
+@lru_cache(maxsize=None)
+def quadro_coruja(estado, q):
+    nome, w, h, n = CORUJA
     f = V.folha(nome)
-    q = int(t * 8) % 8
-    fr = f[linha * 128:(linha + 1) * 128, q * 96:(q + 1) * 96]
-    fr = np.asarray(Image.fromarray((fr * 255).astype(np.uint8)).resize((288, 384), Image.NEAREST)).astype(np.float32) / 255
-    fr[..., :3] *= hexa("#ffd9b8") * 0.95  # luz quente do pôr do sol
+    li = LINHAS_CORUJA.index(estado)
+    fr = f[li * h:(li + 1) * h, (q % n) * w:(q % n + 1) * w]
+    fr = np.asarray(Image.fromarray((fr * 255).astype(np.uint8)).resize((w * CORUJA_ESC, h * CORUJA_ESC), Image.NEAREST)).astype(np.float32) / 255
+    fr[..., :3] *= hexa("#ffdcbf") * 0.97  # luz quente do pôr do sol
     a = fr[..., 3] > 0.5
-    borda = a & ~np.roll(a, -3, axis=1)  # contorno de luz à direita (o sol)
+    borda = a & ~np.roll(a, -CORUJA_ESC, axis=1)  # contorno de luz do lado do sol
     fr[borda, :3] = np.clip(fr[borda, :3] * 0.4 + hexa("#ffcf8a") * 0.8, 0, 1)
-    linhas = np.where(fr[..., 3].max(axis=1) > 0.5)[0]
-    pe = int(linhas.max())
-    x, y = -30, 413 * ESC + 6 - pe
+    return fr
+
+
+def mascote(img, t, estado, faiscar=0.0):
+    """A coruja bibliotecária pousada na rocha (sem chapéu nem cajado: Tales, 28/11/2026)."""
+    fr = quadro_coruja(estado, int(t * 7))
+    pe = 31 * CORUJA_ESC
+    x, y = 2, 413 * ESC + 4 - pe
     V.colar(img, fr, x, y)
-    # ponta do cajado brilhando (quando a carta aparece)
-    if faiscar > 0:
-        px, py = x + 222, y + 92
-        for r, a_ in ((60, 0.18), (28, 0.35), (10, 0.9)):
+    asa = (x + 30 * CORUJA_ESC, y + 10 * CORUJA_ESC)
+    if faiscar > 0:  # a asa acena e solta um brilho
+        px, py = asa
+        for r, a_ in ((60, 0.16), (26, 0.32), (9, 0.85)):
             yy, xx = np.mgrid[-r:r, -r:r]
             m = np.exp(-(xx ** 2 + yy ** 2) / (r * r / 2))[..., None]
-            reg = img[py - r:py + r, px - r:px + r]
-            reg += m[: reg.shape[0], : reg.shape[1]] * np.array((0.6, 0.95, 1.0)) * a_ * faiscar
-    return x + 222, y + 92
+            reg = img[max(0, py - r):py + r, max(0, px - r):px + r]
+            reg += m[: reg.shape[0], : reg.shape[1]] * np.array((1.0, 0.9, 0.6)) * a_ * faiscar
+    return asa
 
 
 def faiscas(img, de, ate, prog, seed=1):
@@ -381,7 +392,15 @@ class Montador:
         faiscar = 0.0
         if cid in TIPOS or cid == "macete":
             faiscar = max(0.0, 1 - tl / 0.8)
-        ponta = mago(img, t, faiscar)
+        if cid == "abertura":
+            estado = "pousando"
+        elif cid == "chamada":
+            estado = "lendo"
+        elif cid == "fim" or ((cid in TIPOS or cid == "macete") and tl < 1.0):
+            estado = "acenando"
+        else:
+            estado = "olhando" if int(t / 2.5) % 2 else "parada"
+        ponta = mascote(img, t, estado, faiscar)
         img = self.palco.frente_sobre(img)
         if cid in TIPOS or cid == "macete":
             faiscas(img, ponta, (CARTA_CX, CARTA_Y + 300), tl / 0.5, seed=len(cid))
