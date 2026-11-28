@@ -3,7 +3,7 @@
 Motor: Chatterbox Multilingual (Resemble AI, licença MIT, uso comercial permitido), que fala português imitando uma
 voz de referência. A referência é um locutor brasileiro adulto do Common Voice da Mozilla (domínio público, CC0),
 escolhido por medida (ruído de fundo, faixa do microfone e tom grave com boa variação de entonação): falante
-c13a453087ed, mineiro, 30 e poucos anos. As vozes anteriores (Kokoro, Piper edresson e cadu) foram recusadas.
+b5f326f328e8, 30 e poucos anos, voz clara de animador (antes: c13a453087ed, mineiro, mais grave). As vozes anteriores (Kokoro, Piper edresson e cadu) foram recusadas.
 
 Cada frase é gerada à parte e conferida por um reconhecedor de fala (Whisper small): se sair embolada, é refeita (até
 4 tentativas, fica a melhor). Pausas naturais entre as frases; leve tratamento de locução.
@@ -23,20 +23,22 @@ from scipy.signal import butter, lfilter
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SAIDA = os.path.join(AQUI, "audio")
-REF = sys.argv[1] if len(sys.argv) > 1 else "/tmp/claude-0/cv/ref-c13a453087ed.wav"
+REF = sys.argv[1] if len(sys.argv) > 1 else "/tmp/claude-0/cv/ref-b5f326f328e8.wav"
+# Tom de animador (Tales escolheu a amostra D, 27/11/2026): mais expressividade e menos freio de ritmo
+EXAGERO, CFG = 0.8, 0.3
 
 # (cena, [(fala, legenda na tela; *palavra* = destaque em ouro)]). Na fala, palavras em inglês vão escritas como se
 # pronunciam em português, para o modelo acertar.
 CENAS = [
     ("gancho", [
-        ("Olha isso: mesma queda, mesmo punho.", "Mesma queda, mesmo punho."),
-        ("No adulto, quebra o osso.", "No *adulto*, quebra o osso."),
+        ("Olha isso! Mesma queda, mesmo punho.", "Mesma queda, mesmo punho."),
+        ("No adulto, quebra o osso!", "No *adulto*, quebra o osso."),
         ("Na criança... quem paga é a fise.", "Na *criança*, quem paga é a *fise*."),
     ]),
     ("fise", [
         ("A fise é cartilagem: o ponto fraco do osso da criança.", "A fise é *cartilagem*: o ponto fraco do osso."),
         ("Sálter e Rárris: cinco tipos.", "Salter e Harris: *cinco tipos*."),
-        ("Decora numa palavra só: sálter.", "Decora uma palavra: *SALTR*."),
+        ("Decora numa palavra só: sálter!", "Decora uma palavra: *SALTR*."),
     ]),
     ("s", [
         ("Ésse, de strêit: passa reto pela fise.", "*S*traight: passa *reto* pela fise."),
@@ -45,7 +47,7 @@ CENAS = [
     ("a", [
         ("A, de abâv: sobe pela metáfise", "*A*bove: sobe pela *metáfise*"),
         ("e leva junto o fragmento de Térston Rólan.", "e leva o *Thurston-Holland*."),
-        ("É o tipo mais comum.", "É o tipo *mais comum*."),
+        ("É o tipo mais comum!", "É o tipo *mais comum*."),
     ]),
     ("l", [
         ("Éle, de lôuer: desce pela epífise", "*L*ower: desce pela *epífise*"),
@@ -66,12 +68,12 @@ CENAS = [
         ("quando o osso para de crescer.", "quando o osso *para de crescer*."),
     ]),
     ("fim", [
-        ("Salva pra revisar no próximo plantão.", "Salva para o próximo *plantão*."),
+        ("Salva pra revisar no próximo plantão!", "Salva para o próximo *plantão*."),
         ("E treina pro Teót, pro Táro e pra Cirurgia da Mão, no ortoquestões ponto com ponto bê érre.",
          "Treine em *ortoquestoes.com.br*"),
     ]),
 ]
-TEMPO = 1.15  # aceleração final sem mudar o tom (a voz é pausada; o vídeo precisa caber em ~45 s)
+TEMPO = 1.32  # aceleração final sem mudar o tom (a voz é pausada; o vídeo precisa caber em ~45 s)
 
 
 def pausa_depois(txt: str) -> float:
@@ -93,7 +95,7 @@ def aparar(a: np.ndarray, sr: int, limiar: float = 0.02, folga: float = 0.04) ->
     return a[max(0, idx[0] - int(folga * sr)):min(len(a), idx[-1] + int(folga * 3 * sr))]
 
 
-def encurtar_silencios(a: np.ndarray, sr: int, maximo: float = 0.16) -> np.ndarray:
+def encurtar_silencios(a: np.ndarray, sr: int, maximo: float = 0.11) -> np.ndarray:
     """Pausas internas longas (a voz respira demais) viram no máximo `maximo` segundos."""
     jan = int(0.01 * sr)
     env = np.convolve(np.abs(a), np.ones(jan) / jan, "same")
@@ -162,7 +164,7 @@ def main() -> None:
         for j, (fala, _leg) in enumerate(frases):
             import hashlib
 
-            chave = hashlib.md5((fala + "|" + REF).encode()).hexdigest()[:12]
+            chave = hashlib.md5((fala + "|" + REF + f"|{EXAGERO}|{CFG}").encode()).hexdigest()[:12]
             cache = os.path.join(SAIDA, "frases", f"{chave}.wav")
             if os.path.exists(cache):
                 w, _ = sf.read(cache, dtype="float32")
@@ -175,7 +177,7 @@ def main() -> None:
                 continue
             melhor = None
             for tentativa in range(4):
-                w = tts.generate(fala, language_id="pt", audio_prompt_path=REF, exaggeration=0.55, cfg_weight=0.5,
+                w = tts.generate(fala, language_id="pt", audio_prompt_path=REF, exaggeration=EXAGERO, cfg_weight=CFG,
                                  temperature=0.75).squeeze().numpy().astype(np.float32)
                 w = aparar(w, sr)
                 txt = asr({"raw": w, "sampling_rate": sr},
