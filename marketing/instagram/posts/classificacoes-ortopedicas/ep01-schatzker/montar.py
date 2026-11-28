@@ -287,14 +287,27 @@ def quadro_coruja(estado, q):
     return fr
 
 
-def mascote(img, t, estado, faiscar=0.0):
-    """A coruja bibliotecária pousada na rocha (sem chapéu nem cajado: Tales, 28/11/2026)."""
-    fr = quadro_coruja(estado, int(t * 7))
-    pe = 31 * CORUJA_ESC
-    x, y = 2, 413 * ESC + 4 - pe
+ROCHA_X, ROCHA_Y = 2, 413 * ESC + 4  # onde a coruja pousa (pés)
+
+
+def mascote(img, t, estado, faiscar=0.0, pos=None, fala=0.0):
+    """A coruja bibliotecária, professora da série (sem chapéu nem cajado: Tales, 28/11/2026).
+    pos = (x, y) dos pés quando ela está voando; fala = 0..1, a força da voz agora (ela "fala" no ritmo)."""
+    fr = quadro_coruja(estado, int(t * (10 if estado == "voando" else 7)))
+    if fala > 0.02 and estado != "voando":  # squash and stretch no ritmo da fala
+        h, w = fr.shape[:2]
+        sy = 1 + 0.06 * fala * (0.5 + 0.5 * math.sin(t * 22))
+        sx = 1 / sy
+        im = Image.fromarray((fr * 255).astype(np.uint8)).resize((int(w * sx), int(h * sy)), Image.NEAREST)
+        fr = np.asarray(im).astype(np.float32) / 255
+    pe = int(31 / 32 * fr.shape[0])
+    if pos is None:
+        x, y = ROCHA_X + (44 * CORUJA_ESC - fr.shape[1]) // 2, ROCHA_Y - pe
+    else:
+        x, y = int(pos[0] - fr.shape[1] / 2), int(pos[1] - pe)
     V.colar(img, fr, x, y)
     asa = (x + 30 * CORUJA_ESC, y + 10 * CORUJA_ESC)
-    if faiscar > 0:  # a asa acena e solta um brilho
+    if faiscar > 0:
         px, py = asa
         for r, a_ in ((60, 0.16), (26, 0.32), (9, 0.85)):
             yy, xx = np.mgrid[-r:r, -r:r]
@@ -302,6 +315,17 @@ def mascote(img, t, estado, faiscar=0.0):
             reg = img[max(0, py - r):py + r, max(0, px - r):px + r]
             reg += m[: reg.shape[0], : reg.shape[1]] * np.array((1.0, 0.9, 0.6)) * a_ * faiscar
     return asa
+
+
+def voo(t0, t):
+    """Trajetória da chegada: entra pelo alto à direita, faz um arco sobre o vale e pousa na rocha."""
+    p = min(1.0, max(0.0, (t - t0) / 1.7))
+    e = p * p * (3 - 2 * p)
+    x0, y0 = LW + 120, 260
+    x1, y1 = ROCHA_X + 44 * CORUJA_ESC // 2, ROCHA_Y
+    x = x0 + (x1 - x0) * e
+    y = y0 + (y1 - y0) * e - math.sin(e * math.pi) * 180 + 12 * math.sin(t * 9) * (1 - e)
+    return p, (x, y)
 
 
 def faiscas(img, de, ate, prog, seed=1):
@@ -336,6 +360,28 @@ class Montador:
         g = np.random.default_rng(5)
         self.graos = [g.normal(0, 0.014, (LH // 3, LW // 3)).astype(np.float32) for _ in range(6)]
         self.mini = {}
+        self.env = self.envelope_voz()
+
+    def envelope_voz(self):
+        """Força da voz em cada quadro (0..1), para a coruja "falar" no ritmo da narração."""
+        n = int(self.total * FPS) + 2
+        env = np.zeros(n, np.float32)
+        for c in self.cenas:
+            caminho = os.path.join(AQUI, "audio", f"cena-{c['i']:02d}.wav")
+            if not os.path.exists(caminho):
+                continue
+            a, sr = sf.read(caminho, dtype="float32")
+            por_quadro = sr // FPS
+            k = len(a) // por_quadro
+            rms = np.sqrt((a[: k * por_quadro].reshape(k, por_quadro) ** 2).mean(1))
+            rms = rms / (rms.max() + 1e-6)
+            i0 = int(c["t0"] * FPS)
+            env[i0:i0 + k] = rms[: max(0, n - i0)]
+        return np.convolve(env, np.ones(3) / 3, "same")
+
+    def fala(self, t):
+        k = int(t * FPS)
+        return float(self.env[k]) if 0 <= k < len(self.env) else 0.0
 
     def cena_em(self, t):
         if t < LEAD:
@@ -392,15 +438,27 @@ class Montador:
         faiscar = 0.0
         if cid in TIPOS or cid == "macete":
             faiscar = max(0.0, 1 - tl / 0.8)
+        if cid == "gancho":  # o leque vem antes, para a coruja voar na frente das cartas
+            self.leque(img, t, tl, aberto=True)
+        # a coruja-professora: chega voando no gancho, pousa, fala no ritmo da voz e gesticula a cada frase
+        fala = self.fala(t)
+        pos = None
         if cid == "abertura":
-            estado = "pousando"
+            estado, pos = None, None
+        elif cid == "gancho":
+            p, pos = voo(0.0, tl)
+            estado = "voando" if p < 1 else ("pousando" if tl < 2.1 else "olhando")
+            if p >= 1:
+                pos = None
         elif cid == "chamada":
             estado = "lendo"
-        elif cid == "fim" or ((cid in TIPOS or cid == "macete") and tl < 1.0):
+        elif cid == "fim":
             estado = "acenando"
         else:
             estado = "olhando" if int(t / 2.5) % 2 else "parada"
-        ponta = mascote(img, t, estado, faiscar)
+            if c is not None and any(0 <= tl - s < 0.7 for s in c["chunks"]):
+                estado = "acenando"  # gesto de professora a cada frase nova
+        ponta = mascote(img, t, estado, faiscar, pos, fala) if estado else (0, 0)
         img = self.palco.frente_sobre(img)
         if cid in TIPOS or cid == "macete":
             faiscas(img, ponta, (CARTA_CX, CARTA_Y + 300), tl / 0.5, seed=len(cid))
@@ -419,8 +477,6 @@ class Montador:
             self.carta_grande(img, cid, tl, t)
         elif cid == "macete":
             self.carta_grande(img, "macete", tl, t, c)
-        elif cid == "gancho":
-            self.leque(img, t, tl, aberto=True)
         elif cid == "pergunta":
             self.leque(img, t, tl, aberto=True, pergunta=True)
 
