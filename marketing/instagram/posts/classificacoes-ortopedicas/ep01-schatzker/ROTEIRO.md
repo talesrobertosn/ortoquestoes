@@ -23,6 +23,7 @@ descreve a imagem.
 | V | Tipo cinco: os dois platôs, mas metáfise e diáfise ainda em continuidade. | **V** · bicondilar | Tomografia real do tipo V: os dois traços |
 | VI | Tipo seis: a metáfise se solta da diáfise. É o mais instável! | **VI** · metáfise solta da diáfise | Tomografia real do tipo VI: o traço horizontal em vermelho |
 | Pergunta | Pergunta de prova: qual tipo tem o maior risco de lesão vascular? Responde aqui nos comentários! | Qual tem o **maior risco vascular**? Comenta! | Os seis tipos em miniatura, com um ponto de interrogação |
+| Chamada | Quer ir além? No site tem o resumo completo do Róquiud Adultos sobre platô tibial... e quarenta e oito questões de prova pra você treinar! | Resumo completo do **Rockwood Adultos** + **48 questões** | Prints reais do site num iPhone desenhado: o topo do resumo ("Fratura do planalto tibial · Rockwood adulto, 10ª ed., cap. 62"), depois a tabela de Schatzker com lupa dourada e por fim o botão "Praticar as 48 questões" piscando |
 | Fim | Classificações Ortopédicas: treina no ortoquestões ponto com ponto bê érre! | **www.ortoquestoes.com.br** | Cartão final com o site e a fonte |
 
 A resposta da pergunta vai no primeiro comentário fixado: "Tipo IV, variante de luxação (Rockwood 10ª ed., cap. 62)".
@@ -34,6 +35,7 @@ Cresce a cada episódio. A voz lê a coluna da esquerda; a legenda mostra a da d
 | A voz lê | A tela mostra |
 |---|---|
 | Chátsker | Schatzker |
+| Róquiud | Rockwood |
 | ráio xis | raio-x |
 | strêit, abâv, lôuer, thrú, crâsh | Straight, Above, Lower, Through, cRush |
 | Térston Rólan | Thurston-Holland |
@@ -51,3 +53,9 @@ Ficam em `raiox/`.
 | IV | `schatzker-4-tc-coronal.png` |
 | V | faltando (o Tales vai reenviar) |
 | VI | `schatzker-6-tc-coronal.png` |
+
+## Prints do site
+
+`capturar.mjs` grava em `telas/` (fora do git, gerado de novo pelo script) as telas reais do resumo no celular, com a
+conta de exemplo: `cel-resumo-topo.png`, `cel-resumo-schatzker.png` e `cel-resumo-questoes.png`. Para rodar aqui:
+`CHROMIUM=/opt/pw-browsers/chromium-1243/chrome-linux64/chrome node .../capturar.mjs`.
